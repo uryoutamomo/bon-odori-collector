@@ -24,13 +24,9 @@ jobs:
     - name: Run collector
       run: python collect.py
 
-    - name: Keepalive Workflow
-      uses: gautamkrishnar/keepalive-workflow@v1 # 60日無活動による停止を防ぐ
-
     - name: Commit and Push changes
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add data/latest.json data/seen.json
-        # 変更がある場合のみコミットしてプッシュ
         git diff --cached --quiet || (git commit -m "Update latest bon-odori data" && git push)
