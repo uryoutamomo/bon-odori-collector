@@ -1,0 +1,37 @@
+name: bon-odori-collect
+
+on:
+  schedule:
+    # 毎日15:00 JST (UTC 06:00) に実行
+    - cron: '0 6 * * *'
+  workflow_dispatch: # 手動実行ボタンも有効にする
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # 実行結果をリポジトリに書き込むために必要
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/configure-pages@v4 # 念のための環境維持用
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+
+    - name: Run collector
+      run: python collect.py
+
+    - name: Keepalive Workflow
+      uses: gautamkrishnar/keepalive-workflow@v1 # 60日無活動による停止を防ぐ
+
+    - name: Commit and Push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add data/latest.json data/seen.json
+        # 変更がある場合のみコミットしてプッシュ
+        git diff --cached --quiet || (git commit -m "Update latest bon-odori data" && git push)
