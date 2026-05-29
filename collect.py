@@ -110,22 +110,30 @@ def main():
             pass
 
     latest_items = []
+    seen_in_run = set()       # この実行内での重複除去用
     new_urls = list(seen_urls)
 
     for q in QUERIES:
         print(f"Searching for: {q}")
         xml_data = fetch_news(q)
         items = parse_rss(xml_data)
-        
+
         for item in items:
+            # 同一実行内の重複（クエリ間の被り）はスキップ
+            if item['url'] in seen_in_run:
+                continue
+            seen_in_run.add(item['url'])
+
+            is_home = any(k in item['title'] for k in HOME_KEYWORDS) if HOME_KEYWORDS else False
+            # 現在取得できた記事は全件 latest に含める（全件スナップショット）
+            latest_items.append({
+                'title': item['title'],
+                'url': item['url'],
+                'date': item['pubDate'],
+                'is_home': is_home
+            })
+            # seen.json は履歴として累積（新規URLのみ追加）
             if item['url'] not in seen_urls:
-                is_home = any(k in item['title'] for k in HOME_KEYWORDS) if HOME_KEYWORDS else False
-                latest_items.append({
-                    'title': item['title'],
-                    'url': item['url'],
-                    'date': item['pubDate'],
-                    'is_home': is_home
-                })
                 new_urls.append(item['url'])
 
     os.makedirs('data', exist_ok=True)
@@ -136,7 +144,7 @@ def main():
     with open(seen_file, 'w', encoding='utf-8') as f:
         json.dump(new_urls, f, ensure_ascii=False, indent=2)
 
-    print(f"完了: 新着 {len(latest_items)} 件を記録しました。")
+    print(f"完了: 全 {len(latest_items)} 件を記録しました。")
 
     # Notion へ書き戻し
     jst = timezone(timedelta(hours=9))
