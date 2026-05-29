@@ -5,6 +5,12 @@ import urllib.parse
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 
+try:
+    import feedparser
+    _HAS_FEEDPARSER = True
+except ImportError:
+    _HAS_FEEDPARSER = False
+
 # --- Notion 連携設定 ---
 NOTION_TOKEN = os.environ.get("NOTION_API_TOKEN")
 NOTION_PAGE_ID = os.environ.get("NOTION_PAGE_ID")
@@ -99,6 +105,107 @@ def push_to_notion(latest_items, updated_at):
         raise
 
 
+# --- Voices (人の声) 収集設定 ---
+# RSS が取得できない場合でも他ソースの収集は継続する（fail-safe）
+VOICE_FEEDS = [
+    {
+        "source": "youtube",
+        "account": "@wadaikoCH",
+        "name": "和太鼓お祭りCH",
+        "rss_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCNF_5e3ZvziJueTWvTPATGw",
+    },
+    {
+        "source": "note",
+        "account": "@karinchanchanko",
+        "name": "りんりん",
+        "rss_url": "https://note.com/karinchanchanko/rss",
+    },
+]
+
+# voices スキーマ:
+# { source, account, name, title, text, url, date (ISO8601), tags }
+
+def _parse_voice_entry(entry, feed_meta):
+    """feedparser の entry を voices スキーマに変換する。"""
+    title = entry.get("title", "")
+    url = entry.get("link", "")
+
+    # 本文: summary → content → "" の順
+    text = ""
+    if "summary" in entry:
+        text = entry["summary"]
+    elif "content" in entry and entry["content"]:
+        text = entry["content"][0].get("value", "")
+    # HTMLタグを除去して500字程度に切り詰め
+    import re as _re
+    text = _re.sub(r"<[^>]+>", "", text).strip()[:500]
+
+    # 日付
+    date_str = ""
+    if "published_parsed" in entry and entry["published_parsed"]:
+        from time import mktime
+        dt = datetime.fromtimestamp(mktime(entry["published_parsed"]), tz=timezone.utc)
+        date_str = dt.isoformat()
+    elif "updated_parsed" in entry and entry["updated_parsed"]:
+        from time import mktime
+        dt = datetime.fromtimestamp(mktime(entry["updated_parsed"]), tz=timezone.utc)
+        date_str = dt.isoformat()
+
+    tags = [t.get("term", "") for t in entry.get("tags", []) if t.get("term")]
+
+    return {
+        "source": feed_meta["source"],
+        "account": feed_meta["account"],
+        "name": feed_meta["name"],
+        "title": title,
+        "text": text,
+        "url": url,
+        "date": date_str,
+        "tags": tags,
+    }
+
+
+def collect_voices(seen_urls: set) -> tuple[list, list]:
+    """
+    VOICE_FEEDS から RSS を取得して voices エントリを返す。
+    戻り値: (new_items, all_seen_urls_updated)
+    feedparser 未インストール or RSS 取得失敗でも空リストを返す（fail-safe）。
+    """
+    if not _HAS_FEEDPARSER:
+        print("[voices] feedparser がインストールされていないためスキップします")
+        return [], list(seen_urls)
+
+    new_items = []
+    new_seen = list(seen_urls)
+
+    for feed_meta in VOICE_FEEDS:
+        rss_url = feed_meta["rss_url"]
+        print(f"[voices] 取得中: {feed_meta['name']} ({rss_url})")
+        try:
+            parsed = feedparser.parse(rss_url)
+            if parsed.bozo and not parsed.entries:
+                print(f"[voices] スキップ (取得失敗 or 空): {feed_meta['name']}")
+                continue
+
+            count = 0
+            for entry in parsed.entries:
+                url = entry.get("link", "")
+                if not url or url in seen_urls or url in new_seen:
+                    continue
+                item = _parse_voice_entry(entry, feed_meta)
+                new_items.append(item)
+                new_seen.append(url)
+                count += 1
+
+            print(f"[voices] {feed_meta['name']}: {count} 件追加")
+
+        except Exception as e:
+            print(f"[voices] エラー ({feed_meta['name']}): {e}")
+            # fail-safe: このソースの失敗は他ソースに影響させない
+
+    return new_items, new_seen
+
+
 def main():
     seen_file = 'data/seen.json'
     seen_urls = set()
@@ -145,6 +252,49 @@ def main():
         json.dump(new_urls, f, ensure_ascii=False, indent=2)
 
     print(f"完了: 全 {len(latest_items)} 件を記録しました。")
+
+    # --- voices 収集（fail-safe: 失敗してもニュース収集結果に影響しない）---
+    try:
+        voices_seen_file = 'data/voices_seen.json'
+        voices_seen_urls = set()
+        if os.path.exists(voices_seen_file):
+            try:
+                with open(voices_seen_file, 'r', encoding='utf-8') as f:
+                    voices_seen_urls = set(json.load(f))
+            except Exception:
+                pass
+
+        voice_items, updated_voices_seen = collect_voices(voices_seen_urls)
+
+        # voices.json: 全件スナップショット（seen に入っていない新規のみ追加）
+        voices_file = 'data/voices.json'
+        existing_voices = []
+        if os.path.exists(voices_file):
+            try:
+                with open(voices_file, 'r', encoding='utf-8') as f:
+                    existing_voices = json.load(f)
+            except Exception:
+                pass
+
+        # 既存 + 新規（新規を先頭に）
+        merged_voices = voice_items + existing_voices
+        # URL で重複排除（順序を保持）
+        seen_in_merge = set()
+        deduped_voices = []
+        for v in merged_voices:
+            if v["url"] not in seen_in_merge:
+                deduped_voices.append(v)
+                seen_in_merge.add(v["url"])
+
+        with open(voices_file, 'w', encoding='utf-8') as f:
+            json.dump(deduped_voices, f, ensure_ascii=False, indent=2)
+
+        with open(voices_seen_file, 'w', encoding='utf-8') as f:
+            json.dump(updated_voices_seen, f, ensure_ascii=False, indent=2)
+
+        print(f"[voices] 完了: 新規 {len(voice_items)} 件、累計 {len(deduped_voices)} 件")
+    except Exception as e:
+        print(f"[voices] 予期せぬエラー（ニュース収集には影響なし）: {e}")
 
     # Notion へ書き戻し
     jst = timezone(timedelta(hours=9))
