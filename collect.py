@@ -20,6 +20,42 @@ NOTION_API = "https://api.notion.com/v1"
 QUERIES = ["盆踊り", "盆おどり"]
 HOME_KEYWORDS = []
 
+# --- blogspot / 外部ブログRSS設定 ---
+# feedparser で取得して latest.json に統合する
+# タグフィードはメインのサブセットなので de-dup で重複を自動排除
+BLOG_FEEDS = [
+    {
+        "source": "blogspot",
+        "name": "東京盆踊りマップ",
+        "rss_url": "http://minato-bon-odori.blogspot.com/feeds/posts/default",
+    },
+    {
+        "source": "blogspot",
+        "name": "東京盆踊りマップ（中央区）",
+        "rss_url": "http://minato-bon-odori.blogspot.com/feeds/posts/default/-/%E4%B8%AD%E5%A4%AE%E5%8C%BA",
+    },
+    {
+        "source": "blogspot",
+        "name": "東京盆踊りマップ（台東区）",
+        "rss_url": "http://minato-bon-odori.blogspot.com/feeds/posts/default/-/%E5%8F%B0%E6%9D%B1%E5%8C%BA",
+    },
+    {
+        "source": "blogspot",
+        "name": "東京盆踊りマップ（墨田区）",
+        "rss_url": "http://minato-bon-odori.blogspot.com/feeds/posts/default/-/%E5%A2%A8%E7%94%B0%E5%8C%BA",
+    },
+    {
+        "source": "blogspot",
+        "name": "東京盆踊りマップ（江東区）",
+        "rss_url": "http://minato-bon-odori.blogspot.com/feeds/posts/default/-/%E6%B1%9F%E6%9D%B1%E5%8C%BA",
+    },
+    {
+        "source": "bonmaru",
+        "name": "盆まる",
+        "rss_url": "https://bonmaru.zenmin-odori.jp/feed",
+    },
+]
+
 def fetch_news(query):
     url = f"https://news.google.com/rss/search?q={urllib.parse.quote(query)}&hl=ja&gl=JP&ceid=JP:ja"
     try:
@@ -29,6 +65,59 @@ def fetch_news(query):
     except Exception as e:
         print(f"Error fetching {query}: {e}")
         return None
+
+def fetch_blog_feeds(seen_in_run: set) -> list:
+    """
+    BLOG_FEEDS から feedparser で記事を取得して latest.json 形式のリストを返す。
+    seen_in_run で同一実行内の重複（タグフィード間の重複含む）を除去。
+    失敗しても空リストを返す（fail-safe）。
+    """
+    if not _HAS_FEEDPARSER:
+        print("[blog] feedparser 未インストールのためスキップ")
+        return []
+
+    items = []
+    for feed_meta in BLOG_FEEDS:
+        try:
+            parsed = feedparser.parse(feed_meta["rss_url"])
+            if parsed.bozo and not parsed.entries:
+                print(f"[blog] スキップ (取得失敗 or 空): {feed_meta['name']}")
+                continue
+
+            count = 0
+            for entry in parsed.entries:
+                url = entry.get("link", "")
+                if not url or url in seen_in_run:
+                    continue
+                seen_in_run.add(url)
+
+                title = entry.get("title", "")
+                date_str = ""
+                if "published_parsed" in entry and entry["published_parsed"]:
+                    from time import mktime
+                    dt = datetime.fromtimestamp(mktime(entry["published_parsed"]), tz=timezone.utc)
+                    date_str = dt.isoformat()
+                elif "updated_parsed" in entry and entry["updated_parsed"]:
+                    from time import mktime
+                    dt = datetime.fromtimestamp(mktime(entry["updated_parsed"]), tz=timezone.utc)
+                    date_str = dt.isoformat()
+
+                items.append({
+                    "title": title,
+                    "url": url,
+                    "date": date_str,
+                    "is_home": False,
+                    "source": feed_meta["source"],
+                })
+                count += 1
+
+            print(f"[blog] {feed_meta['name']}: {count} 件追加")
+
+        except Exception as e:
+            print(f"[blog] エラー ({feed_meta['name']}): {e}")
+
+    return items
+
 
 def parse_rss(xml_data):
     items = []
@@ -248,6 +337,18 @@ def main():
             # seen.json は履歴として累積（新規URLのみ追加）
             if item['url'] not in seen_urls:
                 new_urls.append(item['url'])
+
+    # --- blogspot / bonmaru 収集（fail-safe）---
+    try:
+        blog_items = fetch_blog_feeds(seen_in_run)
+        for item in blog_items:
+            latest_items.append(item)
+            if item['url'] not in seen_urls:
+                new_urls.append(item['url'])
+        if blog_items:
+            print(f"[blog] 合計 {len(blog_items)} 件を latest.json に追加しました")
+    except Exception as e:
+        print(f"[blog] 予期せぬエラー（ニュース収集には影響なし）: {e}")
 
     os.makedirs('data', exist_ok=True)
 
