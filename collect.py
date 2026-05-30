@@ -403,10 +403,30 @@ def main():
     except Exception as e:
         print(f"[voices] 予期せぬエラー（ニュース収集には影響なし）: {e}")
 
-    # Notion へ書き戻し
+    # Notion へ書き戻し（直近7日分のみ）
     jst = timezone(timedelta(hours=9))
     updated_at = datetime.now(jst).strftime("%Y-%m-%d %H:%M JST")
-    push_to_notion(latest_items, updated_at)
+    cutoff = datetime.now(timezone.utc) - timedelta(days=7)
+
+    def _parse_date(date_str):
+        if not date_str:
+            return None
+        for fmt in ("%a, %d %b %Y %H:%M:%S %Z", "%a, %d %b %Y %H:%M:%S %z"):
+            try:
+                dt = datetime.strptime(date_str, fmt)
+                return dt.replace(tzinfo=timezone.utc) if dt.tzinfo is None else dt
+            except ValueError:
+                pass
+        try:
+            return datetime.fromisoformat(date_str.replace("Z", "+00:00"))
+        except ValueError:
+            return None
+
+    recent_items = [
+        item for item in latest_items
+        if (_parse_date(item.get("date")) or datetime.min.replace(tzinfo=timezone.utc)) >= cutoff
+    ]
+    push_to_notion(recent_items if recent_items else latest_items[:30], updated_at)
 
 if __name__ == '__main__':
     main()
