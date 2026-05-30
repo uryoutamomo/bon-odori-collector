@@ -115,6 +115,12 @@ VOICE_FEEDS = [
         "rss_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCNF_5e3ZvziJueTWvTPATGw",
     },
     {
+        "source": "youtube",
+        "account": "@matsuribonodori",
+        "name": "祭のきせき 盆踊り",
+        "rss_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCLSZK_q5ma6aeIrVRUEpkNw",
+    },
+    {
         "source": "note",
         "account": "@karinchanchanko",
         "name": "りんりん",
