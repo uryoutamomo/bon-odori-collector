@@ -210,10 +210,10 @@ VOICE_FEEDS = [
         "rss_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCLSZK_q5ma6aeIrVRUEpkNw",
     },
     {
-        "source": "note",
+        "source": "ameba",
         "account": "@karinchanchanko",
         "name": "りんりん",
-        "rss_url": "https://note.com/karinchanchanko/rss",
+        "rss_url": "https://rssblog.ameba.jp/karinchanchanko/rss20.xml",
     },
 ]
 
