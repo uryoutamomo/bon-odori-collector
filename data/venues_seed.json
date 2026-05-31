@@ -1,0 +1,282 @@
+[
+  {
+    "venue": "大横川親水公園",
+    "region_hint": "墨田区",
+    "in_tsukiji_30min_guess": true,
+    "source": "voices",
+    "source_title": "【メガヒッツ盆踊り】　すみだストリートジャズフェスティバル（すみジャズ）　DJ岸野雄一（盆踊り）２終　2025年10月19日　東京都墨田区　大横川親水公園",
+    "url": "https://www.youtube.com/watch?v=-46emh0_BSA",
+    "method": "keyword",
+    "needs_review": true
+  },
+  {
+    "venue": "JR苅田駅前広場",
+    "region_hint": "えきらく大市",
+    "in_tsukiji_30min_guess": false,
+    "source": "latest",
+    "source_title": "駅前で盆踊り＆グルメ！夏の夜を楽しもう！8/19『十九観音盆踊り＆夜の苅田えきらく大市』JR苅田駅前広場で開催（福岡・苅田町）【イベント】 - KBC九州朝日放送",
+    "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9qejNYVFViSGRyYTdkVUtmUDY0NVI2REYzTGlWYjVuZHZZU1BnYVp5MmNwUnozTGxiZEs0cl9Ua2pSeG5HTmhsOUs0dEtnUQ?oc=5",
+    "method": "keyword",
+    "needs_review": true
+  },
+  {
+    "venue": "中島公園",
+    "region_hint": null,
+    "in_tsukiji_30min_guess": null,
+    "source": "latest",
+    "source_title": "中島公園で懐かしさと新しさが出会う,盆踊り大会。 - キャンプファイヤー",
+    "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5TNHhRUGtkdG04Q2VBRXRHMnJHMHlQYlFKbmQ0a3BDejdmNHZyeGY3bnYzaVE2ckN2QWNNVFpZZktYM0N5R0d1angyNW42a25oOFZn?oc=5",
+    "method": "keyword",
+    "needs_review": true
+  },
+  {
+    "venue": "大豆戸八杉神社",
+    "region_hint": null,
+    "in_tsukiji_30min_guess": null,
+    "source": "latest",
+    "source_title": "8月16日（土）は大豆戸八杉神社「盆踊り」、新羽サマーフェス、トレッサ夏祭り - 新横浜新聞（しんよこ新聞）",
+    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFA4U1RHYkxTWmIyck9XZk5fQzAtNGFSUGtNSHJFbnRoa0p1OXpsOW9qUS1tbUdEaGREcXlndTRXUEZidW13RGNfbzRMd3NKRE1JanZ2QlRtUjVZN00yUTFwekYwdDJOZw?oc=5",
+    "method": "keyword",
+    "needs_review": true
+  },
+  {
+    "venue": "天妙国寺",
+    "region_hint": "品川第二地区",
+    "in_tsukiji_30min_guess": false,
+    "source": "latest",
+    "source_title": "品川第二地区 区民まつり 品川青年会納涼盆おどり（天妙国寺） - city.shinagawa.tokyo.jp",
+    "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQYUo2cnpqN3pjZTFOZm9tOFZQWThjM3BzNkFQQy1aYVhoV3ZGX0hTVlNTVlVQR3JremxwTUJ3ekN3ck1HcXBORHpvX25mU09ad3VKVEUxQkl3ZENPYnhEa1FMVGY2ZnQ1QkpQc1NJWHIweW9Dc3EwOFlPX3d5UjB1Mm1sUlBaMm91blQwbjlfMlpnV3Q4WDJiOW1tcnZFTnlKR1Uxd0hXUXdodnZEVTNSNzA0MzQtTUpmQ0ZNS01iTV9HeU5MRDhlWkhMRTlXdExGOWJSY2x1MA?oc=5",
+    "method": "paren",
+    "needs_review": true
+  },
+  {
+    "venue": "太陽の広場",
+    "region_hint": null,
+    "in_tsukiji_30min_guess": null,
+    "source": "latest",
+    "source_title": "鶴川団地秋祭り(太陽の広場)",
+    "url": "https://bonmaru.zenmin-odori.jp/archives/202686",
+    "method": "paren",
+    "needs_review": true
+  },
+  {
+    "venue": "小網神社",
+    "region_hint": null,
+    "in_tsukiji_30min_guess": null,
+    "source": "voices",
+    "source_title": "【速報】最強パワースポット「小網神社」例大祭　10年ぶりの神輿渡御【4K高画質】",
+    "url": "https://www.youtube.com/watch?v=niVXkxV3XbU",
+    "method": "keyword",
+    "needs_review": true
+  },
+  {
+    "venue": "岸根貴雲寺",
+    "region_hint": "篠原町",
+    "in_tsukiji_30min_guess": false,
+    "source": "latest",
+    "source_title": "開催中止（10日）※＜2025年盆踊り＞8月9日（土）は鳥山池公園、岸根貴雲寺、篠原町表谷の3カ所で - 新横浜新聞（しんよこ新聞）",
+    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9rYUw4UmlnNzFiR0Q3Qmlsc1RHeGs3S3ZlRmJFRHJiRm56dTlMcnlOTkIwZlN1bEFSWERaZ1RqMmpiSWl6RTZ0SW9oUzRiclZlbU5ueE5UZFlwWURvVHJHQnJEbk85UQ?oc=5",
+    "method": "keyword",
+    "needs_review": true
+  },
+  {
+    "venue": "常光寺",
+    "region_hint": null,
+    "in_tsukiji_30min_guess": null,
+    "source": "latest",
+    "source_title": "加古川で盆踊りイベント「BONフェス@常光寺」 マルシェやハンドメードも（みんなの経済新聞ネットワーク） - Yahoo!ニュース",
+    "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA1ZjVqdFlfU3I3blRKVWpocjlUTlAwNXZYWGtJd2Q0N2htLXNWRmg2dWVnR0p6bWxQSndxUnRKSDA0NW9QcFAyTkw5bURoWUlGUk4tTE9TMmRkZHJTbUplaVpnNzNwVzJINWFuT0EtazRpN2tQWVFtZTVTUVlOYmM?oc=5",
+    "method": "atmark",
+    "needs_review": true
+  },
+  {
+    "venue": "常龍寺",
+    "region_hint": null,
+    "in_tsukiji_30min_guess": null,
+    "source": "latest",
+    "source_title": "復活の盆おどり、釧路・音別で今年も 15日に常龍寺 綿あめ用意、にぎわい創出 - 北海道新聞デジタル",
+    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQbmF3Wk5VdnN1ZE9UampkU0ozV3M4ZHZQOHFWZmdnRGFOZ2RfZTJCYVNqei1CNVNSdnh4dkVvNzV1dTRzRWcwc29QV0FXaWYwdzBlazh2UW42ODVIbUVqZFZFSVRjenFaMndJZFNfaXYxMDkxd1B1WmlvY2t5ajVONHk0V3lMU0VP?oc=5",
+    "method": "keyword",
+    "needs_review": true
+  },
+  {
+    "venue": "強運厄除けの神・東京銭洗い弁天",
+    "region_hint": null,
+    "in_tsukiji_30min_guess": null,
+    "source": "voices",
+    "source_title": "【速報】最強パワースポット「小網神社」例大祭　10年ぶりの神輿渡御【4K高画質】",
+    "url": "https://www.youtube.com/watch?v=niVXkxV3XbU",
+    "method": "keyword",
+    "needs_review": true
+  },
+  {
+    "venue": "御旅公園",
+    "region_hint": "呉田地区",
+    "in_tsukiji_30min_guess": false,
+    "source": "latest",
+    "source_title": "東灘・呉田地区「盆おどり」が御旅公園グランドで2025年8月10日（日）・11日（祝）に開催予定だよ！ #東灘区 #盆踊り #夏祭り #呉田地区 #イベント - 東灘ジャーナル",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBIMFlOVmpqYzJ2TlN2VmJUUkNqSU54X1NXaFZnNzlVN0syNzVVcUVGUHdES1ZJV2M0WVA1TTloUE1pdU5aeklFTnEtY1FJUWtKVjNHM294YXE?oc=5",
+    "method": "keyword",
+    "needs_review": true
+  },
+  {
+    "venue": "恵庭ふるさと公園",
+    "region_hint": null,
+    "in_tsukiji_30min_guess": null,
+    "source": "latest",
+    "source_title": "【終了】恵庭ふるさと公園へいわ盆踊り - city.eniwa.hokkaido.jp",
+    "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNYW1JRHBlZ214UTB3cDZKZDhDQTJVemdSTkFockpUVldwZHI3M0EtYnl2WEJNTjFyNktKWUt5bXFqUUZ1dV94YTRiV3pnVUE1UVJySjhpZE16Um9RSV9TWW90ZG1vaUpZcDVSQVlVTmw4Q3hGREhQVkRfVTJrV2p5bWJYVDZ3WTd6Q0JUUkpUaGg3cnA3bWFjcW1LSWlSb0NhUDNJUWF5WGFKQ3pVZEdNenFGZHI0U1pzVjZYWDlNMkZDb2JNb1hxSURSUjE4NWh6Zl82M093?oc=5",
+    "method": "keyword",
+    "needs_review": true
+  },
+  {
+    "venue": "旧江別小学校",
+    "region_hint": "江別市",
+    "in_tsukiji_30min_guess": false,
+    "source": "latest",
+    "source_title": "【江別市】8/23・24「こども盆おどり2025」in 旧江別小学校跡地｜風街夏祭りと同時開催！ - 【えべナビ！】江別・野幌 情報ナビ",
+    "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE51RFdRaUhlNXpzcnc0VE0xZTBzZGE2ZXdXWFdjOXVGOUJ6bWFaTHdkOHhaZng0THdTMHRLa2JYRkJrd2dnRXNkUVpB?oc=5",
+    "method": "keyword",
+    "needs_review": true
+  },
+  {
+    "venue": "本住吉神社",
+    "region_hint": "茶屋地区",
+    "in_tsukiji_30min_guess": false,
+    "source": "latest",
+    "source_title": "東灘・茶屋地区「夏まつり＆盆おどり」が2025年8月9日（土）に本住吉神社 本殿東側地車庫前にて開催予定だよ #東灘区 #夏祭り #盆おどり #イベント #茶屋地区 - 東灘ジャーナル",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFA4a0pkQm0xNTNNYjZocE1MNGhjNjJEQVZINU5hWk5tbVYzOTVMRTlkMmg3QmFGdU9DOEdfSGFCN3B0ZU16QkVnaC1XUzRDOVlFN29ra1Z1dTk?oc=5",
+    "method": "keyword",
+    "needs_review": true
+  },
+  {
+    "venue": "本願寺",
+    "region_hint": null,
+    "in_tsukiji_30min_guess": null,
+    "source": "latest",
+    "source_title": "【西本願寺】「第37回本願寺納涼盆踊り」7月31日(木)・8月1日(金) 本願寺グルメストリート 出店詳細決定！《入場無料》 - PR TIMES",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5LQ2V2aVZhbkYzaXpoUzRveGplelBuVEVMVE9FN3RtZTRZUzFpeTd6VDRBVmpaVDFQVmFmWFNwclRaUkM4YjB5bU13b3pIMUh2SXczejk4bV90ZFNBZHlrTWdrb3hOMl8xbnc?oc=5",
+    "method": "keyword",
+    "needs_review": true
+  },
+  {
+    "venue": "松戸中央公園",
+    "region_hint": null,
+    "in_tsukiji_30min_guess": null,
+    "source": "latest",
+    "source_title": "【松戸の夏の締めくくり】8/30（土）31（日）松戸中央公園にて「ラストサマーフェス&盆おどり」が開催、街なかコスプレイベント同時開催【2025】 - 松戸つうしん",
+    "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1rc1o5akVNdFBEX29fOWZKYUlTbHJUOGJHYWdDZ3FJaWN1T1RHalZZZmlFZU1MMHVsNVE4RmxXQmFpb0k4SFlpZk5QT1paYkk?oc=5",
+    "method": "keyword",
+    "needs_review": true
+  },
+  {
+    "venue": "武蔵野神社",
+    "region_hint": null,
+    "in_tsukiji_30min_guess": null,
+    "source": "latest",
+    "source_title": "武蔵野神社祭禮奉納踊り(武蔵野神社)",
+    "url": "https://bonmaru.zenmin-odori.jp/archives/1272",
+    "method": "paren",
+    "needs_review": true
+  },
+  {
+    "venue": "田井西公園",
+    "region_hint": null,
+    "in_tsukiji_30min_guess": null,
+    "source": "latest",
+    "source_title": "田井西公園の盆おどり大会2023 - 寝屋川つーしん",
+    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE81RW03anlobHd4bDA0MGpkNDlnOHU5c2RCd1VqcVRCLW1TTldKTGxIVUJuREg4cUdncThOMWpoS01IRTdiZHBOV09JdG9lMHFkWm5yRjdBZ21aUGoydlU1RWpwZnQxQQ?oc=5",
+    "method": "keyword",
+    "needs_review": true
+  },
+  {
+    "venue": "立神田小学校",
+    "region_hint": "平塚市",
+    "in_tsukiji_30min_guess": false,
+    "source": "latest",
+    "source_title": "平塚市立神田小学校 盆踊りで地域つなぐ 公民館まつりで初披露へ | 平塚・大磯・二宮・中井 - タウンニュース",
+    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9aeUtyTjNOX2lmUWJDOXh5akFhQThTS2p0bXlTN1l5VmphcFhyRVV1WWE3UmQwNnUzTkI0RVVPRl9VU1Z0Q0RJMzFRZWlnZ0dlc1EtazFVbEt0dFJzcm5ua1RVblE?oc=5",
+    "method": "keyword",
+    "needs_review": true
+  },
+  {
+    "venue": "笠松みなと公園",
+    "region_hint": null,
+    "in_tsukiji_30min_guess": null,
+    "source": "latest",
+    "source_title": "みんなで踊ろう！秋の盆踊り！『リバーサイドカーニバル2025』in笠松みなと公園 - PR TIMES",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9kSVZnbDlLdFgyRHFvc2RucTR4U2FmLXNmc193cnhIT19NVzdWUHhkUFdxMUZzSWZvZzlWQ3Q2aXhKemhCa2xVWm5kTDlTd0E1YXhCZXc5alRYVW5WQzgwR2xIZ1NUTFhDTFE?oc=5",
+    "method": "keyword",
+    "needs_review": true
+  },
+  {
+    "venue": "芝公園",
+    "region_hint": "みなと区",
+    "in_tsukiji_30min_guess": false,
+    "source": "latest",
+    "source_title": "みなと区民まつり(芝公園)",
+    "url": "https://bonmaru.zenmin-odori.jp/archives/425",
+    "method": "paren",
+    "needs_review": true
+  },
+  {
+    "venue": "西本願寺",
+    "region_hint": null,
+    "in_tsukiji_30min_guess": null,
+    "source": "latest",
+    "source_title": "【西本願寺】「第37回本願寺納涼盆踊り」7月31日(木)・8月1日(金) 本願寺グルメストリート 出店詳細決定！《入場無料》 - PR TIMES",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5LQ2V2aVZhbkYzaXpoUzRveGplelBuVEVMVE9FN3RtZTRZUzFpeTd6VDRBVmpaVDFQVmFmWFNwclRaUkM4YjB5bU13b3pIMUh2SXczejk4bV90ZFNBZHlrTWdrb3hOMl8xbnc?oc=5",
+    "method": "keyword",
+    "needs_review": true
+  },
+  {
+    "venue": "飛鳥山公園",
+    "region_hint": null,
+    "in_tsukiji_30min_guess": null,
+    "source": "latest",
+    "source_title": "飛鳥山公園｜飛鳥山夏祭り～お城で盆おどり大作戦～ - PR TIMES",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAyUEUtZVRtRldMOTlMZlYxVmxwbGJPcGFZQWpjUHZFajhCbTFjZVRmWnJuS0dLR3U4bHlmV0xwN1hnRUYtOTh6RTZxNkZRWWo1U3FwV0JoVHlpU0lmcTFOazdwd01EdWw3Rnc?oc=5",
+    "method": "keyword",
+    "needs_review": true
+  },
+  {
+    "venue": "馬橋小学校",
+    "region_hint": null,
+    "in_tsukiji_30min_guess": null,
+    "source": "latest",
+    "source_title": "馬橋盆踊り(馬橋小学校)",
+    "url": "https://bonmaru.zenmin-odori.jp/archives/1837",
+    "method": "paren",
+    "needs_review": true
+  },
+  {
+    "venue": "駅前公園",
+    "region_hint": "愛知県春日井市",
+    "in_tsukiji_30min_guess": false,
+    "source": "voices",
+    "source_title": "音響トラブルを吹き飛ばす「春駒」大合唱！【第3回かすがい郡上踊り】お囃子愛好会「雅」14終　#郡上おどり　#春日井郡上おどり",
+    "url": "https://www.youtube.com/watch?v=CZOcraIbOKw",
+    "method": "keyword",
+    "needs_review": true
+  },
+  {
+    "venue": "鳥山池公園",
+    "region_hint": "篠原町",
+    "in_tsukiji_30min_guess": false,
+    "source": "latest",
+    "source_title": "開催中止（10日）※＜2025年盆踊り＞8月9日（土）は鳥山池公園、岸根貴雲寺、篠原町表谷の3カ所で - 新横浜新聞（しんよこ新聞）",
+    "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9rYUw4UmlnNzFiR0Q3Qmlsc1RHeGs3S3ZlRmJFRHJiRm56dTlMcnlOTkIwZlN1bEFSWERaZ1RqMmpiSWl6RTZ0SW9oUzRiclZlbU5ueE5UZFlwWURvVHJHQnJEbk85UQ?oc=5",
+    "method": "keyword",
+    "needs_review": true
+  },
+  {
+    "venue": "鶴川団地",
+    "region_hint": null,
+    "in_tsukiji_30min_guess": null,
+    "source": "latest",
+    "source_title": "鶴川団地秋祭り(太陽の広場)",
+    "url": "https://bonmaru.zenmin-odori.jp/archives/202686",
+    "method": "keyword",
+    "needs_review": true
+  }
+]
