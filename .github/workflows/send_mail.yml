@@ -1,0 +1,30 @@
+name: bon-odori-send-mail
+
+on:
+  schedule:
+    # 毎日18:15 JST (UTC 09:15) に実行。配信対象が無ければ何もしない。
+    - cron: '15 9 * * *'
+  workflow_dispatch: # 手動実行ボタンも有効にする
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+
+    - name: Send daily mail (標準ライブラリのみ・依存追加なし)
+      env:
+        NOTION_API_TOKEN: ${{ secrets.NOTION_API_TOKEN }}
+        MAIL_DB_ID: '299745f615c24affadbaf57af4797ba1'
+        MAIL_USERNAME: ${{ secrets.MAIL_USERNAME }}
+        MAIL_APP_PASSWORD: ${{ secrets.MAIL_APP_PASSWORD }}
+        # 宛先を変えたいときだけ Secret MAIL_TO を設定（未設定なら send_mail.py の既定 uryouta77@yahoo.co.jp）
+        MAIL_TO: ${{ secrets.MAIL_TO }}
+      run: python send_mail.py
