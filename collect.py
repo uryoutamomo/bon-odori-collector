@@ -160,12 +160,23 @@ def _chunk_text(text, size=1900):
     return [text[i:i + size] for i in range(0, len(text), size)] or [""]
 
 
-def _rich_text(content):
-    return [{"type": "text", "text": {"content": c}} for c in _chunk_text(content)]
+def _rich_text(content, link=None):
+    out = []
+    for c in _chunk_text(content):
+        t = {"content": c}
+        if link:
+            t["link"] = {"url": link}
+        out.append({"type": "text", "text": t})
+    return out
 
 
-def push_to_notion(latest_items, updated_at):
-    """Notion ページの内容を最新データで全面更新する。"""
+def push_to_notion(latest_items, updated_at, x_voices=None):
+    """Notion ページの内容を最新データで全面更新する。
+
+    x_voices: X由来の「人の言葉」（一次レポ/関心、直近分）。配信担当(こわ)が
+    同じページを読むだけでX情報を配信に組み込めるよう、専用セクションに載せる。
+    """
+    x_voices = x_voices or []
     if not NOTION_TOKEN or not NOTION_PAGE_ID:
         print("Notion未設定 (NOTION_API_TOKEN / NOTION_PAGE_ID) のためスキップ")
         return
@@ -190,15 +201,42 @@ def push_to_notion(latest_items, updated_at):
              "heading_2": {"rich_text": _rich_text("収集データ（JSON）")}},
             {"object": "block", "type": "code",
              "code": {"language": "json", "rich_text": _rich_text(json_text)}},
+        ]
+
+        # X由来の「人の言葉」セクション（配信に使う一次レポ/関心）
+        new_blocks.append(
+            {"object": "block", "type": "heading_2",
+             "heading_2": {"rich_text": _rich_text("🗣️ 人の言葉（X由来 / 配信ネタ）")}})
+        if x_voices:
+            for v in x_voices:
+                acct = (v.get("account") or v.get("name") or "").lstrip("@")
+                text = (v.get("text") or "").replace("\n", " ").strip()
+                if len(text) > 140:
+                    text = text[:140] + "…"
+                tags = v.get("tags") or []
+                label = next((t for t in tags if "一次レポ" in t or "関心" in t), "")
+                head = " ".join(x for x in [label, f"@{acct}" if acct else ""] if x)
+                line = f"{head}: {text}" if head else text
+                new_blocks.append(
+                    {"object": "block", "type": "bulleted_list_item",
+                     "bulleted_list_item": {"rich_text": _rich_text(line, v.get("url"))}})
+        else:
+            new_blocks.append(
+                {"object": "block", "type": "paragraph",
+                 "paragraph": {"rich_text": _rich_text("（直近のX由来の一次レポ/関心はありません）")}})
+
+        new_blocks += [
             {"object": "block", "type": "heading_2",
              "heading_2": {"rich_text": _rich_text("ステータス")}},
             {"object": "block", "type": "bulleted_list_item",
              "bulleted_list_item": {"rich_text": _rich_text(f"最終実行: {updated_at}")}},
             {"object": "block", "type": "bulleted_list_item",
              "bulleted_list_item": {"rich_text": _rich_text(f"取得件数: {len(latest_items)}件")}},
+            {"object": "block", "type": "bulleted_list_item",
+             "bulleted_list_item": {"rich_text": _rich_text(f"人の言葉(X由来): {len(x_voices)}件")}},
         ]
         _notion_request("PATCH", f"/blocks/{NOTION_PAGE_ID}/children", {"children": new_blocks})
-        print(f"Notion更新完了: {len(latest_items)}件")
+        print(f"Notion更新完了: ニュース{len(latest_items)}件 / X由来{len(x_voices)}件")
     except Exception as e:
         print(f"Notion更新エラー: {e}")
         raise
@@ -579,6 +617,7 @@ def main():
     print(f"完了: 全 {len(latest_items)} 件を記録しました。")
 
     # --- voices 収集（fail-safe: 失敗してもニュース収集結果に影響しない）---
+    deduped_voices = []  # Notion へ X由来の言葉を載せるため、try の外で確実に定義
     try:
         voices_seen_file = 'data/voices_seen.json'
         voices_seen_urls = set()
@@ -651,7 +690,20 @@ def main():
         item for item in latest_items
         if (_parse_date(item.get("date")) or datetime.min.replace(tzinfo=timezone.utc)) >= cutoff
     ]
-    push_to_notion(recent_items if recent_items else latest_items[:30], updated_at)
+
+    # X由来の「人の言葉」を直近7日で抽出して配信ネタとしてNotionへ載せる
+    # （🟢一次レポを優先、その中では新しい順。deduped_voices は新規が先頭）
+    x_voices_all = [
+        v for v in deduped_voices
+        if v.get("source") == "x"
+        and (_parse_date(v.get("date")) or datetime.min.replace(tzinfo=timezone.utc)) >= cutoff
+    ]
+    x_voices_recent = sorted(
+        x_voices_all,
+        key=lambda v: 0 if any("一次レポ" in t for t in (v.get("tags") or [])) else 1,
+    )[:15]
+
+    push_to_notion(recent_items if recent_items else latest_items[:30], updated_at, x_voices_recent)
 
 if __name__ == '__main__':
     main()
