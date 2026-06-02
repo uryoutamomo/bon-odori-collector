@@ -1,0 +1,9 @@
+# ローカルのみ：APIキー等。コミットしない
+.env.local
+.env
+
+# ローカルのテスト出力（X収集の実験ダンプ）
+data/x_voices_experiment.json
+
+__pycache__/
+*.pyc
