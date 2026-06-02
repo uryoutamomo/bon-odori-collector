@@ -2,8 +2,10 @@ name: bon-odori-collect
 
 on:
   schedule:
-    # 毎日15:00 JST (UTC 06:00) に実行
-    - cron: '0 6 * * *'
+    # 毎日 約15:13 JST (UTC 06:13) に実行。
+    # 注: GitHub の schedule は SLA がなく、特に "0分"(毎時ちょうど)は世界中のジョブが
+    # 集中して遅延・ドロップされやすい。混雑を避けるため意図的に分をずらしている。
+    - cron: '13 6 * * *'
   workflow_dispatch: # 手動実行ボタンも有効にする
 
 jobs:
