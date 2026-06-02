@@ -1,0 +1,39 @@
+{
+  "_comment": "X(twitterapi.io)収集の設定。コードを触らず実験するための外出し設定。クエリ・除外語の追加修正はこのファイルだけで完結する。設計: 盆踊り情報開発>『X収集 改善ループ 設計アイデア』",
+  "enabled": true,
+  "budget": {
+    "_comment": "有料(プリペイド)のため安全装置。超えたら収集スキップ=fail-safe。cost_per_tweet_usd は twitterapi.io の $0.15/1000件 = 1件 $0.00015。",
+    "daily_usd": 0.3,
+    "monthly_usd": 5.0,
+    "cost_per_tweet_usd": 0.00015
+  },
+  "max_pages_per_query": 2,
+  "page_sleep_sec": 2,
+  "exclude_keywords": [
+    "ポケモン", "ピカチュウ", "ポケGO", "ポケモンGO", "pokemon", "Pokémon",
+    "セトリ", "セットリスト", "ライブ", "Zepp",
+    "悪口盆踊り", "ダーク盆踊り", "真冬の盆踊り",
+    "音ゲー", "ソシャゲ", "ガチャ"
+  ],
+  "experience_keywords": [
+    "行った", "行ってきた", "踊った", "踊ってきた", "参加し", "参加した",
+    "楽しかった", "最高", "見てきた", "参戦", "踊りに行", "盆踊り会"
+  ],
+  "queries": [
+    {
+      "id": "q-base",
+      "aim": "広く拾う",
+      "query": "盆踊り lang:ja -filter:retweets"
+    },
+    {
+      "id": "q-report",
+      "aim": "参加レポ重視",
+      "query": "盆踊り (行った OR 踊った OR 楽しかった OR 行ってきた) lang:ja -filter:retweets"
+    },
+    {
+      "id": "q-venue",
+      "aim": "ホーム会場名で先読み（築地30分圏内の主要地名）",
+      "query": "(築地 OR 月島 OR 佃 OR 勝どき OR 晴海 OR 浜町) 盆踊り lang:ja -filter:retweets"
+    }
+  ]
+}
