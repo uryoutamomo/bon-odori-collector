@@ -868,6 +868,36 @@ def push_torimochi_queue(detected):
     print(f"[queue] 裏取りキューに {added} 件追加（既出スキップ・検出 {len(detected)} 件）")
 
 
+def archive_resolved_queue():
+    """掃除ループ: ステータス『該当なし』の行をアーカイブ（ゴミ箱へ）。
+    こわが誤検知と判断した行を自動で片付ける。queue_seen からは消さない
+    （= 再検知で蒸し返さない）。fail-safe。"""
+    if not NOTION_TOKEN:
+        return
+    archived = 0
+    try:
+        cursor = None
+        while True:
+            payload = {"page_size": 100,
+                       "filter": {"property": "ステータス", "select": {"equals": "該当なし"}}}
+            if cursor:
+                payload["start_cursor"] = cursor
+            data = _notion_query_database(TORIMOCHI_QUEUE_DB_ID, payload)
+            for row in data.get("results", []):
+                try:
+                    _notion_request("PATCH", f"/pages/{row['id']}", {"archived": True})
+                    archived += 1
+                except Exception as e:
+                    print(f"[queue] 該当なしアーカイブ失敗（継続）: {e}")
+            if not data.get("has_more"):
+                break
+            cursor = data.get("next_cursor")
+    except Exception as e:
+        print(f"[queue] 掃除ループ・クエリエラー（スキップ）: {e}")
+        return
+    print(f"[queue] 掃除ループ: 該当なし {archived} 件をアーカイブ")
+
+
 def main():
     seen_file = 'data/seen.json'
     seen_urls = set()
@@ -989,6 +1019,8 @@ def main():
     try:
         detected = detect_venues_for_queue(deduped_voices, latest_items)
         push_torimochi_queue(detected)
+        # 掃除ループ: こわが『該当なし』にした行を自動アーカイブ
+        archive_resolved_queue()
     except Exception as e:
         print(f"[queue] 予期せぬエラー（他処理には影響なし）: {e}")
 
