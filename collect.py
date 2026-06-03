@@ -580,6 +580,13 @@ VENUE_MASTER_FILE = "data/venue_master.json"
 X_WHITELIST_STATE_FILE = "data/x_whitelist_state.json"
 QUEUE_SEEN_FILE = "data/torimochi_queue_seen.json"
 
+# ホーム会場（築地起点・最優先）。会場マスタに無くても確実に拾うための固定リスト。
+# X自由文からは「既知会場＋このリスト」との一致だけを拾う（regex自由抽出はニュース限定）。
+HOME_VENUES = (
+    "築地本願寺", "波除神社", "浜町公園", "鉄砲洲児童公園", "鉄砲洲稲荷神社",
+    "月島第二児童公園", "佃公園", "晴海ふ頭公園", "築地社会教育会館",
+)
+
 # 盆踊り文脈語（これが無いテキストからは会場抽出しない＝雑音抑制）
 _BON_CONTEXT = ("盆踊り", "盆おどり", "納涼", "やぐら", "櫓", "音頭")
 # 既知会場に無くても拾う新規会場パターン（○○本願寺/神社/公園 等）
@@ -595,7 +602,7 @@ _VENUE_REJECT_RE = re.compile(r'[はがをへ、。!！?？「」 　]')
 def _clean_regex_venue(name):
     """新規パターン抽出名の前処理。先頭の英字(in等)・ひらがな助詞/接頭句を落とす。"""
     name = re.sub(r'^第?\d+回', '', name).strip()
-    name = re.sub(r'^[A-Za-zぁ-ん]+', '', name).strip()  # 先頭 in/は/に/が… を除去
+    name = re.sub(r'^[A-Za-z0-9ぁ-ん]+', '', name).strip()  # 先頭 in/7日/は/に/が… を除去
     return name
 
 
@@ -762,6 +769,9 @@ def _load_known_venues():
                 out[name] = bool(v.get("in_tsukiji_30min"))
     except Exception as e:
         print(f"[queue] 会場マスタ読込エラー（既知会場なしで継続）: {e}")
+    # ホーム会場は会場マスタに無くても必ず既知扱い（in_tsukiji_30min=True）
+    for hv in HOME_VENUES:
+        out[hv] = True
     return out
 
 
@@ -782,28 +792,30 @@ def detect_venues_for_queue(voices, news_items):
         found[venue] = {"venue": venue, "url": url or "",
                         "text": (text or "")[:300], "source": source, "priority": priority}
 
-    def scan(text, url, source):
+    def scan(text, url, source, allow_regex):
         if not text or not any(c in text for c in _BON_CONTEXT):
             return
-        # 既知会場マスタ照合（クリーンな会場名）
+        # 既知会場マスタ＋ホーム会場との一致（クリーンな会場名）
         for name, in_range in known.items():
             if name in text:
                 consider(name, url, text, source, in_range)
-        # 新規パターン（前後の助詞・接頭句を落とし、文を巻き込んだものは捨てる）
-        for m in _VENUE_SUFFIX_RE.findall(text):
-            cv = _clean_regex_venue(m)
-            if len(cv) < 3 or _VENUE_REJECT_RE.search(cv):
-                continue
-            consider(cv, url, text, source)
+        # 新規会場の発見（正規表現）はニュースタイトル限定。
+        # X自由文は「○○の築地本願寺」等で文を巻き込むため regex 抽出しない。
+        if allow_regex:
+            for m in _VENUE_SUFFIX_RE.findall(text):
+                cv = _clean_regex_venue(m)
+                if len(cv) < 3 or _VENUE_REJECT_RE.search(cv):
+                    continue
+                consider(cv, url, text, source)
 
-    # ホワイトリストだけでなく全X声を走査（キーワード収集分=source 'x' も対象）。
-    # 盆踊りの告知は「盆踊り」語を含みキーワード側で先に収集され x になりがちで、
-    # x_whitelist だけだと取りこぼす（築地本願寺のケース）。
+    # 全X声（x_whitelist＋キーワードのx）を走査。告知は「盆踊り」語を含み x で
+    # 収集されがちなので x_whitelist 限定にしない（築地本願寺のケース）。
+    # ただし X 自由文は既知/ホーム一致のみ（regexなし）で雑音を抑える。
     for v in voices:
         if v.get("source") in ("x_whitelist", "x"):
-            scan(v.get("text"), v.get("url"), v.get("source"))
+            scan(v.get("text"), v.get("url"), v.get("source"), allow_regex=False)
     for it in news_items:
-        scan(it.get("title"), it.get("url"), "news")
+        scan(it.get("title"), it.get("url"), "news", allow_regex=True)
 
     return list(found.values())
 
