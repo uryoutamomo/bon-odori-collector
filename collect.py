@@ -587,6 +587,16 @@ _VENUE_SUFFIX_RE = re.compile(
     r'([一-龥ぁ-んァ-ヶー一-鿐A-Za-z0-9]{2,12}(?:本願寺|八幡宮|神社|稲荷|不動尊|公園|広場|商店街|児童遊園))')
 # 単独だと一般名詞すぎて誤検知になる会場名はキューに積まない
 _GENERIC_VENUE_BLOCK = {"本願寺", "西本願寺", "神社", "公園", "寺", "会館", "広場", "児童公園", "商店街"}
+# 抽出した会場名に文の助詞・記号が残っていたら（=文を巻き込んだ誤抽出）捨てる。
+# は/が/を/へ は地名内にほぼ出ないので採用。に/の/と は地名内に出るため除外しない。
+_VENUE_REJECT_RE = re.compile(r'[はがをへ、。!！?？「」 　]')
+
+
+def _clean_regex_venue(name):
+    """新規パターン抽出名の前処理。先頭の英字(in等)・ひらがな助詞/接頭句を落とす。"""
+    name = re.sub(r'^第?\d+回', '', name).strip()
+    name = re.sub(r'^[A-Za-zぁ-ん]+', '', name).strip()  # 先頭 in/は/に/が… を除去
+    return name
 
 
 def _notion_query_database(db_id, payload=None):
@@ -775,15 +785,23 @@ def detect_venues_for_queue(voices, news_items):
     def scan(text, url, source):
         if not text or not any(c in text for c in _BON_CONTEXT):
             return
+        # 既知会場マスタ照合（クリーンな会場名）
         for name, in_range in known.items():
             if name in text:
                 consider(name, url, text, source, in_range)
+        # 新規パターン（前後の助詞・接頭句を落とし、文を巻き込んだものは捨てる）
         for m in _VENUE_SUFFIX_RE.findall(text):
-            consider(m, url, text, source)
+            cv = _clean_regex_venue(m)
+            if len(cv) < 3 or _VENUE_REJECT_RE.search(cv):
+                continue
+            consider(cv, url, text, source)
 
+    # ホワイトリストだけでなく全X声を走査（キーワード収集分=source 'x' も対象）。
+    # 盆踊りの告知は「盆踊り」語を含みキーワード側で先に収集され x になりがちで、
+    # x_whitelist だけだと取りこぼす（築地本願寺のケース）。
     for v in voices:
-        if v.get("source") == "x_whitelist":
-            scan(v.get("text"), v.get("url"), "x_whitelist")
+        if v.get("source") in ("x_whitelist", "x"):
+            scan(v.get("text"), v.get("url"), v.get("source"))
     for it in news_items:
         scan(it.get("title"), it.get("url"), "news")
 
