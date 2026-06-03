@@ -1,4 +1,5 @@
 import os
+import re
 import json
 import urllib.request
 import urllib.parse
@@ -568,6 +569,275 @@ def collect_x_voices(seen_urls: set) -> tuple[list, list]:
     return new_items, new_seen
 
 
+# --- ホワイトリスト収集 / 会場検知→裏取りキュー（2段構え）---
+# 仕様: 盆踊り情報開発 >「🔎 盆踊ラー起点・会場裏取り 2段構え（仕様）」
+# A. 既存「X メンバーリスト」DB の from: をバッチ収集（since_time で新規のみ）→ ⭐盆踊ラー最優先
+# B. 盆踊ラー声＋ニュースから会場名を検知 →「🔎 裏取りキュー」DB へ（裏取りはこわ）。既出は再投入しない。
+
+X_MEMBER_LIST_DB_ID = os.environ.get("X_MEMBER_LIST_DB_ID", "5c585224465241548b631e4e5d316f3b")
+TORIMOCHI_QUEUE_DB_ID = os.environ.get("TORIMOCHI_QUEUE_DB_ID", "f560afee832f4b1084d6e6093d74da16")
+VENUE_MASTER_FILE = "data/venue_master.json"
+X_WHITELIST_STATE_FILE = "data/x_whitelist_state.json"
+QUEUE_SEEN_FILE = "data/torimochi_queue_seen.json"
+
+# 盆踊り文脈語（これが無いテキストからは会場抽出しない＝雑音抑制）
+_BON_CONTEXT = ("盆踊り", "盆おどり", "納涼", "やぐら", "櫓", "音頭")
+# 既知会場に無くても拾う新規会場パターン（○○本願寺/神社/公園 等）
+_VENUE_SUFFIX_RE = re.compile(
+    r'([一-龥ぁ-んァ-ヶー一-鿐A-Za-z0-9]{2,12}(?:本願寺|八幡宮|神社|稲荷|不動尊|公園|広場|商店街|児童遊園))')
+# 単独だと一般名詞すぎて誤検知になる会場名はキューに積まない
+_GENERIC_VENUE_BLOCK = {"本願寺", "西本願寺", "神社", "公園", "寺", "会館", "広場", "児童公園", "商店街"}
+
+
+def _notion_query_database(db_id, payload=None):
+    return _notion_request("POST", f"/databases/{db_id}/query", payload or {})
+
+
+def load_whitelist_handles():
+    """「X メンバーリスト」DB から @ハンドル一覧（@抜き）を返す。失敗時 []（fail-safe）。"""
+    if not NOTION_TOKEN:
+        print("[whitelist] NOTION_API_TOKEN 未設定のためメンバーリスト読込スキップ")
+        return []
+    handles = []
+    try:
+        cursor = None
+        while True:
+            payload = {"page_size": 100}
+            if cursor:
+                payload["start_cursor"] = cursor
+            data = _notion_query_database(X_MEMBER_LIST_DB_ID, payload)
+            for row in data.get("results", []):
+                props = row.get("properties", {})
+                acc = props.get("アカウント (@)", {}) or {}
+                rich = acc.get("rich_text") or acc.get("title") or []
+                text = "".join(t.get("plain_text", "") for t in rich).strip()
+                if not text:
+                    url = (props.get("プロフィールURL", {}) or {}).get("url") or ""
+                    if "x.com/" in url or "twitter.com/" in url:
+                        text = url.rstrip("/").split("/")[-1]
+                h = text.lstrip("@").strip()
+                if h:
+                    handles.append(h)
+            if not data.get("has_more"):
+                break
+            cursor = data.get("next_cursor")
+    except Exception as e:
+        print(f"[whitelist] メンバーリスト読込エラー（スキップ）: {e}")
+        return []
+    seen, out = set(), []
+    for h in handles:
+        k = h.lower()
+        if k not in seen:
+            seen.add(k)
+            out.append(h)
+    print(f"[whitelist] メンバーリスト {len(out)} アカウント取得")
+    return out
+
+
+def _load_whitelist_since():
+    """前回実行の since_time(UNIX秒)。無ければ過去3日。"""
+    try:
+        with open(X_WHITELIST_STATE_FILE, "r", encoding="utf-8") as f:
+            return int(json.load(f).get("since_time"))
+    except Exception:
+        return int((datetime.now(timezone.utc) - timedelta(days=3)).timestamp())
+
+
+def _save_whitelist_since(ts):
+    try:
+        os.makedirs("data", exist_ok=True)
+        with open(X_WHITELIST_STATE_FILE, "w", encoding="utf-8") as f:
+            json.dump({"since_time": int(ts)}, f)
+    except Exception as e:
+        print(f"[whitelist] since_time 保存エラー: {e}")
+
+
+def collect_x_whitelist(seen_urls):
+    """A. ホワイトリスト(from:)をバッチ収集（since_timeで新規のみ）。
+    戻り値: (new_items, new_seen)。source=x_whitelist / tag ⭐盆踊ラー。
+    ノイズ仕分けされても voices には残す（重視ソースのため）。fail-safe。"""
+    if not TWITTERAPI_IO_KEY:
+        print("[whitelist] TWITTERAPI_IO_KEY 未設定のためスキップ")
+        return [], list(seen_urls)
+    handles = load_whitelist_handles()
+    if not handles:
+        print("[whitelist] ホワイトリストが空のためスキップ")
+        return [], list(seen_urls)
+
+    cfg = _load_x_config() or {}
+    budget = cfg.get("budget", {})
+    cost_per_tweet = budget.get("cost_per_tweet_usd", 0.00015)
+    daily_cap = budget.get("daily_usd", 0.3)
+    monthly_cap = budget.get("monthly_usd", 5.0)
+
+    import time as _time
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    month = today[:7]
+    state = _x_budget_state()
+    daily_spent = state.get(today, 0.0)
+    monthly_spent = sum(v for k, v in state.items() if k.startswith(month))
+    if daily_spent >= daily_cap or monthly_spent >= monthly_cap:
+        print(f"[whitelist] 予算上限到達のためスキップ（日 ${daily_spent:.4f} 月 ${monthly_spent:.4f}）")
+        return [], list(seen_urls)
+
+    since_ts = _load_whitelist_since()
+    batch_size = cfg.get("whitelist_batch_size", 20)
+    new_items, new_seen, run_cost = [], list(seen_urls), 0.0
+
+    for i in range(0, len(handles), batch_size):
+        if daily_spent + run_cost >= daily_cap or monthly_spent + run_cost >= monthly_cap:
+            print("[whitelist] 走行中に予算上限到達。以降のバッチを打ち切り")
+            break
+        batch = handles[i:i + batch_size]
+        froms = " OR ".join(f"from:{h}" for h in batch)
+        query = f"({froms}) since_time:{since_ts}"
+        try:
+            data = _x_search(query)
+        except urllib.error.HTTPError as e:
+            if e.code == 429:
+                print("[whitelist] 429。5秒待って1回だけ再試行")
+                _time.sleep(5)
+                try:
+                    data = _x_search(query)
+                except Exception as e2:
+                    print(f"[whitelist] 再試行も失敗、このバッチを飛ばす: {e2}")
+                    continue
+            else:
+                print(f"[whitelist] HTTPエラー {e.code}、このバッチを飛ばす")
+                continue
+        except Exception as e:
+            print(f"[whitelist] 取得エラー、このバッチを飛ばす: {e}")
+            continue
+
+        tweets = data.get("tweets") or data.get("data") or []
+        run_cost += max(len(tweets), 1) * cost_per_tweet  # 空振りも1件課金
+        count = 0
+        for tw in tweets:
+            v = _x_map_to_voice(tw)
+            v["source"] = "x_whitelist"
+            if not v["url"] or v["url"] in seen_urls or v["url"] in new_seen:
+                continue
+            judgement = _score_voice(v["text"], cfg) if cfg else "🟡関心"
+            v["tags"] = ["⭐盆踊ラー", judgement]
+            _append_x_log_row(v, "q-whitelist", judgement, cost_per_tweet)
+            new_items.append(v)  # ホワイトリストはノイズでも保持
+            new_seen.append(v["url"])
+            count += 1
+        print(f"[whitelist] バッチ{i // batch_size + 1}: {count} 件採用")
+        _time.sleep(cfg.get("page_sleep_sec", 2))
+
+    if run_cost > 0:
+        state[today] = daily_spent + run_cost
+        try:
+            os.makedirs("data", exist_ok=True)
+            with open(X_BUDGET_FILE, "w", encoding="utf-8") as f:
+                json.dump(state, f, ensure_ascii=False, indent=2)
+        except Exception as e:
+            print(f"[whitelist] 予算記録の保存エラー: {e}")
+    _save_whitelist_since(datetime.now(timezone.utc).timestamp())
+    print(f"[whitelist] 完了: {len(new_items)} 件採用、今回コスト 約${run_cost:.5f}")
+    return new_items, new_seen
+
+
+def _load_known_venues():
+    """venue_master.json から {会場名: in_tsukiji_30min(bool)} を返す。"""
+    out = {}
+    try:
+        with open(VENUE_MASTER_FILE, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        items = data if isinstance(data, list) else data.get("venues", [])
+        for v in items:
+            name = (v.get("venue") or "").strip()
+            if len(name) >= 3 and name not in _GENERIC_VENUE_BLOCK:
+                out[name] = bool(v.get("in_tsukiji_30min"))
+    except Exception as e:
+        print(f"[queue] 会場マスタ読込エラー（既知会場なしで継続）: {e}")
+    return out
+
+
+def detect_venues_for_queue(voices, news_items):
+    """B. ホワイトリスト声＋ニュースから会場候補を検出。実行内で会場名dedup。
+    戻り: [{venue,url,text,source,priority}]。"""
+    known = _load_known_venues()
+    found = {}
+
+    def consider(venue, url, text, source, in_range_known=None):
+        venue = (venue or "").strip()
+        venue = re.sub(r'^第?\d+回', '', venue).strip()  # 「第79回築地本願寺」→「築地本願寺」
+        if not venue or venue in _GENERIC_VENUE_BLOCK or venue in found:
+            return
+        if in_range_known is None:
+            in_range_known = known.get(venue)
+        priority = "ホーム" if "築地本願寺" in venue else ("近隣" if in_range_known else "通常")
+        found[venue] = {"venue": venue, "url": url or "",
+                        "text": (text or "")[:300], "source": source, "priority": priority}
+
+    def scan(text, url, source):
+        if not text or not any(c in text for c in _BON_CONTEXT):
+            return
+        for name, in_range in known.items():
+            if name in text:
+                consider(name, url, text, source, in_range)
+        for m in _VENUE_SUFFIX_RE.findall(text):
+            consider(m, url, text, source)
+
+    for v in voices:
+        if v.get("source") == "x_whitelist":
+            scan(v.get("text"), v.get("url"), "x_whitelist")
+    for it in news_items:
+        scan(it.get("title"), it.get("url"), "news")
+
+    return list(found.values())
+
+
+def push_torimochi_queue(detected):
+    """検出会場を「🔎 裏取りキュー」DB へ追記。既出(queue_seen)はスキップ。fail-safe。"""
+    if not NOTION_TOKEN:
+        print("[queue] NOTION_API_TOKEN 未設定のため裏取りキュー追記スキップ")
+        return
+    if not detected:
+        print("[queue] 検出会場なし")
+        return
+    seen = set()
+    if os.path.exists(QUEUE_SEEN_FILE):
+        try:
+            with open(QUEUE_SEEN_FILE, "r", encoding="utf-8") as f:
+                seen = set(json.load(f))
+        except Exception:
+            pass
+    today = datetime.now(timezone(timedelta(hours=9))).strftime("%Y-%m-%d")
+    added = 0
+    for d in detected:
+        key = d["venue"]
+        if key in seen:
+            continue
+        props = {
+            "会場名": {"title": [{"text": {"content": d["venue"][:200]}}]},
+            "ステータス": {"select": {"name": "要裏取り"}},
+            "検知ソース": {"select": {"name": d["source"]}},
+            "優先度": {"select": {"name": d["priority"]}},
+            "検知元本文": {"rich_text": [{"text": {"content": d["text"][:1900]}}]},
+            "検知日": {"date": {"start": today}},
+        }
+        if d["url"]:
+            props["検知元URL"] = {"url": d["url"]}
+        try:
+            _notion_request("POST", "/pages",
+                            {"parent": {"database_id": TORIMOCHI_QUEUE_DB_ID}, "properties": props})
+            seen.add(key)
+            added += 1
+        except Exception as e:
+            print(f"[queue] 追記エラー（{key}・継続）: {e}")
+    if added:
+        try:
+            os.makedirs("data", exist_ok=True)
+            with open(QUEUE_SEEN_FILE, "w", encoding="utf-8") as f:
+                json.dump(sorted(seen), f, ensure_ascii=False, indent=2)
+        except Exception as e:
+            print(f"[queue] queue_seen 保存エラー: {e}")
+    print(f"[queue] 裏取りキューに {added} 件追加（既出スキップ・検出 {len(detected)} 件）")
+
+
 def main():
     seen_file = 'data/seen.json'
     seen_urls = set()
@@ -648,6 +918,13 @@ def main():
         except Exception as e:
             print(f"[x] 予期せぬエラー（他収集には影響なし）: {e}")
 
+        # A. ホワイトリスト（X メンバーリスト）収集。⭐盆踊ラーを最優先ソースとして追加（fail-safe）
+        try:
+            wl_items, updated_voices_seen = collect_x_whitelist(set(updated_voices_seen))
+            voice_items = wl_items + voice_items  # 盆踊ラーを先頭に
+        except Exception as e:
+            print(f"[whitelist] 予期せぬエラー（他収集には影響なし）: {e}")
+
         # voices.json: 全件スナップショット（seen に入っていない新規のみ追加）
         voices_file = 'data/voices.json'
         existing_voices = []
@@ -677,6 +954,13 @@ def main():
         print(f"[voices] 完了: 新規 {len(voice_items)} 件、累計 {len(deduped_voices)} 件")
     except Exception as e:
         print(f"[voices] 予期せぬエラー（ニュース収集には影響なし）: {e}")
+
+    # --- B. 会場検知 → 裏取りキュー（fail-safe: 失敗しても他処理に影響しない）---
+    try:
+        detected = detect_venues_for_queue(deduped_voices, latest_items)
+        push_torimochi_queue(detected)
+    except Exception as e:
+        print(f"[queue] 予期せぬエラー（他処理には影響なし）: {e}")
 
     # Notion へ書き戻し（直近7日分のみ）
     jst = timezone(timedelta(hours=9))
