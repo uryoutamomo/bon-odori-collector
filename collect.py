@@ -170,11 +170,13 @@ def _rich_text(content, link=None):
     return out
 
 
-def push_to_notion(latest_items, updated_at, x_voices=None):
+def push_to_notion(latest_items, updated_at, x_voices=None, x_cost=None):
     """Notion ページの内容を最新データで全面更新する。
 
     x_voices: X由来の「人の言葉」（一次レポ/関心、直近分）。配信担当(こわ)が
     同じページを読むだけでX情報を配信に組み込めるよう、専用セクションに載せる。
+    x_cost: {"today": 今日のX収集コスト$, "month": 今月累計$, "daily_cap": 日上限$,
+            "monthly_cap": 月上限$}。デイリーのコスト見える化用。
     """
     x_voices = x_voices or []
     if not NOTION_TOKEN or not NOTION_PAGE_ID:
@@ -235,6 +237,15 @@ def push_to_notion(latest_items, updated_at, x_voices=None):
             {"object": "block", "type": "bulleted_list_item",
              "bulleted_list_item": {"rich_text": _rich_text(f"人の言葉(X由来): {len(x_voices)}件")}},
         ]
+        if x_cost:
+            t = x_cost.get("today", 0.0)
+            m = x_cost.get("month", 0.0)
+            dcap = x_cost.get("daily_cap", 0.0)
+            mcap = x_cost.get("monthly_cap", 0.0)
+            new_blocks.append(
+                {"object": "block", "type": "bulleted_list_item",
+                 "bulleted_list_item": {"rich_text": _rich_text(
+                     f"💰 X収集コスト: 本日 ${t:.4f} / 上限 ${dcap:.2f}　｜　今月累計 ${m:.4f} / 上限 ${mcap:.2f}")}})
         _notion_request("PATCH", f"/blocks/{NOTION_PAGE_ID}/children", {"children": new_blocks})
         print(f"Notion更新完了: ニュース{len(latest_items)}件 / X由来{len(x_voices)}件")
     except Exception as e:
@@ -703,7 +714,30 @@ def main():
         key=lambda v: 0 if any("一次レポ" in t for t in (v.get("tags") or [])) else 1,
     )[:15]
 
-    push_to_notion(recent_items if recent_items else latest_items[:30], updated_at, x_voices_recent)
+    # X収集コストの見える化（x_budget.json の日次消費を集計）
+    x_cost = None
+    try:
+        today_str = datetime.now(jst).strftime("%Y-%m-%d")
+        month_prefix = today_str[:7]  # YYYY-MM
+        budget_state = {}
+        if os.path.exists('data/x_budget.json'):
+            with open('data/x_budget.json', 'r', encoding='utf-8') as f:
+                budget_state = json.load(f)
+        month_total = sum(v for k, v in budget_state.items() if k.startswith(month_prefix))
+        caps = {}
+        if os.path.exists('x_queries.json'):
+            with open('x_queries.json', 'r', encoding='utf-8') as f:
+                caps = json.load(f).get('budget', {})
+        x_cost = {
+            "today": budget_state.get(today_str, 0.0),
+            "month": month_total,
+            "daily_cap": caps.get("daily_usd", 0.0),
+            "monthly_cap": caps.get("monthly_usd", 0.0),
+        }
+    except Exception as e:
+        print(f"[cost] コスト集計エラー（表示スキップ）: {e}")
+
+    push_to_notion(recent_items if recent_items else latest_items[:30], updated_at, x_voices_recent, x_cost)
 
 if __name__ == '__main__':
     main()
