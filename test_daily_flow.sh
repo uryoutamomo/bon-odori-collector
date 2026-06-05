@@ -26,7 +26,7 @@ MODE="${1:-all}"
 run_and_watch() {
   local wf="$1" label="$2"
   echo "▶ ${label}（${wf}）を起動..." >&2
-  gh workflow run "$wf"
+  gh workflow run "$wf" >&2
   sleep 8
   local rid
   rid=$(gh run list --workflow="$wf" --limit 1 --json databaseId -q '.[0].databaseId')
