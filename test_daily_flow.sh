@@ -25,15 +25,15 @@ MODE="${1:-all}"
 
 run_and_watch() {
   local wf="$1" label="$2"
-  echo "▶ ${label}（${wf}）を起動..."
+  echo "▶ ${label}（${wf}）を起動..." >&2
   gh workflow run "$wf"
   sleep 8
   local rid
   rid=$(gh run list --workflow="$wf" --limit 1 --json databaseId -q '.[0].databaseId')
-  echo "  run=${rid}  https://github.com/uryoutamomo/bon-odori-collector/actions/runs/${rid}"
-  gh run watch "$rid" --exit-status --interval 10 | tail -n 15
-  echo "✓ ${label} 完了"
-  echo
+  echo "  run=${rid}  https://github.com/uryoutamomo/bon-odori-collector/actions/runs/${rid}" >&2
+  gh run watch "$rid" --exit-status --interval 10 | tail -n 15 >&2
+  echo "✓ ${label} 完了" >&2
+  echo >&2
   printf '%s' "$rid"
 }
 
