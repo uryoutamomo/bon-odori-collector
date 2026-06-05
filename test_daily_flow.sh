@@ -12,11 +12,11 @@
 #   ./test_daily_flow.sh mail-only  # 配信(send_mail.yml)だけ
 #   ./test_daily_flow.sh collect-only # 収集(collect.yml)だけ
 #
-# ★配信を実際に届かせるには、Notion「📧 メール配信ドラフト」DB に
-#   「ステータス=送信予約 / 配信日<=今日」のレコードが必要。
+# ★配信を実際に届かせるには、data/pending_mail.json が main に存在する必要がある。
 #   無ければ send_mail は「送信対象なし」で正常終了する（メールは飛ばない）。
-#   テスト用ドラフトの投入は、こと（Claude Code）に「1日フローをテスト」と頼めば
-#   自動で1件入れて配信まで通してくれる。
+#   フォーマット:
+#     {"subject": "...", "html": "完全なHTML文字列", "plain": "プレーンテキスト"}
+#   送信成功後、GitHub Actions が pending_mail.json を削除してプッシュする。
 #
 set -euo pipefail
 cd "$(dirname "$0")"
@@ -59,4 +59,4 @@ case "$MODE" in
 esac
 
 echo
-echo "完了。配信結果はメール受信トレイ / Notion「📧 メール配信ドラフト」DB のステータスで確認。"
+echo "完了。配信結果はメール受信トレイ / GitHub Actions ログ / data/pending_mail.json の有無で確認。"

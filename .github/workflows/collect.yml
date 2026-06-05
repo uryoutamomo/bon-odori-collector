@@ -8,6 +8,10 @@ on:
     - cron: '13 6 * * *'
   workflow_dispatch: # 手動実行ボタンも有効にする
 
+concurrency:
+  group: bon-odori-collect
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest

@@ -5,7 +5,9 @@
 ## 構成
 
 - `collect.py` — RSS 収集 + Notion 書き込み（標準ライブラリのみ、依存追加なし）
-- `.github/workflows/collect.yml` — 毎日 15:00 JST（cron `0 6 * * *`）+ 手動実行で `collect.py` を実行
+- `.github/workflows/collect.yml` — 毎日 15:13 JST（cron `13 6 * * *`）+ 手動実行で `collect.py` を実行
+- `send_mail.py` — `data/pending_mail.json` を Gmail SMTP で送信する日刊メール配信
+- `.github/workflows/send_mail.yml` — 18:23 / 19:23 / 20:23 JST に冪等実行し、送信成功後に `pending_mail.json` を削除
 - `data/latest.json` — 最新スナップショット（現在取得できた全件）
 - `data/seen.json` — これまでに見た URL の履歴（累積）
 
@@ -34,6 +36,14 @@
 
 Notion インテグレーション `bon-odori-collector` が対象ページに共有されている必要がある。
 トークン未設定時は書き込みをスキップして収集だけ行う（クラッシュしない）。
+
+## メール配信（NotionドラフトDB不使用）
+
+- 配信本文は `data/pending_mail.json` に置く。
+  - フォーマット: `{"subject": "...", "html": "完全なHTML文字列", "plain": "プレーンテキスト"}`
+- `send_mail.py` は `pending_mail.json` が存在する時だけ送信する。
+- 送信成功後、`send_mail.yml` が `pending_mail.json` を削除してコミット・プッシュする（二重送信防止）。
+- `pending_mail.json` が存在するのに設定不足・本文空などで送信できない場合は非ゼロ終了し、ファイルを残す。
 
 ## X(twitterapi.io) 収集（「人の言葉」）
 

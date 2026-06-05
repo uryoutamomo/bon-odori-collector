@@ -8,12 +8,15 @@
        - pending_mail.json が存在すれば読んで送信
        - 送信後にファイルを削除してコミット（二重送信防止）
 
-fail-safe: ファイルが無ければ何もせず正常終了。設定不足でもクラッシュしない。
+fail-safe: ファイルが無ければ何もせず正常終了。
+pending_mail.json があるのに設定不足・本文空で送れない場合は非ゼロ終了し、
+後続の削除ステップを止めてドラフトを残す。
 """
 
 import os
 import json
 import smtplib
+import sys
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.header import Header
@@ -51,17 +54,17 @@ def send_mail(subject, plain_body, html_body=None):
 
 
 def main():
+    if not PENDING_PATH.exists():
+        print("[mail] pending_mail.json なし。送信対象なし。終了します。")
+        return 0
+
     missing = [n for n, v in [
         ("MAIL_USERNAME", MAIL_USERNAME),
         ("MAIL_APP_PASSWORD", MAIL_APP_PASSWORD),
     ] if not v]
     if missing:
-        print(f"[mail] 設定不足のためスキップ: {', '.join(missing)}")
-        return
-
-    if not PENDING_PATH.exists():
-        print("[mail] pending_mail.json なし。送信対象なし。終了します。")
-        return
+        print(f"[mail] pending_mail.json はありますが、設定不足のため送信できません: {', '.join(missing)}")
+        return 1
 
     try:
         draft = json.loads(PENDING_PATH.read_text(encoding="utf-8"))
@@ -79,13 +82,14 @@ def main():
         plain_body = re.sub(r"<[^>]+>", "", html_body).strip()
 
     if not plain_body:
-        print("[mail] 本文が空のためスキップ。")
-        return
+        print("[mail] pending_mail.json はありますが、本文が空のため送信できません。")
+        return 1
 
     print(f"[mail] 送信開始: {subject} / 宛先: {MAIL_TO}")
     send_mail(subject, plain_body, html_body)
     print("[mail] 送信完了。")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

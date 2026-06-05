@@ -9,6 +9,10 @@ on:
     - cron: '23 11 * * *'  # 20:23 JST（第3トライ）
   workflow_dispatch:
 
+concurrency:
+  group: bon-odori-send-mail
+  cancel-in-progress: false
+
 jobs:
   send:
     runs-on: ubuntu-latest

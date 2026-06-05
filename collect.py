@@ -1049,15 +1049,18 @@ def main():
     ]
 
     # X由来の「人の言葉」を直近7日で抽出して配信ネタとしてNotionへ載せる
-    # （🟢一次レポを優先、その中では新しい順。deduped_voices は新規が先頭）
+    # （⭐盆踊ラー→🟢一次レポを優先。deduped_voices は新規が先頭）
     x_voices_all = [
         v for v in deduped_voices
-        if v.get("source") == "x"
+        if v.get("source") in ("x", "x_whitelist")
         and (_parse_date(v.get("date")) or datetime.min.replace(tzinfo=timezone.utc)) >= cutoff
     ]
     x_voices_recent = sorted(
         x_voices_all,
-        key=lambda v: 0 if any("一次レポ" in t for t in (v.get("tags") or [])) else 1,
+        key=lambda v: (
+            0 if any("盆踊ラー" in t for t in (v.get("tags") or [])) else 1,
+            0 if any("一次レポ" in t for t in (v.get("tags") or [])) else 1,
+        ),
     )[:15]
 
     # X収集コストの見える化（x_budget.json の日次消費を集計）
