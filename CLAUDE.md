@@ -81,6 +81,9 @@ X API 廃止で止まっていた参加レポ・感想の収集を、非公式�
   - 実行は `.github/workflows/review_x_candidate_posts.yml` の `workflow_dispatch` のみ。
   - 出力は `data/x_candidate_post_review.json`。
   - `promote` は昇格候補、`watch` は保留、`reject` は投稿価値が薄い候補。
+  - `promote` は重複を避けてNotion「X メンバーリスト」へ `通常` で自動追加する。
+  - 追加後は通常の投稿価値スコアで再評価し、低評価なら自動 `muted` で周回対象から外す。
+  - 保存済み結果だけ再同期する場合はWorkflowの `sync_only=true` を使う（X API課金なし）。
 
 ## この仕組みの思想
 

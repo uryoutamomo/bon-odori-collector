@@ -1008,6 +1008,141 @@ def _prop_number(prop):
     return prop.get("number")
 
 
+def _x_member_handle_from_props(props):
+    text = _prop_plain(props.get("アカウント (@)", {}) or {})
+    if not text:
+        url = (props.get("プロフィールURL", {}) or {}).get("url") or ""
+        if "x.com/" in url or "twitter.com/" in url:
+            text = url.rstrip("/").split("/")[-1]
+    return _norm_handle(text)
+
+
+def _notion_text_property(prop_type, content):
+    value = [{"text": {"content": (content or "")[:1900]}}]
+    if prop_type == "title":
+        return {"title": value}
+    if prop_type == "rich_text":
+        return {"rich_text": value}
+    return None
+
+
+def add_promoted_x_members(review_results):
+    """投稿レビューでpromoteになった候補をXメンバーリストへ通常メンバーとして追加する。
+
+    既存アカウントは大文字小文字と@の有無を無視して重複排除する。
+    既存ページの手動設定は変更しない。Notion未設定時はfail-safeでスキップする。
+    """
+    promoted = [
+        row for row in (review_results or [])
+        if row.get("recommendation") == "promote" and _norm_handle(row.get("handle"))
+    ]
+    summary = {"promoted": len(promoted), "added": 0, "existing": 0, "errors": 0}
+    if not promoted:
+        print("[review->notion] promote候補なし")
+        return summary
+    if not NOTION_TOKEN:
+        summary["skipped"] = "NOTION_API_TOKEN missing"
+        print("[review->notion] NOTION_API_TOKEN 未設定のため追加スキップ")
+        return summary
+
+    try:
+        _ensure_x_member_score_props()
+        database = _notion_request("GET", f"/databases/{X_MEMBER_LIST_DB_ID}")
+        schema = database.get("properties", {})
+        title_name = next(
+            (name for name, prop in schema.items() if prop.get("type") == "title"),
+            None,
+        )
+        if not title_name:
+            raise RuntimeError("Xメンバーリストにtitleプロパティがありません")
+
+        existing = set()
+        cursor = None
+        while True:
+            payload = {"page_size": 100}
+            if cursor:
+                payload["start_cursor"] = cursor
+            data = _notion_query_database(X_MEMBER_LIST_DB_ID, payload)
+            for page in data.get("results", []):
+                handle = _x_member_handle_from_props(page.get("properties", {}))
+                if handle:
+                    existing.add(handle)
+            if not data.get("has_more"):
+                break
+            cursor = data.get("next_cursor")
+    except Exception as e:
+        summary["errors"] = len(promoted)
+        summary["error"] = str(e)
+        print(f"[review->notion] メンバーリスト確認失敗、追加中止: {e}")
+        return summary
+
+    now = datetime.now(timezone.utc).isoformat()
+    account_schema = schema.get("アカウント (@)", {})
+    for row in promoted:
+        handle = _norm_handle(row.get("handle"))
+        if handle in existing:
+            summary["existing"] += 1
+            continue
+
+        display_handle = f"@{handle}"
+        display_name = (row.get("name") or "").strip()
+        title_content = display_handle if title_name == "アカウント (@)" else (display_name or display_handle)
+        props = {
+            title_name: _notion_text_property("title", title_content),
+        }
+        if account_schema and title_name != "アカウント (@)":
+            account_value = _notion_text_property(account_schema.get("type"), display_handle)
+            if account_value:
+                props["アカウント (@)"] = account_value
+        if schema.get("プロフィールURL", {}).get("type") == "url":
+            props["プロフィールURL"] = {"url": f"https://x.com/{handle}"}
+        if schema.get("収集ステータス", {}).get("type") == "select":
+            props["収集ステータス"] = {"select": {"name": "通常"}}
+        if schema.get("自動スコア", {}).get("type") == "number":
+            props["自動スコア"] = {"number": row.get("promote_score", 0)}
+        if schema.get("収集ランク", {}).get("type") == "select":
+            props["収集ランク"] = {"select": {"name": "active"}}
+        if schema.get("投稿数", {}).get("type") == "number":
+            props["投稿数"] = {"number": row.get("tweets_checked", 0)}
+        if schema.get("価値投稿数", {}).get("type") == "number":
+            props["価値投稿数"] = {"number": row.get("valuable_posts", 0)}
+        if schema.get("未来予定投稿数", {}).get("type") == "number":
+            props["未来予定投稿数"] = {"number": row.get("future_schedule_posts", 0)}
+        if schema.get("最終評価日時", {}).get("type") == "date":
+            props["最終評価日時"] = {"date": {"start": now}}
+        if schema.get("評価理由", {}).get("type") == "rich_text":
+            reasons = ", ".join(
+                f"{key}:{value}" for key, value in sorted(
+                    row.get("reason_counts", {}).items(),
+                    key=lambda item: (-item[1], item[0]),
+                )[:6]
+            )
+            reason_text = (
+                f"候補レビュー自動追加; promote_score:{row.get('promote_score', 0)}; "
+                f"{reasons}"
+            ).rstrip("; ")
+            props["評価理由"] = _notion_text_property("rich_text", reason_text)
+
+        try:
+            _notion_request(
+                "POST",
+                "/pages",
+                {"parent": {"database_id": X_MEMBER_LIST_DB_ID}, "properties": props},
+            )
+            existing.add(handle)
+            summary["added"] += 1
+            print(f"[review->notion] 収集メンバー追加: {display_handle}")
+        except Exception as e:
+            summary["errors"] += 1
+            print(f"[review->notion] 追加失敗 ({display_handle}): {e}")
+
+    print(
+        f"[review->notion] 完了: 追加 {summary['added']} / "
+        f"既存 {summary['existing']} / エラー {summary['errors']}"
+    )
+    return summary
+
+
 def load_whitelist_accounts():
     """「X メンバーリスト」DB から収集対象アカウントを返す。
 
@@ -1029,12 +1164,7 @@ def load_whitelist_accounts():
             data = _notion_query_database(X_MEMBER_LIST_DB_ID, payload)
             for row in data.get("results", []):
                 props = row.get("properties", {})
-                text = _prop_plain(props.get("アカウント (@)", {}) or {})
-                if not text:
-                    url = (props.get("プロフィールURL", {}) or {}).get("url") or ""
-                    if "x.com/" in url or "twitter.com/" in url:
-                        text = url.rstrip("/").split("/")[-1]
-                h = text.lstrip("@").strip()
+                h = _x_member_handle_from_props(props)
                 if h:
                     accounts.append({
                         "handle": h,

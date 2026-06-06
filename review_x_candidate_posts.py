@@ -214,11 +214,13 @@ def main():
         },
         "results": results,
     }
+    output["notion_member_sync"] = collect.add_promoted_x_members(results)
     REVIEW_FILE.write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding="utf-8")
 
     print(f"[review] reviewed: {len(results)}")
     print(f"[review] recommendations: {output['recommendation_counts']}")
     print(f"[review] estimated cost: {total_credits} credits / ${output['cost_estimate']['usd']:.6f}")
+    print(f"[review] notion member sync: {output['notion_member_sync']}")
     for r in results[:10]:
         print(
             f"[review] {r.get('recommendation')} {r.get('handle')} "
