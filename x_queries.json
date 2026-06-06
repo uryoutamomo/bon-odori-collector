@@ -22,6 +22,21 @@
     "muted_min_posts": 5,
     "muted_max_score": 1.5
   },
+  "social_graph_discovery": {
+    "_comment": "価値ある盆踊ラーのfollowingsから候補アカウントを発見する。つながりは漏れ発見の補助信号で、良い盆踊ラー判定の主軸は投稿の数と質。",
+    "enabled": true,
+    "max_seed_accounts": 10,
+    "seed_statuses": ["trusted"],
+    "fallback_seed_statuses": ["active"],
+    "page_size": 200,
+    "max_pages_per_seed": 1,
+    "min_candidate_score": 2.0,
+    "credit_usd": 0.00001,
+    "pricing": {
+      "followings_credits_per_user_at_200": 1,
+      "followings_min_credits_per_call": 60
+    }
+  },
   "exclude_keywords": [
     "ポケモン", "ピカチュウ", "ポケGO", "ポケモンGO", "pokemon", "Pokémon",
     "セトリ", "セットリスト", "ライブ", "Zepp",

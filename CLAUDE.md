@@ -67,6 +67,16 @@ X API 廃止で止まっていた参加レポ・感想の収集を、非公式�
   - `自動スコア`, `収集ランク`, `投稿数`, `価値投稿数`, `未来予定投稿数`, `最終評価日時`, `評価理由`
 - `休止` または自動 `muted` のアカウントは通常巡回から外す。ただし設定で少数の再確認枠を残せる。
 
+### Xフォローグラフによる候補発見
+
+- `discover_x_social_graph.py` は、高スコアseedアカウントの followings から未知の候補アカウントを発見する手動実験用スクリプト。
+- 実行は `.github/workflows/discover_x_social_graph.yml` の `workflow_dispatch` のみ。通常収集にはまだ混ぜない。
+- 出力:
+  - `data/x_social_graph.json`: seed→候補のfollowingエッジと概算コスト
+  - `data/x_candidate_accounts.json`: review用の候補リスト
+- 重要: つながりの多さは「良い盆踊ラー」判定の主軸にしない。あくまで漏れ発見の補助信号。
+- 本採用や優先度判断は、候補の過去投稿に未来予定・会場/日時・告知/ポスター・感想/写真がどれだけあるかで決める。
+
 ## この仕組みの思想
 
 Claude が動いていなくても GitHub Actions が自律実行し、Notion が更新され続ける。

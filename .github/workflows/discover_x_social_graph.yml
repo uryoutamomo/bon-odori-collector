@@ -1,0 +1,36 @@
+name: bon-odori-discover-x-social-graph
+
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: bon-odori-discover-x-social-graph
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+
+    - name: Discover X candidate accounts from follow graph
+      env:
+        TWITTERAPI_IO_KEY: ${{ secrets.TWITTERAPI_IO_KEY }}
+      run: python discover_x_social_graph.py
+
+    - name: Commit and Push discovery data
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        [ -f data/x_social_graph.json ] && git add data/x_social_graph.json
+        [ -f data/x_candidate_accounts.json ] && git add data/x_candidate_accounts.json
+        git diff --cached --quiet || (git commit -m "Discover X candidate accounts from social graph" && git push)
