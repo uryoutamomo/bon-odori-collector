@@ -2420,5 +2420,11 @@
       "calls": 1,
       "recommendation": "reject"
     }
-  ]
+  ],
+  "notion_member_sync": {
+    "promoted": 15,
+    "added": 15,
+    "existing": 0,
+    "errors": 0
+  }
 }
