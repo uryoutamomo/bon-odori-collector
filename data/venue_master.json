@@ -2,7 +2,7 @@
   {
     "venue": "しながわ中央公園",
     "region": "品川区",
-    "month": "5月",
+    "month": null,
     "scale": "大",
     "access": null,
     "in_tsukiji_30min": true,
@@ -206,7 +206,7 @@
   {
     "venue": "天妙国寺",
     "region": "品川区",
-    "month": "7月",
+    "month": null,
     "scale": "中",
     "access": null,
     "in_tsukiji_30min": true,
@@ -386,7 +386,7 @@
   {
     "venue": "晴海ふ頭公園",
     "region": "中央区",
-    "month": "7月",
+    "month": null,
     "scale": "中",
     "access": null,
     "in_tsukiji_30min": true,
@@ -494,7 +494,7 @@
   {
     "venue": "浜町公園",
     "region": "中央区",
-    "month": "8月下旬",
+    "month": null,
     "scale": "大",
     "access": null,
     "in_tsukiji_30min": true,
@@ -602,7 +602,7 @@
   {
     "venue": "築地本願寺",
     "region": "中央区",
-    "month": "7月末〜8月初",
+    "month": null,
     "scale": "大",
     "access": null,
     "in_tsukiji_30min": true,
@@ -614,7 +614,7 @@
   {
     "venue": "築地社会教育会館",
     "region": "中央区",
-    "month": "不明",
+    "month": null,
     "scale": "小",
     "access": null,
     "in_tsukiji_30min": true,
@@ -782,7 +782,7 @@
   {
     "venue": "JR苅田駅前広場",
     "region": "福岡県苅田町",
-    "month": "8月",
+    "month": null,
     "scale": "小",
     "access": null,
     "in_tsukiji_30min": false,
@@ -806,7 +806,7 @@
   {
     "venue": "上野公園",
     "region": "台東区",
-    "month": "7月",
+    "month": null,
     "scale": "大",
     "access": null,
     "in_tsukiji_30min": false,
@@ -818,7 +818,7 @@
   {
     "venue": "中島公園",
     "region": "札幌市中央区",
-    "month": "8月",
+    "month": null,
     "scale": "大",
     "access": null,
     "in_tsukiji_30min": false,
@@ -830,7 +830,7 @@
   {
     "venue": "大口公園",
     "region": "横浜市神奈川区",
-    "month": "7月",
+    "month": null,
     "scale": "中",
     "access": null,
     "in_tsukiji_30min": false,
@@ -842,7 +842,7 @@
   {
     "venue": "大豆戸八杉神社",
     "region": "横浜市港北区",
-    "month": "8月",
+    "month": null,
     "scale": "小",
     "access": null,
     "in_tsukiji_30min": false,
@@ -866,7 +866,7 @@
   {
     "venue": "宮下公園",
     "region": "渋谷区",
-    "month": "9月",
+    "month": null,
     "scale": "大",
     "access": null,
     "in_tsukiji_30min": false,
@@ -890,7 +890,7 @@
   {
     "venue": "岸根貴雲寺",
     "region": "横浜市港北区",
-    "month": "8月",
+    "month": null,
     "scale": "小",
     "access": null,
     "in_tsukiji_30min": false,
@@ -902,7 +902,7 @@
   {
     "venue": "常光寺",
     "region": "兵庫県加古川市",
-    "month": "8月",
+    "month": null,
     "scale": "中",
     "access": null,
     "in_tsukiji_30min": false,
@@ -914,7 +914,7 @@
   {
     "venue": "常龍寺",
     "region": "北海道釧路市音別町",
-    "month": "8月",
+    "month": null,
     "scale": "小",
     "access": null,
     "in_tsukiji_30min": false,
@@ -938,7 +938,7 @@
   {
     "venue": "御旅公園",
     "region": "神戸市東灘区",
-    "month": "8月",
+    "month": null,
     "scale": "小",
     "access": null,
     "in_tsukiji_30min": false,
@@ -950,7 +950,7 @@
   {
     "venue": "恵庭ふるさと公園",
     "region": "北海道恵庭市",
-    "month": "8月",
+    "month": null,
     "scale": "中",
     "access": null,
     "in_tsukiji_30min": false,
@@ -962,7 +962,7 @@
   {
     "venue": "旧江別小学校",
     "region": "北海道江別市",
-    "month": "8月",
+    "month": null,
     "scale": "小",
     "access": null,
     "in_tsukiji_30min": false,
@@ -986,7 +986,7 @@
   {
     "venue": "本住吉神社",
     "region": "神戸市東灘区",
-    "month": "8月",
+    "month": null,
     "scale": "小",
     "access": null,
     "in_tsukiji_30min": false,
@@ -1022,7 +1022,7 @@
   {
     "venue": "松戸中央公園",
     "region": "松戸市",
-    "month": "8月",
+    "month": null,
     "scale": "大",
     "access": null,
     "in_tsukiji_30min": false,
@@ -1046,7 +1046,7 @@
   {
     "venue": "田井西公園",
     "region": "大阪府寝屋川市",
-    "month": "7月",
+    "month": null,
     "scale": "小",
     "access": null,
     "in_tsukiji_30min": false,
@@ -1058,7 +1058,7 @@
   {
     "venue": "福井池公園",
     "region": "神戸市東灘区",
-    "month": "8月",
+    "month": null,
     "scale": "小",
     "access": null,
     "in_tsukiji_30min": false,
@@ -1082,7 +1082,7 @@
   {
     "venue": "笠松みなと公園",
     "region": "岐阜県羽島郡笠松町",
-    "month": "10月",
+    "month": null,
     "scale": "中",
     "access": null,
     "in_tsukiji_30min": false,
@@ -1118,7 +1118,7 @@
   {
     "venue": "飛鳥山公園",
     "region": "北区",
-    "month": "7月",
+    "month": null,
     "scale": "大",
     "access": null,
     "in_tsukiji_30min": false,
@@ -1130,7 +1130,7 @@
   {
     "venue": "馬橋小学校",
     "region": "松戸市",
-    "month": "秋（11月）",
+    "month": null,
     "scale": "小",
     "access": null,
     "in_tsukiji_30min": false,
@@ -1166,7 +1166,7 @@
   {
     "venue": "鳥山池公園",
     "region": "横浜市港北区",
-    "month": "8月",
+    "month": null,
     "scale": "小",
     "access": null,
     "in_tsukiji_30min": false,
