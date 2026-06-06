@@ -1,0 +1,226 @@
+{
+  "generated_at": "2026-06-06T01:08:54.341357+00:00",
+  "reviewed_candidates": 30,
+  "cost_estimate": {
+    "calls": 0,
+    "credits": 0,
+    "usd": 0.0
+  },
+  "recommendation_counts": {
+    "promote": 0,
+    "watch": 0,
+    "reject": 30
+  },
+  "results": [
+    {
+      "handle": "@5khfya5pjksggov",
+      "error": "HTTP 400",
+      "tweets_checked": 0,
+      "credits": 0,
+      "recommendation": "reject"
+    },
+    {
+      "handle": "@akekazashi32",
+      "error": "HTTP 400",
+      "tweets_checked": 0,
+      "credits": 0,
+      "recommendation": "reject"
+    },
+    {
+      "handle": "@bababajintou",
+      "error": "HTTP 400",
+      "tweets_checked": 0,
+      "credits": 0,
+      "recommendation": "reject"
+    },
+    {
+      "handle": "@bon__juu",
+      "error": "HTTP 400",
+      "tweets_checked": 0,
+      "credits": 0,
+      "recommendation": "reject"
+    },
+    {
+      "handle": "@bon_odoroo",
+      "error": "HTTP 400",
+      "tweets_checked": 0,
+      "credits": 0,
+      "recommendation": "reject"
+    },
+    {
+      "handle": "@bonusagi123",
+      "error": "HTTP 400",
+      "tweets_checked": 0,
+      "credits": 0,
+      "recommendation": "reject"
+    },
+    {
+      "handle": "@giichix",
+      "error": "HTTP 400",
+      "tweets_checked": 0,
+      "credits": 0,
+      "recommendation": "reject"
+    },
+    {
+      "handle": "@hideshanbonbon",
+      "error": "HTTP 400",
+      "tweets_checked": 0,
+      "credits": 0,
+      "recommendation": "reject"
+    },
+    {
+      "handle": "@irodonob_suki",
+      "error": "HTTP 400",
+      "tweets_checked": 0,
+      "credits": 0,
+      "recommendation": "reject"
+    },
+    {
+      "handle": "@kasumi_1030_",
+      "error": "HTTP 400",
+      "tweets_checked": 0,
+      "credits": 0,
+      "recommendation": "reject"
+    },
+    {
+      "handle": "@kuzunavi",
+      "error": "HTTP 400",
+      "tweets_checked": 0,
+      "credits": 0,
+      "recommendation": "reject"
+    },
+    {
+      "handle": "@kyeong27",
+      "error": "HTTP 400",
+      "tweets_checked": 0,
+      "credits": 0,
+      "recommendation": "reject"
+    },
+    {
+      "handle": "@m125m8qgyhwuehs",
+      "error": "HTTP 400",
+      "tweets_checked": 0,
+      "credits": 0,
+      "recommendation": "reject"
+    },
+    {
+      "handle": "@mmmjasminehhh",
+      "error": "HTTP 400",
+      "tweets_checked": 0,
+      "credits": 0,
+      "recommendation": "reject"
+    },
+    {
+      "handle": "@natsu_tansan",
+      "error": "HTTP 400",
+      "tweets_checked": 0,
+      "credits": 0,
+      "recommendation": "reject"
+    },
+    {
+      "handle": "@obakaaki",
+      "error": "HTTP 400",
+      "tweets_checked": 0,
+      "credits": 0,
+      "recommendation": "reject"
+    },
+    {
+      "handle": "@ocha_bon",
+      "error": "HTTP 400",
+      "tweets_checked": 0,
+      "credits": 0,
+      "recommendation": "reject"
+    },
+    {
+      "handle": "@odeko_pikamaru",
+      "error": "HTTP 400",
+      "tweets_checked": 0,
+      "credits": 0,
+      "recommendation": "reject"
+    },
+    {
+      "handle": "@okeeboho",
+      "error": "HTTP 400",
+      "tweets_checked": 0,
+      "credits": 0,
+      "recommendation": "reject"
+    },
+    {
+      "handle": "@p_peanuts",
+      "error": "HTTP 400",
+      "tweets_checked": 0,
+      "credits": 0,
+      "recommendation": "reject"
+    },
+    {
+      "handle": "@patapatapapapa3",
+      "error": "HTTP 400",
+      "tweets_checked": 0,
+      "credits": 0,
+      "recommendation": "reject"
+    },
+    {
+      "handle": "@pedal2411",
+      "error": "HTTP 400",
+      "tweets_checked": 0,
+      "credits": 0,
+      "recommendation": "reject"
+    },
+    {
+      "handle": "@pmpmgal_bon",
+      "error": "HTTP 400",
+      "tweets_checked": 0,
+      "credits": 0,
+      "recommendation": "reject"
+    },
+    {
+      "handle": "@pw9skrdcfyjfxfv",
+      "error": "HTTP 400",
+      "tweets_checked": 0,
+      "credits": 0,
+      "recommendation": "reject"
+    },
+    {
+      "handle": "@siroian333",
+      "error": "HTTP 400",
+      "tweets_checked": 0,
+      "credits": 0,
+      "recommendation": "reject"
+    },
+    {
+      "handle": "@suzuran_139",
+      "error": "HTTP 400",
+      "tweets_checked": 0,
+      "credits": 0,
+      "recommendation": "reject"
+    },
+    {
+      "handle": "@tanoshiki_kana",
+      "error": "HTTP 400",
+      "tweets_checked": 0,
+      "credits": 0,
+      "recommendation": "reject"
+    },
+    {
+      "handle": "@tomi_sa010",
+      "error": "HTTP 400",
+      "tweets_checked": 0,
+      "credits": 0,
+      "recommendation": "reject"
+    },
+    {
+      "handle": "@yumibe",
+      "error": "HTTP 400",
+      "tweets_checked": 0,
+      "credits": 0,
+      "recommendation": "reject"
+    },
+    {
+      "handle": "@yurubon_off",
+      "error": "HTTP 400",
+      "tweets_checked": 0,
+      "credits": 0,
+      "recommendation": "reject"
+    }
+  ]
+}
