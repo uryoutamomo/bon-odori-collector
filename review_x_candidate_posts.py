@@ -15,8 +15,6 @@ import json
 import os
 import time
 import urllib.error
-import urllib.parse
-import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -24,7 +22,6 @@ import collect
 
 
 TWITTERAPI_IO_KEY = os.environ.get("TWITTERAPI_IO_KEY")
-TIMELINE_API = "https://api.twitterapi.io/twitter/user/tweet_timeline"
 CONFIG_FILE = Path("x_queries.json")
 CANDIDATES_FILE = Path("data/x_candidate_accounts.json")
 REVIEW_FILE = Path("data/x_candidate_post_review.json")
@@ -41,21 +38,14 @@ def norm_handle(handle):
     return (handle or "").strip().lstrip("@").lower()
 
 
-def fetch_timeline(user_name, cursor=""):
-    params = {"userName": user_name}
-    if cursor:
-        params["cursor"] = cursor
-    url = f"{TIMELINE_API}?{urllib.parse.urlencode(params)}"
-    req = urllib.request.Request(url, headers={"X-API-Key": TWITTERAPI_IO_KEY})
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        return json.loads(resp.read())
+def fetch_candidate_posts(user_name, cursor=""):
+    return collect._x_search(f"from:{user_name} -filter:retweets", cursor)
 
 
-def estimate_timeline_credits(tweet_count, cfg):
+def estimate_search_credits(tweet_count, cfg):
     pricing = cfg.get("candidate_post_review", {}).get("pricing", {})
     per_tweet = pricing.get("tweet_credits_per_tweet_estimate", 15)
-    min_credits = pricing.get("timeline_min_credits_per_call_estimate", 60)
-    return max(min_credits, tweet_count * per_tweet)
+    return max(1, tweet_count) * per_tweet
 
 
 def map_tweet(tw, fallback_handle):
@@ -77,7 +67,10 @@ def map_tweet(tw, fallback_handle):
 
 def review_candidate(candidate, cfg, known_venues):
     handle = norm_handle(candidate.get("handle"))
-    pages = cfg.get("candidate_post_review", {}).get("timeline_pages_per_candidate", 1)
+    pages = cfg.get("candidate_post_review", {}).get(
+        "search_pages_per_candidate",
+        cfg.get("candidate_post_review", {}).get("timeline_pages_per_candidate", 1),
+    )
     cursor = ""
     tweets = []
     calls = 0
@@ -85,13 +78,14 @@ def review_candidate(candidate, cfg, known_venues):
 
     for _ in range(pages):
         try:
-            data = fetch_timeline(handle, cursor)
+            data = fetch_candidate_posts(handle, cursor)
         except urllib.error.HTTPError as e:
             return {
                 "handle": candidate.get("handle"),
                 "error": f"HTTP {e.code}",
                 "tweets_checked": 0,
                 "credits": 0,
+                "calls": calls,
             }
         except Exception as e:
             return {
@@ -99,13 +93,14 @@ def review_candidate(candidate, cfg, known_venues):
                 "error": str(e),
                 "tweets_checked": 0,
                 "credits": 0,
+                "calls": calls,
             }
         page_tweets = data.get("tweets") or data.get("data") or []
         calls += 1
-        credits += estimate_timeline_credits(len(page_tweets), cfg)
+        credits += estimate_search_credits(len(page_tweets), cfg)
         tweets.extend(page_tweets)
         cursor = data.get("next_cursor") or data.get("cursor") or ""
-        if not (data.get("has_next_page") and cursor):
+        if not (data.get("has_next_page", bool(cursor)) and cursor):
             break
 
     valuable = []
@@ -186,14 +181,19 @@ def main():
     min_valuable = review_cfg.get("min_valuable_posts", 2)
     min_future = review_cfg.get("min_future_schedule_posts", 1)
     for r in results:
-        r["recommendation"] = "promote" if (
+        if r.get("error"):
+            r["recommendation"] = "error"
+        elif (
             r.get("promote_score", 0) >= min_promote_score
             and r.get("valuable_posts", 0) >= min_valuable
             and r.get("future_schedule_posts", 0) >= min_future
-        ) else ("watch" if r.get("valuable_posts", 0) > 0 else "reject")
+        ):
+            r["recommendation"] = "promote"
+        else:
+            r["recommendation"] = "watch" if r.get("valuable_posts", 0) > 0 else "reject"
 
     results.sort(key=lambda r: (
-        0 if r.get("recommendation") == "promote" else 1,
+        {"promote": 0, "watch": 1, "reject": 2, "error": 3}.get(r.get("recommendation"), 4),
         -r.get("promote_score", 0),
         -r.get("future_schedule_posts", 0),
         r.get("handle", ""),
@@ -210,6 +210,7 @@ def main():
             "promote": sum(1 for r in results if r.get("recommendation") == "promote"),
             "watch": sum(1 for r in results if r.get("recommendation") == "watch"),
             "reject": sum(1 for r in results if r.get("recommendation") == "reject"),
+            "error": sum(1 for r in results if r.get("recommendation") == "error"),
         },
         "results": results,
     }
