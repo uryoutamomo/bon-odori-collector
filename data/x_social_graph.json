@@ -1,0 +1,8074 @@
+{
+  "generated_at": "2026-06-06T00:56:30.106968+00:00",
+  "mode": "followings",
+  "seeds": [
+    {
+      "handle": "@natsutr_bon",
+      "score": 23.325,
+      "status": "trusted",
+      "pages": 1,
+      "returned_users": 200
+    },
+    {
+      "handle": "@event_finderjp",
+      "score": 14.85,
+      "status": "trusted",
+      "pages": 1,
+      "returned_users": 200
+    },
+    {
+      "handle": "@stba_bonodori",
+      "score": 12.733,
+      "status": "trusted",
+      "pages": 1,
+      "returned_users": 33
+    },
+    {
+      "handle": "@nyoritael",
+      "score": 12.533,
+      "status": "trusted",
+      "pages": 1,
+      "returned_users": 200
+    },
+    {
+      "handle": "@sasakichi_akiba",
+      "score": 12.45,
+      "status": "trusted",
+      "pages": 1,
+      "returned_users": 200
+    },
+    {
+      "handle": "@komaikai",
+      "score": 12.4,
+      "status": "trusted",
+      "pages": 1,
+      "returned_users": 200
+    },
+    {
+      "handle": "@mu4324",
+      "score": 11.8,
+      "status": "trusted",
+      "pages": 1,
+      "returned_users": 196
+    },
+    {
+      "handle": "@middonaitogaru",
+      "score": 11.4,
+      "status": "trusted",
+      "pages": 1,
+      "returned_users": 200
+    },
+    {
+      "handle": "@odori2024minato",
+      "score": 11.35,
+      "status": "trusted",
+      "pages": 1,
+      "returned_users": 168
+    },
+    {
+      "handle": "@rollingasahi",
+      "score": 10.867,
+      "status": "trusted",
+      "pages": 1,
+      "returned_users": 1
+    }
+  ],
+  "edges": [
+    {
+      "source": "@natsutr_bon",
+      "target": "@obakaaki",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@gontashoukai",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@henchina",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@ohkumawataru",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@hamu_taro_83",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@pmpmgal_bon",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@yjh0fhbnsn1uksq",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@tpfsm8nuu4uedhm",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@mimi33yuyu26na",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@tomokunbondansu",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@gakkiy_family",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@koyanagi_junko",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@isesakipop",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@odori2024minato",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@hinako_vocal",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@tais_odoriduki",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@was7dbtyrfbrcib",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@milbb100",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@irodonob_suki",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@kanawaka7",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@sanullim",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@asami888daiten",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@nasunosukestuff",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@atutakamama7034",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@hojo_b",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@yumi_tateishi",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@bon_odorer",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@koguremiwazow",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@jxxuq6vvad4gzom",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@furichi",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@giichix",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@atseudb1bc77764",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@kameopinku49130",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@yozukiyo",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@sakura_gibjo",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@tomo_l_bochy",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@doginolive",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@odeko_pikamaru",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@cottoncand75102",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@miztan2",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@usagitv",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@oolongcha_n",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@bonbonharuru",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@dancingkei",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@okina_san",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@shami_blossom",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@2tsuo_g",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@nudfacn0bj40544",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@tororatanmocha",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@takasho06130613",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@waterdamage1972",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@yuuto0411gaoo",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@nnn_oka1216",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@kuronekonodang0",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@ocha_bon",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@m125m8qgyhwuehs",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@mmmjasminehhh",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@bonkyodora_",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@sakaeya_h",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@1205uzonke",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@fukubi_138",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@akariiiii0517",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@mariya_ukonya",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@okeeboho",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@sasakichi_akiba",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@haralla_shounen",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@_f4b3c",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@pink_daiamond_",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@stardustkawachi",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@kuzunavi",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@tsubonodori",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@tanoshiki_kana",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@sumidawaodori",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@5khfya5pjksggov",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@todabon",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@sakura__miyavi",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@mdbktsuojmugb2z",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@jhf6giih6918081",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@nijigame_taiko",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@gaigai228",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@rrbdz6r46vwi1si",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@bon__juu",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@siroian333",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@ichiran_satsuki",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@mau3_141592",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@kinshichokawac1",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@ara_news01",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@zenkohjikaikan",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@kita1013yuu",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@dorlis_kmk",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@ha36_seichan_01",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@sacbb10",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@mitthutter",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@aqdap7kr018xo9k",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@bon_odoriko",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@yu_kanmiya",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@akki___",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@suwayahikari_nu",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@mjmj830mj",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@bsszpiverz5ukxa",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@fuyukapi",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@xxxnabekoxxx",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@yuuuuu874",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@iri2choukai",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@qjenxyq7st8435",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@chi_pokee",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@waterdragon1110",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@odorikosama1206",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@kyeong27",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@pw9skrdcfyjfxfv",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@5vqndxxk0ttxbbm",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@yosznuu1gdyjcgi",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@kankan45057161",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@wfujgpr01ajkbsb",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@wakafu73",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@reonarudopon",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@megtakabubb",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@iwsyf323",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@fried_wakame",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@mizu516aforreal",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@shiodaifuku0209",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@hidedon78",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@ftatsumidaiko",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@pedal2411",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@bagpacker2023",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@tomohikos",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@bon_odoroo",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@jim6900",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@piyoko_mame",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@kagishipocat",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@dk725anpscbwpea",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@minyomirai",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@t_u_haiya",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@miumiupicopoco",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@picomiu02",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@toxy0731",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@akabakamatsuri",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@jun810smile",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@iid_psv",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@maki_nin",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@karinchanchanko",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@kanamenyan1125",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@tpsrp39o3",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@miyukimimisato",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@agatha_2222",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@bjvbimpm0sqwrmy",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@hisbow2",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@bonshizka",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@barambience",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@sakaiyukako",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@dj610",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@ohanaaroma",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@natsu_tansan",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@iwzpxdcccp30jb4",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@michiru_zenryo9",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@masako0327",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@bon0813mkw480",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@masakiimpulse",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@sado_bunka",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@ruikozuka",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@shamisen_taiyo",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@bonstove",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@minyo_yutachita",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@tomi_sa010",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@tomotomomottomo",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@komaikai",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@yurubon_off",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@ooimatievents",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@mile_nagaoka",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@mindengei",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@paja1223",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@lifekanako",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@shibamata_shami",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@ezra_sk",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@fukuchanmannnn",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@littlerito8",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@bluepig74",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@hideshanbonbon",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@nyantokonyan_2",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@obakedaigaku",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@bababajintou",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@sarabondance",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@panda_dapan11",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@tenten_yr1",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@ponsaito",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@hoso_yane",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@kantoyamato",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@peromaru20",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@utano_wa",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@heart_shio_",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@nyoritael",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@hit_u_bonodori",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@yumiya_pon",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@nemottyneronero",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@7376ggbw1gwxum3",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@kaoishihara",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@harebon_odori",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@kuma_jiro99",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@mrapple_bycandy",
+      "type": "following"
+    },
+    {
+      "source": "@natsutr_bon",
+      "target": "@kaz0045",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@kasai__kun",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@mamayuland",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@michieki_shonan",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@heartcafestaffm",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@bunkyo_tokyo",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@tokyo_shuto634",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@shunshioya",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@y_chinatown",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@ariyasu",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@chibakotaro",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@qabesufdaopgk34",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@kawataalbadayo",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@asobokai",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@ohno_discovery",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@fdk_tsushin",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@pandahaaruku",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@cdi881",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@aaiijkkknouz",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@hit_u_bonodori",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@yurubon_off",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@daisaiten",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@tsukuikokojosai",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@toshimakukanko",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@tochi_shouren",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@alohasteve808",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@akamegane140",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@tocho_tenbou",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@takapon_jp",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@ikebukuro_venus",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@arawa_yosakoi",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@yurimonju_2026",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@hiragi_yosakoi",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@tusyosa_event",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@yosakoikaede",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@dreams34643037",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@yosakoikonpeito",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@chiba_yosa",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@miyayosa",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@tanashi_so_ran",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@zokkon98",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@sun_yosakoi",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@gamusyara_yosa",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@kanep815",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@sakadoyosakoi",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@i_ro_ha168",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@odorisamurai",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@tus_yosakoi",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@omigawa4351",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@hannorabu",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@kuroyosa_info",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@auyosakoi",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@yoiyosakoi",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@dreamyosakoi",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@tokaidai_hibiki",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@yusyoryu",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@hikarigaoka_fes",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@sb_yosakoi",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@fujin_4351_tw",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@summer_zipper",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@yosakoi_dd",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@7294351_iwimdt",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@kanpachiren",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@tokyohanabi4351",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@kisakuren",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@tokyo_shinnonki",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@tokyootsukaawa",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@warakuren",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@h4ru0605",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@utusemiren",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@nansuirencho",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@tamanitami",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@sancharen",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@tanashi_ren",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@tenseiren",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@awaodo",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@tus_awaodori",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@shonannagisaren",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@kaseiren",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@awamitakaren",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@kasumiren",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@kikusui_tokyo",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@shinsuiren",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@hokutenkai_2",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@mutsume_fes",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@tgu_koganeisai",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@2025_yawaragi",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@gakushuin_fes",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@mmsf_yokohama",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@tomi_sa010",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@009takayama",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@takehikoart",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@hatsu823",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@adachi_city",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@tokyo_bousai",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@kepotyre",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@keijir6",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@yu_suke456",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@mmxm0314",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@shinto_archives",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@obonmochi",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@teppentenshin",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@kochan_fuk",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@was7dbtyrfbrcib",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@asakusajinja",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@ekomaru313",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@tsunashimashops",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@otafull",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@uenokanko",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@yuyanida",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@sanyapeach",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@mayuyu_mm_ariel",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@manchanramen",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@city_marron",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@mickeyiid",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@wf1eqbdvwnexrm0",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@hanemo_n",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@m125m8qgyhwuehs",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@mattbro96393286",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@tokoroten468",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@wisdommangalabo",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@jwx0zp975tpdmts",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@cpysdv8emw91646",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@bonodori_univ",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@yconfied",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@2424aaa2424",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@asahishimokawai",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@ptb_tokyo",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@kyeong27",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@yuyu62046249",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@bankramen",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@kazeno_",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@8hatibe_all",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@hanabi_tyo",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@nobo_tang",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@dmrc_meru",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@batakyun_idol",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@m0netn",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@__icql",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@xr77qp_bnq0xz_t",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@villea_yukino",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@utsunomikanchan",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@oofuna0",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@tochinavitoto",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@rie_sazanamisp",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@hyperoffroader",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@stmchokai",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@kayozoh0108",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@reon96soro",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@watariken1",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@anna515cajon",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@tetsunagi_club",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@giichix",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@sunpohblessedwt",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@ofunachuoss",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@natsutr_bon",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@photomiyashita",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@mirukamakura",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@kawaukawausoon",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@usag_japan",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@nagosumire",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@santama_genjin",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@otomedaiko",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@atutakamama7034",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@momo_suke_1225",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@edogawatukui",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@kinpouen",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@kattenikk_gourm",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@sakurazuki_kiw",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@nadayasaketen1",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@aramihohoho",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@edogawa_city",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@sakesakurai",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@koiwa_dx",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@t2crzbzvmzprsqz",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@yurutabi0gooo0",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@masuken202111",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@hiruozi_hotel35",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@ponta_oversea",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@matsuriengine",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@geisai_koushiki",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@jennefer_yiu",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@esr3356566",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@k____aito0105",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@minoyamachiko",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@icemilktea0125",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@kuzunavi",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@bonusagi123",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@pink_daiamond_",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@5khfya5pjksggov",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@saotomeshachu",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@komaikai",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@bon_odoroo",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@bon_odoriko",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@cafe_sekijitsu",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@mibukankou",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@ffleurs",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@hakubavillage",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@gujo__odori",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@keirin_saitama",
+      "type": "following"
+    },
+    {
+      "source": "@event_finderjp",
+      "target": "@634ymusashigma1",
+      "type": "following"
+    },
+    {
+      "source": "@stba_bonodori",
+      "target": "@tawarade",
+      "type": "following"
+    },
+    {
+      "source": "@stba_bonodori",
+      "target": "@kaminarimonbon",
+      "type": "following"
+    },
+    {
+      "source": "@stba_bonodori",
+      "target": "@announcer_akko",
+      "type": "following"
+    },
+    {
+      "source": "@stba_bonodori",
+      "target": "@okuasakusa_bon",
+      "type": "following"
+    },
+    {
+      "source": "@stba_bonodori",
+      "target": "@silkpurin_sin",
+      "type": "following"
+    },
+    {
+      "source": "@stba_bonodori",
+      "target": "@linx_linx_linx",
+      "type": "following"
+    },
+    {
+      "source": "@stba_bonodori",
+      "target": "@tomac_kuramae",
+      "type": "following"
+    },
+    {
+      "source": "@stba_bonodori",
+      "target": "@asakusaikou",
+      "type": "following"
+    },
+    {
+      "source": "@stba_bonodori",
+      "target": "@suke6diner",
+      "type": "following"
+    },
+    {
+      "source": "@stba_bonodori",
+      "target": "@misuheihonten",
+      "type": "following"
+    },
+    {
+      "source": "@stba_bonodori",
+      "target": "@samuraicroak",
+      "type": "following"
+    },
+    {
+      "source": "@stba_bonodori",
+      "target": "@asakusamegurin",
+      "type": "following"
+    },
+    {
+      "source": "@stba_bonodori",
+      "target": "@shokutabi",
+      "type": "following"
+    },
+    {
+      "source": "@stba_bonodori",
+      "target": "@rock_asakusa",
+      "type": "following"
+    },
+    {
+      "source": "@stba_bonodori",
+      "target": "@onakama",
+      "type": "following"
+    },
+    {
+      "source": "@stba_bonodori",
+      "target": "@smart800",
+      "type": "following"
+    },
+    {
+      "source": "@stba_bonodori",
+      "target": "@foodees_asakusa",
+      "type": "following"
+    },
+    {
+      "source": "@stba_bonodori",
+      "target": "@tontokoasakusa",
+      "type": "following"
+    },
+    {
+      "source": "@stba_bonodori",
+      "target": "@asakusa_bar",
+      "type": "following"
+    },
+    {
+      "source": "@stba_bonodori",
+      "target": "@toyokan",
+      "type": "following"
+    },
+    {
+      "source": "@stba_bonodori",
+      "target": "@miyamotounosuke",
+      "type": "following"
+    },
+    {
+      "source": "@stba_bonodori",
+      "target": "@miyamotostudio",
+      "type": "following"
+    },
+    {
+      "source": "@stba_bonodori",
+      "target": "@yoroiya4618",
+      "type": "following"
+    },
+    {
+      "source": "@stba_bonodori",
+      "target": "@shimojima_jp",
+      "type": "following"
+    },
+    {
+      "source": "@stba_bonodori",
+      "target": "@marugotosan",
+      "type": "following"
+    },
+    {
+      "source": "@stba_bonodori",
+      "target": "@tarokoba55",
+      "type": "following"
+    },
+    {
+      "source": "@stba_bonodori",
+      "target": "@omatsuritengoku",
+      "type": "following"
+    },
+    {
+      "source": "@stba_bonodori",
+      "target": "@asakusakatanaba",
+      "type": "following"
+    },
+    {
+      "source": "@stba_bonodori",
+      "target": "@uenokanko",
+      "type": "following"
+    },
+    {
+      "source": "@stba_bonodori",
+      "target": "@dai6tensakaki",
+      "type": "following"
+    },
+    {
+      "source": "@stba_bonodori",
+      "target": "@tori0010fb10",
+      "type": "following"
+    },
+    {
+      "source": "@stba_bonodori",
+      "target": "@1miyakun",
+      "type": "following"
+    },
+    {
+      "source": "@stba_bonodori",
+      "target": "@asakusa_navi",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@takchikako",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@siz33",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@wf0w_pu2",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@funatsukatvlt",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@_masakari",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@ssqq47356585",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@nanairojfd",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@onnayoukai888",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@sakaeya_h",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@takotan25",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@matumotobonbon",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@mimi33yuyu26na",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@2fox_b_w",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@yurie_kono",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@minyo_bonodori",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@kawaguchisyakyo",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@mimi33_yuyu26",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@u9ja8lyxou81641",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@pompelmo_pesco",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@waka_bon908",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@irodonob_suki",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@tgvqlrcidzbtmrx",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@tomo_l_bochy",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@kararikotonton",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@bettara1020",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@dao_bei59248",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@photomiyashita",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@d_kimono713",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@izo7m",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@akemisummerfes",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@manamana04115",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@mako_f425",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@waterras_mall",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@sugar__glider",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@kasumi_1030_",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@bakushin339711",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@kadomasanmama",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@beivebeive",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@koiramako",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@nakamebonodori",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@shinkoinnakano",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@nakanocitizens",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@saki_nakanoku",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@obakaaki",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@kasiraotowayou2",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@tomokunbondansu",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@iri2choukai",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@kameopinku49130",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@pmpmgal_bon",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@sakura_bonodori",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@omatsuri_kyo",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@tsururin193",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@atseudb1bc77764",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@pofgdzcmmrlpile",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@tawarade",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@f20250702",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@cottoncand75102",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@ma_umojh",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@sanbanzesuisou",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@odeko_pikamaru",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@p_peanuts",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@chuominato3",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@suzunonekai01",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@yuko19650",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@nozomui",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@hicity_official",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@bonbonharuru",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@ut_bondanceclub",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@m125m8qgyhwuehs",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@oli19404702",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@giichix",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@gjlywhg",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@arejvjete0nflcb",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@asami888daiten",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@yumibe",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@5khfya5pjksggov",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@nbb_project",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@miyasakaryu1971",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@bonusagi123",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@pink_daiamond_",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@ocha_bon",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@shidarezakura79",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@nyantokonyan",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@1_go_1_a_0802",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@tominren58",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@patapatapapapa3",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@todabon",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@yugiri_dahlia",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@s_bny",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@wgqpa1ryurtlq1p",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@_f4b3c",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@kuzunavi",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@icemilktea0125",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@k____aito0105",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@jitensha_kogi",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@minoyamachiko",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@ikomakazuya83",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@kpig2017",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@chir0324",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@tanoshiki_kana",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@akekazashi32",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@okeeboho",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@mmmjasminehhh",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@yukikoh1102",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@ainokunaiai",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@2tsuo_g",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@bondancelove",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@1205uzonke",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@irie_mote",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@franinjp",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@littlerito8",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@shouko9106",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@syorock165575",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@kasui21",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@tais_odoriduki",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@bon_sora0212",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@mau3_141592",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@bon__juu",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@aaiijkkknouz",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@mikinooogi",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@sa_kk_ra",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@akabakamatsuri",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@_sakurabon_",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@utyuunogomi",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@tanukibonodori",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@ries0206",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@oedo_sukeroku",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@6utaemon",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@bon_odorer",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@warutura415",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@bonbon_dance",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@tashiro_kai",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@dreadyarou",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@fumikomikan",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@kazukazu9317",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@take1134",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@nspfhl5jw382058",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@hinokunidaiko",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@kaminarimonbon",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@shibamata_shami",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@tamaminyo0308",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@kaitomaster",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@daigakujuk",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@odori2024minato",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@bondancecircle",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@akubin0707",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@reonarudopon",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@pinocorin",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@suzuran_139",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@kabukitakumi",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@hidedon78",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@ochiai_hrs",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@fried_wakame",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@was7dbtyrfbrcib",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@undinereika",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@bonodori_tais",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@currie1814",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@okuasakusa_bon",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@nzpjejvssfrute6",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@jun810smile",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@qjenxyq7st8435",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@suwayahikari_nu",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@siroian333",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@raysan711",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@bon_hnaf",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@pedal2411",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@iwsyf323",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@gucci524",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@9kung9j8wdia6v2",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@masakiimpulse",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@hamadasensho",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@bagpacker2023",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@dorlis_kmk",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@tenmatu8",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@erlqvoz3pf52511",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@michiru_zenryo9",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@odorururu_com",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@kanamenyan1125",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@shamisen_taiyo",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@hahanana21",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@jhf6giih6918081",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@minyo_nichimin",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@kanbarataka",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@paja1223",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@piyoko_mame",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@kishisparty",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@bon0813mkw480",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@bsszpiverz5ukxa",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@pw9skrdcfyjfxfv",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@gob7qpuaaofitmf",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@hojo_b",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@natsutr_bon",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@bababajintou",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@peromaru20",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@yumiya_pon",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@obaren008",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@usami2318328",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@ooimatievents",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@d1nnv0v2xjjvhbh",
+      "type": "following"
+    },
+    {
+      "source": "@nyoritael",
+      "target": "@hideshanbonbon",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@mayu__ogasawara",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@timacos0307",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@thaihyper",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@sara_cospure",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@usano_rapi",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@thames_malerose",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@nonsnoop",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@izami_dayo",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@kijibo",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@shojikinas",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@tcwitee",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@otgys",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@picco_xxx",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@zombie_pla",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@hosaska2",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@marritoxi_pr",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@sugarnote_ofc",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@plan039",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@odisan_0",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@kuchibuesoncho",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@imai_terry",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@smnsmn_g",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@misaki_ev",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@nami_kawade",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@konparu89",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@sugarcharm_x",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@rika_scm",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@seitansaigate",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@akibakkoclub7",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@yo_ram15",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@yui_scilla",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@luvmiyuki",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@shiraserin_sub",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@strawberry___53",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@ugu_cos",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@edadacos",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@funi__puni",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@d_toby",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@akane_fujikawa",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@raco0_",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@meichi_blanq",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@maid_blanq",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@nomura_xenon",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@aum2u",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@nnorinn1217",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@kaeshijouyu",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@depass0139",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@takemuukirara",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@bussyu___",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@s098uvqflhl4moy",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@kzk_animebar",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@39mei1",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@sualu_02",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@knob_twitt",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@xguilty_dollx",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@mth_1220",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@matomenom",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@kamie_asuki",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@visual_pianist_",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@msx44",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@mimin324",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@aoi1680401megu1",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@adoikanau_ill",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@reona70",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@salyitmuf",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@bvxouthe",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@jovetterivera",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@cgrandin",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@deborahspe41785",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@shinobukemo",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@mrrngs1224",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@taisa76mu9su6ka",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@hitachi773x",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@tanakayaplus",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@sano3949",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@hiroversatile",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@mashuu_crew",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@voiceroid_love3",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@nonoriri916",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@wotaism20230407",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@hanyan_nyan",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@kariyaozisanda",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@rezero_pachi",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@amazonjpbooks",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@derasan777",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@nikonikootku",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@m_c_ao",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@ryurkikaku",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@kouji_nagasakis",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@raitsu_pino",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@9z_ixz",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@musaro1260",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@kouji_vnagasaki",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@wooolgm",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@canon_peel",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@hiro1014nu",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@misha1jpjpco",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@y7sucatlcg88871",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@keeemk0",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@xkachow",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@6_cos_888",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@like3vnm",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@onabake8193",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@natu72500",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@178yuuru",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@monst_dreamdaze",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@mayokin4649",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@taidaisgood",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@satomiotsuki",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@kousou_1864",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@kanaria_or05",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@hitotuki963",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@akansuyo_v",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@takedcoughtukey",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@bump_loveman",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@newhalfmeiko",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@20061017sou",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@peroncho0901",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@shoujiz",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@satosisakurauti",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@n7xg5afbqarstjm",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@geese1953",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@kusaremikuu",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@agnooekaki",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@w7p19mddmq72843",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@ondondondond",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@chawa_chachacha",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@y8984608412561",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@yellowhoneybear",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@rara_rala_lala",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@oraseru",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@tttcacq4cw6tp6u",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@neco470",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@bleiban",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@kutame9725",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@rari_omaetachi",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@wato_mato",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@nanaki_pg",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@sin_a12",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@jesf70iwrglua18",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@temaridesu",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@jl4rsccy9099630",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@_utaiteotaku",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@oaai_99999",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@jaha_tenorion",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@zmzmyy",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@shichimono2546",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@mana_me_roll",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@travettt",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@fanki_kamera",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@tosakasisters",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@sayonara_0209",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@9glemnpnqo23976",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@ka_ta513",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@chrono_remember",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@masaki27444",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@osakana30000",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@feyidefpxu2008",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@mamematya",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@tvkr176758",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@misorakunn",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@kohaku_nmr2014",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@takoyakidath",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@lqdjrfhslehwqvi",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@ikako_cos",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@brake1001",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@anex_mg_no_0",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@ps6064874747050",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@vichy_sukonbu",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@pen_vr",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@ep_igonen",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@nookiiiiin",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@kukou_sakuna",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@toru_yuki24",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@mu_tan0328",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@nobus_music",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@yo_rie6340419",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@naotin208",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@mukyu_mn_",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@warrabi_mochi",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@acuboner99",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@dheziodrre24328",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@666_taka_999",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@fossils_shu",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@bep_hibi_616",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@kon_kon0819",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@suyuaii",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@new_well_man",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@ganel_gamelove",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@donald_ronald_m",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@kahimari_coscam",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@agu87ta1",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@yukpiano",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@mizu_suimei",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@jigokugaianu",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@q1uhyna8fu50922",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@s1vwh1d8y3ntblu",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@p1bodx0azd47341",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@icebreaker_0",
+      "type": "following"
+    },
+    {
+      "source": "@sasakichi_akiba",
+      "target": "@fuyunatsu94",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@genji_samurai",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@hapinesuvillage",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@chindongeinou",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@koichis0121",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@maemaebonodori",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@_okita_ai",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@hiro_thinker",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@r_oreiko_s",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@masumiota169483",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@mikinooogi",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@mbc_sky",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@azezaru3",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@5cysdlii71628",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@hoso_yukko",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@tgybrlrhvh5f25l",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@yumibe",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@boy000155945",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@nz2n5ybati98497",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@hinako_vocal",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@mss56212",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@u9ja8lyxou81641",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@mtauaijlzfh1wvf",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@nekopuriko",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@kimonojinjin",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@obakaaki",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@pmpmgal_bon",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@takotan25",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@eisai_zenshi",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@clftpzjlyk84909",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@osvhfr8zw37wtgm",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@jxxuq6vvad4gzom",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@rnt65i9iue1yqcj",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@mipo3j111",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@_sakurabon_",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@acchaman3",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@bon_runner",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@waka_bon908",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@c76yf",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@7765kihati",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@irodonob_suki",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@_masakari",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@iny3aikrtiwljbd",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@5s4dzczwqooqsgr",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@ma_umojh",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@karakkazefu",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@chackest",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@funatsukatvlt",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@s_omochichan_",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@marimumemo7133",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@root3588",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@manamana04115",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@bonnodoriegao",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@hitomizuki1",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@izo7m",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@gpveqead9u10257",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@ocha_bon",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@kinshichokawac1",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@1fx13xlw1j6681",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@b73geul8we3xgrp",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@dnklsra9kaapmyu",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@0pk9tvvlex19811",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@kazuek12",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@yoromiku777",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@tugu480967",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@kyabettsusan",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@wasshoi7wasshoi",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@fm_shinjuku",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@ri0114",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@gumcmni",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@megane_kosodate",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@pchip3",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@sakura_bonodori",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@odeko_pikamaru",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@rhq8nh5yxocz63",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@cok6bjfmp9447p",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@ici5kwt7gn36835",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@alohasteve808",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@yajirakuen",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@kotaroudayo",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@event_finderjp",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@mikann_gr",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@jitensha_kogi",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@mikaco_kimono",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@lykv4vedd444854",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@2tsuo_g",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@pkgimxwct65sdji",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@kibikibi1173",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@rzulcyd60eegt6k",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@mamimami298",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@suzunonekai01",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@mukrqbilqtq6rbq",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@yuko19650",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@fukano_jun",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@himetsubakihime",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@yuuto0411gaoo",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@takasho06130613",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@mzk_kome",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@yumeno_hikari33",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@hoshi443712",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@bonusagi123",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@arejvjete0nflcb",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@tominren58",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@yzy9cudahcfeoss",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@roze305",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@nipponchacha123",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@s_bny",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@exgsr66zlmxmzci",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@matsurinokiseki",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@odorikosama1206",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@_f4b3c",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@kaeruko25",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@bakushin339711",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@djibdroljq8q2qr",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@lr29451",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@ikomakazuya83",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@megumi535",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@nobu_harapeko",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@fu_nachan",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@bobonbobonsuke",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@siroian333",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@yugiri_dahlia",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@oapezxfjdr0y3sk",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@akekazashi32",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@tanoshiki_kana",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@shidarezakura79",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@1016asf",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@chibihikari2",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@mmmjasminehhh",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@miya2234",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@s4iows8hoxvgqlv",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@yumikomo0822",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@penh8ki8rrptqak",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@5khfya5pjksggov",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@kumi_mamaprenur",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@micoro03",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@kimono_s_ryu_09",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@pedal2411",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@todabon",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@giichix",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@idhiro",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@badmoon_racing",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@t0mlc92414",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@dope_samurai",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@matsuriya_89",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@okeeboho",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@pink_daiamond_",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@kurasuzume_39",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@kellycrazy071",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@elizabethmdes",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@kanamenyan1125",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@acchyanb74983",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@fusaetakez0806",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@kobankitty",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@takashi89132",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@fujikawasakura",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@captainital22",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@gaomaru_nier",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@l2x5kgm4mqkurtr",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@wuhq1990",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@kararikotonton",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@patapatapapapa3",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@miechi52",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@mochi248tw",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@wpzjwx",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@exwhitewood",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@suzuran_139",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@norikoetaro_",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@fuetane55",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@akiha_haruto",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@dai_tian66632",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@bondancelove",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@kitamukijizo",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@pw9skrdcfyjfxfv",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@aaiijkkknouz",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@takarayaanan",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@bon__juu",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@hiroshitsch",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@ryb1gnknfw8473",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@smilekaren2022",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@samshu0605",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@kanai_jsc",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@mamachi27065433",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@decdecco",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@sunshinechoukai",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@toyogsan",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@tsumekamu20",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@fumikomikan",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@a_nomoto",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@yu_kanmiya",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@sabamun",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@nontan5248",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@tsubamekitaru",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@misatotcs",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@kazukazu9317",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@recotsqzid4k1ek",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@fanfan_jackie",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@emily4946366419",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@kaitomaster",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@gqsn9",
+      "type": "following"
+    },
+    {
+      "source": "@komaikai",
+      "target": "@tcenterprise",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@koguremiwazow",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@kanegonnkqri",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@yumi_tateishi",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@hojo_b",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@ruikozuka",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@kaz0045",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@natsutr_bon",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@m125m8qgyhwuehs",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@viola_vizard",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@kagishipocat",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@pedal2411",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@pink_daiamond_",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@2896fumiko",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@risaminyo",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@05bt0akatgrysa8",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@yumi_yoshii",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@bon_odorer",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@bremen_ohshima",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@hiro_thinker",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@odori2024minato",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@_masakari",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@ochun99",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@yumibe",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@ino_mee",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@lefthands_store",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@mitthutter",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@ponsaito",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@sumiyume_art",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@matsurinokiseki",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@tyanmaru",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@usagitv",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@kabukitakumi",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@wasoubi",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@midori3758",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@fujimoto_rie_75",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@kajix_japan",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@wakafu73",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@kuronekonodang0",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@bon_odoroo",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@qjenxyq7st8435",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@mjmj830mj",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@karinchanchanko",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@natsukouko",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@yoshizow_2015",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@nyantokonyan",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@nyantokonyan_2",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@kishinoyuichi",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@ueno_bonodori",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@agehabijo",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@omatsurijapan",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@bonodorijapan",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@stba_bonodori",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@bondancelove",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@wadaikoch",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@mimi33yuyu26na",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@kazu95074044",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@sinukotiigaikas",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@gpveqead9u10257",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@dorlis_kmk",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@bonusagi123",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@todabon",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@masakiimpulse",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@fabulousz91",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@lang_pen92698",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@doginolive",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@fuetane55",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@odeko_pikamaru",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@_yumemigati",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@sakura_bonodori",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@mbc_sky",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@manamana04115",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@nobu_harapeco",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@ginza_tachibana",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@dao_bei59248",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@acchaman3",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@numila77",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@shiodaifuku0209",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@fuyukapi",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@yurubon_off",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@bluepig74",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@yumiya_pon",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@bontulijdtgjwe",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@bababajintou",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@nobu_harapeko",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@was7dbtyrfbrcib",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@p_peanuts",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@aikoba3",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@_f4b3c",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@shimoxg",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@walkingfilmlove",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@patapatapapapa3",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@nijigame_taiko",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@ayatra_wrs",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@miumiupicopoco",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@kankan45057161",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@okeeboho",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@mmmjasminehhh",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@anisondisco",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@5khfya5pjksggov",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@tomo_l_bochy",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@mau3_141592",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@pipopapo19",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@franinjp",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@pw9skrdcfyjfxfv",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@hashyneige",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@6utaemon",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@peromaru20",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@captainital22",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@yosznuu1gdyjcgi",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@bon__juu",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@reonarudopon",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@ohanaaroma",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@bsszpiverz5ukxa",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@_sakurabon_",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@hosinok5sama",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@xxxnabekoxxx",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@kita1013yuu",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@suwayahikari_nu",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@kaitomaster",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@akubin0707",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@a_nkmr_ya",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@codanano",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@milbb100",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@bonkyodora_",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@jun810smile",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@4204280711",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@tomohikos",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@piyoko_mame",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@oolongcha_n",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@erlqvoz3pf52511",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@waterdragon1110",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@sakaiyukako",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@obakedaigaku",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@aliceproject_mb",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@hideshanbonbon",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@odorikosama1206",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@gqsn9",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@lifekanako",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@atutakamama7034",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@ha36_seichan_01",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@keis_kbon",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@madame_yuria",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@maki_nin",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@bondbont",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@bjvbimpm0sqwrmy",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@osshy146",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@hisbow2",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@kthg_mh",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@miya2234",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@kantoyamato",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@panda_dapan11",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@kyeong27",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@kazkazike",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@mariya_ukonya",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@yama_shigeochan",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@misariku53",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@stanpinsen",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@aqdap7kr018xo9k",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@nemottyneronero",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@torya_summer",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@atmdgtdw",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@mayuyu_mm_ariel",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@kyocony",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@tomi_sa010",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@nana20090623",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@kozakuratama",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@obonmochi",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@1205uzonke",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@natsu_tansan",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@gucci524",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@hoso_yane",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@hinokunidaiko",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@bonodori8",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@tomotomomottomo",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@uja31",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@motoeka_ageha",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@4wgysb7cwueh4iv",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@bon_odoriko",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@iwzpxdcccp30jb4",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@saotomeshachu",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@nnn_oka1216",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@masako0327",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@komaikai",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@jim6900",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@mrapple_bycandy",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@matumotobonbon",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@kasumi_1030_",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@cottoncand75102",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@littlerito8",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@harebon_odori",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@akki___",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@okojosanae",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@fried_wakame",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@qucdgpgcz0ydzqc",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@blue_sky_blue_j",
+      "type": "following"
+    },
+    {
+      "source": "@mu4324",
+      "target": "@nyoritael",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@kzca49umzra13jw",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@vinculo2475124j",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@8z0lygf3xtzehm5",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@yxenuktyfwmhjmc",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@kokkai_map",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@wakuheihachiro",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@jonalynot",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@hiro16470",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@yobinororokunn",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@ctzort8sua7cqks",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@nihon_koku555",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@tsumura_w",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@artist1_b",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@hicrck6w45sryx2",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@wt7qkn66ds22254",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@gatlantis2201",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@hiromia96722609",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@asahi",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@o8rd1s0l62",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@annwfn45941611",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@nozawatetsuya_",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@taroinagaki025",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@mw58006",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@akiyon047",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@ddkynmm",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@b8kun",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@pheasant_mt",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@komatusima1",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@uz3r2kwexnlzvbm",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@aidamitsuwo0911",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@konkoninari2300",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@hids3bvft016164",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@fhiwagdmfceq8pi",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@n6gdf6qb6ktqexf",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@pikonon0806",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@zen08115828",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@numururetsupeo",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@tokigane_town",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@gauman_noa",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@runmiyako",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@yoshida_teiri",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@aoi35890764",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@reiwanobonpu",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@olhidea",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@fujikoffujiofg",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@machikoedw5ja8",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@4dnaxuwbpe9tzdw",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@komoku7409",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@yama_nippon",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@sametetatenipp1",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@uppercut_dekopi",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@sakura_samuraix",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@samuraisoul19",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@_ina__ina_",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@negimanomikoto",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@kitabon4",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@fullmoonkaguya",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@kmesia430",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@otonanoikenga",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@mikamikan_narou",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@shojisoe",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@chiduru_777",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@zfj46sjgml873",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@tadokoro1486556",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@fukutorax",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@xyvfvldyd723701",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@yasashiitanaka",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@arma3_kawa_aki",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@nnn_17_p",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@yamamori_yamori",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@re_rize00",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@yume_daruma_",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@karatebankerjp",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@digi_yamo",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@daizudrow",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@vildmcx4fu23319",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@6sbns6fgnr8lqli",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@soui_kino_888",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@bbayndnxk5puprc",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@4ud1ccuftl19105",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@smile072709",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@kimikawa00",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@mattariver3",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@w1uou5cum5cgnal",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@ukiyosizuku",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@alphaville1965",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@gw3cjjsmq6n2ye1",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@gasshichannel",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@kanzaka117077",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@hiropon_2727",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@kintan077",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@tian_jia14960",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@ori_11_13",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@knhjyohokyoku",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@gnmrzeg74b72790",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@yukawareiko",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@honomari_liver",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@sam_nishio",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@avupyict0e20010",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@edk3ekhrq194341",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@shinpeimorigami",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@8q2cjdf73hv8olv",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@oriharu6_7o_ki_",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@kiterutyan",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@keumaya",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@r8_r1",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@yukikosato3710",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@advancedaily_1",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@xze5ey2gh670469",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@orix_fun1990",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@demetan1130",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@yotaro_aaa3",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@page4163929",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@ox5jlz5giwasmcp",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@een_tts",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@mupinkko",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@mitugoro2",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@nsskuu",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@rrp3411vcxoac9u",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@akiraasami888",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@dance7030",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@zylwyfmyfyj3rae",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@9sa0ipa0ldz0eis",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@ro9to",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@taroscafeota",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@yymods",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@seshiru0602",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@landp2222",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@oq0iq",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@monet20220919",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@taro_trad",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@s3junko",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@kattyannel25252",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@riyk72",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@bighobbit2",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@s_kikutake",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@6r7dwfcv3a18289",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@mattun_",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@rktruelovefam",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@rockbrown777",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@hn8m0m",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@shinotouaianq",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@tweets_sheena",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@keilucky2",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@yashi21south",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@3sisterssunrise",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@mongamae0630",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@qf3yjluuhh71557",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@ekan3f5ab179750",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@shibata86525",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@kind___maker",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@be2kururidaikon",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@nanohana1038",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@hrkz2027",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@83upgo3yfb70386",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@yugyo7e",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@drm3dw4swamcud1",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@denim1002",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@kallina_kallina",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@silokane7",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@sarada_safaia",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@kawarawarazu",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@lizzyli59103728",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@o3wf5spfhy92522",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@twintwintaka",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@hydrangeaaqua",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@shiorimizuhara",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@ogotch",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@aiai4919",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@cop778912",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@77tatsu",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@vismoglie",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@ccxwguseqf37562",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@kiaki002",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@q51wfq5abc25500",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@nikkantarou",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@aomega21",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@tenitenimasa999",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@popoko7373",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@gtt2144",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@the_abyss_2025",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@ralral2026",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@6aou2ldpwj69741",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@rentai_u_yam",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@arigatothanks11",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@kamiwaki",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@kinkoy413",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@emerald760981",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@73mama51",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@ktggpasobdt1plw",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@lolosato1",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@sgptak",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@1r0sen12r0sesea",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@sekiguchi1965",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@cocochabi",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@owlsunion",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@saso1793",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@patachata1",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@kknoki1758",
+      "type": "following"
+    },
+    {
+      "source": "@middonaitogaru",
+      "target": "@kuroucsg",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@okeeboho",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@zxna7opwj11908",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@tomokunbondansu",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@shironekolala",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@mu4324",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@codanano",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@townnews_minami",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@mbc_sky",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@u9ja8lyxou81641",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@mai3858odori",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@eg4cdjzwit64285",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@ssqq47356585",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@m7777777m8",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@bonusagi123",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@wacknstar",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@tn_nakanishi",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@koyan770",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@kuzunavi",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@mamimami298",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@s_omochichan_",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@otamitsuko",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@michiru_zenryo9",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@obakaaki",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@masakiimpulse",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@fried_wakame",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@wagashi919",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@wadaikoch",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@nigiwaiza",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@pink_daiamond_",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@mimi33yuyu26na",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@npo2025",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@hoso_yane",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@kanbarataka",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@3ga9nock",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@inden_yy",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@victor_junior59",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@goodfreefonts",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@hamakei",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@mimi33_yuyu26",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@flopdesign",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@gakkiy_family",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@bon_runner",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@emilin813",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@natsutr_bon",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@oolongcha_n",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@tasogarecords",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@shinyoko_net",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@sima_hasi",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@hiyosi_net",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@dao_bei59248",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@tanoshiki_kana",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@bon_odoroo",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@_masakari",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@yurubon_off",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@na_yokohama",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@fm_marine",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@ma_umojh",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@manamana04115",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@p_peanuts",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@expo2027_japan",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@sarabondance",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@hitomizuki1",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@yumiya_pon",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@_mackn",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@bonnodoriegao",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@nobu_harapeco",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@kitsu_kaori",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@05ishidaen",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@japonesia6852",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@kasumi_1030_",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@tomi_sa010",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@natsu_tansan",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@mogeruchan",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@mutosadako",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@jim6900",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@jerezuk",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@midori3758",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@yu_kanmiya",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@ochiai_hrs",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@shiodaifuku0209",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@shidarezakura79",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@hamaspo_com",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@minken_official",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@hidesukeji",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@yokohamasport",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@terajimamura",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@kimono_s_ryu_09",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@take1134",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@kqiztyib2t5mh1i",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@himetsubakihime",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@nnn_oka1216",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@katougudaguda",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@yzpuj7rhqe63660",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@fukuchanmannnn",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@miyumiyu3739",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@dainamvanhoa",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@tomohikos",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@oishihajime",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@dreadyarou",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@kanamenyan1125",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@iwzpxdcccp30jb4",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@4pdnw2njsmeq90w",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@ocha_bon",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@tomo_l_bochy",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@hidedon78",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@tominren58",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@bababajintou",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@oapezxfjdr0y3sk",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@jun810smile",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@kyeong27",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@yasuo_s_d_i",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@mmmjasminehhh",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@wfujgpr01ajkbsb",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@auojlqoylhreynl",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@kanta_ichijyo",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@bjvbimpm0sqwrmy",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@nobu_harapeko",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@nijigame_taiko",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@kopan6230",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@hisbow2",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@hideshanbonbon",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@iid_psv",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@kazu95074044",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@kuronekonodang0",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@ainokunaiai",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@kyocony",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@takumaminnyou",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@akekazashi32",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@yuuuuu874",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@akki___",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@f8wavug8rtxfz8b",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@saku75993883",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@kajix_japan",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@peromaru20",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@piyoko_mame",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@5khfya5pjksggov",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@7376ggbw1gwxum3",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@bon__juu",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@y3c3ehadtl72033",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@ipmkoaglokkfgnv",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@g1a228tyau98899",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@bondbont",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@elizabethmdes",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@1qcrokuxaw24735",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@kyonpri",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@suzuran_139",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@ringonabe",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@bagpacker2023",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@laughandeatwell",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@kimonoodoru1",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@protami610k9mai",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@vornadopower",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@qjenxyq7st8435",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@bontulijdtgjwe",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@blue_sky_blue_j",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@anzkanten",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@rtzgbcb8abh79qn",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@heart_shio_",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@awashimahiruko",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@craftsman_nobu",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@go_51_50",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@nyoritael",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@panda_dapan11",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@folkdancerenmei",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@minyo_nichimin",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@japojp",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@michikominyo",
+      "type": "following"
+    },
+    {
+      "source": "@odori2024minato",
+      "target": "@minbu_jp",
+      "type": "following"
+    },
+    {
+      "source": "@rollingasahi",
+      "target": "@nhk_news",
+      "type": "following"
+    }
+  ],
+  "cost_estimate": {
+    "credits": 1684,
+    "usd": 0.01684,
+    "calls": 10,
+    "returned_users": 1598
+  }
+}
