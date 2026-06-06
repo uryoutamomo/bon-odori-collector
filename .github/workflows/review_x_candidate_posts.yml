@@ -1,0 +1,35 @@
+name: bon-odori-review-x-candidate-posts
+
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: bon-odori-review-x-candidate-posts
+  cancel-in-progress: false
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+
+    - name: Review candidate accounts by recent posts
+      env:
+        TWITTERAPI_IO_KEY: ${{ secrets.TWITTERAPI_IO_KEY }}
+      run: python review_x_candidate_posts.py
+
+    - name: Commit and Push review data
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        [ -f data/x_candidate_post_review.json ] && git add data/x_candidate_post_review.json
+        git diff --cached --quiet || (git commit -m "Review X candidate accounts by posts" && git push)

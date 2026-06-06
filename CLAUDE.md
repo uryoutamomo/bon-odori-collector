@@ -76,6 +76,10 @@ X API 廃止で止まっていた参加レポ・感想の収集を、非公式�
   - `data/x_candidate_accounts.json`: review用の候補リスト
 - 重要: つながりの多さは「良い盆踊ラー」判定の主軸にしない。あくまで漏れ発見の補助信号。
 - 本採用や優先度判断は、候補の過去投稿に未来予定・会場/日時・告知/ポスター・感想/写真がどれだけあるかで決める。
+- `review_x_candidate_posts.py` は、候補上位の最新投稿を見て投稿価値で絞り込む第2段階。
+  - 実行は `.github/workflows/review_x_candidate_posts.yml` の `workflow_dispatch` のみ。
+  - 出力は `data/x_candidate_post_review.json`。
+  - `promote` は昇格候補、`watch` は保留、`reject` は投稿価値が薄い候補。
 
 ## この仕組みの思想
 

@@ -37,6 +37,21 @@
       "followings_min_credits_per_call": 60
     }
   },
+  "candidate_post_review": {
+    "_comment": "social graphで見つけた候補を、過去投稿の数と質で絞り込む。つながりは候補発見だけに使い、昇格判断は投稿価値を主軸にする。",
+    "enabled": true,
+    "max_candidates": 30,
+    "timeline_pages_per_candidate": 1,
+    "tweets_per_page": 20,
+    "min_promote_score": 5.0,
+    "min_valuable_posts": 2,
+    "min_future_schedule_posts": 1,
+    "credit_usd": 0.00001,
+    "pricing": {
+      "tweet_credits_per_tweet_estimate": 15,
+      "timeline_min_credits_per_call_estimate": 60
+    }
+  },
   "exclude_keywords": [
     "ポケモン", "ピカチュウ", "ポケGO", "ポケモンGO", "pokemon", "Pokémon",
     "セトリ", "セットリスト", "ライブ", "Zepp",
