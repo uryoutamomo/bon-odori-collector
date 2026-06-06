@@ -9,6 +9,19 @@
   },
   "max_pages_per_query": 2,
   "page_sleep_sec": 2,
+  "whitelist_batch_size": 20,
+  "account_ranking": {
+    "_comment": "Xメンバーリストの全員を同じ重みで読まず、過去投稿から情報価値を推定する。未来予定は感想/写真/参加レポより2-3倍重く見るが、盆踊り文脈のある投稿は基本的に残す。",
+    "enabled": true,
+    "backfill_days": 30,
+    "max_backfill_accounts_per_run": 8,
+    "probe_muted_accounts_per_run": 1,
+    "min_keep_post_score": 0.0,
+    "trusted_min_score": 6.0,
+    "trusted_min_values": 3,
+    "muted_min_posts": 5,
+    "muted_max_score": 1.5
+  },
   "exclude_keywords": [
     "ポケモン", "ピカチュウ", "ポケGO", "ポケモンGO", "pokemon", "Pokémon",
     "セトリ", "セットリスト", "ライブ", "Zepp",

@@ -50,6 +50,7 @@ jobs:
         git add data/latest.json data/seen.json data/voices.json data/voices_seen.json
         [ -f data/venue_master.json ] && git add data/venue_master.json
         [ -f data/x_budget.json ] && git add data/x_budget.json
+        [ -f data/x_account_scores.json ] && git add data/x_account_scores.json
         [ -f data/torimochi_queue_seen.json ] && git add data/torimochi_queue_seen.json
         [ -f data/x_whitelist_state.json ] && git add data/x_whitelist_state.json
         git diff --cached --quiet || (git commit -m "Update bon-odori data (news + voices + venues)" && git push)

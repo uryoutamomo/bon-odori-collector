@@ -578,6 +578,7 @@ X_MEMBER_LIST_DB_ID = os.environ.get("X_MEMBER_LIST_DB_ID", "5c585224465241548b6
 TORIMOCHI_QUEUE_DB_ID = os.environ.get("TORIMOCHI_QUEUE_DB_ID", "f560afee832f4b1084d6e6093d74da16")
 VENUE_MASTER_FILE = "data/venue_master.json"
 X_WHITELIST_STATE_FILE = "data/x_whitelist_state.json"
+X_ACCOUNT_SCORES_FILE = "data/x_account_scores.json"
 QUEUE_SEEN_FILE = "data/torimochi_queue_seen.json"
 
 # ホーム会場（築地起点・最優先）。会場マスタに無くても確実に拾うための固定リスト。
@@ -598,6 +599,25 @@ _GENERIC_VENUE_BLOCK = {"本願寺", "西本願寺", "神社", "公園", "寺", 
 # は/が/を/へ は地名内にほぼ出ないので採用。に/の/と は地名内に出るため除外しない。
 _VENUE_REJECT_RE = re.compile(r'[はがをへ、。!！?？「」 　]')
 
+# 「盆踊り」という語が無くても、盆踊り情報として価値が出やすい語。
+# ホワイトリスト投稿の採点に使う。キーワード検索そのものを広げすぎると
+# ノイズと課金が増えるため、まずはアカウント価値評価に寄せる。
+_X_VALUE_KEYWORDS = (
+    "音頭", "やぐら", "櫓", "納涼", "夏祭り", "祭り", "まつり", "例大祭",
+    "輪踊り", "流し踊り", "踊り", "踊った", "浴衣", "太鼓", "町会", "自治会",
+    "商店街", "会場", "開催", "中止", "延期", "日程", "時間", "練習", "稽古",
+    "本日", "今日", "明日", "今週", "週末",
+)
+_X_SCHEDULE_KEYWORDS = (
+    "開催", "開催予定", "実施", "予定", "日程", "時間", "会場", "場所",
+    "お知らせ", "告知", "ポスター", "チラシ", "申し込み", "申込",
+    "雨天", "順延", "延期", "中止", "練習", "稽古", "本日", "今日",
+    "明日", "今週", "今週末", "週末", "来週",
+)
+_X_INFO_RE = re.compile(r'(\d{1,2}[月/]\d{1,2}日?|\d{1,2}:\d{2}|[午前午後]\d{1,2}時|土曜|日曜|雨天|順延|中止|開催)')
+_X_MEDIA_HINTS = ("pic.twitter.com", "写真", "画像", "動画", "ポスター", "チラシ")
+_X_MD_RE = re.compile(r'(?:(\d{1,2})月(\d{1,2})日?|(\d{1,2})/(\d{1,2}))')
+
 
 def _clean_regex_venue(name):
     """新規パターン抽出名の前処理。先頭の英字(in等)・ひらがな助詞/接頭句を落とす。"""
@@ -606,16 +626,400 @@ def _clean_regex_venue(name):
     return name
 
 
+def _norm_handle(handle):
+    return (handle or "").strip().lstrip("@").lower()
+
+
+def _voice_datetime(voice):
+    date_str = voice.get("date") or ""
+    if not date_str:
+        return None
+    try:
+        return datetime.fromisoformat(date_str.replace("Z", "+00:00"))
+    except ValueError:
+        return None
+
+
+def _future_date_signal(text, base_dt=None):
+    """本文内の日付が base_dt 以降なら未来予定の信号として扱う。"""
+    base_dt = base_dt or datetime.now(timezone(timedelta(hours=9)))
+    base_date = base_dt.date()
+    future_hits = 0
+    date_hits = 0
+    for m in _X_MD_RE.finditer(text or ""):
+        month = int(m.group(1) or m.group(3))
+        day = int(m.group(2) or m.group(4))
+        try:
+            event_date = datetime(base_date.year, month, day).date()
+        except ValueError:
+            continue
+        # 年またぎの告知に備える。90日以上過去に見える日付は翌年扱い。
+        if (base_date - event_date).days > 90:
+            event_date = datetime(base_date.year + 1, month, day).date()
+        date_hits += 1
+        if event_date >= base_date:
+            future_hits += 1
+    relative_future = any(k in (text or "") for k in ("明日", "今週", "今週末", "週末", "来週"))
+    today_event = any(k in (text or "") for k in ("本日", "今日")) and any(
+        k in (text or "") for k in ("開催", "実施", "あります", "やります")
+    )
+    return {
+        "date_hits": date_hits,
+        "future_hits": future_hits,
+        "has_future": future_hits > 0 or relative_future or today_event,
+        "relative_future": relative_future,
+        "today_event": today_event,
+    }
+
+
+def _x_post_value_score(voice, cfg=None, known_venues=None):
+    """X投稿1件の情報価値を粗く採点する。
+
+    価値の中心は未来の予定・開催情報。盆踊り語が無い投稿も、
+    音頭/櫓/納涼/日付/会場/写真などで拾う。
+    画像そのものは見られなくても、写真・ポスター・pic.twitter.com の存在は価値信号にする。
+    """
+    cfg = cfg or {}
+    known_venues = known_venues or {}
+    text = (voice.get("text") or "")
+    low = text.lower()
+    score = 0.0
+    reasons = []
+
+    for kw in cfg.get("exclude_keywords", []):
+        if kw.lower() in low:
+            return -4.0, ["exclude"]
+
+    base_dt = _voice_datetime(voice) or datetime.now(timezone(timedelta(hours=9)))
+    schedule = _future_date_signal(text, base_dt)
+    schedule_words = any(kw in text for kw in _X_SCHEDULE_KEYWORDS)
+
+    if schedule["has_future"] and schedule_words:
+        score += 9
+        reasons.append("future_schedule")
+    elif schedule_words and _X_INFO_RE.search(text):
+        score += 5
+        reasons.append("schedule_like")
+
+    if "盆踊り" in text or "盆おどり" in text or "盆踊" in text:
+        score += 4
+        reasons.append("bon")
+
+    if any(kw in text for kw in _X_VALUE_KEYWORDS):
+        score += 3
+        reasons.append("context")
+
+    if _X_INFO_RE.search(text):
+        score += 3
+        reasons.append("date_time")
+
+    if any(h in text for h in _X_MEDIA_HINTS):
+        score += 3 if schedule_words else 1
+        reasons.append("media_hint")
+
+    matched_venue = next((name for name in known_venues if name and name in text), "")
+    if matched_venue:
+        score += 5 if known_venues.get(matched_venue) else 3
+        reasons.append("venue")
+
+    if any(kw.lower() in low for kw in cfg.get("experience_keywords", [])):
+        score += 3
+        reasons.append("experience")
+
+    if "http" in low or "t.co/" in low:
+        score += 1
+        reasons.append("link")
+
+    if score == 0:
+        score -= 1
+        reasons.append("no_context")
+
+    return score, reasons
+
+
+def _build_x_account_scores(voices, cfg=None):
+    """voices.json などの過去投稿からアカウント価値スコアを作る。"""
+    cfg = cfg or {}
+    known = _load_known_venues()
+    accounts = {}
+    for v in voices:
+        if v.get("source") not in ("x", "x_whitelist"):
+            continue
+        handle = _norm_handle(v.get("account"))
+        if not handle:
+            continue
+        row = accounts.setdefault(handle, {
+            "handle": f"@{handle}",
+            "posts_seen": 0,
+            "valuable_posts": 0,
+            "noise_posts": 0,
+            "value_points": 0.0,
+            "last_seen": "",
+            "top_reasons": {},
+        })
+        row["posts_seen"] += 1
+        value, reasons = _x_post_value_score(v, cfg, known)
+        row["value_points"] += value
+        if value >= 4:
+            row["valuable_posts"] += 1
+        if value < 0:
+            row["noise_posts"] += 1
+        date = v.get("date") or ""
+        if date > row["last_seen"]:
+            row["last_seen"] = date
+        for r in reasons:
+            row["top_reasons"][r] = row["top_reasons"].get(r, 0) + 1
+
+    ranking_cfg = cfg.get("account_ranking", {})
+    muted_min_posts = ranking_cfg.get("muted_min_posts", 5)
+    muted_max_score = ranking_cfg.get("muted_max_score", 1.5)
+    trusted_min_score = ranking_cfg.get("trusted_min_score", 6.0)
+    trusted_min_values = ranking_cfg.get("trusted_min_values", 3)
+
+    for row in accounts.values():
+        posts = max(row["posts_seen"], 1)
+        score = row["value_points"] / posts
+        score += min(4.0, row["valuable_posts"] * 0.4)
+        score -= min(3.0, row["noise_posts"] * 0.6)
+        row["score"] = round(score, 3)
+        row["value_ratio"] = round(row["valuable_posts"] / posts, 3)
+        if row["posts_seen"] >= muted_min_posts and row["score"] < muted_max_score:
+            row["status"] = "muted"
+        elif row["score"] >= trusted_min_score and row["valuable_posts"] >= trusted_min_values:
+            row["status"] = "trusted"
+        elif row["valuable_posts"] > 0:
+            row["status"] = "active"
+        else:
+            row["status"] = "probation"
+
+    return {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "accounts": dict(sorted(
+            accounts.items(),
+            key=lambda kv: (-kv[1].get("score", 0), kv[0])
+        )),
+    }
+
+
+def _load_x_account_scores(cfg=None):
+    try:
+        with open(X_ACCOUNT_SCORES_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        pass
+    try:
+        with open("data/voices.json", "r", encoding="utf-8") as f:
+            voices = json.load(f)
+        return _build_x_account_scores(voices, cfg)
+    except Exception:
+        return {"generated_at": "", "accounts": {}}
+
+
+def _save_x_account_scores(voices, cfg=None):
+    try:
+        scores = _build_x_account_scores(voices, cfg)
+        os.makedirs("data", exist_ok=True)
+        with open(X_ACCOUNT_SCORES_FILE, "w", encoding="utf-8") as f:
+            json.dump(scores, f, ensure_ascii=False, indent=2)
+        stats = scores.get("accounts", {})
+        muted = sum(1 for r in stats.values() if r.get("status") == "muted")
+        trusted = sum(1 for r in stats.values() if r.get("status") == "trusted")
+        print(f"[rank] Xアカウントスコア更新: {len(stats)}件（trusted {trusted} / muted {muted}）")
+    except Exception as e:
+        print(f"[rank] Xアカウントスコア保存エラー（継続）: {e}")
+
+
+def _ensure_x_member_score_props():
+    """XメンバーリストDBにスコア確認・手動調整用のプロパティを用意する。fail-safe。"""
+    if not NOTION_TOKEN:
+        return False
+    payload = {
+        "properties": {
+            "収集ステータス": {
+                "select": {
+                    "options": [
+                        {"name": "優先", "color": "green"},
+                        {"name": "通常", "color": "blue"},
+                        {"name": "休止", "color": "red"},
+                    ]
+                }
+            },
+            "手動重み": {"number": {"format": "number"}},
+            "自動スコア": {"number": {"format": "number"}},
+            "収集ランク": {
+                "select": {
+                    "options": [
+                        {"name": "trusted", "color": "green"},
+                        {"name": "active", "color": "blue"},
+                        {"name": "probation", "color": "yellow"},
+                        {"name": "muted", "color": "red"},
+                    ]
+                }
+            },
+            "投稿数": {"number": {"format": "number"}},
+            "価値投稿数": {"number": {"format": "number"}},
+            "未来予定投稿数": {"number": {"format": "number"}},
+            "最終評価日時": {"date": {}},
+            "評価理由": {"rich_text": {}},
+        }
+    }
+    try:
+        _notion_request("PATCH", f"/databases/{X_MEMBER_LIST_DB_ID}", payload)
+        return True
+    except Exception as e:
+        print(f"[rank] XメンバーリストDBのスコア用プロパティ作成をスキップ: {e}")
+        return False
+
+
+def _update_page_props_best_effort(page_id, props):
+    """Notionページプロパティを更新。失敗時だけ1つずつフォールバックする。"""
+    try:
+        _notion_request("PATCH", f"/pages/{page_id}", {"properties": props})
+        return
+    except Exception as e:
+        print(f"[rank] Notionスコア一括書き戻し失敗、個別更新へフォールバック: {e}")
+    for name, value in props.items():
+        try:
+            _notion_request("PATCH", f"/pages/{page_id}", {"properties": {name: value}})
+        except Exception as e:
+            print(f"[rank] Notionスコア書き戻しスキップ ({name}): {e}")
+
+
+def _sync_x_account_scores_to_notion(accounts, cfg=None):
+    """XメンバーリストDBへ自動スコアを書き戻す。人間の微調整欄も用意する。"""
+    if not NOTION_TOKEN or not accounts:
+        return
+    cfg = cfg or {}
+    _ensure_x_member_score_props()
+    scores = _load_x_account_scores(cfg).get("accounts", {})
+    now = datetime.now(timezone.utc).isoformat()
+    updated = 0
+    for account in accounts:
+        page_id = account.get("page_id")
+        row = scores.get(_norm_handle(account.get("handle")))
+        if not page_id or not row:
+            continue
+        reasons = row.get("top_reasons", {})
+        reason_text = ", ".join(f"{k}:{v}" for k, v in sorted(reasons.items(), key=lambda kv: (-kv[1], kv[0]))[:6])
+        props = {
+            "自動スコア": {"number": row.get("score", 0)},
+            "収集ランク": {"select": {"name": row.get("status", "probation")}},
+            "投稿数": {"number": row.get("posts_seen", 0)},
+            "価値投稿数": {"number": row.get("valuable_posts", 0)},
+            "未来予定投稿数": {"number": reasons.get("future_schedule", 0)},
+            "最終評価日時": {"date": {"start": now}},
+            "評価理由": {"rich_text": [{"text": {"content": reason_text[:1900]}}]},
+        }
+        _update_page_props_best_effort(page_id, props)
+        updated += 1
+    print(f"[rank] Notion Xメンバーリストへスコア書き戻し: {updated} 件")
+
+
+def _rank_whitelist_accounts(accounts, cfg=None):
+    """ホワイトリストをアカウント価値順に並べ、低価値アカウントを自動的に休ませる。"""
+    cfg = cfg or {}
+    ranking_cfg = cfg.get("account_ranking", {})
+    if not ranking_cfg.get("enabled", True):
+        return [{
+            "handle": a["handle"],
+            "page_id": a.get("page_id", ""),
+            "since": _load_whitelist_since(),
+            "reason": "disabled",
+        } for a in accounts]
+
+    scores = _load_x_account_scores(cfg).get("accounts", {})
+    regular_since = _load_whitelist_since()
+    backfill_since = int((datetime.now(timezone.utc) - timedelta(
+        days=ranking_cfg.get("backfill_days", 30)
+    )).timestamp())
+    max_backfill = ranking_cfg.get("max_backfill_accounts_per_run", 8)
+    include_muted_probe = ranking_cfg.get("probe_muted_accounts_per_run", 0)
+
+    ranked = []
+    muted = []
+    unknown_count = 0
+    for account in accounts:
+        h = account["handle"]
+        key = _norm_handle(h)
+        row = scores.get(key)
+        manual_status = account.get("manual_status", "")
+        manual_weight = account.get("manual_weight", 0) or 0
+        if not row:
+            since = backfill_since if unknown_count < max_backfill else regular_since
+            unknown_count += 1
+            reason = "manual_priority" if manual_status == "優先" else "unknown"
+            if manual_status == "休止":
+                muted.append({"handle": h, "page_id": account.get("page_id", ""), "since": regular_since, "reason": "manual_muted", "score": -999})
+            else:
+                ranked.append({"handle": h, "page_id": account.get("page_id", ""), "since": since, "reason": reason, "score": manual_weight})
+            continue
+        status = row.get("status")
+        score = row.get("score", 0) + manual_weight
+        if manual_status == "優先":
+            status = "manual_priority"
+            score += 100
+        elif manual_status == "休止":
+            status = "manual_muted"
+            score = -999
+        item = {"handle": h, "page_id": account.get("page_id", ""), "since": regular_since, "reason": status, "score": score}
+        if status in ("muted", "manual_muted"):
+            muted.append(item)
+        else:
+            ranked.append(item)
+
+    ranked.sort(key=lambda x: (
+        0 if x["reason"] == "manual_priority" else 1,
+        0 if x["reason"] == "trusted" else 1,
+        -x.get("score", 0),
+        x["handle"].lower()
+    ))
+    if include_muted_probe:
+        muted.sort(key=lambda x: (-x.get("score", 0), x["handle"].lower()))
+        ranked.extend(muted[:include_muted_probe])
+
+    skipped = len(muted) - min(len(muted), include_muted_probe)
+    if skipped:
+        print(f"[rank] 低スコアのためホワイトリスト収集を休止: {skipped} アカウント")
+    print(f"[rank] ホワイトリスト収集対象: {len(ranked)} / 元リスト {len(accounts)}")
+    return ranked
+
+
 def _notion_query_database(db_id, payload=None):
     return _notion_request("POST", f"/databases/{db_id}/query", payload or {})
 
 
-def load_whitelist_handles():
-    """「X メンバーリスト」DB から @ハンドル一覧（@抜き）を返す。失敗時 []（fail-safe）。"""
+def _prop_plain(prop):
+    if not prop:
+        return ""
+    vals = prop.get("rich_text") or prop.get("title") or []
+    return "".join(t.get("plain_text", "") for t in vals).strip()
+
+
+def _prop_select(prop):
+    if not prop:
+        return ""
+    sel = prop.get("select")
+    return sel.get("name", "") if sel else ""
+
+
+def _prop_number(prop):
+    if not prop:
+        return None
+    return prop.get("number")
+
+
+def load_whitelist_accounts():
+    """「X メンバーリスト」DB から収集対象アカウントを返す。
+
+    任意プロパティ:
+    - 収集ステータス: 優先 / 通常 / 休止
+    - 手動重み: number（スコアに加算）
+    既存DBに無ければ無視する。
+    """
     if not NOTION_TOKEN:
         print("[whitelist] NOTION_API_TOKEN 未設定のためメンバーリスト読込スキップ")
         return []
-    handles = []
+    accounts = []
     try:
         cursor = None
         while True:
@@ -625,16 +1029,19 @@ def load_whitelist_handles():
             data = _notion_query_database(X_MEMBER_LIST_DB_ID, payload)
             for row in data.get("results", []):
                 props = row.get("properties", {})
-                acc = props.get("アカウント (@)", {}) or {}
-                rich = acc.get("rich_text") or acc.get("title") or []
-                text = "".join(t.get("plain_text", "") for t in rich).strip()
+                text = _prop_plain(props.get("アカウント (@)", {}) or {})
                 if not text:
                     url = (props.get("プロフィールURL", {}) or {}).get("url") or ""
                     if "x.com/" in url or "twitter.com/" in url:
                         text = url.rstrip("/").split("/")[-1]
                 h = text.lstrip("@").strip()
                 if h:
-                    handles.append(h)
+                    accounts.append({
+                        "handle": h,
+                        "page_id": row.get("id", ""),
+                        "manual_status": _prop_select(props.get("収集ステータス", {})),
+                        "manual_weight": _prop_number(props.get("手動重み", {})) or 0,
+                    })
             if not data.get("has_more"):
                 break
             cursor = data.get("next_cursor")
@@ -642,11 +1049,11 @@ def load_whitelist_handles():
         print(f"[whitelist] メンバーリスト読込エラー（スキップ）: {e}")
         return []
     seen, out = set(), []
-    for h in handles:
-        k = h.lower()
+    for account in accounts:
+        k = _norm_handle(account.get("handle"))
         if k not in seen:
             seen.add(k)
-            out.append(h)
+            out.append(account)
     print(f"[whitelist] メンバーリスト {len(out)} アカウント取得")
     return out
 
@@ -676,8 +1083,8 @@ def collect_x_whitelist(seen_urls):
     if not TWITTERAPI_IO_KEY:
         print("[whitelist] TWITTERAPI_IO_KEY 未設定のためスキップ")
         return [], list(seen_urls)
-    handles = load_whitelist_handles()
-    if not handles:
+    accounts = load_whitelist_accounts()
+    if not accounts:
         print("[whitelist] ホワイトリストが空のためスキップ")
         return [], list(seen_urls)
 
@@ -697,17 +1104,36 @@ def collect_x_whitelist(seen_urls):
         print(f"[whitelist] 予算上限到達のためスキップ（日 ${daily_spent:.4f} 月 ${monthly_spent:.4f}）")
         return [], list(seen_urls)
 
-    since_ts = _load_whitelist_since()
     batch_size = cfg.get("whitelist_batch_size", 20)
+    _sync_x_account_scores_to_notion(accounts, cfg)
+    ranked_handles = _rank_whitelist_accounts(accounts, cfg)
     new_items, new_seen, run_cost = [], list(seen_urls), 0.0
+    known_venues = _load_known_venues()
 
-    for i in range(0, len(handles), batch_size):
+    search_batches = []
+    current = []
+    current_since = None
+    for item in ranked_handles:
+        if current and (item["since"] != current_since or len(current) >= batch_size):
+            search_batches.append(current)
+            current = []
+        current.append(item)
+        current_since = item["since"]
+    if current:
+        search_batches.append(current)
+
+    for batch_index, batch_items in enumerate(search_batches, start=1):
         if daily_spent + run_cost >= daily_cap or monthly_spent + run_cost >= monthly_cap:
             print("[whitelist] 走行中に予算上限到達。以降のバッチを打ち切り")
             break
-        batch = handles[i:i + batch_size]
+        batch = [item["handle"] for item in batch_items]
+        since_ts = min(item["since"] for item in batch_items)
         froms = " OR ".join(f"from:{h}" for h in batch)
         query = f"({froms}) since_time:{since_ts}"
+        reason_counts = {}
+        for item in batch_items:
+            reason_counts[item["reason"]] = reason_counts.get(item["reason"], 0) + 1
+        print(f"[whitelist] バッチ{batch_index}: {reason_counts} since_time:{since_ts}")
         try:
             data = _x_search(query)
         except urllib.error.HTTPError as e:
@@ -735,12 +1161,22 @@ def collect_x_whitelist(seen_urls):
             if not v["url"] or v["url"] in seen_urls or v["url"] in new_seen:
                 continue
             judgement = _score_voice(v["text"], cfg) if cfg else "🟡関心"
-            v["tags"] = ["⭐盆踊ラー", judgement]
+            value_score, value_reasons = _x_post_value_score(v, cfg, known_venues)
+            tags = ["⭐盆踊ラー", judgement]
+            if "future_schedule" in value_reasons:
+                tags.insert(1, "📅未来予定")
+            elif "schedule_like" in value_reasons:
+                tags.insert(1, "📌予定候補")
+            v["tags"] = tags
+            v["value_score"] = round(value_score, 3)
             _append_x_log_row(v, "q-whitelist", judgement, cost_per_tweet)
-            new_items.append(v)  # ホワイトリストはノイズでも保持
+            # ホワイトリストでも、盆踊り文脈がほぼ無い日常投稿はログDBだけに残す。
+            # 未来予定は強く加点するが、感想・写真・参加レポも配信価値があるので残す。
+            if value_score >= cfg.get("account_ranking", {}).get("min_keep_post_score", 0.0):
+                new_items.append(v)
             new_seen.append(v["url"])
             count += 1
-        print(f"[whitelist] バッチ{i // batch_size + 1}: {count} 件採用")
+        print(f"[whitelist] バッチ{batch_index}: {count} 件処理")
         _time.sleep(cfg.get("page_sleep_sec", 2))
 
     if run_cost > 0:
@@ -1010,6 +1446,8 @@ def main():
 
         with open(voices_seen_file, 'w', encoding='utf-8') as f:
             json.dump(updated_voices_seen, f, ensure_ascii=False, indent=2)
+
+        _save_x_account_scores(deduped_voices, _load_x_config() or {})
 
         print(f"[voices] 完了: 新規 {len(voice_items)} 件、累計 {len(deduped_voices)} 件")
     except Exception as e:
