@@ -171,15 +171,18 @@ def _rich_text(content, link=None):
     return out
 
 
-def push_to_notion(latest_items, updated_at, x_voices=None, x_cost=None):
+def push_to_notion(latest_items, updated_at, x_voices=None, x_cost=None,
+                   sokuho=None, event_signals=None):
     """Notion ページの内容を最新データで全面更新する。
 
-    x_voices: X由来の「人の言葉」（一次レポ/関心、直近分）。配信担当(こわ)が
-    同じページを読むだけでX情報を配信に組み込めるよう、専用セクションに載せる。
-    x_cost: {"today": 今日のX収集コスト$, "month": 今月累計$, "daily_cap": 日上限$,
-            "monthly_cap": 月上限$}。デイリーのコスト見える化用。
+    x_voices: X由来の「人の言葉」（一次レポ/関心、直近分）。
+    x_cost: {"today", "month", "daily_cap", "monthly_cap"}。コスト見える化用。
+    sokuho: detect_sokuho() の結果。未知イベント速報候補リスト。
+    event_signals: detect_x_confidence_signals() の結果。既存イベント確度変化リスト。
     """
     x_voices = x_voices or []
+    sokuho = sokuho or []
+    event_signals = event_signals or []
     if not NOTION_TOKEN or not NOTION_PAGE_ID:
         print("Notion未設定 (NOTION_API_TOKEN / NOTION_PAGE_ID) のためスキップ")
         return
@@ -205,6 +208,42 @@ def push_to_notion(latest_items, updated_at, x_voices=None, x_cost=None):
             {"object": "block", "type": "code",
              "code": {"language": "json", "rich_text": _rich_text(json_text)}},
         ]
+
+        # 📣 速報セクション（未知イベント速報候補）
+        new_blocks.append(
+            {"object": "block", "type": "heading_2",
+             "heading_2": {"rich_text": _rich_text("📣 速報（新イベント候補）")}})
+        if sokuho:
+            for s in sokuho:
+                score = s.get("value_score", 0)
+                acct = (s.get("account") or "").lstrip("@")
+                text = (s.get("text") or "").replace("\n", " ").strip()[:120]
+                line = f"【{s['venue']}】score:{score} @{acct}: {text}"
+                new_blocks.append(
+                    {"object": "block", "type": "bulleted_list_item",
+                     "bulleted_list_item": {"rich_text": _rich_text(line, s.get("url"))}})
+        else:
+            new_blocks.append(
+                {"object": "block", "type": "paragraph",
+                 "paragraph": {"rich_text": _rich_text("（本日の新イベント速報はありません）")}})
+
+        # 🔄 イベント更新セクション（既存イベントの確度変化）
+        new_blocks.append(
+            {"object": "block", "type": "heading_2",
+             "heading_2": {"rich_text": _rich_text("🔄 イベント更新（確度変化）")}})
+        if event_signals:
+            for s in event_signals:
+                icon = "✅" if s["signal"] == "confirm" else "⚠️"
+                acct = (s.get("account") or "").lstrip("@")
+                text = (s.get("text") or "").replace("\n", " ").strip()[:120]
+                line = f"{icon}【{s['venue']}】@{acct}: {text}"
+                new_blocks.append(
+                    {"object": "block", "type": "bulleted_list_item",
+                     "bulleted_list_item": {"rich_text": _rich_text(line, s.get("url"))}})
+        else:
+            new_blocks.append(
+                {"object": "block", "type": "paragraph",
+                 "paragraph": {"rich_text": _rich_text("（本日のイベント更新情報はありません）")}})
 
         # X由来の「人の言葉」セクション（配信に使う一次レポ/関心）
         new_blocks.append(
@@ -576,6 +615,7 @@ def collect_x_voices(seen_urls: set) -> tuple[list, list]:
 
 X_MEMBER_LIST_DB_ID = os.environ.get("X_MEMBER_LIST_DB_ID", "5c585224465241548b631e4e5d316f3b")
 TORIMOCHI_QUEUE_DB_ID = os.environ.get("TORIMOCHI_QUEUE_DB_ID", "f560afee832f4b1084d6e6093d74da16")
+GLOSSARY_DB_ID = os.environ.get("GLOSSARY_DB_ID", "989e9effc7fc40db8043a3b8e03090ee")
 VENUE_MASTER_FILE = "data/venue_master.json"
 X_WHITELIST_STATE_FILE = "data/x_whitelist_state.json"
 X_ACCOUNT_SCORES_FILE = "data/x_account_scores.json"
@@ -1464,6 +1504,225 @@ def archive_resolved_queue():
     print(f"[queue] 掃除ループ: 該当なし {archived} 件をアーカイブ")
 
 
+# --- 用語集（表記ゆれ管理）---
+# 会場名・イベント名の表記ゆれを Notion「📖 盆踊ラー用語集」DB で一元管理する。
+# 確度「公式確認」「複数一致」エントリを自動マッチングに使い、「推察」は候補として蓄積。
+# ことが新しい表記ゆれを検知したら register_glossary_alias() で推察登録する。
+# 内田さんが Notion 上で確度を昇格させると次の収集から自動マッチングに反映される。
+
+def load_glossary():
+    """用語集DBからエントリを読み込む。
+    戻り値: (alias_map, confident_set)
+    - alias_map: {表記ゆれ: 正規名称} （全確度）
+    - confident_set: 「公式確認」「複数一致」の正規名称セット（自動マッチング用）
+    fail-safe: 取得失敗時は空で返す。
+    """
+    if not NOTION_TOKEN or not GLOSSARY_DB_ID:
+        return {}, set()
+    try:
+        alias_map = {}
+        confident_set = set()
+        cursor = None
+        while True:
+            payload = {"page_size": 100}
+            if cursor:
+                payload["start_cursor"] = cursor
+            data = _notion_query_database(GLOSSARY_DB_ID, payload)
+            for row in data.get("results", []):
+                props = row.get("properties", {})
+                canonical = _prop_plain(props.get("正規名称", {}))
+                if not canonical:
+                    continue
+                confidence = _prop_select(props.get("確度", {}))
+                aliases_raw = _prop_plain(props.get("表記ゆれ", {}))
+                aliases = [a.strip() for a in aliases_raw.split(",") if a.strip()] if aliases_raw else []
+                alias_map[canonical] = canonical
+                for alias in aliases:
+                    if alias:
+                        alias_map[alias] = canonical
+                if confidence in ("公式確認", "複数一致"):
+                    confident_set.add(canonical)
+            if not data.get("has_more"):
+                break
+            cursor = data.get("next_cursor")
+        print(f"[glossary] {len(alias_map)} エントリ読込（正規名称 {len(confident_set)} 件が高確度）")
+        return alias_map, confident_set
+    except Exception as e:
+        print(f"[glossary] 読込エラー（スキップ）: {e}")
+        return {}, set()
+
+
+def register_glossary_alias(alias, canonical, source_url="", confidence="推察"):
+    """新出表記ゆれを用語集DBに登録/追記する。fail-safe。
+    既存の正規名称エントリがあれば表記ゆれ列に追記。なければ新規作成。
+    """
+    if not NOTION_TOKEN or not GLOSSARY_DB_ID:
+        return
+    alias = alias.strip()
+    canonical = canonical.strip()
+    if not alias or not canonical or alias == canonical:
+        return
+    try:
+        data = _notion_query_database(GLOSSARY_DB_ID, {
+            "filter": {"property": "正規名称", "title": {"equals": canonical}}
+        })
+        rows = data.get("results", [])
+        if rows:
+            page_id = rows[0]["id"]
+            existing_raw = _prop_plain(rows[0].get("properties", {}).get("表記ゆれ", {})) or ""
+            existing_set = set(a.strip() for a in existing_raw.split(",") if a.strip())
+            if alias in existing_set:
+                return
+            existing_set.add(alias)
+            _notion_request("PATCH", f"/pages/{page_id}", {
+                "properties": {
+                    "表記ゆれ": {"rich_text": [{"text": {"content": ", ".join(sorted(existing_set))[:1900]}}]}
+                }
+            })
+        else:
+            props = {
+                "正規名称": {"title": [{"text": {"content": canonical[:200]}}]},
+                "表記ゆれ": {"rich_text": [{"text": {"content": alias[:1900]}}]},
+                "種別": {"select": {"name": "会場名"}},
+                "確度": {"select": {"name": confidence}},
+            }
+            if source_url:
+                props["出典"] = {"url": source_url}
+            _notion_request("POST", "/pages",
+                            {"parent": {"database_id": GLOSSARY_DB_ID}, "properties": props})
+        print(f"[glossary] 追記: 「{alias}」→「{canonical}」（{confidence}）")
+    except Exception as e:
+        print(f"[glossary] 追記エラー（スキップ）: {e}")
+
+
+def normalize_venue_name(name, alias_map):
+    """会場名を用語集で正規名称に変換。マッチしなければそのまま返す。"""
+    return alias_map.get(name, name)
+
+
+def bootstrap_glossary_if_empty(venue_master):
+    """用語集DBが空の場合、会場マスタの会場名を正規名称として初期投入する。
+    一度だけ動けば良い処理（2回目以降は entries > 0 でスキップ）。
+    """
+    if not NOTION_TOKEN or not GLOSSARY_DB_ID:
+        return
+    try:
+        check = _notion_query_database(GLOSSARY_DB_ID, {"page_size": 1})
+        if check.get("results"):
+            return
+        print("[glossary] 用語集が空です。会場マスタから初期投入します…")
+        for v in venue_master:
+            name = (v.get("venue") or "").strip()
+            if not name or len(name) < 2:
+                continue
+            props = {
+                "正規名称": {"title": [{"text": {"content": name[:200]}}]},
+                "種別": {"select": {"name": "会場名"}},
+                "確度": {"select": {"name": "複数一致"}},
+            }
+            source_url = v.get("source_url") or v.get("notion_url") or ""
+            if source_url:
+                props["出典"] = {"url": source_url}
+            try:
+                _notion_request("POST", "/pages",
+                                {"parent": {"database_id": GLOSSARY_DB_ID}, "properties": props})
+            except Exception as e:
+                print(f"[glossary] 初期投入スキップ ({name}): {e}")
+        print(f"[glossary] 初期投入完了: {len(venue_master)} 件")
+    except Exception as e:
+        print(f"[glossary] 初期投入エラー（スキップ）: {e}")
+
+
+# --- 速報・確度シグナル検知 ---
+
+_CONFIRM_KEYWORDS = (
+    "開催決定", "開催確定", "開催します", "開催予定です", "今年も開催",
+    "チラシ", "ポスター", "受付開始", "告知", "日程決定", "日程確定",
+    "開催情報", "日程が決まり", "日程が出",
+)
+_CANCEL_KEYWORDS = re.compile(r'(中止|延期|雨天中止|台風のため|残念ながら中止|開催中止)')
+
+
+def detect_x_confidence_signals(whitelist_voices, known_venues, alias_map):
+    """ホワイトリスト声から既存会場への確度変化シグナルを検知。
+    戻り: [{"venue": 正規名称, "signal": "confirm"|"cancel", "text", "url", "account"}]
+    ノイズ抑制: ⭐盆踊ラーソース限定 + 盆踊り文脈語必須。
+    """
+    signals = []
+    seen_keys = set()
+    for v in whitelist_voices:
+        if v.get("source") != "x_whitelist":
+            continue
+        text = v.get("text") or ""
+        if not any(c in text for c in _BON_CONTEXT):
+            continue
+        url = v.get("url") or ""
+        account = v.get("account") or ""
+        for raw_name in known_venues:
+            if raw_name not in text:
+                continue
+            canonical = normalize_venue_name(raw_name, alias_map)
+            key = f"{canonical}::{url}"
+            if key in seen_keys:
+                continue
+            if any(kw in text for kw in _CONFIRM_KEYWORDS):
+                signal = "confirm"
+            elif _CANCEL_KEYWORDS.search(text):
+                signal = "cancel"
+            else:
+                continue
+            seen_keys.add(key)
+            signals.append({
+                "venue": canonical,
+                "signal": signal,
+                "text": text[:200].replace("\n", " "),
+                "url": url,
+                "account": account,
+            })
+    return signals
+
+
+def detect_sokuho(whitelist_voices, known_venues, alias_map):
+    """ホワイトリスト声から「未知イベント速報」候補を検出。
+    条件: 📅未来予定タグ + 会場マスタに無い会場名らしき語 + value_score >= 7。
+    戻り: [{"venue", "text", "url", "account", "value_score"}]
+    """
+    candidates = []
+    seen_venues = set()
+    for v in whitelist_voices:
+        if v.get("source") != "x_whitelist":
+            continue
+        tags = v.get("tags") or []
+        if "📅未来予定" not in tags:
+            continue
+        value_score = v.get("value_score", 0)
+        if value_score < 7:
+            continue
+        text = v.get("text") or ""
+        if not any(c in text for c in _BON_CONTEXT):
+            continue
+        # 既知会場への言及があれば速報でなく確度シグナル扱いなのでスキップ
+        if any(name in text for name in known_venues):
+            continue
+        # 新規会場名らしき語を正規表現で抽出
+        for m in _VENUE_SUFFIX_RE.findall(text):
+            cv = _clean_regex_venue(m)
+            if len(cv) < 3 or _VENUE_REJECT_RE.search(cv) or cv in _GENERIC_VENUE_BLOCK:
+                continue
+            canonical = normalize_venue_name(cv, alias_map)
+            if canonical in seen_venues:
+                continue
+            seen_venues.add(canonical)
+            candidates.append({
+                "venue": canonical,
+                "text": text[:200].replace("\n", " "),
+                "url": v.get("url") or "",
+                "account": v.get("account") or "",
+                "value_score": value_score,
+            })
+    return candidates
+
+
 def main():
     seen_file = 'data/seen.json'
     seen_urls = set()
@@ -1592,6 +1851,33 @@ def main():
     except Exception as e:
         print(f"[queue] 予期せぬエラー（他処理には影響なし）: {e}")
 
+    # --- 用語集・速報・確度シグナル検知（fail-safe）---
+    sokuho_list = []
+    event_signal_list = []
+    try:
+        # 会場マスタの初期投入（用語集が空の場合のみ実行）
+        venue_master_raw = []
+        try:
+            with open(VENUE_MASTER_FILE, "r", encoding="utf-8") as f:
+                vm = json.load(f)
+            venue_master_raw = vm if isinstance(vm, list) else vm.get("venues", [])
+        except Exception:
+            pass
+        bootstrap_glossary_if_empty(venue_master_raw)
+
+        glossary_map, confident_set = load_glossary()
+        known = _load_known_venues()
+        wl_voices = [v for v in deduped_voices if v.get("source") == "x_whitelist"]
+        if wl_voices:
+            event_signal_list = detect_x_confidence_signals(wl_voices, known, glossary_map)
+            sokuho_list = detect_sokuho(wl_voices, known, glossary_map)
+            if event_signal_list:
+                print(f"[signals] イベント確度変化シグナル {len(event_signal_list)} 件")
+            if sokuho_list:
+                print(f"[sokuho] 速報候補 {len(sokuho_list)} 件")
+    except Exception as e:
+        print(f"[sokuho/signals] 予期せぬエラー（他処理には影響なし）: {e}")
+
     # Notion へ書き戻し（直近7日分のみ）
     jst = timezone(timedelta(hours=9))
     updated_at = datetime.now(jst).strftime("%Y-%m-%d %H:%M JST")
@@ -1654,7 +1940,8 @@ def main():
     except Exception as e:
         print(f"[cost] コスト集計エラー（表示スキップ）: {e}")
 
-    push_to_notion(recent_items if recent_items else latest_items[:30], updated_at, x_voices_recent, x_cost)
+    push_to_notion(recent_items if recent_items else latest_items[:30], updated_at,
+                   x_voices_recent, x_cost, sokuho_list, event_signal_list)
 
 if __name__ == '__main__':
     main()

@@ -36,6 +36,8 @@ jobs:
         NOTION_PAGE_ID: ${{ secrets.NOTION_PAGE_ID }}
         # X(twitterapi.io)収集用。未設定でも collect.py 側で fail-safe スキップする
         TWITTERAPI_IO_KEY: ${{ secrets.TWITTERAPI_IO_KEY }}
+        # 📖 盆踊ラー用語集 DB（速報・確度シグナル検知に使用）。未設定でも fail-safe スキップ
+        GLOSSARY_DB_ID: ${{ secrets.GLOSSARY_DB_ID }}
       run: python collect.py
 
     - name: Sync venue master (Notion DB -> JSON)
