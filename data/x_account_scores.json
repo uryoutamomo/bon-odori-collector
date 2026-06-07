@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-07T03:23:49.526024+00:00",
+  "generated_at": "2026-06-07T03:33:45.940666+00:00",
   "accounts": {
     "yamarie0324": {
       "handle": "@yamarie0324",
@@ -2338,14 +2338,14 @@
     },
     "rollingasahi": {
       "handle": "@rollingasahi",
-      "posts_seen": 4,
-      "valuable_posts": 4,
+      "posts_seen": 5,
+      "valuable_posts": 5,
       "noise_posts": 0,
-      "value_points": 36.0,
-      "last_seen": "2026-06-07T01:10:18+00:00",
+      "value_points": 43.0,
+      "last_seen": "2026-06-07T03:21:44+00:00",
       "top_reasons": {
-        "bon": 4,
-        "context": 4,
+        "bon": 5,
+        "context": 5,
         "date_time": 2,
         "link": 2
       },
@@ -4143,6 +4143,22 @@
       "value_ratio": 1.0,
       "status": "active"
     },
+    "koshigayaweb": {
+      "handle": "@koshigayaweb",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 8.0,
+      "last_seen": "2026-06-07T03:27:22+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1,
+        "link": 1
+      },
+      "score": 8.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
     "kozakanacs5": {
       "handle": "@kozakanacs5",
       "posts_seen": 1,
@@ -4742,6 +4758,22 @@
       "noise_posts": 0,
       "value_points": 8.0,
       "last_seen": "2026-06-03T11:59:05+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1,
+        "link": 1
+      },
+      "score": 8.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
+    "yoko_mirakuru39": {
+      "handle": "@yoko_mirakuru39",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 8.0,
+      "last_seen": "2026-06-07T03:24:01+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1,
@@ -5655,6 +5687,21 @@
       "noise_posts": 0,
       "value_points": 7.0,
       "last_seen": "2026-06-06T10:17:15+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
+    "cloudcorvus": {
+      "handle": "@cloudcorvus",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-07T03:28:13+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1
@@ -7365,6 +7412,21 @@
       "noise_posts": 0,
       "value_points": 7.0,
       "last_seen": "2026-06-03T15:15:26+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
+    "murasaki141414": {
+      "handle": "@murasaki141414",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-07T03:24:54+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1
@@ -9104,6 +9166,24 @@
       "score": 6.467,
       "value_ratio": 0.667,
       "status": "active"
+    },
+    "bon_odoroo": {
+      "handle": "@bon_odoroo",
+      "posts_seen": 6,
+      "valuable_posts": 4,
+      "noise_posts": 0,
+      "value_points": 29.0,
+      "last_seen": "2026-05-24T12:32:44+00:00",
+      "top_reasons": {
+        "media_hint": 1,
+        "link": 5,
+        "context": 4,
+        "bon": 2,
+        "experience": 1
+      },
+      "score": 6.433,
+      "value_ratio": 0.667,
+      "status": "trusted"
     },
     "mimi33yuyu26na": {
       "handle": "@mimi33yuyu26na",
