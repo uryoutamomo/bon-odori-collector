@@ -1,6 +1,7 @@
 import os
 import re
 import json
+import hashlib
 import urllib.request
 import urllib.parse
 import urllib.error
@@ -714,6 +715,7 @@ VENUE_MASTER_FILE = "data/venue_master.json"
 X_WHITELIST_STATE_FILE = "data/x_whitelist_state.json"
 X_ACCOUNT_SCORES_FILE = "data/x_account_scores.json"
 X_EVENT_EVIDENCE_STATE_FILE = "data/x_event_evidence_state.json"
+X_EVENT_EVIDENCE_COHORT_FILE = "data/x_event_evidence_cohort.json"
 QUEUE_SEEN_FILE = "data/torimochi_queue_seen.json"
 QUEUE_STORAGE_MODE = os.environ.get("QUEUE_STORAGE_MODE", "notion").lower()
 QUEUE_TYPE_VENUE = "会場"
@@ -1485,6 +1487,24 @@ def _clear_pending_event_evidence():
 
 def _event_evidence_accounts(accounts, cfg):
     evidence_cfg = cfg.get("event_evidence", {})
+    cohort_file = evidence_cfg.get(
+        "cohort_file", X_EVENT_EVIDENCE_COHORT_FILE
+    )
+    try:
+        with open(cohort_file, "r", encoding="utf-8") as f:
+            cohort = json.load(f)
+    except (OSError, json.JSONDecodeError, TypeError):
+        cohort = {}
+    handles = sorted(set(cohort.get("handles") or []), key=str.casefold)
+    expected_count = cohort.get("expected_count")
+    if handles and expected_count and len(handles) != int(expected_count):
+        raise ValueError(
+            f"event evidence cohort count mismatch: "
+            f"{len(handles)} != {expected_count}"
+        )
+    if handles:
+        return handles
+
     min_score = float(evidence_cfg.get("min_account_score", -0.6))
     scores = _load_x_account_scores(cfg).get("accounts", {})
     selected = []
@@ -1509,14 +1529,24 @@ def collect_event_evidence_history():
         print("[evidence] TWITTERAPI_IO_KEY 未設定のためスキップ")
         return []
 
+    accounts = load_whitelist_accounts()
+    handles = _event_evidence_accounts(accounts, cfg)
+    selection_id = hashlib.sha256(
+        "\n".join(handles).encode("utf-8")
+    ).hexdigest()
     state = _load_event_evidence_state()
+    if state and state.get("selection_id") != selection_id:
+        print(
+            f"[evidence] 対象コホート変更 "
+            f"{len(state.get('selected_handles') or [])}件→{len(handles)}件。"
+            "同じ2週間を新コホートで再開始"
+        )
+        state = {}
     if state.get("status") == "awaiting_review" and evidence_cfg.get("pilot_only", True):
         print("[evidence] 初回2週間パイロット完了済み。評価待ちのため追加収集を停止")
         return []
 
     if not state:
-        accounts = load_whitelist_accounts()
-        handles = _event_evidence_accounts(accounts, cfg)
         if not handles:
             print("[evidence] 対象アカウントなし")
             return []
@@ -1528,6 +1558,7 @@ def collect_event_evidence_history():
             "window_start": start.isoformat(),
             "window_end": end.isoformat(),
             "selected_handles": handles,
+            "selection_id": selection_id,
             "batch_index": 0,
             "batch_cursors": {},
             "completed_batches": [],

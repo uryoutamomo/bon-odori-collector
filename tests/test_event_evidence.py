@@ -88,9 +88,25 @@ class EventEvidenceTest(unittest.TestCase):
         }
         with patch.object(collect, "_load_x_account_scores", return_value=scores):
             selected = collect._event_evidence_accounts(
-                accounts, {"event_evidence": {"min_account_score": -0.6}}
+                accounts, {"event_evidence": {
+                    "min_account_score": -0.6,
+                    "cohort_file": "/missing/cohort.json",
+                }}
             )
         self.assertEqual(selected, ["@included", "@priority"])
+
+    def test_frozen_cohort_is_used_exactly(self):
+        with tempfile.TemporaryDirectory() as tmpdir:
+            path = os.path.join(tmpdir, "cohort.json")
+            with open(path, "w", encoding="utf-8") as f:
+                json.dump({
+                    "expected_count": 2,
+                    "handles": ["@b", "@a"],
+                }, f)
+            selected = collect._event_evidence_accounts([], {
+                "event_evidence": {"cohort_file": path}
+            })
+        self.assertEqual(selected, ["@a", "@b"])
 
     def test_clears_pending_only_after_queue_delivery(self):
         with tempfile.TemporaryDirectory() as tmpdir:

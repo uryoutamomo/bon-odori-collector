@@ -26,6 +26,7 @@
     "_comment": "イベントらしき発言断片の初回パイロット。対象人数は絞らず、前年同日から2週間だけ取得して評価待ちで停止する。",
     "enabled": true,
     "pilot_only": true,
+    "cohort_file": "data/x_event_evidence_cohort.json",
     "min_account_score": -0.6,
     "initial_window_days": 14,
     "batch_size": 20,
