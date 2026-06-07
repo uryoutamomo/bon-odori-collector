@@ -73,6 +73,21 @@ class DynamoQueueStoreTest(unittest.TestCase):
         self.assertTrue(self.store.add_candidate(event))
         self.assertEqual(len(self.table.items), 2)
 
+    def test_event_evidence_uses_tweet_identity(self):
+        event = dict(
+            self.candidate,
+            type="イベント",
+            identity="evidence:123",
+            tweet_id="123",
+            patterns=["A", "D"],
+            score=9,
+        )
+        self.assertTrue(self.store.add_candidate(event))
+        key = normalize_candidate_key("evidence:123", "イベント")
+        self.assertEqual(self.table.items[key]["tweet_id"], "123")
+        self.assertEqual(self.table.items[key]["patterns"], ["A", "D"])
+        self.assertEqual(self.table.items[key]["status"], "要裏取り")
+
     def test_update_status(self):
         self.store.add_candidate(self.candidate)
         self.store.update_status("築地本願寺", "該当なし")

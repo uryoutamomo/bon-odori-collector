@@ -72,4 +72,5 @@ jobs:
         [ -f data/proactive_event_report.json ] && git add data/proactive_event_report.json
         [ -f data/torimochi_queue_seen.json ] && git add data/torimochi_queue_seen.json
         [ -f data/x_whitelist_state.json ] && git add data/x_whitelist_state.json
+        [ -f data/x_event_evidence_state.json ] && git add data/x_event_evidence_state.json
         git diff --cached --quiet || (git commit -m "Update bon-odori data (news + voices + venues)" && git push)

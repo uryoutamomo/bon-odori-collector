@@ -38,13 +38,15 @@ class DynamoQueueStore:
     def add_candidate(self, candidate, detected_at=None):
         detected_at = detected_at or datetime.now(timezone.utc).isoformat()
         candidate_type = candidate.get("type") or "会場"
+        identity = candidate.get("identity") or candidate["venue"]
         item = {
             "venue_key": normalize_candidate_key(
-                candidate["venue"], candidate_type
+                identity, candidate_type
             ),
+            "identity": identity,
             "venue": candidate["venue"],
             "candidate_type": candidate_type,
-            "status": "要裏取り",
+            "status": candidate.get("status") or "要裏取り",
             "source": candidate.get("source") or "unknown",
             "priority": candidate.get("priority") or "通常",
             "source_url": candidate.get("url") or "",
@@ -53,6 +55,27 @@ class DynamoQueueStore:
             "updated_at": detected_at,
             "notion_synced": False,
         }
+        optional_fields = {
+            "account": candidate.get("account"),
+            "spoken_at": candidate.get("spoken_at"),
+            "tweet_id": candidate.get("tweet_id"),
+            "patterns": candidate.get("patterns"),
+            "score": candidate.get("score"),
+            "score_reasons": candidate.get("score_reasons"),
+            "time_hints": candidate.get("time_hints"),
+            "place_hints": candidate.get("place_hints"),
+            "venue_hints": candidate.get("venue_hints"),
+            "song_hints": candidate.get("song_hints"),
+            "group_hints": candidate.get("group_hints"),
+            "year_signals": candidate.get("year_signals"),
+            "estimated_event": candidate.get("estimated_event"),
+            "estimated_venue": candidate.get("estimated_venue"),
+            "related_key": candidate.get("related_key"),
+        }
+        item.update({
+            key: value for key, value in optional_fields.items()
+            if value not in (None, "", [])
+        })
         try:
             self.table.put_item(
                 Item=item,

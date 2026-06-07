@@ -16,6 +16,11 @@ from proactive_search import (
     select_due_targets,
 )
 from queue_store import DynamoQueueStore
+from event_evidence import (
+    build_history_query,
+    build_initial_window,
+    classify_event_evidence,
+)
 
 try:
     import feedparser
@@ -512,6 +517,7 @@ def _x_map_to_voice(tw):
         "text": (tw.get("text") or tw.get("full_text") or "").strip()[:500],
         "url": url,
         "date": date_iso,
+        "tweet_id": str(tw_id),
         "tags": [],
     }
 
@@ -707,6 +713,7 @@ GLOSSARY_DB_ID = os.environ.get("GLOSSARY_DB_ID", "989e9effc7fc40db8043a3b8e0309
 VENUE_MASTER_FILE = "data/venue_master.json"
 X_WHITELIST_STATE_FILE = "data/x_whitelist_state.json"
 X_ACCOUNT_SCORES_FILE = "data/x_account_scores.json"
+X_EVENT_EVIDENCE_STATE_FILE = "data/x_event_evidence_state.json"
 QUEUE_SEEN_FILE = "data/torimochi_queue_seen.json"
 QUEUE_STORAGE_MODE = os.environ.get("QUEUE_STORAGE_MODE", "notion").lower()
 QUEUE_TYPE_VENUE = "会場"
@@ -1454,6 +1461,181 @@ def collect_x_whitelist(seen_urls):
     return new_items, new_seen
 
 
+def _load_event_evidence_state():
+    try:
+        with open(X_EVENT_EVIDENCE_STATE_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return {}
+
+
+def _save_event_evidence_state(state):
+    os.makedirs("data", exist_ok=True)
+    with open(X_EVENT_EVIDENCE_STATE_FILE, "w", encoding="utf-8") as f:
+        json.dump(state, f, ensure_ascii=False, indent=2)
+
+
+def _clear_pending_event_evidence():
+    state = _load_event_evidence_state()
+    if state.get("pending_evidence"):
+        state["pending_evidence"] = []
+        state["pending_cleared_at"] = datetime.now(timezone.utc).isoformat()
+        _save_event_evidence_state(state)
+
+
+def _event_evidence_accounts(accounts, cfg):
+    evidence_cfg = cfg.get("event_evidence", {})
+    min_score = float(evidence_cfg.get("min_account_score", -0.6))
+    scores = _load_x_account_scores(cfg).get("accounts", {})
+    selected = []
+    for account in accounts:
+        handle = account.get("handle") or ""
+        manual_status = account.get("manual_status") or ""
+        if manual_status == "休止":
+            continue
+        score = scores.get(_norm_handle(handle), {}).get("score")
+        if manual_status == "優先" or (score is not None and score >= min_score):
+            selected.append(handle)
+    return sorted(set(selected), key=str.casefold)
+
+
+def collect_event_evidence_history():
+    """前年同日から2週間分を全対象アカウントで収集する再開可能なパイロット。"""
+    cfg = _load_x_config() or {}
+    evidence_cfg = cfg.get("event_evidence", {})
+    if not evidence_cfg.get("enabled", False):
+        return []
+    if not TWITTERAPI_IO_KEY:
+        print("[evidence] TWITTERAPI_IO_KEY 未設定のためスキップ")
+        return []
+
+    state = _load_event_evidence_state()
+    if state.get("status") == "awaiting_review" and evidence_cfg.get("pilot_only", True):
+        print("[evidence] 初回2週間パイロット完了済み。評価待ちのため追加収集を停止")
+        return []
+
+    if not state:
+        accounts = load_whitelist_accounts()
+        handles = _event_evidence_accounts(accounts, cfg)
+        if not handles:
+            print("[evidence] 対象アカウントなし")
+            return []
+        start, end = build_initial_window(
+            days=int(evidence_cfg.get("initial_window_days", 14))
+        )
+        state = {
+            "status": "in_progress",
+            "window_start": start.isoformat(),
+            "window_end": end.isoformat(),
+            "selected_handles": handles,
+            "batch_index": 0,
+            "batch_cursors": {},
+            "completed_batches": [],
+            "pages_completed": 0,
+            "tweets_scanned": 0,
+            "evidence_detected": 0,
+            "pending_evidence": [],
+            "started_at": datetime.now(timezone.utc).isoformat(),
+        }
+        _save_event_evidence_state(state)
+    else:
+        handles = state.get("selected_handles") or []
+        start = datetime.fromisoformat(state["window_start"])
+        end = datetime.fromisoformat(state["window_end"])
+
+    batch_size = int(evidence_cfg.get("batch_size", 20))
+    max_pages = int(evidence_cfg.get("max_pages_per_run", 40))
+    max_evidence = int(evidence_cfg.get("max_evidence_per_run", 300))
+    page_sleep = float(cfg.get("page_sleep_sec", 2))
+    batches = [
+        handles[index:index + batch_size]
+        for index in range(0, len(handles), batch_size)
+    ]
+
+    budget = cfg.get("budget", {})
+    cost_per_tweet = float(budget.get("cost_per_tweet_usd", 0.00015))
+    daily_cap = float(budget.get("daily_usd", 0.3))
+    monthly_cap = float(budget.get("monthly_usd", 5.0))
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    month = today[:7]
+    budget_state = _x_budget_state()
+    daily_spent = float(budget_state.get(today, 0))
+    monthly_spent = sum(float(value) for key, value in budget_state.items() if key.startswith(month))
+
+    import time as _time
+    detected = []
+    run_cost = 0.0
+    pages = 0
+    batch_index = int(state.get("batch_index", 0))
+    batch_cursors = state.get("batch_cursors") or {}
+    completed_batches = set(state.get("completed_batches") or [])
+    while len(completed_batches) < len(batches) and pages < max_pages and len(detected) < max_evidence:
+        if daily_spent + run_cost >= daily_cap or monthly_spent + run_cost >= monthly_cap:
+            print("[evidence] 予算上限到達。進捗を保存して停止")
+            break
+        for _ in range(len(batches)):
+            if batch_index not in completed_batches:
+                break
+            batch_index = (batch_index + 1) % len(batches)
+        cursor = batch_cursors.get(str(batch_index), "")
+        query = build_history_query(batches[batch_index], start, end)
+        try:
+            data = _x_search(query, cursor)
+        except Exception as exc:
+            state["last_error"] = str(exc)[:500]
+            state["updated_at"] = datetime.now(timezone.utc).isoformat()
+            _save_event_evidence_state(state)
+            print(f"[evidence] バッチ{batch_index + 1}取得失敗。次回再開: {exc}")
+            break
+
+        tweets = data.get("tweets") or data.get("data") or []
+        run_cost += max(len(tweets), 1) * cost_per_tweet
+        state["tweets_scanned"] = int(state.get("tweets_scanned", 0)) + len(tweets)
+        page_evidence = []
+        for tweet in tweets:
+            voice = _x_map_to_voice(tweet)
+            voice["source"] = "x_event_history"
+            evidence = classify_event_evidence(voice, cfg)
+            if evidence:
+                detected.append(evidence)
+                page_evidence.append(evidence)
+
+        pages += 1
+        state["pages_completed"] = int(state.get("pages_completed", 0)) + 1
+        next_cursor = data.get("next_cursor") or data.get("cursor") or ""
+        has_next = bool(data.get("has_next_page", bool(next_cursor)) and next_cursor)
+        if has_next:
+            batch_cursors[str(batch_index)] = next_cursor
+        else:
+            completed_batches.add(batch_index)
+            batch_cursors.pop(str(batch_index), None)
+        batch_index = (batch_index + 1) % len(batches)
+        state["batch_index"] = batch_index
+        state["batch_cursors"] = batch_cursors
+        state["completed_batches"] = sorted(completed_batches)
+        state["evidence_detected"] = int(state.get("evidence_detected", 0)) + len(page_evidence)
+        state.setdefault("pending_evidence", []).extend(page_evidence)
+        state["updated_at"] = datetime.now(timezone.utc).isoformat()
+        _save_event_evidence_state(state)
+        if len(completed_batches) < len(batches):
+            _time.sleep(page_sleep)
+
+    if run_cost:
+        budget_state[today] = daily_spent + run_cost
+        with open(X_BUDGET_FILE, "w", encoding="utf-8") as f:
+            json.dump(budget_state, f, ensure_ascii=False, indent=2)
+    if len(completed_batches) >= len(batches):
+        state["status"] = "awaiting_review"
+        state["completed_at"] = datetime.now(timezone.utc).isoformat()
+        state["covered_until"] = end.isoformat()
+        _save_event_evidence_state(state)
+    print(
+        f"[evidence] 対象 {len(handles)}件 / 完了バッチ {len(completed_batches)}/{len(batches)} / "
+        f"今回 {len(detected)}断片 / 約${run_cost:.5f}"
+    )
+    return state.get("pending_evidence") or detected
+
+
 def _load_known_venues():
     """venue_master.json から {会場名: in_tsukiji_30min(bool)} を返す。"""
     out = {}
@@ -1550,34 +1732,121 @@ def _save_queue_seen(seen):
 
 
 def _ensure_torimochi_queue_type_property():
-    """Notionキューに種別selectを用意し、既存行を会場として補完する。"""
+    """Notionキューに種別とイベント断片レビュー用プロパティを用意する。"""
     if not NOTION_TOKEN:
         return False
     try:
         database = _notion_request(
             "GET", f"/databases/{TORIMOCHI_QUEUE_DB_ID}"
         )
-        prop = database.get("properties", {}).get("種別", {})
-        option_names = {
-            option.get("name")
-            for option in prop.get("select", {}).get("options", [])
+        def merged_select_options(property_name, additions):
+            current = (
+                database.get("properties", {})
+                .get(property_name, {})
+                .get("select", {})
+                .get("options", [])
+            )
+            by_name = {option.get("name"): option for option in current}
+            for option in additions:
+                by_name.setdefault(option["name"], option)
+            return list(by_name.values())
+
+        properties = {
+            "種別": {
+                "select": {
+                    "options": merged_select_options("種別", [
+                        {"name": QUEUE_TYPE_VENUE, "color": "blue"},
+                        {"name": QUEUE_TYPE_EVENT, "color": "purple"},
+                    ])
+                }
+            },
+            "ステータス": {
+                "select": {
+                    "options": merged_select_options("ステータス", [
+                        {"name": "未確認", "color": "gray"},
+                        {"name": "関連候補あり", "color": "yellow"},
+                        {"name": "確認済み", "color": "green"},
+                    ])
+                }
+            },
+            "検知ソース": {
+                "select": {
+                    "options": merged_select_options("検知ソース", [
+                        {"name": "x_event_evidence", "color": "purple"},
+                    ])
+                }
+            },
+            "優先度": {
+                "select": {
+                    "options": merged_select_options("優先度", [
+                        {"name": "高", "color": "red"},
+                    ])
+                }
+            },
+            "証拠ID": {"rich_text": {}},
+            "発言者": {"rich_text": {}},
+            "発言日時": {"date": {}},
+            "検知パターン": {
+                "multi_select": {
+                    "options": [
+                        {"name": code, "color": color}
+                        for code, color in zip(
+                            ("A", "B", "C", "D", "E"),
+                            ("blue", "yellow", "green", "purple", "orange"),
+                        )
+                    ]
+                }
+            },
+            "時期ヒント": {"rich_text": {}},
+            "場所ヒント": {"rich_text": {}},
+            "曲・団体ヒント": {"rich_text": {}},
+            "年次信号": {"multi_select": {}},
+            "推定イベント名": {"rich_text": {}},
+            "推定会場": {"rich_text": {}},
+            "関連候補キー": {"rich_text": {}},
+            "検知スコア": {"number": {"format": "number"}},
+            "スコア根拠": {"rich_text": {}},
+            "担当者": {"rich_text": {}},
+            "次回確認日": {"date": {}},
+            "最終確認日": {"date": {}},
+            "会場候補状態": {
+                "select": {
+                    "options": [
+                        {"name": "未検出", "color": "gray"},
+                        {"name": "候補", "color": "yellow"},
+                        {"name": "既知会場と一致", "color": "green"},
+                        {"name": "新規会場・要裏取り", "color": "orange"},
+                        {"name": "確認済み", "color": "blue"},
+                    ]
+                }
+            },
         }
-        if not set(QUEUE_TYPES).issubset(option_names):
+        missing = {
+            name: definition
+            for name, definition in properties.items()
+            if name not in database.get("properties", {})
+        }
+        for select_name in ("種別", "ステータス", "検知ソース", "優先度"):
+            current_names = {
+                option.get("name")
+                for option in (
+                    database.get("properties", {})
+                    .get(select_name, {})
+                    .get("select", {})
+                    .get("options", [])
+                )
+            }
+            desired_names = {
+                option.get("name")
+                for option in properties[select_name]["select"]["options"]
+            }
+            if not desired_names.issubset(current_names):
+                missing[select_name] = properties[select_name]
+        if missing:
             _notion_request(
                 "PATCH",
                 f"/databases/{TORIMOCHI_QUEUE_DB_ID}",
-                {
-                    "properties": {
-                        "種別": {
-                            "select": {
-                                "options": [
-                                    {"name": QUEUE_TYPE_VENUE, "color": "blue"},
-                                    {"name": QUEUE_TYPE_EVENT, "color": "purple"},
-                                ]
-                            }
-                        }
-                    }
-                },
+                {"properties": missing},
             )
 
         cursor = None
@@ -1610,32 +1879,80 @@ def _ensure_torimochi_queue_type_property():
         return False
 
 
+def _notion_rich_text_value(value):
+    if isinstance(value, (list, tuple)):
+        value = " / ".join(str(item) for item in value if item)
+    value = str(value or "")
+    return {"rich_text": [{"text": {"content": value[:1900]}}]} if value else {"rich_text": []}
+
+
+def _event_evidence_notion_props(evidence):
+    props = {
+        "証拠ID": _notion_rich_text_value(evidence.get("identity")),
+        "発言者": _notion_rich_text_value(evidence.get("account")),
+        "検知パターン": {
+            "multi_select": [{"name": value} for value in evidence.get("patterns", [])]
+        },
+        "時期ヒント": _notion_rich_text_value(evidence.get("time_hints")),
+        "場所ヒント": _notion_rich_text_value(
+            (evidence.get("place_hints") or []) + (evidence.get("venue_hints") or [])
+        ),
+        "曲・団体ヒント": _notion_rich_text_value(
+            (evidence.get("song_hints") or []) + (evidence.get("group_hints") or [])
+        ),
+        "年次信号": {
+            "multi_select": [{"name": value} for value in evidence.get("year_signals", [])]
+        },
+        "推定イベント名": _notion_rich_text_value(evidence.get("estimated_event")),
+        "推定会場": _notion_rich_text_value(evidence.get("estimated_venue")),
+        "関連候補キー": _notion_rich_text_value(evidence.get("related_key")),
+        "検知スコア": {"number": evidence.get("score", 0)},
+        "スコア根拠": _notion_rich_text_value(evidence.get("score_reasons")),
+        "会場候補状態": {
+            "select": {
+                "name": "候補" if evidence.get("estimated_venue") else "未検出"
+            }
+        },
+    }
+    spoken_at = evidence.get("spoken_at")
+    if spoken_at:
+        try:
+            datetime.fromisoformat(spoken_at.replace("Z", "+00:00"))
+            props["発言日時"] = {"date": {"start": spoken_at}}
+        except ValueError:
+            pass
+    return props
+
+
 def push_torimochi_queue(detected):
     """検出会場を裏取りキューへ追記。既出はスキップ。fail-safe。"""
     use_notion = QUEUE_STORAGE_MODE in ("notion", "dual")
     use_dynamodb = QUEUE_STORAGE_MODE in ("dynamodb", "dual")
     if use_notion and not NOTION_TOKEN:
         print("[queue] NOTION_API_TOKEN 未設定のため裏取りキュー追記スキップ")
-        return
+        return {"added": 0, "failed": len(detected), "skipped": 0}
     if use_dynamodb and not os.environ.get("DYNAMODB_QUEUE_TABLE"):
         print("[queue] DYNAMODB_QUEUE_TABLE 未設定のため裏取りキュー追記スキップ")
-        return
+        return {"added": 0, "failed": len(detected), "skipped": 0}
     if not detected:
         print("[queue] 検出会場なし")
-        return
+        return {"added": 0, "failed": 0, "skipped": 0}
     if use_notion and not _ensure_torimochi_queue_type_property():
-        return
+        return {"added": 0, "failed": len(detected), "skipped": 0}
     dynamodb = DynamoQueueStore() if use_dynamodb else None
     seen = _load_queue_seen()
     today = datetime.now(timezone(timedelta(hours=9))).strftime("%Y-%m-%d")
     added = 0
+    failed = 0
+    skipped = 0
     for d in detected:
         candidate_type = d.get("type") or QUEUE_TYPE_VENUE
         if candidate_type not in QUEUE_TYPES:
             print(f"[queue] 未対応の種別をスキップ: {candidate_type}")
             continue
-        key = d["venue"]
+        key = d.get("identity") or d["venue"]
         if key in seen[candidate_type]:
+            skipped += 1
             continue
         if dynamodb:
             created = dynamodb.add_candidate(d)
@@ -1645,11 +1962,14 @@ def push_torimochi_queue(detected):
                     or dynamodb.is_notion_synced(key, candidate_type)
                 ):
                     seen[candidate_type].add(key)
+                    skipped += 1
                     continue
         props = {
             "会場名": {"title": [{"text": {"content": d["venue"][:200]}}]},
             "種別": {"select": {"name": candidate_type}},
-            "ステータス": {"select": {"name": "要裏取り"}},
+            "ステータス": {
+                "select": {"name": d.get("status") or "要裏取り"}
+            },
             "検知ソース": {"select": {"name": d["source"]}},
             "優先度": {"select": {"name": d["priority"]}},
             "検知元本文": {"rich_text": [{"text": {"content": d["text"][:1900]}}]},
@@ -1657,6 +1977,8 @@ def push_torimochi_queue(detected):
         }
         if d["url"]:
             props["検知元URL"] = {"url": d["url"]}
+        if candidate_type == QUEUE_TYPE_EVENT:
+            props.update(_event_evidence_notion_props(d))
         try:
             if use_notion:
                 _notion_request(
@@ -1669,6 +1991,7 @@ def push_torimochi_queue(detected):
             seen[candidate_type].add(key)
             added += 1
         except Exception as e:
+            failed += 1
             print(f"[queue] 追記エラー（{key}・継続）: {e}")
     if added:
         try:
@@ -1679,6 +2002,7 @@ def push_torimochi_queue(detected):
         f"[queue] 裏取りキューに {added} 件追加"
         f"（保存先 {QUEUE_STORAGE_MODE}・既出スキップ・検出 {len(detected)} 件）"
     )
+    return {"added": added, "failed": failed, "skipped": skipped}
 
 
 def archive_resolved_queue():
@@ -1716,10 +2040,13 @@ def archive_resolved_queue():
                         candidate_type = _prop_select(
                             row.get("properties", {}).get("種別")
                         ) or QUEUE_TYPE_VENUE
-                        if venue:
+                        identity = _prop_plain(
+                            row.get("properties", {}).get("証拠ID")
+                        ) or venue
+                        if identity:
                             try:
                                 dynamodb.update_status(
-                                    venue, "該当なし", candidate_type
+                                    identity, "該当なし", candidate_type
                                 )
                             except Exception as e:
                                 print(
@@ -2135,6 +2462,15 @@ def main():
         print(f"[voices] 完了: 新規 {len(voice_items)} 件、累計 {len(deduped_voices)} 件")
     except Exception as e:
         print(f"[voices] 予期せぬエラー（ニュース収集には影響なし）: {e}")
+
+    # --- イベント断片の履歴パイロット → 裏取りキュー ---
+    try:
+        event_evidence = collect_event_evidence_history()
+        queue_result = push_torimochi_queue(event_evidence)
+        if event_evidence and queue_result.get("failed", 0) == 0:
+            _clear_pending_event_evidence()
+    except Exception as e:
+        print(f"[evidence] 予期せぬエラー（他処理には影響なし）: {e}")
 
     # --- B. 会場検知 → 裏取りキュー（fail-safe: 失敗しても他処理に影響しない）---
     try:
