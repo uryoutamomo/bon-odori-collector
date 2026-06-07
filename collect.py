@@ -11,6 +11,7 @@ from proactive_search import (
     build_queries,
     build_report,
     check_official_sources,
+    is_target_confirmation,
     load_targets,
     select_due_targets,
 )
@@ -1932,6 +1933,8 @@ def main():
             items = parse_rss(fetch_news(query))
             added = 0
             for item in items:
+                if not is_target_confirmation(item, target, current_year):
+                    continue
                 if item["url"] in seen_in_run:
                     continue
                 seen_in_run.add(item["url"])

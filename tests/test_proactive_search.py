@@ -73,6 +73,7 @@ class ProactiveSearchTest(unittest.TestCase):
             "venue": "山王日枝神社",
             "event_name": "山王音頭と民踊大会",
             "aliases": ["日枝神社"],
+            "confirmation_terms": ["山王音頭と民踊大会", "民踊大会"],
             "months": [6],
         }
         items = [{
@@ -88,6 +89,7 @@ class ProactiveSearchTest(unittest.TestCase):
             "venue": "山王日枝神社",
             "event_name": "山王音頭と民踊大会",
             "aliases": ["日枝神社"],
+            "confirmation_terms": ["山王音頭と民踊大会", "民踊大会"],
             "months": [6],
         }
         items = [{
@@ -102,6 +104,7 @@ class ProactiveSearchTest(unittest.TestCase):
             "venue": "山王日枝神社",
             "event_name": "山王音頭と民踊大会",
             "aliases": ["日枝神社"],
+            "confirmation_terms": ["山王音頭と民踊大会", "民踊大会"],
             "months": [6],
         }
         items = [{
@@ -111,6 +114,21 @@ class ProactiveSearchTest(unittest.TestCase):
         }]
         report = build_report([target], items, 2026)
         self.assertEqual(report[0]["status"], "confirmed")
+
+    def test_general_festival_news_does_not_confirm_specific_dance(self):
+        target = {
+            "venue": "山王日枝神社",
+            "event_name": "山王音頭と民踊大会",
+            "aliases": ["日枝神社", "山王祭"],
+            "confirmation_terms": ["山王音頭と民踊大会", "民踊大会"],
+            "months": [6],
+        }
+        items = [{
+            "title": "2026年 日枝神社の山王祭を6月7日から開催",
+            "url": "https://example.com/sanno",
+        }]
+        report = build_report([target], items, 2026)
+        self.assertEqual(report[0]["status"], "unconfirmed")
 
 
 if __name__ == "__main__":

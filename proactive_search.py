@@ -8,10 +8,6 @@ from datetime import datetime, timezone
 
 DEFAULT_CONFIG = "data/evergreen_events.json"
 BON_KEYWORDS = ("盆踊り", "盆おどり", "民踊大会", "音頭と民踊")
-CONFIRM_KEYWORDS = (
-    "開催", "開催決定", "開催予定", "日程", "プログラム",
-    "奉祝行事", "民踊大会", "盆踊り", "盆おどり",
-)
 
 
 def parse_months(value):
@@ -112,10 +108,6 @@ def build_queries(target, year):
 
 def check_official_sources(target, year, timeout=20):
     evidence = []
-    terms = _unique(
-        [target.get("venue"), target.get("event_name")]
-        + list(target.get("aliases") or [])
-    )
     for url in target.get("official_sources") or []:
         try:
             req = urllib.request.Request(
@@ -128,7 +120,12 @@ def check_official_sources(target, year, timeout=20):
                     continue
                 raw = response.read(1_500_000).decode("utf-8", errors="ignore")
             text = _html_to_text(raw)
-            if _is_confirmation(text, terms, year):
+            item = {"text": text, "url": url}
+            if is_target_confirmation(item, target, year):
+                terms = _unique(
+                    list(target.get("confirmation_terms") or [])
+                    or [target.get("event_name"), target.get("venue")]
+                )
                 evidence.append({
                     "source": "official",
                     "title": f"{target['event_name']} 公式情報",
@@ -143,19 +140,9 @@ def check_official_sources(target, year, timeout=20):
 def build_report(targets, collected_items, year):
     report = []
     for target in targets:
-        terms = _unique(
-            [target.get("venue"), target.get("event_name")]
-            + list(target.get("aliases") or [])
-        )
         matches = []
         for item in collected_items:
-            text = " ".join(
-                str(item.get(key) or "")
-                for key in ("title", "text", "date", "pubDate", "url")
-            )
-            if not any(term in text for term in terms):
-                continue
-            if not _is_confirmation(text, terms, year):
+            if not is_target_confirmation(item, target, year):
                 continue
             matches.append({
                 "source": item.get("source") or "collected",
@@ -173,10 +160,22 @@ def build_report(targets, collected_items, year):
     return report
 
 
+def is_target_confirmation(item, target, year):
+    terms = _unique(
+        list(target.get("confirmation_terms") or [])
+        or [target.get("event_name"), target.get("venue")]
+    )
+    text = " ".join(
+        str(item.get(key) or "")
+        for key in ("title", "text", "date", "pubDate", "url")
+    )
+    return _is_confirmation(text, terms, year)
+
+
 def _is_confirmation(text, terms, year):
     compact = re.sub(r"\s+", " ", html.unescape(text or ""))
     has_name = any(term and term in compact for term in terms)
-    has_context = any(keyword in compact for keyword in CONFIRM_KEYWORDS)
+    has_context = any(keyword in compact for keyword in BON_KEYWORDS)
     has_year = str(year) in compact or f"令和{year - 2018}年" in compact
     return has_name and has_context and has_year
 
