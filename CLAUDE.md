@@ -50,6 +50,32 @@
 現行イベントDBから参加計画への旧relationは廃止済み。参加計画からイベントへの
 `イベント` relationを正規の接続方向とする。
 
+Notion正本IDは `notion_config.py` で一元管理する。イベント・参加計画を扱う
+新規コードはData Source API（Notion-Version `2025-09-03`）を使用する。
+
+イベントDBのスキーマ・重複監査:
+
+```bash
+python3 event_audit.py --fail-on-duplicates
+```
+
+- 正規化したイベント名の一致を重複候補として扱う。
+- 同一情報源URLかつイベント名も高類似の場合は重複候補として扱う。
+- 異なるイベントが一覧ページを共有しているだけの場合は警告に留める。
+- GitHub Actionsの収集処理でも、収集開始前に同じ監査を実行する。
+
+Google Calendar同期は `sync_gcal.py` を使用する。同期対象は、参加ステータスが
+`参加予定` または `検討中`、イベント状態が `確認済み`、かつ `開催日` が設定済みの
+レコードのみ。実行前に正本Data Sourceのスキーマ、relation接続先、イベント重複を
+検査し、不整合があれば書き込み前に停止する。
+
+Google Calendar同期用の依存関係:
+
+```bash
+pip install -r requirements-gcal.txt
+python3 sync_gcal.py
+```
+
 用語集の運用:
 - 「推察」確度はことが自動追記。内田さんが「複数一致」「公式確認」に昇格させると自動マッチングに反映。
 - 初回起動時に会場マスタの全会場名を「複数一致」で自動投入（bootstrap_glossary_if_empty）。

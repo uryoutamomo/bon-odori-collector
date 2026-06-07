@@ -43,6 +43,11 @@ jobs:
         NOTION_API_TOKEN: ${{ secrets.NOTION_API_TOKEN }}
       run: python sync_venue_master.py
 
+    - name: Audit canonical event database
+      env:
+        NOTION_API_TOKEN: ${{ secrets.NOTION_API_TOKEN }}
+      run: python event_audit.py --fail-on-duplicates
+
     - name: Run collector
       env:
         NOTION_API_TOKEN: ${{ secrets.NOTION_API_TOKEN }}
