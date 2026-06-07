@@ -3,7 +3,7 @@
   "enabled": true,
   "budget": {
     "_comment": "有料(プリペイド)のため安全装置。超えたら収集スキップ=fail-safe。cost_per_tweet_usd は twitterapi.io の $0.15/1000件 = 1件 $0.00015。",
-    "daily_usd": 0.3,
+    "daily_usd": 1.0,
     "monthly_usd": 5.0,
     "cost_per_tweet_usd": 0.00015
   },
@@ -23,7 +23,7 @@
     "muted_max_score": 1.5
   },
   "event_evidence": {
-    "_comment": "イベントらしき発言断片の初回パイロット。対象人数は絞らず、前年同日から2週間だけ取得して評価待ちで停止する。",
+    "_comment": "イベントらしき発言断片の初回パイロット。合意時点の上位49件と@karinchanchankoの計50件を、前年同日から2週間だけ取得して評価待ちで停止する。",
     "enabled": true,
     "pilot_only": true,
     "cohort_file": "data/x_event_evidence_cohort.json",
