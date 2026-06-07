@@ -1,5 +1,5 @@
 {
-  "status": "in_progress",
+  "status": "awaiting_review",
   "window_start": "2025-06-07T00:00:00+00:00",
   "window_end": "2025-06-21T00:00:00+00:00",
   "selected_handles": [
@@ -56,18 +56,19 @@
   ],
   "selection_id": "2a97547051866aeda2e4ed4d7e739aa05a9dffd0b4e8165a583cc3010ebcd351",
   "batch_index": 2,
-  "batch_cursors": {
-    "1": "DAADDAABCgABGt7NZloaYVkKAAIazrFyHJugIQAIAAIAAAACCAADAAAAAAgABAAAACgKAAUco3TukEAnEAoABhyjdO6QOb5wAAA"
-  },
+  "batch_cursors": {},
   "completed_batches": [
     0,
+    1,
     2
   ],
-  "pages_completed": 60,
-  "tweets_scanned": 1141,
-  "evidence_detected": 148,
+  "pages_completed": 66,
+  "tweets_scanned": 1237,
+  "evidence_detected": 158,
   "pending_evidence": [],
   "started_at": "2026-06-07T13:58:25.192383+00:00",
-  "updated_at": "2026-06-07T14:02:18.826180+00:00",
-  "pending_cleared_at": "2026-06-07T14:04:05.430148+00:00"
+  "updated_at": "2026-06-07T14:07:43.463320+00:00",
+  "pending_cleared_at": "2026-06-07T14:07:52.645768+00:00",
+  "completed_at": "2026-06-07T14:07:43.464107+00:00",
+  "covered_until": "2025-06-21T00:00:00+00:00"
 }
