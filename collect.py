@@ -709,6 +709,9 @@ X_WHITELIST_STATE_FILE = "data/x_whitelist_state.json"
 X_ACCOUNT_SCORES_FILE = "data/x_account_scores.json"
 QUEUE_SEEN_FILE = "data/torimochi_queue_seen.json"
 QUEUE_STORAGE_MODE = os.environ.get("QUEUE_STORAGE_MODE", "notion").lower()
+QUEUE_TYPE_VENUE = "会場"
+QUEUE_TYPE_EVENT = "イベント"
+QUEUE_TYPES = (QUEUE_TYPE_VENUE, QUEUE_TYPE_EVENT)
 
 # ホーム会場（築地起点・最優先）。会場マスタに無くても確実に拾うための固定リスト。
 # X自由文からは「既知会場＋このリスト」との一致だけを拾う（regex自由抽出はニュース限定）。
@@ -1515,6 +1518,98 @@ def detect_venues_for_queue(voices, news_items):
     return list(found.values())
 
 
+def _load_queue_seen():
+    """種別ごとの既出候補を読み込む。旧配列形式は会場として扱う。"""
+    empty = {candidate_type: set() for candidate_type in QUEUE_TYPES}
+    if not os.path.exists(QUEUE_SEEN_FILE):
+        return empty
+    try:
+        with open(QUEUE_SEEN_FILE, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        if isinstance(data, list):
+            empty[QUEUE_TYPE_VENUE] = set(data)
+            return empty
+        if isinstance(data, dict):
+            for candidate_type in QUEUE_TYPES:
+                values = data.get(candidate_type, [])
+                if isinstance(values, list):
+                    empty[candidate_type] = set(values)
+    except Exception as e:
+        print(f"[queue] queue_seen 読み込みエラー（空として継続）: {e}")
+    return empty
+
+
+def _save_queue_seen(seen):
+    os.makedirs("data", exist_ok=True)
+    serializable = {
+        candidate_type: sorted(seen.get(candidate_type, set()))
+        for candidate_type in QUEUE_TYPES
+    }
+    with open(QUEUE_SEEN_FILE, "w", encoding="utf-8") as f:
+        json.dump(serializable, f, ensure_ascii=False, indent=2)
+
+
+def _ensure_torimochi_queue_type_property():
+    """Notionキューに種別selectを用意し、既存行を会場として補完する。"""
+    if not NOTION_TOKEN:
+        return False
+    try:
+        database = _notion_request(
+            "GET", f"/databases/{TORIMOCHI_QUEUE_DB_ID}"
+        )
+        prop = database.get("properties", {}).get("種別", {})
+        option_names = {
+            option.get("name")
+            for option in prop.get("select", {}).get("options", [])
+        }
+        if not set(QUEUE_TYPES).issubset(option_names):
+            _notion_request(
+                "PATCH",
+                f"/databases/{TORIMOCHI_QUEUE_DB_ID}",
+                {
+                    "properties": {
+                        "種別": {
+                            "select": {
+                                "options": [
+                                    {"name": QUEUE_TYPE_VENUE, "color": "blue"},
+                                    {"name": QUEUE_TYPE_EVENT, "color": "purple"},
+                                ]
+                            }
+                        }
+                    }
+                },
+            )
+
+        cursor = None
+        while True:
+            payload = {
+                "page_size": 100,
+                "filter": {"property": "種別", "select": {"is_empty": True}},
+            }
+            if cursor:
+                payload["start_cursor"] = cursor
+            data = _notion_query_database(TORIMOCHI_QUEUE_DB_ID, payload)
+            for row in data.get("results", []):
+                _notion_request(
+                    "PATCH",
+                    f"/pages/{row['id']}",
+                    {
+                        "properties": {
+                            "種別": {
+                                "select": {"name": QUEUE_TYPE_VENUE}
+                            }
+                        }
+                    },
+                )
+            if not data.get("has_more"):
+                break
+            cursor = data.get("next_cursor")
+        return True
+    except Exception as e:
+        print(f"[queue] 種別プロパティ準備エラー（追記をスキップ）: {e}")
+        return False
+
+
 def push_torimochi_queue(detected):
     """検出会場を裏取りキューへ追記。既出はスキップ。fail-safe。"""
     use_notion = QUEUE_STORAGE_MODE in ("notion", "dual")
@@ -1528,28 +1623,32 @@ def push_torimochi_queue(detected):
     if not detected:
         print("[queue] 検出会場なし")
         return
+    if use_notion and not _ensure_torimochi_queue_type_property():
+        return
     dynamodb = DynamoQueueStore() if use_dynamodb else None
-    seen = set()
-    if os.path.exists(QUEUE_SEEN_FILE):
-        try:
-            with open(QUEUE_SEEN_FILE, "r", encoding="utf-8") as f:
-                seen = set(json.load(f))
-        except Exception:
-            pass
+    seen = _load_queue_seen()
     today = datetime.now(timezone(timedelta(hours=9))).strftime("%Y-%m-%d")
     added = 0
     for d in detected:
+        candidate_type = d.get("type") or QUEUE_TYPE_VENUE
+        if candidate_type not in QUEUE_TYPES:
+            print(f"[queue] 未対応の種別をスキップ: {candidate_type}")
+            continue
         key = d["venue"]
-        if key in seen:
+        if key in seen[candidate_type]:
             continue
         if dynamodb:
             created = dynamodb.add_candidate(d)
             if not created:
-                if not use_notion or dynamodb.is_notion_synced(key):
-                    seen.add(key)
+                if (
+                    not use_notion
+                    or dynamodb.is_notion_synced(key, candidate_type)
+                ):
+                    seen[candidate_type].add(key)
                     continue
         props = {
             "会場名": {"title": [{"text": {"content": d["venue"][:200]}}]},
+            "種別": {"select": {"name": candidate_type}},
             "ステータス": {"select": {"name": "要裏取り"}},
             "検知ソース": {"select": {"name": d["source"]}},
             "優先度": {"select": {"name": d["priority"]}},
@@ -1566,16 +1665,14 @@ def push_torimochi_queue(detected):
                     {"parent": {"database_id": TORIMOCHI_QUEUE_DB_ID}, "properties": props},
                 )
                 if dynamodb:
-                    dynamodb.mark_notion_synced(key)
-            seen.add(key)
+                    dynamodb.mark_notion_synced(key, candidate_type)
+            seen[candidate_type].add(key)
             added += 1
         except Exception as e:
             print(f"[queue] 追記エラー（{key}・継続）: {e}")
     if added:
         try:
-            os.makedirs("data", exist_ok=True)
-            with open(QUEUE_SEEN_FILE, "w", encoding="utf-8") as f:
-                json.dump(sorted(seen), f, ensure_ascii=False, indent=2)
+            _save_queue_seen(seen)
         except Exception as e:
             print(f"[queue] queue_seen 保存エラー: {e}")
     print(
@@ -1616,9 +1713,14 @@ def archive_resolved_queue():
                         venue = "".join(
                             item.get("plain_text", "") for item in title_items
                         ).strip()
+                        candidate_type = _prop_select(
+                            row.get("properties", {}).get("種別")
+                        ) or QUEUE_TYPE_VENUE
                         if venue:
                             try:
-                                dynamodb.update_status(venue, "該当なし")
+                                dynamodb.update_status(
+                                    venue, "該当なし", candidate_type
+                                )
                             except Exception as e:
                                 print(
                                     f"[queue] DynamoDB状態同期スキップ"
@@ -2037,6 +2139,8 @@ def main():
     # --- B. 会場検知 → 裏取りキュー（fail-safe: 失敗しても他処理に影響しない）---
     try:
         detected = detect_venues_for_queue(deduped_voices, latest_items)
+        for candidate in detected:
+            candidate["type"] = QUEUE_TYPE_VENUE
         push_torimochi_queue(detected)
         # 掃除ループ: こわが『該当なし』にした行を自動アーカイブ
         archive_resolved_queue()

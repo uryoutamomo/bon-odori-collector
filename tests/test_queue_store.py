@@ -1,6 +1,10 @@
 import unittest
 
-from queue_store import DynamoQueueStore, normalize_venue_key
+from queue_store import (
+    DynamoQueueStore,
+    normalize_candidate_key,
+    normalize_venue_key,
+)
 
 
 class ConditionalFailure(Exception):
@@ -50,10 +54,24 @@ class DynamoQueueStoreTest(unittest.TestCase):
             normalize_venue_key(" 築地本願寺 "),
         )
 
+    def test_event_key_is_separate_from_venue_key(self):
+        self.assertNotEqual(
+            normalize_candidate_key("中央公園", "イベント"),
+            normalize_candidate_key("中央公園", "会場"),
+        )
+
     def test_add_candidate_is_idempotent(self):
         self.assertTrue(self.store.add_candidate(self.candidate))
         self.assertFalse(self.store.add_candidate(self.candidate))
         self.assertEqual(len(self.table.items), 1)
+        item = self.table.items[normalize_venue_key("築地本願寺")]
+        self.assertEqual(item["candidate_type"], "会場")
+
+    def test_same_name_can_be_added_for_each_type(self):
+        self.assertTrue(self.store.add_candidate(self.candidate))
+        event = dict(self.candidate, type="イベント")
+        self.assertTrue(self.store.add_candidate(event))
+        self.assertEqual(len(self.table.items), 2)
 
     def test_update_status(self):
         self.store.add_candidate(self.candidate)

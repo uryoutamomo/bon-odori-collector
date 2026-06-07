@@ -8,9 +8,16 @@ AWS_REGION = os.environ.get("AWS_REGION", "ap-northeast-1")
 QUEUE_TABLE_NAME = os.environ.get("DYNAMODB_QUEUE_TABLE", "")
 
 
-def normalize_venue_key(venue):
-    normalized = re.sub(r"\s+", "", (venue or "").strip()).casefold()
+def normalize_candidate_key(name, candidate_type="会場"):
+    normalized = re.sub(r"\s+", "", (name or "").strip()).casefold()
+    if candidate_type != "会場":
+        normalized = f"{candidate_type}\0{normalized}"
     return hashlib.sha256(normalized.encode("utf-8")).hexdigest()
+
+
+def normalize_venue_key(venue):
+    """既存DynamoDBレコードと互換性のある会場キーを返す。"""
+    return normalize_candidate_key(venue, "会場")
 
 
 class DynamoQueueStore:
@@ -30,9 +37,13 @@ class DynamoQueueStore:
 
     def add_candidate(self, candidate, detected_at=None):
         detected_at = detected_at or datetime.now(timezone.utc).isoformat()
+        candidate_type = candidate.get("type") or "会場"
         item = {
-            "venue_key": normalize_venue_key(candidate["venue"]),
+            "venue_key": normalize_candidate_key(
+                candidate["venue"], candidate_type
+            ),
             "venue": candidate["venue"],
+            "candidate_type": candidate_type,
             "status": "要裏取り",
             "source": candidate.get("source") or "unknown",
             "priority": candidate.get("priority") or "通常",
@@ -53,18 +64,26 @@ class DynamoQueueStore:
                 return False
             raise
 
-    def is_notion_synced(self, venue):
+    def is_notion_synced(self, venue, candidate_type="会場"):
         response = self.table.get_item(
-            Key={"venue_key": normalize_venue_key(venue)},
+            Key={
+                "venue_key": normalize_candidate_key(
+                    venue, candidate_type
+                )
+            },
             ProjectionExpression="notion_synced",
             ConsistentRead=True,
         )
         return bool(response.get("Item", {}).get("notion_synced"))
 
-    def mark_notion_synced(self, venue):
+    def mark_notion_synced(self, venue, candidate_type="会場"):
         now = datetime.now(timezone.utc).isoformat()
         self.table.update_item(
-            Key={"venue_key": normalize_venue_key(venue)},
+            Key={
+                "venue_key": normalize_candidate_key(
+                    venue, candidate_type
+                )
+            },
             UpdateExpression=(
                 "SET notion_synced = :synced, updated_at = :updated_at"
             ),
@@ -75,10 +94,14 @@ class DynamoQueueStore:
             ConditionExpression="attribute_exists(venue_key)",
         )
 
-    def update_status(self, venue, status):
+    def update_status(self, venue, status, candidate_type="会場"):
         now = datetime.now(timezone.utc).isoformat()
         self.table.update_item(
-            Key={"venue_key": normalize_venue_key(venue)},
+            Key={
+                "venue_key": normalize_candidate_key(
+                    venue, candidate_type
+                )
+            },
             UpdateExpression="SET #status = :status, updated_at = :updated_at",
             ExpressionAttributeNames={"#status": "status"},
             ExpressionAttributeValues={
