@@ -1,0 +1,17 @@
+{
+  "_comment": "定番イベントの能動検索設定。こと・内田さんが会場を追加できる。",
+  "lead_months": 1,
+  "max_targets_per_run": 12,
+  "max_x_queries_per_run": 6,
+  "events": [
+    {
+      "venue": "山王日枝神社",
+      "event_name": "山王音頭と民踊大会",
+      "months": [6],
+      "aliases": ["日枝神社", "山王祭"],
+      "official_sources": [
+        "https://www.hiejinja.net/news/%E4%BB%A4%E5%92%8C8%E5%B9%B4%E5%B1%B1%E7%8E%8B%E7%A5%AD%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/"
+      ]
+    }
+  ]
+}

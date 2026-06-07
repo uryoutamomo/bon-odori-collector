@@ -56,6 +56,26 @@ def _prop(props, name):
         return _plain(p["rich_text"]) or None
     if t == "select":
         return p["select"]["name"] if p.get("select") else None
+    if t == "multi_select":
+        values = [item.get("name") for item in p.get("multi_select", [])]
+        return [value for value in values if value]
+    if t == "number":
+        return p.get("number")
+    if t == "formula":
+        formula = p.get("formula") or {}
+        return formula.get(formula.get("type"))
+    if t == "rollup":
+        rollup = p.get("rollup") or {}
+        if rollup.get("type") == "array":
+            values = []
+            for item in rollup.get("array", []):
+                item_type = item.get("type")
+                if item_type in ("number", "string"):
+                    values.append(item.get(item_type))
+                elif item_type == "select" and item.get("select"):
+                    values.append(item["select"].get("name"))
+            return [value for value in values if value is not None]
+        return rollup.get(rollup.get("type"))
     if t == "checkbox":
         return bool(p.get("checkbox"))
     if t == "url":

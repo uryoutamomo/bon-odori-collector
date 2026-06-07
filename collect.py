@@ -7,6 +7,13 @@ import urllib.error
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 
+from proactive_search import (
+    build_queries,
+    build_report,
+    check_official_sources,
+    load_targets,
+    select_due_targets,
+)
 from queue_store import DynamoQueueStore
 
 try:
@@ -174,17 +181,19 @@ def _rich_text(content, link=None):
 
 
 def push_to_notion(latest_items, updated_at, x_voices=None, x_cost=None,
-                   sokuho=None, event_signals=None):
+                   sokuho=None, event_signals=None, proactive_report=None):
     """Notion ページの内容を最新データで全面更新する。
 
     x_voices: X由来の「人の言葉」（一次レポ/関心、直近分）。
     x_cost: {"today", "month", "daily_cap", "monthly_cap"}。コスト見える化用。
     sokuho: detect_sokuho() の結果。未知イベント速報候補リスト。
     event_signals: detect_x_confidence_signals() の結果。既存イベント確度変化リスト。
+    proactive_report: 定番イベントの確認済み/未確認レポート。
     """
     x_voices = x_voices or []
     sokuho = sokuho or []
     event_signals = event_signals or []
+    proactive_report = proactive_report or []
     if not NOTION_TOKEN or not NOTION_PAGE_ID:
         print("Notion未設定 (NOTION_API_TOKEN / NOTION_PAGE_ID) のためスキップ")
         return
@@ -246,6 +255,30 @@ def push_to_notion(latest_items, updated_at, x_voices=None, x_cost=None,
             new_blocks.append(
                 {"object": "block", "type": "paragraph",
                  "paragraph": {"rich_text": _rich_text("（本日のイベント更新情報はありません）")}})
+
+        # 🔎 定番イベント確認（能動検索・公式情報源・抜け漏れ検出）
+        new_blocks.append(
+            {"object": "block", "type": "heading_2",
+             "heading_2": {"rich_text": _rich_text("🔎 定番イベント確認")}})
+        if proactive_report:
+            for item in proactive_report:
+                confirmed = item.get("status") == "confirmed"
+                icon = "✅" if confirmed else "⚠️"
+                months = "/".join(str(m) for m in item.get("months", []))
+                line = (
+                    f"{icon}【{item['event_name']}】"
+                    f"例年{months}月 "
+                    f"{'今年の情報を確認' if confirmed else '今年の情報が未確認'}"
+                )
+                evidence = item.get("evidence") or []
+                link = evidence[0].get("url") if evidence else None
+                new_blocks.append(
+                    {"object": "block", "type": "bulleted_list_item",
+                     "bulleted_list_item": {"rich_text": _rich_text(line, link)}})
+        else:
+            new_blocks.append(
+                {"object": "block", "type": "paragraph",
+                 "paragraph": {"rich_text": _rich_text("（現在、確認対象の定番イベントはありません）")}})
 
         # X由来の「人の言葉」セクション（配信に使う一次レポ/関心）
         new_blocks.append(
@@ -607,6 +640,58 @@ def collect_x_voices(seen_urls: set) -> tuple[list, list]:
             print(f"[x] 予算記録の保存エラー: {e}")
 
     print(f"[x] 完了: voices採用 {len(new_items)} 件、今回コスト 約${run_cost:.5f}")
+    return new_items, new_seen
+
+
+def collect_proactive_x(targets, seen_urls, config):
+    """開催月が近い定番イベントを会場名で能動検索する。予算は通常X収集と共有。"""
+    if not TWITTERAPI_IO_KEY or not targets:
+        return [], list(seen_urls)
+    x_cfg = _load_x_config() or {}
+    budget = x_cfg.get("budget", {})
+    cost_per_tweet = budget.get("cost_per_tweet_usd", 0.00015)
+    daily_cap = budget.get("daily_usd", 0.3)
+    monthly_cap = budget.get("monthly_usd", 5.0)
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    month = today[:7]
+    state = _x_budget_state()
+    daily_spent = state.get(today, 0.0)
+    monthly_spent = sum(v for k, v in state.items() if k.startswith(month))
+    limit = int(config.get("max_x_queries_per_run", 6))
+    year = datetime.now(timezone(timedelta(hours=9))).year
+    new_items, new_seen, run_cost = [], list(seen_urls), 0.0
+
+    for target in targets[:limit]:
+        if daily_spent + run_cost >= daily_cap or monthly_spent + run_cost >= monthly_cap:
+            print("[proactive/x] 予算上限到達。以降の能動検索を打ち切り")
+            break
+        query = build_queries(target, year)["x"]
+        try:
+            data = _x_search(query)
+        except Exception as exc:
+            print(f"[proactive/x] {target['venue']} 検索失敗: {exc}")
+            continue
+        tweets = data.get("tweets") or data.get("data") or []
+        run_cost += max(len(tweets), 1) * cost_per_tweet
+        count = 0
+        for tweet in tweets:
+            voice = _x_map_to_voice(tweet)
+            if not voice["url"] or voice["url"] in seen_urls or voice["url"] in new_seen:
+                continue
+            voice["source"] = "x_proactive"
+            voice["tags"] = ["🔎能動検索", target["venue"]]
+            new_items.append(voice)
+            new_seen.append(voice["url"])
+            count += 1
+        print(f"[proactive/x] {target['venue']}: {count} 件追加")
+
+    if run_cost:
+        state[today] = daily_spent + run_cost
+        try:
+            with open(X_BUDGET_FILE, "w", encoding="utf-8") as f:
+                json.dump(state, f, ensure_ascii=False, indent=2)
+        except Exception as exc:
+            print(f"[proactive/x] 予算記録の保存エラー: {exc}")
     return new_items, new_seen
 
 
@@ -1783,6 +1868,26 @@ def main():
     latest_items = []
     seen_in_run = set()       # この実行内での重複除去用
     new_urls = list(seen_urls)
+    venue_master_raw = []
+    proactive_targets = []
+    proactive_config = {}
+    proactive_report = []
+
+    try:
+        with open(VENUE_MASTER_FILE, "r", encoding="utf-8") as f:
+            vm = json.load(f)
+        venue_master_raw = vm if isinstance(vm, list) else vm.get("venues", [])
+        all_targets, proactive_config = load_targets(venue_master_raw)
+        lead_months = int(proactive_config.get("lead_months", 1))
+        proactive_targets = select_due_targets(
+            all_targets, lead_months=lead_months
+        )[:int(proactive_config.get("max_targets_per_run", 12))]
+        print(
+            f"[proactive] 定番イベント {len(all_targets)} 件中、"
+            f"今月から{lead_months}か月先まで {len(proactive_targets)} 件を確認"
+        )
+    except Exception as exc:
+        print(f"[proactive] 設定読み込み失敗（スキップ）: {exc}")
 
     for q in QUERIES:
         print(f"Searching for: {q}")
@@ -1819,6 +1924,32 @@ def main():
     except Exception as e:
         print(f"[blog] 予期せぬエラー（ニュース収集には影響なし）: {e}")
 
+    # --- 定番イベントの能動ニュース検索（fail-safe）---
+    current_year = datetime.now(timezone(timedelta(hours=9))).year
+    for target in proactive_targets:
+        try:
+            query = build_queries(target, current_year)["news"]
+            items = parse_rss(fetch_news(query))
+            added = 0
+            for item in items:
+                if item["url"] in seen_in_run:
+                    continue
+                seen_in_run.add(item["url"])
+                latest_items.append({
+                    "source": "news_proactive",
+                    "target_venue": target["venue"],
+                    "title": item["title"],
+                    "url": item["url"],
+                    "date": item["pubDate"],
+                    "is_home": False,
+                })
+                if item["url"] not in seen_urls:
+                    new_urls.append(item["url"])
+                added += 1
+            print(f"[proactive/news] {target['venue']}: {added} 件追加")
+        except Exception as exc:
+            print(f"[proactive/news] {target['venue']} 検索失敗: {exc}")
+
     os.makedirs('data', exist_ok=True)
 
     with open('data/latest.json', 'w', encoding='utf-8') as f:
@@ -1849,6 +1980,17 @@ def main():
             voice_items = voice_items + x_items
         except Exception as e:
             print(f"[x] 予期せぬエラー（他収集には影響なし）: {e}")
+
+        # 定番イベントを会場名＋年で能動検索（fail-safe）
+        try:
+            proactive_x, updated_voices_seen = collect_proactive_x(
+                proactive_targets,
+                set(updated_voices_seen),
+                proactive_config,
+            )
+            voice_items = proactive_x + voice_items
+        except Exception as e:
+            print(f"[proactive/x] 予期せぬエラー（他収集には影響なし）: {e}")
 
         # A. ホワイトリスト（X メンバーリスト）収集。⭐盆踊ラーを最優先ソースとして追加（fail-safe）
         try:
@@ -1903,13 +2045,6 @@ def main():
     event_signal_list = []
     try:
         # 会場マスタの初期投入（用語集が空の場合のみ実行）
-        venue_master_raw = []
-        try:
-            with open(VENUE_MASTER_FILE, "r", encoding="utf-8") as f:
-                vm = json.load(f)
-            venue_master_raw = vm if isinstance(vm, list) else vm.get("venues", [])
-        except Exception:
-            pass
         bootstrap_glossary_if_empty(venue_master_raw)
 
         glossary_map, confident_set = load_glossary()
@@ -1924,6 +2059,37 @@ def main():
                 print(f"[sokuho] 速報候補 {len(sokuho_list)} 件")
     except Exception as e:
         print(f"[sokuho/signals] 予期せぬエラー（他処理には影響なし）: {e}")
+
+    # --- 定番イベントの公式情報源確認・抜け漏れレポート（fail-safe）---
+    try:
+        official_evidence = []
+        for target in proactive_targets:
+            official_evidence.extend(
+                check_official_sources(target, current_year)
+            )
+        proactive_report = build_report(
+            proactive_targets,
+            latest_items + deduped_voices + official_evidence,
+            current_year,
+        )
+        with open(
+            "data/proactive_event_report.json", "w", encoding="utf-8"
+        ) as f:
+            json.dump({
+                "generated_at": datetime.now(timezone.utc).isoformat(),
+                "year": current_year,
+                "items": proactive_report,
+            }, f, ensure_ascii=False, indent=2)
+        unconfirmed = sum(
+            1 for item in proactive_report
+            if item["status"] == "unconfirmed"
+        )
+        print(
+            f"[proactive/report] 対象 {len(proactive_report)} 件、"
+            f"未確認 {unconfirmed} 件"
+        )
+    except Exception as e:
+        print(f"[proactive/report] 作成失敗（スキップ）: {e}")
 
     # Notion へ書き戻し（直近7日分のみ）
     jst = timezone(timedelta(hours=9))
@@ -1988,7 +2154,8 @@ def main():
         print(f"[cost] コスト集計エラー（表示スキップ）: {e}")
 
     push_to_notion(recent_items if recent_items else latest_items[:30], updated_at,
-                   x_voices_recent, x_cost, sokuho_list, event_signal_list)
+                   x_voices_recent, x_cost, sokuho_list, event_signal_list,
+                   proactive_report)
 
 if __name__ == '__main__':
     main()

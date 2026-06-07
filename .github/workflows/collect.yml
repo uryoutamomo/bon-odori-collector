@@ -38,6 +38,11 @@ jobs:
         role-to-assume: ${{ vars.AWS_ROLE_ARN }}
         aws-region: ap-northeast-1
 
+    - name: Sync venue master (Notion DB -> JSON)
+      env:
+        NOTION_API_TOKEN: ${{ secrets.NOTION_API_TOKEN }}
+      run: python sync_venue_master.py
+
     - name: Run collector
       env:
         NOTION_API_TOKEN: ${{ secrets.NOTION_API_TOKEN }}
@@ -51,11 +56,6 @@ jobs:
         QUEUE_STORAGE_MODE: ${{ vars.QUEUE_STORAGE_MODE || 'notion' }}
       run: python collect.py
 
-    - name: Sync venue master (Notion DB -> JSON)
-      env:
-        NOTION_API_TOKEN: ${{ secrets.NOTION_API_TOKEN }}
-      run: python sync_venue_master.py
-
     - name: Commit and Push changes
       run: |
         git config --local user.email "action@github.com"
@@ -64,6 +64,7 @@ jobs:
         [ -f data/venue_master.json ] && git add data/venue_master.json
         [ -f data/x_budget.json ] && git add data/x_budget.json
         [ -f data/x_account_scores.json ] && git add data/x_account_scores.json
+        [ -f data/proactive_event_report.json ] && git add data/proactive_event_report.json
         [ -f data/torimochi_queue_seen.json ] && git add data/torimochi_queue_seen.json
         [ -f data/x_whitelist_state.json ] && git add data/x_whitelist_state.json
         git diff --cached --quiet || (git commit -m "Update bon-odori data (news + voices + venues)" && git push)
