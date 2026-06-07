@@ -17,6 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write # 実行結果をリポジトリに書き込むために必要
+      id-token: write # AWS OIDC の短期認証トークン発行に必要
 
     steps:
     - name: Checkout repository
@@ -30,6 +31,13 @@ jobs:
     - name: Install dependencies
       run: pip install -r requirements.txt
 
+    - name: Configure AWS credentials
+      if: ${{ vars.AWS_ROLE_ARN != '' }}
+      uses: aws-actions/configure-aws-credentials@v5
+      with:
+        role-to-assume: ${{ vars.AWS_ROLE_ARN }}
+        aws-region: ap-northeast-1
+
     - name: Run collector
       env:
         NOTION_API_TOKEN: ${{ secrets.NOTION_API_TOKEN }}
@@ -38,6 +46,9 @@ jobs:
         TWITTERAPI_IO_KEY: ${{ secrets.TWITTERAPI_IO_KEY }}
         # 📖 盆踊ラー用語集 DB（速報・確度シグナル検知に使用）。未設定でも fail-safe スキップ
         GLOSSARY_DB_ID: ${{ secrets.GLOSSARY_DB_ID }}
+        AWS_REGION: ap-northeast-1
+        DYNAMODB_QUEUE_TABLE: ${{ vars.DYNAMODB_QUEUE_TABLE }}
+        QUEUE_STORAGE_MODE: ${{ vars.QUEUE_STORAGE_MODE || 'notion' }}
       run: python collect.py
 
     - name: Sync venue master (Notion DB -> JSON)

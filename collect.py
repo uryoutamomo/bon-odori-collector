@@ -7,6 +7,8 @@ import urllib.error
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 
+from queue_store import DynamoQueueStore
+
 try:
     import feedparser
     _HAS_FEEDPARSER = True
@@ -620,6 +622,7 @@ VENUE_MASTER_FILE = "data/venue_master.json"
 X_WHITELIST_STATE_FILE = "data/x_whitelist_state.json"
 X_ACCOUNT_SCORES_FILE = "data/x_account_scores.json"
 QUEUE_SEEN_FILE = "data/torimochi_queue_seen.json"
+QUEUE_STORAGE_MODE = os.environ.get("QUEUE_STORAGE_MODE", "notion").lower()
 
 # ホーム会場（築地起点・最優先）。会場マスタに無くても確実に拾うための固定リスト。
 # X自由文からは「既知会場＋このリスト」との一致だけを拾う（regex自由抽出はニュース限定）。
@@ -1427,13 +1430,19 @@ def detect_venues_for_queue(voices, news_items):
 
 
 def push_torimochi_queue(detected):
-    """検出会場を「🔎 裏取りキュー」DB へ追記。既出(queue_seen)はスキップ。fail-safe。"""
-    if not NOTION_TOKEN:
+    """検出会場を裏取りキューへ追記。既出はスキップ。fail-safe。"""
+    use_notion = QUEUE_STORAGE_MODE in ("notion", "dual")
+    use_dynamodb = QUEUE_STORAGE_MODE in ("dynamodb", "dual")
+    if use_notion and not NOTION_TOKEN:
         print("[queue] NOTION_API_TOKEN 未設定のため裏取りキュー追記スキップ")
+        return
+    if use_dynamodb and not os.environ.get("DYNAMODB_QUEUE_TABLE"):
+        print("[queue] DYNAMODB_QUEUE_TABLE 未設定のため裏取りキュー追記スキップ")
         return
     if not detected:
         print("[queue] 検出会場なし")
         return
+    dynamodb = DynamoQueueStore() if use_dynamodb else None
     seen = set()
     if os.path.exists(QUEUE_SEEN_FILE):
         try:
@@ -1447,6 +1456,12 @@ def push_torimochi_queue(detected):
         key = d["venue"]
         if key in seen:
             continue
+        if dynamodb:
+            created = dynamodb.add_candidate(d)
+            if not created:
+                if not use_notion or dynamodb.is_notion_synced(key):
+                    seen.add(key)
+                    continue
         props = {
             "会場名": {"title": [{"text": {"content": d["venue"][:200]}}]},
             "ステータス": {"select": {"name": "要裏取り"}},
@@ -1458,8 +1473,14 @@ def push_torimochi_queue(detected):
         if d["url"]:
             props["検知元URL"] = {"url": d["url"]}
         try:
-            _notion_request("POST", "/pages",
-                            {"parent": {"database_id": TORIMOCHI_QUEUE_DB_ID}, "properties": props})
+            if use_notion:
+                _notion_request(
+                    "POST",
+                    "/pages",
+                    {"parent": {"database_id": TORIMOCHI_QUEUE_DB_ID}, "properties": props},
+                )
+                if dynamodb:
+                    dynamodb.mark_notion_synced(key)
             seen.add(key)
             added += 1
         except Exception as e:
@@ -1471,7 +1492,10 @@ def push_torimochi_queue(detected):
                 json.dump(sorted(seen), f, ensure_ascii=False, indent=2)
         except Exception as e:
             print(f"[queue] queue_seen 保存エラー: {e}")
-    print(f"[queue] 裏取りキューに {added} 件追加（既出スキップ・検出 {len(detected)} 件）")
+    print(
+        f"[queue] 裏取りキューに {added} 件追加"
+        f"（保存先 {QUEUE_STORAGE_MODE}・既出スキップ・検出 {len(detected)} 件）"
+    )
 
 
 def archive_resolved_queue():
@@ -1481,6 +1505,12 @@ def archive_resolved_queue():
     if not NOTION_TOKEN:
         return
     archived = 0
+    dynamodb = None
+    if (
+        QUEUE_STORAGE_MODE == "dual"
+        and os.environ.get("DYNAMODB_QUEUE_TABLE")
+    ):
+        dynamodb = DynamoQueueStore()
     try:
         cursor = None
         while True:
@@ -1491,6 +1521,23 @@ def archive_resolved_queue():
             data = _notion_query_database(TORIMOCHI_QUEUE_DB_ID, payload)
             for row in data.get("results", []):
                 try:
+                    if dynamodb:
+                        title_items = (
+                            row.get("properties", {})
+                            .get("会場名", {})
+                            .get("title", [])
+                        )
+                        venue = "".join(
+                            item.get("plain_text", "") for item in title_items
+                        ).strip()
+                        if venue:
+                            try:
+                                dynamodb.update_status(venue, "該当なし")
+                            except Exception as e:
+                                print(
+                                    f"[queue] DynamoDB状態同期スキップ"
+                                    f"（{venue}）: {e}"
+                                )
                     _notion_request("PATCH", f"/pages/{row['id']}", {"archived": True})
                     archived += 1
                 except Exception as e:

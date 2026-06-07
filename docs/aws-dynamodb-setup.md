@@ -1,0 +1,75 @@
+# AWS DynamoDB 導入手順
+
+対象: 盆踊りプロジェクトの「裏取りキュー」
+
+## 方針
+
+- リージョン: 東京 `ap-northeast-1`
+- 課金方式: オンデマンド
+- 保存時暗号化: DynamoDB標準の暗号化を有効化
+- GitHub Actions認証: OIDCによる短期認証
+- 長期アクセスキーは作成・保管しない
+- 初期運用: `QUEUE_STORAGE_MODE=dual` でNotionと並行稼働
+
+## フェーズ1: 内田さんが行う初期設定
+
+### 1. AWSアカウントを作成
+
+1. <https://portal.aws.amazon.com/billing/signup> を開く。
+2. 受信可能な専用メールアドレスとアカウント名を入力する。
+3. 強いパスワード、連絡先、支払い方法、本人確認を登録する。
+4. サポートプランは、特別な要件がなければ無料のBasic Supportを選ぶ。
+5. アカウント有効化メールが届くまで待つ。
+
+ルートユーザーは全権限を持つため、日常作業には使わない。
+
+### 2. ルートユーザーにMFAを設定
+
+1. ルートユーザーでAWS Management Consoleへサインインする。
+2. 右上のアカウント名から `Security credentials` を開く。
+3. `Multi-factor authentication (MFA)` でMFAを割り当てる。
+4. 利用可能ならパスキーまたはセキュリティキーを優先する。
+5. 復旧用メールアドレスと電話番号が最新か確認する。
+
+### 3. 予算通知を設定
+
+1. `Billing and Cost Management` を開く。
+2. `Budgets`、`Create budget` を選ぶ。
+3. `Use a template` から `Zero spend budget` を選ぶ。
+4. 通知を受け取るメールアドレスを登録する。
+
+予算通知は利用停止機能ではなく、超過を知らせる仕組み。
+無料プランでは、有料プランへ変更しない限り利用料金は請求されない。
+
+## フェーズ2: 管理者アクセス
+
+日常管理にはルートユーザーを使わず、AWS IAM Identity Centerの管理者を作成する。
+この設定はアカウント開設とMFA完了後に実施する。
+
+## フェーズ3: DynamoDBとGitHub OIDC
+
+CloudFormationで次をまとめて作成する。
+
+- DynamoDBテーブル `bon-odori-torimochi-queue`
+- GitHub OIDCプロバイダー
+- 対象リポジトリの`main`ブランチだけが引き受けられるIAMロール
+- 対象テーブルだけを操作できる最小権限ポリシー
+
+テンプレート: `infra/dynamodb-queue.yml`
+
+作成後、CloudFormationの出力値をGitHub Actions Variablesへ登録する。
+
+| GitHub Variable | 値 |
+|---|---|
+| `AWS_ROLE_ARN` | `GitHubActionsRoleArn` の出力 |
+| `DYNAMODB_QUEUE_TABLE` | `QueueTableName` の出力 |
+| `QUEUE_STORAGE_MODE` | 初回は `dual` |
+
+## フェーズ4: 切り替え
+
+1. GitHub Actionsを手動実行する。
+2. NotionとDynamoDBの追加内容を照合する。
+3. 数回の定期実行で重複・欠落がないことを確認する。
+4. 既存データ移行後に `QUEUE_STORAGE_MODE=dynamodb` へ変更する。
+
+Notionを操作画面として残す期間は、ステータス同期を継続する。

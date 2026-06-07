@@ -1,6 +1,9 @@
 # ローカルのみ：APIキー等。コミットしない
 .env.local
 .env
+credentials.json
+token.json
+.DS_Store
 
 # ローカルのテスト出力（X収集の実験ダンプ）
 data/x_voices_experiment.json

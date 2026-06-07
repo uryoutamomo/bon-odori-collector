@@ -1,0 +1,83 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: DynamoDB queue and GitHub Actions OIDC role for bon-odori-collector
+
+Parameters:
+  GitHubOwner:
+    Type: String
+    Default: uryoutamomo
+  GitHubRepository:
+    Type: String
+    Default: bon-odori-collector
+  GitHubBranch:
+    Type: String
+    Default: main
+  TableName:
+    Type: String
+    Default: bon-odori-torimochi-queue
+
+Resources:
+  GitHubOidcProvider:
+    Type: AWS::IAM::OIDCProvider
+    Properties:
+      Url: https://token.actions.githubusercontent.com
+      ClientIdList:
+        - sts.amazonaws.com
+      Tags:
+        - Key: Project
+          Value: bon-odori-collector
+
+  QueueTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: !Ref TableName
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: venue_key
+          AttributeType: S
+      KeySchema:
+        - AttributeName: venue_key
+          KeyType: HASH
+      SSESpecification:
+        SSEEnabled: true
+      PointInTimeRecoverySpecification:
+        PointInTimeRecoveryEnabled: false
+      Tags:
+        - Key: Project
+          Value: bon-odori-collector
+
+  GitHubActionsQueueRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: bon-odori-collector-queue
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal:
+              Federated: !Ref GitHubOidcProvider
+            Action: sts:AssumeRoleWithWebIdentity
+            Condition:
+              StringEquals:
+                token.actions.githubusercontent.com:aud: sts.amazonaws.com
+                token.actions.githubusercontent.com:sub: !Sub repo:${GitHubOwner}/${GitHubRepository}:ref:refs/heads/${GitHubBranch}
+      Policies:
+        - PolicyName: DynamoDbQueueAccess
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action:
+                  - dynamodb:DescribeTable
+                  - dynamodb:GetItem
+                  - dynamodb:PutItem
+                  - dynamodb:UpdateItem
+                Resource: !GetAtt QueueTable.Arn
+      Tags:
+        - Key: Project
+          Value: bon-odori-collector
+
+Outputs:
+  QueueTableName:
+    Value: !Ref QueueTable
+  GitHubActionsRoleArn:
+    Value: !GetAtt GitHubActionsQueueRole.Arn

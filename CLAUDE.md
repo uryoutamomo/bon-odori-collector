@@ -54,6 +54,18 @@
 | `GLOSSARY_DB_ID` | 📖 盆踊ラー用語集 DB ID（`989e9effc7fc40db8043a3b8e03090ee`）。未設定でも fail-safe スキップ |
 
 Notion インテグレーション `bon-odori-collector` が対象ページに共有されている必要がある。
+
+### DynamoDB 裏取りキュー（移行中）
+
+| 変数 | 用途 |
+|---|---|
+| `AWS_REGION` | AWSリージョン。既定値は `ap-northeast-1` |
+| `DYNAMODB_QUEUE_TABLE` | 裏取りキューのDynamoDBテーブル名 |
+| `QUEUE_STORAGE_MODE` | `notion`（既定）/ `dual` / `dynamodb` |
+
+AWS準備後はまず `dual` でNotionとDynamoDBへ二重書きし、検証完了後に
+`dynamodb` へ切り替える。GitHub ActionsのAWS認証は長期アクセスキーではなく
+OIDCロールを使う。
 トークン未設定時は書き込みをスキップして収集だけ行う（クラッシュしない）。
 
 ## メール配信（NotionドラフトDB不使用）
