@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-07T13:45:32.134357+00:00",
+  "generated_at": "2026-06-07T13:58:24.363473+00:00",
   "accounts": {
     "yamarie0324": {
       "handle": "@yamarie0324",
@@ -4213,6 +4213,21 @@
       "value_ratio": 1.0,
       "status": "active"
     },
+    "__akn15": {
+      "handle": "@__akn15",
+      "posts_seen": 4,
+      "valuable_posts": 4,
+      "noise_posts": 0,
+      "value_points": 28.0,
+      "last_seen": "2026-06-07T13:44:26+00:00",
+      "top_reasons": {
+        "bon": 4,
+        "context": 4
+      },
+      "score": 8.6,
+      "value_ratio": 1.0,
+      "status": "trusted"
+    },
     "abydos_i_nonomi": {
       "handle": "@abydos_i_nonomi",
       "posts_seen": 4,
@@ -4314,6 +4329,22 @@
       "noise_posts": 0,
       "value_points": 8.0,
       "last_seen": "2026-01-04T14:57:49+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1,
+        "link": 1
+      },
+      "score": 8.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
+    "68gst": {
+      "handle": "@68gst",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 8.0,
+      "last_seen": "2026-06-07T13:49:52+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1,
@@ -5251,6 +5282,22 @@
       "value_ratio": 1.0,
       "status": "active"
     },
+    "ochoris1": {
+      "handle": "@ochoris1",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 8.0,
+      "last_seen": "2026-06-07T13:50:25+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1,
+        "link": 1
+      },
+      "score": 8.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
     "ootukimusume": {
       "handle": "@ootukimusume",
       "posts_seen": 1,
@@ -5258,6 +5305,22 @@
       "noise_posts": 0,
       "value_points": 8.0,
       "last_seen": "2026-06-06T10:06:02+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1,
+        "link": 1
+      },
+      "score": 8.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
+    "oyaji1973": {
+      "handle": "@oyaji1973",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 8.0,
+      "last_seen": "2026-06-07T13:48:47+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1,
@@ -5763,21 +5826,6 @@
       "value_ratio": 1.0,
       "status": "active"
     },
-    "__akn15": {
-      "handle": "@__akn15",
-      "posts_seen": 3,
-      "valuable_posts": 3,
-      "noise_posts": 0,
-      "value_points": 21.0,
-      "last_seen": "2026-06-07T13:26:06+00:00",
-      "top_reasons": {
-        "bon": 3,
-        "context": 3
-      },
-      "score": 8.2,
-      "value_ratio": 1.0,
-      "status": "trusted"
-    },
     "wadaikoch": {
       "handle": "@wadaikoch",
       "posts_seen": 16,
@@ -6001,6 +6049,21 @@
       "value_ratio": 1.0,
       "status": "active"
     },
+    "0n1hs0y": {
+      "handle": "@0n1hs0y",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-07T13:46:12+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
     "15_taicho": {
       "handle": "@15_taicho",
       "posts_seen": 1,
@@ -6113,6 +6176,21 @@
       "noise_posts": 0,
       "value_points": 7.0,
       "last_seen": "2026-06-06T11:03:44+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
+    "34_com": {
+      "handle": "@34_com",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-07T13:53:59+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1
@@ -6533,6 +6611,21 @@
       "noise_posts": 0,
       "value_points": 7.0,
       "last_seen": "2026-06-03T17:43:22+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
+    "axyxrxoorx": {
+      "handle": "@axyxrxoorx",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-07T13:49:55+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1
@@ -8521,6 +8614,21 @@
       "value_ratio": 1.0,
       "status": "active"
     },
+    "masatosimasatos": {
+      "handle": "@masatosimasatos",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-07T13:55:44+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
     "mayumiyoshioka": {
       "handle": "@mayumiyoshioka",
       "posts_seen": 1,
@@ -10351,6 +10459,21 @@
       "value_ratio": 1.0,
       "status": "active"
     },
+    "waterdragon1110": {
+      "handle": "@waterdragon1110",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-07T13:46:46+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
     "wilderchicken": {
       "handle": "@wilderchicken",
       "posts_seen": 1,
@@ -10658,6 +10781,21 @@
       "noise_posts": 0,
       "value_points": 7.0,
       "last_seen": "2026-06-02T14:04:42+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
+    "yutaneko_reimu": {
+      "handle": "@yutaneko_reimu",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-07T13:53:59+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1
