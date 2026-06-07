@@ -214,13 +214,21 @@ def main():
         },
         "results": results,
     }
-    output["notion_member_sync"] = collect.add_promoted_x_members(results)
+    output["notion_member_sync"] = {
+        "skipped": "requires_user_approval",
+        "promote_candidates": output["recommendation_counts"]["promote"],
+        "note": (
+            "Xメンバーリストへの追加は自動実行しない。"
+            "内田さんが user_approved=true を付けた promote だけ、"
+            "sync_x_promoted_members.py で同期する。"
+        ),
+    }
     REVIEW_FILE.write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding="utf-8")
 
     print(f"[review] reviewed: {len(results)}")
     print(f"[review] recommendations: {output['recommendation_counts']}")
     print(f"[review] estimated cost: {total_credits} credits / ${output['cost_estimate']['usd']:.6f}")
-    print(f"[review] notion member sync: {output['notion_member_sync']}")
+    print(f"[review] notion member sync skipped: {output['notion_member_sync']}")
     for r in results[:10]:
         print(
             f"[review] {r.get('recommendation')} {r.get('handle')} "

@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       sync_only:
-        description: '保存済みpromote結果をNotionへ同期するだけ（X API課金なし）'
+        description: '内田さん承認済み(user_approved=true)のpromoteだけNotionへ同期（X API課金なし）'
         required: false
         type: boolean
         default: false
