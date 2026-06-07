@@ -1,0 +1,35 @@
+name: bon-odori-send-mail-watchdog
+
+on:
+  schedule:
+    # 通常の18:23 JST実行後に pending_mail.json が残っていないか確認する。
+    # GitHub scheduleの混雑を避けるため、毎時ちょうどではない時刻にする。
+    - cron: '7 10 * * *' # 19:07 JST
+  workflow_dispatch:
+
+concurrency:
+  group: bon-odori-send-mail-watchdog
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+      contents: read
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Trigger mail workflow when a draft remains
+      env:
+        GH_TOKEN: ${{ github.token }}
+      run: |
+        if [ ! -f data/pending_mail.json ]; then
+          echo "[watchdog] pending_mail.json なし。保険起動は不要です。"
+          exit 0
+        fi
+
+        echo "[watchdog] pending_mail.json が残っています。メール送信Workflowを起動します。"
+        gh workflow run send_mail.yml --ref "$GITHUB_REF_NAME"
