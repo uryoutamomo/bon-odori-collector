@@ -276,15 +276,15 @@
     "notion_url": "https://app.notion.com/p/3718be04e762812e9ff2d5b693d84808"
   },
   {
-    "venue": "山王日枝神社",
+    "venue": "山王パークタワー公開空地",
     "region": "千代田区",
     "month": null,
     "scale": "不明",
     "access": null,
     "in_tsukiji_30min": true,
-    "source_url": "https://minato-bon-odori.blogspot.com/",
-    "memo": "出典:東京盆踊りマップ(blogspot) 千代田区情報ページ / blog_body抽出",
-    "needs_review": true,
+    "source_url": "https://www.tenkamatsuri.jp/minyo/",
+    "memo": "日枝神社「山王祭」の納涼大会『山王音頭と民踊大会』の会場。2023年に境内神輿庫前から会場変更。最寄駅は溜池山王駅・国会議事堂前駅。出典: 日枝神社公式サイト（https://www.tenkamatsuri.jp/minyo/）",
+    "needs_review": false,
     "notion_url": "https://app.notion.com/p/3718be04e7628150a17cfe33cd69e264"
   },
   {
@@ -748,11 +748,11 @@
     "region": "千代田区",
     "month": null,
     "scale": "不明",
-    "access": null,
+    "access": "地下鉄九段下駅（1番出口）・市ケ谷駅（1番出口）より徒歩",
     "in_tsukiji_30min": true,
-    "source_url": "https://minato-bon-odori.blogspot.com/",
-    "memo": "出典:東京盆踊りマップ(blogspot) 千代田区情報ページ / blog_body抽出",
-    "needs_review": true,
+    "source_url": "https://www.yasukuni.or.jp/schedule/saiji.html",
+    "memo": "「みたままつり」期間中の夕刻、大村益次郎像周辺で千代田区民踊連盟による「納涸民踊のつどい（盆踊り）」が開催される。出典: 靖国神社公式サイト（https://www.yasukuni.or.jp/schedule/saiji.html）",
+    "needs_review": false,
     "notion_url": "https://app.notion.com/p/3718be04e76281ce8155d89bfa2487f4"
   },
   {
