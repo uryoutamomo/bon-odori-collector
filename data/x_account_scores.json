@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08T11:56:36.002635+00:00",
+  "generated_at": "2026-06-08T17:41:13.931958+00:00",
   "accounts": {
     "yamarie0324": {
       "handle": "@yamarie0324",
@@ -293,6 +293,24 @@
       "noise_posts": 0,
       "value_points": 20.0,
       "last_seen": "2026-06-03T01:37:21+00:00",
+      "top_reasons": {
+        "future_schedule": 1,
+        "bon": 1,
+        "context": 1,
+        "date_time": 1,
+        "link": 1
+      },
+      "score": 20.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
+    "gunsou_bouei64": {
+      "handle": "@gunsou_bouei64",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 20.0,
+      "last_seen": "2026-06-08T15:58:08+00:00",
       "top_reasons": {
         "future_schedule": 1,
         "bon": 1,
@@ -625,6 +643,25 @@
       "value_ratio": 1.0,
       "status": "active"
     },
+    "kuma_kirara": {
+      "handle": "@kuma_kirara",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 19.0,
+      "last_seen": "2026-06-08T13:29:41+00:00",
+      "top_reasons": {
+        "schedule_like": 1,
+        "bon": 1,
+        "context": 1,
+        "date_time": 1,
+        "experience": 1,
+        "link": 1
+      },
+      "score": 19.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
     "mary_0617_": {
       "handle": "@mary_0617_",
       "posts_seen": 1,
@@ -739,6 +776,25 @@
         "bon": 1,
         "context": 1,
         "date_time": 1
+      },
+      "score": 19.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
+    "yutoyuken": {
+      "handle": "@yutoyuken",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 19.0,
+      "last_seen": "2026-06-08T16:12:14+00:00",
+      "top_reasons": {
+        "schedule_like": 1,
+        "bon": 1,
+        "context": 1,
+        "date_time": 1,
+        "experience": 1,
+        "link": 1
       },
       "score": 19.4,
       "value_ratio": 1.0,
@@ -1470,6 +1526,23 @@
       "value_ratio": 1.0,
       "status": "active"
     },
+    "yurika_mayu": {
+      "handle": "@yurika_mayu",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 15.0,
+      "last_seen": "2026-06-08T16:41:05+00:00",
+      "top_reasons": {
+        "schedule_like": 1,
+        "bon": 1,
+        "context": 1,
+        "date_time": 1
+      },
+      "score": 15.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
     "yuzupi14": {
       "handle": "@yuzupi14",
       "posts_seen": 1,
@@ -1520,6 +1593,24 @@
         "link": 2
       },
       "score": 14.8,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
+    "mikann_gr": {
+      "handle": "@mikann_gr",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 14.0,
+      "last_seen": "2026-06-08T14:23:13+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1,
+        "date_time": 1,
+        "experience": 1,
+        "link": 1
+      },
+      "score": 14.4,
       "value_ratio": 1.0,
       "status": "active"
     },
@@ -1716,20 +1807,39 @@
       "value_ratio": 1.0,
       "status": "active"
     },
-    "bagpacker2023": {
-      "handle": "@bagpacker2023",
+    "tatuki0501": {
+      "handle": "@tatuki0501",
       "posts_seen": 1,
       "valuable_posts": 1,
       "noise_posts": 0,
       "value_points": 13.0,
-      "last_seen": "2026-06-07T12:01:09+00:00",
+      "last_seen": "2026-06-08T15:28:17+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1,
-        "venue": 1,
-        "link": 1
+        "date_time": 1,
+        "experience": 1
       },
       "score": 13.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
+    "bon0813mkw480": {
+      "handle": "@bon0813mkw480",
+      "posts_seen": 2,
+      "valuable_posts": 2,
+      "noise_posts": 0,
+      "value_points": 25.0,
+      "last_seen": "2026-06-08T12:51:35+00:00",
+      "top_reasons": {
+        "bon": 2,
+        "context": 2,
+        "date_time": 1,
+        "experience": 1,
+        "link": 2,
+        "media_hint": 1
+      },
+      "score": 13.3,
       "value_ratio": 1.0,
       "status": "active"
     },
@@ -1908,6 +2018,44 @@
       "value_ratio": 1.0,
       "status": "trusted"
     },
+    "tashiro_kai": {
+      "handle": "@tashiro_kai",
+      "posts_seen": 12,
+      "valuable_posts": 12,
+      "noise_posts": 0,
+      "value_points": 97.0,
+      "last_seen": "2026-06-08T16:10:31+00:00",
+      "top_reasons": {
+        "bon": 12,
+        "context": 12,
+        "link": 7,
+        "experience": 1,
+        "media_hint": 1
+      },
+      "score": 12.083,
+      "value_ratio": 1.0,
+      "status": "trusted"
+    },
+    "sasakichi_akiba": {
+      "handle": "@sasakichi_akiba",
+      "posts_seen": 14,
+      "valuable_posts": 11,
+      "noise_posts": 0,
+      "value_points": 113.0,
+      "last_seen": "2026-06-08T14:52:08+00:00",
+      "top_reasons": {
+        "link": 12,
+        "future_schedule": 1,
+        "bon": 11,
+        "context": 11,
+        "date_time": 1,
+        "media_hint": 2,
+        "experience": 2
+      },
+      "score": 12.071,
+      "value_ratio": 0.786,
+      "status": "trusted"
+    },
     "kasui21": {
       "handle": "@kasui21",
       "posts_seen": 2,
@@ -2017,22 +2165,24 @@
       "value_ratio": 0.571,
       "status": "trusted"
     },
-    "sasakichi_akiba": {
-      "handle": "@sasakichi_akiba",
-      "posts_seen": 12,
+    "pw9skrdcfyjfxfv": {
+      "handle": "@pw9skrdcfyjfxfv",
+      "posts_seen": 14,
       "valuable_posts": 10,
       "noise_posts": 0,
-      "value_points": 92.0,
-      "last_seen": "2026-06-08T10:20:40+00:00",
+      "value_points": 106.0,
+      "last_seen": "2026-06-08T15:35:23+00:00",
       "top_reasons": {
-        "link": 10,
-        "bon": 10,
+        "bon": 2,
         "context": 10,
-        "media_hint": 2,
-        "experience": 2
+        "date_time": 8,
+        "link": 8,
+        "experience": 2,
+        "future_schedule": 3,
+        "venue": 1
       },
-      "score": 11.667,
-      "value_ratio": 0.833,
+      "score": 11.571,
+      "value_ratio": 0.714,
       "status": "trusted"
     },
     "suwayahikari_nu": {
@@ -2176,23 +2326,6 @@
       "value_ratio": 1.0,
       "status": "active"
     },
-    "bon0813mkw480": {
-      "handle": "@bon0813mkw480",
-      "posts_seen": 1,
-      "valuable_posts": 1,
-      "noise_posts": 0,
-      "value_points": 11.0,
-      "last_seen": "2026-06-03T14:03:53+00:00",
-      "top_reasons": {
-        "bon": 1,
-        "context": 1,
-        "media_hint": 1,
-        "link": 1
-      },
-      "score": 11.4,
-      "value_ratio": 1.0,
-      "status": "active"
-    },
     "bonodori_tais": {
       "handle": "@bonodori_tais",
       "posts_seen": 1,
@@ -2217,6 +2350,23 @@
       "noise_posts": 0,
       "value_points": 11.0,
       "last_seen": "2026-06-06T15:11:09+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1,
+        "experience": 1,
+        "link": 1
+      },
+      "score": 11.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
+    "chi_pokee": {
+      "handle": "@chi_pokee",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 11.0,
+      "last_seen": "2026-06-08T15:28:26+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1,
@@ -2295,6 +2445,23 @@
       "value_ratio": 1.0,
       "status": "active"
     },
+    "euph411": {
+      "handle": "@euph411",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 11.0,
+      "last_seen": "2026-06-08T13:50:27+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1,
+        "experience": 1,
+        "link": 1
+      },
+      "score": 11.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
     "gdgdnepunepu01": {
       "handle": "@gdgdnepunepu01",
       "posts_seen": 1,
@@ -2307,6 +2474,23 @@
         "context": 1,
         "media_hint": 1,
         "experience": 1
+      },
+      "score": 11.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
+    "hero59725327330": {
+      "handle": "@hero59725327330",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 11.0,
+      "last_seen": "2026-06-08T15:15:27+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1,
+        "experience": 1,
+        "link": 1
       },
       "score": 11.4,
       "value_ratio": 1.0,
@@ -2754,6 +2938,23 @@
       "value_ratio": 1.0,
       "status": "trusted"
     },
+    "bagpacker2023": {
+      "handle": "@bagpacker2023",
+      "posts_seen": 2,
+      "valuable_posts": 2,
+      "noise_posts": 0,
+      "value_points": 21.0,
+      "last_seen": "2026-06-08T16:33:56+00:00",
+      "top_reasons": {
+        "bon": 2,
+        "context": 2,
+        "link": 2,
+        "venue": 1
+      },
+      "score": 11.3,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
     "minyo_yutachita": {
       "handle": "@minyo_yutachita",
       "posts_seen": 2,
@@ -2891,6 +3092,21 @@
       "value_ratio": 0.706,
       "status": "trusted"
     },
+    "niinobon_uta": {
+      "handle": "@niinobon_uta",
+      "posts_seen": 9,
+      "valuable_posts": 9,
+      "noise_posts": 0,
+      "value_points": 63.0,
+      "last_seen": "2026-06-08T17:38:11+00:00",
+      "top_reasons": {
+        "bon": 9,
+        "context": 9
+      },
+      "score": 10.6,
+      "value_ratio": 1.0,
+      "status": "trusted"
+    },
     "rollingasahi": {
       "handle": "@rollingasahi",
       "posts_seen": 5,
@@ -2923,25 +3139,6 @@
       },
       "score": 10.533,
       "value_ratio": 1.0,
-      "status": "trusted"
-    },
-    "pw9skrdcfyjfxfv": {
-      "handle": "@pw9skrdcfyjfxfv",
-      "posts_seen": 12,
-      "valuable_posts": 8,
-      "noise_posts": 0,
-      "value_points": 88.0,
-      "last_seen": "2026-06-08T03:42:26+00:00",
-      "top_reasons": {
-        "context": 8,
-        "date_time": 7,
-        "link": 7,
-        "experience": 2,
-        "future_schedule": 3,
-        "venue": 1
-      },
-      "score": 10.533,
-      "value_ratio": 0.667,
       "status": "trusted"
     },
     "01korotan": {
@@ -3015,6 +3212,22 @@
       "noise_posts": 0,
       "value_points": 10.0,
       "last_seen": "2026-06-06T08:30:34+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1,
+        "experience": 1
+      },
+      "score": 10.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
+    "_pukakurage_": {
+      "handle": "@_pukakurage_",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 10.0,
+      "last_seen": "2026-06-08T13:45:21+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1,
@@ -3127,6 +3340,22 @@
       "noise_posts": 0,
       "value_points": 10.0,
       "last_seen": "2026-06-03T14:29:15+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1,
+        "experience": 1
+      },
+      "score": 10.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
+    "cellslove234666": {
+      "handle": "@cellslove234666",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 10.0,
+      "last_seen": "2026-06-08T15:31:44+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1,
@@ -3307,6 +3536,22 @@
         "bon": 1,
         "context": 1,
         "experience": 1
+      },
+      "score": 10.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
+    "juliet85295490": {
+      "handle": "@juliet85295490",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 10.0,
+      "last_seen": "2026-06-08T14:48:30+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1,
+        "date_time": 1
       },
       "score": 10.4,
       "value_ratio": 1.0,
@@ -3776,6 +4021,22 @@
       "value_ratio": 1.0,
       "status": "active"
     },
+    "sentimentpur23": {
+      "handle": "@sentimentpur23",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 10.0,
+      "last_seen": "2026-06-08T15:53:47+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1,
+        "date_time": 1
+      },
+      "score": 10.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
     "shizuku_harada": {
       "handle": "@shizuku_harada",
       "posts_seen": 1,
@@ -3851,6 +4112,22 @@
         "bon": 1,
         "context": 1,
         "experience": 1
+      },
+      "score": 10.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
+    "u16kajiko": {
+      "handle": "@u16kajiko",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 10.0,
+      "last_seen": "2026-06-08T13:59:32+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1,
+        "date_time": 1
       },
       "score": 10.4,
       "value_ratio": 1.0,
@@ -4114,27 +4391,6 @@
       "value_ratio": 1.0,
       "status": "active"
     },
-    "m125m8qgyhwuehs": {
-      "handle": "@m125m8qgyhwuehs",
-      "posts_seen": 12,
-      "valuable_posts": 8,
-      "noise_posts": 0,
-      "value_points": 84.0,
-      "last_seen": "2026-06-07T12:11:23+00:00",
-      "top_reasons": {
-        "context": 8,
-        "venue": 1,
-        "experience": 6,
-        "link": 9,
-        "bon": 3,
-        "future_schedule": 1,
-        "date_time": 2,
-        "media_hint": 1
-      },
-      "score": 10.2,
-      "value_ratio": 0.667,
-      "status": "trusted"
-    },
     "elevator_p": {
       "handle": "@elevator_p",
       "posts_seen": 4,
@@ -4167,23 +4423,44 @@
       "value_ratio": 1.0,
       "status": "trusted"
     },
+    "m125m8qgyhwuehs": {
+      "handle": "@m125m8qgyhwuehs",
+      "posts_seen": 15,
+      "valuable_posts": 9,
+      "noise_posts": 0,
+      "value_points": 96.0,
+      "last_seen": "2026-06-08T14:40:19+00:00",
+      "top_reasons": {
+        "link": 11,
+        "bon": 4,
+        "context": 9,
+        "experience": 7,
+        "venue": 1,
+        "future_schedule": 1,
+        "date_time": 2,
+        "media_hint": 1
+      },
+      "score": 10.0,
+      "value_ratio": 0.6,
+      "status": "trusted"
+    },
     "hideshanbonbon": {
       "handle": "@hideshanbonbon",
-      "posts_seen": 8,
-      "valuable_posts": 5,
+      "posts_seen": 10,
+      "valuable_posts": 6,
       "noise_posts": 0,
-      "value_points": 63.0,
-      "last_seen": "2026-06-08T10:08:57+00:00",
+      "value_points": 75.0,
+      "last_seen": "2026-06-08T15:03:55+00:00",
       "top_reasons": {
-        "link": 6,
-        "experience": 5,
-        "context": 6,
-        "bon": 4,
+        "bon": 5,
+        "context": 7,
+        "experience": 6,
+        "link": 8,
         "schedule_like": 1,
         "date_time": 1
       },
-      "score": 9.875,
-      "value_ratio": 0.625,
+      "score": 9.9,
+      "value_ratio": 0.6,
       "status": "trusted"
     },
     "s_y_singer": {
@@ -4219,21 +4496,6 @@
       "score": 9.8,
       "value_ratio": 1.0,
       "status": "active"
-    },
-    "niinobon_uta": {
-      "handle": "@niinobon_uta",
-      "posts_seen": 7,
-      "valuable_posts": 7,
-      "noise_posts": 0,
-      "value_points": 49.0,
-      "last_seen": "2026-06-07T03:08:20+00:00",
-      "top_reasons": {
-        "bon": 7,
-        "context": 7
-      },
-      "score": 9.8,
-      "value_ratio": 1.0,
-      "status": "trusted"
     },
     "towa_q": {
       "handle": "@towa_q",
@@ -4297,6 +4559,22 @@
         "bon": 5,
         "context": 5,
         "link": 3
+      },
+      "score": 9.6,
+      "value_ratio": 1.0,
+      "status": "trusted"
+    },
+    "sasurai_3": {
+      "handle": "@sasurai_3",
+      "posts_seen": 4,
+      "valuable_posts": 4,
+      "noise_posts": 0,
+      "value_points": 32.0,
+      "last_seen": "2026-06-08T16:20:24+00:00",
+      "top_reasons": {
+        "bon": 4,
+        "context": 4,
+        "link": 4
       },
       "score": 9.6,
       "value_ratio": 1.0,
@@ -4518,22 +4796,6 @@
       "score": 9.3,
       "value_ratio": 1.0,
       "status": "active"
-    },
-    "sasurai_3": {
-      "handle": "@sasurai_3",
-      "posts_seen": 3,
-      "valuable_posts": 3,
-      "noise_posts": 0,
-      "value_points": 24.0,
-      "last_seen": "2026-06-07T09:15:55+00:00",
-      "top_reasons": {
-        "bon": 3,
-        "context": 3,
-        "link": 3
-      },
-      "score": 9.2,
-      "value_ratio": 1.0,
-      "status": "trusted"
     },
     "hisbow2": {
       "handle": "@hisbow2",
@@ -5164,6 +5426,22 @@
       "noise_posts": 0,
       "value_points": 8.0,
       "last_seen": "2026-06-05T15:14:19+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1,
+        "link": 1
+      },
+      "score": 8.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
+    "kagishipocat": {
+      "handle": "@kagishipocat",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 8.0,
+      "last_seen": "2026-06-08T13:56:49+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1,
@@ -6021,6 +6299,38 @@
       "value_ratio": 1.0,
       "status": "active"
     },
+    "ss1lssah": {
+      "handle": "@ss1lssah",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 8.0,
+      "last_seen": "2026-06-08T14:22:32+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1,
+        "link": 1
+      },
+      "score": 8.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
+    "takuyaz": {
+      "handle": "@takuyaz",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 8.0,
+      "last_seen": "2026-06-08T16:02:30+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1,
+        "link": 1
+      },
+      "score": 8.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
     "tasogarecords": {
       "handle": "@tasogarecords",
       "posts_seen": 1,
@@ -6133,13 +6443,29 @@
       "value_ratio": 1.0,
       "status": "active"
     },
-    "v9wjbldnvueyob0": {
-      "handle": "@v9wjbldnvueyob0",
+    "utenji_miryoku": {
+      "handle": "@utenji_miryoku",
       "posts_seen": 1,
       "valuable_posts": 1,
       "noise_posts": 0,
       "value_points": 8.0,
-      "last_seen": "2026-06-02T15:18:46+00:00",
+      "last_seen": "2026-06-08T15:37:35+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1,
+        "link": 1
+      },
+      "score": 8.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
+    "warimizu": {
+      "handle": "@warimizu",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 8.0,
+      "last_seen": "2026-06-08T12:15:29+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1,
@@ -6172,6 +6498,22 @@
       "noise_posts": 0,
       "value_points": 8.0,
       "last_seen": "2026-06-07T03:24:01+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1,
+        "link": 1
+      },
+      "score": 8.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
+    "yoshitaka_1008": {
+      "handle": "@yoshitaka_1008",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 8.0,
+      "last_seen": "2026-06-08T16:36:40+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1,
@@ -6300,6 +6642,22 @@
       "noise_posts": 0,
       "value_points": 15.0,
       "last_seen": "2026-06-02T16:27:08+00:00",
+      "top_reasons": {
+        "bon": 2,
+        "context": 2,
+        "link": 1
+      },
+      "score": 8.3,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
+    "v9wjbldnvueyob0": {
+      "handle": "@v9wjbldnvueyob0",
+      "posts_seen": 2,
+      "valuable_posts": 2,
+      "noise_posts": 0,
+      "value_points": 15.0,
+      "last_seen": "2026-06-08T13:23:13+00:00",
       "top_reasons": {
         "bon": 2,
         "context": 2,
@@ -6477,6 +6835,21 @@
       "noise_posts": 0,
       "value_points": 14.0,
       "last_seen": "2026-06-08T11:09:58+00:00",
+      "top_reasons": {
+        "bon": 2,
+        "context": 2
+      },
+      "score": 7.8,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
+    "misa_ava_01": {
+      "handle": "@misa_ava_01",
+      "posts_seen": 2,
+      "valuable_posts": 2,
+      "noise_posts": 0,
+      "value_points": 14.0,
+      "last_seen": "2026-06-08T15:24:21+00:00",
       "top_reasons": {
         "bon": 2,
         "context": 2
@@ -6890,6 +7263,36 @@
       "value_ratio": 1.0,
       "status": "active"
     },
+    "_eam9": {
+      "handle": "@_eam9",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-08T13:47:46+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
+    "_prettysanos": {
+      "handle": "@_prettysanos",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-08T16:01:32+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
     "_px0u0xq_": {
       "handle": "@_px0u0xq_",
       "posts_seen": 1,
@@ -6987,6 +7390,21 @@
       "noise_posts": 0,
       "value_points": 7.0,
       "last_seen": "2026-06-03T10:59:26+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
+    "aiko_o616": {
+      "handle": "@aiko_o616",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-08T15:46:14+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1
@@ -7205,6 +7623,21 @@
       "value_ratio": 1.0,
       "status": "active"
     },
+    "avrxucpodt67556": {
+      "handle": "@avrxucpodt67556",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-08T12:16:08+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
     "axyxrxoorx": {
       "handle": "@axyxrxoorx",
       "posts_seen": 1,
@@ -7317,6 +7750,21 @@
       "noise_posts": 0,
       "value_points": 7.0,
       "last_seen": "2026-06-07T13:12:16+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
+    "bigdrumsletspl1": {
+      "handle": "@bigdrumsletspl1",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-08T14:12:04+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1
@@ -7662,6 +8110,21 @@
       "noise_posts": 0,
       "value_points": 7.0,
       "last_seen": "2026-06-04T16:42:51+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
+    "em2505_e": {
+      "handle": "@em2505_e",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-08T14:02:31+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1
@@ -8225,6 +8688,21 @@
       "value_ratio": 1.0,
       "status": "active"
     },
+    "hiroki_19_93": {
+      "handle": "@hiroki_19_93",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-08T14:29:59+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
     "hisa910615533": {
       "handle": "@hisa910615533",
       "posts_seen": 1,
@@ -8277,6 +8755,21 @@
       "noise_posts": 0,
       "value_points": 7.0,
       "last_seen": "2026-06-03T14:40:13+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
+    "hovjv3cekoameba": {
+      "handle": "@hovjv3cekoameba",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-08T12:25:00+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1
@@ -8607,6 +9100,21 @@
       "noise_posts": 0,
       "value_points": 7.0,
       "last_seen": "2026-06-03T01:05:07+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
+    "kagurakururu": {
+      "handle": "@kagurakururu",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-08T16:40:01+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1
@@ -9470,6 +9978,21 @@
       "value_ratio": 1.0,
       "status": "active"
     },
+    "met4s0_vr": {
+      "handle": "@met4s0_vr",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-08T14:00:06+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
     "mhm092121": {
       "handle": "@mhm092121",
       "posts_seen": 1,
@@ -9605,6 +10128,21 @@
       "value_ratio": 1.0,
       "status": "active"
     },
+    "miztan2": {
+      "handle": "@miztan2",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-08T15:25:20+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
     "mmmkhtm": {
       "handle": "@mmmkhtm",
       "posts_seen": 1,
@@ -9687,6 +10225,21 @@
       "noise_posts": 0,
       "value_points": 7.0,
       "last_seen": "2026-06-03T15:37:35+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
+    "mrtdkh_o3": {
+      "handle": "@mrtdkh_o3",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-08T12:28:53+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1
@@ -9957,6 +10510,21 @@
       "noise_posts": 0,
       "value_points": 7.0,
       "last_seen": "2026-06-02T15:17:18+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
+    "nyankosiratama": {
+      "handle": "@nyankosiratama",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-08T15:48:09+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1
@@ -10400,6 +10968,21 @@
       "value_ratio": 1.0,
       "status": "active"
     },
+    "rose_yukirisa": {
+      "handle": "@rose_yukirisa",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-08T15:13:38+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
     "s88k88s": {
       "handle": "@s88k88s",
       "posts_seen": 1,
@@ -10467,6 +11050,21 @@
       "noise_posts": 0,
       "value_points": 7.0,
       "last_seen": "2026-06-03T13:34:08+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
+    "sakuma_jessica": {
+      "handle": "@sakuma_jessica",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-08T15:19:53+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1
@@ -10760,6 +11358,21 @@
       "value_ratio": 1.0,
       "status": "active"
     },
+    "spring_asdurawa": {
+      "handle": "@spring_asdurawa",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-08T15:47:38+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
     "strong_ichigo": {
       "handle": "@strong_ichigo",
       "posts_seen": 1,
@@ -10767,6 +11380,21 @@
       "noise_posts": 0,
       "value_points": 7.0,
       "last_seen": "2026-06-06T10:02:51+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
+    "suina_bb": {
+      "handle": "@suina_bb",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-08T16:23:25+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1
@@ -10902,6 +11530,21 @@
       "noise_posts": 0,
       "value_points": 7.0,
       "last_seen": "2026-06-06T10:17:43+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
+    "tamagogakoubutu": {
+      "handle": "@tamagogakoubutu",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-08T15:36:07+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1
@@ -11307,6 +11950,21 @@
       "noise_posts": 0,
       "value_points": 7.0,
       "last_seen": "2026-06-07T03:00:46+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
+    "wallkaniko": {
+      "handle": "@wallkaniko",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-08T16:04:41+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1
@@ -11765,6 +12423,21 @@
       "value_ratio": 1.0,
       "status": "active"
     },
+    "zerobay106": {
+      "handle": "@zerobay106",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-08T17:24:13+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
     "zeroiuq2": {
       "handle": "@zeroiuq2",
       "posts_seen": 1,
@@ -11772,6 +12445,21 @@
       "noise_posts": 0,
       "value_points": 7.0,
       "last_seen": "2026-06-07T01:28:06+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "status": "active"
+    },
+    "zpd0dapbd858628": {
+      "handle": "@zpd0dapbd858628",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-08T16:21:56+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1
@@ -11797,24 +12485,24 @@
     },
     "bondbont": {
       "handle": "@bondbont",
-      "posts_seen": 39,
-      "valuable_posts": 27,
+      "posts_seen": 44,
+      "valuable_posts": 29,
       "noise_posts": 2,
-      "value_points": 178.0,
-      "last_seen": "2026-06-08T10:12:03+00:00",
+      "value_points": 189.0,
+      "last_seen": "2026-06-08T14:07:29+00:00",
       "top_reasons": {
+        "link": 37,
+        "context": 29,
         "schedule_like": 1,
         "bon": 7,
-        "context": 27,
         "date_time": 4,
-        "link": 32,
         "experience": 4,
         "no_context": 2,
         "future_schedule": 1,
         "media_hint": 1
       },
-      "score": 7.364,
-      "value_ratio": 0.692,
+      "score": 7.095,
+      "value_ratio": 0.659,
       "status": "trusted"
     },
     "kuzunavi": {
