@@ -1,0 +1,33 @@
+{
+  "generated_at": "2026-06-09T15:06:40.681432+00:00",
+  "add_candidates": [
+    "@tadashi_isono",
+    "@kasui21",
+    "@gokuraku_15",
+    "@qtjittan",
+    "@kaz0045"
+  ],
+  "pause_handles": [
+    "@mrapple_bycandy",
+    "@tarokoba55",
+    "@fried_wakame",
+    "@nakano_bonodori",
+    "@kasumi_1030_"
+  ],
+  "add_summary": {
+    "promoted": 5,
+    "added": 5,
+    "existing": 0,
+    "errors": 0
+  },
+  "pause_summary": {
+    "paused": [
+      "@kasumi_1030_",
+      "@nakano_bonodori",
+      "@fried_wakame",
+      "@mrapple_bycandy",
+      "@tarokoba55"
+    ],
+    "missing": []
+  }
+}

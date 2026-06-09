@@ -718,6 +718,19 @@ GLOSSARY_DB_ID = _env_or_default("GLOSSARY_DB_ID", "989e9effc7fc40db8043a3b8e030
 VENUE_MASTER_FILE = "data/venue_master.json"
 X_WHITELIST_STATE_FILE = "data/x_whitelist_state.json"
 X_ACCOUNT_SCORES_FILE = "data/x_account_scores.json"
+X_MEMBER_OBSOLETE_SCORE_PROPS = (
+    "自動スコア",
+    "手動重み",
+    "収集ランク",
+    "未来予定投稿数",
+    "最終評価日時",
+    "評価理由",
+    "総合スコア",
+    "通算スコア",
+    "直近スコア",
+    "有益ランク数値",
+    "役割タグ",
+)
 X_EVENT_EVIDENCE_STATE_FILE = "data/x_event_evidence_state.json"
 X_EVENT_EVIDENCE_COHORT_FILE = "data/x_event_evidence_cohort.json"
 QUEUE_SEEN_FILE = "data/torimochi_queue_seen.json"
@@ -882,10 +895,101 @@ def _x_post_value_score(voice, cfg=None, known_venues=None):
     return score, reasons
 
 
+def _x_account_confidence(row):
+    posts_seen = row.get("posts_seen", 0)
+    valuable_posts = row.get("valuable_posts", 0)
+    if valuable_posts >= 8 and posts_seen >= 10:
+        return "high"
+    if valuable_posts >= 3 and posts_seen >= 5:
+        return "medium"
+    return "low"
+
+
+def _x_account_composite_score(lifetime_score, recent_score, recent_posts):
+    """通算の安定性と直近の鮮度を合わせた品質スコア。"""
+    if recent_posts <= 0:
+        return lifetime_score
+    # 直近投稿が少ないうちは過剰に振れないよう、最大60%まで段階的に効かせる。
+    recent_weight = min(0.6, max(0.2, recent_posts / 10 * 0.6))
+    lifetime_weight = 1.0 - recent_weight
+    return round((lifetime_score * lifetime_weight) + (recent_score * recent_weight), 3)
+
+
+def _x_account_usefulness_rank(row):
+    posts_seen = row.get("posts_seen", 0)
+    valuable_posts = row.get("valuable_posts", 0)
+    score = row.get("score", row.get("composite_score", 0))
+    status = row.get("status", "")
+    if status == "muted":
+        return "Muted"
+    if valuable_posts >= 8 and posts_seen >= 10 and score >= 6:
+        return "S"
+    if valuable_posts >= 3 and posts_seen >= 5 and score >= 4:
+        return "A"
+    if valuable_posts >= 2 and score >= 3:
+        return "B"
+    if valuable_posts >= 1:
+        return "Candidate"
+    return "Probation"
+
+
+def _x_account_rank_number(rank):
+    return {
+        "S": 5,
+        "A": 4,
+        "B": 3,
+        "Candidate": 2,
+        "Probation": 1,
+        "Muted": 0,
+    }.get(rank or "Probation", 1)
+
+
+def _x_account_usefulness_score(row):
+    rank = row.get("usefulness_rank", "Probation")
+    base = {
+        "S": 90,
+        "A": 75,
+        "B": 55,
+        "Candidate": 35,
+        "Probation": 15,
+        "Muted": 0,
+    }.get(rank, 15)
+    if rank == "Muted":
+        return 0
+
+    quality = min(max(row.get("quality_score", row.get("score", 0)), 0), 20)
+    quality_bonus = quality / 20 * 8
+    ratio_bonus = min(max(row.get("value_ratio", 0), 0), 1) * 4
+    confidence_bonus = {"high": 4, "medium": 2, "low": 0}.get(row.get("confidence"), 0)
+    recent_bonus = 0
+    if row.get("recent_valuable_posts", 0) > 0:
+        recent_bonus = min(4, row.get("recent_valuable_posts", 0))
+    return round(min(100, base + quality_bonus + ratio_bonus + confidence_bonus + recent_bonus), 1)
+
+
+def _x_account_role_tags(top_reasons):
+    top_reasons = top_reasons or {}
+    tags = []
+    if top_reasons.get("future_schedule", 0) + top_reasons.get("schedule_like", 0) > 0:
+        tags.append("発見型")
+    if any(top_reasons.get(k, 0) for k in ("venue", "date_time", "media_hint", "link")):
+        tags.append("裏取り型")
+    if top_reasons.get("experience", 0):
+        tags.append("参加レポ型")
+    if top_reasons.get("venue", 0):
+        tags.append("地域/会場型")
+    if not tags and top_reasons.get("context", 0):
+        tags.append("文脈確認型")
+    return tags
+
+
 def _build_x_account_scores(voices, cfg=None):
     """voices.json などの過去投稿からアカウント価値スコアを作る。"""
     cfg = cfg or {}
     known = _load_known_venues()
+    ranking_cfg = cfg.get("account_ranking", {})
+    recent_days = ranking_cfg.get("recent_days", 30)
+    recent_cutoff = datetime.now(timezone.utc) - timedelta(days=recent_days)
     accounts = {}
     for v in voices:
         if v.get("source") not in ("x", "x_whitelist"):
@@ -901,6 +1005,10 @@ def _build_x_account_scores(voices, cfg=None):
             "value_points": 0.0,
             "last_seen": "",
             "top_reasons": {},
+            "recent_posts_seen": 0,
+            "recent_valuable_posts": 0,
+            "recent_noise_posts": 0,
+            "recent_value_points": 0.0,
         })
         row["posts_seen"] += 1
         value, reasons = _x_post_value_score(v, cfg, known)
@@ -909,13 +1017,25 @@ def _build_x_account_scores(voices, cfg=None):
             row["valuable_posts"] += 1
         if value < 0:
             row["noise_posts"] += 1
+        dt = _voice_datetime(v)
+        if dt:
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=timezone.utc)
+            else:
+                dt = dt.astimezone(timezone.utc)
+        if dt and dt >= recent_cutoff:
+            row["recent_posts_seen"] += 1
+            row["recent_value_points"] += value
+            if value >= 4:
+                row["recent_valuable_posts"] += 1
+            if value < 0:
+                row["recent_noise_posts"] += 1
         date = v.get("date") or ""
         if date > row["last_seen"]:
             row["last_seen"] = date
         for r in reasons:
             row["top_reasons"][r] = row["top_reasons"].get(r, 0) + 1
 
-    ranking_cfg = cfg.get("account_ranking", {})
     muted_min_posts = ranking_cfg.get("muted_min_posts", 5)
     muted_max_score = ranking_cfg.get("muted_max_score", 1.5)
     trusted_min_score = ranking_cfg.get("trusted_min_score", 6.0)
@@ -923,11 +1043,28 @@ def _build_x_account_scores(voices, cfg=None):
 
     for row in accounts.values():
         posts = max(row["posts_seen"], 1)
-        score = row["value_points"] / posts
-        score += min(4.0, row["valuable_posts"] * 0.4)
-        score -= min(3.0, row["noise_posts"] * 0.6)
-        row["score"] = round(score, 3)
+        lifetime_score = row["value_points"] / posts
+        lifetime_score += min(4.0, row["valuable_posts"] * 0.4)
+        lifetime_score -= min(3.0, row["noise_posts"] * 0.6)
+        row["lifetime_score"] = round(lifetime_score, 3)
+        recent_posts = max(row["recent_posts_seen"], 1)
+        recent_score = row["recent_value_points"] / recent_posts
+        recent_score += min(4.0, row["recent_valuable_posts"] * 0.4)
+        recent_score -= min(3.0, row["recent_noise_posts"] * 0.6)
+        row["recent_score"] = round(recent_score, 3) if row["recent_posts_seen"] else 0
+        row["recent_days"] = recent_days
+        row["quality_score"] = _x_account_composite_score(
+            row["lifetime_score"],
+            row["recent_score"],
+            row["recent_posts_seen"],
+        )
+        # 後方互換: 既存の score は品質スコアとして扱う。
+        row["score"] = row["quality_score"]
         row["value_ratio"] = round(row["valuable_posts"] / posts, 3)
+        row["recent_value_ratio"] = round(
+            row["recent_valuable_posts"] / max(row["recent_posts_seen"], 1),
+            3,
+        ) if row["recent_posts_seen"] else 0
         if row["posts_seen"] >= muted_min_posts and row["score"] < muted_max_score:
             row["status"] = "muted"
         elif row["score"] >= trusted_min_score and row["valuable_posts"] >= trusted_min_values:
@@ -936,12 +1073,17 @@ def _build_x_account_scores(voices, cfg=None):
             row["status"] = "active"
         else:
             row["status"] = "probation"
+        row["confidence"] = _x_account_confidence(row)
+        row["usefulness_rank"] = _x_account_usefulness_rank(row)
+        row["usefulness_rank_number"] = _x_account_rank_number(row["usefulness_rank"])
+        row["usefulness_score"] = _x_account_usefulness_score(row)
+        row["role_tags"] = _x_account_role_tags(row.get("top_reasons", {}))
 
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "accounts": dict(sorted(
             accounts.items(),
-            key=lambda kv: (-kv[1].get("score", 0), kv[0])
+            key=lambda kv: (-kv[1].get("usefulness_score", 0), kv[0])
         )),
     }
 
@@ -989,23 +1131,47 @@ def _ensure_x_member_score_props():
                     ]
                 }
             },
-            "手動重み": {"number": {"format": "number"}},
-            "自動スコア": {"number": {"format": "number"}},
-            "収集ランク": {
+            "有益度スコア": {"number": {"format": "number"}},
+            "品質スコア": {"number": {"format": "number"}},
+            "通算品質スコア": {"number": {"format": "number"}},
+            "直近品質スコア": {"number": {"format": "number"}},
+            "投稿数": {"number": {"format": "number"}},
+            "直近投稿数": {"number": {"format": "number"}},
+            "価値投稿数": {"number": {"format": "number"}},
+            "直近価値投稿数": {"number": {"format": "number"}},
+            "有益ランク": {
                 "select": {
                     "options": [
-                        {"name": "trusted", "color": "green"},
-                        {"name": "active", "color": "blue"},
-                        {"name": "probation", "color": "yellow"},
-                        {"name": "muted", "color": "red"},
+                        {"name": "S", "color": "green"},
+                        {"name": "A", "color": "blue"},
+                        {"name": "B", "color": "purple"},
+                        {"name": "Candidate", "color": "yellow"},
+                        {"name": "Probation", "color": "gray"},
+                        {"name": "Muted", "color": "red"},
                     ]
                 }
             },
-            "投稿数": {"number": {"format": "number"}},
-            "価値投稿数": {"number": {"format": "number"}},
-            "未来予定投稿数": {"number": {"format": "number"}},
-            "最終評価日時": {"date": {}},
-            "評価理由": {"rich_text": {}},
+            "信頼度": {
+                "select": {
+                    "options": [
+                        {"name": "high", "color": "green"},
+                        {"name": "medium", "color": "yellow"},
+                        {"name": "low", "color": "gray"},
+                    ]
+                }
+            },
+            "得意タイプ": {
+                "multi_select": {
+                    "options": [
+                        {"name": "発見型", "color": "green"},
+                        {"name": "裏取り型", "color": "blue"},
+                        {"name": "参加レポ型", "color": "orange"},
+                        {"name": "地域/会場型", "color": "purple"},
+                        {"name": "文脈確認型", "color": "gray"},
+                    ]
+                }
+            },
+            "有益率": {"number": {"format": "percent"}},
         }
     }
     try:
@@ -1013,6 +1179,32 @@ def _ensure_x_member_score_props():
         return True
     except Exception as e:
         print(f"[rank] XメンバーリストDBのスコア用プロパティ作成をスキップ: {e}")
+        return False
+
+
+def _cleanup_x_member_obsolete_score_props():
+    """古い評価用プロパティを削除する。対象は明示リストに限定する。"""
+    if not NOTION_TOKEN:
+        return False
+    try:
+        database = _notion_request("GET", f"/databases/{X_MEMBER_LIST_DB_ID}")
+        existing = database.get("properties", {})
+        delete_props = {
+            name: None
+            for name in X_MEMBER_OBSOLETE_SCORE_PROPS
+            if name in existing
+        }
+        if not delete_props:
+            return True
+        _notion_request(
+            "PATCH",
+            f"/databases/{X_MEMBER_LIST_DB_ID}",
+            {"properties": delete_props},
+        )
+        print(f"[rank] Xメンバーリストの旧評価カラム削除: {', '.join(delete_props)}")
+        return True
+    except Exception as e:
+        print(f"[rank] Xメンバーリスト旧評価カラム削除をスキップ: {e}")
         return False
 
 
@@ -1036,24 +1228,27 @@ def _sync_x_account_scores_to_notion(accounts, cfg=None):
         return
     cfg = cfg or {}
     _ensure_x_member_score_props()
+    _cleanup_x_member_obsolete_score_props()
     scores = _load_x_account_scores(cfg).get("accounts", {})
-    now = datetime.now(timezone.utc).isoformat()
     updated = 0
     for account in accounts:
         page_id = account.get("page_id")
         row = scores.get(_norm_handle(account.get("handle")))
         if not page_id or not row:
             continue
-        reasons = row.get("top_reasons", {})
-        reason_text = ", ".join(f"{k}:{v}" for k, v in sorted(reasons.items(), key=lambda kv: (-kv[1], kv[0]))[:6])
         props = {
-            "自動スコア": {"number": row.get("score", 0)},
-            "収集ランク": {"select": {"name": row.get("status", "probation")}},
+            "有益度スコア": {"number": row.get("usefulness_score", 0)},
+            "品質スコア": {"number": row.get("quality_score", row.get("score", 0))},
+            "通算品質スコア": {"number": row.get("lifetime_score", row.get("score", 0))},
+            "直近品質スコア": {"number": row.get("recent_score", 0)},
             "投稿数": {"number": row.get("posts_seen", 0)},
+            "直近投稿数": {"number": row.get("recent_posts_seen", 0)},
             "価値投稿数": {"number": row.get("valuable_posts", 0)},
-            "未来予定投稿数": {"number": reasons.get("future_schedule", 0)},
-            "最終評価日時": {"date": {"start": now}},
-            "評価理由": {"rich_text": [{"text": {"content": reason_text[:1900]}}]},
+            "直近価値投稿数": {"number": row.get("recent_valuable_posts", 0)},
+            "有益ランク": {"select": {"name": row.get("usefulness_rank", "Probation")}},
+            "信頼度": {"select": {"name": row.get("confidence", "low")}},
+            "得意タイプ": {"multi_select": [{"name": tag} for tag in row.get("role_tags", [])]},
+            "有益率": {"number": row.get("value_ratio", 0)},
         }
         _update_page_props_best_effort(page_id, props)
         updated += 1
@@ -1088,7 +1283,6 @@ def _rank_whitelist_accounts(accounts, cfg=None):
         key = _norm_handle(h)
         row = scores.get(key)
         manual_status = account.get("manual_status", "")
-        manual_weight = account.get("manual_weight", 0) or 0
         if not row:
             since = backfill_since if unknown_count < max_backfill else regular_since
             unknown_count += 1
@@ -1096,10 +1290,10 @@ def _rank_whitelist_accounts(accounts, cfg=None):
             if manual_status == "休止":
                 muted.append({"handle": h, "page_id": account.get("page_id", ""), "since": regular_since, "reason": "manual_muted", "score": -999})
             else:
-                ranked.append({"handle": h, "page_id": account.get("page_id", ""), "since": since, "reason": reason, "score": manual_weight})
+                ranked.append({"handle": h, "page_id": account.get("page_id", ""), "since": since, "reason": reason, "score": 0})
             continue
         status = row.get("status")
-        score = row.get("score", 0) + manual_weight
+        score = row.get("usefulness_score", row.get("score", 0))
         if manual_status == "優先":
             status = "manual_priority"
             score += 100
@@ -1221,7 +1415,6 @@ def add_promoted_x_members(review_results):
         print(f"[review->notion] メンバーリスト確認失敗、追加中止: {e}")
         return summary
 
-    now = datetime.now(timezone.utc).isoformat()
     account_schema = schema.get("アカウント (@)", {})
     for row in promoted:
         handle = _norm_handle(row.get("handle"))
@@ -1243,30 +1436,30 @@ def add_promoted_x_members(review_results):
             props["プロフィールURL"] = {"url": f"https://x.com/{handle}"}
         if schema.get("収集ステータス", {}).get("type") == "select":
             props["収集ステータス"] = {"select": {"name": "通常"}}
-        if schema.get("自動スコア", {}).get("type") == "number":
-            props["自動スコア"] = {"number": row.get("promote_score", 0)}
-        if schema.get("収集ランク", {}).get("type") == "select":
-            props["収集ランク"] = {"select": {"name": "active"}}
+        if schema.get("有益度スコア", {}).get("type") == "number":
+            props["有益度スコア"] = {"number": 35}
+        if schema.get("品質スコア", {}).get("type") == "number":
+            props["品質スコア"] = {"number": row.get("promote_score", 0)}
+        if schema.get("通算品質スコア", {}).get("type") == "number":
+            props["通算品質スコア"] = {"number": row.get("promote_score", 0)}
+        if schema.get("直近品質スコア", {}).get("type") == "number":
+            props["直近品質スコア"] = {"number": row.get("promote_score", 0)}
         if schema.get("投稿数", {}).get("type") == "number":
             props["投稿数"] = {"number": row.get("tweets_checked", 0)}
+        if schema.get("直近投稿数", {}).get("type") == "number":
+            props["直近投稿数"] = {"number": row.get("tweets_checked", 0)}
         if schema.get("価値投稿数", {}).get("type") == "number":
             props["価値投稿数"] = {"number": row.get("valuable_posts", 0)}
-        if schema.get("未来予定投稿数", {}).get("type") == "number":
-            props["未来予定投稿数"] = {"number": row.get("future_schedule_posts", 0)}
-        if schema.get("最終評価日時", {}).get("type") == "date":
-            props["最終評価日時"] = {"date": {"start": now}}
-        if schema.get("評価理由", {}).get("type") == "rich_text":
-            reasons = ", ".join(
-                f"{key}:{value}" for key, value in sorted(
-                    row.get("reason_counts", {}).items(),
-                    key=lambda item: (-item[1], item[0]),
-                )[:6]
-            )
-            reason_text = (
-                f"候補レビュー自動追加; promote_score:{row.get('promote_score', 0)}; "
-                f"{reasons}"
-            ).rstrip("; ")
-            props["評価理由"] = _notion_text_property("rich_text", reason_text)
+        if schema.get("直近価値投稿数", {}).get("type") == "number":
+            props["直近価値投稿数"] = {"number": row.get("valuable_posts", 0)}
+        if schema.get("有益ランク", {}).get("type") == "select":
+            props["有益ランク"] = {"select": {"name": "Candidate"}}
+        if schema.get("信頼度", {}).get("type") == "select":
+            props["信頼度"] = {"select": {"name": "low"}}
+        if schema.get("得意タイプ", {}).get("type") == "multi_select":
+            props["得意タイプ"] = {
+                "multi_select": [{"name": "発見型"}, {"name": "裏取り型"}]
+            }
 
         try:
             _notion_request(
@@ -1293,7 +1486,6 @@ def load_whitelist_accounts():
 
     任意プロパティ:
     - 収集ステータス: 優先 / 通常 / 休止
-    - 手動重み: number（スコアに加算）
     既存DBに無ければ無視する。
     """
     if not NOTION_TOKEN:
@@ -1315,7 +1507,6 @@ def load_whitelist_accounts():
                         "handle": h,
                         "page_id": row.get("id", ""),
                         "manual_status": _prop_select(props.get("収集ステータス", {})),
-                        "manual_weight": _prop_number(props.get("手動重み", {})) or 0,
                     })
             if not data.get("has_more"):
                 break

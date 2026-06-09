@@ -1,0 +1,1873 @@
+{
+  "generated_at": "2026-06-09T15:36:18.432428+00:00",
+  "accounts": [
+    {
+      "page_id": "37a8be04-e762-81d7-ab94-dcbbd733531b",
+      "handle": "@kaz0045",
+      "display_name": "オレンジ（Mishima Kazuhiro）",
+      "account_type": "盆踊りダンサー",
+      "operation_tags": [
+        "定期巡回",
+        "要確認"
+      ],
+      "specialty_types": [
+        "発見型",
+        "裏取り型",
+        "参加レポ型"
+      ],
+      "reason": "tweet_experience",
+      "rank": "B",
+      "usefulness_score": 67.6,
+      "confidence": "low",
+      "valuable_posts": 2,
+      "current": {
+        "account_type": "",
+        "operation_tags": [],
+        "specialty_types": [
+          "発見型",
+          "裏取り型",
+          "参加レポ型"
+        ]
+      }
+    },
+    {
+      "page_id": "37a8be04-e762-81be-910e-ca0994594076",
+      "handle": "@qtjittan",
+      "display_name": "jittan",
+      "account_type": "盆踊りダンサー",
+      "operation_tags": [
+        "定期巡回",
+        "要確認"
+      ],
+      "specialty_types": [
+        "参加レポ型"
+      ],
+      "reason": "tweet_experience",
+      "rank": "B",
+      "usefulness_score": 62.7,
+      "confidence": "low",
+      "valuable_posts": 2,
+      "current": {
+        "account_type": "",
+        "operation_tags": [],
+        "specialty_types": [
+          "参加レポ型"
+        ]
+      }
+    },
+    {
+      "page_id": "37a8be04-e762-8158-9342-c7b859ea09b7",
+      "handle": "@gokuraku_15",
+      "display_name": "さとまり",
+      "account_type": "地域コミュニティ",
+      "operation_tags": [
+        "定期巡回",
+        "要確認"
+      ],
+      "specialty_types": [
+        "裏取り型",
+        "地域/会場型"
+      ],
+      "reason": "tweet_venue",
+      "rank": "B",
+      "usefulness_score": 64.7,
+      "confidence": "low",
+      "valuable_posts": 2,
+      "current": {
+        "account_type": "",
+        "operation_tags": [],
+        "specialty_types": [
+          "裏取り型",
+          "地域/会場型"
+        ]
+      }
+    },
+    {
+      "page_id": "37a8be04-e762-8161-8a16-c2c57665ab14",
+      "handle": "@kasui21",
+      "display_name": "逢樹ひろ",
+      "account_type": "盆踊りダンサー",
+      "operation_tags": [
+        "定期巡回",
+        "要確認"
+      ],
+      "specialty_types": [
+        "裏取り型",
+        "参加レポ型"
+      ],
+      "reason": "tweet_experience",
+      "rank": "B",
+      "usefulness_score": 65.7,
+      "confidence": "low",
+      "valuable_posts": 2,
+      "current": {
+        "account_type": "",
+        "operation_tags": [],
+        "specialty_types": [
+          "裏取り型",
+          "参加レポ型"
+        ]
+      }
+    },
+    {
+      "page_id": "37a8be04-e762-813e-ab01-dbbb7d89b965",
+      "handle": "@tadashi_isono",
+      "display_name": "いその忠　(中央区議会議員)",
+      "account_type": "地域コミュニティ",
+      "operation_tags": [
+        "定期巡回",
+        "要確認"
+      ],
+      "specialty_types": [
+        "発見型",
+        "裏取り型",
+        "地域/会場型"
+      ],
+      "reason": "profile_community",
+      "rank": "B",
+      "usefulness_score": 68.0,
+      "confidence": "low",
+      "valuable_posts": 2,
+      "current": {
+        "account_type": "",
+        "operation_tags": [],
+        "specialty_types": [
+          "発見型",
+          "裏取り型",
+          "地域/会場型"
+        ]
+      }
+    },
+    {
+      "page_id": "3788be04-e762-810c-8780-c3c62fedec21",
+      "handle": "@yumiya_pon",
+      "display_name": "@yumiya_pon",
+      "account_type": "盆踊りダンサー",
+      "operation_tags": [
+        "VIP",
+        "定期巡回"
+      ],
+      "specialty_types": [
+        "発見型",
+        "裏取り型",
+        "参加レポ型"
+      ],
+      "reason": "tweet_experience",
+      "rank": "A",
+      "usefulness_score": 89.8,
+      "confidence": "medium",
+      "valuable_posts": 6,
+      "current": {
+        "account_type": "盆踊りダンサー",
+        "operation_tags": [
+          "要確認"
+        ],
+        "specialty_types": [
+          "発見型",
+          "裏取り型",
+          "参加レポ型"
+        ]
+      }
+    },
+    {
+      "page_id": "3788be04-e762-8116-b2b0-da88c927e3b4",
+      "handle": "@middonaitogaru",
+      "display_name": "@middonaitogaru",
+      "account_type": "盆踊りダンサー",
+      "operation_tags": [
+        "VIP",
+        "定期巡回"
+      ],
+      "specialty_types": [
+        "裏取り型",
+        "参加レポ型"
+      ],
+      "reason": "tweet_experience",
+      "rank": "A",
+      "usefulness_score": 86.8,
+      "confidence": "medium",
+      "valuable_posts": 5,
+      "current": {
+        "account_type": "盆踊りダンサー",
+        "operation_tags": [
+          "要確認"
+        ],
+        "specialty_types": [
+          "裏取り型",
+          "参加レポ型"
+        ]
+      }
+    },
+    {
+      "page_id": "3788be04-e762-813e-8ca3-e2868521fe6d",
+      "handle": "@rollingasahi",
+      "display_name": "@rollingasahi",
+      "account_type": "情報発信者",
+      "operation_tags": [
+        "VIP",
+        "定期巡回"
+      ],
+      "specialty_types": [
+        "裏取り型"
+      ],
+      "reason": "tweet_info",
+      "rank": "A",
+      "usefulness_score": 89.2,
+      "confidence": "medium",
+      "valuable_posts": 5,
+      "current": {
+        "account_type": "盆踊りダンサー",
+        "operation_tags": [
+          "要確認"
+        ],
+        "specialty_types": [
+          "裏取り型"
+        ]
+      }
+    },
+    {
+      "page_id": "3788be04-e762-8150-9c74-fe59823cdbb4",
+      "handle": "@abydos_i_nonomi",
+      "display_name": "@abydos_i_nonomi",
+      "account_type": "情報発信者",
+      "operation_tags": [
+        "VIP",
+        "定期巡回",
+        "要確認"
+      ],
+      "specialty_types": [
+        "文脈確認型"
+      ],
+      "reason": "valuable_posts",
+      "rank": "B",
+      "usefulness_score": 66.4,
+      "confidence": "low",
+      "valuable_posts": 4,
+      "current": {
+        "account_type": "盆踊りダンサー",
+        "operation_tags": [
+          "要確認"
+        ],
+        "specialty_types": [
+          "文脈確認型"
+        ]
+      }
+    },
+    {
+      "page_id": "3788be04-e762-8156-b004-daf2766b8af2",
+      "handle": "@takasho06130613",
+      "display_name": "@takasho06130613",
+      "account_type": "盆踊りダンサー",
+      "operation_tags": [
+        "VIP",
+        "定期巡回"
+      ],
+      "specialty_types": [
+        "裏取り型",
+        "参加レポ型",
+        "地域/会場型"
+      ],
+      "reason": "tweet_experience",
+      "rank": "A",
+      "usefulness_score": 90.0,
+      "confidence": "medium",
+      "valuable_posts": 5,
+      "current": {
+        "account_type": "盆踊りダンサー",
+        "operation_tags": [
+          "要確認"
+        ],
+        "specialty_types": [
+          "裏取り型",
+          "参加レポ型",
+          "地域/会場型"
+        ]
+      }
+    },
+    {
+      "page_id": "3788be04-e762-815a-b622-eec41fdbc8f5",
+      "handle": "@odori2024minato",
+      "display_name": "@odori2024minato",
+      "account_type": "地域コミュニティ",
+      "operation_tags": [
+        "VIP",
+        "定期巡回"
+      ],
+      "specialty_types": [
+        "発見型",
+        "裏取り型",
+        "地域/会場型"
+      ],
+      "reason": "tweet_venue",
+      "rank": "A",
+      "usefulness_score": 88.1,
+      "confidence": "medium",
+      "valuable_posts": 5,
+      "current": {
+        "account_type": "盆踊りダンサー",
+        "operation_tags": [
+          "要確認"
+        ],
+        "specialty_types": [
+          "発見型",
+          "裏取り型",
+          "地域/会場型"
+        ]
+      }
+    },
+    {
+      "page_id": "3788be04-e762-8189-b815-ecdb3657714b",
+      "handle": "@sasakichi_akiba",
+      "display_name": "@sasakichi_akiba",
+      "account_type": "盆踊りダンサー",
+      "operation_tags": [
+        "VIP",
+        "定期巡回"
+      ],
+      "specialty_types": [
+        "発見型",
+        "裏取り型",
+        "参加レポ型"
+      ],
+      "reason": "tweet_experience",
+      "rank": "S",
+      "usefulness_score": 100,
+      "confidence": "high",
+      "valuable_posts": 11,
+      "current": {
+        "account_type": "盆踊りダンサー",
+        "operation_tags": [
+          "要確認"
+        ],
+        "specialty_types": [
+          "発見型",
+          "裏取り型",
+          "参加レポ型"
+        ]
+      }
+    },
+    {
+      "page_id": "3788be04-e762-8190-8ecf-fba0ab15cd48",
+      "handle": "@dakafo10",
+      "display_name": "@dakafo10",
+      "account_type": "情報発信者",
+      "operation_tags": [
+        "VIP",
+        "定期巡回",
+        "要確認"
+      ],
+      "specialty_types": [
+        "文脈確認型"
+      ],
+      "reason": "valuable_posts",
+      "rank": "B",
+      "usefulness_score": 66.4,
+      "confidence": "low",
+      "valuable_posts": 4,
+      "current": {
+        "account_type": "盆踊りダンサー",
+        "operation_tags": [
+          "要確認"
+        ],
+        "specialty_types": [
+          "文脈確認型"
+        ]
+      }
+    },
+    {
+      "page_id": "3788be04-e762-81bf-b582-c5b0038a42f9",
+      "handle": "@niinobon_uta",
+      "display_name": "@niinobon_uta",
+      "account_type": "情報発信者",
+      "operation_tags": [
+        "VIP",
+        "定期巡回"
+      ],
+      "specialty_types": [
+        "文脈確認型"
+      ],
+      "reason": "valuable_posts",
+      "rank": "A",
+      "usefulness_score": 89.2,
+      "confidence": "medium",
+      "valuable_posts": 9,
+      "current": {
+        "account_type": "盆踊りダンサー",
+        "operation_tags": [
+          "要確認"
+        ],
+        "specialty_types": [
+          "文脈確認型"
+        ]
+      }
+    },
+    {
+      "page_id": "3788be04-e762-81e0-8164-d5cec6a319c8",
+      "handle": "@event_finderjp",
+      "display_name": "@event_finderjp",
+      "account_type": "地域コミュニティ",
+      "operation_tags": [
+        "VIP",
+        "定期巡回",
+        "要確認"
+      ],
+      "specialty_types": [
+        "発見型",
+        "裏取り型",
+        "地域/会場型"
+      ],
+      "reason": "tweet_venue",
+      "rank": "B",
+      "usefulness_score": 64.9,
+      "confidence": "low",
+      "valuable_posts": 4,
+      "current": {
+        "account_type": "盆踊りダンサー",
+        "operation_tags": [
+          "要確認"
+        ],
+        "specialty_types": [
+          "発見型",
+          "裏取り型",
+          "地域/会場型"
+        ]
+      }
+    },
+    {
+      "page_id": "3788be04-e762-81ef-8180-d47f11e4be7c",
+      "handle": "@natsutr_bon",
+      "display_name": "@natsutr_bon",
+      "account_type": "盆踊りダンサー",
+      "operation_tags": [
+        "VIP",
+        "定期巡回"
+      ],
+      "specialty_types": [
+        "発見型",
+        "裏取り型",
+        "参加レポ型",
+        "地域/会場型"
+      ],
+      "reason": "tweet_experience",
+      "rank": "A",
+      "usefulness_score": 92.6,
+      "confidence": "medium",
+      "valuable_posts": 8,
+      "current": {
+        "account_type": "盆踊りダンサー",
+        "operation_tags": [
+          "要確認"
+        ],
+        "specialty_types": [
+          "発見型",
+          "裏取り型",
+          "参加レポ型",
+          "地域/会場型"
+        ]
+      }
+    },
+    {
+      "page_id": "3788be04-e762-816a-8d3c-e06706e8130e",
+      "handle": "@bremen_ohshima",
+      "display_name": "ブレーメン大島",
+      "account_type": "盆踊りダンサー",
+      "operation_tags": [
+        "定期巡回"
+      ],
+      "specialty_types": [
+        "発見型",
+        "裏取り型",
+        "参加レポ型",
+        "地域/会場型"
+      ],
+      "reason": "tweet_experience",
+      "rank": "A",
+      "usefulness_score": 87.3,
+      "confidence": "medium",
+      "valuable_posts": 6,
+      "current": {
+        "account_type": "情報発信者",
+        "operation_tags": [
+          "要確認"
+        ],
+        "specialty_types": [
+          "発見型",
+          "裏取り型",
+          "参加レポ型",
+          "地域/会場型"
+        ]
+      }
+    },
+    {
+      "page_id": "3778be04-e762-818a-a72b-fd8be2a25047",
+      "handle": "@kasumi_1030_",
+      "display_name": "かすみ",
+      "account_type": "情報発信者",
+      "operation_tags": [
+        "要確認"
+      ],
+      "specialty_types": [
+        "裏取り型"
+      ],
+      "reason": "tweet_info",
+      "rank": "Probation",
+      "usefulness_score": 15.4,
+      "confidence": "low",
+      "valuable_posts": 0,
+      "current": {
+        "account_type": "",
+        "operation_tags": [],
+        "specialty_types": [
+          "裏取り型"
+        ]
+      }
+    },
+    {
+      "page_id": "3778be04-e762-8171-86fb-c84194127565",
+      "handle": "@pw9skrdcfyjfxfv",
+      "display_name": "み",
+      "account_type": "盆踊りダンサー",
+      "operation_tags": [
+        "VIP",
+        "定期巡回"
+      ],
+      "specialty_types": [
+        "発見型",
+        "裏取り型",
+        "参加レポ型",
+        "地域/会場型"
+      ],
+      "reason": "tweet_experience",
+      "rank": "S",
+      "usefulness_score": 100,
+      "confidence": "high",
+      "valuable_posts": 10,
+      "current": {
+        "account_type": "",
+        "operation_tags": [],
+        "specialty_types": [
+          "発見型",
+          "裏取り型",
+          "参加レポ型",
+          "地域/会場型"
+        ]
+      }
+    },
+    {
+      "page_id": "3778be04-e762-816c-920f-cd71d3029d5b",
+      "handle": "@m125m8qgyhwuehs",
+      "display_name": "みそみそ3",
+      "account_type": "盆踊りダンサー",
+      "operation_tags": [
+        "VIP",
+        "定期巡回"
+      ],
+      "specialty_types": [
+        "発見型",
+        "裏取り型",
+        "参加レポ型",
+        "地域/会場型"
+      ],
+      "reason": "tweet_experience",
+      "rank": "S",
+      "usefulness_score": 100,
+      "confidence": "high",
+      "valuable_posts": 9,
+      "current": {
+        "account_type": "",
+        "operation_tags": [],
+        "specialty_types": [
+          "発見型",
+          "裏取り型",
+          "参加レポ型",
+          "地域/会場型"
+        ]
+      }
+    },
+    {
+      "page_id": "3778be04-e762-8112-a5ce-fe049856a134",
+      "handle": "@p_peanuts",
+      "display_name": "ぺーちゃん",
+      "account_type": "その他",
+      "operation_tags": [
+        "要確認"
+      ],
+      "specialty_types": [
+        "文脈確認型"
+      ],
+      "reason": "weak_signal",
+      "rank": "",
+      "usefulness_score": 0,
+      "confidence": "",
+      "valuable_posts": 0,
+      "current": {
+        "account_type": "",
+        "operation_tags": [],
+        "specialty_types": []
+      }
+    },
+    {
+      "page_id": "3778be04-e762-81e2-a3a1-dc910a346d3a",
+      "handle": "@siroian333",
+      "display_name": "白井杏",
+      "account_type": "その他",
+      "operation_tags": [
+        "要確認"
+      ],
+      "specialty_types": [
+        "文脈確認型"
+      ],
+      "reason": "weak_signal",
+      "rank": "",
+      "usefulness_score": 0,
+      "confidence": "",
+      "valuable_posts": 0,
+      "current": {
+        "account_type": "",
+        "operation_tags": [],
+        "specialty_types": []
+      }
+    },
+    {
+      "page_id": "3778be04-e762-8150-9990-c31bd408c689",
+      "handle": "@bonusagi123",
+      "display_name": "盆踊りをこよなく愛するうさぎ🐰",
+      "account_type": "盆踊りダンサー",
+      "operation_tags": [
+        "要確認"
+      ],
+      "specialty_types": [
+        "裏取り型"
+      ],
+      "reason": "profile_dancer",
+      "rank": "Probation",
+      "usefulness_score": 15.7,
+      "confidence": "low",
+      "valuable_posts": 0,
+      "current": {
+        "account_type": "",
+        "operation_tags": [],
+        "specialty_types": [
+          "裏取り型"
+        ]
+      }
+    },
+    {
+      "page_id": "3778be04-e762-81a6-99ef-f12ccc1dd7e9",
+      "handle": "@bababajintou",
+      "display_name": "え〜いD",
+      "account_type": "情報発信者",
+      "operation_tags": [
+        "要確認"
+      ],
+      "specialty_types": [
+        "裏取り型"
+      ],
+      "reason": "tweet_info",
+      "rank": "Probation",
+      "usefulness_score": 15.8,
+      "confidence": "low",
+      "valuable_posts": 0,
+      "current": {
+        "account_type": "",
+        "operation_tags": [],
+        "specialty_types": [
+          "裏取り型"
+        ]
+      }
+    },
+    {
+      "page_id": "3778be04-e762-81a4-bd75-e0842df6bb86",
+      "handle": "@kuzunavi",
+      "display_name": "ハダ盆(秦野で楽しく盆踊り)",
+      "account_type": "盆踊りダンサー",
+      "operation_tags": [
+        "定期巡回"
+      ],
+      "specialty_types": [
+        "発見型",
+        "裏取り型",
+        "参加レポ型"
+      ],
+      "reason": "profile_dancer",
+      "rank": "A",
+      "usefulness_score": 85.2,
+      "confidence": "medium",
+      "valuable_posts": 5,
+      "current": {
+        "account_type": "",
+        "operation_tags": [],
+        "specialty_types": [
+          "発見型",
+          "裏取り型",
+          "参加レポ型"
+        ]
+      }
+    },
+    {
+      "page_id": "3778be04-e762-8198-8cd6-df37219f3666",
+      "handle": "@okeeboho",
+      "display_name": "きー坊",
+      "account_type": "盆踊りダンサー",
+      "operation_tags": [
+        "定期巡回",
+        "要確認"
+      ],
+      "specialty_types": [
+        "裏取り型",
+        "参加レポ型"
+      ],
+      "reason": "tweet_experience",
+      "rank": "B",
+      "usefulness_score": 59.6,
+      "confidence": "low",
+      "valuable_posts": 2,
+      "current": {
+        "account_type": "",
+        "operation_tags": [],
+        "specialty_types": [
+          "裏取り型",
+          "参加レポ型"
+        ]
+      }
+    },
+    {
+      "page_id": "3778be04-e762-81d5-92cc-e0c6f53d29bd",
+      "handle": "@ocha_bon",
+      "display_name": "お茶大盆踊りサークル",
+      "account_type": "盆踊りダンサー",
+      "operation_tags": [
+        "定期巡回"
+      ],
+      "specialty_types": [
+        "裏取り型",
+        "参加レポ型"
+      ],
+      "reason": "profile_dancer",
+      "rank": "A",
+      "usefulness_score": 87.1,
+      "confidence": "medium",
+      "valuable_posts": 5,
+      "current": {
+        "account_type": "",
+        "operation_tags": [],
+        "specialty_types": [
+          "裏取り型",
+          "参加レポ型"
+        ]
+      }
+    },
+    {
+      "page_id": "3778be04-e762-8179-9e2d-e5143d183430",
+      "handle": "@hideshanbonbon",
+      "display_name": "hideshan（ヒデシャン）",
+      "account_type": "盆踊りダンサー",
+      "operation_tags": [
+        "定期巡回"
+      ],
+      "specialty_types": [
+        "発見型",
+        "裏取り型",
+        "参加レポ型"
+      ],
+      "reason": "tweet_experience",
+      "rank": "A",
+      "usefulness_score": 87.6,
+      "confidence": "medium",
+      "valuable_posts": 7,
+      "current": {
+        "account_type": "",
+        "operation_tags": [],
+        "specialty_types": [
+          "発見型",
+          "裏取り型",
+          "参加レポ型"
+        ]
+      }
+    },
+    {
+      "page_id": "3778be04-e762-810a-94f0-f39392de2042",
+      "handle": "@5khfya5pjksggov",
+      "display_name": "たすき(掛)",
+      "account_type": "盆踊りダンサー",
+      "operation_tags": [
+        "VIP",
+        "定期巡回"
+      ],
+      "specialty_types": [
+        "発見型",
+        "裏取り型",
+        "参加レポ型"
+      ],
+      "reason": "tweet_experience",
+      "rank": "S",
+      "usefulness_score": 100,
+      "confidence": "high",
+      "valuable_posts": 9,
+      "current": {
+        "account_type": "",
+        "operation_tags": [],
+        "specialty_types": [
+          "発見型",
+          "裏取り型",
+          "参加レポ型"
+        ]
+      }
+    },
+    {
+      "page_id": "3778be04-e762-8136-b4a0-e4db2bed20b0",
+      "handle": "@bon__juu",
+      "display_name": "盆獣 ・Bonjū",
+      "account_type": "盆踊りダンサー",
+      "operation_tags": [
+        "VIP",
+        "定期巡回"
+      ],
+      "specialty_types": [
+        "発見型",
+        "裏取り型",
+        "参加レポ型"
+      ],
+      "reason": "tweet_experience",
+      "rank": "S",
+      "usefulness_score": 100,
+      "confidence": "high",
+      "valuable_posts": 8,
+      "current": {
+        "account_type": "",
+        "operation_tags": [],
+        "specialty_types": [
+          "発見型",
+          "裏取り型",
+          "参加レポ型"
+        ]
+      }
+    },
+    {
+      "page_id": "3778be04-e762-81ea-aaba-f42430a685fd",
+      "handle": "@kyeong27",
+      "display_name": "京姫",
+      "account_type": "その他",
+      "operation_tags": [
+        "要確認"
+      ],
+      "specialty_types": [
+        "文脈確認型"
+      ],
+      "reason": "weak_signal",
+      "rank": "",
+      "usefulness_score": 0,
+      "confidence": "",
+      "valuable_posts": 0,
+      "current": {
+        "account_type": "",
+        "operation_tags": [],
+        "specialty_types": []
+      }
+    },
+    {
+      "page_id": "3778be04-e762-8141-a93a-fe06ba87af64",
+      "handle": "@yurubon_off",
+      "display_name": "ゆる盆オフ",
+      "account_type": "情報発信者",
+      "operation_tags": [
+        "定期巡回",
+        "要確認"
+      ],
+      "specialty_types": [
+        "発見型",
+        "裏取り型"
+      ],
+      "reason": "tweet_info",
+      "rank": "B",
+      "usefulness_score": 67.5,
+      "confidence": "low",
+      "valuable_posts": 2,
+      "current": {
+        "account_type": "",
+        "operation_tags": [],
+        "specialty_types": [
+          "発見型",
+          "裏取り型"
+        ]
+      }
+    },
+    {
+      "page_id": "36c8be04-e762-8104-96e1-fc3b7245515b",
+      "handle": "@mariya_ukonya",
+      "display_name": "孝藤右近-東大盆踊り講座非常勤講師",
+      "account_type": "盆踊り関連メディア",
+      "operation_tags": [
+        "定期巡回",
+        "要確認"
+      ],
+      "specialty_types": [
+        "裏取り型"
+      ],
+      "reason": "profile_media",
+      "rank": "Probation",
+      "usefulness_score": 15.4,
+      "confidence": "low",
+      "valuable_posts": 0,
+      "current": {
+        "account_type": "盆踊りダンサー",
+        "operation_tags": [
+          "定期巡回",
+          "VIP"
+        ],
+        "specialty_types": [
+          "裏取り型"
+        ]
+      }
+    },
+    {
+      "page_id": "36c8be04-e762-8141-a8f2-f2fad0b8d085",
+      "handle": "@agehabijo",
+      "display_name": "鳳蝶美成（あげは びじょう）",
+      "account_type": "盆踊り主催者",
+      "operation_tags": [
+        "VIP",
+        "定期巡回"
+      ],
+      "specialty_types": [
+        "発見型",
+        "裏取り型",
+        "地域/会場型"
+      ],
+      "reason": "profile_organizer",
+      "rank": "A",
+      "usefulness_score": 91.2,
+      "confidence": "medium",
+      "valuable_posts": 5,
+      "current": {
+        "account_type": "盆踊り主催者",
+        "operation_tags": [
+          "定期巡回",
+          "VIP"
+        ],
+        "specialty_types": [
+          "発見型",
+          "裏取り型",
+          "地域/会場型"
+        ]
+      }
+    },
+    {
+      "page_id": "36c8be04-e762-8149-b766-e80e43c6a86a",
+      "handle": "@stba_bonodori",
+      "display_name": "下町台東盆踊り協議会",
+      "account_type": "盆踊りダンサー",
+      "operation_tags": [
+        "VIP",
+        "定期巡回"
+      ],
+      "specialty_types": [
+        "発見型",
+        "裏取り型"
+      ],
+      "reason": "profile_dancer",
+      "rank": "A",
+      "usefulness_score": 90.0,
+      "confidence": "medium",
+      "valuable_posts": 6,
+      "current": {
+        "account_type": "盆踊り主催者",
+        "operation_tags": [
+          "定期巡回",
+          "VIP"
+        ],
+        "specialty_types": [
+          "発見型",
+          "裏取り型"
+        ]
+      }
+    },
+    {
+      "page_id": "36c8be04-e762-8176-8c58-f97a3985d84f",
+      "handle": "@nakano_bonodori",
+      "display_name": "中野駅前大盆踊り大会【公式】",
+      "account_type": "盆踊り主催者",
+      "operation_tags": [
+        "定期巡回",
+        "要確認"
+      ],
+      "specialty_types": [
+        "文脈確認型"
+      ],
+      "reason": "profile_organizer",
+      "rank": "Probation",
+      "usefulness_score": 15.0,
+      "confidence": "low",
+      "valuable_posts": 0,
+      "current": {
+        "account_type": "盆踊り主催者",
+        "operation_tags": [
+          "定期巡回",
+          "VIP"
+        ],
+        "specialty_types": []
+      }
+    },
+    {
+      "page_id": "36c8be04-e762-8176-a08b-d22be2c98ab5",
+      "handle": "@komaikai",
+      "display_name": "東京盆踊り「魂舞会」",
+      "account_type": "盆踊りダンサー",
+      "operation_tags": [
+        "VIP",
+        "定期巡回"
+      ],
+      "specialty_types": [
+        "発見型",
+        "裏取り型"
+      ],
+      "reason": "profile_dancer",
+      "rank": "A",
+      "usefulness_score": 90.0,
+      "confidence": "medium",
+      "valuable_posts": 5,
+      "current": {
+        "account_type": "盆踊り主催者",
+        "operation_tags": [
+          "定期巡回"
+        ],
+        "specialty_types": [
+          "発見型",
+          "裏取り型"
+        ]
+      }
+    },
+    {
+      "page_id": "36c8be04-e762-818b-94b2-f95ac3926bb8",
+      "handle": "@bonodorijapan",
+      "display_name": "日本盆踊り協会",
+      "account_type": "盆踊り主催者",
+      "operation_tags": [
+        "定期巡回",
+        "要確認"
+      ],
+      "specialty_types": [
+        "裏取り型"
+      ],
+      "reason": "profile_organizer",
+      "rank": "B",
+      "usefulness_score": 62.3,
+      "confidence": "low",
+      "valuable_posts": 2,
+      "current": {
+        "account_type": "盆踊り主催者",
+        "operation_tags": [
+          "定期巡回",
+          "VIP"
+        ],
+        "specialty_types": [
+          "裏取り型"
+        ]
+      }
+    },
+    {
+      "page_id": "36c8be04-e762-81d2-a207-c0ccf375dbdd",
+      "handle": "@shakuo_fujikawa",
+      "display_name": "shaku（藤川流応援サイト）",
+      "account_type": "盆踊りダンサー",
+      "operation_tags": [
+        "要確認"
+      ],
+      "specialty_types": [
+        "文脈確認型"
+      ],
+      "reason": "profile_dancer",
+      "rank": "",
+      "usefulness_score": 0,
+      "confidence": "",
+      "valuable_posts": 0,
+      "current": {
+        "account_type": "盆踊り関連メディア",
+        "operation_tags": [
+          "定期巡回"
+        ],
+        "specialty_types": []
+      }
+    },
+    {
+      "page_id": "36c8be04-e762-8134-a558-e34faf2362e3",
+      "handle": "@adfshunsuke2112",
+      "display_name": "望月 駿祐",
+      "account_type": "情報発信者",
+      "operation_tags": [
+        "定期巡回",
+        "要確認"
+      ],
+      "specialty_types": [
+        "発見型",
+        "裏取り型"
+      ],
+      "reason": "tweet_info",
+      "rank": "B",
+      "usefulness_score": 62.8,
+      "confidence": "low",
+      "valuable_posts": 2,
+      "current": {
+        "account_type": "その他",
+        "operation_tags": [
+          "定期巡回"
+        ],
+        "specialty_types": [
+          "発見型",
+          "裏取り型"
+        ]
+      }
+    },
+    {
+      "page_id": "36c8be04-e762-8135-8561-d321762fc5e4",
+      "handle": "@iwzpxdcccp30jb4",
+      "display_name": "つるちゃん",
+      "account_type": "盆踊りダンサー",
+      "operation_tags": [
+        "定期巡回",
+        "要確認"
+      ],
+      "specialty_types": [
+        "発見型",
+        "裏取り型"
+      ],
+      "reason": "profile_dancer",
+      "rank": "Candidate",
+      "usefulness_score": 38.4,
+      "confidence": "low",
+      "valuable_posts": 2,
+      "current": {
+        "account_type": "情報発信者",
+        "operation_tags": [
+          "定期巡回"
+        ],
+        "specialty_types": [
+          "発見型",
+          "裏取り型"
+        ]
+      }
+    },
+    {
+      "page_id": "36c8be04-e762-816d-a91a-d72cb24aae9a",
+      "handle": "@asadalechan",
+      "display_name": "asami",
+      "account_type": "その他",
+      "operation_tags": [
+        "要確認"
+      ],
+      "specialty_types": [
+        "文脈確認型"
+      ],
+      "reason": "weak_signal",
+      "rank": "",
+      "usefulness_score": 0,
+      "confidence": "",
+      "valuable_posts": 0,
+      "current": {
+        "account_type": "地域コミュニティ",
+        "operation_tags": [
+          "定期巡回"
+        ],
+        "specialty_types": []
+      }
+    },
+    {
+      "page_id": "36c8be04-e762-81a5-aa6b-fde7bd06ca5c",
+      "handle": "@iid_psv",
+      "display_name": "IID",
+      "account_type": "盆踊りダンサー",
+      "operation_tags": [
+        "VIP",
+        "定期巡回"
+      ],
+      "specialty_types": [
+        "発見型",
+        "裏取り型",
+        "参加レポ型"
+      ],
+      "reason": "profile_dancer",
+      "rank": "S",
+      "usefulness_score": 100,
+      "confidence": "high",
+      "valuable_posts": 13,
+      "current": {
+        "account_type": "情報発信者",
+        "operation_tags": [
+          "定期巡回"
+        ],
+        "specialty_types": [
+          "発見型",
+          "裏取り型",
+          "参加レポ型"
+        ]
+      }
+    },
+    {
+      "page_id": "36c8be04-e762-81be-b094-c85f0bdfa0d5",
+      "handle": "@bondbont",
+      "display_name": "みぽぽみぽ",
+      "account_type": "盆踊りダンサー",
+      "operation_tags": [
+        "VIP",
+        "定期巡回"
+      ],
+      "specialty_types": [
+        "発見型",
+        "裏取り型",
+        "参加レポ型"
+      ],
+      "reason": "profile_dancer",
+      "rank": "S",
+      "usefulness_score": 100,
+      "confidence": "high",
+      "valuable_posts": 30,
+      "current": {
+        "account_type": "情報発信者",
+        "operation_tags": [
+          "定期巡回"
+        ],
+        "specialty_types": [
+          "発見型",
+          "裏取り型",
+          "参加レポ型"
+        ]
+      }
+    },
+    {
+      "page_id": "36c8be04-e762-81d5-aa40-ef3e45a84c6b",
+      "handle": "@hisbow2",
+      "display_name": "hisbow（hiro）",
+      "account_type": "盆踊りダンサー",
+      "operation_tags": [
+        "定期巡回",
+        "要確認"
+      ],
+      "specialty_types": [
+        "裏取り型"
+      ],
+      "reason": "profile_dancer",
+      "rank": "B",
+      "usefulness_score": 63.5,
+      "confidence": "low",
+      "valuable_posts": 2,
+      "current": {
+        "account_type": "情報発信者",
+        "operation_tags": [
+          "定期巡回"
+        ],
+        "specialty_types": [
+          "裏取り型"
+        ]
+      }
+    },
+    {
+      "page_id": "36c8be04-e762-81e3-aa26-ce49e3008e1c",
+      "handle": "@fried_wakame",
+      "display_name": "ゆかりこ",
+      "account_type": "盆踊りダンサー",
+      "operation_tags": [
+        "定期巡回",
+        "要確認"
+      ],
+      "specialty_types": [
+        "裏取り型",
+        "参加レポ型"
+      ],
+      "reason": "profile_dancer",
+      "rank": "Muted",
+      "usefulness_score": 0,
+      "confidence": "low",
+      "valuable_posts": 2,
+      "current": {
+        "account_type": "情報発信者",
+        "operation_tags": [
+          "定期巡回"
+        ],
+        "specialty_types": [
+          "裏取り型",
+          "参加レポ型"
+        ]
+      }
+    },
+    {
+      "page_id": "36c8be04-e762-81ea-a101-ef219161f9f4",
+      "handle": "@teruhi__rio",
+      "display_name": "梨央",
+      "account_type": "盆踊りダンサー",
+      "operation_tags": [
+        "要確認"
+      ],
+      "specialty_types": [
+        "発見型",
+        "裏取り型"
+      ],
+      "reason": "profile_dancer",
+      "rank": "Candidate",
+      "usefulness_score": 46.2,
+      "confidence": "low",
+      "valuable_posts": 1,
+      "current": {
+        "account_type": "盆踊りダンサー",
+        "operation_tags": [
+          "定期巡回"
+        ],
+        "specialty_types": [
+          "発見型",
+          "裏取り型"
+        ]
+      }
+    },
+    {
+      "page_id": "36c8be04-e762-81ff-af0e-c13ebf9fb674",
+      "handle": "@nyoritael",
+      "display_name": "リビオ",
+      "account_type": "盆踊りダンサー",
+      "operation_tags": [
+        "定期巡回",
+        "要確認"
+      ],
+      "specialty_types": [
+        "発見型",
+        "裏取り型"
+      ],
+      "reason": "profile_dancer",
+      "rank": "B",
+      "usefulness_score": 67.0,
+      "confidence": "low",
+      "valuable_posts": 3,
+      "current": {
+        "account_type": "情報発信者",
+        "operation_tags": [
+          "定期巡回"
+        ],
+        "specialty_types": [
+          "発見型",
+          "裏取り型"
+        ]
+      }
+    },
+    {
+      "page_id": "36c8be04-e762-8107-bee5-eeb02d57087a",
+      "handle": "@mrapple_bycandy",
+      "display_name": "鬼神武者「赤赫林檎」🍎職業「赤い人」",
+      "account_type": "盆踊りダンサー",
+      "operation_tags": [
+        "要確認"
+      ],
+      "specialty_types": [
+        "裏取り型"
+      ],
+      "reason": "profile_dancer",
+      "rank": "Muted",
+      "usefulness_score": 0,
+      "confidence": "low",
+      "valuable_posts": 0,
+      "current": {
+        "account_type": "情報発信者",
+        "operation_tags": [
+          "定期巡回"
+        ],
+        "specialty_types": [
+          "裏取り型"
+        ]
+      }
+    },
+    {
+      "page_id": "36c8be04-e762-814c-b399-f2fc1142a7e9",
+      "handle": "@bon_odoroo",
+      "display_name": "おーすけ（おーちゃん）",
+      "account_type": "盆踊りダンサー",
+      "operation_tags": [
+        "定期巡回"
+      ],
+      "specialty_types": [
+        "裏取り型",
+        "参加レポ型"
+      ],
+      "reason": "profile_dancer",
+      "rank": "A",
+      "usefulness_score": 82.9,
+      "confidence": "medium",
+      "valuable_posts": 4,
+      "current": {
+        "account_type": "盆踊りダンサー",
+        "operation_tags": [
+          "定期巡回"
+        ],
+        "specialty_types": [
+          "裏取り型",
+          "参加レポ型"
+        ]
+      }
+    },
+    {
+      "page_id": "36c8be04-e762-815c-909c-e0c23de0cee6",
+      "handle": "@bon_odoriko",
+      "display_name": "カンカン娘🔰",
+      "account_type": "盆踊りダンサー",
+      "operation_tags": [
+        "要確認"
+      ],
+      "specialty_types": [
+        "文脈確認型"
+      ],
+      "reason": "profile_dancer",
+      "rank": "",
+      "usefulness_score": 0,
+      "confidence": "",
+      "valuable_posts": 0,
+      "current": {
+        "account_type": "情報発信者",
+        "operation_tags": [
+          "定期巡回"
+        ],
+        "specialty_types": []
+      }
+    },
+    {
+      "page_id": "36c8be04-e762-8176-bed2-f395690e2a6d",
+      "handle": "@tarokoba55",
+      "display_name": "太鼓打ち　小林太郎",
+      "account_type": "盆踊りダンサー",
+      "operation_tags": [
+        "定期巡回",
+        "要確認"
+      ],
+      "specialty_types": [
+        "裏取り型"
+      ],
+      "reason": "profile_dancer",
+      "rank": "Muted",
+      "usefulness_score": 0,
+      "confidence": "low",
+      "valuable_posts": 2,
+      "current": {
+        "account_type": "盆踊りダンサー",
+        "operation_tags": [
+          "定期巡回"
+        ],
+        "specialty_types": [
+          "裏取り型"
+        ]
+      }
+    },
+    {
+      "page_id": "36c8be04-e762-818f-9804-f31e7d53cc59",
+      "handle": "@chiaki_h96",
+      "display_name": "盆女あっきー🪭",
+      "account_type": "盆踊り関連メディア",
+      "operation_tags": [
+        "定期巡回",
+        "要確認"
+      ],
+      "specialty_types": [
+        "裏取り型",
+        "参加レポ型"
+      ],
+      "reason": "profile_media",
+      "rank": "Candidate",
+      "usefulness_score": 37.9,
+      "confidence": "low",
+      "valuable_posts": 1,
+      "current": {
+        "account_type": "盆踊りダンサー",
+        "operation_tags": [
+          "定期巡回"
+        ],
+        "specialty_types": [
+          "裏取り型",
+          "参加レポ型"
+        ]
+      }
+    },
+    {
+      "page_id": "36c8be04-e762-81b4-91bd-d7a53577514a",
+      "handle": "@kajix_japan",
+      "display_name": "kajix",
+      "account_type": "盆踊り関連メディア",
+      "operation_tags": [
+        "定期巡回",
+        "要確認"
+      ],
+      "specialty_types": [
+        "文脈確認型"
+      ],
+      "reason": "profile_media",
+      "rank": "",
+      "usefulness_score": 0,
+      "confidence": "",
+      "valuable_posts": 0,
+      "current": {
+        "account_type": "盆踊りダンサー",
+        "operation_tags": [
+          "定期巡回",
+          "VIP"
+        ],
+        "specialty_types": []
+      }
+    },
+    {
+      "page_id": "36c8be04-e762-81c5-a81b-e1aee1ce5a06",
+      "handle": "@wadaikoch",
+      "display_name": "和太鼓お祭りCH",
+      "account_type": "盆踊り関連メディア",
+      "operation_tags": [
+        "VIP",
+        "定期巡回"
+      ],
+      "specialty_types": [
+        "裏取り型"
+      ],
+      "reason": "profile_media",
+      "rank": "S",
+      "usefulness_score": 100,
+      "confidence": "high",
+      "valuable_posts": 13,
+      "current": {
+        "account_type": "盆踊り関連メディア",
+        "operation_tags": [
+          "定期巡回"
+        ],
+        "specialty_types": [
+          "裏取り型"
+        ]
+      }
+    },
+    {
+      "page_id": "36c8be04-e762-81dd-a4de-f8f21010df39",
+      "handle": "@jim6900",
+      "display_name": "ジミーくん(坂本)",
+      "account_type": "盆踊りダンサー",
+      "operation_tags": [
+        "要確認"
+      ],
+      "specialty_types": [
+        "参加レポ型"
+      ],
+      "reason": "profile_dancer",
+      "rank": "Probation",
+      "usefulness_score": 16.2,
+      "confidence": "low",
+      "valuable_posts": 0,
+      "current": {
+        "account_type": "情報発信者",
+        "operation_tags": [
+          "定期巡回"
+        ],
+        "specialty_types": [
+          "参加レポ型"
+        ]
+      }
+    },
+    {
+      "page_id": "36c8be04-e762-81ec-b7bf-e79a25d5cd95",
+      "handle": "@blue_sky_blue_j",
+      "display_name": "star_joo (秋山 星司)",
+      "account_type": "盆踊りダンサー",
+      "operation_tags": [
+        "定期巡回",
+        "要確認"
+      ],
+      "specialty_types": [
+        "裏取り型"
+      ],
+      "reason": "profile_dancer",
+      "rank": "Candidate",
+      "usefulness_score": 39.4,
+      "confidence": "low",
+      "valuable_posts": 2,
+      "current": {
+        "account_type": "情報発信者",
+        "operation_tags": [
+          "定期巡回"
+        ],
+        "specialty_types": [
+          "裏取り型"
+        ]
+      }
+    },
+    {
+      "page_id": "36c8be04-e762-8102-a24f-f947b5f64cb0",
+      "handle": "@mu4324",
+      "display_name": "宇佐美",
+      "account_type": "盆踊りダンサー",
+      "operation_tags": [
+        "VIP",
+        "定期巡回"
+      ],
+      "specialty_types": [
+        "裏取り型",
+        "参加レポ型",
+        "地域/会場型"
+      ],
+      "reason": "tweet_experience",
+      "rank": "A",
+      "usefulness_score": 89.7,
+      "confidence": "medium",
+      "valuable_posts": 6,
+      "current": {
+        "account_type": "盆踊りダンサー",
+        "operation_tags": [
+          "定期巡回"
+        ],
+        "specialty_types": [
+          "裏取り型",
+          "参加レポ型",
+          "地域/会場型"
+        ]
+      }
+    },
+    {
+      "page_id": "36c8be04-e762-8109-a180-c48d5d84a91b",
+      "handle": "@karinchanchanko",
+      "display_name": "今井 花凜【盆踊りのりんりん】",
+      "account_type": "盆踊りダンサー",
+      "operation_tags": [
+        "要確認"
+      ],
+      "specialty_types": [
+        "裏取り型"
+      ],
+      "reason": "profile_dancer",
+      "rank": "Probation",
+      "usefulness_score": 15.0,
+      "confidence": "low",
+      "valuable_posts": 0,
+      "current": {
+        "account_type": "盆踊りダンサー",
+        "operation_tags": [
+          "定期巡回"
+        ],
+        "specialty_types": [
+          "裏取り型"
+        ]
+      }
+    },
+    {
+      "page_id": "36c8be04-e762-811d-92d7-fb3c791043cc",
+      "handle": "@mimi33yuyu26na",
+      "display_name": "みみ&ゆゆ",
+      "account_type": "盆踊りダンサー",
+      "operation_tags": [
+        "定期巡回"
+      ],
+      "specialty_types": [
+        "発見型",
+        "裏取り型"
+      ],
+      "reason": "profile_dancer",
+      "rank": "A",
+      "usefulness_score": 84.7,
+      "confidence": "medium",
+      "valuable_posts": 3,
+      "current": {
+        "account_type": "情報発信者",
+        "operation_tags": [
+          "定期巡回"
+        ],
+        "specialty_types": [
+          "発見型",
+          "裏取り型"
+        ]
+      }
+    },
+    {
+      "page_id": "36c8be04-e762-812a-98c0-c5fed870b671",
+      "handle": "@harebon_odori",
+      "display_name": "晴盆👘品川区の盆踊らー🌸",
+      "account_type": "地域コミュニティ",
+      "operation_tags": [
+        "定期巡回"
+      ],
+      "specialty_types": [
+        "発見型",
+        "裏取り型"
+      ],
+      "reason": "profile_community",
+      "rank": "A",
+      "usefulness_score": 84.6,
+      "confidence": "medium",
+      "valuable_posts": 5,
+      "current": {
+        "account_type": "情報発信者",
+        "operation_tags": [
+          "定期巡回"
+        ],
+        "specialty_types": [
+          "発見型",
+          "裏取り型"
+        ]
+      }
+    },
+    {
+      "page_id": "36c8be04-e762-8138-8dad-ec3862edd852",
+      "handle": "@pink_daiamond_",
+      "display_name": "さとさん",
+      "account_type": "盆踊りダンサー",
+      "operation_tags": [
+        "定期巡回"
+      ],
+      "specialty_types": [
+        "発見型",
+        "裏取り型",
+        "地域/会場型"
+      ],
+      "reason": "profile_dancer",
+      "rank": "A",
+      "usefulness_score": 84.8,
+      "confidence": "medium",
+      "valuable_posts": 7,
+      "current": {
+        "account_type": "情報発信者",
+        "operation_tags": [
+          "定期巡回"
+        ],
+        "specialty_types": [
+          "発見型",
+          "裏取り型",
+          "地域/会場型"
+        ]
+      }
+    },
+    {
+      "page_id": "36c8be04-e762-8144-acd4-ca09b369cb11",
+      "handle": "@2tsuo_g",
+      "display_name": "ミツマヨ",
+      "account_type": "盆踊りダンサー",
+      "operation_tags": [
+        "定期巡回"
+      ],
+      "specialty_types": [
+        "発見型",
+        "裏取り型",
+        "参加レポ型"
+      ],
+      "reason": "profile_dancer",
+      "rank": "B",
+      "usefulness_score": 63.7,
+      "confidence": "medium",
+      "valuable_posts": 6,
+      "current": {
+        "account_type": "情報発信者",
+        "operation_tags": [
+          "定期巡回"
+        ],
+        "specialty_types": [
+          "発見型",
+          "裏取り型",
+          "参加レポ型"
+        ]
+      }
+    },
+    {
+      "page_id": "36c8be04-e762-8146-81b2-e1d55ce53776",
+      "handle": "@tomohikos",
+      "display_name": "tomohikos（大ちゃん/佐藤智彦）",
+      "account_type": "盆踊り関連メディア",
+      "operation_tags": [
+        "定期巡回",
+        "要確認"
+      ],
+      "specialty_types": [
+        "発見型",
+        "裏取り型",
+        "地域/会場型"
+      ],
+      "reason": "profile_media",
+      "rank": "B",
+      "usefulness_score": 68.5,
+      "confidence": "low",
+      "valuable_posts": 3,
+      "current": {
+        "account_type": "情報発信者",
+        "operation_tags": [
+          "定期巡回",
+          "VIP"
+        ],
+        "specialty_types": [
+          "発見型",
+          "裏取り型",
+          "地域/会場型"
+        ]
+      }
+    },
+    {
+      "page_id": "36c8be04-e762-81a3-88b0-d78bbf102e1a",
+      "handle": "@matsurinokiseki",
+      "display_name": "祭のきせき",
+      "account_type": "盆踊り関連メディア",
+      "operation_tags": [
+        "定期巡回",
+        "要確認"
+      ],
+      "specialty_types": [
+        "裏取り型"
+      ],
+      "reason": "profile_media",
+      "rank": "Probation",
+      "usefulness_score": 15.4,
+      "confidence": "low",
+      "valuable_posts": 0,
+      "current": {
+        "account_type": "盆踊り関連メディア",
+        "operation_tags": [
+          "定期巡回"
+        ],
+        "specialty_types": [
+          "裏取り型"
+        ]
+      }
+    },
+    {
+      "page_id": "36c8be04-e762-81d4-98fa-f6cad9a2b771",
+      "handle": "@bon_odorer",
+      "display_name": "盆踊ラー Shin",
+      "account_type": "盆踊りダンサー",
+      "operation_tags": [
+        "定期巡回",
+        "要確認"
+      ],
+      "specialty_types": [
+        "裏取り型",
+        "参加レポ型"
+      ],
+      "reason": "profile_dancer",
+      "rank": "B",
+      "usefulness_score": 64.1,
+      "confidence": "low",
+      "valuable_posts": 2,
+      "current": {
+        "account_type": "情報発信者",
+        "operation_tags": [
+          "定期巡回"
+        ],
+        "specialty_types": [
+          "裏取り型",
+          "参加レポ型"
+        ]
+      }
+    }
+  ],
+  "summary": {
+    "account_type": {
+      "盆踊りダンサー": 40,
+      "地域コミュニティ": 5,
+      "情報発信者": 8,
+      "その他": 4,
+      "盆踊り関連メディア": 6,
+      "盆踊り主催者": 3
+    },
+    "operation_tags": {
+      "定期巡回": 53,
+      "要確認": 38,
+      "VIP": 22
+    },
+    "specialty_types": {
+      "発見型": 29,
+      "裏取り型": 53,
+      "参加レポ型": 26,
+      "地域/会場型": 13,
+      "文脈確認型": 11
+    }
+  }
+}

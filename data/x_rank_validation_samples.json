@@ -1,0 +1,2016 @@
+{
+  "generated_at": "2026-06-09T15:48:13.948326+00:00",
+  "source_file": "data/voices.json",
+  "hypotheses": [
+    "H1: 高スコア投稿は人間評価でも有益である",
+    "H2: 有益投稿を複数出すアカウントは今後も役に立つ",
+    "H3: 1投稿だけ高得点のアカウントは即Sランクにしない方がよい",
+    "H4: 未来日程・会場名・写真/チラシ・リンクは裏取り成功率が高い",
+    "H5: 参加レポ型は新規発見には弱いが行く判断に役立つ"
+  ],
+  "review_labels": [
+    "有益",
+    "微妙",
+    "不要"
+  ],
+  "samples": [
+    {
+      "account": "@natsutr_bon",
+      "name": "奈津大郎〘ナツタロ〙",
+      "date": "2026-05-15T03:59:20+00:00",
+      "url": "https://x.com/natsutr_bon/status/2055135919615938908",
+      "source": "x",
+      "score": 25.0,
+      "reasons": [
+        "future_schedule",
+        "bon",
+        "context",
+        "date_time",
+        "venue",
+        "link"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型",
+        "地域/会場型"
+      ],
+      "text": "【晴海ふ頭公園盆踊り大会】 🏮7/11(土)12(日)🕓️18:30-20:30📍晴海ふ頭公園(中央区) 東京湾岸エリアの晴海フラッグ自治会が街の新しいお祭りとして昨年初開催し、大きな盛り上がりを見せた盆踊り大会が今年も！ https://t.co/Cn0RAzzxPK",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@tadashi_isono",
+      "name": "いその忠　(中央区議会議員)",
+      "date": "2026-05-15T07:00:34+00:00",
+      "url": "https://x.com/tadashi_isono/status/2055181527064158275",
+      "source": "x",
+      "score": 25.0,
+      "reasons": [
+        "future_schedule",
+        "bon",
+        "context",
+        "date_time",
+        "venue",
+        "link"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型",
+        "地域/会場型"
+      ],
+      "text": "#築地本願寺奉讃会 役員会が開催され #盆踊り大会 運営に関し細部に渡り検討されました✨ 毎年大変多くの皆様に楽しんで戴いております盆踊りですが事故がなくご参加戴ける様取組んでおります💪🏼 7月29日(水)〜8月1日(土)開催です‼️ ご参加お待ちしております🤗 #築地 #本願寺 #中央区 https://t.co/M2qHus48xw",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@tomohikos",
+      "name": "tomohikos（大ちゃん/佐藤智彦）",
+      "date": "2026-06-01T09:25:09+00:00",
+      "url": "https://x.com/tomohikos/status/2061378509868876034",
+      "source": "x",
+      "score": 25.0,
+      "reasons": [
+        "future_schedule",
+        "bon",
+        "context",
+        "date_time",
+        "venue",
+        "link"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型",
+        "地域/会場型"
+      ],
+      "text": "第79回築地本願寺納涼盆踊り大会 2026年7月29日（水）〜8月1日（土）開催！ 本日発表！ この夏も楽しみましょう！ https://t.co/BoYHwlYb4A https://t.co/P5zxzMqK7T",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@yamarie0324",
+      "name": "山本 理恵 中央区議会議員",
+      "date": "2026-06-02T11:14:36+00:00",
+      "url": "https://x.com/yamarie0324/status/2061768438180425958",
+      "source": "x",
+      "score": 25.0,
+      "reasons": [
+        "future_schedule",
+        "bon",
+        "context",
+        "date_time",
+        "venue",
+        "link"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型",
+        "地域/会場型"
+      ],
+      "text": "第36回中央区大江戸まつり盆おどり大会のお知らせ📢8/21（金）、22日(土)の午後4時から浜町公園にて。区制施行80周年を記念したうちわを配布🎐東根市友好都市提携35周年を記念して、パネル展示や特産品販売🍑各地域において盆踊りの練習会も実施。 https://t.co/3M5NVMFLGQ #大江戸まつり盆おどり大会 https://t.co/ubQcIh3Ovt",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@natsutr_bon",
+      "name": "奈津大郎〘ナツタロ〙",
+      "date": "2026-06-02T13:02:31+00:00",
+      "url": "https://x.com/natsutr_bon/status/2061795596592419268",
+      "source": "x",
+      "score": 25.0,
+      "reasons": [
+        "future_schedule",
+        "bon",
+        "context",
+        "date_time",
+        "venue",
+        "link"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型",
+        "地域/会場型"
+      ],
+      "text": "【大江戸まつり盆おどり大会】 🏮8/21(金)22日(土)🕓16:00-21:00📍浜町公園(中央区) 東京でも屈指の大きな櫓で開催される人気盆踊り大会♪ 毎年伝統曲や民謡歌手による音頭、子ども盆踊りタイムなど充実のプログラム✨ ★練習会も予定されている(リンク参照) https://t.co/ZXvQjDEgDF",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@bremen_ohshima",
+      "name": "ブレーメン大島",
+      "date": "2026-06-03T08:05:18+00:00",
+      "url": "https://x.com/bremen_ohshima/status/2062083187430642104",
+      "source": "x_whitelist",
+      "score": 25.0,
+      "reasons": [
+        "future_schedule",
+        "bon",
+        "context",
+        "date_time",
+        "venue",
+        "experience"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型",
+        "参加レポ型",
+        "地域/会場型"
+      ],
+      "text": "【飛鳥山公園盆踊り】 飛鳥山盆踊り会のお知らせ 日時：６月７日（日） 受付開始：12時45分 開催時間：13時10分から15時45分 少雨決行(雨天中止) 会場:北区飛鳥山公園内飛鳥舞台 住所：東京都北区王子１−１",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@tomohikos",
+      "name": "tomohikos（大ちゃん/佐藤智彦）",
+      "date": "2026-06-07T00:00:02+00:00",
+      "url": "https://x.com/tomohikos/status/2063410620381495667",
+      "source": "x_whitelist",
+      "score": 25.0,
+      "reasons": [
+        "future_schedule",
+        "bon",
+        "context",
+        "date_time",
+        "venue",
+        "link"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型",
+        "地域/会場型"
+      ],
+      "text": "\\\\告知！// 6/26金・27土 TOKYO盆ダンス × STEAM FESTIVAL 2026 上野恩賜公園 竹の台広場 キッチンカーや盛りだくさんのイベント 浅草橋盆踊り倶楽部と出演！ 下町情緒ある盆踊り 清水百恵の生歌 猫田リリ＆サンバチームとコラボも✨ 6/27土 16:30-17:30・18:30-19:30 https://t.co/9p2wgI9AJS https://t.co/4hDKTLixMP",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@agehabijo",
+      "name": "鳳蝶美成（あげは びじょう）",
+      "date": "2026-03-12T03:33:44+00:00",
+      "url": "https://x.com/agehabijo/status/2031936655062704611",
+      "source": "x",
+      "score": 24.0,
+      "reasons": [
+        "future_schedule",
+        "bon",
+        "context",
+        "date_time",
+        "venue"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型",
+        "地域/会場型"
+      ],
+      "text": "■日時3月25日（水）19:00〜20:30 ■場所築地社会教育会館（中央区）3階 第三和室 ■参加費無料 ■定員20名（先着） 講師：鳳蝶 美成（あげは びじょう） お問い合わせ✉️ bondance.signparty@gmail.com #盆踊り #築地 #中央区 #東京イベント #日本文化",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@natsutr_bon",
+      "name": "奈津大郎〘ナツタロ〙",
+      "date": "2026-05-28T01:14:46+00:00",
+      "url": "https://x.com/natsutr_bon/status/2059805547512418608",
+      "source": "x",
+      "score": 24.0,
+      "reasons": [
+        "schedule_like",
+        "bon",
+        "context",
+        "date_time",
+        "venue",
+        "experience",
+        "link"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型",
+        "参加レポ型",
+        "地域/会場型"
+      ],
+      "text": "5/24築地JAM 盆踊り会場としても人気の築地本願寺で民謡クルセイダーズLIVE♪ 花笠音頭からはじまり、ソーラン節では観客揃って船漕いだり波起こしたり〜🌊 貝殻節、会津磐梯山、炭坑節と民謡踊りを楽しく✨ そのあとも美味しいフードを食べたり、ジャズ、ボサノヴァなどをユルユルっと🥂 #民クル https://t.co/BNQ6P4cM3h",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@kengoshikagawa",
+      "name": "鹿川賢吾｜50歳からの極上キャビア事業立ち上げ",
+      "date": "2026-05-30T21:49:08+00:00",
+      "url": "https://x.com/kengoshikagawa/status/2060840959899029953",
+      "source": "x",
+      "score": 24.0,
+      "reasons": [
+        "future_schedule",
+        "bon",
+        "context",
+        "date_time",
+        "venue"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型",
+        "地域/会場型"
+      ],
+      "text": "朝トレで心身を整える🔥 いよいよ6/10からの「波除神社大祭」に向けた準備が本格化！ここから築地本願寺盆踊り、築地秋まつり、年末売り出しと、怒涛のスケジュールが続きます。 やらなければいけない事、やりたい事が次々と湧いてきますが、こんな時こそ「振り返りの時間」が何より大切。実はこのXを書く時間も、私にとって思考を整理する重要な内省作業の一つです。 これからも皆さんのビジネスや日常のヒントになるリアルな情報を発信していきますので、ぜひ「…",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@bon__juu",
+      "name": "盆獣 ・Bonjū",
+      "date": "2026-05-09T12:11:46+00:00",
+      "url": "https://x.com/bon__juu/status/2053085516028150021",
+      "source": "x_whitelist",
+      "score": 23.0,
+      "reasons": [
+        "future_schedule",
+        "bon",
+        "context",
+        "date_time",
+        "experience",
+        "link"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型",
+        "参加レポ型"
+      ],
+      "text": "5/9 日本丸みなと盆踊り 場所も、天気も、踊り手も、選曲も、全部最高で大成功だった🤩 横浜や神奈川県の珠玉の盆踊りを味わおうと、遠くから来ていた人もたくさんいた。 横浜どんたく♬ またしばらく頭の中で流れ続けそう❣️ https://t.co/x76tOLCI0T",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@natsutr_bon",
+      "name": "奈津大郎〘ナツタロ〙",
+      "date": "2026-05-27T10:41:41+00:00",
+      "url": "https://x.com/natsutr_bon/status/2059585827433496630",
+      "source": "x",
+      "score": 23.0,
+      "reasons": [
+        "future_schedule",
+        "bon",
+        "context",
+        "date_time",
+        "experience",
+        "link"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型",
+        "参加レポ型"
+      ],
+      "text": "【神田明神 納涼盆踊り】 🏮8/7(金)-9(日)📍神田明神(千代田区) 伝統曲からアニソンまで楽しめる、都内屈指の人気盆踊り会場♫ 7日(金)アニメソング盆踊り🕓16:30～20:30 8日(土)千代田区民踊連盟🕓17:30～20:30 9日(日)浜町音頭保存会(中央区)🕓17:30～20:30 ※時間は予定 https://t.co/BU0OiiDGP4",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@m125m8qgyhwuehs",
+      "name": "みそみそ3",
+      "date": "2026-06-01T11:39:21+00:00",
+      "url": "https://x.com/M125M8qgyhWueHS/status/2061412278382244071",
+      "source": "x_whitelist",
+      "score": 23.0,
+      "reasons": [
+        "future_schedule",
+        "bon",
+        "context",
+        "date_time",
+        "experience",
+        "link"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型",
+        "参加レポ型"
+      ],
+      "text": "Min-Yoi's盆踊りで踊ってきた 関係者の皆さんありがとうございました。 激ムズ民謡から郡上白鳥きたと思えばまさかのBeat It🤣 声出しがすごくて響き渡ってたな😂 さくら音頭は感動もの✨ #すんごい楽しかったので #10月12日はもうカレンダーに予定入れました https://t.co/86or9ArjqH",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@ankoomori",
+      "name": "大森杏子",
+      "date": "2026-06-03T11:45:06+00:00",
+      "url": "https://x.com/ankoomori/status/2062138501345558951",
+      "source": "x",
+      "score": 23.0,
+      "reasons": [
+        "future_schedule",
+        "bon",
+        "context",
+        "date_time",
+        "experience",
+        "link"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型",
+        "参加レポ型"
+      ],
+      "text": "#あんこと竹駒神社 コラボの巫女舞あんこ全身イラストを初公開✨とっても可愛いでしょう😉竹駒神社の神楽鈴は剣になっています✨8月9日(日)のコラボ盆踊り会場にて巫女舞あんこのデカアクスタを販売予定です⛩️あとはコラボメニューの特典にもイラストが入る予定だよ🍴楽しみにしててね🦊💕 https://t.co/39gYW1Ie2o",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@pippu_town",
+      "name": "北海道 比布町(ぴっぷちょう)",
+      "date": "2026-06-05T08:18:18+00:00",
+      "url": "https://x.com/pippu_town/status/2062811237025812744",
+      "source": "x",
+      "score": 23.0,
+      "reasons": [
+        "future_schedule",
+        "bon",
+        "context",
+        "date_time",
+        "experience",
+        "link"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型",
+        "参加レポ型"
+      ],
+      "text": "【 #まちある記フォトニュース 】 6月5日㈮、町体育館で「第48回老人スポーツ大会」が開催され、各地区の老人クラブから約50人が参加しました😊紅白に分かれて全8種目で熱戦を繰り広げ、会場は笑顔と歓声に包まれました🏃‍♂️✨ 大会の最後は全員で盆踊りを踊り、楽しいひとときを過ごしました。 #北海道 https://t.co/SplfnBKhxr",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@_masakari",
+      "name": "まさかり (盆踊り／奉納踊り／輪踊り) 記録用",
+      "date": "2026-06-05T22:36:57+00:00",
+      "url": "https://x.com/_masakari/status/2063027320777265287",
+      "source": "x",
+      "score": 23.0,
+      "reasons": [
+        "future_schedule",
+        "bon",
+        "context",
+        "date_time",
+        "experience",
+        "link"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型",
+        "参加レポ型"
+      ],
+      "text": "6/5金 ふるさと千川まつり 盆踊り 小学生の子供達が元気に踊ってエネルギッシュで楽しそうな会場だった 今日は半袖だと肌寒い気温だったけど、踊っていれば温まる 「千川おどり」を初めて踊った 自分が知っている「一休さん」の振り付けど違ってて新鮮で楽しかったです https://t.co/7KFsAU811g",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@tomkamoshida",
+      "name": "カントリージェントルマン鴨志田＠軽井沢",
+      "date": "2026-06-06T05:44:35+00:00",
+      "url": "https://x.com/TomKamoshida/status/2063134938204119221",
+      "source": "x",
+      "score": 23.0,
+      "reasons": [
+        "future_schedule",
+        "bon",
+        "context",
+        "date_time",
+        "media_hint",
+        "link"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型"
+      ],
+      "text": "軽井沢ブログ カントリージェントルマンへの道 『【軽井沢】追分盆踊り2026（8/14～16 19:00～＠浅間神社境内）』 ●追分盆踊り前夜祭（8/13 19:00～＠追分公民館） ●追分盆踊りで踊る15曲⇒動画を見て、踊り方を事前練習できますよ … #軽井沢 https://t.co/Sqy2JBar8r",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@kaz0045",
+      "name": "オレンジ（Mishima Kazuhiro）",
+      "date": "2026-06-06T14:24:59+00:00",
+      "url": "https://x.com/kaz0045/status/2063265903782002992",
+      "source": "x",
+      "score": 23.0,
+      "reasons": [
+        "future_schedule",
+        "bon",
+        "context",
+        "date_time",
+        "media_hint",
+        "link"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型"
+      ],
+      "text": "6/6（土）#ふるさと千川まつり まんまと今日も踊って来た🤣 体感昨日の1.8倍くらいのすごい人❗️ 出店に並ぶ人がハンパない。 踊る人もハンパない。 最後は5重位の輪になってた😵 そしてはしゃぎ過ぎて ↓以外の画像も動画もなし画像も動画もなし😆 #盆踊り #豊島区 https://t.co/42nY1ViJOe",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@kazuyarainbow",
+      "name": "和也Rainbow",
+      "date": "2026-06-07T02:07:40+00:00",
+      "url": "https://x.com/KazuyaRainbow/status/2063442740634148872",
+      "source": "x",
+      "score": 23.0,
+      "reasons": [
+        "future_schedule",
+        "bon",
+        "context",
+        "date_time",
+        "experience",
+        "link"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型",
+        "参加レポ型"
+      ],
+      "text": "本日、6/7(日)の戸越宮前盆踊り大会にて、チームレインボー🌈がパフォーマンスステージを担当致します🎇 我々のイベントに参加してくださってきた素敵なミュージシャンの仲間達と共に最高の音楽とパフォーマンスをお届けしたいと思います。 着々と準備が進んでおります☺️ https://t.co/KlBuXx3bub",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@selion_akitakou",
+      "name": "セリオン【公式】道の駅あきた港",
+      "date": "2026-06-07T02:45:26+00:00",
+      "url": "https://x.com/selion_akitakou/status/2063452243609936037",
+      "source": "x",
+      "score": 23.0,
+      "reasons": [
+        "future_schedule",
+        "bon",
+        "context",
+        "date_time",
+        "media_hint",
+        "link"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型"
+      ],
+      "text": "本日6/7(日) #ヘリテージ・アドベンチャラー が9:00に入港しました🚢✨ 〈ターミナルでのイベント〉 ・17:30～西馬音内盆踊り ・18:00～出港 ※写真は昨年寄港時の様子です。 https://t.co/28HeNRKB3Z",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@tomkamoshida",
+      "name": "カントリージェントルマン鴨志田＠軽井沢",
+      "date": "2026-06-08T07:01:21+00:00",
+      "url": "https://x.com/TomKamoshida/status/2063879033923002824",
+      "source": "x",
+      "score": 23.0,
+      "reasons": [
+        "future_schedule",
+        "bon",
+        "context",
+        "date_time",
+        "media_hint",
+        "link"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型"
+      ],
+      "text": "軽井沢ブログ カントリージェントルマンへの道 『【軽井沢】追分盆踊り2026（8/14～16 19:00～＠浅間神社境内）』 ●追分盆踊り前夜祭（8/13 19:00～＠追分公民館） ●追分盆踊りで踊る15曲⇒動画を見て、踊り方を事前練習できますよ … #軽井沢 https://t.co/Sqy2JBar8r",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@stardustkawachi",
+      "name": "スターダスト河内　6/16中村美律子40周年記念コンサート@フェスティバルホール",
+      "date": "2026-06-02T14:56:38+00:00",
+      "url": "https://x.com/stardustkawachi/status/2061824315042267343",
+      "source": "x",
+      "score": 22.0,
+      "reasons": [
+        "schedule_like",
+        "bon",
+        "context",
+        "date_time",
+        "media_hint",
+        "experience",
+        "link"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型",
+        "参加レポ型"
+      ],
+      "text": "【見取り図盆踊り strike back!】 見取り図盆踊り2024から2年！ 初の屋内開催！ 2年前、盛山さんの生歌で踊った「もりちゃん音頭」の踊り方動画はこちらでございます！ 皆で大阪の夏に大ジャンプ！ https://t.co/BMtmgxH66d",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@koufukuyac",
+      "name": "香福屋☕️",
+      "date": "2026-06-04T14:58:55+00:00",
+      "url": "https://x.com/KoufukuyaC/status/2062549666563289225",
+      "source": "x",
+      "score": 22.0,
+      "reasons": [
+        "future_schedule",
+        "bon",
+        "context",
+        "date_time",
+        "experience"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型",
+        "参加レポ型"
+      ],
+      "text": "＼ 京都に岐阜の魅力が大集合！ ／ 今週末の6月5日・6日は、京都で開催される大注目イベントに参加します！✨ 岐阜の美味しいものをたくさん持って行くので、ぜひ遊びに来てくださいね😊 🗓 6月5日(金) ぎふマルシェ＠京都2026 ▫️時間：11:00〜19:00 ▫️場所：ゼスト御池 河原町広場 🛒 こだわり珈琲の物販（試飲もできます！） ＼注目のラインナップ／ ☕️ 【新発売】シングルオリジン水出しコーヒーセット ❄️ 雪の下熟成 …",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@sami0104",
+      "name": "栗林さみ",
+      "date": "2026-06-07T10:25:01+00:00",
+      "url": "https://x.com/sami0104/status/2063567901471527015",
+      "source": "x",
+      "score": 22.0,
+      "reasons": [
+        "future_schedule",
+        "bon",
+        "context",
+        "date_time",
+        "experience"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型",
+        "参加レポ型"
+      ],
+      "text": "妖怪×暗闇×オペラ×アクションの超没入型イマーシブシアター『江戸妖怪探偵社』チケット一般発売が始まってから1ヶ月が経ちました。 今週からいよいよ本格的な稽古がはじまります。 その前に、脚本演出担当の私から本作の魅力をご紹介！ ①8月9月で舞台と脚本が変わる。 8月公演は浅草のアトリエと上野の神社で。絵から抜け出した妖怪を探しに神社に行ったあなたは、探偵社の面々と妖怪を封印します！正しい呪文を唱えて無事封印することができるでしょうか？ …",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@tadashi_isono",
+      "name": "いその忠　(中央区議会議員)",
+      "date": "2026-02-19T08:41:09+00:00",
+      "url": "https://x.com/tadashi_isono/status/2024403872018776235",
+      "source": "x",
+      "score": 21.0,
+      "reasons": [
+        "schedule_like",
+        "bon",
+        "context",
+        "date_time",
+        "venue",
+        "link"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型",
+        "地域/会場型"
+      ],
+      "text": "#築地本願寺奉讃会 #盆踊り大会 開催に向け様々な工夫や意見が出されました‼️ 多くの皆様に安全に楽しんで戴ける様取組んでおります😄 #築地 #中央区 #築地本願寺 https://t.co/6o6N4V4thR",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@mu_novel",
+      "name": "小説の蟲📚",
+      "date": "2026-05-01T04:56:00+00:00",
+      "url": "https://x.com/mu_novel/status/2050076749313327174",
+      "source": "x",
+      "score": 20.0,
+      "reasons": [
+        "future_schedule",
+        "bon",
+        "context",
+        "date_time",
+        "link"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型"
+      ],
+      "text": "長屋物語 （文芸社セレクション） 永遠みどり 少女は、戦後、月島の長屋で八人家族で暮らしていた。船大工の祖父、働き者の両親、妹との日々。銭湯、都電、紙芝居、盆踊り――。社会人になってからは海外旅行に魅力に目覚め、ロシア、ギリシャ、パリ、そし… 5/1 本日発売 https://t.co/rtygs8Um3E",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@komaikai",
+      "name": "東京盆踊り「魂舞会」",
+      "date": "2026-05-18T09:27:42+00:00",
+      "url": "https://x.com/komaikai/status/2056305719855743196",
+      "source": "x_whitelist",
+      "score": 20.0,
+      "reasons": [
+        "future_schedule",
+        "bon",
+        "context",
+        "date_time",
+        "link"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型"
+      ],
+      "text": "盆踊りオフ練ご案内！ 5/22（金）19:00~21:00 石神井公園区民交流センター 3階 大会議室 参加費¥300 事前申込不要！ 当日会場へお越しください。 外履きで大丈夫です。 服装自由 団扇持参 https://t.co/1dinonpw79 お気軽にご参加くださいませ。",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@5khfya5pjksggov",
+      "name": "たすき(掛)",
+      "date": "2026-05-31T14:38:27+00:00",
+      "url": "https://x.com/5kHfYa5PjKsGGoV/status/2061094965590241353",
+      "source": "x_whitelist",
+      "score": 20.0,
+      "reasons": [
+        "future_schedule",
+        "bon",
+        "context",
+        "experience",
+        "link"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型",
+        "参加レポ型"
+      ],
+      "text": "もう遅いのでボスとやっつけ仕事(笑) ゆりイベントで流し踊りやステージ盆踊り🎶 大井町アジアン祭で地元の子らとご当地曲を盆踊り🎶 ↑と民謡会館行ったり来たりして木津かおり先生のさくら音頭を共に🎶 週末土日の48時間が溶けるように過ぎていきました🤣 集えお会い出来た皆様有難う御座いました🤩 https://t.co/I2oYnZ1Azb",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@stba_bonodori",
+      "name": "下町台東盆踊り協議会",
+      "date": "2026-06-01T23:46:48+00:00",
+      "url": "https://x.com/STBA_Bonodori/status/2061595349438091422",
+      "source": "x_whitelist",
+      "score": 20.0,
+      "reasons": [
+        "future_schedule",
+        "bon",
+        "context",
+        "date_time",
+        "link"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型"
+      ],
+      "text": "毎度お世話になっております❗ 奥浅草盆踊りまで、あと26日😁 と、その前に❗ 過日告知しましたが6月21日(日) 長國寺あじさい祭りにて 盆踊りやります❗ 13時40分頃～30分間 14時40分頃～30分間 です❗ 盆踊りタイムの一般公開は 今年初めてなので、 どうかお手柔らかに💦 https://t.co/zFIglSIfXq",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@mau3_141592",
+      "name": "Mau@盆踊り",
+      "date": "2026-06-03T00:00:33+00:00",
+      "url": "https://x.com/Mau3_141592/status/2061961199039008870",
+      "source": "x",
+      "score": 20.0,
+      "reasons": [
+        "future_schedule",
+        "bon",
+        "context",
+        "date_time",
+        "link"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型"
+      ],
+      "text": "さくらっこ食堂(こども食堂)の日(カレンダー〇印)の「お食事の待ち時間」に「同じ空間でみ～んなで盆踊りを踊る」というワイワイ盆踊りやってま～す 日時：6月8日16時～18時 場所：サンシティホール(とんがり帽子)1Fホール https://t.co/t7OpFIMTPB",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@event_checker",
+      "name": "イベントチェッカー製作委員会",
+      "date": "2026-06-03T01:37:21+00:00",
+      "url": "https://x.com/event_checker/status/2061985557266198794",
+      "source": "x",
+      "score": 20.0,
+      "reasons": [
+        "future_schedule",
+        "bon",
+        "context",
+        "date_time",
+        "link"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型"
+      ],
+      "text": "7/3-5 上野公園で 「ビールと浴衣de盆踊り」開催 ご当地グルメ🍖 クラフトビール🍺 夏スイーツ🍧が大集合 さらに… 人気アニメ楽曲で踊る “アニソン盆踊り”も🎵 夏祭り気分を満喫できる3日間 入場無料 → https://t.co/EOR9ID3Nkf https://t.co/KXIbDqEHei",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@yamabon_zaimoku",
+      "name": "おやまの盆踊り祭",
+      "date": "2026-06-03T03:07:21+00:00",
+      "url": "https://x.com/yamabon_zaimoku/status/2062008208831705159",
+      "source": "x",
+      "score": 20.0,
+      "reasons": [
+        "future_schedule",
+        "bon",
+        "context",
+        "date_time",
+        "link"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型"
+      ],
+      "text": "6/7日藤沢駅前サンパール広場で開催される盆踊りイベント「藤の盆」になみぼん、やまぼん共同でブース出店します！クイズに答えると駄菓子がもらえるかも？！２番ブースにぜひお立ち寄りください！ https://t.co/jN4qw6MY2W",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@kontopira",
+      "name": "わく",
+      "date": "2026-06-03T03:14:29+00:00",
+      "url": "https://x.com/kontopira/status/2062010002697798099",
+      "source": "x",
+      "score": 20.0,
+      "reasons": [
+        "future_schedule",
+        "bon",
+        "context",
+        "date_time",
+        "link"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型"
+      ],
+      "text": "#やまびこベスト・プラス 2026 ／6月3日本日発売‼️✨️ #国富音頭 #宮崎県国富町 で５０年間歌い踊りつづけられているそうです👘 やまびこベスト・プラスに収録されています😊 ✨️今年の盆踊りは👘 旋風を巻き起こすこと間違いないでしょう〜🤗 #二見颯一 さん https://t.co/edT0kEP9ne",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@midorimushi54",
+      "name": "竹中平蔵先生断固徹底支持のフルマックシャ",
+      "date": "2026-06-03T11:15:03+00:00",
+      "url": "https://x.com/midorimushi54/status/2062130940420448758",
+      "source": "x",
+      "score": 20.0,
+      "reasons": [
+        "future_schedule",
+        "bon",
+        "context",
+        "date_time",
+        "link"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型"
+      ],
+      "text": "第44回 足寄ふるさと盆踊り・両国花火大会（足寄郡足寄町）の日程・開催情報 - 花火大会2026 - ウォーカープラス https://t.co/w9qQJt93E4 8月15日",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@5khfya5pjksggov",
+      "name": "たすき(掛)",
+      "date": "2026-06-05T03:25:14+00:00",
+      "url": "https://x.com/5kHfYa5PjKsGGoV/status/2062737483964743918",
+      "source": "x_whitelist",
+      "score": 20.0,
+      "reasons": [
+        "future_schedule",
+        "bon",
+        "context",
+        "date_time",
+        "link"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型"
+      ],
+      "text": "花海道、台風に遭ったけどユリの見頃はまだまだです🌷 明日は12:00から #AforReal ステージ&amp;14:00から #盆踊りとお楽しみ満載です🎶 https://t.co/0QUkm9fzrS",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@streamerpress",
+      "name": "STREAMER PRESS by ELEGELA",
+      "date": "2026-06-05T03:41:56+00:00",
+      "url": "https://x.com/StreamerPress/status/2062741685885608139",
+      "source": "x",
+      "score": 20.0,
+      "reasons": [
+        "future_schedule",
+        "bon",
+        "context",
+        "date_time",
+        "link"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型"
+      ],
+      "text": "🌞今年で4回目！キラナ大夏祭り2026が7/4-5に豊洲で開催🎉 盆踊り・こども神輿・ダンス・大抽選会など8コンテンツ満載。豊洲・有明・晴海在住者は入場無料！BBQ個室やレストラン個室プランも限定販売。6/5からチケット発売開始。夏の思い出をみん... 詳細はこちら👇 https://t.co/6XI9ooMXcg https://t.co/X7Ey7BOzRr",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@elegelacom",
+      "name": "GENIC PRESS by ELEGELA",
+      "date": "2026-06-05T04:06:56+00:00",
+      "url": "https://x.com/elegelacom/status/2062747977786216609",
+      "source": "x",
+      "score": 20.0,
+      "reasons": [
+        "future_schedule",
+        "bon",
+        "context",
+        "date_time",
+        "link"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型"
+      ],
+      "text": "🌞今年で4回目！キラナ大夏祭り2026が7/4-5に豊洲で開催🎉 盆踊り・こども神輿・ダンス・大抽選会など8コンテンツ満載。豊洲・有明・晴海在住者は入場無料！BBQ個室やレストラン個室プランも限定販売。6/5からチケット発売開始。夏の思い出をみん... 詳細はこちら👇 https://t.co/JtzFlQ1pp7 https://t.co/9FOIfVn454",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@riverroadf",
+      "name": "川道洋之(Have a good age)",
+      "date": "2026-06-05T10:35:02+00:00",
+      "url": "https://x.com/RiverroadF/status/2062845648123363488",
+      "source": "x",
+      "score": 20.0,
+      "reasons": [
+        "future_schedule",
+        "bon",
+        "context",
+        "date_time",
+        "link"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型"
+      ],
+      "text": "わかぼちゃんと一緒にイベント作ります！ 初の共催🙌 8/15&amp;16の2days！ “お盆イベント” 盆踊り 屋台メニュー 浴衣や甚平 etc… 楽しいことたくさん考えてます！ お盆のご予定空けて 是非FAMILYいらしてください！ @Kabo__s https://t.co/jQblFs9Bj6",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@natsutr_bon",
+      "name": "奈津大郎〘ナツタロ〙",
+      "date": "2026-06-05T14:47:40+00:00",
+      "url": "https://x.com/natsutr_bon/status/2062909223756079123",
+      "source": "x",
+      "score": 20.0,
+      "reasons": [
+        "future_schedule",
+        "bon",
+        "context",
+        "date_time",
+        "link"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型"
+      ],
+      "text": "6/5ふるさと千川まつり@千川ひろば 今年から酷暑対策で6月開催となり、初訪問できました🙌 最初っから子どもたちもたくさん踊って、自分は最後まで御当地の千川おどりやきよズン(御当地版)はワチャワチャでしたが、ダンヒロや恋チュン、マツケンは盛り上がり、夏の盆踊りの始まりを感じました〜🤩 https://t.co/TBGR5jKsBt",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@shesuno",
+      "name": "江南しえなん",
+      "date": "2026-06-05T23:53:42+00:00",
+      "url": "https://x.com/shesuno/status/2063046636482474493",
+      "source": "x",
+      "score": 20.0,
+      "reasons": [
+        "future_schedule",
+        "bon",
+        "context",
+        "date_time",
+        "link"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型"
+      ],
+      "text": "お菓子まき♪盆踊り♪など！「第22回犬山踊芸祭 里丸マルシェ」が、今日明日6/6（土）7（日）にあるんだって！ ブログURLはコチラ https://t.co/MQXeNmVetD #リンクしえなん #犬山市 #犬山踊芸祭 #里丸マルシェ",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@shumatsu_y",
+      "name": "よしもとライブ",
+      "date": "2026-06-06T00:35:00+00:00",
+      "url": "https://x.com/shumatsu_y/status/2063057029640683794",
+      "source": "x",
+      "score": 20.0,
+      "reasons": [
+        "future_schedule",
+        "bon",
+        "context",
+        "date_time",
+        "link"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型"
+      ],
+      "text": "＼✨📣本日10:00より一般発売開始📣✨／ 真夏のラフフェス オープニングセレモニー 爆音！エクストリーム夏祭り2026 2026年もあの興奮と感動が再び！ 究極にエクストリームな夏祭りが爆音になって帰ってきます🪩 エクストリームなコーナーと盆踊りを全員で全力で楽しみましょう💃 8/7(金)18:00開演（配信なし） 📍COOL JAPAN PARK OSAKA TTホール https://t.co/C6z0vt16N6 藤崎マーケッ…",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@mimi33yuyu26na",
+      "name": "みみ&ゆゆ",
+      "date": "2026-06-06T07:50:39+00:00",
+      "url": "https://x.com/mimi33yuyu26na/status/2063166665253339276",
+      "source": "x_whitelist",
+      "score": 20.0,
+      "reasons": [
+        "future_schedule",
+        "bon",
+        "context",
+        "date_time",
+        "link"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型"
+      ],
+      "text": "6/6(土) ゆり鑑賞ラブウィーク内で行われた晴盆さんの盆踊りへ♪ とてもいい天気で日向だと暑いくらい💦 手作り花笠も素敵だった🌸 立派に咲いたゆりに囲まれて素敵な道やフォトスポットを末っ子と散策。 次女の予定があったため1部でお暇しました🙏🏻ご挨拶出来ずすみません🙇🏻‍♀️ お会いした皆さまに感謝✨ https://t.co/6lywRLJsZS",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@tmyk_tkhs",
+      "name": "ほりほり高橋",
+      "date": "2026-06-06T08:10:11+00:00",
+      "url": "https://x.com/tmyk_tkhs/status/2063171582684807245",
+      "source": "x",
+      "score": 20.0,
+      "reasons": [
+        "future_schedule",
+        "bon",
+        "context",
+        "date_time",
+        "link"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型"
+      ],
+      "text": "町あかりさん主催の盆踊り練習会「Let's Bon Odori in Kamata」でした！今日は新たに炭鉱節を習得⛏️🌕一連の振り付けの繰り返しなので覚えやすいし、音楽に合わせて身体動かすの楽しい⤴️汗かいて着替えてすっきりリフレッシュ！盆踊りの輪を世界に広げよー👘 次回は8/8(土)！ https://t.co/JgxR04VULu https://t.co/XHVZiAbD1e",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@bonkyodora_",
+      "name": "盆キョドラー",
+      "date": "2026-06-06T19:45:55+00:00",
+      "url": "https://x.com/bonkyodora_/status/2063346668104569332",
+      "source": "x",
+      "score": 20.0,
+      "reasons": [
+        "future_schedule",
+        "bon",
+        "context",
+        "date_time",
+        "link"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型"
+      ],
+      "text": "2026年6月6日(土) 千葉県松戸市／小金原公園 「小金原フェスタ」 14:00～14:30のフラハラサークル様のステージ 『フラダンスと盆踊り』 盆踊りはバハマ・ママを2回。 2回目は観客もステージエリアに入れてくださいました😊 15:30～イベントの最後は、会場の皆様とジャンボリーミッキーを踊りました。 https://t.co/kIGH2cZ69v",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@hatadatakasi1",
+      "name": "畑田尊(不動たかし）",
+      "date": "2026-06-07T00:59:18+00:00",
+      "url": "https://x.com/hatadatakasi1/status/2063425532096852167",
+      "source": "x",
+      "score": 20.0,
+      "reasons": [
+        "future_schedule",
+        "bon",
+        "context",
+        "date_time",
+        "link"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型"
+      ],
+      "text": "(#尊の風ガイド） ☆40周年記念一宮踊ろまい会☆ 《#盆踊りCARNIVAL》 •6月7日(日） •10∶00〜20∶30 ［会場］ #尾張一宮駅前iビル3階シビックテラス。 【入場無料】 ☆仮装、コスプレ大歓迎！ ❅下駄はご遠慮下さい！ 皆さん！踊りに来てください😊！ https://t.co/3kW4pZzhdb",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@hatadatakasi1",
+      "name": "畑田尊(不動たかし）",
+      "date": "2026-06-07T02:08:08+00:00",
+      "url": "https://x.com/hatadatakasi1/status/2063442857462276516",
+      "source": "x",
+      "score": 20.0,
+      "reasons": [
+        "future_schedule",
+        "bon",
+        "context",
+        "date_time",
+        "link"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型"
+      ],
+      "text": "(#尊の風便り） &lt;#一宮市&gt; #尾張一宮駅前iビル3階シビックテラス にて！ 《#盆踊りCARNIVAL》開催されてます！ 【入場無料】 •6月7日(日） •10∶00〜20∶30 ☆仮装、コスプレ大歓迎！☆ 大いに楽しみましょう！🤩 https://t.co/M8Pt4VOUbd",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@nyantokonyan",
+      "name": "にゃんとこ",
+      "date": "2026-06-07T02:34:41+00:00",
+      "url": "https://x.com/nyantokonyan/status/2063449536698454055",
+      "source": "x",
+      "score": 20.0,
+      "reasons": [
+        "future_schedule",
+        "bon",
+        "context",
+        "date_time",
+        "link"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型"
+      ],
+      "text": "第44回すみだ錦糸町河内音頭大盆踊りのイラストをにゃんとこのぽんが担当しました🏮楽しい盆踊りが末長くできますようにと願いを込めて、錦糸町河内音頭で汗をかきかきわいわい踊る光景を頭に思い浮かべながら描きました。今年は7月29日(水)、30(木)開催、今から待ち遠しいですね🐈💨 #錦糸町河内音頭 https://t.co/X5FJyBrTJx",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@niccori_369",
+      "name": "にこり",
+      "date": "2026-06-07T02:37:33+00:00",
+      "url": "https://x.com/niccori_369/status/2063450258689216907",
+      "source": "x",
+      "score": 20.0,
+      "reasons": [
+        "future_schedule",
+        "bon",
+        "context",
+        "date_time",
+        "link"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型"
+      ],
+      "text": "今横浜のワールドポーターズ来てて来週日曜8時間耐久盆踊りイベントってオモロいw 踊る曲のリクエストも募ってたから、「好き滅❣️」と仁人くんが踊ってた「おはら節」リクエストした！私その日予定あって行けないけど！！w https://t.co/LEsQ5YTVtW",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@sakuranoitiniti",
+      "name": "さくらいろ",
+      "date": "2026-06-07T02:57:00+00:00",
+      "url": "https://x.com/sakuranoitiniti/status/2063455152590262596",
+      "source": "x",
+      "score": 20.0,
+      "reasons": [
+        "future_schedule",
+        "bon",
+        "context",
+        "date_time",
+        "link"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型"
+      ],
+      "text": "6月7日(日曜日) お昼どき 🕒 すみれ 「チビちゃん、フラダンスしてるの？😊」 シオン 「盆踊りの練習だワン💢」 すみれ 「違うんだなー・・・？」 #こんにちはだワン🐶 https://t.co/YU5SiSd0Dk",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@mimi33yuyu26na",
+      "name": "みみ&ゆゆ",
+      "date": "2026-06-07T10:34:52+00:00",
+      "url": "https://x.com/mimi33yuyu26na/status/2063570381945045187",
+      "source": "x",
+      "score": 20.0,
+      "reasons": [
+        "future_schedule",
+        "bon",
+        "context",
+        "date_time",
+        "link"
+      ],
+      "kind_tags": [
+        "発見型",
+        "裏取り型"
+      ],
+      "text": "6/7(日) 今日も晴盆さん❤️ 戸越宮前盆踊りへ♪ 雨で短縮になってしまったものの3時間程しっかり踊ってきました✨ 初の戸越音頭は予習でばっちり👌🏻 晴盆さんと🦊ちゃんお揃いで可愛かったので並んでパシャり❤️ https://t.co/EiZ6ScE1OM",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "high"
+    },
+    {
+      "account": "@genki_takahashi",
+      "name": "高橋元気（中央区議会議員/出張鮨パーティー SUSHI WIZ）",
+      "date": "2025-12-31T10:17:39+00:00",
+      "url": "https://x.com/genki_takahashi/status/2006308763486347707",
+      "source": "x",
+      "score": 7.0,
+      "reasons": [
+        "bon",
+        "context"
+      ],
+      "kind_tags": [
+        "文脈確認型"
+      ],
+      "text": "皆様、本年も大変お世話になりました。 2025年を振り返れば、区政に関してはやはりこの物価高の中、生活苦に悩まされるすべての区民の皆様への支援や、とりわけ晴海・勝どきを中心に人口急増に対応する為のハード面の整備、また保育・教育環境の整備、懸念される治安維持のための対応など、多くの地域課題への対応が必要な一年であり、来年も引き続き対応を進めなくてはなりません。 特に私が力を入れたかったのが地域コミュニティへのサポートです。 人口が増えた…",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "middle"
+    },
+    {
+      "account": "@6icqpwi6tj86131",
+      "name": "大氣",
+      "date": "2026-06-02T14:50:08+00:00",
+      "url": "https://x.com/6IcqPWi6tj86131/status/2061822680387768717",
+      "source": "x",
+      "score": 7.0,
+      "reasons": [
+        "bon",
+        "context"
+      ],
+      "kind_tags": [
+        "文脈確認型"
+      ],
+      "text": "踊ってる人が中心に立ち、太鼓や櫓が公転している、天動説タイプの盆踊り",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "middle"
+    },
+    {
+      "account": "@niinobon_uta",
+      "name": "新野の盆踊り 盆唄集",
+      "date": "2026-06-02T17:08:13+00:00",
+      "url": "https://x.com/niinobon_uta/status/2061857430254792984",
+      "source": "x",
+      "score": 7.0,
+      "reasons": [
+        "bon",
+        "context"
+      ],
+      "kind_tags": [
+        "文脈確認型"
+      ],
+      "text": "たとえ綿の風吹くとても切れて くれるなタコの糸 #新野の盆踊り",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "middle"
+    },
+    {
+      "account": "@kutsushita_nai2",
+      "name": "くつした",
+      "date": "2026-06-03T03:33:25+00:00",
+      "url": "https://x.com/kutsushita_nai2/status/2062014766777078011",
+      "source": "x",
+      "score": 7.0,
+      "reasons": [
+        "bon",
+        "context"
+      ],
+      "kind_tags": [
+        "文脈確認型"
+      ],
+      "text": "見取り図盆踊り行きたい",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "middle"
+    },
+    {
+      "account": "@mayumiyoshioka",
+      "name": "ケロちゃん",
+      "date": "2026-06-03T11:54:01+00:00",
+      "url": "https://x.com/mayumiyoshioka/status/2062140749169517010",
+      "source": "x",
+      "score": 7.0,
+      "reasons": [
+        "bon",
+        "context"
+      ],
+      "kind_tags": [
+        "文脈確認型"
+      ],
+      "text": "見取り図盆踊り 行きたい！ #ソプラノC",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "middle"
+    },
+    {
+      "account": "@okmrtrsb",
+      "name": "okameru☻",
+      "date": "2026-06-03T13:50:27+00:00",
+      "url": "https://x.com/okmrTRsB/status/2062170049205743773",
+      "source": "x",
+      "score": 7.0,
+      "reasons": [
+        "bon",
+        "context"
+      ],
+      "kind_tags": [
+        "文脈確認型"
+      ],
+      "text": "@pkgmousou 三環糸怨を止めることは誰にもできないそれは私にもできないので(ホラー)今年も彼らは新曲を下げてやって来るのさ チンチロ賭博、き○らぎ駅、盆踊りときて今年は何が出てくるんだ果たして",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "middle"
+    },
+    {
+      "account": "@kakubari5426",
+      "name": "🐥Kaku🐷水木prime、トレフラ好き🐥",
+      "date": "2026-06-04T11:52:44+00:00",
+      "url": "https://x.com/kakubari5426/status/2062502811926167794",
+      "source": "x",
+      "score": 7.0,
+      "reasons": [
+        "bon",
+        "context"
+      ],
+      "kind_tags": [
+        "文脈確認型"
+      ],
+      "text": "#prime847 ビアガーデンマイアミ、盆踊りナイト行きます‼️ もちろん浴衣来て︎︎向かいますよお😆",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "middle"
+    },
+    {
+      "account": "@banzou7283",
+      "name": "伴造（ばんぞう）",
+      "date": "2026-06-04T17:14:45+00:00",
+      "url": "https://x.com/banzou7283/status/2062583851579547766",
+      "source": "x",
+      "score": 7.0,
+      "reasons": [
+        "bon",
+        "context"
+      ],
+      "kind_tags": [
+        "文脈確認型"
+      ],
+      "text": "今回は前日があがた祭りで、おまフェスと合わせてまわられた方も多いと思います。あがた祭りにはありませんが、お祭りといえば盆踊りですよね？(違うか？) 盆踊りといえば音頭という事で、「響け！ユーフォニアム音頭」を作るならどんな歌詞にしますか？ #おまフェス9",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "middle"
+    },
+    {
+      "account": "@ezra_sk",
+      "name": "エズラさん",
+      "date": "2026-06-05T16:08:36+00:00",
+      "url": "https://x.com/EZRA_SK/status/2062929591048839324",
+      "source": "x",
+      "score": 7.0,
+      "reasons": [
+        "bon",
+        "context"
+      ],
+      "kind_tags": [
+        "文脈確認型"
+      ],
+      "text": "盆踊り、後半の一時間は腰の痛みとの戦いでした。(^_^;)",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "middle"
+    },
+    {
+      "account": "@888yamata",
+      "name": "Tanchi",
+      "date": "2026-06-06T04:32:39+00:00",
+      "url": "https://x.com/888Yamata/status/2063116836401766585",
+      "source": "x",
+      "score": 7.0,
+      "reasons": [
+        "bon",
+        "context"
+      ],
+      "kind_tags": [
+        "文脈確認型"
+      ],
+      "text": "@s_y_Singer 盆踊りと言う言葉が出てきましたね 都会の盆踊り大会もそれなりに楽しいし、田舎の盆踊りも子供時代を思い出す 共に思いがたどり着くのは故郷でしょうか？",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "middle"
+    },
+    {
+      "account": "@2tsuo_g",
+      "name": "ミツマヨ",
+      "date": "2026-06-06T23:08:36+00:00",
+      "url": "https://x.com/2tsuo_g/status/2063397673848414405",
+      "source": "x_whitelist",
+      "score": 7.0,
+      "reasons": [
+        "context",
+        "experience",
+        "link"
+      ],
+      "kind_tags": [
+        "裏取り型",
+        "参加レポ型"
+      ],
+      "text": "今日は電車に揺られて踊りに行ってます！ガソリンチャージ中😌 (遠征4回目) https://t.co/yI35TjjAto",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "middle"
+    },
+    {
+      "account": "@yukikotatebaya2",
+      "name": "ゆき |『世界から見る日本』ポッドキャスト",
+      "date": "2026-06-07T11:42:07+00:00",
+      "url": "https://x.com/YukikoTatebaya2/status/2063587302967021753",
+      "source": "x",
+      "score": 7.0,
+      "reasons": [
+        "bon",
+        "context"
+      ],
+      "kind_tags": [
+        "文脈確認型"
+      ],
+      "text": "@team_toge 子ども神輿、子供会、懐かしい！町内会の盆踊りとかもそうですね。夏の子供会ではキャンプなどありました。確かに寂しい・・・。",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "middle"
+    },
+    {
+      "account": "@yaetan1224",
+      "name": "やえたんぽぽ",
+      "date": "2026-06-07T13:16:47+00:00",
+      "url": "https://x.com/yaetan1224/status/2063611126802456827",
+      "source": "x",
+      "score": 7.0,
+      "reasons": [
+        "bon",
+        "context"
+      ],
+      "kind_tags": [
+        "文脈確認型"
+      ],
+      "text": "aikoのバンドメンバーってすごいな…プロだなといつも思う… 昨日のボイパもそうだし、今日の盆踊りとか笑、aikoの無茶振りにさらっと対応するのめっちゃかっこいいよね",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "middle"
+    },
+    {
+      "account": "@r47skw2y8y22757",
+      "name": "ひろにぃ【アバディ】",
+      "date": "2026-06-08T06:55:27+00:00",
+      "url": "https://x.com/r47skw2y8y22757/status/2063877548241752320",
+      "source": "x",
+      "score": 7.0,
+      "reasons": [
+        "bon",
+        "context"
+      ],
+      "kind_tags": [
+        "文脈確認型"
+      ],
+      "text": "えー盆踊りやるのー 行きたーい",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "middle"
+    },
+    {
+      "account": "@mrtdkh_o3",
+      "name": "え む 🇫🇷.•*",
+      "date": "2026-06-08T12:28:53+00:00",
+      "url": "https://x.com/mrtdkh_O3/status/2063961459181429155",
+      "source": "x",
+      "score": 7.0,
+      "reasons": [
+        "bon",
+        "context"
+      ],
+      "kind_tags": [
+        "文脈確認型"
+      ],
+      "text": "見取り図盆踊り、1人で行く 予定の方いますか 🥹🥹🥹💭",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "middle"
+    },
+    {
+      "account": "@huwa00huwari",
+      "name": "桃条布和里",
+      "date": "2026-06-09T04:50:36+00:00",
+      "url": "https://x.com/huwa00huwari/status/2064208520040604159",
+      "source": "x",
+      "score": 7.0,
+      "reasons": [
+        "bon",
+        "context"
+      ],
+      "kind_tags": [
+        "文脈確認型"
+      ],
+      "text": "@gdtsugurw 盆踊り本気で踊ってそう",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "middle"
+    },
+    {
+      "account": "@moca31_splatoon",
+      "name": "🦆Möca🌾",
+      "date": "2026-06-09T14:03:42+00:00",
+      "url": "https://x.com/moca31_splatoon/status/2064347709965025632",
+      "source": "x",
+      "score": 7.0,
+      "reasons": [
+        "bon",
+        "context"
+      ],
+      "kind_tags": [
+        "文脈確認型"
+      ],
+      "text": "エアライド新作来たら裸で盆踊り",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "middle"
+    },
+    {
+      "account": "@bon_odoroo",
+      "name": "おーすけ（おーちゃん）",
+      "date": "2026-05-09T12:51:04+00:00",
+      "url": "https://x.com/bon_odoroo/status/2053095406167609728",
+      "source": "x_whitelist",
+      "score": 4.0,
+      "reasons": [
+        "context",
+        "link"
+      ],
+      "kind_tags": [
+        "裏取り型"
+      ],
+      "text": "ヒューリック浅草橋ビル前では始め内と外の間の輪で踊ってたけど、師匠から内で踊るよう指示され僭越ながら入らせて頂きました。 曲目を予測して入念に予習してきたけど、遠慮した方が良かったかな。。。 嬉しかったのは坂東先生の踊りを拝見できたこと。とても優雅でした。 https://t.co/nnf5eh7w6x",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "middle"
+    },
+    {
+      "account": "@bondbont",
+      "name": "みぽぽみぽ",
+      "date": "2026-06-05T17:18:24+00:00",
+      "url": "https://x.com/bonDbonT/status/2062947156957499584",
+      "source": "x_whitelist",
+      "score": 4.0,
+      "reasons": [
+        "context",
+        "link"
+      ],
+      "kind_tags": [
+        "裏取り型"
+      ],
+      "text": "能登・志賀町のキリコが金沢百万石行列に参加 高さ7.5メートルの輪島塗キリコと富来の太鼓「ドンドコ」（石川テレビ） https://t.co/cFOZ6JnOhH",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "middle"
+    },
+    {
+      "account": "@kuzunavi",
+      "name": "ハダ盆(秦野で楽しく盆踊り)",
+      "date": "2026-05-24T13:36:02+00:00",
+      "url": "https://x.com/kuzunavi/status/2058542539804926017",
+      "source": "x_whitelist",
+      "score": 3.0,
+      "reasons": [
+        "context"
+      ],
+      "kind_tags": [
+        "文脈確認型"
+      ],
+      "text": "少しっつ唄の練習も始めっかな まつさかと拍子木とかさ(うふふ)",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "middle"
+    },
+    {
+      "account": "@mrapple_bycandy",
+      "name": "鬼神武者「赤赫林檎」🍎職業「赤い人」",
+      "date": "2026-06-03T03:39:16+00:00",
+      "url": "https://x.com/MrApple_ByCandy/status/2062016238105276419",
+      "source": "x_whitelist",
+      "score": -4.0,
+      "reasons": [
+        "exclude"
+      ],
+      "kind_tags": [
+        "文脈確認型"
+      ],
+      "text": "春日部から急ぐとなんとかラストのライブには間に合う可能性があるけど😅",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "low"
+    },
+    {
+      "account": "@2tsuo_g",
+      "name": "ミツマヨ",
+      "date": "2026-06-02T21:54:23+00:00",
+      "url": "https://x.com/2tsuo_g/status/2061929446282760218",
+      "source": "x_whitelist",
+      "score": -1.0,
+      "reasons": [
+        "no_context"
+      ],
+      "kind_tags": [
+        "文脈確認型"
+      ],
+      "text": "鼻の皮が剥けはじめました",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "low"
+    },
+    {
+      "account": "@2tsuo_g",
+      "name": "ミツマヨ",
+      "date": "2026-06-02T22:04:31+00:00",
+      "url": "https://x.com/2tsuo_g/status/2061931997296288223",
+      "source": "x_whitelist",
+      "score": -1.0,
+      "reasons": [
+        "no_context"
+      ],
+      "kind_tags": [
+        "文脈確認型"
+      ],
+      "text": "電車空いてる🚃",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "low"
+    },
+    {
+      "account": "@2tsuo_g",
+      "name": "ミツマヨ",
+      "date": "2026-06-02T22:32:49+00:00",
+      "url": "https://x.com/2tsuo_g/status/2061939120612802682",
+      "source": "x_whitelist",
+      "score": -1.0,
+      "reasons": [
+        "no_context"
+      ],
+      "kind_tags": [
+        "文脈確認型"
+      ],
+      "text": "雨が吹き荒れている！",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "low"
+    },
+    {
+      "account": "@2tsuo_g",
+      "name": "ミツマヨ",
+      "date": "2026-06-03T03:12:10+00:00",
+      "url": "https://x.com/2tsuo_g/status/2062009420205482440",
+      "source": "x_whitelist",
+      "score": -1.0,
+      "reasons": [
+        "no_context"
+      ],
+      "kind_tags": [
+        "文脈確認型"
+      ],
+      "text": "オフィス寒すぎて寝そうだった🥶",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "low"
+    },
+    {
+      "account": "@2tsuo_g",
+      "name": "ミツマヨ",
+      "date": "2026-06-03T09:02:01+00:00",
+      "url": "https://x.com/2tsuo_g/status/2062097461947294187",
+      "source": "x_whitelist",
+      "score": -1.0,
+      "reasons": [
+        "no_context"
+      ],
+      "kind_tags": [
+        "文脈確認型"
+      ],
+      "text": "ひょろ長くて半袖で踊ってると 不恰好に見えない？そうでもない？",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "low"
+    },
+    {
+      "account": "@2tsuo_g",
+      "name": "ミツマヨ",
+      "date": "2026-06-04T15:43:09+00:00",
+      "url": "https://x.com/2tsuo_g/status/2062560798363582822",
+      "source": "x_whitelist",
+      "score": -1.0,
+      "reasons": [
+        "no_context"
+      ],
+      "kind_tags": [
+        "文脈確認型"
+      ],
+      "text": "1日4-6曲のやってこー",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "low"
+    },
+    {
+      "account": "@2tsuo_g",
+      "name": "ミツマヨ",
+      "date": "2026-06-05T08:33:53+00:00",
+      "url": "https://x.com/2tsuo_g/status/2062815158276432036",
+      "source": "x_whitelist",
+      "score": -1.0,
+      "reasons": [
+        "no_context"
+      ],
+      "kind_tags": [
+        "文脈確認型"
+      ],
+      "text": "早く着いたら屋台みようね",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "low"
+    },
+    {
+      "account": "@adfshunsuke2112",
+      "name": "望月 駿祐",
+      "date": "2026-06-04T14:12:49+00:00",
+      "url": "https://x.com/ADFshunsuke2112/status/2062538065089032483",
+      "source": "x_whitelist",
+      "score": -1.0,
+      "reasons": [
+        "no_context"
+      ],
+      "kind_tags": [
+        "文脈確認型"
+      ],
+      "text": "【⭐️こんばんもち!🎋】 いかがお過ごしかー!! すこぶる体調を崩して 療養してるんですが だいぶ元気になって来ました さぁ生きていこう と言うわけで! 望月が生き様を晒すどデカいイベントは こちらァァァ! 多分当日の望月すごい気合いですので ぜひ見届けに来て下さい!やるぞー! #アニソンディスコ",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "low"
+    },
+    {
+      "account": "@blue_sky_blue_j",
+      "name": "star_joo (秋山 星司/ Akiyama Joji)",
+      "date": "2026-06-03T12:39:06+00:00",
+      "url": "https://x.com/blue_sky_blue_j/status/2062152093809652064",
+      "source": "x_whitelist",
+      "score": -1.0,
+      "reasons": [
+        "no_context"
+      ],
+      "kind_tags": [
+        "文脈確認型"
+      ],
+      "text": "@panda_dapan11 あぎゃ(￣▽￣;)",
+      "review": {
+        "human_label": "",
+        "usefulness_type": [],
+        "notes": ""
+      },
+      "sample_bucket": "low"
+    }
+  ]
+}
