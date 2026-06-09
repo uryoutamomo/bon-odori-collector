@@ -84,6 +84,18 @@
     "notion_url": "https://app.notion.com/p/3718be04e7628127a11ff4f5e3b4927d"
   },
   {
+    "venue": "五反野コミュニティ公園",
+    "region": "足立区",
+    "month": null,
+    "scale": "小",
+    "access": null,
+    "in_tsukiji_30min": true,
+    "source_url": "https://www.city.adachi.tokyo.jp/chiiki/bonfes2025.html",
+    "memo": "足立区「あだちの盆踊り・あだちのまつり」から追加。おと（Codex）2026-06-09",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37a8be04e762814488dfe287a4a4f8fe"
+  },
+  {
     "venue": "京陽小学校",
     "region": "品川区",
     "month": null,
@@ -274,6 +286,18 @@
     "memo": "例大祭は例年9月中旬（2025年は9/12(金)〜14(日)、金曜宮神輿御靈入れ・土曜大祭式・日曜御本社神輿渡御）。巫女による浦安舞・獅子舡、多数の子供神輿・大神輿・山車の巡行とともに盆踊り等のイベントも開催。出典：戸越八幡神社公式サイト・しながわ観光協会",
     "needs_review": false,
     "notion_url": "https://app.notion.com/p/3718be04e7628170b1e5ec8d792c019c"
+  },
+  {
+    "venue": "新宿住友ビル三角広場",
+    "region": "新宿区",
+    "month": null,
+    "scale": "大",
+    "access": null,
+    "in_tsukiji_30min": true,
+    "source_url": "https://www.sumitomo-sankakuhiroba.jp/2025/06/17/%E4%B8%89%E8%A7%92%E5%BA%83%E5%A0%B4%E3%81%BE%E3%81%A4%E3%82%8A%E3%80%8C%E5%B1%85%E9%85%92%E5%B1%8B%E7%9B%86%E8%B8%8A%E3%82%8A%E3%80%8D%E9%96%8B%E5%82%AC%EF%BC%81/",
+    "memo": "三角広場まつり「居酒屋盆踊り」公式告知から追加。おと（Codex）2026-06-09",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37a8be04e762818fa32fcef493e0f5f1"
   },
   {
     "venue": "旗岡八幡神社",
@@ -514,6 +538,18 @@
     "memo": "白金台三光第八町会主催の「白金台どんぐり児童遊園 納涼盆踊り大会」が例年9月第1日曜17:45～20:15に開催される確実な盆踊り会場。芝生の上で行われ露店も多い。",
     "needs_review": false,
     "notion_url": "https://app.notion.com/p/3718be04e76281bfa9cfebb500e91d8c"
+  },
+  {
+    "venue": "秩父宮ラグビー場駐車場",
+    "region": "港区",
+    "month": null,
+    "scale": "大",
+    "access": null,
+    "in_tsukiji_30min": true,
+    "source_url": "https://aoyama-gaienmae.or.jp/news/20250617/",
+    "memo": "郡上おどりin青山2025会場。おと（Codex）2026-06-09",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37a8be04e762816babd4c8fb69e56d75"
   },
   {
     "venue": "第一日野小学校",
@@ -780,6 +816,18 @@
     "notion_url": "https://app.notion.com/p/JR-3718be04e7628184a8d3cd0ff6f50d24"
   },
   {
+    "venue": "よしもと waraii myraii館 アシタ広場",
+    "region": "大阪市此花区",
+    "month": null,
+    "scale": "大",
+    "access": null,
+    "in_tsukiji_30min": false,
+    "source_url": "https://prtimes.jp/main/html/rd/p/000004013.000029501.html",
+    "memo": "よしもと waraii myraii館「盆踊りのアシタ」会場。おと（Codex）2026-06-09",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/waraii-myraii-37a8be04e76281639833ef3ac99b025b"
+  },
+  {
     "venue": "中島公園",
     "region": "札幌市中央区",
     "month": null,
@@ -814,6 +862,30 @@
     "memo": "八杉神社主催の盆踊りが2025年8/16(土)開催。新羽サマーフェス・トレッサ夏祭りと同日開催。築地30分圏外（横浜市港北区）。出典：新横浜新聖。",
     "needs_review": false,
     "notion_url": "https://app.notion.com/p/3718be04e76281209be2cf41c6bd5a8f"
+  },
+  {
+    "venue": "大阪・関西万博 フェスティバル・ステーション",
+    "region": "大阪市此花区",
+    "month": null,
+    "scale": "大",
+    "access": null,
+    "in_tsukiji_30min": false,
+    "source_url": "https://inochi-forum.org/action-report/general-event/inochi-declaration-festival/",
+    "memo": "いのち宣言フェスティバル会場。おと（Codex）2026-06-09",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37a8be04e7628134b0b2fd5ee96b8b5b"
+  },
+  {
+    "venue": "大阪・関西万博 ポップアップステージ北",
+    "region": "大阪市此花区",
+    "month": null,
+    "scale": "大",
+    "access": null,
+    "in_tsukiji_30min": false,
+    "source_url": "https://www.expo2025.or.jp/wp/wp-content/uploads/250418_eventcalendarhosokuJPN.pdf",
+    "memo": "大阪・関西万博イベントカレンダー補足資料から追加。おと（Codex）2026-06-09",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37a8be04e76281e3b17ee93ef7084f8e"
   },
   {
     "venue": "太陽の広場",
@@ -1042,6 +1114,18 @@
     "memo": "浄土真宗本願寺派本山「お西さん」。毎年7月下旬～8月上旬に境内北側駐車場で「本願寺納涸盆踊り」が開催（1986年開始、1万人以上動員、第37回は2025年7/31-8/1）=確実な盆踊り会場。築地30分圏外（京都市下京区）。築地本願寺・東本願寺（台東区）とは別物。",
     "needs_review": false,
     "notion_url": "https://app.notion.com/p/3718be04e762810392caec9d289739d1"
+  },
+  {
+    "venue": "金沢百万石まつり 百万石踊り流し会場",
+    "region": "金沢市",
+    "month": null,
+    "scale": "大",
+    "access": null,
+    "in_tsukiji_30min": false,
+    "source_url": "https://www.kanazawa-u.ac.jp/?p=165093",
+    "memo": "第74回金沢百万石まつり「百万石踊り流し」会場。おと（Codex）2026-06-09",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37a8be04e762814d9bdbd4154f6ab392"
   },
   {
     "venue": "飛鳥山公園",
