@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-09T16:05:55.269428+00:00",
+  "generated_at": "2026-06-09T16:22:41.098186+00:00",
   "accounts": {
     "5khfya5pjksggov": {
       "handle": "@5khfya5pjksggov",
@@ -57,17 +57,17 @@
         "media_hint": 1,
         "future_schedule": 1
       },
-      "recent_posts_seen": 13,
+      "recent_posts_seen": 12,
       "recent_valuable_posts": 7,
       "recent_noise_posts": 0,
-      "recent_value_points": 96.0,
+      "recent_value_points": 93.0,
       "lifetime_score": 11.7,
-      "recent_score": 10.185,
+      "recent_score": 10.55,
       "recent_days": 30,
-      "quality_score": 10.791,
-      "score": 10.791,
+      "quality_score": 11.01,
+      "score": 11.01,
       "value_ratio": 0.571,
-      "recent_value_ratio": 0.538,
+      "recent_value_ratio": 0.583,
       "status": "trusted",
       "confidence": "high",
       "usefulness_rank": "S",
@@ -17552,6 +17552,37 @@
         "文脈確認型"
       ]
     },
+    "cha73": {
+      "handle": "@cha73",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-09T16:07:48+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_noise_posts": 0,
+      "recent_value_points": 7.0,
+      "lifetime_score": 7.4,
+      "recent_score": 7.4,
+      "recent_days": 30,
+      "quality_score": 7.4,
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.0,
+      "role_tags": [
+        "文脈確認型"
+      ]
+    },
     "chanchan_mammy": {
       "handle": "@chanchan_mammy",
       "posts_seen": 1,
@@ -26580,6 +26611,37 @@
       "noise_posts": 0,
       "value_points": 7.0,
       "last_seen": "2026-06-06T14:59:22+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_noise_posts": 0,
+      "recent_value_points": 7.0,
+      "lifetime_score": 7.4,
+      "recent_score": 7.4,
+      "recent_days": 30,
+      "quality_score": 7.4,
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.0,
+      "role_tags": [
+        "文脈確認型"
+      ]
+    },
+    "twilight8128": {
+      "handle": "@twilight8128",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-09T16:12:59+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1
