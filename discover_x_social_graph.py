@@ -94,57 +94,19 @@ def profile_text(user):
     return " ".join(p for p in parts if p)
 
 
-def graph_signal(candidate, cfg):
-    discovery = cfg.get("social_graph_discovery", {})
-    sources = candidate["discovered_by"]
-    source_count = len(sources)
-    seed_score_sum = sum(src.get("seed_score", 0) for src in sources)
-    high_quality_min = discovery.get("high_quality_seed_min_score", 10.0)
-    high_quality_seed_count = sum(
-        1 for src in sources if src.get("seed_score", 0) >= high_quality_min
-    )
-    trusted_seed_count = sum(
-        1 for src in sources if src.get("seed_status") in discovery.get("trusted_seed_statuses", ["trusted"])
-    )
-    return {
-        "source_count": source_count,
-        "seed_score_sum": round(seed_score_sum, 3),
-        "high_quality_seed_count": high_quality_seed_count,
-        "trusted_seed_count": trusted_seed_count,
-    }
-
-
-def score_candidate(candidate, known_handles, cfg):
-    discovery = cfg.get("social_graph_discovery", {})
+def score_candidate(candidate, known_handles):
     user = candidate["profile"]
     text = profile_text(user)
     keyword_hits = [kw for kw in PROFILE_VALUE_KEYWORDS if kw in text]
-    signal = graph_signal(candidate, cfg)
-    source_count = signal["source_count"]
-    seed_score_sum = signal["seed_score_sum"]
-    high_quality_seed_count = signal["high_quality_seed_count"]
-    trusted_seed_count = signal["trusted_seed_count"]
+    source_count = len(candidate["discovered_by"])
+    seed_score_sum = sum(src.get("seed_score", 0) for src in candidate["discovered_by"])
     followers = user.get("followers") or 0
     following = user.get("following") or 0
 
     score = 0.0
     # Follow graph is only a discovery hint. Actual rank must come from post quality.
-    score += min(
-        discovery.get("source_count_score_cap", 4.5),
-        source_count * discovery.get("source_count_weight", 0.9),
-    )
-    score += min(
-        discovery.get("seed_quality_score_cap", 3.0),
-        seed_score_sum / discovery.get("seed_quality_divisor", 35.0),
-    )
-    score += min(
-        discovery.get("high_quality_seed_score_cap", 2.0),
-        high_quality_seed_count * discovery.get("high_quality_seed_weight", 0.35),
-    )
-    score += min(
-        discovery.get("trusted_seed_score_cap", 1.0),
-        trusted_seed_count * discovery.get("trusted_seed_weight", 0.15),
-    )
+    score += min(3.0, source_count * 0.75)
+    score += min(2.0, seed_score_sum / 50.0)
     score += min(6.0, len(keyword_hits) * 1.5)
     if followers:
         score += min(1.0, math.log10(max(followers, 1)) / 3.0)
@@ -158,17 +120,13 @@ def score_candidate(candidate, known_handles, cfg):
     reasons = []
     if source_count:
         reasons.append(f"graph_hint_followed_by_seeds:{source_count}")
-    if high_quality_seed_count:
-        reasons.append(f"high_quality_seed_followers:{high_quality_seed_count}")
-    if seed_score_sum:
-        reasons.append(f"seed_score_sum:{round(seed_score_sum, 2)}")
     if keyword_hits:
         reasons.append("profile_keywords:" + ",".join(keyword_hits[:8]))
     if followers:
         reasons.append(f"followers:{followers}")
     if norm_handle(user.get("userName")) in known_handles:
         reasons.append("already_seen")
-    return round(score, 3), reasons, signal
+    return round(score, 3), reasons
 
 
 def main():
@@ -259,7 +217,7 @@ def main():
     min_score = discovery.get("min_candidate_score", 3.0)
     out_candidates = []
     for cand in candidates.values():
-        score, reasons, signal = score_candidate(cand, known_handles, cfg)
+        score, reasons = score_candidate(cand, known_handles)
         cand_out = {
             "handle": cand["handle"],
             "name": cand["profile"].get("name", ""),
@@ -269,7 +227,6 @@ def main():
             "following": cand["profile"].get("following"),
             "url": cand["profile"].get("url", ""),
             "candidate_score": score,
-            "graph_signal": signal,
             "reasons": reasons,
             "discovered_by": cand["discovered_by"],
         }
