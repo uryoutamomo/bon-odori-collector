@@ -52,6 +52,37 @@ class RankXBonodoriAccountsTest(unittest.TestCase):
 
         self.assertEqual(tags, ["発見型", "裏取り型", "参加レポ型", "地域/会場型"])
 
+    def test_future_schedule_counts_are_tracked(self):
+        now = collect.datetime.now(collect.timezone.utc)
+        old = now - collect.timedelta(days=45)
+        scores = collect._build_x_account_scores([
+            {
+                "source": "x_whitelist",
+                "account": "@future",
+                "text": "明日、中央公園で盆踊りを開催予定です。時間と会場のお知らせ。",
+                "date": now.isoformat(),
+            },
+            {
+                "source": "x_whitelist",
+                "account": "@future",
+                "text": "明日、町会の盆踊り練習を実施します。",
+                "date": old.isoformat(),
+            },
+            {
+                "source": "x_whitelist",
+                "account": "@future",
+                "text": "盆踊りに行ってきた。写真も楽しかった。",
+                "date": now.isoformat(),
+            },
+        ], {"account_ranking": {"recent_days": 30}})
+
+        row = scores["accounts"]["future"]
+
+        self.assertEqual(row["valuable_posts"], 3)
+        self.assertEqual(row["future_schedule_posts"], 2)
+        self.assertEqual(row["recent_valuable_posts"], 2)
+        self.assertEqual(row["recent_future_schedule_posts"], 1)
+
 
 if __name__ == "__main__":
     unittest.main()

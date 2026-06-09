@@ -722,7 +722,6 @@ X_MEMBER_OBSOLETE_SCORE_PROPS = (
     "自動スコア",
     "手動重み",
     "収集ランク",
-    "未来予定投稿数",
     "最終評価日時",
     "評価理由",
     "総合スコア",
@@ -1001,12 +1000,14 @@ def _build_x_account_scores(voices, cfg=None):
             "handle": f"@{handle}",
             "posts_seen": 0,
             "valuable_posts": 0,
+            "future_schedule_posts": 0,
             "noise_posts": 0,
             "value_points": 0.0,
             "last_seen": "",
             "top_reasons": {},
             "recent_posts_seen": 0,
             "recent_valuable_posts": 0,
+            "recent_future_schedule_posts": 0,
             "recent_noise_posts": 0,
             "recent_value_points": 0.0,
         })
@@ -1015,6 +1016,9 @@ def _build_x_account_scores(voices, cfg=None):
         row["value_points"] += value
         if value >= 4:
             row["valuable_posts"] += 1
+        has_future_schedule = "future_schedule" in reasons
+        if has_future_schedule:
+            row["future_schedule_posts"] += 1
         if value < 0:
             row["noise_posts"] += 1
         dt = _voice_datetime(v)
@@ -1028,6 +1032,8 @@ def _build_x_account_scores(voices, cfg=None):
             row["recent_value_points"] += value
             if value >= 4:
                 row["recent_valuable_posts"] += 1
+            if has_future_schedule:
+                row["recent_future_schedule_posts"] += 1
             if value < 0:
                 row["recent_noise_posts"] += 1
         date = v.get("date") or ""
@@ -1139,6 +1145,8 @@ def _ensure_x_member_score_props():
             "直近投稿数": {"number": {"format": "number"}},
             "価値投稿数": {"number": {"format": "number"}},
             "直近価値投稿数": {"number": {"format": "number"}},
+            "未来予定投稿数": {"number": {"format": "number"}},
+            "直近未来予定投稿数": {"number": {"format": "number"}},
             "有益ランク": {
                 "select": {
                     "options": [
@@ -1245,6 +1253,8 @@ def _sync_x_account_scores_to_notion(accounts, cfg=None):
             "直近投稿数": {"number": row.get("recent_posts_seen", 0)},
             "価値投稿数": {"number": row.get("valuable_posts", 0)},
             "直近価値投稿数": {"number": row.get("recent_valuable_posts", 0)},
+            "未来予定投稿数": {"number": row.get("future_schedule_posts", 0)},
+            "直近未来予定投稿数": {"number": row.get("recent_future_schedule_posts", 0)},
             "有益ランク": {"select": {"name": row.get("usefulness_rank", "Probation")}},
             "信頼度": {"select": {"name": row.get("confidence", "low")}},
             "得意タイプ": {"multi_select": [{"name": tag} for tag in row.get("role_tags", [])]},
@@ -1452,6 +1462,10 @@ def add_promoted_x_members(review_results):
             props["価値投稿数"] = {"number": row.get("valuable_posts", 0)}
         if schema.get("直近価値投稿数", {}).get("type") == "number":
             props["直近価値投稿数"] = {"number": row.get("valuable_posts", 0)}
+        if schema.get("未来予定投稿数", {}).get("type") == "number":
+            props["未来予定投稿数"] = {"number": row.get("future_schedule_posts", 0)}
+        if schema.get("直近未来予定投稿数", {}).get("type") == "number":
+            props["直近未来予定投稿数"] = {"number": row.get("recent_future_schedule_posts", 0)}
         if schema.get("有益ランク", {}).get("type") == "select":
             props["有益ランク"] = {"select": {"name": "Candidate"}}
         if schema.get("信頼度", {}).get("type") == "select":
