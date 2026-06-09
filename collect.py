@@ -35,11 +35,15 @@ NOTION_PAGE_ID = os.environ.get("NOTION_PAGE_ID")
 NOTION_VERSION = "2022-06-28"
 NOTION_API = "https://api.notion.com/v1"
 
+
+def _env_or_default(name, default):
+    return os.environ.get(name) or default
+
 # --- X(twitterapi.io)収集設定 ---
 # キーは GitHub Secrets / 環境変数で渡す。未設定なら X 収集はスキップ（fail-safe）。
 TWITTERAPI_IO_KEY = os.environ.get("TWITTERAPI_IO_KEY")
 # 「🐦 X収集ログ DB」（盆踊り情報開発 配下）。DB ID は秘匿情報ではないので既定値を持つ。
-X_LOG_DB_ID = os.environ.get("X_LOG_DB_ID", "ef2f627d-3ac5-4133-9abd-f5d6d655afa7")
+X_LOG_DB_ID = _env_or_default("X_LOG_DB_ID", "ef2f627d-3ac5-4133-9abd-f5d6d655afa7")
 TWITTERAPI_IO_BASE = "https://api.twitterapi.io/twitter/tweet/advanced_search"
 X_QUERIES_FILE = "x_queries.json"
 X_BUDGET_FILE = "data/x_budget.json"
@@ -708,9 +712,9 @@ def collect_proactive_x(targets, seen_urls, config):
 # A. 既存「X メンバーリスト」DB の from: をバッチ収集（since_time で新規のみ）→ ⭐盆踊ラー最優先
 # B. 盆踊ラー声＋ニュースから会場名を検知 →「🔎 裏取りキュー」DB へ（裏取りはこわ）。既出は再投入しない。
 
-X_MEMBER_LIST_DB_ID = os.environ.get("X_MEMBER_LIST_DB_ID", "5c585224465241548b631e4e5d316f3b")
-TORIMOCHI_QUEUE_DB_ID = os.environ.get("TORIMOCHI_QUEUE_DB_ID", "f560afee832f4b1084d6e6093d74da16")
-GLOSSARY_DB_ID = os.environ.get("GLOSSARY_DB_ID", "989e9effc7fc40db8043a3b8e03090ee")
+X_MEMBER_LIST_DB_ID = _env_or_default("X_MEMBER_LIST_DB_ID", "5c585224465241548b631e4e5d316f3b")
+TORIMOCHI_QUEUE_DB_ID = _env_or_default("TORIMOCHI_QUEUE_DB_ID", "f560afee832f4b1084d6e6093d74da16")
+GLOSSARY_DB_ID = _env_or_default("GLOSSARY_DB_ID", "989e9effc7fc40db8043a3b8e03090ee")
 VENUE_MASTER_FILE = "data/venue_master.json"
 X_WHITELIST_STATE_FILE = "data/x_whitelist_state.json"
 X_ACCOUNT_SCORES_FILE = "data/x_account_scores.json"
