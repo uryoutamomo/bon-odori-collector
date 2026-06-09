@@ -65,6 +65,72 @@ def map_tweet(tw, fallback_handle):
     }
 
 
+def candidate_graph_strength(candidate, cfg):
+    review_cfg = cfg.get("candidate_post_review", {})
+    high_quality_min = review_cfg.get("high_quality_seed_min_score", 10.0)
+    discovered_by = candidate.get("discovered_by") or []
+    seed_score_sum = sum(src.get("seed_score", 0) for src in discovered_by)
+    high_quality_seed_count = sum(
+        1 for src in discovered_by if src.get("seed_score", 0) >= high_quality_min
+    )
+    trusted_seed_count = sum(
+        1 for src in discovered_by if src.get("seed_status") in review_cfg.get("trusted_seed_statuses", ["trusted"])
+    )
+    return {
+        "discovered_by_count": len(discovered_by),
+        "seed_score_sum": round(seed_score_sum, 3),
+        "high_quality_seed_count": high_quality_seed_count,
+        "trusted_seed_count": trusted_seed_count,
+    }
+
+
+def select_review_candidates(candidates, cfg):
+    review_cfg = cfg.get("candidate_post_review", {})
+    primary_limit = review_cfg.get("max_candidates", 30)
+    graph_limit = review_cfg.get("graph_bonus_candidates", 0)
+    selected = []
+    seen = set()
+
+    def add(candidate):
+        key = norm_handle(candidate.get("handle"))
+        if key and key not in seen:
+            seen.add(key)
+            selected.append(candidate)
+
+    for candidate in candidates[:primary_limit]:
+        add(candidate)
+
+    if graph_limit <= 0:
+        return selected
+
+    min_sources = review_cfg.get("graph_bonus_min_sources", 4)
+    min_seed_score_sum = review_cfg.get("graph_bonus_min_seed_score_sum", 40.0)
+    min_high_quality = review_cfg.get("graph_bonus_min_high_quality_seeds", 2)
+    graph_candidates = []
+    for candidate in candidates[primary_limit:]:
+        strength = candidate_graph_strength(candidate, cfg)
+        if (
+            strength["discovered_by_count"] >= min_sources
+            and strength["seed_score_sum"] >= min_seed_score_sum
+            and strength["high_quality_seed_count"] >= min_high_quality
+        ):
+            enriched = dict(candidate)
+            enriched["review_selection_reason"] = "graph_bonus"
+            enriched["review_graph_strength"] = strength
+            graph_candidates.append(enriched)
+
+    graph_candidates.sort(key=lambda c: (
+        -c["review_graph_strength"]["high_quality_seed_count"],
+        -c["review_graph_strength"]["seed_score_sum"],
+        -c["review_graph_strength"]["discovered_by_count"],
+        -c.get("candidate_score", 0),
+        c.get("handle", ""),
+    ))
+    for candidate in graph_candidates[:graph_limit]:
+        add(candidate)
+    return selected
+
+
 def review_candidate(candidate, cfg, known_venues):
     handle = norm_handle(candidate.get("handle"))
     pages = cfg.get("candidate_post_review", {}).get(
@@ -131,7 +197,10 @@ def review_candidate(candidate, cfg, known_venues):
         "handle": candidate.get("handle"),
         "name": candidate.get("name", ""),
         "description": candidate.get("description", ""),
+        "review_selection_reason": candidate.get("review_selection_reason", "primary_rank"),
+        "review_graph_strength": candidate.get("review_graph_strength") or candidate_graph_strength(candidate, cfg),
         "graph_candidate_score": candidate.get("candidate_score", 0),
+        "graph_signal": candidate.get("graph_signal", {}),
         "graph_reasons": candidate.get("reasons", []),
         "discovered_by_count": len(candidate.get("discovered_by", [])),
         "tweets_checked": len(tweets),
@@ -158,7 +227,7 @@ def main():
         return 0
 
     candidate_data = load_json(CANDIDATES_FILE, {"candidates": []})
-    candidates = candidate_data.get("candidates", [])[:review_cfg.get("max_candidates", 30)]
+    candidates = select_review_candidates(candidate_data.get("candidates", []), cfg)
     if not candidates:
         print("[review] 候補アカウントがありません")
         return 0
@@ -201,6 +270,12 @@ def main():
     output = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "reviewed_candidates": len(results),
+        "selection": {
+            "primary_rank": sum(1 for c in candidates if c.get("review_selection_reason", "primary_rank") == "primary_rank"),
+            "graph_bonus": sum(1 for c in candidates if c.get("review_selection_reason") == "graph_bonus"),
+            "max_candidates": review_cfg.get("max_candidates", 30),
+            "graph_bonus_candidates": review_cfg.get("graph_bonus_candidates", 0),
+        },
         "cost_estimate": {
             "calls": total_calls,
             "credits": total_credits,
