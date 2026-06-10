@@ -1,0 +1,1687 @@
+[
+  {
+    "name": "山王音頭と民踊大会",
+    "name_confirmed": true,
+    "venue": "山王パークタワー公開空地",
+    "area": "千代田区",
+    "months": [
+      6
+    ],
+    "scale": "中",
+    "access": "東京メトロ銀座線・南北線 溜池山王駅 7番出口直結。東京メトロ丸ノ内線・千代田線 国会議事堂前駅から地下通路で接続",
+    "address": "〒100-0014 東京都千代田区永田町2-10-5",
+    "date": "2026-06-13",
+    "status": "確認済み"
+  },
+  {
+    "name": "山王音頭と民踊大会（日枝神社納涼大会 盆踊り）",
+    "name_confirmed": true,
+    "venue": "山王パークタワー公開空地",
+    "area": "千代田区",
+    "months": [
+      6
+    ],
+    "scale": "中",
+    "access": "東京メトロ銀座線・南北線 溜池山王駅 7番出口直結。東京メトロ丸ノ内線・千代田線 国会議事堂前駅から地下通路で接続",
+    "address": "〒100-0014 東京都千代田区永田町2-10-5",
+    "date": "2025-06-13",
+    "status": "終了"
+  },
+  {
+    "name": "みたままつり 納涼民踊のつどい",
+    "name_confirmed": true,
+    "venue": "靖国神社",
+    "area": "千代田区",
+    "months": [
+      7
+    ],
+    "scale": "大",
+    "access": "地下鉄九段下駅（1番出口）・市ケ谷駅（1番出口）より徒歩",
+    "address": "〒102-8246 東京都千代田区靖国2-3-1",
+    "date": null,
+    "status": "未確認"
+  },
+  {
+    "name": "京橋盆踊り",
+    "name_confirmed": true,
+    "venue": "京橋エドグラン 京橋中央ひろば",
+    "area": "中央区",
+    "months": [
+      8
+    ],
+    "scale": "中",
+    "access": "東京メトロ銀座線 京橋駅直結",
+    "address": "中央区京橋2-2-1",
+    "date": null,
+    "status": "未確認"
+  },
+  {
+    "name": "小網神社の盆踊り",
+    "name_confirmed": false,
+    "venue": "小網神社",
+    "area": "中央区",
+    "months": [
+      5
+    ],
+    "scale": "小",
+    "access": "東京メトロ日比谷線・都営浅草線「人形町駅」徒歩5分",
+    "address": "東京都中央区日本橋小網町16-23",
+    "date": null,
+    "status": null
+  },
+  {
+    "name": "日本橋小学校の盆踊り",
+    "name_confirmed": false,
+    "venue": "日本橋小学校",
+    "area": "中央区",
+    "months": [],
+    "scale": "小",
+    "access": "都営浅草線・東京メトロ日比谷線 人形町駅から徒歩2〜3分",
+    "address": "東京都中央区日本橋人形町1-1-17",
+    "date": null,
+    "status": null
+  },
+  {
+    "name": "日本橋社会教育会館の盆踊り",
+    "name_confirmed": false,
+    "venue": "日本橋社会教育会館",
+    "area": "中央区",
+    "months": [
+      2
+    ],
+    "scale": "中",
+    "access": "東京メトロ日比谷線・都営浅草線「人形町駅」A2/A6番出口から徒歩4分、東京メトロ半蔵門線「水天宮前駅」8番出口から徒歩5分",
+    "address": "東京都中央区日本橋人形町一丁目1番17号（日本橋小学校等複合施設内）",
+    "date": null,
+    "status": null
+  },
+  {
+    "name": "イベント名未確認（晴海ふ頭公園）",
+    "name_confirmed": true,
+    "venue": "晴海ふ頭公園",
+    "area": "中央区",
+    "months": [
+      7
+    ],
+    "scale": "中",
+    "access": "都営大江戸線 勝どき駅から徒歩25分。都営バス 晴海埠頭下車 徒歩2分",
+    "address": "東京都中央区晴海五丁目",
+    "date": null,
+    "status": "未確認"
+  },
+  {
+    "name": "中央区大江戸まつり盆おどり大会",
+    "name_confirmed": true,
+    "venue": "浜町公園",
+    "area": "中央区",
+    "months": [
+      8
+    ],
+    "scale": "大",
+    "access": "都営新宿線「浜町駅」A1・A2出口より徒歩1分（駅の真上）。東京メトロ日比谷線「人形町駅」・半蔵門線「水天宮前駅」からも徒歩約13分",
+    "address": "東京都中央区日本橋浜町2丁目59",
+    "date": null,
+    "status": "未確認"
+  },
+  {
+    "name": "浜二納涼盆踊り大会",
+    "name_confirmed": true,
+    "venue": "浜町公園",
+    "area": "中央区",
+    "months": [
+      9
+    ],
+    "scale": "大",
+    "access": "都営新宿線「浜町駅」A1・A2出口より徒歩1分（駅の真上）。東京メトロ日比谷線「人形町駅」・半蔵門線「水天宮前駅」からも徒歩約13分",
+    "address": "東京都中央区日本橋浜町2丁目59",
+    "date": null,
+    "status": "未確認"
+  },
+  {
+    "name": "濱町音頭盆踊り大会",
+    "name_confirmed": true,
+    "venue": "浜町公園",
+    "area": "中央区",
+    "months": [
+      9
+    ],
+    "scale": "大",
+    "access": "都営新宿線「浜町駅」A1・A2出口より徒歩1分（駅の真上）。東京メトロ日比谷線「人形町駅」・半蔵門線「水天宮前駅」からも徒歩約13分",
+    "address": "東京都中央区日本橋浜町2丁目59",
+    "date": null,
+    "status": "未確認"
+  },
+  {
+    "name": "築地本願寺納涼盆踊り大会",
+    "name_confirmed": true,
+    "venue": "築地本願寺",
+    "area": "中央区",
+    "months": [
+      7,
+      8
+    ],
+    "scale": "大",
+    "access": "東京メトロ日比谷線 築地駅 出口1直結。東京メトロ有楽町線 新富町駅 出口4から徒歩約5分。都営浅草線 東銀座駅 出口5、都営大江戸線 築地市場駅 A1出口から各徒歩約5分",
+    "address": "東京都中央区築地3-15-1",
+    "date": null,
+    "status": "未確認"
+  },
+  {
+    "name": "イベント名未確認（築地社会教育会館）",
+    "name_confirmed": true,
+    "venue": "築地社会教育会館",
+    "area": "中央区",
+    "months": [
+      3
+    ],
+    "scale": "小",
+    "access": "東京メトロ日比谷線・都営浅草線「東銀座駅」6番出口徒歩5分、都営大江戸線「築地市場駅」A1番出口徒歩5分",
+    "address": "〒104-0045 東京都中央区築地4丁目15番1号",
+    "date": null,
+    "status": "未確認"
+  },
+  {
+    "name": "アークヒルズ秋祭り 盆踊り",
+    "name_confirmed": true,
+    "venue": "アーク・カラヤン広場（アークヒルズ）",
+    "area": "港区",
+    "months": [
+      9
+    ],
+    "scale": "中",
+    "access": "南北線 六本木一丁目駅直結／銀座線 溜池山王駅 徒歩5分",
+    "address": "港区赤坂1-12-32",
+    "date": null,
+    "status": "未確認"
+  },
+  {
+    "name": "第16回ハマサイトの夏祭り",
+    "name_confirmed": true,
+    "venue": "ハマサイト前広場・汐留ビルディング外構",
+    "area": "港区",
+    "months": [
+      8
+    ],
+    "scale": "小",
+    "access": "浜松町駅・大門駅から徒歩圏内",
+    "address": "東京都港区海岸1-2-34",
+    "date": "2025-08-22",
+    "status": "終了"
+  },
+  {
+    "name": "三田松坂児童遊園の盆踊り",
+    "name_confirmed": false,
+    "venue": "三田松坂児童遊園",
+    "area": "港区",
+    "months": [
+      3
+    ],
+    "scale": "小",
+    "access": "都営三田線・東京メトロ南北線「白金高輪駅」から徒歩3分",
+    "address": "東京都港区三田5丁目",
+    "date": null,
+    "status": null
+  },
+  {
+    "name": "六本木天祖神社（龍土神明宮）例大祭 盆踊り",
+    "name_confirmed": true,
+    "venue": "六本木天祖神社",
+    "area": "港区",
+    "months": [
+      9
+    ],
+    "scale": "中",
+    "access": "東京メトロ千代田線「乃木坂駅」徒歩5分・日比谷線「六本木駅」徒歩5分・都営大江戸線「六本木駅」徒歩3分",
+    "address": "〒106-0032 東京都港区六本木7-7-7",
+    "date": null,
+    "status": "未確認"
+  },
+  {
+    "name": "埠頭公園（港区芝浦港南）の盆踊り",
+    "name_confirmed": false,
+    "venue": "埠頭公園（港区芝浦港南）",
+    "area": "港区",
+    "months": [
+      8
+    ],
+    "scale": "小",
+    "access": "JR・都営大江戸線「田町駅」東口から徒歩約12分（1km強）、海岸通りからは徒歩3分",
+    "address": "東京都港区海岸3丁目（旧海岸通り沿い）",
+    "date": null,
+    "status": null
+  },
+  {
+    "name": "増上寺 地蔵尊盆踊り大会",
+    "name_confirmed": true,
+    "venue": "増上寺（大殿前広場）",
+    "area": "港区",
+    "months": [
+      7
+    ],
+    "scale": "大",
+    "access": "都営三田線 御成門駅・芝公園駅 徒歩3分／JR浜松町駅 徒歩10分",
+    "address": "港区芝公園4-7-35",
+    "date": null,
+    "status": "未確認"
+  },
+  {
+    "name": "桜田公園の盆踊り",
+    "name_confirmed": false,
+    "venue": "桜田公園",
+    "area": "港区",
+    "months": [
+      7
+    ],
+    "scale": "小",
+    "access": "JR・地下鉄各線 新橋駅から徒歩圏内",
+    "address": "東京都港区新橋3-16-15",
+    "date": null,
+    "status": null
+  },
+  {
+    "name": "白金児童遊園の盆踊り",
+    "name_confirmed": false,
+    "venue": "白金児童遊園",
+    "area": "港区",
+    "months": [
+      7
+    ],
+    "scale": "中",
+    "access": "都営三田線・東京メトロ南北線 白金高輪駅から徒歩圏内",
+    "address": "東京都港区白金台2-24-3",
+    "date": null,
+    "status": null
+  },
+  {
+    "name": "白金台どんぐり児童遊園の盆踊り",
+    "name_confirmed": false,
+    "venue": "白金台どんぐり児童遊園",
+    "area": "港区",
+    "months": [
+      9
+    ],
+    "scale": "小",
+    "access": "東京メトロ南北線・都営三田線「白金台駅」1番出口から徒歩7分",
+    "address": "東京都港区白金台五丁目19番1号",
+    "date": null,
+    "status": null
+  },
+  {
+    "name": "郡上おどり in 青山 2025",
+    "name_confirmed": true,
+    "venue": "秩父宮ラグビー場駐車場",
+    "area": "港区",
+    "months": [
+      6
+    ],
+    "scale": "大",
+    "access": "東京メトロ銀座線 外苑前駅 3番出口から徒歩約5分。都営大江戸線 国立競技場駅、JR千駄ケ谷駅・信濃町駅から徒歩約15分",
+    "address": "東京都港区北青山2-8-35",
+    "date": "2025-06-20",
+    "status": "終了"
+  },
+  {
+    "name": "網代公園の盆踊り",
+    "name_confirmed": false,
+    "venue": "網代公園",
+    "area": "港区",
+    "months": [
+      9
+    ],
+    "scale": "小",
+    "access": "東京メトロ南北線・都営大江戸線 麻布十番駅から徒歩約3分",
+    "address": "東京都港区麻布十番2-15-1",
+    "date": null,
+    "status": null
+  },
+  {
+    "name": "みなと区民まつり 盆踊り",
+    "name_confirmed": true,
+    "venue": "芝公園",
+    "area": "港区",
+    "months": [
+      10
+    ],
+    "scale": "大",
+    "access": "都営三田線「芝公園駅」徒歩すぐ／都営大江戸線「赤羽橋駅」徒歩5分／JR・都営地下鉄「浜松町駅」徒歩10分",
+    "address": "〒105-0011 東京都港区芝公園",
+    "date": "2026-10-10",
+    "status": "確認済み"
+  },
+  {
+    "name": "芝新堀町児童遊園の盆踊り",
+    "name_confirmed": false,
+    "venue": "芝新堀町児童遊園",
+    "area": "港区",
+    "months": [
+      7
+    ],
+    "scale": "小",
+    "access": "都営三田線「芝公園駅」から徒歩約5分、都営浅草線・大江戸線「三田駅」「大門駅」からも徒歩約9分",
+    "address": "東京都港区芝二丁目12番3号",
+    "date": null,
+    "status": null
+  },
+  {
+    "name": "西久保八幡神社の盆踊り",
+    "name_confirmed": false,
+    "venue": "西久保八幡神社",
+    "area": "港区",
+    "months": [
+      8
+    ],
+    "scale": "中",
+    "access": "東京メトロ日比谷線「神谷町駅」から徒歩約3分",
+    "address": "東京都港区虎ノ門5-10-14",
+    "date": null,
+    "status": null
+  },
+  {
+    "name": "赤坂夏おどり（旧 赤坂盆踊り）",
+    "name_confirmed": true,
+    "venue": "赤坂サカス広場",
+    "area": "港区",
+    "months": [
+      8
+    ],
+    "scale": "中",
+    "access": "千代田線 赤坂駅直結",
+    "address": "港区赤坂5-3-6",
+    "date": null,
+    "status": "未確認"
+  },
+  {
+    "name": "赤坂氷川祭 盆踊り大会",
+    "name_confirmed": true,
+    "venue": "赤坂氷川神社",
+    "area": "港区",
+    "months": [
+      9
+    ],
+    "scale": "中",
+    "access": "東京メトロ千代田線「赤坂駅」5番出口・日比谷線/都営大江戸線「六本木駅」7番出口より徒歩約7分",
+    "address": "〒107-0052 東京都港区赤坂6-10-12",
+    "date": null,
+    "status": "確認済み"
+  },
+  {
+    "name": "上笄町会お祭り 盆踊り",
+    "name_confirmed": true,
+    "venue": "長谷寺（西麻布・麻布大観音）",
+    "area": "港区",
+    "months": [
+      9
+    ],
+    "scale": "小",
+    "access": "日比谷線 広尾駅 徒歩10分",
+    "address": "港区西麻布2-21-34",
+    "date": null,
+    "status": "未確認"
+  },
+  {
+    "name": "謝恩納涼盆踊り大会（青山善光寺）",
+    "name_confirmed": true,
+    "venue": "青山善光寺",
+    "area": "港区",
+    "months": [
+      7
+    ],
+    "scale": "中",
+    "access": "銀座線ほか 表参道駅 徒歩3分",
+    "address": "港区北青山3-5-17",
+    "date": null,
+    "status": "未確認"
+  },
+  {
+    "name": "青葉公園（港区立）の盆踊り",
+    "name_confirmed": false,
+    "venue": "青葉公園（港区立）",
+    "area": "港区",
+    "months": [
+      9
+    ],
+    "scale": "中",
+    "access": "東京メトロ銀座線「青山一丁目駅」から徒歩3分",
+    "address": "東京都港区南青山1-6",
+    "date": null,
+    "status": null
+  },
+  {
+    "name": "麻布氷川神社例大祭 盆踊り",
+    "name_confirmed": true,
+    "venue": "麻布氷川神社",
+    "area": "港区",
+    "months": [
+      9
+    ],
+    "scale": "中",
+    "access": "東京メトロ南北線/都営大江戸線「麻布十番駅」出口4または1より徒歩8分、「仙台坂上駅」より徒歩1分",
+    "address": "〒106-0046 東京都港区元麻布1-4-23",
+    "date": null,
+    "status": "確認済み"
+  },
+  {
+    "name": "第42回大久保まつり パレード 百人町民民謡おどり",
+    "name_confirmed": true,
+    "venue": "JR新大久保駅北側から東方向",
+    "area": "新宿区",
+    "months": [
+      10
+    ],
+    "scale": "小",
+    "access": "新大久保駅から徒歩すぐ",
+    "address": "東京都新宿区百人町1丁目付近",
+    "date": "2025-10-13",
+    "status": "終了"
+  },
+  {
+    "name": "下落合四丁目町会 盆踊り大会",
+    "name_confirmed": true,
+    "venue": "下落合公園",
+    "area": "新宿区",
+    "months": [
+      7
+    ],
+    "scale": "小",
+    "access": "下落合駅から徒歩圏内",
+    "address": "東京都新宿区下落合4-18",
+    "date": "2025-07-19",
+    "status": "終了"
+  },
+  {
+    "name": "柏木地区6町会盆踊り大会",
+    "name_confirmed": true,
+    "venue": "北新宿公園",
+    "area": "新宿区",
+    "months": [
+      8
+    ],
+    "scale": "小",
+    "access": "大久保駅・東中野駅から徒歩圏内",
+    "address": "東京都新宿区北新宿3-20",
+    "date": "2025-08-02",
+    "status": "終了"
+  },
+  {
+    "name": "北新宿四丁目 盆踊り大会",
+    "name_confirmed": true,
+    "venue": "北柏木公園",
+    "area": "新宿区",
+    "months": [
+      7
+    ],
+    "scale": "小",
+    "access": "東中野駅・落合駅から徒歩圏内",
+    "address": "東京都新宿区北新宿4-12",
+    "date": "2025-07-25",
+    "status": "終了"
+  },
+  {
+    "name": "原町一丁目町会 天祖神社例大祭 盆踊り",
+    "name_confirmed": true,
+    "venue": "原町天祖神社",
+    "area": "新宿区",
+    "months": [
+      9
+    ],
+    "scale": "小",
+    "access": "牛込柳町駅から徒歩圏内",
+    "address": "東京都新宿区原町1-42",
+    "date": "2025-09-15",
+    "status": "終了"
+  },
+  {
+    "name": "第25回 四谷納涼踊り大会",
+    "name_confirmed": true,
+    "venue": "四谷ひろばグラウンド（旧四谷第四小学校）",
+    "area": "新宿区",
+    "months": [
+      7
+    ],
+    "scale": "小",
+    "access": "四谷三丁目駅・新宿御苑前駅から徒歩圏内",
+    "address": "東京都新宿区四谷4-20",
+    "date": "2025-07-19",
+    "status": "終了"
+  },
+  {
+    "name": "新宿中央公園夏祭り 納涼盆踊り大会",
+    "name_confirmed": true,
+    "venue": "新宿中央公園 ファンモアタイム広場",
+    "area": "新宿区",
+    "months": [
+      8
+    ],
+    "scale": "中",
+    "access": "都営大江戸線 都庁前駅すぐ",
+    "address": "新宿区西新宿2-11",
+    "date": null,
+    "status": "未確認"
+  },
+  {
+    "name": "三角広場まつり「居酒屋盆踊り」",
+    "name_confirmed": true,
+    "venue": "新宿住友ビル三角広場",
+    "area": "新宿区",
+    "months": [
+      6
+    ],
+    "scale": "大",
+    "access": "都営大江戸線 都庁前駅 A6出口直結。東京メトロ丸ノ内線 西新宿駅 2番出口から徒歩4分。JR・小田急線・京王線 新宿駅西口から徒歩8分",
+    "address": "東京都新宿区西新宿2-6-1",
+    "date": "2025-06-25",
+    "status": "終了"
+  },
+  {
+    "name": "歌舞伎町BON ODORI",
+    "name_confirmed": true,
+    "venue": "歌舞伎町シネシティ広場",
+    "area": "新宿区",
+    "months": [
+      8
+    ],
+    "scale": "中",
+    "access": "西武新宿駅 徒歩2分／大江戸線 新宿西口駅 徒歩5分",
+    "address": "新宿区歌舞伎町1-19",
+    "date": null,
+    "status": "未確認"
+  },
+  {
+    "name": "下落合町会知久会 第9回盆踊り",
+    "name_confirmed": true,
+    "venue": "清水川橋公園",
+    "area": "新宿区",
+    "months": [
+      7
+    ],
+    "scale": "小",
+    "access": "高田馬場駅から徒歩圏内",
+    "address": "東京都新宿区下落合1-1",
+    "date": "2025-07-19",
+    "status": "終了"
+  },
+  {
+    "name": "鶴巻小学校 納涼盆踊り大会＆子ども祭り",
+    "name_confirmed": true,
+    "venue": "鶴巻小学校",
+    "area": "新宿区",
+    "months": [
+      7
+    ],
+    "scale": "小",
+    "access": "早稲田駅から徒歩圏内",
+    "address": "東京都新宿区早稲田鶴巻町140-140",
+    "date": "2025-07-12",
+    "status": "終了"
+  },
+  {
+    "name": "根津神社 盆踊り（文京区）",
+    "name_confirmed": true,
+    "venue": "根津神社",
+    "area": "文京区",
+    "months": [
+      9
+    ],
+    "scale": "中",
+    "access": "千代田線 根津駅 徒歩5分",
+    "address": "文京区根津1-28-9",
+    "date": null,
+    "status": "未確認"
+  },
+  {
+    "name": "シタマチ.ふるさと盆踊り大会",
+    "name_confirmed": true,
+    "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+    "area": "台東区",
+    "months": [
+      8
+    ],
+    "scale": "中",
+    "access": "JR御徒町駅南口すぐ／日比谷線 仲御徒町駅",
+    "address": "台東区上野5-27",
+    "date": null,
+    "status": "未確認"
+  },
+  {
+    "name": "坂本町会 納涼祭",
+    "name_confirmed": true,
+    "venue": "さかもと朝顔広場（旧坂本小学校跡地）",
+    "area": "台東区",
+    "months": [
+      8
+    ],
+    "scale": "小",
+    "access": "東京メトロ日比谷線 入谷駅から徒歩約150m",
+    "address": "東京都台東区下谷1-12-8",
+    "date": "2025-08-23",
+    "status": "終了"
+  },
+  {
+    "name": "TOKYO盆ダンス×STEAM FESTIVAL2026",
+    "name_confirmed": true,
+    "venue": "上野恩賜公園",
+    "area": "台東区",
+    "months": [
+      6
+    ],
+    "scale": "大",
+    "access": "JR「上野駅」公園口・京成「京成上野駅」・東京メトロ「上野駅」から徒歩すぐ",
+    "address": "〒110-0007 東京都台東区上野公園・池之端三丁目",
+    "date": "2026-06-26",
+    "status": "確認済み"
+  },
+  {
+    "name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
+    "name_confirmed": true,
+    "venue": "上野恩賜公園",
+    "area": "台東区",
+    "months": [
+      10
+    ],
+    "scale": "大",
+    "access": "JR「上野駅」公園口・京成「京成上野駅」・東京メトロ「上野駅」から徒歩すぐ",
+    "address": "〒110-0007 東京都台東区上野公園・池之端三丁目",
+    "date": null,
+    "status": "未確認"
+  },
+  {
+    "name": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026",
+    "name_confirmed": true,
+    "venue": "上野恩賜公園",
+    "area": "台東区",
+    "months": [
+      7
+    ],
+    "scale": "大",
+    "access": "JR「上野駅」公園口・京成「京成上野駅」・東京メトロ「上野駅」から徒歩すぐ",
+    "address": "〒110-0007 東京都台東区上野公園・池之端三丁目",
+    "date": null,
+    "status": "未確認"
+  },
+  {
+    "name": "ゐの市盆踊り～不忍夢～",
+    "name_confirmed": true,
+    "venue": "上野恩賜公園",
+    "area": "台東区",
+    "months": [
+      8
+    ],
+    "scale": "大",
+    "access": "JR「上野駅」公園口・京成「京成上野駅」・東京メトロ「上野駅」から徒歩すぐ",
+    "address": "〒110-0007 東京都台東区上野公園・池之端三丁目",
+    "date": null,
+    "status": "未確認"
+  },
+  {
+    "name": "上野盆踊り会（厚澄会）",
+    "name_confirmed": true,
+    "venue": "上野恩賜公園",
+    "area": "台東区",
+    "months": [
+      6,
+      7,
+      8,
+      10
+    ],
+    "scale": "大",
+    "access": "JR「上野駅」公園口・京成「京成上野駅」・東京メトロ「上野駅」から徒歩すぐ",
+    "address": "〒110-0007 東京都台東区上野公園・池之端三丁目",
+    "date": null,
+    "status": "確認済み"
+  },
+  {
+    "name": "東本願寺盆踊り",
+    "name_confirmed": true,
+    "venue": "東本願寺（浅草）",
+    "area": "台東区",
+    "months": [
+      8
+    ],
+    "scale": "中",
+    "access": "銀座線 田原町駅 徒歩5分／TX浅草駅 徒歩7分",
+    "address": "台東区西浅草1-5-5",
+    "date": null,
+    "status": "未確認"
+  },
+  {
+    "name": "田原小学校の盆踊り",
+    "name_confirmed": false,
+    "venue": "田原小学校",
+    "area": "台東区",
+    "months": [
+      9
+    ],
+    "scale": "中",
+    "access": "東京メトロ銀座線 田原町駅から徒歩約3分。都営浅草線 浅草駅から徒歩約8分",
+    "address": "東京都台東区雷門1-5-14",
+    "date": null,
+    "status": null
+  },
+  {
+    "name": "奥浅草盆踊り",
+    "name_confirmed": true,
+    "venue": "隅田公園",
+    "area": "台東区",
+    "months": [
+      6
+    ],
+    "scale": "大",
+    "access": "東武・都営地下鉄 浅草駅 より徒歩",
+    "address": "〒111-0033 東京都台東区浅衉7-1-22（山谷堀広場付近）",
+    "date": "2026-06-27",
+    "status": "確認済み"
+  },
+  {
+    "name": "すみだ公園（隅田公園・墨田区側）の盆踊り",
+    "name_confirmed": false,
+    "venue": "すみだ公園（隅田公園・墨田区側）",
+    "area": "墨田区",
+    "months": [
+      9
+    ],
+    "scale": "大",
+    "access": "都営浅草線「本所吾妻橋駅」または東武スカイツリーライン「とうきょうスカイツリー駅」から徒歩",
+    "address": "〒130-0033 東京都墨田区向島１・２・５丁目",
+    "date": null,
+    "status": null
+  },
+  {
+    "name": "第10回 すみだ輪おどり区民感謝デー",
+    "name_confirmed": true,
+    "venue": "すみだ産業会館サンライズホール",
+    "area": "墨田区",
+    "months": [
+      1
+    ],
+    "scale": "小",
+    "access": "錦糸町駅から徒歩すぐ",
+    "address": "東京都墨田区江東橋3-9-10",
+    "date": "2025-01-11",
+    "status": "終了"
+  },
+  {
+    "name": "中之郷公園（中之郷児童遊園）の盆踊り",
+    "name_confirmed": false,
+    "venue": "中之郷公園（中之郷児童遊園）",
+    "area": "墨田区",
+    "months": [
+      9
+    ],
+    "scale": "小",
+    "access": "東武スカイツリーライン・都営浅草線「押上駅（スカイツリー前）」から徒歩約2分",
+    "address": "〒131-0045 東京都墨田区押上2-12-1",
+    "date": null,
+    "status": null
+  },
+  {
+    "name": "菊川一丁目町会 菊一お祭り広場・盆踊り大会",
+    "name_confirmed": true,
+    "venue": "中和小学校",
+    "area": "墨田区",
+    "months": [
+      9
+    ],
+    "scale": "小",
+    "access": "都営新宿線「菊川駅」から徒歩約5分（森下駅・清澄白河駅も比較的近い）",
+    "address": "〒130-0024 東京都墨田区菊川1丁目18-10",
+    "date": "2025-09-27",
+    "status": "終了"
+  },
+  {
+    "name": "押上三丁目伸成町会 飛木稲荷神社神幸大祭 祭礼踊り",
+    "name_confirmed": true,
+    "venue": "伸成町会会館前 路上",
+    "area": "墨田区",
+    "months": [
+      9
+    ],
+    "scale": "小",
+    "access": "押上駅から徒歩圏内",
+    "address": "東京都墨田区押上3-19-6",
+    "date": "2025-09-13",
+    "status": "終了"
+  },
+  {
+    "name": "向島一丁目 牛嶋神社 ミニ奉納踊り",
+    "name_confirmed": true,
+    "venue": "向島1丁目旧町会会館前",
+    "area": "墨田区",
+    "months": [
+      9
+    ],
+    "scale": "小",
+    "access": "とうきょうスカイツリー駅・本所吾妻橋駅から徒歩圏内",
+    "address": "東京都墨田区向島1-2付近",
+    "date": "2025-09-13",
+    "status": "終了"
+  },
+  {
+    "name": "西図子 盆踊りとおでんの宴",
+    "name_confirmed": true,
+    "venue": "向島百花会館",
+    "area": "墨田区",
+    "months": [
+      3
+    ],
+    "scale": "小",
+    "access": "東向島駅・曳舟駅から徒歩圏内",
+    "address": "東京都墨田区東向島3-29-5",
+    "date": "2026-03-01",
+    "status": "終了"
+  },
+  {
+    "name": "太平一丁目 牛嶋神社 奉納踊り",
+    "name_confirmed": true,
+    "venue": "報恩寺境内",
+    "area": "墨田区",
+    "months": [
+      9
+    ],
+    "scale": "小",
+    "access": "錦糸町駅から徒歩圏内",
+    "address": "東京都墨田区太平1-26付近",
+    "date": "2025-09-12",
+    "status": "終了"
+  },
+  {
+    "name": "大横川親水公園の盆踊り",
+    "name_confirmed": false,
+    "venue": "大横川親水公園",
+    "area": "墨田区",
+    "months": [
+      10
+    ],
+    "scale": "大",
+    "access": "南側(長崎橋)はJR総武線・半蔵門線錦糸町駅から徒歩5分、北側(業平橋)は半蔵門線・京成押上線押上駅・東武スカイツリーラインとうきょうスカイツリー駅・都営浅草線本所吾妻橋駅からいずれも徒歩5分程度",
+    "address": "東京都墨田区（吉妻橋3丁目〜緊糸町1丁目他、南北に約1.85km累る細長い公園）",
+    "date": null,
+    "status": null
+  },
+  {
+    "name": "小梅児童遊園の盆踊り",
+    "name_confirmed": false,
+    "venue": "小梅児童遊園",
+    "area": "墨田区",
+    "months": [
+      9
+    ],
+    "scale": "小",
+    "access": "東武スカイツリーライン とうきょうスカイツリー駅から徒歩約4分。都営浅草線 本所吾妻橋駅から徒歩約5分",
+    "address": "東京都墨田区向島1-33-3",
+    "date": null,
+    "status": null
+  },
+  {
+    "name": "押上二町目町会 飛木稲荷神社神幸大祭 奉納おどり",
+    "name_confirmed": true,
+    "venue": "押上二丁目町会会館前 路上",
+    "area": "墨田区",
+    "months": [
+      9
+    ],
+    "scale": "小",
+    "access": "押上駅から徒歩圏内",
+    "address": "東京都墨田区押上2-19-12",
+    "date": "2025-09-13",
+    "status": "終了"
+  },
+  {
+    "name": "日進公園の盆踊り",
+    "name_confirmed": false,
+    "venue": "日進公園",
+    "area": "墨田区",
+    "months": [
+      9
+    ],
+    "scale": "小",
+    "access": "都営大江戸線「両国駅」から徒歩約10分",
+    "address": "東京都墨田区亀沢三丁目24番3号",
+    "date": null,
+    "status": null
+  },
+  {
+    "name": "本四三ツ目児童遊園（三つ目児童公園）の盆踊り",
+    "name_confirmed": false,
+    "venue": "本四三ツ目児童遊園（三つ目児童公園）",
+    "area": "墨田区",
+    "months": [
+      9
+    ],
+    "scale": "小",
+    "access": "都営大江戸線・半蔵門線「錦糸町駅」、またはJR総武線「錦糸町駅」から徒歩圏内",
+    "address": "東京都墨田区本所四丁目１番４号",
+    "date": null,
+    "status": null
+  },
+  {
+    "name": "横川小学校の盆踊り",
+    "name_confirmed": false,
+    "venue": "横川小学校",
+    "area": "墨田区",
+    "months": [
+      8
+    ],
+    "scale": "中",
+    "access": "都営浅草線 本所吾妻橋駅から徒歩約8分。東武スカイツリーライン とうきょうスカイツリー駅から徒歩約10分",
+    "address": "東京都墨田区東駒形町4-18-4",
+    "date": null,
+    "status": null
+  },
+  {
+    "name": "すみだ錦糸町河内音頭大盆踊り",
+    "name_confirmed": true,
+    "venue": "江東橋竪川親水公園",
+    "area": "墨田区",
+    "months": [
+      7
+    ],
+    "scale": "大",
+    "access": "JR総武線・東京メトロ半蔵門線 録糸町駅南口から徒歩約6分",
+    "address": "東京都墨田区江東橋2丁目付近（竛川親水公園特設会場・首都高速7号線高架下）",
+    "date": "2026-07-29",
+    "status": "確認済み"
+  },
+  {
+    "name": "牛嶋神社祭礼 奉納踊り",
+    "name_confirmed": true,
+    "venue": "牛嶋神社",
+    "area": "墨田区",
+    "months": [
+      9
+    ],
+    "scale": "中",
+    "access": "都営浅草線「本所吾妻橋駅」徒歩3分・東武スカイツリーライン「とうきょうスカイツリー駅」徒歩3分",
+    "address": "〒131-0033 東京都墨田区向島1-4-5",
+    "date": null,
+    "status": "確認済み"
+  },
+  {
+    "name": "石原一丁目 牛嶋神社 奉納踊り",
+    "name_confirmed": true,
+    "venue": "石一町会会館前",
+    "area": "墨田区",
+    "months": [
+      9
+    ],
+    "scale": "小",
+    "access": "両国駅・蔵前駅から徒歩圏内",
+    "address": "東京都墨田区石原1-7-3",
+    "date": "2025-09-13",
+    "status": "終了"
+  },
+  {
+    "name": "緑町公園の盆踊り",
+    "name_confirmed": false,
+    "venue": "緑町公園",
+    "area": "墨田区",
+    "months": [
+      9
+    ],
+    "scale": "中",
+    "access": "JR総武線・都営大江戸線 両国駅から徒歩圏内（すみだ北斎美術館併設）",
+    "address": "東京都墨田区亀沢2-7-7",
+    "date": null,
+    "status": null
+  },
+  {
+    "name": "若宮公園の盆踊り",
+    "name_confirmed": false,
+    "venue": "若宮公園",
+    "area": "墨田区",
+    "months": [
+      9
+    ],
+    "scale": "中",
+    "access": "都営大江戸線「両国駅」・都営浅草線「本所吾妻橋駅」から徒歩圏内",
+    "address": "東京都墨田区本所2-2-19",
+    "date": null,
+    "status": null
+  },
+  {
+    "name": "錦糸公園の盆踊り",
+    "name_confirmed": false,
+    "venue": "錦糸公園",
+    "area": "墨田区",
+    "months": [
+      5
+    ],
+    "scale": "大",
+    "access": "JR総武線「錦糸町駅」北口から徒歩約3分、東京メトロ半蔵門線「錦糸町駅」4番出口すぐ",
+    "address": "東京都墨田区錦糸4-15-1",
+    "date": null,
+    "status": null
+  },
+  {
+    "name": "飛木稲荷神社の盆踊り",
+    "name_confirmed": false,
+    "venue": "飛木稲荷神社",
+    "area": "墨田区",
+    "months": [
+      9
+    ],
+    "scale": "中",
+    "access": "東武亀戸線・スカイツリーライン「曳舟駅」から徒歩約4分、都営浅草線・東京メトロ半蔵門線「押上駅」から徒歩約4分",
+    "address": "東京都墨田区押上2-39-6",
+    "date": null,
+    "status": null
+  },
+  {
+    "name": "区立第二辰巳小学校の盆踊り",
+    "name_confirmed": false,
+    "venue": "区立第二辰巳小学校",
+    "area": "江東区",
+    "months": [
+      5
+    ],
+    "scale": "小",
+    "access": "東京メトロ有楽町線「辰巳駅」1番出口から徒歩約5分",
+    "address": "〒135-0053 東京都江東区辰巳1-1-22",
+    "date": null,
+    "status": null
+  },
+  {
+    "name": "木場二丁目公園の盆踊り",
+    "name_confirmed": false,
+    "venue": "木場二丁目公園",
+    "area": "江東区",
+    "months": [
+      7
+    ],
+    "scale": "中",
+    "access": "東京メトロ東西線 木場駅から徒歩4分",
+    "address": "東京都江東区木場2-11-11",
+    "date": null,
+    "status": null
+  },
+  {
+    "name": "森下公園の盆踊り",
+    "name_confirmed": false,
+    "venue": "森下公園",
+    "area": "江東区",
+    "months": [
+      7
+    ],
+    "scale": "中",
+    "access": "都営新宿線 森下駅から徒歩1分",
+    "address": "東京都江東区森下2-5-16",
+    "date": null,
+    "status": null
+  },
+  {
+    "name": "江東天祖神社（亀戸天祖神社）の盆踊り",
+    "name_confirmed": false,
+    "venue": "江東天祖神社（亀戸天祖神社）",
+    "area": "江東区",
+    "months": [
+      9
+    ],
+    "scale": "中",
+    "access": "JR総武線・東武亀戸線「亀戸駅」北口から徒歩約17分、または都営浅草線「京成押上駅」から徒歩約10分",
+    "address": "東京都江東区亀戸3-38-35",
+    "date": null,
+    "status": null
+  },
+  {
+    "name": "臨海小学校の盆踊り",
+    "name_confirmed": false,
+    "venue": "臨海小学校",
+    "area": "江東区",
+    "months": [
+      7,
+      10
+    ],
+    "scale": "中",
+    "access": "東京メトロ東西線・都営大江戸線「門前仲町駅」から徒歩約3分",
+    "address": "東京都江東区門前仲町一丁目1番6号",
+    "date": null,
+    "status": null
+  },
+  {
+    "name": "盆踊 〜BONDO〜",
+    "name_confirmed": true,
+    "venue": "しながわ中央公園",
+    "area": "品川区",
+    "months": [
+      5
+    ],
+    "scale": "大",
+    "access": "東急大井町線 下神明駅から徒歩1分／JR・東急大井町線・りんかい線 大井町駅から徒歩10分",
+    "address": "東京都品川区西品川1-27-20",
+    "date": null,
+    "status": "未確認"
+  },
+  {
+    "name": "上神明小学校の盆踊り",
+    "name_confirmed": false,
+    "venue": "上神明小学校",
+    "area": "品川区",
+    "months": [
+      8
+    ],
+    "scale": "中",
+    "access": "東急大井町線・都営浅草線「中延駅」、またはJR横須賀線「西大井駅」",
+    "address": "東京都品川区二葉４－４－１０",
+    "date": null,
+    "status": null
+  },
+  {
+    "name": "京陽小学校の盆踊り",
+    "name_confirmed": false,
+    "venue": "京陽小学校",
+    "area": "品川区",
+    "months": [
+      10
+    ],
+    "scale": "中",
+    "access": "東急池上線「戸越銀座駅」徒歩3分、都営浅草線「戸越駅」徒歩6分",
+    "address": "東京都品川区平塚2-19-20",
+    "date": null,
+    "status": null
+  },
+  {
+    "name": "八潮公園の盆踊り",
+    "name_confirmed": false,
+    "venue": "八潮公園",
+    "area": "品川区",
+    "months": [
+      9
+    ],
+    "scale": "中",
+    "access": "りんかい線「品川シーサイド駅」から徒歩約16分、または「八潮公園前」バス停から徒歩2分",
+    "address": "〒140-0003 東京都品川区八潮5-11-16",
+    "date": null,
+    "status": null
+  },
+  {
+    "name": "城南小学校の盆踊り",
+    "name_confirmed": false,
+    "venue": "城南小学校",
+    "area": "品川区",
+    "months": [
+      7
+    ],
+    "scale": "小",
+    "access": "京急本線「青物横丁駅」徒歩圈内（隔接する天妙国寺と同一エリア）",
+    "address": "東京都品川区南品川2丁目8番21号",
+    "date": null,
+    "status": null
+  },
+  {
+    "name": "第71回大井どんたく夏まつり 初日 盆踊り",
+    "name_confirmed": true,
+    "venue": "大井町駅前中央通り",
+    "area": "品川区",
+    "months": [
+      8
+    ],
+    "scale": "小",
+    "access": "大井町駅から徒歩すぐ",
+    "address": "東京都品川区大井1丁目付近",
+    "date": "2025-08-23",
+    "status": "終了"
+  },
+  {
+    "name": "大井蔵王権現神社の盆踊り",
+    "name_confirmed": false,
+    "venue": "大井蔵王権現神社",
+    "area": "品川区",
+    "months": [
+      4
+    ],
+    "scale": "小",
+    "access": "JR京浜東北線・りんかい線・東急大井町線 大井町駅から徒歩5分",
+    "address": "東京都品川区大井1-14-3",
+    "date": null,
+    "status": null
+  },
+  {
+    "name": "品川第二地区 区民まつり・品川青年会 盆踊り大会（天妙国寺）",
+    "name_confirmed": true,
+    "venue": "天妙国寺",
+    "area": "品川区",
+    "months": [
+      7
+    ],
+    "scale": "中",
+    "access": "京急本線 青物横丁駅から徒歩5分（新馬場駅・りんかい線品川シーサイド駅からもアクセス可）",
+    "address": "東京都品川区南品儑2-8-23",
+    "date": null,
+    "status": "確認済み"
+  },
+  {
+    "name": "宮前小学校の盆踊り",
+    "name_confirmed": false,
+    "venue": "宮前小学校",
+    "area": "品川区",
+    "months": [
+      10
+    ],
+    "scale": "中",
+    "access": "東急大井町線「戸越公園駅」徒歩5分",
+    "address": "東京都品川区（戸越公園駅周辺）",
+    "date": null,
+    "status": null
+  },
+  {
+    "name": "小山台公園の盆踊り",
+    "name_confirmed": false,
+    "venue": "小山台公園",
+    "area": "品川区",
+    "months": [
+      7
+    ],
+    "scale": "小",
+    "access": "東急目黒線「武蔵小山駅」西口から徒歩約10分",
+    "address": "東京都品川区小山台2-2-1",
+    "date": null,
+    "status": null
+  },
+  {
+    "name": "小山台小学校の盆踊り",
+    "name_confirmed": false,
+    "venue": "小山台小学校",
+    "area": "品川区",
+    "months": [
+      7
+    ],
+    "scale": "中",
+    "access": "東急目黒線 武蔵小山駅から徒歩4〜5分",
+    "address": "東京都品川区小山台1-18-24",
+    "date": null,
+    "status": null
+  },
+  {
+    "name": "平塚中央公園の盆踊り",
+    "name_confirmed": false,
+    "venue": "平塚中央公園",
+    "area": "品川区",
+    "months": [
+      9
+    ],
+    "scale": "小",
+    "access": "東急池上線 戸越銀座駅から徒歩約6分。都営浅草線 戸越駅から徒歩約8分",
+    "address": "東京都品川区平塚2-2-12",
+    "date": null,
+    "status": null
+  },
+  {
+    "name": "戸越八幡神社例大祭 盆踊り",
+    "name_confirmed": true,
+    "venue": "戸越八幡神社",
+    "area": "品川区",
+    "months": [
+      9
+    ],
+    "scale": "中",
+    "access": "都営浅草線「戸越駅」徒歩8分・東急池上線「戸越銀座駅」徒歩10分・東急大井町線「戸越公園駅」徒歩10分",
+    "address": "〒142-0041 東京都品川区戸越2-6-23",
+    "date": null,
+    "status": "確認済み"
+  },
+  {
+    "name": "旗の台稲荷通り商店会盆踊り 盆ROCK",
+    "name_confirmed": true,
+    "venue": "旗の台稲荷通り商店街",
+    "area": "品川区",
+    "months": [
+      10
+    ],
+    "scale": "小",
+    "access": "旗の台駅から徒歩圏内",
+    "address": "東京都品川区旗の台5-3-5付近",
+    "date": "2025-10-18",
+    "status": "終了"
+  },
+  {
+    "name": "旗岡八幡神社例大祭",
+    "name_confirmed": true,
+    "venue": "旗岡八幡神社",
+    "area": "品川区",
+    "months": [
+      9
+    ],
+    "scale": "中",
+    "access": "東急大井町線「荏原町駅」徒歩2分",
+    "address": "〒142-0064 東京都品川区旗の台3-6-12",
+    "date": null,
+    "status": "未確認"
+  },
+  {
+    "name": "Min-Yoi's盆踊り",
+    "name_confirmed": true,
+    "venue": "日本民謡会館",
+    "area": "品川区",
+    "months": [
+      5
+    ],
+    "scale": "小",
+    "access": "大井町駅から徒歩圏内",
+    "address": "東京都品川区南品川6-8-20",
+    "date": "2026-05-31",
+    "status": "終了"
+  },
+  {
+    "name": "旧杜松小学校の盆踊り",
+    "name_confirmed": false,
+    "venue": "旧杜松小学校",
+    "area": "品川区",
+    "months": [
+      8
+    ],
+    "scale": "中",
+    "access": "東急大井町線 戸越公園駅から徒歩約5分。都営浅草線 中延駅から徒歩約8分",
+    "address": "東京都品川区豊町4-22-15",
+    "date": null,
+    "status": null
+  },
+  {
+    "name": "東品川海上公園の盆踊り",
+    "name_confirmed": false,
+    "venue": "東品川海上公園",
+    "area": "品川区",
+    "months": [
+      4
+    ],
+    "scale": "中",
+    "access": "りんかい線・東京モノレール 天王洲アイル駅から徒歩約5分。京急本線 新馬場駅から徒歩約15分",
+    "address": "東京都品川区東品川3-9-21",
+    "date": null,
+    "status": null
+  },
+  {
+    "name": "第一日野小学校の盆踊り",
+    "name_confirmed": false,
+    "venue": "第一日野小学校",
+    "area": "品川区",
+    "months": [
+      8
+    ],
+    "scale": "中",
+    "access": "東急目黒線 不動前駅から徒歩約7分。JR五反田駅から徒歩約15分",
+    "address": "東京都品川区西五反田6-5-32",
+    "date": null,
+    "status": null
+  },
+  {
+    "name": "第二延山小学校の盆踊り",
+    "name_confirmed": false,
+    "venue": "第二延山小学校",
+    "area": "品川区",
+    "months": [
+      5
+    ],
+    "scale": "中",
+    "access": "東急池上線 荏原中延駅から徒歩約6分。東急大井町線・池上線 旗の台駅から徒歩約8分",
+    "address": "東京都品川区旗の台1-6-1",
+    "date": null,
+    "status": null
+  },
+  {
+    "name": "第四日野小学校の盆踊り",
+    "name_confirmed": false,
+    "venue": "第四日野小学校",
+    "area": "品川区",
+    "months": [
+      7
+    ],
+    "scale": "中",
+    "access": "東急目黒線 不動前駅から徒歩約4分。JR目黒駅から徒歩約15分",
+    "address": "東京都品川区西五反田4-29-9",
+    "date": null,
+    "status": null
+  },
+  {
+    "name": "品川区民まつり 西大井広場公園 盆踊り",
+    "name_confirmed": true,
+    "venue": "西大井広場公園",
+    "area": "品川区",
+    "months": [
+      9
+    ],
+    "scale": "小",
+    "access": "横須賀線・湘南新宿ライン 西大井駅から徒歩約5分",
+    "address": "東京都品川区西大井1丁目4-10",
+    "date": "2025-09-27",
+    "status": "終了"
+  },
+  {
+    "name": "戸越八幡神社例大祭 奉納盆踊り大会",
+    "name_confirmed": true,
+    "venue": "豊町一丁目会館前",
+    "area": "品川区",
+    "months": [
+      9
+    ],
+    "scale": "小",
+    "access": "戸越駅・戸越公園駅から徒歩圏内",
+    "address": "東京都品川区豊町1-4-14",
+    "date": "2025-09-13",
+    "status": "終了"
+  },
+  {
+    "name": "鮫洲入江広場公園 ゆり園盆踊り",
+    "name_confirmed": true,
+    "venue": "鮫洲入江広場公園",
+    "area": "品川区",
+    "months": [
+      6
+    ],
+    "scale": "小",
+    "access": "京急 鮫洲駅から徒歩約5分",
+    "address": "東京都品川区東大井1-16-15",
+    "date": "2026-06-06",
+    "status": "終了"
+  },
+  {
+    "name": "地域のふれあい第37回盆踊り大会",
+    "name_confirmed": true,
+    "venue": "JR目黒駅西口前",
+    "area": "目黒区",
+    "months": [
+      7
+    ],
+    "scale": "小",
+    "access": "目黒駅から徒歩すぐ",
+    "address": "東京都目黒区下目黒3-21-9付近",
+    "date": "2025-07-27",
+    "status": "終了"
+  },
+  {
+    "name": "中目黒盆踊り大会 2025",
+    "name_confirmed": true,
+    "venue": "フナイリバ（目黒川船入場広場）",
+    "area": "目黒区",
+    "months": [
+      8
+    ],
+    "scale": "小",
+    "access": "中目黒駅から徒歩圏内",
+    "address": "東京都目黒区中目黒1-11-18",
+    "date": "2025-08-30",
+    "status": "終了"
+  },
+  {
+    "name": "盆踊り in 駒場東大",
+    "name_confirmed": true,
+    "venue": "東京大学駒場キャンパス 学生会館東",
+    "area": "目黒区",
+    "months": [
+      11
+    ],
+    "scale": "小",
+    "access": "駒場東大前駅から徒歩圏内",
+    "address": "東京都目黒区駒場3-8-1",
+    "date": "2025-11-23",
+    "status": "終了"
+  },
+  {
+    "name": "第90回 祐天寺み魂まつり こども盆踊り大会",
+    "name_confirmed": true,
+    "venue": "祐天寺境内",
+    "area": "目黒区",
+    "months": [
+      7
+    ],
+    "scale": "小",
+    "access": "祐天寺駅から徒歩圏内",
+    "address": "東京都目黒区中目黒5-24-53",
+    "date": "2025-07-16",
+    "status": "終了"
+  },
+  {
+    "name": "自由が丘納涼盆踊り大会",
+    "name_confirmed": true,
+    "venue": "自由が丘駅前ロータリー 特設会場",
+    "area": "目黒区",
+    "months": [
+      7
+    ],
+    "scale": "小",
+    "access": "自由が丘駅正面口前",
+    "address": "東京都目黒区自由が丘1丁目付近",
+    "date": "2025-07-19",
+    "status": "終了"
+  },
+  {
+    "name": "桜フェスタ商店街 みんなで盆踊り",
+    "name_confirmed": true,
+    "venue": "都立大学駅西口緑道",
+    "area": "目黒区",
+    "months": [
+      3
+    ],
+    "scale": "小",
+    "access": "東急東横線 都立大学駅すぐ",
+    "address": "東京都目黒区中根1-3-10",
+    "date": "2026-03-29",
+    "status": "終了"
+  },
+  {
+    "name": "グリーン アイルランド フェスティバル 2026 アイリッシュ盆踊り",
+    "name_confirmed": true,
+    "venue": "代々木公園野外ステージ",
+    "area": "渋谷区",
+    "months": [
+      3
+    ],
+    "scale": "小",
+    "access": "原宿駅・明治神宮前駅・代々木公園駅から徒歩圏内",
+    "address": "東京都渋谷区神南2-3",
+    "date": "2026-03-15",
+    "status": "終了"
+  },
+  {
+    "name": "SHIBUYA MIYASHITA PARK BON DANCE 2026",
+    "name_confirmed": true,
+    "venue": "宮下公園",
+    "area": "渋谷区",
+    "months": [
+      9
+    ],
+    "scale": "大",
+    "access": "渋谷駅から徒歩約3分。東京メトロ千代田線・副都心線 明治神宮前〈原宿〉駅 7番口から徒歩約8分。都営バス 宮下公園、ハチ公バス 宮下公園前から徒歩1分",
+    "address": "東京都渋谷区神宮前6-20-10",
+    "date": null,
+    "status": "未確認"
+  },
+  {
+    "name": "青山熊野神社の盆踊り",
+    "name_confirmed": false,
+    "venue": "青山熊野神社",
+    "area": "渋谷区",
+    "months": [
+      9
+    ],
+    "scale": "中",
+    "access": "東京メトロ銀座線「外苑前駅」出口3から徒歩約5分",
+    "address": "東京都渋谷区神宮前2-2-22",
+    "date": null,
+    "status": null
+  },
+  {
+    "name": "飛鳥山公園盆踊り会（有志サークル）",
+    "name_confirmed": true,
+    "venue": "飛鳥山公園",
+    "area": "北区",
+    "months": [
+      3,
+      4,
+      6
+    ],
+    "scale": "大",
+    "access": "JR京浜東北線・都電荒川線・北区コミュニティバス「王子駅」徒歩す7分",
+    "address": "〒114-0002 東京都北区王子１丁目",
+    "date": null,
+    "status": "未確認"
+  },
+  {
+    "name": "飛鳥山夏祭り～お城で盆おどり大作戦～",
+    "name_confirmed": true,
+    "venue": "飛鳥山公園",
+    "area": "北区",
+    "months": [
+      8
+    ],
+    "scale": "大",
+    "access": "JR京浜東北線・都電荒川線・北区コミュニティバス「王子駅」徒歩す7分",
+    "address": "〒114-0002 東京都北区王子１丁目",
+    "date": null,
+    "status": "未確認"
+  },
+  {
+    "name": "飛鳥山盆踊り",
+    "name_confirmed": true,
+    "venue": "飛鳥山公園",
+    "area": "北区",
+    "months": [
+      7
+    ],
+    "scale": "大",
+    "access": "JR京浜東北線・都電荒川線・北区コミュニティバス「王子駅」徒歩す7分",
+    "address": "〒114-0002 東京都北区王子１丁目",
+    "date": null,
+    "status": "未確認"
+  },
+  {
+    "name": "第60回あらかわ青年大会 アリストック",
+    "name_confirmed": true,
+    "venue": "あらかわ遊園アリスの広場",
+    "area": "荒川区",
+    "months": [
+      3
+    ],
+    "scale": "小",
+    "access": "都電荒川線 荒川遊園地前停留場から徒歩圏内",
+    "address": "東京都荒川区西尾久6-35-11",
+    "date": "2026-03-15",
+    "status": "終了"
+  },
+  {
+    "name": "荒川盆踊り会 初踊り",
+    "name_confirmed": true,
+    "venue": "真土公園",
+    "area": "荒川区",
+    "months": [
+      2
+    ],
+    "scale": "小",
+    "access": "新三河島駅・三河島駅から徒歩圏内",
+    "address": "東京都荒川区西日暮里1-26-9",
+    "date": "2026-02-22",
+    "status": "終了"
+  },
+  {
+    "name": "西綾瀬町会 夏祭り盆踊り大会",
+    "name_confirmed": true,
+    "venue": "五反野コミュニティ公園",
+    "area": "足立区",
+    "months": [
+      6
+    ],
+    "scale": "小",
+    "access": "東武スカイツリーライン 五反野駅から徒歩約7分。東武スカイツリーライン 小菅駅から徒歩約10分",
+    "address": "東京都足立区西綾瀬2-1-18",
+    "date": "2025-06-21",
+    "status": "終了"
+  }
+]
