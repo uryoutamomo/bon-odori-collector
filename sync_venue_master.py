@@ -19,6 +19,8 @@ import os
 import urllib.request
 import urllib.error
 
+import notion_config  # noqa: F401 - load .env before reading environment variables
+
 NOTION_TOKEN = os.environ.get("NOTION_API_TOKEN")
 NOTION_VERSION = "2022-06-28"
 NOTION_API = "https://api.notion.com/v1"

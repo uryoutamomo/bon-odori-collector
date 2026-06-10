@@ -1,5 +1,17 @@
 [
   {
+    "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+    "region": "台東区",
+    "month": null,
+    "scale": "中",
+    "access": "JR御徒町駅南口すぐ／日比谷線 仲御徒町駅",
+    "in_tsukiji_30min": true,
+    "source_url": "https://tokyofesta.com/23ku/24373/",
+    "memo": "シタマチ.ふるさと盆踊り大会の会場。2017年パンダ誕生記念で初開催、以後恒例。2025年は第7回 8/16-17。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37b8be04e7628142abd0c578a2255537"
+  },
+  {
     "venue": "しながわ中央公園",
     "region": "品川区",
     "month": null,
@@ -22,6 +34,18 @@
     "memo": "「隔田公園」のひらがな表記。隊田川沿いに台東区（浅草側）と墨田区（向島側）にまたがる風致公園。本ページは墨田区側（向島１・２・５丁目、面積約8.2万㎡）。両区で別個にイベントが開催されうるため、同名の「隔田公園（台東区）」とは重複アーカイブせず別項目として保持。盆踊りの具体的開催情報は未確認。",
     "needs_review": false,
     "notion_url": "https://app.notion.com/p/3718be04e76281aba2d3f71cb5383b07"
+  },
+  {
+    "venue": "アーク・カラヤン広場（アークヒルズ）",
+    "region": "港区",
+    "month": null,
+    "scale": "中",
+    "access": "南北線 六本木一丁目駅直結／銀座線 溜池山王駅 徒歩5分",
+    "in_tsukiji_30min": true,
+    "source_url": "https://www.arkhills.com/events/regular_events.html",
+    "memo": "アークヒルズ秋祭りの盆踊り会場。例年9月中旬、東京音頭・六本木音頭など。2024年は9/14。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37b8be04e762813ebe2ddb6bd990aadb"
   },
   {
     "venue": "三田松坂児童遊園",
@@ -96,6 +120,18 @@
     "notion_url": "https://app.notion.com/p/37a8be04e762814488dfe287a4a4f8fe"
   },
   {
+    "venue": "京橋エドグラン 京橋中央ひろば",
+    "region": "中央区",
+    "month": null,
+    "scale": "中",
+    "access": "東京メトロ銀座線 京橋駅直結",
+    "in_tsukiji_30min": true,
+    "source_url": "https://www.edogrand.tokyo/event/6924",
+    "memo": "京橋盆踊り（約50年ぶりに2023年復活）。エドグラン飲食店の屋台・縁日ブースあり。例年8月末。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37b8be04e762819c9cc3e455b7a95596"
+  },
+  {
     "venue": "京陽小学校",
     "region": "品川区",
     "month": null,
@@ -166,6 +202,18 @@
     "memo": "明治43年に白瀬中尉らが南極探検に出発した「開南丸」の記念レリーフとペンギン像がある記念公園。日本プロ野球発祥の地で少年野球場もあり。盆踊りの具体的開催証拠は見つからず（要継続調査）。※同名の「晴海埠頭公園」は別の場所（湾岸）で、裏取りキューに別途検知済み（重複ではなく別会場）。",
     "needs_review": false,
     "notion_url": "https://app.notion.com/p/3718be04e76281d6b93cee5cb3b2d9ed"
+  },
+  {
+    "venue": "増上寺（大殿前広場）",
+    "region": "港区",
+    "month": null,
+    "scale": "大",
+    "access": "都営三田線 御成門駅・芝公園駅 徒歩3分／JR浜松町駅 徒歩10分",
+    "in_tsukiji_30min": true,
+    "source_url": "https://www.zojoji.or.jp/event/ev_bonodori.html",
+    "memo": "地蔵尊奉賛盆踊り大会の会場。例年7月中旬2日間。2025年は三解脱門大修理により中止→2026年要確認。芝公園に隣接（別会場扱い）。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37b8be04e76281c784bbe50037ae9725"
   },
   {
     "venue": "大井蔵王権現神社",
@@ -288,6 +336,18 @@
     "notion_url": "https://app.notion.com/p/3718be04e7628170b1e5ec8d792c019c"
   },
   {
+    "venue": "新宿中央公園 ファンモアタイム広場",
+    "region": "新宿区",
+    "month": null,
+    "scale": "中",
+    "access": "都営大江戸線 都庁前駅すぐ",
+    "in_tsukiji_30min": true,
+    "source_url": "https://tokyofesta.com/23ku/24845/",
+    "memo": "新宿中央公園夏祭り 納涼盆踊り大会。旧称「水の広場」。新宿音頭・花笠音頭。2025年は8/23-24。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37b8be04e7628131b133dfa6bf722f5d"
+  },
+  {
     "venue": "新宿住友ビル三角広場",
     "region": "新宿区",
     "month": null,
@@ -334,6 +394,18 @@
     "memo": "中央区立の社会教育会館（日本橋小学校等複合施設の地下2階・8階・9階）。検索した範囲では盆踊り開催の具体的情報は確認できず、地域の社会教育施設として要継続調査。近隣の「べったら盆踊り大会」とは別会場。",
     "needs_review": false,
     "notion_url": "https://app.notion.com/p/3718be04e762813bb3bddf727536dd9a"
+  },
+  {
+    "venue": "日本民謡会館",
+    "region": "品川区",
+    "month": null,
+    "scale": "小",
+    "access": "大井町駅から徒歩圏内",
+    "in_tsukiji_30min": true,
+    "source_url": "https://www.youtube.com/watch?v=9lkufMdYu2c",
+    "memo": "2026-05-31に日本民謡協会ホールでMin-Yoi's盆踊り開催記録あり。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37b8be04e762814398cad2338c876e69"
   },
   {
     "venue": "日進公園",
@@ -420,6 +492,30 @@
     "notion_url": "https://app.notion.com/p/3718be04e76281528d83f45db342fe34"
   },
   {
+    "venue": "東本願寺（浅草）",
+    "region": "台東区",
+    "month": null,
+    "scale": "中",
+    "access": "銀座線 田原町駅 徒歩5分／TX浅草駅 徒歩7分",
+    "in_tsukiji_30min": true,
+    "source_url": "https://www.asakusaevent.com/higashihonganji-bonodori-2025/",
+    "memo": "東本願寺盆踊り（お東さん）。約30年の休止を経て2017年復活。和太鼓×DJ×手持ち花火。2025年は8/20-21。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37b8be04e76281f78b9cd19ab6038f3c"
+  },
+  {
+    "venue": "根津神社",
+    "region": "文京区",
+    "month": null,
+    "scale": "中",
+    "access": "千代田線 根津駅 徒歩5分",
+    "in_tsukiji_30min": true,
+    "source_url": "https://bonmaru.zenmin-odori.jp/archives/2674",
+    "memo": "根津八重垣町会盆踊り（境内・根津音頭）。9月の例大祭時は藍染大通りで町内音頭会も。開催月は要確認。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37b8be04e76281f9b5d2cf779d632c4e"
+  },
+  {
     "venue": "桜田公園",
     "region": "港区",
     "month": null,
@@ -454,6 +550,18 @@
     "memo": "区立小学校。放課後子ども教室「よこラボ」を実施中。盆踊り開催の具体的情報は見つからず（要継続調査）",
     "needs_review": false,
     "notion_url": "https://app.notion.com/p/3718be04e7628132a9c7fb0130d71e1f"
+  },
+  {
+    "venue": "歌舞伎町シネシティ広場",
+    "region": "新宿区",
+    "month": null,
+    "scale": "中",
+    "access": "西武新宿駅 徒歩2分／大江戸線 新宿西口駅 徒歩5分",
+    "in_tsukiji_30min": true,
+    "source_url": "https://www.kanko-shinjuku.jp/event/c082/article_4606.html",
+    "memo": "歌舞伎町BON ODORI。古典盆踊り＋ポップ楽曲の盆DANCE。2025年は8/16、BLUE MAN GROUP出演。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37b8be04e76281d0a544e408737a9682"
   },
   {
     "venue": "江東天祖神社（亀戸天祖神社）",
@@ -696,6 +804,30 @@
     "notion_url": "https://app.notion.com/p/3718be04e76281d4b889c944f7a8a35e"
   },
   {
+    "venue": "西大井広場公園",
+    "region": "品川区",
+    "month": null,
+    "scale": "小",
+    "access": "横須賀線・湘南新宿ライン 西大井駅から徒歩約5分",
+    "in_tsukiji_30min": true,
+    "source_url": "https://bonmaru.zenmin-odori.jp/archives/202668",
+    "memo": "2025-09-27に品川区民まつりの盆踊りの部として開催記録あり。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37b8be04e76281db930fdde3a6df2a84"
+  },
+  {
+    "venue": "赤坂サカス広場",
+    "region": "港区",
+    "month": null,
+    "scale": "中",
+    "access": "千代田線 赤坂駅直結",
+    "in_tsukiji_30min": true,
+    "source_url": "https://sacas.tokyoevent.net/natsuodori.html",
+    "memo": "TBS前広場。赤坂盆踊り（2022年〜）→2025年から「赤坂夏おどり」。赤坂小唄・赤坂豊川音頭など。冬おどりも開催実績あり。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37b8be04e76281eba9f8e63c8e038be1"
+  },
+  {
     "venue": "赤坂氷川神社",
     "region": "港区",
     "month": null,
@@ -720,6 +852,18 @@
     "notion_url": "https://app.notion.com/p/3718be04e762818c89e5ed4eab6388fd"
   },
   {
+    "venue": "長谷寺（西麻布・麻布大観音）",
+    "region": "港区",
+    "month": null,
+    "scale": "小",
+    "access": "日比谷線 広尾駅 徒歩10分",
+    "in_tsukiji_30min": true,
+    "source_url": "https://event-schedule.eventokyo.jp/topic/453",
+    "memo": "上笄町会お祭りの盆踊り会場。子供神輿・山車・縁日と併催。2024年は9/13-15。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37b8be04e7628138bc51c83e5e31ba70"
+  },
+  {
     "venue": "隅田公園",
     "region": "台東区",
     "month": null,
@@ -730,6 +874,18 @@
     "memo": "隣接する「山谷堀広場」で「奥浅草盆踊り」が開催される（例年隆6本下旬）。隔年で他の盆踊りイベントも開催される可能性あり（同一会場で複数イベントが並立しうる、場所/イベント分離の意義が活きる例）。出典: dmenu（https://topics.smt.docomo.ne.jp/article/eventbank/region/eventbank-10626638）",
     "needs_review": false,
     "notion_url": "https://app.notion.com/p/3718be04e76281e39643e52d9603949f"
+  },
+  {
+    "venue": "青山善光寺",
+    "region": "港区",
+    "month": null,
+    "scale": "中",
+    "access": "銀座線ほか 表参道駅 徒歩3分",
+    "in_tsukiji_30min": true,
+    "source_url": "https://bonmaru.zenmin-odori.jp/archives/151",
+    "memo": "謝恩納涼盆踊り大会（青山表参道商店会主催・手づくり）。例年7月最終 日・月。河内節・ハワイ音頭など。うちわ手拭い配布。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37b8be04e7628184a3c6c53e7182042d"
   },
   {
     "venue": "青山熊野神社",
@@ -778,6 +934,18 @@
     "memo": "例大祭は9月第2週末（9/17前後の土日）に開催され、里神楽・祭囃子・露店等で賑わう。検索範囲では盆踊り開催の明確な記載は確認できず（隣接する牛嶋神社の奉納踊りと混同されやすいため要注意）。盆踊り情報は未確認のまま要継続調査。",
     "needs_review": false,
     "notion_url": "https://app.notion.com/p/3718be04e76281d7a262eb662a9fa156"
+  },
+  {
+    "venue": "鮫洲入江広場公園",
+    "region": "品川区",
+    "month": null,
+    "scale": "小",
+    "access": "京急 鮫洲駅から徒歩約5分",
+    "in_tsukiji_30min": true,
+    "source_url": "https://x.com/mizu516AforReal/status/2062799802266710143",
+    "memo": "2026-06-06のゆり園イベント内で晴盆の盆踊り枠あり。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37b8be04e76281d0a6dcdef9faa8d303"
   },
   {
     "venue": "麻布氷川神社",
@@ -1174,5 +1342,17 @@
     "memo": "鳥山町町内会 盆踊り大会。2025年8/8-9（10日は雨天中止）。2024年8/9当日中止。横浜市港北区鳥山町。盆まる掃載。",
     "needs_review": false,
     "notion_url": "https://app.notion.com/p/3718be04e7628136938ceff428685d9d"
+  },
+  {
+    "venue": "鶴川団地セントラル商店街",
+    "region": "町田市",
+    "month": null,
+    "scale": "小",
+    "access": "小田急線 鶴川駅 バス",
+    "in_tsukiji_30min": false,
+    "source_url": "https://matsuri-no-hi.com/matsuri/3399",
+    "memo": "鶴川団地夏祭りの盆踊り。2025年度は10/4-5（秋開催に移動）でも盆踊り実施。X声から検知された会場。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37b8be04e76281fcb309f4d6d5003311"
   }
 ]
