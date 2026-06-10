@@ -70,7 +70,9 @@ def build_public_events():
             skipped += 1
             continue
         months = parse_months(_prop(props, "例年開催月"))
-        date = _prop(props, "開催日")
+        date_obj = props.get("開催日", {}).get("date") or {}
+        date = date_obj.get("start")
+        date_end = date_obj.get("end")
         if date:
             months.add(int(date[5:7]))
         status = _prop(props, "状態")
@@ -87,6 +89,7 @@ def build_public_events():
                 "access": v["access"],
                 "address": v["address"],
                 "date": date,
+                "date_end": date_end,
                 "status": status,
                 # カードに出す特徴文（公開用に書いたものだけ。内部メモは出さない）
                 "description": clean_public_text(_prop(props, "公開紹介文")),
@@ -110,6 +113,7 @@ def build_public_events():
             "access": v["access"],
             "address": v["address"],
             "date": None,
+            "date_end": None,
             "status": None,
             "description": v["intro"],
             "detail": None,
