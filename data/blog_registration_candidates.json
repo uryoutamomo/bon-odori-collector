@@ -1,0 +1,773 @@
+{
+  "items": [
+    {
+      "venue_name": "下北沢駅東口",
+      "region": "世田谷区",
+      "address": "世田谷区北沢2-23",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://shimokitazawa-east.com/archives/8228",
+      "memo": "あずま通り商店街「下北沢盆踊り2025」 8月9日(土)-10日(日) 13:00-20:00。\n盆踊り 両日 16時-20時(レクチャー有)。\nシモキタ音頭 他 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2025/01/00l-setagaya-p.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "あずま通り商店街「下北沢盆踊り2025」 8月9日(土)-10日(日) 13:00-20:00。",
+        "month": "8月",
+        "date_text": "2025 [L30]\n8/9 - 10",
+        "source_url": "https://shimokitazawa-east.com/archives/8228"
+      }
+    },
+    {
+      "venue_name": "三峰公園",
+      "region": "世田谷区",
+      "address": "世田谷区砧4-6",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+      "memo": "砧町町会「納涼夏祭り大会」 7月19日(土)-20日(日)。\n・盆踊り 18時-20時。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2025/01/00l-setagaya-p.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "砧町町会「納涼夏祭り大会」 7月19日(土)-20日(日)。",
+        "month": "7月",
+        "date_text": "2025 [L6]\n7/19 - 20",
+        "source_url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf"
+      }
+    },
+    {
+      "venue_name": "上北沢小学校",
+      "region": "世田谷区",
+      "address": "世田谷区上北沢4-22-29",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+      "memo": "上北沢盆踊り実行委員会 「上北沢の納涼盆踊り」 8月25(土)。\n時間詳細不明(2023年は 午後4時-8時30分)。\n雨天の場合は24日(日)に延期。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2025/01/00l-setagaya-p.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "上北沢盆踊り実行委員会 「上北沢の納涼盆踊り」 8月25(土)。",
+        "month": "8月",
+        "date_text": "2025 [L36]\n8/23",
+        "source_url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf"
+      }
+    },
+    {
+      "venue_name": "下代田児童遊園",
+      "region": "世田谷区",
+      "address": "世田谷区代沢1-23",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.facebook.com/photo/?fbid=1021395170206703&set=a.384324273913799&locale=ja_JP",
+      "memo": "下代田東町会 「下代田東子供祭り・納涼祭り』 7月19日(土)-20日(日) 16時-21時。\n踊りの詳細不明(2018年は 19時- 盆踊りでした)。\n*雨天中止 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2025/01/00l-setagaya-p.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "下代田東町会 「下代田東子供祭り・納涼祭り』 7月19日(土)-20日(日) 16時-21時。",
+        "month": "7月",
+        "date_text": "2025 [L4]\n7/19 - 20",
+        "source_url": "https://www.facebook.com/photo/?fbid=1021395170206703&set=a.384324273913799&locale=ja_JP"
+      }
+    },
+    {
+      "venue_name": "円光院駐車場",
+      "region": "世田谷区",
+      "address": "世田谷区世田谷4-7-19",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://setagaya-station.com/news/event/event-info2025/",
+      "memo": "世田谷駅前商店街振興組合「納涼盆踊り大会 」\n7月26日(土)-27日(日) 午後6時-9時。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2025/01/00l-setagaya-p.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "世田谷駅前商店街振興組合「納涼盆踊り大会 」",
+        "month": "7月",
+        "date_text": "2025 [L22]\n7/26 - 27",
+        "source_url": "https://setagaya-station.com/news/event/event-info2025/"
+      }
+    },
+    {
+      "venue_name": "久富稲荷神社",
+      "region": "世田谷区",
+      "address": "世田谷区新町2-17-1",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+      "memo": "新町公民会 盆踊り大会 8月17日(日) 17:00- 。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2025/01/00l-setagaya-p.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "新町公民会 盆踊り大会 8月17日(日) 17:00- 。",
+        "month": "8月",
+        "date_text": "2025 [L35]\n8/17",
+        "source_url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf"
+      }
+    },
+    {
+      "venue_name": "二子玉川西地区ふれあい広場(246高架下)",
+      "region": "世田谷区",
+      "address": "世田谷区玉川3-24（高架下）",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+      "memo": "玉川町会盆おどり大会 7月25日(金)、26日(土) 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2025/01/00l-setagaya-p.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "玉川町会盆おどり大会 7月25日(金)、26日(土)",
+        "month": "7月",
+        "date_text": "2025 [L13]\n7/25 - 26",
+        "source_url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf"
+      }
+    },
+    {
+      "venue_name": "京王線芦花公園駅前ロータリー(南口)",
+      "region": "世田谷区",
+      "address": "世田谷区南烏山2-38-16",
+      "access": "最寄駅前",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+      "memo": "芦花公園商店街振興組合 「芦花公園駅前盆踊り大会」 7月25日(金) 17:00-。\n「昔懐かしファミリー盆踊り教室」17:30-。\n「大人向け本格的盆踊り」 19:00-(例年、20:30まで) 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2025/01/00l-setagaya-p.html",
+      "scale": "大",
+      "in_tsukiji": false,
+      "event": {
+        "name": "芦花公園商店街振興組合 「芦花公園駅前盆踊り大会」 7月25日(金) 17:00-。",
+        "month": "7月",
+        "date_text": "2025 [L12]\n7/25",
+        "source_url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf"
+      }
+    },
+    {
+      "venue_name": "八幡小学校",
+      "region": "世田谷区",
+      "address": "世田谷区玉川田園調布2-17-15",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+      "memo": "親子盆踊り大会 7月12日(土) 17:00-19:20。\n・盆踊り 18:20-19:20。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2025/01/00l-setagaya-p.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "親子盆踊り大会 7月12日(土) 17:00-19:20。",
+        "month": "7月",
+        "date_text": "2025 [L1]\n7/12",
+        "source_url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf"
+      }
+    },
+    {
+      "venue_name": "千歳船橋駅前広場",
+      "region": "世田谷区",
+      "address": "世田谷区船橋1",
+      "access": "最寄駅前",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+      "memo": "船橋会 盆踊り 8月17日(日)。\n時間詳細不明。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2025/01/00l-setagaya-p.html",
+      "scale": "大",
+      "in_tsukiji": false,
+      "event": {
+        "name": "船橋会 盆踊り 8月17日(日)。",
+        "month": "8月",
+        "date_text": "2025 [L34]\n8/17",
+        "source_url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf"
+      }
+    },
+    {
+      "venue_name": "小田急線喜多見駅前 南口広場",
+      "region": "世田谷区",
+      "address": "世田谷区喜多見8-21",
+      "access": "最寄駅前",
+      "source_url": "https://kitaminavi.com/topic/1337",
+      "memo": "「喜多見盆踊り大会」 7月26日(土)-27日(日)。\n時間詳細不明(例年 18時頃-21:00)\n・若さと華やかさで群を抜く会場です。喜多見音頭など踊ります。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2025/01/00l-setagaya-p.html",
+      "scale": "大",
+      "in_tsukiji": false,
+      "event": {
+        "name": "「喜多見盆踊り大会」 7月26日(土)-27日(日)。",
+        "month": "7月",
+        "date_text": "2025 [L21]\n7/26 - 27",
+        "source_url": "https://kitaminavi.com/topic/1337"
+      }
+    },
+    {
+      "venue_name": "大蔵氷川神社",
+      "region": "世田谷区",
+      "address": "世田谷区大蔵6-6-7",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+      "memo": "大蔵本村睦会 ｢盆踊り大会｣ 7月20日(日)午後7時-(午後6時-子ども盆踊り) 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2025/01/00l-setagaya-p.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "大蔵本村睦会 ｢盆踊り大会｣ 7月20日(日)午後7時-(午後6時-子ども盆踊り)",
+        "month": "7月",
+        "date_text": "2025 [L10]\n7/20",
+        "source_url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf"
+      }
+    },
+    {
+      "venue_name": "奥沢小学校",
+      "region": "世田谷区",
+      "address": "世田谷区奥沢3-1-1",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+      "memo": "奥沢交和会\n「納涼盆踊り大会」\n7月26日(土)-27日(日) 17:30-20:00。\n*雨天中止 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2025/01/00l-setagaya-p.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "奥沢交和会",
+        "month": "7月",
+        "date_text": "2025 [L19]\n7/26 - 27",
+        "source_url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf"
+      }
+    },
+    {
+      "venue_name": "宇奈根氷川神社",
+      "region": "世田谷区",
+      "address": "世田谷区宇奈根2-13-19",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/10549/minikomisinogawa110gou.pdf",
+      "memo": "宇奈根町会 盆踊り大会 7月19日(土)-20日(日)。\n詳細不明(2023年は 19時-22時)。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2025/01/00l-setagaya-p.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "宇奈根町会 盆踊り大会 7月19日(土)-20日(日)。",
+        "month": "7月",
+        "date_text": "2025 [L9]\n7/19 - 20",
+        "source_url": "https://www.city.setagaya.lg.jp/documents/10549/minikomisinogawa110gou.pdf"
+      }
+    },
+    {
+      "venue_name": "小田急線祖師ヶ谷大蔵駅前広場",
+      "region": "世田谷区",
+      "address": "世田谷区祖師谷1-8-12",
+      "access": "最寄駅前",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/889/minikomishi168.pdf",
+      "memo": "祖師谷商店街振興組合\n「そしがや駅前盆踊り」\n7月26日(土) 。\n詳細不明(2024年の盆踊りは 18:30ｰ21:00)。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2025/01/00l-setagaya-p.html",
+      "scale": "大",
+      "in_tsukiji": false,
+      "event": {
+        "name": "祖師谷商店街振興組合",
+        "month": "7月",
+        "date_text": "2025 [L18]\n7/26",
+        "source_url": "https://www.city.setagaya.lg.jp/documents/889/minikomishi168.pdf"
+      }
+    },
+    {
+      "venue_name": "希望ヶ丘団地 テニスコート",
+      "region": "世田谷区",
+      "address": "世田谷区船橋7-8-1",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+      "memo": "「希望ヶ丘団地夏まつり」 7月19日(土)-20日(日)。\n(例年、盆踊りを開催。今年度もあるかは未確認。) 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2025/01/00l-setagaya-p.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "「希望ヶ丘団地夏まつり」 7月19日(土)-20日(日)。",
+        "month": "7月",
+        "date_text": "2025 [L8]\n7/19 - 20",
+        "source_url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf"
+      }
+    },
+    {
+      "venue_name": "廻沢稲荷神社",
+      "region": "世田谷区",
+      "address": "世田谷区千歳台5-17-23",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+      "memo": "千歳台廻沢地区盆踊り 7月19日(土)-20日(日)。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2025/01/00l-setagaya-p.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "千歳台廻沢地区盆踊り 7月19日(土)-20日(日)。",
+        "month": "7月",
+        "date_text": "2025 [L5]\n7/19 - 20",
+        "source_url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf"
+      }
+    },
+    {
+      "venue_name": "成城大学9号館前広場",
+      "region": "世田谷区",
+      "address": "世田谷区成城6-1-20",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.seijogakuen.ed.jp/news/2025/event0726.html",
+      "memo": "「成城学園 盆踊り大会」 7月26日(土) 17:30-20:00。\n・成城学園の砧移転100周年を記念して、地域の皆様にお楽しみいただける盆踊りを開催します。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2025/01/00l-setagaya-p.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "「成城学園 盆踊り大会」 7月26日(土) 17:30-20:00。",
+        "month": "7月",
+        "date_text": "2025 [L14]\n7/26",
+        "source_url": "https://www.seijogakuen.ed.jp/news/2025/event0726.html"
+      }
+    },
+    {
+      "venue_name": "横根稲荷神社",
+      "region": "世田谷区",
+      "address": "世田谷区大蔵1-6",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/891/163gou_2.pdf",
+      "memo": "大蔵東部町会「親子納涼盆踊り大会」7月26日(土)午後6時30分-午後9時。\n例年、雨天の場合、翌日順延予定。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2025/01/00l-setagaya-p.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "大蔵東部町会「親子納涼盆踊り大会」7月26日(土)午後6時30分-午後9時。",
+        "month": "7月",
+        "date_text": "2025 [L16]\n7/26",
+        "source_url": "https://www.city.setagaya.lg.jp/documents/891/163gou_2.pdf"
+      }
+    },
+    {
+      "venue_name": "池尻稲荷神社",
+      "region": "世田谷区",
+      "address": "世田谷区池尻2-34-15",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+      "memo": "盆踊り(池尻地区)8月1日(金)-2日(土)。\n詳細不明。(2023年は午後7時-8時半) 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2025/01/00l-setagaya-p.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "盆踊り(池尻地区)8月1日(金)-2日(土)。",
+        "month": "8月",
+        "date_text": "2025 [L23]\n8/1 - 2",
+        "source_url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf"
+      }
+    },
+    {
+      "venue_name": "瀬田中学校",
+      "region": "世田谷区",
+      "address": "世田谷区瀬田2-17-1",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+      "memo": "瀬田商店会 瀬田納涼盆踊り 8月16日(土)ｰ17日(日)。\n時間詳細不明(2023年は午後5時-8時半、最終日は8時まで)。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2025/01/00l-setagaya-p.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "瀬田商店会 瀬田納涼盆踊り 8月16日(土)ｰ17日(日)。",
+        "month": "8月",
+        "date_text": "2025 [L33]\n8/16 - 17",
+        "source_url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf"
+      }
+    },
+    {
+      "venue_name": "玉川中町公園",
+      "region": "世田谷区",
+      "address": "世田谷区中町5-19",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+      "memo": "納涼盆踊り大会 7月19日(土)-20日(日)。\n詳細不明。(2023年は 18:30-20:45) 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2025/01/00l-setagaya-p.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "納涼盆踊り大会 7月19日(土)-20日(日)。",
+        "month": "7月",
+        "date_text": "2025 [L7]\n7/19 - 20",
+        "source_url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf"
+      }
+    },
+    {
+      "venue_name": "砧八丁目児童遊園",
+      "region": "世田谷区",
+      "address": "世田谷区砧8-2-21",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/891/163gou_2.pdf",
+      "memo": "法人格砧町自治会「納涼盆踊り大会」8月1日(金)-2日(土) 午後6時-8時30分。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2025/01/00l-setagaya-p.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "法人格砧町自治会「納涼盆踊り大会」8月1日(金)-2日(土) 午後6時-8時30分。",
+        "month": "8月",
+        "date_text": "2025 [L24]\n8/1 - 2",
+        "source_url": "https://www.city.setagaya.lg.jp/documents/891/163gou_2.pdf"
+      }
+    },
+    {
+      "venue_name": "砧小学校",
+      "region": "世田谷区",
+      "address": "世田谷区喜多見6-9-1",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/891/163gou_2.pdf",
+      "memo": "砧小学校「第38回砧っ子夏祭り」7月19日(土)午後3時-7時30分。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2025/01/00l-setagaya-p.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "砧小学校「第38回砧っ子夏祭り」7月19日(土)午後3時-7時30分。",
+        "month": "7月",
+        "date_text": "2025 [L3]\n7/19",
+        "source_url": "https://www.city.setagaya.lg.jp/documents/891/163gou_2.pdf"
+      }
+    },
+    {
+      "venue_name": "祖師谷神明社",
+      "region": "世田谷区",
+      "address": "世田谷区祖師谷5-1-7",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/889/minikomishi168.pdf",
+      "memo": "祖師谷昇進会商店街(振)盆踊り 7月18日(金)-19日(土)。\n詳細不明(2024年は19:00ｰ21:00)。\n小雨決行(例年)。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2025/01/00l-setagaya-p.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "祖師谷昇進会商店街(振)盆踊り 7月18日(金)-19日(土)。",
+        "month": "7月",
+        "date_text": "2025 [L2]\n7/18 - 19",
+        "source_url": "https://www.city.setagaya.lg.jp/documents/889/minikomishi168.pdf"
+      }
+    },
+    {
+      "venue_name": "野毛六所神社",
+      "region": "世田谷区",
+      "address": "世田谷区野毛2-14-2",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+      "memo": "野毛町会 納涼盆踊り大会 7月26日(土)-27日(日)\n時間詳細不明 (2017年は午後7時-9時) 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2025/01/00l-setagaya-p.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "野毛町会 納涼盆踊り大会 7月26日(土)-27日(日)",
+        "month": "7月",
+        "date_text": "2025 [L20]\n7/26 - 27",
+        "source_url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf"
+      }
+    },
+    {
+      "venue_name": "鎌田天神社",
+      "region": "世田谷区",
+      "address": "世田谷区鎌田4-11-19",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/10549/minikomisinogawa110gou.pdf",
+      "memo": "鎌田協和会 鎌田納涼盆踊り 7月26日(土) 18:30-。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2025/01/00l-setagaya-p.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "鎌田協和会 鎌田納涼盆踊り 7月26日(土) 18:30-。",
+        "month": "7月",
+        "date_text": "2025 [L17]\n7/26",
+        "source_url": "https://www.city.setagaya.lg.jp/documents/10549/minikomisinogawa110gou.pdf"
+      }
+    },
+    {
+      "venue_name": "長円寺",
+      "region": "世田谷区",
+      "address": "世田谷区岡本1-20-1",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/891/163gou_2.pdf",
+      "memo": "岡本自治会「盆踊り大会」 8月2日(土)-3日(日) 19:00-21:00 長圓寺境内 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2025/01/00l-setagaya-p.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "岡本自治会「盆踊り大会」 8月2日(土)-3日(日) 19:00-21:00 長圓寺境内",
+        "month": "8月",
+        "date_text": "2025 [L27]\n8/2 - 3",
+        "source_url": "https://www.city.setagaya.lg.jp/documents/891/163gou_2.pdf"
+      }
+    },
+    {
+      "venue_name": "駒澤大学 駒沢キャンパス",
+      "region": "世田谷区",
+      "address": "世田谷区駒沢1-23-1",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+      "memo": "駒澤大学同窓会東京都支部・営友会\n「駒沢ふれあい広場 夏祭り」 8月10日(日)。\n各種模擬店、ステージ企画、盆踊り。\n詳細不明。(2023年は「盆踊りは18時から」) 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2025/01/00l-setagaya-p.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "駒澤大学同窓会東京都支部・営友会",
+        "month": "8月",
+        "date_text": "2025 [L32]\n8/10",
+        "source_url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf"
+      }
+    },
+    {
+      "venue_name": "駒沢緑泉公園",
+      "region": "世田谷区",
+      "address": "世田谷区駒沢3-19",
+      "access": "世田谷区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+      "memo": "納涼盆踊り大会 8月3日(日)-4日(月) 19:00-。\n*雨天順延 8月5日。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2025/01/00l-setagaya-p.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "納涼盆踊り大会 8月3日(日)-4日(月) 19:00-。",
+        "month": "8月",
+        "date_text": "2025 [L28]\n8/3 - 4",
+        "source_url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf"
+      }
+    },
+    {
+      "venue_name": "新井薬師公園",
+      "region": "中野区",
+      "address": "中野区新井5-4",
+      "access": "中野区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://nakano-arai.gr.jp/nakanodoorisakuramatsuri/",
+      "memo": "新井町会連合会・中野通り桜まつり実行委員会「中野通り桜まつり」\n3月28日(土) (初日)18:00-(約30分間)18:00。\n日本民踊・盆踊り 鳳蝶流鳳蝶会によるパフォーマンス。\n*イベント全体は 3月28日と29日にかけて開催。和太鼓演奏、エイサー、ダンスなどのプログラムが催されます。\n(3/26 午後掲) 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00n-nakano-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "新井町会連合会・中野通り桜まつり実行委員会「中野通り桜まつり」",
+        "month": "3月",
+        "date_text": "2026 [N1]\n3/28",
+        "source_url": "https://nakano-arai.gr.jp/nakanodoorisakuramatsuri/"
+      }
+    },
+    {
+      "venue_name": "JR蒲田駅西口駅前広場(駅前会場)",
+      "region": "大田区",
+      "address": "大田区西蒲田7-68",
+      "access": "最寄駅前",
+      "source_url": "https://x.com/otakanko2/status/1963557665998565458",
+      "memo": "蒲田魅力向上委員会(蒲田西口商店街振興組合、蒲田西地区自治会連合会) 「蒲田国際フェスティバル2025 -世界が出会う下町フェス 」 9月6日(土)(初日) 。\n盆踊は①17:00-、②19:00-。\n*イベント全体は9月7日まで2日間開催。\n(9/6 15時掲) 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2025/01/00k-ota-p.html",
+      "scale": "大",
+      "in_tsukiji": false,
+      "event": {
+        "name": "蒲田魅力向上委員会(蒲田西口商店街振興組合、蒲田西地区自治会連合会) 「蒲田国際フェスティバル2025 -世界が出会う下町フェス 」 9月6日(土)(初日) 。",
+        "month": "9月",
+        "date_text": "2025 [K13]\n9/6",
+        "source_url": "https://x.com/otakanko2/status/1963557665998565458"
+      }
+    },
+    {
+      "venue_name": "大森南4丁目公園",
+      "region": "大田区",
+      "address": "大田区大森南4-14-2",
+      "access": "大田区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://drive.google.com/file/d/1zfAfkreIrAhHrnh_cvQA7XUsdtmHc7ON/view?usp=drive_link",
+      "memo": "森ヶ崎自治会\n「盆踊り大会」\n7/29(火)、30(水) 19時-21時。\n雨天1日順延。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2025/01/00k-ota-p.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "森ヶ崎自治会",
+        "month": "7月",
+        "date_text": "2025 [K11]\n7/29 - 30",
+        "source_url": "https://drive.google.com/file/d/1zfAfkreIrAhHrnh_cvQA7XUsdtmHc7ON/view?usp=drive_link"
+      }
+    },
+    {
+      "venue_name": "大森南一丁目公園",
+      "region": "大田区",
+      "address": "大田区大森南1-23-20",
+      "access": "大田区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://drive.google.com/file/d/1myPvLkT7V4xH36LLQsLTmsG9hG_d7wW0/view?usp=drive_link",
+      "memo": "大森南一丁目自治会「納涼盆踊り大会」7月21日(月)-22日(火) 18:30-20:00。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2025/01/00k-ota-p.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "大森南一丁目自治会「納涼盆踊り大会」7月21日(月)-22日(火) 18:30-20:00。",
+        "month": "7月",
+        "date_text": "2025 [K6]\n7/21 - 22",
+        "source_url": "https://drive.google.com/file/d/1myPvLkT7V4xH36LLQsLTmsG9hG_d7wW0/view?usp=drive_link"
+      }
+    },
+    {
+      "venue_name": "子安八幡神社",
+      "region": "大田区",
+      "address": "大田区北糀谷1-22-10",
+      "access": "大田区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://drive.google.com/file/d/1_29ARyUGtOCqB53ppmXo-iOh6h6qaEjt/view?usp=drive_link",
+      "memo": "北糀谷町会 「納涼踊り大会」 7月24日(木)-25日(金) 18:30-20:30。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2025/01/00k-ota-p.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "北糀谷町会 「納涼踊り大会」 7月24日(木)-25日(金) 18:30-20:30。",
+        "month": "7月",
+        "date_text": "2025 [K8]\n7/24 - 25",
+        "source_url": "https://drive.google.com/file/d/1_29ARyUGtOCqB53ppmXo-iOh6h6qaEjt/view?usp=drive_link"
+      }
+    },
+    {
+      "venue_name": "市野倉南児童公園",
+      "region": "大田区",
+      "address": "大田区中央7-15",
+      "access": "大田区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://drive.google.com/file/d/1ZRXNUbG0bvdqIYXEY8jdBbD6_IRbAgoJ/view?usp=drive_link",
+      "memo": "市野倉南町会 盆踊り 8月2日(土)-3日(日)18:30-21:00(4日は20:30まで)。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2025/01/00k-ota-p.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "市野倉南町会 盆踊り 8月2日(土)-3日(日)18:30-21:00(4日は20:30まで)。",
+        "month": "8月",
+        "date_text": "2025 [K12]\n8/2 - 3",
+        "source_url": "https://drive.google.com/file/d/1ZRXNUbG0bvdqIYXEY8jdBbD6_IRbAgoJ/view?usp=drive_link"
+      }
+    },
+    {
+      "venue_name": "旭児童遊園",
+      "region": "大田区",
+      "address": "大田区東糀谷4-3-6",
+      "access": "大田区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://drive.google.com/file/d/15OgYsC2CUVPaXKMTyQdE0bLu3T6cDiR2/view?usp=drive_link",
+      "memo": "東糀谷四・五・六町会 納涼盆踊り大会 7月18日(金)=19日(土) 18:30-20:30。\n雨天中止。\n(7/18朝掲) 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2025/01/00k-ota-p.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "東糀谷四・五・六町会 納涼盆踊り大会 7月18日(金)=19日(土) 18:30-20:30。",
+        "month": "7月",
+        "date_text": "2025 [K5]\n7/18 - 19",
+        "source_url": "https://drive.google.com/file/d/15OgYsC2CUVPaXKMTyQdE0bLu3T6cDiR2/view?usp=drive_link"
+      }
+    },
+    {
+      "venue_name": "池上第二小学校",
+      "region": "大田区",
+      "address": "大田区中央8-9-1",
+      "access": "大田区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://drive.google.com/file/d/1QLA-aZWCl2zvCga0v8d2rrA0or_ymCsK/view?usp=drive_link",
+      "memo": "堤方東町会「盆踊り大会」 7月26日(土) 16:30-20:00。\n池ニ郎音頭 他。\n踊りの時間詳細不明。(第1部と第2部があるそうです)\n＊プロレスはふれあいのみ(試合なし)。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2025/01/00k-ota-p.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "堤方東町会「盆踊り大会」 7月26日(土) 16:30-20:00。",
+        "month": "7月",
+        "date_text": "2025 [K9]\n7/26",
+        "source_url": "https://drive.google.com/file/d/1QLA-aZWCl2zvCga0v8d2rrA0or_ymCsK/view?usp=drive_link"
+      }
+    },
+    {
+      "venue_name": "羽田神社",
+      "region": "大田区",
+      "address": "大田区本羽田3-9-12",
+      "access": "大田区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://drive.google.com/file/d/1jbWa9OuIOch3NHPhA6kgCjeF1M2qWnFo/view?usp=drive_link",
+      "memo": "羽田青年連合会\n恒例盆踊り\n7月13日-15日 19時ｰ21時\n(7/15 15時掲) 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2025/01/00k-ota-p.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "羽田青年連合会",
+        "month": "7月",
+        "date_text": "2025 [K4]\n7/13 - 15",
+        "source_url": "https://drive.google.com/file/d/1jbWa9OuIOch3NHPhA6kgCjeF1M2qWnFo/view?usp=drive_link"
+      }
+    },
+    {
+      "venue_name": "萩中神社",
+      "region": "大田区",
+      "address": "大田区萩中1-5",
+      "access": "大田区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://x.com/chokai_info/status/1940564839002526037",
+      "memo": "萩中町会・オーベルグランディオ萩中自治会・新宿東町会「盆踊り大会」 7月11日(金)-12日(土) 18:30-20:30。\n(7/12 朝掲) 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2025/01/00k-ota-p.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "萩中町会・オーベルグランディオ萩中自治会・新宿東町会「盆踊り大会」 7月11日(金)-12日(土) 18:30-20:30。",
+        "month": "7月",
+        "date_text": "2025 [K3]\n7/11 - 12",
+        "source_url": "https://x.com/chokai_info/status/1940564839002526037"
+      }
+    },
+    {
+      "venue_name": "西仲天祖神社",
+      "region": "大田区",
+      "address": "大田区西糀谷4-9-17",
+      "access": "大田区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://drive.google.com/file/d/1t0wrwk_Netwu2VmGvRy61Is78zuB5HoC/view?usp=drive_link",
+      "memo": "西糀谷四丁目町会 盆踊り大会 7月21日(月祝)-22日(火) 19時ｰ21時。\n雨天中止。\n(7/22朝掲) 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2025/01/00k-ota-p.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "西糀谷四丁目町会 盆踊り大会 7月21日(月祝)-22日(火) 19時ｰ21時。",
+        "month": "7月",
+        "date_text": "2025 [K7]\n7/21 - 22",
+        "source_url": "https://drive.google.com/file/d/1t0wrwk_Netwu2VmGvRy61Is78zuB5HoC/view?usp=drive_link"
+      }
+    },
+    {
+      "venue_name": "西糀谷さざんか公園",
+      "region": "大田区",
+      "address": "大田区西糀谷2-14-18",
+      "access": "大田区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://drive.google.com/file/d/1mgZ822XFIhVTZHFdbqeiYw3NYsIWeeZ-/view?usp=drive_link",
+      "memo": "西糀谷三丁目町会「納涼盆踊り大会」7月28日(月)-29日(火) 19:00-20:30。\n(7/29早朝掲) 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2025/01/00k-ota-p.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "西糀谷三丁目町会「納涼盆踊り大会」7月28日(月)-29日(火) 19:00-20:30。",
+        "month": "7月",
+        "date_text": "2025 [K10]\n7/28 - 29",
+        "source_url": "https://drive.google.com/file/d/1mgZ822XFIhVTZHFdbqeiYw3NYsIWeeZ-/view?usp=drive_link"
+      }
+    },
+    {
+      "venue_name": "馬込桜並木公園、馬込桜並木通り",
+      "region": "大田区",
+      "address": "大田区南馬込4-48～南馬込6-11付近",
+      "access": "大田区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://otakushoren.com/event/13451",
+      "memo": "馬込地区自治会連合会、馬籠商店会連合睦会\n「第35回 馬込文士村大桜まつり」 4月6日(日) 12:00-16:30。\n・流し踊り(馬込地区自治会連合会他) 詳細不明(2024年は13時開始でした)。\n＊一般参加は、町会から禁止と言い渡されているようです。\n・雨天決行(荒天時、踊りは中止の見込み) 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2025/01/00k-ota-p.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "馬込地区自治会連合会、馬籠商店会連合睦会",
+        "month": "4月",
+        "date_text": "2025 [K1]\n4/6",
+        "source_url": "https://otakushoren.com/event/13451"
+      }
+    },
+    {
+      "venue_name": "北葛西コミュニティ会館",
+      "region": "江戸川区",
+      "address": "江戸川区北葛西2-11-39",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://x.com/kurasuzume_39/status/1985919952835264972?s=46",
+      "memo": "倉雀会(くらすずめかい)\n「大盆踊り大会」2月8日(日) 12:00-14:30(開場 11:30)。\n・「踊りやすい服装、着物、浴衣」。\n・要上履き、団扇。\n＊有料イベントです。当日1500円。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "小",
+      "in_tsukiji": false,
+      "event": {
+        "name": "倉雀会(くらすずめかい)",
+        "month": "2月",
+        "date_text": "2026 [W1]\n2/8",
+        "source_url": "https://x.com/kurasuzume_39/status/1985919952835264972?s=46"
+      }
+    },
+    {
+      "venue_name": "鹿骨中学校",
+      "region": "江戸川区",
+      "address": "江戸川区鹿骨2-12-1",
+      "access": "江戸川区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://drive.google.com/file/d/1ZuZhK-FUuhCW9wk_XyHtrAtuBEZao-MX/view?usp=drive_link",
+      "memo": "好踊会「第4回 好踊会フェア」 3月29日(日) 13:00-16:00。\n参加費 500円、子供と見学者は無料。\n(3/28夕掲) 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00w-edogawa-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "好踊会「第4回 好踊会フェア」 3月29日(日) 13:00-16:00。",
+        "month": "3月",
+        "date_text": "2026 [W2]\n3/29",
+        "source_url": "https://drive.google.com/file/d/1ZuZhK-FUuhCW9wk_XyHtrAtuBEZao-MX/view?usp=drive_link"
+      }
+    },
+    {
+      "venue_name": "水元公園内はなしょうぶ園口",
+      "region": "葛飾区",
+      "address": "葛飾区水元公園2",
+      "access": "葛飾区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.city.katsushika.lg.jp/tourism/1000064/1028427.html",
+      "memo": "「葛飾菖蒲まつり 水元公園会場 民踊パレード 5月31日(日)。\n・11:05-11:35 民踊パレード＆踊り。\n＊無料シャトルバスの運行があります(情報元を参照)。\n＊葛飾菖蒲まつり全体は、水元公園会場および堀切菖蒲園会場にて、5月25日(月)-6月14日(日)にかけて開催されます。\n＊堀切菖蒲園会場にて、①5月31日 10:00-10:45、②6月7日(日) 9:30-9:50 に関東やまと太鼓による演奏があるようです。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00v-katsusika-q.html",
+      "scale": "大",
+      "in_tsukiji": false,
+      "event": {
+        "name": "「葛飾菖蒲まつり 水元公園会場 民踊パレード 5月31日(日)。",
+        "month": "5月",
+        "date_text": "2026 [V1]\n5/31",
+        "source_url": "https://www.city.katsushika.lg.jp/tourism/1000064/1028427.html"
+      }
+    },
+    {
+      "venue_name": "中池袋公園",
+      "region": "豊島区",
+      "address": "豊島区東池袋1-16-1",
+      "access": "豊島区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://www.instagram.com/p/DSju4PKEUNW/?igsh=MW02NXNoY3hycjNhYQ%3D%3D",
+      "memo": "「白鳥おどりin池袋」 4月25日(土) 11:00-20:00。\n・白鳥踊り保存会による生唄・生演奏(例年)。\n11:00-20:00 縁日(WACCA 1F)、グッズ・フード販売(中池袋公園)\n13:00-14:30 下駄づくりワークショップ(WACCA 4F)\n15:00-15:30 白鳥おどりトークショー\n16:00-16:30 白鳥おどり教室\n16:30-18:00 白鳥おどり(第1部・生演奏)\n18:30-20:00 白鳥おどり(第2部・生演奏)\n(4/25朝 時間追記) 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00p-toshima-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "「白鳥おどりin池袋」 4月25日(土) 11:00-20:00。",
+        "month": "4月",
+        "date_text": "2026 [P1]\n4/25",
+        "source_url": "https://www.instagram.com/p/DSju4PKEUNW/?igsh=MW02NXNoY3hycjNhYQ%3D%3D"
+      }
+    },
+    {
+      "venue_name": "ふるさと千川ひろば(千川小学校校庭跡地)",
+      "region": "豊島区",
+      "address": "豊島区要町3-54-16",
+      "access": "豊島区内。詳細アクセスは出典URLを参照",
+      "source_url": "https://drive.google.com/file/d/1rwFa5mbPoCsekMR4OpwAacVZxXgoF-on/view?usp=drive_link",
+      "memo": "「第34回ふるさと千川 まつり」 6月5日(金)-6日(土) 17:30-(開場)。\n・5日(金) 18:30-21:00。\n・6日(土) 18:30-20:30。\n(6/5夜掲) 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00p-toshima-q.html",
+      "scale": "中",
+      "in_tsukiji": false,
+      "event": {
+        "name": "「第34回ふるさと千川 まつり」 6月5日(金)-6日(土) 17:30-(開場)。",
+        "month": "6月",
+        "date_text": "2026 [P2]\n6/5 - 6",
+        "source_url": "https://drive.google.com/file/d/1rwFa5mbPoCsekMR4OpwAacVZxXgoF-on/view?usp=drive_link"
+      }
+    }
+  ],
+  "missing": []
+}

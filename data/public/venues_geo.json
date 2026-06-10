@@ -1040,6 +1040,426 @@
     "matched_title": "東京都目黒区中根一丁目３番１０号"
   },
   {
+    "name": "JR蒲田駅西口駅前広場(駅前会場)",
+    "area": "大田区",
+    "address": "東京都大田区西蒲田7-68",
+    "query": "東京都大田区西蒲田7-68",
+    "source": "GSI AddressSearch",
+    "lat": 35.562431,
+    "lon": 139.715424,
+    "matched_title": "東京都大田区西蒲田七丁目６８番"
+  },
+  {
+    "name": "大森南4丁目公園",
+    "area": "大田区",
+    "address": "東京都大田区大森南4-14-2",
+    "query": "東京都大田区大森南4-14-2",
+    "source": "GSI AddressSearch",
+    "lat": 35.56588,
+    "lon": 139.745514,
+    "matched_title": "東京都大田区大森南四丁目１４番２号"
+  },
+  {
+    "name": "大森南一丁目公園",
+    "area": "大田区",
+    "address": "東京都大田区大森南1-23-20",
+    "query": "東京都大田区大森南1-23-20",
+    "source": "GSI AddressSearch",
+    "lat": 35.561398,
+    "lon": 139.738388,
+    "matched_title": "東京都大田区大森南一丁目２３番２０号"
+  },
+  {
+    "name": "子安八幡神社",
+    "area": "大田区",
+    "address": "東京都大田区北糀谷1-22-10",
+    "query": "東京都大田区北糀谷1-22-10",
+    "source": "GSI AddressSearch",
+    "lat": 35.561264,
+    "lon": 139.73613,
+    "matched_title": "東京都大田区北糀谷一丁目２２番１０号"
+  },
+  {
+    "name": "市野倉南児童公園",
+    "area": "大田区",
+    "address": "東京都大田区中央7-15",
+    "query": "東京都大田区中央7-15",
+    "source": "GSI AddressSearch",
+    "lat": 35.574951,
+    "lon": 139.715012,
+    "matched_title": "東京都大田区中央七丁目１５番"
+  },
+  {
+    "name": "旭児童遊園",
+    "area": "大田区",
+    "address": "東京都大田区東糀谷4-3-6",
+    "query": "東京都大田区東糀谷4-3-6",
+    "source": "GSI AddressSearch",
+    "lat": 35.556377,
+    "lon": 139.744568,
+    "matched_title": "東京都大田区東糀谷四丁目３番６号"
+  },
+  {
+    "name": "池上第二小学校",
+    "area": "大田区",
+    "address": "東京都大田区中央8-9-1",
+    "query": "東京都大田区中央8-9-1",
+    "source": "GSI AddressSearch",
+    "lat": 35.573612,
+    "lon": 139.713455,
+    "matched_title": "東京都大田区中央八丁目９番"
+  },
+  {
+    "name": "羽田神社",
+    "area": "大田区",
+    "address": "東京都大田区本羽田3-9-12",
+    "query": "東京都大田区本羽田3-9-12",
+    "source": "GSI AddressSearch",
+    "lat": 35.546978,
+    "lon": 139.740967,
+    "matched_title": "東京都大田区本羽田三丁目９番１２号"
+  },
+  {
+    "name": "萩中神社",
+    "area": "大田区",
+    "address": "東京都大田区萩中1-5",
+    "query": "東京都大田区萩中1-5",
+    "source": "GSI AddressSearch",
+    "lat": 35.552441,
+    "lon": 139.727203,
+    "matched_title": "東京都大田区萩中一丁目５番"
+  },
+  {
+    "name": "西仲天祖神社",
+    "area": "大田区",
+    "address": "東京都大田区西糀谷4-9-17",
+    "query": "東京都大田区西糀谷4-9-17",
+    "source": "GSI AddressSearch",
+    "lat": 35.555637,
+    "lon": 139.730652,
+    "matched_title": "東京都大田区西糀谷四丁目９番１７号"
+  },
+  {
+    "name": "西糀谷さざんか公園",
+    "area": "大田区",
+    "address": "東京都大田区西糀谷2-14-18",
+    "query": "東京都大田区西糀谷2-14-18",
+    "source": "GSI AddressSearch",
+    "lat": 35.558617,
+    "lon": 139.735962,
+    "matched_title": "東京都大田区西糀谷二丁目１４番１８号"
+  },
+  {
+    "name": "馬込桜並木公園、馬込桜並木通り",
+    "area": "大田区",
+    "address": "東京都大田区南馬込4-48～南馬込6-11付近",
+    "query": "東京都大田区南馬込4-48～南馬込6-11付近",
+    "source": "GSI AddressSearch",
+    "lat": 35.582912,
+    "lon": 139.714645,
+    "matched_title": "東京都大田区南馬込四丁目４８番"
+  },
+  {
+    "name": "三峰公園",
+    "area": "世田谷区",
+    "address": "東京都世田谷区砧4-6",
+    "query": "東京都世田谷区砧4-6",
+    "source": "GSI AddressSearch",
+    "lat": 35.640839,
+    "lon": 139.613022,
+    "matched_title": "東京都世田谷区砧四丁目６番"
+  },
+  {
+    "name": "上北沢小学校",
+    "area": "世田谷区",
+    "address": "東京都世田谷区上北沢4-22-29",
+    "query": "東京都世田谷区上北沢4-22-29",
+    "source": "GSI AddressSearch",
+    "lat": 35.66991,
+    "lon": 139.621841,
+    "matched_title": "東京都世田谷区上北沢四丁目２２番２９号"
+  },
+  {
+    "name": "下代田児童遊園",
+    "area": "世田谷区",
+    "address": "東京都世田谷区代沢1-23",
+    "query": "東京都世田谷区代沢1-23",
+    "source": "GSI AddressSearch",
+    "lat": 35.656403,
+    "lon": 139.677658,
+    "matched_title": "東京都世田谷区代沢一丁目２３番"
+  },
+  {
+    "name": "下北沢駅東口",
+    "area": "世田谷区",
+    "address": "東京都世田谷区北沢2-23",
+    "query": "東京都世田谷区北沢2-23",
+    "source": "GSI AddressSearch",
+    "lat": 35.661465,
+    "lon": 139.666016,
+    "matched_title": "東京都世田谷区北沢二丁目２３番"
+  },
+  {
+    "name": "久富稲荷神社",
+    "area": "世田谷区",
+    "address": "東京都世田谷区新町2-17-1",
+    "query": "東京都世田谷区新町2-17-1",
+    "source": "GSI AddressSearch",
+    "lat": 35.629112,
+    "lon": 139.648773,
+    "matched_title": "東京都世田谷区新町二丁目１７番１号"
+  },
+  {
+    "name": "二子玉川西地区ふれあい広場(246高架下)",
+    "area": "世田谷区",
+    "address": "東京都世田谷区玉川3-24（高架下）",
+    "query": "東京都世田谷区玉川3-24",
+    "source": "GSI AddressSearch",
+    "lat": 35.614258,
+    "lon": 139.624802,
+    "matched_title": "東京都世田谷区玉川三丁目２４番"
+  },
+  {
+    "name": "京王線芦花公園駅前ロータリー(南口)",
+    "area": "世田谷区",
+    "address": "東京都世田谷区南烏山2-38-16",
+    "query": "東京都世田谷区南烏山2-38-16",
+    "source": "GSI AddressSearch",
+    "lat": 35.670525,
+    "lon": 139.60849,
+    "matched_title": "東京都世田谷区南烏山二丁目３８番１６号"
+  },
+  {
+    "name": "八幡小学校",
+    "area": "世田谷区",
+    "address": "東京都世田谷区玉川田園調布2-17-15",
+    "query": "東京都世田谷区玉川田園調布2-17-15",
+    "source": "GSI AddressSearch",
+    "lat": 35.602921,
+    "lon": 139.666824,
+    "matched_title": "東京都世田谷区玉川田園調布二丁目１７番１５号"
+  },
+  {
+    "name": "円光院駐車場",
+    "area": "世田谷区",
+    "address": "東京都世田谷区世田谷4-7-19",
+    "query": "東京都世田谷区世田谷4-7-19",
+    "source": "GSI AddressSearch",
+    "lat": 35.643337,
+    "lon": 139.650391,
+    "matched_title": "東京都世田谷区世田谷四丁目７番１９号"
+  },
+  {
+    "name": "千歳船橋駅前広場",
+    "area": "世田谷区",
+    "address": "東京都世田谷区船橋1",
+    "query": "東京都世田谷区船橋1",
+    "source": "GSI AddressSearch",
+    "lat": 35.650036,
+    "lon": 139.62178,
+    "matched_title": "東京都世田谷区船橋一丁目"
+  },
+  {
+    "name": "大蔵氷川神社",
+    "area": "世田谷区",
+    "address": "東京都世田谷区大蔵6-6-7",
+    "query": "東京都世田谷区大蔵6-6-7",
+    "source": "GSI AddressSearch",
+    "lat": 35.62484,
+    "lon": 139.611282,
+    "matched_title": "東京都世田谷区大蔵六丁目６番７号"
+  },
+  {
+    "name": "奥沢小学校",
+    "area": "世田谷区",
+    "address": "東京都世田谷区奥沢3-1-1",
+    "query": "東京都世田谷区奥沢3-1-1",
+    "source": "GSI AddressSearch",
+    "lat": 35.599216,
+    "lon": 139.675415,
+    "matched_title": "東京都世田谷区奥沢三丁目１番１号"
+  },
+  {
+    "name": "宇奈根氷川神社",
+    "area": "世田谷区",
+    "address": "東京都世田谷区宇奈根2-13-19",
+    "query": "東京都世田谷区宇奈根2-13-19",
+    "source": "GSI AddressSearch",
+    "lat": 35.621624,
+    "lon": 139.600937,
+    "matched_title": "東京都世田谷区宇奈根二丁目１３番１９号"
+  },
+  {
+    "name": "小田急線喜多見駅前 南口広場",
+    "area": "世田谷区",
+    "address": "東京都世田谷区喜多見8-21",
+    "query": "東京都世田谷区喜多見8-21",
+    "source": "GSI AddressSearch",
+    "lat": 35.636303,
+    "lon": 139.587372,
+    "matched_title": "東京都世田谷区喜多見八丁目２１番"
+  },
+  {
+    "name": "小田急線祖師ヶ谷大蔵駅前広場",
+    "area": "世田谷区",
+    "address": "東京都世田谷区祖師谷1-8-12",
+    "query": "東京都世田谷区祖師谷1-8-12",
+    "source": "GSI AddressSearch",
+    "lat": 35.643444,
+    "lon": 139.608826,
+    "matched_title": "東京都世田谷区祖師谷一丁目８番１２号"
+  },
+  {
+    "name": "希望ヶ丘団地 テニスコート",
+    "area": "世田谷区",
+    "address": "東京都世田谷区船橋7-8-1",
+    "query": "東京都世田谷区船橋7-8-1",
+    "source": "GSI AddressSearch",
+    "lat": 35.657269,
+    "lon": 139.620438,
+    "matched_title": "東京都世田谷区船橋七丁目８番１号"
+  },
+  {
+    "name": "廻沢稲荷神社",
+    "area": "世田谷区",
+    "address": "東京都世田谷区千歳台5-17-23",
+    "query": "東京都世田谷区千歳台5-17-23",
+    "source": "GSI AddressSearch",
+    "lat": 35.656544,
+    "lon": 139.611145,
+    "matched_title": "東京都世田谷区千歳台五丁目１７番２３号"
+  },
+  {
+    "name": "成城大学9号館前広場",
+    "area": "世田谷区",
+    "address": "東京都世田谷区成城6-1-20",
+    "query": "東京都世田谷区成城6-1-20",
+    "source": "GSI AddressSearch",
+    "lat": 35.642353,
+    "lon": 139.600174,
+    "matched_title": "東京都世田谷区成城六丁目１番２０号"
+  },
+  {
+    "name": "横根稲荷神社",
+    "area": "世田谷区",
+    "address": "東京都世田谷区大蔵1-6",
+    "query": "東京都世田谷区大蔵1-6",
+    "source": "GSI AddressSearch",
+    "lat": 35.633888,
+    "lon": 139.619736,
+    "matched_title": "東京都世田谷区大蔵一丁目６番"
+  },
+  {
+    "name": "池尻稲荷神社",
+    "area": "世田谷区",
+    "address": "東京都世田谷区池尻2-34-15",
+    "query": "東京都世田谷区池尻2-34-15",
+    "source": "GSI AddressSearch",
+    "lat": 35.648876,
+    "lon": 139.681564,
+    "matched_title": "東京都世田谷区池尻二丁目３４番１５号"
+  },
+  {
+    "name": "瀬田中学校",
+    "area": "世田谷区",
+    "address": "東京都世田谷区瀬田2-17-1",
+    "query": "東京都世田谷区瀬田2-17-1",
+    "source": "GSI AddressSearch",
+    "lat": 35.617512,
+    "lon": 139.633652,
+    "matched_title": "東京都世田谷区瀬田二丁目１７番１号"
+  },
+  {
+    "name": "玉川中町公園",
+    "area": "世田谷区",
+    "address": "東京都世田谷区中町5-19",
+    "query": "東京都世田谷区中町5-19",
+    "source": "GSI AddressSearch",
+    "lat": 35.61998,
+    "lon": 139.642227,
+    "matched_title": "東京都世田谷区中町五丁目１９番"
+  },
+  {
+    "name": "砧八丁目児童遊園",
+    "area": "世田谷区",
+    "address": "東京都世田谷区砧8-2-21",
+    "query": "東京都世田谷区砧8-2-21",
+    "source": "GSI AddressSearch",
+    "lat": 35.639313,
+    "lon": 139.607483,
+    "matched_title": "東京都世田谷区砧八丁目２番２１号"
+  },
+  {
+    "name": "砧小学校",
+    "area": "世田谷区",
+    "address": "東京都世田谷区喜多見6-9-1",
+    "query": "東京都世田谷区喜多見6-9-1",
+    "source": "GSI AddressSearch",
+    "lat": 35.630672,
+    "lon": 139.605118,
+    "matched_title": "東京都世田谷区喜多見六丁目９番１号"
+  },
+  {
+    "name": "祖師谷神明社",
+    "area": "世田谷区",
+    "address": "東京都世田谷区祖師谷5-1-7",
+    "query": "東京都世田谷区祖師谷5-1-7",
+    "source": "GSI AddressSearch",
+    "lat": 35.650131,
+    "lon": 139.607346,
+    "matched_title": "東京都世田谷区祖師谷五丁目１番７号"
+  },
+  {
+    "name": "野毛六所神社",
+    "area": "世田谷区",
+    "address": "東京都世田谷区野毛2-14-2",
+    "query": "東京都世田谷区野毛2-14-2",
+    "source": "GSI AddressSearch",
+    "lat": 35.602432,
+    "lon": 139.642471,
+    "matched_title": "東京都世田谷区野毛二丁目１４番２号"
+  },
+  {
+    "name": "鎌田天神社",
+    "area": "世田谷区",
+    "address": "東京都世田谷区鎌田4-11-19",
+    "query": "東京都世田谷区鎌田4-11-19",
+    "source": "GSI AddressSearch",
+    "lat": 35.622417,
+    "lon": 139.611099,
+    "matched_title": "東京都世田谷区鎌田四丁目１１番１９号"
+  },
+  {
+    "name": "長円寺",
+    "area": "世田谷区",
+    "address": "東京都世田谷区岡本1-20-1",
+    "query": "東京都世田谷区岡本1-20-1",
+    "source": "GSI AddressSearch",
+    "lat": 35.625576,
+    "lon": 139.621399,
+    "matched_title": "東京都世田谷区岡本一丁目２０番１号"
+  },
+  {
+    "name": "駒沢緑泉公園",
+    "area": "世田谷区",
+    "address": "東京都世田谷区駒沢3-19",
+    "query": "東京都世田谷区駒沢3-19",
+    "source": "GSI AddressSearch",
+    "lat": 35.631878,
+    "lon": 139.653351,
+    "matched_title": "東京都世田谷区駒沢三丁目１９番"
+  },
+  {
+    "name": "駒澤大学 駒沢キャンパス",
+    "area": "世田谷区",
+    "address": "東京都世田谷区駒沢1-23-1",
+    "query": "東京都世田谷区駒沢1-23-1",
+    "source": "GSI AddressSearch",
+    "lat": 35.628857,
+    "lon": 139.65863,
+    "matched_title": "東京都世田谷区駒沢一丁目２３番"
+  },
+  {
     "name": "代々木公園野外ステージ",
     "area": "渋谷区",
     "address": "東京都渋谷区神南2-3",
@@ -1068,6 +1488,36 @@
     "lat": 35.672184,
     "lon": 139.713928,
     "matched_title": "東京都渋谷区神宮前二丁目２番２２号"
+  },
+  {
+    "name": "新井薬師公園",
+    "area": "中野区",
+    "address": "東京都中野区新井5-4",
+    "query": "東京都中野区新井5-4",
+    "source": "GSI AddressSearch",
+    "lat": 35.714664,
+    "lon": 139.667068,
+    "matched_title": "東京都中野区新井五丁目４番"
+  },
+  {
+    "name": "ふるさと千川ひろば(千川小学校校庭跡地)",
+    "area": "豊島区",
+    "address": "東京都豊島区要町3-54-16",
+    "query": "東京都豊島区要町3-54-16",
+    "source": "GSI AddressSearch",
+    "lat": 35.740974,
+    "lon": 139.689026,
+    "matched_title": "東京都豊島区要町三丁目５４番１６号"
+  },
+  {
+    "name": "中池袋公園",
+    "area": "豊島区",
+    "address": "東京都豊島区東池袋1-16-1",
+    "query": "東京都豊島区東池袋1-16-1",
+    "source": "GSI AddressSearch",
+    "lat": 35.731369,
+    "lon": 139.715149,
+    "matched_title": "東京都豊島区東池袋一丁目１６番１号"
   },
   {
     "name": "飛鳥山公園",
@@ -1108,5 +1558,35 @@
     "lat": 35.761593,
     "lon": 139.814835,
     "matched_title": "東京都足立区西綾瀬二丁目１番１８号"
+  },
+  {
+    "name": "水元公園内はなしょうぶ園口",
+    "area": "葛飾区",
+    "address": "東京都葛飾区水元公園2",
+    "query": "東京都葛飾区水元公園2",
+    "source": "GSI AddressSearch",
+    "lat": 35.781769,
+    "lon": 139.871155,
+    "matched_title": "東京都葛飾区水元公園２番"
+  },
+  {
+    "name": "北葛西コミュニティ会館",
+    "area": "江戸川区",
+    "address": "東京都江戸川区北葛西2-11-39",
+    "query": "東京都江戸川区北葛西2-11-39",
+    "source": "GSI AddressSearch",
+    "lat": 35.672775,
+    "lon": 139.85672,
+    "matched_title": "東京都江戸川区北葛西二丁目１１番３９号"
+  },
+  {
+    "name": "鹿骨中学校",
+    "area": "江戸川区",
+    "address": "東京都江戸川区鹿骨2-12-1",
+    "query": "東京都江戸川区鹿骨2-12-1",
+    "source": "GSI AddressSearch",
+    "lat": 35.707256,
+    "lon": 139.892502,
+    "matched_title": "東京都江戸川区鹿骨二丁目１２番１号"
   }
 ]
