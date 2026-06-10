@@ -41,6 +41,15 @@ MONTH_RE = re.compile(r"(\d{1,2})月")
 # 過去メモ中の「8/16」「8/16-17」のような月/日表記（「2025/8/16」の年部分は拾わない）
 MONTH_DAY_RE = re.compile(r"(?<![\d/])(\d{1,2})/(\d{1,2})(?!\d*/)")
 
+PUBLIC_TEXT_REPLACEMENTS = {
+    "苝浦港南": "芝浦港南",
+    "海岹": "海岸",
+    "隔田公園": "隅田公園",
+    "児童遷園": "児童遊園",
+    "大瀬橋線": "大江戸線",
+    "辰巯": "辰巳",
+}
+
 
 def _notion_request(method, path, payload=None):
     data = json.dumps(payload).encode("utf-8") if payload is not None else None
@@ -90,6 +99,14 @@ def _prop(props, name):
     if t == "relation":
         return [item.get("id") for item in p.get("relation", [])]
     return None
+
+
+def clean_public_text(value):
+    if not isinstance(value, str):
+        return value
+    for before, after in PUBLIC_TEXT_REPLACEMENTS.items():
+        value = value.replace(before, after)
+    return value
 
 
 def normalize_ward(region):
@@ -165,12 +182,12 @@ def build_public_venues():
             no_month.append(name)
         scale = _prop(props, "規模")
         entry = {
-            "name": name,
+            "name": clean_public_text(name),
             "area": ward,
             "months": months,
             "scale": scale if scale in ("大", "中", "小") else None,
-            "access": _prop(props, "アクセス"),
-            "address": _prop(props, "住所"),
+            "access": clean_public_text(_prop(props, "アクセス")),
+            "address": clean_public_text(_prop(props, "住所")),
         }
         included.append(entry)
         dup_check.setdefault(name, 0)
