@@ -38,7 +38,7 @@
   {
     "venue": "すみだ公園（隅田公園・墨田区側）",
     "region": "墨田区",
-    "month": null,
+    "month": "9月",
     "scale": "大",
     "access": "都営浅草線「本所吾妻橋駅」または東武スカイツリーライン「とうきょうスカイツリー駅」から徒歩",
     "in_tsukiji_30min": true,
@@ -86,7 +86,7 @@
   {
     "venue": "三田松坂児童遊園",
     "region": "港区",
-    "month": null,
+    "month": "3月",
     "scale": "小",
     "access": "都営三田線・東京メトロ南北線「白金高輪駅」から徒歩3分",
     "in_tsukiji_30min": true,
@@ -98,7 +98,7 @@
   {
     "venue": "上神明小学校",
     "region": "品川区",
-    "month": null,
+    "month": "11月",
     "scale": "中",
     "access": "東急大井町線・都営浅草線「中延駅」、またはJR横須賀線「西大井駅」",
     "in_tsukiji_30min": true,
@@ -122,7 +122,7 @@
   {
     "venue": "中之郷公園（中之郷児童遊園）",
     "region": "墨田区",
-    "month": null,
+    "month": "9月",
     "scale": "小",
     "access": "東武スカイツリーライン・都営浅草線「押上駅（スカイツリー前）」から徒歩約2分",
     "in_tsukiji_30min": true,
@@ -170,7 +170,7 @@
   {
     "venue": "京陽小学校",
     "region": "品川区",
-    "month": null,
+    "month": "10月",
     "scale": "中",
     "access": "東急池上線「戸越銀座駅」徒歩3分、都営浅草線「戸越駅」徒歩6分",
     "in_tsukiji_30min": true,
@@ -194,7 +194,7 @@
   {
     "venue": "八潮公園",
     "region": "品川区",
-    "month": null,
+    "month": "9月",
     "scale": "中",
     "access": "りんかい線「品川シーサイド駅」から徒歩約16分、または「八潮公園前」バス停から徒歩2分",
     "in_tsukiji_30min": true,
@@ -218,7 +218,7 @@
   {
     "venue": "区立第二辰巳小学校",
     "region": "江東区",
-    "month": null,
+    "month": "5月",
     "scale": "小",
     "access": "東京メトロ有楽町線「辰巳駅」1番出口から徒歩約5分",
     "in_tsukiji_30min": true,
@@ -254,7 +254,7 @@
   {
     "venue": "城南小学校",
     "region": "品川区",
-    "month": null,
+    "month": "7月",
     "scale": "小",
     "access": "京急本線「青物横丁駅」徒歩圈内（隔接する天妙国寺と同一エリア）",
     "in_tsukiji_30min": true,
@@ -266,7 +266,7 @@
   {
     "venue": "埠頭公園（港区芝浦港南）",
     "region": "港区",
-    "month": null,
+    "month": "8月",
     "scale": "小",
     "access": "JR・都営大江戸線「田町駅」東口から徒歩約12分（1km強）、海岸通りからは徒歩3分",
     "in_tsukiji_30min": true,
@@ -314,7 +314,7 @@
   {
     "venue": "大井蔵王権現神社",
     "region": "品川区",
-    "month": null,
+    "month": "4月",
     "scale": "小",
     "access": "JR京浜東北線・りんかい線・東急大井町線 大井町駅から徒歩5分",
     "in_tsukiji_30min": true,
@@ -326,7 +326,7 @@
   {
     "venue": "大横川親水公園",
     "region": "墨田区",
-    "month": null,
+    "month": "9月",
     "scale": "大",
     "access": "南側(長崎橋)はJR総武線・半蔵門線錦糸町駅から徒歩5分、北側(業平橋)は半蔵門線・京成押上線押上駅・東武スカイツリーラインとうきょうスカイツリー駅・都営浅草線本所吾妻橋駅からいずれも徒歩5分程度",
     "in_tsukiji_30min": true,
@@ -350,7 +350,7 @@
   {
     "venue": "宮前小学校",
     "region": "品川区",
-    "month": null,
+    "month": "6月",
     "scale": "中",
     "access": "東急大井町線「戸越公園駅」徒歩5分",
     "in_tsukiji_30min": true,
@@ -362,7 +362,7 @@
   {
     "venue": "小山台公園",
     "region": "品川区",
-    "month": null,
+    "month": "9月",
     "scale": "小",
     "access": "東急目黒線「武蔵小山駅」西口から徒歩約10分",
     "in_tsukiji_30min": true,
@@ -374,7 +374,7 @@
   {
     "venue": "小山台小学校",
     "region": "品川区",
-    "month": null,
+    "month": "7月",
     "scale": "中",
     "access": "東急目黒線 武蔵小山駅から徒歩4〜5分",
     "in_tsukiji_30min": true,
@@ -386,7 +386,7 @@
   {
     "venue": "小梅児童遊園",
     "region": "墨田区",
-    "month": null,
+    "month": "9月",
     "scale": "小",
     "access": "東武スカイツリーライン とうきょうスカイツリー駅から徒歩約4分。都営浅草線 本所吾妻橋駅から徒歩約5分",
     "in_tsukiji_30min": true,
@@ -410,7 +410,7 @@
   {
     "venue": "平塚中央公園",
     "region": "品川区",
-    "month": null,
+    "month": "9月",
     "scale": "小",
     "access": "東急池上線 戸越銀座駅から徒歩約6分。都営浅草線 戸越駅から徒歩約8分",
     "in_tsukiji_30min": true,
@@ -506,7 +506,7 @@
   {
     "venue": "日本橋社会教育会館",
     "region": "中央区",
-    "month": null,
+    "month": "2月",
     "scale": "中",
     "access": "東京メトロ日比谷線・都営浅草線「人形町駅」A2/A6番出口から徒歩4分、東京メトロ半蔵門線「水天宮前駅」8番出口から徒歩5分",
     "in_tsukiji_30min": true,
@@ -530,7 +530,7 @@
   {
     "venue": "日進公園",
     "region": "墨田区",
-    "month": null,
+    "month": "9月",
     "scale": "小",
     "access": "都営大江戸線「両国駅」から徒歩約10分",
     "in_tsukiji_30min": true,
@@ -542,7 +542,7 @@
   {
     "venue": "旧杜松小学校",
     "region": "品川区",
-    "month": null,
+    "month": "8月",
     "scale": "中",
     "access": "東急大井町線 戸越公園駅から徒歩約5分。都営浅草線 中延駅から徒歩約8分",
     "in_tsukiji_30min": true,
@@ -566,7 +566,7 @@
   {
     "venue": "木場二丁目公園",
     "region": "江東区",
-    "month": null,
+    "month": "7月",
     "scale": "中",
     "access": "東京メトロ東西線 木場駅から徒歩4分",
     "in_tsukiji_30min": true,
@@ -578,7 +578,7 @@
   {
     "venue": "本四三ツ目児童遊園（三つ目児童公園）",
     "region": "墨田区",
-    "month": null,
+    "month": "9月",
     "scale": "小",
     "access": "都営大江戸線・半蔵門線「錦糸町駅」、またはJR総武線「錦糸町駅」から徒歩圏内",
     "in_tsukiji_30min": true,
@@ -590,7 +590,7 @@
   {
     "venue": "東品川海上公園",
     "region": "品川区",
-    "month": null,
+    "month": "4月",
     "scale": "中",
     "access": "りんかい線・東京モノレール 天王洲アイル駅から徒歩約5分。京急本線 新馬場駅から徒歩約15分",
     "in_tsukiji_30min": true,
@@ -626,7 +626,7 @@
   {
     "venue": "桜田公園",
     "region": "港区",
-    "month": null,
+    "month": "7月",
     "scale": "小",
     "access": "JR・地下鉄各線 新橋駅から徒歩圏内",
     "in_tsukiji_30min": true,
@@ -638,7 +638,7 @@
   {
     "venue": "森下公園",
     "region": "江東区",
-    "month": null,
+    "month": "7月",
     "scale": "中",
     "access": "都営新宿線 森下駅から徒歩1分",
     "in_tsukiji_30min": true,
@@ -650,7 +650,7 @@
   {
     "venue": "横川小学校",
     "region": "墨田区",
-    "month": null,
+    "month": "8月",
     "scale": "中",
     "access": "都営浅草線 本所吾妻橋駅から徒歩約8分。東武スカイツリーライン とうきょうスカイツリー駅から徒歩約10分",
     "in_tsukiji_30min": true,
@@ -674,7 +674,7 @@
   {
     "venue": "江東天祖神社（亀戸天祖神社）",
     "region": "江東区",
-    "month": null,
+    "month": "9月",
     "scale": "中",
     "access": "JR総武線・東武亀戸線「亀戸駅」北口から徒歩約17分、または都営浅草線「京成押上駅」から徒歩約10分",
     "in_tsukiji_30min": true,
@@ -722,7 +722,7 @@
   {
     "venue": "田原小学校",
     "region": "台東区",
-    "month": null,
+    "month": "9月",
     "scale": "中",
     "access": "東京メトロ銀座線 田原町駅から徒歩約3分。都営浅草線 浅草駅から徒歩約8分",
     "in_tsukiji_30min": true,
@@ -734,7 +734,7 @@
   {
     "venue": "白金児童遊園",
     "region": "港区",
-    "month": null,
+    "month": "7月",
     "scale": "中",
     "access": "都営三田線・東京メトロ南北線 白金高輪駅から徒歩圏内",
     "in_tsukiji_30min": true,
@@ -746,7 +746,7 @@
   {
     "venue": "白金台どんぐり児童遊園",
     "region": "港区",
-    "month": null,
+    "month": "9月",
     "scale": "小",
     "access": "東京メトロ南北線・都営三田線「白金台駅」1番出口から徒歩7分",
     "in_tsukiji_30min": true,
@@ -782,7 +782,7 @@
   {
     "venue": "第一日野小学校",
     "region": "品川区",
-    "month": null,
+    "month": "7月",
     "scale": "中",
     "access": "東急目黒線 不動前駅から徒歩約7分。JR五反田駅から徒歩約15分",
     "in_tsukiji_30min": true,
@@ -794,7 +794,7 @@
   {
     "venue": "第二延山小学校",
     "region": "品川区",
-    "month": null,
+    "month": "5月",
     "scale": "中",
     "access": "東急池上線 荏原中延駅から徒歩約6分。東急大井町線・池上線 旗の台駅から徒歩約8分",
     "in_tsukiji_30min": true,
@@ -806,7 +806,7 @@
   {
     "venue": "第四日野小学校",
     "region": "品川区",
-    "month": null,
+    "month": "7月",
     "scale": "中",
     "access": "東急目黒線 不動前駅から徒歩約4分。JR目黒駅から徒歩約15分",
     "in_tsukiji_30min": true,
@@ -842,7 +842,7 @@
   {
     "venue": "網代公園",
     "region": "港区",
-    "month": null,
+    "month": "9月",
     "scale": "小",
     "access": "東京メトロ南北線・都営大江戸線 麻布十番駅から徒歩約3分",
     "in_tsukiji_30min": true,
@@ -854,7 +854,7 @@
   {
     "venue": "緑町公園",
     "region": "墨田区",
-    "month": null,
+    "month": "9月",
     "scale": "中",
     "access": "JR総武線・都営大江戸線 両国駅から徒歩圏内（すみだ北斎美術館併設）",
     "in_tsukiji_30min": true,
@@ -866,7 +866,7 @@
   {
     "venue": "臨海小学校",
     "region": "江東区",
-    "month": null,
+    "month": "7月",
     "scale": "中",
     "access": "東京メトロ東西線・都営大江戸線「門前仲町駅」から徒歩約3分",
     "in_tsukiji_30min": true,
@@ -890,7 +890,7 @@
   {
     "venue": "芝新堀町児童遊園",
     "region": "港区",
-    "month": null,
+    "month": "9月",
     "scale": "小",
     "access": "都営三田線「芝公園駅」から徒歩約5分、都営浅草線・大江戸線「三田駅」「大門駅」からも徒歩約9分",
     "in_tsukiji_30min": true,
@@ -902,7 +902,7 @@
   {
     "venue": "若宮公園",
     "region": "墨田区",
-    "month": null,
+    "month": "9月",
     "scale": "中",
     "access": "都営大江戸線「両国駅」・都営浅草線「本所吾妻橋駅」から徒歩圏内",
     "in_tsukiji_30min": true,
@@ -914,7 +914,7 @@
   {
     "venue": "西久保八幡神社",
     "region": "港区",
-    "month": null,
+    "month": "8月",
     "scale": "中",
     "access": "東京メトロ日比谷線「神谷町駅」から徒歩約3分",
     "in_tsukiji_30min": true,
@@ -974,7 +974,7 @@
   {
     "venue": "錦糸公園",
     "region": "墨田区",
-    "month": null,
+    "month": "5月",
     "scale": "大",
     "access": "JR総武線「錦糸町駅」北口から徒歩約3分、東京メトロ半蔵門線「錦糸町駅」4番出口すぐ",
     "in_tsukiji_30min": true,
@@ -1022,7 +1022,7 @@
   {
     "venue": "青山熊野神社",
     "region": "渋谷区",
-    "month": null,
+    "month": "9月",
     "scale": "中",
     "access": "東京メトロ銀座線「外苑前駅」出口3から徒歩約5分",
     "in_tsukiji_30min": true,
@@ -1034,7 +1034,7 @@
   {
     "venue": "青葉公園（港区立）",
     "region": "港区",
-    "month": null,
+    "month": "9月",
     "scale": "中",
     "access": "東京メトロ銀座線「青山一丁目駅」から徒歩3分",
     "in_tsukiji_30min": true,
@@ -1058,7 +1058,7 @@
   {
     "venue": "飛木稲荷神社",
     "region": "墨田区",
-    "month": null,
+    "month": "9月",
     "scale": "中",
     "access": "東武亀戸線・スカイツリーライン「曳舟駅」から徒歩約4分、都営浅草線・東京メトロ半蔵門線「押上駅」から徒歩約4分",
     "in_tsukiji_30min": true,
@@ -1586,7 +1586,7 @@
   {
     "venue": "小網神社",
     "region": "中央区",
-    "month": null,
+    "month": "5月",
     "scale": "小",
     "access": "東京メトロ日比谷線・都営浅草線「人形町駅」徒歩5分",
     "in_tsukiji_30min": false,

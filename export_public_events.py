@@ -146,12 +146,16 @@ def build_public_events():
         for vid in venue_ids:
             v = venues[vid]
             covered.add(vid)
+            public_name = clean_public_text(name)
+            event_months = sorted(months)
+            if not event_months and "名称推定" not in public_name:
+                event_months = v["memo_months"]
             events.append({
-                "name": clean_public_text(name),
+                "name": public_name,
                 "name_confirmed": True,
                 "venue": v["venue"],
                 "area": v["area"],
-                "months": sorted(months) or v["memo_months"],
+                "months": event_months,
                 "scale": v["scale"],
                 "access": v["access"],
                 "address": v["address"],
