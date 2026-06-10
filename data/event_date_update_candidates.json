@@ -1,0 +1,87 @@
+{
+  "candidates": [
+    {
+      "event_id": "37b8be04-e762-81c2-8885-d58cfb266716",
+      "event_name": "戸越宮前盆踊り",
+      "venues": [
+        "宮前小学校"
+      ],
+      "current_date": null,
+      "current_date_end": null,
+      "new_date": "2026-06-07",
+      "new_date_end": null,
+      "score": 14,
+      "reasons": [
+        "event_name_exact",
+        "extracted_event_name"
+      ],
+      "source": "x",
+      "account": "@mimi33yuyu26na",
+      "spoken_at": "2026-06-07T10:34:52+00:00",
+      "url": "https://x.com/mimi33yuyu26na/status/2063570381945045187",
+      "text": "6/7(日)\n今日も晴盆さん❤️\n戸越宮前盆踊りへ♪\n雨で短縮になってしまったものの3時間程しっかり踊ってきました✨\n初の戸越音頭は予習でばっちり👌🏻\n\n晴盆さんと🦊ちゃんお揃いで可愛かったので並んでパシャり❤️ https://t.co/EiZ6ScE1OM",
+      "raw_date": "6/7",
+      "extracted_event_names": [
+        "戸越宮前盆踊り",
+        "初の戸越音頭"
+      ]
+    },
+    {
+      "event_id": "37b8be04-e762-81c2-8885-d58cfb266716",
+      "event_name": "戸越宮前盆踊り",
+      "venues": [
+        "宮前小学校"
+      ],
+      "current_date": null,
+      "current_date_end": null,
+      "new_date": "2026-07-08",
+      "new_date_end": null,
+      "score": 14,
+      "reasons": [
+        "event_name_exact",
+        "extracted_event_name"
+      ],
+      "source": "x",
+      "account": "@yasuharu_artist",
+      "spoken_at": "2026-06-03T11:37:07+00:00",
+      "url": "https://x.com/yasuharu_artist/status/2062136493968347363",
+      "text": "「オリジナル曲でhappyをお届け♬ 」 https://t.co/bocNrwjThb #ふわっち\n\nライヴインフォ\n♬ 6/7(日)戸越宮前盆踊り14:40~/\n品川区戸越銀座近く　\n\n♬7/8(水) 池袋FIELD　\n\n♬ 過去ライヴ YouTubeにて公開中❗️",
+      "raw_date": "7/8",
+      "extracted_event_names": [
+        "戸越宮前盆踊り"
+      ]
+    },
+    {
+      "event_id": "3788be04-e762-8171-beaf-fbf4a04104bf",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venues": [
+        "飛鳥山公園"
+      ],
+      "current_date": null,
+      "current_date_end": null,
+      "new_date": "2026-05-24",
+      "new_date_end": null,
+      "score": 10,
+      "reasons": [
+        "extracted_event_name",
+        "venue_exact"
+      ],
+      "source": "youtube",
+      "account": "@wadaikoCH",
+      "spoken_at": "2026-06-09T10:30:18+00:00",
+      "url": "https://www.youtube.com/watch?v=JX5otrjUER4",
+      "text": "2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://youtu.be/Nd1ADi6TxuM\n10ふるさと北区　https://youtu.be/UBGvAcTE6_E\n11佐渡の恋唄　https://youtu.be/PL7Fgs0ifSU\n12恋をするなら　https://youtu.be/NYWWFBYXeCE\n13ゆかた",
+      "raw_date": "2026年5月24日",
+      "extracted_event_names": [
+        "飛鳥山公園盆踊り",
+        "東京音頭",
+        "荒川音頭",
+        "板橋音頭",
+        "たいとう音頭",
+        "文京音頭",
+        "飛鳥山音頭",
+        "東京北都音頭"
+      ]
+    }
+  ]
+}

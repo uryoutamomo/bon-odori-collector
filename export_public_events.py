@@ -82,6 +82,30 @@ def jun_labels(text):
     return out
 
 
+def jun_from_day(day):
+    if day <= 10:
+        return "上旬"
+    if day <= 20:
+        return "中旬"
+    return "下旬"
+
+
+def jun_labels_from_hints(hints):
+    """具体日ヒントから {月: 上旬/中旬/下旬} を作る。"""
+    out = {}
+    for m, d in hints:
+        out.setdefault(m, jun_from_day(d))
+    return out
+
+
+def merge_jun_labels(*label_dicts):
+    merged = {}
+    for labels in label_dicts:
+        for m, label in labels.items():
+            merged.setdefault(m, label)
+    return merged
+
+
 def merge_hints(*hint_dicts, months=()):
     """複数ソースのヒントを優先度で統合し、months の不足分は15日で補う。"""
     merged = {}
@@ -142,7 +166,7 @@ def build_public_events():
         hints = merge_hints(
             hints_from_text(month_text), hints_from_text(detail_text),
             months=months)
-        jun = jun_labels(month_text)
+        jun = merge_jun_labels(jun_labels(month_text), jun_labels_from_hints(hints))
         for vid in venue_ids:
             v = venues[vid]
             covered.add(vid)
@@ -190,7 +214,12 @@ def build_public_events():
             "date_end": None,
             "status": None,
             "hints": merge_hints(v["memo_hints"], months=v["memo_months"]),
-            "jun": {str(m): j for m, j in v["memo_jun"].items()},
+            "jun": {
+                str(m): j for m, j in merge_jun_labels(
+                    v["memo_jun"],
+                    jun_labels_from_hints(merge_hints(v["memo_hints"], months=v["memo_months"])),
+                ).items()
+            },
             "description": v["intro"],
             "detail": None,
         })
