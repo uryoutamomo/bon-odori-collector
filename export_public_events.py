@@ -98,6 +98,27 @@ def jun_labels_from_hints(hints):
     return out
 
 
+def jun_labels_from_date_range(start, end=None):
+    if not start:
+        return {}
+    labels = {}
+    labels[int(start[5:7])] = jun_from_day(int(start[8:10]))
+    if end:
+        labels[int(end[5:7])] = jun_from_day(int(end[8:10]))
+    return labels
+
+
+def hints_from_date_range(start, end=None):
+    if not start:
+        return []
+    hints = [[int(start[5:7]), int(start[8:10])]]
+    if end:
+        end_hint = [int(end[5:7]), int(end[8:10])]
+        if end_hint not in hints:
+            hints.append(end_hint)
+    return hints
+
+
 def merge_jun_labels(*label_dicts):
     merged = {}
     for labels in label_dicts:
@@ -163,10 +184,17 @@ def build_public_events():
         if date:
             months.add(int(date[5:7]))
         status = _prop(props, "状態")
-        hints = merge_hints(
-            hints_from_text(month_text), hints_from_text(detail_text),
-            months=months)
-        jun = merge_jun_labels(jun_labels(month_text), jun_labels_from_hints(hints))
+        if date:
+            hints = hints_from_date_range(date, date_end)
+            jun = merge_jun_labels(
+                jun_labels(month_text),
+                jun_labels_from_date_range(date, date_end),
+            )
+        else:
+            hints = merge_hints(
+                hints_from_text(month_text), hints_from_text(detail_text),
+                months=months)
+            jun = merge_jun_labels(jun_labels(month_text), jun_labels_from_hints(hints))
         for vid in venue_ids:
             v = venues[vid]
             covered.add(vid)

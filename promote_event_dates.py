@@ -10,6 +10,7 @@ from notion_config import EVENT_DATA_SOURCE_ID, VENUE_DATA_SOURCE_ID
 
 
 VOICES = Path("data/voices.json")
+BLOG_ROWS = Path("data/blog_venue_rows.json")
 OUT = Path("data/event_date_update_candidates.json")
 TODAY = date(2026, 6, 10)
 TARGET_YEAR = 2026
@@ -30,7 +31,7 @@ SLASH_MD_RE = re.compile(
 SAME_MONTH_RANGE_RE = re.compile(
     r"(?<![\d:/])(?:(20\d{2})[/-])?(\d{1,2})[/-](\d{1,2})(?![\d:/])"
     r"[^0-9]{0,12}(?:〜|~|-|ー|－|–|—|から|・|、|,)[^0-9]{0,6}"
-    r"(\d{1,2})(?:日|[月火水木金土日祝])"
+    r"(\d{1,2})(?=日|[月火水木金土日祝]|\D|$)"
 )
 EVENT_RE = re.compile(
     r"([一-龥ぁ-んァ-ヶーA-Za-z0-9・☆！! ]{2,48}"
@@ -46,6 +47,8 @@ def norm(text):
     text = re.sub(r"\s+", "", text or "")
     text = re.sub(r"第?\d+回", "", text)
     text = text.replace("（名称推定）", "")
+    text = text.replace("集い", "つどい")
+    text = text.replace("踊り", "おどり")
     return text.casefold()
 
 
@@ -113,6 +116,11 @@ def parse_dates(text, spoken_year=None, target_year=TARGET_YEAR):
     return list(unique.values())
 
 
+def year_hint(text):
+    match = re.search(r"(20\d{2})", text or "")
+    return int(match.group(1)) if match else None
+
+
 def extract_event_names(text):
     names = []
     for match in EVENT_RE.finditer(text or ""):
@@ -124,7 +132,7 @@ def extract_event_names(text):
     return names
 
 
-def score_match(event, voice_text, extracted_names):
+def score_match(event, voice_text, extracted_names, source=None):
     event_name = event["name"]
     venue_names = event["venues"]
     text_norm = norm(voice_text)
@@ -133,12 +141,15 @@ def score_match(event, voice_text, extracted_names):
     reasons = []
     generic_name = name_norm in {"盆踊り大会", "盆おどり大会", "納涼大会", "夏祭り", "まつり", "祭り"}
     venue_exact = any(norm(venue) and norm(venue) in text_norm for venue in venue_names)
-    if name_norm and name_norm in text_norm and not generic_name:
+    name_matched = bool(name_norm and name_norm in text_norm and not generic_name)
+    extracted_matched = False
+    if name_matched:
         score += 8
         reasons.append("event_name_exact")
     for extracted in extracted_names:
         ex_norm = norm(extracted)
         if ex_norm and (ex_norm in name_norm or name_norm in ex_norm):
+            extracted_matched = True
             score += 6
             reasons.append("extracted_event_name")
             break
@@ -147,13 +158,49 @@ def score_match(event, voice_text, extracted_names):
         reasons.append("venue_exact")
     elif generic_name:
         return 0, ["generic_name_without_venue"]
+    if source == "blog_row" and not (name_matched or extracted_matched):
+        score -= 6
+        reasons.append("structured_without_event_name:-6")
     if any(word in voice_text for word in SCHEDULE_WORDS):
         score += 2
         reasons.append("schedule_word")
+    if source == "blog_row" and venue_exact:
+        score += 4
+        reasons.append("structured_blog_venue")
     if any(word in voice_text for word in NEGATIVE_WORDS):
         score -= 4
         reasons.append("negative_word")
     return score, reasons
+
+
+def load_source_items():
+    items = []
+    if VOICES.exists():
+        for voice in load_json(VOICES):
+            item = dict(voice)
+            item.setdefault("source", "voice")
+            items.append(item)
+    if BLOG_ROWS.exists():
+        for row in load_json(BLOG_ROWS):
+            text = "\n".join(
+                part for part in (
+                    row.get("date_text") or "",
+                    row.get("venue") or "",
+                    row.get("description") or "",
+                ) if part
+            )
+            items.append({
+                "source": "blog_row",
+                "account": "東京盆踊りマップ",
+                "name": "東京盆踊りマップ",
+                "text": text,
+                "date_hint_text": row.get("date_text") or "",
+                "url": row.get("detail_url") or row.get("source_url") or "",
+                "date": "",
+                "row_venue": row.get("venue") or "",
+                "region_hint": row.get("region_hint") or "",
+            })
+    return items
 
 
 def fetch_events(api):
@@ -185,18 +232,19 @@ def build_candidates(events, voices, target_year=TARGET_YEAR):
         text = voice.get("text") or ""
         if not any(word in text for word in EVENT_WORDS):
             continue
-        spoken_year = None
+        date_text = voice.get("date_hint_text") or text
+        spoken_year = year_hint(date_text) or year_hint(text)
         if voice.get("date"):
             try:
-                spoken_year = int(voice["date"][:4])
+                spoken_year = spoken_year or int(voice["date"][:4])
             except ValueError:
-                spoken_year = None
-        dates = parse_dates(text, spoken_year=spoken_year, target_year=target_year)
+                pass
+        dates = parse_dates(date_text, spoken_year=spoken_year, target_year=target_year)
         if not dates:
             continue
         names = extract_event_names(text)
         for event in events:
-            score, reasons = score_match(event, text, names)
+            score, reasons = score_match(event, text, names, source=voice.get("source"))
             if score < 10:
                 continue
             for date_info in dates:
@@ -204,9 +252,18 @@ def build_candidates(events, voices, target_year=TARGET_YEAR):
                 current_end = event.get("date", {}).get("end")
                 start = date_info["start"]
                 end = date_info.get("end")
-                if current_start and current_start <= start <= (current_end or current_start):
+                same_date = current_start == start and (current_end or None) == (end or None)
+                refresh_only = (
+                    same_date
+                    and voice.get("source") == "blog_row"
+                    and (
+                        "X投稿から確定日として反映" in (event.get("detail") or "")
+                        or (event.get("detail") or "").startswith("更新前開催日:")
+                    )
+                )
+                if same_date and not refresh_only:
                     continue
-                if current_start == start and (current_end or None) == (end or None):
+                if current_start and current_start <= start <= (current_end or current_start) and not refresh_only:
                     continue
                 candidates.append({
                     "event_id": event["id"],
@@ -225,6 +282,7 @@ def build_candidates(events, voices, target_year=TARGET_YEAR):
                     "text": text,
                     "raw_date": date_info.get("raw"),
                     "extracted_event_names": names,
+                    "refresh_only": refresh_only,
                 })
     best = {}
     for item in candidates:
@@ -248,9 +306,13 @@ def apply_candidates(api, candidates, min_score):
         if item["score"] < min_score:
             continue
         detail_lines = []
-        if item.get("current_date"):
+        if item.get("current_date") and not item.get("refresh_only"):
             detail_lines.append(f"更新前開催日: {item['current_date']}")
-        detail_lines.append(f"{item['new_date']}{'〜' + item['new_date_end'] if item.get('new_date_end') else ''} 開催予定。X投稿から確定日として反映。")
+        source_label = "東京盆踊りマップ" if item.get("source") == "blog_row" else "X投稿"
+        detail_lines.append(
+            f"{item['new_date']}{'〜' + item['new_date_end'] if item.get('new_date_end') else ''} "
+            f"開催予定。{source_label}から確定日として反映。"
+        )
         if item.get("text"):
             detail_lines.append(item["text"])
         props = {
@@ -275,7 +337,7 @@ def main():
 
     api = NotionApi(os.environ.get("NOTION_API_TOKEN"))
     events = fetch_events(api)
-    voices = load_json(VOICES) if VOICES.exists() else []
+    voices = load_source_items()
     candidates = build_candidates(events, voices, target_year=args.target_year)
     OUT.write_text(json.dumps({"candidates": candidates}, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"candidates={len(candidates)} -> {OUT}")
