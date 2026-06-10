@@ -2,7 +2,7 @@
   {
     "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
     "region": "台東区",
-    "month": null,
+    "month": "8月",
     "scale": "中",
     "access": "JR御徒町駅南口すぐ／日比谷線 仲御徒町駅",
     "in_tsukiji_30min": true,
@@ -14,7 +14,7 @@
   {
     "venue": "さかもと朝顔広場（旧坂本小学校跡地）",
     "region": "台東区",
-    "month": null,
+    "month": "8月",
     "scale": "小",
     "access": "入谷駅・鶯谷駅から徒歩圏内",
     "in_tsukiji_30min": true,
@@ -26,7 +26,7 @@
   {
     "venue": "しながわ中央公園",
     "region": "品川区",
-    "month": null,
+    "month": "5月",
     "scale": "大",
     "access": "東急大井町線 下神明駅から徒歩1分／JR・東急大井町線・りんかい線 大井町駅から徒歩10分",
     "in_tsukiji_30min": true,
@@ -50,7 +50,7 @@
   {
     "venue": "すみだ産業会館サンライズホール",
     "region": "墨田区",
-    "month": null,
+    "month": "1月",
     "scale": "小",
     "access": "錦糸町駅から徒歩すぐ",
     "in_tsukiji_30min": true,
@@ -62,7 +62,7 @@
   {
     "venue": "アーク・カラヤン広場（アークヒルズ）",
     "region": "港区",
-    "month": null,
+    "month": "9月",
     "scale": "中",
     "access": "南北線 六本木一丁目駅直結／銀座線 溜池山王駅 徒歩5分",
     "in_tsukiji_30min": true,
@@ -74,7 +74,7 @@
   {
     "venue": "ハマサイト前広場・汐留ビルディング外構",
     "region": "港区",
-    "month": null,
+    "month": "8月",
     "scale": "小",
     "access": "浜松町駅・大門駅から徒歩圏内",
     "in_tsukiji_30min": true,
@@ -110,7 +110,7 @@
   {
     "venue": "上野恩賜公園",
     "region": "台東区",
-    "month": null,
+    "month": "6月,7月,8月,10月",
     "scale": "大",
     "access": "JR「上野駅」公園口・京成「京成上野駅」・東京メトロ「上野駅」から徒歩すぐ",
     "in_tsukiji_30min": true,
@@ -134,7 +134,7 @@
   {
     "venue": "中和小学校",
     "region": "墨田区",
-    "month": null,
+    "month": "9月",
     "scale": "小",
     "access": "都営新宿線「菊川駅」から徒歩約5分（森下駅・清澄白河駅も比較的近い）",
     "in_tsukiji_30min": true,
@@ -146,7 +146,7 @@
   {
     "venue": "五反野コミュニティ公園",
     "region": "足立区",
-    "month": null,
+    "month": "6月",
     "scale": "小",
     "access": null,
     "in_tsukiji_30min": true,
@@ -158,7 +158,7 @@
   {
     "venue": "京橋エドグラン 京橋中央ひろば",
     "region": "中央区",
-    "month": null,
+    "month": "8月",
     "scale": "中",
     "access": "東京メトロ銀座線 京橋駅直結",
     "in_tsukiji_30min": true,
@@ -182,7 +182,7 @@
   {
     "venue": "伸成町会会館前 路上",
     "region": "墨田区",
-    "month": null,
+    "month": "9月",
     "scale": "小",
     "access": "押上駅から徒歩圏内",
     "in_tsukiji_30min": true,
@@ -206,7 +206,7 @@
   {
     "venue": "六本木天祖神社",
     "region": "港区",
-    "month": null,
+    "month": "9月",
     "scale": "不明",
     "access": "東京メトロ千代田線「乃木坂駅」徒歩5分・日比谷線「六本木駅」徒歩5分・都営大江戸線「六本木駅」徒歩3分",
     "in_tsukiji_30min": true,
@@ -230,7 +230,7 @@
   {
     "venue": "向島1丁目旧町会会館前",
     "region": "墨田区",
-    "month": null,
+    "month": "9月",
     "scale": "小",
     "access": "とうきょうスカイツリー駅・本所吾妻橋駅から徒歩圏内",
     "in_tsukiji_30min": true,
@@ -242,7 +242,7 @@
   {
     "venue": "向島百花会館",
     "region": "墨田区",
-    "month": null,
+    "month": "3月",
     "scale": "小",
     "access": "東向島駅・曳舟駅から徒歩圏内",
     "in_tsukiji_30min": true,
@@ -278,7 +278,7 @@
   {
     "venue": "報恩寺境内",
     "region": "墨田区",
-    "month": null,
+    "month": "9月",
     "scale": "小",
     "access": "錦糸町駅から徒歩圏内",
     "in_tsukiji_30min": true,
@@ -290,7 +290,7 @@
   {
     "venue": "増上寺（大殿前広場）",
     "region": "港区",
-    "month": null,
+    "month": "7月",
     "scale": "大",
     "access": "都営三田線 御成門駅・芝公園駅 徒歩3分／JR浜松町駅 徒歩10分",
     "in_tsukiji_30min": true,
@@ -302,7 +302,7 @@
   {
     "venue": "大井町駅前中央通り",
     "region": "品川区",
-    "month": null,
+    "month": "8月",
     "scale": "小",
     "access": "大井町駅から徒歩すぐ",
     "in_tsukiji_30min": true,
@@ -338,7 +338,7 @@
   {
     "venue": "天妙国寺",
     "region": "品川区",
-    "month": null,
+    "month": "7月",
     "scale": "中",
     "access": "京急本線 青物横丁駅から徒歩5分（新馬場駅・りんかい線品川シーサイド駅からもアクセス可）",
     "in_tsukiji_30min": true,
@@ -398,7 +398,7 @@
   {
     "venue": "山王パークタワー公開空地",
     "region": "千代田区",
-    "month": null,
+    "month": "6月",
     "scale": "不明",
     "access": null,
     "in_tsukiji_30min": true,
@@ -422,7 +422,7 @@
   {
     "venue": "戸越八幡神社",
     "region": "品川区",
-    "month": null,
+    "month": "9月",
     "scale": "不明",
     "access": "都営浅草線「戸越駅」徒歩8分・東急池上線「戸越銀座駅」徒歩10分・東急大井町線「戸越公園駅」徒歩10分",
     "in_tsukiji_30min": true,
@@ -434,7 +434,7 @@
   {
     "venue": "押上二丁目町会会館前 路上",
     "region": "墨田区",
-    "month": null,
+    "month": "9月",
     "scale": "小",
     "access": "押上駅から徒歩圏内",
     "in_tsukiji_30min": true,
@@ -446,7 +446,7 @@
   {
     "venue": "新宿中央公園 ファンモアタイム広場",
     "region": "新宿区",
-    "month": null,
+    "month": "8月",
     "scale": "中",
     "access": "都営大江戸線 都庁前駅すぐ",
     "in_tsukiji_30min": true,
@@ -458,7 +458,7 @@
   {
     "venue": "新宿住友ビル三角広場",
     "region": "新宿区",
-    "month": null,
+    "month": "6月",
     "scale": "大",
     "access": null,
     "in_tsukiji_30min": true,
@@ -470,7 +470,7 @@
   {
     "venue": "旗の台稲荷通り商店街",
     "region": "品川区",
-    "month": null,
+    "month": "10月",
     "scale": "小",
     "access": "旗の台駅から徒歩圏内",
     "in_tsukiji_30min": true,
@@ -482,7 +482,7 @@
   {
     "venue": "旗岡八幡神社",
     "region": "品川区",
-    "month": null,
+    "month": "9月",
     "scale": "不明",
     "access": "東急大井町線「荏原町駅」徒歩2分",
     "in_tsukiji_30min": true,
@@ -518,7 +518,7 @@
   {
     "venue": "日本民謡会館",
     "region": "品川区",
-    "month": null,
+    "month": "5月",
     "scale": "小",
     "access": "大井町駅から徒歩圏内",
     "in_tsukiji_30min": true,
@@ -566,7 +566,7 @@
   {
     "venue": "晴海ふ頭公園",
     "region": "中央区",
-    "month": null,
+    "month": "7月",
     "scale": "中",
     "access": null,
     "in_tsukiji_30min": true,
@@ -614,7 +614,7 @@
   {
     "venue": "東本願寺（浅草）",
     "region": "台東区",
-    "month": null,
+    "month": "8月",
     "scale": "中",
     "access": "銀座線 田原町駅 徒歩5分／TX浅草駅 徒歩7分",
     "in_tsukiji_30min": true,
@@ -674,7 +674,7 @@
   {
     "venue": "歌舞伎町シネシティ広場",
     "region": "新宿区",
-    "month": null,
+    "month": "8月",
     "scale": "中",
     "access": "西武新宿駅 徒歩2分／大江戸線 新宿西口駅 徒歩5分",
     "in_tsukiji_30min": true,
@@ -698,7 +698,7 @@
   {
     "venue": "江東橋竪川親水公園",
     "region": "墨田区",
-    "month": null,
+    "month": "7月",
     "scale": "大",
     "access": "JR総武線・東京メトロ半蔵門線 録糸町駅南口から徒歩約6分",
     "in_tsukiji_30min": true,
@@ -710,7 +710,7 @@
   {
     "venue": "浜町公園",
     "region": "中央区",
-    "month": null,
+    "month": "8月,9月",
     "scale": "大",
     "access": "都営新宿線「浜町駅」A1・A2出口より徒歩1分（駅の真上）。東京メトロ日比谷線「人形町駅」・半蔵門線「水天宮前駅」からも徒歩約13分",
     "in_tsukiji_30min": true,
@@ -722,7 +722,7 @@
   {
     "venue": "牛嶋神社",
     "region": "墨田区",
-    "month": null,
+    "month": "9月",
     "scale": "不明",
     "access": "都営浅草線「本所吾妻橋駅」徒歩3分・東武スカイツリーライン「とうきょうスカイツリー駅」徒歩3分",
     "in_tsukiji_30min": true,
@@ -770,7 +770,7 @@
   {
     "venue": "石一町会会館前",
     "region": "墨田区",
-    "month": null,
+    "month": "9月",
     "scale": "小",
     "access": "両国駅・蔵前駅から徒歩圏内",
     "in_tsukiji_30min": true,
@@ -782,7 +782,7 @@
   {
     "venue": "秩父宮ラグビー場駐車場",
     "region": "港区",
-    "month": null,
+    "month": "6月",
     "scale": "大",
     "access": null,
     "in_tsukiji_30min": true,
@@ -830,7 +830,7 @@
   {
     "venue": "築地本願寺",
     "region": "中央区",
-    "month": null,
+    "month": "7月,8月",
     "scale": "大",
     "access": null,
     "in_tsukiji_30min": true,
@@ -890,7 +890,7 @@
   {
     "venue": "芝公園",
     "region": "港区",
-    "month": null,
+    "month": "10月",
     "scale": "大",
     "access": "都営三田線「芝公園駅」徒歩すぐ／都営大江戸線「赤羽橋駅」徒歩5分／JR・都営地下鉄「浜松町駅」徒歩10分",
     "in_tsukiji_30min": true,
@@ -938,7 +938,7 @@
   {
     "venue": "西大井広場公園",
     "region": "品川区",
-    "month": null,
+    "month": "9月",
     "scale": "小",
     "access": "横須賀線・湘南新宿ライン 西大井駅から徒歩約5分",
     "in_tsukiji_30min": true,
@@ -950,7 +950,7 @@
   {
     "venue": "豊町一丁目会館前",
     "region": "品川区",
-    "month": null,
+    "month": "9月",
     "scale": "小",
     "access": "戸越駅・戸越公園駅から徒歩圏内",
     "in_tsukiji_30min": true,
@@ -962,7 +962,7 @@
   {
     "venue": "赤坂サカス広場",
     "region": "港区",
-    "month": null,
+    "month": "8月",
     "scale": "中",
     "access": "千代田線 赤坂駅直結",
     "in_tsukiji_30min": true,
@@ -974,7 +974,7 @@
   {
     "venue": "赤坂氷川神社",
     "region": "港区",
-    "month": null,
+    "month": "9月",
     "scale": "不明",
     "access": "東京メトロ千代田線「赤坂駅」5番出口・日比谷線/都営大江戸線「六本木駅」7番出口より徒歩約7分",
     "in_tsukiji_30min": true,
@@ -998,7 +998,7 @@
   {
     "venue": "長谷寺（西麻布・麻布大観音）",
     "region": "港区",
-    "month": null,
+    "month": "9月",
     "scale": "小",
     "access": "日比谷線 広尾駅 徒歩10分",
     "in_tsukiji_30min": true,
@@ -1010,7 +1010,7 @@
   {
     "venue": "隅田公園",
     "region": "台東区",
-    "month": null,
+    "month": "6月",
     "scale": "不明",
     "access": "東武・都営地下鉄 浅草駅 より徒歩",
     "in_tsukiji_30min": true,
@@ -1022,7 +1022,7 @@
   {
     "venue": "青山善光寺",
     "region": "港区",
-    "month": null,
+    "month": "7月",
     "scale": "中",
     "access": "銀座線ほか 表参道駅 徒歩3分",
     "in_tsukiji_30min": true,
@@ -1058,7 +1058,7 @@
   {
     "venue": "靖国神社",
     "region": "千代田区",
-    "month": null,
+    "month": "7月",
     "scale": "不明",
     "access": "地下鉄九段下駅（1番出口）・市ケ谷駅（1番出口）より徒歩",
     "in_tsukiji_30min": true,
@@ -1082,7 +1082,7 @@
   {
     "venue": "鮫洲入江広場公園",
     "region": "品川区",
-    "month": null,
+    "month": "6月",
     "scale": "小",
     "access": "京急 鮫洲駅から徒歩約5分",
     "in_tsukiji_30min": true,
@@ -1094,7 +1094,7 @@
   {
     "venue": "麻布氷川神社",
     "region": "港区",
-    "month": null,
+    "month": "9月",
     "scale": "不明",
     "access": "東京メトロ南北線/都営大江戸線「麻布十番駅」出口4または1より徒歩8分、「仙台坂上駅」より徒歩1分",
     "in_tsukiji_30min": true,
@@ -1106,7 +1106,7 @@
   {
     "venue": "JR新大久保駅北側から東方向",
     "region": "新宿区",
-    "month": null,
+    "month": "10月",
     "scale": "小",
     "access": "新大久保駅から徒歩すぐ",
     "in_tsukiji_30min": false,
@@ -1118,7 +1118,7 @@
   {
     "venue": "JR目黒駅西口前",
     "region": "目黒区",
-    "month": null,
+    "month": "7月",
     "scale": "小",
     "access": "目黒駅から徒歩すぐ",
     "in_tsukiji_30min": false,
@@ -1130,7 +1130,7 @@
   {
     "venue": "JR苅田駅前広場",
     "region": "福岡県京都郡苅田町",
-    "month": null,
+    "month": "8月",
     "scale": "小",
     "access": "JR日豊本線「苅田駅」下車すぐ（駅ペデストリアンデッキ「WEロード」接続）、小倉駅から普通電車で7つ目",
     "in_tsukiji_30min": false,
@@ -1142,7 +1142,7 @@
   {
     "venue": "あらかわ遊園アリスの広場",
     "region": "荒川区",
-    "month": null,
+    "month": "3月",
     "scale": "小",
     "access": "都電荒川線 荒川遊園地前停留場から徒歩圏内",
     "in_tsukiji_30min": false,
@@ -1154,7 +1154,7 @@
   {
     "venue": "よしもと waraii myraii館 アシタ広場",
     "region": "大阪市此花区",
-    "month": null,
+    "month": "4月",
     "scale": "大",
     "access": null,
     "in_tsukiji_30min": false,
@@ -1166,7 +1166,7 @@
   {
     "venue": "フナイリバ（目黒川船入場広場）",
     "region": "目黒区",
-    "month": null,
+    "month": "8月",
     "scale": "小",
     "access": "中目黒駅から徒歩圏内",
     "in_tsukiji_30min": false,
@@ -1178,7 +1178,7 @@
   {
     "venue": "下落合公園",
     "region": "新宿区",
-    "month": null,
+    "month": "7月",
     "scale": "小",
     "access": "下落合駅から徒歩圏内",
     "in_tsukiji_30min": false,
@@ -1190,7 +1190,7 @@
   {
     "venue": "中島公園",
     "region": "札幌市中央区",
-    "month": null,
+    "month": "8月",
     "scale": "大",
     "access": "札幌市营地下鉄南北線「中島公園駅」から徒歩約1分",
     "in_tsukiji_30min": false,
@@ -1202,7 +1202,7 @@
   {
     "venue": "代々木公園野外ステージ",
     "region": "渋谷区",
-    "month": null,
+    "month": "3月",
     "scale": "小",
     "access": "原宿駅・明治神宮前駅・代々木公園駅から徒歩圏内",
     "in_tsukiji_30min": false,
@@ -1214,7 +1214,7 @@
   {
     "venue": "北新宿公園",
     "region": "新宿区",
-    "month": null,
+    "month": "8月",
     "scale": "小",
     "access": "大久保駅・東中野駅から徒歩圏内",
     "in_tsukiji_30min": false,
@@ -1226,7 +1226,7 @@
   {
     "venue": "北柏木公園",
     "region": "新宿区",
-    "month": null,
+    "month": "7月",
     "scale": "小",
     "access": "東中野駅・落合駅から徒歩圏内",
     "in_tsukiji_30min": false,
@@ -1238,7 +1238,7 @@
   {
     "venue": "原町天祖神社",
     "region": "新宿区",
-    "month": null,
+    "month": "9月",
     "scale": "小",
     "access": "牛込柳町駅から徒歩圏内",
     "in_tsukiji_30min": false,
@@ -1250,7 +1250,7 @@
   {
     "venue": "四谷ひろばグラウンド（旧四谷第四小学校）",
     "region": "新宿区",
-    "month": null,
+    "month": "7月",
     "scale": "小",
     "access": "四谷三丁目駅・新宿御苑前駅から徒歩圏内",
     "in_tsukiji_30min": false,
@@ -1262,7 +1262,7 @@
   {
     "venue": "大口公園",
     "region": "横浜市神奈川区",
-    "month": null,
+    "month": "7月",
     "scale": "中",
     "access": null,
     "in_tsukiji_30min": false,
@@ -1274,7 +1274,7 @@
   {
     "venue": "大豆戸八杉神社",
     "region": "横浜市港北区",
-    "month": null,
+    "month": "8月",
     "scale": "小",
     "access": "東急東横線「大倉山駅」から徒歩約7分",
     "in_tsukiji_30min": false,
@@ -1286,7 +1286,7 @@
   {
     "venue": "大阪・関西万博 フェスティバル・ステーション",
     "region": "大阪市此花区",
-    "month": null,
+    "month": "10月",
     "scale": "大",
     "access": null,
     "in_tsukiji_30min": false,
@@ -1298,7 +1298,7 @@
   {
     "venue": "大阪・関西万博 ポップアップステージ北",
     "region": "大阪市此花区",
-    "month": null,
+    "month": "7月",
     "scale": "大",
     "access": null,
     "in_tsukiji_30min": false,
@@ -1322,7 +1322,7 @@
   {
     "venue": "宮下公園",
     "region": "渋谷区",
-    "month": null,
+    "month": "9月",
     "scale": "大",
     "access": null,
     "in_tsukiji_30min": false,
@@ -1346,7 +1346,7 @@
   {
     "venue": "岸根貴雲寺",
     "region": "横浜市港北区",
-    "month": null,
+    "month": "8月",
     "scale": "小",
     "access": "横浜市营地下鉄グリーンライン「岸根公園駅」から徒歩10分",
     "in_tsukiji_30min": false,
@@ -1358,7 +1358,7 @@
   {
     "venue": "常光寺",
     "region": "兵庫県加古川市",
-    "month": null,
+    "month": "8月",
     "scale": "中",
     "access": "JR加古川線「東加古川駅」・「加古川駅」より神姫バス約20分「東神野」バス停下車徒歩約2分",
     "in_tsukiji_30min": false,
@@ -1370,7 +1370,7 @@
   {
     "venue": "常龍寺",
     "region": "北海道釧路市音別町",
-    "month": null,
+    "month": "8月",
     "scale": "小",
     "access": "JR根幊本線「音別駅」から徒歩4分",
     "in_tsukiji_30min": false,
@@ -1382,7 +1382,7 @@
   {
     "venue": "御旅公園",
     "region": "神戸市東灘区",
-    "month": null,
+    "month": "8月",
     "scale": "中",
     "access": "阪神電鉄本線「住吉駅」から徒歩約7分（南魚崎駅出口からも徒歩約7分）",
     "in_tsukiji_30min": false,
@@ -1394,7 +1394,7 @@
   {
     "venue": "恵庭ふるさと公園",
     "region": "北海道恵庭市",
-    "month": null,
+    "month": "8月",
     "scale": "中",
     "access": "JR室蘭線「恵庭駅」東口から徒歩約6分",
     "in_tsukiji_30min": false,
@@ -1406,7 +1406,7 @@
   {
     "venue": "旧江別小学校",
     "region": "江別市",
-    "month": null,
+    "month": "8月",
     "scale": "中",
     "access": "JR函館本線「江別駅」から徒歩約3分",
     "in_tsukiji_30min": false,
@@ -1418,7 +1418,7 @@
   {
     "venue": "本住吉神社",
     "region": "茶屋地区",
-    "month": null,
+    "month": "8月",
     "scale": "中",
     "access": "JR「住吉駅」から西へ徒歩1分、阪神電鉄「住吉駅」から北へ徒歩10分",
     "in_tsukiji_30min": false,
@@ -1430,7 +1430,7 @@
   {
     "venue": "東京大学駒場キャンパス 学生会館東",
     "region": "目黒区",
-    "month": null,
+    "month": "11月",
     "scale": "小",
     "access": "駒場東大前駅から徒歩圏内",
     "in_tsukiji_30min": false,
@@ -1442,7 +1442,7 @@
   {
     "venue": "松戸中央公園",
     "region": "松戸市",
-    "month": null,
+    "month": "8月",
     "scale": "大",
     "access": "JR常磤線・新京成線「松戸駅」東口から徒歩6分",
     "in_tsukiji_30min": false,
@@ -1466,7 +1466,7 @@
   {
     "venue": "清水川橋公園",
     "region": "新宿区",
-    "month": null,
+    "month": "7月",
     "scale": "小",
     "access": "高田馬場駅から徒歩圏内",
     "in_tsukiji_30min": false,
@@ -1478,7 +1478,7 @@
   {
     "venue": "田井西公園",
     "region": "大阪府寝屋川市",
-    "month": null,
+    "month": "7月",
     "scale": "小",
     "access": "京阪本線「香里園駅」から徒歩10分",
     "in_tsukiji_30min": false,
@@ -1490,7 +1490,7 @@
   {
     "venue": "真土公園",
     "region": "荒川区",
-    "month": null,
+    "month": "2月",
     "scale": "小",
     "access": "新三河島駅・三河島駅から徒歩圏内",
     "in_tsukiji_30min": false,
@@ -1502,7 +1502,7 @@
   {
     "venue": "祐天寺境内",
     "region": "目黒区",
-    "month": null,
+    "month": "7月",
     "scale": "小",
     "access": "祐天寺駅から徒歩圏内",
     "in_tsukiji_30min": false,
@@ -1514,7 +1514,7 @@
   {
     "venue": "福井池公園",
     "region": "神戸市東灘区",
-    "month": null,
+    "month": "8月",
     "scale": "小",
     "access": null,
     "in_tsukiji_30min": false,
@@ -1538,7 +1538,7 @@
   {
     "venue": "笠松みなと公園",
     "region": "岐阜県羽島郡笠松町",
-    "month": null,
+    "month": "10月",
     "scale": "中",
     "access": "名鉄「笠松駅」より徒歩約15分（西笠松駅出口からは徒歩約9分）",
     "in_tsukiji_30min": false,
@@ -1550,7 +1550,7 @@
   {
     "venue": "自由が丘駅前ロータリー 特設会場",
     "region": "目黒区",
-    "month": null,
+    "month": "7月",
     "scale": "小",
     "access": "自由が丘駅正面口前",
     "in_tsukiji_30min": false,
@@ -1574,7 +1574,7 @@
   {
     "venue": "都立大学駅西口緑道",
     "region": "目黒区",
-    "month": null,
+    "month": "3月",
     "scale": "小",
     "access": "東急東横線 都立大学駅すぐ",
     "in_tsukiji_30min": false,
@@ -1586,7 +1586,7 @@
   {
     "venue": "金沢百万石まつり 百万石踊り流し会場",
     "region": "金沢市",
-    "month": null,
+    "month": "6月",
     "scale": "大",
     "access": null,
     "in_tsukiji_30min": false,
@@ -1598,7 +1598,7 @@
   {
     "venue": "飛鳥山公園",
     "region": "北区",
-    "month": null,
+    "month": "3月,4月,6月,7月,8月",
     "scale": "大",
     "access": "JR京浜東北線・都電荒川線・北区コミュニティバス「王子駅」徒歩す7分",
     "in_tsukiji_30min": false,
@@ -1610,7 +1610,7 @@
   {
     "venue": "馬橋小学校",
     "region": "松戸市",
-    "month": null,
+    "month": "11月",
     "scale": "小",
     "access": null,
     "in_tsukiji_30min": false,
@@ -1634,7 +1634,7 @@
   {
     "venue": "鳥山池公園",
     "region": "横浜市港北区",
-    "month": null,
+    "month": "8月",
     "scale": "小",
     "access": "JR横浜線「小机駅」徒歩約13分",
     "in_tsukiji_30min": false,
@@ -1646,7 +1646,7 @@
   {
     "venue": "鶴川団地セントラル商店街",
     "region": "町田市",
-    "month": null,
+    "month": "8月,10月",
     "scale": "小",
     "access": "小田急線 鶴川駅 バス",
     "in_tsukiji_30min": false,
@@ -1658,7 +1658,7 @@
   {
     "venue": "鶴巻小学校",
     "region": "新宿区",
-    "month": null,
+    "month": "7月",
     "scale": "小",
     "access": "早稲田駅から徒歩圏内",
     "in_tsukiji_30min": false,

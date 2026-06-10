@@ -16,26 +16,29 @@ collector（GitHub Actions）や home-venue-watch が、Notion を直接叩か�
 
 import json
 import os
+import re
 import urllib.request
 import urllib.error
 
-import notion_config  # noqa: F401 - load .env before reading environment variables
+import notion_config
 
 NOTION_TOKEN = os.environ.get("NOTION_API_TOKEN")
 NOTION_VERSION = "2022-06-28"
 NOTION_API = "https://api.notion.com/v1"
+
+MONTH_RE = re.compile(r"(\d{1,2})月")
 
 # 🏮 会場マスタ DB（こわが 2026-05-31 に作成）
 VENUE_DB_ID = os.environ.get("VENUE_DB_ID", "cbc56bda225946bf8aacadb7efd691c2")
 OUT = os.path.join(os.path.dirname(__file__), "data", "venue_master.json")
 
 
-def _notion_request(method, path, payload=None):
+def _notion_request(method, path, payload=None, version=NOTION_VERSION):
     url = f"{NOTION_API}{path}"
     data = json.dumps(payload).encode("utf-8") if payload is not None else None
     req = urllib.request.Request(url, data=data, method=method)
     req.add_header("Authorization", f"Bearer {NOTION_TOKEN}")
-    req.add_header("Notion-Version", NOTION_VERSION)
+    req.add_header("Notion-Version", version)
     req.add_header("Content-Type", "application/json")
     with urllib.request.urlopen(req) as response:
         return json.loads(response.read())
@@ -80,13 +83,56 @@ def _prop(props, name):
         return rollup.get(rollup.get("type"))
     if t == "checkbox":
         return bool(p.get("checkbox"))
+    if t == "date":
+        return (p.get("date") or {}).get("start")
     if t == "url":
         return p.get("url") or None
     return None
 
 
+def fetch_event_months():
+    """イベントDBから venue_page_id -> 例年開催月（"7月,8月" 形式）の対応を作る。
+
+    2026-06-06 のDB分割で「例年開催月」は会場マスタからイベントDBへ移った。
+    会場 relation 経由で join し、proactive_search.py が読める文字列にして返す。
+    """
+    months_by_venue = {}
+    cursor = None
+    while True:
+        payload = {"page_size": 100}
+        if cursor:
+            payload["start_cursor"] = cursor
+        res = _notion_request(
+            "POST",
+            f"/data_sources/{notion_config.EVENT_DATA_SOURCE_ID}/query",
+            payload,
+            version=notion_config.NOTION_API_VERSION,
+        )
+        for row in res.get("results", []):
+            props = row.get("properties", {})
+            months = {
+                int(m) for m in MONTH_RE.findall(_prop(props, "例年開催月") or "")
+                if 1 <= int(m) <= 12
+            }
+            start = _prop(props, "開催日")
+            if isinstance(start, str) and len(start) >= 7:
+                months.add(int(start[5:7]))
+            if not months:
+                continue
+            for venue_id in props.get("会場", {}).get("relation", []):
+                months_by_venue.setdefault(venue_id["id"], set()).update(months)
+        if not res.get("has_more"):
+            break
+        cursor = res.get("next_cursor")
+    return {
+        vid: ",".join(f"{m}月" for m in sorted(months))
+        for vid, months in months_by_venue.items()
+    }
+
+
 def fetch_venues():
     """会場マスタDBの全ページを取得して dict のリストで返す（ページネーション対応）。"""
+    month_by_venue = fetch_event_months()
     venues = []
     cursor = None
     while True:
@@ -99,7 +145,7 @@ def fetch_venues():
             venues.append({
                 "venue": _prop(props, "会場名"),
                 "region": _prop(props, "所在区・市"),
-                "month": _prop(props, "例年開催月"),
+                "month": month_by_venue.get(row.get("id")),
                 "scale": _prop(props, "規模"),
                 "access": _prop(props, "アクセス"),
                 "in_tsukiji_30min": _prop(props, "築地30分圏内"),

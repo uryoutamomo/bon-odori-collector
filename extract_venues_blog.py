@@ -21,10 +21,16 @@ FEED_URL = "http://minato-bon-odori.blogspot.com/feeds/posts/default?max-results
 OUT = os.path.join(os.path.dirname(__file__), "data", "venues_seed_blog.json")
 ATOM = {"a": "http://www.w3.org/2005/Atom"}
 
-# 築地（中央区）起点・自転車30分圏内とみなす区（この区の情報ページのみ処理）
+# 築地（中央区）起点・自転車30分圏内とみなす区（in_tsukiji_30min_guess の推定用）
 NEAR_TSUKIJI = [
     "中央区", "港区", "千代田区", "台東区", "墨田区", "江東区",
     "品川区", "文京区", "新宿区", "渋谷区", "目黒区", "荒川区",
+]
+
+# 処理対象は東京23区すべて（2026-06-10 Web公開向けに築地30分圏から拡大）
+TOKYO_WARDS = NEAR_TSUKIJI + [
+    "大田区", "世田谷区", "中野区", "杉並区", "豊島区", "北区",
+    "板橋区", "練馬区", "足立区", "葛飾区", "江戸川区",
 ]
 
 # blogspot 本文に出る会場接尾辞（長いものを優先）
@@ -87,7 +93,7 @@ def main():
         t = entry.find("a:title", ATOM)
         c = entry.find("a:content", ATOM)
         title = (t.text or "") if t is not None else ""
-        ward = next((w for w in NEAR_TSUKIJI if w in title), None)
+        ward = next((w for w in TOKYO_WARDS if w in title), None)
         if not ward or "情報" not in title:
             continue
         body = html.unescape(re.sub("<[^>]+>", " ", (c.text or ""))) if c is not None else ""
