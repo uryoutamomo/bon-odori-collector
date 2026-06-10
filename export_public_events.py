@@ -53,6 +53,7 @@ def fetch_public_venues():
             "access": clean_public_text(_prop(props, "アクセス")),
             "address": clean_public_text(_prop(props, "住所")),
             "memo_months": sorted(months_from_memo(_prop(props, "過去メモ"))),
+            "intro": clean_public_text(_prop(props, "公開紹介文")),
         }
     return venues
 
@@ -87,6 +88,10 @@ def build_public_events():
                 "address": v["address"],
                 "date": date,
                 "status": status,
+                # カードに出す特徴文（公開用に書いたものだけ。内部メモは出さない）
+                "description": clean_public_text(_prop(props, "公開紹介文")),
+                # 詳細モーダル用：直近の開催実績（日時の記録）
+                "detail": clean_public_text(_prop(props, "開催パターン詳細")),
             })
 
     # イベント未整備の会場はフォールバックカード（名称確認中）
@@ -106,6 +111,8 @@ def build_public_events():
             "address": v["address"],
             "date": None,
             "status": None,
+            "description": v["intro"],
+            "detail": None,
         })
 
     events.sort(key=lambda e: (WARD_ORDER[e["area"]], e["venue"], e["name"]))
