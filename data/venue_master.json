@@ -12,6 +12,18 @@
     "notion_url": "https://app.notion.com/p/37b8be04e7628142abd0c578a2255537"
   },
   {
+    "venue": "さかもと朝顔広場（旧坂本小学校跡地）",
+    "region": "台東区",
+    "month": null,
+    "scale": "小",
+    "access": "入谷駅・鶯谷駅から徒歩圏内",
+    "in_tsukiji_30min": true,
+    "source_url": "https://minato-bon-odori.blogspot.com/2025/01/00f-taito-p.html",
+    "memo": "2025-08-23に坂本町会「納涼祭」内で納涼踊り開催記録あり。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37b8be04e7628151a094f54ad28b462d"
+  },
+  {
     "venue": "しながわ中央公園",
     "region": "品川区",
     "month": null,
@@ -36,6 +48,18 @@
     "notion_url": "https://app.notion.com/p/3718be04e76281aba2d3f71cb5383b07"
   },
   {
+    "venue": "すみだ産業会館サンライズホール",
+    "region": "墨田区",
+    "month": null,
+    "scale": "小",
+    "access": "錦糸町駅から徒歩すぐ",
+    "in_tsukiji_30min": true,
+    "source_url": "https://minato-bon-odori.blogspot.com/2025/01/00g-sumida-p.html",
+    "memo": "2025-01-11にすみだ輪おどり区民感謝デー開催記録あり。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37b8be04e7628191b232c92e186bfcd2"
+  },
+  {
     "venue": "アーク・カラヤン広場（アークヒルズ）",
     "region": "港区",
     "month": null,
@@ -46,6 +70,18 @@
     "memo": "アークヒルズ秋祭りの盆踊り会場。例年9月中旬、東京音頭・六本木音頭など。2024年は9/14。",
     "needs_review": false,
     "notion_url": "https://app.notion.com/p/37b8be04e762813ebe2ddb6bd990aadb"
+  },
+  {
+    "venue": "ハマサイト前広場・汐留ビルディング外構",
+    "region": "港区",
+    "month": null,
+    "scale": "小",
+    "access": "浜松町駅・大門駅から徒歩圏内",
+    "in_tsukiji_30min": true,
+    "source_url": "https://minato-bon-odori.blogspot.com/2025/01/00c-minato-p.html",
+    "memo": "2025-08-22に第16回ハマサイトの夏祭り開催記録あり。例年、盆踊りの合間にライブ演奏あり。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37b8be04e76281dfb638c68446081791"
   },
   {
     "venue": "三田松坂児童遊園",
@@ -144,6 +180,18 @@
     "notion_url": "https://app.notion.com/p/3718be04e7628142b3cded20a771b77c"
   },
   {
+    "venue": "伸成町会会館前 路上",
+    "region": "墨田区",
+    "month": null,
+    "scale": "小",
+    "access": "押上駅から徒歩圏内",
+    "in_tsukiji_30min": true,
+    "source_url": "https://minato-bon-odori.blogspot.com/2025/01/00g-sumida-p.html",
+    "memo": "2025-09-13〜14に押上三丁目伸成町会の祭礼踊り開催記録あり。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37b8be04e76281e78a84f3dacc3b320b"
+  },
+  {
     "venue": "八潮公園",
     "region": "品川区",
     "month": null,
@@ -180,6 +228,30 @@
     "notion_url": "https://app.notion.com/p/3718be04e7628135b5eeffc17c41bf84"
   },
   {
+    "venue": "向島1丁目旧町会会館前",
+    "region": "墨田区",
+    "month": null,
+    "scale": "小",
+    "access": "とうきょうスカイツリー駅・本所吾妻橋駅から徒歩圏内",
+    "in_tsukiji_30min": true,
+    "source_url": "https://minato-bon-odori.blogspot.com/2025/01/00g-sumida-p.html",
+    "memo": "2025-09-13に向島一丁目 牛嶋神社 ミニ奉納踊り開催記録あり。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/1-37b8be04e76281b48fd4e0d9535703ab"
+  },
+  {
+    "venue": "向島百花会館",
+    "region": "墨田区",
+    "month": null,
+    "scale": "小",
+    "access": "東向島駅・曳舟駅から徒歩圏内",
+    "in_tsukiji_30min": true,
+    "source_url": "https://minato-bon-odori.blogspot.com/2026/01/00g-sumida-q.html",
+    "memo": "2026-03-01に西図子「盆踊りとおでんの宴」開催記録あり。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37b8be04e76281f7a94ef5ded43b5514"
+  },
+  {
     "venue": "城南小学校",
     "region": "品川区",
     "month": null,
@@ -204,6 +276,18 @@
     "notion_url": "https://app.notion.com/p/3718be04e76281d6b93cee5cb3b2d9ed"
   },
   {
+    "venue": "報恩寺境内",
+    "region": "墨田区",
+    "month": null,
+    "scale": "小",
+    "access": "錦糸町駅から徒歩圏内",
+    "in_tsukiji_30min": true,
+    "source_url": "https://minato-bon-odori.blogspot.com/2025/01/00g-sumida-p.html",
+    "memo": "2025-09-12〜13に太平一丁目 牛嶋神社 奉納踊り開催記録あり。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37b8be04e7628127944de367b9cba5ee"
+  },
+  {
     "venue": "増上寺（大殿前広場）",
     "region": "港区",
     "month": null,
@@ -214,6 +298,18 @@
     "memo": "地蔵尊奉賛盆踊り大会の会場。例年7月中旬2日間。2025年は三解脱門大修理により中止→2026年要確認。芝公園に隣接（別会場扱い）。",
     "needs_review": false,
     "notion_url": "https://app.notion.com/p/37b8be04e76281c784bbe50037ae9725"
+  },
+  {
+    "venue": "大井町駅前中央通り",
+    "region": "品川区",
+    "month": null,
+    "scale": "小",
+    "access": "大井町駅から徒歩すぐ",
+    "in_tsukiji_30min": true,
+    "source_url": "https://minato-bon-odori.blogspot.com/2025/01/00i-sinagawa-p.html",
+    "memo": "大井どんたく夏まつりの会場。大井銀座商店街振興組合などが関係。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37b8be04e762813c821ad2aab803239b"
   },
   {
     "venue": "大井蔵王権現神社",
@@ -336,6 +432,18 @@
     "notion_url": "https://app.notion.com/p/3718be04e7628170b1e5ec8d792c019c"
   },
   {
+    "venue": "押上二丁目町会会館前 路上",
+    "region": "墨田区",
+    "month": null,
+    "scale": "小",
+    "access": "押上駅から徒歩圏内",
+    "in_tsukiji_30min": true,
+    "source_url": "https://minato-bon-odori.blogspot.com/2025/01/00g-sumida-p.html",
+    "memo": "2025-09-13に押上二町目町会 飛木稲荷神社神幸大祭 奉納おどり開催記録あり。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37b8be04e76281f49331f058deb3a47d"
+  },
+  {
     "venue": "新宿中央公園 ファンモアタイム広場",
     "region": "新宿区",
     "month": null,
@@ -358,6 +466,18 @@
     "memo": "三角広場まつり「居酒屋盆踊り」公式告知から追加。おと（Codex）2026-06-09",
     "needs_review": false,
     "notion_url": "https://app.notion.com/p/37a8be04e762818fa32fcef493e0f5f1"
+  },
+  {
+    "venue": "旗の台稲荷通り商店街",
+    "region": "品川区",
+    "month": null,
+    "scale": "小",
+    "access": "旗の台駅から徒歩圏内",
+    "in_tsukiji_30min": true,
+    "source_url": "https://minato-bon-odori.blogspot.com/2025/01/00i-sinagawa-p.html",
+    "memo": "2025-10-18に旗の台稲荷通り商店会盆踊り「盆ROCK」開催記録あり。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37b8be04e7628173a769ead10d96bf3c"
   },
   {
     "venue": "旗岡八幡神社",
@@ -648,6 +768,18 @@
     "notion_url": "https://app.notion.com/p/3718be04e76281bfa9cfebb500e91d8c"
   },
   {
+    "venue": "石一町会会館前",
+    "region": "墨田区",
+    "month": null,
+    "scale": "小",
+    "access": "両国駅・蔵前駅から徒歩圏内",
+    "in_tsukiji_30min": true,
+    "source_url": "https://minato-bon-odori.blogspot.com/2025/01/00g-sumida-p.html",
+    "memo": "2025-09-13に石原一丁目 牛嶋神社 奉納踊り開催記録あり。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37b8be04e76281738275d6d25bb84374"
+  },
+  {
     "venue": "秩父宮ラグビー場駐車場",
     "region": "港区",
     "month": null,
@@ -816,6 +948,18 @@
     "notion_url": "https://app.notion.com/p/37b8be04e76281db930fdde3a6df2a84"
   },
   {
+    "venue": "豊町一丁目会館前",
+    "region": "品川区",
+    "month": null,
+    "scale": "小",
+    "access": "戸越駅・戸越公園駅から徒歩圏内",
+    "in_tsukiji_30min": true,
+    "source_url": "https://minato-bon-odori.blogspot.com/2025/01/00i-sinagawa-p.html",
+    "memo": "2025-09-13に戸越八幡神社例大祭 奉納盆踊り大会開催記録あり。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37b8be04e7628152999ff08890982097"
+  },
+  {
     "venue": "赤坂サカス広場",
     "region": "港区",
     "month": null,
@@ -960,16 +1104,28 @@
     "notion_url": "https://app.notion.com/p/3718be04e76281569f32c0aadefd485c"
   },
   {
-    "venue": "JR苅田駅前広場",
-    "region": "福岡県苅田町",
+    "venue": "JR新大久保駅北側から東方向",
+    "region": "新宿区",
     "month": null,
     "scale": "小",
-    "access": null,
+    "access": "新大久保駅から徒歩すぐ",
     "in_tsukiji_30min": false,
-    "source_url": "https://kbc.co.jp/wish/article/42645/",
-    "memo": "十九観音盆踊り＆夜の苅田えきらく大市。2025年8/19 17:30〜21:00。JR苅田駅1階駅東口広場多目的スペース。無料。",
+    "source_url": "https://minato-bon-odori.blogspot.com/2025/01/00d-shinjuku-p.html",
+    "memo": "2025-10-13に大久保まつりパレード内で百人町民民謡おどりの記録あり。観覧のみとの記載。",
     "needs_review": false,
-    "notion_url": "https://app.notion.com/p/JR-3748be04e76281cab721cabdb8aa8096"
+    "notion_url": "https://app.notion.com/p/JR-37b8be04e76281cda989ca64e2309b2e"
+  },
+  {
+    "venue": "JR目黒駅西口前",
+    "region": "目黒区",
+    "month": null,
+    "scale": "小",
+    "access": "目黒駅から徒歩すぐ",
+    "in_tsukiji_30min": false,
+    "source_url": "https://minato-bon-odori.blogspot.com/2025/01/00j-meguro-p.html",
+    "memo": "2025-07-27に権之助坂商店街の地域のふれあい盆踊り大会開催記録あり。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/JR-37b8be04e7628117b3cdc48a1797f38a"
   },
   {
     "venue": "JR苅田駅前広場",
@@ -984,6 +1140,18 @@
     "notion_url": "https://app.notion.com/p/JR-3718be04e7628184a8d3cd0ff6f50d24"
   },
   {
+    "venue": "あらかわ遊園アリスの広場",
+    "region": "荒川区",
+    "month": null,
+    "scale": "小",
+    "access": "都電荒川線 荒川遊園地前停留場から徒歩圏内",
+    "in_tsukiji_30min": false,
+    "source_url": "https://minato-bon-odori.blogspot.com/2026/01/00r-arakawa-q.html",
+    "memo": "2026-03-15の第60回あらかわ青年大会 アリストックで盆踊り3曲の記録あり。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37b8be04e7628118b711f5b06e31d218"
+  },
+  {
     "venue": "よしもと waraii myraii館 アシタ広場",
     "region": "大阪市此花区",
     "month": null,
@@ -996,6 +1164,30 @@
     "notion_url": "https://app.notion.com/p/waraii-myraii-37a8be04e76281639833ef3ac99b025b"
   },
   {
+    "venue": "フナイリバ（目黒川船入場広場）",
+    "region": "目黒区",
+    "month": null,
+    "scale": "小",
+    "access": "中目黒駅から徒歩圏内",
+    "in_tsukiji_30min": false,
+    "source_url": "https://minato-bon-odori.blogspot.com/2025/01/00j-meguro-p.html",
+    "memo": "2025-08-30〜31に中目黒盆踊り大会開催記録あり。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37b8be04e76281d9bf43c241cddc0c89"
+  },
+  {
+    "venue": "下落合公園",
+    "region": "新宿区",
+    "month": null,
+    "scale": "小",
+    "access": "下落合駅から徒歩圏内",
+    "in_tsukiji_30min": false,
+    "source_url": "https://minato-bon-odori.blogspot.com/2025/01/00d-shinjuku-p.html",
+    "memo": "2025-07-19〜20に下落合四丁目町会「盆踊り大会」開催記録あり。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37b8be04e7628158a762ec68abb1bbca"
+  },
+  {
     "venue": "中島公園",
     "region": "札幌市中央区",
     "month": null,
@@ -1006,6 +1198,66 @@
     "memo": "札幌中心部の大規模公園。「札幌中島公園大盆踊り大会」が2026年8/13-15開催予定（CAMPFIREでクラウドファンディング実施中）。築地30分圏外。",
     "needs_review": false,
     "notion_url": "https://app.notion.com/p/3718be04e76281349dc8c49032b9b2ee"
+  },
+  {
+    "venue": "代々木公園野外ステージ",
+    "region": "渋谷区",
+    "month": null,
+    "scale": "小",
+    "access": "原宿駅・明治神宮前駅・代々木公園駅から徒歩圏内",
+    "in_tsukiji_30min": false,
+    "source_url": "https://minato-bon-odori.blogspot.com/2026/01/00m-shibuya-q.html",
+    "memo": "2026-03-15にグリーン アイルランド フェスティバル内でアイリッシュ盆踊り開催記録あり。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37b8be04e76281afbc76fcc0625483f2"
+  },
+  {
+    "venue": "北新宿公園",
+    "region": "新宿区",
+    "month": null,
+    "scale": "小",
+    "access": "大久保駅・東中野駅から徒歩圏内",
+    "in_tsukiji_30min": false,
+    "source_url": "https://minato-bon-odori.blogspot.com/2025/01/00d-shinjuku-p.html",
+    "memo": "2025-08-02〜03に柏木地区6町会盆踊り大会開催記録あり。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37b8be04e762811d9de6f05990297ea8"
+  },
+  {
+    "venue": "北柏木公園",
+    "region": "新宿区",
+    "month": null,
+    "scale": "小",
+    "access": "東中野駅・落合駅から徒歩圏内",
+    "in_tsukiji_30min": false,
+    "source_url": "https://minato-bon-odori.blogspot.com/2025/01/00d-shinjuku-p.html",
+    "memo": "2025-07-25〜27に北新宿四丁目盆踊り大会開催記録あり。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37b8be04e762819fb089d7b2dcab0686"
+  },
+  {
+    "venue": "原町天祖神社",
+    "region": "新宿区",
+    "month": null,
+    "scale": "小",
+    "access": "牛込柳町駅から徒歩圏内",
+    "in_tsukiji_30min": false,
+    "source_url": "https://minato-bon-odori.blogspot.com/2025/01/00d-shinjuku-p.html",
+    "memo": "2025-09-15に原町一丁目町会「天祖神社例大祭 盆踊り」開催記録あり。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37b8be04e76281cab10ec7a1f9eb6666"
+  },
+  {
+    "venue": "四谷ひろばグラウンド（旧四谷第四小学校）",
+    "region": "新宿区",
+    "month": null,
+    "scale": "小",
+    "access": "四谷三丁目駅・新宿御苑前駅から徒歩圏内",
+    "in_tsukiji_30min": false,
+    "source_url": "https://minato-bon-odori.blogspot.com/2025/01/00d-shinjuku-p.html",
+    "memo": "2025-07-19〜20に第25回 四谷納涼踊り大会開催記録あり。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37b8be04e7628110b46cc9bc2eedeb96"
   },
   {
     "venue": "大口公園",
@@ -1153,18 +1405,6 @@
   },
   {
     "venue": "旧江別小学校",
-    "region": "北海道江別市",
-    "month": null,
-    "scale": "小",
-    "access": null,
-    "in_tsukiji_30min": false,
-    "source_url": "https://www.city.ebetsu.hokkaido.jp/soshiki/kigyouricchi/142446.html",
-    "memo": "こども盆おどり2025（旧江別小学校跡地）。江別市主催。風街夏祭りと同時開催。2025年8/23〜24。無料。",
-    "needs_review": false,
-    "notion_url": "https://app.notion.com/p/3748be04e762814ba2f8ca1225631061"
-  },
-  {
-    "venue": "旧江別小学校",
     "region": "江別市",
     "month": null,
     "scale": "中",
@@ -1177,18 +1417,6 @@
   },
   {
     "venue": "本住吉神社",
-    "region": "神戸市東灘区",
-    "month": null,
-    "scale": "小",
-    "access": null,
-    "in_tsukiji_30min": false,
-    "source_url": "https://higashinada-journal.com/",
-    "memo": "東灘・茶屋地区 夏まつり＆盆おどり。2025年8/9 本住吉神社 本殿東側地車庫前にて開催（東灘ジャーナル）。地域主催。",
-    "needs_review": false,
-    "notion_url": "https://app.notion.com/p/3748be04e762812ead56d0fccee3744a"
-  },
-  {
-    "venue": "本住吉神社",
     "region": "茶屋地区",
     "month": null,
     "scale": "中",
@@ -1198,6 +1426,18 @@
     "memo": "全国の住吉神社の総本宮（1250年の歴史）。東灘・茶屋地区主催の「夏まつり＆盆おどり」が2025年8/9に本殿東側地車庫前にて開催=確実な盆踊り会場。築地30分圏外（神戸市東灘区）。",
     "needs_review": false,
     "notion_url": "https://app.notion.com/p/3718be04e76281d2b8b8e57ad53374f3"
+  },
+  {
+    "venue": "東京大学駒場キャンパス 学生会館東",
+    "region": "目黒区",
+    "month": null,
+    "scale": "小",
+    "access": "駒場東大前駅から徒歩圏内",
+    "in_tsukiji_30min": false,
+    "source_url": "https://minato-bon-odori.blogspot.com/2025/01/00j-meguro-p.html",
+    "memo": "2025-11-23〜24に駒場祭にあわせて盆踊り in 駒場東大開催記録あり。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37b8be04e76281aba50dd6ed9956a130"
   },
   {
     "venue": "松戸中央公園",
@@ -1224,6 +1464,18 @@
     "notion_url": "https://app.notion.com/p/3718be04e76281eb8cdfff0067770021"
   },
   {
+    "venue": "清水川橋公園",
+    "region": "新宿区",
+    "month": null,
+    "scale": "小",
+    "access": "高田馬場駅から徒歩圏内",
+    "in_tsukiji_30min": false,
+    "source_url": "https://minato-bon-odori.blogspot.com/2025/01/00d-shinjuku-p.html",
+    "memo": "2025-07-19に下落合町会知久会「第9回盆踊り」開催記録あり。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37b8be04e76281dfac8cd9323e7fdcc1"
+  },
+  {
     "venue": "田井西公園",
     "region": "大阪府寝屋川市",
     "month": null,
@@ -1234,6 +1486,30 @@
     "memo": "地域主催「田井西公園盆おどり大会」が例年7月末開催（2023年実績、飲食店・こども連難あり）=確実な盆踊り会場。テニスコート・ゲートボール場も儲える住宅地内の公園。築地30分圏外（大阪府寣屋川市）。",
     "needs_review": false,
     "notion_url": "https://app.notion.com/p/3718be04e76281198ec7d94d349820ae"
+  },
+  {
+    "venue": "真土公園",
+    "region": "荒川区",
+    "month": null,
+    "scale": "小",
+    "access": "新三河島駅・三河島駅から徒歩圏内",
+    "in_tsukiji_30min": false,
+    "source_url": "https://minato-bon-odori.blogspot.com/2026/01/00r-arakawa-q.html",
+    "memo": "2026-02-22に荒川盆踊り会 初踊り開催記録あり。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37b8be04e76281639566d8a16770f7bd"
+  },
+  {
+    "venue": "祐天寺境内",
+    "region": "目黒区",
+    "month": null,
+    "scale": "小",
+    "access": "祐天寺駅から徒歩圏内",
+    "in_tsukiji_30min": false,
+    "source_url": "https://minato-bon-odori.blogspot.com/2025/01/00j-meguro-p.html",
+    "memo": "2025-07-16〜18に祐天寺み魂まつり こども盆踊り大会開催記録あり。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37b8be04e762819e84daf555fe400746"
   },
   {
     "venue": "福井池公園",
@@ -1272,6 +1548,18 @@
     "notion_url": "https://app.notion.com/p/3718be04e76281d1af37f9df6c2b2ffe"
   },
   {
+    "venue": "自由が丘駅前ロータリー 特設会場",
+    "region": "目黒区",
+    "month": null,
+    "scale": "小",
+    "access": "自由が丘駅正面口前",
+    "in_tsukiji_30min": false,
+    "source_url": "https://minato-bon-odori.blogspot.com/2025/01/00j-meguro-p.html",
+    "memo": "2025-07-19〜21に自由が丘納涼盆踊り大会開催記録あり。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37b8be04e76281b7bc14f7a257a1e01e"
+  },
+  {
     "venue": "西本願寺",
     "region": null,
     "month": null,
@@ -1282,6 +1570,18 @@
     "memo": "浄土真宗本願寺派本山「お西さん」。毎年7月下旬～8月上旬に境内北側駐車場で「本願寺納涸盆踊り」が開催（1986年開始、1万人以上動員、第37回は2025年7/31-8/1）=確実な盆踊り会場。築地30分圏外（京都市下京区）。築地本願寺・東本願寺（台東区）とは別物。",
     "needs_review": false,
     "notion_url": "https://app.notion.com/p/3718be04e762810392caec9d289739d1"
+  },
+  {
+    "venue": "都立大学駅西口緑道",
+    "region": "目黒区",
+    "month": null,
+    "scale": "小",
+    "access": "東急東横線 都立大学駅すぐ",
+    "in_tsukiji_30min": false,
+    "source_url": "https://minato-bon-odori.blogspot.com/2026/01/00j-meguro-q.html",
+    "memo": "元候補名「桜フェスタ商店街」はイベント名寄り。会場は都立大学駅西口緑道として登録。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37b8be04e76281f8bb3ddccba747bebb"
   },
   {
     "venue": "金沢百万石まつり 百万石踊り流し会場",
@@ -1354,5 +1654,17 @@
     "memo": "鶴川団地夏祭りの盆踊り。2025年度は10/4-5（秋開催に移動）でも盆踊り実施。X声から検知された会場。",
     "needs_review": false,
     "notion_url": "https://app.notion.com/p/37b8be04e76281fcb309f4d6d5003311"
+  },
+  {
+    "venue": "鶴巻小学校",
+    "region": "新宿区",
+    "month": null,
+    "scale": "小",
+    "access": "早稲田駅から徒歩圏内",
+    "in_tsukiji_30min": false,
+    "source_url": "https://minato-bon-odori.blogspot.com/2025/01/00d-shinjuku-p.html",
+    "memo": "2025-07-12に納涼盆踊り大会＆子ども祭り開催記録あり。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37b8be04e76281bd9752ec627bc1f69a"
   }
 ]

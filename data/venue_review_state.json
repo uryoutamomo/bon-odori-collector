@@ -179,296 +179,7 @@
     }
   ],
   "research_priority": [],
-  "research_later": [
-    {
-      "venue": "さかもと朝顔広場",
-      "region_hint": "台東区",
-      "in_tsukiji_30min_guess": true,
-      "source": "blogspot",
-      "source_title": "台東区の盆おどり情報 2025年1月より [Taito-p]",
-      "method": "blog_body",
-      "needs_review": true
-    },
-    {
-      "venue": "大井銀座商店街",
-      "region_hint": "品川区",
-      "in_tsukiji_30min_guess": true,
-      "source": "blogspot",
-      "source_title": "品川区の盆おどり情報 2025年1月より [Sinagawa-p]",
-      "method": "blog_body",
-      "needs_review": true
-    },
-    {
-      "venue": "大井駅前中央通り商店街",
-      "region_hint": "品川区",
-      "in_tsukiji_30min_guess": true,
-      "source": "blogspot",
-      "source_title": "品川区の盆おどり情報 2025年1月より [Sinagawa-p]",
-      "method": "blog_body",
-      "needs_review": true
-    },
-    {
-      "venue": "旗の台稲荷通り商店街",
-      "region_hint": "品川区",
-      "in_tsukiji_30min_guess": true,
-      "source": "blogspot",
-      "source_title": "品川区の盆おどり情報 2025年1月より [Sinagawa-p]",
-      "method": "blog_body",
-      "needs_review": true
-    },
-    {
-      "venue": "豊町一丁目会館",
-      "region_hint": "品川区",
-      "in_tsukiji_30min_guess": true,
-      "source": "blogspot",
-      "source_title": "品川区の盆おどり情報 2025年1月より [Sinagawa-p]",
-      "method": "blog_body",
-      "needs_review": true
-    },
-    {
-      "venue": "すみだ産業会館",
-      "region_hint": "墨田区",
-      "in_tsukiji_30min_guess": true,
-      "source": "blogspot",
-      "source_title": "墨田区の盆おどり情報 2025年1月より [Sumida-p]",
-      "method": "blog_body",
-      "needs_review": true
-    },
-    {
-      "venue": "伸成町会会館",
-      "region_hint": "墨田区",
-      "in_tsukiji_30min_guess": true,
-      "source": "blogspot",
-      "source_title": "墨田区の盆おどり情報 2025年1月より [Sumida-p]",
-      "method": "blog_body",
-      "needs_review": true
-    },
-    {
-      "venue": "向島1丁目旧町会会館",
-      "region_hint": "墨田区",
-      "in_tsukiji_30min_guess": true,
-      "source": "blogspot",
-      "source_title": "墨田区の盆おどり情報 2025年1月より [Sumida-p]",
-      "method": "blog_body",
-      "needs_review": true
-    },
-    {
-      "venue": "向島百花会館",
-      "region_hint": "墨田区",
-      "in_tsukiji_30min_guess": true,
-      "source": "blogspot",
-      "source_title": "墨田区の盆おどり情報 2026年1月より [Sumida-q]",
-      "method": "blog_body",
-      "needs_review": true
-    },
-    {
-      "venue": "報恩寺",
-      "region_hint": "墨田区",
-      "in_tsukiji_30min_guess": true,
-      "source": "blogspot",
-      "source_title": "墨田区の盆おどり情報 2025年1月より [Sumida-p]",
-      "method": "blog_body",
-      "needs_review": true
-    },
-    {
-      "venue": "押上二丁目町会会館",
-      "region_hint": "墨田区",
-      "in_tsukiji_30min_guess": true,
-      "source": "blogspot",
-      "source_title": "墨田区の盆おどり情報 2025年1月より [Sumida-p]",
-      "method": "blog_body",
-      "needs_review": true
-    },
-    {
-      "venue": "石一町会会館",
-      "region_hint": "墨田区",
-      "in_tsukiji_30min_guess": true,
-      "source": "blogspot",
-      "source_title": "墨田区の盆おどり情報 2025年1月より [Sumida-p]",
-      "method": "blog_body",
-      "needs_review": true
-    },
-    {
-      "venue": "菊一お祭り広場",
-      "region_hint": "墨田区",
-      "in_tsukiji_30min_guess": true,
-      "source": "blogspot",
-      "source_title": "墨田区の盆おどり情報 2025年1月より [Sumida-p]",
-      "method": "blog_body",
-      "needs_review": true
-    },
-    {
-      "venue": "ハマサイト前広場",
-      "region_hint": "港区",
-      "in_tsukiji_30min_guess": true,
-      "source": "blogspot",
-      "source_title": "港区の盆おどり情報 2025年1月より [Minato-p]",
-      "method": "blog_body",
-      "needs_review": true
-    },
-    {
-      "venue": "下落合公園",
-      "region_hint": "新宿区",
-      "in_tsukiji_30min_guess": false,
-      "source": "blogspot",
-      "source_title": "新宿区の盆おどり情報 2025年1月より [Shinjuku-p]",
-      "method": "blog_body",
-      "needs_review": true
-    },
-    {
-      "venue": "北新宿公園",
-      "region_hint": "新宿区",
-      "in_tsukiji_30min_guess": false,
-      "source": "blogspot",
-      "source_title": "新宿区の盆おどり情報 2025年1月より [Shinjuku-p]",
-      "method": "blog_body",
-      "needs_review": true
-    },
-    {
-      "venue": "北柏木公園",
-      "region_hint": "新宿区",
-      "in_tsukiji_30min_guess": false,
-      "source": "blogspot",
-      "source_title": "新宿区の盆おどり情報 2025年1月より [Shinjuku-p]",
-      "method": "blog_body",
-      "needs_review": true
-    },
-    {
-      "venue": "原町天祖神社",
-      "region_hint": "新宿区",
-      "in_tsukiji_30min_guess": false,
-      "source": "blogspot",
-      "source_title": "新宿区の盆おどり情報 2025年1月より [Shinjuku-p]",
-      "method": "blog_body",
-      "needs_review": true
-    },
-    {
-      "venue": "新大久保商店街",
-      "region_hint": "新宿区",
-      "in_tsukiji_30min_guess": false,
-      "source": "blogspot",
-      "source_title": "新宿区の盆おどり情報 2025年1月より [Shinjuku-p]",
-      "method": "blog_body",
-      "needs_review": true
-    },
-    {
-      "venue": "旧四谷第四小学校",
-      "region_hint": "新宿区",
-      "in_tsukiji_30min_guess": false,
-      "source": "blogspot",
-      "source_title": "新宿区の盆おどり情報 2025年1月より [Shinjuku-p]",
-      "method": "blog_body",
-      "needs_review": true
-    },
-    {
-      "venue": "歌舞伎町商店街",
-      "region_hint": "新宿区",
-      "in_tsukiji_30min_guess": false,
-      "source": "blogspot",
-      "source_title": "新宿区の盆おどり情報 2025年1月より [Shinjuku-p]",
-      "method": "blog_body",
-      "needs_review": true
-    },
-    {
-      "venue": "清水川橋公園",
-      "region_hint": "新宿区",
-      "in_tsukiji_30min_guess": false,
-      "source": "blogspot",
-      "source_title": "新宿区の盆おどり情報 2025年1月より [Shinjuku-p]",
-      "method": "blog_body",
-      "needs_review": true
-    },
-    {
-      "venue": "鶴巻小学校",
-      "region_hint": "新宿区",
-      "in_tsukiji_30min_guess": false,
-      "source": "blogspot",
-      "source_title": "新宿区の盆おどり情報 2025年1月より [Shinjuku-p]",
-      "method": "blog_body",
-      "needs_review": true
-    },
-    {
-      "venue": "代々木公園",
-      "region_hint": "渋谷区",
-      "in_tsukiji_30min_guess": false,
-      "source": "blogspot",
-      "source_title": "渋谷区の盆おどり情報 2026年1月より [Shibuya-q]",
-      "method": "blog_body",
-      "needs_review": true
-    },
-    {
-      "venue": "学生会館",
-      "region_hint": "目黒区",
-      "in_tsukiji_30min_guess": false,
-      "source": "blogspot",
-      "source_title": "目黒区の盆おどり情報 2025年1月より [Meguro-p]",
-      "method": "blog_body",
-      "needs_review": true
-    },
-    {
-      "venue": "桜フェスタ商店街",
-      "region_hint": "目黒区",
-      "in_tsukiji_30min_guess": false,
-      "source": "blogspot",
-      "source_title": "目黒区の盆おどり情報 2026年1月より [Meguro-q]",
-      "method": "blog_body",
-      "needs_review": true
-    },
-    {
-      "venue": "権之助坂商店街",
-      "region_hint": "目黒区",
-      "in_tsukiji_30min_guess": false,
-      "source": "blogspot",
-      "source_title": "目黒区の盆おどり情報 2025年1月より [Meguro-p]",
-      "method": "blog_body",
-      "needs_review": true
-    },
-    {
-      "venue": "目黒川船入場広場",
-      "region_hint": "目黒区",
-      "in_tsukiji_30min_guess": false,
-      "source": "blogspot",
-      "source_title": "目黒区の盆おどり情報 2025年1月より [Meguro-p]",
-      "method": "blog_body",
-      "needs_review": true
-    },
-    {
-      "venue": "祐天寺",
-      "region_hint": "目黒区",
-      "in_tsukiji_30min_guess": false,
-      "source": "blogspot",
-      "source_title": "目黒区の盆おどり情報 2025年1月より [Meguro-p]",
-      "method": "blog_body",
-      "needs_review": true
-    },
-    {
-      "venue": "自由が丘商店街",
-      "region_hint": "目黒区",
-      "in_tsukiji_30min_guess": false,
-      "source": "blogspot",
-      "source_title": "目黒区の盆おどり情報 2025年1月より [Meguro-p]",
-      "method": "blog_body",
-      "needs_review": true
-    },
-    {
-      "venue": "あらかわ遊園アリスの広場",
-      "region_hint": "荒川区",
-      "in_tsukiji_30min_guess": false,
-      "source": "blogspot",
-      "source_title": "荒川区の盆おどり情報 2026年1月より [Arakawa-q]",
-      "method": "blog_body",
-      "needs_review": true
-    },
-    {
-      "venue": "真土公園",
-      "region_hint": "荒川区",
-      "in_tsukiji_30min_guess": false,
-      "source": "blogspot",
-      "source_title": "荒川区の盆おどり情報 2026年1月より [Arakawa-q]",
-      "method": "blog_body",
-      "needs_review": true
-    }
-  ],
+  "research_later": [],
   "research_done_2026_06_10": [
     {
       "venue": "強運厄除けの神・東京銭洗い弁天",
@@ -697,6 +408,390 @@
       "result": "登録済み: 西大井広場公園／品川区民まつり 西大井広場公園 盆踊り",
       "notion_url": "https://app.notion.com/p/37b8be04e76281db930fdde3a6df2a84",
       "event_url": "https://app.notion.com/p/37b8be04e76281bb97b7f29fcab6ff14"
+    },
+    {
+      "venue": "向島百花会館",
+      "region_hint": "墨田区",
+      "in_tsukiji_30min_guess": true,
+      "source": "blogspot",
+      "source_title": "墨田区の盆おどり情報 2026年1月より [Sumida-q]",
+      "method": "blog_body",
+      "needs_review": true,
+      "result": "登録済み: 向島百花会館／西図子 盆踊りとおでんの宴",
+      "notion_url": "https://app.notion.com/p/37b8be04e76281f7a94ef5ded43b5514",
+      "event_url": "https://app.notion.com/p/37b8be04e76281dfb3e2dd68595d6023"
+    },
+    {
+      "venue": "代々木公園",
+      "region_hint": "渋谷区",
+      "in_tsukiji_30min_guess": false,
+      "source": "blogspot",
+      "source_title": "渋谷区の盆おどり情報 2026年1月より [Shibuya-q]",
+      "method": "blog_body",
+      "needs_review": true,
+      "result": "登録済み: 代々木公園野外ステージ／グリーン アイルランド フェスティバル 2026 アイリッシュ盆踊り",
+      "notion_url": "https://app.notion.com/p/37b8be04e76281afbc76fcc0625483f2",
+      "event_url": "https://app.notion.com/p/2026-37b8be04e76281c0bc89d0ae93d4eb26"
+    },
+    {
+      "venue": "桜フェスタ商店街",
+      "region_hint": "目黒区",
+      "in_tsukiji_30min_guess": false,
+      "source": "blogspot",
+      "source_title": "目黒区の盆おどり情報 2026年1月より [Meguro-q]",
+      "method": "blog_body",
+      "needs_review": true,
+      "result": "登録済み: 都立大学駅西口緑道／桜フェスタ商店街 みんなで盆踊り",
+      "notion_url": "https://app.notion.com/p/37b8be04e76281f8bb3ddccba747bebb",
+      "event_url": "https://app.notion.com/p/37b8be04e7628199b1b8f4a40e4a0b78"
+    },
+    {
+      "venue": "あらかわ遊園アリスの広場",
+      "region_hint": "荒川区",
+      "in_tsukiji_30min_guess": false,
+      "source": "blogspot",
+      "source_title": "荒川区の盆おどり情報 2026年1月より [Arakawa-q]",
+      "method": "blog_body",
+      "needs_review": true,
+      "result": "登録済み: あらかわ遊園アリスの広場／第60回あらかわ青年大会 アリストック",
+      "notion_url": "https://app.notion.com/p/37b8be04e7628118b711f5b06e31d218",
+      "event_url": "https://app.notion.com/p/60-37b8be04e76281128c93fe54cd14ea91"
+    },
+    {
+      "venue": "真土公園",
+      "region_hint": "荒川区",
+      "in_tsukiji_30min_guess": false,
+      "source": "blogspot",
+      "source_title": "荒川区の盆おどり情報 2026年1月より [Arakawa-q]",
+      "method": "blog_body",
+      "needs_review": true,
+      "result": "登録済み: 真土公園／荒川盆踊り会 初踊り",
+      "notion_url": "https://app.notion.com/p/37b8be04e76281639566d8a16770f7bd",
+      "event_url": "https://app.notion.com/p/37b8be04e7628184b9a6f861284adb26"
+    },
+    {
+      "venue": "さかもと朝顔広場",
+      "region_hint": "台東区",
+      "in_tsukiji_30min_guess": true,
+      "source": "blogspot",
+      "source_title": "台東区の盆おどり情報 2025年1月より [Taito-p]",
+      "method": "blog_body",
+      "needs_review": true,
+      "result": "登録済み: さかもと朝顔広場（旧坂本小学校跡地）／坂本町会 納涼祭",
+      "notion_url": "https://app.notion.com/p/37b8be04e7628151a094f54ad28b462d",
+      "event_url": "https://app.notion.com/p/37b8be04e762812bb9f8e5ce1a841f8f"
+    },
+    {
+      "venue": "大井銀座商店街",
+      "region_hint": "品川区",
+      "in_tsukiji_30min_guess": true,
+      "source": "blogspot",
+      "source_title": "品川区の盆おどり情報 2025年1月より [Sinagawa-p]",
+      "method": "blog_body",
+      "needs_review": true,
+      "result": "登録済み: 大井町駅前中央通り／第71回大井どんたく夏まつり 初日 盆踊り",
+      "notion_url": "https://app.notion.com/p/37b8be04e762813c821ad2aab803239b",
+      "event_url": "https://app.notion.com/p/71-37b8be04e7628139b06bfc46eba78336"
+    },
+    {
+      "venue": "大井駅前中央通り商店街",
+      "region_hint": "品川区",
+      "in_tsukiji_30min_guess": true,
+      "source": "blogspot",
+      "source_title": "品川区の盆おどり情報 2025年1月より [Sinagawa-p]",
+      "method": "blog_body",
+      "needs_review": true,
+      "result": "既存確認: 大井町駅前中央通り／第71回大井どんたく夏まつり 初日 盆踊り",
+      "notion_url": "https://app.notion.com/p/37b8be04e762813c821ad2aab803239b",
+      "event_url": "https://app.notion.com/p/71-37b8be04e7628139b06bfc46eba78336"
+    },
+    {
+      "venue": "旗の台稲荷通り商店街",
+      "region_hint": "品川区",
+      "in_tsukiji_30min_guess": true,
+      "source": "blogspot",
+      "source_title": "品川区の盆おどり情報 2025年1月より [Sinagawa-p]",
+      "method": "blog_body",
+      "needs_review": true,
+      "result": "登録済み: 旗の台稲荷通り商店街／旗の台稲荷通り商店会盆踊り 盆ROCK",
+      "notion_url": "https://app.notion.com/p/37b8be04e7628173a769ead10d96bf3c",
+      "event_url": "https://app.notion.com/p/ROCK-37b8be04e76281ca9592e9402cbf5da3"
+    },
+    {
+      "venue": "豊町一丁目会館",
+      "region_hint": "品川区",
+      "in_tsukiji_30min_guess": true,
+      "source": "blogspot",
+      "source_title": "品川区の盆おどり情報 2025年1月より [Sinagawa-p]",
+      "method": "blog_body",
+      "needs_review": true,
+      "result": "登録済み: 豊町一丁目会館前／戸越八幡神社例大祭 奉納盆踊り大会",
+      "notion_url": "https://app.notion.com/p/37b8be04e7628152999ff08890982097",
+      "event_url": "https://app.notion.com/p/37b8be04e762818a9c1df9891b3ae631"
+    },
+    {
+      "venue": "すみだ産業会館",
+      "region_hint": "墨田区",
+      "in_tsukiji_30min_guess": true,
+      "source": "blogspot",
+      "source_title": "墨田区の盆おどり情報 2025年1月より [Sumida-p]",
+      "method": "blog_body",
+      "needs_review": true,
+      "result": "登録済み: すみだ産業会館サンライズホール／第10回 すみだ輪おどり区民感謝デー",
+      "notion_url": "https://app.notion.com/p/37b8be04e7628191b232c92e186bfcd2",
+      "event_url": "https://app.notion.com/p/10-37b8be04e76281b5a1d0dfb4b64d1ead"
+    },
+    {
+      "venue": "伸成町会会館",
+      "region_hint": "墨田区",
+      "in_tsukiji_30min_guess": true,
+      "source": "blogspot",
+      "source_title": "墨田区の盆おどり情報 2025年1月より [Sumida-p]",
+      "method": "blog_body",
+      "needs_review": true,
+      "result": "登録済み: 伸成町会会館前 路上／押上三丁目伸成町会 飛木稲荷神社神幸大祭 祭礼踊り",
+      "notion_url": "https://app.notion.com/p/37b8be04e76281e78a84f3dacc3b320b",
+      "event_url": "https://app.notion.com/p/37b8be04e76281a9815cd205bc1d118a"
+    },
+    {
+      "venue": "向島1丁目旧町会会館",
+      "region_hint": "墨田区",
+      "in_tsukiji_30min_guess": true,
+      "source": "blogspot",
+      "source_title": "墨田区の盆おどり情報 2025年1月より [Sumida-p]",
+      "method": "blog_body",
+      "needs_review": true,
+      "result": "登録済み: 向島1丁目旧町会会館前／向島一丁目 牛嶋神社 ミニ奉納踊り",
+      "notion_url": "https://app.notion.com/p/1-37b8be04e76281b48fd4e0d9535703ab",
+      "event_url": "https://app.notion.com/p/37b8be04e762814d90d7d8790716b9ca"
+    },
+    {
+      "venue": "報恩寺",
+      "region_hint": "墨田区",
+      "in_tsukiji_30min_guess": true,
+      "source": "blogspot",
+      "source_title": "墨田区の盆おどり情報 2025年1月より [Sumida-p]",
+      "method": "blog_body",
+      "needs_review": true,
+      "result": "登録済み: 報恩寺境内／太平一丁目 牛嶋神社 奉納踊り",
+      "notion_url": "https://app.notion.com/p/37b8be04e7628127944de367b9cba5ee",
+      "event_url": "https://app.notion.com/p/37b8be04e762815aae0fdd0df2a3e5bd"
+    },
+    {
+      "venue": "押上二丁目町会会館",
+      "region_hint": "墨田区",
+      "in_tsukiji_30min_guess": true,
+      "source": "blogspot",
+      "source_title": "墨田区の盆おどり情報 2025年1月より [Sumida-p]",
+      "method": "blog_body",
+      "needs_review": true,
+      "result": "登録済み: 押上二丁目町会会館前 路上／押上二町目町会 飛木稲荷神社神幸大祭 奉納おどり",
+      "notion_url": "https://app.notion.com/p/37b8be04e76281f49331f058deb3a47d",
+      "event_url": "https://app.notion.com/p/37b8be04e76281c29574ce9f1bbe93b2"
+    },
+    {
+      "venue": "石一町会会館",
+      "region_hint": "墨田区",
+      "in_tsukiji_30min_guess": true,
+      "source": "blogspot",
+      "source_title": "墨田区の盆おどり情報 2025年1月より [Sumida-p]",
+      "method": "blog_body",
+      "needs_review": true,
+      "result": "登録済み: 石一町会会館前／石原一丁目 牛嶋神社 奉納踊り",
+      "notion_url": "https://app.notion.com/p/37b8be04e76281738275d6d25bb84374",
+      "event_url": "https://app.notion.com/p/37b8be04e762816e8f4ed7d092a150d4"
+    },
+    {
+      "venue": "菊一お祭り広場",
+      "region_hint": "墨田区",
+      "in_tsukiji_30min_guess": true,
+      "source": "blogspot",
+      "source_title": "墨田区の盆おどり情報 2025年1月より [Sumida-p]",
+      "method": "blog_body",
+      "needs_review": true,
+      "result": "登録済み: 中和小学校／菊川一丁目町会 菊一お祭り広場・盆踊り大会",
+      "notion_url": "https://app.notion.com/p/3718be04e7628127a11ff4f5e3b4927d",
+      "event_url": "https://app.notion.com/p/37b8be04e76281339438e5cf7d5ea5b9"
+    },
+    {
+      "venue": "ハマサイト前広場",
+      "region_hint": "港区",
+      "in_tsukiji_30min_guess": true,
+      "source": "blogspot",
+      "source_title": "港区の盆おどり情報 2025年1月より [Minato-p]",
+      "method": "blog_body",
+      "needs_review": true,
+      "result": "登録済み: ハマサイト前広場・汐留ビルディング外構／第16回ハマサイトの夏祭り",
+      "notion_url": "https://app.notion.com/p/37b8be04e76281dfb638c68446081791",
+      "event_url": "https://app.notion.com/p/16-37b8be04e76281c89eeecb82e1ac2061"
+    },
+    {
+      "venue": "下落合公園",
+      "region_hint": "新宿区",
+      "in_tsukiji_30min_guess": false,
+      "source": "blogspot",
+      "source_title": "新宿区の盆おどり情報 2025年1月より [Shinjuku-p]",
+      "method": "blog_body",
+      "needs_review": true,
+      "result": "登録済み: 下落合公園／下落合四丁目町会 盆踊り大会",
+      "notion_url": "https://app.notion.com/p/37b8be04e7628158a762ec68abb1bbca",
+      "event_url": "https://app.notion.com/p/37b8be04e76281a084bdfaa1cbd5cd68"
+    },
+    {
+      "venue": "北新宿公園",
+      "region_hint": "新宿区",
+      "in_tsukiji_30min_guess": false,
+      "source": "blogspot",
+      "source_title": "新宿区の盆おどり情報 2025年1月より [Shinjuku-p]",
+      "method": "blog_body",
+      "needs_review": true,
+      "result": "登録済み: 北新宿公園／柏木地区6町会盆踊り大会",
+      "notion_url": "https://app.notion.com/p/37b8be04e762811d9de6f05990297ea8",
+      "event_url": "https://app.notion.com/p/6-37b8be04e76281c1b300dec9954fc2c8"
+    },
+    {
+      "venue": "北柏木公園",
+      "region_hint": "新宿区",
+      "in_tsukiji_30min_guess": false,
+      "source": "blogspot",
+      "source_title": "新宿区の盆おどり情報 2025年1月より [Shinjuku-p]",
+      "method": "blog_body",
+      "needs_review": true,
+      "result": "登録済み: 北柏木公園／北新宿四丁目 盆踊り大会",
+      "notion_url": "https://app.notion.com/p/37b8be04e762819fb089d7b2dcab0686",
+      "event_url": "https://app.notion.com/p/37b8be04e76281a7b8b9f7b1c46051c8"
+    },
+    {
+      "venue": "原町天祖神社",
+      "region_hint": "新宿区",
+      "in_tsukiji_30min_guess": false,
+      "source": "blogspot",
+      "source_title": "新宿区の盆おどり情報 2025年1月より [Shinjuku-p]",
+      "method": "blog_body",
+      "needs_review": true,
+      "result": "登録済み: 原町天祖神社／原町一丁目町会 天祖神社例大祭 盆踊り",
+      "notion_url": "https://app.notion.com/p/37b8be04e76281cab10ec7a1f9eb6666",
+      "event_url": "https://app.notion.com/p/37b8be04e762818b9111c5655acd52ed"
+    },
+    {
+      "venue": "新大久保商店街",
+      "region_hint": "新宿区",
+      "in_tsukiji_30min_guess": false,
+      "source": "blogspot",
+      "source_title": "新宿区の盆おどり情報 2025年1月より [Shinjuku-p]",
+      "method": "blog_body",
+      "needs_review": true,
+      "result": "登録済み: JR新大久保駅北側から東方向／第42回大久保まつり パレード 百人町民民謡おどり",
+      "notion_url": "https://app.notion.com/p/JR-37b8be04e76281cda989ca64e2309b2e",
+      "event_url": "https://app.notion.com/p/42-37b8be04e76281f490d7e8b99877ddc7"
+    },
+    {
+      "venue": "旧四谷第四小学校",
+      "region_hint": "新宿区",
+      "in_tsukiji_30min_guess": false,
+      "source": "blogspot",
+      "source_title": "新宿区の盆おどり情報 2025年1月より [Shinjuku-p]",
+      "method": "blog_body",
+      "needs_review": true,
+      "result": "登録済み: 四谷ひろばグラウンド（旧四谷第四小学校）／第25回 四谷納涼踊り大会",
+      "notion_url": "https://app.notion.com/p/37b8be04e7628110b46cc9bc2eedeb96",
+      "event_url": "https://app.notion.com/p/25-37b8be04e7628175b285d7228378afa2"
+    },
+    {
+      "venue": "歌舞伎町商店街",
+      "region_hint": "新宿区",
+      "in_tsukiji_30min_guess": false,
+      "source": "blogspot",
+      "source_title": "新宿区の盆おどり情報 2025年1月より [Shinjuku-p]",
+      "method": "blog_body",
+      "needs_review": true,
+      "result": "既存確認: 歌舞伎町シネシティ広場／歌舞伎町BON ODORI",
+      "notion_url": "https://app.notion.com/p/37b8be04e76281d0a544e408737a9682",
+      "event_url": "https://app.notion.com/p/BON-ODORI-37b8be04e76281828c27f7ff7febcffe"
+    },
+    {
+      "venue": "清水川橋公園",
+      "region_hint": "新宿区",
+      "in_tsukiji_30min_guess": false,
+      "source": "blogspot",
+      "source_title": "新宿区の盆おどり情報 2025年1月より [Shinjuku-p]",
+      "method": "blog_body",
+      "needs_review": true,
+      "result": "登録済み: 清水川橋公園／下落合町会知久会 第9回盆踊り",
+      "notion_url": "https://app.notion.com/p/37b8be04e76281dfac8cd9323e7fdcc1",
+      "event_url": "https://app.notion.com/p/9-37b8be04e762813cb717ebd16fab4a21"
+    },
+    {
+      "venue": "鶴巻小学校",
+      "region_hint": "新宿区",
+      "in_tsukiji_30min_guess": false,
+      "source": "blogspot",
+      "source_title": "新宿区の盆おどり情報 2025年1月より [Shinjuku-p]",
+      "method": "blog_body",
+      "needs_review": true,
+      "result": "登録済み: 鶴巻小学校／鶴巻小学校 納涼盆踊り大会＆子ども祭り",
+      "notion_url": "https://app.notion.com/p/37b8be04e76281bd9752ec627bc1f69a",
+      "event_url": "https://app.notion.com/p/37b8be04e76281b6bc5de12bb9324924"
+    },
+    {
+      "venue": "学生会館",
+      "region_hint": "目黒区",
+      "in_tsukiji_30min_guess": false,
+      "source": "blogspot",
+      "source_title": "目黒区の盆おどり情報 2025年1月より [Meguro-p]",
+      "method": "blog_body",
+      "needs_review": true,
+      "result": "登録済み: 東京大学駒場キャンパス 学生会館東／盆踊り in 駒場東大",
+      "notion_url": "https://app.notion.com/p/37b8be04e76281aba50dd6ed9956a130",
+      "event_url": "https://app.notion.com/p/in-37b8be04e762819da563c6545d96a823"
+    },
+    {
+      "venue": "権之助坂商店街",
+      "region_hint": "目黒区",
+      "in_tsukiji_30min_guess": false,
+      "source": "blogspot",
+      "source_title": "目黒区の盆おどり情報 2025年1月より [Meguro-p]",
+      "method": "blog_body",
+      "needs_review": true,
+      "result": "登録済み: JR目黒駅西口前／地域のふれあい第37回盆踊り大会",
+      "notion_url": "https://app.notion.com/p/JR-37b8be04e7628117b3cdc48a1797f38a",
+      "event_url": "https://app.notion.com/p/37-37b8be04e76281579f07d1e13ef38d34"
+    },
+    {
+      "venue": "目黒川船入場広場",
+      "region_hint": "目黒区",
+      "in_tsukiji_30min_guess": false,
+      "source": "blogspot",
+      "source_title": "目黒区の盆おどり情報 2025年1月より [Meguro-p]",
+      "method": "blog_body",
+      "needs_review": true,
+      "result": "登録済み: フナイリバ（目黒川船入場広場）／中目黒盆踊り大会 2025",
+      "notion_url": "https://app.notion.com/p/37b8be04e76281d9bf43c241cddc0c89",
+      "event_url": "https://app.notion.com/p/2025-37b8be04e76281d68ee5e183b893f7f6"
+    },
+    {
+      "venue": "祐天寺",
+      "region_hint": "目黒区",
+      "in_tsukiji_30min_guess": false,
+      "source": "blogspot",
+      "source_title": "目黒区の盆おどり情報 2025年1月より [Meguro-p]",
+      "method": "blog_body",
+      "needs_review": true,
+      "result": "登録済み: 祐天寺境内／第90回 祐天寺み魂まつり こども盆踊り大会",
+      "notion_url": "https://app.notion.com/p/37b8be04e762819e84daf555fe400746",
+      "event_url": "https://app.notion.com/p/90-37b8be04e76281ecb3fdf1d354151f62"
+    },
+    {
+      "venue": "自由が丘商店街",
+      "region_hint": "目黒区",
+      "in_tsukiji_30min_guess": false,
+      "source": "blogspot",
+      "source_title": "目黒区の盆おどり情報 2025年1月より [Meguro-p]",
+      "method": "blog_body",
+      "needs_review": true,
+      "result": "登録済み: 自由が丘駅前ロータリー 特設会場／自由が丘納涼盆踊り大会",
+      "notion_url": "https://app.notion.com/p/37b8be04e76281b7bc14f7a257a1e01e",
+      "event_url": "https://app.notion.com/p/37b8be04e762817c93bfd2fafc0103c3"
     }
   ],
   "note": "2026-06-10 こと: 優先19件の調査・登録完了（新規会場12・新規イベント10・既存補正2）。research_later の35件（品川/墨田の町会会館・商店街、新宿の小公園、目黒区など小規模中心）が残り。会場マスタに地域表記ゆれの重複3組あり: JR苅田駅前広場×2 / 旧江別小学校×2 / 本住吉神社×2（要マージ）。"

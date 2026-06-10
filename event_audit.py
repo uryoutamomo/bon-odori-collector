@@ -7,7 +7,7 @@ import re
 import unicodedata
 from urllib.parse import urlsplit, urlunsplit
 
-from notion_api import NotionApi, plain_text, validate_data_source
+from notion_api import NotionApi, date_value, plain_text, validate_data_source
 from notion_config import (
     EVENT_DATA_SOURCE_ID,
     VENUE_DATA_SOURCE_ID,
@@ -45,6 +45,12 @@ def duplicate_groups(rows):
         props = row.get("properties", {})
         name = plain_text(props.get("イベント名"))
         url = plain_text(props.get("情報源URL"))
+        date_info = date_value(props.get("開催日")) or {}
+        venue_ids = sorted({
+            relation.get("id")
+            for relation in props.get("会場", {}).get("relation", [])
+            if relation.get("id")
+        })
         keys = {
             "name": normalize_event_name(name),
             "url": normalize_source_url(url),
@@ -53,6 +59,8 @@ def duplicate_groups(rows):
             "id": row.get("id"),
             "name": name,
             "url": url,
+            "date": date_info.get("start"),
+            "venue_ids": venue_ids,
         }
         for kind, key in keys.items():
             if key:
@@ -68,11 +76,24 @@ def duplicate_groups(rows):
         if len(pages) < 2:
             continue
         names = [normalize_event_name(page["name"]) for page in pages]
-        max_similarity = max(
-            SequenceMatcher(None, left, right).ratio()
-            for index, left in enumerate(names)
-            for right in names[index + 1:]
-        )
+        max_similarity = 0
+        suspicious_pair = False
+        for index, left in enumerate(names):
+            for right_index, right in enumerate(names[index + 1:], start=index + 1):
+                similarity = SequenceMatcher(None, left, right).ratio()
+                max_similarity = max(max_similarity, similarity)
+                left_page = pages[index]
+                right_page = pages[right_index]
+                same_date = (
+                    left_page.get("date")
+                    and left_page.get("date") == right_page.get("date")
+                )
+                same_venue = bool(
+                    set(left_page.get("venue_ids", []))
+                    & set(right_page.get("venue_ids", []))
+                )
+                if similarity >= 0.75 and same_date and same_venue:
+                    suspicious_pair = True
         group = {
             "key": key,
             "name_similarity": round(max_similarity, 3),
@@ -80,7 +101,7 @@ def duplicate_groups(rows):
         }
         target = (
             suspicious_url_groups
-            if max_similarity >= 0.75
+            if suspicious_pair
             else shared_url_groups
         )
         target.append(group)
