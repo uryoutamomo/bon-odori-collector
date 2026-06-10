@@ -1,6 +1,35 @@
 {
   "candidates": [
     {
+      "event_id": "3778be04-e762-81dd-9960-c1bba13542e4",
+      "event_name": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026",
+      "venues": [
+        "上野恩賜公園"
+      ],
+      "current_date": null,
+      "current_date_end": null,
+      "new_date": "2026-07-03",
+      "new_date_end": "2026-07-05",
+      "score": 20,
+      "reasons": [
+        "event_name_exact",
+        "extracted_event_name",
+        "venue_exact",
+        "schedule_word"
+      ],
+      "source": "x_proactive",
+      "account": "@hidejitokani",
+      "spoken_at": "2026-06-06T22:10:40+00:00",
+      "url": "https://x.com/hidejitokani/status/2063383097476079901",
+      "text": "ふるさと東京応援祭\n第三回ビールと浴衣de盆踊りin上野2026\n\n2026年7月3日（金）〜7月5日（日）\n\n上野恩賜公園で開催！\nビールと盆踊りの夏祭り\n\n#台東区 #上野 #谷中\n#イベント #フェス\n\nhttps://t.co/eXUZckhuOG",
+      "raw_date": "2026年7月3日（金）〜7月5日",
+      "extracted_event_names": [
+        "第三回ビールと浴衣de盆踊り",
+        "ビールと盆踊りの夏祭り"
+      ],
+      "refresh_only": false
+    },
+    {
       "event_id": "37b8be04-e762-81dc-9b60-e97b6cd3dc92",
       "event_name": "桜まつり",
       "venues": [
@@ -209,8 +238,8 @@
       ],
       "source": "youtube",
       "account": "@wadaikoCH",
-      "spoken_at": "2026-06-09T10:30:18+00:00",
-      "url": "https://www.youtube.com/watch?v=JX5otrjUER4",
+      "spoken_at": "2026-06-10T10:30:18+00:00",
+      "url": "https://www.youtube.com/watch?v=yBZ1rXA6LRo",
       "text": "2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://youtu.be/Nd1ADi6TxuM\n10ふるさと北区　https://youtu.be/UBGvAcTE6_E\n11佐渡の恋唄　https://youtu.be/PL7Fgs0ifSU\n12恋をするなら　https://youtu.be/NYWWFBYXeCE\n13ゆかた",
       "raw_date": "2026年5月24日",
       "extracted_event_names": [
