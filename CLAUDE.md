@@ -11,12 +11,17 @@
 - `data/latest.json` — 最新スナップショット（現在取得できた全件）
 - `data/seen.json` — これまでに見た URL の履歴（累積）
 - `data/proactive_event_report.json` — 定番イベントの今年情報の確認状況
+- `promote_event_dates.py` — X投稿・東京盆踊りマップ由来の構造化行から、高信頼の開催日だけイベントDBへ反映
 
 ## 動作の要点
 
 - **`latest.json` は「現在取得できた記事の全件スナップショット」**。差分（新着のみ）ではない。
   以前は新着のみを書く実装で、`seen.json` が埋まると `[]` になる問題があった（2026-05-29 に全件方式へ変更）。
 - `seen.json` は履歴として累積し続ける（重複検知用に保持）。
+- 日次収集では、収集後に `promote_event_dates.py --apply` を実行する。
+  - 自動反映は高信頼候補のみ。低信頼候補は `data/event_date_update_candidates.json` に残してレビュー対象にする。
+  - 反映後に `sync_venue_master.py` と `export_public_events.py` を再実行し、公開JSONへ `date` / `date_end` / `hints` / `jun` を反映する。
+  - 反映後にも `event_audit.py --fail-on-duplicates` を実行し、重複が出た場合はジョブを失敗させる。
 
 ## Notion 連携（重要）
 
