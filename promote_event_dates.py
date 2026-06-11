@@ -18,6 +18,17 @@ TARGET_YEAR = 2026
 EVENT_WORDS = ("盆踊り", "盆おどり", "盆踊", "納涼", "夏祭り", "まつり", "祭り", "音頭", "輪踊り")
 SCHEDULE_WORDS = ("開催", "予定", "日程", "決定", "発表", "お知らせ", "告知")
 NEGATIVE_WORDS = ("中止", "延期", "順延", "雨天中止")
+GENERIC_EVENT_NAMES = {
+    "盆踊り大会",
+    "盆おどり大会",
+    "盆踊り",
+    "盆おどり",
+    "納涼大会",
+    "夏祭り",
+    "まつり",
+    "祭り",
+    "桜まつり",
+}
 DATE_SEP = r"(?:-|〜|~|ー|－|–|—|から|・)"
 
 JP_YEAR_MD_RE = re.compile(
@@ -50,6 +61,13 @@ def norm(text):
     text = text.replace("集い", "つどい")
     text = text.replace("踊り", "おどり")
     return text.casefold()
+
+
+def is_generic_event_name(text):
+    value = norm(text)
+    if value in GENERIC_EVENT_NAMES:
+        return True
+    return value in {"盆おどり", "納涼", "夏まつり", "さくらまつり"}
 
 
 def text_prop(text):
@@ -139,7 +157,7 @@ def score_match(event, voice_text, extracted_names, source=None):
     name_norm = norm(event_name)
     score = 0
     reasons = []
-    generic_name = name_norm in {"盆踊り大会", "盆おどり大会", "納涼大会", "夏祭り", "まつり", "祭り"}
+    generic_name = is_generic_event_name(event_name)
     venue_exact = any(norm(venue) and norm(venue) in text_norm for venue in venue_names)
     name_matched = bool(name_norm and name_norm in text_norm and not generic_name)
     extracted_matched = False
@@ -148,7 +166,7 @@ def score_match(event, voice_text, extracted_names, source=None):
         reasons.append("event_name_exact")
     for extracted in extracted_names:
         ex_norm = norm(extracted)
-        if ex_norm and (ex_norm in name_norm or name_norm in ex_norm):
+        if ex_norm and not is_generic_event_name(extracted) and (ex_norm in name_norm or name_norm in ex_norm):
             extracted_matched = True
             score += 6
             reasons.append("extracted_event_name")
