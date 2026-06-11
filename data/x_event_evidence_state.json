@@ -1,7 +1,7 @@
 {
-  "status": "awaiting_review",
-  "window_start": "2025-06-10T00:00:00+00:00",
-  "window_end": "2025-06-24T00:00:00+00:00",
+  "status": "in_progress",
+  "window_start": "2025-06-24T00:00:00+00:00",
+  "window_end": "2025-07-08T00:00:00+00:00",
   "selected_handles": [
     "@2tsuo_g",
     "@5khfya5pjksggov",
@@ -55,20 +55,27 @@
     "@yurubon_off"
   ],
   "selection_id": "664d239cbfb21c903b90366b808d6e5ebcf0e7024980d3bd613f6d865df58cf9",
-  "batch_index": 2,
+  "batch_index": 0,
   "batch_cursors": {},
-  "completed_batches": [
-    0,
-    1,
-    2
-  ],
-  "pages_completed": 58,
-  "tweets_scanned": 1075,
-  "evidence_detected": 185,
+  "completed_batches": [],
+  "pages_completed": 0,
+  "tweets_scanned": 0,
+  "evidence_detected": 0,
   "pending_evidence": [],
-  "started_at": "2026-06-10T04:35:21.599846+00:00",
-  "updated_at": "2026-06-10T04:39:06.844820+00:00",
-  "completed_at": "2026-06-10T04:39:06.850618+00:00",
-  "covered_until": "2025-06-24T00:00:00+00:00",
-  "pending_cleared_at": "2026-06-10T04:40:41.171587+00:00"
+  "started_at": "2026-06-11T14:42:39.360318+00:00",
+  "updated_at": "2026-06-11T14:42:39.360318+00:00",
+  "window_history": [
+    {
+      "window_start": "2025-06-10T00:00:00+00:00",
+      "window_end": "2025-06-24T00:00:00+00:00",
+      "covered_until": "2025-06-24T00:00:00+00:00",
+      "completed_at": "2026-06-10T04:39:06.850618+00:00",
+      "reviewed_at": "2026-06-11T14:42:39.360318+00:00",
+      "review_note": "initial pilot fragments archived/reviewed; advance v2 candidate queue verification window",
+      "pages_completed": 58,
+      "tweets_scanned": 1075,
+      "evidence_detected": 185
+    }
+  ],
+  "previous_covered_until": "2025-06-24T00:00:00+00:00"
 }
