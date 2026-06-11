@@ -1,8 +1,8 @@
 {
   "generated_by": "build_event_song_candidates.py",
-  "count": 94,
+  "count": 97,
   "public_event_count": 16,
-  "review_count": 78,
+  "review_count": 81,
   "candidates": [
     {
       "id": "addaf74cfe28988f",
@@ -421,6 +421,29 @@
       ],
       "already_public": false,
       "evidence_count": 2
+    },
+    {
+      "id": "fbe40233c5cab109",
+      "song_name": "大東京音頭",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "中",
+      "reasons": [
+        "known_song_context",
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/_masakari/status/2065078577687863764",
+          "date": "2026-06-11T14:27:54+00:00",
+          "text": "まさかり (盆踊り／奉納踊り／輪踊り) 記録用\n6/11(木)19:00~20:30\nさくら公園盆踊り大会 盆踊り練習会\n椿音頭(うちわ)を初めて踊った。\n\n365日の紙飛行機の、最後の決めポーズが勉強になった。\n\n同級会音頭\nドンパン節\n花の盆踊り\n東京音頭\n大東京音頭\n\n快く受け入れて頂き、ありがとうございました。楽しかったです。"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
     },
     {
       "id": "0e228fe74d97cc66",
@@ -2523,6 +2546,50 @@
       "evidence_count": 1
     },
     {
+      "id": "dd72282a408a7474",
+      "song_name": "ドンパン節",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/_masakari/status/2065078577687863764",
+          "date": "2026-06-11T14:27:54+00:00",
+          "text": "まさかり (盆踊り／奉納踊り／輪踊り) 記録用\n6/11(木)19:00~20:30\nさくら公園盆踊り大会 盆踊り練習会\n椿音頭(うちわ)を初めて踊った。\n\n365日の紙飛行機の、最後の決めポーズが勉強になった。\n\n同級会音頭\nドンパン節\n花の盆踊り\n東京音頭\n大東京音頭\n\n快く受け入れて頂き、ありがとうございました。楽しかったです。"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "9a9ec17f51ea7795",
+      "song_name": "同級会音頭",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/_masakari/status/2065078577687863764",
+          "date": "2026-06-11T14:27:54+00:00",
+          "text": "まさかり (盆踊り／奉納踊り／輪踊り) 記録用\n6/11(木)19:00~20:30\nさくら公園盆踊り大会 盆踊り練習会\n椿音頭(うちわ)を初めて踊った。\n\n365日の紙飛行機の、最後の決めポーズが勉強になった。\n\n同級会音頭\nドンパン節\n花の盆踊り\n東京音頭\n大東京音頭\n\n快く受け入れて頂き、ありがとうございました。楽しかったです。"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
       "id": "94e61c72ada5ef8e",
       "song_name": "吸血音頭",
       "event_name": "盆踊り大会",
@@ -2567,7 +2634,7 @@
       "evidence_count": 1
     },
     {
-      "id": "f5b7700fdd8cdf53",
+      "id": "74b4b77223dd58c8",
       "song_name": "東京音頭",
       "event_name": "盆踊り大会",
       "venue": "木場二丁目公園",
@@ -2575,9 +2642,16 @@
       "status": "未確認",
       "confidence": "低",
       "reasons": [
+        "known_song_context",
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/_masakari/status/2065078577687863764",
+          "date": "2026-06-11T14:27:54+00:00",
+          "text": "まさかり (盆踊り／奉納踊り／輪踊り) 記録用\n6/11(木)19:00~20:30\nさくら公園盆踊り大会 盆踊り練習会\n椿音頭(うちわ)を初めて踊った。\n\n365日の紙飛行機の、最後の決めポーズが勉強になった。\n\n同級会音頭\nドンパン節\n花の盆踊り\n東京音頭\n大東京音頭\n\n快く受け入れて頂き、ありがとうございました。楽しかったです。"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=bKGzyQHWWcI",
@@ -2658,7 +2732,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 13
+      "evidence_count": 14
     },
     {
       "id": "31c8dd13cc51c078",
