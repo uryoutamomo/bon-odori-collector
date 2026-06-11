@@ -34,8 +34,8 @@ def load_json(path):
         return json.load(handle)
 
 
-def source_rows():
-    data = load_json(REVIEW_SOURCE)
+def source_rows(path):
+    data = load_json(path)
     return {row["term"]: row for row in data.get("rows", [])}
 
 
@@ -89,7 +89,9 @@ def update_existing_props(song_name, source, note):
 
 def main():
     parser = argparse.ArgumentParser()
+    parser.add_argument("--source", type=Path, default=REVIEW_SOURCE)
     parser.add_argument("--decisions", type=Path, default=DECISIONS)
+    parser.add_argument("--out", type=Path, default=OUT)
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
 
@@ -100,7 +102,7 @@ def main():
     if not args.decisions.exists():
         raise SystemExit(f"decisions file not found: {args.decisions}")
 
-    sources = source_rows()
+    sources = source_rows(args.source)
     songs = title_index(SONG_DB_ID)
     created = []
     updated = []
@@ -161,6 +163,7 @@ def main():
 
     result = {
         "dry_run": args.dry_run,
+        "source": str(args.source),
         "decisions": str(args.decisions),
         "created_count": len(created),
         "updated_count": len(updated),
@@ -173,13 +176,13 @@ def main():
         "held": held,
         "skipped": skipped,
     }
-    OUT.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    args.out.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(
         "done: created={created_count} updated={updated_count} "
         "rejected={rejected_count} held={held_count} skipped={skipped_count} "
         "dry_run={dry_run}".format(**result)
     )
-    print(f"wrote {OUT}")
+    print(f"wrote {args.out}")
 
 
 if __name__ == "__main__":

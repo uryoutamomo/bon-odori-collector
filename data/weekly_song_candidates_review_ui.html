@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>週次収穫レビュー（曲候補）</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f8fa;
+      --panel: #fff;
+      --text: #20242a;
+      --muted: #667085;
+      --line: #d8dee8;
+      --accent: #0f766e;
+      --danger: #b42318;
+      --warn: #a15c07;
+      --hold: #475467;
+      --blue: #2563eb;
+      --purple: #7c3aed;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(247, 248, 250, .96);
+      border-bottom: 1px solid var(--line);
+      padding: 14px 20px;
+      backdrop-filter: blur(8px);
+    }
+    h1 { margin: 0 0 8px; font-size: 20px; letter-spacing: 0; }
+    .toolbar { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+    .summary { color: var(--muted); font-size: 14px; margin-right: auto; }
+    button {
+      border: 1px solid var(--line);
+      background: white;
+      border-radius: 6px;
+      padding: 7px 10px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    button.primary { border-color: var(--accent); background: var(--accent); color: white; }
+    main { padding: 18px 20px 40px; max-width: 1200px; margin: 0 auto; }
+    .filters { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 14px; }
+    .filter {
+      border: 1px solid var(--line);
+      background: white;
+      border-radius: 999px;
+      padding: 6px 10px;
+      color: var(--muted);
+      cursor: pointer;
+      font-size: 13px;
+    }
+    .filter.active { border-color: var(--accent); color: var(--accent); font-weight: 700; }
+    section { margin: 20px 0; }
+    h2 { font-size: 16px; margin: 0 0 10px; }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 12px;
+      margin: 10px 0;
+    }
+    .card.active { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(15,118,110,.14); }
+    .row-head {
+      display: grid;
+      grid-template-columns: minmax(130px, 220px) minmax(0, 1fr) auto;
+      gap: 12px;
+      align-items: start;
+    }
+    .term { font-size: 17px; font-weight: 800; }
+    .meta { color: var(--muted); font-size: 12px; margin-top: 2px; }
+    .interpretation { font-size: 14px; }
+    .choices { display: grid; grid-template-columns: repeat(var(--choice-count), 86px); gap: 6px; }
+    .choice {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 34px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      font-size: 13px;
+      cursor: pointer;
+      user-select: none;
+      background: white;
+    }
+    .choice input { display: none; }
+    .choice:has(input:checked) { color: white; font-weight: 700; }
+    .choice.accept:has(input:checked) { background: var(--accent); border-color: var(--accent); }
+    .choice.reject:has(input:checked) { background: var(--danger); border-color: var(--danger); }
+    .choice.merge:has(input:checked) { background: var(--warn); border-color: var(--warn); }
+    .choice.hold:has(input:checked) { background: var(--hold); border-color: var(--hold); }
+    .choice.extra1:has(input:checked) { background: var(--blue); border-color: var(--blue); }
+    .choice.extra2:has(input:checked) { background: var(--purple); border-color: var(--purple); }
+    details { margin-top: 10px; color: var(--muted); font-size: 13px; }
+    details p { margin: 8px 0; color: var(--text); white-space: pre-wrap; }
+    .source {
+      border-left: 3px solid var(--line);
+      padding: 6px 10px;
+      margin: 8px 0;
+      background: var(--bg);
+      border-radius: 0 6px 6px 0;
+    }
+    .source-meta { color: var(--muted); font-size: 12px; margin-bottom: 2px; }
+    .source-text { color: var(--text); font-size: 13px; white-space: pre-wrap; }
+    .note {
+      margin-top: 10px;
+      width: 100%;
+      min-height: 34px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 8px;
+      font: inherit;
+      resize: vertical;
+    }
+    .help { color: var(--muted); font-size: 13px; width: 100%; }
+    kbd {
+      border: 1px solid var(--line);
+      border-bottom-width: 2px;
+      border-radius: 4px;
+      background: white;
+      padding: 1px 5px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 12px;
+    }
+    a { color: var(--accent); }
+    @media (max-width: 760px) {
+      .row-head { grid-template-columns: 1fr; }
+      .choices { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>週次収穫レビュー（曲候補）</h1>
+    <div class="toolbar">
+      <div class="summary" id="summary"></div>
+      <button type="button" id="showUnreviewed">未判定だけ</button>
+      <button type="button" id="showAll">全部表示</button>
+      <button type="button" class="primary" id="exportJson">結果JSONをダウンロード</button>
+      <div class="help">
+        <kbd>j</kbd>/<kbd>k</kbd> 移動　
+        <kbd>1</kbd>-<kbd>9</kbd> 判定　
+        <kbd>n</kbd> メモ
+        <kbd>s</kbd> ソース
+        <kbd>u</kbd> 未判定表示　
+        <kbd>a</kbd> 全部表示　
+        <kbd>e</kbd> 書き出し
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="filters" id="filters"></div>
+    <div id="app"></div>
+  </main>
+  <script>
+    const TERMS = [{"_key": "まんず青山の郡上おどり||曲候補||曲名||https://x.com/taka_S_hiho/status/2063608885966225455", "term": "まんず青山の郡上おどり", "category": "曲候補", "summary": [{"label": "canonical_song_name", "value": "まんず青山の郡上おどり"}, {"label": "triage_reason", "value": "多義語・イベント名・ジャンル名の可能性がある"}, {"label": "evidence_count", "value": "1"}], "details": [{"label": "reason", "value": "曲名抽出器で検出: song_suffix_near_context"}, {"label": "evidence_text", "value": "嗚呼～帰ってきちゃったなぁ～ 明日から何を楽しみにいきればいいのぉ～ とおもったけど、盆踊りシーズンくるわ。まんず青山の郡上おどりを楽しみに生きる!"}, {"label": "evidence_url", "value": "https://x.com/taka_S_hiho/status/2063608885966225455"}], "sources": [{"text": "嗚呼～帰ってきちゃったなぁ～ 明日から何を楽しみにいきればいいのぉ～ とおもったけど、盆踊りシーズンくるわ。まんず青山の郡上おどりを楽しみに生きる!", "account": "@taka_S_hiho", "date": "2026-06-07T13:07:53+00:00", "url": "https://x.com/taka_S_hiho/status/2063608885966225455"}], "preloaded": {}}, {"_key": "よさこい踊り||曲候補||曲名||https://x.com/MY26Go/status/2063588780511223927", "term": "よさこい踊り", "category": "曲候補", "summary": [{"label": "canonical_song_name", "value": "よさこい踊り"}, {"label": "triage_reason", "value": "多義語・イベント名・ジャンル名の可能性がある"}, {"label": "evidence_count", "value": "1"}], "details": [{"label": "reason", "value": "曲名抽出器で検出: song_suffix_near_context"}, {"label": "evidence_text", "value": "@fever360AI 盆踊りだとおとなしい踊りになってしまって、思案した結果、よさこい踊り風がいいのかなと思い作りました😁 もう少し別な映像が入れば、もう少しメリハリがつくかな？"}, {"label": "evidence_url", "value": "https://x.com/MY26Go/status/2063588780511223927"}], "sources": [{"text": "@fever360AI 盆踊りだとおとなしい踊りになってしまって、思案した結果、よさこい踊り風がいいのかなと思い作りました😁 もう少し別な映像が入れば、もう少しメリハリがつくかな？", "account": "@MY26Go", "date": "2026-06-07T11:47:59+00:00", "url": "https://x.com/MY26Go/status/2063588780511223927"}], "preloaded": {}}, {"_key": "先日の郡上おどり||曲候補||曲名||https://x.com/emi_rinjapan/status/2064337613327343698", "term": "先日の郡上おどり", "category": "曲候補", "summary": [{"label": "canonical_song_name", "value": "先日の郡上おどり"}, {"label": "triage_reason", "value": "多義語・イベント名・ジャンル名の可能性がある"}, {"label": "evidence_count", "value": "1"}], "details": [{"label": "reason", "value": "曲名抽出器で検出: song_suffix_near_context"}, {"label": "evidence_text", "value": "先日の郡上おどりin京都。 市役所前広場にて👘🪭 熱気の盆踊り！！ #郡上おどり https://t.co/irUBqVolBH"}, {"label": "evidence_url", "value": "https://x.com/emi_rinjapan/status/2064337613327343698"}], "sources": [{"text": "先日の郡上おどりin京都。 市役所前広場にて👘🪭 熱気の盆踊り！！ #郡上おどり https://t.co/irUBqVolBH", "account": "@emi_rinjapan", "date": "2026-06-09T13:23:35+00:00", "url": "https://x.com/emi_rinjapan/status/2064337613327343698"}], "preloaded": {}}, {"_key": "夜の踊り||曲候補||曲名||https://x.com/agehabijo/status/2064248714831757592", "term": "夜の踊り", "category": "曲候補", "summary": [{"label": "canonical_song_name", "value": "夜の踊り"}, {"label": "triage_reason", "value": "多義語・イベント名・ジャンル名の可能性がある"}, {"label": "evidence_count", "value": "2"}], "details": [{"label": "reason", "value": "曲名抽出器で検出: song_suffix_near_context"}, {"label": "evidence_text", "value": "今回は特に北海道の代表的な盆踊り「 #北海盆唄 」に注目し、今話題の #サカナクション 「#夜の踊り子」に合わせて、北海道出身アーティスト × 地元盆踊りを行いました。 多くの皆さまに喜んでいただくことができ、とても嬉しかったです！ 今回の北海道初盆ジョヴィでは、東京から遠征してくださった https://t.co/PW8kYezuvi\n---\n〈真夏のイベント熱中症防げ〉昼のステージ、屋内へ 夜の踊り大会は屋外 ８月１、２日に野々市じょんから（北國新聞社） https://t.co/2n7EEWY7se"}, {"label": "evidence_url", "value": "https://x.com/agehabijo/status/2064248714831757592"}], "sources": [{"text": "今回は特に北海道の代表的な盆踊り「 #北海盆唄 」に注目し、今話題の #サカナクション 「#夜の踊り子」に合わせて、北海道出身アーティスト × 地元盆踊りを行いました。 多くの皆さまに喜んでいただくことができ、とても嬉しかったです！ 今回の北海道初盆ジョヴィでは、東京から遠征してくださった https://t.co/PW8kYezuvi", "account": "@agehabijo", "date": "2026-06-09T07:30:20+00:00", "url": "https://x.com/agehabijo/status/2064248714831757592"}, {"text": "〈真夏のイベント熱中症防げ〉昼のステージ、屋内へ 夜の踊り大会は屋外 ８月１、２日に野々市じょんから（北國新聞社） https://t.co/2n7EEWY7se", "account": "@bonDbonT", "date": "2026-06-06T22:28:15+00:00", "url": "https://x.com/bonDbonT/status/2063387522202485194"}], "preloaded": {}}, {"_key": "山王音頭と千代田踊り||曲候補||曲名||https://x.com/xxxnabekoxxx/status/2063607767861195209", "term": "山王音頭と千代田踊り", "category": "曲候補", "summary": [{"label": "canonical_song_name", "value": "山王音頭と千代田踊り"}, {"label": "triage_reason", "value": "多義語・イベント名・ジャンル名の可能性がある"}, {"label": "evidence_count", "value": "1"}], "details": [{"label": "reason", "value": "曲名抽出器で検出: song_suffix_near_context"}, {"label": "evidence_text", "value": "本日は #飛鳥山公園 #盆踊り に少しだけお邪魔しました。開始直前に雨がパラついたけど大丈夫でしたね。良い感じで曇っていて、踊りやすかった〜🤗山王音頭と千代田踊り、良い予習ができました‼️うちわ仕舞うところでお暇。あさがお踊りたかった〜🥲楽しかったです。ありがとうございました😺 https://t.co/hm2IRfUhuE"}, {"label": "evidence_url", "value": "https://x.com/xxxnabekoxxx/status/2063607767861195209"}], "sources": [{"text": "本日は #飛鳥山公園 #盆踊り に少しだけお邪魔しました。開始直前に雨がパラついたけど大丈夫でしたね。良い感じで曇っていて、踊りやすかった〜🤗山王音頭と千代田踊り、良い予習ができました‼️うちわ仕舞うところでお暇。あさがお踊りたかった〜🥲楽しかったです。ありがとうございました😺 https://t.co/hm2IRfUhuE", "account": "@xxxnabekoxxx", "date": "2026-06-07T13:03:26+00:00", "url": "https://x.com/xxxnabekoxxx/status/2063607767861195209"}], "preloaded": {}}, {"_key": "岡崎音頭と五万石おどり||曲候補||曲名||https://x.com/tashiro_kai/status/2064009937987190935", "term": "岡崎音頭と五万石おどり", "category": "曲候補", "summary": [{"label": "canonical_song_name", "value": "岡崎音頭と五万石おどり"}, {"label": "triage_reason", "value": "多義語・イベント名・ジャンル名の可能性がある"}, {"label": "evidence_count", "value": "1"}], "details": [{"label": "reason", "value": "曲名抽出器で検出: song_suffix_near_context"}, {"label": "evidence_text", "value": "一宮盆踊りカーニバル 振り返り④ 団体ステージ 踊輪 一宮にオカザえもん降臨✨ 岡崎音頭と五万石おどり踊って あとは円心で踊ってましたね あ この方岡崎出身なんですって😜 https://t.co/kJKH3hnX5X"}, {"label": "evidence_url", "value": "https://x.com/tashiro_kai/status/2064009937987190935"}], "sources": [{"text": "一宮盆踊りカーニバル 振り返り④ 団体ステージ 踊輪 一宮にオカザえもん降臨✨ 岡崎音頭と五万石おどり踊って あとは円心で踊ってましたね あ この方岡崎出身なんですって😜 https://t.co/kJKH3hnX5X", "account": "@tashiro_kai", "date": "2026-06-08T15:41:31+00:00", "url": "https://x.com/tashiro_kai/status/2064009937987190935"}], "preloaded": {}}, {"_key": "徳島市阿波おどり||曲候補||曲名||https://x.com/swissmilitaryjp/status/2063591814200799295", "term": "徳島市阿波おどり", "category": "曲候補", "summary": [{"label": "canonical_song_name", "value": "徳島市阿波おどり"}, {"label": "triage_reason", "value": "多義語・イベント名・ジャンル名の可能性がある"}, {"label": "evidence_count", "value": "2"}], "details": [{"label": "reason", "value": "曲名抽出器で検出: song_suffix_near_context"}, {"label": "evidence_text", "value": "【400年の熱狂、日本最大の盆踊り！💃】 8/12(水)〜15(土)開催の「徳島市阿波おどり」。街全体が踊る阿呆に見る阿呆で埋め尽くされる熱い4日間！100万人以上が訪れる超人気イベントなので、有料演舞場の座席チケットは今のうちに要チェック！ ▼詳細はこちら https://t.co/EXptRhiitG\n---\n＜新大阪発＞8月14、15日限定出発催行決定！ 一生に一度は観たい！日本最大の盆踊り「徳島市阿波おどり」を有料観覧席\"S席\"から鑑賞バスツアー（0泊2日間）12,980円～13,980円/大人1名様あたり🚍 詳しくはコチラ➡https://t.co/iIAW8y3jtX #旅行会社 #オリオンツアー #夏休み旅行 #家族旅行 https://t.co/mWhuBguMDv"}, {"label": "evidence_url", "value": "https://x.com/swissmilitaryjp/status/2063591814200799295"}], "sources": [{"text": "【400年の熱狂、日本最大の盆踊り！💃】 8/12(水)〜15(土)開催の「徳島市阿波おどり」。街全体が踊る阿呆に見る阿呆で埋め尽くされる熱い4日間！100万人以上が訪れる超人気イベントなので、有料演舞場の座席チケットは今のうちに要チェック！ ▼詳細はこちら https://t.co/EXptRhiitG", "account": "@swissmilitaryjp", "date": "2026-06-07T12:00:02+00:00", "url": "https://x.com/swissmilitaryjp/status/2063591814200799295"}, {"text": "＜新大阪発＞8月14、15日限定出発催行決定！ 一生に一度は観たい！日本最大の盆踊り「徳島市阿波おどり」を有料観覧席\"S席\"から鑑賞バスツアー（0泊2日間）12,980円～13,980円/大人1名様あたり🚍 詳しくはコチラ➡https://t.co/iIAW8y3jtX #旅行会社 #オリオンツアー #夏休み旅行 #家族旅行 https://t.co/mWhuBguMDv", "account": "@osaka_orion", "date": "2026-06-06T10:09:00+00:00", "url": "https://x.com/osaka_orion/status/2063201481218810302"}], "preloaded": {}}, {"_key": "盆ジョビ||曲候補||曲名||https://x.com/pink_daiamond_/status/2063835434707570787", "term": "盆ジョビ", "category": "曲候補", "summary": [{"label": "canonical_song_name", "value": "盆ジョビ"}, {"label": "triage_reason", "value": "多義語・イベント名・ジャンル名の可能性がある"}, {"label": "evidence_count", "value": "1"}], "details": [{"label": "reason", "value": "曲名抽出器で検出: known_song_context"}, {"label": "evidence_text", "value": "スズランマルシェ。北海盆歌ではない盆踊り。盆ジョビ開催ありがとうございます！札幌の踊らーさんにもご挨拶。２曲縛りじゃない盆踊り開催時鳳蝶先生参考との事。にゃんこさん登場で驚愕！じいちゃんち（史跡）に行く途中で鳳蝶先生一行にも遭遇。いつも騒がしくて恐れ入ります。次はお盆に帰札します https://t.co/g2ke8kpTNN"}, {"label": "evidence_url", "value": "https://x.com/pink_daiamond_/status/2063835434707570787"}], "sources": [{"text": "スズランマルシェ。北海盆歌ではない盆踊り。盆ジョビ開催ありがとうございます！札幌の踊らーさんにもご挨拶。２曲縛りじゃない盆踊り開催時鳳蝶先生参考との事。にゃんこさん登場で驚愕！じいちゃんち（史跡）に行く途中で鳳蝶先生一行にも遭遇。いつも騒がしくて恐れ入ります。次はお盆に帰札します https://t.co/g2ke8kpTNN", "account": "@pink_daiamond_", "date": "2026-06-08T04:08:06+00:00", "url": "https://x.com/pink_daiamond_/status/2063835434707570787"}], "preloaded": {}}, {"_key": "郡上おどり||曲候補||曲名||https://x.com/emi_rinjapan/status/2064337613327343698", "term": "郡上おどり", "category": "曲候補", "summary": [{"label": "canonical_song_name", "value": "郡上おどり"}, {"label": "triage_reason", "value": "多義語・イベント名・ジャンル名の可能性がある"}, {"label": "evidence_count", "value": "4"}], "details": [{"label": "reason", "value": "曲名抽出器で検出: known_song_context, song_suffix_near_context"}, {"label": "evidence_text", "value": "先日の郡上おどりin京都。 市役所前広場にて👘🪭 熱気の盆踊り！！ #郡上おどり https://t.co/irUBqVolBH\n---\n嗚呼～帰ってきちゃったなぁ～ 明日から何を楽しみにいきればいいのぉ～ とおもったけど、盆踊りシーズンくるわ。まんず青山の郡上おどりを楽しみに生きる!\n---\n【村井美樹さん出演・BS・再】 村井美樹と伊東潤のお城活TV(2)「長良川鉄道貸切列車で『郡上八幡城』と関市へ」 6/14(日)1:30～2:00 BS11イレブン 夏真っ盛りの「郡上八幡城」へ 日本三大盆踊りの郡上おどり体験や関市へも 日本最古の木造再建城を前に今回もお城トーク炸裂！ https://t.co/BwUlorHBa3"}, {"label": "evidence_url", "value": "https://x.com/emi_rinjapan/status/2064337613327343698"}], "sources": [{"text": "先日の郡上おどりin京都。 市役所前広場にて👘🪭 熱気の盆踊り！！ #郡上おどり https://t.co/irUBqVolBH", "account": "@emi_rinjapan", "date": "2026-06-09T13:23:35+00:00", "url": "https://x.com/emi_rinjapan/status/2064337613327343698"}, {"text": "嗚呼～帰ってきちゃったなぁ～ 明日から何を楽しみにいきればいいのぉ～ とおもったけど、盆踊りシーズンくるわ。まんず青山の郡上おどりを楽しみに生きる!", "account": "@taka_S_hiho", "date": "2026-06-07T13:07:53+00:00", "url": "https://x.com/taka_S_hiho/status/2063608885966225455"}, {"text": "【村井美樹さん出演・BS・再】 村井美樹と伊東潤のお城活TV(2)「長良川鉄道貸切列車で『郡上八幡城』と関市へ」 6/14(日)1:30～2:00 BS11イレブン 夏真っ盛りの「郡上八幡城」へ 日本三大盆踊りの郡上おどり体験や関市へも 日本最古の木造再建城を前に今回もお城トーク炸裂！ https://t.co/BwUlorHBa3", "account": "@mikimurai_push", "date": "2026-06-07T01:45:20+00:00", "url": "https://x.com/mikimurai_push/status/2063437117582458965"}, {"text": "＼ 京都に岐阜の魅力が大集合！ ／ 今週末の6月5日・6日は、京都で開催される大注目イベントに参加します！✨ 岐阜の美味しいものをたくさん持って行くので、ぜひ遊びに来てくださいね😊 🗓 6月5日(金) ぎふマルシェ＠京都2026 ▫️時間：11:00〜19:00 ▫️場所：ゼスト御池 河原町広場 🛒 こだわり珈琲の物販（試飲もできます！） ＼注目のラインナップ／ ☕️ 【新発売】シングルオリジン水出しコーヒーセット ❄️ 雪の下熟成 珈琲豆 / ドリップバッグ ❄️ 雪の下熟成 コールドブリュー / 珈琲ゼリー 🧊 アイスコーヒーリキッド 贅沢な「雪の下熟成」シリーズや、これからの季節にぴったりの新商品などをご用意しています。お好みの味をぜひ試飲で見つけてくださいね！ 🗓 6月6日(土) 第16回郡上おどりin京都 ▫️時間：11:00〜18:30（※盆踊りは14:30〜🕺） ▫️場所：京都市役所庁舎前広場 🍹 ひんやりアイスコーヒーや、大人の味・和紅茶ハイボールなどのドリンクを販売！ （※ぎふマルシェも18:30まで同時開催中！） 週末は京都で、岐阜の味と熱気を感じてくだ", "account": "@KoufukuyaC", "date": "2026-06-04T14:58:55+00:00", "url": "https://x.com/KoufukuyaC/status/2062549666563289225"}], "preloaded": {}}, {"_key": "飛鳥山公園輪踊り||曲候補||曲名||https://www.youtube.com/watch?v=JX5otrjUER4", "term": "飛鳥山公園輪踊り", "category": "曲候補", "summary": [{"label": "canonical_song_name", "value": "飛鳥山公園輪踊り"}, {"label": "triage_reason", "value": "多義語・イベント名・ジャンル名の可能性がある"}, {"label": "evidence_count", "value": "12"}], "details": [{"label": "reason", "value": "曲名抽出器で検出: song_suffix_near_context"}, {"label": "evidence_text", "value": "2026年5月24日行われました、 舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。 飛鳥山公園盆踊り（舞ことり） １東京音頭 https://youtu.be/lmX6GaG4HuY ２荒川音頭 https://youtu.be/BSxbnISzZvI ３板橋音頭 https://youtu.be/XBHe1QaHQl8 ４たいとう音頭 https://youtu.be/BnRG0iS5stA ５文京音頭 https://youtu.be/lEt68hsMb4A ６相馬盆唄 https://youtu.be/3jKTtdLCnI8 ７王子小唄 https://youtu.be/w6mUO5UuS2g ８飛鳥山音頭 https://youtu.be/iQkGYjz61rs ９東京北都音頭 https://youtu.be/Nd1ADi6TxuM 10ふるさと北区 https://youtu.be/UBGvAcTE6_E 11佐渡の恋唄 https://youtu.be/PL7Fgs0ifSU 12恋をするなら https://youtu.be/NYWWFBYXeCE 13ゆかた\n---\n2026年5月24日行われました、 舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。 飛鳥山公園盆踊り（舞ことり） １東京音頭 https://youtu.be/lmX6GaG4HuY ２荒川音頭 https://youtu.be/BSxbnISzZvI ３板橋音頭 https://youtu.be/XBHe1QaHQl8 ４たいとう音頭 https://youtu.be/BnRG0iS5stA ５文京音頭 https://youtu.be/lEt68hsMb4A ６相馬盆唄 https://youtu.be/3jKTtdLCnI8 ７王子小唄 https://youtu.be/w6mUO5UuS2g ８飛鳥山音頭 https://youtu.be/iQkGYjz61rs ９東京北都音頭 https://youtu.be/Nd1ADi6TxuM 10ふるさと北区 https://youtu.be/UBGvAcTE6_E 11佐渡の恋唄 https://youtu.be/PL7Fgs0ifSU 12恋をするなら https://youtu.be/NYWWFBYXeCE 13ゆかた\n---\n2026年5月24日行われました、 舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。 飛鳥山公園盆踊り（舞ことり） １東京音頭 https://youtu.be/lmX6GaG4HuY ２荒川音頭 https://youtu.be/BSxbnISzZvI ３板橋音頭 https://youtu.be/XBHe1QaHQl8 ４たいとう音頭 https://youtu.be/BnRG0iS5stA ５文京音頭 https://youtu.be/lEt68hsMb4A ６相馬盆唄 https://youtu.be/3jKTtdLCnI8 ７王子小唄 https://youtu.be/w6mUO5UuS2g ８飛鳥山音頭 https://youtu.be/iQkGYjz61rs ９東京北都音頭 https://youtu.be/Nd1ADi6TxuM 10ふるさと北区 https://youtu.be/UBGvAcTE6_E 11佐渡の恋唄 https://youtu.be/PL7Fgs0ifSU 12恋をするなら https://youtu.be/NYWWFBYXeCE 13ゆかた"}, {"label": "evidence_url", "value": "https://www.youtube.com/watch?v=JX5otrjUER4"}], "sources": [{"text": "2026年5月24日行われました、 舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。 飛鳥山公園盆踊り（舞ことり） １東京音頭 https://youtu.be/lmX6GaG4HuY ２荒川音頭 https://youtu.be/BSxbnISzZvI ３板橋音頭 https://youtu.be/XBHe1QaHQl8 ４たいとう音頭 https://youtu.be/BnRG0iS5stA ５文京音頭 https://youtu.be/lEt68hsMb4A ６相馬盆唄 https://youtu.be/3jKTtdLCnI8 ７王子小唄 https://youtu.be/w6mUO5UuS2g ８飛鳥山音頭 https://youtu.be/iQkGYjz61rs ９東京北都音頭 https://youtu.be/Nd1ADi6TxuM 10ふるさと北区 https://youtu.be/UBGvAcTE6_E 11佐渡の恋唄 https://youtu.be/PL7Fgs0ifSU 12恋をするなら https://youtu.be/NYWWFBYXeCE 13ゆかた", "account": "@wadaikoCH", "date": "2026-06-09T10:30:18+00:00", "url": "https://www.youtube.com/watch?v=JX5otrjUER4"}, {"text": "2026年5月24日行われました、 舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。 飛鳥山公園盆踊り（舞ことり） １東京音頭 https://youtu.be/lmX6GaG4HuY ２荒川音頭 https://youtu.be/BSxbnISzZvI ３板橋音頭 https://youtu.be/XBHe1QaHQl8 ４たいとう音頭 https://youtu.be/BnRG0iS5stA ５文京音頭 https://youtu.be/lEt68hsMb4A ６相馬盆唄 https://youtu.be/3jKTtdLCnI8 ７王子小唄 https://youtu.be/w6mUO5UuS2g ８飛鳥山音頭 https://youtu.be/iQkGYjz61rs ９東京北都音頭 https://youtu.be/Nd1ADi6TxuM 10ふるさと北区 https://youtu.be/UBGvAcTE6_E 11佐渡の恋唄 https://youtu.be/PL7Fgs0ifSU 12恋をするなら https://youtu.be/NYWWFBYXeCE 13ゆかた", "account": "@wadaikoCH", "date": "2026-06-09T10:00:37+00:00", "url": "https://www.youtube.com/watch?v=OsS7wbeRIh0"}, {"text": "2026年5月24日行われました、 舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。 飛鳥山公園盆踊り（舞ことり） １東京音頭 https://youtu.be/lmX6GaG4HuY ２荒川音頭 https://youtu.be/BSxbnISzZvI ３板橋音頭 https://youtu.be/XBHe1QaHQl8 ４たいとう音頭 https://youtu.be/BnRG0iS5stA ５文京音頭 https://youtu.be/lEt68hsMb4A ６相馬盆唄 https://youtu.be/3jKTtdLCnI8 ７王子小唄 https://youtu.be/w6mUO5UuS2g ８飛鳥山音頭 https://youtu.be/iQkGYjz61rs ９東京北都音頭 https://youtu.be/Nd1ADi6TxuM 10ふるさと北区 https://youtu.be/UBGvAcTE6_E 11佐渡の恋唄 https://youtu.be/PL7Fgs0ifSU 12恋をするなら https://youtu.be/NYWWFBYXeCE 13ゆかた", "account": "@wadaikoCH", "date": "2026-06-08T10:30:14+00:00", "url": "https://www.youtube.com/watch?v=B7quQ6JV8cs"}, {"text": "2026年5月24日行われました、 舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。 飛鳥山公園盆踊り（舞ことり） １東京音頭 https://youtu.be/lmX6GaG4HuY ２荒川音頭 https://youtu.be/BSxbnISzZvI ３板橋音頭 https://youtu.be/XBHe1QaHQl8 ４たいとう音頭 https://youtu.be/BnRG0iS5stA ５文京音頭 https://youtu.be/lEt68hsMb4A ６相馬盆唄 https://youtu.be/3jKTtdLCnI8 ７王子小唄 https://youtu.be/w6mUO5UuS2g ８飛鳥山音頭 https://youtu.be/iQkGYjz61rs ９東京北都音頭 https://youtu.be/Nd1ADi6TxuM 10ふるさと北区 https://youtu.be/UBGvAcTE6_E 11佐渡の恋唄 https://youtu.be/PL7Fgs0ifSU 12恋をするなら https://youtu.be/NYWWFBYXeCE 13ゆかた", "account": "@wadaikoCH", "date": "2026-06-08T10:00:07+00:00", "url": "https://www.youtube.com/watch?v=3xiWUcepU08"}, {"text": "2026年5月24日行われました、 舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。 飛鳥山公園盆踊り（舞ことり） １東京音頭 https://youtu.be/lmX6GaG4HuY ２荒川音頭 https://youtu.be/BSxbnISzZvI ３板橋音頭 https://youtu.be/XBHe1QaHQl8 ４たいとう音頭 https://youtu.be/BnRG0iS5stA ５文京音頭 https://youtu.be/lEt68hsMb4A ６相馬盆唄 https://youtu.be/3jKTtdLCnI8 ７王子小唄 https://youtu.be/w6mUO5UuS2g ８飛鳥山音頭 https://youtu.be/iQkGYjz61rs ９東京北都音頭 https://youtu.be/Nd1ADi6TxuM 10ふるさと北区 https://youtu.be/UBGvAcTE6_E 11佐渡の恋唄 https://youtu.be/PL7Fgs0ifSU 12恋をするなら https://youtu.be/NYWWFBYXeCE 13ゆかた", "account": "@wadaikoCH", "date": "2026-06-07T10:30:39+00:00", "url": "https://www.youtube.com/watch?v=M0bWjUtfUBs"}], "preloaded": {}}, {"_key": "馬鹿おどり||曲候補||曲名||https://x.com/ObakaAki/status/2064246539976077461", "term": "馬鹿おどり", "category": "曲候補", "summary": [{"label": "canonical_song_name", "value": "馬鹿おどり"}, {"label": "triage_reason", "value": "多義語・イベント名・ジャンル名の可能性がある"}, {"label": "evidence_count", "value": "1"}], "details": [{"label": "reason", "value": "曲名抽出器で検出: song_suffix_near_context"}, {"label": "evidence_text", "value": "@natsutr_bon @kaz0045 関東圏の方がリードしてくれたのと 愛知県岡崎市で４月の盆踊りイベントの中で踊ったおかげです✨️🐴🫎✨️ 馬鹿おどりはノリのいい曲で振りも覚えやすく そんな訳でみなさん踊ってもらえたと思いますよ 一宮でも紹介できて良かったです"}, {"label": "evidence_url", "value": "https://x.com/ObakaAki/status/2064246539976077461"}], "sources": [{"text": "@natsutr_bon @kaz0045 関東圏の方がリードしてくれたのと 愛知県岡崎市で４月の盆踊りイベントの中で踊ったおかげです✨️🐴🫎✨️ 馬鹿おどりはノリのいい曲で振りも覚えやすく そんな訳でみなさん踊ってもらえたと思いますよ 一宮でも紹介できて良かったです", "account": "@ObakaAki", "date": "2026-06-09T07:21:41+00:00", "url": "https://x.com/ObakaAki/status/2064246539976077461"}], "preloaded": {}}];
+    const DECISIONS = ["曲として採用", "曲ではない", "分割", "用語集へ", "保留"];
+    const STORAGE_KEY = "weekly-song-review";
+    const DOWNLOAD_NAME = "weekly_song_review_decisions.json";
+    const COLORS = ["accept", "reject", "merge", "hold", "extra1", "extra2"];
+    let categoryFilter = "all";
+    let onlyUnreviewed = false;
+    let activeIndex = 0;
+
+    function loadState() {
+      try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; }
+      catch { return {}; }
+    }
+    function saveState(state) {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+      renderSummary();
+    }
+    function loadInitialState() {
+      const state = loadState();
+      let changed = false;
+      for (const row of TERMS) {
+        if (row.preloaded && row.preloaded.decision && (!state[row._key] || !state[row._key].decision)) {
+          state[row._key] = row.preloaded;
+          changed = true;
+        }
+      }
+      if (changed) saveState(state);
+    }
+    function groupedRows() {
+      const rows = TERMS.filter(row => categoryFilter === "all" || row.category === categoryFilter);
+      const state = loadState();
+      const filtered = onlyUnreviewed ? rows.filter(row => !(state[row._key] || {}).decision) : rows;
+      return Object.groupBy(filtered, row => row.category);
+    }
+    function renderFilters() {
+      const categories = ["all", ...new Set(TERMS.map(row => row.category))];
+      document.getElementById("filters").innerHTML = categories.map(cat => (
+        `<button class="filter ${categoryFilter === cat ? "active" : ""}" data-cat="${escapeHtml(cat)}">${escapeHtml(cat === "all" ? "全部" : cat)}</button>`
+      )).join("");
+      document.querySelectorAll(".filter").forEach(btn => {
+        btn.addEventListener("click", () => { categoryFilter = btn.dataset.cat; activeIndex = 0; render(); });
+      });
+    }
+    function renderSummary() {
+      const state = loadState();
+      const counts = Object.fromEntries(DECISIONS.map(d => [d, 0]));
+      let done = 0;
+      for (const row of TERMS) {
+        const decision = (state[row._key] || {}).decision;
+        if (decision) {
+          done++;
+          counts[decision] = (counts[decision] || 0) + 1;
+        }
+      }
+      const parts = DECISIONS.map(d => `${d} ${counts[d] || 0}`).join(" / ");
+      document.getElementById("summary").textContent = `判定 ${done} / ${TERMS.length}　${parts}`;
+    }
+    function render() {
+      renderFilters();
+      renderSummary();
+      document.documentElement.style.setProperty("--choice-count", Math.min(DECISIONS.length, 4));
+      const state = loadState();
+      const groups = groupedRows();
+      const flatRows = Object.values(groups).flat();
+      if (activeIndex >= flatRows.length) activeIndex = Math.max(0, flatRows.length - 1);
+      const app = document.getElementById("app");
+      app.innerHTML = Object.entries(groups).map(([category, rows]) => `
+        <section>
+          <h2>${escapeHtml(category)}（${rows.length}件）</h2>
+          ${rows.map(row => cardHtml(row, state[row._key] || {}, flatRows.indexOf(row))).join("")}
+        </section>
+      `).join("") || "<p>表示する未判定はありません。</p>";
+      app.querySelectorAll("input[type=radio]").forEach(input => {
+        input.addEventListener("change", event => {
+          const state = loadState();
+          const key = event.target.dataset.key;
+          state[key] = state[key] || {};
+          state[key].decision = event.target.value;
+          saveState(state);
+        });
+      });
+      app.querySelectorAll("textarea").forEach(textarea => {
+        textarea.addEventListener("input", event => {
+          const state = loadState();
+          const key = event.target.dataset.key;
+          state[key] = state[key] || {};
+          state[key].note = event.target.value;
+          saveState(state);
+        });
+      });
+      markActive(false);
+    }
+    function cardHtml(row, saved, index) {
+      const decision = saved.decision || "";
+      const note = saved.note || "";
+      const summary = row.summary.filter(item => item.value).map(item => `<div><strong>${escapeHtml(item.label)}:</strong> ${escapeHtml(item.value)}</div>`).join("");
+      const details = row.details.filter(item => item.value).map(item => `<p><strong>${escapeHtml(item.label)}:</strong> ${escapeHtml(item.value)}</p>`).join("");
+      const sources = (row.sources || []).map(src => `
+        <div class="source">
+          <div class="source-meta">
+            ${escapeHtml(src.account)}　${escapeHtml((src.date || "").slice(0, 10))}
+            ${src.url ? `　<a href="${escapeAttr(src.url)}" target="_blank" rel="noopener">元ポストを開く ↗</a>` : ""}
+          </div>
+          <div class="source-text">${escapeHtml(src.text)}</div>
+        </div>
+      `).join("");
+      const sourcesBlock = sources ? `
+          <details class="sources">
+            <summary>ソース（${row.sources.length}件）</summary>
+            ${sources}
+          </details>` : "";
+      return `
+        <article class="card" data-index="${index}" data-key="${escapeAttr(row._key)}">
+          <div class="row-head">
+            <div>
+              <div class="term">${escapeHtml(row.term)}</div>
+              <div class="meta">${escapeHtml(row.category)}</div>
+            </div>
+            <div class="interpretation">${summary}</div>
+            <div class="choices">
+              ${DECISIONS.map((label, i) => choiceHtml(row._key, label, COLORS[i] || "extra2", decision)).join("")}
+            </div>
+          </div>
+          <textarea class="note" data-key="${escapeHtml(row._key)}" placeholder="メモ、代表語、まとめ先など">${escapeHtml(note)}</textarea>
+          ${sourcesBlock}
+          ${details ? `<details><summary>詳細</summary>${details}</details>` : ""}
+        </article>
+      `;
+    }
+    function choiceHtml(key, label, klass, decision) {
+      return `<label class="choice ${klass}"><input type="radio" name="${escapeAttr(key)}" data-key="${escapeAttr(key)}" value="${escapeAttr(label)}" ${decision === label ? "checked" : ""}>${escapeHtml(label)}</label>`;
+    }
+    function visibleCards() { return [...document.querySelectorAll(".card")]; }
+    function markActive(scroll = true) {
+      const cards = visibleCards();
+      cards.forEach(card => card.classList.remove("active"));
+      if (!cards.length) return;
+      activeIndex = Math.max(0, Math.min(activeIndex, cards.length - 1));
+      const card = cards[activeIndex];
+      card.classList.add("active");
+      if (scroll) card.scrollIntoView({ block: "center", behavior: "smooth" });
+    }
+    function moveActive(delta) {
+      const cards = visibleCards();
+      if (!cards.length) return;
+      activeIndex = Math.max(0, Math.min(activeIndex + delta, cards.length - 1));
+      markActive(true);
+    }
+    function setDecisionForActive(decision) {
+      const cards = visibleCards();
+      const card = cards[activeIndex];
+      if (!card) return;
+      const key = card.dataset.key;
+      const input = card.querySelector(`input[value="${cssEscape(decision)}"]`);
+      if (input) input.checked = true;
+      const state = loadState();
+      state[key] = state[key] || {};
+      state[key].decision = decision;
+      saveState(state);
+      if (onlyUnreviewed) render(); else moveActive(1);
+    }
+    function focusNoteForActive() {
+      const card = visibleCards()[activeIndex];
+      const note = card && card.querySelector("textarea");
+      if (note) note.focus();
+    }
+    function toggleSourcesForActive() {
+      const card = visibleCards()[activeIndex];
+      const sources = card && card.querySelector("details.sources");
+      if (sources) sources.open = !sources.open;
+    }
+    function exportResults() {
+      const state = loadState();
+      const rows = TERMS.map(row => ({
+        key: row._key,
+        term: row.term,
+        category: row.category,
+        decision: (state[row._key] || {}).decision || "",
+        note: (state[row._key] || {}).note || ""
+      }));
+      const output = { exported_at: new Date().toISOString(), total: rows.length, rows };
+      const blob = new Blob([JSON.stringify(output, null, 2)], { type: "application/json" });
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = DOWNLOAD_NAME;
+      a.click();
+      URL.revokeObjectURL(a.href);
+    }
+    function cssEscape(value) {
+      return String(value).replace(/["\\]/g, "\\$&");
+    }
+    function escapeHtml(value) {
+      return String(value ?? "").replace(/[&<>"']/g, ch => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[ch]));
+    }
+    function escapeAttr(value) { return escapeHtml(value).replace(/`/g, "&#96;"); }
+    document.getElementById("exportJson").addEventListener("click", exportResults);
+    document.getElementById("showUnreviewed").addEventListener("click", () => { onlyUnreviewed = true; activeIndex = 0; render(); });
+    document.getElementById("showAll").addEventListener("click", () => { onlyUnreviewed = false; activeIndex = 0; render(); });
+    document.addEventListener("keydown", event => {
+      const target = event.target;
+      const typing = target && ["TEXTAREA", "INPUT"].includes(target.tagName);
+      if (typing && event.key !== "Escape") return;
+      if (event.key === "Escape" && typing) { target.blur(); event.preventDefault(); return; }
+      const number = Number(event.key);
+      if (number >= 1 && number <= DECISIONS.length) {
+        event.preventDefault();
+        setDecisionForActive(DECISIONS[number - 1]);
+        return;
+      }
+      const actions = {
+        "j": () => moveActive(1),
+        "ArrowDown": () => moveActive(1),
+        "k": () => moveActive(-1),
+        "ArrowUp": () => moveActive(-1),
+        "n": () => focusNoteForActive(),
+        "s": () => toggleSourcesForActive(),
+        "u": () => { onlyUnreviewed = true; activeIndex = 0; render(); },
+        "a": () => { onlyUnreviewed = false; activeIndex = 0; render(); },
+        "e": () => exportResults()
+      };
+      const action = actions[event.key];
+      if (action) { event.preventDefault(); action(); }
+    });
+    loadInitialState();
+    render();
+  </script>
+</body>
+</html>
