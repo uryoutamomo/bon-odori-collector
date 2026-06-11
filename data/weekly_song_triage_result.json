@@ -1,10 +1,10 @@
 {
   "dry_run": true,
   "source": "data/weekly_harvest_candidates.json",
-  "song_candidate_count": 175,
-  "direct_count": 95,
-  "created_count": 27,
-  "updated_count": 68,
+  "song_candidate_count": 178,
+  "direct_count": 98,
+  "created_count": 29,
+  "updated_count": 69,
   "rejected_noise_count": 69,
   "review_count": 11,
   "created": [
@@ -89,6 +89,14 @@
       "dry_run": true
     },
     {
+      "song_name": "ハルマ音頭",
+      "source_term": "ハルマ音頭",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
       "song_name": "パヨク音頭",
       "source_term": "パヨク音頭",
       "target": "create",
@@ -118,6 +126,14 @@
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "同級会音頭",
+      "source_term": "同級会音頭",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 1,
       "dry_run": true
     },
     {
@@ -231,7 +247,7 @@
       "source_term": "東京音頭",
       "target": "update",
       "venue_relations": 1,
-      "event_relations": 0,
+      "event_relations": 1,
       "dry_run": true
     },
     {
@@ -275,14 +291,6 @@
       "dry_run": true
     },
     {
-      "song_name": "河内音頭",
-      "source_term": "河内音頭",
-      "target": "update",
-      "venue_relations": 0,
-      "event_relations": 1,
-      "dry_run": true
-    },
-    {
       "song_name": "ソーラン節",
       "source_term": "ソーラン節",
       "target": "update",
@@ -304,6 +312,22 @@
       "target": "update",
       "venue_relations": 0,
       "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "河内音頭",
+      "source_term": "河内音頭",
+      "target": "update",
+      "venue_relations": 0,
+      "event_relations": 1,
+      "dry_run": true
+    },
+    {
+      "song_name": "ドンパン節",
+      "source_term": "ドンパン節",
+      "target": "update",
+      "venue_relations": 0,
+      "event_relations": 1,
       "dry_run": true
     },
     {
@@ -437,14 +461,6 @@
     {
       "song_name": "よこはまアラメヤ音頭",
       "source_term": "アラメヤ音頭",
-      "target": "update",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
-    },
-    {
-      "song_name": "ドンパン節",
-      "source_term": "ドンパン節",
       "target": "update",
       "venue_relations": 0,
       "event_relations": 0,
@@ -592,6 +608,14 @@
       "target": "update",
       "venue_relations": 1,
       "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "大東京音頭",
+      "source_term": "大東京音頭",
+      "target": "update",
+      "venue_relations": 0,
+      "event_relations": 1,
       "dry_run": true
     },
     {
@@ -1058,7 +1082,7 @@
     },
     {
       "term": "郡上おどり",
-      "evidence_count": 4,
+      "evidence_count": 3,
       "reason": "多義語・イベント名・ジャンル名の可能性がある",
       "evidence_url": "https://x.com/emi_rinjapan/status/2064337613327343698"
     },
