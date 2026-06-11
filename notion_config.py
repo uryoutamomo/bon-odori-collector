@@ -53,3 +53,7 @@ SONG_MASTER_DATABASE_ID = os.environ.get(
     "SONG_MASTER_DB_ID",
     "37c8be04-e762-814b-b8f2-f1b61fc8f16c",
 )
+COST_DATABASE_ID = os.environ.get(
+    "COST_DATABASE_ID",
+    "4b286c63-5860-42dd-91c8-5f55cc6cfd1d",
+)

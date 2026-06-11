@@ -67,6 +67,11 @@ jobs:
     - name: Prepare review queues and summary
       run: python prepare_weekly_harvest_review.py
 
+    - name: Sync weekly cost record
+      env:
+        NOTION_API_TOKEN: ${{ secrets.NOTION_API_TOKEN }}
+      run: python sync_weekly_costs.py --apply
+
     - name: Build term/co-occurrence review UI
       run: |
         python build_keyboard_review_ui.py \
@@ -140,6 +145,7 @@ jobs:
         git add data/weekly_harvest_review_ui.html
         git add data/weekly_harvest_summary.json
         git add data/weekly_harvest_summary.md
+        git add data/weekly_cost_sync_result.json
         git add data/weekly_song_candidates_review.json
         git add data/weekly_song_candidates_review_ui.html
         git add data/weekly_song_triage_result.json
