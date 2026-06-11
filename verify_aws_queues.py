@@ -42,6 +42,42 @@ def verify_table(client, resource, table_name, key_name):
         )
 
 
+def verify_event_candidate_query(resource, table_name):
+    if not table_name:
+        return
+    table = resource.Table(table_name)
+    response = table.query(
+        IndexName="status-updated_at-index",
+        KeyConditionExpression="#status = :status",
+        ExpressionAttributeNames={"#status": "status"},
+        ExpressionAttributeValues={":status": "未確認"},
+        Select="COUNT",
+    )
+    count = int(response.get("Count") or 0)
+    print(f"[verify-aws-queue] {table_name}: query_status_unconfirmed_count={count}")
+    if count <= 0:
+        raise RuntimeError(f"{table_name} has no unconfirmed event candidates")
+
+    sample = table.query(
+        IndexName="status-updated_at-index",
+        KeyConditionExpression="#status = :status",
+        ExpressionAttributeNames={"#status": "status"},
+        ExpressionAttributeValues={":status": "未確認"},
+        ProjectionExpression="candidate_key, title, confidence_score, evidence_count, speaker_count",
+        Limit=3,
+        ScanIndexForward=False,
+    )
+    for item in sample.get("Items", []):
+        print(
+            "[verify-aws-queue] event_candidate_sample "
+            f"score={item.get('confidence_score')} "
+            f"evidence={item.get('evidence_count')} "
+            f"speakers={item.get('speaker_count')} "
+            f"title={item.get('title')} "
+            f"key={item.get('candidate_key')}"
+        )
+
+
 def main():
     client = boto3.client("dynamodb", region_name=AWS_REGION)
     resource = boto3.resource("dynamodb", region_name=AWS_REGION)
@@ -56,6 +92,10 @@ def main():
         resource,
         os.environ.get("EVENT_CANDIDATE_QUEUE_TABLE", ""),
         "candidate_key",
+    )
+    verify_event_candidate_query(
+        resource,
+        os.environ.get("EVENT_CANDIDATE_QUEUE_TABLE", ""),
     )
     print("[verify-aws-queue] ok")
 
