@@ -51,6 +51,7 @@
 CloudFormationで次をまとめて作成する。
 
 - DynamoDBテーブル `bon-odori-torimochi-queue`
+- DynamoDBテーブル `bon-odori-event-candidate-queue`
 - GitHub OIDCプロバイダー
 - 対象リポジトリの`main`ブランチだけが引き受けられるIAMロール
 - 対象テーブルだけを操作できる最小権限ポリシー
@@ -63,7 +64,9 @@ CloudFormationで次をまとめて作成する。
 |---|---|
 | `AWS_ROLE_ARN` | `GitHubActionsRoleArn` の出力 |
 | `DYNAMODB_QUEUE_TABLE` | `QueueTableName` の出力 |
+| `EVENT_CANDIDATE_QUEUE_TABLE` | `EventCandidateQueueTableName` の出力 |
 | `QUEUE_STORAGE_MODE` | 初回は `dual` |
+| `EVENT_QUEUE_STORAGE_MODE` | 初回は `dual` |
 
 ## フェーズ4: 切り替え
 

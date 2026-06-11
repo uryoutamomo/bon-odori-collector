@@ -2,6 +2,7 @@ import unittest
 
 from queue_store import (
     DynamoQueueStore,
+    EventCandidateQueueStore,
     normalize_candidate_key,
     normalize_venue_key,
 )
@@ -16,16 +17,21 @@ class FakeTable:
         self.items = {}
 
     def put_item(self, Item, ConditionExpression):
-        key = Item["venue_key"]
+        key = Item.get("venue_key") or Item.get("candidate_key")
         if key in self.items:
             raise ConditionalFailure()
         self.items[key] = Item
 
     def get_item(self, **kwargs):
-        return {"Item": self.items.get(kwargs["Key"]["venue_key"], {})}
+        key = kwargs["Key"].get("venue_key") or kwargs["Key"].get("candidate_key")
+        return {"Item": self.items.get(key, {})}
+
+    def put_item_no_condition(self, Item):
+        key = Item.get("venue_key") or Item.get("candidate_key")
+        self.items[key] = Item
 
     def update_item(self, **kwargs):
-        key = kwargs["Key"]["venue_key"]
+        key = kwargs["Key"].get("venue_key") or kwargs["Key"].get("candidate_key")
         if key not in self.items:
             raise ConditionalFailure()
         values = kwargs["ExpressionAttributeValues"]
@@ -33,7 +39,16 @@ class FakeTable:
             self.items[key]["status"] = values[":status"]
         if ":synced" in values:
             self.items[key]["notion_synced"] = values[":synced"]
+        if ":notion_page_id" in values:
+            self.items[key]["notion_page_id"] = values[":notion_page_id"]
+        if ":promoted_event_page_id" in values:
+            self.items[key]["promoted_event_page_id"] = values[":promoted_event_page_id"]
         self.items[key]["updated_at"] = values[":updated_at"]
+
+
+class FakeEventCandidateTable(FakeTable):
+    def put_item(self, Item, ConditionExpression=None):
+        self.put_item_no_condition(Item)
 
 
 class DynamoQueueStoreTest(unittest.TestCase):
@@ -99,6 +114,40 @@ class DynamoQueueStoreTest(unittest.TestCase):
         self.assertFalse(self.store.is_notion_synced("築地本願寺"))
         self.store.mark_notion_synced("築地本願寺")
         self.assertTrue(self.store.is_notion_synced("築地本願寺"))
+
+
+class EventCandidateQueueStoreTest(unittest.TestCase):
+    def setUp(self):
+        self.table = FakeEventCandidateTable()
+        self.store = EventCandidateQueueStore(table=self.table)
+
+    def test_put_candidate_merges_evidence(self):
+        first = {
+            "candidate_key": "event:abc",
+            "match_key": "event:浜町公園盆踊り|venue:浜町公園|month:06",
+            "title": "浜町公園盆踊り",
+            "confidence_score": 50,
+            "evidence": [{"identity": "evidence:1", "text": "a"}],
+        }
+        second = dict(first, evidence=[
+            {"identity": "evidence:1", "text": "a"},
+            {"identity": "evidence:2", "text": "b"},
+        ])
+        self.assertTrue(self.store.put_candidate(first))
+        self.assertFalse(self.store.put_candidate(second))
+        self.assertEqual(len(self.table.items["event:abc"]["evidence"]), 2)
+
+    def test_event_candidate_notion_sync_state(self):
+        self.store.put_candidate({
+            "candidate_key": "event:def",
+            "match_key": "venue:浜町公園",
+            "title": "浜町公園の盆踊り（名称未確定）",
+            "evidence": [],
+        })
+        self.assertFalse(self.store.is_notion_synced("event:def"))
+        self.store.mark_notion_synced("event:def", "page-1")
+        self.assertTrue(self.store.is_notion_synced("event:def"))
+        self.assertEqual(self.table.items["event:def"]["notion_page_id"], "page-1")
 
 
 if __name__ == "__main__":

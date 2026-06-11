@@ -14,6 +14,9 @@ Parameters:
   TableName:
     Type: String
     Default: bon-odori-torimochi-queue
+  EventCandidateTableName:
+    Type: String
+    Default: bon-odori-event-candidate-queue
 
 Resources:
   GitHubOidcProvider:
@@ -37,6 +40,46 @@ Resources:
       KeySchema:
         - AttributeName: venue_key
           KeyType: HASH
+      SSESpecification:
+        SSEEnabled: true
+      PointInTimeRecoverySpecification:
+        PointInTimeRecoveryEnabled: false
+      Tags:
+        - Key: Project
+          Value: bon-odori-collector
+
+  EventCandidateQueueTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: !Ref EventCandidateTableName
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: candidate_key
+          AttributeType: S
+        - AttributeName: status
+          AttributeType: S
+        - AttributeName: updated_at
+          AttributeType: S
+        - AttributeName: notion_page_id
+          AttributeType: S
+      KeySchema:
+        - AttributeName: candidate_key
+          KeyType: HASH
+      GlobalSecondaryIndexes:
+        - IndexName: status-updated_at-index
+          KeySchema:
+            - AttributeName: status
+              KeyType: HASH
+            - AttributeName: updated_at
+              KeyType: RANGE
+          Projection:
+            ProjectionType: ALL
+        - IndexName: notion_page_id-index
+          KeySchema:
+            - AttributeName: notion_page_id
+              KeyType: HASH
+          Projection:
+            ProjectionType: ALL
       SSESpecification:
         SSEEnabled: true
       PointInTimeRecoverySpecification:
@@ -72,6 +115,16 @@ Resources:
                   - dynamodb:PutItem
                   - dynamodb:UpdateItem
                 Resource: !GetAtt QueueTable.Arn
+              - Effect: Allow
+                Action:
+                  - dynamodb:DescribeTable
+                  - dynamodb:GetItem
+                  - dynamodb:PutItem
+                  - dynamodb:Query
+                  - dynamodb:UpdateItem
+                Resource:
+                  - !GetAtt EventCandidateQueueTable.Arn
+                  - !Sub "${EventCandidateQueueTable.Arn}/index/*"
       Tags:
         - Key: Project
           Value: bon-odori-collector
@@ -79,5 +132,7 @@ Resources:
 Outputs:
   QueueTableName:
     Value: !Ref QueueTable
+  EventCandidateQueueTableName:
+    Value: !Ref EventCandidateQueueTable
   GitHubActionsRoleArn:
     Value: !GetAtt GitHubActionsQueueRole.Arn

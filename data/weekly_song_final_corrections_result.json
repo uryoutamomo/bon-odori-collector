@@ -1,0 +1,42 @@
+{
+  "dry_run": false,
+  "rejected_songs": [
+    {
+      "song_name": "夜の踊り子",
+      "page_id": "37c8be04-e762-81b9-9424-ee8eb21a0918",
+      "action": "reject"
+    },
+    {
+      "song_name": "馬鹿おどり",
+      "page_id": "37c8be04-e762-81c7-b8a4-d56cc9e46590",
+      "action": "reject"
+    }
+  ],
+  "source_memos": [
+    {
+      "song_name": "山王音頭",
+      "page_id": "37c8be04-e762-81e4-9d85-e5fe415b10a7",
+      "action": "source_memo"
+    },
+    {
+      "song_name": "千代田踊り",
+      "page_id": "37c8be04-e762-8112-ba90-c56f7568f5d1",
+      "action": "source_memo"
+    },
+    {
+      "song_name": "岡崎音頭",
+      "page_id": "37c8be04-e762-815b-adf0-cc0fed19b0a4",
+      "action": "source_memo"
+    },
+    {
+      "song_name": "五万石おどり",
+      "page_id": "37c8be04-e762-81e7-818e-c399b6eb4426",
+      "action": "source_memo"
+    }
+  ],
+  "glossary": {
+    "term": "盆ジョビ",
+    "page_id": "37b8be04-e762-8119-ab6d-fd2eb5013f02",
+    "action": "update"
+  }
+}

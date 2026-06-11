@@ -45,3 +45,11 @@ VENUE_DATABASE_ID = os.environ.get(
     "VENUE_DATABASE_ID",
     "cbc56bda-2259-46bf-8aac-adb7efd691c2",
 )
+GLOSSARY_V2_DATABASE_ID = os.environ.get(
+    "GLOSSARY_V2_DB_ID",
+    "37b8be04-e762-8184-9feb-e3f982d01c0a",
+)
+SONG_MASTER_DATABASE_ID = os.environ.get(
+    "SONG_MASTER_DB_ID",
+    "37c8be04-e762-814b-b8f2-f1b61fc8f16c",
+)

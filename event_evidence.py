@@ -16,6 +16,8 @@ SCHEDULE_WORDS = ("開催", "予定", "日程", "会場", "場所", "告知", "�
 YEAR_SIGNALS = ("去年", "昨年", "一昨年", "来年", "今年も")
 REGION_RE = re.compile(r"([一-龥ぁ-んァ-ヶー]{2,12}(?:都|道|府|県|市|区|町|村|駅|丁目))")
 DATE_RE = re.compile(r"((?:20\d{2}年)?\d{1,2}月\d{1,2}日|(?:20\d{2}[/-])?\d{1,2}[/-]\d{1,2}|今週末|来週|週末|明日|今日|本日)")
+MONTH_RE = re.compile(r"(?:(?:20\d{2}年)?(\d{1,2})月|(?:20\d{2}[/-])?(\d{1,2})[/-]\d{1,2})")
+HASHTAG_RE = re.compile(r"#([A-Za-z0-9_一-龥ぁ-んァ-ヶー・ー]+)")
 VENUE_RE = re.compile(r"([一-龥ぁ-んァ-ヶーA-Za-z0-9]{2,18}(?:神社|寺|本願寺|公園|広場|会館|商店街|学校|小学校|中学校|駅前))")
 EVENT_RE = re.compile(r"([一-龥ぁ-んァ-ヶーA-Za-z0-9・ー]{2,30}(?:盆踊り大会|盆おどり大会|盆踊り|盆おどり|納涼大会|夏祭り|まつり|祭り))")
 GROUP_RE = re.compile(r"([一-龥ぁ-んァ-ヶーA-Za-z0-9・ー]{2,24}(?:保存会|舞踊会|民踊会|婦人会|青年会|町会|自治会|実行委員会))")
@@ -59,6 +61,11 @@ def _clean_venue_hint(value):
     return value
 
 
+def _clean_event_hint(value):
+    value = re.sub(r"^(?:今年も|去年の|昨年の|来年の|先日の)", "", value or "")
+    return value.strip()
+
+
 def _related_key(hints):
     parts = []
     for key in ("dates", "regions", "venues", "songs", "groups", "events"):
@@ -66,6 +73,206 @@ def _related_key(hints):
         if values:
             parts.append(re.sub(r"\s+", "", values[0]).casefold())
     return "|".join(parts)[:500]
+
+
+def _norm_key_part(value):
+    return re.sub(r"\s+", "", str(value or "").strip()).casefold()
+
+
+def _first(values):
+    return next((value for value in values or [] if value), "")
+
+
+def _month_from_hints(time_hints):
+    for hint in time_hints or []:
+        match = MONTH_RE.search(str(hint))
+        if match:
+            value = match.group(1) or match.group(2)
+            try:
+                return f"{int(value):02d}"
+            except (TypeError, ValueError):
+                return ""
+    return ""
+
+
+def _hashtags_from_text(text):
+    values = []
+    for value in HASHTAG_RE.findall(text or ""):
+        if value not in values:
+            values.append(value)
+    return values[:5]
+
+
+def build_event_candidate_match_key(evidence):
+    event_name = _norm_key_part(evidence.get("estimated_event"))
+    venue = _norm_key_part(evidence.get("estimated_venue") or _first(evidence.get("venue_hints")))
+    month = _month_from_hints(evidence.get("time_hints"))
+    hashtags = [_norm_key_part(value) for value in _hashtags_from_text(evidence.get("text"))]
+    parts = []
+    if event_name:
+        parts.append(f"event:{event_name}")
+    if venue:
+        parts.append(f"venue:{venue}")
+    if month:
+        parts.append(f"month:{month}")
+    if hashtags:
+        parts.append("tag:" + ",".join(sorted(hashtags)[:3]))
+    if not parts:
+        parts.append(_norm_key_part(evidence.get("identity")))
+    return "|".join(parts)[:500]
+
+
+def build_event_candidate_key(match_key):
+    digest = hashlib.sha256(str(match_key or "").encode("utf-8")).hexdigest()
+    return f"event:{digest}"
+
+
+def score_event_candidate_v2(candidate, known_venues=None):
+    known_venues = known_venues or {}
+    evidence_items = candidate.get("evidence") or []
+    speakers = {
+        _norm_key_part(item.get("account"))
+        for item in evidence_items
+        if item.get("account")
+    }
+    speaker_count = len(speakers)
+    score = 0
+    breakdown = []
+
+    if speaker_count:
+        speaker_score = 10
+        if speaker_count >= 2:
+            speaker_score += 15
+        if speaker_count >= 3:
+            speaker_score += min((speaker_count - 2) * 10, 10)
+        speaker_score = min(speaker_score, 35)
+        score += speaker_score
+        breakdown.append({"reason": "speakers", "points": speaker_score})
+
+    venue = candidate.get("estimated_venue") or ""
+    if venue and venue in known_venues:
+        score += 15
+        breakdown.append({"reason": "known_venue", "points": 15})
+
+    has_anchor = bool(candidate.get("estimated_event") or venue)
+    if has_anchor and candidate.get("estimated_date"):
+        score += 15
+        breakdown.append({"reason": "date_with_anchor", "points": 15})
+    elif has_anchor and candidate.get("estimated_month"):
+        score += 10
+        breakdown.append({"reason": "month_with_anchor", "points": 10})
+
+    event_names = [
+        item.get("estimated_event")
+        for item in evidence_items
+        if item.get("estimated_event")
+    ]
+    if candidate.get("estimated_event"):
+        event_score = 15 if len(set(event_names)) == 1 and len(event_names) >= 2 else 8
+        score += event_score
+        breakdown.append({"reason": "event_name", "points": event_score})
+
+    if any(item.get("year_signals") for item in evidence_items):
+        score += 10
+        breakdown.append({"reason": "year_continuity", "points": 10})
+
+    if candidate.get("official_source"):
+        score += 25
+        breakdown.append({"reason": "official_source", "points": 25})
+
+    if any("weak_bon_context:-3" in (item.get("score_reasons") or []) for item in evidence_items):
+        score -= 20
+        breakdown.append({"reason": "weak_bon_context", "points": -20})
+
+    score = max(0, min(100, score))
+    return score, breakdown
+
+
+def aggregate_event_candidates(evidence_list, known_venues=None):
+    grouped = {}
+    for evidence in evidence_list or []:
+        if evidence.get("type") != "イベント":
+            continue
+        match_key = build_event_candidate_match_key(evidence)
+        candidate_key = build_event_candidate_key(match_key)
+        group = grouped.setdefault(candidate_key, {
+            "candidate_key": candidate_key,
+            "match_key": match_key,
+            "match_key_parts": match_key.split("|"),
+            "type": "イベント",
+            "source": "x_event_evidence",
+            "status": "未確認",
+            "priority": "通常",
+            "estimated_event": "",
+            "estimated_venue": "",
+            "estimated_month": "",
+            "estimated_date": "",
+            "hashtags": [],
+            "evidence": [],
+        })
+        if evidence.get("estimated_event") and not group["estimated_event"]:
+            group["estimated_event"] = evidence["estimated_event"]
+        if evidence.get("estimated_venue") and not group["estimated_venue"]:
+            group["estimated_venue"] = evidence["estimated_venue"]
+        if evidence.get("time_hints"):
+            group["estimated_date"] = group["estimated_date"] or _first(evidence.get("time_hints"))
+            group["estimated_month"] = group["estimated_month"] or _month_from_hints(evidence.get("time_hints"))
+        for hashtag in _hashtags_from_text(evidence.get("text")):
+            if hashtag not in group["hashtags"]:
+                group["hashtags"].append(hashtag)
+        group["evidence"].append({
+            "identity": evidence.get("identity"),
+            "tweet_id": evidence.get("tweet_id"),
+            "url": evidence.get("url"),
+            "text": (evidence.get("text") or "")[:500],
+            "account": evidence.get("account"),
+            "spoken_at": evidence.get("spoken_at"),
+            "patterns": evidence.get("patterns") or [],
+            "source_score": evidence.get("score", 0),
+            "score_reasons": evidence.get("score_reasons") or [],
+            "estimated_event": evidence.get("estimated_event"),
+            "estimated_venue": evidence.get("estimated_venue"),
+            "time_hints": evidence.get("time_hints") or [],
+            "year_signals": evidence.get("year_signals") or [],
+        })
+
+    candidates = []
+    for group in grouped.values():
+        title = group["estimated_event"]
+        if not title and group["estimated_venue"]:
+            title = f"{group['estimated_venue']}の盆踊り（名称未確定）"
+        if not title:
+            title = "[断片] イベント候補（名称未確定）"
+        speakers = sorted({
+            item.get("account") for item in group["evidence"] if item.get("account")
+        })
+        score, breakdown = score_event_candidate_v2(group, known_venues)
+        group.update({
+            "venue": title,
+            "title": title,
+            "identity": group["candidate_key"],
+            "priority": "高" if score >= 50 else "通常",
+            "confidence_score": score,
+            "score_breakdown": breakdown,
+            "evidence_count": len(group["evidence"]),
+            "speaker_count": len(speakers),
+            "speakers": speakers,
+            "text": "\n\n".join(
+                item.get("text") or "" for item in group["evidence"][:3]
+            )[:1900],
+            "url": _first([item.get("url") for item in group["evidence"]]),
+            "account": _first(speakers),
+            "spoken_at": _first([item.get("spoken_at") for item in group["evidence"]]),
+            "time_hints": [group["estimated_date"]] if group["estimated_date"] else [],
+            "venue_hints": [group["estimated_venue"]] if group["estimated_venue"] else [],
+            "score": score,
+            "score_reasons": [
+                f"{item['reason']}:{item['points']:+d}"
+                for item in breakdown
+            ],
+        })
+        candidates.append(group)
+    return sorted(candidates, key=lambda item: (-item["confidence_score"], item["title"]))
 
 
 def classify_event_evidence(voice, config=None):
@@ -89,7 +296,10 @@ def classify_event_evidence(voice, config=None):
             _clean_venue_hint(value)
             for value in _unique_matches(VENUE_RE, text)
         ],
-        "events": _unique_matches(EVENT_RE, text),
+        "events": [
+            _clean_event_hint(value)
+            for value in _unique_matches(EVENT_RE, text)
+        ],
         "groups": _unique_matches(GROUP_RE, text),
         "songs": _unique_matches(SONG_RE, text),
         "year_signals": [word for word in YEAR_SIGNALS if word in text],

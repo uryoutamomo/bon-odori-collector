@@ -16,8 +16,9 @@ from proactive_search import (
     load_targets,
     select_due_targets,
 )
-from queue_store import DynamoQueueStore
+from queue_store import DynamoQueueStore, EventCandidateQueueStore
 from event_evidence import (
+    aggregate_event_candidates,
     build_history_query,
     build_initial_window,
     classify_event_evidence,
@@ -47,6 +48,7 @@ X_LOG_DB_ID = _env_or_default("X_LOG_DB_ID", "ef2f627d-3ac5-4133-9abd-f5d6d655af
 TWITTERAPI_IO_BASE = "https://api.twitterapi.io/twitter/tweet/advanced_search"
 X_QUERIES_FILE = "x_queries.json"
 X_BUDGET_FILE = "data/x_budget.json"
+GLOSSARY_RUNTIME_FILE = "data/glossary_runtime.json"
 
 QUERIES = ["盆踊り", "盆おどり"]
 HOME_KEYWORDS = []
@@ -457,13 +459,56 @@ def _load_x_config():
     try:
         with open(X_QUERIES_FILE, "r", encoding="utf-8") as f:
             cfg = json.load(f)
-        return cfg if cfg.get("enabled", True) else None
+        if not cfg.get("enabled", True):
+            return None
+        return _apply_glossary_runtime_to_x_config(cfg)
     except FileNotFoundError:
         print(f"[x] {X_QUERIES_FILE} が無いため X 収集をスキップ")
         return None
     except Exception as e:
         print(f"[x] 設定読み込みエラー（X収集スキップ）: {e}")
         return None
+
+
+def _merge_unique(existing, additions):
+    seen = set()
+    out = []
+    for value in list(existing or []) + list(additions or []):
+        if not value or value in seen:
+            continue
+        seen.add(value)
+        out.append(value)
+    return out
+
+
+def _apply_glossary_runtime_to_x_config(cfg):
+    """用語集v2のruntime語彙をx_queries設定へ上乗せする。fail-safe。"""
+    try:
+        with open(GLOSSARY_RUNTIME_FILE, "r", encoding="utf-8") as f:
+            runtime = json.load(f)
+    except FileNotFoundError:
+        return cfg
+    except Exception as e:
+        print(f"[x] 用語集runtime読み込みエラー（スキップ）: {e}")
+        return cfg
+
+    cfg = dict(cfg)
+    cfg["exclude_keywords"] = _merge_unique(
+        cfg.get("exclude_keywords", []),
+        runtime.get("exclude_keywords", []),
+    )
+    cfg["experience_keywords"] = _merge_unique(
+        cfg.get("experience_keywords", []),
+        runtime.get("experience_keywords", []),
+    )
+    cfg["glossary_runtime"] = {
+        "source": runtime.get("generated_by", ""),
+        "alias_count": len(runtime.get("alias_map", {})),
+        "exclude_count": len(runtime.get("exclude_keywords", [])),
+        "experience_count": len(runtime.get("experience_keywords", [])),
+        "song_count": len(runtime.get("song_terms", [])),
+    }
+    return cfg
 
 
 def _score_voice(text, cfg):
@@ -715,6 +760,10 @@ def collect_proactive_x(targets, seen_urls, config):
 X_MEMBER_LIST_DB_ID = _env_or_default("X_MEMBER_LIST_DB_ID", "5c585224465241548b631e4e5d316f3b")
 TORIMOCHI_QUEUE_DB_ID = _env_or_default("TORIMOCHI_QUEUE_DB_ID", "f560afee832f4b1084d6e6093d74da16")
 GLOSSARY_DB_ID = _env_or_default("GLOSSARY_DB_ID", "989e9effc7fc40db8043a3b8e03090ee")
+GLOSSARY_V2_DB_ID = _env_or_default("GLOSSARY_V2_DB_ID", "37b8be04-e762-8184-9feb-e3f982d01c0a")
+GLOSSARY_AUTO_CONFIDENCES = ("公式確認", "複数一致")
+GLOSSARY_V2_AUTO_STATES = ("有効",)
+GLOSSARY_V2_AUTO_CONFIDENCES = ("公式確認", "複数一致", "除外確定")
 VENUE_MASTER_FILE = "data/venue_master.json"
 X_WHITELIST_STATE_FILE = "data/x_whitelist_state.json"
 X_ACCOUNT_SCORES_FILE = "data/x_account_scores.json"
@@ -734,9 +783,11 @@ X_EVENT_EVIDENCE_STATE_FILE = "data/x_event_evidence_state.json"
 X_EVENT_EVIDENCE_COHORT_FILE = "data/x_event_evidence_cohort.json"
 QUEUE_SEEN_FILE = "data/torimochi_queue_seen.json"
 QUEUE_STORAGE_MODE = os.environ.get("QUEUE_STORAGE_MODE", "notion").lower()
+EVENT_QUEUE_STORAGE_MODE = os.environ.get("EVENT_QUEUE_STORAGE_MODE", QUEUE_STORAGE_MODE).lower()
 QUEUE_TYPE_VENUE = "会場"
 QUEUE_TYPE_EVENT = "イベント"
-QUEUE_TYPES = (QUEUE_TYPE_VENUE, QUEUE_TYPE_EVENT)
+QUEUE_TYPE_EVENT_CANDIDATE = "イベント候補"
+QUEUE_TYPES = (QUEUE_TYPE_VENUE, QUEUE_TYPE_EVENT, QUEUE_TYPE_EVENT_CANDIDATE)
 
 # ホーム会場（築地起点・最優先）。会場マスタに無くても確実に拾うための固定リスト。
 # X自由文からは「既知会場＋このリスト」との一致だけを拾う（regex自由抽出はニュース限定）。
@@ -1349,6 +1400,18 @@ def _prop_select(prop):
         return ""
     sel = prop.get("select")
     return sel.get("name", "") if sel else ""
+
+
+def _prop_multi_select(prop):
+    if not prop:
+        return []
+    return [item.get("name", "") for item in prop.get("multi_select", []) if item.get("name")]
+
+
+def _prop_checkbox(prop):
+    if not prop:
+        return False
+    return bool(prop.get("checkbox"))
 
 
 def _prop_number(prop):
@@ -1997,6 +2060,7 @@ def _ensure_torimochi_queue_type_property():
                     "options": merged_select_options("種別", [
                         {"name": QUEUE_TYPE_VENUE, "color": "blue"},
                         {"name": QUEUE_TYPE_EVENT, "color": "purple"},
+                        {"name": QUEUE_TYPE_EVENT_CANDIDATE, "color": "pink"},
                     ])
                 }
             },
@@ -2044,7 +2108,13 @@ def _ensure_torimochi_queue_type_property():
             "推定イベント名": {"rich_text": {}},
             "推定会場": {"rich_text": {}},
             "関連候補キー": {"rich_text": {}},
+            "候補キー": {"rich_text": {}},
             "検知スコア": {"number": {"format": "number"}},
+            "確度スコア": {"number": {"format": "number"}},
+            "証拠数": {"number": {"format": "number"}},
+            "発言者数": {"number": {"format": "number"}},
+            "推定月日": {"rich_text": {}},
+            "昇格先イベント": {"url": {}},
             "スコア根拠": {"rich_text": {}},
             "担当者": {"rich_text": {}},
             "次回確認日": {"date": {}},
@@ -2162,6 +2232,139 @@ def _event_evidence_notion_props(evidence):
         except ValueError:
             pass
     return props
+
+
+def _event_candidate_notion_props(candidate):
+    props = {
+        "証拠ID": _notion_rich_text_value(candidate.get("candidate_key")),
+        "候補キー": _notion_rich_text_value(candidate.get("match_key")),
+        "発言者": _notion_rich_text_value(candidate.get("speakers")),
+        "時期ヒント": _notion_rich_text_value(candidate.get("time_hints")),
+        "場所ヒント": _notion_rich_text_value(candidate.get("venue_hints")),
+        "推定イベント名": _notion_rich_text_value(candidate.get("estimated_event")),
+        "推定会場": _notion_rich_text_value(candidate.get("estimated_venue")),
+        "関連候補キー": _notion_rich_text_value(candidate.get("candidate_key")),
+        "推定月日": _notion_rich_text_value(
+            candidate.get("estimated_date") or candidate.get("estimated_month")
+        ),
+        "検知スコア": {"number": candidate.get("score", 0)},
+        "確度スコア": {"number": candidate.get("confidence_score", 0)},
+        "証拠数": {"number": candidate.get("evidence_count", 0)},
+        "発言者数": {"number": candidate.get("speaker_count", 0)},
+        "スコア根拠": _notion_rich_text_value(candidate.get("score_reasons")),
+        "会場候補状態": {
+            "select": {
+                "name": "既知会場と一致"
+                if candidate.get("estimated_venue") in _load_known_venues()
+                else ("候補" if candidate.get("estimated_venue") else "未検出")
+            }
+        },
+    }
+    first = (candidate.get("evidence") or [{}])[0]
+    spoken_at = first.get("spoken_at")
+    if spoken_at:
+        try:
+            datetime.fromisoformat(spoken_at.replace("Z", "+00:00"))
+            props["発言日時"] = {"date": {"start": spoken_at}}
+        except ValueError:
+            pass
+    return props
+
+
+def push_event_candidate_queue(event_evidence):
+    """イベント断片をイベント候補単位へ集約して裏取りキューへ同期する。"""
+    candidates = aggregate_event_candidates(event_evidence, _load_known_venues())
+    use_notion = EVENT_QUEUE_STORAGE_MODE in ("notion", "dual")
+    use_dynamodb = EVENT_QUEUE_STORAGE_MODE in ("dynamodb", "dual")
+    if use_notion and not NOTION_TOKEN:
+        print("[event-queue] NOTION_API_TOKEN 未設定のため追記スキップ")
+        return {"added": 0, "failed": len(candidates), "skipped": 0, "promote_dry_run": []}
+    if use_dynamodb and not os.environ.get("EVENT_CANDIDATE_QUEUE_TABLE"):
+        print("[event-queue] EVENT_CANDIDATE_QUEUE_TABLE 未設定のためDynamoDB追記スキップ")
+        use_dynamodb = False
+        if EVENT_QUEUE_STORAGE_MODE == "dynamodb":
+            return {"added": 0, "failed": len(candidates), "skipped": 0, "promote_dry_run": []}
+    if not candidates:
+        print("[event-queue] イベント候補なし")
+        return {"added": 0, "failed": 0, "skipped": 0, "promote_dry_run": []}
+    if use_notion and not _ensure_torimochi_queue_type_property():
+        return {"added": 0, "failed": len(candidates), "skipped": 0, "promote_dry_run": []}
+
+    dynamodb = EventCandidateQueueStore() if use_dynamodb else None
+    seen = _load_queue_seen()
+    today = datetime.now(timezone(timedelta(hours=9))).strftime("%Y-%m-%d")
+    added = failed = skipped = 0
+    promote_dry_run = []
+    for candidate in candidates:
+        key = candidate["candidate_key"]
+        if key in seen[QUEUE_TYPE_EVENT_CANDIDATE]:
+            skipped += 1
+            continue
+        if candidate.get("confidence_score", 0) >= 50:
+            promote_dry_run.append({
+                "candidate_key": key,
+                "title": candidate.get("title"),
+                "score": candidate.get("confidence_score"),
+                "match_key": candidate.get("match_key"),
+                "evidence_count": candidate.get("evidence_count"),
+                "speaker_count": candidate.get("speaker_count"),
+            })
+        if dynamodb:
+            created = dynamodb.put_candidate(candidate)
+            if not created and (not use_notion or dynamodb.is_notion_synced(key)):
+                seen[QUEUE_TYPE_EVENT_CANDIDATE].add(key)
+                skipped += 1
+                continue
+        props = {
+            "会場名": {"title": [{"text": {"content": candidate["title"][:200]}}]},
+            "種別": {"select": {"name": QUEUE_TYPE_EVENT_CANDIDATE}},
+            "ステータス": {"select": {"name": candidate.get("status") or "未確認"}},
+            "検知ソース": {"select": {"name": candidate.get("source") or "x_event_evidence"}},
+            "優先度": {"select": {"name": candidate.get("priority") or "通常"}},
+            "検知元本文": {"rich_text": [{"text": {"content": candidate.get("text", "")[:1900]}}]},
+            "検知日": {"date": {"start": today}},
+        }
+        if candidate.get("url"):
+            props["検知元URL"] = {"url": candidate["url"]}
+        props.update(_event_candidate_notion_props(candidate))
+        try:
+            notion_page_id = None
+            if use_notion:
+                response = _notion_request(
+                    "POST",
+                    "/pages",
+                    {"parent": {"database_id": TORIMOCHI_QUEUE_DB_ID}, "properties": props},
+                )
+                notion_page_id = response.get("id")
+                if dynamodb:
+                    dynamodb.mark_notion_synced(key, notion_page_id)
+            seen[QUEUE_TYPE_EVENT_CANDIDATE].add(key)
+            added += 1
+        except Exception as e:
+            failed += 1
+            print(f"[event-queue] 追記エラー（{key}・継続）: {e}")
+    if added:
+        try:
+            _save_queue_seen(seen)
+        except Exception as e:
+            print(f"[event-queue] queue_seen 保存エラー: {e}")
+    if promote_dry_run:
+        print("[event-queue] 昇格dry-run候補:")
+        for item in promote_dry_run:
+            print(
+                f"[event-queue] promote dry-run score={item['score']} "
+                f"title={item['title']} key={item['match_key']}"
+            )
+    print(
+        f"[event-queue] イベント候補 {added} 件追加"
+        f"（保存先 {EVENT_QUEUE_STORAGE_MODE}・検出 {len(candidates)} 件）"
+    )
+    return {
+        "added": added,
+        "failed": failed,
+        "skipped": skipped,
+        "promote_dry_run": promote_dry_run,
+    }
 
 
 def push_torimochi_queue(detected):
@@ -2342,7 +2545,7 @@ def load_glossary():
                 for alias in aliases:
                     if alias:
                         alias_map[alias] = canonical
-                if confidence in ("公式確認", "複数一致"):
+                if confidence in GLOSSARY_AUTO_CONFIDENCES:
                     confident_set.add(canonical)
             if not data.get("has_more"):
                 break
@@ -2352,6 +2555,100 @@ def load_glossary():
     except Exception as e:
         print(f"[glossary] 読込エラー（スキップ）: {e}")
         return {}, set()
+
+
+def load_glossary_v2():
+    """用語集v2から自動適用可能なruntime辞書を読み込む。
+
+    候補行はNotionレビュー用に残し、収集ロジックへは入れない。
+    戻り値:
+    - alias_map: {使用語: 解釈}
+    - exclude_keywords: 除外語として使う語
+    - experience_keywords: 参加報告語として使う語
+    - role_terms: {シグナル役割: [使用語]}
+    - song_terms: 曲名候補として使う語
+    """
+    empty = {
+        "alias_map": {},
+        "exclude_keywords": [],
+        "experience_keywords": [],
+        "role_terms": {},
+        "song_terms": [],
+    }
+    if not NOTION_TOKEN or not GLOSSARY_V2_DB_ID:
+        return empty
+    try:
+        runtime = {
+            "alias_map": {},
+            "exclude_keywords": set(),
+            "experience_keywords": set(),
+            "role_terms": {},
+            "song_terms": set(),
+        }
+        cursor = None
+        while True:
+            payload = {"page_size": 100}
+            if cursor:
+                payload["start_cursor"] = cursor
+            data = _notion_query_database(GLOSSARY_V2_DB_ID, payload)
+            for row in data.get("results", []):
+                props = row.get("properties", {})
+                term = _prop_plain(props.get("使用語", {}))
+                if not term:
+                    continue
+                state = _prop_select(props.get("状態", {}))
+                confidence = _prop_select(props.get("確度", {}))
+                auto_apply = _prop_checkbox(props.get("自動適用可", {}))
+                if (
+                    state not in GLOSSARY_V2_AUTO_STATES
+                    or confidence not in GLOSSARY_V2_AUTO_CONFIDENCES
+                    or not auto_apply
+                ):
+                    continue
+                kind = _prop_select(props.get("種別", {}))
+                interpretation = (
+                    _prop_plain(props.get("解釈", {}))
+                    or _prop_plain(props.get("正規語/表示名", {}))
+                    or term
+                )
+                roles = _prop_multi_select(props.get("シグナル役割", {}))
+
+                if kind in ("会場別名", "イベント別名", "地域語", "団体語"):
+                    runtime["alias_map"][term] = interpretation
+                if kind == "除外語" or "除外語" in roles or confidence == "除外確定":
+                    runtime["exclude_keywords"].add(term)
+                if "参加報告" in roles:
+                    runtime["experience_keywords"].add(term)
+                if kind == "曲名" or "曲目ヒント" in roles:
+                    runtime["song_terms"].add(_prop_plain(props.get("曲名", {})) or interpretation)
+                for role in roles:
+                    runtime["role_terms"].setdefault(role, set()).add(term)
+
+            if not data.get("has_more"):
+                break
+            cursor = data.get("next_cursor")
+
+        out = {
+            "alias_map": dict(sorted(runtime["alias_map"].items())),
+            "exclude_keywords": sorted(runtime["exclude_keywords"]),
+            "experience_keywords": sorted(runtime["experience_keywords"]),
+            "role_terms": {
+                role: sorted(values)
+                for role, values in sorted(runtime["role_terms"].items())
+            },
+            "song_terms": sorted(runtime["song_terms"]),
+        }
+        print(
+            "[glossary-v2] runtime読込: "
+            f"alias {len(out['alias_map'])} / "
+            f"exclude {len(out['exclude_keywords'])} / "
+            f"experience {len(out['experience_keywords'])} / "
+            f"songs {len(out['song_terms'])}"
+        )
+        return out
+    except Exception as e:
+        print(f"[glossary-v2] 読込エラー（スキップ）: {e}")
+        return empty
 
 
 def register_glossary_alias(alias, canonical, source_url="", confidence="推察"):
@@ -2371,7 +2668,19 @@ def register_glossary_alias(alias, canonical, source_url="", confidence="推察"
         rows = data.get("results", [])
         if rows:
             page_id = rows[0]["id"]
-            existing_raw = _prop_plain(rows[0].get("properties", {}).get("表記ゆれ", {})) or ""
+            existing_props = rows[0].get("properties", {})
+            existing_confidence = _prop_select(existing_props.get("確度", {}))
+            if (
+                existing_confidence in GLOSSARY_AUTO_CONFIDENCES
+                and confidence not in GLOSSARY_AUTO_CONFIDENCES
+            ):
+                print(
+                    "[glossary] 追記スキップ: "
+                    f"高確度行「{canonical}」（{existing_confidence}）へ "
+                    f"低確度alias「{alias}」（{confidence}）は混ぜません"
+                )
+                return
+            existing_raw = _prop_plain(existing_props.get("表記ゆれ", {})) or ""
             existing_set = set(a.strip() for a in existing_raw.split(",") if a.strip())
             if alias in existing_set:
                 return
@@ -2706,7 +3015,7 @@ def main():
     # --- イベント断片の履歴パイロット → 裏取りキュー ---
     try:
         event_evidence = collect_event_evidence_history()
-        queue_result = push_torimochi_queue(event_evidence)
+        queue_result = push_event_candidate_queue(event_evidence)
         if event_evidence and queue_result.get("failed", 0) == 0:
             _clear_pending_event_evidence()
     except Exception as e:

@@ -51,6 +51,11 @@ jobs:
         NOTION_API_TOKEN: ${{ secrets.NOTION_API_TOKEN }}
       run: python event_audit.py --fail-on-duplicates
 
+    - name: Build glossary runtime
+      env:
+        NOTION_API_TOKEN: ${{ secrets.NOTION_API_TOKEN }}
+      run: python build_glossary_runtime.py
+
     - name: Run collector
       env:
         NOTION_API_TOKEN: ${{ secrets.NOTION_API_TOKEN }}
@@ -61,7 +66,9 @@ jobs:
         GLOSSARY_DB_ID: ${{ secrets.GLOSSARY_DB_ID }}
         AWS_REGION: ap-northeast-1
         DYNAMODB_QUEUE_TABLE: ${{ vars.DYNAMODB_QUEUE_TABLE }}
+        EVENT_CANDIDATE_QUEUE_TABLE: ${{ vars.EVENT_CANDIDATE_QUEUE_TABLE }}
         QUEUE_STORAGE_MODE: ${{ vars.QUEUE_STORAGE_MODE || 'notion' }}
+        EVENT_QUEUE_STORAGE_MODE: ${{ vars.EVENT_QUEUE_STORAGE_MODE || vars.QUEUE_STORAGE_MODE || 'notion' }}
       run: python collect.py
 
     - name: Promote high-confidence event dates
@@ -75,6 +82,7 @@ jobs:
       run: |
         python sync_venue_master.py
         python export_public_events.py
+        python build_event_song_candidates.py
 
     - name: Audit canonical event database after promotion
       env:
@@ -88,7 +96,10 @@ jobs:
         git add data/latest.json data/seen.json data/voices.json data/voices_seen.json
         [ -f data/venue_master.json ] && git add data/venue_master.json
         [ -f data/event_date_update_candidates.json ] && git add data/event_date_update_candidates.json
+        [ -f data/event_song_candidates.json ] && git add data/event_song_candidates.json
+        [ -f data/glossary_runtime.json ] && git add data/glossary_runtime.json
         [ -f data/public/events_public.json ] && git add data/public/events_public.json
+        [ -f data/public/event_songs_public.json ] && git add data/public/event_songs_public.json
         [ -f data/x_budget.json ] && git add data/x_budget.json
         [ -f data/x_account_scores.json ] && git add data/x_account_scores.json
         [ -f data/proactive_event_report.json ] && git add data/proactive_event_report.json

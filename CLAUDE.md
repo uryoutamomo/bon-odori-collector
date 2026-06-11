@@ -12,6 +12,8 @@
 - `data/seen.json` — これまでに見た URL の履歴（累積）
 - `data/proactive_event_report.json` — 定番イベントの今年情報の確認状況
 - `promote_event_dates.py` — X投稿・東京盆踊りマップ由来の構造化行から、高信頼の開催日だけイベントDBへ反映
+- `bon_odori_songs.py` — イベント説明・開催実績から、会場で踊られる曲目ヒントを保守的に抽出
+- `build_event_song_candidates.py` — X・ニュース・東京盆踊りマップ由来メモから曲目候補を広めに集め、レビュー用JSONへ保存
 
 ## 動作の要点
 
@@ -20,7 +22,9 @@
 - `seen.json` は履歴として累積し続ける（重複検知用に保持）。
 - 日次収集では、収集後に `promote_event_dates.py --apply` を実行する。
   - 自動反映は高信頼候補のみ。低信頼候補は `data/event_date_update_candidates.json` に残してレビュー対象にする。
-  - 反映後に `sync_venue_master.py` と `export_public_events.py` を再実行し、公開JSONへ `date` / `date_end` / `hints` / `jun` を反映する。
+  - 反映後に `sync_venue_master.py` と `export_public_events.py` を再実行し、公開JSONへ `date` / `date_end` / `hints` / `jun` / `songs` を反映する。
+  - 曲目ヒントは `events_public.json` の各イベント内 `songs` と、確認用の `data/public/event_songs_public.json` に出力する。イベント名だけからは抽出せず、説明・開催実績に曲目として現れたものだけを公開する。
+  - 公開前レビュー用の曲目候補は `data/event_song_candidates.json` に出力する。これは広めに拾うため、`status=未確認` の候補として扱い、確認後にイベントDBの説明・開催実績へ反映する。
   - 反映後にも `event_audit.py --fail-on-duplicates` を実行し、重複が出た場合はジョブを失敗させる。
 
 ## Notion 連携（重要）
@@ -110,12 +114,16 @@ Notion インテグレーション `bon-odori-collector` が対象ページに�
 |---|---|
 | `AWS_REGION` | AWSリージョン。既定値は `ap-northeast-1` |
 | `DYNAMODB_QUEUE_TABLE` | 裏取りキューのDynamoDBテーブル名 |
+| `EVENT_CANDIDATE_QUEUE_TABLE` | イベント候補v2キューのDynamoDBテーブル名 |
 | `QUEUE_STORAGE_MODE` | `notion`（既定）/ `dual` / `dynamodb` |
+| `EVENT_QUEUE_STORAGE_MODE` | イベント候補v2キューの保存先。未設定なら `QUEUE_STORAGE_MODE` に従う |
 
 AWS準備後はまず `dual` でNotionとDynamoDBへ二重書きし、検証完了後に
 `dynamodb` へ切り替える。GitHub ActionsのAWS認証は長期アクセスキーではなく
 OIDCロールを使う。
 トークン未設定時は書き込みをスキップして収集だけ行う（クラッシュしない）。
+イベント断片はv2移行中。1投稿1行ではなく、DynamoDBでは
+`bon-odori-event-candidate-queue` にイベント候補単位で集約し、Notionは運用画面として同期する。
 
 ## メール配信（NotionドラフトDB不使用）
 
@@ -152,9 +160,9 @@ X API 廃止で止まっていた参加レポ・感想の収集を、非公式�
 - 合意時点のスコア上位49件と `@karinchanchanko` の計50件を `data/x_event_evidence_cohort.json` に固定し、日次スコア再計算で母集団が変わらないようにする。
 - 初回は対象人数を絞らず、前年同日から14日間だけ取得する。完了後は `awaiting_review` で停止し、自動的に次期間へ進めない。
 - 検索語は盆踊り語に限定せず、取得後に参加予定・問い合わせ・推薦・誘い・過去参加のA〜Eを複数判定する。
-- A〜Eに該当した投稿は低スコアでも1投稿1証拠として「🔎裏取りキュー」に保存する。
-- 重複排除はイベント名でなく `evidence:<tweet_id>` を使う。状態は `data/x_event_evidence_state.json` に保存し、バッチとカーソル単位で再開する。
-- 検知スコアは発言単体のレビュー順にのみ使い、別投稿との関連度やアカウント信頼度とは分離する。
+- A〜Eに該当した投稿は低スコアでも証拠として保持し、イベント候補単位へ集約して「🔎裏取りキュー」に同期する。
+- v2の重複排除は `candidate_key` を使う。旧パイロットの `evidence:<tweet_id>` は互換のため残す。
+- 検知スコアは発言単体、確度スコアv2はイベント候補単位として分離する。50点以上はイベントDB昇格のdry-run対象。
 
 ### Xフォローグラフによる候補発見
 

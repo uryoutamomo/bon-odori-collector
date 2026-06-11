@@ -7,6 +7,9 @@ from unittest.mock import patch
 
 import collect
 from event_evidence import (
+    aggregate_event_candidates,
+    build_event_candidate_key,
+    build_event_candidate_match_key,
     build_history_query,
     build_initial_window,
     classify_event_evidence,
@@ -54,6 +57,46 @@ class EventEvidenceTest(unittest.TestCase):
         second = evidence_identity({"url": "https://example.com/a", "text": "x"})
         self.assertEqual(first, second)
         self.assertTrue(first.startswith("evidence:sha256:"))
+
+    def test_event_candidate_key_uses_event_venue_and_month(self):
+        evidence = classify_event_evidence({
+            "account": "@odorer",
+            "date": "2025-06-10T10:00:00+00:00",
+            "tweet_id": "12345",
+            "url": "https://x.com/odorer/status/12345",
+            "text": "浜町公園盆踊りに6月20日行きます #浜町公園盆踊り",
+        })
+        match_key = build_event_candidate_match_key(evidence)
+        self.assertIn("event:浜町公園盆踊り", match_key)
+        self.assertIn("venue:浜町公園", match_key)
+        self.assertIn("month:06", match_key)
+        self.assertTrue(build_event_candidate_key(match_key).startswith("event:"))
+
+    def test_aggregates_evidence_and_scores_v2(self):
+        first = classify_event_evidence({
+            "account": "@a",
+            "date": "2025-06-10T10:00:00+00:00",
+            "tweet_id": "1",
+            "url": "https://x.com/a/status/1",
+            "text": "今年も浜町公園盆踊りに6月20日行きます",
+        })
+        second = classify_event_evidence({
+            "account": "@b",
+            "date": "2025-06-11T10:00:00+00:00",
+            "tweet_id": "2",
+            "url": "https://x.com/b/status/2",
+            "text": "浜町公園盆踊り、6月20日開催情報です",
+        })
+        candidates = aggregate_event_candidates(
+            [first, second],
+            {"浜町公園": True},
+        )
+        self.assertEqual(len(candidates), 1)
+        candidate = candidates[0]
+        self.assertEqual(candidate["evidence_count"], 2)
+        self.assertEqual(candidate["speaker_count"], 2)
+        self.assertGreaterEqual(candidate["confidence_score"], 50)
+        self.assertEqual(candidate["title"], "浜町公園盆踊り")
 
     def test_initial_window_is_previous_year_and_fourteen_days(self):
         start, end = build_initial_window(
