@@ -475,8 +475,7 @@
     "venue": "三田松坂児童遊園",
     "area": "港区",
     "months": [
-      3,
-      4
+      3
     ],
     "scale": "小",
     "access": "都営三田線・東京メトロ南北線「白金高輪駅」から徒歩3分",
@@ -489,47 +488,15 @@
       "label": "未確認",
       "description": "開催日はまだ確認できていません"
     },
-    "date_candidates": [
-      {
-        "date": "2026-03-28",
-        "date_end": null,
-        "confidence": {
-          "level": "low",
-          "label": "参考情報",
-          "description": "日付の手がかりはありますが確認が必要です"
-        },
-        "score": 16,
-        "source": "blog_row",
-        "source_url": "https://nakano-arai.gr.jp/nakanodoorisakuramatsuri/",
-        "raw_date": "3/28"
-      },
-      {
-        "date": "2026-04-04",
-        "date_end": null,
-        "confidence": {
-          "level": "low",
-          "label": "参考情報",
-          "description": "日付の手がかりはありますが確認が必要です"
-        },
-        "score": 12,
-        "source": "blog_row",
-        "source_url": "https://www.city.abiko.chiba.jp/shisei/shichoshitsu/kishakaiken/koumoku_r7/202603.files/5_sakuramatsuri2026.pdf",
-        "raw_date": "4/4"
-      }
-    ],
+    "date_candidates": [],
     "hints": [
       [
         3,
-        28
-      ],
-      [
-        4,
-        4
+        30
       ]
     ],
     "jun": {
-      "3": "下旬",
-      "4": "上旬"
+      "3": "下旬"
     },
     "description": "三田松坂児童遊園で行われる地域の盆踊りイベント。過去の開催実績をもとに掲載。",
     "detail": "2025-03-30 開催実績。2025 [C8]\n3/30。三田松坂町会「桜まつり」 3月30日(日) 11:00-15:00。\n踊りは①11:10-②13:30-(各30分間)。\n・3月29日開催分が雨天により延期となりました。\n(3/30朝掲)",

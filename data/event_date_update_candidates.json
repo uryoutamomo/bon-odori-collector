@@ -1,63 +1,6 @@
 {
   "candidates": [
     {
-      "event_id": "37b8be04-e762-81dc-9b60-e97b6cd3dc92",
-      "event_name": "桜まつり",
-      "venues": [
-        "三田松坂児童遊園"
-      ],
-      "current_date": null,
-      "current_date_end": null,
-      "new_date": "2026-03-28",
-      "new_date_end": null,
-      "score": 16,
-      "reasons": [
-        "event_name_exact",
-        "extracted_event_name",
-        "schedule_word"
-      ],
-      "source": "blog_row",
-      "account": "東京盆踊りマップ",
-      "spoken_at": "",
-      "url": "https://nakano-arai.gr.jp/nakanodoorisakuramatsuri/",
-      "text": "2026 [N1]\n3/28\n新井薬師公園\n新井町会連合会・中野通り桜まつり実行委員会「中野通り桜まつり」\n3月28日(土) (初日)18:00-(約30分間)18:00。\n日本民踊・盆踊り 鳳蝶流鳳蝶会によるパフォーマンス。\n*イベント全体は 3月28日と29日にかけて開催。和太鼓演奏、エイサー、ダンスなどのプログラムが催されます。\n(3/26 午後掲)",
-      "raw_date": "3/28",
-      "extracted_event_names": [
-        "新井町会連合会・中野通り桜まつり",
-        "中野通り桜まつり",
-        "本民踊・盆踊り"
-      ],
-      "refresh_only": false
-    },
-    {
-      "event_id": "37b8be04-e762-8118-9bcc-efd064bef772",
-      "event_name": "第2回 大盆踊り祭 with 坂崎守寛",
-      "venues": [
-        "日本橋社会教育会館"
-      ],
-      "current_date": "2026-02-21",
-      "current_date_end": null,
-      "new_date": "2026-06-09",
-      "new_date_end": null,
-      "score": 16,
-      "reasons": [
-        "extracted_event_name",
-        "venue_exact",
-        "schedule_word",
-        "structured_blog_venue"
-      ],
-      "source": "blog_row",
-      "account": "東京盆踊りマップ",
-      "spoken_at": "",
-      "url": "https://drive.google.com/file/d/1KNAD2jSjXXA7Ea8sxd0SDPzFRjC6Wyio/view?usp=drive_link",
-      "text": "2026 [B8]\n6/9\n日本橋社会教育会館付近\n「和桜会(中央) 第1回 盆踊り練習会」6月9日(火)19:30-20:30。\n・盆踊りシーズンを前に、各地の踊りを取り上げた練習会を開催いたします。\n・要申込(メール、wazakura.chou@gmail.com)\n申込をされた方に、追って詳細をご案内いたします。\n＊会場には問い合わせをしないでください。",
-      "raw_date": "6/9",
-      "extracted_event_names": [
-        "第1回 盆踊り"
-      ],
-      "refresh_only": false
-    },
-    {
       "event_id": "37b8be04-e762-81c2-8885-d58cfb266716",
       "event_name": "戸越宮前盆踊り",
       "venues": [
@@ -161,34 +104,6 @@
       "raw_date": "6/7",
       "extracted_event_names": [
         "飛鳥山公園盆踊り"
-      ],
-      "refresh_only": false
-    },
-    {
-      "event_id": "37b8be04-e762-81dc-9b60-e97b6cd3dc92",
-      "event_name": "桜まつり",
-      "venues": [
-        "三田松坂児童遊園"
-      ],
-      "current_date": null,
-      "current_date_end": null,
-      "new_date": "2026-04-04",
-      "new_date_end": null,
-      "score": 12,
-      "reasons": [
-        "event_name_exact",
-        "extracted_event_name",
-        "schedule_word",
-        "negative_word"
-      ],
-      "source": "blog_row",
-      "account": "東京盆踊りマップ",
-      "spoken_at": "",
-      "url": "https://www.city.abiko.chiba.jp/shisei/shichoshitsu/kishakaiken/koumoku_r7/202603.files/5_sakuramatsuri2026.pdf",
-      "text": "2026 [12z4]\n4/4\n手賀沼親水広場\n「あびこ桜まつり2026 ご当地輪踊り」 4月4日(土) 16:00-17:00。\n・曲目はリンク「曲」を参照。\n＊荒天中止。\n＊イベント全体は4月12日までの土曜と日曜に開催。",
-      "raw_date": "4/4",
-      "extracted_event_names": [
-        "あびこ桜まつり"
       ],
       "refresh_only": false
     },
