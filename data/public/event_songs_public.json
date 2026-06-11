@@ -1,0 +1,146 @@
+[
+  {
+    "name": "濱町音頭盆踊り大会",
+    "venue": "浜町公園",
+    "area": "中央区",
+    "date": null,
+    "songs": [
+      {
+        "name": "濱町音頭",
+        "confidence": "hint",
+        "source_count": 1
+      }
+    ]
+  },
+  {
+    "name": "郡上おどり in 青山 2025",
+    "venue": "秩父宮ラグビー場駐車場",
+    "area": "港区",
+    "date": "2025-06-20",
+    "songs": [
+      {
+        "name": "郡上おどり",
+        "confidence": "confirmed",
+        "source_count": 2
+      }
+    ]
+  },
+  {
+    "name": "第2回田原de盆踊り",
+    "venue": "田原小学校",
+    "area": "台東区",
+    "date": null,
+    "songs": [
+      {
+        "name": "ソーラン節",
+        "confidence": "hint",
+        "source_count": 1
+      },
+      {
+        "name": "ハラハラ音頭",
+        "confidence": "hint",
+        "source_count": 1
+      }
+    ]
+  },
+  {
+    "name": "西図子 盆踊りとおでんの宴",
+    "venue": "向島百花会館",
+    "area": "墨田区",
+    "date": "2026-03-01",
+    "songs": [
+      {
+        "name": "東京音頭",
+        "confidence": "hint",
+        "source_count": 1
+      },
+      {
+        "name": "河内音頭",
+        "confidence": "hint",
+        "source_count": 1
+      },
+      {
+        "name": "スカイツリー踊り",
+        "confidence": "hint",
+        "source_count": 1
+      }
+    ]
+  },
+  {
+    "name": "すみだ錦糸町河内音頭大盆踊り",
+    "venue": "江東橋竪川親水公園",
+    "area": "墨田区",
+    "date": "2026-07-29",
+    "songs": [
+      {
+        "name": "河内音頭",
+        "confidence": "hint",
+        "source_count": 1
+      }
+    ]
+  },
+  {
+    "name": "すみだ沖縄まつり",
+    "venue": "錦糸公園",
+    "area": "墨田区",
+    "date": "2026-05-09",
+    "songs": [
+      {
+        "name": "すみだ輪おどり",
+        "confidence": "hint",
+        "source_count": 1
+      }
+    ]
+  },
+  {
+    "name": "第71回大井どんたく夏まつり 初日 盆踊り",
+    "venue": "大井町駅前中央通り",
+    "area": "品川区",
+    "date": "2025-08-23",
+    "songs": [
+      {
+        "name": "東京音頭",
+        "confidence": "hint",
+        "source_count": 1
+      },
+      {
+        "name": "大井どんたく音頭",
+        "confidence": "hint",
+        "source_count": 1
+      },
+      {
+        "name": "品川音頭",
+        "confidence": "hint",
+        "source_count": 1
+      },
+      {
+        "name": "品川甚句",
+        "confidence": "hint",
+        "source_count": 1
+      }
+    ]
+  },
+  {
+    "name": "第60回あらかわ青年大会 アリストック",
+    "venue": "あらかわ遊園アリスの広場",
+    "area": "荒川区",
+    "date": "2026-03-15",
+    "songs": [
+      {
+        "name": "東京音頭",
+        "confidence": "hint",
+        "source_count": 1
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "hint",
+        "source_count": 1
+      },
+      {
+        "name": "荒川音頭",
+        "confidence": "hint",
+        "source_count": 1
+      }
+    ]
+  }
+]

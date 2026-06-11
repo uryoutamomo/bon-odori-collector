@@ -1212,6 +1212,18 @@
     "notion_url": "https://app.notion.com/p/37b8be04e762812eaf26ead2c6e3e991"
   },
   {
+    "venue": "上野原市役所センタープラザ（もみじホール）",
+    "region": "山梨県上野原市",
+    "month": "8月",
+    "scale": "不明",
+    "access": null,
+    "in_tsukiji_30min": false,
+    "source_url": "https://www.city.uenohara.yamanashi.jp/site/shiminkatsudo/1021060.html",
+    "memo": "第1回うえのはら盆踊り（2025-08-02 土 正午〜20:30・雨天決行）の開催実績。主催=上野原納涼大会実行委員会。提灯の伝統盆踊りにアキバ盆踊り・アキコス（コスプレ）・野外ライブ・屋台を組み合わせた新型イベント。暴風警報時はもみじホール内開催または中止。【裏取り経緯】X断片（@sasakichi_akiba 2025-06）→市公式HPで開催実績確認（2026-06-11 こと・確度スコア検証の裏取りで発見）",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37c8be04e76281ac8c69f1095ef3c954"
+  },
+  {
     "venue": "下代田児童遊園",
     "region": "世田谷区",
     "month": "7月",
@@ -1774,6 +1786,18 @@
     "memo": "旧陸軍工兵学校の正門レンガ門柱が残る市指定文化財ありの大規模公園。「松戸ラストサマーフェス＆盆踊り」が例年8/30-31開催（2025年は17:30〜盆踊り、コスプレイベントacosta!同時開催）=確実な盆踊り会場。築地30分圏外（千葉県松戸市）。",
     "needs_review": false,
     "notion_url": "https://app.notion.com/p/3718be04e762816c8b0cf87b6c9088b1"
+  },
+  {
+    "venue": "森戸海岸（森戸の浜）",
+    "region": "神奈川県三浦郡葉山町",
+    "month": "8月",
+    "scale": "中",
+    "access": null,
+    "in_tsukiji_30min": false,
+    "source_url": "https://thecanvashotel.jp/blog/detail/index.php?id=586",
+    "memo": "森戸の浜の盆踊り大会の会場。毎年8月13日 19:00〜21:00、砂浜で生バンド「葉山盆楽団」の演奏に合わせて踊る形式（炭坑節・花笠音頭・東京音頭・オリジナルの葉山音頭など）。1930年代起源、1944年から中断、2006年に海の家OASISのライブイベントとして復活。【裏取り経緯】X断片（@QTjittan 2025-06）→Web裏取りで開催実績確認（2026-06-11 こと・確度スコア検証の裏取りで発見）",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/37c8be04e76281bba167f8e3e86a4dbf"
   },
   {
     "venue": "横根稲荷神社",

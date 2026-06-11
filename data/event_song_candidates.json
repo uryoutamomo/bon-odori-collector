@@ -1,0 +1,3025 @@
+{
+  "generated_by": "build_event_song_candidates.py",
+  "count": 94,
+  "public_event_count": 16,
+  "review_count": 78,
+  "candidates": [
+    {
+      "id": "addaf74cfe28988f",
+      "song_name": "ダンシングヒーロー",
+      "event_name": "中央区大江戸まつり盆おどり大会",
+      "venue": "浜町公園",
+      "area": "中央区",
+      "status": "未確認",
+      "confidence": "中",
+      "reasons": [
+        "known_song_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/daikok555/status/2038972498159788058",
+          "date": "2026-03-31T13:31:40+00:00",
+          "text": "daikok🇹🇭\n@thaigir11 東京、浜町公園の大江戸まつり盆踊り会場で櫓を囲む踊りの輪の外から\nダンシングヒーロー〜eat you up〜で踊ってるのを見た感じがこんな感じです"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "f5e3fa51ff206a71",
+      "song_name": "炭坑節",
+      "event_name": "築地本願寺納涼盆踊り大会",
+      "venue": "築地本願寺",
+      "area": "中央区",
+      "status": "未確認",
+      "confidence": "中",
+      "reasons": [
+        "known_song_context",
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/natsutr_bon/status/2059805547512418608",
+          "date": "2026-05-28T01:14:46+00:00",
+          "text": "奈津大郎〘ナツタロ〙\n5/24築地JAM\n\n盆踊り会場としても人気の築地本願寺で民謡クルセイダーズLIVE♪\n花笠音頭からはじまり、ソーラン節では観客揃って船漕いだり波起こしたり〜🌊\n貝殻節、会津磐梯山、炭坑節と民謡踊りを楽しく✨\n\nそのあとも美味しいフードを食べたり、ジャズ、ボサノヴァなどをユルユルっと🥂\n\n#民クル https://t.co/BNQ6P4cM3h"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "54dfdc26c823ce30",
+      "song_name": "大東京音頭",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "status": "未確認",
+      "confidence": "中",
+      "reasons": [
+        "known_song_context",
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=OsS7wbeRIh0",
+          "date": "2026-06-09T10:00:37+00:00",
+          "text": "和太鼓お祭りCH\n大東京音頭　飛鳥山公園輪踊り　「舞ことり」22　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://yout"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "57c876c5ed794f27",
+      "song_name": "東京音頭",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "status": "未確認",
+      "confidence": "中",
+      "reasons": [
+        "known_song_context",
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=CevVRysR7Bs",
+          "date": "2026-06-11T10:30:10+00:00",
+          "text": "和太鼓お祭りCH\n日本晴れだよ　飛鳥山公園輪踊り　「舞ことり」27　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://you"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=VPR1iNPV_yU",
+          "date": "2026-06-11T10:00:09+00:00",
+          "text": "和太鼓お祭りCH\n日本よいとこ　飛鳥山公園輪踊り　「舞ことり」26　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://you"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=yBZ1rXA6LRo",
+          "date": "2026-06-10T10:30:18+00:00",
+          "text": "和太鼓お祭りCH\n「東西南北音頭」　飛鳥山公園輪踊り　「舞ことり」25　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://y"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=tN5cocxKGmw",
+          "date": "2026-06-10T10:00:39+00:00",
+          "text": "和太鼓お祭りCH\n東北音頭　飛鳥山公園輪踊り　「舞ことり」24　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://youtu"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=JX5otrjUER4",
+          "date": "2026-06-09T10:30:18+00:00",
+          "text": "和太鼓お祭りCH\n花火音頭　飛鳥山公園輪踊り　「舞ことり」23　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://youtu"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=OsS7wbeRIh0",
+          "date": "2026-06-09T10:00:37+00:00",
+          "text": "和太鼓お祭りCH\n大東京音頭　飛鳥山公園輪踊り　「舞ことり」22　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://yout"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=B7quQ6JV8cs",
+          "date": "2026-06-08T10:30:14+00:00",
+          "text": "和太鼓お祭りCH\n【蟹工船】（村田英雄）　飛鳥山公園輪踊り　「舞ことり」21　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https:"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=3xiWUcepU08",
+          "date": "2026-06-08T10:00:07+00:00",
+          "text": "和太鼓お祭りCH\n百年桜　飛鳥山公園輪踊り　「舞ことり」20　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://youtu."
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=M0bWjUtfUBs",
+          "date": "2026-06-07T10:30:39+00:00",
+          "text": "和太鼓お祭りCH\n【少年八木節】　飛鳥山公園輪踊り　「舞ことり」19　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://yo"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=9CVl3g-jcYo",
+          "date": "2026-06-07T10:00:36+00:00",
+          "text": "和太鼓お祭りCH\n大江戸東京音頭　飛鳥山公園輪踊り　「舞ことり」18　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://yo"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=fxhLS--zqwQ",
+          "date": "2026-06-06T10:30:06+00:00",
+          "text": "和太鼓お祭りCH\n黒潮太鼓　飛鳥山公園輪踊り　「舞ことり」17　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://youtu"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=NxTvnbZME0M",
+          "date": "2026-06-06T10:00:23+00:00",
+          "text": "和太鼓お祭りCH\nらんまん踊り　飛鳥山公園輪踊り　「舞ことり」16　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://you"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=lrEeotdmhTM",
+          "date": "2026-06-05T10:30:23+00:00",
+          "text": "和太鼓お祭りCH\n「俺ら炭鉱夫」　飛鳥山公園輪踊り　「舞ことり」15　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://yo"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=12_m0E9kv3Y",
+          "date": "2026-06-05T10:00:39+00:00",
+          "text": "和太鼓お祭りCH\n「美子の三味線ドンパン」　飛鳥山公園輪踊り　「舞ことり」14　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=VW58EPXJmg4",
+          "date": "2026-06-04T10:30:33+00:00",
+          "text": "和太鼓お祭りCH\nゆかた音頭　飛鳥山公園輪踊り　「舞ことり」13　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://yout"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=NYWWFBYXeCE",
+          "date": "2026-06-04T10:00:34+00:00",
+          "text": "和太鼓お祭りCH\n「恋をするなら」　飛鳥山公園輪踊り　「舞ことり」12　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://y"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=PL7Fgs0ifSU",
+          "date": "2026-06-03T10:30:30+00:00",
+          "text": "和太鼓お祭りCH\n佐渡の恋唄　飛鳥山公園輪踊り　「舞ことり」11　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://yout"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=UBGvAcTE6_E",
+          "date": "2026-06-03T10:00:26+00:00",
+          "text": "和太鼓お祭りCH\nふるさと北区　飛鳥山公園輪踊り　「舞ことり」10　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://you"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=Nd1ADi6TxuM",
+          "date": "2026-06-02T11:30:06+00:00",
+          "text": "和太鼓お祭りCH\n東京北都音頭　飛鳥山公園輪踊り　「舞ことり」９　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://yout"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=iQkGYjz61rs",
+          "date": "2026-06-02T11:00:07+00:00",
+          "text": "和太鼓お祭りCH\n飛鳥山音頭　飛鳥山公園輪踊り　「舞ことり」８　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://youtu"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=w6mUO5UuS2g",
+          "date": "2026-06-01T11:30:22+00:00",
+          "text": "和太鼓お祭りCH\n王子小唄　飛鳥山公園輪踊り　「舞ことり」７　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://youtu."
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=3jKTtdLCnI8",
+          "date": "2026-06-01T11:00:24+00:00",
+          "text": "和太鼓お祭りCH\n「相馬盆唄」　飛鳥山公園輪踊り　「舞ことり」６　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=lEt68hsMb4A",
+          "date": "2026-05-31T03:00:37+00:00",
+          "text": "和太鼓お祭りCH\n文京音頭　飛鳥山公園輪踊り　「舞ことり」５　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=BnRG0iS5stA",
+          "date": "2026-05-30T03:00:06+00:00",
+          "text": "和太鼓お祭りCH\nたいとう音頭　飛鳥山公園輪踊り　「舞ことり」４　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=XBHe1QaHQl8",
+          "date": "2026-05-28T18:00:35+00:00",
+          "text": "和太鼓お祭りCH\n板橋音頭　飛鳥山公園輪踊り　「舞ことり」３　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 25
+    },
+    {
+      "id": "8592316b18426b37",
+      "song_name": "Beat It",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "area": "品川区",
+      "status": "未確認",
+      "confidence": "中",
+      "reasons": [
+        "known_song_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=-USPVIqmUKQ",
+          "date": "2026-06-03T11:00:25+00:00",
+          "text": "和太鼓お祭りCH\nBeat It盆踊り　Min-Yoi's盆踊り27　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/zv"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "ce91074b16d43240",
+      "song_name": "東京音頭",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "area": "品川区",
+      "status": "未確認",
+      "confidence": "中",
+      "reasons": [
+        "known_song_context",
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=UoiBfNfZswE",
+          "date": "2026-06-01T09:30:24+00:00",
+          "text": "和太鼓お祭りCH\n東京音頭（生唄生演奏）　Min-Yoi's盆踊り９　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/zv"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "ac4e7f674355b280",
+      "song_name": "江州音頭",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "area": "品川区",
+      "status": "未確認",
+      "confidence": "中",
+      "reasons": [
+        "known_song_context",
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=cTCe5rRqG94",
+          "date": "2026-06-03T11:30:05+00:00",
+          "text": "和太鼓お祭りCH\n江州音頭（生唄生演奏）　Min-Yoi's盆踊り28　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/z"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=3Jyp2LG1NJ0",
+          "date": "2026-06-01T21:00:33+00:00",
+          "text": "祭のきせき 盆踊り\n28 江州音頭　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531\nMIN-YOI'S（ミンヨイズ）の盆踊り　日本民謡会館　2026年5月31日（日）\n\nMin-Yoi's（ミンヨイズ）メンバー Spring ver\nNayu／Yumi／佐藤千春\nゲスト 宇宙軒明星\nゲスト 澤田響紀\n特別ゲスト 木津かおり\n\n\n前半 https://youtu.be/-fzqw9nt7gg\n＜音源＞\n01 子供盆踊り唄（北海道）https://youtu.be/66ikBfSjQZE\n02 平和音頭（三波春夫）https://youtu.be/cGdeMUbDNf4\n03 おてもやん（熊本）https://youtu.be/gtpvIroXoSA\n04 牛深ハイヤ節（熊本）https://youtu.be/Dk5FXiWBu_8\n05 秋田音頭（秋田）https://youtu.be/4qgZZlsjh"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 2
+    },
+    {
+      "id": "30538e35ba75e06e",
+      "song_name": "河内音頭",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "area": "品川区",
+      "status": "未確認",
+      "confidence": "中",
+      "reasons": [
+        "known_song_context",
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/wadaikoCH/status/2062515688334676158",
+          "date": "2026-06-04T12:43:54+00:00",
+          "text": "和太鼓お祭りCH\n先日行われました\n「Min-Yoi's盆踊り」\n\nスペシャルゲストの\n「木津かおり」さん\nステージの様子をUPしました❣️\n\n佐渡おけさ\nhttps://t.co/XzH9RwtT2x\n\nさくら音頭\nhttps://t.co/PzmX2PcC3w\n\n河内音頭\nhttps://t.co/xaSJ6bozMp\n\n#盆踊り\n#ミンヨイズ\n#木津かおり"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=ZzCWuYizuqU",
+          "date": "2026-06-04T12:15:09+00:00",
+          "text": "和太鼓お祭りCH\n河内音頭（木津かおりさん、生歌）Min-Yoi's盆踊り（ステージ映像）　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=Uohu7rIJ6jk",
+          "date": "2026-06-01T23:45:36+00:00",
+          "text": "祭のきせき 盆踊り\n39 河内音頭　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531\nMIN-YOI'S（ミンヨイズ）の盆踊り　日本民謡会館　2026年5月31日（日）\n\nMin-Yoi's（ミンヨイズ）メンバー Spring ver\nNayu／Yumi／佐藤千春\nゲスト 宇宙軒明星\nゲスト 澤田響紀\n特別ゲスト 木津かおり\n\n\n前半 https://youtu.be/-fzqw9nt7gg\n＜音源＞\n01 子供盆踊り唄（北海道）https://youtu.be/66ikBfSjQZE\n02 平和音頭（三波春夫）https://youtu.be/cGdeMUbDNf4\n03 おてもやん（熊本）https://youtu.be/gtpvIroXoSA\n04 牛深ハイヤ節（熊本）https://youtu.be/Dk5FXiWBu_8\n05 秋田音頭（秋田）https://youtu.be/4qgZZlsjh"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 3
+    },
+    {
+      "id": "dc09634bdb58cc4d",
+      "song_name": "炭坑節",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "area": "品川区",
+      "status": "未確認",
+      "confidence": "中",
+      "reasons": [
+        "known_song_context",
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=LBuOk033AcQ",
+          "date": "2026-06-01T12:00:00+00:00",
+          "text": "和太鼓お祭りCH\n炭坑節（生唄生演奏）　Min-Yoi's盆踊り10　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/zv"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "a8bba4648dfdcdb4",
+      "song_name": "花笠音頭",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "area": "品川区",
+      "status": "未確認",
+      "confidence": "中",
+      "reasons": [
+        "known_song_context",
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=7TkSF51SEs0",
+          "date": "2026-06-01T12:30:39+00:00",
+          "text": "和太鼓お祭りCH\n花笠音頭（生唄生演奏）　Min-Yoi's盆踊り11　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/z"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "af443429542fe26c",
+      "song_name": "ダンシングヒーロー",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "中",
+      "reasons": [
+        "known_song_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/honeycutie333/status/2064678013510504823",
+          "date": "2026-06-10T11:56:12+00:00",
+          "text": "フォルセティ\n7月4日は辻堂駅北口神台公園(テラスモールから近い場所だと思います\n藤沢七夕まつりが開催されます(雨天中止)\n当日は大盆踊り大会がありゲストにダンシングヒーローでお馴染みの荻野目洋子さんが登場します🎤\n雨が降らなければ平塚七夕まつりを見てから辻堂に行くのもありですね🐱"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://x.com/King_Arthur_333/status/2064677978089607431",
+          "date": "2026-06-10T11:56:04+00:00",
+          "text": "花咲優\n7月4日は辻堂駅北口神台公園(テラスモールから近い場所だと思います\n藤沢七夕まつりが開催されます(雨天中止)\n当日は大盆踊り大会がありゲストにダンシングヒーローでお馴染みの荻野目洋子さんが登場します🎤\n雨が降らなければ平塚七夕まつりを見てから辻堂に行くのもありですね🐱"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 2
+    },
+    {
+      "id": "0e228fe74d97cc66",
+      "song_name": "シモキタ音頭",
+      "event_name": "あずま通り商店街「下北沢盆踊り2025」 8月9日(土)-10日(日) 13:00-20:00。",
+      "venue": "下北沢駅東口",
+      "area": "世田谷区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "blog_registration",
+          "url": "https://shimokitazawa-east.com/archives/8228",
+          "date": "2025 [L30]\n8/9 - 10",
+          "text": "あずま通り商店街「下北沢盆踊り2025」 8月9日(土)-10日(日) 13:00-20:00。\n盆踊り 両日 16時-20時(レクチャー有)。\nシモキタ音頭 他 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2025/01/00l-setagaya-p.html\nあずま通り商店街「下北沢盆踊り2025」 8月9日(土)-10日(日) 13:00-20:00。\n2025 [L30]\n8/9 - 10"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "007a1a0aae6e903f",
+      "song_name": "喜多見音頭",
+      "event_name": "「喜多見盆踊り大会」 7月26日(土)-27日(日)。",
+      "venue": "小田急線喜多見駅前 南口広場",
+      "area": "世田谷区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "blog_registration",
+          "url": "https://kitaminavi.com/topic/1337",
+          "date": "2025 [L21]\n7/26 - 27",
+          "text": "「喜多見盆踊り大会」 7月26日(土)-27日(日)。\n時間詳細不明(例年 18時頃-21:00)\n・若さと華やかさで群を抜く会場です。喜多見音頭など踊ります。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2025/01/00l-setagaya-p.html\n「喜多見盆踊り大会」 7月26日(土)-27日(日)。\n2025 [L21]\n7/26 - 27"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "0a207b79207790f8",
+      "song_name": "築地音頭",
+      "event_name": "築地本願寺納涼盆踊り大会",
+      "venue": "築地本願寺",
+      "area": "中央区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/odori2024minato/status/2011648549642191279",
+          "date": "2026-01-15T03:56:03+00:00",
+          "text": "横浜みなと会（盆踊り•民踊•新舞踊）\n『音の巡礼ラジオ』\n#41 ついに発見！「築地音頭」SPレコード捜索大作戦 その顛末\n\n昨日、レコードを築地本願寺へ持参して、副宗務長、盆踊り担当者の方とお話させていただきました\n濃密な20分にまとめていただきました\n是非お聞きください！！\n\nお寺の「音」文化収集家\n未来の住職塾　遠藤卓也さま"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://x.com/odori2024minato/status/2011452236954837453",
+          "date": "2026-01-14T14:55:58+00:00",
+          "text": "横浜みなと会（盆踊り•民踊•新舞踊）\n本日は築地本願寺へ伺いました。\n\n盆踊り愛好家に大人気の『築地音頭』\n原盤が残されていないというお話を耳にし、何かお力になれればとご連絡したご縁です。\nとても良いお天気でした。 https://t.co/D7yp5OIYTx"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 2
+    },
+    {
+      "id": "b90d0da920c040a1",
+      "song_name": "花笠音頭",
+      "event_name": "築地本願寺納涼盆踊り大会",
+      "venue": "築地本願寺",
+      "area": "中央区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/natsutr_bon/status/2059805547512418608",
+          "date": "2026-05-28T01:14:46+00:00",
+          "text": "奈津大郎〘ナツタロ〙\n5/24築地JAM\n\n盆踊り会場としても人気の築地本願寺で民謡クルセイダーズLIVE♪\n花笠音頭からはじまり、ソーラン節では観客揃って船漕いだり波起こしたり〜🌊\n貝殻節、会津磐梯山、炭坑節と民謡踊りを楽しく✨\n\nそのあとも美味しいフードを食べたり、ジャズ、ボサノヴァなどをユルユルっと🥂\n\n#民クル https://t.co/BNQ6P4cM3h"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "aa84f99bd7092802",
+      "song_name": "貝殻節",
+      "event_name": "築地本願寺納涼盆踊り大会",
+      "venue": "築地本願寺",
+      "area": "中央区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/natsutr_bon/status/2059805547512418608",
+          "date": "2026-05-28T01:14:46+00:00",
+          "text": "奈津大郎〘ナツタロ〙\n5/24築地JAM\n\n盆踊り会場としても人気の築地本願寺で民謡クルセイダーズLIVE♪\n花笠音頭からはじまり、ソーラン節では観客揃って船漕いだり波起こしたり〜🌊\n貝殻節、会津磐梯山、炭坑節と民謡踊りを楽しく✨\n\nそのあとも美味しいフードを食べたり、ジャズ、ボサノヴァなどをユルユルっと🥂\n\n#民クル https://t.co/BNQ6P4cM3h"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "409279b7e394699a",
+      "song_name": "あさがお踊り",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/xxxnabekoxxx/status/2063607767861195209",
+          "date": "2026-06-07T13:03:26+00:00",
+          "text": "なべこ🍣［神楽坂ありす改め］\n本日は #飛鳥山公園 #盆踊り に少しだけお邪魔しました。開始直前に雨がパラついたけど大丈夫でしたね。良い感じで曇っていて、踊りやすかった〜🤗山王音頭と千代田踊り、良い予習ができました‼️うちわ仕舞うところでお暇。あさがお踊りたかった〜🥲楽しかったです。ありがとうございました😺 https://t.co/hm2IRfUhuE"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "ccaac9216e577953",
+      "song_name": "たいとう音頭",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=BnRG0iS5stA",
+          "date": "2026-05-30T03:00:06+00:00",
+          "text": "和太鼓お祭りCH\nたいとう音頭　飛鳥山公園輪踊り　「舞ことり」４　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "53d958b1c9d08402",
+      "song_name": "ゆかた音頭",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=VW58EPXJmg4",
+          "date": "2026-06-04T10:30:33+00:00",
+          "text": "和太鼓お祭りCH\nゆかた音頭　飛鳥山公園輪踊り　「舞ことり」13　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://yout"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "98d6bf44c88d5592",
+      "song_name": "らんまん踊り",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=NxTvnbZME0M",
+          "date": "2026-06-06T10:00:23+00:00",
+          "text": "和太鼓お祭りCH\nらんまん踊り　飛鳥山公園輪踊り　「舞ことり」16　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://you"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "d616462a171afe72",
+      "song_name": "大江戸東京音頭",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=9CVl3g-jcYo",
+          "date": "2026-06-07T10:00:36+00:00",
+          "text": "和太鼓お祭りCH\n大江戸東京音頭　飛鳥山公園輪踊り　「舞ことり」18　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://yo"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "969138311e49d455",
+      "song_name": "少年八木節",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=M0bWjUtfUBs",
+          "date": "2026-06-07T10:30:39+00:00",
+          "text": "和太鼓お祭りCH\n【少年八木節】　飛鳥山公園輪踊り　「舞ことり」19　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://yo"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "fb1cf54858616868",
+      "song_name": "山王音頭と千代田踊り",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/xxxnabekoxxx/status/2063607767861195209",
+          "date": "2026-06-07T13:03:26+00:00",
+          "text": "なべこ🍣［神楽坂ありす改め］\n本日は #飛鳥山公園 #盆踊り に少しだけお邪魔しました。開始直前に雨がパラついたけど大丈夫でしたね。良い感じで曇っていて、踊りやすかった〜🤗山王音頭と千代田踊り、良い予習ができました‼️うちわ仕舞うところでお暇。あさがお踊りたかった〜🥲楽しかったです。ありがとうございました😺 https://t.co/hm2IRfUhuE"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "e90e53d8bfc3af08",
+      "song_name": "文京音頭",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=lEt68hsMb4A",
+          "date": "2026-05-31T03:00:37+00:00",
+          "text": "和太鼓お祭りCH\n文京音頭　飛鳥山公園輪踊り　「舞ことり」５　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "fff34a8ad8f058af",
+      "song_name": "東京北都音頭",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=Nd1ADi6TxuM",
+          "date": "2026-06-02T11:30:06+00:00",
+          "text": "和太鼓お祭りCH\n東京北都音頭　飛鳥山公園輪踊り　「舞ことり」９　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://yout"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "c9b2864150750b02",
+      "song_name": "東北音頭",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=tN5cocxKGmw",
+          "date": "2026-06-10T10:00:39+00:00",
+          "text": "和太鼓お祭りCH\n東北音頭　飛鳥山公園輪踊り　「舞ことり」24　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://youtu"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "d8cfd7549f83504c",
+      "song_name": "東西南北音頭",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=yBZ1rXA6LRo",
+          "date": "2026-06-10T10:30:18+00:00",
+          "text": "和太鼓お祭りCH\n「東西南北音頭」　飛鳥山公園輪踊り　「舞ことり」25　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://y"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "93eb737253d8124e",
+      "song_name": "板橋音頭",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=XBHe1QaHQl8",
+          "date": "2026-05-28T18:00:35+00:00",
+          "text": "和太鼓お祭りCH\n板橋音頭　飛鳥山公園輪踊り　「舞ことり」３　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "8b0ee40f09fc4ed9",
+      "song_name": "王子小唄",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=w6mUO5UuS2g",
+          "date": "2026-06-01T11:30:22+00:00",
+          "text": "和太鼓お祭りCH\n王子小唄　飛鳥山公園輪踊り　「舞ことり」７　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://youtu."
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "001daae589e37bf6",
+      "song_name": "花火音頭",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=JX5otrjUER4",
+          "date": "2026-06-09T10:30:18+00:00",
+          "text": "和太鼓お祭りCH\n花火音頭　飛鳥山公園輪踊り　「舞ことり」23　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://youtu"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "78ccefd6aca0fa88",
+      "song_name": "飛鳥山公園輪踊り",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=CevVRysR7Bs",
+          "date": "2026-06-11T10:30:10+00:00",
+          "text": "和太鼓お祭りCH\n日本晴れだよ　飛鳥山公園輪踊り　「舞ことり」27　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://you"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=VPR1iNPV_yU",
+          "date": "2026-06-11T10:00:09+00:00",
+          "text": "和太鼓お祭りCH\n日本よいとこ　飛鳥山公園輪踊り　「舞ことり」26　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://you"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=yBZ1rXA6LRo",
+          "date": "2026-06-10T10:30:18+00:00",
+          "text": "和太鼓お祭りCH\n「東西南北音頭」　飛鳥山公園輪踊り　「舞ことり」25　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://y"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=tN5cocxKGmw",
+          "date": "2026-06-10T10:00:39+00:00",
+          "text": "和太鼓お祭りCH\n東北音頭　飛鳥山公園輪踊り　「舞ことり」24　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://youtu"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=JX5otrjUER4",
+          "date": "2026-06-09T10:30:18+00:00",
+          "text": "和太鼓お祭りCH\n花火音頭　飛鳥山公園輪踊り　「舞ことり」23　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://youtu"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=OsS7wbeRIh0",
+          "date": "2026-06-09T10:00:37+00:00",
+          "text": "和太鼓お祭りCH\n大東京音頭　飛鳥山公園輪踊り　「舞ことり」22　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://yout"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=B7quQ6JV8cs",
+          "date": "2026-06-08T10:30:14+00:00",
+          "text": "和太鼓お祭りCH\n【蟹工船】（村田英雄）　飛鳥山公園輪踊り　「舞ことり」21　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https:"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=3xiWUcepU08",
+          "date": "2026-06-08T10:00:07+00:00",
+          "text": "和太鼓お祭りCH\n百年桜　飛鳥山公園輪踊り　「舞ことり」20　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://youtu."
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=M0bWjUtfUBs",
+          "date": "2026-06-07T10:30:39+00:00",
+          "text": "和太鼓お祭りCH\n【少年八木節】　飛鳥山公園輪踊り　「舞ことり」19　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://yo"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=9CVl3g-jcYo",
+          "date": "2026-06-07T10:00:36+00:00",
+          "text": "和太鼓お祭りCH\n大江戸東京音頭　飛鳥山公園輪踊り　「舞ことり」18　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://yo"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=fxhLS--zqwQ",
+          "date": "2026-06-06T10:30:06+00:00",
+          "text": "和太鼓お祭りCH\n黒潮太鼓　飛鳥山公園輪踊り　「舞ことり」17　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://youtu"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=NxTvnbZME0M",
+          "date": "2026-06-06T10:00:23+00:00",
+          "text": "和太鼓お祭りCH\nらんまん踊り　飛鳥山公園輪踊り　「舞ことり」16　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://you"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=lrEeotdmhTM",
+          "date": "2026-06-05T10:30:23+00:00",
+          "text": "和太鼓お祭りCH\n「俺ら炭鉱夫」　飛鳥山公園輪踊り　「舞ことり」15　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://yo"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=12_m0E9kv3Y",
+          "date": "2026-06-05T10:00:39+00:00",
+          "text": "和太鼓お祭りCH\n「美子の三味線ドンパン」　飛鳥山公園輪踊り　「舞ことり」14　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=VW58EPXJmg4",
+          "date": "2026-06-04T10:30:33+00:00",
+          "text": "和太鼓お祭りCH\nゆかた音頭　飛鳥山公園輪踊り　「舞ことり」13　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://yout"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=NYWWFBYXeCE",
+          "date": "2026-06-04T10:00:34+00:00",
+          "text": "和太鼓お祭りCH\n「恋をするなら」　飛鳥山公園輪踊り　「舞ことり」12　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://y"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=PL7Fgs0ifSU",
+          "date": "2026-06-03T10:30:30+00:00",
+          "text": "和太鼓お祭りCH\n佐渡の恋唄　飛鳥山公園輪踊り　「舞ことり」11　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://yout"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=UBGvAcTE6_E",
+          "date": "2026-06-03T10:00:26+00:00",
+          "text": "和太鼓お祭りCH\nふるさと北区　飛鳥山公園輪踊り　「舞ことり」10　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://you"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=Nd1ADi6TxuM",
+          "date": "2026-06-02T11:30:06+00:00",
+          "text": "和太鼓お祭りCH\n東京北都音頭　飛鳥山公園輪踊り　「舞ことり」９　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://yout"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=iQkGYjz61rs",
+          "date": "2026-06-02T11:00:07+00:00",
+          "text": "和太鼓お祭りCH\n飛鳥山音頭　飛鳥山公園輪踊り　「舞ことり」８　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://youtu"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=w6mUO5UuS2g",
+          "date": "2026-06-01T11:30:22+00:00",
+          "text": "和太鼓お祭りCH\n王子小唄　飛鳥山公園輪踊り　「舞ことり」７　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://youtu."
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=3jKTtdLCnI8",
+          "date": "2026-06-01T11:00:24+00:00",
+          "text": "和太鼓お祭りCH\n「相馬盆唄」　飛鳥山公園輪踊り　「舞ことり」６　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=lEt68hsMb4A",
+          "date": "2026-05-31T03:00:37+00:00",
+          "text": "和太鼓お祭りCH\n文京音頭　飛鳥山公園輪踊り　「舞ことり」５　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=BnRG0iS5stA",
+          "date": "2026-05-30T03:00:06+00:00",
+          "text": "和太鼓お祭りCH\nたいとう音頭　飛鳥山公園輪踊り　「舞ことり」４　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=XBHe1QaHQl8",
+          "date": "2026-05-28T18:00:35+00:00",
+          "text": "和太鼓お祭りCH\n板橋音頭　飛鳥山公園輪踊り　「舞ことり」３　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 25
+    },
+    {
+      "id": "b96acfe5d45c32a2",
+      "song_name": "飛鳥山音頭",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=iQkGYjz61rs",
+          "date": "2026-06-02T11:00:07+00:00",
+          "text": "和太鼓お祭りCH\n飛鳥山音頭　飛鳥山公園輪踊り　「舞ことり」８　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://youtu"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "1431e299e0d485df",
+      "song_name": "伊勢音頭",
+      "event_name": "山王音頭と民踊大会",
+      "venue": "山王パークタワー公開空地",
+      "area": "千代田区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/tomohikos/status/2063407219673366837",
+          "date": "2026-06-06T23:46:32+00:00",
+          "text": "tomohikos（大ちゃん/佐藤智彦）\n6/14日は、日枝神社での【山王音頭と民踊大会】の前に\n大井町でもいい汗を流しませんか？\n\n日本民謡協会の盆踊り講習会。\n今回は、みんな大好き、《伊勢音頭（さわぎ）》と\n《おばば（岐阜音頭）》の2曲。\nまだ申し込み🆗ですよ！"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "f9274d1367733abf",
+      "song_name": "山王音頭",
+      "event_name": "山王音頭と民踊大会",
+      "venue": "山王パークタワー公開空地",
+      "area": "千代田区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/ochiai_hrs/status/2063912862880534810",
+          "date": "2026-06-08T09:15:46+00:00",
+          "text": "落合 弘民踊研究会\n🏮赤坂日枝神社 盆踊り🏮\n「山王音頭と民踊大会」\n📅2026年6月13日（土）〜15日（月）\n📍山王パークタワー 公開空地\n\n曲目リストです！\nみんなで楽しみましょう♪\n\n#盆踊り #赤坂日枝神社 #山王音頭 #民踊大会 #夏祭り #東京イベント https://t.co/XzgNI2P8oy"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "6c75b95bacf340b6",
+      "song_name": "岐阜音頭",
+      "event_name": "山王音頭と民踊大会",
+      "venue": "山王パークタワー公開空地",
+      "area": "千代田区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/tomohikos/status/2063407219673366837",
+          "date": "2026-06-06T23:46:32+00:00",
+          "text": "tomohikos（大ちゃん/佐藤智彦）\n6/14日は、日枝神社での【山王音頭と民踊大会】の前に\n大井町でもいい汗を流しませんか？\n\n日本民謡協会の盆踊り講習会。\n今回は、みんな大好き、《伊勢音頭（さわぎ）》と\n《おばば（岐阜音頭）》の2曲。\nまだ申し込み🆗ですよ！"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "cbd5562fbcd116a7",
+      "song_name": "隅田公園そよ風ひろばに踊り",
+      "event_name": "奥浅草盆踊り",
+      "venue": "隅田公園",
+      "area": "台東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/mu4324/status/2062397326120083646",
+          "date": "2026-06-04T04:53:34+00:00",
+          "text": "宇佐美\n7月７日\n七夕夜会2026\n隅田公園そよ風ひろば\nのらぼんあるね。\n一昨年は日本橋コレド室町テラスから移動して、隅田公園そよ風ひろばに踊りに行った。\n去年は入谷南公園の朝顔音頭踊り大会に踊りに行ってた。\nちなみに月見夜会は一昨年と去年踊りに行った。"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "d628bdd003b4c965",
+      "song_name": "戸越音頭",
+      "event_name": "戸越宮前盆踊り",
+      "venue": "宮前小学校",
+      "area": "品川区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/mimi33yuyu26na/status/2063570381945045187",
+          "date": "2026-06-07T10:34:52+00:00",
+          "text": "みみ&ゆゆ\n6/7(日)\n今日も晴盆さん❤️\n戸越宮前盆踊りへ♪\n雨で短縮になってしまったものの3時間程しっかり踊ってきました✨\n初の戸越音頭は予習でばっちり👌🏻\n\n晴盆さんと🦊ちゃんお揃いで可愛かったので並んでパシャり❤️ https://t.co/EiZ6ScE1OM"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "2c6fb1db51416889",
+      "song_name": "おしまこ輪踊り",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "area": "品川区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=6ZCsHqoCz8Y",
+          "date": "2026-06-03T07:00:05+00:00",
+          "text": "和太鼓お祭りCH\nおしまこ輪踊り　Min-Yoi's盆踊り24　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/zvNk3"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "ce7cfe2f4625d90c",
+      "song_name": "さくら音頭",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "area": "品川区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=kxuwDg29dL8",
+          "date": "2026-06-04T11:45:21+00:00",
+          "text": "和太鼓お祭りCH\nさくら音頭（木津かおりさん、本人生歌）Min-Yoi's盆踊り（ステージ映像）　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://x.com/natsutr_bon/status/2062090921689440708",
+          "date": "2026-06-03T08:36:02+00:00",
+          "text": "奈津大郎〘ナツタロ〙\n5/31ミンヨイズ盆踊り@日本民謡会館\n\n生唄生演奏と音源で民謡を踊る催し🎶盆踊り好きの熱気で包まれました🤩\nゲスト木津かおりさんのさくら音頭を踊り終えた瞬間、フロアの歓声は最高潮🔥\n踊り手、奏者、歌手、裏方みんなで作った貴重な空間でした✨\n\n鯵ヶ沢甚句と村崎野音頭もよかったな〜🎶\n#みん盆 https://t.co/RiXYaGH1rX"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=Ilz6hDp8QbA",
+          "date": "2026-06-01T23:30:01+00:00",
+          "text": "祭のきせき 盆踊り\n38 さくら音頭　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531\nMIN-YOI'S（ミンヨイズ）の盆踊り　日本民謡会館　2026年5月31日（日）\n\nMin-Yoi's（ミンヨイズ）メンバー Spring ver\nNayu／Yumi／佐藤千春\nゲスト 宇宙軒明星\nゲスト 澤田響紀\n特別ゲスト 木津かおり\n\n\n前半 https://youtu.be/-fzqw9nt7gg\n＜音源＞\n01 子供盆踊り唄（北海道）https://youtu.be/66ikBfSjQZE\n02 平和音頭（三波春夫）https://youtu.be/cGdeMUbDNf4\n03 おてもやん（熊本）https://youtu.be/gtpvIroXoSA\n04 牛深ハイヤ節（熊本）https://youtu.be/Dk5FXiWBu_8\n05 秋田音頭（秋田）https://youtu.be/4qgZZlsj"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 3
+    },
+    {
+      "id": "a6f6651c5c74f201",
+      "song_name": "でかんしょ節",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "area": "品川区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=0cz4BgmIJC4",
+          "date": "2026-06-01T08:00:24+00:00",
+          "text": "和太鼓お祭りCH\nでかんしょ節　Min-Yoi's盆踊り６　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/zvNk31X"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "f0a1071a6180e25f",
+      "song_name": "よこはまアラメヤ音頭",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "area": "品川区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=oxZtUYXg06w",
+          "date": "2026-06-05T03:00:18+00:00",
+          "text": "和太鼓お祭りCH\nよこはまアラメヤ音頭　Min-Yoi's盆踊り40　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/zv"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=rNHkhQxMoVM",
+          "date": "2026-06-02T00:00:09+00:00",
+          "text": "祭のきせき 盆踊り\n40 よこはまアラメヤ音頭　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531\nMIN-YOI'S（ミンヨイズ）の盆踊り　日本民謡会館　2026年5月31日（日）\n\nMin-Yoi's（ミンヨイズ）メンバー Spring ver\nNayu／Yumi／佐藤千春\nゲスト 宇宙軒明星\nゲスト 澤田響紀\n特別ゲスト 木津かおり\n\n\n前半 https://youtu.be/-fzqw9nt7gg\n＜音源＞\n01 子供盆踊り唄（北海道）https://youtu.be/66ikBfSjQZE\n02 平和音頭（三波春夫）https://youtu.be/cGdeMUbDNf4\n03 おてもやん（熊本）https://youtu.be/gtpvIroXoSA\n04 牛深ハイヤ節（熊本）https://youtu.be/Dk5FXiWBu_8\n05 秋田音頭（秋田）https://youtu.be/4qg"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 2
+    },
+    {
+      "id": "11c19cb9c60c87ac",
+      "song_name": "りんご節",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "area": "品川区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=3WDSTaX0-cw",
+          "date": "2026-06-03T12:00:13+00:00",
+          "text": "和太鼓お祭りCH\nりんご節（生唄生演奏）　Min-Yoi's盆踊り29　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/z"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "9dbc21f6a0c9a75b",
+      "song_name": "わら音頭",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "area": "品川区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=5wy5lHoqj9w",
+          "date": "2026-06-02T00:45:25+00:00",
+          "text": "祭のきせき 盆踊り\n43 むぎわら音頭　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531\nMIN-YOI'S（ミンヨイズ）の盆踊り　日本民謡会館　2026年5月31日（日）\n\nMin-Yoi's（ミンヨイズ）メンバー Spring ver\nNayu／Yumi／佐藤千春\nゲスト 宇宙軒明星\nゲスト 澤田響紀\n特別ゲスト 木津かおり\n\n\n前半 https://youtu.be/-fzqw9nt7gg\n＜音源＞\n01 子供盆踊り唄（北海道）https://youtu.be/66ikBfSjQZE\n02 平和音頭（三波春夫）https://youtu.be/cGdeMUbDNf4\n03 おてもやん（熊本）https://youtu.be/gtpvIroXoSA\n04 牛深ハイヤ節（熊本）https://youtu.be/Dk5FXiWBu_8\n05 秋田音頭（秋田）https://youtu.be/4qgZZl"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "2fb9d83fa3f95550",
+      "song_name": "ドンパン節",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "area": "品川区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=7v5c4qZQnSw",
+          "date": "2026-06-01T13:00:09+00:00",
+          "text": "和太鼓お祭りCH\nドンパン節（生唄生演奏）　Min-Yoi's盆踊り12　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "30956c3a75c1fbcd",
+      "song_name": "下北小唄",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "area": "品川区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=UmULl-H4adI",
+          "date": "2026-06-03T08:00:26+00:00",
+          "text": "和太鼓お祭りCH\n下北小唄　Min-Yoi's盆踊り25　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/zvNk31Xm"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=sqfQHtxJ4NU",
+          "date": "2026-06-01T12:00:39+00:00",
+          "text": "祭のきせき 盆踊り\n25 下北小唄　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531\nMIN-YOI'S（ミンヨイズ）の盆踊り　日本民謡会館　2026年5月31日（日）\n\nMin-Yoi's（ミンヨイズ）メンバー Spring ver\nNayu／Yumi／佐藤千春\nゲスト 宇宙軒明星\nゲスト 澤田響紀\n特別ゲスト 木津かおり\n\n\n前半 https://youtu.be/-fzqw9nt7gg\n＜音源＞\n01 子供盆踊り唄（北海道）https://youtu.be/66ikBfSjQZE\n02 平和音頭（三波春夫）https://youtu.be/cGdeMUbDNf4\n03 おてもやん（熊本）https://youtu.be/gtpvIroXoSA\n04 牛深ハイヤ節（熊本）https://youtu.be/Dk5FXiWBu_8\n05 秋田音頭（秋田）https://youtu.be/4qgZZlsjh"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 2
+    },
+    {
+      "id": "a69349011f736425",
+      "song_name": "八戸小唄",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "area": "品川区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=eUdaKOAjGEo",
+          "date": "2026-06-03T12:30:29+00:00",
+          "text": "和太鼓お祭りCH\n「八戸小唄」（生唄生演奏）　Min-Yoi's盆踊り30　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "606e1e2f6d14ec60",
+      "song_name": "大森甚句",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "area": "品川区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=kDLvMlBtTxM",
+          "date": "2026-06-02T03:00:18+00:00",
+          "text": "和太鼓お祭りCH\n大森甚句（生唄生演奏）　Min-Yoi's盆踊り15　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/z"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=IItWym2M4Hk",
+          "date": "2026-06-01T09:30:14+00:00",
+          "text": "祭のきせき 盆踊り\n15 大森甚句　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531\nMIN-YOI'S（ミンヨイズ）の盆踊り　日本民謡会館　2026年5月31日（日）\n\nMin-Yoi's（ミンヨイズ）メンバー Spring ver\nNayu／Yumi／佐藤千春\nゲスト 宇宙軒明星\nゲスト 澤田響紀\n特別ゲスト 木津かおり\n\n\n前半 https://youtu.be/-fzqw9nt7gg\n＜音源＞\n01 子供盆踊り唄（北海道）https://youtu.be/66ikBfSjQZE\n02 平和音頭（三波春夫）https://youtu.be/cGdeMUbDNf4\n03 おてもやん（熊本）https://youtu.be/gtpvIroXoSA\n04 牛深ハイヤ節（熊本）https://youtu.be/Dk5FXiWBu_8\n05 秋田音頭（秋田）https://youtu.be/4qgZZlsjh"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 2
+    },
+    {
+      "id": "64ac4507c539e76d",
+      "song_name": "平和音頭",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "area": "品川区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=9lkufMdYu2c",
+          "date": "2026-06-05T11:30:14+00:00",
+          "text": "和太鼓お祭りCH\n繫昌ぶし～集合写真　Min-Yoi's盆踊りり44終　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/z"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=I9_Fcsn5aJ0",
+          "date": "2026-06-05T11:00:17+00:00",
+          "text": "和太鼓お祭りCH\n麦わら音頭　Min-Yoi's盆踊り43　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/zvNk31X"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=vhUEHrUbadI",
+          "date": "2026-06-05T09:00:28+00:00",
+          "text": "和太鼓お祭りCH\n堀江盆歌　Min-Yoi's盆踊り42　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/zvNk31Xm"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=Ae8CYjM-y2Y",
+          "date": "2026-06-05T06:00:39+00:00",
+          "text": "和太鼓お祭りCH\nこまづくり唄　Min-Yoi's盆踊り41　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/zvNk31"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=oxZtUYXg06w",
+          "date": "2026-06-05T03:00:18+00:00",
+          "text": "和太鼓お祭りCH\nよこはまアラメヤ音頭　Min-Yoi's盆踊り40　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/zv"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=ZzCWuYizuqU",
+          "date": "2026-06-04T12:15:09+00:00",
+          "text": "和太鼓お祭りCH\n河内音頭（木津かおりさん、生歌）Min-Yoi's盆踊り（ステージ映像）　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=gyyK6CeR2ls",
+          "date": "2026-06-04T12:00:34+00:00",
+          "text": "和太鼓お祭りCH\n河内音頭（木津かおりさん、生歌）（生唄生演奏）　Min-Yoi's盆踊り39　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https:"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=kxuwDg29dL8",
+          "date": "2026-06-04T11:45:21+00:00",
+          "text": "和太鼓お祭りCH\nさくら音頭（木津かおりさん、本人生歌）Min-Yoi's盆踊り（ステージ映像）　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=fwX0qtq6HQY",
+          "date": "2026-06-04T11:30:28+00:00",
+          "text": "和太鼓お祭りCH\nさくら音頭（木津かおりさん、ご本人生歌）（生唄生演奏）　Min-Yoi's盆踊り38　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　ht"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=PI314qyL6Ds",
+          "date": "2026-06-04T11:15:39+00:00",
+          "text": "和太鼓お祭りCH\n佐渡おけさ（木津かおりさん、生歌）Min-Yoi's盆踊り（ステージ映像）　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https:/"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=81ECma43tG8",
+          "date": "2026-06-04T11:00:30+00:00",
+          "text": "和太鼓お祭りCH\n佐渡おけさ（木津かおりさん、生歌）（生唄生演奏）　Min-Yoi's盆踊り37　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=-RP0e0LUCZk",
+          "date": "2026-06-04T09:00:10+00:00",
+          "text": "和太鼓お祭りCH\n津軽甚句ドダレバチ（生唄生演奏）　Min-Yoi's盆踊り36　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=YkLMCoVkPrE",
+          "date": "2026-06-04T08:00:05+00:00",
+          "text": "和太鼓お祭りCH\n黒石じょんがら（生唄生演奏）　Min-Yoi's盆踊り35　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.b"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=vPE-jc6d-BU",
+          "date": "2026-06-04T07:00:30+00:00",
+          "text": "和太鼓お祭りCH\n黒石甚句（生唄生演奏）　Min-Yoi's盆踊り34　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/z"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=jcQC0DFIiAc",
+          "date": "2026-06-04T06:00:13+00:00",
+          "text": "和太鼓お祭りCH\n黒石よされ（生唄生演奏）　Min-Yoi's盆踊り33　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=4FeWN7pbr3w",
+          "date": "2026-06-04T03:00:33+00:00",
+          "text": "和太鼓お祭りCH\n鯵ヶ沢甚句（生唄生演奏）　Min-Yoi's盆踊り32　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=eUdaKOAjGEo",
+          "date": "2026-06-03T12:30:29+00:00",
+          "text": "和太鼓お祭りCH\n「八戸小唄」（生唄生演奏）　Min-Yoi's盆踊り30　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=3WDSTaX0-cw",
+          "date": "2026-06-03T12:00:13+00:00",
+          "text": "和太鼓お祭りCH\nりんご節（生唄生演奏）　Min-Yoi's盆踊り29　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/z"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=cTCe5rRqG94",
+          "date": "2026-06-03T11:30:05+00:00",
+          "text": "和太鼓お祭りCH\n江州音頭（生唄生演奏）　Min-Yoi's盆踊り28　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/z"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=-USPVIqmUKQ",
+          "date": "2026-06-03T11:00:25+00:00",
+          "text": "和太鼓お祭りCH\nBeat It盆踊り　Min-Yoi's盆踊り27　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/zv"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=tlWdGx5rLFA",
+          "date": "2026-06-03T09:00:38+00:00",
+          "text": "和太鼓お祭りCH\n紀州白浜音頭　Min-Yoi's盆踊り26　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/zvNk31"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=UmULl-H4adI",
+          "date": "2026-06-03T08:00:26+00:00",
+          "text": "和太鼓お祭りCH\n下北小唄　Min-Yoi's盆踊り25　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/zvNk31Xm"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=6ZCsHqoCz8Y",
+          "date": "2026-06-03T07:00:05+00:00",
+          "text": "和太鼓お祭りCH\nおしまこ輪踊り　Min-Yoi's盆踊り24　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/zvNk3"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=yOPU_J0TRdk",
+          "date": "2026-06-03T03:00:28+00:00",
+          "text": "和太鼓お祭りCH\n村崎野音頭　Min-Yoi's盆踊り23　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/zvNk31X"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=jhNfVejczXk",
+          "date": "2026-06-03T00:00:10+00:00",
+          "text": "和太鼓お祭りCH\n北上おでんせ　Min-Yoi's盆踊り22　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/zvNk31"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=SCS4NBMj8bA",
+          "date": "2026-06-02T12:30:11+00:00",
+          "text": "和太鼓お祭りCH\n白鳥おどり老坂（生唄生演奏）　Min-Yoi's盆踊り21　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.b"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=PfVSbEplhXA",
+          "date": "2026-06-02T12:00:06+00:00",
+          "text": "和太鼓お祭りCH\n白鳥おどり神代（生唄生演奏）　Min-Yoi's盆踊り20　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.b"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=lw9vaonH1uc",
+          "date": "2026-06-02T09:00:28+00:00",
+          "text": "和太鼓お祭りCH\n白鳥おどりシッチョイ（生唄生演奏）　Min-Yoi's盆踊り19　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://yout"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=wYE6MCa9XxQ",
+          "date": "2026-06-02T08:00:17+00:00",
+          "text": "和太鼓お祭りCH\n郡上節春駒（生唄生演奏）　Min-Yoi's盆踊り18　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=rrPjw5lwGDU",
+          "date": "2026-06-02T07:00:16+00:00",
+          "text": "和太鼓お祭りCH\n郡上節三百（生唄生演奏）　Min-Yoi's盆踊り17　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=0eTmwqomFyA",
+          "date": "2026-06-02T06:00:16+00:00",
+          "text": "和太鼓お祭りCH\n郡上節かわさき（生唄生演奏）　Min-Yoi's盆踊り16　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.b"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=kDLvMlBtTxM",
+          "date": "2026-06-02T03:00:18+00:00",
+          "text": "和太鼓お祭りCH\n大森甚句（生唄生演奏）　Min-Yoi's盆踊り15　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/z"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=TIHzTtK9a1c",
+          "date": "2026-06-02T00:00:07+00:00",
+          "text": "和太鼓お祭りCH\n隠岐のしげさ節（生唄生演奏）　Min-Yoi's盆踊り14　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.b"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=6WjbWgdU4L4",
+          "date": "2026-06-02T01:00:17+00:00",
+          "text": "祭のきせき 盆踊り\n44 繁昌節　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531\nMIN-YOI'S（ミンヨイズ）の盆踊り　日本民謡会館　2026年5月31日（日）\n\nMin-Yoi's（ミンヨイズ）メンバー Spring ver\nNayu／Yumi／佐藤千春\nゲスト 宇宙軒明星\nゲスト 澤田響紀\n特別ゲスト 木津かおり\n\n\n前半 https://youtu.be/-fzqw9nt7gg\n＜音源＞\n01 子供盆踊り唄（北海道）https://youtu.be/66ikBfSjQZE\n02 平和音頭（三波春夫）https://youtu.be/cGdeMUbDNf4\n03 おてもやん（熊本）https://youtu.be/gtpvIroXoSA\n04 牛深ハイヤ節（熊本）https://youtu.be/Dk5FXiWBu_8\n05 秋田音頭（秋田）https://youtu.be/4qgZZlsjhT"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=5wy5lHoqj9w",
+          "date": "2026-06-02T00:45:25+00:00",
+          "text": "祭のきせき 盆踊り\n43 むぎわら音頭　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531\nMIN-YOI'S（ミンヨイズ）の盆踊り　日本民謡会館　2026年5月31日（日）\n\nMin-Yoi's（ミンヨイズ）メンバー Spring ver\nNayu／Yumi／佐藤千春\nゲスト 宇宙軒明星\nゲスト 澤田響紀\n特別ゲスト 木津かおり\n\n\n前半 https://youtu.be/-fzqw9nt7gg\n＜音源＞\n01 子供盆踊り唄（北海道）https://youtu.be/66ikBfSjQZE\n02 平和音頭（三波春夫）https://youtu.be/cGdeMUbDNf4\n03 おてもやん（熊本）https://youtu.be/gtpvIroXoSA\n04 牛深ハイヤ節（熊本）https://youtu.be/Dk5FXiWBu_8\n05 秋田音頭（秋田）https://youtu.be/4qgZZl"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=f3rafNm0rZE",
+          "date": "2026-06-02T00:30:04+00:00",
+          "text": "祭のきせき 盆踊り\n42 堀江盆歌　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531\nMIN-YOI'S（ミンヨイズ）の盆踊り　日本民謡会館　2026年5月31日（日）\n\nMin-Yoi's（ミンヨイズ）メンバー Spring ver\nNayu／Yumi／佐藤千春\nゲスト 宇宙軒明星\nゲスト 澤田響紀\n特別ゲスト 木津かおり\n\n\n前半 https://youtu.be/-fzqw9nt7gg\n＜音源＞\n01 子供盆踊り唄（北海道）https://youtu.be/66ikBfSjQZE\n02 平和音頭（三波春夫）https://youtu.be/cGdeMUbDNf4\n03 おてもやん（熊本）https://youtu.be/gtpvIroXoSA\n04 牛深ハイヤ節（熊本）https://youtu.be/Dk5FXiWBu_8\n05 秋田音頭（秋田）https://youtu.be/4qgZZlsjh"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=2Rq-qBXsynw",
+          "date": "2026-06-02T00:15:09+00:00",
+          "text": "祭のきせき 盆踊り\n41 こまづくり唄　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531\nMIN-YOI'S（ミンヨイズ）の盆踊り　日本民謡会館　2026年5月31日（日）\n\nMin-Yoi's（ミンヨイズ）メンバー Spring ver\nNayu／Yumi／佐藤千春\nゲスト 宇宙軒明星\nゲスト 澤田響紀\n特別ゲスト 木津かおり\n\n\n前半 https://youtu.be/-fzqw9nt7gg\n＜音源＞\n01 子供盆踊り唄（北海道）https://youtu.be/66ikBfSjQZE\n02 平和音頭（三波春夫）https://youtu.be/cGdeMUbDNf4\n03 おてもやん（熊本）https://youtu.be/gtpvIroXoSA\n04 牛深ハイヤ節（熊本）https://youtu.be/Dk5FXiWBu_8\n05 秋田音頭（秋田）https://youtu.be/4qgZZl"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=rNHkhQxMoVM",
+          "date": "2026-06-02T00:00:09+00:00",
+          "text": "祭のきせき 盆踊り\n40 よこはまアラメヤ音頭　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531\nMIN-YOI'S（ミンヨイズ）の盆踊り　日本民謡会館　2026年5月31日（日）\n\nMin-Yoi's（ミンヨイズ）メンバー Spring ver\nNayu／Yumi／佐藤千春\nゲスト 宇宙軒明星\nゲスト 澤田響紀\n特別ゲスト 木津かおり\n\n\n前半 https://youtu.be/-fzqw9nt7gg\n＜音源＞\n01 子供盆踊り唄（北海道）https://youtu.be/66ikBfSjQZE\n02 平和音頭（三波春夫）https://youtu.be/cGdeMUbDNf4\n03 おてもやん（熊本）https://youtu.be/gtpvIroXoSA\n04 牛深ハイヤ節（熊本）https://youtu.be/Dk5FXiWBu_8\n05 秋田音頭（秋田）https://youtu.be/4qg"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=Uohu7rIJ6jk",
+          "date": "2026-06-01T23:45:36+00:00",
+          "text": "祭のきせき 盆踊り\n39 河内音頭　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531\nMIN-YOI'S（ミンヨイズ）の盆踊り　日本民謡会館　2026年5月31日（日）\n\nMin-Yoi's（ミンヨイズ）メンバー Spring ver\nNayu／Yumi／佐藤千春\nゲスト 宇宙軒明星\nゲスト 澤田響紀\n特別ゲスト 木津かおり\n\n\n前半 https://youtu.be/-fzqw9nt7gg\n＜音源＞\n01 子供盆踊り唄（北海道）https://youtu.be/66ikBfSjQZE\n02 平和音頭（三波春夫）https://youtu.be/cGdeMUbDNf4\n03 おてもやん（熊本）https://youtu.be/gtpvIroXoSA\n04 牛深ハイヤ節（熊本）https://youtu.be/Dk5FXiWBu_8\n05 秋田音頭（秋田）https://youtu.be/4qgZZlsjh"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=Ilz6hDp8QbA",
+          "date": "2026-06-01T23:30:01+00:00",
+          "text": "祭のきせき 盆踊り\n38 さくら音頭　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531\nMIN-YOI'S（ミンヨイズ）の盆踊り　日本民謡会館　2026年5月31日（日）\n\nMin-Yoi's（ミンヨイズ）メンバー Spring ver\nNayu／Yumi／佐藤千春\nゲスト 宇宙軒明星\nゲスト 澤田響紀\n特別ゲスト 木津かおり\n\n\n前半 https://youtu.be/-fzqw9nt7gg\n＜音源＞\n01 子供盆踊り唄（北海道）https://youtu.be/66ikBfSjQZE\n02 平和音頭（三波春夫）https://youtu.be/cGdeMUbDNf4\n03 おてもやん（熊本）https://youtu.be/gtpvIroXoSA\n04 牛深ハイヤ節（熊本）https://youtu.be/Dk5FXiWBu_8\n05 秋田音頭（秋田）https://youtu.be/4qgZZlsj"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=gC6JYrumFII",
+          "date": "2026-06-01T23:15:17+00:00",
+          "text": "祭のきせき 盆踊り\n37 佐渡おけさ　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531\nMIN-YOI'S（ミンヨイズ）の盆踊り　日本民謡会館　2026年5月31日（日）\n\nMin-Yoi's（ミンヨイズ）メンバー Spring ver\nNayu／Yumi／佐藤千春\nゲスト 宇宙軒明星\nゲスト 澤田響紀\n特別ゲスト 木津かおり\n\n\n前半 https://youtu.be/-fzqw9nt7gg\n＜音源＞\n01 子供盆踊り唄（北海道）https://youtu.be/66ikBfSjQZE\n02 平和音頭（三波春夫）https://youtu.be/cGdeMUbDNf4\n03 おてもやん（熊本）https://youtu.be/gtpvIroXoSA\n04 牛深ハイヤ節（熊本）https://youtu.be/Dk5FXiWBu_8\n05 秋田音頭（秋田）https://youtu.be/4qgZZlsj"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=W__u03aJ0rs",
+          "date": "2026-06-01T23:00:34+00:00",
+          "text": "祭のきせき 盆踊り\n36 ドダレバチ　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531\nMIN-YOI'S（ミンヨイズ）の盆踊り　日本民謡会館　2026年5月31日（日）\n\nMin-Yoi's（ミンヨイズ）メンバー Spring ver\nNayu／Yumi／佐藤千春\nゲスト 宇宙軒明星\nゲスト 澤田響紀\n特別ゲスト 木津かおり\n\n\n前半 https://youtu.be/-fzqw9nt7gg\n＜音源＞\n01 子供盆踊り唄（北海道）https://youtu.be/66ikBfSjQZE\n02 平和音頭（三波春夫）https://youtu.be/cGdeMUbDNf4\n03 おてもやん（熊本）https://youtu.be/gtpvIroXoSA\n04 牛深ハイヤ節（熊本）https://youtu.be/Dk5FXiWBu_8\n05 秋田音頭（秋田）https://youtu.be/4qgZZ"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=etABTMcQCCs",
+          "date": "2026-06-01T22:45:35+00:00",
+          "text": "祭のきせき 盆踊り\n35 黒石じょんがら　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531\nMIN-YOI'S（ミンヨイズ）の盆踊り　日本民謡会館　2026年5月31日（日）\n\nMin-Yoi's（ミンヨイズ）メンバー Spring ver\nNayu／Yumi／佐藤千春\nゲスト 宇宙軒明星\nゲスト 澤田響紀\n特別ゲスト 木津かおり\n\n\n前半 https://youtu.be/-fzqw9nt7gg\n＜音源＞\n01 子供盆踊り唄（北海道）https://youtu.be/66ikBfSjQZE\n02 平和音頭（三波春夫）https://youtu.be/cGdeMUbDNf4\n03 おてもやん（熊本）https://youtu.be/gtpvIroXoSA\n04 牛深ハイヤ節（熊本）https://youtu.be/Dk5FXiWBu_8\n05 秋田音頭（秋田）https://youtu.be/4qgZ"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=ROUIXWrtjj8",
+          "date": "2026-06-01T22:30:36+00:00",
+          "text": "祭のきせき 盆踊り\n34 黒石甚句　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531\nMIN-YOI'S（ミンヨイズ）の盆踊り　日本民謡会館　2026年5月31日（日）\n\nMin-Yoi's（ミンヨイズ）メンバー Spring ver\nNayu／Yumi／佐藤千春\nゲスト 宇宙軒明星\nゲスト 澤田響紀\n特別ゲスト 木津かおり\n\n\n前半 https://youtu.be/-fzqw9nt7gg\n＜音源＞\n01 子供盆踊り唄（北海道）https://youtu.be/66ikBfSjQZE\n02 平和音頭（三波春夫）https://youtu.be/cGdeMUbDNf4\n03 おてもやん（熊本）https://youtu.be/gtpvIroXoSA\n04 牛深ハイヤ節（熊本）https://youtu.be/Dk5FXiWBu_8\n05 秋田音頭（秋田）https://youtu.be/4qgZZlsjh"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=-qGMkGZJ6zA",
+          "date": "2026-06-01T22:15:34+00:00",
+          "text": "祭のきせき 盆踊り\n33 黒石よされ　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531\nMIN-YOI'S（ミンヨイズ）の盆踊り　日本民謡会館　2026年5月31日（日）\n\nMin-Yoi's（ミンヨイズ）メンバー Spring ver\nNayu／Yumi／佐藤千春\nゲスト 宇宙軒明星\nゲスト 澤田響紀\n特別ゲスト 木津かおり\n\n\n前半 https://youtu.be/-fzqw9nt7gg\n＜音源＞\n01 子供盆踊り唄（北海道）https://youtu.be/66ikBfSjQZE\n02 平和音頭（三波春夫）https://youtu.be/cGdeMUbDNf4\n03 おてもやん（熊本）https://youtu.be/gtpvIroXoSA\n04 牛深ハイヤ節（熊本）https://youtu.be/Dk5FXiWBu_8\n05 秋田音頭（秋田）https://youtu.be/4qgZZlsj"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=0pVYOUkQKU0",
+          "date": "2026-06-01T22:00:23+00:00",
+          "text": "祭のきせき 盆踊り\n32 鰺ヶ沢甚句　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531\nMIN-YOI'S（ミンヨイズ）の盆踊り　日本民謡会館　2026年5月31日（日）\n\nMin-Yoi's（ミンヨイズ）メンバー Spring ver\nNayu／Yumi／佐藤千春\nゲスト 宇宙軒明星\nゲスト 澤田響紀\n特別ゲスト 木津かおり\n\n\n前半 https://youtu.be/-fzqw9nt7gg\n＜音源＞\n01 子供盆踊り唄（北海道）https://youtu.be/66ikBfSjQZE\n02 平和音頭（三波春夫）https://youtu.be/cGdeMUbDNf4\n03 おてもやん（熊本）https://youtu.be/gtpvIroXoSA\n04 牛深ハイヤ節（熊本）https://youtu.be/Dk5FXiWBu_8\n05 秋田音頭（秋田）https://youtu.be/4qgZZlsj"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=O1RcEwDPIoU",
+          "date": "2026-06-01T21:45:36+00:00",
+          "text": "祭のきせき 盆踊り\n31 虎じょ様　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531\nMIN-YOI'S（ミンヨイズ）の盆踊り　日本民謡会館　2026年5月31日（日）\n\nMin-Yoi's（ミンヨイズ）メンバー Spring ver\nNayu／Yumi／佐藤千春\nゲスト 宇宙軒明星\nゲスト 澤田響紀\n特別ゲスト 木津かおり\n\n\n前半 https://youtu.be/-fzqw9nt7gg\n＜音源＞\n01 子供盆踊り唄（北海道）https://youtu.be/66ikBfSjQZE\n02 平和音頭（三波春夫）https://youtu.be/cGdeMUbDNf4\n03 おてもやん（熊本）https://youtu.be/gtpvIroXoSA\n04 牛深ハイヤ節（熊本）https://youtu.be/Dk5FXiWBu_8\n05 秋田音頭（秋田）https://youtu.be/4qgZZlsj"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=aNwGl78I7ic",
+          "date": "2026-06-01T21:30:20+00:00",
+          "text": "祭のきせき 盆踊り\n30 八戸小限　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531\nMIN-YOI'S（ミンヨイズ）の盆踊り　日本民謡会館　2026年5月31日（日）\n\nMin-Yoi's（ミンヨイズ）メンバー Spring ver\nNayu／Yumi／佐藤千春\nゲスト 宇宙軒明星\nゲスト 澤田響紀\n特別ゲスト 木津かおり\n\n\n前半 https://youtu.be/-fzqw9nt7gg\n＜音源＞\n01 子供盆踊り唄（北海道）https://youtu.be/66ikBfSjQZE\n02 平和音頭（三波春夫）https://youtu.be/cGdeMUbDNf4\n03 おてもやん（熊本）https://youtu.be/gtpvIroXoSA\n04 牛深ハイヤ節（熊本）https://youtu.be/Dk5FXiWBu_8\n05 秋田音頭（秋田）https://youtu.be/4qgZZlsjh"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=c9uotLXGYLQ",
+          "date": "2026-06-01T13:30:01+00:00",
+          "text": "和太鼓お祭りCH\n真室川音頭（生唄生演奏）　Min-Yoi's盆踊り13　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=7v5c4qZQnSw",
+          "date": "2026-06-01T13:00:09+00:00",
+          "text": "和太鼓お祭りCH\nドンパン節（生唄生演奏）　Min-Yoi's盆踊り12　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=7TkSF51SEs0",
+          "date": "2026-06-01T12:30:39+00:00",
+          "text": "和太鼓お祭りCH\n花笠音頭（生唄生演奏）　Min-Yoi's盆踊り11　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/z"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=LBuOk033AcQ",
+          "date": "2026-06-01T12:00:00+00:00",
+          "text": "和太鼓お祭りCH\n炭坑節（生唄生演奏）　Min-Yoi's盆踊り10　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/zv"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=UoiBfNfZswE",
+          "date": "2026-06-01T09:30:24+00:00",
+          "text": "和太鼓お祭りCH\n東京音頭（生唄生演奏）　Min-Yoi's盆踊り９　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/zv"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=LuKtxSzNpDE",
+          "date": "2026-06-01T09:00:17+00:00",
+          "text": "和太鼓お祭りCH\n鹿島一声浮立　Min Yoi’s盆踊り８　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/zvNk31X"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=B3C481luK_w",
+          "date": "2026-06-01T08:30:32+00:00",
+          "text": "和太鼓お祭りCH\nにっぽんチャチャチャ　Min-Yoi's盆踊り７　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/zvN"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=0cz4BgmIJC4",
+          "date": "2026-06-01T08:00:24+00:00",
+          "text": "和太鼓お祭りCH\nでかんしょ節　Min-Yoi's盆踊り６　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/zvNk31X"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=olANab36mxk",
+          "date": "2026-06-01T07:30:37+00:00",
+          "text": "和太鼓お祭りCH\n秋田音頭　Min-Yoi's盆踊り５　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/zvNk31Xmw"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=3Jyp2LG1NJ0",
+          "date": "2026-06-01T21:00:33+00:00",
+          "text": "祭のきせき 盆踊り\n28 江州音頭　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531\nMIN-YOI'S（ミンヨイズ）の盆踊り　日本民謡会館　2026年5月31日（日）\n\nMin-Yoi's（ミンヨイズ）メンバー Spring ver\nNayu／Yumi／佐藤千春\nゲスト 宇宙軒明星\nゲスト 澤田響紀\n特別ゲスト 木津かおり\n\n\n前半 https://youtu.be/-fzqw9nt7gg\n＜音源＞\n01 子供盆踊り唄（北海道）https://youtu.be/66ikBfSjQZE\n02 平和音頭（三波春夫）https://youtu.be/cGdeMUbDNf4\n03 おてもやん（熊本）https://youtu.be/gtpvIroXoSA\n04 牛深ハイヤ節（熊本）https://youtu.be/Dk5FXiWBu_8\n05 秋田音頭（秋田）https://youtu.be/4qgZZlsjh"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=aUo0c79bPhI",
+          "date": "2026-06-01T20:45:32+00:00",
+          "text": "祭のきせき 盆踊り\n27 Beat it盆踊り　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531\nMIN-YOI'S（ミンヨイズ）の盆踊り　日本民謡会館　2026年5月31日（日）\n\nMin-Yoi's（ミンヨイズ）メンバー Spring ver\nNayu／Yumi／佐藤千春\nゲスト 宇宙軒明星\nゲスト 澤田響紀\n特別ゲスト 木津かおり\n\n\n前半 https://youtu.be/-fzqw9nt7gg\n＜音源＞\n01 子供盆踊り唄（北海道）https://youtu.be/66ikBfSjQZE\n02 平和音頭（三波春夫）https://youtu.be/cGdeMUbDNf4\n03 おてもやん（熊本）https://youtu.be/gtpvIroXoSA\n04 牛深ハイヤ節（熊本）https://youtu.be/Dk5FXiWBu_8\n05 秋田音頭（秋田）https://youtu.be/4qg"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=iDSSkftykFI",
+          "date": "2026-06-01T13:03:12+00:00",
+          "text": "祭のきせき 盆踊り\n26 紀州白浜音頭　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531\nMIN-YOI'S（ミンヨイズ）の盆踊り　日本民謡会館　2026年5月31日（日）\n\nMin-Yoi's（ミンヨイズ）メンバー Spring ver\nNayu／Yumi／佐藤千春\nゲスト 宇宙軒明星\nゲスト 澤田響紀\n特別ゲスト 木津かおり\n\n\n前半 https://youtu.be/-fzqw9nt7gg\n＜音源＞\n01 子供盆踊り唄（北海道）https://youtu.be/66ikBfSjQZE\n02 平和音頭（三波春夫）https://youtu.be/cGdeMUbDNf4\n03 おてもやん（熊本）https://youtu.be/gtpvIroXoSA\n04 牛深ハイヤ節（熊本）https://youtu.be/Dk5FXiWBu_8\n05 秋田音頭（秋田）https://youtu.be/4qgZZls"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=sqfQHtxJ4NU",
+          "date": "2026-06-01T12:00:39+00:00",
+          "text": "祭のきせき 盆踊り\n25 下北小唄　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531\nMIN-YOI'S（ミンヨイズ）の盆踊り　日本民謡会館　2026年5月31日（日）\n\nMin-Yoi's（ミンヨイズ）メンバー Spring ver\nNayu／Yumi／佐藤千春\nゲスト 宇宙軒明星\nゲスト 澤田響紀\n特別ゲスト 木津かおり\n\n\n前半 https://youtu.be/-fzqw9nt7gg\n＜音源＞\n01 子供盆踊り唄（北海道）https://youtu.be/66ikBfSjQZE\n02 平和音頭（三波春夫）https://youtu.be/cGdeMUbDNf4\n03 おてもやん（熊本）https://youtu.be/gtpvIroXoSA\n04 牛深ハイヤ節（熊本）https://youtu.be/Dk5FXiWBu_8\n05 秋田音頭（秋田）https://youtu.be/4qgZZlsjh"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=OsHisntBZLs",
+          "date": "2026-06-01T11:45:03+00:00",
+          "text": "祭のきせき 盆踊り\n24 おしまご輪踊り　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531\nMIN-YOI'S（ミンヨイズ）の盆踊り　日本民謡会館　2026年5月31日（日）\n\nMin-Yoi's（ミンヨイズ）メンバー Spring ver\nNayu／Yumi／佐藤千春\nゲスト 宇宙軒明星\nゲスト 澤田響紀\n特別ゲスト 木津かおり\n\n\n前半 https://youtu.be/-fzqw9nt7gg\n＜音源＞\n01 子供盆踊り唄（北海道）https://youtu.be/66ikBfSjQZE\n02 平和音頭（三波春夫）https://youtu.be/cGdeMUbDNf4\n03 おてもやん（熊本）https://youtu.be/gtpvIroXoSA\n04 牛深ハイヤ節（熊本）https://youtu.be/Dk5FXiWBu_8\n05 秋田音頭（秋田）https://youtu.be/4qgZZ"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=XUheysv-xew",
+          "date": "2026-06-01T11:30:05+00:00",
+          "text": "祭のきせき 盆踊り\n23 村崎野音頭　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531\nMIN-YOI'S（ミンヨイズ）の盆踊り　日本民謡会館　2026年5月31日（日）\n\nMin-Yoi's（ミンヨイズ）メンバー Spring ver\nNayu／Yumi／佐藤千春\nゲスト 宇宙軒明星\nゲスト 澤田響紀\n特別ゲスト 木津かおり\n\n\n前半 https://youtu.be/-fzqw9nt7gg\n＜音源＞\n01 子供盆踊り唄（北海道）https://youtu.be/66ikBfSjQZE\n02 平和音頭（三波春夫）https://youtu.be/cGdeMUbDNf4\n03 おてもやん（熊本）https://youtu.be/gtpvIroXoSA\n04 牛深ハイヤ節（熊本）https://youtu.be/Dk5FXiWBu_8\n05 秋田音頭（秋田）https://youtu.be/4qgZZlsj"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=b9joUdkWREE",
+          "date": "2026-06-01T11:15:35+00:00",
+          "text": "祭のきせき 盆踊り\n22 北上おでんせ　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531\nMIN-YOI'S（ミンヨイズ）の盆踊り　日本民謡会館　2026年5月31日（日）\n\nMin-Yoi's（ミンヨイズ）メンバー Spring ver\nNayu／Yumi／佐藤千春\nゲスト 宇宙軒明星\nゲスト 澤田響紀\n特別ゲスト 木津かおり\n\n\n前半 https://youtu.be/-fzqw9nt7gg\n＜音源＞\n01 子供盆踊り唄（北海道）https://youtu.be/66ikBfSjQZE\n02 平和音頭（三波春夫）https://youtu.be/cGdeMUbDNf4\n03 おてもやん（熊本）https://youtu.be/gtpvIroXoSA\n04 牛深ハイヤ節（熊本）https://youtu.be/Dk5FXiWBu_8\n05 秋田音頭（秋田）https://youtu.be/4qgZZl"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=y3XVBIkdiu0",
+          "date": "2026-06-01T11:00:27+00:00",
+          "text": "祭のきせき 盆踊り\n21 老坂　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531\nMIN-YOI'S（ミンヨイズ）の盆踊り　日本民謡会館　2026年5月31日（日）\n\nMin-Yoi's（ミンヨイズ）メンバー Spring ver\nNayu／Yumi／佐藤千春\nゲスト 宇宙軒明星\nゲスト 澤田響紀\n特別ゲスト 木津かおり\n\n\n前半 https://youtu.be/-fzqw9nt7gg\n＜音源＞\n01 子供盆踊り唄（北海道）https://youtu.be/66ikBfSjQZE\n02 平和音頭（三波春夫）https://youtu.be/cGdeMUbDNf4\n03 おてもやん（熊本）https://youtu.be/gtpvIroXoSA\n04 牛深ハイヤ節（熊本）https://youtu.be/Dk5FXiWBu_8\n05 秋田音頭（秋田）https://youtu.be/4qgZZlsjhTU"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=fctiVwyf5Cc",
+          "date": "2026-06-01T10:45:09+00:00",
+          "text": "祭のきせき 盆踊り\n20 神代　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531\nMIN-YOI'S（ミンヨイズ）の盆踊り　日本民謡会館　2026年5月31日（日）\n\nMin-Yoi's（ミンヨイズ）メンバー Spring ver\nNayu／Yumi／佐藤千春\nゲスト 宇宙軒明星\nゲスト 澤田響紀\n特別ゲスト 木津かおり\n\n\n前半 https://youtu.be/-fzqw9nt7gg\n＜音源＞\n01 子供盆踊り唄（北海道）https://youtu.be/66ikBfSjQZE\n02 平和音頭（三波春夫）https://youtu.be/cGdeMUbDNf4\n03 おてもやん（熊本）https://youtu.be/gtpvIroXoSA\n04 牛深ハイヤ節（熊本）https://youtu.be/Dk5FXiWBu_8\n05 秋田音頭（秋田）https://youtu.be/4qgZZlsjhTU"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=EoJbnL4KtwI",
+          "date": "2026-06-01T10:30:34+00:00",
+          "text": "祭のきせき 盆踊り\n19 シッチョイ　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531\nMIN-YOI'S（ミンヨイズ）の盆踊り　日本民謡会館　2026年5月31日（日）\n\nMin-Yoi's（ミンヨイズ）メンバー Spring ver\nNayu／Yumi／佐藤千春\nゲスト 宇宙軒明星\nゲスト 澤田響紀\n特別ゲスト 木津かおり\n\n\n前半 https://youtu.be/-fzqw9nt7gg\n＜音源＞\n01 子供盆踊り唄（北海道）https://youtu.be/66ikBfSjQZE\n02 平和音頭（三波春夫）https://youtu.be/cGdeMUbDNf4\n03 おてもやん（熊本）https://youtu.be/gtpvIroXoSA\n04 牛深ハイヤ節（熊本）https://youtu.be/Dk5FXiWBu_8\n05 秋田音頭（秋田）https://youtu.be/4qgZZlsj"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=cXn8xwXNOxQ",
+          "date": "2026-06-01T10:15:11+00:00",
+          "text": "祭のきせき 盆踊り\n18 春駒 　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531\nMIN-YOI'S（ミンヨイズ）の盆踊り　日本民謡会館　2026年5月31日（日）\n\nMin-Yoi's（ミンヨイズ）メンバー Spring ver\nNayu／Yumi／佐藤千春\nゲスト 宇宙軒明星\nゲスト 澤田響紀\n特別ゲスト 木津かおり\n\n\n前半 https://youtu.be/-fzqw9nt7gg\n＜音源＞\n01 子供盆踊り唄（北海道）https://youtu.be/66ikBfSjQZE\n02 平和音頭（三波春夫）https://youtu.be/cGdeMUbDNf4\n03 おてもやん（熊本）https://youtu.be/gtpvIroXoSA\n04 牛深ハイヤ節（熊本）https://youtu.be/Dk5FXiWBu_8\n05 秋田音頭（秋田）https://youtu.be/4qgZZlsjhT"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=AiCNo-S5ej0",
+          "date": "2026-06-01T10:00:24+00:00",
+          "text": "祭のきせき 盆踊り\n17 三百　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531\nMIN-YOI'S（ミンヨイズ）の盆踊り　日本民謡会館　2026年5月31日（日）\n\nMin-Yoi's（ミンヨイズ）メンバー Spring ver\nNayu／Yumi／佐藤千春\nゲスト 宇宙軒明星\nゲスト 澤田響紀\n特別ゲスト 木津かおり\n\n\n前半 https://youtu.be/-fzqw9nt7gg\n＜音源＞\n01 子供盆踊り唄（北海道）https://youtu.be/66ikBfSjQZE\n02 平和音頭（三波春夫）https://youtu.be/cGdeMUbDNf4\n03 おてもやん（熊本）https://youtu.be/gtpvIroXoSA\n04 牛深ハイヤ節（熊本）https://youtu.be/Dk5FXiWBu_8\n05 秋田音頭（秋田）https://youtu.be/4qgZZlsjhTU"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=oxVbYu4UrT0",
+          "date": "2026-06-01T09:45:07+00:00",
+          "text": "祭のきせき 盆踊り\n16 かわさき 　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531\nMIN-YOI'S（ミンヨイズ）の盆踊り　日本民謡会館　2026年5月31日（日）\n\nMin-Yoi's（ミンヨイズ）メンバー Spring ver\nNayu／Yumi／佐藤千春\nゲスト 宇宙軒明星\nゲスト 澤田響紀\n特別ゲスト 木津かおり\n\n\n前半 https://youtu.be/-fzqw9nt7gg\n＜音源＞\n01 子供盆踊り唄（北海道）https://youtu.be/66ikBfSjQZE\n02 平和音頭（三波春夫）https://youtu.be/cGdeMUbDNf4\n03 おてもやん（熊本）https://youtu.be/gtpvIroXoSA\n04 牛深ハイヤ節（熊本）https://youtu.be/Dk5FXiWBu_8\n05 秋田音頭（秋田）https://youtu.be/4qgZZlsj"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=IItWym2M4Hk",
+          "date": "2026-06-01T09:30:14+00:00",
+          "text": "祭のきせき 盆踊り\n15 大森甚句　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531\nMIN-YOI'S（ミンヨイズ）の盆踊り　日本民謡会館　2026年5月31日（日）\n\nMin-Yoi's（ミンヨイズ）メンバー Spring ver\nNayu／Yumi／佐藤千春\nゲスト 宇宙軒明星\nゲスト 澤田響紀\n特別ゲスト 木津かおり\n\n\n前半 https://youtu.be/-fzqw9nt7gg\n＜音源＞\n01 子供盆踊り唄（北海道）https://youtu.be/66ikBfSjQZE\n02 平和音頭（三波春夫）https://youtu.be/cGdeMUbDNf4\n03 おてもやん（熊本）https://youtu.be/gtpvIroXoSA\n04 牛深ハイヤ節（熊本）https://youtu.be/Dk5FXiWBu_8\n05 秋田音頭（秋田）https://youtu.be/4qgZZlsjh"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=Q4foTQKMifc",
+          "date": "2026-06-01T09:15:10+00:00",
+          "text": "祭のきせき 盆踊り\n14 隠岐しげさ節　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531\nMIN-YOI'S（ミンヨイズ）の盆踊り　日本民謡会館　2026年5月31日（日）\n\nMin-Yoi's（ミンヨイズ）メンバー Spring ver\nNayu／Yumi／佐藤千春\nゲスト 宇宙軒明星\nゲスト 澤田響紀\n特別ゲスト 木津かおり\n\n\n前半 https://youtu.be/-fzqw9nt7gg\n＜音源＞\n01 子供盆踊り唄（北海道）https://youtu.be/66ikBfSjQZE\n02 平和音頭（三波春夫）https://youtu.be/cGdeMUbDNf4\n03 おてもやん（熊本）https://youtu.be/gtpvIroXoSA\n04 牛深ハイヤ節（熊本）https://youtu.be/Dk5FXiWBu_8\n05 秋田音頭（秋田）https://youtu.be/4qgZZl"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 72
+    },
+    {
+      "id": "e3e6664bfeaabc37",
+      "song_name": "村崎野音頭",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "area": "品川区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=yOPU_J0TRdk",
+          "date": "2026-06-03T03:00:28+00:00",
+          "text": "和太鼓お祭りCH\n村崎野音頭　Min-Yoi's盆踊り23　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/zvNk31X"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=XUheysv-xew",
+          "date": "2026-06-01T11:30:05+00:00",
+          "text": "祭のきせき 盆踊り\n23 村崎野音頭　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531\nMIN-YOI'S（ミンヨイズ）の盆踊り　日本民謡会館　2026年5月31日（日）\n\nMin-Yoi's（ミンヨイズ）メンバー Spring ver\nNayu／Yumi／佐藤千春\nゲスト 宇宙軒明星\nゲスト 澤田響紀\n特別ゲスト 木津かおり\n\n\n前半 https://youtu.be/-fzqw9nt7gg\n＜音源＞\n01 子供盆踊り唄（北海道）https://youtu.be/66ikBfSjQZE\n02 平和音頭（三波春夫）https://youtu.be/cGdeMUbDNf4\n03 おてもやん（熊本）https://youtu.be/gtpvIroXoSA\n04 牛深ハイヤ節（熊本）https://youtu.be/Dk5FXiWBu_8\n05 秋田音頭（秋田）https://youtu.be/4qgZZlsj"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 2
+    },
+    {
+      "id": "9f12e7a29c141355",
+      "song_name": "津軽甚句",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "area": "品川区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=-RP0e0LUCZk",
+          "date": "2026-06-04T09:00:10+00:00",
+          "text": "和太鼓お祭りCH\n津軽甚句ドダレバチ（生唄生演奏）　Min-Yoi's盆踊り36　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "df7e2d68baf36bbf",
+      "song_name": "白鳥おどり",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "area": "品川区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=SCS4NBMj8bA",
+          "date": "2026-06-02T12:30:11+00:00",
+          "text": "和太鼓お祭りCH\n白鳥おどり老坂（生唄生演奏）　Min-Yoi's盆踊り21　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.b"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=PfVSbEplhXA",
+          "date": "2026-06-02T12:00:06+00:00",
+          "text": "和太鼓お祭りCH\n白鳥おどり神代（生唄生演奏）　Min-Yoi's盆踊り20　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.b"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=lw9vaonH1uc",
+          "date": "2026-06-02T09:00:28+00:00",
+          "text": "和太鼓お祭りCH\n白鳥おどりシッチョイ（生唄生演奏）　Min-Yoi's盆踊り19　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://yout"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 3
+    },
+    {
+      "id": "66d4caa2b9d6f285",
+      "song_name": "真室川音頭",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "area": "品川区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=c9uotLXGYLQ",
+          "date": "2026-06-01T13:30:01+00:00",
+          "text": "和太鼓お祭りCH\n真室川音頭（生唄生演奏）　Min-Yoi's盆踊り13　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "b48a4006cb67794d",
+      "song_name": "秋田音頭",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "area": "品川区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=olANab36mxk",
+          "date": "2026-06-01T07:30:37+00:00",
+          "text": "和太鼓お祭りCH\n秋田音頭　Min-Yoi's盆踊り５　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/zvNk31Xmw"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "400b82f748a41726",
+      "song_name": "紀州白浜音頭",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "area": "品川区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=tlWdGx5rLFA",
+          "date": "2026-06-03T09:00:38+00:00",
+          "text": "和太鼓お祭りCH\n紀州白浜音頭　Min-Yoi's盆踊り26　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/zvNk31"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=iDSSkftykFI",
+          "date": "2026-06-01T13:03:12+00:00",
+          "text": "祭のきせき 盆踊り\n26 紀州白浜音頭　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531\nMIN-YOI'S（ミンヨイズ）の盆踊り　日本民謡会館　2026年5月31日（日）\n\nMin-Yoi's（ミンヨイズ）メンバー Spring ver\nNayu／Yumi／佐藤千春\nゲスト 宇宙軒明星\nゲスト 澤田響紀\n特別ゲスト 木津かおり\n\n\n前半 https://youtu.be/-fzqw9nt7gg\n＜音源＞\n01 子供盆踊り唄（北海道）https://youtu.be/66ikBfSjQZE\n02 平和音頭（三波春夫）https://youtu.be/cGdeMUbDNf4\n03 おてもやん（熊本）https://youtu.be/gtpvIroXoSA\n04 牛深ハイヤ節（熊本）https://youtu.be/Dk5FXiWBu_8\n05 秋田音頭（秋田）https://youtu.be/4qgZZls"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 2
+    },
+    {
+      "id": "21a17407216f24a6",
+      "song_name": "繁昌節",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "area": "品川区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=6WjbWgdU4L4",
+          "date": "2026-06-02T01:00:17+00:00",
+          "text": "祭のきせき 盆踊り\n44 繁昌節　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531\nMIN-YOI'S（ミンヨイズ）の盆踊り　日本民謡会館　2026年5月31日（日）\n\nMin-Yoi's（ミンヨイズ）メンバー Spring ver\nNayu／Yumi／佐藤千春\nゲスト 宇宙軒明星\nゲスト 澤田響紀\n特別ゲスト 木津かおり\n\n\n前半 https://youtu.be/-fzqw9nt7gg\n＜音源＞\n01 子供盆踊り唄（北海道）https://youtu.be/66ikBfSjQZE\n02 平和音頭（三波春夫）https://youtu.be/cGdeMUbDNf4\n03 おてもやん（熊本）https://youtu.be/gtpvIroXoSA\n04 牛深ハイヤ節（熊本）https://youtu.be/Dk5FXiWBu_8\n05 秋田音頭（秋田）https://youtu.be/4qgZZlsjhT"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "c1d55313ab2caea1",
+      "song_name": "郡上節",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "area": "品川区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=wYE6MCa9XxQ",
+          "date": "2026-06-02T08:00:17+00:00",
+          "text": "和太鼓お祭りCH\n郡上節春駒（生唄生演奏）　Min-Yoi's盆踊り18　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=rrPjw5lwGDU",
+          "date": "2026-06-02T07:00:16+00:00",
+          "text": "和太鼓お祭りCH\n郡上節三百（生唄生演奏）　Min-Yoi's盆踊り17　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=0eTmwqomFyA",
+          "date": "2026-06-02T06:00:16+00:00",
+          "text": "和太鼓お祭りCH\n郡上節かわさき（生唄生演奏）　Min-Yoi's盆踊り16　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.b"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 3
+    },
+    {
+      "id": "f1036a166c76452d",
+      "song_name": "隠岐のしげさ節",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "area": "品川区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=TIHzTtK9a1c",
+          "date": "2026-06-02T00:00:07+00:00",
+          "text": "和太鼓お祭りCH\n隠岐のしげさ節（生唄生演奏）　Min-Yoi's盆踊り14　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.b"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "57e8a9e630469094",
+      "song_name": "鯵ヶ沢甚句",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "area": "品川区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=4FeWN7pbr3w",
+          "date": "2026-06-04T03:00:33+00:00",
+          "text": "和太鼓お祭りCH\n鯵ヶ沢甚句（生唄生演奏）　Min-Yoi's盆踊り32　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "fb0c6789d8c55083",
+      "song_name": "鯵ヶ沢甚句と村崎野音頭",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "area": "品川区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/natsutr_bon/status/2062090921689440708",
+          "date": "2026-06-03T08:36:02+00:00",
+          "text": "奈津大郎〘ナツタロ〙\n5/31ミンヨイズ盆踊り@日本民謡会館\n\n生唄生演奏と音源で民謡を踊る催し🎶盆踊り好きの熱気で包まれました🤩\nゲスト木津かおりさんのさくら音頭を踊り終えた瞬間、フロアの歓声は最高潮🔥\n踊り手、奏者、歌手、裏方みんなで作った貴重な空間でした✨\n\n鯵ヶ沢甚句と村崎野音頭もよかったな〜🎶\n#みん盆 https://t.co/RiXYaGH1rX"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "c72b1d4cbd7bf655",
+      "song_name": "鰺ヶ沢甚句",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "area": "品川区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=0pVYOUkQKU0",
+          "date": "2026-06-01T22:00:23+00:00",
+          "text": "祭のきせき 盆踊り\n32 鰺ヶ沢甚句　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531\nMIN-YOI'S（ミンヨイズ）の盆踊り　日本民謡会館　2026年5月31日（日）\n\nMin-Yoi's（ミンヨイズ）メンバー Spring ver\nNayu／Yumi／佐藤千春\nゲスト 宇宙軒明星\nゲスト 澤田響紀\n特別ゲスト 木津かおり\n\n\n前半 https://youtu.be/-fzqw9nt7gg\n＜音源＞\n01 子供盆踊り唄（北海道）https://youtu.be/66ikBfSjQZE\n02 平和音頭（三波春夫）https://youtu.be/cGdeMUbDNf4\n03 おてもやん（熊本）https://youtu.be/gtpvIroXoSA\n04 牛深ハイヤ節（熊本）https://youtu.be/Dk5FXiWBu_8\n05 秋田音頭（秋田）https://youtu.be/4qgZZlsj"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "d35c04c9a68a6df5",
+      "song_name": "麦わら音頭",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "area": "品川区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=I9_Fcsn5aJ0",
+          "date": "2026-06-05T11:00:17+00:00",
+          "text": "和太鼓お祭りCH\n麦わら音頭　Min-Yoi's盆踊り43　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/zvNk31X"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "e01eb8c8756a69a5",
+      "song_name": "黒石甚句",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "area": "品川区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=vPE-jc6d-BU",
+          "date": "2026-06-04T07:00:30+00:00",
+          "text": "和太鼓お祭りCH\n黒石甚句（生唄生演奏）　Min-Yoi's盆踊り34　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ\n2026年5月31日に日本民謡協会ホールにて開催された「Min-Yoi's盆踊り」の様子をお届けします！\n\nミンヨイズ（Min-Yoi's）の皆さんと共に、会場が一体となって踊る盆踊りの活気溢れる様子をぜひご覧ください。\n\n開催日：2026年5月31日 \n場所：日本民謡協会ホール \nイベント名：Min-Yoi's盆踊り \n\n日本の伝統的な盆踊りの楽しさが伝われば嬉しいです！\n\n#ミンヨイズ #盆踊り #子供盆踊り唄 #日本民謡協会 #和太鼓 #日本の祭り #和太鼓お祭りチャンネル\n\n\nミンヨイズ盆踊り\n１子供盆踊り唄　https://youtu.be/K_ShDtWkpuc\n２平和音頭　https://youtu.be/Ay26e53P9-E\n３おてもやん　https://youtu.be/z"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=ROUIXWrtjj8",
+          "date": "2026-06-01T22:30:36+00:00",
+          "text": "祭のきせき 盆踊り\n34 黒石甚句　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531\nMIN-YOI'S（ミンヨイズ）の盆踊り　日本民謡会館　2026年5月31日（日）\n\nMin-Yoi's（ミンヨイズ）メンバー Spring ver\nNayu／Yumi／佐藤千春\nゲスト 宇宙軒明星\nゲスト 澤田響紀\n特別ゲスト 木津かおり\n\n\n前半 https://youtu.be/-fzqw9nt7gg\n＜音源＞\n01 子供盆踊り唄（北海道）https://youtu.be/66ikBfSjQZE\n02 平和音頭（三波春夫）https://youtu.be/cGdeMUbDNf4\n03 おてもやん（熊本）https://youtu.be/gtpvIroXoSA\n04 牛深ハイヤ節（熊本）https://youtu.be/Dk5FXiWBu_8\n05 秋田音頭（秋田）https://youtu.be/4qgZZlsjh"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 2
+    },
+    {
+      "id": "3c03d52d287d624d",
+      "song_name": "しながわ社協音頭",
+      "event_name": "しながわ運河まつり ステージプログラム",
+      "venue": "東品川海上公園",
+      "area": "品川区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "fallback_event",
+          "url": "https://x.com/harebon_odori/status/1908169012430991839",
+          "date": "2025-04-13",
+          "text": "しながわ運河まつり ステージプログラム\n2025 [I5]\n4/13。「しながわ運河まつり ステージプログラム」 4月13日(日)10:00-15:10(2日目)。\n14:00-14:20 「しゅわしゅわデフリンピック」。\n14:20-14:40「わわわ！しながわ社協音頭」。\n14:40-15:10「晴盆セレクト盆踊り」。\n＊イベント全体は 4月12日 (土)から2日間開催。\n(4/12朝掲)"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "7cb2ef2af67befae",
+      "song_name": "印西音頭",
+      "event_name": "鮫洲入江広場公園 ゆり園盆踊り",
+      "venue": "鮫洲入江広場公園",
+      "area": "品川区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/rollingasahi/status/2063428301197299947",
+          "date": "2026-06-07T01:10:18+00:00",
+          "text": "ローリングあさひ\n昨日の鮫洲入江広場公園ゆり園盆踊りの帰り\n公園外の歩道を歩いていたら\n最後のマイクアナウンスしていた\nお姉さんから声を掛けられた\n「どうして印西のTシャツ着てるんですか？！」\n「印西音頭って言う踊りが好きなんですよ！」\n「私、印西なんです！」\n「え！印西音頭知ってます？」\n「知りません！"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "467d8701ee07d7f0",
+      "song_name": "じゃこっぺ踊り",
+      "event_name": "錦糸一丁目 牛嶋神社 奉納踊り",
+      "venue": "大横川親水公園",
+      "area": "墨田区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=IDvJLis4DGc",
+          "date": "2026-06-02T10:30:11+00:00",
+          "text": "和太鼓お祭りCH\n炭坑節　すみだストリートジャズフェスティバル（すみジャズ）　こでらんに～（盆踊り）３終　2025年10月19日　東京都墨田区　大横川親水公園\n2025年10月19日、東京都墨田区の大横川親水公園で開催された「すみだストリートジャズフェスティバル（すみジャズ）」での盆踊りの様子です。\n\nジャズフェスという音楽の祭典の中で、素敵な生演奏とともに！開放的な公園の雰囲気と、和太鼓×ジャズフェスの特別なコラボレーションをお楽しみください。\n\n\n\nすみジャズ\nミンヨイズ\n１郡上節かわさき　https://youtu.be/m96QwsBm-oQ\n２春駒　https://youtu.be/P5566ZLPuko\n３大森甚句　https://youtu.be/YAvtypDu9YA\n４ドンパン節　https://youtu.be/eWtjOMpH-RE\n５秋田音頭　https://youtu.be/Zd2orM3jSkg\n６え"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=XNkOTLjq2Z4",
+          "date": "2026-06-02T10:00:20+00:00",
+          "text": "和太鼓お祭りCH\nとらじょさま　すみだストリートジャズフェスティバル（すみジャズ）　こでらんに～（盆踊り）２　2025年10月19日　東京都墨田区　大横川親水公園\n2025年10月19日、東京都墨田区の大横川親水公園で開催された「すみだストリートジャズフェスティバル（すみジャズ）」での盆踊りの様子です。\n\nジャズフェスという音楽の祭典の中で、素敵な生演奏とともに！開放的な公園の雰囲気と、和太鼓×ジャズフェスの特別なコラボレーションをお楽しみください。\n\n\n\nすみジャズ\nミンヨイズ\n１郡上節かわさき　https://youtu.be/m96QwsBm-oQ\n２春駒　https://youtu.be/P5566ZLPuko\n３大森甚句　https://youtu.be/YAvtypDu9YA\n４ドンパン節　https://youtu.be/eWtjOMpH-RE\n５秋田音頭　https://youtu.be/Zd2orM3jSkg\n"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=sdS6Y5moiPQ",
+          "date": "2026-06-01T10:30:28+00:00",
+          "text": "和太鼓お祭りCH\n相馬盆唄　すみだストリートジャズフェスティバル（すみジャズ）　こでらんに～（盆踊り）１　2025年10月19日　東京都墨田区　大横川親水公園\n2025年10月19日、東京都墨田区の大横川親水公園で開催された「すみだストリートジャズフェスティバル（すみジャズ）」での盆踊りの様子です。\n\nジャズフェスという音楽の祭典の中で、素敵な生演奏とともに！開放的な公園の雰囲気と、和太鼓×ジャズフェスの特別なコラボレーションをお楽しみください。\n\n\n\nすみジャズ\nミンヨイズ\n１郡上節かわさき　https://youtu.be/m96QwsBm-oQ\n２春駒　https://youtu.be/P5566ZLPuko\n３大森甚句　https://youtu.be/YAvtypDu9YA\n４ドンパン節　https://youtu.be/eWtjOMpH-RE\n５秋田音頭　https://youtu.be/Zd2orM3jSkg\n６え"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=mmPpyGYwFa0",
+          "date": "2026-06-01T10:00:31+00:00",
+          "text": "和太鼓お祭りCH\n池袋盆BAND（盆踊り）５終　すみだストリートジャズフェスティバル（すみジャズ）　2025年10月19日　東京都墨田区　大横川親水公園\n2025年10月19日、東京都墨田区の大横川親水公園で開催された「すみだストリートジャズフェスティバル（すみジャズ）」での盆踊りの様子です。\n\nジャズフェスという音楽の祭典の中で、素敵な生演奏とともに！開放的な公園の雰囲気と、和太鼓×ジャズフェスの特別なコラボレーションをお楽しみください。\n\n\n\nすみジャズ\nミンヨイズ\n１郡上節かわさき　https://youtu.be/m96QwsBm-oQ\n２春駒　https://youtu.be/P5566ZLPuko\n３大森甚句　https://youtu.be/YAvtypDu9YA\n４ドンパン節　https://youtu.be/eWtjOMpH-RE\n５秋田音頭　https://youtu.be/Zd2orM3jSkg\n６えびすく"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=3renuAXwTpE",
+          "date": "2026-05-31T10:30:27+00:00",
+          "text": "和太鼓お祭りCH\nIsn't She Lovely　すみだストリートジャズフェスティバル（すみジャズ）　池袋盆BAND（盆踊り）４　2025年10月19日　東京都墨田区　大横川親水公園\n2025年10月19日、東京都墨田区の大横川親水公園で開催された「すみだストリートジャズフェスティバル（すみジャズ）」での盆踊りの様子です。\n\nジャズフェスという音楽の祭典の中で、素敵な生演奏とともに！開放的な公園の雰囲気と、和太鼓×ジャズフェスの特別なコラボレーションをお楽しみください。\n\n\n\nすみジャズ\nミンヨイズ\n１郡上節かわさき　https://youtu.be/m96QwsBm-oQ\n２春駒　https://youtu.be/P5566ZLPuko\n３大森甚句　https://youtu.be/YAvtypDu9YA\n４ドンパン節　https://youtu.be/eWtjOMpH-RE\n５秋田音頭　https://youtu.be/Z"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=eC_nwyxZwLM",
+          "date": "2026-05-31T10:00:11+00:00",
+          "text": "和太鼓お祭りCH\nええじゃないか音頭　すみだストリートジャズフェスティバル（すみジャズ）　池袋盆BAND（盆踊り）３　2025年10月19日　東京都墨田区　大横川親水公園\n2025年10月19日、東京都墨田区の大横川親水公園で開催された「すみだストリートジャズフェスティバル（すみジャズ）」での盆踊りの様子です。\n\nジャズフェスという音楽の祭典の中で、素敵な生演奏とともに！開放的な公園の雰囲気と、和太鼓×ジャズフェスの特別なコラボレーションをお楽しみください。\n\n\n\nすみジャズ\nミンヨイズ\n１郡上節かわさき　https://youtu.be/m96QwsBm-oQ\n２春駒　https://youtu.be/P5566ZLPuko\n３大森甚句　https://youtu.be/YAvtypDu9YA\n４ドンパン節　https://youtu.be/eWtjOMpH-RE\n５秋田音頭　https://youtu.be/Zd2orM3j"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=IiWTkaAhMx8",
+          "date": "2026-05-30T10:30:37+00:00",
+          "text": "和太鼓お祭りCH\n相馬盆唄　すみだストリートジャズフェスティバル（すみジャズ）　池袋盆BAND（盆踊り）２　2025年10月19日　東京都墨田区　大横川親水公園\n2025年10月19日、東京都墨田区の大横川親水公園で開催された「すみだストリートジャズフェスティバル（すみジャズ）」での盆踊りの様子です。\n\nジャズフェスという音楽の祭典の中で、素敵な生演奏とともに！開放的な公園の雰囲気と、和太鼓×ジャズフェスの特別なコラボレーションをお楽しみください。\n\n\n\nすみジャズ\nミンヨイズ\n１郡上節かわさき　https://youtu.be/m96QwsBm-oQ\n２春駒　https://youtu.be/P5566ZLPuko\n３大森甚句　https://youtu.be/YAvtypDu9YA\n４ドンパン節　https://youtu.be/eWtjOMpH-RE\n５秋田音頭　https://youtu.be/Zd2orM3jSkg\n６"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=ta2U2nUvAK8",
+          "date": "2026-05-30T10:00:05+00:00",
+          "text": "和太鼓お祭りCH\n池袋西口音頭　すみだストリートジャズフェスティバル（すみジャズ）　池袋盆BAND（盆踊り）１　2025年10月19日　東京都墨田区　大横川親水公園\n2025年10月19日、東京都墨田区の大横川親水公園で開催された「すみだストリートジャズフェスティバル（すみジャズ）」での盆踊りの様子です。\n\nジャズフェスという音楽の祭典の中で、素敵な生演奏とともに！開放的な公園の雰囲気と、和太鼓×ジャズフェスの特別なコラボレーションをお楽しみください。\n\n\n\nすみジャズ\nミンヨイズ\n１郡上節かわさき　https://youtu.be/m96QwsBm-oQ\n２春駒　https://youtu.be/P5566ZLPuko\n３大森甚句　https://youtu.be/YAvtypDu9YA\n４ドンパン節　https://youtu.be/eWtjOMpH-RE\n５秋田音頭　https://youtu.be/Zd2orM3jSkg"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=-46emh0_BSA",
+          "date": "2026-05-29T01:30:38+00:00",
+          "text": "和太鼓お祭りCH\n【メガヒッツ盆踊り】　すみだストリートジャズフェスティバル（すみジャズ）　DJ岸野雄一（盆踊り）２終　2025年10月19日　東京都墨田区　大横川親水公園\n2025年10月19日、東京都墨田区の大横川親水公園で開催された「すみだストリートジャズフェスティバル（すみジャズ）」での盆踊りの様子です。\n\nジャズフェスという音楽の祭典の中で、素敵な生演奏とともに！開放的な公園の雰囲気と、和太鼓×ジャズフェスの特別なコラボレーションをお楽しみください。\n\n\n\nすみジャズ\nミンヨイズ\n１郡上節かわさき　https://youtu.be/m96QwsBm-oQ\n２春駒　https://youtu.be/P5566ZLPuko\n３大森甚句　https://youtu.be/YAvtypDu9YA\n４ドンパン節　https://youtu.be/eWtjOMpH-RE\n５秋田音頭　https://youtu.be/Zd2orM3"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=ZqjY80dzBcU",
+          "date": "2026-05-29T01:00:35+00:00",
+          "text": "和太鼓お祭りCH\n【子ども盆踊り唄】（持田ヨシ子）　すみだストリートジャズフェスティバル（すみジャズ）　DJ岸野雄一（盆踊り）１　2025年10月19日　東京都墨田区　大横川親水公園\n2025年10月19日、東京都墨田区の大横川親水公園で開催された「すみだストリートジャズフェスティバル（すみジャズ）」での盆踊りの様子です。\n\nジャズフェスという音楽の祭典の中で、素敵な生演奏とともに！開放的な公園の雰囲気と、和太鼓×ジャズフェスの特別なコラボレーションをお楽しみください。\n\n\n\nすみジャズ\nミンヨイズ\n１郡上節かわさき　https://youtu.be/m96QwsBm-oQ\n２春駒　https://youtu.be/P5566ZLPuko\n３大森甚句　https://youtu.be/YAvtypDu9YA\n４ドンパン節　https://youtu.be/eWtjOMpH-RE\n５秋田音頭　https://youtu.be/Zd"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=XVM-HC8ZqNI",
+          "date": "2026-05-28T01:30:14+00:00",
+          "text": "和太鼓お祭りCH\n夏祭り　すみだストリートジャズフェスティバル（すみジャズ）　亀四太鼓（盆踊り）10終　2025年10月19日　東京都墨田区　大横川親水公園\n2025年10月19日、東京都墨田区の大横川親水公園で開催された「すみだストリートジャズフェスティバル（すみジャズ）」での盆踊りの様子です。\n\nジャズフェスという音楽の祭典の中で、素敵な生演奏とともに！開放的な公園の雰囲気と、和太鼓×ジャズフェスの特別なコラボレーションをお楽しみください。\n\n\n\nすみジャズ\nミンヨイズ\n１郡上節かわさき　https://youtu.be/m96QwsBm-oQ\n２春駒　https://youtu.be/P5566ZLPuko\n３大森甚句　https://youtu.be/YAvtypDu9YA\n４ドンパン節　https://youtu.be/eWtjOMpH-RE\n５秋田音頭　https://youtu.be/Zd2orM3jSkg\n６えび"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=e7gDmAe6cU0",
+          "date": "2026-05-28T01:00:07+00:00",
+          "text": "和太鼓お祭りCH\n津軽甚句　すみだストリートジャズフェスティバル（すみジャズ）　Min Yoi’ｓ民謡盆踊り10終　2025年10月19日　東京都墨田区　大横川親水公園\n2025年10月19日、東京都墨田区の大横川親水公園で開催された「すみだストリートジャズフェスティバル（すみジャズ）」での盆踊りの様子です。\n\nジャズフェスという音楽の祭典の中で、MinｰYoi’ｓ（みんよいず）さんによる素敵な生演奏とともに「郡上節かわさき」を踊りました！開放的な公園の雰囲気と、民謡×ジャズフェスの特別なコラボレーションをお楽しみください。\n\n\n\nすみジャズ\nミンヨイズ\n１郡上節かわさき　https://youtu.be/m96QwsBm-oQ\n２春駒　https://youtu.be/P5566ZLPuko\n３大森甚句　https://youtu.be/YAvtypDu9YA\n４ドンパン節　https://youtu.be/eWtjOMpH-"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 12
+    },
+    {
+      "id": "e2f01c31e1770553",
+      "song_name": "郡上節",
+      "event_name": "錦糸一丁目 牛嶋神社 奉納踊り",
+      "venue": "大横川親水公園",
+      "area": "墨田区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=e7gDmAe6cU0",
+          "date": "2026-05-28T01:00:07+00:00",
+          "text": "和太鼓お祭りCH\n津軽甚句　すみだストリートジャズフェスティバル（すみジャズ）　Min Yoi’ｓ民謡盆踊り10終　2025年10月19日　東京都墨田区　大横川親水公園\n2025年10月19日、東京都墨田区の大横川親水公園で開催された「すみだストリートジャズフェスティバル（すみジャズ）」での盆踊りの様子です。\n\nジャズフェスという音楽の祭典の中で、MinｰYoi’ｓ（みんよいず）さんによる素敵な生演奏とともに「郡上節かわさき」を踊りました！開放的な公園の雰囲気と、民謡×ジャズフェスの特別なコラボレーションをお楽しみください。\n\n\n\nすみジャズ\nミンヨイズ\n１郡上節かわさき　https://youtu.be/m96QwsBm-oQ\n２春駒　https://youtu.be/P5566ZLPuko\n３大森甚句　https://youtu.be/YAvtypDu9YA\n４ドンパン節　https://youtu.be/eWtjOMpH-"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "5d685ca95760158b",
+      "song_name": "黒石よされ節",
+      "event_name": "錦糸一丁目 牛嶋神社 奉納踊り",
+      "venue": "大横川親水公園",
+      "area": "墨田区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=IDvJLis4DGc",
+          "date": "2026-06-02T10:30:11+00:00",
+          "text": "和太鼓お祭りCH\n炭坑節　すみだストリートジャズフェスティバル（すみジャズ）　こでらんに～（盆踊り）３終　2025年10月19日　東京都墨田区　大横川親水公園\n2025年10月19日、東京都墨田区の大横川親水公園で開催された「すみだストリートジャズフェスティバル（すみジャズ）」での盆踊りの様子です。\n\nジャズフェスという音楽の祭典の中で、素敵な生演奏とともに！開放的な公園の雰囲気と、和太鼓×ジャズフェスの特別なコラボレーションをお楽しみください。\n\n\n\nすみジャズ\nミンヨイズ\n１郡上節かわさき　https://youtu.be/m96QwsBm-oQ\n２春駒　https://youtu.be/P5566ZLPuko\n３大森甚句　https://youtu.be/YAvtypDu9YA\n４ドンパン節　https://youtu.be/eWtjOMpH-RE\n５秋田音頭　https://youtu.be/Zd2orM3jSkg\n６え"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=XNkOTLjq2Z4",
+          "date": "2026-06-02T10:00:20+00:00",
+          "text": "和太鼓お祭りCH\nとらじょさま　すみだストリートジャズフェスティバル（すみジャズ）　こでらんに～（盆踊り）２　2025年10月19日　東京都墨田区　大横川親水公園\n2025年10月19日、東京都墨田区の大横川親水公園で開催された「すみだストリートジャズフェスティバル（すみジャズ）」での盆踊りの様子です。\n\nジャズフェスという音楽の祭典の中で、素敵な生演奏とともに！開放的な公園の雰囲気と、和太鼓×ジャズフェスの特別なコラボレーションをお楽しみください。\n\n\n\nすみジャズ\nミンヨイズ\n１郡上節かわさき　https://youtu.be/m96QwsBm-oQ\n２春駒　https://youtu.be/P5566ZLPuko\n３大森甚句　https://youtu.be/YAvtypDu9YA\n４ドンパン節　https://youtu.be/eWtjOMpH-RE\n５秋田音頭　https://youtu.be/Zd2orM3jSkg\n"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=sdS6Y5moiPQ",
+          "date": "2026-06-01T10:30:28+00:00",
+          "text": "和太鼓お祭りCH\n相馬盆唄　すみだストリートジャズフェスティバル（すみジャズ）　こでらんに～（盆踊り）１　2025年10月19日　東京都墨田区　大横川親水公園\n2025年10月19日、東京都墨田区の大横川親水公園で開催された「すみだストリートジャズフェスティバル（すみジャズ）」での盆踊りの様子です。\n\nジャズフェスという音楽の祭典の中で、素敵な生演奏とともに！開放的な公園の雰囲気と、和太鼓×ジャズフェスの特別なコラボレーションをお楽しみください。\n\n\n\nすみジャズ\nミンヨイズ\n１郡上節かわさき　https://youtu.be/m96QwsBm-oQ\n２春駒　https://youtu.be/P5566ZLPuko\n３大森甚句　https://youtu.be/YAvtypDu9YA\n４ドンパン節　https://youtu.be/eWtjOMpH-RE\n５秋田音頭　https://youtu.be/Zd2orM3jSkg\n６え"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=mmPpyGYwFa0",
+          "date": "2026-06-01T10:00:31+00:00",
+          "text": "和太鼓お祭りCH\n池袋盆BAND（盆踊り）５終　すみだストリートジャズフェスティバル（すみジャズ）　2025年10月19日　東京都墨田区　大横川親水公園\n2025年10月19日、東京都墨田区の大横川親水公園で開催された「すみだストリートジャズフェスティバル（すみジャズ）」での盆踊りの様子です。\n\nジャズフェスという音楽の祭典の中で、素敵な生演奏とともに！開放的な公園の雰囲気と、和太鼓×ジャズフェスの特別なコラボレーションをお楽しみください。\n\n\n\nすみジャズ\nミンヨイズ\n１郡上節かわさき　https://youtu.be/m96QwsBm-oQ\n２春駒　https://youtu.be/P5566ZLPuko\n３大森甚句　https://youtu.be/YAvtypDu9YA\n４ドンパン節　https://youtu.be/eWtjOMpH-RE\n５秋田音頭　https://youtu.be/Zd2orM3jSkg\n６えびすく"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=3renuAXwTpE",
+          "date": "2026-05-31T10:30:27+00:00",
+          "text": "和太鼓お祭りCH\nIsn't She Lovely　すみだストリートジャズフェスティバル（すみジャズ）　池袋盆BAND（盆踊り）４　2025年10月19日　東京都墨田区　大横川親水公園\n2025年10月19日、東京都墨田区の大横川親水公園で開催された「すみだストリートジャズフェスティバル（すみジャズ）」での盆踊りの様子です。\n\nジャズフェスという音楽の祭典の中で、素敵な生演奏とともに！開放的な公園の雰囲気と、和太鼓×ジャズフェスの特別なコラボレーションをお楽しみください。\n\n\n\nすみジャズ\nミンヨイズ\n１郡上節かわさき　https://youtu.be/m96QwsBm-oQ\n２春駒　https://youtu.be/P5566ZLPuko\n３大森甚句　https://youtu.be/YAvtypDu9YA\n４ドンパン節　https://youtu.be/eWtjOMpH-RE\n５秋田音頭　https://youtu.be/Z"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=eC_nwyxZwLM",
+          "date": "2026-05-31T10:00:11+00:00",
+          "text": "和太鼓お祭りCH\nええじゃないか音頭　すみだストリートジャズフェスティバル（すみジャズ）　池袋盆BAND（盆踊り）３　2025年10月19日　東京都墨田区　大横川親水公園\n2025年10月19日、東京都墨田区の大横川親水公園で開催された「すみだストリートジャズフェスティバル（すみジャズ）」での盆踊りの様子です。\n\nジャズフェスという音楽の祭典の中で、素敵な生演奏とともに！開放的な公園の雰囲気と、和太鼓×ジャズフェスの特別なコラボレーションをお楽しみください。\n\n\n\nすみジャズ\nミンヨイズ\n１郡上節かわさき　https://youtu.be/m96QwsBm-oQ\n２春駒　https://youtu.be/P5566ZLPuko\n３大森甚句　https://youtu.be/YAvtypDu9YA\n４ドンパン節　https://youtu.be/eWtjOMpH-RE\n５秋田音頭　https://youtu.be/Zd2orM3j"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=IiWTkaAhMx8",
+          "date": "2026-05-30T10:30:37+00:00",
+          "text": "和太鼓お祭りCH\n相馬盆唄　すみだストリートジャズフェスティバル（すみジャズ）　池袋盆BAND（盆踊り）２　2025年10月19日　東京都墨田区　大横川親水公園\n2025年10月19日、東京都墨田区の大横川親水公園で開催された「すみだストリートジャズフェスティバル（すみジャズ）」での盆踊りの様子です。\n\nジャズフェスという音楽の祭典の中で、素敵な生演奏とともに！開放的な公園の雰囲気と、和太鼓×ジャズフェスの特別なコラボレーションをお楽しみください。\n\n\n\nすみジャズ\nミンヨイズ\n１郡上節かわさき　https://youtu.be/m96QwsBm-oQ\n２春駒　https://youtu.be/P5566ZLPuko\n３大森甚句　https://youtu.be/YAvtypDu9YA\n４ドンパン節　https://youtu.be/eWtjOMpH-RE\n５秋田音頭　https://youtu.be/Zd2orM3jSkg\n６"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=ta2U2nUvAK8",
+          "date": "2026-05-30T10:00:05+00:00",
+          "text": "和太鼓お祭りCH\n池袋西口音頭　すみだストリートジャズフェスティバル（すみジャズ）　池袋盆BAND（盆踊り）１　2025年10月19日　東京都墨田区　大横川親水公園\n2025年10月19日、東京都墨田区の大横川親水公園で開催された「すみだストリートジャズフェスティバル（すみジャズ）」での盆踊りの様子です。\n\nジャズフェスという音楽の祭典の中で、素敵な生演奏とともに！開放的な公園の雰囲気と、和太鼓×ジャズフェスの特別なコラボレーションをお楽しみください。\n\n\n\nすみジャズ\nミンヨイズ\n１郡上節かわさき　https://youtu.be/m96QwsBm-oQ\n２春駒　https://youtu.be/P5566ZLPuko\n３大森甚句　https://youtu.be/YAvtypDu9YA\n４ドンパン節　https://youtu.be/eWtjOMpH-RE\n５秋田音頭　https://youtu.be/Zd2orM3jSkg"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=-46emh0_BSA",
+          "date": "2026-05-29T01:30:38+00:00",
+          "text": "和太鼓お祭りCH\n【メガヒッツ盆踊り】　すみだストリートジャズフェスティバル（すみジャズ）　DJ岸野雄一（盆踊り）２終　2025年10月19日　東京都墨田区　大横川親水公園\n2025年10月19日、東京都墨田区の大横川親水公園で開催された「すみだストリートジャズフェスティバル（すみジャズ）」での盆踊りの様子です。\n\nジャズフェスという音楽の祭典の中で、素敵な生演奏とともに！開放的な公園の雰囲気と、和太鼓×ジャズフェスの特別なコラボレーションをお楽しみください。\n\n\n\nすみジャズ\nミンヨイズ\n１郡上節かわさき　https://youtu.be/m96QwsBm-oQ\n２春駒　https://youtu.be/P5566ZLPuko\n３大森甚句　https://youtu.be/YAvtypDu9YA\n４ドンパン節　https://youtu.be/eWtjOMpH-RE\n５秋田音頭　https://youtu.be/Zd2orM3"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=ZqjY80dzBcU",
+          "date": "2026-05-29T01:00:35+00:00",
+          "text": "和太鼓お祭りCH\n【子ども盆踊り唄】（持田ヨシ子）　すみだストリートジャズフェスティバル（すみジャズ）　DJ岸野雄一（盆踊り）１　2025年10月19日　東京都墨田区　大横川親水公園\n2025年10月19日、東京都墨田区の大横川親水公園で開催された「すみだストリートジャズフェスティバル（すみジャズ）」での盆踊りの様子です。\n\nジャズフェスという音楽の祭典の中で、素敵な生演奏とともに！開放的な公園の雰囲気と、和太鼓×ジャズフェスの特別なコラボレーションをお楽しみください。\n\n\n\nすみジャズ\nミンヨイズ\n１郡上節かわさき　https://youtu.be/m96QwsBm-oQ\n２春駒　https://youtu.be/P5566ZLPuko\n３大森甚句　https://youtu.be/YAvtypDu9YA\n４ドンパン節　https://youtu.be/eWtjOMpH-RE\n５秋田音頭　https://youtu.be/Zd"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=XVM-HC8ZqNI",
+          "date": "2026-05-28T01:30:14+00:00",
+          "text": "和太鼓お祭りCH\n夏祭り　すみだストリートジャズフェスティバル（すみジャズ）　亀四太鼓（盆踊り）10終　2025年10月19日　東京都墨田区　大横川親水公園\n2025年10月19日、東京都墨田区の大横川親水公園で開催された「すみだストリートジャズフェスティバル（すみジャズ）」での盆踊りの様子です。\n\nジャズフェスという音楽の祭典の中で、素敵な生演奏とともに！開放的な公園の雰囲気と、和太鼓×ジャズフェスの特別なコラボレーションをお楽しみください。\n\n\n\nすみジャズ\nミンヨイズ\n１郡上節かわさき　https://youtu.be/m96QwsBm-oQ\n２春駒　https://youtu.be/P5566ZLPuko\n３大森甚句　https://youtu.be/YAvtypDu9YA\n４ドンパン節　https://youtu.be/eWtjOMpH-RE\n５秋田音頭　https://youtu.be/Zd2orM3jSkg\n６えび"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=e7gDmAe6cU0",
+          "date": "2026-05-28T01:00:07+00:00",
+          "text": "和太鼓お祭りCH\n津軽甚句　すみだストリートジャズフェスティバル（すみジャズ）　Min Yoi’ｓ民謡盆踊り10終　2025年10月19日　東京都墨田区　大横川親水公園\n2025年10月19日、東京都墨田区の大横川親水公園で開催された「すみだストリートジャズフェスティバル（すみジャズ）」での盆踊りの様子です。\n\nジャズフェスという音楽の祭典の中で、MinｰYoi’ｓ（みんよいず）さんによる素敵な生演奏とともに「郡上節かわさき」を踊りました！開放的な公園の雰囲気と、民謡×ジャズフェスの特別なコラボレーションをお楽しみください。\n\n\n\nすみジャズ\nミンヨイズ\n１郡上節かわさき　https://youtu.be/m96QwsBm-oQ\n２春駒　https://youtu.be/P5566ZLPuko\n３大森甚句　https://youtu.be/YAvtypDu9YA\n４ドンパン節　https://youtu.be/eWtjOMpH-"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 12
+    },
+    {
+      "id": "7fbc69b280753b19",
+      "song_name": "錦糸町河内音頭",
+      "event_name": "すみだ錦糸町河内音頭大盆踊り",
+      "venue": "江東橋竪川親水公園",
+      "area": "墨田区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/nyantokonyan/status/2063449536698454055",
+          "date": "2026-06-07T02:34:41+00:00",
+          "text": "にゃんとこ\n第44回すみだ錦糸町河内音頭大盆踊りのイラストをにゃんとこのぽんが担当しました🏮楽しい盆踊りが末長くできますようにと願いを込めて、錦糸町河内音頭で汗をかきかきわいわい踊る光景を頭に思い浮かべながら描きました。今年は7月29日(水)、30(木)開催、今から待ち遠しいですね🐈💨\n\n#錦糸町河内音頭 https://t.co/X5FJyBrTJx"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "237232d401a41e51",
+      "song_name": "池ニ郎音頭",
+      "event_name": "堤方東町会「盆踊り大会」 7月26日(土) 16:30-20:00。",
+      "venue": "池上第二小学校",
+      "area": "大田区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "blog_registration",
+          "url": "https://drive.google.com/file/d/1QLA-aZWCl2zvCga0v8d2rrA0or_ymCsK/view?usp=drive_link",
+          "date": "2025 [K9]\n7/26",
+          "text": "堤方東町会「盆踊り大会」 7月26日(土) 16:30-20:00。\n池ニ郎音頭 他。\n踊りの時間詳細不明。(第1部と第2部があるそうです)\n＊プロレスはふれあいのみ(試合なし)。 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2025/01/00k-ota-p.html\n堤方東町会「盆踊り大会」 7月26日(土) 16:30-20:00。\n2025 [K9]\n7/26"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "5c1ceda0954dfd19",
+      "song_name": "やっペ踊り",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/HirojiYama46529/status/2063372346774401146",
+          "date": "2026-06-06T21:27:57+00:00",
+          "text": "yamaguchi hiroji\n@imaisakura_ 房州うちわ🪭を、銚子市では「やっペ踊り」でうちわを使ってクルクル回して盆踊りがあります。10年前は活発に盆踊り大会で踊っていましたが、最近は難しい踊りになりました…。うちわを使ってクルクル回しの盆踊りは、簡単に盆踊れます。"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "c3091134ea5637cd",
+      "song_name": "イデ音頭",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/yomogihirachi/status/2026678588246995436",
+          "date": "2026-02-25T15:20:03+00:00",
+          "text": "近藤良英\n1982年の『＃伝説巨神イデオン 接触篇／発動篇』の宣伝として、東京晴海で「イデ音頭」の盆踊り大会（？）があったのですが、直前に交通事故にあって入院していたので参加できませんでした。ただ手元には「イデ音頭」の手ぬぐいが残りました。＃どまんなかアニメ映画祭"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "94e61c72ada5ef8e",
+      "song_name": "吸血音頭",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/orMuRaSaKi/status/2064714026626744346",
+          "date": "2026-06-10T14:19:19+00:00",
+          "text": "むらさき🟪アルネの事件簿🦇202601アニメ放送🎊\n明日の発表されるまでは全ての可能性が存在しているから\n「夏だよ！リンちゃん！超盆踊り大会！～吸血音頭でよよいのよい～」\nの可能性もあるわけだ"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "5112864d63784769",
+      "song_name": "新浅草橋音頭",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/bon_odoroo/status/2053092202902114489",
+          "date": "2026-05-09T12:38:20+00:00",
+          "text": "おーすけ（おーちゃん）\nマロニエまつり盆踊り大会を訪ねました。名曲をたくさん踊れて楽しかったです。\n\n浅草橋音頭は神曲で振り付けも洒落てる。新浅草橋音頭は清水百恵さんの生歌で明るい雰囲気に。\n\n魅せられては柳北子さんの生歌で艶やかな雰囲気。市丸姐さんの曲や春駒ばやし、相馬壁塗り甚句なども渋くて良かったです。 https://t.co/2VYboVFWTU"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "f5b7700fdd8cdf53",
+      "song_name": "東京音頭",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=bKGzyQHWWcI",
+          "date": "2026-05-14T04:00:24+00:00",
+          "text": "祭のきせき 盆踊り\n28 締め太鼓　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509\nマロニエまつり盆踊り大会・第二部　ヒューリック浅草橋ビル前　20260年5月9日（土）\n\nマロニエまつり盆踊り大会 ② ヒューリック浅草橋ビル前（全曲ver）\nhttps://youtu.be/aeilLaeE8w8\n01 東京音頭　https://youtu.be/SbEosGTQNeI\n02 東京音頭　https://youtu.be/2ZG3iTZJVtc\n03 おけさ唄えば　https://youtu.be/Tv841KIFT2w\n04 日本よいとこ　https://youtu.be/2jqAe2cuGcY\n05 東京五輪音頭　https://youtu.be/Vw5JjfD_uCk\n06 まんまる音頭　https://youtu.be/TiplDr6GtRg\n07 浅草ばし音頭　https://youtu.be/"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=dJAb8mtqBb0",
+          "date": "2026-05-14T03:00:27+00:00",
+          "text": "祭のきせき 盆踊り\n27 ボンゴ天国　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509\nマロニエまつり盆踊り大会・第二部　ヒューリック浅草橋ビル前　20260年5月9日（土）\n\nマロニエまつり盆踊り大会 ② ヒューリック浅草橋ビル前（全曲ver）\nhttps://youtu.be/aeilLaeE8w8\n01 東京音頭　https://youtu.be/SbEosGTQNeI\n02 東京音頭　https://youtu.be/2ZG3iTZJVtc\n03 おけさ唄えば　https://youtu.be/Tv841KIFT2w\n04 日本よいとこ　https://youtu.be/2jqAe2cuGcY\n05 東京五輪音頭　https://youtu.be/Vw5JjfD_uCk\n06 まんまる音頭　https://youtu.be/TiplDr6GtRg\n07 浅草ばし音頭　https://youtu."
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=7rktk9ypI70",
+          "date": "2026-05-14T02:00:34+00:00",
+          "text": "祭のきせき 盆踊り\n26 U.S.A.　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509\nマロニエまつり盆踊り大会・第二部　ヒューリック浅草橋ビル前　20260年5月9日（土）\n\nマロニエまつり盆踊り大会 ② ヒューリック浅草橋ビル前（全曲ver）\nhttps://youtu.be/aeilLaeE8w8\n01 東京音頭　https://youtu.be/SbEosGTQNeI\n02 東京音頭　https://youtu.be/2ZG3iTZJVtc\n03 おけさ唄えば　https://youtu.be/Tv841KIFT2w\n04 日本よいとこ　https://youtu.be/2jqAe2cuGcY\n05 東京五輪音頭　https://youtu.be/Vw5JjfD_uCk\n06 まんまる音頭　https://youtu.be/TiplDr6GtRg\n07 浅草ばし音頭　https://youtu.b"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=G7p5vBash6M",
+          "date": "2026-05-14T01:00:04+00:00",
+          "text": "祭のきせき 盆踊り\n25 また逢う日まで　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509\nマロニエまつり盆踊り大会・第二部　ヒューリック浅草橋ビル前　20260年5月9日（土）\n\nマロニエまつり盆踊り大会 ② ヒューリック浅草橋ビル前（全曲ver）\nhttps://youtu.be/aeilLaeE8w8\n01 東京音頭　https://youtu.be/SbEosGTQNeI\n02 東京音頭　https://youtu.be/2ZG3iTZJVtc\n03 おけさ唄えば　https://youtu.be/Tv841KIFT2w\n04 日本よいとこ　https://youtu.be/2jqAe2cuGcY\n05 東京五輪音頭　https://youtu.be/Vw5JjfD_uCk\n06 まんまる音頭　https://youtu.be/TiplDr6GtRg\n07 浅草ばし音頭　https://youtu"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=ApUiu9aGfKs",
+          "date": "2026-05-14T00:00:15+00:00",
+          "text": "祭のきせき 盆踊り\n24 白鳥おどり 世栄　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509\nマロニエまつり盆踊り大会・第二部　ヒューリック浅草橋ビル前　20260年5月9日（土）\n\nマロニエまつり盆踊り大会 ② ヒューリック浅草橋ビル前（全曲ver）\nhttps://youtu.be/aeilLaeE8w8\n01 東京音頭　https://youtu.be/SbEosGTQNeI\n02 東京音頭　https://youtu.be/2ZG3iTZJVtc\n03 おけさ唄えば　https://youtu.be/Tv841KIFT2w\n04 日本よいとこ　https://youtu.be/2jqAe2cuGcY\n05 東京五輪音頭　https://youtu.be/Vw5JjfD_uCk\n06 まんまる音頭　https://youtu.be/TiplDr6GtRg\n07 浅草ばし音頭　https://yout"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=3iexflX8QmI",
+          "date": "2026-05-13T23:00:06+00:00",
+          "text": "祭のきせき 盆踊り\n23 ダンシングヒーロー　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509\nマロニエまつり盆踊り大会・第二部　ヒューリック浅草橋ビル前　20260年5月9日（土）\n\nマロニエまつり盆踊り大会 ② ヒューリック浅草橋ビル前（全曲ver）\nhttps://youtu.be/aeilLaeE8w8\n01 東京音頭　https://youtu.be/SbEosGTQNeI\n02 東京音頭　https://youtu.be/2ZG3iTZJVtc\n03 おけさ唄えば　https://youtu.be/Tv841KIFT2w\n04 日本よいとこ　https://youtu.be/2jqAe2cuGcY\n05 東京五輪音頭　https://youtu.be/Vw5JjfD_uCk\n06 まんまる音頭　https://youtu.be/TiplDr6GtRg\n07 浅草ばし音頭　https://yo"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=-Hge85DeCGs",
+          "date": "2026-05-13T22:00:20+00:00",
+          "text": "祭のきせき 盆踊り\n22 雨の御堂筋　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509\nマロニエまつり盆踊り大会・第二部　ヒューリック浅草橋ビル前　20260年5月9日（土）\n\nマロニエまつり盆踊り大会 ② ヒューリック浅草橋ビル前（全曲ver）\nhttps://youtu.be/aeilLaeE8w8\n01 東京音頭　https://youtu.be/SbEosGTQNeI\n02 東京音頭　https://youtu.be/2ZG3iTZJVtc\n03 おけさ唄えば　https://youtu.be/Tv841KIFT2w\n04 日本よいとこ　https://youtu.be/2jqAe2cuGcY\n05 東京五輪音頭　https://youtu.be/Vw5JjfD_uCk\n06 まんまる音頭　https://youtu.be/TiplDr6GtRg\n07 浅草ばし音頭　https://youtu.be"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=LcY8fBoEpfA",
+          "date": "2026-05-13T21:00:07+00:00",
+          "text": "祭のきせき 盆踊り\n21 日本はればれ音頭　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509\nマロニエまつり盆踊り大会・第二部　ヒューリック浅草橋ビル前　20260年5月9日（土）\n\nマロニエまつり盆踊り大会 ② ヒューリック浅草橋ビル前（全曲ver）\nhttps://youtu.be/aeilLaeE8w8\n01 東京音頭　https://youtu.be/SbEosGTQNeI\n02 東京音頭　https://youtu.be/2ZG3iTZJVtc\n03 おけさ唄えば　https://youtu.be/Tv841KIFT2w\n04 日本よいとこ　https://youtu.be/2jqAe2cuGcY\n05 東京五輪音頭　https://youtu.be/Vw5JjfD_uCk\n06 まんまる音頭　https://youtu.be/TiplDr6GtRg\n07 浅草ばし音頭　https://yout"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=KXprFpoe6t4",
+          "date": "2026-05-13T20:00:05+00:00",
+          "text": "祭のきせき 盆踊り\n20 宇宙太鼓　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509\nマロニエまつり盆踊り大会・第二部　ヒューリック浅草橋ビル前　20260年5月9日（土）\n\nマロニエまつり盆踊り大会 ② ヒューリック浅草橋ビル前（全曲ver）\nhttps://youtu.be/aeilLaeE8w8\n01 東京音頭　https://youtu.be/SbEosGTQNeI\n02 東京音頭　https://youtu.be/2ZG3iTZJVtc\n03 おけさ唄えば　https://youtu.be/Tv841KIFT2w\n04 日本よいとこ　https://youtu.be/2jqAe2cuGcY\n05 東京五輪音頭　https://youtu.be/Vw5JjfD_uCk\n06 まんまる音頭　https://youtu.be/TiplDr6GtRg\n07 浅草ばし音頭　https://youtu.be/"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=JrGlofeenWE",
+          "date": "2026-05-13T19:00:23+00:00",
+          "text": "祭のきせき 盆踊り\n19 黒潮太鼓　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509\nマロニエまつり盆踊り大会・第二部　ヒューリック浅草橋ビル前　20260年5月9日（土）\n\nマロニエまつり盆踊り大会 ② ヒューリック浅草橋ビル前（全曲ver）\nhttps://youtu.be/aeilLaeE8w8\n01 東京音頭　https://youtu.be/SbEosGTQNeI\n02 東京音頭　https://youtu.be/2ZG3iTZJVtc\n03 おけさ唄えば　https://youtu.be/Tv841KIFT2w\n04 日本よいとこ　https://youtu.be/2jqAe2cuGcY\n05 東京五輪音頭　https://youtu.be/Vw5JjfD_uCk\n06 まんまる音頭　https://youtu.be/TiplDr6GtRg\n07 浅草ばし音頭　https://youtu.be/"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=xY1o8tSJhWg",
+          "date": "2026-05-13T18:00:40+00:00",
+          "text": "祭のきせき 盆踊り\n18 島人ぬ宝　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509\nマロニエまつり盆踊り大会・第二部　ヒューリック浅草橋ビル前　20260年5月9日（土）\n\nマロニエまつり盆踊り大会 ② ヒューリック浅草橋ビル前（全曲ver）\nhttps://youtu.be/aeilLaeE8w8\n01 東京音頭　https://youtu.be/SbEosGTQNeI\n02 東京音頭　https://youtu.be/2ZG3iTZJVtc\n03 おけさ唄えば　https://youtu.be/Tv841KIFT2w\n04 日本よいとこ　https://youtu.be/2jqAe2cuGcY\n05 東京五輪音頭　https://youtu.be/Vw5JjfD_uCk\n06 まんまる音頭　https://youtu.be/TiplDr6GtRg\n07 浅草ばし音頭　https://youtu.be/"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=cjXn62ErNvE",
+          "date": "2026-05-13T17:00:08+00:00",
+          "text": "祭のきせき 盆踊り\n17 祭り華〜神田明神　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509\nマロニエまつり盆踊り大会・第二部　ヒューリック浅草橋ビル前　20260年5月9日（土）\n\nマロニエまつり盆踊り大会 ② ヒューリック浅草橋ビル前（全曲ver）\nhttps://youtu.be/aeilLaeE8w8\n01 東京音頭　https://youtu.be/SbEosGTQNeI\n02 東京音頭　https://youtu.be/2ZG3iTZJVtc\n03 おけさ唄えば　https://youtu.be/Tv841KIFT2w\n04 日本よいとこ　https://youtu.be/2jqAe2cuGcY\n05 東京五輪音頭　https://youtu.be/Vw5JjfD_uCk\n06 まんまる音頭　https://youtu.be/TiplDr6GtRg\n07 浅草ばし音頭　https://youtu"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=i2d4_AVPxsA",
+          "date": "2026-05-13T16:00:15+00:00",
+          "text": "祭のきせき 盆踊り\n16 河内酒　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509\nマロニエまつり盆踊り大会・第二部　ヒューリック浅草橋ビル前　20260年5月9日（土）\n\nマロニエまつり盆踊り大会 ② ヒューリック浅草橋ビル前（全曲ver）\nhttps://youtu.be/aeilLaeE8w8\n01 東京音頭　https://youtu.be/SbEosGTQNeI\n02 東京音頭　https://youtu.be/2ZG3iTZJVtc\n03 おけさ唄えば　https://youtu.be/Tv841KIFT2w\n04 日本よいとこ　https://youtu.be/2jqAe2cuGcY\n05 東京五輪音頭　https://youtu.be/Vw5JjfD_uCk\n06 まんまる音頭　https://youtu.be/TiplDr6GtRg\n07 浅草ばし音頭　https://youtu.be/3"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 13
+    },
+    {
+      "id": "31c8dd13cc51c078",
+      "song_name": "浅草橋音頭",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/bon_odoroo/status/2053092202902114489",
+          "date": "2026-05-09T12:38:20+00:00",
+          "text": "おーすけ（おーちゃん）\nマロニエまつり盆踊り大会を訪ねました。名曲をたくさん踊れて楽しかったです。\n\n浅草橋音頭は神曲で振り付けも洒落てる。新浅草橋音頭は清水百恵さんの生歌で明るい雰囲気に。\n\n魅せられては柳北子さんの生歌で艶やかな雰囲気。市丸姐さんの曲や春駒ばやし、相馬壁塗り甚句なども渋くて良かったです。 https://t.co/2VYboVFWTU"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "739a4e6a4673e947",
+      "song_name": "相馬壁塗り甚句",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/bon_odoroo/status/2053092202902114489",
+          "date": "2026-05-09T12:38:20+00:00",
+          "text": "おーすけ（おーちゃん）\nマロニエまつり盆踊り大会を訪ねました。名曲をたくさん踊れて楽しかったです。\n\n浅草橋音頭は神曲で振り付けも洒落てる。新浅草橋音頭は清水百恵さんの生歌で明るい雰囲気に。\n\n魅せられては柳北子さんの生歌で艶やかな雰囲気。市丸姐さんの曲や春駒ばやし、相馬壁塗り甚句なども渋くて良かったです。 https://t.co/2VYboVFWTU"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "ece483e009c21382",
+      "song_name": "野毛山節",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/nakano_bonodori/status/2062473068874993759",
+          "date": "2026-06-04T09:54:33+00:00",
+          "text": "中野駅前大盆踊り大会【公式】\n中野でも踊れたらいいのに…と思う、DJ帝さんによる野毛山節×ライディーンのマッシュアップ🚢"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "f06ecbffe1d1d63d",
+      "song_name": "白鳥踊り",
+      "event_name": "「白鳥おどりin池袋」 4月25日(土) 11:00-20:00。",
+      "venue": "中池袋公園",
+      "area": "豊島区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "blog_registration",
+          "url": "https://www.instagram.com/p/DSju4PKEUNW/?igsh=MW02NXNoY3hycjNhYQ%3D%3D",
+          "date": "2026 [P1]\n4/25",
+          "text": "「白鳥おどりin池袋」 4月25日(土) 11:00-20:00。\n・白鳥踊り保存会による生唄・生演奏(例年)。\n11:00-20:00 縁日(WACCA 1F)、グッズ・フード販売(中池袋公園)\n13:00-14:30 下駄づくりワークショップ(WACCA 4F)\n15:00-15:30 白鳥おどりトークショー\n16:00-16:30 白鳥おどり教室\n16:30-18:00 白鳥おどり(第1部・生演奏)\n18:30-20:00 白鳥おどり(第2部・生演奏)\n(4/25朝 時間追記) 出典: 東京盆踊りマップ http://minato-bon-odori.blogspot.com/2026/01/00p-toshima-q.html\n「白鳥おどりin池袋」 4月25日(土) 11:00-20:00。\n2026 [P1]\n4/25"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "c8d1c7332598e75c",
+      "song_name": "濱町音頭",
+      "event_name": "濱町音頭盆踊り大会",
+      "venue": "浜町公園",
+      "area": "中央区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "1c1785b3b30bfa65",
+      "song_name": "ソーラン節",
+      "event_name": "第2回田原de盆踊り",
+      "venue": "田原小学校",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public",
+        "known_song_context",
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "fallback_event",
+          "url": "https://drive.google.com/file/d/1VC-1M9-KplP2FQUT387YkMeu5olASeLM/view?usp=drive_link",
+          "date": "2025-09-27",
+          "text": "第2回田原de盆踊り\n2025 [F9]\n9/27。田原de盆踊り実行委員会「第2回田原de盆踊り」9月27日(土) 11:00-20:00。\n「第2部 盆踊り 17:00-20:00」 \n踊りの詳細時間不明。\n・昨年は ソーラン節、ハラハラ音頭、波乗りジョニー 他。\n＊雨天時 9/28開催。"
+        }
+      ],
+      "already_public": true,
+      "evidence_count": 1
+    },
+    {
+      "id": "ead5bf205222513a",
+      "song_name": "ハラハラ音頭",
+      "event_name": "第2回田原de盆踊り",
+      "venue": "田原小学校",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public",
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "fallback_event",
+          "url": "https://drive.google.com/file/d/1VC-1M9-KplP2FQUT387YkMeu5olASeLM/view?usp=drive_link",
+          "date": "2025-09-27",
+          "text": "第2回田原de盆踊り\n2025 [F9]\n9/27。田原de盆踊り実行委員会「第2回田原de盆踊り」9月27日(土) 11:00-20:00。\n「第2部 盆踊り 17:00-20:00」 \n踊りの詳細時間不明。\n・昨年は ソーラン節、ハラハラ音頭、波乗りジョニー 他。\n＊雨天時 9/28開催。"
+        }
+      ],
+      "already_public": true,
+      "evidence_count": 1
+    },
+    {
+      "id": "05ddf1ef1fec3b3f",
+      "song_name": "品川甚句",
+      "event_name": "第71回大井どんたく夏まつり 初日 盆踊り",
+      "venue": "大井町駅前中央通り",
+      "area": "品川区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "06e355266d4e7f0d",
+      "song_name": "品川音頭",
+      "event_name": "第71回大井どんたく夏まつり 初日 盆踊り",
+      "venue": "大井町駅前中央通り",
+      "area": "品川区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "f8a1f87543ea9491",
+      "song_name": "大井どんたく音頭",
+      "event_name": "第71回大井どんたく夏まつり 初日 盆踊り",
+      "venue": "大井町駅前中央通り",
+      "area": "品川区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "dbb6c62275aa60b7",
+      "song_name": "東京音頭",
+      "event_name": "第71回大井どんたく夏まつり 初日 盆踊り",
+      "venue": "大井町駅前中央通り",
+      "area": "品川区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "f9f130c527e575bd",
+      "song_name": "スカイツリー踊り",
+      "event_name": "西図子 盆踊りとおでんの宴",
+      "venue": "向島百花会館",
+      "area": "墨田区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "04c2a2d2cd23d8c8",
+      "song_name": "東京音頭",
+      "event_name": "西図子 盆踊りとおでんの宴",
+      "venue": "向島百花会館",
+      "area": "墨田区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "716fbecdf64c643e",
+      "song_name": "河内音頭",
+      "event_name": "西図子 盆踊りとおでんの宴",
+      "venue": "向島百花会館",
+      "area": "墨田区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "6580cc61be6a214b",
+      "song_name": "河内音頭",
+      "event_name": "すみだ錦糸町河内音頭大盆踊り",
+      "venue": "江東橋竪川親水公園",
+      "area": "墨田区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public",
+        "known_song_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/nyantokonyan/status/2063449536698454055",
+          "date": "2026-06-07T02:34:41+00:00",
+          "text": "にゃんとこ\n第44回すみだ錦糸町河内音頭大盆踊りのイラストをにゃんとこのぽんが担当しました🏮楽しい盆踊りが末長くできますようにと願いを込めて、錦糸町河内音頭で汗をかきかきわいわい踊る光景を頭に思い浮かべながら描きました。今年は7月29日(水)、30(木)開催、今から待ち遠しいですね🐈💨\n\n#錦糸町河内音頭 https://t.co/X5FJyBrTJx"
+        }
+      ],
+      "already_public": true,
+      "evidence_count": 1
+    },
+    {
+      "id": "7a7fb49d90eeab18",
+      "song_name": "すみだ輪おどり",
+      "event_name": "すみだ沖縄まつり",
+      "venue": "錦糸公園",
+      "area": "墨田区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public",
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "fallback_event",
+          "url": "https://so-matsuri.com/",
+          "date": "2026-05-09",
+          "text": "すみだ沖縄まつり\n2026 [G3]\n5/9 - 10。「すみだ沖縄まつり」 5月9日(土)-10日(日)。\n・9日(土) 15:30- 盆おどり 梅美会 関東大和太鼓(約1時間)。\n・10日(日) 15:00- すみだ輪おどり(盆踊り)(約1時間)。\n＊イベント全体は両日10時-19時に開催。沖縄伝統民謡、エイサー他多数の出演あり。"
+        }
+      ],
+      "already_public": true,
+      "evidence_count": 1
+    },
+    {
+      "id": "be2c089096923f8d",
+      "song_name": "郡上おどり",
+      "event_name": "郡上おどり in 青山 2025",
+      "venue": "秩父宮ラグビー場駐車場",
+      "area": "港区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "5294d4eb167b4f3c",
+      "song_name": "東京音頭",
+      "event_name": "第60回あらかわ青年大会 アリストック",
+      "venue": "あらかわ遊園アリスの広場",
+      "area": "荒川区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "b2342e7b465e95a8",
+      "song_name": "炭坑節",
+      "event_name": "第60回あらかわ青年大会 アリストック",
+      "venue": "あらかわ遊園アリスの広場",
+      "area": "荒川区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "6b7f364cb4e9e71d",
+      "song_name": "荒川音頭",
+      "event_name": "第60回あらかわ青年大会 アリストック",
+      "venue": "あらかわ遊園アリスの広場",
+      "area": "荒川区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    }
+  ]
+}
