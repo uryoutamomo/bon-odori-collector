@@ -26,6 +26,45 @@
     ]
   },
   {
+    "name": "赤坂夏おどり（旧 赤坂盆踊り）",
+    "venue": "赤坂サカス広場",
+    "area": "港区",
+    "date": null,
+    "songs": [
+      {
+        "name": "赤坂夏おどり",
+        "confidence": "hint",
+        "source_count": 1
+      }
+    ]
+  },
+  {
+    "name": "第42回大久保まつり パレード 百人町民民謡おどり",
+    "venue": "JR新大久保駅北側から東方向",
+    "area": "新宿区",
+    "date": "2025-10-13",
+    "songs": [
+      {
+        "name": "百人町民民謡おどり",
+        "confidence": "hint",
+        "source_count": 1
+      }
+    ]
+  },
+  {
+    "name": "第25回 四谷納涼踊り大会",
+    "venue": "四谷ひろばグラウンド（旧四谷第四小学校）",
+    "area": "新宿区",
+    "date": "2025-07-19",
+    "songs": [
+      {
+        "name": "四谷納涼踊り",
+        "confidence": "hint",
+        "source_count": 1
+      }
+    ]
+  },
+  {
     "name": "第2回田原de盆踊り",
     "venue": "田原小学校",
     "area": "台東区",
@@ -38,6 +77,19 @@
       },
       {
         "name": "ハラハラ音頭",
+        "confidence": "hint",
+        "source_count": 1
+      }
+    ]
+  },
+  {
+    "name": "第10回 すみだ輪おどり区民感謝デー",
+    "venue": "すみだ産業会館サンライズホール",
+    "area": "墨田区",
+    "date": "2025-01-11",
+    "songs": [
+      {
+        "name": "すみだ輪おどり",
         "confidence": "hint",
         "source_count": 1
       }

@@ -1,7 +1,7 @@
 {
   "generated_by": "build_event_song_candidates.py",
-  "count": 97,
-  "public_event_count": 16,
+  "count": 101,
+  "public_event_count": 20,
   "review_count": 81,
   "candidates": [
     {
@@ -2945,6 +2945,21 @@
       "evidence_count": 0
     },
     {
+      "id": "a68b9524fc8e474c",
+      "song_name": "すみだ輪おどり",
+      "event_name": "第10回 すみだ輪おどり区民感謝デー",
+      "venue": "すみだ産業会館サンライズホール",
+      "area": "墨田区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
       "id": "f9f130c527e575bd",
       "song_name": "スカイツリー踊り",
       "event_name": "西図子 盆踊りとおでんの宴",
@@ -3036,10 +3051,55 @@
       "evidence_count": 1
     },
     {
+      "id": "57cea9e9381dbc5c",
+      "song_name": "百人町民民謡おどり",
+      "event_name": "第42回大久保まつり パレード 百人町民民謡おどり",
+      "venue": "JR新大久保駅北側から東方向",
+      "area": "新宿区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "a1cffee175e5cf17",
+      "song_name": "四谷納涼踊り",
+      "event_name": "第25回 四谷納涼踊り大会",
+      "venue": "四谷ひろばグラウンド（旧四谷第四小学校）",
+      "area": "新宿区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
       "id": "be2c089096923f8d",
       "song_name": "郡上おどり",
       "event_name": "郡上おどり in 青山 2025",
       "venue": "秩父宮ラグビー場駐車場",
+      "area": "港区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "7235661fd9e4c84f",
+      "song_name": "赤坂夏おどり",
+      "event_name": "赤坂夏おどり（旧 赤坂盆踊り）",
+      "venue": "赤坂サカス広場",
       "area": "港区",
       "status": "公開済み",
       "confidence": "公開済み",
