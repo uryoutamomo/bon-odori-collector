@@ -1,32 +1,6 @@
 {
   "candidates": [
     {
-      "event_id": "37b8be04-e762-81c2-8885-d58cfb266716",
-      "event_name": "戸越宮前盆踊り",
-      "venues": [
-        "宮前小学校"
-      ],
-      "current_date": "2026-06-07",
-      "current_date_end": null,
-      "new_date": "2026-07-08",
-      "new_date_end": null,
-      "score": 14,
-      "reasons": [
-        "event_name_exact",
-        "extracted_event_name"
-      ],
-      "source": "x",
-      "account": "@yasuharu_artist",
-      "spoken_at": "2026-06-03T11:37:07+00:00",
-      "url": "https://x.com/yasuharu_artist/status/2062136493968347363",
-      "text": "「オリジナル曲でhappyをお届け♬ 」 https://t.co/bocNrwjThb #ふわっち\n\nライヴインフォ\n♬ 6/7(日)戸越宮前盆踊り14:40~/\n品川区戸越銀座近く　\n\n♬7/8(水) 池袋FIELD　\n\n♬ 過去ライヴ YouTubeにて公開中❗️",
-      "raw_date": "7/8",
-      "extracted_event_names": [
-        "戸越宮前盆踊り"
-      ],
-      "refresh_only": false
-    },
-    {
       "event_id": "3788be04-e762-8171-beaf-fbf4a04104bf",
       "event_name": "飛鳥山公園盆踊り会（有志サークル）",
       "venues": [
