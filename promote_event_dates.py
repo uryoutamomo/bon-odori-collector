@@ -191,6 +191,38 @@ def score_match(event, voice_text, extracted_names, source=None):
     return score, reasons
 
 
+def date_context_matches(event, voice_text, date_info, extracted_names, source=None):
+    if source == "blog_row":
+        return True
+
+    raw = date_info.get("raw") or ""
+    if not raw:
+        return True
+
+    lines = (voice_text or "").splitlines()
+    raw_line_indexes = [idx for idx, line in enumerate(lines) if raw in line]
+    if not raw_line_indexes:
+        return True
+
+    tokens = [event.get("name") or ""]
+    tokens.extend(event.get("venues") or [])
+    tokens.extend(
+        name for name in (extracted_names or [])
+        if name and not is_generic_event_name(name)
+    )
+    token_norms = [norm(token) for token in tokens if norm(token)]
+    if not token_norms:
+        return False
+
+    for idx in raw_line_indexes:
+        start = max(0, idx - 1)
+        end = min(len(lines), idx + 2)
+        window_norm = norm("\n".join(lines[start:end]))
+        if any(token in window_norm or window_norm in token for token in token_norms):
+            return True
+    return False
+
+
 def load_source_items():
     items = []
     if VOICES.exists():
@@ -266,6 +298,8 @@ def build_candidates(events, voices, target_year=TARGET_YEAR):
             if score < 10:
                 continue
             for date_info in dates:
+                if not date_context_matches(event, text, date_info, names, source=voice.get("source")):
+                    continue
                 current_start = event.get("date", {}).get("start")
                 current_end = event.get("date", {}).get("end")
                 start = date_info["start"]

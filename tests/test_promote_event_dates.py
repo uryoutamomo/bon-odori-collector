@@ -115,3 +115,36 @@ def test_generic_extracted_bon_odori_name_does_not_match_specific_event():
     ]
 
     assert build_candidates(events, voices) == []
+
+
+def test_non_structured_source_requires_date_near_event_context():
+    events = [
+        {
+            "id": "event-1",
+            "name": "戸越宮前盆踊り",
+            "venues": ["宮前小学校"],
+            "date": {},
+            "status": "未確認",
+            "detail": "",
+            "url": "",
+        }
+    ]
+    voices = [
+        {
+            "source": "x",
+            "account": "@yasuharu_artist",
+            "date": "2026-06-03T11:37:07+00:00",
+            "text": (
+                "ライヴインフォ\n"
+                "♬ 6/7(日)戸越宮前盆踊り14:40~/\n"
+                "品川区戸越銀座近く\n\n"
+                "♬7/8(水) 池袋FIELD"
+            ),
+            "url": "https://example.test/x",
+        }
+    ]
+
+    candidates = build_candidates(events, voices)
+
+    assert len(candidates) == 1
+    assert candidates[0]["new_date"] == "2026-06-07"
