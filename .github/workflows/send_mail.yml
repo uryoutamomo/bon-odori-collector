@@ -1,6 +1,9 @@
 name: bon-odori-send-mail
 
 on:
+  push:
+    paths:
+      - 'data/pending_mail.json'
   schedule:
     # GitHub schedule は SLA 無し（遅延・ドロップあり）。1日3回試みて冪等に動く設計。
     # pending_mail.json を送信後に削除するので、複数回起動しても二重送信しない。
