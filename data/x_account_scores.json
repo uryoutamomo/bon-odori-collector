@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12T17:25:24.291582+00:00",
+  "generated_at": "2026-06-12T17:43:43.882106+00:00",
   "accounts": {
     "5khfya5pjksggov": {
       "handle": "@5khfya5pjksggov",
@@ -1074,45 +1074,6 @@
         "文脈確認型"
       ]
     },
-    "takasho06130613": {
-      "handle": "@takasho06130613",
-      "posts_seen": 7,
-      "valuable_posts": 5,
-      "future_schedule_posts": 0,
-      "noise_posts": 0,
-      "value_points": 59.0,
-      "last_seen": "2026-06-12T16:08:11+00:00",
-      "top_reasons": {
-        "date_time": 4,
-        "context": 6,
-        "bon": 5,
-        "venue": 1,
-        "experience": 1,
-        "link": 1
-      },
-      "recent_posts_seen": 7,
-      "recent_valuable_posts": 5,
-      "recent_future_schedule_posts": 0,
-      "recent_noise_posts": 0,
-      "recent_value_points": 59.0,
-      "lifetime_score": 10.429,
-      "recent_score": 10.429,
-      "recent_days": 30,
-      "quality_score": 10.429,
-      "score": 10.429,
-      "value_ratio": 0.714,
-      "recent_value_ratio": 0.714,
-      "status": "trusted",
-      "confidence": "medium",
-      "usefulness_rank": "A",
-      "usefulness_rank_number": 4,
-      "usefulness_score": 88.0,
-      "role_tags": [
-        "裏取り型",
-        "参加レポ型",
-        "地域/会場型"
-      ]
-    },
     "adfshunsuke2112": {
       "handle": "@adfshunsuke2112",
       "posts_seen": 7,
@@ -1225,6 +1186,45 @@
       "usefulness_score": 87.4,
       "role_tags": [
         "発見型",
+        "裏取り型",
+        "参加レポ型",
+        "地域/会場型"
+      ]
+    },
+    "takasho06130613": {
+      "handle": "@takasho06130613",
+      "posts_seen": 8,
+      "valuable_posts": 5,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 62.0,
+      "last_seen": "2026-06-12T17:38:43+00:00",
+      "top_reasons": {
+        "context": 7,
+        "date_time": 4,
+        "bon": 5,
+        "venue": 1,
+        "experience": 1,
+        "link": 1
+      },
+      "recent_posts_seen": 8,
+      "recent_valuable_posts": 5,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 62.0,
+      "lifetime_score": 9.75,
+      "recent_score": 9.75,
+      "recent_days": 30,
+      "quality_score": 9.75,
+      "score": 9.75,
+      "value_ratio": 0.625,
+      "recent_value_ratio": 0.625,
+      "status": "trusted",
+      "confidence": "medium",
+      "usefulness_rank": "A",
+      "usefulness_rank_number": 4,
+      "usefulness_score": 87.4,
+      "role_tags": [
         "裏取り型",
         "参加レポ型",
         "地域/会場型"
@@ -11943,6 +11943,42 @@
       "noise_posts": 0,
       "value_points": 11.0,
       "last_seen": "2026-06-06T15:10:51+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1,
+        "experience": 1,
+        "link": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 11.0,
+      "lifetime_score": 11.4,
+      "recent_score": 11.4,
+      "recent_days": 30,
+      "quality_score": 11.4,
+      "score": 11.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 44.6,
+      "role_tags": [
+        "裏取り型",
+        "参加レポ型"
+      ]
+    },
+    "onaka_yowazo": {
+      "handle": "@onaka_yowazo",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 11.0,
+      "last_seen": "2026-06-12T17:26:32+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1,
