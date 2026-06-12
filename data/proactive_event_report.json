@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11T18:32:16.557923+00:00",
+  "generated_at": "2026-06-12T14:32:51.104269+00:00",
   "year": 2026,
   "items": [
     {
@@ -112,8 +112,15 @@
       "months": [
         6
       ],
-      "status": "unconfirmed",
-      "evidence": []
+      "status": "confirmed",
+      "evidence": [
+        {
+          "source": "x",
+          "title": "勝手に盆踊り紹介part2\n明日から三日間開催の「山王音頭と民踊大会」\n\nオフィス街を埋め尽くす屋台と音頭の嵐。圧巻の大会らしい！\n\n18時から開始で、場所は溜",
+          "text": "勝手に盆踊り紹介part2\n明日から三日間開催の「山王音頭と民踊大会」\n\nオフィス街を埋め尽くす屋台と音頭の嵐。圧巻の大会らしい！\n\n18時から開始で、場所は溜池山王駅すぐの山王パークタワー公開空地\n\nぜひみなさん一緒に踊りましょう！！！！！ https://t.co/t40bBrm9Qj",
+          "url": "https://x.com/hiro_thinker/status/2065411749516562776"
+        }
+      ]
     },
     {
       "venue": "新宿住友ビル三角広場",
@@ -134,18 +141,18 @@
       "evidence": [
         {
           "source": "collected",
-          "title": "プレスリリース：［HARUMI FLAGの夏の風物詩］東京湾の夜景を背に踊る海辺の盆踊り、過去最大48店舗の縁日エリアが集結する「晴海ふ頭公園盆踊り大会2026」7/11・12開催（PR TIMES） - 毎日新聞",
-          "text": "プレスリリース：［HARUMI FLAGの夏の風物詩］東京湾の夜景を背に踊る海辺の盆踊り、過去最大48店舗の縁日エリアが集結する「晴海ふ頭公園盆踊り大会2026」7/11・12開催（PR TIMES） - 毎日新聞",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1Dbk93aUcyeFEwZ3lCZjJodEpfRTBHVnJwVWoyMmhZbnMyVmltWDE2Smc5ZlNPZWpBZE5DQjdkbGlMRTg0YzBjQzU1dWMyaVozQWFWZmhJQ3BUVjQ5d0ZkaGJ5OTVnT2tm?oc=5"
-        },
-        {
-          "source": "collected",
           "title": "【HARUMI FLAGの夏の風物詩】東京湾の夜景を背に踊る海辺の盆踊り、過去最大48店舗の縁日エリアが集結する「晴海ふ頭公園盆踊り大会2026」7/11・12開催 - PR TIMES",
           "text": "【HARUMI FLAGの夏の風物詩】東京湾の夜景を背に踊る海辺の盆踊り、過去最大48店舗の縁日エリアが集結する「晴海ふ頭公園盆踊り大会2026」7/11・12開催 - PR TIMES",
           "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1nU3BQQnk0S0FUV3V0b01pWElKRG5fYjcxaDZvYVFjbWdFQ3ZZQ29QZTA2dWlxQmZQeHp1OEtNdVhnZHFaQXdpZUJnN19KdE5NQUFWemRYTHU1ajZQVmFRZFE0NTdtNWY0ZVE?oc=5"
         },
         {
-          "source": "collected",
+          "source": "news_proactive",
+          "title": "【入場無料】レインボーブリッジの夜景×潮風の異次元シチュエーション！愛犬の整体ブースも降臨する過去最大48屋台の『晴海ふ頭公園盆踊り大会2026』が7月11日（土）・12日（日）に開催決定！「ダンシング・ヒーロー」などガチ生演奏の全10曲 | チバテレ＋プラス - 千葉テレビ放送株式会社",
+          "text": "【入場無料】レインボーブリッジの夜景×潮風の異次元シチュエーション！愛犬の整体ブースも降臨する過去最大48屋台の『晴海ふ頭公園盆踊り大会2026』が7月11日（土）・12日（日）に開催決定！「ダンシング・ヒーロー」などガチ生演奏の全10曲 | チバテレ＋プラス - 千葉テレビ放送株式会社",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5mMDB4cld1V2t0VWxDNVhDcU9fVlUtOERxYTI3QmQ1eHEycnNwMnZfS3A5T3dheFNGRFAtNHoxYXdTTlpFSEs2TlpMQW5PSXVzampia2tXRjdZNXBiTXFuOXU1T1TSAWRBVV95cUxOZjAweHJXdVdrdFVsQzVYQ3FPX1ZVLThEcWEyN0JkNXhxMnJzcDJ2X0twOU93YXhTRkRQLTR6MWF3U05aRUhLNk5aTEFuT0l1c2pqYmtrV0Y3WTVwYk1xbjl1NU9U?oc=5"
+        },
+        {
+          "source": "news_proactive",
           "title": "【入場無料】レインボーブリッジの夜景×潮風の異次元シチュエーション！愛犬の整体ブースも降臨する過去最大48屋台の『晴海ふ頭公園盆踊り大会2026』が7月11日（土）・12日（日）に開催決定！「ダンシング・ヒーロー」などガチ生演奏の全10曲 - ラブすぽ",
           "text": "【入場無料】レインボーブリッジの夜景×潮風の異次元シチュエーション！愛犬の整体ブースも降臨する過去最大48屋台の『晴海ふ頭公園盆踊り大会2026』が7月11日（土）・12日（日）に開催決定！「ダンシング・ヒーロー」などガチ生演奏の全10曲 - ラブすぽ",
           "url": "https://news.google.com/rss/articles/CBMiwgJBVV95cUxOTHpNZFEwbUsxdGtTeUppQnN2eFdnU3VuUnhEU3FfT25Wb2cwZUxReElLMXRrSzZzMHZkTEJtYXUwQjBMYVMwV0lXWTZpRlJhVlpxQVRsM2thZ3huNkdtQ3RpazJaUmFvUGhDYWxGQ2FsaUNoRlN6ODBJLTBxUm02RC1BMy1aWFlZcWpyajVLc1lNRGM3RXoxcjB3TFpYaVRZTW9tYW1RdC1SSTlTRm5yVGpNeTBCa2V6WmxkWk5pZnZkMDBoNWhEYVkzNk5WX2ZBSGtXeTBFLURGUXNMQWRfWVhEN2Q3WUxtWXpNcW5RS1FLTU95OVJwWF9kMzhQdDRrTHpoQndHdXZ5dm9tRHhrSUVTMC0yTlpHdjc2VWhldi1yQ0VSWWk2MXR4TmhCWnNHX08xMlNWT1FhaGVqNVZ3RTFn?oc=5"
