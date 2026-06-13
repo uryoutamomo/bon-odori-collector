@@ -21,7 +21,13 @@
       {
         "name": "郡上おどり",
         "confidence": "confirmed",
-        "source_count": 2
+        "source_count": 2,
+        "probability": 30,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       }
     ]
   },
@@ -47,7 +53,13 @@
       {
         "name": "百人町民民謡おどり",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 30,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       }
     ]
   },
@@ -60,7 +72,13 @@
       {
         "name": "四谷納涼踊り",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 30,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       }
     ]
   },
@@ -91,7 +109,13 @@
       {
         "name": "すみだ輪おどり",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 30,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       }
     ]
   },
@@ -102,19 +126,37 @@
     "date": "2026-03-01",
     "songs": [
       {
+        "name": "スカイツリー踊り",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 48,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
         "name": "東京音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 48,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "河内音頭",
         "confidence": "hint",
-        "source_count": 1
-      },
-      {
-        "name": "スカイツリー踊り",
-        "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 48,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       }
     ]
   },
@@ -127,7 +169,13 @@
       {
         "name": "河内音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 48,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       }
     ]
   },
@@ -140,7 +188,13 @@
       {
         "name": "すみだ輪おどり",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 48,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       }
     ]
   },
@@ -151,24 +205,833 @@
     "date": "2025-08-23",
     "songs": [
       {
-        "name": "東京音頭",
+        "name": "品川甚句",
         "confidence": "hint",
-        "source_count": 1
-      },
-      {
-        "name": "大井どんたく音頭",
-        "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 30,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "品川音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 30,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
-        "name": "品川甚句",
+        "name": "大井どんたく音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 30,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 30,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      }
+    ]
+  },
+  {
+    "name": "Min-Yoi's盆踊り",
+    "venue": "日本民謡会館",
+    "area": "品川区",
+    "date": "2026-05-31",
+    "songs": [
+      {
+        "name": "Beat It",
+        "confidence": "confirmed",
+        "source_count": 2,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 2,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=-USPVIqmUKQ",
+          "https://www.youtube.com/watch?v=aUo0c79bPhI"
+        ]
+      },
+      {
+        "name": "おしまこ輪踊り",
+        "confidence": "confirmed",
+        "source_count": 2,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 2,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=6ZCsHqoCz8Y",
+          "https://www.youtube.com/watch?v=OsHisntBZLs"
+        ]
+      },
+      {
+        "name": "おてもやん",
+        "confidence": "confirmed",
+        "source_count": 42,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 42,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=-RP0e0LUCZk",
+          "https://www.youtube.com/watch?v=-USPVIqmUKQ",
+          "https://www.youtube.com/watch?v=0cz4BgmIJC4",
+          "https://www.youtube.com/watch?v=0eTmwqomFyA",
+          "https://www.youtube.com/watch?v=3WDSTaX0-cw"
+        ]
+      },
+      {
+        "name": "さくら音頭",
+        "confidence": "confirmed",
+        "source_count": 3,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 3,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=Ilz6hDp8QbA",
+          "https://www.youtube.com/watch?v=fwX0qtq6HQY",
+          "https://www.youtube.com/watch?v=kxuwDg29dL8"
+        ]
+      },
+      {
+        "name": "にっぽんチャチャチャ",
+        "confidence": "confirmed",
+        "source_count": 42,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 42,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=-RP0e0LUCZk",
+          "https://www.youtube.com/watch?v=-USPVIqmUKQ",
+          "https://www.youtube.com/watch?v=0cz4BgmIJC4",
+          "https://www.youtube.com/watch?v=0eTmwqomFyA",
+          "https://www.youtube.com/watch?v=3WDSTaX0-cw"
+        ]
+      },
+      {
+        "name": "よこはまアラメヤ音頭",
+        "confidence": "confirmed",
+        "source_count": 2,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 2,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=oxZtUYXg06w",
+          "https://www.youtube.com/watch?v=rNHkhQxMoVM"
+        ]
+      },
+      {
+        "name": "りんご節",
+        "confidence": "confirmed",
+        "source_count": 1,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=3WDSTaX0-cw"
+        ]
+      },
+      {
+        "name": "デカンショ節",
+        "confidence": "confirmed",
+        "source_count": 42,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 42,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=-RP0e0LUCZk",
+          "https://www.youtube.com/watch?v=-USPVIqmUKQ",
+          "https://www.youtube.com/watch?v=0cz4BgmIJC4",
+          "https://www.youtube.com/watch?v=0eTmwqomFyA",
+          "https://www.youtube.com/watch?v=3WDSTaX0-cw"
+        ]
+      },
+      {
+        "name": "下北小唄",
+        "confidence": "confirmed",
+        "source_count": 2,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 2,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=UmULl-H4adI",
+          "https://www.youtube.com/watch?v=sqfQHtxJ4NU"
+        ]
+      },
+      {
+        "name": "佐渡おけさ",
+        "confidence": "confirmed",
+        "source_count": 3,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 3,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=81ECma43tG8",
+          "https://www.youtube.com/watch?v=PI314qyL6Ds",
+          "https://www.youtube.com/watch?v=gC6JYrumFII"
+        ]
+      },
+      {
+        "name": "八戸小唄",
+        "confidence": "confirmed",
+        "source_count": 1,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=eUdaKOAjGEo"
+        ]
+      },
+      {
+        "name": "堀江盆歌",
+        "confidence": "confirmed",
+        "source_count": 2,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 2,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=f3rafNm0rZE",
+          "https://www.youtube.com/watch?v=vhUEHrUbadI"
+        ]
+      },
+      {
+        "name": "子供盆踊り唄",
+        "confidence": "confirmed",
+        "source_count": 42,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 42,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=-RP0e0LUCZk",
+          "https://www.youtube.com/watch?v=-USPVIqmUKQ",
+          "https://www.youtube.com/watch?v=0cz4BgmIJC4",
+          "https://www.youtube.com/watch?v=0eTmwqomFyA",
+          "https://www.youtube.com/watch?v=3WDSTaX0-cw"
+        ]
+      },
+      {
+        "name": "平和音頭",
+        "confidence": "confirmed",
+        "source_count": 42,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 42,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=-RP0e0LUCZk",
+          "https://www.youtube.com/watch?v=-USPVIqmUKQ",
+          "https://www.youtube.com/watch?v=0cz4BgmIJC4",
+          "https://www.youtube.com/watch?v=0eTmwqomFyA",
+          "https://www.youtube.com/watch?v=3WDSTaX0-cw"
+        ]
+      },
+      {
+        "name": "村崎野音頭",
+        "confidence": "confirmed",
+        "source_count": 2,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 2,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=XUheysv-xew",
+          "https://www.youtube.com/watch?v=yOPU_J0TRdk"
+        ]
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "confirmed",
+        "source_count": 1,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=UoiBfNfZswE"
+        ]
+      },
+      {
+        "name": "江州音頭",
+        "confidence": "confirmed",
+        "source_count": 14,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 14,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=-46emh0_BSA",
+          "https://www.youtube.com/watch?v=3Jyp2LG1NJ0",
+          "https://www.youtube.com/watch?v=3renuAXwTpE",
+          "https://www.youtube.com/watch?v=IDvJLis4DGc",
+          "https://www.youtube.com/watch?v=IiWTkaAhMx8"
+        ]
+      },
+      {
+        "name": "河内音頭",
+        "confidence": "confirmed",
+        "source_count": 3,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 3,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=Uohu7rIJ6jk",
+          "https://www.youtube.com/watch?v=ZzCWuYizuqU",
+          "https://www.youtube.com/watch?v=gyyK6CeR2ls"
+        ]
+      },
+      {
+        "name": "牛深ハイヤ",
+        "confidence": "confirmed",
+        "source_count": 42,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 42,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=-RP0e0LUCZk",
+          "https://www.youtube.com/watch?v=-USPVIqmUKQ",
+          "https://www.youtube.com/watch?v=0cz4BgmIJC4",
+          "https://www.youtube.com/watch?v=0eTmwqomFyA",
+          "https://www.youtube.com/watch?v=3WDSTaX0-cw"
+        ]
+      },
+      {
+        "name": "真室川音頭",
+        "confidence": "confirmed",
+        "source_count": 1,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=c9uotLXGYLQ"
+        ]
+      },
+      {
+        "name": "秋田音頭",
+        "confidence": "confirmed",
+        "source_count": 54,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 54,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=-46emh0_BSA",
+          "https://www.youtube.com/watch?v=-RP0e0LUCZk",
+          "https://www.youtube.com/watch?v=-USPVIqmUKQ",
+          "https://www.youtube.com/watch?v=0cz4BgmIJC4",
+          "https://www.youtube.com/watch?v=0eTmwqomFyA"
+        ]
+      },
+      {
+        "name": "紀州白浜音頭",
+        "confidence": "confirmed",
+        "source_count": 2,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 2,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=iDSSkftykFI",
+          "https://www.youtube.com/watch?v=tlWdGx5rLFA"
+        ]
+      },
+      {
+        "name": "花笠音頭",
+        "confidence": "confirmed",
+        "source_count": 1,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=7TkSF51SEs0"
+        ]
+      },
+      {
+        "name": "郡上節春駒",
+        "confidence": "confirmed",
+        "source_count": 1,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=wYE6MCa9XxQ"
+        ]
+      },
+      {
+        "name": "隠岐のしげさ節",
+        "confidence": "confirmed",
+        "source_count": 2,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 2,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=Q4foTQKMifc",
+          "https://www.youtube.com/watch?v=TIHzTtK9a1c"
+        ]
+      },
+      {
+        "name": "鯵ヶ沢甚句",
+        "confidence": "confirmed",
+        "source_count": 2,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 2,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=0pVYOUkQKU0",
+          "https://www.youtube.com/watch?v=4FeWN7pbr3w"
+        ]
+      },
+      {
+        "name": "麦わら音頭",
+        "confidence": "confirmed",
+        "source_count": 2,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 2,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=5wy5lHoqj9w",
+          "https://www.youtube.com/watch?v=I9_Fcsn5aJ0"
+        ]
+      },
+      {
+        "name": "黒石甚句",
+        "confidence": "confirmed",
+        "source_count": 2,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 2,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=ROUIXWrtjj8",
+          "https://www.youtube.com/watch?v=vPE-jc6d-BU"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "飛鳥山公園盆踊り会（有志サークル）",
+    "venue": "飛鳥山公園",
+    "area": "北区",
+    "date": null,
+    "songs": [
+      {
+        "name": "たいとう音頭",
+        "confidence": "confirmed",
+        "source_count": 27,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 27,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=12_m0E9kv3Y",
+          "https://www.youtube.com/watch?v=3jKTtdLCnI8",
+          "https://www.youtube.com/watch?v=3xiWUcepU08",
+          "https://www.youtube.com/watch?v=4QtZ5d3ynZk",
+          "https://www.youtube.com/watch?v=7ALmh64gFwA"
+        ]
+      },
+      {
+        "name": "ふるさと北区",
+        "confidence": "confirmed",
+        "source_count": 23,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 23,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=12_m0E9kv3Y",
+          "https://www.youtube.com/watch?v=3xiWUcepU08",
+          "https://www.youtube.com/watch?v=4QtZ5d3ynZk",
+          "https://www.youtube.com/watch?v=7ALmh64gFwA",
+          "https://www.youtube.com/watch?v=9CVl3g-jcYo"
+        ]
+      },
+      {
+        "name": "ゆかた音頭",
+        "confidence": "confirmed",
+        "source_count": 1,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=VW58EPXJmg4"
+        ]
+      },
+      {
+        "name": "らんまん踊り",
+        "confidence": "confirmed",
+        "source_count": 1,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=NxTvnbZME0M"
+        ]
+      },
+      {
+        "name": "佐渡の恋唄",
+        "confidence": "confirmed",
+        "source_count": 23,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 23,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=12_m0E9kv3Y",
+          "https://www.youtube.com/watch?v=3xiWUcepU08",
+          "https://www.youtube.com/watch?v=4QtZ5d3ynZk",
+          "https://www.youtube.com/watch?v=7ALmh64gFwA",
+          "https://www.youtube.com/watch?v=9CVl3g-jcYo"
+        ]
+      },
+      {
+        "name": "大東京音頭",
+        "confidence": "confirmed",
+        "source_count": 1,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=OsS7wbeRIh0"
+        ]
+      },
+      {
+        "name": "大江戸東京音頭",
+        "confidence": "confirmed",
+        "source_count": 1,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=9CVl3g-jcYo"
+        ]
+      },
+      {
+        "name": "少年八木節",
+        "confidence": "confirmed",
+        "source_count": 1,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=M0bWjUtfUBs"
+        ]
+      },
+      {
+        "name": "恋をするなら",
+        "confidence": "confirmed",
+        "source_count": 23,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 23,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=12_m0E9kv3Y",
+          "https://www.youtube.com/watch?v=3xiWUcepU08",
+          "https://www.youtube.com/watch?v=4QtZ5d3ynZk",
+          "https://www.youtube.com/watch?v=7ALmh64gFwA",
+          "https://www.youtube.com/watch?v=9CVl3g-jcYo"
+        ]
+      },
+      {
+        "name": "文京音頭",
+        "confidence": "confirmed",
+        "source_count": 27,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 27,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=12_m0E9kv3Y",
+          "https://www.youtube.com/watch?v=3jKTtdLCnI8",
+          "https://www.youtube.com/watch?v=3xiWUcepU08",
+          "https://www.youtube.com/watch?v=4QtZ5d3ynZk",
+          "https://www.youtube.com/watch?v=7ALmh64gFwA"
+        ]
+      },
+      {
+        "name": "東京北都音頭",
+        "confidence": "confirmed",
+        "source_count": 23,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 23,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=12_m0E9kv3Y",
+          "https://www.youtube.com/watch?v=3xiWUcepU08",
+          "https://www.youtube.com/watch?v=4QtZ5d3ynZk",
+          "https://www.youtube.com/watch?v=7ALmh64gFwA",
+          "https://www.youtube.com/watch?v=9CVl3g-jcYo"
+        ]
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "confirmed",
+        "source_count": 27,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 27,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=12_m0E9kv3Y",
+          "https://www.youtube.com/watch?v=3jKTtdLCnI8",
+          "https://www.youtube.com/watch?v=3xiWUcepU08",
+          "https://www.youtube.com/watch?v=4QtZ5d3ynZk",
+          "https://www.youtube.com/watch?v=7ALmh64gFwA"
+        ]
+      },
+      {
+        "name": "東北音頭",
+        "confidence": "confirmed",
+        "source_count": 1,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=tN5cocxKGmw"
+        ]
+      },
+      {
+        "name": "東西南北音頭",
+        "confidence": "confirmed",
+        "source_count": 1,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=yBZ1rXA6LRo"
+        ]
+      },
+      {
+        "name": "板橋音頭",
+        "confidence": "confirmed",
+        "source_count": 27,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 27,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=12_m0E9kv3Y",
+          "https://www.youtube.com/watch?v=3jKTtdLCnI8",
+          "https://www.youtube.com/watch?v=3xiWUcepU08",
+          "https://www.youtube.com/watch?v=4QtZ5d3ynZk",
+          "https://www.youtube.com/watch?v=7ALmh64gFwA"
+        ]
+      },
+      {
+        "name": "王子小唄",
+        "confidence": "confirmed",
+        "source_count": 27,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 27,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=12_m0E9kv3Y",
+          "https://www.youtube.com/watch?v=3jKTtdLCnI8",
+          "https://www.youtube.com/watch?v=3xiWUcepU08",
+          "https://www.youtube.com/watch?v=4QtZ5d3ynZk",
+          "https://www.youtube.com/watch?v=7ALmh64gFwA"
+        ]
+      },
+      {
+        "name": "相馬盆唄",
+        "confidence": "confirmed",
+        "source_count": 27,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 27,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=12_m0E9kv3Y",
+          "https://www.youtube.com/watch?v=3jKTtdLCnI8",
+          "https://www.youtube.com/watch?v=3xiWUcepU08",
+          "https://www.youtube.com/watch?v=4QtZ5d3ynZk",
+          "https://www.youtube.com/watch?v=7ALmh64gFwA"
+        ]
+      },
+      {
+        "name": "花火音頭",
+        "confidence": "confirmed",
+        "source_count": 1,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=JX5otrjUER4"
+        ]
+      },
+      {
+        "name": "荒川音頭",
+        "confidence": "confirmed",
+        "source_count": 27,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 27,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=12_m0E9kv3Y",
+          "https://www.youtube.com/watch?v=3jKTtdLCnI8",
+          "https://www.youtube.com/watch?v=3xiWUcepU08",
+          "https://www.youtube.com/watch?v=4QtZ5d3ynZk",
+          "https://www.youtube.com/watch?v=7ALmh64gFwA"
+        ]
+      },
+      {
+        "name": "飛鳥山音頭",
+        "confidence": "confirmed",
+        "source_count": 23,
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "evidence_count": 23,
+        "speaker_count": 1,
+        "setlist_complete": true,
+        "evidence_urls": [
+          "https://www.youtube.com/watch?v=12_m0E9kv3Y",
+          "https://www.youtube.com/watch?v=3xiWUcepU08",
+          "https://www.youtube.com/watch?v=4QtZ5d3ynZk",
+          "https://www.youtube.com/watch?v=7ALmh64gFwA",
+          "https://www.youtube.com/watch?v=9CVl3g-jcYo"
+        ]
       }
     ]
   },
@@ -181,17 +1044,35 @@
       {
         "name": "東京音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 48,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "炭坑節",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 48,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "荒川音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 48,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       }
     ]
   }
