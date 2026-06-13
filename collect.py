@@ -1749,6 +1749,49 @@ def _save_event_evidence_state(state):
         json.dump(state, f, ensure_ascii=False, indent=2)
 
 
+def _advance_event_evidence_state(state, days, note):
+    start_value = state.get("covered_until") or state.get("window_end")
+    if not start_value:
+        return {}
+    start = datetime.fromisoformat(start_value.replace("Z", "+00:00"))
+    if start.tzinfo is None:
+        start = start.replace(tzinfo=timezone.utc)
+    end = start + timedelta(days=days)
+    now = datetime.now(timezone.utc).isoformat()
+    history = list(state.get("window_history") or [])
+    history.append({
+        "window_start": state.get("window_start"),
+        "window_end": state.get("window_end"),
+        "covered_until": state.get("covered_until"),
+        "completed_at": state.get("completed_at"),
+        "reviewed_at": now,
+        "review_note": note,
+        "pages_completed": state.get("pages_completed", 0),
+        "tweets_scanned": state.get("tweets_scanned", 0),
+        "evidence_detected": state.get("evidence_detected", 0),
+    })
+    next_state = {
+        **state,
+        "status": "in_progress",
+        "window_start": start.isoformat(),
+        "window_end": end.isoformat(),
+        "batch_index": 0,
+        "batch_cursors": {},
+        "completed_batches": [],
+        "pages_completed": 0,
+        "tweets_scanned": 0,
+        "evidence_detected": 0,
+        "pending_evidence": [],
+        "started_at": now,
+        "updated_at": now,
+        "window_history": history,
+        "previous_covered_until": state.get("covered_until") or state.get("window_end"),
+    }
+    for key in ("completed_at", "covered_until", "pending_cleared_at", "last_error"):
+        next_state.pop(key, None)
+    return next_state
+
+
 def _clear_pending_event_evidence():
     state = _load_event_evidence_state()
     if state.get("pending_evidence"):
@@ -1814,9 +1857,26 @@ def collect_event_evidence_history():
             "同じ2週間を新コホートで再開始"
         )
         state = {}
-    if state.get("status") == "awaiting_review" and evidence_cfg.get("pilot_only", True):
-        print("[evidence] 初回2週間パイロット完了済み。評価待ちのため追加収集を停止")
-        return []
+    if state.get("status") == "awaiting_review":
+        if evidence_cfg.get("pilot_only", True):
+            print("[evidence] 初回2週間パイロット完了済み。評価待ちのため追加収集を停止")
+            return []
+        if state.get("pending_evidence"):
+            print("[evidence] 未処理の断片が残っているため、次窓へ進まず停止")
+            return []
+        state = _advance_event_evidence_state(
+            state,
+            days=int(evidence_cfg.get("initial_window_days", 14)),
+            note="auto-advance continuous event evidence window",
+        )
+        if not state:
+            print("[evidence] 次窓への自動更新に失敗したため停止")
+            return []
+        _save_event_evidence_state(state)
+        print(
+            f"[evidence] 継続収集: 次窓へ自動更新 "
+            f"{state['window_start']} - {state['window_end']}"
+        )
 
     if not state:
         if not handles:

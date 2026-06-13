@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12T17:43:43.882106+00:00",
+  "generated_at": "2026-06-13T02:13:44.716631+00:00",
   "accounts": {
     "5khfya5pjksggov": {
       "handle": "@5khfya5pjksggov",
@@ -335,7 +335,7 @@
       "valuable_posts": 11,
       "future_schedule_posts": 7,
       "noise_posts": 0,
-      "value_points": 223.0,
+      "value_points": 226.0,
       "last_seen": "2026-06-11T06:23:07+00:00",
       "top_reasons": {
         "future_schedule": 7,
@@ -344,19 +344,19 @@
         "date_time": 11,
         "link": 10,
         "venue": 4,
-        "experience": 3,
+        "experience": 4,
         "schedule_like": 1
       },
       "recent_posts_seen": 13,
       "recent_valuable_posts": 11,
       "recent_future_schedule_posts": 7,
       "recent_noise_posts": 0,
-      "recent_value_points": 223.0,
-      "lifetime_score": 21.154,
-      "recent_score": 21.154,
+      "recent_value_points": 226.0,
+      "lifetime_score": 21.385,
+      "recent_score": 21.385,
       "recent_days": 30,
-      "quality_score": 21.154,
-      "score": 21.154,
+      "quality_score": 21.385,
+      "score": 21.385,
       "value_ratio": 0.846,
       "recent_value_ratio": 0.846,
       "status": "trusted",
@@ -866,6 +866,47 @@
         "裏取り型"
       ]
     },
+    "odori2024minato": {
+      "handle": "@odori2024minato",
+      "posts_seen": 6,
+      "valuable_posts": 6,
+      "future_schedule_posts": 1,
+      "noise_posts": 0,
+      "value_points": 68.0,
+      "last_seen": "2026-06-11T12:56:00+00:00",
+      "top_reasons": {
+        "context": 6,
+        "date_time": 2,
+        "experience": 2,
+        "link": 3,
+        "future_schedule": 1,
+        "bon": 4,
+        "venue": 2
+      },
+      "recent_posts_seen": 3,
+      "recent_valuable_posts": 3,
+      "recent_future_schedule_posts": 1,
+      "recent_noise_posts": 0,
+      "recent_value_points": 36.0,
+      "lifetime_score": 13.733,
+      "recent_score": 13.2,
+      "recent_days": 30,
+      "quality_score": 13.626,
+      "score": 13.626,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "trusted",
+      "confidence": "medium",
+      "usefulness_rank": "A",
+      "usefulness_rank_number": 4,
+      "usefulness_score": 89.5,
+      "role_tags": [
+        "発見型",
+        "裏取り型",
+        "参加レポ型",
+        "地域/会場型"
+      ]
+    },
     "kuma_bot999": {
       "handle": "@kuma_bot999",
       "posts_seen": 8,
@@ -967,45 +1008,6 @@
       "usefulness_score": 89.1,
       "role_tags": [
         "裏取り型"
-      ]
-    },
-    "odori2024minato": {
-      "handle": "@odori2024minato",
-      "posts_seen": 6,
-      "valuable_posts": 6,
-      "future_schedule_posts": 1,
-      "noise_posts": 0,
-      "value_points": 62.0,
-      "last_seen": "2026-06-11T12:56:00+00:00",
-      "top_reasons": {
-        "context": 6,
-        "date_time": 2,
-        "link": 3,
-        "future_schedule": 1,
-        "bon": 4,
-        "venue": 2
-      },
-      "recent_posts_seen": 3,
-      "recent_valuable_posts": 3,
-      "recent_future_schedule_posts": 1,
-      "recent_noise_posts": 0,
-      "recent_value_points": 30.0,
-      "lifetime_score": 12.733,
-      "recent_score": 11.2,
-      "recent_days": 30,
-      "quality_score": 12.426,
-      "score": 12.426,
-      "value_ratio": 1.0,
-      "recent_value_ratio": 1.0,
-      "status": "trusted",
-      "confidence": "medium",
-      "usefulness_rank": "A",
-      "usefulness_rank_number": 4,
-      "usefulness_score": 89.0,
-      "role_tags": [
-        "発見型",
-        "裏取り型",
-        "地域/会場型"
       ]
     },
     "8_mame": {

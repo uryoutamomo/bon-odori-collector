@@ -1,8 +1,8 @@
 {
   "_comment": "定番イベントの能動検索設定。こと・内田さんが会場を追加できる。",
-  "lead_months": 1,
-  "max_targets_per_run": 12,
-  "max_x_queries_per_run": 6,
+  "lead_months": 2,
+  "max_targets_per_run": 36,
+  "max_x_queries_per_run": 18,
   "events": [
     {
       "venue": "山王日枝神社",

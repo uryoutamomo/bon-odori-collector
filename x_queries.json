@@ -3,11 +3,11 @@
   "enabled": true,
   "budget": {
     "_comment": "有料(プリペイド)のため安全装置。超えたら収集スキップ=fail-safe。cost_per_tweet_usd は twitterapi.io の $0.15/1000件 = 1件 $0.00015。",
-    "daily_usd": 1.0,
-    "monthly_usd": 5.0,
+    "daily_usd": 3.0,
+    "monthly_usd": 15.0,
     "cost_per_tweet_usd": 0.00015
   },
-  "max_pages_per_query": 2,
+  "max_pages_per_query": 3,
   "page_sleep_sec": 2,
   "whitelist_batch_size": 20,
   "account_ranking": {
@@ -23,15 +23,15 @@
     "muted_max_score": 1.5
   },
   "event_evidence": {
-    "_comment": "イベントらしき発言断片の初回パイロット。合意時点の上位49件と@karinchanchankoの計50件を、前年同日から2週間だけ取得して評価待ちで停止する。",
+    "_comment": "イベントらしき発言断片を、固定コホートの過去発言から継続的に掘る。各窓の完了後は advance_event_evidence_window.py で次窓へ進める。",
     "enabled": true,
-    "pilot_only": true,
+    "pilot_only": false,
     "cohort_file": "data/x_event_evidence_cohort.json",
     "min_account_score": -0.6,
     "initial_window_days": 14,
     "batch_size": 20,
-    "max_pages_per_run": 60,
-    "max_evidence_per_run": 300
+    "max_pages_per_run": 120,
+    "max_evidence_per_run": 900
   },
   "social_graph_discovery": {
     "_comment": "価値ある盆踊ラーのfollowingsから候補アカウントを発見する。つながりは漏れ発見の補助信号で、良い盆踊ラー判定の主軸は投稿の数と質。",
@@ -93,6 +93,21 @@
       "id": "q-song-program",
       "aim": "主催者の曲目表・プログラム告知を捕捉",
       "query": "盆踊り (曲目表 OR 曲順 OR プログラム OR 演目 OR 曲目発表) lang:ja -filter:retweets"
+    },
+    {
+      "id": "q-future-schedule",
+      "aim": "今年の開催予定・日程告知を捕捉",
+      "query": "(盆踊り OR 盆おどり OR 民踊大会) (開催 OR 日程 OR 予定 OR お知らせ OR 令和8年 OR 2026) lang:ja -filter:retweets"
+    },
+    {
+      "id": "q-poster-flyer",
+      "aim": "ポスター・チラシ由来の未登録イベントを捕捉",
+      "query": "(盆踊り OR 盆おどり) (ポスター OR チラシ OR 掲示 OR 回覧 OR 町会 OR 自治会) lang:ja -filter:retweets"
+    },
+    {
+      "id": "q-program-songs-wide",
+      "aim": "曲確率改善用の曲目・演目・練習会情報を広めに捕捉",
+      "query": "(盆踊り OR 盆おどり OR 民踊) (曲目 OR 曲順 OR 演目 OR 練習会 OR 講習会) lang:ja -filter:retweets"
     }
   ]
 }

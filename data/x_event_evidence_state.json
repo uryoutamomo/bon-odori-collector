@@ -1,7 +1,7 @@
 {
-  "status": "awaiting_review",
-  "window_start": "2025-06-24T00:00:00+00:00",
-  "window_end": "2025-07-08T00:00:00+00:00",
+  "status": "in_progress",
+  "window_start": "2025-07-08T00:00:00+00:00",
+  "window_end": "2025-07-22T00:00:00+00:00",
   "selected_handles": [
     "@2tsuo_g",
     "@5khfya5pjksggov",
@@ -55,19 +55,15 @@
     "@yurubon_off"
   ],
   "selection_id": "664d239cbfb21c903b90366b808d6e5ebcf0e7024980d3bd613f6d865df58cf9",
-  "batch_index": 1,
+  "batch_index": 0,
   "batch_cursors": {},
-  "completed_batches": [
-    0,
-    1,
-    2
-  ],
-  "pages_completed": 42,
-  "tweets_scanned": 764,
-  "evidence_detected": 159,
+  "completed_batches": [],
+  "pages_completed": 0,
+  "tweets_scanned": 0,
+  "evidence_detected": 0,
   "pending_evidence": [],
-  "started_at": "2026-06-11T14:42:39.360318+00:00",
-  "updated_at": "2026-06-11T14:48:46.522978+00:00",
+  "started_at": "2026-06-13T02:12:39.309272+00:00",
+  "updated_at": "2026-06-13T02:12:39.309272+00:00",
   "window_history": [
     {
       "window_start": "2025-06-10T00:00:00+00:00",
@@ -79,10 +75,18 @@
       "pages_completed": 58,
       "tweets_scanned": 1075,
       "evidence_detected": 185
+    },
+    {
+      "window_start": "2025-06-24T00:00:00+00:00",
+      "window_end": "2025-07-08T00:00:00+00:00",
+      "covered_until": "2025-07-08T00:00:00+00:00",
+      "completed_at": "2026-06-11T14:48:46.528091+00:00",
+      "reviewed_at": "2026-06-13T02:12:39.309272+00:00",
+      "review_note": "quality phase: continue event evidence collection with expanded daily budget",
+      "pages_completed": 42,
+      "tweets_scanned": 764,
+      "evidence_detected": 159
     }
   ],
-  "previous_covered_until": "2025-06-24T00:00:00+00:00",
-  "completed_at": "2026-06-11T14:48:46.528091+00:00",
-  "covered_until": "2025-07-08T00:00:00+00:00",
-  "pending_cleared_at": "2026-06-11T14:51:26.338866+00:00"
+  "previous_covered_until": "2025-07-08T00:00:00+00:00"
 }
