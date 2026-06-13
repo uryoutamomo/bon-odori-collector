@@ -1378,28 +1378,6 @@
       "evidence_count": 1
     },
     {
-      "id": "ff83de0d000d6f09",
-      "song_name": "岸和田音頭",
-      "event_name": "盆踊り大会",
-      "venue": "木場二丁目公園",
-      "area": "江東区",
-      "status": "未確認",
-      "confidence": "低",
-      "reasons": [
-        "song_suffix_near_context"
-      ],
-      "evidence": [
-        {
-          "source": "latest_news",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1adi1iWDJDd3FKOHVfNXpfZGVCb1FJcDdsSjd1WVNtRllUUklhVk9qR2o1Wm1VN3B5MXdYVlFqUnlLcXo0eU1GTnZhdmNla0dNSGhCemZJMXpFanUwcEY4MTFmTFR0LWhfMkE?oc=5",
-          "date": "Sun, 15 Mar 2026 07:00:00 GMT",
-          "text": "全国でも珍しい「春の盆踊り大会」開催｜岸和田音頭・縁日・キッチンカーが楽しめる参加型イベント - PR TIMES"
-        }
-      ],
-      "already_public": false,
-      "evidence_count": 1
-    },
-    {
       "id": "5112864d63784769",
       "song_name": "新浅草橋音頭",
       "event_name": "盆踊り大会",
@@ -1521,6 +1499,28 @@
       ],
       "already_public": false,
       "evidence_count": 14
+    },
+    {
+      "id": "49d01cff1b22f32c",
+      "song_name": "泉州音頭",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/sasurai_3/status/2054143265524621751",
+          "date": "2026-05-12T10:14:53+00:00",
+          "text": "お祭り評論家 山本 哲也\n@ayu132ayu132 レス感謝です。\n県内で郡上から離れてても、小学校の運動会や地元の盆踊り大会で一部の演目がかかるのですね。\n確かに、泉州音頭は白鳥くらいの感覚かもです。\n東大阪や八尾など河内のど真ん中だと難しいですが、河内音頭・江州音頭のかかる大阪市内の櫓だと、泉州音頭もかかる可能性あります。"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
     },
     {
       "id": "31c8dd13cc51c078",

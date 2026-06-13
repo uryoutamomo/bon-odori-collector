@@ -1,7 +1,7 @@
 {
-  "status": "awaiting_review",
-  "window_start": "2025-09-16T00:00:00+00:00",
-  "window_end": "2025-09-30T00:00:00+00:00",
+  "status": "in_progress",
+  "window_start": "2025-09-30T00:00:00+00:00",
+  "window_end": "2025-10-14T00:00:00+00:00",
   "selected_handles": [
     "@2tsuo_g",
     "@5khfya5pjksggov",
@@ -56,18 +56,18 @@
   ],
   "selection_id": "664d239cbfb21c903b90366b808d6e5ebcf0e7024980d3bd613f6d865df58cf9",
   "batch_index": 2,
-  "batch_cursors": {},
-  "completed_batches": [
-    0,
-    1,
-    2
-  ],
-  "pages_completed": 54,
-  "tweets_scanned": 995,
-  "evidence_detected": 190,
+  "batch_cursors": {
+    "0": "DAADDAABCgABG3K--ESbEFkKAAIbZ-E5kVtRAQAIAAIAAAACCAADAAAAAAgABAAAAAgKAAUcqp8hoYAnEAoABhyqnyGhfqBwAAA",
+    "1": "DAADDAABCgABG3LdwrHW0ToKAAIbbjBP2tugmwAIAAIAAAACCAADAAAAAAgABAAAAAgKAAUcqp8lqgAnEAoABhyqnyWp_qBwAAA",
+    "2": "DAADDAABCgABG3LTKN7bMCIKAAIbascMN5sgJwAIAAIAAAACCAADAAAAAAgABAAAAAcKAAUcqp8pXsAnEAoABhyqnylevseAAAA"
+  },
+  "completed_batches": [],
+  "pages_completed": 26,
+  "tweets_scanned": 520,
+  "evidence_detected": 75,
   "pending_evidence": [],
-  "started_at": "2026-06-13T03:22:13.878779+00:00",
-  "updated_at": "2026-06-13T03:25:29.019889+00:00",
+  "started_at": "2026-06-13T03:32:13.084333+00:00",
+  "updated_at": "2026-06-13T03:34:25.227896+00:00",
   "window_history": [
     {
       "window_start": "2025-06-10T00:00:00+00:00",
@@ -145,10 +145,20 @@
       "pages_completed": 56,
       "tweets_scanned": 1009,
       "evidence_detected": 194
+    },
+    {
+      "window_start": "2025-09-16T00:00:00+00:00",
+      "window_end": "2025-09-30T00:00:00+00:00",
+      "covered_until": "2025-09-30T00:00:00+00:00",
+      "completed_at": "2026-06-13T03:25:29.026367+00:00",
+      "reviewed_at": "2026-06-13T03:32:13.084333+00:00",
+      "review_note": "auto-advance continuous event evidence window",
+      "pages_completed": 54,
+      "tweets_scanned": 995,
+      "evidence_detected": 190
     }
   ],
-  "previous_covered_until": "2025-09-16T00:00:00+00:00",
-  "completed_at": "2026-06-13T03:25:29.026367+00:00",
-  "covered_until": "2025-09-30T00:00:00+00:00",
-  "pending_cleared_at": "2026-06-13T03:26:20.086282+00:00"
+  "previous_covered_until": "2025-09-30T00:00:00+00:00",
+  "last_error": "The read operation timed out",
+  "pending_cleared_at": "2026-06-13T03:34:41.846285+00:00"
 }
