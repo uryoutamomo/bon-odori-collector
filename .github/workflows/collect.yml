@@ -82,6 +82,8 @@ jobs:
       run: |
         python sync_venue_master.py
         python export_public_events.py
+        python build_song_occurrences.py
+        python export_public_events.py
         python build_event_song_candidates.py
 
     - name: Audit canonical event database after promotion
@@ -100,6 +102,9 @@ jobs:
         [ -f data/glossary_runtime.json ] && git add data/glossary_runtime.json
         [ -f data/public/events_public.json ] && git add data/public/events_public.json
         [ -f data/public/event_songs_public.json ] && git add data/public/event_songs_public.json
+        [ -f data/public/event_song_occurrences_public.json ] && git add data/public/event_song_occurrences_public.json
+        [ -f data/song_occurrences.json ] && git add data/song_occurrences.json
+        [ -f data/song_prediction_snapshots.json ] && git add data/song_prediction_snapshots.json
         [ -f data/x_budget.json ] && git add data/x_budget.json
         [ -f data/x_account_scores.json ] && git add data/x_account_scores.json
         [ -f data/proactive_event_report.json ] && git add data/proactive_event_report.json

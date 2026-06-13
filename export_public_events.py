@@ -23,6 +23,8 @@ from export_public_venues import (
     MONTH_DAY_RE,
     MONTH_RE,
     clean_public_text,
+    _geo_key,
+    load_venue_geo,
     months_from_memo,
     normalize_ward,
     WARD_ORDER,
@@ -34,6 +36,7 @@ from export_public_venues import (
 OUT_DIR = os.path.join(os.path.dirname(__file__), "data", "public")
 OUT_JSON = os.path.join(OUT_DIR, "events_public.json")
 OUT_SONGS_JSON = os.path.join(OUT_DIR, "event_songs_public.json")
+OUT_SONG_OCCURRENCES_JSON = os.path.join(OUT_DIR, "event_song_occurrences_public.json")
 DATE_CANDIDATES_JSON = os.path.join(os.path.dirname(__file__), "data", "event_date_update_candidates.json")
 
 # 日付未確定イベントの「並び位置」を決めるヒント（内田さん指示 2026-06-10）：
@@ -96,6 +99,65 @@ def load_date_candidates():
         items.sort(key=lambda c: (-(c.get("score") or 0), c["date"]))
         grouped[event_id] = items[:3]
     return grouped
+
+
+def _song_occurrence_key(event_name, venue, year):
+    return (
+        re.sub(r"\s+", "", event_name or "").casefold(),
+        re.sub(r"\s+", "", venue or "").casefold(),
+        int(year),
+    )
+
+
+def load_song_occurrences():
+    if not os.path.exists(OUT_SONG_OCCURRENCES_JSON):
+        return {}
+    with open(OUT_SONG_OCCURRENCES_JSON, encoding="utf-8") as f:
+        raw = json.load(f)
+    grouped = {}
+    for row in raw.get("occurrences", []):
+        event_name = row.get("event_name")
+        venue = row.get("venue")
+        year = row.get("year")
+        if not event_name or not venue or not year:
+            continue
+        grouped[_song_occurrence_key(event_name, venue, year)] = row
+    return grouped
+
+
+def merge_song_occurrence_hints(existing_songs, occurrence):
+    songs = {
+        re.sub(r"\s+", "", song.get("name", "")).casefold(): dict(song)
+        for song in existing_songs or []
+        if song.get("name")
+    }
+    for song in (occurrence or {}).get("songs", []):
+        key = re.sub(r"\s+", "", song.get("name", "")).casefold()
+        if not key:
+            continue
+        merged = songs.setdefault(key, {
+            "name": song["name"],
+            "confidence": "hint",
+            "source_count": 0,
+        })
+        merged["probability"] = song.get("probability")
+        merged["basis"] = song.get("basis")
+        merged["basis_label"] = song.get("basis_label")
+        merged["evidence_count"] = song.get("evidence_count")
+        merged["speaker_count"] = song.get("speaker_count")
+        merged["setlist_complete"] = song.get("setlist_complete")
+        if song.get("evidence_urls"):
+            merged["evidence_urls"] = song.get("evidence_urls")
+        if song.get("probability", 0) >= 95:
+            merged["confidence"] = "confirmed"
+        merged["source_count"] = max(
+            int(merged.get("source_count") or 0),
+            int(song.get("evidence_count") or 0),
+        )
+    return sorted(
+        songs.values(),
+        key=lambda row: (-(row.get("probability") or 0), row.get("name") or ""),
+    )
 
 
 def parse_months(text):
@@ -194,6 +256,7 @@ def merge_hints(*hint_dicts, months=()):
 def fetch_public_venues():
     """23区の公開対象会場を venue_page_id -> dict で返す。"""
     venues = {}
+    geo_by_venue = load_venue_geo()
     for row in _query_all(notion_config.VENUE_DATA_SOURCE_ID):
         props = row.get("properties", {})
         name = _prop(props, "会場名")
@@ -202,23 +265,29 @@ def fetch_public_venues():
             continue
         scale = _prop(props, "規模")
         memo = _prop(props, "過去メモ")
-        venues[row["id"]] = {
+        address = clean_public_text(_prop(props, "住所"))
+        entry = {
             "venue": clean_public_text(name),
             "area": ward,
             "scale": scale if scale in ("大", "中", "小") else None,
             "access": clean_public_text(_prop(props, "アクセス")),
-            "address": clean_public_text(_prop(props, "住所")),
+            "address": address,
             "memo_months": sorted(months_from_memo(memo)),
             "memo_hints": hints_from_text(memo),
             "memo_jun": jun_labels(memo),
             "intro": clean_public_text(_prop(props, "公開紹介文")),
         }
+        geo = geo_by_venue.get(_geo_key(name, address))
+        if geo:
+            entry.update(geo)
+        venues[row["id"]] = entry
     return venues
 
 
 def build_public_events():
     venues = fetch_public_venues()
     date_candidates_by_event = load_date_candidates()
+    song_occurrences = load_song_occurrences()
     events, covered, skipped = [], set(), 0
 
     for row in _query_all(notion_config.EVENT_DATA_SOURCE_ID):
@@ -263,6 +332,11 @@ def build_public_events():
             description = clean_public_text(_prop(props, "公開紹介文"))
             detail = clean_public_text(detail_text)
             songs = extract_song_hints(description, detail)
+            occurrence_year = int(date[:4]) if date else 2026
+            occurrence = song_occurrences.get(
+                _song_occurrence_key(public_name, v["venue"], occurrence_year)
+            )
+            songs = merge_song_occurrence_hints(songs, occurrence)
             event_months = sorted(months)
             if not event_months and "名称推定" not in public_name:
                 event_months = v["memo_months"]
@@ -275,6 +349,8 @@ def build_public_events():
                 "scale": v["scale"],
                 "access": v["access"],
                 "address": v["address"],
+                "lat": v.get("lat"),
+                "lng": v.get("lng"),
                 "date": date,
                 "date_end": date_end,
                 "status": status,
@@ -289,6 +365,7 @@ def build_public_events():
                 "detail": detail,
                 # 会場で流れる/踊られる曲の候補。公開時は「曲目ヒント」として扱う。
                 "songs": songs,
+                "song_occurrence": occurrence,
             })
 
     # イベント未整備の会場はフォールバックカード（名称確認中）
@@ -306,6 +383,8 @@ def build_public_events():
             "scale": v["scale"],
             "access": v["access"],
             "address": v["address"],
+            "lat": v.get("lat"),
+            "lng": v.get("lng"),
             "date": None,
             "date_end": None,
             "status": None,

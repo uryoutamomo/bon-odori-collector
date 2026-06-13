@@ -1,0 +1,295 @@
+{
+  "generated_by": "おと3（Codex）",
+  "generated_at": "2026-06-11",
+  "source_file": "data/voices.json",
+  "relation_to_previous": "data/glossary_v2_oto3_abbrev_report.json の追加探索分",
+  "scope": "略語・表記ゆれ・呼び名っぽい語",
+  "notes": [
+    "Notion登録はしていない。",
+    "前回レポートと重複する語は原則避けた。",
+    "イベント名そのものに近い語も、略称・表記ゆれが強いものは弱候補または保留で残した。"
+  ],
+  "candidates": [
+    {
+      "term": "盆獣",
+      "type": "呼び名",
+      "interpretation": "盆踊り界隈の参加者・発信者のハンドル名/愛称",
+      "evidence_url": "https://x.com/bon__juu/status/2061460902441075129",
+      "evidence_text": "name: 盆獣 ・Bonjū\ntext: 5/31 Min-Yoi's盆踊り\n\n大成功🎉\n参加者の投稿を見れば、皆さんが楽しんだことは一目瞭然☺️\n生歌で踊れるのは最高だし、選曲も素敵だった。",
+      "reason": "「盆」+「獣」の造語で、英字表記 Bonjū と併記されている。個人名だが界隈内呼称の実験材料になる。",
+      "confidence": "候補"
+    },
+    {
+      "term": "Bonjū",
+      "type": "表記ゆれ",
+      "interpretation": "盆獣の英字/ローマ字表記",
+      "evidence_url": "https://x.com/bon__juu/status/2061460902441075129",
+      "evidence_text": "name: 盆獣 ・Bonjū\ntext: 5/31 Min-Yoi's盆踊り\n\n大成功🎉\n参加者の投稿を見れば、皆さんが楽しんだことは一目瞭然☺️",
+      "reason": "同じ表示名内で漢字表記と英字表記が併記されている。",
+      "confidence": "候補"
+    },
+    {
+      "term": "盆踊るトーク",
+      "type": "呼び名",
+      "interpretation": "盆踊りを語る発信・番組・個人活動の呼称",
+      "evidence_url": "https://x.com/hidedon78/status/2064364028512923944",
+      "evidence_text": "name: ヒデドン@盆踊るトーク\ntext: 今夜は、山科区のスナックへ。\nそこで、はじめて振付けを担当した盆踊り曲の、お披露目&練習会。\nからのご飯食べて、終電で帰宅🚃",
+      "reason": "「盆踊り」ではなく動詞化した「盆踊る」を使う呼称。アカウント名に入っており、活動名っぽい。",
+      "confidence": "候補"
+    },
+    {
+      "term": "ラビドビ",
+      "type": "略語",
+      "interpretation": "Lovey Dovey のカタカナ短縮呼称",
+      "evidence_url": "https://x.com/loveydovey5f/status/2064301482791624794",
+      "evidence_text": "告知です🎙️\n\n夏の終わりは、やっぱり盆踊り👏\nラビドビでする盆踊り、きっと特別な夜になります💕\n\n#LoveyDovey\n#ラビードビー\n#大阪ショーパブ",
+      "reason": "本文では「ラビドビ」、ハッシュタグでは #LoveyDovey / #ラビードビー が併記されており、短縮呼称として明確。",
+      "confidence": "候補"
+    },
+    {
+      "term": "ラビードビー",
+      "type": "表記ゆれ",
+      "interpretation": "Lovey Dovey のカタカナ表記",
+      "evidence_url": "https://x.com/loveydovey5f/status/2064301482791624794",
+      "evidence_text": "夏の終わりは、やっぱり盆踊り👏\nラビドビでする盆踊り、きっと特別な夜になります💕\n\n#LoveyDovey\n#ラビードビー",
+      "reason": "英字表記 LoveyDovey とカタカナ表記 ラビードビー、本文短縮 ラビドビ が同じ投稿で揺れている。",
+      "confidence": "候補"
+    },
+    {
+      "term": "ぼーんとぅ盆踊り",
+      "type": "呼び名",
+      "interpretation": "レイザーラモンRG系の盆踊りイベント/企画名。Born to と盆を掛けた呼称",
+      "evidence_url": "https://x.com/ophlxg/status/2064361429382406455",
+      "evidence_text": "@_\nぼーんとぅ盆踊り2026夏～私たちは盆踊りをするために生まれてきた～\n\n【求】大阪・東京 〜20番 1枚\n\n金額ご提示の上DMにご連絡ください",
+      "reason": "英語の Born to と「盆」を掛けたラフなひらがな表記。正式イベント名寄りだが、語形成として界隈語性がある。",
+      "confidence": "候補"
+    },
+    {
+      "term": "ぼーんとぅ盆踊り2026夏",
+      "type": "表記ゆれ",
+      "interpretation": "ぼーんとぅ盆踊りの年次付き表記",
+      "evidence_url": "https://x.com/KhXgkKZ4J6DL2QH/status/2062154565945057457",
+      "evidence_text": "ミャクミャク様ありがとうございます😭\n🏮8.15大阪\n🏮8.28東京\n\n今回はシャイニング盆踊りで写真や動画を送ってくれた方達に直接お礼が言えたらいいな〜\n\n#ぼーんとぅ盆踊り2026夏\n#レイザーラモンRG",
+      "reason": "本文・ハッシュタグで年次付きの短縮表記として使われている。",
+      "confidence": "候補"
+    },
+    {
+      "term": "アキバ盆踊り",
+      "type": "略語",
+      "interpretation": "秋葉原/アキバ文脈のアニソン・DJ系盆踊り企画の呼称",
+      "evidence_url": "https://x.com/sasakichi_akiba/status/2063994625107664969",
+      "evidence_text": "【🎧今後のDJ予定🎚】\n★#アキバ盆踊り\n📍浅草ドン・キホーテ前\n🗓6月27日㈯\n⏰️17:30-20:00 アキバ盆踊り\n👘21:00 Oiran Night Rock\n\n#アニメソング盆踊り\n#DJササキチ\n#浅草右近屋",
+      "reason": "秋葉原を「アキバ」に短縮したイベント呼称。アニソン盆踊りと同じ投稿に並ぶ。",
+      "confidence": "候補"
+    },
+    {
+      "term": "アニメソング盆踊り",
+      "type": "表記ゆれ",
+      "interpretation": "アニソン盆踊りの説明的表記",
+      "evidence_url": "https://x.com/sasakichi_akiba/status/2063994625107664969",
+      "evidence_text": "★伊勢崎駅前アニメソング盆踊り\n📍群馬県伊勢崎市伊勢崎駅前広場\n🗓7月19日㈰\n⏰16:00-21:00\n#アキバ盆踊り\n#アニメソング盆踊り",
+      "reason": "一般には「アニソン」と略される語が「アニメソング」と正式寄りに展開されている。",
+      "confidence": "候補"
+    },
+    {
+      "term": "アニソン盆踊り",
+      "type": "略語",
+      "interpretation": "アニメソング盆踊りの短縮呼称",
+      "evidence_url": "https://x.com/uratyranohoshi/status/2064369373637451869",
+      "evidence_text": "@A0302kmSn0 毎年違うのでわかりませんが今年だと夜の踊り子とか滅とかやりそうな雰囲気はありますw\nあとは毎年のアニソン盆踊りなんかも楽しいですよ",
+      "reason": "アニメソングをアニソンに短縮した呼称。複数投稿で自然に使われている。",
+      "confidence": "候補"
+    },
+    {
+      "term": "超ニコニコ盆踊り",
+      "type": "呼び名",
+      "interpretation": "ニコニコ超会議由来の盆踊り企画呼称",
+      "evidence_url": "https://x.com/sasakichi_akiba/status/2062205031152316923",
+      "evidence_text": "会場入り前に撮った動画🆙してなかったw\nおかげさまでめっちゃ盛り上がってよかった！\n#AFATH2026\n#AFATH26\n#超ニコニコ盆踊り\n#DJササキチ\n#浅草右近屋\n#カラーポワント",
+      "reason": "ニコニコ超会議系の企画呼称。別投稿に「超会ニコニコ盆踊り」もあり、表記ゆれがある。",
+      "confidence": "候補"
+    },
+    {
+      "term": "超会ニコニコ盆踊り",
+      "type": "表記ゆれ",
+      "interpretation": "超ニコニコ盆踊りの表記ゆれ/超会議由来を明示した呼称",
+      "evidence_url": "https://x.com/wannyantanookan/status/2062144681224659136",
+      "evidence_text": "6月27日㈯アキバ盆踊り\n17時30分〜DJタイムスタート！\n浅草夜祭（浅草ドン・キホーテ前）\n無料で参加できるので絶対いってくれよな💕\n\n#浅草夜祭\n#アキバ盆踊り\n#超会ニコニコ盆踊り",
+      "reason": "同系統の企画が「超ニコニコ盆踊り」と「超会ニコニコ盆踊り」で揺れている。",
+      "confidence": "候補"
+    },
+    {
+      "term": "AFATH2026",
+      "type": "略語",
+      "interpretation": "盆踊り出演/ステージ文脈で使われたイベント略称",
+      "evidence_url": "https://x.com/sasakichi_akiba/status/2062205031152316923",
+      "evidence_text": "会場入り前に撮った動画🆙してなかったw\nおかげさまでめっちゃ盛り上がってよかった！\n#AFATH2026\n#AFATH26\n#超ニコニコ盆踊り\n#DJササキチ",
+      "reason": "同じ投稿で AFATH2026 と AFATH26 が併記され、年の短縮ゆれが見える。",
+      "confidence": "候補"
+    },
+    {
+      "term": "AFATH26",
+      "type": "表記ゆれ",
+      "interpretation": "AFATH2026 の短縮表記",
+      "evidence_url": "https://x.com/sasakichi_akiba/status/2062205031152316923",
+      "evidence_text": "#AFATH2026\n#AFATH26\n#超ニコニコ盆踊り\n#DJササキチ\n#浅草右近屋",
+      "reason": "AFATH2026 と同時に使われる短縮タグ。",
+      "confidence": "候補"
+    },
+    {
+      "term": "踊ろまい会",
+      "type": "呼び名",
+      "interpretation": "一宮踊ろまい会の短い呼称。文脈により団体名そのもの",
+      "evidence_url": "https://x.com/tashiro_kai/status/2064009522105192800",
+      "evidence_text": "2026.6.7sun\n一宮盆踊りカーニバル 振り返り①\n踊ろまい会㊗️40周年\n歴史ある会の楽しいイベント\n私は呑気に会場前のカフェレストランICHIMOにて 一宮モーニングスタート",
+      "reason": "別投稿では「一宮踊ろまい会」と出るが、参加者投稿では地名を省いて「踊ろまい会」と呼んでいる。",
+      "confidence": "候補"
+    },
+    {
+      "term": "ろまい会",
+      "type": "略語",
+      "interpretation": "一宮踊ろまい会/踊ろまい会のさらに短い呼称",
+      "evidence_url": "https://x.com/bonbonharuru/status/2063942883422691432",
+      "evidence_text": "6月7日  一宮盆踊りカーニバル\nろまい会さん40周年おめでとうございます✨\n仮装あり、民謡～ご当地まで幅広いレパートリーの10時間半😊",
+      "reason": "「踊ろまい会」から先頭の「踊」を落としたような短縮呼称で、親しみのある呼び方に見える。",
+      "confidence": "候補"
+    },
+    {
+      "term": "沼ぼん",
+      "type": "呼び名",
+      "interpretation": "藤沢・鵠沼の盆踊り部の呼称",
+      "evidence_url": "https://x.com/kuma_bot999/status/2063615304639652005",
+      "evidence_text": "#藤の盆\n#沼ぼん (藤沢・鵠沼の盆踊り部)最初の晴れ舞台ということで目撃しに\n部長副部長,おめでとうございます(もちろん部員の皆様も)\n盛り上がってました",
+      "reason": "括弧内で「藤沢・鵠沼の盆踊り部」と解説されており、短縮愛称として明確。",
+      "confidence": "候補"
+    },
+    {
+      "term": "やまぼん",
+      "type": "呼び名",
+      "interpretation": "おやまの盆踊り祭、またはその運営/関連活動の短縮呼称",
+      "evidence_url": "https://x.com/yamabon_zaimoku/status/2062008208831705159",
+      "evidence_text": "6/7日藤沢駅前サンパール広場で開催される盆踊りイベント「藤の盆」になみぼん、やまぼん共同でブース出店します！クイズに答えると駄菓子がもらえるかも？！２番ブースにぜひお立ち寄りください！",
+      "reason": "アカウント名がおやまの盆踊り祭で、本文では「やまぼん」と短く呼ばれている。",
+      "confidence": "候補"
+    },
+    {
+      "term": "なみぼん",
+      "type": "呼び名",
+      "interpretation": "藤の盆に共同出店する関連団体/活動の短縮呼称",
+      "evidence_url": "https://x.com/yamabon_zaimoku/status/2062008208831705159",
+      "evidence_text": "6/7日藤沢駅前サンパール広場で開催される盆踊りイベント「藤の盆」になみぼん、やまぼん共同でブース出店します！",
+      "reason": "「やまぼん」と並列のひらがな短縮名。固有団体名の愛称に見える。",
+      "confidence": "弱候補"
+    },
+    {
+      "term": "ボンジャム",
+      "type": "略語",
+      "interpretation": "盆踊りLIVE JAM 2026 の短縮ハッシュタグ",
+      "evidence_url": "https://x.com/Licht_Creative/status/2063552931220382123",
+      "evidence_text": "＼まちが踊る。心が躍る。／\n\n盆踊りLIVE JAM 2026 開催！\n\n三味線・和太鼓・DJ・ドラムによる\n全編生演奏のアニソン盆踊り。\n\n#ボンジャム",
+      "reason": "正式名「盆踊りLIVE JAM 2026」に対して #ボンジャム が短縮タグとして使われている。",
+      "confidence": "候補"
+    },
+    {
+      "term": "盆ダンス",
+      "type": "呼び名",
+      "interpretation": "盆踊りをダンス寄りに言い換えた呼称",
+      "evidence_url": "https://x.com/komaikai/status/2060879035027390688",
+      "evidence_text": "🏮マロニエまつり③🏮\nLet's 盆ダンス‼️YouTube更新✨️\nhttps://t.co/HgF8k4ejNv\n\n#盆踊り\n#マロニエまつり\n#魂舞会",
+      "reason": "「盆踊り」を英語混じりに言い換えた呼称。東京盆踊り「魂舞会」の投稿で反復されている。",
+      "confidence": "候補"
+    },
+    {
+      "term": "盆踊りオフ練",
+      "type": "略語",
+      "interpretation": "盆踊りのオフライン練習会/オフ会練習の短縮呼称",
+      "evidence_url": "https://x.com/komaikai/status/2056305719855743196",
+      "evidence_text": "盆踊りオフ練ご案内！\n5/22（金）19:00~21:00\n石神井公園区民交流センター\n3階  大会議室\n参加費¥300\n事前申込不要！",
+      "reason": "「オフライン練習」または「オフ会練習」を「オフ練」と短縮している。",
+      "confidence": "候補"
+    },
+    {
+      "term": "盆踊りオフ会",
+      "type": "呼び名",
+      "interpretation": "盆踊り仲間で集まるオフ会的な練習/参加イベント",
+      "evidence_url": "https://x.com/yumiya_pon/status/2063616769156329757",
+      "evidence_text": "月1の郡上白鳥のお囃子練習会→唄の自習→盆踊りオフ会へ。\n自分の好きな民謡踊り（5/31にミンヨイズでも演奏した曲）もかかり、たっぷり踊れて嬉しかったです🌸",
+      "reason": "公式イベント名ではなく、参加者が集まりの性質を呼ぶ語。行動語寄りだが呼び名として有用。",
+      "confidence": "弱候補"
+    }
+  ],
+  "duplicate_or_hold_notes": [
+    {
+      "term": "藤の盆",
+      "type": "呼び名",
+      "interpretation": "藤沢駅前周辺の盆踊りイベント名",
+      "evidence_url": "https://x.com/kuma_bot999/status/2063615304639652005",
+      "evidence_text": "#藤の盆\n#沼ぼん (藤沢・鵠沼の盆踊り部)最初の晴れ舞台ということで目撃しに",
+      "reason": "短い呼称ではあるがイベント名そのものに近いため保留。",
+      "confidence": "保留"
+    },
+    {
+      "term": "盆踊りCARNIVAL",
+      "type": "表記ゆれ",
+      "interpretation": "盆踊りカーニバルの英字混じり表記",
+      "evidence_url": "https://x.com/hatadatakasi1/status/2063425532096852167",
+      "evidence_text": "☆40周年記念一宮踊ろまい会☆\n《#盆踊りCARNIVAL》\n•6月7日(日）\n•10∶00〜20∶30",
+      "reason": "表記ゆれは明確だが、イベント正式名寄りなので保留。",
+      "confidence": "保留"
+    },
+    {
+      "term": "踊ろフェス",
+      "type": "略語",
+      "interpretation": "湖西市・鷲津駅前のフェス/盆踊り関連イベントの略称",
+      "evidence_url": "https://x.com/shizushin/status/2063901342704525335",
+      "evidence_text": "湖西市・鷲津駅前で盆踊り練習会　２７日「踊ろフェス」に向けて｜静岡新聞DIGITAL 静岡県のニュース https://t.co/DEQHBqOgLq",
+      "reason": "略称らしいが、イベント名そのものの可能性が高い。",
+      "confidence": "保留"
+    },
+    {
+      "term": "おどりはだり",
+      "type": "呼び名",
+      "interpretation": "ミンヨイズ盆踊り後半/追加パートの呼称の可能性",
+      "evidence_url": "https://x.com/yumiya_pon/status/2062902290160472066",
+      "evidence_text": "#みん盆🍀\n#ミンヨイズ盆踊り\n和太鼓さんが繁昌ぶしをupされ、感涙！\nMCは聞こえ難くて恥ずかしいですが、手作りイベントのアットホーム感を記録くださいました。\n木津さんで一旦イベントは終了→「おどりはだり」は人が減ったけれど良い感じ🌸",
+      "reason": "独特語だが意味の推定が弱い。方言/曲名/パート名の切り分けが必要。",
+      "confidence": "保留"
+    },
+    {
+      "term": "ら～さん",
+      "type": "呼び名",
+      "interpretation": "踊らー/盆踊らー仲間を指す可能性",
+      "evidence_url": "https://x.com/bonbonharuru/status/2063934348118864273",
+      "evidence_text": "6月6日～7日   ふるさと千川まつり\n馴染みの、ら～さん多め😊\n久しぶりに味わう子供達の突進や、盆踊り始めたての方から後ろに付かせて下さい言われたり、dh、マツケンで子供達と跳ねたり✨",
+      "reason": "踊らーの短縮っぽいが、単独では意味が曖昧。前回の踊らー候補に紐づけて保留。",
+      "confidence": "保留"
+    },
+    {
+      "term": "ラー",
+      "type": "略語",
+      "interpretation": "踊らー/盆踊ラーの短縮の可能性",
+      "evidence_url": "https://x.com/Pw9SKrdCfYJfxfv/status/2063828975642939588",
+      "evidence_text": "流山の練習会後でフラフラでしたが行って良かったです\n\n個人として、踊り手として、ラーとして満たされました",
+      "reason": "文脈上は踊らー/盆踊ラーの短縮に見えるが、単語だけでは一般性が弱い。",
+      "confidence": "保留"
+    },
+    {
+      "term": "盆踊りシーズン",
+      "type": "呼び名",
+      "interpretation": "盆踊りの本格シーズン",
+      "evidence_url": "https://x.com/natsutr_bon/status/2062007079603490989",
+      "evidence_text": "大崎から盆友さんたちと浅草へ🚇この日は新しい男衆も加わって、浅草右近屋さんもさらにPower Up🔥定番の盆踊りから花魁道中まで遊んできました✨\n\n盆踊りシーズン本番になっても浅草にはなるべく来たいな〜🤩",
+      "reason": "よく使われる季節表現で、略語・表記ゆれ・呼び名という担当範囲からは少し外れる。",
+      "confidence": "保留"
+    },
+    {
+      "term": "盆休み",
+      "type": "略語",
+      "interpretation": "お盆休み。盆踊りスタッフ文脈で使用",
+      "evidence_url": "https://x.com/Jet_Jaguar_P/status/2064373387259199817",
+      "evidence_text": "@fugen777 @kandk2nd 15日16日に地元で盆踊りのスタッフ確定なのでガチで盆休みなどないのである",
+      "reason": "一般語としての略語で、盆踊り界隈固有ではないため保留。",
+      "confidence": "保留"
+    }
+  ]
+}

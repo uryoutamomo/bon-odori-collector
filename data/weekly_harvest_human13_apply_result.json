@@ -1,0 +1,73 @@
+{
+  "dry_run": false,
+  "applied_term_count": 6,
+  "applied_cooccurrence_count": 1,
+  "rejected_count": 5,
+  "held_count": 1,
+  "skipped_count": 0,
+  "applied_terms": [
+    {
+      "term": "参戦",
+      "action": "update",
+      "page_id": "37c8be04-e762-81c4-8a64-cae6730be41a"
+    },
+    {
+      "term": "踊り始め",
+      "action": "update",
+      "page_id": "37c8be04-e762-81fd-931e-e1c9dc912758"
+    },
+    {
+      "term": "練習会",
+      "action": "update",
+      "page_id": "37b8be04-e762-8150-ac8f-dd09aa09a531"
+    },
+    {
+      "term": "輪踊り",
+      "action": "update",
+      "page_id": "37c8be04-e762-8152-9ddd-d1bc90d61241"
+    },
+    {
+      "term": "盆踊りオフ会",
+      "action": "update",
+      "page_id": "37b8be04-e762-817b-834f-c0f3c56e5e48"
+    },
+    {
+      "term": "梯子",
+      "action": "update",
+      "page_id": "37c8be04-e762-8174-944e-f95b1d5c33ce"
+    }
+  ],
+  "applied_cooccurrences": [
+    {
+      "term": "東京音頭 × 飛鳥山公園",
+      "action": "update_song_venue_relation",
+      "song": "東京音頭",
+      "venue": "飛鳥山公園",
+      "page_id": "37c8be04-e762-81e1-85db-d379edfaad0a"
+    }
+  ],
+  "rejected": [
+    {
+      "term": "あさがお踊り × 飛鳥山公園"
+    },
+    {
+      "term": "印西音頭 × 鮫洲入江広場公園"
+    },
+    {
+      "term": "山王音頭と千代田踊り × 飛鳥山公園"
+    },
+    {
+      "term": "隅田公園そよ風ひろばに踊り × 隅田公園"
+    },
+    {
+      "term": "飛鳥山公園輪踊り × 飛鳥山公園"
+    }
+  ],
+  "held": [
+    {
+      "term": "踊り会",
+      "note": ""
+    }
+  ],
+  "skipped": []
+}

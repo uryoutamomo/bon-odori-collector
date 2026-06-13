@@ -1,0 +1,83 @@
+{
+  "exported_at": "2026-06-11T12:10:42.067Z",
+  "total": 11,
+  "rows": [
+    {
+      "key": "曲候補||まんず青山の郡上おどり||https://x.com/taka_S_hiho/status/2063608885966225455",
+      "term": "まんず青山の郡上おどり",
+      "category": "曲候補",
+      "decision": "曲ではない",
+      "note": ""
+    },
+    {
+      "key": "曲候補||よさこい踊り||https://x.com/MY26Go/status/2063588780511223927",
+      "term": "よさこい踊り",
+      "category": "曲候補",
+      "decision": "曲ではない",
+      "note": ""
+    },
+    {
+      "key": "曲候補||先日の郡上おどり||https://x.com/emi_rinjapan/status/2064337613327343698",
+      "term": "先日の郡上おどり",
+      "category": "曲候補",
+      "decision": "曲ではない",
+      "note": ""
+    },
+    {
+      "key": "曲候補||夜の踊り||https://x.com/agehabijo/status/2064248714831757592",
+      "term": "夜の踊り",
+      "category": "曲候補",
+      "decision": "曲ではない",
+      "note": ""
+    },
+    {
+      "key": "曲候補||山王音頭と千代田踊り||https://x.com/xxxnabekoxxx/status/2063607767861195209",
+      "term": "山王音頭と千代田踊り",
+      "category": "曲候補",
+      "decision": "曲ではない",
+      "note": ""
+    },
+    {
+      "key": "曲候補||岡崎音頭と五万石おどり||https://x.com/tashiro_kai/status/2064009937987190935",
+      "term": "岡崎音頭と五万石おどり",
+      "category": "曲候補",
+      "decision": "曲ではない",
+      "note": ""
+    },
+    {
+      "key": "曲候補||徳島市阿波おどり||https://x.com/swissmilitaryjp/status/2063591814200799295",
+      "term": "徳島市阿波おどり",
+      "category": "曲候補",
+      "decision": "曲ではない",
+      "note": ""
+    },
+    {
+      "key": "曲候補||盆ジョビ||https://x.com/pink_daiamond_/status/2063835434707570787",
+      "term": "盆ジョビ",
+      "category": "曲候補",
+      "decision": "曲ではない",
+      "note": ""
+    },
+    {
+      "key": "曲候補||郡上おどり||https://x.com/emi_rinjapan/status/2064337613327343698",
+      "term": "郡上おどり",
+      "category": "曲候補",
+      "decision": "曲ではない",
+      "note": ""
+    },
+    {
+      "key": "曲候補||飛鳥山公園輪踊り||https://www.youtube.com/watch?v=JX5otrjUER4",
+      "term": "飛鳥山公園輪踊り",
+      "category": "曲候補",
+      "decision": "曲ではない",
+      "note": ""
+    },
+    {
+      "key": "曲候補||馬鹿おどり||https://x.com/ObakaAki/status/2064246539976077461",
+      "term": "馬鹿おどり",
+      "category": "曲候補",
+      "decision": "曲として採用",
+      "note": ""
+    }
+  ]
+}

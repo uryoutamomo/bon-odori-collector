@@ -55,6 +55,8 @@ jobs:
       run: |
         python sync_venue_master.py
         python export_public_events.py
+        python build_song_occurrences.py
+        python export_public_events.py
 
     - name: Build weekly harvest candidates
       run: python build_weekly_harvest_candidates.py --days "$HARVEST_DAYS"
@@ -153,4 +155,7 @@ jobs:
         [ -f data/weekly_harvest_apply_result.json ] && git add data/weekly_harvest_apply_result.json
         [ -f data/venue_master.json ] && git add data/venue_master.json
         [ -f data/public/events_public.json ] && git add data/public/events_public.json
+        [ -f data/public/event_song_occurrences_public.json ] && git add data/public/event_song_occurrences_public.json
+        [ -f data/song_occurrences.json ] && git add data/song_occurrences.json
+        [ -f data/song_prediction_snapshots.json ] && git add data/song_prediction_snapshots.json
         git diff --cached --quiet || (git commit -m "Update weekly harvest review queues" && git push)

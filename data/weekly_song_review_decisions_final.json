@@ -1,0 +1,74 @@
+{
+ "reviewed_by": "内田さん（最終判断）＋こと（Web裏取り）",
+ "reviewed_at": "2026-06-11",
+ "source": "data/weekly_song_candidates_review.json",
+ "note": "内田さんUI判定（weekly_song_review_decisions_uchida.json）に口頭訂正とWeb裏取り（開発日誌2026-06-11参照）を統合した最終版",
+ "rows": [
+  {
+   "term": "飛鳥山公園輪踊り",
+   "category": "曲候補",
+   "decision": "曲ではない",
+   "note": "イベント/輪踊り動画シリーズ名（おと判定と一致）"
+  },
+  {
+   "term": "郡上おどり",
+   "category": "曲候補",
+   "decision": "曲ではない",
+   "note": "保留→却下に確定（内田さん）。多義語。用語集v2のイベント別名行は既存のまま維持"
+  },
+  {
+   "term": "夜の踊り",
+   "category": "曲候補",
+   "decision": "曲ではない",
+   "note": "内田さん判定。おとの「夜の踊り子」更新は取り消し対象"
+  },
+  {
+   "term": "徳島市阿波おどり",
+   "category": "曲候補",
+   "decision": "曲ではない",
+   "note": "イベント/踊り総称（おと判定と一致）"
+  },
+  {
+   "term": "まんず青山の郡上おどり",
+   "category": "曲候補",
+   "decision": "曲ではない",
+   "note": "文章中の句（おと判定と一致）"
+  },
+  {
+   "term": "よさこい踊り",
+   "category": "曲候補",
+   "decision": "曲ではない",
+   "note": "ジャンル/スタイル（おと判定と一致）"
+  },
+  {
+   "term": "先日の郡上おどり",
+   "category": "曲候補",
+   "decision": "曲ではない",
+   "note": "文章中の句（おと判定と一致）"
+  },
+  {
+   "term": "山王音頭と千代田踊り",
+   "category": "曲候補",
+   "decision": "分割",
+   "note": "複合語は曲ではない。分割2曲はWeb裏取りで実在確認→おとの適用を追認。山王音頭=山王祭限定のご当地ソング（https://www.tenkamatsuri.jp/minyo/）、千代田踊り=千代田区民踊連盟の民踊（https://www.edo-chiyoda.jp/chiyoda-bonodori.html）"
+  },
+  {
+   "term": "岡崎音頭と五万石おどり",
+   "category": "曲候補",
+   "decision": "分割",
+   "note": "複合語は曲ではない。分割2曲はWeb裏取りで実在確認→おとの適用を追認。岡崎五万石は日本民謡協会掲載の民謡（https://nichimin.or.jp/commentary/岡崎五万石/）。五万石おどりの正式名は「岡崎五万石」の可能性→別名メモ推奨"
+  },
+  {
+   "term": "盆ジョビ",
+   "category": "曲候補",
+   "decision": "用語集へ",
+   "note": "曲ではなく中野駅前大盆踊り大会の名物企画「盆ジョヴィ」（2018年〜、DJ CellyがBon Jovi「Livin' on a Prayer」を流した現象。https://amass.jp/176830/）。用語集v2へ候補登録：表記ゆれ=盆ジョビ/盆ジョヴィ、解釈=中野駅前大盆踊り大会の名物企画（曲はLivin' on a Prayer）"
+  },
+  {
+   "term": "馬鹿おどり",
+   "category": "曲候補",
+   "decision": "曲ではない",
+   "note": "内田さんUI判定は採用だったが、直後に口頭訂正で「曲ではない」に確定（2026-06-11）。おとの更新は取り消し対象"
+  }
+ ]
+}

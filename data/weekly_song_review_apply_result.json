@@ -1,0 +1,77 @@
+{
+  "dry_run": false,
+  "decisions": "data/weekly_song_review_decisions.json",
+  "created_count": 0,
+  "updated_count": 6,
+  "rejected_count": 5,
+  "held_count": 2,
+  "skipped_count": 0,
+  "created": [],
+  "updated": [
+    {
+      "song_name": "夜の踊り子",
+      "term": "夜の踊り",
+      "page_id": "37c8be04-e762-81b9-9424-ee8eb21a0918"
+    },
+    {
+      "song_name": "山王音頭",
+      "term": "山王音頭と千代田踊り",
+      "page_id": "37c8be04-e762-81e4-9d85-e5fe415b10a7"
+    },
+    {
+      "song_name": "千代田踊り",
+      "term": "山王音頭と千代田踊り",
+      "page_id": "37c8be04-e762-8112-ba90-c56f7568f5d1"
+    },
+    {
+      "song_name": "岡崎音頭",
+      "term": "岡崎音頭と五万石おどり",
+      "page_id": "37c8be04-e762-815b-adf0-cc0fed19b0a4"
+    },
+    {
+      "song_name": "五万石おどり",
+      "term": "岡崎音頭と五万石おどり",
+      "page_id": "37c8be04-e762-81e7-818e-c399b6eb4426"
+    },
+    {
+      "song_name": "馬鹿おどり",
+      "term": "馬鹿おどり",
+      "page_id": "37c8be04-e762-81c7-b8a4-d56cc9e46590"
+    }
+  ],
+  "rejected": [
+    {
+      "term": "飛鳥山公園輪踊り",
+      "decision": "曲ではない"
+    },
+    {
+      "term": "徳島市阿波おどり",
+      "decision": "曲ではない"
+    },
+    {
+      "term": "まんず青山の郡上おどり",
+      "decision": "曲ではない"
+    },
+    {
+      "term": "よさこい踊り",
+      "decision": "曲ではない"
+    },
+    {
+      "term": "先日の郡上おどり",
+      "decision": "曲ではない"
+    }
+  ],
+  "held": [
+    {
+      "term": "郡上おどり",
+      "decision": "保留",
+      "note": "イベント名・踊り/曲群の総称・個別曲の可能性があり、多義語として曲マスタ単体の有効化は保留。"
+    },
+    {
+      "term": "盆ジョビ",
+      "decision": "用語集へ",
+      "note": "イベント/企画名または界隈語として扱う。曲マスタの単一曲ではない。"
+    }
+  ],
+  "skipped": []
+}

@@ -1,0 +1,455 @@
+{
+  "source": "data/glossary_v2_oto123_review_result.json",
+  "dry_run": true,
+  "accepted_unique": 88,
+  "created_count": 0,
+  "skipped_count": 88,
+  "failed_count": 0,
+  "duplicates_collapsed": [
+    "盆踊りオフ会"
+  ],
+  "created": [],
+  "skipped": [
+    {
+      "term": "お邪魔する",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "リード",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "予習",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "内側",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "初見",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "初見曲",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "後ろにつく",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "後ろに付かせて下さい",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "徹夜踊り",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "所作で捨てる",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "櫓に上がる",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "流し踊り",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "盆踊りオフ会",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "盆踊り巡り",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "盆踊り巡る",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "直前練習",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "練習会",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "見よう見まね",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "見学だけ",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "踊りに行く",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "踊りの輪に入る",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "踊り手",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "踊り流し",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "輪の中に入る",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "輪の外側",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "遠征",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "関東遠征",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "飛び入り",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "飛び入り専門",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "お暇",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "櫓上",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "踊りきる",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "踊りにくい",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "踊りやすい",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "踊り子",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "コソ練",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "通過",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "トランス状態",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "盆踊りロス",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "総本山",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "踊り狂う",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "AFATH2026",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "AFATH26",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "BON-ODORI",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "Bonjū",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "Min-Yoi's",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "すみジャズ",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "ぼーんとぅ盆踊り",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "ぼーんとぅ盆踊り2026夏",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "みんよいず",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "みん盆",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "やまぼん",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "ろまい会",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "アキバ盆踊り",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "アニソン盆踊り",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "アニメソング盆踊り",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "ハダ盆",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "ボンジャム",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "ミンヨイズ",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "ラビドビ",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "ラビードビー",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "晴盆",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "晴盆様",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "沼ぼん",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "盆ジョビ",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "盆ジョヴィ",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "盆ダンス",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "盆フェス",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "盆フェスタ",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "盆友",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "盆女",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "盆獣",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "盆踊らー",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "盆踊りオフ練",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "盆踊りジョヴィ",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "盆踊るトーク",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "盆踊ラー",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "秦野盆部",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "超ニコニコ盆踊り",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "超会ニコニコ盆踊り",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "踊らー",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "踊ろまい会",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "開港祭BON-ODORI",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "DH",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "あのマツケン",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "なみぼん",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "まめかち",
+      "reason": "existing",
+      "count": 1
+    },
+    {
+      "term": "ドアラONDO",
+      "reason": "existing",
+      "count": 1
+    }
+  ],
+  "failed": []
+}

@@ -1,0 +1,536 @@
+{
+  "dry_run": false,
+  "source": "data/event_song_candidates.json",
+  "song_master_db_id": "37c8be04-e762-814b-b8f2-f1b61fc8f16c",
+  "merged_song_count": 86,
+  "created_count": 86,
+  "skipped_count": 0,
+  "connected_glossary_count": 23,
+  "created": [
+    {
+      "song_name": "Beat It",
+      "page_id": "37c8be04-e762-8159-a033-d95c1aed7093",
+      "classification": "未分類"
+    },
+    {
+      "song_name": "あさがお踊り",
+      "page_id": "37c8be04-e762-8187-9220-e3e19af575e8",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "えびすくい音頭",
+      "page_id": "37c8be04-e762-8194-acb1-d043cec68ad5",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "おしまこ輪踊り",
+      "page_id": "37c8be04-e762-81b2-bee9-e0874065921a",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "さくら音頭",
+      "page_id": "37c8be04-e762-8106-8c1e-e80aa93e387c",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "しながわ社協音頭",
+      "page_id": "37c8be04-e762-819e-9c6e-fe7bf15e5b44",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "じゃこっぺ踊り",
+      "page_id": "37c8be04-e762-81b6-8201-cfd04d00e140",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "すみだ輪おどり",
+      "page_id": "37c8be04-e762-8177-83fa-e82964407c35",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "たいとう音頭",
+      "page_id": "37c8be04-e762-8143-820c-fb0b275fa56e",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "でかんしょ節",
+      "page_id": "37c8be04-e762-81d0-b3dd-c3a3de7ead64",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "まんまる音頭",
+      "page_id": "37c8be04-e762-8132-863b-f99d490e3e37",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "やっペ踊り",
+      "page_id": "37c8be04-e762-819a-8f48-d7bf665044b3",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "ゆかた音頭",
+      "page_id": "37c8be04-e762-8120-8393-e6c642543d51",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "よこはまアラメヤ音頭",
+      "page_id": "37c8be04-e762-8158-95ed-c41cbd746ccc",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "らんまん踊り",
+      "page_id": "37c8be04-e762-81ee-9356-ccca86b523f9",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "りんご節",
+      "page_id": "37c8be04-e762-81f5-9b84-ff55861cd914",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "わら音頭",
+      "page_id": "37c8be04-e762-81c0-a0cb-c8ed9f6d841e",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "イデ音頭",
+      "page_id": "37c8be04-e762-8153-b681-fca1fdc4f30b",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "シモキタ音頭",
+      "page_id": "37c8be04-e762-8130-ade1-d1a07b9c746f",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "スカイツリー踊り",
+      "page_id": "37c8be04-e762-8121-b948-e2809ac27225",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "ソーラン節",
+      "page_id": "37c8be04-e762-8170-8984-edb4421b1a58",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "ダンシングヒーロー",
+      "page_id": "37c8be04-e762-8184-bd2d-c29be71a44d1",
+      "classification": "定番曲"
+    },
+    {
+      "song_name": "ドンパン節",
+      "page_id": "37c8be04-e762-8199-a5a3-f7f88ae1be10",
+      "classification": "定番曲"
+    },
+    {
+      "song_name": "ハラハラ音頭",
+      "page_id": "37c8be04-e762-8157-b093-cfb176bf7397",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "下北小唄",
+      "page_id": "37c8be04-e762-8166-a4b9-eecac335db6d",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "伊勢音頭",
+      "page_id": "37c8be04-e762-8177-acf4-f9806ec7a2c9",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "八戸小唄",
+      "page_id": "37c8be04-e762-8110-a655-cee24cec147d",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "印西音頭",
+      "page_id": "37c8be04-e762-81ca-8bba-edc068a90950",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "品川甚句",
+      "page_id": "37c8be04-e762-8190-af7b-d7f2ad55d1df",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "品川音頭",
+      "page_id": "37c8be04-e762-8148-80c4-f305a8a70c37",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "喜多見音頭",
+      "page_id": "37c8be04-e762-813d-a55f-d89ca48b57f7",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "大井どんたく音頭",
+      "page_id": "37c8be04-e762-8154-bf71-f62659cae0fc",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "大東京音頭",
+      "page_id": "37c8be04-e762-8161-ba43-d4939d67c25d",
+      "classification": "定番曲"
+    },
+    {
+      "song_name": "大森甚句",
+      "page_id": "37c8be04-e762-81c7-9aa0-dbbb08566a87",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "大江戸東京音頭",
+      "page_id": "37c8be04-e762-8106-b7c2-f84ed902c1a0",
+      "classification": "定番曲"
+    },
+    {
+      "song_name": "少年八木節",
+      "page_id": "37c8be04-e762-8130-a8a3-e4a7e1c5bffb",
+      "classification": "定番曲"
+    },
+    {
+      "song_name": "山王音頭",
+      "page_id": "37c8be04-e762-81e4-9d85-e5fe415b10a7",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "山王音頭と千代田踊り",
+      "page_id": "37c8be04-e762-81ce-a633-cb73b512d438",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "岐阜音頭",
+      "page_id": "37c8be04-e762-816b-a83f-d3dac98594f5",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "平和音頭",
+      "page_id": "37c8be04-e762-81e8-9769-e2651dd48f43",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "戸越音頭",
+      "page_id": "37c8be04-e762-8192-a060-f0bc0fa2dea8",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "文京音頭",
+      "page_id": "37c8be04-e762-8140-9c6c-c13ab87ba20c",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "新浅草橋音頭",
+      "page_id": "37c8be04-e762-817a-8d61-c34efbc2f817",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "村崎野音頭",
+      "page_id": "37c8be04-e762-818d-a5a2-c8ebcd5dd671",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "東京五輪音頭",
+      "page_id": "37c8be04-e762-8117-8060-f2bfec9a85b1",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "東京北都音頭",
+      "page_id": "37c8be04-e762-8175-8762-f43aa2c42609",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "東京音頭",
+      "page_id": "37c8be04-e762-81e1-85db-d379edfaad0a",
+      "classification": "定番曲"
+    },
+    {
+      "song_name": "板橋音頭",
+      "page_id": "37c8be04-e762-8113-86f2-c477a733a8dc",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "横浜開港祭BON",
+      "page_id": "37c8be04-e762-81ee-9381-eac513d10a22",
+      "classification": "未分類"
+    },
+    {
+      "song_name": "江州音頭",
+      "page_id": "37c8be04-e762-8186-b77a-eca901cee9f9",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "池ニ郎音頭",
+      "page_id": "37c8be04-e762-81d2-993b-f42cce85ff64",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "河内音頭",
+      "page_id": "37c8be04-e762-812f-8047-c775c2d5c287",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "津軽甚句",
+      "page_id": "37c8be04-e762-81e4-9e88-d322a5627129",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "浅草ばし音頭",
+      "page_id": "37c8be04-e762-81a1-83c0-cc48a8fa1487",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "浅草橋音頭",
+      "page_id": "37c8be04-e762-814d-943d-c303b854a849",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "浜っ娘音頭",
+      "page_id": "37c8be04-e762-81c7-8671-d8b281bd0bb9",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "濱町音頭",
+      "page_id": "37c8be04-e762-8155-8854-e9f33406ea43",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "炭坑節",
+      "page_id": "37c8be04-e762-81af-a3ad-f121f4dad39b",
+      "classification": "定番曲"
+    },
+    {
+      "song_name": "王子小唄",
+      "page_id": "37c8be04-e762-81d7-a996-ef49b2c32563",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "白鳥おどり",
+      "page_id": "37c8be04-e762-8134-94ee-d54bad5dd4d1",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "白鳥踊り",
+      "page_id": "37c8be04-e762-81ee-b8b8-db839321056a",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "相馬壁塗り甚句",
+      "page_id": "37c8be04-e762-8141-9618-d9181e16daa2",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "真室川音頭",
+      "page_id": "37c8be04-e762-8117-8312-d0a0df9da883",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "秋田音頭",
+      "page_id": "37c8be04-e762-81e9-a573-f794a467ec2d",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "築地音頭",
+      "page_id": "37c8be04-e762-817d-9ef5-c5f15f94446c",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "紀州白浜音頭",
+      "page_id": "37c8be04-e762-8165-b9bc-de0106bc62e3",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "繁昌節",
+      "page_id": "37c8be04-e762-8138-bf19-df1c07860017",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "花火音頭",
+      "page_id": "37c8be04-e762-8137-90be-d7843a778c74",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "花笠音頭",
+      "page_id": "37c8be04-e762-81b3-940f-dd2e48fa2b7c",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "荒川音頭",
+      "page_id": "37c8be04-e762-8133-ae10-e9d35a4f4b6e",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "貝殻節",
+      "page_id": "37c8be04-e762-81c9-bce6-d67c32084738",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "郡上おどり",
+      "page_id": "37c8be04-e762-81ad-ad68-d5a7c173b5e9",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "郡上節",
+      "page_id": "37c8be04-e762-81d9-b877-d05c755b3e86",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "郡上踊り",
+      "page_id": "37c8be04-e762-8111-81cb-d115e4f42470",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "野毛山節",
+      "page_id": "37c8be04-e762-815a-ac7e-c566997cab26",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "錦糸町河内音頭",
+      "page_id": "37c8be04-e762-8145-88ad-e46d06b84822",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "隅田公園そよ風ひろばに踊り",
+      "page_id": "37c8be04-e762-8189-bd29-cc7c4de0614f",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "隠岐のしげさ節",
+      "page_id": "37c8be04-e762-812a-8763-d308465619c3",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "飛鳥山公園輪踊り",
+      "page_id": "37c8be04-e762-8118-b46b-f2802a445af8",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "飛鳥山音頭",
+      "page_id": "37c8be04-e762-8165-bb66-e0aa3491a73f",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "鯵ヶ沢甚句",
+      "page_id": "37c8be04-e762-811b-ad34-c9c338de0125",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "鯵ヶ沢甚句と村崎野音頭",
+      "page_id": "37c8be04-e762-814d-acef-fd9a046d828a",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "鰺ヶ沢甚句",
+      "page_id": "37c8be04-e762-8183-8a21-fa3a015eeb32",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "麦わら音頭",
+      "page_id": "37c8be04-e762-81a4-8c1b-d0c5f068cf81",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "黒石よされ節",
+      "page_id": "37c8be04-e762-81fb-a8da-d7f119c488f5",
+      "classification": "ご当地曲"
+    },
+    {
+      "song_name": "黒石甚句",
+      "page_id": "37c8be04-e762-814b-81d2-fb38861ef6c1",
+      "classification": "ご当地曲"
+    }
+  ],
+  "skipped": [],
+  "connected_glossary": [
+    {
+      "term": "えびすくい音頭",
+      "page_id": "37b8be04-e762-8157-8b7c-ca9359d43df7"
+    },
+    {
+      "term": "さくら音頭",
+      "page_id": "37b8be04-e762-8116-bcb6-e9f618334a81"
+    },
+    {
+      "term": "じゃこっぺ踊り",
+      "page_id": "37b8be04-e762-81c2-a963-f9965a0606a7"
+    },
+    {
+      "term": "たいとう音頭",
+      "page_id": "37b8be04-e762-81d7-a55b-ed0ddd1717e2"
+    },
+    {
+      "term": "まんまる音頭",
+      "page_id": "37b8be04-e762-81c3-b88a-cd108c74fbd2"
+    },
+    {
+      "term": "よこはまアラメヤ音頭",
+      "page_id": "37b8be04-e762-81ac-95f7-fe42188bb154"
+    },
+    {
+      "term": "平和音頭",
+      "page_id": "37b8be04-e762-811e-b8e7-c8d68d14c76e"
+    },
+    {
+      "term": "文京音頭",
+      "page_id": "37b8be04-e762-8128-86ab-df745441f2d6"
+    },
+    {
+      "term": "新浅草橋音頭",
+      "page_id": "37b8be04-e762-814f-8a96-ce8981a809e7"
+    },
+    {
+      "term": "東京五輪音頭",
+      "page_id": "37b8be04-e762-81b4-b6ee-f2fb4ebba19d"
+    },
+    {
+      "term": "東京北都音頭",
+      "page_id": "37b8be04-e762-8183-9063-c3682204586b"
+    },
+    {
+      "term": "東京音頭",
+      "page_id": "37b8be04-e762-8155-a523-f04aea6278fd"
+    },
+    {
+      "term": "板橋音頭",
+      "page_id": "37b8be04-e762-8113-af7b-d1996ab29963"
+    },
+    {
+      "term": "横浜開港祭BON",
+      "page_id": "37b8be04-e762-811b-905a-e163959ccd1a"
+    },
+    {
+      "term": "江州音頭",
+      "page_id": "37b8be04-e762-813b-b841-f18c70ff5e17"
+    },
+    {
+      "term": "浅草ばし音頭",
+      "page_id": "37b8be04-e762-81cd-bd0e-ead65639a957"
+    },
+    {
+      "term": "浜っ娘音頭",
+      "page_id": "37b8be04-e762-8100-8d3e-ca354d4d8132"
+    },
+    {
+      "term": "秋田音頭",
+      "page_id": "37b8be04-e762-8135-83e6-f3cb6529e58b"
+    },
+    {
+      "term": "荒川音頭",
+      "page_id": "37b8be04-e762-8132-8b6c-c6d60fa8c27e"
+    },
+    {
+      "term": "郡上踊り",
+      "page_id": "37b8be04-e762-8194-95d9-fc1a76330296"
+    },
+    {
+      "term": "飛鳥山公園輪踊り",
+      "page_id": "37b8be04-e762-81f4-8e6e-e985d384f923"
+    },
+    {
+      "term": "飛鳥山音頭",
+      "page_id": "37b8be04-e762-8175-af6a-d1f1c19253c7"
+    },
+    {
+      "term": "黒石よされ節",
+      "page_id": "37b8be04-e762-8115-827d-f47629ebc163"
+    }
+  ]
+}

@@ -1,0 +1,719 @@
+{
+  "source": "data/glossary_v2_oto123_review_result.json",
+  "dry_run": true,
+  "accepted_unique": 88,
+  "created_count": 0,
+  "skipped_count": 88,
+  "failed_count": 0,
+  "duplicates_collapsed": [
+    "盆踊りオフ会"
+  ],
+  "created": [],
+  "skipped": [
+    {
+      "term": "お邪魔する",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-810d-8007-c724c22d77f8"
+      ]
+    },
+    {
+      "term": "リード",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-81e9-925e-c7211c491651"
+      ]
+    },
+    {
+      "term": "予習",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-81ad-a0ee-d0348708bec0"
+      ]
+    },
+    {
+      "term": "内側",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-81a6-9b2f-d54b483b3165"
+      ]
+    },
+    {
+      "term": "初見",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-8198-aa32-cecbcc4f2871"
+      ]
+    },
+    {
+      "term": "初見曲",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-8113-82ff-e46eb5aed8eb"
+      ]
+    },
+    {
+      "term": "後ろにつく",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-81b8-8e22-df3de2a7ed7a"
+      ]
+    },
+    {
+      "term": "後ろに付かせて下さい",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-81b1-acd4-d9e6fad0fbd6"
+      ]
+    },
+    {
+      "term": "徹夜踊り",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-81a7-8bd0-f031fa18cd7a"
+      ]
+    },
+    {
+      "term": "所作で捨てる",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-817e-8cd2-e02bd5194d98"
+      ]
+    },
+    {
+      "term": "櫓に上がる",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-815f-a3bd-dd50fb052877"
+      ]
+    },
+    {
+      "term": "流し踊り",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-811e-9635-d2711e01afb6"
+      ]
+    },
+    {
+      "term": "盆踊りオフ会",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-817b-834f-c0f3c56e5e48"
+      ]
+    },
+    {
+      "term": "盆踊り巡り",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-8148-8c40-cc8ea1eba8d6"
+      ]
+    },
+    {
+      "term": "盆踊り巡る",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-818c-ba70-f7d5c91fad43"
+      ]
+    },
+    {
+      "term": "直前練習",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-8153-afc1-c54ca5a54ab2"
+      ]
+    },
+    {
+      "term": "練習会",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-8150-ac8f-dd09aa09a531"
+      ]
+    },
+    {
+      "term": "見よう見まね",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-8193-a432-cfcd7026a463"
+      ]
+    },
+    {
+      "term": "見学だけ",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-8139-9a71-d738a0d2792d"
+      ]
+    },
+    {
+      "term": "踊りに行く",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-81bb-8f2f-cf2ca6b944f8"
+      ]
+    },
+    {
+      "term": "踊りの輪に入る",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-8155-a154-eb63fc7bc8df"
+      ]
+    },
+    {
+      "term": "踊り手",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-81a4-bead-e7aeb2a9347e"
+      ]
+    },
+    {
+      "term": "踊り流し",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-81ac-abbf-c3f15787db75"
+      ]
+    },
+    {
+      "term": "輪の中に入る",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-81c8-8acc-c3097386ccbe"
+      ]
+    },
+    {
+      "term": "輪の外側",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-819b-a7ec-c8d80f45a162"
+      ]
+    },
+    {
+      "term": "遠征",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-812c-9036-f8a17231a854"
+      ]
+    },
+    {
+      "term": "関東遠征",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-81c4-b655-d5550ae96806"
+      ]
+    },
+    {
+      "term": "飛び入り",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-8188-aee3-ebc1b24dfbc2"
+      ]
+    },
+    {
+      "term": "飛び入り専門",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-8166-8218-d2a547832207"
+      ]
+    },
+    {
+      "term": "お暇",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-8186-9587-efb014c72cc7"
+      ]
+    },
+    {
+      "term": "櫓上",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-81fb-ae74-c4d7426d235f"
+      ]
+    },
+    {
+      "term": "踊りきる",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-81cb-b3ed-c9ca2cf0c02e"
+      ]
+    },
+    {
+      "term": "踊りにくい",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-8190-8983-cffe135db6ce"
+      ]
+    },
+    {
+      "term": "踊りやすい",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-8173-b383-d832bd6ee522"
+      ]
+    },
+    {
+      "term": "踊り子",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-8102-9e88-f649cad05877"
+      ]
+    },
+    {
+      "term": "コソ練",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-8102-8675-c4ad7aaa0b7d"
+      ]
+    },
+    {
+      "term": "通過",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-8125-a968-e4598243ef6d"
+      ]
+    },
+    {
+      "term": "トランス状態",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-8181-b959-d9d7160e94e1"
+      ]
+    },
+    {
+      "term": "盆踊りロス",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-814a-8ec8-e27191f84659"
+      ]
+    },
+    {
+      "term": "総本山",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-811e-82f6-e4097177ff45"
+      ]
+    },
+    {
+      "term": "踊り狂う",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-812b-a05e-c0606f3b00b9"
+      ]
+    },
+    {
+      "term": "AFATH2026",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-819e-b6d2-f84e7f1217bf"
+      ]
+    },
+    {
+      "term": "AFATH26",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-8144-887d-e07d27bb0617"
+      ]
+    },
+    {
+      "term": "BON-ODORI",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-8158-bec3-fa3172035a70"
+      ]
+    },
+    {
+      "term": "Bonjū",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-815b-9ee7-ca97ae1ccfb6"
+      ]
+    },
+    {
+      "term": "Min-Yoi's",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-8131-a18f-e4556c46322d"
+      ]
+    },
+    {
+      "term": "すみジャズ",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-8197-93d7-ec55b5d297b7"
+      ]
+    },
+    {
+      "term": "ぼーんとぅ盆踊り",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-81ae-8112-fb6cb1c4c881"
+      ]
+    },
+    {
+      "term": "ぼーんとぅ盆踊り2026夏",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-8114-82be-d5b2dde0bde1"
+      ]
+    },
+    {
+      "term": "みんよいず",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-81ea-b4f1-dbfdee68031e"
+      ]
+    },
+    {
+      "term": "みん盆",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-81bd-8d14-d70dfcda9293"
+      ]
+    },
+    {
+      "term": "やまぼん",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-81a3-ab02-d9ea49790b61"
+      ]
+    },
+    {
+      "term": "ろまい会",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-81a4-b7c8-f7948c219a48"
+      ]
+    },
+    {
+      "term": "アキバ盆踊り",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-81c5-b6ca-c9ca4c1d6786"
+      ]
+    },
+    {
+      "term": "アニソン盆踊り",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-8149-a55a-e00379f6867b"
+      ]
+    },
+    {
+      "term": "アニメソング盆踊り",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-8136-b40c-f502d9d9f694"
+      ]
+    },
+    {
+      "term": "ハダ盆",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-81a0-bbce-c76a7dfae2b8"
+      ]
+    },
+    {
+      "term": "ボンジャム",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-81a4-bb5d-cb5b35751a9d"
+      ]
+    },
+    {
+      "term": "ミンヨイズ",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-8159-b8d2-db7f404d8a36"
+      ]
+    },
+    {
+      "term": "ラビドビ",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-81fe-8dbe-cebef0201acd"
+      ]
+    },
+    {
+      "term": "ラビードビー",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-81cf-8d9f-fb6f0096bcd6"
+      ]
+    },
+    {
+      "term": "晴盆",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-81b0-adf9-f172668adc62"
+      ]
+    },
+    {
+      "term": "晴盆様",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-8126-af8b-fbaee46b63f2"
+      ]
+    },
+    {
+      "term": "沼ぼん",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-81c5-9b95-fdfdf6f6fb60"
+      ]
+    },
+    {
+      "term": "盆ジョビ",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-8119-ab6d-fd2eb5013f02"
+      ]
+    },
+    {
+      "term": "盆ジョヴィ",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-8182-8a2f-e0545df340f2"
+      ]
+    },
+    {
+      "term": "盆ダンス",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-819d-b56f-d90c34694e8f"
+      ]
+    },
+    {
+      "term": "盆フェス",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-819e-ae84-e82a93818b40"
+      ]
+    },
+    {
+      "term": "盆フェスタ",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-818a-8441-e945bce0132b"
+      ]
+    },
+    {
+      "term": "盆友",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-81ef-b1f2-d33b83f8d35f"
+      ]
+    },
+    {
+      "term": "盆女",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-81df-ab53-e0c2fe4778d3"
+      ]
+    },
+    {
+      "term": "盆獣",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-81bc-82fe-cde536186ce9"
+      ]
+    },
+    {
+      "term": "盆踊らー",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-810d-983d-fc629ce04e01"
+      ]
+    },
+    {
+      "term": "盆踊りオフ練",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-81fd-b8d9-e4fe0f6d347b"
+      ]
+    },
+    {
+      "term": "盆踊りジョヴィ",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-8116-9443-fe62617f7fc6"
+      ]
+    },
+    {
+      "term": "盆踊るトーク",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-8135-b61b-de2b458cf5da"
+      ]
+    },
+    {
+      "term": "盆踊ラー",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-819e-828f-cfeb268a2fd7"
+      ]
+    },
+    {
+      "term": "秦野盆部",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-8110-a92a-ee5c0dfbaba2"
+      ]
+    },
+    {
+      "term": "超ニコニコ盆踊り",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-81f6-8bf1-d64349497854"
+      ]
+    },
+    {
+      "term": "超会ニコニコ盆踊り",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-81af-b3b1-cdfaa8492d27"
+      ]
+    },
+    {
+      "term": "踊らー",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-8105-9953-fd85b8c31483"
+      ]
+    },
+    {
+      "term": "踊ろまい会",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-8170-aafa-d4895562496e"
+      ]
+    },
+    {
+      "term": "開港祭BON-ODORI",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-8170-9e3f-ebafbcc09d52"
+      ]
+    },
+    {
+      "term": "DH",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-8160-9191-ca89b1961c82"
+      ]
+    },
+    {
+      "term": "あのマツケン",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-81a6-b763-ca290f216a05"
+      ]
+    },
+    {
+      "term": "なみぼん",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-8184-970a-ef6f96df0850"
+      ]
+    },
+    {
+      "term": "まめかち",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-8137-80b7-d62b3c58b8ce"
+      ]
+    },
+    {
+      "term": "ドアラONDO",
+      "reason": "existing",
+      "count": 1,
+      "page_ids": [
+        "37b8be04-e762-81b7-9554-c999292333e1"
+      ]
+    }
+  ],
+  "failed": []
+}

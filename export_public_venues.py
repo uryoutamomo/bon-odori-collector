@@ -27,6 +27,7 @@ API_VERSION = notion_config.NOTION_API_VERSION
 OUT_DIR = os.path.join(os.path.dirname(__file__), "data", "public")
 OUT_JSON = os.path.join(OUT_DIR, "venues_public.json")
 OUT_JS = os.path.join(OUT_DIR, "venues_public.js")
+GEO_JSON = os.path.join(OUT_DIR, "venues_geo.json")
 
 # 東京23区（公開サイトの対象範囲）。表示順もこの順に固定する。
 TOKYO_WARDS = (
@@ -141,6 +142,29 @@ def months_from_memo(memo):
     return months
 
 
+def _geo_key(name, address):
+    return (clean_public_text(name) or "", clean_public_text(address) or "")
+
+
+def load_venue_geo():
+    """venues_geo.json から (会場名, 住所) -> {lat, lng} の対応を作る。"""
+    if not os.path.exists(GEO_JSON):
+        return {}
+    with open(GEO_JSON, encoding="utf-8") as f:
+        rows = json.load(f)
+    geo = {}
+    for row in rows:
+        lat = row.get("lat")
+        lng = row.get("lng", row.get("lon"))
+        if lat is None or lng is None:
+            continue
+        geo[_geo_key(row.get("name"), row.get("address"))] = {
+            "lat": lat,
+            "lng": lng,
+        }
+    return geo
+
+
 def fetch_venue_months():
     """イベントDBから venue_page_id -> set(月) の対応を作る。"""
     months_by_venue = {}
@@ -161,6 +185,7 @@ def fetch_venue_months():
 
 def build_public_venues():
     months_by_venue = fetch_venue_months()
+    geo_by_venue = load_venue_geo()
     included, excluded, no_month, dup_check = [], [], [], {}
 
     for row in _query_all(notion_config.VENUE_DATA_SOURCE_ID):
@@ -181,14 +206,19 @@ def build_public_venues():
         if not months:
             no_month.append(name)
         scale = _prop(props, "規模")
+        address = clean_public_text(_prop(props, "住所"))
         entry = {
             "name": clean_public_text(name),
             "area": ward,
             "months": months,
             "scale": scale if scale in ("大", "中", "小") else None,
             "access": clean_public_text(_prop(props, "アクセス")),
-            "address": clean_public_text(_prop(props, "住所")),
+            "address": address,
+            "description": clean_public_text(_prop(props, "公開紹介文")),
         }
+        geo = geo_by_venue.get(_geo_key(name, address))
+        if geo:
+            entry.update(geo)
         included.append(entry)
         dup_check.setdefault(name, 0)
         dup_check[name] += 1
@@ -213,6 +243,9 @@ def write_outputs(venues):
             "month": "・".join(f"{m}月" for m in v["months"]) or "時期未確認",
             "scale": v["scale"] or "規模未確認",
             "access": v["access"] or "",
+            "description": v.get("description") or "",
+            "lat": v.get("lat"),
+            "lng": v.get("lng"),
         })
     with open(OUT_JS, "w", encoding="utf-8") as f:
         f.write("const VENUES = ")
