@@ -1,8 +1,8 @@
 {
   "generated_by": "build_event_song_candidates.py",
-  "count": 123,
+  "count": 124,
   "public_event_count": 68,
-  "review_count": 55,
+  "review_count": 56,
   "candidates": [
     {
       "id": "addaf74cfe28988f",
@@ -1372,6 +1372,28 @@
           "url": "https://x.com/orMuRaSaKi/status/2064714026626744346",
           "date": "2026-06-10T14:19:19+00:00",
           "text": "むらさき🟪アルネの事件簿🦇202601アニメ放送🎊\n明日の発表されるまでは全ての可能性が存在しているから\n「夏だよ！リンちゃん！超盆踊り大会！～吸血音頭でよよいのよい～」\nの可能性もあるわけだ"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "ff83de0d000d6f09",
+      "song_name": "岸和田音頭",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "latest_news",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1adi1iWDJDd3FKOHVfNXpfZGVCb1FJcDdsSjd1WVNtRllUUklhVk9qR2o1Wm1VN3B5MXdYVlFqUnlLcXo0eU1GTnZhdmNla0dNSGhCemZJMXpFanUwcEY4MTFmTFR0LWhfMkE?oc=5",
+          "date": "Sun, 15 Mar 2026 07:00:00 GMT",
+          "text": "全国でも珍しい「春の盆踊り大会」開催｜岸和田音頭・縁日・キッチンカーが楽しめる参加型イベント - PR TIMES"
         }
       ],
       "already_public": false,
