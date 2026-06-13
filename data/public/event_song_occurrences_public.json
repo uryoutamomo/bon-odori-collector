@@ -1,6 +1,6 @@
 {
   "generated_by": "build_song_occurrences.py",
-  "generated_at": "2026-06-13T00:49:58.633570+00:00",
+  "generated_at": "2026-06-13T02:30:44.833615+00:00",
   "target_year": 2026,
   "occurrences": [
     {
@@ -649,8 +649,8 @@
           "probability": 95,
           "basis": "current_observed",
           "basis_label": "今年実測",
-          "evidence_count": 2,
-          "speaker_count": 1,
+          "evidence_count": 3,
+          "speaker_count": 2,
           "setlist_complete": true,
           "evidence_urls": [
             "https://www.youtube.com/watch?v=-USPVIqmUKQ",
@@ -662,8 +662,8 @@
           "probability": 95,
           "basis": "current_observed",
           "basis_label": "今年実測",
-          "evidence_count": 2,
-          "speaker_count": 1,
+          "evidence_count": 3,
+          "speaker_count": 2,
           "setlist_complete": true,
           "evidence_urls": [
             "https://www.youtube.com/watch?v=6ZCsHqoCz8Y",
@@ -675,8 +675,8 @@
           "probability": 95,
           "basis": "current_observed",
           "basis_label": "今年実測",
-          "evidence_count": 42,
-          "speaker_count": 1,
+          "evidence_count": 43,
+          "speaker_count": 2,
           "setlist_complete": true,
           "evidence_urls": [
             "https://www.youtube.com/watch?v=-RP0e0LUCZk",
@@ -691,8 +691,8 @@
           "probability": 95,
           "basis": "current_observed",
           "basis_label": "今年実測",
-          "evidence_count": 3,
-          "speaker_count": 1,
+          "evidence_count": 4,
+          "speaker_count": 2,
           "setlist_complete": true,
           "evidence_urls": [
             "https://www.youtube.com/watch?v=Ilz6hDp8QbA",
@@ -705,8 +705,8 @@
           "probability": 95,
           "basis": "current_observed",
           "basis_label": "今年実測",
-          "evidence_count": 42,
-          "speaker_count": 1,
+          "evidence_count": 43,
+          "speaker_count": 2,
           "setlist_complete": true,
           "evidence_urls": [
             "https://www.youtube.com/watch?v=-RP0e0LUCZk",
@@ -721,8 +721,8 @@
           "probability": 95,
           "basis": "current_observed",
           "basis_label": "今年実測",
-          "evidence_count": 2,
-          "speaker_count": 1,
+          "evidence_count": 3,
+          "speaker_count": 2,
           "setlist_complete": true,
           "evidence_urls": [
             "https://www.youtube.com/watch?v=oxZtUYXg06w",
@@ -734,8 +734,8 @@
           "probability": 95,
           "basis": "current_observed",
           "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
+          "evidence_count": 2,
+          "speaker_count": 2,
           "setlist_complete": true,
           "evidence_urls": [
             "https://www.youtube.com/watch?v=3WDSTaX0-cw"
@@ -746,8 +746,8 @@
           "probability": 95,
           "basis": "current_observed",
           "basis_label": "今年実測",
-          "evidence_count": 42,
-          "speaker_count": 1,
+          "evidence_count": 43,
+          "speaker_count": 2,
           "setlist_complete": true,
           "evidence_urls": [
             "https://www.youtube.com/watch?v=-RP0e0LUCZk",
@@ -762,8 +762,8 @@
           "probability": 95,
           "basis": "current_observed",
           "basis_label": "今年実測",
-          "evidence_count": 2,
-          "speaker_count": 1,
+          "evidence_count": 3,
+          "speaker_count": 2,
           "setlist_complete": true,
           "evidence_urls": [
             "https://www.youtube.com/watch?v=UmULl-H4adI",
@@ -775,8 +775,8 @@
           "probability": 95,
           "basis": "current_observed",
           "basis_label": "今年実測",
-          "evidence_count": 3,
-          "speaker_count": 1,
+          "evidence_count": 4,
+          "speaker_count": 2,
           "setlist_complete": true,
           "evidence_urls": [
             "https://www.youtube.com/watch?v=81ECma43tG8",
@@ -789,8 +789,8 @@
           "probability": 95,
           "basis": "current_observed",
           "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
+          "evidence_count": 2,
+          "speaker_count": 2,
           "setlist_complete": true,
           "evidence_urls": [
             "https://www.youtube.com/watch?v=eUdaKOAjGEo"
@@ -801,8 +801,8 @@
           "probability": 95,
           "basis": "current_observed",
           "basis_label": "今年実測",
-          "evidence_count": 2,
-          "speaker_count": 1,
+          "evidence_count": 3,
+          "speaker_count": 2,
           "setlist_complete": true,
           "evidence_urls": [
             "https://www.youtube.com/watch?v=f3rafNm0rZE",
@@ -814,8 +814,8 @@
           "probability": 95,
           "basis": "current_observed",
           "basis_label": "今年実測",
-          "evidence_count": 42,
-          "speaker_count": 1,
+          "evidence_count": 43,
+          "speaker_count": 2,
           "setlist_complete": true,
           "evidence_urls": [
             "https://www.youtube.com/watch?v=-RP0e0LUCZk",
@@ -830,8 +830,8 @@
           "probability": 95,
           "basis": "current_observed",
           "basis_label": "今年実測",
-          "evidence_count": 42,
-          "speaker_count": 1,
+          "evidence_count": 43,
+          "speaker_count": 2,
           "setlist_complete": true,
           "evidence_urls": [
             "https://www.youtube.com/watch?v=-RP0e0LUCZk",
@@ -846,8 +846,8 @@
           "probability": 95,
           "basis": "current_observed",
           "basis_label": "今年実測",
-          "evidence_count": 2,
-          "speaker_count": 1,
+          "evidence_count": 3,
+          "speaker_count": 2,
           "setlist_complete": true,
           "evidence_urls": [
             "https://www.youtube.com/watch?v=XUheysv-xew",
@@ -859,8 +859,8 @@
           "probability": 95,
           "basis": "current_observed",
           "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
+          "evidence_count": 2,
+          "speaker_count": 2,
           "setlist_complete": true,
           "evidence_urls": [
             "https://www.youtube.com/watch?v=UoiBfNfZswE"
@@ -871,8 +871,8 @@
           "probability": 95,
           "basis": "current_observed",
           "basis_label": "今年実測",
-          "evidence_count": 14,
-          "speaker_count": 1,
+          "evidence_count": 15,
+          "speaker_count": 2,
           "setlist_complete": true,
           "evidence_urls": [
             "https://www.youtube.com/watch?v=-46emh0_BSA",
@@ -887,8 +887,8 @@
           "probability": 95,
           "basis": "current_observed",
           "basis_label": "今年実測",
-          "evidence_count": 3,
-          "speaker_count": 1,
+          "evidence_count": 4,
+          "speaker_count": 2,
           "setlist_complete": true,
           "evidence_urls": [
             "https://www.youtube.com/watch?v=Uohu7rIJ6jk",
@@ -901,8 +901,8 @@
           "probability": 95,
           "basis": "current_observed",
           "basis_label": "今年実測",
-          "evidence_count": 42,
-          "speaker_count": 1,
+          "evidence_count": 43,
+          "speaker_count": 2,
           "setlist_complete": true,
           "evidence_urls": [
             "https://www.youtube.com/watch?v=-RP0e0LUCZk",
@@ -917,8 +917,8 @@
           "probability": 95,
           "basis": "current_observed",
           "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
+          "evidence_count": 2,
+          "speaker_count": 2,
           "setlist_complete": true,
           "evidence_urls": [
             "https://www.youtube.com/watch?v=c9uotLXGYLQ"
@@ -929,8 +929,8 @@
           "probability": 95,
           "basis": "current_observed",
           "basis_label": "今年実測",
-          "evidence_count": 54,
-          "speaker_count": 1,
+          "evidence_count": 55,
+          "speaker_count": 2,
           "setlist_complete": true,
           "evidence_urls": [
             "https://www.youtube.com/watch?v=-46emh0_BSA",
@@ -945,8 +945,8 @@
           "probability": 95,
           "basis": "current_observed",
           "basis_label": "今年実測",
-          "evidence_count": 2,
-          "speaker_count": 1,
+          "evidence_count": 3,
+          "speaker_count": 2,
           "setlist_complete": true,
           "evidence_urls": [
             "https://www.youtube.com/watch?v=iDSSkftykFI",
@@ -958,8 +958,8 @@
           "probability": 95,
           "basis": "current_observed",
           "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
+          "evidence_count": 2,
+          "speaker_count": 2,
           "setlist_complete": true,
           "evidence_urls": [
             "https://www.youtube.com/watch?v=7TkSF51SEs0"
@@ -970,8 +970,8 @@
           "probability": 95,
           "basis": "current_observed",
           "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
+          "evidence_count": 2,
+          "speaker_count": 2,
           "setlist_complete": true,
           "evidence_urls": [
             "https://www.youtube.com/watch?v=wYE6MCa9XxQ"
@@ -982,8 +982,8 @@
           "probability": 95,
           "basis": "current_observed",
           "basis_label": "今年実測",
-          "evidence_count": 2,
-          "speaker_count": 1,
+          "evidence_count": 3,
+          "speaker_count": 2,
           "setlist_complete": true,
           "evidence_urls": [
             "https://www.youtube.com/watch?v=Q4foTQKMifc",
@@ -995,8 +995,8 @@
           "probability": 95,
           "basis": "current_observed",
           "basis_label": "今年実測",
-          "evidence_count": 2,
-          "speaker_count": 1,
+          "evidence_count": 3,
+          "speaker_count": 2,
           "setlist_complete": true,
           "evidence_urls": [
             "https://www.youtube.com/watch?v=0pVYOUkQKU0",
@@ -1008,8 +1008,8 @@
           "probability": 95,
           "basis": "current_observed",
           "basis_label": "今年実測",
-          "evidence_count": 2,
-          "speaker_count": 1,
+          "evidence_count": 3,
+          "speaker_count": 2,
           "setlist_complete": true,
           "evidence_urls": [
             "https://www.youtube.com/watch?v=5wy5lHoqj9w",
@@ -1021,8 +1021,8 @@
           "probability": 95,
           "basis": "current_observed",
           "basis_label": "今年実測",
-          "evidence_count": 2,
-          "speaker_count": 1,
+          "evidence_count": 3,
+          "speaker_count": 2,
           "setlist_complete": true,
           "evidence_urls": [
             "https://www.youtube.com/watch?v=ROUIXWrtjj8",

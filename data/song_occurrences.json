@@ -1,6 +1,6 @@
 {
   "generated_by": "build_song_occurrences.py",
-  "generated_at": "2026-06-13T00:49:58.633570+00:00",
+  "generated_at": "2026-06-13T02:30:44.833615+00:00",
   "target_year": 2026,
   "occurrence_count": 14,
   "song_relation_count": 92,
@@ -3986,12 +3986,24 @@
       "songs": [
         {
           "song_name": "Beat It",
-          "evidence_count": 2,
-          "speaker_count": 1,
+          "evidence_count": 3,
+          "speaker_count": 2,
           "speakers": [
+            "public_event_snapshot",
             "youtube"
           ],
           "evidence": [
+            {
+              "id": "702d837743326a6063d7",
+              "kind": "hint",
+              "setlist_complete": false,
+              "speaker": "public_event_snapshot",
+              "url": "",
+              "date": "2026-05-31",
+              "year": 2026,
+              "source": "events_public",
+              "text": "Min-Yoi's盆踊りは、品川区の日本民謡会館で行われる盆踊り。5月開催の情報をもとに、公開サイト用に掲載しています。 2026-05-31（日）開催記録。次回日程は未確認。"
+            },
             {
               "id": "6ff4fc5305db8adf035b",
               "kind": "observed",
@@ -4023,12 +4035,24 @@
         },
         {
           "song_name": "おしまこ輪踊り",
-          "evidence_count": 2,
-          "speaker_count": 1,
+          "evidence_count": 3,
+          "speaker_count": 2,
           "speakers": [
+            "public_event_snapshot",
             "youtube"
           ],
           "evidence": [
+            {
+              "id": "fbd998f00c5f10c24a4f",
+              "kind": "hint",
+              "setlist_complete": false,
+              "speaker": "public_event_snapshot",
+              "url": "",
+              "date": "2026-05-31",
+              "year": 2026,
+              "source": "events_public",
+              "text": "Min-Yoi's盆踊りは、品川区の日本民謡会館で行われる盆踊り。5月開催の情報をもとに、公開サイト用に掲載しています。 2026-05-31（日）開催記録。次回日程は未確認。"
+            },
             {
               "id": "ba81a65958b65de37a44",
               "kind": "observed",
@@ -4060,12 +4084,24 @@
         },
         {
           "song_name": "おてもやん",
-          "evidence_count": 42,
-          "speaker_count": 1,
+          "evidence_count": 43,
+          "speaker_count": 2,
           "speakers": [
+            "public_event_snapshot",
             "youtube"
           ],
           "evidence": [
+            {
+              "id": "8b87bb8f69564ac244ec",
+              "kind": "hint",
+              "setlist_complete": false,
+              "speaker": "public_event_snapshot",
+              "url": "",
+              "date": "2026-05-31",
+              "year": 2026,
+              "source": "events_public",
+              "text": "Min-Yoi's盆踊りは、品川区の日本民謡会館で行われる盆踊り。5月開催の情報をもとに、公開サイト用に掲載しています。 2026-05-31（日）開催記録。次回日程は未確認。"
+            },
             {
               "id": "7e4fd9cac63d8fdbd4ae",
               "kind": "observed",
@@ -4537,12 +4573,24 @@
         },
         {
           "song_name": "さくら音頭",
-          "evidence_count": 3,
-          "speaker_count": 1,
+          "evidence_count": 4,
+          "speaker_count": 2,
           "speakers": [
+            "public_event_snapshot",
             "youtube"
           ],
           "evidence": [
+            {
+              "id": "0dd279d08320952da6fc",
+              "kind": "hint",
+              "setlist_complete": false,
+              "speaker": "public_event_snapshot",
+              "url": "",
+              "date": "2026-05-31",
+              "year": 2026,
+              "source": "events_public",
+              "text": "Min-Yoi's盆踊りは、品川区の日本民謡会館で行われる盆踊り。5月開催の情報をもとに、公開サイト用に掲載しています。 2026-05-31（日）開催記録。次回日程は未確認。"
+            },
             {
               "id": "a09eb3019e7cfce8325f",
               "kind": "observed",
@@ -4585,12 +4633,24 @@
         },
         {
           "song_name": "にっぽんチャチャチャ",
-          "evidence_count": 42,
-          "speaker_count": 1,
+          "evidence_count": 43,
+          "speaker_count": 2,
           "speakers": [
+            "public_event_snapshot",
             "youtube"
           ],
           "evidence": [
+            {
+              "id": "23e82815178d0cbfae0c",
+              "kind": "hint",
+              "setlist_complete": false,
+              "speaker": "public_event_snapshot",
+              "url": "",
+              "date": "2026-05-31",
+              "year": 2026,
+              "source": "events_public",
+              "text": "Min-Yoi's盆踊りは、品川区の日本民謡会館で行われる盆踊り。5月開催の情報をもとに、公開サイト用に掲載しています。 2026-05-31（日）開催記録。次回日程は未確認。"
+            },
             {
               "id": "7d2790a4697f201f1031",
               "kind": "observed",
@@ -5062,12 +5122,24 @@
         },
         {
           "song_name": "よこはまアラメヤ音頭",
-          "evidence_count": 2,
-          "speaker_count": 1,
+          "evidence_count": 3,
+          "speaker_count": 2,
           "speakers": [
+            "public_event_snapshot",
             "youtube"
           ],
           "evidence": [
+            {
+              "id": "665a552f33bbcd9bd22e",
+              "kind": "hint",
+              "setlist_complete": false,
+              "speaker": "public_event_snapshot",
+              "url": "",
+              "date": "2026-05-31",
+              "year": 2026,
+              "source": "events_public",
+              "text": "Min-Yoi's盆踊りは、品川区の日本民謡会館で行われる盆踊り。5月開催の情報をもとに、公開サイト用に掲載しています。 2026-05-31（日）開催記録。次回日程は未確認。"
+            },
             {
               "id": "d9432130eb15efd7561f",
               "kind": "observed",
@@ -5099,12 +5171,24 @@
         },
         {
           "song_name": "りんご節",
-          "evidence_count": 1,
-          "speaker_count": 1,
+          "evidence_count": 2,
+          "speaker_count": 2,
           "speakers": [
+            "public_event_snapshot",
             "youtube"
           ],
           "evidence": [
+            {
+              "id": "b1e381cbb51adae7ebb1",
+              "kind": "hint",
+              "setlist_complete": false,
+              "speaker": "public_event_snapshot",
+              "url": "",
+              "date": "2026-05-31",
+              "year": 2026,
+              "source": "events_public",
+              "text": "Min-Yoi's盆踊りは、品川区の日本民謡会館で行われる盆踊り。5月開催の情報をもとに、公開サイト用に掲載しています。 2026-05-31（日）開催記録。次回日程は未確認。"
+            },
             {
               "id": "237db2a488004aee5006",
               "kind": "observed",
@@ -5125,12 +5209,24 @@
         },
         {
           "song_name": "デカンショ節",
-          "evidence_count": 42,
-          "speaker_count": 1,
+          "evidence_count": 43,
+          "speaker_count": 2,
           "speakers": [
+            "public_event_snapshot",
             "youtube"
           ],
           "evidence": [
+            {
+              "id": "423823402e883fca7966",
+              "kind": "hint",
+              "setlist_complete": false,
+              "speaker": "public_event_snapshot",
+              "url": "",
+              "date": "2026-05-31",
+              "year": 2026,
+              "source": "events_public",
+              "text": "Min-Yoi's盆踊りは、品川区の日本民謡会館で行われる盆踊り。5月開催の情報をもとに、公開サイト用に掲載しています。 2026-05-31（日）開催記録。次回日程は未確認。"
+            },
             {
               "id": "d1a7396f36efd0b04e72",
               "kind": "observed",
@@ -5602,12 +5698,24 @@
         },
         {
           "song_name": "下北小唄",
-          "evidence_count": 2,
-          "speaker_count": 1,
+          "evidence_count": 3,
+          "speaker_count": 2,
           "speakers": [
+            "public_event_snapshot",
             "youtube"
           ],
           "evidence": [
+            {
+              "id": "628ebca88e25e3d58474",
+              "kind": "hint",
+              "setlist_complete": false,
+              "speaker": "public_event_snapshot",
+              "url": "",
+              "date": "2026-05-31",
+              "year": 2026,
+              "source": "events_public",
+              "text": "Min-Yoi's盆踊りは、品川区の日本民謡会館で行われる盆踊り。5月開催の情報をもとに、公開サイト用に掲載しています。 2026-05-31（日）開催記録。次回日程は未確認。"
+            },
             {
               "id": "958fbbde450f5c9424bb",
               "kind": "observed",
@@ -5639,12 +5747,24 @@
         },
         {
           "song_name": "佐渡おけさ",
-          "evidence_count": 3,
-          "speaker_count": 1,
+          "evidence_count": 4,
+          "speaker_count": 2,
           "speakers": [
+            "public_event_snapshot",
             "youtube"
           ],
           "evidence": [
+            {
+              "id": "9492638a98869aa4e1ad",
+              "kind": "hint",
+              "setlist_complete": false,
+              "speaker": "public_event_snapshot",
+              "url": "",
+              "date": "2026-05-31",
+              "year": 2026,
+              "source": "events_public",
+              "text": "Min-Yoi's盆踊りは、品川区の日本民謡会館で行われる盆踊り。5月開催の情報をもとに、公開サイト用に掲載しています。 2026-05-31（日）開催記録。次回日程は未確認。"
+            },
             {
               "id": "acb5bfb576d92db37cbe",
               "kind": "observed",
@@ -5687,12 +5807,24 @@
         },
         {
           "song_name": "八戸小唄",
-          "evidence_count": 1,
-          "speaker_count": 1,
+          "evidence_count": 2,
+          "speaker_count": 2,
           "speakers": [
+            "public_event_snapshot",
             "youtube"
           ],
           "evidence": [
+            {
+              "id": "d8d21fe6a94ccbc94979",
+              "kind": "hint",
+              "setlist_complete": false,
+              "speaker": "public_event_snapshot",
+              "url": "",
+              "date": "2026-05-31",
+              "year": 2026,
+              "source": "events_public",
+              "text": "Min-Yoi's盆踊りは、品川区の日本民謡会館で行われる盆踊り。5月開催の情報をもとに、公開サイト用に掲載しています。 2026-05-31（日）開催記録。次回日程は未確認。"
+            },
             {
               "id": "4e413f384bc9cad1060f",
               "kind": "observed",
@@ -5713,12 +5845,24 @@
         },
         {
           "song_name": "堀江盆歌",
-          "evidence_count": 2,
-          "speaker_count": 1,
+          "evidence_count": 3,
+          "speaker_count": 2,
           "speakers": [
+            "public_event_snapshot",
             "youtube"
           ],
           "evidence": [
+            {
+              "id": "e31c44c8faafe48daa81",
+              "kind": "hint",
+              "setlist_complete": false,
+              "speaker": "public_event_snapshot",
+              "url": "",
+              "date": "2026-05-31",
+              "year": 2026,
+              "source": "events_public",
+              "text": "Min-Yoi's盆踊りは、品川区の日本民謡会館で行われる盆踊り。5月開催の情報をもとに、公開サイト用に掲載しています。 2026-05-31（日）開催記録。次回日程は未確認。"
+            },
             {
               "id": "ed7ce96e7a55ac2beb9c",
               "kind": "observed",
@@ -5750,12 +5894,24 @@
         },
         {
           "song_name": "子供盆踊り唄",
-          "evidence_count": 42,
-          "speaker_count": 1,
+          "evidence_count": 43,
+          "speaker_count": 2,
           "speakers": [
+            "public_event_snapshot",
             "youtube"
           ],
           "evidence": [
+            {
+              "id": "0198db321b3ebe174c4a",
+              "kind": "hint",
+              "setlist_complete": false,
+              "speaker": "public_event_snapshot",
+              "url": "",
+              "date": "2026-05-31",
+              "year": 2026,
+              "source": "events_public",
+              "text": "Min-Yoi's盆踊りは、品川区の日本民謡会館で行われる盆踊り。5月開催の情報をもとに、公開サイト用に掲載しています。 2026-05-31（日）開催記録。次回日程は未確認。"
+            },
             {
               "id": "8253e648fb54921c3204",
               "kind": "observed",
@@ -6227,12 +6383,24 @@
         },
         {
           "song_name": "平和音頭",
-          "evidence_count": 42,
-          "speaker_count": 1,
+          "evidence_count": 43,
+          "speaker_count": 2,
           "speakers": [
+            "public_event_snapshot",
             "youtube"
           ],
           "evidence": [
+            {
+              "id": "6c374c21729379487b20",
+              "kind": "hint",
+              "setlist_complete": false,
+              "speaker": "public_event_snapshot",
+              "url": "",
+              "date": "2026-05-31",
+              "year": 2026,
+              "source": "events_public",
+              "text": "Min-Yoi's盆踊りは、品川区の日本民謡会館で行われる盆踊り。5月開催の情報をもとに、公開サイト用に掲載しています。 2026-05-31（日）開催記録。次回日程は未確認。"
+            },
             {
               "id": "aa6aa3bf2a4e380675b5",
               "kind": "observed",
@@ -6704,12 +6872,24 @@
         },
         {
           "song_name": "村崎野音頭",
-          "evidence_count": 2,
-          "speaker_count": 1,
+          "evidence_count": 3,
+          "speaker_count": 2,
           "speakers": [
+            "public_event_snapshot",
             "youtube"
           ],
           "evidence": [
+            {
+              "id": "a1bfb7d01d27c499b1ad",
+              "kind": "hint",
+              "setlist_complete": false,
+              "speaker": "public_event_snapshot",
+              "url": "",
+              "date": "2026-05-31",
+              "year": 2026,
+              "source": "events_public",
+              "text": "Min-Yoi's盆踊りは、品川区の日本民謡会館で行われる盆踊り。5月開催の情報をもとに、公開サイト用に掲載しています。 2026-05-31（日）開催記録。次回日程は未確認。"
+            },
             {
               "id": "440eff820bc93a1e1739",
               "kind": "observed",
@@ -6741,12 +6921,24 @@
         },
         {
           "song_name": "東京音頭",
-          "evidence_count": 1,
-          "speaker_count": 1,
+          "evidence_count": 2,
+          "speaker_count": 2,
           "speakers": [
+            "public_event_snapshot",
             "youtube"
           ],
           "evidence": [
+            {
+              "id": "55d7a5cd92d0d7c57293",
+              "kind": "hint",
+              "setlist_complete": false,
+              "speaker": "public_event_snapshot",
+              "url": "",
+              "date": "2026-05-31",
+              "year": 2026,
+              "source": "events_public",
+              "text": "Min-Yoi's盆踊りは、品川区の日本民謡会館で行われる盆踊り。5月開催の情報をもとに、公開サイト用に掲載しています。 2026-05-31（日）開催記録。次回日程は未確認。"
+            },
             {
               "id": "b77f849957a7ef41e6de",
               "kind": "observed",
@@ -6767,12 +6959,24 @@
         },
         {
           "song_name": "江州音頭",
-          "evidence_count": 14,
-          "speaker_count": 1,
+          "evidence_count": 15,
+          "speaker_count": 2,
           "speakers": [
+            "public_event_snapshot",
             "youtube"
           ],
           "evidence": [
+            {
+              "id": "c202415e62afeabf46bd",
+              "kind": "hint",
+              "setlist_complete": false,
+              "speaker": "public_event_snapshot",
+              "url": "",
+              "date": "2026-05-31",
+              "year": 2026,
+              "source": "events_public",
+              "text": "Min-Yoi's盆踊りは、品川区の日本民謡会館で行われる盆踊り。5月開催の情報をもとに、公開サイト用に掲載しています。 2026-05-31（日）開催記録。次回日程は未確認。"
+            },
             {
               "id": "7fd92564bab7154e3db6",
               "kind": "observed",
@@ -6936,12 +7140,24 @@
         },
         {
           "song_name": "河内音頭",
-          "evidence_count": 3,
-          "speaker_count": 1,
+          "evidence_count": 4,
+          "speaker_count": 2,
           "speakers": [
+            "public_event_snapshot",
             "youtube"
           ],
           "evidence": [
+            {
+              "id": "baac116ddbee62ce8504",
+              "kind": "hint",
+              "setlist_complete": false,
+              "speaker": "public_event_snapshot",
+              "url": "",
+              "date": "2026-05-31",
+              "year": 2026,
+              "source": "events_public",
+              "text": "Min-Yoi's盆踊りは、品川区の日本民謡会館で行われる盆踊り。5月開催の情報をもとに、公開サイト用に掲載しています。 2026-05-31（日）開催記録。次回日程は未確認。"
+            },
             {
               "id": "ad3780c4368264026ab4",
               "kind": "observed",
@@ -6984,12 +7200,24 @@
         },
         {
           "song_name": "牛深ハイヤ",
-          "evidence_count": 42,
-          "speaker_count": 1,
+          "evidence_count": 43,
+          "speaker_count": 2,
           "speakers": [
+            "public_event_snapshot",
             "youtube"
           ],
           "evidence": [
+            {
+              "id": "a734da6031786cf18886",
+              "kind": "hint",
+              "setlist_complete": false,
+              "speaker": "public_event_snapshot",
+              "url": "",
+              "date": "2026-05-31",
+              "year": 2026,
+              "source": "events_public",
+              "text": "Min-Yoi's盆踊りは、品川区の日本民謡会館で行われる盆踊り。5月開催の情報をもとに、公開サイト用に掲載しています。 2026-05-31（日）開催記録。次回日程は未確認。"
+            },
             {
               "id": "798acbf0944512fd09f7",
               "kind": "observed",
@@ -7461,12 +7689,24 @@
         },
         {
           "song_name": "真室川音頭",
-          "evidence_count": 1,
-          "speaker_count": 1,
+          "evidence_count": 2,
+          "speaker_count": 2,
           "speakers": [
+            "public_event_snapshot",
             "youtube"
           ],
           "evidence": [
+            {
+              "id": "de25f011cab37cb9d6de",
+              "kind": "hint",
+              "setlist_complete": false,
+              "speaker": "public_event_snapshot",
+              "url": "",
+              "date": "2026-05-31",
+              "year": 2026,
+              "source": "events_public",
+              "text": "Min-Yoi's盆踊りは、品川区の日本民謡会館で行われる盆踊り。5月開催の情報をもとに、公開サイト用に掲載しています。 2026-05-31（日）開催記録。次回日程は未確認。"
+            },
             {
               "id": "616c96cb764a8acbc6bd",
               "kind": "observed",
@@ -7487,12 +7727,24 @@
         },
         {
           "song_name": "秋田音頭",
-          "evidence_count": 54,
-          "speaker_count": 1,
+          "evidence_count": 55,
+          "speaker_count": 2,
           "speakers": [
+            "public_event_snapshot",
             "youtube"
           ],
           "evidence": [
+            {
+              "id": "4a94280d0fc6f30b23a3",
+              "kind": "hint",
+              "setlist_complete": false,
+              "speaker": "public_event_snapshot",
+              "url": "",
+              "date": "2026-05-31",
+              "year": 2026,
+              "source": "events_public",
+              "text": "Min-Yoi's盆踊りは、品川区の日本民謡会館で行われる盆踊り。5月開催の情報をもとに、公開サイト用に掲載しています。 2026-05-31（日）開催記録。次回日程は未確認。"
+            },
             {
               "id": "69d52b9e80e8d2082e28",
               "kind": "observed",
@@ -8096,12 +8348,24 @@
         },
         {
           "song_name": "紀州白浜音頭",
-          "evidence_count": 2,
-          "speaker_count": 1,
+          "evidence_count": 3,
+          "speaker_count": 2,
           "speakers": [
+            "public_event_snapshot",
             "youtube"
           ],
           "evidence": [
+            {
+              "id": "4d03d2c34acbf5357d7a",
+              "kind": "hint",
+              "setlist_complete": false,
+              "speaker": "public_event_snapshot",
+              "url": "",
+              "date": "2026-05-31",
+              "year": 2026,
+              "source": "events_public",
+              "text": "Min-Yoi's盆踊りは、品川区の日本民謡会館で行われる盆踊り。5月開催の情報をもとに、公開サイト用に掲載しています。 2026-05-31（日）開催記録。次回日程は未確認。"
+            },
             {
               "id": "ceb40745b3129023062b",
               "kind": "observed",
@@ -8133,12 +8397,24 @@
         },
         {
           "song_name": "花笠音頭",
-          "evidence_count": 1,
-          "speaker_count": 1,
+          "evidence_count": 2,
+          "speaker_count": 2,
           "speakers": [
+            "public_event_snapshot",
             "youtube"
           ],
           "evidence": [
+            {
+              "id": "1eb4efd9a3baa66110a7",
+              "kind": "hint",
+              "setlist_complete": false,
+              "speaker": "public_event_snapshot",
+              "url": "",
+              "date": "2026-05-31",
+              "year": 2026,
+              "source": "events_public",
+              "text": "Min-Yoi's盆踊りは、品川区の日本民謡会館で行われる盆踊り。5月開催の情報をもとに、公開サイト用に掲載しています。 2026-05-31（日）開催記録。次回日程は未確認。"
+            },
             {
               "id": "00e4b460931c9cd29b15",
               "kind": "observed",
@@ -8159,12 +8435,24 @@
         },
         {
           "song_name": "郡上節春駒",
-          "evidence_count": 1,
-          "speaker_count": 1,
+          "evidence_count": 2,
+          "speaker_count": 2,
           "speakers": [
+            "public_event_snapshot",
             "youtube"
           ],
           "evidence": [
+            {
+              "id": "6b222a48df06c0cbfcc9",
+              "kind": "hint",
+              "setlist_complete": false,
+              "speaker": "public_event_snapshot",
+              "url": "",
+              "date": "2026-05-31",
+              "year": 2026,
+              "source": "events_public",
+              "text": "Min-Yoi's盆踊りは、品川区の日本民謡会館で行われる盆踊り。5月開催の情報をもとに、公開サイト用に掲載しています。 2026-05-31（日）開催記録。次回日程は未確認。"
+            },
             {
               "id": "eb46aed80693454b94c5",
               "kind": "observed",
@@ -8185,12 +8473,24 @@
         },
         {
           "song_name": "隠岐のしげさ節",
-          "evidence_count": 2,
-          "speaker_count": 1,
+          "evidence_count": 3,
+          "speaker_count": 2,
           "speakers": [
+            "public_event_snapshot",
             "youtube"
           ],
           "evidence": [
+            {
+              "id": "6818c2112d6fa723ca6f",
+              "kind": "hint",
+              "setlist_complete": false,
+              "speaker": "public_event_snapshot",
+              "url": "",
+              "date": "2026-05-31",
+              "year": 2026,
+              "source": "events_public",
+              "text": "Min-Yoi's盆踊りは、品川区の日本民謡会館で行われる盆踊り。5月開催の情報をもとに、公開サイト用に掲載しています。 2026-05-31（日）開催記録。次回日程は未確認。"
+            },
             {
               "id": "2e7d214fedcccb7a4fef",
               "kind": "observed",
@@ -8222,12 +8522,24 @@
         },
         {
           "song_name": "鯵ヶ沢甚句",
-          "evidence_count": 2,
-          "speaker_count": 1,
+          "evidence_count": 3,
+          "speaker_count": 2,
           "speakers": [
+            "public_event_snapshot",
             "youtube"
           ],
           "evidence": [
+            {
+              "id": "260bcdd397124ca738d9",
+              "kind": "hint",
+              "setlist_complete": false,
+              "speaker": "public_event_snapshot",
+              "url": "",
+              "date": "2026-05-31",
+              "year": 2026,
+              "source": "events_public",
+              "text": "Min-Yoi's盆踊りは、品川区の日本民謡会館で行われる盆踊り。5月開催の情報をもとに、公開サイト用に掲載しています。 2026-05-31（日）開催記録。次回日程は未確認。"
+            },
             {
               "id": "8cfa2e86e96092fcb674",
               "kind": "observed",
@@ -8259,12 +8571,24 @@
         },
         {
           "song_name": "麦わら音頭",
-          "evidence_count": 2,
-          "speaker_count": 1,
+          "evidence_count": 3,
+          "speaker_count": 2,
           "speakers": [
+            "public_event_snapshot",
             "youtube"
           ],
           "evidence": [
+            {
+              "id": "f88f8dd0d35faa81ab73",
+              "kind": "hint",
+              "setlist_complete": false,
+              "speaker": "public_event_snapshot",
+              "url": "",
+              "date": "2026-05-31",
+              "year": 2026,
+              "source": "events_public",
+              "text": "Min-Yoi's盆踊りは、品川区の日本民謡会館で行われる盆踊り。5月開催の情報をもとに、公開サイト用に掲載しています。 2026-05-31（日）開催記録。次回日程は未確認。"
+            },
             {
               "id": "3737becd622d255fe27d",
               "kind": "observed",
@@ -8296,12 +8620,24 @@
         },
         {
           "song_name": "黒石甚句",
-          "evidence_count": 2,
-          "speaker_count": 1,
+          "evidence_count": 3,
+          "speaker_count": 2,
           "speakers": [
+            "public_event_snapshot",
             "youtube"
           ],
           "evidence": [
+            {
+              "id": "833a9d0907e685a49d43",
+              "kind": "hint",
+              "setlist_complete": false,
+              "speaker": "public_event_snapshot",
+              "url": "",
+              "date": "2026-05-31",
+              "year": 2026,
+              "source": "events_public",
+              "text": "Min-Yoi's盆踊りは、品川区の日本民謡会館で行われる盆踊り。5月開催の情報をもとに、公開サイト用に掲載しています。 2026-05-31（日）開催記録。次回日程は未確認。"
+            },
             {
               "id": "3545f4d5e3382d98bfed",
               "kind": "observed",

@@ -1,5 +1,5 @@
 {
-  "status": "in_progress",
+  "status": "awaiting_review",
   "window_start": "2025-07-08T00:00:00+00:00",
   "window_end": "2025-07-22T00:00:00+00:00",
   "selected_handles": [
@@ -55,15 +55,19 @@
     "@yurubon_off"
   ],
   "selection_id": "664d239cbfb21c903b90366b808d6e5ebcf0e7024980d3bd613f6d865df58cf9",
-  "batch_index": 0,
+  "batch_index": 2,
   "batch_cursors": {},
-  "completed_batches": [],
-  "pages_completed": 0,
-  "tweets_scanned": 0,
-  "evidence_detected": 0,
+  "completed_batches": [
+    0,
+    1,
+    2
+  ],
+  "pages_completed": 79,
+  "tweets_scanned": 1496,
+  "evidence_detected": 299,
   "pending_evidence": [],
   "started_at": "2026-06-13T02:12:39.309272+00:00",
-  "updated_at": "2026-06-13T02:12:39.309272+00:00",
+  "updated_at": "2026-06-13T02:28:15.410532+00:00",
   "window_history": [
     {
       "window_start": "2025-06-10T00:00:00+00:00",
@@ -88,5 +92,8 @@
       "evidence_detected": 159
     }
   ],
-  "previous_covered_until": "2025-07-08T00:00:00+00:00"
+  "previous_covered_until": "2025-07-08T00:00:00+00:00",
+  "completed_at": "2026-06-13T02:28:15.419845+00:00",
+  "covered_until": "2025-07-22T00:00:00+00:00",
+  "pending_cleared_at": "2026-06-13T02:29:36.747991+00:00"
 }
