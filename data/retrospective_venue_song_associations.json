@@ -1,0 +1,2944 @@
+{
+  "generated_by": "build_retrospective_venue_song_associations.py",
+  "generated_at": "2026-06-13T15:16:53.766558+00:00",
+  "source": "data/voices.json",
+  "source_scope": "x_only",
+  "scanned_voice_count": 2207,
+  "voice_with_song_candidate_count": 281,
+  "association_count": 59,
+  "counts": {
+    "by_confidence": {
+      "low": 40,
+      "medium": 2,
+      "weak": 17
+    },
+    "by_flag": {
+      "announced_or_setlist": 13,
+      "guest_or_reference": 4,
+      "multiple_venue_hints": 8,
+      "observed": 13,
+      "practice_or_preview": 17
+    },
+    "skipped_false_song_count": 0,
+    "skipped_no_venue_song_count": 354
+  },
+  "associations": [
+    {
+      "association_id": "venue_song:8b2665e925e148450569",
+      "venue": "築地本願寺",
+      "venue_key": "e49cddc3e289cb09dbca",
+      "song_name": "築地音頭",
+      "song_key": "6a1850f24bd1dffb636c",
+      "evidence": [
+        {
+          "tweet_id": "2021475548116156875",
+          "url": "https://x.com/45AMG/status/2021475548116156875",
+          "account": "@45AMG",
+          "dancer_key": "@45amg",
+          "observed_at": "2026-02-11T06:45:02+00:00",
+          "song_name": "築地音頭",
+          "venue": "築地本願寺",
+          "venue_hints": [
+            "築地本願寺",
+            "築地本願寺",
+            "築地本願寺"
+          ],
+          "event_hint": "",
+          "month": "",
+          "year": 2026,
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "flags": [],
+          "text": "月イチナム子のあとは、 ぜひ月イチ遠藤をお楽しみあれ🪭 築地音頭のレコード探しが 築地本願寺を動かしたかも⁉️ テキトーに話しているようで 盆踊りと餅つきの共通点までいきついたあたりは相当深いよ、ナムラジ深いよおお！ https://t.co/Ajee4vv43b"
+        },
+        {
+          "tweet_id": "",
+          "url": "https://x.com/odori2024minato/status/2011648549642191279",
+          "account": "@odori2024minato",
+          "dancer_key": "@odori2024minato",
+          "observed_at": "2026-01-15T03:56:03+00:00",
+          "song_name": "築地音頭",
+          "venue": "築地本願寺",
+          "venue_hints": [
+            "築地本願寺"
+          ],
+          "event_hint": "",
+          "month": "",
+          "year": "",
+          "bon_context_hits": [],
+          "flags": [],
+          "text": "『音の巡礼ラジオ』 #41 ついに発見！「築地音頭」SPレコード捜索大作戦 その顛末 昨日、レコードを築地本願寺へ持参して、副宗務長、盆踊り担当者の方とお話させていただきました 濃密な20分にまとめていただきました 是非お聞きください！！ お寺の「音」文化収集家 未来の住職塾 遠藤卓也さま"
+        },
+        {
+          "tweet_id": "",
+          "url": "https://x.com/odori2024minato/status/2011452236954837453",
+          "account": "@odori2024minato",
+          "dancer_key": "@odori2024minato",
+          "observed_at": "2026-01-14T14:55:58+00:00",
+          "song_name": "築地音頭",
+          "venue": "築地本願寺",
+          "venue_hints": [
+            "築地本願寺"
+          ],
+          "event_hint": "",
+          "month": "",
+          "year": "",
+          "bon_context_hits": [],
+          "flags": [],
+          "text": "本日は築地本願寺へ伺いました。 盆踊り愛好家に大人気の『築地音頭』 原盤が残されていないというお話を耳にし、何かお力になれればとご連絡したご縁です。 とても良いお天気でした。 https://t.co/D7yp5OIYTx"
+        }
+      ],
+      "probability": 67,
+      "confidence": "medium",
+      "evidence_count": 3,
+      "speaker_count": 2,
+      "speakers": [
+        "@45amg",
+        "@odori2024minato"
+      ],
+      "flags": [],
+      "event_hints": [],
+      "months": [],
+      "years": [
+        "2026"
+      ],
+      "source_urls": [
+        "https://x.com/45AMG/status/2021475548116156875",
+        "https://x.com/odori2024minato/status/2011452236954837453",
+        "https://x.com/odori2024minato/status/2011648549642191279"
+      ]
+    },
+    {
+      "association_id": "venue_song:72406147af98efe0713b",
+      "venue": "日本橋小学校",
+      "venue_key": "22ca03deb2345cefa7b0",
+      "song_name": "浜町音頭",
+      "song_key": "3d58fd121a31651c5bc9",
+      "evidence": [
+        {
+          "tweet_id": "1987049758322794623",
+          "url": "https://x.com/ichinachikako/status/1987049758322794623",
+          "account": "@ichinachikako",
+          "dancer_key": "@ichinachikako",
+          "observed_at": "2025-11-08T06:49:14+00:00",
+          "song_name": "浜町音頭",
+          "venue": "日本橋小学校",
+          "venue_hints": [
+            "日本橋小学校",
+            "日本橋小学校",
+            "日本橋小学校"
+          ],
+          "event_hint": "",
+          "month": "11",
+          "year": 2025,
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "flags": [
+            "announced_or_setlist"
+          ],
+          "text": "11/9(日)「#中央区 #まるごとミュージアム 」で #盆踊り が開催、私も11:00〜ずっとおります👘 雨かもですが、駅近の日本橋小学校の素敵ホールで心配ご無用♡ ぜひ #人形町 へお越しいただき、#浜町音頭 など観ていただけるだけでも嬉しいです🥰 ぜひご一緒に踊りましょう❣️ #浴衣 #着物 #日本橋 https://t.co/QeTtAlzNjr"
+        }
+      ],
+      "probability": 55,
+      "confidence": "medium",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@ichinachikako"
+      ],
+      "flags": [
+        "announced_or_setlist"
+      ],
+      "event_hints": [],
+      "months": [
+        "11"
+      ],
+      "years": [
+        "2025"
+      ],
+      "source_urls": [
+        "https://x.com/ichinachikako/status/1987049758322794623"
+      ]
+    },
+    {
+      "association_id": "venue_song:700d2734f65d66ada6fe",
+      "venue": "辻堂駅北口神台公園",
+      "venue_key": "f40a7d08bd7e3641b0a4",
+      "song_name": "ダンシングヒーロー",
+      "song_key": "04489a5027b115b0b682",
+      "evidence": [
+        {
+          "tweet_id": "2064678013510504823",
+          "url": "https://x.com/honeycutie333/status/2064678013510504823",
+          "account": "@honeycutie333",
+          "dancer_key": "@honeycutie333",
+          "observed_at": "2026-06-10T11:56:12+00:00",
+          "song_name": "ダンシングヒーロー",
+          "venue": "辻堂駅北口神台公園",
+          "venue_hints": [
+            "辻堂駅北口神台公園",
+            "辻堂駅北口神台公園",
+            "辻堂駅北口神台公園"
+          ],
+          "event_hint": "藤沢七夕まつり",
+          "month": "07",
+          "year": 2026,
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "踊り大会"
+          ],
+          "flags": [
+            "announced_or_setlist",
+            "guest_or_reference"
+          ],
+          "text": "7月4日は辻堂駅北口神台公園(テラスモールから近い場所だと思います 藤沢七夕まつりが開催されます(雨天中止) 当日は大盆踊り大会がありゲストにダンシングヒーローでお馴染みの荻野目洋子さんが登場します🎤 雨が降らなければ平塚七夕まつりを見てから辻堂に行くのもありですね🐱"
+        },
+        {
+          "tweet_id": "2064677978089607431",
+          "url": "https://x.com/King_Arthur_333/status/2064677978089607431",
+          "account": "@King_Arthur_333",
+          "dancer_key": "@king_arthur_333",
+          "observed_at": "2026-06-10T11:56:04+00:00",
+          "song_name": "ダンシングヒーロー",
+          "venue": "辻堂駅北口神台公園",
+          "venue_hints": [
+            "辻堂駅北口神台公園",
+            "辻堂駅北口神台公園",
+            "辻堂駅北口神台公園"
+          ],
+          "event_hint": "藤沢七夕まつり",
+          "month": "07",
+          "year": 2026,
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "踊り大会"
+          ],
+          "flags": [
+            "announced_or_setlist",
+            "guest_or_reference"
+          ],
+          "text": "7月4日は辻堂駅北口神台公園(テラスモールから近い場所だと思います 藤沢七夕まつりが開催されます(雨天中止) 当日は大盆踊り大会がありゲストにダンシングヒーローでお馴染みの荻野目洋子さんが登場します🎤 雨が降らなければ平塚七夕まつりを見てから辻堂に行くのもありですね🐱"
+        }
+      ],
+      "probability": 53,
+      "confidence": "low",
+      "evidence_count": 2,
+      "speaker_count": 2,
+      "speakers": [
+        "@honeycutie333",
+        "@king_arthur_333"
+      ],
+      "flags": [
+        "announced_or_setlist",
+        "guest_or_reference"
+      ],
+      "event_hints": [
+        "藤沢七夕まつり"
+      ],
+      "months": [
+        "07"
+      ],
+      "years": [
+        "2026"
+      ],
+      "source_urls": [
+        "https://x.com/King_Arthur_333/status/2064677978089607431",
+        "https://x.com/honeycutie333/status/2064678013510504823"
+      ]
+    },
+    {
+      "association_id": "venue_song:e616094dd2ca38d15285",
+      "venue": "河原町広場",
+      "venue_key": "f6a288bc13e26b97f869",
+      "song_name": "郡上おどり",
+      "song_key": "085b5ba821bf95fb2dd1",
+      "evidence": [
+        {
+          "tweet_id": "",
+          "url": "https://x.com/KoufukuyaC/status/2062549666563289225",
+          "account": "@KoufukuyaC",
+          "dancer_key": "@koufukuyac",
+          "observed_at": "2026-06-04T14:58:55+00:00",
+          "song_name": "郡上おどり",
+          "venue": "河原町広場",
+          "venue_hints": [
+            "河原町広場",
+            "河原町広場",
+            "京都市役所庁舎前広場",
+            "河原町広場",
+            "京都市役所庁舎前広場"
+          ],
+          "event_hint": "",
+          "month": "06",
+          "year": 2026,
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊"
+          ],
+          "flags": [
+            "announced_or_setlist",
+            "multiple_venue_hints"
+          ],
+          "text": "＼ 京都に岐阜の魅力が大集合！ ／ 今週末の6月5日・6日は、京都で開催される大注目イベントに参加します！✨ 岐阜の美味しいものをたくさん持って行くので、ぜひ遊びに来てくださいね😊 🗓 6月5日(金) ぎふマルシェ＠京都2026 ▫️時間：11:00〜19:00 ▫️場所：ゼスト御池 河原町広場 🛒 こだわり珈琲の物販（試飲もできます！） ＼注目のラインナップ／ ☕️ 【新発売】シングルオリジン水出しコーヒーセット ❄️ 雪の下熟成 珈琲豆 / ドリップバッグ ❄️ 雪の下熟成 コールドブリュー / 珈琲ゼリー 🧊 アイスコーヒーリキッド 贅沢な「雪の下熟成」シリーズや、これからの季節にぴったりの新商品などをご用意しています。お好みの味をぜひ試飲で見つけてくださいね！ 🗓 6月6日(土) 第16回郡上おどりin京都 ▫️時間：11:00〜18:30（※盆踊りは14:30〜🕺） ▫️場所：京都市役所庁舎前広場 🍹 ひんやりアイスコーヒーや、大人の味・和紅茶ハイボールなどのドリンクを販売！ （※ぎふマルシェも18:30まで同時開催中！） 週末は京都で、岐阜の味と熱気を感じてくだ"
+        }
+      ],
+      "probability": 50,
+      "confidence": "low",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@koufukuyac"
+      ],
+      "flags": [
+        "announced_or_setlist",
+        "multiple_venue_hints"
+      ],
+      "event_hints": [],
+      "months": [
+        "06"
+      ],
+      "years": [
+        "2026"
+      ],
+      "source_urls": [
+        "https://x.com/KoufukuyaC/status/2062549666563289225"
+      ]
+    },
+    {
+      "association_id": "venue_song:99347cadd7cfae82eea2",
+      "venue": "尼北小学校",
+      "venue_key": "c857c46b22b6aa4fcd5c",
+      "song_name": "富松まめかち音頭",
+      "song_key": "65e473ed5204f27c80ef",
+      "evidence": [
+        {
+          "tweet_id": "",
+          "url": "https://x.com/kazu_maru_dayo/status/2063146424121119093",
+          "account": "@kazu_maru_dayo",
+          "dancer_key": "@kazu_maru_dayo",
+          "observed_at": "2026-06-06T06:30:13+00:00",
+          "song_name": "富松まめかち音頭",
+          "venue": "尼北小学校",
+          "venue_hints": [
+            "尼北小学校",
+            "尼北小学校",
+            "尼北小学校"
+          ],
+          "event_hint": "尼崎で一番早い盆踊り",
+          "month": "",
+          "year": 2026,
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "flags": [
+            "observed"
+          ],
+          "text": "尼崎で一番早い盆踊り？ 【尼北小学校】 あまきた祭り ・富松むぎわら音頭 ・富松まめかち音頭（江州のフリ） ・炭坑節 ・河内おとこ節（手流しで右の伏せがなし） ・富松むぎわら音頭 …5曲 伊丹、尼崎の踊り子さんが来てました。楽しかった😀 予想以上に暑く熱中症になりかけました ⚠️徒歩での来校 https://t.co/AjeFJ8ZY6j"
+        }
+      ],
+      "probability": 49,
+      "confidence": "low",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@kazu_maru_dayo"
+      ],
+      "flags": [
+        "observed"
+      ],
+      "event_hints": [
+        "尼崎で一番早い盆踊り"
+      ],
+      "months": [],
+      "years": [
+        "2026"
+      ],
+      "source_urls": [
+        "https://x.com/kazu_maru_dayo/status/2063146424121119093"
+      ]
+    },
+    {
+      "association_id": "venue_song:280dc6c3eca1303a4440",
+      "venue": "尼北小学校",
+      "venue_key": "c857c46b22b6aa4fcd5c",
+      "song_name": "富松むぎわら音頭",
+      "song_key": "3a38784e38875d5189b4",
+      "evidence": [
+        {
+          "tweet_id": "",
+          "url": "https://x.com/kazu_maru_dayo/status/2063146424121119093",
+          "account": "@kazu_maru_dayo",
+          "dancer_key": "@kazu_maru_dayo",
+          "observed_at": "2026-06-06T06:30:13+00:00",
+          "song_name": "富松むぎわら音頭",
+          "venue": "尼北小学校",
+          "venue_hints": [
+            "尼北小学校",
+            "尼北小学校",
+            "尼北小学校"
+          ],
+          "event_hint": "尼崎で一番早い盆踊り",
+          "month": "",
+          "year": 2026,
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "flags": [
+            "observed"
+          ],
+          "text": "尼崎で一番早い盆踊り？ 【尼北小学校】 あまきた祭り ・富松むぎわら音頭 ・富松まめかち音頭（江州のフリ） ・炭坑節 ・河内おとこ節（手流しで右の伏せがなし） ・富松むぎわら音頭 …5曲 伊丹、尼崎の踊り子さんが来てました。楽しかった😀 予想以上に暑く熱中症になりかけました ⚠️徒歩での来校 https://t.co/AjeFJ8ZY6j"
+        }
+      ],
+      "probability": 49,
+      "confidence": "low",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@kazu_maru_dayo"
+      ],
+      "flags": [
+        "observed"
+      ],
+      "event_hints": [
+        "尼崎で一番早い盆踊り"
+      ],
+      "months": [],
+      "years": [
+        "2026"
+      ],
+      "source_urls": [
+        "https://x.com/kazu_maru_dayo/status/2063146424121119093"
+      ]
+    },
+    {
+      "association_id": "venue_song:b29a9de5f74a73b42f5e",
+      "venue": "尼北小学校",
+      "venue_key": "c857c46b22b6aa4fcd5c",
+      "song_name": "河内おとこ節",
+      "song_key": "e55d2488e4d603d6ea2a",
+      "evidence": [
+        {
+          "tweet_id": "",
+          "url": "https://x.com/kazu_maru_dayo/status/2063146424121119093",
+          "account": "@kazu_maru_dayo",
+          "dancer_key": "@kazu_maru_dayo",
+          "observed_at": "2026-06-06T06:30:13+00:00",
+          "song_name": "河内おとこ節",
+          "venue": "尼北小学校",
+          "venue_hints": [
+            "尼北小学校",
+            "尼北小学校",
+            "尼北小学校"
+          ],
+          "event_hint": "尼崎で一番早い盆踊り",
+          "month": "",
+          "year": 2026,
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "flags": [
+            "observed"
+          ],
+          "text": "尼崎で一番早い盆踊り？ 【尼北小学校】 あまきた祭り ・富松むぎわら音頭 ・富松まめかち音頭（江州のフリ） ・炭坑節 ・河内おとこ節（手流しで右の伏せがなし） ・富松むぎわら音頭 …5曲 伊丹、尼崎の踊り子さんが来てました。楽しかった😀 予想以上に暑く熱中症になりかけました ⚠️徒歩での来校 https://t.co/AjeFJ8ZY6j"
+        }
+      ],
+      "probability": 49,
+      "confidence": "low",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@kazu_maru_dayo"
+      ],
+      "flags": [
+        "observed"
+      ],
+      "event_hints": [
+        "尼崎で一番早い盆踊り"
+      ],
+      "months": [],
+      "years": [
+        "2026"
+      ],
+      "source_urls": [
+        "https://x.com/kazu_maru_dayo/status/2063146424121119093"
+      ]
+    },
+    {
+      "association_id": "venue_song:9831b5b393bc4fa0c302",
+      "venue": "尼北小学校",
+      "venue_key": "c857c46b22b6aa4fcd5c",
+      "song_name": "炭坑節",
+      "song_key": "1b4de6abf91e100e6555",
+      "evidence": [
+        {
+          "tweet_id": "",
+          "url": "https://x.com/kazu_maru_dayo/status/2063146424121119093",
+          "account": "@kazu_maru_dayo",
+          "dancer_key": "@kazu_maru_dayo",
+          "observed_at": "2026-06-06T06:30:13+00:00",
+          "song_name": "炭坑節",
+          "venue": "尼北小学校",
+          "venue_hints": [
+            "尼北小学校",
+            "尼北小学校",
+            "尼北小学校"
+          ],
+          "event_hint": "尼崎で一番早い盆踊り",
+          "month": "",
+          "year": 2026,
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "flags": [
+            "observed"
+          ],
+          "text": "尼崎で一番早い盆踊り？ 【尼北小学校】 あまきた祭り ・富松むぎわら音頭 ・富松まめかち音頭（江州のフリ） ・炭坑節 ・河内おとこ節（手流しで右の伏せがなし） ・富松むぎわら音頭 …5曲 伊丹、尼崎の踊り子さんが来てました。楽しかった😀 予想以上に暑く熱中症になりかけました ⚠️徒歩での来校 https://t.co/AjeFJ8ZY6j"
+        }
+      ],
+      "probability": 49,
+      "confidence": "low",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@kazu_maru_dayo"
+      ],
+      "flags": [
+        "observed"
+      ],
+      "event_hints": [
+        "尼崎で一番早い盆踊り"
+      ],
+      "months": [],
+      "years": [
+        "2026"
+      ],
+      "source_urls": [
+        "https://x.com/kazu_maru_dayo/status/2063146424121119093"
+      ]
+    },
+    {
+      "association_id": "venue_song:a641f8a03683595cdce2",
+      "venue": "晴海埠頭公園",
+      "venue_key": "f275f4fd39fda9fe79ad",
+      "song_name": "八幡の徹夜踊り",
+      "song_key": "d278bfd18ca90ae3f182",
+      "evidence": [
+        {
+          "tweet_id": "",
+          "url": "https://x.com/kaz0045/status/2006343358877413565",
+          "account": "@kaz0045",
+          "dancer_key": "@kaz0045",
+          "observed_at": "2025-12-31T12:35:07+00:00",
+          "song_name": "八幡の徹夜踊り",
+          "venue": "晴海埠頭公園",
+          "venue_hints": [
+            "晴海埠頭公園",
+            "晴海埠頭公園",
+            "晴海埠頭公園"
+          ],
+          "event_hint": "大晦日のうちに2025年盆踊り",
+          "month": "",
+          "year": 2025,
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊"
+          ],
+          "flags": [
+            "observed"
+          ],
+          "text": "大晦日のうちに2025年盆踊り総括（の一部）😌 🍊骨折しなかった 🍊白鳥、八幡の徹夜踊りに行った *監視映像がバズった 🍊第1回晴海埠頭公園で子供らを組織化した 🍊押上西和町会で子供らと右往左往した 🍊ラゾーナ川崎のダンヒロで伝言ゲーム 来年も引き続き元気で楽しく踊りましょう👍🏻 #盆踊り https://t.co/b9893YuSqC"
+        }
+      ],
+      "probability": 49,
+      "confidence": "low",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@kaz0045"
+      ],
+      "flags": [
+        "observed"
+      ],
+      "event_hints": [
+        "大晦日のうちに2025年盆踊り"
+      ],
+      "months": [],
+      "years": [
+        "2025"
+      ],
+      "source_urls": [
+        "https://x.com/kaz0045/status/2006343358877413565"
+      ]
+    },
+    {
+      "association_id": "venue_song:fa1fa73dde4dde41ca6a",
+      "venue": "錦糸公園",
+      "venue_key": "5c4b0d66120fdeea1cf5",
+      "song_name": "ぼったくりイヤイヤ音頭",
+      "song_key": "d56c4149d0c02a422cf2",
+      "evidence": [
+        {
+          "tweet_id": "",
+          "url": "https://x.com/bremen_ohshima/status/2053469138765713843",
+          "account": "@bremen_ohshima",
+          "dancer_key": "@bremen_ohshima",
+          "observed_at": "2026-05-10T13:36:08+00:00",
+          "song_name": "ぼったくりイヤイヤ音頭",
+          "venue": "錦糸公園",
+          "venue_hints": [
+            "錦糸公園",
+            "錦糸公園",
+            "錦糸公園"
+          ],
+          "event_hint": "すみだ沖縄まつり",
+          "month": "",
+          "year": 2026,
+          "bon_context_hits": [
+            "音頭"
+          ],
+          "flags": [
+            "observed"
+          ],
+          "text": "今日は錦糸公園で行われた「すみだ沖縄まつり」で踊ってきたよ。 嘉門タツオさんの「ぼったくりイヤイヤ音頭」の初お披露目でした。 新宿南口界隈で注意喚起としてながれている曲です。 個人的に馴染みのある曲だったので、 踊れて楽しかったよ。 素敵なフリでした。 https://t.co/1W8ufduYli"
+        }
+      ],
+      "probability": 49,
+      "confidence": "low",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@bremen_ohshima"
+      ],
+      "flags": [
+        "observed"
+      ],
+      "event_hints": [
+        "すみだ沖縄まつり"
+      ],
+      "months": [],
+      "years": [
+        "2026"
+      ],
+      "source_urls": [
+        "https://x.com/bremen_ohshima/status/2053469138765713843"
+      ]
+    },
+    {
+      "association_id": "venue_song:22b74f72281d754e9278",
+      "venue": "あかつき公園",
+      "venue_key": "0561c6b88fdbb7de8f9b",
+      "song_name": "浜町音頭",
+      "song_key": "3d58fd121a31651c5bc9",
+      "evidence": [
+        {
+          "tweet_id": "1987457842056704409",
+          "url": "https://x.com/tukishimanagaya/status/1987457842056704409",
+          "account": "@tukishimanagaya",
+          "dancer_key": "@tukishimanagaya",
+          "observed_at": "2025-11-09T09:50:49+00:00",
+          "song_name": "浜町音頭",
+          "venue": "あかつき公園",
+          "venue_hints": [
+            "あかつき公園",
+            "あかつき公園",
+            "今年は日本橋社会教育会館",
+            "あかつき公園",
+            "日本橋社会教育会館"
+          ],
+          "event_hint": "蔦屋重三郎に思いを馳せて盆踊り",
+          "month": "",
+          "year": 2025,
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "flags": [
+            "announced_or_setlist",
+            "multiple_venue_hints"
+          ],
+          "text": "蔦屋重三郎に思いを馳せて盆踊り 浜町音頭保存会の方々による盆踊りイベント 去年はあかつき公園で今年は日本橋社会教育会館ホールにて開催 紋章上絵師の福田昭三さんの生歌&amp;保存会の方々の見事な踊りに混じって楽しく盆踊り🎶 展示で使用された風呂敷を頂きました🙏 #まるごとミュージアム2025 https://t.co/pITqQ1NQnq"
+        }
+      ],
+      "probability": 46,
+      "confidence": "low",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@tukishimanagaya"
+      ],
+      "flags": [
+        "announced_or_setlist",
+        "multiple_venue_hints"
+      ],
+      "event_hints": [
+        "蔦屋重三郎に思いを馳せて盆踊り"
+      ],
+      "months": [],
+      "years": [
+        "2025"
+      ],
+      "source_urls": [
+        "https://x.com/tukishimanagaya/status/1987457842056704409"
+      ]
+    },
+    {
+      "association_id": "venue_song:3efa78dae686d4ad56e6",
+      "venue": "仰高小学校",
+      "venue_key": "29500d7f2849757b7f53",
+      "song_name": "すがも花咲き音頭",
+      "song_key": "0944ec50996117553063",
+      "evidence": [
+        {
+          "tweet_id": "2065580308813275186",
+          "url": "https://x.com/natsutr_bon/status/2065580308813275186",
+          "account": "@natsutr_bon",
+          "dancer_key": "@natsutr_bon",
+          "observed_at": "2026-06-12T23:41:36+00:00",
+          "song_name": "すがも花咲き音頭",
+          "venue": "仰高小学校",
+          "venue_hints": [
+            "仰高小学校"
+          ],
+          "event_hint": "",
+          "month": "",
+          "year": "",
+          "bon_context_hits": [],
+          "flags": [
+            "announced_or_setlist"
+          ],
+          "text": "【巣鴨盆踊り大会】 🏮7/17(金)18(土)19(日)🕓18:30-21:00📍巣鴨駅(豊島区) 毎回巣鴨駅南口のロータリーに大きな櫓が立ち、アクセスの良い会場♪ 仰高小学校によるヨサコイソーランを皮切りに３夜連日開催✨ご当地曲は「すがも花咲き音頭」🌼 ☔19日雨天時は翌日に順延 https://t.co/sgdhx63TD3"
+        }
+      ],
+      "probability": 46,
+      "confidence": "low",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@natsutr_bon"
+      ],
+      "flags": [
+        "announced_or_setlist"
+      ],
+      "event_hints": [],
+      "months": [],
+      "years": [],
+      "source_urls": [
+        "https://x.com/natsutr_bon/status/2065580308813275186"
+      ]
+    },
+    {
+      "association_id": "venue_song:e5eac6168527e8857062",
+      "venue": "稲村ケ崎公園",
+      "venue_key": "6e057a1a5122a83e5f75",
+      "song_name": "稲村音頭",
+      "song_key": "6b8d7d003731cccaaf11",
+      "evidence": [
+        {
+          "tweet_id": "2064956574767161369",
+          "url": "https://x.com/natsutr_bon/status/2064956574767161369",
+          "account": "@natsutr_bon",
+          "dancer_key": "@natsutr_bon",
+          "observed_at": "2026-06-11T06:23:07+00:00",
+          "song_name": "稲村音頭",
+          "venue": "稲村ケ崎公園",
+          "venue_hints": [
+            "稲村ケ崎公園"
+          ],
+          "event_hint": "",
+          "month": "",
+          "year": "",
+          "bon_context_hits": [],
+          "flags": [
+            "announced_or_setlist"
+          ],
+          "text": "【なみおと盆踊り祭】 🏮10/11(日)🕓11:00～19:00📍稲村ケ崎公園(鎌倉市) 「なみぼん」は相模湾を望むロケーションで開催される盆踊り♪ 晴れた夕暮れのクライマックスには、絶景を眺めながら生演奏での「稲村音頭」が踊れる🏖️🌊🗻 #なみぼん https://t.co/HlHpgisLRz https://t.co/CXKKj5DIUb"
+        }
+      ],
+      "probability": 46,
+      "confidence": "low",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@natsutr_bon"
+      ],
+      "flags": [
+        "announced_or_setlist"
+      ],
+      "event_hints": [],
+      "months": [],
+      "years": [],
+      "source_urls": [
+        "https://x.com/natsutr_bon/status/2064956574767161369"
+      ]
+    },
+    {
+      "association_id": "venue_song:8a8c8080f561d66beacb",
+      "venue": "羽根木公園",
+      "venue_key": "5f320a23ce575a78f2f0",
+      "song_name": "シモキタ音頭",
+      "song_key": "8ae0261d14f5a6ab08d0",
+      "evidence": [
+        {
+          "tweet_id": "2022211317432799408",
+          "url": "https://x.com/natsutr_bon/status/2022211317432799408",
+          "account": "@natsutr_bon",
+          "dancer_key": "@natsutr_bon",
+          "observed_at": "2026-02-13T07:28:43+00:00",
+          "song_name": "シモキタ音頭",
+          "venue": "羽根木公園",
+          "venue_hints": [
+            "羽根木公園"
+          ],
+          "event_hint": "",
+          "month": "",
+          "year": "",
+          "bon_context_hits": [],
+          "flags": [
+            "announced_or_setlist"
+          ],
+          "text": "【せたがや梅まつり】 🏮2/15(日)📍羽根木公園(世田谷区) 梅まつりの舞台演芸会(寿の会演芸発表)に「代田盆踊りの会」が出演(13:30頃~)🪭 曲目は梅まつりのテーマ曲せたがや梅囃子や新世田谷音頭、シモキタ音頭、ダイダラボッチ音頭、代田節、羽根木音頭など。輪踊りもあり♪ https://t.co/QLkqbSzCVM"
+        }
+      ],
+      "probability": 46,
+      "confidence": "low",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@natsutr_bon"
+      ],
+      "flags": [
+        "announced_or_setlist"
+      ],
+      "event_hints": [],
+      "months": [],
+      "years": [],
+      "source_urls": [
+        "https://x.com/natsutr_bon/status/2022211317432799408"
+      ]
+    },
+    {
+      "association_id": "venue_song:1783676d254b26b53d89",
+      "venue": "羽根木公園",
+      "venue_key": "5f320a23ce575a78f2f0",
+      "song_name": "ダイダラボッチ音頭",
+      "song_key": "f3d2146edd692e540589",
+      "evidence": [
+        {
+          "tweet_id": "2022211317432799408",
+          "url": "https://x.com/natsutr_bon/status/2022211317432799408",
+          "account": "@natsutr_bon",
+          "dancer_key": "@natsutr_bon",
+          "observed_at": "2026-02-13T07:28:43+00:00",
+          "song_name": "ダイダラボッチ音頭",
+          "venue": "羽根木公園",
+          "venue_hints": [
+            "羽根木公園"
+          ],
+          "event_hint": "",
+          "month": "",
+          "year": "",
+          "bon_context_hits": [],
+          "flags": [
+            "announced_or_setlist"
+          ],
+          "text": "【せたがや梅まつり】 🏮2/15(日)📍羽根木公園(世田谷区) 梅まつりの舞台演芸会(寿の会演芸発表)に「代田盆踊りの会」が出演(13:30頃~)🪭 曲目は梅まつりのテーマ曲せたがや梅囃子や新世田谷音頭、シモキタ音頭、ダイダラボッチ音頭、代田節、羽根木音頭など。輪踊りもあり♪ https://t.co/QLkqbSzCVM"
+        }
+      ],
+      "probability": 46,
+      "confidence": "low",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@natsutr_bon"
+      ],
+      "flags": [
+        "announced_or_setlist"
+      ],
+      "event_hints": [],
+      "months": [],
+      "years": [],
+      "source_urls": [
+        "https://x.com/natsutr_bon/status/2022211317432799408"
+      ]
+    },
+    {
+      "association_id": "venue_song:1245090edea35988f202",
+      "venue": "羽根木公園",
+      "venue_key": "5f320a23ce575a78f2f0",
+      "song_name": "代田節",
+      "song_key": "635e99f540210963ea8a",
+      "evidence": [
+        {
+          "tweet_id": "2022211317432799408",
+          "url": "https://x.com/natsutr_bon/status/2022211317432799408",
+          "account": "@natsutr_bon",
+          "dancer_key": "@natsutr_bon",
+          "observed_at": "2026-02-13T07:28:43+00:00",
+          "song_name": "代田節",
+          "venue": "羽根木公園",
+          "venue_hints": [
+            "羽根木公園"
+          ],
+          "event_hint": "",
+          "month": "",
+          "year": "",
+          "bon_context_hits": [],
+          "flags": [
+            "announced_or_setlist"
+          ],
+          "text": "【せたがや梅まつり】 🏮2/15(日)📍羽根木公園(世田谷区) 梅まつりの舞台演芸会(寿の会演芸発表)に「代田盆踊りの会」が出演(13:30頃~)🪭 曲目は梅まつりのテーマ曲せたがや梅囃子や新世田谷音頭、シモキタ音頭、ダイダラボッチ音頭、代田節、羽根木音頭など。輪踊りもあり♪ https://t.co/QLkqbSzCVM"
+        }
+      ],
+      "probability": 46,
+      "confidence": "low",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@natsutr_bon"
+      ],
+      "flags": [
+        "announced_or_setlist"
+      ],
+      "event_hints": [],
+      "months": [],
+      "years": [],
+      "source_urls": [
+        "https://x.com/natsutr_bon/status/2022211317432799408"
+      ]
+    },
+    {
+      "association_id": "venue_song:42f0945e41395e9ed286",
+      "venue": "羽根木公園",
+      "venue_key": "5f320a23ce575a78f2f0",
+      "song_name": "羽根木音頭",
+      "song_key": "a9cb752328be13ef1ee9",
+      "evidence": [
+        {
+          "tweet_id": "2022211317432799408",
+          "url": "https://x.com/natsutr_bon/status/2022211317432799408",
+          "account": "@natsutr_bon",
+          "dancer_key": "@natsutr_bon",
+          "observed_at": "2026-02-13T07:28:43+00:00",
+          "song_name": "羽根木音頭",
+          "venue": "羽根木公園",
+          "venue_hints": [
+            "羽根木公園"
+          ],
+          "event_hint": "",
+          "month": "",
+          "year": "",
+          "bon_context_hits": [],
+          "flags": [
+            "announced_or_setlist"
+          ],
+          "text": "【せたがや梅まつり】 🏮2/15(日)📍羽根木公園(世田谷区) 梅まつりの舞台演芸会(寿の会演芸発表)に「代田盆踊りの会」が出演(13:30頃~)🪭 曲目は梅まつりのテーマ曲せたがや梅囃子や新世田谷音頭、シモキタ音頭、ダイダラボッチ音頭、代田節、羽根木音頭など。輪踊りもあり♪ https://t.co/QLkqbSzCVM"
+        }
+      ],
+      "probability": 46,
+      "confidence": "low",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@natsutr_bon"
+      ],
+      "flags": [
+        "announced_or_setlist"
+      ],
+      "event_hints": [],
+      "months": [],
+      "years": [],
+      "source_urls": [
+        "https://x.com/natsutr_bon/status/2022211317432799408"
+      ]
+    },
+    {
+      "association_id": "venue_song:c28c83713e4b38255963",
+      "venue": "赤坂日枝神社",
+      "venue_key": "92a89a9a0e2d28703a8a",
+      "song_name": "山王音頭",
+      "song_key": "354294963ae6ef28a5fe",
+      "evidence": [
+        {
+          "tweet_id": "2063912862880534810",
+          "url": "https://x.com/ochiai_hrs/status/2063912862880534810",
+          "account": "@ochiai_hrs",
+          "dancer_key": "@ochiai_hrs",
+          "observed_at": "2026-06-08T09:15:46+00:00",
+          "song_name": "山王音頭",
+          "venue": "赤坂日枝神社",
+          "venue_hints": [
+            "赤坂日枝神社"
+          ],
+          "event_hint": "",
+          "month": "",
+          "year": "",
+          "bon_context_hits": [],
+          "flags": [
+            "announced_or_setlist"
+          ],
+          "text": "🏮赤坂日枝神社 盆踊り🏮 「山王音頭と民踊大会」 📅2026年6月13日（土）〜15日（月） 📍山王パークタワー 公開空地 曲目リストです！ みんなで楽しみましょう♪ #盆踊り #赤坂日枝神社 #山王音頭 #民踊大会 #夏祭り #東京イベント https://t.co/XzgNI2P8oy"
+        }
+      ],
+      "probability": 46,
+      "confidence": "low",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@ochiai_hrs"
+      ],
+      "flags": [
+        "announced_or_setlist"
+      ],
+      "event_hints": [],
+      "months": [],
+      "years": [],
+      "source_urls": [
+        "https://x.com/ochiai_hrs/status/2063912862880534810"
+      ]
+    },
+    {
+      "association_id": "venue_song:d9014b10b18583150e22",
+      "venue": "日枝神社",
+      "venue_key": "cd81e79cc889ad3f5ec0",
+      "song_name": "山王音頭",
+      "song_key": "354294963ae6ef28a5fe",
+      "evidence": [
+        {
+          "tweet_id": "",
+          "url": "https://x.com/kuma_bot999/status/1643821321145700352",
+          "account": "@kuma_bot999",
+          "dancer_key": "@kuma_bot999",
+          "observed_at": "2023-04-06T03:41:58+00:00",
+          "song_name": "山王音頭",
+          "venue": "日枝神社",
+          "venue_hints": [
+            "日枝神社"
+          ],
+          "event_hint": "",
+          "month": "",
+          "year": "",
+          "bon_context_hits": [],
+          "flags": [],
+          "text": "正式に出たという理解でよいのかなと #山王音頭と民踊大会 #日枝神社 #落合社中 令和5年 6/13(火)〜6/15(木) 18時30分〜 https://t.co/PwT3i0cGe8"
+        },
+        {
+          "tweet_id": "",
+          "url": "https://x.com/tomohikos/status/2063407219673366837",
+          "account": "@tomohikos",
+          "dancer_key": "@tomohikos",
+          "observed_at": "2026-06-06T23:46:32+00:00",
+          "song_name": "山王音頭",
+          "venue": "日枝神社",
+          "venue_hints": [
+            "日枝神社"
+          ],
+          "event_hint": "",
+          "month": "",
+          "year": "",
+          "bon_context_hits": [],
+          "flags": [
+            "practice_or_preview"
+          ],
+          "text": "6/14日は、日枝神社での【山王音頭と民踊大会】の前に 大井町でもいい汗を流しませんか？ 日本民謡協会の盆踊り講習会。 今回は、みんな大好き、《伊勢音頭（さわぎ）》と 《おばば（岐阜音頭）》の2曲。 まだ申し込み🆗ですよ！"
+        }
+      ],
+      "probability": 42,
+      "confidence": "low",
+      "evidence_count": 2,
+      "speaker_count": 2,
+      "speakers": [
+        "@kuma_bot999",
+        "@tomohikos"
+      ],
+      "flags": [
+        "practice_or_preview"
+      ],
+      "event_hints": [],
+      "months": [],
+      "years": [],
+      "source_urls": [
+        "https://x.com/kuma_bot999/status/1643821321145700352",
+        "https://x.com/tomohikos/status/2063407219673366837"
+      ]
+    },
+    {
+      "association_id": "venue_song:be7af43696c0d52d149f",
+      "venue": "さくら公園",
+      "venue_key": "30865bb1dffa4ce6b509",
+      "song_name": "ドンパン節",
+      "song_key": "670500b335accedfc1d3",
+      "evidence": [
+        {
+          "tweet_id": "2065078577687863764",
+          "url": "https://x.com/_masakari/status/2065078577687863764",
+          "account": "@_masakari",
+          "dancer_key": "@_masakari",
+          "observed_at": "2026-06-11T14:27:54+00:00",
+          "song_name": "ドンパン節",
+          "venue": "さくら公園",
+          "venue_hints": [
+            "さくら公園",
+            "さくら公園",
+            "さくら公園"
+          ],
+          "event_hint": "さくら公園盆踊り大会",
+          "month": "06",
+          "year": 2026,
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭",
+            "踊り大会"
+          ],
+          "flags": [
+            "observed",
+            "practice_or_preview"
+          ],
+          "text": "6/11(木)19:00~20:30 さくら公園盆踊り大会 盆踊り練習会 椿音頭(うちわ)を初めて踊った。 365日の紙飛行機の、最後の決めポーズが勉強になった。 同級会音頭 ドンパン節 花の盆踊り 東京音頭 大東京音頭 快く受け入れて頂き、ありがとうございました。楽しかったです。"
+        }
+      ],
+      "probability": 41,
+      "confidence": "low",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@_masakari"
+      ],
+      "flags": [
+        "observed",
+        "practice_or_preview"
+      ],
+      "event_hints": [
+        "さくら公園盆踊り大会"
+      ],
+      "months": [
+        "06"
+      ],
+      "years": [
+        "2026"
+      ],
+      "source_urls": [
+        "https://x.com/_masakari/status/2065078577687863764"
+      ]
+    },
+    {
+      "association_id": "venue_song:cb54e9f04c64bb86f7f3",
+      "venue": "さくら公園",
+      "venue_key": "30865bb1dffa4ce6b509",
+      "song_name": "同級会音頭",
+      "song_key": "1446dc845e8217aeb836",
+      "evidence": [
+        {
+          "tweet_id": "2065078577687863764",
+          "url": "https://x.com/_masakari/status/2065078577687863764",
+          "account": "@_masakari",
+          "dancer_key": "@_masakari",
+          "observed_at": "2026-06-11T14:27:54+00:00",
+          "song_name": "同級会音頭",
+          "venue": "さくら公園",
+          "venue_hints": [
+            "さくら公園",
+            "さくら公園",
+            "さくら公園"
+          ],
+          "event_hint": "さくら公園盆踊り大会",
+          "month": "06",
+          "year": 2026,
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭",
+            "踊り大会"
+          ],
+          "flags": [
+            "observed",
+            "practice_or_preview"
+          ],
+          "text": "6/11(木)19:00~20:30 さくら公園盆踊り大会 盆踊り練習会 椿音頭(うちわ)を初めて踊った。 365日の紙飛行機の、最後の決めポーズが勉強になった。 同級会音頭 ドンパン節 花の盆踊り 東京音頭 大東京音頭 快く受け入れて頂き、ありがとうございました。楽しかったです。"
+        }
+      ],
+      "probability": 41,
+      "confidence": "low",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@_masakari"
+      ],
+      "flags": [
+        "observed",
+        "practice_or_preview"
+      ],
+      "event_hints": [
+        "さくら公園盆踊り大会"
+      ],
+      "months": [
+        "06"
+      ],
+      "years": [
+        "2026"
+      ],
+      "source_urls": [
+        "https://x.com/_masakari/status/2065078577687863764"
+      ]
+    },
+    {
+      "association_id": "venue_song:7a979dad34466ae2bb19",
+      "venue": "さくら公園",
+      "venue_key": "30865bb1dffa4ce6b509",
+      "song_name": "大東京音頭",
+      "song_key": "a1492dad1422aeb74995",
+      "evidence": [
+        {
+          "tweet_id": "2065078577687863764",
+          "url": "https://x.com/_masakari/status/2065078577687863764",
+          "account": "@_masakari",
+          "dancer_key": "@_masakari",
+          "observed_at": "2026-06-11T14:27:54+00:00",
+          "song_name": "大東京音頭",
+          "venue": "さくら公園",
+          "venue_hints": [
+            "さくら公園",
+            "さくら公園",
+            "さくら公園"
+          ],
+          "event_hint": "さくら公園盆踊り大会",
+          "month": "06",
+          "year": 2026,
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭",
+            "踊り大会"
+          ],
+          "flags": [
+            "observed",
+            "practice_or_preview"
+          ],
+          "text": "6/11(木)19:00~20:30 さくら公園盆踊り大会 盆踊り練習会 椿音頭(うちわ)を初めて踊った。 365日の紙飛行機の、最後の決めポーズが勉強になった。 同級会音頭 ドンパン節 花の盆踊り 東京音頭 大東京音頭 快く受け入れて頂き、ありがとうございました。楽しかったです。"
+        }
+      ],
+      "probability": 41,
+      "confidence": "low",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@_masakari"
+      ],
+      "flags": [
+        "observed",
+        "practice_or_preview"
+      ],
+      "event_hints": [
+        "さくら公園盆踊り大会"
+      ],
+      "months": [
+        "06"
+      ],
+      "years": [
+        "2026"
+      ],
+      "source_urls": [
+        "https://x.com/_masakari/status/2065078577687863764"
+      ]
+    },
+    {
+      "association_id": "venue_song:ebb4ecc1bacc8e5c2551",
+      "venue": "さくら公園",
+      "venue_key": "30865bb1dffa4ce6b509",
+      "song_name": "東京音頭",
+      "song_key": "84e817b94f7aaf024e1a",
+      "evidence": [
+        {
+          "tweet_id": "2065078577687863764",
+          "url": "https://x.com/_masakari/status/2065078577687863764",
+          "account": "@_masakari",
+          "dancer_key": "@_masakari",
+          "observed_at": "2026-06-11T14:27:54+00:00",
+          "song_name": "東京音頭",
+          "venue": "さくら公園",
+          "venue_hints": [
+            "さくら公園",
+            "さくら公園",
+            "さくら公園"
+          ],
+          "event_hint": "さくら公園盆踊り大会",
+          "month": "06",
+          "year": 2026,
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭",
+            "踊り大会"
+          ],
+          "flags": [
+            "observed",
+            "practice_or_preview"
+          ],
+          "text": "6/11(木)19:00~20:30 さくら公園盆踊り大会 盆踊り練習会 椿音頭(うちわ)を初めて踊った。 365日の紙飛行機の、最後の決めポーズが勉強になった。 同級会音頭 ドンパン節 花の盆踊り 東京音頭 大東京音頭 快く受け入れて頂き、ありがとうございました。楽しかったです。"
+        }
+      ],
+      "probability": 41,
+      "confidence": "low",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@_masakari"
+      ],
+      "flags": [
+        "observed",
+        "practice_or_preview"
+      ],
+      "event_hints": [
+        "さくら公園盆踊り大会"
+      ],
+      "months": [
+        "06"
+      ],
+      "years": [
+        "2026"
+      ],
+      "source_urls": [
+        "https://x.com/_masakari/status/2065078577687863764"
+      ]
+    },
+    {
+      "association_id": "venue_song:a683390e89e64c96aca9",
+      "venue": "圓隆寺",
+      "venue_key": "fbbaed85a319c9c4eb4f",
+      "song_name": "広島音頭",
+      "song_key": "119f20cb22ed613fca35",
+      "evidence": [
+        {
+          "tweet_id": "",
+          "url": "https://x.com/fried_wakame/status/2062922591988523246",
+          "account": "@fried_wakame",
+          "dancer_key": "@fried_wakame",
+          "observed_at": "2026-06-05T15:40:47+00:00",
+          "song_name": "広島音頭",
+          "venue": "圓隆寺",
+          "venue_hints": [
+            "圓隆寺",
+            "圓隆寺",
+            "圓隆寺"
+          ],
+          "event_hint": "会場全体が夏の始まりと踊りを楽しんでいるのが印象的なゆかたで盆踊り",
+          "month": "",
+          "year": 2026,
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "flags": [],
+          "text": "とうかさん大祭 ゆかたできん祭へ🏮 圓隆寺さんへ参拝 厄除けうちわ、壱法符も✨ 南一誠さんの生歌でそれ行けカープ広島天国が踊れて嬉しい🙌素敵な歌声で大盛り上がり！ 広島音頭に込められた思いを教えていただくと共に会場全体が夏の始まりと踊りを楽しんでいるのが印象的なゆかたで盆踊りでした👘 https://t.co/GjDjROlARc"
+        }
+      ],
+      "probability": 41,
+      "confidence": "low",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@fried_wakame"
+      ],
+      "flags": [],
+      "event_hints": [
+        "会場全体が夏の始まりと踊りを楽しんでいるのが印象的なゆかたで盆踊り"
+      ],
+      "months": [],
+      "years": [
+        "2026"
+      ],
+      "source_urls": [
+        "https://x.com/fried_wakame/status/2062922591988523246"
+      ]
+    },
+    {
+      "association_id": "venue_song:0b770c850f38d0cbf3bf",
+      "venue": "徳島駅前",
+      "venue_key": "ba591975c00636a5edef",
+      "song_name": "阿波おどり",
+      "song_key": "b65cd5c0c0ae85372d05",
+      "evidence": [
+        {
+          "tweet_id": "2064710694738743798",
+          "url": "https://x.com/tamcrazy7878/status/2064710694738743798",
+          "account": "@tamcrazy7878",
+          "dancer_key": "@tamcrazy7878",
+          "observed_at": "2026-06-10T14:06:04+00:00",
+          "song_name": "阿波おどり",
+          "venue": "徳島駅前",
+          "venue_hints": [
+            "徳島駅前",
+            "徳島駅前",
+            "夜7時半から徳島中央公園",
+            "徳島駅前",
+            "夜7時半から徳島中央公園"
+          ],
+          "event_hint": "写楽盆踊り",
+          "month": "08",
+          "year": 2026,
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊"
+          ],
+          "flags": [
+            "multiple_venue_hints"
+          ],
+          "text": "徳島駅前近くの写楽通り協力店居酒屋「たきち」。今宵、ここで阿波おどりグループいぶし銀の皆さんが集合、8月15日夜7時半から徳島中央公園旧能舞台あとで、今後作製する写楽旗の下、誰でも参加可能な「写楽盆踊り」の実行を決定❗️ #徳島 #写楽 #阿波おどり https://t.co/XOBmxRJmw8"
+        }
+      ],
+      "probability": 40,
+      "confidence": "low",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@tamcrazy7878"
+      ],
+      "flags": [
+        "multiple_venue_hints"
+      ],
+      "event_hints": [
+        "写楽盆踊り"
+      ],
+      "months": [
+        "08"
+      ],
+      "years": [
+        "2026"
+      ],
+      "source_urls": [
+        "https://x.com/tamcrazy7878/status/2064710694738743798"
+      ]
+    },
+    {
+      "association_id": "venue_song:5905160e0132c1c44c76",
+      "venue": "飛鳥山公園",
+      "venue_key": "60e780f218631e972bf2",
+      "song_name": "あさがお踊り",
+      "song_key": "74e92ac3cd894f46ef11",
+      "evidence": [
+        {
+          "tweet_id": "2063607767861195209",
+          "url": "https://x.com/xxxnabekoxxx/status/2063607767861195209",
+          "account": "@xxxnabekoxxx",
+          "dancer_key": "@xxxnabekoxxx",
+          "observed_at": "2026-06-07T13:03:26+00:00",
+          "song_name": "あさがお踊り",
+          "venue": "飛鳥山公園",
+          "venue_hints": [
+            "飛鳥山公園",
+            "飛鳥山公園",
+            "飛鳥山公園"
+          ],
+          "event_hint": "",
+          "month": "",
+          "year": 2026,
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "flags": [
+            "observed",
+            "practice_or_preview"
+          ],
+          "text": "本日は #飛鳥山公園 #盆踊り に少しだけお邪魔しました。開始直前に雨がパラついたけど大丈夫でしたね。良い感じで曇っていて、踊りやすかった〜🤗山王音頭と千代田踊り、良い予習ができました‼️うちわ仕舞うところでお暇。あさがお踊りたかった〜🥲楽しかったです。ありがとうございました😺 https://t.co/hm2IRfUhuE"
+        }
+      ],
+      "probability": 37,
+      "confidence": "low",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@xxxnabekoxxx"
+      ],
+      "flags": [
+        "observed",
+        "practice_or_preview"
+      ],
+      "event_hints": [],
+      "months": [],
+      "years": [
+        "2026"
+      ],
+      "source_urls": [
+        "https://x.com/xxxnabekoxxx/status/2063607767861195209"
+      ]
+    },
+    {
+      "association_id": "venue_song:aeeb47b4f22869fbcb31",
+      "venue": "飛鳥山公園",
+      "venue_key": "60e780f218631e972bf2",
+      "song_name": "千代田踊り",
+      "song_key": "49c599e71e8285eba291",
+      "evidence": [
+        {
+          "tweet_id": "2063607767861195209",
+          "url": "https://x.com/xxxnabekoxxx/status/2063607767861195209",
+          "account": "@xxxnabekoxxx",
+          "dancer_key": "@xxxnabekoxxx",
+          "observed_at": "2026-06-07T13:03:26+00:00",
+          "song_name": "千代田踊り",
+          "venue": "飛鳥山公園",
+          "venue_hints": [
+            "飛鳥山公園",
+            "飛鳥山公園",
+            "飛鳥山公園"
+          ],
+          "event_hint": "",
+          "month": "",
+          "year": 2026,
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "flags": [
+            "observed",
+            "practice_or_preview"
+          ],
+          "text": "本日は #飛鳥山公園 #盆踊り に少しだけお邪魔しました。開始直前に雨がパラついたけど大丈夫でしたね。良い感じで曇っていて、踊りやすかった〜🤗山王音頭と千代田踊り、良い予習ができました‼️うちわ仕舞うところでお暇。あさがお踊りたかった〜🥲楽しかったです。ありがとうございました😺 https://t.co/hm2IRfUhuE"
+        }
+      ],
+      "probability": 37,
+      "confidence": "low",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@xxxnabekoxxx"
+      ],
+      "flags": [
+        "observed",
+        "practice_or_preview"
+      ],
+      "event_hints": [],
+      "months": [],
+      "years": [
+        "2026"
+      ],
+      "source_urls": [
+        "https://x.com/xxxnabekoxxx/status/2063607767861195209"
+      ]
+    },
+    {
+      "association_id": "venue_song:0bbf842f88e1b1edca31",
+      "venue": "飛鳥山公園",
+      "venue_key": "60e780f218631e972bf2",
+      "song_name": "山王音頭",
+      "song_key": "354294963ae6ef28a5fe",
+      "evidence": [
+        {
+          "tweet_id": "2063607767861195209",
+          "url": "https://x.com/xxxnabekoxxx/status/2063607767861195209",
+          "account": "@xxxnabekoxxx",
+          "dancer_key": "@xxxnabekoxxx",
+          "observed_at": "2026-06-07T13:03:26+00:00",
+          "song_name": "山王音頭",
+          "venue": "飛鳥山公園",
+          "venue_hints": [
+            "飛鳥山公園",
+            "飛鳥山公園",
+            "飛鳥山公園"
+          ],
+          "event_hint": "",
+          "month": "",
+          "year": 2026,
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭"
+          ],
+          "flags": [
+            "observed",
+            "practice_or_preview"
+          ],
+          "text": "本日は #飛鳥山公園 #盆踊り に少しだけお邪魔しました。開始直前に雨がパラついたけど大丈夫でしたね。良い感じで曇っていて、踊りやすかった〜🤗山王音頭と千代田踊り、良い予習ができました‼️うちわ仕舞うところでお暇。あさがお踊りたかった〜🥲楽しかったです。ありがとうございました😺 https://t.co/hm2IRfUhuE"
+        }
+      ],
+      "probability": 37,
+      "confidence": "low",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@xxxnabekoxxx"
+      ],
+      "flags": [
+        "observed",
+        "practice_or_preview"
+      ],
+      "event_hints": [],
+      "months": [],
+      "years": [
+        "2026"
+      ],
+      "source_urls": [
+        "https://x.com/xxxnabekoxxx/status/2063607767861195209"
+      ]
+    },
+    {
+      "association_id": "venue_song:c90b7fcd3f0bf75f6234",
+      "venue": "久屋大通公園",
+      "venue_key": "a32d2ea7d7ae903d3630",
+      "song_name": "白鳥おどり",
+      "song_key": "abfd38c01a82ccbf37cc",
+      "evidence": [
+        {
+          "tweet_id": "",
+          "url": "https://x.com/KOKORO_ODORU_GJ/status/2061844674235756732",
+          "account": "@KOKORO_ODORU_GJ",
+          "dancer_key": "@kokoro_odoru_gj",
+          "observed_at": "2026-06-02T16:17:32+00:00",
+          "song_name": "白鳥おどり",
+          "venue": "久屋大通公園",
+          "venue_hints": [
+            "久屋大通公園"
+          ],
+          "event_hint": "",
+          "month": "",
+          "year": "",
+          "bon_context_hits": [],
+          "flags": [],
+          "text": "白鳥おどり in 久屋大通公園 2026/5/31 #白鳥おどり #郡上おどり #盆踊り #久屋大通 #郡上 https://t.co/6IIw6zF4zp"
+        }
+      ],
+      "probability": 36,
+      "confidence": "low",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@kokoro_odoru_gj"
+      ],
+      "flags": [],
+      "event_hints": [],
+      "months": [],
+      "years": [],
+      "source_urls": [
+        "https://x.com/KOKORO_ODORU_GJ/status/2061844674235756732"
+      ]
+    },
+    {
+      "association_id": "venue_song:410fc25ffa76643db67e",
+      "venue": "久屋大通公園",
+      "venue_key": "a32d2ea7d7ae903d3630",
+      "song_name": "郡上おどり",
+      "song_key": "085b5ba821bf95fb2dd1",
+      "evidence": [
+        {
+          "tweet_id": "",
+          "url": "https://x.com/KOKORO_ODORU_GJ/status/2061844674235756732",
+          "account": "@KOKORO_ODORU_GJ",
+          "dancer_key": "@kokoro_odoru_gj",
+          "observed_at": "2026-06-02T16:17:32+00:00",
+          "song_name": "郡上おどり",
+          "venue": "久屋大通公園",
+          "venue_hints": [
+            "久屋大通公園"
+          ],
+          "event_hint": "",
+          "month": "",
+          "year": "",
+          "bon_context_hits": [],
+          "flags": [],
+          "text": "白鳥おどり in 久屋大通公園 2026/5/31 #白鳥おどり #郡上おどり #盆踊り #久屋大通 #郡上 https://t.co/6IIw6zF4zp"
+        }
+      ],
+      "probability": 36,
+      "confidence": "low",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@kokoro_odoru_gj"
+      ],
+      "flags": [],
+      "event_hints": [],
+      "months": [],
+      "years": [],
+      "source_urls": [
+        "https://x.com/KOKORO_ODORU_GJ/status/2061844674235756732"
+      ]
+    },
+    {
+      "association_id": "venue_song:82a7f3f43c922aa2aab6",
+      "venue": "五ヶ瀬中学校",
+      "venue_key": "a27f186c3132c53a20e1",
+      "song_name": "団七踊り",
+      "song_key": "f949d37ca92adf925af9",
+      "evidence": [
+        {
+          "tweet_id": "2065409898389930239",
+          "url": "https://x.com/bonDbonT/status/2065409898389930239",
+          "account": "@bonDbonT",
+          "dancer_key": "@bondbont",
+          "observed_at": "2026-06-12T12:24:27+00:00",
+          "song_name": "団七踊り",
+          "venue": "五ヶ瀬中学校",
+          "venue_hints": [
+            "五ヶ瀬中学校"
+          ],
+          "event_hint": "",
+          "month": "",
+          "year": "",
+          "bon_context_hits": [],
+          "flags": [],
+          "text": "地域に伝わる「棒術」「なぎなた」「団七踊り」を学ぶ 五ヶ瀬中学校の全校生徒が参加して伝統芸能教室（MRT宮崎放送） https://t.co/TraCSFZCZ4"
+        }
+      ],
+      "probability": 36,
+      "confidence": "low",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@bondbont"
+      ],
+      "flags": [],
+      "event_hints": [],
+      "months": [],
+      "years": [],
+      "source_urls": [
+        "https://x.com/bonDbonT/status/2065409898389930239"
+      ]
+    },
+    {
+      "association_id": "venue_song:43076d253190f268d134",
+      "venue": "市役所前広場",
+      "venue_key": "b5d1854d7b519b224300",
+      "song_name": "郡上おどり",
+      "song_key": "085b5ba821bf95fb2dd1",
+      "evidence": [
+        {
+          "tweet_id": "2064337613327343698",
+          "url": "https://x.com/emi_rinjapan/status/2064337613327343698",
+          "account": "@emi_rinjapan",
+          "dancer_key": "@emi_rinjapan",
+          "observed_at": "2026-06-09T13:23:35+00:00",
+          "song_name": "郡上おどり",
+          "venue": "市役所前広場",
+          "venue_hints": [
+            "市役所前広場"
+          ],
+          "event_hint": "",
+          "month": "",
+          "year": "",
+          "bon_context_hits": [],
+          "flags": [],
+          "text": "先日の郡上おどりin京都。 市役所前広場にて👘🪭 熱気の盆踊り！！ #郡上おどり https://t.co/irUBqVolBH"
+        }
+      ],
+      "probability": 36,
+      "confidence": "low",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@emi_rinjapan"
+      ],
+      "flags": [],
+      "event_hints": [],
+      "months": [],
+      "years": [],
+      "source_urls": [
+        "https://x.com/emi_rinjapan/status/2064337613327343698"
+      ]
+    },
+    {
+      "association_id": "venue_song:ad317e197f174a3c6987",
+      "venue": "東大阪市布施駅前",
+      "venue_key": "343f56471642508bf48e",
+      "song_name": "河内音頭",
+      "song_key": "102afe247a13cd52157d",
+      "evidence": [
+        {
+          "tweet_id": "2064023816804942198",
+          "url": "https://x.com/yoshitaka_1008/status/2064023816804942198",
+          "account": "@yoshitaka_1008",
+          "dancer_key": "@yoshitaka_1008",
+          "observed_at": "2026-06-08T16:36:40+00:00",
+          "song_name": "河内音頭",
+          "venue": "東大阪市布施駅前",
+          "venue_hints": [
+            "東大阪市布施駅前"
+          ],
+          "event_hint": "",
+          "month": "",
+          "year": "",
+          "bon_context_hits": [],
+          "flags": [],
+          "text": "【音頭座がらく 河内音頭セミナー〜盆踊り体験会〜】 2026年 6月 7日（日）：東大阪市布施駅前市民プラザ「夢広場」多目的ホール ご参加いただいた約9割のお客様が音頭座がらくのイベントに初参加という嬉しい成果！ ”笑顔”がテーマとなったイベントとなりました！！ https://t.co/CNSf565x9F"
+        }
+      ],
+      "probability": 36,
+      "confidence": "low",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@yoshitaka_1008"
+      ],
+      "flags": [],
+      "event_hints": [],
+      "months": [],
+      "years": [],
+      "source_urls": [
+        "https://x.com/yoshitaka_1008/status/2064023816804942198"
+      ]
+    },
+    {
+      "association_id": "venue_song:5aae355f0ebbdfb357dc",
+      "venue": "浜町公園",
+      "venue_key": "faf196101e4023ee8330",
+      "song_name": "ダンシングヒーロー",
+      "song_key": "04489a5027b115b0b682",
+      "evidence": [
+        {
+          "tweet_id": "",
+          "url": "https://x.com/daikok555/status/2038972498159788058",
+          "account": "@daikok555",
+          "dancer_key": "@daikok555",
+          "observed_at": "2026-03-31T13:31:40+00:00",
+          "song_name": "ダンシングヒーロー",
+          "venue": "浜町公園",
+          "venue_hints": [
+            "浜町公園"
+          ],
+          "event_hint": "",
+          "month": "",
+          "year": "",
+          "bon_context_hits": [],
+          "flags": [],
+          "text": "@thaigir11 東京、浜町公園の大江戸まつり盆踊り会場で櫓を囲む踊りの輪の外から ダンシングヒーロー〜eat you up〜で踊ってるのを見た感じがこんな感じです"
+        }
+      ],
+      "probability": 36,
+      "confidence": "low",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@daikok555"
+      ],
+      "flags": [],
+      "event_hints": [],
+      "months": [],
+      "years": [],
+      "source_urls": [
+        "https://x.com/daikok555/status/2038972498159788058"
+      ]
+    },
+    {
+      "association_id": "venue_song:ec85d10995325c7a9641",
+      "venue": "築地本願寺",
+      "venue_key": "e49cddc3e289cb09dbca",
+      "song_name": "ソーラン",
+      "song_key": "ef68ee057fc860c6b8dd",
+      "evidence": [
+        {
+          "tweet_id": "",
+          "url": "https://x.com/natsutr_bon/status/2059805547512418608",
+          "account": "@natsutr_bon",
+          "dancer_key": "@natsutr_bon",
+          "observed_at": "2026-05-28T01:14:46+00:00",
+          "song_name": "ソーラン",
+          "venue": "築地本願寺",
+          "venue_hints": [
+            "築地本願寺"
+          ],
+          "event_hint": "",
+          "month": "",
+          "year": "",
+          "bon_context_hits": [],
+          "flags": [],
+          "text": "5/24築地JAM 盆踊り会場としても人気の築地本願寺で民謡クルセイダーズLIVE♪ 花笠音頭からはじまり、ソーラン節では観客揃って船漕いだり波起こしたり〜🌊 貝殻節、会津磐梯山、炭坑節と民謡踊りを楽しく✨ そのあとも美味しいフードを食べたり、ジャズ、ボサノヴァなどをユルユルっと🥂 #民クル https://t.co/BNQ6P4cM3h"
+        }
+      ],
+      "probability": 36,
+      "confidence": "low",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@natsutr_bon"
+      ],
+      "flags": [],
+      "event_hints": [],
+      "months": [],
+      "years": [],
+      "source_urls": [
+        "https://x.com/natsutr_bon/status/2059805547512418608"
+      ]
+    },
+    {
+      "association_id": "venue_song:b0b3f18ab03fd53cb79a",
+      "venue": "築地本願寺",
+      "venue_key": "e49cddc3e289cb09dbca",
+      "song_name": "民謡踊り",
+      "song_key": "c00e02211b78b8dbdb5d",
+      "evidence": [
+        {
+          "tweet_id": "",
+          "url": "https://x.com/natsutr_bon/status/2059805547512418608",
+          "account": "@natsutr_bon",
+          "dancer_key": "@natsutr_bon",
+          "observed_at": "2026-05-28T01:14:46+00:00",
+          "song_name": "民謡踊り",
+          "venue": "築地本願寺",
+          "venue_hints": [
+            "築地本願寺"
+          ],
+          "event_hint": "",
+          "month": "",
+          "year": "",
+          "bon_context_hits": [],
+          "flags": [],
+          "text": "5/24築地JAM 盆踊り会場としても人気の築地本願寺で民謡クルセイダーズLIVE♪ 花笠音頭からはじまり、ソーラン節では観客揃って船漕いだり波起こしたり〜🌊 貝殻節、会津磐梯山、炭坑節と民謡踊りを楽しく✨ そのあとも美味しいフードを食べたり、ジャズ、ボサノヴァなどをユルユルっと🥂 #民クル https://t.co/BNQ6P4cM3h"
+        }
+      ],
+      "probability": 36,
+      "confidence": "low",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@natsutr_bon"
+      ],
+      "flags": [],
+      "event_hints": [],
+      "months": [],
+      "years": [],
+      "source_urls": [
+        "https://x.com/natsutr_bon/status/2059805547512418608"
+      ]
+    },
+    {
+      "association_id": "venue_song:9fcab69778778e813341",
+      "venue": "築地本願寺",
+      "venue_key": "e49cddc3e289cb09dbca",
+      "song_name": "炭坑節",
+      "song_key": "1b4de6abf91e100e6555",
+      "evidence": [
+        {
+          "tweet_id": "",
+          "url": "https://x.com/natsutr_bon/status/2059805547512418608",
+          "account": "@natsutr_bon",
+          "dancer_key": "@natsutr_bon",
+          "observed_at": "2026-05-28T01:14:46+00:00",
+          "song_name": "炭坑節",
+          "venue": "築地本願寺",
+          "venue_hints": [
+            "築地本願寺"
+          ],
+          "event_hint": "",
+          "month": "",
+          "year": "",
+          "bon_context_hits": [],
+          "flags": [],
+          "text": "5/24築地JAM 盆踊り会場としても人気の築地本願寺で民謡クルセイダーズLIVE♪ 花笠音頭からはじまり、ソーラン節では観客揃って船漕いだり波起こしたり〜🌊 貝殻節、会津磐梯山、炭坑節と民謡踊りを楽しく✨ そのあとも美味しいフードを食べたり、ジャズ、ボサノヴァなどをユルユルっと🥂 #民クル https://t.co/BNQ6P4cM3h"
+        }
+      ],
+      "probability": 36,
+      "confidence": "low",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@natsutr_bon"
+      ],
+      "flags": [],
+      "event_hints": [],
+      "months": [],
+      "years": [],
+      "source_urls": [
+        "https://x.com/natsutr_bon/status/2059805547512418608"
+      ]
+    },
+    {
+      "association_id": "venue_song:821ef2afef2ea292e932",
+      "venue": "築地本願寺",
+      "venue_key": "e49cddc3e289cb09dbca",
+      "song_name": "花笠音頭",
+      "song_key": "9c40b59f819424b30c04",
+      "evidence": [
+        {
+          "tweet_id": "",
+          "url": "https://x.com/natsutr_bon/status/2059805547512418608",
+          "account": "@natsutr_bon",
+          "dancer_key": "@natsutr_bon",
+          "observed_at": "2026-05-28T01:14:46+00:00",
+          "song_name": "花笠音頭",
+          "venue": "築地本願寺",
+          "venue_hints": [
+            "築地本願寺"
+          ],
+          "event_hint": "",
+          "month": "",
+          "year": "",
+          "bon_context_hits": [],
+          "flags": [],
+          "text": "5/24築地JAM 盆踊り会場としても人気の築地本願寺で民謡クルセイダーズLIVE♪ 花笠音頭からはじまり、ソーラン節では観客揃って船漕いだり波起こしたり〜🌊 貝殻節、会津磐梯山、炭坑節と民謡踊りを楽しく✨ そのあとも美味しいフードを食べたり、ジャズ、ボサノヴァなどをユルユルっと🥂 #民クル https://t.co/BNQ6P4cM3h"
+        }
+      ],
+      "probability": 36,
+      "confidence": "low",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@natsutr_bon"
+      ],
+      "flags": [],
+      "event_hints": [],
+      "months": [],
+      "years": [],
+      "source_urls": [
+        "https://x.com/natsutr_bon/status/2059805547512418608"
+      ]
+    },
+    {
+      "association_id": "venue_song:578a259140ea64943e15",
+      "venue": "築地本願寺",
+      "venue_key": "e49cddc3e289cb09dbca",
+      "song_name": "貝殻節",
+      "song_key": "0b521464d744fbe134ab",
+      "evidence": [
+        {
+          "tweet_id": "",
+          "url": "https://x.com/natsutr_bon/status/2059805547512418608",
+          "account": "@natsutr_bon",
+          "dancer_key": "@natsutr_bon",
+          "observed_at": "2026-05-28T01:14:46+00:00",
+          "song_name": "貝殻節",
+          "venue": "築地本願寺",
+          "venue_hints": [
+            "築地本願寺"
+          ],
+          "event_hint": "",
+          "month": "",
+          "year": "",
+          "bon_context_hits": [],
+          "flags": [],
+          "text": "5/24築地JAM 盆踊り会場としても人気の築地本願寺で民謡クルセイダーズLIVE♪ 花笠音頭からはじまり、ソーラン節では観客揃って船漕いだり波起こしたり〜🌊 貝殻節、会津磐梯山、炭坑節と民謡踊りを楽しく✨ そのあとも美味しいフードを食べたり、ジャズ、ボサノヴァなどをユルユルっと🥂 #民クル https://t.co/BNQ6P4cM3h"
+        }
+      ],
+      "probability": 36,
+      "confidence": "low",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@natsutr_bon"
+      ],
+      "flags": [],
+      "event_hints": [],
+      "months": [],
+      "years": [],
+      "source_urls": [
+        "https://x.com/natsutr_bon/status/2059805547512418608"
+      ]
+    },
+    {
+      "association_id": "venue_song:c2007f3499f662d90834",
+      "venue": "鮫洲入江広場公園",
+      "venue_key": "4fb8c8d0f8c02060e81e",
+      "song_name": "印西音頭",
+      "song_key": "1b2f19d2f0ea59598e32",
+      "evidence": [
+        {
+          "tweet_id": "",
+          "url": "https://x.com/rollingasahi/status/2063428301197299947",
+          "account": "@rollingasahi",
+          "dancer_key": "@rollingasahi",
+          "observed_at": "2026-06-07T01:10:18+00:00",
+          "song_name": "印西音頭",
+          "venue": "鮫洲入江広場公園",
+          "venue_hints": [
+            "鮫洲入江広場公園"
+          ],
+          "event_hint": "",
+          "month": "",
+          "year": "",
+          "bon_context_hits": [],
+          "flags": [],
+          "text": "昨日の鮫洲入江広場公園ゆり園盆踊りの帰り 公園外の歩道を歩いていたら 最後のマイクアナウンスしていた お姉さんから声を掛けられた 「どうして印西のTシャツ着てるんですか？！」 「印西音頭って言う踊りが好きなんですよ！」 「私、印西なんです！」 「え！印西音頭知ってます？」 「知りません！"
+        }
+      ],
+      "probability": 36,
+      "confidence": "low",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@rollingasahi"
+      ],
+      "flags": [],
+      "event_hints": [],
+      "months": [],
+      "years": [],
+      "source_urls": [
+        "https://x.com/rollingasahi/status/2063428301197299947"
+      ]
+    },
+    {
+      "association_id": "venue_song:3a88fe51fdbd85429d0e",
+      "venue": "鮫洲入江広場公園",
+      "venue_key": "4fb8c8d0f8c02060e81e",
+      "song_name": "大井町音頭",
+      "song_key": "bdc02c973fb5b703fc53",
+      "evidence": [
+        {
+          "tweet_id": "",
+          "url": "https://x.com/mizu516AforReal/status/2062799802266710143",
+          "account": "@mizu516AforReal",
+          "dancer_key": "@mizu516aforreal",
+          "observed_at": "2026-06-05T07:32:52+00:00",
+          "song_name": "大井町音頭",
+          "venue": "鮫洲入江広場公園",
+          "venue_hints": [
+            "鮫洲入江広場公園"
+          ],
+          "event_hint": "",
+          "month": "",
+          "year": "",
+          "bon_context_hits": [],
+          "flags": [],
+          "text": "ユリ祭り 今年も歌います 大井町音頭 歌います 踊ってね💃🏮 6月6日(土) 品川区鮫洲 ゆり園 ゆり2万2千本鑑賞ラブウィーク2026 鮫洲入江広場公園 10:00〜琴演奏 11:00〜ウクレレ 🌷12:00〜 A for-Real🌷 13:00〜華湖 踊り 13:30〜岡島寿幸 14:30〜晴盆 盆踊り 品川区東大井1-16-15 鮫洲駅5分 https://t.co/vvM58MgZh7"
+        }
+      ],
+      "probability": 36,
+      "confidence": "low",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@mizu516aforreal"
+      ],
+      "flags": [],
+      "event_hints": [],
+      "months": [],
+      "years": [],
+      "source_urls": [
+        "https://x.com/mizu516AforReal/status/2062799802266710143"
+      ]
+    },
+    {
+      "association_id": "venue_song:b98ccf143ef886e62dbe",
+      "venue": "鰭ヶ崎2号公園",
+      "venue_key": "0f759a6d0eaf2a36b5a3",
+      "song_name": "鰭ヶ崎音頭",
+      "song_key": "badd753ba82ffbb7da1d",
+      "evidence": [
+        {
+          "tweet_id": "",
+          "url": "https://x.com/Pw9SKrdCfYJfxfv/status/2060746550654206281",
+          "account": "@Pw9SKrdCfYJfxfv",
+          "dancer_key": "@pw9skrdcfyjfxfv",
+          "observed_at": "2026-05-30T15:33:59+00:00",
+          "song_name": "鰭ヶ崎音頭",
+          "venue": "鰭ヶ崎2号公園",
+          "venue_hints": [
+            "鰭ヶ崎2号公園"
+          ],
+          "event_hint": "",
+          "month": "",
+          "year": "",
+          "bon_context_hits": [],
+          "flags": [],
+          "text": "5/30の② 鰭ヶ崎2号公園で踊ってきました 終了15分前に到着(意外と遠い)😅 ご当地の鰭ヶ崎音頭、流山市もいろいろありそうです 夜、櫓、提灯 これだけで元気出るし、踊りにも気合い入る ありがとうございました、幸せでした https://t.co/kFUw2fA8GD"
+        }
+      ],
+      "probability": 36,
+      "confidence": "low",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@pw9skrdcfyjfxfv"
+      ],
+      "flags": [],
+      "event_hints": [],
+      "months": [],
+      "years": [],
+      "source_urls": [
+        "https://x.com/Pw9SKrdCfYJfxfv/status/2060746550654206281"
+      ]
+    },
+    {
+      "association_id": "venue_song:bd3685c5e60a6eb92552",
+      "venue": "遊行寺",
+      "venue_key": "319bf689393b1f1b1736",
+      "song_name": "郡上おどり",
+      "song_key": "085b5ba821bf95fb2dd1",
+      "evidence": [
+        {
+          "tweet_id": "2057268806536589483",
+          "url": "https://x.com/natsutr_bon/status/2057268806536589483",
+          "account": "@natsutr_bon",
+          "dancer_key": "@natsutr_bon",
+          "observed_at": "2026-05-21T01:14:40+00:00",
+          "song_name": "郡上おどり",
+          "venue": "遊行寺",
+          "venue_hints": [
+            "遊行寺"
+          ],
+          "event_hint": "",
+          "month": "",
+          "year": "",
+          "bon_context_hits": [],
+          "flags": [
+            "announced_or_setlist",
+            "practice_or_preview"
+          ],
+          "text": "【藤沢宿・遊行の盆】 🏮7/25(土)26(日)📍藤沢駅・遊行寺・ふじさわ宿交流館(藤沢市) 藤沢の夏を彩る流し踊り「遊行ばやし」に阿波踊り、郡上おどり、西馬音内盆踊りの日本三大盆踊りが集結するイベント♪ ★詳細な時間、飛び入り可能プログラム、踊り講習会等はリンク参照 https://t.co/0Yf7iGAtgc"
+        }
+      ],
+      "probability": 34,
+      "confidence": "weak",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@natsutr_bon"
+      ],
+      "flags": [
+        "announced_or_setlist",
+        "practice_or_preview"
+      ],
+      "event_hints": [],
+      "months": [],
+      "years": [],
+      "source_urls": [
+        "https://x.com/natsutr_bon/status/2057268806536589483"
+      ]
+    },
+    {
+      "association_id": "venue_song:5ba28d22481ecd64e921",
+      "venue": "遊行寺",
+      "venue_key": "319bf689393b1f1b1736",
+      "song_name": "阿波踊り",
+      "song_key": "61d217d7134025aa74a8",
+      "evidence": [
+        {
+          "tweet_id": "2057268806536589483",
+          "url": "https://x.com/natsutr_bon/status/2057268806536589483",
+          "account": "@natsutr_bon",
+          "dancer_key": "@natsutr_bon",
+          "observed_at": "2026-05-21T01:14:40+00:00",
+          "song_name": "阿波踊り",
+          "venue": "遊行寺",
+          "venue_hints": [
+            "遊行寺"
+          ],
+          "event_hint": "",
+          "month": "",
+          "year": "",
+          "bon_context_hits": [],
+          "flags": [
+            "announced_or_setlist",
+            "practice_or_preview"
+          ],
+          "text": "【藤沢宿・遊行の盆】 🏮7/25(土)26(日)📍藤沢駅・遊行寺・ふじさわ宿交流館(藤沢市) 藤沢の夏を彩る流し踊り「遊行ばやし」に阿波踊り、郡上おどり、西馬音内盆踊りの日本三大盆踊りが集結するイベント♪ ★詳細な時間、飛び入り可能プログラム、踊り講習会等はリンク参照 https://t.co/0Yf7iGAtgc"
+        }
+      ],
+      "probability": 34,
+      "confidence": "weak",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@natsutr_bon"
+      ],
+      "flags": [
+        "announced_or_setlist",
+        "practice_or_preview"
+      ],
+      "event_hints": [],
+      "months": [],
+      "years": [],
+      "source_urls": [
+        "https://x.com/natsutr_bon/status/2057268806536589483"
+      ]
+    },
+    {
+      "association_id": "venue_song:64120e53a4251fb6c82a",
+      "venue": "上野公園噴水広場",
+      "venue_key": "dc63b53f3899b32da3b0",
+      "song_name": "入谷南公園の朝顔音頭",
+      "song_key": "833b83848e53b7309d56",
+      "evidence": [
+        {
+          "tweet_id": "",
+          "url": "https://x.com/mu4324/status/2061990975615164714",
+          "account": "@mu4324",
+          "dancer_key": "@mu4324",
+          "observed_at": "2026-06-03T01:58:53+00:00",
+          "song_name": "入谷南公園の朝顔音頭",
+          "venue": "上野公園噴水広場",
+          "venue_hints": [
+            "上野公園噴水広場",
+            "入谷南公園"
+          ],
+          "event_hint": "",
+          "month": "",
+          "year": "",
+          "bon_context_hits": [],
+          "flags": [
+            "multiple_venue_hints"
+          ],
+          "text": "今年の、 ふるさと東京応援祭 ビールと浴衣de盆踊り 7月3〜5日 上野公園噴水広場前⛲️ #ふるさと東京応援祭 #ビールと浴衣de盆踊り #上野公園噴水広場前 今年も、 入谷南公園の朝顔音頭踊り大会 7月6〜8日"
+        }
+      ],
+      "probability": 31,
+      "confidence": "weak",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@mu4324"
+      ],
+      "flags": [
+        "multiple_venue_hints"
+      ],
+      "event_hints": [],
+      "months": [],
+      "years": [],
+      "source_urls": [
+        "https://x.com/mu4324/status/2061990975615164714"
+      ]
+    },
+    {
+      "association_id": "venue_song:c0128d5ffdad809afceb",
+      "venue": "中央区立社会教育会館",
+      "venue_key": "66899a0c19213cefe4e7",
+      "song_name": "勝鬨橋を渡れば築地音頭",
+      "song_key": "94c5b01dfa0d88c98d14",
+      "evidence": [
+        {
+          "tweet_id": "",
+          "url": "https://x.com/kuma_bot999/status/2020130935044223465",
+          "account": "@kuma_bot999",
+          "dancer_key": "@kuma_bot999",
+          "observed_at": "2026-02-07T13:42:01+00:00",
+          "song_name": "勝鬨橋を渡れば築地音頭",
+          "venue": "中央区立社会教育会館",
+          "venue_hints": [
+            "中央区立社会教育会館",
+            "月島社会教育会館"
+          ],
+          "event_hint": "",
+          "month": "",
+          "year": "",
+          "bon_context_hits": [],
+          "flags": [
+            "multiple_venue_hints"
+          ],
+          "text": "#中央区立社会教育会館サークル発表会 #月島社会教育会館 地元も地元 支所がここにある 子供が通った幼稚園も近い 盆踊り中心に観覧 名曲月島音頭,難しい…今踊れるやろかw ここから相生橋を渡れば(1kmと離れていない)江東区で,深川音頭があり 勝鬨橋を渡れば築地音頭/銀座音頭がある。全部名曲やね https://t.co/1kEyz9jYzo"
+        }
+      ],
+      "probability": 31,
+      "confidence": "weak",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@kuma_bot999"
+      ],
+      "flags": [
+        "multiple_venue_hints"
+      ],
+      "event_hints": [],
+      "months": [],
+      "years": [],
+      "source_urls": [
+        "https://x.com/kuma_bot999/status/2020130935044223465"
+      ]
+    },
+    {
+      "association_id": "venue_song:b655167afd1fb9f2b469",
+      "venue": "中央区立社会教育会館",
+      "venue_key": "66899a0c19213cefe4e7",
+      "song_name": "名曲月島音頭",
+      "song_key": "be842ccd81f637ab6ffa",
+      "evidence": [
+        {
+          "tweet_id": "",
+          "url": "https://x.com/kuma_bot999/status/2020130935044223465",
+          "account": "@kuma_bot999",
+          "dancer_key": "@kuma_bot999",
+          "observed_at": "2026-02-07T13:42:01+00:00",
+          "song_name": "名曲月島音頭",
+          "venue": "中央区立社会教育会館",
+          "venue_hints": [
+            "中央区立社会教育会館",
+            "月島社会教育会館"
+          ],
+          "event_hint": "",
+          "month": "",
+          "year": "",
+          "bon_context_hits": [],
+          "flags": [
+            "multiple_venue_hints"
+          ],
+          "text": "#中央区立社会教育会館サークル発表会 #月島社会教育会館 地元も地元 支所がここにある 子供が通った幼稚園も近い 盆踊り中心に観覧 名曲月島音頭,難しい…今踊れるやろかw ここから相生橋を渡れば(1kmと離れていない)江東区で,深川音頭があり 勝鬨橋を渡れば築地音頭/銀座音頭がある。全部名曲やね https://t.co/1kEyz9jYzo"
+        }
+      ],
+      "probability": 31,
+      "confidence": "weak",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@kuma_bot999"
+      ],
+      "flags": [
+        "multiple_venue_hints"
+      ],
+      "event_hints": [],
+      "months": [],
+      "years": [],
+      "source_urls": [
+        "https://x.com/kuma_bot999/status/2020130935044223465"
+      ]
+    },
+    {
+      "association_id": "venue_song:5c74e89d0bdf28f5f723",
+      "venue": "中央区立社会教育会館",
+      "venue_key": "66899a0c19213cefe4e7",
+      "song_name": "深川音頭",
+      "song_key": "ebe78384e9aa664fb37a",
+      "evidence": [
+        {
+          "tweet_id": "",
+          "url": "https://x.com/kuma_bot999/status/2020130935044223465",
+          "account": "@kuma_bot999",
+          "dancer_key": "@kuma_bot999",
+          "observed_at": "2026-02-07T13:42:01+00:00",
+          "song_name": "深川音頭",
+          "venue": "中央区立社会教育会館",
+          "venue_hints": [
+            "中央区立社会教育会館",
+            "月島社会教育会館"
+          ],
+          "event_hint": "",
+          "month": "",
+          "year": "",
+          "bon_context_hits": [],
+          "flags": [
+            "multiple_venue_hints"
+          ],
+          "text": "#中央区立社会教育会館サークル発表会 #月島社会教育会館 地元も地元 支所がここにある 子供が通った幼稚園も近い 盆踊り中心に観覧 名曲月島音頭,難しい…今踊れるやろかw ここから相生橋を渡れば(1kmと離れていない)江東区で,深川音頭があり 勝鬨橋を渡れば築地音頭/銀座音頭がある。全部名曲やね https://t.co/1kEyz9jYzo"
+        }
+      ],
+      "probability": 31,
+      "confidence": "weak",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@kuma_bot999"
+      ],
+      "flags": [
+        "multiple_venue_hints"
+      ],
+      "event_hints": [],
+      "months": [],
+      "years": [],
+      "source_urls": [
+        "https://x.com/kuma_bot999/status/2020130935044223465"
+      ]
+    },
+    {
+      "association_id": "venue_song:5871e6cc506f27ab258e",
+      "venue": "中央区立社会教育会館",
+      "venue_key": "66899a0c19213cefe4e7",
+      "song_name": "銀座音頭",
+      "song_key": "c315c5845e2a7677caca",
+      "evidence": [
+        {
+          "tweet_id": "",
+          "url": "https://x.com/kuma_bot999/status/2020130935044223465",
+          "account": "@kuma_bot999",
+          "dancer_key": "@kuma_bot999",
+          "observed_at": "2026-02-07T13:42:01+00:00",
+          "song_name": "銀座音頭",
+          "venue": "中央区立社会教育会館",
+          "venue_hints": [
+            "中央区立社会教育会館",
+            "月島社会教育会館"
+          ],
+          "event_hint": "",
+          "month": "",
+          "year": "",
+          "bon_context_hits": [],
+          "flags": [
+            "multiple_venue_hints"
+          ],
+          "text": "#中央区立社会教育会館サークル発表会 #月島社会教育会館 地元も地元 支所がここにある 子供が通った幼稚園も近い 盆踊り中心に観覧 名曲月島音頭,難しい…今踊れるやろかw ここから相生橋を渡れば(1kmと離れていない)江東区で,深川音頭があり 勝鬨橋を渡れば築地音頭/銀座音頭がある。全部名曲やね https://t.co/1kEyz9jYzo"
+        }
+      ],
+      "probability": 31,
+      "confidence": "weak",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@kuma_bot999"
+      ],
+      "flags": [
+        "multiple_venue_hints"
+      ],
+      "event_hints": [],
+      "months": [],
+      "years": [],
+      "source_urls": [
+        "https://x.com/kuma_bot999/status/2020130935044223465"
+      ]
+    },
+    {
+      "association_id": "venue_song:443b80fb04d0d55390af",
+      "venue": "夏祭り向けに有馬小学校",
+      "venue_key": "40756fd68bab0fc008df",
+      "song_name": "ダンシングヒーロー",
+      "song_key": "04489a5027b115b0b682",
+      "evidence": [
+        {
+          "tweet_id": "",
+          "url": "https://x.com/QTjittan/status/2048289247447449625",
+          "account": "@QTjittan",
+          "dancer_key": "@qtjittan",
+          "observed_at": "2026-04-26T06:33:06+00:00",
+          "song_name": "ダンシングヒーロー",
+          "venue": "夏祭り向けに有馬小学校",
+          "venue_hints": [
+            "夏祭り向けに有馬小学校"
+          ],
+          "event_hint": "",
+          "month": "",
+          "year": "",
+          "bon_context_hits": [],
+          "flags": [
+            "practice_or_preview"
+          ],
+          "text": "浜町音頭保存会でも、夏祭り向けに有馬小学校で盆踊り練習会した時、ダンシングヒーローが好きな小学生に声かけられたよ。 わし、小学生の頃は日舞してたから、見る人が見れば、踊りが上手い方に入るから覚えられてたみたい。 今は盆踊りもしてないからもっと下手になってるけどね。"
+        }
+      ],
+      "probability": 24,
+      "confidence": "weak",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@qtjittan"
+      ],
+      "flags": [
+        "practice_or_preview"
+      ],
+      "event_hints": [],
+      "months": [],
+      "years": [],
+      "source_urls": [
+        "https://x.com/QTjittan/status/2048289247447449625"
+      ]
+    },
+    {
+      "association_id": "venue_song:8175ed6c19880cb9e5a0",
+      "venue": "夏祭り向けに有馬小学校",
+      "venue_key": "40756fd68bab0fc008df",
+      "song_name": "浜町音頭",
+      "song_key": "3d58fd121a31651c5bc9",
+      "evidence": [
+        {
+          "tweet_id": "",
+          "url": "https://x.com/QTjittan/status/2048289247447449625",
+          "account": "@QTjittan",
+          "dancer_key": "@qtjittan",
+          "observed_at": "2026-04-26T06:33:06+00:00",
+          "song_name": "浜町音頭",
+          "venue": "夏祭り向けに有馬小学校",
+          "venue_hints": [
+            "夏祭り向けに有馬小学校"
+          ],
+          "event_hint": "",
+          "month": "",
+          "year": "",
+          "bon_context_hits": [],
+          "flags": [
+            "practice_or_preview"
+          ],
+          "text": "浜町音頭保存会でも、夏祭り向けに有馬小学校で盆踊り練習会した時、ダンシングヒーローが好きな小学生に声かけられたよ。 わし、小学生の頃は日舞してたから、見る人が見れば、踊りが上手い方に入るから覚えられてたみたい。 今は盆踊りもしてないからもっと下手になってるけどね。"
+        }
+      ],
+      "probability": 24,
+      "confidence": "weak",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@qtjittan"
+      ],
+      "flags": [
+        "practice_or_preview"
+      ],
+      "event_hints": [],
+      "months": [],
+      "years": [],
+      "source_urls": [
+        "https://x.com/QTjittan/status/2048289247447449625"
+      ]
+    },
+    {
+      "association_id": "venue_song:20474bd14dad3bd80006",
+      "venue": "日枝神社",
+      "venue_key": "cd81e79cc889ad3f5ec0",
+      "song_name": "伊勢音頭",
+      "song_key": "747f61d9dc721e6e93a4",
+      "evidence": [
+        {
+          "tweet_id": "",
+          "url": "https://x.com/tomohikos/status/2063407219673366837",
+          "account": "@tomohikos",
+          "dancer_key": "@tomohikos",
+          "observed_at": "2026-06-06T23:46:32+00:00",
+          "song_name": "伊勢音頭",
+          "venue": "日枝神社",
+          "venue_hints": [
+            "日枝神社"
+          ],
+          "event_hint": "",
+          "month": "",
+          "year": "",
+          "bon_context_hits": [],
+          "flags": [
+            "practice_or_preview"
+          ],
+          "text": "6/14日は、日枝神社での【山王音頭と民踊大会】の前に 大井町でもいい汗を流しませんか？ 日本民謡協会の盆踊り講習会。 今回は、みんな大好き、《伊勢音頭（さわぎ）》と 《おばば（岐阜音頭）》の2曲。 まだ申し込み🆗ですよ！"
+        }
+      ],
+      "probability": 24,
+      "confidence": "weak",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@tomohikos"
+      ],
+      "flags": [
+        "practice_or_preview"
+      ],
+      "event_hints": [],
+      "months": [],
+      "years": [],
+      "source_urls": [
+        "https://x.com/tomohikos/status/2063407219673366837"
+      ]
+    },
+    {
+      "association_id": "venue_song:157ec073f95efcf5f6a6",
+      "venue": "日枝神社",
+      "venue_key": "cd81e79cc889ad3f5ec0",
+      "song_name": "午後に美しい踊り",
+      "song_key": "de39c6b0bdeb98c482a8",
+      "evidence": [
+        {
+          "tweet_id": "2063865448232636505",
+          "url": "https://x.com/yumiya_pon/status/2063865448232636505",
+          "account": "@yumiya_pon",
+          "dancer_key": "@yumiya_pon",
+          "observed_at": "2026-06-08T06:07:22+00:00",
+          "song_name": "午後に美しい踊り",
+          "venue": "日枝神社",
+          "venue_hints": [
+            "日枝神社"
+          ],
+          "event_hint": "",
+          "month": "",
+          "year": "",
+          "bon_context_hits": [],
+          "flags": [
+            "practice_or_preview"
+          ],
+          "text": "#日本民謡協会 #盆踊り講習会 #大井町 6/14に盆踊り講習会がございます🌸 日本民謡協会には🍀みん盆🍀Min-Yoi's（ミンヨイズ）の盆踊り⭐️10/12⭐️でもホールをお借りします。お世話になりっ放しでございます🙇‍♀️ 日枝神社の山王祭の時期ですが、午後に美しい踊りを習うなどはいかがでしょう？"
+        }
+      ],
+      "probability": 24,
+      "confidence": "weak",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@yumiya_pon"
+      ],
+      "flags": [
+        "practice_or_preview"
+      ],
+      "event_hints": [],
+      "months": [],
+      "years": [],
+      "source_urls": [
+        "https://x.com/yumiya_pon/status/2063865448232636505"
+      ]
+    },
+    {
+      "association_id": "venue_song:dda47c97888f806c123a",
+      "venue": "日枝神社",
+      "venue_key": "cd81e79cc889ad3f5ec0",
+      "song_name": "岐阜音頭",
+      "song_key": "8d3c60b54335387e9b62",
+      "evidence": [
+        {
+          "tweet_id": "",
+          "url": "https://x.com/tomohikos/status/2063407219673366837",
+          "account": "@tomohikos",
+          "dancer_key": "@tomohikos",
+          "observed_at": "2026-06-06T23:46:32+00:00",
+          "song_name": "岐阜音頭",
+          "venue": "日枝神社",
+          "venue_hints": [
+            "日枝神社"
+          ],
+          "event_hint": "",
+          "month": "",
+          "year": "",
+          "bon_context_hits": [],
+          "flags": [
+            "practice_or_preview"
+          ],
+          "text": "6/14日は、日枝神社での【山王音頭と民踊大会】の前に 大井町でもいい汗を流しませんか？ 日本民謡協会の盆踊り講習会。 今回は、みんな大好き、《伊勢音頭（さわぎ）》と 《おばば（岐阜音頭）》の2曲。 まだ申し込み🆗ですよ！"
+        }
+      ],
+      "probability": 24,
+      "confidence": "weak",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@tomohikos"
+      ],
+      "flags": [
+        "practice_or_preview"
+      ],
+      "event_hints": [],
+      "months": [],
+      "years": [],
+      "source_urls": [
+        "https://x.com/tomohikos/status/2063407219673366837"
+      ]
+    },
+    {
+      "association_id": "venue_song:ca42511f8a00c7b19335",
+      "venue": "赤坂小学校",
+      "venue_key": "9b5de7ab862aec149bfd",
+      "song_name": "赤坂夏おどり",
+      "song_key": "706fa03ea99f2e12919c",
+      "evidence": [
+        {
+          "tweet_id": "2064846629061218673",
+          "url": "https://x.com/HOSINOK5SAMA/status/2064846629061218673",
+          "account": "@HOSINOK5SAMA",
+          "dancer_key": "@hosinok5sama",
+          "observed_at": "2026-06-10T23:06:14+00:00",
+          "song_name": "赤坂夏おどり",
+          "venue": "赤坂小学校",
+          "venue_hints": [
+            "赤坂小学校"
+          ],
+          "event_hint": "",
+          "month": "",
+          "year": "",
+          "bon_context_hits": [],
+          "flags": [
+            "practice_or_preview"
+          ],
+          "text": "盆即〜 赤坂夏おどり 盆踊り練習会 8月21日(金)、8月22日(土) 18:00〜19:30 赤坂小学校 体育館B1"
+        }
+      ],
+      "probability": 24,
+      "confidence": "weak",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@hosinok5sama"
+      ],
+      "flags": [
+        "practice_or_preview"
+      ],
+      "event_hints": [],
+      "months": [],
+      "years": [],
+      "source_urls": [
+        "https://x.com/HOSINOK5SAMA/status/2064846629061218673"
+      ]
+    },
+    {
+      "association_id": "venue_song:1030f1f33d80d9fec491",
+      "venue": "金山市民会館",
+      "venue_key": "698cd7781f0529630cb9",
+      "song_name": "祖師野拝殿おどり",
+      "song_key": "17bc550e8a25799002cf",
+      "evidence": [
+        {
+          "tweet_id": "",
+          "url": "https://x.com/sayokai/status/2062130726158684645",
+          "account": "@sayokai",
+          "dancer_key": "@sayokai",
+          "observed_at": "2026-06-03T11:14:12+00:00",
+          "song_name": "祖師野拝殿おどり",
+          "venue": "金山市民会館",
+          "venue_hints": [
+            "金山市民会館"
+          ],
+          "event_hint": "",
+          "month": "",
+          "year": "",
+          "bon_context_hits": [],
+          "flags": [
+            "practice_or_preview"
+          ],
+          "text": "・2026年6月11日（木）19:00〜21:00 文化祭向け練習：金山市民会館＠岐阜県下呂市 ・2026年6月29日（月）19:00〜21:00 盆踊りの集い：金山市民会館＠岐阜県下呂市 📣祖師野拝殿おどり直前練習含みます😊 ご興味ある方、見学だけでも大丈夫です。 お気軽にお越しください！"
+        }
+      ],
+      "probability": 24,
+      "confidence": "weak",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@sayokai"
+      ],
+      "flags": [
+        "practice_or_preview"
+      ],
+      "event_hints": [],
+      "months": [],
+      "years": [],
+      "source_urls": [
+        "https://x.com/sayokai/status/2062130726158684645"
+      ]
+    },
+    {
+      "association_id": "venue_song:ffb95a3f2976370b93b8",
+      "venue": "日本民謡会館",
+      "venue_key": "9adb019a9c59de1d3b6e",
+      "song_name": "さくら音頭",
+      "song_key": "ce7dce7fcb70b5e10d72",
+      "evidence": [
+        {
+          "tweet_id": "",
+          "url": "https://x.com/natsutr_bon/status/2062090921689440708",
+          "account": "@natsutr_bon",
+          "dancer_key": "@natsutr_bon",
+          "observed_at": "2026-06-03T08:36:02+00:00",
+          "song_name": "さくら音頭",
+          "venue": "日本民謡会館",
+          "venue_hints": [
+            "日本民謡会館"
+          ],
+          "event_hint": "",
+          "month": "",
+          "year": "",
+          "bon_context_hits": [],
+          "flags": [
+            "guest_or_reference"
+          ],
+          "text": "5/31ミンヨイズ盆踊り@日本民謡会館 生唄生演奏と音源で民謡を踊る催し🎶盆踊り好きの熱気で包まれました🤩 ゲスト木津かおりさんのさくら音頭を踊り終えた瞬間、フロアの歓声は最高潮🔥 踊り手、奏者、歌手、裏方みんなで作った貴重な空間でした✨ 鯵ヶ沢甚句と村崎野音頭もよかったな〜🎶 #みん盆 https://t.co/RiXYaGH1rX"
+        }
+      ],
+      "probability": 16,
+      "confidence": "weak",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@natsutr_bon"
+      ],
+      "flags": [
+        "guest_or_reference"
+      ],
+      "event_hints": [],
+      "months": [],
+      "years": [],
+      "source_urls": [
+        "https://x.com/natsutr_bon/status/2062090921689440708"
+      ]
+    },
+    {
+      "association_id": "venue_song:574914ae7a13d16fca0e",
+      "venue": "日本民謡会館",
+      "venue_key": "9adb019a9c59de1d3b6e",
+      "song_name": "村崎野音頭",
+      "song_key": "e0fc27ce2e0cbd74181c",
+      "evidence": [
+        {
+          "tweet_id": "",
+          "url": "https://x.com/natsutr_bon/status/2062090921689440708",
+          "account": "@natsutr_bon",
+          "dancer_key": "@natsutr_bon",
+          "observed_at": "2026-06-03T08:36:02+00:00",
+          "song_name": "村崎野音頭",
+          "venue": "日本民謡会館",
+          "venue_hints": [
+            "日本民謡会館"
+          ],
+          "event_hint": "",
+          "month": "",
+          "year": "",
+          "bon_context_hits": [],
+          "flags": [
+            "guest_or_reference"
+          ],
+          "text": "5/31ミンヨイズ盆踊り@日本民謡会館 生唄生演奏と音源で民謡を踊る催し🎶盆踊り好きの熱気で包まれました🤩 ゲスト木津かおりさんのさくら音頭を踊り終えた瞬間、フロアの歓声は最高潮🔥 踊り手、奏者、歌手、裏方みんなで作った貴重な空間でした✨ 鯵ヶ沢甚句と村崎野音頭もよかったな〜🎶 #みん盆 https://t.co/RiXYaGH1rX"
+        }
+      ],
+      "probability": 16,
+      "confidence": "weak",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@natsutr_bon"
+      ],
+      "flags": [
+        "guest_or_reference"
+      ],
+      "event_hints": [],
+      "months": [],
+      "years": [],
+      "source_urls": [
+        "https://x.com/natsutr_bon/status/2062090921689440708"
+      ]
+    },
+    {
+      "association_id": "venue_song:2a7c9d4d4e24fb976c93",
+      "venue": "日本民謡会館",
+      "venue_key": "9adb019a9c59de1d3b6e",
+      "song_name": "鯵ヶ沢甚句",
+      "song_key": "1e59555d23b46cc7bcbc",
+      "evidence": [
+        {
+          "tweet_id": "",
+          "url": "https://x.com/natsutr_bon/status/2062090921689440708",
+          "account": "@natsutr_bon",
+          "dancer_key": "@natsutr_bon",
+          "observed_at": "2026-06-03T08:36:02+00:00",
+          "song_name": "鯵ヶ沢甚句",
+          "venue": "日本民謡会館",
+          "venue_hints": [
+            "日本民謡会館"
+          ],
+          "event_hint": "",
+          "month": "",
+          "year": "",
+          "bon_context_hits": [],
+          "flags": [
+            "guest_or_reference"
+          ],
+          "text": "5/31ミンヨイズ盆踊り@日本民謡会館 生唄生演奏と音源で民謡を踊る催し🎶盆踊り好きの熱気で包まれました🤩 ゲスト木津かおりさんのさくら音頭を踊り終えた瞬間、フロアの歓声は最高潮🔥 踊り手、奏者、歌手、裏方みんなで作った貴重な空間でした✨ 鯵ヶ沢甚句と村崎野音頭もよかったな〜🎶 #みん盆 https://t.co/RiXYaGH1rX"
+        }
+      ],
+      "probability": 16,
+      "confidence": "weak",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "speakers": [
+        "@natsutr_bon"
+      ],
+      "flags": [
+        "guest_or_reference"
+      ],
+      "event_hints": [],
+      "months": [],
+      "years": [],
+      "source_urls": [
+        "https://x.com/natsutr_bon/status/2062090921689440708"
+      ]
+    }
+  ]
+}

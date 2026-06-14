@@ -1,0 +1,419 @@
+{
+  "exported_at": "2026-06-13T15:30:44.059Z",
+  "total": 59,
+  "rows": [
+    {
+      "key": "飛鳥山公園||あさがお踊り||venue_song:5905160e0132c1c44c76",
+      "term": "あさがお踊り",
+      "category": "low",
+      "decision": "採用",
+      "note": ""
+    },
+    {
+      "key": "仰高小学校||すがも花咲き音頭||venue_song:3efa78dae686d4ad56e6",
+      "term": "すがも花咲き音頭",
+      "category": "low",
+      "decision": "採用",
+      "note": ""
+    },
+    {
+      "key": "錦糸公園||ぼったくりイヤイヤ音頭||venue_song:fa1fa73dde4dde41ca6a",
+      "term": "ぼったくりイヤイヤ音頭",
+      "category": "low",
+      "decision": "採用",
+      "note": ""
+    },
+    {
+      "key": "羽根木公園||シモキタ音頭||venue_song:8a8c8080f561d66beacb",
+      "term": "シモキタ音頭",
+      "category": "low",
+      "decision": "採用",
+      "note": ""
+    },
+    {
+      "key": "築地本願寺||ソーラン||venue_song:ec85d10995325c7a9641",
+      "term": "ソーラン",
+      "category": "low",
+      "decision": "不採用",
+      "note": ""
+    },
+    {
+      "key": "羽根木公園||ダイダラボッチ音頭||venue_song:1783676d254b26b53d89",
+      "term": "ダイダラボッチ音頭",
+      "category": "low",
+      "decision": "採用",
+      "note": ""
+    },
+    {
+      "key": "浜町公園||ダンシングヒーロー||venue_song:5aae355f0ebbdfb357dc",
+      "term": "ダンシングヒーロー",
+      "category": "low",
+      "decision": "修正",
+      "note": ""
+    },
+    {
+      "key": "辻堂駅北口神台公園||ダンシングヒーロー||venue_song:700d2734f65d66ada6fe",
+      "term": "ダンシングヒーロー",
+      "category": "low",
+      "decision": "採用",
+      "note": ""
+    },
+    {
+      "key": "さくら公園||ドンパン節||venue_song:be7af43696c0d52d149f",
+      "term": "ドンパン節",
+      "category": "low",
+      "decision": "採用",
+      "note": ""
+    },
+    {
+      "key": "羽根木公園||代田節||venue_song:1245090edea35988f202",
+      "term": "代田節",
+      "category": "low",
+      "decision": "採用",
+      "note": ""
+    },
+    {
+      "key": "晴海埠頭公園||八幡の徹夜踊り||venue_song:a641f8a03683595cdce2",
+      "term": "八幡の徹夜踊り",
+      "category": "low",
+      "decision": "不採用",
+      "note": ""
+    },
+    {
+      "key": "飛鳥山公園||千代田踊り||venue_song:aeeb47b4f22869fbcb31",
+      "term": "千代田踊り",
+      "category": "low",
+      "decision": "採用",
+      "note": ""
+    },
+    {
+      "key": "鮫洲入江広場公園||印西音頭||venue_song:c2007f3499f662d90834",
+      "term": "印西音頭",
+      "category": "low",
+      "decision": "採用",
+      "note": ""
+    },
+    {
+      "key": "さくら公園||同級会音頭||venue_song:cb54e9f04c64bb86f7f3",
+      "term": "同級会音頭",
+      "category": "low",
+      "decision": "採用",
+      "note": ""
+    },
+    {
+      "key": "五ヶ瀬中学校||団七踊り||venue_song:82a7f3f43c922aa2aab6",
+      "term": "団七踊り",
+      "category": "low",
+      "decision": "採用",
+      "note": ""
+    },
+    {
+      "key": "鮫洲入江広場公園||大井町音頭||venue_song:3a88fe51fdbd85429d0e",
+      "term": "大井町音頭",
+      "category": "low",
+      "decision": "採用",
+      "note": ""
+    },
+    {
+      "key": "さくら公園||大東京音頭||venue_song:7a979dad34466ae2bb19",
+      "term": "大東京音頭",
+      "category": "low",
+      "decision": "採用",
+      "note": ""
+    },
+    {
+      "key": "尼北小学校||富松まめかち音頭||venue_song:99347cadd7cfae82eea2",
+      "term": "富松まめかち音頭",
+      "category": "low",
+      "decision": "採用",
+      "note": ""
+    },
+    {
+      "key": "尼北小学校||富松むぎわら音頭||venue_song:280dc6c3eca1303a4440",
+      "term": "富松むぎわら音頭",
+      "category": "low",
+      "decision": "採用",
+      "note": ""
+    },
+    {
+      "key": "日枝神社||山王音頭||venue_song:d9014b10b18583150e22",
+      "term": "山王音頭",
+      "category": "low",
+      "decision": "採用",
+      "note": ""
+    },
+    {
+      "key": "赤坂日枝神社||山王音頭||venue_song:c28c83713e4b38255963",
+      "term": "山王音頭",
+      "category": "low",
+      "decision": "採用",
+      "note": ""
+    },
+    {
+      "key": "飛鳥山公園||山王音頭||venue_song:0bbf842f88e1b1edca31",
+      "term": "山王音頭",
+      "category": "low",
+      "decision": "採用",
+      "note": ""
+    },
+    {
+      "key": "圓隆寺||広島音頭||venue_song:a683390e89e64c96aca9",
+      "term": "広島音頭",
+      "category": "low",
+      "decision": "採用",
+      "note": ""
+    },
+    {
+      "key": "さくら公園||東京音頭||venue_song:ebb4ecc1bacc8e5c2551",
+      "term": "東京音頭",
+      "category": "low",
+      "decision": "採用",
+      "note": ""
+    },
+    {
+      "key": "築地本願寺||民謡踊り||venue_song:b0b3f18ab03fd53cb79a",
+      "term": "民謡踊り",
+      "category": "low",
+      "decision": "不採用",
+      "note": ""
+    },
+    {
+      "key": "尼北小学校||河内おとこ節||venue_song:b29a9de5f74a73b42f5e",
+      "term": "河内おとこ節",
+      "category": "low",
+      "decision": "採用",
+      "note": ""
+    },
+    {
+      "key": "東大阪市布施駅前||河内音頭||venue_song:ad317e197f174a3c6987",
+      "term": "河内音頭",
+      "category": "low",
+      "decision": "採用",
+      "note": ""
+    },
+    {
+      "key": "あかつき公園||浜町音頭||venue_song:22b74f72281d754e9278",
+      "term": "浜町音頭",
+      "category": "low",
+      "decision": "採用",
+      "note": ""
+    },
+    {
+      "key": "尼北小学校||炭坑節||venue_song:9831b5b393bc4fa0c302",
+      "term": "炭坑節",
+      "category": "low",
+      "decision": "採用",
+      "note": ""
+    },
+    {
+      "key": "築地本願寺||炭坑節||venue_song:9fcab69778778e813341",
+      "term": "炭坑節",
+      "category": "low",
+      "decision": "採用",
+      "note": ""
+    },
+    {
+      "key": "久屋大通公園||白鳥おどり||venue_song:c90b7fcd3f0bf75f6234",
+      "term": "白鳥おどり",
+      "category": "low",
+      "decision": "不採用",
+      "note": ""
+    },
+    {
+      "key": "稲村ケ崎公園||稲村音頭||venue_song:e5eac6168527e8857062",
+      "term": "稲村音頭",
+      "category": "low",
+      "decision": "採用",
+      "note": ""
+    },
+    {
+      "key": "羽根木公園||羽根木音頭||venue_song:42f0945e41395e9ed286",
+      "term": "羽根木音頭",
+      "category": "low",
+      "decision": "採用",
+      "note": ""
+    },
+    {
+      "key": "築地本願寺||花笠音頭||venue_song:821ef2afef2ea292e932",
+      "term": "花笠音頭",
+      "category": "low",
+      "decision": "不採用",
+      "note": ""
+    },
+    {
+      "key": "築地本願寺||貝殻節||venue_song:578a259140ea64943e15",
+      "term": "貝殻節",
+      "category": "low",
+      "decision": "不採用",
+      "note": ""
+    },
+    {
+      "key": "久屋大通公園||郡上おどり||venue_song:410fc25ffa76643db67e",
+      "term": "郡上おどり",
+      "category": "low",
+      "decision": "不採用",
+      "note": ""
+    },
+    {
+      "key": "市役所前広場||郡上おどり||venue_song:43076d253190f268d134",
+      "term": "郡上おどり",
+      "category": "low",
+      "decision": "不採用",
+      "note": ""
+    },
+    {
+      "key": "河原町広場||郡上おどり||venue_song:e616094dd2ca38d15285",
+      "term": "郡上おどり",
+      "category": "low",
+      "decision": "不採用",
+      "note": ""
+    },
+    {
+      "key": "徳島駅前||阿波おどり||venue_song:0b770c850f38d0cbf3bf",
+      "term": "阿波おどり",
+      "category": "low",
+      "decision": "不採用",
+      "note": ""
+    },
+    {
+      "key": "鰭ヶ崎2号公園||鰭ヶ崎音頭||venue_song:b98ccf143ef886e62dbe",
+      "term": "鰭ヶ崎音頭",
+      "category": "low",
+      "decision": "採用",
+      "note": ""
+    },
+    {
+      "key": "日本橋小学校||浜町音頭||venue_song:72406147af98efe0713b",
+      "term": "浜町音頭",
+      "category": "medium",
+      "decision": "採用",
+      "note": ""
+    },
+    {
+      "key": "築地本願寺||築地音頭||venue_song:8b2665e925e148450569",
+      "term": "築地音頭",
+      "category": "medium",
+      "decision": "採用",
+      "note": ""
+    },
+    {
+      "key": "日本民謡会館||さくら音頭||venue_song:ffb95a3f2976370b93b8",
+      "term": "さくら音頭",
+      "category": "weak",
+      "decision": "採用",
+      "note": ""
+    },
+    {
+      "key": "夏祭り向けに有馬小学校||ダンシングヒーロー||venue_song:443b80fb04d0d55390af",
+      "term": "ダンシングヒーロー",
+      "category": "weak",
+      "decision": "採用",
+      "note": ""
+    },
+    {
+      "key": "日枝神社||伊勢音頭||venue_song:20474bd14dad3bd80006",
+      "term": "伊勢音頭",
+      "category": "weak",
+      "decision": "採用",
+      "note": ""
+    },
+    {
+      "key": "上野公園噴水広場||入谷南公園の朝顔音頭||venue_song:64120e53a4251fb6c82a",
+      "term": "入谷南公園の朝顔音頭",
+      "category": "weak",
+      "decision": "修正",
+      "note": ""
+    },
+    {
+      "key": "中央区立社会教育会館||勝鬨橋を渡れば築地音頭||venue_song:c0128d5ffdad809afceb",
+      "term": "勝鬨橋を渡れば築地音頭",
+      "category": "weak",
+      "decision": "不採用",
+      "note": ""
+    },
+    {
+      "key": "日枝神社||午後に美しい踊り||venue_song:157ec073f95efcf5f6a6",
+      "term": "午後に美しい踊り",
+      "category": "weak",
+      "decision": "不採用",
+      "note": ""
+    },
+    {
+      "key": "中央区立社会教育会館||名曲月島音頭||venue_song:b655167afd1fb9f2b469",
+      "term": "名曲月島音頭",
+      "category": "weak",
+      "decision": "不採用",
+      "note": ""
+    },
+    {
+      "key": "日枝神社||岐阜音頭||venue_song:dda47c97888f806c123a",
+      "term": "岐阜音頭",
+      "category": "weak",
+      "decision": "不採用",
+      "note": ""
+    },
+    {
+      "key": "日本民謡会館||村崎野音頭||venue_song:574914ae7a13d16fca0e",
+      "term": "村崎野音頭",
+      "category": "weak",
+      "decision": "採用",
+      "note": ""
+    },
+    {
+      "key": "夏祭り向けに有馬小学校||浜町音頭||venue_song:8175ed6c19880cb9e5a0",
+      "term": "浜町音頭",
+      "category": "weak",
+      "decision": "不採用",
+      "note": ""
+    },
+    {
+      "key": "中央区立社会教育会館||深川音頭||venue_song:5c74e89d0bdf28f5f723",
+      "term": "深川音頭",
+      "category": "weak",
+      "decision": "採用",
+      "note": ""
+    },
+    {
+      "key": "金山市民会館||祖師野拝殿おどり||venue_song:1030f1f33d80d9fec491",
+      "term": "祖師野拝殿おどり",
+      "category": "weak",
+      "decision": "保留",
+      "note": ""
+    },
+    {
+      "key": "赤坂小学校||赤坂夏おどり||venue_song:ca42511f8a00c7b19335",
+      "term": "赤坂夏おどり",
+      "category": "weak",
+      "decision": "保留",
+      "note": ""
+    },
+    {
+      "key": "遊行寺||郡上おどり||venue_song:bd3685c5e60a6eb92552",
+      "term": "郡上おどり",
+      "category": "weak",
+      "decision": "不採用",
+      "note": ""
+    },
+    {
+      "key": "中央区立社会教育会館||銀座音頭||venue_song:5871e6cc506f27ab258e",
+      "term": "銀座音頭",
+      "category": "weak",
+      "decision": "採用",
+      "note": ""
+    },
+    {
+      "key": "遊行寺||阿波踊り||venue_song:5ba28d22481ecd64e921",
+      "term": "阿波踊り",
+      "category": "weak",
+      "decision": "不採用",
+      "note": ""
+    },
+    {
+      "key": "日本民謡会館||鯵ヶ沢甚句||venue_song:2a7c9d4d4e24fb976c93",
+      "term": "鯵ヶ沢甚句",
+      "category": "weak",
+      "decision": "採用",
+      "note": ""
+    }
+  ]
+}

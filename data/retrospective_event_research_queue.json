@@ -1,0 +1,61 @@
+{
+  "generated_by": "split_retrospective_event_curation.py",
+  "source": "data/retrospective_event_apply_curation.json",
+  "count": 6,
+  "rows": [
+    {
+      "candidate_key": "event:41c7cfb7ba903f159ec8e78d803877123d2dbddd87aa3f237e788518a81b0e02",
+      "event_name": "藤沢七夕まつり",
+      "venue": "辻堂駅北口神台公園",
+      "estimated_date": "2026-07-04",
+      "source_url": "https://x.com/honeycutie333/status/2064678013510504823",
+      "reason": "会場が会場マスタ未登録。イベント作成前に会場ページ作成/名寄せが必要。",
+      "next_action": "正式イベント名・会場・既存重複を調査"
+    },
+    {
+      "candidate_key": "event:eb150d13f3f30b8ffd825054afb37c115c9bb6597d5881b72d82c524fc0aa172",
+      "event_name": "5月9日浅草橋マロニエまつり盆踊り",
+      "venue": "",
+      "estimated_date": "2026-05-09",
+      "source_url": "https://x.com/1205uzonke/status/2065200648086487508",
+      "reason": "イベント名に日付が混入。正式名と会場の補完が必要。",
+      "next_action": "正式イベント名・会場・既存重複を調査"
+    },
+    {
+      "candidate_key": "event:5272d7b8426ec32bf1e92abd13f77ee9ed6160bae568a54e1993cdde9b8ea273",
+      "event_name": "西馬音内盆踊り",
+      "venue": "",
+      "estimated_date": "2026-06-01",
+      "source_url": "https://x.com/selion_akitakou/status/2063452243609936037",
+      "reason": "会場未確定。登録前に venue_master への名寄せまたは新規会場登録が必要。",
+      "next_action": "正式イベント名・会場・既存重複を調査"
+    },
+    {
+      "candidate_key": "event:eb9a1c5a25d2839770c6d2dde40599baa059c68c3ce6ad36982077d6736ee3af",
+      "event_name": "西馬音内盆踊り",
+      "venue": "",
+      "estimated_date": "",
+      "source_url": "https://x.com/maru_akitahaku/status/2060657371937153093",
+      "reason": "会場未確定。登録前に venue_master への名寄せまたは新規会場登録が必要。",
+      "next_action": "正式イベント名・会場・既存重複を調査"
+    },
+    {
+      "candidate_key": "event:82086b8eec335e8aff788e2b644ae0d05f5dcd06fe88d7139a8955d4dda358fc",
+      "event_name": "足寄ふるさと盆踊り",
+      "venue": "",
+      "estimated_date": "2026-08-15",
+      "source_url": "https://x.com/midorimushi54/status/2062130940420448758",
+      "reason": "会場未確定。登録前に venue_master への名寄せまたは新規会場登録が必要。",
+      "next_action": "正式イベント名・会場・既存重複を調査"
+    },
+    {
+      "candidate_key": "event:8de18ada42f04a5845ca8ecbf7753c875cf47ddbf4274e6068b734c722e4f3b7",
+      "event_name": "笠間納涼盆踊り",
+      "venue": "",
+      "estimated_date": "",
+      "source_url": "https://x.com/hitachi773X/status/2065431155575505274",
+      "reason": "会場未確定。登録前に venue_master への名寄せまたは新規会場登録が必要。",
+      "next_action": "正式イベント名・会場・既存重複を調査"
+    }
+  ]
+}

@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>会場追加レビュー（会場×曲から）</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f8fa;
+      --panel: #fff;
+      --text: #20242a;
+      --muted: #667085;
+      --line: #d8dee8;
+      --accent: #0f766e;
+      --danger: #b42318;
+      --warn: #a15c07;
+      --hold: #475467;
+      --blue: #2563eb;
+      --purple: #7c3aed;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(247, 248, 250, .96);
+      border-bottom: 1px solid var(--line);
+      padding: 14px 20px;
+      backdrop-filter: blur(8px);
+    }
+    h1 { margin: 0 0 8px; font-size: 20px; letter-spacing: 0; }
+    .toolbar { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+    .summary { color: var(--muted); font-size: 14px; margin-right: auto; }
+    button {
+      border: 1px solid var(--line);
+      background: white;
+      border-radius: 6px;
+      padding: 7px 10px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    button.primary { border-color: var(--accent); background: var(--accent); color: white; }
+    main { padding: 18px 20px 40px; max-width: 1200px; margin: 0 auto; }
+    .filters { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 14px; }
+    .filter {
+      border: 1px solid var(--line);
+      background: white;
+      border-radius: 999px;
+      padding: 6px 10px;
+      color: var(--muted);
+      cursor: pointer;
+      font-size: 13px;
+    }
+    .filter.active { border-color: var(--accent); color: var(--accent); font-weight: 700; }
+    section { margin: 20px 0; }
+    h2 { font-size: 16px; margin: 0 0 10px; }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 12px;
+      margin: 10px 0;
+    }
+    .card.active { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(15,118,110,.14); }
+    .row-head {
+      display: grid;
+      grid-template-columns: minmax(130px, 220px) minmax(0, 1fr) auto;
+      gap: 12px;
+      align-items: start;
+    }
+    .term { font-size: 17px; font-weight: 800; }
+    .meta { color: var(--muted); font-size: 12px; margin-top: 2px; }
+    .interpretation { font-size: 14px; }
+    .choices { display: grid; grid-template-columns: repeat(var(--choice-count), 86px); gap: 6px; }
+    .choice {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 34px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      font-size: 13px;
+      cursor: pointer;
+      user-select: none;
+      background: white;
+    }
+    .choice input { display: none; }
+    .choice:has(input:checked) { color: white; font-weight: 700; }
+    .choice.accept:has(input:checked) { background: var(--accent); border-color: var(--accent); }
+    .choice.reject:has(input:checked) { background: var(--danger); border-color: var(--danger); }
+    .choice.merge:has(input:checked) { background: var(--warn); border-color: var(--warn); }
+    .choice.hold:has(input:checked) { background: var(--hold); border-color: var(--hold); }
+    .choice.extra1:has(input:checked) { background: var(--blue); border-color: var(--blue); }
+    .choice.extra2:has(input:checked) { background: var(--purple); border-color: var(--purple); }
+    details { margin-top: 10px; color: var(--muted); font-size: 13px; }
+    details p { margin: 8px 0; color: var(--text); white-space: pre-wrap; }
+    .source {
+      border-left: 3px solid var(--line);
+      padding: 6px 10px;
+      margin: 8px 0;
+      background: var(--bg);
+      border-radius: 0 6px 6px 0;
+    }
+    .source-meta { color: var(--muted); font-size: 12px; margin-bottom: 2px; }
+    .source-text { color: var(--text); font-size: 13px; white-space: pre-wrap; }
+    .note {
+      margin-top: 10px;
+      width: 100%;
+      min-height: 34px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 8px;
+      font: inherit;
+      resize: vertical;
+    }
+    .help { color: var(--muted); font-size: 13px; width: 100%; }
+    kbd {
+      border: 1px solid var(--line);
+      border-bottom-width: 2px;
+      border-radius: 4px;
+      background: white;
+      padding: 1px 5px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 12px;
+    }
+    a { color: var(--accent); }
+    @media (max-width: 760px) {
+      .row-head { grid-template-columns: 1fr; }
+      .choices { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>会場追加レビュー（会場×曲から）</h1>
+    <div class="toolbar">
+      <div class="summary" id="summary"></div>
+      <button type="button" id="showUnreviewed">未判定だけ</button>
+      <button type="button" id="showAll">全部表示</button>
+      <button type="button" class="primary" id="exportJson">結果JSONをダウンロード</button>
+      <div class="help">
+        <kbd>j</kbd>/<kbd>k</kbd> 移動　
+        <kbd>1</kbd>-<kbd>9</kbd> 判定　
+        <kbd>n</kbd> メモ
+        <kbd>s</kbd> ソース
+        <kbd>u</kbd> 未判定表示　
+        <kbd>a</kbd> 全部表示　
+        <kbd>e</kbd> 書き出し
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="filters" id="filters"></div>
+    <div id="app"></div>
+  </main>
+  <script>
+    const TERMS = [{"_key": "あかつき公園||https://x.com/tukishimanagaya/status/1987457842056704409", "term": "あかつき公園", "category": "会場追加候補", "summary": [{"label": "songs_text", "value": "浜町音頭"}, {"label": "song_count", "value": "1"}, {"label": "evidence_count", "value": "1"}, {"label": "raw_venues", "value": "['あかつき公園']"}], "details": [{"label": "reason", "value": "採用済み会場×曲候補だが、Notion会場DBに会場が見つからなかった。"}, {"label": "source_urls", "value": "['https://x.com/tukishimanagaya/status/1987457842056704409']"}], "sources": [{"text": "蔦屋重三郎に思いを馳せて盆踊り 浜町音頭保存会の方々による盆踊りイベント 去年はあかつき公園で今年は日本橋社会教育会館ホールにて開催 紋章上絵師の福田昭三さんの生歌&amp;保存会の方々の見事な踊りに混じって楽しく盆踊り🎶 展示で使用された風呂敷を頂きました🙏 #まるごとミュージアム2025 https://t.co/pITqQ1NQnq", "account": "@tukishimanagaya", "date": "2025-11-09T09:50:49+00:00", "url": "https://x.com/tukishimanagaya/status/1987457842056704409"}], "preloaded": {}}, {"_key": "さくら公園||https://x.com/_masakari/status/2065078577687863764", "term": "さくら公園", "category": "会場追加候補", "summary": [{"label": "songs_text", "value": "ドンパン節、同級会音頭、大東京音頭、東京音頭"}, {"label": "song_count", "value": "4"}, {"label": "evidence_count", "value": "4"}, {"label": "raw_venues", "value": "['さくら公園']"}], "details": [{"label": "reason", "value": "採用済み会場×曲候補だが、Notion会場DBに会場が見つからなかった。"}, {"label": "source_urls", "value": "['https://x.com/_masakari/status/2065078577687863764']"}], "sources": [{"text": "6/11(木)19:00~20:30 さくら公園盆踊り大会 盆踊り練習会 椿音頭(うちわ)を初めて踊った。 365日の紙飛行機の、最後の決めポーズが勉強になった。 同級会音頭 ドンパン節 花の盆踊り 東京音頭 大東京音頭 快く受け入れて頂き、ありがとうございました。楽しかったです。", "account": "@_masakari", "date": "2026-06-11T14:27:54+00:00", "url": "https://x.com/_masakari/status/2065078577687863764"}, {"text": "6/11(木)19:00~20:30 さくら公園盆踊り大会 盆踊り練習会 椿音頭(うちわ)を初めて踊った。 365日の紙飛行機の、最後の決めポーズが勉強になった。 同級会音頭 ドンパン節 花の盆踊り 東京音頭 大東京音頭 快く受け入れて頂き、ありがとうございました。楽しかったです。", "account": "@_masakari", "date": "2026-06-11T14:27:54+00:00", "url": "https://x.com/_masakari/status/2065078577687863764"}, {"text": "6/11(木)19:00~20:30 さくら公園盆踊り大会 盆踊り練習会 椿音頭(うちわ)を初めて踊った。 365日の紙飛行機の、最後の決めポーズが勉強になった。 同級会音頭 ドンパン節 花の盆踊り 東京音頭 大東京音頭 快く受け入れて頂き、ありがとうございました。楽しかったです。", "account": "@_masakari", "date": "2026-06-11T14:27:54+00:00", "url": "https://x.com/_masakari/status/2065078577687863764"}, {"text": "6/11(木)19:00~20:30 さくら公園盆踊り大会 盆踊り練習会 椿音頭(うちわ)を初めて踊った。 365日の紙飛行機の、最後の決めポーズが勉強になった。 同級会音頭 ドンパン節 花の盆踊り 東京音頭 大東京音頭 快く受け入れて頂き、ありがとうございました。楽しかったです。", "account": "@_masakari", "date": "2026-06-11T14:27:54+00:00", "url": "https://x.com/_masakari/status/2065078577687863764"}], "preloaded": {}}, {"_key": "五ヶ瀬中学校||https://x.com/bonDbonT/status/2065409898389930239", "term": "五ヶ瀬中学校", "category": "会場追加候補", "summary": [{"label": "songs_text", "value": "団七踊り"}, {"label": "song_count", "value": "1"}, {"label": "evidence_count", "value": "1"}, {"label": "raw_venues", "value": "['五ヶ瀬中学校']"}], "details": [{"label": "reason", "value": "採用済み会場×曲候補だが、Notion会場DBに会場が見つからなかった。"}, {"label": "source_urls", "value": "['https://x.com/bonDbonT/status/2065409898389930239']"}], "sources": [{"text": "地域に伝わる「棒術」「なぎなた」「団七踊り」を学ぶ 五ヶ瀬中学校の全校生徒が参加して伝統芸能教室（MRT宮崎放送） https://t.co/TraCSFZCZ4", "account": "@bonDbonT", "date": "2026-06-12T12:24:27+00:00", "url": "https://x.com/bonDbonT/status/2065409898389930239"}], "preloaded": {}}, {"_key": "仰高小学校||https://x.com/natsutr_bon/status/2065580308813275186", "term": "仰高小学校", "category": "会場追加候補", "summary": [{"label": "songs_text", "value": "すがも花咲き音頭"}, {"label": "song_count", "value": "1"}, {"label": "evidence_count", "value": "1"}, {"label": "raw_venues", "value": "['仰高小学校']"}], "details": [{"label": "reason", "value": "採用済み会場×曲候補だが、Notion会場DBに会場が見つからなかった。"}, {"label": "source_urls", "value": "['https://x.com/natsutr_bon/status/2065580308813275186']"}], "sources": [{"text": "【巣鴨盆踊り大会】 🏮7/17(金)18(土)19(日)🕓18:30-21:00📍巣鴨駅(豊島区) 毎回巣鴨駅南口のロータリーに大きな櫓が立ち、アクセスの良い会場♪ 仰高小学校によるヨサコイソーランを皮切りに３夜連日開催✨ご当地曲は「すがも花咲き音頭」🌼 ☔19日雨天時は翌日に順延 https://t.co/sgdhx63TD3", "account": "@natsutr_bon", "date": "2026-06-12T23:41:36+00:00", "url": "https://x.com/natsutr_bon/status/2065580308813275186"}], "preloaded": {}}, {"_key": "圓隆寺||https://x.com/fried_wakame/status/2062922591988523246", "term": "圓隆寺", "category": "会場追加候補", "summary": [{"label": "songs_text", "value": "広島音頭"}, {"label": "song_count", "value": "1"}, {"label": "evidence_count", "value": "1"}, {"label": "raw_venues", "value": "['圓隆寺']"}], "details": [{"label": "reason", "value": "採用済み会場×曲候補だが、Notion会場DBに会場が見つからなかった。"}, {"label": "source_urls", "value": "['https://x.com/fried_wakame/status/2062922591988523246']"}], "sources": [{"text": "とうかさん大祭 ゆかたできん祭へ🏮 圓隆寺さんへ参拝 厄除けうちわ、壱法符も✨ 南一誠さんの生歌でそれ行けカープ広島天国が踊れて嬉しい🙌素敵な歌声で大盛り上がり！ 広島音頭に込められた思いを教えていただくと共に会場全体が夏の始まりと踊りを楽しんでいるのが印象的なゆかたで盆踊りでした👘 https://t.co/GjDjROlARc", "account": "@fried_wakame", "date": "2026-06-05T15:40:47+00:00", "url": "https://x.com/fried_wakame/status/2062922591988523246"}], "preloaded": {}}, {"_key": "尼北小学校||https://x.com/kazu_maru_dayo/status/2063146424121119093", "term": "尼北小学校", "category": "会場追加候補", "summary": [{"label": "songs_text", "value": "富松まめかち音頭、富松むぎわら音頭、河内おとこ節、炭坑節"}, {"label": "song_count", "value": "4"}, {"label": "evidence_count", "value": "4"}, {"label": "raw_venues", "value": "['尼北小学校']"}], "details": [{"label": "reason", "value": "採用済み会場×曲候補だが、Notion会場DBに会場が見つからなかった。"}, {"label": "source_urls", "value": "['https://x.com/kazu_maru_dayo/status/2063146424121119093']"}], "sources": [{"text": "尼崎で一番早い盆踊り？ 【尼北小学校】 あまきた祭り ・富松むぎわら音頭 ・富松まめかち音頭（江州のフリ） ・炭坑節 ・河内おとこ節（手流しで右の伏せがなし） ・富松むぎわら音頭 …5曲 伊丹、尼崎の踊り子さんが来てました。楽しかった😀 予想以上に暑く熱中症になりかけました ⚠️徒歩での来校 https://t.co/AjeFJ8ZY6j", "account": "@kazu_maru_dayo", "date": "2026-06-06T06:30:13+00:00", "url": "https://x.com/kazu_maru_dayo/status/2063146424121119093"}, {"text": "尼崎で一番早い盆踊り？ 【尼北小学校】 あまきた祭り ・富松むぎわら音頭 ・富松まめかち音頭（江州のフリ） ・炭坑節 ・河内おとこ節（手流しで右の伏せがなし） ・富松むぎわら音頭 …5曲 伊丹、尼崎の踊り子さんが来てました。楽しかった😀 予想以上に暑く熱中症になりかけました ⚠️徒歩での来校 https://t.co/AjeFJ8ZY6j", "account": "@kazu_maru_dayo", "date": "2026-06-06T06:30:13+00:00", "url": "https://x.com/kazu_maru_dayo/status/2063146424121119093"}, {"text": "尼崎で一番早い盆踊り？ 【尼北小学校】 あまきた祭り ・富松むぎわら音頭 ・富松まめかち音頭（江州のフリ） ・炭坑節 ・河内おとこ節（手流しで右の伏せがなし） ・富松むぎわら音頭 …5曲 伊丹、尼崎の踊り子さんが来てました。楽しかった😀 予想以上に暑く熱中症になりかけました ⚠️徒歩での来校 https://t.co/AjeFJ8ZY6j", "account": "@kazu_maru_dayo", "date": "2026-06-06T06:30:13+00:00", "url": "https://x.com/kazu_maru_dayo/status/2063146424121119093"}, {"text": "尼崎で一番早い盆踊り？ 【尼北小学校】 あまきた祭り ・富松むぎわら音頭 ・富松まめかち音頭（江州のフリ） ・炭坑節 ・河内おとこ節（手流しで右の伏せがなし） ・富松むぎわら音頭 …5曲 伊丹、尼崎の踊り子さんが来てました。楽しかった😀 予想以上に暑く熱中症になりかけました ⚠️徒歩での来校 https://t.co/AjeFJ8ZY6j", "account": "@kazu_maru_dayo", "date": "2026-06-06T06:30:13+00:00", "url": "https://x.com/kazu_maru_dayo/status/2063146424121119093"}], "preloaded": {}}, {"_key": "布施駅前||https://x.com/yoshitaka_1008/status/2064023816804942198", "term": "布施駅前", "category": "会場追加候補", "summary": [{"label": "songs_text", "value": "河内音頭"}, {"label": "song_count", "value": "1"}, {"label": "evidence_count", "value": "1"}, {"label": "raw_venues", "value": "['東大阪市布施駅前']"}], "details": [{"label": "reason", "value": "採用済み会場×曲候補だが、Notion会場DBに会場が見つからなかった。"}, {"label": "source_urls", "value": "['https://x.com/yoshitaka_1008/status/2064023816804942198']"}], "sources": [{"text": "【音頭座がらく 河内音頭セミナー〜盆踊り体験会〜】 2026年 6月 7日（日）：東大阪市布施駅前市民プラザ「夢広場」多目的ホール ご参加いただいた約9割のお客様が音頭座がらくのイベントに初参加という嬉しい成果！ ”笑顔”がテーマとなったイベントとなりました！！ https://t.co/CNSf565x9F", "account": "@yoshitaka_1008", "date": "2026-06-08T16:36:40+00:00", "url": "https://x.com/yoshitaka_1008/status/2064023816804942198"}], "preloaded": {}}, {"_key": "日枝神社||https://x.com/kuma_bot999/status/1643821321145700352", "term": "日枝神社", "category": "会場追加候補", "summary": [{"label": "songs_text", "value": "山王音頭"}, {"label": "song_count", "value": "1"}, {"label": "evidence_count", "value": "2"}, {"label": "raw_venues", "value": "['日枝神社']"}], "details": [{"label": "reason", "value": "採用済み会場×曲候補だが、Notion会場DBに会場が見つからなかった。"}, {"label": "source_urls", "value": "['https://x.com/kuma_bot999/status/1643821321145700352']"}], "sources": [{"text": "正式に出たという理解でよいのかなと #山王音頭と民踊大会 #日枝神社 #落合社中 令和5年 6/13(火)〜6/15(木) 18時30分〜 https://t.co/PwT3i0cGe8", "account": "@kuma_bot999", "date": "2023-04-06T03:41:58+00:00", "url": "https://x.com/kuma_bot999/status/1643821321145700352"}, {"text": "6/14日は、日枝神社での【山王音頭と民踊大会】の前に 大井町でもいい汗を流しませんか？ 日本民謡協会の盆踊り講習会。 今回は、みんな大好き、《伊勢音頭（さわぎ）》と 《おばば（岐阜音頭）》の2曲。 まだ申し込み🆗ですよ！", "account": "@tomohikos", "date": "2026-06-06T23:46:32+00:00", "url": "https://x.com/tomohikos/status/2063407219673366837"}], "preloaded": {}}, {"_key": "日枝神社||https://x.com/tomohikos/status/2063407219673366837", "term": "日枝神社", "category": "会場追加候補", "summary": [{"label": "songs_text", "value": "伊勢音頭"}, {"label": "song_count", "value": "1"}, {"label": "evidence_count", "value": "1"}, {"label": "raw_venues", "value": "['日枝神社']"}], "details": [{"label": "reason", "value": "採用済み会場×曲候補だが、Notion会場DBに会場が見つからなかった。"}, {"label": "source_urls", "value": "['https://x.com/tomohikos/status/2063407219673366837']"}], "sources": [{"text": "6/14日は、日枝神社での【山王音頭と民踊大会】の前に 大井町でもいい汗を流しませんか？ 日本民謡協会の盆踊り講習会。 今回は、みんな大好き、《伊勢音頭（さわぎ）》と 《おばば（岐阜音頭）》の2曲。 まだ申し込み🆗ですよ！", "account": "@tomohikos", "date": "2026-06-06T23:46:32+00:00", "url": "https://x.com/tomohikos/status/2063407219673366837"}], "preloaded": {}}, {"_key": "有馬小学校||https://x.com/QTjittan/status/2048289247447449625", "term": "有馬小学校", "category": "会場追加候補", "summary": [{"label": "songs_text", "value": "ダンシングヒーロー"}, {"label": "song_count", "value": "1"}, {"label": "evidence_count", "value": "1"}, {"label": "raw_venues", "value": "['夏祭り向けに有馬小学校']"}], "details": [{"label": "reason", "value": "採用済み会場×曲候補だが、Notion会場DBに会場が見つからなかった。"}, {"label": "source_urls", "value": "['https://x.com/QTjittan/status/2048289247447449625']"}], "sources": [{"text": "浜町音頭保存会でも、夏祭り向けに有馬小学校で盆踊り練習会した時、ダンシングヒーローが好きな小学生に声かけられたよ。 わし、小学生の頃は日舞してたから、見る人が見れば、踊りが上手い方に入るから覚えられてたみたい。 今は盆踊りもしてないからもっと下手になってるけどね。", "account": "@QTjittan", "date": "2026-04-26T06:33:06+00:00", "url": "https://x.com/QTjittan/status/2048289247447449625"}], "preloaded": {}}, {"_key": "稲村ケ崎公園||https://x.com/natsutr_bon/status/2064956574767161369", "term": "稲村ケ崎公園", "category": "会場追加候補", "summary": [{"label": "songs_text", "value": "稲村音頭"}, {"label": "song_count", "value": "1"}, {"label": "evidence_count", "value": "1"}, {"label": "raw_venues", "value": "['稲村ケ崎公園']"}], "details": [{"label": "reason", "value": "採用済み会場×曲候補だが、Notion会場DBに会場が見つからなかった。"}, {"label": "source_urls", "value": "['https://x.com/natsutr_bon/status/2064956574767161369']"}], "sources": [{"text": "【なみおと盆踊り祭】 🏮10/11(日)🕓11:00～19:00📍稲村ケ崎公園(鎌倉市) 「なみぼん」は相模湾を望むロケーションで開催される盆踊り♪ 晴れた夕暮れのクライマックスには、絶景を眺めながら生演奏での「稲村音頭」が踊れる🏖️🌊🗻 #なみぼん https://t.co/HlHpgisLRz https://t.co/CXKKj5DIUb", "account": "@natsutr_bon", "date": "2026-06-11T06:23:07+00:00", "url": "https://x.com/natsutr_bon/status/2064956574767161369"}], "preloaded": {}}, {"_key": "羽根木公園||https://x.com/natsutr_bon/status/2022211317432799408", "term": "羽根木公園", "category": "会場追加候補", "summary": [{"label": "songs_text", "value": "シモキタ音頭、ダイダラボッチ音頭、代田節、羽根木音頭"}, {"label": "song_count", "value": "4"}, {"label": "evidence_count", "value": "4"}, {"label": "raw_venues", "value": "['羽根木公園']"}], "details": [{"label": "reason", "value": "採用済み会場×曲候補だが、Notion会場DBに会場が見つからなかった。"}, {"label": "source_urls", "value": "['https://x.com/natsutr_bon/status/2022211317432799408']"}], "sources": [{"text": "【せたがや梅まつり】 🏮2/15(日)📍羽根木公園(世田谷区) 梅まつりの舞台演芸会(寿の会演芸発表)に「代田盆踊りの会」が出演(13:30頃~)🪭 曲目は梅まつりのテーマ曲せたがや梅囃子や新世田谷音頭、シモキタ音頭、ダイダラボッチ音頭、代田節、羽根木音頭など。輪踊りもあり♪ https://t.co/QLkqbSzCVM", "account": "@natsutr_bon", "date": "2026-02-13T07:28:43+00:00", "url": "https://x.com/natsutr_bon/status/2022211317432799408"}, {"text": "【せたがや梅まつり】 🏮2/15(日)📍羽根木公園(世田谷区) 梅まつりの舞台演芸会(寿の会演芸発表)に「代田盆踊りの会」が出演(13:30頃~)🪭 曲目は梅まつりのテーマ曲せたがや梅囃子や新世田谷音頭、シモキタ音頭、ダイダラボッチ音頭、代田節、羽根木音頭など。輪踊りもあり♪ https://t.co/QLkqbSzCVM", "account": "@natsutr_bon", "date": "2026-02-13T07:28:43+00:00", "url": "https://x.com/natsutr_bon/status/2022211317432799408"}, {"text": "【せたがや梅まつり】 🏮2/15(日)📍羽根木公園(世田谷区) 梅まつりの舞台演芸会(寿の会演芸発表)に「代田盆踊りの会」が出演(13:30頃~)🪭 曲目は梅まつりのテーマ曲せたがや梅囃子や新世田谷音頭、シモキタ音頭、ダイダラボッチ音頭、代田節、羽根木音頭など。輪踊りもあり♪ https://t.co/QLkqbSzCVM", "account": "@natsutr_bon", "date": "2026-02-13T07:28:43+00:00", "url": "https://x.com/natsutr_bon/status/2022211317432799408"}, {"text": "【せたがや梅まつり】 🏮2/15(日)📍羽根木公園(世田谷区) 梅まつりの舞台演芸会(寿の会演芸発表)に「代田盆踊りの会」が出演(13:30頃~)🪭 曲目は梅まつりのテーマ曲せたがや梅囃子や新世田谷音頭、シモキタ音頭、ダイダラボッチ音頭、代田節、羽根木音頭など。輪踊りもあり♪ https://t.co/QLkqbSzCVM", "account": "@natsutr_bon", "date": "2026-02-13T07:28:43+00:00", "url": "https://x.com/natsutr_bon/status/2022211317432799408"}], "preloaded": {}}, {"_key": "赤坂日枝神社||https://x.com/ochiai_hrs/status/2063912862880534810", "term": "赤坂日枝神社", "category": "会場追加候補", "summary": [{"label": "songs_text", "value": "山王音頭"}, {"label": "song_count", "value": "1"}, {"label": "evidence_count", "value": "1"}, {"label": "raw_venues", "value": "['赤坂日枝神社']"}], "details": [{"label": "reason", "value": "採用済み会場×曲候補だが、Notion会場DBに会場が見つからなかった。"}, {"label": "source_urls", "value": "['https://x.com/ochiai_hrs/status/2063912862880534810']"}], "sources": [{"text": "🏮赤坂日枝神社 盆踊り🏮 「山王音頭と民踊大会」 📅2026年6月13日（土）〜15日（月） 📍山王パークタワー 公開空地 曲目リストです！ みんなで楽しみましょう♪ #盆踊り #赤坂日枝神社 #山王音頭 #民踊大会 #夏祭り #東京イベント https://t.co/XzgNI2P8oy", "account": "@ochiai_hrs", "date": "2026-06-08T09:15:46+00:00", "url": "https://x.com/ochiai_hrs/status/2063912862880534810"}], "preloaded": {}}, {"_key": "鰭ヶ崎2号公園||https://x.com/Pw9SKrdCfYJfxfv/status/2060746550654206281", "term": "鰭ヶ崎2号公園", "category": "会場追加候補", "summary": [{"label": "songs_text", "value": "鰭ヶ崎音頭"}, {"label": "song_count", "value": "1"}, {"label": "evidence_count", "value": "1"}, {"label": "raw_venues", "value": "['鰭ヶ崎2号公園']"}], "details": [{"label": "reason", "value": "採用済み会場×曲候補だが、Notion会場DBに会場が見つからなかった。"}, {"label": "source_urls", "value": "['https://x.com/Pw9SKrdCfYJfxfv/status/2060746550654206281']"}], "sources": [{"text": "5/30の② 鰭ヶ崎2号公園で踊ってきました 終了15分前に到着(意外と遠い)😅 ご当地の鰭ヶ崎音頭、流山市もいろいろありそうです 夜、櫓、提灯 これだけで元気出るし、踊りにも気合い入る ありがとうございました、幸せでした https://t.co/kFUw2fA8GD", "account": "@Pw9SKrdCfYJfxfv", "date": "2026-05-30T15:33:59+00:00", "url": "https://x.com/Pw9SKrdCfYJfxfv/status/2060746550654206281"}], "preloaded": {}}];
+    const DECISIONS = ["会場追加", "既存に統合", "不採用", "保留"];
+    const STORAGE_KEY = "accepted-venue-song-missing-venue-review";
+    const DOWNLOAD_NAME = "accepted_venue_song_missing_venue_decisions.json";
+    const COLORS = ["accept", "reject", "merge", "hold", "extra1", "extra2"];
+    let categoryFilter = "all";
+    let onlyUnreviewed = false;
+    let activeIndex = 0;
+
+    function loadState() {
+      try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; }
+      catch { return {}; }
+    }
+    function saveState(state) {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+      renderSummary();
+    }
+    function loadInitialState() {
+      const state = loadState();
+      let changed = false;
+      for (const row of TERMS) {
+        if (row.preloaded && row.preloaded.decision && (!state[row._key] || !state[row._key].decision)) {
+          state[row._key] = row.preloaded;
+          changed = true;
+        }
+      }
+      if (changed) saveState(state);
+    }
+    function groupedRows() {
+      const rows = TERMS.filter(row => categoryFilter === "all" || row.category === categoryFilter);
+      const state = loadState();
+      const filtered = onlyUnreviewed ? rows.filter(row => !(state[row._key] || {}).decision) : rows;
+      return Object.groupBy(filtered, row => row.category);
+    }
+    function renderFilters() {
+      const categories = ["all", ...new Set(TERMS.map(row => row.category))];
+      document.getElementById("filters").innerHTML = categories.map(cat => (
+        `<button class="filter ${categoryFilter === cat ? "active" : ""}" data-cat="${escapeHtml(cat)}">${escapeHtml(cat === "all" ? "全部" : cat)}</button>`
+      )).join("");
+      document.querySelectorAll(".filter").forEach(btn => {
+        btn.addEventListener("click", () => { categoryFilter = btn.dataset.cat; activeIndex = 0; render(); });
+      });
+    }
+    function renderSummary() {
+      const state = loadState();
+      const counts = Object.fromEntries(DECISIONS.map(d => [d, 0]));
+      let done = 0;
+      for (const row of TERMS) {
+        const decision = (state[row._key] || {}).decision;
+        if (decision) {
+          done++;
+          counts[decision] = (counts[decision] || 0) + 1;
+        }
+      }
+      const parts = DECISIONS.map(d => `${d} ${counts[d] || 0}`).join(" / ");
+      document.getElementById("summary").textContent = `判定 ${done} / ${TERMS.length}　${parts}`;
+    }
+    function render() {
+      renderFilters();
+      renderSummary();
+      document.documentElement.style.setProperty("--choice-count", Math.min(DECISIONS.length, 4));
+      const state = loadState();
+      const groups = groupedRows();
+      const flatRows = Object.values(groups).flat();
+      if (activeIndex >= flatRows.length) activeIndex = Math.max(0, flatRows.length - 1);
+      const app = document.getElementById("app");
+      app.innerHTML = Object.entries(groups).map(([category, rows]) => `
+        <section>
+          <h2>${escapeHtml(category)}（${rows.length}件）</h2>
+          ${rows.map(row => cardHtml(row, state[row._key] || {}, flatRows.indexOf(row))).join("")}
+        </section>
+      `).join("") || "<p>表示する未判定はありません。</p>";
+      app.querySelectorAll("input[type=radio]").forEach(input => {
+        input.addEventListener("change", event => {
+          const state = loadState();
+          const key = event.target.dataset.key;
+          state[key] = state[key] || {};
+          state[key].decision = event.target.value;
+          saveState(state);
+        });
+      });
+      app.querySelectorAll("textarea").forEach(textarea => {
+        textarea.addEventListener("input", event => {
+          const state = loadState();
+          const key = event.target.dataset.key;
+          state[key] = state[key] || {};
+          state[key].note = event.target.value;
+          saveState(state);
+        });
+      });
+      markActive(false);
+    }
+    function cardHtml(row, saved, index) {
+      const decision = saved.decision || "";
+      const note = saved.note || "";
+      const summary = row.summary.filter(item => item.value).map(item => `<div><strong>${escapeHtml(item.label)}:</strong> ${escapeHtml(item.value)}</div>`).join("");
+      const details = row.details.filter(item => item.value).map(item => `<p><strong>${escapeHtml(item.label)}:</strong> ${escapeHtml(item.value)}</p>`).join("");
+      const sources = (row.sources || []).map(src => `
+        <div class="source">
+          <div class="source-meta">
+            ${escapeHtml(src.account)}　${escapeHtml((src.date || "").slice(0, 10))}
+            ${src.url ? `　<a href="${escapeAttr(src.url)}" target="_blank" rel="noopener">元ポストを開く ↗</a>` : ""}
+          </div>
+          <div class="source-text">${escapeHtml(src.text)}</div>
+        </div>
+      `).join("");
+      const sourcesBlock = sources ? `
+          <details class="sources">
+            <summary>ソース（${row.sources.length}件）</summary>
+            ${sources}
+          </details>` : "";
+      return `
+        <article class="card" data-index="${index}" data-key="${escapeAttr(row._key)}">
+          <div class="row-head">
+            <div>
+              <div class="term">${escapeHtml(row.term)}</div>
+              <div class="meta">${escapeHtml(row.category)}</div>
+            </div>
+            <div class="interpretation">${summary}</div>
+            <div class="choices">
+              ${DECISIONS.map((label, i) => choiceHtml(row._key, label, COLORS[i] || "extra2", decision)).join("")}
+            </div>
+          </div>
+          <textarea class="note" data-key="${escapeHtml(row._key)}" placeholder="メモ、代表語、まとめ先など">${escapeHtml(note)}</textarea>
+          ${sourcesBlock}
+          ${details ? `<details><summary>詳細</summary>${details}</details>` : ""}
+        </article>
+      `;
+    }
+    function choiceHtml(key, label, klass, decision) {
+      return `<label class="choice ${klass}"><input type="radio" name="${escapeAttr(key)}" data-key="${escapeAttr(key)}" value="${escapeAttr(label)}" ${decision === label ? "checked" : ""}>${escapeHtml(label)}</label>`;
+    }
+    function visibleCards() { return [...document.querySelectorAll(".card")]; }
+    function markActive(scroll = true) {
+      const cards = visibleCards();
+      cards.forEach(card => card.classList.remove("active"));
+      if (!cards.length) return;
+      activeIndex = Math.max(0, Math.min(activeIndex, cards.length - 1));
+      const card = cards[activeIndex];
+      card.classList.add("active");
+      if (scroll) card.scrollIntoView({ block: "center", behavior: "smooth" });
+    }
+    function moveActive(delta) {
+      const cards = visibleCards();
+      if (!cards.length) return;
+      activeIndex = Math.max(0, Math.min(activeIndex + delta, cards.length - 1));
+      markActive(true);
+    }
+    function setDecisionForActive(decision) {
+      const cards = visibleCards();
+      const card = cards[activeIndex];
+      if (!card) return;
+      const key = card.dataset.key;
+      const input = card.querySelector(`input[value="${cssEscape(decision)}"]`);
+      if (input) input.checked = true;
+      const state = loadState();
+      state[key] = state[key] || {};
+      state[key].decision = decision;
+      saveState(state);
+      if (onlyUnreviewed) render(); else moveActive(1);
+    }
+    function focusNoteForActive() {
+      const card = visibleCards()[activeIndex];
+      const note = card && card.querySelector("textarea");
+      if (note) note.focus();
+    }
+    function toggleSourcesForActive() {
+      const card = visibleCards()[activeIndex];
+      const sources = card && card.querySelector("details.sources");
+      if (sources) sources.open = !sources.open;
+    }
+    function exportResults() {
+      const state = loadState();
+      const rows = TERMS.map(row => ({
+        key: row._key,
+        term: row.term,
+        category: row.category,
+        decision: (state[row._key] || {}).decision || "",
+        note: (state[row._key] || {}).note || ""
+      }));
+      const output = { exported_at: new Date().toISOString(), total: rows.length, rows };
+      const blob = new Blob([JSON.stringify(output, null, 2)], { type: "application/json" });
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = DOWNLOAD_NAME;
+      a.click();
+      URL.revokeObjectURL(a.href);
+    }
+    function cssEscape(value) {
+      return String(value).replace(/["\\]/g, "\\$&");
+    }
+    function escapeHtml(value) {
+      return String(value ?? "").replace(/[&<>"']/g, ch => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[ch]));
+    }
+    function escapeAttr(value) { return escapeHtml(value).replace(/`/g, "&#96;"); }
+    document.getElementById("exportJson").addEventListener("click", exportResults);
+    document.getElementById("showUnreviewed").addEventListener("click", () => { onlyUnreviewed = true; activeIndex = 0; render(); });
+    document.getElementById("showAll").addEventListener("click", () => { onlyUnreviewed = false; activeIndex = 0; render(); });
+    document.addEventListener("keydown", event => {
+      const target = event.target;
+      const typing = target && ["TEXTAREA", "INPUT"].includes(target.tagName);
+      if (typing && event.key !== "Escape") return;
+      if (event.key === "Escape" && typing) { target.blur(); event.preventDefault(); return; }
+      const number = Number(event.key);
+      if (number >= 1 && number <= DECISIONS.length) {
+        event.preventDefault();
+        setDecisionForActive(DECISIONS[number - 1]);
+        return;
+      }
+      const actions = {
+        "j": () => moveActive(1),
+        "ArrowDown": () => moveActive(1),
+        "k": () => moveActive(-1),
+        "ArrowUp": () => moveActive(-1),
+        "n": () => focusNoteForActive(),
+        "s": () => toggleSourcesForActive(),
+        "u": () => { onlyUnreviewed = true; activeIndex = 0; render(); },
+        "a": () => { onlyUnreviewed = false; activeIndex = 0; render(); },
+        "e": () => exportResults()
+      };
+      const action = actions[event.key];
+      if (action) { event.preventDefault(); action(); }
+    });
+    loadInitialState();
+    render();
+  </script>
+</body>
+</html>

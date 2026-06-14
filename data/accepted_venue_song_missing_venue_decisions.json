@@ -1,0 +1,104 @@
+{
+  "exported_at": "2026-06-13T15:50:02.742Z",
+  "total": 14,
+  "rows": [
+    {
+      "key": "あかつき公園||https://x.com/tukishimanagaya/status/1987457842056704409",
+      "term": "あかつき公園",
+      "category": "会場追加候補",
+      "decision": "会場追加",
+      "note": ""
+    },
+    {
+      "key": "さくら公園||https://x.com/_masakari/status/2065078577687863764",
+      "term": "さくら公園",
+      "category": "会場追加候補",
+      "decision": "会場追加",
+      "note": ""
+    },
+    {
+      "key": "五ヶ瀬中学校||https://x.com/bonDbonT/status/2065409898389930239",
+      "term": "五ヶ瀬中学校",
+      "category": "会場追加候補",
+      "decision": "不採用",
+      "note": ""
+    },
+    {
+      "key": "仰高小学校||https://x.com/natsutr_bon/status/2065580308813275186",
+      "term": "仰高小学校",
+      "category": "会場追加候補",
+      "decision": "不採用",
+      "note": ""
+    },
+    {
+      "key": "圓隆寺||https://x.com/fried_wakame/status/2062922591988523246",
+      "term": "圓隆寺",
+      "category": "会場追加候補",
+      "decision": "不採用",
+      "note": ""
+    },
+    {
+      "key": "尼北小学校||https://x.com/kazu_maru_dayo/status/2063146424121119093",
+      "term": "尼北小学校",
+      "category": "会場追加候補",
+      "decision": "会場追加",
+      "note": ""
+    },
+    {
+      "key": "布施駅前||https://x.com/yoshitaka_1008/status/2064023816804942198",
+      "term": "布施駅前",
+      "category": "会場追加候補",
+      "decision": "不採用",
+      "note": ""
+    },
+    {
+      "key": "日枝神社||https://x.com/kuma_bot999/status/1643821321145700352",
+      "term": "日枝神社",
+      "category": "会場追加候補",
+      "decision": "既存に統合",
+      "note": ""
+    },
+    {
+      "key": "日枝神社||https://x.com/tomohikos/status/2063407219673366837",
+      "term": "日枝神社",
+      "category": "会場追加候補",
+      "decision": "既存に統合",
+      "note": ""
+    },
+    {
+      "key": "有馬小学校||https://x.com/QTjittan/status/2048289247447449625",
+      "term": "有馬小学校",
+      "category": "会場追加候補",
+      "decision": "会場追加",
+      "note": ""
+    },
+    {
+      "key": "稲村ケ崎公園||https://x.com/natsutr_bon/status/2064956574767161369",
+      "term": "稲村ケ崎公園",
+      "category": "会場追加候補",
+      "decision": "会場追加",
+      "note": ""
+    },
+    {
+      "key": "羽根木公園||https://x.com/natsutr_bon/status/2022211317432799408",
+      "term": "羽根木公園",
+      "category": "会場追加候補",
+      "decision": "会場追加",
+      "note": ""
+    },
+    {
+      "key": "赤坂日枝神社||https://x.com/ochiai_hrs/status/2063912862880534810",
+      "term": "赤坂日枝神社",
+      "category": "会場追加候補",
+      "decision": "既存に統合",
+      "note": ""
+    },
+    {
+      "key": "鰭ヶ崎2号公園||https://x.com/Pw9SKrdCfYJfxfv/status/2060746550654206281",
+      "term": "鰭ヶ崎2号公園",
+      "category": "会場追加候補",
+      "decision": "既存に統合",
+      "note": ""
+    }
+  ]
+}

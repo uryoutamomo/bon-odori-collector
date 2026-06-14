@@ -1,0 +1,233 @@
+{
+  "generated_by": "curate_retrospective_event_apply_plan.py",
+  "mode": "dry_run",
+  "apply_performed": false,
+  "ready_for_apply_input_count": 16,
+  "counts": {
+    "do_not_create_event": 6,
+    "needs_research": 5,
+    "needs_venue_master": 1,
+    "update_existing_or_skip_create": 4
+  },
+  "rows": [
+    {
+      "candidate_key": "event:41c7cfb7ba903f159ec8e78d803877123d2dbddd87aa3f237e788518a81b0e02",
+      "event_name": "藤沢七夕まつり",
+      "venue": "辻堂駅北口神台公園",
+      "estimated_date": "2026-07-04",
+      "source_url": "https://x.com/honeycutie333/status/2064678013510504823",
+      "action": "needs_venue_master",
+      "reason": "会場が会場マスタ未登録。イベント作成前に会場ページ作成/名寄せが必要。",
+      "suggested_event_name": "",
+      "existing_candidates": []
+    },
+    {
+      "candidate_key": "event:eb150d13f3f30b8ffd825054afb37c115c9bb6597d5881b72d82c524fc0aa172",
+      "event_name": "5月9日浅草橋マロニエまつり盆踊り",
+      "venue": "",
+      "estimated_date": "2026-05-09",
+      "source_url": "https://x.com/1205uzonke/status/2065200648086487508",
+      "action": "needs_research",
+      "reason": "イベント名に日付が混入。正式名と会場の補完が必要。",
+      "suggested_event_name": "",
+      "existing_candidates": []
+    },
+    {
+      "candidate_key": "event:5272d7b8426ec32bf1e92abd13f77ee9ed6160bae568a54e1993cdde9b8ea273",
+      "event_name": "西馬音内盆踊り",
+      "venue": "",
+      "estimated_date": "2026-06-01",
+      "source_url": "https://x.com/selion_akitakou/status/2063452243609936037",
+      "action": "needs_research",
+      "reason": "会場未確定。登録前に venue_master への名寄せまたは新規会場登録が必要。",
+      "suggested_event_name": "",
+      "existing_candidates": []
+    },
+    {
+      "candidate_key": "event:2745524e6751077446e4f9684aeb9b92cf9957d77109c077953d4a64e515891f",
+      "event_name": "ビールと浴衣de盆踊り",
+      "venue": "上野公園",
+      "estimated_date": "2026-07-03",
+      "source_url": "https://x.com/event_checker/status/2064996223862370647",
+      "action": "update_existing_or_skip_create",
+      "reason": "既存イベント候補と重複。新規作成しない。",
+      "suggested_event_name": "",
+      "existing_candidates": [
+        {
+          "name": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026",
+          "venue": "上野恩賜公園",
+          "date": "2026-07-03",
+          "status": "確認済み",
+          "reasons": [
+            "event_name_contains",
+            "month_overlap"
+          ]
+        }
+      ]
+    },
+    {
+      "candidate_key": "event:b0233fe5bf31862b220c541f3d4722ebfcd78bb33638bfac5cc886cb2b73571d",
+      "event_name": "さくら公園盆踊り大会",
+      "venue": "さくら公園",
+      "estimated_date": "2026-06-11",
+      "source_url": "https://x.com/_masakari/status/2065078577687863764",
+      "action": "do_not_create_event",
+      "reason": "証拠本文が盆踊り本番ではなく練習会。event_songs/observations側の証拠として扱う。",
+      "suggested_event_name": "",
+      "existing_candidates": []
+    },
+    {
+      "candidate_key": "event:76b31736e63e23fd2ae8462fa6cb6b98961e3e6b49ff6da5cf35120698075253",
+      "event_name": "ふるさと千川まつり",
+      "venue": "",
+      "estimated_date": "2026-06-05",
+      "source_url": "https://x.com/_masakari/status/2063027320777265287",
+      "action": "update_existing_or_skip_create",
+      "reason": "既存イベント候補と重複。新規作成しない。",
+      "suggested_event_name": "",
+      "existing_candidates": [
+        {
+          "name": "「第34回ふるさと千川 まつり」 6月5日(金)-6日(土) 17:30-(開場)。",
+          "venue": "ふるさと千川ひろば(千川小学校校庭跡地)",
+          "date": "2026-06-05",
+          "status": "終了",
+          "reasons": [
+            "event_name_contains",
+            "month_overlap"
+          ]
+        }
+      ]
+    },
+    {
+      "candidate_key": "event:9e7598c09120e3cd4bff8030a7efe9ad12d9de9749d72906b2933e691a5fa26e",
+      "event_name": "東根小学校盆踊り",
+      "venue": "東根小学校",
+      "estimated_date": "2026-06-13",
+      "source_url": "https://x.com/_masakari/status/2065597936906744312",
+      "action": "do_not_create_event",
+      "reason": "証拠本文が盆踊り本番ではなく練習会。event_songs/observations側の証拠として扱う。",
+      "suggested_event_name": "",
+      "existing_candidates": []
+    },
+    {
+      "candidate_key": "event:cfa2d3b863bb4a7447979a76b3c625a70eb4da252bb15dd2082972b619dcf80b",
+      "event_name": "浅草橋盆踊り",
+      "venue": "上野恩賜公園",
+      "estimated_date": "2026-06-26",
+      "source_url": "https://x.com/tomohikos/status/2063410620381495667",
+      "action": "update_existing_or_skip_create",
+      "reason": "既存イベント候補と重複。新規作成しない。",
+      "suggested_event_name": "",
+      "existing_candidates": [
+        {
+          "name": "TOKYO盆ダンス×STEAM FESTIVAL2026",
+          "venue": "上野恩賜公園",
+          "date": "2026-06-26",
+          "status": "確認済み",
+          "reasons": [
+            "venue_overlap",
+            "month_overlap"
+          ]
+        },
+        {
+          "name": "上野盆踊り会（厚澄会）",
+          "venue": "上野恩賜公園",
+          "date": "",
+          "status": "確認済み",
+          "reasons": [
+            "venue_overlap",
+            "month_overlap"
+          ]
+        }
+      ]
+    },
+    {
+      "candidate_key": "event:c350cbbfb42999e6974ca42140b17c59b19a92e59ac7b49e607a5fb10c5a87e9",
+      "event_name": "舟渡ホール盆踊り",
+      "venue": "",
+      "estimated_date": "2026-06-09",
+      "source_url": "https://x.com/_masakari/status/2064674373932630145",
+      "action": "do_not_create_event",
+      "reason": "証拠本文が盆踊り本番ではなく練習会。event_songs/observations側の証拠として扱う。",
+      "suggested_event_name": "",
+      "existing_candidates": []
+    },
+    {
+      "candidate_key": "event:eb9a1c5a25d2839770c6d2dde40599baa059c68c3ce6ad36982077d6736ee3af",
+      "event_name": "西馬音内盆踊り",
+      "venue": "",
+      "estimated_date": "",
+      "source_url": "https://x.com/maru_akitahaku/status/2060657371937153093",
+      "action": "needs_research",
+      "reason": "会場未確定。登録前に venue_master への名寄せまたは新規会場登録が必要。",
+      "suggested_event_name": "",
+      "existing_candidates": []
+    },
+    {
+      "candidate_key": "event:82086b8eec335e8aff788e2b644ae0d05f5dcd06fe88d7139a8955d4dda358fc",
+      "event_name": "足寄ふるさと盆踊り",
+      "venue": "",
+      "estimated_date": "2026-08-15",
+      "source_url": "https://x.com/midorimushi54/status/2062130940420448758",
+      "action": "needs_research",
+      "reason": "会場未確定。登録前に venue_master への名寄せまたは新規会場登録が必要。",
+      "suggested_event_name": "",
+      "existing_candidates": []
+    },
+    {
+      "candidate_key": "event:963c2fb07ca9eec48f7ab062b8fb3c7e704650465b812298ef525853a24b95bd",
+      "event_name": "足立区の盆踊りで最も早い盆踊り",
+      "venue": "五反野コミュニティセンター横の公園",
+      "estimated_date": "2026-06-20",
+      "source_url": "https://x.com/Dk725aNpscBwpEa/status/2065082668396827008",
+      "action": "update_existing_or_skip_create",
+      "reason": "本文中の正式名は西綾瀬町会盆踊り。既存の西綾瀬町会 夏祭り盆踊り大会と重複確認対象。",
+      "suggested_event_name": "西綾瀬町会 夏祭り盆踊り大会",
+      "existing_candidates": []
+    },
+    {
+      "candidate_key": "event:9e4791db216781576e410bef361488b8067afd575820303cadea105a0b2bafb7",
+      "event_name": "高島越後盆踊り",
+      "venue": "",
+      "estimated_date": "2026-06-09",
+      "source_url": "https://x.com/HopeOne_news/status/2065293896884908330",
+      "action": "do_not_create_event",
+      "reason": "証拠本文が盆踊り本番ではなく練習会。event_songs/observations側の証拠として扱う。",
+      "suggested_event_name": "",
+      "existing_candidates": []
+    },
+    {
+      "candidate_key": "event:8de18ada42f04a5845ca8ecbf7753c875cf47ddbf4274e6068b734c722e4f3b7",
+      "event_name": "笠間納涼盆踊り",
+      "venue": "",
+      "estimated_date": "",
+      "source_url": "https://x.com/hitachi773X/status/2065431155575505274",
+      "action": "needs_research",
+      "reason": "会場未確定。登録前に venue_master への名寄せまたは新規会場登録が必要。",
+      "suggested_event_name": "",
+      "existing_candidates": []
+    },
+    {
+      "candidate_key": "event:c82d4cc6f27ffb8b4949eb54ff0daa21fd8295f91d6950cdd5653f27904c8766",
+      "event_name": "金沢百万石まつり",
+      "venue": "",
+      "estimated_date": "",
+      "source_url": "https://x.com/bonDbonT/status/2063331635911971207",
+      "action": "do_not_create_event",
+      "reason": "金沢百万石まつり内の踊り流し参加記録。今回の新規イベント正本化対象からは除外。",
+      "suggested_event_name": "",
+      "existing_candidates": []
+    },
+    {
+      "candidate_key": "event:6bc15bbda88168c2da9da2878346c82149cf7fcbfabff92eae2e0ab413344bba",
+      "event_name": "河原町広場の盆踊り（名称未確定）",
+      "venue": "河原町広場",
+      "estimated_date": "2026-06-01",
+      "source_url": "https://x.com/KoufukuyaC/status/2062549666563289225",
+      "action": "do_not_create_event",
+      "reason": "証拠本文がマルシェ告知で、盆踊りイベントではない。",
+      "suggested_event_name": "",
+      "existing_candidates": []
+    }
+  ]
+}

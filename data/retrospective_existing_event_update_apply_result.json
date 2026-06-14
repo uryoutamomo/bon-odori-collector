@@ -1,0 +1,78 @@
+{
+  "generated_by": "apply_retrospective_existing_event_updates.py",
+  "generated_at": "2026-06-13T13:53:10.114515+00:00",
+  "mode": "apply",
+  "apply_performed": true,
+  "input_count": 4,
+  "ready_count": 3,
+  "changed_count": 3,
+  "applied_count": 3,
+  "rows": [
+    {
+      "candidate_event_name": "ビールと浴衣de盆踊り",
+      "target_event_name": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026",
+      "target_page_id": "3778be04-e762-81dd-9960-c1bba13542e4",
+      "action": "append_evidence_to_existing",
+      "status": "ready",
+      "changed": true,
+      "properties": {
+        "開催パターン詳細": {
+          "rich_text": [
+            {
+              "text": {
+                "content": "2026-07-03〜2026-07-05 開催予定。X投稿から確定日として反映。\nふるさと東京応援祭\n第三回ビールと浴衣de盆踊りin上野2026\n\n2026年7月3日（金）〜7月5日（日）\n\n上野恩賜公園で開催！\nビールと盆踊りの夏祭り\n\n#台東区 #上野 #谷中\n#イベント #フェス\n\nhttps://t.co/eXUZckhuOG\n\n[retrospective_harvest] 追加証拠\n- 検出名: ビールと浴衣de盆踊り\n- 検出日付: 2026-07-03\n- 出典: https://x.com/event_checker/status/2064996223862370647\n- 出典: https://x.com/event_checker/status/2061985557266198794"
+              }
+            }
+          ]
+        }
+      },
+      "note": "[retrospective_harvest] 追加証拠\n- 検出名: ビールと浴衣de盆踊り\n- 検出日付: 2026-07-03\n- 出典: https://x.com/event_checker/status/2064996223862370647\n- 出典: https://x.com/event_checker/status/2061985557266198794"
+    },
+    {
+      "candidate_event_name": "ふるさと千川まつり",
+      "target_event_name": "「第34回ふるさと千川 まつり」 6月5日(金)-6日(土) 17:30-(開場)。",
+      "target_page_id": "37b8be04-e762-81e4-b582-f399ca222194",
+      "action": "append_evidence_to_existing",
+      "status": "ready",
+      "changed": true,
+      "properties": {
+        "開催パターン詳細": {
+          "rich_text": [
+            {
+              "text": {
+                "content": "2026 [P2]\n6/5 - 6。次回日程は未確認。\n\n[retrospective_harvest] 追加証拠\n- 検出名: ふるさと千川まつり\n- 検出日付: 2026-06-05\n- 出典: https://x.com/_masakari/status/2063027320777265287"
+              }
+            }
+          ]
+        }
+      },
+      "note": "[retrospective_harvest] 追加証拠\n- 検出名: ふるさと千川まつり\n- 検出日付: 2026-06-05\n- 出典: https://x.com/_masakari/status/2063027320777265287"
+    },
+    {
+      "candidate_event_name": "浅草橋盆踊り",
+      "action": "manual_duplicate_review",
+      "status": "skipped",
+      "reason": "manual review required"
+    },
+    {
+      "candidate_event_name": "足立区の盆踊りで最も早い盆踊り",
+      "target_event_name": "西綾瀬町会 夏祭り盆踊り大会",
+      "target_page_id": "37a8be04-e762-81b7-9481-fe31b8f9d353",
+      "action": "append_evidence_to_existing",
+      "status": "ready",
+      "changed": true,
+      "properties": {
+        "開催パターン詳細": {
+          "rich_text": [
+            {
+              "text": {
+                "content": "足立区の令和7年度盆踊り・まつり情報。17時開始。\n\n[retrospective_harvest] 追加証拠\n- 検出名: 足立区の盆踊りで最も早い盆踊り\n- 検出日付: 2026-06-20\n- 出典: https://x.com/Dk725aNpscBwpEa/status/2065082668396827008"
+              }
+            }
+          ]
+        }
+      },
+      "note": "[retrospective_harvest] 追加証拠\n- 検出名: 足立区の盆踊りで最も早い盆踊り\n- 検出日付: 2026-06-20\n- 出典: https://x.com/Dk725aNpscBwpEa/status/2065082668396827008"
+    }
+  ]
+}

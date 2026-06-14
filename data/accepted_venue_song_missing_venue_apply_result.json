@@ -1,0 +1,135 @@
+{
+  "apply": false,
+  "source": "data/accepted_venue_song_missing_venue_review.json",
+  "decisions": "data/accepted_venue_song_missing_venue_decisions.json",
+  "created_count": 0,
+  "existing_count": 6,
+  "merged_count": 3,
+  "rejected_count": 4,
+  "held_count": 0,
+  "skipped_count": 1,
+  "created": [],
+  "existing": [
+    {
+      "venue": "あかつき公園",
+      "songs": [
+        "浜町音頭"
+      ],
+      "source_url": "https://x.com/tukishimanagaya/status/1987457842056704409",
+      "page_id": "37e8be04-e762-81ca-b5cc-c3032b6fcbd5"
+    },
+    {
+      "venue": "さくら公園",
+      "songs": [
+        "ドンパン節",
+        "同級会音頭",
+        "大東京音頭",
+        "東京音頭"
+      ],
+      "source_url": "https://x.com/_masakari/status/2065078577687863764",
+      "page_id": "37e8be04-e762-8161-830e-d058572e4e04"
+    },
+    {
+      "venue": "尼北小学校",
+      "songs": [
+        "富松まめかち音頭",
+        "富松むぎわら音頭",
+        "河内おとこ節",
+        "炭坑節"
+      ],
+      "source_url": "https://x.com/kazu_maru_dayo/status/2063146424121119093",
+      "page_id": "37e8be04-e762-8180-ad3a-dbd44da482e1"
+    },
+    {
+      "venue": "有馬小学校",
+      "songs": [
+        "ダンシングヒーロー"
+      ],
+      "source_url": "https://x.com/QTjittan/status/2048289247447449625",
+      "page_id": "37e8be04-e762-8138-a29f-d55286b7bda7"
+    },
+    {
+      "venue": "稲村ケ崎公園",
+      "songs": [
+        "稲村音頭"
+      ],
+      "source_url": "https://x.com/natsutr_bon/status/2064956574767161369",
+      "page_id": "37e8be04-e762-8121-ad58-ca27134857dd"
+    },
+    {
+      "venue": "羽根木公園",
+      "songs": [
+        "シモキタ音頭",
+        "ダイダラボッチ音頭",
+        "代田節",
+        "羽根木音頭"
+      ],
+      "source_url": "https://x.com/natsutr_bon/status/2022211317432799408",
+      "page_id": "37e8be04-e762-818f-a0a9-ed01ba67e0e6"
+    }
+  ],
+  "merged": [
+    {
+      "venue": "日枝神社",
+      "target": "山王パークタワー公開空地",
+      "target_page_id": "3718be04-e762-8150-a17c-fe33cd69e264",
+      "songs": [
+        "山王音頭"
+      ],
+      "source_url": "https://x.com/kuma_bot999/status/1643821321145700352"
+    },
+    {
+      "venue": "日枝神社",
+      "target": "山王パークタワー公開空地",
+      "target_page_id": "3718be04-e762-8150-a17c-fe33cd69e264",
+      "songs": [
+        "山王音頭"
+      ],
+      "source_url": "https://x.com/kuma_bot999/status/1643821321145700352"
+    },
+    {
+      "venue": "赤坂日枝神社",
+      "target": "山王パークタワー公開空地",
+      "target_page_id": "3718be04-e762-8150-a17c-fe33cd69e264",
+      "songs": [
+        "山王音頭"
+      ],
+      "source_url": "https://x.com/ochiai_hrs/status/2063912862880534810"
+    }
+  ],
+  "rejected": [
+    {
+      "venue": "五ヶ瀬中学校",
+      "songs": [
+        "団七踊り"
+      ]
+    },
+    {
+      "venue": "仰高小学校",
+      "songs": [
+        "すがも花咲き音頭"
+      ]
+    },
+    {
+      "venue": "圓隆寺",
+      "songs": [
+        "広島音頭"
+      ]
+    },
+    {
+      "venue": "布施駅前",
+      "songs": [
+        "河内音頭"
+      ]
+    }
+  ],
+  "held": [],
+  "skipped": [
+    {
+      "venue": "鰭ヶ崎2号公園",
+      "decision": "既存に統合",
+      "reason": "merge target not found",
+      "target": ""
+    }
+  ]
+}

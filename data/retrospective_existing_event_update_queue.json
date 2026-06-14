@@ -1,0 +1,43 @@
+{
+  "generated_by": "split_retrospective_event_curation.py",
+  "source": "data/retrospective_event_apply_curation.json",
+  "count": 4,
+  "rows": [
+    {
+      "candidate_key": "event:2745524e6751077446e4f9684aeb9b92cf9957d77109c077953d4a64e515891f",
+      "event_name": "ビールと浴衣de盆踊り",
+      "venue": "上野公園",
+      "estimated_date": "2026-07-03",
+      "source_url": "https://x.com/event_checker/status/2064996223862370647",
+      "reason": "既存イベント候補と重複。新規作成しない。",
+      "next_action": "既存イベントへ証拠/日付/別名を統合するか確認"
+    },
+    {
+      "candidate_key": "event:76b31736e63e23fd2ae8462fa6cb6b98961e3e6b49ff6da5cf35120698075253",
+      "event_name": "ふるさと千川まつり",
+      "venue": "",
+      "estimated_date": "2026-06-05",
+      "source_url": "https://x.com/_masakari/status/2063027320777265287",
+      "reason": "既存イベント候補と重複。新規作成しない。",
+      "next_action": "既存イベントへ証拠/日付/別名を統合するか確認"
+    },
+    {
+      "candidate_key": "event:cfa2d3b863bb4a7447979a76b3c625a70eb4da252bb15dd2082972b619dcf80b",
+      "event_name": "浅草橋盆踊り",
+      "venue": "上野恩賜公園",
+      "estimated_date": "2026-06-26",
+      "source_url": "https://x.com/tomohikos/status/2063410620381495667",
+      "reason": "既存イベント候補と重複。新規作成しない。",
+      "next_action": "既存イベントへ証拠/日付/別名を統合するか確認"
+    },
+    {
+      "candidate_key": "event:963c2fb07ca9eec48f7ab062b8fb3c7e704650465b812298ef525853a24b95bd",
+      "event_name": "足立区の盆踊りで最も早い盆踊り",
+      "venue": "五反野コミュニティセンター横の公園",
+      "estimated_date": "2026-06-20",
+      "source_url": "https://x.com/Dk725aNpscBwpEa/status/2065082668396827008",
+      "reason": "本文中の正式名は西綾瀬町会盆踊り。既存の西綾瀬町会 夏祭り盆踊り大会と重複確認対象。",
+      "next_action": "既存イベントへ証拠/日付/別名を統合するか確認"
+    }
+  ]
+}

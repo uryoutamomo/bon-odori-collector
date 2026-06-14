@@ -1,0 +1,2470 @@
+{
+  "generated_by": "plan_retrospective_event_review.py",
+  "generated_at": "2026-06-13T07:08:49.866378+00:00",
+  "source": "data/retrospective_occurrence_dry_run.json",
+  "decisions_source": "data/retrospective_event_review_decisions_suggested.json",
+  "mode": "dry_run",
+  "apply_performed": false,
+  "candidate_count": 99,
+  "reviewed_count": 99,
+  "ready_for_apply_count": 2,
+  "counts": {
+    "by_status": {
+      "hold": 42,
+      "needs_research": 38,
+      "ready_for_apply": 2,
+      "rejected": 17
+    },
+    "by_decision": {
+      "不採用": 17,
+      "保留": 42,
+      "登録": 2,
+      "要調査": 38
+    }
+  },
+  "ready_for_apply": [
+    {
+      "candidate_key": "event:41c7cfb7ba903f159ec8e78d803877123d2dbddd87aa3f237e788518a81b0e02",
+      "decision": "登録",
+      "status": "ready_for_apply",
+      "note": "会場・日付・複数証拠が揃うため登録候補。最終重複確認は必要。",
+      "event_name": "藤沢七夕まつり",
+      "normalized_event": "藤沢七夕",
+      "venue": "辻堂駅北口神台公園",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-07-04",
+      "month": "07",
+      "score": 55,
+      "review_priority": "high",
+      "review_flags": [
+        "high_score"
+      ],
+      "evidence_count": 2,
+      "source_url": "https://x.com/honeycutie333/status/2064678013510504823",
+      "evidence_urls": [
+        "https://x.com/honeycutie333/status/2064678013510504823",
+        "https://x.com/King_Arthur_333/status/2064677978089607431"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:2745524e6751077446e4f9684aeb9b92cf9957d77109c077953d4a64e515891f",
+      "decision": "登録",
+      "status": "ready_for_apply",
+      "note": "会場・日付・複数証拠が揃うため登録候補。最終重複確認は必要。",
+      "event_name": "ビールと浴衣de盆踊り",
+      "normalized_event": "ビールと浴衣de",
+      "venue": "上野公園",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-07-03",
+      "month": "07",
+      "score": 40,
+      "review_priority": "high",
+      "review_flags": [
+        "high_score"
+      ],
+      "evidence_count": 2,
+      "source_url": "https://x.com/event_checker/status/2064996223862370647",
+      "evidence_urls": [
+        "https://x.com/event_checker/status/2064996223862370647",
+        "https://x.com/event_checker/status/2061985557266198794"
+      ],
+      "source": "retrospective_harvest"
+    }
+  ],
+  "rows": [
+    {
+      "candidate_key": "event:41c7cfb7ba903f159ec8e78d803877123d2dbddd87aa3f237e788518a81b0e02",
+      "decision": "登録",
+      "status": "ready_for_apply",
+      "note": "会場・日付・複数証拠が揃うため登録候補。最終重複確認は必要。",
+      "event_name": "藤沢七夕まつり",
+      "normalized_event": "藤沢七夕",
+      "venue": "辻堂駅北口神台公園",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-07-04",
+      "month": "07",
+      "score": 55,
+      "review_priority": "high",
+      "review_flags": [
+        "high_score"
+      ],
+      "evidence_count": 2,
+      "source_url": "https://x.com/honeycutie333/status/2064678013510504823",
+      "evidence_urls": [
+        "https://x.com/honeycutie333/status/2064678013510504823",
+        "https://x.com/King_Arthur_333/status/2064677978089607431"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:14fd84e83b39ad93717896a9e7a4c1896fa9c34024d1e6a6a21136e5e351b1bb",
+      "decision": "要調査",
+      "status": "needs_research",
+      "note": "固有名アンカーがあり本物候補。会場/重複の確認が必要。",
+      "event_name": "1夏祭り",
+      "normalized_event": "1",
+      "venue": "上野公園",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-07-05",
+      "month": "07",
+      "score": 43,
+      "review_priority": "noise_check",
+      "review_flags": [
+        "bad_prefix",
+        "high_score"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/tunagate/status/2065391293539529004",
+      "evidence_urls": [
+        "https://x.com/tunagate/status/2065391293539529004"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:eb150d13f3f30b8ffd825054afb37c115c9bb6597d5881b72d82c524fc0aa172",
+      "decision": "不採用",
+      "status": "rejected",
+      "note": "先頭に不要語が残るノイズ疑いの一次判定。",
+      "event_name": "5月9日浅草橋マロニエまつり盆踊り",
+      "normalized_event": "5月9日浅草橋マロニエまつり",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-05-09",
+      "month": "05",
+      "score": 43,
+      "review_priority": "noise_check",
+      "review_flags": [
+        "bad_prefix",
+        "high_score",
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/1205uzonke/status/2065200648086487508",
+      "evidence_urls": [
+        "https://x.com/1205uzonke/status/2065200648086487508"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:6ec247f12d0a4ff54b041b17fc6b9fd48b00eaf96f2f39713312204637446a53",
+      "decision": "不採用",
+      "status": "rejected",
+      "note": "先頭に不要語が残るノイズ疑いの一次判定。",
+      "event_name": "との盆踊り",
+      "normalized_event": "と",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-06-01",
+      "month": "06",
+      "score": 43,
+      "review_priority": "noise_check",
+      "review_flags": [
+        "bad_prefix",
+        "high_score",
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/yabanaryu/status/2063459683029946608",
+      "evidence_urls": [
+        "https://x.com/yabanaryu/status/2063459683029946608"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:434223af3e37a40c46b60c0dfbc683762bc56c8b647ab5ceaf5574d6b807228c",
+      "decision": "不採用",
+      "status": "rejected",
+      "note": "文章断片/説明文の可能性が高い一次判定。",
+      "event_name": "は墨田区で盆博というイベントを開催します昨年夏に行った各地の盆踊り",
+      "normalized_event": "は墨田区で盆博というイベントを開催します昨年夏に行った各地",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "",
+      "month": "",
+      "score": 43,
+      "review_priority": "noise_check",
+      "review_flags": [
+        "bad_prefix",
+        "high_score",
+        "long_phrase",
+        "no_venue",
+        "sentence_fragment"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/koi_dou/status/2037829608859730073",
+      "evidence_urls": [
+        "https://x.com/koi_dou/status/2037829608859730073"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:f2343b7b2afed4226329a27bee6262444e5c249480c6270a7931d98027c36307",
+      "decision": "不採用",
+      "status": "rejected",
+      "note": "文章断片/説明文の可能性が高い一次判定。",
+      "event_name": "やります盆踊り",
+      "normalized_event": "やります",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-07-25",
+      "month": "07",
+      "score": 43,
+      "review_priority": "noise_check",
+      "review_flags": [
+        "high_score",
+        "no_venue",
+        "sentence_fragment"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/take1134/status/2064961005869031709",
+      "evidence_urls": [
+        "https://x.com/take1134/status/2064961005869031709"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:a6c80dedca006a5b6881d7f80817a52eb7ca0c743836d01b623a7e892e553bc6",
+      "decision": "保留",
+      "status": "hold",
+      "note": "イベント名らしいが会場または証拠が弱い。",
+      "event_name": "ケンくんたちと盆踊り",
+      "normalized_event": "ケンくんたちと",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-03-01",
+      "month": "03",
+      "score": 43,
+      "review_priority": "medium",
+      "review_flags": [
+        "high_score",
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/ichichiichich/status/2063849035874939054",
+      "evidence_urls": [
+        "https://x.com/ichichiichich/status/2063849035874939054"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:c794a2e5c1b3d8200c48b25c9c701ec1a7ed25e6305d1cc4ac63c7edd685d188",
+      "decision": "要調査",
+      "status": "needs_research",
+      "note": "固有名アンカーがあり本物候補。会場/重複の確認が必要。",
+      "event_name": "サンシャインシティ納涼盆踊り大会",
+      "normalized_event": "サンシャインシティ",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-07-30",
+      "month": "07",
+      "score": 43,
+      "review_priority": "medium",
+      "review_flags": [
+        "high_score",
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/sunshinechoukai/status/2059593299376365966",
+      "evidence_urls": [
+        "https://x.com/sunshinechoukai/status/2059593299376365966"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:672c6230ecf8d619593e304676d11ec306f8cfe5da9776072a60a09ce79c6eea",
+      "decision": "不採用",
+      "status": "rejected",
+      "note": "文章断片/説明文の可能性が高い一次判定。",
+      "event_name": "今年初の盆踊り",
+      "normalized_event": "今年初",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-06-20",
+      "month": "06",
+      "score": 43,
+      "review_priority": "noise_check",
+      "review_flags": [
+        "bad_prefix",
+        "high_score",
+        "no_venue",
+        "sentence_fragment"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/634ymusashigma1/status/2062131437139300633",
+      "evidence_urls": [
+        "https://x.com/634ymusashigma1/status/2062131437139300633"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:49057abf9bf5b1581e3e8eb1ee8536d37b5da6bda53475fd43eca4efa930cca6",
+      "decision": "要調査",
+      "status": "needs_research",
+      "note": "説明文がイベント名化している可能性あり。元証拠確認が必要。",
+      "event_name": "厳かな神事と伝統の盆踊り",
+      "normalized_event": "厳かな神事と伝統",
+      "venue": "キリストの里公園",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-06-07",
+      "month": "06",
+      "score": 43,
+      "review_priority": "high",
+      "review_flags": [
+        "high_score"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/hachinohe_kanko/status/2062821744365150273",
+      "evidence_urls": [
+        "https://x.com/hachinohe_kanko/status/2062821744365150273"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:9852b9156907ecf3a4d5e3ed464e497edeea7bd8b44a9651ad65896a0dd3c6dd",
+      "decision": "要調査",
+      "status": "needs_research",
+      "note": "会場・日付は揃うが証拠が単独。登録前確認が必要。",
+      "event_name": "真證寺夏祭り",
+      "normalized_event": "真證寺",
+      "venue": "真證寺",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-08-08",
+      "month": "08",
+      "score": 43,
+      "review_priority": "high",
+      "review_flags": [
+        "high_score"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/su_video_iburi/status/2065577740150186474",
+      "evidence_urls": [
+        "https://x.com/su_video_iburi/status/2065577740150186474"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:3ce42d5be5b933a3501fb2372bfbf0a7e84939ac8e9c7e361a4394c9ec13245e",
+      "decision": "要調査",
+      "status": "needs_research",
+      "note": "固有名アンカーがあり本物候補。会場/重複の確認が必要。",
+      "event_name": "神田明神アニソン盆踊り",
+      "normalized_event": "神田明神アニソン",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-08-07",
+      "month": "08",
+      "score": 43,
+      "review_priority": "medium",
+      "review_flags": [
+        "high_score",
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/yuu3578/status/2065045761931506048",
+      "evidence_urls": [
+        "https://x.com/yuu3578/status/2065045761931506048"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:f81049c831dc3e11a569cf6bb60aa2bf53eae6cbe04ed1ac3c307425e07be5c7",
+      "decision": "要調査",
+      "status": "needs_research",
+      "note": "固有名アンカーがあり本物候補。会場/重複の確認が必要。",
+      "event_name": "神田明神納涼祭り",
+      "normalized_event": "神田明神納涼",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-08-07",
+      "month": "08",
+      "score": 43,
+      "review_priority": "medium",
+      "review_flags": [
+        "high_score",
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/myojinnouryo/status/2062386225651269673",
+      "evidence_urls": [
+        "https://x.com/myojinnouryo/status/2062386225651269673"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:5272d7b8426ec32bf1e92abd13f77ee9ed6160bae568a54e1993cdde9b8ea273",
+      "decision": "要調査",
+      "status": "needs_research",
+      "note": "固有名アンカーがあり本物候補。会場/重複の確認が必要。",
+      "event_name": "西馬音内盆踊り",
+      "normalized_event": "西馬音内",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-06-01",
+      "month": "06",
+      "score": 43,
+      "review_priority": "medium",
+      "review_flags": [
+        "high_score",
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/selion_akitakou/status/2063452243609936037",
+      "evidence_urls": [
+        "https://x.com/selion_akitakou/status/2063452243609936037"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:fbd3b7310b62abc0d7c4c6894d54f93c34443bffd8ca08e79126d51dd4e34a54",
+      "decision": "保留",
+      "status": "hold",
+      "note": "イベント名らしいが会場または証拠が弱い。",
+      "event_name": "雷門盆踊り",
+      "normalized_event": "雷門",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "",
+      "month": "",
+      "score": 43,
+      "review_priority": "medium",
+      "review_flags": [
+        "high_score",
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/STBA_Bonodori/status/2059220925862883623",
+      "evidence_urls": [
+        "https://x.com/STBA_Bonodori/status/2059220925862883623"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:2745524e6751077446e4f9684aeb9b92cf9957d77109c077953d4a64e515891f",
+      "decision": "登録",
+      "status": "ready_for_apply",
+      "note": "会場・日付・複数証拠が揃うため登録候補。最終重複確認は必要。",
+      "event_name": "ビールと浴衣de盆踊り",
+      "normalized_event": "ビールと浴衣de",
+      "venue": "上野公園",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-07-03",
+      "month": "07",
+      "score": 40,
+      "review_priority": "high",
+      "review_flags": [
+        "high_score"
+      ],
+      "evidence_count": 2,
+      "source_url": "https://x.com/event_checker/status/2064996223862370647",
+      "evidence_urls": [
+        "https://x.com/event_checker/status/2064996223862370647",
+        "https://x.com/event_checker/status/2061985557266198794"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:182efca5d70447b7d84ff943d2753e77a89352c7478bb9eb6ec2200c7bdddf84",
+      "decision": "要調査",
+      "status": "needs_research",
+      "note": "説明文がイベント名化している可能性あり。元証拠確認が必要。",
+      "event_name": "日本の伝統的な盆踊り",
+      "normalized_event": "日本の伝統的な",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-05-31",
+      "month": "05",
+      "score": 40,
+      "review_priority": "medium",
+      "review_flags": [
+        "high_score",
+        "no_venue"
+      ],
+      "evidence_count": 42,
+      "source_url": "https://www.youtube.com/watch?v=9lkufMdYu2c",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=9lkufMdYu2c",
+        "https://www.youtube.com/watch?v=I9_Fcsn5aJ0",
+        "https://www.youtube.com/watch?v=vhUEHrUbadI",
+        "https://www.youtube.com/watch?v=Ae8CYjM-y2Y",
+        "https://www.youtube.com/watch?v=oxZtUYXg06w"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:119a686f58835a4ce170338bb596aa98ab7b46fb1c472fc9ccb153f7b9fd685a",
+      "decision": "要調査",
+      "status": "needs_research",
+      "note": "説明文がイベント名化している可能性あり。元証拠確認が必要。",
+      "event_name": "横浜の街が一体となって踊る盆踊り",
+      "normalized_event": "横浜の街が一体となって踊る",
+      "venue": "プラザ広場",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-06-01",
+      "month": "06",
+      "score": 40,
+      "review_priority": "high",
+      "review_flags": [
+        "high_score"
+      ],
+      "evidence_count": 2,
+      "source_url": "https://www.youtube.com/watch?v=nh03oGzbnk4",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=nh03oGzbnk4",
+        "https://www.youtube.com/watch?v=AIOyAa-qq2Q"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:7d2f474bca301f75121e790a72f4a468bed8b6d6988237e20de08f6b4fd31e0f",
+      "decision": "要調査",
+      "status": "needs_research",
+      "note": "説明文がイベント名化している可能性あり。元証拠確認が必要。",
+      "event_name": "活気あふれる初夏の盆踊り",
+      "normalized_event": "活気あふれる初夏",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-06-07",
+      "month": "06",
+      "score": 40,
+      "review_priority": "medium",
+      "review_flags": [
+        "high_score",
+        "no_venue"
+      ],
+      "evidence_count": 4,
+      "source_url": "https://www.youtube.com/watch?v=k0B0KQeF09U",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=k0B0KQeF09U",
+        "https://www.youtube.com/watch?v=yUEKyvLlvO0",
+        "https://www.youtube.com/watch?v=O3YCMn5xfv4",
+        "https://www.youtube.com/watch?v=KvBfA5BHX8U"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:0a4d09668d03d1c814932128e824dee33c6084fbb677a8233b445a8868d10ee0",
+      "decision": "要調査",
+      "status": "needs_research",
+      "note": "説明文がイベント名化している可能性あり。元証拠確認が必要。",
+      "event_name": "潮風を感じながら踊る盆踊り",
+      "normalized_event": "潮風を感じながら踊る",
+      "venue": "プラザ広場",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-06-01",
+      "month": "06",
+      "score": 40,
+      "review_priority": "high",
+      "review_flags": [
+        "high_score"
+      ],
+      "evidence_count": 12,
+      "source_url": "https://www.youtube.com/watch?v=ZH1OXi8aQFI",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=ZH1OXi8aQFI",
+        "https://www.youtube.com/watch?v=bmcO1u26wyI",
+        "https://www.youtube.com/watch?v=nhT3KtZgI60",
+        "https://www.youtube.com/watch?v=cn-J6lcHzoY",
+        "https://www.youtube.com/watch?v=R6w3tTUEH4Q"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:cd50e58f05c75a63f2246e9e56488bfff54204c677c06a8cfc9f2fecbbd0dc4f",
+      "decision": "不採用",
+      "status": "rejected",
+      "note": "先頭に不要語が残るノイズ疑いの一次判定。",
+      "event_name": "1板橋区盆踊り",
+      "normalized_event": "1板橋区",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-07-31",
+      "month": "07",
+      "score": 33,
+      "review_priority": "noise_check",
+      "review_flags": [
+        "bad_prefix",
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/takasho06130613/status/2062835391993094400",
+      "evidence_urls": [
+        "https://x.com/takasho06130613/status/2062835391993094400"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:0ec242ffe09c8aa8e6dab7657036b6ffc7182f13d5375ac199a5e1e8bfdc63ad",
+      "decision": "不採用",
+      "status": "rejected",
+      "note": "文章断片/説明文の可能性が高い一次判定。",
+      "event_name": "7日藤沢駅前サンパール広場で開催される盆踊り",
+      "normalized_event": "7日藤沢駅前サンパール広場で開催される",
+      "venue": "7日藤沢駅前サンパール広場",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-06-07",
+      "month": "06",
+      "score": 33,
+      "review_priority": "noise_check",
+      "review_flags": [
+        "bad_prefix",
+        "long_phrase"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/yamabon_zaimoku/status/2062008208831705159",
+      "evidence_urls": [
+        "https://x.com/yamabon_zaimoku/status/2062008208831705159"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:42ca3a0d14eaf49ede55281f2493307af98872c26a56ca0b32149f91f076047a",
+      "decision": "保留",
+      "status": "hold",
+      "note": "イベント名らしいが会場または証拠が弱い。",
+      "event_name": "POPバンド・よさこい・盆踊り",
+      "normalized_event": "popバンドよさこい",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-03-14",
+      "month": "03",
+      "score": 33,
+      "review_priority": "low",
+      "review_flags": [
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/becamextokyu/status/2032041412401811744",
+      "evidence_urls": [
+        "https://x.com/becamextokyu/status/2032041412401811744"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:741ada89a078fd18d11a0c1c7c325498b2c4653376856e0df89d1fbaeb254af0",
+      "decision": "保留",
+      "status": "hold",
+      "note": "イベント名らしいが会場または証拠が弱い。",
+      "event_name": "aikoと盆踊り",
+      "normalized_event": "aikoと",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "",
+      "month": "",
+      "score": 33,
+      "review_priority": "low",
+      "review_flags": [
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/coco65316652/status/2063609730648654300",
+      "evidence_urls": [
+        "https://x.com/coco65316652/status/2063609730648654300"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:ac7c032bb53e3ca3a26e760969783f7a59028c7b042e9a6985b8d6ea68578cb2",
+      "decision": "保留",
+      "status": "hold",
+      "note": "イベント名らしいが会場または証拠が弱い。",
+      "event_name": "ええじゃないか盆踊り",
+      "normalized_event": "ええじゃないか",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-06-09",
+      "month": "06",
+      "score": 33,
+      "review_priority": "low",
+      "review_flags": [
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/f_sadxn/status/2064191740769431809",
+      "evidence_urls": [
+        "https://x.com/f_sadxn/status/2064191740769431809"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:bceca987d4f744bc36b0bfc1364ffb46b7f77c073e6987ef6c98869bcbb70a8d",
+      "decision": "要調査",
+      "status": "needs_research",
+      "note": "固有名アンカーがあり本物候補。会場/重複の確認が必要。",
+      "event_name": "ここから築地本願寺盆踊り",
+      "normalized_event": "ここから築地本願寺",
+      "venue": "波除神社",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-06-10",
+      "month": "06",
+      "score": 33,
+      "review_priority": "noise_check",
+      "review_flags": [
+        "bad_prefix"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/kengoshikagawa/status/2060840959899029953",
+      "evidence_urls": [
+        "https://x.com/kengoshikagawa/status/2060840959899029953"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:b0233fe5bf31862b220c541f3d4722ebfcd78bb33638bfac5cc886cb2b73571d",
+      "decision": "要調査",
+      "status": "needs_research",
+      "note": "固有名アンカーがあり本物候補。会場/重複の確認が必要。",
+      "event_name": "さくら公園盆踊り大会",
+      "normalized_event": "さくら公園",
+      "venue": "さくら公園",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-06-11",
+      "month": "06",
+      "score": 33,
+      "review_priority": "low",
+      "review_flags": [],
+      "evidence_count": 1,
+      "source_url": "https://x.com/_masakari/status/2065078577687863764",
+      "evidence_urls": [
+        "https://x.com/_masakari/status/2065078577687863764"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:3b22d3235a976cdc14a1d26a41a8812aa4758970fdf75514fd096966748f5b17",
+      "decision": "不採用",
+      "status": "rejected",
+      "note": "先頭に不要語が残るノイズ疑いの一次判定。",
+      "event_name": "すっかり盆踊り",
+      "normalized_event": "すっかり",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "",
+      "month": "",
+      "score": 33,
+      "review_priority": "noise_check",
+      "review_flags": [
+        "bad_prefix",
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/M125M8qgyhWueHS/status/2061414450956239256",
+      "evidence_urls": [
+        "https://x.com/M125M8qgyhWueHS/status/2061414450956239256"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:832665a4c524df9730fa2c183ef0ff0d47d9128200c57ef24adff1ea0193b376",
+      "decision": "不採用",
+      "status": "rejected",
+      "note": "先頭に不要語が残るノイズ疑いの一次判定。",
+      "event_name": "たぶん中野盆踊り大会",
+      "normalized_event": "たぶん中野",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-08-02",
+      "month": "08",
+      "score": 33,
+      "review_priority": "noise_check",
+      "review_flags": [
+        "bad_prefix",
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/AYAmigo97/status/2063897664572563947",
+      "evidence_urls": [
+        "https://x.com/AYAmigo97/status/2063897664572563947"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:d65fd00ba05c5cca442e55ab05380768a03da01f5daceec926e7ff5907513ff4",
+      "decision": "不採用",
+      "status": "rejected",
+      "note": "先頭に不要語が残るノイズ疑いの一次判定。",
+      "event_name": "とある盆踊り",
+      "normalized_event": "とある",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-05-17",
+      "month": "05",
+      "score": 33,
+      "review_priority": "noise_check",
+      "review_flags": [
+        "bad_prefix",
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/bon__juu/status/2056705426927092165",
+      "evidence_urls": [
+        "https://x.com/bon__juu/status/2056705426927092165"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:30b12e6121568a1a5510cda259da590ab7c4972c0629d1eb9ffe26f8c44a0295",
+      "decision": "不採用",
+      "status": "rejected",
+      "note": "先頭に不要語が残るノイズ疑いの一次判定。",
+      "event_name": "は日本民謡協会の盆踊り",
+      "normalized_event": "は日本民謡協会",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-06-14",
+      "month": "06",
+      "score": 33,
+      "review_priority": "noise_check",
+      "review_flags": [
+        "bad_prefix",
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/minyo_midori/status/2065582625889362374",
+      "evidence_urls": [
+        "https://x.com/minyo_midori/status/2065582625889362374"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:76b31736e63e23fd2ae8462fa6cb6b98961e3e6b49ff6da5cf35120698075253",
+      "decision": "保留",
+      "status": "hold",
+      "note": "イベント名らしいが会場または証拠が弱い。",
+      "event_name": "ふるさと千川まつり",
+      "normalized_event": "ふるさと千川",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-06-05",
+      "month": "06",
+      "score": 33,
+      "review_priority": "low",
+      "review_flags": [
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/_masakari/status/2063027320777265287",
+      "evidence_urls": [
+        "https://x.com/_masakari/status/2063027320777265287"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:a611f130fce0951fbd26f41b0543a8ab914082d111b74882e778ea35de63aea2",
+      "decision": "保留",
+      "status": "hold",
+      "note": "イベント名らしいが会場または証拠が弱い。",
+      "event_name": "ぼす子の盆踊り",
+      "normalized_event": "ぼす子",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "",
+      "month": "",
+      "score": 33,
+      "review_priority": "low",
+      "review_flags": [
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/boss_ouen/status/2063277522566168791",
+      "evidence_urls": [
+        "https://x.com/boss_ouen/status/2063277522566168791"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:86ab89051eb4c76603dcd76dbb6e955be420169f1a0731426123d2c200fdc298",
+      "decision": "保留",
+      "status": "hold",
+      "note": "イベント名らしいが会場または証拠が弱い。",
+      "event_name": "みんなたのしい盆踊り",
+      "normalized_event": "みんなたのしい",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "",
+      "month": "",
+      "score": 33,
+      "review_priority": "low",
+      "review_flags": [
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/niwabunko/status/2022554472283812237",
+      "evidence_urls": [
+        "https://x.com/niwabunko/status/2022554472283812237"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:b8811f7004540b9e706e33b207bbe56d3698fb333da2f75e523689f4fe3efe59",
+      "decision": "不採用",
+      "status": "rejected",
+      "note": "文章断片/説明文の可能性が高い一次判定。",
+      "event_name": "ゆりイベントで流し踊りやステージ盆踊り",
+      "normalized_event": "ゆりイベントで流し踊りやステージ",
+      "venue": "と民謡会館",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "",
+      "month": "",
+      "score": 33,
+      "review_priority": "noise_check",
+      "review_flags": [
+        "long_phrase"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/5kHfYa5PjKsGGoV/status/2061094965590241353",
+      "evidence_urls": [
+        "https://x.com/5kHfYa5PjKsGGoV/status/2061094965590241353"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:8290753b56a039bc9e76970437b10e78fa6159f10610325fae74b2f905e2ff67",
+      "decision": "要調査",
+      "status": "needs_research",
+      "note": "固有名アンカーがあり本物候補。会場/重複の確認が必要。",
+      "event_name": "アキバ盆踊り",
+      "normalized_event": "アキバ",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-06-21",
+      "month": "06",
+      "score": 33,
+      "review_priority": "low",
+      "review_flags": [
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/mini__tan/status/2064544241750327378",
+      "evidence_urls": [
+        "https://x.com/mini__tan/status/2064544241750327378"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:9f720634183926c9b8541bc2fae267c9529ed278e0d52d29396ad26773a7ef22",
+      "decision": "要調査",
+      "status": "needs_research",
+      "note": "固有名アンカーがあり本物候補。会場/重複の確認が必要。",
+      "event_name": "アキバ盆踊り",
+      "normalized_event": "アキバ",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-06-27",
+      "month": "06",
+      "score": 33,
+      "review_priority": "low",
+      "review_flags": [
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/wannyantanookan/status/2062144681224659136",
+      "evidence_urls": [
+        "https://x.com/wannyantanookan/status/2062144681224659136"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:77f6068e1b41e8c5d5546b5fa6616b67ea51b336ec23816feb425683ced82fef",
+      "decision": "要調査",
+      "status": "needs_research",
+      "note": "固有名アンカーがあり本物候補。会場/重複の確認が必要。",
+      "event_name": "アニソン盆踊り",
+      "normalized_event": "アニソン",
+      "venue": "上野恩賜公園",
+      "venue_matched": true,
+      "year": 2026,
+      "estimated_date": "2026-06-13",
+      "month": "06",
+      "score": 33,
+      "review_priority": "low",
+      "review_flags": [],
+      "evidence_count": 1,
+      "source_url": "https://x.com/sugamo2018/status/2064552108150730951",
+      "evidence_urls": [
+        "https://x.com/sugamo2018/status/2064552108150730951"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:3460f8c87cd6bc70db7daf324e9194476daf99bba05b890aac5ddb757eb95a99",
+      "decision": "保留",
+      "status": "hold",
+      "note": "イベント名らしいが会場または証拠が弱い。",
+      "event_name": "フラしてるのか盆踊り",
+      "normalized_event": "フラしてるのか",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "",
+      "month": "",
+      "score": 33,
+      "review_priority": "low",
+      "review_flags": [
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/mikawa_321/status/2065046119596646691",
+      "evidence_urls": [
+        "https://x.com/mikawa_321/status/2065046119596646691"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:17ea32bf15f8ca65b6a101425b8bab710a479335cafed6e8f48940e76538ea12",
+      "decision": "保留",
+      "status": "hold",
+      "note": "イベント名らしいが会場または証拠が弱い。",
+      "event_name": "マスカレード盆踊り",
+      "normalized_event": "マスカレード",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-06-12",
+      "month": "06",
+      "score": 33,
+      "review_priority": "low",
+      "review_flags": [
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/soukuusibui/status/2064284156931289278",
+      "evidence_urls": [
+        "https://x.com/soukuusibui/status/2064284156931289278"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:28adb01607fe064da7b50125fc0571dd60f65ad1887f6dc92f4a10da773f7701",
+      "decision": "保留",
+      "status": "hold",
+      "note": "イベント名らしいが会場または証拠が弱い。",
+      "event_name": "一宮踊ろまい会様の盆踊り",
+      "normalized_event": "一宮踊ろまい会様",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "",
+      "month": "",
+      "score": 33,
+      "review_priority": "low",
+      "review_flags": [
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/elevator_p/status/2063591330358632806",
+      "evidence_urls": [
+        "https://x.com/elevator_p/status/2063591330358632806"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:26b4f29882ac3d5e34f8616c6a5ef3d74aa97e8c087d7cd30690d58607daba7d",
+      "decision": "不採用",
+      "status": "rejected",
+      "note": "文章断片/説明文の可能性が高い一次判定。",
+      "event_name": "中で帰ったけどチームマスクドめっちゃ楽しかったし郷土芸能部は盆踊り",
+      "normalized_event": "中で帰ったけどチームマスクドめっちゃ楽しかったし郷土芸能部は",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "",
+      "month": "",
+      "score": 33,
+      "review_priority": "noise_check",
+      "review_flags": [
+        "long_phrase",
+        "no_venue",
+        "sentence_fragment"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/mary_0617_/status/2063586821964189772",
+      "evidence_urls": [
+        "https://x.com/mary_0617_/status/2063586821964189772"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:e6595607a1be775e1c55b52257cc10c09b4436a51ca67b7f3ca8b59aef84d071",
+      "decision": "保留",
+      "status": "hold",
+      "note": "イベント名らしいが会場または証拠が弱い。",
+      "event_name": "今年の新潟まつり",
+      "normalized_event": "今年の新潟",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-08-07",
+      "month": "08",
+      "score": 33,
+      "review_priority": "low",
+      "review_flags": [
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/Team_SadoOkesa/status/2062152199556501675",
+      "evidence_urls": [
+        "https://x.com/Team_SadoOkesa/status/2062152199556501675"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:b7fd355589f42d2997d2f16262eec77b8acb2c23c9b050381cd2821921e7c7ef",
+      "decision": "要調査",
+      "status": "needs_research",
+      "note": "会場アンカーあり。イベント名の妥当性確認が必要。",
+      "event_name": "今日は縁あって田園調布のお祭り",
+      "normalized_event": "今日は縁あって田園調布のお",
+      "venue": "浅間神社例大祭に合わせて駅前",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "",
+      "month": "",
+      "score": 33,
+      "review_priority": "low",
+      "review_flags": [],
+      "evidence_count": 1,
+      "source_url": "https://x.com/unionworks/status/2063182749419356454",
+      "evidence_urls": [
+        "https://x.com/unionworks/status/2063182749419356454"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:d8bef0e3fbd469ab664f0f7c941a3a148d4147b5d2c6d18166abd55a92f5e45c",
+      "decision": "不採用",
+      "status": "rejected",
+      "note": "文章断片/説明文の可能性が高い一次判定。",
+      "event_name": "今週末はこちらの元祖上郷おいでんで14時くらいから15時まで盆踊り",
+      "normalized_event": "今週末はこちらの元祖上郷おいでんで14時くらいから15時まで",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "",
+      "month": "",
+      "score": 33,
+      "review_priority": "noise_check",
+      "review_flags": [
+        "long_phrase",
+        "no_venue",
+        "sentence_fragment"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/IID_PSV/status/2064202740474228935",
+      "evidence_urls": [
+        "https://x.com/IID_PSV/status/2064202740474228935"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:3325b918d252ef9a7cf2abd50613ce35e8aa2661d190c204c8e574bd96300c39",
+      "decision": "要調査",
+      "status": "needs_research",
+      "note": "固有名アンカーがあり本物候補。会場/重複の確認が必要。",
+      "event_name": "写楽盆踊り",
+      "normalized_event": "写楽",
+      "venue": "徳島駅前",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-08-15",
+      "month": "08",
+      "score": 33,
+      "review_priority": "low",
+      "review_flags": [],
+      "evidence_count": 1,
+      "source_url": "https://x.com/tamcrazy7878/status/2064710694738743798",
+      "evidence_urls": [
+        "https://x.com/tamcrazy7878/status/2064710694738743798"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:996b1e6baabb0a14bdfdfa64a4b55eac785b867ee70881fd07e858ce3361dd7e",
+      "decision": "保留",
+      "status": "hold",
+      "note": "イベント名らしいが会場または証拠が弱い。",
+      "event_name": "創作盆踊り",
+      "normalized_event": "創作",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-08-01",
+      "month": "08",
+      "score": 33,
+      "review_priority": "low",
+      "review_flags": [
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/banchonpocenter/status/2064628599941144723",
+      "evidence_urls": [
+        "https://x.com/banchonpocenter/status/2064628599941144723"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:b20ce888f347796d738991a4a2daf7853de171a4df7ca651f8e54d7d9d70bdb2",
+      "decision": "保留",
+      "status": "hold",
+      "note": "イベント名らしいが会場または証拠が弱い。",
+      "event_name": "勉強や盆踊り",
+      "normalized_event": "勉強や",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "",
+      "month": "",
+      "score": 33,
+      "review_priority": "low",
+      "review_flags": [
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/kikyou82821/status/2064143689690255803",
+      "evidence_urls": [
+        "https://x.com/kikyou82821/status/2064143689690255803"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:9d72790a233aafceca9be26b0951dc89ae750d8369250976792ce9f738180f29",
+      "decision": "保留",
+      "status": "hold",
+      "note": "イベント名らしいが会場または証拠が弱い。",
+      "event_name": "勝手に盆踊り",
+      "normalized_event": "勝手に",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "",
+      "month": "",
+      "score": 33,
+      "review_priority": "low",
+      "review_flags": [
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/hiro_thinker/status/2065411749516562776",
+      "evidence_urls": [
+        "https://x.com/hiro_thinker/status/2065411749516562776"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:80064a810b401555f1d3f29633bfa918a6ca5b259f4c2337d24d9c6b3162f1a9",
+      "decision": "要調査",
+      "status": "needs_research",
+      "note": "会場アンカーあり。イベント名の妥当性確認が必要。",
+      "event_name": "午後2時から盆踊り",
+      "normalized_event": "午後2時から",
+      "venue": "明日狛江駅前",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "",
+      "month": "",
+      "score": 33,
+      "review_priority": "low",
+      "review_flags": [],
+      "evidence_count": 1,
+      "source_url": "https://x.com/komaekubo1234/status/2065605758079897787",
+      "evidence_urls": [
+        "https://x.com/komaekubo1234/status/2065605758079897787"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:22e1c695a85febeedea0f1e4a782f1a70a9402bef0cfaffc408c871f827bf8d9",
+      "decision": "要調査",
+      "status": "needs_research",
+      "note": "固有名アンカーがあり本物候補。会場/重複の確認が必要。",
+      "event_name": "南新町納涼ふるさとまつり",
+      "normalized_event": "南新町納涼ふるさと",
+      "venue": "谷口ふれあい広場",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-06-04",
+      "month": "06",
+      "score": 33,
+      "review_priority": "low",
+      "review_flags": [],
+      "evidence_count": 1,
+      "source_url": "https://x.com/ohno_discovery/status/2062411982918283612",
+      "evidence_urls": [
+        "https://x.com/ohno_discovery/status/2062411982918283612"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:5b0e8c6aad9ed0ee4907d4126285032006fd6331b62d291fc9bc134ea3e227a9",
+      "decision": "保留",
+      "status": "hold",
+      "note": "イベント名らしいが会場または証拠が弱い。",
+      "event_name": "夏祭りのお話から省エネ夏祭り",
+      "normalized_event": "夏祭りのお話から省エネ",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "",
+      "month": "",
+      "score": 33,
+      "review_priority": "low",
+      "review_flags": [
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/katze_dalziel/status/2065405771723268418",
+      "evidence_urls": [
+        "https://x.com/katze_dalziel/status/2065405771723268418"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:e7f2e6acd3fd9ea4ac72ac28ea0c3bae1d9f3d7d5e6aba2e4525d65c42fc5825",
+      "decision": "保留",
+      "status": "hold",
+      "note": "イベント名らしいが会場または証拠が弱い。",
+      "event_name": "夏祭りや盆踊り",
+      "normalized_event": "夏祭りや",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-06-01",
+      "month": "06",
+      "score": 33,
+      "review_priority": "low",
+      "review_flags": [
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/EyiIlCVMMP90157/status/2065468284095631436",
+      "evidence_urls": [
+        "https://x.com/EyiIlCVMMP90157/status/2065468284095631436"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:bdc631e414f5b09b0af631109ca231adaa5977882fbd07d9eacaa416e6c913b5",
+      "decision": "保留",
+      "status": "hold",
+      "note": "イベント名らしいが会場または証拠が弱い。",
+      "event_name": "夕方5時半から盆踊り",
+      "normalized_event": "夕方5時半から",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "",
+      "month": "",
+      "score": 33,
+      "review_priority": "low",
+      "review_flags": [
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/hidekmrym/status/2064303488847499549",
+      "evidence_urls": [
+        "https://x.com/hidekmrym/status/2064303488847499549"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:23eddb0ec92d8d95c66c4f9bc52b6ab649476c1ef62325d6c091bffc37e8955a",
+      "decision": "要調査",
+      "status": "needs_research",
+      "note": "会場アンカーあり。イベント名の妥当性確認が必要。",
+      "event_name": "宮前盆踊り",
+      "normalized_event": "宮前",
+      "venue": "荏原神社",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "",
+      "month": "",
+      "score": 33,
+      "review_priority": "low",
+      "review_flags": [],
+      "evidence_count": 1,
+      "source_url": "https://x.com/YukaItazu/status/2063610819141914640",
+      "evidence_urls": [
+        "https://x.com/YukaItazu/status/2063610819141914640"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:8146ec002030ea1bde8348f48f321366a82e89c48e66db5f39bec34fc589afd4",
+      "decision": "保留",
+      "status": "hold",
+      "note": "イベント名らしいが会場または証拠が弱い。",
+      "event_name": "小一時間盆踊り",
+      "normalized_event": "小一時間",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "",
+      "month": "",
+      "score": 33,
+      "review_priority": "low",
+      "review_flags": [
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/derahealty/status/2065390724976349208",
+      "evidence_urls": [
+        "https://x.com/derahealty/status/2065390724976349208"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:35664ca3314094e386ae5e9248106d1eb3cfbca644abdf8bbbf1a36e7ca0a25c",
+      "decision": "要調査",
+      "status": "needs_research",
+      "note": "説明文がイベント名化している可能性あり。元証拠確認が必要。",
+      "event_name": "日本の盆踊り",
+      "normalized_event": "日本",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "",
+      "month": "",
+      "score": 33,
+      "review_priority": "low",
+      "review_flags": [
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/koki_shumi/status/2063616224832233958",
+      "evidence_urls": [
+        "https://x.com/koki_shumi/status/2063616224832233958"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:d27eb1278c059bde2f620c23f148c71a93222fea95bfcc56ac75b38bcf30c77f",
+      "decision": "要調査",
+      "status": "needs_research",
+      "note": "固有名アンカーがあり本物候補。会場/重複の確認が必要。",
+      "event_name": "日本丸みなと盆踊り",
+      "normalized_event": "日本丸みなと",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2027,
+      "estimated_date": "2027-05-01",
+      "month": "05",
+      "score": 33,
+      "review_priority": "low",
+      "review_flags": [
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/odori2024minato/status/2034405084063526965",
+      "evidence_urls": [
+        "https://x.com/odori2024minato/status/2034405084063526965"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:f63f4126dfe32ce54e3e3ee19fb24614a341909c4ac2670704e655cf63e54fea",
+      "decision": "保留",
+      "status": "hold",
+      "note": "イベント名らしいが会場または証拠が弱い。",
+      "event_name": "昔の盆踊り",
+      "normalized_event": "昔",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "",
+      "month": "",
+      "score": 33,
+      "review_priority": "low",
+      "review_flags": [
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/Kouyan_yutori/status/2063455849838977052",
+      "evidence_urls": [
+        "https://x.com/Kouyan_yutori/status/2063455849838977052"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:9e7598c09120e3cd4bff8030a7efe9ad12d9de9749d72906b2933e691a5fa26e",
+      "decision": "要調査",
+      "status": "needs_research",
+      "note": "固有名アンカーがあり本物候補。会場/重複の確認が必要。",
+      "event_name": "東根小学校盆踊り",
+      "normalized_event": "東根小学校",
+      "venue": "東根小学校",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-06-13",
+      "month": "06",
+      "score": 33,
+      "review_priority": "low",
+      "review_flags": [],
+      "evidence_count": 1,
+      "source_url": "https://x.com/_masakari/status/2065597936906744312",
+      "evidence_urls": [
+        "https://x.com/_masakari/status/2065597936906744312"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:cfa2d3b863bb4a7447979a76b3c625a70eb4da252bb15dd2082972b619dcf80b",
+      "decision": "要調査",
+      "status": "needs_research",
+      "note": "固有名アンカーがあり本物候補。会場/重複の確認が必要。",
+      "event_name": "浅草橋盆踊り",
+      "normalized_event": "浅草橋",
+      "venue": "上野恩賜公園",
+      "venue_matched": true,
+      "year": 2026,
+      "estimated_date": "2026-06-26",
+      "month": "06",
+      "score": 33,
+      "review_priority": "low",
+      "review_flags": [],
+      "evidence_count": 1,
+      "source_url": "https://x.com/tomohikos/status/2063410620381495667",
+      "evidence_urls": [
+        "https://x.com/tomohikos/status/2063410620381495667"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:6407847bd276917b0303c3fd039f5d60d5c95a99172360fcd11b8ab410309cdc",
+      "decision": "保留",
+      "status": "hold",
+      "note": "イベント名らしいが会場または証拠が弱い。",
+      "event_name": "生誕の練習を盆踊り",
+      "normalized_event": "生誕の練習を",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "",
+      "month": "",
+      "score": 33,
+      "review_priority": "low",
+      "review_flags": [
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/weaponpeso/status/2061999211378586091",
+      "evidence_urls": [
+        "https://x.com/weaponpeso/status/2061999211378586091"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:4d44584b0cb27167492da412857000006f3baf412692b8348dbb6602041c7338",
+      "decision": "要調査",
+      "status": "needs_research",
+      "note": "説明文がイベント名化している可能性あり。元証拠確認が必要。",
+      "event_name": "神奈川で古くから伝わる祭り",
+      "normalized_event": "神奈川で古くから伝わる",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "",
+      "month": "70",
+      "score": 33,
+      "review_priority": "low",
+      "review_flags": [
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/Zhhirafa/status/2062531826711998816",
+      "evidence_urls": [
+        "https://x.com/Zhhirafa/status/2062531826711998816"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:42b3a40b172e20e03279ea84d818f33900a8fcd6bda2f9837e4471b2d08dc845",
+      "decision": "保留",
+      "status": "hold",
+      "note": "イベント名らしいが会場または証拠が弱い。",
+      "event_name": "福島の盆踊り",
+      "normalized_event": "福島",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "",
+      "month": "",
+      "score": 33,
+      "review_priority": "low",
+      "review_flags": [
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/masanao2019/status/2064695027369169115",
+      "evidence_urls": [
+        "https://x.com/masanao2019/status/2064695027369169115"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:cf136c6d00d21c0b82b4b4adef2d1cfe95b2dbcb02a30fbe1ca234ecbf6dee65",
+      "decision": "不採用",
+      "status": "rejected",
+      "note": "文章断片/説明文の可能性が高い一次判定。",
+      "event_name": "群馬県伊勢崎駅前でアニメソング盆踊り",
+      "normalized_event": "群馬県伊勢崎駅前でアニメソング",
+      "venue": "群馬県伊勢崎駅前",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-07-19",
+      "month": "07",
+      "score": 33,
+      "review_priority": "noise_check",
+      "review_flags": [
+        "long_phrase"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/isesakipop/status/2065375700031598933",
+      "evidence_urls": [
+        "https://x.com/isesakipop/status/2065375700031598933"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:c350cbbfb42999e6974ca42140b17c59b19a92e59ac7b49e607a5fb10c5a87e9",
+      "decision": "保留",
+      "status": "hold",
+      "note": "イベント名らしいが会場または証拠が弱い。",
+      "event_name": "舟渡ホール盆踊り",
+      "normalized_event": "舟渡ホール",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-06-09",
+      "month": "06",
+      "score": 33,
+      "review_priority": "low",
+      "review_flags": [
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/_masakari/status/2064674373932630145",
+      "evidence_urls": [
+        "https://x.com/_masakari/status/2064674373932630145"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:eb9a1c5a25d2839770c6d2dde40599baa059c68c3ce6ad36982077d6736ee3af",
+      "decision": "保留",
+      "status": "hold",
+      "note": "イベント名らしいが会場または証拠が弱い。",
+      "event_name": "西馬音内盆踊り",
+      "normalized_event": "西馬音内",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "",
+      "month": "",
+      "score": 33,
+      "review_priority": "low",
+      "review_flags": [
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/maru_akitahaku/status/2060657371937153093",
+      "evidence_urls": [
+        "https://x.com/maru_akitahaku/status/2060657371937153093"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:ae3f7afe4a92736d4b4baa7df9309c705cd11fda89598278c25f40e8d9f64756",
+      "decision": "要調査",
+      "status": "needs_research",
+      "note": "固有名アンカーがあり本物候補。会場/重複の確認が必要。",
+      "event_name": "赤塚・中田出世稲荷神社盆踊り",
+      "normalized_event": "赤塚中田出世稲荷神社",
+      "venue": "中田出世稲荷神社",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-07-11",
+      "month": "07",
+      "score": 33,
+      "review_priority": "low",
+      "review_flags": [],
+      "evidence_count": 1,
+      "source_url": "https://x.com/takasho06130613/status/2056939707620290646",
+      "evidence_urls": [
+        "https://x.com/takasho06130613/status/2056939707620290646"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:82086b8eec335e8aff788e2b644ae0d05f5dcd06fe88d7139a8955d4dda358fc",
+      "decision": "保留",
+      "status": "hold",
+      "note": "イベント名らしいが会場または証拠が弱い。",
+      "event_name": "足寄ふるさと盆踊り",
+      "normalized_event": "足寄ふるさと",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-08-15",
+      "month": "08",
+      "score": 33,
+      "review_priority": "low",
+      "review_flags": [
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/midorimushi54/status/2062130940420448758",
+      "evidence_urls": [
+        "https://x.com/midorimushi54/status/2062130940420448758"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:963c2fb07ca9eec48f7ab062b8fb3c7e704650465b812298ef525853a24b95bd",
+      "decision": "要調査",
+      "status": "needs_research",
+      "note": "固有名アンカーがあり本物候補。会場/重複の確認が必要。",
+      "event_name": "足立区の盆踊りで最も早い盆踊り",
+      "normalized_event": "足立区の盆踊りで最も早い",
+      "venue": "五反野コミュニティセンター横の公園",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-06-20",
+      "month": "06",
+      "score": 33,
+      "review_priority": "low",
+      "review_flags": [],
+      "evidence_count": 1,
+      "source_url": "https://x.com/Dk725aNpscBwpEa/status/2065082668396827008",
+      "evidence_urls": [
+        "https://x.com/Dk725aNpscBwpEa/status/2065082668396827008"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:9e4791db216781576e410bef361488b8067afd575820303cadea105a0b2bafb7",
+      "decision": "保留",
+      "status": "hold",
+      "note": "イベント名らしいが会場または証拠が弱い。",
+      "event_name": "高島越後盆踊り",
+      "normalized_event": "高島越後",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-06-09",
+      "month": "06",
+      "score": 33,
+      "review_priority": "low",
+      "review_flags": [
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/HopeOne_news/status/2065293896884908330",
+      "evidence_urls": [
+        "https://x.com/HopeOne_news/status/2065293896884908330"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:b95e85c0fd81696c783531910950e77f15994172f24868d86422911cfcb38e8c",
+      "decision": "要調査",
+      "status": "needs_research",
+      "note": "会場アンカーあり。イベント名の妥当性確認が必要。",
+      "event_name": "2ヶ月先だけど今年の地域の盆踊り",
+      "normalized_event": "2ヶ月先だけど今年の地域",
+      "venue": "去年から花火大会と神社",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "",
+      "month": "",
+      "score": 28,
+      "review_priority": "noise_check",
+      "review_flags": [
+        "bad_prefix"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/shelpi22/status/2064136271866609986",
+      "evidence_urls": [
+        "https://x.com/shelpi22/status/2064136271866609986"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:f153f601e5ecb1cc09c813a764fd9546db4dc95c39795d00a81a508579adfb59",
+      "decision": "保留",
+      "status": "hold",
+      "note": "イベント名らしいが会場または証拠が弱い。",
+      "event_name": "しっかり盆踊り",
+      "normalized_event": "しっかり",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "",
+      "month": "",
+      "score": 28,
+      "review_priority": "low",
+      "review_flags": [
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/yumiya_pon/status/2062559775955751392",
+      "evidence_urls": [
+        "https://x.com/yumiya_pon/status/2062559775955751392"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:738c325e73cd09036e868c1a7a82de36fef0d09294d1d75be51874be63e9b43b",
+      "decision": "不採用",
+      "status": "rejected",
+      "note": "文章断片/説明文の可能性が高い一次判定。",
+      "event_name": "そういやこないだの近所の祭りで今年初盆踊り",
+      "normalized_event": "そういやこないだの近所の祭りで今年初",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "",
+      "month": "",
+      "score": 28,
+      "review_priority": "noise_check",
+      "review_flags": [
+        "long_phrase",
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/uratyranohoshi/status/2064330568817643673",
+      "evidence_urls": [
+        "https://x.com/uratyranohoshi/status/2064330568817643673"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:deb11227ca4c321c3b193bea497d8c8910bc51d37789cf1f6329bf4f1878c6e5",
+      "decision": "保留",
+      "status": "hold",
+      "note": "イベント名らしいが会場または証拠が弱い。",
+      "event_name": "なお今年も火の国まつり",
+      "normalized_event": "なお今年も火の国",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "",
+      "month": "",
+      "score": 28,
+      "review_priority": "low",
+      "review_flags": [
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/midouyamaseiren/status/2063909727663481312",
+      "evidence_urls": [
+        "https://x.com/midouyamaseiren/status/2063909727663481312"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:b4f24379489cce804858acab6bd87d5221e2e14fc92ce413fd0653de194e94aa",
+      "decision": "保留",
+      "status": "hold",
+      "note": "イベント名らしいが会場または証拠が弱い。",
+      "event_name": "んーーー盆踊り",
+      "normalized_event": "んーーー",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "",
+      "month": "",
+      "score": 28,
+      "review_priority": "low",
+      "review_flags": [
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/Suwa_3638/status/2061808778362917045",
+      "evidence_urls": [
+        "https://x.com/Suwa_3638/status/2061808778362917045"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:1d885263994093b859a44ac7d3bb98557f144384c3c5ab66cfe69cf69bd8361c",
+      "decision": "要調査",
+      "status": "needs_research",
+      "note": "会場アンカーあり。イベント名の妥当性確認が必要。",
+      "event_name": "エクストリーム盆祭り",
+      "normalized_event": "エクストリーム盆",
+      "venue": "大阪城公園",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "",
+      "month": "",
+      "score": 28,
+      "review_priority": "low",
+      "review_flags": [],
+      "evidence_count": 1,
+      "source_url": "https://x.com/mnk_0202/status/2065051168016077163",
+      "evidence_urls": [
+        "https://x.com/mnk_0202/status/2065051168016077163"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:ef8c7c8173d8e5a2912d67e455b237276289a1f82b8d25d0f76cb07e23440e3b",
+      "decision": "保留",
+      "status": "hold",
+      "note": "イベント名らしいが会場または証拠が弱い。",
+      "event_name": "一人でお祭り",
+      "normalized_event": "一人でお",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "",
+      "month": "",
+      "score": 28,
+      "review_priority": "low",
+      "review_flags": [
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/Bi_zi_n/status/2063602267228688388",
+      "evidence_urls": [
+        "https://x.com/Bi_zi_n/status/2063602267228688388"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:8cacf48b90c000fd4b9d26164d58b834b6c690a24bf7a3dd1a446ed830fabd05",
+      "decision": "保留",
+      "status": "hold",
+      "note": "イベント名らしいが会場または証拠が弱い。",
+      "event_name": "可愛いの作ってお祭り",
+      "normalized_event": "可愛いの作ってお",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "",
+      "month": "",
+      "score": 28,
+      "review_priority": "low",
+      "review_flags": [
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/mozuko00/status/2062813963562471506",
+      "evidence_urls": [
+        "https://x.com/mozuko00/status/2062813963562471506"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:9c047f403b5226c69040550596efaa82456ff4315eafd9f1317cabfd6b90ff07",
+      "decision": "保留",
+      "status": "hold",
+      "note": "イベント名らしいが会場または証拠が弱い。",
+      "event_name": "地元の日永つんつく夏祭り",
+      "normalized_event": "地元の日永つんつく",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "",
+      "month": "",
+      "score": 28,
+      "review_priority": "low",
+      "review_flags": [
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/mikann_GR/status/2063990234694709538",
+      "evidence_urls": [
+        "https://x.com/mikann_GR/status/2063990234694709538"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:ed456dff5b6a6a0d3b4aa240670a35bd5c63677eb0015a395c51953f85f8eaa5",
+      "decision": "要調査",
+      "status": "needs_research",
+      "note": "会場アンカーあり。イベント名の妥当性確認が必要。",
+      "event_name": "大晦日のうちに2025年盆踊り",
+      "normalized_event": "大晦日のうちに2025年",
+      "venue": "第1回晴海埠頭公園",
+      "venue_matched": false,
+      "year": 2025,
+      "estimated_date": "",
+      "month": "",
+      "score": 28,
+      "review_priority": "low",
+      "review_flags": [],
+      "evidence_count": 1,
+      "source_url": "https://x.com/kaz0045/status/2006343358877413565",
+      "evidence_urls": [
+        "https://x.com/kaz0045/status/2006343358877413565"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:0b73553a9919fa96aa355b2d44f30f722ec833260d92c3382d361e5d297c4438",
+      "decision": "保留",
+      "status": "hold",
+      "note": "イベント名らしいが会場または証拠が弱い。",
+      "event_name": "大須夏祭りの盆踊り",
+      "normalized_event": "大須夏祭り",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "",
+      "month": "",
+      "score": 28,
+      "review_priority": "low",
+      "review_flags": [
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/Love51938852/status/2063942883691122749",
+      "evidence_urls": [
+        "https://x.com/Love51938852/status/2063942883691122749"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:1248e9a0ae44c4d529a6c503a94e8d7354dcce47664b998332520cd6098abf6d",
+      "decision": "保留",
+      "status": "hold",
+      "note": "イベント名らしいが会場または証拠が弱い。",
+      "event_name": "新宝島の盆踊り",
+      "normalized_event": "新宝島",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "",
+      "month": "",
+      "score": 28,
+      "review_priority": "low",
+      "review_flags": [
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/pokke_15/status/2063621518308119027",
+      "evidence_urls": [
+        "https://x.com/pokke_15/status/2063621518308119027"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:1fb2e8a69a2bbf60ca50b87316c083d9243b2d030d60aded1b9f859c7b3e7ec7",
+      "decision": "不採用",
+      "status": "rejected",
+      "note": "文章断片/説明文の可能性が高い一次判定。",
+      "event_name": "昨年6年ぶり復活した盆踊り",
+      "normalized_event": "昨年6年ぶり復活した",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "",
+      "month": "",
+      "score": 28,
+      "review_priority": "noise_check",
+      "review_flags": [
+        "no_venue",
+        "sentence_fragment"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/kazukazu9317/status/2065044313596469601",
+      "evidence_urls": [
+        "https://x.com/kazukazu9317/status/2065044313596469601"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:8de18ada42f04a5845ca8ecbf7753c875cf47ddbf4274e6068b734c722e4f3b7",
+      "decision": "保留",
+      "status": "hold",
+      "note": "イベント名らしいが会場または証拠が弱い。",
+      "event_name": "笠間納涼盆踊り",
+      "normalized_event": "笠間",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "",
+      "month": "",
+      "score": 28,
+      "review_priority": "low",
+      "review_flags": [
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/hitachi773X/status/2065431155575505274",
+      "evidence_urls": [
+        "https://x.com/hitachi773X/status/2065431155575505274"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:6f49e877e1d42a36567f7e19e56cae9a9413e76ea126b4add04dd9a2583a0b3e",
+      "decision": "保留",
+      "status": "hold",
+      "note": "イベント名らしいが会場または証拠が弱い。",
+      "event_name": "第二回小島民踊研究会大盆踊り",
+      "normalized_event": "第二回小島民踊研究会大",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "",
+      "month": "",
+      "score": 28,
+      "review_priority": "low",
+      "review_flags": [
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/xxxnabekoxxx/status/2025410794259882170",
+      "evidence_urls": [
+        "https://x.com/xxxnabekoxxx/status/2025410794259882170"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:8768309db7a5e2cd10501071ab528337c90315700225855bb3b978eca030015b",
+      "decision": "要調査",
+      "status": "needs_research",
+      "note": "会場アンカーあり。イベント名の妥当性確認が必要。",
+      "event_name": "蔦屋重三郎に思いを馳せて盆踊り",
+      "normalized_event": "蔦屋重三郎に思いを馳せて",
+      "venue": "去年はあかつき公園",
+      "venue_matched": false,
+      "year": 2025,
+      "estimated_date": "",
+      "month": "",
+      "score": 28,
+      "review_priority": "low",
+      "review_flags": [],
+      "evidence_count": 1,
+      "source_url": "https://x.com/tukishimanagaya/status/1987457842056704409",
+      "evidence_urls": [
+        "https://x.com/tukishimanagaya/status/1987457842056704409"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:c82d4cc6f27ffb8b4949eb54ff0daa21fd8295f91d6950cdd5653f27904c8766",
+      "decision": "保留",
+      "status": "hold",
+      "note": "イベント名らしいが会場または証拠が弱い。",
+      "event_name": "金沢百万石まつり",
+      "normalized_event": "金沢百万石",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "",
+      "month": "",
+      "score": 28,
+      "review_priority": "low",
+      "review_flags": [
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/bonDbonT/status/2063331635911971207",
+      "evidence_urls": [
+        "https://x.com/bonDbonT/status/2063331635911971207"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:f7f6c88853e540229bbf9aaa43de90859a59ee3a2b215aa0d273d93f2938b0e3",
+      "decision": "保留",
+      "status": "hold",
+      "note": "イベント名らしいが会場または証拠が弱い。",
+      "event_name": "鳳蝶会DJCelly盆踊り",
+      "normalized_event": "鳳蝶会djcelly",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "",
+      "month": "",
+      "score": 28,
+      "review_priority": "low",
+      "review_flags": [
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/kagishipocat/status/2063983591626072369",
+      "evidence_urls": [
+        "https://x.com/kagishipocat/status/2063983591626072369"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:971d93db4fae31d31922e29c1eb25752167c3f0d8c1a9e0fc416cae2d3bbf61c",
+      "decision": "保留",
+      "status": "hold",
+      "note": "イベント名らしいが会場または証拠が弱い。",
+      "event_name": "やっぱり盆踊り",
+      "normalized_event": "やっぱり",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "",
+      "month": "",
+      "score": 25,
+      "review_priority": "low",
+      "review_flags": [
+        "no_venue"
+      ],
+      "evidence_count": 8,
+      "source_url": "https://x.com/loveydovey5f/status/2065388652574773633",
+      "evidence_urls": [
+        "https://x.com/loveydovey5f/status/2065388652574773633",
+        "https://x.com/loveydovey5f/status/2065026262368760178",
+        "https://x.com/loveydovey5f/status/2064301482791624794",
+        "https://x.com/loveydovey5f/status/2063939105776390296",
+        "https://x.com/loveydovey5f/status/2063576712785653883"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:48bf5b882d5c9c6b23b374e958dc56e79c62d5b4de7fbcd8ba9ee7f3d871e3e0",
+      "decision": "保留",
+      "status": "hold",
+      "note": "イベント名らしいが会場または証拠が弱い。",
+      "event_name": "一宮盆踊り",
+      "normalized_event": "一宮",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "",
+      "month": "",
+      "score": 25,
+      "review_priority": "low",
+      "review_flags": [
+        "no_venue"
+      ],
+      "evidence_count": 2,
+      "source_url": "https://x.com/tashiro_kai/status/2064016168403554622",
+      "evidence_urls": [
+        "https://x.com/tashiro_kai/status/2064016168403554622",
+        "https://x.com/tashiro_kai/status/2064009758768800042"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:00840db673ce42f9716681400217ae5000bd58c96e58826311502ad8f1a4df23",
+      "decision": "要調査",
+      "status": "needs_research",
+      "note": "固有名アンカーがあり本物候補。会場/重複の確認が必要。",
+      "event_name": "山科の笠原寺の盆踊り（名称未確定）",
+      "normalized_event": "",
+      "venue": "山科の笠原寺",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-07-26",
+      "month": "07",
+      "score": 25,
+      "review_priority": "low",
+      "review_flags": [],
+      "evidence_count": 1,
+      "source_url": "https://x.com/hidedon78/status/2064629128012484796",
+      "evidence_urls": [
+        "https://x.com/hidedon78/status/2064629128012484796"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:6bc15bbda88168c2da9da2878346c82149cf7fcbfabff92eae2e0ab413344bba",
+      "decision": "要調査",
+      "status": "needs_research",
+      "note": "固有名アンカーがあり本物候補。会場/重複の確認が必要。",
+      "event_name": "河原町広場の盆踊り（名称未確定）",
+      "normalized_event": "",
+      "venue": "河原町広場",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-06-01",
+      "month": "06",
+      "score": 25,
+      "review_priority": "low",
+      "review_flags": [],
+      "evidence_count": 1,
+      "source_url": "https://x.com/KoufukuyaC/status/2062549666563289225",
+      "evidence_urls": [
+        "https://x.com/KoufukuyaC/status/2062549666563289225"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:3a6d4855dbed334ce51ca1681aba54b0bb788fca8044a4ba42e1bbe416883bb5",
+      "decision": "要調査",
+      "status": "needs_research",
+      "note": "会場アンカーあり。イベント名の妥当性確認が必要。",
+      "event_name": "飛鳥山公園の盆踊り（名称未確定）",
+      "normalized_event": "",
+      "venue": "飛鳥山公園",
+      "venue_matched": true,
+      "year": 2026,
+      "estimated_date": "",
+      "month": "",
+      "score": 25,
+      "review_priority": "low",
+      "review_flags": [],
+      "evidence_count": 1,
+      "source_url": "https://x.com/xxxnabekoxxx/status/2063607767861195209",
+      "evidence_urls": [
+        "https://x.com/xxxnabekoxxx/status/2063607767861195209"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:fa6c7df0fcb8d6e2707287e42412745677e4f2822805679dd1ea89978d0e6808",
+      "decision": "要調査",
+      "status": "needs_research",
+      "note": "会場アンカーあり。イベント名の妥当性確認が必要。",
+      "event_name": "鮫洲入江公園の盆踊り（名称未確定）",
+      "normalized_event": "",
+      "venue": "鮫洲入江公園",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "",
+      "month": "",
+      "score": 25,
+      "review_priority": "low",
+      "review_flags": [],
+      "evidence_count": 1,
+      "source_url": "https://x.com/Ringtree221/status/2063266809839849808",
+      "evidence_urls": [
+        "https://x.com/Ringtree221/status/2063266809839849808"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:b713030aa2607d9088cfc05b7b1d2120f3bd06d42578a8fb3319f5d30ffdbeec",
+      "decision": "保留",
+      "status": "hold",
+      "note": "イベント名らしいが会場または証拠が弱い。",
+      "event_name": "去年は大江戸まつり",
+      "normalized_event": "去年は大江戸",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-03-04",
+      "month": "03",
+      "score": 23,
+      "review_priority": "low",
+      "review_flags": [
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/2tsuo_g/status/2062014346373530001",
+      "evidence_urls": [
+        "https://x.com/2tsuo_g/status/2062014346373530001"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:67590b39c2fbdddbc2185b9d248937e7d691ec7afd58cfd40f693bb1cc5249fc",
+      "decision": "保留",
+      "status": "hold",
+      "note": "イベント名らしいが会場または証拠が弱い。",
+      "event_name": "鬼会と平和祭り",
+      "normalized_event": "鬼会と平和",
+      "venue": "",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-09-21",
+      "month": "09",
+      "score": 23,
+      "review_priority": "low",
+      "review_flags": [
+        "no_venue"
+      ],
+      "evidence_count": 1,
+      "source_url": "https://x.com/shiori_oe/status/2063587917285687757",
+      "evidence_urls": [
+        "https://x.com/shiori_oe/status/2063587917285687757"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:98dcdc6f02b42c0dd0b3f47cfd28c53c059e2ed7b863b265629f921816c23e4d",
+      "decision": "要調査",
+      "status": "needs_research",
+      "note": "会場アンカーあり。イベント名の妥当性確認が必要。",
+      "event_name": "西本願寺の盆踊り（名称未確定）",
+      "normalized_event": "",
+      "venue": "西本願寺",
+      "venue_matched": true,
+      "year": 2026,
+      "estimated_date": "",
+      "month": "",
+      "score": 20,
+      "review_priority": "low",
+      "review_flags": [],
+      "evidence_count": 1,
+      "source_url": "https://x.com/KStyleradio_894/status/2065432852083462543",
+      "evidence_urls": [
+        "https://x.com/KStyleradio_894/status/2065432852083462543"
+      ],
+      "source": "retrospective_harvest"
+    },
+    {
+      "candidate_key": "event:72839dd4f5600d9b5a3ab9fa9746ad390feffdd9a3720d6318ade76027ae3458",
+      "decision": "要調査",
+      "status": "needs_research",
+      "note": "固有名アンカーがあり本物候補。会場/重複の確認が必要。",
+      "event_name": "鳥越まつり",
+      "normalized_event": "鳥越",
+      "venue": "鳥越神社",
+      "venue_matched": false,
+      "year": 2026,
+      "estimated_date": "2026-06-06",
+      "month": "06",
+      "score": 20,
+      "review_priority": "low",
+      "review_flags": [],
+      "evidence_count": 3,
+      "source_url": "https://www.youtube.com/watch?v=QczIzSgsYoQ",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=QczIzSgsYoQ",
+        "https://www.youtube.com/watch?v=UmVKYyzDSz0",
+        "https://www.youtube.com/watch?v=3rbyNCXgEAM"
+      ],
+      "source": "retrospective_harvest"
+    }
+  ]
+}

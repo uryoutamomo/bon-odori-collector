@@ -1,0 +1,61 @@
+{
+  "generated_by": "split_retrospective_event_curation.py",
+  "source": "data/retrospective_event_apply_curation.json",
+  "count": 6,
+  "rows": [
+    {
+      "candidate_key": "event:b0233fe5bf31862b220c541f3d4722ebfcd78bb33638bfac5cc886cb2b73571d",
+      "event_name": "さくら公園盆踊り大会",
+      "venue": "さくら公園",
+      "estimated_date": "2026-06-11",
+      "source_url": "https://x.com/_masakari/status/2065078577687863764",
+      "reason": "証拠本文が盆踊り本番ではなく練習会。event_songs/observations側の証拠として扱う。",
+      "next_action": "イベント作成せず、occurrence observations/event_songs証拠として扱う"
+    },
+    {
+      "candidate_key": "event:9e7598c09120e3cd4bff8030a7efe9ad12d9de9749d72906b2933e691a5fa26e",
+      "event_name": "東根小学校盆踊り",
+      "venue": "東根小学校",
+      "estimated_date": "2026-06-13",
+      "source_url": "https://x.com/_masakari/status/2065597936906744312",
+      "reason": "証拠本文が盆踊り本番ではなく練習会。event_songs/observations側の証拠として扱う。",
+      "next_action": "イベント作成せず、occurrence observations/event_songs証拠として扱う"
+    },
+    {
+      "candidate_key": "event:c350cbbfb42999e6974ca42140b17c59b19a92e59ac7b49e607a5fb10c5a87e9",
+      "event_name": "舟渡ホール盆踊り",
+      "venue": "",
+      "estimated_date": "2026-06-09",
+      "source_url": "https://x.com/_masakari/status/2064674373932630145",
+      "reason": "証拠本文が盆踊り本番ではなく練習会。event_songs/observations側の証拠として扱う。",
+      "next_action": "イベント作成せず、occurrence observations/event_songs証拠として扱う"
+    },
+    {
+      "candidate_key": "event:9e4791db216781576e410bef361488b8067afd575820303cadea105a0b2bafb7",
+      "event_name": "高島越後盆踊り",
+      "venue": "",
+      "estimated_date": "2026-06-09",
+      "source_url": "https://x.com/HopeOne_news/status/2065293896884908330",
+      "reason": "証拠本文が盆踊り本番ではなく練習会。event_songs/observations側の証拠として扱う。",
+      "next_action": "イベント作成せず、occurrence observations/event_songs証拠として扱う"
+    },
+    {
+      "candidate_key": "event:c82d4cc6f27ffb8b4949eb54ff0daa21fd8295f91d6950cdd5653f27904c8766",
+      "event_name": "金沢百万石まつり",
+      "venue": "",
+      "estimated_date": "",
+      "source_url": "https://x.com/bonDbonT/status/2063331635911971207",
+      "reason": "金沢百万石まつり内の踊り流し参加記録。今回の新規イベント正本化対象からは除外。",
+      "next_action": "イベント作成せず、occurrence observations/event_songs証拠として扱う"
+    },
+    {
+      "candidate_key": "event:6bc15bbda88168c2da9da2878346c82149cf7fcbfabff92eae2e0ab413344bba",
+      "event_name": "河原町広場の盆踊り（名称未確定）",
+      "venue": "河原町広場",
+      "estimated_date": "2026-06-01",
+      "source_url": "https://x.com/KoufukuyaC/status/2062549666563289225",
+      "reason": "証拠本文がマルシェ告知で、盆踊りイベントではない。",
+      "next_action": "イベント作成せず、occurrence observations/event_songs証拠として扱う"
+    }
+  ]
+}

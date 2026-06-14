@@ -1,0 +1,121 @@
+{
+  "generated_by": "enrich_retrospective_event_research_queue.py",
+  "source": "data/retrospective_event_research_queue.json",
+  "count": 6,
+  "rows": [
+    {
+      "candidate_key": "event:41c7cfb7ba903f159ec8e78d803877123d2dbddd87aa3f237e788518a81b0e02",
+      "event_name": "藤沢七夕まつり",
+      "venue": "辻堂駅北口神台公園",
+      "estimated_date": "2026-07-04",
+      "source_url": "https://x.com/honeycutie333/status/2064678013510504823",
+      "reason": "会場が会場マスタ未登録。イベント作成前に会場ページ作成/名寄せが必要。",
+      "next_action": "正式イベント名・会場・既存重複を調査",
+      "suggested_event_name": "藤沢七夕まつり",
+      "suggested_date": "2026-07-04",
+      "venue_hints": [
+        "辻堂駅北口神台公園",
+        "辻堂神台公園"
+      ],
+      "evidence_text_sample": "7月4日は辻堂駅北口神台公園(テラスモールから近い場所だと思います 藤沢七夕まつりが開催されます(雨天中止) 当日は大盆踊り大会がありゲストにダンシングヒーローでお馴染みの荻野目洋子さんが登場します🎤 雨が降らなければ平塚七夕まつりを見てから辻堂に行くのもありですね🐱\n7月4日は辻堂駅北口神台公園(テラスモールから近い場所だと思います 藤沢七夕まつりが開催されます(雨天中止) 当日は大盆踊り大会がありゲストにダンシングヒーローでお馴染みの荻野目洋子さんが登場します🎤 雨が降らなければ平塚七夕まつりを見てから辻堂に行くのもありですね🐱",
+      "research_status": "registered_with_local_evidence",
+      "registration_recommendation": "Notion登録済み",
+      "research_note": "複数のX本文で7月4日・辻堂神台公園/辻堂駅北口神台公園・大盆踊り大会が一致。"
+    },
+    {
+      "candidate_key": "event:eb150d13f3f30b8ffd825054afb37c115c9bb6597d5881b72d82c524fc0aa172",
+      "event_name": "5月9日浅草橋マロニエまつり盆踊り",
+      "venue": "",
+      "estimated_date": "2026-05-09",
+      "source_url": "https://x.com/1205uzonke/status/2065200648086487508",
+      "reason": "イベント名に日付が混入。正式名と会場の補完が必要。",
+      "next_action": "正式イベント名・会場・既存重複を調査",
+      "suggested_event_name": "浅草橋マロニエまつり盆踊り",
+      "suggested_date": "2026-05-09",
+      "venue_hints": [
+        "浅草橋マロニエ",
+        "ヒューリック浅草橋ビル前"
+      ],
+      "evidence_text_sample": "5月9日浅草橋マロニエまつり盆踊りへ。13時と14時30分の二部制だけど、午前中のプログラムで、踊りの披露があるから、一緒になって踊った。今年も佐渡おけさ踊れた。一日中踊りっぱなしで満足〜。",
+      "research_status": "registered_after_external_confirmation",
+      "registration_recommendation": "Notion登録済み（過去実績として保持）",
+      "research_note": "こと裏取りで第二部会場はヒューリック浅草橋ビル前、2026-05-09開催済みと確認。来年の名寄せ用に過去実績登録。"
+    },
+    {
+      "candidate_key": "event:5272d7b8426ec32bf1e92abd13f77ee9ed6160bae568a54e1993cdde9b8ea273",
+      "event_name": "西馬音内盆踊り",
+      "venue": "",
+      "estimated_date": "2026-06-01",
+      "source_url": "https://x.com/selion_akitakou/status/2063452243609936037",
+      "reason": "会場未確定。登録前に venue_master への名寄せまたは新規会場登録が必要。",
+      "next_action": "正式イベント名・会場・既存重複を調査",
+      "suggested_event_name": "ヘリテージ・アドベンチャラー寄港 西馬音内盆踊り",
+      "suggested_date": "2026-06-07",
+      "venue_hints": [
+        "秋田港フェリーターミナル",
+        "道の駅あきた港 セリオン"
+      ],
+      "evidence_text_sample": "本日6/7(日) #ヘリテージ・アドベンチャラー が9:00に入港しました🚢✨ 〈ターミナルでのイベント〉 ・17:30～西馬音内盆踊り ・18:00～出港 ※写真は昨年寄港時の様子です。 https://t.co/28HeNRKB3Z",
+      "research_status": "registered_with_local_evidence",
+      "registration_recommendation": "Notion登録済み",
+      "research_note": "セリオン公式投稿。ターミナルでのイベントとして17:30西馬音内盆踊り、18:00出港と記載。"
+    },
+    {
+      "candidate_key": "event:eb9a1c5a25d2839770c6d2dde40599baa059c68c3ce6ad36982077d6736ee3af",
+      "event_name": "西馬音内盆踊り",
+      "venue": "",
+      "estimated_date": "",
+      "source_url": "https://x.com/maru_akitahaku/status/2060657371937153093",
+      "reason": "会場未確定。登録前に venue_master への名寄せまたは新規会場登録が必要。",
+      "next_action": "正式イベント名・会場・既存重複を調査",
+      "suggested_event_name": "まるっと秋田博 西馬音内盆踊り",
+      "suggested_date": "2026-05-30",
+      "venue_hints": [
+        "エリアなかいち"
+      ],
+      "evidence_text_sample": "#西馬音内盆踊り は本日19時45分から、#エリアなかいち 会場で演舞となります。 本日最後のステージプログラムとなりますので、ぜひエリアなかいち会場へお越しください✨ お待ちしております！ #まるっと秋田博2026 https://t.co/83Bw67EbUg",
+      "research_status": "registered_with_local_evidence",
+      "registration_recommendation": "Notion登録済み",
+      "research_note": "まるっと秋田博公式投稿。エリアなかいち会場で19:45から演舞と記載。"
+    },
+    {
+      "candidate_key": "event:82086b8eec335e8aff788e2b644ae0d05f5dcd06fe88d7139a8955d4dda358fc",
+      "event_name": "足寄ふるさと盆踊り",
+      "venue": "",
+      "estimated_date": "2026-08-15",
+      "source_url": "https://x.com/midorimushi54/status/2062130940420448758",
+      "reason": "会場未確定。登録前に venue_master への名寄せまたは新規会場登録が必要。",
+      "next_action": "正式イベント名・会場・既存重複を調査",
+      "suggested_event_name": "第44回 足寄ふるさと盆踊り・両国花火大会",
+      "suggested_date": "2026-08-15",
+      "venue_hints": [
+        "足寄町民センター前グラウンド・駐車場",
+        "利別川河川敷両国橋下流",
+        "足寄郡足寄町"
+      ],
+      "evidence_text_sample": "第44回 足寄ふるさと盆踊り・両国花火大会（足寄郡足寄町）の日程・開催情報 - 花火大会2026 - ウォーカープラス https://t.co/w9qQJt93E4 8月15日",
+      "research_status": "registered_after_external_confirmation",
+      "registration_recommendation": "Notion登録済み（会場は要レビュー）",
+      "research_note": "こと裏取りで盆踊り・露店・ステージは足寄町民センター前グラウンド＋駐車場、花火打ち上げは利別川両国橋下流と確認。既存Notion会場を盆踊り本体会場へ修正済み。"
+    },
+    {
+      "candidate_key": "event:8de18ada42f04a5845ca8ecbf7753c875cf47ddbf4274e6068b734c722e4f3b7",
+      "event_name": "笠間納涼盆踊り",
+      "venue": "",
+      "estimated_date": "",
+      "source_url": "https://x.com/hitachi773X/status/2065431155575505274",
+      "reason": "会場未確定。登録前に venue_master への名寄せまたは新規会場登録が必要。",
+      "next_action": "正式イベント名・会場・既存重複を調査",
+      "suggested_event_name": "笠間納涼盆踊り花火大会2026",
+      "suggested_date": "2026-08-08",
+      "venue_hints": [
+        "yutoadachi 笠間納涼盆踊り花火大会",
+        "笠間大池公園（笠間ポレポレシティ前）"
+      ],
+      "evidence_text_sample": "@yutoadachi 笠間納涼盆踊り花火大会、一昨年行って盛り上がりに感動しました🥹✨去年は行けなかったので今年こそは行きたいです🎇 #安達勇人",
+      "research_status": "registered_after_external_confirmation",
+      "registration_recommendation": "Notion登録済み（会場は要レビュー）",
+      "research_note": "こと裏取りで会場は笠間大池公園（笠間ポレポレシティ前）と確認。23区外のため公開JSONからは除外対象。"
+    }
+  ]
+}

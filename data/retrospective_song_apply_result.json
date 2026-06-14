@@ -1,0 +1,40 @@
+{
+  "dry_run": false,
+  "source": "data/retrospective_song_triage.json",
+  "strong_candidate_count": 6,
+  "created_count": 0,
+  "updated_count": 6,
+  "created": [],
+  "updated": [
+    {
+      "song_name": "南中ソーラン",
+      "source_term": "南中ソーラン",
+      "page_id": "37c8be04-e762-8198-a1d7-e4d52e6779f6"
+    },
+    {
+      "song_name": "ボラちゃん音頭",
+      "source_term": "ボラちゃん音頭",
+      "page_id": "37c8be04-e762-813c-baa3-fcc17bff9e46"
+    },
+    {
+      "song_name": "八木節",
+      "source_term": "八木節",
+      "page_id": "37c8be04-e762-8143-a5fe-c24ca2532560"
+    },
+    {
+      "song_name": "国立音頭",
+      "source_term": "国立音頭",
+      "page_id": "37c8be04-e762-8111-8c7f-ec15ab423721"
+    },
+    {
+      "song_name": "山代音頭",
+      "source_term": "山代音頭",
+      "page_id": "37c8be04-e762-81f2-988d-fbe676403466"
+    },
+    {
+      "song_name": "百万石音頭",
+      "source_term": "百万石音頭",
+      "page_id": "37c8be04-e762-81e1-9535-f0aa7384b6fd"
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "generated_by": "plan_retrospective_existing_event_updates.py",
+  "mode": "dry_run",
+  "apply_performed": false,
+  "input_count": 4,
+  "counts": {
+    "append_evidence_to_existing": 3,
+    "manual_duplicate_review": 1
+  },
+  "rows": [
+    {
+      "candidate_key": "event:2745524e6751077446e4f9684aeb9b92cf9957d77109c077953d4a64e515891f",
+      "candidate_event_name": "ビールと浴衣de盆踊り",
+      "candidate_venue": "上野公園",
+      "candidate_date": "2026-07-03",
+      "candidate_source_url": "https://x.com/event_checker/status/2064996223862370647",
+      "action": "append_evidence_to_existing",
+      "target_event_name": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026",
+      "target_venue": "上野恩賜公園",
+      "target_date": "2026-07-03",
+      "target_status": "確認済み",
+      "match_reasons": [
+        "event_name_contains",
+        "month_overlap"
+      ],
+      "suggested_updates": {
+        "do_not_create_new_event": true,
+        "append_evidence_url": true,
+        "append_alias_note": true,
+        "candidate_alias": "ビールと浴衣de盆踊り",
+        "candidate_date": "2026-07-03"
+      },
+      "evidence": [
+        {
+          "url": "https://x.com/event_checker/status/2064996223862370647",
+          "account": "@event_checker",
+          "dancer_key": "@event_checker",
+          "observed_at": "2026-06-11T09:00:40+00:00",
+          "text": "7/3-5 上野公園で 「ビールと浴衣de盆踊り」開催 ご当地グルメ🍖 クラフトビール🍺 夏スイーツ🍧が大集合 さらに… 人気アニメ楽曲で踊る “アニソン盆踊り”も🎵 夏祭り気分を満喫できる3日間 入場無料 → https://t.co/EOR9ID3Nkf https://t.co/5YGXgZ0pvs"
+        },
+        {
+          "url": "https://x.com/event_checker/status/2061985557266198794",
+          "account": "@event_checker",
+          "dancer_key": "@event_checker",
+          "observed_at": "2026-06-03T01:37:21+00:00",
+          "text": "7/3-5 上野公園で 「ビールと浴衣de盆踊り」開催 ご当地グルメ🍖 クラフトビール🍺 夏スイーツ🍧が大集合 さらに… 人気アニメ楽曲で踊る “アニソン盆踊り”も🎵 夏祭り気分を満喫できる3日間 入場無料 → https://t.co/EOR9ID3Nkf https://t.co/KXIbDqEHei"
+        }
+      ]
+    },
+    {
+      "candidate_key": "event:76b31736e63e23fd2ae8462fa6cb6b98961e3e6b49ff6da5cf35120698075253",
+      "candidate_event_name": "ふるさと千川まつり",
+      "candidate_venue": "",
+      "candidate_date": "2026-06-05",
+      "candidate_source_url": "https://x.com/_masakari/status/2063027320777265287",
+      "action": "append_evidence_to_existing",
+      "target_event_name": "「第34回ふるさと千川 まつり」 6月5日(金)-6日(土) 17:30-(開場)。",
+      "target_venue": "ふるさと千川ひろば(千川小学校校庭跡地)",
+      "target_date": "2026-06-05",
+      "target_status": "終了",
+      "match_reasons": [
+        "event_name_contains",
+        "month_overlap"
+      ],
+      "suggested_updates": {
+        "do_not_create_new_event": true,
+        "append_evidence_url": true,
+        "append_alias_note": true,
+        "candidate_alias": "ふるさと千川まつり",
+        "candidate_date": "2026-06-05"
+      },
+      "evidence": [
+        {
+          "url": "https://x.com/_masakari/status/2063027320777265287",
+          "account": "@_masakari",
+          "dancer_key": "@_masakari",
+          "observed_at": "2026-06-05T22:36:57+00:00",
+          "text": "6/5金 ふるさと千川まつり 盆踊り 小学生の子供達が元気に踊ってエネルギッシュで楽しそうな会場だった 今日は半袖だと肌寒い気温だったけど、踊っていれば温まる 「千川おどり」を初めて踊った 自分が知っている「一休さん」の振り付けど違ってて新鮮で楽しかったです https://t.co/7KFsAU811g"
+        }
+      ]
+    },
+    {
+      "candidate_key": "event:cfa2d3b863bb4a7447979a76b3c625a70eb4da252bb15dd2082972b619dcf80b",
+      "candidate_event_name": "浅草橋盆踊り",
+      "candidate_venue": "上野恩賜公園",
+      "candidate_date": "2026-06-26",
+      "candidate_source_url": "https://x.com/tomohikos/status/2063410620381495667",
+      "action": "manual_duplicate_review",
+      "target_event_name": "TOKYO盆ダンス×STEAM FESTIVAL2026",
+      "target_venue": "上野恩賜公園",
+      "target_date": "2026-06-26",
+      "target_status": "確認済み",
+      "match_reasons": [
+        "venue_overlap",
+        "month_overlap"
+      ],
+      "suggested_updates": {
+        "do_not_create_new_event": true,
+        "append_evidence_url": true,
+        "append_alias_note": true,
+        "candidate_alias": "浅草橋盆踊り",
+        "candidate_date": "2026-06-26"
+      },
+      "evidence": [
+        {
+          "url": "https://x.com/tomohikos/status/2063410620381495667",
+          "account": "@tomohikos",
+          "dancer_key": "@tomohikos",
+          "observed_at": "2026-06-07T00:00:02+00:00",
+          "text": "\\\\告知！// 6/26金・27土 TOKYO盆ダンス × STEAM FESTIVAL 2026 上野恩賜公園 竹の台広場 キッチンカーや盛りだくさんのイベント 浅草橋盆踊り倶楽部と出演！ 下町情緒ある盆踊り 清水百恵の生歌 猫田リリ＆サンバチームとコラボも✨ 6/27土 16:30-17:30・18:30-19:30 https://t.co/9p2wgI9AJS https://t.co/4hDKTLixMP"
+        }
+      ]
+    },
+    {
+      "candidate_key": "event:963c2fb07ca9eec48f7ab062b8fb3c7e704650465b812298ef525853a24b95bd",
+      "candidate_event_name": "足立区の盆踊りで最も早い盆踊り",
+      "candidate_venue": "五反野コミュニティセンター横の公園",
+      "candidate_date": "2026-06-20",
+      "candidate_source_url": "https://x.com/Dk725aNpscBwpEa/status/2065082668396827008",
+      "action": "append_evidence_to_existing",
+      "target_event_name": "西綾瀬町会 夏祭り盆踊り大会",
+      "target_venue": "五反野コミュニティ公園",
+      "target_date": "2026-06-20",
+      "target_status": "確認済み",
+      "match_reasons": [
+        "manual_text_name_match",
+        "date_overlap"
+      ],
+      "suggested_updates": {
+        "do_not_create_new_event": true,
+        "append_evidence_url": true,
+        "append_alias_note": true,
+        "candidate_alias": "足立区の盆踊りで最も早い盆踊り",
+        "candidate_date": "2026-06-20"
+      },
+      "evidence": [
+        {
+          "url": "https://x.com/Dk725aNpscBwpEa/status/2065082668396827008",
+          "account": "@Dk725aNpscBwpEa",
+          "dancer_key": "@dk725anpscbwpea",
+          "observed_at": "2026-06-11T14:44:10+00:00",
+          "text": "足立区の盆踊りで最も早い盆踊りが開催されます 私、本田が振り付けをしました、「夢見る少女じゃいられない」もかかります ぜひ、遊びにいらして下さい 西綾瀬町会盆踊り 会場 五反野コミュニティセンター横の公園 日時 令和8年6月20日17:30〜 https://t.co/6GCoyppAdC"
+        }
+      ]
+    }
+  ]
+}

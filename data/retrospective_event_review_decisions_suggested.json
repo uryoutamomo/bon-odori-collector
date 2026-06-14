@@ -1,0 +1,707 @@
+{
+  "generated_by": "suggest_retrospective_event_decisions.py",
+  "generated_at": "2026-06-13T07:08:42.189261+00:00",
+  "source": "data/retrospective_occurrence_dry_run.json",
+  "total": 99,
+  "counts": {
+    "不採用": 17,
+    "保留": 42,
+    "登録": 2,
+    "要調査": 38
+  },
+  "rows": [
+    {
+      "key": "event:41c7cfb7ba903f159ec8e78d803877123d2dbddd87aa3f237e788518a81b0e02",
+      "term": "藤沢七夕まつり",
+      "category": "high",
+      "decision": "登録",
+      "note": "会場・日付・複数証拠が揃うため登録候補。最終重複確認は必要。"
+    },
+    {
+      "key": "event:14fd84e83b39ad93717896a9e7a4c1896fa9c34024d1e6a6a21136e5e351b1bb",
+      "term": "1夏祭り",
+      "category": "noise_check",
+      "decision": "要調査",
+      "note": "固有名アンカーがあり本物候補。会場/重複の確認が必要。"
+    },
+    {
+      "key": "event:eb150d13f3f30b8ffd825054afb37c115c9bb6597d5881b72d82c524fc0aa172",
+      "term": "5月9日浅草橋マロニエまつり盆踊り",
+      "category": "noise_check",
+      "decision": "不採用",
+      "note": "先頭に不要語が残るノイズ疑いの一次判定。"
+    },
+    {
+      "key": "event:6ec247f12d0a4ff54b041b17fc6b9fd48b00eaf96f2f39713312204637446a53",
+      "term": "との盆踊り",
+      "category": "noise_check",
+      "decision": "不採用",
+      "note": "先頭に不要語が残るノイズ疑いの一次判定。"
+    },
+    {
+      "key": "event:434223af3e37a40c46b60c0dfbc683762bc56c8b647ab5ceaf5574d6b807228c",
+      "term": "は墨田区で盆博というイベントを開催します昨年夏に行った各地の盆踊り",
+      "category": "noise_check",
+      "decision": "不採用",
+      "note": "文章断片/説明文の可能性が高い一次判定。"
+    },
+    {
+      "key": "event:f2343b7b2afed4226329a27bee6262444e5c249480c6270a7931d98027c36307",
+      "term": "やります盆踊り",
+      "category": "noise_check",
+      "decision": "不採用",
+      "note": "文章断片/説明文の可能性が高い一次判定。"
+    },
+    {
+      "key": "event:a6c80dedca006a5b6881d7f80817a52eb7ca0c743836d01b623a7e892e553bc6",
+      "term": "ケンくんたちと盆踊り",
+      "category": "medium",
+      "decision": "保留",
+      "note": "イベント名らしいが会場または証拠が弱い。"
+    },
+    {
+      "key": "event:c794a2e5c1b3d8200c48b25c9c701ec1a7ed25e6305d1cc4ac63c7edd685d188",
+      "term": "サンシャインシティ納涼盆踊り大会",
+      "category": "medium",
+      "decision": "要調査",
+      "note": "固有名アンカーがあり本物候補。会場/重複の確認が必要。"
+    },
+    {
+      "key": "event:672c6230ecf8d619593e304676d11ec306f8cfe5da9776072a60a09ce79c6eea",
+      "term": "今年初の盆踊り",
+      "category": "noise_check",
+      "decision": "不採用",
+      "note": "文章断片/説明文の可能性が高い一次判定。"
+    },
+    {
+      "key": "event:49057abf9bf5b1581e3e8eb1ee8536d37b5da6bda53475fd43eca4efa930cca6",
+      "term": "厳かな神事と伝統の盆踊り",
+      "category": "high",
+      "decision": "要調査",
+      "note": "説明文がイベント名化している可能性あり。元証拠確認が必要。"
+    },
+    {
+      "key": "event:9852b9156907ecf3a4d5e3ed464e497edeea7bd8b44a9651ad65896a0dd3c6dd",
+      "term": "真證寺夏祭り",
+      "category": "high",
+      "decision": "要調査",
+      "note": "会場・日付は揃うが証拠が単独。登録前確認が必要。"
+    },
+    {
+      "key": "event:3ce42d5be5b933a3501fb2372bfbf0a7e84939ac8e9c7e361a4394c9ec13245e",
+      "term": "神田明神アニソン盆踊り",
+      "category": "medium",
+      "decision": "要調査",
+      "note": "固有名アンカーがあり本物候補。会場/重複の確認が必要。"
+    },
+    {
+      "key": "event:f81049c831dc3e11a569cf6bb60aa2bf53eae6cbe04ed1ac3c307425e07be5c7",
+      "term": "神田明神納涼祭り",
+      "category": "medium",
+      "decision": "要調査",
+      "note": "固有名アンカーがあり本物候補。会場/重複の確認が必要。"
+    },
+    {
+      "key": "event:5272d7b8426ec32bf1e92abd13f77ee9ed6160bae568a54e1993cdde9b8ea273",
+      "term": "西馬音内盆踊り",
+      "category": "medium",
+      "decision": "要調査",
+      "note": "固有名アンカーがあり本物候補。会場/重複の確認が必要。"
+    },
+    {
+      "key": "event:fbd3b7310b62abc0d7c4c6894d54f93c34443bffd8ca08e79126d51dd4e34a54",
+      "term": "雷門盆踊り",
+      "category": "medium",
+      "decision": "保留",
+      "note": "イベント名らしいが会場または証拠が弱い。"
+    },
+    {
+      "key": "event:2745524e6751077446e4f9684aeb9b92cf9957d77109c077953d4a64e515891f",
+      "term": "ビールと浴衣de盆踊り",
+      "category": "high",
+      "decision": "登録",
+      "note": "会場・日付・複数証拠が揃うため登録候補。最終重複確認は必要。"
+    },
+    {
+      "key": "event:182efca5d70447b7d84ff943d2753e77a89352c7478bb9eb6ec2200c7bdddf84",
+      "term": "日本の伝統的な盆踊り",
+      "category": "medium",
+      "decision": "要調査",
+      "note": "説明文がイベント名化している可能性あり。元証拠確認が必要。"
+    },
+    {
+      "key": "event:119a686f58835a4ce170338bb596aa98ab7b46fb1c472fc9ccb153f7b9fd685a",
+      "term": "横浜の街が一体となって踊る盆踊り",
+      "category": "high",
+      "decision": "要調査",
+      "note": "説明文がイベント名化している可能性あり。元証拠確認が必要。"
+    },
+    {
+      "key": "event:7d2f474bca301f75121e790a72f4a468bed8b6d6988237e20de08f6b4fd31e0f",
+      "term": "活気あふれる初夏の盆踊り",
+      "category": "medium",
+      "decision": "要調査",
+      "note": "説明文がイベント名化している可能性あり。元証拠確認が必要。"
+    },
+    {
+      "key": "event:0a4d09668d03d1c814932128e824dee33c6084fbb677a8233b445a8868d10ee0",
+      "term": "潮風を感じながら踊る盆踊り",
+      "category": "high",
+      "decision": "要調査",
+      "note": "説明文がイベント名化している可能性あり。元証拠確認が必要。"
+    },
+    {
+      "key": "event:cd50e58f05c75a63f2246e9e56488bfff54204c677c06a8cfc9f2fecbbd0dc4f",
+      "term": "1板橋区盆踊り",
+      "category": "noise_check",
+      "decision": "不採用",
+      "note": "先頭に不要語が残るノイズ疑いの一次判定。"
+    },
+    {
+      "key": "event:0ec242ffe09c8aa8e6dab7657036b6ffc7182f13d5375ac199a5e1e8bfdc63ad",
+      "term": "7日藤沢駅前サンパール広場で開催される盆踊り",
+      "category": "noise_check",
+      "decision": "不採用",
+      "note": "文章断片/説明文の可能性が高い一次判定。"
+    },
+    {
+      "key": "event:42ca3a0d14eaf49ede55281f2493307af98872c26a56ca0b32149f91f076047a",
+      "term": "POPバンド・よさこい・盆踊り",
+      "category": "low",
+      "decision": "保留",
+      "note": "イベント名らしいが会場または証拠が弱い。"
+    },
+    {
+      "key": "event:741ada89a078fd18d11a0c1c7c325498b2c4653376856e0df89d1fbaeb254af0",
+      "term": "aikoと盆踊り",
+      "category": "low",
+      "decision": "保留",
+      "note": "イベント名らしいが会場または証拠が弱い。"
+    },
+    {
+      "key": "event:ac7c032bb53e3ca3a26e760969783f7a59028c7b042e9a6985b8d6ea68578cb2",
+      "term": "ええじゃないか盆踊り",
+      "category": "low",
+      "decision": "保留",
+      "note": "イベント名らしいが会場または証拠が弱い。"
+    },
+    {
+      "key": "event:bceca987d4f744bc36b0bfc1364ffb46b7f77c073e6987ef6c98869bcbb70a8d",
+      "term": "ここから築地本願寺盆踊り",
+      "category": "noise_check",
+      "decision": "要調査",
+      "note": "固有名アンカーがあり本物候補。会場/重複の確認が必要。"
+    },
+    {
+      "key": "event:b0233fe5bf31862b220c541f3d4722ebfcd78bb33638bfac5cc886cb2b73571d",
+      "term": "さくら公園盆踊り大会",
+      "category": "low",
+      "decision": "要調査",
+      "note": "固有名アンカーがあり本物候補。会場/重複の確認が必要。"
+    },
+    {
+      "key": "event:3b22d3235a976cdc14a1d26a41a8812aa4758970fdf75514fd096966748f5b17",
+      "term": "すっかり盆踊り",
+      "category": "noise_check",
+      "decision": "不採用",
+      "note": "先頭に不要語が残るノイズ疑いの一次判定。"
+    },
+    {
+      "key": "event:832665a4c524df9730fa2c183ef0ff0d47d9128200c57ef24adff1ea0193b376",
+      "term": "たぶん中野盆踊り大会",
+      "category": "noise_check",
+      "decision": "不採用",
+      "note": "先頭に不要語が残るノイズ疑いの一次判定。"
+    },
+    {
+      "key": "event:d65fd00ba05c5cca442e55ab05380768a03da01f5daceec926e7ff5907513ff4",
+      "term": "とある盆踊り",
+      "category": "noise_check",
+      "decision": "不採用",
+      "note": "先頭に不要語が残るノイズ疑いの一次判定。"
+    },
+    {
+      "key": "event:30b12e6121568a1a5510cda259da590ab7c4972c0629d1eb9ffe26f8c44a0295",
+      "term": "は日本民謡協会の盆踊り",
+      "category": "noise_check",
+      "decision": "不採用",
+      "note": "先頭に不要語が残るノイズ疑いの一次判定。"
+    },
+    {
+      "key": "event:76b31736e63e23fd2ae8462fa6cb6b98961e3e6b49ff6da5cf35120698075253",
+      "term": "ふるさと千川まつり",
+      "category": "low",
+      "decision": "保留",
+      "note": "イベント名らしいが会場または証拠が弱い。"
+    },
+    {
+      "key": "event:a611f130fce0951fbd26f41b0543a8ab914082d111b74882e778ea35de63aea2",
+      "term": "ぼす子の盆踊り",
+      "category": "low",
+      "decision": "保留",
+      "note": "イベント名らしいが会場または証拠が弱い。"
+    },
+    {
+      "key": "event:86ab89051eb4c76603dcd76dbb6e955be420169f1a0731426123d2c200fdc298",
+      "term": "みんなたのしい盆踊り",
+      "category": "low",
+      "decision": "保留",
+      "note": "イベント名らしいが会場または証拠が弱い。"
+    },
+    {
+      "key": "event:b8811f7004540b9e706e33b207bbe56d3698fb333da2f75e523689f4fe3efe59",
+      "term": "ゆりイベントで流し踊りやステージ盆踊り",
+      "category": "noise_check",
+      "decision": "不採用",
+      "note": "文章断片/説明文の可能性が高い一次判定。"
+    },
+    {
+      "key": "event:8290753b56a039bc9e76970437b10e78fa6159f10610325fae74b2f905e2ff67",
+      "term": "アキバ盆踊り",
+      "category": "low",
+      "decision": "要調査",
+      "note": "固有名アンカーがあり本物候補。会場/重複の確認が必要。"
+    },
+    {
+      "key": "event:9f720634183926c9b8541bc2fae267c9529ed278e0d52d29396ad26773a7ef22",
+      "term": "アキバ盆踊り",
+      "category": "low",
+      "decision": "要調査",
+      "note": "固有名アンカーがあり本物候補。会場/重複の確認が必要。"
+    },
+    {
+      "key": "event:77f6068e1b41e8c5d5546b5fa6616b67ea51b336ec23816feb425683ced82fef",
+      "term": "アニソン盆踊り",
+      "category": "low",
+      "decision": "要調査",
+      "note": "固有名アンカーがあり本物候補。会場/重複の確認が必要。"
+    },
+    {
+      "key": "event:3460f8c87cd6bc70db7daf324e9194476daf99bba05b890aac5ddb757eb95a99",
+      "term": "フラしてるのか盆踊り",
+      "category": "low",
+      "decision": "保留",
+      "note": "イベント名らしいが会場または証拠が弱い。"
+    },
+    {
+      "key": "event:17ea32bf15f8ca65b6a101425b8bab710a479335cafed6e8f48940e76538ea12",
+      "term": "マスカレード盆踊り",
+      "category": "low",
+      "decision": "保留",
+      "note": "イベント名らしいが会場または証拠が弱い。"
+    },
+    {
+      "key": "event:28adb01607fe064da7b50125fc0571dd60f65ad1887f6dc92f4a10da773f7701",
+      "term": "一宮踊ろまい会様の盆踊り",
+      "category": "low",
+      "decision": "保留",
+      "note": "イベント名らしいが会場または証拠が弱い。"
+    },
+    {
+      "key": "event:26b4f29882ac3d5e34f8616c6a5ef3d74aa97e8c087d7cd30690d58607daba7d",
+      "term": "中で帰ったけどチームマスクドめっちゃ楽しかったし郷土芸能部は盆踊り",
+      "category": "noise_check",
+      "decision": "不採用",
+      "note": "文章断片/説明文の可能性が高い一次判定。"
+    },
+    {
+      "key": "event:e6595607a1be775e1c55b52257cc10c09b4436a51ca67b7f3ca8b59aef84d071",
+      "term": "今年の新潟まつり",
+      "category": "low",
+      "decision": "保留",
+      "note": "イベント名らしいが会場または証拠が弱い。"
+    },
+    {
+      "key": "event:b7fd355589f42d2997d2f16262eec77b8acb2c23c9b050381cd2821921e7c7ef",
+      "term": "今日は縁あって田園調布のお祭り",
+      "category": "low",
+      "decision": "要調査",
+      "note": "会場アンカーあり。イベント名の妥当性確認が必要。"
+    },
+    {
+      "key": "event:d8bef0e3fbd469ab664f0f7c941a3a148d4147b5d2c6d18166abd55a92f5e45c",
+      "term": "今週末はこちらの元祖上郷おいでんで14時くらいから15時まで盆踊り",
+      "category": "noise_check",
+      "decision": "不採用",
+      "note": "文章断片/説明文の可能性が高い一次判定。"
+    },
+    {
+      "key": "event:3325b918d252ef9a7cf2abd50613ce35e8aa2661d190c204c8e574bd96300c39",
+      "term": "写楽盆踊り",
+      "category": "low",
+      "decision": "要調査",
+      "note": "固有名アンカーがあり本物候補。会場/重複の確認が必要。"
+    },
+    {
+      "key": "event:996b1e6baabb0a14bdfdfa64a4b55eac785b867ee70881fd07e858ce3361dd7e",
+      "term": "創作盆踊り",
+      "category": "low",
+      "decision": "保留",
+      "note": "イベント名らしいが会場または証拠が弱い。"
+    },
+    {
+      "key": "event:b20ce888f347796d738991a4a2daf7853de171a4df7ca651f8e54d7d9d70bdb2",
+      "term": "勉強や盆踊り",
+      "category": "low",
+      "decision": "保留",
+      "note": "イベント名らしいが会場または証拠が弱い。"
+    },
+    {
+      "key": "event:9d72790a233aafceca9be26b0951dc89ae750d8369250976792ce9f738180f29",
+      "term": "勝手に盆踊り",
+      "category": "low",
+      "decision": "保留",
+      "note": "イベント名らしいが会場または証拠が弱い。"
+    },
+    {
+      "key": "event:80064a810b401555f1d3f29633bfa918a6ca5b259f4c2337d24d9c6b3162f1a9",
+      "term": "午後2時から盆踊り",
+      "category": "low",
+      "decision": "要調査",
+      "note": "会場アンカーあり。イベント名の妥当性確認が必要。"
+    },
+    {
+      "key": "event:22e1c695a85febeedea0f1e4a782f1a70a9402bef0cfaffc408c871f827bf8d9",
+      "term": "南新町納涼ふるさとまつり",
+      "category": "low",
+      "decision": "要調査",
+      "note": "固有名アンカーがあり本物候補。会場/重複の確認が必要。"
+    },
+    {
+      "key": "event:5b0e8c6aad9ed0ee4907d4126285032006fd6331b62d291fc9bc134ea3e227a9",
+      "term": "夏祭りのお話から省エネ夏祭り",
+      "category": "low",
+      "decision": "保留",
+      "note": "イベント名らしいが会場または証拠が弱い。"
+    },
+    {
+      "key": "event:e7f2e6acd3fd9ea4ac72ac28ea0c3bae1d9f3d7d5e6aba2e4525d65c42fc5825",
+      "term": "夏祭りや盆踊り",
+      "category": "low",
+      "decision": "保留",
+      "note": "イベント名らしいが会場または証拠が弱い。"
+    },
+    {
+      "key": "event:bdc631e414f5b09b0af631109ca231adaa5977882fbd07d9eacaa416e6c913b5",
+      "term": "夕方5時半から盆踊り",
+      "category": "low",
+      "decision": "保留",
+      "note": "イベント名らしいが会場または証拠が弱い。"
+    },
+    {
+      "key": "event:23eddb0ec92d8d95c66c4f9bc52b6ab649476c1ef62325d6c091bffc37e8955a",
+      "term": "宮前盆踊り",
+      "category": "low",
+      "decision": "要調査",
+      "note": "会場アンカーあり。イベント名の妥当性確認が必要。"
+    },
+    {
+      "key": "event:8146ec002030ea1bde8348f48f321366a82e89c48e66db5f39bec34fc589afd4",
+      "term": "小一時間盆踊り",
+      "category": "low",
+      "decision": "保留",
+      "note": "イベント名らしいが会場または証拠が弱い。"
+    },
+    {
+      "key": "event:35664ca3314094e386ae5e9248106d1eb3cfbca644abdf8bbbf1a36e7ca0a25c",
+      "term": "日本の盆踊り",
+      "category": "low",
+      "decision": "要調査",
+      "note": "説明文がイベント名化している可能性あり。元証拠確認が必要。"
+    },
+    {
+      "key": "event:d27eb1278c059bde2f620c23f148c71a93222fea95bfcc56ac75b38bcf30c77f",
+      "term": "日本丸みなと盆踊り",
+      "category": "low",
+      "decision": "要調査",
+      "note": "固有名アンカーがあり本物候補。会場/重複の確認が必要。"
+    },
+    {
+      "key": "event:f63f4126dfe32ce54e3e3ee19fb24614a341909c4ac2670704e655cf63e54fea",
+      "term": "昔の盆踊り",
+      "category": "low",
+      "decision": "保留",
+      "note": "イベント名らしいが会場または証拠が弱い。"
+    },
+    {
+      "key": "event:9e7598c09120e3cd4bff8030a7efe9ad12d9de9749d72906b2933e691a5fa26e",
+      "term": "東根小学校盆踊り",
+      "category": "low",
+      "decision": "要調査",
+      "note": "固有名アンカーがあり本物候補。会場/重複の確認が必要。"
+    },
+    {
+      "key": "event:cfa2d3b863bb4a7447979a76b3c625a70eb4da252bb15dd2082972b619dcf80b",
+      "term": "浅草橋盆踊り",
+      "category": "low",
+      "decision": "要調査",
+      "note": "固有名アンカーがあり本物候補。会場/重複の確認が必要。"
+    },
+    {
+      "key": "event:6407847bd276917b0303c3fd039f5d60d5c95a99172360fcd11b8ab410309cdc",
+      "term": "生誕の練習を盆踊り",
+      "category": "low",
+      "decision": "保留",
+      "note": "イベント名らしいが会場または証拠が弱い。"
+    },
+    {
+      "key": "event:4d44584b0cb27167492da412857000006f3baf412692b8348dbb6602041c7338",
+      "term": "神奈川で古くから伝わる祭り",
+      "category": "low",
+      "decision": "要調査",
+      "note": "説明文がイベント名化している可能性あり。元証拠確認が必要。"
+    },
+    {
+      "key": "event:42b3a40b172e20e03279ea84d818f33900a8fcd6bda2f9837e4471b2d08dc845",
+      "term": "福島の盆踊り",
+      "category": "low",
+      "decision": "保留",
+      "note": "イベント名らしいが会場または証拠が弱い。"
+    },
+    {
+      "key": "event:cf136c6d00d21c0b82b4b4adef2d1cfe95b2dbcb02a30fbe1ca234ecbf6dee65",
+      "term": "群馬県伊勢崎駅前でアニメソング盆踊り",
+      "category": "noise_check",
+      "decision": "不採用",
+      "note": "文章断片/説明文の可能性が高い一次判定。"
+    },
+    {
+      "key": "event:c350cbbfb42999e6974ca42140b17c59b19a92e59ac7b49e607a5fb10c5a87e9",
+      "term": "舟渡ホール盆踊り",
+      "category": "low",
+      "decision": "保留",
+      "note": "イベント名らしいが会場または証拠が弱い。"
+    },
+    {
+      "key": "event:eb9a1c5a25d2839770c6d2dde40599baa059c68c3ce6ad36982077d6736ee3af",
+      "term": "西馬音内盆踊り",
+      "category": "low",
+      "decision": "保留",
+      "note": "イベント名らしいが会場または証拠が弱い。"
+    },
+    {
+      "key": "event:ae3f7afe4a92736d4b4baa7df9309c705cd11fda89598278c25f40e8d9f64756",
+      "term": "赤塚・中田出世稲荷神社盆踊り",
+      "category": "low",
+      "decision": "要調査",
+      "note": "固有名アンカーがあり本物候補。会場/重複の確認が必要。"
+    },
+    {
+      "key": "event:82086b8eec335e8aff788e2b644ae0d05f5dcd06fe88d7139a8955d4dda358fc",
+      "term": "足寄ふるさと盆踊り",
+      "category": "low",
+      "decision": "保留",
+      "note": "イベント名らしいが会場または証拠が弱い。"
+    },
+    {
+      "key": "event:963c2fb07ca9eec48f7ab062b8fb3c7e704650465b812298ef525853a24b95bd",
+      "term": "足立区の盆踊りで最も早い盆踊り",
+      "category": "low",
+      "decision": "要調査",
+      "note": "固有名アンカーがあり本物候補。会場/重複の確認が必要。"
+    },
+    {
+      "key": "event:9e4791db216781576e410bef361488b8067afd575820303cadea105a0b2bafb7",
+      "term": "高島越後盆踊り",
+      "category": "low",
+      "decision": "保留",
+      "note": "イベント名らしいが会場または証拠が弱い。"
+    },
+    {
+      "key": "event:b95e85c0fd81696c783531910950e77f15994172f24868d86422911cfcb38e8c",
+      "term": "2ヶ月先だけど今年の地域の盆踊り",
+      "category": "noise_check",
+      "decision": "要調査",
+      "note": "会場アンカーあり。イベント名の妥当性確認が必要。"
+    },
+    {
+      "key": "event:f153f601e5ecb1cc09c813a764fd9546db4dc95c39795d00a81a508579adfb59",
+      "term": "しっかり盆踊り",
+      "category": "low",
+      "decision": "保留",
+      "note": "イベント名らしいが会場または証拠が弱い。"
+    },
+    {
+      "key": "event:738c325e73cd09036e868c1a7a82de36fef0d09294d1d75be51874be63e9b43b",
+      "term": "そういやこないだの近所の祭りで今年初盆踊り",
+      "category": "noise_check",
+      "decision": "不採用",
+      "note": "文章断片/説明文の可能性が高い一次判定。"
+    },
+    {
+      "key": "event:deb11227ca4c321c3b193bea497d8c8910bc51d37789cf1f6329bf4f1878c6e5",
+      "term": "なお今年も火の国まつり",
+      "category": "low",
+      "decision": "保留",
+      "note": "イベント名らしいが会場または証拠が弱い。"
+    },
+    {
+      "key": "event:b4f24379489cce804858acab6bd87d5221e2e14fc92ce413fd0653de194e94aa",
+      "term": "んーーー盆踊り",
+      "category": "low",
+      "decision": "保留",
+      "note": "イベント名らしいが会場または証拠が弱い。"
+    },
+    {
+      "key": "event:1d885263994093b859a44ac7d3bb98557f144384c3c5ab66cfe69cf69bd8361c",
+      "term": "エクストリーム盆祭り",
+      "category": "low",
+      "decision": "要調査",
+      "note": "会場アンカーあり。イベント名の妥当性確認が必要。"
+    },
+    {
+      "key": "event:ef8c7c8173d8e5a2912d67e455b237276289a1f82b8d25d0f76cb07e23440e3b",
+      "term": "一人でお祭り",
+      "category": "low",
+      "decision": "保留",
+      "note": "イベント名らしいが会場または証拠が弱い。"
+    },
+    {
+      "key": "event:8cacf48b90c000fd4b9d26164d58b834b6c690a24bf7a3dd1a446ed830fabd05",
+      "term": "可愛いの作ってお祭り",
+      "category": "low",
+      "decision": "保留",
+      "note": "イベント名らしいが会場または証拠が弱い。"
+    },
+    {
+      "key": "event:9c047f403b5226c69040550596efaa82456ff4315eafd9f1317cabfd6b90ff07",
+      "term": "地元の日永つんつく夏祭り",
+      "category": "low",
+      "decision": "保留",
+      "note": "イベント名らしいが会場または証拠が弱い。"
+    },
+    {
+      "key": "event:ed456dff5b6a6a0d3b4aa240670a35bd5c63677eb0015a395c51953f85f8eaa5",
+      "term": "大晦日のうちに2025年盆踊り",
+      "category": "low",
+      "decision": "要調査",
+      "note": "会場アンカーあり。イベント名の妥当性確認が必要。"
+    },
+    {
+      "key": "event:0b73553a9919fa96aa355b2d44f30f722ec833260d92c3382d361e5d297c4438",
+      "term": "大須夏祭りの盆踊り",
+      "category": "low",
+      "decision": "保留",
+      "note": "イベント名らしいが会場または証拠が弱い。"
+    },
+    {
+      "key": "event:1248e9a0ae44c4d529a6c503a94e8d7354dcce47664b998332520cd6098abf6d",
+      "term": "新宝島の盆踊り",
+      "category": "low",
+      "decision": "保留",
+      "note": "イベント名らしいが会場または証拠が弱い。"
+    },
+    {
+      "key": "event:1fb2e8a69a2bbf60ca50b87316c083d9243b2d030d60aded1b9f859c7b3e7ec7",
+      "term": "昨年6年ぶり復活した盆踊り",
+      "category": "noise_check",
+      "decision": "不採用",
+      "note": "文章断片/説明文の可能性が高い一次判定。"
+    },
+    {
+      "key": "event:8de18ada42f04a5845ca8ecbf7753c875cf47ddbf4274e6068b734c722e4f3b7",
+      "term": "笠間納涼盆踊り",
+      "category": "low",
+      "decision": "保留",
+      "note": "イベント名らしいが会場または証拠が弱い。"
+    },
+    {
+      "key": "event:6f49e877e1d42a36567f7e19e56cae9a9413e76ea126b4add04dd9a2583a0b3e",
+      "term": "第二回小島民踊研究会大盆踊り",
+      "category": "low",
+      "decision": "保留",
+      "note": "イベント名らしいが会場または証拠が弱い。"
+    },
+    {
+      "key": "event:8768309db7a5e2cd10501071ab528337c90315700225855bb3b978eca030015b",
+      "term": "蔦屋重三郎に思いを馳せて盆踊り",
+      "category": "low",
+      "decision": "要調査",
+      "note": "会場アンカーあり。イベント名の妥当性確認が必要。"
+    },
+    {
+      "key": "event:c82d4cc6f27ffb8b4949eb54ff0daa21fd8295f91d6950cdd5653f27904c8766",
+      "term": "金沢百万石まつり",
+      "category": "low",
+      "decision": "保留",
+      "note": "イベント名らしいが会場または証拠が弱い。"
+    },
+    {
+      "key": "event:f7f6c88853e540229bbf9aaa43de90859a59ee3a2b215aa0d273d93f2938b0e3",
+      "term": "鳳蝶会DJCelly盆踊り",
+      "category": "low",
+      "decision": "保留",
+      "note": "イベント名らしいが会場または証拠が弱い。"
+    },
+    {
+      "key": "event:971d93db4fae31d31922e29c1eb25752167c3f0d8c1a9e0fc416cae2d3bbf61c",
+      "term": "やっぱり盆踊り",
+      "category": "low",
+      "decision": "保留",
+      "note": "イベント名らしいが会場または証拠が弱い。"
+    },
+    {
+      "key": "event:48bf5b882d5c9c6b23b374e958dc56e79c62d5b4de7fbcd8ba9ee7f3d871e3e0",
+      "term": "一宮盆踊り",
+      "category": "low",
+      "decision": "保留",
+      "note": "イベント名らしいが会場または証拠が弱い。"
+    },
+    {
+      "key": "event:00840db673ce42f9716681400217ae5000bd58c96e58826311502ad8f1a4df23",
+      "term": "山科の笠原寺の盆踊り（名称未確定）",
+      "category": "low",
+      "decision": "要調査",
+      "note": "固有名アンカーがあり本物候補。会場/重複の確認が必要。"
+    },
+    {
+      "key": "event:6bc15bbda88168c2da9da2878346c82149cf7fcbfabff92eae2e0ab413344bba",
+      "term": "河原町広場の盆踊り（名称未確定）",
+      "category": "low",
+      "decision": "要調査",
+      "note": "固有名アンカーがあり本物候補。会場/重複の確認が必要。"
+    },
+    {
+      "key": "event:3a6d4855dbed334ce51ca1681aba54b0bb788fca8044a4ba42e1bbe416883bb5",
+      "term": "飛鳥山公園の盆踊り（名称未確定）",
+      "category": "low",
+      "decision": "要調査",
+      "note": "会場アンカーあり。イベント名の妥当性確認が必要。"
+    },
+    {
+      "key": "event:fa6c7df0fcb8d6e2707287e42412745677e4f2822805679dd1ea89978d0e6808",
+      "term": "鮫洲入江公園の盆踊り（名称未確定）",
+      "category": "low",
+      "decision": "要調査",
+      "note": "会場アンカーあり。イベント名の妥当性確認が必要。"
+    },
+    {
+      "key": "event:b713030aa2607d9088cfc05b7b1d2120f3bd06d42578a8fb3319f5d30ffdbeec",
+      "term": "去年は大江戸まつり",
+      "category": "low",
+      "decision": "保留",
+      "note": "イベント名らしいが会場または証拠が弱い。"
+    },
+    {
+      "key": "event:67590b39c2fbdddbc2185b9d248937e7d691ec7afd58cfd40f693bb1cc5249fc",
+      "term": "鬼会と平和祭り",
+      "category": "low",
+      "decision": "保留",
+      "note": "イベント名らしいが会場または証拠が弱い。"
+    },
+    {
+      "key": "event:98dcdc6f02b42c0dd0b3f47cfd28c53c059e2ed7b863b265629f921816c23e4d",
+      "term": "西本願寺の盆踊り（名称未確定）",
+      "category": "low",
+      "decision": "要調査",
+      "note": "会場アンカーあり。イベント名の妥当性確認が必要。"
+    },
+    {
+      "key": "event:72839dd4f5600d9b5a3ab9fa9746ad390feffdd9a3720d6318ade76027ae3458",
+      "term": "鳥越まつり",
+      "category": "low",
+      "decision": "要調査",
+      "note": "固有名アンカーがあり本物候補。会場/重複の確認が必要。"
+    }
+  ]
+}
