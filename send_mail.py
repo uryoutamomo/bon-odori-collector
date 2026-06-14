@@ -27,13 +27,24 @@ SMTP_HOST = "smtp.gmail.com"
 SMTP_PORT = 587
 MAIL_USERNAME = os.environ.get("MAIL_USERNAME")
 MAIL_APP_PASSWORD = os.environ.get("MAIL_APP_PASSWORD")
-MAIL_TO = os.environ.get("MAIL_TO") or "uryouta77@yahoo.co.jp"
+DEFAULT_MAIL_TO = ["uryouta77@yahoo.co.jp"]
+ALWAYS_MAIL_TO = ["yichech1@gmail.com"]
+MAIL_TO = os.environ.get("MAIL_TO")
 
 PENDING_PATH = Path(__file__).parent / "data" / "pending_mail.json"
 
 
+def get_recipients():
+    configured = [a.strip() for a in (MAIL_TO or "").split(",") if a.strip()]
+    recipients = configured or DEFAULT_MAIL_TO
+    for address in ALWAYS_MAIL_TO:
+        if address not in recipients:
+            recipients.append(address)
+    return recipients
+
+
 def send_mail(subject, plain_body, html_body=None):
-    recipients = [a.strip() for a in MAIL_TO.split(",") if a.strip()]
+    recipients = get_recipients()
 
     if html_body:
         msg = MIMEMultipart("alternative")
@@ -85,7 +96,7 @@ def main():
         print("[mail] pending_mail.json はありますが、本文が空のため送信できません。")
         return 1
 
-    print(f"[mail] 送信開始: {subject} / 宛先: {MAIL_TO}")
+    print(f"[mail] 送信開始: {subject} / 宛先: {', '.join(get_recipients())}")
     send_mail(subject, plain_body, html_body)
     print("[mail] 送信完了。")
     return 0
