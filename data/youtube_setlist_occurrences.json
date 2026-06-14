@@ -1,0 +1,2779 @@
+{
+  "generated_by": "extract_youtube_setlists.py",
+  "generated_at": "2026-06-14T09:20:20.744530+00:00",
+  "source": "data/voices.json",
+  "review_hint_source": "data/youtube_song_candidates_review.json",
+  "public_event_match_source": "data/public/events_public.json",
+  "youtube_voice_count": 199,
+  "occurrence_count": 9,
+  "matched_public_event_count": 2,
+  "setlist_song_count": 195,
+  "occurrences": [
+    {
+      "occurrence_key": "df5ed425972aa1f4",
+      "event_key_hint": "お囃子同好会雅レクチャー",
+      "event_name_hint": "お囃子同好会「雅」レクチャー",
+      "venue": "お囃子同好会「雅」レクチャー",
+      "event_date": null,
+      "accounts": [
+        "@wadaikoCH"
+      ],
+      "setlist": [
+        {
+          "number": 1,
+          "title": "かわさき",
+          "url": "https://www.youtube.com/watch?v=pEoq_Pin3fE"
+        },
+        {
+          "number": 1,
+          "title": "さわぎ~",
+          "url": "https://www.youtube.com/watch?v=NQBW91m09Os"
+        },
+        {
+          "number": 1,
+          "title": "古調かわさき",
+          "url": "https://www.youtube.com/watch?v=3OVtUpgA28w"
+        },
+        {
+          "number": 2,
+          "title": "三百",
+          "url": "https://www.youtube.com/watch?v=Rw3Al1oI1uw"
+        },
+        {
+          "number": 3,
+          "title": "終 春駒",
+          "url": "https://www.youtube.com/watch?v=FLnsldHq3vQ"
+        },
+        {
+          "number": 5,
+          "title": "げんげんばらばら",
+          "url": "https://www.youtube.com/watch?v=yr9alUZZymY"
+        },
+        {
+          "number": 5,
+          "title": "やっちく",
+          "url": "https://www.youtube.com/watch?v=iJBR1llLn7s"
+        },
+        {
+          "number": 7,
+          "title": "猫の子",
+          "url": "https://www.youtube.com/watch?v=hAs9tEZND2k"
+        },
+        {
+          "number": 9,
+          "title": "郡上甚句",
+          "url": "https://www.youtube.com/watch?v=XwzgaWMdoCU"
+        },
+        {
+          "number": 10,
+          "title": "かわさき春駒",
+          "url": "https://www.youtube.com/watch?v=3qYQySBPJk0"
+        },
+        {
+          "number": 10,
+          "title": "終 まつさか",
+          "url": "https://www.youtube.com/watch?v=YaHwiTwJnRY"
+        }
+      ],
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=spuielel3G4",
+          "account": "@wadaikoCH",
+          "title": "げんげんばらばら　【第3回かすがい郡上踊り】　お囃子愛好会「雅」６　（駅前公園ステージ）　#郡上おどり　#春日井郡上おどり",
+          "published_at": "2026-05-28T02:00:10+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/spuielel3G4/maxresdefault.jpg",
+          "text_length": 1421,
+          "media_url_count": 35
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=NQBW91m09Os",
+          "account": "@wadaikoCH",
+          "title": "さわぎ～やっちく　【第3回かすがい郡上踊り】　郡上おどり保存会　（屋形ステージ）　#郡上おどり　#春日井郡上おどり",
+          "published_at": "2026-05-28T02:30:20+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/NQBW91m09Os/maxresdefault.jpg",
+          "text_length": 1421,
+          "media_url_count": 35
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=6kOZsFyC4Lk",
+          "account": "@wadaikoCH",
+          "title": "猫の子　【第3回かすがい郡上踊り】　お囃子愛好会「雅」７　（駅前公園ステージ）　#郡上おどり　#春日井郡上おどり",
+          "published_at": "2026-05-28T03:00:04+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/6kOZsFyC4Lk/maxresdefault.jpg",
+          "text_length": 1421,
+          "media_url_count": 35
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=UM2N0Yngzv4",
+          "account": "@wadaikoCH",
+          "title": "かわさき　【第3回かすがい郡上踊り】　お囃子愛好会「雅」８　（駅前公園ステージ）　#郡上おどり　#春日井郡上おどり",
+          "published_at": "2026-05-28T21:00:30+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/UM2N0Yngzv4/maxresdefault.jpg",
+          "text_length": 1421,
+          "media_url_count": 35
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=_6YRuYXeloo",
+          "account": "@wadaikoCH",
+          "title": "三百　【第3回かすがい郡上踊り】　お囃子愛好会「雅」９　（駅前公園ステージ）　#郡上おどり　#春日井郡上おどり",
+          "published_at": "2026-05-28T22:00:36+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/_6YRuYXeloo/maxresdefault.jpg",
+          "text_length": 1421,
+          "media_url_count": 35
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=TRkz12LTTr0",
+          "account": "@wadaikoCH",
+          "title": "春駒　【第3回かすがい郡上踊り】　お囃子愛好会「雅」10　（駅前公園ステージ）　#郡上おどり　#春日井郡上おどり",
+          "published_at": "2026-05-28T23:00:12+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/TRkz12LTTr0/maxresdefault.jpg",
+          "text_length": 1563,
+          "media_url_count": 39
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=70011EZR5Gk",
+          "account": "@wadaikoCH",
+          "title": "さわぎ　【第3回かすがい郡上踊り】　お囃子愛好会「雅」11　（駅前公園ステージ）　#郡上おどり　#春日井郡上おどり",
+          "published_at": "2026-05-29T00:00:18+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/70011EZR5Gk/maxresdefault.jpg",
+          "text_length": 1563,
+          "media_url_count": 39
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=6dTFC7Q-ItI",
+          "account": "@wadaikoCH",
+          "title": "猫の子　【第3回かすがい郡上踊り】　お囃子愛好会「雅」12　（駅前公園ステージ）　#郡上おどり　#春日井郡上おどり",
+          "published_at": "2026-05-29T02:00:26+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/6dTFC7Q-ItI/maxresdefault.jpg",
+          "text_length": 1563,
+          "media_url_count": 39
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=-K0KWZ4ysUI",
+          "account": "@wadaikoCH",
+          "title": "郡上甚句　【第3回かすがい郡上踊り】　お囃子愛好会「雅」13　（駅前公園ステージ）　#郡上おどり　#春日井郡上おどり",
+          "published_at": "2026-05-29T02:30:10+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/-K0KWZ4ysUI/maxresdefault.jpg",
+          "text_length": 1563,
+          "media_url_count": 39
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=CZOcraIbOKw",
+          "account": "@wadaikoCH",
+          "title": "音響トラブルを吹き飛ばす「春駒」大合唱！【第3回かすがい郡上踊り】お囃子愛好会「雅」14終　#郡上おどり　#春日井郡上おどり",
+          "published_at": "2026-05-29T03:00:08+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/CZOcraIbOKw/maxresdefault.jpg",
+          "text_length": 1563,
+          "media_url_count": 39
+        }
+      ],
+      "source_video_count": 10,
+      "song_count": 11,
+      "confidence": "low",
+      "role": "result",
+      "act": "observe",
+      "reliability_key": "complete_numbered_video",
+      "matched_public_event": null
+    },
+    {
+      "occurrence_key": "c443a1817bc8a71e",
+      "event_key_hint": "min-yois-2026-05-31",
+      "event_name_hint": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "event_date": "2025-10-19",
+      "accounts": [
+        "@wadaikoCH"
+      ],
+      "setlist": [
+        {
+          "number": 1,
+          "title": "すみだ音頭",
+          "url": "https://www.youtube.com/watch?v=-7u1Kb4X-Jc"
+        },
+        {
+          "number": 1,
+          "title": "子供盆踊り唄",
+          "url": "https://www.youtube.com/watch?v=ZqjY80dzBcU"
+        },
+        {
+          "number": 1,
+          "title": "池袋西口音頭",
+          "url": "https://www.youtube.com/watch?v=ta2U2nUvAK8"
+        },
+        {
+          "number": 1,
+          "title": "相馬盆唄",
+          "url": "https://www.youtube.com/watch?v=sdS6Y5moiPQ"
+        },
+        {
+          "number": 1,
+          "title": "郡上節かわさき",
+          "url": "https://www.youtube.com/watch?v=m96QwsBm-oQ"
+        },
+        {
+          "number": 2,
+          "title": "とらじょさま",
+          "url": "https://www.youtube.com/watch?v=XNkOTLjq2Z4"
+        },
+        {
+          "number": 2,
+          "title": "二十一世紀音頭",
+          "url": "https://www.youtube.com/watch?v=9LTwaw6cr9E"
+        },
+        {
+          "number": 2,
+          "title": "春駒",
+          "url": "https://www.youtube.com/watch?v=P5566ZLPuko"
+        },
+        {
+          "number": 2,
+          "title": "終 メガヒッツ盆踊り",
+          "url": "https://www.youtube.com/watch?v=-46emh0_BSA"
+        },
+        {
+          "number": 3,
+          "title": "ええじゃないか音頭",
+          "url": "https://www.youtube.com/watch?v=eC_nwyxZwLM"
+        },
+        {
+          "number": 3,
+          "title": "大森甚句",
+          "url": "https://www.youtube.com/watch?v=YAvtypDu9YA"
+        },
+        {
+          "number": 3,
+          "title": "東京音頭",
+          "url": "https://www.youtube.com/watch?v=SJpEf6GOpGs"
+        },
+        {
+          "number": 3,
+          "title": "終 炭坑節",
+          "url": "https://www.youtube.com/watch?v=IDvJLis4DGc"
+        },
+        {
+          "number": 4,
+          "title": "Isn't She Lovely",
+          "url": "https://www.youtube.com/watch?v=3renuAXwTpE"
+        },
+        {
+          "number": 4,
+          "title": "オバQ音頭",
+          "url": "https://www.youtube.com/watch?v=JiBjrlyKVK8"
+        },
+        {
+          "number": 4,
+          "title": "ドンパン節",
+          "url": "https://www.youtube.com/watch?v=eWtjOMpH-RE"
+        },
+        {
+          "number": 5,
+          "title": "にんにん忍たま音頭",
+          "url": "https://www.youtube.com/watch?v=VH1DaLKNJ9A"
+        },
+        {
+          "number": 5,
+          "title": "秋田音頭",
+          "url": "https://www.youtube.com/watch?v=Zd2orM3jSkg"
+        },
+        {
+          "number": 5,
+          "title": "終 池袋盆BAND",
+          "url": "https://www.youtube.com/watch?v=mmPpyGYwFa0"
+        },
+        {
+          "number": 6,
+          "title": "えびすくい音頭",
+          "url": "https://www.youtube.com/watch?v=3el7fMzGgso"
+        },
+        {
+          "number": 7,
+          "title": "マツケンサンバII",
+          "url": "https://www.youtube.com/watch?v=O2Bt_y1aG40"
+        },
+        {
+          "number": 7,
+          "title": "江州音頭",
+          "url": "https://www.youtube.com/watch?v=a884NDQZEKs"
+        },
+        {
+          "number": 8,
+          "title": "じゃこっぺ踊り",
+          "url": "https://www.youtube.com/watch?v=dJQ4a5RSsCc"
+        },
+        {
+          "number": 8,
+          "title": "八木節",
+          "url": "https://www.youtube.com/watch?v=zYxO_UK-dgU"
+        },
+        {
+          "number": 9,
+          "title": "花まつり",
+          "url": "https://www.youtube.com/watch?v=8Dm52V9vTU0"
+        },
+        {
+          "number": 9,
+          "title": "黒石よされ節",
+          "url": "https://www.youtube.com/watch?v=GTiBQgMU5cY"
+        },
+        {
+          "number": 10,
+          "title": "終 夏祭り",
+          "url": "https://www.youtube.com/watch?v=XVM-HC8ZqNI"
+        },
+        {
+          "number": 10,
+          "title": "終 津軽甚句",
+          "url": "https://www.youtube.com/watch?v=e7gDmAe6cU0"
+        }
+      ],
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=e7gDmAe6cU0",
+          "account": "@wadaikoCH",
+          "title": "津軽甚句　すみだストリートジャズフェスティバル（すみジャズ）　Min Yoi’ｓ民謡盆踊り10終　2025年10月19日　東京都墨田区　大横川親水公園",
+          "published_at": "2026-05-28T01:00:07+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/e7gDmAe6cU0/maxresdefault.jpg",
+          "text_length": 709,
+          "media_url_count": 14
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=XVM-HC8ZqNI",
+          "account": "@wadaikoCH",
+          "title": "夏祭り　すみだストリートジャズフェスティバル（すみジャズ）　亀四太鼓（盆踊り）10終　2025年10月19日　東京都墨田区　大横川親水公園",
+          "published_at": "2026-05-28T01:30:14+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/XVM-HC8ZqNI/maxresdefault.jpg",
+          "text_length": 1303,
+          "media_url_count": 30
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ZqjY80dzBcU",
+          "account": "@wadaikoCH",
+          "title": "【子ども盆踊り唄】（持田ヨシ子）　すみだストリートジャズフェスティバル（すみジャズ）　DJ岸野雄一（盆踊り）１　2025年10月19日　東京都墨田区　大横川親水公園",
+          "published_at": "2026-05-29T01:00:35+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/ZqjY80dzBcU/maxresdefault.jpg",
+          "text_length": 1303,
+          "media_url_count": 30
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=-46emh0_BSA",
+          "account": "@wadaikoCH",
+          "title": "【メガヒッツ盆踊り】　すみだストリートジャズフェスティバル（すみジャズ）　DJ岸野雄一（盆踊り）２終　2025年10月19日　東京都墨田区　大横川親水公園",
+          "published_at": "2026-05-29T01:30:38+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/-46emh0_BSA/maxresdefault.jpg",
+          "text_length": 1303,
+          "media_url_count": 30
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ta2U2nUvAK8",
+          "account": "@wadaikoCH",
+          "title": "池袋西口音頭　すみだストリートジャズフェスティバル（すみジャズ）　池袋盆BAND（盆踊り）１　2025年10月19日　東京都墨田区　大横川親水公園",
+          "published_at": "2026-05-30T10:00:05+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/ta2U2nUvAK8/maxresdefault.jpg",
+          "text_length": 1303,
+          "media_url_count": 30
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=IiWTkaAhMx8",
+          "account": "@wadaikoCH",
+          "title": "相馬盆唄　すみだストリートジャズフェスティバル（すみジャズ）　池袋盆BAND（盆踊り）２　2025年10月19日　東京都墨田区　大横川親水公園",
+          "published_at": "2026-05-30T10:30:37+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/IiWTkaAhMx8/maxresdefault.jpg",
+          "text_length": 1303,
+          "media_url_count": 30
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=eC_nwyxZwLM",
+          "account": "@wadaikoCH",
+          "title": "ええじゃないか音頭　すみだストリートジャズフェスティバル（すみジャズ）　池袋盆BAND（盆踊り）３　2025年10月19日　東京都墨田区　大横川親水公園",
+          "published_at": "2026-05-31T10:00:11+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/eC_nwyxZwLM/maxresdefault.jpg",
+          "text_length": 1303,
+          "media_url_count": 30
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=3renuAXwTpE",
+          "account": "@wadaikoCH",
+          "title": "Isn't She Lovely　すみだストリートジャズフェスティバル（すみジャズ）　池袋盆BAND（盆踊り）４　2025年10月19日　東京都墨田区　大横川親水公園",
+          "published_at": "2026-05-31T10:30:27+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/3renuAXwTpE/maxresdefault.jpg",
+          "text_length": 1303,
+          "media_url_count": 30
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=mmPpyGYwFa0",
+          "account": "@wadaikoCH",
+          "title": "池袋盆BAND（盆踊り）５終　すみだストリートジャズフェスティバル（すみジャズ）　2025年10月19日　東京都墨田区　大横川親水公園",
+          "published_at": "2026-06-01T10:00:31+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/mmPpyGYwFa0/maxresdefault.jpg",
+          "text_length": 1303,
+          "media_url_count": 30
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=sdS6Y5moiPQ",
+          "account": "@wadaikoCH",
+          "title": "相馬盆唄　すみだストリートジャズフェスティバル（すみジャズ）　こでらんに～（盆踊り）１　2025年10月19日　東京都墨田区　大横川親水公園",
+          "published_at": "2026-06-01T10:30:28+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/sdS6Y5moiPQ/maxresdefault.jpg",
+          "text_length": 1303,
+          "media_url_count": 30
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=XNkOTLjq2Z4",
+          "account": "@wadaikoCH",
+          "title": "とらじょさま　すみだストリートジャズフェスティバル（すみジャズ）　こでらんに～（盆踊り）２　2025年10月19日　東京都墨田区　大横川親水公園",
+          "published_at": "2026-06-02T10:00:20+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/XNkOTLjq2Z4/maxresdefault.jpg",
+          "text_length": 1303,
+          "media_url_count": 30
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=IDvJLis4DGc",
+          "account": "@wadaikoCH",
+          "title": "炭坑節　すみだストリートジャズフェスティバル（すみジャズ）　こでらんに～（盆踊り）３終　2025年10月19日　東京都墨田区　大横川親水公園",
+          "published_at": "2026-06-02T10:30:11+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/IDvJLis4DGc/maxresdefault.jpg",
+          "text_length": 1303,
+          "media_url_count": 30
+        }
+      ],
+      "source_video_count": 12,
+      "song_count": 28,
+      "confidence": "high",
+      "role": "result",
+      "act": "observe",
+      "reliability_key": "complete_numbered_video",
+      "matched_public_event": null
+    },
+    {
+      "occurrence_key": "06a515b0207f1b2d",
+      "event_key_hint": "マロニエまつり盆踊り大会2ヒューリック浅草橋ビル前全曲ver",
+      "event_name_hint": "マロニエまつり盆踊り大会 2 ヒューリック浅草橋ビル前(全曲ver)",
+      "venue": "ヒューリック浅草橋前",
+      "event_date": "2026-05-09",
+      "accounts": [
+        "@matsuribonodori"
+      ],
+      "setlist": [
+        {
+          "number": 1,
+          "title": "東京音頭",
+          "url": "https://www.youtube.com/watch?v=SbEosGTQNeI"
+        },
+        {
+          "number": 2,
+          "title": "大東京音頭",
+          "url": "https://www.youtube.com/watch?v=Zj0-tBN5yIU"
+        },
+        {
+          "number": 3,
+          "title": "おけさ唄えば",
+          "url": "https://www.youtube.com/watch?v=Tv841KIFT2w"
+        },
+        {
+          "number": 3,
+          "title": "炭坑節",
+          "url": "https://www.youtube.com/watch?v=ZOOmEVXQCfE"
+        },
+        {
+          "number": 4,
+          "title": "八木節",
+          "url": "https://www.youtube.com/watch?v=spqvz6dPZzM"
+        },
+        {
+          "number": 4,
+          "title": "日本よいとこ",
+          "url": "https://www.youtube.com/watch?v=2jqAe2cuGcY"
+        },
+        {
+          "number": 5,
+          "title": "東京五輪音頭",
+          "url": "https://www.youtube.com/watch?v=Vw5JjfD_uCk"
+        },
+        {
+          "number": 5,
+          "title": "柳北音頭",
+          "url": "https://www.youtube.com/watch?v=NiLxtWAe4wA"
+        },
+        {
+          "number": 6,
+          "title": "まんまる音頭",
+          "url": "https://www.youtube.com/watch?v=TiplDr6GtRg"
+        },
+        {
+          "number": 6,
+          "title": "やなぎブギ",
+          "url": "https://www.youtube.com/watch?v=cvYnWzMoRlg"
+        },
+        {
+          "number": 7,
+          "title": "三味線ブギウギ",
+          "url": "https://www.youtube.com/watch?v=yQ8JkLmvPG4"
+        },
+        {
+          "number": 7,
+          "title": "浅草ばし音頭",
+          "url": "https://www.youtube.com/watch?v=3VWIIqZ2cMA"
+        },
+        {
+          "number": 8,
+          "title": "天竜下れば",
+          "url": "https://www.youtube.com/watch?v=2yxXvYk1y3o"
+        },
+        {
+          "number": 8,
+          "title": "新浅草橋音頭",
+          "url": "https://www.youtube.com/watch?v=XDbGnukr7bM"
+        },
+        {
+          "number": 9,
+          "title": "たいとう音頭 ダンシング・バージョン",
+          "url": "https://www.youtube.com/watch?v=yKWvbeLf36c"
+        },
+        {
+          "number": 9,
+          "title": "相馬壁塗り甚句",
+          "url": "https://www.youtube.com/watch?v=LMyYDB4-4fw"
+        },
+        {
+          "number": 10,
+          "title": "さくら音頭",
+          "url": "https://www.youtube.com/watch?v=f9v9yYy2xWU"
+        },
+        {
+          "number": 10,
+          "title": "常磐炭坑節",
+          "url": "https://www.youtube.com/watch?v=ykkxgB_79PU"
+        },
+        {
+          "number": 11,
+          "title": "ワイド節",
+          "url": "https://www.youtube.com/watch?v=BfxIbU1zPn8"
+        },
+        {
+          "number": 11,
+          "title": "祭りだ!和っしょい",
+          "url": "https://www.youtube.com/watch?v=bMLITemDrww"
+        },
+        {
+          "number": 12,
+          "title": "御宿・曳き舟",
+          "url": "https://www.youtube.com/watch?v=OREdBqPOxKY"
+        },
+        {
+          "number": 12,
+          "title": "春駒ばやし",
+          "url": "https://www.youtube.com/watch?v=Ktumfp9gkBg"
+        },
+        {
+          "number": 13,
+          "title": "伊勢えび囃子",
+          "url": "https://www.youtube.com/watch?v=5QWJCIH6qVo"
+        },
+        {
+          "number": 13,
+          "title": "南州おどり",
+          "url": "https://www.youtube.com/watch?v=tf79FS8AQXE"
+        },
+        {
+          "number": 14,
+          "title": "江戸っ子囃子",
+          "url": "https://www.youtube.com/watch?v=uPzI94oKTK4"
+        },
+        {
+          "number": 14,
+          "title": "耐久!炭坑節で踊ろうメドレー",
+          "url": "https://www.youtube.com/watch?v=iq9DCHGoJu0"
+        },
+        {
+          "number": 15,
+          "title": "たいとう音頭",
+          "url": "https://www.youtube.com/watch?v=X4JBzalsTQE"
+        },
+        {
+          "number": 15,
+          "title": "涙そうそう",
+          "url": "https://www.youtube.com/watch?v=ppBXAYiQa9A"
+        },
+        {
+          "number": 16,
+          "title": "河内酒",
+          "url": "https://www.youtube.com/watch?v=i2d4_AVPxsA"
+        },
+        {
+          "number": 17,
+          "title": "祭り華〜神田明神",
+          "url": "https://www.youtube.com/watch?v=cjXn62ErNvE"
+        },
+        {
+          "number": 18,
+          "title": "島人ぬ宝",
+          "url": "https://www.youtube.com/watch?v=xY1o8tSJhWg"
+        },
+        {
+          "number": 19,
+          "title": "黒潮太鼓",
+          "url": "https://www.youtube.com/watch?v=JrGlofeenWE"
+        },
+        {
+          "number": 20,
+          "title": "宇宙太鼓",
+          "url": "https://www.youtube.com/watch?v=KXprFpoe6t4"
+        },
+        {
+          "number": 21,
+          "title": "日本はればれ音頭",
+          "url": "https://www.youtube.com/watch?v=LcY8fBoEpfA"
+        },
+        {
+          "number": 22,
+          "title": "雨の御堂筋",
+          "url": "https://www.youtube.com/watch?v=-Hge85DeCGs"
+        },
+        {
+          "number": 23,
+          "title": "ダンシングヒーロー",
+          "url": "https://www.youtube.com/watch?v=3iexflX8QmI"
+        },
+        {
+          "number": 24,
+          "title": "白鳥おどり 世栄",
+          "url": "https://www.youtube.com/watch?v=ApUiu9aGfKs"
+        },
+        {
+          "number": 25,
+          "title": "また逢う日まで",
+          "url": "https://www.youtube.com/watch?v=G7p5vBash6M"
+        },
+        {
+          "number": 26,
+          "title": "U.S.A.",
+          "url": "https://www.youtube.com/watch?v=7rktk9ypI70"
+        },
+        {
+          "number": 27,
+          "title": "ボンゴ天国",
+          "url": "https://www.youtube.com/watch?v=dJAb8mtqBb0"
+        },
+        {
+          "number": 28,
+          "title": "締め太鼓",
+          "url": "https://www.youtube.com/watch?v=bKGzyQHWWcI"
+        }
+      ],
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=i2d4_AVPxsA",
+          "account": "@matsuribonodori",
+          "title": "16 河内酒　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509",
+          "published_at": "2026-05-13T16:00:15+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/i2d4_AVPxsA/maxresdefault.jpg",
+          "text_length": 1922,
+          "media_url_count": 45
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=cjXn62ErNvE",
+          "account": "@matsuribonodori",
+          "title": "17 祭り華〜神田明神　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509",
+          "published_at": "2026-05-13T17:00:08+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/cjXn62ErNvE/maxresdefault.jpg",
+          "text_length": 1922,
+          "media_url_count": 45
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=xY1o8tSJhWg",
+          "account": "@matsuribonodori",
+          "title": "18 島人ぬ宝　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509",
+          "published_at": "2026-05-13T18:00:40+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/xY1o8tSJhWg/maxresdefault.jpg",
+          "text_length": 1922,
+          "media_url_count": 45
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=JrGlofeenWE",
+          "account": "@matsuribonodori",
+          "title": "19 黒潮太鼓　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509",
+          "published_at": "2026-05-13T19:00:23+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/JrGlofeenWE/maxresdefault.jpg",
+          "text_length": 1922,
+          "media_url_count": 45
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=KXprFpoe6t4",
+          "account": "@matsuribonodori",
+          "title": "20 宇宙太鼓　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509",
+          "published_at": "2026-05-13T20:00:05+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/KXprFpoe6t4/maxresdefault.jpg",
+          "text_length": 1922,
+          "media_url_count": 45
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=LcY8fBoEpfA",
+          "account": "@matsuribonodori",
+          "title": "21 日本はればれ音頭　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509",
+          "published_at": "2026-05-13T21:00:07+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/LcY8fBoEpfA/maxresdefault.jpg",
+          "text_length": 1922,
+          "media_url_count": 45
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=-Hge85DeCGs",
+          "account": "@matsuribonodori",
+          "title": "22 雨の御堂筋　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509",
+          "published_at": "2026-05-13T22:00:20+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/-Hge85DeCGs/maxresdefault.jpg",
+          "text_length": 1922,
+          "media_url_count": 45
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=3iexflX8QmI",
+          "account": "@matsuribonodori",
+          "title": "23 ダンシングヒーロー　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509",
+          "published_at": "2026-05-13T23:00:06+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/3iexflX8QmI/maxresdefault.jpg",
+          "text_length": 1922,
+          "media_url_count": 45
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ApUiu9aGfKs",
+          "account": "@matsuribonodori",
+          "title": "24 白鳥おどり 世栄　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509",
+          "published_at": "2026-05-14T00:00:15+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/ApUiu9aGfKs/maxresdefault.jpg",
+          "text_length": 1922,
+          "media_url_count": 45
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=G7p5vBash6M",
+          "account": "@matsuribonodori",
+          "title": "25 また逢う日まで　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509",
+          "published_at": "2026-05-14T01:00:04+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/G7p5vBash6M/maxresdefault.jpg",
+          "text_length": 1922,
+          "media_url_count": 45
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=7rktk9ypI70",
+          "account": "@matsuribonodori",
+          "title": "26 U.S.A.　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509",
+          "published_at": "2026-05-14T02:00:34+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/7rktk9ypI70/maxresdefault.jpg",
+          "text_length": 1922,
+          "media_url_count": 45
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=dJAb8mtqBb0",
+          "account": "@matsuribonodori",
+          "title": "27 ボンゴ天国　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509",
+          "published_at": "2026-05-14T03:00:27+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/dJAb8mtqBb0/maxresdefault.jpg",
+          "text_length": 1922,
+          "media_url_count": 45
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=bKGzyQHWWcI",
+          "account": "@matsuribonodori",
+          "title": "28 締め太鼓　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509",
+          "published_at": "2026-05-14T04:00:24+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/bKGzyQHWWcI/maxresdefault.jpg",
+          "text_length": 1922,
+          "media_url_count": 45
+        }
+      ],
+      "source_video_count": 13,
+      "song_count": 41,
+      "confidence": "high",
+      "role": "result",
+      "act": "observe",
+      "reliability_key": "complete_numbered_video",
+      "matched_public_event": null
+    },
+    {
+      "occurrence_key": "7728efdca27d5f06",
+      "event_key_hint": "asuka-maikotori",
+      "event_name_hint": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "event_date": "2026-05-24",
+      "accounts": [
+        "@wadaikoCH"
+      ],
+      "setlist": [
+        {
+          "number": 1,
+          "title": "東京音頭",
+          "url": "https://www.youtube.com/watch?v=lmX6GaG4HuY"
+        },
+        {
+          "number": 2,
+          "title": "荒川音頭",
+          "url": "https://www.youtube.com/watch?v=BSxbnISzZvI"
+        },
+        {
+          "number": 3,
+          "title": "板橋音頭",
+          "url": "https://www.youtube.com/watch?v=XBHe1QaHQl8"
+        },
+        {
+          "number": 4,
+          "title": "たいとう音頭",
+          "url": "https://www.youtube.com/watch?v=BnRG0iS5stA"
+        },
+        {
+          "number": 5,
+          "title": "文京音頭",
+          "url": "https://www.youtube.com/watch?v=lEt68hsMb4A"
+        },
+        {
+          "number": 6,
+          "title": "相馬盆唄",
+          "url": "https://www.youtube.com/watch?v=3jKTtdLCnI8"
+        },
+        {
+          "number": 7,
+          "title": "王子小唄",
+          "url": "https://www.youtube.com/watch?v=w6mUO5UuS2g"
+        },
+        {
+          "number": 8,
+          "title": "飛鳥山音頭",
+          "url": "https://www.youtube.com/watch?v=iQkGYjz61rs"
+        },
+        {
+          "number": 9,
+          "title": "東京北都音頭",
+          "url": "https://www.youtube.com/watch?v=Nd1ADi6TxuM"
+        },
+        {
+          "number": 10,
+          "title": "ふるさと北区",
+          "url": "https://www.youtube.com/watch?v=UBGvAcTE6_E"
+        },
+        {
+          "number": 11,
+          "title": "佐渡の恋唄",
+          "url": "https://www.youtube.com/watch?v=PL7Fgs0ifSU"
+        },
+        {
+          "number": 12,
+          "title": "恋をするなら",
+          "url": "https://www.youtube.com/watch?v=NYWWFBYXeCE"
+        },
+        {
+          "number": 13,
+          "title": "ゆかた音頭",
+          "url": "https://www.youtube.com/watch?v=VW58EPXJmg4"
+        },
+        {
+          "number": 14,
+          "title": "美子の三味線ドンパン",
+          "url": "https://www.youtube.com/watch?v=12_m0E9kv3Y"
+        },
+        {
+          "number": 15,
+          "title": "俺ら炭鉱夫",
+          "url": "https://www.youtube.com/watch?v=lrEeotdmhTM"
+        },
+        {
+          "number": 16,
+          "title": "らんまん踊り",
+          "url": "https://www.youtube.com/watch?v=NxTvnbZME0M"
+        },
+        {
+          "number": 17,
+          "title": "黒潮太鼓",
+          "url": "https://www.youtube.com/watch?v=fxhLS--zqwQ"
+        },
+        {
+          "number": 18,
+          "title": "大江戸東京音頭",
+          "url": "https://www.youtube.com/watch?v=9CVl3g-jcYo"
+        },
+        {
+          "number": 19,
+          "title": "少年八木節",
+          "url": "https://www.youtube.com/watch?v=M0bWjUtfUBs"
+        },
+        {
+          "number": 20,
+          "title": "百年桜",
+          "url": "https://www.youtube.com/watch?v=3xiWUcepU08"
+        },
+        {
+          "number": 21,
+          "title": "蟹工船",
+          "url": "https://www.youtube.com/watch?v=B7quQ6JV8cs"
+        },
+        {
+          "number": 22,
+          "title": "大東京音頭",
+          "url": "https://www.youtube.com/watch?v=OsS7wbeRIh0"
+        },
+        {
+          "number": 23,
+          "title": "花火音頭",
+          "url": "https://www.youtube.com/watch?v=JX5otrjUER4"
+        },
+        {
+          "number": 24,
+          "title": "東北音頭",
+          "url": "https://www.youtube.com/watch?v=tN5cocxKGmw"
+        },
+        {
+          "number": 25,
+          "title": "東西南北音頭",
+          "url": "https://www.youtube.com/watch?v=yBZ1rXA6LRo"
+        },
+        {
+          "number": 26,
+          "title": "日本よいとこ",
+          "url": "https://www.youtube.com/watch?v=VPR1iNPV_yU"
+        },
+        {
+          "number": 27,
+          "title": "日本晴れだよ",
+          "url": "https://www.youtube.com/watch?v=CevVRysR7Bs"
+        },
+        {
+          "number": 28,
+          "title": "日本一だよ",
+          "url": "https://www.youtube.com/watch?v=4QtZ5d3ynZk"
+        },
+        {
+          "number": 29,
+          "title": "ソーラン北海",
+          "url": "https://www.youtube.com/watch?v=7ALmh64gFwA"
+        },
+        {
+          "number": 30,
+          "title": "終 男おけさ~〆太鼓",
+          "url": "https://www.youtube.com/watch?v=dm6SxqoFPVA"
+        }
+      ],
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=XBHe1QaHQl8",
+          "account": "@wadaikoCH",
+          "title": "板橋音頭　飛鳥山公園輪踊り　「舞ことり」３　2026年5月24日　東京都北区　#盆踊り",
+          "published_at": "2026-05-28T18:00:35+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/XBHe1QaHQl8/maxresdefault.jpg",
+          "text_length": 308,
+          "media_url_count": 7
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=BnRG0iS5stA",
+          "account": "@wadaikoCH",
+          "title": "たいとう音頭　飛鳥山公園輪踊り　「舞ことり」４　2026年5月24日　東京都北区　#盆踊り",
+          "published_at": "2026-05-30T03:00:06+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/BnRG0iS5stA/maxresdefault.jpg",
+          "text_length": 308,
+          "media_url_count": 7
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=lEt68hsMb4A",
+          "account": "@wadaikoCH",
+          "title": "文京音頭　飛鳥山公園輪踊り　「舞ことり」５　2026年5月24日　東京都北区　#盆踊り",
+          "published_at": "2026-05-31T03:00:37+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/lEt68hsMb4A/maxresdefault.jpg",
+          "text_length": 308,
+          "media_url_count": 7
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=3jKTtdLCnI8",
+          "account": "@wadaikoCH",
+          "title": "「相馬盆唄」　飛鳥山公園輪踊り　「舞ことり」６　2026年5月24日　東京都北区　#盆踊り",
+          "published_at": "2026-06-01T11:00:24+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/3jKTtdLCnI8/maxresdefault.jpg",
+          "text_length": 308,
+          "media_url_count": 7
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=w6mUO5UuS2g",
+          "account": "@wadaikoCH",
+          "title": "王子小唄　飛鳥山公園輪踊り　「舞ことり」７　2026年5月24日　東京都北区　#盆踊り",
+          "published_at": "2026-06-01T11:30:22+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/w6mUO5UuS2g/maxresdefault.jpg",
+          "text_length": 610,
+          "media_url_count": 15
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=iQkGYjz61rs",
+          "account": "@wadaikoCH",
+          "title": "飛鳥山音頭　飛鳥山公園輪踊り　「舞ことり」８　2026年5月24日　東京都北区　#盆踊り",
+          "published_at": "2026-06-02T11:00:07+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/iQkGYjz61rs/maxresdefault.jpg",
+          "text_length": 610,
+          "media_url_count": 15
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Nd1ADi6TxuM",
+          "account": "@wadaikoCH",
+          "title": "東京北都音頭　飛鳥山公園輪踊り　「舞ことり」９　2026年5月24日　東京都北区　#盆踊り",
+          "published_at": "2026-06-02T11:30:06+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/Nd1ADi6TxuM/maxresdefault.jpg",
+          "text_length": 610,
+          "media_url_count": 15
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=UBGvAcTE6_E",
+          "account": "@wadaikoCH",
+          "title": "ふるさと北区　飛鳥山公園輪踊り　「舞ことり」10　2026年5月24日　東京都北区　#盆踊り",
+          "published_at": "2026-06-03T10:00:26+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/UBGvAcTE6_E/maxresdefault.jpg",
+          "text_length": 610,
+          "media_url_count": 15
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=PL7Fgs0ifSU",
+          "account": "@wadaikoCH",
+          "title": "佐渡の恋唄　飛鳥山公園輪踊り　「舞ことり」11　2026年5月24日　東京都北区　#盆踊り",
+          "published_at": "2026-06-03T10:30:30+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/PL7Fgs0ifSU/maxresdefault.jpg",
+          "text_length": 610,
+          "media_url_count": 15
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=NYWWFBYXeCE",
+          "account": "@wadaikoCH",
+          "title": "「恋をするなら」　飛鳥山公園輪踊り　「舞ことり」12　2026年5月24日　東京都北区　#盆踊り",
+          "published_at": "2026-06-04T10:00:34+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/NYWWFBYXeCE/maxresdefault.jpg",
+          "text_length": 610,
+          "media_url_count": 15
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=VW58EPXJmg4",
+          "account": "@wadaikoCH",
+          "title": "ゆかた音頭　飛鳥山公園輪踊り　「舞ことり」13　2026年5月24日　東京都北区　#盆踊り",
+          "published_at": "2026-06-04T10:30:33+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/VW58EPXJmg4/maxresdefault.jpg",
+          "text_length": 610,
+          "media_url_count": 15
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=12_m0E9kv3Y",
+          "account": "@wadaikoCH",
+          "title": "「美子の三味線ドンパン」　飛鳥山公園輪踊り　「舞ことり」14　2026年5月24日　東京都北区　#盆踊り",
+          "published_at": "2026-06-05T10:00:39+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/12_m0E9kv3Y/maxresdefault.jpg",
+          "text_length": 610,
+          "media_url_count": 15
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=lrEeotdmhTM",
+          "account": "@wadaikoCH",
+          "title": "「俺ら炭鉱夫」　飛鳥山公園輪踊り　「舞ことり」15　2026年5月24日　東京都北区　#盆踊り",
+          "published_at": "2026-06-05T10:30:23+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/lrEeotdmhTM/maxresdefault.jpg",
+          "text_length": 903,
+          "media_url_count": 23
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=NxTvnbZME0M",
+          "account": "@wadaikoCH",
+          "title": "らんまん踊り　飛鳥山公園輪踊り　「舞ことり」16　2026年5月24日　東京都北区　#盆踊り",
+          "published_at": "2026-06-06T10:00:23+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/NxTvnbZME0M/maxresdefault.jpg",
+          "text_length": 903,
+          "media_url_count": 23
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=fxhLS--zqwQ",
+          "account": "@wadaikoCH",
+          "title": "黒潮太鼓　飛鳥山公園輪踊り　「舞ことり」17　2026年5月24日　東京都北区　#盆踊り",
+          "published_at": "2026-06-06T10:30:06+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/fxhLS--zqwQ/maxresdefault.jpg",
+          "text_length": 903,
+          "media_url_count": 23
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=9CVl3g-jcYo",
+          "account": "@wadaikoCH",
+          "title": "大江戸東京音頭　飛鳥山公園輪踊り　「舞ことり」18　2026年5月24日　東京都北区　#盆踊り",
+          "published_at": "2026-06-07T10:00:36+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/9CVl3g-jcYo/maxresdefault.jpg",
+          "text_length": 903,
+          "media_url_count": 23
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=M0bWjUtfUBs",
+          "account": "@wadaikoCH",
+          "title": "【少年八木節】　飛鳥山公園輪踊り　「舞ことり」19　2026年5月24日　東京都北区　#盆踊り",
+          "published_at": "2026-06-07T10:30:39+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/M0bWjUtfUBs/maxresdefault.jpg",
+          "text_length": 903,
+          "media_url_count": 23
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=3xiWUcepU08",
+          "account": "@wadaikoCH",
+          "title": "百年桜　飛鳥山公園輪踊り　「舞ことり」20　2026年5月24日　東京都北区　#盆踊り",
+          "published_at": "2026-06-08T10:00:07+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/3xiWUcepU08/maxresdefault.jpg",
+          "text_length": 903,
+          "media_url_count": 23
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=B7quQ6JV8cs",
+          "account": "@wadaikoCH",
+          "title": "【蟹工船】（村田英雄）　飛鳥山公園輪踊り　「舞ことり」21　2026年5月24日　東京都北区　#盆踊り",
+          "published_at": "2026-06-08T10:30:14+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/B7quQ6JV8cs/maxresdefault.jpg",
+          "text_length": 903,
+          "media_url_count": 23
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=OsS7wbeRIh0",
+          "account": "@wadaikoCH",
+          "title": "大東京音頭　飛鳥山公園輪踊り　「舞ことり」22　2026年5月24日　東京都北区　#盆踊り",
+          "published_at": "2026-06-09T10:00:37+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/OsS7wbeRIh0/maxresdefault.jpg",
+          "text_length": 903,
+          "media_url_count": 23
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=JX5otrjUER4",
+          "account": "@wadaikoCH",
+          "title": "花火音頭　飛鳥山公園輪踊り　「舞ことり」23　2026年5月24日　東京都北区　#盆踊り",
+          "published_at": "2026-06-09T10:30:18+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/JX5otrjUER4/maxresdefault.jpg",
+          "text_length": 1170,
+          "media_url_count": 30
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=tN5cocxKGmw",
+          "account": "@wadaikoCH",
+          "title": "東北音頭　飛鳥山公園輪踊り　「舞ことり」24　2026年5月24日　東京都北区　#盆踊り",
+          "published_at": "2026-06-10T10:00:39+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/tN5cocxKGmw/maxresdefault.jpg",
+          "text_length": 1170,
+          "media_url_count": 30
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=yBZ1rXA6LRo",
+          "account": "@wadaikoCH",
+          "title": "「東西南北音頭」　飛鳥山公園輪踊り　「舞ことり」25　2026年5月24日　東京都北区　#盆踊り",
+          "published_at": "2026-06-10T10:30:18+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/yBZ1rXA6LRo/maxresdefault.jpg",
+          "text_length": 1170,
+          "media_url_count": 30
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=VPR1iNPV_yU",
+          "account": "@wadaikoCH",
+          "title": "日本よいとこ　飛鳥山公園輪踊り　「舞ことり」26　2026年5月24日　東京都北区　#盆踊り",
+          "published_at": "2026-06-11T01:00:09+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/VPR1iNPV_yU/maxresdefault.jpg",
+          "text_length": 1170,
+          "media_url_count": 30
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=CevVRysR7Bs",
+          "account": "@wadaikoCH",
+          "title": "日本晴れだよ　飛鳥山公園輪踊り　「舞ことり」27　2026年5月24日　東京都北区　#盆踊り",
+          "published_at": "2026-06-11T01:30:10+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/CevVRysR7Bs/maxresdefault.jpg",
+          "text_length": 1170,
+          "media_url_count": 30
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=4QtZ5d3ynZk",
+          "account": "@wadaikoCH",
+          "title": "日本一だよ　飛鳥山公園輪踊り　「舞ことり」28　2026年5月24日　東京都北区　#盆踊り",
+          "published_at": "2026-06-12T01:00:25+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/4QtZ5d3ynZk/maxresdefault.jpg",
+          "text_length": 1170,
+          "media_url_count": 30
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=7ALmh64gFwA",
+          "account": "@wadaikoCH",
+          "title": "ソーラン北海　飛鳥山公園輪踊り　「舞ことり」29　2026年5月24日　東京都北区　#盆踊り",
+          "published_at": "2026-06-12T01:30:16+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/7ALmh64gFwA/maxresdefault.jpg",
+          "text_length": 1170,
+          "media_url_count": 30
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=dm6SxqoFPVA",
+          "account": "@wadaikoCH",
+          "title": "男おけさ～〆太鼓　飛鳥山公園輪踊り　「舞ことり」30終　2026年5月24日　東京都北区　#盆踊り",
+          "published_at": "2026-06-13T01:00:25+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/dm6SxqoFPVA/maxresdefault.jpg",
+          "text_length": 1170,
+          "media_url_count": 30
+        }
+      ],
+      "source_video_count": 28,
+      "song_count": 30,
+      "confidence": "high",
+      "role": "result",
+      "act": "observe",
+      "reliability_key": "complete_numbered_video",
+      "matched_public_event": null
+    },
+    {
+      "occurrence_key": "5633fd82e92b855e",
+      "event_key_hint": "品川音頭おおさきhappyolivefestival晴盆盆踊り1",
+      "event_name_hint": "品川音頭 【おおさきHappy Olive Festival】「晴盆盆踊り」1",
+      "venue": "大崎駅周辺",
+      "event_date": "2026-05-30",
+      "accounts": [
+        "@wadaikoCH"
+      ],
+      "setlist": [
+        {
+          "number": 1,
+          "title": "品川音頭",
+          "url": "https://www.youtube.com/watch?v=a-PefTUgt7o"
+        },
+        {
+          "number": 2,
+          "title": "品川甚句",
+          "url": "https://www.youtube.com/watch?v=msIS811wioM"
+        },
+        {
+          "number": 3,
+          "title": "炭坑節",
+          "url": "https://www.youtube.com/watch?v=ldNRHkFvky4"
+        },
+        {
+          "number": 4,
+          "title": "東京音頭",
+          "url": "https://www.youtube.com/watch?v=adUOXmTGGXQ"
+        },
+        {
+          "number": 5,
+          "title": "ドンパン節",
+          "url": "https://www.youtube.com/watch?v=ON2Q4CoEZag"
+        },
+        {
+          "number": 6,
+          "title": "エビカニクス音頭",
+          "url": "https://www.youtube.com/watch?v=RDwPvX5MTKQ"
+        },
+        {
+          "number": 7,
+          "title": "ジンギスカン",
+          "url": "https://www.youtube.com/watch?v=7E_rWqp3sLA"
+        },
+        {
+          "number": 8,
+          "title": "終 マツケンサンバII",
+          "url": "https://www.youtube.com/watch?v=Fp8-OY-9gMg"
+        }
+      ],
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=a-PefTUgt7o",
+          "account": "@wadaikoCH",
+          "title": "品川音頭　【おおさきHappy Olive Festival】「晴盆盆踊り」１　2026年5月30日",
+          "published_at": "2026-06-02T02:00:24+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/a-PefTUgt7o/maxresdefault.jpg",
+          "text_length": 191,
+          "media_url_count": 3
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=msIS811wioM",
+          "account": "@wadaikoCH",
+          "title": "品川甚句　【おおさきHappy Olive Festival】「晴盆盆踊り」２　2026年5月30日",
+          "published_at": "2026-06-02T05:00:09+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/msIS811wioM/maxresdefault.jpg",
+          "text_length": 191,
+          "media_url_count": 3
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ldNRHkFvky4",
+          "account": "@wadaikoCH",
+          "title": "「炭坑節」　【おおさきHappy Olive Festival】「晴盆盆踊り」３　2026年5月30日",
+          "published_at": "2026-06-02T23:00:10+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/ldNRHkFvky4/maxresdefault.jpg",
+          "text_length": 379,
+          "media_url_count": 8
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=adUOXmTGGXQ",
+          "account": "@wadaikoCH",
+          "title": "東京音頭　【おおさきHappy Olive Festival】「晴盆盆踊り」４　2026年5月30日",
+          "published_at": "2026-06-03T02:00:32+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/adUOXmTGGXQ/maxresdefault.jpg",
+          "text_length": 379,
+          "media_url_count": 8
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ON2Q4CoEZag",
+          "account": "@wadaikoCH",
+          "title": "ドンパン節　【おおさきHappy Olive Festival】「晴盆盆踊り」５　2026年5月30日",
+          "published_at": "2026-06-03T05:00:13+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/ON2Q4CoEZag/maxresdefault.jpg",
+          "text_length": 379,
+          "media_url_count": 8
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=7E_rWqp3sLA",
+          "account": "@wadaikoCH",
+          "title": "「ジンギスカン（Dschinghis Khan）」　【おおさきHappy Olive Festival】「晴盆盆踊り」７　2026年5月30日",
+          "published_at": "2026-06-04T02:00:28+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/7E_rWqp3sLA/maxresdefault.jpg",
+          "text_length": 379,
+          "media_url_count": 8
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Fp8-OY-9gMg",
+          "account": "@wadaikoCH",
+          "title": "【マツケンサンバⅡ】（松平健）　【おおさきHappy Olive Festival】「晴盆盆踊り」８終　2026年5月30日",
+          "published_at": "2026-06-04T05:00:34+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/Fp8-OY-9gMg/maxresdefault.jpg",
+          "text_length": 379,
+          "media_url_count": 8
+        }
+      ],
+      "source_video_count": 7,
+      "song_count": 8,
+      "confidence": "high",
+      "role": "result",
+      "act": "observe",
+      "reliability_key": "complete_numbered_video",
+      "matched_public_event": null
+    },
+    {
+      "occurrence_key": "b193da52941a7fd5",
+      "event_key_hint": "min-yois-2026-05-31",
+      "event_name_hint": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "event_date": "2026-05-31",
+      "accounts": [
+        "@wadaikoCH"
+      ],
+      "setlist": [
+        {
+          "number": 1,
+          "title": "子供盆踊り唄",
+          "url": "https://www.youtube.com/watch?v=K_ShDtWkpuc"
+        },
+        {
+          "number": 2,
+          "title": "平和音頭",
+          "url": "https://www.youtube.com/watch?v=Ay26e53P9-E"
+        },
+        {
+          "number": 3,
+          "title": "おてもやん",
+          "url": "https://www.youtube.com/watch?v=zvNk31XmwMM"
+        },
+        {
+          "number": 4,
+          "title": "牛深ハイヤ",
+          "url": "https://www.youtube.com/watch?v=CAFh6Bp5YaI"
+        },
+        {
+          "number": 5,
+          "title": "秋田音頭",
+          "url": "https://www.youtube.com/watch?v=olANab36mxk"
+        },
+        {
+          "number": 6,
+          "title": "でかんしょ節",
+          "url": "https://www.youtube.com/watch?v=0cz4BgmIJC4"
+        },
+        {
+          "number": 7,
+          "title": "にっぽんチャチャチャ",
+          "url": "https://www.youtube.com/watch?v=B3C481luK_w"
+        },
+        {
+          "number": 8,
+          "title": "鹿島一声浮立",
+          "url": "https://www.youtube.com/watch?v=LuKtxSzNpDE"
+        },
+        {
+          "number": 9,
+          "title": "東京音頭",
+          "url": "https://www.youtube.com/watch?v=UoiBfNfZswE"
+        },
+        {
+          "number": 10,
+          "title": "炭坑節",
+          "url": "https://www.youtube.com/watch?v=LBuOk033AcQ"
+        },
+        {
+          "number": 11,
+          "title": "花笠音頭",
+          "url": "https://www.youtube.com/watch?v=7TkSF51SEs0"
+        },
+        {
+          "number": 12,
+          "title": "ドンパン節",
+          "url": "https://www.youtube.com/watch?v=7v5c4qZQnSw"
+        },
+        {
+          "number": 13,
+          "title": "真室川音頭",
+          "url": "https://www.youtube.com/watch?v=c9uotLXGYLQ"
+        },
+        {
+          "number": 14,
+          "title": "隠岐のしげさ節",
+          "url": "https://www.youtube.com/watch?v=TIHzTtK9a1c"
+        },
+        {
+          "number": 15,
+          "title": "大森甚句",
+          "url": "https://www.youtube.com/watch?v=kDLvMlBtTxM"
+        },
+        {
+          "number": 16,
+          "title": "郡上節かわさき",
+          "url": "https://www.youtube.com/watch?v=0eTmwqomFyA"
+        },
+        {
+          "number": 17,
+          "title": "郡上節三百",
+          "url": "https://www.youtube.com/watch?v=rrPjw5lwGDU"
+        },
+        {
+          "number": 18,
+          "title": "郡上節春駒",
+          "url": "https://www.youtube.com/watch?v=wYE6MCa9XxQ"
+        },
+        {
+          "number": 19,
+          "title": "シッチョイ",
+          "url": "https://www.youtube.com/watch?v=lw9vaonH1uc"
+        },
+        {
+          "number": 20,
+          "title": "神代",
+          "url": "https://www.youtube.com/watch?v=PfVSbEplhXA"
+        },
+        {
+          "number": 21,
+          "title": "老坂",
+          "url": "https://www.youtube.com/watch?v=SCS4NBMj8bA"
+        },
+        {
+          "number": 22,
+          "title": "北上おでんせ",
+          "url": "https://www.youtube.com/watch?v=jhNfVejczXk"
+        },
+        {
+          "number": 23,
+          "title": "村崎野音頭",
+          "url": "https://www.youtube.com/watch?v=yOPU_J0TRdk"
+        },
+        {
+          "number": 24,
+          "title": "おしまこ輪踊り",
+          "url": "https://www.youtube.com/watch?v=6ZCsHqoCz8Y"
+        },
+        {
+          "number": 25,
+          "title": "下北小唄",
+          "url": "https://www.youtube.com/watch?v=UmULl-H4adI"
+        },
+        {
+          "number": 26,
+          "title": "紀州白浜音頭",
+          "url": "https://www.youtube.com/watch?v=tlWdGx5rLFA"
+        },
+        {
+          "number": 27,
+          "title": "Beat It盆踊り",
+          "url": "https://www.youtube.com/watch?v=-USPVIqmUKQ"
+        },
+        {
+          "number": 28,
+          "title": "江州音頭",
+          "url": "https://www.youtube.com/watch?v=cTCe5rRqG94"
+        },
+        {
+          "number": 29,
+          "title": "りんご節",
+          "url": "https://www.youtube.com/watch?v=3WDSTaX0-cw"
+        },
+        {
+          "number": 30,
+          "title": "八戸小唄",
+          "url": "https://www.youtube.com/watch?v=eUdaKOAjGEo"
+        },
+        {
+          "number": 31,
+          "title": "とらじょ様",
+          "url": "https://www.youtube.com/watch?v=bbKV6EYNny8"
+        },
+        {
+          "number": 32,
+          "title": "鯵ヶ沢甚句",
+          "url": "https://www.youtube.com/watch?v=4FeWN7pbr3w"
+        },
+        {
+          "number": 33,
+          "title": "黒石よされ",
+          "url": "https://www.youtube.com/watch?v=jcQC0DFIiAc"
+        },
+        {
+          "number": 34,
+          "title": "黒石甚句",
+          "url": "https://www.youtube.com/watch?v=vPE-jc6d-BU"
+        },
+        {
+          "number": 35,
+          "title": "黒石じょんがら",
+          "url": "https://www.youtube.com/watch?v=YkLMCoVkPrE"
+        },
+        {
+          "number": 36,
+          "title": "津軽甚句",
+          "url": "https://www.youtube.com/watch?v=-RP0e0LUCZk"
+        },
+        {
+          "number": 37,
+          "title": "佐渡おけさ",
+          "url": "https://www.youtube.com/watch?v=81ECma43tG8"
+        },
+        {
+          "number": 38,
+          "title": "さくら音頭",
+          "url": "https://www.youtube.com/watch?v=fwX0qtq6HQY"
+        },
+        {
+          "number": 39,
+          "title": "河内音頭",
+          "url": "https://www.youtube.com/watch?v=gyyK6CeR2ls"
+        },
+        {
+          "number": 40,
+          "title": "よこはまアラメヤ音頭",
+          "url": "https://www.youtube.com/watch?v=oxZtUYXg06w"
+        },
+        {
+          "number": 41,
+          "title": "こまづくり唄",
+          "url": "https://www.youtube.com/watch?v=Ae8CYjM-y2Y"
+        },
+        {
+          "number": 42,
+          "title": "堀江盆歌",
+          "url": "https://www.youtube.com/watch?v=vhUEHrUbadI"
+        },
+        {
+          "number": 43,
+          "title": "麦わら音頭",
+          "url": "https://www.youtube.com/watch?v=I9_Fcsn5aJ0"
+        },
+        {
+          "number": 44,
+          "title": "終 繁昌ぶし",
+          "url": "https://www.youtube.com/watch?v=9lkufMdYu2c"
+        }
+      ],
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=olANab36mxk",
+          "account": "@wadaikoCH",
+          "title": "秋田音頭　Min-Yoi's盆踊り５　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ",
+          "published_at": "2026-06-01T07:30:37+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/olANab36mxk/maxresdefault.jpg",
+          "text_length": 802,
+          "media_url_count": 15
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=0cz4BgmIJC4",
+          "account": "@wadaikoCH",
+          "title": "でかんしょ節　Min-Yoi's盆踊り６　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ",
+          "published_at": "2026-06-01T08:00:24+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/0cz4BgmIJC4/maxresdefault.jpg",
+          "text_length": 802,
+          "media_url_count": 15
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=B3C481luK_w",
+          "account": "@wadaikoCH",
+          "title": "にっぽんチャチャチャ　Min-Yoi's盆踊り７　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ",
+          "published_at": "2026-06-01T08:30:32+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/B3C481luK_w/maxresdefault.jpg",
+          "text_length": 802,
+          "media_url_count": 15
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=LuKtxSzNpDE",
+          "account": "@wadaikoCH",
+          "title": "鹿島一声浮立　Min Yoi’s盆踊り８　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ",
+          "published_at": "2026-06-01T09:00:17+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/LuKtxSzNpDE/maxresdefault.jpg",
+          "text_length": 802,
+          "media_url_count": 15
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=UoiBfNfZswE",
+          "account": "@wadaikoCH",
+          "title": "東京音頭（生唄生演奏）　Min-Yoi's盆踊り９　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ",
+          "published_at": "2026-06-01T09:30:24+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/UoiBfNfZswE/maxresdefault.jpg",
+          "text_length": 802,
+          "media_url_count": 15
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=LBuOk033AcQ",
+          "account": "@wadaikoCH",
+          "title": "炭坑節（生唄生演奏）　Min-Yoi's盆踊り10　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ",
+          "published_at": "2026-06-01T12:00:00+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/LBuOk033AcQ/maxresdefault.jpg",
+          "text_length": 802,
+          "media_url_count": 15
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=7TkSF51SEs0",
+          "account": "@wadaikoCH",
+          "title": "花笠音頭（生唄生演奏）　Min-Yoi's盆踊り11　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ",
+          "published_at": "2026-06-01T12:30:39+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/7TkSF51SEs0/maxresdefault.jpg",
+          "text_length": 802,
+          "media_url_count": 15
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=7v5c4qZQnSw",
+          "account": "@wadaikoCH",
+          "title": "ドンパン節（生唄生演奏）　Min-Yoi's盆踊り12　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ",
+          "published_at": "2026-06-01T13:00:09+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/7v5c4qZQnSw/maxresdefault.jpg",
+          "text_length": 802,
+          "media_url_count": 15
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=c9uotLXGYLQ",
+          "account": "@wadaikoCH",
+          "title": "真室川音頭（生唄生演奏）　Min-Yoi's盆踊り13　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ",
+          "published_at": "2026-06-01T13:30:01+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/c9uotLXGYLQ/maxresdefault.jpg",
+          "text_length": 802,
+          "media_url_count": 15
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=TIHzTtK9a1c",
+          "account": "@wadaikoCH",
+          "title": "隠岐のしげさ節（生唄生演奏）　Min-Yoi's盆踊り14　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ",
+          "published_at": "2026-06-02T00:00:07+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/TIHzTtK9a1c/maxresdefault.jpg",
+          "text_length": 802,
+          "media_url_count": 15
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=kDLvMlBtTxM",
+          "account": "@wadaikoCH",
+          "title": "大森甚句（生唄生演奏）　Min-Yoi's盆踊り15　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ",
+          "published_at": "2026-06-02T03:00:18+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/kDLvMlBtTxM/maxresdefault.jpg",
+          "text_length": 1095,
+          "media_url_count": 23
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=0eTmwqomFyA",
+          "account": "@wadaikoCH",
+          "title": "郡上節かわさき（生唄生演奏）　Min-Yoi's盆踊り16　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ",
+          "published_at": "2026-06-02T06:00:16+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/0eTmwqomFyA/maxresdefault.jpg",
+          "text_length": 1095,
+          "media_url_count": 23
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=rrPjw5lwGDU",
+          "account": "@wadaikoCH",
+          "title": "郡上節三百（生唄生演奏）　Min-Yoi's盆踊り17　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ",
+          "published_at": "2026-06-02T07:00:16+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/rrPjw5lwGDU/maxresdefault.jpg",
+          "text_length": 1095,
+          "media_url_count": 23
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=wYE6MCa9XxQ",
+          "account": "@wadaikoCH",
+          "title": "郡上節春駒（生唄生演奏）　Min-Yoi's盆踊り18　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ",
+          "published_at": "2026-06-02T08:00:17+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/wYE6MCa9XxQ/maxresdefault.jpg",
+          "text_length": 1095,
+          "media_url_count": 23
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=lw9vaonH1uc",
+          "account": "@wadaikoCH",
+          "title": "白鳥おどりシッチョイ（生唄生演奏）　Min-Yoi's盆踊り19　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ",
+          "published_at": "2026-06-02T09:00:28+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/lw9vaonH1uc/maxresdefault.jpg",
+          "text_length": 1095,
+          "media_url_count": 23
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=PfVSbEplhXA",
+          "account": "@wadaikoCH",
+          "title": "白鳥おどり神代（生唄生演奏）　Min-Yoi's盆踊り20　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ",
+          "published_at": "2026-06-02T12:00:06+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/PfVSbEplhXA/maxresdefault.jpg",
+          "text_length": 1095,
+          "media_url_count": 23
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=SCS4NBMj8bA",
+          "account": "@wadaikoCH",
+          "title": "白鳥おどり老坂（生唄生演奏）　Min-Yoi's盆踊り21　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ",
+          "published_at": "2026-06-02T12:30:11+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/SCS4NBMj8bA/maxresdefault.jpg",
+          "text_length": 1095,
+          "media_url_count": 23
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=jhNfVejczXk",
+          "account": "@wadaikoCH",
+          "title": "北上おでんせ　Min-Yoi's盆踊り22　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ",
+          "published_at": "2026-06-03T00:00:10+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/jhNfVejczXk/maxresdefault.jpg",
+          "text_length": 1095,
+          "media_url_count": 23
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=yOPU_J0TRdk",
+          "account": "@wadaikoCH",
+          "title": "村崎野音頭　Min-Yoi's盆踊り23　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ",
+          "published_at": "2026-06-03T03:00:28+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/yOPU_J0TRdk/maxresdefault.jpg",
+          "text_length": 1134,
+          "media_url_count": 24
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=6ZCsHqoCz8Y",
+          "account": "@wadaikoCH",
+          "title": "おしまこ輪踊り　Min-Yoi's盆踊り24　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ",
+          "published_at": "2026-06-03T07:00:05+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/6ZCsHqoCz8Y/maxresdefault.jpg",
+          "text_length": 1506,
+          "media_url_count": 34
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=UmULl-H4adI",
+          "account": "@wadaikoCH",
+          "title": "下北小唄　Min-Yoi's盆踊り25　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ",
+          "published_at": "2026-06-03T08:00:26+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/UmULl-H4adI/maxresdefault.jpg",
+          "text_length": 1506,
+          "media_url_count": 34
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=tlWdGx5rLFA",
+          "account": "@wadaikoCH",
+          "title": "紀州白浜音頭　Min-Yoi's盆踊り26　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ",
+          "published_at": "2026-06-03T09:00:38+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/tlWdGx5rLFA/maxresdefault.jpg",
+          "text_length": 1506,
+          "media_url_count": 34
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=-USPVIqmUKQ",
+          "account": "@wadaikoCH",
+          "title": "Beat It盆踊り　Min-Yoi's盆踊り27　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ",
+          "published_at": "2026-06-03T11:00:25+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/-USPVIqmUKQ/maxresdefault.jpg",
+          "text_length": 1506,
+          "media_url_count": 34
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=cTCe5rRqG94",
+          "account": "@wadaikoCH",
+          "title": "江州音頭（生唄生演奏）　Min-Yoi's盆踊り28　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ",
+          "published_at": "2026-06-03T11:30:05+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/cTCe5rRqG94/maxresdefault.jpg",
+          "text_length": 1506,
+          "media_url_count": 34
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=3WDSTaX0-cw",
+          "account": "@wadaikoCH",
+          "title": "りんご節（生唄生演奏）　Min-Yoi's盆踊り29　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ",
+          "published_at": "2026-06-03T12:00:13+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/3WDSTaX0-cw/maxresdefault.jpg",
+          "text_length": 1506,
+          "media_url_count": 34
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=eUdaKOAjGEo",
+          "account": "@wadaikoCH",
+          "title": "「八戸小唄」（生唄生演奏）　Min-Yoi's盆踊り30　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ",
+          "published_at": "2026-06-03T12:30:29+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/eUdaKOAjGEo/maxresdefault.jpg",
+          "text_length": 1506,
+          "media_url_count": 34
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=4FeWN7pbr3w",
+          "account": "@wadaikoCH",
+          "title": "鯵ヶ沢甚句（生唄生演奏）　Min-Yoi's盆踊り32　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ",
+          "published_at": "2026-06-04T03:00:33+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/4FeWN7pbr3w/maxresdefault.jpg",
+          "text_length": 1506,
+          "media_url_count": 34
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=jcQC0DFIiAc",
+          "account": "@wadaikoCH",
+          "title": "黒石よされ（生唄生演奏）　Min-Yoi's盆踊り33　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ",
+          "published_at": "2026-06-04T06:00:13+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/jcQC0DFIiAc/maxresdefault.jpg",
+          "text_length": 1506,
+          "media_url_count": 34
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=vPE-jc6d-BU",
+          "account": "@wadaikoCH",
+          "title": "黒石甚句（生唄生演奏）　Min-Yoi's盆踊り34　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ",
+          "published_at": "2026-06-04T07:00:30+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/vPE-jc6d-BU/maxresdefault.jpg",
+          "text_length": 1882,
+          "media_url_count": 44
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=YkLMCoVkPrE",
+          "account": "@wadaikoCH",
+          "title": "黒石じょんがら（生唄生演奏）　Min-Yoi's盆踊り35　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ",
+          "published_at": "2026-06-04T08:00:05+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/YkLMCoVkPrE/maxresdefault.jpg",
+          "text_length": 1882,
+          "media_url_count": 44
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=-RP0e0LUCZk",
+          "account": "@wadaikoCH",
+          "title": "津軽甚句ドダレバチ（生唄生演奏）　Min-Yoi's盆踊り36　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ",
+          "published_at": "2026-06-04T09:00:10+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/-RP0e0LUCZk/maxresdefault.jpg",
+          "text_length": 1882,
+          "media_url_count": 44
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=81ECma43tG8",
+          "account": "@wadaikoCH",
+          "title": "佐渡おけさ（木津かおりさん、生歌）（生唄生演奏）　Min-Yoi's盆踊り37　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ",
+          "published_at": "2026-06-04T11:00:30+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/81ECma43tG8/maxresdefault.jpg",
+          "text_length": 1882,
+          "media_url_count": 44
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=PI314qyL6Ds",
+          "account": "@wadaikoCH",
+          "title": "佐渡おけさ（木津かおりさん、生歌）Min-Yoi's盆踊り（ステージ映像）　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ",
+          "published_at": "2026-06-04T11:15:39+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/PI314qyL6Ds/maxresdefault.jpg",
+          "text_length": 2031,
+          "media_url_count": 47
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=fwX0qtq6HQY",
+          "account": "@wadaikoCH",
+          "title": "さくら音頭（木津かおりさん、ご本人生歌）（生唄生演奏）　Min-Yoi's盆踊り38　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ",
+          "published_at": "2026-06-04T11:30:28+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/fwX0qtq6HQY/maxresdefault.jpg",
+          "text_length": 1882,
+          "media_url_count": 44
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=kxuwDg29dL8",
+          "account": "@wadaikoCH",
+          "title": "さくら音頭（木津かおりさん、本人生歌）Min-Yoi's盆踊り（ステージ映像）　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ",
+          "published_at": "2026-06-04T11:45:21+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/kxuwDg29dL8/maxresdefault.jpg",
+          "text_length": 2031,
+          "media_url_count": 47
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=gyyK6CeR2ls",
+          "account": "@wadaikoCH",
+          "title": "河内音頭（木津かおりさん、生歌）（生唄生演奏）　Min-Yoi's盆踊り39　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ",
+          "published_at": "2026-06-04T12:00:34+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/gyyK6CeR2ls/maxresdefault.jpg",
+          "text_length": 1882,
+          "media_url_count": 44
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ZzCWuYizuqU",
+          "account": "@wadaikoCH",
+          "title": "河内音頭（木津かおりさん、生歌）Min-Yoi's盆踊り（ステージ映像）　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ",
+          "published_at": "2026-06-04T12:15:09+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/ZzCWuYizuqU/maxresdefault.jpg",
+          "text_length": 2031,
+          "media_url_count": 47
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=oxZtUYXg06w",
+          "account": "@wadaikoCH",
+          "title": "よこはまアラメヤ音頭　Min-Yoi's盆踊り40　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ",
+          "published_at": "2026-06-05T03:00:18+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/oxZtUYXg06w/maxresdefault.jpg",
+          "text_length": 1882,
+          "media_url_count": 44
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Ae8CYjM-y2Y",
+          "account": "@wadaikoCH",
+          "title": "こまづくり唄　Min-Yoi's盆踊り41　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ",
+          "published_at": "2026-06-05T06:00:39+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/Ae8CYjM-y2Y/maxresdefault.jpg",
+          "text_length": 1882,
+          "media_url_count": 44
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=vhUEHrUbadI",
+          "account": "@wadaikoCH",
+          "title": "堀江盆歌　Min-Yoi's盆踊り42　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ",
+          "published_at": "2026-06-05T09:00:28+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/vhUEHrUbadI/maxresdefault.jpg",
+          "text_length": 1882,
+          "media_url_count": 44
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=I9_Fcsn5aJ0",
+          "account": "@wadaikoCH",
+          "title": "麦わら音頭　Min-Yoi's盆踊り43　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ",
+          "published_at": "2026-06-05T11:00:17+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/I9_Fcsn5aJ0/maxresdefault.jpg",
+          "text_length": 1882,
+          "media_url_count": 44
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=9lkufMdYu2c",
+          "account": "@wadaikoCH",
+          "title": "繫昌ぶし～集合写真　Min-Yoi's盆踊り44終　2026年5月31日　日本民謡会館ホール　#盆踊り　#ミンヨイズ",
+          "published_at": "2026-06-05T11:30:14+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/9lkufMdYu2c/maxresdefault.jpg",
+          "text_length": 2031,
+          "media_url_count": 47
+        }
+      ],
+      "source_video_count": 42,
+      "song_count": 44,
+      "confidence": "high",
+      "role": "result",
+      "act": "observe",
+      "reliability_key": "complete_numbered_video",
+      "matched_public_event": {
+        "name": "Min-Yoi's盆踊り",
+        "venue": "日本民謡会館",
+        "date": "2026-05-31",
+        "date_end": "",
+        "score": 130,
+        "reasons": [
+          "date",
+          "event_name_exact",
+          "venue_exact"
+        ]
+      },
+      "canonical_event_name": "Min-Yoi's盆踊り",
+      "canonical_venue": "日本民謡会館"
+    },
+    {
+      "occurrence_key": "1debf98e280dc2da",
+      "event_key_hint": "yokohama-kaikosai-2026-06-01",
+      "event_name_hint": "横浜開港祭 BON ODORI",
+      "venue": "パシフィコ横浜プラザ広場",
+      "event_date": "2026-06-01",
+      "accounts": [
+        "@matsuribonodori",
+        "@wadaikoCH"
+      ],
+      "setlist": [
+        {
+          "number": 1,
+          "title": "よこはまアラメヤ音頭",
+          "url": "https://www.youtube.com/watch?v=AIOyAa-qq2Q"
+        },
+        {
+          "number": 2,
+          "title": "野毛山節",
+          "url": "https://www.youtube.com/watch?v=nh03oGzbnk4"
+        },
+        {
+          "number": 3,
+          "title": "浜っ娘音頭",
+          "url": "https://www.youtube.com/watch?v=zyaDbEFcPq4"
+        },
+        {
+          "number": 4,
+          "title": "鹿児島おはら節",
+          "url": "https://www.youtube.com/watch?v=_MBdUYBxsak"
+        },
+        {
+          "number": 5,
+          "title": "春駒",
+          "url": "https://www.youtube.com/watch?v=Uak6YO04Eds"
+        },
+        {
+          "number": 5,
+          "title": "郡上節春駒",
+          "url": "https://www.youtube.com/watch?v=-M63RIxNHXY"
+        },
+        {
+          "number": 6,
+          "title": "希望の轍",
+          "url": "https://www.youtube.com/watch?v=iVkvjn_qYsQ"
+        },
+        {
+          "number": 7,
+          "title": "青と夏",
+          "url": "https://www.youtube.com/watch?v=TABjlaNTzIk"
+        },
+        {
+          "number": 8,
+          "title": "Ultra Soul",
+          "url": "https://www.youtube.com/watch?v=4RAaOtSbF-A"
+        },
+        {
+          "number": 8,
+          "title": "ウルトラソウル",
+          "url": "https://www.youtube.com/watch?v=SX9nrOxDcZQ"
+        },
+        {
+          "number": 11,
+          "title": "September",
+          "url": "https://www.youtube.com/watch?v=cn-J6lcHzoY"
+        },
+        {
+          "number": 13,
+          "title": "ダンシング・ヒーロー",
+          "url": "https://www.youtube.com/watch?v=bmcO1u26wyI"
+        },
+        {
+          "number": 16,
+          "title": "EZ DO DANCE",
+          "url": "https://www.youtube.com/watch?v=9guti4r23aI"
+        },
+        {
+          "number": 17,
+          "title": "野毛山節 - DJ帝 mix",
+          "url": "https://www.youtube.com/watch?v=QcUh2syTVpw"
+        }
+      ],
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=AIOyAa-qq2Q",
+          "account": "@wadaikoCH",
+          "title": "よこはまアラメヤ音頭　「横浜開港祭BON-ODORI」１　2026年6月1日　トヨタモビリティ神奈川プレゼンツ　パシフィコ横浜プラザ広場",
+          "published_at": "2026-06-01T09:46:21+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/AIOyAa-qq2Q/maxresdefault.jpg",
+          "text_length": 386,
+          "media_url_count": 2
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=nh03oGzbnk4",
+          "account": "@wadaikoCH",
+          "title": "野毛山節　「横浜開港祭盆踊り」２　2026年6月1日　パシフィコ横浜プラザ広場　トヨタモビリティ神奈川プレゼンツ",
+          "published_at": "2026-06-01T11:15:04+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/nh03oGzbnk4/maxresdefault.jpg",
+          "text_length": 829,
+          "media_url_count": 14
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=4RAaOtSbF-A",
+          "account": "@matsuribonodori",
+          "title": "08 Ultra Soul 　横浜開港祭 BON ODORI　20260601",
+          "published_at": "2026-06-04T20:00:35+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/4RAaOtSbF-A/maxresdefault.jpg",
+          "text_length": 972,
+          "media_url_count": 22
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=1AcTzW10J_M",
+          "account": "@matsuribonodori",
+          "title": "09 よこはまアラメヤ音頭（２部） 　横浜開港祭 BON ODORI　20260601",
+          "published_at": "2026-06-04T21:00:06+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/1AcTzW10J_M/maxresdefault.jpg",
+          "text_length": 972,
+          "media_url_count": 22
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=x6O3vvhiXMQ",
+          "account": "@matsuribonodori",
+          "title": "10 野毛山節 　横浜開港祭 BON ODORI　20260601",
+          "published_at": "2026-06-04T22:00:10+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/x6O3vvhiXMQ/maxresdefault.jpg",
+          "text_length": 972,
+          "media_url_count": 22
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=s62LF02VMxE",
+          "account": "@matsuribonodori",
+          "title": "11 浜っ娘音頭 　横浜開港祭 BON ODORI　20260601",
+          "published_at": "2026-06-04T23:00:32+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/s62LF02VMxE/maxresdefault.jpg",
+          "text_length": 972,
+          "media_url_count": 22
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=XYD7P5R4ado",
+          "account": "@matsuribonodori",
+          "title": "02 野毛山節 　横浜開港祭 BON ODORI　20260601",
+          "published_at": "2026-06-04T23:00:36+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/XYD7P5R4ado/maxresdefault.jpg",
+          "text_length": 972,
+          "media_url_count": 22
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Oox5Ob1aNzk",
+          "account": "@matsuribonodori",
+          "title": "03 浜っ娘音頭 　横浜開港祭 BON ODORI　20260601",
+          "published_at": "2026-06-05T00:00:11+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/Oox5Ob1aNzk/maxresdefault.jpg",
+          "text_length": 972,
+          "media_url_count": 22
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=vLM3jcYUl7k",
+          "account": "@matsuribonodori",
+          "title": "12 夏色 　横浜開港祭 BON ODORI　20260601",
+          "published_at": "2026-06-05T00:00:35+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/vLM3jcYUl7k/maxresdefault.jpg",
+          "text_length": 972,
+          "media_url_count": 22
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=hNpEA6ORzOo",
+          "account": "@matsuribonodori",
+          "title": "04 鹿児島おはら節 　横浜開港祭 BON ODORI　20260601",
+          "published_at": "2026-06-05T01:00:10+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/hNpEA6ORzOo/maxresdefault.jpg",
+          "text_length": 972,
+          "media_url_count": 22
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=byFyWmWVg7g",
+          "account": "@matsuribonodori",
+          "title": "13 YMCA 　横浜開港祭 BON ODORI　20260601",
+          "published_at": "2026-06-05T01:00:26+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/byFyWmWVg7g/maxresdefault.jpg",
+          "text_length": 972,
+          "media_url_count": 22
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Yt9OXm1M9bE",
+          "account": "@matsuribonodori",
+          "title": "14 炎と森のカーニバル 　横浜開港祭 BON ODORI　20260601",
+          "published_at": "2026-06-05T02:00:01+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/Yt9OXm1M9bE/maxresdefault.jpg",
+          "text_length": 972,
+          "media_url_count": 22
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Uak6YO04Eds",
+          "account": "@matsuribonodori",
+          "title": "05 春駒 　横浜開港祭 BON ODORI　20260601",
+          "published_at": "2026-06-05T02:00:38+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/Uak6YO04Eds/maxresdefault.jpg",
+          "text_length": 972,
+          "media_url_count": 22
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=P1JViv3w9xc",
+          "account": "@matsuribonodori",
+          "title": "15 ダンシングヒーロー 　横浜開港祭 BON ODORI　20260601",
+          "published_at": "2026-06-05T03:00:13+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/P1JViv3w9xc/maxresdefault.jpg",
+          "text_length": 972,
+          "media_url_count": 22
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=YcwxnLspGMg",
+          "account": "@matsuribonodori",
+          "title": "06 希望の轍 　横浜開港祭 BON ODORI　20260601",
+          "published_at": "2026-06-05T03:00:33+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/YcwxnLspGMg/maxresdefault.jpg",
+          "text_length": 972,
+          "media_url_count": 22
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=YvBnjsZO0oo",
+          "account": "@matsuribonodori",
+          "title": "07 青と夏 　横浜開港祭 BON ODORI　20260601",
+          "published_at": "2026-06-05T04:00:10+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/YvBnjsZO0oo/maxresdefault.jpg",
+          "text_length": 972,
+          "media_url_count": 22
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=9guti4r23aI",
+          "account": "@matsuribonodori",
+          "title": "16 EZ DO DANCE 　横浜開港祭 BON ODORI　20260601",
+          "published_at": "2026-06-05T04:00:37+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/9guti4r23aI/maxresdefault.jpg",
+          "text_length": 972,
+          "media_url_count": 22
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=QcUh2syTVpw",
+          "account": "@matsuribonodori",
+          "title": "17 野毛山節   DJ帝 mix 　横浜開港祭 BON ODORI　20260601",
+          "published_at": "2026-06-05T15:00:22+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/QcUh2syTVpw/maxresdefault.jpg",
+          "text_length": 972,
+          "media_url_count": 22
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=lKIFoe8NgvA",
+          "account": "@matsuribonodori",
+          "title": "18 浜っ娘音頭 　横浜開港祭 BON ODORI　20260601",
+          "published_at": "2026-06-05T16:00:17+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/lKIFoe8NgvA/maxresdefault.jpg",
+          "text_length": 972,
+          "media_url_count": 22
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=zYYzOZUEcGU",
+          "account": "@matsuribonodori",
+          "title": "19 Septmber 　横浜開港祭 BON ODORI　20260601",
+          "published_at": "2026-06-05T17:00:32+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/zYYzOZUEcGU/maxresdefault.jpg",
+          "text_length": 972,
+          "media_url_count": 22
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=stvVBO2W0CI",
+          "account": "@matsuribonodori",
+          "title": "20 希望の轍 　横浜開港祭 BON ODORI　20260601",
+          "published_at": "2026-06-05T18:00:23+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/stvVBO2W0CI/maxresdefault.jpg",
+          "text_length": 972,
+          "media_url_count": 22
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=e_rYMmfRaVE",
+          "account": "@matsuribonodori",
+          "title": "21 ダンシングヒーロー 　横浜開港祭 BON ODORI　20260601",
+          "published_at": "2026-06-05T19:00:09+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/e_rYMmfRaVE/maxresdefault.jpg",
+          "text_length": 972,
+          "media_url_count": 22
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=_XvxNzDV7Ew",
+          "account": "@matsuribonodori",
+          "title": "22 よこはまアラメヤ音頭（３部） 　横浜開港祭 BON ODORI　20260601",
+          "published_at": "2026-06-05T20:00:36+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/_XvxNzDV7Ew/maxresdefault.jpg",
+          "text_length": 972,
+          "media_url_count": 22
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=zyaDbEFcPq4",
+          "account": "@wadaikoCH",
+          "title": "浜っ娘音頭　「横浜開港祭盆踊り」３　2026年6月1日　パシフィコ横浜プラザ広場　トヨタモビリティ神奈川プレゼンツ",
+          "published_at": "2026-06-06T11:00:08+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/zyaDbEFcPq4/maxresdefault.jpg",
+          "text_length": 829,
+          "media_url_count": 14
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=_MBdUYBxsak",
+          "account": "@wadaikoCH",
+          "title": "鹿児島おはら節　「横浜開港祭盆踊り」４　2026年6月1日　パシフィコ横浜プラザ広場　トヨタモビリティ神奈川プレゼンツ",
+          "published_at": "2026-06-06T11:30:35+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/_MBdUYBxsak/maxresdefault.jpg",
+          "text_length": 829,
+          "media_url_count": 14
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=-M63RIxNHXY",
+          "account": "@wadaikoCH",
+          "title": "郡上節　春駒　「横浜開港祭盆踊り」５　2026年6月1日　パシフィコ横浜プラザ広場　トヨタモビリティ神奈川プレゼンツ",
+          "published_at": "2026-06-07T11:00:35+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/-M63RIxNHXY/maxresdefault.jpg",
+          "text_length": 829,
+          "media_url_count": 14
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=iVkvjn_qYsQ",
+          "account": "@wadaikoCH",
+          "title": "希望の轍　「横浜開港祭盆踊り」６　2026年6月1日　パシフィコ横浜プラザ広場　トヨタモビリティ神奈川プレゼンツ",
+          "published_at": "2026-06-07T11:30:16+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/iVkvjn_qYsQ/maxresdefault.jpg",
+          "text_length": 829,
+          "media_url_count": 14
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=TABjlaNTzIk",
+          "account": "@wadaikoCH",
+          "title": "青と夏（Mrs. GREEN APPLE）　「横浜開港祭盆踊り」７　2026年6月1日　パシフィコ横浜プラザ広場　トヨタモビリティ神奈川プレゼンツ",
+          "published_at": "2026-06-08T11:00:29+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/TABjlaNTzIk/maxresdefault.jpg",
+          "text_length": 829,
+          "media_url_count": 14
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=SX9nrOxDcZQ",
+          "account": "@wadaikoCH",
+          "title": "Ultra Soul（B'z）　「横浜開港祭盆踊り」８　2026年6月1日　パシフィコ横浜プラザ広場　トヨタモビリティ神奈川プレゼンツ",
+          "published_at": "2026-06-08T11:30:29+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/SX9nrOxDcZQ/maxresdefault.jpg",
+          "text_length": 829,
+          "media_url_count": 14
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=nv_RCYJCdrc",
+          "account": "@wadaikoCH",
+          "title": "野毛山節　「横浜開港祭盆踊り」９　2026年6月1日　パシフィコ横浜プラザ広場　トヨタモビリティ神奈川プレゼンツ",
+          "published_at": "2026-06-09T11:00:01+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/nv_RCYJCdrc/maxresdefault.jpg",
+          "text_length": 829,
+          "media_url_count": 14
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=R6w3tTUEH4Q",
+          "account": "@wadaikoCH",
+          "title": "浜っ娘音頭　「横浜開港祭盆踊り」10　2026年6月1日　パシフィコ横浜プラザ広場　トヨタモビリティ神奈川プレゼンツ",
+          "published_at": "2026-06-09T11:30:08+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/R6w3tTUEH4Q/maxresdefault.jpg",
+          "text_length": 829,
+          "media_url_count": 14
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=cn-J6lcHzoY",
+          "account": "@wadaikoCH",
+          "title": "September（Earth, Wind & Fire）　「横浜開港祭盆踊り」11　2026年6月1日　パシフィコ横浜プラザ広場　トヨタモビリティ神奈川プレゼンツ",
+          "published_at": "2026-06-10T11:00:31+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/cn-J6lcHzoY/maxresdefault.jpg",
+          "text_length": 829,
+          "media_url_count": 14
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=nhT3KtZgI60",
+          "account": "@wadaikoCH",
+          "title": "希望の轍（サザンオールスターズ）　「横浜開港祭盆踊り」12　2026年6月1日　パシフィコ横浜プラザ広場　トヨタモビリティ神奈川プレゼンツ",
+          "published_at": "2026-06-10T11:30:26+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/nhT3KtZgI60/maxresdefault.jpg",
+          "text_length": 829,
+          "media_url_count": 14
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=bmcO1u26wyI",
+          "account": "@wadaikoCH",
+          "title": "ダンシング・ヒーロー（荻野目洋子）　「横浜開港祭盆踊り」13　2026年6月1日　パシフィコ横浜プラザ広場　トヨタモビリティ神奈川プレゼンツ",
+          "published_at": "2026-06-11T02:00:27+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/bmcO1u26wyI/maxresdefault.jpg",
+          "text_length": 829,
+          "media_url_count": 14
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ZH1OXi8aQFI",
+          "account": "@wadaikoCH",
+          "title": "よこはまアラメヤ音頭　「横浜開港祭盆踊り」14終　2026年6月1日　パシフィコ横浜プラザ広場　トヨタモビリティ神奈川プレゼンツ",
+          "published_at": "2026-06-11T02:30:24+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/ZH1OXi8aQFI/maxresdefault.jpg",
+          "text_length": 829,
+          "media_url_count": 14
+        }
+      ],
+      "source_video_count": 35,
+      "song_count": 14,
+      "confidence": "high",
+      "role": "result",
+      "act": "observe",
+      "reliability_key": "complete_numbered_video",
+      "matched_public_event": null
+    },
+    {
+      "occurrence_key": "370e7eb76465ada1",
+      "event_key_hint": "kunitachi-june-festa-2026-06-07",
+      "event_name_hint": "国立旭通りジューンフェスタ盆踊り",
+      "venue": "国立旭通り",
+      "event_date": "2026-06-07",
+      "accounts": [
+        "@wadaikoCH"
+      ],
+      "setlist": [
+        {
+          "number": 1,
+          "title": "炭坑節",
+          "url": "https://www.youtube.com/watch?v=KvBfA5BHX8U"
+        },
+        {
+          "number": 2,
+          "title": "国立音頭",
+          "url": "https://www.youtube.com/watch?v=O3YCMn5xfv4"
+        },
+        {
+          "number": 3,
+          "title": "くにたち囃子",
+          "url": "https://www.youtube.com/watch?v=yUEKyvLlvO0"
+        },
+        {
+          "number": 4,
+          "title": "四季の花踊り",
+          "url": "https://www.youtube.com/watch?v=k0B0KQeF09U"
+        },
+        {
+          "number": 5,
+          "title": "新しい風",
+          "url": "https://www.youtube.com/watch?v=xPfRkZRO5xE"
+        },
+        {
+          "number": 6,
+          "title": "少年八木節",
+          "url": "https://www.youtube.com/watch?v=WjBGN8Kr4ok"
+        }
+      ],
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=KvBfA5BHX8U",
+          "account": "@wadaikoCH",
+          "title": "「炭坑節」　国立旭通りジューンフェスタ盆踊り１　2026年6月7日",
+          "published_at": "2026-06-09T09:00:22+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/KvBfA5BHX8U/maxresdefault.jpg",
+          "text_length": 405,
+          "media_url_count": 6
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=O3YCMn5xfv4",
+          "account": "@wadaikoCH",
+          "title": "国立音頭　国立旭通りジューンフェスタ盆踊り２　2026年6月7日",
+          "published_at": "2026-06-10T09:00:06+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/O3YCMn5xfv4/maxresdefault.jpg",
+          "text_length": 405,
+          "media_url_count": 6
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=yUEKyvLlvO0",
+          "account": "@wadaikoCH",
+          "title": "くにたち囃子　国立旭通りジューンフェスタ盆踊り３　2026年6月7日",
+          "published_at": "2026-06-11T00:00:05+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/yUEKyvLlvO0/maxresdefault.jpg",
+          "text_length": 405,
+          "media_url_count": 6
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=k0B0KQeF09U",
+          "account": "@wadaikoCH",
+          "title": "【四季の花踊り】　国立旭通りジューンフェスタ盆踊り４　2026年6月7日",
+          "published_at": "2026-06-12T00:00:15+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/k0B0KQeF09U/maxresdefault.jpg",
+          "text_length": 405,
+          "media_url_count": 6
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=xPfRkZRO5xE",
+          "account": "@wadaikoCH",
+          "title": "新しい風　国立旭通りジューンフェスタ盆踊り５　2026年6月7日",
+          "published_at": "2026-06-13T00:00:01+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/xPfRkZRO5xE/maxresdefault.jpg",
+          "text_length": 405,
+          "media_url_count": 6
+        }
+      ],
+      "source_video_count": 5,
+      "song_count": 6,
+      "confidence": "high",
+      "role": "result",
+      "act": "observe",
+      "reliability_key": "complete_numbered_video",
+      "matched_public_event": null
+    },
+    {
+      "occurrence_key": "512602130c654f9b",
+      "event_key_hint": "山王音頭と民踊大会",
+      "event_name_hint": "山王音頭と民踊大会",
+      "venue": "赤坂日枝神社",
+      "event_date": "2026-06-13",
+      "accounts": [
+        "@wadaikoCH"
+      ],
+      "setlist": [
+        {
+          "number": 1,
+          "title": "東京音頭",
+          "url": "https://www.youtube.com/watch?v=-H-T164L3QM"
+        },
+        {
+          "number": 2,
+          "title": "炭坑節",
+          "url": "https://www.youtube.com/watch?v=hDckpEGkzTI"
+        },
+        {
+          "number": 3,
+          "title": "大東京音頭",
+          "url": "https://www.youtube.com/watch?v=qd96HMCNCm8"
+        },
+        {
+          "number": 4,
+          "title": "ドンパン節",
+          "url": "https://www.youtube.com/watch?v=7f5Yuf3N9Aw"
+        },
+        {
+          "number": 5,
+          "title": "白浜音頭",
+          "url": "https://www.youtube.com/watch?v=0y41AkjQLzI"
+        },
+        {
+          "number": 6,
+          "title": "八木節",
+          "url": "https://www.youtube.com/watch?v=U7S3ppeF_YU"
+        },
+        {
+          "number": 7,
+          "title": "花笠音頭",
+          "url": "https://www.youtube.com/watch?v=LhM7yggtrZ0"
+        },
+        {
+          "number": 8,
+          "title": "おこさ節",
+          "url": "https://www.youtube.com/watch?v=Kolply49UG4"
+        },
+        {
+          "number": 9,
+          "title": "相馬甚句",
+          "url": "https://www.youtube.com/watch?v=2gfhUtwHOKA"
+        },
+        {
+          "number": 10,
+          "title": "東京おどり",
+          "url": "https://www.youtube.com/watch?v=fjrQwtowLI8"
+        },
+        {
+          "number": 11,
+          "title": "山王音頭",
+          "url": "https://www.youtube.com/watch?v=OhhRnGn9PGw"
+        },
+        {
+          "number": 12,
+          "title": "千代田おどり",
+          "url": "https://www.youtube.com/watch?v=GE_F7-n85Xo"
+        },
+        {
+          "number": 13,
+          "title": "水戸黄門おどり",
+          "url": "https://www.youtube.com/watch?v=7EnO0iYnIYs"
+        }
+      ],
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=-H-T164L3QM",
+          "account": "@wadaikoCH",
+          "title": "【速報】東京音頭　【赤坂日枝神社】　山王祭盆踊り１　「山王音頭と民踊大会」の風景　2026年6月13日",
+          "published_at": "2026-06-13T04:30:52+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/-H-T164L3QM/maxresdefault.jpg",
+          "text_length": 439,
+          "media_url_count": 2
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=hDckpEGkzTI",
+          "account": "@wadaikoCH",
+          "title": "炭坑節　【赤坂日枝神社】 山王祭 盆踊り２　「山王音頭と民踊大会」の風景　2026年6月13日",
+          "published_at": "2026-06-13T05:00:21+00:00",
+          "thumbnail_url": "https://i.ytimg.com/vi/hDckpEGkzTI/maxresdefault.jpg",
+          "text_length": 879,
+          "media_url_count": 15
+        }
+      ],
+      "source_video_count": 2,
+      "song_count": 13,
+      "confidence": "high",
+      "role": "result",
+      "act": "observe",
+      "reliability_key": "complete_numbered_video",
+      "matched_public_event": {
+        "name": "山王音頭と民踊大会",
+        "venue": "山王パークタワー公開空地",
+        "date": "2026-06-13",
+        "date_end": "2026-06-15",
+        "score": 105,
+        "reasons": [
+          "date",
+          "event_name_exact",
+          "event_key_hint"
+        ]
+      },
+      "canonical_event_name": "山王音頭と民踊大会",
+      "canonical_venue": "山王パークタワー公開空地"
+    }
+  ],
+  "skipped_count": 45,
+  "skipped_samples": [
+    {
+      "url": "https://www.youtube.com/watch?v=4ttmSOvY5ys",
+      "title": "鳥越神社「鳥越まつり」（宵宮清祓式）　2026年6月5日",
+      "reason": "not_bon_odori_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=EMEIulBg5Gw",
+      "title": "日枝神社 山王祭 神幸祭 （日本橋日枝神社～）神幸行列ダイジェスト　2026年6月12日【4K高画質】",
+      "reason": "not_bon_odori_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=GSrWdM0aK2g",
+      "title": "【速報】江戸三大祭り！日枝神社 山王祭 神幸祭 （麹町～国立劇場～皇居外苑）神幸行列ダイジェスト　2026年6月12日【4K高画質】",
+      "reason": "not_bon_odori_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=y_yyiQWuVZw",
+      "title": "【4K】三社祭　西浅草八幡神社大祭　本社神輿渡御　2026年5月17日",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=QczIzSgsYoQ",
+      "title": "鳥越神社「鳥越まつり」　町会神輿連合渡御（宵宮）　2026年6月6日",
+      "reason": "not_bon_odori_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=VUIW-8QYr_8",
+      "title": "【圧巻の神輿振り】素盞雄神社（すさのおじんじゃ）「天王祭」本まつり（御神幸祭）の熱狂！　2026年6月6日",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=UmVKYyzDSz0",
+      "title": "【4K】一触即発！本社神輿宮入りダイジェスト　鳥越神社「鳥越まつり」　　2026年6月7日",
+      "reason": "not_bon_odori_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=3rbyNCXgEAM",
+      "title": "喧嘩勃発！警察制止…鳥越神社「鳥越まつり」本社神輿渡御の衝撃映像 2026.6.7",
+      "reason": "not_bon_odori_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=-ZW3dlU0P-I",
+      "title": "五條天神社例大祭２　本社神輿宮入り道中・木遣り　2026年5月26日　千貫神輿　宮神輿",
+      "reason": "not_bon_odori_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=6wnxsIU3VoA",
+      "title": "【速報】鳥越神社「鳥越まつり」　本社神輿渡御ダイジェスト　2026年6月7日　東京一の重さを誇る千貫神輿の迫力！　 #鳥越まつり #鳥越神社 #千貫神輿 #神輿 #お祭り #日本の祭り",
+      "reason": "not_bon_odori_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=x1O5-Z27lOk",
+      "title": "五條天神社例大祭１　本社神輿渡御　2026年5月26日　千貫神輿",
+      "reason": "not_bon_odori_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=2z-GofkFX8s",
+      "title": "【速報】迫力満点！素戔雄神社天王祭 本社神輿の「神輿振り」が凄すぎる　2026年6月6日",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=6WjbWgdU4L4",
+      "title": "44 繁昌節　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=5wy5lHoqj9w",
+      "title": "43 むぎわら音頭　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=f3rafNm0rZE",
+      "title": "42 堀江盆歌　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=2Rq-qBXsynw",
+      "title": "41 こまづくり唄　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=rNHkhQxMoVM",
+      "title": "40 よこはまアラメヤ音頭　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Uohu7rIJ6jk",
+      "title": "39 河内音頭　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Ilz6hDp8QbA",
+      "title": "38 さくら音頭　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=gC6JYrumFII",
+      "title": "37 佐渡おけさ　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=W__u03aJ0rs",
+      "title": "36 ドダレバチ　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=etABTMcQCCs",
+      "title": "35 黒石じょんがら　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ROUIXWrtjj8",
+      "title": "34 黒石甚句　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=-qGMkGZJ6zA",
+      "title": "33 黒石よされ　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=0pVYOUkQKU0",
+      "title": "32 鰺ヶ沢甚句　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=O1RcEwDPIoU",
+      "title": "31 虎じょ様　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=aNwGl78I7ic",
+      "title": "30 八戸小限　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=3Jyp2LG1NJ0",
+      "title": "28 江州音頭　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=aUo0c79bPhI",
+      "title": "27 Beat it盆踊り　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=iDSSkftykFI",
+      "title": "26 紀州白浜音頭　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531",
+      "reason": "no_numbered_setlist"
+    }
+  ],
+  "backfill_options": {
+    "current_youtube_voice_count": 199,
+    "voices_at_or_below_500_chars": 33,
+    "voices_without_media_urls": 4,
+    "options": [
+      {
+        "method": "youtube_data_api_videos_list",
+        "summary": "video idを抽出して videos.list(part=snippet) で description 全文を取得する",
+        "cost": "quota 1 unit/request。50 ids/request なら約4 requestで199本を取得可能",
+        "pros": [
+          "公式API",
+          "HTML変更に強い",
+          "説明文の取得が安定"
+        ],
+        "cons": [
+          "API key設定が必要",
+          "削除・非公開動画は取得不可"
+        ],
+        "recommendation": "preferred"
+      },
+      {
+        "method": "youtube_watch_page_fetch",
+        "summary": "動画個別ページを取得して初期データ内の description を抽出する",
+        "cost": "API quota不要。約199 HTTP GET",
+        "pros": [
+          "追加API key不要",
+          "小規模なら実装は軽い"
+        ],
+        "cons": [
+          "YouTubeのHTML変更に弱い",
+          "レート制限・同意画面・bot判定の影響を受けやすい"
+        ],
+        "recommendation": "fallback"
+      }
+    ]
+  }
+}

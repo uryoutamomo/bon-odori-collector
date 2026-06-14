@@ -1,0 +1,177 @@
+{
+  "generated_by": "backfill_youtube_descriptions.py",
+  "generated_at": "2026-06-14T08:05:09.521589+00:00",
+  "dry_run": false,
+  "planned_video_count": 199,
+  "api_request_count_estimate": 4,
+  "fetched_video_count": 199,
+  "result": {
+    "updated": 0,
+    "expanded": 0,
+    "media_updated": 0,
+    "metadata_updated": 199,
+    "missing": 0
+  },
+  "planned_samples": [
+    {
+      "index": 0,
+      "video_id": "hDckpEGkzTI",
+      "url": "https://www.youtube.com/watch?v=hDckpEGkzTI",
+      "title": "炭坑節　【赤坂日枝神社】 山王祭 盆踊り２　「山王音頭と民踊大会」の風景　2026年6月13日",
+      "current_text_length": 879,
+      "has_media_urls": true
+    },
+    {
+      "index": 1,
+      "video_id": "-H-T164L3QM",
+      "url": "https://www.youtube.com/watch?v=-H-T164L3QM",
+      "title": "【速報】東京音頭　【赤坂日枝神社】　山王祭盆踊り１　「山王音頭と民踊大会」の風景　2026年6月13日",
+      "current_text_length": 439,
+      "has_media_urls": true
+    },
+    {
+      "index": 2,
+      "video_id": "4ttmSOvY5ys",
+      "url": "https://www.youtube.com/watch?v=4ttmSOvY5ys",
+      "title": "鳥越神社「鳥越まつり」（宵宮清祓式）　2026年6月5日",
+      "current_text_length": 403,
+      "has_media_urls": true
+    },
+    {
+      "index": 3,
+      "video_id": "dm6SxqoFPVA",
+      "url": "https://www.youtube.com/watch?v=dm6SxqoFPVA",
+      "title": "男おけさ～〆太鼓　飛鳥山公園輪踊り　「舞ことり」30終　2026年5月24日　東京都北区　#盆踊り",
+      "current_text_length": 1170,
+      "has_media_urls": true
+    },
+    {
+      "index": 4,
+      "video_id": "xPfRkZRO5xE",
+      "url": "https://www.youtube.com/watch?v=xPfRkZRO5xE",
+      "title": "新しい風　国立旭通りジューンフェスタ盆踊り５　2026年6月7日",
+      "current_text_length": 405,
+      "has_media_urls": true
+    },
+    {
+      "index": 5,
+      "video_id": "EMEIulBg5Gw",
+      "url": "https://www.youtube.com/watch?v=EMEIulBg5Gw",
+      "title": "日枝神社 山王祭 神幸祭 （日本橋日枝神社～）神幸行列ダイジェスト　2026年6月12日【4K高画質】",
+      "current_text_length": 358,
+      "has_media_urls": true
+    },
+    {
+      "index": 6,
+      "video_id": "7ALmh64gFwA",
+      "url": "https://www.youtube.com/watch?v=7ALmh64gFwA",
+      "title": "ソーラン北海　飛鳥山公園輪踊り　「舞ことり」29　2026年5月24日　東京都北区　#盆踊り",
+      "current_text_length": 1170,
+      "has_media_urls": true
+    },
+    {
+      "index": 7,
+      "video_id": "4QtZ5d3ynZk",
+      "url": "https://www.youtube.com/watch?v=4QtZ5d3ynZk",
+      "title": "日本一だよ　飛鳥山公園輪踊り　「舞ことり」28　2026年5月24日　東京都北区　#盆踊り",
+      "current_text_length": 1170,
+      "has_media_urls": true
+    },
+    {
+      "index": 8,
+      "video_id": "k0B0KQeF09U",
+      "url": "https://www.youtube.com/watch?v=k0B0KQeF09U",
+      "title": "【四季の花踊り】　国立旭通りジューンフェスタ盆踊り４　2026年6月7日",
+      "current_text_length": 405,
+      "has_media_urls": true
+    },
+    {
+      "index": 9,
+      "video_id": "GSrWdM0aK2g",
+      "url": "https://www.youtube.com/watch?v=GSrWdM0aK2g",
+      "title": "【速報】江戸三大祭り！日枝神社 山王祭 神幸祭 （麹町～国立劇場～皇居外苑）神幸行列ダイジェスト　2026年6月12日【4K高画質】",
+      "current_text_length": 358,
+      "has_media_urls": true
+    },
+    {
+      "index": 10,
+      "video_id": "ZH1OXi8aQFI",
+      "url": "https://www.youtube.com/watch?v=ZH1OXi8aQFI",
+      "title": "よこはまアラメヤ音頭　「横浜開港祭盆踊り」14終　2026年6月1日　パシフィコ横浜プラザ広場　トヨタモビリティ神奈川プレゼンツ",
+      "current_text_length": 829,
+      "has_media_urls": true
+    },
+    {
+      "index": 11,
+      "video_id": "bmcO1u26wyI",
+      "url": "https://www.youtube.com/watch?v=bmcO1u26wyI",
+      "title": "ダンシング・ヒーロー（荻野目洋子）　「横浜開港祭盆踊り」13　2026年6月1日　パシフィコ横浜プラザ広場　トヨタモビリティ神奈川プレゼンツ",
+      "current_text_length": 829,
+      "has_media_urls": true
+    },
+    {
+      "index": 12,
+      "video_id": "CevVRysR7Bs",
+      "url": "https://www.youtube.com/watch?v=CevVRysR7Bs",
+      "title": "日本晴れだよ　飛鳥山公園輪踊り　「舞ことり」27　2026年5月24日　東京都北区　#盆踊り",
+      "current_text_length": 1170,
+      "has_media_urls": true
+    },
+    {
+      "index": 13,
+      "video_id": "VPR1iNPV_yU",
+      "url": "https://www.youtube.com/watch?v=VPR1iNPV_yU",
+      "title": "日本よいとこ　飛鳥山公園輪踊り　「舞ことり」26　2026年5月24日　東京都北区　#盆踊り",
+      "current_text_length": 1170,
+      "has_media_urls": true
+    },
+    {
+      "index": 14,
+      "video_id": "yUEKyvLlvO0",
+      "url": "https://www.youtube.com/watch?v=yUEKyvLlvO0",
+      "title": "くにたち囃子　国立旭通りジューンフェスタ盆踊り３　2026年6月7日",
+      "current_text_length": 405,
+      "has_media_urls": true
+    },
+    {
+      "index": 15,
+      "video_id": "nhT3KtZgI60",
+      "url": "https://www.youtube.com/watch?v=nhT3KtZgI60",
+      "title": "希望の轍（サザンオールスターズ）　「横浜開港祭盆踊り」12　2026年6月1日　パシフィコ横浜プラザ広場　トヨタモビリティ神奈川プレゼンツ",
+      "current_text_length": 829,
+      "has_media_urls": true
+    },
+    {
+      "index": 16,
+      "video_id": "cn-J6lcHzoY",
+      "url": "https://www.youtube.com/watch?v=cn-J6lcHzoY",
+      "title": "September（Earth, Wind & Fire）　「横浜開港祭盆踊り」11　2026年6月1日　パシフィコ横浜プラザ広場　トヨタモビリティ神奈川プレゼンツ",
+      "current_text_length": 829,
+      "has_media_urls": true
+    },
+    {
+      "index": 17,
+      "video_id": "yBZ1rXA6LRo",
+      "url": "https://www.youtube.com/watch?v=yBZ1rXA6LRo",
+      "title": "「東西南北音頭」　飛鳥山公園輪踊り　「舞ことり」25　2026年5月24日　東京都北区　#盆踊り",
+      "current_text_length": 1170,
+      "has_media_urls": true
+    },
+    {
+      "index": 18,
+      "video_id": "tN5cocxKGmw",
+      "url": "https://www.youtube.com/watch?v=tN5cocxKGmw",
+      "title": "東北音頭　飛鳥山公園輪踊り　「舞ことり」24　2026年5月24日　東京都北区　#盆踊り",
+      "current_text_length": 1170,
+      "has_media_urls": true
+    },
+    {
+      "index": 19,
+      "video_id": "O3YCMn5xfv4",
+      "url": "https://www.youtube.com/watch?v=O3YCMn5xfv4",
+      "title": "国立音頭　国立旭通りジューンフェスタ盆踊り２　2026年6月7日",
+      "current_text_length": 405,
+      "has_media_urls": true
+    }
+  ]
+}

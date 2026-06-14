@@ -1,0 +1,237 @@
+{
+  "generated_by": "build_youtube_channels.py",
+  "generated_at": "2026-06-14T09:20:31.235947+00:00",
+  "source": "data/voices.json",
+  "setlist_source": "data/youtube_setlist_occurrences.json",
+  "channel_count": 2,
+  "priority_channel_count": 2,
+  "youtube_voice_count": 199,
+  "channels": [
+    {
+      "channel_key": "UCNF_5e3ZvziJueTWvTPATGw",
+      "channel_id": "UCNF_5e3ZvziJueTWvTPATGw",
+      "channel_title": "和太鼓お祭りチャンネル",
+      "channel_url": "https://www.youtube.com/channel/UCNF_5e3ZvziJueTWvTPATGw",
+      "accounts": [
+        "@wadaikoCH"
+      ],
+      "feed_names": [
+        "和太鼓お祭りCH"
+      ],
+      "representative_thumbnail_url": "https://i.ytimg.com/vi/hDckpEGkzTI/maxresdefault.jpg",
+      "video_count": 133,
+      "bon_odori_video_count": 110,
+      "text_gt_500_count": 102,
+      "media_url_video_count": 129,
+      "setlist_occurrence_count": 8,
+      "setlist_song_count": 154,
+      "complete_setlist_count": 8,
+      "venue_date_success_count": 7,
+      "first_published_at": "2026-05-28T10:00:07Z",
+      "last_published_at": "2026-06-13T14:00:21Z",
+      "sample_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=hDckpEGkzTI",
+          "video_id": "hDckpEGkzTI",
+          "title": "炭坑節　【赤坂日枝神社】 山王祭 盆踊り２　「山王音頭と民踊大会」の風景　2026年6月13日",
+          "published_at": "2026-06-13T14:00:21Z",
+          "thumbnail_url": "https://i.ytimg.com/vi/hDckpEGkzTI/maxresdefault.jpg"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=-H-T164L3QM",
+          "video_id": "-H-T164L3QM",
+          "title": "【速報】東京音頭　【赤坂日枝神社】　山王祭盆踊り１　「山王音頭と民踊大会」の風景　2026年6月13日",
+          "published_at": "2026-06-13T13:30:52Z",
+          "thumbnail_url": "https://i.ytimg.com/vi/-H-T164L3QM/maxresdefault.jpg"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=4ttmSOvY5ys",
+          "video_id": "4ttmSOvY5ys",
+          "title": "鳥越神社「鳥越まつり」（宵宮清祓式）　2026年6月5日",
+          "published_at": "2026-06-13T10:30:30Z",
+          "thumbnail_url": "https://i.ytimg.com/vi/4ttmSOvY5ys/maxresdefault.jpg"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=dm6SxqoFPVA",
+          "video_id": "dm6SxqoFPVA",
+          "title": "男おけさ～〆太鼓　飛鳥山公園輪踊り　「舞ことり」30終　2026年5月24日　東京都北区　#盆踊り",
+          "published_at": "2026-06-13T10:00:25Z",
+          "thumbnail_url": "https://i.ytimg.com/vi/dm6SxqoFPVA/maxresdefault.jpg"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=xPfRkZRO5xE",
+          "video_id": "xPfRkZRO5xE",
+          "title": "新しい風　国立旭通りジューンフェスタ盆踊り５　2026年6月7日",
+          "published_at": "2026-06-13T09:00:01Z",
+          "thumbnail_url": "https://i.ytimg.com/vi/xPfRkZRO5xE/maxresdefault.jpg"
+        }
+      ],
+      "events": [
+        {
+          "occurrence_key": "512602130c654f9b",
+          "event_name": "山王音頭と民踊大会",
+          "venue": "山王パークタワー公開空地",
+          "event_date": "2026-06-13",
+          "song_count": 13,
+          "confidence": "high"
+        },
+        {
+          "occurrence_key": "370e7eb76465ada1",
+          "event_name": "国立旭通りジューンフェスタ盆踊り",
+          "venue": "国立旭通り",
+          "event_date": "2026-06-07",
+          "song_count": 6,
+          "confidence": "high"
+        },
+        {
+          "occurrence_key": "1debf98e280dc2da",
+          "event_name": "横浜開港祭 BON ODORI",
+          "venue": "パシフィコ横浜プラザ広場",
+          "event_date": "2026-06-01",
+          "song_count": 14,
+          "confidence": "high"
+        },
+        {
+          "occurrence_key": "b193da52941a7fd5",
+          "event_name": "Min-Yoi's盆踊り",
+          "venue": "日本民謡会館",
+          "event_date": "2026-05-31",
+          "song_count": 44,
+          "confidence": "high"
+        },
+        {
+          "occurrence_key": "5633fd82e92b855e",
+          "event_name": "品川音頭 【おおさきHappy Olive Festival】「晴盆盆踊り」1",
+          "venue": "大崎駅周辺",
+          "event_date": "2026-05-30",
+          "song_count": 8,
+          "confidence": "high"
+        },
+        {
+          "occurrence_key": "7728efdca27d5f06",
+          "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+          "venue": "飛鳥山公園",
+          "event_date": "2026-05-24",
+          "song_count": 30,
+          "confidence": "high"
+        },
+        {
+          "occurrence_key": "c443a1817bc8a71e",
+          "event_name": "Min-Yoi's盆踊り",
+          "venue": "日本民謡会館",
+          "event_date": "2025-10-19",
+          "song_count": 28,
+          "confidence": "high"
+        },
+        {
+          "occurrence_key": "df5ed425972aa1f4",
+          "event_name": "お囃子同好会「雅」レクチャー",
+          "venue": "お囃子同好会「雅」レクチャー",
+          "event_date": "",
+          "song_count": 11,
+          "confidence": "low"
+        }
+      ],
+      "source": "existing_voices",
+      "auto_score": 100,
+      "collection_status": "優先",
+      "score_reasons": [
+        "youtube動画133本",
+        "盆踊り文脈110本",
+        "会場日付つきセットリスト8件",
+        "曲リンク154件",
+        "まとまった曲目表8件",
+        "説明欄リンクあり129本"
+      ]
+    },
+    {
+      "channel_key": "UCLSZK_q5ma6aeIrVRUEpkNw",
+      "channel_id": "UCLSZK_q5ma6aeIrVRUEpkNw",
+      "channel_title": "祭のきせき　盆踊り",
+      "channel_url": "https://www.youtube.com/channel/UCLSZK_q5ma6aeIrVRUEpkNw",
+      "accounts": [
+        "@matsuribonodori"
+      ],
+      "feed_names": [
+        "祭のきせき 盆踊り"
+      ],
+      "representative_thumbnail_url": "https://i.ytimg.com/vi/_XvxNzDV7Ew/maxresdefault.jpg",
+      "video_count": 66,
+      "bon_odori_video_count": 64,
+      "text_gt_500_count": 64,
+      "media_url_video_count": 66,
+      "setlist_occurrence_count": 2,
+      "setlist_song_count": 55,
+      "complete_setlist_count": 2,
+      "venue_date_success_count": 2,
+      "first_published_at": "2026-05-14T01:00:15Z",
+      "last_published_at": "2026-06-06T05:00:36Z",
+      "sample_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=_XvxNzDV7Ew",
+          "video_id": "_XvxNzDV7Ew",
+          "title": "22 よこはまアラメヤ音頭（３部） 　横浜開港祭 BON ODORI　20260601",
+          "published_at": "2026-06-06T05:00:36Z",
+          "thumbnail_url": "https://i.ytimg.com/vi/_XvxNzDV7Ew/maxresdefault.jpg"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=e_rYMmfRaVE",
+          "video_id": "e_rYMmfRaVE",
+          "title": "21 ダンシングヒーロー 　横浜開港祭 BON ODORI　20260601",
+          "published_at": "2026-06-06T04:00:09Z",
+          "thumbnail_url": "https://i.ytimg.com/vi/e_rYMmfRaVE/maxresdefault.jpg"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=stvVBO2W0CI",
+          "video_id": "stvVBO2W0CI",
+          "title": "20 希望の轍 　横浜開港祭 BON ODORI　20260601",
+          "published_at": "2026-06-06T03:00:23Z",
+          "thumbnail_url": "https://i.ytimg.com/vi/stvVBO2W0CI/maxresdefault.jpg"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=zYYzOZUEcGU",
+          "video_id": "zYYzOZUEcGU",
+          "title": "19 Septmber 　横浜開港祭 BON ODORI　20260601",
+          "published_at": "2026-06-06T02:00:32Z",
+          "thumbnail_url": "https://i.ytimg.com/vi/zYYzOZUEcGU/maxresdefault.jpg"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=lKIFoe8NgvA",
+          "video_id": "lKIFoe8NgvA",
+          "title": "18 浜っ娘音頭 　横浜開港祭 BON ODORI　20260601",
+          "published_at": "2026-06-06T01:00:17Z",
+          "thumbnail_url": "https://i.ytimg.com/vi/lKIFoe8NgvA/maxresdefault.jpg"
+        }
+      ],
+      "events": [
+        {
+          "occurrence_key": "1debf98e280dc2da",
+          "event_name": "横浜開港祭 BON ODORI",
+          "venue": "パシフィコ横浜プラザ広場",
+          "event_date": "2026-06-01",
+          "song_count": 14,
+          "confidence": "high"
+        },
+        {
+          "occurrence_key": "06a515b0207f1b2d",
+          "event_name": "マロニエまつり盆踊り大会 2 ヒューリック浅草橋ビル前(全曲ver)",
+          "venue": "ヒューリック浅草橋前",
+          "event_date": "2026-05-09",
+          "song_count": 41,
+          "confidence": "high"
+        }
+      ],
+      "source": "existing_voices",
+      "auto_score": 100,
+      "collection_status": "優先",
+      "score_reasons": [
+        "youtube動画66本",
+        "盆踊り文脈64本",
+        "会場日付つきセットリスト2件",
+        "曲リンク55件",
+        "まとまった曲目表2件",
+        "説明欄リンクあり66本"
+      ]
+    }
+  ]
+}
