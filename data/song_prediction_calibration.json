@@ -1,0 +1,1390 @@
+{
+  "snapshot_count": 95,
+  "scored_count": 95,
+  "mean_brier": 0.017007,
+  "scored_event_count": 5,
+  "summary": {
+    "by_event": [
+      {
+        "event_name": "Min-Yoi's盆踊り",
+        "venue": "日本民謡会館",
+        "scored_count": 40,
+        "actual_present_count": 40,
+        "mean_probability": 0.8647,
+        "mean_soft_label": 0.95,
+        "mean_brier": 0.039273
+      },
+      {
+        "event_name": "国立旭通りジューンフェスタ盆踊り",
+        "venue": "国立旭通り",
+        "scored_count": 6,
+        "actual_present_count": 6,
+        "mean_probability": 0.99,
+        "mean_soft_label": 0.95,
+        "mean_brier": 0.0016
+      },
+      {
+        "event_name": "山王音頭と民踊大会",
+        "venue": "山王パークタワー公開空地",
+        "scored_count": 19,
+        "actual_present_count": 19,
+        "mean_probability": 0.8,
+        "mean_soft_label": 0.8,
+        "mean_brier": 0.0
+      },
+      {
+        "event_name": "横浜開港祭 BON ODORI",
+        "venue": "パシフィコ横浜プラザ広場",
+        "scored_count": 10,
+        "actual_present_count": 10,
+        "mean_probability": 0.99,
+        "mean_soft_label": 0.95,
+        "mean_brier": 0.0016
+      },
+      {
+        "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+        "venue": "飛鳥山公園",
+        "scored_count": 20,
+        "actual_present_count": 20,
+        "mean_probability": 0.974,
+        "mean_soft_label": 0.95,
+        "mean_brier": 0.00096
+      }
+    ],
+    "by_reliability_key": [
+      {
+        "reliability_key": "semi_official_setlist",
+        "scored_count": 19,
+        "actual_present_count": 19,
+        "mean_probability": 0.8,
+        "mean_soft_label": 0.8,
+        "mean_brier": 0.0,
+        "suggested_reliability": 0.8,
+        "suggested_delta": 0.0
+      },
+      {
+        "reliability_key": "unknown",
+        "scored_count": 76,
+        "actual_present_count": 76,
+        "mean_probability": 0.9199,
+        "mean_soft_label": 0.95,
+        "mean_brier": 0.021259,
+        "suggested_reliability": 0.95,
+        "suggested_delta": 0.0301
+      }
+    ]
+  },
+  "rows": [
+    {
+      "snapshot_id": "29e4c4519c60a41c3c15",
+      "occurrence_id": "ec59a8a891e1e0e5",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "song_name": "えびすくい音頭",
+      "probability": 0.6,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.1225,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "709e24a27edc20f39086",
+      "occurrence_id": "ec59a8a891e1e0e5",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "song_name": "じゃこっぺ踊り",
+      "probability": 0.6,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.1225,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "02c8679e54d6fc65b08e",
+      "occurrence_id": "ec59a8a891e1e0e5",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "song_name": "ドンパン節",
+      "probability": 0.6,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.1225,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "308fbade76ad3a0c2e2c",
+      "occurrence_id": "ec59a8a891e1e0e5",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "song_name": "大森甚句",
+      "probability": 0.6,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.1225,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "79719dbef0a7b04023b2",
+      "occurrence_id": "ec59a8a891e1e0e5",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "song_name": "春駒",
+      "probability": 0.6,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.1225,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "2410b31e1a8811e6997f",
+      "occurrence_id": "ec59a8a891e1e0e5",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "song_name": "炭坑節",
+      "probability": 0.6,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.1225,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "7e1b211a26cd899fd13e",
+      "occurrence_id": "ec59a8a891e1e0e5",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "song_name": "相馬盆唄",
+      "probability": 0.6,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.1225,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "02a3d0f8329d5fd4a4bd",
+      "occurrence_id": "ec59a8a891e1e0e5",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "song_name": "郡上節かわさき",
+      "probability": 0.6,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.1225,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "de31ad564968e9783776",
+      "occurrence_id": "ec59a8a891e1e0e5",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "song_name": "黒石よされ節",
+      "probability": 0.6,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.1225,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "1e723f696a025d039056",
+      "occurrence_id": "ec59a8a891e1e0e5",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "song_name": "ええじゃないか音頭",
+      "probability": 0.57,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.1444,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "cbb3045d30bed2413b7a",
+      "occurrence_id": "ec59a8a891e1e0e5",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "song_name": "池袋西口音頭",
+      "probability": 0.57,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.1444,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "96877dbd66e24d8973de",
+      "occurrence_id": "ec59a8a891e1e0e5",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "song_name": "津軽甚句",
+      "probability": 0.57,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.1444,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "c60734181f328693b5fc",
+      "occurrence_id": "0583978e0c9fb89d",
+      "event_name": "横浜開港祭 BON ODORI",
+      "venue": "パシフィコ横浜プラザ広場",
+      "song_name": "September",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "ef64770bbbd587e11015",
+      "occurrence_id": "0583978e0c9fb89d",
+      "event_name": "横浜開港祭 BON ODORI",
+      "venue": "パシフィコ横浜プラザ広場",
+      "song_name": "Ultra Soul",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "ff0f0ccde249aff3cf8f",
+      "occurrence_id": "0583978e0c9fb89d",
+      "event_name": "横浜開港祭 BON ODORI",
+      "venue": "パシフィコ横浜プラザ広場",
+      "song_name": "よこはまアラメヤ音頭",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "4b2e3daf3ababa7b41c0",
+      "occurrence_id": "0583978e0c9fb89d",
+      "event_name": "横浜開港祭 BON ODORI",
+      "venue": "パシフィコ横浜プラザ広場",
+      "song_name": "ダンシングヒーロー",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "c5bb74616564f94c9d7e",
+      "occurrence_id": "0583978e0c9fb89d",
+      "event_name": "横浜開港祭 BON ODORI",
+      "venue": "パシフィコ横浜プラザ広場",
+      "song_name": "希望の轍",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "df5c7c3bb27b9f94debb",
+      "occurrence_id": "0583978e0c9fb89d",
+      "event_name": "横浜開港祭 BON ODORI",
+      "venue": "パシフィコ横浜プラザ広場",
+      "song_name": "浜っ娘音頭",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "3b2a5add6296ce76aae2",
+      "occurrence_id": "0583978e0c9fb89d",
+      "event_name": "横浜開港祭 BON ODORI",
+      "venue": "パシフィコ横浜プラザ広場",
+      "song_name": "郡上節春駒",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "461200d7c9054580d4be",
+      "occurrence_id": "0583978e0c9fb89d",
+      "event_name": "横浜開港祭 BON ODORI",
+      "venue": "パシフィコ横浜プラザ広場",
+      "song_name": "野毛山節",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "b3a05ed6ec37e8f768d0",
+      "occurrence_id": "0583978e0c9fb89d",
+      "event_name": "横浜開港祭 BON ODORI",
+      "venue": "パシフィコ横浜プラザ広場",
+      "song_name": "青と夏",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "abf2f81904dc310c033b",
+      "occurrence_id": "0583978e0c9fb89d",
+      "event_name": "横浜開港祭 BON ODORI",
+      "venue": "パシフィコ横浜プラザ広場",
+      "song_name": "鹿児島おはら節",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "459bcdd5afcb75790a0b",
+      "occurrence_id": "88b95f0a8ac7f9ee",
+      "event_name": "国立旭通りジューンフェスタ盆踊り",
+      "venue": "国立旭通り",
+      "song_name": "くにたち囃子",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "6d6877a03f93f66fdeb0",
+      "occurrence_id": "88b95f0a8ac7f9ee",
+      "event_name": "国立旭通りジューンフェスタ盆踊り",
+      "venue": "国立旭通り",
+      "song_name": "四季の花踊り",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "5e3f23590d24da5b2efc",
+      "occurrence_id": "88b95f0a8ac7f9ee",
+      "event_name": "国立旭通りジューンフェスタ盆踊り",
+      "venue": "国立旭通り",
+      "song_name": "国立音頭",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "88eb1cb975160a9c3726",
+      "occurrence_id": "88b95f0a8ac7f9ee",
+      "event_name": "国立旭通りジューンフェスタ盆踊り",
+      "venue": "国立旭通り",
+      "song_name": "少年八木節",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "cb6a12f3b482811e50f1",
+      "occurrence_id": "88b95f0a8ac7f9ee",
+      "event_name": "国立旭通りジューンフェスタ盆踊り",
+      "venue": "国立旭通り",
+      "song_name": "新しい風",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "b0e97bb15b5d27783868",
+      "occurrence_id": "88b95f0a8ac7f9ee",
+      "event_name": "国立旭通りジューンフェスタ盆踊り",
+      "venue": "国立旭通り",
+      "song_name": "炭坑節",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "c056b701110284d5421c",
+      "occurrence_id": "a9cead8dcbd58d22",
+      "event_name": "山王音頭と民踊大会",
+      "venue": "山王パークタワー公開空地",
+      "song_name": "おこさ節",
+      "probability": 0.8,
+      "soft_label": 0.8,
+      "actual_present": true,
+      "brier": 0.0,
+      "reliability_keys": [
+        "semi_official_setlist"
+      ],
+      "prediction_reliability": [
+        0.8
+      ]
+    },
+    {
+      "snapshot_id": "f32f58dca361e8d146c6",
+      "occurrence_id": "a9cead8dcbd58d22",
+      "event_name": "山王音頭と民踊大会",
+      "venue": "山王パークタワー公開空地",
+      "song_name": "らんまん踊り",
+      "probability": 0.8,
+      "soft_label": 0.8,
+      "actual_present": true,
+      "brier": 0.0,
+      "reliability_keys": [
+        "semi_official_setlist"
+      ],
+      "prediction_reliability": [
+        0.8
+      ]
+    },
+    {
+      "snapshot_id": "544e565867fffed03917",
+      "occurrence_id": "a9cead8dcbd58d22",
+      "event_name": "山王音頭と民踊大会",
+      "venue": "山王パークタワー公開空地",
+      "song_name": "ダンシングヒーロー",
+      "probability": 0.8,
+      "soft_label": 0.8,
+      "actual_present": true,
+      "brier": 0.0,
+      "reliability_keys": [
+        "semi_official_setlist"
+      ],
+      "prediction_reliability": [
+        0.8
+      ]
+    },
+    {
+      "snapshot_id": "6754027cad6b7e18f59a",
+      "occurrence_id": "a9cead8dcbd58d22",
+      "event_name": "山王音頭と民踊大会",
+      "venue": "山王パークタワー公開空地",
+      "song_name": "ドンパン節",
+      "probability": 0.8,
+      "soft_label": 0.8,
+      "actual_present": true,
+      "brier": 0.0,
+      "reliability_keys": [
+        "semi_official_setlist"
+      ],
+      "prediction_reliability": [
+        0.8
+      ]
+    },
+    {
+      "snapshot_id": "4d869a68c49a8d4de48c",
+      "occurrence_id": "a9cead8dcbd58d22",
+      "event_name": "山王音頭と民踊大会",
+      "venue": "山王パークタワー公開空地",
+      "song_name": "ニッポンワッショイ",
+      "probability": 0.8,
+      "soft_label": 0.8,
+      "actual_present": true,
+      "brier": 0.0,
+      "reliability_keys": [
+        "semi_official_setlist"
+      ],
+      "prediction_reliability": [
+        0.8
+      ]
+    },
+    {
+      "snapshot_id": "a3fbb3331b5a7cb9fa0a",
+      "occurrence_id": "a9cead8dcbd58d22",
+      "event_name": "山王音頭と民踊大会",
+      "venue": "山王パークタワー公開空地",
+      "song_name": "八木節",
+      "probability": 0.8,
+      "soft_label": 0.8,
+      "actual_present": true,
+      "brier": 0.0,
+      "reliability_keys": [
+        "semi_official_setlist"
+      ],
+      "prediction_reliability": [
+        0.8
+      ]
+    },
+    {
+      "snapshot_id": "07c5411fbff31a7ac83b",
+      "occurrence_id": "a9cead8dcbd58d22",
+      "event_name": "山王音頭と民踊大会",
+      "venue": "山王パークタワー公開空地",
+      "song_name": "千代田踊り",
+      "probability": 0.8,
+      "soft_label": 0.8,
+      "actual_present": true,
+      "brier": 0.0,
+      "reliability_keys": [
+        "semi_official_setlist"
+      ],
+      "prediction_reliability": [
+        0.8
+      ]
+    },
+    {
+      "snapshot_id": "e1e4b496b949df2feb6c",
+      "occurrence_id": "a9cead8dcbd58d22",
+      "event_name": "山王音頭と民踊大会",
+      "venue": "山王パークタワー公開空地",
+      "song_name": "大東京音頭",
+      "probability": 0.8,
+      "soft_label": 0.8,
+      "actual_present": true,
+      "brier": 0.0,
+      "reliability_keys": [
+        "semi_official_setlist"
+      ],
+      "prediction_reliability": [
+        0.8
+      ]
+    },
+    {
+      "snapshot_id": "2f305056b77646b3f45d",
+      "occurrence_id": "a9cead8dcbd58d22",
+      "event_name": "山王音頭と民踊大会",
+      "venue": "山王パークタワー公開空地",
+      "song_name": "山王音頭",
+      "probability": 0.8,
+      "soft_label": 0.8,
+      "actual_present": true,
+      "brier": 0.0,
+      "reliability_keys": [
+        "semi_official_setlist"
+      ],
+      "prediction_reliability": [
+        0.8
+      ]
+    },
+    {
+      "snapshot_id": "45bac117588b369393ef",
+      "occurrence_id": "a9cead8dcbd58d22",
+      "event_name": "山王音頭と民踊大会",
+      "venue": "山王パークタワー公開空地",
+      "song_name": "恋をするなら",
+      "probability": 0.8,
+      "soft_label": 0.8,
+      "actual_present": true,
+      "brier": 0.0,
+      "reliability_keys": [
+        "semi_official_setlist"
+      ],
+      "prediction_reliability": [
+        0.8
+      ]
+    },
+    {
+      "snapshot_id": "2d767e29ae1793af4245",
+      "occurrence_id": "a9cead8dcbd58d22",
+      "event_name": "山王音頭と民踊大会",
+      "venue": "山王パークタワー公開空地",
+      "song_name": "東京おどり",
+      "probability": 0.8,
+      "soft_label": 0.8,
+      "actual_present": true,
+      "brier": 0.0,
+      "reliability_keys": [
+        "semi_official_setlist"
+      ],
+      "prediction_reliability": [
+        0.8
+      ]
+    },
+    {
+      "snapshot_id": "b64dea02eceed69545b7",
+      "occurrence_id": "a9cead8dcbd58d22",
+      "event_name": "山王音頭と民踊大会",
+      "venue": "山王パークタワー公開空地",
+      "song_name": "東京音頭",
+      "probability": 0.8,
+      "soft_label": 0.8,
+      "actual_present": true,
+      "brier": 0.0,
+      "reliability_keys": [
+        "semi_official_setlist"
+      ],
+      "prediction_reliability": [
+        0.8
+      ]
+    },
+    {
+      "snapshot_id": "169f8791c2396a6e0148",
+      "occurrence_id": "a9cead8dcbd58d22",
+      "event_name": "山王音頭と民踊大会",
+      "venue": "山王パークタワー公開空地",
+      "song_name": "水戸黄門おどり",
+      "probability": 0.8,
+      "soft_label": 0.8,
+      "actual_present": true,
+      "brier": 0.0,
+      "reliability_keys": [
+        "semi_official_setlist"
+      ],
+      "prediction_reliability": [
+        0.8
+      ]
+    },
+    {
+      "snapshot_id": "1878f520ec78fa5045a9",
+      "occurrence_id": "a9cead8dcbd58d22",
+      "event_name": "山王音頭と民踊大会",
+      "venue": "山王パークタワー公開空地",
+      "song_name": "炭坑節",
+      "probability": 0.8,
+      "soft_label": 0.8,
+      "actual_present": true,
+      "brier": 0.0,
+      "reliability_keys": [
+        "semi_official_setlist"
+      ],
+      "prediction_reliability": [
+        0.8
+      ]
+    },
+    {
+      "snapshot_id": "111145b9852c613da9c0",
+      "occurrence_id": "a9cead8dcbd58d22",
+      "event_name": "山王音頭と民踊大会",
+      "venue": "山王パークタワー公開空地",
+      "song_name": "白浜音頭",
+      "probability": 0.8,
+      "soft_label": 0.8,
+      "actual_present": true,
+      "brier": 0.0,
+      "reliability_keys": [
+        "semi_official_setlist"
+      ],
+      "prediction_reliability": [
+        0.8
+      ]
+    },
+    {
+      "snapshot_id": "2e5e8a9284f176035ce4",
+      "occurrence_id": "a9cead8dcbd58d22",
+      "event_name": "山王音頭と民踊大会",
+      "venue": "山王パークタワー公開空地",
+      "song_name": "盆ギリ恋歌",
+      "probability": 0.8,
+      "soft_label": 0.8,
+      "actual_present": true,
+      "brier": 0.0,
+      "reliability_keys": [
+        "semi_official_setlist"
+      ],
+      "prediction_reliability": [
+        0.8
+      ]
+    },
+    {
+      "snapshot_id": "da474b1b29fc6f9711f7",
+      "occurrence_id": "a9cead8dcbd58d22",
+      "event_name": "山王音頭と民踊大会",
+      "venue": "山王パークタワー公開空地",
+      "song_name": "相馬甚句",
+      "probability": 0.8,
+      "soft_label": 0.8,
+      "actual_present": true,
+      "brier": 0.0,
+      "reliability_keys": [
+        "semi_official_setlist"
+      ],
+      "prediction_reliability": [
+        0.8
+      ]
+    },
+    {
+      "snapshot_id": "eb4d08a799085b0c239d",
+      "occurrence_id": "a9cead8dcbd58d22",
+      "event_name": "山王音頭と民踊大会",
+      "venue": "山王パークタワー公開空地",
+      "song_name": "相馬盆唄",
+      "probability": 0.8,
+      "soft_label": 0.8,
+      "actual_present": true,
+      "brier": 0.0,
+      "reliability_keys": [
+        "semi_official_setlist"
+      ],
+      "prediction_reliability": [
+        0.8
+      ]
+    },
+    {
+      "snapshot_id": "930e3b0910a5faa72203",
+      "occurrence_id": "a9cead8dcbd58d22",
+      "event_name": "山王音頭と民踊大会",
+      "venue": "山王パークタワー公開空地",
+      "song_name": "花笠音頭",
+      "probability": 0.8,
+      "soft_label": 0.8,
+      "actual_present": true,
+      "brier": 0.0,
+      "reliability_keys": [
+        "semi_official_setlist"
+      ],
+      "prediction_reliability": [
+        0.8
+      ]
+    },
+    {
+      "snapshot_id": "55217b995c6b793cf881",
+      "occurrence_id": "6bd132803b187ebe",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "song_name": "Beat It",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "1d77e78d67500cabdb7e",
+      "occurrence_id": "6bd132803b187ebe",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "song_name": "おしまこ輪踊り",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "8ed744ee25b64a0723a5",
+      "occurrence_id": "6bd132803b187ebe",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "song_name": "おてもやん",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "6dbd7cfb251933325380",
+      "occurrence_id": "6bd132803b187ebe",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "song_name": "さくら音頭",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "0385047d49d6ca85fec1",
+      "occurrence_id": "6bd132803b187ebe",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "song_name": "にっぽんチャチャチャ",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "01f50d14e7aef462fe3c",
+      "occurrence_id": "6bd132803b187ebe",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "song_name": "よこはまアラメヤ音頭",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "ab9b5701efbfbcf84535",
+      "occurrence_id": "6bd132803b187ebe",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "song_name": "デカンショ節",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "21c9f462913930360754",
+      "occurrence_id": "6bd132803b187ebe",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "song_name": "下北小唄",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "158bcc8fb5a70d7f60d8",
+      "occurrence_id": "6bd132803b187ebe",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "song_name": "佐渡おけさ",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "091403d105df3845ce46",
+      "occurrence_id": "6bd132803b187ebe",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "song_name": "堀江盆歌",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "9d2db1bdc22b75370889",
+      "occurrence_id": "6bd132803b187ebe",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "song_name": "子供盆踊り唄",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "42ad55a72e402093396e",
+      "occurrence_id": "6bd132803b187ebe",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "song_name": "平和音頭",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "3b715c51d34bb4c67d2c",
+      "occurrence_id": "6bd132803b187ebe",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "song_name": "村崎野音頭",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "b483b6a0d4548c28653f",
+      "occurrence_id": "6bd132803b187ebe",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "song_name": "江州音頭",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "375e942868bb24f76c1b",
+      "occurrence_id": "6bd132803b187ebe",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "song_name": "河内音頭",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "5f5ee6b4fe9290a1cd8d",
+      "occurrence_id": "6bd132803b187ebe",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "song_name": "牛深ハイヤ",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "383265f40f098a7e2930",
+      "occurrence_id": "6bd132803b187ebe",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "song_name": "秋田音頭",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "c769fbad279c69cb3b36",
+      "occurrence_id": "6bd132803b187ebe",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "song_name": "紀州白浜音頭",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "86dd9efbf5731a804f59",
+      "occurrence_id": "6bd132803b187ebe",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "song_name": "隠岐のしげさ節",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "90a6c34f9c98859c114e",
+      "occurrence_id": "6bd132803b187ebe",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "song_name": "鯵ヶ沢甚句",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "253e75ae8dc4c407bcac",
+      "occurrence_id": "6bd132803b187ebe",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "song_name": "麦わら音頭",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "d98e9d6de03cb36e729d",
+      "occurrence_id": "6bd132803b187ebe",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "song_name": "黒石甚句",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "c360f2a5af81eed2734f",
+      "occurrence_id": "6bd132803b187ebe",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "song_name": "りんご節",
+      "probability": 0.95,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "b5d8557bab41539cc5d9",
+      "occurrence_id": "6bd132803b187ebe",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "song_name": "八戸小唄",
+      "probability": 0.95,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "8f5dec120d3dbc2b609e",
+      "occurrence_id": "6bd132803b187ebe",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "song_name": "東京音頭",
+      "probability": 0.95,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "d26811efa45b1e4a4ad5",
+      "occurrence_id": "6bd132803b187ebe",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "song_name": "真室川音頭",
+      "probability": 0.95,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "0f3396932379f67c770f",
+      "occurrence_id": "6bd132803b187ebe",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "song_name": "花笠音頭",
+      "probability": 0.95,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "b728dd22a5f6b364d5c8",
+      "occurrence_id": "6bd132803b187ebe",
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "song_name": "郡上節春駒",
+      "probability": 0.95,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "b48b496d202b0a765bc4",
+      "occurrence_id": "ab493e0439532908",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "song_name": "たいとう音頭",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "d72e745aba9a8efc5402",
+      "occurrence_id": "ab493e0439532908",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "song_name": "ふるさと北区",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "a722cf3cca94cb38de8c",
+      "occurrence_id": "ab493e0439532908",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "song_name": "佐渡の恋唄",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "66f1867ac0d34a804984",
+      "occurrence_id": "ab493e0439532908",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "song_name": "恋をするなら",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "c7130d0c9bf4fee90b32",
+      "occurrence_id": "ab493e0439532908",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "song_name": "文京音頭",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "5d6b72e1eab592c4dcab",
+      "occurrence_id": "ab493e0439532908",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "song_name": "東京北都音頭",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "33c5dba1a3d91613089f",
+      "occurrence_id": "ab493e0439532908",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "song_name": "東京音頭",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "a5edcff03bb377d3117e",
+      "occurrence_id": "ab493e0439532908",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "song_name": "板橋音頭",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "7e3feb20efd7410cbefb",
+      "occurrence_id": "ab493e0439532908",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "song_name": "王子小唄",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "4466609b8010ba23e642",
+      "occurrence_id": "ab493e0439532908",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "song_name": "相馬盆唄",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "c75e9993741a4f37531f",
+      "occurrence_id": "ab493e0439532908",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "song_name": "荒川音頭",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "bc712f28f117e1c45a48",
+      "occurrence_id": "ab493e0439532908",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "song_name": "飛鳥山音頭",
+      "probability": 0.99,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0016,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "089806a77ce54e1251f3",
+      "occurrence_id": "ab493e0439532908",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "song_name": "ゆかた音頭",
+      "probability": 0.95,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "dfac22e7d62eb338e075",
+      "occurrence_id": "ab493e0439532908",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "song_name": "らんまん踊り",
+      "probability": 0.95,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "77908483cb2880dda9b4",
+      "occurrence_id": "ab493e0439532908",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "song_name": "大東京音頭",
+      "probability": 0.95,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "65249d11dbe519d4d7f6",
+      "occurrence_id": "ab493e0439532908",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "song_name": "大江戸東京音頭",
+      "probability": 0.95,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "2ab3f3f08d1b60670d75",
+      "occurrence_id": "ab493e0439532908",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "song_name": "少年八木節",
+      "probability": 0.95,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "a32b6002812ea0bd436a",
+      "occurrence_id": "ab493e0439532908",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "song_name": "東北音頭",
+      "probability": 0.95,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "b4473d0e7e6d2d59e78a",
+      "occurrence_id": "ab493e0439532908",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "song_name": "東西南北音頭",
+      "probability": 0.95,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    },
+    {
+      "snapshot_id": "6b23ac52b05c376a99ce",
+      "occurrence_id": "ab493e0439532908",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "song_name": "花火音頭",
+      "probability": 0.95,
+      "soft_label": 0.95,
+      "actual_present": true,
+      "brier": 0.0,
+      "reliability_keys": [],
+      "prediction_reliability": []
+    }
+  ]
+}

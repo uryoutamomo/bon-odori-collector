@@ -1,0 +1,17 @@
+{
+  "generated_by": "build_song_ocr_queue.py",
+  "count": 1,
+  "items": [
+    {
+      "id": "b21783a2a9785946",
+      "status": "needs_media_resolution",
+      "account": "@ochiai_hrs",
+      "url": "https://x.com/ochiai_hrs/status/2063912862880534810",
+      "tweet_id": "2063912862880534810",
+      "date": "2026-06-08T09:15:46+00:00",
+      "media_urls": [],
+      "text": "🏮赤坂日枝神社 盆踊り🏮\n「山王音頭と民踊大会」\n📅2026年6月13日（土）〜15日（月）\n📍山王パークタワー 公開空地\n\n曲目リストです！\nみんなで楽しみましょう♪\n\n#盆踊り #赤坂日枝神社 #山王音頭 #民踊大会 #夏祭り #東京イベント https://t.co/XzgNI2P8oy",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    }
+  ]
+}

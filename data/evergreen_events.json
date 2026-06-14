@@ -1,5 +1,5 @@
 {
-  "_comment": "定番イベントの能動検索設定。こと・内田さんが会場を追加できる。",
+  "_comment": "定番イベントの能動検索設定。こと・内田さんが会場を追加できる。2026-06-13 既存イベントから定番100件を自動追加（小規模町内会含む・非盆踊り除外なし）。",
   "lead_months": 2,
   "max_targets_per_run": 36,
   "max_x_queries_per_run": 18,
@@ -7,12 +7,1726 @@
     {
       "venue": "山王日枝神社",
       "event_name": "山王音頭と民踊大会",
-      "months": [6],
-      "aliases": ["日枝神社", "山王祭"],
-      "confirmation_terms": ["山王音頭と民踊大会", "民踊大会", "音頭と民踊"],
+      "months": [
+        6
+      ],
+      "aliases": [
+        "日枝神社",
+        "山王祭"
+      ],
+      "confirmation_terms": [
+        "山王音頭と民踊大会",
+        "民踊大会",
+        "音頭と民踊"
+      ],
       "official_sources": [
         "https://www.hiejinja.net/news/%E4%BB%A4%E5%92%8C8%E5%B9%B4%E5%B1%B1%E7%8E%8B%E7%A5%AD%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/"
       ]
+    },
+    {
+      "venue": "靖国神社",
+      "event_name": "みたままつり 納涼民踊のつどい",
+      "months": [
+        7
+      ],
+      "scale": "大",
+      "aliases": [
+        "靖国神社"
+      ],
+      "confirmation_terms": [
+        "みたままつり 納涼民踊のつどい",
+        "靖国神社"
+      ],
+      "official_sources": [],
+      "tier": "large",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "日本橋社会教育会館",
+      "event_name": "第2回 大盆踊り祭 with 坂崎守寛",
+      "months": [
+        2
+      ],
+      "scale": "中",
+      "aliases": [
+        "日本橋社会教育会館"
+      ],
+      "confirmation_terms": [
+        "第2回 大盆踊り祭 with 坂崎守寛",
+        "日本橋社会教育会館"
+      ],
+      "official_sources": [],
+      "tier": "medium",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "浜町公園",
+      "event_name": "中央区大江戸まつり盆おどり大会",
+      "months": [
+        8
+      ],
+      "scale": "大",
+      "aliases": [
+        "中央区大江戸まつり",
+        "中央区大江戸まつり盆おどり",
+        "浜町公園"
+      ],
+      "confirmation_terms": [
+        "中央区大江戸まつり盆おどり大会",
+        "浜町公園"
+      ],
+      "official_sources": [],
+      "tier": "large",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "築地本願寺",
+      "event_name": "築地本願寺納涼盆踊り大会",
+      "months": [
+        7,
+        8
+      ],
+      "scale": "大",
+      "aliases": [
+        "築地本願寺",
+        "築地本願寺納涼",
+        "築地本願寺納涼盆踊り"
+      ],
+      "confirmation_terms": [
+        "築地本願寺納涼盆踊り大会",
+        "築地本願寺"
+      ],
+      "official_sources": [],
+      "tier": "large",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "ハマサイト前広場・汐留ビルディング外構",
+      "event_name": "第16回ハマサイトの夏祭り",
+      "months": [
+        8
+      ],
+      "scale": "小",
+      "aliases": [
+        "ハマサイトの",
+        "ハマサイト前広場・汐留ビルディング外構"
+      ],
+      "confirmation_terms": [
+        "第16回ハマサイトの夏祭り",
+        "ハマサイト前広場・汐留ビルディング外構"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "秩父宮ラグビー場駐車場",
+      "event_name": "郡上おどり in 青山 2025",
+      "months": [
+        6
+      ],
+      "scale": "大",
+      "aliases": [
+        "秩父宮ラグビー場駐車場"
+      ],
+      "confirmation_terms": [
+        "郡上おどり in 青山 2025",
+        "秩父宮ラグビー場駐車場"
+      ],
+      "official_sources": [],
+      "tier": "large",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "芝公園",
+      "event_name": "みなと区民まつり 盆踊り",
+      "months": [
+        10
+      ],
+      "scale": "大",
+      "aliases": [
+        "みなと区民まつり",
+        "芝公園"
+      ],
+      "confirmation_terms": [
+        "みなと区民まつり 盆踊り",
+        "芝公園"
+      ],
+      "official_sources": [],
+      "tier": "large",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "赤坂氷川神社",
+      "event_name": "赤坂氷川祭 盆踊り大会",
+      "months": [
+        9
+      ],
+      "scale": "中",
+      "aliases": [
+        "赤坂氷川神社",
+        "赤坂氷川祭",
+        "赤坂氷川祭 盆踊り"
+      ],
+      "confirmation_terms": [
+        "赤坂氷川祭 盆踊り大会",
+        "赤坂氷川神社"
+      ],
+      "official_sources": [],
+      "tier": "medium",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "麻布氷川神社",
+      "event_name": "麻布氷川神社例大祭 盆踊り",
+      "months": [
+        9
+      ],
+      "scale": "中",
+      "aliases": [
+        "麻布氷川神社",
+        "麻布氷川神社例大祭"
+      ],
+      "confirmation_terms": [
+        "麻布氷川神社例大祭 盆踊り",
+        "麻布氷川神社"
+      ],
+      "official_sources": [],
+      "tier": "medium",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "JR新大久保駅北側から東方向",
+      "event_name": "第42回大久保まつり パレード 百人町民民謡おどり",
+      "months": [
+        10
+      ],
+      "scale": "小",
+      "aliases": [
+        "JR新大久保駅北側から東方向"
+      ],
+      "confirmation_terms": [
+        "第42回大久保まつり パレード 百人町民民謡おどり",
+        "JR新大久保駅北側から東方向"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "下落合公園",
+      "event_name": "下落合四丁目町会 盆踊り大会",
+      "months": [
+        7
+      ],
+      "scale": "小",
+      "aliases": [
+        "下落合公園",
+        "下落合四丁目町会",
+        "下落合四丁目町会 盆踊り"
+      ],
+      "confirmation_terms": [
+        "下落合四丁目町会 盆踊り大会",
+        "下落合公園"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "北新宿公園",
+      "event_name": "柏木地区6町会盆踊り大会",
+      "months": [
+        8
+      ],
+      "scale": "小",
+      "aliases": [
+        "北新宿公園",
+        "柏木地区6町会",
+        "柏木地区6町会盆踊り"
+      ],
+      "confirmation_terms": [
+        "柏木地区6町会盆踊り大会",
+        "北新宿公園"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "北柏木公園",
+      "event_name": "北新宿四丁目 盆踊り大会",
+      "months": [
+        7
+      ],
+      "scale": "小",
+      "aliases": [
+        "北新宿四丁目",
+        "北新宿四丁目 盆踊り",
+        "北柏木公園"
+      ],
+      "confirmation_terms": [
+        "北新宿四丁目 盆踊り大会",
+        "北柏木公園"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "原町天祖神社",
+      "event_name": "原町一丁目町会 天祖神社例大祭 盆踊り",
+      "months": [
+        9
+      ],
+      "scale": "小",
+      "aliases": [
+        "原町一丁目町会 天祖神社例大祭",
+        "原町天祖神社"
+      ],
+      "confirmation_terms": [
+        "原町一丁目町会 天祖神社例大祭 盆踊り",
+        "原町天祖神社"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "四谷ひろばグラウンド（旧四谷第四小学校）",
+      "event_name": "第25回 四谷納涼踊り大会",
+      "months": [
+        7
+      ],
+      "scale": "小",
+      "aliases": [
+        "四谷ひろばグラウンド",
+        "四谷納涼踊り"
+      ],
+      "confirmation_terms": [
+        "第25回 四谷納涼踊り大会",
+        "四谷ひろばグラウンド（旧四谷第四小学校）"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "新宿住友ビル三角広場",
+      "event_name": "居酒屋盆踊り",
+      "months": [
+        6
+      ],
+      "scale": "大",
+      "aliases": [
+        "居酒屋",
+        "新宿住友ビル三角広場"
+      ],
+      "confirmation_terms": [
+        "居酒屋盆踊り",
+        "新宿住友ビル三角広場"
+      ],
+      "official_sources": [],
+      "tier": "large",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "清水川橋公園",
+      "event_name": "下落合町会知久会 第9回盆踊り",
+      "months": [
+        7
+      ],
+      "scale": "小",
+      "aliases": [
+        "下落合町会知久会 第9回",
+        "清水川橋公園"
+      ],
+      "confirmation_terms": [
+        "下落合町会知久会 第9回盆踊り",
+        "清水川橋公園"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "鶴巻小学校",
+      "event_name": "鶴巻小学校 納涼盆踊り大会＆子ども祭り",
+      "months": [
+        7
+      ],
+      "scale": "小",
+      "aliases": [
+        "鶴巻小学校"
+      ],
+      "confirmation_terms": [
+        "鶴巻小学校 納涼盆踊り大会＆子ども祭り",
+        "鶴巻小学校"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "さかもと朝顔広場（旧坂本小学校跡地）",
+      "event_name": "坂本町会 納涼祭",
+      "months": [
+        8
+      ],
+      "scale": "小",
+      "aliases": [
+        "さかもと朝顔広場",
+        "坂本町会"
+      ],
+      "confirmation_terms": [
+        "坂本町会 納涼祭",
+        "さかもと朝顔広場（旧坂本小学校跡地）"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "上野恩賜公園",
+      "event_name": "TOKYO盆ダンス×STEAM FESTIVAL2026",
+      "months": [
+        6
+      ],
+      "scale": "大",
+      "aliases": [
+        "上野恩賜公園"
+      ],
+      "confirmation_terms": [
+        "TOKYO盆ダンス×STEAM FESTIVAL2026",
+        "上野恩賜公園"
+      ],
+      "official_sources": [],
+      "tier": "large",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "隅田公園",
+      "event_name": "奥浅草盆踊り",
+      "months": [
+        6
+      ],
+      "scale": "大",
+      "aliases": [
+        "奥浅草",
+        "隅田公園"
+      ],
+      "confirmation_terms": [
+        "奥浅草盆踊り",
+        "隅田公園"
+      ],
+      "official_sources": [],
+      "tier": "large",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "すみだ産業会館サンライズホール",
+      "event_name": "第10回 すみだ輪おどり区民感謝デー",
+      "months": [
+        1
+      ],
+      "scale": "小",
+      "aliases": [
+        "すみだ産業会館サンライズホール"
+      ],
+      "confirmation_terms": [
+        "第10回 すみだ輪おどり区民感謝デー",
+        "すみだ産業会館サンライズホール"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "中和小学校",
+      "event_name": "菊川一丁目町会 菊一お祭り広場・盆踊り大会",
+      "months": [
+        9
+      ],
+      "scale": "小",
+      "aliases": [
+        "中和小学校",
+        "菊川一丁目町会 菊一お祭り広場・",
+        "菊川一丁目町会 菊一お祭り広場・盆踊り"
+      ],
+      "confirmation_terms": [
+        "菊川一丁目町会 菊一お祭り広場・盆踊り大会",
+        "中和小学校"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "伸成町会会館前 路上",
+      "event_name": "押上三丁目伸成町会 飛木稲荷神社神幸大祭 祭礼踊り",
+      "months": [
+        9
+      ],
+      "scale": "小",
+      "aliases": [
+        "伸成町会会館前 路上"
+      ],
+      "confirmation_terms": [
+        "押上三丁目伸成町会 飛木稲荷神社神幸大祭 祭礼踊り",
+        "伸成町会会館前 路上"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "向島1丁目旧町会会館前",
+      "event_name": "向島一丁目 牛嶋神社 ミニ奉納踊り",
+      "months": [
+        9
+      ],
+      "scale": "小",
+      "aliases": [
+        "向島1丁目旧町会会館前"
+      ],
+      "confirmation_terms": [
+        "向島一丁目 牛嶋神社 ミニ奉納踊り",
+        "向島1丁目旧町会会館前"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "向島百花会館",
+      "event_name": "西図子 盆踊りとおでんの宴",
+      "months": [
+        3
+      ],
+      "scale": "小",
+      "aliases": [
+        "向島百花会館"
+      ],
+      "confirmation_terms": [
+        "西図子 盆踊りとおでんの宴",
+        "向島百花会館"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "報恩寺境内",
+      "event_name": "太平一丁目 牛嶋神社 奉納踊り",
+      "months": [
+        9
+      ],
+      "scale": "小",
+      "aliases": [
+        "報恩寺境内"
+      ],
+      "confirmation_terms": [
+        "太平一丁目 牛嶋神社 奉納踊り",
+        "報恩寺境内"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "江東橋竪川親水公園",
+      "event_name": "すみだ錦糸町河内音頭大盆踊り",
+      "months": [
+        7
+      ],
+      "scale": "大",
+      "aliases": [
+        "すみだ錦糸町河内音頭大",
+        "江東橋竪川親水公園"
+      ],
+      "confirmation_terms": [
+        "すみだ錦糸町河内音頭大盆踊り",
+        "江東橋竪川親水公園"
+      ],
+      "official_sources": [],
+      "tier": "large",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "牛嶋神社",
+      "event_name": "牛嶋神社祭礼 奉納踊り",
+      "months": [
+        9
+      ],
+      "scale": "中",
+      "aliases": [
+        "牛嶋神社"
+      ],
+      "confirmation_terms": [
+        "牛嶋神社祭礼 奉納踊り",
+        "牛嶋神社"
+      ],
+      "official_sources": [],
+      "tier": "medium",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "石一町会会館前",
+      "event_name": "石原一丁目 牛嶋神社 奉納踊り",
+      "months": [
+        9
+      ],
+      "scale": "小",
+      "aliases": [
+        "石一町会会館前"
+      ],
+      "confirmation_terms": [
+        "石原一丁目 牛嶋神社 奉納踊り",
+        "石一町会会館前"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "錦糸公園",
+      "event_name": "すみだ沖縄まつり",
+      "months": [
+        5
+      ],
+      "scale": "大",
+      "aliases": [
+        "錦糸公園"
+      ],
+      "confirmation_terms": [
+        "すみだ沖縄まつり",
+        "錦糸公園"
+      ],
+      "official_sources": [],
+      "tier": "large",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "大井町駅前中央通り",
+      "event_name": "第71回大井どんたく夏まつり 初日 盆踊り",
+      "months": [
+        8
+      ],
+      "scale": "小",
+      "aliases": [
+        "大井どんたく夏まつり 初日",
+        "大井町駅前中央通り"
+      ],
+      "confirmation_terms": [
+        "第71回大井どんたく夏まつり 初日 盆踊り",
+        "大井町駅前中央通り"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "天妙国寺",
+      "event_name": "品川第二地区 区民まつり・品川青年会 盆踊り大会（天妙国寺）",
+      "months": [
+        7
+      ],
+      "scale": "中",
+      "aliases": [
+        "天妙国寺"
+      ],
+      "confirmation_terms": [
+        "品川第二地区 区民まつり・品川青年会 盆踊り大会（天妙国寺）",
+        "天妙国寺"
+      ],
+      "official_sources": [],
+      "tier": "medium",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "宮前小学校",
+      "event_name": "戸越宮前盆踊り",
+      "months": [
+        6
+      ],
+      "scale": "中",
+      "aliases": [
+        "宮前小学校",
+        "戸越宮前"
+      ],
+      "confirmation_terms": [
+        "戸越宮前盆踊り",
+        "宮前小学校"
+      ],
+      "official_sources": [],
+      "tier": "medium",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "戸越八幡神社",
+      "event_name": "戸越八幡神社例大祭 盆踊り",
+      "months": [
+        9
+      ],
+      "scale": "中",
+      "aliases": [
+        "戸越八幡神社",
+        "戸越八幡神社例大祭"
+      ],
+      "confirmation_terms": [
+        "戸越八幡神社例大祭 盆踊り",
+        "戸越八幡神社"
+      ],
+      "official_sources": [],
+      "tier": "medium",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "旗の台稲荷通り商店街",
+      "event_name": "旗の台稲荷通り商店会盆踊り 盆ROCK",
+      "months": [
+        10
+      ],
+      "scale": "小",
+      "aliases": [
+        "旗の台稲荷通り商店街"
+      ],
+      "confirmation_terms": [
+        "旗の台稲荷通り商店会盆踊り 盆ROCK",
+        "旗の台稲荷通り商店街"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "日本民謡会館",
+      "event_name": "Min-Yoi's盆踊り",
+      "months": [
+        5
+      ],
+      "scale": "小",
+      "aliases": [
+        "Min-Yoi's",
+        "日本民謡会館"
+      ],
+      "confirmation_terms": [
+        "Min-Yoi's盆踊り",
+        "日本民謡会館"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "西大井広場公園",
+      "event_name": "品川区民まつり 西大井広場公園 盆踊り",
+      "months": [
+        9
+      ],
+      "scale": "小",
+      "aliases": [
+        "品川区民まつり 西大井広場公園",
+        "西大井広場公園"
+      ],
+      "confirmation_terms": [
+        "品川区民まつり 西大井広場公園 盆踊り",
+        "西大井広場公園"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "豊町一丁目会館前",
+      "event_name": "戸越八幡神社例大祭 奉納盆踊り大会",
+      "months": [
+        9
+      ],
+      "scale": "小",
+      "aliases": [
+        "戸越八幡神社例大祭 奉納",
+        "戸越八幡神社例大祭 奉納盆踊り",
+        "豊町一丁目会館前"
+      ],
+      "confirmation_terms": [
+        "戸越八幡神社例大祭 奉納盆踊り大会",
+        "豊町一丁目会館前"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "鮫洲入江広場公園",
+      "event_name": "鮫洲入江広場公園 ゆり園盆踊り",
+      "months": [
+        6
+      ],
+      "scale": "小",
+      "aliases": [
+        "鮫洲入江広場公園",
+        "鮫洲入江広場公園 ゆり園"
+      ],
+      "confirmation_terms": [
+        "鮫洲入江広場公園 ゆり園盆踊り",
+        "鮫洲入江広場公園"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "JR目黒駅西口前",
+      "event_name": "地域のふれあい第37回盆踊り大会",
+      "months": [
+        7
+      ],
+      "scale": "小",
+      "aliases": [
+        "JR目黒駅西口前",
+        "地域のふれあい第37回",
+        "地域のふれあい第37回盆踊り"
+      ],
+      "confirmation_terms": [
+        "地域のふれあい第37回盆踊り大会",
+        "JR目黒駅西口前"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "フナイリバ（目黒川船入場広場）",
+      "event_name": "中目黒盆踊り大会 2025",
+      "months": [
+        8
+      ],
+      "scale": "小",
+      "aliases": [
+        "フナイリバ"
+      ],
+      "confirmation_terms": [
+        "中目黒盆踊り大会 2025",
+        "フナイリバ（目黒川船入場広場）"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "東京大学駒場キャンパス 学生会館東",
+      "event_name": "盆踊り in 駒場東大",
+      "months": [
+        11
+      ],
+      "scale": "小",
+      "aliases": [
+        "東京大学駒場キャンパス 学生会館東"
+      ],
+      "confirmation_terms": [
+        "盆踊り in 駒場東大",
+        "東京大学駒場キャンパス 学生会館東"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "祐天寺境内",
+      "event_name": "第90回 祐天寺み魂まつり こども盆踊り大会",
+      "months": [
+        7
+      ],
+      "scale": "小",
+      "aliases": [
+        "祐天寺み魂まつり こども",
+        "祐天寺み魂まつり こども盆踊り",
+        "祐天寺境内"
+      ],
+      "confirmation_terms": [
+        "第90回 祐天寺み魂まつり こども盆踊り大会",
+        "祐天寺境内"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "自由が丘駅前ロータリー 特設会場",
+      "event_name": "自由が丘納涼盆踊り大会",
+      "months": [
+        7
+      ],
+      "scale": "小",
+      "aliases": [
+        "自由が丘",
+        "自由が丘納涼",
+        "自由が丘納涼盆踊り",
+        "自由が丘駅前ロータリー 特設会場"
+      ],
+      "confirmation_terms": [
+        "自由が丘納涼盆踊り大会",
+        "自由が丘駅前ロータリー 特設会場"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "都立大学駅西口緑道",
+      "event_name": "桜フェスタ商店街 みんなで盆踊り",
+      "months": [
+        3
+      ],
+      "scale": "小",
+      "aliases": [
+        "桜フェスタ商店街 みんなで",
+        "都立大学駅西口緑道"
+      ],
+      "confirmation_terms": [
+        "桜フェスタ商店街 みんなで盆踊り",
+        "都立大学駅西口緑道"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "JR蒲田駅西口駅前広場(駅前会場)",
+      "event_name": "蒲田国際フェスティバル2025 -世界が出会う下町フェス",
+      "months": [
+        9
+      ],
+      "scale": "大",
+      "aliases": [
+        "JR蒲田駅西口駅前広場"
+      ],
+      "confirmation_terms": [
+        "蒲田国際フェスティバル2025 -世界が出会う下町フェス",
+        "JR蒲田駅西口駅前広場(駅前会場)"
+      ],
+      "official_sources": [],
+      "tier": "large",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "大森南4丁目公園",
+      "event_name": "森ヶ崎自治会",
+      "months": [
+        7
+      ],
+      "scale": "中",
+      "aliases": [
+        "大森南4丁目公園"
+      ],
+      "confirmation_terms": [
+        "森ヶ崎自治会",
+        "大森南4丁目公園"
+      ],
+      "official_sources": [],
+      "tier": "medium",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "大森南一丁目公園",
+      "event_name": "納涼盆踊り大会",
+      "months": [
+        7
+      ],
+      "scale": "中",
+      "aliases": [
+        "大森南一丁目公園",
+        "納涼",
+        "納涼盆踊り"
+      ],
+      "confirmation_terms": [
+        "納涼盆踊り大会",
+        "大森南一丁目公園"
+      ],
+      "official_sources": [],
+      "tier": "medium",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "子安八幡神社",
+      "event_name": "納涼踊り大会",
+      "months": [
+        7
+      ],
+      "scale": "小",
+      "aliases": [
+        "子安八幡神社",
+        "納涼踊り"
+      ],
+      "confirmation_terms": [
+        "納涼踊り大会",
+        "子安八幡神社"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "市野倉南児童公園",
+      "event_name": "市野倉南町会 盆踊り",
+      "months": [
+        8
+      ],
+      "scale": "中",
+      "aliases": [
+        "市野倉南児童公園",
+        "市野倉南町会"
+      ],
+      "confirmation_terms": [
+        "市野倉南町会 盆踊り",
+        "市野倉南児童公園"
+      ],
+      "official_sources": [],
+      "tier": "medium",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "旭児童遊園",
+      "event_name": "東糀谷四・五・六町会 納涼盆踊り大会",
+      "months": [
+        7
+      ],
+      "scale": "小",
+      "aliases": [
+        "旭児童遊園",
+        "東糀谷四・五・六町会",
+        "東糀谷四・五・六町会 納涼",
+        "東糀谷四・五・六町会 納涼盆踊り"
+      ],
+      "confirmation_terms": [
+        "東糀谷四・五・六町会 納涼盆踊り大会",
+        "旭児童遊園"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "池上第二小学校",
+      "event_name": "盆踊り大会",
+      "months": [
+        7
+      ],
+      "scale": "中",
+      "aliases": [
+        "池上第二小学校",
+        "盆踊り"
+      ],
+      "confirmation_terms": [
+        "盆踊り大会",
+        "池上第二小学校"
+      ],
+      "official_sources": [],
+      "tier": "medium",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "羽田神社",
+      "event_name": "羽田青年連合会",
+      "months": [
+        7
+      ],
+      "scale": "小",
+      "aliases": [
+        "羽田神社"
+      ],
+      "confirmation_terms": [
+        "羽田青年連合会",
+        "羽田神社"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "西仲天祖神社",
+      "event_name": "西糀谷四丁目町会 盆踊り大会",
+      "months": [
+        7
+      ],
+      "scale": "小",
+      "aliases": [
+        "西仲天祖神社",
+        "西糀谷四丁目町会",
+        "西糀谷四丁目町会 盆踊り"
+      ],
+      "confirmation_terms": [
+        "西糀谷四丁目町会 盆踊り大会",
+        "西仲天祖神社"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "馬込桜並木公園、馬込桜並木通り",
+      "event_name": "馬込地区自治会連合会、馬籠商店会連合睦会",
+      "months": [
+        4
+      ],
+      "scale": "中",
+      "aliases": [
+        "馬込桜並木公園、馬込桜並木通り"
+      ],
+      "confirmation_terms": [
+        "馬込地区自治会連合会、馬籠商店会連合睦会",
+        "馬込桜並木公園、馬込桜並木通り"
+      ],
+      "official_sources": [],
+      "tier": "medium",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "三峰公園",
+      "event_name": "納涼夏祭り大会",
+      "months": [
+        7
+      ],
+      "scale": "中",
+      "aliases": [
+        "三峰公園",
+        "納涼夏祭り"
+      ],
+      "confirmation_terms": [
+        "納涼夏祭り大会",
+        "三峰公園"
+      ],
+      "official_sources": [],
+      "tier": "medium",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "上北沢小学校",
+      "event_name": "上北沢の納涼盆踊り",
+      "months": [
+        8
+      ],
+      "scale": "中",
+      "aliases": [
+        "上北沢の",
+        "上北沢の納涼",
+        "上北沢小学校"
+      ],
+      "confirmation_terms": [
+        "上北沢の納涼盆踊り",
+        "上北沢小学校"
+      ],
+      "official_sources": [],
+      "tier": "medium",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "下代田児童遊園",
+      "event_name": "下代田東子供祭り・納涼祭り",
+      "months": [
+        7
+      ],
+      "scale": "小",
+      "aliases": [
+        "下代田児童遊園"
+      ],
+      "confirmation_terms": [
+        "下代田東子供祭り・納涼祭り",
+        "下代田児童遊園"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "下北沢駅東口",
+      "event_name": "下北沢盆踊り2025",
+      "months": [
+        8
+      ],
+      "scale": "小",
+      "aliases": [
+        "下北沢駅東口"
+      ],
+      "confirmation_terms": [
+        "下北沢盆踊り2025",
+        "下北沢駅東口"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "久富稲荷神社",
+      "event_name": "新町公民会 盆踊り大会",
+      "months": [
+        8
+      ],
+      "scale": "小",
+      "aliases": [
+        "久富稲荷神社",
+        "新町公民会",
+        "新町公民会 盆踊り"
+      ],
+      "confirmation_terms": [
+        "新町公民会 盆踊り大会",
+        "久富稲荷神社"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "二子玉川西地区ふれあい広場(246高架下)",
+      "event_name": "玉川町会盆おどり大会",
+      "months": [
+        7
+      ],
+      "scale": "中",
+      "aliases": [
+        "二子玉川西地区ふれあい広場",
+        "玉川町会",
+        "玉川町会盆おどり"
+      ],
+      "confirmation_terms": [
+        "玉川町会盆おどり大会",
+        "二子玉川西地区ふれあい広場(246高架下)"
+      ],
+      "official_sources": [],
+      "tier": "medium",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "京王線芦花公園駅前ロータリー(南口)",
+      "event_name": "芦花公園駅前盆踊り大会",
+      "months": [
+        7
+      ],
+      "scale": "大",
+      "aliases": [
+        "京王線芦花公園駅前ロータリー",
+        "芦花公園駅前",
+        "芦花公園駅前盆踊り"
+      ],
+      "confirmation_terms": [
+        "芦花公園駅前盆踊り大会",
+        "京王線芦花公園駅前ロータリー(南口)"
+      ],
+      "official_sources": [],
+      "tier": "large",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "八幡小学校",
+      "event_name": "親子盆踊り大会",
+      "months": [
+        7
+      ],
+      "scale": "中",
+      "aliases": [
+        "八幡小学校",
+        "親子",
+        "親子盆踊り"
+      ],
+      "confirmation_terms": [
+        "親子盆踊り大会",
+        "八幡小学校"
+      ],
+      "official_sources": [],
+      "tier": "medium",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "千歳船橋駅前広場",
+      "event_name": "船橋会 盆踊り",
+      "months": [
+        8
+      ],
+      "scale": "大",
+      "aliases": [
+        "千歳船橋駅前広場",
+        "船橋会"
+      ],
+      "confirmation_terms": [
+        "船橋会 盆踊り",
+        "千歳船橋駅前広場"
+      ],
+      "official_sources": [],
+      "tier": "large",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "奥沢小学校",
+      "event_name": "奥沢交和会",
+      "months": [
+        7
+      ],
+      "scale": "中",
+      "aliases": [
+        "奥沢小学校"
+      ],
+      "confirmation_terms": [
+        "奥沢交和会",
+        "奥沢小学校"
+      ],
+      "official_sources": [],
+      "tier": "medium",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "宇奈根氷川神社",
+      "event_name": "宇奈根町会 盆踊り大会",
+      "months": [
+        7
+      ],
+      "scale": "小",
+      "aliases": [
+        "宇奈根氷川神社",
+        "宇奈根町会",
+        "宇奈根町会 盆踊り"
+      ],
+      "confirmation_terms": [
+        "宇奈根町会 盆踊り大会",
+        "宇奈根氷川神社"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "小田急線喜多見駅前 南口広場",
+      "event_name": "喜多見盆踊り大会",
+      "months": [
+        7
+      ],
+      "scale": "大",
+      "aliases": [
+        "喜多見",
+        "喜多見盆踊り",
+        "小田急線喜多見駅前 南口広場"
+      ],
+      "confirmation_terms": [
+        "喜多見盆踊り大会",
+        "小田急線喜多見駅前 南口広場"
+      ],
+      "official_sources": [],
+      "tier": "large",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "小田急線祖師ヶ谷大蔵駅前広場",
+      "event_name": "祖師谷商店街振興組合",
+      "months": [
+        7
+      ],
+      "scale": "大",
+      "aliases": [
+        "小田急線祖師ヶ谷大蔵駅前広場"
+      ],
+      "confirmation_terms": [
+        "祖師谷商店街振興組合",
+        "小田急線祖師ヶ谷大蔵駅前広場"
+      ],
+      "official_sources": [],
+      "tier": "large",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "希望ヶ丘団地 テニスコート",
+      "event_name": "希望ヶ丘団地夏まつり",
+      "months": [
+        7
+      ],
+      "scale": "中",
+      "aliases": [
+        "希望ヶ丘団地 テニスコート"
+      ],
+      "confirmation_terms": [
+        "希望ヶ丘団地夏まつり",
+        "希望ヶ丘団地 テニスコート"
+      ],
+      "official_sources": [],
+      "tier": "medium",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "廻沢稲荷神社",
+      "event_name": "千歳台廻沢地区盆踊り",
+      "months": [
+        7
+      ],
+      "scale": "小",
+      "aliases": [
+        "千歳台廻沢地区",
+        "廻沢稲荷神社"
+      ],
+      "confirmation_terms": [
+        "千歳台廻沢地区盆踊り",
+        "廻沢稲荷神社"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "成城大学9号館前広場",
+      "event_name": "成城学園 盆踊り大会",
+      "months": [
+        7
+      ],
+      "scale": "中",
+      "aliases": [
+        "成城大学9号館前広場",
+        "成城学園",
+        "成城学園 盆踊り"
+      ],
+      "confirmation_terms": [
+        "成城学園 盆踊り大会",
+        "成城大学9号館前広場"
+      ],
+      "official_sources": [],
+      "tier": "medium",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "横根稲荷神社",
+      "event_name": "親子納涼盆踊り大会",
+      "months": [
+        7
+      ],
+      "scale": "小",
+      "aliases": [
+        "横根稲荷神社",
+        "親子",
+        "親子納涼",
+        "親子納涼盆踊り"
+      ],
+      "confirmation_terms": [
+        "親子納涼盆踊り大会",
+        "横根稲荷神社"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "池尻稲荷神社",
+      "event_name": "盆踊り(池尻地区)",
+      "months": [
+        8
+      ],
+      "scale": "小",
+      "aliases": [
+        "池尻稲荷神社"
+      ],
+      "confirmation_terms": [
+        "盆踊り(池尻地区)",
+        "池尻稲荷神社"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "瀬田中学校",
+      "event_name": "瀬田商店会 瀬田納涼盆踊り",
+      "months": [
+        8
+      ],
+      "scale": "中",
+      "aliases": [
+        "瀬田中学校",
+        "瀬田商店会 瀬田",
+        "瀬田商店会 瀬田納涼"
+      ],
+      "confirmation_terms": [
+        "瀬田商店会 瀬田納涼盆踊り",
+        "瀬田中学校"
+      ],
+      "official_sources": [],
+      "tier": "medium",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "砧小学校",
+      "event_name": "第38回砧っ子夏祭り",
+      "months": [
+        7
+      ],
+      "scale": "中",
+      "aliases": [
+        "砧っ子",
+        "砧小学校"
+      ],
+      "confirmation_terms": [
+        "第38回砧っ子夏祭り",
+        "砧小学校"
+      ],
+      "official_sources": [],
+      "tier": "medium",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "祖師谷神明社",
+      "event_name": "祖師谷昇進会商店街(振)盆踊り",
+      "months": [
+        7
+      ],
+      "scale": "小",
+      "aliases": [
+        "祖師谷昇進会商店街(振)",
+        "祖師谷神明社"
+      ],
+      "confirmation_terms": [
+        "祖師谷昇進会商店街(振)盆踊り",
+        "祖師谷神明社"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "野毛六所神社",
+      "event_name": "野毛町会 納涼盆踊り大会",
+      "months": [
+        7
+      ],
+      "scale": "小",
+      "aliases": [
+        "野毛六所神社",
+        "野毛町会",
+        "野毛町会 納涼",
+        "野毛町会 納涼盆踊り"
+      ],
+      "confirmation_terms": [
+        "野毛町会 納涼盆踊り大会",
+        "野毛六所神社"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "鎌田天神社",
+      "event_name": "鎌田協和会 鎌田納涼盆踊り",
+      "months": [
+        7
+      ],
+      "scale": "小",
+      "aliases": [
+        "鎌田協和会 鎌田",
+        "鎌田協和会 鎌田納涼",
+        "鎌田天神社"
+      ],
+      "confirmation_terms": [
+        "鎌田協和会 鎌田納涼盆踊り",
+        "鎌田天神社"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "駒澤大学 駒沢キャンパス",
+      "event_name": "駒澤大学同窓会東京都支部・営友会",
+      "months": [
+        8
+      ],
+      "scale": "小",
+      "aliases": [
+        "駒澤大学 駒沢キャンパス"
+      ],
+      "confirmation_terms": [
+        "駒澤大学同窓会東京都支部・営友会",
+        "駒澤大学 駒沢キャンパス"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "代々木公園野外ステージ",
+      "event_name": "グリーン アイルランド フェスティバル 2026 アイリッシュ盆踊り",
+      "months": [
+        3
+      ],
+      "scale": "小",
+      "aliases": [
+        "グリーン アイルランド フェスティバル 2026 アイリッシュ",
+        "代々木公園野外ステージ"
+      ],
+      "confirmation_terms": [
+        "グリーン アイルランド フェスティバル 2026 アイリッシュ盆踊り",
+        "代々木公園野外ステージ"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "新井薬師公園",
+      "event_name": "中野通り桜まつり",
+      "months": [
+        3
+      ],
+      "scale": "中",
+      "aliases": [
+        "新井薬師公園"
+      ],
+      "confirmation_terms": [
+        "中野通り桜まつり",
+        "新井薬師公園"
+      ],
+      "official_sources": [],
+      "tier": "medium",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "ふるさと千川ひろば(千川小学校校庭跡地)",
+      "event_name": "第34回ふるさと千川 まつり",
+      "months": [
+        6
+      ],
+      "scale": "中",
+      "aliases": [
+        "ふるさと千川ひろば"
+      ],
+      "confirmation_terms": [
+        "第34回ふるさと千川 まつり",
+        "ふるさと千川ひろば(千川小学校校庭跡地)"
+      ],
+      "official_sources": [],
+      "tier": "medium",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "中池袋公園",
+      "event_name": "白鳥おどりin池袋",
+      "months": [
+        4
+      ],
+      "scale": "中",
+      "aliases": [
+        "中池袋公園"
+      ],
+      "confirmation_terms": [
+        "白鳥おどりin池袋",
+        "中池袋公園"
+      ],
+      "official_sources": [],
+      "tier": "medium",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "あらかわ遊園アリスの広場",
+      "event_name": "第60回あらかわ青年大会 アリストック",
+      "months": [
+        3
+      ],
+      "scale": "小",
+      "aliases": [
+        "あらかわ遊園アリスの広場"
+      ],
+      "confirmation_terms": [
+        "第60回あらかわ青年大会 アリストック",
+        "あらかわ遊園アリスの広場"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "真土公園",
+      "event_name": "荒川盆踊り会 初踊り",
+      "months": [
+        2
+      ],
+      "scale": "小",
+      "aliases": [
+        "真土公園"
+      ],
+      "confirmation_terms": [
+        "荒川盆踊り会 初踊り",
+        "真土公園"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "五反野コミュニティ公園",
+      "event_name": "西綾瀬町会 夏祭り盆踊り大会",
+      "months": [
+        6
+      ],
+      "scale": "小",
+      "aliases": [
+        "五反野コミュニティ公園",
+        "西綾瀬町会 夏祭り",
+        "西綾瀬町会 夏祭り盆踊り"
+      ],
+      "confirmation_terms": [
+        "西綾瀬町会 夏祭り盆踊り大会",
+        "五反野コミュニティ公園"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "水元公園内はなしょうぶ園口",
+      "event_name": "葛飾菖蒲まつり 水元公園会場 民踊パレード",
+      "months": [
+        5
+      ],
+      "scale": "大",
+      "aliases": [
+        "水元公園内はなしょうぶ園口"
+      ],
+      "confirmation_terms": [
+        "葛飾菖蒲まつり 水元公園会場 民踊パレード",
+        "水元公園内はなしょうぶ園口"
+      ],
+      "official_sources": [],
+      "tier": "large",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "北葛西コミュニティ会館",
+      "event_name": "倉雀会(くらすずめかい)",
+      "months": [
+        2
+      ],
+      "scale": "小",
+      "aliases": [
+        "北葛西コミュニティ会館"
+      ],
+      "confirmation_terms": [
+        "倉雀会(くらすずめかい)",
+        "北葛西コミュニティ会館"
+      ],
+      "official_sources": [],
+      "tier": "small",
+      "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "鹿骨中学校",
+      "event_name": "第4回 好踊会フェア",
+      "months": [
+        3
+      ],
+      "scale": "中",
+      "aliases": [
+        "鹿骨中学校"
+      ],
+      "confirmation_terms": [
+        "第4回 好踊会フェア",
+        "鹿骨中学校"
+      ],
+      "official_sources": [],
+      "tier": "medium",
+      "source": "auto_from_events_public_2026-06-13"
     }
   ]
 }

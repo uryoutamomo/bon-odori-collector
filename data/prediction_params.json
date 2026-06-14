@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "combination": "independent_noisy_or",
+  "decay_rate": 0.75,
+  "prior_probability": 0.15,
+  "reliability": {
+    "official_setlist": 0.95,
+    "semi_official_setlist": 0.8,
+    "regular_advance_mention": 0.55,
+    "complete_numbered_video": 0.95,
+    "partial_impression": 0.7,
+    "public_event_hint": 0.4,
+    "unknown": 0.5
+  }
+}
