@@ -80,6 +80,32 @@
     "song_occurrence": null
   },
   {
+    "name": "あかつき公園の盆踊り",
+    "name_confirmed": false,
+    "venue": "あかつき公園",
+    "area": "中央区",
+    "months": [],
+    "scale": null,
+    "access": "東京メトロ日比谷線 築地駅から徒歩圏内",
+    "address": null,
+    "lat": null,
+    "lng": null,
+    "date": null,
+    "date_end": null,
+    "status": null,
+    "date_confidence": {
+      "level": "unknown",
+      "label": "未確認",
+      "description": "開催日はまだ確認できていません"
+    },
+    "date_candidates": [],
+    "hints": [],
+    "jun": {},
+    "description": null,
+    "detail": null,
+    "songs": []
+  },
+  {
     "name": "京橋盆踊り",
     "name_confirmed": true,
     "venue": "京橋エドグラン 京橋中央ひろば",
@@ -249,6 +275,32 @@
     "detail": null,
     "songs": [],
     "song_occurrence": null
+  },
+  {
+    "name": "有馬小学校の盆踊り",
+    "name_confirmed": false,
+    "venue": "有馬小学校",
+    "area": "中央区",
+    "months": [],
+    "scale": null,
+    "access": "東京メトロ半蔵門線 水天宮前駅、日比谷線/都営浅草線 人形町駅から徒歩圏内",
+    "address": null,
+    "lat": null,
+    "lng": null,
+    "date": null,
+    "date_end": null,
+    "status": null,
+    "date_confidence": {
+      "level": "unknown",
+      "label": "未確認",
+      "description": "開催日はまだ確認できていません"
+    },
+    "date_candidates": [],
+    "hints": [],
+    "jun": {},
+    "description": null,
+    "detail": null,
+    "songs": []
   },
   {
     "name": "中央区大江戸まつり盆おどり大会",
@@ -1769,6 +1821,42 @@
     "song_occurrence": null
   },
   {
+    "name": "浅草橋マロニエまつり盆踊り",
+    "name_confirmed": true,
+    "venue": "ヒューリック浅草橋ビル前",
+    "area": "台東区",
+    "months": [
+      5
+    ],
+    "scale": "小",
+    "access": "JR・都営浅草橋駅から徒歩約3分",
+    "address": "東京都台東区浅草橋1丁目22-16付近",
+    "lat": null,
+    "lng": null,
+    "date": "2026-05-09",
+    "date_end": null,
+    "status": "終了",
+    "date_confidence": {
+      "level": "unknown",
+      "label": "未確認",
+      "description": "開催日はまだ確認できていません"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        5,
+        9
+      ]
+    ],
+    "jun": {
+      "5": "上旬"
+    },
+    "description": null,
+    "detail": "2026-05-09開催済み。第一部は鳥越おかず横丁13:00-14:00、第二部はヒューリック浅草橋ビル前14:30-16:30。たいとう音頭・浅草橋音頭など。",
+    "songs": [],
+    "song_occurrence": null
+  },
+  {
     "name": "TOKYO盆ダンス×STEAM FESTIVAL2026",
     "name_confirmed": true,
     "venue": "上野恩賜公園",
@@ -1880,7 +1968,7 @@
       "7": "上旬"
     },
     "description": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026は、上野恩賜公園で開かれる屋外型の盆踊り・夏の地域イベント。7月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2026-07-03〜2026-07-05 開催予定。X投稿から確定日として反映。\nふるさと東京応援祭\n第三回ビールと浴衣de盆踊りin上野2026\n\n2026年7月3日（金）〜7月5日（日）\n\n上野恩賜公園で開催！\nビールと盆踊りの夏祭り\n\n#台東区 #上野 #谷中\n#イベント #フェス\n\nhttps://t.co/eXUZckhuOG",
+    "detail": "2026-07-03〜2026-07-05 開催予定。X投稿から確定日として反映。\nふるさと東京応援祭\n第三回ビールと浴衣de盆踊りin上野2026\n\n2026年7月3日（金）〜7月5日（日）\n\n上野恩賜公園で開催！\nビールと盆踊りの夏祭り\n\n#台東区 #上野 #谷中\n#イベント #フェス\n\nhttps://t.co/eXUZckhuOG\n\n[retrospective_harvest] 追加証拠\n- 検出名: ビールと浴衣de盆踊り\n- 検出日付: 2026-07-03\n- 出典: https://x.com/event_checker/status/2064996223862370647\n- 出典: https://x.com/event_checker/status/2061985557266198794",
     "songs": [],
     "song_occurrence": null
   },
@@ -6513,6 +6601,41 @@
     "song_occurrence": null
   },
   {
+    "name": "羽根木公園の盆踊り",
+    "name_confirmed": false,
+    "venue": "羽根木公園",
+    "area": "世田谷区",
+    "months": [
+      2
+    ],
+    "scale": null,
+    "access": "小田急線 梅ヶ丘駅、井の頭線 東松原駅から徒歩圏内",
+    "address": null,
+    "lat": null,
+    "lng": null,
+    "date": null,
+    "date_end": null,
+    "status": null,
+    "date_confidence": {
+      "level": "unknown",
+      "label": "未確認",
+      "description": "開催日はまだ確認できていません"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        2,
+        15
+      ]
+    ],
+    "jun": {
+      "2": "中旬"
+    },
+    "description": null,
+    "detail": null,
+    "songs": []
+  },
+  {
     "name": "野毛町会 納涼盆踊り大会 7月26日(土)-27日(日)",
     "name_confirmed": true,
     "venue": "野毛六所神社",
@@ -6868,7 +6991,7 @@
       "6": "上旬"
     },
     "description": "第34回ふるさと千川 まつりは、ふるさと千川ひろば(千川小学校校庭跡地)を会場にした地域密着の盆踊り・夏祭り。6月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2026 [P2]\n6/5 - 6。次回日程は未確認。",
+    "detail": "2026 [P2]\n6/5 - 6。次回日程は未確認。\n\n[retrospective_harvest] 追加証拠\n- 検出名: ふるさと千川まつり\n- 検出日付: 2026-06-05\n- 出典: https://x.com/_masakari/status/2063027320777265287",
     "songs": [],
     "song_occurrence": null
   },
@@ -7867,7 +7990,7 @@
       "6": "下旬"
     },
     "description": "西綾瀬町会 夏祭り盆踊り大会は、五反野コミュニティ公園で開かれる屋外型の盆踊り・夏の地域イベント。6月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "足立区の令和7年度盆踊り・まつり情報。17時開始。",
+    "detail": "足立区の令和7年度盆踊り・まつり情報。17時開始。\n\n[retrospective_harvest] 追加証拠\n- 検出名: 足立区の盆踊りで最も早い盆踊り\n- 検出日付: 2026-06-20\n- 出典: https://x.com/Dk725aNpscBwpEa/status/2065082668396827008",
     "songs": [],
     "song_occurrence": null
   },
