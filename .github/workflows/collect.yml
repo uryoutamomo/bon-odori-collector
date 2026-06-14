@@ -85,6 +85,9 @@ jobs:
         python build_song_occurrences.py
         python export_public_events.py
         python build_event_song_candidates.py
+        python build_song_ocr_queue.py
+        python calibrate_song_predictions.py
+        python build_retrospective_harvest.py
 
     - name: Audit canonical event database after promotion
       env:
@@ -105,9 +108,16 @@ jobs:
         [ -f data/public/event_song_occurrences_public.json ] && git add data/public/event_song_occurrences_public.json
         [ -f data/song_occurrences.json ] && git add data/song_occurrences.json
         [ -f data/song_prediction_snapshots.json ] && git add data/song_prediction_snapshots.json
+        [ -f data/song_prediction_calibration.json ] && git add data/song_prediction_calibration.json
+        [ -f data/song_ocr_queue.json ] && git add data/song_ocr_queue.json
+        [ -f data/song_ocr_review.json ] && git add data/song_ocr_review.json
+        [ -f data/song_evidence_manual.json ] && git add data/song_evidence_manual.json
+        [ -f data/prediction_params.json ] && git add data/prediction_params.json
+        [ -f data/retrospective_harvest_candidates.json ] && git add data/retrospective_harvest_candidates.json
         [ -f data/x_budget.json ] && git add data/x_budget.json
         [ -f data/x_account_scores.json ] && git add data/x_account_scores.json
         [ -f data/proactive_event_report.json ] && git add data/proactive_event_report.json
+        [ -f data/proactive_search_state.json ] && git add data/proactive_search_state.json
         [ -f data/torimochi_queue_seen.json ] && git add data/torimochi_queue_seen.json
         [ -f data/x_whitelist_state.json ] && git add data/x_whitelist_state.json
         [ -f data/x_event_evidence_state.json ] && git add data/x_event_evidence_state.json

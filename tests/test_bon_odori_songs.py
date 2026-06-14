@@ -44,6 +44,27 @@ class BonOdoriSongsTest(unittest.TestCase):
 
         self.assertEqual(rows, [])
 
+    def test_review_candidates_drop_generic_song_names(self):
+        rows = extract_song_candidates(
+            "盆踊り（ぼんおどり）は、日本において、盆の時期に先祖を供養する行事、またその行事内で行われる踊り。"
+        )
+
+        self.assertEqual(rows, [])
+        self.assertEqual(extract_song_candidates("曲は踊り好きの先達やあたらしく踊り"), [])
+
+    def test_review_candidates_drop_blocked_cultural_context(self):
+        rows = extract_song_candidates("死霊の盆踊りを観た。曲はマイケル音頭っぽい。")
+
+        self.assertEqual(rows, [])
+
+    def test_review_candidates_strip_noise_prefixes(self):
+        rows = extract_song_candidates("曲目は演目・大の坂踊り、回かすがい郡上おどり")
+
+        self.assertIn("大の坂踊り", names(rows))
+        self.assertIn("かすがい郡上おどり", names(rows))
+        self.assertNotIn("演目・大の坂踊り", names(rows))
+        self.assertNotIn("回かすがい郡上おどり", names(rows))
+
 
 if __name__ == "__main__":
     unittest.main()

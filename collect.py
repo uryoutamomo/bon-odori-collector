@@ -2,6 +2,7 @@ import os
 import re
 import json
 import hashlib
+import html
 import urllib.request
 import urllib.parse
 import urllib.error
@@ -14,7 +15,11 @@ from proactive_search import (
     check_official_sources,
     is_target_confirmation,
     load_targets,
+    load_state as load_proactive_state,
+    save_state as save_proactive_state,
     select_due_targets,
+    select_targets_for_run,
+    update_state_from_report,
 )
 from queue_store import DynamoQueueStore, EventCandidateQueueStore
 from event_evidence import (
@@ -365,7 +370,18 @@ VOICE_FEEDS = [
 ]
 
 # voices スキーマ:
-# { source, account, name, title, text, url, date (ISO8601), tags }
+# { source, account, name, title, text, url, date (ISO8601), tags, media_urls? }
+VOICE_TEXT_MAX_CHARS = 3000
+
+
+def _extract_urls(text):
+    """Extract unique http(s) URLs from raw RSS text, including HTML href values."""
+    urls = []
+    for match in re.finditer(r"https?://[^\s\"'<>]+", text or ""):
+        url = html.unescape(match.group(0)).rstrip(")、。，.,)")
+        if url and url not in urls:
+            urls.append(url)
+    return urls
 
 def _parse_voice_entry(entry, feed_meta):
     """feedparser の entry を voices スキーマに変換する。"""
@@ -378,9 +394,9 @@ def _parse_voice_entry(entry, feed_meta):
         text = entry["summary"]
     elif "content" in entry and entry["content"]:
         text = entry["content"][0].get("value", "")
-    # HTMLタグを除去して500字程度に切り詰め
-    import re as _re
-    text = _re.sub(r"<[^>]+>", "", text).strip()[:500]
+    media_urls = _extract_urls(text)
+    # HTMLタグを除去し、YouTube概要欄のセットリストが欠落しない程度に保持する
+    text = html.unescape(re.sub(r"<[^>]+>", " ", text)).strip()[:VOICE_TEXT_MAX_CHARS]
 
     # 日付
     date_str = ""
@@ -395,7 +411,7 @@ def _parse_voice_entry(entry, feed_meta):
 
     tags = [t.get("term", "") for t in entry.get("tags", []) if t.get("term")]
 
-    return {
+    voice = {
         "source": feed_meta["source"],
         "account": feed_meta["account"],
         "name": feed_meta["name"],
@@ -405,6 +421,9 @@ def _parse_voice_entry(entry, feed_meta):
         "date": date_str,
         "tags": tags,
     }
+    if media_urls:
+        voice["media_urls"] = media_urls
+    return voice
 
 
 def collect_voices(seen_urls: set) -> tuple[list, list]:
@@ -544,6 +563,38 @@ def _x_search(query, cursor=""):
         return json.loads(resp.read())
 
 
+def _x_media_urls(tw):
+    """Extract media image URLs from known twitterapi.io/Twitter response shapes."""
+    urls = []
+
+    def add(value):
+        if value and isinstance(value, str) and value not in urls:
+            urls.append(value)
+
+    containers = [
+        tw.get("media"),
+        tw.get("medias"),
+        tw.get("photos"),
+        (tw.get("entities") or {}).get("media"),
+        (tw.get("extendedEntities") or {}).get("media"),
+        (tw.get("extended_entities") or {}).get("media"),
+    ]
+    for container in containers:
+        if not container:
+            continue
+        if isinstance(container, dict):
+            container = [container]
+        for item in container:
+            if not isinstance(item, dict):
+                continue
+            add(item.get("media_url_https"))
+            add(item.get("media_url"))
+            add(item.get("url"))
+            add(item.get("display_url"))
+            add(item.get("preview_image_url"))
+    return urls
+
+
 def _x_map_to_voice(tw):
     """twitterapi.io のツイートを voices スキーマに変換（best-effort）。"""
     author = tw.get("author") or tw.get("user") or {}
@@ -559,7 +610,7 @@ def _x_map_to_voice(tw):
             date_iso = datetime.strptime(raw_date, "%a %b %d %H:%M:%S %z %Y").isoformat()
         except ValueError:
             pass
-    return {
+    voice = {
         "source": "x",
         "account": f"@{username}" if username else "",
         "name": name,
@@ -570,6 +621,10 @@ def _x_map_to_voice(tw):
         "tweet_id": str(tw_id),
         "tags": [],
     }
+    media_urls = _x_media_urls(tw)
+    if media_urls:
+        voice["media_urls"] = media_urls
+    return voice
 
 
 def _append_x_log_row(voice, query_id, judgement, cost):
@@ -2918,12 +2973,17 @@ def main():
         venue_master_raw = vm if isinstance(vm, list) else vm.get("venues", [])
         all_targets, proactive_config = load_targets(venue_master_raw)
         lead_months = int(proactive_config.get("lead_months", 1))
-        proactive_targets = select_due_targets(
-            all_targets, lead_months=lead_months
-        )[:int(proactive_config.get("max_targets_per_run", 12))]
+        due_targets = select_due_targets(all_targets, lead_months=lead_months)
+        proactive_state = load_proactive_state()
+        proactive_targets = select_targets_for_run(
+            due_targets,
+            proactive_state,
+            limit=int(proactive_config.get("max_targets_per_run", 12)),
+        )
         print(
             f"[proactive] 定番イベント {len(all_targets)} 件中、"
-            f"今月から{lead_months}か月先まで {len(proactive_targets)} 件を確認"
+            f"今月から{lead_months}か月先まで {len(due_targets)} 件が対象。"
+            f"ローテーションで {len(proactive_targets)} 件を確認"
         )
     except Exception as exc:
         print(f"[proactive] 設定読み込み失敗（スキップ）: {exc}")
@@ -3124,6 +3184,12 @@ def main():
             latest_items + deduped_voices + official_evidence,
             current_year,
         )
+        proactive_state = update_state_from_report(
+            load_proactive_state(),
+            proactive_targets,
+            proactive_report,
+        )
+        save_proactive_state(proactive_state)
         with open(
             "data/proactive_event_report.json", "w", encoding="utf-8"
         ) as f:

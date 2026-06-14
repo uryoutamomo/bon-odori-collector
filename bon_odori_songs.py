@@ -2,6 +2,8 @@
 
 import re
 
+from suppression_rules import blocked_cultural_match, is_generic_song_name
+
 
 SONG_CONTEXT_RE = re.compile(
     r"(?:曲目表|曲目|曲順|曲|踊る曲|踊り|選曲|流れる曲|セットリスト|セトリ|演目|プログラム)"
@@ -43,6 +45,8 @@ STOPWORDS = {
 def _clean_song(value):
     value = re.sub(r"^[、。・\s]+|[、。・\s]+$", "", value or "")
     value = re.sub(r"^(?:曲目は|曲は|演目は|などの)", "", value)
+    value = re.sub(r"^(?:演目|曲目|プログラム|program)[・:：]?", "", value, flags=re.IGNORECASE)
+    value = re.sub(r"^回(?=[一-龥ぁ-んァ-ヶーA-Za-z0-9])", "", value)
     value = re.sub(r"^.*さん(?:の|による)", "", value)
     value = re.sub(r"^初の", "", value)
     value = re.sub(r"(?:など|ほか|他|って言う|という|と民謡|を|で)?踊り$", lambda m: "" if m.group(0) != "踊り" else m.group(0), value)
@@ -117,13 +121,19 @@ def _split_candidate_segment(segment):
 def _candidate_ok(song):
     if not song or song in STOPWORDS:
         return False
+    if is_generic_song_name(song):
+        return False
+    if blocked_cultural_match(song):
+        return False
     if re.search(
         r"[0-9０-９]{2,}|https?|t\.co|youtu\.be|盆踊り|盆おどり|開催|会場|時間|午後|午前|"
         r"行き|行っ|踊り方|様子|ご覧|コンテンツ|イベント|講習会|協議会|サークル|神輿|"
         r"奉納|祭礼|例大祭|流し踊り|今年|去年|一昨年|ちなみに|最近|毎年|見て|ずっと|"
-        r"着て|中で|伝統曲|民謡歌手|難しい|嬉しそう",
+        r"着て|中で|伝統曲|民謡歌手|難しい|嬉しそう|あたらしく|踊り好き",
         song,
     ):
+        return False
+    if len(song) >= 12 and re.search(r"[がをにへでからのとや]", song):
         return False
     if len(song) < 2 or len(song) > 28:
         return False
@@ -155,6 +165,8 @@ def extract_song_candidates(text):
     def add(name, reason):
         name = _clean_song(name)
         if not _candidate_ok(name):
+            return
+        if blocked_cultural_match(text):
             return
         for item in found:
             if item["name"] == name:

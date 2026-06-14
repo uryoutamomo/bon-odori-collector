@@ -57,6 +57,9 @@ jobs:
         python export_public_events.py
         python build_song_occurrences.py
         python export_public_events.py
+        python build_song_ocr_queue.py
+        python calibrate_song_predictions.py
+        python build_retrospective_harvest.py
 
     - name: Build weekly harvest candidates
       run: python build_weekly_harvest_candidates.py --days "$HARVEST_DAYS"
@@ -158,4 +161,10 @@ jobs:
         [ -f data/public/event_song_occurrences_public.json ] && git add data/public/event_song_occurrences_public.json
         [ -f data/song_occurrences.json ] && git add data/song_occurrences.json
         [ -f data/song_prediction_snapshots.json ] && git add data/song_prediction_snapshots.json
+        [ -f data/song_prediction_calibration.json ] && git add data/song_prediction_calibration.json
+        [ -f data/song_ocr_queue.json ] && git add data/song_ocr_queue.json
+        [ -f data/song_ocr_review.json ] && git add data/song_ocr_review.json
+        [ -f data/song_evidence_manual.json ] && git add data/song_evidence_manual.json
+        [ -f data/prediction_params.json ] && git add data/prediction_params.json
+        [ -f data/retrospective_harvest_candidates.json ] && git add data/retrospective_harvest_candidates.json
         git diff --cached --quiet || (git commit -m "Update weekly harvest review queues" && git push)

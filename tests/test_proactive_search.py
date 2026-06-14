@@ -10,6 +10,9 @@ from proactive_search import (
     load_targets,
     parse_months,
     select_due_targets,
+    select_targets_for_run,
+    target_key,
+    update_state_from_report,
 )
 from sync_venue_master import _prop
 
@@ -58,6 +61,59 @@ class ProactiveSearchTest(unittest.TestCase):
         now = datetime(2026, 6, 7, tzinfo=timezone.utc)
         selected = select_due_targets(targets, now=now, lead_months=1)
         self.assertEqual([item["venue"] for item in selected], ["六月", "七月"])
+
+    def test_targets_rotate_by_unchecked_and_oldest_unconfirmed(self):
+        targets = [
+            {"venue": "確認済み", "event_name": "確認済み", "months": [6]},
+            {"venue": "未確認古い", "event_name": "未確認古い", "months": [6]},
+            {"venue": "未確認新しい", "event_name": "未確認新しい", "months": [6]},
+            {"venue": "未チェック", "event_name": "未チェック", "months": [6]},
+        ]
+        state = {"targets": {
+            target_key(targets[0]): {
+                "last_status": "confirmed",
+                "last_checked_at": "2026-06-10T00:00:00+00:00",
+            },
+            target_key(targets[1]): {
+                "last_status": "unconfirmed",
+                "last_checked_at": "2026-06-01T00:00:00+00:00",
+            },
+            target_key(targets[2]): {
+                "last_status": "unconfirmed",
+                "last_checked_at": "2026-06-12T00:00:00+00:00",
+            },
+        }}
+
+        selected = select_targets_for_run(targets, state, limit=3)
+
+        self.assertEqual(
+            [item["venue"] for item in selected],
+            ["未チェック", "未確認古い", "未確認新しい"],
+        )
+
+    def test_updates_proactive_state_from_report(self):
+        targets = [{
+            "venue": "山王日枝神社",
+            "event_name": "山王音頭と民踊大会",
+            "months": [6],
+        }]
+        report = [{
+            "venue": "山王日枝神社",
+            "event_name": "山王音頭と民踊大会",
+            "status": "confirmed",
+        }]
+        state = update_state_from_report(
+            {},
+            targets,
+            report,
+            now=datetime(2026, 6, 13, tzinfo=timezone.utc),
+        )
+        record = state["targets"][target_key(targets[0])]
+
+        self.assertEqual(record["last_status"], "confirmed")
+        self.assertEqual(record["checked_count"], 1)
+        self.assertEqual(record["confirmed_count"], 1)
+        self.assertEqual(record["last_checked_at"], "2026-06-13T00:00:00+00:00")
 
     def test_query_contains_alias_and_year(self):
         query = build_queries({

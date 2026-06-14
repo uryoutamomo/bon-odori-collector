@@ -7,6 +7,7 @@ from datetime import datetime, timezone
 
 
 DEFAULT_CONFIG = "data/evergreen_events.json"
+DEFAULT_STATE = "data/proactive_search_state.json"
 BON_KEYWORDS = ("盆踊り", "盆おどり", "民踊大会", "音頭と民踊")
 
 
@@ -89,6 +90,97 @@ def select_due_targets(targets, now=None, lead_months=1):
         target for target in targets
         if active.intersection(parse_months(target.get("months")))
     ]
+
+
+def target_key(target):
+    raw = "|".join([
+        str(target.get("venue") or ""),
+        str(target.get("event_name") or ""),
+    ])
+    return re.sub(r"\s+", "", raw).casefold()
+
+
+def load_state(path=DEFAULT_STATE):
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            state = json.load(f)
+    except (OSError, ValueError):
+        state = {}
+    if not isinstance(state, dict):
+        state = {}
+    state.setdefault("targets", {})
+    if not isinstance(state["targets"], dict):
+        state["targets"] = {}
+    return state
+
+
+def save_state(state, path=DEFAULT_STATE):
+    os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(state, f, ensure_ascii=False, indent=2)
+
+
+def select_targets_for_run(targets, state=None, limit=12, now=None):
+    """Rotate due targets by status and age instead of taking the fixed prefix."""
+    state = state or {}
+    checked = state.get("targets") or {}
+
+    def sort_key(target):
+        key = target_key(target)
+        record = checked.get(key) or {}
+        status = record.get("last_status") or ""
+        if status == "confirmed":
+            status_rank = 2
+        elif status == "unconfirmed":
+            status_rank = 1
+        else:
+            status_rank = 0
+        return (
+            status_rank,
+            record.get("last_checked_at") or "",
+            key,
+        )
+
+    return sorted(targets or [], key=sort_key)[:max(0, int(limit))]
+
+
+def update_state_from_report(state, targets, report, now=None):
+    now = now or datetime.now(timezone.utc)
+    checked_at = now.isoformat()
+    state = dict(state or {})
+    records = dict(state.get("targets") or {})
+    report_by_key = {}
+    for item in report or []:
+        key = re.sub(
+            r"\s+",
+            "",
+            "|".join([
+                str(item.get("venue") or ""),
+                str(item.get("event_name") or ""),
+            ]),
+        ).casefold()
+        report_by_key[key] = item
+
+    for target in targets or []:
+        key = target_key(target)
+        item = report_by_key.get(key) or {}
+        previous = records.get(key) or {}
+        records[key] = {
+            **previous,
+            "venue": target.get("venue") or "",
+            "event_name": target.get("event_name") or target.get("venue") or "",
+            "months": parse_months(target.get("months")),
+            "last_checked_at": checked_at,
+            "last_status": item.get("status") or "unconfirmed",
+            "confirmed_count": (
+                int(previous.get("confirmed_count", 0))
+                + (1 if item.get("status") == "confirmed" else 0)
+            ),
+            "checked_count": int(previous.get("checked_count", 0)) + 1,
+        }
+    state["targets"] = records
+    state["updated_at"] = checked_at
+    return state
 
 
 def build_queries(target, year):
