@@ -1,6 +1,8 @@
 import unittest
+from pathlib import Path
+from tempfile import TemporaryDirectory
 
-from export_public_events import fill_youtube_evidence_defaults, parse_youtube_evidence
+from export_public_events import fill_youtube_evidence_defaults, parse_youtube_evidence, write_public_js
 
 
 class ExportPublicEventsTest(unittest.TestCase):
@@ -38,6 +40,17 @@ class ExportPublicEventsTest(unittest.TestCase):
 
         self.assertEqual(filled[0]["event_name"], "丸の内de盆踊り")
         self.assertEqual(filled[0]["detected_date"], "2025-07-25")
+
+    def test_write_public_js(self):
+        with TemporaryDirectory() as tmp:
+            path = Path(tmp) / "events_public.js"
+
+            write_public_js(path, [{"name": "自由が丘納涼盆踊り大会", "youtube_evidence": []}])
+
+            text = path.read_text(encoding="utf-8")
+            self.assertIn("const EVENTS = ", text)
+            self.assertIn("自由が丘納涼盆踊り大会", text)
+            self.assertTrue(text.endswith(";\n"))
 
 
 if __name__ == "__main__":
