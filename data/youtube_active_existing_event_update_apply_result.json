@@ -1,0 +1,43 @@
+{
+  "generated_by": "apply_youtube_active_existing_event_updates.py",
+  "generated_at": "2026-06-15T07:34:15.652750+00:00",
+  "mode": "dry_run",
+  "apply_performed": false,
+  "source": "data/youtube_active_existing_event_update_dry_run.json",
+  "ready_count": 1,
+  "changed_count": 0,
+  "applied_count": 0,
+  "skipped_count": 0,
+  "updates": [
+    {
+      "target_event_name": "山王音頭と民踊大会",
+      "target_page_id": "3788be04-e762-8112-ae7e-eac6e8acb44b",
+      "target_page_url": "https://app.notion.com/p/3788be04e7628112ae7eeac6e8acb44b",
+      "input_rows": 4,
+      "video_count": 16,
+      "song_count": 13,
+      "dates": [
+        "2026-06-13",
+        "2026-06-14",
+        "2026-06-15"
+      ],
+      "duplicate_url_count": 5,
+      "all_urls_duplicate": false,
+      "apply_status": "ready",
+      "changed": false,
+      "note": "[youtube_evidence] YouTube実績証拠\n- 対象イベント: 山王音頭と民踊大会\n- 検出日付: 2026-06-13, 2026-06-14, 2026-06-15\n- 動画数: 16\n- チャンネル: Tokyo Lonely Walker, 和太鼓お祭りCH, 祭のきせき 盆踊り, shu channel\n- 代表動画: https://www.youtube.com/watch?v=_WhO6Kh08sE / Tokyo Lonely Walker / 盆踊りシーズン開幕！日枝神社 山王祭 盆踊り｜東京音頭 2026年 初日 / Dancing the traditional Japanese Tokyo Ondo. [4K]🇯🇵\n- 代表動画: https://www.youtube.com/watch?v=84q8qeG029A / Tokyo Lonely Walker / 盆踊り開幕！赤坂日枝神社 山王祭 盆踊り｜サザン｜東京音頭｜炭坑節｜山王音頭｜八木節 他 / Traditional Japanese Bon Dance at Hie Shrine. [4K]🇯🇵\n- 代表動画: https://www.youtube.com/watch?v=-H-T164L3QM / 和太鼓お祭りCH / 【速報】東京音頭　【赤坂日枝神社】　山王祭盆踊り１　「山王音頭と民踊大会」の風景　2026年6月13日\n- 代表動画: https://www.youtube.com/watch?v=hDckpEGkzTI / 和太鼓お祭りCH / 炭坑節　【赤坂日枝神社】 山王祭 盆踊り２　「山王音頭と民踊大会」の風景　2026年6月13日\n- 代表動画: https://www.youtube.com/watch?v=qd96HMCNCm8 / 和太鼓お祭りCH / 「大東京音頭」　赤坂日枝神社山王祭盆踊り３　「山王音頭と民踊大会」の風景　2026年6月13日\n- 追加動画: 11件 (詳細は data/youtube_active_existing_event_update_apply_result.json)\n- 関連URL: https://goo.gl/maps/kSAEbnkyHSchcccY6, https://maps.app.goo.gl/BbkXn5qwcQ1PM7aQ9, https://x.com/walkingfilmlove, https://www.tenkamatsuri.jp/minyo/\n- 曲目候補: 東京音頭, 炭坑節, 大東京音頭, ドンパン節, 白浜音頭, 八木節, 花笠音頭, おこさ節, 相馬甚句, 東京おどり, 山王音頭, 千代田おどり, 水戸黄門おどり",
+      "properties": {
+        "開催パターン詳細": {
+          "rich_text": [
+            {
+              "text": {
+                "content": "毎年6/13〜15開催（日枝神社「山王祭」の納涼大会として）。曜日は年により変動\n\n[youtube_evidence] YouTube実績証拠\n- 対象イベント: 山王音頭と民踊大会\n- 検出日付: 2026-06-13, 2026-06-14, 2026-06-15\n- 動画数: 16\n- チャンネル: Tokyo Lonely Walker, 和太鼓お祭りCH, 祭のきせき 盆踊り, shu channel\n- 代表動画: https://www.youtube.com/watch?v=_WhO6Kh08sE / Tokyo Lonely Walker / 盆踊りシーズン開幕！日枝神社 山王祭 盆踊り｜東京音頭 2026年 初日 / Dancing the traditional Japanese Tokyo Ondo. [4K]🇯🇵\n- 代表動画: https://www.youtube.com/watch?v=84q8qeG029A / Tokyo Lonely Walker / 盆踊り開幕！赤坂日枝神社 山王祭 盆踊り｜サザン｜東京音頭｜炭坑節｜山王音頭｜八木節 他 / Traditional Japanese Bon Dance at Hie Shrine. [4K]🇯🇵\n- 代表動画: https://www.youtube.com/watch?v=-H-T164L3QM / 和太鼓お祭りCH / 【速報】東京音頭　【赤坂日枝神社】　山王祭盆踊り１　「山王音頭と民踊大会」の風景　2026年6月13日\n- 代表動画: https://www.youtube.com/watch?v=hDckpEGkzTI / 和太鼓お祭りCH / 炭坑節　【赤坂日枝神社】 山王祭 盆踊り２　「山王音頭と民踊大会」の風景　2026年6月13日\n- 代表動画: https://www.youtube.com/watch?v=qd96HMCNCm8 / 和太鼓お祭りCH / 「大東京音頭」　赤坂日枝神社山王祭盆踊り３　「山王音頭と民踊大会」の風景　2026年6月13日\n- 追加動画: 11件 (詳細は data/youtube_active_existing_event_update_apply_result.json)\n- 関連URL: https://goo.gl/maps/kSAEbnkyHSchcccY6, https://maps.app.goo.gl/BbkXn5qwcQ1PM7aQ9, https://x.com/walkingfilmlove, https://www.tenkamatsuri.jp/minyo/\n- 曲目候補: 東京音頭, 炭坑節, 大東京音頭, ドンパン節, 白浜音頭, 八木節, 花笠音頭, おこさ節, 相馬甚句, 東京おどり, 山王音頭, 千代田おどり, 水戸黄門おどり"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "skipped": []
+}

@@ -69,12 +69,17 @@ def append_next_tasks_note():
             "YouTube関連作業は引き続きこのページを入口にする。"
         ),
         bullet(
-            "優先1: append_existing_event 17件を処理する。まず山王音頭と民踊大会の既存イベントへ、"
-            "YouTube実績証拠と曲目証拠を重複なく追記する。"
+            "優先1: append_existing_event 17件のうち、山王音頭と民踊大会は既存イベントへ反映済み。"
+            "4グループを1つの[youtube_evidence]に集約し、動画16件・曲目候補13件を追記した。"
         ),
         bullet(
             "優先1 dry-run結果: data/youtube_active_existing_event_update_dry_run.json / .md を追加。"
-            "5グループに集約され、山王音頭と民踊大会4件はready、国立旭通りジューンフェスタ盆踊り1件はNotionイベントページ未発見でblocked。"
+            "5グループに集約され、山王音頭と民踊大会4件はapply済み。"
+            "国立旭通りジューンフェスタ盆踊り1件はNotionイベントページ未発見でblocked。"
+        ),
+        bullet(
+            "優先1 apply結果: data/youtube_active_existing_event_update_apply_result.json / .md を追加。"
+            "再dry-runで山王音頭と民踊大会はchanged=0となり、重複追記されないことを確認済み。"
         ),
         bullet(
             "優先2: needs_official_confirmation 6件を確認する。丸の内は公式URLありで既存/登録済み扱いへ寄せやすい。"
@@ -106,8 +111,8 @@ def main():
         raise SystemExit("NOTION_API_TOKEN is not set")
 
     current_text = (
-        "YouTube次課題: append_existing_event 17件、needs_official_confirmation 6件、"
-        "review_video_evidence 10件を順に処理する。横浜などout_of_scope 18件は保持のみ。"
+        "YouTube次課題: 山王音頭と民踊大会はYouTube証拠反映済み。次は国立旭通りblocked解消、"
+        "needs_official_confirmation 6件、review_video_evidence 10件を順に処理する。"
     )
 
     if args.dry_run:
