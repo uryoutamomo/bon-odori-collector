@@ -1,17 +1,18 @@
 # YouTube既存イベント追記 dry-run
 
-- 生成: 2026-06-15T04:04:04.903159+00:00
-- 対象: 4件
+- 生成: 2026-06-15T04:12:48.918515+00:00
+- 対象: 5件
 - ready: 0件
 - review: 0件
 - blocked: 0件
-- done: 4件
+- done: 5件
 
 | status | イベント | 日付 | 曲数 | 変更 | 警告 | 動画 |
 | --- | --- | --- | --- | --- | --- | --- |
 | done | 歌舞伎町BON ODORI | 2025-08-16 | 16 | no | 同じYouTube URLが開催パターン詳細に既に含まれています | https://www.youtube.com/watch?v=6APAt3DHhVs |
 | done | 奥浅草盆踊り | 2025-06-28 | 15 | no | 同じYouTube URLが開催パターン詳細に既に含まれています | https://www.youtube.com/watch?v=WzcxpMJuynA |
 | done | 自由が丘納涼盆踊り大会 | 2025-07-21 | 8 | no | 同じYouTube URLが開催パターン詳細に既に含まれています | https://www.youtube.com/watch?v=mvHqQY2ISJE |
+| done | 丸の内de盆踊り | 2025-07-25 | 7 | no | 同じYouTube URLが開催パターン詳細に既に含まれています | https://www.youtube.com/watch?v=_cggqDBTu20 |
 | done | 歌舞伎町BON ODORI | 2025-08-16 | 1 | no | 曲目候補は既存のYouTube証拠に含まれています | https://www.youtube.com/watch?v=m8zNQMQzgQs |
 
 ## 歌舞伎町BON ODORI
@@ -69,6 +70,25 @@
 - チャンネル: 和太鼓お祭りチャンネル
 - サムネイル: https://i.ytimg.com/vi/mvHqQY2ISJE/maxresdefault.jpg
 - 曲目候補: 北海盆唄, 炭坑節, 大東京音頭, ダンシング・ヒーロー, やる気で音頭, 自由が丘小唄, ホイップるん音頭, 東京音頭
+```
+
+## 丸の内de盆踊り
+
+- status: done
+- Notion: https://app.notion.com/p/de-3808be04e762815784bad94bcedced97
+- video: https://www.youtube.com/watch?v=_cggqDBTu20
+- channel: shu channel
+- thumbnail: https://i.ytimg.com/vi/_cggqDBTu20/maxresdefault.jpg
+- warnings: 同じYouTube URLが開催パターン詳細に既に含まれています
+
+```text
+[youtube_evidence] 2025実績証拠
+- 対象イベント: 丸の内de盆踊り
+- 検出日付: 2025-07-25
+- 動画: https://www.youtube.com/watch?v=_cggqDBTu20
+- チャンネル: shu channel
+- サムネイル: https://i.ytimg.com/vi/_cggqDBTu20/maxresdefault.jpg
+- 曲目候補: 八木節, お江戸日本橋, 炭坑節, ドンパン節, 大東京音頭, 東京音頭, 丸の内音頭
 ```
 
 ## 歌舞伎町BON ODORI

@@ -50,6 +50,9 @@ ISO_DATE_RE = re.compile(r"\d{4}-(\d{1,2})-(\d{1,2})")
 SIGNATURE_RE = re.compile(
     r"（\d{4}-\d{1,2}-\d{1,2}[^）]*）"
     r"|(?:こと|おと)（?[A-Za-z]*）?\s*\d{4}-\d{1,2}-\d{1,2}(?:追記|時点)?")
+YOUTUBE_EVIDENCE_RE = re.compile(
+    r"\[youtube_evidence\][^\n]*(?:\n(?!\[youtube_evidence\]).*)*",
+)
 
 
 def confidence_for_candidate(score, source, reasons):
@@ -72,6 +75,59 @@ def unknown_confidence():
 
 def has_confirmed_date_status(status):
     return status in {"確認済み", "終了"}
+
+
+def parse_youtube_evidence(detail):
+    """Extract structured YouTube evidence from public detail text."""
+    rows = []
+    for block in YOUTUBE_EVIDENCE_RE.findall(detail or ""):
+        row = {
+            "label": block.splitlines()[0].replace("[youtube_evidence]", "").strip() or "YouTube証拠",
+            "event_name": "",
+            "detected_date": "",
+            "video_url": "",
+            "channel": "",
+            "thumbnail_url": "",
+            "songs": [],
+        }
+        for line in block.splitlines()[1:]:
+            line = line.strip()
+            if not line.startswith("- "):
+                continue
+            key, sep, value = line[2:].partition(":")
+            if not sep:
+                key, sep, value = line[2:].partition("：")
+            if not sep:
+                continue
+            key = key.strip()
+            value = clean_public_text(value.strip())
+            if key == "対象イベント":
+                row["event_name"] = value
+            elif key == "検出日付":
+                row["detected_date"] = value
+            elif key == "動画":
+                row["video_url"] = value
+            elif key == "チャンネル":
+                row["channel"] = value
+            elif key == "サムネイル":
+                row["thumbnail_url"] = value
+            elif key == "曲目候補":
+                row["songs"] = [song.strip() for song in value.split(",") if song.strip()]
+        if row["video_url"]:
+            rows.append(row)
+    return rows
+
+
+def fill_youtube_evidence_defaults(rows, event_name, event_date):
+    filled = []
+    for row in rows or []:
+        item = dict(row)
+        if not item.get("event_name"):
+            item["event_name"] = event_name or ""
+        if not item.get("detected_date"):
+            item["detected_date"] = event_date or ""
+        filled.append(item)
+    return filled
 
 
 def load_date_candidates():
@@ -335,6 +391,11 @@ def build_public_events():
             public_name = clean_public_text(name)
             description = clean_public_text(_prop(props, "公開紹介文"))
             detail = clean_public_text(detail_text)
+            youtube_evidence = fill_youtube_evidence_defaults(
+                parse_youtube_evidence(detail),
+                public_name,
+                date,
+            )
             songs = extract_song_hints(description, detail)
             occurrence_year = int(date[:4]) if date else 2026
             occurrence = song_occurrences.get(
@@ -367,6 +428,8 @@ def build_public_events():
                 "description": description,
                 # 詳細モーダル用：直近の開催実績（日時の記録）
                 "detail": detail,
+                # YouTube由来の2025実績証拠。公開UIでは動画リンク/サムネイル表示に使う。
+                "youtube_evidence": youtube_evidence,
                 # 会場で流れる/踊られる曲の候補。公開時は「曲目ヒント」として扱う。
                 "songs": songs,
                 "song_occurrence": occurrence,
@@ -403,6 +466,7 @@ def build_public_events():
             },
             "description": v["intro"],
             "detail": None,
+            "youtube_evidence": [],
             "songs": [],
         })
 

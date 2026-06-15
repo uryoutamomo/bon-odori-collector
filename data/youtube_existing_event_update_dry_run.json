@@ -1,14 +1,14 @@
 {
   "generated_by": "dry_run_youtube_existing_event_updates.py",
-  "generated_at": "2026-06-15T04:04:04.903159+00:00",
+  "generated_at": "2026-06-15T04:12:48.918515+00:00",
   "mode": "dry_run",
   "source": "data/youtube_event_update_plan.json",
   "public_event_source": "data/public/events_public.json",
-  "input_count": 4,
+  "input_count": 5,
   "ready_count": 0,
   "review_count": 0,
   "blocked_count": 0,
-  "done_count": 4,
+  "done_count": 5,
   "rows": [
     {
       "candidate_key": "yt-event:f76d1950e7079a15",
@@ -338,6 +338,81 @@
         "同じYouTube URLが開催パターン詳細に既に含まれています"
       ],
       "proposed_note": "[youtube_evidence] 2025実績証拠\n- 対象イベント: 自由が丘納涼盆踊り大会\n- 検出日付: 2025-07-21\n- 動画: https://www.youtube.com/watch?v=mvHqQY2ISJE\n- チャンネル: 和太鼓お祭りチャンネル\n- サムネイル: https://i.ytimg.com/vi/mvHqQY2ISJE/maxresdefault.jpg\n- 曲目候補: 北海盆唄, 炭坑節, 大東京音頭, ダンシング・ヒーロー, やる気で音頭, 自由が丘小唄, ホイップるん音頭, 東京音頭",
+      "would_change_detail": false
+    },
+    {
+      "candidate_key": "yt-event:afaa6dfcf53ef3f9",
+      "status": "done",
+      "target_event_name": "丸の内de盆踊り",
+      "target_page_id": "3808be04-e762-8157-84ba-d94bcedced97",
+      "target_page_url": "https://app.notion.com/p/de-3808be04e762815784bad94bcedced97",
+      "matched_public_event": {
+        "name": "丸の内de盆踊り",
+        "venue": "行幸通り",
+        "date": "2025-07-25",
+        "date_end": "2025-07-26",
+        "area": "千代田区",
+        "score": 110,
+        "reasons": [
+          "event_name_in_youtube",
+          "venue_in_youtube"
+        ]
+      },
+      "public_event_detail": "2025-07-25〜2025-07-26、行幸通りで開催。公式ページ「丸の内夏祭り2025」in 行幸通り内の丸の内de盆踊り。7/25 盆踊り 17:00-18:15 / 19:00-19:40 / 20:00-21:00、7/26 盆踊り 18:00-19:00 / 19:20-20:10 / 20:40-21:00。\n\n[youtube_evidence] 2025実績証拠\n- 動画: https://www.youtube.com/watch?v=_cggqDBTu20\n- チャンネル: shu channel\n- サムネイル: https://i.ytimg.com/vi/_cggqDBTu20/maxresdefault.jpg\n- 曲目候補: 丸の内音頭, 東京音頭, 大東京音頭, ドンパン節, 炭坑節, お江戸日本橋, 八木節",
+      "youtube_event_date": "2025-07-25",
+      "source_video_url": "https://www.youtube.com/watch?v=_cggqDBTu20",
+      "source_video_title": "【東京丸の内盆踊り2025】『丸の内音頭～東京音頭～大東京音頭～ドンパン節～炭坑節～お江戸日本橋～八木節』[1/7] 👘Tokyo Bon Dance 🏮2025.7.25 @東京駅丸の内口・行幸通り",
+      "source_channel_title": "shu channel",
+      "thumbnail_url": "https://i.ytimg.com/vi/_cggqDBTu20/maxresdefault.jpg",
+      "song_count": 7,
+      "songs": [
+        {
+          "title": "八木節",
+          "number": 7,
+          "url": "https://www.youtube.com/watch?v=_cggqDBTu20",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "お江戸日本橋",
+          "number": 6,
+          "url": "https://www.youtube.com/watch?v=_cggqDBTu20",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "炭坑節",
+          "number": 5,
+          "url": "https://www.youtube.com/watch?v=_cggqDBTu20",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "ドンパン節",
+          "number": 4,
+          "url": "https://www.youtube.com/watch?v=_cggqDBTu20",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "大東京音頭",
+          "number": 3,
+          "url": "https://www.youtube.com/watch?v=_cggqDBTu20",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "東京音頭",
+          "number": 2,
+          "url": "https://www.youtube.com/watch?v=_cggqDBTu20",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "丸の内音頭",
+          "number": 1,
+          "url": "https://www.youtube.com/watch?v=_cggqDBTu20",
+          "evidence_type": "chapter"
+        }
+      ],
+      "warnings": [
+        "同じYouTube URLが開催パターン詳細に既に含まれています"
+      ],
+      "proposed_note": "[youtube_evidence] 2025実績証拠\n- 対象イベント: 丸の内de盆踊り\n- 検出日付: 2025-07-25\n- 動画: https://www.youtube.com/watch?v=_cggqDBTu20\n- チャンネル: shu channel\n- サムネイル: https://i.ytimg.com/vi/_cggqDBTu20/maxresdefault.jpg\n- 曲目候補: 八木節, お江戸日本橋, 炭坑節, ドンパン節, 大東京音頭, 東京音頭, 丸の内音頭",
       "would_change_detail": false
     },
     {
