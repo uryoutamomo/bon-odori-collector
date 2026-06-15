@@ -1,0 +1,31 @@
+# YouTubeチャンネルDB運用メモ
+
+作成: 2026-06-15 / おと（Codex）
+
+## 位置づけ
+
+- `data/youtube_channel_registry.json` を収集対象チャンネルの台帳にする。
+- `data/youtube_channels.json` は既存収集データから作る分析結果で、手編集しない。
+- `data/youtube_channel_review.json` は採用判断の証跡として残す。
+
+## 登録ステータス
+
+- `active`: 収集対象。通常はRSS取得や手動収集の対象にする。
+- `watch`: 採用候補。証拠品質はあるが、定期収集にはまだ入れない。
+- `review`: 自動スコアはあるが人間判断待ち。
+- `hold`: 現行範囲外または継続ソースとして弱い。
+
+## 収集ルール
+
+- 通常収集の対象は `status=active` かつ `collection_enabled=true` のみ。
+- YouTube単独では新規イベントを本登録しない。
+- 既存イベントに一致する場合は、動画URL、チャンネル名、サムネイル、曲目候補を証拠として追記する。
+- サムネイルは動画証拠の文脈で使い、会場写真として扱わない。
+- `date_validation_required=true` のチャンネルは、動画説明欄の日付を暦・公式情報と照合する。
+
+## 接続先
+
+- チャンネル台帳: `data/youtube_channel_registry.json`
+- 動画証拠: `youtube_evidence`
+- 曲目証拠: `source=youtube_setlist_occurrence`
+- 公開UI: `data/public/events_public.json` の `youtube_evidence`

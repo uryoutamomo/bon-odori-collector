@@ -1,0 +1,797 @@
+{
+  "generated_by": "promote_youtube_channel_registry.py",
+  "generated_at": "2026-06-15T05:07:37.275525+00:00",
+  "sources": {
+    "review": "data/youtube_channel_review.json",
+    "analytics": "data/youtube_channels.json"
+  },
+  "channel_count": 15,
+  "counts": {
+    "active": 4,
+    "watch": 3,
+    "hold": 8
+  },
+  "policy": {
+    "youtube_is_supporting_evidence": true,
+    "do_not_create_new_events_from_youtube_only": true,
+    "use_thumbnail_as_evidence_not_venue_photo": true,
+    "collect_active_channels_only_by_default": true
+  },
+  "channels": [
+    {
+      "channel_id": "UCKCspf_NrY16rUnODmBqOWA",
+      "channel_title": "Tokyo Lonely Walker",
+      "channel_url": "https://www.youtube.com/channel/UCKCspf_NrY16rUnODmBqOWA",
+      "rss_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCKCspf_NrY16rUnODmBqOWA",
+      "status": "active",
+      "collection_enabled": true,
+      "priority": "high",
+      "source": "manual_review",
+      "scope": "tokyo_area",
+      "date_validation_required": true,
+      "trusted_for": [
+        "date_evidence",
+        "event_discovery",
+        "official_url_discovery",
+        "setlist_extraction",
+        "song_evidence"
+      ],
+      "review": {
+        "decision": "adopt",
+        "reason": "東京圏の盆踊り動画が多く、説明欄に会場・日付・MAP・章タイトルが入る。曜日誤記があるため日付検証と併用。",
+        "next_action": "東京圏の2025実績発掘に使う。曜日つき日付は暦照合し、公式確認が必要な新規候補は保留する。",
+        "candidate_score": 90,
+        "score_reasons": [
+          "盆踊り文脈4本",
+          "曲目候補1本",
+          "日付抽出4本"
+        ]
+      },
+      "metrics": {
+        "found_video_count": 4,
+        "bon_context_video_count": 4,
+        "setlist_candidate_count": 1,
+        "event_date_candidate_count": 4,
+        "analytics": {}
+      },
+      "sample_videos": [
+        {
+          "title": "[4K]🇯🇵 歌舞伎町で盆ジョヴィ 2025 Bon Jovi｜Taylor Swift｜B'z｜ミセス｜椎名林檎｜ダンシングヒーロー 他 盆踊り 2部 新宿 外国人観光客にも大人気",
+          "url": "https://www.youtube.com/watch?v=6APAt3DHhVs",
+          "published_at": "2025-08-17T08:00:05Z",
+          "event_date": "2025-09-16",
+          "setlist_count": 1
+        },
+        {
+          "title": "[4K]🇯🇵 渋谷盆踊り 2025｜6万人超！外国人観光客も熱狂！ダンシングヒーロー｜渋谷百年総踊り 全9曲 / Japanese Bon dance in Shibuya, Tokyo. 2025",
+          "url": "https://www.youtube.com/watch?v=yqg-YEHbV4A",
+          "published_at": "2025-08-05T09:01:32Z",
+          "event_date": "2025-08-03",
+          "setlist_count": 9
+        },
+        {
+          "title": "[4K]🇯🇵 盆ジョヴィ Bon Jovi - Livin' On A Prayer 中野駅前大盆踊り大会2025 ナカボン / Bon Dance with Bon Jovi's song.",
+          "url": "https://www.youtube.com/watch?v=cF1ToXI1AjI",
+          "published_at": "2025-08-03T14:09:33Z",
+          "event_date": "2025-08-03",
+          "setlist_count": 0
+        }
+      ],
+      "added_at": "2026-06-15T05:07:37.275525+00:00",
+      "last_reviewed_at": "2026-06-15T04:54:28.590805+00:00",
+      "last_collected_at": null
+    },
+    {
+      "channel_id": "UCLSZK_q5ma6aeIrVRUEpkNw",
+      "channel_title": "祭のきせき　盆踊り",
+      "channel_url": "https://www.youtube.com/channel/UCLSZK_q5ma6aeIrVRUEpkNw",
+      "rss_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCLSZK_q5ma6aeIrVRUEpkNw",
+      "status": "active",
+      "collection_enabled": true,
+      "priority": "high",
+      "source": "existing_voices",
+      "scope": "unknown",
+      "date_validation_required": true,
+      "trusted_for": [
+        "date_evidence",
+        "event_discovery",
+        "existing_collection"
+      ],
+      "review": {
+        "decision": "already_registered",
+        "reason": "既存YouTubeチャンネルDBに登録済み。",
+        "next_action": "既存の定期/手動収集対象として維持する。",
+        "candidate_score": 86,
+        "score_reasons": [
+          "既存チャンネル",
+          "盆踊り文脈8本",
+          "日付抽出8本"
+        ]
+      },
+      "metrics": {
+        "found_video_count": 8,
+        "bon_context_video_count": 8,
+        "setlist_candidate_count": 0,
+        "event_date_candidate_count": 8,
+        "analytics": {
+          "video_count": 66,
+          "bon_odori_video_count": 64,
+          "setlist_occurrence_count": 2,
+          "setlist_song_count": 55,
+          "complete_setlist_count": 2,
+          "venue_date_success_count": 2,
+          "first_published_at": "2026-05-14T01:00:15Z",
+          "last_published_at": "2026-06-06T05:00:36Z",
+          "auto_score": 100,
+          "collection_status": "優先"
+        }
+      },
+      "sample_videos": [
+        {
+          "title": "盆踊り 山王音頭 山王音頭と民踊大会 20250613",
+          "url": "https://www.youtube.com/watch?v=dUiBDCVrxgM",
+          "published_at": "2025-06-13T16:15:06Z",
+          "event_date": "2025-06-13",
+          "setlist_count": 0
+        },
+        {
+          "title": "盆踊り 東京おどり 山王音頭と民踊大会 20250613",
+          "url": "https://www.youtube.com/watch?v=w766ruAIUd0",
+          "published_at": "2025-06-13T16:10:02Z",
+          "event_date": "2025-06-13",
+          "setlist_count": 0
+        },
+        {
+          "title": "盆踊り 相馬甚句 山王音頭と民踊大会 20250613",
+          "url": "https://www.youtube.com/watch?v=O6VkxznmUUc",
+          "published_at": "2025-06-13T16:05:00Z",
+          "event_date": "2025-06-13",
+          "setlist_count": 0
+        }
+      ],
+      "added_at": "2026-06-15T05:07:37.275525+00:00",
+      "last_reviewed_at": "2026-06-15T04:54:28.590805+00:00",
+      "last_collected_at": "2026-06-06T05:00:36Z"
+    },
+    {
+      "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg",
+      "channel_title": "Urban Walk",
+      "channel_url": "https://www.youtube.com/channel/UCWz2tM7PAFGT7xSL5OAEllg",
+      "rss_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCWz2tM7PAFGT7xSL5OAEllg",
+      "status": "active",
+      "collection_enabled": true,
+      "priority": "high",
+      "source": "manual_review",
+      "scope": "tokyo_area",
+      "date_validation_required": true,
+      "trusted_for": [
+        "date_evidence",
+        "event_discovery"
+      ],
+      "review": {
+        "decision": "adopt",
+        "reason": "東京圏の街歩き・盆踊り動画があり、既存イベント照合に使える。",
+        "next_action": "既存イベントへの動画証拠追加候補として優先確認する。",
+        "candidate_score": 76,
+        "score_reasons": [
+          "盆踊り文脈6本",
+          "日付抽出5本"
+        ]
+      },
+      "metrics": {
+        "found_video_count": 6,
+        "bon_context_video_count": 6,
+        "setlist_candidate_count": 0,
+        "event_date_candidate_count": 5,
+        "analytics": {}
+      },
+      "sample_videos": [
+        {
+          "title": "【御徒町駅前盆踊り 2025】「ジンギスカン」Dschinghis Khan 盆踊り / 【第7回シタマチ.ふるさと盆踊り大会】パンダ広場 Okachimachi Bondance Fes",
+          "url": "https://www.youtube.com/watch?v=OY4Ty2ungIQ",
+          "published_at": "2025-08-19T09:55:09Z",
+          "event_date": "2025-08-16",
+          "setlist_count": 0
+        },
+        {
+          "title": "【歌舞伎町 BON ODORI 2025】「ダンシングヒーロー」荻野目洋子 / 盆踊り 新宿トー横 鳳蝶美成 Kabukicho BON ODORI",
+          "url": "https://www.youtube.com/watch?v=QntZ_ft5gQU",
+          "published_at": "2025-08-17T07:00:33Z",
+          "event_date": "2025-08-16",
+          "setlist_count": 0
+        },
+        {
+          "title": "B’z「ultra soul」歌舞伎町での盆踊りが楽しすぎてアンコール【歌舞伎町 BON ODORI 2025】/  新宿トー横 ウルトラソウル 鳳蝶美成 盆踊り",
+          "url": "https://www.youtube.com/watch?v=m8zNQMQzgQs",
+          "published_at": "2025-08-16T14:02:59Z",
+          "event_date": "2025-08-16",
+          "setlist_count": 0
+        }
+      ],
+      "added_at": "2026-06-15T05:07:37.275525+00:00",
+      "last_reviewed_at": "2026-06-15T04:54:28.590805+00:00",
+      "last_collected_at": null
+    },
+    {
+      "channel_id": "UCNF_5e3ZvziJueTWvTPATGw",
+      "channel_title": "和太鼓お祭りチャンネル",
+      "channel_url": "https://www.youtube.com/channel/UCNF_5e3ZvziJueTWvTPATGw",
+      "rss_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCNF_5e3ZvziJueTWvTPATGw",
+      "status": "active",
+      "collection_enabled": true,
+      "priority": "normal",
+      "source": "existing_voices",
+      "scope": "unknown",
+      "date_validation_required": true,
+      "trusted_for": [
+        "date_evidence",
+        "event_discovery",
+        "existing_collection",
+        "setlist_extraction",
+        "song_evidence"
+      ],
+      "review": {
+        "decision": "already_registered",
+        "reason": "既存YouTubeチャンネルDBに登録済み。",
+        "next_action": "既存の定期/手動収集対象として維持する。",
+        "candidate_score": 48,
+        "score_reasons": [
+          "既存チャンネル",
+          "盆踊り文脈1本",
+          "曲目候補1本",
+          "日付抽出1本"
+        ]
+      },
+      "metrics": {
+        "found_video_count": 1,
+        "bon_context_video_count": 1,
+        "setlist_candidate_count": 1,
+        "event_date_candidate_count": 1,
+        "analytics": {
+          "video_count": 133,
+          "bon_odori_video_count": 110,
+          "setlist_occurrence_count": 8,
+          "setlist_song_count": 154,
+          "complete_setlist_count": 8,
+          "venue_date_success_count": 7,
+          "first_published_at": "2026-05-28T10:00:07Z",
+          "last_published_at": "2026-06-13T14:00:21Z",
+          "auto_score": 100,
+          "collection_status": "優先"
+        }
+      },
+      "sample_videos": [
+        {
+          "title": "【ダンシング・ヒーロー】（荻野目洋子）　2025年自由が丘納涼盆踊り大会3日目８　東京都目黒区",
+          "url": "https://www.youtube.com/watch?v=mvHqQY2ISJE",
+          "published_at": "2025-07-24T12:31:05Z",
+          "event_date": "2025-07-21",
+          "setlist_count": 8
+        }
+      ],
+      "added_at": "2026-06-15T05:07:37.275525+00:00",
+      "last_reviewed_at": "2026-06-15T04:54:28.590805+00:00",
+      "last_collected_at": "2026-06-13T14:00:21Z"
+    },
+    {
+      "channel_id": "UCaVANrt14S6q-if2BBOE4TQ",
+      "channel_title": "Tokyo Hz",
+      "channel_url": "https://www.youtube.com/channel/UCaVANrt14S6q-if2BBOE4TQ",
+      "rss_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCaVANrt14S6q-if2BBOE4TQ",
+      "status": "watch",
+      "collection_enabled": false,
+      "priority": "normal",
+      "source": "manual_review",
+      "scope": "tokyo_23",
+      "date_validation_required": false,
+      "trusted_for": [
+        "event_discovery",
+        "setlist_extraction",
+        "song_evidence"
+      ],
+      "review": {
+        "decision": "adopt",
+        "reason": "奥浅草の曲目つき動画で実績あり。英語説明が多く、曲目抽出と過去年実績の補完に向く。",
+        "next_action": "台東区・浅草周辺の過去年実績と曲目証拠の発掘に使う。",
+        "candidate_score": 42,
+        "score_reasons": [
+          "盆踊り文脈2本",
+          "曲目候補1本"
+        ]
+      },
+      "metrics": {
+        "found_video_count": 2,
+        "bon_context_video_count": 2,
+        "setlist_candidate_count": 1,
+        "event_date_candidate_count": 0,
+        "analytics": {}
+      },
+      "sample_videos": [
+        {
+          "title": "Pt.2😆Super Hype Songs!! Kabukicho Bon Odori 2025 in Shinjuku, Tokyo 4K60",
+          "url": "https://www.youtube.com/watch?v=TUTOIPMuseE",
+          "published_at": "2025-08-17T08:00:26Z",
+          "event_date": "",
+          "setlist_count": 1
+        },
+        {
+          "title": "4K🤩World Gathers in Oku-Asakusa!! Bon Odori with Pop & Trad Beats!! in Taito-ku Tokyo Japan 2025",
+          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
+          "published_at": "2025-06-29T08:00:28Z",
+          "event_date": "",
+          "setlist_count": 12
+        }
+      ],
+      "added_at": "2026-06-15T05:07:37.275525+00:00",
+      "last_reviewed_at": "2026-06-15T04:54:28.590805+00:00",
+      "last_collected_at": null
+    },
+    {
+      "channel_id": "UCSHoRoW171uEytgOcKkKU2Q",
+      "channel_title": "Exploring Japan with Zen",
+      "channel_url": "https://www.youtube.com/channel/UCSHoRoW171uEytgOcKkKU2Q",
+      "rss_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCSHoRoW171uEytgOcKkKU2Q",
+      "status": "watch",
+      "collection_enabled": false,
+      "priority": "normal",
+      "source": "manual_review",
+      "scope": "tokyo_23",
+      "date_validation_required": true,
+      "trusted_for": [
+        "date_evidence",
+        "event_discovery",
+        "official_url_discovery"
+      ],
+      "review": {
+        "decision": "adopt",
+        "reason": "渋谷盆踊りで公式URL候補を説明欄に記載。公式導線発見に有用。",
+        "next_action": "新規候補の公式URL探索補助として使う。YouTube単独では本登録しない。",
+        "candidate_score": 40,
+        "score_reasons": [
+          "盆踊り文脈2本",
+          "日付抽出2本"
+        ]
+      },
+      "metrics": {
+        "found_video_count": 2,
+        "bon_context_video_count": 2,
+        "setlist_candidate_count": 0,
+        "event_date_candidate_count": 2,
+        "analytics": {}
+      },
+      "sample_videos": [
+        {
+          "title": "Shibuya Bon Odori Dance festival 2025  /  渋谷 盆踊り 2025",
+          "url": "https://www.youtube.com/watch?v=CTA9El6Hmfg",
+          "published_at": "2025-08-04T07:38:15Z",
+          "event_date": "2025-08-02",
+          "setlist_count": 0
+        },
+        {
+          "title": "Marunouchi Bon Odori Dance festival PART 1  /  丸の内盆踊り 2025 パート１",
+          "url": "https://www.youtube.com/watch?v=seY6P_Ngq4E",
+          "published_at": "2025-07-27T11:38:40Z",
+          "event_date": "2025-07-26",
+          "setlist_count": 0
+        }
+      ],
+      "added_at": "2026-06-15T05:07:37.275525+00:00",
+      "last_reviewed_at": "2026-06-15T04:54:28.590805+00:00",
+      "last_collected_at": null
+    },
+    {
+      "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ",
+      "channel_title": "shu channel",
+      "channel_url": "https://www.youtube.com/channel/UCEYq2_O_Sai0j9chJOmcKtQ",
+      "rss_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCEYq2_O_Sai0j9chJOmcKtQ",
+      "status": "watch",
+      "collection_enabled": false,
+      "priority": "normal",
+      "source": "manual_review",
+      "scope": "tokyo_23",
+      "date_validation_required": true,
+      "trusted_for": [
+        "date_evidence",
+        "event_discovery",
+        "official_url_discovery",
+        "setlist_extraction",
+        "song_evidence"
+      ],
+      "review": {
+        "decision": "adopt",
+        "reason": "丸の内de盆踊りの曲目つき動画で実績あり。件数は少ないが証拠品質が高い。",
+        "next_action": "検索で見つかった東京圏動画を個別に確認し、公式確認済みイベントへ紐づける。",
+        "candidate_score": 38,
+        "score_reasons": [
+          "盆踊り文脈1本",
+          "曲目候補1本",
+          "日付抽出1本"
+        ]
+      },
+      "metrics": {
+        "found_video_count": 1,
+        "bon_context_video_count": 1,
+        "setlist_candidate_count": 1,
+        "event_date_candidate_count": 1,
+        "analytics": {}
+      },
+      "sample_videos": [
+        {
+          "title": "【東京丸の内盆踊り2025】『丸の内音頭～東京音頭～大東京音頭～ドンパン節～炭坑節～お江戸日本橋～八木節』[1/7] 👘Tokyo Bon Dance 🏮2025.7.25 @東京駅丸の内口・行幸通り",
+          "url": "https://www.youtube.com/watch?v=_cggqDBTu20",
+          "published_at": "2025-07-25T17:41:46Z",
+          "event_date": "2025-07-25",
+          "setlist_count": 6
+        }
+      ],
+      "added_at": "2026-06-15T05:07:37.275525+00:00",
+      "last_reviewed_at": "2026-06-15T04:54:28.590805+00:00",
+      "last_collected_at": null
+    },
+    {
+      "channel_id": "UC0ez88LLPDj2D-WgHiL5nxA",
+      "channel_title": "祭りが好き!",
+      "channel_url": "https://www.youtube.com/channel/UC0ez88LLPDj2D-WgHiL5nxA",
+      "rss_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC0ez88LLPDj2D-WgHiL5nxA",
+      "status": "hold",
+      "collection_enabled": false,
+      "priority": "low",
+      "source": "manual_review",
+      "scope": "national_hold",
+      "date_validation_required": true,
+      "trusted_for": [
+        "date_evidence",
+        "event_discovery",
+        "setlist_extraction",
+        "song_evidence"
+      ],
+      "review": {
+        "decision": "hold",
+        "reason": "曲目情報はあるが福岡など東京23区外が中心。現行公開DBの範囲外。",
+        "next_action": "全国展開や対象範囲拡張時に再確認する。",
+        "candidate_score": 50,
+        "score_reasons": [
+          "盆踊り文脈2本",
+          "曲目候補1本",
+          "日付抽出1本"
+        ]
+      },
+      "metrics": {
+        "found_video_count": 2,
+        "bon_context_video_count": 2,
+        "setlist_candidate_count": 1,
+        "event_date_candidate_count": 1,
+        "analytics": {}
+      },
+      "sample_videos": [
+        {
+          "title": "「オトナブルー」盆踊り。はかた夏まつり2025盆踊りアンコール曲:オトナブルー。オトナブルー盆踊り　博多盆踊り　盆踊り曲　オトナブルー　外国人盆踊り　夏まつり盆踊り　Bon Odori オトナブルー",
+          "url": "https://www.youtube.com/watch?v=FHx1-9zyDXM",
+          "published_at": "2025-08-25T06:10:32Z",
+          "event_date": "",
+          "setlist_count": 0
+        },
+        {
+          "title": "「ダンシング・ヒーロー」盆踊り。はかた夏まつり2025最終日盆踊り曲「ダンシングヒーロー」盆踊り、「はいよろこんで」盆踊り。博多駅盆踊り　盆踊り2025 ダンシングヒーロー盆踊り　福岡外国人盆踊り",
+          "url": "https://www.youtube.com/watch?v=5joHfxKoqxQ",
+          "published_at": "2025-08-17T17:38:31Z",
+          "event_date": "2025-08-17",
+          "setlist_count": 2
+        }
+      ],
+      "added_at": "2026-06-15T05:07:37.275525+00:00",
+      "last_reviewed_at": "2026-06-15T04:54:28.590805+00:00",
+      "last_collected_at": null
+    },
+    {
+      "channel_id": "UCuzb99ML7iIMJnF7jKk97kw",
+      "channel_title": "ノーリーエンタープライズ🪅",
+      "channel_url": "https://www.youtube.com/channel/UCuzb99ML7iIMJnF7jKk97kw",
+      "rss_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCuzb99ML7iIMJnF7jKk97kw",
+      "status": "hold",
+      "collection_enabled": false,
+      "priority": "low",
+      "source": "manual_review",
+      "scope": "tokyo_area",
+      "date_validation_required": true,
+      "trusted_for": [
+        "event_discovery"
+      ],
+      "review": {
+        "decision": "hold",
+        "reason": "単発動画または街歩き寄りで、曲目・会場日付の継続抽出ソースとしては弱い。",
+        "next_action": "同チャンネルから複数の東京圏盆踊り動画が見つかったら再確認する。",
+        "candidate_score": 24,
+        "score_reasons": [
+          "盆踊り文脈2本"
+        ]
+      },
+      "metrics": {
+        "found_video_count": 2,
+        "bon_context_video_count": 2,
+        "setlist_candidate_count": 0,
+        "event_date_candidate_count": 0,
+        "analytics": {}
+      },
+      "sample_videos": [
+        {
+          "title": "築地本願寺納涼盆踊り大会(2025年)🥳🎊🎉#祭り#盆踊り#ノーリーエンタープライズ ",
+          "url": "https://www.youtube.com/watch?v=fmtGFjXIEEc",
+          "published_at": "2026-06-14T01:24:41Z",
+          "event_date": "",
+          "setlist_count": 0
+        },
+        {
+          "title": "巣鴨納涼盆踊り大会(2025年)🥳🎊🪅#盆踊り#巣鴨 ",
+          "url": "https://www.youtube.com/watch?v=O3DPfQEMLZs",
+          "published_at": "2026-06-03T02:25:45Z",
+          "event_date": "",
+          "setlist_count": 0
+        }
+      ],
+      "added_at": "2026-06-15T05:07:37.275525+00:00",
+      "last_reviewed_at": "2026-06-15T04:54:28.590805+00:00",
+      "last_collected_at": null
+    },
+    {
+      "channel_id": "UCxZO0WdhyWSTeMIiCZtjFQQ",
+      "channel_title": "marry",
+      "channel_url": "https://www.youtube.com/channel/UCxZO0WdhyWSTeMIiCZtjFQQ",
+      "rss_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCxZO0WdhyWSTeMIiCZtjFQQ",
+      "status": "hold",
+      "collection_enabled": false,
+      "priority": "low",
+      "source": "manual_review",
+      "scope": "tokyo_area",
+      "date_validation_required": true,
+      "trusted_for": [
+        "date_evidence",
+        "event_discovery"
+      ],
+      "review": {
+        "decision": "hold",
+        "reason": "単発動画または街歩き寄りで、曲目・会場日付の継続抽出ソースとしては弱い。",
+        "next_action": "同チャンネルから複数の東京圏盆踊り動画が見つかったら再確認する。",
+        "candidate_score": 20,
+        "score_reasons": [
+          "盆踊り文脈1本",
+          "日付抽出1本"
+        ]
+      },
+      "metrics": {
+        "found_video_count": 1,
+        "bon_context_video_count": 1,
+        "setlist_candidate_count": 0,
+        "event_date_candidate_count": 1,
+        "analytics": {}
+      },
+      "sample_videos": [
+        {
+          "title": "盆ジョヴィ 盆踊り 第13回 中野駅前大盆踊り大会  2日目 2025.8.3  DJ Celly a.k.a. Bon Jovi - Livin' On A Prayer",
+          "url": "https://www.youtube.com/watch?v=oIu_3FUPvaM",
+          "published_at": "2025-08-04T20:51:46Z",
+          "event_date": "2025-08-03",
+          "setlist_count": 0
+        }
+      ],
+      "added_at": "2026-06-15T05:07:37.275525+00:00",
+      "last_reviewed_at": "2026-06-15T04:54:28.590805+00:00",
+      "last_collected_at": null
+    },
+    {
+      "channel_id": "UCSq35WTHKCrxt-bbYx0n_Gw",
+      "channel_title": "Jonior Visuals",
+      "channel_url": "https://www.youtube.com/channel/UCSq35WTHKCrxt-bbYx0n_Gw",
+      "rss_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCSq35WTHKCrxt-bbYx0n_Gw",
+      "status": "hold",
+      "collection_enabled": false,
+      "priority": "low",
+      "source": "manual_review",
+      "scope": "tokyo_area",
+      "date_validation_required": true,
+      "trusted_for": [
+        "event_discovery"
+      ],
+      "review": {
+        "decision": "hold",
+        "reason": "単発動画または街歩き寄りで、曲目・会場日付の継続抽出ソースとしては弱い。",
+        "next_action": "同チャンネルから複数の東京圏盆踊り動画が見つかったら再確認する。",
+        "candidate_score": 12,
+        "score_reasons": [
+          "盆踊り文脈1本"
+        ]
+      },
+      "metrics": {
+        "found_video_count": 1,
+        "bon_context_video_count": 1,
+        "setlist_candidate_count": 0,
+        "event_date_candidate_count": 0,
+        "analytics": {}
+      },
+      "sample_videos": [
+        {
+          "title": "Bon Odori 2025 | Aftermovie",
+          "url": "https://www.youtube.com/watch?v=OCcVhU1GHmU",
+          "published_at": "2025-06-03T14:43:07Z",
+          "event_date": "",
+          "setlist_count": 0
+        }
+      ],
+      "added_at": "2026-06-15T05:07:37.275525+00:00",
+      "last_reviewed_at": "2026-06-15T04:54:28.590805+00:00",
+      "last_collected_at": null
+    },
+    {
+      "channel_id": "UCLGUldYbdjEFLjwzFm70qgw",
+      "channel_title": "VioletVik",
+      "channel_url": "https://www.youtube.com/channel/UCLGUldYbdjEFLjwzFm70qgw",
+      "rss_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCLGUldYbdjEFLjwzFm70qgw",
+      "status": "hold",
+      "collection_enabled": false,
+      "priority": "low",
+      "source": "manual_review",
+      "scope": "tokyo_area",
+      "date_validation_required": true,
+      "trusted_for": [
+        "event_discovery"
+      ],
+      "review": {
+        "decision": "hold",
+        "reason": "単発動画または街歩き寄りで、曲目・会場日付の継続抽出ソースとしては弱い。",
+        "next_action": "同チャンネルから複数の東京圏盆踊り動画が見つかったら再確認する。",
+        "candidate_score": 12,
+        "score_reasons": [
+          "盆踊り文脈1本"
+        ]
+      },
+      "metrics": {
+        "found_video_count": 1,
+        "bon_context_video_count": 1,
+        "setlist_candidate_count": 0,
+        "event_date_candidate_count": 0,
+        "analytics": {}
+      },
+      "sample_videos": [
+        {
+          "title": "Shibuya Bon Odori Festival 2025 🇯🇵 | Tokyo Summer Festival 渋谷盆踊り",
+          "url": "https://www.youtube.com/watch?v=D8xMGfqtx-Y",
+          "published_at": "2025-08-02T12:30:14Z",
+          "event_date": "",
+          "setlist_count": 0
+        }
+      ],
+      "added_at": "2026-06-15T05:07:37.275525+00:00",
+      "last_reviewed_at": "2026-06-15T04:54:28.590805+00:00",
+      "last_collected_at": null
+    },
+    {
+      "channel_id": "UCBpHtPJG3glSjjqKrKAF3xQ",
+      "channel_title": "Walk From Home 🇯🇵",
+      "channel_url": "https://www.youtube.com/channel/UCBpHtPJG3glSjjqKrKAF3xQ",
+      "rss_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCBpHtPJG3glSjjqKrKAF3xQ",
+      "status": "hold",
+      "collection_enabled": false,
+      "priority": "low",
+      "source": "manual_review",
+      "scope": "tokyo_area",
+      "date_validation_required": true,
+      "trusted_for": [
+        "event_discovery"
+      ],
+      "review": {
+        "decision": "hold",
+        "reason": "単発動画または街歩き寄りで、曲目・会場日付の継続抽出ソースとしては弱い。",
+        "next_action": "同チャンネルから複数の東京圏盆踊り動画が見つかったら再確認する。",
+        "candidate_score": 12,
+        "score_reasons": [
+          "盆踊り文脈1本"
+        ]
+      },
+      "metrics": {
+        "found_video_count": 1,
+        "bon_context_video_count": 1,
+        "setlist_candidate_count": 0,
+        "event_date_candidate_count": 0,
+        "analytics": {}
+      },
+      "sample_videos": [
+        {
+          "title": "The Ancient Festival That’s Being Transformed by Tourists | Tsukiji Bon Odori 2025",
+          "url": "https://www.youtube.com/watch?v=0kieDntbtos",
+          "published_at": "2025-08-02T12:03:20Z",
+          "event_date": "",
+          "setlist_count": 0
+        }
+      ],
+      "added_at": "2026-06-15T05:07:37.275525+00:00",
+      "last_reviewed_at": "2026-06-15T04:54:28.590805+00:00",
+      "last_collected_at": null
+    },
+    {
+      "channel_id": "UCuwHJMvFVZhnYiWyWvCeacA",
+      "channel_title": "kibikibi",
+      "channel_url": "https://www.youtube.com/channel/UCuwHJMvFVZhnYiWyWvCeacA",
+      "rss_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCuwHJMvFVZhnYiWyWvCeacA",
+      "status": "hold",
+      "collection_enabled": false,
+      "priority": "low",
+      "source": "manual_review",
+      "scope": "tokyo_area",
+      "date_validation_required": true,
+      "trusted_for": [
+        "event_discovery"
+      ],
+      "review": {
+        "decision": "hold",
+        "reason": "単発動画または街歩き寄りで、曲目・会場日付の継続抽出ソースとしては弱い。",
+        "next_action": "同チャンネルから複数の東京圏盆踊り動画が見つかったら再確認する。",
+        "candidate_score": 12,
+        "score_reasons": [
+          "盆踊り文脈1本"
+        ]
+      },
+      "metrics": {
+        "found_video_count": 1,
+        "bon_context_video_count": 1,
+        "setlist_candidate_count": 0,
+        "event_date_candidate_count": 0,
+        "analytics": {}
+      },
+      "sample_videos": [
+        {
+          "title": "奥浅草盆踊り大会2025 芙蓉一翔先生民謡18曲4分30秒！！",
+          "url": "https://www.youtube.com/watch?v=5IR_UMx6ylM",
+          "published_at": "2025-06-29T00:44:35Z",
+          "event_date": "",
+          "setlist_count": 0
+        }
+      ],
+      "added_at": "2026-06-15T05:07:37.275525+00:00",
+      "last_reviewed_at": "2026-06-15T04:54:28.590805+00:00",
+      "last_collected_at": null
+    },
+    {
+      "channel_id": "UCtyrvw693UBkc-8HUNDVz1w",
+      "channel_title": "walk Tokyo walk・東京散歩",
+      "channel_url": "https://www.youtube.com/channel/UCtyrvw693UBkc-8HUNDVz1w",
+      "rss_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCtyrvw693UBkc-8HUNDVz1w",
+      "status": "hold",
+      "collection_enabled": false,
+      "priority": "low",
+      "source": "manual_review",
+      "scope": "tokyo_area",
+      "date_validation_required": true,
+      "trusted_for": [
+        "event_discovery"
+      ],
+      "review": {
+        "decision": "hold",
+        "reason": "単発動画または街歩き寄りで、曲目・会場日付の継続抽出ソースとしては弱い。",
+        "next_action": "同チャンネルから複数の東京圏盆踊り動画が見つかったら再確認する。",
+        "candidate_score": 12,
+        "score_reasons": [
+          "盆踊り文脈1本"
+        ]
+      },
+      "metrics": {
+        "found_video_count": 1,
+        "bon_context_video_count": 1,
+        "setlist_candidate_count": 0,
+        "event_date_candidate_count": 0,
+        "analytics": {}
+      },
+      "sample_videos": [
+        {
+          "title": "【Kabukicho Bon Odori 2025 Part 1】Pop “Bon Dance” with Taiko & Blue Man Group｜BON ODORI Walk【4K】",
+          "url": "https://www.youtube.com/watch?v=CnTpfIEQcLU",
+          "published_at": "2025-09-09T04:07:03Z",
+          "event_date": "",
+          "setlist_count": 0
+        }
+      ],
+      "added_at": "2026-06-15T05:07:37.275525+00:00",
+      "last_reviewed_at": "2026-06-15T04:54:28.590805+00:00",
+      "last_collected_at": null
+    }
+  ]
+}
