@@ -1,17 +1,18 @@
 {
   "generated_by": "dry_run_youtube_existing_event_updates.py",
-  "generated_at": "2026-06-15T03:37:05.741182+00:00",
+  "generated_at": "2026-06-15T03:46:44.840260+00:00",
   "mode": "dry_run",
   "source": "data/youtube_event_update_plan.json",
   "public_event_source": "data/public/events_public.json",
   "input_count": 3,
   "ready_count": 0,
-  "review_count": 3,
+  "review_count": 0,
   "blocked_count": 0,
+  "done_count": 3,
   "rows": [
     {
       "candidate_key": "yt-event:f76d1950e7079a15",
-      "status": "review",
+      "status": "done",
       "target_event_name": "歌舞伎町BON ODORI",
       "target_page_id": "37b8be04-e762-8182-8c27-f7ff7febcffe",
       "target_page_url": "https://app.notion.com/p/BON-ODORI-37b8be04e76281828c27f7ff7febcffe",
@@ -139,7 +140,7 @@
     },
     {
       "candidate_key": "yt-event:9c9ec10b3ec187ac",
-      "status": "review",
+      "status": "done",
       "target_event_name": "自由が丘納涼盆踊り大会",
       "target_page_id": "37b8be04-e762-817c-93bf-d2fafc0103c3",
       "target_page_url": "https://app.notion.com/p/37b8be04e762817c93bfd2fafc0103c3",
@@ -219,7 +220,7 @@
     },
     {
       "candidate_key": "yt-event:a45246f9d69985cb",
-      "status": "review",
+      "status": "done",
       "target_event_name": "歌舞伎町BON ODORI",
       "target_page_id": "37b8be04-e762-8182-8c27-f7ff7febcffe",
       "target_page_url": "https://app.notion.com/p/BON-ODORI-37b8be04e76281828c27f7ff7febcffe",
@@ -251,10 +252,10 @@
         }
       ],
       "warnings": [
-        "曲目候補が1件以下です。セットリストとしては不完全な可能性があります"
+        "曲目候補は既存のYouTube証拠に含まれています"
       ],
       "proposed_note": "[youtube_evidence] 2025実績証拠\n- 対象イベント: 歌舞伎町BON ODORI\n- 検出日付: 2025-08-16\n- 動画: https://www.youtube.com/watch?v=m8zNQMQzgQs\n- チャンネル: Urban Walk\n- サムネイル: https://i.ytimg.com/vi/m8zNQMQzgQs/maxresdefault.jpg\n- 曲目候補: ultra soul ②",
-      "would_change_detail": true
+      "would_change_detail": false
     }
   ]
 }

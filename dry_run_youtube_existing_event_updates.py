@@ -86,6 +86,21 @@ def song_titles(row):
     return titles
 
 
+def normalized_song_key(value):
+    value = str(value or "").casefold()
+    value = re.sub(r"[①②③④⑤⑥⑦⑧⑨⑩0-9０-９]+", "", value)
+    value = re.sub(r"[^0-9a-z一-龥ぁ-んァ-ヶー]+", "", value)
+    return value
+
+
+def songs_covered_by_detail(row, existing_detail):
+    titles = song_titles(row)
+    if not titles or not existing_detail:
+        return False
+    detail_key = normalized_song_key(existing_detail)
+    return all(normalized_song_key(title) in detail_key for title in titles)
+
+
 def evidence_note(row):
     match = row.get("matched_public_event") or {}
     songs = song_titles(row)
@@ -143,15 +158,30 @@ def row_warnings(row, page, existing_detail, public_event):
     url = row.get("source_video_url") or ""
     if url and url in (existing_detail or ""):
         warnings.append("同じYouTube URLが開催パターン詳細に既に含まれています")
-    if len(song_titles(row)) <= 1:
+    if len(song_titles(row)) <= 1 and not songs_covered_by_detail(row, existing_detail):
         warnings.append("曲目候補が1件以下です。セットリストとしては不完全な可能性があります")
+    if len(song_titles(row)) <= 1 and songs_covered_by_detail(row, existing_detail):
+        warnings.append("曲目候補は既存のYouTube証拠に含まれています")
     return warnings
 
 
-def proposed_status(warnings):
+def proposed_status(warnings, would_change_detail=True):
     blockers = {"Notionイベントページが見つかりません"}
     if any(warning in blockers for warning in warnings):
         return "blocked"
+    done_warnings = {
+        "同じYouTube URLが開催パターン詳細に既に含まれています",
+        "曲目候補は既存のYouTube証拠に含まれています",
+    }
+    if (
+        warnings
+        and not would_change_detail
+        and (
+            "同じYouTube URLが開催パターン詳細に既に含まれています" in warnings
+            or all(warning in done_warnings for warning in warnings)
+        )
+    ):
+        return "done"
     if warnings:
         return "review"
     return "ready"
@@ -171,9 +201,11 @@ def build_dry_run(api, plan, public_events=None):
         note = evidence_note(row)
         warnings = row_warnings(row, page, existing_detail, public_event)
         duplicate_url = bool(row.get("source_video_url") and row.get("source_video_url") in existing_detail)
+        covered_songs = songs_covered_by_detail(row, existing_detail)
+        would_change_detail = bool(note and note not in existing_detail and not duplicate_url and not covered_songs)
         rows.append({
             "candidate_key": row.get("candidate_key") or "",
-            "status": proposed_status(warnings),
+            "status": proposed_status(warnings, would_change_detail),
             "target_event_name": target_name,
             "target_page_id": page.get("id") if page else "",
             "target_page_url": page_url(page) if page else "",
@@ -188,7 +220,7 @@ def build_dry_run(api, plan, public_events=None):
             "songs": row.get("songs") or [],
             "warnings": warnings,
             "proposed_note": note,
-            "would_change_detail": bool(note and note not in existing_detail and not duplicate_url),
+            "would_change_detail": would_change_detail,
         })
     return rows
 
@@ -206,6 +238,7 @@ def render_markdown(output):
         f"- ready: {output['ready_count']}件",
         f"- review: {output['review_count']}件",
         f"- blocked: {output['blocked_count']}件",
+        f"- done: {output['done_count']}件",
         "",
         "| status | イベント | 日付 | 曲数 | 変更 | 警告 | 動画 |",
         "| --- | --- | --- | --- | --- | --- | --- |",
@@ -262,6 +295,7 @@ def main():
         "ready_count": sum(1 for row in rows if row["status"] == "ready"),
         "review_count": sum(1 for row in rows if row["status"] == "review"),
         "blocked_count": sum(1 for row in rows if row["status"] == "blocked"),
+        "done_count": sum(1 for row in rows if row["status"] == "done"),
         "rows": rows,
     }
     atomic_write_json(args.out, output)
@@ -270,6 +304,7 @@ def main():
         "[youtube-existing-dry-run] "
         f"input={output['input_count']} ready={output['ready_count']} "
         f"review={output['review_count']} blocked={output['blocked_count']} "
+        f"done={output['done_count']} "
         f"-> {args.out}, {args.md_out}"
     )
 

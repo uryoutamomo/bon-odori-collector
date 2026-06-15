@@ -84,7 +84,7 @@ class DryRunYoutubeExistingEventUpdatesTest(unittest.TestCase):
         self.assertEqual(rows[0]["status"], "review")
         self.assertIn("date_endが空", "; ".join(rows[0]["warnings"]))
 
-    def test_flags_duplicate_url_and_small_song_count_for_review(self):
+    def test_marks_duplicate_url_as_done(self):
         plan = {
             "rows": [
                 {
@@ -107,9 +107,62 @@ class DryRunYoutubeExistingEventUpdatesTest(unittest.TestCase):
             FakeApi({"歌舞伎町BON ODORI": page("https://www.youtube.com/watch?v=abc")}),
             plan,
         )
-        self.assertEqual(rows[0]["status"], "review")
+        self.assertEqual(rows[0]["status"], "done")
         self.assertFalse(rows[0]["would_change_detail"])
         self.assertIn("同じYouTube URL", "; ".join(rows[0]["warnings"]))
+
+    def test_marks_low_song_count_as_done_when_song_already_covered(self):
+        plan = {
+            "rows": [
+                {
+                    "candidate_key": "yt1",
+                    "action": "append_evidence_to_existing_event",
+                    "youtube_event_date": "2025-08-16",
+                    "source_video_url": "https://www.youtube.com/watch?v=abc",
+                    "source_channel_title": "channel",
+                    "matched_public_event": {
+                        "name": "歌舞伎町BON ODORI",
+                        "date": "2025-08-16",
+                        "date_end": "",
+                        "score": 75,
+                    },
+                    "songs": [{"title": "ultra soul ②"}],
+                }
+            ]
+        }
+        rows = build_dry_run(
+            FakeApi({"歌舞伎町BON ODORI": page("[youtube_evidence]\n- 曲目候補: ultra soul, Get Wild")}),
+            plan,
+        )
+        self.assertEqual(rows[0]["status"], "done")
+        self.assertFalse(rows[0]["would_change_detail"])
+        self.assertIn("既存のYouTube証拠", "; ".join(rows[0]["warnings"]))
+
+    def test_flags_small_song_count_for_review_when_not_covered(self):
+        plan = {
+            "rows": [
+                {
+                    "candidate_key": "yt1",
+                    "action": "append_evidence_to_existing_event",
+                    "youtube_event_date": "2025-09-16",
+                    "source_video_url": "https://www.youtube.com/watch?v=abc",
+                    "source_channel_title": "channel",
+                    "matched_public_event": {
+                        "name": "歌舞伎町BON ODORI",
+                        "date": "",
+                        "date_end": "",
+                        "score": 75,
+                    },
+                    "songs": [{"title": "ダンシング・ヒーロー"}],
+                }
+            ]
+        }
+        rows = build_dry_run(
+            FakeApi({"歌舞伎町BON ODORI": page()}),
+            plan,
+        )
+        self.assertEqual(rows[0]["status"], "review")
+        self.assertTrue(rows[0]["would_change_detail"])
         self.assertIn("曲目候補が1件以下", "; ".join(rows[0]["warnings"]))
 
 
