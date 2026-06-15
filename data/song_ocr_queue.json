@@ -1,6 +1,6 @@
 {
   "generated_by": "build_song_ocr_queue.py",
-  "count": 1,
+  "count": 2,
   "items": [
     {
       "id": "b21783a2a9785946",
@@ -11,6 +11,21 @@
       "date": "2026-06-08T09:15:46+00:00",
       "media_urls": [],
       "text": "🏮赤坂日枝神社 盆踊り🏮\n「山王音頭と民踊大会」\n📅2026年6月13日（土）〜15日（月）\n📍山王パークタワー 公開空地\n\n曲目リストです！\nみんなで楽しみましょう♪\n\n#盆踊り #赤坂日枝神社 #山王音頭 #民踊大会 #夏祭り #東京イベント https://t.co/XzgNI2P8oy",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "75ba6aceefef1685",
+      "status": "needs_ocr",
+      "account": "@GOB7qpuaaOFitmF",
+      "url": "https://x.com/GOB7qpuaaOFitmF/status/2066488871152714041",
+      "tweet_id": "2066488871152714041",
+      "date": "2026-06-15T11:51:55+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HK2kq7QbQAAAd_M.jpg",
+        "https://t.co/mAXy3pDz8C",
+        "pic.x.com/mAXy3pDz8C"
+      ],
+      "text": "山王日枝神社盆踊りの最終日に行ってきました✊\n平日という事もあってか入れ替えは最初の数回で終わり、気付けば踊るスペースも徐々に広げて下さり、初日に踊れなかった曲目全てを踊れて良かったです😆\n色々な方々にご挨拶も出来て、盆活の良いスタートとなりました〜✨ https://t.co/mAXy3pDz8C",
       "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
     }
   ]

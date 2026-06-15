@@ -960,6 +960,18 @@
     "notion_url": "https://app.notion.com/p/3718be04e76281dea018c6166696254b"
   },
   {
+    "venue": "行幸通り",
+    "region": "千代田区",
+    "month": "7月",
+    "scale": "大",
+    "access": "JR東京駅丸の内口から徒歩圏内。東京駅と皇居を結ぶ行幸通り",
+    "in_tsukiji_30min": true,
+    "source_url": "https://www.marunouchi.com/pickup/event/6763/",
+    "memo": "Marunouchi.com公式ページで「丸の内夏祭り2025」in 行幸通りを確認。YouTube候補では丸の内de盆踊りの曲目映像あり。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/3808be04e76281c69f32d007e702994c"
+  },
+  {
     "venue": "西久保八幡神社",
     "region": "港区",
     "month": "8月",
@@ -1498,6 +1510,18 @@
     "memo": "2025-07-19〜20に第25回 四谷納涼踊り大会開催記録あり。",
     "needs_review": false,
     "notion_url": "https://app.notion.com/p/37b8be04e7628110b46cc9bc2eedeb96"
+  },
+  {
+    "venue": "国立旭通り 弥生ビル東側",
+    "region": "国立市",
+    "month": "6月",
+    "scale": "中",
+    "access": "JR国立駅南口から徒歩圏内。旭通り商店会エリア",
+    "in_tsukiji_30min": false,
+    "source_url": "https://ahirunoie.shop-pro.jp/apps/note/%E5%9B%BD%E7%AB%8B%E6%97%AD%E9%80%9A%E3%82%8A%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%B3%E3%83%95%E3%82%A7%E3%82%B9%E3%82%BF2026/",
+    "memo": "YouTube active既存イベント追記dry-runでblockedになった候補。ブログ抽出 data/blog_venue_rows.json では、国立旭通り商店会「ジューンフェスタ2026」6月7日(日)、盆踊り13:00-15:00、会場は国立旭通り 弥生ビル東側。あひるの家ブログでも2026年6月7日開催と盆踊り企画を確認。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/3808be04e76281b7b177cfef0977a679"
   },
   {
     "venue": "大口公園",

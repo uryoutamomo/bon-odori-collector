@@ -1,7 +1,25 @@
 {
-  "generated_at": "2026-06-14T12:38:36.949108+00:00",
+  "generated_at": "2026-06-15T20:11:39.871756+00:00",
   "year": 2026,
   "items": [
+    {
+      "venue": "JR目黒駅西口前",
+      "event_name": "地域のふれあい第37回盆踊り大会",
+      "months": [
+        7
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "JR苅田駅前広場",
+      "event_name": "JR苅田駅前広場",
+      "months": [
+        8
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
     {
       "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
       "event_name": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
@@ -13,7 +31,7 @@
     },
     {
       "venue": "さかもと朝顔広場（旧坂本小学校跡地）",
-      "event_name": "さかもと朝顔広場（旧坂本小学校跡地）",
+      "event_name": "坂本町会 納涼祭",
       "months": [
         8
       ],
@@ -21,8 +39,53 @@
       "evidence": []
     },
     {
+      "venue": "ふるさと千川ひろば(千川小学校校庭跡地)",
+      "event_name": "第34回ふるさと千川 まつり",
+      "months": [
+        6
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
       "venue": "ハマサイト前広場・汐留ビルディング外構",
-      "event_name": "ハマサイト前広場・汐留ビルディング外構",
+      "event_name": "第16回ハマサイトの夏祭り",
+      "months": [
+        8
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "フナイリバ（目黒川船入場広場）",
+      "event_name": "中目黒盆踊り大会 2025",
+      "months": [
+        8
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "三峰公園",
+      "event_name": "納涼夏祭り大会",
+      "months": [
+        7
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "上北沢小学校",
+      "event_name": "上北沢の納涼盆踊り",
+      "months": [
+        8
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "上野原市役所センタープラザ（もみじホール）",
+      "event_name": "上野原市役所センタープラザ（もみじホール）",
       "months": [
         8
       ],
@@ -31,12 +94,9 @@
     },
     {
       "venue": "上野恩賜公園",
-      "event_name": "上野恩賜公園",
+      "event_name": "TOKYO盆ダンス×STEAM FESTIVAL2026",
       "months": [
-        6,
-        7,
-        8,
-        10
+        6
       ],
       "status": "confirmed",
       "evidence": [
@@ -61,8 +121,88 @@
       ]
     },
     {
+      "venue": "下代田児童遊園",
+      "event_name": "下代田東子供祭り・納涼祭り",
+      "months": [
+        7
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "下北沢駅東口",
+      "event_name": "下北沢盆踊り2025",
+      "months": [
+        8
+      ],
+      "status": "confirmed",
+      "evidence": [
+        {
+          "source": "x_proactive",
+          "title": "令和7年8月9日\n下北沢駅東口にて\n【世田谷区北沢2丁目/🗳️東京6区】\n\n(下北沢盆踊りのにぎわいと🐰こくうさ)\n\n📷#こくうさ紀行 https://t.co",
+          "text": "令和7年8月9日\n下北沢駅東口にて\n【世田谷区北沢2丁目/🗳️東京6区】\n\n(下北沢盆踊りのにぎわいと🐰こくうさ)\n\n📷#こくうさ紀行 https://t.co/BGbV2Hdkbp",
+          "url": "https://x.com/niki_volkshase/status/2031208495887073358"
+        }
+      ]
+    },
+    {
+      "venue": "下落合公園",
+      "event_name": "下落合四丁目町会 盆踊り大会",
+      "months": [
+        7
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "中島公園",
+      "event_name": "中島公園",
+      "months": [
+        8
+      ],
+      "status": "confirmed",
+      "evidence": [
+        {
+          "source": "collected",
+          "title": "中島公園で懐かしさと新しさが出会う,盆踊り大会。 - キャンプファイヤー",
+          "text": "中島公園で懐かしさと新しさが出会う,盆踊り大会。 - キャンプファイヤー",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5TNHhRUGtkdG04Q2VBRXRHMnJHMHlQYlFKbmQ0a3BDejdmNHZyeGY3bnYzaVE2ckN2QWNNVFpZZktYM0N5R0d1angyNW42a25oOFZn?oc=5"
+        },
+        {
+          "source": "news_proactive",
+          "title": "100日前になりました。 by 中島公園で懐かしさと新しさが出会う,盆踊り大会。 - キャンプファイヤー",
+          "text": "100日前になりました。 by 中島公園で懐かしさと新しさが出会う,盆踊り大会。 - キャンプファイヤー",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5HQXpIbjZzX2tWN2plNThmZDFWSHVBQm14bTNXM2VGMFNZVnYxUUsyTTVDTkNEcXAwcEZOZHllT3RfSDVHZTlraFJQTkZoZW9YNnllT0l2MmJ1N01mRks5T2p5M2FTQVE5VkNZ?oc=5"
+        },
+        {
+          "source": "x",
+          "title": "@suwayahikari_nu 明日盆踊るのと，中島公園で２種意外含めた盆踊りやるみたいなので攻めてきます！なんか、札幌でも２種以外広めてる勢が複数立ち上がっ",
+          "text": "@suwayahikari_nu 明日盆踊るのと，中島公園で２種意外含めた盆踊りやるみたいなので攻めてきます！なんか、札幌でも２種以外広めてる勢が複数立ち上がっているみたいなので話してきます！",
+          "url": "https://x.com/pink_daiamond_/status/2063115573790478456"
+        }
+      ]
+    },
+    {
+      "venue": "久富稲荷神社",
+      "event_name": "新町公民会 盆踊り大会",
+      "months": [
+        8
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "二子玉川西地区ふれあい広場(246高架下)",
+      "event_name": "玉川町会盆おどり大会",
+      "months": [
+        7
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
       "venue": "五反野コミュニティ公園",
-      "event_name": "五反野コミュニティ公園",
+      "event_name": "西綾瀬町会 夏祭り盆踊り大会",
       "months": [
         6
       ],
@@ -74,6 +214,78 @@
       "event_name": "京橋エドグラン 京橋中央ひろば",
       "months": [
         8
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "京王線芦花公園駅前ロータリー(南口)",
+      "event_name": "芦花公園駅前盆踊り大会",
+      "months": [
+        7
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "八幡小学校",
+      "event_name": "親子盆踊り大会",
+      "months": [
+        7
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "円光院駐車場",
+      "event_name": "円光院駐車場",
+      "months": [
+        7
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "北新宿公園",
+      "event_name": "柏木地区6町会盆踊り大会",
+      "months": [
+        8
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "北柏木公園",
+      "event_name": "北新宿四丁目 盆踊り大会",
+      "months": [
+        7
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "千歳船橋駅前広場",
+      "event_name": "船橋会 盆踊り",
+      "months": [
+        8
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "四谷ひろばグラウンド（旧四谷第四小学校）",
+      "event_name": "第25回 四谷納涼踊り大会",
+      "months": [
+        7
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "国立旭通り 弥生ビル東側",
+      "event_name": "国立旭通り 弥生ビル東側",
+      "months": [
+        6
       ],
       "status": "unconfirmed",
       "evidence": []
@@ -107,7 +319,7 @@
     },
     {
       "venue": "大井町駅前中央通り",
-      "event_name": "大井町駅前中央通り",
+      "event_name": "第71回大井どんたく夏まつり 初日 盆踊り",
       "months": [
         8
       ],
@@ -115,8 +327,8 @@
       "evidence": []
     },
     {
-      "venue": "天妙国寺",
-      "event_name": "天妙国寺",
+      "venue": "大口公園",
+      "event_name": "大口公園",
       "months": [
         7
       ],
@@ -124,36 +336,8 @@
       "evidence": []
     },
     {
-      "venue": "宮前小学校",
-      "event_name": "宮前小学校",
-      "months": [
-        6
-      ],
-      "status": "confirmed",
-      "evidence": [
-        {
-          "source": "x_proactive",
-          "title": "今年も6月7日(日)に #宮前小学校 及び小学校周辺にて、戸越宮前 #盆踊り 、宮前 #子ども縁日 を開催いたします！\n詳細は町会ホームページをご参照ください。",
-          "text": "今年も6月7日(日)に #宮前小学校 及び小学校周辺にて、戸越宮前 #盆踊り 、宮前 #子ども縁日 を開催いたします！\n詳細は町会ホームページをご参照ください。\n\n戸越宮前盆踊り、宮前子ども縁日のご案内 (2026年6月7日(日)) https://t.co/pHHNUEA7DA",
-          "url": "https://x.com/togoshi4/status/2055674267757658128"
-        },
-        {
-          "source": "x_proactive",
-          "title": "今年も戸越宮前盆踊り🏮\n2026年6月7日（日）は戸越6町会合同で開催される戸越宮前盆踊り&amp;宮前子ども縁日‼️\n今年3回目になるこのお祭り、宮前小学校校",
-          "text": "今年も戸越宮前盆踊り🏮\n2026年6月7日（日）は戸越6町会合同で開催される戸越宮前盆踊り&amp;宮前子ども縁日‼️\n今年3回目になるこのお祭り、宮前小学校校庭と目の前の宮前商店街の道路でも盆踊りしますよ💃\n近隣町会みんなで力を合わせて地域を盛り上げる意気込みが素晴らしい✨戸越の底力を目撃せよ👀 https://t.co/WJftUS5nLp",
-          "url": "https://x.com/harebon_odori/status/2053122296353841232"
-        },
-        {
-          "source": "x",
-          "title": "戸越宮前小学校\n\n☔降りを鑑み17時迄に変更\n\n昼の活動が思ったより早く終わったのて早くこれましたが、危なかった😱\n\n晴盆さんがインタビューうけていた。凄い瞬間",
-          "text": "戸越宮前小学校\n\n☔降りを鑑み17時迄に変更\n\n昼の活動が思ったより早く終わったのて早くこれましたが、危なかった😱\n\n晴盆さんがインタビューうけていた。凄い瞬間撮影。\n#盆踊り\n#晴盆 https://t.co/OcnrDUfwlW",
-          "url": "https://x.com/BagPacker2023/status/2063592095764603069"
-        }
-      ]
-    },
-    {
-      "venue": "小山台小学校",
-      "event_name": "小山台小学校",
+      "venue": "大森南4丁目公園",
+      "event_name": "森ヶ崎自治会",
       "months": [
         7
       ],
@@ -161,312 +345,47 @@
       "evidence": []
     },
     {
-      "venue": "山王パークタワー公開空地",
-      "event_name": "山王パークタワー公開空地",
-      "months": [
-        6
-      ],
-      "status": "confirmed",
-      "evidence": [
-        {
-          "source": "x_whitelist",
-          "title": "２日目終わった、また明日。\n山王音頭と民踊大会\n山王パークタワー公開空地\n#山王日枝神社\n#山王パークタワー公開空地",
-          "text": "２日目終わった、また明日。\n山王音頭と民踊大会\n山王パークタワー公開空地\n#山王日枝神社\n#山王パークタワー公開空地",
-          "url": "https://x.com/mu4324/status/2066132982071726401"
-        },
-        {
-          "source": "x",
-          "title": "本日の山王音頭と民踊大会は予定通り18時頃より山王パークタワー公開空地で行います。\nhttps://t.co/ZXPkrDVa7J\n#盆踊り #日本一 #永田町",
-          "text": "本日の山王音頭と民踊大会は予定通り18時頃より山王パークタワー公開空地で行います。\nhttps://t.co/ZXPkrDVa7J\n#盆踊り #日本一 #永田町 #赤坂 #国会議事堂前 #民踊 #日枝神社 https://t.co/188eXGXWvA",
-          "url": "https://x.com/sannouhiejinja/status/2065965316874908100"
-        },
-        {
-          "source": "x",
-          "title": "勝手に盆踊り紹介part2\n明日から三日間開催の「山王音頭と民踊大会」\n\nオフィス街を埋め尽くす屋台と音頭の嵐。圧巻の大会らしい！\n\n18時から開始で、場所は溜",
-          "text": "勝手に盆踊り紹介part2\n明日から三日間開催の「山王音頭と民踊大会」\n\nオフィス街を埋め尽くす屋台と音頭の嵐。圧巻の大会らしい！\n\n18時から開始で、場所は溜池山王駅すぐの山王パークタワー公開空地\n\nぜひみなさん一緒に踊りましょう！！！！！ https://t.co/t40bBrm9Qj",
-          "url": "https://x.com/hiro_thinker/status/2065411749516562776"
-        }
-      ]
-    },
-    {
-      "venue": "新宿中央公園 ファンモアタイム広場",
-      "event_name": "新宿中央公園 ファンモアタイム広場",
-      "months": [
-        8
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "新宿住友ビル三角広場",
-      "event_name": "新宿住友ビル三角広場",
-      "months": [
-        6
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "旧杜松小学校",
-      "event_name": "旧杜松小学校",
-      "months": [
-        8
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "晴海ふ頭公園",
-      "event_name": "晴海ふ頭公園",
+      "venue": "大森南一丁目公園",
+      "event_name": "納涼盆踊り大会",
       "months": [
         7
-      ],
-      "status": "confirmed",
-      "evidence": [
-        {
-          "source": "collected",
-          "title": "【2026】東京湾の夜景と潮風の中で踊る盆踊り 晴海ふ頭公園盆踊り大会【7/11・12】 - 夜景FAN",
-          "text": "【2026】東京湾の夜景と潮風の中で踊る盆踊り 晴海ふ頭公園盆踊り大会【7/11・12】 - 夜景FAN",
-          "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFB2UklnejFGb2xiakhDOU1oanZvSXhiMkIteUpPdV9pLUNic2d5aGVIZWx5QkZidXlEb1dKaXVyNWx5UmpvM3pTWWlYUmxhWmF6clBTTjdmY1FzSzdBUGFWZy03TExZRnV3Y1pfN1U3V3dUYnNiQWJPTEVR?oc=5"
-        },
-        {
-          "source": "news_proactive",
-          "title": "【入場無料】レインボーブリッジの夜景×潮風の異次元シチュエーション！愛犬の整体ブースも降臨する過去最大48屋台の『晴海ふ頭公園盆踊り大会2026』が7月11日（土）・12日（日）に開催決定！「ダンシング・ヒーロー」などガチ生演奏の全10曲 | チバテレ＋プラス - 千葉テレビ放送株式会社",
-          "text": "【入場無料】レインボーブリッジの夜景×潮風の異次元シチュエーション！愛犬の整体ブースも降臨する過去最大48屋台の『晴海ふ頭公園盆踊り大会2026』が7月11日（土）・12日（日）に開催決定！「ダンシング・ヒーロー」などガチ生演奏の全10曲 | チバテレ＋プラス - 千葉テレビ放送株式会社",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5mMDB4cld1V2t0VWxDNVhDcU9fVlUtOERxYTI3QmQ1eHEycnNwMnZfS3A5T3dheFNGRFAtNHoxYXdTTlpFSEs2TlpMQW5PSXVzampia2tXRjdZNXBiTXFuOXU1T1TSAWRBVV95cUxOZjAweHJXdVdrdFVsQzVYQ3FPX1ZVLThEcWEyN0JkNXhxMnJzcDJ2X0twOU93YXhTRkRQLTR6MWF3U05aRUhLNk5aTEFuT0l1c2pqYmtrV0Y3WTVwYk1xbjl1NU9U?oc=5"
-        },
-        {
-          "source": "x",
-          "title": "【HARUMI FLAGの夏の風物詩】東京湾の夜景を背に踊る海辺の盆踊り、過去最大48店舗の縁日エリアが集結する「#晴海ふ頭公園盆踊り大会2026」7/11・1",
-          "text": "【HARUMI FLAGの夏の風物詩】東京湾の夜景を背に踊る海辺の盆踊り、過去最大48店舗の縁日エリアが集結する「#晴海ふ頭公園盆踊り大会2026」7/11・12開催\n#晴海ふ頭公園盆踊り大会 \nhttps://t.co/C0pKyCjliM",
-          "url": "https://x.com/SKYZandBAYZ/status/2065218713193009355"
-        }
-      ]
-    },
-    {
-      "venue": "木場二丁目公園",
-      "event_name": "木場二丁目公園",
-      "months": [
-        7
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "東本願寺（浅草）",
-      "event_name": "東本願寺（浅草）",
-      "months": [
-        8
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "桜田公園",
-      "event_name": "桜田公園",
-      "months": [
-        7
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "森下公園",
-      "event_name": "森下公園",
-      "months": [
-        7
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "横川小学校",
-      "event_name": "横川小学校",
-      "months": [
-        8
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "歌舞伎町シネシティ広場",
-      "event_name": "歌舞伎町シネシティ広場",
-      "months": [
-        8
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "江東橋竪川親水公園",
-      "event_name": "江東橋竪川親水公園",
-      "months": [
-        7
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "浜町公園",
-      "event_name": "浜町公園",
-      "months": [
-        8,
-        9
-      ],
-      "status": "confirmed",
-      "evidence": [
-        {
-          "source": "x",
-          "title": "【大江戸まつり盆おどり大会】\n🏮8/21(金)22日(土)🕓16:00-21:00📍浜町公園(中央区)\n\n東京でも屈指の大きな櫓で開催される人気盆踊り大会♪\n毎",
-          "text": "【大江戸まつり盆おどり大会】\n🏮8/21(金)22日(土)🕓16:00-21:00📍浜町公園(中央区)\n\n東京でも屈指の大きな櫓で開催される人気盆踊り大会♪\n毎年伝統曲や民謡歌手による音頭、子ども盆踊りタイムなど充実のプログラム✨\n\n★練習会も予定されている(リンク参照)\nhttps://t.co/ZXvQjDEgDF",
-          "url": "https://x.com/natsutr_bon/status/2061795596592419268"
-        },
-        {
-          "source": "x",
-          "title": "第36回中央区大江戸まつり盆おどり大会のお知らせ📢8/21（金）、22日(土)の午後4時から浜町公園にて。区制施行80周年を記念したうちわを配布🎐東根市友好都市",
-          "text": "第36回中央区大江戸まつり盆おどり大会のお知らせ📢8/21（金）、22日(土)の午後4時から浜町公園にて。区制施行80周年を記念したうちわを配布🎐東根市友好都市提携35周年を記念して、パネル展示や特産品販売🍑各地域において盆踊りの練習会も実施。\nhttps://t.co/3M5NVMFLGQ\n#大江戸まつり盆おどり大会 https://t.co/ubQcIh3Ovt",
-          "url": "https://x.com/yamarie0324/status/2061768438180425958"
-        },
-        {
-          "source": "x",
-          "title": "そういえば東三輪隣の浜町公園、いつも幼稚園から中学まで一緒だった人達と話したりするだけで盆踊り全くやってなかったから細かく知らないんだよねw\n今年はちゃんと踊ろ",
-          "text": "そういえば東三輪隣の浜町公園、いつも幼稚園から中学まで一緒だった人達と話したりするだけで盆踊り全くやってなかったから細かく知らないんだよねw\n今年はちゃんと踊ろうかな？",
-          "url": "https://x.com/SSqq47356585/status/2054156829421453366"
-        }
-      ]
-    },
-    {
-      "venue": "白金児童遊園",
-      "event_name": "白金児童遊園",
-      "months": [
-        7
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "秩父宮ラグビー場駐車場",
-      "event_name": "秩父宮ラグビー場駐車場",
-      "months": [
-        6
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "第一日野小学校",
-      "event_name": "第一日野小学校",
-      "months": [
-        7
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "第四日野小学校",
-      "event_name": "第四日野小学校",
-      "months": [
-        7
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "築地本願寺",
-      "event_name": "築地本願寺",
-      "months": [
-        7,
-        8
-      ],
-      "status": "confirmed",
-      "evidence": [
-        {
-          "source": "x",
-          "title": "月イチナム子のあとは、\nぜひ月イチ遠藤をお楽しみあれ🪭\n築地音頭のレコード探しが\n築地本願寺を動かしたかも⁉️\nテキトーに話しているようで\n盆踊りと餅つきの共通",
-          "text": "月イチナム子のあとは、\nぜひ月イチ遠藤をお楽しみあれ🪭\n築地音頭のレコード探しが\n築地本願寺を動かしたかも⁉️\nテキトーに話しているようで\n盆踊りと餅つきの共通点までいきついたあたりは相当深いよ、ナムラジ深いよおお！\nhttps://t.co/Ajee4vv43b",
-          "url": "https://x.com/45AMG/status/2021475548116156875"
-        },
-        {
-          "source": "x",
-          "title": "『音の巡礼ラジオ』\n#41 ついに発見！「築地音頭」SPレコード捜索大作戦 その顛末\n\n昨日、レコードを築地本願寺へ持参して、副宗務長、盆踊り担当者の方とお話さ",
-          "text": "『音の巡礼ラジオ』\n#41 ついに発見！「築地音頭」SPレコード捜索大作戦 その顛末\n\n昨日、レコードを築地本願寺へ持参して、副宗務長、盆踊り担当者の方とお話させていただきました\n濃密な20分にまとめていただきました\n是非お聞きください！！\n\nお寺の「音」文化収集家\n未来の住職塾　遠藤卓也さま",
-          "url": "https://x.com/odori2024minato/status/2011648549642191279"
-        },
-        {
-          "source": "x",
-          "title": "本日は築地本願寺へ伺いました。\n\n盆踊り愛好家に大人気の『築地音頭』\n原盤が残されていないというお話を耳にし、何かお力になれればとご連絡したご縁です。\nとても良",
-          "text": "本日は築地本願寺へ伺いました。\n\n盆踊り愛好家に大人気の『築地音頭』\n原盤が残されていないというお話を耳にし、何かお力になれればとご連絡したご縁です。\nとても良いお天気でした。 https://t.co/D7yp5OIYTx",
-          "url": "https://x.com/odori2024minato/status/2011452236954837453"
-        }
-      ]
-    },
-    {
-      "venue": "臨海小学校",
-      "event_name": "臨海小学校",
-      "months": [
-        7
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "西久保八幡神社",
-      "event_name": "西久保八幡神社",
-      "months": [
-        8
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "赤坂サカス広場",
-      "event_name": "赤坂サカス広場",
-      "months": [
-        8
       ],
       "status": "confirmed",
       "evidence": [
         {
           "source": "news_proactive",
-          "title": "赤坂サカス広場で「江戸盆踊り」 3000人来場、「赤坂茜彩」締めくくる - 赤坂経済新聞",
-          "text": "赤坂サカス広場で「江戸盆踊り」 3000人来場、「赤坂茜彩」締めくくる - 赤坂経済新聞",
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE42VmNXUUQ3RXc1Z2d6UUs0Qk0wVEppOWhWMjBsckJ0ekVHMERQeWFjbG1Ha2E3VzZQS29QZ2ZMeXZCcVRyejlUTzlFM0tvZlBMcS1v?oc=5"
+          "title": "上士幌町納涼盆踊り大会 - domingo.ne.jp",
+          "text": "上士幌町納涼盆踊り大会 - domingo.ne.jp",
+          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE50MjR2TE5DLUlfSVdsQkV4U0xJOGtyNkhHVHhyN1ZRQUdqODF1c1E2OEtfN1BMc19yUlowMHZwQXRYWFBXbUVIbA?oc=5"
         },
         {
           "source": "x",
-          "title": "【赤坂茜祭 江戸盆踊り】\n 🏮3/8(日)🕓17:00～19:30(盆踊り)📍赤坂サカス(港区)\n\n赤坂地域の江戸文化イベントで「江戸盆踊り」開催🪭会場は赤坂サ",
-          "text": "【赤坂茜祭 江戸盆踊り】\n 🏮3/8(日)🕓17:00～19:30(盆踊り)📍赤坂サカス(港区)\n\n赤坂地域の江戸文化イベントで「江戸盆踊り」開催🪭会場は赤坂サカス広場、伝統の江戸型山車を輪の中心に踊る✨\n赤坂茜囃子の演奏披露も🎶\n▶参加無料\n\n★イベント全体で和文化プログラム多数★\nhttps://t.co/8SOjJNqD4T",
-          "url": "https://x.com/natsutr_bon/status/2026112012930191816"
+          "title": "【地域の絆を深めるために　陸上自衛隊小平駐屯地へ】\n\n地域の活性化と交流は、人と人との繋がりから。 一橋学園南口商店会長と共に、陸上自衛隊小平駐屯地の司令へご挨",
+          "text": "【地域の絆を深めるために　陸上自衛隊小平駐屯地へ】\n\n地域の活性化と交流は、人と人との繋がりから。 一橋学園南口商店会長と共に、陸上自衛隊小平駐屯地の司令へご挨拶に伺いました。\n\n来る8月2日に開催される「第五十八回 納涼盆踊り大会」の開催をご報告し、自衛隊の皆様にもぜひ商店会や地域イベントに親しんでいただきたいとの願いを込めて、広報紙をお渡しさせていただきました。\n\n街の活性化に向け、これからも一つひとつの繋がりを大切に活動してまいります。\n#小平市 #一橋学園 #一橋学園南口商店会 #陸上自衛隊 #小平駐屯地 #盆踊り #納涼盆踊り大会 #地域交流 #松岡あつし #地域の絆",
+          "url": "https://x.com/MatsuokaKodaira/status/2066523154323996697"
+        },
+        {
+          "source": "x",
+          "title": "#東池袋サンシャイン町会 \n#サンシャインシティ納涼盆踊り大会 \n#盆踊り   \n２０２６年７月３０日～８月１日      \nサンシャインシティ納涼盆踊り大会が",
+          "text": "#東池袋サンシャイン町会 \n#サンシャインシティ納涼盆踊り大会 \n#盆踊り   \n２０２６年７月３０日～８月１日      \nサンシャインシティ納涼盆踊り大会が開催  \nわが町も参加させていただきます      \n２０２６年の演目は    ❸bling bang bang born\nhttps://t.co/OocoeBgEss",
+          "url": "https://x.com/sunshinechoukai/status/2065194289056141622"
         }
       ]
     },
     {
-      "venue": "隅田公園",
-      "event_name": "隅田公園",
-      "months": [
-        6
-      ],
-      "status": "confirmed",
-      "evidence": [
-        {
-          "source": "x",
-          "title": "【台東区】6月27日（土）14:00～21:00「第4回奥浅草盆踊り」（少雨決行）が、隅田公園内山谷堀広場にて開催予定です。 | 号外NET 台東区\n〇東京都台",
-          "text": "【台東区】6月27日（土）14:00～21:00「第4回奥浅草盆踊り」（少雨決行）が、隅田公園内山谷堀広場にて開催予定です。 | 号外NET 台東区\n〇東京都台東区\n👨‍💼東京\n#東京都\n#台東区 https://t.co/OuIqAGOvSs",
-          "url": "https://x.com/TOKYO_Shuto634/status/2065577206232088969"
-        },
-        {
-          "source": "x",
-          "title": "【台東区】6月27日（土）14:00～21:00「第4回奥浅草盆踊り」（少雨決行）が、隅田公園内山谷堀広場にて開催予定です。\n https://t.co/GiN",
-          "text": "【台東区】6月27日（土）14:00～21:00「第4回奥浅草盆踊り」（少雨決行）が、隅田公園内山谷堀広場にて開催予定です。\n https://t.co/GiNg5ul2ej",
-          "url": "https://x.com/goguynet_tokyo/status/2065572237655048299"
-        }
-      ]
-    },
-    {
-      "venue": "青山善光寺",
-      "event_name": "青山善光寺",
+      "venue": "大蔵氷川神社",
+      "event_name": "大蔵氷川神社",
       "months": [
         7
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "大豆戸八杉神社",
+      "event_name": "大豆戸八杉神社",
+      "months": [
+        8
       ],
       "status": "unconfirmed",
       "evidence": []
