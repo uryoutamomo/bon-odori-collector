@@ -1,0 +1,105 @@
+{
+  "generated_by": "apply_youtube_official_confirmation.py",
+  "generated_at": "2026-06-15T07:51:51.385978+00:00",
+  "mode": "dry_run",
+  "apply_performed": false,
+  "ready_count": 1,
+  "changed_count": 0,
+  "applied_count": 0,
+  "held_count": 3,
+  "updates": [
+    {
+      "target_event_name": "丸の内de盆踊り",
+      "row_count": 3,
+      "video_count": 3,
+      "apply_status": "ready",
+      "reason": "",
+      "videos": [
+        {
+          "video_url": "https://www.youtube.com/watch?v=seY6P_Ngq4E",
+          "title": "Marunouchi Bon Odori Dance festival PART 1  /  丸の内盆踊り 2025 パート１",
+          "channel_title": "Exploring Japan with Zen",
+          "published_at": "2025-07-27T02:38:40+00:00",
+          "detected_event_date": "2025-07-26",
+          "official_url": "https://www.marunouchi.com/pickup/event/6763/",
+          "decision": "append_existing_event",
+          "target_event_name": "丸の内de盆踊り",
+          "reason": "Marunouchi.com公式ページで丸の内夏祭り2025内の丸の内de盆踊りを確認済み"
+        },
+        {
+          "video_url": "https://www.youtube.com/watch?v=wsnxABvy3BM",
+          "title": "Marunouchi Bon Odori Dance festival PART 2  /  丸の内盆踊り 2025 パート2",
+          "channel_title": "Exploring Japan with Zen",
+          "published_at": "2025-07-31T01:32:27+00:00",
+          "detected_event_date": "2025-07-26",
+          "official_url": "https://www.marunouchi.com/pickup/event/6763/",
+          "decision": "append_existing_event",
+          "target_event_name": "丸の内de盆踊り",
+          "reason": "Marunouchi.com公式ページで丸の内夏祭り2025内の丸の内de盆踊りを確認済み"
+        },
+        {
+          "video_url": "https://www.youtube.com/watch?v=Otv4gDwv8io",
+          "title": "Marunouchi Bon Odori Dance festival DJ J-POP Time  /  丸の内盆踊り 2025 DJ J-POP Time",
+          "channel_title": "Exploring Japan with Zen",
+          "published_at": "2025-08-01T02:48:05+00:00",
+          "detected_event_date": "2025-07-26",
+          "official_url": "https://www.marunouchi.com/pickup/event/6763/",
+          "decision": "append_existing_event",
+          "target_event_name": "丸の内de盆踊り",
+          "reason": "Marunouchi.com公式ページで丸の内夏祭り2025内の丸の内de盆踊りを確認済み"
+        }
+      ],
+      "target_page_id": "3808be04-e762-8157-84ba-d94bcedced97",
+      "target_page_url": "https://app.notion.com/p/de-3808be04e762815784bad94bcedced97",
+      "duplicate_url_count": 3,
+      "changed": false,
+      "note": "[youtube_evidence] YouTube公式確認済み追加証拠\n- 対象イベント: 丸の内de盆踊り\n- 検出日付: 2025-07-26\n- 動画数: 3\n- チャンネル: Exploring Japan with Zen\n- 動画: https://www.youtube.com/watch?v=seY6P_Ngq4E / Exploring Japan with Zen / Marunouchi Bon Odori Dance festival PART 1  /  丸の内盆踊り 2025 パート１\n- 動画: https://www.youtube.com/watch?v=wsnxABvy3BM / Exploring Japan with Zen / Marunouchi Bon Odori Dance festival PART 2  /  丸の内盆踊り 2025 パート2\n- 動画: https://www.youtube.com/watch?v=Otv4gDwv8io / Exploring Japan with Zen / Marunouchi Bon Odori Dance festival DJ J-POP Time  /  丸の内盆踊り 2025 DJ J-POP Time\n- 公式確認URL: https://www.marunouchi.com/pickup/event/6763/",
+      "properties": {
+        "開催パターン詳細": {
+          "rich_text": [
+            {
+              "text": {
+                "content": "2025-07-25〜2025-07-26、行幸通りで開催。公式ページ「丸の内夏祭り2025」in 行幸通り内の丸の内de盆踊り。7/25 盆踊り 17:00-18:15 / 19:00-19:40 / 20:00-21:00、7/26 盆踊り 18:00-19:00 / 19:20-20:10 / 20:40-21:00。\n\n[youtube_evidence] 2025実績証拠\n- 動画: https://www.youtube.com/watch?v=_cggqDBTu20\n- チャンネル: shu channel\n- サムネイル: https://i.ytimg.com/vi/_cggqDBTu20/maxresdefault.jpg\n- 曲目候補: 丸の内音頭, 東京音頭, 大東京音頭, ドンパン節, 炭坑節, お江戸日本橋, 八木節\n\n[youtube_evidence] YouTube公式確認済み追加証拠\n- 対象イベント: 丸の内de盆踊り\n- 検出日付: 2025-07-26\n- 動画数: 3\n- チャンネル: Exploring Japan with Zen\n- 動画: https://www.youtube.com/watch?v=seY6P_Ngq4E / Exploring Japan with Zen / Marunouchi Bon Odori Dance festival PART 1  /  丸の内盆踊り 2025 パート１\n- 動画: https://www.youtube.com/watch?v=wsnxABvy3BM / Exploring Japan with Zen / Marunouchi Bon Odori Dance festival PART 2  /  丸の内盆踊り 2025 パート2\n- 動画: https://www.youtube.com/watch?v=Otv4gDwv8io / Exploring Japan with Zen / Marunouchi Bon Odori Dance festival DJ J-POP Time  /  丸の内盆踊り 2025 DJ J-POP Time\n- 公式確認URL: https://www.marunouchi.com/pickup/event/6763/"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "held": [
+    {
+      "video_url": "https://www.youtube.com/watch?v=CTA9El6Hmfg",
+      "title": "Shibuya Bon Odori Dance festival 2025  /  渋谷 盆踊り 2025",
+      "channel_title": "Exploring Japan with Zen",
+      "published_at": "2025-08-03T22:38:15+00:00",
+      "detected_event_date": "2025-08-02",
+      "official_url": "https://shibuyadogenzaka.com/?p=6827",
+      "decision": "hold",
+      "target_event_name": "渋谷盆踊り2025",
+      "reason": "公式URL候補はあるが本文取得不可。YouTube単独登録はしない"
+    },
+    {
+      "video_url": "https://www.youtube.com/watch?v=Jfm2HZ7P_F0",
+      "title": "[4K]🇯🇵 第29回 渋谷・鹿児島おはら祭 渋谷の街で踊りまくる！2026 / Japanese Dancing in the streets of Shibuya, Tokyo, Japan.",
+      "channel_title": "Tokyo Lonely Walker",
+      "published_at": "2026-05-17T01:09:03+00:00",
+      "detected_event_date": "2026-05-17",
+      "official_url": "https://x.com/walkingfilmlove",
+      "decision": "hold",
+      "target_event_name": "渋谷・鹿児島おはら祭",
+      "reason": "音頭を含む踊りイベントだが、盆踊り本DBの定番盆踊りイベントとしては要確認"
+    },
+    {
+      "video_url": "https://www.youtube.com/watch?v=ICpHigFP0Ko",
+      "title": "盆踊り｜ピカチュウ大集合で可愛すぎる！ピカチュウ音頭 in GO Fest｜ Pokémon GO Fest TOKYO 2026｜Pikachu Ondo｜ポケモン 東京 [4K]🇯🇵",
+      "channel_title": "Tokyo Lonely Walker",
+      "published_at": "2026-06-01T00:00:19+00:00",
+      "detected_event_date": "2026-05-31",
+      "official_url": "https://x.com/walkingfilmlove",
+      "decision": "hold",
+      "target_event_name": "Pokémon GO Fest TOKYO 2026",
+      "reason": "ブランドイベント内のステージ/キャラクター音頭。盆踊り本DB登録対象としては要確認"
+    }
+  ]
+}

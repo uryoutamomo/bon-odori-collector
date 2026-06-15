@@ -86,8 +86,13 @@ def append_next_tasks_note():
             "data/youtube_blocked_new_event_apply_result.json / .md を追加し、会場1件・イベント1件を本DBへ登録。"
         ),
         bullet(
-            "優先2: needs_official_confirmation 6件を確認する。丸の内は公式URLありで既存/登録済み扱いへ寄せやすい。"
-            "渋谷は公式ページの本文取得問題が残るため、YouTube単独登録はしない。"
+            "優先2: needs_official_confirmation 6件を処理。丸の内3件はMarunouchi.com公式確認済みとして、"
+            "既存イベント「丸の内de盆踊り」へYouTube追加証拠を追記済み。"
+        ),
+        bullet(
+            "優先2 hold: 渋谷盆踊り2025は公式URL候補の本文取得不可のため保留。"
+            "渋谷・鹿児島おはら祭とPokémon GO Fest TOKYO 2026は、盆踊り本DB登録対象として要確認。"
+            "結果は data/youtube_official_confirmation_apply_result.json / .md に保存。"
         ),
         bullet(
             "優先3: review_video_evidence 10件は、自由が丘・丸の内・渋谷の短尺動画中心。"
@@ -115,8 +120,8 @@ def main():
         raise SystemExit("NOTION_API_TOKEN is not set")
 
     current_text = (
-        "YouTube次課題: append_existing_event系はready=0/review=0/blocked=0/done=5まで整理済み。"
-        "次はneeds_official_confirmation 6件、review_video_evidence 10件を順に処理する。"
+        "YouTube次課題: append_existing_event系とneeds_official_confirmation 6件は整理済み。"
+        "次はreview_video_evidence 10件を処理する。"
     )
 
     if args.dry_run:

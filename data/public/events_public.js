@@ -687,7 +687,7 @@ const EVENTS = [
       "7": "下旬"
     },
     "description": null,
-    "detail": "2025-07-25〜2025-07-26、行幸通りで開催。公式ページ「丸の内夏祭り2025」in 行幸通り内の丸の内de盆踊り。7/25 盆踊り 17:00-18:15 / 19:00-19:40 / 20:00-21:00、7/26 盆踊り 18:00-19:00 / 19:20-20:10 / 20:40-21:00。\n\n[youtube_evidence] 2025実績証拠\n- 動画: https://www.youtube.com/watch?v=_cggqDBTu20\n- チャンネル: shu channel\n- サムネイル: https://i.ytimg.com/vi/_cggqDBTu20/maxresdefault.jpg\n- 曲目候補: 丸の内音頭, 東京音頭, 大東京音頭, ドンパン節, 炭坑節, お江戸日本橋, 八木節",
+    "detail": "2025-07-25〜2025-07-26、行幸通りで開催。公式ページ「丸の内夏祭り2025」in 行幸通り内の丸の内de盆踊り。7/25 盆踊り 17:00-18:15 / 19:00-19:40 / 20:00-21:00、7/26 盆踊り 18:00-19:00 / 19:20-20:10 / 20:40-21:00。\n\n[youtube_evidence] 2025実績証拠\n- 動画: https://www.youtube.com/watch?v=_cggqDBTu20\n- チャンネル: shu channel\n- サムネイル: https://i.ytimg.com/vi/_cggqDBTu20/maxresdefault.jpg\n- 曲目候補: 丸の内音頭, 東京音頭, 大東京音頭, ドンパン節, 炭坑節, お江戸日本橋, 八木節\n\n[youtube_evidence] YouTube公式確認済み追加証拠\n- 対象イベント: 丸の内de盆踊り\n- 検出日付: 2025-07-26\n- 動画数: 3\n- チャンネル: Exploring Japan with Zen\n- 動画: https://www.youtube.com/watch?v=seY6P_Ngq4E / Exploring Japan with Zen / Marunouchi Bon Odori Dance festival PART 1  /  丸の内盆踊り 2025 パート１\n- 動画: https://www.youtube.com/watch?v=wsnxABvy3BM / Exploring Japan with Zen / Marunouchi Bon Odori Dance festival PART 2  /  丸の内盆踊り 2025 パート2\n- 動画: https://www.youtube.com/watch?v=Otv4gDwv8io / Exploring Japan with Zen / Marunouchi Bon Odori Dance festival DJ J-POP Time  /  丸の内盆踊り 2025 DJ J-POP Time\n- 公式確認URL: https://www.marunouchi.com/pickup/event/6763/",
     "youtube_evidence": [
       {
         "label": "2025実績証拠",
@@ -705,6 +705,15 @@ const EVENTS = [
           "お江戸日本橋",
           "八木節"
         ]
+      },
+      {
+        "label": "YouTube公式確認済み追加証拠",
+        "event_name": "丸の内de盆踊り",
+        "detected_date": "2025-07-26",
+        "video_url": "https://www.youtube.com/watch?v=Otv4gDwv8io / Exploring Japan with Zen / Marunouchi Bon Odori Dance festival DJ J-POP Time  /  丸の内盆踊り 2025 DJ J-POP Time",
+        "channel": "Exploring Japan with Zen",
+        "thumbnail_url": "",
+        "songs": []
       }
     ],
     "songs": [
