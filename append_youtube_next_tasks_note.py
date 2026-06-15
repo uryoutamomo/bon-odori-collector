@@ -73,6 +73,10 @@ def append_next_tasks_note():
             "YouTube実績証拠と曲目証拠を重複なく追記する。"
         ),
         bullet(
+            "優先1 dry-run結果: data/youtube_active_existing_event_update_dry_run.json / .md を追加。"
+            "5グループに集約され、山王音頭と民踊大会4件はready、国立旭通りジューンフェスタ盆踊り1件はNotionイベントページ未発見でblocked。"
+        ),
+        bullet(
             "優先2: needs_official_confirmation 6件を確認する。丸の内は公式URLありで既存/登録済み扱いへ寄せやすい。"
             "渋谷は公式ページの本文取得問題が残るため、YouTube単独登録はしない。"
         ),
