@@ -92,7 +92,8 @@ def duplicate_groups(rows):
                     set(left_page.get("venue_ids", []))
                     & set(right_page.get("venue_ids", []))
                 )
-                if similarity >= 0.75 and same_date and same_venue:
+                exact_name = left == right
+                if similarity >= 0.75 and (exact_name or (same_date and same_venue)):
                     suspicious_pair = True
         group = {
             "key": key,
