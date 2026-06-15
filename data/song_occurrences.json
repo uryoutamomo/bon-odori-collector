@@ -1,6 +1,6 @@
 {
   "generated_by": "build_song_occurrences.py",
-  "generated_at": "2026-06-15T05:18:16.612986+00:00",
+  "generated_at": "2026-06-15T06:55:38.267290+00:00",
   "target_year": 2026,
   "prediction_params": {
     "decay_rate": 0.75,
@@ -4203,7 +4203,7 @@
             "https://www.youtube.com/watch?v=7f5Yuf3N9Aw"
           ],
           "first_observed_at": "2026-06-13",
-          "last_observed_at": "2026-06-14T18:00:26+00:00"
+          "last_observed_at": "2026-06-14T21:00:30+00:00"
         },
         {
           "dancer_key": "",
@@ -4257,7 +4257,7 @@
               "url": "https://www.youtube.com/watch?v=GE_F7-n85Xo",
               "date": "2026-06-13",
               "event_start": "2026-06-13",
-              "observed_at": "2026-06-13",
+              "observed_at": "2026-06-14T21:00:30+00:00",
               "year": 2026,
               "source": "youtube_setlist_occurrence",
               "reliability": 0.95,

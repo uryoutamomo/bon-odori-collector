@@ -1,11 +1,11 @@
 {
   "generated_by": "build_youtube_channels.py",
-  "generated_at": "2026-06-15T05:18:16.550418+00:00",
+  "generated_at": "2026-06-15T06:55:30.362021+00:00",
   "source": "data/voices.json",
   "setlist_source": "data/youtube_setlist_occurrences.json",
-  "channel_count": 4,
+  "channel_count": 6,
   "priority_channel_count": 2,
-  "youtube_voice_count": 242,
+  "youtube_voice_count": 273,
   "channels": [
     {
       "channel_key": "UCNF_5e3ZvziJueTWvTPATGw",
@@ -19,17 +19,24 @@
         "和太鼓お祭りCH"
       ],
       "representative_thumbnail_url": "https://i.ytimg.com/vi/dm6SxqoFPVA/maxresdefault.jpg",
-      "video_count": 145,
-      "bon_odori_video_count": 120,
-      "text_gt_500_count": 112,
-      "media_url_video_count": 139,
+      "video_count": 146,
+      "bon_odori_video_count": 121,
+      "text_gt_500_count": 113,
+      "media_url_video_count": 140,
       "setlist_occurrence_count": 8,
       "setlist_song_count": 160,
       "complete_setlist_count": 8,
       "venue_date_success_count": 7,
       "first_published_at": "2026-05-28T10:00:07Z",
-      "last_published_at": "2026-06-14T18:00:26+00:00",
+      "last_published_at": "2026-06-14T21:00:30+00:00",
       "sample_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=GE_F7-n85Xo",
+          "video_id": "GE_F7-n85Xo",
+          "title": "千代田おどり　【赤坂日枝神社】山王祭盆踊り12　「山王音頭と民踊大会」の風景　2026年6月13日",
+          "published_at": "2026-06-14T21:00:30+00:00",
+          "thumbnail_url": ""
+        },
         {
           "url": "https://www.youtube.com/watch?v=OhhRnGn9PGw",
           "video_id": "OhhRnGn9PGw",
@@ -56,13 +63,6 @@
           "video_id": "2gfhUtwHOKA",
           "title": "相馬甚句　【赤坂日枝神社】山王祭盆踊り９　「山王音頭と民踊大会」の風景　2026年6月13日",
           "published_at": "2026-06-14T02:00:16+00:00",
-          "thumbnail_url": ""
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=Kolply49UG4",
-          "video_id": "Kolply49UG4",
-          "title": "おこさ節　【赤坂日枝神社】山王祭盆踊り８　「山王音頭と民踊大会」の風景　2026年6月13日",
-          "published_at": "2026-06-14T01:30:24+00:00",
           "thumbnail_url": ""
         }
       ],
@@ -136,12 +136,12 @@
       "auto_score": 100,
       "collection_status": "優先",
       "score_reasons": [
-        "youtube動画145本",
-        "盆踊り文脈120本",
+        "youtube動画146本",
+        "盆踊り文脈121本",
         "会場日付つきセットリスト8件",
         "曲リンク160件",
         "まとまった曲目表8件",
-        "説明欄リンクあり139本"
+        "説明欄リンクあり140本"
       ]
     },
     {
@@ -299,6 +299,143 @@
       "score_reasons": [
         "youtube動画15本",
         "盆踊り文脈8本",
+        "説明欄リンクあり15本"
+      ]
+    },
+    {
+      "channel_key": "UCEYq2_O_Sai0j9chJOmcKtQ",
+      "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ",
+      "channel_title": "shu channel",
+      "channel_url": "https://www.youtube.com/channel/UCEYq2_O_Sai0j9chJOmcKtQ",
+      "accounts": [
+        "UCEYq2_O_Sai0j9chJOmcKtQ"
+      ],
+      "feed_names": [
+        "shu channel"
+      ],
+      "representative_thumbnail_url": "",
+      "video_count": 15,
+      "bon_odori_video_count": 1,
+      "text_gt_500_count": 6,
+      "media_url_video_count": 15,
+      "setlist_occurrence_count": 0,
+      "setlist_song_count": 0,
+      "complete_setlist_count": 0,
+      "venue_date_success_count": 0,
+      "first_published_at": "2026-05-16T07:46:21+00:00",
+      "last_published_at": "2026-06-14T07:31:20+00:00",
+      "sample_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=MJlUhvLyCAE",
+          "video_id": "MJlUhvLyCAE",
+          "title": "赤坂・日枝神社⛩山王祭「太鼓演奏🥁加賀豊年太鼓 ＆ 鵜浦豊年太鼓」Japanese Drum 2026.6.15 @山王パークタワー公開空地",
+          "published_at": "2026-06-14T07:31:20+00:00",
+          "thumbnail_url": ""
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=e4DwpcKoS68",
+          "video_id": "e4DwpcKoS68",
+          "title": "赤坂・日枝神社⛩山王祭「下町連合渡御」[4/4] 日本橋檜物町神輿ほか Sanno Matsuri (Festival) 2026.6.14 @日本橋・日本国道路元標前",
+          "published_at": "2026-06-14T05:53:02+00:00",
+          "thumbnail_url": ""
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=DiqDOOBAPjg",
+          "video_id": "DiqDOOBAPjg",
+          "title": "赤坂・日枝神社⛩山王祭「下町連合渡御」[3/4]日本橋一丁目（日本一）神輿ほか Sanno Matsuri (Festival) 2026.6.14 @日本橋・日本国道路元標前",
+          "published_at": "2026-06-14T05:52:53+00:00",
+          "thumbnail_url": ""
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=B0ML4j8N4eU",
+          "video_id": "B0ML4j8N4eU",
+          "title": "赤坂・日枝神社⛩山王祭「下町連合渡御」[2/4] 木遣り他 Sanno Matsuri (Festival) 2026.6.14 @日本橋・日本国道路元標前",
+          "published_at": "2026-06-14T05:52:03+00:00",
+          "thumbnail_url": ""
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=rw6hb_2c2Jc",
+          "video_id": "rw6hb_2c2Jc",
+          "title": "赤坂・日枝神社⛩山王祭「下町連合渡御」[1/4]子供神輿ほか Sanno Matsuri (Festival) 2026.6.14 @日本橋・日本国道路元標前",
+          "published_at": "2026-06-14T05:51:53+00:00",
+          "thumbnail_url": ""
+        }
+      ],
+      "events": [],
+      "source": "existing_voices",
+      "auto_score": 28,
+      "collection_status": "候補",
+      "score_reasons": [
+        "youtube動画15本",
+        "盆踊り文脈1本",
+        "説明欄リンクあり15本"
+      ]
+    },
+    {
+      "channel_key": "UCaVANrt14S6q-if2BBOE4TQ",
+      "channel_id": "UCaVANrt14S6q-if2BBOE4TQ",
+      "channel_title": "Tokyo Hz",
+      "channel_url": "https://www.youtube.com/channel/UCaVANrt14S6q-if2BBOE4TQ",
+      "accounts": [
+        "UCaVANrt14S6q-if2BBOE4TQ"
+      ],
+      "feed_names": [
+        "Tokyo Hz"
+      ],
+      "representative_thumbnail_url": "",
+      "video_count": 15,
+      "bon_odori_video_count": 0,
+      "text_gt_500_count": 15,
+      "media_url_video_count": 15,
+      "setlist_occurrence_count": 0,
+      "setlist_song_count": 0,
+      "complete_setlist_count": 0,
+      "venue_date_success_count": 0,
+      "first_published_at": "2026-06-07T01:00:05+00:00",
+      "last_published_at": "2026-06-14T01:00:03+00:00",
+      "sample_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=QKi5tlHXqYw",
+          "video_id": "QKi5tlHXqYw",
+          "title": "⚽World Cup Fever Has Taken Over Shibuya! | Miyashita Park to Shibuya Crossing in Tokyo Jp 4kHDR",
+          "published_at": "2026-06-14T01:00:03+00:00",
+          "thumbnail_url": ""
+        },
+        {
+          "url": "https://www.youtube.com/shorts/L9i70lMMHsI",
+          "video_id": "",
+          "title": "💗So Inspiring! A Gentle Yet Powerful Sunset w/ Clear Mt. Fuji | Windy Shibuya Sky in Tokyo Jp",
+          "published_at": "2026-06-13T18:00:26+00:00",
+          "thumbnail_url": ""
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=u90QeD9TZu4",
+          "video_id": "u90QeD9TZu4",
+          "title": "💗So Inspiring! A Gentle Yet Powerful Sunset w/ Clear Mt. Fuji | Windy Shibuya Sky in Tokyo Jp 4kHDR",
+          "published_at": "2026-06-13T01:00:16+00:00",
+          "thumbnail_url": ""
+        },
+        {
+          "url": "https://www.youtube.com/shorts/B3eg3PNJ39w",
+          "video_id": "",
+          "title": "😆More Cosplayers Than Before! | Very Crowded Shibuya Crossing & Walk in Tokyo Jp  2026",
+          "published_at": "2026-06-12T18:00:19+00:00",
+          "thumbnail_url": ""
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=J2nvA6zk2uo",
+          "video_id": "J2nvA6zk2uo",
+          "title": "😆More Cosplayers Than Before! | Very Crowded Shibuya Crossing & Walk in Tokyo Jp  2026 4kHDR",
+          "published_at": "2026-06-12T01:00:27+00:00",
+          "thumbnail_url": ""
+        }
+      ],
+      "events": [],
+      "source": "existing_voices",
+      "auto_score": 25,
+      "collection_status": "候補",
+      "score_reasons": [
+        "youtube動画15本",
         "説明欄リンクあり15本"
       ]
     },

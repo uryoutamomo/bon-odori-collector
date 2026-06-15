@@ -1,10 +1,10 @@
 {
   "generated_by": "extract_youtube_setlists.py",
-  "generated_at": "2026-06-15T05:18:10.205392+00:00",
+  "generated_at": "2026-06-15T06:55:30.412394+00:00",
   "source": "data/voices.json",
   "review_hint_source": "data/youtube_song_candidates_review.json",
   "public_event_match_source": "data/public/events_public.json",
-  "youtube_voice_count": 242,
+  "youtube_voice_count": 273,
   "occurrence_count": 9,
   "matched_public_event_count": 2,
   "setlist_song_count": 201,
@@ -2683,9 +2683,18 @@
           "thumbnail_url": "",
           "text_length": 879,
           "media_url_count": 15
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=GE_F7-n85Xo",
+          "account": "@wadaikoCH",
+          "title": "千代田おどり　【赤坂日枝神社】山王祭盆踊り12　「山王音頭と民踊大会」の風景　2026年6月13日",
+          "published_at": "2026-06-14T21:00:30+00:00",
+          "thumbnail_url": "",
+          "text_length": 879,
+          "media_url_count": 15
         }
       ],
-      "source_video_count": 11,
+      "source_video_count": 12,
       "song_count": 13,
       "confidence": "high",
       "role": "result",
@@ -2707,162 +2716,162 @@
       "canonical_venue": "山王パークタワー公開空地"
     }
   ],
-  "skipped_count": 78,
+  "skipped_count": 108,
   "skipped_samples": [
     {
-      "url": "https://www.youtube.com/watch?v=EQGF-Zpk7zo",
-      "title": "【4K】矢先稲荷神社大祭 本社神輿が街をゆく 2026年6月14日",
-      "reason": "no_numbered_setlist"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=eSqPmd-LUKM",
-      "title": "【4K】鳶が大神輿に乗って誘導！！！　隅田川神社　例大祭（8年ぶりの本社大神輿渡御）ダイジェスト　2026年6月14日",
-      "reason": "no_numbered_setlist"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=VmouD0eIXsg",
-      "title": "盆踊りシーズン開幕！山王音頭と民踊大会 【 日枝神社 山王祭 】後半",
-      "reason": "no_numbered_setlist"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=84q8qeG029A",
-      "title": "盆踊り開幕！赤坂日枝神社 山王祭 盆踊り｜サザン｜東京音頭｜炭坑節｜山王音頭｜八木節 他 / Traditional Japanese Bon Dance at Hie Shrine. [4K]🇯🇵",
-      "reason": "no_numbered_setlist"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=_WhO6Kh08sE",
-      "title": "盆踊りシーズン開幕！日枝神社 山王祭 盆踊り｜東京音頭 2026年 初日 / Dancing the traditional Japanese Tokyo Ondo. [4K]🇯🇵",
-      "reason": "no_numbered_setlist"
-    },
-    {
-      "url": "https://www.youtube.com/shorts/mDNrK_VLaiM",
-      "title": "映画『Michael／マイケル』公開記念イベント！記念展示が素敵！東京ミッドタウン日比谷",
-      "reason": "no_numbered_setlist"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=y6Yd44m5UNo",
-      "title": "大量のピカチュウが踊りまくる！可愛い！Pokemon GO Fest 2026 TOKYO ダンスステージ -EDM- ポケモン / Pikachu Dance Stage [4K]🇯🇵",
-      "reason": "no_numbered_setlist"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=lqrTdZyCEhE",
-      "title": "必見のオタクの舞！ ヲタ芸！fripSide - only my railgun｜肉フェス2026 A-POP RAVE powered by ANTHEM AKIBA  [4K]🇯🇵",
-      "reason": "no_numbered_setlist"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=iB0H6DCDbDY",
-      "title": "[4K]🇯🇵 横浜開港祭 盆踊り ダンシングヒーロー ｜サザン｜よこはまアラメヤ音頭│セカオワ│野毛山節  他 2026.6.1 / Japanese Bon dance in Yokohama.",
-      "reason": "no_numbered_setlist"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=ZU2e0H9XXvc",
-      "title": "サザン盆踊りで盛り上がる！希望の轍丨横浜開港祭2026 サザンオールスターズ / Bon Odori at the Yokohama Port Festival 2026. [4K]🇯🇵",
-      "reason": "no_numbered_setlist"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=RKXEbu8M7lg",
-      "title": "盆踊り｜ゆず - 夏色 横浜開港祭2026 / Bon Odori at the Yokohama Port Festival 2026. [4K]🇯🇵",
-      "reason": "no_numbered_setlist"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=4VDWvK5tmnI",
-      "title": "ダンシング・ヒーローで盆踊り 横浜開港祭2026 みなとみらい / Bon Odori at the Yokohama Port Festival 2026. [4K]",
-      "reason": "no_numbered_setlist"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=ICpHigFP0Ko",
-      "title": "盆踊り｜ピカチュウ大集合で可愛すぎる！ピカチュウ音頭 in GO Fest｜ Pokémon GO Fest TOKYO 2026｜Pikachu Ondo｜ポケモン 東京 [4K]🇯🇵",
-      "reason": "no_numbered_setlist"
-    },
-    {
-      "url": "https://www.youtube.com/shorts/2bBJfuvAf-o",
-      "title": "嵐-Love so sweetでヲタ芸!! 誰もに愛される嵐!!ありがとう!! │肉フェス2026│DJ: パルム",
-      "reason": "no_numbered_setlist"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=LKtnhKEMYUo",
-      "title": "[4K]🇯🇵 もはやカオス！撮影スポット化したスクランブル交差点！人気観光地 海外観光客 2026年5月 / Shibuya, Tokyo—a popular tourist destination!",
-      "reason": "no_numbered_setlist"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=ZVLZdHg6b7E",
-      "title": "[4K]🇯🇵 目黒蓮 Snow Man 午後の紅茶 2026年 日本一長い交通広告 124m 代々木八幡駅 めめ / Longest traffic ad in Japan. Tokyo.",
-      "reason": "no_numbered_setlist"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=1eE2kqu8om8",
-      "title": "[4K]🇯🇵 渋谷 目黒蓮 佐久間大介 Snow Man 午後の紅茶 メルカリ 巨大広告 めめ / Giant billboard in front of Shibuya station.",
-      "reason": "no_numbered_setlist"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=Jfm2HZ7P_F0",
-      "title": "[4K]🇯🇵 第29回 渋谷・鹿児島おはら祭 渋谷の街で踊りまくる！2026 / Japanese Dancing in the streets of Shibuya, Tokyo, Japan.",
-      "reason": "no_numbered_setlist"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=NF-PnEv5Gao",
-      "title": "【4K】「オワリはじまり」- 前川真悟(かりゆし58 / O-ROOTS) ライブ 【下町ハイボールフェス】  上野",
+      "url": "https://www.youtube.com/watch?v=QKi5tlHXqYw",
+      "title": "⚽World Cup Fever Has Taken Over Shibuya! | Miyashita Park to Shibuya Crossing in Tokyo Jp 4kHDR",
       "reason": "not_bon_odori_setlist"
     },
     {
-      "url": "https://www.youtube.com/watch?v=A6seMX5giYI",
-      "title": "【4K】「アンマー」- 前川真悟(かりゆし58 / O-ROOTS) ライブ 【下町ハイボールフェス】お母さん  上野",
+      "url": "https://www.youtube.com/shorts/L9i70lMMHsI",
+      "title": "💗So Inspiring! A Gentle Yet Powerful Sunset w/ Clear Mt. Fuji | Windy Shibuya Sky in Tokyo Jp",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=u90QeD9TZu4",
+      "title": "💗So Inspiring! A Gentle Yet Powerful Sunset w/ Clear Mt. Fuji | Windy Shibuya Sky in Tokyo Jp 4kHDR",
       "reason": "not_bon_odori_setlist"
     },
     {
-      "url": "https://www.youtube.com/watch?v=p30XofgX9AU",
-      "title": "【東京ドーム】NiziU 「Live with U 2026 \"NiziU : THE CINEMA\"」1日目開演前の様子 / コンサート ニジュー Tokyo Dome",
+      "url": "https://www.youtube.com/shorts/B3eg3PNJ39w",
+      "title": "😆More Cosplayers Than Before! | Very Crowded Shibuya Crossing & Walk in Tokyo Jp  2026",
       "reason": "no_numbered_setlist"
     },
     {
-      "url": "https://www.youtube.com/watch?v=pXMgH6VFg3E",
-      "title": "【4K】 DIAMANTES ライブ【沖縄めんそーれフェスタ 2026】「片手に三線を / 勝利のうた / VIVA!! 夏の色」  池袋サンシャイン ディアマンテス",
+      "url": "https://www.youtube.com/watch?v=J2nvA6zk2uo",
+      "title": "😆More Cosplayers Than Before! | Very Crowded Shibuya Crossing & Walk in Tokyo Jp  2026 4kHDR",
       "reason": "no_numbered_setlist"
     },
     {
-      "url": "https://www.youtube.com/watch?v=lxYmETpLFlA",
-      "title": "【4K】「ハピネス」- AI ライブ【Tokyo Pride 2026】東京プライドレインボープライド  ai ストーリー",
+      "url": "https://www.youtube.com/shorts/dZZ_oQ-yDKQ",
+      "title": "😆Another High-Energy Satsuei (Photo/Film) Dash! | Shibuya Crossing in Tokyo Jp  2026",
       "reason": "no_numbered_setlist"
     },
     {
-      "url": "https://www.youtube.com/watch?v=9Z9En-TCxcE",
-      "title": "【4K】「Story」- AI ライブ【Tokyo Pride 2026】東京プライドレインボープライド  ai ストーリー",
+      "url": "https://www.youtube.com/watch?v=Wq4fvcIdg1g",
+      "title": "😆Another High-Energy Satsuei (Photo/Film) Dash! | Shibuya Crossing in Tokyo Jp  2026 4kHDR",
+      "reason": "not_bon_odori_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/shorts/DRFQKnXEC08",
+      "title": "🤩People Rushing to Take Photos During the Blue Hour! | Shibuya Crossing in Tokyo Jp  2026",
       "reason": "no_numbered_setlist"
     },
     {
-      "url": "https://www.youtube.com/watch?v=rZ8ynlD9evI",
-      "title": "【4K】「ハイビスカス」- D-51 ライブ【OKINAWA FES Milafete 2026】   代々木公園 沖縄フェス オールウェイズ",
+      "url": "https://www.youtube.com/watch?v=7w_Nu3Tv1Ls",
+      "title": "🤩People Rushing to Take Photos During the Blue Hour! | Shibuya Crossing in Tokyo Jp  2026 4kHDR",
       "reason": "no_numbered_setlist"
     },
     {
-      "url": "https://www.youtube.com/watch?v=3zEQln0JpJ4",
-      "title": "【4K】キヨサク (MONGOL800) UKULELE GYPSY ライブ 全9曲「小さな恋のうた」【OKINAWA FES Milafete 2026】 ライブ  代々木公園 沖縄フェス モンパチ",
+      "url": "https://www.youtube.com/shorts/_HnAooPZGzk",
+      "title": "😍Amazing! Fireworks Make It Even More Romantic! | Shibuya Sky in Tokyo Jp 2026",
       "reason": "no_numbered_setlist"
     },
     {
-      "url": "https://www.youtube.com/watch?v=77a1JUrixDE",
-      "title": "【東京ドーム】嵐 ラストライブツアー ファイナル ”開演後も人絶えず!”「ARASHI LIVE TOUR 2026 「We are ARASHI」」コンサート ARASHI Tokyo Dome",
+      "url": "https://www.youtube.com/watch?v=od6ozv5jGL0",
+      "title": "😍Amazing! Fireworks Make It Even More Romantic! | Shibuya Sky in Tokyo Jp 2026 4kHDR",
+      "reason": "not_bon_odori_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/shorts/v4iAik7hjCI",
+      "title": "😆The Movement of This Massive Crowd Is Amazing! | Shibuya Crossing in Tokyo Jp  2026",
       "reason": "no_numbered_setlist"
     },
     {
-      "url": "https://www.youtube.com/watch?v=pPruYuxnGTU",
-      "title": "【東京ドーム】嵐 ラストライブツアー ファイナル 開演前の様子「ARASHI LIVE TOUR 2026 「We are ARASHI」」コンサート 物販 グッツ ARASHI Tokyo Dome",
+      "url": "https://www.youtube.com/watch?v=P7sJ9XqG1Zs",
+      "title": "😆The Movement of This Massive Crowd Is Amazing! | Shibuya Crossing in Tokyo Jp  2026 4kHDR",
       "reason": "no_numbered_setlist"
     },
     {
-      "url": "https://www.youtube.com/watch?v=BOrlLQ16oyU",
-      "title": "【4K】「琉神マブヤー ～魂の戦士～」- DIAMANTES (アルベルト城間) ライブ【沖縄めんそーれフェスタ 2026】特撮「琉神マブヤー」テーマソング  池袋サンシャイン ディアマンテス",
+      "url": "https://www.youtube.com/shorts/IEYGgwqZSWw",
+      "title": "😆Shinjuku Is Incredible! | From the Main Streets to Kabukicho & Golden Gai in Tokyo  2026",
       "reason": "no_numbered_setlist"
     },
     {
-      "url": "https://www.youtube.com/watch?v=iEsemDoQqBY",
-      "title": "東京丸の内でお昼休みに「綱引き大会 !!」 企業対抗 優勝チームは現役明治大学ラグビー部と頂上決戦!!【大手町・丸の内・有楽町 仲通り綱引き大会2026】決勝",
+      "url": "https://www.youtube.com/watch?v=8eRmq0L3MoQ",
+      "title": "😆Shinjuku Is Incredible! | From the Main Streets to Kabukicho & Golden Gai in Tokyo  2026 4kHDR",
+      "reason": "not_bon_odori_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=MJlUhvLyCAE",
+      "title": "赤坂・日枝神社⛩山王祭「太鼓演奏🥁加賀豊年太鼓 ＆ 鵜浦豊年太鼓」Japanese Drum 2026.6.15 @山王パークタワー公開空地",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=e4DwpcKoS68",
+      "title": "赤坂・日枝神社⛩山王祭「下町連合渡御」[4/4] 日本橋檜物町神輿ほか Sanno Matsuri (Festival) 2026.6.14 @日本橋・日本国道路元標前",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=DiqDOOBAPjg",
+      "title": "赤坂・日枝神社⛩山王祭「下町連合渡御」[3/4]日本橋一丁目（日本一）神輿ほか Sanno Matsuri (Festival) 2026.6.14 @日本橋・日本国道路元標前",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=B0ML4j8N4eU",
+      "title": "赤坂・日枝神社⛩山王祭「下町連合渡御」[2/4] 木遣り他 Sanno Matsuri (Festival) 2026.6.14 @日本橋・日本国道路元標前",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=rw6hb_2c2Jc",
+      "title": "赤坂・日枝神社⛩山王祭「下町連合渡御」[1/4]子供神輿ほか Sanno Matsuri (Festival) 2026.6.14 @日本橋・日本国道路元標前",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=baQWo6n-RRQ",
+      "title": "赤坂・日枝神社⛩山王祭「神輿宮入（石段上がり）」[3/3] Sanno Matsuri (Festival) 2026.6.13 @赤坂・日枝神社 Hie Jinja Shrine",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=mXCJbaaxZAY",
+      "title": "赤坂・日枝神社⛩山王祭「神輿宮入（石段上がり）」[2/3] Sanno Matsuri (Festival) 2026.6.13 @赤坂・日枝神社 Hie Jinja Shrine",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=_cHg4R_LskY",
+      "title": "赤坂・日枝神社⛩山王祭「神輿宮入（石段上がり）」[1/3] Sanno Matsuri (Festival) 2026.6.13 @赤坂・日枝神社 Hie Jinja Shrine",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=gNszJGnORv4",
+      "title": "赤坂・日枝神社⛩山王祭「神幸祭：東京駅前・行幸通り」Sanno Matsuri (Festival)［2/2］2026.6.12 @行幸通り・東京駅丸の内口前",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=1y3yg8UDSFc",
+      "title": "赤坂・日枝神社⛩山王祭「神幸祭：皇居坂下門」Sanno Matsuri (Festival)［1/2］2026.6.12 @皇居坂下門前",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=vTSG7OoWc4I",
+      "title": "切腹ピストルズ Seppuku Pistols LIVE「東京ナイトマーケット Tokyo Night Market」2026.5.24 @代々木公園 Yoyogi Park",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=JlBgAgJ82g0",
+      "title": "【弦楽五重奏：VOŁOSI ヴォウォシ】「ポーランド・フェスティバル2026 Festiwal Polski w Tokio」2026.5.16 @六本木ヒルズアリーナ",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=cH3FhGWGhfY",
+      "title": "【ソウルジャズ：Paulina Przybysz & Aga Derlak パウリナ・プシビシュ ＆アガ・デルラク】「ポーランド・フェスティバル2026」2026.5.16 @六本木ヒルズアリーナ",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=IAUWCwY71EA",
+      "title": "【ポーランド国立民族合唱舞踏団：Śląsk シロンスク】「ポーランド・フェスティバル2026 Festiwal Polski w Tokio」2026.5.16 @六本木ヒルズアリーナ",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=mtXypLBogW0",
+      "title": "【テクノジャズ：JAZZ PO POLSKU ～ MM3】「ポーランド・フェスティバル2026 Festiwal Polski w Tokio」2026.5.16 @六本木ヒルズアリーナ",
       "reason": "no_numbered_setlist"
     }
   ],
   "backfill_options": {
-    "current_youtube_voice_count": 242,
-    "voices_at_or_below_500_chars": 48,
+    "current_youtube_voice_count": 273,
+    "voices_at_or_below_500_chars": 57,
     "voices_without_media_urls": 7,
     "options": [
       {

@@ -77,11 +77,12 @@ def append_progress_note():
             "既存RSSと重複するチャンネルはRSS URLで重複排除する。"
         ),
         bullet(
-            "現在のactive収集対象: 和太鼓お祭りチャンネル、祭のきせき 盆踊り、Tokyo Lonely Walker、Urban Walk。"
+            "現在のactive収集対象: 和太鼓お祭りチャンネル、祭のきせき 盆踊り、Tokyo Lonely Walker、Urban Walk、"
+            "Tokyo Hz、Exploring Japan with Zen、shu channel。watchは0件。"
         ),
         bullet(
-            "手動RSS取り込み: active 4チャンネルからYouTube 60件を取得。既存60件を更新し、新規43件は前回取り込み済み。"
-            "data/voices.json のYouTube voiceは242件、data/youtube_channels.json は4チャンネルに正規化済み。"
+            "手動RSS取り込み: active 7チャンネルを対象化。YouTube voiceは273件、data/youtube_channels.json は6チャンネルに正規化済み。"
+            "Exploring Japan with Zen はRSSが空/取得失敗扱いのため、台帳上activeだが未収集。"
         ),
         bullet(
             "曲目接続: data/youtube_setlist_occurrences.json を再生成し、9 occurrence / 201曲を抽出。"
@@ -105,7 +106,7 @@ def main():
 
     current_text = (
         "YouTubeデータ活用: チャンネル登録台帳を作成し、activeチャンネルのRSS収集導線をcollect.pyへ接続済み。"
-        "active 4チャンネルのRSS取り込み、setlist抽出、song occurrence更新まで完了。"
+        "採用済み7チャンネルをactive化し、RSS取り込み、setlist抽出、song occurrence更新まで完了。"
         "今後のYouTube作業入口は「今後の課題リスト: YouTubeデータ活用」。"
     )
 

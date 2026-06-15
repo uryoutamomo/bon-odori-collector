@@ -38,7 +38,7 @@ class PromoteYoutubeChannelRegistryTest(unittest.TestCase):
         self.assertTrue(row["date_validation_required"])
         self.assertIn("setlist_extraction", row["trusted_for"])
 
-    def test_promotes_normal_adopt_to_watch(self):
+    def test_promotes_normal_adopt_to_active_after_approval(self):
         registry = build_registry(
             {
                 "rows": [
@@ -59,8 +59,8 @@ class PromoteYoutubeChannelRegistryTest(unittest.TestCase):
         )
 
         row = registry["channels"][0]
-        self.assertEqual(row["status"], "watch")
-        self.assertFalse(row["collection_enabled"])
+        self.assertEqual(row["status"], "active")
+        self.assertTrue(row["collection_enabled"])
         self.assertIn("official_url_discovery", row["trusted_for"])
 
     def test_merges_existing_channel_analytics(self):

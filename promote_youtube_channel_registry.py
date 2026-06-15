@@ -56,10 +56,8 @@ def registry_status(row):
     priority = row.get("priority")
     if decision == "already_registered":
         return "active"
-    if decision == "adopt" and priority == "high":
-        return "active"
     if decision == "adopt":
-        return "watch"
+        return "active"
     if decision == "review":
         return "review"
     return "hold"
