@@ -300,6 +300,39 @@
     ]
   },
   {
+    "name": "丸の内de盆踊り",
+    "venue": "行幸通り",
+    "area": "千代田区",
+    "date": "2025-07-25",
+    "songs": [
+      {
+        "name": "ドンパン節",
+        "confidence": "hint",
+        "source_count": 1
+      },
+      {
+        "name": "八木節",
+        "confidence": "hint",
+        "source_count": 1
+      },
+      {
+        "name": "大東京音頭",
+        "confidence": "hint",
+        "source_count": 1
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "hint",
+        "source_count": 1
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "hint",
+        "source_count": 1
+      }
+    ]
+  },
+  {
     "name": "濱町音頭盆踊り大会",
     "venue": "浜町公園",
     "area": "中央区",

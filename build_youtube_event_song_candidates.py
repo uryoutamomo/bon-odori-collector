@@ -8,6 +8,8 @@ import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
 
+from song_occurrences import parse_event_date
+
 
 DATA = Path("data")
 EVENT_CANDIDATES = DATA / "youtube_event_candidates.json"
@@ -17,7 +19,8 @@ YOUTUBE_CHANNEL_CANDIDATES = DATA / "youtube_channel_candidates.json"
 CHAPTER_RE = re.compile(r"^\s*(?:(\d{1,2}:)?\d{1,2}:\d{2})\s*[-:：　 ]+\s*(.+?)\s*$")
 CHAPTER_NOISE_RE = re.compile(
     r"(op|end|encore|アンコール|提灯|lantern|map|subscribe|チャンネル|"
-    r"関連動画|opening music|ending music|background music)",
+    r"関連動画|opening music|ending music|background music|precap|"
+    r"bon odori part|festival|tokyo sky tree|traditional dance)",
     re.I,
 )
 
@@ -130,6 +133,15 @@ def enriched_setlist(candidate, description_by_url):
     return chapter_songs
 
 
+def candidate_event_date(candidate, description_by_url):
+    existing = candidate.get("event_date") or ""
+    if existing:
+        return existing
+    url = compact_url(candidate.get("url") or "")
+    description = description_by_url.get(url) or ""
+    return parse_event_date(description, candidate.get("description_excerpt"), candidate.get("title")) or ""
+
+
 def event_song_rows(event_candidates, description_by_url=None):
     description_by_url = description_by_url or {}
     rows = []
@@ -137,8 +149,9 @@ def event_song_rows(event_candidates, description_by_url=None):
         setlist = enriched_setlist(candidate, description_by_url)
         if not setlist:
             continue
+        event_date = candidate_event_date(candidate, description_by_url)
         event_key = "yt-event:" + digest(
-            candidate.get("event_date"),
+            event_date,
             candidate.get("event_name_hint") or candidate.get("title"),
             candidate.get("url"),
         )
@@ -151,7 +164,7 @@ def event_song_rows(event_candidates, description_by_url=None):
                 "event_key": event_key,
                 "event_name": candidate.get("event_name_hint") or candidate.get("title") or "",
                 "venue": candidate.get("venue_hint") or "",
-                "event_date": candidate.get("event_date") or "",
+                "event_date": event_date,
                 "song_title": title,
                 "song_number": song.get("number") or "",
                 "song_url": song.get("url") or "",

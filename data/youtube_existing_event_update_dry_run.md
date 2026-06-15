@@ -1,15 +1,16 @@
 # YouTube既存イベント追記 dry-run
 
-- 生成: 2026-06-15T03:46:44.840260+00:00
-- 対象: 3件
+- 生成: 2026-06-15T04:04:04.903159+00:00
+- 対象: 4件
 - ready: 0件
 - review: 0件
 - blocked: 0件
-- done: 3件
+- done: 4件
 
 | status | イベント | 日付 | 曲数 | 変更 | 警告 | 動画 |
 | --- | --- | --- | --- | --- | --- | --- |
 | done | 歌舞伎町BON ODORI | 2025-08-16 | 16 | no | 同じYouTube URLが開催パターン詳細に既に含まれています | https://www.youtube.com/watch?v=6APAt3DHhVs |
+| done | 奥浅草盆踊り | 2025-06-28 | 15 | no | 同じYouTube URLが開催パターン詳細に既に含まれています | https://www.youtube.com/watch?v=WzcxpMJuynA |
 | done | 自由が丘納涼盆踊り大会 | 2025-07-21 | 8 | no | 同じYouTube URLが開催パターン詳細に既に含まれています | https://www.youtube.com/watch?v=mvHqQY2ISJE |
 | done | 歌舞伎町BON ODORI | 2025-08-16 | 1 | no | 曲目候補は既存のYouTube証拠に含まれています | https://www.youtube.com/watch?v=m8zNQMQzgQs |
 
@@ -30,6 +31,25 @@
 - チャンネル: Tokyo Lonely Walker
 - サムネイル: https://i.ytimg.com/vi/6APAt3DHhVs/maxresdefault.jpg
 - 曲目候補: EZ DO DANCE, 歌舞伎町の女王, Livin' on a Prayer, I Was Born To Love You, ダンシング・ヒーロー, Shake It Off, ultra soul, HOT LIMIT, Dancing Queen, September, 君の瞳に恋してる, Thriller, ライラック, Crazy Train, APT., Get Wild
+```
+
+## 奥浅草盆踊り
+
+- status: done
+- Notion: https://app.notion.com/p/3788be04e76281b68835f39be0b29bee
+- video: https://www.youtube.com/watch?v=WzcxpMJuynA
+- channel: Tokyo Hz
+- thumbnail: https://i.ytimg.com/vi/WzcxpMJuynA/maxresdefault.jpg
+- warnings: 同じYouTube URLが開催パターン詳細に既に含まれています
+
+```text
+[youtube_evidence] 2025実績証拠
+- 対象イベント: 奥浅草盆踊り
+- 検出日付: 2025-06-28
+- 動画: https://www.youtube.com/watch?v=WzcxpMJuynA
+- チャンネル: Tokyo Hz
+- サムネイル: https://i.ytimg.com/vi/WzcxpMJuynA/maxresdefault.jpg
+- 曲目候補: "Naminori Johnny" by Southern All Stars, "Furusato Ondo", Erotica Seven by Southern All Stars, Dance to Traditional Japanese Songs by Ichito Fuyou of Fuyouryu, "Naminori Johnny", "Tanko Bushi", "Tokyo Ondo", "Love Affair Himitsu No Date" by Southern All Stars, "Taito Ondo", "Shin (New) Taito Ondo", "Kyu (Old) Taito Ondo", "Harahara Ondo", "Moero Nihon No Natsumatsuri", "Goshugi Ondo", "Omedeta Ondo"
 ```
 
 ## 自由が丘納涼盆踊り大会

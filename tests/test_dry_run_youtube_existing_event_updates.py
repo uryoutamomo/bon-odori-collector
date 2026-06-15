@@ -165,6 +165,32 @@ class DryRunYoutubeExistingEventUpdatesTest(unittest.TestCase):
         self.assertTrue(rows[0]["would_change_detail"])
         self.assertIn("曲目候補が1件以下", "; ".join(rows[0]["warnings"]))
 
+    def test_allows_prior_year_youtube_evidence_for_recurring_event(self):
+        plan = {
+            "rows": [
+                {
+                    "candidate_key": "yt-oku",
+                    "action": "append_evidence_to_existing_event",
+                    "youtube_event_date": "2025-06-28",
+                    "source_video_url": "https://www.youtube.com/watch?v=oku",
+                    "source_channel_title": "Tokyo Hz",
+                    "matched_public_event": {
+                        "name": "奥浅草盆踊り",
+                        "date": "2026-06-27",
+                        "score": 75,
+                    },
+                    "songs": [{"title": "Tokyo Ondo"}, {"title": "Tanko Bushi"}],
+                }
+            ]
+        }
+        rows = build_dry_run(
+            FakeApi({"奥浅草盆踊り": page()}),
+            plan,
+            [{"name": "奥浅草盆踊り", "date": "2026-06-27"}],
+        )
+        self.assertEqual(rows[0]["status"], "ready")
+        self.assertEqual(rows[0]["warnings"], [])
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -1,41 +1,59 @@
 {
   "generated_by": "apply_youtube_existing_event_updates.py",
-  "generated_at": "2026-06-15T03:36:58.482025+00:00",
-  "mode": "dry_run",
-  "apply_performed": false,
-  "input_count": 2,
+  "generated_at": "2026-06-15T04:01:48.721721+00:00",
+  "mode": "apply",
+  "apply_performed": true,
+  "input_count": 4,
   "ready_count": 1,
-  "changed_count": 0,
-  "applied_count": 0,
+  "changed_count": 1,
+  "applied_count": 1,
   "rows": [
     {
       "candidate_key": "yt-event:f76d1950e7079a15",
       "target_event_name": "歌舞伎町BON ODORI",
       "target_page_id": "37b8be04-e762-8182-8c27-f7ff7febcffe",
       "source_video_url": "https://www.youtube.com/watch?v=6APAt3DHhVs",
+      "status": "done",
+      "apply_status": "skipped",
+      "reason": "dry-run row is not ready"
+    },
+    {
+      "candidate_key": "yt-event:d5a0b63ef3f4896e",
+      "target_event_name": "奥浅草盆踊り",
+      "target_page_id": "3788be04-e762-81b6-8835-f39be0b29bee",
+      "source_video_url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
       "status": "ready",
       "apply_status": "ready",
-      "changed": false,
-      "duplicate_url": true,
+      "changed": true,
+      "duplicate_url": false,
       "properties": {
         "開催パターン詳細": {
           "rich_text": [
             {
               "text": {
-                "content": "2025-08-16 開催予定。東京盆踊りマップから確定日として反映。\n2025 [D10]\n8/16\n歌舞伎町シネシティ広場\n歌舞伎町商店街振興組合「歌舞伎町BON ODORI」 8月16日(土) 。\n開場 16:00、開始 17:30。\n\n[youtube_evidence] 2025実績証拠\n- 対象イベント: 歌舞伎町BON ODORI\n- 検出日付: 2025-08-16\n- 動画: https://www.youtube.com/watch?v=6APAt3DHhVs\n- チャンネル: Tokyo Lonely Walker\n- サムネイル: https://i.ytimg.com/vi/6APAt3DHhVs/maxresdefault.jpg\n- 曲目候補: EZ DO DANCE, 歌舞伎町の女王, Livin' on a Prayer, I Was Born To Love You, ダンシング・ヒーロー, Shake It Off, ultra soul, HOT LIMIT, Dancing Queen, September, 君の瞳に恋してる, Thriller, ライラック, Crazy Train, APT., Get Wild"
+                "content": "[youtube_evidence] 2025実績証拠\n- 対象イベント: 奥浅草盆踊り\n- 検出日付: 2025-06-28\n- 動画: https://www.youtube.com/watch?v=WzcxpMJuynA\n- チャンネル: Tokyo Hz\n- サムネイル: https://i.ytimg.com/vi/WzcxpMJuynA/maxresdefault.jpg\n- 曲目候補: \"Naminori Johnny\" by Southern All Stars, \"Furusato Ondo\", Erotica Seven by Southern All Stars, Dance to Traditional Japanese Songs by Ichito Fuyou of Fuyouryu, \"Naminori Johnny\", \"Tanko Bushi\", \"Tokyo Ondo\", \"Love Affair Himitsu No Date\" by Southern All Stars, \"Taito Ondo\", \"Shin (New) Taito Ondo\", \"Kyu (Old) Taito Ondo\", \"Harahara Ondo\", \"Moero Nihon No Natsumatsuri\", \"Goshugi Ondo\", \"Omedeta Ondo\""
               }
             }
           ]
         }
       },
-      "note": "[youtube_evidence] 2025実績証拠\n- 対象イベント: 歌舞伎町BON ODORI\n- 検出日付: 2025-08-16\n- 動画: https://www.youtube.com/watch?v=6APAt3DHhVs\n- チャンネル: Tokyo Lonely Walker\n- サムネイル: https://i.ytimg.com/vi/6APAt3DHhVs/maxresdefault.jpg\n- 曲目候補: EZ DO DANCE, 歌舞伎町の女王, Livin' on a Prayer, I Was Born To Love You, ダンシング・ヒーロー, Shake It Off, ultra soul, HOT LIMIT, Dancing Queen, September, 君の瞳に恋してる, Thriller, ライラック, Crazy Train, APT., Get Wild"
+      "note": "[youtube_evidence] 2025実績証拠\n- 対象イベント: 奥浅草盆踊り\n- 検出日付: 2025-06-28\n- 動画: https://www.youtube.com/watch?v=WzcxpMJuynA\n- チャンネル: Tokyo Hz\n- サムネイル: https://i.ytimg.com/vi/WzcxpMJuynA/maxresdefault.jpg\n- 曲目候補: \"Naminori Johnny\" by Southern All Stars, \"Furusato Ondo\", Erotica Seven by Southern All Stars, Dance to Traditional Japanese Songs by Ichito Fuyou of Fuyouryu, \"Naminori Johnny\", \"Tanko Bushi\", \"Tokyo Ondo\", \"Love Affair Himitsu No Date\" by Southern All Stars, \"Taito Ondo\", \"Shin (New) Taito Ondo\", \"Kyu (Old) Taito Ondo\", \"Harahara Ondo\", \"Moero Nihon No Natsumatsuri\", \"Goshugi Ondo\", \"Omedeta Ondo\""
+    },
+    {
+      "candidate_key": "yt-event:9c9ec10b3ec187ac",
+      "target_event_name": "自由が丘納涼盆踊り大会",
+      "target_page_id": "37b8be04-e762-817c-93bf-d2fafc0103c3",
+      "source_video_url": "https://www.youtube.com/watch?v=mvHqQY2ISJE",
+      "status": "done",
+      "apply_status": "skipped",
+      "reason": "dry-run row is not ready"
     },
     {
       "candidate_key": "yt-event:a45246f9d69985cb",
       "target_event_name": "歌舞伎町BON ODORI",
       "target_page_id": "37b8be04-e762-8182-8c27-f7ff7febcffe",
       "source_video_url": "https://www.youtube.com/watch?v=m8zNQMQzgQs",
-      "status": "review",
+      "status": "done",
       "apply_status": "skipped",
       "reason": "dry-run row is not ready"
     }

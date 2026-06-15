@@ -1,14 +1,14 @@
 {
   "generated_by": "dry_run_youtube_existing_event_updates.py",
-  "generated_at": "2026-06-15T03:46:44.840260+00:00",
+  "generated_at": "2026-06-15T04:04:04.903159+00:00",
   "mode": "dry_run",
   "source": "data/youtube_event_update_plan.json",
   "public_event_source": "data/public/events_public.json",
-  "input_count": 3,
+  "input_count": 4,
   "ready_count": 0,
   "review_count": 0,
   "blocked_count": 0,
-  "done_count": 3,
+  "done_count": 4,
   "rows": [
     {
       "candidate_key": "yt-event:f76d1950e7079a15",
@@ -136,6 +136,128 @@
         "同じYouTube URLが開催パターン詳細に既に含まれています"
       ],
       "proposed_note": "[youtube_evidence] 2025実績証拠\n- 対象イベント: 歌舞伎町BON ODORI\n- 検出日付: 2025-08-16\n- 動画: https://www.youtube.com/watch?v=6APAt3DHhVs\n- チャンネル: Tokyo Lonely Walker\n- サムネイル: https://i.ytimg.com/vi/6APAt3DHhVs/maxresdefault.jpg\n- 曲目候補: EZ DO DANCE, 歌舞伎町の女王, Livin' on a Prayer, I Was Born To Love You, ダンシング・ヒーロー, Shake It Off, ultra soul, HOT LIMIT, Dancing Queen, September, 君の瞳に恋してる, Thriller, ライラック, Crazy Train, APT., Get Wild",
+      "would_change_detail": false
+    },
+    {
+      "candidate_key": "yt-event:d5a0b63ef3f4896e",
+      "status": "done",
+      "target_event_name": "奥浅草盆踊り",
+      "target_page_id": "3788be04-e762-81b6-8835-f39be0b29bee",
+      "target_page_url": "https://app.notion.com/p/3788be04e76281b68835f39be0b29bee",
+      "matched_public_event": {
+        "name": "奥浅草盆踊り",
+        "venue": "隅田公園",
+        "date": "2026-06-27",
+        "date_end": "",
+        "area": "台東区",
+        "score": 75,
+        "reasons": [
+          "event_alias_in_youtube"
+        ]
+      },
+      "public_event_detail": "[youtube_evidence] 2025実績証拠\n- 対象イベント: 奥浅草盆踊り\n- 検出日付: 2025-06-28\n- 動画: https://www.youtube.com/watch?v=WzcxpMJuynA\n- チャンネル: Tokyo Hz\n- サムネイル: https://i.ytimg.com/vi/WzcxpMJuynA/maxresdefault.jpg\n- 曲目候補: \"Naminori Johnny\" by Southern All Stars, \"Furusato Ondo\", Erotica Seven by Southern All Stars, Dance to Traditional Japanese Songs by Ichito Fuyou of Fuyouryu, \"Naminori Johnny\", \"Tanko Bushi\", \"Tokyo Ondo\", \"Love Affair Himitsu No Date\" by Southern All Stars, \"Taito Ondo\", \"Shin (New) Taito Ondo\", \"Kyu (Old) Taito Ondo\", \"Harahara Ondo\", \"Moero Nihon No Natsumatsuri\", \"Goshugi Ondo\", \"Omedeta Ondo\"",
+      "youtube_event_date": "2025-06-28",
+      "source_video_url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
+      "source_video_title": "4K🤩World Gathers in Oku-Asakusa!! Bon Odori with Pop & Trad Beats!! in Taito-ku Tokyo Japan 2025",
+      "source_channel_title": "Tokyo Hz",
+      "thumbnail_url": "https://i.ytimg.com/vi/WzcxpMJuynA/maxresdefault.jpg",
+      "song_count": 15,
+      "songs": [
+        {
+          "title": "\"Naminori Johnny\" by Southern All Stars",
+          "number": 15,
+          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "\"Furusato Ondo\"",
+          "number": 14,
+          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "Erotica Seven by Southern All Stars",
+          "number": 13,
+          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "Dance to Traditional Japanese Songs by Ichito Fuyou of Fuyouryu",
+          "number": 12,
+          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "\"Naminori Johnny\"",
+          "number": 11,
+          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "\"Tanko Bushi\"",
+          "number": 10,
+          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "\"Tokyo Ondo\"",
+          "number": 9,
+          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "\"Love Affair Himitsu No Date\" by Southern All Stars",
+          "number": 8,
+          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "\"Taito Ondo\"",
+          "number": 7,
+          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "\"Shin (New) Taito Ondo\"",
+          "number": 6,
+          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "\"Kyu (Old) Taito Ondo\"",
+          "number": 5,
+          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "\"Harahara Ondo\"",
+          "number": 4,
+          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "\"Moero Nihon No Natsumatsuri\"",
+          "number": 3,
+          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "\"Goshugi Ondo\"",
+          "number": 2,
+          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "\"Omedeta Ondo\"",
+          "number": 1,
+          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
+          "evidence_type": "chapter"
+        }
+      ],
+      "warnings": [
+        "同じYouTube URLが開催パターン詳細に既に含まれています"
+      ],
+      "proposed_note": "[youtube_evidence] 2025実績証拠\n- 対象イベント: 奥浅草盆踊り\n- 検出日付: 2025-06-28\n- 動画: https://www.youtube.com/watch?v=WzcxpMJuynA\n- チャンネル: Tokyo Hz\n- サムネイル: https://i.ytimg.com/vi/WzcxpMJuynA/maxresdefault.jpg\n- 曲目候補: \"Naminori Johnny\" by Southern All Stars, \"Furusato Ondo\", Erotica Seven by Southern All Stars, Dance to Traditional Japanese Songs by Ichito Fuyou of Fuyouryu, \"Naminori Johnny\", \"Tanko Bushi\", \"Tokyo Ondo\", \"Love Affair Himitsu No Date\" by Southern All Stars, \"Taito Ondo\", \"Shin (New) Taito Ondo\", \"Kyu (Old) Taito Ondo\", \"Harahara Ondo\", \"Moero Nihon No Natsumatsuri\", \"Goshugi Ondo\", \"Omedeta Ondo\"",
       "would_change_detail": false
     },
     {

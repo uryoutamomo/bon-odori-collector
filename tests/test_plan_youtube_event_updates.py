@@ -81,6 +81,36 @@ class PlanYoutubeEventUpdatesTest(unittest.TestCase):
         )
         self.assertEqual(plan["rows"][0]["action"], "hold_out_of_public_scope")
 
+    def test_matches_oku_asakusa_english_alias_to_existing_event(self):
+        youtube = {
+            "events": [
+                {
+                    "event_key": "yt-oku",
+                    "event_name": "Oku-Asakusa Bon Odori Festival 2025",
+                    "venue": "Taito-ku Tokyo",
+                    "event_date": "2025-06-28",
+                    "source_video_url": "https://www.youtube.com/watch?v=oku",
+                    "songs": [
+                        {"title": "Tokyo Ondo"},
+                        {"title": "Tanko Bushi"},
+                    ],
+                }
+            ]
+        }
+        public_events = [
+            {
+                "name": "奥浅草盆踊り",
+                "venue": "隅田公園",
+                "area": "台東区",
+                "date": "2026-06-27",
+            }
+        ]
+
+        plan = build_plan(youtube, public_events)
+
+        self.assertEqual(plan["rows"][0]["action"], "append_evidence_to_existing_event")
+        self.assertEqual(plan["rows"][0]["matched_public_event"]["name"], "奥浅草盆踊り")
+
     def test_clean_song_title(self):
         self.assertEqual(clean_song_title("東京音頭 / Tokyo Ondo"), "東京音頭")
         self.assertEqual(clean_song_title("ダンシングヒーロー盆踊り"), "ダンシングヒーロー")

@@ -19,6 +19,12 @@ class SongOccurrencesTest(unittest.TestCase):
             "2026-05-24",
         )
 
+    def test_parses_english_event_date(self):
+        self.assertEqual(
+            parse_event_date("Saturday night, June 28th, 2025"),
+            "2025-06-28",
+        )
+
     def test_detects_announcement_and_complete_setlist(self):
         text = "曲目表\n1 東京音頭\n2 炭坑節\n3 山王音頭"
         self.assertEqual(evidence_kind(text), "announced")

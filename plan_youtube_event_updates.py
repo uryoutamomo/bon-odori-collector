@@ -21,6 +21,9 @@ TOKYO_23_AREAS = {
 }
 OUT_OF_SCOPE_RE = re.compile(r"(博多|福岡|ラゾーナ川崎|川崎|横浜|鶴見|總持寺|総持寺)")
 GENERIC_EVENT_NAMES = {"盆踊り大会", "盆踊り", "納涼盆踊り", "夏祭り"}
+PUBLIC_EVENT_ALIASES = {
+    "奥浅草盆踊り": ["okuasakusabonodori", "okuasakusabondance", "okuasakusabonodoridancefestival"],
+}
 
 
 def load_json(path, default):
@@ -98,6 +101,11 @@ def match_public_event(row, public_events):
         elif event_name and len(event_name) >= 6 and any(part and part in blob for part in split_event_parts(event.get("name"))):
             score += 35
             reasons.append("event_name_part")
+        for alias in PUBLIC_EVENT_ALIASES.get(raw_event_name, []):
+            if alias and alias in blob:
+                score += 70
+                reasons.append("event_alias_in_youtube")
+                break
         if venue and venue in blob:
             score += 35
             reasons.append("venue_in_youtube")

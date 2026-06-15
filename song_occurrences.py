@@ -23,6 +23,25 @@ OUT_SNAPSHOT = DATA / "song_prediction_snapshots.json"
 
 ISO_DATE_RE = re.compile(r"(20\d{2})[-/年](\d{1,2})[-/月](\d{1,2})日?")
 JP_DATE_RE = re.compile(r"(20\d{2})年\s*(\d{1,2})月\s*(\d{1,2})日")
+EN_DATE_RE = re.compile(
+    r"\b(January|February|March|April|May|June|July|August|September|October|November|December)"
+    r"\s+(\d{1,2})(?:st|nd|rd|th)?[,]?\s+(20\d{2})\b",
+    re.IGNORECASE,
+)
+EN_MONTHS = {
+    "january": 1,
+    "february": 2,
+    "march": 3,
+    "april": 4,
+    "may": 5,
+    "june": 6,
+    "july": 7,
+    "august": 8,
+    "september": 9,
+    "october": 10,
+    "november": 11,
+    "december": 12,
+}
 SETLIST_RE = re.compile(r"(?:曲目|曲順|セットリスト|セトリ|演目|プログラム)")
 ANNOUNCED_RE = re.compile(r"(?:曲目表|プログラム|演目|曲目|曲順|予定|告知|発表|踊ります)")
 OBSERVED_RE = re.compile(r"(?:行われました|開催された|様子|踊った|踊りました|お届けします|動画|YouTube)")
@@ -84,6 +103,11 @@ def parse_event_date(*texts, fallback_year=None):
             if match:
                 y, m, d = [int(part) for part in match.groups()]
                 return f"{y:04d}-{m:02d}-{d:02d}"
+        match = EN_DATE_RE.search(str(text))
+        if match:
+            month_name, day, year = match.groups()
+            month = EN_MONTHS[month_name.casefold()]
+            return f"{int(year):04d}-{month:02d}-{int(day):02d}"
     if fallback_year:
         return f"{int(fallback_year):04d}-01-01"
     return None

@@ -1,0 +1,27 @@
+{
+  "generated_by": "apply_youtube_reviewed_new_events.py",
+  "generated_at": "2026-06-15T04:04:12.654009+00:00",
+  "mode": "apply",
+  "apply_performed": true,
+  "input_count": 1,
+  "venue_created_count": 0,
+  "event_created_count": 0,
+  "rows": [
+    {
+      "candidate_key": "yt-event:afaa6dfcf53ef3f9",
+      "review_decision": "official_confirmed_register",
+      "venue": "行幸通り",
+      "venue_exists": true,
+      "venue_matched_name": "行幸通り",
+      "venue_created": false,
+      "event": "丸の内de盆踊り",
+      "event_exists": true,
+      "event_created": false,
+      "event_date": "2025-07-25",
+      "event_date_end": "2025-07-26",
+      "source_url": "https://www.marunouchi.com/pickup/event/6763/",
+      "venue_page_id": "3808be04-e762-81c6-9f32-d007e702994c",
+      "event_page_id": "3808be04-e762-8157-84ba-d94bcedced97"
+    }
+  ]
+}

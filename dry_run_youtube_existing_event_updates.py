@@ -138,6 +138,8 @@ def date_warning(row, public_event):
     end = match.get("date_end") or start
     if not source_date or not start:
         return ""
+    if source_date[:4] < start[:4]:
+        return ""
     if start <= source_date <= end:
         return ""
     if detail_covers_date(public_event.get("detail") or "", source_date):

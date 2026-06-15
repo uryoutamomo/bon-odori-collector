@@ -87,6 +87,46 @@ class BuildYoutubeEventSongCandidatesTest(unittest.TestCase):
 
         self.assertEqual(output["events"][0]["song_count"], 3)
 
+    def test_fills_english_event_date_from_full_channel_description(self):
+        payload = {
+            "event_candidates": [
+                {
+                    "url": "https://www.youtube.com/watch?v=oku",
+                    "title": "Oku-Asakusa Bon Odori 2025",
+                    "event_name_hint": "Oku-Asakusa Bon Odori 2025",
+                    "venue_hint": "Taito-ku",
+                    "event_date": "",
+                    "setlist_sample": [],
+                }
+            ]
+        }
+        channel_payload = {
+            "channels": [
+                {
+                    "sample_videos": [
+                        {
+                            "url": "https://www.youtube.com/watch?v=oku",
+                            "description": "\n".join([
+                                "Oku-Asakusa Bon Odori on Saturday night, June 28th, 2025.",
+                                "05:54 - Oku-Asakusa Bon Odori Festival 2025",
+                                "06:35 - Furusato Ondo",
+                                "11:10 - Omedeta Ondo",
+                            ]),
+                        }
+                    ]
+                }
+            ]
+        }
+
+        with patch("build_youtube_event_song_candidates.load_json", return_value=channel_payload):
+            output = build_output(payload)
+
+        self.assertEqual(output["events"][0]["event_date"], "2025-06-28")
+        self.assertEqual(
+            sorted(song["title"] for song in output["events"][0]["songs"]),
+            ["Furusato Ondo", "Omedeta Ondo"],
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

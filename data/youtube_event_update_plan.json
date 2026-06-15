@@ -1,13 +1,12 @@
 {
   "generated_by": "plan_youtube_event_updates.py",
-  "generated_at": "2026-06-15T03:36:33.445964+00:00",
+  "generated_at": "2026-06-15T04:00:54.819422+00:00",
   "source": "data/youtube_event_song_candidates.json",
   "public_event_source": "data/public/events_public.json",
   "candidate_count": 7,
   "counts": {
-    "append_evidence_to_existing_event": 3,
+    "append_evidence_to_existing_event": 4,
     "hold_out_of_public_scope": 1,
-    "needs_research": 1,
     "review_new_event_candidate": 2
   },
   "rows": [
@@ -139,6 +138,128 @@
           "title": "Get Wild",
           "number": 1,
           "url": "https://www.youtube.com/watch?v=6APAt3DHhVs",
+          "evidence_type": "chapter"
+        }
+      ]
+    },
+    {
+      "candidate_key": "yt-event:d5a0b63ef3f4896e",
+      "action": "append_evidence_to_existing_event",
+      "review_status": "既存候補",
+      "priority": "高",
+      "youtube_event_name": "4K🤩World Gathers in Oku-Asakusa!! Bon Odori with Pop & Trad Beats!! in Taito-ku Tokyo Japan 2025",
+      "youtube_venue": "4K🤩World Gathers in Oku-Asakusa!! Bon Odori with Pop & Trad Beats!! in Taito-ku Tokyo Japan 2025",
+      "youtube_event_date": "2025-06-28",
+      "source_event_date": "2025-06-28",
+      "event_date_correction": null,
+      "source_video_url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
+      "source_video_title": "4K🤩World Gathers in Oku-Asakusa!! Bon Odori with Pop & Trad Beats!! in Taito-ku Tokyo Japan 2025",
+      "source_channel_id": "UCaVANrt14S6q-if2BBOE4TQ",
+      "source_channel_title": "Tokyo Hz",
+      "source_published_at": "2025-06-29T08:00:28Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/WzcxpMJuynA/maxresdefault.jpg",
+      "description_excerpt": "🌈🥁Want to see more Tokyo's festival videos? 👉https://www.youtube.com/watch?v=cmW1n9M2nMg&list=PLR3ncRAlbZV5rH9aFTKLtp2WhjoeITQNI 🌈🏙️Want to see Shibuya Sky videos? 👉https://www.youtube.com/watch?v=4wlXGTAssAI&list=PLR3ncRAlbZV6DQI-XUKN0mKyR1SZcmtiD 4K/60fps footages of🤩World gathers in Oku-Asakusa!! Bon Odori with pop & trad beats!! in Taito-ku, Tokyo Japan on Saturday night, June 28th, 2025 🌞→🌙/ 28℃. Thank you for watching! I'd be very happy if you would thumbs up and subscribe to my channel!!…",
+      "matched_public_event": {
+        "name": "奥浅草盆踊り",
+        "venue": "隅田公園",
+        "date": "2026-06-27",
+        "date_end": "",
+        "area": "台東区",
+        "score": 75,
+        "reasons": [
+          "event_alias_in_youtube"
+        ]
+      },
+      "song_count": 15,
+      "songs": [
+        {
+          "title": "\"Naminori Johnny\" by Southern All Stars",
+          "number": 15,
+          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "\"Furusato Ondo\"",
+          "number": 14,
+          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "Erotica Seven by Southern All Stars",
+          "number": 13,
+          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "Dance to Traditional Japanese Songs by Ichito Fuyou of Fuyouryu",
+          "number": 12,
+          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "\"Naminori Johnny\"",
+          "number": 11,
+          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "\"Tanko Bushi\"",
+          "number": 10,
+          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "\"Tokyo Ondo\"",
+          "number": 9,
+          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "\"Love Affair Himitsu No Date\" by Southern All Stars",
+          "number": 8,
+          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "\"Taito Ondo\"",
+          "number": 7,
+          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "\"Shin (New) Taito Ondo\"",
+          "number": 6,
+          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "\"Kyu (Old) Taito Ondo\"",
+          "number": 5,
+          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "\"Harahara Ondo\"",
+          "number": 4,
+          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "\"Moero Nihon No Natsumatsuri\"",
+          "number": 3,
+          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "\"Goshugi Ondo\"",
+          "number": 2,
+          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "\"Omedeta Ondo\"",
+          "number": 1,
+          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
           "evidence_type": "chapter"
         }
       ]
@@ -292,154 +413,6 @@
           "title": "ダンシングヒーロー",
           "number": 1,
           "url": "https://www.youtube.com/watch?v=5joHfxKoqxQ",
-          "evidence_type": "chapter"
-        }
-      ]
-    },
-    {
-      "candidate_key": "yt-event:4bc08fdddf3bf411",
-      "action": "needs_research",
-      "review_status": "要調査",
-      "priority": "通常",
-      "youtube_event_name": "4K🤩World Gathers in Oku-Asakusa!! Bon Odori with Pop & Trad Beats!! in Taito-ku Tokyo Japan 2025",
-      "youtube_venue": "4K🤩World Gathers in Oku-Asakusa!! Bon Odori with Pop & Trad Beats!! in Taito-ku Tokyo Japan 2025",
-      "youtube_event_date": "",
-      "source_event_date": "",
-      "event_date_correction": null,
-      "source_video_url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
-      "source_video_title": "4K🤩World Gathers in Oku-Asakusa!! Bon Odori with Pop & Trad Beats!! in Taito-ku Tokyo Japan 2025",
-      "source_channel_id": "UCaVANrt14S6q-if2BBOE4TQ",
-      "source_channel_title": "Tokyo Hz",
-      "source_published_at": "2025-06-29T08:00:28Z",
-      "thumbnail_url": "https://i.ytimg.com/vi/WzcxpMJuynA/maxresdefault.jpg",
-      "description_excerpt": "🌈🥁Want to see more Tokyo's festival videos? 👉https://www.youtube.com/watch?v=cmW1n9M2nMg&list=PLR3ncRAlbZV5rH9aFTKLtp2WhjoeITQNI 🌈🏙️Want to see Shibuya Sky videos? 👉https://www.youtube.com/watch?v=4wlXGTAssAI&list=PLR3ncRAlbZV6DQI-XUKN0mKyR1SZcmtiD 4K/60fps footages of🤩World gathers in Oku-Asakusa!! Bon Odori with pop & trad beats!! in Taito-ku, Tokyo Japan on Saturday night, June 28th, 2025 🌞→🌙/ 28℃. Thank you for watching! I'd be very happy if you would thumbs up and subscribe to my channel!!…",
-      "matched_public_event": null,
-      "song_count": 21,
-      "songs": [
-        {
-          "title": "\"Naminori Johnny\" by Southern All Stars",
-          "number": 21,
-          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
-          "evidence_type": "chapter"
-        },
-        {
-          "title": "\"Furusato Ondo\"",
-          "number": 20,
-          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
-          "evidence_type": "chapter"
-        },
-        {
-          "title": "Erotica Seven by Southern All Stars",
-          "number": 19,
-          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
-          "evidence_type": "chapter"
-        },
-        {
-          "title": "Bon Odori Part 3",
-          "number": 18,
-          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
-          "evidence_type": "chapter"
-        },
-        {
-          "title": "Dance to Traditional Japanese Songs by Ichito Fuyou of Fuyouryu",
-          "number": 17,
-          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
-          "evidence_type": "chapter"
-        },
-        {
-          "title": "Japanese Traditional Dance",
-          "number": 16,
-          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
-          "evidence_type": "chapter"
-        },
-        {
-          "title": "\"Naminori Johnny\"",
-          "number": 15,
-          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
-          "evidence_type": "chapter"
-        },
-        {
-          "title": "\"Tanko Bushi\"",
-          "number": 14,
-          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
-          "evidence_type": "chapter"
-        },
-        {
-          "title": "\"Tokyo Ondo\"",
-          "number": 13,
-          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
-          "evidence_type": "chapter"
-        },
-        {
-          "title": "\"Love Affair Himitsu No Date\" by Southern All Stars",
-          "number": 12,
-          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
-          "evidence_type": "chapter"
-        },
-        {
-          "title": "\"Taito Ondo\"",
-          "number": 11,
-          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
-          "evidence_type": "chapter"
-        },
-        {
-          "title": "\"Shin (New) Taito Ondo\"",
-          "number": 10,
-          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
-          "evidence_type": "chapter"
-        },
-        {
-          "title": "\"Kyu (Old) Taito Ondo\"",
-          "number": 9,
-          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
-          "evidence_type": "chapter"
-        },
-        {
-          "title": "\"Harahara Ondo\"",
-          "number": 8,
-          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
-          "evidence_type": "chapter"
-        },
-        {
-          "title": "\"Moero Nihon No Natsumatsuri\"",
-          "number": 7,
-          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
-          "evidence_type": "chapter"
-        },
-        {
-          "title": "\"Goshugi Ondo\"",
-          "number": 6,
-          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
-          "evidence_type": "chapter"
-        },
-        {
-          "title": "\"Omedeta Ondo\"",
-          "number": 5,
-          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
-          "evidence_type": "chapter"
-        },
-        {
-          "title": "Bon Odori Part 2",
-          "number": 4,
-          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
-          "evidence_type": "chapter"
-        },
-        {
-          "title": "Oku-Asakusa Bon Odori (Dance) Festival 2025",
-          "number": 3,
-          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
-          "evidence_type": "chapter"
-        },
-        {
-          "title": "Tokyo Sky Tree & Flamme d'Or (Golden Flame) by Asahi Beer along Sumida River",
-          "number": 2,
-          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
-          "evidence_type": "chapter"
-        },
-        {
-          "title": "Precap",
-          "number": 1,
-          "url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
           "evidence_type": "chapter"
         }
       ]

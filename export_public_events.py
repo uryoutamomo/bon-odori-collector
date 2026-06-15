@@ -70,6 +70,10 @@ def unknown_confidence():
     return {"level": "unknown", "label": "未確認", "description": "開催日はまだ確認できていません"}
 
 
+def has_confirmed_date_status(status):
+    return status in {"確認済み", "終了"}
+
+
 def load_date_candidates():
     if not os.path.exists(DATE_CANDIDATES_JSON):
         return {}
@@ -354,7 +358,7 @@ def build_public_events():
                 "date": date,
                 "date_end": date_end,
                 "status": status,
-                "date_confidence": confirmed_confidence() if date and status == "確認済み" else unknown_confidence(),
+                "date_confidence": confirmed_confidence() if date and has_confirmed_date_status(status) else unknown_confidence(),
                 "date_candidates": [] if date else date_candidates,
                 # 並び順用の近似月日 [[月, 日], ...] と、表示用の旬ラベル {月: 旬}
                 "hints": hints,
