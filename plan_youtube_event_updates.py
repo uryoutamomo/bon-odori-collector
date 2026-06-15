@@ -211,6 +211,7 @@ def plan_row(row, public_events):
     match = match_public_event(row, public_events)
     songs = planned_songs(row)
     event_date, date_correction = corrected_event_date(row, match)
+    date_review_flags = row.get("date_review_flags") or []
     if match:
         action = "append_evidence_to_existing_event"
         review_status = "既存候補"
@@ -219,6 +220,10 @@ def plan_row(row, public_events):
         action = "hold_out_of_public_scope"
         review_status = "対象外候補"
         priority = "低"
+    elif date_review_flags:
+        action = "needs_research"
+        review_status = "要調査"
+        priority = "高"
     elif row.get("event_date") and len(songs) >= 2:
         action = "review_new_event_candidate"
         review_status = "新規候補"
@@ -244,6 +249,7 @@ def plan_row(row, public_events):
         "source_published_at": row.get("source_published_at") or "",
         "thumbnail_url": row.get("thumbnail_url") or "",
         "description_excerpt": row.get("description_excerpt") or "",
+        "date_review_flags": date_review_flags,
         "matched_public_event": match,
         "song_count": len(songs),
         "songs": songs,

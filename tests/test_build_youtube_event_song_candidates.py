@@ -1,7 +1,7 @@
 import unittest
 from unittest.mock import patch
 
-from build_youtube_event_song_candidates import build_output, extract_chapter_songs
+from build_youtube_event_song_candidates import build_output, date_weekday_review_flags, extract_chapter_songs
 
 
 class BuildYoutubeEventSongCandidatesTest(unittest.TestCase):
@@ -36,8 +36,11 @@ class BuildYoutubeEventSongCandidatesTest(unittest.TestCase):
         description = "\n".join([
             "0:00 OP",
             "0:13 TM NETWORK - Get Wild【途中切れ】",
+            "2:00 スクランブル交差点 / Shibuya Scramble Crossing",
+            "2:10 点灯式 / Lighting Ceremonies",
             "2:25 ROSÉ & Bruno Mars - APT. 【途中から】",
             "39:37 荻野目洋子 - ダンシング・ヒーロー / Yoko Oginome - Eat You Up",
+            "50:00 会場周辺 / Venue Scenery",
             "1:07:04 提灯 / lantern",
             "1:07:17 END",
         ])
@@ -126,6 +129,41 @@ class BuildYoutubeEventSongCandidatesTest(unittest.TestCase):
             sorted(song["title"] for song in output["events"][0]["songs"]),
             ["Furusato Ondo", "Omedeta Ondo"],
         )
+
+    def test_flags_weekday_mismatch_in_full_channel_description(self):
+        payload = {
+            "event_candidates": [
+                {
+                    "url": "https://www.youtube.com/watch?v=shibuya",
+                    "title": "渋谷盆踊り 2025",
+                    "event_name_hint": "渋谷盆踊り 2025",
+                    "venue_hint": "SHIBUYA109前",
+                    "event_date": "2025-08-03",
+                    "setlist_sample": [{"number": 1, "title": "渋谷音頭", "url": ""}],
+                }
+            ]
+        }
+        channel_payload = {
+            "channels": [
+                {
+                    "sample_videos": [
+                        {
+                            "url": "https://www.youtube.com/watch?v=shibuya",
+                            "description": "2025.8.3 Sat\n2:56 渋谷音頭 / Shibuya Ondo",
+                        }
+                    ]
+                }
+            ]
+        }
+
+        with patch("build_youtube_event_song_candidates.load_json", return_value=channel_payload):
+            output = build_output(payload)
+
+        self.assertEqual(output["events"][0]["date_review_flags"][0]["type"], "weekday_mismatch")
+        self.assertEqual(output["events"][0]["date_review_flags"][0]["actual_weekday"], "Sun")
+
+    def test_date_weekday_review_flags_accepts_matching_weekday(self):
+        self.assertEqual(date_weekday_review_flags("2025.8.2 Sat"), [])
 
 
 if __name__ == "__main__":

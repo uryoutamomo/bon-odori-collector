@@ -5,7 +5,7 @@ import hashlib
 import json
 import re
 import tempfile
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 from song_occurrences import parse_event_date
@@ -20,9 +20,43 @@ CHAPTER_RE = re.compile(r"^\s*(?:(\d{1,2}:)?\d{1,2}:\d{2})\s*[-:：　 ]+\s*(.+?
 CHAPTER_NOISE_RE = re.compile(
     r"(op|end|encore|アンコール|提灯|lantern|map|subscribe|チャンネル|"
     r"関連動画|opening music|ending music|background music|precap|"
-    r"bon odori part|festival|tokyo sky tree|traditional dance)",
+    r"bon odori part|festival|tokyo sky tree|traditional dance|"
+    r"会場周辺|venue scenery|点灯式|lighting ceremonies?|"
+    r"スクランブル交差点|shibuya scramble crossing)",
     re.I,
 )
+DATED_WEEKDAY_RE = re.compile(
+    r"(20\d{2})[./年-]\s*(\d{1,2})[./月-]\s*(\d{1,2})日?"
+    r"\s*(?:[(（]?\s*)"
+    r"(月|火|水|木|金|土|日|Mon(?:day)?|Tue(?:sday)?|Wed(?:nesday)?|Thu(?:rsday)?|"
+    r"Fri(?:day)?|Sat(?:urday)?|Sun(?:day)?)"
+    r"(?:\s*[)）]?)",
+    re.I,
+)
+WEEKDAY_INDEX = {
+    "月": 0,
+    "mon": 0,
+    "monday": 0,
+    "火": 1,
+    "tue": 1,
+    "tuesday": 1,
+    "水": 2,
+    "wed": 2,
+    "wednesday": 2,
+    "木": 3,
+    "thu": 3,
+    "thursday": 3,
+    "金": 4,
+    "fri": 4,
+    "friday": 4,
+    "土": 5,
+    "sat": 5,
+    "saturday": 5,
+    "日": 6,
+    "sun": 6,
+    "sunday": 6,
+}
+WEEKDAY_LABELS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 
 
 def load_json(path, default):
@@ -123,6 +157,32 @@ def extract_chapter_songs(description):
     return rows
 
 
+def date_weekday_review_flags(*texts):
+    flags = []
+    seen = set()
+    for text in texts:
+        for match in DATED_WEEKDAY_RE.finditer(str(text or "")):
+            y, m, d, weekday = match.groups()
+            try:
+                parsed = date(int(y), int(m), int(d))
+            except ValueError:
+                continue
+            claimed_index = WEEKDAY_INDEX.get(weekday.casefold())
+            if claimed_index is None or claimed_index == parsed.weekday():
+                continue
+            key = (parsed.isoformat(), weekday.casefold())
+            if key in seen:
+                continue
+            seen.add(key)
+            flags.append({
+                "type": "weekday_mismatch",
+                "date": parsed.isoformat(),
+                "claimed_weekday": weekday,
+                "actual_weekday": WEEKDAY_LABELS[parsed.weekday()],
+            })
+    return flags
+
+
 def enriched_setlist(candidate, description_by_url):
     setlist = list(candidate.get("setlist_sample") or [])
     url = compact_url(candidate.get("url") or "")
@@ -150,6 +210,11 @@ def event_song_rows(event_candidates, description_by_url=None):
         if not setlist:
             continue
         event_date = candidate_event_date(candidate, description_by_url)
+        date_flags = date_weekday_review_flags(
+            description_by_url.get(compact_url(candidate.get("url") or "")) or "",
+            candidate.get("description_excerpt"),
+            candidate.get("title"),
+        )
         event_key = "yt-event:" + digest(
             event_date,
             candidate.get("event_name_hint") or candidate.get("title"),
@@ -175,6 +240,7 @@ def event_song_rows(event_candidates, description_by_url=None):
                 "source_published_at": candidate.get("published_at") or "",
                 "thumbnail_url": candidate.get("thumbnail_url") or "",
                 "description_excerpt": candidate.get("description_excerpt") or "",
+                "date_review_flags": date_flags,
                 "evidence_type": song.get("source") or "youtube_description",
                 "review_status": "未確認",
             })
@@ -197,6 +263,7 @@ def group_events(rows):
             "source_published_at": row["source_published_at"],
             "thumbnail_url": row["thumbnail_url"],
             "description_excerpt": row.get("description_excerpt") or "",
+            "date_review_flags": row.get("date_review_flags") or [],
             "song_count": 0,
             "songs": [],
         })

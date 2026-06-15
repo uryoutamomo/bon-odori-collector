@@ -1,13 +1,13 @@
 {
   "generated_by": "plan_youtube_event_updates.py",
-  "generated_at": "2026-06-15T04:00:54.819422+00:00",
+  "generated_at": "2026-06-15T04:10:14.562753+00:00",
   "source": "data/youtube_event_song_candidates.json",
   "public_event_source": "data/public/events_public.json",
   "candidate_count": 7,
   "counts": {
-    "append_evidence_to_existing_event": 4,
+    "append_evidence_to_existing_event": 5,
     "hold_out_of_public_scope": 1,
-    "review_new_event_candidate": 2
+    "needs_research": 1
   },
   "rows": [
     {
@@ -31,6 +31,14 @@
       "source_published_at": "2025-08-17T08:00:05Z",
       "thumbnail_url": "https://i.ytimg.com/vi/6APAt3DHhVs/maxresdefault.jpg",
       "description_excerpt": "今年も東京・新宿の歌舞伎町で「歌舞伎町BON ODORI2025」が開催されました。 この動画では2部の盆ダンス回をご紹介。 盆踊りナビゲーターは、全国各地の盆踊りをプロデュースしている鳳蝶美成さん（日本民踊 鳳蝶流）が担当、和太鼓演奏は和太鼓アイドルユニット・東京おとめ太鼓さん。 新宿の歌舞伎町ということで、海外の観光客もとても多く一つの輪になって踊っている光景はとても素晴らしかったです！ ※カメラの熱暴走により一部停止してしまったところがありました。。。 Kabukicho BON ODORI 2025” was held in Kabukicho, Shinjuku, Tokyo. This video shows the second half of the event. The second half of the event was a lot of fun, with people dancing to pop and rock songs and traditional Japanese Bon Odori Dance choreography. 2025.9.16 …",
+      "date_review_flags": [
+        {
+          "type": "weekday_mismatch",
+          "date": "2025-09-16",
+          "claimed_weekday": "Sat",
+          "actual_weekday": "Tue"
+        }
+      ],
       "matched_public_event": {
         "name": "歌舞伎町BON ODORI",
         "venue": "歌舞伎町シネシティ広場",
@@ -159,6 +167,7 @@
       "source_published_at": "2025-06-29T08:00:28Z",
       "thumbnail_url": "https://i.ytimg.com/vi/WzcxpMJuynA/maxresdefault.jpg",
       "description_excerpt": "🌈🥁Want to see more Tokyo's festival videos? 👉https://www.youtube.com/watch?v=cmW1n9M2nMg&list=PLR3ncRAlbZV5rH9aFTKLtp2WhjoeITQNI 🌈🏙️Want to see Shibuya Sky videos? 👉https://www.youtube.com/watch?v=4wlXGTAssAI&list=PLR3ncRAlbZV6DQI-XUKN0mKyR1SZcmtiD 4K/60fps footages of🤩World gathers in Oku-Asakusa!! Bon Odori with pop & trad beats!! in Taito-ku, Tokyo Japan on Saturday night, June 28th, 2025 🌞→🌙/ 28℃. Thank you for watching! I'd be very happy if you would thumbs up and subscribe to my channel!!…",
+      "date_review_flags": [],
       "matched_public_event": {
         "name": "奥浅草盆踊り",
         "venue": "隅田公園",
@@ -281,6 +290,14 @@
       "source_published_at": "2025-07-24T12:31:05Z",
       "thumbnail_url": "https://i.ytimg.com/vi/mvHqQY2ISJE/maxresdefault.jpg",
       "description_excerpt": "2025年7月21日に、自由が丘駅前で行われました、 「自由が丘納涼盆踊り大会」の様子です。 自由が丘盆踊り １東京音頭 https://youtu.be/uD2Vi2HADbY ２ホイップるん音頭 https://youtu.be/7rAwNEaBU7Y ３夜に駆ける https://youtu.be/J9OIs_LHk3Q ４自由が丘小唄 https://youtu.be/BY_GmnNAtFU ５希望の轍 https://youtu.be/BFJxknJzfDc ６やる気で音頭 https://youtu.be/vCXqCiHJLrA ７RPG https://youtu.be/-4rG0Idq1hM ８ダンシング・ヒーロー https://youtu.be/mvHqQY2ISJE ９東京音頭 https://youtu.be/-b1q7gT-i3s 10大東京音頭 https://youtu.be/aRcMQY1I_Kc 11高嶺の花子さん https://youtu.be/AMlgxeN1yE0 12炭坑節 https://youtu.be/QmtM6dBDCao 13北海…",
+      "date_review_flags": [
+        {
+          "type": "weekday_mismatch",
+          "date": "2025-07-21",
+          "claimed_weekday": "日",
+          "actual_weekday": "Mon"
+        }
+      ],
       "matched_public_event": {
         "name": "自由が丘納涼盆踊り大会",
         "venue": "自由が丘駅前ロータリー 特設会場",
@@ -345,176 +362,9 @@
       ]
     },
     {
-      "candidate_key": "yt-event:a45246f9d69985cb",
+      "candidate_key": "yt-event:afaa6dfcf53ef3f9",
       "action": "append_evidence_to_existing_event",
       "review_status": "既存候補",
-      "priority": "通常",
-      "youtube_event_name": "B’z「ultra soul」歌舞伎町での盆踊りが楽しすぎてアンコール【歌舞伎町 BON ODORI 2025】/ 新宿トー横 ウルトラソウル 鳳蝶美成 盆踊り",
-      "youtube_venue": "B’z「ultra soul」歌舞伎町での盆踊りが楽しすぎてアンコール【歌舞伎町 BON ODORI 2025】/ 新宿トー横 ウルトラソウル 鳳蝶美成 盆踊り",
-      "youtube_event_date": "2025-08-16",
-      "source_event_date": "2025-08-16",
-      "event_date_correction": null,
-      "source_video_url": "https://www.youtube.com/watch?v=m8zNQMQzgQs",
-      "source_video_title": "B’z「ultra soul」歌舞伎町での盆踊りが楽しすぎてアンコール【歌舞伎町 BON ODORI 2025】/  新宿トー横 ウルトラソウル 鳳蝶美成 盆踊り",
-      "source_channel_id": "UCWz2tM7PAFGT7xSL5OAEllg",
-      "source_channel_title": "Urban Walk",
-      "source_published_at": "2025-08-16T14:02:59Z",
-      "thumbnail_url": "https://i.ytimg.com/vi/m8zNQMQzgQs/maxresdefault.jpg",
-      "description_excerpt": "#歌舞伎町BONODRI #ウルトラソウル #トー横 #盆踊り #歌舞伎町 #鳳蝶美成 #新宿 #祭り #東京おとめ太鼓 #ultrasoul #クイーン #Queen Dance to the Pop Music at Shinjyuku Kabukicho City Square. This is the Japanese traditional dance called \"Bon Odori\" . 00:00 ultra soul ① 03:41 アンコール 04:26 ultra soul ② 開催日時：2025年8月16日(土) 17時30分 ~20時30分 開催場所：歌舞伎町 シネシティ広場 https://www.google.com/maps/place/%E3%82%B7%E3%83%8D%E3%82%B7%E3%83%86%E3%82%A3%E5%BA%83%E5%A0%B4/@35.695552,139.6987356,17z/data=!3m1!4b1!4m6!3m5!1s0x60188de6552826ed:0x992d7fbbb287dc32!8m2!3d…",
-      "matched_public_event": {
-        "name": "歌舞伎町BON ODORI",
-        "venue": "歌舞伎町シネシティ広場",
-        "date": "2025-08-16",
-        "date_end": "",
-        "area": "新宿区",
-        "score": 110,
-        "reasons": [
-          "event_name_in_youtube",
-          "venue_in_youtube"
-        ]
-      },
-      "song_count": 1,
-      "songs": [
-        {
-          "title": "ultra soul ②",
-          "number": 2,
-          "url": "https://www.youtube.com/watch?v=m8zNQMQzgQs",
-          "evidence_type": "chapter"
-        }
-      ]
-    },
-    {
-      "candidate_key": "yt-event:fcf9d1a7fb3ebfae",
-      "action": "hold_out_of_public_scope",
-      "review_status": "対象外候補",
-      "priority": "低",
-      "youtube_event_name": "「ダンシング・ヒーロー」盆踊り。はかた夏まつり2025最終日盆踊り曲「ダンシングヒーロー」盆踊り、「はいよろこんで」盆踊り。博多駅盆踊り 盆踊り2025 ダンシングヒーロー盆踊り 福岡外国人盆踊り",
-      "youtube_venue": "「ダンシング・ヒーロー」盆踊り。はかた夏まつり2025最終日盆踊り曲「ダンシングヒーロー」盆踊り、「はいよろこんで」盆踊り。博多駅盆踊り 盆踊り2025 ダンシングヒーロー盆踊り 福岡外国人盆踊り",
-      "youtube_event_date": "2025-08-17",
-      "source_event_date": "2025-08-17",
-      "event_date_correction": null,
-      "source_video_url": "https://www.youtube.com/watch?v=5joHfxKoqxQ",
-      "source_video_title": "「ダンシング・ヒーロー」盆踊り。はかた夏まつり2025最終日盆踊り曲「ダンシングヒーロー」盆踊り、「はいよろこんで」盆踊り。博多駅盆踊り　盆踊り2025 ダンシングヒーロー盆踊り　福岡外国人盆踊り",
-      "source_channel_id": "UC0ez88LLPDj2D-WgHiL5nxA",
-      "source_channel_title": "祭りが好き!",
-      "source_published_at": "2025-08-17T17:38:31Z",
-      "thumbnail_url": "https://i.ytimg.com/vi/5joHfxKoqxQ/maxresdefault.jpg",
-      "description_excerpt": "0:05 ダンシングヒーロー盆踊り 4:05 はいよろこんで盆踊り はかた夏まつり2025(hakata summer festival2025)の最終日:2025年8月17日。 はかた夏まつり2025最終日の盆踊り、総勢何千人が参加（3回の時間帯の合計）。 はかた夏まつり2025の盆踊り曲は「ダンシングヒーロー」、「はいよろこんで」です。 とくに、ダンシングヒーロー盆踊り曲、根強くん人気です。福岡スタイル振り付けの「ダンシングヒーロー」盆踊りも、みどころです。2曲目の「はいよろこんで」盆踊り、盛り上がっているところもすごい！ はかた夏まつり2025最終日には、福岡市の「 野和太鼓」の方が「盆踊り」音頭を取る。 福岡市中心地、九州の玄関口の博多駅前会場（盆踊り会場）は赤い提灯で華やかに彩られ、盆踊りのやぐらの周囲では、若者や親子連れ、ビジネスマン、インバウンド外国人観光客、留学生、そして福岡地元の方々が荻野目洋子さんの曲「ダンシング・ヒーロー」に合わせ、楽しそうに踊っていた。 最近、盆踊りの海外の反応がすごいです。日本の盆踊りに興味がある外国人、夏の間にわざわざ日本にきて盆踊りを参加…",
-      "matched_public_event": null,
-      "song_count": 2,
-      "songs": [
-        {
-          "title": "はいよろこんで",
-          "number": 2,
-          "url": "https://www.youtube.com/watch?v=5joHfxKoqxQ",
-          "evidence_type": "chapter"
-        },
-        {
-          "title": "ダンシングヒーロー",
-          "number": 1,
-          "url": "https://www.youtube.com/watch?v=5joHfxKoqxQ",
-          "evidence_type": "chapter"
-        }
-      ]
-    },
-    {
-      "candidate_key": "yt-event:0183b79414511079",
-      "action": "review_new_event_candidate",
-      "review_status": "新規候補",
-      "priority": "高",
-      "youtube_event_name": "The 6th Shibuya Bon Dance was held in Shibuya, Tokyo!",
-      "youtube_venue": "The 6th Shibuya Bon Dance was held in Shibuya, Tokyo!",
-      "youtube_event_date": "2025-08-03",
-      "source_event_date": "2025-08-03",
-      "event_date_correction": null,
-      "source_video_url": "https://www.youtube.com/watch?v=yqg-YEHbV4A",
-      "source_video_title": "[4K]🇯🇵 渋谷盆踊り 2025｜6万人超！外国人観光客も熱狂！ダンシングヒーロー｜渋谷百年総踊り 全9曲 / Japanese Bon dance in Shibuya, Tokyo. 2025",
-      "source_channel_id": "UCKCspf_NrY16rUnODmBqOWA",
-      "source_channel_title": "Tokyo Lonely Walker",
-      "source_published_at": "2025-08-05T09:01:32Z",
-      "thumbnail_url": "https://i.ytimg.com/vi/yqg-YEHbV4A/maxresdefault.jpg",
-      "description_excerpt": "東京渋谷の109前で「第6回 渋谷盆踊り」が開催されました！ 「渋谷に暮らす人と、渋谷に訪れる人の交流の場をつくる」ことを目的に、2017年にスタートした同イベントは、今年で第6回を迎え、昨年は過去最多の6万人の来場者を記録。今年も人気観光地渋谷らしく、多くの海外からの観光客で賑わいを見せました！ The 6th Shibuya Bon Dance was held in Shibuya, Tokyo! This event started in 2017 with the aim of \"creating a place for interaction between people living in and visiting Shibuya. This year was the 6th time, and last year the event recorded a record number of 60,000 visitors. This year's event was again crowded with many international visitors! 2025…",
-      "matched_public_event": null,
-      "song_count": 12,
-      "songs": [
-        {
-          "title": "会場周辺",
-          "number": 12,
-          "url": "https://www.youtube.com/watch?v=yqg-YEHbV4A",
-          "evidence_type": "chapter"
-        },
-        {
-          "title": "炭坑節",
-          "number": 11,
-          "url": "https://www.youtube.com/watch?v=yqg-YEHbV4A",
-          "evidence_type": "chapter"
-        },
-        {
-          "title": "渋谷百年総踊り",
-          "number": 10,
-          "url": "https://www.youtube.com/watch?v=yqg-YEHbV4A",
-          "evidence_type": "chapter"
-        },
-        {
-          "title": "ダンシング・ヒーロー",
-          "number": 9,
-          "url": "https://www.youtube.com/watch?v=yqg-YEHbV4A",
-          "evidence_type": "chapter"
-        },
-        {
-          "title": "河内おとこ節",
-          "number": 8,
-          "url": "https://www.youtube.com/watch?v=yqg-YEHbV4A",
-          "evidence_type": "chapter"
-        },
-        {
-          "title": "東京音頭",
-          "number": 7,
-          "url": "https://www.youtube.com/watch?v=yqg-YEHbV4A",
-          "evidence_type": "chapter"
-        },
-        {
-          "title": "大東京音頭",
-          "number": 6,
-          "url": "https://www.youtube.com/watch?v=yqg-YEHbV4A",
-          "evidence_type": "chapter"
-        },
-        {
-          "title": "夢みる渋谷音頭 YOU MAKE SHIBUYA",
-          "number": 5,
-          "url": "https://www.youtube.com/watch?v=yqg-YEHbV4A",
-          "evidence_type": "chapter"
-        },
-        {
-          "title": "オリンピック渋谷音頭",
-          "number": 4,
-          "url": "https://www.youtube.com/watch?v=yqg-YEHbV4A",
-          "evidence_type": "chapter"
-        },
-        {
-          "title": "渋谷音頭",
-          "number": 3,
-          "url": "https://www.youtube.com/watch?v=yqg-YEHbV4A",
-          "evidence_type": "chapter"
-        },
-        {
-          "title": "点灯式",
-          "number": 2,
-          "url": "https://www.youtube.com/watch?v=yqg-YEHbV4A",
-          "evidence_type": "chapter"
-        },
-        {
-          "title": "スクランブル交差点",
-          "number": 1,
-          "url": "https://www.youtube.com/watch?v=yqg-YEHbV4A",
-          "evidence_type": "chapter"
-        }
-      ]
-    },
-    {
-      "candidate_key": "yt-event:afaa6dfcf53ef3f9",
-      "action": "review_new_event_candidate",
-      "review_status": "新規候補",
       "priority": "高",
       "youtube_event_name": "【東京丸の内盆踊り2025】『丸の内音頭~東京音頭~大東京音頭~ドンパン節~炭坑節~お江戸日本橋~八木節』[1/7] 👘Tokyo Bon Dance 🏮2025.7.25 @東京駅丸の内口・行幸通り",
       "youtube_venue": "【東京丸の内盆踊り2025】『丸の内音頭~東京音頭~大東京音頭~ドンパン節~炭坑節~お江戸日本橋~八木節』[1/7] 👘Tokyo Bon Dance 🏮2025.7.25 @東京駅丸の内口・行幸通り",
@@ -528,7 +378,19 @@
       "source_published_at": "2025-07-25T17:41:46Z",
       "thumbnail_url": "https://i.ytimg.com/vi/_cggqDBTu20/maxresdefault.jpg",
       "description_excerpt": "00:00 丸の内音頭 03:47 東京音頭 06:57 大東京音頭 10:20 ドンパン節 13:45 炭坑節 17:03 お江戸日本橋 20:30 八木節 「丸の内de盆踊り2025」 ■開催：7月25日（金） 7月26日（土） ■開催場所：行幸通り ■「丸の内夏祭り2025」 in 行幸通り https://www.marunouchi.com/pickup/event/6763/ #丸の内盆踊り #盆踊り #bondance",
-      "matched_public_event": null,
+      "date_review_flags": [],
+      "matched_public_event": {
+        "name": "丸の内de盆踊り",
+        "venue": "行幸通り",
+        "date": "2025-07-25",
+        "date_end": "2025-07-26",
+        "area": "千代田区",
+        "score": 110,
+        "reasons": [
+          "event_name_in_youtube",
+          "venue_in_youtube"
+        ]
+      },
       "song_count": 7,
       "songs": [
         {
@@ -571,6 +433,165 @@
           "title": "丸の内音頭",
           "number": 1,
           "url": "https://www.youtube.com/watch?v=_cggqDBTu20",
+          "evidence_type": "chapter"
+        }
+      ]
+    },
+    {
+      "candidate_key": "yt-event:a45246f9d69985cb",
+      "action": "append_evidence_to_existing_event",
+      "review_status": "既存候補",
+      "priority": "通常",
+      "youtube_event_name": "B’z「ultra soul」歌舞伎町での盆踊りが楽しすぎてアンコール【歌舞伎町 BON ODORI 2025】/ 新宿トー横 ウルトラソウル 鳳蝶美成 盆踊り",
+      "youtube_venue": "B’z「ultra soul」歌舞伎町での盆踊りが楽しすぎてアンコール【歌舞伎町 BON ODORI 2025】/ 新宿トー横 ウルトラソウル 鳳蝶美成 盆踊り",
+      "youtube_event_date": "2025-08-16",
+      "source_event_date": "2025-08-16",
+      "event_date_correction": null,
+      "source_video_url": "https://www.youtube.com/watch?v=m8zNQMQzgQs",
+      "source_video_title": "B’z「ultra soul」歌舞伎町での盆踊りが楽しすぎてアンコール【歌舞伎町 BON ODORI 2025】/  新宿トー横 ウルトラソウル 鳳蝶美成 盆踊り",
+      "source_channel_id": "UCWz2tM7PAFGT7xSL5OAEllg",
+      "source_channel_title": "Urban Walk",
+      "source_published_at": "2025-08-16T14:02:59Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/m8zNQMQzgQs/maxresdefault.jpg",
+      "description_excerpt": "#歌舞伎町BONODRI #ウルトラソウル #トー横 #盆踊り #歌舞伎町 #鳳蝶美成 #新宿 #祭り #東京おとめ太鼓 #ultrasoul #クイーン #Queen Dance to the Pop Music at Shinjyuku Kabukicho City Square. This is the Japanese traditional dance called \"Bon Odori\" . 00:00 ultra soul ① 03:41 アンコール 04:26 ultra soul ② 開催日時：2025年8月16日(土) 17時30分 ~20時30分 開催場所：歌舞伎町 シネシティ広場 https://www.google.com/maps/place/%E3%82%B7%E3%83%8D%E3%82%B7%E3%83%86%E3%82%A3%E5%BA%83%E5%A0%B4/@35.695552,139.6987356,17z/data=!3m1!4b1!4m6!3m5!1s0x60188de6552826ed:0x992d7fbbb287dc32!8m2!3d…",
+      "date_review_flags": [],
+      "matched_public_event": {
+        "name": "歌舞伎町BON ODORI",
+        "venue": "歌舞伎町シネシティ広場",
+        "date": "2025-08-16",
+        "date_end": "",
+        "area": "新宿区",
+        "score": 110,
+        "reasons": [
+          "event_name_in_youtube",
+          "venue_in_youtube"
+        ]
+      },
+      "song_count": 1,
+      "songs": [
+        {
+          "title": "ultra soul ②",
+          "number": 2,
+          "url": "https://www.youtube.com/watch?v=m8zNQMQzgQs",
+          "evidence_type": "chapter"
+        }
+      ]
+    },
+    {
+      "candidate_key": "yt-event:fcf9d1a7fb3ebfae",
+      "action": "hold_out_of_public_scope",
+      "review_status": "対象外候補",
+      "priority": "低",
+      "youtube_event_name": "「ダンシング・ヒーロー」盆踊り。はかた夏まつり2025最終日盆踊り曲「ダンシングヒーロー」盆踊り、「はいよろこんで」盆踊り。博多駅盆踊り 盆踊り2025 ダンシングヒーロー盆踊り 福岡外国人盆踊り",
+      "youtube_venue": "「ダンシング・ヒーロー」盆踊り。はかた夏まつり2025最終日盆踊り曲「ダンシングヒーロー」盆踊り、「はいよろこんで」盆踊り。博多駅盆踊り 盆踊り2025 ダンシングヒーロー盆踊り 福岡外国人盆踊り",
+      "youtube_event_date": "2025-08-17",
+      "source_event_date": "2025-08-17",
+      "event_date_correction": null,
+      "source_video_url": "https://www.youtube.com/watch?v=5joHfxKoqxQ",
+      "source_video_title": "「ダンシング・ヒーロー」盆踊り。はかた夏まつり2025最終日盆踊り曲「ダンシングヒーロー」盆踊り、「はいよろこんで」盆踊り。博多駅盆踊り　盆踊り2025 ダンシングヒーロー盆踊り　福岡外国人盆踊り",
+      "source_channel_id": "UC0ez88LLPDj2D-WgHiL5nxA",
+      "source_channel_title": "祭りが好き!",
+      "source_published_at": "2025-08-17T17:38:31Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/5joHfxKoqxQ/maxresdefault.jpg",
+      "description_excerpt": "0:05 ダンシングヒーロー盆踊り 4:05 はいよろこんで盆踊り はかた夏まつり2025(hakata summer festival2025)の最終日:2025年8月17日。 はかた夏まつり2025最終日の盆踊り、総勢何千人が参加（3回の時間帯の合計）。 はかた夏まつり2025の盆踊り曲は「ダンシングヒーロー」、「はいよろこんで」です。 とくに、ダンシングヒーロー盆踊り曲、根強くん人気です。福岡スタイル振り付けの「ダンシングヒーロー」盆踊りも、みどころです。2曲目の「はいよろこんで」盆踊り、盛り上がっているところもすごい！ はかた夏まつり2025最終日には、福岡市の「 野和太鼓」の方が「盆踊り」音頭を取る。 福岡市中心地、九州の玄関口の博多駅前会場（盆踊り会場）は赤い提灯で華やかに彩られ、盆踊りのやぐらの周囲では、若者や親子連れ、ビジネスマン、インバウンド外国人観光客、留学生、そして福岡地元の方々が荻野目洋子さんの曲「ダンシング・ヒーロー」に合わせ、楽しそうに踊っていた。 最近、盆踊りの海外の反応がすごいです。日本の盆踊りに興味がある外国人、夏の間にわざわざ日本にきて盆踊りを参加…",
+      "date_review_flags": [],
+      "matched_public_event": null,
+      "song_count": 2,
+      "songs": [
+        {
+          "title": "はいよろこんで",
+          "number": 2,
+          "url": "https://www.youtube.com/watch?v=5joHfxKoqxQ",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "ダンシングヒーロー",
+          "number": 1,
+          "url": "https://www.youtube.com/watch?v=5joHfxKoqxQ",
+          "evidence_type": "chapter"
+        }
+      ]
+    },
+    {
+      "candidate_key": "yt-event:0183b79414511079",
+      "action": "needs_research",
+      "review_status": "要調査",
+      "priority": "高",
+      "youtube_event_name": "The 6th Shibuya Bon Dance was held in Shibuya, Tokyo!",
+      "youtube_venue": "The 6th Shibuya Bon Dance was held in Shibuya, Tokyo!",
+      "youtube_event_date": "2025-08-03",
+      "source_event_date": "2025-08-03",
+      "event_date_correction": null,
+      "source_video_url": "https://www.youtube.com/watch?v=yqg-YEHbV4A",
+      "source_video_title": "[4K]🇯🇵 渋谷盆踊り 2025｜6万人超！外国人観光客も熱狂！ダンシングヒーロー｜渋谷百年総踊り 全9曲 / Japanese Bon dance in Shibuya, Tokyo. 2025",
+      "source_channel_id": "UCKCspf_NrY16rUnODmBqOWA",
+      "source_channel_title": "Tokyo Lonely Walker",
+      "source_published_at": "2025-08-05T09:01:32Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/yqg-YEHbV4A/maxresdefault.jpg",
+      "description_excerpt": "東京渋谷の109前で「第6回 渋谷盆踊り」が開催されました！ 「渋谷に暮らす人と、渋谷に訪れる人の交流の場をつくる」ことを目的に、2017年にスタートした同イベントは、今年で第6回を迎え、昨年は過去最多の6万人の来場者を記録。今年も人気観光地渋谷らしく、多くの海外からの観光客で賑わいを見せました！ The 6th Shibuya Bon Dance was held in Shibuya, Tokyo! This event started in 2017 with the aim of \"creating a place for interaction between people living in and visiting Shibuya. This year was the 6th time, and last year the event recorded a record number of 60,000 visitors. This year's event was again crowded with many international visitors! 2025…",
+      "date_review_flags": [
+        {
+          "type": "weekday_mismatch",
+          "date": "2025-08-03",
+          "claimed_weekday": "Sat",
+          "actual_weekday": "Sun"
+        }
+      ],
+      "matched_public_event": null,
+      "song_count": 9,
+      "songs": [
+        {
+          "title": "炭坑節",
+          "number": 9,
+          "url": "https://www.youtube.com/watch?v=yqg-YEHbV4A",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "渋谷百年総踊り",
+          "number": 8,
+          "url": "https://www.youtube.com/watch?v=yqg-YEHbV4A",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "ダンシング・ヒーロー",
+          "number": 7,
+          "url": "https://www.youtube.com/watch?v=yqg-YEHbV4A",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "河内おとこ節",
+          "number": 6,
+          "url": "https://www.youtube.com/watch?v=yqg-YEHbV4A",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "東京音頭",
+          "number": 5,
+          "url": "https://www.youtube.com/watch?v=yqg-YEHbV4A",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "大東京音頭",
+          "number": 4,
+          "url": "https://www.youtube.com/watch?v=yqg-YEHbV4A",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "夢みる渋谷音頭 YOU MAKE SHIBUYA",
+          "number": 3,
+          "url": "https://www.youtube.com/watch?v=yqg-YEHbV4A",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "オリンピック渋谷音頭",
+          "number": 2,
+          "url": "https://www.youtube.com/watch?v=yqg-YEHbV4A",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "渋谷音頭",
+          "number": 1,
+          "url": "https://www.youtube.com/watch?v=yqg-YEHbV4A",
           "evidence_type": "chapter"
         }
       ]

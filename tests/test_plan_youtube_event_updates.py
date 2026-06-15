@@ -81,6 +81,35 @@ class PlanYoutubeEventUpdatesTest(unittest.TestCase):
         )
         self.assertEqual(plan["rows"][0]["action"], "hold_out_of_public_scope")
 
+    def test_holds_new_candidate_when_date_has_review_flags(self):
+        plan = build_plan(
+            {
+                "events": [
+                    {
+                        "event_key": "yt-shibuya",
+                        "event_name": "渋谷盆踊り 2025",
+                        "venue": "SHIBUYA109前",
+                        "event_date": "2025-08-03",
+                        "date_review_flags": [
+                            {
+                                "type": "weekday_mismatch",
+                                "date": "2025-08-03",
+                                "claimed_weekday": "Sat",
+                                "actual_weekday": "Sun",
+                            }
+                        ],
+                        "source_video_url": "https://www.youtube.com/watch?v=shibuya",
+                        "songs": [{"title": "渋谷音頭"}, {"title": "東京音頭"}],
+                    }
+                ]
+            },
+            [],
+        )
+
+        self.assertEqual(plan["rows"][0]["action"], "needs_research")
+        self.assertEqual(plan["rows"][0]["priority"], "高")
+        self.assertEqual(plan["rows"][0]["date_review_flags"][0]["type"], "weekday_mismatch")
+
     def test_matches_oku_asakusa_english_alias_to_existing_event(self):
         youtube = {
             "events": [
