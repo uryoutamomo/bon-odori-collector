@@ -368,10 +368,55 @@ VOICE_FEEDS = [
         "rss_url": "https://rssblog.ameba.jp/karinchanchanko/rss20.xml",
     },
 ]
+YOUTUBE_CHANNEL_REGISTRY_FILE = "data/youtube_channel_registry.json"
 
 # voices スキーマ:
 # { source, account, name, title, text, url, date (ISO8601), tags, media_urls? }
 VOICE_TEXT_MAX_CHARS = 3000
+
+
+def _load_active_youtube_registry_feeds(path=YOUTUBE_CHANNEL_REGISTRY_FILE):
+    """Load active YouTube channel RSS feeds from the registry if it exists."""
+    if not os.path.exists(path):
+        return []
+    try:
+        with open(path, encoding="utf-8") as f:
+            registry = json.load(f)
+    except Exception as e:
+        print(f"[voices] YouTubeチャンネル台帳を読めないためスキップ: {e}")
+        return []
+
+    feeds = []
+    for channel in registry.get("channels") or []:
+        if channel.get("status") != "active" or not channel.get("collection_enabled"):
+            continue
+        channel_id = channel.get("channel_id") or ""
+        rss_url = channel.get("rss_url") or (
+            f"https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}" if channel_id else ""
+        )
+        if not rss_url:
+            continue
+        feeds.append({
+            "source": "youtube",
+            "account": channel.get("account") or channel_id,
+            "name": channel.get("channel_title") or channel_id,
+            "rss_url": rss_url,
+            "channel_id": channel_id,
+        })
+    return feeds
+
+
+def _voice_feeds(path=YOUTUBE_CHANNEL_REGISTRY_FILE):
+    """Merge static feeds with active YouTube registry feeds, de-duplicated by RSS URL."""
+    feeds = []
+    seen_rss = set()
+    for feed in VOICE_FEEDS + _load_active_youtube_registry_feeds(path):
+        rss_url = feed.get("rss_url")
+        if not rss_url or rss_url in seen_rss:
+            continue
+        feeds.append(feed)
+        seen_rss.add(rss_url)
+    return feeds
 
 
 def _extract_urls(text):
@@ -439,7 +484,7 @@ def collect_voices(seen_urls: set) -> tuple[list, list]:
     new_items = []
     new_seen = list(seen_urls)
 
-    for feed_meta in VOICE_FEEDS:
+    for feed_meta in _voice_feeds():
         rss_url = feed_meta["rss_url"]
         print(f"[voices] 取得中: {feed_meta['name']} ({rss_url})")
         try:

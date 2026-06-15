@@ -1,6 +1,9 @@
+import json
+import os
+import tempfile
 import unittest
 
-from collect import VOICE_TEXT_MAX_CHARS, _parse_voice_entry
+from collect import VOICE_TEXT_MAX_CHARS, _load_active_youtube_registry_feeds, _parse_voice_entry, _voice_feeds
 
 
 class CollectVoicesTest(unittest.TestCase):
@@ -41,6 +44,73 @@ class CollectVoicesTest(unittest.TestCase):
 
         self.assertIn("https://youtu.be/aaa111", voice["media_urls"])
         self.assertIn("https://www.youtube.com/watch?v=bbb222", voice["media_urls"])
+
+    def test_load_active_youtube_registry_feeds_filters_watch_and_hold(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = os.path.join(tmp, "registry.json")
+            with open(path, "w", encoding="utf-8") as f:
+                json.dump(
+                    {
+                        "channels": [
+                            {
+                                "channel_id": "UC_ACTIVE",
+                                "channel_title": "Active Channel",
+                                "rss_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC_ACTIVE",
+                                "status": "active",
+                                "collection_enabled": True,
+                            },
+                            {
+                                "channel_id": "UC_WATCH",
+                                "channel_title": "Watch Channel",
+                                "rss_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC_WATCH",
+                                "status": "watch",
+                                "collection_enabled": False,
+                            },
+                        ]
+                    },
+                    f,
+                )
+
+            feeds = _load_active_youtube_registry_feeds(path)
+
+        self.assertEqual(len(feeds), 1)
+        self.assertEqual(feeds[0]["name"], "Active Channel")
+        self.assertEqual(feeds[0]["account"], "UC_ACTIVE")
+
+    def test_voice_feeds_deduplicates_static_youtube_rss(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = os.path.join(tmp, "registry.json")
+            with open(path, "w", encoding="utf-8") as f:
+                json.dump(
+                    {
+                        "channels": [
+                            {
+                                "channel_id": "UCNF_5e3ZvziJueTWvTPATGw",
+                                "channel_title": "和太鼓お祭りチャンネル",
+                                "rss_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCNF_5e3ZvziJueTWvTPATGw",
+                                "status": "active",
+                                "collection_enabled": True,
+                            },
+                            {
+                                "channel_id": "UC_NEW",
+                                "channel_title": "New Active",
+                                "rss_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC_NEW",
+                                "status": "active",
+                                "collection_enabled": True,
+                            },
+                        ]
+                    },
+                    f,
+                )
+
+            feeds = _voice_feeds(path)
+
+        rss_urls = [feed["rss_url"] for feed in feeds]
+        self.assertEqual(
+            rss_urls.count("https://www.youtube.com/feeds/videos.xml?channel_id=UCNF_5e3ZvziJueTWvTPATGw"),
+            1,
+        )
+        self.assertIn("https://www.youtube.com/feeds/videos.xml?channel_id=UC_NEW", rss_urls)
 
 
 if __name__ == "__main__":

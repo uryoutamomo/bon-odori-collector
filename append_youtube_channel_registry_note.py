@@ -1,0 +1,114 @@
+"""Append YouTube channel registry progress to the YouTube Notion task page."""
+
+import argparse
+import json
+import os
+import urllib.request
+from datetime import datetime, timezone
+
+from notion_config import load_local_env
+
+
+load_local_env()
+
+NOTION_API = "https://api.notion.com/v1"
+NOTION_TOKEN = os.environ.get("NOTION_API_TOKEN")
+
+YOUTUBE_TASK_PAGE_ID = "37f8be04-e762-814c-a63f-dff18fe6cf35"
+CURRENT_WORK_PLAN_BLOCK_ID = "37f8be04-e762-814a-9463-dabca26c86e0"
+YOUTUBE_TASK_PAGE_URL = "https://app.notion.com/p/YouTube-37f8be04e762814ca63fdff18fe6cf35"
+
+
+def rich_text(text):
+    return [{"type": "text", "text": {"content": str(text or "")[:2000]}}]
+
+
+def notion_request(method, path, payload=None):
+    data = json.dumps(payload or {}).encode("utf-8") if payload is not None else None
+    req = urllib.request.Request(
+        NOTION_API + path,
+        data=data,
+        method=method,
+        headers={
+            "Authorization": f"Bearer {NOTION_TOKEN}",
+            "Notion-Version": "2022-06-28",
+            "Content-Type": "application/json",
+        },
+    )
+    with urllib.request.urlopen(req, timeout=30) as response:
+        return json.loads(response.read().decode("utf-8"))
+
+
+def heading(text):
+    return {"object": "block", "type": "heading_2", "heading_2": {"rich_text": rich_text(text)}}
+
+
+def paragraph(text):
+    return {"object": "block", "type": "paragraph", "paragraph": {"rich_text": rich_text(text)}}
+
+
+def bullet(text):
+    return {
+        "object": "block",
+        "type": "bulleted_list_item",
+        "bulleted_list_item": {"rich_text": rich_text(text)},
+    }
+
+
+def update_bullet(block_id, text):
+    return notion_request("PATCH", f"/blocks/{block_id}", {"bulleted_list_item": {"rich_text": rich_text(text)}})
+
+
+def append_progress_note():
+    now = datetime.now(timezone.utc).astimezone().isoformat(timespec="seconds")
+    children = [
+        heading("YouTubeチャンネル登録台帳と収集導線"),
+        paragraph(
+            f"更新: {now} / 署名: おと（Codex）。"
+            "YouTube由来DBの既存整理を使い、チャンネル登録台帳を作成。"
+            "以後YouTube関連の作業入口はこのNotionページとして扱う。"
+        ),
+        bullet(
+            "台帳: data/youtube_channel_registry.json を追加。15件を active=4、watch=3、hold=8 に分類。"
+            "確認用に data/youtube_channel_registry.md も生成。"
+        ),
+        bullet(
+            "収集導線: collect.py が台帳の status=active かつ collection_enabled=true のYouTube RSSを読むように変更。"
+            "既存RSSと重複するチャンネルはRSS URLで重複排除する。"
+        ),
+        bullet(
+            "現在のactive収集対象: 和太鼓お祭りチャンネル、祭のきせき 盆踊り、Tokyo Lonely Walker、Urban Walk。"
+        ),
+        bullet(
+            "安全ルール: YouTube単独では新規イベントを本登録しない。サムネイルは動画証拠として扱い、会場写真として誤用しない。"
+        ),
+        bullet(f"参照入口: {YOUTUBE_TASK_PAGE_URL}"),
+    ]
+    return notion_request("PATCH", f"/blocks/{YOUTUBE_TASK_PAGE_ID}/children", {"children": children})
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--dry-run", action="store_true")
+    args = parser.parse_args()
+
+    if not NOTION_TOKEN:
+        raise SystemExit("NOTION_API_TOKEN is not set")
+
+    current_text = (
+        "YouTubeデータ活用: チャンネル登録台帳を作成し、activeチャンネルのRSS収集導線をcollect.pyへ接続済み。"
+        "今後のYouTube作業入口は「今後の課題リスト: YouTubeデータ活用」。"
+    )
+
+    if args.dry_run:
+        print(f"Would update current work block: {CURRENT_WORK_PLAN_BLOCK_ID} -> {current_text}")
+        print(f"Would append progress note to: {YOUTUBE_TASK_PAGE_ID}")
+        return
+
+    update_bullet(CURRENT_WORK_PLAN_BLOCK_ID, current_text)
+    append_progress_note()
+    print("NotionへYouTubeチャンネル登録台帳と収集導線の進捗を追記しました")
+
+
+if __name__ == "__main__":
+    main()
