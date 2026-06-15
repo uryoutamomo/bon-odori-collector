@@ -1,5 +1,6 @@
 """Create a Notion task-list page for YouTube data handling."""
 
+import argparse
 import json
 import os
 import tempfile
@@ -15,7 +16,8 @@ load_local_env()
 NOTION_API = "https://api.notion.com/v1"
 NOTION_TOKEN = os.environ.get("NOTION_API_TOKEN")
 NOTION_PAGE_ID = os.environ.get("NOTION_PAGE_ID", "")
-FALLBACK_QUERY = "盆踊りデータ統一モデル"
+DEFAULT_PARENT_PAGE_ID = "37e8be04-e762-8173-a8b8-ef41290ca5e7"
+EXPECTED_PARENT_TITLE_PART = "盆踊りデータ統一モデル"
 OUT = Path("data/youtube_notion_task_list.json")
 
 
@@ -68,18 +70,25 @@ def plain_title(obj):
     return "".join(part.get("plain_text", "") for part in obj.get("title") or [])
 
 
-def search_page_id(query):
-    data = notion_request(
-        "POST",
-        "/search",
-        {"query": query, "filter": {"property": "object", "value": "page"}, "page_size": 10},
-    )
-    results = data.get("results") or []
-    preferred = [
-        item for item in results
-        if "統一モデル" in plain_title(item) or "盆踊り" in plain_title(item)
-    ]
-    return (preferred or results or [{}])[0].get("id") or ""
+def get_page(page_id):
+    return notion_request("GET", f"/pages/{page_id}")
+
+
+def archive_page(page_id):
+    return notion_request("PATCH", f"/pages/{page_id}", {"archived": True})
+
+
+def choose_parent_page_id(explicit_parent_page_id=""):
+    parent_page_id = explicit_parent_page_id or NOTION_PAGE_ID or DEFAULT_PARENT_PAGE_ID
+    page = get_page(parent_page_id)
+    title = plain_title(page)
+    if EXPECTED_PARENT_TITLE_PART not in title:
+        raise SystemExit(
+            "Unexpected Notion parent page: "
+            f"{title} ({parent_page_id}). "
+            "Pass --parent-page-id explicitly after confirming the target."
+        )
+    return parent_page_id, title
 
 
 def create_page(parent_page_id, title):
@@ -151,12 +160,18 @@ def atomic_write_json(path, data):
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--parent-page-id", default="")
+    parser.add_argument("--archive-page-id", default="")
+    parser.add_argument("--out", default=str(OUT))
+    args = parser.parse_args()
+
     if not NOTION_TOKEN:
         raise SystemExit("NOTION_API_TOKEN is not set")
-    parent_page_id = NOTION_PAGE_ID or search_page_id(FALLBACK_QUERY)
-    if not parent_page_id:
-        raise SystemExit("Notion parent page was not found")
+    parent_page_id, parent_title = choose_parent_page_id(args.parent_page_id)
     title = "今後の課題リスト: YouTubeデータ活用"
+    if args.archive_page_id:
+        archive_page(args.archive_page_id)
     page = create_page(parent_page_id, title)
     append_blocks(page["id"], task_blocks())
     output = {
@@ -166,8 +181,10 @@ def main():
         "page_id": page["id"],
         "url": page.get("url") or "",
         "parent_page_id": parent_page_id,
+        "parent_title": parent_title,
+        "archived_old_page_id": args.archive_page_id,
     }
-    atomic_write_json(OUT, output)
+    atomic_write_json(args.out, output)
     print(f"NotionにYouTube課題リストを作成しました: {page.get('url') or page['id']}")
 
 
