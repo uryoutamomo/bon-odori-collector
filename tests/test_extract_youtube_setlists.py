@@ -190,6 +190,27 @@ class ExtractYoutubeSetlistsTest(unittest.TestCase):
         self.assertEqual(rows[0]["canonical_venue"], "山王パークタワー公開空地")
         self.assertIn("event_name_exact", rows[0]["matched_public_event"]["reasons"])
 
+    def test_infers_sanno_event_from_akasaka_hie_title(self):
+        voices = [
+            {
+                "source": "youtube",
+                "account": "@wadaikoCH",
+                "title": "「大東京音頭」 赤坂日枝神社山王祭盆踊り3 「山王音頭と民踊大会」の風景 2026年6月13日",
+                "text": "「東京音頭」での一体感あふれる盆踊り\n"
+                        "1 東京音頭 https://youtu.be/aaa\n"
+                        "2 炭坑節 https://youtu.be/bbb\n"
+                        "3 大東京音頭 https://youtu.be/ccc",
+                "url": "https://www.youtube.com/watch?v=main",
+                "date": "2026-06-13T00:00:00+00:00",
+            }
+        ]
+
+        occurrences, skipped, _ = extract_occurrences(voices, {})
+
+        self.assertEqual(skipped, [])
+        self.assertEqual(occurrences[0]["event_name_hint"], "山王音頭と民踊大会")
+        self.assertEqual(occurrences[0]["venue"], "赤坂日枝神社")
+
 
 if __name__ == "__main__":
     unittest.main()

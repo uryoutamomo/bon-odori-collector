@@ -353,12 +353,14 @@ VOICE_FEEDS = [
         "source": "youtube",
         "account": "@wadaikoCH",
         "name": "和太鼓お祭りCH",
+        "channel_id": "UCNF_5e3ZvziJueTWvTPATGw",
         "rss_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCNF_5e3ZvziJueTWvTPATGw",
     },
     {
         "source": "youtube",
         "account": "@matsuribonodori",
         "name": "祭のきせき 盆踊り",
+        "channel_id": "UCLSZK_q5ma6aeIrVRUEpkNw",
         "rss_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCLSZK_q5ma6aeIrVRUEpkNw",
     },
     {
@@ -468,6 +470,9 @@ def _parse_voice_entry(entry, feed_meta):
     }
     if media_urls:
         voice["media_urls"] = media_urls
+    if feed_meta.get("channel_id"):
+        voice["youtube_channel_id"] = feed_meta["channel_id"]
+        voice["youtube_channel_title"] = feed_meta["name"]
     return voice
 
 

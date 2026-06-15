@@ -80,6 +80,14 @@ def append_progress_note():
             "現在のactive収集対象: 和太鼓お祭りチャンネル、祭のきせき 盆踊り、Tokyo Lonely Walker、Urban Walk。"
         ),
         bullet(
+            "手動RSS取り込み: active 4チャンネルからYouTube 60件を取得。既存60件を更新し、新規43件は前回取り込み済み。"
+            "data/voices.json のYouTube voiceは242件、data/youtube_channels.json は4チャンネルに正規化済み。"
+        ),
+        bullet(
+            "曲目接続: data/youtube_setlist_occurrences.json を再生成し、9 occurrence / 201曲を抽出。"
+            "data/song_occurrences.json は10 occurrence / 206曲に更新。山王音頭と民踊大会の重複分裂は補正済み。"
+        ),
+        bullet(
             "安全ルール: YouTube単独では新規イベントを本登録しない。サムネイルは動画証拠として扱い、会場写真として誤用しない。"
         ),
         bullet(f"参照入口: {YOUTUBE_TASK_PAGE_URL}"),
@@ -97,6 +105,7 @@ def main():
 
     current_text = (
         "YouTubeデータ活用: チャンネル登録台帳を作成し、activeチャンネルのRSS収集導線をcollect.pyへ接続済み。"
+        "active 4チャンネルのRSS取り込み、setlist抽出、song occurrence更新まで完了。"
         "今後のYouTube作業入口は「今後の課題リスト: YouTubeデータ活用」。"
     )
 

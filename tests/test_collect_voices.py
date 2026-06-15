@@ -25,6 +25,24 @@ class CollectVoicesTest(unittest.TestCase):
         self.assertGreater(len(voice["text"]), 500)
         self.assertLessEqual(len(voice["text"]), VOICE_TEXT_MAX_CHARS)
 
+    def test_voice_entry_keeps_youtube_channel_id_from_feed_meta(self):
+        entry = {
+            "title": "盆踊り",
+            "link": "https://www.youtube.com/watch?v=main",
+            "summary": "東京音頭",
+        }
+        feed_meta = {
+            "source": "youtube",
+            "account": "UC123",
+            "name": "Tokyo Walk",
+            "channel_id": "UC123",
+        }
+
+        voice = _parse_voice_entry(entry, feed_meta)
+
+        self.assertEqual(voice["youtube_channel_id"], "UC123")
+        self.assertEqual(voice["youtube_channel_title"], "Tokyo Walk")
+
     def test_voice_media_urls_include_urls_from_html_description(self):
         entry = {
             "title": "荒川音頭 飛鳥山公園輪踊り 2026年5月24日 東京都北区 #盆踊り",

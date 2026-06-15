@@ -1,6 +1,6 @@
 {
   "generated_by": "promote_youtube_channel_registry.py",
-  "generated_at": "2026-06-15T05:07:37.275525+00:00",
+  "generated_at": "2026-06-15T05:18:16.524593+00:00",
   "sources": {
     "review": "data/youtube_channel_review.json",
     "analytics": "data/youtube_channels.json"
@@ -52,7 +52,18 @@
         "bon_context_video_count": 4,
         "setlist_candidate_count": 1,
         "event_date_candidate_count": 4,
-        "analytics": {}
+        "analytics": {
+          "video_count": 15,
+          "bon_odori_video_count": 8,
+          "setlist_occurrence_count": 0,
+          "setlist_song_count": 0,
+          "complete_setlist_count": 0,
+          "venue_date_success_count": 0,
+          "first_published_at": "2026-05-17T01:09:03+00:00",
+          "last_published_at": "2026-06-14T01:00:29+00:00",
+          "auto_score": 49,
+          "collection_status": "通常"
+        }
       },
       "sample_videos": [
         {
@@ -77,9 +88,9 @@
           "setlist_count": 0
         }
       ],
-      "added_at": "2026-06-15T05:07:37.275525+00:00",
+      "added_at": "2026-06-15T05:18:16.524593+00:00",
       "last_reviewed_at": "2026-06-15T04:54:28.590805+00:00",
-      "last_collected_at": null
+      "last_collected_at": "2026-06-14T01:00:29+00:00"
     },
     {
       "channel_id": "UCLSZK_q5ma6aeIrVRUEpkNw",
@@ -114,14 +125,14 @@
         "setlist_candidate_count": 0,
         "event_date_candidate_count": 8,
         "analytics": {
-          "video_count": 66,
-          "bon_odori_video_count": 64,
+          "video_count": 67,
+          "bon_odori_video_count": 65,
           "setlist_occurrence_count": 2,
           "setlist_song_count": 55,
           "complete_setlist_count": 2,
           "venue_date_success_count": 2,
           "first_published_at": "2026-05-14T01:00:15Z",
-          "last_published_at": "2026-06-06T05:00:36Z",
+          "last_published_at": "2026-06-13T09:50:00+00:00",
           "auto_score": 100,
           "collection_status": "優先"
         }
@@ -149,9 +160,9 @@
           "setlist_count": 0
         }
       ],
-      "added_at": "2026-06-15T05:07:37.275525+00:00",
+      "added_at": "2026-06-15T05:18:16.524593+00:00",
       "last_reviewed_at": "2026-06-15T04:54:28.590805+00:00",
-      "last_collected_at": "2026-06-06T05:00:36Z"
+      "last_collected_at": "2026-06-13T09:50:00+00:00"
     },
     {
       "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg",
@@ -183,7 +194,18 @@
         "bon_context_video_count": 6,
         "setlist_candidate_count": 0,
         "event_date_candidate_count": 5,
-        "analytics": {}
+        "analytics": {
+          "video_count": 15,
+          "bon_odori_video_count": 0,
+          "setlist_occurrence_count": 0,
+          "setlist_song_count": 0,
+          "complete_setlist_count": 0,
+          "venue_date_success_count": 0,
+          "first_published_at": "2026-05-27T01:36:01+00:00",
+          "last_published_at": "2026-06-14T04:16:36+00:00",
+          "auto_score": 25,
+          "collection_status": "候補"
+        }
       },
       "sample_videos": [
         {
@@ -208,9 +230,9 @@
           "setlist_count": 0
         }
       ],
-      "added_at": "2026-06-15T05:07:37.275525+00:00",
+      "added_at": "2026-06-15T05:18:16.524593+00:00",
       "last_reviewed_at": "2026-06-15T04:54:28.590805+00:00",
-      "last_collected_at": null
+      "last_collected_at": "2026-06-14T04:16:36+00:00"
     },
     {
       "channel_id": "UCNF_5e3ZvziJueTWvTPATGw",
@@ -248,14 +270,14 @@
         "setlist_candidate_count": 1,
         "event_date_candidate_count": 1,
         "analytics": {
-          "video_count": 133,
-          "bon_odori_video_count": 110,
-          "setlist_occurrence_count": 8,
-          "setlist_song_count": 154,
-          "complete_setlist_count": 8,
-          "venue_date_success_count": 7,
+          "video_count": 145,
+          "bon_odori_video_count": 120,
+          "setlist_occurrence_count": 9,
+          "setlist_song_count": 173,
+          "complete_setlist_count": 9,
+          "venue_date_success_count": 8,
           "first_published_at": "2026-05-28T10:00:07Z",
-          "last_published_at": "2026-06-13T14:00:21Z",
+          "last_published_at": "2026-06-14T18:00:26+00:00",
           "auto_score": 100,
           "collection_status": "優先"
         }
@@ -269,9 +291,9 @@
           "setlist_count": 8
         }
       ],
-      "added_at": "2026-06-15T05:07:37.275525+00:00",
+      "added_at": "2026-06-15T05:18:16.524593+00:00",
       "last_reviewed_at": "2026-06-15T04:54:28.590805+00:00",
-      "last_collected_at": "2026-06-13T14:00:21Z"
+      "last_collected_at": "2026-06-14T18:00:26+00:00"
     },
     {
       "channel_id": "UCaVANrt14S6q-if2BBOE4TQ",
@@ -322,7 +344,7 @@
           "setlist_count": 12
         }
       ],
-      "added_at": "2026-06-15T05:07:37.275525+00:00",
+      "added_at": "2026-06-15T05:18:16.524593+00:00",
       "last_reviewed_at": "2026-06-15T04:54:28.590805+00:00",
       "last_collected_at": null
     },
@@ -375,7 +397,7 @@
           "setlist_count": 0
         }
       ],
-      "added_at": "2026-06-15T05:07:37.275525+00:00",
+      "added_at": "2026-06-15T05:18:16.524593+00:00",
       "last_reviewed_at": "2026-06-15T04:54:28.590805+00:00",
       "last_collected_at": null
     },
@@ -424,7 +446,7 @@
           "setlist_count": 6
         }
       ],
-      "added_at": "2026-06-15T05:07:37.275525+00:00",
+      "added_at": "2026-06-15T05:18:16.524593+00:00",
       "last_reviewed_at": "2026-06-15T04:54:28.590805+00:00",
       "last_collected_at": null
     },
@@ -479,7 +501,7 @@
           "setlist_count": 2
         }
       ],
-      "added_at": "2026-06-15T05:07:37.275525+00:00",
+      "added_at": "2026-06-15T05:18:16.524593+00:00",
       "last_reviewed_at": "2026-06-15T04:54:28.590805+00:00",
       "last_collected_at": null
     },
@@ -529,7 +551,7 @@
           "setlist_count": 0
         }
       ],
-      "added_at": "2026-06-15T05:07:37.275525+00:00",
+      "added_at": "2026-06-15T05:18:16.524593+00:00",
       "last_reviewed_at": "2026-06-15T04:54:28.590805+00:00",
       "last_collected_at": null
     },
@@ -574,7 +596,7 @@
           "setlist_count": 0
         }
       ],
-      "added_at": "2026-06-15T05:07:37.275525+00:00",
+      "added_at": "2026-06-15T05:18:16.524593+00:00",
       "last_reviewed_at": "2026-06-15T04:54:28.590805+00:00",
       "last_collected_at": null
     },
@@ -617,7 +639,7 @@
           "setlist_count": 0
         }
       ],
-      "added_at": "2026-06-15T05:07:37.275525+00:00",
+      "added_at": "2026-06-15T05:18:16.524593+00:00",
       "last_reviewed_at": "2026-06-15T04:54:28.590805+00:00",
       "last_collected_at": null
     },
@@ -660,7 +682,7 @@
           "setlist_count": 0
         }
       ],
-      "added_at": "2026-06-15T05:07:37.275525+00:00",
+      "added_at": "2026-06-15T05:18:16.524593+00:00",
       "last_reviewed_at": "2026-06-15T04:54:28.590805+00:00",
       "last_collected_at": null
     },
@@ -703,7 +725,7 @@
           "setlist_count": 0
         }
       ],
-      "added_at": "2026-06-15T05:07:37.275525+00:00",
+      "added_at": "2026-06-15T05:18:16.524593+00:00",
       "last_reviewed_at": "2026-06-15T04:54:28.590805+00:00",
       "last_collected_at": null
     },
@@ -746,7 +768,7 @@
           "setlist_count": 0
         }
       ],
-      "added_at": "2026-06-15T05:07:37.275525+00:00",
+      "added_at": "2026-06-15T05:18:16.524593+00:00",
       "last_reviewed_at": "2026-06-15T04:54:28.590805+00:00",
       "last_collected_at": null
     },
@@ -789,7 +811,7 @@
           "setlist_count": 0
         }
       ],
-      "added_at": "2026-06-15T05:07:37.275525+00:00",
+      "added_at": "2026-06-15T05:18:16.524593+00:00",
       "last_reviewed_at": "2026-06-15T04:54:28.590805+00:00",
       "last_collected_at": null
     }

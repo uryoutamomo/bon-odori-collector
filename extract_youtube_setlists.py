@@ -156,9 +156,10 @@ def infer_event_and_venue(voice, review_map):
     event_name = text_label or title_prefix or normalize_text(voice.get("title") or "")
     venue = ""
 
-    if "【赤坂日枝神社】" in (voice.get("title") or "") or "日枝神社" in event_name:
+    title = voice.get("title") or ""
+    if "赤坂日枝神社" in title or "日枝神社" in event_name:
         venue = "赤坂日枝神社"
-        if "山王音頭と民踊大会" in (voice.get("title") or ""):
+        if "山王音頭と民踊大会" in title:
             event_name = "山王音頭と民踊大会"
     elif "飛鳥山公園" in event_name or "飛鳥山公園" in (voice.get("title") or ""):
         venue = "飛鳥山公園"

@@ -1,13 +1,13 @@
 {
   "generated_by": "extract_youtube_setlists.py",
-  "generated_at": "2026-06-14T09:20:20.744530+00:00",
+  "generated_at": "2026-06-15T05:18:10.205392+00:00",
   "source": "data/voices.json",
   "review_hint_source": "data/youtube_song_candidates_review.json",
   "public_event_match_source": "data/public/events_public.json",
-  "youtube_voice_count": 199,
+  "youtube_voice_count": 242,
   "occurrence_count": 9,
   "matched_public_event_count": 2,
-  "setlist_song_count": 195,
+  "setlist_song_count": 201,
   "occurrences": [
     {
       "occurrence_key": "df5ed425972aa1f4",
@@ -2081,7 +2081,7 @@
           "account": "@matsuribonodori",
           "title": "09 よこはまアラメヤ音頭（２部） 　横浜開港祭 BON ODORI　20260601",
           "published_at": "2026-06-04T21:00:06+00:00",
-          "thumbnail_url": "https://i.ytimg.com/vi/1AcTzW10J_M/maxresdefault.jpg",
+          "thumbnail_url": "",
           "text_length": 972,
           "media_url_count": 22
         },
@@ -2090,7 +2090,7 @@
           "account": "@matsuribonodori",
           "title": "10 野毛山節 　横浜開港祭 BON ODORI　20260601",
           "published_at": "2026-06-04T22:00:10+00:00",
-          "thumbnail_url": "https://i.ytimg.com/vi/x6O3vvhiXMQ/maxresdefault.jpg",
+          "thumbnail_url": "",
           "text_length": 972,
           "media_url_count": 22
         },
@@ -2099,7 +2099,7 @@
           "account": "@matsuribonodori",
           "title": "11 浜っ娘音頭 　横浜開港祭 BON ODORI　20260601",
           "published_at": "2026-06-04T23:00:32+00:00",
-          "thumbnail_url": "https://i.ytimg.com/vi/s62LF02VMxE/maxresdefault.jpg",
+          "thumbnail_url": "",
           "text_length": 972,
           "media_url_count": 22
         },
@@ -2126,7 +2126,7 @@
           "account": "@matsuribonodori",
           "title": "12 夏色 　横浜開港祭 BON ODORI　20260601",
           "published_at": "2026-06-05T00:00:35+00:00",
-          "thumbnail_url": "https://i.ytimg.com/vi/vLM3jcYUl7k/maxresdefault.jpg",
+          "thumbnail_url": "",
           "text_length": 972,
           "media_url_count": 22
         },
@@ -2144,7 +2144,7 @@
           "account": "@matsuribonodori",
           "title": "13 YMCA 　横浜開港祭 BON ODORI　20260601",
           "published_at": "2026-06-05T01:00:26+00:00",
-          "thumbnail_url": "https://i.ytimg.com/vi/byFyWmWVg7g/maxresdefault.jpg",
+          "thumbnail_url": "",
           "text_length": 972,
           "media_url_count": 22
         },
@@ -2153,7 +2153,7 @@
           "account": "@matsuribonodori",
           "title": "14 炎と森のカーニバル 　横浜開港祭 BON ODORI　20260601",
           "published_at": "2026-06-05T02:00:01+00:00",
-          "thumbnail_url": "https://i.ytimg.com/vi/Yt9OXm1M9bE/maxresdefault.jpg",
+          "thumbnail_url": "",
           "text_length": 972,
           "media_url_count": 22
         },
@@ -2171,7 +2171,7 @@
           "account": "@matsuribonodori",
           "title": "15 ダンシングヒーロー 　横浜開港祭 BON ODORI　20260601",
           "published_at": "2026-06-05T03:00:13+00:00",
-          "thumbnail_url": "https://i.ytimg.com/vi/P1JViv3w9xc/maxresdefault.jpg",
+          "thumbnail_url": "",
           "text_length": 972,
           "media_url_count": 22
         },
@@ -2198,7 +2198,7 @@
           "account": "@matsuribonodori",
           "title": "16 EZ DO DANCE 　横浜開港祭 BON ODORI　20260601",
           "published_at": "2026-06-05T04:00:37+00:00",
-          "thumbnail_url": "https://i.ytimg.com/vi/9guti4r23aI/maxresdefault.jpg",
+          "thumbnail_url": "",
           "text_length": 972,
           "media_url_count": 22
         },
@@ -2207,7 +2207,7 @@
           "account": "@matsuribonodori",
           "title": "17 野毛山節   DJ帝 mix 　横浜開港祭 BON ODORI　20260601",
           "published_at": "2026-06-05T15:00:22+00:00",
-          "thumbnail_url": "https://i.ytimg.com/vi/QcUh2syTVpw/maxresdefault.jpg",
+          "thumbnail_url": "",
           "text_length": 972,
           "media_url_count": 22
         },
@@ -2216,7 +2216,7 @@
           "account": "@matsuribonodori",
           "title": "18 浜っ娘音頭 　横浜開港祭 BON ODORI　20260601",
           "published_at": "2026-06-05T16:00:17+00:00",
-          "thumbnail_url": "https://i.ytimg.com/vi/lKIFoe8NgvA/maxresdefault.jpg",
+          "thumbnail_url": "",
           "text_length": 972,
           "media_url_count": 22
         },
@@ -2225,7 +2225,7 @@
           "account": "@matsuribonodori",
           "title": "19 Septmber 　横浜開港祭 BON ODORI　20260601",
           "published_at": "2026-06-05T17:00:32+00:00",
-          "thumbnail_url": "https://i.ytimg.com/vi/zYYzOZUEcGU/maxresdefault.jpg",
+          "thumbnail_url": "",
           "text_length": 972,
           "media_url_count": 22
         },
@@ -2234,7 +2234,7 @@
           "account": "@matsuribonodori",
           "title": "20 希望の轍 　横浜開港祭 BON ODORI　20260601",
           "published_at": "2026-06-05T18:00:23+00:00",
-          "thumbnail_url": "https://i.ytimg.com/vi/stvVBO2W0CI/maxresdefault.jpg",
+          "thumbnail_url": "",
           "text_length": 972,
           "media_url_count": 22
         },
@@ -2243,7 +2243,7 @@
           "account": "@matsuribonodori",
           "title": "21 ダンシングヒーロー 　横浜開港祭 BON ODORI　20260601",
           "published_at": "2026-06-05T19:00:09+00:00",
-          "thumbnail_url": "https://i.ytimg.com/vi/e_rYMmfRaVE/maxresdefault.jpg",
+          "thumbnail_url": "",
           "text_length": 972,
           "media_url_count": 22
         },
@@ -2252,7 +2252,7 @@
           "account": "@matsuribonodori",
           "title": "22 よこはまアラメヤ音頭（３部） 　横浜開港祭 BON ODORI　20260601",
           "published_at": "2026-06-05T20:00:36+00:00",
-          "thumbnail_url": "https://i.ytimg.com/vi/_XvxNzDV7Ew/maxresdefault.jpg",
+          "thumbnail_url": "",
           "text_length": 972,
           "media_url_count": 22
         },
@@ -2412,6 +2412,36 @@
           "number": 6,
           "title": "少年八木節",
           "url": "https://www.youtube.com/watch?v=WjBGN8Kr4ok"
+        },
+        {
+          "number": 7,
+          "title": "さくら音頭",
+          "url": "https://www.youtube.com/watch?v=qI6wTT2sKp4"
+        },
+        {
+          "number": 8,
+          "title": "東京音頭",
+          "url": "https://www.youtube.com/watch?v=QoJv6qRK3Rc"
+        },
+        {
+          "number": 9,
+          "title": "恋をするなら",
+          "url": "https://www.youtube.com/watch?v=XvfSZWDjoK8"
+        },
+        {
+          "number": 10,
+          "title": "らんまん踊り",
+          "url": "https://www.youtube.com/watch?v=FKYS1i-mdOg"
+        },
+        {
+          "number": 11,
+          "title": "バハマママ",
+          "url": "https://www.youtube.com/watch?v=TFYZjl-HhAA"
+        },
+        {
+          "number": 12,
+          "title": "終 TOKIO",
+          "url": "https://www.youtube.com/watch?v=YokaxJIeOHs"
         }
       ],
       "source_videos": [
@@ -2459,10 +2489,19 @@
           "thumbnail_url": "https://i.ytimg.com/vi/xPfRkZRO5xE/maxresdefault.jpg",
           "text_length": 405,
           "media_url_count": 6
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=WjBGN8Kr4ok",
+          "account": "@wadaikoCH",
+          "title": "【少年八木節】　国立旭通りジューンフェスタ盆踊り６　2026年6月7日",
+          "published_at": "2026-06-14T00:00:34+00:00",
+          "thumbnail_url": "",
+          "text_length": 627,
+          "media_url_count": 12
         }
       ],
-      "source_video_count": 5,
-      "song_count": 6,
+      "source_video_count": 6,
+      "song_count": 12,
       "confidence": "high",
       "role": "result",
       "act": "observe",
@@ -2551,7 +2590,7 @@
           "account": "@wadaikoCH",
           "title": "【速報】東京音頭　【赤坂日枝神社】　山王祭盆踊り１　「山王音頭と民踊大会」の風景　2026年6月13日",
           "published_at": "2026-06-13T04:30:52+00:00",
-          "thumbnail_url": "https://i.ytimg.com/vi/-H-T164L3QM/maxresdefault.jpg",
+          "thumbnail_url": "",
           "text_length": 439,
           "media_url_count": 2
         },
@@ -2560,12 +2599,93 @@
           "account": "@wadaikoCH",
           "title": "炭坑節　【赤坂日枝神社】 山王祭 盆踊り２　「山王音頭と民踊大会」の風景　2026年6月13日",
           "published_at": "2026-06-13T05:00:21+00:00",
-          "thumbnail_url": "https://i.ytimg.com/vi/hDckpEGkzTI/maxresdefault.jpg",
+          "thumbnail_url": "",
+          "text_length": 879,
+          "media_url_count": 15
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=qd96HMCNCm8",
+          "account": "@wadaikoCH",
+          "title": "「大東京音頭」　赤坂日枝神社山王祭盆踊り３　「山王音頭と民踊大会」の風景　2026年6月13日",
+          "published_at": "2026-06-13T20:35:09+00:00",
+          "thumbnail_url": "",
+          "text_length": 879,
+          "media_url_count": 15
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=7f5Yuf3N9Aw",
+          "account": "@wadaikoCH",
+          "title": "ドンパン節　赤坂日枝神社山王祭盆踊り４　「山王音頭と民踊大会」の風景　2026年6月13日",
+          "published_at": "2026-06-13T21:00:04+00:00",
+          "thumbnail_url": "",
+          "text_length": 879,
+          "media_url_count": 15
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=0y41AkjQLzI",
+          "account": "@wadaikoCH",
+          "title": "白浜音頭　【赤坂日枝神社】山王祭盆踊り５　「山王音頭と民踊大会」の風景　2026年6月13日",
+          "published_at": "2026-06-13T22:00:03+00:00",
+          "thumbnail_url": "",
+          "text_length": 879,
+          "media_url_count": 15
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=U7S3ppeF_YU",
+          "account": "@wadaikoCH",
+          "title": "八木節　【赤坂日枝神社】山王祭盆踊り６　「山王音頭と民踊大会」の風景　2026年6月13日",
+          "published_at": "2026-06-13T23:00:08+00:00",
+          "thumbnail_url": "",
+          "text_length": 879,
+          "media_url_count": 15
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=LhM7yggtrZ0",
+          "account": "@wadaikoCH",
+          "title": "【花笠音頭】（金沢明子）　【赤坂日枝神社】山王祭盆踊り７　「山王音頭と民踊大会」の風景　2026年6月13日",
+          "published_at": "2026-06-14T01:00:06+00:00",
+          "thumbnail_url": "",
+          "text_length": 879,
+          "media_url_count": 15
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Kolply49UG4",
+          "account": "@wadaikoCH",
+          "title": "おこさ節　【赤坂日枝神社】山王祭盆踊り８　「山王音頭と民踊大会」の風景　2026年6月13日",
+          "published_at": "2026-06-14T01:30:24+00:00",
+          "thumbnail_url": "",
+          "text_length": 879,
+          "media_url_count": 15
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=2gfhUtwHOKA",
+          "account": "@wadaikoCH",
+          "title": "相馬甚句　【赤坂日枝神社】山王祭盆踊り９　「山王音頭と民踊大会」の風景　2026年6月13日",
+          "published_at": "2026-06-14T02:00:16+00:00",
+          "thumbnail_url": "",
+          "text_length": 879,
+          "media_url_count": 15
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=fjrQwtowLI8",
+          "account": "@wadaikoCH",
+          "title": "東京おどり　【赤坂日枝神社】山王祭盆踊り10　「山王音頭と民踊大会」の風景　2026年6月13日",
+          "published_at": "2026-06-14T15:00:19+00:00",
+          "thumbnail_url": "",
+          "text_length": 879,
+          "media_url_count": 15
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=OhhRnGn9PGw",
+          "account": "@wadaikoCH",
+          "title": "山王音頭　【赤坂日枝神社】山王祭盆踊り11　「山王音頭と民踊大会」の風景　2026年6月13日",
+          "published_at": "2026-06-14T18:00:26+00:00",
+          "thumbnail_url": "",
           "text_length": 879,
           "media_url_count": 15
         }
       ],
-      "source_video_count": 2,
+      "source_video_count": 11,
       "song_count": 13,
       "confidence": "high",
       "role": "result",
@@ -2587,163 +2707,163 @@
       "canonical_venue": "山王パークタワー公開空地"
     }
   ],
-  "skipped_count": 45,
+  "skipped_count": 78,
   "skipped_samples": [
     {
-      "url": "https://www.youtube.com/watch?v=4ttmSOvY5ys",
-      "title": "鳥越神社「鳥越まつり」（宵宮清祓式）　2026年6月5日",
+      "url": "https://www.youtube.com/watch?v=EQGF-Zpk7zo",
+      "title": "【4K】矢先稲荷神社大祭 本社神輿が街をゆく 2026年6月14日",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=eSqPmd-LUKM",
+      "title": "【4K】鳶が大神輿に乗って誘導！！！　隅田川神社　例大祭（8年ぶりの本社大神輿渡御）ダイジェスト　2026年6月14日",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=VmouD0eIXsg",
+      "title": "盆踊りシーズン開幕！山王音頭と民踊大会 【 日枝神社 山王祭 】後半",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=84q8qeG029A",
+      "title": "盆踊り開幕！赤坂日枝神社 山王祭 盆踊り｜サザン｜東京音頭｜炭坑節｜山王音頭｜八木節 他 / Traditional Japanese Bon Dance at Hie Shrine. [4K]🇯🇵",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=_WhO6Kh08sE",
+      "title": "盆踊りシーズン開幕！日枝神社 山王祭 盆踊り｜東京音頭 2026年 初日 / Dancing the traditional Japanese Tokyo Ondo. [4K]🇯🇵",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/shorts/mDNrK_VLaiM",
+      "title": "映画『Michael／マイケル』公開記念イベント！記念展示が素敵！東京ミッドタウン日比谷",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=y6Yd44m5UNo",
+      "title": "大量のピカチュウが踊りまくる！可愛い！Pokemon GO Fest 2026 TOKYO ダンスステージ -EDM- ポケモン / Pikachu Dance Stage [4K]🇯🇵",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=lqrTdZyCEhE",
+      "title": "必見のオタクの舞！ ヲタ芸！fripSide - only my railgun｜肉フェス2026 A-POP RAVE powered by ANTHEM AKIBA  [4K]🇯🇵",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=iB0H6DCDbDY",
+      "title": "[4K]🇯🇵 横浜開港祭 盆踊り ダンシングヒーロー ｜サザン｜よこはまアラメヤ音頭│セカオワ│野毛山節  他 2026.6.1 / Japanese Bon dance in Yokohama.",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZU2e0H9XXvc",
+      "title": "サザン盆踊りで盛り上がる！希望の轍丨横浜開港祭2026 サザンオールスターズ / Bon Odori at the Yokohama Port Festival 2026. [4K]🇯🇵",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=RKXEbu8M7lg",
+      "title": "盆踊り｜ゆず - 夏色 横浜開港祭2026 / Bon Odori at the Yokohama Port Festival 2026. [4K]🇯🇵",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=4VDWvK5tmnI",
+      "title": "ダンシング・ヒーローで盆踊り 横浜開港祭2026 みなとみらい / Bon Odori at the Yokohama Port Festival 2026. [4K]",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ICpHigFP0Ko",
+      "title": "盆踊り｜ピカチュウ大集合で可愛すぎる！ピカチュウ音頭 in GO Fest｜ Pokémon GO Fest TOKYO 2026｜Pikachu Ondo｜ポケモン 東京 [4K]🇯🇵",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/shorts/2bBJfuvAf-o",
+      "title": "嵐-Love so sweetでヲタ芸!! 誰もに愛される嵐!!ありがとう!! │肉フェス2026│DJ: パルム",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=LKtnhKEMYUo",
+      "title": "[4K]🇯🇵 もはやカオス！撮影スポット化したスクランブル交差点！人気観光地 海外観光客 2026年5月 / Shibuya, Tokyo—a popular tourist destination!",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZVLZdHg6b7E",
+      "title": "[4K]🇯🇵 目黒蓮 Snow Man 午後の紅茶 2026年 日本一長い交通広告 124m 代々木八幡駅 めめ / Longest traffic ad in Japan. Tokyo.",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=1eE2kqu8om8",
+      "title": "[4K]🇯🇵 渋谷 目黒蓮 佐久間大介 Snow Man 午後の紅茶 メルカリ 巨大広告 めめ / Giant billboard in front of Shibuya station.",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Jfm2HZ7P_F0",
+      "title": "[4K]🇯🇵 第29回 渋谷・鹿児島おはら祭 渋谷の街で踊りまくる！2026 / Japanese Dancing in the streets of Shibuya, Tokyo, Japan.",
+      "reason": "no_numbered_setlist"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=NF-PnEv5Gao",
+      "title": "【4K】「オワリはじまり」- 前川真悟(かりゆし58 / O-ROOTS) ライブ 【下町ハイボールフェス】  上野",
       "reason": "not_bon_odori_setlist"
     },
     {
-      "url": "https://www.youtube.com/watch?v=EMEIulBg5Gw",
-      "title": "日枝神社 山王祭 神幸祭 （日本橋日枝神社～）神幸行列ダイジェスト　2026年6月12日【4K高画質】",
+      "url": "https://www.youtube.com/watch?v=A6seMX5giYI",
+      "title": "【4K】「アンマー」- 前川真悟(かりゆし58 / O-ROOTS) ライブ 【下町ハイボールフェス】お母さん  上野",
       "reason": "not_bon_odori_setlist"
     },
     {
-      "url": "https://www.youtube.com/watch?v=GSrWdM0aK2g",
-      "title": "【速報】江戸三大祭り！日枝神社 山王祭 神幸祭 （麹町～国立劇場～皇居外苑）神幸行列ダイジェスト　2026年6月12日【4K高画質】",
-      "reason": "not_bon_odori_setlist"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=y_yyiQWuVZw",
-      "title": "【4K】三社祭　西浅草八幡神社大祭　本社神輿渡御　2026年5月17日",
+      "url": "https://www.youtube.com/watch?v=p30XofgX9AU",
+      "title": "【東京ドーム】NiziU 「Live with U 2026 \"NiziU : THE CINEMA\"」1日目開演前の様子 / コンサート ニジュー Tokyo Dome",
       "reason": "no_numbered_setlist"
     },
     {
-      "url": "https://www.youtube.com/watch?v=QczIzSgsYoQ",
-      "title": "鳥越神社「鳥越まつり」　町会神輿連合渡御（宵宮）　2026年6月6日",
-      "reason": "not_bon_odori_setlist"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=VUIW-8QYr_8",
-      "title": "【圧巻の神輿振り】素盞雄神社（すさのおじんじゃ）「天王祭」本まつり（御神幸祭）の熱狂！　2026年6月6日",
+      "url": "https://www.youtube.com/watch?v=pXMgH6VFg3E",
+      "title": "【4K】 DIAMANTES ライブ【沖縄めんそーれフェスタ 2026】「片手に三線を / 勝利のうた / VIVA!! 夏の色」  池袋サンシャイン ディアマンテス",
       "reason": "no_numbered_setlist"
     },
     {
-      "url": "https://www.youtube.com/watch?v=UmVKYyzDSz0",
-      "title": "【4K】一触即発！本社神輿宮入りダイジェスト　鳥越神社「鳥越まつり」　　2026年6月7日",
-      "reason": "not_bon_odori_setlist"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=3rbyNCXgEAM",
-      "title": "喧嘩勃発！警察制止…鳥越神社「鳥越まつり」本社神輿渡御の衝撃映像 2026.6.7",
-      "reason": "not_bon_odori_setlist"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=-ZW3dlU0P-I",
-      "title": "五條天神社例大祭２　本社神輿宮入り道中・木遣り　2026年5月26日　千貫神輿　宮神輿",
-      "reason": "not_bon_odori_setlist"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=6wnxsIU3VoA",
-      "title": "【速報】鳥越神社「鳥越まつり」　本社神輿渡御ダイジェスト　2026年6月7日　東京一の重さを誇る千貫神輿の迫力！　 #鳥越まつり #鳥越神社 #千貫神輿 #神輿 #お祭り #日本の祭り",
-      "reason": "not_bon_odori_setlist"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=x1O5-Z27lOk",
-      "title": "五條天神社例大祭１　本社神輿渡御　2026年5月26日　千貫神輿",
-      "reason": "not_bon_odori_setlist"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=2z-GofkFX8s",
-      "title": "【速報】迫力満点！素戔雄神社天王祭 本社神輿の「神輿振り」が凄すぎる　2026年6月6日",
+      "url": "https://www.youtube.com/watch?v=lxYmETpLFlA",
+      "title": "【4K】「ハピネス」- AI ライブ【Tokyo Pride 2026】東京プライドレインボープライド  ai ストーリー",
       "reason": "no_numbered_setlist"
     },
     {
-      "url": "https://www.youtube.com/watch?v=6WjbWgdU4L4",
-      "title": "44 繁昌節　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531",
+      "url": "https://www.youtube.com/watch?v=9Z9En-TCxcE",
+      "title": "【4K】「Story」- AI ライブ【Tokyo Pride 2026】東京プライドレインボープライド  ai ストーリー",
       "reason": "no_numbered_setlist"
     },
     {
-      "url": "https://www.youtube.com/watch?v=5wy5lHoqj9w",
-      "title": "43 むぎわら音頭　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531",
+      "url": "https://www.youtube.com/watch?v=rZ8ynlD9evI",
+      "title": "【4K】「ハイビスカス」- D-51 ライブ【OKINAWA FES Milafete 2026】   代々木公園 沖縄フェス オールウェイズ",
       "reason": "no_numbered_setlist"
     },
     {
-      "url": "https://www.youtube.com/watch?v=f3rafNm0rZE",
-      "title": "42 堀江盆歌　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531",
+      "url": "https://www.youtube.com/watch?v=3zEQln0JpJ4",
+      "title": "【4K】キヨサク (MONGOL800) UKULELE GYPSY ライブ 全9曲「小さな恋のうた」【OKINAWA FES Milafete 2026】 ライブ  代々木公園 沖縄フェス モンパチ",
       "reason": "no_numbered_setlist"
     },
     {
-      "url": "https://www.youtube.com/watch?v=2Rq-qBXsynw",
-      "title": "41 こまづくり唄　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531",
+      "url": "https://www.youtube.com/watch?v=77a1JUrixDE",
+      "title": "【東京ドーム】嵐 ラストライブツアー ファイナル ”開演後も人絶えず!”「ARASHI LIVE TOUR 2026 「We are ARASHI」」コンサート ARASHI Tokyo Dome",
       "reason": "no_numbered_setlist"
     },
     {
-      "url": "https://www.youtube.com/watch?v=rNHkhQxMoVM",
-      "title": "40 よこはまアラメヤ音頭　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531",
+      "url": "https://www.youtube.com/watch?v=pPruYuxnGTU",
+      "title": "【東京ドーム】嵐 ラストライブツアー ファイナル 開演前の様子「ARASHI LIVE TOUR 2026 「We are ARASHI」」コンサート 物販 グッツ ARASHI Tokyo Dome",
       "reason": "no_numbered_setlist"
     },
     {
-      "url": "https://www.youtube.com/watch?v=Uohu7rIJ6jk",
-      "title": "39 河内音頭　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531",
+      "url": "https://www.youtube.com/watch?v=BOrlLQ16oyU",
+      "title": "【4K】「琉神マブヤー ～魂の戦士～」- DIAMANTES (アルベルト城間) ライブ【沖縄めんそーれフェスタ 2026】特撮「琉神マブヤー」テーマソング  池袋サンシャイン ディアマンテス",
       "reason": "no_numbered_setlist"
     },
     {
-      "url": "https://www.youtube.com/watch?v=Ilz6hDp8QbA",
-      "title": "38 さくら音頭　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531",
-      "reason": "no_numbered_setlist"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=gC6JYrumFII",
-      "title": "37 佐渡おけさ　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531",
-      "reason": "no_numbered_setlist"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=W__u03aJ0rs",
-      "title": "36 ドダレバチ　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531",
-      "reason": "no_numbered_setlist"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=etABTMcQCCs",
-      "title": "35 黒石じょんがら　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531",
-      "reason": "no_numbered_setlist"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=ROUIXWrtjj8",
-      "title": "34 黒石甚句　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531",
-      "reason": "no_numbered_setlist"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=-qGMkGZJ6zA",
-      "title": "33 黒石よされ　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531",
-      "reason": "no_numbered_setlist"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=0pVYOUkQKU0",
-      "title": "32 鰺ヶ沢甚句　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531",
-      "reason": "no_numbered_setlist"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=O1RcEwDPIoU",
-      "title": "31 虎じょ様　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531",
-      "reason": "no_numbered_setlist"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=aNwGl78I7ic",
-      "title": "30 八戸小限　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531",
-      "reason": "no_numbered_setlist"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=3Jyp2LG1NJ0",
-      "title": "28 江州音頭　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531",
-      "reason": "no_numbered_setlist"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=aUo0c79bPhI",
-      "title": "27 Beat it盆踊り　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531",
-      "reason": "no_numbered_setlist"
-    },
-    {
-      "url": "https://www.youtube.com/watch?v=iDSSkftykFI",
-      "title": "26 紀州白浜音頭　盆踊り　MIN-YOI'S（ミンヨイズ）@日本民謡会館　20260531",
+      "url": "https://www.youtube.com/watch?v=iEsemDoQqBY",
+      "title": "東京丸の内でお昼休みに「綱引き大会 !!」 企業対抗 優勝チームは現役明治大学ラグビー部と頂上決戦!!【大手町・丸の内・有楽町 仲通り綱引き大会2026】決勝",
       "reason": "no_numbered_setlist"
     }
   ],
   "backfill_options": {
-    "current_youtube_voice_count": 199,
-    "voices_at_or_below_500_chars": 33,
-    "voices_without_media_urls": 4,
+    "current_youtube_voice_count": 242,
+    "voices_at_or_below_500_chars": 48,
+    "voices_without_media_urls": 7,
     "options": [
       {
         "method": "youtube_data_api_videos_list",
