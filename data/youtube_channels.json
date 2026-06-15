@@ -1,11 +1,11 @@
 {
   "generated_by": "build_youtube_channels.py",
-  "generated_at": "2026-06-15T06:55:30.362021+00:00",
+  "generated_at": "2026-06-15T06:59:07.417496+00:00",
   "source": "data/voices.json",
   "setlist_source": "data/youtube_setlist_occurrences.json",
-  "channel_count": 6,
+  "channel_count": 7,
   "priority_channel_count": 2,
-  "youtube_voice_count": 273,
+  "youtube_voice_count": 288,
   "channels": [
     {
       "channel_key": "UCNF_5e3ZvziJueTWvTPATGw",
@@ -300,6 +300,75 @@
         "youtube動画15本",
         "盆踊り文脈8本",
         "説明欄リンクあり15本"
+      ]
+    },
+    {
+      "channel_key": "UCSHoRoW171uEytgOcKkKU2Q",
+      "channel_id": "UCSHoRoW171uEytgOcKkKU2Q",
+      "channel_title": "Exploring Japan with Zen",
+      "channel_url": "https://www.youtube.com/channel/UCSHoRoW171uEytgOcKkKU2Q",
+      "accounts": [
+        "UCSHoRoW171uEytgOcKkKU2Q"
+      ],
+      "feed_names": [
+        "Exploring Japan with Zen"
+      ],
+      "representative_thumbnail_url": "",
+      "video_count": 15,
+      "bon_odori_video_count": 14,
+      "text_gt_500_count": 4,
+      "media_url_video_count": 4,
+      "setlist_occurrence_count": 0,
+      "setlist_song_count": 0,
+      "complete_setlist_count": 0,
+      "venue_date_success_count": 0,
+      "first_published_at": "2025-07-23T21:31:17+00:00",
+      "last_published_at": "2025-08-10T19:35:17+00:00",
+      "sample_videos": [
+        {
+          "url": "https://www.youtube.com/shorts/Ccx04lQCgUY",
+          "video_id": "",
+          "title": "Shibuya Bon Dance 2025, Cheerleader Show   渋谷盆踊り 2025 チアリーダー、フラダンスなど　#shorts",
+          "published_at": "2025-08-10T19:35:17+00:00",
+          "thumbnail_url": ""
+        },
+        {
+          "url": "https://www.youtube.com/shorts/NU9Ed2ypoR4",
+          "video_id": "",
+          "title": "Shibuya Bon Dance 2025, Great Tokyo Ondo 2    渋谷盆踊り 2025 大東京音頭-2    #shorts",
+          "published_at": "2025-08-08T23:28:42+00:00",
+          "thumbnail_url": ""
+        },
+        {
+          "url": "https://www.youtube.com/shorts/BY7he8CsGwk",
+          "video_id": "",
+          "title": "Shibuya Bon Dance 2025, Great Tokyo Ondo 1   渋谷盆踊り 2025 大東京音頭-1   #shorts",
+          "published_at": "2025-08-07T14:58:29+00:00",
+          "thumbnail_url": ""
+        },
+        {
+          "url": "https://www.youtube.com/shorts/tmgiQ18cXvY",
+          "video_id": "",
+          "title": "Shibuya Bon Dance 2025, You Make Shibuya    渋谷盆踊り 2025 夢みる渋谷　#shorts",
+          "published_at": "2025-08-06T20:32:38+00:00",
+          "thumbnail_url": ""
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=CTA9El6Hmfg",
+          "video_id": "CTA9El6Hmfg",
+          "title": "Shibuya Bon Odori Dance festival 2025  /  渋谷 盆踊り 2025",
+          "published_at": "2025-08-03T22:38:15+00:00",
+          "thumbnail_url": ""
+        }
+      ],
+      "events": [],
+      "source": "existing_voices",
+      "auto_score": 43,
+      "collection_status": "通常",
+      "score_reasons": [
+        "youtube動画15本",
+        "盆踊り文脈14本",
+        "説明欄リンクあり4本"
       ]
     },
     {

@@ -1,0 +1,2455 @@
+{
+  "generated_by": "build_youtube_active_video_review.py",
+  "generated_at": "2026-06-15T07:01:50.565925+00:00",
+  "sources": {
+    "voices": "data/voices.json",
+    "registry": "data/youtube_channel_registry.json",
+    "public_events": "data/public/events_public.json",
+    "youtube_setlists": "data/youtube_setlist_occurrences.json"
+  },
+  "max_per_channel": 15,
+  "video_count": 105,
+  "counts": {
+    "append_existing_event": 17,
+    "needs_official_confirmation": 6,
+    "review_video_evidence": 10,
+    "out_of_scope": 18,
+    "ignore": 54
+  },
+  "rows": [
+    {
+      "video_id": "_WhO6Kh08sE",
+      "video_url": "https://www.youtube.com/watch?v=_WhO6Kh08sE",
+      "source_url": "https://www.youtube.com/watch?v=_WhO6Kh08sE",
+      "title": "盆踊りシーズン開幕！日枝神社 山王祭 盆踊り｜東京音頭 2026年 初日 / Dancing the traditional Japanese Tokyo Ondo. [4K]🇯🇵",
+      "channel_id": "UCKCspf_NrY16rUnODmBqOWA",
+      "channel_title": "Tokyo Lonely Walker",
+      "published_at": "2026-06-13T16:00:34+00:00",
+      "detected_event_date": "2026-06-13",
+      "has_bon_context": true,
+      "official_urls": [
+        "https://goo.gl/maps/kSAEbnkyHSchcccY6",
+        "https://maps.app.goo.gl/BbkXn5qwcQ1PM7aQ9",
+        "https://x.com/walkingfilmlove"
+      ],
+      "matched_public_event": {
+        "name": "山王音頭と民踊大会",
+        "venue": "山王パークタワー公開空地",
+        "date": "2026-06-13",
+        "date_end": "2026-06-15",
+        "area": "千代田区",
+        "score": 110,
+        "reasons": [
+          "event_name_in_youtube",
+          "venue_in_youtube"
+        ]
+      },
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "盆踊りシーズンの幕開けとなる日枝神社 山王祭「山王音頭と民踊大会」（納涼大会）が溜池山王駅前の山王パークタワー公開空地で開催されました。今年も交代制で行われ、計3時間盛り上がりつつ初日の幕を開けました！この動画では先行して東京音頭をご紹介します。\n6月14日（日）、15日（月）も開催が予定されいるので興味のある方はぜひ会場へ！！\n\nThe Hie Shrine Sanno Festival’s “Sanno Ondo and Folk Dance Competition” (",
+      "action": "append_existing_event",
+      "priority": "high"
+    },
+    {
+      "video_id": "84q8qeG029A",
+      "video_url": "https://www.youtube.com/watch?v=84q8qeG029A",
+      "source_url": "https://www.youtube.com/watch?v=84q8qeG029A",
+      "title": "盆踊り開幕！赤坂日枝神社 山王祭 盆踊り｜サザン｜東京音頭｜炭坑節｜山王音頭｜八木節 他 / Traditional Japanese Bon Dance at Hie Shrine. [4K]🇯🇵",
+      "channel_id": "UCKCspf_NrY16rUnODmBqOWA",
+      "channel_title": "Tokyo Lonely Walker",
+      "published_at": "2026-06-14T01:00:29+00:00",
+      "detected_event_date": "2026-06-13",
+      "has_bon_context": true,
+      "official_urls": [
+        "https://goo.gl/maps/kSAEbnkyHSchcccY6",
+        "https://maps.app.goo.gl/BbkXn5qwcQ1PM7aQ9",
+        "https://x.com/walkingfilmlove"
+      ],
+      "matched_public_event": {
+        "name": "山王音頭と民踊大会",
+        "venue": "山王パークタワー公開空地",
+        "date": "2026-06-13",
+        "date_end": "2026-06-15",
+        "area": "千代田区",
+        "score": 110,
+        "reasons": [
+          "event_name_in_youtube",
+          "venue_in_youtube"
+        ]
+      },
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "盆踊りシーズンの幕開けとなる赤坂日枝神社 山王祭「山王音頭と民踊大会」（納涼大会）が溜池山王駅前の山王パークタワー公開空地で開催されました。今年も交代制で行われ、計3時間盛り上がりつつ初日の幕を開けました！\n\nThe Hie Shrine Sanno Festival’s “Sanno Ondo and Folk Dance Competition” (Summer Festival), which marks the start of the Bon Odori seaso",
+      "action": "append_existing_event",
+      "priority": "high"
+    },
+    {
+      "video_id": "MJlUhvLyCAE",
+      "video_url": "https://www.youtube.com/watch?v=MJlUhvLyCAE",
+      "source_url": "https://www.youtube.com/watch?v=MJlUhvLyCAE",
+      "title": "赤坂・日枝神社⛩山王祭「太鼓演奏🥁加賀豊年太鼓 ＆ 鵜浦豊年太鼓」Japanese Drum 2026.6.15 @山王パークタワー公開空地",
+      "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ",
+      "channel_title": "shu channel",
+      "published_at": "2026-06-14T07:31:20+00:00",
+      "detected_event_date": "2026-06-15",
+      "has_bon_context": true,
+      "official_urls": [
+        "https://www.tenkamatsuri.jp/minyo/"
+      ],
+      "matched_public_event": {
+        "name": "山王音頭と民踊大会",
+        "venue": "山王パークタワー公開空地",
+        "date": "2026-06-13",
+        "date_end": "2026-06-15",
+        "area": "千代田区",
+        "score": 110,
+        "reasons": [
+          "event_name_in_youtube",
+          "venue_in_youtube"
+        ]
+      },
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "00:00 MC\n01:43 加賀豊年太鼓\n20:02 鵜浦豊年太鼓\n\n太鼓演奏：加賀豊年太鼓＆鵜浦豊年太鼓\n「山王音頭と民踊大会」（納涼大会）\n■日程：6月14日(土)～6月15日(日)　午後6時\n■場所：〒100-0014\n　　　東京都千代田区永田町2－10－5\n　　　山王パークタワー公開空地\n■山王祭 公式サイト\nhttps://www.tenkamatsuri.jp/minyo/\n■チャンネル内関連動画\nhttps://youtu.be/FyU9uwN3LyE\n\n#山",
+      "action": "append_existing_event",
+      "priority": "high"
+    },
+    {
+      "video_id": "-H-T164L3QM",
+      "video_url": "https://www.youtube.com/watch?v=-H-T164L3QM",
+      "source_url": "https://www.youtube.com/watch?v=-H-T164L3QM",
+      "title": "【速報】東京音頭　【赤坂日枝神社】　山王祭盆踊り１　「山王音頭と民踊大会」の風景　2026年6月13日",
+      "channel_id": "UCNF_5e3ZvziJueTWvTPATGw",
+      "channel_title": "和太鼓お祭りCH",
+      "published_at": "2026-06-13T04:30:52+00:00",
+      "detected_event_date": "2026-06-13",
+      "has_bon_context": true,
+      "official_urls": [],
+      "matched_public_event": {
+        "name": "山王音頭と民踊大会",
+        "venue": "山王パークタワー公開空地",
+        "date": "2026-06-13",
+        "date_end": "2026-06-15",
+        "area": "千代田区",
+        "score": 75,
+        "reasons": [
+          "event_name_in_youtube"
+        ]
+      },
+      "setlist_occurrences": [
+        {
+          "occurrence_key": "512602130c654f9b",
+          "event_name": "山王音頭と民踊大会",
+          "venue": "山王パークタワー公開空地",
+          "event_date": "2026-06-13",
+          "song_count": 13,
+          "confidence": "high"
+        }
+      ],
+      "out_of_scope": false,
+      "description_excerpt": "江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\nこの動画では、誰もが知る名曲「東京音頭」に合わせて、\n多くの踊り手が一体となって盛り上がる盆踊り初日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n202",
+      "action": "append_existing_event",
+      "priority": "high"
+    },
+    {
+      "video_id": "hDckpEGkzTI",
+      "video_url": "https://www.youtube.com/watch?v=hDckpEGkzTI",
+      "source_url": "https://www.youtube.com/watch?v=hDckpEGkzTI",
+      "title": "炭坑節　【赤坂日枝神社】 山王祭 盆踊り２　「山王音頭と民踊大会」の風景　2026年6月13日",
+      "channel_id": "UCNF_5e3ZvziJueTWvTPATGw",
+      "channel_title": "和太鼓お祭りCH",
+      "published_at": "2026-06-13T05:00:21+00:00",
+      "detected_event_date": "2026-06-13",
+      "has_bon_context": true,
+      "official_urls": [],
+      "matched_public_event": {
+        "name": "山王音頭と民踊大会",
+        "venue": "山王パークタワー公開空地",
+        "date": "2026-06-13",
+        "date_end": "2026-06-15",
+        "area": "千代田区",
+        "score": 75,
+        "reasons": [
+          "event_name_in_youtube"
+        ]
+      },
+      "setlist_occurrences": [
+        {
+          "occurrence_key": "512602130c654f9b",
+          "event_name": "山王音頭と民踊大会",
+          "venue": "山王パークタワー公開空地",
+          "event_date": "2026-06-13",
+          "song_count": 13,
+          "confidence": "high"
+        }
+      ],
+      "out_of_scope": false,
+      "description_excerpt": "江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り初日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭 初日の熱気\n\n今後も各地のお祭りや太鼓の",
+      "action": "append_existing_event",
+      "priority": "high"
+    },
+    {
+      "video_id": "qd96HMCNCm8",
+      "video_url": "https://www.youtube.com/watch?v=qd96HMCNCm8",
+      "source_url": "https://www.youtube.com/watch?v=qd96HMCNCm8",
+      "title": "「大東京音頭」　赤坂日枝神社山王祭盆踊り３　「山王音頭と民踊大会」の風景　2026年6月13日",
+      "channel_id": "UCNF_5e3ZvziJueTWvTPATGw",
+      "channel_title": "和太鼓お祭りCH",
+      "published_at": "2026-06-13T20:35:09+00:00",
+      "detected_event_date": "2026-06-13",
+      "has_bon_context": true,
+      "official_urls": [],
+      "matched_public_event": {
+        "name": "山王音頭と民踊大会",
+        "venue": "山王パークタワー公開空地",
+        "date": "2026-06-13",
+        "date_end": "2026-06-15",
+        "area": "千代田区",
+        "score": 75,
+        "reasons": [
+          "event_name_in_youtube"
+        ]
+      },
+      "setlist_occurrences": [
+        {
+          "occurrence_key": "512602130c654f9b",
+          "event_name": "山王音頭と民踊大会",
+          "venue": "山王パークタワー公開空地",
+          "event_date": "2026-06-13",
+          "song_count": 13,
+          "confidence": "high"
+        }
+      ],
+      "out_of_scope": false,
+      "description_excerpt": "江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り初日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭 初日の熱気\n\n今後も各地のお祭りや太鼓の",
+      "action": "append_existing_event",
+      "priority": "high"
+    },
+    {
+      "video_id": "7f5Yuf3N9Aw",
+      "video_url": "https://www.youtube.com/watch?v=7f5Yuf3N9Aw",
+      "source_url": "https://www.youtube.com/watch?v=7f5Yuf3N9Aw",
+      "title": "ドンパン節　赤坂日枝神社山王祭盆踊り４　「山王音頭と民踊大会」の風景　2026年6月13日",
+      "channel_id": "UCNF_5e3ZvziJueTWvTPATGw",
+      "channel_title": "和太鼓お祭りCH",
+      "published_at": "2026-06-13T21:00:04+00:00",
+      "detected_event_date": "2026-06-13",
+      "has_bon_context": true,
+      "official_urls": [],
+      "matched_public_event": {
+        "name": "山王音頭と民踊大会",
+        "venue": "山王パークタワー公開空地",
+        "date": "2026-06-13",
+        "date_end": "2026-06-15",
+        "area": "千代田区",
+        "score": 75,
+        "reasons": [
+          "event_name_in_youtube"
+        ]
+      },
+      "setlist_occurrences": [
+        {
+          "occurrence_key": "512602130c654f9b",
+          "event_name": "山王音頭と民踊大会",
+          "venue": "山王パークタワー公開空地",
+          "event_date": "2026-06-13",
+          "song_count": 13,
+          "confidence": "high"
+        }
+      ],
+      "out_of_scope": false,
+      "description_excerpt": "江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り初日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭 初日の熱気\n\n今後も各地のお祭りや太鼓の",
+      "action": "append_existing_event",
+      "priority": "high"
+    },
+    {
+      "video_id": "0y41AkjQLzI",
+      "video_url": "https://www.youtube.com/watch?v=0y41AkjQLzI",
+      "source_url": "https://www.youtube.com/watch?v=0y41AkjQLzI",
+      "title": "白浜音頭　【赤坂日枝神社】山王祭盆踊り５　「山王音頭と民踊大会」の風景　2026年6月13日",
+      "channel_id": "UCNF_5e3ZvziJueTWvTPATGw",
+      "channel_title": "和太鼓お祭りCH",
+      "published_at": "2026-06-13T22:00:03+00:00",
+      "detected_event_date": "2026-06-13",
+      "has_bon_context": true,
+      "official_urls": [],
+      "matched_public_event": {
+        "name": "山王音頭と民踊大会",
+        "venue": "山王パークタワー公開空地",
+        "date": "2026-06-13",
+        "date_end": "2026-06-15",
+        "area": "千代田区",
+        "score": 75,
+        "reasons": [
+          "event_name_in_youtube"
+        ]
+      },
+      "setlist_occurrences": [
+        {
+          "occurrence_key": "512602130c654f9b",
+          "event_name": "山王音頭と民踊大会",
+          "venue": "山王パークタワー公開空地",
+          "event_date": "2026-06-13",
+          "song_count": 13,
+          "confidence": "high"
+        }
+      ],
+      "out_of_scope": false,
+      "description_excerpt": "江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り初日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭 初日の熱気\n\n今後も各地のお祭りや太鼓の",
+      "action": "append_existing_event",
+      "priority": "high"
+    },
+    {
+      "video_id": "U7S3ppeF_YU",
+      "video_url": "https://www.youtube.com/watch?v=U7S3ppeF_YU",
+      "source_url": "https://www.youtube.com/watch?v=U7S3ppeF_YU",
+      "title": "八木節　【赤坂日枝神社】山王祭盆踊り６　「山王音頭と民踊大会」の風景　2026年6月13日",
+      "channel_id": "UCNF_5e3ZvziJueTWvTPATGw",
+      "channel_title": "和太鼓お祭りCH",
+      "published_at": "2026-06-13T23:00:08+00:00",
+      "detected_event_date": "2026-06-13",
+      "has_bon_context": true,
+      "official_urls": [],
+      "matched_public_event": {
+        "name": "山王音頭と民踊大会",
+        "venue": "山王パークタワー公開空地",
+        "date": "2026-06-13",
+        "date_end": "2026-06-15",
+        "area": "千代田区",
+        "score": 75,
+        "reasons": [
+          "event_name_in_youtube"
+        ]
+      },
+      "setlist_occurrences": [
+        {
+          "occurrence_key": "512602130c654f9b",
+          "event_name": "山王音頭と民踊大会",
+          "venue": "山王パークタワー公開空地",
+          "event_date": "2026-06-13",
+          "song_count": 13,
+          "confidence": "high"
+        }
+      ],
+      "out_of_scope": false,
+      "description_excerpt": "江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り初日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭 初日の熱気\n\n今後も各地のお祭りや太鼓の",
+      "action": "append_existing_event",
+      "priority": "high"
+    },
+    {
+      "video_id": "WjBGN8Kr4ok",
+      "video_url": "https://www.youtube.com/watch?v=WjBGN8Kr4ok",
+      "source_url": "https://www.youtube.com/watch?v=WjBGN8Kr4ok",
+      "title": "【少年八木節】　国立旭通りジューンフェスタ盆踊り６　2026年6月7日",
+      "channel_id": "UCNF_5e3ZvziJueTWvTPATGw",
+      "channel_title": "和太鼓お祭りCH",
+      "published_at": "2026-06-14T00:00:34+00:00",
+      "detected_event_date": "2026-06-07",
+      "has_bon_context": true,
+      "official_urls": [],
+      "matched_public_event": null,
+      "setlist_occurrences": [
+        {
+          "occurrence_key": "370e7eb76465ada1",
+          "event_name": "国立旭通りジューンフェスタ盆踊り",
+          "venue": "国立旭通り",
+          "event_date": "2026-06-07",
+          "song_count": 12,
+          "confidence": "high"
+        }
+      ],
+      "out_of_scope": false,
+      "description_excerpt": "2026年6月7日、東京都国立市の旭通りで開催された「ジューンフェスタ」盆踊りの様子をお届けします。\n\n新緑の美しい旭通りが歩行者天国となり、活気あふれる初夏の盆踊りが繰り広げられました。 地元の皆さんの息の合った踊りと、通りに響き渡る太鼓の音色。6月という早い時期に盆踊りが楽しめる、国立ならではの活気あるイベントの空気感をぜひお楽しみください！\n\n\n\n国立ジューンフェスタ盆踊り\n１炭坑節　https://youtu.be/KvBfA5BHX8U\n２国立音頭　https://",
+      "action": "append_existing_event",
+      "priority": "high"
+    },
+    {
+      "video_id": "LhM7yggtrZ0",
+      "video_url": "https://www.youtube.com/watch?v=LhM7yggtrZ0",
+      "source_url": "https://www.youtube.com/watch?v=LhM7yggtrZ0",
+      "title": "【花笠音頭】（金沢明子）　【赤坂日枝神社】山王祭盆踊り７　「山王音頭と民踊大会」の風景　2026年6月13日",
+      "channel_id": "UCNF_5e3ZvziJueTWvTPATGw",
+      "channel_title": "和太鼓お祭りCH",
+      "published_at": "2026-06-14T01:00:06+00:00",
+      "detected_event_date": "2026-06-13",
+      "has_bon_context": true,
+      "official_urls": [],
+      "matched_public_event": {
+        "name": "山王音頭と民踊大会",
+        "venue": "山王パークタワー公開空地",
+        "date": "2026-06-13",
+        "date_end": "2026-06-15",
+        "area": "千代田区",
+        "score": 75,
+        "reasons": [
+          "event_name_in_youtube"
+        ]
+      },
+      "setlist_occurrences": [
+        {
+          "occurrence_key": "512602130c654f9b",
+          "event_name": "山王音頭と民踊大会",
+          "venue": "山王パークタワー公開空地",
+          "event_date": "2026-06-13",
+          "song_count": 13,
+          "confidence": "high"
+        }
+      ],
+      "out_of_scope": false,
+      "description_excerpt": "江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り初日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭 初日の熱気\n\n今後も各地のお祭りや太鼓の",
+      "action": "append_existing_event",
+      "priority": "high"
+    },
+    {
+      "video_id": "Kolply49UG4",
+      "video_url": "https://www.youtube.com/watch?v=Kolply49UG4",
+      "source_url": "https://www.youtube.com/watch?v=Kolply49UG4",
+      "title": "おこさ節　【赤坂日枝神社】山王祭盆踊り８　「山王音頭と民踊大会」の風景　2026年6月13日",
+      "channel_id": "UCNF_5e3ZvziJueTWvTPATGw",
+      "channel_title": "和太鼓お祭りCH",
+      "published_at": "2026-06-14T01:30:24+00:00",
+      "detected_event_date": "2026-06-13",
+      "has_bon_context": true,
+      "official_urls": [],
+      "matched_public_event": {
+        "name": "山王音頭と民踊大会",
+        "venue": "山王パークタワー公開空地",
+        "date": "2026-06-13",
+        "date_end": "2026-06-15",
+        "area": "千代田区",
+        "score": 75,
+        "reasons": [
+          "event_name_in_youtube"
+        ]
+      },
+      "setlist_occurrences": [
+        {
+          "occurrence_key": "512602130c654f9b",
+          "event_name": "山王音頭と民踊大会",
+          "venue": "山王パークタワー公開空地",
+          "event_date": "2026-06-13",
+          "song_count": 13,
+          "confidence": "high"
+        }
+      ],
+      "out_of_scope": false,
+      "description_excerpt": "江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り初日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭 初日の熱気\n\n今後も各地のお祭りや太鼓の",
+      "action": "append_existing_event",
+      "priority": "high"
+    },
+    {
+      "video_id": "2gfhUtwHOKA",
+      "video_url": "https://www.youtube.com/watch?v=2gfhUtwHOKA",
+      "source_url": "https://www.youtube.com/watch?v=2gfhUtwHOKA",
+      "title": "相馬甚句　【赤坂日枝神社】山王祭盆踊り９　「山王音頭と民踊大会」の風景　2026年6月13日",
+      "channel_id": "UCNF_5e3ZvziJueTWvTPATGw",
+      "channel_title": "和太鼓お祭りCH",
+      "published_at": "2026-06-14T02:00:16+00:00",
+      "detected_event_date": "2026-06-13",
+      "has_bon_context": true,
+      "official_urls": [],
+      "matched_public_event": {
+        "name": "山王音頭と民踊大会",
+        "venue": "山王パークタワー公開空地",
+        "date": "2026-06-13",
+        "date_end": "2026-06-15",
+        "area": "千代田区",
+        "score": 75,
+        "reasons": [
+          "event_name_in_youtube"
+        ]
+      },
+      "setlist_occurrences": [
+        {
+          "occurrence_key": "512602130c654f9b",
+          "event_name": "山王音頭と民踊大会",
+          "venue": "山王パークタワー公開空地",
+          "event_date": "2026-06-13",
+          "song_count": 13,
+          "confidence": "high"
+        }
+      ],
+      "out_of_scope": false,
+      "description_excerpt": "江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り初日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭 初日の熱気\n\n今後も各地のお祭りや太鼓の",
+      "action": "append_existing_event",
+      "priority": "high"
+    },
+    {
+      "video_id": "fjrQwtowLI8",
+      "video_url": "https://www.youtube.com/watch?v=fjrQwtowLI8",
+      "source_url": "https://www.youtube.com/watch?v=fjrQwtowLI8",
+      "title": "東京おどり　【赤坂日枝神社】山王祭盆踊り10　「山王音頭と民踊大会」の風景　2026年6月13日",
+      "channel_id": "UCNF_5e3ZvziJueTWvTPATGw",
+      "channel_title": "和太鼓お祭りCH",
+      "published_at": "2026-06-14T15:00:19+00:00",
+      "detected_event_date": "2026-06-13",
+      "has_bon_context": true,
+      "official_urls": [],
+      "matched_public_event": {
+        "name": "山王音頭と民踊大会",
+        "venue": "山王パークタワー公開空地",
+        "date": "2026-06-13",
+        "date_end": "2026-06-15",
+        "area": "千代田区",
+        "score": 75,
+        "reasons": [
+          "event_name_in_youtube"
+        ]
+      },
+      "setlist_occurrences": [
+        {
+          "occurrence_key": "512602130c654f9b",
+          "event_name": "山王音頭と民踊大会",
+          "venue": "山王パークタワー公開空地",
+          "event_date": "2026-06-13",
+          "song_count": 13,
+          "confidence": "high"
+        }
+      ],
+      "out_of_scope": false,
+      "description_excerpt": "江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り初日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭 初日の熱気\n\n今後も各地のお祭りや太鼓の",
+      "action": "append_existing_event",
+      "priority": "high"
+    },
+    {
+      "video_id": "OhhRnGn9PGw",
+      "video_url": "https://www.youtube.com/watch?v=OhhRnGn9PGw",
+      "source_url": "https://www.youtube.com/watch?v=OhhRnGn9PGw",
+      "title": "山王音頭　【赤坂日枝神社】山王祭盆踊り11　「山王音頭と民踊大会」の風景　2026年6月13日",
+      "channel_id": "UCNF_5e3ZvziJueTWvTPATGw",
+      "channel_title": "和太鼓お祭りCH",
+      "published_at": "2026-06-14T18:00:26+00:00",
+      "detected_event_date": "2026-06-13",
+      "has_bon_context": true,
+      "official_urls": [],
+      "matched_public_event": {
+        "name": "山王音頭と民踊大会",
+        "venue": "山王パークタワー公開空地",
+        "date": "2026-06-13",
+        "date_end": "2026-06-15",
+        "area": "千代田区",
+        "score": 75,
+        "reasons": [
+          "event_name_in_youtube"
+        ]
+      },
+      "setlist_occurrences": [
+        {
+          "occurrence_key": "512602130c654f9b",
+          "event_name": "山王音頭と民踊大会",
+          "venue": "山王パークタワー公開空地",
+          "event_date": "2026-06-13",
+          "song_count": 13,
+          "confidence": "high"
+        }
+      ],
+      "out_of_scope": false,
+      "description_excerpt": "江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り初日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭 初日の熱気\n\n今後も各地のお祭りや太鼓の",
+      "action": "append_existing_event",
+      "priority": "high"
+    },
+    {
+      "video_id": "GE_F7-n85Xo",
+      "video_url": "https://www.youtube.com/watch?v=GE_F7-n85Xo",
+      "source_url": "https://www.youtube.com/watch?v=GE_F7-n85Xo",
+      "title": "千代田おどり　【赤坂日枝神社】山王祭盆踊り12　「山王音頭と民踊大会」の風景　2026年6月13日",
+      "channel_id": "UCNF_5e3ZvziJueTWvTPATGw",
+      "channel_title": "和太鼓お祭りCH",
+      "published_at": "2026-06-14T21:00:30+00:00",
+      "detected_event_date": "2026-06-13",
+      "has_bon_context": true,
+      "official_urls": [],
+      "matched_public_event": {
+        "name": "山王音頭と民踊大会",
+        "venue": "山王パークタワー公開空地",
+        "date": "2026-06-13",
+        "date_end": "2026-06-15",
+        "area": "千代田区",
+        "score": 75,
+        "reasons": [
+          "event_name_in_youtube"
+        ]
+      },
+      "setlist_occurrences": [
+        {
+          "occurrence_key": "512602130c654f9b",
+          "event_name": "山王音頭と民踊大会",
+          "venue": "山王パークタワー公開空地",
+          "event_date": "2026-06-13",
+          "song_count": 13,
+          "confidence": "high"
+        }
+      ],
+      "out_of_scope": false,
+      "description_excerpt": "江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り初日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭 初日の熱気\n\n今後も各地のお祭りや太鼓の",
+      "action": "append_existing_event",
+      "priority": "high"
+    },
+    {
+      "video_id": "VmouD0eIXsg",
+      "video_url": "https://www.youtube.com/watch?v=VmouD0eIXsg",
+      "source_url": "https://www.youtube.com/watch?v=VmouD0eIXsg",
+      "title": "盆踊りシーズン開幕！山王音頭と民踊大会 【 日枝神社 山王祭 】後半",
+      "channel_id": "UCLSZK_q5ma6aeIrVRUEpkNw",
+      "channel_title": "祭のきせき 盆踊り",
+      "published_at": "2026-06-13T09:50:00+00:00",
+      "detected_event_date": "2026-06-14",
+      "has_bon_context": true,
+      "official_urls": [],
+      "matched_public_event": {
+        "name": "山王音頭と民踊大会",
+        "venue": "山王パークタワー公開空地",
+        "date": "2026-06-13",
+        "date_end": "2026-06-15",
+        "area": "千代田区",
+        "score": 75,
+        "reasons": [
+          "event_name_in_youtube"
+        ]
+      },
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "山王音頭と民踊大会（納涼大会）日枝神社 山王祭 　2026年6月14日（土）\n\n恋をするなら 橋幸夫 日枝神社 盆踊り\nhttps://youtu.be/yX1TFlogSTc\n\n0:00　相馬甚句\n3:48　相馬甚句\n12:00　東京おどり\n15:46　東京おどり\n19:40　山王音頭\n23:10　山王音頭\n27:24　千代田おどり\n30:48　千代田おどり\n37:58　水戸黄門おどり\n42:53　水戸黄門おどり\n48:35　東京音頭\n51:51　東京音頭\n55:10　炭坑",
+      "action": "append_existing_event",
+      "priority": "high"
+    },
+    {
+      "video_id": "seY6P_Ngq4E",
+      "video_url": "https://www.youtube.com/watch?v=seY6P_Ngq4E",
+      "source_url": "https://www.youtube.com/watch?v=seY6P_Ngq4E",
+      "title": "Marunouchi Bon Odori Dance festival PART 1  /  丸の内盆踊り 2025 パート１",
+      "channel_id": "UCSHoRoW171uEytgOcKkKU2Q",
+      "channel_title": "Exploring Japan with Zen",
+      "published_at": "2025-07-27T02:38:40+00:00",
+      "detected_event_date": "2025-07-26",
+      "has_bon_context": true,
+      "official_urls": [
+        "https://www.marunouchi.com/pickup/event/6763/",
+        "https://www.instagram.com/expjapanzen/",
+        "https://www.ebay.com/usr/exploringjapanzen"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "This video shows the Bon Odori dance that took place in Marunouchi, right in front of Tokyo Station, on July 26th, 2025.\nIt records the first part, which took place from 6pm to 7pm.\n\nこのビデオは、2025年7月26日、東京・丸の内で行われた盆踊りです。\n18時〜19時に行われた第一部を収録してい",
+      "action": "needs_official_confirmation",
+      "priority": "high"
+    },
+    {
+      "video_id": "wsnxABvy3BM",
+      "video_url": "https://www.youtube.com/watch?v=wsnxABvy3BM",
+      "source_url": "https://www.youtube.com/watch?v=wsnxABvy3BM",
+      "title": "Marunouchi Bon Odori Dance festival PART 2  /  丸の内盆踊り 2025 パート2",
+      "channel_id": "UCSHoRoW171uEytgOcKkKU2Q",
+      "channel_title": "Exploring Japan with Zen",
+      "published_at": "2025-07-31T01:32:27+00:00",
+      "detected_event_date": "2025-07-26",
+      "has_bon_context": true,
+      "official_urls": [
+        "https://www.marunouchi.com/pickup/event/6763/",
+        "https://www.instagram.com/expjapanzen/",
+        "https://www.ebay.com/usr/exploringjapanzen"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "This video shows the Bon Odori dance that took place in Marunouchi, right in front of Tokyo Station, on July 26th, 2025.\nIt records the Second part, which took place from 19：20～20：10.\n\nこのビデオは、2025年7月26日、東京・丸の内で行われた盆踊りです。\n19時20分～20時10分に行われた第",
+      "action": "needs_official_confirmation",
+      "priority": "high"
+    },
+    {
+      "video_id": "Otv4gDwv8io",
+      "video_url": "https://www.youtube.com/watch?v=Otv4gDwv8io",
+      "source_url": "https://www.youtube.com/watch?v=Otv4gDwv8io",
+      "title": "Marunouchi Bon Odori Dance festival DJ J-POP Time  /  丸の内盆踊り 2025 DJ J-POP Time",
+      "channel_id": "UCSHoRoW171uEytgOcKkKU2Q",
+      "channel_title": "Exploring Japan with Zen",
+      "published_at": "2025-08-01T02:48:05+00:00",
+      "detected_event_date": "2025-07-26",
+      "has_bon_context": true,
+      "official_urls": [
+        "https://www.marunouchi.com/pickup/event/6763/",
+        "https://www.instagram.com/expjapanzen/",
+        "https://www.ebay.com/usr/exploringjapanzen"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "This video shows the Bon Odori dance that took place in Marunouchi, right in front of Tokyo Station, on July 26th, 2025.\nThis video includes DJ J-POP Time, which began at 8:10pm.\nThis was the most exciting part of the day, and the venue was",
+      "action": "needs_official_confirmation",
+      "priority": "high"
+    },
+    {
+      "video_id": "CTA9El6Hmfg",
+      "video_url": "https://www.youtube.com/watch?v=CTA9El6Hmfg",
+      "source_url": "https://www.youtube.com/watch?v=CTA9El6Hmfg",
+      "title": "Shibuya Bon Odori Dance festival 2025  /  渋谷 盆踊り 2025",
+      "channel_id": "UCSHoRoW171uEytgOcKkKU2Q",
+      "channel_title": "Exploring Japan with Zen",
+      "published_at": "2025-08-03T22:38:15+00:00",
+      "detected_event_date": "2025-08-02",
+      "has_bon_context": true,
+      "official_urls": [
+        "https://shibuyadogenzaka.com/?p=6827",
+        "https://www.instagram.com/expjapanzen/",
+        "https://www.ebay.com/usr/exploringjapanzen"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "This video shows a Bon Odori dance event held in Shibuya, Tokyo on August 2, 2025.\nThe three-way intersection in front of Shibuya 109, often referred to as Japan's Times Square, was closed off, a stage was set up, and a large crowd danced t",
+      "action": "needs_official_confirmation",
+      "priority": "high"
+    },
+    {
+      "video_id": "Jfm2HZ7P_F0",
+      "video_url": "https://www.youtube.com/watch?v=Jfm2HZ7P_F0",
+      "source_url": "https://www.youtube.com/watch?v=Jfm2HZ7P_F0",
+      "title": "[4K]🇯🇵 第29回 渋谷・鹿児島おはら祭 渋谷の街で踊りまくる！2026 / Japanese Dancing in the streets of Shibuya, Tokyo, Japan.",
+      "channel_id": "UCKCspf_NrY16rUnODmBqOWA",
+      "channel_title": "Tokyo Lonely Walker",
+      "published_at": "2026-05-17T01:09:03+00:00",
+      "detected_event_date": "2026-05-17",
+      "has_bon_context": true,
+      "official_urls": [
+        "https://goo.gl/maps/kSAEbnkyHSchcccY6",
+        "https://goo.gl/maps/ZCcZUiRoof3A9n2s9",
+        "https://x.com/walkingfilmlove"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "「第29回 渋谷・鹿児島 おはら祭」が渋谷で開催!\n今年は西郷隆盛生誕200年・没後150年カウントダウン記念として開催されました。\n定番曲の「おはら節」と「渋谷音頭」に加え、\nアップテンポな「渋谷発ハンヤ節」やロックテイスト溢れる「TOKYOオハラ」など、渋谷の街が一気に踊り場へと変わりました！\n\nShibuya-Kagoshima Ohara Festival” was held in Shibuya, Tokyo. The streets of Shibuya were",
+      "action": "needs_official_confirmation",
+      "priority": "high"
+    },
+    {
+      "video_id": "ICpHigFP0Ko",
+      "video_url": "https://www.youtube.com/watch?v=ICpHigFP0Ko",
+      "source_url": "https://www.youtube.com/watch?v=ICpHigFP0Ko",
+      "title": "盆踊り｜ピカチュウ大集合で可愛すぎる！ピカチュウ音頭 in GO Fest｜ Pokémon GO Fest TOKYO 2026｜Pikachu Ondo｜ポケモン 東京 [4K]🇯🇵",
+      "channel_id": "UCKCspf_NrY16rUnODmBqOWA",
+      "channel_title": "Tokyo Lonely Walker",
+      "published_at": "2026-06-01T00:00:19+00:00",
+      "detected_event_date": "2026-05-31",
+      "has_bon_context": true,
+      "official_urls": [
+        "https://goo.gl/maps/kSAEbnkyHSchcccY6",
+        "https://maps.app.goo.gl/xdAShcWWw3HJwn5J6",
+        "https://x.com/walkingfilmlove"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "「Pokémon GO Fest 2026：東京」は世界中からたくさんの『Pokémon GO』トレーナーが集うリアルイベントです！会場には櫓が設置され、多くのピカチュウが参加しピカチュウ音頭を踊りました！！\n\n“Pokémon GO Fest 2026: Tokyo” is a live event that brings together Pokémon GO Trainers from all over the world! A stage was set up at ",
+      "action": "needs_official_confirmation",
+      "priority": "high"
+    },
+    {
+      "video_id": "s2Kij5MpxrA",
+      "video_url": "https://www.youtube.com/shorts/s2Kij5MpxrA",
+      "source_url": "https://www.youtube.com/shorts/s2Kij5MpxrA",
+      "title": "Jiyugaoka Bon Dance 2025-03    自由が丘 盆踊り 2025　自由が丘小唄　#shorts",
+      "channel_id": "UCSHoRoW171uEytgOcKkKU2Q",
+      "channel_title": "Exploring Japan with Zen",
+      "published_at": "2025-07-23T21:31:17+00:00",
+      "detected_event_date": "",
+      "has_bon_context": true,
+      "official_urls": [],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "@ExploringJapanZen\n#bonodori #bondance #matsuri #japanesedance #japanesedancer #自由が丘_盆踊り #盆踊り #盆踊り2025",
+      "action": "review_video_evidence",
+      "priority": "normal"
+    },
+    {
+      "video_id": "ayI7aE9ixWI",
+      "video_url": "https://www.youtube.com/shorts/ayI7aE9ixWI",
+      "source_url": "https://www.youtube.com/shorts/ayI7aE9ixWI",
+      "title": "Jiyugaoka Bon Dance 2025-04    自由が丘 盆踊り 2025　ダンシングヒーロー　#shorts",
+      "channel_id": "UCSHoRoW171uEytgOcKkKU2Q",
+      "channel_title": "Exploring Japan with Zen",
+      "published_at": "2025-07-25T01:29:34+00:00",
+      "detected_event_date": "",
+      "has_bon_context": true,
+      "official_urls": [],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "@ExploringJapanZen\n#bonodori #bondance #matsuri #japanesedance #japanesedancer #自由が丘_盆踊り #盆踊り #盆踊り2025",
+      "action": "review_video_evidence",
+      "priority": "normal"
+    },
+    {
+      "video_id": "X7b8ZKhyOck",
+      "video_url": "https://www.youtube.com/shorts/X7b8ZKhyOck",
+      "source_url": "https://www.youtube.com/shorts/X7b8ZKhyOck",
+      "title": "Marunouchi Bon Dance, Tokyo 01    丸の内 盆踊り 01    #shorts",
+      "channel_id": "UCSHoRoW171uEytgOcKkKU2Q",
+      "channel_title": "Exploring Japan with Zen",
+      "published_at": "2025-07-28T00:23:19+00:00",
+      "detected_event_date": "",
+      "has_bon_context": true,
+      "official_urls": [],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "@ExploringJapanZen\n#丸の内_盆踊り #盆踊り_丸の内 #盆踊り #盆踊り2025 #bonodori #bondance #matsuri #japanesedance #japanesedancer",
+      "action": "review_video_evidence",
+      "priority": "normal"
+    },
+    {
+      "video_id": "Gr5qUEwYzdo",
+      "video_url": "https://www.youtube.com/shorts/Gr5qUEwYzdo",
+      "source_url": "https://www.youtube.com/shorts/Gr5qUEwYzdo",
+      "title": "Marunouchi Bon Dance, Tokyo 02    丸の内 盆踊り 02   #shorts",
+      "channel_id": "UCSHoRoW171uEytgOcKkKU2Q",
+      "channel_title": "Exploring Japan with Zen",
+      "published_at": "2025-07-29T02:24:47+00:00",
+      "detected_event_date": "",
+      "has_bon_context": true,
+      "official_urls": [],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "@ExploringJapanZen\n#丸の内_盆踊り #盆踊り_丸の内 #盆踊り #盆踊り2025 #bonodori #bondance #matsuri #japanesedance #japanesedancer",
+      "action": "review_video_evidence",
+      "priority": "normal"
+    },
+    {
+      "video_id": "DqLOwuakCjA",
+      "video_url": "https://www.youtube.com/shorts/DqLOwuakCjA",
+      "source_url": "https://www.youtube.com/shorts/DqLOwuakCjA",
+      "title": "Marunouchi Bon Dance, 03 DJ TIme    丸の内 盆踊り 03 DJ TIme   #shorts",
+      "channel_id": "UCSHoRoW171uEytgOcKkKU2Q",
+      "channel_title": "Exploring Japan with Zen",
+      "published_at": "2025-08-01T16:28:27+00:00",
+      "detected_event_date": "",
+      "has_bon_context": true,
+      "official_urls": [],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "@ExploringJapanZen\n#丸の内_盆踊り #盆踊り_丸の内 #盆踊り #盆踊り2025 #bonodori #bondance #matsuri #japanesedance #japanesedancer",
+      "action": "review_video_evidence",
+      "priority": "normal"
+    },
+    {
+      "video_id": "yG8WH6hESdg",
+      "video_url": "https://www.youtube.com/shorts/yG8WH6hESdg",
+      "source_url": "https://www.youtube.com/shorts/yG8WH6hESdg",
+      "title": "Marunouchi Bon Dance, 04 DJ TIme    丸の内 盆踊り 04 DJ TIme    #shorts",
+      "channel_id": "UCSHoRoW171uEytgOcKkKU2Q",
+      "channel_title": "Exploring Japan with Zen",
+      "published_at": "2025-08-02T16:34:09+00:00",
+      "detected_event_date": "",
+      "has_bon_context": true,
+      "official_urls": [],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "@ExploringJapanZen\n#丸の内_盆踊り #盆踊り_丸の内 #盆踊り #盆踊り2025 #bonodori #bondance #matsuri #japanesedance #japanesedancer",
+      "action": "review_video_evidence",
+      "priority": "normal"
+    },
+    {
+      "video_id": "tmgiQ18cXvY",
+      "video_url": "https://www.youtube.com/shorts/tmgiQ18cXvY",
+      "source_url": "https://www.youtube.com/shorts/tmgiQ18cXvY",
+      "title": "Shibuya Bon Dance 2025, You Make Shibuya    渋谷盆踊り 2025 夢みる渋谷　#shorts",
+      "channel_id": "UCSHoRoW171uEytgOcKkKU2Q",
+      "channel_title": "Exploring Japan with Zen",
+      "published_at": "2025-08-06T20:32:38+00:00",
+      "detected_event_date": "",
+      "has_bon_context": true,
+      "official_urls": [],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "@ExploringJapanZen\n\n#渋谷_盆踊り #盆踊り_渋谷 #盆踊り #盆踊り2025 #bonodori #bondance #matsuri #japanesedance #japanesedancer  #shibuya_bonodori",
+      "action": "review_video_evidence",
+      "priority": "normal"
+    },
+    {
+      "video_id": "BY7he8CsGwk",
+      "video_url": "https://www.youtube.com/shorts/BY7he8CsGwk",
+      "source_url": "https://www.youtube.com/shorts/BY7he8CsGwk",
+      "title": "Shibuya Bon Dance 2025, Great Tokyo Ondo 1   渋谷盆踊り 2025 大東京音頭-1   #shorts",
+      "channel_id": "UCSHoRoW171uEytgOcKkKU2Q",
+      "channel_title": "Exploring Japan with Zen",
+      "published_at": "2025-08-07T14:58:29+00:00",
+      "detected_event_date": "",
+      "has_bon_context": true,
+      "official_urls": [],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "@ExploringJapanZen\n#渋谷_盆踊り #盆踊り_渋谷 #盆踊り #盆踊り2025 #bonodori #bondance #matsuri #japanesedance #japanesedancer  #shibuya_bonodori",
+      "action": "review_video_evidence",
+      "priority": "normal"
+    },
+    {
+      "video_id": "NU9Ed2ypoR4",
+      "video_url": "https://www.youtube.com/shorts/NU9Ed2ypoR4",
+      "source_url": "https://www.youtube.com/shorts/NU9Ed2ypoR4",
+      "title": "Shibuya Bon Dance 2025, Great Tokyo Ondo 2    渋谷盆踊り 2025 大東京音頭-2    #shorts",
+      "channel_id": "UCSHoRoW171uEytgOcKkKU2Q",
+      "channel_title": "Exploring Japan with Zen",
+      "published_at": "2025-08-08T23:28:42+00:00",
+      "detected_event_date": "",
+      "has_bon_context": true,
+      "official_urls": [],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "@ExploringJapanZen\n#渋谷_盆踊り #盆踊り_渋谷 #盆踊り #盆踊り2025 #bonodori #bondance #matsuri #japanesedance #japanesedancer  #shibuya_bonodori",
+      "action": "review_video_evidence",
+      "priority": "normal"
+    },
+    {
+      "video_id": "Ccx04lQCgUY",
+      "video_url": "https://www.youtube.com/shorts/Ccx04lQCgUY",
+      "source_url": "https://www.youtube.com/shorts/Ccx04lQCgUY",
+      "title": "Shibuya Bon Dance 2025, Cheerleader Show   渋谷盆踊り 2025 チアリーダー、フラダンスなど　#shorts",
+      "channel_id": "UCSHoRoW171uEytgOcKkKU2Q",
+      "channel_title": "Exploring Japan with Zen",
+      "published_at": "2025-08-10T19:35:17+00:00",
+      "detected_event_date": "",
+      "has_bon_context": true,
+      "official_urls": [],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "@ExploringJapanZen\n\n#渋谷_盆踊り #盆踊り_渋谷 #盆踊り #盆踊り2025 #bonodori #bondance #matsuri #japanesedance #japanesedancer  #shibuya_bonodori",
+      "action": "review_video_evidence",
+      "priority": "normal"
+    },
+    {
+      "video_id": "4VDWvK5tmnI",
+      "video_url": "https://www.youtube.com/watch?v=4VDWvK5tmnI",
+      "source_url": "https://www.youtube.com/watch?v=4VDWvK5tmnI",
+      "title": "ダンシング・ヒーローで盆踊り 横浜開港祭2026 みなとみらい / Bon Odori at the Yokohama Port Festival 2026. [4K]",
+      "channel_id": "UCKCspf_NrY16rUnODmBqOWA",
+      "channel_title": "Tokyo Lonely Walker",
+      "published_at": "2026-06-01T04:52:00+00:00",
+      "detected_event_date": "2026-06-01",
+      "has_bon_context": true,
+      "official_urls": [
+        "https://goo.gl/maps/kSAEbnkyHSchcccY6",
+        "https://goo.gl/maps/Lcbc9w9Jik87gSb26",
+        "https://x.com/walkingfilmlove"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": true,
+      "description_excerpt": "みなとみらいで「横浜開港祭2026」が開催されました。\n6月1日には盆踊りも開催され、櫓の上では鳳蝶美成さんと日本盆踊り教会の皆さんがリードを務められ、和太鼓は東京おとめ太鼓さんが担当！\nこの動画では、夜の部で行われたダンシング・ヒーローを先行でご紹介いたします！\n\nThe “Yokohama Port Festival 2026” was held in Minato Mirai. On June 1, a Bon dance was also held, with Bij",
+      "action": "out_of_scope",
+      "priority": "high"
+    },
+    {
+      "video_id": "RKXEbu8M7lg",
+      "video_url": "https://www.youtube.com/watch?v=RKXEbu8M7lg",
+      "source_url": "https://www.youtube.com/watch?v=RKXEbu8M7lg",
+      "title": "盆踊り｜ゆず - 夏色 横浜開港祭2026 / Bon Odori at the Yokohama Port Festival 2026. [4K]🇯🇵",
+      "channel_id": "UCKCspf_NrY16rUnODmBqOWA",
+      "channel_title": "Tokyo Lonely Walker",
+      "published_at": "2026-06-01T17:00:10+00:00",
+      "detected_event_date": "2026-06-01",
+      "has_bon_context": true,
+      "official_urls": [
+        "https://goo.gl/maps/kSAEbnkyHSchcccY6",
+        "https://goo.gl/maps/Lcbc9w9Jik87gSb26",
+        "https://x.com/walkingfilmlove"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": true,
+      "description_excerpt": "みなとみらいで「横浜開港祭2026」が開催されました。\n6月1日には盆踊りも開催され、櫓の上では鳳蝶美成さんと日本盆踊り教会の皆さんがリードを務められ、和太鼓は東京おとめ太鼓さんが担当！\nこの動画では、夕方の部で行われたゆず「夏色」を先行でご紹介いたします！\n\nThe “Yokohama Port Festival 2026” was held in Minato Mirai. On June 1, a Bon dance was also held, with Bijo A",
+      "action": "out_of_scope",
+      "priority": "high"
+    },
+    {
+      "video_id": "ZU2e0H9XXvc",
+      "video_url": "https://www.youtube.com/watch?v=ZU2e0H9XXvc",
+      "source_url": "https://www.youtube.com/watch?v=ZU2e0H9XXvc",
+      "title": "サザン盆踊りで盛り上がる！希望の轍丨横浜開港祭2026 サザンオールスターズ / Bon Odori at the Yokohama Port Festival 2026. [4K]🇯🇵",
+      "channel_id": "UCKCspf_NrY16rUnODmBqOWA",
+      "channel_title": "Tokyo Lonely Walker",
+      "published_at": "2026-06-02T01:00:38+00:00",
+      "detected_event_date": "2026-06-01",
+      "has_bon_context": true,
+      "official_urls": [
+        "https://goo.gl/maps/kSAEbnkyHSchcccY6",
+        "https://goo.gl/maps/Lcbc9w9Jik87gSb26",
+        "https://x.com/walkingfilmlove"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": true,
+      "description_excerpt": "みなとみらいで「横浜開港祭2026」が開催されました。\n6月1日には盆踊りも開催され、櫓の上では鳳蝶美成さんと日本盆踊り教会の皆さんがリードを務められ、和太鼓は東京おとめ太鼓さんが担当！\nこの動画では、夜の部で行われたサザンオールスターズ「希望の轍」を先行でご紹介いたします！\n\nThe “Yokohama Port Festival 2026” was held in Minato Mirai. On June 1, a Bon dance was also held, wi",
+      "action": "out_of_scope",
+      "priority": "high"
+    },
+    {
+      "video_id": "iB0H6DCDbDY",
+      "video_url": "https://www.youtube.com/watch?v=iB0H6DCDbDY",
+      "source_url": "https://www.youtube.com/watch?v=iB0H6DCDbDY",
+      "title": "[4K]🇯🇵 横浜開港祭 盆踊り ダンシングヒーロー ｜サザン｜よこはまアラメヤ音頭│セカオワ│野毛山節  他 2026.6.1 / Japanese Bon dance in Yokohama.",
+      "channel_id": "UCKCspf_NrY16rUnODmBqOWA",
+      "channel_title": "Tokyo Lonely Walker",
+      "published_at": "2026-06-03T01:25:57+00:00",
+      "detected_event_date": "2026-06-01",
+      "has_bon_context": true,
+      "official_urls": [
+        "https://goo.gl/maps/kSAEbnkyHSchcccY6",
+        "https://goo.gl/maps/Lcbc9w9Jik87gSb26",
+        "https://x.com/walkingfilmlove"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": true,
+      "description_excerpt": "みなとみらいで「横浜開港祭2026」が開催されました。\n6月1日には盆踊りも開催され、櫓の上では鳳蝶美成さんと日本盆踊り教会の皆さんがリードを務められ、和太鼓は東京おとめ太鼓さんが担当！\n大いに盛り上がりました！！\n\nThe “Yokohama Port Festival 2026” was held in Minato Mirai. On June 1, a Bon dance was also held, with Bijo Ageha and members of th",
+      "action": "out_of_scope",
+      "priority": "high"
+    },
+    {
+      "video_id": "byFyWmWVg7g",
+      "video_url": "https://www.youtube.com/watch?v=byFyWmWVg7g",
+      "source_url": "https://www.youtube.com/watch?v=byFyWmWVg7g",
+      "title": "13 YMCA 　横浜開港祭 BON ODORI　20260601",
+      "channel_id": "UCLSZK_q5ma6aeIrVRUEpkNw",
+      "channel_title": "祭のきせき 盆踊り",
+      "published_at": "2026-06-05T01:00:26+00:00",
+      "detected_event_date": "2026-06-01",
+      "has_bon_context": true,
+      "official_urls": [],
+      "matched_public_event": null,
+      "setlist_occurrences": [
+        {
+          "occurrence_key": "1debf98e280dc2da",
+          "event_name": "横浜開港祭 BON ODORI",
+          "venue": "パシフィコ横浜プラザ広場",
+          "event_date": "2026-06-01",
+          "song_count": 14,
+          "confidence": "high"
+        }
+      ],
+      "out_of_scope": true,
+      "description_excerpt": "第45回 横浜開港祭 BON ODORI　2026年6月1日（月）\n\n01 よこはまアラメヤ音頭（１部）https://youtu.be/ZmvjPEjlzgg\n02 野毛山節 https://youtu.be/XYD7P5R4ado\n03 浜っ娘音頭 https://youtu.be/Oox5Ob1aNzk\n04 鹿児島おはら節 https://youtu.be/hNpEA6ORzOo\n05 春駒 https://youtu.be/Uak6YO04Eds\n06 希望の轍（振",
+      "action": "out_of_scope",
+      "priority": "normal"
+    },
+    {
+      "video_id": "Yt9OXm1M9bE",
+      "video_url": "https://www.youtube.com/watch?v=Yt9OXm1M9bE",
+      "source_url": "https://www.youtube.com/watch?v=Yt9OXm1M9bE",
+      "title": "14 炎と森のカーニバル 　横浜開港祭 BON ODORI　20260601",
+      "channel_id": "UCLSZK_q5ma6aeIrVRUEpkNw",
+      "channel_title": "祭のきせき 盆踊り",
+      "published_at": "2026-06-05T02:00:01+00:00",
+      "detected_event_date": "2026-06-01",
+      "has_bon_context": true,
+      "official_urls": [],
+      "matched_public_event": null,
+      "setlist_occurrences": [
+        {
+          "occurrence_key": "1debf98e280dc2da",
+          "event_name": "横浜開港祭 BON ODORI",
+          "venue": "パシフィコ横浜プラザ広場",
+          "event_date": "2026-06-01",
+          "song_count": 14,
+          "confidence": "high"
+        }
+      ],
+      "out_of_scope": true,
+      "description_excerpt": "第45回 横浜開港祭 BON ODORI　2026年6月1日（月）\n\n01 よこはまアラメヤ音頭（１部）https://youtu.be/ZmvjPEjlzgg\n02 野毛山節 https://youtu.be/XYD7P5R4ado\n03 浜っ娘音頭 https://youtu.be/Oox5Ob1aNzk\n04 鹿児島おはら節 https://youtu.be/hNpEA6ORzOo\n05 春駒 https://youtu.be/Uak6YO04Eds\n06 希望の轍（振",
+      "action": "out_of_scope",
+      "priority": "normal"
+    },
+    {
+      "video_id": "P1JViv3w9xc",
+      "video_url": "https://www.youtube.com/watch?v=P1JViv3w9xc",
+      "source_url": "https://www.youtube.com/watch?v=P1JViv3w9xc",
+      "title": "15 ダンシングヒーロー 　横浜開港祭 BON ODORI　20260601",
+      "channel_id": "UCLSZK_q5ma6aeIrVRUEpkNw",
+      "channel_title": "祭のきせき 盆踊り",
+      "published_at": "2026-06-05T03:00:13+00:00",
+      "detected_event_date": "2026-06-01",
+      "has_bon_context": true,
+      "official_urls": [],
+      "matched_public_event": null,
+      "setlist_occurrences": [
+        {
+          "occurrence_key": "1debf98e280dc2da",
+          "event_name": "横浜開港祭 BON ODORI",
+          "venue": "パシフィコ横浜プラザ広場",
+          "event_date": "2026-06-01",
+          "song_count": 14,
+          "confidence": "high"
+        }
+      ],
+      "out_of_scope": true,
+      "description_excerpt": "第45回 横浜開港祭 BON ODORI　2026年6月1日（月）\n\n01 よこはまアラメヤ音頭（１部）https://youtu.be/ZmvjPEjlzgg\n02 野毛山節 https://youtu.be/XYD7P5R4ado\n03 浜っ娘音頭 https://youtu.be/Oox5Ob1aNzk\n04 鹿児島おはら節 https://youtu.be/hNpEA6ORzOo\n05 春駒 https://youtu.be/Uak6YO04Eds\n06 希望の轍（振",
+      "action": "out_of_scope",
+      "priority": "normal"
+    },
+    {
+      "video_id": "9guti4r23aI",
+      "video_url": "https://www.youtube.com/watch?v=9guti4r23aI",
+      "source_url": "https://www.youtube.com/watch?v=9guti4r23aI",
+      "title": "16 EZ DO DANCE 　横浜開港祭 BON ODORI　20260601",
+      "channel_id": "UCLSZK_q5ma6aeIrVRUEpkNw",
+      "channel_title": "祭のきせき 盆踊り",
+      "published_at": "2026-06-05T04:00:37+00:00",
+      "detected_event_date": "2026-06-01",
+      "has_bon_context": true,
+      "official_urls": [],
+      "matched_public_event": null,
+      "setlist_occurrences": [
+        {
+          "occurrence_key": "1debf98e280dc2da",
+          "event_name": "横浜開港祭 BON ODORI",
+          "venue": "パシフィコ横浜プラザ広場",
+          "event_date": "2026-06-01",
+          "song_count": 14,
+          "confidence": "high"
+        }
+      ],
+      "out_of_scope": true,
+      "description_excerpt": "第45回 横浜開港祭 BON ODORI　2026年6月1日（月）\n\n01 よこはまアラメヤ音頭（１部）https://youtu.be/ZmvjPEjlzgg\n02 野毛山節 https://youtu.be/XYD7P5R4ado\n03 浜っ娘音頭 https://youtu.be/Oox5Ob1aNzk\n04 鹿児島おはら節 https://youtu.be/hNpEA6ORzOo\n05 春駒 https://youtu.be/Uak6YO04Eds\n06 希望の轍（振",
+      "action": "out_of_scope",
+      "priority": "normal"
+    },
+    {
+      "video_id": "QcUh2syTVpw",
+      "video_url": "https://www.youtube.com/watch?v=QcUh2syTVpw",
+      "source_url": "https://www.youtube.com/watch?v=QcUh2syTVpw",
+      "title": "17 野毛山節   DJ帝 mix 　横浜開港祭 BON ODORI　20260601",
+      "channel_id": "UCLSZK_q5ma6aeIrVRUEpkNw",
+      "channel_title": "祭のきせき 盆踊り",
+      "published_at": "2026-06-05T15:00:22+00:00",
+      "detected_event_date": "2026-06-01",
+      "has_bon_context": true,
+      "official_urls": [],
+      "matched_public_event": null,
+      "setlist_occurrences": [
+        {
+          "occurrence_key": "1debf98e280dc2da",
+          "event_name": "横浜開港祭 BON ODORI",
+          "venue": "パシフィコ横浜プラザ広場",
+          "event_date": "2026-06-01",
+          "song_count": 14,
+          "confidence": "high"
+        }
+      ],
+      "out_of_scope": true,
+      "description_excerpt": "第45回 横浜開港祭 BON ODORI　2026年6月1日（月）\n\n01 よこはまアラメヤ音頭（１部）https://youtu.be/ZmvjPEjlzgg\n02 野毛山節 https://youtu.be/XYD7P5R4ado\n03 浜っ娘音頭 https://youtu.be/Oox5Ob1aNzk\n04 鹿児島おはら節 https://youtu.be/hNpEA6ORzOo\n05 春駒 https://youtu.be/Uak6YO04Eds\n06 希望の轍（振",
+      "action": "out_of_scope",
+      "priority": "normal"
+    },
+    {
+      "video_id": "lKIFoe8NgvA",
+      "video_url": "https://www.youtube.com/watch?v=lKIFoe8NgvA",
+      "source_url": "https://www.youtube.com/watch?v=lKIFoe8NgvA",
+      "title": "18 浜っ娘音頭 　横浜開港祭 BON ODORI　20260601",
+      "channel_id": "UCLSZK_q5ma6aeIrVRUEpkNw",
+      "channel_title": "祭のきせき 盆踊り",
+      "published_at": "2026-06-05T16:00:17+00:00",
+      "detected_event_date": "2026-06-01",
+      "has_bon_context": true,
+      "official_urls": [],
+      "matched_public_event": null,
+      "setlist_occurrences": [
+        {
+          "occurrence_key": "1debf98e280dc2da",
+          "event_name": "横浜開港祭 BON ODORI",
+          "venue": "パシフィコ横浜プラザ広場",
+          "event_date": "2026-06-01",
+          "song_count": 14,
+          "confidence": "high"
+        }
+      ],
+      "out_of_scope": true,
+      "description_excerpt": "第45回 横浜開港祭 BON ODORI　2026年6月1日（月）\n\n01 よこはまアラメヤ音頭（１部）https://youtu.be/ZmvjPEjlzgg\n02 野毛山節 https://youtu.be/XYD7P5R4ado\n03 浜っ娘音頭 https://youtu.be/Oox5Ob1aNzk\n04 鹿児島おはら節 https://youtu.be/hNpEA6ORzOo\n05 春駒 https://youtu.be/Uak6YO04Eds\n06 希望の轍（振",
+      "action": "out_of_scope",
+      "priority": "normal"
+    },
+    {
+      "video_id": "zYYzOZUEcGU",
+      "video_url": "https://www.youtube.com/watch?v=zYYzOZUEcGU",
+      "source_url": "https://www.youtube.com/watch?v=zYYzOZUEcGU",
+      "title": "19 Septmber 　横浜開港祭 BON ODORI　20260601",
+      "channel_id": "UCLSZK_q5ma6aeIrVRUEpkNw",
+      "channel_title": "祭のきせき 盆踊り",
+      "published_at": "2026-06-05T17:00:32+00:00",
+      "detected_event_date": "2026-06-01",
+      "has_bon_context": true,
+      "official_urls": [],
+      "matched_public_event": null,
+      "setlist_occurrences": [
+        {
+          "occurrence_key": "1debf98e280dc2da",
+          "event_name": "横浜開港祭 BON ODORI",
+          "venue": "パシフィコ横浜プラザ広場",
+          "event_date": "2026-06-01",
+          "song_count": 14,
+          "confidence": "high"
+        }
+      ],
+      "out_of_scope": true,
+      "description_excerpt": "第45回 横浜開港祭 BON ODORI　2026年6月1日（月）\n\n01 よこはまアラメヤ音頭（１部）https://youtu.be/ZmvjPEjlzgg\n02 野毛山節 https://youtu.be/XYD7P5R4ado\n03 浜っ娘音頭 https://youtu.be/Oox5Ob1aNzk\n04 鹿児島おはら節 https://youtu.be/hNpEA6ORzOo\n05 春駒 https://youtu.be/Uak6YO04Eds\n06 希望の轍（振",
+      "action": "out_of_scope",
+      "priority": "normal"
+    },
+    {
+      "video_id": "stvVBO2W0CI",
+      "video_url": "https://www.youtube.com/watch?v=stvVBO2W0CI",
+      "source_url": "https://www.youtube.com/watch?v=stvVBO2W0CI",
+      "title": "20 希望の轍 　横浜開港祭 BON ODORI　20260601",
+      "channel_id": "UCLSZK_q5ma6aeIrVRUEpkNw",
+      "channel_title": "祭のきせき 盆踊り",
+      "published_at": "2026-06-05T18:00:23+00:00",
+      "detected_event_date": "2026-06-01",
+      "has_bon_context": true,
+      "official_urls": [],
+      "matched_public_event": null,
+      "setlist_occurrences": [
+        {
+          "occurrence_key": "1debf98e280dc2da",
+          "event_name": "横浜開港祭 BON ODORI",
+          "venue": "パシフィコ横浜プラザ広場",
+          "event_date": "2026-06-01",
+          "song_count": 14,
+          "confidence": "high"
+        }
+      ],
+      "out_of_scope": true,
+      "description_excerpt": "第45回 横浜開港祭 BON ODORI　2026年6月1日（月）\n\n01 よこはまアラメヤ音頭（１部）https://youtu.be/ZmvjPEjlzgg\n02 野毛山節 https://youtu.be/XYD7P5R4ado\n03 浜っ娘音頭 https://youtu.be/Oox5Ob1aNzk\n04 鹿児島おはら節 https://youtu.be/hNpEA6ORzOo\n05 春駒 https://youtu.be/Uak6YO04Eds\n06 希望の轍（振",
+      "action": "out_of_scope",
+      "priority": "normal"
+    },
+    {
+      "video_id": "e_rYMmfRaVE",
+      "video_url": "https://www.youtube.com/watch?v=e_rYMmfRaVE",
+      "source_url": "https://www.youtube.com/watch?v=e_rYMmfRaVE",
+      "title": "21 ダンシングヒーロー 　横浜開港祭 BON ODORI　20260601",
+      "channel_id": "UCLSZK_q5ma6aeIrVRUEpkNw",
+      "channel_title": "祭のきせき 盆踊り",
+      "published_at": "2026-06-05T19:00:09+00:00",
+      "detected_event_date": "2026-06-01",
+      "has_bon_context": true,
+      "official_urls": [],
+      "matched_public_event": null,
+      "setlist_occurrences": [
+        {
+          "occurrence_key": "1debf98e280dc2da",
+          "event_name": "横浜開港祭 BON ODORI",
+          "venue": "パシフィコ横浜プラザ広場",
+          "event_date": "2026-06-01",
+          "song_count": 14,
+          "confidence": "high"
+        }
+      ],
+      "out_of_scope": true,
+      "description_excerpt": "第45回 横浜開港祭 BON ODORI　2026年6月1日（月）\n\n01 よこはまアラメヤ音頭（１部）https://youtu.be/ZmvjPEjlzgg\n02 野毛山節 https://youtu.be/XYD7P5R4ado\n03 浜っ娘音頭 https://youtu.be/Oox5Ob1aNzk\n04 鹿児島おはら節 https://youtu.be/hNpEA6ORzOo\n05 春駒 https://youtu.be/Uak6YO04Eds\n06 希望の轍（振",
+      "action": "out_of_scope",
+      "priority": "normal"
+    },
+    {
+      "video_id": "_XvxNzDV7Ew",
+      "video_url": "https://www.youtube.com/watch?v=_XvxNzDV7Ew",
+      "source_url": "https://www.youtube.com/watch?v=_XvxNzDV7Ew",
+      "title": "22 よこはまアラメヤ音頭（３部） 　横浜開港祭 BON ODORI　20260601",
+      "channel_id": "UCLSZK_q5ma6aeIrVRUEpkNw",
+      "channel_title": "祭のきせき 盆踊り",
+      "published_at": "2026-06-05T20:00:36+00:00",
+      "detected_event_date": "2026-06-01",
+      "has_bon_context": true,
+      "official_urls": [],
+      "matched_public_event": null,
+      "setlist_occurrences": [
+        {
+          "occurrence_key": "1debf98e280dc2da",
+          "event_name": "横浜開港祭 BON ODORI",
+          "venue": "パシフィコ横浜プラザ広場",
+          "event_date": "2026-06-01",
+          "song_count": 14,
+          "confidence": "high"
+        }
+      ],
+      "out_of_scope": true,
+      "description_excerpt": "第45回 横浜開港祭 BON ODORI　2026年6月1日（月）\n\n01 よこはまアラメヤ音頭（１部）https://youtu.be/ZmvjPEjlzgg\n02 野毛山節 https://youtu.be/XYD7P5R4ado\n03 浜っ娘音頭 https://youtu.be/Oox5Ob1aNzk\n04 鹿児島おはら節 https://youtu.be/hNpEA6ORzOo\n05 春駒 https://youtu.be/Uak6YO04Eds\n06 希望の轍（振",
+      "action": "out_of_scope",
+      "priority": "normal"
+    },
+    {
+      "video_id": "hNpEA6ORzOo",
+      "video_url": "https://www.youtube.com/watch?v=hNpEA6ORzOo",
+      "source_url": "https://www.youtube.com/watch?v=hNpEA6ORzOo",
+      "title": "04 鹿児島おはら節 　横浜開港祭 BON ODORI　20260601",
+      "channel_id": "UCLSZK_q5ma6aeIrVRUEpkNw",
+      "channel_title": "祭のきせき　盆踊り",
+      "published_at": "2026-06-05T01:00:10+00:00",
+      "detected_event_date": "2026-06-01",
+      "has_bon_context": true,
+      "official_urls": [],
+      "matched_public_event": null,
+      "setlist_occurrences": [
+        {
+          "occurrence_key": "1debf98e280dc2da",
+          "event_name": "横浜開港祭 BON ODORI",
+          "venue": "パシフィコ横浜プラザ広場",
+          "event_date": "2026-06-01",
+          "song_count": 14,
+          "confidence": "high"
+        }
+      ],
+      "out_of_scope": true,
+      "description_excerpt": "第45回 横浜開港祭 BON ODORI　2026年6月1日（月）\n\n01 よこはまアラメヤ音頭（１部）https://youtu.be/ZmvjPEjlzgg\n02 野毛山節 https://youtu.be/XYD7P5R4ado\n03 浜っ娘音頭 https://youtu.be/Oox5Ob1aNzk\n04 鹿児島おはら節 https://youtu.be/hNpEA6ORzOo\n05 春駒 https://youtu.be/Uak6YO04Eds\n06 希望の轍（振",
+      "action": "out_of_scope",
+      "priority": "normal"
+    },
+    {
+      "video_id": "Uak6YO04Eds",
+      "video_url": "https://www.youtube.com/watch?v=Uak6YO04Eds",
+      "source_url": "https://www.youtube.com/watch?v=Uak6YO04Eds",
+      "title": "05 春駒 　横浜開港祭 BON ODORI　20260601",
+      "channel_id": "UCLSZK_q5ma6aeIrVRUEpkNw",
+      "channel_title": "祭のきせき　盆踊り",
+      "published_at": "2026-06-05T02:00:38+00:00",
+      "detected_event_date": "2026-06-01",
+      "has_bon_context": true,
+      "official_urls": [],
+      "matched_public_event": null,
+      "setlist_occurrences": [
+        {
+          "occurrence_key": "1debf98e280dc2da",
+          "event_name": "横浜開港祭 BON ODORI",
+          "venue": "パシフィコ横浜プラザ広場",
+          "event_date": "2026-06-01",
+          "song_count": 14,
+          "confidence": "high"
+        }
+      ],
+      "out_of_scope": true,
+      "description_excerpt": "第45回 横浜開港祭 BON ODORI　2026年6月1日（月）\n\n01 よこはまアラメヤ音頭（１部）https://youtu.be/ZmvjPEjlzgg\n02 野毛山節 https://youtu.be/XYD7P5R4ado\n03 浜っ娘音頭 https://youtu.be/Oox5Ob1aNzk\n04 鹿児島おはら節 https://youtu.be/hNpEA6ORzOo\n05 春駒 https://youtu.be/Uak6YO04Eds\n06 希望の轍（振",
+      "action": "out_of_scope",
+      "priority": "normal"
+    },
+    {
+      "video_id": "YcwxnLspGMg",
+      "video_url": "https://www.youtube.com/watch?v=YcwxnLspGMg",
+      "source_url": "https://www.youtube.com/watch?v=YcwxnLspGMg",
+      "title": "06 希望の轍 　横浜開港祭 BON ODORI　20260601",
+      "channel_id": "UCLSZK_q5ma6aeIrVRUEpkNw",
+      "channel_title": "祭のきせき　盆踊り",
+      "published_at": "2026-06-05T03:00:33+00:00",
+      "detected_event_date": "2026-06-01",
+      "has_bon_context": true,
+      "official_urls": [],
+      "matched_public_event": null,
+      "setlist_occurrences": [
+        {
+          "occurrence_key": "1debf98e280dc2da",
+          "event_name": "横浜開港祭 BON ODORI",
+          "venue": "パシフィコ横浜プラザ広場",
+          "event_date": "2026-06-01",
+          "song_count": 14,
+          "confidence": "high"
+        }
+      ],
+      "out_of_scope": true,
+      "description_excerpt": "第45回 横浜開港祭 BON ODORI　2026年6月1日（月）\n\n01 よこはまアラメヤ音頭（１部）https://youtu.be/ZmvjPEjlzgg\n02 野毛山節 https://youtu.be/XYD7P5R4ado\n03 浜っ娘音頭 https://youtu.be/Oox5Ob1aNzk\n04 鹿児島おはら節 https://youtu.be/hNpEA6ORzOo\n05 春駒 https://youtu.be/Uak6YO04Eds\n06 希望の轍（振",
+      "action": "out_of_scope",
+      "priority": "normal"
+    },
+    {
+      "video_id": "YvBnjsZO0oo",
+      "video_url": "https://www.youtube.com/watch?v=YvBnjsZO0oo",
+      "source_url": "https://www.youtube.com/watch?v=YvBnjsZO0oo",
+      "title": "07 青と夏 　横浜開港祭 BON ODORI　20260601",
+      "channel_id": "UCLSZK_q5ma6aeIrVRUEpkNw",
+      "channel_title": "祭のきせき　盆踊り",
+      "published_at": "2026-06-05T04:00:10+00:00",
+      "detected_event_date": "2026-06-01",
+      "has_bon_context": true,
+      "official_urls": [],
+      "matched_public_event": null,
+      "setlist_occurrences": [
+        {
+          "occurrence_key": "1debf98e280dc2da",
+          "event_name": "横浜開港祭 BON ODORI",
+          "venue": "パシフィコ横浜プラザ広場",
+          "event_date": "2026-06-01",
+          "song_count": 14,
+          "confidence": "high"
+        }
+      ],
+      "out_of_scope": true,
+      "description_excerpt": "第45回 横浜開港祭 BON ODORI　2026年6月1日（月）\n\n01 よこはまアラメヤ音頭（１部）https://youtu.be/ZmvjPEjlzgg\n02 野毛山節 https://youtu.be/XYD7P5R4ado\n03 浜っ娘音頭 https://youtu.be/Oox5Ob1aNzk\n04 鹿児島おはら節 https://youtu.be/hNpEA6ORzOo\n05 春駒 https://youtu.be/Uak6YO04Eds\n06 希望の轍（振",
+      "action": "out_of_scope",
+      "priority": "normal"
+    },
+    {
+      "video_id": "Ou0eEbPNQDM",
+      "video_url": "https://www.youtube.com/shorts/Ou0eEbPNQDM",
+      "source_url": "https://www.youtube.com/shorts/Ou0eEbPNQDM",
+      "title": "Jiyugaoka at Night 2025    夜の自由が丘 ストリートビュー　#shorts",
+      "channel_id": "UCSHoRoW171uEytgOcKkKU2Q",
+      "channel_title": "Exploring Japan with Zen",
+      "published_at": "2025-07-25T18:44:43+00:00",
+      "detected_event_date": "",
+      "has_bon_context": false,
+      "official_urls": [],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "@ExploringJapanZen\n#nightview #tokyo_nightview #tokyo_night #自由が丘",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "8eRmq0L3MoQ",
+      "video_url": "https://www.youtube.com/watch?v=8eRmq0L3MoQ",
+      "source_url": "https://www.youtube.com/watch?v=8eRmq0L3MoQ",
+      "title": "😆Shinjuku Is Incredible! | From the Main Streets to Kabukicho & Golden Gai in Tokyo  2026 4kHDR",
+      "channel_id": "UCaVANrt14S6q-if2BBOE4TQ",
+      "channel_title": "Tokyo Hz",
+      "published_at": "2026-06-07T01:00:05+00:00",
+      "detected_event_date": "2026-05-31",
+      "has_bon_context": false,
+      "official_urls": [
+        "https://linktr.ee/tokyohertz"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "🌈🚶🏻Want to see more Tokyo city walk videos?👉https://www.youtube.com/playlist?list=PLR3ncRAlbZV7g0RNVyylMYe7a7waujLIw\n🌈🏙️Want to see Shibuya Sky videos? 👉https://www.youtube.com/playlist?list=PLR3ncRAlbZV6DQI-XUKN0mKyR1SZcmtiD\n\n4K/HDR/60fps ",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "IEYGgwqZSWw",
+      "video_url": "https://www.youtube.com/shorts/IEYGgwqZSWw",
+      "source_url": "https://www.youtube.com/shorts/IEYGgwqZSWw",
+      "title": "😆Shinjuku Is Incredible! | From the Main Streets to Kabukicho & Golden Gai in Tokyo  2026",
+      "channel_id": "UCaVANrt14S6q-if2BBOE4TQ",
+      "channel_title": "Tokyo Hz",
+      "published_at": "2026-06-07T18:00:31+00:00",
+      "detected_event_date": "",
+      "has_bon_context": false,
+      "official_urls": [
+        "https://linktr.ee/tokyohertz"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "🌈🚶🏻Want to see more Tokyo city walk videos?👉https://www.youtube.com/playlist?list=PLR3ncRAlbZV7g0RNVyylMYe7a7waujLIw\n🌈🏙️Want to see Shibuya Sky videos? 👉https://www.youtube.com/playlist?list=PLR3ncRAlbZV6DQI-XUKN0mKyR1SZcmtiD\n\n🎵You can also",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "P7sJ9XqG1Zs",
+      "video_url": "https://www.youtube.com/watch?v=P7sJ9XqG1Zs",
+      "source_url": "https://www.youtube.com/watch?v=P7sJ9XqG1Zs",
+      "title": "😆The Movement of This Massive Crowd Is Amazing! | Shibuya Crossing in Tokyo Jp  2026 4kHDR",
+      "channel_id": "UCaVANrt14S6q-if2BBOE4TQ",
+      "channel_title": "Tokyo Hz",
+      "published_at": "2026-06-08T01:00:32+00:00",
+      "detected_event_date": "2026-05-29",
+      "has_bon_context": false,
+      "official_urls": [
+        "https://linktr.ee/tokyohertz"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "🌈🚥Want to see more Shibuya Crossing videos?👉https://www.youtube.com/playlist?list=PLR3ncRAlbZV75mE6mTfFQHRiFzxpUjg5N\n🌈🏙️Want to see Shibuya Sky videos? 👉https://www.youtube.com/playlist?list=PLR3ncRAlbZV6DQI-XUKN0mKyR1SZcmtiD\n\n4K/HDR/60fps ",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "v4iAik7hjCI",
+      "video_url": "https://www.youtube.com/shorts/v4iAik7hjCI",
+      "source_url": "https://www.youtube.com/shorts/v4iAik7hjCI",
+      "title": "😆The Movement of This Massive Crowd Is Amazing! | Shibuya Crossing in Tokyo Jp  2026",
+      "channel_id": "UCaVANrt14S6q-if2BBOE4TQ",
+      "channel_title": "Tokyo Hz",
+      "published_at": "2026-06-08T18:00:17+00:00",
+      "detected_event_date": "",
+      "has_bon_context": false,
+      "official_urls": [
+        "https://linktr.ee/tokyohertz"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "🌈🚥Want to see more Shibuya Crossing videos?👉https://www.youtube.com/playlist?list=PLR3ncRAlbZV75mE6mTfFQHRiFzxpUjg5N\n🌈🏙️Want to see Shibuya Sky videos? 👉https://www.youtube.com/playlist?list=PLR3ncRAlbZV6DQI-XUKN0mKyR1SZcmtiD\n\n🎵You can list",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "od6ozv5jGL0",
+      "video_url": "https://www.youtube.com/watch?v=od6ozv5jGL0",
+      "source_url": "https://www.youtube.com/watch?v=od6ozv5jGL0",
+      "title": "😍Amazing! Fireworks Make It Even More Romantic! | Shibuya Sky in Tokyo Jp 2026 4kHDR",
+      "channel_id": "UCaVANrt14S6q-if2BBOE4TQ",
+      "channel_title": "Tokyo Hz",
+      "published_at": "2026-06-09T01:00:29+00:00",
+      "detected_event_date": "2026-06-05",
+      "has_bon_context": false,
+      "official_urls": [
+        "https://linktr.ee/tokyohertz"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "🌈🌇Want to see more Beautiful Sunset videos? 👉https://www.youtube.com/playlist?list=PLR3ncRAlbZV5GND2sZ77ZUnZ4129SY5AO\n🌈🏙️Want to see more Shibuya Sky videos? 👉https://www.youtube.com/playlist?list=PLR3ncRAlbZV6DQI-XUKN0mKyR1SZcmtiD\n\n4K/HDR/",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "_HnAooPZGzk",
+      "video_url": "https://www.youtube.com/shorts/_HnAooPZGzk",
+      "source_url": "https://www.youtube.com/shorts/_HnAooPZGzk",
+      "title": "😍Amazing! Fireworks Make It Even More Romantic! | Shibuya Sky in Tokyo Jp 2026",
+      "channel_id": "UCaVANrt14S6q-if2BBOE4TQ",
+      "channel_title": "Tokyo Hz",
+      "published_at": "2026-06-09T18:00:00+00:00",
+      "detected_event_date": "",
+      "has_bon_context": false,
+      "official_urls": [
+        "https://linktr.ee/tokyohertz"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "🌈🌇Want to see more Beautiful Sunset videos? 👉https://www.youtube.com/playlist?list=PLR3ncRAlbZV5GND2sZ77ZUnZ4129SY5AO\n🌈🏙️Want to see more Shibuya Sky videos? 👉https://www.youtube.com/playlist?list=PLR3ncRAlbZV6DQI-XUKN0mKyR1SZcmtiD\n\n🎵You ca",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "7w_Nu3Tv1Ls",
+      "video_url": "https://www.youtube.com/watch?v=7w_Nu3Tv1Ls",
+      "source_url": "https://www.youtube.com/watch?v=7w_Nu3Tv1Ls",
+      "title": "🤩People Rushing to Take Photos During the Blue Hour! | Shibuya Crossing in Tokyo Jp  2026 4kHDR",
+      "channel_id": "UCaVANrt14S6q-if2BBOE4TQ",
+      "channel_title": "Tokyo Hz",
+      "published_at": "2026-06-10T01:00:13+00:00",
+      "detected_event_date": "2026-05-27",
+      "has_bon_context": false,
+      "official_urls": [
+        "https://linktr.ee/tokyohertz"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "🌈🚥Want to see more Shibuya Crossing videos?👉https://www.youtube.com/playlist?list=PLR3ncRAlbZV75mE6mTfFQHRiFzxpUjg5N\n🌈🏙️Want to see Shibuya Sky videos? 👉https://www.youtube.com/playlist?list=PLR3ncRAlbZV6DQI-XUKN0mKyR1SZcmtiD\n\n4K/HDR/60fps ",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "DRFQKnXEC08",
+      "video_url": "https://www.youtube.com/shorts/DRFQKnXEC08",
+      "source_url": "https://www.youtube.com/shorts/DRFQKnXEC08",
+      "title": "🤩People Rushing to Take Photos During the Blue Hour! | Shibuya Crossing in Tokyo Jp  2026",
+      "channel_id": "UCaVANrt14S6q-if2BBOE4TQ",
+      "channel_title": "Tokyo Hz",
+      "published_at": "2026-06-10T18:00:36+00:00",
+      "detected_event_date": "",
+      "has_bon_context": false,
+      "official_urls": [
+        "https://linktr.ee/tokyohertz"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "🌈🚥Want to see more Shibuya Crossing videos?👉https://www.youtube.com/playlist?list=PLR3ncRAlbZV75mE6mTfFQHRiFzxpUjg5N\n🌈🏙️Want to see Shibuya Sky videos? 👉https://www.youtube.com/playlist?list=PLR3ncRAlbZV6DQI-XUKN0mKyR1SZcmtiD\n\n🎵You can list",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "Wq4fvcIdg1g",
+      "video_url": "https://www.youtube.com/watch?v=Wq4fvcIdg1g",
+      "source_url": "https://www.youtube.com/watch?v=Wq4fvcIdg1g",
+      "title": "😆Another High-Energy Satsuei (Photo/Film) Dash! | Shibuya Crossing in Tokyo Jp  2026 4kHDR",
+      "channel_id": "UCaVANrt14S6q-if2BBOE4TQ",
+      "channel_title": "Tokyo Hz",
+      "published_at": "2026-06-11T01:00:03+00:00",
+      "detected_event_date": "2026-06-05",
+      "has_bon_context": false,
+      "official_urls": [
+        "https://linktr.ee/tokyohertz"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "🌈🚥Want to see more Shibuya Crossing videos?👉https://www.youtube.com/playlist?list=PLR3ncRAlbZV75mE6mTfFQHRiFzxpUjg5N\n🌈🏙️Want to see Shibuya Sky videos? 👉https://www.youtube.com/playlist?list=PLR3ncRAlbZV6DQI-XUKN0mKyR1SZcmtiD\n\n4K/HDR/60fps ",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "dZZ_oQ-yDKQ",
+      "video_url": "https://www.youtube.com/shorts/dZZ_oQ-yDKQ",
+      "source_url": "https://www.youtube.com/shorts/dZZ_oQ-yDKQ",
+      "title": "😆Another High-Energy Satsuei (Photo/Film) Dash! | Shibuya Crossing in Tokyo Jp  2026",
+      "channel_id": "UCaVANrt14S6q-if2BBOE4TQ",
+      "channel_title": "Tokyo Hz",
+      "published_at": "2026-06-11T18:00:12+00:00",
+      "detected_event_date": "",
+      "has_bon_context": false,
+      "official_urls": [
+        "https://linktr.ee/tokyohertz"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "🌈🚥Want to see more Shibuya Crossing videos?👉https://www.youtube.com/playlist?list=PLR3ncRAlbZV75mE6mTfFQHRiFzxpUjg5N\n🌈🏙️Want to see Shibuya Sky videos? 👉https://www.youtube.com/playlist?list=PLR3ncRAlbZV6DQI-XUKN0mKyR1SZcmtiD\n\n🎵You can list",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "J2nvA6zk2uo",
+      "video_url": "https://www.youtube.com/watch?v=J2nvA6zk2uo",
+      "source_url": "https://www.youtube.com/watch?v=J2nvA6zk2uo",
+      "title": "😆More Cosplayers Than Before! | Very Crowded Shibuya Crossing & Walk in Tokyo Jp  2026 4kHDR",
+      "channel_id": "UCaVANrt14S6q-if2BBOE4TQ",
+      "channel_title": "Tokyo Hz",
+      "published_at": "2026-06-12T01:00:27+00:00",
+      "detected_event_date": "2026-05-30",
+      "has_bon_context": false,
+      "official_urls": [
+        "https://linktr.ee/tokyohertz"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "🌈🚥Want to see more Shibuya Crossing videos?👉https://www.youtube.com/playlist?list=PLR3ncRAlbZV75mE6mTfFQHRiFzxpUjg5N\n🌈🏙️Want to see Shibuya Sky videos? 👉https://www.youtube.com/playlist?list=PLR3ncRAlbZV6DQI-XUKN0mKyR1SZcmtiD\n\n4K/HDR/60fps ",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "B3eg3PNJ39w",
+      "video_url": "https://www.youtube.com/shorts/B3eg3PNJ39w",
+      "source_url": "https://www.youtube.com/shorts/B3eg3PNJ39w",
+      "title": "😆More Cosplayers Than Before! | Very Crowded Shibuya Crossing & Walk in Tokyo Jp  2026",
+      "channel_id": "UCaVANrt14S6q-if2BBOE4TQ",
+      "channel_title": "Tokyo Hz",
+      "published_at": "2026-06-12T18:00:19+00:00",
+      "detected_event_date": "",
+      "has_bon_context": false,
+      "official_urls": [
+        "https://linktr.ee/tokyohertz"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "🌈🚥Want to see more Shibuya Crossing videos?👉https://www.youtube.com/playlist?list=PLR3ncRAlbZV75mE6mTfFQHRiFzxpUjg5N\n🌈🏙️Want to see Shibuya Sky videos? 👉https://www.youtube.com/playlist?list=PLR3ncRAlbZV6DQI-XUKN0mKyR1SZcmtiD\n\n🎵You can list",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "u90QeD9TZu4",
+      "video_url": "https://www.youtube.com/watch?v=u90QeD9TZu4",
+      "source_url": "https://www.youtube.com/watch?v=u90QeD9TZu4",
+      "title": "💗So Inspiring! A Gentle Yet Powerful Sunset w/ Clear Mt. Fuji | Windy Shibuya Sky in Tokyo Jp 4kHDR",
+      "channel_id": "UCaVANrt14S6q-if2BBOE4TQ",
+      "channel_title": "Tokyo Hz",
+      "published_at": "2026-06-13T01:00:16+00:00",
+      "detected_event_date": "2026-06-01",
+      "has_bon_context": false,
+      "official_urls": [
+        "https://linktr.ee/tokyohertz"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "🌈🌇Want to see more Beautiful Sunset videos? 👉https://www.youtube.com/playlist?list=PLR3ncRAlbZV5GND2sZ77ZUnZ4129SY5AO\n🌈🏙️Want to see more Shibuya Sky videos? 👉https://www.youtube.com/playlist?list=PLR3ncRAlbZV6DQI-XUKN0mKyR1SZcmtiD\n\n4K/HDR/",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "L9i70lMMHsI",
+      "video_url": "https://www.youtube.com/shorts/L9i70lMMHsI",
+      "source_url": "https://www.youtube.com/shorts/L9i70lMMHsI",
+      "title": "💗So Inspiring! A Gentle Yet Powerful Sunset w/ Clear Mt. Fuji | Windy Shibuya Sky in Tokyo Jp",
+      "channel_id": "UCaVANrt14S6q-if2BBOE4TQ",
+      "channel_title": "Tokyo Hz",
+      "published_at": "2026-06-13T18:00:26+00:00",
+      "detected_event_date": "",
+      "has_bon_context": false,
+      "official_urls": [
+        "https://linktr.ee/tokyohertz"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "🌈🌇Want to see more Beautiful Sunset videos? 👉https://www.youtube.com/playlist?list=PLR3ncRAlbZV5GND2sZ77ZUnZ4129SY5AO\n🌈🏙️Want to see more Shibuya Sky videos? 👉https://www.youtube.com/playlist?list=PLR3ncRAlbZV6DQI-XUKN0mKyR1SZcmtiD\n\n🎵You ca",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "QKi5tlHXqYw",
+      "video_url": "https://www.youtube.com/watch?v=QKi5tlHXqYw",
+      "source_url": "https://www.youtube.com/watch?v=QKi5tlHXqYw",
+      "title": "⚽World Cup Fever Has Taken Over Shibuya! | Miyashita Park to Shibuya Crossing in Tokyo Jp 4kHDR",
+      "channel_id": "UCaVANrt14S6q-if2BBOE4TQ",
+      "channel_title": "Tokyo Hz",
+      "published_at": "2026-06-14T01:00:03+00:00",
+      "detected_event_date": "2026-06-13",
+      "has_bon_context": false,
+      "official_urls": [
+        "https://linktr.ee/tokyohertz"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "🌈🚶🏻Want to see more Tokyo city walk videos?👉https://www.youtube.com/playlist?list=PLR3ncRAlbZV7g0RNVyylMYe7a7waujLIw\n🌈🏙️Want to see Shibuya Sky videos? 👉https://www.youtube.com/playlist?list=PLR3ncRAlbZV6DQI-XUKN0mKyR1SZcmtiD\n\n4K/HDR/60fps ",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "1eE2kqu8om8",
+      "video_url": "https://www.youtube.com/watch?v=1eE2kqu8om8",
+      "source_url": "https://www.youtube.com/watch?v=1eE2kqu8om8",
+      "title": "[4K]🇯🇵 渋谷 目黒蓮 佐久間大介 Snow Man 午後の紅茶 メルカリ 巨大広告 めめ / Giant billboard in front of Shibuya station.",
+      "channel_id": "UCKCspf_NrY16rUnODmBqOWA",
+      "channel_title": "Tokyo Lonely Walker",
+      "published_at": "2026-05-18T00:30:01+00:00",
+      "detected_event_date": "2025-05-18",
+      "has_bon_context": false,
+      "official_urls": [
+        "https://goo.gl/maps/kSAEbnkyHSchcccY6",
+        "https://goo.gl/maps/RQPEB3UWo2c8rxPm6",
+        "https://x.com/walkingfilmlove"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "Snow Manの目黒蓮にとって初のイギリス撮影となった『キリン 午後の紅茶』新CM「はじまりの午後」巨大広告が渋谷駅での展開がスタートしました。これで、現在渋谷駅の屋外広告は、めめとさっくん（佐久間大介）のSnow Manメンバー2人が独占している状態になっています。\nさらに、さっくんはメルカリでのプロモーションも渋谷で行われており、渋谷の各地で2人の顔が見れる街になっています。\n\nThe streets of Shibuya are currently filled wi",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "ZVLZdHg6b7E",
+      "video_url": "https://www.youtube.com/watch?v=ZVLZdHg6b7E",
+      "source_url": "https://www.youtube.com/watch?v=ZVLZdHg6b7E",
+      "title": "[4K]🇯🇵 目黒蓮 Snow Man 午後の紅茶 2026年 日本一長い交通広告 124m 代々木八幡駅 めめ / Longest traffic ad in Japan. Tokyo.",
+      "channel_id": "UCKCspf_NrY16rUnODmBqOWA",
+      "channel_title": "Tokyo Lonely Walker",
+      "published_at": "2026-05-22T00:00:09+00:00",
+      "detected_event_date": "2026-05-22",
+      "has_bon_context": false,
+      "official_urls": [
+        "https://goo.gl/maps/kSAEbnkyHSchcccY6",
+        "https://goo.gl/maps/igA97fcF59F9D23H7",
+        "https://twitter.com/walkingfilmlove"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "日本一長い交通広告の東京渋谷区の代々木八幡駅。\n2026年6月！Snow Manの目黒蓮が出演する『キリン 午後の紅茶』の新ヴィジュアル看板が掲出されました。初のイギリス撮影だという今回の写真たち！124ｍの巨大広告にこれでもかと素敵なめめが所狭して並んでいます。今年もインパクトの強い広告でした。\n\nYoyogi-Hachiman Station in Shibuya, Tokyo, is home to the longest traffic advertisement i",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "LKtnhKEMYUo",
+      "video_url": "https://www.youtube.com/watch?v=LKtnhKEMYUo",
+      "source_url": "https://www.youtube.com/watch?v=LKtnhKEMYUo",
+      "title": "[4K]🇯🇵 もはやカオス！撮影スポット化したスクランブル交差点！人気観光地 海外観光客 2026年5月 / Shibuya, Tokyo—a popular tourist destination!",
+      "channel_id": "UCKCspf_NrY16rUnODmBqOWA",
+      "channel_title": "Tokyo Lonely Walker",
+      "published_at": "2026-05-24T00:00:25+00:00",
+      "detected_event_date": "2026-05-23",
+      "has_bon_context": false,
+      "official_urls": [
+        "https://goo.gl/maps/kSAEbnkyHSchcccY6",
+        "https://goo.gl/maps/RQPEB3UWo2c8rxPm6",
+        "https://x.com/walkingfilmlove"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "2026年の5月の土曜日の渋谷の記録です。\nスクランブル交差点での写真撮影は益々過激になっている印象です。\n\nThis is a record of a Saturday in Shibuya in May 2026.\n\n2026.5.23 Sat\n4K60fps virtual walking tour\nOsmo Pocket 3\nZV-E10 II\n\nーーー\n▽Please Subscribe to my channel\nよろしければ登録お願いします\nhttps://ww",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "2bBJfuvAf-o",
+      "video_url": "https://www.youtube.com/shorts/2bBJfuvAf-o",
+      "source_url": "https://www.youtube.com/shorts/2bBJfuvAf-o",
+      "title": "嵐-Love so sweetでヲタ芸!! 誰もに愛される嵐!!ありがとう!! │肉フェス2026│DJ: パルム",
+      "channel_id": "UCKCspf_NrY16rUnODmBqOWA",
+      "channel_title": "Tokyo Lonely Walker",
+      "published_at": "2026-05-31T00:00:06+00:00",
+      "detected_event_date": "",
+      "has_bon_context": false,
+      "official_urls": [],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "Please Subscribe to my channe\nよろしければ登録お願いします \nhttps://www.youtube.com/channel/UCKCspf_NrY16rUnODmBqOWA \n\n東京の街やイベントの様子を記録しています\nDocumenting the city of Tokyo and its events",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "lqrTdZyCEhE",
+      "video_url": "https://www.youtube.com/watch?v=lqrTdZyCEhE",
+      "source_url": "https://www.youtube.com/watch?v=lqrTdZyCEhE",
+      "title": "必見のオタクの舞！ ヲタ芸！fripSide - only my railgun｜肉フェス2026 A-POP RAVE powered by ANTHEM AKIBA  [4K]🇯🇵",
+      "channel_id": "UCKCspf_NrY16rUnODmBqOWA",
+      "channel_title": "Tokyo Lonely Walker",
+      "published_at": "2026-06-08T01:00:21+00:00",
+      "detected_event_date": "2026-05-08",
+      "has_bon_context": false,
+      "official_urls": [
+        "https://goo.gl/maps/kSAEbnkyHSchcccY6",
+        "https://maps.app.goo.gl/XQJXM8VMDuw2cTgS8",
+        "https://x.com/walkingfilmlove"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "肉フェスのカラオケステージでは「A-POP RAVE powered by ANTHEM AKIBA」が行われかなりの盛り上がりを見せました！！\n\nThe Meat Festival 2026 was held in Odaiba, Tokyo, where otaku danced to Japanese pop and anime songs, creating a lively atmosphere. In Japan, this is known as “ota-ge",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "y6Yd44m5UNo",
+      "video_url": "https://www.youtube.com/watch?v=y6Yd44m5UNo",
+      "source_url": "https://www.youtube.com/watch?v=y6Yd44m5UNo",
+      "title": "大量のピカチュウが踊りまくる！可愛い！Pokemon GO Fest 2026 TOKYO ダンスステージ -EDM- ポケモン / Pikachu Dance Stage [4K]🇯🇵",
+      "channel_id": "UCKCspf_NrY16rUnODmBqOWA",
+      "channel_title": "Tokyo Lonely Walker",
+      "published_at": "2026-06-10T00:00:26+00:00",
+      "detected_event_date": "2026-05-31",
+      "has_bon_context": false,
+      "official_urls": [
+        "https://goo.gl/maps/kSAEbnkyHSchcccY6",
+        "https://maps.app.goo.gl/xdAShcWWw3HJwn5J6",
+        "https://x.com/walkingfilmlove"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "「Pokémon GO Fest 2026：東京」は世界中からたくさんの『Pokémon GO』トレーナーが集うリアルイベントです！\nステージでは、ピカチュウのダンスショーが行われ、この動画ではEDMにあわせてピカチュウがとても可愛く、そしてかっこよく踊ります！\n\n“Pokémon GO Fest 2026: Tokyo” is a live event that brings together Pokémon GO Trainers from all over the wo",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "mDNrK_VLaiM",
+      "video_url": "https://www.youtube.com/shorts/mDNrK_VLaiM",
+      "source_url": "https://www.youtube.com/shorts/mDNrK_VLaiM",
+      "title": "映画『Michael／マイケル』公開記念イベント！記念展示が素敵！東京ミッドタウン日比谷",
+      "channel_id": "UCKCspf_NrY16rUnODmBqOWA",
+      "channel_title": "Tokyo Lonely Walker",
+      "published_at": "2026-06-13T04:20:25+00:00",
+      "detected_event_date": "",
+      "has_bon_context": false,
+      "official_urls": [],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "Please Subscribe to my channe\nよろしければ登録お願いします \nhttps://www.youtube.com/channel/UCKCspf_NrY16rUnODmBqOWA \n\n東京の街やイベントの様子を記録しています\nDocumenting the city of Tokyo and its events",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "2ji-TF0BUJY",
+      "video_url": "https://www.youtube.com/watch?v=2ji-TF0BUJY",
+      "source_url": "https://www.youtube.com/watch?v=2ji-TF0BUJY",
+      "title": "【4K】「ALWAYS」- D-51 ライブ【OKINAWA FES Milafete 2026】 映画「ALWAYS 三丁目の夕日」主題歌  代々木公園 沖縄フェス オールウェイズ",
+      "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg",
+      "channel_title": "Urban Walk",
+      "published_at": "2026-05-27T01:36:01+00:00",
+      "detected_event_date": "2026-05-16",
+      "has_bon_context": false,
+      "official_urls": [
+        "https://www.google.com/maps/dir/%E4%BB%A3%E3%80%85%E6%9C%A8%E5%85%AC%E5%9C%92+%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E5%BA%83%E5%A0%B4%E3%80%81%E3%80%92150-0041+%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E7%A5%9E%E5%8D%97%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%93//@35.6671953,139.6947028,17.54z/data=!4m8!4m7!1m5!1m1!1s0x60188cb579969bcb:0xe59feb1f07f05c8c!2m2!1d139.6968179!2d35.6679403!1m0?entry=ttu"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "【OKINAWA FES Milafete 2026】\n開催日時：2026年5月16日(土)～17日(日)\n会場：代々木公園イベント広場\nhttps://www.google.com/maps/dir/%E4%BB%A3%E3%80%85%E6%9C%A8%E5%85%AC%E5%9C%92+%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E5%BA%83%E5%A0%B4%E3%80%81%E3%80%92150-0041+%E6%9D%B1%E4",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "KZhGIqUqepI",
+      "video_url": "https://www.youtube.com/watch?v=KZhGIqUqepI",
+      "source_url": "https://www.youtube.com/watch?v=KZhGIqUqepI",
+      "title": "【4K】「浪漫飛行」- きいやま商店 with 琉球獅子舞, 昇龍祭太鼓エイサー【沖縄めんそーれフェスタ 2026】 米米CLUB ライブ 池袋サンシャイン",
+      "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg",
+      "channel_title": "Urban Walk",
+      "published_at": "2026-05-28T02:08:14+00:00",
+      "detected_event_date": "",
+      "has_bon_context": false,
+      "official_urls": [],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "【沖縄めんそーれフェスタ 2026】\n\n00:00　浪漫飛行\n02:28　琉球獅子舞\n\n【関連動画】\n「三線の花」BEGIN - ありんくりん (比嘉りゅうた) \nhttps://youtu.be/9aNQKytUoQ0\n「OKIDOKI」- CHOUJI & Grace Aimi \nhttps://youtu.be/Bl9fL-hJcXM\n「花」- ORANGE RANGE ライブ\nhttps://youtu.be/Q5oaOjgEqdc\n\n#浪漫飛行 #きいやま商店 #沖",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "sC7g89vxXSA",
+      "video_url": "https://www.youtube.com/watch?v=sC7g89vxXSA",
+      "source_url": "https://www.youtube.com/watch?v=sC7g89vxXSA",
+      "title": "【4K】きいやま商店 ライブ【沖縄めんそーれフェスタ 2026】 琉球獅子舞, 昇龍祭太鼓エイサー ライブ 池袋サンシャイン 「じんがねーらん / 浪漫飛行 / シュラヨイ / 沖縄ロックンロール」",
+      "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg",
+      "channel_title": "Urban Walk",
+      "published_at": "2026-05-28T04:24:06+00:00",
+      "detected_event_date": "",
+      "has_bon_context": false,
+      "official_urls": [],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "【沖縄めんそーれフェスタ 2026】\n\n00:00　きいやま商店\n00:52　僕らの島\n06:32　じんがねーらん\n08:28　世界よ踊りまくれ\n11:50　自己紹介\n18:09　おかえり南ぬ島\n21:59　シュラヨイ\n25:21　沖縄ロックンロール\n29:05　アンコール\n30:35　浪漫飛行\n\n【関連動画】\n「三線の花」BEGIN - ありんくりん (比嘉りゅうた) \nhttps://youtu.be/9aNQKytUoQ0\n「OKIDOKI」- CHOUJI & Gra",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "iEsemDoQqBY",
+      "video_url": "https://www.youtube.com/watch?v=iEsemDoQqBY",
+      "source_url": "https://www.youtube.com/watch?v=iEsemDoQqBY",
+      "title": "東京丸の内でお昼休みに「綱引き大会 !!」 企業対抗 優勝チームは現役明治大学ラグビー部と頂上決戦!!【大手町・丸の内・有楽町 仲通り綱引き大会2026】決勝",
+      "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg",
+      "channel_title": "Urban Walk",
+      "published_at": "2026-05-28T21:34:12+00:00",
+      "detected_event_date": "2026-05-25",
+      "has_bon_context": false,
+      "official_urls": [],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "【大手町・丸の内・有楽町 仲通り綱引き大会2026】\n開催期間 2026年5月25日（月）～5月29日（金）\n開催場所 丸の内仲通り・大手町仲通り\n\n00:00　準決勝 CBRE(株) vs (株)テン・スターズ・ダイニング　\n02:05　決勝 (株)テン・スターズ・ダイニング vs (株)プロフィッツ\n04:42　明治大学ラグビー部 入場\n07:54　優勝チーム VS 明治大学ラグビー部\n10:20　健闘を称え合う\n11:30　表彰式\n19:39　フォトセッション\n\n#丸の",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "BOrlLQ16oyU",
+      "video_url": "https://www.youtube.com/watch?v=BOrlLQ16oyU",
+      "source_url": "https://www.youtube.com/watch?v=BOrlLQ16oyU",
+      "title": "【4K】「琉神マブヤー ～魂の戦士～」- DIAMANTES (アルベルト城間) ライブ【沖縄めんそーれフェスタ 2026】特撮「琉神マブヤー」テーマソング  池袋サンシャイン ディアマンテス",
+      "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg",
+      "channel_title": "Urban Walk",
+      "published_at": "2026-05-29T20:01:34+00:00",
+      "detected_event_date": "",
+      "has_bon_context": false,
+      "official_urls": [],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "【沖縄めんそーれフェスタ 2026】\n\n\n【関連動画】\n「三線の花」BEGIN - ありんくりん (比嘉りゅうた) \nhttps://youtu.be/9aNQKytUoQ0\n「OKIDOKI」- CHOUJI & Grace Aimi \nhttps://youtu.be/Bl9fL-hJcXM\n「花」- ORANGE RANGE ライブ\nhttps://youtu.be/Q5oaOjgEqdc\n\n#琉神マブヤー #DIAMANTES #沖縄めんそーれフェスタ #ライブ #フ",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "pPruYuxnGTU",
+      "video_url": "https://www.youtube.com/watch?v=pPruYuxnGTU",
+      "source_url": "https://www.youtube.com/watch?v=pPruYuxnGTU",
+      "title": "【東京ドーム】嵐 ラストライブツアー ファイナル 開演前の様子「ARASHI LIVE TOUR 2026 「We are ARASHI」」コンサート 物販 グッツ ARASHI Tokyo Dome",
+      "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg",
+      "channel_title": "Urban Walk",
+      "published_at": "2026-05-31T00:26:03+00:00",
+      "detected_event_date": "",
+      "has_bon_context": false,
+      "official_urls": [],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "#嵐 #東京ドーム #コンサート #ARASHI #ツアー #ライブ\n\n00:00　ハイライト\n03:03　正面入り口\n04:57　特別フォトスポット①\n08:24　特別フォトスポット①\n15:12　ガチャスポット\n21:17　フォトスポット②\n24:59　巨大モニター①\n27:16　巨大モニター②\n28:40　特別フォトスポット①\n31:17　正面入り口\n32:51　東京ドーム2階\n37:41　ミニモニター\n39:53　巨大モニター③\n43:57　ガチャスポット②\n44:5",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "77a1JUrixDE",
+      "video_url": "https://www.youtube.com/watch?v=77a1JUrixDE",
+      "source_url": "https://www.youtube.com/watch?v=77a1JUrixDE",
+      "title": "【東京ドーム】嵐 ラストライブツアー ファイナル ”開演後も人絶えず!”「ARASHI LIVE TOUR 2026 「We are ARASHI」」コンサート ARASHI Tokyo Dome",
+      "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg",
+      "channel_title": "Urban Walk",
+      "published_at": "2026-05-31T06:14:49+00:00",
+      "detected_event_date": "",
+      "has_bon_context": false,
+      "official_urls": [],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "#嵐 #東京ドーム #コンサート #ARASHI #ツアー #ライブ\n\n00:00　ハイライト\n01:21　ベルトモニター\n01:49　巨大モニター①\n02:15　夜の東京ドームホテルメッセージ\n05:32　巨大モニター②\n06:06　正面入り口\n09:16　巨大モニター③\n09:45　フォトスポット\n10:58　巨大モニター④\n15:23　巨大モニター②\n17:55　巨大モニター②\n19:29　音漏れ待機\n22:03　音漏れ待機\n25:27　音漏れ待機\n\n\n【関連動画】\nh",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "3zEQln0JpJ4",
+      "video_url": "https://www.youtube.com/watch?v=3zEQln0JpJ4",
+      "source_url": "https://www.youtube.com/watch?v=3zEQln0JpJ4",
+      "title": "【4K】キヨサク (MONGOL800) UKULELE GYPSY ライブ 全9曲「小さな恋のうた」【OKINAWA FES Milafete 2026】 ライブ  代々木公園 沖縄フェス モンパチ",
+      "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg",
+      "channel_title": "Urban Walk",
+      "published_at": "2026-06-02T00:46:10+00:00",
+      "detected_event_date": "2026-05-16",
+      "has_bon_context": false,
+      "official_urls": [
+        "https://www.google.com/maps/dir/%E4%BB%A3%E3%80%85%E6%9C%A8%E5%85%AC%E5%9C%92+%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E5%BA%83%E5%A0%B4%E3%80%81%E3%80%92150-0041+%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E7%A5%9E%E5%8D%97%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%93//@35.6671953,139.6947028,17.54z/data=!4m8!4m7!1m5!1m1!1s0x60188cb579969bcb:0xe59feb1f07f05c8c!2m2!1d139.6968179!2d35.6679403!1m0?entry=ttu"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "【OKINAWA FES Milafete 2026】\n開催日時：2026年5月16日(土)～17日(日)\n会場：代々木公園イベント広場\nhttps://www.google.com/maps/dir/%E4%BB%A3%E3%80%85%E6%9C%A8%E5%85%AC%E5%9C%92+%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E5%BA%83%E5%A0%B4%E3%80%81%E3%80%92150-0041+%E6%9D%B1%E4",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "rZ8ynlD9evI",
+      "video_url": "https://www.youtube.com/watch?v=rZ8ynlD9evI",
+      "source_url": "https://www.youtube.com/watch?v=rZ8ynlD9evI",
+      "title": "【4K】「ハイビスカス」- D-51 ライブ【OKINAWA FES Milafete 2026】   代々木公園 沖縄フェス オールウェイズ",
+      "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg",
+      "channel_title": "Urban Walk",
+      "published_at": "2026-06-03T02:35:12+00:00",
+      "detected_event_date": "2026-05-16",
+      "has_bon_context": false,
+      "official_urls": [
+        "https://www.google.com/maps/dir/%E4%BB%A3%E3%80%85%E6%9C%A8%E5%85%AC%E5%9C%92+%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E5%BA%83%E5%A0%B4%E3%80%81%E3%80%92150-0041+%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E7%A5%9E%E5%8D%97%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%93//@35.6671953,139.6947028,17.54z/data=!4m8!4m7!1m5!1m1!1s0x60188cb579969bcb:0xe59feb1f07f05c8c!2m2!1d139.6968179!2d35.6679403!1m0?entry=ttu"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "【OKINAWA FES Milafete 2026】\n開催日時：2026年5月16日(土)～17日(日)\n会場：代々木公園イベント広場\nhttps://www.google.com/maps/dir/%E4%BB%A3%E3%80%85%E6%9C%A8%E5%85%AC%E5%9C%92+%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E5%BA%83%E5%A0%B4%E3%80%81%E3%80%92150-0041+%E6%9D%B1%E4",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "9Z9En-TCxcE",
+      "video_url": "https://www.youtube.com/watch?v=9Z9En-TCxcE",
+      "source_url": "https://www.youtube.com/watch?v=9Z9En-TCxcE",
+      "title": "【4K】「Story」- AI ライブ【Tokyo Pride 2026】東京プライドレインボープライド  ai ストーリー",
+      "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg",
+      "channel_title": "Urban Walk",
+      "published_at": "2026-06-06T05:17:21+00:00",
+      "detected_event_date": "2026-06-06",
+      "has_bon_context": false,
+      "official_urls": [
+        "https://www.google.com/maps/dir/%E4%BB%A3%E3%80%85%E6%9C%A8%E5%85%AC%E5%9C%92+%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E5%BA%83%E5%A0%B4%E3%80%81%E3%80%92150-0041+%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E7%A5%9E%E5%8D%97%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%93//@35.6671953,139.6947028,17.54z/data=!4m8!4m7!1m5!1m1!1s0x60188cb579969bcb:0xe59feb1f07f05c8c!2m2!1d139.6968179!2d35.6679403!1m0?entry=ttu"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "【Tokyo Pride 2026】\n開催日時：2026年6月6日(土)～7日(日)\n会場：代々木公園イベント広場\nhttps://www.google.com/maps/dir/%E4%BB%A3%E3%80%85%E6%9C%A8%E5%85%AC%E5%9C%92+%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E5%BA%83%E5%A0%B4%E3%80%81%E3%80%92150-0041+%E6%9D%B1%E4%BA%AC%E9%8",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "lxYmETpLFlA",
+      "video_url": "https://www.youtube.com/watch?v=lxYmETpLFlA",
+      "source_url": "https://www.youtube.com/watch?v=lxYmETpLFlA",
+      "title": "【4K】「ハピネス」- AI ライブ【Tokyo Pride 2026】東京プライドレインボープライド  ai ストーリー",
+      "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg",
+      "channel_title": "Urban Walk",
+      "published_at": "2026-06-11T00:57:19+00:00",
+      "detected_event_date": "2026-06-06",
+      "has_bon_context": false,
+      "official_urls": [
+        "https://www.google.com/maps/dir/%E4%BB%A3%E3%80%85%E6%9C%A8%E5%85%AC%E5%9C%92+%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E5%BA%83%E5%A0%B4%E3%80%81%E3%80%92150-0041+%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E7%A5%9E%E5%8D%97%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%93//@35.6671953,139.6947028,17.54z/data=!4m8!4m7!1m5!1m1!1s0x60188cb579969bcb:0xe59feb1f07f05c8c!2m2!1d139.6968179!2d35.6679403!1m0?entry=ttu"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "【Tokyo Pride 2026】\n開催日時：2026年6月6日(土)～7日(日)\n会場：代々木公園イベント広場\nhttps://www.google.com/maps/dir/%E4%BB%A3%E3%80%85%E6%9C%A8%E5%85%AC%E5%9C%92+%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E5%BA%83%E5%A0%B4%E3%80%81%E3%80%92150-0041+%E6%9D%B1%E4%BA%AC%E9%8",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "pXMgH6VFg3E",
+      "video_url": "https://www.youtube.com/watch?v=pXMgH6VFg3E",
+      "source_url": "https://www.youtube.com/watch?v=pXMgH6VFg3E",
+      "title": "【4K】 DIAMANTES ライブ【沖縄めんそーれフェスタ 2026】「片手に三線を / 勝利のうた / VIVA!! 夏の色」  池袋サンシャイン ディアマンテス",
+      "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg",
+      "channel_title": "Urban Walk",
+      "published_at": "2026-06-12T02:16:32+00:00",
+      "detected_event_date": "",
+      "has_bon_context": false,
+      "official_urls": [],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "【沖縄めんそーれフェスタ 2026】\n\n00:00　VIVA!! 夏の色\n06:40　ヒヤミカチ節\n11:38　逢いたくて\n18:39　片手に三線を\n23:27　琉神マブヤー\n27:42　勝利のうた\n\n【関連動画】\n「三線の花」BEGIN - ありんくりん (比嘉りゅうた) \nhttps://youtu.be/9aNQKytUoQ0\n「OKIDOKI」- CHOUJI & Grace Aimi \nhttps://youtu.be/Bl9fL-hJcXM\n「花」- ORANGE",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "p30XofgX9AU",
+      "video_url": "https://www.youtube.com/watch?v=p30XofgX9AU",
+      "source_url": "https://www.youtube.com/watch?v=p30XofgX9AU",
+      "title": "【東京ドーム】NiziU 「Live with U 2026 \"NiziU : THE CINEMA\"」1日目開演前の様子 / コンサート ニジュー Tokyo Dome",
+      "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg",
+      "channel_title": "Urban Walk",
+      "published_at": "2026-06-12T22:41:49+00:00",
+      "detected_event_date": "",
+      "has_bon_context": false,
+      "official_urls": [],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "#NiziU #東京ドーム #コンサート #ツアー #ライブ\n\n00:00　ハイライト\n01:07　巨大モニター①\n\n【関連動画】\nhttps://youtu.be/_lkFWus2H3g\nhttps://youtu.be/r6u-JM3jyV0\nhttps://youtu.be/CK-GBdbFrVc",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "A6seMX5giYI",
+      "video_url": "https://www.youtube.com/watch?v=A6seMX5giYI",
+      "source_url": "https://www.youtube.com/watch?v=A6seMX5giYI",
+      "title": "【4K】「アンマー」- 前川真悟(かりゆし58 / O-ROOTS) ライブ 【下町ハイボールフェス】お母さん  上野",
+      "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg",
+      "channel_title": "Urban Walk",
+      "published_at": "2026-06-14T02:17:22+00:00",
+      "detected_event_date": "",
+      "has_bon_context": false,
+      "official_urls": [],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "【下町ハイボールフェス】\n\n【関連動画】\n【4K】かりゆし58 ライブ 2026\nhttps://youtu.be/sq5sZVvXiVs\n【4K】かりゆし58 ライブ 2025\nhttps://youtu.be/D8MD25KAsbk\n\n#アンマー #かりゆし58 #OROOTS #OKINAWAFES #下町ハイボールフェス #かりゆし #ライブ #フェス #firsttake #有線大賞新人賞",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "NF-PnEv5Gao",
+      "video_url": "https://www.youtube.com/watch?v=NF-PnEv5Gao",
+      "source_url": "https://www.youtube.com/watch?v=NF-PnEv5Gao",
+      "title": "【4K】「オワリはじまり」- 前川真悟(かりゆし58 / O-ROOTS) ライブ 【下町ハイボールフェス】  上野",
+      "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg",
+      "channel_title": "Urban Walk",
+      "published_at": "2026-06-14T04:16:36+00:00",
+      "detected_event_date": "",
+      "has_bon_context": false,
+      "official_urls": [],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "【下町ハイボールフェス】\n\n【関連動画】\n【4K】かりゆし58 ライブ 2026\nhttps://youtu.be/sq5sZVvXiVs\n【4K】かりゆし58 ライブ 2025\nhttps://youtu.be/D8MD25KAsbk\n4K【LIVE】観客が大合唱「オワリはじまり」- かりゆし58\nhttps://youtu.be/Kwo9Bdm5vzQ\n\n#オワリはじまり #かりゆし58 #OROOTS #OKINAWAFES #下町ハイボールフェス #かりゆし #ライブ",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "mtXypLBogW0",
+      "video_url": "https://www.youtube.com/watch?v=mtXypLBogW0",
+      "source_url": "https://www.youtube.com/watch?v=mtXypLBogW0",
+      "title": "【テクノジャズ：JAZZ PO POLSKU ～ MM3】「ポーランド・フェスティバル2026 Festiwal Polski w Tokio」2026.5.16 @六本木ヒルズアリーナ",
+      "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ",
+      "channel_title": "shu channel",
+      "published_at": "2026-05-16T07:46:21+00:00",
+      "detected_event_date": "2026-05-16",
+      "has_bon_context": false,
+      "official_urls": [
+        "https://instytutpolski.pl/tokyo/poland-festival-2026/"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "【テクノジャズ：JAZZ PO POLSKU ～ MM3】\n「ポーランド・フェスティバル2026 Festiwal Polski w Tokio 2026」\n2026.05.16 \n@六本木ヒルズアリーナ Roppongi Hills Arena\n■公式サイト\nhttps://instytutpolski.pl/tokyo/poland-festival-2026/\n【チャンネル内関連動画】\nhttps://youtu.be/a1O4Ow5dayw\nhttps://youtu",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "IAUWCwY71EA",
+      "video_url": "https://www.youtube.com/watch?v=IAUWCwY71EA",
+      "source_url": "https://www.youtube.com/watch?v=IAUWCwY71EA",
+      "title": "【ポーランド国立民族合唱舞踏団：Śląsk シロンスク】「ポーランド・フェスティバル2026 Festiwal Polski w Tokio」2026.5.16 @六本木ヒルズアリーナ",
+      "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ",
+      "channel_title": "shu channel",
+      "published_at": "2026-05-16T07:47:20+00:00",
+      "detected_event_date": "2026-05-16",
+      "has_bon_context": false,
+      "official_urls": [
+        "https://instytutpolski.pl/tokyo/poland-festival-2026/"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "【ポーランド国立民族合唱舞踏団：シロンスク Śląsk】\n「ポーランド・フェスティバル2026 Festiwal Polski w Tokio 2026」\n2026.05.16 \n@六本木ヒルズアリーナ Roppongi Hills Arena\n■公式サイト\nhttps://instytutpolski.pl/tokyo/poland-festival-2026/\n【チャンネル内関連動画】\nhttps://youtu.be/a1O4Ow5dayw\nhttps://youtu.",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "cH3FhGWGhfY",
+      "video_url": "https://www.youtube.com/watch?v=cH3FhGWGhfY",
+      "source_url": "https://www.youtube.com/watch?v=cH3FhGWGhfY",
+      "title": "【ソウルジャズ：Paulina Przybysz & Aga Derlak パウリナ・プシビシュ ＆アガ・デルラク】「ポーランド・フェスティバル2026」2026.5.16 @六本木ヒルズアリーナ",
+      "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ",
+      "channel_title": "shu channel",
+      "published_at": "2026-05-16T07:47:40+00:00",
+      "detected_event_date": "2026-05-16",
+      "has_bon_context": false,
+      "official_urls": [
+        "https://instytutpolski.pl/tokyo/poland-festival-2026/"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "【ソウルジャズ：Paulina Przybysz & Aga Derlak  パウリナ・プシビシュ ＆アガ・デルラク】\n「ポーランド・フェスティバル2026 Festiwal Polski w Tokio 2026」\n2026.05.16 \n@六本木ヒルズアリーナ Roppongi Hills Arena\n■公式サイト\nhttps://instytutpolski.pl/tokyo/poland-festival-2026/\n【チャンネル内関連動画】\nhttps://yout",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "JlBgAgJ82g0",
+      "video_url": "https://www.youtube.com/watch?v=JlBgAgJ82g0",
+      "source_url": "https://www.youtube.com/watch?v=JlBgAgJ82g0",
+      "title": "【弦楽五重奏：VOŁOSI ヴォウォシ】「ポーランド・フェスティバル2026 Festiwal Polski w Tokio」2026.5.16 @六本木ヒルズアリーナ",
+      "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ",
+      "channel_title": "shu channel",
+      "published_at": "2026-05-16T07:47:55+00:00",
+      "detected_event_date": "2026-05-16",
+      "has_bon_context": false,
+      "official_urls": [
+        "https://instytutpolski.pl/tokyo/poland-festival-2026/"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "【弦楽五重奏：VOŁOSI ヴォウォシ】\n「ポーランド・フェスティバル2026 Festiwal Polski w Tokio 2026」\n2026.05.16 \n@六本木ヒルズアリーナ Roppongi Hills Arena\n■公式サイト\nhttps://instytutpolski.pl/tokyo/poland-festival-2026/\n【チャンネル内関連動画】\nhttps://youtu.be/a1O4Ow5dayw\nhttps://youtu.be/qgUWC",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "vTSG7OoWc4I",
+      "video_url": "https://www.youtube.com/watch?v=vTSG7OoWc4I",
+      "source_url": "https://www.youtube.com/watch?v=vTSG7OoWc4I",
+      "title": "切腹ピストルズ Seppuku Pistols LIVE「東京ナイトマーケット Tokyo Night Market」2026.5.24 @代々木公園 Yoyogi Park",
+      "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ",
+      "channel_title": "shu channel",
+      "published_at": "2026-05-24T07:27:20+00:00",
+      "detected_event_date": "2026-05-24",
+      "has_bon_context": false,
+      "official_urls": [
+        "https://tokyo-night-market.com/"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "切腹ピストルズ（Seppuku Pistols）@seppuku_pistols\n「東京ナイトマーケット Tokyo Night Market」\n■日時：2026/05/24 20時20分～\n■場所：代々木公園 Yoyogi Park\n■「東京ナイトマーケット」公式サイト\nhttps://tokyo-night-market.com/\n■チャンネル内関連動画\nhttps://youtu.be/6Kds3CCjtz4\nhttps://youtu.be/s2BQnl-66PQ\nh",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "1y3yg8UDSFc",
+      "video_url": "https://www.youtube.com/watch?v=1y3yg8UDSFc",
+      "source_url": "https://www.youtube.com/watch?v=1y3yg8UDSFc",
+      "title": "赤坂・日枝神社⛩山王祭「神幸祭：皇居坂下門」Sanno Matsuri (Festival)［1/2］2026.6.12 @皇居坂下門前",
+      "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ",
+      "channel_title": "shu channel",
+      "published_at": "2026-06-11T23:10:33+00:00",
+      "detected_event_date": "2026-06-12",
+      "has_bon_context": false,
+      "official_urls": [
+        "https://www.tenkamatsuri.jp/"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "日本三大祭に数えられる赤坂・日枝神社山王祭での最大の盛儀で、優雅な格調高い御列は、都心に華麗な王朝絵巻を繰り広げ、 神威ひときわ輝く御鳳輦二基・宮神輿一基・山車三基が、王朝装束に威儀を正した総代役員や氏子青年に供奉されながら、氏子区域を巡幸しました。 供奉員総勢約500人・御列は300メートルに及びます。\n■山王祭－日枝神社の公式サイト\nhttps://www.tenkamatsuri.jp/\n■チャンネル内の関連動画\nhttps://youtu.be/-ZsY6fD-Biw",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "gNszJGnORv4",
+      "video_url": "https://www.youtube.com/watch?v=gNszJGnORv4",
+      "source_url": "https://www.youtube.com/watch?v=gNszJGnORv4",
+      "title": "赤坂・日枝神社⛩山王祭「神幸祭：東京駅前・行幸通り」Sanno Matsuri (Festival)［2/2］2026.6.12 @行幸通り・東京駅丸の内口前",
+      "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ",
+      "channel_title": "shu channel",
+      "published_at": "2026-06-11T23:10:58+00:00",
+      "detected_event_date": "2026-06-12",
+      "has_bon_context": false,
+      "official_urls": [
+        "https://www.tenkamatsuri.jp/"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "日本三大祭に数えられる赤坂・日枝神社山王祭での最大の盛儀で、優雅な格調高い御列は、都心に華麗な王朝絵巻を繰り広げ、 神威ひときわ輝く御鳳輦二基・宮神輿一基・山車三基が、王朝装束に威儀を正した総代役員や氏子青年に供奉されながら、氏子区域を巡幸しました。 供奉員総勢約500人・御列は300メートルに及びます。\n■山王祭－日枝神社の公式サイト\nhttps://www.tenkamatsuri.jp/\n■チャンネル内の関連動画\nhttps://youtu.be/-ZsY6fD-Biw",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "_cHg4R_LskY",
+      "video_url": "https://www.youtube.com/watch?v=_cHg4R_LskY",
+      "source_url": "https://www.youtube.com/watch?v=_cHg4R_LskY",
+      "title": "赤坂・日枝神社⛩山王祭「神輿宮入（石段上がり）」[1/3] Sanno Matsuri (Festival) 2026.6.13 @赤坂・日枝神社 Hie Jinja Shrine",
+      "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ",
+      "channel_title": "shu channel",
+      "published_at": "2026-06-13T05:46:57+00:00",
+      "detected_event_date": "2026-06-13",
+      "has_bon_context": false,
+      "official_urls": [
+        "https://www.tenkamatsuri.jp/"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "赤坂・日枝神社 山王祭での神社正面、鳥居下からの 「氏子各町連合宮入」の様子です。\n各町の氏子たちの神輿が山王日枝神社外縁道路に集合し、男坂を駆け上がって日枝神社境内に入ります。\n正面の鳥居から53段もある急勾配の石段を氏子たちが神輿を担いで駆け上がる姿は勇壮です。\n■「日枝神社 山王祭」公式サイト\nhttps://www.tenkamatsuri.jp/\n\n#山王祭\n#日枝神社\n#宮入",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "mXCJbaaxZAY",
+      "video_url": "https://www.youtube.com/watch?v=mXCJbaaxZAY",
+      "source_url": "https://www.youtube.com/watch?v=mXCJbaaxZAY",
+      "title": "赤坂・日枝神社⛩山王祭「神輿宮入（石段上がり）」[2/3] Sanno Matsuri (Festival) 2026.6.13 @赤坂・日枝神社 Hie Jinja Shrine",
+      "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ",
+      "channel_title": "shu channel",
+      "published_at": "2026-06-13T05:48:02+00:00",
+      "detected_event_date": "2026-06-13",
+      "has_bon_context": false,
+      "official_urls": [
+        "https://www.tenkamatsuri.jp/"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "赤坂・日枝神社 山王祭での神社正面、鳥居下からの 「氏子各町連合宮入」の様子です。\n各町の氏子たちの神輿が山王日枝神社外縁道路に集合し、男坂を駆け上がって日枝神社境内に入ります。\n正面の鳥居から53段もある急勾配の石段を氏子たちが神輿を担いで駆け上がる姿は勇壮です。\n■「日枝神社 山王祭」公式サイト\nhttps://www.tenkamatsuri.jp/\n\n#山王祭\n#日枝神社\n#宮入",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "baQWo6n-RRQ",
+      "video_url": "https://www.youtube.com/watch?v=baQWo6n-RRQ",
+      "source_url": "https://www.youtube.com/watch?v=baQWo6n-RRQ",
+      "title": "赤坂・日枝神社⛩山王祭「神輿宮入（石段上がり）」[3/3] Sanno Matsuri (Festival) 2026.6.13 @赤坂・日枝神社 Hie Jinja Shrine",
+      "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ",
+      "channel_title": "shu channel",
+      "published_at": "2026-06-13T05:49:11+00:00",
+      "detected_event_date": "2026-06-13",
+      "has_bon_context": false,
+      "official_urls": [
+        "https://www.tenkamatsuri.jp/"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "赤坂・日枝神社 山王祭での神社正面、鳥居下からの 「氏子各町連合宮入」の様子です。\n各町の氏子たちの神輿が山王日枝神社外縁道路に集合し、男坂を駆け上がって日枝神社境内に入ります。\n正面の鳥居から53段もある急勾配の石段を氏子たちが神輿を担いで駆け上がる姿は勇壮です。\n■「日枝神社 山王祭」公式サイト\nhttps://www.tenkamatsuri.jp/\n\n#山王祭\n#日枝神社\n#宮入",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "rw6hb_2c2Jc",
+      "video_url": "https://www.youtube.com/watch?v=rw6hb_2c2Jc",
+      "source_url": "https://www.youtube.com/watch?v=rw6hb_2c2Jc",
+      "title": "赤坂・日枝神社⛩山王祭「下町連合渡御」[1/4]子供神輿ほか Sanno Matsuri (Festival) 2026.6.14 @日本橋・日本国道路元標前",
+      "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ",
+      "channel_title": "shu channel",
+      "published_at": "2026-06-14T05:51:53+00:00",
+      "detected_event_date": "2026-06-14",
+      "has_bon_context": false,
+      "official_urls": [
+        "https://www.tenkamatsuri.jp/"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "赤坂・日枝神社 山王祭「下町連合渡御」\n■「日枝神社 山王祭」公式サイト\nhttps://www.tenkamatsuri.jp/\n\n#山王祭\n#日枝神社\n#日本国道路元標",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "B0ML4j8N4eU",
+      "video_url": "https://www.youtube.com/watch?v=B0ML4j8N4eU",
+      "source_url": "https://www.youtube.com/watch?v=B0ML4j8N4eU",
+      "title": "赤坂・日枝神社⛩山王祭「下町連合渡御」[2/4] 木遣り他 Sanno Matsuri (Festival) 2026.6.14 @日本橋・日本国道路元標前",
+      "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ",
+      "channel_title": "shu channel",
+      "published_at": "2026-06-14T05:52:03+00:00",
+      "detected_event_date": "2026-06-14",
+      "has_bon_context": false,
+      "official_urls": [
+        "https://www.tenkamatsuri.jp/"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "赤坂・日枝神社 山王祭「下町連合渡御」\n■「日枝神社 山王祭」公式サイト\nhttps://www.tenkamatsuri.jp/\n\n#山王祭\n#日枝神社\n#日本国道路元標\n#日本橋",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "DiqDOOBAPjg",
+      "video_url": "https://www.youtube.com/watch?v=DiqDOOBAPjg",
+      "source_url": "https://www.youtube.com/watch?v=DiqDOOBAPjg",
+      "title": "赤坂・日枝神社⛩山王祭「下町連合渡御」[3/4]日本橋一丁目（日本一）神輿ほか Sanno Matsuri (Festival) 2026.6.14 @日本橋・日本国道路元標前",
+      "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ",
+      "channel_title": "shu channel",
+      "published_at": "2026-06-14T05:52:53+00:00",
+      "detected_event_date": "2026-06-14",
+      "has_bon_context": false,
+      "official_urls": [
+        "https://www.tenkamatsuri.jp/"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "赤坂・日枝神社 山王祭「下町連合渡御」\n■「日枝神社 山王祭」公式サイト\nhttps://www.tenkamatsuri.jp/\n\n#山王祭\n#日枝神社\n#日本国道路元標",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "e4DwpcKoS68",
+      "video_url": "https://www.youtube.com/watch?v=e4DwpcKoS68",
+      "source_url": "https://www.youtube.com/watch?v=e4DwpcKoS68",
+      "title": "赤坂・日枝神社⛩山王祭「下町連合渡御」[4/4] 日本橋檜物町神輿ほか Sanno Matsuri (Festival) 2026.6.14 @日本橋・日本国道路元標前",
+      "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ",
+      "channel_title": "shu channel",
+      "published_at": "2026-06-14T05:53:02+00:00",
+      "detected_event_date": "2026-06-14",
+      "has_bon_context": false,
+      "official_urls": [
+        "https://www.tenkamatsuri.jp/"
+      ],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "赤坂・日枝神社 山王祭「下町連合渡御」\n■「日枝神社 山王祭」公式サイト\nhttps://www.tenkamatsuri.jp/\n\n#山王祭\n#日枝神社\n#日本国道路元標",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "eSqPmd-LUKM",
+      "video_url": "https://www.youtube.com/watch?v=eSqPmd-LUKM",
+      "source_url": "https://www.youtube.com/watch?v=eSqPmd-LUKM",
+      "title": "【4K】鳶が大神輿に乗って誘導！！！　隅田川神社　例大祭（8年ぶりの本社大神輿渡御）ダイジェスト　2026年6月14日",
+      "channel_id": "UCNF_5e3ZvziJueTWvTPATGw",
+      "channel_title": "和太鼓お祭りCH",
+      "published_at": "2026-06-13T21:36:47+00:00",
+      "detected_event_date": "2026-06-14",
+      "has_bon_context": false,
+      "official_urls": [],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "2026年6月14日、東京都墨田区にある隅田川神社にて行われた例大祭の模様をお届けします。\n\n今回の目玉は、実に関東大震災から数えても稀な、そして今回は8年ぶりとなる「本社大神輿渡御」です。 特に注目すべきは、神輿の屋根に乗って進行を誘導する「鳶（とび）」の勇姿。桜の枝を傷つけぬよう、華麗な身のこなしで巨大な神輿を導く姿は圧巻の一言です。\n\n江戸の粋と伝統が息づく、熱気あふれる渡御の様子を4K高画質でぜひお楽しみください！",
+      "action": "ignore",
+      "priority": "low"
+    },
+    {
+      "video_id": "EQGF-Zpk7zo",
+      "video_url": "https://www.youtube.com/watch?v=EQGF-Zpk7zo",
+      "source_url": "https://www.youtube.com/watch?v=EQGF-Zpk7zo",
+      "title": "【4K】矢先稲荷神社大祭 本社神輿が街をゆく 2026年6月14日",
+      "channel_id": "UCNF_5e3ZvziJueTWvTPATGw",
+      "channel_title": "和太鼓お祭りCH",
+      "published_at": "2026-06-14T04:30:05+00:00",
+      "detected_event_date": "2026-06-14",
+      "has_bon_context": false,
+      "official_urls": [],
+      "matched_public_event": null,
+      "setlist_occurrences": [],
+      "out_of_scope": false,
+      "description_excerpt": "2026年6月14日に執り行われた、\n東京・浅草（松が谷）の「矢先稲荷神社大祭」の様子をお届けします。 \n見どころは、なんといっても江戸の粋を感じさせる「本社神輿」の渡御です。\n街中を威勢よく進む神輿の迫力と、熱気あふれる祭りの空気感をダイジェストでお楽しみください！\n\n和太鼓お祭りチャンネルでは、日本各地の伝統的なお祭りや力強い和太鼓の響きを記録しています。",
+      "action": "ignore",
+      "priority": "low"
+    }
+  ]
+}

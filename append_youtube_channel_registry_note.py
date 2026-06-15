@@ -81,12 +81,16 @@ def append_progress_note():
             "Tokyo Hz、Exploring Japan with Zen、shu channel。watchは0件。"
         ),
         bullet(
-            "手動RSS取り込み: active 7チャンネルを対象化。YouTube voiceは273件、data/youtube_channels.json は6チャンネルに正規化済み。"
-            "Exploring Japan with Zen はRSSが空/取得失敗扱いのため、台帳上activeだが未収集。"
+            "手動RSS取り込み: active 7チャンネルを対象化。再実行でExploring Japan with Zenも取得成功。"
+            "YouTube voiceは288件、data/youtube_channels.json は7チャンネルに正規化済み。"
         ),
         bullet(
             "曲目接続: data/youtube_setlist_occurrences.json を再生成し、9 occurrence / 201曲を抽出。"
             "data/song_occurrences.json は10 occurrence / 206曲に更新。山王音頭と民踊大会の重複分裂は補正済み。"
+        ),
+        bullet(
+            "動画レビュー: data/youtube_active_video_review.json / .md を追加。active各15件、計105件を分類。"
+            "append_existing_event=17、needs_official_confirmation=6、review_video_evidence=10、out_of_scope=18、ignore=54。"
         ),
         bullet(
             "安全ルール: YouTube単独では新規イベントを本登録しない。サムネイルは動画証拠として扱い、会場写真として誤用しない。"
