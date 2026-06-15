@@ -95,8 +95,13 @@ def append_next_tasks_note():
             "結果は data/youtube_official_confirmation_apply_result.json / .md に保存。"
         ),
         bullet(
-            "優先3: review_video_evidence 10件は、自由が丘・丸の内・渋谷の短尺動画中心。"
-            "曲目/動画証拠として残すか、既存イベント証拠へ寄せるかを確認する。"
+            "優先3: review_video_evidence 10件を処理。自由が丘2件・丸の内4件は既存イベントへ"
+            "[youtube_evidence] YouTube shorts追加証拠として追記済み。再dry-runでchanged=0を確認。"
+            "結果は data/youtube_review_video_evidence_apply_result.json / .md に保存。"
+        ),
+        bullet(
+            "優先3 hold: 渋谷盆踊り2025の短尺動画4件は、公式確認が未解決のため保留。"
+            "YouTube単独では本DB登録/既存イベント追記をしない。"
         ),
         bullet(
             "保留: out_of_scope 18件は横浜など現行公開DB範囲外。全国展開候補として保持し、東京23区公開DBには入れない。"
@@ -120,8 +125,8 @@ def main():
         raise SystemExit("NOTION_API_TOKEN is not set")
 
     current_text = (
-        "YouTube次課題: append_existing_event系とneeds_official_confirmation 6件は整理済み。"
-        "次はreview_video_evidence 10件を処理する。"
+        "YouTube次課題: review_video_evidence 10件は自由が丘2件・丸の内4件を反映済み。"
+        "次は渋谷holdの公式確認、またはYouTube証拠DB/occurrence分離設計を進める。"
     )
 
     if args.dry_run:

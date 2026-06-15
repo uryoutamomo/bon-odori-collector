@@ -1,0 +1,164 @@
+{
+  "generated_by": "apply_youtube_review_video_evidence.py",
+  "generated_at": "2026-06-15T15:39:03.276633+00:00",
+  "mode": "dry_run",
+  "apply_performed": false,
+  "ready_count": 2,
+  "changed_count": 0,
+  "applied_count": 0,
+  "held_count": 4,
+  "updates": [
+    {
+      "target_event_name": "丸の内de盆踊り",
+      "row_count": 4,
+      "video_count": 4,
+      "apply_status": "ready",
+      "reason": "",
+      "videos": [
+        {
+          "video_url": "https://www.youtube.com/shorts/X7b8ZKhyOck",
+          "title": "Marunouchi Bon Dance, Tokyo 01    丸の内 盆踊り 01    #shorts",
+          "channel_title": "Exploring Japan with Zen",
+          "published_at": "2025-07-28T00:23:19+00:00",
+          "detected_event_date": "",
+          "decision": "append_existing_event",
+          "target_event_name": "丸の内de盆踊り",
+          "reason": "公式確認済みイベントの短尺動画補助証拠として利用できる"
+        },
+        {
+          "video_url": "https://www.youtube.com/shorts/Gr5qUEwYzdo",
+          "title": "Marunouchi Bon Dance, Tokyo 02    丸の内 盆踊り 02   #shorts",
+          "channel_title": "Exploring Japan with Zen",
+          "published_at": "2025-07-29T02:24:47+00:00",
+          "detected_event_date": "",
+          "decision": "append_existing_event",
+          "target_event_name": "丸の内de盆踊り",
+          "reason": "公式確認済みイベントの短尺動画補助証拠として利用できる"
+        },
+        {
+          "video_url": "https://www.youtube.com/shorts/DqLOwuakCjA",
+          "title": "Marunouchi Bon Dance, 03 DJ TIme    丸の内 盆踊り 03 DJ TIme   #shorts",
+          "channel_title": "Exploring Japan with Zen",
+          "published_at": "2025-08-01T16:28:27+00:00",
+          "detected_event_date": "",
+          "decision": "append_existing_event",
+          "target_event_name": "丸の内de盆踊り",
+          "reason": "公式確認済みイベントの短尺動画補助証拠として利用できる"
+        },
+        {
+          "video_url": "https://www.youtube.com/shorts/yG8WH6hESdg",
+          "title": "Marunouchi Bon Dance, 04 DJ TIme    丸の内 盆踊り 04 DJ TIme    #shorts",
+          "channel_title": "Exploring Japan with Zen",
+          "published_at": "2025-08-02T16:34:09+00:00",
+          "detected_event_date": "",
+          "decision": "append_existing_event",
+          "target_event_name": "丸の内de盆踊り",
+          "reason": "公式確認済みイベントの短尺動画補助証拠として利用できる"
+        }
+      ],
+      "target_page_id": "3808be04-e762-8157-84ba-d94bcedced97",
+      "target_page_url": "https://app.notion.com/p/de-3808be04e762815784bad94bcedced97",
+      "duplicate_url_count": 4,
+      "changed": false,
+      "note": "[youtube_evidence] YouTube shorts追加証拠\n- 対象イベント: 丸の内de盆踊り\n- 検出日付: 未抽出\n- 動画数: 4\n- チャンネル: Exploring Japan with Zen\n- 動画: https://www.youtube.com/shorts/X7b8ZKhyOck / Exploring Japan with Zen / Marunouchi Bon Dance, Tokyo 01    丸の内 盆踊り 01    #shorts\n- 動画: https://www.youtube.com/shorts/Gr5qUEwYzdo / Exploring Japan with Zen / Marunouchi Bon Dance, Tokyo 02    丸の内 盆踊り 02   #shorts\n- 動画: https://www.youtube.com/shorts/DqLOwuakCjA / Exploring Japan with Zen / Marunouchi Bon Dance, 03 DJ TIme    丸の内 盆踊り 03 DJ TIme   #shorts\n- 動画: https://www.youtube.com/shorts/yG8WH6hESdg / Exploring Japan with Zen / Marunouchi Bon Dance, 04 DJ TIme    丸の内 盆踊り 04 DJ TIme    #shorts",
+      "properties": {
+        "開催パターン詳細": {
+          "rich_text": [
+            {
+              "text": {
+                "content": "2025-07-25〜2025-07-26、行幸通りで開催。公式ページ「丸の内夏祭り2025」in 行幸通り内の丸の内de盆踊り。7/25 盆踊り 17:00-18:15 / 19:00-19:40 / 20:00-21:00、7/26 盆踊り 18:00-19:00 / 19:20-20:10 / 20:40-21:00。\n\n[youtube_evidence] 2025実績証拠\n- 動画: https://www.youtube.com/watch?v=_cggqDBTu20\n- チャンネル: shu channel\n- サムネイル: https://i.ytimg.com/vi/_cggqDBTu20/maxresdefault.jpg\n- 曲目候補: 丸の内音頭, 東京音頭, 大東京音頭, ドンパン節, 炭坑節, お江戸日本橋, 八木節\n\n[youtube_evidence] YouTube公式確認済み追加証拠\n- 対象イベント: 丸の内de盆踊り\n- 検出日付: 2025-07-26\n- 動画数: 3\n- チャンネル: Exploring Japan with Zen\n- 動画: https://www.youtube.com/watch?v=seY6P_Ngq4E / Exploring Japan with Zen / Marunouchi Bon Odori Dance festival PART 1  /  丸の内盆踊り 2025 パート１\n- 動画: https://www.youtube.com/watch?v=wsnxABvy3BM / Exploring Japan with Zen / Marunouchi Bon Odori Dance festival PART 2  /  丸の内盆踊り 2025 パート2\n- 動画: https://www.youtube.com/watch?v=Otv4gDwv8io / Exploring Japan with Zen / Marunouchi Bon Odori Dance festival DJ J-POP Time  /  丸の内盆踊り 2025 DJ J-POP Time\n- 公式確認URL: https://www.marunouchi.com/pickup/event/6763/\n\n[youtube_evidence] YouTube shorts追加証拠\n- 対象イベント: 丸の内de盆踊り\n- 検出日付: 未抽出\n- 動画数: 4\n- チャンネル: Exploring Japan with Zen\n- 動画: https://www.youtube.com/shorts/X7b8ZKhyOck / Exploring Japan with Zen / Marunouchi Bon Dance, Tokyo 01    丸の内 盆踊り 01    #shorts\n- 動画: https://www.youtube.com/shorts/Gr5qUEwYzdo / Exploring Japan with Zen / Marunouchi Bon Dance, Tokyo 02    丸の内 盆踊り 02   #shorts\n- 動画: https://www.youtube.com/shorts/DqLOwuakCjA / Exploring Japan with Zen / Marunouchi Bon Dance, 03 DJ TIme    丸の内 盆踊り 03 DJ TIme   #shorts\n- 動画: https://www.youtube.com/shorts/yG8WH6hESdg / Exploring Japan with Zen / Marunouchi Bon Dance, 04 DJ TIme    丸の内 盆踊り 04 DJ TIme    #shorts"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "target_event_name": "自由が丘納涼盆踊り大会",
+      "row_count": 2,
+      "video_count": 2,
+      "apply_status": "ready",
+      "reason": "",
+      "videos": [
+        {
+          "video_url": "https://www.youtube.com/shorts/s2Kij5MpxrA",
+          "title": "Jiyugaoka Bon Dance 2025-03    自由が丘 盆踊り 2025　自由が丘小唄　#shorts",
+          "channel_title": "Exploring Japan with Zen",
+          "published_at": "2025-07-23T21:31:17+00:00",
+          "detected_event_date": "",
+          "decision": "append_existing_event",
+          "target_event_name": "自由が丘納涼盆踊り大会",
+          "reason": "既存イベントの曲目/動画補助証拠として利用できる"
+        },
+        {
+          "video_url": "https://www.youtube.com/shorts/ayI7aE9ixWI",
+          "title": "Jiyugaoka Bon Dance 2025-04    自由が丘 盆踊り 2025　ダンシングヒーロー　#shorts",
+          "channel_title": "Exploring Japan with Zen",
+          "published_at": "2025-07-25T01:29:34+00:00",
+          "detected_event_date": "",
+          "decision": "append_existing_event",
+          "target_event_name": "自由が丘納涼盆踊り大会",
+          "reason": "既存イベントの曲目/動画補助証拠として利用できる"
+        }
+      ],
+      "target_page_id": "37b8be04-e762-817c-93bf-d2fafc0103c3",
+      "target_page_url": "https://app.notion.com/p/37b8be04e762817c93bfd2fafc0103c3",
+      "duplicate_url_count": 2,
+      "changed": false,
+      "note": "[youtube_evidence] YouTube shorts追加証拠\n- 対象イベント: 自由が丘納涼盆踊り大会\n- 検出日付: 未抽出\n- 動画数: 2\n- チャンネル: Exploring Japan with Zen\n- 動画: https://www.youtube.com/shorts/s2Kij5MpxrA / Exploring Japan with Zen / Jiyugaoka Bon Dance 2025-03    自由が丘 盆踊り 2025　自由が丘小唄　#shorts\n- 動画: https://www.youtube.com/shorts/ayI7aE9ixWI / Exploring Japan with Zen / Jiyugaoka Bon Dance 2025-04    自由が丘 盆踊り 2025　ダンシングヒーロー　#shorts",
+      "properties": {
+        "開催パターン詳細": {
+          "rich_text": [
+            {
+              "text": {
+                "content": "2025-07-19〜2025-07-21 開催予定。東京盆踊りマップから確定日として反映。\n2025 [J3]\n7/19 - 21\n自由が丘駅前ロータリー 特設会場\n自由が丘商店街振興組合、自由が丘住区青少年委員会\n「自由が丘納涼盆踊り大会」7月19日(土)-21日(月祝) 18時-21時。\n大好評企画:踊りコンテスト!! 20日(日)。\n「新曲:RPG」\n雨天中止。\n\n[youtube_evidence] 2025実績証拠\n- 対象イベント: 自由が丘納涼盆踊り大会\n- 検出日付: 2025-07-21\n- 動画: https://www.youtube.com/watch?v=mvHqQY2ISJE\n- チャンネル: 和太鼓お祭りチャンネル\n- サムネイル: https://i.ytimg.com/vi/mvHqQY2ISJE/maxresdefault.jpg\n- 曲目候補: 北海盆唄, 炭坑節, 大東京音頭, ダンシング・ヒーロー, やる気で音頭, 自由が丘小唄, ホイップるん音頭, 東京音頭\n\n[youtube_evidence] YouTube shorts追加証拠\n- 対象イベント: 自由が丘納涼盆踊り大会\n- 検出日付: 未抽出\n- 動画数: 2\n- チャンネル: Exploring Japan with Zen\n- 動画: https://www.youtube.com/shorts/s2Kij5MpxrA / Exploring Japan with Zen / Jiyugaoka Bon Dance 2025-03    自由が丘 盆踊り 2025　自由が丘小唄　#shorts\n- 動画: https://www.youtube.com/shorts/ayI7aE9ixWI / Exploring Japan with Zen / Jiyugaoka Bon Dance 2025-04    自由が丘 盆踊り 2025　ダンシングヒーロー　#shorts"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "held": [
+    {
+      "video_url": "https://www.youtube.com/shorts/tmgiQ18cXvY",
+      "title": "Shibuya Bon Dance 2025, You Make Shibuya    渋谷盆踊り 2025 夢みる渋谷　#shorts",
+      "channel_title": "Exploring Japan with Zen",
+      "published_at": "2025-08-06T20:32:38+00:00",
+      "detected_event_date": "",
+      "decision": "hold",
+      "target_event_name": "渋谷盆踊り2025",
+      "reason": "公式確認が未解決のため、YouTube短尺動画単独では登録/追記しない"
+    },
+    {
+      "video_url": "https://www.youtube.com/shorts/BY7he8CsGwk",
+      "title": "Shibuya Bon Dance 2025, Great Tokyo Ondo 1   渋谷盆踊り 2025 大東京音頭-1   #shorts",
+      "channel_title": "Exploring Japan with Zen",
+      "published_at": "2025-08-07T14:58:29+00:00",
+      "detected_event_date": "",
+      "decision": "hold",
+      "target_event_name": "渋谷盆踊り2025",
+      "reason": "公式確認が未解決のため、YouTube短尺動画単独では登録/追記しない"
+    },
+    {
+      "video_url": "https://www.youtube.com/shorts/NU9Ed2ypoR4",
+      "title": "Shibuya Bon Dance 2025, Great Tokyo Ondo 2    渋谷盆踊り 2025 大東京音頭-2    #shorts",
+      "channel_title": "Exploring Japan with Zen",
+      "published_at": "2025-08-08T23:28:42+00:00",
+      "detected_event_date": "",
+      "decision": "hold",
+      "target_event_name": "渋谷盆踊り2025",
+      "reason": "公式確認が未解決のため、YouTube短尺動画単独では登録/追記しない"
+    },
+    {
+      "video_url": "https://www.youtube.com/shorts/Ccx04lQCgUY",
+      "title": "Shibuya Bon Dance 2025, Cheerleader Show   渋谷盆踊り 2025 チアリーダー、フラダンスなど　#shorts",
+      "channel_title": "Exploring Japan with Zen",
+      "published_at": "2025-08-10T19:35:17+00:00",
+      "detected_event_date": "",
+      "decision": "hold",
+      "target_event_name": "渋谷盆踊り2025",
+      "reason": "公式確認が未解決のため、YouTube短尺動画単独では登録/追記しない"
+    }
+  ]
+}

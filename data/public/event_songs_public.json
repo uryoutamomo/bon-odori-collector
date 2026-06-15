@@ -1208,6 +1208,11 @@
         "evidence_count": 1,
         "speaker_count": 1,
         "setlist_complete": false
+      },
+      {
+        "name": "ダンシングヒーロー",
+        "confidence": "hint",
+        "source_count": 1
       }
     ]
   },
