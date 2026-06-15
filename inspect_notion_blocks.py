@@ -47,6 +47,12 @@ def block_text(block):
     return ""
 
 
+def block_checked(block):
+    if block.get("type") != "to_do":
+        return None
+    return bool((block.get("to_do") or {}).get("checked"))
+
+
 def children(block_id):
     rows = []
     cursor = ""
@@ -76,6 +82,7 @@ def main():
             "id": block.get("id"),
             "type": block.get("type"),
             "has_children": block.get("has_children"),
+            "checked": block_checked(block),
             "text": block_text(block),
         }, ensure_ascii=False))
         if args.children and block.get("has_children"):
@@ -85,6 +92,7 @@ def main():
                     "id": child.get("id"),
                     "type": child.get("type"),
                     "has_children": child.get("has_children"),
+                    "checked": block_checked(child),
                     "text": block_text(child),
                 }, ensure_ascii=False))
 
