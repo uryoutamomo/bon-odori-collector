@@ -74,12 +74,16 @@ def append_next_tasks_note():
         ),
         bullet(
             "優先1 dry-run結果: data/youtube_active_existing_event_update_dry_run.json / .md を追加。"
-            "5グループに集約され、山王音頭と民踊大会4件はapply済み。"
-            "国立旭通りジューンフェスタ盆踊り1件はNotionイベントページ未発見でblocked。"
+            "再実行でready=0、review=0、blocked=0、done=5を確認。"
+            "山王音頭と民踊大会4件と国立旭通りジューンフェスタ盆踊り1件は処理済み。"
         ),
         bullet(
             "優先1 apply結果: data/youtube_active_existing_event_update_apply_result.json / .md を追加。"
             "再dry-runで山王音頭と民踊大会はchanged=0となり、重複追記されないことを確認済み。"
+        ),
+        bullet(
+            "国立旭通りblocked解消: 予定管理DBには既存ページがあったが、イベント本DB未登録だったため、"
+            "data/youtube_blocked_new_event_apply_result.json / .md を追加し、会場1件・イベント1件を本DBへ登録。"
         ),
         bullet(
             "優先2: needs_official_confirmation 6件を確認する。丸の内は公式URLありで既存/登録済み扱いへ寄せやすい。"
@@ -111,8 +115,8 @@ def main():
         raise SystemExit("NOTION_API_TOKEN is not set")
 
     current_text = (
-        "YouTube次課題: 山王音頭と民踊大会はYouTube証拠反映済み。次は国立旭通りblocked解消、"
-        "needs_official_confirmation 6件、review_video_evidence 10件を順に処理する。"
+        "YouTube次課題: append_existing_event系はready=0/review=0/blocked=0/done=5まで整理済み。"
+        "次はneeds_official_confirmation 6件、review_video_evidence 10件を順に処理する。"
     )
 
     if args.dry_run:

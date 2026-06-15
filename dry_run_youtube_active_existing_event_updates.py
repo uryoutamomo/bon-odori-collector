@@ -18,6 +18,14 @@ YOUTUBE_SETLISTS = Path("data/youtube_setlist_occurrences.json")
 OUT = Path("data/youtube_active_existing_event_update_dry_run.json")
 MARKDOWN_OUT = Path("data/youtube_active_existing_event_update_dry_run.md")
 
+EVENT_NAME_ALIASES = {
+    "国立旭通りジューンフェスタ盆踊り": [
+        "ジューンフェスタ2026 盆踊り（国立市旭通り商店会）",
+        "国立旭通りジューンフェスタ",
+        "国立ジューンフェスタ",
+    ],
+}
+
 
 def load_json(path, default):
     path = Path(path)
@@ -50,12 +58,19 @@ def atomic_write_text(path, text):
     Path(tmp_name).replace(path)
 
 
+def event_name_candidates(name):
+    return [name] + EVENT_NAME_ALIASES.get(name, [])
+
+
 def find_event(api, name):
-    rows = api.query_data_source(
-        EVENT_DATA_SOURCE_ID,
-        {"filter": {"property": "イベント名", "title": {"equals": name}}, "page_size": 5},
-    )
-    return rows[0] if rows else None
+    for candidate in event_name_candidates(name):
+        rows = api.query_data_source(
+            EVENT_DATA_SOURCE_ID,
+            {"filter": {"property": "イベント名", "title": {"equals": candidate}}, "page_size": 5},
+        )
+        if rows:
+            return rows[0]
+    return None
 
 
 def page_detail(page):
@@ -158,9 +173,21 @@ def proposed_note(group, setlists):
     return "\n".join(lines)
 
 
-def row_status(page, existing_detail, note, videos):
+def has_event_level_youtube_evidence(existing_detail, event_name, event_date):
+    if not existing_detail or "[youtube_evidence]" not in existing_detail:
+        return False
+    if event_name and f"- 対象イベント: {event_name}" not in existing_detail:
+        return False
+    if event_date and event_date not in existing_detail:
+        return False
+    return True
+
+
+def row_status(page, existing_detail, note, videos, event_name="", event_date=""):
     if not page:
         return "blocked", ["Notionイベントページが見つかりません"], False
+    if has_event_level_youtube_evidence(existing_detail, event_name, event_date):
+        return "done", ["同じイベント日付のYouTube証拠が開催パターン詳細に既に含まれています"], False
     duplicate_urls = [video["url"] for video in videos if video.get("url") and video["url"] in existing_detail]
     if note in existing_detail or len(duplicate_urls) == len(videos):
         return "done", ["同じYouTube URLが開催パターン詳細に既に含まれています"], False
@@ -176,7 +203,14 @@ def build_dry_run(api, review, setlists):
         page = find_event(api, group["target_event_name"])
         existing_detail = page_detail(page) if page else ""
         note = proposed_note(group, setlists)
-        status, warnings, would_change_detail = row_status(page, existing_detail, note, group["videos"])
+        status, warnings, would_change_detail = row_status(
+            page,
+            existing_detail,
+            note,
+            group["videos"],
+            event_name=group["target_event_name"],
+            event_date=group.get("event_date") or "",
+        )
         rows.append({
             "status": status,
             "target_event_name": group["target_event_name"],

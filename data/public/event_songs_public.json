@@ -308,27 +308,57 @@
       {
         "name": "ドンパン節",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "八木節",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "大東京音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "東京音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "炭坑節",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       }
     ]
   },
@@ -354,13 +384,7 @@
       {
         "name": "郡上おどり",
         "confidence": "confirmed",
-        "source_count": 2,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": false
+        "source_count": 2
       }
     ]
   },
@@ -386,13 +410,7 @@
       {
         "name": "百人町民民謡おどり",
         "confidence": "hint",
-        "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": false
+        "source_count": 1
       }
     ]
   },
@@ -405,13 +423,7 @@
       {
         "name": "四谷納涼踊り",
         "confidence": "hint",
-        "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": false
+        "source_count": 1
       }
     ]
   },
@@ -442,13 +454,7 @@
       {
         "name": "すみだ輪おどり",
         "confidence": "hint",
-        "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": false
+        "source_count": 1
       }
     ]
   },
@@ -461,35 +467,17 @@
       {
         "name": "スカイツリー踊り",
         "confidence": "hint",
-        "source_count": 1,
-        "probability": 40,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": false
+        "source_count": 1
       },
       {
         "name": "東京音頭",
         "confidence": "hint",
-        "source_count": 1,
-        "probability": 40,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": false
+        "source_count": 1
       },
       {
         "name": "河内音頭",
         "confidence": "hint",
-        "source_count": 1,
-        "probability": 40,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": false
+        "source_count": 1
       }
     ]
   },
@@ -502,13 +490,7 @@
       {
         "name": "河内音頭",
         "confidence": "hint",
-        "source_count": 1,
-        "probability": 40,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": false
+        "source_count": 1
       }
     ]
   },
@@ -521,13 +503,7 @@
       {
         "name": "すみだ輪おどり",
         "confidence": "hint",
-        "source_count": 1,
-        "probability": 40,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": false
+        "source_count": 1
       }
     ]
   },
@@ -540,46 +516,22 @@
       {
         "name": "品川甚句",
         "confidence": "hint",
-        "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": false
+        "source_count": 1
       },
       {
         "name": "品川音頭",
         "confidence": "hint",
-        "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": false
+        "source_count": 1
       },
       {
         "name": "大井どんたく音頭",
         "confidence": "hint",
-        "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": false
+        "source_count": 1
       },
       {
         "name": "東京音頭",
         "confidence": "hint",
-        "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": false
+        "source_count": 1
       }
     ]
   },
@@ -1216,22 +1168,46 @@
       {
         "name": "ホイップるん音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "大東京音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "東京音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "炭坑節",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       }
     ]
   },
@@ -1672,35 +1648,17 @@
       {
         "name": "東京音頭",
         "confidence": "hint",
-        "source_count": 1,
-        "probability": 40,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": false
+        "source_count": 1
       },
       {
         "name": "炭坑節",
         "confidence": "hint",
-        "source_count": 1,
-        "probability": 40,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": false
+        "source_count": 1
       },
       {
         "name": "荒川音頭",
         "confidence": "hint",
-        "source_count": 1,
-        "probability": 40,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": false
+        "source_count": 1
       }
     ]
   }

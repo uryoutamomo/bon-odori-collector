@@ -10,6 +10,16 @@ const VENUES = [
     "lng": 139.739838
   },
   {
+    "name": "行幸通り",
+    "area": "千代田区",
+    "month": "7月",
+    "scale": "大",
+    "access": "JR東京駅丸の内口から徒歩圏内。東京駅と皇居を結ぶ行幸通り",
+    "description": "",
+    "lat": null,
+    "lng": null
+  },
+  {
     "name": "靖国神社",
     "area": "千代田区",
     "month": "7月",

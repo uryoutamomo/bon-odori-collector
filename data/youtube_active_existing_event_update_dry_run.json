@@ -1,16 +1,54 @@
 {
   "generated_by": "dry_run_youtube_active_existing_event_updates.py",
-  "generated_at": "2026-06-15T07:18:50.268500+00:00",
+  "generated_at": "2026-06-15T07:42:39.391554+00:00",
   "source": "data/youtube_active_video_review.json",
   "setlist_source": "data/youtube_setlist_occurrences.json",
   "input_count": 5,
-  "ready_count": 4,
+  "ready_count": 0,
   "review_count": 0,
-  "blocked_count": 1,
-  "done_count": 0,
+  "blocked_count": 0,
+  "done_count": 5,
   "rows": [
     {
-      "status": "ready",
+      "status": "done",
+      "target_event_name": "国立旭通りジューンフェスタ盆踊り",
+      "target_page_id": "3808be04-e762-81e7-9689-e12f6b08f6eb",
+      "target_page_url": "https://app.notion.com/p/2026-3808be04e76281e79689e12f6b08f6eb",
+      "event_date": "2026-06-07",
+      "occurrence_key": "370e7eb76465ada1",
+      "video_count": 1,
+      "videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=WjBGN8Kr4ok",
+          "title": "【少年八木節】　国立旭通りジューンフェスタ盆踊り６　2026年6月7日",
+          "channel": "和太鼓お祭りCH",
+          "published_at": "2026-06-14T00:00:34+00:00"
+        }
+      ],
+      "official_urls": [],
+      "song_count": 12,
+      "songs": [
+        "炭坑節",
+        "国立音頭",
+        "くにたち囃子",
+        "四季の花踊り",
+        "新しい風",
+        "少年八木節",
+        "さくら音頭",
+        "東京音頭",
+        "恋をするなら",
+        "らんまん踊り",
+        "バハマママ",
+        "終 TOKIO"
+      ],
+      "warnings": [
+        "同じイベント日付のYouTube証拠が開催パターン詳細に既に含まれています"
+      ],
+      "proposed_note": "[youtube_evidence] YouTube実績証拠\n- 対象イベント: 国立旭通りジューンフェスタ盆踊り\n- 検出日付: 2026-06-07\n- 動画数: 1\n- 動画: https://www.youtube.com/watch?v=WjBGN8Kr4ok / 和太鼓お祭りCH / 【少年八木節】　国立旭通りジューンフェスタ盆踊り６　2026年6月7日\n- 曲目候補: 炭坑節, 国立音頭, くにたち囃子, 四季の花踊り, 新しい風, 少年八木節, さくら音頭, 東京音頭, 恋をするなら, らんまん踊り, バハマママ, 終 TOKIO",
+      "would_change_detail": false
+    },
+    {
+      "status": "done",
       "target_event_name": "山王音頭と民踊大会",
       "target_page_id": "3788be04-e762-8112-ae7e-eac6e8acb44b",
       "target_page_url": "https://app.notion.com/p/3788be04e7628112ae7eeac6e8acb44b",
@@ -38,12 +76,14 @@
       ],
       "song_count": 0,
       "songs": [],
-      "warnings": [],
+      "warnings": [
+        "同じイベント日付のYouTube証拠が開催パターン詳細に既に含まれています"
+      ],
       "proposed_note": "[youtube_evidence] YouTube実績証拠\n- 対象イベント: 山王音頭と民踊大会\n- 検出日付: 2026-06-13\n- 動画数: 2\n- 動画: https://www.youtube.com/watch?v=_WhO6Kh08sE / Tokyo Lonely Walker / 盆踊りシーズン開幕！日枝神社 山王祭 盆踊り｜東京音頭 2026年 初日 / Dancing the traditional Japanese Tokyo Ondo. [4K]🇯🇵\n- 動画: https://www.youtube.com/watch?v=84q8qeG029A / Tokyo Lonely Walker / 盆踊り開幕！赤坂日枝神社 山王祭 盆踊り｜サザン｜東京音頭｜炭坑節｜山王音頭｜八木節 他 / Traditional Japanese Bon Dance at Hie Shrine. [4K]🇯🇵\n- 関連URL: https://goo.gl/maps/kSAEbnkyHSchcccY6, https://maps.app.goo.gl/BbkXn5qwcQ1PM7aQ9, https://x.com/walkingfilmlove\n- 曲目候補: 未抽出",
-      "would_change_detail": true
+      "would_change_detail": false
     },
     {
-      "status": "ready",
+      "status": "done",
       "target_event_name": "山王音頭と民踊大会",
       "target_page_id": "3788be04-e762-8112-ae7e-eac6e8acb44b",
       "target_page_url": "https://app.notion.com/p/3788be04e7628112ae7eeac6e8acb44b",
@@ -141,12 +181,14 @@
         "千代田おどり",
         "水戸黄門おどり"
       ],
-      "warnings": [],
+      "warnings": [
+        "同じイベント日付のYouTube証拠が開催パターン詳細に既に含まれています"
+      ],
       "proposed_note": "[youtube_evidence] YouTube実績証拠\n- 対象イベント: 山王音頭と民踊大会\n- 検出日付: 2026-06-13\n- 動画数: 12\n- 動画: https://www.youtube.com/watch?v=-H-T164L3QM / 和太鼓お祭りCH / 【速報】東京音頭　【赤坂日枝神社】　山王祭盆踊り１　「山王音頭と民踊大会」の風景　2026年6月13日\n- 動画: https://www.youtube.com/watch?v=hDckpEGkzTI / 和太鼓お祭りCH / 炭坑節　【赤坂日枝神社】 山王祭 盆踊り２　「山王音頭と民踊大会」の風景　2026年6月13日\n- 動画: https://www.youtube.com/watch?v=qd96HMCNCm8 / 和太鼓お祭りCH / 「大東京音頭」　赤坂日枝神社山王祭盆踊り３　「山王音頭と民踊大会」の風景　2026年6月13日\n- 動画: https://www.youtube.com/watch?v=7f5Yuf3N9Aw / 和太鼓お祭りCH / ドンパン節　赤坂日枝神社山王祭盆踊り４　「山王音頭と民踊大会」の風景　2026年6月13日\n- 動画: https://www.youtube.com/watch?v=0y41AkjQLzI / 和太鼓お祭りCH / 白浜音頭　【赤坂日枝神社】山王祭盆踊り５　「山王音頭と民踊大会」の風景　2026年6月13日\n- 動画: https://www.youtube.com/watch?v=U7S3ppeF_YU / 和太鼓お祭りCH / 八木節　【赤坂日枝神社】山王祭盆踊り６　「山王音頭と民踊大会」の風景　2026年6月13日\n- 動画: https://www.youtube.com/watch?v=LhM7yggtrZ0 / 和太鼓お祭りCH / 【花笠音頭】（金沢明子）　【赤坂日枝神社】山王祭盆踊り７　「山王音頭と民踊大会」の風景　2026年6月13日\n- 動画: https://www.youtube.com/watch?v=Kolply49UG4 / 和太鼓お祭りCH / おこさ節　【赤坂日枝神社】山王祭盆踊り８　「山王音頭と民踊大会」の風景　2026年6月13日\n- 追加動画: 4件\n- 曲目候補: 東京音頭, 炭坑節, 大東京音頭, ドンパン節, 白浜音頭, 八木節, 花笠音頭, おこさ節, 相馬甚句, 東京おどり, 山王音頭, 千代田おどり, 水戸黄門おどり",
-      "would_change_detail": true
+      "would_change_detail": false
     },
     {
-      "status": "ready",
+      "status": "done",
       "target_event_name": "山王音頭と民踊大会",
       "target_page_id": "3788be04-e762-8112-ae7e-eac6e8acb44b",
       "target_page_url": "https://app.notion.com/p/3788be04e7628112ae7eeac6e8acb44b",
@@ -164,12 +206,14 @@
       "official_urls": [],
       "song_count": 0,
       "songs": [],
-      "warnings": [],
+      "warnings": [
+        "同じイベント日付のYouTube証拠が開催パターン詳細に既に含まれています"
+      ],
       "proposed_note": "[youtube_evidence] YouTube実績証拠\n- 対象イベント: 山王音頭と民踊大会\n- 検出日付: 2026-06-14\n- 動画数: 1\n- 動画: https://www.youtube.com/watch?v=VmouD0eIXsg / 祭のきせき 盆踊り / 盆踊りシーズン開幕！山王音頭と民踊大会 【 日枝神社 山王祭 】後半\n- 曲目候補: 未抽出",
-      "would_change_detail": true
+      "would_change_detail": false
     },
     {
-      "status": "ready",
+      "status": "done",
       "target_event_name": "山王音頭と民踊大会",
       "target_page_id": "3788be04-e762-8112-ae7e-eac6e8acb44b",
       "target_page_url": "https://app.notion.com/p/3788be04e7628112ae7eeac6e8acb44b",
@@ -189,46 +233,10 @@
       ],
       "song_count": 0,
       "songs": [],
-      "warnings": [],
-      "proposed_note": "[youtube_evidence] YouTube実績証拠\n- 対象イベント: 山王音頭と民踊大会\n- 検出日付: 2026-06-15\n- 動画数: 1\n- 動画: https://www.youtube.com/watch?v=MJlUhvLyCAE / shu channel / 赤坂・日枝神社⛩山王祭「太鼓演奏🥁加賀豊年太鼓 ＆ 鵜浦豊年太鼓」Japanese Drum 2026.6.15 @山王パークタワー公開空地\n- 関連URL: https://www.tenkamatsuri.jp/minyo/\n- 曲目候補: 未抽出",
-      "would_change_detail": true
-    },
-    {
-      "status": "blocked",
-      "target_event_name": "国立旭通りジューンフェスタ盆踊り",
-      "target_page_id": "",
-      "target_page_url": "",
-      "event_date": "2026-06-07",
-      "occurrence_key": "370e7eb76465ada1",
-      "video_count": 1,
-      "videos": [
-        {
-          "url": "https://www.youtube.com/watch?v=WjBGN8Kr4ok",
-          "title": "【少年八木節】　国立旭通りジューンフェスタ盆踊り６　2026年6月7日",
-          "channel": "和太鼓お祭りCH",
-          "published_at": "2026-06-14T00:00:34+00:00"
-        }
-      ],
-      "official_urls": [],
-      "song_count": 12,
-      "songs": [
-        "炭坑節",
-        "国立音頭",
-        "くにたち囃子",
-        "四季の花踊り",
-        "新しい風",
-        "少年八木節",
-        "さくら音頭",
-        "東京音頭",
-        "恋をするなら",
-        "らんまん踊り",
-        "バハマママ",
-        "終 TOKIO"
-      ],
       "warnings": [
-        "Notionイベントページが見つかりません"
+        "同じイベント日付のYouTube証拠が開催パターン詳細に既に含まれています"
       ],
-      "proposed_note": "[youtube_evidence] YouTube実績証拠\n- 対象イベント: 国立旭通りジューンフェスタ盆踊り\n- 検出日付: 2026-06-07\n- 動画数: 1\n- 動画: https://www.youtube.com/watch?v=WjBGN8Kr4ok / 和太鼓お祭りCH / 【少年八木節】　国立旭通りジューンフェスタ盆踊り６　2026年6月7日\n- 曲目候補: 炭坑節, 国立音頭, くにたち囃子, 四季の花踊り, 新しい風, 少年八木節, さくら音頭, 東京音頭, 恋をするなら, らんまん踊り, バハマママ, 終 TOKIO",
+      "proposed_note": "[youtube_evidence] YouTube実績証拠\n- 対象イベント: 山王音頭と民踊大会\n- 検出日付: 2026-06-15\n- 動画数: 1\n- 動画: https://www.youtube.com/watch?v=MJlUhvLyCAE / shu channel / 赤坂・日枝神社⛩山王祭「太鼓演奏🥁加賀豊年太鼓 ＆ 鵜浦豊年太鼓」Japanese Drum 2026.6.15 @山王パークタワー公開空地\n- 関連URL: https://www.tenkamatsuri.jp/minyo/\n- 曲目候補: 未抽出",
       "would_change_detail": false
     }
   ]

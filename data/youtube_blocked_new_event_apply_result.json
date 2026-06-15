@@ -1,0 +1,27 @@
+{
+  "generated_by": "apply_youtube_blocked_new_events.py",
+  "generated_at": "2026-06-15T07:41:37.309439+00:00",
+  "mode": "dry_run",
+  "apply_performed": false,
+  "input_count": 1,
+  "venue_created_count": 0,
+  "event_created_count": 0,
+  "rows": [
+    {
+      "candidate_key": "yt-blocked:kunitachi-june-festa-2026-06-07",
+      "review_decision": "register_with_blog_and_youtube_evidence",
+      "venue": "国立旭通り 弥生ビル東側",
+      "venue_exists": true,
+      "venue_matched_name": "国立旭通り 弥生ビル東側",
+      "venue_created": false,
+      "event": "ジューンフェスタ2026 盆踊り（国立市旭通り商店会）",
+      "event_exists": true,
+      "event_matched_name": "ジューンフェスタ2026 盆踊り（国立市旭通り商店会）",
+      "event_created": false,
+      "event_date": "2026-06-07",
+      "source_url": "https://ahirunoie.shop-pro.jp/apps/note/%E5%9B%BD%E7%AB%8B%E6%97%AD%E9%80%9A%E3%82%8A%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%B3%E3%83%95%E3%82%A7%E3%82%B9%E3%82%BF2026/",
+      "venue_page_id": "3808be04-e762-81b7-b177-cfef0977a679",
+      "event_page_id": "3808be04-e762-81e7-9689-e12f6b08f6eb"
+    }
+  ]
+}
