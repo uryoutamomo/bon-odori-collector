@@ -4,7 +4,7 @@ import argparse
 import json
 import re
 import tempfile
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 
@@ -161,9 +161,48 @@ def planned_songs(row):
     return songs
 
 
+def parse_iso_date(value):
+    value = str(value or "")
+    if not value:
+        return None
+    try:
+        return date.fromisoformat(value[:10])
+    except ValueError:
+        return None
+
+
+def in_public_event_range(event_date, match):
+    event_day = parse_iso_date(event_date)
+    start = parse_iso_date((match or {}).get("date"))
+    if not event_day or not start:
+        return False
+    end = parse_iso_date((match or {}).get("date_end")) or start
+    return start <= event_day <= end
+
+
+def corrected_event_date(row, match):
+    source_date = row.get("event_date") or ""
+    if not match or not match.get("date") or not source_date:
+        return source_date, None
+    if in_public_event_range(source_date, match):
+        return source_date, None
+    published = parse_iso_date(row.get("source_published_at"))
+    public_start = parse_iso_date(match.get("date"))
+    if not published or not public_start:
+        return source_date, None
+    if 0 <= (published - public_start).days <= 7:
+        return match.get("date") or source_date, {
+            "from": source_date,
+            "to": match.get("date") or "",
+            "reason": "source_date_outside_public_range_but_video_published_near_event",
+        }
+    return source_date, None
+
+
 def plan_row(row, public_events):
     match = match_public_event(row, public_events)
     songs = planned_songs(row)
+    event_date, date_correction = corrected_event_date(row, match)
     if match:
         action = "append_evidence_to_existing_event"
         review_status = "既存候補"
@@ -187,11 +226,14 @@ def plan_row(row, public_events):
         "priority": priority,
         "youtube_event_name": row.get("event_name") or "",
         "youtube_venue": row.get("venue") or "",
-        "youtube_event_date": row.get("event_date") or "",
+        "youtube_event_date": event_date,
+        "source_event_date": row.get("event_date") or "",
+        "event_date_correction": date_correction,
         "source_video_url": row.get("source_video_url") or "",
         "source_video_title": row.get("source_video_title") or "",
         "source_channel_id": row.get("source_channel_id") or "",
         "source_channel_title": row.get("source_channel_title") or "",
+        "source_published_at": row.get("source_published_at") or "",
         "thumbnail_url": row.get("thumbnail_url") or "",
         "description_excerpt": row.get("description_excerpt") or "",
         "matched_public_event": match,

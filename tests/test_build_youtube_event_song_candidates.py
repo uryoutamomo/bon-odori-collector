@@ -1,6 +1,7 @@
 import unittest
+from unittest.mock import patch
 
-from build_youtube_event_song_candidates import build_output
+from build_youtube_event_song_candidates import build_output, extract_chapter_songs
 
 
 class BuildYoutubeEventSongCandidatesTest(unittest.TestCase):
@@ -30,6 +31,61 @@ class BuildYoutubeEventSongCandidatesTest(unittest.TestCase):
         self.assertEqual(output["rows"][0]["source_video_url"], "https://www.youtube.com/watch?v=abc")
         self.assertEqual(output["rows"][0]["thumbnail_url"], "https://img.youtube.com/abc.jpg")
         self.assertEqual(output["events"][0]["description_excerpt"], "説明文抜粋")
+
+    def test_extracts_pop_song_chapters_from_full_description(self):
+        description = "\n".join([
+            "0:00 OP",
+            "0:13 TM NETWORK - Get Wild【途中切れ】",
+            "2:25 ROSÉ & Bruno Mars - APT. 【途中から】",
+            "39:37 荻野目洋子 - ダンシング・ヒーロー / Yoko Oginome - Eat You Up",
+            "1:07:04 提灯 / lantern",
+            "1:07:17 END",
+        ])
+
+        rows = extract_chapter_songs(description)
+
+        self.assertEqual([row["title"] for row in rows], [
+            "TM NETWORK - Get Wild",
+            "ROSÉ & Bruno Mars - APT.",
+            "荻野目洋子 - ダンシング・ヒーロー / Yoko Oginome - Eat You Up",
+        ])
+
+    def test_build_output_enriches_short_setlist_from_channel_candidate_description(self):
+        payload = {
+            "event_candidates": [
+                {
+                    "url": "https://www.youtube.com/watch?v=abc",
+                    "title": "歌舞伎町BON ODORI",
+                    "channel_id": "UCabc",
+                    "channel_title": "Tokyo Lonely Walker",
+                    "thumbnail_url": "https://img.youtube.com/abc.jpg",
+                    "description_excerpt": "説明文抜粋",
+                    "event_date": "2025-08-16",
+                    "event_name_hint": "歌舞伎町BON ODORI",
+                    "venue_hint": "歌舞伎町シネシティ広場",
+                    "setlist_sample": [
+                        {"number": 1, "title": "ダンシング・ヒーロー", "url": "", "source": "chapter"},
+                    ],
+                }
+            ]
+        }
+        channel_payload = {
+            "channels": [
+                {
+                    "sample_videos": [
+                        {
+                            "url": "https://www.youtube.com/watch?v=abc",
+                            "description": "0:13 Get Wild\n2:25 APT.\n39:37 ダンシング・ヒーロー",
+                        }
+                    ]
+                }
+            ]
+        }
+
+        with patch("build_youtube_event_song_candidates.load_json", return_value=channel_payload):
+            output = build_output(payload)
+
+        self.assertEqual(output["events"][0]["song_count"], 3)
 
 
 if __name__ == "__main__":

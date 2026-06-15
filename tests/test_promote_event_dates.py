@@ -1,4 +1,4 @@
-from promote_event_dates import build_candidates, parse_dates
+from promote_event_dates import build_candidates, filter_candidates, parse_dates
 
 
 def test_parse_explicit_year_range():
@@ -65,6 +65,115 @@ def test_blog_row_candidate_uses_date_text_not_posted_date():
     assert candidates[0]["new_date"] == "2026-07-13"
     assert candidates[0]["new_date_end"] == "2026-07-16"
     assert candidates[0]["source"] == "blog_row"
+
+
+def test_blog_row_candidate_can_complete_missing_date_end():
+    events = [
+        {
+            "id": "event-1",
+            "name": "自由が丘納涼盆踊り大会",
+            "venues": ["自由が丘駅前ロータリー 特設会場"],
+            "date": {"start": "2025-07-19"},
+            "status": "終了",
+            "detail": "",
+            "url": "",
+        }
+    ]
+    voices = [
+        {
+            "source": "blog_row",
+            "account": "東京盆踊りマップ",
+            "date_hint_text": "2025 [J3]\n7/19 - 21",
+            "text": (
+                "2025 [J3]\n"
+                "7/19 - 21\n"
+                "自由が丘駅前ロータリー 特設会場\n"
+                "「自由が丘納涼盆踊り大会」7月19日(土)-21日(月祝) 18時-21時。"
+            ),
+            "url": "https://example.test/jiyugaoka",
+        }
+    ]
+
+    candidates = build_candidates(events, voices, target_year=2025)
+
+    assert len(candidates) == 1
+    assert candidates[0]["new_date"] == "2025-07-19"
+    assert candidates[0]["new_date_end"] == "2025-07-21"
+
+
+def test_blog_row_candidate_matches_bon_odori_english_name():
+    events = [
+        {
+            "id": "event-1",
+            "name": "歌舞伎町BON ODORI",
+            "venues": ["歌舞伎町シネシティ広場"],
+            "date": {},
+            "status": "未確認",
+            "detail": "",
+            "url": "",
+        }
+    ]
+    voices = [
+        {
+            "source": "blog_row",
+            "account": "東京盆踊りマップ",
+            "date_hint_text": "2025 [D10]\n8/16",
+            "text": (
+                "2025 [D10]\n"
+                "8/16\n"
+                "歌舞伎町シネシティ広場\n"
+                "歌舞伎町商店街振興組合「歌舞伎町BON ODORI」 8月16日(土) 。\n"
+                "開場 16:00、開始 17:30。"
+            ),
+            "url": "https://example.test/kabukicho",
+        }
+    ]
+
+    candidates = build_candidates(events, voices, target_year=2025)
+
+    assert len(candidates) == 1
+    assert candidates[0]["new_date"] == "2025-08-16"
+
+
+def test_blog_row_candidate_skips_after_date_end_completed():
+    events = [
+        {
+            "id": "event-1",
+            "name": "自由が丘納涼盆踊り大会",
+            "venues": ["自由が丘駅前ロータリー 特設会場"],
+            "date": {"start": "2025-07-19", "end": "2025-07-21"},
+            "status": "終了",
+            "detail": "2025-07-19〜2025-07-21 開催予定。東京盆踊りマップから確定日として反映。",
+            "url": "",
+        }
+    ]
+    voices = [
+        {
+            "source": "blog_row",
+            "account": "東京盆踊りマップ",
+            "date_hint_text": "2025 [J3]\n7/19 - 21",
+            "text": (
+                "2025 [J3]\n"
+                "7/19 - 21\n"
+                "自由が丘駅前ロータリー 特設会場\n"
+                "「自由が丘納涼盆踊り大会」7月19日(土)-21日(月祝) 18時-21時。"
+            ),
+            "url": "https://example.test/jiyugaoka",
+        }
+    ]
+
+    assert build_candidates(events, voices, target_year=2025) == []
+
+
+def test_filter_candidates_by_exact_event_name():
+    candidates = [
+        {"event_id": "event-1", "event_name": "自由が丘納涼盆踊り大会"},
+        {"event_id": "event-2", "event_name": "別イベント"},
+    ]
+
+    assert filter_candidates(candidates, event_name="自由が丘納涼盆踊り大会") == [
+        {"event_id": "event-1", "event_name": "自由が丘納涼盆踊り大会"}
+    ]
 
 
 def test_generic_sakura_event_name_requires_venue_match():

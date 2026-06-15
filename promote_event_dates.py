@@ -15,8 +15,11 @@ OUT = Path("data/event_date_update_candidates.json")
 TODAY = date(2026, 6, 10)
 TARGET_YEAR = 2026
 
-EVENT_WORDS = ("盆踊り", "盆おどり", "盆踊", "納涼", "夏祭り", "まつり", "祭り", "音頭", "輪踊り")
-SCHEDULE_WORDS = ("開催", "予定", "日程", "決定", "発表", "お知らせ", "告知")
+EVENT_WORDS = (
+    "盆踊り", "盆おどり", "盆踊", "納涼", "夏祭り", "まつり", "祭り", "音頭", "輪踊り",
+    "BON ODORI", "Bon Odori", "BONODORI", "Bon Dance",
+)
+SCHEDULE_WORDS = ("開催", "予定", "日程", "決定", "発表", "お知らせ", "告知", "開場", "開始")
 NEGATIVE_WORDS = ("中止", "延期", "順延", "雨天中止")
 GENERIC_EVENT_NAMES = {
     "盆踊り大会",
@@ -313,9 +316,20 @@ def build_candidates(events, voices, target_year=TARGET_YEAR):
                         or (event.get("detail") or "").startswith("更新前開催日:")
                     )
                 )
+                date_end_completion = (
+                    current_start == start
+                    and not current_end
+                    and end
+                    and end != start
+                )
                 if same_date and not refresh_only:
                     continue
-                if current_start and current_start <= start <= (current_end or current_start) and not refresh_only:
+                if (
+                    current_start
+                    and current_start <= start <= (current_end or current_start)
+                    and not refresh_only
+                    and not date_end_completion
+                ):
                     continue
                 candidates.append({
                     "event_id": event["id"],
@@ -358,7 +372,13 @@ def apply_candidates(api, candidates, min_score):
         if item["score"] < min_score:
             continue
         detail_lines = []
-        if item.get("current_date") and not item.get("refresh_only"):
+        date_end_completion = (
+            item.get("current_date") == item.get("new_date")
+            and not item.get("current_date_end")
+            and item.get("new_date_end")
+            and item.get("new_date_end") != item.get("new_date")
+        )
+        if item.get("current_date") and not item.get("refresh_only") and not date_end_completion:
             detail_lines.append(f"更新前開催日: {item['current_date']}")
         source_label = "東京盆踊りマップ" if item.get("source") == "blog_row" else "X投稿"
         detail_lines.append(
@@ -380,20 +400,32 @@ def apply_candidates(api, candidates, min_score):
     return applied
 
 
+def filter_candidates(candidates, event_name=None, event_id=None):
+    rows = candidates
+    if event_name:
+        rows = [item for item in rows if item.get("event_name") == event_name]
+    if event_id:
+        rows = [item for item in rows if item.get("event_id") == event_id]
+    return rows
+
+
 def main():
     parser = argparse.ArgumentParser(description="Promote confirmed event dates from local X/voice evidence.")
     parser.add_argument("--apply", action="store_true", help="Update Notion for high-confidence candidates.")
     parser.add_argument("--min-score", type=int, default=18, help="Minimum score for --apply.")
     parser.add_argument("--target-year", type=int, default=TARGET_YEAR)
+    parser.add_argument("--event-name", help="Only show/apply candidates for this exact event name.")
+    parser.add_argument("--event-id", help="Only show/apply candidates for this exact Notion page id.")
     args = parser.parse_args()
 
     api = NotionApi(os.environ.get("NOTION_API_TOKEN"))
     events = fetch_events(api)
     voices = load_source_items()
     candidates = build_candidates(events, voices, target_year=args.target_year)
-    OUT.write_text(json.dumps({"candidates": candidates}, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"candidates={len(candidates)} -> {OUT}")
-    high = [c for c in candidates if c["score"] >= args.min_score]
+    filtered = filter_candidates(candidates, event_name=args.event_name, event_id=args.event_id)
+    OUT.write_text(json.dumps({"candidates": filtered}, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"candidates={len(filtered)} total={len(candidates)} -> {OUT}")
+    high = [c for c in filtered if c["score"] >= args.min_score]
     print(f"high_confidence={len(high)} min_score={args.min_score}")
     for item in high[:20]:
         end = f"〜{item['new_date_end']}" if item.get("new_date_end") else ""

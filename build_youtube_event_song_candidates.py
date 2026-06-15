@@ -3,6 +3,7 @@
 import argparse
 import hashlib
 import json
+import re
 import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
@@ -12,6 +13,13 @@ DATA = Path("data")
 EVENT_CANDIDATES = DATA / "youtube_event_candidates.json"
 OUT = DATA / "youtube_event_song_candidates.json"
 MARKDOWN_OUT = DATA / "youtube_event_song_candidates.md"
+YOUTUBE_CHANNEL_CANDIDATES = DATA / "youtube_channel_candidates.json"
+CHAPTER_RE = re.compile(r"^\s*(?:(\d{1,2}:)?\d{1,2}:\d{2})\s*[-:：　 ]+\s*(.+?)\s*$")
+CHAPTER_NOISE_RE = re.compile(
+    r"(op|end|encore|アンコール|提灯|lantern|map|subscribe|チャンネル|"
+    r"関連動画|opening music|ending music|background music)",
+    re.I,
+)
 
 
 def load_json(path, default):
@@ -55,10 +63,78 @@ def candidate_rows(payload):
     return rows if isinstance(rows, list) else []
 
 
-def event_song_rows(event_candidates):
+def compact_url(url):
+    url = str(url or "").strip()
+    if "youtu.be/" in url:
+        video_id = url.split("youtu.be/", 1)[1].split("?", 1)[0].split("&", 1)[0]
+        return f"https://www.youtube.com/watch?v={video_id}"
+    return url
+
+
+def channel_video_descriptions(payload):
+    descriptions = {}
+    if not isinstance(payload, dict):
+        return descriptions
+    for channel in payload.get("channels") or []:
+        for video in channel.get("sample_videos") or []:
+            url = compact_url(video.get("url") or "")
+            description = video.get("description") or ""
+            if url and description:
+                descriptions[url] = description
+    for video in payload.get("event_candidates") or []:
+        url = compact_url(video.get("url") or "")
+        description = video.get("description") or ""
+        if url and description:
+            descriptions[url] = description
+    return descriptions
+
+
+def normalize_chapter_title(value):
+    value = re.sub(r"\s+", " ", str(value or "")).strip(" -:：、。")
+    value = re.sub(r"【[^】]{1,30}】", "", value).strip()
+    return value
+
+
+def extract_chapter_songs(description):
+    rows = []
+    seen = set()
+    for line in str(description or "").splitlines():
+        match = CHAPTER_RE.match(line)
+        if not match:
+            continue
+        title = normalize_chapter_title(match.group(2))
+        if not title or CHAPTER_NOISE_RE.search(title):
+            continue
+        if len(title) > 90:
+            continue
+        key = re.sub(r"\W+", "", title).casefold()
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        rows.append({
+            "number": len(rows) + 1,
+            "title": title,
+            "url": "",
+            "source": "chapter",
+        })
+    return rows
+
+
+def enriched_setlist(candidate, description_by_url):
+    setlist = list(candidate.get("setlist_sample") or [])
+    url = compact_url(candidate.get("url") or "")
+    description = description_by_url.get(url) or ""
+    chapter_songs = extract_chapter_songs(description)
+    if len(chapter_songs) <= len(setlist):
+        return setlist
+    return chapter_songs
+
+
+def event_song_rows(event_candidates, description_by_url=None):
+    description_by_url = description_by_url or {}
     rows = []
     for candidate in event_candidates:
-        setlist = candidate.get("setlist_sample") or []
+        setlist = enriched_setlist(candidate, description_by_url)
         if not setlist:
             continue
         event_key = "yt-event:" + digest(
@@ -83,6 +159,7 @@ def event_song_rows(event_candidates):
                 "source_video_title": candidate.get("title") or "",
                 "source_channel_id": candidate.get("channel_id") or "",
                 "source_channel_title": candidate.get("channel_title") or "",
+                "source_published_at": candidate.get("published_at") or "",
                 "thumbnail_url": candidate.get("thumbnail_url") or "",
                 "description_excerpt": candidate.get("description_excerpt") or "",
                 "evidence_type": song.get("source") or "youtube_description",
@@ -104,6 +181,7 @@ def group_events(rows):
             "source_video_title": row["source_video_title"],
             "source_channel_id": row["source_channel_id"],
             "source_channel_title": row["source_channel_title"],
+            "source_published_at": row["source_published_at"],
             "thumbnail_url": row["thumbnail_url"],
             "description_excerpt": row.get("description_excerpt") or "",
             "song_count": 0,
@@ -122,7 +200,8 @@ def group_events(rows):
 
 
 def build_output(payload):
-    rows = event_song_rows(candidate_rows(payload))
+    description_by_url = channel_video_descriptions(load_json(YOUTUBE_CHANNEL_CANDIDATES, {}))
+    rows = event_song_rows(candidate_rows(payload), description_by_url)
     events = group_events(rows)
     return {
         "generated_by": "build_youtube_event_song_candidates.py",
