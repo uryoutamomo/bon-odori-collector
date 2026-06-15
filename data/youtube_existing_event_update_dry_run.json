@@ -1,0 +1,260 @@
+{
+  "generated_by": "dry_run_youtube_existing_event_updates.py",
+  "generated_at": "2026-06-15T03:37:05.741182+00:00",
+  "mode": "dry_run",
+  "source": "data/youtube_event_update_plan.json",
+  "public_event_source": "data/public/events_public.json",
+  "input_count": 3,
+  "ready_count": 0,
+  "review_count": 3,
+  "blocked_count": 0,
+  "rows": [
+    {
+      "candidate_key": "yt-event:f76d1950e7079a15",
+      "status": "review",
+      "target_event_name": "歌舞伎町BON ODORI",
+      "target_page_id": "37b8be04-e762-8182-8c27-f7ff7febcffe",
+      "target_page_url": "https://app.notion.com/p/BON-ODORI-37b8be04e76281828c27f7ff7febcffe",
+      "matched_public_event": {
+        "name": "歌舞伎町BON ODORI",
+        "venue": "歌舞伎町シネシティ広場",
+        "date": "2025-08-16",
+        "date_end": "",
+        "area": "新宿区",
+        "score": 75,
+        "reasons": [
+          "event_name_in_youtube"
+        ]
+      },
+      "public_event_detail": "2025-08-16 開催予定。東京盆踊りマップから確定日として反映。\n2025 [D10]\n8/16\n歌舞伎町シネシティ広場\n歌舞伎町商店街振興組合「歌舞伎町BON ODORI」 8月16日(土) 。\n開場 16:00、開始 17:30。\n\n[youtube_evidence] 2025実績証拠\n- 対象イベント: 歌舞伎町BON ODORI\n- 検出日付: 2025-08-16\n- 動画: https://www.youtube.com/watch?v=6APAt3DHhVs\n- チャンネル: Tokyo Lonely Walker\n- サムネイル: https://i.ytimg.com/vi/6APAt3DHhVs/maxresdefault.jpg\n- 曲目候補: EZ DO DANCE, 歌舞伎町の女王, Livin' on a Prayer, I Was Born To Love You, ダンシング・ヒーロー, Shake It Off, ultra soul, HOT LIMIT, Dancing Queen, September, 君の瞳に恋してる, Thriller, ライラック, Crazy Train, APT., Get Wild",
+      "youtube_event_date": "2025-08-16",
+      "source_video_url": "https://www.youtube.com/watch?v=6APAt3DHhVs",
+      "source_video_title": "[4K]🇯🇵 歌舞伎町で盆ジョヴィ 2025 Bon Jovi｜Taylor Swift｜B'z｜ミセス｜椎名林檎｜ダンシングヒーロー 他 盆踊り 2部 新宿 外国人観光客にも大人気",
+      "source_channel_title": "Tokyo Lonely Walker",
+      "thumbnail_url": "https://i.ytimg.com/vi/6APAt3DHhVs/maxresdefault.jpg",
+      "song_count": 16,
+      "songs": [
+        {
+          "title": "EZ DO DANCE",
+          "number": 16,
+          "url": "https://www.youtube.com/watch?v=6APAt3DHhVs",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "歌舞伎町の女王",
+          "number": 15,
+          "url": "https://www.youtube.com/watch?v=6APAt3DHhVs",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "Livin' on a Prayer",
+          "number": 14,
+          "url": "https://www.youtube.com/watch?v=6APAt3DHhVs",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "I Was Born To Love You",
+          "number": 13,
+          "url": "https://www.youtube.com/watch?v=6APAt3DHhVs",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "ダンシング・ヒーロー",
+          "number": 12,
+          "url": "https://www.youtube.com/watch?v=6APAt3DHhVs",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "Shake It Off",
+          "number": 11,
+          "url": "https://www.youtube.com/watch?v=6APAt3DHhVs",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "ultra soul",
+          "number": 10,
+          "url": "https://www.youtube.com/watch?v=6APAt3DHhVs",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "HOT LIMIT",
+          "number": 9,
+          "url": "https://www.youtube.com/watch?v=6APAt3DHhVs",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "Dancing Queen",
+          "number": 8,
+          "url": "https://www.youtube.com/watch?v=6APAt3DHhVs",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "September",
+          "number": 7,
+          "url": "https://www.youtube.com/watch?v=6APAt3DHhVs",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "君の瞳に恋してる",
+          "number": 6,
+          "url": "https://www.youtube.com/watch?v=6APAt3DHhVs",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "Thriller",
+          "number": 5,
+          "url": "https://www.youtube.com/watch?v=6APAt3DHhVs",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "ライラック",
+          "number": 4,
+          "url": "https://www.youtube.com/watch?v=6APAt3DHhVs",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "Crazy Train",
+          "number": 3,
+          "url": "https://www.youtube.com/watch?v=6APAt3DHhVs",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "APT.",
+          "number": 2,
+          "url": "https://www.youtube.com/watch?v=6APAt3DHhVs",
+          "evidence_type": "chapter"
+        },
+        {
+          "title": "Get Wild",
+          "number": 1,
+          "url": "https://www.youtube.com/watch?v=6APAt3DHhVs",
+          "evidence_type": "chapter"
+        }
+      ],
+      "warnings": [
+        "同じYouTube URLが開催パターン詳細に既に含まれています"
+      ],
+      "proposed_note": "[youtube_evidence] 2025実績証拠\n- 対象イベント: 歌舞伎町BON ODORI\n- 検出日付: 2025-08-16\n- 動画: https://www.youtube.com/watch?v=6APAt3DHhVs\n- チャンネル: Tokyo Lonely Walker\n- サムネイル: https://i.ytimg.com/vi/6APAt3DHhVs/maxresdefault.jpg\n- 曲目候補: EZ DO DANCE, 歌舞伎町の女王, Livin' on a Prayer, I Was Born To Love You, ダンシング・ヒーロー, Shake It Off, ultra soul, HOT LIMIT, Dancing Queen, September, 君の瞳に恋してる, Thriller, ライラック, Crazy Train, APT., Get Wild",
+      "would_change_detail": false
+    },
+    {
+      "candidate_key": "yt-event:9c9ec10b3ec187ac",
+      "status": "review",
+      "target_event_name": "自由が丘納涼盆踊り大会",
+      "target_page_id": "37b8be04-e762-817c-93bf-d2fafc0103c3",
+      "target_page_url": "https://app.notion.com/p/37b8be04e762817c93bfd2fafc0103c3",
+      "matched_public_event": {
+        "name": "自由が丘納涼盆踊り大会",
+        "venue": "自由が丘駅前ロータリー 特設会場",
+        "date": "2025-07-19",
+        "date_end": "2025-07-21",
+        "area": "目黒区",
+        "score": 75,
+        "reasons": [
+          "event_name_in_youtube"
+        ]
+      },
+      "public_event_detail": "2025-07-19〜2025-07-21 開催予定。東京盆踊りマップから確定日として反映。\n2025 [J3]\n7/19 - 21\n自由が丘駅前ロータリー 特設会場\n自由が丘商店街振興組合、自由が丘住区青少年委員会\n「自由が丘納涼盆踊り大会」7月19日(土)-21日(月祝) 18時-21時。\n大好評企画:踊りコンテスト!! 20日(日)。\n「新曲:RPG」\n雨天中止。\n\n[youtube_evidence] 2025実績証拠\n- 対象イベント: 自由が丘納涼盆踊り大会\n- 検出日付: 2025-07-21\n- 動画: https://www.youtube.com/watch?v=mvHqQY2ISJE\n- チャンネル: 和太鼓お祭りチャンネル\n- サムネイル: https://i.ytimg.com/vi/mvHqQY2ISJE/maxresdefault.jpg\n- 曲目候補: 北海盆唄, 炭坑節, 大東京音頭, ダンシング・ヒーロー, やる気で音頭, 自由が丘小唄, ホイップるん音頭, 東京音頭",
+      "youtube_event_date": "2025-07-21",
+      "source_video_url": "https://www.youtube.com/watch?v=mvHqQY2ISJE",
+      "source_video_title": "【ダンシング・ヒーロー】（荻野目洋子）　2025年自由が丘納涼盆踊り大会3日目８　東京都目黒区",
+      "source_channel_title": "和太鼓お祭りチャンネル",
+      "thumbnail_url": "https://i.ytimg.com/vi/mvHqQY2ISJE/maxresdefault.jpg",
+      "song_count": 8,
+      "songs": [
+        {
+          "title": "北海盆唄",
+          "number": 13,
+          "url": "https://www.youtube.com/watch?v=_hx61P9imdE",
+          "evidence_type": "numbered_url"
+        },
+        {
+          "title": "炭坑節",
+          "number": 12,
+          "url": "https://www.youtube.com/watch?v=QmtM6dBDCao",
+          "evidence_type": "numbered_url"
+        },
+        {
+          "title": "大東京音頭",
+          "number": 10,
+          "url": "https://www.youtube.com/watch?v=aRcMQY1I_Kc",
+          "evidence_type": "numbered_url"
+        },
+        {
+          "title": "ダンシング・ヒーロー",
+          "number": 8,
+          "url": "https://www.youtube.com/watch?v=mvHqQY2ISJE",
+          "evidence_type": "numbered_url"
+        },
+        {
+          "title": "やる気で音頭",
+          "number": 6,
+          "url": "https://www.youtube.com/watch?v=vCXqCiHJLrA",
+          "evidence_type": "numbered_url"
+        },
+        {
+          "title": "自由が丘小唄",
+          "number": 4,
+          "url": "https://www.youtube.com/watch?v=BY_GmnNAtFU",
+          "evidence_type": "numbered_url"
+        },
+        {
+          "title": "ホイップるん音頭",
+          "number": 2,
+          "url": "https://www.youtube.com/watch?v=7rAwNEaBU7Y",
+          "evidence_type": "numbered_url"
+        },
+        {
+          "title": "東京音頭",
+          "number": 1,
+          "url": "https://www.youtube.com/watch?v=uD2Vi2HADbY",
+          "evidence_type": "numbered_url"
+        }
+      ],
+      "warnings": [
+        "同じYouTube URLが開催パターン詳細に既に含まれています"
+      ],
+      "proposed_note": "[youtube_evidence] 2025実績証拠\n- 対象イベント: 自由が丘納涼盆踊り大会\n- 検出日付: 2025-07-21\n- 動画: https://www.youtube.com/watch?v=mvHqQY2ISJE\n- チャンネル: 和太鼓お祭りチャンネル\n- サムネイル: https://i.ytimg.com/vi/mvHqQY2ISJE/maxresdefault.jpg\n- 曲目候補: 北海盆唄, 炭坑節, 大東京音頭, ダンシング・ヒーロー, やる気で音頭, 自由が丘小唄, ホイップるん音頭, 東京音頭",
+      "would_change_detail": false
+    },
+    {
+      "candidate_key": "yt-event:a45246f9d69985cb",
+      "status": "review",
+      "target_event_name": "歌舞伎町BON ODORI",
+      "target_page_id": "37b8be04-e762-8182-8c27-f7ff7febcffe",
+      "target_page_url": "https://app.notion.com/p/BON-ODORI-37b8be04e76281828c27f7ff7febcffe",
+      "matched_public_event": {
+        "name": "歌舞伎町BON ODORI",
+        "venue": "歌舞伎町シネシティ広場",
+        "date": "2025-08-16",
+        "date_end": "",
+        "area": "新宿区",
+        "score": 110,
+        "reasons": [
+          "event_name_in_youtube",
+          "venue_in_youtube"
+        ]
+      },
+      "public_event_detail": "2025-08-16 開催予定。東京盆踊りマップから確定日として反映。\n2025 [D10]\n8/16\n歌舞伎町シネシティ広場\n歌舞伎町商店街振興組合「歌舞伎町BON ODORI」 8月16日(土) 。\n開場 16:00、開始 17:30。\n\n[youtube_evidence] 2025実績証拠\n- 対象イベント: 歌舞伎町BON ODORI\n- 検出日付: 2025-08-16\n- 動画: https://www.youtube.com/watch?v=6APAt3DHhVs\n- チャンネル: Tokyo Lonely Walker\n- サムネイル: https://i.ytimg.com/vi/6APAt3DHhVs/maxresdefault.jpg\n- 曲目候補: EZ DO DANCE, 歌舞伎町の女王, Livin' on a Prayer, I Was Born To Love You, ダンシング・ヒーロー, Shake It Off, ultra soul, HOT LIMIT, Dancing Queen, September, 君の瞳に恋してる, Thriller, ライラック, Crazy Train, APT., Get Wild",
+      "youtube_event_date": "2025-08-16",
+      "source_video_url": "https://www.youtube.com/watch?v=m8zNQMQzgQs",
+      "source_video_title": "B’z「ultra soul」歌舞伎町での盆踊りが楽しすぎてアンコール【歌舞伎町 BON ODORI 2025】/  新宿トー横 ウルトラソウル 鳳蝶美成 盆踊り",
+      "source_channel_title": "Urban Walk",
+      "thumbnail_url": "https://i.ytimg.com/vi/m8zNQMQzgQs/maxresdefault.jpg",
+      "song_count": 1,
+      "songs": [
+        {
+          "title": "ultra soul ②",
+          "number": 2,
+          "url": "https://www.youtube.com/watch?v=m8zNQMQzgQs",
+          "evidence_type": "chapter"
+        }
+      ],
+      "warnings": [
+        "曲目候補が1件以下です。セットリストとしては不完全な可能性があります"
+      ],
+      "proposed_note": "[youtube_evidence] 2025実績証拠\n- 対象イベント: 歌舞伎町BON ODORI\n- 検出日付: 2025-08-16\n- 動画: https://www.youtube.com/watch?v=m8zNQMQzgQs\n- チャンネル: Urban Walk\n- サムネイル: https://i.ytimg.com/vi/m8zNQMQzgQs/maxresdefault.jpg\n- 曲目候補: ultra soul ②",
+      "would_change_detail": true
+    }
+  ]
+}

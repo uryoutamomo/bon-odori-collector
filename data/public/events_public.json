@@ -2236,9 +2236,9 @@
     "address": "新宿区歌舞伎町1-19",
     "lat": 35.695339,
     "lng": 139.701996,
-    "date": null,
+    "date": "2025-08-16",
     "date_end": null,
-    "status": "未確認",
+    "status": "終了",
     "date_confidence": {
       "level": "unknown",
       "label": "未確認",
@@ -2255,7 +2255,7 @@
       "8": "中旬"
     },
     "description": "歌舞伎町BON ODORIは、歌舞伎町シネシティ広場で開かれる屋外型の盆踊り・夏の地域イベント。8月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025年は8/16（16:00-20:30）。古典盆踊り＋盆DANCE。2026年日程は未発表",
+    "detail": "2025-08-16 開催予定。東京盆踊りマップから確定日として反映。\n2025 [D10]\n8/16\n歌舞伎町シネシティ広場\n歌舞伎町商店街振興組合「歌舞伎町BON ODORI」 8月16日(土) 。\n開場 16:00、開始 17:30。\n\n[youtube_evidence] 2025実績証拠\n- 対象イベント: 歌舞伎町BON ODORI\n- 検出日付: 2025-08-16\n- 動画: https://www.youtube.com/watch?v=6APAt3DHhVs\n- チャンネル: Tokyo Lonely Walker\n- サムネイル: https://i.ytimg.com/vi/6APAt3DHhVs/maxresdefault.jpg\n- 曲目候補: EZ DO DANCE, 歌舞伎町の女王, Livin' on a Prayer, I Was Born To Love You, ダンシング・ヒーロー, Shake It Off, ultra soul, HOT LIMIT, Dancing Queen, September, 君の瞳に恋してる, Thriller, ライラック, Crazy Train, APT., Get Wild",
     "songs": [],
     "song_occurrence": null
   },
@@ -6221,7 +6221,7 @@
     "lat": 35.610138,
     "lng": 139.669952,
     "date": "2025-07-19",
-    "date_end": null,
+    "date_end": "2025-07-21",
     "status": "終了",
     "date_confidence": {
       "level": "unknown",
@@ -6233,14 +6233,39 @@
       [
         7,
         19
+      ],
+      [
+        7,
+        21
       ]
     ],
     "jun": {
-      "7": "中旬"
+      "7": "下旬"
     },
     "description": "自由が丘納涼盆踊り大会は、自由が丘駅前ロータリー 特設会場周辺で開かれる街なかの踊りイベント。7月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025-07-19（土）〜21（月祝）18:00-21:00。自由が丘商店街振興組合、自由が丘住区青少年委員会。",
-    "songs": [],
+    "detail": "2025-07-19〜2025-07-21 開催予定。東京盆踊りマップから確定日として反映。\n2025 [J3]\n7/19 - 21\n自由が丘駅前ロータリー 特設会場\n自由が丘商店街振興組合、自由が丘住区青少年委員会\n「自由が丘納涼盆踊り大会」7月19日(土)-21日(月祝) 18時-21時。\n大好評企画:踊りコンテスト!! 20日(日)。\n「新曲:RPG」\n雨天中止。\n\n[youtube_evidence] 2025実績証拠\n- 対象イベント: 自由が丘納涼盆踊り大会\n- 検出日付: 2025-07-21\n- 動画: https://www.youtube.com/watch?v=mvHqQY2ISJE\n- チャンネル: 和太鼓お祭りチャンネル\n- サムネイル: https://i.ytimg.com/vi/mvHqQY2ISJE/maxresdefault.jpg\n- 曲目候補: 北海盆唄, 炭坑節, 大東京音頭, ダンシング・ヒーロー, やる気で音頭, 自由が丘小唄, ホイップるん音頭, 東京音頭",
+    "songs": [
+      {
+        "name": "ホイップるん音頭",
+        "confidence": "hint",
+        "source_count": 1
+      },
+      {
+        "name": "大東京音頭",
+        "confidence": "hint",
+        "source_count": 1
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "hint",
+        "source_count": 1
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "hint",
+        "source_count": 1
+      }
+    ],
     "song_occurrence": null
   },
   {
@@ -8065,65 +8090,25 @@
       "label": "未確認",
       "description": "開催日はまだ確認できていません"
     },
-    "date_candidates": [
-      {
-        "date": "2026-03-14",
-        "date_end": null,
-        "confidence": {
-          "level": "medium",
-          "label": "候補",
-          "description": "イベント名や会場名などの手がかりがあります"
-        },
-        "score": 14,
-        "source": "blog_row",
-        "source_url": "https://drive.google.com/file/d/1WovnApRDr9lnGYlKagkvql1CFFJYC1wJ/view?usp=drive_link",
-        "raw_date": "3/14"
-      },
-      {
-        "date": "2026-04-26",
-        "date_end": null,
-        "confidence": {
-          "level": "medium",
-          "label": "候補",
-          "description": "イベント名や会場名などの手がかりがあります"
-        },
-        "score": 14,
-        "source": "blog_row",
-        "source_url": "https://drive.google.com/file/d/1SEITrwPNws7jgtfUIRWHttmV418_OYzM/view?usp=drive_link",
-        "raw_date": "4/26"
-      },
-      {
-        "date": "2026-06-07",
-        "date_end": null,
-        "confidence": {
-          "level": "medium",
-          "label": "候補",
-          "description": "イベント名や会場名などの手がかりがあります"
-        },
-        "score": 14,
-        "source": "blog_row",
-        "source_url": "https://drive.google.com/file/d/1TCszOxBRwSzQF6Ke4jxVhaKzFEoAVJkN/view?usp=drive_link",
-        "raw_date": "6/7"
-      }
-    ],
+    "date_candidates": [],
     "hints": [
       [
         3,
-        14
+        15
       ],
       [
         4,
-        26
+        15
       ],
       [
         6,
-        7
+        15
       ]
     ],
     "jun": {
       "3": "中旬",
-      "4": "下旬",
-      "6": "上旬"
+      "4": "中旬",
+      "6": "中旬"
     },
     "description": "盆踊り好きの有志が季節を問わず集う、飛鳥山公園の檜舞台での踊りの会。夏を待たずに踊りたい人の集まる場。",
     "detail": null,

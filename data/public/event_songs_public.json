@@ -1175,6 +1175,34 @@
     ]
   },
   {
+    "name": "自由が丘納涼盆踊り大会",
+    "venue": "自由が丘駅前ロータリー 特設会場",
+    "area": "目黒区",
+    "date": "2025-07-19",
+    "songs": [
+      {
+        "name": "ホイップるん音頭",
+        "confidence": "hint",
+        "source_count": 1
+      },
+      {
+        "name": "大東京音頭",
+        "confidence": "hint",
+        "source_count": 1
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "hint",
+        "source_count": 1
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "hint",
+        "source_count": 1
+      }
+    ]
+  },
+  {
     "name": "飛鳥山公園盆踊り会（有志サークル）",
     "venue": "飛鳥山公園",
     "area": "北区",
