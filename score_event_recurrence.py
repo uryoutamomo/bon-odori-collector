@@ -52,6 +52,8 @@ ONE_SHOT_KEYWORDS = [
     "シブヤエンタメ祭",
 ]
 
+FULLWIDTH_DIGITS = str.maketrans("０１２３４５６７８９", "0123456789")
+
 
 def read_json(path: Path):
     with path.open(encoding="utf-8") as f:
@@ -86,46 +88,70 @@ def event_key(event: dict) -> str:
     return "|".join(str(event.get(key) or "") for key in ["name", "venue", "date"])
 
 
+def parse_edition_number(text: str | None) -> int | None:
+    if not text:
+        return None
+    normalized = str(text).translate(FULLWIDTH_DIGITS)
+    match = re.search(r"第\s*(\d{1,3})\s*回", normalized)
+    if match:
+        return int(match.group(1))
+    match = re.search(r"(\d{1,3})\s*回目", normalized)
+    if match:
+        return int(match.group(1))
+    return None
+
+
 def label_for_score(score: float) -> tuple[str, str]:
     if score >= 0.75:
-        return "今年も開催見込み 高", "expected_high"
+        return "昨年開催・継続性 高", "expected_high"
     if score >= 0.55:
-        return "今年も開催見込み 中", "expected_medium"
+        return "昨年開催・継続性 中", "expected_medium"
     if score >= 0.35:
-        return "今年も開催見込み 低", "expected_low"
+        return "昨年開催・継続性 低", "expected_low"
     return "日程未確認", "date_unknown"
 
 
-def score_2025_candidate(event: dict) -> tuple[float, list[str], list[str]]:
+def score_2025_candidate(event: dict) -> tuple[float, list[str], list[str], int | None]:
     text = event_text(event)
     reasons: list[str] = []
     cautions: list[str] = []
+    edition_number = parse_edition_number(event.get("name"))
     score = 0.45
 
     if "2025" in text:
         score += 0.05
-        reasons.append("2025年実績あり")
+        reasons.append("held_2025")
     if "公式確認URL" in text or "公式" in text:
         score += 0.08
-        reasons.append("公式/準公式確認あり")
+        reasons.append("official_or_semi_official_evidence")
     if "youtube_evidence" in text or "YouTube 2025" in text:
         score += 0.04
-        reasons.append("動画実績証拠あり")
+        reasons.append("video_evidence")
     if event.get("venue"):
         score += 0.04
-        reasons.append("会場あり")
+        reasons.append("venue_present")
     if event.get("area"):
         score += 0.02
-        reasons.append("23区エリアあり")
+        reasons.append("tokyo_23ward")
+
+    if edition_number and edition_number >= 2:
+        score += 0.10
+        reasons.append(f"edition_number:{edition_number}")
+        if edition_number >= 10:
+            score += 0.04
+            reasons.append("edition_10plus")
+        if edition_number >= 30:
+            score += 0.04
+            reasons.append("edition_30plus")
 
     recurring_hits = [word for word in RECURRING_KEYWORDS if word in text]
     if recurring_hits:
         score += min(0.18, 0.04 * len(recurring_hits))
-        reasons.extend(f"継続語:{word}" for word in recurring_hits[:4])
+        reasons.extend(f"recurring_word:{word}" for word in recurring_hits[:4])
 
-    if re.search(r"第[2-9２-９][0-9０-９]*回|第[一二三四五六七八九十百]+回", text):
+    if not edition_number and re.search(r"第[一二三四五六七八九十百]+回", text):
         score += 0.07
-        reasons.append("回数付き継続イベント")
+        reasons.append("edition_number_kanji")
 
     if "次回日程は未確認" in text:
         cautions.append("次回日程未確認")
@@ -140,7 +166,7 @@ def score_2025_candidate(event: dict) -> tuple[float, list[str], list[str]]:
         cautions.append("イベント名に2025明記")
 
     score = max(0.05, min(0.90, score))
-    return round(score, 2), reasons, cautions
+    return round(score, 2), reasons, cautions, edition_number
 
 
 def public_status_for_event(event: dict) -> dict:
@@ -151,35 +177,41 @@ def public_status_for_event(event: dict) -> dict:
     if year == 2026 and start and start >= TODAY:
         return {
             "public_status": "upcoming_confirmed",
+            "public_category": "upcoming",
             "public_status_label": "今後開催",
             "recurrence_label": "2026年確認済み",
             "recurrence_score": 0.95,
             "reasons": ["2026年日付確認済み"],
             "cautions": [],
+            "edition_number": parse_edition_number(event.get("name")),
             "last_seen_year": None,
         }
 
     if year == 2026:
         return {
             "public_status": "ended_2026",
+            "public_category": "ended",
             "public_status_label": "開催終了",
             "recurrence_label": "2026年開催終了",
             "recurrence_score": 0.98,
             "reasons": ["2026年開催済み"],
             "cautions": [],
+            "edition_number": parse_edition_number(event.get("name")),
             "last_seen_year": None,
         }
 
     if year == 2025:
-        score, reasons, cautions = score_2025_candidate(event)
+        score, reasons, cautions, edition_number = score_2025_candidate(event)
         label, public_status = label_for_score(score)
         return {
             "public_status": public_status,
-            "public_status_label": "2025年実績あり",
+            "public_category": "recurring_last_year",
+            "public_status_label": "昨年開催",
             "recurrence_label": label,
             "recurrence_score": score,
             "reasons": reasons,
             "cautions": cautions,
+            "edition_number": edition_number,
             "last_seen_year": 2025,
         }
 
@@ -193,11 +225,13 @@ def public_status_for_event(event: dict) -> dict:
         reasons.append("未確認")
     return {
         "public_status": "date_unknown",
+        "public_category": "date_unknown",
         "public_status_label": "日程未確認",
         "recurrence_label": "日程未確認",
         "recurrence_score": score,
         "reasons": reasons,
         "cautions": ["2026年日程なし"],
+        "edition_number": parse_edition_number(event.get("name")),
         "last_seen_year": None,
     }
 
@@ -218,7 +252,9 @@ def public_note(row: dict) -> str:
     if status == "ended_2026":
         return f"2026年開催終了: {date_text}"
     if status in {"expected_high", "expected_medium", "expected_low"}:
-        return f"昨年開催あり: {date_text}。今年の日程は未確認です。"
+        if row.get("edition_number"):
+            return f"第{row['edition_number']}回・昨年開催: {date_text}。今年の日程は未確認です。"
+        return f"昨年開催: {date_text}。今年の日程は未確認です。"
     return "今年の日程は未確認です。"
 
 
@@ -238,11 +274,13 @@ def build_rows(events: list[dict]) -> list[dict]:
             "source_date_year": start.year if start else None,
             "months": event.get("months") or [],
             "public_status": scored["public_status"],
+            "public_category": scored["public_category"],
             "public_status_label": scored["public_status_label"],
             "recurrence_label": scored["recurrence_label"],
             "recurrence_score": scored["recurrence_score"],
             "recurrence_reasons": scored["reasons"],
             "recurrence_cautions": scored["cautions"],
+            "edition_number": scored["edition_number"],
             "last_seen_year": scored["last_seen_year"],
             "last_seen_dates": [value for value in [event.get("date"), event.get("date_end")] if value],
             "needs_review": scored["public_status"] in {"expected_high", "expected_medium"},
@@ -261,12 +299,14 @@ def enrich_public_events(events: list[dict], rows: list[dict]) -> list[dict]:
         if row:
             for key in [
                 "public_status",
+                "public_category",
                 "public_status_label",
                 "public_note",
                 "recurrence_label",
                 "recurrence_score",
                 "recurrence_reasons",
                 "recurrence_cautions",
+                "edition_number",
                 "last_seen_year",
                 "last_seen_dates",
             ]:
@@ -300,9 +340,9 @@ def render_md(rows: list[dict]) -> str:
     counts = Counter(row["public_status"] for row in rows)
     labels = {
         "upcoming_confirmed": "今後開催",
-        "expected_high": "今年も開催見込み 高",
-        "expected_medium": "今年も開催見込み 中",
-        "expected_low": "今年も開催見込み 低",
+        "expected_high": "昨年開催・継続性 高",
+        "expected_medium": "昨年開催・継続性 中",
+        "expected_low": "昨年開催・継続性 低",
         "date_unknown": "日程未確認",
         "ended_2026": "開催終了",
     }
@@ -328,7 +368,13 @@ def render_md(rows: list[dict]) -> str:
     )
     review_rows = [row for row in rows if row["public_status"] in {"expected_high", "expected_medium"}]
     for row in review_rows[:80]:
-        reasons = " / ".join(row["recurrence_reasons"][:4])
+        reason_items = row["recurrence_reasons"]
+        prioritized_reasons = [
+            reason for reason in reason_items
+            if reason.startswith("edition_number:") or reason.startswith("edition_")
+        ]
+        prioritized_reasons.extend(reason for reason in reason_items if reason not in prioritized_reasons)
+        reasons = " / ".join(prioritized_reasons[:5])
         cautions = " / ".join(row["recurrence_cautions"][:3])
         lines.append(
             f"| {row['recurrence_score']:.2f} | {row['recurrence_label']} | {summarize_date(row)} | "

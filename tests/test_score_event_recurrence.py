@@ -1,6 +1,6 @@
 import unittest
 
-from score_event_recurrence import build_rows, enrich_public_events, public_status_for_event
+from score_event_recurrence import build_rows, enrich_public_events, parse_edition_number, public_status_for_event
 
 
 class ScoreEventRecurrenceTest(unittest.TestCase):
@@ -14,6 +14,7 @@ class ScoreEventRecurrenceTest(unittest.TestCase):
         }
         result = public_status_for_event(event)
         self.assertEqual(result["public_status"], "upcoming_confirmed")
+        self.assertEqual(result["public_category"], "upcoming")
         self.assertEqual(result["public_status_label"], "今後開催")
         self.assertEqual(result["recurrence_score"], 0.95)
 
@@ -27,6 +28,7 @@ class ScoreEventRecurrenceTest(unittest.TestCase):
         }
         result = public_status_for_event(event)
         self.assertEqual(result["public_status"], "ended_2026")
+        self.assertEqual(result["public_category"], "ended")
         self.assertEqual(result["public_status_label"], "開催終了")
 
     def test_2025_recurring_event_gets_expected_label(self):
@@ -40,9 +42,12 @@ class ScoreEventRecurrenceTest(unittest.TestCase):
             "detail": "公式確認URLあり。第70回、2025-07-25〜2025-07-26、納涼盆踊り大会。",
         }
         result = public_status_for_event(event)
-        self.assertIn(result["public_status"], {"expected_high", "expected_medium"})
-        self.assertEqual(result["public_status_label"], "2025年実績あり")
-        self.assertGreaterEqual(result["recurrence_score"], 0.55)
+        self.assertEqual(result["public_status"], "expected_high")
+        self.assertEqual(result["public_category"], "recurring_last_year")
+        self.assertEqual(result["public_status_label"], "昨年開催")
+        self.assertEqual(result["edition_number"], 70)
+        self.assertIn("edition_number:70", result["reasons"])
+        self.assertGreaterEqual(result["recurrence_score"], 0.75)
 
     def test_2025_one_shot_style_event_is_demoted(self):
         event = {
@@ -56,6 +61,7 @@ class ScoreEventRecurrenceTest(unittest.TestCase):
         }
         result = public_status_for_event(event)
         self.assertEqual(result["public_status"], "expected_low")
+        self.assertEqual(result["public_category"], "recurring_last_year")
         self.assertIn("イベント名に2025明記", result["cautions"])
 
     def test_no_date_event_is_date_unknown(self):
@@ -68,6 +74,7 @@ class ScoreEventRecurrenceTest(unittest.TestCase):
         }
         result = public_status_for_event(event)
         self.assertEqual(result["public_status"], "date_unknown")
+        self.assertEqual(result["public_category"], "date_unknown")
         self.assertEqual(result["public_status_label"], "日程未確認")
 
     def test_enrich_public_events_adds_public_fields(self):
@@ -83,7 +90,12 @@ class ScoreEventRecurrenceTest(unittest.TestCase):
         rows = build_rows(events)
         enriched = enrich_public_events(events, rows)
         self.assertEqual(enriched[0]["public_status"], "upcoming_confirmed")
+        self.assertEqual(enriched[0]["public_category"], "upcoming")
         self.assertIn("public_note", enriched[0])
+
+    def test_parse_edition_number_handles_fullwidth_digits_and_ordinal(self):
+        self.assertEqual(parse_edition_number("第３４回ふるさと千川まつり"), 34)
+        self.assertEqual(parse_edition_number("盆踊り 12回目"), 12)
 
 
 if __name__ == "__main__":

@@ -655,6 +655,7 @@
       ]
     },
     "public_status": "ended_2026",
+    "public_category": "ended",
     "public_status_label": "開催終了",
     "public_note": "2026年開催終了: 2026-06-13〜2026-06-15",
     "recurrence_label": "2026年開催終了",
@@ -663,6 +664,7 @@
       "2026年開催済み"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [
       "2026-06-13",
@@ -727,19 +729,21 @@
     ],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-08-08。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-08-08。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.72,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "公式/準公式確認あり",
-      "動画実績証拠あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:納涼"
+      "held_2025",
+      "official_or_semi_official_evidence",
+      "video_evidence",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:納涼"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-08-08",
@@ -1048,19 +1052,21 @@
       ]
     },
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-07-25〜2025-07-26。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-25〜2025-07-26。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.72,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "公式/準公式確認あり",
-      "動画実績証拠あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:夏祭り"
+      "held_2025",
+      "official_or_semi_official_evidence",
+      "video_evidence",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:夏祭り"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-25",
@@ -1108,6 +1114,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
     "public_status_label": "今後開催",
     "public_note": "2026年日程確認済み: 2026-07-13〜2026-07-16",
     "recurrence_label": "2026年確認済み",
@@ -1116,6 +1123,7 @@
       "2026年日付確認済み"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [
       "2026-07-13",
@@ -1149,6 +1157,7 @@
     "youtube_evidence": [],
     "songs": [],
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -1157,6 +1166,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -1228,18 +1238,20 @@
     ],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-08-02。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-08-02。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.68,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "公式/準公式確認あり",
-      "動画実績証拠あり",
-      "会場あり",
-      "23区エリアあり"
+      "held_2025",
+      "official_or_semi_official_evidence",
+      "video_evidence",
+      "venue_present",
+      "tokyo_23ward"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-08-02",
@@ -1283,6 +1295,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -1295,6 +1308,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -1335,6 +1349,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -1347,6 +1362,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -1378,6 +1394,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -1388,6 +1405,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -1428,6 +1446,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "ended_2026",
+    "public_category": "ended",
     "public_status_label": "開催終了",
     "public_note": "2026年開催終了: 2026-02-21",
     "recurrence_label": "2026年開催終了",
@@ -1436,6 +1455,7 @@
       "2026年開催済み"
     ],
     "recurrence_cautions": [],
+    "edition_number": 2,
     "last_seen_year": null,
     "last_seen_dates": [
       "2026-02-21"
@@ -1503,6 +1523,7 @@
     ],
     "song_occurrence": null,
     "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
     "public_status_label": "今後開催",
     "public_note": "2026年日程確認済み: 2026-07-11〜2026-07-12",
     "recurrence_label": "2026年確認済み",
@@ -1511,6 +1532,7 @@
       "2026年日付確認済み"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [
       "2026-07-11",
@@ -1544,6 +1566,7 @@
     "youtube_evidence": [],
     "songs": [],
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -1552,6 +1575,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -1596,6 +1620,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
     "public_status_label": "今後開催",
     "public_note": "2026年日程確認済み: 2026-08-21〜2026-08-22",
     "recurrence_label": "2026年確認済み",
@@ -1604,6 +1629,7 @@
       "2026年日付確認済み"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [
       "2026-08-21",
@@ -1647,6 +1673,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -1659,6 +1686,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -1705,6 +1733,7 @@
     ],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -1717,6 +1746,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -1819,6 +1849,7 @@
     ],
     "song_occurrence": null,
     "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
     "public_status_label": "今後開催",
     "public_note": "2026年日程確認済み: 2026-07-29〜2026-08-01",
     "recurrence_label": "2026年確認済み",
@@ -1827,6 +1858,7 @@
       "2026年日付確認済み"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [
       "2026-07-29",
@@ -1863,6 +1895,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -1874,6 +1907,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -1914,6 +1948,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -1926,6 +1961,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -1965,20 +2001,24 @@
     "youtube_evidence": [],
     "songs": [],
     "song_occurrence": null,
-    "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-08-22。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
-    "recurrence_score": 0.68,
+    "public_status": "expected_high",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "第16回・昨年開催: 2025-08-22。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 高",
+    "recurrence_score": 0.82,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "動画実績証拠あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:例年",
-      "継続語:夏祭り"
+      "held_2025",
+      "video_evidence",
+      "venue_present",
+      "tokyo_23ward",
+      "edition_number:16",
+      "edition_10plus",
+      "recurring_word:例年",
+      "recurring_word:夏祭り"
     ],
     "recurrence_cautions": [],
+    "edition_number": 16,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-08-22"
@@ -2021,6 +2061,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -2033,6 +2074,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -2132,19 +2174,21 @@
     ],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-08-22〜2025-08-24。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-08-22〜2025-08-24。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.72,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "公式/準公式確認あり",
-      "動画実績証拠あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:夏祭り"
+      "held_2025",
+      "official_or_semi_official_evidence",
+      "video_evidence",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:夏祭り"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-08-22",
@@ -2188,6 +2232,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -2200,6 +2245,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -2240,6 +2286,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -2252,6 +2299,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -2292,6 +2340,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -2304,6 +2353,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -2394,20 +2444,23 @@
       }
     ],
     "song_occurrence": null,
-    "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-07-24。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
-    "recurrence_score": 0.71,
+    "public_status": "expected_high",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "第28回・昨年開催: 2025-07-24。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 高",
+    "recurrence_score": 0.78,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "動画実績証拠あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:夏祭り",
-      "回数付き継続イベント"
+      "held_2025",
+      "video_evidence",
+      "venue_present",
+      "tokyo_23ward",
+      "edition_number:28",
+      "edition_10plus",
+      "recurring_word:夏祭り"
     ],
     "recurrence_cautions": [],
+    "edition_number": 28,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-24"
@@ -2454,19 +2507,21 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-07-24〜2025-07-25。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-24〜2025-07-25。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.68,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "動画実績証拠あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:寺",
-      "継続語:盆踊り大会"
+      "held_2025",
+      "video_evidence",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:寺",
+      "recurring_word:盆踊り大会"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-24",
@@ -2510,6 +2565,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -2522,6 +2578,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -2597,21 +2654,25 @@
       }
     ],
     "song_occurrence": null,
-    "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-09-07。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
-    "recurrence_score": 0.72,
+    "public_status": "expected_high",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "第10回・昨年開催: 2025-09-07。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 高",
+    "recurrence_score": 0.86,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "動画実績証拠あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:納涼",
-      "継続語:盆踊り大会",
-      "継続語:夏祭り"
+      "held_2025",
+      "video_evidence",
+      "venue_present",
+      "tokyo_23ward",
+      "edition_number:10",
+      "edition_10plus",
+      "recurring_word:納涼",
+      "recurring_word:盆踊り大会",
+      "recurring_word:夏祭り"
     ],
     "recurrence_cautions": [],
+    "edition_number": 10,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-09-07"
@@ -2690,6 +2751,7 @@
       ]
     },
     "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
     "public_status_label": "今後開催",
     "public_note": "2026年日程確認済み: 2026-06-26〜2026-06-27",
     "recurrence_label": "2026年確認済み",
@@ -2698,6 +2760,7 @@
       "2026年日付確認済み"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [
       "2026-06-26",
@@ -2741,6 +2804,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -2753,6 +2817,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -2797,6 +2862,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
     "public_status_label": "今後開催",
     "public_note": "2026年日程確認済み: 2026-10-10〜2026-10-12",
     "recurrence_label": "2026年確認済み",
@@ -2805,6 +2871,7 @@
       "2026年日付確認済み"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [
       "2026-10-10",
@@ -2848,6 +2915,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -2860,6 +2928,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -2941,19 +3010,21 @@
     ],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-08-09。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-08-09。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.68,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "動画実績証拠あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:例大祭",
-      "継続語:神社"
+      "held_2025",
+      "video_evidence",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:例大祭",
+      "recurring_word:神社"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-08-09"
@@ -3002,6 +3073,7 @@
     ],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -3014,6 +3086,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -3054,6 +3127,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -3065,6 +3139,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -3105,6 +3180,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -3117,6 +3193,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -3161,22 +3238,24 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_high",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-07-27〜2025-07-28。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 高",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-27〜2025-07-28。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 高",
     "recurrence_score": 0.84,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "公式/準公式確認あり",
-      "動画実績証拠あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:例年",
-      "継続語:納涼",
-      "継続語:寺",
-      "継続語:盆踊り大会"
+      "held_2025",
+      "official_or_semi_official_evidence",
+      "video_evidence",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:例年",
+      "recurring_word:納涼",
+      "recurring_word:寺",
+      "recurring_word:盆踊り大会"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-27",
@@ -3224,22 +3303,24 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_high",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-09-26〜2025-09-27。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 高",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-09-26〜2025-09-27。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 高",
     "recurrence_score": 0.84,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "公式/準公式確認あり",
-      "動画実績証拠あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:例年",
-      "継続語:例大祭",
-      "継続語:町会",
-      "継続語:神社"
+      "held_2025",
+      "official_or_semi_official_evidence",
+      "video_evidence",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:例年",
+      "recurring_word:例大祭",
+      "recurring_word:町会",
+      "recurring_word:神社"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-09-26",
@@ -3283,6 +3364,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -3294,6 +3376,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -3365,19 +3448,23 @@
         }
       ]
     },
-    "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-10-13。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
-    "recurrence_score": 0.67,
+    "public_status": "expected_high",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "第42回・昨年開催: 2025-10-13。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 高",
+    "recurrence_score": 0.78,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:まつり",
-      "回数付き継続イベント"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "edition_number:42",
+      "edition_10plus",
+      "edition_30plus",
+      "recurring_word:まつり"
     ],
     "recurrence_cautions": [],
+    "edition_number": 42,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-10-13"
@@ -3424,20 +3511,24 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_high",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-07-23〜2025-07-24。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 高",
-    "recurrence_score": 0.79,
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "第51回・昨年開催: 2025-07-23〜2025-07-24。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 高",
+    "recurrence_score": 0.9,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "公式/準公式確認あり",
-      "動画実績証拠あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:まつり",
-      "回数付き継続イベント"
+      "held_2025",
+      "official_or_semi_official_evidence",
+      "video_evidence",
+      "venue_present",
+      "tokyo_23ward",
+      "edition_number:51",
+      "edition_10plus",
+      "edition_30plus",
+      "recurring_word:まつり"
     ],
     "recurrence_cautions": [],
+    "edition_number": 51,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-23",
@@ -3481,18 +3572,20 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-07-19。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-19。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.64,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:町会",
-      "継続語:盆踊り大会"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:町会",
+      "recurring_word:盆踊り大会"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-19"
@@ -3535,18 +3628,20 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-08-02。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-08-02。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.64,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:町会",
-      "継続語:盆踊り大会"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:町会",
+      "recurring_word:盆踊り大会"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-08-02"
@@ -3589,17 +3684,19 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-07-25。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-25。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.6,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:盆踊り大会"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:盆踊り大会"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-25"
@@ -3642,19 +3739,21 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-09-15。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-09-15。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.68,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:例大祭",
-      "継続語:町会",
-      "継続語:神社"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:例大祭",
+      "recurring_word:町会",
+      "recurring_word:神社"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-09-15"
@@ -3753,20 +3852,23 @@
       ]
     },
     "public_status": "expected_high",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-07-19。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 高",
-    "recurrence_score": 0.75,
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "第25回・昨年開催: 2025-07-19。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 高",
+    "recurrence_score": 0.82,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "動画実績証拠あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:納涼",
-      "継続語:夏祭り",
-      "回数付き継続イベント"
+      "held_2025",
+      "video_evidence",
+      "venue_present",
+      "tokyo_23ward",
+      "edition_number:25",
+      "edition_10plus",
+      "recurring_word:納涼",
+      "recurring_word:夏祭り"
     ],
     "recurrence_cautions": [],
+    "edition_number": 25,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-19"
@@ -3809,6 +3911,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -3821,6 +3924,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -3865,19 +3969,21 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-06-25〜2025-06-26。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-06-25〜2025-06-26。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.72,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "公式/準公式確認あり",
-      "動画実績証拠あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:まつり"
+      "held_2025",
+      "official_or_semi_official_evidence",
+      "video_evidence",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:まつり"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-06-25",
@@ -3948,18 +4054,20 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-08-16。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-08-16。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.64,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "動画実績証拠あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:商店街"
+      "held_2025",
+      "video_evidence",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:商店街"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-08-16"
@@ -4002,18 +4110,20 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-07-19。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
-    "recurrence_score": 0.67,
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "第9回・昨年開催: 2025-07-19。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.7,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:町会",
-      "回数付き継続イベント"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "edition_number:9",
+      "recurring_word:町会"
     ],
     "recurrence_cautions": [],
+    "edition_number": 9,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-19"
@@ -4060,18 +4170,20 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-08-01〜2025-08-02。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-08-01〜2025-08-02。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.64,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "動画実績証拠あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:神社"
+      "held_2025",
+      "video_evidence",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:神社"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-08-01",
@@ -4115,19 +4227,21 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-07-12。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-12。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.68,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:納涼",
-      "継続語:盆踊り大会",
-      "継続語:夏祭り"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:納涼",
+      "recurring_word:盆踊り大会",
+      "recurring_word:夏祭り"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-12"
@@ -4170,6 +4284,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -4182,6 +4297,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -4258,19 +4374,20 @@
     ],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-08-16。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
-    "recurrence_score": 0.71,
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-08-16。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.64,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "動画実績証拠あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:盆踊り大会",
-      "回数付き継続イベント"
+      "held_2025",
+      "video_evidence",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:盆踊り大会"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-08-16"
@@ -4313,18 +4430,20 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-08-23。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-08-23。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.64,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:納涼",
-      "継続語:町会"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:納涼",
+      "recurring_word:町会"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-08-23"
@@ -4367,6 +4486,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "ended_2026",
+    "public_category": "ended",
     "public_status_label": "開催終了",
     "public_note": "2026年開催終了: 2026-05-09",
     "recurrence_label": "2026年開催終了",
@@ -4375,6 +4495,7 @@
       "2026年開催済み"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [
       "2026-05-09"
@@ -4421,6 +4542,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
     "public_status_label": "今後開催",
     "public_note": "2026年日程確認済み: 2026-06-26〜2026-06-27",
     "recurrence_label": "2026年確認済み",
@@ -4429,6 +4551,7 @@
       "2026年日付確認済み"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [
       "2026-06-26",
@@ -4472,6 +4595,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -4484,6 +4608,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -4528,6 +4653,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
     "public_status_label": "今後開催",
     "public_note": "2026年日程確認済み: 2026-07-03〜2026-07-05",
     "recurrence_label": "2026年確認済み",
@@ -4536,6 +4662,7 @@
       "2026年日付確認済み"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [
       "2026-07-03",
@@ -4579,6 +4706,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -4591,6 +4719,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -4627,6 +4756,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -4637,6 +4767,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -4693,19 +4824,21 @@
     ],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-08-20。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-08-20。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.68,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "動画実績証拠あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:寺",
-      "継続語:夏祭り"
+      "held_2025",
+      "video_evidence",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:寺",
+      "recurring_word:夏祭り"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-08-20"
@@ -4759,6 +4892,7 @@
     ],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -4771,6 +4905,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": 2,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -4837,6 +4972,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
     "public_status_label": "今後開催",
     "public_note": "2026年日程確認済み: 2026-06-27",
     "recurrence_label": "2026年確認済み",
@@ -4845,6 +4981,7 @@
       "2026年日付確認済み"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [
       "2026-06-27"
@@ -4897,20 +5034,22 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-07-13。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-13。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.63,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "公式/準公式確認あり",
-      "動画実績証拠あり",
-      "会場あり",
-      "23区エリアあり"
+      "held_2025",
+      "official_or_semi_official_evidence",
+      "video_evidence",
+      "venue_present",
+      "tokyo_23ward"
     ],
     "recurrence_cautions": [
       "単発/企画色:BON DANCE"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-13",
@@ -4954,6 +5093,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -4966,6 +5106,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -5038,16 +5179,20 @@
       ]
     },
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-01-11。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
-    "recurrence_score": 0.56,
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "第10回・昨年開催: 2025-01-11。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.7,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "edition_number:10",
+      "edition_10plus"
     ],
     "recurrence_cautions": [],
+    "edition_number": 10,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-01-11"
@@ -5090,6 +5235,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -5102,6 +5248,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -5142,20 +5289,22 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-09-27。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-09-27。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.72,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:納涼",
-      "継続語:町会",
-      "継続語:盆踊り大会",
-      "継続語:夏祭り"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:納涼",
+      "recurring_word:町会",
+      "recurring_word:盆踊り大会",
+      "recurring_word:夏祭り"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-09-27"
@@ -5198,19 +5347,21 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-09-13。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-09-13。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.68,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:例年",
-      "継続語:町会",
-      "継続語:神社"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:例年",
+      "recurring_word:町会",
+      "recurring_word:神社"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-09-13"
@@ -5253,18 +5404,20 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-09-13。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-09-13。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.64,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:町会",
-      "継続語:神社"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:町会",
+      "recurring_word:神社"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-09-13"
@@ -5387,6 +5540,7 @@
       ]
     },
     "public_status": "ended_2026",
+    "public_category": "ended",
     "public_status_label": "開催終了",
     "public_note": "2026年開催終了: 2026-03-01",
     "recurrence_label": "2026年開催終了",
@@ -5395,6 +5549,7 @@
       "2026年開催済み"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [
       "2026-03-01"
@@ -5437,18 +5592,20 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-09-12。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-09-12。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.64,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:神社",
-      "継続語:寺"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:神社",
+      "recurring_word:寺"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-09-12"
@@ -5491,6 +5648,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -5503,6 +5661,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -5543,6 +5702,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -5555,6 +5715,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -5595,6 +5756,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -5607,6 +5769,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -5647,6 +5810,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -5659,6 +5823,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -5699,6 +5864,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -5711,6 +5877,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -5751,6 +5918,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -5763,6 +5931,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -5839,6 +6008,7 @@
       ]
     },
     "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
     "public_status_label": "今後開催",
     "public_note": "2026年日程確認済み: 2026-07-29〜2026-07-30",
     "recurrence_label": "2026年確認済み",
@@ -5847,6 +6017,7 @@
       "2026年日付確認済み"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [
       "2026-07-29",
@@ -5890,6 +6061,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -5901,6 +6073,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -5941,18 +6114,20 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-09-13。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-09-13。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.64,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:町会",
-      "継続語:神社"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:町会",
+      "recurring_word:神社"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-09-13"
@@ -5995,6 +6170,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -6007,6 +6183,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -6047,6 +6224,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -6059,6 +6237,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -6135,6 +6314,7 @@
       ]
     },
     "public_status": "ended_2026",
+    "public_category": "ended",
     "public_status_label": "開催終了",
     "public_note": "2026年開催終了: 2026-05-09〜2026-05-10",
     "recurrence_label": "2026年開催終了",
@@ -6143,6 +6323,7 @@
       "2026年開催済み"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [
       "2026-05-09",
@@ -6186,6 +6367,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -6198,6 +6380,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -6238,6 +6421,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -6250,6 +6434,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": 2,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -6290,6 +6475,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -6302,6 +6488,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -6342,6 +6529,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -6354,6 +6542,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -6394,6 +6583,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -6406,6 +6596,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -6446,6 +6637,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -6458,6 +6650,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -6498,6 +6691,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "ended_2026",
+    "public_category": "ended",
     "public_status_label": "開催終了",
     "public_note": "2026年開催終了: 2026-05-23",
     "recurrence_label": "2026年開催終了",
@@ -6506,6 +6700,7 @@
       "2026年開催済み"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [
       "2026-05-23"
@@ -6553,6 +6748,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -6565,6 +6761,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -6605,6 +6802,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -6617,6 +6815,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -6657,6 +6856,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -6669,6 +6869,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -6709,6 +6910,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -6721,6 +6923,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -6864,19 +7067,23 @@
         }
       ]
     },
-    "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-08-23。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
-    "recurrence_score": 0.67,
+    "public_status": "expected_high",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "第71回・昨年開催: 2025-08-23。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 高",
+    "recurrence_score": 0.78,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:まつり",
-      "回数付き継続イベント"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "edition_number:71",
+      "edition_10plus",
+      "edition_30plus",
+      "recurring_word:まつり"
     ],
     "recurrence_cautions": [],
+    "edition_number": 71,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-08-23"
@@ -6919,6 +7126,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -6931,6 +7139,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -6971,6 +7180,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -6982,6 +7192,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -7022,6 +7233,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "ended_2026",
+    "public_category": "ended",
     "public_status_label": "開催終了",
     "public_note": "2026年開催終了: 2026-06-07",
     "recurrence_label": "2026年開催終了",
@@ -7030,6 +7242,7 @@
       "2026年開催済み"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [
       "2026-06-07"
@@ -7072,6 +7285,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -7084,6 +7298,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -7124,6 +7339,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -7136,6 +7352,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -7176,6 +7393,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -7188,6 +7406,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -7228,6 +7447,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -7239,6 +7459,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -7431,18 +7652,20 @@
       ]
     },
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-10-18。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-10-18。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.64,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "動画実績証拠あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:商店街"
+      "held_2025",
+      "video_evidence",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:商店街"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-10-18"
@@ -7485,6 +7708,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -7497,6 +7721,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -8733,6 +8958,7 @@
       ]
     },
     "public_status": "ended_2026",
+    "public_category": "ended",
     "public_status_label": "開催終了",
     "public_note": "2026年開催終了: 2026-05-31",
     "recurrence_label": "2026年開催終了",
@@ -8741,6 +8967,7 @@
       "2026年開催済み"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [
       "2026-05-31"
@@ -8783,6 +9010,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -8795,6 +9023,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -8835,6 +9064,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -8847,6 +9077,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -8887,6 +9118,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -8899,6 +9131,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -8939,6 +9172,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -8951,6 +9185,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": 3,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -8991,6 +9226,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -9003,6 +9239,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -9043,17 +9280,19 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-09-27。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-09-27。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.6,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:まつり"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:まつり"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-09-27"
@@ -9096,19 +9335,21 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-09-13。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-09-13。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.68,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:例大祭",
-      "継続語:神社",
-      "継続語:盆踊り大会"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:例大祭",
+      "recurring_word:神社",
+      "recurring_word:盆踊り大会"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-09-13"
@@ -9151,6 +9392,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "ended_2026",
+    "public_category": "ended",
     "public_status_label": "開催終了",
     "public_note": "2026年開催終了: 2026-06-06",
     "recurrence_label": "2026年開催終了",
@@ -9159,6 +9401,7 @@
       "2026年開催済み"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [
       "2026-06-06"
@@ -9200,19 +9443,23 @@
     "youtube_evidence": [],
     "songs": [],
     "song_occurrence": null,
-    "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-07-27。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
-    "recurrence_score": 0.67,
+    "public_status": "expected_high",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "第37回・昨年開催: 2025-07-27。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 高",
+    "recurrence_score": 0.78,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:盆踊り大会",
-      "回数付き継続イベント"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "edition_number:37",
+      "edition_10plus",
+      "edition_30plus",
+      "recurring_word:盆踊り大会"
     ],
     "recurrence_cautions": [],
+    "edition_number": 37,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-27"
@@ -9255,19 +9502,21 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-08-30。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-08-30。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.55,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:盆踊り大会"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:盆踊り大会"
     ],
     "recurrence_cautions": [
       "イベント名に2025明記"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-08-30"
@@ -9310,16 +9559,18 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-11-23。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-11-23。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.56,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-11-23"
@@ -9362,20 +9613,24 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_high",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-07-16。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 高",
-    "recurrence_score": 0.75,
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "第90回・昨年開催: 2025-07-16。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 高",
+    "recurrence_score": 0.86,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:寺",
-      "継続語:盆踊り大会",
-      "継続語:まつり",
-      "回数付き継続イベント"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "edition_number:90",
+      "edition_10plus",
+      "edition_30plus",
+      "recurring_word:寺",
+      "recurring_word:盆踊り大会",
+      "recurring_word:まつり"
     ],
     "recurrence_cautions": [],
+    "edition_number": 90,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-16"
@@ -9502,23 +9757,25 @@
       ]
     },
     "public_status": "expected_high",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-07-19〜2025-07-21。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 高",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-19〜2025-07-21。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 高",
     "recurrence_score": 0.75,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "公式/準公式確認あり",
-      "動画実績証拠あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:納涼",
-      "継続語:商店街",
-      "継続語:盆踊り大会"
+      "held_2025",
+      "official_or_semi_official_evidence",
+      "video_evidence",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:納涼",
+      "recurring_word:商店街",
+      "recurring_word:盆踊り大会"
     ],
     "recurrence_cautions": [
       "単発/企画色:Festival"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-19",
@@ -9562,6 +9819,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "ended_2026",
+    "public_category": "ended",
     "public_status_label": "開催終了",
     "public_note": "2026年開催終了: 2026-03-29",
     "recurrence_label": "2026年開催終了",
@@ -9570,6 +9828,7 @@
       "2026年開催済み"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [
       "2026-03-29"
@@ -9612,22 +9871,24 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_low",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-09-06。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 低",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-09-06。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 低",
     "recurrence_score": 0.54,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:自治会",
-      "継続語:商店街"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:自治会",
+      "recurring_word:商店街"
     ],
     "recurrence_cautions": [
       "次回日程未確認",
       "単発/企画色:フェス",
       "イベント名に2025明記"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-09-06"
@@ -9670,19 +9931,21 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-07-29。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-29。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.6,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:自治会"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:自治会"
     ],
     "recurrence_cautions": [
       "次回日程未確認"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-29"
@@ -9725,21 +9988,23 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-07-21。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-21。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.68,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:納涼",
-      "継続語:自治会",
-      "継続語:盆踊り大会"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:納涼",
+      "recurring_word:自治会",
+      "recurring_word:盆踊り大会"
     ],
     "recurrence_cautions": [
       "次回日程未確認"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-21"
@@ -9782,21 +10047,23 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-07-24。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-24。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.68,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:納涼",
-      "継続語:町会",
-      "継続語:神社"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:納涼",
+      "recurring_word:町会",
+      "recurring_word:神社"
     ],
     "recurrence_cautions": [
       "次回日程未確認"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-24"
@@ -9839,19 +10106,21 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-08-02。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-08-02。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.6,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:町会"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:町会"
     ],
     "recurrence_cautions": [
       "次回日程未確認"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-08-02"
@@ -9894,21 +10163,23 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-07-18。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-18。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.68,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:納涼",
-      "継続語:町会",
-      "継続語:盆踊り大会"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:納涼",
+      "recurring_word:町会",
+      "recurring_word:盆踊り大会"
     ],
     "recurrence_cautions": [
       "次回日程未確認"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-18"
@@ -9951,21 +10222,23 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-07-26。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-26。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.68,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:町会",
-      "継続語:盆踊り大会",
-      "継続語:夏祭り"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:町会",
+      "recurring_word:盆踊り大会",
+      "recurring_word:夏祭り"
     ],
     "recurrence_cautions": [
       "次回日程未確認"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-26"
@@ -10008,19 +10281,21 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-07-13。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-13。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.6,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:神社"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:神社"
     ],
     "recurrence_cautions": [
       "次回日程未確認"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-13"
@@ -10063,22 +10338,24 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-07-11。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-11。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.72,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:町会",
-      "継続語:自治会",
-      "継続語:神社",
-      "継続語:盆踊り大会"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:町会",
+      "recurring_word:自治会",
+      "recurring_word:神社",
+      "recurring_word:盆踊り大会"
     ],
     "recurrence_cautions": [
       "次回日程未確認"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-11"
@@ -10121,21 +10398,23 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-07-21。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-21。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.68,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:町会",
-      "継続語:神社",
-      "継続語:盆踊り大会"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:町会",
+      "recurring_word:神社",
+      "recurring_word:盆踊り大会"
     ],
     "recurrence_cautions": [
       "次回日程未確認"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-21"
@@ -10178,21 +10457,23 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-07-28。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-28。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.68,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:納涼",
-      "継続語:町会",
-      "継続語:盆踊り大会"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:納涼",
+      "recurring_word:町会",
+      "recurring_word:盆踊り大会"
     ],
     "recurrence_cautions": [
       "次回日程未確認"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-28"
@@ -10235,19 +10516,21 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-04-06。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-04-06。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.6,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:自治会"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:自治会"
     ],
     "recurrence_cautions": [
       "次回日程未確認"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-04-06"
@@ -10290,21 +10573,23 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-07-19。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-19。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.68,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:納涼",
-      "継続語:町会",
-      "継続語:夏祭り"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:納涼",
+      "recurring_word:町会",
+      "recurring_word:夏祭り"
     ],
     "recurrence_cautions": [
       "次回日程未確認"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-19"
@@ -10347,20 +10632,22 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-08-23。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-08-23。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.64,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:納涼",
-      "継続語:夏祭り"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:納涼",
+      "recurring_word:夏祭り"
     ],
     "recurrence_cautions": [
       "次回日程未確認"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-08-23"
@@ -10403,20 +10690,22 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-07-19。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-19。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.64,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:納涼",
-      "継続語:町会"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:納涼",
+      "recurring_word:町会"
     ],
     "recurrence_cautions": [
       "次回日程未確認"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-19"
@@ -10459,20 +10748,22 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-08-09。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-08-09。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.55,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:商店街"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:商店街"
     ],
     "recurrence_cautions": [
       "次回日程未確認",
       "イベント名に2025明記"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-08-09"
@@ -10515,20 +10806,22 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-08-17。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-08-17。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.64,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:神社",
-      "継続語:盆踊り大会"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:神社",
+      "recurring_word:盆踊り大会"
     ],
     "recurrence_cautions": [
       "次回日程未確認"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-08-17"
@@ -10571,19 +10864,21 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-07-25。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-25。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.6,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:町会"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:町会"
     ],
     "recurrence_cautions": [
       "次回日程未確認"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-25"
@@ -10626,20 +10921,22 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-07-25。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-25。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.64,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:商店街",
-      "継続語:盆踊り大会"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:商店街",
+      "recurring_word:盆踊り大会"
     ],
     "recurrence_cautions": [
       "次回日程未確認"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-25"
@@ -10682,20 +10979,22 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-07-12。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-12。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.64,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:盆踊り大会",
-      "継続語:夏祭り"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:盆踊り大会",
+      "recurring_word:夏祭り"
     ],
     "recurrence_cautions": [
       "次回日程未確認"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-12"
@@ -10738,21 +11037,23 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-07-26。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-26。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.68,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:納涼",
-      "継続語:商店街",
-      "継続語:盆踊り大会"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:納涼",
+      "recurring_word:商店街",
+      "recurring_word:盆踊り大会"
     ],
     "recurrence_cautions": [
       "次回日程未確認"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-26"
@@ -10795,18 +11096,20 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-08-17。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-08-17。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.56,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward"
     ],
     "recurrence_cautions": [
       "次回日程未確認"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-08-17"
@@ -10849,20 +11152,22 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-07-20。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-20。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.64,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:神社",
-      "継続語:盆踊り大会"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:神社",
+      "recurring_word:盆踊り大会"
     ],
     "recurrence_cautions": [
       "次回日程未確認"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-20"
@@ -10905,19 +11210,21 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-07-26。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-26。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.6,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:夏祭り"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:夏祭り"
     ],
     "recurrence_cautions": [
       "次回日程未確認"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-26"
@@ -10960,21 +11267,23 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-07-19。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-19。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.68,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:町会",
-      "継続語:神社",
-      "継続語:盆踊り大会"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:町会",
+      "recurring_word:神社",
+      "recurring_word:盆踊り大会"
     ],
     "recurrence_cautions": [
       "次回日程未確認"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-19"
@@ -11017,19 +11326,21 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-07-26。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-26。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.6,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:盆踊り大会"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:盆踊り大会"
     ],
     "recurrence_cautions": [
       "次回日程未確認"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-26"
@@ -11072,19 +11383,21 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-07-26。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-26。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.6,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:商店街"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:商店街"
     ],
     "recurrence_cautions": [
       "次回日程未確認"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-26"
@@ -11127,19 +11440,21 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-07-19。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-19。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.6,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:まつり"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:まつり"
     ],
     "recurrence_cautions": [
       "次回日程未確認"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-19"
@@ -11182,19 +11497,21 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-07-19。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-19。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.6,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:神社"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:神社"
     ],
     "recurrence_cautions": [
       "次回日程未確認"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-19"
@@ -11237,19 +11554,21 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-07-26。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-26。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.6,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:盆踊り大会"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:盆踊り大会"
     ],
     "recurrence_cautions": [
       "次回日程未確認"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-26"
@@ -11292,22 +11611,24 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-07-26。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-26。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.72,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:納涼",
-      "継続語:町会",
-      "継続語:神社",
-      "継続語:盆踊り大会"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:納涼",
+      "recurring_word:町会",
+      "recurring_word:神社",
+      "recurring_word:盆踊り大会"
     ],
     "recurrence_cautions": [
       "次回日程未確認"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-26"
@@ -11350,19 +11671,21 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-08-01。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-08-01。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.6,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:神社"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:神社"
     ],
     "recurrence_cautions": [
       "次回日程未確認"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-08-01"
@@ -11405,20 +11728,22 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-08-16。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-08-16。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.64,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:納涼",
-      "継続語:夏祭り"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:納涼",
+      "recurring_word:夏祭り"
     ],
     "recurrence_cautions": [
       "次回日程未確認"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-08-16"
@@ -11461,20 +11786,22 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-07-19。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-19。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.64,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:納涼",
-      "継続語:盆踊り大会"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:納涼",
+      "recurring_word:盆踊り大会"
     ],
     "recurrence_cautions": [
       "次回日程未確認"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-19"
@@ -11517,21 +11844,23 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-08-01。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-08-01。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.68,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:納涼",
-      "継続語:自治会",
-      "継続語:盆踊り大会"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:納涼",
+      "recurring_word:自治会",
+      "recurring_word:盆踊り大会"
     ],
     "recurrence_cautions": [
       "次回日程未確認"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-08-01"
@@ -11573,21 +11902,25 @@
     "youtube_evidence": [],
     "songs": [],
     "song_occurrence": null,
-    "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-07-19。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
-    "recurrence_score": 0.67,
+    "public_status": "expected_high",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "第38回・昨年開催: 2025-07-19。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 高",
+    "recurrence_score": 0.78,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:夏祭り",
-      "回数付き継続イベント"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "edition_number:38",
+      "edition_10plus",
+      "edition_30plus",
+      "recurring_word:夏祭り"
     ],
     "recurrence_cautions": [
       "次回日程未確認"
     ],
+    "edition_number": 38,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-19"
@@ -11630,19 +11963,21 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-07-18。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-18。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.6,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:商店街"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:商店街"
     ],
     "recurrence_cautions": [
       "次回日程未確認"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-18"
@@ -11684,6 +12019,7 @@
     "youtube_evidence": [],
     "songs": [],
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -11695,6 +12031,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -11735,22 +12072,24 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-07-26。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-26。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.72,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:納涼",
-      "継続語:町会",
-      "継続語:神社",
-      "継続語:盆踊り大会"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:納涼",
+      "recurring_word:町会",
+      "recurring_word:神社",
+      "recurring_word:盆踊り大会"
     ],
     "recurrence_cautions": [
       "次回日程未確認"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-26"
@@ -11793,20 +12132,22 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-07-26。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-26。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.64,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:納涼",
-      "継続語:神社"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:納涼",
+      "recurring_word:神社"
     ],
     "recurrence_cautions": [
       "次回日程未確認"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-26"
@@ -11849,21 +12190,23 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-08-02。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-08-02。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.68,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:自治会",
-      "継続語:寺",
-      "継続語:盆踊り大会"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:自治会",
+      "recurring_word:寺",
+      "recurring_word:盆踊り大会"
     ],
     "recurrence_cautions": [
       "次回日程未確認"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-08-02"
@@ -11906,20 +12249,22 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-08-03。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-08-03。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.64,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:納涼",
-      "継続語:盆踊り大会"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:納涼",
+      "recurring_word:盆踊り大会"
     ],
     "recurrence_cautions": [
       "次回日程未確認"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-08-03"
@@ -11962,18 +12307,20 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-08-10。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-08-10。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.56,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "会場あり",
-      "23区エリアあり"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward"
     ],
     "recurrence_cautions": [
       "次回日程未確認"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-08-10"
@@ -12020,20 +12367,24 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_high",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-07-25〜2025-07-26。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 高",
-    "recurrence_score": 0.79,
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "第70回・昨年開催: 2025-07-25〜2025-07-26。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 高",
+    "recurrence_score": 0.9,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "公式/準公式確認あり",
-      "動画実績証拠あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:盆踊り大会",
-      "回数付き継続イベント"
+      "held_2025",
+      "official_or_semi_official_evidence",
+      "video_evidence",
+      "venue_present",
+      "tokyo_23ward",
+      "edition_number:70",
+      "edition_10plus",
+      "edition_30plus",
+      "recurring_word:盆踊り大会"
     ],
     "recurrence_cautions": [],
+    "edition_number": 70,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-25",
@@ -12087,19 +12438,21 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_high",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-08-02。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 高",
-    "recurrence_score": 0.75,
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "第6回・昨年開催: 2025-08-02。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 高",
+    "recurrence_score": 0.78,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "公式/準公式確認あり",
-      "動画実績証拠あり",
-      "会場あり",
-      "23区エリアあり",
-      "回数付き継続イベント"
+      "held_2025",
+      "official_or_semi_official_evidence",
+      "video_evidence",
+      "venue_present",
+      "tokyo_23ward",
+      "edition_number:6"
     ],
     "recurrence_cautions": [],
+    "edition_number": 6,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-08-02",
@@ -12153,21 +12506,23 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-04-19。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-04-19。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.58,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "公式/準公式確認あり",
-      "動画実績証拠あり",
-      "会場あり",
-      "23区エリアあり"
+      "held_2025",
+      "official_or_semi_official_evidence",
+      "video_evidence",
+      "venue_present",
+      "tokyo_23ward"
     ],
     "recurrence_cautions": [
       "単発/企画色:アースデイ",
       "イベント名に2025明記"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-04-19",
@@ -12211,6 +12566,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "ended_2026",
+    "public_category": "ended",
     "public_status_label": "開催終了",
     "public_note": "2026年開催終了: 2026-03-15",
     "recurrence_label": "2026年開催終了",
@@ -12219,6 +12575,7 @@
       "2026年開催済み"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [
       "2026-03-15"
@@ -12267,22 +12624,24 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_low",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-05-31〜2025-06-01。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 低",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-05-31〜2025-06-01。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 低",
     "recurrence_score": 0.53,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "公式/準公式確認あり",
-      "動画実績証拠あり",
-      "会場あり",
-      "23区エリアあり"
+      "held_2025",
+      "official_or_semi_official_evidence",
+      "video_evidence",
+      "venue_present",
+      "tokyo_23ward"
     ],
     "recurrence_cautions": [
       "単発/企画色:フェス",
       "単発/企画色:BON DANCE",
       "単発/企画色:シブヤエンタメ祭"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-05-31",
@@ -12351,16 +12710,17 @@
     ],
     "song_occurrence": null,
     "public_status": "expected_low",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-09-27〜2025-09-28。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 低",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-09-27〜2025-09-28。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 低",
     "recurrence_score": 0.48,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "公式/準公式確認あり",
-      "動画実績証拠あり",
-      "会場あり",
-      "23区エリアあり"
+      "held_2025",
+      "official_or_semi_official_evidence",
+      "video_evidence",
+      "venue_present",
+      "tokyo_23ward"
     ],
     "recurrence_cautions": [
       "単発/企画色:Festival",
@@ -12368,6 +12728,7 @@
       "単発/企画色:シブヤエンタメ祭",
       "イベント名に2025明記"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-09-27",
@@ -12415,6 +12776,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
     "public_status_label": "今後開催",
     "public_note": "2026年日程確認済み: 2026-09-26〜2026-09-27",
     "recurrence_label": "2026年確認済み",
@@ -12423,6 +12785,7 @@
       "2026年日付確認済み"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [
       "2026-09-26",
@@ -12466,6 +12829,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "ended_2026",
+    "public_category": "ended",
     "public_status_label": "開催終了",
     "public_note": "2026年開催終了: 2026-03-28",
     "recurrence_label": "2026年開催終了",
@@ -12474,6 +12838,7 @@
       "2026年開催済み"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [
       "2026-03-28"
@@ -12520,6 +12885,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "ended_2026",
+    "public_category": "ended",
     "public_status_label": "開催終了",
     "public_note": "2026年開催終了: 2026-06-05〜2026-06-06",
     "recurrence_label": "2026年開催終了",
@@ -12528,6 +12894,7 @@
       "2026年開催済み"
     ],
     "recurrence_cautions": [],
+    "edition_number": 34,
     "last_seen_year": null,
     "last_seen_dates": [
       "2026-06-05",
@@ -12571,6 +12938,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "ended_2026",
+    "public_category": "ended",
     "public_status_label": "開催終了",
     "public_note": "2026年開催終了: 2026-04-25",
     "recurrence_label": "2026年開催終了",
@@ -12579,6 +12947,7 @@
       "2026年開催済み"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [
       "2026-04-25"
@@ -12624,19 +12993,23 @@
     "youtube_evidence": [],
     "songs": [],
     "song_occurrence": null,
-    "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-07-04〜2025-07-05。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
-    "recurrence_score": 0.68,
+    "public_status": "expected_high",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "第15回・昨年開催: 2025-07-04〜2025-07-05。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 高",
+    "recurrence_score": 0.82,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "公式/準公式確認あり",
-      "動画実績証拠あり",
-      "会場あり",
-      "23区エリアあり"
+      "held_2025",
+      "official_or_semi_official_evidence",
+      "video_evidence",
+      "venue_present",
+      "tokyo_23ward",
+      "edition_number:15",
+      "edition_10plus"
     ],
     "recurrence_cautions": [],
+    "edition_number": 15,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-04",
@@ -12682,18 +13055,20 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-04-19。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-04-19。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.68,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "公式/準公式確認あり",
-      "動画実績証拠あり",
-      "会場あり",
-      "23区エリアあり"
+      "held_2025",
+      "official_or_semi_official_evidence",
+      "video_evidence",
+      "venue_present",
+      "tokyo_23ward"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-04-19",
@@ -12737,6 +13112,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "date_unknown",
+    "public_category": "date_unknown",
     "public_status_label": "日程未確認",
     "public_note": "今年の日程は未確認です。",
     "recurrence_label": "日程未確認",
@@ -12749,6 +13125,7 @@
     "recurrence_cautions": [
       "2026年日程なし"
     ],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": []
   },
@@ -12789,20 +13166,22 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-07-05。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-05。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
     "recurrence_score": 0.59,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "動画実績証拠あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:例年"
+      "held_2025",
+      "video_evidence",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:例年"
     ],
     "recurrence_cautions": [
       "単発/企画色:Festival"
     ],
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-05"
@@ -12854,20 +13233,24 @@
       }
     ],
     "song_occurrence": null,
-    "public_status": "expected_medium",
-    "public_status_label": "2025年実績あり",
-    "public_note": "昨年開催あり: 2025-09-14〜2025-09-15。今年の日程は未確認です。",
-    "recurrence_label": "今年も開催見込み 中",
-    "recurrence_score": 0.72,
+    "public_status": "expected_high",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "第11回・昨年開催: 2025-09-14〜2025-09-15。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 高",
+    "recurrence_score": 0.86,
     "recurrence_reasons": [
-      "2025年実績あり",
-      "公式/準公式確認あり",
-      "動画実績証拠あり",
-      "会場あり",
-      "23区エリアあり",
-      "継続語:まつり"
+      "held_2025",
+      "official_or_semi_official_evidence",
+      "video_evidence",
+      "venue_present",
+      "tokyo_23ward",
+      "edition_number:11",
+      "edition_10plus",
+      "recurring_word:まつり"
     ],
     "recurrence_cautions": [],
+    "edition_number": 11,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-09-14",
@@ -12991,6 +13374,7 @@
       ]
     },
     "public_status": "ended_2026",
+    "public_category": "ended",
     "public_status_label": "開催終了",
     "public_note": "2026年開催終了: 2026-03-15",
     "recurrence_label": "2026年開催終了",
@@ -12999,6 +13383,7 @@
       "2026年開催済み"
     ],
     "recurrence_cautions": [],
+    "edition_number": 60,
     "last_seen_year": null,
     "last_seen_dates": [
       "2026-03-15"
@@ -13041,6 +13426,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "ended_2026",
+    "public_category": "ended",
     "public_status_label": "開催終了",
     "public_note": "2026年開催終了: 2026-02-22",
     "recurrence_label": "2026年開催終了",
@@ -13049,6 +13435,7 @@
       "2026年開催済み"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [
       "2026-02-22"
@@ -13091,6 +13478,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
     "public_status_label": "今後開催",
     "public_note": "2026年日程確認済み: 2026-06-20",
     "recurrence_label": "2026年確認済み",
@@ -13099,6 +13487,7 @@
       "2026年日付確認済み"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [
       "2026-06-20"
@@ -13141,6 +13530,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "ended_2026",
+    "public_category": "ended",
     "public_status_label": "開催終了",
     "public_note": "2026年開催終了: 2026-05-31",
     "recurrence_label": "2026年開催終了",
@@ -13149,6 +13539,7 @@
       "2026年開催済み"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [
       "2026-05-31"
@@ -13191,6 +13582,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "ended_2026",
+    "public_category": "ended",
     "public_status_label": "開催終了",
     "public_note": "2026年開催終了: 2026-02-08",
     "recurrence_label": "2026年開催終了",
@@ -13199,6 +13591,7 @@
       "2026年開催済み"
     ],
     "recurrence_cautions": [],
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [
       "2026-02-08"
@@ -13241,6 +13634,7 @@
     "songs": [],
     "song_occurrence": null,
     "public_status": "ended_2026",
+    "public_category": "ended",
     "public_status_label": "開催終了",
     "public_note": "2026年開催終了: 2026-03-29",
     "recurrence_label": "2026年開催終了",
@@ -13249,6 +13643,7 @@
       "2026年開催済み"
     ],
     "recurrence_cautions": [],
+    "edition_number": 4,
     "last_seen_year": null,
     "last_seen_dates": [
       "2026-03-29"
