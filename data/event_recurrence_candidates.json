@@ -1,0 +1,5658 @@
+{
+  "generated_at": "2026-06-17",
+  "source": "data/public/events_public.json",
+  "today": "2026-06-17",
+  "count": 185,
+  "status_counts": {
+    "upcoming_confirmed": 12,
+    "expected_high": 8,
+    "expected_medium": 82,
+    "expected_low": 3,
+    "date_unknown": 61,
+    "ended_2026": 19
+  },
+  "rows": [
+    {
+      "event_key": "西綾瀬町会 夏祭り盆踊り大会|五反野コミュニティ公園|2026-06-20",
+      "name": "西綾瀬町会 夏祭り盆踊り大会",
+      "venue": "五反野コミュニティ公園",
+      "area": "足立区",
+      "date": "2026-06-20",
+      "date_end": null,
+      "source_status": "確認済み",
+      "source_date_year": 2026,
+      "months": [
+        6
+      ],
+      "public_status": "upcoming_confirmed",
+      "public_status_label": "今後開催",
+      "recurrence_label": "2026年確認済み",
+      "recurrence_score": 0.95,
+      "recurrence_reasons": [
+        "2026年日付確認済み"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-06-20"
+      ],
+      "needs_review": false,
+      "public_note": "2026年日程確認済み: 2026-06-20"
+    },
+    {
+      "event_key": "TOKYO盆ダンス×STEAM FESTIVAL2026|上野恩賜公園|2026-06-26",
+      "name": "TOKYO盆ダンス×STEAM FESTIVAL2026",
+      "venue": "上野恩賜公園",
+      "area": "台東区",
+      "date": "2026-06-26",
+      "date_end": "2026-06-27",
+      "source_status": "確認済み",
+      "source_date_year": 2026,
+      "months": [
+        6
+      ],
+      "public_status": "upcoming_confirmed",
+      "public_status_label": "今後開催",
+      "recurrence_label": "2026年確認済み",
+      "recurrence_score": 0.95,
+      "recurrence_reasons": [
+        "2026年日付確認済み"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-06-26",
+        "2026-06-27"
+      ],
+      "needs_review": false,
+      "public_note": "2026年日程確認済み: 2026-06-26〜2026-06-27"
+    },
+    {
+      "event_key": "郡上おどり in 青山 2026|秩父宮ラグビー場駐車場|2026-06-26",
+      "name": "郡上おどり in 青山 2026",
+      "venue": "秩父宮ラグビー場駐車場",
+      "area": "港区",
+      "date": "2026-06-26",
+      "date_end": "2026-06-27",
+      "source_status": "確認済み",
+      "source_date_year": 2026,
+      "months": [
+        6
+      ],
+      "public_status": "upcoming_confirmed",
+      "public_status_label": "今後開催",
+      "recurrence_label": "2026年確認済み",
+      "recurrence_score": 0.95,
+      "recurrence_reasons": [
+        "2026年日付確認済み"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-06-26",
+        "2026-06-27"
+      ],
+      "needs_review": false,
+      "public_note": "2026年日程確認済み: 2026-06-26〜2026-06-27"
+    },
+    {
+      "event_key": "奥浅草盆踊り|隅田公園|2026-06-27",
+      "name": "奥浅草盆踊り",
+      "venue": "隅田公園",
+      "area": "台東区",
+      "date": "2026-06-27",
+      "date_end": null,
+      "source_status": "確認済み",
+      "source_date_year": 2026,
+      "months": [
+        6
+      ],
+      "public_status": "upcoming_confirmed",
+      "public_status_label": "今後開催",
+      "recurrence_label": "2026年確認済み",
+      "recurrence_score": 0.95,
+      "recurrence_reasons": [
+        "2026年日付確認済み"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-06-27"
+      ],
+      "needs_review": false,
+      "public_note": "2026年日程確認済み: 2026-06-27"
+    },
+    {
+      "event_key": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026|上野恩賜公園|2026-07-03",
+      "name": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026",
+      "venue": "上野恩賜公園",
+      "area": "台東区",
+      "date": "2026-07-03",
+      "date_end": "2026-07-05",
+      "source_status": "確認済み",
+      "source_date_year": 2026,
+      "months": [
+        7
+      ],
+      "public_status": "upcoming_confirmed",
+      "public_status_label": "今後開催",
+      "recurrence_label": "2026年確認済み",
+      "recurrence_score": 0.95,
+      "recurrence_reasons": [
+        "2026年日付確認済み"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-07-03",
+        "2026-07-05"
+      ],
+      "needs_review": false,
+      "public_note": "2026年日程確認済み: 2026-07-03〜2026-07-05"
+    },
+    {
+      "event_key": "晴海ふ頭公園盆踊り大会|晴海ふ頭公園|2026-07-11",
+      "name": "晴海ふ頭公園盆踊り大会",
+      "venue": "晴海ふ頭公園",
+      "area": "中央区",
+      "date": "2026-07-11",
+      "date_end": "2026-07-12",
+      "source_status": "確認済み",
+      "source_date_year": 2026,
+      "months": [
+        7
+      ],
+      "public_status": "upcoming_confirmed",
+      "public_status_label": "今後開催",
+      "recurrence_label": "2026年確認済み",
+      "recurrence_score": 0.95,
+      "recurrence_reasons": [
+        "2026年日付確認済み"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-07-11",
+        "2026-07-12"
+      ],
+      "needs_review": false,
+      "public_note": "2026年日程確認済み: 2026-07-11〜2026-07-12"
+    },
+    {
+      "event_key": "みたままつり 納涼民踊のつどい|靖国神社|2026-07-13",
+      "name": "みたままつり 納涼民踊のつどい",
+      "venue": "靖国神社",
+      "area": "千代田区",
+      "date": "2026-07-13",
+      "date_end": "2026-07-16",
+      "source_status": "確認済み",
+      "source_date_year": 2026,
+      "months": [
+        7
+      ],
+      "public_status": "upcoming_confirmed",
+      "public_status_label": "今後開催",
+      "recurrence_label": "2026年確認済み",
+      "recurrence_score": 0.95,
+      "recurrence_reasons": [
+        "2026年日付確認済み"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-07-13",
+        "2026-07-16"
+      ],
+      "needs_review": false,
+      "public_note": "2026年日程確認済み: 2026-07-13〜2026-07-16"
+    },
+    {
+      "event_key": "築地本願寺納涼盆踊り大会|築地本願寺|2026-07-29",
+      "name": "築地本願寺納涼盆踊り大会",
+      "venue": "築地本願寺",
+      "area": "中央区",
+      "date": "2026-07-29",
+      "date_end": "2026-08-01",
+      "source_status": "確認済み",
+      "source_date_year": 2026,
+      "months": [
+        7,
+        8
+      ],
+      "public_status": "upcoming_confirmed",
+      "public_status_label": "今後開催",
+      "recurrence_label": "2026年確認済み",
+      "recurrence_score": 0.95,
+      "recurrence_reasons": [
+        "2026年日付確認済み"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-07-29",
+        "2026-08-01"
+      ],
+      "needs_review": false,
+      "public_note": "2026年日程確認済み: 2026-07-29〜2026-08-01"
+    },
+    {
+      "event_key": "すみだ錦糸町河内音頭大盆踊り|江東橋竪川親水公園|2026-07-29",
+      "name": "すみだ錦糸町河内音頭大盆踊り",
+      "venue": "江東橋竪川親水公園",
+      "area": "墨田区",
+      "date": "2026-07-29",
+      "date_end": "2026-07-30",
+      "source_status": "確認済み",
+      "source_date_year": 2026,
+      "months": [
+        7
+      ],
+      "public_status": "upcoming_confirmed",
+      "public_status_label": "今後開催",
+      "recurrence_label": "2026年確認済み",
+      "recurrence_score": 0.95,
+      "recurrence_reasons": [
+        "2026年日付確認済み"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-07-29",
+        "2026-07-30"
+      ],
+      "needs_review": false,
+      "public_note": "2026年日程確認済み: 2026-07-29〜2026-07-30"
+    },
+    {
+      "event_key": "中央区大江戸まつり盆おどり大会|浜町公園|2026-08-21",
+      "name": "中央区大江戸まつり盆おどり大会",
+      "venue": "浜町公園",
+      "area": "中央区",
+      "date": "2026-08-21",
+      "date_end": "2026-08-22",
+      "source_status": "確認済み",
+      "source_date_year": 2026,
+      "months": [
+        8
+      ],
+      "public_status": "upcoming_confirmed",
+      "public_status_label": "今後開催",
+      "recurrence_label": "2026年確認済み",
+      "recurrence_score": 0.95,
+      "recurrence_reasons": [
+        "2026年日付確認済み"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-08-21",
+        "2026-08-22"
+      ],
+      "needs_review": false,
+      "public_note": "2026年日程確認済み: 2026-08-21〜2026-08-22"
+    },
+    {
+      "event_key": "SHIBUYA MIYASHITA PARK BON DANCE 2026|宮下公園|2026-09-26",
+      "name": "SHIBUYA MIYASHITA PARK BON DANCE 2026",
+      "venue": "宮下公園",
+      "area": "渋谷区",
+      "date": "2026-09-26",
+      "date_end": "2026-09-27",
+      "source_status": "確認済み",
+      "source_date_year": 2026,
+      "months": [
+        9
+      ],
+      "public_status": "upcoming_confirmed",
+      "public_status_label": "今後開催",
+      "recurrence_label": "2026年確認済み",
+      "recurrence_score": 0.95,
+      "recurrence_reasons": [
+        "2026年日付確認済み"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-09-26",
+        "2026-09-27"
+      ],
+      "needs_review": false,
+      "public_note": "2026年日程確認済み: 2026-09-26〜2026-09-27"
+    },
+    {
+      "event_key": "みなと区民まつり 盆踊り|芝公園|2026-10-10",
+      "name": "みなと区民まつり 盆踊り",
+      "venue": "芝公園",
+      "area": "港区",
+      "date": "2026-10-10",
+      "date_end": "2026-10-12",
+      "source_status": "確認済み",
+      "source_date_year": 2026,
+      "months": [
+        10
+      ],
+      "public_status": "upcoming_confirmed",
+      "public_status_label": "今後開催",
+      "recurrence_label": "2026年確認済み",
+      "recurrence_score": 0.95,
+      "recurrence_reasons": [
+        "2026年日付確認済み"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-10-10",
+        "2026-10-12"
+      ],
+      "needs_review": false,
+      "public_note": "2026年日程確認済み: 2026-10-10〜2026-10-12"
+    },
+    {
+      "event_key": "謝恩納涼盆踊り大会（青山善光寺）|青山善光寺|2025-07-27",
+      "name": "謝恩納涼盆踊り大会（青山善光寺）",
+      "venue": "青山善光寺",
+      "area": "港区",
+      "date": "2025-07-27",
+      "date_end": "2025-07-28",
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        7
+      ],
+      "public_status": "expected_high",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 高",
+      "recurrence_score": 0.84,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "公式/準公式確認あり",
+        "動画実績証拠あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:例年",
+        "継続語:納涼",
+        "継続語:寺",
+        "継続語:盆踊り大会"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-27",
+        "2025-07-28"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-07-27〜2025-07-28。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "青山熊野神社例大祭 奉納踊り|青葉公園（港区立）|2025-09-26",
+      "name": "青山熊野神社例大祭 奉納踊り",
+      "venue": "青葉公園（港区立）",
+      "area": "港区",
+      "date": "2025-09-26",
+      "date_end": "2025-09-27",
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        9
+      ],
+      "public_status": "expected_high",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 高",
+      "recurrence_score": 0.84,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "公式/準公式確認あり",
+        "動画実績証拠あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:例年",
+        "継続語:例大祭",
+        "継続語:町会",
+        "継続語:神社"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-09-26",
+        "2025-09-27"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-09-26〜2025-09-27。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "第51回 神楽坂まつり 盆踊り|りそな銀行神楽坂支店前|2025-07-23",
+      "name": "第51回 神楽坂まつり 盆踊り",
+      "venue": "りそな銀行神楽坂支店前",
+      "area": "新宿区",
+      "date": "2025-07-23",
+      "date_end": "2025-07-24",
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        7
+      ],
+      "public_status": "expected_high",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 高",
+      "recurrence_score": 0.79,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "公式/準公式確認あり",
+        "動画実績証拠あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:まつり",
+        "回数付き継続イベント"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-23",
+        "2025-07-24"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-07-23〜2025-07-24。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "第70回 恵比寿駅前盆踊り大会|JR恵比寿駅西口広場|2025-07-25",
+      "name": "第70回 恵比寿駅前盆踊り大会",
+      "venue": "JR恵比寿駅西口広場",
+      "area": "渋谷区",
+      "date": "2025-07-25",
+      "date_end": "2025-07-26",
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        7
+      ],
+      "public_status": "expected_high",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 高",
+      "recurrence_score": 0.79,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "公式/準公式確認あり",
+        "動画実績証拠あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:盆踊り大会",
+        "回数付き継続イベント"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-25",
+        "2025-07-26"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-07-25〜2025-07-26。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "第90回 祐天寺み魂まつり こども盆踊り大会|祐天寺境内|2025-07-16",
+      "name": "第90回 祐天寺み魂まつり こども盆踊り大会",
+      "venue": "祐天寺境内",
+      "area": "目黒区",
+      "date": "2025-07-16",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        7
+      ],
+      "public_status": "expected_high",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 高",
+      "recurrence_score": 0.75,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:寺",
+        "継続語:盆踊り大会",
+        "継続語:まつり",
+        "回数付き継続イベント"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-16"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-07-16。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "第25回 四谷納涼踊り大会|四谷ひろばグラウンド（旧四谷第四小学校）|2025-07-19",
+      "name": "第25回 四谷納涼踊り大会",
+      "venue": "四谷ひろばグラウンド（旧四谷第四小学校）",
+      "area": "新宿区",
+      "date": "2025-07-19",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        7
+      ],
+      "public_status": "expected_high",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 高",
+      "recurrence_score": 0.75,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "動画実績証拠あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:納涼",
+        "継続語:夏祭り",
+        "回数付き継続イベント"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-19"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-07-19。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "自由が丘納涼盆踊り大会|自由が丘駅前ロータリー 特設会場|2025-07-19",
+      "name": "自由が丘納涼盆踊り大会",
+      "venue": "自由が丘駅前ロータリー 特設会場",
+      "area": "目黒区",
+      "date": "2025-07-19",
+      "date_end": "2025-07-21",
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        7
+      ],
+      "public_status": "expected_high",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 高",
+      "recurrence_score": 0.75,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "公式/準公式確認あり",
+        "動画実績証拠あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:納涼",
+        "継続語:商店街",
+        "継続語:盆踊り大会"
+      ],
+      "recurrence_cautions": [
+        "単発/企画色:Festival"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-19",
+        "2025-07-21"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-07-19〜2025-07-21。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "第6回 渋谷盆踊り|SHIBUYA109前〜道玄坂・文化村通り一帯|2025-08-02",
+      "name": "第6回 渋谷盆踊り",
+      "venue": "SHIBUYA109前〜道玄坂・文化村通り一帯",
+      "area": "渋谷区",
+      "date": "2025-08-02",
+      "date_end": "2025-08-02",
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        8
+      ],
+      "public_status": "expected_high",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 高",
+      "recurrence_score": 0.75,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "公式/準公式確認あり",
+        "動画実績証拠あり",
+        "会場あり",
+        "23区エリアあり",
+        "回数付き継続イベント"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-02",
+        "2025-08-02"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-08-02。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "三角広場まつり「居酒屋盆踊り」|新宿住友ビル三角広場|2025-06-25",
+      "name": "三角広場まつり「居酒屋盆踊り」",
+      "venue": "新宿住友ビル三角広場",
+      "area": "新宿区",
+      "date": "2025-06-25",
+      "date_end": "2025-06-26",
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        6
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.72,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "公式/準公式確認あり",
+        "動画実績証拠あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:まつり"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-06-25",
+        "2025-06-26"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-06-25〜2025-06-26。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "萩中町会・オーベルグランディオ萩中自治会・新宿東町会「盆踊り大会」 7月11日(金)-12日(土) 18:30-20:30。|萩中神社|2025-07-11",
+      "name": "萩中町会・オーベルグランディオ萩中自治会・新宿東町会「盆踊り大会」 7月11日(金)-12日(土) 18:30-20:30。",
+      "venue": "萩中神社",
+      "area": "大田区",
+      "date": "2025-07-11",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        7
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.72,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:町会",
+        "継続語:自治会",
+        "継続語:神社",
+        "継続語:盆踊り大会"
+      ],
+      "recurrence_cautions": [
+        "次回日程未確認"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-11"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-07-11。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "丸の内de盆踊り|行幸通り|2025-07-25",
+      "name": "丸の内de盆踊り",
+      "venue": "行幸通り",
+      "area": "千代田区",
+      "date": "2025-07-25",
+      "date_end": "2025-07-26",
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        7
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.72,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "公式/準公式確認あり",
+        "動画実績証拠あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:夏祭り"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-25",
+        "2025-07-26"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-07-25〜2025-07-26。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "大蔵東部町会「親子納涼盆踊り大会」7月26日(土)午後6時30分-午後9時。|横根稲荷神社|2025-07-26",
+      "name": "大蔵東部町会「親子納涼盆踊り大会」7月26日(土)午後6時30分-午後9時。",
+      "venue": "横根稲荷神社",
+      "area": "世田谷区",
+      "date": "2025-07-26",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        7
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.72,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:納涼",
+        "継続語:町会",
+        "継続語:神社",
+        "継続語:盆踊り大会"
+      ],
+      "recurrence_cautions": [
+        "次回日程未確認"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-26"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-07-26。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "野毛町会 納涼盆踊り大会 7月26日(土)-27日(日)|野毛六所神社|2025-07-26",
+      "name": "野毛町会 納涼盆踊り大会 7月26日(土)-27日(日)",
+      "venue": "野毛六所神社",
+      "area": "世田谷区",
+      "date": "2025-07-26",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        7
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.72,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:納涼",
+        "継続語:町会",
+        "継続語:神社",
+        "継続語:盆踊り大会"
+      ],
+      "recurrence_cautions": [
+        "次回日程未確認"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-26"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-07-26。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "神田明神納涼祭り アニソン盆踊り|神田明神境内|2025-08-08",
+      "name": "神田明神納涼祭り アニソン盆踊り",
+      "venue": "神田明神境内",
+      "area": "千代田区",
+      "date": "2025-08-08",
+      "date_end": "2025-08-08",
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        8
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.72,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "公式/準公式確認あり",
+        "動画実績証拠あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:納涼"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-08",
+        "2025-08-08"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-08-08。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "六本木ヒルズ盆踊り|六本木ヒルズアリーナ|2025-08-22",
+      "name": "六本木ヒルズ盆踊り",
+      "venue": "六本木ヒルズアリーナ",
+      "area": "港区",
+      "date": "2025-08-22",
+      "date_end": "2025-08-24",
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        8
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.72,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "公式/準公式確認あり",
+        "動画実績証拠あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:夏祭り"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-22",
+        "2025-08-24"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-08-22〜2025-08-24。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "第10回白金台どんぐり児童遊園 納涼盆踊り大会|白金台どんぐり児童遊園|2025-09-07",
+      "name": "第10回白金台どんぐり児童遊園 納涼盆踊り大会",
+      "venue": "白金台どんぐり児童遊園",
+      "area": "港区",
+      "date": "2025-09-07",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        9
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.72,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "動画実績証拠あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:納涼",
+        "継続語:盆踊り大会",
+        "継続語:夏祭り"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-09-07"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-09-07。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "第11回 にっぽり炭坑節まつり|JR日暮里駅前広場|2025-09-14",
+      "name": "第11回 にっぽり炭坑節まつり",
+      "venue": "JR日暮里駅前広場",
+      "area": "荒川区",
+      "date": "2025-09-14",
+      "date_end": "2025-09-15",
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        9
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.72,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "公式/準公式確認あり",
+        "動画実績証拠あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:まつり"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-09-14",
+        "2025-09-15"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-09-14〜2025-09-15。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "菊川一丁目町会 菊一お祭り広場・盆踊り大会|中和小学校|2025-09-27",
+      "name": "菊川一丁目町会 菊一お祭り広場・盆踊り大会",
+      "venue": "中和小学校",
+      "area": "墨田区",
+      "date": "2025-09-27",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        9
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.72,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:納涼",
+        "継続語:町会",
+        "継続語:盆踊り大会",
+        "継続語:夏祭り"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-09-27"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-09-27。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "第28回新橋こいち祭 盆踊り|桜田公園|2025-07-24",
+      "name": "第28回新橋こいち祭 盆踊り",
+      "venue": "桜田公園",
+      "area": "港区",
+      "date": "2025-07-24",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        7
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.71,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "動画実績証拠あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:夏祭り",
+        "回数付き継続イベント"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-24"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-07-24。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "シタマチ.ふるさと盆踊り大会|おかちまちパンダ広場（御徒町駅南口駅前広場）|2025-08-16",
+      "name": "シタマチ.ふるさと盆踊り大会",
+      "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+      "area": "台東区",
+      "date": "2025-08-16",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        8
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.71,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "動画実績証拠あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:盆踊り大会",
+        "回数付き継続イベント"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-16"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-08-16。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "飛鳥山公園盆踊り会（有志サークル）|飛鳥山公園|2025-04-19",
+      "name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "date": "2025-04-19",
+      "date_end": "2025-04-19",
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        3,
+        4,
+        6
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.68,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "公式/準公式確認あり",
+        "動画実績証拠あり",
+        "会場あり",
+        "23区エリアあり"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-04-19",
+        "2025-04-19"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-04-19。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "第15回 鴨台盆踊り|大正大学|2025-07-04",
+      "name": "第15回 鴨台盆踊り",
+      "venue": "大正大学",
+      "area": "豊島区",
+      "date": "2025-07-04",
+      "date_end": "2025-07-05",
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        7
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.68,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "公式/準公式確認あり",
+        "動画実績証拠あり",
+        "会場あり",
+        "23区エリアあり"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-04",
+        "2025-07-05"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-07-04〜2025-07-05。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "鶴巻小学校 納涼盆踊り大会＆子ども祭り|鶴巻小学校|2025-07-12",
+      "name": "鶴巻小学校 納涼盆踊り大会＆子ども祭り",
+      "venue": "鶴巻小学校",
+      "area": "新宿区",
+      "date": "2025-07-12",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        7
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.68,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:納涼",
+        "継続語:盆踊り大会",
+        "継続語:夏祭り"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-12"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-07-12。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "東糀谷四・五・六町会 納涼盆踊り大会 7月18日(金)=19日(土) 18:30-20:30。|旭児童遊園|2025-07-18",
+      "name": "東糀谷四・五・六町会 納涼盆踊り大会 7月18日(金)=19日(土) 18:30-20:30。",
+      "venue": "旭児童遊園",
+      "area": "大田区",
+      "date": "2025-07-18",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        7
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.68,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:納涼",
+        "継続語:町会",
+        "継続語:盆踊り大会"
+      ],
+      "recurrence_cautions": [
+        "次回日程未確認"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-18"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-07-18。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "宇奈根町会 盆踊り大会 7月19日(土)-20日(日)。|宇奈根氷川神社|2025-07-19",
+      "name": "宇奈根町会 盆踊り大会 7月19日(土)-20日(日)。",
+      "venue": "宇奈根氷川神社",
+      "area": "世田谷区",
+      "date": "2025-07-19",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        7
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.68,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:町会",
+        "継続語:神社",
+        "継続語:盆踊り大会"
+      ],
+      "recurrence_cautions": [
+        "次回日程未確認"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-19"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-07-19。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "砧町町会「納涼夏祭り大会」 7月19日(土)-20日(日)。|三峰公園|2025-07-19",
+      "name": "砧町町会「納涼夏祭り大会」 7月19日(土)-20日(日)。",
+      "venue": "三峰公園",
+      "area": "世田谷区",
+      "date": "2025-07-19",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        7
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.68,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:納涼",
+        "継続語:町会",
+        "継続語:夏祭り"
+      ],
+      "recurrence_cautions": [
+        "次回日程未確認"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-19"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-07-19。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "大森南一丁目自治会「納涼盆踊り大会」7月21日(月)-22日(火) 18:30-20:00。|大森南一丁目公園|2025-07-21",
+      "name": "大森南一丁目自治会「納涼盆踊り大会」7月21日(月)-22日(火) 18:30-20:00。",
+      "venue": "大森南一丁目公園",
+      "area": "大田区",
+      "date": "2025-07-21",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        7
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.68,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:納涼",
+        "継続語:自治会",
+        "継続語:盆踊り大会"
+      ],
+      "recurrence_cautions": [
+        "次回日程未確認"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-21"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-07-21。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "西糀谷四丁目町会 盆踊り大会 7月21日(月祝)-22日(火) 19時ｰ21時。|西仲天祖神社|2025-07-21",
+      "name": "西糀谷四丁目町会 盆踊り大会 7月21日(月祝)-22日(火) 19時ｰ21時。",
+      "venue": "西仲天祖神社",
+      "area": "大田区",
+      "date": "2025-07-21",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        7
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.68,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:町会",
+        "継続語:神社",
+        "継続語:盆踊り大会"
+      ],
+      "recurrence_cautions": [
+        "次回日程未確認"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-21"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-07-21。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "北糀谷町会 「納涼踊り大会」 7月24日(木)-25日(金) 18:30-20:30。|子安八幡神社|2025-07-24",
+      "name": "北糀谷町会 「納涼踊り大会」 7月24日(木)-25日(金) 18:30-20:30。",
+      "venue": "子安八幡神社",
+      "area": "大田区",
+      "date": "2025-07-24",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        7
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.68,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:納涼",
+        "継続語:町会",
+        "継続語:神社"
+      ],
+      "recurrence_cautions": [
+        "次回日程未確認"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-24"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-07-24。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "赤坂浄土寺盆踊り大会|浄土寺|2025-07-24",
+      "name": "赤坂浄土寺盆踊り大会",
+      "venue": "浄土寺",
+      "area": "港区",
+      "date": "2025-07-24",
+      "date_end": "2025-07-25",
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        7
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.68,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "動画実績証拠あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:寺",
+        "継続語:盆踊り大会"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-24",
+        "2025-07-25"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-07-24〜2025-07-25。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "世田谷駅前商店街振興組合「納涼盆踊り大会 」|円光院駐車場|2025-07-26",
+      "name": "世田谷駅前商店街振興組合「納涼盆踊り大会 」",
+      "venue": "円光院駐車場",
+      "area": "世田谷区",
+      "date": "2025-07-26",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        7
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.68,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:納涼",
+        "継続語:商店街",
+        "継続語:盆踊り大会"
+      ],
+      "recurrence_cautions": [
+        "次回日程未確認"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-26"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-07-26。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "堤方東町会「盆踊り大会」 7月26日(土) 16:30-20:00。|池上第二小学校|2025-07-26",
+      "name": "堤方東町会「盆踊り大会」 7月26日(土) 16:30-20:00。",
+      "venue": "池上第二小学校",
+      "area": "大田区",
+      "date": "2025-07-26",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        7
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.68,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:町会",
+        "継続語:盆踊り大会",
+        "継続語:夏祭り"
+      ],
+      "recurrence_cautions": [
+        "次回日程未確認"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-26"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-07-26。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "西糀谷三丁目町会「納涼盆踊り大会」7月28日(月)-29日(火) 19:00-20:30。|西糀谷さざんか公園|2025-07-28",
+      "name": "西糀谷三丁目町会「納涼盆踊り大会」7月28日(月)-29日(火) 19:00-20:30。",
+      "venue": "西糀谷さざんか公園",
+      "area": "大田区",
+      "date": "2025-07-28",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        7
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.68,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:納涼",
+        "継続語:町会",
+        "継続語:盆踊り大会"
+      ],
+      "recurrence_cautions": [
+        "次回日程未確認"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-28"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-07-28。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "法人格砧町自治会「納涼盆踊り大会」8月1日(金)-2日(土) 午後6時-8時30分。|砧八丁目児童遊園|2025-08-01",
+      "name": "法人格砧町自治会「納涼盆踊り大会」8月1日(金)-2日(土) 午後6時-8時30分。",
+      "venue": "砧八丁目児童遊園",
+      "area": "世田谷区",
+      "date": "2025-08-01",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        8
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.68,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:納涼",
+        "継続語:自治会",
+        "継続語:盆踊り大会"
+      ],
+      "recurrence_cautions": [
+        "次回日程未確認"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-01"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-08-01。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "岡本自治会「盆踊り大会」 8月2日(土)-3日(日) 19:00-21:00 長圓寺境内|長円寺|2025-08-02",
+      "name": "岡本自治会「盆踊り大会」 8月2日(土)-3日(日) 19:00-21:00 長圓寺境内",
+      "venue": "長円寺",
+      "area": "世田谷区",
+      "date": "2025-08-02",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        8
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.68,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:自治会",
+        "継続語:寺",
+        "継続語:盆踊り大会"
+      ],
+      "recurrence_cautions": [
+        "次回日程未確認"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-02"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-08-02。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "大銀座盆踊り|中央通り（銀座1丁目〜8丁目）|2025-08-02",
+      "name": "大銀座盆踊り",
+      "venue": "中央通り（銀座1丁目〜8丁目）",
+      "area": "中央区",
+      "date": "2025-08-02",
+      "date_end": "2025-08-02",
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        8
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.68,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "公式/準公式確認あり",
+        "動画実績証拠あり",
+        "会場あり",
+        "23区エリアあり"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-02",
+        "2025-08-02"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-08-02。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "西久保八幡神社 盆踊り|西久保八幡神社|2025-08-09",
+      "name": "西久保八幡神社 盆踊り",
+      "venue": "西久保八幡神社",
+      "area": "港区",
+      "date": "2025-08-09",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        8
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.68,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "動画実績証拠あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:例大祭",
+        "継続語:神社"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-09"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-08-09。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "東本願寺盆踊り|東本願寺（浅草）|2025-08-20",
+      "name": "東本願寺盆踊り",
+      "venue": "東本願寺（浅草）",
+      "area": "台東区",
+      "date": "2025-08-20",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        8
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.68,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "動画実績証拠あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:寺",
+        "継続語:夏祭り"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-20"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-08-20。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "第16回ハマサイトの夏祭り|ハマサイト前広場・汐留ビルディング外構|2025-08-22",
+      "name": "第16回ハマサイトの夏祭り",
+      "venue": "ハマサイト前広場・汐留ビルディング外構",
+      "area": "港区",
+      "date": "2025-08-22",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        8
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.68,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "動画実績証拠あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:例年",
+        "継続語:夏祭り"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-22"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-08-22。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "戸越八幡神社例大祭 奉納盆踊り大会|豊町一丁目会館前|2025-09-13",
+      "name": "戸越八幡神社例大祭 奉納盆踊り大会",
+      "venue": "豊町一丁目会館前",
+      "area": "品川区",
+      "date": "2025-09-13",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        9
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.68,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:例大祭",
+        "継続語:神社",
+        "継続語:盆踊り大会"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-09-13"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-09-13。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "押上三丁目伸成町会 飛木稲荷神社神幸大祭 祭礼踊り|伸成町会会館前 路上|2025-09-13",
+      "name": "押上三丁目伸成町会 飛木稲荷神社神幸大祭 祭礼踊り",
+      "venue": "伸成町会会館前 路上",
+      "area": "墨田区",
+      "date": "2025-09-13",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        9
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.68,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:例年",
+        "継続語:町会",
+        "継続語:神社"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-09-13"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-09-13。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "原町一丁目町会 天祖神社例大祭 盆踊り|原町天祖神社|2025-09-15",
+      "name": "原町一丁目町会 天祖神社例大祭 盆踊り",
+      "venue": "原町天祖神社",
+      "area": "新宿区",
+      "date": "2025-09-15",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        9
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.68,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:例大祭",
+        "継続語:町会",
+        "継続語:神社"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-09-15"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-09-15。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "砧小学校「第38回砧っ子夏祭り」7月19日(土)午後3時-7時30分。|砧小学校|2025-07-19",
+      "name": "砧小学校「第38回砧っ子夏祭り」7月19日(土)午後3時-7時30分。",
+      "venue": "砧小学校",
+      "area": "世田谷区",
+      "date": "2025-07-19",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        7
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.67,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:夏祭り",
+        "回数付き継続イベント"
+      ],
+      "recurrence_cautions": [
+        "次回日程未確認"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-19"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-07-19。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "下落合町会知久会 第9回盆踊り|清水川橋公園|2025-07-19",
+      "name": "下落合町会知久会 第9回盆踊り",
+      "venue": "清水川橋公園",
+      "area": "新宿区",
+      "date": "2025-07-19",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        7
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.67,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:町会",
+        "回数付き継続イベント"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-19"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-07-19。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "地域のふれあい第37回盆踊り大会|JR目黒駅西口前|2025-07-27",
+      "name": "地域のふれあい第37回盆踊り大会",
+      "venue": "JR目黒駅西口前",
+      "area": "目黒区",
+      "date": "2025-07-27",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        7
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.67,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:盆踊り大会",
+        "回数付き継続イベント"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-27"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-07-27。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "第71回大井どんたく夏まつり 初日 盆踊り|大井町駅前中央通り|2025-08-23",
+      "name": "第71回大井どんたく夏まつり 初日 盆踊り",
+      "venue": "大井町駅前中央通り",
+      "area": "品川区",
+      "date": "2025-08-23",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        8
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.67,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:まつり",
+        "回数付き継続イベント"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-23"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-08-23。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "第42回大久保まつり パレード 百人町民民謡おどり|JR新大久保駅北側から東方向|2025-10-13",
+      "name": "第42回大久保まつり パレード 百人町民民謡おどり",
+      "venue": "JR新大久保駅北側から東方向",
+      "area": "新宿区",
+      "date": "2025-10-13",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        10
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.67,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:まつり",
+        "回数付き継続イベント"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-10-13"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-10-13。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "親子盆踊り大会 7月12日(土) 17:00-19:20。|八幡小学校|2025-07-12",
+      "name": "親子盆踊り大会 7月12日(土) 17:00-19:20。",
+      "venue": "八幡小学校",
+      "area": "世田谷区",
+      "date": "2025-07-12",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        7
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.64,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:盆踊り大会",
+        "継続語:夏祭り"
+      ],
+      "recurrence_cautions": [
+        "次回日程未確認"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-12"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-07-12。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "下代田東町会 「下代田東子供祭り・納涼祭り』 7月19日(土)-20日(日) 16時-21時。|下代田児童遊園|2025-07-19",
+      "name": "下代田東町会 「下代田東子供祭り・納涼祭り』 7月19日(土)-20日(日) 16時-21時。",
+      "venue": "下代田児童遊園",
+      "area": "世田谷区",
+      "date": "2025-07-19",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        7
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.64,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:納涼",
+        "継続語:町会"
+      ],
+      "recurrence_cautions": [
+        "次回日程未確認"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-19"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-07-19。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "納涼盆踊り大会 7月19日(土)-20日(日)。|玉川中町公園|2025-07-19",
+      "name": "納涼盆踊り大会 7月19日(土)-20日(日)。",
+      "venue": "玉川中町公園",
+      "area": "世田谷区",
+      "date": "2025-07-19",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        7
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.64,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:納涼",
+        "継続語:盆踊り大会"
+      ],
+      "recurrence_cautions": [
+        "次回日程未確認"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-19"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-07-19。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "下落合四丁目町会 盆踊り大会|下落合公園|2025-07-19",
+      "name": "下落合四丁目町会 盆踊り大会",
+      "venue": "下落合公園",
+      "area": "新宿区",
+      "date": "2025-07-19",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        7
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.64,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:町会",
+        "継続語:盆踊り大会"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-19"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-07-19。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "大蔵本村睦会 ｢盆踊り大会｣ 7月20日(日)午後7時-(午後6時-子ども盆踊り)|大蔵氷川神社|2025-07-20",
+      "name": "大蔵本村睦会 ｢盆踊り大会｣ 7月20日(日)午後7時-(午後6時-子ども盆踊り)",
+      "venue": "大蔵氷川神社",
+      "area": "世田谷区",
+      "date": "2025-07-20",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        7
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.64,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:神社",
+        "継続語:盆踊り大会"
+      ],
+      "recurrence_cautions": [
+        "次回日程未確認"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-20"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-07-20。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "芦花公園商店街振興組合 「芦花公園駅前盆踊り大会」 7月25日(金) 17:00-。|京王線芦花公園駅前ロータリー(南口)|2025-07-25",
+      "name": "芦花公園商店街振興組合 「芦花公園駅前盆踊り大会」 7月25日(金) 17:00-。",
+      "venue": "京王線芦花公園駅前ロータリー(南口)",
+      "area": "世田谷区",
+      "date": "2025-07-25",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        7
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.64,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:商店街",
+        "継続語:盆踊り大会"
+      ],
+      "recurrence_cautions": [
+        "次回日程未確認"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-25"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-07-25。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "鎌田協和会 鎌田納涼盆踊り 7月26日(土) 18:30-。|鎌田天神社|2025-07-26",
+      "name": "鎌田協和会 鎌田納涼盆踊り 7月26日(土) 18:30-。",
+      "venue": "鎌田天神社",
+      "area": "世田谷区",
+      "date": "2025-07-26",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        7
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.64,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:納涼",
+        "継続語:神社"
+      ],
+      "recurrence_cautions": [
+        "次回日程未確認"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-26"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-07-26。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "花園神社 盆踊り|花園神社|2025-08-01",
+      "name": "花園神社 盆踊り",
+      "venue": "花園神社",
+      "area": "新宿区",
+      "date": "2025-08-01",
+      "date_end": "2025-08-02",
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        8
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.64,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "動画実績証拠あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:神社"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-01",
+        "2025-08-02"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-08-01〜2025-08-02。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "柏木地区6町会盆踊り大会|北新宿公園|2025-08-02",
+      "name": "柏木地区6町会盆踊り大会",
+      "venue": "北新宿公園",
+      "area": "新宿区",
+      "date": "2025-08-02",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        8
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.64,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:町会",
+        "継続語:盆踊り大会"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-02"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-08-02。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "納涼盆踊り大会 8月3日(日)-4日(月) 19:00-。|駒沢緑泉公園|2025-08-03",
+      "name": "納涼盆踊り大会 8月3日(日)-4日(月) 19:00-。",
+      "venue": "駒沢緑泉公園",
+      "area": "世田谷区",
+      "date": "2025-08-03",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        8
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.64,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:納涼",
+        "継続語:盆踊り大会"
+      ],
+      "recurrence_cautions": [
+        "次回日程未確認"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-03"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-08-03。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "瀬田商店会 瀬田納涼盆踊り 8月16日(土)ｰ17日(日)。|瀬田中学校|2025-08-16",
+      "name": "瀬田商店会 瀬田納涼盆踊り 8月16日(土)ｰ17日(日)。",
+      "venue": "瀬田中学校",
+      "area": "世田谷区",
+      "date": "2025-08-16",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        8
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.64,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:納涼",
+        "継続語:夏祭り"
+      ],
+      "recurrence_cautions": [
+        "次回日程未確認"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-16"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-08-16。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "歌舞伎町BON ODORI|歌舞伎町シネシティ広場|2025-08-16",
+      "name": "歌舞伎町BON ODORI",
+      "venue": "歌舞伎町シネシティ広場",
+      "area": "新宿区",
+      "date": "2025-08-16",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        8
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.64,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "動画実績証拠あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:商店街"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-16"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-08-16。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "新町公民会 盆踊り大会 8月17日(日) 17:00- 。|久富稲荷神社|2025-08-17",
+      "name": "新町公民会 盆踊り大会 8月17日(日) 17:00- 。",
+      "venue": "久富稲荷神社",
+      "area": "世田谷区",
+      "date": "2025-08-17",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        8
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.64,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:神社",
+        "継続語:盆踊り大会"
+      ],
+      "recurrence_cautions": [
+        "次回日程未確認"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-17"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-08-17。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "上北沢盆踊り実行委員会 「上北沢の納涼盆踊り」 8月25(土)。|上北沢小学校|2025-08-23",
+      "name": "上北沢盆踊り実行委員会 「上北沢の納涼盆踊り」 8月25(土)。",
+      "venue": "上北沢小学校",
+      "area": "世田谷区",
+      "date": "2025-08-23",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        8
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.64,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:納涼",
+        "継続語:夏祭り"
+      ],
+      "recurrence_cautions": [
+        "次回日程未確認"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-23"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-08-23。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "坂本町会 納涼祭|さかもと朝顔広場（旧坂本小学校跡地）|2025-08-23",
+      "name": "坂本町会 納涼祭",
+      "venue": "さかもと朝顔広場（旧坂本小学校跡地）",
+      "area": "台東区",
+      "date": "2025-08-23",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        8
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.64,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:納涼",
+        "継続語:町会"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-23"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-08-23。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "太平一丁目 牛嶋神社 奉納踊り|報恩寺境内|2025-09-12",
+      "name": "太平一丁目 牛嶋神社 奉納踊り",
+      "venue": "報恩寺境内",
+      "area": "墨田区",
+      "date": "2025-09-12",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        9
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.64,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:神社",
+        "継続語:寺"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-09-12"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-09-12。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "向島一丁目 牛嶋神社 ミニ奉納踊り|向島1丁目旧町会会館前|2025-09-13",
+      "name": "向島一丁目 牛嶋神社 ミニ奉納踊り",
+      "venue": "向島1丁目旧町会会館前",
+      "area": "墨田区",
+      "date": "2025-09-13",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        9
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.64,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:町会",
+        "継続語:神社"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-09-13"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-09-13。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "石原一丁目 牛嶋神社 奉納踊り|石一町会会館前|2025-09-13",
+      "name": "石原一丁目 牛嶋神社 奉納踊り",
+      "venue": "石一町会会館前",
+      "area": "墨田区",
+      "date": "2025-09-13",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        9
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.64,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:町会",
+        "継続語:神社"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-09-13"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-09-13。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "旗の台稲荷通り商店会盆踊り 盆ROCK|旗の台稲荷通り商店街|2025-10-18",
+      "name": "旗の台稲荷通り商店会盆踊り 盆ROCK",
+      "venue": "旗の台稲荷通り商店街",
+      "area": "品川区",
+      "date": "2025-10-18",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        10
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.64,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "動画実績証拠あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:商店街"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-10-18"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-10-18。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "-両国- 江戸NOREN 妖怪BON DANCE|-両国-江戸NOREN|2025-07-13",
+      "name": "-両国- 江戸NOREN 妖怪BON DANCE",
+      "venue": "-両国-江戸NOREN",
+      "area": "墨田区",
+      "date": "2025-07-13",
+      "date_end": "2025-07-13",
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        7
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.63,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "公式/準公式確認あり",
+        "動画実績証拠あり",
+        "会場あり",
+        "23区エリアあり"
+      ],
+      "recurrence_cautions": [
+        "単発/企画色:BON DANCE"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-13",
+        "2025-07-13"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-07-13。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "馬込地区自治会連合会、馬籠商店会連合睦会|馬込桜並木公園、馬込桜並木通り|2025-04-06",
+      "name": "馬込地区自治会連合会、馬籠商店会連合睦会",
+      "venue": "馬込桜並木公園、馬込桜並木通り",
+      "area": "大田区",
+      "date": "2025-04-06",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        4
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.6,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:自治会"
+      ],
+      "recurrence_cautions": [
+        "次回日程未確認"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-04-06"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-04-06。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "羽田青年連合会|羽田神社|2025-07-13",
+      "name": "羽田青年連合会",
+      "venue": "羽田神社",
+      "area": "大田区",
+      "date": "2025-07-13",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        7
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.6,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:神社"
+      ],
+      "recurrence_cautions": [
+        "次回日程未確認"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-13"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-07-13。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "祖師谷昇進会商店街(振)盆踊り 7月18日(金)-19日(土)。|祖師谷神明社|2025-07-18",
+      "name": "祖師谷昇進会商店街(振)盆踊り 7月18日(金)-19日(土)。",
+      "venue": "祖師谷神明社",
+      "area": "世田谷区",
+      "date": "2025-07-18",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        7
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.6,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:商店街"
+      ],
+      "recurrence_cautions": [
+        "次回日程未確認"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-18"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-07-18。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "「希望ヶ丘団地夏まつり」 7月19日(土)-20日(日)。|希望ヶ丘団地 テニスコート|2025-07-19",
+      "name": "「希望ヶ丘団地夏まつり」 7月19日(土)-20日(日)。",
+      "venue": "希望ヶ丘団地 テニスコート",
+      "area": "世田谷区",
+      "date": "2025-07-19",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        7
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.6,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:まつり"
+      ],
+      "recurrence_cautions": [
+        "次回日程未確認"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-19"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-07-19。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "千歳台廻沢地区盆踊り 7月19日(土)-20日(日)。|廻沢稲荷神社|2025-07-19",
+      "name": "千歳台廻沢地区盆踊り 7月19日(土)-20日(日)。",
+      "venue": "廻沢稲荷神社",
+      "area": "世田谷区",
+      "date": "2025-07-19",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        7
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.6,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:神社"
+      ],
+      "recurrence_cautions": [
+        "次回日程未確認"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-19"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-07-19。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "玉川町会盆おどり大会 7月25日(金)、26日(土)|二子玉川西地区ふれあい広場(246高架下)|2025-07-25",
+      "name": "玉川町会盆おどり大会 7月25日(金)、26日(土)",
+      "venue": "二子玉川西地区ふれあい広場(246高架下)",
+      "area": "世田谷区",
+      "date": "2025-07-25",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        7
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.6,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:町会"
+      ],
+      "recurrence_cautions": [
+        "次回日程未確認"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-25"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-07-25。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "北新宿四丁目 盆踊り大会|北柏木公園|2025-07-25",
+      "name": "北新宿四丁目 盆踊り大会",
+      "venue": "北柏木公園",
+      "area": "新宿区",
+      "date": "2025-07-25",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        7
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.6,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:盆踊り大会"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-25"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-07-25。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "「喜多見盆踊り大会」 7月26日(土)-27日(日)。|小田急線喜多見駅前 南口広場|2025-07-26",
+      "name": "「喜多見盆踊り大会」 7月26日(土)-27日(日)。",
+      "venue": "小田急線喜多見駅前 南口広場",
+      "area": "世田谷区",
+      "date": "2025-07-26",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        7
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.6,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:盆踊り大会"
+      ],
+      "recurrence_cautions": [
+        "次回日程未確認"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-26"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-07-26。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "「成城学園 盆踊り大会」 7月26日(土) 17:30-20:00。|成城大学9号館前広場|2025-07-26",
+      "name": "「成城学園 盆踊り大会」 7月26日(土) 17:30-20:00。",
+      "venue": "成城大学9号館前広場",
+      "area": "世田谷区",
+      "date": "2025-07-26",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        7
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.6,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:盆踊り大会"
+      ],
+      "recurrence_cautions": [
+        "次回日程未確認"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-26"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-07-26。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "奥沢交和会|奥沢小学校|2025-07-26",
+      "name": "奥沢交和会",
+      "venue": "奥沢小学校",
+      "area": "世田谷区",
+      "date": "2025-07-26",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        7
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.6,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:夏祭り"
+      ],
+      "recurrence_cautions": [
+        "次回日程未確認"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-26"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-07-26。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "祖師谷商店街振興組合|小田急線祖師ヶ谷大蔵駅前広場|2025-07-26",
+      "name": "祖師谷商店街振興組合",
+      "venue": "小田急線祖師ヶ谷大蔵駅前広場",
+      "area": "世田谷区",
+      "date": "2025-07-26",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        7
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.6,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:商店街"
+      ],
+      "recurrence_cautions": [
+        "次回日程未確認"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-26"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-07-26。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "森ヶ崎自治会|大森南4丁目公園|2025-07-29",
+      "name": "森ヶ崎自治会",
+      "venue": "大森南4丁目公園",
+      "area": "大田区",
+      "date": "2025-07-29",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        7
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.6,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:自治会"
+      ],
+      "recurrence_cautions": [
+        "次回日程未確認"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-29"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-07-29。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "盆踊り(池尻地区)8月1日(金)-2日(土)。|池尻稲荷神社|2025-08-01",
+      "name": "盆踊り(池尻地区)8月1日(金)-2日(土)。",
+      "venue": "池尻稲荷神社",
+      "area": "世田谷区",
+      "date": "2025-08-01",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        8
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.6,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:神社"
+      ],
+      "recurrence_cautions": [
+        "次回日程未確認"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-01"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-08-01。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "市野倉南町会 盆踊り 8月2日(土)-3日(日)18:30-21:00(4日は20:30まで)。|市野倉南児童公園|2025-08-02",
+      "name": "市野倉南町会 盆踊り 8月2日(土)-3日(日)18:30-21:00(4日は20:30まで)。",
+      "venue": "市野倉南児童公園",
+      "area": "大田区",
+      "date": "2025-08-02",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        8
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.6,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:町会"
+      ],
+      "recurrence_cautions": [
+        "次回日程未確認"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-02"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-08-02。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "品川区民まつり 西大井広場公園 盆踊り|西大井広場公園|2025-09-27",
+      "name": "品川区民まつり 西大井広場公園 盆踊り",
+      "venue": "西大井広場公園",
+      "area": "品川区",
+      "date": "2025-09-27",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        9
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.6,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:まつり"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-09-27"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-09-27。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "飛鳥山盆踊り|飛鳥山公園|2025-07-05",
+      "name": "飛鳥山盆踊り",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "date": "2025-07-05",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        7
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.59,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "動画実績証拠あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:例年"
+      ],
+      "recurrence_cautions": [
+        "単発/企画色:Festival"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-05"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-07-05。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "アースデイ東京2025 イマジン盆踊り部|代々木公園野外ステージ|2025-04-19",
+      "name": "アースデイ東京2025 イマジン盆踊り部",
+      "venue": "代々木公園野外ステージ",
+      "area": "渋谷区",
+      "date": "2025-04-19",
+      "date_end": "2025-04-19",
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        4
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.58,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "公式/準公式確認あり",
+        "動画実績証拠あり",
+        "会場あり",
+        "23区エリアあり"
+      ],
+      "recurrence_cautions": [
+        "単発/企画色:アースデイ",
+        "イベント名に2025明記"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-04-19",
+        "2025-04-19"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-04-19。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "第10回 すみだ輪おどり区民感謝デー|すみだ産業会館サンライズホール|2025-01-11",
+      "name": "第10回 すみだ輪おどり区民感謝デー",
+      "venue": "すみだ産業会館サンライズホール",
+      "area": "墨田区",
+      "date": "2025-01-11",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        1
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.56,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-01-11"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-01-11。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "駒澤大学同窓会東京都支部・営友会|駒澤大学 駒沢キャンパス|2025-08-10",
+      "name": "駒澤大学同窓会東京都支部・営友会",
+      "venue": "駒澤大学 駒沢キャンパス",
+      "area": "世田谷区",
+      "date": "2025-08-10",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        8
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.56,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり"
+      ],
+      "recurrence_cautions": [
+        "次回日程未確認"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-10"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-08-10。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "船橋会 盆踊り 8月17日(日)。|千歳船橋駅前広場|2025-08-17",
+      "name": "船橋会 盆踊り 8月17日(日)。",
+      "venue": "千歳船橋駅前広場",
+      "area": "世田谷区",
+      "date": "2025-08-17",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        8
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.56,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり"
+      ],
+      "recurrence_cautions": [
+        "次回日程未確認"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-17"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-08-17。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "盆踊り in 駒場東大|東京大学駒場キャンパス 学生会館東|2025-11-23",
+      "name": "盆踊り in 駒場東大",
+      "venue": "東京大学駒場キャンパス 学生会館東",
+      "area": "目黒区",
+      "date": "2025-11-23",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        11
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.56,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-11-23"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-11-23。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "あずま通り商店街「下北沢盆踊り2025」 8月9日(土)-10日(日) 13:00-20:00。|下北沢駅東口|2025-08-09",
+      "name": "あずま通り商店街「下北沢盆踊り2025」 8月9日(土)-10日(日) 13:00-20:00。",
+      "venue": "下北沢駅東口",
+      "area": "世田谷区",
+      "date": "2025-08-09",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        8
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.55,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:商店街"
+      ],
+      "recurrence_cautions": [
+        "次回日程未確認",
+        "イベント名に2025明記"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-09"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-08-09。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "中目黒盆踊り大会 2025|フナイリバ（目黒川船入場広場）|2025-08-30",
+      "name": "中目黒盆踊り大会 2025",
+      "venue": "フナイリバ（目黒川船入場広場）",
+      "area": "目黒区",
+      "date": "2025-08-30",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        8
+      ],
+      "public_status": "expected_medium",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 中",
+      "recurrence_score": 0.55,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:盆踊り大会"
+      ],
+      "recurrence_cautions": [
+        "イベント名に2025明記"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-30"
+      ],
+      "needs_review": true,
+      "public_note": "昨年開催あり: 2025-08-30。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "蒲田魅力向上委員会(蒲田西口商店街振興組合、蒲田西地区自治会連合会) 「蒲田国際フェスティバル2025 -世界が出会う下町フェス 」 9月6日(土)(初日) 。|JR蒲田駅西口駅前広場(駅前会場)|2025-09-06",
+      "name": "蒲田魅力向上委員会(蒲田西口商店街振興組合、蒲田西地区自治会連合会) 「蒲田国際フェスティバル2025 -世界が出会う下町フェス 」 9月6日(土)(初日) 。",
+      "venue": "JR蒲田駅西口駅前広場(駅前会場)",
+      "area": "大田区",
+      "date": "2025-09-06",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        9
+      ],
+      "public_status": "expected_low",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 低",
+      "recurrence_score": 0.54,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "会場あり",
+        "23区エリアあり",
+        "継続語:自治会",
+        "継続語:商店街"
+      ],
+      "recurrence_cautions": [
+        "次回日程未確認",
+        "単発/企画色:フェス",
+        "イベント名に2025明記"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-09-06"
+      ],
+      "needs_review": false,
+      "public_note": "昨年開催あり: 2025-09-06。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "GMOシブヤエンタメ祭 × JAME盆踊り|宮下公園|2025-05-31",
+      "name": "GMOシブヤエンタメ祭 × JAME盆踊り",
+      "venue": "宮下公園",
+      "area": "渋谷区",
+      "date": "2025-05-31",
+      "date_end": "2025-06-01",
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        5,
+        6
+      ],
+      "public_status": "expected_low",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 低",
+      "recurrence_score": 0.53,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "公式/準公式確認あり",
+        "動画実績証拠あり",
+        "会場あり",
+        "23区エリアあり"
+      ],
+      "recurrence_cautions": [
+        "単発/企画色:フェス",
+        "単発/企画色:BON DANCE",
+        "単発/企画色:シブヤエンタメ祭"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-05-31",
+        "2025-06-01"
+      ],
+      "needs_review": false,
+      "public_note": "昨年開催あり: 2025-05-31〜2025-06-01。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "SHIBUYA MIYASHITA PARK BON DANCE 2025|宮下公園|2025-09-27",
+      "name": "SHIBUYA MIYASHITA PARK BON DANCE 2025",
+      "venue": "宮下公園",
+      "area": "渋谷区",
+      "date": "2025-09-27",
+      "date_end": "2025-09-28",
+      "source_status": "終了",
+      "source_date_year": 2025,
+      "months": [
+        9
+      ],
+      "public_status": "expected_low",
+      "public_status_label": "2025年実績あり",
+      "recurrence_label": "今年も開催見込み 低",
+      "recurrence_score": 0.48,
+      "recurrence_reasons": [
+        "2025年実績あり",
+        "公式/準公式確認あり",
+        "動画実績証拠あり",
+        "会場あり",
+        "23区エリアあり"
+      ],
+      "recurrence_cautions": [
+        "単発/企画色:Festival",
+        "単発/企画色:BON DANCE",
+        "単発/企画色:シブヤエンタメ祭",
+        "イベント名に2025明記"
+      ],
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-09-27",
+        "2025-09-28"
+      ],
+      "needs_review": false,
+      "public_note": "昨年開催あり: 2025-09-27〜2025-09-28。今年の日程は未確認です。"
+    },
+    {
+      "event_key": "羽根木公園の盆踊り|羽根木公園|",
+      "name": "羽根木公園の盆踊り",
+      "venue": "羽根木公園",
+      "area": "世田谷区",
+      "date": null,
+      "date_end": null,
+      "source_status": null,
+      "source_date_year": null,
+      "months": [
+        2
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "イベント名未確認（築地社会教育会館）|築地社会教育会館|",
+      "name": "イベント名未確認（築地社会教育会館）",
+      "venue": "築地社会教育会館",
+      "area": "中央区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        3
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "京橋盆踊り|京橋エドグラン 京橋中央ひろば|",
+      "name": "京橋盆踊り",
+      "venue": "京橋エドグラン 京橋中央ひろば",
+      "area": "中央区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        8
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "小網神社の盆踊り（名称推定）|小網神社|",
+      "name": "小網神社の盆踊り（名称推定）",
+      "venue": "小網神社",
+      "area": "中央区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        5
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "浜二納涼盆踊り大会|浜町公園|",
+      "name": "浜二納涼盆踊り大会",
+      "venue": "浜町公園",
+      "area": "中央区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        9
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "濱町音頭盆踊り大会|浜町公園|",
+      "name": "濱町音頭盆踊り大会",
+      "venue": "浜町公園",
+      "area": "中央区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        9
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "飛鳥山夏祭り～お城で盆おどり大作戦～|飛鳥山公園|",
+      "name": "飛鳥山夏祭り～お城で盆おどり大作戦～",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        8
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "Tokyo江戸ウィーク～下町盆踊りフェス～|上野恩賜公園|",
+      "name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
+      "venue": "上野恩賜公園",
+      "area": "台東区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        10
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "ゐの市盆踊り～不忍夢～|上野恩賜公園|",
+      "name": "ゐの市盆踊り～不忍夢～",
+      "venue": "上野恩賜公園",
+      "area": "台東区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        8
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "上野盆踊り会（厚澄会）|上野恩賜公園|",
+      "name": "上野盆踊り会（厚澄会）",
+      "venue": "上野恩賜公園",
+      "area": "台東区",
+      "date": null,
+      "date_end": null,
+      "source_status": "確認済み",
+      "source_date_year": null,
+      "months": [
+        6,
+        7,
+        8,
+        10
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "第2回田原de盆踊り|田原小学校|",
+      "name": "第2回田原de盆踊り",
+      "venue": "田原小学校",
+      "area": "台東区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        9
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "しながわ運河まつり ステージプログラム|東品川海上公園|",
+      "name": "しながわ運河まつり ステージプログラム",
+      "venue": "東品川海上公園",
+      "area": "品川区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        4
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "中原共和町会 戸越八幡神社祭礼 盆踊り|平塚中央公園|",
+      "name": "中原共和町会 戸越八幡神社祭礼 盆踊り",
+      "venue": "平塚中央公園",
+      "area": "品川区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        9
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "品川区民まつり 八潮地区|八潮公園|",
+      "name": "品川区民まつり 八潮地区",
+      "venue": "八潮公園",
+      "area": "品川区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        9
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "品川区民まつり 品川第二地区|城南小学校|",
+      "name": "品川区民まつり 品川第二地区",
+      "venue": "城南小学校",
+      "area": "品川区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        7
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "品川区民まつり 大崎第一地区|第一日野小学校|",
+      "name": "品川区民まつり 大崎第一地区",
+      "venue": "第一日野小学校",
+      "area": "品川区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        7
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "品川区民まつり 大崎第一地区|第四日野小学校|",
+      "name": "品川区民まつり 大崎第一地区",
+      "venue": "第四日野小学校",
+      "area": "品川区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        7
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "品川区民まつり 荏原第一地区|小山台小学校|",
+      "name": "品川区民まつり 荏原第一地区",
+      "venue": "小山台小学校",
+      "area": "品川区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        7
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "品川区民まつり 荏原第三地区|京陽小学校|",
+      "name": "品川区民まつり 荏原第三地区",
+      "venue": "京陽小学校",
+      "area": "品川区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        10
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "品川区民まつり 荏原第五地区|旧杜松小学校|",
+      "name": "品川区民まつり 荏原第五地区",
+      "venue": "旧杜松小学校",
+      "area": "品川区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        8
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "品川区民まつり 荏原第四地区|上神明小学校|",
+      "name": "品川区民まつり 荏原第四地区",
+      "venue": "上神明小学校",
+      "area": "品川区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        11
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "品川第二地区 区民まつり・品川青年会 盆踊り大会（天妙国寺）|天妙国寺|",
+      "name": "品川第二地区 区民まつり・品川青年会 盆踊り大会（天妙国寺）",
+      "venue": "天妙国寺",
+      "area": "品川区",
+      "date": null,
+      "date_end": null,
+      "source_status": "確認済み",
+      "source_date_year": null,
+      "months": [
+        7
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "大井蔵王権現神社の盆踊り（名称推定）|大井蔵王権現神社|",
+      "name": "大井蔵王権現神社の盆踊り（名称推定）",
+      "venue": "大井蔵王権現神社",
+      "area": "品川区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        4
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "小山台二丁目町会 戸越八幡神社例大祭 盆踊り|小山台公園|",
+      "name": "小山台二丁目町会 戸越八幡神社例大祭 盆踊り",
+      "venue": "小山台公園",
+      "area": "品川区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        9
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "戸越八幡神社例大祭 盆踊り|戸越八幡神社|",
+      "name": "戸越八幡神社例大祭 盆踊り",
+      "venue": "戸越八幡神社",
+      "area": "品川区",
+      "date": null,
+      "date_end": null,
+      "source_status": "確認済み",
+      "source_date_year": null,
+      "months": [
+        9
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "旗岡八幡神社例大祭|旗岡八幡神社|",
+      "name": "旗岡八幡神社例大祭",
+      "venue": "旗岡八幡神社",
+      "area": "品川区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        9
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "第3回 延七昇竜太鼓盆踊り大会|第二延山小学校|",
+      "name": "第3回 延七昇竜太鼓盆踊り大会",
+      "venue": "第二延山小学校",
+      "area": "品川区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        5
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "すみだ公園の盆踊り（名称推定）|すみだ公園（隅田公園・墨田区側）|",
+      "name": "すみだ公園の盆踊り（名称推定）",
+      "venue": "すみだ公園（隅田公園・墨田区側）",
+      "area": "墨田区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        9
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "中之郷公園の盆踊り（名称推定）|中之郷公園（中之郷児童遊園）|",
+      "name": "中之郷公園の盆踊り（名称推定）",
+      "venue": "中之郷公園（中之郷児童遊園）",
+      "area": "墨田区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        9
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "亀沢1、2丁目合同 牛嶋神社 奉納踊り|緑町公園|",
+      "name": "亀沢1、2丁目合同 牛嶋神社 奉納踊り",
+      "venue": "緑町公園",
+      "area": "墨田区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        9
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "小梅一丁目町会・睦会 牛嶋神社祭礼 奉納踊り|小梅児童遊園|",
+      "name": "小梅一丁目町会・睦会 牛嶋神社祭礼 奉納踊り",
+      "venue": "小梅児童遊園",
+      "area": "墨田区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        9
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "押上二町目町会 飛木稲荷神社神幸大祭 奉納おどり|押上二丁目町会会館前 路上|",
+      "name": "押上二町目町会 飛木稲荷神社神幸大祭 奉納おどり",
+      "venue": "押上二丁目町会会館前 路上",
+      "area": "墨田区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        9
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "押上二町目町会 飛木稲荷神社神幸大祭 奉納おどり|飛木稲荷神社|",
+      "name": "押上二町目町会 飛木稲荷神社神幸大祭 奉納おどり",
+      "venue": "飛木稲荷神社",
+      "area": "墨田区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        9
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "本四三ツ目児童遊園の盆踊り（名称推定）|本四三ツ目児童遊園（三つ目児童公園）|",
+      "name": "本四三ツ目児童遊園の盆踊り（名称推定）",
+      "venue": "本四三ツ目児童遊園（三つ目児童公園）",
+      "area": "墨田区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        9
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "本所二丁目 牛嶋神社 奉納踊り|若宮公園|",
+      "name": "本所二丁目 牛嶋神社 奉納踊り",
+      "venue": "若宮公園",
+      "area": "墨田区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        9
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "牛嶋神社御祭礼 奉納踊り|日進公園|",
+      "name": "牛嶋神社御祭礼 奉納踊り",
+      "venue": "日進公園",
+      "area": "墨田区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        9
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "牛嶋神社祭礼 奉納踊り|牛嶋神社|",
+      "name": "牛嶋神社祭礼 奉納踊り",
+      "venue": "牛嶋神社",
+      "area": "墨田区",
+      "date": null,
+      "date_end": null,
+      "source_status": "確認済み",
+      "source_date_year": null,
+      "months": [
+        9
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "盆☆Dance 夏休み最後の土曜は校庭で踊ろう！|横川小学校|",
+      "name": "盆☆Dance 夏休み最後の土曜は校庭で踊ろう！",
+      "venue": "横川小学校",
+      "area": "墨田区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        8
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "錦糸一丁目 牛嶋神社 奉納踊り|大横川親水公園|",
+      "name": "錦糸一丁目 牛嶋神社 奉納踊り",
+      "venue": "大横川親水公園",
+      "area": "墨田区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        9
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "根津神社 盆踊り（文京区）|根津神社|",
+      "name": "根津神社 盆踊り（文京区）",
+      "venue": "根津神社",
+      "area": "文京区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        9
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "新宿中央公園夏祭り 納涼盆踊り大会|新宿中央公園 ファンモアタイム広場|",
+      "name": "新宿中央公園夏祭り 納涼盆踊り大会",
+      "venue": "新宿中央公園 ファンモアタイム広場",
+      "area": "新宿区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        8
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "森下二丁目盆踊り|森下公園|",
+      "name": "森下二丁目盆踊り",
+      "venue": "森下公園",
+      "area": "江東区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        7
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "江東天祖神社の盆踊り（名称推定）|江東天祖神社（亀戸天祖神社）|",
+      "name": "江東天祖神社の盆踊り（名称推定）",
+      "venue": "江東天祖神社（亀戸天祖神社）",
+      "area": "江東区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        9
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "盆踊り大会|木場二丁目公園|",
+      "name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        7
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "第2回 辰巳で盆踊り|区立第二辰巳小学校|",
+      "name": "第2回 辰巳で盆踊り",
+      "venue": "区立第二辰巳小学校",
+      "area": "江東区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        5
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "都の辰巳深川 臨海ぼんおどり|臨海小学校|",
+      "name": "都の辰巳深川 臨海ぼんおどり",
+      "venue": "臨海小学校",
+      "area": "江東区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        7
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "アークヒルズ秋祭り 盆踊り|アーク・カラヤン広場（アークヒルズ）|",
+      "name": "アークヒルズ秋祭り 盆踊り",
+      "venue": "アーク・カラヤン広場（アークヒルズ）",
+      "area": "港区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        9
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "上笄町会お祭り 盆踊り|長谷寺（西麻布・麻布大観音）|",
+      "name": "上笄町会お祭り 盆踊り",
+      "venue": "長谷寺（西麻布・麻布大観音）",
+      "area": "港区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        9
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "六本木天祖神社（龍土神明宮）例大祭 盆踊り|六本木天祖神社|",
+      "name": "六本木天祖神社（龍土神明宮）例大祭 盆踊り",
+      "venue": "六本木天祖神社",
+      "area": "港区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        9
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "増上寺 地蔵尊盆踊り大会|増上寺（大殿前広場）|",
+      "name": "増上寺 地蔵尊盆踊り大会",
+      "venue": "増上寺（大殿前広場）",
+      "area": "港区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        7
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "桜まつり|三田松坂児童遊園|",
+      "name": "桜まつり",
+      "venue": "三田松坂児童遊園",
+      "area": "港区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        3
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "海岸まつり|埠頭公園（港区芝浦港南）|",
+      "name": "海岸まつり",
+      "venue": "埠頭公園（港区芝浦港南）",
+      "area": "港区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        8
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "盆ダンスフェスティバル2023|白金児童遊園|",
+      "name": "盆ダンスフェスティバル2023",
+      "venue": "白金児童遊園",
+      "area": "港区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        7
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "芝大神宮 大祭 奉納輪踊り|芝新堀町児童遊園|",
+      "name": "芝大神宮 大祭 奉納輪踊り",
+      "venue": "芝新堀町児童遊園",
+      "area": "港区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        9
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "赤坂夏おどり（旧 赤坂盆踊り）|赤坂サカス広場|",
+      "name": "赤坂夏おどり（旧 赤坂盆踊り）",
+      "venue": "赤坂サカス広場",
+      "area": "港区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        8
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "赤坂氷川祭 盆踊り大会|赤坂氷川神社|",
+      "name": "赤坂氷川祭 盆踊り大会",
+      "venue": "赤坂氷川神社",
+      "area": "港区",
+      "date": null,
+      "date_end": null,
+      "source_status": "確認済み",
+      "source_date_year": null,
+      "months": [
+        9
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "麻布十番納涼盆踊り大会|網代公園|",
+      "name": "麻布十番納涼盆踊り大会",
+      "venue": "網代公園",
+      "area": "港区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [
+        9
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "麻布氷川神社例大祭 盆踊り|麻布氷川神社|",
+      "name": "麻布氷川神社例大祭 盆踊り",
+      "venue": "麻布氷川神社",
+      "area": "港区",
+      "date": null,
+      "date_end": null,
+      "source_status": "確認済み",
+      "source_date_year": null,
+      "months": [
+        9
+      ],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.25,
+      "recurrence_reasons": [
+        "月ヒントあり",
+        "日付ヒントあり"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "あかつき公園の盆踊り|あかつき公園|",
+      "name": "あかつき公園の盆踊り",
+      "venue": "あかつき公園",
+      "area": "中央区",
+      "date": null,
+      "date_end": null,
+      "source_status": null,
+      "source_date_year": null,
+      "months": [],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.15,
+      "recurrence_reasons": [],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "日本橋小学校の盆踊り（名称推定）|日本橋小学校|",
+      "name": "日本橋小学校の盆踊り（名称推定）",
+      "venue": "日本橋小学校",
+      "area": "中央区",
+      "date": null,
+      "date_end": null,
+      "source_status": "未確認",
+      "source_date_year": null,
+      "months": [],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.15,
+      "recurrence_reasons": [
+        "未確認"
+      ],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "有馬小学校の盆踊り|有馬小学校|",
+      "name": "有馬小学校の盆踊り",
+      "venue": "有馬小学校",
+      "area": "中央区",
+      "date": null,
+      "date_end": null,
+      "source_status": null,
+      "source_date_year": null,
+      "months": [],
+      "public_status": "date_unknown",
+      "public_status_label": "日程未確認",
+      "recurrence_label": "日程未確認",
+      "recurrence_score": 0.15,
+      "recurrence_reasons": [],
+      "recurrence_cautions": [
+        "2026年日程なし"
+      ],
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "needs_review": false,
+      "public_note": "今年の日程は未確認です。"
+    },
+    {
+      "event_key": "倉雀会(くらすずめかい)|北葛西コミュニティ会館|2026-02-08",
+      "name": "倉雀会(くらすずめかい)",
+      "venue": "北葛西コミュニティ会館",
+      "area": "江戸川区",
+      "date": "2026-02-08",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2026,
+      "months": [
+        2
+      ],
+      "public_status": "ended_2026",
+      "public_status_label": "開催終了",
+      "recurrence_label": "2026年開催終了",
+      "recurrence_score": 0.98,
+      "recurrence_reasons": [
+        "2026年開催済み"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-02-08"
+      ],
+      "needs_review": false,
+      "public_note": "2026年開催終了: 2026-02-08"
+    },
+    {
+      "event_key": "第2回 大盆踊り祭 with 坂崎守寛|日本橋社会教育会館|2026-02-21",
+      "name": "第2回 大盆踊り祭 with 坂崎守寛",
+      "venue": "日本橋社会教育会館",
+      "area": "中央区",
+      "date": "2026-02-21",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2026,
+      "months": [
+        2
+      ],
+      "public_status": "ended_2026",
+      "public_status_label": "開催終了",
+      "recurrence_label": "2026年開催終了",
+      "recurrence_score": 0.98,
+      "recurrence_reasons": [
+        "2026年開催済み"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-02-21"
+      ],
+      "needs_review": false,
+      "public_note": "2026年開催終了: 2026-02-21"
+    },
+    {
+      "event_key": "荒川盆踊り会 初踊り|真土公園|2026-02-22",
+      "name": "荒川盆踊り会 初踊り",
+      "venue": "真土公園",
+      "area": "荒川区",
+      "date": "2026-02-22",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2026,
+      "months": [
+        2
+      ],
+      "public_status": "ended_2026",
+      "public_status_label": "開催終了",
+      "recurrence_label": "2026年開催終了",
+      "recurrence_score": 0.98,
+      "recurrence_reasons": [
+        "2026年開催済み"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-02-22"
+      ],
+      "needs_review": false,
+      "public_note": "2026年開催終了: 2026-02-22"
+    },
+    {
+      "event_key": "西図子 盆踊りとおでんの宴|向島百花会館|2026-03-01",
+      "name": "西図子 盆踊りとおでんの宴",
+      "venue": "向島百花会館",
+      "area": "墨田区",
+      "date": "2026-03-01",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2026,
+      "months": [
+        3
+      ],
+      "public_status": "ended_2026",
+      "public_status_label": "開催終了",
+      "recurrence_label": "2026年開催終了",
+      "recurrence_score": 0.98,
+      "recurrence_reasons": [
+        "2026年開催済み"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-03-01"
+      ],
+      "needs_review": false,
+      "public_note": "2026年開催終了: 2026-03-01"
+    },
+    {
+      "event_key": "グリーン アイルランド フェスティバル 2026 アイリッシュ盆踊り|代々木公園野外ステージ|2026-03-15",
+      "name": "グリーン アイルランド フェスティバル 2026 アイリッシュ盆踊り",
+      "venue": "代々木公園野外ステージ",
+      "area": "渋谷区",
+      "date": "2026-03-15",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2026,
+      "months": [
+        3
+      ],
+      "public_status": "ended_2026",
+      "public_status_label": "開催終了",
+      "recurrence_label": "2026年開催終了",
+      "recurrence_score": 0.98,
+      "recurrence_reasons": [
+        "2026年開催済み"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-03-15"
+      ],
+      "needs_review": false,
+      "public_note": "2026年開催終了: 2026-03-15"
+    },
+    {
+      "event_key": "第60回あらかわ青年大会 アリストック|あらかわ遊園アリスの広場|2026-03-15",
+      "name": "第60回あらかわ青年大会 アリストック",
+      "venue": "あらかわ遊園アリスの広場",
+      "area": "荒川区",
+      "date": "2026-03-15",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2026,
+      "months": [
+        3
+      ],
+      "public_status": "ended_2026",
+      "public_status_label": "開催終了",
+      "recurrence_label": "2026年開催終了",
+      "recurrence_score": 0.98,
+      "recurrence_reasons": [
+        "2026年開催済み"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-03-15"
+      ],
+      "needs_review": false,
+      "public_note": "2026年開催終了: 2026-03-15"
+    },
+    {
+      "event_key": "新井町会連合会・中野通り桜まつり実行委員会「中野通り桜まつり」|新井薬師公園|2026-03-28",
+      "name": "新井町会連合会・中野通り桜まつり実行委員会「中野通り桜まつり」",
+      "venue": "新井薬師公園",
+      "area": "中野区",
+      "date": "2026-03-28",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2026,
+      "months": [
+        3
+      ],
+      "public_status": "ended_2026",
+      "public_status_label": "開催終了",
+      "recurrence_label": "2026年開催終了",
+      "recurrence_score": 0.98,
+      "recurrence_reasons": [
+        "2026年開催済み"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-03-28"
+      ],
+      "needs_review": false,
+      "public_note": "2026年開催終了: 2026-03-28"
+    },
+    {
+      "event_key": "好踊会「第4回 好踊会フェア」 3月29日(日) 13:00-16:00。|鹿骨中学校|2026-03-29",
+      "name": "好踊会「第4回 好踊会フェア」 3月29日(日) 13:00-16:00。",
+      "venue": "鹿骨中学校",
+      "area": "江戸川区",
+      "date": "2026-03-29",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2026,
+      "months": [
+        3
+      ],
+      "public_status": "ended_2026",
+      "public_status_label": "開催終了",
+      "recurrence_label": "2026年開催終了",
+      "recurrence_score": 0.98,
+      "recurrence_reasons": [
+        "2026年開催済み"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-03-29"
+      ],
+      "needs_review": false,
+      "public_note": "2026年開催終了: 2026-03-29"
+    },
+    {
+      "event_key": "桜フェスタ商店街 みんなで盆踊り|都立大学駅西口緑道|2026-03-29",
+      "name": "桜フェスタ商店街 みんなで盆踊り",
+      "venue": "都立大学駅西口緑道",
+      "area": "目黒区",
+      "date": "2026-03-29",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2026,
+      "months": [
+        3
+      ],
+      "public_status": "ended_2026",
+      "public_status_label": "開催終了",
+      "recurrence_label": "2026年開催終了",
+      "recurrence_score": 0.98,
+      "recurrence_reasons": [
+        "2026年開催済み"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-03-29"
+      ],
+      "needs_review": false,
+      "public_note": "2026年開催終了: 2026-03-29"
+    },
+    {
+      "event_key": "「白鳥おどりin池袋」 4月25日(土) 11:00-20:00。|中池袋公園|2026-04-25",
+      "name": "「白鳥おどりin池袋」 4月25日(土) 11:00-20:00。",
+      "venue": "中池袋公園",
+      "area": "豊島区",
+      "date": "2026-04-25",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2026,
+      "months": [
+        4
+      ],
+      "public_status": "ended_2026",
+      "public_status_label": "開催終了",
+      "recurrence_label": "2026年開催終了",
+      "recurrence_score": 0.98,
+      "recurrence_reasons": [
+        "2026年開催済み"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-04-25"
+      ],
+      "needs_review": false,
+      "public_note": "2026年開催終了: 2026-04-25"
+    },
+    {
+      "event_key": "浅草橋マロニエまつり盆踊り|ヒューリック浅草橋ビル前|2026-05-09",
+      "name": "浅草橋マロニエまつり盆踊り",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "date": "2026-05-09",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2026,
+      "months": [
+        5
+      ],
+      "public_status": "ended_2026",
+      "public_status_label": "開催終了",
+      "recurrence_label": "2026年開催終了",
+      "recurrence_score": 0.98,
+      "recurrence_reasons": [
+        "2026年開催済み"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-05-09"
+      ],
+      "needs_review": false,
+      "public_note": "2026年開催終了: 2026-05-09"
+    },
+    {
+      "event_key": "すみだ沖縄まつり|錦糸公園|2026-05-09",
+      "name": "すみだ沖縄まつり",
+      "venue": "錦糸公園",
+      "area": "墨田区",
+      "date": "2026-05-09",
+      "date_end": "2026-05-10",
+      "source_status": "終了",
+      "source_date_year": 2026,
+      "months": [
+        5
+      ],
+      "public_status": "ended_2026",
+      "public_status_label": "開催終了",
+      "recurrence_label": "2026年開催終了",
+      "recurrence_score": 0.98,
+      "recurrence_reasons": [
+        "2026年開催済み"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-05-09",
+        "2026-05-10"
+      ],
+      "needs_review": false,
+      "public_note": "2026年開催終了: 2026-05-09〜2026-05-10"
+    },
+    {
+      "event_key": "盆踊 〜BONDO〜|しながわ中央公園|2026-05-23",
+      "name": "盆踊 〜BONDO〜",
+      "venue": "しながわ中央公園",
+      "area": "品川区",
+      "date": "2026-05-23",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2026,
+      "months": [
+        5
+      ],
+      "public_status": "ended_2026",
+      "public_status_label": "開催終了",
+      "recurrence_label": "2026年開催終了",
+      "recurrence_score": 0.98,
+      "recurrence_reasons": [
+        "2026年開催済み"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-05-23"
+      ],
+      "needs_review": false,
+      "public_note": "2026年開催終了: 2026-05-23"
+    },
+    {
+      "event_key": "Min-Yoi's盆踊り|日本民謡会館|2026-05-31",
+      "name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "area": "品川区",
+      "date": "2026-05-31",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2026,
+      "months": [
+        5
+      ],
+      "public_status": "ended_2026",
+      "public_status_label": "開催終了",
+      "recurrence_label": "2026年開催終了",
+      "recurrence_score": 0.98,
+      "recurrence_reasons": [
+        "2026年開催済み"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-05-31"
+      ],
+      "needs_review": false,
+      "public_note": "2026年開催終了: 2026-05-31"
+    },
+    {
+      "event_key": "「葛飾菖蒲まつり 水元公園会場 民踊パレード 5月31日(日)。|水元公園内はなしょうぶ園口|2026-05-31",
+      "name": "「葛飾菖蒲まつり 水元公園会場 民踊パレード 5月31日(日)。",
+      "venue": "水元公園内はなしょうぶ園口",
+      "area": "葛飾区",
+      "date": "2026-05-31",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2026,
+      "months": [
+        5
+      ],
+      "public_status": "ended_2026",
+      "public_status_label": "開催終了",
+      "recurrence_label": "2026年開催終了",
+      "recurrence_score": 0.98,
+      "recurrence_reasons": [
+        "2026年開催済み"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-05-31"
+      ],
+      "needs_review": false,
+      "public_note": "2026年開催終了: 2026-05-31"
+    },
+    {
+      "event_key": "「第34回ふるさと千川 まつり」 6月5日(金)-6日(土) 17:30-(開場)。|ふるさと千川ひろば(千川小学校校庭跡地)|2026-06-05",
+      "name": "「第34回ふるさと千川 まつり」 6月5日(金)-6日(土) 17:30-(開場)。",
+      "venue": "ふるさと千川ひろば(千川小学校校庭跡地)",
+      "area": "豊島区",
+      "date": "2026-06-05",
+      "date_end": "2026-06-06",
+      "source_status": "終了",
+      "source_date_year": 2026,
+      "months": [
+        6
+      ],
+      "public_status": "ended_2026",
+      "public_status_label": "開催終了",
+      "recurrence_label": "2026年開催終了",
+      "recurrence_score": 0.98,
+      "recurrence_reasons": [
+        "2026年開催済み"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-06-05",
+        "2026-06-06"
+      ],
+      "needs_review": false,
+      "public_note": "2026年開催終了: 2026-06-05〜2026-06-06"
+    },
+    {
+      "event_key": "鮫洲入江広場公園 ゆり園盆踊り|鮫洲入江広場公園|2026-06-06",
+      "name": "鮫洲入江広場公園 ゆり園盆踊り",
+      "venue": "鮫洲入江広場公園",
+      "area": "品川区",
+      "date": "2026-06-06",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2026,
+      "months": [
+        6
+      ],
+      "public_status": "ended_2026",
+      "public_status_label": "開催終了",
+      "recurrence_label": "2026年開催終了",
+      "recurrence_score": 0.98,
+      "recurrence_reasons": [
+        "2026年開催済み"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-06-06"
+      ],
+      "needs_review": false,
+      "public_note": "2026年開催終了: 2026-06-06"
+    },
+    {
+      "event_key": "戸越宮前盆踊り|宮前小学校|2026-06-07",
+      "name": "戸越宮前盆踊り",
+      "venue": "宮前小学校",
+      "area": "品川区",
+      "date": "2026-06-07",
+      "date_end": null,
+      "source_status": "終了",
+      "source_date_year": 2026,
+      "months": [
+        6
+      ],
+      "public_status": "ended_2026",
+      "public_status_label": "開催終了",
+      "recurrence_label": "2026年開催終了",
+      "recurrence_score": 0.98,
+      "recurrence_reasons": [
+        "2026年開催済み"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-06-07"
+      ],
+      "needs_review": false,
+      "public_note": "2026年開催終了: 2026-06-07"
+    },
+    {
+      "event_key": "山王音頭と民踊大会|山王パークタワー公開空地|2026-06-13",
+      "name": "山王音頭と民踊大会",
+      "venue": "山王パークタワー公開空地",
+      "area": "千代田区",
+      "date": "2026-06-13",
+      "date_end": "2026-06-15",
+      "source_status": "確認済み",
+      "source_date_year": 2026,
+      "months": [
+        6
+      ],
+      "public_status": "ended_2026",
+      "public_status_label": "開催終了",
+      "recurrence_label": "2026年開催終了",
+      "recurrence_score": 0.98,
+      "recurrence_reasons": [
+        "2026年開催済み"
+      ],
+      "recurrence_cautions": [],
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-06-13",
+        "2026-06-15"
+      ],
+      "needs_review": false,
+      "public_note": "2026年開催終了: 2026-06-13〜2026-06-15"
+    }
+  ]
+}
