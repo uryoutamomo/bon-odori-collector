@@ -193,6 +193,56 @@ CURATED = [
         "month": "4月",
         "reason": "アースデイ東京公式ページでイマジン盆踊り部の出演を確認。イベント本体は2025-04-19〜20、盆踊り出演日は動画由来で4/19扱い。",
     },
+    {
+        "primary_url": "https://kumin.news/kita/articles/1057902",
+        "decision": "append_existing_event",
+        "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+        "date": "2025-04-19",
+        "date_end": "2025-04-19",
+        "month": "4月",
+        "detected_dates": ["2025-04-19"],
+        "video_count": 8,
+        "reason": "北区民ニュースで2025-04-19の飛鳥山公園盆踊り会記事を確認。YouTube複数動画の日付・会場・イベント名とも一致。",
+    },
+    {
+        "primary_url": "https://omoharareal.com/navi/news/detail/5157",
+        "decision": "append_existing_event",
+        "event_name": "謝恩納涼盆踊り大会（青山善光寺）",
+        "date": "2025-07-27",
+        "date_end": "2025-07-28",
+        "month": "7月",
+        "detected_dates": ["2025-07-28"],
+        "video_count": 12,
+        "reason": "表参道メディアOMOHARAREALで2025-07-27〜2025-07-28、青山善光寺境内開催を確認。YouTube検出日2025-07-28は開催範囲内。",
+    },
+    {
+        "primary_url": "https://bonmaru.zenmin-odori.jp/archives/419",
+        "decision": "append_existing_event",
+        "event_name": "青山熊野神社例大祭 奉納踊り",
+        "date": "2025-09-26",
+        "date_end": "2025-09-27",
+        "month": "9月",
+        "detected_dates": ["2025-09-26", "2025-09-27"],
+        "video_count": 47,
+        "reason": "盆まる記事の検出日2025-09-26/27と、9月最終金土の慣例が一致。青葉公園でのYouTube動画群とも一致。",
+    },
+    {
+        "primary_url": "https://tokyofesta.com/23ku/23185/",
+        "decision": "create_event",
+        "event_name": "GMOシブヤエンタメ祭 × JAME盆踊り",
+        "venue_name": "渋谷区立宮下公園 芝生ひろば",
+        "venue_aliases": ["MIYASHITA PARK4階 渋谷区立宮下公園 芝生ひろば", "宮下公園", "MIYASHITA PARK"],
+        "venue_area": "渋谷区",
+        "venue_address": "東京都渋谷区神宮前6-20-10",
+        "venue_access": "渋谷駅から徒歩約3分。明治神宮前〈原宿〉駅から徒歩圏内",
+        "venue_scale": "大",
+        "date": "2025-05-31",
+        "date_end": "2025-06-01",
+        "month": "5月,6月",
+        "detected_dates": ["2025-05-30", "2025-06-01"],
+        "video_count": 4,
+        "reason": "東京フェスタでGMOシブヤエンタメ祭 × JAME盆踊りの2025-05-31〜2025-06-01開催を確認。SHIBUYA MIYASHITA PARK BON DANCE 2025とは主催・性格が別。",
+    },
 ]
 
 
@@ -248,6 +298,11 @@ def date_prop(start, end=None):
     if end:
         value["end"] = end
     return {"date": value}
+
+
+def current_date(page):
+    value = ((page.get("properties") or {}).get("開催日") or {}).get("date")
+    return value or {}
 
 
 def event_status(date_value):
@@ -402,8 +457,19 @@ def build_results(api, validation, apply=False, only=None):
                     "duplicate_all_video_urls": all_duplicate,
                     "changed": new_detail != old_detail,
                 })
-                if apply and result["changed"]:
-                    api.update_page(event["id"], {"開催パターン詳細": rich_text_prop(new_detail)})
+                props = {}
+                if new_detail != old_detail:
+                    props["開催パターン詳細"] = rich_text_prop(new_detail)
+                existing_date = current_date(event)
+                if item.get("date") and not existing_date.get("start"):
+                    props["開催日"] = date_prop(item["date"], item.get("date_end"))
+                    props["状態"] = select_prop(event_status(item["date"]))
+                    result["changed"] = True
+                    result["date_updated"] = True
+                if item.get("primary_url"):
+                    props["情報源URL"] = {"url": item.get("source_url") or item["primary_url"]}
+                if apply and props:
+                    api.update_page(event["id"], props)
             results.append(result)
             continue
 
