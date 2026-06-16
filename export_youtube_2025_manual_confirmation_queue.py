@@ -9,6 +9,7 @@ from urllib.parse import urlparse
 
 SECOND_PASS = Path("data/youtube_2025_second_pass_event_groups.json")
 ACTIVE_REVIEW = Path("data/youtube_active_video_review.json")
+DECISIONS = Path("data/youtube_2025_manual_confirmation_decisions.json")
 OUT = Path("data/youtube_2025_manual_confirmation_queue.json")
 MD_OUT = Path("data/youtube_2025_manual_confirmation_queue.md")
 
@@ -140,10 +141,32 @@ def official_confirmation_rows(active_review):
     return rows
 
 
-def build_queue(second_pass_path=SECOND_PASS, active_review_path=ACTIVE_REVIEW):
+def decision_key(row):
+    if row.get("queue") == "remaining_backfill":
+        return f"{row.get('queue')}|{row.get('category')}|{row.get('event_id')}|{row.get('event_name')}"
+    return f"{row.get('queue')}|{row.get('category')}|{row.get('primary_url') or ''}"
+
+
+def skipped_by_decision(rows, decisions):
+    decision_rows = decisions.get("rows") or []
+    by_key = {row.get("key"): row for row in decision_rows if row.get("key")}
+    kept = []
+    skipped = []
+    for row in rows:
+        decision = by_key.get(decision_key(row))
+        if decision and decision.get("action") in {"skip_registered", "exclude_out_of_scope"}:
+            skipped.append({**row, "decision": decision})
+        else:
+            kept.append(row)
+    return kept, skipped
+
+
+def build_queue(second_pass_path=SECOND_PASS, active_review_path=ACTIVE_REVIEW, decisions_path=DECISIONS):
     second_pass = load_json(second_pass_path, {"groups": []})
     active_review = load_json(active_review_path, {"rows": []})
+    decisions = load_json(decisions_path, {"rows": []})
     rows = remaining_backfill_rows(second_pass) + official_confirmation_rows(active_review)
+    rows, skipped = skipped_by_decision(rows, decisions)
     rows.sort(key=lambda row: ({"high": 0, "normal": 1, "low": 2}.get(row["priority"], 9), row["queue"], -row["video_count"]))
     counts = defaultdict(lambda: {"items": 0, "videos": 0})
     for row in rows:
@@ -153,11 +176,14 @@ def build_queue(second_pass_path=SECOND_PASS, active_review_path=ACTIVE_REVIEW):
     return {
         "generated_by": "export_youtube_2025_manual_confirmation_queue.py",
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "sources": [str(second_pass_path), str(active_review_path)],
+        "sources": [str(second_pass_path), str(active_review_path), str(decisions_path)],
         "item_count": len(rows),
         "video_count": sum(row.get("video_count") or 0 for row in rows),
+        "skipped_count": len(skipped),
+        "skipped_video_count": sum(row.get("video_count") or 0 for row in skipped),
         "counts": [{"bucket": key, **value} for key, value in sorted(counts.items())],
         "rows": rows,
+        "skipped": skipped,
     }
 
 
@@ -168,6 +194,7 @@ def render_markdown(queue):
         f"- 生成: {queue['generated_at']}",
         f"- items: {queue['item_count']}",
         f"- videos: {queue['video_count']}",
+        f"- skipped: {queue.get('skipped_count', 0)} items / {queue.get('skipped_video_count', 0)} videos",
         "",
         "## counts",
         "",

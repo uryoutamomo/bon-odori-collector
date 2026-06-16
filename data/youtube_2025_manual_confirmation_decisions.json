@@ -1,0 +1,32 @@
+{
+  "generated_by": "おと（Codex）",
+  "generated_at": "2026-06-16",
+  "purpose": "Manual decisions for YouTube 2025 confirmation queue rows that should not reappear in the open review queue.",
+  "rows": [
+    {
+      "key": "remaining_backfill|date_backfill_candidate_single_date|3788be04-e762-8171-beaf-fbf4a04104bf|飛鳥山公園盆踊り会（有志サークル）",
+      "action": "skip_registered",
+      "reason": "2025-04-19開催としてNotionへ反映済み。北区民ニュースとYouTube複数動画で確認済み。"
+    },
+    {
+      "key": "remaining_backfill|date_backfill_candidate_single_date|37b8be04-e762-8126-8174-f8371f43e2c1|謝恩納涼盆踊り大会（青山善光寺）",
+      "action": "skip_registered",
+      "reason": "2025-07-27〜2025-07-28開催としてNotionへ反映済み。OMOHARAREALとYouTube動画で確認済み。"
+    },
+    {
+      "key": "remaining_backfill|date_backfill_candidate_multi_date|37b8be04-e762-814a-a9af-c9d8490a0a55|青山熊野神社例大祭 奉納踊り",
+      "action": "skip_registered",
+      "reason": "2025-09-26〜2025-09-27開催としてNotionへ反映済み。盆まる記事と青葉公園のYouTube動画群で確認済み。"
+    },
+    {
+      "key": "remaining_backfill|date_backfill_candidate_multi_date|3778be04-e762-81d5-b02b-eb34684595ae|SHIBUYA MIYASHITA PARK BON DANCE 2026",
+      "action": "skip_registered",
+      "reason": "2025-05/06のGMOシブヤエンタメ祭 × JAME盆踊りと、2025-09のSHIBUYA MIYASHITA PARK BON DANCE 2025へ分離反映済み。2026イベントへの日付補正には使わない。"
+    },
+    {
+      "key": "remaining_backfill|date_backfill_candidate_single_date|3788be04-e762-8127-a6f0-d54bffc71fd5|六本木天祖神社（龍土神明宮）例大祭 盆踊り",
+      "action": "exclude_out_of_scope",
+      "reason": "動画は六本木アートナイト2025のTAGO出演演目で、六本木天祖神社例大祭の盆踊り開催証拠ではないため除外。"
+    }
+  ]
+}
