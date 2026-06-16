@@ -1,21 +1,16 @@
 {
   "generated_by": "export_youtube_2025_manual_confirmation_queue.py",
-  "generated_at": "2026-06-16T10:27:53.460865+00:00",
+  "generated_at": "2026-06-16T11:46:44.046943+00:00",
   "sources": [
     "data/youtube_2025_second_pass_event_groups.json",
     "data/youtube_active_video_review.json",
     "data/youtube_2025_manual_confirmation_decisions.json"
   ],
-  "item_count": 36,
-  "video_count": 253,
-  "skipped_count": 5,
-  "skipped_video_count": 87,
+  "item_count": 26,
+  "video_count": 208,
+  "skipped_count": 15,
+  "skipped_video_count": 132,
   "counts": [
-    {
-      "bucket": "needs_official_confirmation:official_url_candidate",
-      "items": 10,
-      "videos": 45
-    },
     {
       "bucket": "needs_official_confirmation:social_or_map_only",
       "items": 20,
@@ -33,609 +28,6 @@
     }
   ],
   "rows": [
-    {
-      "queue": "needs_official_confirmation",
-      "priority": "high",
-      "category": "official_url_candidate",
-      "primary_url": "https://www.nouryo-matsuri.com/pages/6314608/page_202208061239",
-      "primary_domain": "nouryo-matsuri.com",
-      "video_count": 11,
-      "detected_dates": [
-        "2025-08-08"
-      ],
-      "titles": [
-        "【神田明神⛩アニソン盆踊り🏮納涼祭り2025】（第1部 - 1）👘Tokyo Bon Dance🏮2025.8.8 @神田明神 Kanda Myojin Shrine",
-        "【神田明神⛩アニソン盆踊り🏮納涼祭り2025】（第1部 - 2）👘Tokyo Bon Dance🏮2025.8.8 @神田明神 Kanda Myojin Shrine",
-        "【神田明神⛩アニソン盆踊り🏮納涼祭り2025】（第2部 - 1）👘Tokyo Bon Dance🏮2025.8.8 @神田明神 Kanda Myojin Shrine",
-        "【神田明神⛩アニソン盆踊り🏮納涼祭り2025】（第2部 - 2）👘Tokyo Bon Dance🏮2025.8.8 @神田明神 Kanda Myojin Shrine",
-        "【神田明神⛩アニソン盆踊り🏮納涼祭り2025】（第2部 - 3）👘Tokyo Bon Dance🏮2025.8.8 @神田明神 Kanda Myojin Shrine"
-      ],
-      "videos": [
-        {
-          "title": "【神田明神⛩アニソン盆踊り🏮納涼祭り2025】（第1部 - 1）👘Tokyo Bon Dance🏮2025.8.8 @神田明神 Kanda Myojin Shrine",
-          "video_url": "https://www.youtube.com/watch?v=ymzegsNDqfM",
-          "official_urls": [
-            "https://www.nouryo-matsuri.com/pages/6314608/page_202208061239"
-          ],
-          "detected_event_date": "2025-08-08",
-          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
-        },
-        {
-          "title": "【神田明神⛩アニソン盆踊り🏮納涼祭り2025】（第1部 - 2）👘Tokyo Bon Dance🏮2025.8.8 @神田明神 Kanda Myojin Shrine",
-          "video_url": "https://www.youtube.com/watch?v=T4ur74p7f5A",
-          "official_urls": [
-            "https://www.nouryo-matsuri.com/pages/6314608/page_202208061239"
-          ],
-          "detected_event_date": "2025-08-08",
-          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
-        },
-        {
-          "title": "【神田明神⛩アニソン盆踊り🏮納涼祭り2025】（第2部 - 1）👘Tokyo Bon Dance🏮2025.8.8 @神田明神 Kanda Myojin Shrine",
-          "video_url": "https://www.youtube.com/watch?v=CbndSYR6qEM",
-          "official_urls": [
-            "https://www.nouryo-matsuri.com/pages/6314608/page_202208061239"
-          ],
-          "detected_event_date": "2025-08-08",
-          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
-        },
-        {
-          "title": "【神田明神⛩アニソン盆踊り🏮納涼祭り2025】（第2部 - 2）👘Tokyo Bon Dance🏮2025.8.8 @神田明神 Kanda Myojin Shrine",
-          "video_url": "https://www.youtube.com/watch?v=_4NLh_EX-XE",
-          "official_urls": [
-            "https://www.nouryo-matsuri.com/pages/6314608/page_202208061239"
-          ],
-          "detected_event_date": "2025-08-08",
-          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
-        },
-        {
-          "title": "【神田明神⛩アニソン盆踊り🏮納涼祭り2025】（第2部 - 3）👘Tokyo Bon Dance🏮2025.8.8 @神田明神 Kanda Myojin Shrine",
-          "video_url": "https://www.youtube.com/watch?v=4pQDvVwQd3g",
-          "official_urls": [
-            "https://www.nouryo-matsuri.com/pages/6314608/page_202208061239"
-          ],
-          "detected_event_date": "2025-08-08",
-          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
-        },
-        {
-          "title": "『クックロビン音頭 Cock Robin Ondo』【神田明神納涼祭り2025🏮アニソン盆踊り】🏮Tokyo Bon Dance👘2025.8.8 @神田明神 Kanda Myojin Shrine",
-          "video_url": "https://www.youtube.com/watch?v=TQG9UQzN9-8",
-          "official_urls": [
-            "https://www.nouryo-matsuri.com/pages/6314608/page_202208061239"
-          ],
-          "detected_event_date": "2025-08-08",
-          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
-        },
-        {
-          "title": "『おジャ魔女カーニバル』【神田明神納涼祭り2025🏮アニソン盆踊り】🏮Tokyo Bon Dance👘2025.8.8 @神田明神 Kanda Myojin Shrine",
-          "video_url": "https://www.youtube.com/watch?v=qS8OfeKRTjU",
-          "official_urls": [
-            "https://www.nouryo-matsuri.com/pages/6314608/page_202208061239"
-          ],
-          "detected_event_date": "2025-08-08",
-          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
-        },
-        {
-          "title": "『邪神ちゃん音頭／大森日雅』【神田明神納涼祭り2025🏮アニソン盆踊り】🏮Tokyo Bon Dance👘2025.8.8 @神田明神 Kanda Myojin Shrine",
-          "video_url": "https://www.youtube.com/watch?v=Om01Om3MTUU",
-          "official_urls": [
-            "https://www.nouryo-matsuri.com/pages/6314608/page_202208061239"
-          ],
-          "detected_event_date": "2025-08-08",
-          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
-        },
-        {
-          "title": "初披露‼『ほっぺちゃん音頭／小見川千明』【神田明神納涼祭り2025🏮アニソン盆踊り】🏮Tokyo Bon Dance👘2025.8.8 @神田明神 Kanda Myojin Shrine",
-          "video_url": "https://www.youtube.com/watch?v=W6i6sxSXQ88",
-          "official_urls": [
-            "https://www.nouryo-matsuri.com/pages/6314608/page_202208061239"
-          ],
-          "detected_event_date": "2025-08-08",
-          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
-        },
-        {
-          "title": "初披露‼『オロナミンC  元気ハツラツ音頭』【神田明神納涼祭り2025🏮アニソン盆踊り】🏮Tokyo Bon Dance👘2025.8.8 @神田明神 Kanda Myojin Shrine",
-          "video_url": "https://www.youtube.com/watch?v=PrxwlzLCQ3U",
-          "official_urls": [
-            "https://www.nouryo-matsuri.com/pages/6314608/page_202208061239"
-          ],
-          "detected_event_date": "2025-08-08",
-          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
-        },
-        {
-          "title": "『神田明神音頭 ／小坂井祐莉絵』【神田明神納涼祭り2025🏮アニソン盆踊り】🏮Tokyo Bon Dance👘2025.8.8 @神田明神 Kanda Myojin Shrine",
-          "video_url": "https://www.youtube.com/watch?v=TOjT2fBLq64",
-          "official_urls": [
-            "https://www.nouryo-matsuri.com/pages/6314608/page_202208061239"
-          ],
-          "detected_event_date": "2025-08-08",
-          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
-        }
-      ]
-    },
-    {
-      "queue": "needs_official_confirmation",
-      "priority": "high",
-      "category": "official_url_candidate",
-      "primary_url": "https://www.roppongihills.com/events/2025/08/0478.html",
-      "primary_domain": "roppongihills.com",
-      "video_count": 10,
-      "detected_dates": [
-        "2025-08-23",
-        "2025-08-24"
-      ],
-      "titles": [
-        "【六本木ヒルズ盆踊り 2025（DAY1）】「日本の芸能：『加賀万歳』金沢市指無形民俗文化財 」2025.8.23 @六本木ヒルズアリーナ Roppongi Hills Arena",
-        "【六本木ヒルズ盆踊り 2025（DAY1）】「六本人音頭～花火音頭」六本木じろう with 里野鈴妹 ＆ 増田吏桜🎤2025.8.23 @六本木ヒルズアリーナ",
-        "【六本木ヒルズ盆踊り 2025（DAY1）】「六本木音頭～炭坑節」2025.8.23 @六本木ヒルズアリーナ",
-        "【六本木ヒルズ盆踊り 2025（DAY1）】「河内おとこ節～夏祭り」　里野鈴妹 ＆ 増田吏桜（さとのすずめ ＆ ますだりお）🎤2025.8.23 @六本木ヒルズアリーナ",
-        "【六本木ヒルズ盆踊り 2025（DAY1）】「ドラえもん音頭 Doraemon ondo」 2025.8.23 @六本木ヒルズアリーナ"
-      ],
-      "videos": [
-        {
-          "title": "【六本木ヒルズ盆踊り 2025（DAY1）】「日本の芸能：『加賀万歳』金沢市指無形民俗文化財 」2025.8.23 @六本木ヒルズアリーナ Roppongi Hills Arena",
-          "video_url": "https://www.youtube.com/watch?v=Iuw5CwPNUxY",
-          "official_urls": [
-            "https://www.roppongihills.com/events/2025/08/0478.html"
-          ],
-          "detected_event_date": "2025-08-23",
-          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
-        },
-        {
-          "title": "【六本木ヒルズ盆踊り 2025（DAY1）】「六本人音頭～花火音頭」六本木じろう with 里野鈴妹 ＆ 増田吏桜🎤2025.8.23 @六本木ヒルズアリーナ",
-          "video_url": "https://www.youtube.com/watch?v=O2_FxIRlZA8",
-          "official_urls": [
-            "https://www.roppongihills.com/events/2025/08/0478.html"
-          ],
-          "detected_event_date": "2025-08-23",
-          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
-        },
-        {
-          "title": "【六本木ヒルズ盆踊り 2025（DAY1）】「六本木音頭～炭坑節」2025.8.23 @六本木ヒルズアリーナ",
-          "video_url": "https://www.youtube.com/watch?v=7E8P3YCST2Q",
-          "official_urls": [
-            "https://www.roppongihills.com/events/2025/08/0478.html"
-          ],
-          "detected_event_date": "2025-08-23",
-          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
-        },
-        {
-          "title": "【六本木ヒルズ盆踊り 2025（DAY1）】「河内おとこ節～夏祭り」　里野鈴妹 ＆ 増田吏桜（さとのすずめ ＆ ますだりお）🎤2025.8.23 @六本木ヒルズアリーナ",
-          "video_url": "https://www.youtube.com/watch?v=ixU_B6mszvE",
-          "official_urls": [
-            "https://www.roppongihills.com/events/2025/08/0478.html"
-          ],
-          "detected_event_date": "2025-08-23",
-          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
-        },
-        {
-          "title": "【六本木ヒルズ盆踊り 2025（DAY1）】「ドラえもん音頭 Doraemon ondo」 2025.8.23 @六本木ヒルズアリーナ",
-          "video_url": "https://www.youtube.com/watch?v=JeYPdZc9rsA",
-          "official_urls": [
-            "https://www.roppongihills.com/events/2025/08/0478.html"
-          ],
-          "detected_event_date": "2025-08-23",
-          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
-        },
-        {
-          "title": "【六本木ヒルズ盆踊り 2025（DAY1）】「東京音頭～炭坑節」六本木じろう with 里野鈴妹 ＆ 増田吏桜🎤 2025.8.23 @六本木ヒルズアリーナ",
-          "video_url": "https://www.youtube.com/watch?v=qvMiiQScrYU",
-          "official_urls": [
-            "https://www.roppongihills.com/events/2025/08/0478.html"
-          ],
-          "detected_event_date": "2025-08-23",
-          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
-        },
-        {
-          "title": "【六本木ヒルズ盆踊り 2025（DAY1）】「六本人音頭（アンコール）」六本木じろう with 里野鈴妹 ＆ 増田吏桜🎤 2025.8.23 @六本木ヒルズアリーナ",
-          "video_url": "https://www.youtube.com/watch?v=EE1JlcxJbLw",
-          "official_urls": [
-            "https://www.roppongihills.com/events/2025/08/0478.html"
-          ],
-          "detected_event_date": "2025-08-23",
-          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
-        },
-        {
-          "title": "【六本木ヒルズ盆踊り 2025（DAY2）】日本の芸能：「半浦の秋祭り／半浦青年団（石川県七尾市能登島半浦町）」 2025.8.24 @六本木ヒルズアリーナ",
-          "video_url": "https://www.youtube.com/watch?v=xu4VXlbfrJU",
-          "official_urls": [
-            "https://www.roppongihills.com/events/2025/08/0478.html"
-          ],
-          "detected_event_date": "2025-08-24",
-          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
-        },
-        {
-          "title": "【六本木ヒルズ盆踊り 2025（DAY2）】「ドラえもん音頭 Doraemon ondo」 2025.8.24 @六本木ヒルズアリーナ",
-          "video_url": "https://www.youtube.com/watch?v=AViOtdpRo7w",
-          "official_urls": [
-            "https://www.roppongihills.com/events/2025/08/0478.html"
-          ],
-          "detected_event_date": "2025-08-24",
-          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
-        },
-        {
-          "title": "【六本木ヒルズ盆踊り 2025（DAY2）】「六本人音頭（アンコール）」六本木じろう with 里野鈴妹 ＆ 増田吏桜🎤 2025.8.24 @六本木ヒルズアリーナ",
-          "video_url": "https://www.youtube.com/watch?v=uv6Tn8WT_Ck",
-          "official_urls": [
-            "https://www.roppongihills.com/events/2025/08/0478.html"
-          ],
-          "detected_event_date": "2025-08-23",
-          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
-        }
-      ]
-    },
-    {
-      "queue": "needs_official_confirmation",
-      "priority": "high",
-      "category": "official_url_candidate",
-      "primary_url": "https://www.tenkamatsuri.jp/minyo/",
-      "primary_domain": "tenkamatsuri.jp",
-      "video_count": 6,
-      "detected_dates": [
-        "2025-06-13"
-      ],
-      "titles": [
-        "赤坂・日枝神社🏮盆踊り(1/6)「白浜音頭～東京音頭～ドンパン節」Tokyo Bon Dance👘2025.6.13 @山王パークタワー公開空地",
-        "赤坂・日枝神社🏮盆踊り(2/6)「炭坑節～大東京音頭～相馬盆唄」Tokyo Bon Dance👘2025.6.13 @山王パークタワー公開空地",
-        "赤坂・日枝神社🏮盆踊り(3/6)「八木節～花笠踊り～おこさ節～相馬甚句」Tokyo Bon Dance👘2025.6.13 @山王パークタワー公開空地",
-        "赤坂・日枝神社🏮盆踊り(4/6)「東京おどり～水戸黄門おどり～ニッポン・ワッショイ」Tokyo Bon Dance👘2025.6.13 @山王パークタワー公開空地",
-        "赤坂・日枝神社🏮盆踊り(5/6)「山王音頭～千代田踊り～ダンシング・ヒーロー」Tokyo Bon Dance👘2025.6.13 @山王パークタワー公開空地"
-      ],
-      "videos": [
-        {
-          "title": "赤坂・日枝神社🏮盆踊り(1/6)「白浜音頭～東京音頭～ドンパン節」Tokyo Bon Dance👘2025.6.13 @山王パークタワー公開空地",
-          "video_url": "https://www.youtube.com/watch?v=3gmg_bltmu0",
-          "official_urls": [
-            "https://www.tenkamatsuri.jp/minyo/"
-          ],
-          "detected_event_date": "2025-06-13",
-          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
-        },
-        {
-          "title": "赤坂・日枝神社🏮盆踊り(2/6)「炭坑節～大東京音頭～相馬盆唄」Tokyo Bon Dance👘2025.6.13 @山王パークタワー公開空地",
-          "video_url": "https://www.youtube.com/watch?v=RLOHnnauvS8",
-          "official_urls": [
-            "https://www.tenkamatsuri.jp/minyo/"
-          ],
-          "detected_event_date": "2025-06-13",
-          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
-        },
-        {
-          "title": "赤坂・日枝神社🏮盆踊り(3/6)「八木節～花笠踊り～おこさ節～相馬甚句」Tokyo Bon Dance👘2025.6.13 @山王パークタワー公開空地",
-          "video_url": "https://www.youtube.com/watch?v=wvlo7_K2B0A",
-          "official_urls": [
-            "https://www.tenkamatsuri.jp/minyo/"
-          ],
-          "detected_event_date": "2025-06-13",
-          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
-        },
-        {
-          "title": "赤坂・日枝神社🏮盆踊り(4/6)「東京おどり～水戸黄門おどり～ニッポン・ワッショイ」Tokyo Bon Dance👘2025.6.13 @山王パークタワー公開空地",
-          "video_url": "https://www.youtube.com/watch?v=hrKOXrI7Zcc",
-          "official_urls": [
-            "https://www.tenkamatsuri.jp/minyo/"
-          ],
-          "detected_event_date": "2025-06-13",
-          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
-        },
-        {
-          "title": "赤坂・日枝神社🏮盆踊り(5/6)「山王音頭～千代田踊り～ダンシング・ヒーロー」Tokyo Bon Dance👘2025.6.13 @山王パークタワー公開空地",
-          "video_url": "https://www.youtube.com/watch?v=ed5hv9b8cNg",
-          "official_urls": [
-            "https://www.tenkamatsuri.jp/minyo/"
-          ],
-          "detected_event_date": "2025-06-13",
-          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
-        },
-        {
-          "title": "赤坂・日枝神社🏮盆踊り(6/6)「かがやき音頭～ドダレバチ（津軽甚句）～盆ギリ恋歌～閉めの太鼓」Tokyo Bon Dance👘2025.6.13 @山王パークタワー公開空地",
-          "video_url": "https://www.youtube.com/watch?v=qWPAiHfatcI",
-          "official_urls": [
-            "https://www.tenkamatsuri.jp/minyo/"
-          ],
-          "detected_event_date": "2025-06-13",
-          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
-        }
-      ]
-    },
-    {
-      "queue": "needs_official_confirmation",
-      "priority": "high",
-      "category": "official_url_candidate",
-      "primary_url": "https://tsukijihongwanji.jp/news/10279/",
-      "primary_domain": "tsukijihongwanji.jp",
-      "video_count": 6,
-      "detected_dates": [
-        "2025-07-30"
-      ],
-      "titles": [
-        "【築地本願寺納涼盆踊り大会 2025】『築地音頭～これがお江戸の盆ダンス～あさりときりみのおだいどこ音頭～ホームラン音頭』🏮Tokyo Bon Dance👘2025.7.30 @築地本願寺",
-        "【築地本願寺納涼盆踊り大会 2025】『あやめ踊り～日本晴れだよ～おけさ唄えば～炭坑節』🏮Tokyo Bon Dance👘2025.7.30 @築地本願寺 Tsukiji Hongawanji",
-        "【築地本願寺納涼盆踊り大会 2025】『和太鼓演奏：奉納組太鼓🥁大江戸助六太鼓 - 助六四段撃ち』🏮Japanese drum👘2025.7.30 @築地本願寺 Tsukiji Hongawanji",
-        "【築地本願寺納涼盆踊り大会 2025】『大江戸助六音頭～斎太郎節～法輪音頭』🏮Tokyo Bon Dance👘2025.7.30 @築地本願寺 Tsukiji Hongawanji",
-        "【築地本願寺納涼盆踊り大会 2025】『ゆかた音頭～おこさ節』🏮Tokyo Bon Dance👘2025.7.30 @築地本願寺 Tsukiji Hongawanji"
-      ],
-      "videos": [
-        {
-          "title": "【築地本願寺納涼盆踊り大会 2025】『築地音頭～これがお江戸の盆ダンス～あさりときりみのおだいどこ音頭～ホームラン音頭』🏮Tokyo Bon Dance👘2025.7.30 @築地本願寺",
-          "video_url": "https://www.youtube.com/watch?v=mnqGmIwHq7A",
-          "official_urls": [
-            "https://tsukijihongwanji.jp/news/10279/"
-          ],
-          "detected_event_date": "2025-07-30",
-          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
-        },
-        {
-          "title": "【築地本願寺納涼盆踊り大会 2025】『あやめ踊り～日本晴れだよ～おけさ唄えば～炭坑節』🏮Tokyo Bon Dance👘2025.7.30 @築地本願寺 Tsukiji Hongawanji",
-          "video_url": "https://www.youtube.com/watch?v=W5IMViZwKTY",
-          "official_urls": [
-            "https://tsukijihongwanji.jp/news/10279/"
-          ],
-          "detected_event_date": "2025-07-30",
-          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
-        },
-        {
-          "title": "【築地本願寺納涼盆踊り大会 2025】『和太鼓演奏：奉納組太鼓🥁大江戸助六太鼓 - 助六四段撃ち』🏮Japanese drum👘2025.7.30 @築地本願寺 Tsukiji Hongawanji",
-          "video_url": "https://www.youtube.com/watch?v=Q8L7IDaQ_lI",
-          "official_urls": [
-            "https://tsukijihongwanji.jp/news/10279/"
-          ],
-          "detected_event_date": "2025-07-30",
-          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
-        },
-        {
-          "title": "【築地本願寺納涼盆踊り大会 2025】『大江戸助六音頭～斎太郎節～法輪音頭』🏮Tokyo Bon Dance👘2025.7.30 @築地本願寺 Tsukiji Hongawanji",
-          "video_url": "https://www.youtube.com/watch?v=BMzHeO-6XVw",
-          "official_urls": [
-            "https://tsukijihongwanji.jp/news/10279/"
-          ],
-          "detected_event_date": "2025-07-30",
-          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
-        },
-        {
-          "title": "【築地本願寺納涼盆踊り大会 2025】『ゆかた音頭～おこさ節』🏮Tokyo Bon Dance👘2025.7.30 @築地本願寺 Tsukiji Hongawanji",
-          "video_url": "https://www.youtube.com/watch?v=2QvUjfmcL94",
-          "official_urls": [
-            "https://tsukijihongwanji.jp/news/10279/"
-          ],
-          "detected_event_date": "2025-07-30",
-          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
-        },
-        {
-          "title": "【築地本願寺納涼盆踊り大会 2025】『東京音頭～築地音頭』🏮Tokyo Bon Dance👘2025.7.30 @築地本願寺 Tsukiji Hongawanji",
-          "video_url": "https://www.youtube.com/watch?v=zFIi7VagkUQ",
-          "official_urls": [
-            "https://tsukijihongwanji.jp/news/10279/"
-          ],
-          "detected_event_date": "2025-07-30",
-          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
-        }
-      ]
-    },
-    {
-      "queue": "needs_official_confirmation",
-      "priority": "high",
-      "category": "official_url_candidate",
-      "primary_url": "https://www.marunouchi.com/pickup/event/6763/",
-      "primary_domain": "marunouchi.com",
-      "video_count": 4,
-      "detected_dates": [
-        "2025-07-25",
-        "2025-07-26"
-      ],
-      "titles": [
-        "Marunouchi Bon Odori Dance festival PART 1  /  丸の内盆踊り 2025 パート１",
-        "Marunouchi Bon Odori Dance festival PART 2  /  丸の内盆踊り 2025 パート2",
-        "Marunouchi Bon Odori Dance festival DJ J-POP Time  /  丸の内盆踊り 2025 DJ J-POP Time",
-        "【東京丸の内盆踊り2025】『ドンパン節～毬と殿様～にっぽんチャチャチャ～民謡お国巡り音頭～松の木小唄～龍馬おどり』 👘Tokyo Bon Dance 🏮2025.7.25 @東京駅丸の内口・行幸通り"
-      ],
-      "videos": [
-        {
-          "title": "Marunouchi Bon Odori Dance festival PART 1  /  丸の内盆踊り 2025 パート１",
-          "video_url": "https://www.youtube.com/watch?v=seY6P_Ngq4E",
-          "official_urls": [
-            "https://www.marunouchi.com/pickup/event/6763/",
-            "https://www.instagram.com/expjapanzen/",
-            "https://www.ebay.com/usr/exploringjapanzen"
-          ],
-          "detected_event_date": "2025-07-26",
-          "channel_id": "UCSHoRoW171uEytgOcKkKU2Q"
-        },
-        {
-          "title": "Marunouchi Bon Odori Dance festival PART 2  /  丸の内盆踊り 2025 パート2",
-          "video_url": "https://www.youtube.com/watch?v=wsnxABvy3BM",
-          "official_urls": [
-            "https://www.marunouchi.com/pickup/event/6763/",
-            "https://www.instagram.com/expjapanzen/",
-            "https://www.ebay.com/usr/exploringjapanzen"
-          ],
-          "detected_event_date": "2025-07-26",
-          "channel_id": "UCSHoRoW171uEytgOcKkKU2Q"
-        },
-        {
-          "title": "Marunouchi Bon Odori Dance festival DJ J-POP Time  /  丸の内盆踊り 2025 DJ J-POP Time",
-          "video_url": "https://www.youtube.com/watch?v=Otv4gDwv8io",
-          "official_urls": [
-            "https://www.marunouchi.com/pickup/event/6763/",
-            "https://www.instagram.com/expjapanzen/",
-            "https://www.ebay.com/usr/exploringjapanzen"
-          ],
-          "detected_event_date": "2025-07-26",
-          "channel_id": "UCSHoRoW171uEytgOcKkKU2Q"
-        },
-        {
-          "title": "【東京丸の内盆踊り2025】『ドンパン節～毬と殿様～にっぽんチャチャチャ～民謡お国巡り音頭～松の木小唄～龍馬おどり』 👘Tokyo Bon Dance 🏮2025.7.25 @東京駅丸の内口・行幸通り",
-          "video_url": "https://www.youtube.com/watch?v=Ig4Ocvre8Y0",
-          "official_urls": [
-            "https://www.marunouchi.com/pickup/event/6763/"
-          ],
-          "detected_event_date": "2025-07-25",
-          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
-        }
-      ]
-    },
-    {
-      "queue": "needs_official_confirmation",
-      "priority": "high",
-      "category": "official_url_candidate",
-      "primary_url": "https://ginbura.ginza.jp/",
-      "primary_domain": "ginbura.ginza.jp",
-      "video_count": 4,
-      "detected_dates": [
-        "2025-08-02"
-      ],
-      "titles": [
-        "【 大銀座盆踊り👘ゆかたで銀ぶら2025】『炭坑節～東京音頭～バハマ・ママ～ダンシング・ヒーロー』（1/4）Tokyo Bon Dance🏮2025.8.2 @銀座通り 3丁目交差点",
-        "【 大銀座盆踊り👘ゆかたで銀ぶら2025】『銀座カンカン娘～銀座音頭～銀座ときめき音頭～これがお江戸の盆ダンス』（2/4）Tokyo Bon Dance🏮2025.8.2 @銀座通り 3丁目交差点",
-        "【 大銀座盆踊り👘ゆかたで銀ぶら2025】『炭坑節～東京音頭～バハマ・ママ～ダンシング・ヒーロー』（3/4）Tokyo Bon Dance🏮2025.8.2  @銀座通り 3丁目交差点",
-        "【 大銀座盆踊り👘ゆかたで銀ぶら2025】『銀座カンカン娘～銀座音頭～これがお江戸の盆ダンス～銀座ときめき音頭』（4/4）Tokyo Bon Dance🏮2025.8.2 @銀座通り 3丁目交差点"
-      ],
-      "videos": [
-        {
-          "title": "【 大銀座盆踊り👘ゆかたで銀ぶら2025】『炭坑節～東京音頭～バハマ・ママ～ダンシング・ヒーロー』（1/4）Tokyo Bon Dance🏮2025.8.2 @銀座通り 3丁目交差点",
-          "video_url": "https://www.youtube.com/watch?v=bm87JsNkhJY",
-          "official_urls": [
-            "https://ginbura.ginza.jp/"
-          ],
-          "detected_event_date": "2025-08-02",
-          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
-        },
-        {
-          "title": "【 大銀座盆踊り👘ゆかたで銀ぶら2025】『銀座カンカン娘～銀座音頭～銀座ときめき音頭～これがお江戸の盆ダンス』（2/4）Tokyo Bon Dance🏮2025.8.2 @銀座通り 3丁目交差点",
-          "video_url": "https://www.youtube.com/watch?v=QHWd7ISJouo",
-          "official_urls": [
-            "https://ginbura.ginza.jp/"
-          ],
-          "detected_event_date": "2025-08-02",
-          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
-        },
-        {
-          "title": "【 大銀座盆踊り👘ゆかたで銀ぶら2025】『炭坑節～東京音頭～バハマ・ママ～ダンシング・ヒーロー』（3/4）Tokyo Bon Dance🏮2025.8.2  @銀座通り 3丁目交差点",
-          "video_url": "https://www.youtube.com/watch?v=RS78coFRx2A",
-          "official_urls": [
-            "https://ginbura.ginza.jp/"
-          ],
-          "detected_event_date": "2025-08-02",
-          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
-        },
-        {
-          "title": "【 大銀座盆踊り👘ゆかたで銀ぶら2025】『銀座カンカン娘～銀座音頭～これがお江戸の盆ダンス～銀座ときめき音頭』（4/4）Tokyo Bon Dance🏮2025.8.2 @銀座通り 3丁目交差点",
-          "video_url": "https://www.youtube.com/watch?v=KHsVP9vhEmI",
-          "official_urls": [
-            "https://ginbura.ginza.jp/"
-          ],
-          "detected_event_date": "2025-08-02",
-          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
-        }
-      ]
-    },
-    {
-      "queue": "needs_official_confirmation",
-      "priority": "high",
-      "category": "official_url_candidate",
-      "primary_url": "https://www.jrtk.jp/edonoren/",
-      "primary_domain": "jrtk.jp",
-      "video_count": 1,
-      "detected_dates": [
-        "2025-07-13"
-      ],
-      "titles": [
-        "The Yokai Bon Dance / 妖怪盆踊り 2005 at 両国 Edo Noren"
-      ],
-      "videos": [
-        {
-          "title": "The Yokai Bon Dance / 妖怪盆踊り 2005 at 両国 Edo Noren",
-          "video_url": "https://www.youtube.com/watch?v=E9Uh-Iwfq4s",
-          "official_urls": [
-            "https://www.jrtk.jp/edonoren/",
-            "https://prtimes.jp/main/html/rd/p/000000524.000015279.html",
-            "https://www.instagram.com/expjapanzen/",
-            "https://www.ebay.com/usr/exploringjapanzen"
-          ],
-          "detected_event_date": "2025-07-13",
-          "channel_id": "UCSHoRoW171uEytgOcKkKU2Q"
-        }
-      ]
-    },
-    {
-      "queue": "needs_official_confirmation",
-      "priority": "high",
-      "category": "official_url_candidate",
-      "primary_url": "https://www.jiyugaoka-abc.com/event/2025/bonodori/",
-      "primary_domain": "jiyugaoka-abc.com",
-      "video_count": 1,
-      "detected_dates": [
-        "2025-07-20"
-      ],
-      "titles": [
-        "Jiyugaoka Bon Odori Dance festival / 自由が丘盆踊り 2025"
-      ],
-      "videos": [
-        {
-          "title": "Jiyugaoka Bon Odori Dance festival / 自由が丘盆踊り 2025",
-          "video_url": "https://www.youtube.com/watch?v=25REB1IJg3k",
-          "official_urls": [
-            "https://www.jiyugaoka-abc.com/event/2025/bonodori/",
-            "https://www.instagram.com/expjapanzen/",
-            "https://www.ebay.com/usr/exploringjapanzen"
-          ],
-          "detected_event_date": "2025-07-20",
-          "channel_id": "UCSHoRoW171uEytgOcKkKU2Q"
-        }
-      ]
-    },
-    {
-      "queue": "needs_official_confirmation",
-      "priority": "high",
-      "category": "official_url_candidate",
-      "primary_url": "https://shibuyadogenzaka.com/?p=6827",
-      "primary_domain": "shibuyadogenzaka.com",
-      "video_count": 1,
-      "detected_dates": [
-        "2025-08-02"
-      ],
-      "titles": [
-        "Shibuya Bon Odori Dance festival 2025  /  渋谷 盆踊り 2025"
-      ],
-      "videos": [
-        {
-          "title": "Shibuya Bon Odori Dance festival 2025  /  渋谷 盆踊り 2025",
-          "video_url": "https://www.youtube.com/watch?v=CTA9El6Hmfg",
-          "official_urls": [
-            "https://shibuyadogenzaka.com/?p=6827",
-            "https://www.instagram.com/expjapanzen/",
-            "https://www.ebay.com/usr/exploringjapanzen"
-          ],
-          "detected_event_date": "2025-08-02",
-          "channel_id": "UCSHoRoW171uEytgOcKkKU2Q"
-        }
-      ]
-    },
-    {
-      "queue": "needs_official_confirmation",
-      "priority": "high",
-      "category": "official_url_candidate",
-      "primary_url": "https://www.earthday-tokyo.org/",
-      "primary_domain": "earthday-tokyo.org",
-      "video_count": 1,
-      "detected_dates": [
-        "2025-04-19"
-      ],
-      "titles": [
-        "【アースデイ東京で盆踊り👘イマジン盆踊り部  IMAGINE BONODORIBU】The Bon Dance Band［Earth Day Tokyo 2025］2025.4.19 @代々木公園"
-      ],
-      "videos": [
-        {
-          "title": "【アースデイ東京で盆踊り👘イマジン盆踊り部  IMAGINE BONODORIBU】The Bon Dance Band［Earth Day Tokyo 2025］2025.4.19 @代々木公園",
-          "video_url": "https://www.youtube.com/watch?v=ZzDkJ2cX_F0",
-          "official_urls": [
-            "https://www.earthday-tokyo.org/",
-            "http://www.imaginebonbu.com/"
-          ],
-          "detected_event_date": "2025-04-19",
-          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
-        }
-      ]
-    },
     {
       "queue": "needs_official_confirmation",
       "priority": "low",
@@ -3218,6 +2610,659 @@
         "key": "remaining_backfill|date_backfill_candidate_single_date|3788be04-e762-8127-a6f0-d54bffc71fd5|六本木天祖神社（龍土神明宮）例大祭 盆踊り",
         "action": "exclude_out_of_scope",
         "reason": "動画は六本木アートナイト2025のTAGO出演演目で、六本木天祖神社例大祭の盆踊り開催証拠ではないため除外。"
+      }
+    },
+    {
+      "queue": "needs_official_confirmation",
+      "priority": "high",
+      "category": "official_url_candidate",
+      "primary_url": "https://www.jrtk.jp/edonoren/",
+      "primary_domain": "jrtk.jp",
+      "video_count": 1,
+      "detected_dates": [
+        "2025-07-13"
+      ],
+      "titles": [
+        "The Yokai Bon Dance / 妖怪盆踊り 2005 at 両国 Edo Noren"
+      ],
+      "videos": [
+        {
+          "title": "The Yokai Bon Dance / 妖怪盆踊り 2005 at 両国 Edo Noren",
+          "video_url": "https://www.youtube.com/watch?v=E9Uh-Iwfq4s",
+          "official_urls": [
+            "https://www.jrtk.jp/edonoren/",
+            "https://prtimes.jp/main/html/rd/p/000000524.000015279.html",
+            "https://www.instagram.com/expjapanzen/",
+            "https://www.ebay.com/usr/exploringjapanzen"
+          ],
+          "detected_event_date": "2025-07-13",
+          "channel_id": "UCSHoRoW171uEytgOcKkKU2Q"
+        }
+      ],
+      "decision": {
+        "key": "needs_official_confirmation|official_url_candidate|https://www.jrtk.jp/edonoren/",
+        "action": "hold_needs_date_source",
+        "reason": "こと判定: 2025年7月2日掲載の妖怪BON DANCE告知は確認できたが、具体的な開催日・期間が取れないため日付不明のまま登録しない。"
+      }
+    },
+    {
+      "queue": "needs_official_confirmation",
+      "priority": "high",
+      "category": "official_url_candidate",
+      "primary_url": "https://www.jiyugaoka-abc.com/event/2025/bonodori/",
+      "primary_domain": "jiyugaoka-abc.com",
+      "video_count": 1,
+      "detected_dates": [
+        "2025-07-20"
+      ],
+      "titles": [
+        "Jiyugaoka Bon Odori Dance festival / 自由が丘盆踊り 2025"
+      ],
+      "videos": [
+        {
+          "title": "Jiyugaoka Bon Odori Dance festival / 自由が丘盆踊り 2025",
+          "video_url": "https://www.youtube.com/watch?v=25REB1IJg3k",
+          "official_urls": [
+            "https://www.jiyugaoka-abc.com/event/2025/bonodori/",
+            "https://www.instagram.com/expjapanzen/",
+            "https://www.ebay.com/usr/exploringjapanzen"
+          ],
+          "detected_event_date": "2025-07-20",
+          "channel_id": "UCSHoRoW171uEytgOcKkKU2Q"
+        }
+      ],
+      "decision": {
+        "key": "needs_official_confirmation|official_url_candidate|https://www.jiyugaoka-abc.com/event/2025/bonodori/",
+        "action": "skip_registered",
+        "reason": "こと判定: 自由が丘盆踊り大会、2025-07-19〜2025-07-21、自由が丘駅前ロータリー特設会場を確認。DB上は既存イベント反映済み。"
+      }
+    },
+    {
+      "queue": "needs_official_confirmation",
+      "priority": "high",
+      "category": "official_url_candidate",
+      "primary_url": "https://www.marunouchi.com/pickup/event/6763/",
+      "primary_domain": "marunouchi.com",
+      "video_count": 4,
+      "detected_dates": [
+        "2025-07-25",
+        "2025-07-26"
+      ],
+      "titles": [
+        "Marunouchi Bon Odori Dance festival PART 1  /  丸の内盆踊り 2025 パート１",
+        "Marunouchi Bon Odori Dance festival PART 2  /  丸の内盆踊り 2025 パート2",
+        "Marunouchi Bon Odori Dance festival DJ J-POP Time  /  丸の内盆踊り 2025 DJ J-POP Time",
+        "【東京丸の内盆踊り2025】『ドンパン節～毬と殿様～にっぽんチャチャチャ～民謡お国巡り音頭～松の木小唄～龍馬おどり』 👘Tokyo Bon Dance 🏮2025.7.25 @東京駅丸の内口・行幸通り"
+      ],
+      "videos": [
+        {
+          "title": "Marunouchi Bon Odori Dance festival PART 1  /  丸の内盆踊り 2025 パート１",
+          "video_url": "https://www.youtube.com/watch?v=seY6P_Ngq4E",
+          "official_urls": [
+            "https://www.marunouchi.com/pickup/event/6763/",
+            "https://www.instagram.com/expjapanzen/",
+            "https://www.ebay.com/usr/exploringjapanzen"
+          ],
+          "detected_event_date": "2025-07-26",
+          "channel_id": "UCSHoRoW171uEytgOcKkKU2Q"
+        },
+        {
+          "title": "Marunouchi Bon Odori Dance festival PART 2  /  丸の内盆踊り 2025 パート2",
+          "video_url": "https://www.youtube.com/watch?v=wsnxABvy3BM",
+          "official_urls": [
+            "https://www.marunouchi.com/pickup/event/6763/",
+            "https://www.instagram.com/expjapanzen/",
+            "https://www.ebay.com/usr/exploringjapanzen"
+          ],
+          "detected_event_date": "2025-07-26",
+          "channel_id": "UCSHoRoW171uEytgOcKkKU2Q"
+        },
+        {
+          "title": "Marunouchi Bon Odori Dance festival DJ J-POP Time  /  丸の内盆踊り 2025 DJ J-POP Time",
+          "video_url": "https://www.youtube.com/watch?v=Otv4gDwv8io",
+          "official_urls": [
+            "https://www.marunouchi.com/pickup/event/6763/",
+            "https://www.instagram.com/expjapanzen/",
+            "https://www.ebay.com/usr/exploringjapanzen"
+          ],
+          "detected_event_date": "2025-07-26",
+          "channel_id": "UCSHoRoW171uEytgOcKkKU2Q"
+        },
+        {
+          "title": "【東京丸の内盆踊り2025】『ドンパン節～毬と殿様～にっぽんチャチャチャ～民謡お国巡り音頭～松の木小唄～龍馬おどり』 👘Tokyo Bon Dance 🏮2025.7.25 @東京駅丸の内口・行幸通り",
+          "video_url": "https://www.youtube.com/watch?v=Ig4Ocvre8Y0",
+          "official_urls": [
+            "https://www.marunouchi.com/pickup/event/6763/"
+          ],
+          "detected_event_date": "2025-07-25",
+          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
+        }
+      ],
+      "decision": {
+        "key": "needs_official_confirmation|official_url_candidate|https://www.marunouchi.com/pickup/event/6763/",
+        "action": "skip_registered",
+        "reason": "こと判定: 丸の内夏祭り2025内の丸の内de盆踊り、2025-07-25〜2025-07-26、行幸通りを確認。既存のYouTube公式候補反映で登録済み。"
+      }
+    },
+    {
+      "queue": "needs_official_confirmation",
+      "priority": "high",
+      "category": "official_url_candidate",
+      "primary_url": "https://shibuyadogenzaka.com/?p=6827",
+      "primary_domain": "shibuyadogenzaka.com",
+      "video_count": 1,
+      "detected_dates": [
+        "2025-08-02"
+      ],
+      "titles": [
+        "Shibuya Bon Odori Dance festival 2025  /  渋谷 盆踊り 2025"
+      ],
+      "videos": [
+        {
+          "title": "Shibuya Bon Odori Dance festival 2025  /  渋谷 盆踊り 2025",
+          "video_url": "https://www.youtube.com/watch?v=CTA9El6Hmfg",
+          "official_urls": [
+            "https://shibuyadogenzaka.com/?p=6827",
+            "https://www.instagram.com/expjapanzen/",
+            "https://www.ebay.com/usr/exploringjapanzen"
+          ],
+          "detected_event_date": "2025-08-02",
+          "channel_id": "UCSHoRoW171uEytgOcKkKU2Q"
+        }
+      ],
+      "decision": {
+        "key": "needs_official_confirmation|official_url_candidate|https://shibuyadogenzaka.com/?p=6827",
+        "action": "skip_registered",
+        "reason": "こと判定: 第6回渋谷盆踊り2025、2025-08-02 18:00〜21:30、SHIBUYA109前（道玄坂・文化村通り）を確認。DB上は既存イベント反映済み。"
+      }
+    },
+    {
+      "queue": "needs_official_confirmation",
+      "priority": "high",
+      "category": "official_url_candidate",
+      "primary_url": "https://www.earthday-tokyo.org/",
+      "primary_domain": "earthday-tokyo.org",
+      "video_count": 1,
+      "detected_dates": [
+        "2025-04-19"
+      ],
+      "titles": [
+        "【アースデイ東京で盆踊り👘イマジン盆踊り部  IMAGINE BONODORIBU】The Bon Dance Band［Earth Day Tokyo 2025］2025.4.19 @代々木公園"
+      ],
+      "videos": [
+        {
+          "title": "【アースデイ東京で盆踊り👘イマジン盆踊り部  IMAGINE BONODORIBU】The Bon Dance Band［Earth Day Tokyo 2025］2025.4.19 @代々木公園",
+          "video_url": "https://www.youtube.com/watch?v=ZzDkJ2cX_F0",
+          "official_urls": [
+            "https://www.earthday-tokyo.org/",
+            "http://www.imaginebonbu.com/"
+          ],
+          "detected_event_date": "2025-04-19",
+          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
+        }
+      ],
+      "decision": {
+        "key": "needs_official_confirmation|official_url_candidate|https://www.earthday-tokyo.org/",
+        "action": "hold_needs_2025_source",
+        "reason": "こと判定: 現在のトップページは2026年版に更新済み。2025年4月開催分の盆踊り情報はこのURLでは確認不可。"
+      }
+    },
+    {
+      "queue": "needs_official_confirmation",
+      "priority": "high",
+      "category": "official_url_candidate",
+      "primary_url": "https://www.tenkamatsuri.jp/minyo/",
+      "primary_domain": "tenkamatsuri.jp",
+      "video_count": 6,
+      "detected_dates": [
+        "2025-06-13"
+      ],
+      "titles": [
+        "赤坂・日枝神社🏮盆踊り(1/6)「白浜音頭～東京音頭～ドンパン節」Tokyo Bon Dance👘2025.6.13 @山王パークタワー公開空地",
+        "赤坂・日枝神社🏮盆踊り(2/6)「炭坑節～大東京音頭～相馬盆唄」Tokyo Bon Dance👘2025.6.13 @山王パークタワー公開空地",
+        "赤坂・日枝神社🏮盆踊り(3/6)「八木節～花笠踊り～おこさ節～相馬甚句」Tokyo Bon Dance👘2025.6.13 @山王パークタワー公開空地",
+        "赤坂・日枝神社🏮盆踊り(4/6)「東京おどり～水戸黄門おどり～ニッポン・ワッショイ」Tokyo Bon Dance👘2025.6.13 @山王パークタワー公開空地",
+        "赤坂・日枝神社🏮盆踊り(5/6)「山王音頭～千代田踊り～ダンシング・ヒーロー」Tokyo Bon Dance👘2025.6.13 @山王パークタワー公開空地"
+      ],
+      "videos": [
+        {
+          "title": "赤坂・日枝神社🏮盆踊り(1/6)「白浜音頭～東京音頭～ドンパン節」Tokyo Bon Dance👘2025.6.13 @山王パークタワー公開空地",
+          "video_url": "https://www.youtube.com/watch?v=3gmg_bltmu0",
+          "official_urls": [
+            "https://www.tenkamatsuri.jp/minyo/"
+          ],
+          "detected_event_date": "2025-06-13",
+          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
+        },
+        {
+          "title": "赤坂・日枝神社🏮盆踊り(2/6)「炭坑節～大東京音頭～相馬盆唄」Tokyo Bon Dance👘2025.6.13 @山王パークタワー公開空地",
+          "video_url": "https://www.youtube.com/watch?v=RLOHnnauvS8",
+          "official_urls": [
+            "https://www.tenkamatsuri.jp/minyo/"
+          ],
+          "detected_event_date": "2025-06-13",
+          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
+        },
+        {
+          "title": "赤坂・日枝神社🏮盆踊り(3/6)「八木節～花笠踊り～おこさ節～相馬甚句」Tokyo Bon Dance👘2025.6.13 @山王パークタワー公開空地",
+          "video_url": "https://www.youtube.com/watch?v=wvlo7_K2B0A",
+          "official_urls": [
+            "https://www.tenkamatsuri.jp/minyo/"
+          ],
+          "detected_event_date": "2025-06-13",
+          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
+        },
+        {
+          "title": "赤坂・日枝神社🏮盆踊り(4/6)「東京おどり～水戸黄門おどり～ニッポン・ワッショイ」Tokyo Bon Dance👘2025.6.13 @山王パークタワー公開空地",
+          "video_url": "https://www.youtube.com/watch?v=hrKOXrI7Zcc",
+          "official_urls": [
+            "https://www.tenkamatsuri.jp/minyo/"
+          ],
+          "detected_event_date": "2025-06-13",
+          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
+        },
+        {
+          "title": "赤坂・日枝神社🏮盆踊り(5/6)「山王音頭～千代田踊り～ダンシング・ヒーロー」Tokyo Bon Dance👘2025.6.13 @山王パークタワー公開空地",
+          "video_url": "https://www.youtube.com/watch?v=ed5hv9b8cNg",
+          "official_urls": [
+            "https://www.tenkamatsuri.jp/minyo/"
+          ],
+          "detected_event_date": "2025-06-13",
+          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
+        },
+        {
+          "title": "赤坂・日枝神社🏮盆踊り(6/6)「かがやき音頭～ドダレバチ（津軽甚句）～盆ギリ恋歌～閉めの太鼓」Tokyo Bon Dance👘2025.6.13 @山王パークタワー公開空地",
+          "video_url": "https://www.youtube.com/watch?v=qWPAiHfatcI",
+          "official_urls": [
+            "https://www.tenkamatsuri.jp/minyo/"
+          ],
+          "detected_event_date": "2025-06-13",
+          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
+        }
+      ],
+      "decision": {
+        "key": "needs_official_confirmation|official_url_candidate|https://www.tenkamatsuri.jp/minyo/",
+        "action": "hold_needs_2025_source",
+        "reason": "こと判定: ページは2026年6月13〜15日の情報のみで、2025年開催証拠としては使わない。"
+      }
+    },
+    {
+      "queue": "needs_official_confirmation",
+      "priority": "high",
+      "category": "official_url_candidate",
+      "primary_url": "https://tsukijihongwanji.jp/news/10279/",
+      "primary_domain": "tsukijihongwanji.jp",
+      "video_count": 6,
+      "detected_dates": [
+        "2025-07-30"
+      ],
+      "titles": [
+        "【築地本願寺納涼盆踊り大会 2025】『築地音頭～これがお江戸の盆ダンス～あさりときりみのおだいどこ音頭～ホームラン音頭』🏮Tokyo Bon Dance👘2025.7.30 @築地本願寺",
+        "【築地本願寺納涼盆踊り大会 2025】『あやめ踊り～日本晴れだよ～おけさ唄えば～炭坑節』🏮Tokyo Bon Dance👘2025.7.30 @築地本願寺 Tsukiji Hongawanji",
+        "【築地本願寺納涼盆踊り大会 2025】『和太鼓演奏：奉納組太鼓🥁大江戸助六太鼓 - 助六四段撃ち』🏮Japanese drum👘2025.7.30 @築地本願寺 Tsukiji Hongawanji",
+        "【築地本願寺納涼盆踊り大会 2025】『大江戸助六音頭～斎太郎節～法輪音頭』🏮Tokyo Bon Dance👘2025.7.30 @築地本願寺 Tsukiji Hongawanji",
+        "【築地本願寺納涼盆踊り大会 2025】『ゆかた音頭～おこさ節』🏮Tokyo Bon Dance👘2025.7.30 @築地本願寺 Tsukiji Hongawanji"
+      ],
+      "videos": [
+        {
+          "title": "【築地本願寺納涼盆踊り大会 2025】『築地音頭～これがお江戸の盆ダンス～あさりときりみのおだいどこ音頭～ホームラン音頭』🏮Tokyo Bon Dance👘2025.7.30 @築地本願寺",
+          "video_url": "https://www.youtube.com/watch?v=mnqGmIwHq7A",
+          "official_urls": [
+            "https://tsukijihongwanji.jp/news/10279/"
+          ],
+          "detected_event_date": "2025-07-30",
+          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
+        },
+        {
+          "title": "【築地本願寺納涼盆踊り大会 2025】『あやめ踊り～日本晴れだよ～おけさ唄えば～炭坑節』🏮Tokyo Bon Dance👘2025.7.30 @築地本願寺 Tsukiji Hongawanji",
+          "video_url": "https://www.youtube.com/watch?v=W5IMViZwKTY",
+          "official_urls": [
+            "https://tsukijihongwanji.jp/news/10279/"
+          ],
+          "detected_event_date": "2025-07-30",
+          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
+        },
+        {
+          "title": "【築地本願寺納涼盆踊り大会 2025】『和太鼓演奏：奉納組太鼓🥁大江戸助六太鼓 - 助六四段撃ち』🏮Japanese drum👘2025.7.30 @築地本願寺 Tsukiji Hongawanji",
+          "video_url": "https://www.youtube.com/watch?v=Q8L7IDaQ_lI",
+          "official_urls": [
+            "https://tsukijihongwanji.jp/news/10279/"
+          ],
+          "detected_event_date": "2025-07-30",
+          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
+        },
+        {
+          "title": "【築地本願寺納涼盆踊り大会 2025】『大江戸助六音頭～斎太郎節～法輪音頭』🏮Tokyo Bon Dance👘2025.7.30 @築地本願寺 Tsukiji Hongawanji",
+          "video_url": "https://www.youtube.com/watch?v=BMzHeO-6XVw",
+          "official_urls": [
+            "https://tsukijihongwanji.jp/news/10279/"
+          ],
+          "detected_event_date": "2025-07-30",
+          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
+        },
+        {
+          "title": "【築地本願寺納涼盆踊り大会 2025】『ゆかた音頭～おこさ節』🏮Tokyo Bon Dance👘2025.7.30 @築地本願寺 Tsukiji Hongawanji",
+          "video_url": "https://www.youtube.com/watch?v=2QvUjfmcL94",
+          "official_urls": [
+            "https://tsukijihongwanji.jp/news/10279/"
+          ],
+          "detected_event_date": "2025-07-30",
+          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
+        },
+        {
+          "title": "【築地本願寺納涼盆踊り大会 2025】『東京音頭～築地音頭』🏮Tokyo Bon Dance👘2025.7.30 @築地本願寺 Tsukiji Hongawanji",
+          "video_url": "https://www.youtube.com/watch?v=zFIi7VagkUQ",
+          "official_urls": [
+            "https://tsukijihongwanji.jp/news/10279/"
+          ],
+          "detected_event_date": "2025-07-30",
+          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
+        }
+      ],
+      "decision": {
+        "key": "needs_official_confirmation|official_url_candidate|https://tsukijihongwanji.jp/news/10279/",
+        "action": "hold_needs_2025_source",
+        "reason": "こと判定: 404 Not Found。別URLで2025年公式または準公式根拠が取れるまで保留。"
+      }
+    },
+    {
+      "queue": "needs_official_confirmation",
+      "priority": "high",
+      "category": "official_url_candidate",
+      "primary_url": "https://ginbura.ginza.jp/",
+      "primary_domain": "ginbura.ginza.jp",
+      "video_count": 4,
+      "detected_dates": [
+        "2025-08-02"
+      ],
+      "titles": [
+        "【 大銀座盆踊り👘ゆかたで銀ぶら2025】『炭坑節～東京音頭～バハマ・ママ～ダンシング・ヒーロー』（1/4）Tokyo Bon Dance🏮2025.8.2 @銀座通り 3丁目交差点",
+        "【 大銀座盆踊り👘ゆかたで銀ぶら2025】『銀座カンカン娘～銀座音頭～銀座ときめき音頭～これがお江戸の盆ダンス』（2/4）Tokyo Bon Dance🏮2025.8.2 @銀座通り 3丁目交差点",
+        "【 大銀座盆踊り👘ゆかたで銀ぶら2025】『炭坑節～東京音頭～バハマ・ママ～ダンシング・ヒーロー』（3/4）Tokyo Bon Dance🏮2025.8.2  @銀座通り 3丁目交差点",
+        "【 大銀座盆踊り👘ゆかたで銀ぶら2025】『銀座カンカン娘～銀座音頭～これがお江戸の盆ダンス～銀座ときめき音頭』（4/4）Tokyo Bon Dance🏮2025.8.2 @銀座通り 3丁目交差点"
+      ],
+      "videos": [
+        {
+          "title": "【 大銀座盆踊り👘ゆかたで銀ぶら2025】『炭坑節～東京音頭～バハマ・ママ～ダンシング・ヒーロー』（1/4）Tokyo Bon Dance🏮2025.8.2 @銀座通り 3丁目交差点",
+          "video_url": "https://www.youtube.com/watch?v=bm87JsNkhJY",
+          "official_urls": [
+            "https://ginbura.ginza.jp/"
+          ],
+          "detected_event_date": "2025-08-02",
+          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
+        },
+        {
+          "title": "【 大銀座盆踊り👘ゆかたで銀ぶら2025】『銀座カンカン娘～銀座音頭～銀座ときめき音頭～これがお江戸の盆ダンス』（2/4）Tokyo Bon Dance🏮2025.8.2 @銀座通り 3丁目交差点",
+          "video_url": "https://www.youtube.com/watch?v=QHWd7ISJouo",
+          "official_urls": [
+            "https://ginbura.ginza.jp/"
+          ],
+          "detected_event_date": "2025-08-02",
+          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
+        },
+        {
+          "title": "【 大銀座盆踊り👘ゆかたで銀ぶら2025】『炭坑節～東京音頭～バハマ・ママ～ダンシング・ヒーロー』（3/4）Tokyo Bon Dance🏮2025.8.2  @銀座通り 3丁目交差点",
+          "video_url": "https://www.youtube.com/watch?v=RS78coFRx2A",
+          "official_urls": [
+            "https://ginbura.ginza.jp/"
+          ],
+          "detected_event_date": "2025-08-02",
+          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
+        },
+        {
+          "title": "【 大銀座盆踊り👘ゆかたで銀ぶら2025】『銀座カンカン娘～銀座音頭～これがお江戸の盆ダンス～銀座ときめき音頭』（4/4）Tokyo Bon Dance🏮2025.8.2 @銀座通り 3丁目交差点",
+          "video_url": "https://www.youtube.com/watch?v=KHsVP9vhEmI",
+          "official_urls": [
+            "https://ginbura.ginza.jp/"
+          ],
+          "detected_event_date": "2025-08-02",
+          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
+        }
+      ],
+      "decision": {
+        "key": "needs_official_confirmation|official_url_candidate|https://ginbura.ginza.jp/",
+        "action": "hold_needs_2025_source",
+        "reason": "こと判定: 現在のゆかたで銀ぶらサイトは2026年8月1日の情報のみで、2025年開催証拠としては使わない。"
+      }
+    },
+    {
+      "queue": "needs_official_confirmation",
+      "priority": "high",
+      "category": "official_url_candidate",
+      "primary_url": "https://www.nouryo-matsuri.com/pages/6314608/page_202208061239",
+      "primary_domain": "nouryo-matsuri.com",
+      "video_count": 11,
+      "detected_dates": [
+        "2025-08-08"
+      ],
+      "titles": [
+        "【神田明神⛩アニソン盆踊り🏮納涼祭り2025】（第1部 - 1）👘Tokyo Bon Dance🏮2025.8.8 @神田明神 Kanda Myojin Shrine",
+        "【神田明神⛩アニソン盆踊り🏮納涼祭り2025】（第1部 - 2）👘Tokyo Bon Dance🏮2025.8.8 @神田明神 Kanda Myojin Shrine",
+        "【神田明神⛩アニソン盆踊り🏮納涼祭り2025】（第2部 - 1）👘Tokyo Bon Dance🏮2025.8.8 @神田明神 Kanda Myojin Shrine",
+        "【神田明神⛩アニソン盆踊り🏮納涼祭り2025】（第2部 - 2）👘Tokyo Bon Dance🏮2025.8.8 @神田明神 Kanda Myojin Shrine",
+        "【神田明神⛩アニソン盆踊り🏮納涼祭り2025】（第2部 - 3）👘Tokyo Bon Dance🏮2025.8.8 @神田明神 Kanda Myojin Shrine"
+      ],
+      "videos": [
+        {
+          "title": "【神田明神⛩アニソン盆踊り🏮納涼祭り2025】（第1部 - 1）👘Tokyo Bon Dance🏮2025.8.8 @神田明神 Kanda Myojin Shrine",
+          "video_url": "https://www.youtube.com/watch?v=ymzegsNDqfM",
+          "official_urls": [
+            "https://www.nouryo-matsuri.com/pages/6314608/page_202208061239"
+          ],
+          "detected_event_date": "2025-08-08",
+          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
+        },
+        {
+          "title": "【神田明神⛩アニソン盆踊り🏮納涼祭り2025】（第1部 - 2）👘Tokyo Bon Dance🏮2025.8.8 @神田明神 Kanda Myojin Shrine",
+          "video_url": "https://www.youtube.com/watch?v=T4ur74p7f5A",
+          "official_urls": [
+            "https://www.nouryo-matsuri.com/pages/6314608/page_202208061239"
+          ],
+          "detected_event_date": "2025-08-08",
+          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
+        },
+        {
+          "title": "【神田明神⛩アニソン盆踊り🏮納涼祭り2025】（第2部 - 1）👘Tokyo Bon Dance🏮2025.8.8 @神田明神 Kanda Myojin Shrine",
+          "video_url": "https://www.youtube.com/watch?v=CbndSYR6qEM",
+          "official_urls": [
+            "https://www.nouryo-matsuri.com/pages/6314608/page_202208061239"
+          ],
+          "detected_event_date": "2025-08-08",
+          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
+        },
+        {
+          "title": "【神田明神⛩アニソン盆踊り🏮納涼祭り2025】（第2部 - 2）👘Tokyo Bon Dance🏮2025.8.8 @神田明神 Kanda Myojin Shrine",
+          "video_url": "https://www.youtube.com/watch?v=_4NLh_EX-XE",
+          "official_urls": [
+            "https://www.nouryo-matsuri.com/pages/6314608/page_202208061239"
+          ],
+          "detected_event_date": "2025-08-08",
+          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
+        },
+        {
+          "title": "【神田明神⛩アニソン盆踊り🏮納涼祭り2025】（第2部 - 3）👘Tokyo Bon Dance🏮2025.8.8 @神田明神 Kanda Myojin Shrine",
+          "video_url": "https://www.youtube.com/watch?v=4pQDvVwQd3g",
+          "official_urls": [
+            "https://www.nouryo-matsuri.com/pages/6314608/page_202208061239"
+          ],
+          "detected_event_date": "2025-08-08",
+          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
+        },
+        {
+          "title": "『クックロビン音頭 Cock Robin Ondo』【神田明神納涼祭り2025🏮アニソン盆踊り】🏮Tokyo Bon Dance👘2025.8.8 @神田明神 Kanda Myojin Shrine",
+          "video_url": "https://www.youtube.com/watch?v=TQG9UQzN9-8",
+          "official_urls": [
+            "https://www.nouryo-matsuri.com/pages/6314608/page_202208061239"
+          ],
+          "detected_event_date": "2025-08-08",
+          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
+        },
+        {
+          "title": "『おジャ魔女カーニバル』【神田明神納涼祭り2025🏮アニソン盆踊り】🏮Tokyo Bon Dance👘2025.8.8 @神田明神 Kanda Myojin Shrine",
+          "video_url": "https://www.youtube.com/watch?v=qS8OfeKRTjU",
+          "official_urls": [
+            "https://www.nouryo-matsuri.com/pages/6314608/page_202208061239"
+          ],
+          "detected_event_date": "2025-08-08",
+          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
+        },
+        {
+          "title": "『邪神ちゃん音頭／大森日雅』【神田明神納涼祭り2025🏮アニソン盆踊り】🏮Tokyo Bon Dance👘2025.8.8 @神田明神 Kanda Myojin Shrine",
+          "video_url": "https://www.youtube.com/watch?v=Om01Om3MTUU",
+          "official_urls": [
+            "https://www.nouryo-matsuri.com/pages/6314608/page_202208061239"
+          ],
+          "detected_event_date": "2025-08-08",
+          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
+        },
+        {
+          "title": "初披露‼『ほっぺちゃん音頭／小見川千明』【神田明神納涼祭り2025🏮アニソン盆踊り】🏮Tokyo Bon Dance👘2025.8.8 @神田明神 Kanda Myojin Shrine",
+          "video_url": "https://www.youtube.com/watch?v=W6i6sxSXQ88",
+          "official_urls": [
+            "https://www.nouryo-matsuri.com/pages/6314608/page_202208061239"
+          ],
+          "detected_event_date": "2025-08-08",
+          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
+        },
+        {
+          "title": "初披露‼『オロナミンC  元気ハツラツ音頭』【神田明神納涼祭り2025🏮アニソン盆踊り】🏮Tokyo Bon Dance👘2025.8.8 @神田明神 Kanda Myojin Shrine",
+          "video_url": "https://www.youtube.com/watch?v=PrxwlzLCQ3U",
+          "official_urls": [
+            "https://www.nouryo-matsuri.com/pages/6314608/page_202208061239"
+          ],
+          "detected_event_date": "2025-08-08",
+          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
+        },
+        {
+          "title": "『神田明神音頭 ／小坂井祐莉絵』【神田明神納涼祭り2025🏮アニソン盆踊り】🏮Tokyo Bon Dance👘2025.8.8 @神田明神 Kanda Myojin Shrine",
+          "video_url": "https://www.youtube.com/watch?v=TOjT2fBLq64",
+          "official_urls": [
+            "https://www.nouryo-matsuri.com/pages/6314608/page_202208061239"
+          ],
+          "detected_event_date": "2025-08-08",
+          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
+        }
+      ],
+      "decision": {
+        "key": "needs_official_confirmation|official_url_candidate|https://www.nouryo-matsuri.com/pages/6314608/page_202208061239",
+        "action": "hold_needs_2025_source",
+        "reason": "こと判定: 現在のページは2026年8月7日のアニソン盆踊り情報のみで、2025年開催証拠としては使わない。"
+      }
+    },
+    {
+      "queue": "needs_official_confirmation",
+      "priority": "high",
+      "category": "official_url_candidate",
+      "primary_url": "https://www.roppongihills.com/events/2025/08/0478.html",
+      "primary_domain": "roppongihills.com",
+      "video_count": 10,
+      "detected_dates": [
+        "2025-08-23",
+        "2025-08-24"
+      ],
+      "titles": [
+        "【六本木ヒルズ盆踊り 2025（DAY1）】「日本の芸能：『加賀万歳』金沢市指無形民俗文化財 」2025.8.23 @六本木ヒルズアリーナ Roppongi Hills Arena",
+        "【六本木ヒルズ盆踊り 2025（DAY1）】「六本人音頭～花火音頭」六本木じろう with 里野鈴妹 ＆ 増田吏桜🎤2025.8.23 @六本木ヒルズアリーナ",
+        "【六本木ヒルズ盆踊り 2025（DAY1）】「六本木音頭～炭坑節」2025.8.23 @六本木ヒルズアリーナ",
+        "【六本木ヒルズ盆踊り 2025（DAY1）】「河内おとこ節～夏祭り」　里野鈴妹 ＆ 増田吏桜（さとのすずめ ＆ ますだりお）🎤2025.8.23 @六本木ヒルズアリーナ",
+        "【六本木ヒルズ盆踊り 2025（DAY1）】「ドラえもん音頭 Doraemon ondo」 2025.8.23 @六本木ヒルズアリーナ"
+      ],
+      "videos": [
+        {
+          "title": "【六本木ヒルズ盆踊り 2025（DAY1）】「日本の芸能：『加賀万歳』金沢市指無形民俗文化財 」2025.8.23 @六本木ヒルズアリーナ Roppongi Hills Arena",
+          "video_url": "https://www.youtube.com/watch?v=Iuw5CwPNUxY",
+          "official_urls": [
+            "https://www.roppongihills.com/events/2025/08/0478.html"
+          ],
+          "detected_event_date": "2025-08-23",
+          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
+        },
+        {
+          "title": "【六本木ヒルズ盆踊り 2025（DAY1）】「六本人音頭～花火音頭」六本木じろう with 里野鈴妹 ＆ 増田吏桜🎤2025.8.23 @六本木ヒルズアリーナ",
+          "video_url": "https://www.youtube.com/watch?v=O2_FxIRlZA8",
+          "official_urls": [
+            "https://www.roppongihills.com/events/2025/08/0478.html"
+          ],
+          "detected_event_date": "2025-08-23",
+          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
+        },
+        {
+          "title": "【六本木ヒルズ盆踊り 2025（DAY1）】「六本木音頭～炭坑節」2025.8.23 @六本木ヒルズアリーナ",
+          "video_url": "https://www.youtube.com/watch?v=7E8P3YCST2Q",
+          "official_urls": [
+            "https://www.roppongihills.com/events/2025/08/0478.html"
+          ],
+          "detected_event_date": "2025-08-23",
+          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
+        },
+        {
+          "title": "【六本木ヒルズ盆踊り 2025（DAY1）】「河内おとこ節～夏祭り」　里野鈴妹 ＆ 増田吏桜（さとのすずめ ＆ ますだりお）🎤2025.8.23 @六本木ヒルズアリーナ",
+          "video_url": "https://www.youtube.com/watch?v=ixU_B6mszvE",
+          "official_urls": [
+            "https://www.roppongihills.com/events/2025/08/0478.html"
+          ],
+          "detected_event_date": "2025-08-23",
+          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
+        },
+        {
+          "title": "【六本木ヒルズ盆踊り 2025（DAY1）】「ドラえもん音頭 Doraemon ondo」 2025.8.23 @六本木ヒルズアリーナ",
+          "video_url": "https://www.youtube.com/watch?v=JeYPdZc9rsA",
+          "official_urls": [
+            "https://www.roppongihills.com/events/2025/08/0478.html"
+          ],
+          "detected_event_date": "2025-08-23",
+          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
+        },
+        {
+          "title": "【六本木ヒルズ盆踊り 2025（DAY1）】「東京音頭～炭坑節」六本木じろう with 里野鈴妹 ＆ 増田吏桜🎤 2025.8.23 @六本木ヒルズアリーナ",
+          "video_url": "https://www.youtube.com/watch?v=qvMiiQScrYU",
+          "official_urls": [
+            "https://www.roppongihills.com/events/2025/08/0478.html"
+          ],
+          "detected_event_date": "2025-08-23",
+          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
+        },
+        {
+          "title": "【六本木ヒルズ盆踊り 2025（DAY1）】「六本人音頭（アンコール）」六本木じろう with 里野鈴妹 ＆ 増田吏桜🎤 2025.8.23 @六本木ヒルズアリーナ",
+          "video_url": "https://www.youtube.com/watch?v=EE1JlcxJbLw",
+          "official_urls": [
+            "https://www.roppongihills.com/events/2025/08/0478.html"
+          ],
+          "detected_event_date": "2025-08-23",
+          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
+        },
+        {
+          "title": "【六本木ヒルズ盆踊り 2025（DAY2）】日本の芸能：「半浦の秋祭り／半浦青年団（石川県七尾市能登島半浦町）」 2025.8.24 @六本木ヒルズアリーナ",
+          "video_url": "https://www.youtube.com/watch?v=xu4VXlbfrJU",
+          "official_urls": [
+            "https://www.roppongihills.com/events/2025/08/0478.html"
+          ],
+          "detected_event_date": "2025-08-24",
+          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
+        },
+        {
+          "title": "【六本木ヒルズ盆踊り 2025（DAY2）】「ドラえもん音頭 Doraemon ondo」 2025.8.24 @六本木ヒルズアリーナ",
+          "video_url": "https://www.youtube.com/watch?v=AViOtdpRo7w",
+          "official_urls": [
+            "https://www.roppongihills.com/events/2025/08/0478.html"
+          ],
+          "detected_event_date": "2025-08-24",
+          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
+        },
+        {
+          "title": "【六本木ヒルズ盆踊り 2025（DAY2）】「六本人音頭（アンコール）」六本木じろう with 里野鈴妹 ＆ 増田吏桜🎤 2025.8.24 @六本木ヒルズアリーナ",
+          "video_url": "https://www.youtube.com/watch?v=uv6Tn8WT_Ck",
+          "official_urls": [
+            "https://www.roppongihills.com/events/2025/08/0478.html"
+          ],
+          "detected_event_date": "2025-08-23",
+          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
+        }
+      ],
+      "decision": {
+        "key": "needs_official_confirmation|official_url_candidate|https://www.roppongihills.com/events/2025/08/0478.html",
+        "action": "skip_registered",
+        "reason": "こと判定: 六本木ヒルズ盆踊り2025、2025-08-23〜2025-08-24、六本木ヒルズアリーナ・けやき坂通りを確認。DB上は既存イベント反映済み。"
       }
     }
   ]

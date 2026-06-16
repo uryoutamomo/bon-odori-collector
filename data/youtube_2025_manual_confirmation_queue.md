@@ -1,15 +1,14 @@
 # YouTube 2025 手動確認キュー
 
-- 生成: 2026-06-16T10:27:53.460865+00:00
-- items: 36
-- videos: 253
-- skipped: 5 items / 87 videos
+- 生成: 2026-06-16T11:46:44.046943+00:00
+- items: 26
+- videos: 208
+- skipped: 15 items / 132 videos
 
 ## counts
 
 | bucket | items | videos |
 | --- | ---: | ---: |
-| needs_official_confirmation:official_url_candidate | 10 | 45 |
 | needs_official_confirmation:social_or_map_only | 20 | 154 |
 | remaining_backfill:prior_year_video_uploaded_in_2025 | 3 | 35 |
 | remaining_backfill:year_mismatch_or_recurring_event_review | 3 | 19 |
@@ -18,16 +17,6 @@
 
 | priority | queue | category | name/url | dates | videos | action |
 | --- | --- | --- | --- | --- | ---: | --- |
-| high | needs_official_confirmation | official_url_candidate | https://www.nouryo-matsuri.com/pages/6314608/page_202208061239 | 2025-08-08 | 11 | 公式URL本文確認。本DB登録/追記は確認後に限定 |
-| high | needs_official_confirmation | official_url_candidate | https://www.roppongihills.com/events/2025/08/0478.html | 2025-08-23, 2025-08-24 | 10 | 公式URL本文確認。本DB登録/追記は確認後に限定 |
-| high | needs_official_confirmation | official_url_candidate | https://www.tenkamatsuri.jp/minyo/ | 2025-06-13 | 6 | 公式URL本文確認。本DB登録/追記は確認後に限定 |
-| high | needs_official_confirmation | official_url_candidate | https://tsukijihongwanji.jp/news/10279/ | 2025-07-30 | 6 | 公式URL本文確認。本DB登録/追記は確認後に限定 |
-| high | needs_official_confirmation | official_url_candidate | https://www.marunouchi.com/pickup/event/6763/ | 2025-07-25, 2025-07-26 | 4 | 公式URL本文確認。本DB登録/追記は確認後に限定 |
-| high | needs_official_confirmation | official_url_candidate | https://ginbura.ginza.jp/ | 2025-08-02 | 4 | 公式URL本文確認。本DB登録/追記は確認後に限定 |
-| high | needs_official_confirmation | official_url_candidate | https://www.jrtk.jp/edonoren/ | 2025-07-13 | 1 | 公式URL本文確認。本DB登録/追記は確認後に限定 |
-| high | needs_official_confirmation | official_url_candidate | https://www.jiyugaoka-abc.com/event/2025/bonodori/ | 2025-07-20 | 1 | 公式URL本文確認。本DB登録/追記は確認後に限定 |
-| high | needs_official_confirmation | official_url_candidate | https://shibuyadogenzaka.com/?p=6827 | 2025-08-02 | 1 | 公式URL本文確認。本DB登録/追記は確認後に限定 |
-| high | needs_official_confirmation | official_url_candidate | https://www.earthday-tokyo.org/ | 2025-04-19 | 1 | 公式URL本文確認。本DB登録/追記は確認後に限定 |
 | low | needs_official_confirmation | social_or_map_only | https://goo.gl/maps/kSAEbnkyHSchcccY6 | 2024-08-17, 2025-01-01, 2025-02-01, 2025-02-23, 2025-03-22, 2025-04-19, 2025-04-26, 2025-04-29, 2025-05-04, 2025-05-05, 2025-05-18, 2025-05-22, 2025-05-25, 2025-06-08, 2025-06-29, 2025-07-02, 2025-07-03, 2025-07-04, 2025-07-06, 2025-07-14, 2025-07-19, 2025-07-22, 2025-08-03, 2025-08-30, 2025-09-13, 2025-09-14, 2025-09-23, 2025-10-03, 2025-10-31, 2025-11-01, 2025-11-14, 2025-11-23, 2025-11-24, 2025-12-30, 2026-05-17, 2026-05-31 | 51 | 公式URL本文確認。本DB登録/追記は確認後に限定 |
 | low | needs_official_confirmation | social_or_map_only | https://www.google.com/maps/place/%E3%81%8A%E5%8F%B0%E5%A0%B4%E9%9D%92%E6%B5%B7%E5%9C%B0%E5%8C%BAP%E5%8C%BA%E7%94%BB/@35.625128,139.7724951,17z/data=!4m15!1m8!3m7!1s0x601889f8297765f1:0x951f5c602517953d!2z44CSMTM1LTAwNjQg5p2x5Lqs6YO95rGf5p2x5Yy66Z2S5rW377yR5LiB55uu77yR4oiS77yR77yW!3b1!8m2!3d35.625128!4d139.77507!16s%2Fg%2F11hy_pk2n4!3m5!1s0x601889f808ccdf65:0xc3ebddaeb11985be!8m2!3d35.6237857!4d139.7731188!16s%2Fg%2F11cmp5ms7c?entry=ttu | 2025-04-26 | 18 | 公式URL本文確認。本DB登録/追記は確認後に限定 |
 | low | needs_official_confirmation | social_or_map_only | https://www.google.com/maps/place/%E7%A5%9E%E7%94%B0%E7%A5%9E%E7%A4%BE%EF%BC%88%E7%A5%9E%E7%94%B0%E6%98%8E%E7%A5%9E%EF%BC%89/@35.7014855,139.765259,17z/data=!3m1!5s0x60188c1ed49ee279:0xe75480716373b939!4m10!1m2!2m1!1z56We55Sw5piO56We!3m6!1s0x60188c1ecc161bed:0xf397e4b6bf417c8b!8m2!3d35.7020186!4d139.7678943!15sCgznpZ7nlLDmmI7npZ5aDyIN56We55SwIOaYjuelnpIBDXNoaW50b19zaHJpbmWaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVUmxlWFEzVUVoQkVBReABAA!16s%2Fm%2F0463qs6?entry=ttu | 2025-08-08, 2025-08-10 | 12 | 公式URL本文確認。本DB登録/追記は確認後に限定 |

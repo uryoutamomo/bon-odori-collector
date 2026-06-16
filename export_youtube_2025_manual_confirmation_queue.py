@@ -26,6 +26,13 @@ LOW_VALUE_DOMAINS = {
     "youtube.com",
 }
 
+SKIP_DECISION_ACTIONS = {
+    "skip_registered",
+    "exclude_out_of_scope",
+    "hold_needs_2025_source",
+    "hold_needs_date_source",
+}
+
 
 def load_json(path, default):
     path = Path(path)
@@ -154,7 +161,7 @@ def skipped_by_decision(rows, decisions):
     skipped = []
     for row in rows:
         decision = by_key.get(decision_key(row))
-        if decision and decision.get("action") in {"skip_registered", "exclude_out_of_scope"}:
+        if decision and decision.get("action") in SKIP_DECISION_ACTIONS:
             skipped.append({**row, "decision": decision})
         else:
             kept.append(row)

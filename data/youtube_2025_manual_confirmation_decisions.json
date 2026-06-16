@@ -27,6 +27,56 @@
       "key": "remaining_backfill|date_backfill_candidate_single_date|3788be04-e762-8127-a6f0-d54bffc71fd5|六本木天祖神社（龍土神明宮）例大祭 盆踊り",
       "action": "exclude_out_of_scope",
       "reason": "動画は六本木アートナイト2025のTAGO出演演目で、六本木天祖神社例大祭の盆踊り開催証拠ではないため除外。"
+    },
+    {
+      "key": "needs_official_confirmation|official_url_candidate|https://www.nouryo-matsuri.com/pages/6314608/page_202208061239",
+      "action": "hold_needs_2025_source",
+      "reason": "こと判定: 現在のページは2026年8月7日のアニソン盆踊り情報のみで、2025年開催証拠としては使わない。"
+    },
+    {
+      "key": "needs_official_confirmation|official_url_candidate|https://www.roppongihills.com/events/2025/08/0478.html",
+      "action": "skip_registered",
+      "reason": "こと判定: 六本木ヒルズ盆踊り2025、2025-08-23〜2025-08-24、六本木ヒルズアリーナ・けやき坂通りを確認。DB上は既存イベント反映済み。"
+    },
+    {
+      "key": "needs_official_confirmation|official_url_candidate|https://www.tenkamatsuri.jp/minyo/",
+      "action": "hold_needs_2025_source",
+      "reason": "こと判定: ページは2026年6月13〜15日の情報のみで、2025年開催証拠としては使わない。"
+    },
+    {
+      "key": "needs_official_confirmation|official_url_candidate|https://tsukijihongwanji.jp/news/10279/",
+      "action": "hold_needs_2025_source",
+      "reason": "こと判定: 404 Not Found。別URLで2025年公式または準公式根拠が取れるまで保留。"
+    },
+    {
+      "key": "needs_official_confirmation|official_url_candidate|https://www.marunouchi.com/pickup/event/6763/",
+      "action": "skip_registered",
+      "reason": "こと判定: 丸の内夏祭り2025内の丸の内de盆踊り、2025-07-25〜2025-07-26、行幸通りを確認。既存のYouTube公式候補反映で登録済み。"
+    },
+    {
+      "key": "needs_official_confirmation|official_url_candidate|https://ginbura.ginza.jp/",
+      "action": "hold_needs_2025_source",
+      "reason": "こと判定: 現在のゆかたで銀ぶらサイトは2026年8月1日の情報のみで、2025年開催証拠としては使わない。"
+    },
+    {
+      "key": "needs_official_confirmation|official_url_candidate|https://www.jrtk.jp/edonoren/",
+      "action": "hold_needs_date_source",
+      "reason": "こと判定: 2025年7月2日掲載の妖怪BON DANCE告知は確認できたが、具体的な開催日・期間が取れないため日付不明のまま登録しない。"
+    },
+    {
+      "key": "needs_official_confirmation|official_url_candidate|https://www.jiyugaoka-abc.com/event/2025/bonodori/",
+      "action": "skip_registered",
+      "reason": "こと判定: 自由が丘盆踊り大会、2025-07-19〜2025-07-21、自由が丘駅前ロータリー特設会場を確認。DB上は既存イベント反映済み。"
+    },
+    {
+      "key": "needs_official_confirmation|official_url_candidate|https://shibuyadogenzaka.com/?p=6827",
+      "action": "skip_registered",
+      "reason": "こと判定: 第6回渋谷盆踊り2025、2025-08-02 18:00〜21:30、SHIBUYA109前（道玄坂・文化村通り）を確認。DB上は既存イベント反映済み。"
+    },
+    {
+      "key": "needs_official_confirmation|official_url_candidate|https://www.earthday-tokyo.org/",
+      "action": "hold_needs_2025_source",
+      "reason": "こと判定: 現在のトップページは2026年版に更新済み。2025年4月開催分の盆踊り情報はこのURLでは確認不可。"
     }
   ]
 }
