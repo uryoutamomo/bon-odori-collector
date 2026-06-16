@@ -11869,6 +11869,11 @@
         "evidence_count": 1,
         "speaker_count": 1,
         "setlist_complete": false
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "hint",
+        "source_count": 1
       }
     ],
     "song_occurrence": {

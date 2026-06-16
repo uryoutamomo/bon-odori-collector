@@ -31,6 +31,9 @@ SKIP_DECISION_ACTIONS = {
     "exclude_out_of_scope",
     "hold_needs_2025_source",
     "hold_needs_date_source",
+    "hold_needs_scope_decision",
+    "hold_source_video_mismatch",
+    "hold_mixed_events_needs_split",
 }
 
 

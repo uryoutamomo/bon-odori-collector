@@ -1,33 +1,965 @@
 {
   "generated_by": "export_youtube_2025_manual_confirmation_queue.py",
-  "generated_at": "2026-06-16T11:46:44.046943+00:00",
+  "generated_at": "2026-06-16T12:07:49.510782+00:00",
   "sources": [
     "data/youtube_2025_second_pass_event_groups.json",
     "data/youtube_active_video_review.json",
     "data/youtube_2025_manual_confirmation_decisions.json"
   ],
-  "item_count": 26,
-  "video_count": 208,
-  "skipped_count": 15,
-  "skipped_video_count": 132,
-  "counts": [
+  "item_count": 0,
+  "video_count": 0,
+  "skipped_count": 41,
+  "skipped_video_count": 340,
+  "counts": [],
+  "rows": [],
+  "skipped": [
     {
-      "bucket": "needs_official_confirmation:social_or_map_only",
-      "items": 20,
-      "videos": 154
+      "queue": "remaining_backfill",
+      "priority": "normal",
+      "category": "date_backfill_candidate_multi_date",
+      "event_name": "青山熊野神社例大祭 奉納踊り",
+      "event_id": "37b8be04-e762-814a-a9af-c9d8490a0a55",
+      "video_count": 47,
+      "detected_dates": [
+        "2025-09-26",
+        "2025-09-27"
+      ],
+      "source_url": "https://bonmaru.zenmin-odori.jp/archives/419",
+      "recommended_action": "複数日開催または誤混入を確認し、日付範囲を補正候補にする",
+      "sample_videos": [
+        {
+          "title": "[4K]🇯🇵 青葉公園 盆踊り青山熊野神社例大祭奉納踊り2025 / Traditional Japanese Bon dance in Aoyama, Tokyo.",
+          "url": "https://www.youtube.com/watch?v=-c-k_Q8oSBw",
+          "published_at": "2025-09-27T08:00:00Z",
+          "detected_event_date": "2025-09-27",
+          "channel_id": "UCKCspf_NrY16rUnODmBqOWA"
+        },
+        {
+          "title": "【青山 青葉公園 盆踊り 2025】「となりのトトロ」井上あずみ 盆踊り / 青山熊野神社例大祭 Akasaka Hikawa Festival 2025 My Neighbor Totoro",
+          "url": "https://www.youtube.com/watch?v=8yjdzG6GM-E",
+          "published_at": "2025-10-02T09:00:22Z",
+          "detected_event_date": "",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "かがやき音頭　青山熊野神社例大祭奉納踊り１　青葉公園盆踊り　2025年9月26日",
+          "url": "https://www.youtube.com/watch?v=n_F-1pNdMh4",
+          "published_at": "2025-10-03T12:31:06Z",
+          "detected_event_date": "2025-09-26",
+          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
+        },
+        {
+          "title": "津軽甚句（ドダレバチ）　青山熊野神社例大祭奉納踊り２　青葉公園盆踊り　2025年9月26日",
+          "url": "https://www.youtube.com/watch?v=Tpy66sNqAJk",
+          "published_at": "2025-10-04T12:30:38Z",
+          "detected_event_date": "2025-09-26",
+          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
+        },
+        {
+          "title": "「花火音頭」（橋幸夫）　青山熊野神社例大祭奉納踊り３　青葉公園盆踊り　2025年9月26日",
+          "url": "https://www.youtube.com/watch?v=oundF9exZsA",
+          "published_at": "2025-10-05T12:30:56Z",
+          "detected_event_date": "2025-09-26",
+          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
+        },
+        {
+          "title": "「チャンチキおけさ」（三波春夫）　青山熊野神社例大祭奉納踊り４　青葉公園盆踊り　2025年9月26日",
+          "url": "https://www.youtube.com/watch?v=eUAhlgcUKlw",
+          "published_at": "2025-10-06T12:01:19Z",
+          "detected_event_date": "2025-09-26",
+          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
+        },
+        {
+          "title": "ハッピーロック　青山熊野神社例大祭奉納踊り５　青葉公園盆踊り　2025年9月26日",
+          "url": "https://www.youtube.com/watch?v=Y5gb5x6YX-g",
+          "published_at": "2025-10-07T12:01:15Z",
+          "detected_event_date": "2025-09-26",
+          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
+        },
+        {
+          "title": "ご祝儀音頭　青山熊野神社例大祭奉納踊り６　青葉公園盆踊り　2025年9月26日",
+          "url": "https://www.youtube.com/watch?v=opQI6O4Z7c8",
+          "published_at": "2025-10-07T12:31:07Z",
+          "detected_event_date": "2025-09-26",
+          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
+        }
+      ],
+      "decision": {
+        "key": "remaining_backfill|date_backfill_candidate_multi_date|37b8be04-e762-814a-a9af-c9d8490a0a55|青山熊野神社例大祭 奉納踊り",
+        "action": "skip_registered",
+        "reason": "2025-09-26〜2025-09-27開催としてNotionへ反映済み。盆まる記事と青葉公園のYouTube動画群で確認済み。"
+      }
     },
     {
-      "bucket": "remaining_backfill:prior_year_video_uploaded_in_2025",
-      "items": 3,
-      "videos": 35
+      "queue": "remaining_backfill",
+      "priority": "normal",
+      "category": "date_backfill_candidate_multi_date",
+      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE 2026",
+      "event_id": "3778be04-e762-81d5-b02b-eb34684595ae",
+      "video_count": 14,
+      "detected_dates": [
+        "2025-05-30",
+        "2025-06-01",
+        "2025-09-27",
+        "2025-09-28"
+      ],
+      "source_url": "https://mantan-web.jp/prtimes/article/20260527prt00m200000530a.html",
+      "recommended_action": "複数日開催または誤混入を確認し、日付範囲を補正候補にする",
+      "sample_videos": [
+        {
+          "title": "[4K]🇯🇵 DJ KOOが渋谷で盆踊り｜Get Wild｜EZ DO DANCE｜とっとこハム太郎｜他 / Japanese Bon dance in Shibuya, Tokyo.",
+          "url": "https://www.youtube.com/watch?v=2VL89WkbEWE",
+          "published_at": "2025-06-01T12:30:03Z",
+          "detected_event_date": "2025-06-01",
+          "channel_id": "UCKCspf_NrY16rUnODmBqOWA"
+        },
+        {
+          "title": "【GMOシブヤエンタメ祭 盆踊り】「愛♡スクリ～ム！/ わたしの一番かわいいところ」で盆踊り/ #盆踊り SHIBUYA MIYASHITA PARK BON DANCE",
+          "url": "https://www.youtube.com/watch?v=XehJce12asQ",
+          "published_at": "2025-06-01T14:44:16Z",
+          "detected_event_date": "2025-05-30",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【GMOシブヤエンタメ祭 盆踊り】「ダンシングヒーロー」荻野目洋子で盆踊り / #盆踊り SHIBUYA MIYASHITA PARK BON DANCE",
+          "url": "https://www.youtube.com/watch?v=MPf7mKO1nc8",
+          "published_at": "2025-06-01T15:08:52Z",
+          "detected_event_date": "2025-05-30",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【GMOシブヤエンタメ祭 盆踊り】「ダンシングヒーロー」荻野目洋子 / #盆踊り SHIBUYA MIYASHITA PARK BON DANCE",
+          "url": "https://www.youtube.com/watch?v=MAsmj7UIKyA",
+          "published_at": "2025-06-10T12:00:42Z",
+          "detected_event_date": "2025-05-30",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "[4K]🇯🇵 渋谷でultra soul！B'zで盆踊り！激混み会場で外国人も踊りまくる！！ / SHIBUYA MIYASHITA PARK BON DANCE 2025",
+          "url": "https://www.youtube.com/watch?v=dZp8xUrphEE",
+          "published_at": "2025-09-27T12:43:39Z",
+          "detected_event_date": "2025-09-27",
+          "channel_id": "UCKCspf_NrY16rUnODmBqOWA"
+        },
+        {
+          "title": "”大盛況”「ギザギザハートの子守唄」盆踊り 【渋谷宮下パーク BON DANCE 2025】チェッカーズ SHIBUYA MIYASHITA PARK BON DANCE 2025",
+          "url": "https://www.youtube.com/watch?v=tqN1_Zn1XGQ",
+          "published_at": "2025-09-27T14:48:12Z",
+          "detected_event_date": "2025-09-27",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【渋谷宮下パーク BON DANCE 2025】「東京音頭」 盆踊り / SHIBUYA MIYASHITA PARK BON DANCE 2025",
+          "url": "https://www.youtube.com/watch?v=aICldK2fWJs",
+          "published_at": "2025-09-27T22:30:01Z",
+          "detected_event_date": "2025-09-27",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【渋谷宮下パーク BON DANCE 2025】「ultra soul」B’z 盆踊り / SHIBUYA MIYASHITA PARK BON DANCE 2025",
+          "url": "https://www.youtube.com/watch?v=G33WqNK76dk",
+          "published_at": "2025-09-28T00:30:26Z",
+          "detected_event_date": "2025-09-27",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        }
+      ],
+      "decision": {
+        "key": "remaining_backfill|date_backfill_candidate_multi_date|3778be04-e762-81d5-b02b-eb34684595ae|SHIBUYA MIYASHITA PARK BON DANCE 2026",
+        "action": "skip_registered",
+        "reason": "2025-05/06のGMOシブヤエンタメ祭 × JAME盆踊りと、2025-09のSHIBUYA MIYASHITA PARK BON DANCE 2025へ分離反映済み。2026イベントへの日付補正には使わない。"
+      }
     },
     {
-      "bucket": "remaining_backfill:year_mismatch_or_recurring_event_review",
-      "items": 3,
-      "videos": 19
-    }
-  ],
-  "rows": [
+      "queue": "remaining_backfill",
+      "priority": "high",
+      "category": "date_backfill_candidate_single_date",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "event_id": "3788be04-e762-8171-beaf-fbf4a04104bf",
+      "video_count": 13,
+      "detected_dates": [
+        "2025-04-19"
+      ],
+      "source_url": "https://www.youtube.com/playlist?list=PLykeSsDm2Wtw8BUdNnjm4WgxFI2q5SJ6f",
+      "recommended_action": "公式/既存ソースで日付確認後、Notion日付補正とYouTube証拠反映を検討",
+      "sample_videos": [
+        {
+          "title": "【4K】【相馬盆唄】　2025年4月19日飛鳥山公園盆踊り会1　東京都北区",
+          "url": "https://www.youtube.com/watch?v=LrByNJuKz6w",
+          "published_at": "2025-04-20T13:30:24Z",
+          "detected_event_date": "2025-04-19",
+          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
+        },
+        {
+          "title": "【4K】沖縄よいとこ　2025年4月19日飛鳥山公園盆踊り会２　東京都北区",
+          "url": "https://www.youtube.com/watch?v=8JK-vkklDLU",
+          "published_at": "2025-04-21T11:30:07Z",
+          "detected_event_date": "2025-04-19",
+          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
+        },
+        {
+          "title": "【4K】川口小唄　2025年4月19日飛鳥山公園盆踊り会３　東京都北区",
+          "url": "https://www.youtube.com/watch?v=-B5INsr_OqQ",
+          "published_at": "2025-04-22T11:30:00Z",
+          "detected_event_date": "2025-04-19",
+          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
+        },
+        {
+          "title": "【4K】百年桜　2025年4月19日飛鳥山公園盆踊り会４　東京都北区",
+          "url": "https://www.youtube.com/watch?v=GlH-A-KOE4o",
+          "published_at": "2025-04-23T11:30:13Z",
+          "detected_event_date": "2025-04-19",
+          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
+        },
+        {
+          "title": "【4K】【蟹工船】（村田英雄）　2025年4月19日飛鳥山公園盆踊り会５　東京都北区",
+          "url": "https://www.youtube.com/watch?v=wCD1DBqMymU",
+          "published_at": "2025-04-24T11:01:33Z",
+          "detected_event_date": "2025-04-19",
+          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
+        },
+        {
+          "title": "【4K】おんなの気持ち　2025年4月19日飛鳥山公園盆踊り会6　東京都北区",
+          "url": "https://www.youtube.com/watch?v=LptKR0JQCWs",
+          "published_at": "2025-04-25T11:00:37Z",
+          "detected_event_date": "2025-04-19",
+          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
+        },
+        {
+          "title": "【4K】にっぽんチャチャチャ　2025年4月19日飛鳥山公園盆踊り会７　東京都北区",
+          "url": "https://www.youtube.com/watch?v=CZ6w1nS86Q8",
+          "published_at": "2025-04-26T10:00:19Z",
+          "detected_event_date": "2025-04-19",
+          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
+        },
+        {
+          "title": "【4K】「東西南北音頭」（三沢あけみ／橋幸夫）　2025年4月19日飛鳥山公園盆踊り会８　東京都北区",
+          "url": "https://www.youtube.com/watch?v=vTpNDxDGlfw",
+          "published_at": "2025-04-27T10:01:28Z",
+          "detected_event_date": "2025-04-19",
+          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
+        }
+      ],
+      "decision": {
+        "key": "remaining_backfill|date_backfill_candidate_single_date|3788be04-e762-8171-beaf-fbf4a04104bf|飛鳥山公園盆踊り会（有志サークル）",
+        "action": "skip_registered",
+        "reason": "2025-04-19開催としてNotionへ反映済み。北区民ニュースとYouTube複数動画で確認済み。"
+      }
+    },
+    {
+      "queue": "remaining_backfill",
+      "priority": "high",
+      "category": "date_backfill_candidate_single_date",
+      "event_name": "謝恩納涼盆踊り大会（青山善光寺）",
+      "event_id": "37b8be04-e762-8126-8174-f8371f43e2c1",
+      "video_count": 12,
+      "detected_dates": [
+        "2025-07-28"
+      ],
+      "source_url": "https://bonmaru.zenmin-odori.jp/archives/151",
+      "recommended_action": "公式/既存ソースで日付確認後、Notion日付補正とYouTube証拠反映を検討",
+      "sample_videos": [
+        {
+          "title": "MY HOME TOWN　2025年青山善光寺盆踊り１　青山表参道商店会　東京都港区",
+          "url": "https://www.youtube.com/watch?v=sP0aGtLMZRY",
+          "published_at": "2025-08-03T11:30:43Z",
+          "detected_event_date": "2025-07-28",
+          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
+        },
+        {
+          "title": "【東京音頭】（原田直之）　2025年青山善光寺盆踊り２　青山表参道商店会　東京都港区",
+          "url": "https://www.youtube.com/watch?v=eWuMkA4RwnU",
+          "published_at": "2025-08-04T11:30:29Z",
+          "detected_event_date": "2025-07-28",
+          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
+        },
+        {
+          "title": "「炭坑節」（初代鈴木正夫）　2025年青山善光寺盆踊り３　青山表参道商店会　東京都港区",
+          "url": "https://www.youtube.com/watch?v=PQYyLRKehvw",
+          "published_at": "2025-08-05T11:30:32Z",
+          "detected_event_date": "2025-07-28",
+          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
+        },
+        {
+          "title": "【大東京音頭】（金沢明子橋幸夫）　2025年青山善光寺盆踊り４　青山表参道商店会　東京都港区",
+          "url": "https://www.youtube.com/watch?v=FC-fdph06IE",
+          "published_at": "2025-08-06T10:00:25Z",
+          "detected_event_date": "2025-07-28",
+          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
+        },
+        {
+          "title": "【八木節】（小野田実）　2025年青山善光寺盆踊り５　青山表参道商店会　東京都港区",
+          "url": "https://www.youtube.com/watch?v=osi64ZDPL74",
+          "published_at": "2025-08-07T10:01:36Z",
+          "detected_event_date": "2025-07-28",
+          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
+        },
+        {
+          "title": "東京みなと音頭　2025年青山善光寺盆踊り６　青山表参道商店会　東京都港区",
+          "url": "https://www.youtube.com/watch?v=4HH8B8_xZls",
+          "published_at": "2025-08-08T10:00:10Z",
+          "detected_event_date": "2025-07-28",
+          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
+        },
+        {
+          "title": "【ハワイ音頭】　2025年青山善光寺盆踊り７　青山表参道商店会　東京都港区",
+          "url": "https://www.youtube.com/watch?v=RTxKdOU2VQQ",
+          "published_at": "2025-08-09T10:00:44Z",
+          "detected_event_date": "2025-07-28",
+          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
+        },
+        {
+          "title": "【相馬盆唄】　2025年青山善光寺盆踊り８　青山表参道商店会　東京都港区",
+          "url": "https://www.youtube.com/watch?v=kojyQ1gHzyI",
+          "published_at": "2025-08-10T10:01:13Z",
+          "detected_event_date": "2025-07-28",
+          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
+        }
+      ],
+      "decision": {
+        "key": "remaining_backfill|date_backfill_candidate_single_date|37b8be04-e762-8126-8174-f8371f43e2c1|謝恩納涼盆踊り大会（青山善光寺）",
+        "action": "skip_registered",
+        "reason": "2025-07-27〜2025-07-28開催としてNotionへ反映済み。OMOHARAREALとYouTube動画で確認済み。"
+      }
+    },
+    {
+      "queue": "remaining_backfill",
+      "priority": "high",
+      "category": "date_backfill_candidate_single_date",
+      "event_name": "六本木天祖神社（龍土神明宮）例大祭 盆踊り",
+      "event_id": "3788be04-e762-8127-a6f0-d54bffc71fd5",
+      "video_count": 1,
+      "detected_dates": [
+        "2025-09-28"
+      ],
+      "source_url": "http://tensojinja.tokyo-jinjacho.or.jp/saiten00.html",
+      "recommended_action": "公式/既存ソースで日付確認後、Notion日付補正とYouTube証拠反映を検討",
+      "sample_videos": [
+        {
+          "title": "【六本木アートナイト2025】TAGO《韓国の鼓動 ドラム・シャーマン 타고 》2025.9.28 @龍土町美術館通り・六本木天祖神社",
+          "url": "https://www.youtube.com/watch?v=OW497Kn8Rx8",
+          "published_at": "2025-09-28T19:40:40Z",
+          "detected_event_date": "2025-09-28",
+          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
+        }
+      ],
+      "decision": {
+        "key": "remaining_backfill|date_backfill_candidate_single_date|3788be04-e762-8127-a6f0-d54bffc71fd5|六本木天祖神社（龍土神明宮）例大祭 盆踊り",
+        "action": "exclude_out_of_scope",
+        "reason": "動画は六本木アートナイト2025のTAGO出演演目で、六本木天祖神社例大祭の盆踊り開催証拠ではないため除外。"
+      }
+    },
+    {
+      "queue": "remaining_backfill",
+      "priority": "low",
+      "category": "prior_year_video_uploaded_in_2025",
+      "event_name": "品川区民まつり 西大井広場公園 盆踊り",
+      "event_id": "37b8be04-e762-81bb-97b7-f29fcab6ff14",
+      "video_count": 19,
+      "detected_dates": [],
+      "source_url": "https://bonmaru.zenmin-odori.jp/archives/202668",
+      "recommended_action": "動画公開日は2025年だがタイトル上は過去年実績。2025イベント証拠としては反映しない",
+      "sample_videos": [
+        {
+          "title": "品川音頭　2024年デコトラ盆踊り１　東京都品川区　西大井広場公園",
+          "url": "https://www.youtube.com/watch?v=zOPTqQe_dO8",
+          "published_at": "2025-04-07T10:01:12Z",
+          "detected_event_date": "",
+          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
+        },
+        {
+          "title": "品川甚句　2024年デコトラ盆踊り２　東京都品川区　西大井広場公園",
+          "url": "https://www.youtube.com/watch?v=a_5nk-m6vIs",
+          "published_at": "2025-04-08T10:00:02Z",
+          "detected_event_date": "",
+          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
+        },
+        {
+          "title": "ドンパン節　2024年デコトラ盆踊り３　東京都品川区　西大井広場公園",
+          "url": "https://www.youtube.com/watch?v=mE87j5yJSC8",
+          "published_at": "2025-04-09T10:01:07Z",
+          "detected_event_date": "",
+          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
+        },
+        {
+          "title": "ドラえもん音頭　2024年デコトラ盆踊り４　東京都品川区　西大井広場公園",
+          "url": "https://www.youtube.com/watch?v=xyJiZBjKN7o",
+          "published_at": "2025-04-10T10:01:32Z",
+          "detected_event_date": "",
+          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
+        },
+        {
+          "title": "夢ヤッサ　2024年デコトラ盆踊り５　東京都品川区　西大井広場公園",
+          "url": "https://www.youtube.com/watch?v=-eu3UPttBpA",
+          "published_at": "2025-04-11T10:00:03Z",
+          "detected_event_date": "",
+          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
+        },
+        {
+          "title": "郡上節かわさき　2024年デコトラ盆踊り６　東京都品川区　西大井広場公園",
+          "url": "https://www.youtube.com/watch?v=TKg_iEXpZnE",
+          "published_at": "2025-04-12T10:00:45Z",
+          "detected_event_date": "",
+          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
+        },
+        {
+          "title": "郡上節春駒　2024年デコトラ盆踊り７　東京都品川区　西大井広場公園",
+          "url": "https://www.youtube.com/watch?v=gu9ypNNV3TA",
+          "published_at": "2025-04-13T10:01:05Z",
+          "detected_event_date": "",
+          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
+        },
+        {
+          "title": "【八木節】　2024年デコトラ盆踊り８　東京都品川区　西大井広場公園",
+          "url": "https://www.youtube.com/watch?v=zKneOhE17TA",
+          "published_at": "2025-04-14T10:01:35Z",
+          "detected_event_date": "",
+          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
+        }
+      ],
+      "decision": {
+        "key": "remaining_backfill|prior_year_video_uploaded_in_2025|37b8be04-e762-81bb-97b7-f29fcab6ff14|品川区民まつり 西大井広場公園 盆踊り",
+        "action": "hold_source_video_mismatch",
+        "reason": "盆まるで2025開催情報は確認できるが、キュー内YouTube動画は2024タイトルのため2025動画証拠としては保留。"
+      }
+    },
+    {
+      "queue": "remaining_backfill",
+      "priority": "low",
+      "category": "prior_year_video_uploaded_in_2025",
+      "event_name": "京橋盆踊り",
+      "event_id": "37b8be04-e762-818a-8e40-f5a158baebfc",
+      "video_count": 10,
+      "detected_dates": [],
+      "source_url": "https://www.edogrand.tokyo/event/6924",
+      "recommended_action": "動画公開日は2025年だがタイトル上は過去年実績。2025イベント証拠としては反映しない",
+      "sample_videos": [
+        {
+          "title": "これがお江戸の盆ダンス　2024年京橋盆踊り１　京橋エドグラン　東京都中央区",
+          "url": "https://www.youtube.com/watch?v=Za-nKihbGwo",
+          "published_at": "2025-01-28T10:00:28Z",
+          "detected_event_date": "",
+          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
+        },
+        {
+          "title": "「炭坑節」　2024年京橋盆踊り２　京橋エドグラン　東京都中央区",
+          "url": "https://www.youtube.com/watch?v=nF_UDhhNrUY",
+          "published_at": "2025-01-28T10:30:30Z",
+          "detected_event_date": "",
+          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
+        },
+        {
+          "title": "銀座カンカン娘　2024年京橋盆踊り３　京橋エドグラン　東京都中央区",
+          "url": "https://www.youtube.com/watch?v=QDBGEoWD1do",
+          "published_at": "2025-01-29T10:00:27Z",
+          "detected_event_date": "",
+          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
+        },
+        {
+          "title": "「きよしのズンドコ節」　2024年京橋盆踊り４　京橋エドグラン　東京都中央区",
+          "url": "https://www.youtube.com/watch?v=uJqNQ9dMa9w",
+          "published_at": "2025-01-29T10:30:25Z",
+          "detected_event_date": "",
+          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
+        },
+        {
+          "title": "ダンシング・ヒーロー　2024年京橋盆踊り５　京橋エドグラン　東京都中央区",
+          "url": "https://www.youtube.com/watch?v=-Ss8wvxCUlc",
+          "published_at": "2025-01-30T10:00:00Z",
+          "detected_event_date": "",
+          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
+        },
+        {
+          "title": "バハマ・ママ　2024年京橋盆踊り６　京橋エドグラン　東京都中央区",
+          "url": "https://www.youtube.com/watch?v=x0IBhz1fOlY",
+          "published_at": "2025-01-30T10:30:22Z",
+          "detected_event_date": "",
+          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
+        },
+        {
+          "title": "東京音頭　2024年京橋盆踊り７　京橋エドグラン　東京都中央区",
+          "url": "https://www.youtube.com/watch?v=vAshQG9ck3A",
+          "published_at": "2025-01-31T10:01:08Z",
+          "detected_event_date": "",
+          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
+        },
+        {
+          "title": "「チャンチキおけさ」　2024年京橋盆踊り８　京橋エドグラン　東京都中央区",
+          "url": "https://www.youtube.com/watch?v=lqLreQN4c6E",
+          "published_at": "2025-01-31T10:30:21Z",
+          "detected_event_date": "",
+          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
+        }
+      ],
+      "decision": {
+        "key": "remaining_backfill|prior_year_video_uploaded_in_2025|37b8be04-e762-818a-8e40-f5a158baebfc|京橋盆踊り",
+        "action": "hold_source_video_mismatch",
+        "reason": "公式ページで2025開催情報は確認できるが、キュー内YouTube動画は2024タイトルのため2025動画証拠としては保留。"
+      }
+    },
+    {
+      "queue": "remaining_backfill",
+      "priority": "low",
+      "category": "prior_year_video_uploaded_in_2025",
+      "event_name": "根津神社 盆踊り（文京区）",
+      "event_id": "3778be04-e762-81ea-b182-e47d214c0089",
+      "video_count": 6,
+      "detected_dates": [],
+      "source_url": "https://bonmaru.zenmin-odori.jp/archives/2674",
+      "recommended_action": "動画公開日は2025年だがタイトル上は過去年実績。2025イベント証拠としては反映しない",
+      "sample_videos": [
+        {
+          "title": "大東京音頭　2024年竜泉二丁目町会納涼盆踊り大会１　東京都台東区",
+          "url": "https://www.youtube.com/watch?v=Mpdekksis2I",
+          "published_at": "2025-01-01T10:00:16Z",
+          "detected_event_date": "",
+          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
+        },
+        {
+          "title": "「ダンシングヒーロー」　〆太鼓　2024年竜泉二丁目町会納涼盆踊り大会２終　東京都台東区",
+          "url": "https://www.youtube.com/watch?v=Uihw5aiCtQI",
+          "published_at": "2025-01-01T10:30:12Z",
+          "detected_event_date": "",
+          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
+        },
+        {
+          "title": "ニッポンワッショイ　2024年外神田納涼盆踊り大会19　秋葉原芳林公園　東京都千代田区",
+          "url": "https://www.youtube.com/watch?v=8nvnh7iOZh4",
+          "published_at": "2025-01-02T10:00:11Z",
+          "detected_event_date": "",
+          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
+        },
+        {
+          "title": "銭形平次　2024年外神田納涼盆踊り大会20　秋葉原芳林公園　東京都千代田区",
+          "url": "https://www.youtube.com/watch?v=3KKv4WaQ8ds",
+          "published_at": "2025-01-02T10:30:01Z",
+          "detected_event_date": "",
+          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
+        },
+        {
+          "title": "大東京音頭　2024年外神田納涼盆踊り大会21　秋葉原芳林公園　東京都千代田区",
+          "url": "https://www.youtube.com/watch?v=-dhdiQ7s3Rw",
+          "published_at": "2025-01-03T10:00:00Z",
+          "detected_event_date": "",
+          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
+        },
+        {
+          "title": "大江戸助六太鼓門下生　和太鼓演奏　2024年外神田納涼盆踊り大会22終　秋葉原芳林公園　東京都千代田区",
+          "url": "https://www.youtube.com/watch?v=M4jB-5rTWzE",
+          "published_at": "2025-01-03T10:30:15Z",
+          "detected_event_date": "",
+          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
+        }
+      ],
+      "decision": {
+        "key": "remaining_backfill|prior_year_video_uploaded_in_2025|3778be04-e762-81ea-b182-e47d214c0089|根津神社 盆踊り（文京区）",
+        "action": "exclude_out_of_scope",
+        "reason": "ソースは古い根津神社系、動画は竜泉二丁目/外神田など別イベントにズレているため除外。"
+      }
+    },
+    {
+      "queue": "remaining_backfill",
+      "priority": "low",
+      "category": "year_mismatch_or_recurring_event_review",
+      "event_name": "みたままつり 納涼民踊のつどい",
+      "event_id": "3788be04-e762-8181-945d-f85785e88086",
+      "video_count": 12,
+      "detected_dates": [],
+      "source_url": "https://drive.google.com/file/d/1CH9HDeWZx4Ym39mpRFJme9EhknKSHasO/view?usp=drive_link",
+      "recommended_action": "2025動画を2026イベントへ入れず、過去年実績または2025イベント別ページとして扱うか確認",
+      "sample_videos": [
+        {
+          "title": "【靖国神社 みたままつり2025】奉納演奏 千修吹奏楽団パレード 奉納演奏 2025",
+          "url": "https://www.youtube.com/watch?v=M5KgsOEnhE8",
+          "published_at": "2025-07-13T14:35:00Z",
+          "detected_event_date": "",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "大妻女子大 神輿も練り歩く!! 一日目【靖国神社 みたままつり2025】みこし振り 麹町靖國講神輿 #神輿 Yasukuni Shrine Mitama Festival 2025",
+          "url": "https://www.youtube.com/watch?v=G5ZLCaSX-lA",
+          "published_at": "2025-07-13T16:27:08Z",
+          "detected_event_date": "",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【4K】靖国神社みたままつり2025 ｜神輿の後ろでは盆踊り!! 日本文化が渋滞中!! ... みこし振り 麹町靖國講神輿 #神輿 Yasukuni Shrine Mitama Festival",
+          "url": "https://www.youtube.com/watch?v=bplHnAD3-bI",
+          "published_at": "2025-07-14T08:00:40Z",
+          "detected_event_date": "",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【4K】靖国神社 みたままつり 盆踊り|「ダンシングヒーロー」 荻野目洋子 | Yasukuni Shrine Mitama Festival 2025 #盆踊り",
+          "url": "https://www.youtube.com/watch?v=SggXZLFIVss",
+          "published_at": "2025-07-14T14:01:52Z",
+          "detected_event_date": "",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【4K】靖国神社 みたままつり 2025｜青森ねぶた |  Aomori Nebuta  Yasukuni Shrine Mitama Festival",
+          "url": "https://www.youtube.com/watch?v=251fAxLQmU8",
+          "published_at": "2025-07-14T17:31:08Z",
+          "detected_event_date": "",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "靖国神社みたままつり #東京 #yasukunishrine #盆踊り #mitamamatsuri #tokyo #mitamafestival #superbusy #大混雑",
+          "url": "https://www.youtube.com/watch?v=nZhQVFMiv18",
+          "published_at": "2025-07-15T03:00:46Z",
+          "detected_event_date": "",
+          "channel_id": "UCaVANrt14S6q-if2BBOE4TQ"
+        },
+        {
+          "title": "【4K】「大東京音頭」 | 靖国神社みたままつり盆踊り | Yasukuni Shrine Mitama Festival 2025 #盆踊り",
+          "url": "https://www.youtube.com/watch?v=m_8Wu9NC6Wg",
+          "published_at": "2025-07-15T07:30:33Z",
+          "detected_event_date": "",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【4K】「銀座カンカン娘」| 靖国神社みたままつり盆踊り | Yasukuni Shrine Mitama Festival 2025 #盆踊り",
+          "url": "https://www.youtube.com/watch?v=xnqbf6nlWiQ",
+          "published_at": "2025-07-15T09:01:24Z",
+          "detected_event_date": "",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        }
+      ],
+      "decision": {
+        "key": "remaining_backfill|year_mismatch_or_recurring_event_review|3788be04-e762-8181-945d-f85785e88086|みたままつり 納涼民踊のつどい",
+        "action": "hold_needs_scope_decision",
+        "reason": "神輿/奉納演奏中心の動画が混在し、納涼民踊としての扱いを再確認するまで保留。"
+      }
+    },
+    {
+      "queue": "remaining_backfill",
+      "priority": "low",
+      "category": "year_mismatch_or_recurring_event_review",
+      "event_name": "奥浅草盆踊り",
+      "event_id": "3788be04-e762-81b6-8835-f39be0b29bee",
+      "video_count": 5,
+      "detected_dates": [],
+      "source_url": "https://twitter.com/Okuasakusa_bon",
+      "recommended_action": "2025動画を2026イベントへ入れず、過去年実績または2025イベント別ページとして扱うか確認",
+      "sample_videos": [
+        {
+          "title": "【奥浅草盆踊り 2025】「エロティカセブン」サザンオールスターズで盆踊り / #盆踊り OkuAsakusa Bon Dance　EROTICA SEVEN",
+          "url": "https://www.youtube.com/watch?v=DqB3liFpD6g",
+          "published_at": "2025-06-28T17:36:34Z",
+          "detected_event_date": "",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【奥浅草盆踊り 2025】今年で3回目!! 東京屈指の絶景人気盆踊り会場!!  #盆踊り OkuAsakusa Bon Dance",
+          "url": "https://www.youtube.com/watch?v=3zoXTAt5WwQ",
+          "published_at": "2025-06-29T02:47:29Z",
+          "detected_event_date": "",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【奥浅草盆踊り】「波乗りジョニー」桑田佳祐で盆踊り / #盆踊り OkuAsakusa Bon Dance",
+          "url": "https://www.youtube.com/watch?v=cWjceY6nLJI",
+          "published_at": "2025-06-30T08:00:46Z",
+          "detected_event_date": "",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【奥浅草盆踊り】今年の新曲「LOVE AFFAIR 〜秘密のデート〜」サザンオールスターズで盆踊り  #盆踊り OkuAsakusa Bon Dance 2025",
+          "url": "https://www.youtube.com/watch?v=KIIr-8bHQa0",
+          "published_at": "2025-06-30T10:00:30Z",
+          "detected_event_date": "",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【4K】奥浅草盆踊り 2025 第三部  「燃えろ日本の夏祭り / 炭坑節 / ハラハラ音頭 /  おめでた音頭 /  ふるさと音頭」#盆踊り OkuAsakusa Bon Dance",
+          "url": "https://www.youtube.com/watch?v=OzS13qNZ1uw",
+          "published_at": "2025-06-30T11:30:32Z",
+          "detected_event_date": "",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        }
+      ],
+      "decision": {
+        "key": "remaining_backfill|year_mismatch_or_recurring_event_review|3788be04-e762-81b6-8835-f39be0b29bee|奥浅草盆踊り",
+        "action": "skip_registered",
+        "reason": "こと判定: 第3回奥浅草盆踊り2025を確認。DB/公開データ上は既存反映済み。"
+      }
+    },
+    {
+      "queue": "remaining_backfill",
+      "priority": "low",
+      "category": "year_mismatch_or_recurring_event_review",
+      "event_name": "すみだ錦糸町河内音頭大盆踊り",
+      "event_id": "3778be04-e762-817c-a6a2-f9d219bf1e9e",
+      "video_count": 2,
+      "detected_dates": [],
+      "source_url": "https://www.kinshicho-kawachiondo.jp/archives/1058",
+      "recommended_action": "2025動画を2026イベントへ入れず、過去年実績または2025イベント別ページとして扱うか確認",
+      "sample_videos": [
+        {
+          "title": "【すみだ錦糸町河内音頭大盆踊り 2025】「江州音頭」中西レモン &ドーナツディスコデラックス / 山中一平 / カオリーニョ藤原 江州音頭 盆踊り",
+          "url": "https://www.youtube.com/watch?v=QznGUNIdJKY",
+          "published_at": "2025-07-31T22:00:37Z",
+          "detected_event_date": "",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "So Intense! Sumida Kinshicho Kawachi Ondo Bon Odori 2025",
+          "url": "https://www.youtube.com/watch?v=DzS39RxU5aU",
+          "published_at": "2025-08-12T12:19:31Z",
+          "detected_event_date": "",
+          "channel_id": "UCaVANrt14S6q-if2BBOE4TQ"
+        }
+      ],
+      "decision": {
+        "key": "remaining_backfill|year_mismatch_or_recurring_event_review|3778be04-e762-817c-a6a2-f9d219bf1e9e|すみだ錦糸町河内音頭大盆踊り",
+        "action": "skip_registered",
+        "reason": "こと判定: 墨田区観光協会/公式サイトで第43回 2025-07-30〜31を確認。公開データ上は既存反映済み。"
+      }
+    },
+    {
+      "queue": "needs_official_confirmation",
+      "priority": "high",
+      "category": "official_url_candidate",
+      "primary_url": "https://www.jrtk.jp/edonoren/",
+      "primary_domain": "jrtk.jp",
+      "video_count": 1,
+      "detected_dates": [
+        "2025-07-13"
+      ],
+      "titles": [
+        "The Yokai Bon Dance / 妖怪盆踊り 2005 at 両国 Edo Noren"
+      ],
+      "videos": [
+        {
+          "title": "The Yokai Bon Dance / 妖怪盆踊り 2005 at 両国 Edo Noren",
+          "video_url": "https://www.youtube.com/watch?v=E9Uh-Iwfq4s",
+          "official_urls": [
+            "https://www.jrtk.jp/edonoren/",
+            "https://prtimes.jp/main/html/rd/p/000000524.000015279.html",
+            "https://www.instagram.com/expjapanzen/",
+            "https://www.ebay.com/usr/exploringjapanzen"
+          ],
+          "detected_event_date": "2025-07-13",
+          "channel_id": "UCSHoRoW171uEytgOcKkKU2Q"
+        }
+      ],
+      "decision": {
+        "key": "needs_official_confirmation|official_url_candidate|https://www.jrtk.jp/edonoren/",
+        "action": "hold_needs_date_source",
+        "reason": "こと判定: 2025年7月2日掲載の妖怪BON DANCE告知は確認できたが、具体的な開催日・期間が取れないため日付不明のまま登録しない。"
+      }
+    },
+    {
+      "queue": "needs_official_confirmation",
+      "priority": "high",
+      "category": "official_url_candidate",
+      "primary_url": "https://www.jiyugaoka-abc.com/event/2025/bonodori/",
+      "primary_domain": "jiyugaoka-abc.com",
+      "video_count": 1,
+      "detected_dates": [
+        "2025-07-20"
+      ],
+      "titles": [
+        "Jiyugaoka Bon Odori Dance festival / 自由が丘盆踊り 2025"
+      ],
+      "videos": [
+        {
+          "title": "Jiyugaoka Bon Odori Dance festival / 自由が丘盆踊り 2025",
+          "video_url": "https://www.youtube.com/watch?v=25REB1IJg3k",
+          "official_urls": [
+            "https://www.jiyugaoka-abc.com/event/2025/bonodori/",
+            "https://www.instagram.com/expjapanzen/",
+            "https://www.ebay.com/usr/exploringjapanzen"
+          ],
+          "detected_event_date": "2025-07-20",
+          "channel_id": "UCSHoRoW171uEytgOcKkKU2Q"
+        }
+      ],
+      "decision": {
+        "key": "needs_official_confirmation|official_url_candidate|https://www.jiyugaoka-abc.com/event/2025/bonodori/",
+        "action": "skip_registered",
+        "reason": "こと判定: 自由が丘盆踊り大会、2025-07-19〜2025-07-21、自由が丘駅前ロータリー特設会場を確認。DB上は既存イベント反映済み。"
+      }
+    },
+    {
+      "queue": "needs_official_confirmation",
+      "priority": "high",
+      "category": "official_url_candidate",
+      "primary_url": "https://www.marunouchi.com/pickup/event/6763/",
+      "primary_domain": "marunouchi.com",
+      "video_count": 4,
+      "detected_dates": [
+        "2025-07-25",
+        "2025-07-26"
+      ],
+      "titles": [
+        "Marunouchi Bon Odori Dance festival PART 1  /  丸の内盆踊り 2025 パート１",
+        "Marunouchi Bon Odori Dance festival PART 2  /  丸の内盆踊り 2025 パート2",
+        "Marunouchi Bon Odori Dance festival DJ J-POP Time  /  丸の内盆踊り 2025 DJ J-POP Time",
+        "【東京丸の内盆踊り2025】『ドンパン節～毬と殿様～にっぽんチャチャチャ～民謡お国巡り音頭～松の木小唄～龍馬おどり』 👘Tokyo Bon Dance 🏮2025.7.25 @東京駅丸の内口・行幸通り"
+      ],
+      "videos": [
+        {
+          "title": "Marunouchi Bon Odori Dance festival PART 1  /  丸の内盆踊り 2025 パート１",
+          "video_url": "https://www.youtube.com/watch?v=seY6P_Ngq4E",
+          "official_urls": [
+            "https://www.marunouchi.com/pickup/event/6763/",
+            "https://www.instagram.com/expjapanzen/",
+            "https://www.ebay.com/usr/exploringjapanzen"
+          ],
+          "detected_event_date": "2025-07-26",
+          "channel_id": "UCSHoRoW171uEytgOcKkKU2Q"
+        },
+        {
+          "title": "Marunouchi Bon Odori Dance festival PART 2  /  丸の内盆踊り 2025 パート2",
+          "video_url": "https://www.youtube.com/watch?v=wsnxABvy3BM",
+          "official_urls": [
+            "https://www.marunouchi.com/pickup/event/6763/",
+            "https://www.instagram.com/expjapanzen/",
+            "https://www.ebay.com/usr/exploringjapanzen"
+          ],
+          "detected_event_date": "2025-07-26",
+          "channel_id": "UCSHoRoW171uEytgOcKkKU2Q"
+        },
+        {
+          "title": "Marunouchi Bon Odori Dance festival DJ J-POP Time  /  丸の内盆踊り 2025 DJ J-POP Time",
+          "video_url": "https://www.youtube.com/watch?v=Otv4gDwv8io",
+          "official_urls": [
+            "https://www.marunouchi.com/pickup/event/6763/",
+            "https://www.instagram.com/expjapanzen/",
+            "https://www.ebay.com/usr/exploringjapanzen"
+          ],
+          "detected_event_date": "2025-07-26",
+          "channel_id": "UCSHoRoW171uEytgOcKkKU2Q"
+        },
+        {
+          "title": "【東京丸の内盆踊り2025】『ドンパン節～毬と殿様～にっぽんチャチャチャ～民謡お国巡り音頭～松の木小唄～龍馬おどり』 👘Tokyo Bon Dance 🏮2025.7.25 @東京駅丸の内口・行幸通り",
+          "video_url": "https://www.youtube.com/watch?v=Ig4Ocvre8Y0",
+          "official_urls": [
+            "https://www.marunouchi.com/pickup/event/6763/"
+          ],
+          "detected_event_date": "2025-07-25",
+          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
+        }
+      ],
+      "decision": {
+        "key": "needs_official_confirmation|official_url_candidate|https://www.marunouchi.com/pickup/event/6763/",
+        "action": "skip_registered",
+        "reason": "こと判定: 丸の内夏祭り2025内の丸の内de盆踊り、2025-07-25〜2025-07-26、行幸通りを確認。既存のYouTube公式候補反映で登録済み。"
+      }
+    },
+    {
+      "queue": "needs_official_confirmation",
+      "priority": "high",
+      "category": "official_url_candidate",
+      "primary_url": "https://shibuyadogenzaka.com/?p=6827",
+      "primary_domain": "shibuyadogenzaka.com",
+      "video_count": 1,
+      "detected_dates": [
+        "2025-08-02"
+      ],
+      "titles": [
+        "Shibuya Bon Odori Dance festival 2025  /  渋谷 盆踊り 2025"
+      ],
+      "videos": [
+        {
+          "title": "Shibuya Bon Odori Dance festival 2025  /  渋谷 盆踊り 2025",
+          "video_url": "https://www.youtube.com/watch?v=CTA9El6Hmfg",
+          "official_urls": [
+            "https://shibuyadogenzaka.com/?p=6827",
+            "https://www.instagram.com/expjapanzen/",
+            "https://www.ebay.com/usr/exploringjapanzen"
+          ],
+          "detected_event_date": "2025-08-02",
+          "channel_id": "UCSHoRoW171uEytgOcKkKU2Q"
+        }
+      ],
+      "decision": {
+        "key": "needs_official_confirmation|official_url_candidate|https://shibuyadogenzaka.com/?p=6827",
+        "action": "skip_registered",
+        "reason": "こと判定: 第6回渋谷盆踊り2025、2025-08-02 18:00〜21:30、SHIBUYA109前（道玄坂・文化村通り）を確認。DB上は既存イベント反映済み。"
+      }
+    },
+    {
+      "queue": "needs_official_confirmation",
+      "priority": "low",
+      "category": "social_or_map_only",
+      "primary_url": "https://linktr.ee/tokyohertz",
+      "primary_domain": "linktr.ee",
+      "video_count": 6,
+      "detected_dates": [
+        "2025-10-12",
+        "2025-10-17",
+        "2025-10-19"
+      ],
+      "titles": [
+        "😂Ready, Set, Go!🏃Satsuei (Photo/Film) Dash!! @ Shibuya Crossing in Tokyo 2025 4kHDR",
+        "🤩Really Cool!! SHIBUYA RUNWAY -SEOUL MIX- @ Shibuya Fashion Week 2025 Autumn in Tokyo Japan 4kHDR",
+        "💞Friday Night Walk through Trendy Omotesando/Harajuku in Shibuya-ku, Tokyo Japan 2025 4kHDR",
+        "🥳Satsuei (Photo/Film) Dash in the Crazy Crowds!! @ Shibuya Crossing in Tokyo 2025 4kHDR",
+        "😆Someone Shouted “JAPANESE ARE CRAZY!” @ SHIBUYA MUSIC SCRAMBLE × SHIBUYA PLAYGROUND in Tokyo 4kHDR"
+      ],
+      "videos": [
+        {
+          "title": "😂Ready, Set, Go!🏃Satsuei (Photo/Film) Dash!! @ Shibuya Crossing in Tokyo 2025 4kHDR",
+          "video_url": "https://www.youtube.com/watch?v=PQqCg1n43Zw",
+          "official_urls": [
+            "https://linktr.ee/tokyohertz"
+          ],
+          "detected_event_date": "2025-10-12",
+          "channel_id": "UCaVANrt14S6q-if2BBOE4TQ"
+        },
+        {
+          "title": "🤩Really Cool!! SHIBUYA RUNWAY -SEOUL MIX- @ Shibuya Fashion Week 2025 Autumn in Tokyo Japan 4kHDR",
+          "video_url": "https://www.youtube.com/watch?v=5i4PTSbbGbg",
+          "official_urls": [
+            "https://linktr.ee/tokyohertz"
+          ],
+          "detected_event_date": "2025-10-19",
+          "channel_id": "UCaVANrt14S6q-if2BBOE4TQ"
+        },
+        {
+          "title": "💞Friday Night Walk through Trendy Omotesando/Harajuku in Shibuya-ku, Tokyo Japan 2025 4kHDR",
+          "video_url": "https://www.youtube.com/watch?v=304xFj3h3Hw",
+          "official_urls": [
+            "https://linktr.ee/tokyohertz"
+          ],
+          "detected_event_date": "2025-10-17",
+          "channel_id": "UCaVANrt14S6q-if2BBOE4TQ"
+        },
+        {
+          "title": "🥳Satsuei (Photo/Film) Dash in the Crazy Crowds!! @ Shibuya Crossing in Tokyo 2025 4kHDR",
+          "video_url": "https://www.youtube.com/watch?v=Ku_1lmd5DGs",
+          "official_urls": [
+            "https://linktr.ee/tokyohertz"
+          ],
+          "detected_event_date": "2025-10-17",
+          "channel_id": "UCaVANrt14S6q-if2BBOE4TQ"
+        },
+        {
+          "title": "😆Someone Shouted “JAPANESE ARE CRAZY!” @ SHIBUYA MUSIC SCRAMBLE × SHIBUYA PLAYGROUND in Tokyo 4kHDR",
+          "video_url": "https://www.youtube.com/watch?v=JOsJ3bE66yE",
+          "official_urls": [
+            "https://linktr.ee/tokyohertz"
+          ],
+          "detected_event_date": "2025-10-19",
+          "channel_id": "UCaVANrt14S6q-if2BBOE4TQ"
+        },
+        {
+          "title": "😆Living Up to Its Name as the World’s Busiest Crossing! @ Shibuya Crossing in Tokyo 2025 4kHDR",
+          "video_url": "https://www.youtube.com/watch?v=JXL0qyA_gwE",
+          "official_urls": [
+            "https://linktr.ee/tokyohertz"
+          ],
+          "detected_event_date": "2025-10-12",
+          "channel_id": "UCaVANrt14S6q-if2BBOE4TQ"
+        }
+      ],
+      "decision": {
+        "key": "needs_official_confirmation|social_or_map_only|https://linktr.ee/tokyohertz",
+        "action": "exclude_out_of_scope",
+        "reason": "おと判定: linktr.ee/tokyohertzの散歩・ランウェイ等のノイズ混在行で、盆踊り候補として扱わない。"
+      }
+    },
     {
       "queue": "needs_official_confirmation",
       "priority": "low",
@@ -642,7 +1574,54 @@
           "detected_event_date": "2026-05-31",
           "channel_id": "UCKCspf_NrY16rUnODmBqOWA"
         }
-      ]
+      ],
+      "decision": {
+        "key": "needs_official_confirmation|social_or_map_only|https://goo.gl/maps/kSAEbnkyHSchcccY6",
+        "action": "exclude_out_of_scope",
+        "reason": "おと判定: 浅草/渋谷/下北沢など雑多な散歩動画が混在したGoogle Maps短縮URL束で、単一イベント候補として扱えないため除外。"
+      }
+    },
+    {
+      "queue": "needs_official_confirmation",
+      "priority": "low",
+      "category": "social_or_map_only",
+      "primary_url": "https://maps.app.goo.gl/gVkfqrsrwrzS8KhH6",
+      "primary_domain": "maps.app.goo.gl",
+      "video_count": 2,
+      "detected_dates": [
+        "2025-10-18"
+      ],
+      "titles": [
+        "[4K]🇯🇵 アニソンディスコ 新宝島｜おジャ魔女カーニバル｜ハム太郎｜マツケンサンバ｜ジャンボリミッキー 他 下町ハイボールフェス2025 in 新小岩公園",
+        "[4K]🇯🇵 アニソン盆踊り協会 おジャ魔女カーニバル｜ジャンボリミッキー｜推しの子 他 下町ハイボールフェス2025 / The Anime Song Bon Odori Association"
+      ],
+      "videos": [
+        {
+          "title": "[4K]🇯🇵 アニソンディスコ 新宝島｜おジャ魔女カーニバル｜ハム太郎｜マツケンサンバ｜ジャンボリミッキー 他 下町ハイボールフェス2025 in 新小岩公園",
+          "video_url": "https://www.youtube.com/watch?v=5NSyK0h6JWA",
+          "official_urls": [
+            "https://maps.app.goo.gl/gVkfqrsrwrzS8KhH6",
+            "https://x.com/walkingfilmlove"
+          ],
+          "detected_event_date": "2025-10-18",
+          "channel_id": "UCKCspf_NrY16rUnODmBqOWA"
+        },
+        {
+          "title": "[4K]🇯🇵 アニソン盆踊り協会 おジャ魔女カーニバル｜ジャンボリミッキー｜推しの子 他 下町ハイボールフェス2025 / The Anime Song Bon Odori Association",
+          "video_url": "https://www.youtube.com/watch?v=w_y7vX_RrEY",
+          "official_urls": [
+            "https://maps.app.goo.gl/gVkfqrsrwrzS8KhH6",
+            "https://x.com/walkingfilmlove"
+          ],
+          "detected_event_date": "2025-10-18",
+          "channel_id": "UCKCspf_NrY16rUnODmBqOWA"
+        }
+      ],
+      "decision": {
+        "key": "needs_official_confirmation|social_or_map_only|https://maps.app.goo.gl/gVkfqrsrwrzS8KhH6",
+        "action": "hold_needs_scope_decision",
+        "reason": "こと判定: フェス内ステージ出演枠としてのアニソン盆踊り協会で、独立した盆踊りイベントか判断保留。"
+      }
     },
     {
       "queue": "needs_official_confirmation",
@@ -824,7 +1803,720 @@
           "detected_event_date": "2025-04-26",
           "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
         }
-      ]
+      ],
+      "decision": {
+        "key": "needs_official_confirmation|social_or_map_only|https://www.google.com/maps/place/%E3%81%8A%E5%8F%B0%E5%A0%B4%E9%9D%92%E6%B5%B7%E5%9C%B0%E5%8C%BAP%E5%8C%BA%E7%94%BB/@35.625128,139.7724951,17z/data=!4m15!1m8!3m7!1s0x601889f8297765f1:0x951f5c602517953d!2z44CSMTM1LTAwNjQg5p2x5Lqs6YO95rGf5p2x5Yy66Z2S5rW377yR5LiB55uu77yR4oiS77yR77yW!3b1!8m2!3d35.625128!4d139.77507!16s%2Fg%2F11hy_pk2n4!3m5!1s0x601889f808ccdf65:0xc3ebddaeb11985be!8m2!3d35.6237857!4d139.7731188!16s%2Fg%2F11cmp5ms7c?entry=ttu",
+        "action": "hold_needs_2025_source",
+        "reason": "こと判定: 肉フェス2025自体は確認できたが、公式プログラムで「アニメメメ盆踊り」の明記が取れず保留。"
+      }
+    },
+    {
+      "queue": "needs_official_confirmation",
+      "priority": "low",
+      "category": "social_or_map_only",
+      "primary_url": "https://www.google.com/maps/place/%E3%82%B7%E3%83%8D%E3%82%B7%E3%83%86%E3%82%A3%E5%BA%83%E5%A0%B4/@35.695552,139.6987356,17z/data=!3m1!4b1!4m6!3m5!1s0x60188de6552826ed:0x992d7fbbb287dc32!8m2!3d35.695552!4d139.7013105!16s%2Fg%2F11rtmn5pbq?entry=ttu",
+      "primary_domain": "google.com",
+      "video_count": 10,
+      "detected_dates": [
+        "2024-08-17",
+        "2025-08-17",
+        "2025-10-05"
+      ],
+      "titles": [
+        "【歌舞伎町 BON ODORI 2024】「ultra soul」-  B’z /  新宿トー横 鳳蝶美成 盆踊り",
+        "【歌舞伎町 BON ODORI 2025】「HOT LIMIT」T.M.Revolution 盆踊り/ アバ 新宿トー横 鳳蝶美成",
+        "【歌舞伎町まつり 2025】急に踊り手が増える!! みんな大好き「ダンシングヒーロー」荻野目洋子 盆踊り/  新宿トー横  盆踊り",
+        "【歌舞伎町まつり 2025】盆踊りで歌舞伎町が平和な空間に!!「恋するフォーチュンクッキー」AKB48 盆踊り/  新宿トー横  盆踊り Kabukicho Matsuri",
+        "【歌舞伎町まつり 2025】イニシエの名曲「スーダラ節」で盆踊り/ 植木等 新宿トー横  盆踊り"
+      ],
+      "videos": [
+        {
+          "title": "【歌舞伎町 BON ODORI 2024】「ultra soul」-  B’z /  新宿トー横 鳳蝶美成 盆踊り",
+          "video_url": "https://www.youtube.com/watch?v=j77RrrszxNs",
+          "official_urls": [
+            "https://www.google.com/maps/place/%E3%82%B7%E3%83%8D%E3%82%B7%E3%83%86%E3%82%A3%E5%BA%83%E5%A0%B4/@35.695552,139.6987356,17z/data=!3m1!4b1!4m6!3m5!1s0x60188de6552826ed:0x992d7fbbb287dc32!8m2!3d35.695552!4d139.7013105!16s%2Fg%2F11rtmn5pbq?entry=ttu"
+          ],
+          "detected_event_date": "2024-08-17",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【歌舞伎町 BON ODORI 2025】「HOT LIMIT」T.M.Revolution 盆踊り/ アバ 新宿トー横 鳳蝶美成",
+          "video_url": "https://www.youtube.com/watch?v=yk_Osjqx76s",
+          "official_urls": [
+            "https://www.google.com/maps/place/%E3%82%B7%E3%83%8D%E3%82%B7%E3%83%86%E3%82%A3%E5%BA%83%E5%A0%B4/@35.695552,139.6987356,17z/data=!3m1!4b1!4m6!3m5!1s0x60188de6552826ed:0x992d7fbbb287dc32!8m2!3d35.695552!4d139.7013105!16s%2Fg%2F11rtmn5pbq?entry=ttu"
+          ],
+          "detected_event_date": "2025-08-17",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【歌舞伎町まつり 2025】急に踊り手が増える!! みんな大好き「ダンシングヒーロー」荻野目洋子 盆踊り/  新宿トー横  盆踊り",
+          "video_url": "https://www.youtube.com/watch?v=PmKt4xQkxx0",
+          "official_urls": [
+            "https://www.google.com/maps/place/%E3%82%B7%E3%83%8D%E3%82%B7%E3%83%86%E3%82%A3%E5%BA%83%E5%A0%B4/@35.695552,139.6987356,17z/data=!3m1!4b1!4m6!3m5!1s0x60188de6552826ed:0x992d7fbbb287dc32!8m2!3d35.695552!4d139.7013105!16s%2Fg%2F11rtmn5pbq?entry=ttu"
+          ],
+          "detected_event_date": "2025-10-05",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【歌舞伎町まつり 2025】盆踊りで歌舞伎町が平和な空間に!!「恋するフォーチュンクッキー」AKB48 盆踊り/  新宿トー横  盆踊り Kabukicho Matsuri",
+          "video_url": "https://www.youtube.com/watch?v=rPFjTOkZRBk",
+          "official_urls": [
+            "https://www.google.com/maps/place/%E3%82%B7%E3%83%8D%E3%82%B7%E3%83%86%E3%82%A3%E5%BA%83%E5%A0%B4/@35.695552,139.6987356,17z/data=!3m1!4b1!4m6!3m5!1s0x60188de6552826ed:0x992d7fbbb287dc32!8m2!3d35.695552!4d139.7013105!16s%2Fg%2F11rtmn5pbq?entry=ttu"
+          ],
+          "detected_event_date": "2025-10-05",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【歌舞伎町まつり 2025】イニシエの名曲「スーダラ節」で盆踊り/ 植木等 新宿トー横  盆踊り",
+          "video_url": "https://www.youtube.com/watch?v=zYTZJmwcJ84",
+          "official_urls": [
+            "https://www.google.com/maps/place/%E3%82%B7%E3%83%8D%E3%82%B7%E3%83%86%E3%82%A3%E5%BA%83%E5%A0%B4/@35.695552,139.6987356,17z/data=!3m1!4b1!4m6!3m5!1s0x60188de6552826ed:0x992d7fbbb287dc32!8m2!3d35.695552!4d139.7013105!16s%2Fg%2F11rtmn5pbq?entry=ttu"
+          ],
+          "detected_event_date": "2025-10-05",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【歌舞伎町まつり 2025】「相馬盆唄」盆踊り/ 新宿トー横  盆踊り Kabukicho Matsuri Bon Dance",
+          "video_url": "https://www.youtube.com/watch?v=yTInt8A2x9g",
+          "official_urls": [
+            "https://www.google.com/maps/place/%E3%82%B7%E3%83%8D%E3%82%B7%E3%83%86%E3%82%A3%E5%BA%83%E5%A0%B4/@35.695552,139.6987356,17z/data=!3m1!4b1!4m6!3m5!1s0x60188de6552826ed:0x992d7fbbb287dc32!8m2!3d35.695552!4d139.7013105!16s%2Fg%2F11rtmn5pbq?entry=ttu"
+          ],
+          "detected_event_date": "2025-10-05",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【歌舞伎町まつり 2025】「東京音頭」盆踊り/ 新宿トー横  盆踊り Kabukicho Matsuri Bon Dance",
+          "video_url": "https://www.youtube.com/watch?v=9wKa_4XkdIo",
+          "official_urls": [
+            "https://www.google.com/maps/place/%E3%82%B7%E3%83%8D%E3%82%B7%E3%83%86%E3%82%A3%E5%BA%83%E5%A0%B4/@35.695552,139.6987356,17z/data=!3m1!4b1!4m6!3m5!1s0x60188de6552826ed:0x992d7fbbb287dc32!8m2!3d35.695552!4d139.7013105!16s%2Fg%2F11rtmn5pbq?entry=ttu"
+          ],
+          "detected_event_date": "2025-10-05",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【歌舞伎町まつり 2025】「どんぱん節」盆踊り/ 新宿トー横  盆踊り Kabukicho Matsuri Bon Dance",
+          "video_url": "https://www.youtube.com/watch?v=nQlaB-Aa7vs",
+          "official_urls": [
+            "https://www.google.com/maps/place/%E3%82%B7%E3%83%8D%E3%82%B7%E3%83%86%E3%82%A3%E5%BA%83%E5%A0%B4/@35.695552,139.6987356,17z/data=!3m1!4b1!4m6!3m5!1s0x60188de6552826ed:0x992d7fbbb287dc32!8m2!3d35.695552!4d139.7013105!16s%2Fg%2F11rtmn5pbq?entry=ttu"
+          ],
+          "detected_event_date": "2025-10-05",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【歌舞伎町まつり 2025】ラストは「ダンシングヒーロー / 恋するフォーチュンクッキー」メドレー 盆踊り/ 新宿トー横  盆踊り Kabukicho Matsuri Bon Dance",
+          "video_url": "https://www.youtube.com/watch?v=7QL5kVu806o",
+          "official_urls": [
+            "https://www.google.com/maps/place/%E3%82%B7%E3%83%8D%E3%82%B7%E3%83%86%E3%82%A3%E5%BA%83%E5%A0%B4/@35.695552,139.6987356,17z/data=!3m1!4b1!4m6!3m5!1s0x60188de6552826ed:0x992d7fbbb287dc32!8m2!3d35.695552!4d139.7013105!16s%2Fg%2F11rtmn5pbq?entry=ttu"
+          ],
+          "detected_event_date": "2025-10-05",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【歌舞伎町まつり 2025】歌舞伎町で盆踊り この日だけはトー横が平和です!! / 恋するフォーチュンクッキー 新宿新都心音頭 / トー横 / Kabukicho Matsuri Bon Dance",
+          "video_url": "https://www.youtube.com/watch?v=8fD7NbvFa_o",
+          "official_urls": [
+            "https://www.google.com/maps/place/%E3%82%B7%E3%83%8D%E3%82%B7%E3%83%86%E3%82%A3%E5%BA%83%E5%A0%B4/@35.695552,139.6987356,17z/data=!3m1!4b1!4m6!3m5!1s0x60188de6552826ed:0x992d7fbbb287dc32!8m2!3d35.695552!4d139.7013105!16s%2Fg%2F11rtmn5pbq?entry=ttu"
+          ],
+          "detected_event_date": "2025-10-05",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        }
+      ],
+      "decision": {
+        "key": "needs_official_confirmation|social_or_map_only|https://www.google.com/maps/place/%E3%82%B7%E3%83%8D%E3%82%B7%E3%83%86%E3%82%A3%E5%BA%83%E5%A0%B4/@35.695552,139.6987356,17z/data=!3m1!4b1!4m6!3m5!1s0x60188de6552826ed:0x992d7fbbb287dc32!8m2!3d35.695552!4d139.7013105!16s%2Fg%2F11rtmn5pbq?entry=ttu",
+        "action": "hold_mixed_events_needs_split",
+        "reason": "こと判定: 8月の歌舞伎町BON ODORIは既存反映済み。10月の歌舞伎町まつり盆踊りは動画/X寄り根拠のため、混在行として保留し分割が必要。"
+      }
+    },
+    {
+      "queue": "needs_official_confirmation",
+      "priority": "low",
+      "category": "social_or_map_only",
+      "primary_url": "https://www.google.com/maps/place/%E5%A4%A7%E6%AD%A3%E5%A4%A7%E5%AD%A6/@35.7430019,139.7245915,17z/data=!3m1!4b1!4m6!3m5!1s0x60188d7e646e82a5:0x6cac2c6aa6cc85fd!8m2!3d35.7430019!4d139.7271664!16s%2Fm%2F04cxc36?entry=ttu",
+      "primary_domain": "google.com",
+      "video_count": 8,
+      "detected_dates": [
+        "2025-07-04"
+      ],
+      "titles": [
+        "【鴨台盆踊り2025】「おジャ魔女カーニバル!!」 大正大学盆踊り DAY 1 / 大学生主催盆踊り #盆踊り",
+        "【鴨台盆踊り2025】「東京音頭」 大正大学盆踊り / 大学生主催盆踊り #盆踊り",
+        "【鴨台盆踊り2025】「恋するフォーチュンクッキー」AKB48 大正大学盆踊り / 大学生主催盆踊り #盆踊り",
+        "【鴨台盆踊り2025】「炭坑節」 大正大学盆踊り / 大学生主催盆踊り #盆踊り",
+        "【鴨台盆踊り2025】「ダンシングヒーロー」 楽しすぎて今年もアンコール!! 大正大学盆踊り / 大学生主催盆踊り #盆踊り"
+      ],
+      "videos": [
+        {
+          "title": "【鴨台盆踊り2025】「おジャ魔女カーニバル!!」 大正大学盆踊り DAY 1 / 大学生主催盆踊り #盆踊り",
+          "video_url": "https://www.youtube.com/watch?v=I161lPm32JQ",
+          "official_urls": [
+            "https://www.google.com/maps/place/%E5%A4%A7%E6%AD%A3%E5%A4%A7%E5%AD%A6/@35.7430019,139.7245915,17z/data=!3m1!4b1!4m6!3m5!1s0x60188d7e646e82a5:0x6cac2c6aa6cc85fd!8m2!3d35.7430019!4d139.7271664!16s%2Fm%2F04cxc36?entry=ttu"
+          ],
+          "detected_event_date": "2025-07-04",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【鴨台盆踊り2025】「東京音頭」 大正大学盆踊り / 大学生主催盆踊り #盆踊り",
+          "video_url": "https://www.youtube.com/watch?v=RiBIC4hJdOA",
+          "official_urls": [
+            "https://www.google.com/maps/place/%E5%A4%A7%E6%AD%A3%E5%A4%A7%E5%AD%A6/@35.7430019,139.7245915,17z/data=!3m1!4b1!4m6!3m5!1s0x60188d7e646e82a5:0x6cac2c6aa6cc85fd!8m2!3d35.7430019!4d139.7271664!16s%2Fm%2F04cxc36?entry=ttu"
+          ],
+          "detected_event_date": "2025-07-04",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【鴨台盆踊り2025】「恋するフォーチュンクッキー」AKB48 大正大学盆踊り / 大学生主催盆踊り #盆踊り",
+          "video_url": "https://www.youtube.com/watch?v=5s0-tZA5PY0",
+          "official_urls": [
+            "https://www.google.com/maps/place/%E5%A4%A7%E6%AD%A3%E5%A4%A7%E5%AD%A6/@35.7430019,139.7245915,17z/data=!3m1!4b1!4m6!3m5!1s0x60188d7e646e82a5:0x6cac2c6aa6cc85fd!8m2!3d35.7430019!4d139.7271664!16s%2Fm%2F04cxc36?entry=ttu"
+          ],
+          "detected_event_date": "2025-07-04",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【鴨台盆踊り2025】「炭坑節」 大正大学盆踊り / 大学生主催盆踊り #盆踊り",
+          "video_url": "https://www.youtube.com/watch?v=po8k3P98yGs",
+          "official_urls": [
+            "https://www.google.com/maps/place/%E5%A4%A7%E6%AD%A3%E5%A4%A7%E5%AD%A6/@35.7430019,139.7245915,17z/data=!3m1!4b1!4m6!3m5!1s0x60188d7e646e82a5:0x6cac2c6aa6cc85fd!8m2!3d35.7430019!4d139.7271664!16s%2Fm%2F04cxc36?entry=ttu"
+          ],
+          "detected_event_date": "2025-07-04",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【鴨台盆踊り2025】「ダンシングヒーロー」 楽しすぎて今年もアンコール!! 大正大学盆踊り / 大学生主催盆踊り #盆踊り",
+          "video_url": "https://www.youtube.com/watch?v=JJEL3EUhL9o",
+          "official_urls": [
+            "https://www.google.com/maps/place/%E5%A4%A7%E6%AD%A3%E5%A4%A7%E5%AD%A6/@35.7430019,139.7245915,17z/data=!3m1!4b1!4m6!3m5!1s0x60188d7e646e82a5:0x6cac2c6aa6cc85fd!8m2!3d35.7430019!4d139.7271664!16s%2Fm%2F04cxc36?entry=ttu"
+          ],
+          "detected_event_date": "2025-07-04",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【鴨台盆踊り2025】今年の新曲 B’z「ultra soul」で盆踊り 大正大学盆踊り / 大学生主催盆踊り #盆踊り",
+          "video_url": "https://www.youtube.com/watch?v=e7ha54W5NH0",
+          "official_urls": [
+            "https://www.google.com/maps/place/%E5%A4%A7%E6%AD%A3%E5%A4%A7%E5%AD%A6/@35.7430019,139.7245915,17z/data=!3m1!4b1!4m6!3m5!1s0x60188d7e646e82a5:0x6cac2c6aa6cc85fd!8m2!3d35.7430019!4d139.7271664!16s%2Fm%2F04cxc36?entry=ttu"
+          ],
+          "detected_event_date": "2025-07-04",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【鴨台盆踊り2025】AKB48「365日の紙飛行機」で盆踊り / 大学生主催盆踊り #盆踊り",
+          "video_url": "https://www.youtube.com/watch?v=xlajBn2lOx0",
+          "official_urls": [
+            "https://www.google.com/maps/place/%E5%A4%A7%E6%AD%A3%E5%A4%A7%E5%AD%A6/@35.7430019,139.7245915,17z/data=!3m1!4b1!4m6!3m5!1s0x60188d7e646e82a5:0x6cac2c6aa6cc85fd!8m2!3d35.7430019!4d139.7271664!16s%2Fm%2F04cxc36?entry=ttu"
+          ],
+          "detected_event_date": "2025-07-04",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【鴨台盆踊り2025】「大江戸東京音頭」で盆踊り 大正大学盆踊り / 大学生主催盆踊り #盆踊り",
+          "video_url": "https://www.youtube.com/watch?v=EuRZCVWkTJY",
+          "official_urls": [
+            "https://www.google.com/maps/place/%E5%A4%A7%E6%AD%A3%E5%A4%A7%E5%AD%A6/@35.7430019,139.7245915,17z/data=!3m1!4b1!4m6!3m5!1s0x60188d7e646e82a5:0x6cac2c6aa6cc85fd!8m2!3d35.7430019!4d139.7271664!16s%2Fm%2F04cxc36?entry=ttu"
+          ],
+          "detected_event_date": "2025-07-04",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        }
+      ],
+      "decision": {
+        "key": "needs_official_confirmation|social_or_map_only|https://www.google.com/maps/place/%E5%A4%A7%E6%AD%A3%E5%A4%A7%E5%AD%A6/@35.7430019,139.7245915,17z/data=!3m1!4b1!4m6!3m5!1s0x60188d7e646e82a5:0x6cac2c6aa6cc85fd!8m2!3d35.7430019!4d139.7271664!16s%2Fm%2F04cxc36?entry=ttu",
+        "action": "skip_registered",
+        "reason": "こと判定: 大正大学公式/PR TIMESで第15回鴨台盆踊り 2025-07-04〜05を確認し、Notionへ反映済み。"
+      }
+    },
+    {
+      "queue": "needs_official_confirmation",
+      "priority": "low",
+      "category": "social_or_map_only",
+      "primary_url": "https://www.google.com/maps?sca_esv=ed31745f76a805c8&rlz=1C1ASRM_jaJP854JP854&output=search&q=%E7%A5%90%E5%A4%A9%E5%AF%BA&source=lnms&fbs=AIIjpHx8KeeL4pinWNBsyb2wNnV58AkgzLWvfzucLzRBLhfWJh_fYQV-crphwtS8Dk8eQ_BrrlbjBkoYpRNvJUlZj8Z0f9KPGZTdcFsp4vGdABl_Sr8DUSqOSwMyL9x5ZrBzEFkdxQhzB1TO_t-gBqdCWGl-7EqX672If9GDUBkac886eMgxSlIe8U2qo47SHXOvm7OG9rYXwV1wAZkkMAekpnvO35QovU82Oo6lflzvPEVoDM_7so0&entry=mc&ved=1t:200715&ictx=111",
+      "primary_domain": "google.com",
+      "video_count": 2,
+      "detected_dates": [
+        "2025-07-17"
+      ],
+      "titles": [
+        "【祐天寺み霊まつり盆踊り】「東京音頭」 ”数えられないほどの提灯が境内に!! トップレベルの映え盆踊り会場!!\" みたま祭り  Yutenji Shrine Mitama Festival #盆踊り",
+        "【祐天寺み霊まつり盆踊り2025】 ”お坊さんがリード!! 初日全6曲目!! \" 「大東京音頭 /ソーラン節...」みたま祭り  Yutenji Shrine Mitama Festival #盆踊り"
+      ],
+      "videos": [
+        {
+          "title": "【祐天寺み霊まつり盆踊り】「東京音頭」 ”数えられないほどの提灯が境内に!! トップレベルの映え盆踊り会場!!\" みたま祭り  Yutenji Shrine Mitama Festival #盆踊り",
+          "video_url": "https://www.youtube.com/watch?v=PIpOngCTulg",
+          "official_urls": [
+            "https://www.google.com/maps?sca_esv=ed31745f76a805c8&rlz=1C1ASRM_jaJP854JP854&output=search&q=%E7%A5%90%E5%A4%A9%E5%AF%BA&source=lnms&fbs=AIIjpHx8KeeL4pinWNBsyb2wNnV58AkgzLWvfzucLzRBLhfWJh_fYQV-crphwtS8Dk8eQ_BrrlbjBkoYpRNvJUlZj8Z0f9KPGZTdcFsp4vGdABl_Sr8DUSqOSwMyL9x5ZrBzEFkdxQhzB1TO_t-gBqdCWGl-7EqX672If9GDUBkac886eMgxSlIe8U2qo47SHXOvm7OG9rYXwV1wAZkkMAekpnvO35QovU82Oo6lflzvPEVoDM_7so0&entry=mc&ved=1t:200715&ictx=111"
+          ],
+          "detected_event_date": "2025-07-17",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【祐天寺み霊まつり盆踊り2025】 ”お坊さんがリード!! 初日全6曲目!! \" 「大東京音頭 /ソーラン節...」みたま祭り  Yutenji Shrine Mitama Festival #盆踊り",
+          "video_url": "https://www.youtube.com/watch?v=53rD5_n_45s",
+          "official_urls": [
+            "https://www.google.com/maps?sca_esv=ed31745f76a805c8&rlz=1C1ASRM_jaJP854JP854&output=search&q=%E7%A5%90%E5%A4%A9%E5%AF%BA&source=lnms&fbs=AIIjpHx8KeeL4pinWNBsyb2wNnV58AkgzLWvfzucLzRBLhfWJh_fYQV-crphwtS8Dk8eQ_BrrlbjBkoYpRNvJUlZj8Z0f9KPGZTdcFsp4vGdABl_Sr8DUSqOSwMyL9x5ZrBzEFkdxQhzB1TO_t-gBqdCWGl-7EqX672If9GDUBkac886eMgxSlIe8U2qo47SHXOvm7OG9rYXwV1wAZkkMAekpnvO35QovU82Oo6lflzvPEVoDM_7so0&entry=mc&ved=1t:200715&ictx=111"
+          ],
+          "detected_event_date": "2025-07-17",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        }
+      ],
+      "decision": {
+        "key": "needs_official_confirmation|social_or_map_only|https://www.google.com/maps?sca_esv=ed31745f76a805c8&rlz=1C1ASRM_jaJP854JP854&output=search&q=%E7%A5%90%E5%A4%A9%E5%AF%BA&source=lnms&fbs=AIIjpHx8KeeL4pinWNBsyb2wNnV58AkgzLWvfzucLzRBLhfWJh_fYQV-crphwtS8Dk8eQ_BrrlbjBkoYpRNvJUlZj8Z0f9KPGZTdcFsp4vGdABl_Sr8DUSqOSwMyL9x5ZrBzEFkdxQhzB1TO_t-gBqdCWGl-7EqX672If9GDUBkac886eMgxSlIe8U2qo47SHXOvm7OG9rYXwV1wAZkkMAekpnvO35QovU82Oo6lflzvPEVoDM_7so0&entry=mc&ved=1t:200715&ictx=111",
+        "action": "skip_registered",
+        "reason": "こと判定: 祐天寺み魂まつり子ども盆踊り大会2025を確認。公開データ上は既存反映済み。"
+      }
+    },
+    {
+      "queue": "needs_official_confirmation",
+      "priority": "low",
+      "category": "social_or_map_only",
+      "primary_url": "https://www.google.com/maps/place/%E8%87%AA%E7%94%B1%E3%81%8C%E4%B8%98%E9%A7%85/@35.6072728,139.6660912,17z/data=!3m1!4b1!4m6!3m5!1s0x6018f51f0e7b7329:0xc0f96ebbd79be0a3!8m2!3d35.6072728!4d139.6686661!16s%2Fm%2F026_l1l?entry=ttu",
+      "primary_domain": "google.com",
+      "video_count": 3,
+      "detected_dates": [
+        "2024-07-19"
+      ],
+      "titles": [
+        "【自由が丘納涼盆踊り 2025】「希望の轍」で盆踊り サザンオールスターズ / #盆踊り Jiyugaoka Bon Dance Festival 2025.",
+        "【自由が丘納涼盆踊り 2025】「希望の轍」で盆踊りPart② サザンオールスターズ / #盆踊り Jiyugaoka Bon Dance Festival 2025.",
+        "【4K】自由が丘納涼盆踊り大会 2025 最終日 全12曲 「ダンシングヒーロー / 希望の轍 / 夜に駆ける...」/ #盆踊り Jiyugaoka Bon Dance Festival 2025."
+      ],
+      "videos": [
+        {
+          "title": "【自由が丘納涼盆踊り 2025】「希望の轍」で盆踊り サザンオールスターズ / #盆踊り Jiyugaoka Bon Dance Festival 2025.",
+          "video_url": "https://www.youtube.com/watch?v=ZdWwMS4FK-I",
+          "official_urls": [
+            "https://www.google.com/maps/place/%E8%87%AA%E7%94%B1%E3%81%8C%E4%B8%98%E9%A7%85/@35.6072728,139.6660912,17z/data=!3m1!4b1!4m6!3m5!1s0x6018f51f0e7b7329:0xc0f96ebbd79be0a3!8m2!3d35.6072728!4d139.6686661!16s%2Fm%2F026_l1l?entry=ttu"
+          ],
+          "detected_event_date": "2024-07-19",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【自由が丘納涼盆踊り 2025】「希望の轍」で盆踊りPart② サザンオールスターズ / #盆踊り Jiyugaoka Bon Dance Festival 2025.",
+          "video_url": "https://www.youtube.com/watch?v=pW06Zso_0YE",
+          "official_urls": [
+            "https://www.google.com/maps/place/%E8%87%AA%E7%94%B1%E3%81%8C%E4%B8%98%E9%A7%85/@35.6072728,139.6660912,17z/data=!3m1!4b1!4m6!3m5!1s0x6018f51f0e7b7329:0xc0f96ebbd79be0a3!8m2!3d35.6072728!4d139.6686661!16s%2Fm%2F026_l1l?entry=ttu"
+          ],
+          "detected_event_date": "2024-07-19",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【4K】自由が丘納涼盆踊り大会 2025 最終日 全12曲 「ダンシングヒーロー / 希望の轍 / 夜に駆ける...」/ #盆踊り Jiyugaoka Bon Dance Festival 2025.",
+          "video_url": "https://www.youtube.com/watch?v=RcNlIqFtV20",
+          "official_urls": [
+            "https://www.google.com/maps/place/%E8%87%AA%E7%94%B1%E3%81%8C%E4%B8%98%E9%A7%85/@35.6072728,139.6660912,17z/data=!3m1!4b1!4m6!3m5!1s0x6018f51f0e7b7329:0xc0f96ebbd79be0a3!8m2!3d35.6072728!4d139.6686661!16s%2Fm%2F026_l1l?entry=ttu"
+          ],
+          "detected_event_date": "2024-07-19",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        }
+      ],
+      "decision": {
+        "key": "needs_official_confirmation|social_or_map_only|https://www.google.com/maps/place/%E8%87%AA%E7%94%B1%E3%81%8C%E4%B8%98%E9%A7%85/@35.6072728,139.6660912,17z/data=!3m1!4b1!4m6!3m5!1s0x6018f51f0e7b7329:0xc0f96ebbd79be0a3!8m2!3d35.6072728!4d139.6686661!16s%2Fm%2F026_l1l?entry=ttu",
+        "action": "skip_registered",
+        "reason": "こと判定済みの自由が丘盆踊り大会2025と同一系統。DB上は既存反映済み。"
+      }
+    },
+    {
+      "queue": "needs_official_confirmation",
+      "priority": "low",
+      "category": "social_or_map_only",
+      "primary_url": "https://www.google.com/maps?sca_esv=aa2fa3c738b8e4c2&rlz=1C1ASRM_jaJP854JP854&output=search&q=%E7%A5%9E%E6%A5%BD%E5%9D%82%E3%82%8A%E3%81%9D%E3%81%AA%E9%8A%80%E8%A1%8C&source=lnms&fbs=AEQNm0BmX_LnrLeR8vf4SqPj9gyQRjWgtaeThu4D3ydgNvH7ElI6_D4g4WCiufgkP0TvKg1l66LjXHOb5lqpk7a4MBSIxLq1ndj6NUqo5xGMS2wnhTv8z9wOlR6Roe-UQ8uHAEKU8FmNoC-LjCpS2vWJ8u6pbrWGb39Bopzwghz_rAjx6kLF3mKVYqZAb5D1kz6k8YBxKS6Ocv9BmDvjvSBsnGee2-LIfTRuxX07VZOepqMMcAWfFrY&entry=mc&ved=1t:200715&ictx=111",
+      "primary_domain": "google.com",
+      "video_count": 8,
+      "detected_dates": [
+        "2025-07-23"
+      ],
+      "titles": [
+        "【神楽坂まつり 盆踊り】生歌「真赤な太陽」で盆踊り 美空ひばり (Covered by 姿憲子) / #盆踊り Kagurazaka Festival Bon Dance 2025",
+        "【神楽坂まつり 盆踊り】ラストは TUBE「湘南盆踊り」で盆踊り / #盆踊り Kagurazaka Festival Bon Dance 2025",
+        "【神楽坂まつり 盆踊り】AKB48「365日の紙飛行機」で盆踊り / #盆踊り Kagurazaka Festival Bon Dance 2025",
+        "【神楽坂まつり 盆踊り】「ダンシングヒーロー」で盆踊り 荻野目洋子 / #盆踊り Kagurazaka Festival Bon Dance 2025",
+        "【神楽坂まつり盆踊り2025】「東京音頭 / 炭坑節 / 新宿音頭」 盆踊り Kagurazaka Festival Bon Dance 2025"
+      ],
+      "videos": [
+        {
+          "title": "【神楽坂まつり 盆踊り】生歌「真赤な太陽」で盆踊り 美空ひばり (Covered by 姿憲子) / #盆踊り Kagurazaka Festival Bon Dance 2025",
+          "video_url": "https://www.youtube.com/watch?v=1lZOsNefqPI",
+          "official_urls": [
+            "https://www.google.com/maps?sca_esv=aa2fa3c738b8e4c2&rlz=1C1ASRM_jaJP854JP854&output=search&q=%E7%A5%9E%E6%A5%BD%E5%9D%82%E3%82%8A%E3%81%9D%E3%81%AA%E9%8A%80%E8%A1%8C&source=lnms&fbs=AEQNm0BmX_LnrLeR8vf4SqPj9gyQRjWgtaeThu4D3ydgNvH7ElI6_D4g4WCiufgkP0TvKg1l66LjXHOb5lqpk7a4MBSIxLq1ndj6NUqo5xGMS2wnhTv8z9wOlR6Roe-UQ8uHAEKU8FmNoC-LjCpS2vWJ8u6pbrWGb39Bopzwghz_rAjx6kLF3mKVYqZAb5D1kz6k8YBxKS6Ocv9BmDvjvSBsnGee2-LIfTRuxX07VZOepqMMcAWfFrY&entry=mc&ved=1t:200715&ictx=111",
+            "https://www.google.com/maps/search/JR%E5%B7%A3%E9%B4%A8%E9%A7%85+%E5%8D%97%E5%8F%A3%E3%83%AD%E3%83%BC%E3%82%BF%E3%83%AA%E3%83%BC/@35.7331075,139.7365356,17z/data=!3m1!4b1?entry=ttu"
+          ],
+          "detected_event_date": "2025-07-23",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【神楽坂まつり 盆踊り】ラストは TUBE「湘南盆踊り」で盆踊り / #盆踊り Kagurazaka Festival Bon Dance 2025",
+          "video_url": "https://www.youtube.com/watch?v=zoKLWo-EvJo",
+          "official_urls": [
+            "https://www.google.com/maps?sca_esv=aa2fa3c738b8e4c2&rlz=1C1ASRM_jaJP854JP854&output=search&q=%E7%A5%9E%E6%A5%BD%E5%9D%82%E3%82%8A%E3%81%9D%E3%81%AA%E9%8A%80%E8%A1%8C&source=lnms&fbs=AEQNm0BmX_LnrLeR8vf4SqPj9gyQRjWgtaeThu4D3ydgNvH7ElI6_D4g4WCiufgkP0TvKg1l66LjXHOb5lqpk7a4MBSIxLq1ndj6NUqo5xGMS2wnhTv8z9wOlR6Roe-UQ8uHAEKU8FmNoC-LjCpS2vWJ8u6pbrWGb39Bopzwghz_rAjx6kLF3mKVYqZAb5D1kz6k8YBxKS6Ocv9BmDvjvSBsnGee2-LIfTRuxX07VZOepqMMcAWfFrY&entry=mc&ved=1t:200715&ictx=111",
+            "https://www.google.com/maps/search/JR%E5%B7%A3%E9%B4%A8%E9%A7%85+%E5%8D%97%E5%8F%A3%E3%83%AD%E3%83%BC%E3%82%BF%E3%83%AA%E3%83%BC/@35.7331075,139.7365356,17z/data=!3m1!4b1?entry=ttu"
+          ],
+          "detected_event_date": "2025-07-23",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【神楽坂まつり 盆踊り】AKB48「365日の紙飛行機」で盆踊り / #盆踊り Kagurazaka Festival Bon Dance 2025",
+          "video_url": "https://www.youtube.com/watch?v=yXN-dj_9S0E",
+          "official_urls": [
+            "https://www.google.com/maps?sca_esv=aa2fa3c738b8e4c2&rlz=1C1ASRM_jaJP854JP854&output=search&q=%E7%A5%9E%E6%A5%BD%E5%9D%82%E3%82%8A%E3%81%9D%E3%81%AA%E9%8A%80%E8%A1%8C&source=lnms&fbs=AEQNm0BmX_LnrLeR8vf4SqPj9gyQRjWgtaeThu4D3ydgNvH7ElI6_D4g4WCiufgkP0TvKg1l66LjXHOb5lqpk7a4MBSIxLq1ndj6NUqo5xGMS2wnhTv8z9wOlR6Roe-UQ8uHAEKU8FmNoC-LjCpS2vWJ8u6pbrWGb39Bopzwghz_rAjx6kLF3mKVYqZAb5D1kz6k8YBxKS6Ocv9BmDvjvSBsnGee2-LIfTRuxX07VZOepqMMcAWfFrY&entry=mc&ved=1t:200715&ictx=111",
+            "https://www.google.com/maps/search/JR%E5%B7%A3%E9%B4%A8%E9%A7%85+%E5%8D%97%E5%8F%A3%E3%83%AD%E3%83%BC%E3%82%BF%E3%83%AA%E3%83%BC/@35.7331075,139.7365356,17z/data=!3m1!4b1?entry=ttu"
+          ],
+          "detected_event_date": "2025-07-23",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【神楽坂まつり 盆踊り】「ダンシングヒーロー」で盆踊り 荻野目洋子 / #盆踊り Kagurazaka Festival Bon Dance 2025",
+          "video_url": "https://www.youtube.com/watch?v=qM1kuwk0J04",
+          "official_urls": [
+            "https://www.google.com/maps?sca_esv=aa2fa3c738b8e4c2&rlz=1C1ASRM_jaJP854JP854&output=search&q=%E7%A5%9E%E6%A5%BD%E5%9D%82%E3%82%8A%E3%81%9D%E3%81%AA%E9%8A%80%E8%A1%8C&source=lnms&fbs=AEQNm0BmX_LnrLeR8vf4SqPj9gyQRjWgtaeThu4D3ydgNvH7ElI6_D4g4WCiufgkP0TvKg1l66LjXHOb5lqpk7a4MBSIxLq1ndj6NUqo5xGMS2wnhTv8z9wOlR6Roe-UQ8uHAEKU8FmNoC-LjCpS2vWJ8u6pbrWGb39Bopzwghz_rAjx6kLF3mKVYqZAb5D1kz6k8YBxKS6Ocv9BmDvjvSBsnGee2-LIfTRuxX07VZOepqMMcAWfFrY&entry=mc&ved=1t:200715&ictx=111",
+            "https://www.google.com/maps/search/JR%E5%B7%A3%E9%B4%A8%E9%A7%85+%E5%8D%97%E5%8F%A3%E3%83%AD%E3%83%BC%E3%82%BF%E3%83%AA%E3%83%BC/@35.7331075,139.7365356,17z/data=!3m1!4b1?entry=ttu"
+          ],
+          "detected_event_date": "2025-07-23",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【神楽坂まつり盆踊り2025】「東京音頭 / 炭坑節 / 新宿音頭」 盆踊り Kagurazaka Festival Bon Dance 2025",
+          "video_url": "https://www.youtube.com/watch?v=4aSfgOCm8Sc",
+          "official_urls": [
+            "https://www.google.com/maps?sca_esv=aa2fa3c738b8e4c2&rlz=1C1ASRM_jaJP854JP854&output=search&q=%E7%A5%9E%E6%A5%BD%E5%9D%82%E3%82%8A%E3%81%9D%E3%81%AA%E9%8A%80%E8%A1%8C&source=lnms&fbs=AEQNm0BmX_LnrLeR8vf4SqPj9gyQRjWgtaeThu4D3ydgNvH7ElI6_D4g4WCiufgkP0TvKg1l66LjXHOb5lqpk7a4MBSIxLq1ndj6NUqo5xGMS2wnhTv8z9wOlR6Roe-UQ8uHAEKU8FmNoC-LjCpS2vWJ8u6pbrWGb39Bopzwghz_rAjx6kLF3mKVYqZAb5D1kz6k8YBxKS6Ocv9BmDvjvSBsnGee2-LIfTRuxX07VZOepqMMcAWfFrY&entry=mc&ved=1t:200715&ictx=111",
+            "https://www.google.com/maps/search/JR%E5%B7%A3%E9%B4%A8%E9%A7%85+%E5%8D%97%E5%8F%A3%E3%83%AD%E3%83%BC%E3%82%BF%E3%83%AA%E3%83%BC/@35.7331075,139.7365356,17z/data=!3m1!4b1?entry=ttu"
+          ],
+          "detected_event_date": "2025-07-23",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【神楽坂まつり盆踊り2025】「大東京音頭 / 八木節 / ドンパン節」 盆踊り Kagurazaka Festival Bon Dance 2025",
+          "video_url": "https://www.youtube.com/watch?v=7HDyNtiFVUk",
+          "official_urls": [
+            "https://www.google.com/maps?sca_esv=aa2fa3c738b8e4c2&rlz=1C1ASRM_jaJP854JP854&output=search&q=%E7%A5%9E%E6%A5%BD%E5%9D%82%E3%82%8A%E3%81%9D%E3%81%AA%E9%8A%80%E8%A1%8C&source=lnms&fbs=AEQNm0BmX_LnrLeR8vf4SqPj9gyQRjWgtaeThu4D3ydgNvH7ElI6_D4g4WCiufgkP0TvKg1l66LjXHOb5lqpk7a4MBSIxLq1ndj6NUqo5xGMS2wnhTv8z9wOlR6Roe-UQ8uHAEKU8FmNoC-LjCpS2vWJ8u6pbrWGb39Bopzwghz_rAjx6kLF3mKVYqZAb5D1kz6k8YBxKS6Ocv9BmDvjvSBsnGee2-LIfTRuxX07VZOepqMMcAWfFrY&entry=mc&ved=1t:200715&ictx=111",
+            "https://www.google.com/maps/search/JR%E5%B7%A3%E9%B4%A8%E9%A7%85+%E5%8D%97%E5%8F%A3%E3%83%AD%E3%83%BC%E3%82%BF%E3%83%AA%E3%83%BC/@35.7331075,139.7365356,17z/data=!3m1!4b1?entry=ttu"
+          ],
+          "detected_event_date": "2025-07-23",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【神楽坂まつり 盆踊り】「真夏の果実」で盆踊り サザンオールスターズ / #盆踊り Kagurazaka Festival Bon Dance 2025",
+          "video_url": "https://www.youtube.com/watch?v=z1tr8c84bac",
+          "official_urls": [
+            "https://www.google.com/maps?sca_esv=aa2fa3c738b8e4c2&rlz=1C1ASRM_jaJP854JP854&output=search&q=%E7%A5%9E%E6%A5%BD%E5%9D%82%E3%82%8A%E3%81%9D%E3%81%AA%E9%8A%80%E8%A1%8C&source=lnms&fbs=AEQNm0BmX_LnrLeR8vf4SqPj9gyQRjWgtaeThu4D3ydgNvH7ElI6_D4g4WCiufgkP0TvKg1l66LjXHOb5lqpk7a4MBSIxLq1ndj6NUqo5xGMS2wnhTv8z9wOlR6Roe-UQ8uHAEKU8FmNoC-LjCpS2vWJ8u6pbrWGb39Bopzwghz_rAjx6kLF3mKVYqZAb5D1kz6k8YBxKS6Ocv9BmDvjvSBsnGee2-LIfTRuxX07VZOepqMMcAWfFrY&entry=mc&ved=1t:200715&ictx=111",
+            "https://www.google.com/maps/search/JR%E5%B7%A3%E9%B4%A8%E9%A7%85+%E5%8D%97%E5%8F%A3%E3%83%AD%E3%83%BC%E3%82%BF%E3%83%AA%E3%83%BC/@35.7331075,139.7365356,17z/data=!3m1!4b1?entry=ttu"
+          ],
+          "detected_event_date": "2025-07-23",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【神楽坂まつり 盆踊り】「オバＱ音頭」 / #盆踊り Kagurazaka Festival Bon Dance 2025",
+          "video_url": "https://www.youtube.com/watch?v=V-BMPCXvX7w",
+          "official_urls": [
+            "https://www.google.com/maps?sca_esv=aa2fa3c738b8e4c2&rlz=1C1ASRM_jaJP854JP854&output=search&q=%E7%A5%9E%E6%A5%BD%E5%9D%82%E3%82%8A%E3%81%9D%E3%81%AA%E9%8A%80%E8%A1%8C&source=lnms&fbs=AEQNm0BmX_LnrLeR8vf4SqPj9gyQRjWgtaeThu4D3ydgNvH7ElI6_D4g4WCiufgkP0TvKg1l66LjXHOb5lqpk7a4MBSIxLq1ndj6NUqo5xGMS2wnhTv8z9wOlR6Roe-UQ8uHAEKU8FmNoC-LjCpS2vWJ8u6pbrWGb39Bopzwghz_rAjx6kLF3mKVYqZAb5D1kz6k8YBxKS6Ocv9BmDvjvSBsnGee2-LIfTRuxX07VZOepqMMcAWfFrY&entry=mc&ved=1t:200715&ictx=111",
+            "https://www.google.com/maps/search/JR%E5%B7%A3%E9%B4%A8%E9%A7%85+%E5%8D%97%E5%8F%A3%E3%83%AD%E3%83%BC%E3%82%BF%E3%83%AA%E3%83%BC/@35.7331075,139.7365356,17z/data=!3m1!4b1?entry=ttu"
+          ],
+          "detected_event_date": "2025-07-23",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        }
+      ],
+      "decision": {
+        "key": "needs_official_confirmation|social_or_map_only|https://www.google.com/maps?sca_esv=aa2fa3c738b8e4c2&rlz=1C1ASRM_jaJP854JP854&output=search&q=%E7%A5%9E%E6%A5%BD%E5%9D%82%E3%82%8A%E3%81%9D%E3%81%AA%E9%8A%80%E8%A1%8C&source=lnms&fbs=AEQNm0BmX_LnrLeR8vf4SqPj9gyQRjWgtaeThu4D3ydgNvH7ElI6_D4g4WCiufgkP0TvKg1l66LjXHOb5lqpk7a4MBSIxLq1ndj6NUqo5xGMS2wnhTv8z9wOlR6Roe-UQ8uHAEKU8FmNoC-LjCpS2vWJ8u6pbrWGb39Bopzwghz_rAjx6kLF3mKVYqZAb5D1kz6k8YBxKS6Ocv9BmDvjvSBsnGee2-LIfTRuxX07VZOepqMMcAWfFrY&entry=mc&ved=1t:200715&ictx=111",
+        "action": "skip_registered",
+        "reason": "こと判定: 神楽坂通り商店会公式/新宿観光振興協会で2025-07-23〜24を確認し、Notionへ反映済み。"
+      }
+    },
+    {
+      "queue": "needs_official_confirmation",
+      "priority": "low",
+      "category": "social_or_map_only",
+      "primary_url": "https://www.google.com/maps/search/%E6%81%B5%E6%AF%94%E5%AF%BF%E9%A7%85%E5%89%8D%E8%A5%BF%E5%8F%A3%E3%83%AD%E3%83%BC%E3%82%BF%E3%83%AA%E3%83%BC/@35.6462657,139.7094639,18z/data=!3m1!4b1?entry=ttu",
+      "primary_domain": "google.com",
+      "video_count": 3,
+      "detected_dates": [
+        "2025-07-25"
+      ],
+      "titles": [
+        "【恵比寿駅前盆踊り大会 2025】「YES YES EBISU」×３ ”外国人日本人みんな恵比須顔!! ” #盆踊り Ebisu Station Bon Dance Festival",
+        "【恵比寿駅前盆踊り大会 2025】「おてもやん」熊本県民謡  ”今年は聞けて嬉しい!!” #盆踊り Ebisu Station Bon Dance Festival",
+        "【恵比寿駅前盆踊り大会 2025】ご当地曲 第70回大会記念メドレー / Hey Mr恵比寿 恵比寿音頭 能登島さし音頭  恵比寿ラビアンローズ YES YES EBISU"
+      ],
+      "videos": [
+        {
+          "title": "【恵比寿駅前盆踊り大会 2025】「YES YES EBISU」×３ ”外国人日本人みんな恵比須顔!! ” #盆踊り Ebisu Station Bon Dance Festival",
+          "video_url": "https://www.youtube.com/watch?v=geuBLjcuoU0",
+          "official_urls": [
+            "https://www.google.com/maps/search/%E6%81%B5%E6%AF%94%E5%AF%BF%E9%A7%85%E5%89%8D%E8%A5%BF%E5%8F%A3%E3%83%AD%E3%83%BC%E3%82%BF%E3%83%AA%E3%83%BC/@35.6462657,139.7094639,18z/data=!3m1!4b1?entry=ttu"
+          ],
+          "detected_event_date": "2025-07-25",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【恵比寿駅前盆踊り大会 2025】「おてもやん」熊本県民謡  ”今年は聞けて嬉しい!!” #盆踊り Ebisu Station Bon Dance Festival",
+          "video_url": "https://www.youtube.com/watch?v=0T_yoFqOgVs",
+          "official_urls": [
+            "https://www.google.com/maps/search/%E6%81%B5%E6%AF%94%E5%AF%BF%E9%A7%85%E5%89%8D%E8%A5%BF%E5%8F%A3%E3%83%AD%E3%83%BC%E3%82%BF%E3%83%AA%E3%83%BC/@35.6462657,139.7094639,18z/data=!3m1!4b1?entry=ttu"
+          ],
+          "detected_event_date": "2025-07-25",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【恵比寿駅前盆踊り大会 2025】ご当地曲 第70回大会記念メドレー / Hey Mr恵比寿 恵比寿音頭 能登島さし音頭  恵比寿ラビアンローズ YES YES EBISU",
+          "video_url": "https://www.youtube.com/watch?v=OfEQCbPzrT4",
+          "official_urls": [
+            "https://www.google.com/maps/search/%E6%81%B5%E6%AF%94%E5%AF%BF%E9%A7%85%E5%89%8D%E8%A5%BF%E5%8F%A3%E3%83%AD%E3%83%BC%E3%82%BF%E3%83%AA%E3%83%BC/@35.6462657,139.7094639,18z/data=!3m1!4b1?entry=ttu"
+          ],
+          "detected_event_date": "2025-07-25",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        }
+      ],
+      "decision": {
+        "key": "needs_official_confirmation|social_or_map_only|https://www.google.com/maps/search/%E6%81%B5%E6%AF%94%E5%AF%BF%E9%A7%85%E5%89%8D%E8%A5%BF%E5%8F%A3%E3%83%AD%E3%83%BC%E3%82%BF%E3%83%AA%E3%83%BC/@35.6462657,139.7094639,18z/data=!3m1!4b1?entry=ttu",
+        "action": "skip_registered",
+        "reason": "こと判定: 公式サイトで第70回 2025-07-25〜26を確認し、Notionへ反映済み。"
+      }
+    },
+    {
+      "queue": "needs_official_confirmation",
+      "priority": "low",
+      "category": "social_or_map_only",
+      "primary_url": "https://www.google.com/maps/place/%E6%B5%84%E5%9C%9F%E5%AF%BA/@35.6742472,139.732896,17z/data=!3m1!4b1!4m6!3m5!1s0x60188c7f6f6b9c49:0x47cc2d136473bdb7!8m2!3d35.6742429!4d139.7354709!16s%2Fg%2F1tl8kpxq?entry=ttu&g_ep=EgoyMDI1MDcyMy4wIKXMDSoASAFQAw%3D%3D",
+      "primary_domain": "google.com",
+      "video_count": 3,
+      "detected_dates": [
+        "2025-07-24"
+      ],
+      "titles": [
+        "デヴィ夫人も来場!! TBSの隣 赤坂浄土寺盆踊り大会2025 / 盆ギリ恋歌 / ニッポンワッショイ/ あかね音頭 /となりのトトロ(さんぽ) / サザエさん",
+        "【4K】 赤坂 浄土寺盆踊り大会 2025 前編 / 盆踊り「会津磐梯山 / 白浜音頭 / 大東京音頭 /  盆ギリ恋歌 / 赤坂豊川音頭 / 赤坂小唄 / 赤坂音頭」",
+        "【4K】 赤坂 浄土寺盆踊り大会 2025 後編 / 盆踊り「東京音頭 / カワサキ / ドダレバチ /  盆ギリ恋歌 / 赤坂豊川音頭 / 赤坂小唄 / 赤坂音頭」"
+      ],
+      "videos": [
+        {
+          "title": "デヴィ夫人も来場!! TBSの隣 赤坂浄土寺盆踊り大会2025 / 盆ギリ恋歌 / ニッポンワッショイ/ あかね音頭 /となりのトトロ(さんぽ) / サザエさん",
+          "video_url": "https://www.youtube.com/watch?v=c1ucvp7HYSs",
+          "official_urls": [
+            "https://www.google.com/maps/place/%E6%B5%84%E5%9C%9F%E5%AF%BA/@35.6742472,139.732896,17z/data=!3m1!4b1!4m6!3m5!1s0x60188c7f6f6b9c49:0x47cc2d136473bdb7!8m2!3d35.6742429!4d139.7354709!16s%2Fg%2F1tl8kpxq?entry=ttu&g_ep=EgoyMDI1MDcyMy4wIKXMDSoASAFQAw%3D%3D"
+          ],
+          "detected_event_date": "2025-07-24",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【4K】 赤坂 浄土寺盆踊り大会 2025 前編 / 盆踊り「会津磐梯山 / 白浜音頭 / 大東京音頭 /  盆ギリ恋歌 / 赤坂豊川音頭 / 赤坂小唄 / 赤坂音頭」",
+          "video_url": "https://www.youtube.com/watch?v=6gpBlyeZXoc",
+          "official_urls": [
+            "https://www.google.com/maps/place/%E6%B5%84%E5%9C%9F%E5%AF%BA/@35.6742472,139.732896,17z/data=!3m1!4b1!4m6!3m5!1s0x60188c7f6f6b9c49:0x47cc2d136473bdb7!8m2!3d35.6742429!4d139.7354709!16s%2Fg%2F1tl8kpxq?entry=ttu&g_ep=EgoyMDI1MDcyMy4wIKXMDSoASAFQAw%3D%3D"
+          ],
+          "detected_event_date": "2025-07-24",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【4K】 赤坂 浄土寺盆踊り大会 2025 後編 / 盆踊り「東京音頭 / カワサキ / ドダレバチ /  盆ギリ恋歌 / 赤坂豊川音頭 / 赤坂小唄 / 赤坂音頭」",
+          "video_url": "https://www.youtube.com/watch?v=oW8T6lHEPc8",
+          "official_urls": [
+            "https://www.google.com/maps/place/%E6%B5%84%E5%9C%9F%E5%AF%BA/@35.6742472,139.732896,17z/data=!3m1!4b1!4m6!3m5!1s0x60188c7f6f6b9c49:0x47cc2d136473bdb7!8m2!3d35.6742429!4d139.7354709!16s%2Fg%2F1tl8kpxq?entry=ttu&g_ep=EgoyMDI1MDcyMy4wIKXMDSoASAFQAw%3D%3D"
+          ],
+          "detected_event_date": "2025-07-24",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        }
+      ],
+      "decision": {
+        "key": "needs_official_confirmation|social_or_map_only|https://www.google.com/maps/place/%E6%B5%84%E5%9C%9F%E5%AF%BA/@35.6742472,139.732896,17z/data=!3m1!4b1!4m6!3m5!1s0x60188c7f6f6b9c49:0x47cc2d136473bdb7!8m2!3d35.6742429!4d139.7354709!16s%2Fg%2F1tl8kpxq?entry=ttu&g_ep=EgoyMDI1MDcyMy4wIKXMDSoASAFQAw%3D%3D",
+        "action": "skip_registered",
+        "reason": "こと判定: 赤坂あかね会X/地域ブログで2025-07-24〜25を確認し、Notionへ反映済み。"
+      }
+    },
+    {
+      "queue": "needs_official_confirmation",
+      "priority": "low",
+      "category": "social_or_map_only",
+      "primary_url": "https://www.google.com/maps/place/%E6%B5%84%E5%9C%9F%E7%9C%9F%E5%AE%97%E6%9C%AC%E9%A1%98%E5%AF%BA%E6%B4%BE+%E7%AF%89%E5%9C%B0%E6%9C%AC%E9%A1%98%E5%AF%BA/@35.6666975,139.7688826,18z/data=!4m6!3m5!1s0x60188bdf42f23f8f:0x5079895cf0ec2793!8m2!3d35.6664862!4d139.7722836!16zL20vMDd3cDN4?entry=ttu&g_ep=EgoyMDI1MDcyNy4wIKXMDSoASAFQAw%3D%3D",
+      "primary_domain": "google.com",
+      "video_count": 4,
+      "detected_dates": [
+        "2025-07-30"
+      ],
+      "titles": [
+        "【築地本願寺 納涼盆踊り大会 2025】「東京音頭」盆踊り Tukijihongwanji Bon Dance Festival 2025",
+        "【4K】築地本願寺 納涼盆踊り大会 2025 /「ホームラン音頭 / あさりときりみのおだいどこ音頭 / あやめ踊り / 大江戸助六太鼓奉納演奏 / 日本晴れだよ / これがお江戸の盆ダンス」盆踊り",
+        "【4K】築地本願寺 納涼盆踊り大会 2025 /「炭坑節 / 築地音頭 / 東京音頭」盆踊り Tukijihongwanji Bon Dance Festival 2025",
+        "【4K】築地本願寺 納涼盆踊り大会 2025 /「江戸助六太音頭 / 斎太郎節 / あやめ踊り / 法輪音頭 / ゆかた音頭」盆踊り 屋台"
+      ],
+      "videos": [
+        {
+          "title": "【築地本願寺 納涼盆踊り大会 2025】「東京音頭」盆踊り Tukijihongwanji Bon Dance Festival 2025",
+          "video_url": "https://www.youtube.com/watch?v=kvFrV79x7io",
+          "official_urls": [
+            "https://www.google.com/maps/place/%E6%B5%84%E5%9C%9F%E7%9C%9F%E5%AE%97%E6%9C%AC%E9%A1%98%E5%AF%BA%E6%B4%BE+%E7%AF%89%E5%9C%B0%E6%9C%AC%E9%A1%98%E5%AF%BA/@35.6666975,139.7688826,18z/data=!4m6!3m5!1s0x60188bdf42f23f8f:0x5079895cf0ec2793!8m2!3d35.6664862!4d139.7722836!16zL20vMDd3cDN4?entry=ttu&g_ep=EgoyMDI1MDcyNy4wIKXMDSoASAFQAw%3D%3D"
+          ],
+          "detected_event_date": "2025-07-30",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【4K】築地本願寺 納涼盆踊り大会 2025 /「ホームラン音頭 / あさりときりみのおだいどこ音頭 / あやめ踊り / 大江戸助六太鼓奉納演奏 / 日本晴れだよ / これがお江戸の盆ダンス」盆踊り",
+          "video_url": "https://www.youtube.com/watch?v=Q5_sNzd_5OE",
+          "official_urls": [
+            "https://www.google.com/maps/place/%E6%B5%84%E5%9C%9F%E7%9C%9F%E5%AE%97%E6%9C%AC%E9%A1%98%E5%AF%BA%E6%B4%BE+%E7%AF%89%E5%9C%B0%E6%9C%AC%E9%A1%98%E5%AF%BA/@35.6666975,139.7688826,18z/data=!4m6!3m5!1s0x60188bdf42f23f8f:0x5079895cf0ec2793!8m2!3d35.6664862!4d139.7722836!16zL20vMDd3cDN4?entry=ttu&g_ep=EgoyMDI1MDcyNy4wIKXMDSoASAFQAw%3D%3D"
+          ],
+          "detected_event_date": "2025-07-30",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【4K】築地本願寺 納涼盆踊り大会 2025 /「炭坑節 / 築地音頭 / 東京音頭」盆踊り Tukijihongwanji Bon Dance Festival 2025",
+          "video_url": "https://www.youtube.com/watch?v=k-B9WTi88bI",
+          "official_urls": [
+            "https://www.google.com/maps/place/%E6%B5%84%E5%9C%9F%E7%9C%9F%E5%AE%97%E6%9C%AC%E9%A1%98%E5%AF%BA%E6%B4%BE+%E7%AF%89%E5%9C%B0%E6%9C%AC%E9%A1%98%E5%AF%BA/@35.6666975,139.7688826,18z/data=!4m6!3m5!1s0x60188bdf42f23f8f:0x5079895cf0ec2793!8m2!3d35.6664862!4d139.7722836!16zL20vMDd3cDN4?entry=ttu&g_ep=EgoyMDI1MDcyNy4wIKXMDSoASAFQAw%3D%3D"
+          ],
+          "detected_event_date": "2025-07-30",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【4K】築地本願寺 納涼盆踊り大会 2025 /「江戸助六太音頭 / 斎太郎節 / あやめ踊り / 法輪音頭 / ゆかた音頭」盆踊り 屋台",
+          "video_url": "https://www.youtube.com/watch?v=B4pfGzxtu9I",
+          "official_urls": [
+            "https://www.google.com/maps/place/%E6%B5%84%E5%9C%9F%E7%9C%9F%E5%AE%97%E6%9C%AC%E9%A1%98%E5%AF%BA%E6%B4%BE+%E7%AF%89%E5%9C%B0%E6%9C%AC%E9%A1%98%E5%AF%BA/@35.6666975,139.7688826,18z/data=!4m6!3m5!1s0x60188bdf42f23f8f:0x5079895cf0ec2793!8m2!3d35.6664862!4d139.7722836!16zL20vMDd3cDN4?entry=ttu&g_ep=EgoyMDI1MDcyNy4wIKXMDSoASAFQAw%3D%3D"
+          ],
+          "detected_event_date": "2025-07-30",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        }
+      ],
+      "decision": {
+        "key": "needs_official_confirmation|social_or_map_only|https://www.google.com/maps/place/%E6%B5%84%E5%9C%9F%E7%9C%9F%E5%AE%97%E6%9C%AC%E9%A1%98%E5%AF%BA%E6%B4%BE+%E7%AF%89%E5%9C%B0%E6%9C%AC%E9%A1%98%E5%AF%BA/@35.6666975,139.7688826,18z/data=!4m6!3m5!1s0x60188bdf42f23f8f:0x5079895cf0ec2793!8m2!3d35.6664862!4d139.7722836!16zL20vMDd3cDN4?entry=ttu&g_ep=EgoyMDI1MDcyNy4wIKXMDSoASAFQAw%3D%3D",
+        "action": "hold_needs_2025_source",
+        "reason": "高優先度側と重複。候補公式URLが404で、2025年公式/準公式URLの再確認が必要なため保留。"
+      }
+    },
+    {
+      "queue": "needs_official_confirmation",
+      "priority": "low",
+      "category": "social_or_map_only",
+      "primary_url": "https://www.google.com/maps/place/%E8%8A%B1%E5%9C%92%E7%A5%9E%E7%A4%BE/@35.6935311,139.702753,17z/data=!3m1!4b1!4m6!3m5!1s0x60188cdbe07cde2b:0x3b4028968ed9a754!8m2!3d35.6935311!4d139.7053279!16s%2Fm%2F0k54d7q?entry=ttu",
+      "primary_domain": "google.com",
+      "video_count": 4,
+      "detected_dates": [
+        "2025-08-02"
+      ],
+      "titles": [
+        "生歌「八木節」!! 粋な歌声は今年も健在!!【新宿 花園神社 盆踊り 2025】 盆踊り Hanazono  Shrine Bon Dance Festival",
+        "【新宿 花園神社 盆踊り 2025】「ダンシングヒーロー」- 荻野目洋子 / 盆踊り Hanazono Shrine Bon Dance Festival",
+        "【新宿 花園神社 盆踊り 2025】「DESIRE -情熱-」中森明菜 で盆踊り / Hanazono  Shrine Bon Dance Festival",
+        "新宿に別世界!! 生唄生演奏で盆踊り 【新宿 花園神社 盆踊り 2025】「炭坑節 /東京音頭 / 新宿音頭 / 八木節」/ Hanazono  Shrine Bon Dance Festival"
+      ],
+      "videos": [
+        {
+          "title": "生歌「八木節」!! 粋な歌声は今年も健在!!【新宿 花園神社 盆踊り 2025】 盆踊り Hanazono  Shrine Bon Dance Festival",
+          "video_url": "https://www.youtube.com/watch?v=miRpwhuGNjo",
+          "official_urls": [
+            "https://www.google.com/maps/place/%E8%8A%B1%E5%9C%92%E7%A5%9E%E7%A4%BE/@35.6935311,139.702753,17z/data=!3m1!4b1!4m6!3m5!1s0x60188cdbe07cde2b:0x3b4028968ed9a754!8m2!3d35.6935311!4d139.7053279!16s%2Fm%2F0k54d7q?entry=ttu"
+          ],
+          "detected_event_date": "2025-08-02",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【新宿 花園神社 盆踊り 2025】「ダンシングヒーロー」- 荻野目洋子 / 盆踊り Hanazono Shrine Bon Dance Festival",
+          "video_url": "https://www.youtube.com/watch?v=NAT8zVY-_Uw",
+          "official_urls": [
+            "https://www.google.com/maps/place/%E8%8A%B1%E5%9C%92%E7%A5%9E%E7%A4%BE/@35.6935311,139.702753,17z/data=!3m1!4b1!4m6!3m5!1s0x60188cdbe07cde2b:0x3b4028968ed9a754!8m2!3d35.6935311!4d139.7053279!16s%2Fm%2F0k54d7q?entry=ttu"
+          ],
+          "detected_event_date": "2025-08-02",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【新宿 花園神社 盆踊り 2025】「DESIRE -情熱-」中森明菜 で盆踊り / Hanazono  Shrine Bon Dance Festival",
+          "video_url": "https://www.youtube.com/watch?v=h8VT6jme1aI",
+          "official_urls": [
+            "https://www.google.com/maps/place/%E8%8A%B1%E5%9C%92%E7%A5%9E%E7%A4%BE/@35.6935311,139.702753,17z/data=!3m1!4b1!4m6!3m5!1s0x60188cdbe07cde2b:0x3b4028968ed9a754!8m2!3d35.6935311!4d139.7053279!16s%2Fm%2F0k54d7q?entry=ttu"
+          ],
+          "detected_event_date": "2025-08-02",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "新宿に別世界!! 生唄生演奏で盆踊り 【新宿 花園神社 盆踊り 2025】「炭坑節 /東京音頭 / 新宿音頭 / 八木節」/ Hanazono  Shrine Bon Dance Festival",
+          "video_url": "https://www.youtube.com/watch?v=-fRgnyO96jw",
+          "official_urls": [
+            "https://www.google.com/maps/place/%E8%8A%B1%E5%9C%92%E7%A5%9E%E7%A4%BE/@35.6935311,139.702753,17z/data=!3m1!4b1!4m6!3m5!1s0x60188cdbe07cde2b:0x3b4028968ed9a754!8m2!3d35.6935311!4d139.7053279!16s%2Fm%2F0k54d7q?entry=ttu"
+          ],
+          "detected_event_date": "2025-08-02",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        }
+      ],
+      "decision": {
+        "key": "needs_official_confirmation|social_or_map_only|https://www.google.com/maps/place/%E8%8A%B1%E5%9C%92%E7%A5%9E%E7%A4%BE/@35.6935311,139.702753,17z/data=!3m1!4b1!4m6!3m5!1s0x60188cdbe07cde2b:0x3b4028968ed9a754!8m2!3d35.6935311!4d139.7053279!16s%2Fm%2F0k54d7q?entry=ttu",
+        "action": "skip_registered",
+        "reason": "こと判定: 2025-08-01〜02の花園神社盆踊りを確認し、Notionへ反映済み。"
+      }
+    },
+    {
+      "queue": "needs_official_confirmation",
+      "priority": "low",
+      "category": "social_or_map_only",
+      "primary_url": "https://www.google.com/maps/place/SHIBUYA109/@35.6595771,139.6961531,17z/data=!3m1!4b1!4m6!3m5!1s0x60188ca9cd6c1c87:0x55a2a75ba417e072!8m2!3d35.6595771!4d139.698728!16s%2Fm%2F03m78kc?entry=ttu",
+      "primary_domain": "google.com",
+      "video_count": 6,
+      "detected_dates": [
+        "2025-08-02"
+      ],
+      "titles": [
+        "【渋谷盆踊り 2025】「島人ぬ宝」- BEGIN \"平和に感謝!! スペシャルライブ\" / 盆踊り 島人の宝 ライブ",
+        "【渋谷盆踊り 2025】「渋谷音頭」盆踊り /  Shibuya Bon Dance Festival",
+        "【渋谷盆踊り 2025】「大東京音頭」盆踊り /  Shibuya Bon Dance Festival",
+        "【渋谷盆踊り 2025】「ダンシングヒーロー」- 荻野目洋子 /  Shibuya Bon Dance Festival",
+        "【渋谷盆踊り 2025】「河内おとこ節」盆踊り /  Shibuya Bon Dance Festival"
+      ],
+      "videos": [
+        {
+          "title": "【渋谷盆踊り 2025】「島人ぬ宝」- BEGIN \"平和に感謝!! スペシャルライブ\" / 盆踊り 島人の宝 ライブ",
+          "video_url": "https://www.youtube.com/watch?v=es_EaJleT2o",
+          "official_urls": [
+            "https://www.google.com/maps/place/SHIBUYA109/@35.6595771,139.6961531,17z/data=!3m1!4b1!4m6!3m5!1s0x60188ca9cd6c1c87:0x55a2a75ba417e072!8m2!3d35.6595771!4d139.698728!16s%2Fm%2F03m78kc?entry=ttu"
+          ],
+          "detected_event_date": "2025-08-02",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【渋谷盆踊り 2025】「渋谷音頭」盆踊り /  Shibuya Bon Dance Festival",
+          "video_url": "https://www.youtube.com/watch?v=YVMfQjmzUPA",
+          "official_urls": [
+            "https://www.google.com/maps/place/SHIBUYA109/@35.6595771,139.6961531,17z/data=!3m1!4b1!4m6!3m5!1s0x60188ca9cd6c1c87:0x55a2a75ba417e072!8m2!3d35.6595771!4d139.698728!16s%2Fm%2F03m78kc?entry=ttu"
+          ],
+          "detected_event_date": "2025-08-02",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【渋谷盆踊り 2025】「大東京音頭」盆踊り /  Shibuya Bon Dance Festival",
+          "video_url": "https://www.youtube.com/watch?v=Anphd3qD2FQ",
+          "official_urls": [
+            "https://www.google.com/maps/place/SHIBUYA109/@35.6595771,139.6961531,17z/data=!3m1!4b1!4m6!3m5!1s0x60188ca9cd6c1c87:0x55a2a75ba417e072!8m2!3d35.6595771!4d139.698728!16s%2Fm%2F03m78kc?entry=ttu"
+          ],
+          "detected_event_date": "2025-08-02",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【渋谷盆踊り 2025】「ダンシングヒーロー」- 荻野目洋子 /  Shibuya Bon Dance Festival",
+          "video_url": "https://www.youtube.com/watch?v=VsDU3Pgxphs",
+          "official_urls": [
+            "https://www.google.com/maps/place/SHIBUYA109/@35.6595771,139.6961531,17z/data=!3m1!4b1!4m6!3m5!1s0x60188ca9cd6c1c87:0x55a2a75ba417e072!8m2!3d35.6595771!4d139.698728!16s%2Fm%2F03m78kc?entry=ttu"
+          ],
+          "detected_event_date": "2025-08-02",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【渋谷盆踊り 2025】「河内おとこ節」盆踊り /  Shibuya Bon Dance Festival",
+          "video_url": "https://www.youtube.com/watch?v=nmRxnht55sk",
+          "official_urls": [
+            "https://www.google.com/maps/place/SHIBUYA109/@35.6595771,139.6961531,17z/data=!3m1!4b1!4m6!3m5!1s0x60188ca9cd6c1c87:0x55a2a75ba417e072!8m2!3d35.6595771!4d139.698728!16s%2Fm%2F03m78kc?entry=ttu"
+          ],
+          "detected_event_date": "2025-08-02",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        },
+        {
+          "title": "【渋谷盆踊り 2025】「東京音頭」盆踊り /  Shibuya Bon Dance Festival",
+          "video_url": "https://www.youtube.com/watch?v=hiM0LbsWIhQ",
+          "official_urls": [
+            "https://www.google.com/maps/place/SHIBUYA109/@35.6595771,139.6961531,17z/data=!3m1!4b1!4m6!3m5!1s0x60188ca9cd6c1c87:0x55a2a75ba417e072!8m2!3d35.6595771!4d139.698728!16s%2Fm%2F03m78kc?entry=ttu"
+          ],
+          "detected_event_date": "2025-08-02",
+          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
+        }
+      ],
+      "decision": {
+        "key": "needs_official_confirmation|social_or_map_only|https://www.google.com/maps/place/SHIBUYA109/@35.6595771,139.6961531,17z/data=!3m1!4b1!4m6!3m5!1s0x60188ca9cd6c1c87:0x55a2a75ba417e072!8m2!3d35.6595771!4d139.698728!16s%2Fm%2F03m78kc?entry=ttu",
+        "action": "skip_registered",
+        "reason": "こと判定済みの第6回渋谷盆踊り2025と同一系統。DB上は既存反映済み。"
+      }
     },
     {
       "queue": "needs_official_confirmation",
@@ -953,311 +2645,92 @@
           "detected_event_date": "2025-08-10",
           "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
         }
-      ]
+      ],
+      "decision": {
+        "key": "needs_official_confirmation|social_or_map_only|https://www.google.com/maps/place/%E7%A5%9E%E7%94%B0%E7%A5%9E%E7%A4%BE%EF%BC%88%E7%A5%9E%E7%94%B0%E6%98%8E%E7%A5%9E%EF%BC%89/@35.7014855,139.765259,17z/data=!3m1!5s0x60188c1ed49ee279:0xe75480716373b939!4m10!1m2!2m1!1z56We55Sw5piO56We!3m6!1s0x60188c1ecc161bed:0xf397e4b6bf417c8b!8m2!3d35.7020186!4d139.7678943!15sCgznpZ7nlLDmmI7npZ5aDyIN56We55SwIOaYjuelnpIBDXNoaW50b19zaHJpbmWaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVUmxlWFEzVUVoQkVBReABAA!16s%2Fm%2F0463qs6?entry=ttu",
+        "action": "skip_registered",
+        "reason": "こと判定: event-checker等で2025年神田明神納涼祭り内アニソン盆踊りを確認。DB/公開データ上は既存反映済み。"
+      }
     },
     {
       "queue": "needs_official_confirmation",
       "priority": "low",
       "category": "social_or_map_only",
-      "primary_url": "https://www.google.com/maps/place/%E3%82%B7%E3%83%8D%E3%82%B7%E3%83%86%E3%82%A3%E5%BA%83%E5%A0%B4/@35.695552,139.6987356,17z/data=!3m1!4b1!4m6!3m5!1s0x60188de6552826ed:0x992d7fbbb287dc32!8m2!3d35.695552!4d139.7013105!16s%2Fg%2F11rtmn5pbq?entry=ttu",
+      "primary_url": "https://www.google.com/maps/place/%E4%B8%8B%E5%8C%97%E6%B2%A2%E9%A7%85/@35.6615848,139.6643169,17z/data=!3m1!4b1!4m6!3m5!1s0x6018f36b9a296133:0x66c43a9f356d5e5d!8m2!3d35.6615848!4d139.6668918!16zL20vMDQzMTZo?entry=ttu&g_ep=EgoyMDI1MDgwNi4wIKXMDSoASAFQAw%3D%3D",
       "primary_domain": "google.com",
-      "video_count": 10,
+      "video_count": 2,
       "detected_dates": [
-        "2024-08-17",
-        "2025-08-17",
-        "2025-10-05"
+        "2025-08-09"
       ],
       "titles": [
-        "【歌舞伎町 BON ODORI 2024】「ultra soul」-  B’z /  新宿トー横 鳳蝶美成 盆踊り",
-        "【歌舞伎町 BON ODORI 2025】「HOT LIMIT」T.M.Revolution 盆踊り/ アバ 新宿トー横 鳳蝶美成",
-        "【歌舞伎町まつり 2025】急に踊り手が増える!! みんな大好き「ダンシングヒーロー」荻野目洋子 盆踊り/  新宿トー横  盆踊り",
-        "【歌舞伎町まつり 2025】盆踊りで歌舞伎町が平和な空間に!!「恋するフォーチュンクッキー」AKB48 盆踊り/  新宿トー横  盆踊り Kabukicho Matsuri",
-        "【歌舞伎町まつり 2025】イニシエの名曲「スーダラ節」で盆踊り/ 植木等 新宿トー横  盆踊り"
+        "【下北沢 盆踊り 2025】「お嫁サンバ」でサンバチームと踊る盆踊り / 郷ひろみ Shimokitazawa Bon Dance Fes 2025 盆踊り 下北沢 サンバ",
+        "【下北沢 盆踊り 2025】「シモキタ音頭」生歌生演奏で盆踊り / 馬浪マラカス団 Shimokitazawa Bon Dance 2025 盆踊り 下北沢"
       ],
       "videos": [
         {
-          "title": "【歌舞伎町 BON ODORI 2024】「ultra soul」-  B’z /  新宿トー横 鳳蝶美成 盆踊り",
-          "video_url": "https://www.youtube.com/watch?v=j77RrrszxNs",
+          "title": "【下北沢 盆踊り 2025】「お嫁サンバ」でサンバチームと踊る盆踊り / 郷ひろみ Shimokitazawa Bon Dance Fes 2025 盆踊り 下北沢 サンバ",
+          "video_url": "https://www.youtube.com/watch?v=A3c5YQwF3qQ",
           "official_urls": [
-            "https://www.google.com/maps/place/%E3%82%B7%E3%83%8D%E3%82%B7%E3%83%86%E3%82%A3%E5%BA%83%E5%A0%B4/@35.695552,139.6987356,17z/data=!3m1!4b1!4m6!3m5!1s0x60188de6552826ed:0x992d7fbbb287dc32!8m2!3d35.695552!4d139.7013105!16s%2Fg%2F11rtmn5pbq?entry=ttu"
+            "https://www.google.com/maps/place/%E4%B8%8B%E5%8C%97%E6%B2%A2%E9%A7%85/@35.6615848,139.6643169,17z/data=!3m1!4b1!4m6!3m5!1s0x6018f36b9a296133:0x66c43a9f356d5e5d!8m2!3d35.6615848!4d139.6668918!16zL20vMDQzMTZo?entry=ttu&g_ep=EgoyMDI1MDgwNi4wIKXMDSoASAFQAw%3D%3D"
           ],
-          "detected_event_date": "2024-08-17",
+          "detected_event_date": "2025-08-09",
           "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
         },
         {
-          "title": "【歌舞伎町 BON ODORI 2025】「HOT LIMIT」T.M.Revolution 盆踊り/ アバ 新宿トー横 鳳蝶美成",
-          "video_url": "https://www.youtube.com/watch?v=yk_Osjqx76s",
+          "title": "【下北沢 盆踊り 2025】「シモキタ音頭」生歌生演奏で盆踊り / 馬浪マラカス団 Shimokitazawa Bon Dance 2025 盆踊り 下北沢",
+          "video_url": "https://www.youtube.com/watch?v=HCtkRnDfa24",
           "official_urls": [
-            "https://www.google.com/maps/place/%E3%82%B7%E3%83%8D%E3%82%B7%E3%83%86%E3%82%A3%E5%BA%83%E5%A0%B4/@35.695552,139.6987356,17z/data=!3m1!4b1!4m6!3m5!1s0x60188de6552826ed:0x992d7fbbb287dc32!8m2!3d35.695552!4d139.7013105!16s%2Fg%2F11rtmn5pbq?entry=ttu"
+            "https://www.google.com/maps/place/%E4%B8%8B%E5%8C%97%E6%B2%A2%E9%A7%85/@35.6615848,139.6643169,17z/data=!3m1!4b1!4m6!3m5!1s0x6018f36b9a296133:0x66c43a9f356d5e5d!8m2!3d35.6615848!4d139.6668918!16zL20vMDQzMTZo?entry=ttu&g_ep=EgoyMDI1MDgwNi4wIKXMDSoASAFQAw%3D%3D"
           ],
-          "detected_event_date": "2025-08-17",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【歌舞伎町まつり 2025】急に踊り手が増える!! みんな大好き「ダンシングヒーロー」荻野目洋子 盆踊り/  新宿トー横  盆踊り",
-          "video_url": "https://www.youtube.com/watch?v=PmKt4xQkxx0",
-          "official_urls": [
-            "https://www.google.com/maps/place/%E3%82%B7%E3%83%8D%E3%82%B7%E3%83%86%E3%82%A3%E5%BA%83%E5%A0%B4/@35.695552,139.6987356,17z/data=!3m1!4b1!4m6!3m5!1s0x60188de6552826ed:0x992d7fbbb287dc32!8m2!3d35.695552!4d139.7013105!16s%2Fg%2F11rtmn5pbq?entry=ttu"
-          ],
-          "detected_event_date": "2025-10-05",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【歌舞伎町まつり 2025】盆踊りで歌舞伎町が平和な空間に!!「恋するフォーチュンクッキー」AKB48 盆踊り/  新宿トー横  盆踊り Kabukicho Matsuri",
-          "video_url": "https://www.youtube.com/watch?v=rPFjTOkZRBk",
-          "official_urls": [
-            "https://www.google.com/maps/place/%E3%82%B7%E3%83%8D%E3%82%B7%E3%83%86%E3%82%A3%E5%BA%83%E5%A0%B4/@35.695552,139.6987356,17z/data=!3m1!4b1!4m6!3m5!1s0x60188de6552826ed:0x992d7fbbb287dc32!8m2!3d35.695552!4d139.7013105!16s%2Fg%2F11rtmn5pbq?entry=ttu"
-          ],
-          "detected_event_date": "2025-10-05",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【歌舞伎町まつり 2025】イニシエの名曲「スーダラ節」で盆踊り/ 植木等 新宿トー横  盆踊り",
-          "video_url": "https://www.youtube.com/watch?v=zYTZJmwcJ84",
-          "official_urls": [
-            "https://www.google.com/maps/place/%E3%82%B7%E3%83%8D%E3%82%B7%E3%83%86%E3%82%A3%E5%BA%83%E5%A0%B4/@35.695552,139.6987356,17z/data=!3m1!4b1!4m6!3m5!1s0x60188de6552826ed:0x992d7fbbb287dc32!8m2!3d35.695552!4d139.7013105!16s%2Fg%2F11rtmn5pbq?entry=ttu"
-          ],
-          "detected_event_date": "2025-10-05",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【歌舞伎町まつり 2025】「相馬盆唄」盆踊り/ 新宿トー横  盆踊り Kabukicho Matsuri Bon Dance",
-          "video_url": "https://www.youtube.com/watch?v=yTInt8A2x9g",
-          "official_urls": [
-            "https://www.google.com/maps/place/%E3%82%B7%E3%83%8D%E3%82%B7%E3%83%86%E3%82%A3%E5%BA%83%E5%A0%B4/@35.695552,139.6987356,17z/data=!3m1!4b1!4m6!3m5!1s0x60188de6552826ed:0x992d7fbbb287dc32!8m2!3d35.695552!4d139.7013105!16s%2Fg%2F11rtmn5pbq?entry=ttu"
-          ],
-          "detected_event_date": "2025-10-05",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【歌舞伎町まつり 2025】「東京音頭」盆踊り/ 新宿トー横  盆踊り Kabukicho Matsuri Bon Dance",
-          "video_url": "https://www.youtube.com/watch?v=9wKa_4XkdIo",
-          "official_urls": [
-            "https://www.google.com/maps/place/%E3%82%B7%E3%83%8D%E3%82%B7%E3%83%86%E3%82%A3%E5%BA%83%E5%A0%B4/@35.695552,139.6987356,17z/data=!3m1!4b1!4m6!3m5!1s0x60188de6552826ed:0x992d7fbbb287dc32!8m2!3d35.695552!4d139.7013105!16s%2Fg%2F11rtmn5pbq?entry=ttu"
-          ],
-          "detected_event_date": "2025-10-05",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【歌舞伎町まつり 2025】「どんぱん節」盆踊り/ 新宿トー横  盆踊り Kabukicho Matsuri Bon Dance",
-          "video_url": "https://www.youtube.com/watch?v=nQlaB-Aa7vs",
-          "official_urls": [
-            "https://www.google.com/maps/place/%E3%82%B7%E3%83%8D%E3%82%B7%E3%83%86%E3%82%A3%E5%BA%83%E5%A0%B4/@35.695552,139.6987356,17z/data=!3m1!4b1!4m6!3m5!1s0x60188de6552826ed:0x992d7fbbb287dc32!8m2!3d35.695552!4d139.7013105!16s%2Fg%2F11rtmn5pbq?entry=ttu"
-          ],
-          "detected_event_date": "2025-10-05",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【歌舞伎町まつり 2025】ラストは「ダンシングヒーロー / 恋するフォーチュンクッキー」メドレー 盆踊り/ 新宿トー横  盆踊り Kabukicho Matsuri Bon Dance",
-          "video_url": "https://www.youtube.com/watch?v=7QL5kVu806o",
-          "official_urls": [
-            "https://www.google.com/maps/place/%E3%82%B7%E3%83%8D%E3%82%B7%E3%83%86%E3%82%A3%E5%BA%83%E5%A0%B4/@35.695552,139.6987356,17z/data=!3m1!4b1!4m6!3m5!1s0x60188de6552826ed:0x992d7fbbb287dc32!8m2!3d35.695552!4d139.7013105!16s%2Fg%2F11rtmn5pbq?entry=ttu"
-          ],
-          "detected_event_date": "2025-10-05",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【歌舞伎町まつり 2025】歌舞伎町で盆踊り この日だけはトー横が平和です!! / 恋するフォーチュンクッキー 新宿新都心音頭 / トー横 / Kabukicho Matsuri Bon Dance",
-          "video_url": "https://www.youtube.com/watch?v=8fD7NbvFa_o",
-          "official_urls": [
-            "https://www.google.com/maps/place/%E3%82%B7%E3%83%8D%E3%82%B7%E3%83%86%E3%82%A3%E5%BA%83%E5%A0%B4/@35.695552,139.6987356,17z/data=!3m1!4b1!4m6!3m5!1s0x60188de6552826ed:0x992d7fbbb287dc32!8m2!3d35.695552!4d139.7013105!16s%2Fg%2F11rtmn5pbq?entry=ttu"
-          ],
-          "detected_event_date": "2025-10-05",
+          "detected_event_date": "2025-08-09",
           "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
         }
-      ]
+      ],
+      "decision": {
+        "key": "needs_official_confirmation|social_or_map_only|https://www.google.com/maps/place/%E4%B8%8B%E5%8C%97%E6%B2%A2%E9%A7%85/@35.6615848,139.6643169,17z/data=!3m1!4b1!4m6!3m5!1s0x6018f36b9a296133:0x66c43a9f356d5e5d!8m2!3d35.6615848!4d139.6668918!16zL20vMDQzMTZo?entry=ttu&g_ep=EgoyMDI1MDgwNi4wIKXMDSoASAFQAw%3D%3D",
+        "action": "skip_registered",
+        "reason": "こと判定: 下北沢盆踊り2025を商店街公式等で確認。公開データ上は既存反映済み。"
+      }
     },
     {
       "queue": "needs_official_confirmation",
       "priority": "low",
       "category": "social_or_map_only",
-      "primary_url": "https://www.google.com/maps/place/%E5%A4%A7%E6%AD%A3%E5%A4%A7%E5%AD%A6/@35.7430019,139.7245915,17z/data=!3m1!4b1!4m6!3m5!1s0x60188d7e646e82a5:0x6cac2c6aa6cc85fd!8m2!3d35.7430019!4d139.7271664!16s%2Fm%2F04cxc36?entry=ttu",
+      "primary_url": "https://www.google.com/maps/place/%E6%B5%A6%E5%AE%89%E5%B8%82%E7%AB%8B%E6%B5%A6%E5%AE%89%E5%B0%8F%E5%AD%A6%E6%A0%A1/@35.6647093,139.883061,15.6z/data=!4m10!1m2!2m1!1z5rWm5a6J5bCP5a2m5qCh!3m6!1s0x60187d7fdf5f0227:0xcbbd5c3a0b176776!8m2!3d35.663688!4d139.894162!15sCg_mtablronlsI_lrabmoKGSARFlbGVtZW50YXJ5X3NjaG9vbOABAA!16s%2Fg%2F11hzxv9vlk?entry=ttu",
       "primary_domain": "google.com",
-      "video_count": 8,
+      "video_count": 2,
       "detected_dates": [
-        "2025-07-04"
+        "2024-08-14"
       ],
       "titles": [
-        "【鴨台盆踊り2025】「おジャ魔女カーニバル!!」 大正大学盆踊り DAY 1 / 大学生主催盆踊り #盆踊り",
-        "【鴨台盆踊り2025】「東京音頭」 大正大学盆踊り / 大学生主催盆踊り #盆踊り",
-        "【鴨台盆踊り2025】「恋するフォーチュンクッキー」AKB48 大正大学盆踊り / 大学生主催盆踊り #盆踊り",
-        "【鴨台盆踊り2025】「炭坑節」 大正大学盆踊り / 大学生主催盆踊り #盆踊り",
-        "【鴨台盆踊り2025】「ダンシングヒーロー」 楽しすぎて今年もアンコール!! 大正大学盆踊り / 大学生主催盆踊り #盆踊り"
+        "【浦安市納涼盆踊り大会 2025】「きよしのズンドコ節」- 氷川きよし / 浦安小学校 盆踊りBon Dance",
+        "【4K】浦安市納涼盆踊り大会 2025 全７曲/ 新・二十一世紀音頭 / きよしのズンドコ節 / 花火音頭 / お富さん 浦安ばやし / 浦安盆踊り唄 .../ 浦安小学校 盆踊りBon Dance"
       ],
       "videos": [
         {
-          "title": "【鴨台盆踊り2025】「おジャ魔女カーニバル!!」 大正大学盆踊り DAY 1 / 大学生主催盆踊り #盆踊り",
-          "video_url": "https://www.youtube.com/watch?v=I161lPm32JQ",
+          "title": "【浦安市納涼盆踊り大会 2025】「きよしのズンドコ節」- 氷川きよし / 浦安小学校 盆踊りBon Dance",
+          "video_url": "https://www.youtube.com/watch?v=mjITfcliLSQ",
           "official_urls": [
-            "https://www.google.com/maps/place/%E5%A4%A7%E6%AD%A3%E5%A4%A7%E5%AD%A6/@35.7430019,139.7245915,17z/data=!3m1!4b1!4m6!3m5!1s0x60188d7e646e82a5:0x6cac2c6aa6cc85fd!8m2!3d35.7430019!4d139.7271664!16s%2Fm%2F04cxc36?entry=ttu"
+            "https://www.google.com/maps/place/%E6%B5%A6%E5%AE%89%E5%B8%82%E7%AB%8B%E6%B5%A6%E5%AE%89%E5%B0%8F%E5%AD%A6%E6%A0%A1/@35.6647093,139.883061,15.6z/data=!4m10!1m2!2m1!1z5rWm5a6J5bCP5a2m5qCh!3m6!1s0x60187d7fdf5f0227:0xcbbd5c3a0b176776!8m2!3d35.663688!4d139.894162!15sCg_mtablronlsI_lrabmoKGSARFlbGVtZW50YXJ5X3NjaG9vbOABAA!16s%2Fg%2F11hzxv9vlk?entry=ttu"
           ],
-          "detected_event_date": "2025-07-04",
+          "detected_event_date": "2024-08-14",
           "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
         },
         {
-          "title": "【鴨台盆踊り2025】「東京音頭」 大正大学盆踊り / 大学生主催盆踊り #盆踊り",
-          "video_url": "https://www.youtube.com/watch?v=RiBIC4hJdOA",
+          "title": "【4K】浦安市納涼盆踊り大会 2025 全７曲/ 新・二十一世紀音頭 / きよしのズンドコ節 / 花火音頭 / お富さん 浦安ばやし / 浦安盆踊り唄 .../ 浦安小学校 盆踊りBon Dance",
+          "video_url": "https://www.youtube.com/watch?v=Exo_NS0m76s",
           "official_urls": [
-            "https://www.google.com/maps/place/%E5%A4%A7%E6%AD%A3%E5%A4%A7%E5%AD%A6/@35.7430019,139.7245915,17z/data=!3m1!4b1!4m6!3m5!1s0x60188d7e646e82a5:0x6cac2c6aa6cc85fd!8m2!3d35.7430019!4d139.7271664!16s%2Fm%2F04cxc36?entry=ttu"
+            "https://www.google.com/maps/place/%E6%B5%A6%E5%AE%89%E5%B8%82%E7%AB%8B%E6%B5%A6%E5%AE%89%E5%B0%8F%E5%AD%A6%E6%A0%A1/@35.6647093,139.883061,15.6z/data=!4m10!1m2!2m1!1z5rWm5a6J5bCP5a2m5qCh!3m6!1s0x60187d7fdf5f0227:0xcbbd5c3a0b176776!8m2!3d35.663688!4d139.894162!15sCg_mtablronlsI_lrabmoKGSARFlbGVtZW50YXJ5X3NjaG9vbOABAA!16s%2Fg%2F11hzxv9vlk?entry=ttu"
           ],
-          "detected_event_date": "2025-07-04",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【鴨台盆踊り2025】「恋するフォーチュンクッキー」AKB48 大正大学盆踊り / 大学生主催盆踊り #盆踊り",
-          "video_url": "https://www.youtube.com/watch?v=5s0-tZA5PY0",
-          "official_urls": [
-            "https://www.google.com/maps/place/%E5%A4%A7%E6%AD%A3%E5%A4%A7%E5%AD%A6/@35.7430019,139.7245915,17z/data=!3m1!4b1!4m6!3m5!1s0x60188d7e646e82a5:0x6cac2c6aa6cc85fd!8m2!3d35.7430019!4d139.7271664!16s%2Fm%2F04cxc36?entry=ttu"
-          ],
-          "detected_event_date": "2025-07-04",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【鴨台盆踊り2025】「炭坑節」 大正大学盆踊り / 大学生主催盆踊り #盆踊り",
-          "video_url": "https://www.youtube.com/watch?v=po8k3P98yGs",
-          "official_urls": [
-            "https://www.google.com/maps/place/%E5%A4%A7%E6%AD%A3%E5%A4%A7%E5%AD%A6/@35.7430019,139.7245915,17z/data=!3m1!4b1!4m6!3m5!1s0x60188d7e646e82a5:0x6cac2c6aa6cc85fd!8m2!3d35.7430019!4d139.7271664!16s%2Fm%2F04cxc36?entry=ttu"
-          ],
-          "detected_event_date": "2025-07-04",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【鴨台盆踊り2025】「ダンシングヒーロー」 楽しすぎて今年もアンコール!! 大正大学盆踊り / 大学生主催盆踊り #盆踊り",
-          "video_url": "https://www.youtube.com/watch?v=JJEL3EUhL9o",
-          "official_urls": [
-            "https://www.google.com/maps/place/%E5%A4%A7%E6%AD%A3%E5%A4%A7%E5%AD%A6/@35.7430019,139.7245915,17z/data=!3m1!4b1!4m6!3m5!1s0x60188d7e646e82a5:0x6cac2c6aa6cc85fd!8m2!3d35.7430019!4d139.7271664!16s%2Fm%2F04cxc36?entry=ttu"
-          ],
-          "detected_event_date": "2025-07-04",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【鴨台盆踊り2025】今年の新曲 B’z「ultra soul」で盆踊り 大正大学盆踊り / 大学生主催盆踊り #盆踊り",
-          "video_url": "https://www.youtube.com/watch?v=e7ha54W5NH0",
-          "official_urls": [
-            "https://www.google.com/maps/place/%E5%A4%A7%E6%AD%A3%E5%A4%A7%E5%AD%A6/@35.7430019,139.7245915,17z/data=!3m1!4b1!4m6!3m5!1s0x60188d7e646e82a5:0x6cac2c6aa6cc85fd!8m2!3d35.7430019!4d139.7271664!16s%2Fm%2F04cxc36?entry=ttu"
-          ],
-          "detected_event_date": "2025-07-04",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【鴨台盆踊り2025】AKB48「365日の紙飛行機」で盆踊り / 大学生主催盆踊り #盆踊り",
-          "video_url": "https://www.youtube.com/watch?v=xlajBn2lOx0",
-          "official_urls": [
-            "https://www.google.com/maps/place/%E5%A4%A7%E6%AD%A3%E5%A4%A7%E5%AD%A6/@35.7430019,139.7245915,17z/data=!3m1!4b1!4m6!3m5!1s0x60188d7e646e82a5:0x6cac2c6aa6cc85fd!8m2!3d35.7430019!4d139.7271664!16s%2Fm%2F04cxc36?entry=ttu"
-          ],
-          "detected_event_date": "2025-07-04",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【鴨台盆踊り2025】「大江戸東京音頭」で盆踊り 大正大学盆踊り / 大学生主催盆踊り #盆踊り",
-          "video_url": "https://www.youtube.com/watch?v=EuRZCVWkTJY",
-          "official_urls": [
-            "https://www.google.com/maps/place/%E5%A4%A7%E6%AD%A3%E5%A4%A7%E5%AD%A6/@35.7430019,139.7245915,17z/data=!3m1!4b1!4m6!3m5!1s0x60188d7e646e82a5:0x6cac2c6aa6cc85fd!8m2!3d35.7430019!4d139.7271664!16s%2Fm%2F04cxc36?entry=ttu"
-          ],
-          "detected_event_date": "2025-07-04",
+          "detected_event_date": "2024-08-14",
           "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
         }
-      ]
-    },
-    {
-      "queue": "needs_official_confirmation",
-      "priority": "low",
-      "category": "social_or_map_only",
-      "primary_url": "https://www.google.com/maps?sca_esv=aa2fa3c738b8e4c2&rlz=1C1ASRM_jaJP854JP854&output=search&q=%E7%A5%9E%E6%A5%BD%E5%9D%82%E3%82%8A%E3%81%9D%E3%81%AA%E9%8A%80%E8%A1%8C&source=lnms&fbs=AEQNm0BmX_LnrLeR8vf4SqPj9gyQRjWgtaeThu4D3ydgNvH7ElI6_D4g4WCiufgkP0TvKg1l66LjXHOb5lqpk7a4MBSIxLq1ndj6NUqo5xGMS2wnhTv8z9wOlR6Roe-UQ8uHAEKU8FmNoC-LjCpS2vWJ8u6pbrWGb39Bopzwghz_rAjx6kLF3mKVYqZAb5D1kz6k8YBxKS6Ocv9BmDvjvSBsnGee2-LIfTRuxX07VZOepqMMcAWfFrY&entry=mc&ved=1t:200715&ictx=111",
-      "primary_domain": "google.com",
-      "video_count": 8,
-      "detected_dates": [
-        "2025-07-23"
       ],
-      "titles": [
-        "【神楽坂まつり 盆踊り】生歌「真赤な太陽」で盆踊り 美空ひばり (Covered by 姿憲子) / #盆踊り Kagurazaka Festival Bon Dance 2025",
-        "【神楽坂まつり 盆踊り】ラストは TUBE「湘南盆踊り」で盆踊り / #盆踊り Kagurazaka Festival Bon Dance 2025",
-        "【神楽坂まつり 盆踊り】AKB48「365日の紙飛行機」で盆踊り / #盆踊り Kagurazaka Festival Bon Dance 2025",
-        "【神楽坂まつり 盆踊り】「ダンシングヒーロー」で盆踊り 荻野目洋子 / #盆踊り Kagurazaka Festival Bon Dance 2025",
-        "【神楽坂まつり盆踊り2025】「東京音頭 / 炭坑節 / 新宿音頭」 盆踊り Kagurazaka Festival Bon Dance 2025"
-      ],
-      "videos": [
-        {
-          "title": "【神楽坂まつり 盆踊り】生歌「真赤な太陽」で盆踊り 美空ひばり (Covered by 姿憲子) / #盆踊り Kagurazaka Festival Bon Dance 2025",
-          "video_url": "https://www.youtube.com/watch?v=1lZOsNefqPI",
-          "official_urls": [
-            "https://www.google.com/maps?sca_esv=aa2fa3c738b8e4c2&rlz=1C1ASRM_jaJP854JP854&output=search&q=%E7%A5%9E%E6%A5%BD%E5%9D%82%E3%82%8A%E3%81%9D%E3%81%AA%E9%8A%80%E8%A1%8C&source=lnms&fbs=AEQNm0BmX_LnrLeR8vf4SqPj9gyQRjWgtaeThu4D3ydgNvH7ElI6_D4g4WCiufgkP0TvKg1l66LjXHOb5lqpk7a4MBSIxLq1ndj6NUqo5xGMS2wnhTv8z9wOlR6Roe-UQ8uHAEKU8FmNoC-LjCpS2vWJ8u6pbrWGb39Bopzwghz_rAjx6kLF3mKVYqZAb5D1kz6k8YBxKS6Ocv9BmDvjvSBsnGee2-LIfTRuxX07VZOepqMMcAWfFrY&entry=mc&ved=1t:200715&ictx=111",
-            "https://www.google.com/maps/search/JR%E5%B7%A3%E9%B4%A8%E9%A7%85+%E5%8D%97%E5%8F%A3%E3%83%AD%E3%83%BC%E3%82%BF%E3%83%AA%E3%83%BC/@35.7331075,139.7365356,17z/data=!3m1!4b1?entry=ttu"
-          ],
-          "detected_event_date": "2025-07-23",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【神楽坂まつり 盆踊り】ラストは TUBE「湘南盆踊り」で盆踊り / #盆踊り Kagurazaka Festival Bon Dance 2025",
-          "video_url": "https://www.youtube.com/watch?v=zoKLWo-EvJo",
-          "official_urls": [
-            "https://www.google.com/maps?sca_esv=aa2fa3c738b8e4c2&rlz=1C1ASRM_jaJP854JP854&output=search&q=%E7%A5%9E%E6%A5%BD%E5%9D%82%E3%82%8A%E3%81%9D%E3%81%AA%E9%8A%80%E8%A1%8C&source=lnms&fbs=AEQNm0BmX_LnrLeR8vf4SqPj9gyQRjWgtaeThu4D3ydgNvH7ElI6_D4g4WCiufgkP0TvKg1l66LjXHOb5lqpk7a4MBSIxLq1ndj6NUqo5xGMS2wnhTv8z9wOlR6Roe-UQ8uHAEKU8FmNoC-LjCpS2vWJ8u6pbrWGb39Bopzwghz_rAjx6kLF3mKVYqZAb5D1kz6k8YBxKS6Ocv9BmDvjvSBsnGee2-LIfTRuxX07VZOepqMMcAWfFrY&entry=mc&ved=1t:200715&ictx=111",
-            "https://www.google.com/maps/search/JR%E5%B7%A3%E9%B4%A8%E9%A7%85+%E5%8D%97%E5%8F%A3%E3%83%AD%E3%83%BC%E3%82%BF%E3%83%AA%E3%83%BC/@35.7331075,139.7365356,17z/data=!3m1!4b1?entry=ttu"
-          ],
-          "detected_event_date": "2025-07-23",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【神楽坂まつり 盆踊り】AKB48「365日の紙飛行機」で盆踊り / #盆踊り Kagurazaka Festival Bon Dance 2025",
-          "video_url": "https://www.youtube.com/watch?v=yXN-dj_9S0E",
-          "official_urls": [
-            "https://www.google.com/maps?sca_esv=aa2fa3c738b8e4c2&rlz=1C1ASRM_jaJP854JP854&output=search&q=%E7%A5%9E%E6%A5%BD%E5%9D%82%E3%82%8A%E3%81%9D%E3%81%AA%E9%8A%80%E8%A1%8C&source=lnms&fbs=AEQNm0BmX_LnrLeR8vf4SqPj9gyQRjWgtaeThu4D3ydgNvH7ElI6_D4g4WCiufgkP0TvKg1l66LjXHOb5lqpk7a4MBSIxLq1ndj6NUqo5xGMS2wnhTv8z9wOlR6Roe-UQ8uHAEKU8FmNoC-LjCpS2vWJ8u6pbrWGb39Bopzwghz_rAjx6kLF3mKVYqZAb5D1kz6k8YBxKS6Ocv9BmDvjvSBsnGee2-LIfTRuxX07VZOepqMMcAWfFrY&entry=mc&ved=1t:200715&ictx=111",
-            "https://www.google.com/maps/search/JR%E5%B7%A3%E9%B4%A8%E9%A7%85+%E5%8D%97%E5%8F%A3%E3%83%AD%E3%83%BC%E3%82%BF%E3%83%AA%E3%83%BC/@35.7331075,139.7365356,17z/data=!3m1!4b1?entry=ttu"
-          ],
-          "detected_event_date": "2025-07-23",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【神楽坂まつり 盆踊り】「ダンシングヒーロー」で盆踊り 荻野目洋子 / #盆踊り Kagurazaka Festival Bon Dance 2025",
-          "video_url": "https://www.youtube.com/watch?v=qM1kuwk0J04",
-          "official_urls": [
-            "https://www.google.com/maps?sca_esv=aa2fa3c738b8e4c2&rlz=1C1ASRM_jaJP854JP854&output=search&q=%E7%A5%9E%E6%A5%BD%E5%9D%82%E3%82%8A%E3%81%9D%E3%81%AA%E9%8A%80%E8%A1%8C&source=lnms&fbs=AEQNm0BmX_LnrLeR8vf4SqPj9gyQRjWgtaeThu4D3ydgNvH7ElI6_D4g4WCiufgkP0TvKg1l66LjXHOb5lqpk7a4MBSIxLq1ndj6NUqo5xGMS2wnhTv8z9wOlR6Roe-UQ8uHAEKU8FmNoC-LjCpS2vWJ8u6pbrWGb39Bopzwghz_rAjx6kLF3mKVYqZAb5D1kz6k8YBxKS6Ocv9BmDvjvSBsnGee2-LIfTRuxX07VZOepqMMcAWfFrY&entry=mc&ved=1t:200715&ictx=111",
-            "https://www.google.com/maps/search/JR%E5%B7%A3%E9%B4%A8%E9%A7%85+%E5%8D%97%E5%8F%A3%E3%83%AD%E3%83%BC%E3%82%BF%E3%83%AA%E3%83%BC/@35.7331075,139.7365356,17z/data=!3m1!4b1?entry=ttu"
-          ],
-          "detected_event_date": "2025-07-23",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【神楽坂まつり盆踊り2025】「東京音頭 / 炭坑節 / 新宿音頭」 盆踊り Kagurazaka Festival Bon Dance 2025",
-          "video_url": "https://www.youtube.com/watch?v=4aSfgOCm8Sc",
-          "official_urls": [
-            "https://www.google.com/maps?sca_esv=aa2fa3c738b8e4c2&rlz=1C1ASRM_jaJP854JP854&output=search&q=%E7%A5%9E%E6%A5%BD%E5%9D%82%E3%82%8A%E3%81%9D%E3%81%AA%E9%8A%80%E8%A1%8C&source=lnms&fbs=AEQNm0BmX_LnrLeR8vf4SqPj9gyQRjWgtaeThu4D3ydgNvH7ElI6_D4g4WCiufgkP0TvKg1l66LjXHOb5lqpk7a4MBSIxLq1ndj6NUqo5xGMS2wnhTv8z9wOlR6Roe-UQ8uHAEKU8FmNoC-LjCpS2vWJ8u6pbrWGb39Bopzwghz_rAjx6kLF3mKVYqZAb5D1kz6k8YBxKS6Ocv9BmDvjvSBsnGee2-LIfTRuxX07VZOepqMMcAWfFrY&entry=mc&ved=1t:200715&ictx=111",
-            "https://www.google.com/maps/search/JR%E5%B7%A3%E9%B4%A8%E9%A7%85+%E5%8D%97%E5%8F%A3%E3%83%AD%E3%83%BC%E3%82%BF%E3%83%AA%E3%83%BC/@35.7331075,139.7365356,17z/data=!3m1!4b1?entry=ttu"
-          ],
-          "detected_event_date": "2025-07-23",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【神楽坂まつり盆踊り2025】「大東京音頭 / 八木節 / ドンパン節」 盆踊り Kagurazaka Festival Bon Dance 2025",
-          "video_url": "https://www.youtube.com/watch?v=7HDyNtiFVUk",
-          "official_urls": [
-            "https://www.google.com/maps?sca_esv=aa2fa3c738b8e4c2&rlz=1C1ASRM_jaJP854JP854&output=search&q=%E7%A5%9E%E6%A5%BD%E5%9D%82%E3%82%8A%E3%81%9D%E3%81%AA%E9%8A%80%E8%A1%8C&source=lnms&fbs=AEQNm0BmX_LnrLeR8vf4SqPj9gyQRjWgtaeThu4D3ydgNvH7ElI6_D4g4WCiufgkP0TvKg1l66LjXHOb5lqpk7a4MBSIxLq1ndj6NUqo5xGMS2wnhTv8z9wOlR6Roe-UQ8uHAEKU8FmNoC-LjCpS2vWJ8u6pbrWGb39Bopzwghz_rAjx6kLF3mKVYqZAb5D1kz6k8YBxKS6Ocv9BmDvjvSBsnGee2-LIfTRuxX07VZOepqMMcAWfFrY&entry=mc&ved=1t:200715&ictx=111",
-            "https://www.google.com/maps/search/JR%E5%B7%A3%E9%B4%A8%E9%A7%85+%E5%8D%97%E5%8F%A3%E3%83%AD%E3%83%BC%E3%82%BF%E3%83%AA%E3%83%BC/@35.7331075,139.7365356,17z/data=!3m1!4b1?entry=ttu"
-          ],
-          "detected_event_date": "2025-07-23",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【神楽坂まつり 盆踊り】「真夏の果実」で盆踊り サザンオールスターズ / #盆踊り Kagurazaka Festival Bon Dance 2025",
-          "video_url": "https://www.youtube.com/watch?v=z1tr8c84bac",
-          "official_urls": [
-            "https://www.google.com/maps?sca_esv=aa2fa3c738b8e4c2&rlz=1C1ASRM_jaJP854JP854&output=search&q=%E7%A5%9E%E6%A5%BD%E5%9D%82%E3%82%8A%E3%81%9D%E3%81%AA%E9%8A%80%E8%A1%8C&source=lnms&fbs=AEQNm0BmX_LnrLeR8vf4SqPj9gyQRjWgtaeThu4D3ydgNvH7ElI6_D4g4WCiufgkP0TvKg1l66LjXHOb5lqpk7a4MBSIxLq1ndj6NUqo5xGMS2wnhTv8z9wOlR6Roe-UQ8uHAEKU8FmNoC-LjCpS2vWJ8u6pbrWGb39Bopzwghz_rAjx6kLF3mKVYqZAb5D1kz6k8YBxKS6Ocv9BmDvjvSBsnGee2-LIfTRuxX07VZOepqMMcAWfFrY&entry=mc&ved=1t:200715&ictx=111",
-            "https://www.google.com/maps/search/JR%E5%B7%A3%E9%B4%A8%E9%A7%85+%E5%8D%97%E5%8F%A3%E3%83%AD%E3%83%BC%E3%82%BF%E3%83%AA%E3%83%BC/@35.7331075,139.7365356,17z/data=!3m1!4b1?entry=ttu"
-          ],
-          "detected_event_date": "2025-07-23",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【神楽坂まつり 盆踊り】「オバＱ音頭」 / #盆踊り Kagurazaka Festival Bon Dance 2025",
-          "video_url": "https://www.youtube.com/watch?v=V-BMPCXvX7w",
-          "official_urls": [
-            "https://www.google.com/maps?sca_esv=aa2fa3c738b8e4c2&rlz=1C1ASRM_jaJP854JP854&output=search&q=%E7%A5%9E%E6%A5%BD%E5%9D%82%E3%82%8A%E3%81%9D%E3%81%AA%E9%8A%80%E8%A1%8C&source=lnms&fbs=AEQNm0BmX_LnrLeR8vf4SqPj9gyQRjWgtaeThu4D3ydgNvH7ElI6_D4g4WCiufgkP0TvKg1l66LjXHOb5lqpk7a4MBSIxLq1ndj6NUqo5xGMS2wnhTv8z9wOlR6Roe-UQ8uHAEKU8FmNoC-LjCpS2vWJ8u6pbrWGb39Bopzwghz_rAjx6kLF3mKVYqZAb5D1kz6k8YBxKS6Ocv9BmDvjvSBsnGee2-LIfTRuxX07VZOepqMMcAWfFrY&entry=mc&ved=1t:200715&ictx=111",
-            "https://www.google.com/maps/search/JR%E5%B7%A3%E9%B4%A8%E9%A7%85+%E5%8D%97%E5%8F%A3%E3%83%AD%E3%83%BC%E3%82%BF%E3%83%AA%E3%83%BC/@35.7331075,139.7365356,17z/data=!3m1!4b1?entry=ttu"
-          ],
-          "detected_event_date": "2025-07-23",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        }
-      ]
+      "decision": {
+        "key": "needs_official_confirmation|social_or_map_only|https://www.google.com/maps/place/%E6%B5%A6%E5%AE%89%E5%B8%82%E7%AB%8B%E6%B5%A6%E5%AE%89%E5%B0%8F%E5%AD%A6%E6%A0%A1/@35.6647093,139.883061,15.6z/data=!4m10!1m2!2m1!1z5rWm5a6J5bCP5a2m5qCh!3m6!1s0x60187d7fdf5f0227:0xcbbd5c3a0b176776!8m2!3d35.663688!4d139.894162!15sCg_mtablronlsI_lrabmoKGSARFlbGVtZW50YXJ5X3NjaG9vbOABAA!16s%2Fg%2F11hzxv9vlk?entry=ttu",
+        "action": "exclude_out_of_scope",
+        "reason": "おと判定: 浦安市は東京23区外のため本DB公開対象外として除外。"
+      }
     },
     {
       "queue": "needs_official_confirmation",
@@ -1349,544 +2822,12 @@
           "detected_event_date": "2025-09-11",
           "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
         }
-      ]
-    },
-    {
-      "queue": "needs_official_confirmation",
-      "priority": "low",
-      "category": "social_or_map_only",
-      "primary_url": "https://linktr.ee/tokyohertz",
-      "primary_domain": "linktr.ee",
-      "video_count": 6,
-      "detected_dates": [
-        "2025-10-12",
-        "2025-10-17",
-        "2025-10-19"
       ],
-      "titles": [
-        "😂Ready, Set, Go!🏃Satsuei (Photo/Film) Dash!! @ Shibuya Crossing in Tokyo 2025 4kHDR",
-        "🤩Really Cool!! SHIBUYA RUNWAY -SEOUL MIX- @ Shibuya Fashion Week 2025 Autumn in Tokyo Japan 4kHDR",
-        "💞Friday Night Walk through Trendy Omotesando/Harajuku in Shibuya-ku, Tokyo Japan 2025 4kHDR",
-        "🥳Satsuei (Photo/Film) Dash in the Crazy Crowds!! @ Shibuya Crossing in Tokyo 2025 4kHDR",
-        "😆Someone Shouted “JAPANESE ARE CRAZY!” @ SHIBUYA MUSIC SCRAMBLE × SHIBUYA PLAYGROUND in Tokyo 4kHDR"
-      ],
-      "videos": [
-        {
-          "title": "😂Ready, Set, Go!🏃Satsuei (Photo/Film) Dash!! @ Shibuya Crossing in Tokyo 2025 4kHDR",
-          "video_url": "https://www.youtube.com/watch?v=PQqCg1n43Zw",
-          "official_urls": [
-            "https://linktr.ee/tokyohertz"
-          ],
-          "detected_event_date": "2025-10-12",
-          "channel_id": "UCaVANrt14S6q-if2BBOE4TQ"
-        },
-        {
-          "title": "🤩Really Cool!! SHIBUYA RUNWAY -SEOUL MIX- @ Shibuya Fashion Week 2025 Autumn in Tokyo Japan 4kHDR",
-          "video_url": "https://www.youtube.com/watch?v=5i4PTSbbGbg",
-          "official_urls": [
-            "https://linktr.ee/tokyohertz"
-          ],
-          "detected_event_date": "2025-10-19",
-          "channel_id": "UCaVANrt14S6q-if2BBOE4TQ"
-        },
-        {
-          "title": "💞Friday Night Walk through Trendy Omotesando/Harajuku in Shibuya-ku, Tokyo Japan 2025 4kHDR",
-          "video_url": "https://www.youtube.com/watch?v=304xFj3h3Hw",
-          "official_urls": [
-            "https://linktr.ee/tokyohertz"
-          ],
-          "detected_event_date": "2025-10-17",
-          "channel_id": "UCaVANrt14S6q-if2BBOE4TQ"
-        },
-        {
-          "title": "🥳Satsuei (Photo/Film) Dash in the Crazy Crowds!! @ Shibuya Crossing in Tokyo 2025 4kHDR",
-          "video_url": "https://www.youtube.com/watch?v=Ku_1lmd5DGs",
-          "official_urls": [
-            "https://linktr.ee/tokyohertz"
-          ],
-          "detected_event_date": "2025-10-17",
-          "channel_id": "UCaVANrt14S6q-if2BBOE4TQ"
-        },
-        {
-          "title": "😆Someone Shouted “JAPANESE ARE CRAZY!” @ SHIBUYA MUSIC SCRAMBLE × SHIBUYA PLAYGROUND in Tokyo 4kHDR",
-          "video_url": "https://www.youtube.com/watch?v=JOsJ3bE66yE",
-          "official_urls": [
-            "https://linktr.ee/tokyohertz"
-          ],
-          "detected_event_date": "2025-10-19",
-          "channel_id": "UCaVANrt14S6q-if2BBOE4TQ"
-        },
-        {
-          "title": "😆Living Up to Its Name as the World’s Busiest Crossing! @ Shibuya Crossing in Tokyo 2025 4kHDR",
-          "video_url": "https://www.youtube.com/watch?v=JXL0qyA_gwE",
-          "official_urls": [
-            "https://linktr.ee/tokyohertz"
-          ],
-          "detected_event_date": "2025-10-12",
-          "channel_id": "UCaVANrt14S6q-if2BBOE4TQ"
-        }
-      ]
-    },
-    {
-      "queue": "needs_official_confirmation",
-      "priority": "low",
-      "category": "social_or_map_only",
-      "primary_url": "https://www.google.com/maps/place/SHIBUYA109/@35.6595771,139.6961531,17z/data=!3m1!4b1!4m6!3m5!1s0x60188ca9cd6c1c87:0x55a2a75ba417e072!8m2!3d35.6595771!4d139.698728!16s%2Fm%2F03m78kc?entry=ttu",
-      "primary_domain": "google.com",
-      "video_count": 6,
-      "detected_dates": [
-        "2025-08-02"
-      ],
-      "titles": [
-        "【渋谷盆踊り 2025】「島人ぬ宝」- BEGIN \"平和に感謝!! スペシャルライブ\" / 盆踊り 島人の宝 ライブ",
-        "【渋谷盆踊り 2025】「渋谷音頭」盆踊り /  Shibuya Bon Dance Festival",
-        "【渋谷盆踊り 2025】「大東京音頭」盆踊り /  Shibuya Bon Dance Festival",
-        "【渋谷盆踊り 2025】「ダンシングヒーロー」- 荻野目洋子 /  Shibuya Bon Dance Festival",
-        "【渋谷盆踊り 2025】「河内おとこ節」盆踊り /  Shibuya Bon Dance Festival"
-      ],
-      "videos": [
-        {
-          "title": "【渋谷盆踊り 2025】「島人ぬ宝」- BEGIN \"平和に感謝!! スペシャルライブ\" / 盆踊り 島人の宝 ライブ",
-          "video_url": "https://www.youtube.com/watch?v=es_EaJleT2o",
-          "official_urls": [
-            "https://www.google.com/maps/place/SHIBUYA109/@35.6595771,139.6961531,17z/data=!3m1!4b1!4m6!3m5!1s0x60188ca9cd6c1c87:0x55a2a75ba417e072!8m2!3d35.6595771!4d139.698728!16s%2Fm%2F03m78kc?entry=ttu"
-          ],
-          "detected_event_date": "2025-08-02",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【渋谷盆踊り 2025】「渋谷音頭」盆踊り /  Shibuya Bon Dance Festival",
-          "video_url": "https://www.youtube.com/watch?v=YVMfQjmzUPA",
-          "official_urls": [
-            "https://www.google.com/maps/place/SHIBUYA109/@35.6595771,139.6961531,17z/data=!3m1!4b1!4m6!3m5!1s0x60188ca9cd6c1c87:0x55a2a75ba417e072!8m2!3d35.6595771!4d139.698728!16s%2Fm%2F03m78kc?entry=ttu"
-          ],
-          "detected_event_date": "2025-08-02",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【渋谷盆踊り 2025】「大東京音頭」盆踊り /  Shibuya Bon Dance Festival",
-          "video_url": "https://www.youtube.com/watch?v=Anphd3qD2FQ",
-          "official_urls": [
-            "https://www.google.com/maps/place/SHIBUYA109/@35.6595771,139.6961531,17z/data=!3m1!4b1!4m6!3m5!1s0x60188ca9cd6c1c87:0x55a2a75ba417e072!8m2!3d35.6595771!4d139.698728!16s%2Fm%2F03m78kc?entry=ttu"
-          ],
-          "detected_event_date": "2025-08-02",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【渋谷盆踊り 2025】「ダンシングヒーロー」- 荻野目洋子 /  Shibuya Bon Dance Festival",
-          "video_url": "https://www.youtube.com/watch?v=VsDU3Pgxphs",
-          "official_urls": [
-            "https://www.google.com/maps/place/SHIBUYA109/@35.6595771,139.6961531,17z/data=!3m1!4b1!4m6!3m5!1s0x60188ca9cd6c1c87:0x55a2a75ba417e072!8m2!3d35.6595771!4d139.698728!16s%2Fm%2F03m78kc?entry=ttu"
-          ],
-          "detected_event_date": "2025-08-02",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【渋谷盆踊り 2025】「河内おとこ節」盆踊り /  Shibuya Bon Dance Festival",
-          "video_url": "https://www.youtube.com/watch?v=nmRxnht55sk",
-          "official_urls": [
-            "https://www.google.com/maps/place/SHIBUYA109/@35.6595771,139.6961531,17z/data=!3m1!4b1!4m6!3m5!1s0x60188ca9cd6c1c87:0x55a2a75ba417e072!8m2!3d35.6595771!4d139.698728!16s%2Fm%2F03m78kc?entry=ttu"
-          ],
-          "detected_event_date": "2025-08-02",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【渋谷盆踊り 2025】「東京音頭」盆踊り /  Shibuya Bon Dance Festival",
-          "video_url": "https://www.youtube.com/watch?v=hiM0LbsWIhQ",
-          "official_urls": [
-            "https://www.google.com/maps/place/SHIBUYA109/@35.6595771,139.6961531,17z/data=!3m1!4b1!4m6!3m5!1s0x60188ca9cd6c1c87:0x55a2a75ba417e072!8m2!3d35.6595771!4d139.698728!16s%2Fm%2F03m78kc?entry=ttu"
-          ],
-          "detected_event_date": "2025-08-02",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        }
-      ]
-    },
-    {
-      "queue": "needs_official_confirmation",
-      "priority": "low",
-      "category": "social_or_map_only",
-      "primary_url": "https://www.google.com/maps/place/%E6%B5%84%E5%9C%9F%E7%9C%9F%E5%AE%97%E6%9C%AC%E9%A1%98%E5%AF%BA%E6%B4%BE+%E7%AF%89%E5%9C%B0%E6%9C%AC%E9%A1%98%E5%AF%BA/@35.6666975,139.7688826,18z/data=!4m6!3m5!1s0x60188bdf42f23f8f:0x5079895cf0ec2793!8m2!3d35.6664862!4d139.7722836!16zL20vMDd3cDN4?entry=ttu&g_ep=EgoyMDI1MDcyNy4wIKXMDSoASAFQAw%3D%3D",
-      "primary_domain": "google.com",
-      "video_count": 4,
-      "detected_dates": [
-        "2025-07-30"
-      ],
-      "titles": [
-        "【築地本願寺 納涼盆踊り大会 2025】「東京音頭」盆踊り Tukijihongwanji Bon Dance Festival 2025",
-        "【4K】築地本願寺 納涼盆踊り大会 2025 /「ホームラン音頭 / あさりときりみのおだいどこ音頭 / あやめ踊り / 大江戸助六太鼓奉納演奏 / 日本晴れだよ / これがお江戸の盆ダンス」盆踊り",
-        "【4K】築地本願寺 納涼盆踊り大会 2025 /「炭坑節 / 築地音頭 / 東京音頭」盆踊り Tukijihongwanji Bon Dance Festival 2025",
-        "【4K】築地本願寺 納涼盆踊り大会 2025 /「江戸助六太音頭 / 斎太郎節 / あやめ踊り / 法輪音頭 / ゆかた音頭」盆踊り 屋台"
-      ],
-      "videos": [
-        {
-          "title": "【築地本願寺 納涼盆踊り大会 2025】「東京音頭」盆踊り Tukijihongwanji Bon Dance Festival 2025",
-          "video_url": "https://www.youtube.com/watch?v=kvFrV79x7io",
-          "official_urls": [
-            "https://www.google.com/maps/place/%E6%B5%84%E5%9C%9F%E7%9C%9F%E5%AE%97%E6%9C%AC%E9%A1%98%E5%AF%BA%E6%B4%BE+%E7%AF%89%E5%9C%B0%E6%9C%AC%E9%A1%98%E5%AF%BA/@35.6666975,139.7688826,18z/data=!4m6!3m5!1s0x60188bdf42f23f8f:0x5079895cf0ec2793!8m2!3d35.6664862!4d139.7722836!16zL20vMDd3cDN4?entry=ttu&g_ep=EgoyMDI1MDcyNy4wIKXMDSoASAFQAw%3D%3D"
-          ],
-          "detected_event_date": "2025-07-30",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【4K】築地本願寺 納涼盆踊り大会 2025 /「ホームラン音頭 / あさりときりみのおだいどこ音頭 / あやめ踊り / 大江戸助六太鼓奉納演奏 / 日本晴れだよ / これがお江戸の盆ダンス」盆踊り",
-          "video_url": "https://www.youtube.com/watch?v=Q5_sNzd_5OE",
-          "official_urls": [
-            "https://www.google.com/maps/place/%E6%B5%84%E5%9C%9F%E7%9C%9F%E5%AE%97%E6%9C%AC%E9%A1%98%E5%AF%BA%E6%B4%BE+%E7%AF%89%E5%9C%B0%E6%9C%AC%E9%A1%98%E5%AF%BA/@35.6666975,139.7688826,18z/data=!4m6!3m5!1s0x60188bdf42f23f8f:0x5079895cf0ec2793!8m2!3d35.6664862!4d139.7722836!16zL20vMDd3cDN4?entry=ttu&g_ep=EgoyMDI1MDcyNy4wIKXMDSoASAFQAw%3D%3D"
-          ],
-          "detected_event_date": "2025-07-30",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【4K】築地本願寺 納涼盆踊り大会 2025 /「炭坑節 / 築地音頭 / 東京音頭」盆踊り Tukijihongwanji Bon Dance Festival 2025",
-          "video_url": "https://www.youtube.com/watch?v=k-B9WTi88bI",
-          "official_urls": [
-            "https://www.google.com/maps/place/%E6%B5%84%E5%9C%9F%E7%9C%9F%E5%AE%97%E6%9C%AC%E9%A1%98%E5%AF%BA%E6%B4%BE+%E7%AF%89%E5%9C%B0%E6%9C%AC%E9%A1%98%E5%AF%BA/@35.6666975,139.7688826,18z/data=!4m6!3m5!1s0x60188bdf42f23f8f:0x5079895cf0ec2793!8m2!3d35.6664862!4d139.7722836!16zL20vMDd3cDN4?entry=ttu&g_ep=EgoyMDI1MDcyNy4wIKXMDSoASAFQAw%3D%3D"
-          ],
-          "detected_event_date": "2025-07-30",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【4K】築地本願寺 納涼盆踊り大会 2025 /「江戸助六太音頭 / 斎太郎節 / あやめ踊り / 法輪音頭 / ゆかた音頭」盆踊り 屋台",
-          "video_url": "https://www.youtube.com/watch?v=B4pfGzxtu9I",
-          "official_urls": [
-            "https://www.google.com/maps/place/%E6%B5%84%E5%9C%9F%E7%9C%9F%E5%AE%97%E6%9C%AC%E9%A1%98%E5%AF%BA%E6%B4%BE+%E7%AF%89%E5%9C%B0%E6%9C%AC%E9%A1%98%E5%AF%BA/@35.6666975,139.7688826,18z/data=!4m6!3m5!1s0x60188bdf42f23f8f:0x5079895cf0ec2793!8m2!3d35.6664862!4d139.7722836!16zL20vMDd3cDN4?entry=ttu&g_ep=EgoyMDI1MDcyNy4wIKXMDSoASAFQAw%3D%3D"
-          ],
-          "detected_event_date": "2025-07-30",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        }
-      ]
-    },
-    {
-      "queue": "needs_official_confirmation",
-      "priority": "low",
-      "category": "social_or_map_only",
-      "primary_url": "https://www.google.com/maps/place/%E8%8A%B1%E5%9C%92%E7%A5%9E%E7%A4%BE/@35.6935311,139.702753,17z/data=!3m1!4b1!4m6!3m5!1s0x60188cdbe07cde2b:0x3b4028968ed9a754!8m2!3d35.6935311!4d139.7053279!16s%2Fm%2F0k54d7q?entry=ttu",
-      "primary_domain": "google.com",
-      "video_count": 4,
-      "detected_dates": [
-        "2025-08-02"
-      ],
-      "titles": [
-        "生歌「八木節」!! 粋な歌声は今年も健在!!【新宿 花園神社 盆踊り 2025】 盆踊り Hanazono  Shrine Bon Dance Festival",
-        "【新宿 花園神社 盆踊り 2025】「ダンシングヒーロー」- 荻野目洋子 / 盆踊り Hanazono Shrine Bon Dance Festival",
-        "【新宿 花園神社 盆踊り 2025】「DESIRE -情熱-」中森明菜 で盆踊り / Hanazono  Shrine Bon Dance Festival",
-        "新宿に別世界!! 生唄生演奏で盆踊り 【新宿 花園神社 盆踊り 2025】「炭坑節 /東京音頭 / 新宿音頭 / 八木節」/ Hanazono  Shrine Bon Dance Festival"
-      ],
-      "videos": [
-        {
-          "title": "生歌「八木節」!! 粋な歌声は今年も健在!!【新宿 花園神社 盆踊り 2025】 盆踊り Hanazono  Shrine Bon Dance Festival",
-          "video_url": "https://www.youtube.com/watch?v=miRpwhuGNjo",
-          "official_urls": [
-            "https://www.google.com/maps/place/%E8%8A%B1%E5%9C%92%E7%A5%9E%E7%A4%BE/@35.6935311,139.702753,17z/data=!3m1!4b1!4m6!3m5!1s0x60188cdbe07cde2b:0x3b4028968ed9a754!8m2!3d35.6935311!4d139.7053279!16s%2Fm%2F0k54d7q?entry=ttu"
-          ],
-          "detected_event_date": "2025-08-02",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【新宿 花園神社 盆踊り 2025】「ダンシングヒーロー」- 荻野目洋子 / 盆踊り Hanazono Shrine Bon Dance Festival",
-          "video_url": "https://www.youtube.com/watch?v=NAT8zVY-_Uw",
-          "official_urls": [
-            "https://www.google.com/maps/place/%E8%8A%B1%E5%9C%92%E7%A5%9E%E7%A4%BE/@35.6935311,139.702753,17z/data=!3m1!4b1!4m6!3m5!1s0x60188cdbe07cde2b:0x3b4028968ed9a754!8m2!3d35.6935311!4d139.7053279!16s%2Fm%2F0k54d7q?entry=ttu"
-          ],
-          "detected_event_date": "2025-08-02",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【新宿 花園神社 盆踊り 2025】「DESIRE -情熱-」中森明菜 で盆踊り / Hanazono  Shrine Bon Dance Festival",
-          "video_url": "https://www.youtube.com/watch?v=h8VT6jme1aI",
-          "official_urls": [
-            "https://www.google.com/maps/place/%E8%8A%B1%E5%9C%92%E7%A5%9E%E7%A4%BE/@35.6935311,139.702753,17z/data=!3m1!4b1!4m6!3m5!1s0x60188cdbe07cde2b:0x3b4028968ed9a754!8m2!3d35.6935311!4d139.7053279!16s%2Fm%2F0k54d7q?entry=ttu"
-          ],
-          "detected_event_date": "2025-08-02",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "新宿に別世界!! 生唄生演奏で盆踊り 【新宿 花園神社 盆踊り 2025】「炭坑節 /東京音頭 / 新宿音頭 / 八木節」/ Hanazono  Shrine Bon Dance Festival",
-          "video_url": "https://www.youtube.com/watch?v=-fRgnyO96jw",
-          "official_urls": [
-            "https://www.google.com/maps/place/%E8%8A%B1%E5%9C%92%E7%A5%9E%E7%A4%BE/@35.6935311,139.702753,17z/data=!3m1!4b1!4m6!3m5!1s0x60188cdbe07cde2b:0x3b4028968ed9a754!8m2!3d35.6935311!4d139.7053279!16s%2Fm%2F0k54d7q?entry=ttu"
-          ],
-          "detected_event_date": "2025-08-02",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        }
-      ]
-    },
-    {
-      "queue": "needs_official_confirmation",
-      "priority": "low",
-      "category": "social_or_map_only",
-      "primary_url": "https://www.google.com/maps/place/%E8%87%AA%E7%94%B1%E3%81%8C%E4%B8%98%E9%A7%85/@35.6072728,139.6660912,17z/data=!3m1!4b1!4m6!3m5!1s0x6018f51f0e7b7329:0xc0f96ebbd79be0a3!8m2!3d35.6072728!4d139.6686661!16s%2Fm%2F026_l1l?entry=ttu",
-      "primary_domain": "google.com",
-      "video_count": 3,
-      "detected_dates": [
-        "2024-07-19"
-      ],
-      "titles": [
-        "【自由が丘納涼盆踊り 2025】「希望の轍」で盆踊り サザンオールスターズ / #盆踊り Jiyugaoka Bon Dance Festival 2025.",
-        "【自由が丘納涼盆踊り 2025】「希望の轍」で盆踊りPart② サザンオールスターズ / #盆踊り Jiyugaoka Bon Dance Festival 2025.",
-        "【4K】自由が丘納涼盆踊り大会 2025 最終日 全12曲 「ダンシングヒーロー / 希望の轍 / 夜に駆ける...」/ #盆踊り Jiyugaoka Bon Dance Festival 2025."
-      ],
-      "videos": [
-        {
-          "title": "【自由が丘納涼盆踊り 2025】「希望の轍」で盆踊り サザンオールスターズ / #盆踊り Jiyugaoka Bon Dance Festival 2025.",
-          "video_url": "https://www.youtube.com/watch?v=ZdWwMS4FK-I",
-          "official_urls": [
-            "https://www.google.com/maps/place/%E8%87%AA%E7%94%B1%E3%81%8C%E4%B8%98%E9%A7%85/@35.6072728,139.6660912,17z/data=!3m1!4b1!4m6!3m5!1s0x6018f51f0e7b7329:0xc0f96ebbd79be0a3!8m2!3d35.6072728!4d139.6686661!16s%2Fm%2F026_l1l?entry=ttu"
-          ],
-          "detected_event_date": "2024-07-19",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【自由が丘納涼盆踊り 2025】「希望の轍」で盆踊りPart② サザンオールスターズ / #盆踊り Jiyugaoka Bon Dance Festival 2025.",
-          "video_url": "https://www.youtube.com/watch?v=pW06Zso_0YE",
-          "official_urls": [
-            "https://www.google.com/maps/place/%E8%87%AA%E7%94%B1%E3%81%8C%E4%B8%98%E9%A7%85/@35.6072728,139.6660912,17z/data=!3m1!4b1!4m6!3m5!1s0x6018f51f0e7b7329:0xc0f96ebbd79be0a3!8m2!3d35.6072728!4d139.6686661!16s%2Fm%2F026_l1l?entry=ttu"
-          ],
-          "detected_event_date": "2024-07-19",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【4K】自由が丘納涼盆踊り大会 2025 最終日 全12曲 「ダンシングヒーロー / 希望の轍 / 夜に駆ける...」/ #盆踊り Jiyugaoka Bon Dance Festival 2025.",
-          "video_url": "https://www.youtube.com/watch?v=RcNlIqFtV20",
-          "official_urls": [
-            "https://www.google.com/maps/place/%E8%87%AA%E7%94%B1%E3%81%8C%E4%B8%98%E9%A7%85/@35.6072728,139.6660912,17z/data=!3m1!4b1!4m6!3m5!1s0x6018f51f0e7b7329:0xc0f96ebbd79be0a3!8m2!3d35.6072728!4d139.6686661!16s%2Fm%2F026_l1l?entry=ttu"
-          ],
-          "detected_event_date": "2024-07-19",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        }
-      ]
-    },
-    {
-      "queue": "needs_official_confirmation",
-      "priority": "low",
-      "category": "social_or_map_only",
-      "primary_url": "https://www.google.com/maps/search/%E6%81%B5%E6%AF%94%E5%AF%BF%E9%A7%85%E5%89%8D%E8%A5%BF%E5%8F%A3%E3%83%AD%E3%83%BC%E3%82%BF%E3%83%AA%E3%83%BC/@35.6462657,139.7094639,18z/data=!3m1!4b1?entry=ttu",
-      "primary_domain": "google.com",
-      "video_count": 3,
-      "detected_dates": [
-        "2025-07-25"
-      ],
-      "titles": [
-        "【恵比寿駅前盆踊り大会 2025】「YES YES EBISU」×３ ”外国人日本人みんな恵比須顔!! ” #盆踊り Ebisu Station Bon Dance Festival",
-        "【恵比寿駅前盆踊り大会 2025】「おてもやん」熊本県民謡  ”今年は聞けて嬉しい!!” #盆踊り Ebisu Station Bon Dance Festival",
-        "【恵比寿駅前盆踊り大会 2025】ご当地曲 第70回大会記念メドレー / Hey Mr恵比寿 恵比寿音頭 能登島さし音頭  恵比寿ラビアンローズ YES YES EBISU"
-      ],
-      "videos": [
-        {
-          "title": "【恵比寿駅前盆踊り大会 2025】「YES YES EBISU」×３ ”外国人日本人みんな恵比須顔!! ” #盆踊り Ebisu Station Bon Dance Festival",
-          "video_url": "https://www.youtube.com/watch?v=geuBLjcuoU0",
-          "official_urls": [
-            "https://www.google.com/maps/search/%E6%81%B5%E6%AF%94%E5%AF%BF%E9%A7%85%E5%89%8D%E8%A5%BF%E5%8F%A3%E3%83%AD%E3%83%BC%E3%82%BF%E3%83%AA%E3%83%BC/@35.6462657,139.7094639,18z/data=!3m1!4b1?entry=ttu"
-          ],
-          "detected_event_date": "2025-07-25",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【恵比寿駅前盆踊り大会 2025】「おてもやん」熊本県民謡  ”今年は聞けて嬉しい!!” #盆踊り Ebisu Station Bon Dance Festival",
-          "video_url": "https://www.youtube.com/watch?v=0T_yoFqOgVs",
-          "official_urls": [
-            "https://www.google.com/maps/search/%E6%81%B5%E6%AF%94%E5%AF%BF%E9%A7%85%E5%89%8D%E8%A5%BF%E5%8F%A3%E3%83%AD%E3%83%BC%E3%82%BF%E3%83%AA%E3%83%BC/@35.6462657,139.7094639,18z/data=!3m1!4b1?entry=ttu"
-          ],
-          "detected_event_date": "2025-07-25",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【恵比寿駅前盆踊り大会 2025】ご当地曲 第70回大会記念メドレー / Hey Mr恵比寿 恵比寿音頭 能登島さし音頭  恵比寿ラビアンローズ YES YES EBISU",
-          "video_url": "https://www.youtube.com/watch?v=OfEQCbPzrT4",
-          "official_urls": [
-            "https://www.google.com/maps/search/%E6%81%B5%E6%AF%94%E5%AF%BF%E9%A7%85%E5%89%8D%E8%A5%BF%E5%8F%A3%E3%83%AD%E3%83%BC%E3%82%BF%E3%83%AA%E3%83%BC/@35.6462657,139.7094639,18z/data=!3m1!4b1?entry=ttu"
-          ],
-          "detected_event_date": "2025-07-25",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        }
-      ]
-    },
-    {
-      "queue": "needs_official_confirmation",
-      "priority": "low",
-      "category": "social_or_map_only",
-      "primary_url": "https://www.google.com/maps/place/%E6%B5%84%E5%9C%9F%E5%AF%BA/@35.6742472,139.732896,17z/data=!3m1!4b1!4m6!3m5!1s0x60188c7f6f6b9c49:0x47cc2d136473bdb7!8m2!3d35.6742429!4d139.7354709!16s%2Fg%2F1tl8kpxq?entry=ttu&g_ep=EgoyMDI1MDcyMy4wIKXMDSoASAFQAw%3D%3D",
-      "primary_domain": "google.com",
-      "video_count": 3,
-      "detected_dates": [
-        "2025-07-24"
-      ],
-      "titles": [
-        "デヴィ夫人も来場!! TBSの隣 赤坂浄土寺盆踊り大会2025 / 盆ギリ恋歌 / ニッポンワッショイ/ あかね音頭 /となりのトトロ(さんぽ) / サザエさん",
-        "【4K】 赤坂 浄土寺盆踊り大会 2025 前編 / 盆踊り「会津磐梯山 / 白浜音頭 / 大東京音頭 /  盆ギリ恋歌 / 赤坂豊川音頭 / 赤坂小唄 / 赤坂音頭」",
-        "【4K】 赤坂 浄土寺盆踊り大会 2025 後編 / 盆踊り「東京音頭 / カワサキ / ドダレバチ /  盆ギリ恋歌 / 赤坂豊川音頭 / 赤坂小唄 / 赤坂音頭」"
-      ],
-      "videos": [
-        {
-          "title": "デヴィ夫人も来場!! TBSの隣 赤坂浄土寺盆踊り大会2025 / 盆ギリ恋歌 / ニッポンワッショイ/ あかね音頭 /となりのトトロ(さんぽ) / サザエさん",
-          "video_url": "https://www.youtube.com/watch?v=c1ucvp7HYSs",
-          "official_urls": [
-            "https://www.google.com/maps/place/%E6%B5%84%E5%9C%9F%E5%AF%BA/@35.6742472,139.732896,17z/data=!3m1!4b1!4m6!3m5!1s0x60188c7f6f6b9c49:0x47cc2d136473bdb7!8m2!3d35.6742429!4d139.7354709!16s%2Fg%2F1tl8kpxq?entry=ttu&g_ep=EgoyMDI1MDcyMy4wIKXMDSoASAFQAw%3D%3D"
-          ],
-          "detected_event_date": "2025-07-24",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【4K】 赤坂 浄土寺盆踊り大会 2025 前編 / 盆踊り「会津磐梯山 / 白浜音頭 / 大東京音頭 /  盆ギリ恋歌 / 赤坂豊川音頭 / 赤坂小唄 / 赤坂音頭」",
-          "video_url": "https://www.youtube.com/watch?v=6gpBlyeZXoc",
-          "official_urls": [
-            "https://www.google.com/maps/place/%E6%B5%84%E5%9C%9F%E5%AF%BA/@35.6742472,139.732896,17z/data=!3m1!4b1!4m6!3m5!1s0x60188c7f6f6b9c49:0x47cc2d136473bdb7!8m2!3d35.6742429!4d139.7354709!16s%2Fg%2F1tl8kpxq?entry=ttu&g_ep=EgoyMDI1MDcyMy4wIKXMDSoASAFQAw%3D%3D"
-          ],
-          "detected_event_date": "2025-07-24",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【4K】 赤坂 浄土寺盆踊り大会 2025 後編 / 盆踊り「東京音頭 / カワサキ / ドダレバチ /  盆ギリ恋歌 / 赤坂豊川音頭 / 赤坂小唄 / 赤坂音頭」",
-          "video_url": "https://www.youtube.com/watch?v=oW8T6lHEPc8",
-          "official_urls": [
-            "https://www.google.com/maps/place/%E6%B5%84%E5%9C%9F%E5%AF%BA/@35.6742472,139.732896,17z/data=!3m1!4b1!4m6!3m5!1s0x60188c7f6f6b9c49:0x47cc2d136473bdb7!8m2!3d35.6742429!4d139.7354709!16s%2Fg%2F1tl8kpxq?entry=ttu&g_ep=EgoyMDI1MDcyMy4wIKXMDSoASAFQAw%3D%3D"
-          ],
-          "detected_event_date": "2025-07-24",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        }
-      ]
-    },
-    {
-      "queue": "needs_official_confirmation",
-      "priority": "low",
-      "category": "social_or_map_only",
-      "primary_url": "https://maps.app.goo.gl/gVkfqrsrwrzS8KhH6",
-      "primary_domain": "maps.app.goo.gl",
-      "video_count": 2,
-      "detected_dates": [
-        "2025-10-18"
-      ],
-      "titles": [
-        "[4K]🇯🇵 アニソンディスコ 新宝島｜おジャ魔女カーニバル｜ハム太郎｜マツケンサンバ｜ジャンボリミッキー 他 下町ハイボールフェス2025 in 新小岩公園",
-        "[4K]🇯🇵 アニソン盆踊り協会 おジャ魔女カーニバル｜ジャンボリミッキー｜推しの子 他 下町ハイボールフェス2025 / The Anime Song Bon Odori Association"
-      ],
-      "videos": [
-        {
-          "title": "[4K]🇯🇵 アニソンディスコ 新宝島｜おジャ魔女カーニバル｜ハム太郎｜マツケンサンバ｜ジャンボリミッキー 他 下町ハイボールフェス2025 in 新小岩公園",
-          "video_url": "https://www.youtube.com/watch?v=5NSyK0h6JWA",
-          "official_urls": [
-            "https://maps.app.goo.gl/gVkfqrsrwrzS8KhH6",
-            "https://x.com/walkingfilmlove"
-          ],
-          "detected_event_date": "2025-10-18",
-          "channel_id": "UCKCspf_NrY16rUnODmBqOWA"
-        },
-        {
-          "title": "[4K]🇯🇵 アニソン盆踊り協会 おジャ魔女カーニバル｜ジャンボリミッキー｜推しの子 他 下町ハイボールフェス2025 / The Anime Song Bon Odori Association",
-          "video_url": "https://www.youtube.com/watch?v=w_y7vX_RrEY",
-          "official_urls": [
-            "https://maps.app.goo.gl/gVkfqrsrwrzS8KhH6",
-            "https://x.com/walkingfilmlove"
-          ],
-          "detected_event_date": "2025-10-18",
-          "channel_id": "UCKCspf_NrY16rUnODmBqOWA"
-        }
-      ]
-    },
-    {
-      "queue": "needs_official_confirmation",
-      "priority": "low",
-      "category": "social_or_map_only",
-      "primary_url": "https://www.google.com/maps?sca_esv=ed31745f76a805c8&rlz=1C1ASRM_jaJP854JP854&output=search&q=%E7%A5%90%E5%A4%A9%E5%AF%BA&source=lnms&fbs=AIIjpHx8KeeL4pinWNBsyb2wNnV58AkgzLWvfzucLzRBLhfWJh_fYQV-crphwtS8Dk8eQ_BrrlbjBkoYpRNvJUlZj8Z0f9KPGZTdcFsp4vGdABl_Sr8DUSqOSwMyL9x5ZrBzEFkdxQhzB1TO_t-gBqdCWGl-7EqX672If9GDUBkac886eMgxSlIe8U2qo47SHXOvm7OG9rYXwV1wAZkkMAekpnvO35QovU82Oo6lflzvPEVoDM_7so0&entry=mc&ved=1t:200715&ictx=111",
-      "primary_domain": "google.com",
-      "video_count": 2,
-      "detected_dates": [
-        "2025-07-17"
-      ],
-      "titles": [
-        "【祐天寺み霊まつり盆踊り】「東京音頭」 ”数えられないほどの提灯が境内に!! トップレベルの映え盆踊り会場!!\" みたま祭り  Yutenji Shrine Mitama Festival #盆踊り",
-        "【祐天寺み霊まつり盆踊り2025】 ”お坊さんがリード!! 初日全6曲目!! \" 「大東京音頭 /ソーラン節...」みたま祭り  Yutenji Shrine Mitama Festival #盆踊り"
-      ],
-      "videos": [
-        {
-          "title": "【祐天寺み霊まつり盆踊り】「東京音頭」 ”数えられないほどの提灯が境内に!! トップレベルの映え盆踊り会場!!\" みたま祭り  Yutenji Shrine Mitama Festival #盆踊り",
-          "video_url": "https://www.youtube.com/watch?v=PIpOngCTulg",
-          "official_urls": [
-            "https://www.google.com/maps?sca_esv=ed31745f76a805c8&rlz=1C1ASRM_jaJP854JP854&output=search&q=%E7%A5%90%E5%A4%A9%E5%AF%BA&source=lnms&fbs=AIIjpHx8KeeL4pinWNBsyb2wNnV58AkgzLWvfzucLzRBLhfWJh_fYQV-crphwtS8Dk8eQ_BrrlbjBkoYpRNvJUlZj8Z0f9KPGZTdcFsp4vGdABl_Sr8DUSqOSwMyL9x5ZrBzEFkdxQhzB1TO_t-gBqdCWGl-7EqX672If9GDUBkac886eMgxSlIe8U2qo47SHXOvm7OG9rYXwV1wAZkkMAekpnvO35QovU82Oo6lflzvPEVoDM_7so0&entry=mc&ved=1t:200715&ictx=111"
-          ],
-          "detected_event_date": "2025-07-17",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【祐天寺み霊まつり盆踊り2025】 ”お坊さんがリード!! 初日全6曲目!! \" 「大東京音頭 /ソーラン節...」みたま祭り  Yutenji Shrine Mitama Festival #盆踊り",
-          "video_url": "https://www.youtube.com/watch?v=53rD5_n_45s",
-          "official_urls": [
-            "https://www.google.com/maps?sca_esv=ed31745f76a805c8&rlz=1C1ASRM_jaJP854JP854&output=search&q=%E7%A5%90%E5%A4%A9%E5%AF%BA&source=lnms&fbs=AIIjpHx8KeeL4pinWNBsyb2wNnV58AkgzLWvfzucLzRBLhfWJh_fYQV-crphwtS8Dk8eQ_BrrlbjBkoYpRNvJUlZj8Z0f9KPGZTdcFsp4vGdABl_Sr8DUSqOSwMyL9x5ZrBzEFkdxQhzB1TO_t-gBqdCWGl-7EqX672If9GDUBkac886eMgxSlIe8U2qo47SHXOvm7OG9rYXwV1wAZkkMAekpnvO35QovU82Oo6lflzvPEVoDM_7so0&entry=mc&ved=1t:200715&ictx=111"
-          ],
-          "detected_event_date": "2025-07-17",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        }
-      ]
-    },
-    {
-      "queue": "needs_official_confirmation",
-      "priority": "low",
-      "category": "social_or_map_only",
-      "primary_url": "https://www.google.com/maps/place/%E4%B8%8B%E5%8C%97%E6%B2%A2%E9%A7%85/@35.6615848,139.6643169,17z/data=!3m1!4b1!4m6!3m5!1s0x6018f36b9a296133:0x66c43a9f356d5e5d!8m2!3d35.6615848!4d139.6668918!16zL20vMDQzMTZo?entry=ttu&g_ep=EgoyMDI1MDgwNi4wIKXMDSoASAFQAw%3D%3D",
-      "primary_domain": "google.com",
-      "video_count": 2,
-      "detected_dates": [
-        "2025-08-09"
-      ],
-      "titles": [
-        "【下北沢 盆踊り 2025】「お嫁サンバ」でサンバチームと踊る盆踊り / 郷ひろみ Shimokitazawa Bon Dance Fes 2025 盆踊り 下北沢 サンバ",
-        "【下北沢 盆踊り 2025】「シモキタ音頭」生歌生演奏で盆踊り / 馬浪マラカス団 Shimokitazawa Bon Dance 2025 盆踊り 下北沢"
-      ],
-      "videos": [
-        {
-          "title": "【下北沢 盆踊り 2025】「お嫁サンバ」でサンバチームと踊る盆踊り / 郷ひろみ Shimokitazawa Bon Dance Fes 2025 盆踊り 下北沢 サンバ",
-          "video_url": "https://www.youtube.com/watch?v=A3c5YQwF3qQ",
-          "official_urls": [
-            "https://www.google.com/maps/place/%E4%B8%8B%E5%8C%97%E6%B2%A2%E9%A7%85/@35.6615848,139.6643169,17z/data=!3m1!4b1!4m6!3m5!1s0x6018f36b9a296133:0x66c43a9f356d5e5d!8m2!3d35.6615848!4d139.6668918!16zL20vMDQzMTZo?entry=ttu&g_ep=EgoyMDI1MDgwNi4wIKXMDSoASAFQAw%3D%3D"
-          ],
-          "detected_event_date": "2025-08-09",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【下北沢 盆踊り 2025】「シモキタ音頭」生歌生演奏で盆踊り / 馬浪マラカス団 Shimokitazawa Bon Dance 2025 盆踊り 下北沢",
-          "video_url": "https://www.youtube.com/watch?v=HCtkRnDfa24",
-          "official_urls": [
-            "https://www.google.com/maps/place/%E4%B8%8B%E5%8C%97%E6%B2%A2%E9%A7%85/@35.6615848,139.6643169,17z/data=!3m1!4b1!4m6!3m5!1s0x6018f36b9a296133:0x66c43a9f356d5e5d!8m2!3d35.6615848!4d139.6668918!16zL20vMDQzMTZo?entry=ttu&g_ep=EgoyMDI1MDgwNi4wIKXMDSoASAFQAw%3D%3D"
-          ],
-          "detected_event_date": "2025-08-09",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        }
-      ]
-    },
-    {
-      "queue": "needs_official_confirmation",
-      "priority": "low",
-      "category": "social_or_map_only",
-      "primary_url": "https://www.google.com/maps/place/%E6%B5%A6%E5%AE%89%E5%B8%82%E7%AB%8B%E6%B5%A6%E5%AE%89%E5%B0%8F%E5%AD%A6%E6%A0%A1/@35.6647093,139.883061,15.6z/data=!4m10!1m2!2m1!1z5rWm5a6J5bCP5a2m5qCh!3m6!1s0x60187d7fdf5f0227:0xcbbd5c3a0b176776!8m2!3d35.663688!4d139.894162!15sCg_mtablronlsI_lrabmoKGSARFlbGVtZW50YXJ5X3NjaG9vbOABAA!16s%2Fg%2F11hzxv9vlk?entry=ttu",
-      "primary_domain": "google.com",
-      "video_count": 2,
-      "detected_dates": [
-        "2024-08-14"
-      ],
-      "titles": [
-        "【浦安市納涼盆踊り大会 2025】「きよしのズンドコ節」- 氷川きよし / 浦安小学校 盆踊りBon Dance",
-        "【4K】浦安市納涼盆踊り大会 2025 全７曲/ 新・二十一世紀音頭 / きよしのズンドコ節 / 花火音頭 / お富さん 浦安ばやし / 浦安盆踊り唄 .../ 浦安小学校 盆踊りBon Dance"
-      ],
-      "videos": [
-        {
-          "title": "【浦安市納涼盆踊り大会 2025】「きよしのズンドコ節」- 氷川きよし / 浦安小学校 盆踊りBon Dance",
-          "video_url": "https://www.youtube.com/watch?v=mjITfcliLSQ",
-          "official_urls": [
-            "https://www.google.com/maps/place/%E6%B5%A6%E5%AE%89%E5%B8%82%E7%AB%8B%E6%B5%A6%E5%AE%89%E5%B0%8F%E5%AD%A6%E6%A0%A1/@35.6647093,139.883061,15.6z/data=!4m10!1m2!2m1!1z5rWm5a6J5bCP5a2m5qCh!3m6!1s0x60187d7fdf5f0227:0xcbbd5c3a0b176776!8m2!3d35.663688!4d139.894162!15sCg_mtablronlsI_lrabmoKGSARFlbGVtZW50YXJ5X3NjaG9vbOABAA!16s%2Fg%2F11hzxv9vlk?entry=ttu"
-          ],
-          "detected_event_date": "2024-08-14",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【4K】浦安市納涼盆踊り大会 2025 全７曲/ 新・二十一世紀音頭 / きよしのズンドコ節 / 花火音頭 / お富さん 浦安ばやし / 浦安盆踊り唄 .../ 浦安小学校 盆踊りBon Dance",
-          "video_url": "https://www.youtube.com/watch?v=Exo_NS0m76s",
-          "official_urls": [
-            "https://www.google.com/maps/place/%E6%B5%A6%E5%AE%89%E5%B8%82%E7%AB%8B%E6%B5%A6%E5%AE%89%E5%B0%8F%E5%AD%A6%E6%A0%A1/@35.6647093,139.883061,15.6z/data=!4m10!1m2!2m1!1z5rWm5a6J5bCP5a2m5qCh!3m6!1s0x60187d7fdf5f0227:0xcbbd5c3a0b176776!8m2!3d35.663688!4d139.894162!15sCg_mtablronlsI_lrabmoKGSARFlbGVtZW50YXJ5X3NjaG9vbOABAA!16s%2Fg%2F11hzxv9vlk?entry=ttu"
-          ],
-          "detected_event_date": "2024-08-14",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        }
-      ]
+      "decision": {
+        "key": "needs_official_confirmation|social_or_map_only|https://www.google.com/maps/place/%E9%87%91%E7%8E%8B%E5%85%AB%E5%B9%A1%E5%AE%AE/@35.6575361,139.7037695,17z/data=!3m1!4b1!4m6!3m5!1s0x60188b595366b6d5:0x5a15107c0ff67cef!8m2!3d35.6575361!4d139.7063444!16s%2Fg%2F121kk903?entry=ttu&g_ep=EgoyMDI0MDkxMC4wIKXMDSoASAFQAw%3D%3D",
+        "action": "exclude_out_of_scope",
+        "reason": "こと/おと判定: 金王八幡宮例大祭のBEGIN奉納ライブ動画で、盆踊り開催証拠ではないため除外。"
+      }
     },
     {
       "queue": "needs_official_confirmation",
@@ -1911,7 +2852,12 @@
           "detected_event_date": "2025-09-12",
           "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
         }
-      ]
+      ],
+      "decision": {
+        "key": "needs_official_confirmation|social_or_map_only|https://www.google.com/maps/search/%E6%9D%B1%E4%BA%AC%E9%A7%85%E5%89%8D%E8%A1%8C%E5%B9%B8%E9%80%9A%E3%82%8A/@35.6818413,139.7614654,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MDkxMC4wIKXMDSoASAFQAw%3D%3D",
+        "action": "hold_needs_scope_decision",
+        "reason": "こと判定: 複合文化イベント内の盆踊りプログラムで、独立イベントとして登録すべきか判断保留。"
+      }
     },
     {
       "queue": "needs_official_confirmation",
@@ -1936,844 +2882,11 @@
           "detected_event_date": "2025-09-14",
           "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
         }
-      ]
-    },
-    {
-      "queue": "remaining_backfill",
-      "priority": "low",
-      "category": "prior_year_video_uploaded_in_2025",
-      "event_name": "品川区民まつり 西大井広場公園 盆踊り",
-      "event_id": "37b8be04-e762-81bb-97b7-f29fcab6ff14",
-      "video_count": 19,
-      "detected_dates": [],
-      "source_url": "https://bonmaru.zenmin-odori.jp/archives/202668",
-      "recommended_action": "動画公開日は2025年だがタイトル上は過去年実績。2025イベント証拠としては反映しない",
-      "sample_videos": [
-        {
-          "title": "品川音頭　2024年デコトラ盆踊り１　東京都品川区　西大井広場公園",
-          "url": "https://www.youtube.com/watch?v=zOPTqQe_dO8",
-          "published_at": "2025-04-07T10:01:12Z",
-          "detected_event_date": "",
-          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
-        },
-        {
-          "title": "品川甚句　2024年デコトラ盆踊り２　東京都品川区　西大井広場公園",
-          "url": "https://www.youtube.com/watch?v=a_5nk-m6vIs",
-          "published_at": "2025-04-08T10:00:02Z",
-          "detected_event_date": "",
-          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
-        },
-        {
-          "title": "ドンパン節　2024年デコトラ盆踊り３　東京都品川区　西大井広場公園",
-          "url": "https://www.youtube.com/watch?v=mE87j5yJSC8",
-          "published_at": "2025-04-09T10:01:07Z",
-          "detected_event_date": "",
-          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
-        },
-        {
-          "title": "ドラえもん音頭　2024年デコトラ盆踊り４　東京都品川区　西大井広場公園",
-          "url": "https://www.youtube.com/watch?v=xyJiZBjKN7o",
-          "published_at": "2025-04-10T10:01:32Z",
-          "detected_event_date": "",
-          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
-        },
-        {
-          "title": "夢ヤッサ　2024年デコトラ盆踊り５　東京都品川区　西大井広場公園",
-          "url": "https://www.youtube.com/watch?v=-eu3UPttBpA",
-          "published_at": "2025-04-11T10:00:03Z",
-          "detected_event_date": "",
-          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
-        },
-        {
-          "title": "郡上節かわさき　2024年デコトラ盆踊り６　東京都品川区　西大井広場公園",
-          "url": "https://www.youtube.com/watch?v=TKg_iEXpZnE",
-          "published_at": "2025-04-12T10:00:45Z",
-          "detected_event_date": "",
-          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
-        },
-        {
-          "title": "郡上節春駒　2024年デコトラ盆踊り７　東京都品川区　西大井広場公園",
-          "url": "https://www.youtube.com/watch?v=gu9ypNNV3TA",
-          "published_at": "2025-04-13T10:01:05Z",
-          "detected_event_date": "",
-          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
-        },
-        {
-          "title": "【八木節】　2024年デコトラ盆踊り８　東京都品川区　西大井広場公園",
-          "url": "https://www.youtube.com/watch?v=zKneOhE17TA",
-          "published_at": "2025-04-14T10:01:35Z",
-          "detected_event_date": "",
-          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
-        }
-      ]
-    },
-    {
-      "queue": "remaining_backfill",
-      "priority": "low",
-      "category": "year_mismatch_or_recurring_event_review",
-      "event_name": "みたままつり 納涼民踊のつどい",
-      "event_id": "3788be04-e762-8181-945d-f85785e88086",
-      "video_count": 12,
-      "detected_dates": [],
-      "source_url": "https://drive.google.com/file/d/1CH9HDeWZx4Ym39mpRFJme9EhknKSHasO/view?usp=drive_link",
-      "recommended_action": "2025動画を2026イベントへ入れず、過去年実績または2025イベント別ページとして扱うか確認",
-      "sample_videos": [
-        {
-          "title": "【靖国神社 みたままつり2025】奉納演奏 千修吹奏楽団パレード 奉納演奏 2025",
-          "url": "https://www.youtube.com/watch?v=M5KgsOEnhE8",
-          "published_at": "2025-07-13T14:35:00Z",
-          "detected_event_date": "",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "大妻女子大 神輿も練り歩く!! 一日目【靖国神社 みたままつり2025】みこし振り 麹町靖國講神輿 #神輿 Yasukuni Shrine Mitama Festival 2025",
-          "url": "https://www.youtube.com/watch?v=G5ZLCaSX-lA",
-          "published_at": "2025-07-13T16:27:08Z",
-          "detected_event_date": "",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【4K】靖国神社みたままつり2025 ｜神輿の後ろでは盆踊り!! 日本文化が渋滞中!! ... みこし振り 麹町靖國講神輿 #神輿 Yasukuni Shrine Mitama Festival",
-          "url": "https://www.youtube.com/watch?v=bplHnAD3-bI",
-          "published_at": "2025-07-14T08:00:40Z",
-          "detected_event_date": "",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【4K】靖国神社 みたままつり 盆踊り|「ダンシングヒーロー」 荻野目洋子 | Yasukuni Shrine Mitama Festival 2025 #盆踊り",
-          "url": "https://www.youtube.com/watch?v=SggXZLFIVss",
-          "published_at": "2025-07-14T14:01:52Z",
-          "detected_event_date": "",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【4K】靖国神社 みたままつり 2025｜青森ねぶた |  Aomori Nebuta  Yasukuni Shrine Mitama Festival",
-          "url": "https://www.youtube.com/watch?v=251fAxLQmU8",
-          "published_at": "2025-07-14T17:31:08Z",
-          "detected_event_date": "",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "靖国神社みたままつり #東京 #yasukunishrine #盆踊り #mitamamatsuri #tokyo #mitamafestival #superbusy #大混雑",
-          "url": "https://www.youtube.com/watch?v=nZhQVFMiv18",
-          "published_at": "2025-07-15T03:00:46Z",
-          "detected_event_date": "",
-          "channel_id": "UCaVANrt14S6q-if2BBOE4TQ"
-        },
-        {
-          "title": "【4K】「大東京音頭」 | 靖国神社みたままつり盆踊り | Yasukuni Shrine Mitama Festival 2025 #盆踊り",
-          "url": "https://www.youtube.com/watch?v=m_8Wu9NC6Wg",
-          "published_at": "2025-07-15T07:30:33Z",
-          "detected_event_date": "",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【4K】「銀座カンカン娘」| 靖国神社みたままつり盆踊り | Yasukuni Shrine Mitama Festival 2025 #盆踊り",
-          "url": "https://www.youtube.com/watch?v=xnqbf6nlWiQ",
-          "published_at": "2025-07-15T09:01:24Z",
-          "detected_event_date": "",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        }
-      ]
-    },
-    {
-      "queue": "remaining_backfill",
-      "priority": "low",
-      "category": "prior_year_video_uploaded_in_2025",
-      "event_name": "京橋盆踊り",
-      "event_id": "37b8be04-e762-818a-8e40-f5a158baebfc",
-      "video_count": 10,
-      "detected_dates": [],
-      "source_url": "https://www.edogrand.tokyo/event/6924",
-      "recommended_action": "動画公開日は2025年だがタイトル上は過去年実績。2025イベント証拠としては反映しない",
-      "sample_videos": [
-        {
-          "title": "これがお江戸の盆ダンス　2024年京橋盆踊り１　京橋エドグラン　東京都中央区",
-          "url": "https://www.youtube.com/watch?v=Za-nKihbGwo",
-          "published_at": "2025-01-28T10:00:28Z",
-          "detected_event_date": "",
-          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
-        },
-        {
-          "title": "「炭坑節」　2024年京橋盆踊り２　京橋エドグラン　東京都中央区",
-          "url": "https://www.youtube.com/watch?v=nF_UDhhNrUY",
-          "published_at": "2025-01-28T10:30:30Z",
-          "detected_event_date": "",
-          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
-        },
-        {
-          "title": "銀座カンカン娘　2024年京橋盆踊り３　京橋エドグラン　東京都中央区",
-          "url": "https://www.youtube.com/watch?v=QDBGEoWD1do",
-          "published_at": "2025-01-29T10:00:27Z",
-          "detected_event_date": "",
-          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
-        },
-        {
-          "title": "「きよしのズンドコ節」　2024年京橋盆踊り４　京橋エドグラン　東京都中央区",
-          "url": "https://www.youtube.com/watch?v=uJqNQ9dMa9w",
-          "published_at": "2025-01-29T10:30:25Z",
-          "detected_event_date": "",
-          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
-        },
-        {
-          "title": "ダンシング・ヒーロー　2024年京橋盆踊り５　京橋エドグラン　東京都中央区",
-          "url": "https://www.youtube.com/watch?v=-Ss8wvxCUlc",
-          "published_at": "2025-01-30T10:00:00Z",
-          "detected_event_date": "",
-          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
-        },
-        {
-          "title": "バハマ・ママ　2024年京橋盆踊り６　京橋エドグラン　東京都中央区",
-          "url": "https://www.youtube.com/watch?v=x0IBhz1fOlY",
-          "published_at": "2025-01-30T10:30:22Z",
-          "detected_event_date": "",
-          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
-        },
-        {
-          "title": "東京音頭　2024年京橋盆踊り７　京橋エドグラン　東京都中央区",
-          "url": "https://www.youtube.com/watch?v=vAshQG9ck3A",
-          "published_at": "2025-01-31T10:01:08Z",
-          "detected_event_date": "",
-          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
-        },
-        {
-          "title": "「チャンチキおけさ」　2024年京橋盆踊り８　京橋エドグラン　東京都中央区",
-          "url": "https://www.youtube.com/watch?v=lqLreQN4c6E",
-          "published_at": "2025-01-31T10:30:21Z",
-          "detected_event_date": "",
-          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
-        }
-      ]
-    },
-    {
-      "queue": "remaining_backfill",
-      "priority": "low",
-      "category": "prior_year_video_uploaded_in_2025",
-      "event_name": "根津神社 盆踊り（文京区）",
-      "event_id": "3778be04-e762-81ea-b182-e47d214c0089",
-      "video_count": 6,
-      "detected_dates": [],
-      "source_url": "https://bonmaru.zenmin-odori.jp/archives/2674",
-      "recommended_action": "動画公開日は2025年だがタイトル上は過去年実績。2025イベント証拠としては反映しない",
-      "sample_videos": [
-        {
-          "title": "大東京音頭　2024年竜泉二丁目町会納涼盆踊り大会１　東京都台東区",
-          "url": "https://www.youtube.com/watch?v=Mpdekksis2I",
-          "published_at": "2025-01-01T10:00:16Z",
-          "detected_event_date": "",
-          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
-        },
-        {
-          "title": "「ダンシングヒーロー」　〆太鼓　2024年竜泉二丁目町会納涼盆踊り大会２終　東京都台東区",
-          "url": "https://www.youtube.com/watch?v=Uihw5aiCtQI",
-          "published_at": "2025-01-01T10:30:12Z",
-          "detected_event_date": "",
-          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
-        },
-        {
-          "title": "ニッポンワッショイ　2024年外神田納涼盆踊り大会19　秋葉原芳林公園　東京都千代田区",
-          "url": "https://www.youtube.com/watch?v=8nvnh7iOZh4",
-          "published_at": "2025-01-02T10:00:11Z",
-          "detected_event_date": "",
-          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
-        },
-        {
-          "title": "銭形平次　2024年外神田納涼盆踊り大会20　秋葉原芳林公園　東京都千代田区",
-          "url": "https://www.youtube.com/watch?v=3KKv4WaQ8ds",
-          "published_at": "2025-01-02T10:30:01Z",
-          "detected_event_date": "",
-          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
-        },
-        {
-          "title": "大東京音頭　2024年外神田納涼盆踊り大会21　秋葉原芳林公園　東京都千代田区",
-          "url": "https://www.youtube.com/watch?v=-dhdiQ7s3Rw",
-          "published_at": "2025-01-03T10:00:00Z",
-          "detected_event_date": "",
-          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
-        },
-        {
-          "title": "大江戸助六太鼓門下生　和太鼓演奏　2024年外神田納涼盆踊り大会22終　秋葉原芳林公園　東京都千代田区",
-          "url": "https://www.youtube.com/watch?v=M4jB-5rTWzE",
-          "published_at": "2025-01-03T10:30:15Z",
-          "detected_event_date": "",
-          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
-        }
-      ]
-    },
-    {
-      "queue": "remaining_backfill",
-      "priority": "low",
-      "category": "year_mismatch_or_recurring_event_review",
-      "event_name": "奥浅草盆踊り",
-      "event_id": "3788be04-e762-81b6-8835-f39be0b29bee",
-      "video_count": 5,
-      "detected_dates": [],
-      "source_url": "https://twitter.com/Okuasakusa_bon",
-      "recommended_action": "2025動画を2026イベントへ入れず、過去年実績または2025イベント別ページとして扱うか確認",
-      "sample_videos": [
-        {
-          "title": "【奥浅草盆踊り 2025】「エロティカセブン」サザンオールスターズで盆踊り / #盆踊り OkuAsakusa Bon Dance　EROTICA SEVEN",
-          "url": "https://www.youtube.com/watch?v=DqB3liFpD6g",
-          "published_at": "2025-06-28T17:36:34Z",
-          "detected_event_date": "",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【奥浅草盆踊り 2025】今年で3回目!! 東京屈指の絶景人気盆踊り会場!!  #盆踊り OkuAsakusa Bon Dance",
-          "url": "https://www.youtube.com/watch?v=3zoXTAt5WwQ",
-          "published_at": "2025-06-29T02:47:29Z",
-          "detected_event_date": "",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【奥浅草盆踊り】「波乗りジョニー」桑田佳祐で盆踊り / #盆踊り OkuAsakusa Bon Dance",
-          "url": "https://www.youtube.com/watch?v=cWjceY6nLJI",
-          "published_at": "2025-06-30T08:00:46Z",
-          "detected_event_date": "",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【奥浅草盆踊り】今年の新曲「LOVE AFFAIR 〜秘密のデート〜」サザンオールスターズで盆踊り  #盆踊り OkuAsakusa Bon Dance 2025",
-          "url": "https://www.youtube.com/watch?v=KIIr-8bHQa0",
-          "published_at": "2025-06-30T10:00:30Z",
-          "detected_event_date": "",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【4K】奥浅草盆踊り 2025 第三部  「燃えろ日本の夏祭り / 炭坑節 / ハラハラ音頭 /  おめでた音頭 /  ふるさと音頭」#盆踊り OkuAsakusa Bon Dance",
-          "url": "https://www.youtube.com/watch?v=OzS13qNZ1uw",
-          "published_at": "2025-06-30T11:30:32Z",
-          "detected_event_date": "",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        }
-      ]
-    },
-    {
-      "queue": "remaining_backfill",
-      "priority": "low",
-      "category": "year_mismatch_or_recurring_event_review",
-      "event_name": "すみだ錦糸町河内音頭大盆踊り",
-      "event_id": "3778be04-e762-817c-a6a2-f9d219bf1e9e",
-      "video_count": 2,
-      "detected_dates": [],
-      "source_url": "https://www.kinshicho-kawachiondo.jp/archives/1058",
-      "recommended_action": "2025動画を2026イベントへ入れず、過去年実績または2025イベント別ページとして扱うか確認",
-      "sample_videos": [
-        {
-          "title": "【すみだ錦糸町河内音頭大盆踊り 2025】「江州音頭」中西レモン &ドーナツディスコデラックス / 山中一平 / カオリーニョ藤原 江州音頭 盆踊り",
-          "url": "https://www.youtube.com/watch?v=QznGUNIdJKY",
-          "published_at": "2025-07-31T22:00:37Z",
-          "detected_event_date": "",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "So Intense! Sumida Kinshicho Kawachi Ondo Bon Odori 2025",
-          "url": "https://www.youtube.com/watch?v=DzS39RxU5aU",
-          "published_at": "2025-08-12T12:19:31Z",
-          "detected_event_date": "",
-          "channel_id": "UCaVANrt14S6q-if2BBOE4TQ"
-        }
-      ]
-    }
-  ],
-  "skipped": [
-    {
-      "queue": "remaining_backfill",
-      "priority": "normal",
-      "category": "date_backfill_candidate_multi_date",
-      "event_name": "青山熊野神社例大祭 奉納踊り",
-      "event_id": "37b8be04-e762-814a-a9af-c9d8490a0a55",
-      "video_count": 47,
-      "detected_dates": [
-        "2025-09-26",
-        "2025-09-27"
-      ],
-      "source_url": "https://bonmaru.zenmin-odori.jp/archives/419",
-      "recommended_action": "複数日開催または誤混入を確認し、日付範囲を補正候補にする",
-      "sample_videos": [
-        {
-          "title": "[4K]🇯🇵 青葉公園 盆踊り青山熊野神社例大祭奉納踊り2025 / Traditional Japanese Bon dance in Aoyama, Tokyo.",
-          "url": "https://www.youtube.com/watch?v=-c-k_Q8oSBw",
-          "published_at": "2025-09-27T08:00:00Z",
-          "detected_event_date": "2025-09-27",
-          "channel_id": "UCKCspf_NrY16rUnODmBqOWA"
-        },
-        {
-          "title": "【青山 青葉公園 盆踊り 2025】「となりのトトロ」井上あずみ 盆踊り / 青山熊野神社例大祭 Akasaka Hikawa Festival 2025 My Neighbor Totoro",
-          "url": "https://www.youtube.com/watch?v=8yjdzG6GM-E",
-          "published_at": "2025-10-02T09:00:22Z",
-          "detected_event_date": "",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "かがやき音頭　青山熊野神社例大祭奉納踊り１　青葉公園盆踊り　2025年9月26日",
-          "url": "https://www.youtube.com/watch?v=n_F-1pNdMh4",
-          "published_at": "2025-10-03T12:31:06Z",
-          "detected_event_date": "2025-09-26",
-          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
-        },
-        {
-          "title": "津軽甚句（ドダレバチ）　青山熊野神社例大祭奉納踊り２　青葉公園盆踊り　2025年9月26日",
-          "url": "https://www.youtube.com/watch?v=Tpy66sNqAJk",
-          "published_at": "2025-10-04T12:30:38Z",
-          "detected_event_date": "2025-09-26",
-          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
-        },
-        {
-          "title": "「花火音頭」（橋幸夫）　青山熊野神社例大祭奉納踊り３　青葉公園盆踊り　2025年9月26日",
-          "url": "https://www.youtube.com/watch?v=oundF9exZsA",
-          "published_at": "2025-10-05T12:30:56Z",
-          "detected_event_date": "2025-09-26",
-          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
-        },
-        {
-          "title": "「チャンチキおけさ」（三波春夫）　青山熊野神社例大祭奉納踊り４　青葉公園盆踊り　2025年9月26日",
-          "url": "https://www.youtube.com/watch?v=eUAhlgcUKlw",
-          "published_at": "2025-10-06T12:01:19Z",
-          "detected_event_date": "2025-09-26",
-          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
-        },
-        {
-          "title": "ハッピーロック　青山熊野神社例大祭奉納踊り５　青葉公園盆踊り　2025年9月26日",
-          "url": "https://www.youtube.com/watch?v=Y5gb5x6YX-g",
-          "published_at": "2025-10-07T12:01:15Z",
-          "detected_event_date": "2025-09-26",
-          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
-        },
-        {
-          "title": "ご祝儀音頭　青山熊野神社例大祭奉納踊り６　青葉公園盆踊り　2025年9月26日",
-          "url": "https://www.youtube.com/watch?v=opQI6O4Z7c8",
-          "published_at": "2025-10-07T12:31:07Z",
-          "detected_event_date": "2025-09-26",
-          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
-        }
       ],
       "decision": {
-        "key": "remaining_backfill|date_backfill_candidate_multi_date|37b8be04-e762-814a-a9af-c9d8490a0a55|青山熊野神社例大祭 奉納踊り",
+        "key": "needs_official_confirmation|social_or_map_only|https://www.google.com/maps?sca_esv=7e619e38cdd6dc6b&rlz=1C1ASRM_jaJP854JP854&output=search&q=%E6%97%A5%E6%9A%AE%E9%87%8C%E9%A7%85%E5%89%8D%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E5%BA%83%E5%A0%B4&source=lnms&fbs=AEQNm0Arhw5xil6bRXzBEwLafnGFYcCddG_LKJenl3UnZTjbvXA6wjVOZhNS_CRUxbGj3ZGI_RgpkWoZatApLReG67cpdPdR_JmSMbc8SGXp9FagIPA8-B_BPfHFVApDenaTPfgibNahFNOiP0Q48C4E7ILYM_81Ww8K2bf7Ww1hAtUKyv6RaMVth6gRoBMgrXhzi6QABd6uQTY87ro6gPZCVE4dsfakoEthpH2FvMP2bVnH6S6Qr18&entry=mc&ved=1t:200715&ictx=111",
         "action": "skip_registered",
-        "reason": "2025-09-26〜2025-09-27開催としてNotionへ反映済み。盆まる記事と青葉公園のYouTube動画群で確認済み。"
-      }
-    },
-    {
-      "queue": "remaining_backfill",
-      "priority": "normal",
-      "category": "date_backfill_candidate_multi_date",
-      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE 2026",
-      "event_id": "3778be04-e762-81d5-b02b-eb34684595ae",
-      "video_count": 14,
-      "detected_dates": [
-        "2025-05-30",
-        "2025-06-01",
-        "2025-09-27",
-        "2025-09-28"
-      ],
-      "source_url": "https://mantan-web.jp/prtimes/article/20260527prt00m200000530a.html",
-      "recommended_action": "複数日開催または誤混入を確認し、日付範囲を補正候補にする",
-      "sample_videos": [
-        {
-          "title": "[4K]🇯🇵 DJ KOOが渋谷で盆踊り｜Get Wild｜EZ DO DANCE｜とっとこハム太郎｜他 / Japanese Bon dance in Shibuya, Tokyo.",
-          "url": "https://www.youtube.com/watch?v=2VL89WkbEWE",
-          "published_at": "2025-06-01T12:30:03Z",
-          "detected_event_date": "2025-06-01",
-          "channel_id": "UCKCspf_NrY16rUnODmBqOWA"
-        },
-        {
-          "title": "【GMOシブヤエンタメ祭 盆踊り】「愛♡スクリ～ム！/ わたしの一番かわいいところ」で盆踊り/ #盆踊り SHIBUYA MIYASHITA PARK BON DANCE",
-          "url": "https://www.youtube.com/watch?v=XehJce12asQ",
-          "published_at": "2025-06-01T14:44:16Z",
-          "detected_event_date": "2025-05-30",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【GMOシブヤエンタメ祭 盆踊り】「ダンシングヒーロー」荻野目洋子で盆踊り / #盆踊り SHIBUYA MIYASHITA PARK BON DANCE",
-          "url": "https://www.youtube.com/watch?v=MPf7mKO1nc8",
-          "published_at": "2025-06-01T15:08:52Z",
-          "detected_event_date": "2025-05-30",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【GMOシブヤエンタメ祭 盆踊り】「ダンシングヒーロー」荻野目洋子 / #盆踊り SHIBUYA MIYASHITA PARK BON DANCE",
-          "url": "https://www.youtube.com/watch?v=MAsmj7UIKyA",
-          "published_at": "2025-06-10T12:00:42Z",
-          "detected_event_date": "2025-05-30",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "[4K]🇯🇵 渋谷でultra soul！B'zで盆踊り！激混み会場で外国人も踊りまくる！！ / SHIBUYA MIYASHITA PARK BON DANCE 2025",
-          "url": "https://www.youtube.com/watch?v=dZp8xUrphEE",
-          "published_at": "2025-09-27T12:43:39Z",
-          "detected_event_date": "2025-09-27",
-          "channel_id": "UCKCspf_NrY16rUnODmBqOWA"
-        },
-        {
-          "title": "”大盛況”「ギザギザハートの子守唄」盆踊り 【渋谷宮下パーク BON DANCE 2025】チェッカーズ SHIBUYA MIYASHITA PARK BON DANCE 2025",
-          "url": "https://www.youtube.com/watch?v=tqN1_Zn1XGQ",
-          "published_at": "2025-09-27T14:48:12Z",
-          "detected_event_date": "2025-09-27",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【渋谷宮下パーク BON DANCE 2025】「東京音頭」 盆踊り / SHIBUYA MIYASHITA PARK BON DANCE 2025",
-          "url": "https://www.youtube.com/watch?v=aICldK2fWJs",
-          "published_at": "2025-09-27T22:30:01Z",
-          "detected_event_date": "2025-09-27",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        },
-        {
-          "title": "【渋谷宮下パーク BON DANCE 2025】「ultra soul」B’z 盆踊り / SHIBUYA MIYASHITA PARK BON DANCE 2025",
-          "url": "https://www.youtube.com/watch?v=G33WqNK76dk",
-          "published_at": "2025-09-28T00:30:26Z",
-          "detected_event_date": "2025-09-27",
-          "channel_id": "UCWz2tM7PAFGT7xSL5OAEllg"
-        }
-      ],
-      "decision": {
-        "key": "remaining_backfill|date_backfill_candidate_multi_date|3778be04-e762-81d5-b02b-eb34684595ae|SHIBUYA MIYASHITA PARK BON DANCE 2026",
-        "action": "skip_registered",
-        "reason": "2025-05/06のGMOシブヤエンタメ祭 × JAME盆踊りと、2025-09のSHIBUYA MIYASHITA PARK BON DANCE 2025へ分離反映済み。2026イベントへの日付補正には使わない。"
-      }
-    },
-    {
-      "queue": "remaining_backfill",
-      "priority": "high",
-      "category": "date_backfill_candidate_single_date",
-      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
-      "event_id": "3788be04-e762-8171-beaf-fbf4a04104bf",
-      "video_count": 13,
-      "detected_dates": [
-        "2025-04-19"
-      ],
-      "source_url": "https://www.youtube.com/playlist?list=PLykeSsDm2Wtw8BUdNnjm4WgxFI2q5SJ6f",
-      "recommended_action": "公式/既存ソースで日付確認後、Notion日付補正とYouTube証拠反映を検討",
-      "sample_videos": [
-        {
-          "title": "【4K】【相馬盆唄】　2025年4月19日飛鳥山公園盆踊り会1　東京都北区",
-          "url": "https://www.youtube.com/watch?v=LrByNJuKz6w",
-          "published_at": "2025-04-20T13:30:24Z",
-          "detected_event_date": "2025-04-19",
-          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
-        },
-        {
-          "title": "【4K】沖縄よいとこ　2025年4月19日飛鳥山公園盆踊り会２　東京都北区",
-          "url": "https://www.youtube.com/watch?v=8JK-vkklDLU",
-          "published_at": "2025-04-21T11:30:07Z",
-          "detected_event_date": "2025-04-19",
-          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
-        },
-        {
-          "title": "【4K】川口小唄　2025年4月19日飛鳥山公園盆踊り会３　東京都北区",
-          "url": "https://www.youtube.com/watch?v=-B5INsr_OqQ",
-          "published_at": "2025-04-22T11:30:00Z",
-          "detected_event_date": "2025-04-19",
-          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
-        },
-        {
-          "title": "【4K】百年桜　2025年4月19日飛鳥山公園盆踊り会４　東京都北区",
-          "url": "https://www.youtube.com/watch?v=GlH-A-KOE4o",
-          "published_at": "2025-04-23T11:30:13Z",
-          "detected_event_date": "2025-04-19",
-          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
-        },
-        {
-          "title": "【4K】【蟹工船】（村田英雄）　2025年4月19日飛鳥山公園盆踊り会５　東京都北区",
-          "url": "https://www.youtube.com/watch?v=wCD1DBqMymU",
-          "published_at": "2025-04-24T11:01:33Z",
-          "detected_event_date": "2025-04-19",
-          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
-        },
-        {
-          "title": "【4K】おんなの気持ち　2025年4月19日飛鳥山公園盆踊り会6　東京都北区",
-          "url": "https://www.youtube.com/watch?v=LptKR0JQCWs",
-          "published_at": "2025-04-25T11:00:37Z",
-          "detected_event_date": "2025-04-19",
-          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
-        },
-        {
-          "title": "【4K】にっぽんチャチャチャ　2025年4月19日飛鳥山公園盆踊り会７　東京都北区",
-          "url": "https://www.youtube.com/watch?v=CZ6w1nS86Q8",
-          "published_at": "2025-04-26T10:00:19Z",
-          "detected_event_date": "2025-04-19",
-          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
-        },
-        {
-          "title": "【4K】「東西南北音頭」（三沢あけみ／橋幸夫）　2025年4月19日飛鳥山公園盆踊り会８　東京都北区",
-          "url": "https://www.youtube.com/watch?v=vTpNDxDGlfw",
-          "published_at": "2025-04-27T10:01:28Z",
-          "detected_event_date": "2025-04-19",
-          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
-        }
-      ],
-      "decision": {
-        "key": "remaining_backfill|date_backfill_candidate_single_date|3788be04-e762-8171-beaf-fbf4a04104bf|飛鳥山公園盆踊り会（有志サークル）",
-        "action": "skip_registered",
-        "reason": "2025-04-19開催としてNotionへ反映済み。北区民ニュースとYouTube複数動画で確認済み。"
-      }
-    },
-    {
-      "queue": "remaining_backfill",
-      "priority": "high",
-      "category": "date_backfill_candidate_single_date",
-      "event_name": "謝恩納涼盆踊り大会（青山善光寺）",
-      "event_id": "37b8be04-e762-8126-8174-f8371f43e2c1",
-      "video_count": 12,
-      "detected_dates": [
-        "2025-07-28"
-      ],
-      "source_url": "https://bonmaru.zenmin-odori.jp/archives/151",
-      "recommended_action": "公式/既存ソースで日付確認後、Notion日付補正とYouTube証拠反映を検討",
-      "sample_videos": [
-        {
-          "title": "MY HOME TOWN　2025年青山善光寺盆踊り１　青山表参道商店会　東京都港区",
-          "url": "https://www.youtube.com/watch?v=sP0aGtLMZRY",
-          "published_at": "2025-08-03T11:30:43Z",
-          "detected_event_date": "2025-07-28",
-          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
-        },
-        {
-          "title": "【東京音頭】（原田直之）　2025年青山善光寺盆踊り２　青山表参道商店会　東京都港区",
-          "url": "https://www.youtube.com/watch?v=eWuMkA4RwnU",
-          "published_at": "2025-08-04T11:30:29Z",
-          "detected_event_date": "2025-07-28",
-          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
-        },
-        {
-          "title": "「炭坑節」（初代鈴木正夫）　2025年青山善光寺盆踊り３　青山表参道商店会　東京都港区",
-          "url": "https://www.youtube.com/watch?v=PQYyLRKehvw",
-          "published_at": "2025-08-05T11:30:32Z",
-          "detected_event_date": "2025-07-28",
-          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
-        },
-        {
-          "title": "【大東京音頭】（金沢明子橋幸夫）　2025年青山善光寺盆踊り４　青山表参道商店会　東京都港区",
-          "url": "https://www.youtube.com/watch?v=FC-fdph06IE",
-          "published_at": "2025-08-06T10:00:25Z",
-          "detected_event_date": "2025-07-28",
-          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
-        },
-        {
-          "title": "【八木節】（小野田実）　2025年青山善光寺盆踊り５　青山表参道商店会　東京都港区",
-          "url": "https://www.youtube.com/watch?v=osi64ZDPL74",
-          "published_at": "2025-08-07T10:01:36Z",
-          "detected_event_date": "2025-07-28",
-          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
-        },
-        {
-          "title": "東京みなと音頭　2025年青山善光寺盆踊り６　青山表参道商店会　東京都港区",
-          "url": "https://www.youtube.com/watch?v=4HH8B8_xZls",
-          "published_at": "2025-08-08T10:00:10Z",
-          "detected_event_date": "2025-07-28",
-          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
-        },
-        {
-          "title": "【ハワイ音頭】　2025年青山善光寺盆踊り７　青山表参道商店会　東京都港区",
-          "url": "https://www.youtube.com/watch?v=RTxKdOU2VQQ",
-          "published_at": "2025-08-09T10:00:44Z",
-          "detected_event_date": "2025-07-28",
-          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
-        },
-        {
-          "title": "【相馬盆唄】　2025年青山善光寺盆踊り８　青山表参道商店会　東京都港区",
-          "url": "https://www.youtube.com/watch?v=kojyQ1gHzyI",
-          "published_at": "2025-08-10T10:01:13Z",
-          "detected_event_date": "2025-07-28",
-          "channel_id": "UCNF_5e3ZvziJueTWvTPATGw"
-        }
-      ],
-      "decision": {
-        "key": "remaining_backfill|date_backfill_candidate_single_date|37b8be04-e762-8126-8174-f8371f43e2c1|謝恩納涼盆踊り大会（青山善光寺）",
-        "action": "skip_registered",
-        "reason": "2025-07-27〜2025-07-28開催としてNotionへ反映済み。OMOHARAREALとYouTube動画で確認済み。"
-      }
-    },
-    {
-      "queue": "remaining_backfill",
-      "priority": "high",
-      "category": "date_backfill_candidate_single_date",
-      "event_name": "六本木天祖神社（龍土神明宮）例大祭 盆踊り",
-      "event_id": "3788be04-e762-8127-a6f0-d54bffc71fd5",
-      "video_count": 1,
-      "detected_dates": [
-        "2025-09-28"
-      ],
-      "source_url": "http://tensojinja.tokyo-jinjacho.or.jp/saiten00.html",
-      "recommended_action": "公式/既存ソースで日付確認後、Notion日付補正とYouTube証拠反映を検討",
-      "sample_videos": [
-        {
-          "title": "【六本木アートナイト2025】TAGO《韓国の鼓動 ドラム・シャーマン 타고 》2025.9.28 @龍土町美術館通り・六本木天祖神社",
-          "url": "https://www.youtube.com/watch?v=OW497Kn8Rx8",
-          "published_at": "2025-09-28T19:40:40Z",
-          "detected_event_date": "2025-09-28",
-          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
-        }
-      ],
-      "decision": {
-        "key": "remaining_backfill|date_backfill_candidate_single_date|3788be04-e762-8127-a6f0-d54bffc71fd5|六本木天祖神社（龍土神明宮）例大祭 盆踊り",
-        "action": "exclude_out_of_scope",
-        "reason": "動画は六本木アートナイト2025のTAGO出演演目で、六本木天祖神社例大祭の盆踊り開催証拠ではないため除外。"
-      }
-    },
-    {
-      "queue": "needs_official_confirmation",
-      "priority": "high",
-      "category": "official_url_candidate",
-      "primary_url": "https://www.jrtk.jp/edonoren/",
-      "primary_domain": "jrtk.jp",
-      "video_count": 1,
-      "detected_dates": [
-        "2025-07-13"
-      ],
-      "titles": [
-        "The Yokai Bon Dance / 妖怪盆踊り 2005 at 両国 Edo Noren"
-      ],
-      "videos": [
-        {
-          "title": "The Yokai Bon Dance / 妖怪盆踊り 2005 at 両国 Edo Noren",
-          "video_url": "https://www.youtube.com/watch?v=E9Uh-Iwfq4s",
-          "official_urls": [
-            "https://www.jrtk.jp/edonoren/",
-            "https://prtimes.jp/main/html/rd/p/000000524.000015279.html",
-            "https://www.instagram.com/expjapanzen/",
-            "https://www.ebay.com/usr/exploringjapanzen"
-          ],
-          "detected_event_date": "2025-07-13",
-          "channel_id": "UCSHoRoW171uEytgOcKkKU2Q"
-        }
-      ],
-      "decision": {
-        "key": "needs_official_confirmation|official_url_candidate|https://www.jrtk.jp/edonoren/",
-        "action": "hold_needs_date_source",
-        "reason": "こと判定: 2025年7月2日掲載の妖怪BON DANCE告知は確認できたが、具体的な開催日・期間が取れないため日付不明のまま登録しない。"
-      }
-    },
-    {
-      "queue": "needs_official_confirmation",
-      "priority": "high",
-      "category": "official_url_candidate",
-      "primary_url": "https://www.jiyugaoka-abc.com/event/2025/bonodori/",
-      "primary_domain": "jiyugaoka-abc.com",
-      "video_count": 1,
-      "detected_dates": [
-        "2025-07-20"
-      ],
-      "titles": [
-        "Jiyugaoka Bon Odori Dance festival / 自由が丘盆踊り 2025"
-      ],
-      "videos": [
-        {
-          "title": "Jiyugaoka Bon Odori Dance festival / 自由が丘盆踊り 2025",
-          "video_url": "https://www.youtube.com/watch?v=25REB1IJg3k",
-          "official_urls": [
-            "https://www.jiyugaoka-abc.com/event/2025/bonodori/",
-            "https://www.instagram.com/expjapanzen/",
-            "https://www.ebay.com/usr/exploringjapanzen"
-          ],
-          "detected_event_date": "2025-07-20",
-          "channel_id": "UCSHoRoW171uEytgOcKkKU2Q"
-        }
-      ],
-      "decision": {
-        "key": "needs_official_confirmation|official_url_candidate|https://www.jiyugaoka-abc.com/event/2025/bonodori/",
-        "action": "skip_registered",
-        "reason": "こと判定: 自由が丘盆踊り大会、2025-07-19〜2025-07-21、自由が丘駅前ロータリー特設会場を確認。DB上は既存イベント反映済み。"
-      }
-    },
-    {
-      "queue": "needs_official_confirmation",
-      "priority": "high",
-      "category": "official_url_candidate",
-      "primary_url": "https://www.marunouchi.com/pickup/event/6763/",
-      "primary_domain": "marunouchi.com",
-      "video_count": 4,
-      "detected_dates": [
-        "2025-07-25",
-        "2025-07-26"
-      ],
-      "titles": [
-        "Marunouchi Bon Odori Dance festival PART 1  /  丸の内盆踊り 2025 パート１",
-        "Marunouchi Bon Odori Dance festival PART 2  /  丸の内盆踊り 2025 パート2",
-        "Marunouchi Bon Odori Dance festival DJ J-POP Time  /  丸の内盆踊り 2025 DJ J-POP Time",
-        "【東京丸の内盆踊り2025】『ドンパン節～毬と殿様～にっぽんチャチャチャ～民謡お国巡り音頭～松の木小唄～龍馬おどり』 👘Tokyo Bon Dance 🏮2025.7.25 @東京駅丸の内口・行幸通り"
-      ],
-      "videos": [
-        {
-          "title": "Marunouchi Bon Odori Dance festival PART 1  /  丸の内盆踊り 2025 パート１",
-          "video_url": "https://www.youtube.com/watch?v=seY6P_Ngq4E",
-          "official_urls": [
-            "https://www.marunouchi.com/pickup/event/6763/",
-            "https://www.instagram.com/expjapanzen/",
-            "https://www.ebay.com/usr/exploringjapanzen"
-          ],
-          "detected_event_date": "2025-07-26",
-          "channel_id": "UCSHoRoW171uEytgOcKkKU2Q"
-        },
-        {
-          "title": "Marunouchi Bon Odori Dance festival PART 2  /  丸の内盆踊り 2025 パート2",
-          "video_url": "https://www.youtube.com/watch?v=wsnxABvy3BM",
-          "official_urls": [
-            "https://www.marunouchi.com/pickup/event/6763/",
-            "https://www.instagram.com/expjapanzen/",
-            "https://www.ebay.com/usr/exploringjapanzen"
-          ],
-          "detected_event_date": "2025-07-26",
-          "channel_id": "UCSHoRoW171uEytgOcKkKU2Q"
-        },
-        {
-          "title": "Marunouchi Bon Odori Dance festival DJ J-POP Time  /  丸の内盆踊り 2025 DJ J-POP Time",
-          "video_url": "https://www.youtube.com/watch?v=Otv4gDwv8io",
-          "official_urls": [
-            "https://www.marunouchi.com/pickup/event/6763/",
-            "https://www.instagram.com/expjapanzen/",
-            "https://www.ebay.com/usr/exploringjapanzen"
-          ],
-          "detected_event_date": "2025-07-26",
-          "channel_id": "UCSHoRoW171uEytgOcKkKU2Q"
-        },
-        {
-          "title": "【東京丸の内盆踊り2025】『ドンパン節～毬と殿様～にっぽんチャチャチャ～民謡お国巡り音頭～松の木小唄～龍馬おどり』 👘Tokyo Bon Dance 🏮2025.7.25 @東京駅丸の内口・行幸通り",
-          "video_url": "https://www.youtube.com/watch?v=Ig4Ocvre8Y0",
-          "official_urls": [
-            "https://www.marunouchi.com/pickup/event/6763/"
-          ],
-          "detected_event_date": "2025-07-25",
-          "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ"
-        }
-      ],
-      "decision": {
-        "key": "needs_official_confirmation|official_url_candidate|https://www.marunouchi.com/pickup/event/6763/",
-        "action": "skip_registered",
-        "reason": "こと判定: 丸の内夏祭り2025内の丸の内de盆踊り、2025-07-25〜2025-07-26、行幸通りを確認。既存のYouTube公式候補反映で登録済み。"
-      }
-    },
-    {
-      "queue": "needs_official_confirmation",
-      "priority": "high",
-      "category": "official_url_candidate",
-      "primary_url": "https://shibuyadogenzaka.com/?p=6827",
-      "primary_domain": "shibuyadogenzaka.com",
-      "video_count": 1,
-      "detected_dates": [
-        "2025-08-02"
-      ],
-      "titles": [
-        "Shibuya Bon Odori Dance festival 2025  /  渋谷 盆踊り 2025"
-      ],
-      "videos": [
-        {
-          "title": "Shibuya Bon Odori Dance festival 2025  /  渋谷 盆踊り 2025",
-          "video_url": "https://www.youtube.com/watch?v=CTA9El6Hmfg",
-          "official_urls": [
-            "https://shibuyadogenzaka.com/?p=6827",
-            "https://www.instagram.com/expjapanzen/",
-            "https://www.ebay.com/usr/exploringjapanzen"
-          ],
-          "detected_event_date": "2025-08-02",
-          "channel_id": "UCSHoRoW171uEytgOcKkKU2Q"
-        }
-      ],
-      "decision": {
-        "key": "needs_official_confirmation|official_url_candidate|https://shibuyadogenzaka.com/?p=6827",
-        "action": "skip_registered",
-        "reason": "こと判定: 第6回渋谷盆踊り2025、2025-08-02 18:00〜21:30、SHIBUYA109前（道玄坂・文化村通り）を確認。DB上は既存イベント反映済み。"
+        "reason": "こと判定: 荒川区公式/日本盆踊り協会で第11回 2025-09-14〜15を確認し、Notionへ反映済み。"
       }
     },
     {

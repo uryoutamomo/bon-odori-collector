@@ -2033,6 +2033,47 @@ const EVENTS = [
     "song_occurrence": null
   },
   {
+    "name": "赤坂浄土寺盆踊り大会",
+    "name_confirmed": true,
+    "venue": "浄土寺",
+    "area": "港区",
+    "months": [
+      7
+    ],
+    "scale": "中",
+    "access": "赤坂見附駅・赤坂駅から徒歩圏内",
+    "address": "東京都港区赤坂4-3-5",
+    "lat": null,
+    "lng": null,
+    "date": "2025-07-24",
+    "date_end": "2025-07-25",
+    "status": "終了",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        7,
+        24
+      ],
+      [
+        7,
+        25
+      ]
+    ],
+    "jun": {
+      "7": "下旬"
+    },
+    "description": null,
+    "detail": "[youtube_evidence] こと（Claude Code）2025裏取り反映\n- 対象イベント: 赤坂浄土寺盆踊り大会\n- 開催日: 2025-07-24〜2025-07-25\n- 会場: 浄土寺\n- 根拠URL: https://x.com/nsPFhl5JW382058/status/1939266951391613148\n- 判断: こと裏取りで赤坂あかね会Xと地域ブログを確認。2025-07-24〜2025-07-25、18:30〜22:00頃。\n- 補助URL: https://kaginokanai.com/2025/07/10/akasaka-jodoji-bonnodori-202507/",
+    "youtube_evidence": [],
+    "songs": [],
+    "song_occurrence": null
+  },
+  {
     "name": "盆ダンスフェスティバル2023",
     "name_confirmed": true,
     "venue": "白金児童遊園",
@@ -2714,6 +2755,47 @@ const EVENTS = [
     }
   },
   {
+    "name": "第51回 神楽坂まつり 盆踊り",
+    "name_confirmed": true,
+    "venue": "りそな銀行神楽坂支店前",
+    "area": "新宿区",
+    "months": [
+      7
+    ],
+    "scale": "大",
+    "access": "東京メトロ神楽坂駅・飯田橋駅から徒歩圏内",
+    "address": "東京都新宿区神楽坂6丁目付近",
+    "lat": null,
+    "lng": null,
+    "date": "2025-07-23",
+    "date_end": "2025-07-24",
+    "status": "終了",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        7,
+        23
+      ],
+      [
+        7,
+        24
+      ]
+    ],
+    "jun": {
+      "7": "下旬"
+    },
+    "description": null,
+    "detail": "[youtube_evidence] こと（Claude Code）2025裏取り反映\n- 対象イベント: 第51回 神楽坂まつり 盆踊り\n- 開催日: 2025-07-23〜2025-07-24\n- 会場: りそな銀行神楽坂支店前\n- 根拠URL: https://www.kagurazaka.in/event/%E7%AC%AC51%E5%9B%9E%E7%A5%9E%E6%A5%BD%E5%9D%82%E3%81%BE%E3%81%A4%E3%82%8A/\n- 判断: こと裏取りで神楽坂通り商店会公式と新宿観光振興協会を確認。2025-07-23〜2025-07-24、18:00〜20:30。\n- 補助URL: https://www.kanko-shinjuku.jp/event/history/article_4567.html",
+    "youtube_evidence": [],
+    "songs": [],
+    "song_occurrence": null
+  },
+  {
     "name": "下落合四丁目町会 盆踊り大会",
     "name_confirmed": true,
     "venue": "下落合公園",
@@ -3129,6 +3211,47 @@ const EVENTS = [
     },
     "description": "下落合町会知久会 第9回盆踊りは、清水川橋公園で開かれる屋外型の盆踊り・夏の地域イベント。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025-07-19（土）17:00-21:00開催記録。雨天中止。",
+    "youtube_evidence": [],
+    "songs": [],
+    "song_occurrence": null
+  },
+  {
+    "name": "花園神社 盆踊り",
+    "name_confirmed": true,
+    "venue": "花園神社",
+    "area": "新宿区",
+    "months": [
+      8
+    ],
+    "scale": "中",
+    "access": "新宿三丁目駅から徒歩圏内",
+    "address": "東京都新宿区新宿5-17-3",
+    "lat": null,
+    "lng": null,
+    "date": "2025-08-01",
+    "date_end": "2025-08-02",
+    "status": "終了",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        1
+      ],
+      [
+        8,
+        2
+      ]
+    ],
+    "jun": {
+      "8": "上旬"
+    },
+    "description": null,
+    "detail": "[youtube_evidence] こと（Claude Code）2025裏取り反映\n- 対象イベント: 花園神社 盆踊り\n- 開催日: 2025-08-01〜2025-08-02\n- 会場: 花園神社\n- 根拠URL: https://yokoso-shinjuku.com/shinjuku-event/hanazono-bonodori-2/\n- 判断: こと裏取りで2025-08-01〜2025-08-02、19:00〜21:00の開催情報を確認。",
     "youtube_evidence": [],
     "songs": [],
     "song_occurrence": null
@@ -9142,6 +9265,47 @@ const EVENTS = [
     "song_occurrence": null
   },
   {
+    "name": "第70回 恵比寿駅前盆踊り大会",
+    "name_confirmed": true,
+    "venue": "JR恵比寿駅西口広場",
+    "area": "渋谷区",
+    "months": [
+      7
+    ],
+    "scale": "大",
+    "access": "JR恵比寿駅西口すぐ",
+    "address": "東京都渋谷区恵比寿南1丁目付近",
+    "lat": null,
+    "lng": null,
+    "date": "2025-07-25",
+    "date_end": "2025-07-26",
+    "status": "終了",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        7,
+        25
+      ],
+      [
+        7,
+        26
+      ]
+    ],
+    "jun": {
+      "7": "下旬"
+    },
+    "description": null,
+    "detail": "[youtube_evidence] こと（Claude Code）2025裏取り反映\n- 対象イベント: 第70回 恵比寿駅前盆踊り大会\n- 開催日: 2025-07-25〜2025-07-26\n- 会場: JR恵比寿駅西口広場\n- 根拠URL: https://ebisubondance.jp/about/\n- 判断: こと裏取りで公式サイトを確認。第70回、2025-07-25〜2025-07-26、17:30〜21:30。",
+    "youtube_evidence": [],
+    "songs": [],
+    "song_occurrence": null
+  },
+  {
     "name": "第6回 渋谷盆踊り",
     "name_confirmed": true,
     "venue": "SHIBUYA109前〜道玄坂・文化村通り一帯",
@@ -9530,6 +9694,47 @@ const EVENTS = [
     "song_occurrence": null
   },
   {
+    "name": "第15回 鴨台盆踊り",
+    "name_confirmed": true,
+    "venue": "大正大学",
+    "area": "豊島区",
+    "months": [
+      7
+    ],
+    "scale": "大",
+    "access": "都営三田線西巣鴨駅から徒歩圏内",
+    "address": "東京都豊島区西巣鴨3-20-1",
+    "lat": null,
+    "lng": null,
+    "date": "2025-07-04",
+    "date_end": "2025-07-05",
+    "status": "終了",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        7,
+        4
+      ],
+      [
+        7,
+        5
+      ]
+    ],
+    "jun": {
+      "7": "上旬"
+    },
+    "description": null,
+    "detail": "[youtube_evidence] こと（Claude Code）2025裏取り反映\n- 対象イベント: 第15回 鴨台盆踊り\n- 開催日: 2025-07-04〜2025-07-05\n- 会場: 大正大学\n- 根拠URL: https://www.tais.ac.jp/guide/latest_news/20250627/92922/\n- 判断: こと裏取りで大正大学公式とPR TIMESを確認。第15回、2025-07-04〜2025-07-05、大正大学開催。\n- 補助URL: https://prtimes.jp/main/html/rd/p/000000346.000054969.html",
+    "youtube_evidence": [],
+    "songs": [],
+    "song_occurrence": null
+  },
+  {
     "name": "飛鳥山公園盆踊り会（有志サークル）",
     "name_confirmed": true,
     "venue": "飛鳥山公園",
@@ -9640,6 +9845,53 @@ const EVENTS = [
     "detail": "[youtube_2025_date_backfill] 開催日補正\n- 補正日: 2025-07-05\n- 根拠URL: https://asukayamabonodori.tokyo/\n- URL内一致: 2025.07.05, 7月5日, 7/5\n- YouTube検出日付: 2025-07-05, 2025-12-20\n- 対象動画数: 4\n\n[youtube_evidence] YouTube実績証拠\n- 対象イベント: 飛鳥山盆踊り\n- 検出日付: 2025-07-05\n- 動画数: 4\n- チャンネル: UCWz2tM7PAFGT7xSL5OAEllg\n- 代表動画: https://www.youtube.com/watch?v=WMp9Dm3p4bI / UCWz2tM7PAFGT7xSL5OAEllg / 【飛鳥山盆踊り 2025】「ジャンボリミッキー」で盆踊り  / Asukayama Park Bon Dance Festival　#盆踊り\n- 代表動画: https://www.youtube.com/watch?v=hwD8ELI2iPo / UCWz2tM7PAFGT7xSL5OAEllg / 【飛鳥山盆踊り 2025】「ジンギスカン」で盆踊り Dschinghis Khan / Asukayama Park Bon Dance Festival　#盆踊り\n- 代表動画: https://www.youtube.com/watch?v=zJ1nyw5-Y4A / UCWz2tM7PAFGT7xSL5OAEllg / 【飛鳥山盆踊り 2025】「盆ギリ恋歌」サザンオールスターズ で盆踊り / Asukayama Park Bon Dance Festival　盆踊り\n- 代表動画: https://www.youtube.com/watch?v=v_eLkKWnyA8 / UCWz2tM7PAFGT7xSL5OAEllg / 【飛鳥山盆踊り 2025】生歌「好きになった人」で盆踊り 都はるみ / Asukayama Park Bon Dance Festival　盆踊り\n- 曲目候補: 未抽出",
     "youtube_evidence": [],
     "songs": [],
+    "song_occurrence": null
+  },
+  {
+    "name": "第11回 にっぽり炭坑節まつり",
+    "name_confirmed": true,
+    "venue": "JR日暮里駅前広場",
+    "area": "荒川区",
+    "months": [
+      9
+    ],
+    "scale": "大",
+    "access": "JR日暮里駅前",
+    "address": "東京都荒川区西日暮里2-6付近",
+    "lat": null,
+    "lng": null,
+    "date": "2025-09-14",
+    "date_end": "2025-09-15",
+    "status": "終了",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        9,
+        14
+      ],
+      [
+        9,
+        15
+      ]
+    ],
+    "jun": {
+      "9": "中旬"
+    },
+    "description": null,
+    "detail": "[youtube_evidence] こと（Claude Code）2025裏取り反映\n- 対象イベント: 第11回 にっぽり炭坑節まつり\n- 開催日: 2025-09-14〜2025-09-15\n- 会場: JR日暮里駅前広場\n- 根拠URL: https://www.city.arakawa.tokyo.jp/a022/event/eventkouenmeigi/nipporitannkoubushimaturir791415.html\n- 判断: こと裏取りで荒川区公式と日本盆踊り協会サイトを確認。第11回、2025-09-14〜2025-09-15。\n- 補助URL: https://bon-odori.net/nippori-tankoubushi2025/",
+    "youtube_evidence": [],
+    "songs": [
+      {
+        "name": "炭坑節",
+        "confidence": "hint",
+        "source_count": 1
+      }
+    ],
     "song_occurrence": null
   },
   {
