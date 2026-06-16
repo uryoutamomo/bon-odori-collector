@@ -39,6 +39,11 @@ OUT_JS = os.path.join(OUT_DIR, "events_public.js")
 OUT_SONGS_JSON = os.path.join(OUT_DIR, "event_songs_public.json")
 OUT_SONG_OCCURRENCES_JSON = os.path.join(OUT_DIR, "event_song_occurrences_public.json")
 DATE_CANDIDATES_JSON = os.path.join(os.path.dirname(__file__), "data", "event_date_update_candidates.json")
+FALLBACK_SUPPRESSED_VENUES = {
+    # 例大祭名の由来となる神社。実際の奉納踊り会場は青葉公園（港区立）なので、
+    # 未整備会場フォールバックとして「青山熊野神社の盆踊り」を出さない。
+    "青山熊野神社",
+}
 
 # 日付未確定イベントの「並び位置」を決めるヒント（内田さん指示 2026-06-10）：
 # 旬がわかれば 上旬≒5日 / 中旬≒15日 / 下旬≒25日、それも無ければ昨年実績の
@@ -440,6 +445,8 @@ def build_public_events():
     fallback = 0
     for vid, v in venues.items():
         if vid in covered:
+            continue
+        if v["venue"] in FALLBACK_SUPPRESSED_VENUES:
             continue
         fallback += 1
         events.append({

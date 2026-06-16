@@ -11552,42 +11552,6 @@
     "song_occurrence": null
   },
   {
-    "name": "青山熊野神社の盆踊り",
-    "name_confirmed": false,
-    "venue": "青山熊野神社",
-    "area": "渋谷区",
-    "months": [
-      9
-    ],
-    "scale": "中",
-    "access": "東京メトロ銀座線「外苑前駅」出口3から徒歩約5分",
-    "address": "東京都渋谷区神宮前2-2-22",
-    "lat": 35.672184,
-    "lng": 139.713928,
-    "date": null,
-    "date_end": null,
-    "status": null,
-    "date_confidence": {
-      "level": "unknown",
-      "label": "未確認",
-      "description": "開催日はまだ確認できていません"
-    },
-    "date_candidates": [],
-    "hints": [
-      [
-        9,
-        15
-      ]
-    ],
-    "jun": {
-      "9": "中旬"
-    },
-    "description": "青山熊野神社は、渋谷区にある祭礼や地域行事の拠点。 規模は「中」として整理しています、アクセスは東京メトロ銀座線「外苑前駅」出口3から徒歩約5分。",
-    "detail": null,
-    "youtube_evidence": [],
-    "songs": []
-  },
-  {
     "name": "新井町会連合会・中野通り桜まつり実行委員会「中野通り桜まつり」",
     "name_confirmed": true,
     "venue": "新井薬師公園",

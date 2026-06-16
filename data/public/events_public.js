@@ -9415,47 +9415,6 @@ const EVENTS = [
     "song_occurrence": null
   },
   {
-    "name": "青山熊野神社例大祭 奉納踊り",
-    "name_confirmed": true,
-    "venue": "青山熊野神社",
-    "area": "渋谷区",
-    "months": [
-      9
-    ],
-    "scale": "中",
-    "access": "東京メトロ銀座線「外苑前駅」出口3から徒歩約5分",
-    "address": "東京都渋谷区神宮前2-2-22",
-    "lat": 35.672184,
-    "lng": 139.713928,
-    "date": "2025-09-26",
-    "date_end": "2025-09-27",
-    "status": "終了",
-    "date_confidence": {
-      "level": "confirmed",
-      "label": "確認済み",
-      "description": "開催日として確認済みです"
-    },
-    "date_candidates": [],
-    "hints": [
-      [
-        9,
-        26
-      ],
-      [
-        9,
-        27
-      ]
-    ],
-    "jun": {
-      "9": "下旬"
-    },
-    "description": "青山熊野神社周辺で行われる祭礼にあわせた奉納踊り。地域の町会が支える昔ながらの盆踊り。",
-    "detail": "【所在区訂正】神社本体は渋谷区神宮前に所在（venue_master.jsonでは港区登録だったが要訂正）。例大祭奉納踊り（例年9月最終金土日）は神社境内ではなく港区南青山1丁目の「青葉公園」（既存登録：区立青葉公園）で開催される＝東京で一番遅い盆踊りとして有名。神社と祭礼会場が別区にまたがる点に注意。\n\n[youtube_evidence] YouTube 2025公式URL確認済み証拠\n- 対象イベント: 青山熊野神社例大祭 奉納踊り\n- 検出日付: 2025-09-26, 2025-09-27\n- 動画数: 47\n- 公式確認URL: https://bonmaru.zenmin-odori.jp/archives/419\n- 判断: 盆まる記事の検出日2025-09-26/27と、9月最終金土の慣例が一致。青葉公園でのYouTube動画群とも一致。",
-    "youtube_evidence": [],
-    "songs": [],
-    "song_occurrence": null
-  },
-  {
     "name": "新井町会連合会・中野通り桜まつり実行委員会「中野通り桜まつり」",
     "name_confirmed": true,
     "venue": "新井薬師公園",
