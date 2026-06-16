@@ -1,0 +1,23 @@
+{
+  "generated_by": "build_bon_odori_rdb.py",
+  "generated_at": "2026-06-16T07:44:17.749194+00:00",
+  "database": "data/bon_odori.sqlite",
+  "sources": {
+    "notion": "data/notion_snapshot.sqlite",
+    "evidence": "data/evidence.sqlite",
+    "youtube": "data/youtube_evidence.sqlite"
+  },
+  "table_counts": {
+    "events": 214,
+    "venues": 207,
+    "event_venues": 241,
+    "songs": 141,
+    "dance_variants": 0,
+    "event_song_links": 373,
+    "evidence_items": 8449,
+    "event_evidence_links": 766,
+    "song_evidence_links": 36641,
+    "review_queue": 29500,
+    "rdb_issues": 1
+  }
+}

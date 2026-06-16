@@ -67,6 +67,7 @@ class SongOccurrencesTest(unittest.TestCase):
         sanno = [
             occurrence for occurrence in data["occurrences"]
             if occurrence["event_name"] == "山王音頭と民踊大会"
+            and occurrence["year"] == 2026
         ]
         self.assertEqual(len(sanno), 1)
         self.assertGreaterEqual(len(sanno[0]["songs"]), 19)

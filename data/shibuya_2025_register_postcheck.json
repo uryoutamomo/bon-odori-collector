@@ -1,0 +1,32 @@
+{
+  "generated_by": "apply_youtube_2025_curated_official_candidates.py",
+  "generated_at": "2026-06-16T07:34:05.048460+00:00",
+  "mode": "dry_run",
+  "apply_performed": false,
+  "changed_count": 0,
+  "event_created_count": 0,
+  "venue_created_count": 0,
+  "rows": [
+    {
+      "decision": "create_event",
+      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE 2025",
+      "primary_url": "https://miyashita-bondance.jp/2025/",
+      "source_url": "https://miyashita-bondance.jp/2025/",
+      "video_count": 10,
+      "detected_dates": [
+        "2025-09-27",
+        "2025-09-28"
+      ],
+      "reason": "公式アーカイブで2025年9月27日(土)、28日(日) 13:00〜21:00、MIYASHITA PARK4階 渋谷区立宮下公園 芝生ひろば開催を確認。5月/6月のGMOシブヤエンタメ祭系動画とは分離。",
+      "changed": false,
+      "event_created": false,
+      "venue_created": false,
+      "note": "[youtube_evidence] YouTube 2025公式URL確認済み証拠\n- 対象イベント: SHIBUYA MIYASHITA PARK BON DANCE 2025\n- 検出日付: 2025-09-27, 2025-09-28\n- 動画数: 10\n- 公式確認URL: https://miyashita-bondance.jp/2025/\n- 判断: 公式アーカイブで2025年9月27日(土)、28日(日) 13:00〜21:00、MIYASHITA PARK4階 渋谷区立宮下公園 芝生ひろば開催を確認。5月/6月のGMOシブヤエンタメ祭系動画とは分離。\n- 動画: https://www.youtube.com/watch?v=dZp8xUrphEE / 2025-09-27 / [4K]🇯🇵 渋谷でultra soul！B'zで盆踊り！激混み会場で外国人も踊りまくる！！ / SHIBUYA MIYASHITA PARK BON DANCE 2025\n- 動画: https://www.youtube.com/watch?v=rCIetLTYOqQ / 2025-09-28 / [4K]🇯🇵 渋谷で盆ジョヴィ 2025 ダンシングヒーロー｜YOASOBI｜Bon Jovi  他 外国人に人気の盆踊り / SHIBUYA MIYASHITA PARK BON DANCE\n- 動画: https://www.youtube.com/watch?v=6tYsIFg2Pc8 / 2025-09-27 / [4K]🇯🇵 渋谷で阿波踊り！飛鳥連が素晴らしい演舞を披露！外国人も一緒になって阿波踊り！2025 / Awaodori at SHIBUYA MIYASHITA PARK BON DANCE\n- 動画: https://www.youtube.com/watch?v=tqN1_Zn1XGQ / 2025-09-27 / ”大盛況”「ギザギザハートの子守唄」盆踊り 【渋谷宮下パーク BON DANCE 2025】チェッカーズ SHIBUYA MIYASHITA PARK BON DANCE 2025\n- 動画: https://www.youtube.com/watch?v=aICldK2fWJs / 2025-09-27 / 【渋谷宮下パーク BON DANCE 2025】「東京音頭」 盆踊り / SHIBUYA MIYASHITA PARK BON DANCE 2025\n- 動画: https://www.youtube.com/watch?v=G33WqNK76dk / 2025-09-27 / 【渋谷宮下パーク BON DANCE 2025】「ultra soul」B’z 盆踊り / SHIBUYA MIYASHITA PARK BON DANCE 2025\n- 動画: https://www.youtube.com/watch?v=t64KZSUomf4 / 2025-09-28 / 渋谷宮下パークBON DANCE 2025 / 治安の悪い渋谷の公園も今は昔!! 人が集まる一大スポットに!! / SHIBUYA MIYASHITA PARK BON DANCE 2025\n- 動画: https://www.youtube.com/watch?v=1sf97ulUVcs / 2025-09-28 / Dancing Hero aka Eat You Up @ Shibuya Miyashita Park Bon Dance 2025 in Tokyo Japan 4kHDR\n- 動画: https://www.youtube.com/watch?v=SbCL22zc48s / 2025-09-28 / The Ground Was Shaking! B'z ultra soul @ Shibuya Miyashita Park Bon Dance 2025 in Tokyo 4kHDR\n- 動画: https://www.youtube.com/watch?v=AqTZJck5-FA / 2025-09-28 / This Summer's Final Bon Dance Festival! @ Shibuya Miyashita Park 2025 in Tokyo Japan 4kHDR",
+      "venue_exists": true,
+      "venue_matched_name": "宮下公園",
+      "event_exists": true,
+      "venue_page_id": "3748be04-e762-8124-8c87-d890ae8e9f47",
+      "event_page_id": "3818be04-e762-816e-901d-c7e8f245b9e8"
+    }
+  ]
+}

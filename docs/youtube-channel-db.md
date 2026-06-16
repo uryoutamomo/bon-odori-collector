@@ -25,9 +25,18 @@
 - サムネイルは動画証拠の文脈で使い、会場写真として扱わない。
 - `date_validation_required=true` のチャンネルは、動画説明欄の日付を暦・公式情報と照合する。
 
+## 手動実行の扱い
+
+- 採用済みチャンネルは定期ジョブを増やさず、必要時に手動で `collect.py` を実行してRSS由来のYouTube候補を取り込む。
+- 検索APIを広げる前に、activeチャンネルRSS、既存YouTube動画、既存イベント照合を優先する。
+- 重複はRSS URL、YouTube `video_id`、既存イベント詳細欄の `youtube_evidence` URLで排除する。
+- quotaを使う検索拡張は、activeチャンネル由来の未処理候補が尽きた後に検討する。
+
 ## 接続先
 
 - チャンネル台帳: `data/youtube_channel_registry.json`
 - 動画証拠: `youtube_evidence`
 - 曲目証拠: `source=youtube_setlist_occurrence`
 - 公開UI: `data/public/events_public.json` の `youtube_evidence`
+- 全国展開候補: `data/youtube_nationwide_hold_candidates.json`
+- 証拠設計: `docs/youtube-evidence-architecture.md`

@@ -1,0 +1,62 @@
+# YouTube 2025 手動確認キュー
+
+- 生成: 2026-06-16T01:44:29.210738+00:00
+- items: 41
+- videos: 340
+
+## counts
+
+| bucket | items | videos |
+| --- | ---: | ---: |
+| needs_official_confirmation:official_url_candidate | 10 | 45 |
+| needs_official_confirmation:social_or_map_only | 20 | 154 |
+| remaining_backfill:date_backfill_candidate_multi_date | 2 | 61 |
+| remaining_backfill:date_backfill_candidate_single_date | 3 | 26 |
+| remaining_backfill:prior_year_video_uploaded_in_2025 | 3 | 35 |
+| remaining_backfill:year_mismatch_or_recurring_event_review | 3 | 19 |
+
+## queue
+
+| priority | queue | category | name/url | dates | videos | action |
+| --- | --- | --- | --- | --- | ---: | --- |
+| high | needs_official_confirmation | official_url_candidate | https://www.nouryo-matsuri.com/pages/6314608/page_202208061239 | 2025-08-08 | 11 | 公式URL本文確認。本DB登録/追記は確認後に限定 |
+| high | needs_official_confirmation | official_url_candidate | https://www.roppongihills.com/events/2025/08/0478.html | 2025-08-23, 2025-08-24 | 10 | 公式URL本文確認。本DB登録/追記は確認後に限定 |
+| high | needs_official_confirmation | official_url_candidate | https://www.tenkamatsuri.jp/minyo/ | 2025-06-13 | 6 | 公式URL本文確認。本DB登録/追記は確認後に限定 |
+| high | needs_official_confirmation | official_url_candidate | https://tsukijihongwanji.jp/news/10279/ | 2025-07-30 | 6 | 公式URL本文確認。本DB登録/追記は確認後に限定 |
+| high | needs_official_confirmation | official_url_candidate | https://www.marunouchi.com/pickup/event/6763/ | 2025-07-25, 2025-07-26 | 4 | 公式URL本文確認。本DB登録/追記は確認後に限定 |
+| high | needs_official_confirmation | official_url_candidate | https://ginbura.ginza.jp/ | 2025-08-02 | 4 | 公式URL本文確認。本DB登録/追記は確認後に限定 |
+| high | needs_official_confirmation | official_url_candidate | https://www.jrtk.jp/edonoren/ | 2025-07-13 | 1 | 公式URL本文確認。本DB登録/追記は確認後に限定 |
+| high | needs_official_confirmation | official_url_candidate | https://www.jiyugaoka-abc.com/event/2025/bonodori/ | 2025-07-20 | 1 | 公式URL本文確認。本DB登録/追記は確認後に限定 |
+| high | needs_official_confirmation | official_url_candidate | https://shibuyadogenzaka.com/?p=6827 | 2025-08-02 | 1 | 公式URL本文確認。本DB登録/追記は確認後に限定 |
+| high | needs_official_confirmation | official_url_candidate | https://www.earthday-tokyo.org/ | 2025-04-19 | 1 | 公式URL本文確認。本DB登録/追記は確認後に限定 |
+| high | remaining_backfill | date_backfill_candidate_single_date | 飛鳥山公園盆踊り会（有志サークル） | 2025-04-19 | 13 | 公式/既存ソースで日付確認後、Notion日付補正とYouTube証拠反映を検討 |
+| high | remaining_backfill | date_backfill_candidate_single_date | 謝恩納涼盆踊り大会（青山善光寺） | 2025-07-28 | 12 | 公式/既存ソースで日付確認後、Notion日付補正とYouTube証拠反映を検討 |
+| high | remaining_backfill | date_backfill_candidate_single_date | 六本木天祖神社（龍土神明宮）例大祭 盆踊り | 2025-09-28 | 1 | 公式/既存ソースで日付確認後、Notion日付補正とYouTube証拠反映を検討 |
+| normal | remaining_backfill | date_backfill_candidate_multi_date | 青山熊野神社例大祭 奉納踊り | 2025-09-26, 2025-09-27 | 47 | 複数日開催または誤混入を確認し、日付範囲を補正候補にする |
+| normal | remaining_backfill | date_backfill_candidate_multi_date | SHIBUYA MIYASHITA PARK BON DANCE 2026 | 2025-05-30, 2025-06-01, 2025-09-27, 2025-09-28 | 14 | 複数日開催または誤混入を確認し、日付範囲を補正候補にする |
+| low | needs_official_confirmation | social_or_map_only | https://goo.gl/maps/kSAEbnkyHSchcccY6 | 2024-08-17, 2025-01-01, 2025-02-01, 2025-02-23, 2025-03-22, 2025-04-19, 2025-04-26, 2025-04-29, 2025-05-04, 2025-05-05, 2025-05-18, 2025-05-22, 2025-05-25, 2025-06-08, 2025-06-29, 2025-07-02, 2025-07-03, 2025-07-04, 2025-07-06, 2025-07-14, 2025-07-19, 2025-07-22, 2025-08-03, 2025-08-30, 2025-09-13, 2025-09-14, 2025-09-23, 2025-10-03, 2025-10-31, 2025-11-01, 2025-11-14, 2025-11-23, 2025-11-24, 2025-12-30, 2026-05-17, 2026-05-31 | 51 | 公式URL本文確認。本DB登録/追記は確認後に限定 |
+| low | needs_official_confirmation | social_or_map_only | https://www.google.com/maps/place/%E3%81%8A%E5%8F%B0%E5%A0%B4%E9%9D%92%E6%B5%B7%E5%9C%B0%E5%8C%BAP%E5%8C%BA%E7%94%BB/@35.625128,139.7724951,17z/data=!4m15!1m8!3m7!1s0x601889f8297765f1:0x951f5c602517953d!2z44CSMTM1LTAwNjQg5p2x5Lqs6YO95rGf5p2x5Yy66Z2S5rW377yR5LiB55uu77yR4oiS77yR77yW!3b1!8m2!3d35.625128!4d139.77507!16s%2Fg%2F11hy_pk2n4!3m5!1s0x601889f808ccdf65:0xc3ebddaeb11985be!8m2!3d35.6237857!4d139.7731188!16s%2Fg%2F11cmp5ms7c?entry=ttu | 2025-04-26 | 18 | 公式URL本文確認。本DB登録/追記は確認後に限定 |
+| low | needs_official_confirmation | social_or_map_only | https://www.google.com/maps/place/%E7%A5%9E%E7%94%B0%E7%A5%9E%E7%A4%BE%EF%BC%88%E7%A5%9E%E7%94%B0%E6%98%8E%E7%A5%9E%EF%BC%89/@35.7014855,139.765259,17z/data=!3m1!5s0x60188c1ed49ee279:0xe75480716373b939!4m10!1m2!2m1!1z56We55Sw5piO56We!3m6!1s0x60188c1ecc161bed:0xf397e4b6bf417c8b!8m2!3d35.7020186!4d139.7678943!15sCgznpZ7nlLDmmI7npZ5aDyIN56We55SwIOaYjuelnpIBDXNoaW50b19zaHJpbmWaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVUmxlWFEzVUVoQkVBReABAA!16s%2Fm%2F0463qs6?entry=ttu | 2025-08-08, 2025-08-10 | 12 | 公式URL本文確認。本DB登録/追記は確認後に限定 |
+| low | needs_official_confirmation | social_or_map_only | https://www.google.com/maps/place/%E3%82%B7%E3%83%8D%E3%82%B7%E3%83%86%E3%82%A3%E5%BA%83%E5%A0%B4/@35.695552,139.6987356,17z/data=!3m1!4b1!4m6!3m5!1s0x60188de6552826ed:0x992d7fbbb287dc32!8m2!3d35.695552!4d139.7013105!16s%2Fg%2F11rtmn5pbq?entry=ttu | 2024-08-17, 2025-08-17, 2025-10-05 | 10 | 公式URL本文確認。本DB登録/追記は確認後に限定 |
+| low | needs_official_confirmation | social_or_map_only | https://www.google.com/maps/place/%E5%A4%A7%E6%AD%A3%E5%A4%A7%E5%AD%A6/@35.7430019,139.7245915,17z/data=!3m1!4b1!4m6!3m5!1s0x60188d7e646e82a5:0x6cac2c6aa6cc85fd!8m2!3d35.7430019!4d139.7271664!16s%2Fm%2F04cxc36?entry=ttu | 2025-07-04 | 8 | 公式URL本文確認。本DB登録/追記は確認後に限定 |
+| low | needs_official_confirmation | social_or_map_only | https://www.google.com/maps?sca_esv=aa2fa3c738b8e4c2&rlz=1C1ASRM_jaJP854JP854&output=search&q=%E7%A5%9E%E6%A5%BD%E5%9D%82%E3%82%8A%E3%81%9D%E3%81%AA%E9%8A%80%E8%A1%8C&source=lnms&fbs=AEQNm0BmX_LnrLeR8vf4SqPj9gyQRjWgtaeThu4D3ydgNvH7ElI6_D4g4WCiufgkP0TvKg1l66LjXHOb5lqpk7a4MBSIxLq1ndj6NUqo5xGMS2wnhTv8z9wOlR6Roe-UQ8uHAEKU8FmNoC-LjCpS2vWJ8u6pbrWGb39Bopzwghz_rAjx6kLF3mKVYqZAb5D1kz6k8YBxKS6Ocv9BmDvjvSBsnGee2-LIfTRuxX07VZOepqMMcAWfFrY&entry=mc&ved=1t:200715&ictx=111 | 2025-07-23 | 8 | 公式URL本文確認。本DB登録/追記は確認後に限定 |
+| low | needs_official_confirmation | social_or_map_only | https://www.google.com/maps/place/%E9%87%91%E7%8E%8B%E5%85%AB%E5%B9%A1%E5%AE%AE/@35.6575361,139.7037695,17z/data=!3m1!4b1!4m6!3m5!1s0x60188b595366b6d5:0x5a15107c0ff67cef!8m2!3d35.6575361!4d139.7063444!16s%2Fg%2F121kk903?entry=ttu&g_ep=EgoyMDI0MDkxMC4wIKXMDSoASAFQAw%3D%3D | 2025-09-11 | 8 | 公式URL本文確認。本DB登録/追記は確認後に限定 |
+| low | needs_official_confirmation | social_or_map_only | https://linktr.ee/tokyohertz | 2025-10-12, 2025-10-17, 2025-10-19 | 6 | 公式URL本文確認。本DB登録/追記は確認後に限定 |
+| low | needs_official_confirmation | social_or_map_only | https://www.google.com/maps/place/SHIBUYA109/@35.6595771,139.6961531,17z/data=!3m1!4b1!4m6!3m5!1s0x60188ca9cd6c1c87:0x55a2a75ba417e072!8m2!3d35.6595771!4d139.698728!16s%2Fm%2F03m78kc?entry=ttu | 2025-08-02 | 6 | 公式URL本文確認。本DB登録/追記は確認後に限定 |
+| low | needs_official_confirmation | social_or_map_only | https://www.google.com/maps/place/%E6%B5%84%E5%9C%9F%E7%9C%9F%E5%AE%97%E6%9C%AC%E9%A1%98%E5%AF%BA%E6%B4%BE+%E7%AF%89%E5%9C%B0%E6%9C%AC%E9%A1%98%E5%AF%BA/@35.6666975,139.7688826,18z/data=!4m6!3m5!1s0x60188bdf42f23f8f:0x5079895cf0ec2793!8m2!3d35.6664862!4d139.7722836!16zL20vMDd3cDN4?entry=ttu&g_ep=EgoyMDI1MDcyNy4wIKXMDSoASAFQAw%3D%3D | 2025-07-30 | 4 | 公式URL本文確認。本DB登録/追記は確認後に限定 |
+| low | needs_official_confirmation | social_or_map_only | https://www.google.com/maps/place/%E8%8A%B1%E5%9C%92%E7%A5%9E%E7%A4%BE/@35.6935311,139.702753,17z/data=!3m1!4b1!4m6!3m5!1s0x60188cdbe07cde2b:0x3b4028968ed9a754!8m2!3d35.6935311!4d139.7053279!16s%2Fm%2F0k54d7q?entry=ttu | 2025-08-02 | 4 | 公式URL本文確認。本DB登録/追記は確認後に限定 |
+| low | needs_official_confirmation | social_or_map_only | https://www.google.com/maps/place/%E8%87%AA%E7%94%B1%E3%81%8C%E4%B8%98%E9%A7%85/@35.6072728,139.6660912,17z/data=!3m1!4b1!4m6!3m5!1s0x6018f51f0e7b7329:0xc0f96ebbd79be0a3!8m2!3d35.6072728!4d139.6686661!16s%2Fm%2F026_l1l?entry=ttu | 2024-07-19 | 3 | 公式URL本文確認。本DB登録/追記は確認後に限定 |
+| low | needs_official_confirmation | social_or_map_only | https://www.google.com/maps/search/%E6%81%B5%E6%AF%94%E5%AF%BF%E9%A7%85%E5%89%8D%E8%A5%BF%E5%8F%A3%E3%83%AD%E3%83%BC%E3%82%BF%E3%83%AA%E3%83%BC/@35.6462657,139.7094639,18z/data=!3m1!4b1?entry=ttu | 2025-07-25 | 3 | 公式URL本文確認。本DB登録/追記は確認後に限定 |
+| low | needs_official_confirmation | social_or_map_only | https://www.google.com/maps/place/%E6%B5%84%E5%9C%9F%E5%AF%BA/@35.6742472,139.732896,17z/data=!3m1!4b1!4m6!3m5!1s0x60188c7f6f6b9c49:0x47cc2d136473bdb7!8m2!3d35.6742429!4d139.7354709!16s%2Fg%2F1tl8kpxq?entry=ttu&g_ep=EgoyMDI1MDcyMy4wIKXMDSoASAFQAw%3D%3D | 2025-07-24 | 3 | 公式URL本文確認。本DB登録/追記は確認後に限定 |
+| low | needs_official_confirmation | social_or_map_only | https://maps.app.goo.gl/gVkfqrsrwrzS8KhH6 | 2025-10-18 | 2 | 公式URL本文確認。本DB登録/追記は確認後に限定 |
+| low | needs_official_confirmation | social_or_map_only | https://www.google.com/maps?sca_esv=ed31745f76a805c8&rlz=1C1ASRM_jaJP854JP854&output=search&q=%E7%A5%90%E5%A4%A9%E5%AF%BA&source=lnms&fbs=AIIjpHx8KeeL4pinWNBsyb2wNnV58AkgzLWvfzucLzRBLhfWJh_fYQV-crphwtS8Dk8eQ_BrrlbjBkoYpRNvJUlZj8Z0f9KPGZTdcFsp4vGdABl_Sr8DUSqOSwMyL9x5ZrBzEFkdxQhzB1TO_t-gBqdCWGl-7EqX672If9GDUBkac886eMgxSlIe8U2qo47SHXOvm7OG9rYXwV1wAZkkMAekpnvO35QovU82Oo6lflzvPEVoDM_7so0&entry=mc&ved=1t:200715&ictx=111 | 2025-07-17 | 2 | 公式URL本文確認。本DB登録/追記は確認後に限定 |
+| low | needs_official_confirmation | social_or_map_only | https://www.google.com/maps/place/%E4%B8%8B%E5%8C%97%E6%B2%A2%E9%A7%85/@35.6615848,139.6643169,17z/data=!3m1!4b1!4m6!3m5!1s0x6018f36b9a296133:0x66c43a9f356d5e5d!8m2!3d35.6615848!4d139.6668918!16zL20vMDQzMTZo?entry=ttu&g_ep=EgoyMDI1MDgwNi4wIKXMDSoASAFQAw%3D%3D | 2025-08-09 | 2 | 公式URL本文確認。本DB登録/追記は確認後に限定 |
+| low | needs_official_confirmation | social_or_map_only | https://www.google.com/maps/place/%E6%B5%A6%E5%AE%89%E5%B8%82%E7%AB%8B%E6%B5%A6%E5%AE%89%E5%B0%8F%E5%AD%A6%E6%A0%A1/@35.6647093,139.883061,15.6z/data=!4m10!1m2!2m1!1z5rWm5a6J5bCP5a2m5qCh!3m6!1s0x60187d7fdf5f0227:0xcbbd5c3a0b176776!8m2!3d35.663688!4d139.894162!15sCg_mtablronlsI_lrabmoKGSARFlbGVtZW50YXJ5X3NjaG9vbOABAA!16s%2Fg%2F11hzxv9vlk?entry=ttu | 2024-08-14 | 2 | 公式URL本文確認。本DB登録/追記は確認後に限定 |
+| low | needs_official_confirmation | social_or_map_only | https://www.google.com/maps/search/%E6%9D%B1%E4%BA%AC%E9%A7%85%E5%89%8D%E8%A1%8C%E5%B9%B8%E9%80%9A%E3%82%8A/@35.6818413,139.7614654,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MDkxMC4wIKXMDSoASAFQAw%3D%3D | 2025-09-12 | 1 | 公式URL本文確認。本DB登録/追記は確認後に限定 |
+| low | needs_official_confirmation | social_or_map_only | https://www.google.com/maps?sca_esv=7e619e38cdd6dc6b&rlz=1C1ASRM_jaJP854JP854&output=search&q=%E6%97%A5%E6%9A%AE%E9%87%8C%E9%A7%85%E5%89%8D%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88%E5%BA%83%E5%A0%B4&source=lnms&fbs=AEQNm0Arhw5xil6bRXzBEwLafnGFYcCddG_LKJenl3UnZTjbvXA6wjVOZhNS_CRUxbGj3ZGI_RgpkWoZatApLReG67cpdPdR_JmSMbc8SGXp9FagIPA8-B_BPfHFVApDenaTPfgibNahFNOiP0Q48C4E7ILYM_81Ww8K2bf7Ww1hAtUKyv6RaMVth6gRoBMgrXhzi6QABd6uQTY87ro6gPZCVE4dsfakoEthpH2FvMP2bVnH6S6Qr18&entry=mc&ved=1t:200715&ictx=111 | 2025-09-14 | 1 | 公式URL本文確認。本DB登録/追記は確認後に限定 |
+| low | remaining_backfill | prior_year_video_uploaded_in_2025 | 品川区民まつり 西大井広場公園 盆踊り |  | 19 | 動画公開日は2025年だがタイトル上は過去年実績。2025イベント証拠としては反映しない |
+| low | remaining_backfill | year_mismatch_or_recurring_event_review | みたままつり 納涼民踊のつどい |  | 12 | 2025動画を2026イベントへ入れず、過去年実績または2025イベント別ページとして扱うか確認 |
+| low | remaining_backfill | prior_year_video_uploaded_in_2025 | 京橋盆踊り |  | 10 | 動画公開日は2025年だがタイトル上は過去年実績。2025イベント証拠としては反映しない |
+| low | remaining_backfill | prior_year_video_uploaded_in_2025 | 根津神社 盆踊り（文京区） |  | 6 | 動画公開日は2025年だがタイトル上は過去年実績。2025イベント証拠としては反映しない |
+| low | remaining_backfill | year_mismatch_or_recurring_event_review | 奥浅草盆踊り |  | 5 | 2025動画を2026イベントへ入れず、過去年実績または2025イベント別ページとして扱うか確認 |
+| low | remaining_backfill | year_mismatch_or_recurring_event_review | すみだ錦糸町河内音頭大盆踊り |  | 2 | 2025動画を2026イベントへ入れず、過去年実績または2025イベント別ページとして扱うか確認 |

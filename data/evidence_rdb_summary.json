@@ -1,0 +1,20 @@
+{
+  "generated_by": "build_evidence_rdb.py",
+  "generated_at": "2026-06-16T04:02:14.043857+00:00",
+  "database": "data/evidence.sqlite",
+  "sources": {
+    "voices": "data/voices.json",
+    "x_account_scores": "data/x_account_scores.json",
+    "x_candidate_accounts": "data/x_candidate_accounts.json",
+    "x_candidate_post_review": "data/x_candidate_post_review.json"
+  },
+  "table_counts": {
+    "source_accounts": 1414,
+    "source_posts": 6418,
+    "post_urls": 102641,
+    "x_account_scores": 1595,
+    "x_candidate_accounts": 428,
+    "x_candidate_post_reviews": 30,
+    "x_candidate_review_sample_posts": 137
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "generated_by": "export_rdb_apply_plans.py",
+  "generated_at": "2026-06-16T04:02:15.493217+00:00",
+  "database": "data/bon_odori.sqlite",
+  "event_plan_counts": {
+    "review_batch_2025_backfill": 141,
+    "no_action_summary_present": 376,
+    "ready": 42
+  },
+  "song_review_candidates": 743,
+  "outputs": {
+    "event_plan_json": "data/rdb_event_apply_plan.json",
+    "event_plan_md": "data/rdb_event_apply_plan.md",
+    "song_review_json": "data/rdb_song_review_source.json",
+    "song_review_md": "data/rdb_song_review_source.md"
+  }
+}

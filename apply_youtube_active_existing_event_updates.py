@@ -128,7 +128,7 @@ def event_summary_note(event_name, rows):
     if len(videos) > len(representative):
         lines.append(
             f"- 追加動画: {len(videos) - len(representative)}件 "
-            "(詳細は data/youtube_active_existing_event_update_apply_result.json)"
+            "(詳細はapply結果JSON)"
         )
     if official_urls:
         lines.append(f"- 関連URL: {', '.join(official_urls[:5])}")
@@ -146,6 +146,14 @@ def merged_detail(existing, note):
     return note
 
 
+def has_existing_youtube_summary(detail, event_name):
+    if not detail or "[youtube_evidence]" not in detail:
+        return False
+    if event_name and f"- 対象イベント: {event_name}" not in detail:
+        return False
+    return "- 動画数:" in detail or "- 追加動画:" in detail
+
+
 def build_updates(api, plan, event_name=None):
     updates = []
     for (target_event_name, page_id), rows in sorted(rows_by_event(plan, event_name=event_name).items()):
@@ -155,7 +163,8 @@ def build_updates(api, plan, event_name=None):
         urls = [video_key(video) for video in videos if video_key(video)]
         duplicate_urls = [url for url in urls if url in old_detail]
         all_urls_duplicate = bool(urls) and len(duplicate_urls) == len(urls)
-        new_detail = old_detail if all_urls_duplicate else merged_detail(old_detail, note)
+        summary_present = has_existing_youtube_summary(old_detail, target_event_name)
+        new_detail = old_detail if (all_urls_duplicate or summary_present) else merged_detail(old_detail, note)
         updates.append({
             "target_event_name": target_event_name,
             "target_page_id": page_id,
@@ -166,6 +175,7 @@ def build_updates(api, plan, event_name=None):
             "dates": merge_unique(sorted(row.get("event_date") or "" for row in rows)),
             "duplicate_url_count": len(duplicate_urls),
             "all_urls_duplicate": all_urls_duplicate,
+            "summary_present": summary_present,
             "apply_status": "ready",
             "changed": new_detail != old_detail,
             "note": note,

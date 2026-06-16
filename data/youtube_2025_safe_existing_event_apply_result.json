@@ -1,0 +1,350 @@
+{
+  "generated_by": "apply_youtube_active_existing_event_updates.py",
+  "generated_at": "2026-06-16T01:08:00.680692+00:00",
+  "mode": "apply",
+  "apply_performed": true,
+  "source": "data/youtube_2025_safe_existing_event_plan.json",
+  "ready_count": 12,
+  "changed_count": 2,
+  "applied_count": 2,
+  "skipped_count": 0,
+  "updates": [
+    {
+      "target_event_name": "イベント名未確認（晴海ふ頭公園）",
+      "target_page_id": "3778be04-e762-8197-b634-c3bedcf30b0d",
+      "target_page_url": "https://tokyofesta.com/23ku/23612/",
+      "input_rows": 1,
+      "video_count": 19,
+      "song_count": 7,
+      "dates": [
+        "2025-07-12"
+      ],
+      "duplicate_url_count": 0,
+      "all_urls_duplicate": false,
+      "summary_present": true,
+      "apply_status": "ready",
+      "changed": false,
+      "note": "[youtube_evidence] YouTube実績証拠\n- 対象イベント: イベント名未確認（晴海ふ頭公園）\n- 検出日付: 2025-07-12\n- 動画数: 19\n- チャンネル: UCNF_5e3ZvziJueTWvTPATGw, UCWz2tM7PAFGT7xSL5OAEllg\n- 代表動画: https://www.youtube.com/watch?v=nFXtj9abEe4 / UCNF_5e3ZvziJueTWvTPATGw / 【ダンシング・ヒーロー】（荻野目洋子）　2025年第1回晴海ふ頭公園盆踊り大会４　HARUMI FLAG\n- 代表動画: https://www.youtube.com/watch?v=J6JZtIXczyA / UCNF_5e3ZvziJueTWvTPATGw / 【バハマママ】　2025年第1回晴海ふ頭公園盆踊り大会13　HARUMI FLAG\n- 代表動画: https://www.youtube.com/watch?v=6dT21FRjt60 / UCNF_5e3ZvziJueTWvTPATGw / 【バハマママ】　2025年第1回晴海ふ頭公園盆踊り大会21　HARUMI FLAG\n- 代表動画: https://www.youtube.com/watch?v=Bpc69KmfTq0 / UCNF_5e3ZvziJueTWvTPATGw / 【バハマママ】　2025年第1回晴海ふ頭公園盆踊り大会５　HARUMI FLAG\n- 代表動画: https://www.youtube.com/watch?v=56D8F6MTFFs / UCNF_5e3ZvziJueTWvTPATGw / 【令和音頭】（北島三郎）　2025年第1回晴海ふ頭公園盆踊り大会15　HARUMI FLAG\n- 追加動画: 14件 (詳細はapply結果JSON)\n- 曲目候補: ダンシングヒーロー, バハマ・ママ, 令和音頭, 東京音頭, これがお江戸の盆ダンス, ジャンボリミッキー, 炭坑節",
+      "properties": {
+        "開催パターン詳細": {
+          "rich_text": [
+            {
+              "text": {
+                "content": "[youtube_2025_date_backfill] 開催日補正\n- 補正日: 2025-07-12\n- 根拠URL: https://tokyofesta.com/23ku/23612/\n- URL内一致: 2025/07/12, 2025.07.12, 2025年7月12日\n- YouTube検出日付: 2025-07-12\n- 対象動画数: 24\n\n[youtube_evidence] YouTube実績証拠\n- 対象イベント: イベント名未確認（晴海ふ頭公園）\n- 検出日付: 2025-07-12\n- 動画数: 24\n- チャンネル: UCNF_5e3ZvziJueTWvTPATGw, UCWz2tM7PAFGT7xSL5OAEllg\n- 代表動画: https://www.youtube.com/watch?v=O4FLEzwOcLI / UCNF_5e3ZvziJueTWvTPATGw / 【きよしのズンドコ節】（氷川きよし）　2025年第1回晴海ふ頭公園盆踊り大会14　HARUMI FLAG\n- 代表動画: https://www.youtube.com/watch?v=GvEARgJJnwE / UCNF_5e3ZvziJueTWvTPATGw / 【きよしのズンドコ節】（氷川きよし）　2025年第1回晴海ふ頭公園盆踊り大会22　HARUMI FLAG\n- 代表動画: https://www.youtube.com/watch?v=jA7McwUYOf8 / UCNF_5e3ZvziJueTWvTPATGw / 【きよしのズンドコ節】（氷川きよし）　2025年第1回晴海ふ頭公園盆踊り大会６　HARUMI FLAG\n- 代表動画: https://www.youtube.com/watch?v=zDHmFTkBtwM / UCNF_5e3ZvziJueTWvTPATGw / 【ダンシング・ヒーロー】（荻野目洋子）　2025年第1回晴海ふ頭公園盆踊り大会12　HARUMI FLAG\n- 代表動画: https://www.youtube.com/watch?v=OndrtlJbO3M / UCNF_5e3ZvziJueTWvTPATGw / 【ダンシング・ヒーロー】（荻野目洋子）　2025年第1回晴海ふ頭公園盆踊り大会20　HARUMI FLAG\n- 追加動画: 19件 (詳細はapply結果JSON)\n- 曲目候補: きよしのズンドコ節, ダンシングヒーロー, バハマ・ママ, 令和音頭, 東京音頭, これがお江戸の盆ダンス, ジャンボリミッキー, 炭坑節"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "target_event_name": "シタマチ.ふるさと盆踊り大会",
+      "target_page_id": "37b8be04-e762-8162-a1e8-e875ac35bc46",
+      "target_page_url": "https://tokyofesta.com/23ku/24373/",
+      "input_rows": 1,
+      "video_count": 74,
+      "song_count": 40,
+      "dates": [
+        "2025-08-16"
+      ],
+      "duplicate_url_count": 0,
+      "all_urls_duplicate": false,
+      "summary_present": true,
+      "apply_status": "ready",
+      "changed": false,
+      "note": "[youtube_evidence] YouTube実績証拠\n- 対象イベント: シタマチ.ふるさと盆踊り大会\n- 検出日付: 2025-08-16\n- 動画数: 74\n- チャンネル: UCNF_5e3ZvziJueTWvTPATGw, UCWz2tM7PAFGT7xSL5OAEllg\n- 代表動画: https://www.youtube.com/watch?v=FQZjXewDhV4 / UCNF_5e3ZvziJueTWvTPATGw / 【U.S.A.】（DA PUMP）　2025年パンダ広場盆踊り2日目38　シタマチふるさと盆踊り大会　御徒町南口駅前広場\n- 代表動画: https://www.youtube.com/watch?v=qKsKGXFLiY8 / UCNF_5e3ZvziJueTWvTPATGw / 【U.S.A.】（DA PUMP）　2025年パンダ広場盆踊り2日目50　シタマチふるさと盆踊り大会　御徒町南口駅前広場\n- 代表動画: https://www.youtube.com/watch?v=mFfa3puvopk / UCNF_5e3ZvziJueTWvTPATGw / 【うっせぇわ】（Ado）　2025年パンダ広場盆踊り2日目39　シタマチふるさと盆踊り大会　御徒町南口駅前広場\n- 代表動画: https://www.youtube.com/watch?v=JlxNSL-3HaY / UCNF_5e3ZvziJueTWvTPATGw / 【げんき音頭】（藤みち子）　2025年パンダ広場盆踊り10　シタマチふるさと盆踊り大会　御徒町南口駅前広場\n- 代表動画: https://www.youtube.com/watch?v=PNpRjNSpxEM / UCNF_5e3ZvziJueTWvTPATGw / 【げんき音頭】（藤みち子）　2025年パンダ広場盆踊り2日目11　シタマチふるさと盆踊り大会　御徒町南口駅前広場\n- 追加動画: 69件 (詳細はapply結果JSON)\n- 曲目候補: U.S.A., うっせぇわ, げんき音頭, じょいふる, みちのく盆唄, オトノナルホウヘ, Shake It Off, ジンギスカン, 会津磐梯山, 大東京音頭, 最高到達点, 気分上々↑↑, 河内音頭, 炭坑節, 相馬盆唄, 花笠音頭, かがやき音頭, たいとう音頭, ふるさと祭り音頭, ゆかたばやし, ジャンボリミッキー, 終 ドダレバチ, 津軽甚句, 三味線ブギウギ, 上野音頭, 令和おどり, 八木節, 終 関東やまと太鼓, 大昭和音頭, 新台東音頭, 日本一音頭, 東京百年おどり, 東京音頭, 江州音頭, 江戸っ子囃子, 涼みおどり, 百年ばやし, 百年音頭, 盆おどり, 郡上かわさき",
+      "properties": {
+        "開催パターン詳細": {
+          "rich_text": [
+            {
+              "text": {
+                "content": "2025年は第7回 8/16-17（11:00-20:30）。2026年日程は未発表\n\n[youtube_2025_date_backfill] 開催日補正\n- 補正日: 2025-08-16\n- 根拠URL: https://tokyofesta.com/23ku/24373/\n- URL内一致: 2025/08/16, 2025年8月16日, 8月16日\n- YouTube検出日付: 2025-08-16\n- 対象動画数: 79\n\n[youtube_evidence] YouTube実績証拠\n- 対象イベント: シタマチ.ふるさと盆踊り大会\n- 検出日付: 2025-08-16\n- 動画数: 79\n- チャンネル: UCNF_5e3ZvziJueTWvTPATGw, UCWz2tM7PAFGT7xSL5OAEllg\n- 代表動画: https://www.youtube.com/watch?v=OFls-bWJzyQ / UCNF_5e3ZvziJueTWvTPATGw / Fun! Fun! Fun!（新浜レオン）　2025年パンダ広場盆踊り2日目54　シタマチふるさと盆踊り大会　御徒町南口駅前広場\n- 代表動画: https://www.youtube.com/watch?v=WMEr8_l2-sk / UCNF_5e3ZvziJueTWvTPATGw / 「5,6,7,8」（ステップス）　2025年パンダ広場盆踊り2日目46　シタマチふるさと盆踊り大会　御徒町南口駅前広場（5,6,7,8・Steps）\n- 代表動画: https://www.youtube.com/watch?v=C5JwpShyXl0 / UCNF_5e3ZvziJueTWvTPATGw / 「かわいいだけじゃだめですか？」（CUTIE STREET）　2025年パンダ広場盆踊り2日目47　シタマチふるさと盆踊り大会　御徒町南口駅前広場\n- 代表動画: https://www.youtube.com/watch?v=tn5hpNB_xWA / UCNF_5e3ZvziJueTWvTPATGw / 「プレイバックPart2」（山口百恵）　2025年パンダ広場盆踊り2日目44　シタマチふるさと盆踊り大会　御徒町南口駅前広場\n- 代表動画: https://www.youtube.com/watch?v=aLI-2CPLExg / UCNF_5e3ZvziJueTWvTPATGw / 「炭坑節」　2025年パンダ広場盆踊り2日目７　シタマチふるさと盆踊り大会　御徒町南口駅前広場\n- 追加動画: 74件 (詳細はapply結果JSON)\n- 曲目候補: Fun! Fun! Fun!, 5,6,7,8, かわいいだけじゃだめですか?, プレイバックPart2, 炭坑節, U.S.A., うっせぇわ, げんき音頭, じょいふる, みちのく盆唄, オトノナルホウヘ, Shake It Off, ジンギスカン, 会津磐梯山, 大東京音頭, 最高到達点, 気分上々↑↑, 河内音頭, 相馬盆唄, 花笠音頭, かがやき音頭, たいとう音頭, ふるさと祭り音頭, ゆかたばやし, ジャンボリミッキー, 終 ドダレバチ, 津軽甚句, 三味線ブギウギ, 上野音頭, 令和おどり, 八木節, 終 関東やまと太鼓, 大昭和音頭, 新台東音頭, 日本一音頭, 東京百年おどり, 東京音頭, 江州音頭, 江戸っ子囃子, 涼みおどり"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "target_event_name": "旗の台稲荷通り商店会盆踊り 盆ROCK",
+      "target_page_id": "37b8be04-e762-81ca-9592-e9402cbf5da3",
+      "target_page_url": "https://minato-bon-odori.blogspot.com/2025/01/00i-sinagawa-p.html",
+      "input_rows": 1,
+      "video_count": 14,
+      "song_count": 12,
+      "dates": [
+        "2025-10-18"
+      ],
+      "duplicate_url_count": 0,
+      "all_urls_duplicate": false,
+      "summary_present": true,
+      "apply_status": "ready",
+      "changed": false,
+      "note": "[youtube_evidence] YouTube実績証拠\n- 対象イベント: 旗の台稲荷通り商店会盆踊り 盆ROCK\n- 検出日付: 2025-10-18\n- 動画数: 14\n- チャンネル: UCNF_5e3ZvziJueTWvTPATGw\n- 代表動画: https://www.youtube.com/watch?v=WBsRUETxKqc / UCNF_5e3ZvziJueTWvTPATGw / ツイスト・アンド・シャウト　旗の台稲荷通り商店街「旗の台盆ROCK」６　生歌生演奏盆踊り　2025年10月18日\n- 代表動画: https://www.youtube.com/watch?v=VYFJZP9ioM8 / UCNF_5e3ZvziJueTWvTPATGw / ドント・ルック・バック・イン・アンガー（オアシス）　旗の台稲荷通り商店街「旗の台盆ROCK」８　生歌生演奏盆踊り　2025年10月18日\n- 代表動画: https://www.youtube.com/watch?v=msmgukNRGFo / UCNF_5e3ZvziJueTWvTPATGw / ドンパン節　旗の台稲荷通り商店街「旗の台盆ROCK」13　生歌生演奏盆踊り　2025年10月18日\n- 代表動画: https://www.youtube.com/watch?v=d_J8HsZlZvc / UCNF_5e3ZvziJueTWvTPATGw / マイ・シャローナ（ザ・ナック）　旗の台稲荷通り商店街「旗の台盆ROCK」４　生歌生演奏盆踊り　2025年10月18日\n- 代表動画: https://www.youtube.com/watch?v=PYZALYBBlmU / UCNF_5e3ZvziJueTWvTPATGw / ルージュの伝言　旗の台稲荷通り商店街「旗の台盆ROCK」７　生歌生演奏盆踊り　2025年10月18日\n- 追加動画: 9件 (詳細はapply結果JSON)\n- 曲目候補: ツイストアンドシャウト, ドント・ルック・バック・イン・アンガー, ドンパン節, マイ・シャローナ, ルージュの伝言, 今夜はビートイット, 品川甚句, 品川音頭, 大東京音頭, 旗の台音頭, 東京音頭, 炭坑節",
+      "properties": {
+        "開催パターン詳細": {
+          "rich_text": [
+            {
+              "text": {
+                "content": "2025-10-18（土）15:00-19:00。17:00-19:00に盆ROCK。\n\n[youtube_evidence] YouTube実績証拠\n- 対象イベント: 旗の台稲荷通り商店会盆踊り 盆ROCK\n- 検出日付: 2025-10-18\n- 動画数: 19\n- チャンネル: UCNF_5e3ZvziJueTWvTPATGw\n- 代表動画: https://www.youtube.com/watch?v=WEc9GFSU8eg / UCNF_5e3ZvziJueTWvTPATGw / Johnny B. Goode（Chuck Berry）　旗の台稲荷通り商店街「旗の台盆ROCK」19終　生歌生演奏盆踊り　2025年10月18日\n- 代表動画: https://www.youtube.com/watch?v=_lqOf2ToPuE / UCNF_5e3ZvziJueTWvTPATGw / 「オブ・ラ・ディ、オブ・ラ・ダ」（ビートルズ）　旗の台稲荷通り商店街「旗の台盆ROCK」２　生歌生演奏盆踊り　2025年10月18日\n- 代表動画: https://www.youtube.com/watch?v=9AJqbnmASyE / UCNF_5e3ZvziJueTWvTPATGw / 「バスケット・ケース」（グリーン・デイ）　旗の台稲荷通り商店街「旗の台盆ROCK」14　生歌生演奏盆踊り　2025年10月18日\n- 代表動画: https://www.youtube.com/watch?v=jrbrjKdzLDI / UCNF_5e3ZvziJueTWvTPATGw / ジョニー・Ｂ、グッド（チャックベリー）　旗の台稲荷通り商店街「旗の台盆ROCK」16　生歌生演奏盆踊り　2025年10月18日\n- 代表動画: https://www.youtube.com/watch?v=I0_lYt5t7tc / UCNF_5e3ZvziJueTWvTPATGw / タイムマシンにお願い（サディスティック・ミカ・バンド）　旗の台稲荷通り商店街「旗の台盆ROCK」12　生歌生演奏盆踊り　2025年10月18日\n- 追加動画: 14件 (詳細はapply結果JSON)\n- 曲目候補: オブ・ラ・ディ、オブ・ラ・ダ, バスケット・ケース, ジョニー・B、グッド, タイムマシンにお願い, ツイストアンドシャウト, ドント・ルック・バック・イン・アンガー, ドンパン節, マイ・シャローナ, ルージュの伝言, 今夜はビートイット, 品川甚句, 品川音頭, 大東京音頭, 旗の台音頭, 東京音頭, 炭坑節"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "target_event_name": "東本願寺盆踊り",
+      "target_page_id": "37b8be04-e762-811b-b278-e839d782f89f",
+      "target_page_url": "https://www.asakusaevent.com/higashihonganji-bonodori-2025/",
+      "input_rows": 1,
+      "video_count": 31,
+      "song_count": 17,
+      "dates": [
+        "2025-08-20"
+      ],
+      "duplicate_url_count": 0,
+      "all_urls_duplicate": false,
+      "summary_present": true,
+      "apply_status": "ready",
+      "changed": false,
+      "note": "[youtube_evidence] YouTube実績証拠\n- 対象イベント: 東本願寺盆踊り\n- 検出日付: 2025-08-20\n- 動画数: 31\n- チャンネル: UCNF_5e3ZvziJueTWvTPATGw, UCWz2tM7PAFGT7xSL5OAEllg\n- 代表動画: https://www.youtube.com/watch?v=HQdw5q0smow / UCNF_5e3ZvziJueTWvTPATGw / 【テレフォン・オペレーター】（ピート・シェリー）　2025年浅草東本願寺盆踊り1日目19　東京都台東区　（Telephone Operator・Pete Shelley）\n- 代表動画: https://www.youtube.com/watch?v=x5OasHJEHoo / UCNF_5e3ZvziJueTWvTPATGw / 【パワー・オブ・ラブ】（ヒューイ・ルイス＆ザ・ニュース）　2025年浅草東本願寺盆踊り1日目17　東京都台東区　（The Power Of Love・Huey Lewis＆The News）\n- 代表動画: https://www.youtube.com/watch?v=cJuuUTrTqtw / UCNF_5e3ZvziJueTWvTPATGw / 【ホールド・ミー・ナウ】（トンプソンズ・ツインズ）　2025年浅草東本願寺盆踊り1日目18　東京都台東区　（Hold me now・Thompson Twins）\n- 代表動画: https://www.youtube.com/watch?v=-zwYip56Xfk / UCNF_5e3ZvziJueTWvTPATGw / 【大盛り上がり！！！】DJタイム（モグモグタイム）　2025年浅草東本願寺盆踊り1日目15　東京都台東区\n- 代表動画: https://www.youtube.com/watch?v=XV8Png92MSM / UCWz2tM7PAFGT7xSL5OAEllg / 【東本願寺盆踊り 2025】「Girls Just Want to Have Fun」シンディ・ローパー 盆踊り / Cyndi Lauper 初日 洋楽盆踊り 浅草\n- 追加動画: 26件 (詳細はapply結果JSON)\n- 曲目候補: テレフォン・オペレーター, パワー・オブ・ラブ, ホールド・ミー・ナウ, DJタイム, ふるさと音頭, ガールズ・ジャスト・ワナ・ハブ・ファン, レッツ・グルーヴ, 七福神音頭, 北海盆唄, 東京本願寺音頭, 東京音頭, 炭坑節, 燃えろ日本の夏祭り, 蓮如音頭, 親鸞おどり, 親鸞音頭, あなたの出番",
+      "properties": {
+        "開催パターン詳細": {
+          "rich_text": [
+            {
+              "text": {
+                "content": "2025年は8/20-21。約30年休止→2017年復活。2026年日程は未発表\n\n[youtube_2025_date_backfill] 開催日補正\n- 補正日: 2025-08-20\n- 根拠URL: https://www.asakusaevent.com/higashihonganji-bonodori-2025/\n- URL内一致: 2025年8月20日, 8月20日\n- YouTube検出日付: 2025-08-20\n- 対象動画数: 37\n\n[youtube_evidence] YouTube実績証拠\n- 対象イベント: 東本願寺盆踊り\n- 検出日付: 2025-08-20\n- 動画数: 36\n- チャンネル: UCNF_5e3ZvziJueTWvTPATGw, UCWz2tM7PAFGT7xSL5OAEllg\n- 代表動画: https://www.youtube.com/watch?v=Zez3AszAAos / UCNF_5e3ZvziJueTWvTPATGw / 「One Love」（嵐）　2025年浅草東本願寺盆踊り1日目24　東京都台東区\n- 代表動画: https://www.youtube.com/watch?v=ReyecfWdqFI / UCNF_5e3ZvziJueTWvTPATGw / 「エブリブレスユーテイク」（ポリス）　2025年浅草東本願寺盆踊り1日目23　東京都台東区　（Every Breath You Take・The Police）\n- 代表動画: https://www.youtube.com/watch?v=7I91YdUNCT0 / UCNF_5e3ZvziJueTWvTPATGw / 「チャンチキおけさ」　2025年浅草東本願寺盆踊り1日目９　東京都台東区\n- 代表動画: https://www.youtube.com/watch?v=oni2EpEVhEA / UCWz2tM7PAFGT7xSL5OAEllg / 【4K】東本願寺盆踊り 2025 第二部 / 洋楽盆踊り 「Let's Grove / Hold Me Now / The Power of Love / The Police / 嵐 ...」お浅草\n- 代表動画: https://www.youtube.com/watch?v=SyJ8vBe8iv8 / UCNF_5e3ZvziJueTWvTPATGw / 【ガット・トゥ・ビー・リアル】（シェリル・リン）　2025年浅草東本願寺盆踊り1日目28終　東京都台東区　（Got to Be Real・Cheryl Lynn）\n- 追加動画: 31件 (詳細はapply結果JSON)\n- 曲目候補: ONE LOVE, エブリブレスユーテイク, チャンチキおけさ, 終 ガット・トゥ・ビー・リアル, テレフォン・オペレーター, パワー・オブ・ラブ, ホールド・ミー・ナウ, DJタイム, ふるさと音頭, ガールズ・ジャスト・ワナ・ハブ・ファン, レッツ・グルーヴ, 七福神音頭, 北海盆唄, 東京本願寺音頭, 東京音頭, 炭坑節, 燃えろ日本の夏祭り, 蓮如音頭, 親鸞おどり, 親鸞音頭, あなたの出番"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "target_event_name": "歌舞伎町BON ODORI",
+      "target_page_id": "37b8be04-e762-8182-8c27-f7ff7febcffe",
+      "target_page_url": "https://www.kanko-shinjuku.jp/event/-/article_4606.html",
+      "input_rows": 1,
+      "video_count": 13,
+      "song_count": 0,
+      "dates": [
+        "2025-08-16"
+      ],
+      "duplicate_url_count": 0,
+      "all_urls_duplicate": false,
+      "summary_present": true,
+      "apply_status": "ready",
+      "changed": false,
+      "note": "[youtube_evidence] YouTube実績証拠\n- 対象イベント: 歌舞伎町BON ODORI\n- 検出日付: 2025-08-16\n- 動画数: 13\n- チャンネル: UCWz2tM7PAFGT7xSL5OAEllg, UCLSZK_q5ma6aeIrVRUEpkNw\n- 代表動画: https://www.youtube.com/watch?v=tEO7h-EBJQY / UCWz2tM7PAFGT7xSL5OAEllg / 【歌舞伎町 BON ODORI 2025】「I Was Born To Love You」Queen 盆踊り/ 新宿トー横 鳳蝶美成\n- 代表動画: https://www.youtube.com/watch?v=CE-vwe0hxPw / UCWz2tM7PAFGT7xSL5OAEllg / 【歌舞伎町 BON ODORI 2025】「Livin' On A Prayer」Bon Jovi 盆踊り/ 盆ジョヴィ 新宿トー横 鳳蝶美成\n- 代表動画: https://www.youtube.com/watch?v=clmiuUS7rcQ / UCWz2tM7PAFGT7xSL5OAEllg / 【歌舞伎町 BON ODORI 2025】「September」Earth, Wind & Fire / 盆踊り 新宿トー横 鳳蝶美成 Kabukicho BON ODORI\n- 代表動画: https://www.youtube.com/watch?v=N8ix_Xvcvec / UCWz2tM7PAFGT7xSL5OAEllg / 【歌舞伎町 BON ODORI 2025】「YMCA」Village People / 盆踊り 新宿トー横 鳳蝶美成 Kabukicho BON ODORI\n- 代表動画: https://www.youtube.com/watch?v=qgLJdb4aJcM / UCWz2tM7PAFGT7xSL5OAEllg / 【歌舞伎町 BON ODORI 2025】「ダンシングヒーロー」荻野目洋子 /  新宿トー横 鳳蝶美成 盆踊り\n- 追加動画: 8件 (詳細はapply結果JSON)\n- 曲目候補: 未抽出",
+      "properties": {
+        "開催パターン詳細": {
+          "rich_text": [
+            {
+              "text": {
+                "content": "2025-08-16 開催予定。東京盆踊りマップから確定日として反映。\n2025 [D10]\n8/16\n歌舞伎町シネシティ広場\n歌舞伎町商店街振興組合「歌舞伎町BON ODORI」 8月16日(土) 。\n開場 16:00、開始 17:30。\n\n[youtube_evidence] 2025実績証拠\n- 対象イベント: 歌舞伎町BON ODORI\n- 検出日付: 2025-08-16\n- 動画: https://www.youtube.com/watch?v=6APAt3DHhVs\n- チャンネル: Tokyo Lonely Walker\n- サムネイル: https://i.ytimg.com/vi/6APAt3DHhVs/maxresdefault.jpg\n- 曲目候補: EZ DO DANCE, 歌舞伎町の女王, Livin' on a Prayer, I Was Born To Love You, ダンシング・ヒーロー, Shake It Off, ultra soul, HOT LIMIT, Dancing Queen, September, 君の瞳に恋してる, Thriller, ライラック, Crazy Train, APT., Get Wild\n\n[youtube_evidence] YouTube実績証拠\n- 対象イベント: 歌舞伎町BON ODORI\n- 検出日付: 2025-08-16\n- 動画数: 18\n- チャンネル: UCWz2tM7PAFGT7xSL5OAEllg, UCKCspf_NrY16rUnODmBqOWA, UCLSZK_q5ma6aeIrVRUEpkNw\n- 代表動画: https://www.youtube.com/watch?v=m8zNQMQzgQs / UCWz2tM7PAFGT7xSL5OAEllg / B’z「ultra soul」歌舞伎町での盆踊りが楽しすぎてアンコール【歌舞伎町 BON ODORI 2025】/  新宿トー横 ウルトラソウル 鳳蝶美成 盆踊り\n- 代表動画: https://www.youtube.com/watch?v=sQXrND6MZdY / UCKCspf_NrY16rUnODmBqOWA / [4K]🇯🇵 B'z - ultra soul 歌舞伎町で激盛り上がりの盆踊り 新宿 2025 / Bon dance with B'z in Kabukicho BON ODORI 2025\n- 代表動画: https://www.youtube.com/watch?v=eTnDCp-Yro0 / UCWz2tM7PAFGT7xSL5OAEllg / 【歌舞伎町 BON ODORI 2025】「Crazy Train」オジー・オズボーン Ozzy Osbourne / 盆踊り 新宿トー横 鳳蝶美成 Kabukicho BON ODORI\n- 代表動画: https://www.youtube.com/watch?v=hhKFL6RJirM / UCWz2tM7PAFGT7xSL5OAEllg / 【歌舞伎町 BON ODORI 2025】「Dancing Queen」ダンシングクイーン - ABBA 盆踊り/ アバ 新宿トー横 鳳蝶美成\n- 代表動画: https://www.youtube.com/watch?v=m3qJEwJhUcA / UCWz2tM7PAFGT7xSL5OAEllg / 【歌舞伎町 BON ODORI 2025】「EZ DO DANCE」TRF 盆踊り/ 盆ジョヴィ 新宿トー横 鳳蝶美成\n- 追加動画: 13件 (詳細はapply結果JSON)\n- 曲目候補: 25"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "target_event_name": "第10回白金台どんぐり児童遊園 納涼盆踊り大会",
+      "target_page_id": "37b8be04-e762-8111-9c20-fc8bd0b42a45",
+      "target_page_url": "https://sanko8.net/8996/",
+      "input_rows": 1,
+      "video_count": 48,
+      "song_count": 39,
+      "dates": [
+        "2025-09-07"
+      ],
+      "duplicate_url_count": 0,
+      "all_urls_duplicate": false,
+      "summary_present": true,
+      "apply_status": "ready",
+      "changed": false,
+      "note": "[youtube_evidence] YouTube実績証拠\n- 対象イベント: 第10回白金台どんぐり児童遊園 納涼盆踊り大会\n- 検出日付: 2025-09-07\n- 動画数: 48\n- チャンネル: UCNF_5e3ZvziJueTWvTPATGw\n- 代表動画: https://www.youtube.com/watch?v=dBJJGSPoCc8 / UCNF_5e3ZvziJueTWvTPATGw / 「ダンシング・ヒーロー」（荻野目洋子）　2025年白金台どんぐり児童遊園盆踊り44　東京都港区\n- 代表動画: https://www.youtube.com/watch?v=oC1r1YSHCvc / UCNF_5e3ZvziJueTWvTPATGw / 「一円玉の旅がらす」（北川裕二）　2025年白金台どんぐり児童遊園盆踊り９　東京都港区\n- 代表動画: https://www.youtube.com/watch?v=Dp8hWxFkBHc / UCNF_5e3ZvziJueTWvTPATGw / 「南国土佐を後にして」（ペギー葉山）　2025年白金台どんぐり児童遊園盆踊り24　東京都港区\n- 代表動画: https://www.youtube.com/watch?v=uv-9f_ldlBE / UCNF_5e3ZvziJueTWvTPATGw / 「夜に駆ける」　2025年白金台どんぐり児童遊園盆踊り34　東京都港区\n- 代表動画: https://www.youtube.com/watch?v=_WRiH2gAnnE / UCNF_5e3ZvziJueTWvTPATGw / 「東京音頭」（鈴木正夫）　2025年白金台どんぐり児童遊園盆踊り７　東京都港区\n- 追加動画: 43件 (詳細はapply結果JSON)\n- 曲目候補: ダンシングヒーロー, 一円玉の旅がらす, 南国土佐を後にして, 夜に駆ける, 東京音頭, 燃えろ日本の夏祭り, 花火音頭, 銀座カンカン娘, かわいいだけじゃだめですか?, さくらんぼ, そうらん節, サザエさん, 会津磐梯山, 僕の生まれは郡山(生歌), 大東京音頭, 東北音頭, 花笠音頭, きよしのズンドコ節, ご祝儀音頭, となりのトトロ, にっぽんチャチャチャ, ジャンボリミッキー, ドンパン節, どんぱん節, 僕の生まれは郡山, 八木節, 常磐ディスコ港町(生歌), 常磐ディスコ港町, 東京みなと音頭, 東京タワー音頭, 東京五輪音頭, 東京名物人混み, 東京名物・人混み(生歌), 炭坑節, 紅花摘み唄, 音頭福よ来い, 高輪Gateway夢拍子, 高輪ゲートウェイ, 黒潮ヤッサ",
+      "properties": {
+        "開催パターン詳細": {
+          "rich_text": [
+            {
+              "text": {
+                "content": "2025-09-07 開催実績。2025 [C29]\n9/7。「第10回白金台どんぐり児童遊園 納涼盆踊り大会」 9月7日(日)。\n盆踊りは 16:45-19:30。\n\n[youtube_2025_date_backfill] 開催日補正\n- 補正日: 2025-09-07\n- 根拠URL: https://sanko8.net/8996/\n- URL内一致: 9月7日\n- YouTube検出日付: 2025-09-07\n- 対象動画数: 53\n\n[youtube_evidence] YouTube実績証拠\n- 対象イベント: 第10回白金台どんぐり児童遊園 納涼盆踊り大会\n- 検出日付: 2025-09-07\n- 動画数: 53\n- チャンネル: UCNF_5e3ZvziJueTWvTPATGw\n- 代表動画: https://www.youtube.com/watch?v=IFy1da6JSEg / UCNF_5e3ZvziJueTWvTPATGw / 「かわいいだけじゃだめですか？」（CUTIE STREET）　2025年白金台どんぐり児童遊園盆踊り41　東京都港区\n- 代表動画: https://www.youtube.com/watch?v=zkVoXuNqyIU / UCNF_5e3ZvziJueTWvTPATGw / 「きよしのズンドコ節」（氷川きよし）　2025年白金台どんぐり児童遊園盆踊り47　東京都港区\n- 代表動画: https://www.youtube.com/watch?v=J3YcWOU4CYQ / UCNF_5e3ZvziJueTWvTPATGw / 「ジャンボリミッキー」　2025年白金台どんぐり児童遊園盆踊り17　東京都港区\n- 代表動画: https://www.youtube.com/watch?v=vCLK9vkm4uA / UCNF_5e3ZvziJueTWvTPATGw / 「ジャンボリミッキー」　2025年白金台どんぐり児童遊園盆踊り45　東京都港区\n- 代表動画: https://www.youtube.com/watch?v=ChtYs_3tAEo / UCNF_5e3ZvziJueTWvTPATGw / 「ダンシング・ヒーロー」（生歌・町あかり）　2025年白金台どんぐり児童遊園盆踊り13　東京都港区\n- 追加動画: 48件 (詳細はapply結果JSON)\n- 曲目候補: ダンシング・ヒーロー(生歌), ダンシングヒーロー, 一円玉の旅がらす, 南国土佐を後にして, 夜に駆ける, 東京音頭, 燃えろ日本の夏祭り, 花火音頭, 銀座カンカン娘, かわいいだけじゃだめですか?, さくらんぼ, そうらん節, サザエさん, 会津磐梯山, 僕の生まれは郡山(生歌), 大東京音頭, 東北音頭, 花笠音頭, きよしのズンドコ節, ご祝儀音頭, となりのトトロ, にっぽんチャチャチャ, ジャンボリミッキー, ドンパン節, どんぱん節, 僕の生まれは郡山, 八木節, 常磐ディスコ港町(生歌), 常磐ディスコ港町, 東京みなと音頭, 東京タワー音頭, 東京五輪音頭, 東京名物人混み, 東京名物・人混み(生歌), 炭坑節, 紅花摘み唄, 音頭福よ来い, 高輪Gateway夢拍子, 高輪ゲートウェイ, 黒潮ヤッサ"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "target_event_name": "第16回ハマサイトの夏祭り",
+      "target_page_id": "37b8be04-e762-81c8-9eee-cb82e1ac2061",
+      "target_page_url": "https://minato-bon-odori.blogspot.com/2025/01/00c-minato-p.html",
+      "input_rows": 1,
+      "video_count": 3,
+      "song_count": 0,
+      "dates": [
+        "2025-08-22"
+      ],
+      "duplicate_url_count": 0,
+      "all_urls_duplicate": false,
+      "summary_present": true,
+      "apply_status": "ready",
+      "changed": false,
+      "note": "[youtube_evidence] YouTube実績証拠\n- 対象イベント: 第16回ハマサイトの夏祭り\n- 検出日付: 2025-08-22\n- 動画数: 3\n- チャンネル: UCEYq2_O_Sai0j9chJOmcKtQ\n- 代表動画: https://www.youtube.com/watch?v=LW4AlGUDQ6Y / UCEYq2_O_Sai0j9chJOmcKtQ / 【相川七瀬 LIVE】「第16回ハマサイトの夏祭り」🏮Tokyo Bon Dance👘2025.8.22 @浜松町駅北口駅前広場\n- 代表動画: https://www.youtube.com/watch?v=gIQhAV8y9Rw / UCEYq2_O_Sai0j9chJOmcKtQ / 【鳳蝶美成プロデュース盆踊り（第１部）】「第16回ハマサイトの夏祭り」🏮Tokyo Bon Dance👘2025.8.22 @浜松町駅北口駅前広場\n- 代表動画: https://www.youtube.com/watch?v=2p7tY02PLDc / UCEYq2_O_Sai0j9chJOmcKtQ / 【鳳蝶美成プロデュース盆踊り（第２部）】「第16回ハマサイトの夏祭り」🏮Tokyo Bon Dance👘2025.8.22 @浜松町駅北口駅前広場\n- 曲目候補: 未抽出",
+      "properties": {
+        "開催パターン詳細": {
+          "rich_text": [
+            {
+              "text": {
+                "content": "2025-08-22（金）16:00-21:00開催記録。例年、盆踊りの合間にライブ演奏等あり。\n\n[youtube_evidence] YouTube実績証拠\n- 対象イベント: 第16回ハマサイトの夏祭り\n- 検出日付: 2025-08-22\n- 動画数: 8\n- チャンネル: UCWz2tM7PAFGT7xSL5OAEllg, UCEYq2_O_Sai0j9chJOmcKtQ\n- 代表動画: https://www.youtube.com/watch?v=wsnOdq8Jv24 / UCWz2tM7PAFGT7xSL5OAEllg / B’z「ultra soul」盆踊り【ハマサイトの夏祭り 2025】ウルトラソウル 鳳蝶美成\n- 代表動画: https://www.youtube.com/watch?v=VVIgqDQNTcM / UCWz2tM7PAFGT7xSL5OAEllg / 【4K LIVE】「エボレボ！」- はやぶさ ライブ / デュエルマスターズ VSRF OP【ハマサイトの夏祭り 2025】デュエマ\n- 代表動画: https://www.youtube.com/watch?v=tZdn0Q3RQ5U / UCWz2tM7PAFGT7xSL5OAEllg / 【4K LIVE】「星降る街角」- はやぶさ  ライブ【ハマサイトの夏祭り 2025】敏いとうとハッピー＆ブルー カバー\n- 代表動画: https://www.youtube.com/watch?v=y65N8fR-DYI / UCWz2tM7PAFGT7xSL5OAEllg / 【4K】「BREAK OUT！」- 相川七瀬  ライブ【ハマサイトの夏祭り 2025】\n- 代表動画: https://www.youtube.com/watch?v=toOOPEi5K9g / UCEYq2_O_Sai0j9chJOmcKtQ / 【DJ KOO × 相川七瀬 × 鳳蝶美成 ほかLIVE】「第16回ハマサイトの夏祭り」🏮Tokyo Bon Dance👘2025.8.22 @浜松町駅北口駅前広場\n- 追加動画: 3件 (詳細はapply結果JSON)\n- 曲目候補: 未抽出"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "target_event_name": "第28回新橋こいち祭 盆踊り",
+      "target_page_id": "37b8be04-e762-8126-b202-fabe40211f8a",
+      "target_page_url": "http://www.shinbashi.net/top/koichi/2025/greeting/",
+      "input_rows": 1,
+      "video_count": 32,
+      "song_count": 16,
+      "dates": [
+        "2025-07-24"
+      ],
+      "duplicate_url_count": 0,
+      "all_urls_duplicate": false,
+      "summary_present": true,
+      "apply_status": "ready",
+      "changed": false,
+      "note": "[youtube_evidence] YouTube実績証拠\n- 対象イベント: 第28回新橋こいち祭 盆踊り\n- 検出日付: 2025-07-24\n- 動画数: 32\n- チャンネル: UCNF_5e3ZvziJueTWvTPATGw, UCEYq2_O_Sai0j9chJOmcKtQ\n- 代表動画: https://www.youtube.com/watch?v=6BudhgFz734 / UCNF_5e3ZvziJueTWvTPATGw / 【チャンチキおけさ】（三波春夫）　2025年「第28回新橋こいち祭」盆踊り1日目17　桜田会場第２部　東京都港区\n- 代表動画: https://www.youtube.com/watch?v=1hMGKT4Bpiw / UCNF_5e3ZvziJueTWvTPATGw / 【八木節】（4代目堀込源太）　2025年「第28回新橋こいち祭」盆踊り1日目18　桜田会場第２部　東京都港区\n- 代表動画: https://www.youtube.com/watch?v=-e-erZezdKQ / UCNF_5e3ZvziJueTWvTPATGw / 【北海盆唄】　2025年「第28回新橋こいち祭」盆踊り1日目６　桜田会場第一部　東京都港区\n- 代表動画: https://www.youtube.com/watch?v=qeq2m7KDot0 / UCNF_5e3ZvziJueTWvTPATGw / 【大東京音頭】（金沢明子）　2025年「第28回新橋こいち祭」盆踊り1日目３　桜田会場第一部　東京都港区\n- 代表動画: https://www.youtube.com/watch?v=9TP04lkapKM / UCNF_5e3ZvziJueTWvTPATGw / 【好きになった人】（都はるみ）　2025年「第28回新橋こいち祭」盆踊り1日目14　柳通り第一部　東京都港区\n- 追加動画: 27件 (詳細はapply結果JSON)\n- 曲目候補: 八木節, 北海盆唄, 大東京音頭, 好きになった人, 燃えろ日本の夏祭り, ご祝儀音頭, ふるさと音頭, チャンチキおけさ, ハワイ音頭, 一円玉の旅がらす, 新橋音頭, 新芝音頭, 東京音頭, 火の国太鼓, 炭坑節, 防災音頭",
+      "properties": {
+        "開催パターン詳細": {
+          "rich_text": [
+            {
+              "text": {
+                "content": "2025-07-24 開催実績。2025 [C16]\n7/24 - 25。新橋地区12商店会 「第28回新橋こいち祭 盆踊り」 7月24日(木)-25日(金) 15:00-20:30。\n時間詳細不明。\n\n[youtube_2025_date_backfill] 開催日補正\n- 補正日: 2025-07-24\n- 根拠URL: http://www.shinbashi.net/top/koichi/2025/greeting/\n- URL内一致: 2025年7月24日, 7月24日\n- YouTube検出日付: 2025-07-24\n- 対象動画数: 37\n\n[youtube_evidence] YouTube実績証拠\n- 対象イベント: 第28回新橋こいち祭 盆踊り\n- 検出日付: 2025-07-24\n- 動画数: 37\n- チャンネル: UCNF_5e3ZvziJueTWvTPATGw, UCEYq2_O_Sai0j9chJOmcKtQ\n- 代表動画: https://www.youtube.com/watch?v=YKxapvG8rZ0 / UCNF_5e3ZvziJueTWvTPATGw / 「チャンチキおけさ」（三波春夫）　2025年「第28回新橋こいち祭」盆踊り1日目26　柳通り第二部　東京都港区\n- 代表動画: https://www.youtube.com/watch?v=OarFTYAJ28g / UCNF_5e3ZvziJueTWvTPATGw / 「ハワイ音頭」　2025年「第28回新橋こいち祭」盆踊り1日目25　柳通り第二部　東京都港区\n- 代表動画: https://www.youtube.com/watch?v=ANKM84quG8U / UCNF_5e3ZvziJueTWvTPATGw / 「ハワイ音頭」　2025年「第28回新橋こいち祭」盆踊り1日目31　柳通り第二部　東京都港区\n- 代表動画: https://www.youtube.com/watch?v=jS9q1DLwIGY / UCNF_5e3ZvziJueTWvTPATGw / 「好きになった人」（都はるみ）　2025年「第28回新橋こいち祭」盆踊り1日目19　桜田会場第２部　東京都港区\n- 代表動画: https://www.youtube.com/watch?v=gtpIXYxORPA / UCNF_5e3ZvziJueTWvTPATGw / 「炭坑節」　2025年「第28回新橋こいち祭」盆踊り1日目27　柳通り第二部　東京都港区\n- 追加動画: 32件 (詳細はapply結果JSON)\n- 曲目候補: 八木節, 北海盆唄, 大東京音頭, 好きになった人, 燃えろ日本の夏祭り, ご祝儀音頭, ふるさと音頭, チャンチキおけさ, ハワイ音頭, 一円玉の旅がらす, 新橋音頭, 新芝音頭, 東京音頭, 火の国太鼓, 炭坑節, 防災音頭"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "target_event_name": "自由が丘納涼盆踊り大会",
+      "target_page_id": "37b8be04-e762-817c-93bf-d2fafc0103c3",
+      "target_page_url": "https://tokyofesta.com/23ku/23804/",
+      "input_rows": 1,
+      "video_count": 16,
+      "song_count": 11,
+      "dates": [
+        "2025-07-21"
+      ],
+      "duplicate_url_count": 0,
+      "all_urls_duplicate": false,
+      "summary_present": true,
+      "apply_status": "ready",
+      "changed": false,
+      "note": "[youtube_evidence] YouTube実績証拠\n- 対象イベント: 自由が丘納涼盆踊り大会\n- 検出日付: 2025-07-21\n- 動画数: 16\n- チャンネル: UCNF_5e3ZvziJueTWvTPATGw\n- 代表動画: https://www.youtube.com/watch?v=J9OIs_LHk3Q / UCNF_5e3ZvziJueTWvTPATGw / 「夜に駆ける」（YOASOBI）　2025年自由が丘納涼盆踊り大会3日目３　東京都目黒区\n- 代表動画: https://www.youtube.com/watch?v=aRcMQY1I_Kc / UCNF_5e3ZvziJueTWvTPATGw / 「大東京音頭」　2025年自由が丘納涼盆踊り大会3日目10　東京都目黒区\n- 代表動画: https://www.youtube.com/watch?v=5fs8TGah17c / UCNF_5e3ZvziJueTWvTPATGw / 「希望の轍」　2025年自由が丘納涼盆踊り大会3日目14　東京都目黒区\n- 代表動画: https://www.youtube.com/watch?v=QmtM6dBDCao / UCNF_5e3ZvziJueTWvTPATGw / 「炭坑節」（三橋美智也）　2025年自由が丘納涼盆踊り大会3日目12　東京都目黒区\n- 代表動画: https://www.youtube.com/watch?v=BFJxknJzfDc / UCNF_5e3ZvziJueTWvTPATGw / 【希望の轍】　2025年自由が丘納涼盆踊り大会3日目５　東京都目黒区\n- 追加動画: 11件 (詳細はapply結果JSON)\n- 曲目候補: 夜に駆ける, 大東京音頭, 炭坑節, 希望の轍, 高嶺の花子さん, RPG, やる気で音頭, ホイップるん音頭, 北海盆唄, 東京音頭, 自由が丘小唄",
+      "properties": {
+        "開催パターン詳細": {
+          "rich_text": [
+            {
+              "text": {
+                "content": "2025-07-19〜2025-07-21 開催予定。東京盆踊りマップから確定日として反映。\n2025 [J3]\n7/19 - 21\n自由が丘駅前ロータリー 特設会場\n自由が丘商店街振興組合、自由が丘住区青少年委員会\n「自由が丘納涼盆踊り大会」7月19日(土)-21日(月祝) 18時-21時。\n大好評企画:踊りコンテスト!! 20日(日)。\n「新曲:RPG」\n雨天中止。\n\n[youtube_evidence] 2025実績証拠\n- 対象イベント: 自由が丘納涼盆踊り大会\n- 検出日付: 2025-07-21\n- 動画: https://www.youtube.com/watch?v=mvHqQY2ISJE\n- チャンネル: 和太鼓お祭りチャンネル\n- サムネイル: https://i.ytimg.com/vi/mvHqQY2ISJE/maxresdefault.jpg\n- 曲目候補: 北海盆唄, 炭坑節, 大東京音頭, ダンシング・ヒーロー, やる気で音頭, 自由が丘小唄, ホイップるん音頭, 東京音頭\n\n[youtube_evidence] YouTube shorts追加証拠\n- 対象イベント: 自由が丘納涼盆踊り大会\n- 検出日付: 未抽出\n- 動画数: 2\n- チャンネル: Exploring Japan with Zen\n- 動画: https://www.youtube.com/shorts/s2Kij5MpxrA / Exploring Japan with Zen / Jiyugaoka Bon Dance 2025-03    自由が丘 盆踊り 2025　自由が丘小唄　#shorts\n- 動画: https://www.youtube.com/shorts/ayI7aE9ixWI / Exploring Japan with Zen / Jiyugaoka Bon Dance 2025-04    自由が丘 盆踊り 2025　ダンシングヒーロー　#shorts\n\n[youtube_evidence] YouTube実績証拠\n- 対象イベント: 自由が丘納涼盆踊り大会\n- 検出日付: 2025-07-19, 2025-07-21\n- 動画数: 21\n- チャンネル: UCWz2tM7PAFGT7xSL5OAEllg, UCNF_5e3ZvziJueTWvTPATGw\n- 代表動画: https://www.youtube.com/watch?v=243ylKS374E / UCWz2tM7PAFGT7xSL5OAEllg / 【自由が丘納涼盆踊り 2025】「ダンシングヒーロー」- 荻野目洋子 #盆踊り Jiyugaoka Bon Dance Festival 2025.\n- 代表動画: https://www.youtube.com/watch?v=QMSJZCP5vHc / UCWz2tM7PAFGT7xSL5OAEllg / 【自由が丘納涼盆踊り 2025】「夜に駆ける」- YOASOBI / #盆踊り Jiyugaoka Bon Dance Festival 2025.\n- 代表動画: https://www.youtube.com/watch?v=thydoshsXhg / UCWz2tM7PAFGT7xSL5OAEllg / 【自由が丘納涼盆踊り 2025】「高嶺の花子さん」 back number / #盆踊り Jiyugaoka Bon Dance Festival 2025.\n- 代表動画: https://www.youtube.com/watch?v=Pv41de-FhVU / UCWz2tM7PAFGT7xSL5OAEllg / 【自由が丘納涼盆踊り 2025】アンコールは今年の新曲「RPG」- SEKAI NO OWARI / #盆踊り Jiyugaoka Bon Dance Festival 2025.\n- 代表動画: https://www.youtube.com/watch?v=avCtmdwChnU / UCNF_5e3ZvziJueTWvTPATGw / 「夜に駆ける」　2025年自由が丘納涼盆踊り大会3日目17　東京都目黒区\n- 追加動画: 16件 (詳細はapply結果JSON)\n- 曲目候補: 夜に駆ける, 大東京音頭, 炭坑節, 希望の轍, 高嶺の花子さん, RPG, やる気で音頭, ホイップるん音頭, 北海盆唄, 東京音頭, 自由が丘小唄"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "target_event_name": "西久保八幡神社 盆踊り",
+      "target_page_id": "37b8be04-e762-817c-82dc-f8359f4d146b",
+      "target_page_url": "http://www.hachimanjinja.or.jp/main/?p=5604",
+      "input_rows": 1,
+      "video_count": 37,
+      "song_count": 35,
+      "dates": [
+        "2025-08-09"
+      ],
+      "duplicate_url_count": 0,
+      "all_urls_duplicate": false,
+      "summary_present": false,
+      "apply_status": "ready",
+      "changed": true,
+      "note": "[youtube_evidence] YouTube実績証拠\n- 対象イベント: 西久保八幡神社 盆踊り\n- 検出日付: 2025-08-09\n- 動画数: 37\n- チャンネル: UCNF_5e3ZvziJueTWvTPATGw\n- 代表動画: https://www.youtube.com/watch?v=a_aBEFjxjQs / UCNF_5e3ZvziJueTWvTPATGw / 【八木節】（二代目鈴木正夫）　2025年西久保八幡神社例大祭盆踊り33　東京都港区\n- 代表動画: https://www.youtube.com/watch?v=5TsAPQzVncc / UCNF_5e3ZvziJueTWvTPATGw / 【八木節】（鈴木正夫）　2025年西久保八幡神社例大祭盆踊り15　東京都港区\n- 代表動画: https://www.youtube.com/watch?v=D6H4dOcZiPE / UCNF_5e3ZvziJueTWvTPATGw / 【大東京音頭】（金沢明子）　2025年西久保八幡神社例大祭盆踊り３　東京都港区\n- 代表動画: https://www.youtube.com/watch?v=sw-8NReroAQ / UCNF_5e3ZvziJueTWvTPATGw / 【花笠音頭】（金沢明子）　2025年西久保八幡神社例大祭盆踊り34　東京都港区\n- 代表動画: https://www.youtube.com/watch?v=Qb9Z9k2sMP4 / UCNF_5e3ZvziJueTWvTPATGw / お富さん　2025年西久保八幡神社例大祭盆踊り11　東京都港区\n- 追加動画: 32件 (詳細はapply結果JSON)\n- 曲目候補: 八木節, 大東京音頭, お富さん, さくら音頭, ひろしのさくら音頭, まつの木小唄, サザエさん, ステテコシャンシャン, ダンシング・ヒーロー, チャンチキおけさ, ドラえもん音頭, ドンパン節, ニッポンワッショイ, ハワイ音頭, バハマママ, ヨッ!太鼓持ち, 夜に駆ける, 大江戸東京音頭, 終 大角会和太鼓演奏, 好きになった人, 恋のブギウギナイト, 新二十一世紀音頭, 日本の夏ごよみ, 日本よいとこ, 東京ばやし, 東京タワー音頭, 東京音頭, 火の国太鼓, 炭坑節, 百年桜, 盆ギリ恋歌, 花笠音頭, 銀座カンカン娘, 福よ来い, 1+1の音頭",
+      "properties": {
+        "開催パターン詳細": {
+          "rich_text": [
+            {
+              "text": {
+                "content": "2025-08-09 開催実績。2025 [C21]\n8/9 - 10。「西久保八幡神社 盆踊り」 \n8月9日(土)-10日(日)。\n踊り時間不明(2025年は 18:00-20:30)。\n(8/12掲)\n\n[youtube_2025_date_backfill] 開催日補正\n- 補正日: 2025-08-09\n- 根拠URL: http://www.hachimanjinja.or.jp/main/?p=5604\n- URL内一致: 8月9日\n- YouTube検出日付: 2025-08-09\n- 対象動画数: 37\n\n[youtube_evidence] YouTube実績証拠\n- 対象イベント: 西久保八幡神社 盆踊り\n- 検出日付: 2025-08-09\n- 動画数: 37\n- チャンネル: UCNF_5e3ZvziJueTWvTPATGw\n- 代表動画: https://www.youtube.com/watch?v=a_aBEFjxjQs / UCNF_5e3ZvziJueTWvTPATGw / 【八木節】（二代目鈴木正夫）　2025年西久保八幡神社例大祭盆踊り33　東京都港区\n- 代表動画: https://www.youtube.com/watch?v=5TsAPQzVncc / UCNF_5e3ZvziJueTWvTPATGw / 【八木節】（鈴木正夫）　2025年西久保八幡神社例大祭盆踊り15　東京都港区\n- 代表動画: https://www.youtube.com/watch?v=D6H4dOcZiPE / UCNF_5e3ZvziJueTWvTPATGw / 【大東京音頭】（金沢明子）　2025年西久保八幡神社例大祭盆踊り３　東京都港区\n- 代表動画: https://www.youtube.com/watch?v=sw-8NReroAQ / UCNF_5e3ZvziJueTWvTPATGw / 【花笠音頭】（金沢明子）　2025年西久保八幡神社例大祭盆踊り34　東京都港区\n- 代表動画: https://www.youtube.com/watch?v=Qb9Z9k2sMP4 / UCNF_5e3ZvziJueTWvTPATGw / お富さん　2025年西久保八幡神社例大祭盆踊り11　東京都港区\n- 追加動画: 32件 (詳細はapply結果JSON)\n- 曲目候補: 八木節, 大東京音頭, お富さん, さくら音頭, ひろしのさくら音頭, まつの木小唄, サザエさん, ステテコシャンシャン, ダンシング・ヒーロー, チャンチキおけさ, ドラえもん音頭, ドンパン節, ニッポンワッショイ, ハワイ音頭, バハマママ, ヨッ!太鼓持ち, 夜に駆ける, 大江戸東京音頭, 終 大角会和太鼓演奏, 好きになった人, 恋のブギウギナイト, 新二十一世紀音頭, 日本の夏ごよみ, 日本よいとこ, 東京ばやし, 東京タワー音頭, 東京音頭, 火の国太鼓, 炭坑節, 百年桜, 盆ギリ恋歌, 花笠音頭, 銀座カンカン娘, 福よ来い, 1+1の音頭"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "target_event_name": "郡上おどり in 青山 2025",
+      "target_page_id": "37a8be04-e762-817d-88aa-e736f4b1d652",
+      "target_page_url": "https://aoyama-gaienmae.or.jp/news/20250617/",
+      "input_rows": 1,
+      "video_count": 35,
+      "song_count": 2,
+      "dates": [
+        "2025-06-20"
+      ],
+      "duplicate_url_count": 0,
+      "all_urls_duplicate": false,
+      "summary_present": true,
+      "apply_status": "ready",
+      "changed": false,
+      "note": "[youtube_evidence] YouTube実績証拠\n- 対象イベント: 郡上おどり in 青山 2025\n- 検出日付: 2025-06-20\n- 動画数: 35\n- チャンネル: UCEYq2_O_Sai0j9chJOmcKtQ, UCNF_5e3ZvziJueTWvTPATGw\n- 代表動画: https://www.youtube.com/watch?v=y-LtTdBS9-Y / UCEYq2_O_Sai0j9chJOmcKtQ / 【郡上おどりin青山 2025】「げんげんばらばら～猫の子」🏮Tokyo Bon Dance Festival👘2025.6.20 @秩父宮ラグビー場 駐車場\n- 代表動画: https://www.youtube.com/watch?v=7rNIuRvIlZI / UCEYq2_O_Sai0j9chJOmcKtQ / 【郡上おどりin青山 2025】「さわぎ～郡上甚句～まつさか」🏮Tokyo Bon Dance Festival👘2025.6.20 @秩父宮ラグビー場 駐車場\n- 代表動画: https://www.youtube.com/watch?v=Yc2li1qRm4o / UCEYq2_O_Sai0j9chJOmcKtQ / 【郡上おどりin青山 2025】「春駒～やっちく～かわさき」🏮Tokyo Bon Dance Festival👘2025.6.20 @秩父宮ラグビー場 駐車場\n- 代表動画: https://www.youtube.com/watch?v=rkCJC07Qz8E / UCNF_5e3ZvziJueTWvTPATGw / かわさき　2025年郡上おどりin青山2日目10　秩父宮ラグビー場駐車場　東京都港区\n- 代表動画: https://www.youtube.com/watch?v=GuGH1hgtGxs / UCNF_5e3ZvziJueTWvTPATGw / かわさき　2025年郡上おどりin青山2日目２　秩父宮ラグビー場駐車場　東京都港区\n- 追加動画: 30件 (詳細はapply結果JSON)\n- 曲目候補: 古調かわさき, 甚句",
+      "properties": {
+        "開催パターン詳細": {
+          "rich_text": [
+            {
+              "text": {
+                "content": "青山外苑前商店街公式の郡上おどり2025詳細。既存2026年ページとは別に2025年分として登録。\n\n[youtube_evidence] YouTube実績証拠\n- 対象イベント: 郡上おどり in 青山 2025\n- 検出日付: 2025-06-20\n- 動画数: 40\n- チャンネル: UCKCspf_NrY16rUnODmBqOWA, UCWz2tM7PAFGT7xSL5OAEllg, UCEYq2_O_Sai0j9chJOmcKtQ, UCNF_5e3ZvziJueTWvTPATGw\n- 代表動画: https://www.youtube.com/watch?v=1__iWUspkTI / UCKCspf_NrY16rUnODmBqOWA / [4K]🇯🇵 郡上おどり in 青山 2025 全曲｜東京で酔いしれる日本三大盆踊り / Gujo Odori dance held in Aoyama, Tokyo.\n- 代表動画: https://www.youtube.com/watch?v=YpU3OWCpAFk / UCKCspf_NrY16rUnODmBqOWA / [4K]🇯🇵 郡上おどり in 青山｜かわさき｜春駒｜ 2曲抜粋 2025年 初日 盆踊り / Gujo Odori dance held in Aoyama, Tokyo.\n- 代表動画: https://www.youtube.com/watch?v=-zbuEpc9mL8 / UCWz2tM7PAFGT7xSL5OAEllg / 【4K】郡上おどり in 青山 ”最終日フィナーレは万雷の拍手とともに終了” / 盆踊り「かわさき / 三百 / 春駒 / 甚句 / まつさか 」Gujo Odori in Aoyama.\n- 代表動画: https://www.youtube.com/watch?v=hQ0UFL9bwnM / UCWz2tM7PAFGT7xSL5OAEllg / 【4K】郡上おどり in 青山 ”生歌 × 生演奏は控えめに言って最高!!” / 盆踊り「春駒 / やっちく / かわさき / さわぎ / 猫の手 」Gujo Odori in Aoyama.\n- 代表動画: https://www.youtube.com/watch?v=XSrb-8_-ok4 / UCEYq2_O_Sai0j9chJOmcKtQ / 【郡上おどりin青山 2025】「かわさき～三百」🏮Tokyo Bon Dance Festival👘2025.6.20 @秩父宮ラグビー場 駐車場\n- 追加動画: 35件 (詳細はapply結果JSON)\n- 曲目候補: 古調かわさき, 甚句"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "target_event_name": "飛鳥山盆踊り",
+      "target_page_id": "3778be04-e762-812e-928a-f15e1ff8c083",
+      "target_page_url": "https://asukayamabonodori.tokyo/",
+      "input_rows": 1,
+      "video_count": 4,
+      "song_count": 0,
+      "dates": [
+        "2025-07-05"
+      ],
+      "duplicate_url_count": 0,
+      "all_urls_duplicate": false,
+      "summary_present": false,
+      "apply_status": "ready",
+      "changed": true,
+      "note": "[youtube_evidence] YouTube実績証拠\n- 対象イベント: 飛鳥山盆踊り\n- 検出日付: 2025-07-05\n- 動画数: 4\n- チャンネル: UCWz2tM7PAFGT7xSL5OAEllg\n- 代表動画: https://www.youtube.com/watch?v=WMp9Dm3p4bI / UCWz2tM7PAFGT7xSL5OAEllg / 【飛鳥山盆踊り 2025】「ジャンボリミッキー」で盆踊り  / Asukayama Park Bon Dance Festival　#盆踊り\n- 代表動画: https://www.youtube.com/watch?v=hwD8ELI2iPo / UCWz2tM7PAFGT7xSL5OAEllg / 【飛鳥山盆踊り 2025】「ジンギスカン」で盆踊り Dschinghis Khan / Asukayama Park Bon Dance Festival　#盆踊り\n- 代表動画: https://www.youtube.com/watch?v=zJ1nyw5-Y4A / UCWz2tM7PAFGT7xSL5OAEllg / 【飛鳥山盆踊り 2025】「盆ギリ恋歌」サザンオールスターズ で盆踊り / Asukayama Park Bon Dance Festival　盆踊り\n- 代表動画: https://www.youtube.com/watch?v=v_eLkKWnyA8 / UCWz2tM7PAFGT7xSL5OAEllg / 【飛鳥山盆踊り 2025】生歌「好きになった人」で盆踊り 都はるみ / Asukayama Park Bon Dance Festival　盆踊り\n- 曲目候補: 未抽出",
+      "properties": {
+        "開催パターン詳細": {
+          "rich_text": [
+            {
+              "text": {
+                "content": "[youtube_2025_date_backfill] 開催日補正\n- 補正日: 2025-07-05\n- 根拠URL: https://asukayamabonodori.tokyo/\n- URL内一致: 2025.07.05, 7月5日, 7/5\n- YouTube検出日付: 2025-07-05, 2025-12-20\n- 対象動画数: 4\n\n[youtube_evidence] YouTube実績証拠\n- 対象イベント: 飛鳥山盆踊り\n- 検出日付: 2025-07-05\n- 動画数: 4\n- チャンネル: UCWz2tM7PAFGT7xSL5OAEllg\n- 代表動画: https://www.youtube.com/watch?v=WMp9Dm3p4bI / UCWz2tM7PAFGT7xSL5OAEllg / 【飛鳥山盆踊り 2025】「ジャンボリミッキー」で盆踊り  / Asukayama Park Bon Dance Festival　#盆踊り\n- 代表動画: https://www.youtube.com/watch?v=hwD8ELI2iPo / UCWz2tM7PAFGT7xSL5OAEllg / 【飛鳥山盆踊り 2025】「ジンギスカン」で盆踊り Dschinghis Khan / Asukayama Park Bon Dance Festival　#盆踊り\n- 代表動画: https://www.youtube.com/watch?v=zJ1nyw5-Y4A / UCWz2tM7PAFGT7xSL5OAEllg / 【飛鳥山盆踊り 2025】「盆ギリ恋歌」サザンオールスターズ で盆踊り / Asukayama Park Bon Dance Festival　盆踊り\n- 代表動画: https://www.youtube.com/watch?v=v_eLkKWnyA8 / UCWz2tM7PAFGT7xSL5OAEllg / 【飛鳥山盆踊り 2025】生歌「好きになった人」で盆踊り 都はるみ / Asukayama Park Bon Dance Festival　盆踊り\n- 曲目候補: 未抽出"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "skipped": []
+}

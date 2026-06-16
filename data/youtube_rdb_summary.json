@@ -1,0 +1,20 @@
+{
+  "generated_by": "build_youtube_rdb.py",
+  "generated_at": "2026-06-16T04:02:14.741075+00:00",
+  "database": "data/youtube_evidence.sqlite",
+  "sources": {
+    "voices": "data/voices.json",
+    "registry": "data/youtube_channel_registry.json",
+    "active_review": "data/youtube_active_video_review.json",
+    "setlist_occurrences": "data/youtube_setlist_occurrences.json"
+  },
+  "table_counts": {
+    "channels": 15,
+    "videos": 4211,
+    "video_official_urls": 1135,
+    "video_event_matches": 635,
+    "setlist_occurrences": 2001,
+    "occurrence_videos": 2403,
+    "setlist_songs": 36641
+  }
+}

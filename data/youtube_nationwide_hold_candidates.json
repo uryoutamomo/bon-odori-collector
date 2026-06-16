@@ -1,0 +1,175 @@
+{
+  "generated_by": "build_youtube_nationwide_hold.py",
+  "generated_at": "2026-06-15T15:48:22.089336+00:00",
+  "source": "data/youtube_active_video_review.json",
+  "candidate_count": 1,
+  "video_count": 18,
+  "candidates": [
+    {
+      "event_name": "横浜開港祭 BON ODORI",
+      "venue": "パシフィコ横浜プラザ広場",
+      "event_date": "2026-06-01",
+      "scope_status": "hold_for_nationwide_expansion",
+      "reason": "現行の東京23区公開DB範囲外のため本DBには登録しない",
+      "video_count": 18,
+      "channels": [
+        "Tokyo Lonely Walker",
+        "祭のきせき 盆踊り"
+      ],
+      "official_urls": [
+        "https://goo.gl/maps/kSAEbnkyHSchcccY6",
+        "https://goo.gl/maps/Lcbc9w9Jik87gSb26",
+        "https://x.com/walkingfilmlove"
+      ],
+      "setlist_summaries": [
+        "横浜開港祭 BON ODORI(14)"
+      ],
+      "videos": [
+        {
+          "video_id": "4VDWvK5tmnI",
+          "video_url": "https://www.youtube.com/watch?v=4VDWvK5tmnI",
+          "title": "ダンシング・ヒーローで盆踊り 横浜開港祭2026 みなとみらい / Bon Odori at the Yokohama Port Festival 2026. [4K]",
+          "channel": "Tokyo Lonely Walker",
+          "published_at": "2026-06-01T04:52:00+00:00",
+          "detected_event_date": "2026-06-01"
+        },
+        {
+          "video_id": "RKXEbu8M7lg",
+          "video_url": "https://www.youtube.com/watch?v=RKXEbu8M7lg",
+          "title": "盆踊り｜ゆず - 夏色 横浜開港祭2026 / Bon Odori at the Yokohama Port Festival 2026. [4K]🇯🇵",
+          "channel": "Tokyo Lonely Walker",
+          "published_at": "2026-06-01T17:00:10+00:00",
+          "detected_event_date": "2026-06-01"
+        },
+        {
+          "video_id": "ZU2e0H9XXvc",
+          "video_url": "https://www.youtube.com/watch?v=ZU2e0H9XXvc",
+          "title": "サザン盆踊りで盛り上がる！希望の轍丨横浜開港祭2026 サザンオールスターズ / Bon Odori at the Yokohama Port Festival 2026. [4K]🇯🇵",
+          "channel": "Tokyo Lonely Walker",
+          "published_at": "2026-06-02T01:00:38+00:00",
+          "detected_event_date": "2026-06-01"
+        },
+        {
+          "video_id": "iB0H6DCDbDY",
+          "video_url": "https://www.youtube.com/watch?v=iB0H6DCDbDY",
+          "title": "[4K]🇯🇵 横浜開港祭 盆踊り ダンシングヒーロー ｜サザン｜よこはまアラメヤ音頭│セカオワ│野毛山節  他 2026.6.1 / Japanese Bon dance in Yokohama.",
+          "channel": "Tokyo Lonely Walker",
+          "published_at": "2026-06-03T01:25:57+00:00",
+          "detected_event_date": "2026-06-01"
+        },
+        {
+          "video_id": "byFyWmWVg7g",
+          "video_url": "https://www.youtube.com/watch?v=byFyWmWVg7g",
+          "title": "13 YMCA 　横浜開港祭 BON ODORI　20260601",
+          "channel": "祭のきせき 盆踊り",
+          "published_at": "2026-06-05T01:00:26+00:00",
+          "detected_event_date": "2026-06-01"
+        },
+        {
+          "video_id": "Yt9OXm1M9bE",
+          "video_url": "https://www.youtube.com/watch?v=Yt9OXm1M9bE",
+          "title": "14 炎と森のカーニバル 　横浜開港祭 BON ODORI　20260601",
+          "channel": "祭のきせき 盆踊り",
+          "published_at": "2026-06-05T02:00:01+00:00",
+          "detected_event_date": "2026-06-01"
+        },
+        {
+          "video_id": "P1JViv3w9xc",
+          "video_url": "https://www.youtube.com/watch?v=P1JViv3w9xc",
+          "title": "15 ダンシングヒーロー 　横浜開港祭 BON ODORI　20260601",
+          "channel": "祭のきせき 盆踊り",
+          "published_at": "2026-06-05T03:00:13+00:00",
+          "detected_event_date": "2026-06-01"
+        },
+        {
+          "video_id": "9guti4r23aI",
+          "video_url": "https://www.youtube.com/watch?v=9guti4r23aI",
+          "title": "16 EZ DO DANCE 　横浜開港祭 BON ODORI　20260601",
+          "channel": "祭のきせき 盆踊り",
+          "published_at": "2026-06-05T04:00:37+00:00",
+          "detected_event_date": "2026-06-01"
+        },
+        {
+          "video_id": "QcUh2syTVpw",
+          "video_url": "https://www.youtube.com/watch?v=QcUh2syTVpw",
+          "title": "17 野毛山節   DJ帝 mix 　横浜開港祭 BON ODORI　20260601",
+          "channel": "祭のきせき 盆踊り",
+          "published_at": "2026-06-05T15:00:22+00:00",
+          "detected_event_date": "2026-06-01"
+        },
+        {
+          "video_id": "lKIFoe8NgvA",
+          "video_url": "https://www.youtube.com/watch?v=lKIFoe8NgvA",
+          "title": "18 浜っ娘音頭 　横浜開港祭 BON ODORI　20260601",
+          "channel": "祭のきせき 盆踊り",
+          "published_at": "2026-06-05T16:00:17+00:00",
+          "detected_event_date": "2026-06-01"
+        },
+        {
+          "video_id": "zYYzOZUEcGU",
+          "video_url": "https://www.youtube.com/watch?v=zYYzOZUEcGU",
+          "title": "19 Septmber 　横浜開港祭 BON ODORI　20260601",
+          "channel": "祭のきせき 盆踊り",
+          "published_at": "2026-06-05T17:00:32+00:00",
+          "detected_event_date": "2026-06-01"
+        },
+        {
+          "video_id": "stvVBO2W0CI",
+          "video_url": "https://www.youtube.com/watch?v=stvVBO2W0CI",
+          "title": "20 希望の轍 　横浜開港祭 BON ODORI　20260601",
+          "channel": "祭のきせき 盆踊り",
+          "published_at": "2026-06-05T18:00:23+00:00",
+          "detected_event_date": "2026-06-01"
+        },
+        {
+          "video_id": "e_rYMmfRaVE",
+          "video_url": "https://www.youtube.com/watch?v=e_rYMmfRaVE",
+          "title": "21 ダンシングヒーロー 　横浜開港祭 BON ODORI　20260601",
+          "channel": "祭のきせき 盆踊り",
+          "published_at": "2026-06-05T19:00:09+00:00",
+          "detected_event_date": "2026-06-01"
+        },
+        {
+          "video_id": "_XvxNzDV7Ew",
+          "video_url": "https://www.youtube.com/watch?v=_XvxNzDV7Ew",
+          "title": "22 よこはまアラメヤ音頭（３部） 　横浜開港祭 BON ODORI　20260601",
+          "channel": "祭のきせき 盆踊り",
+          "published_at": "2026-06-05T20:00:36+00:00",
+          "detected_event_date": "2026-06-01"
+        },
+        {
+          "video_id": "hNpEA6ORzOo",
+          "video_url": "https://www.youtube.com/watch?v=hNpEA6ORzOo",
+          "title": "04 鹿児島おはら節 　横浜開港祭 BON ODORI　20260601",
+          "channel": "祭のきせき　盆踊り",
+          "published_at": "2026-06-05T01:00:10+00:00",
+          "detected_event_date": "2026-06-01"
+        },
+        {
+          "video_id": "Uak6YO04Eds",
+          "video_url": "https://www.youtube.com/watch?v=Uak6YO04Eds",
+          "title": "05 春駒 　横浜開港祭 BON ODORI　20260601",
+          "channel": "祭のきせき　盆踊り",
+          "published_at": "2026-06-05T02:00:38+00:00",
+          "detected_event_date": "2026-06-01"
+        },
+        {
+          "video_id": "YcwxnLspGMg",
+          "video_url": "https://www.youtube.com/watch?v=YcwxnLspGMg",
+          "title": "06 希望の轍 　横浜開港祭 BON ODORI　20260601",
+          "channel": "祭のきせき　盆踊り",
+          "published_at": "2026-06-05T03:00:33+00:00",
+          "detected_event_date": "2026-06-01"
+        },
+        {
+          "video_id": "YvBnjsZO0oo",
+          "video_url": "https://www.youtube.com/watch?v=YvBnjsZO0oo",
+          "title": "07 青と夏 　横浜開港祭 BON ODORI　20260601",
+          "channel": "祭のきせき　盆踊り",
+          "published_at": "2026-06-05T04:00:10+00:00",
+          "detected_event_date": "2026-06-01"
+        }
+      ]
+    }
+  ]
+}

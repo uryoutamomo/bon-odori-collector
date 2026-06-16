@@ -65,7 +65,7 @@ def append_next_tasks_note():
         heading("YouTube次課題整理"),
         paragraph(
             f"更新: {now} / 署名: おと（Codex）。"
-            "active 7チャンネル収集と動画レビュー表作成後の次アクション整理。"
+            "active 7チャンネル収集後の主要処理を一巡。"
             "YouTube関連作業は引き続きこのページを入口にする。"
         ),
         bullet(
@@ -104,13 +104,21 @@ def append_next_tasks_note():
             "YouTube単独では本DB登録/既存イベント追記をしない。"
         ),
         bullet(
-            "保留: out_of_scope 18件は横浜など現行公開DB範囲外。全国展開候補として保持し、東京23区公開DBには入れない。"
+            "渋谷再確認: shibuyadogenzaka.com/?p=6827 はHTTP 200とRESTリンクを返すが、"
+            "通常本文は空、REST本文はWordPress重大エラーHTMLのため公式確認ソースとして使わない。"
         ),
         bullet(
-            "設計判断: Notion本DBでYouTube証拠をどこに置くかを決める。短期はイベント詳細欄の[youtube_evidence]追記、"
-            "中期は証拠DB/occurrence側への分離が候補。"
+            "保留: out_of_scope 18件は data/youtube_nationwide_hold_candidates.json / .md に集約。"
+            "横浜開港祭 BON ODORI 2026の1候補として保持し、東京23区公開DBには入れない。"
         ),
-        bullet("参照: data/youtube_active_video_review.md と data/youtube_active_video_review.json。"),
+        bullet(
+            "設計判断: docs/youtube-evidence-architecture.md を追加。短期はイベント詳細欄の[youtube_evidence]追記、"
+            "中期はYouTube証拠DB/occurrence側への分離を推奨。"
+        ),
+        bullet(
+            "参照: data/youtube_active_video_review.md、data/youtube_nationwide_hold_candidates.md、"
+            "docs/youtube-evidence-architecture.md。"
+        ),
         bullet(f"入口: {YOUTUBE_TASK_PAGE_URL}"),
     ]
     return notion_request("PATCH", f"/blocks/{YOUTUBE_TASK_PAGE_ID}/children", {"children": children})
@@ -125,8 +133,8 @@ def main():
         raise SystemExit("NOTION_API_TOKEN is not set")
 
     current_text = (
-        "YouTube次課題: review_video_evidence 10件は自由が丘2件・丸の内4件を反映済み。"
-        "次は渋谷holdの公式確認、またはYouTube証拠DB/occurrence分離設計を進める。"
+        "YouTube次課題: active 7チャンネル収集後の既存追記・公式確認・動画証拠・全国候補保持は一巡。"
+        "渋谷公式確認と対象カテゴリ外候補は保留、次は必要時にYouTube証拠DB/occurrence分離へ進む。"
     )
 
     if args.dry_run:

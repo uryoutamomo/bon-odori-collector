@@ -1,0 +1,112 @@
+{
+  "generated_by": "apply_youtube_2025_official_candidate_existing_updates.py",
+  "generated_at": "2026-06-16T02:04:03.799907+00:00",
+  "mode": "dry_run",
+  "apply_performed": false,
+  "source": "data/youtube_2025_official_candidate_validation.json",
+  "ready_count": 3,
+  "changed_count": 0,
+  "applied_count": 0,
+  "updates": [
+    {
+      "target_event_name": "六本木ヒルズ盆踊り",
+      "target_page_id": "3818be04-e762-81d7-90ea-d80be3d10960",
+      "target_page_url": "https://www.roppongihills.com/events/2025/08/0478.html",
+      "primary_url": "https://www.roppongihills.com/events/2025/08/0478.html",
+      "detected_dates": [
+        "2025-08-23",
+        "2025-08-24"
+      ],
+      "video_count": 10,
+      "duplicate_url_count": 10,
+      "all_urls_duplicate": true,
+      "summary_present": true,
+      "changed": false,
+      "note": "[youtube_evidence] YouTube 2025公式URL確認済み証拠\n- 対象イベント: 六本木ヒルズ盆踊り\n- 検出日付: 2025-08-23, 2025-08-24\n- 動画数: 10\n- 公式確認URL: https://www.roppongihills.com/events/2025/08/0478.html\n- チャンネルID: UCEYq2_O_Sai0j9chJOmcKtQ\n- 代表動画: https://www.youtube.com/watch?v=Iuw5CwPNUxY / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY1）】「日本の芸能：『加賀万歳』金沢市指無形民俗文化財 」2025.8.23 @六本木ヒルズアリーナ Roppongi Hills Arena\n- 代表動画: https://www.youtube.com/watch?v=O2_FxIRlZA8 / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY1）】「六本人音頭～花火音頭」六本木じろう with 里野鈴妹 ＆ 増田吏桜🎤2025.8.23 @六本木ヒルズアリーナ\n- 代表動画: https://www.youtube.com/watch?v=7E8P3YCST2Q / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY1）】「六本木音頭～炭坑節」2025.8.23 @六本木ヒルズアリーナ\n- 代表動画: https://www.youtube.com/watch?v=ixU_B6mszvE / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY1）】「河内おとこ節～夏祭り」　里野鈴妹 ＆ 増田吏桜（さとのすずめ ＆ ますだりお）🎤2025.8.23 @六本木ヒルズアリーナ\n- 代表動画: https://www.youtube.com/watch?v=JeYPdZc9rsA / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY1）】「ドラえもん音頭 Doraemon ondo」 2025.8.23 @六本木ヒルズアリーナ\n- 追加動画: 5件（詳細はapply結果JSON）",
+      "properties": {
+        "開催パターン詳細": {
+          "rich_text": [
+            {
+              "text": {
+                "content": "[youtube_evidence] YouTube 2025公式URL確認済み証拠\n- 対象イベント: 六本木ヒルズ盆踊り\n- 検出日付: 2025-08-23, 2025-08-24\n- 動画数: 10\n- 公式確認URL: https://www.roppongihills.com/events/2025/08/0478.html\n- 判断: 六本木ヒルズ公式ページで2025-08-22〜2025-08-24開催を確認。22日は前夜祭、盆踊り動画は23/24。\n- 代表動画: https://www.youtube.com/watch?v=Iuw5CwPNUxY / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY1）】「日本の芸能：『加賀万歳』金沢市指無形民俗文化財 」2025.8.23 @六本木ヒルズアリーナ Roppongi Hills Arena\n- 代表動画: https://www.youtube.com/watch?v=O2_FxIRlZA8 / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY1）】「六本人音頭～花火音頭」六本木じろう with 里野鈴妹 ＆ 増田吏桜🎤2025.8.23 @六本木ヒルズアリーナ\n- 代表動画: https://www.youtube.com/watch?v=7E8P3YCST2Q / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY1）】「六本木音頭～炭坑節」2025.8.23 @六本木ヒルズアリーナ\n- 代表動画: https://www.youtube.com/watch?v=ixU_B6mszvE / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY1）】「河内おとこ節～夏祭り」　里野鈴妹 ＆ 増田吏桜（さとのすずめ ＆ ますだりお）🎤2025.8.23 @六本木ヒルズアリーナ\n- 代表動画: https://www.youtube.com/watch?v=JeYPdZc9rsA / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY1）】「ドラえもん音頭 Doraemon ondo」 2025.8.23 @六本木ヒルズアリーナ\n- 代表動画: https://www.youtube.com/watch?v=qvMiiQScrYU / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY1）】「東京音頭～炭坑節」六本木じろう with 里野鈴妹 ＆ 増田吏桜🎤 2025.8.23 @六本木ヒルズアリーナ\n- 追加動画: 2件（詳細はapply結果JSON）\n\n[youtube_evidence] YouTube 2025公式URL確認済み証拠\n- 対象イベント: 六本木ヒルズ盆踊り\n- 検出日付: 2025-08-23, 2025-08-24\n- 動画数: 10\n- 公式確認URL: https://www.roppongihills.com/events/2025/08/0478.html\n- 判断: 六本木ヒルズ公式ページで2025-08-22〜2025-08-24開催を確認。22日は前夜祭、盆踊り動画は23/24。\n- 動画: https://www.youtube.com/watch?v=Iuw5CwPNUxY / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY1）】「日本の芸能：『加賀万歳』金沢市指無形民俗文化財 」2025.8.23 @六本木ヒルズアリーナ Roppongi Hills Arena\n- 動画: https://www.youtube.com/watch?v=O2_FxIRlZA8 / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY1）】「六本人音頭～花火音頭」六本木じろう with 里野鈴妹 ＆ 増田吏桜🎤2025.8.23 @六本木ヒルズアリーナ\n- 動画: https://www.youtube.com/watch?v=7E8P3YCST2Q / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY1）】「六本木音頭～炭坑節」2025.8.23 @六本木ヒルズアリーナ\n- 動画: https://www.youtube.com/watch?v=ixU_B6mszvE / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY1）】「河内おとこ節～夏祭り」　里野鈴妹 ＆ 増田吏桜（さとのすずめ "
+              }
+            },
+            {
+              "text": {
+                "content": "＆ ますだりお）🎤2025.8.23 @六本木ヒルズアリーナ\n- 動画: https://www.youtube.com/watch?v=JeYPdZc9rsA / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY1）】「ドラえもん音頭 Doraemon ondo」 2025.8.23 @六本木ヒルズアリーナ\n- 動画: https://www.youtube.com/watch?v=qvMiiQScrYU / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY1）】「東京音頭～炭坑節」六本木じろう with 里野鈴妹 ＆ 増田吏桜🎤 2025.8.23 @六本木ヒルズアリーナ\n- 動画: https://www.youtube.com/watch?v=EE1JlcxJbLw / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY1）】「六本人音頭（アンコール）」六本木じろう with 里野鈴妹 ＆ 増田吏桜🎤 2025.8.23 @六本木ヒルズアリーナ\n- 動画: https://www.youtube.com/watch?v=xu4VXlbfrJU / 2025-08-24 / 【六本木ヒルズ盆踊り 2025（DAY2）】日本の芸能：「半浦の秋祭り／半浦青年団（石川県七尾市能登島半浦町）」 2025.8.24 @六本木ヒルズアリーナ\n\n[youtube_evidence] YouTube 2025公式URL確認済み証拠\n- 対象イベント: 六本木ヒルズ盆踊り\n- 検出日付: 2025-08-23, 2025-08-24\n- 動画数: 10\n- 公式確認URL: https://www.roppongihills.com/events/2025/08/0478.html\n- 判断: 六本木ヒルズ公式ページで2025-08-22〜2025-08-24開催を確認。22日は前夜祭、盆踊り動画は23/24。\n- 動画: https://www.youtube.com/watch?v=Iuw5CwPNUxY / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY1）】「日本の芸能：『加賀万歳』金沢市指無形民俗文化財 」2025.8.23 @六本木ヒルズアリーナ Roppongi Hills Arena\n- 動画: https://www.youtube.com/watch?v=O2_FxIRlZA8 / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY1）】「六本人音頭～花火音頭」六本木じろう with 里野鈴妹 ＆ 増田吏桜🎤2025.8.23 @六本木ヒルズアリーナ\n- 動画: https://www.youtube.com/watch?v=7E8P3YCST2Q / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY1）】「六本木音頭～炭坑節」2025.8.23 @六本木ヒルズアリーナ\n- 動画: https://www.youtube.com/watch?v=ixU_B6mszvE / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY1）】「河内おとこ節～夏祭り」　里野鈴妹 ＆ 増田吏桜（さとのすずめ ＆ ますだりお）🎤2025.8.23 @六本木ヒルズアリーナ\n- 動画: https://www.youtube.com/watch?v=JeYPdZc9rsA / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY1）】「ドラえもん音頭 Doraemon ondo」 2025.8.23 @六本木ヒルズアリーナ\n- 動画: https://www.youtube.com/watch?v=qvMiiQScrYU / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY1）】「東京音頭～炭坑節」六本木じろう with 里野鈴妹 ＆ 増田吏桜🎤 2025.8.23 @六本木ヒルズアリーナ\n- 動画: https://www.youtube.com/watch?v=EE1JlcxJbLw / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY1）】「六本人音頭（アンコール）」六本木じろう with 里野鈴妹 ＆ 増田吏桜🎤 2025.8.23 @六本木ヒルズアリーナ\n- 動画: https://www.youtube.com/watch?v=xu4VXlbfrJU / 2025-08-24 / 【六"
+              }
+            },
+            {
+              "text": {
+                "content": "本木ヒルズ盆踊り 2025（DAY2）】日本の芸能：「半浦の秋祭り／半浦青年団（石川県七尾市能登島半浦町）」 2025.8.24 @六本木ヒルズアリーナ\n- 動画: https://www.youtube.com/watch?v=AViOtdpRo7w / 2025-08-24 / 【六本木ヒルズ盆踊り 2025（DAY2）】「ドラえもん音頭 Doraemon ondo」 2025.8.24 @六本木ヒルズアリーナ\n- 動画: https://www.youtube.com/watch?v=uv6Tn8WT_Ck / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY2）】「六本人音頭（アンコール）」六本木じろう with 里野鈴妹 ＆ 増田吏桜🎤 2025.8.24 @六本木ヒルズアリーナ"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "target_event_name": "山王音頭と民踊大会",
+      "target_page_id": "3788be04-e762-8112-ae7e-eac6e8acb44b",
+      "target_page_url": "https://www.tenkamatsuri.jp/minyo/",
+      "primary_url": "https://www.tenkamatsuri.jp/minyo/",
+      "detected_dates": [
+        "2025-06-13"
+      ],
+      "video_count": 6,
+      "duplicate_url_count": 5,
+      "all_urls_duplicate": false,
+      "summary_present": true,
+      "changed": false,
+      "note": "[youtube_evidence] YouTube 2025公式URL確認済み証拠\n- 対象イベント: 山王音頭と民踊大会\n- 検出日付: 2025-06-13\n- 動画数: 6\n- 公式確認URL: https://www.tenkamatsuri.jp/minyo/\n- チャンネルID: UCEYq2_O_Sai0j9chJOmcKtQ\n- 代表動画: https://www.youtube.com/watch?v=3gmg_bltmu0 / 2025-06-13 / 赤坂・日枝神社🏮盆踊り(1/6)「白浜音頭～東京音頭～ドンパン節」Tokyo Bon Dance👘2025.6.13 @山王パークタワー公開空地\n- 代表動画: https://www.youtube.com/watch?v=RLOHnnauvS8 / 2025-06-13 / 赤坂・日枝神社🏮盆踊り(2/6)「炭坑節～大東京音頭～相馬盆唄」Tokyo Bon Dance👘2025.6.13 @山王パークタワー公開空地\n- 代表動画: https://www.youtube.com/watch?v=wvlo7_K2B0A / 2025-06-13 / 赤坂・日枝神社🏮盆踊り(3/6)「八木節～花笠踊り～おこさ節～相馬甚句」Tokyo Bon Dance👘2025.6.13 @山王パークタワー公開空地\n- 代表動画: https://www.youtube.com/watch?v=hrKOXrI7Zcc / 2025-06-13 / 赤坂・日枝神社🏮盆踊り(4/6)「東京おどり～水戸黄門おどり～ニッポン・ワッショイ」Tokyo Bon Dance👘2025.6.13 @山王パークタワー公開空地\n- 代表動画: https://www.youtube.com/watch?v=ed5hv9b8cNg / 2025-06-13 / 赤坂・日枝神社🏮盆踊り(5/6)「山王音頭～千代田踊り～ダンシング・ヒーロー」Tokyo Bon Dance👘2025.6.13 @山王パークタワー公開空地\n- 追加動画: 1件（詳細はapply結果JSON）",
+      "properties": {
+        "開催パターン詳細": {
+          "rich_text": [
+            {
+              "text": {
+                "content": "毎年6/13〜15開催（日枝神社「山王祭」の納涼大会として）。曜日は年により変動\n\n[youtube_evidence] YouTube実績証拠\n- 対象イベント: 山王音頭と民踊大会\n- 検出日付: 2026-06-13, 2026-06-14, 2026-06-15\n- 動画数: 16\n- チャンネル: Tokyo Lonely Walker, 和太鼓お祭りCH, 祭のきせき 盆踊り, shu channel\n- 代表動画: https://www.youtube.com/watch?v=_WhO6Kh08sE / Tokyo Lonely Walker / 盆踊りシーズン開幕！日枝神社 山王祭 盆踊り｜東京音頭 2026年 初日 / Dancing the traditional Japanese Tokyo Ondo. [4K]🇯🇵\n- 代表動画: https://www.youtube.com/watch?v=84q8qeG029A / Tokyo Lonely Walker / 盆踊り開幕！赤坂日枝神社 山王祭 盆踊り｜サザン｜東京音頭｜炭坑節｜山王音頭｜八木節 他 / Traditional Japanese Bon Dance at Hie Shrine. [4K]🇯🇵\n- 代表動画: https://www.youtube.com/watch?v=-H-T164L3QM / 和太鼓お祭りCH / 【速報】東京音頭　【赤坂日枝神社】　山王祭盆踊り１　「山王音頭と民踊大会」の風景　2026年6月13日\n- 代表動画: https://www.youtube.com/watch?v=hDckpEGkzTI / 和太鼓お祭りCH / 炭坑節　【赤坂日枝神社】 山王祭 盆踊り２　「山王音頭と民踊大会」の風景　2026年6月13日\n- 代表動画: https://www.youtube.com/watch?v=qd96HMCNCm8 / 和太鼓お祭りCH / 「大東京音頭」　赤坂日枝神社山王祭盆踊り３　「山王音頭と民踊大会」の風景　2026年6月13日\n- 追加動画: 11件 (詳細は data/youtube_active_existing_event_update_apply_result.json)\n- 関連URL: https://goo.gl/maps/kSAEbnkyHSchcccY6, https://maps.app.goo.gl/BbkXn5qwcQ1PM7aQ9, https://x.com/walkingfilmlove, https://www.tenkamatsuri.jp/minyo/\n- 曲目候補: 東京音頭, 炭坑節, 大東京音頭, ドンパン節, 白浜音頭, 八木節, 花笠音頭, おこさ節, 相馬甚句, 東京おどり, 山王音頭, 千代田おどり, 水戸黄門おどり\n\n[youtube_evidence] YouTube 2025公式URL確認済み証拠\n- 対象イベント: 山王音頭と民踊大会\n- 検出日付: 2025-06-13\n- 動画数: 6\n- 公式確認URL: https://www.tenkamatsuri.jp/minyo/\n- チャンネルID: UCEYq2_O_Sai0j9chJOmcKtQ\n- 代表動画: https://www.youtube.com/watch?v=3gmg_bltmu0 / 2025-06-13 / 赤坂・日枝神社🏮盆踊り(1/6)「白浜音頭～東京音頭～ドンパン節」Tokyo Bon Dance👘2025.6.13 @山王パークタワー公開空地\n- 代表動画: https://www.youtube.com/watch?v=RLOHnnauvS8 / 2025-06-13 / 赤坂・日枝神社🏮盆踊り(2/6)「炭坑節～大東京音頭～相馬盆唄」Tokyo Bon Dance👘2025.6.13 @山王パークタワー公開空地\n- 代表動画: https://www.youtube.com/watch?v=wvlo7_K2B0A / 2025-06-13 / 赤坂・日枝神社🏮盆踊り(3/6)「八木節～花笠踊り～おこさ節～相馬甚句」Tokyo Bon Dance👘2025.6.13 @山王パークタワー公開空地\n- 代表動画: https://www.youtube.com/watch?v=hrKOXrI7Zcc / 2025-06-13 / 赤坂・日枝神社🏮盆踊り(4/6)"
+              }
+            },
+            {
+              "text": {
+                "content": "「東京おどり～水戸黄門おどり～ニッポン・ワッショイ」Tokyo Bon Dance👘2025.6.13 @山王パークタワー公開空地\n- 代表動画: https://www.youtube.com/watch?v=ed5hv9b8cNg / 2025-06-13 / 赤坂・日枝神社🏮盆踊り(5/6)「山王音頭～千代田踊り～ダンシング・ヒーロー」Tokyo Bon Dance👘2025.6.13 @山王パークタワー公開空地\n- 追加動画: 1件（詳細はapply結果JSON）"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "target_event_name": "丸の内de盆踊り",
+      "target_page_id": "3808be04-e762-8157-84ba-d94bcedced97",
+      "target_page_url": "https://www.marunouchi.com/pickup/event/6763/",
+      "primary_url": "https://www.marunouchi.com/pickup/event/6763/",
+      "detected_dates": [
+        "2025-07-25",
+        "2025-07-26"
+      ],
+      "video_count": 4,
+      "duplicate_url_count": 4,
+      "all_urls_duplicate": true,
+      "summary_present": true,
+      "changed": false,
+      "note": "[youtube_evidence] YouTube 2025公式URL確認済み証拠\n- 対象イベント: 丸の内de盆踊り\n- 検出日付: 2025-07-25, 2025-07-26\n- 動画数: 4\n- 公式確認URL: https://www.marunouchi.com/pickup/event/6763/\n- チャンネルID: UCSHoRoW171uEytgOcKkKU2Q, UCEYq2_O_Sai0j9chJOmcKtQ\n- 代表動画: https://www.youtube.com/watch?v=seY6P_Ngq4E / 2025-07-26 / Marunouchi Bon Odori Dance festival PART 1  /  丸の内盆踊り 2025 パート１\n- 代表動画: https://www.youtube.com/watch?v=wsnxABvy3BM / 2025-07-26 / Marunouchi Bon Odori Dance festival PART 2  /  丸の内盆踊り 2025 パート2\n- 代表動画: https://www.youtube.com/watch?v=Otv4gDwv8io / 2025-07-26 / Marunouchi Bon Odori Dance festival DJ J-POP Time  /  丸の内盆踊り 2025 DJ J-POP Time\n- 代表動画: https://www.youtube.com/watch?v=Ig4Ocvre8Y0 / 2025-07-25 / 【東京丸の内盆踊り2025】『ドンパン節～毬と殿様～にっぽんチャチャチャ～民謡お国巡り音頭～松の木小唄～龍馬おどり』 👘Tokyo Bon Dance 🏮2025.7.25 @東京駅丸の内口・行幸通り",
+      "properties": {
+        "開催パターン詳細": {
+          "rich_text": [
+            {
+              "text": {
+                "content": "2025-07-25〜2025-07-26、行幸通りで開催。公式ページ「丸の内夏祭り2025」in 行幸通り内の丸の内de盆踊り。7/25 盆踊り 17:00-18:15 / 19:00-19:40 / 20:00-21:00、7/26 盆踊り 18:00-19:00 / 19:20-20:10 / 20:40-21:00。\n\n[youtube_evidence] 2025実績証拠\n- 動画: https://www.youtube.com/watch?v=_cggqDBTu20\n- チャンネル: shu channel\n- サムネイル: https://i.ytimg.com/vi/_cggqDBTu20/maxresdefault.jpg\n- 曲目候補: 丸の内音頭, 東京音頭, 大東京音頭, ドンパン節, 炭坑節, お江戸日本橋, 八木節\n\n[youtube_evidence] YouTube公式確認済み追加証拠\n- 対象イベント: 丸の内de盆踊り\n- 検出日付: 2025-07-26\n- 動画数: 3\n- チャンネル: Exploring Japan with Zen\n- 動画: https://www.youtube.com/watch?v=seY6P_Ngq4E / Exploring Japan with Zen / Marunouchi Bon Odori Dance festival PART 1  /  丸の内盆踊り 2025 パート１\n- 動画: https://www.youtube.com/watch?v=wsnxABvy3BM / Exploring Japan with Zen / Marunouchi Bon Odori Dance festival PART 2  /  丸の内盆踊り 2025 パート2\n- 動画: https://www.youtube.com/watch?v=Otv4gDwv8io / Exploring Japan with Zen / Marunouchi Bon Odori Dance festival DJ J-POP Time  /  丸の内盆踊り 2025 DJ J-POP Time\n- 公式確認URL: https://www.marunouchi.com/pickup/event/6763/\n\n[youtube_evidence] YouTube shorts追加証拠\n- 対象イベント: 丸の内de盆踊り\n- 検出日付: 未抽出\n- 動画数: 4\n- チャンネル: Exploring Japan with Zen\n- 動画: https://www.youtube.com/shorts/X7b8ZKhyOck / Exploring Japan with Zen / Marunouchi Bon Dance, Tokyo 01    丸の内 盆踊り 01    #shorts\n- 動画: https://www.youtube.com/shorts/Gr5qUEwYzdo / Exploring Japan with Zen / Marunouchi Bon Dance, Tokyo 02    丸の内 盆踊り 02   #shorts\n- 動画: https://www.youtube.com/shorts/DqLOwuakCjA / Exploring Japan with Zen / Marunouchi Bon Dance, 03 DJ TIme    丸の内 盆踊り 03 DJ TIme   #shorts\n- 動画: https://www.youtube.com/shorts/yG8WH6hESdg / Exploring Japan with Zen / Marunouchi Bon Dance, 04 DJ TIme    丸の内 盆踊り 04 DJ TIme    #shorts\n\n[youtube_evidence] YouTube実績証拠\n- 対象イベント: 丸の内de盆踊り\n- 検出日付: 2025-07-25\n- 動画数: 5\n- チャンネル: UCEYq2_O_Sai0j9chJOmcKtQ\n- 代表動画: https://www.youtube.com/watch?v=gUe2mxcuoVE / UCEYq2_O_Sai0j9chJOmcKtQ / 【東京丸の内盆踊り2025】『ダンシング・ヒーロー～どんとこいブギ！～輝き音頭～"
+              }
+            },
+            {
+              "text": {
+                "content": "閉め太鼓』[7/7]  👘Tokyo Bon Dance 🏮2025.7.25 @東京駅丸の内口・行幸通り\n- 代表動画: https://www.youtube.com/watch?v=XIjIQ_sAGe0 / UCEYq2_O_Sai0j9chJOmcKtQ / 【東京丸の内盆踊り2025】『ドダレバチ（津軽甚句）～丸の内音頭～東京音頭～大東京音頭～ドンパン節～』[5/7]  👘Tokyo Bon Dance 🏮2025.7.25 @東京駅丸の内口・行幸通り\n- 代表動画: https://www.youtube.com/watch?v=Ukk2t5iSotc / UCEYq2_O_Sai0j9chJOmcKtQ / 【東京丸の内盆踊り2025】『花笠踊り～郡上節～ゆかた音頭～相馬盆唄～千代田踊り』[2/7]  👘Tokyo Bon Dance 🏮2025.7.25 @東京駅丸の内口・行幸通り\n- 代表動画: https://www.youtube.com/watch?v=NpkVCDS0zC0 / UCEYq2_O_Sai0j9chJOmcKtQ / 【東京丸の内盆踊り2025】『銀座カンカン娘～毬と殿様～にっぽんチャチャチャ～民謡お国巡り音頭』 [3/7] 👘Tokyo Bon Dance 🏮2025.7.25 @東京駅丸の内口・行幸通り\n- 代表動画: https://www.youtube.com/watch?v=0nZz5aWpLHg / UCEYq2_O_Sai0j9chJOmcKtQ / 【東京丸の内盆踊り2025】『龍馬おどり～令和おどり～ダンシング・ヒーロー～どんとこいブギ！〜』[4/7]  👘Tokyo Bon Dance 🏮2025.7.25 @東京駅丸の内口・行幸通り\n- 曲目候補: 未抽出\n\n[youtube_evidence] YouTube 2025公式URL確認済み証拠\n- 対象イベント: 丸の内de盆踊り\n- 検出日付: 2025-07-25, 2025-07-26\n- 動画数: 4\n- 公式確認URL: https://www.marunouchi.com/pickup/event/6763/\n- チャンネルID: UCSHoRoW171uEytgOcKkKU2Q, UCEYq2_O_Sai0j9chJOmcKtQ\n- 代表動画: https://www.youtube.com/watch?v=seY6P_Ngq4E / 2025-07-26 / Marunouchi Bon Odori Dance festival PART 1  /  丸の内盆踊り 2025 パート１\n- 代表動画: https://www.youtube.com/watch?v=wsnxABvy3BM / 2025-07-26 / Marunouchi Bon Odori Dance festival PART 2  /  丸の内盆踊り 2025 パート2\n- 代表動画: https://www.youtube.com/watch?v=Otv4gDwv8io / 2025-07-26 / Marunouchi Bon Odori Dance festival DJ J-POP Time  /  丸の内盆踊り 2025 DJ J-POP Time\n- 代表動画: https://www.youtube.com/watch?v=Ig4Ocvre8Y0 / 2025-07-25 / 【東京丸の内盆踊り2025】『ドンパン節～毬と殿様～にっぽんチャチャチャ～民謡お国巡り音頭～松の木小唄～龍馬おどり』 👘Tokyo Bon Dance 🏮2025.7.25 @東京駅丸の内口・行幸通り"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

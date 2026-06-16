@@ -130,6 +130,16 @@ def dedupe_occurrences(rows):
     return output
 
 
+def date_matches_public_event(detected_date, match):
+    if not detected_date or not match:
+        return True
+    start = match.get("date") or ""
+    end = match.get("date_end") or start
+    if not start:
+        return True
+    return start <= detected_date <= end
+
+
 def latest_active_voices(voices, registry, max_per_channel=15):
     active_ids = active_channel_ids(registry)
     grouped = defaultdict(list)
@@ -180,6 +190,10 @@ def build_review(voices, registry, public_events, youtube_setlists, max_per_chan
             "description_excerpt": text[:1000],
             "source_channel_title": voice.get("youtube_channel_title") or voice.get("name") or "",
         }
+        detected_event_date = parse_youtube_event_date(text, title) or ""
+        matched_public_event = match_public_event(candidate, public_events)
+        if not date_matches_public_event(detected_event_date, matched_public_event):
+            matched_public_event = None
         row = {
             "video_id": video_id_from_url(url),
             "video_url": url,
@@ -188,10 +202,10 @@ def build_review(voices, registry, public_events, youtube_setlists, max_per_chan
             "channel_id": voice.get("youtube_channel_id") or voice.get("account") or "",
             "channel_title": voice.get("youtube_channel_title") or voice.get("name") or "",
             "published_at": voice.get("date") or "",
-            "detected_event_date": parse_youtube_event_date(text, title) or "",
+            "detected_event_date": detected_event_date,
             "has_bon_context": has_bon_context(voice),
             "official_urls": official_urls(voice),
-            "matched_public_event": match_public_event(candidate, public_events),
+            "matched_public_event": matched_public_event,
             "setlist_occurrences": dedupe_occurrences(setlist_by_url.get(url, [])),
             "out_of_scope": is_out_of_scope(candidate),
             "description_excerpt": text[:240],

@@ -1,6 +1,12 @@
 import unittest
 
-from apply_youtube_active_existing_event_updates import build_updates, event_summary_note, rich_text_prop, skipped_rows
+from apply_youtube_active_existing_event_updates import (
+    build_updates,
+    event_summary_note,
+    has_existing_youtube_summary,
+    rich_text_prop,
+    skipped_rows,
+)
 
 
 class FakeApi:
@@ -129,6 +135,53 @@ class ApplyYoutubeActiveExistingEventUpdatesTest(unittest.TestCase):
 
         self.assertEqual(len(prop["rich_text"]), 2)
         self.assertEqual(len(prop["rich_text"][0]["text"]["content"]), 1900)
+
+    def test_detects_existing_youtube_summary_for_same_event(self):
+        detail = "\n".join(
+            [
+                "[youtube_evidence] YouTube実績証拠",
+                "- 対象イベント: シタマチ.ふるさと盆踊り大会",
+                "- 動画数: 79",
+            ]
+        )
+
+        self.assertTrue(has_existing_youtube_summary(detail, "シタマチ.ふるさと盆踊り大会"))
+
+    def test_does_not_match_other_event_summary(self):
+        detail = "\n".join(
+            [
+                "[youtube_evidence] YouTube実績証拠",
+                "- 対象イベント: 別イベント",
+                "- 動画数: 79",
+            ]
+        )
+
+        self.assertFalse(has_existing_youtube_summary(detail, "シタマチ.ふるさと盆踊り大会"))
+
+    def test_does_not_change_when_summary_for_same_event_already_exists(self):
+        plan = {
+            "rows": [
+                {
+                    "status": "ready",
+                    "target_event_name": "シタマチ.ふるさと盆踊り大会",
+                    "target_page_id": "page-id",
+                    "videos": [{"url": "https://www.youtube.com/watch?v=new", "channel": "和太鼓", "title": "東京音頭"}],
+                    "songs": ["東京音頭"],
+                }
+            ]
+        }
+        existing = "\n".join(
+            [
+                "[youtube_evidence] YouTube実績証拠",
+                "- 対象イベント: シタマチ.ふるさと盆踊り大会",
+                "- 動画数: 79",
+            ]
+        )
+
+        updates = build_updates(FakeApi({"page-id": page(existing)}), plan)
+
+        self.assertFalse(updates[0]["changed"])
+        self.assertTrue(updates[0]["summary_present"])
 
 
 if __name__ == "__main__":

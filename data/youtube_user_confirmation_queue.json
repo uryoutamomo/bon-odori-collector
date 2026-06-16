@@ -1,0 +1,73 @@
+{
+  "generated_by": "oto_codex",
+  "generated_at": "2026-06-16",
+  "purpose": "YouTube保留案件のうち、ユーザーの掲載基準判断が必要なもの",
+  "items": [
+    {
+      "id": "shibuya_kagoshima_ohara_2026",
+      "label": "渋谷・鹿児島おはら祭",
+      "video_url": "https://www.youtube.com/watch?v=Jfm2HZ7P_F0",
+      "detected_event_date": "2026-05-17",
+      "decision_needed": "盆踊り本DBの対象にするか、周辺の踊り/祭りイベントとして別扱いにするか",
+      "recommended_decision": "hold_as_adjacent_dance_event",
+      "options": [
+        "include_in_main_event_db",
+        "hold_as_adjacent_dance_event",
+        "hold_for_nationwide_or_adjacent_scope"
+      ],
+      "current_decision": "hold_as_adjacent_dance_event",
+      "decided_at": "2026-06-16",
+      "decided_by": "内田さん"
+    },
+    {
+      "id": "pokemon_go_fest_tokyo_2026_pikachu_ondo",
+      "label": "Pokémon GO Fest TOKYO 2026 ピカチュウ音頭",
+      "video_url": "https://www.youtube.com/watch?v=ICpHigFP0Ko",
+      "detected_event_date": "2026-05-31",
+      "decision_needed": "ブランドイベント内の音頭を盆踊り本DBへ載せるか",
+      "recommended_decision": "exclude_from_main_event_db_keep_as_song_phenomenon",
+      "options": [
+        "include_in_main_event_db",
+        "keep_as_song_phenomenon_only",
+        "exclude"
+      ],
+      "current_decision": "keep_as_song_phenomenon_only",
+      "decided_at": "2026-06-16",
+      "decided_by": "内田さん"
+    },
+    {
+      "id": "shibuya_bon_odori_2025",
+      "label": "渋谷盆踊り2025",
+      "video_url": "https://www.youtube.com/watch?v=CTA9El6Hmfg",
+      "detected_event_date": "2025-08-02",
+      "official_url_candidate": "https://shibuyadogenzaka.com/?p=6827",
+      "decision_needed": "公式確認が取れるまで本登録保留にするか、未公式実績候補として別保持するか",
+      "recommended_decision": "hold_main_registration_keep_unofficial_evidence_candidate",
+      "options": [
+        "hold_until_official_confirmation",
+        "hold_main_registration_keep_unofficial_evidence_candidate",
+        "allow_registration_from_multiple_youtube_evidence"
+      ],
+      "current_decision": "hold_main_registration_keep_unofficial_evidence_candidate",
+      "decided_at": "2026-06-16",
+      "decided_by": "内田さん"
+    },
+    {
+      "id": "yokohama_kaikosai_bon_odori_2026",
+      "label": "横浜開港祭 BON ODORI",
+      "video_count": 18,
+      "detected_event_date": "2026-06-01",
+      "venue": "パシフィコ横浜プラザ広場",
+      "decision_needed": "全国展開候補として保持するだけでよいか、登録対象範囲を広げるか",
+      "recommended_decision": "hold_for_nationwide_expansion_only",
+      "options": [
+        "hold_for_nationwide_expansion_only",
+        "start_nationwide_event_db_flow",
+        "include_in_current_public_db"
+      ],
+      "current_decision": "hold_for_nationwide_expansion_only",
+      "decided_at": "2026-06-16",
+      "decided_by": "内田さん"
+    }
+  ]
+}

@@ -8,5 +8,8 @@ token.json
 # ローカルのテスト出力（X収集の実験ダンプ）
 data/x_voices_experiment.json
 
+# ローカル再生成のRDB/証拠スナップショット
+data/*.sqlite
+
 __pycache__/
 *.pyc

@@ -70,6 +70,29 @@ class BuildYoutubeActiveVideoReviewTest(unittest.TestCase):
         self.assertEqual(row["action"], "needs_official_confirmation")
         self.assertEqual(row["official_urls"], ["https://example.com/official"])
 
+    def test_does_not_match_public_event_when_detected_date_is_outside_event_range(self):
+        review = build_review(
+            [
+                {
+                    "source": "youtube",
+                    "youtube_channel_id": "UC_ACTIVE",
+                    "youtube_channel_title": "Active",
+                    "name": "Active",
+                    "title": "山王音頭と民踊大会 2025年6月13日",
+                    "text": "盆踊り",
+                    "url": "https://www.youtube.com/watch?v=date1",
+                    "date": "2025-06-14T00:00:00+00:00",
+                }
+            ],
+            {"channels": [{"channel_id": "UC_ACTIVE", "status": "active", "collection_enabled": True}]},
+            [{"name": "山王音頭と民踊大会", "venue": "山王パークタワー公開空地", "date": "2026-06-13"}],
+            {"occurrences": []},
+        )
+
+        row = review["rows"][0]
+        self.assertEqual(row["matched_public_event"], None)
+        self.assertEqual(row["action"], "review_video_evidence")
+
     def test_marks_out_of_scope_setlist_video_as_out_of_scope(self):
         review = build_review(
             [
