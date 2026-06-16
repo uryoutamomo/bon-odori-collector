@@ -1633,7 +1633,7 @@
     "song_occurrence": null
   },
   {
-    "name": "イベント名未確認（晴海ふ頭公園）",
+    "name": "晴海ふ頭公園盆踊り大会",
     "name_confirmed": true,
     "venue": "晴海ふ頭公園",
     "area": "中央区",
@@ -1645,9 +1645,9 @@
     "address": "東京都中央区晴海五丁目",
     "lat": 35.649506,
     "lng": 139.775055,
-    "date": "2025-07-12",
-    "date_end": null,
-    "status": "終了",
+    "date": "2026-07-11",
+    "date_end": "2026-07-12",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -1657,6 +1657,10 @@
     "hints": [
       [
         7,
+        11
+      ],
+      [
+        7,
         12
       ]
     ],
@@ -1664,7 +1668,7 @@
       "7": "中旬"
     },
     "description": "晴海ふ頭公園で行われる地域の盆踊り。7月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "[youtube_2025_date_backfill] 開催日補正\n- 補正日: 2025-07-12\n- 根拠URL: https://tokyofesta.com/23ku/23612/\n- URL内一致: 2025/07/12, 2025.07.12, 2025年7月12日\n- YouTube検出日付: 2025-07-12\n- 対象動画数: 24\n\n[youtube_evidence] YouTube実績証拠\n- 対象イベント: イベント名未確認（晴海ふ頭公園）\n- 検出日付: 2025-07-12\n- 動画数: 24\n- チャンネル: UCNF_5e3ZvziJueTWvTPATGw, UCWz2tM7PAFGT7xSL5OAEllg\n- 代表動画: https://www.youtube.com/watch?v=O4FLEzwOcLI / UCNF_5e3ZvziJueTWvTPATGw / 【きよしのズンドコ節】（氷川きよし）　2025年第1回晴海ふ頭公園盆踊り大会14　HARUMI FLAG\n- 代表動画: https://www.youtube.com/watch?v=GvEARgJJnwE / UCNF_5e3ZvziJueTWvTPATGw / 【きよしのズンドコ節】（氷川きよし）　2025年第1回晴海ふ頭公園盆踊り大会22　HARUMI FLAG\n- 代表動画: https://www.youtube.com/watch?v=jA7McwUYOf8 / UCNF_5e3ZvziJueTWvTPATGw / 【きよしのズンドコ節】（氷川きよし）　2025年第1回晴海ふ頭公園盆踊り大会６　HARUMI FLAG\n- 代表動画: https://www.youtube.com/watch?v=zDHmFTkBtwM / UCNF_5e3ZvziJueTWvTPATGw / 【ダンシング・ヒーロー】（荻野目洋子）　2025年第1回晴海ふ頭公園盆踊り大会12　HARUMI FLAG\n- 代表動画: https://www.youtube.com/watch?v=OndrtlJbO3M / UCNF_5e3ZvziJueTWvTPATGw / 【ダンシング・ヒーロー】（荻野目洋子）　2025年第1回晴海ふ頭公園盆踊り大会20　HARUMI FLAG\n- 追加動画: 19件 (詳細はapply結果JSON)\n- 曲目候補: きよしのズンドコ節, ダンシングヒーロー, バハマ・ママ, 令和音頭, 東京音頭, これがお江戸の盆ダンス, ジャンボリミッキー, 炭坑節",
+    "detail": "2026-07-11〜2026-07-12 開催予定。X投稿で「晴海ふ頭公園盆踊り大会」7/11(土)・12(日) 18:30-20:30、会場 晴海ふ頭公園と確認。晴海フラッグ自治会の街のお祭りとして案内。根拠URL: https://x.com/natsutr_bon/status/2055135919615938908\n\n[youtube_2025_date_backfill] 開催日補正\n- 補正日: 2025-07-12\n- 根拠URL: https://tokyofesta.com/23ku/23612/\n- URL内一致: 2025/07/12, 2025.07.12, 2025年7月12日\n- YouTube検出日付: 2025-07-12\n- 対象動画数: 24\n\n[youtube_evidence] YouTube実績証拠\n- 対象イベント: イベント名未確認（晴海ふ頭公園）\n- 検出日付: 2025-07-12\n- 動画数: 24\n- チャンネル: UCNF_5e3ZvziJueTWvTPATGw, UCWz2tM7PAFGT7xSL5OAEllg\n- 代表動画: https://www.youtube.com/watch?v=O4FLEzwOcLI / UCNF_5e3ZvziJueTWvTPATGw / 【きよしのズンドコ節】（氷川きよし）　2025年第1回晴海ふ頭公園盆踊り大会14　HARUMI FLAG\n- 代表動画: https://www.youtube.com/watch?v=GvEARgJJnwE / UCNF_5e3ZvziJueTWvTPATGw / 【きよしのズンドコ節】（氷川きよし）　2025年第1回晴海ふ頭公園盆踊り大会22　HARUMI FLAG\n- 代表動画: https://www.youtube.com/watch?v=jA7McwUYOf8 / UCNF_5e3ZvziJueTWvTPATGw / 【きよしのズンドコ節】（氷川きよし）　2025年第1回晴海ふ頭公園盆踊り大会６　HARUMI FLAG\n- 代表動画: https://www.youtube.com/watch?v=zDHmFTkBtwM / UCNF_5e3ZvziJueTWvTPATGw / 【ダンシング・ヒーロー】（荻野目洋子）　2025年第1回晴海ふ頭公園盆踊り大会12　HARUMI FLAG\n- 代表動画: https://www.youtube.com/watch?v=OndrtlJbO3M / UCNF_5e3ZvziJueTWvTPATGw / 【ダンシング・ヒーロー】（荻野目洋子）　2025年第1回晴海ふ頭公園盆踊り大会20　HARUMI FLAG\n- 追加動画: 19件 (詳細はapply結果JSON)\n- 曲目候補: きよしのズンドコ節, ダンシングヒーロー, バハマ・ママ, 令和音頭, 東京音頭, これがお江戸の盆ダンス, ジャンボリミッキー, 炭坑節",
     "youtube_evidence": [],
     "songs": [
       {
@@ -6803,26 +6807,26 @@
     "address": "東京都品川区西品川1-27-20",
     "lat": 35.60915,
     "lng": 139.728943,
-    "date": null,
+    "date": "2026-05-23",
     "date_end": null,
-    "status": "未確認",
+    "status": "終了",
     "date_confidence": {
-      "level": "unknown",
-      "label": "未確認",
-      "description": "開催日はまだ確認できていません"
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
     },
     "date_candidates": [],
     "hints": [
       [
         5,
-        15
+        23
       ]
     ],
     "jun": {
       "5": "中旬"
     },
     "description": "しながわ中央公園で開かれる新感覚の盆踊りフェス「BONDO」。デコトラのステージやキッチンカー、フリーマーケットも同時開催。",
-    "detail": null,
+    "detail": "2026-05-23 開催実績。しながわ観光協会公式「盆踊 〜BONDO〜」で、しながわ中央公園ヘリポート広場、10:20-18:30開催を確認。盆踊りは16:30〜第1部・17:40〜第2部。根拠URL: https://shinagawa-kanko.or.jp/event/bondo2026/",
     "youtube_evidence": [],
     "songs": [],
     "song_occurrence": null
@@ -11527,26 +11531,30 @@
     "address": "東京都渋谷区神宮前6-20-10",
     "lat": 35.662376,
     "lng": 139.702011,
-    "date": null,
-    "date_end": null,
-    "status": "未確認",
+    "date": "2026-09-26",
+    "date_end": "2026-09-27",
+    "status": "確認済み",
     "date_confidence": {
-      "level": "unknown",
-      "label": "未確認",
-      "description": "開催日はまだ確認できていません"
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
     },
     "date_candidates": [],
     "hints": [
       [
         9,
-        15
+        26
+      ],
+      [
+        9,
+        27
       ]
     ],
     "jun": {
       "9": "中旬"
     },
     "description": "渋谷・宮下公園の芝生の上で開かれる現代型の盆踊り。買い物帰りにふらっと輪に入れる、渋谷らしいボンダンス。",
-    "detail": null,
+    "detail": "2026-09-26〜2026-09-27 開催予定。SHIBUYA MIYASHITA PARK BON DANCE 2026として、MIYASHITA PARK 4階 シブヤ宮下ローンスクエアで13:00〜21:00開催予定。雨天中止。住所・アクセス根拠URL: https://www.miyashita-park.tokyo/access/",
     "youtube_evidence": [],
     "songs": [],
     "song_occurrence": null
@@ -12080,9 +12088,9 @@
     "address": "東京都足立区西綾瀬2-1-18",
     "lat": 35.761593,
     "lng": 139.814835,
-    "date": "2025-06-21",
+    "date": "2026-06-20",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -12092,14 +12100,14 @@
     "hints": [
       [
         6,
-        21
+        20
       ]
     ],
     "jun": {
       "6": "下旬"
     },
     "description": "西綾瀬町会 夏祭り盆踊り大会は、五反野コミュニティ公園で開かれる屋外型の盆踊り・夏の地域イベント。6月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "足立区の令和7年度盆踊り・まつり情報。17時開始。\n\n[retrospective_harvest] 追加証拠\n- 検出名: 足立区の盆踊りで最も早い盆踊り\n- 検出日付: 2026-06-20\n- 出典: https://x.com/Dk725aNpscBwpEa/status/2065082668396827008",
+    "detail": "2026-06-20 開催予定。X投稿で「西綾瀬町会盆踊り」会場 五反野コミュニティセンター横の公園、令和8年6月20日17:30〜と確認。根拠URL: https://x.com/Dk725aNpscBwpEa/status/2065082668396827008",
     "youtube_evidence": [],
     "songs": [],
     "song_occurrence": null
