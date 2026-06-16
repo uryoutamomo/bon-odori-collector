@@ -296,6 +296,47 @@
           "https://www.youtube.com/watch?v=LhM7yggtrZ0",
           "https://x.com/ochiai_hrs/status/2063912862880534810"
         ]
+      },
+      {
+        "name": "花笠踊り",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 40,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      }
+    ]
+  },
+  {
+    "name": "神田明神納涼祭り アニソン盆踊り",
+    "venue": "神田明神境内",
+    "area": "千代田区",
+    "date": "2025-08-08",
+    "songs": [
+      {
+        "name": "ほっぺちゃん音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "元気ハツラツ音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       }
     ]
   },
@@ -306,117 +347,203 @@
     "date": "2025-07-25",
     "songs": [
       {
-        "name": "令和おどり",
-        "confidence": "hint",
-        "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": false
-      },
-      {
-        "name": "千代田踊り",
-        "confidence": "hint",
-        "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": false
-      },
-      {
-        "name": "民謡お国巡り音頭",
-        "confidence": "hint",
-        "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": false
-      },
-      {
-        "name": "津軽甚句",
-        "confidence": "hint",
-        "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": false
-      },
-      {
-        "name": "花笠踊り",
-        "confidence": "hint",
-        "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": false
-      },
-      {
-        "name": "輝き音頭",
-        "confidence": "hint",
-        "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": false
-      },
-      {
-        "name": "郡上節",
-        "confidence": "hint",
-        "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": false
-      },
-      {
-        "name": "龍馬おどり",
-        "confidence": "hint",
-        "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": false
-      },
-      {
         "name": "ドンパン節",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "八木節",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "大東京音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "東京音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "炭坑節",
         "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "令和おどり",
+        "confidence": "hint",
         "source_count": 1
+      },
+      {
+        "name": "千代田踊り",
+        "confidence": "hint",
+        "source_count": 1
+      },
+      {
+        "name": "民謡お国巡り音頭",
+        "confidence": "hint",
+        "source_count": 1
+      },
+      {
+        "name": "津軽甚句",
+        "confidence": "hint",
+        "source_count": 1
+      },
+      {
+        "name": "花笠踊り",
+        "confidence": "hint",
+        "source_count": 1
+      },
+      {
+        "name": "輝き音頭",
+        "confidence": "hint",
+        "source_count": 1
+      },
+      {
+        "name": "郡上節",
+        "confidence": "hint",
+        "source_count": 1
+      },
+      {
+        "name": "龍馬おどり",
+        "confidence": "hint",
+        "source_count": 1
+      }
+    ]
+  },
+  {
+    "name": "大銀座盆踊り",
+    "venue": "中央通り（銀座1丁目〜8丁目）",
+    "area": "中央区",
+    "date": "2025-08-02",
+    "songs": [
+      {
+        "name": "東京音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "銀座ときめき音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "銀座音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      }
+    ]
+  },
+  {
+    "name": "イベント名未確認（晴海ふ頭公園）",
+    "venue": "晴海ふ頭公園",
+    "area": "中央区",
+    "date": "2025-07-12",
+    "songs": [
+      {
+        "name": "ダンシングヒーロー",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "令和音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       }
     ]
   },
@@ -434,6 +561,401 @@
     ]
   },
   {
+    "name": "築地本願寺納涼盆踊り大会",
+    "venue": "築地本願寺",
+    "area": "中央区",
+    "date": "2026-07-29",
+    "songs": [
+      {
+        "name": "あやめ踊り",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 40,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "おこさ節",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 40,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "ホームラン音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 40,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "大江戸助六音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 40,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "斎太郎節",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 40,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 40,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "法輪音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 40,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 40,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "築地音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 40,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      }
+    ]
+  },
+  {
+    "name": "六本木ヒルズ盆踊り",
+    "venue": "六本木ヒルズアリーナ",
+    "area": "港区",
+    "date": "2025-08-22",
+    "songs": [
+      {
+        "name": "ドラえもん音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "六本人音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "六本木音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "河内おとこ節",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "花火音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      }
+    ]
+  },
+  {
+    "name": "第28回新橋こいち祭 盆踊り",
+    "venue": "桜田公園",
+    "area": "港区",
+    "date": "2025-07-24",
+    "songs": [
+      {
+        "name": "ご祝儀音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "ふるさと音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "ハワイ音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "八木節",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "大東京音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "新橋音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "新芝音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "防災音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      }
+    ]
+  },
+  {
+    "name": "第10回白金台どんぐり児童遊園 納涼盆踊り大会",
+    "venue": "白金台どんぐり児童遊園",
+    "area": "港区",
+    "date": "2025-09-07",
+    "songs": [
+      {
+        "name": "ダンシングヒーロー",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "大東京音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "東京五輪音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "花火音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "花笠音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      }
+    ]
+  },
+  {
     "name": "郡上おどり in 青山 2025",
     "venue": "秩父宮ラグビー場駐車場",
     "area": "港区",
@@ -442,7 +964,97 @@
       {
         "name": "郡上おどり",
         "confidence": "confirmed",
-        "source_count": 2,
+        "source_count": 2
+      }
+    ]
+  },
+  {
+    "name": "西久保八幡神社 盆踊り",
+    "venue": "西久保八幡神社",
+    "area": "港区",
+    "date": "2025-08-09",
+    "songs": [
+      {
+        "name": "ドラえもん音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "ドンパン節",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "ハワイ音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "八木節",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "大東京音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "花笠音頭",
+        "confidence": "hint",
+        "source_count": 1,
         "probability": 24,
         "basis": "past_evidence",
         "basis_label": "2025年ヒント",
@@ -474,13 +1086,7 @@
       {
         "name": "百人町民民謡おどり",
         "confidence": "hint",
-        "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": false
+        "source_count": 1
       }
     ]
   },
@@ -493,6 +1099,24 @@
       {
         "name": "ズンパ音頭",
         "confidence": "hint",
+        "source_count": 1
+      },
+      {
+        "name": "四谷納涼踊り",
+        "confidence": "confirmed",
+        "source_count": 2
+      }
+    ]
+  },
+  {
+    "name": "シタマチ.ふるさと盆踊り大会",
+    "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+    "area": "台東区",
+    "date": "2025-08-16",
+    "songs": [
+      {
+        "name": "げんき音頭",
+        "confidence": "hint",
         "source_count": 1,
         "probability": 24,
         "basis": "past_evidence",
@@ -502,9 +1126,105 @@
         "setlist_complete": false
       },
       {
-        "name": "四谷納涼踊り",
-        "confidence": "confirmed",
-        "source_count": 2,
+        "name": "大東京音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "江州音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "河内音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "花笠音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      }
+    ]
+  },
+  {
+    "name": "東本願寺盆踊り",
+    "venue": "東本願寺（浅草）",
+    "area": "台東区",
+    "date": "2025-08-20",
+    "songs": [
+      {
+        "name": "ふるさと音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "hint",
+        "source_count": 1,
         "probability": 24,
         "basis": "past_evidence",
         "basis_label": "2025年ヒント",
@@ -541,13 +1261,7 @@
       {
         "name": "すみだ輪おどり",
         "confidence": "hint",
-        "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": false
+        "source_count": 1
       }
     ]
   },
@@ -560,35 +1274,17 @@
       {
         "name": "スカイツリー踊り",
         "confidence": "hint",
-        "source_count": 1,
-        "probability": 40,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": false
+        "source_count": 1
       },
       {
         "name": "東京音頭",
         "confidence": "hint",
-        "source_count": 1,
-        "probability": 40,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": false
+        "source_count": 1
       },
       {
         "name": "河内音頭",
         "confidence": "hint",
-        "source_count": 1,
-        "probability": 40,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": false
+        "source_count": 1
       }
     ]
   },
@@ -601,13 +1297,7 @@
       {
         "name": "河内音頭",
         "confidence": "hint",
-        "source_count": 1,
-        "probability": 40,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": false
+        "source_count": 1
       }
     ]
   },
@@ -620,13 +1310,7 @@
       {
         "name": "すみだ輪おどり",
         "confidence": "hint",
-        "source_count": 1,
-        "probability": 40,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": false
+        "source_count": 1
       }
     ]
   },
@@ -639,46 +1323,22 @@
       {
         "name": "品川甚句",
         "confidence": "hint",
-        "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": false
+        "source_count": 1
       },
       {
         "name": "品川音頭",
         "confidence": "hint",
-        "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": false
+        "source_count": 1
       },
       {
         "name": "大井どんたく音頭",
         "confidence": "hint",
-        "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": false
+        "source_count": 1
       },
       {
         "name": "東京音頭",
         "confidence": "hint",
-        "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": false
+        "source_count": 1
       }
     ]
   },
@@ -691,68 +1351,32 @@
       {
         "name": "ドンパン節",
         "confidence": "hint",
-        "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": false
+        "source_count": 1
       },
       {
         "name": "品川甚句",
         "confidence": "hint",
-        "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": false
+        "source_count": 1
       },
       {
         "name": "品川音頭",
         "confidence": "hint",
-        "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": false
+        "source_count": 1
       },
       {
         "name": "大東京音頭",
         "confidence": "hint",
-        "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": false
+        "source_count": 1
       },
       {
         "name": "東京音頭",
         "confidence": "hint",
-        "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": false
+        "source_count": 1
       },
       {
         "name": "炭坑節",
         "confidence": "hint",
-        "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": false
+        "source_count": 1
       }
     ]
   },
@@ -1387,6 +2011,63 @@
     "date": "2025-07-19",
     "songs": [
       {
+        "name": "ホイップるん音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "大東京音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "ダンシングヒーロー",
+        "confidence": "hint",
+        "source_count": 1
+      }
+    ]
+  },
+  {
+    "name": "SHIBUYA MIYASHITA PARK BON DANCE 2025",
+    "venue": "宮下公園",
+    "area": "渋谷区",
+    "date": "2025-09-27",
+    "songs": [
+      {
         "name": "ダンシングヒーロー",
         "confidence": "hint",
         "source_count": 1,
@@ -1398,452 +2079,34 @@
         "setlist_complete": false
       },
       {
-        "name": "ホイップるん音頭",
-        "confidence": "hint",
-        "source_count": 1
-      },
-      {
-        "name": "大東京音頭",
-        "confidence": "hint",
-        "source_count": 1
-      },
-      {
         "name": "東京音頭",
         "confidence": "hint",
-        "source_count": 1
-      },
-      {
-        "name": "炭坑節",
-        "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       }
     ]
   },
   {
-    "name": "飛鳥山公園盆踊り会（有志サークル）",
-    "venue": "飛鳥山公園",
-    "area": "北区",
-    "date": null,
+    "name": "第11回 にっぽり炭坑節まつり",
+    "venue": "JR日暮里駅前広場",
+    "area": "荒川区",
+    "date": "2025-09-14",
     "songs": [
       {
-        "name": "たいとう音頭",
-        "confidence": "confirmed",
+        "name": "炭坑節",
+        "confidence": "hint",
         "source_count": 1,
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
+        "probability": 24,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント",
         "evidence_count": 1,
         "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=BnRG0iS5stA"
-        ]
-      },
-      {
-        "name": "ふるさと北区",
-        "confidence": "confirmed",
-        "source_count": 1,
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=UBGvAcTE6_E"
-        ]
-      },
-      {
-        "name": "ゆかた音頭",
-        "confidence": "confirmed",
-        "source_count": 1,
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=VW58EPXJmg4"
-        ]
-      },
-      {
-        "name": "らんまん踊り",
-        "confidence": "confirmed",
-        "source_count": 1,
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=NxTvnbZME0M"
-        ]
-      },
-      {
-        "name": "ソーラン北海",
-        "confidence": "confirmed",
-        "source_count": 1,
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=7ALmh64gFwA"
-        ]
-      },
-      {
-        "name": "佐渡の恋唄",
-        "confidence": "confirmed",
-        "source_count": 1,
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=PL7Fgs0ifSU"
-        ]
-      },
-      {
-        "name": "俺ら炭鉱夫",
-        "confidence": "confirmed",
-        "source_count": 1,
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=lrEeotdmhTM"
-        ]
-      },
-      {
-        "name": "大東京音頭",
-        "confidence": "confirmed",
-        "source_count": 1,
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=OsS7wbeRIh0"
-        ]
-      },
-      {
-        "name": "大江戸東京音頭",
-        "confidence": "confirmed",
-        "source_count": 1,
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=9CVl3g-jcYo"
-        ]
-      },
-      {
-        "name": "少年八木節",
-        "confidence": "confirmed",
-        "source_count": 1,
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=M0bWjUtfUBs"
-        ]
-      },
-      {
-        "name": "恋をするなら",
-        "confidence": "confirmed",
-        "source_count": 1,
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=NYWWFBYXeCE"
-        ]
-      },
-      {
-        "name": "文京音頭",
-        "confidence": "confirmed",
-        "source_count": 1,
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=lEt68hsMb4A"
-        ]
-      },
-      {
-        "name": "日本よいとこ",
-        "confidence": "confirmed",
-        "source_count": 1,
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=VPR1iNPV_yU"
-        ]
-      },
-      {
-        "name": "日本一だよ",
-        "confidence": "confirmed",
-        "source_count": 1,
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=4QtZ5d3ynZk"
-        ]
-      },
-      {
-        "name": "日本晴れだよ",
-        "confidence": "confirmed",
-        "source_count": 1,
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=CevVRysR7Bs"
-        ]
-      },
-      {
-        "name": "東京北都音頭",
-        "confidence": "confirmed",
-        "source_count": 1,
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=Nd1ADi6TxuM"
-        ]
-      },
-      {
-        "name": "東京音頭",
-        "confidence": "confirmed",
-        "source_count": 1,
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=lmX6GaG4HuY"
-        ]
-      },
-      {
-        "name": "東北音頭",
-        "confidence": "confirmed",
-        "source_count": 1,
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=tN5cocxKGmw"
-        ]
-      },
-      {
-        "name": "東西南北音頭",
-        "confidence": "confirmed",
-        "source_count": 1,
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=yBZ1rXA6LRo"
-        ]
-      },
-      {
-        "name": "板橋音頭",
-        "confidence": "confirmed",
-        "source_count": 1,
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=XBHe1QaHQl8"
-        ]
-      },
-      {
-        "name": "王子小唄",
-        "confidence": "confirmed",
-        "source_count": 1,
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=w6mUO5UuS2g"
-        ]
-      },
-      {
-        "name": "百年桜",
-        "confidence": "confirmed",
-        "source_count": 1,
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=3xiWUcepU08"
-        ]
-      },
-      {
-        "name": "相馬盆唄",
-        "confidence": "confirmed",
-        "source_count": 1,
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=3jKTtdLCnI8"
-        ]
-      },
-      {
-        "name": "終 男おけさ~〆太鼓",
-        "confidence": "confirmed",
-        "source_count": 1,
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=dm6SxqoFPVA"
-        ]
-      },
-      {
-        "name": "美子の三味線ドンパン",
-        "confidence": "confirmed",
-        "source_count": 1,
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=12_m0E9kv3Y"
-        ]
-      },
-      {
-        "name": "花火音頭",
-        "confidence": "confirmed",
-        "source_count": 1,
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=JX5otrjUER4"
-        ]
-      },
-      {
-        "name": "荒川音頭",
-        "confidence": "confirmed",
-        "source_count": 1,
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=BSxbnISzZvI"
-        ]
-      },
-      {
-        "name": "蟹工船",
-        "confidence": "confirmed",
-        "source_count": 1,
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=B7quQ6JV8cs"
-        ]
-      },
-      {
-        "name": "飛鳥山音頭",
-        "confidence": "confirmed",
-        "source_count": 1,
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=iQkGYjz61rs"
-        ]
-      },
-      {
-        "name": "黒潮太鼓",
-        "confidence": "confirmed",
-        "source_count": 1,
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=fxhLS--zqwQ"
-        ]
+        "setlist_complete": false
       }
     ]
   },
@@ -1856,35 +2119,17 @@
       {
         "name": "東京音頭",
         "confidence": "hint",
-        "source_count": 1,
-        "probability": 40,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": false
+        "source_count": 1
       },
       {
         "name": "炭坑節",
         "confidence": "hint",
-        "source_count": 1,
-        "probability": 40,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": false
+        "source_count": 1
       },
       {
         "name": "荒川音頭",
         "confidence": "hint",
-        "source_count": 1,
-        "probability": 40,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": false
+        "source_count": 1
       }
     ]
   }

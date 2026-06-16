@@ -1,5 +1,53 @@
 [
   {
+    "venue": "-両国-江戸NOREN",
+    "region": "墨田区",
+    "month": "7月",
+    "scale": "中",
+    "access": "JR両国駅西口直結",
+    "in_tsukiji_30min": true,
+    "source_url": "https://www.jrtk.jp/edonoren/",
+    "memo": "江戸NOREN公式記事に妖怪BON DANCEを確認。掲載日も2025-07-04で、YouTube動画は2025-07-13。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/NOREN-3818be04e76281e497c9dbb7363c80ac"
+  },
+  {
+    "venue": "JR恵比寿駅西口広場",
+    "region": "渋谷区",
+    "month": "7月",
+    "scale": "大",
+    "access": "JR恵比寿駅西口すぐ",
+    "in_tsukiji_30min": true,
+    "source_url": "https://ebisubondance.jp/about/",
+    "memo": "こと裏取りで公式サイトを確認。第70回、2025-07-25〜2025-07-26、17:30〜21:30。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/JR-3818be04e7628120b469ccba2560da26"
+  },
+  {
+    "venue": "JR日暮里駅前広場",
+    "region": "荒川区",
+    "month": "9月",
+    "scale": "大",
+    "access": "JR日暮里駅前",
+    "in_tsukiji_30min": true,
+    "source_url": "https://www.city.arakawa.tokyo.jp/a022/event/eventkouenmeigi/nipporitannkoubushimaturir791415.html",
+    "memo": "こと裏取りで荒川区公式と日本盆踊り協会サイトを確認。第11回、2025-09-14〜2025-09-15。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/JR-3818be04e76281209b1fe5f993a74b4e"
+  },
+  {
+    "venue": "SHIBUYA109前〜道玄坂・文化村通り一帯",
+    "region": "渋谷区",
+    "month": "8月",
+    "scale": "大",
+    "access": "渋谷駅ハチ公口から徒歩すぐ",
+    "in_tsukiji_30min": true,
+    "source_url": "https://tokyofesta.com/23ku/24135/",
+    "memo": "tokyofestaで第6回渋谷盆踊り2025の開催を確認。盆踊りは18:00〜21:30、YouTube動画日付と一致。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/SHIBUYA109-3818be04e76281f48caef3d960cd7b69"
+  },
+  {
     "venue": "あかつき公園",
     "region": "中央区",
     "month": null,
@@ -70,6 +118,18 @@
     "memo": "2025-01-11にすみだ輪おどり区民感謝デー開催記録あり。",
     "needs_review": false,
     "notion_url": "https://app.notion.com/p/37b8be04e7628191b232c92e186bfcd2"
+  },
+  {
+    "venue": "りそな銀行神楽坂支店前",
+    "region": "新宿区",
+    "month": "7月",
+    "scale": "大",
+    "access": "東京メトロ神楽坂駅・飯田橋駅から徒歩圏内",
+    "in_tsukiji_30min": true,
+    "source_url": "https://www.kagurazaka.in/event/%E7%AC%AC51%E5%9B%9E%E7%A5%9E%E6%A5%BD%E5%9D%82%E3%81%BE%E3%81%A4%E3%82%8A/",
+    "memo": "こと裏取りで神楽坂通り商店会公式と新宿観光振興協会を確認。2025-07-23〜2025-07-24、18:00〜20:30。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/3818be04e76281ef9fb3c082dadfbb07"
   },
   {
     "venue": "アーク・カラヤン広場（アークヒルズ）",
@@ -168,6 +228,18 @@
     "notion_url": "https://app.notion.com/p/3718be04e7628127a11ff4f5e3b4927d"
   },
   {
+    "venue": "中央通り（銀座1丁目〜8丁目）",
+    "region": "中央区",
+    "month": "8月",
+    "scale": "大",
+    "access": "東京メトロ銀座駅・銀座一丁目駅・東銀座駅から徒歩圏内",
+    "in_tsukiji_30min": true,
+    "source_url": "https://ginbura.ginza.jp/",
+    "memo": "ゆかたで銀ぶら公式ページで中央通り開催と大銀座盆踊りの実施を確認。YouTube動画は2025-08-02。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/1-8-3818be04e76281059c2eec77aa17b672"
+  },
+  {
     "venue": "五反野コミュニティ公園",
     "region": "足立区",
     "month": "6月",
@@ -226,6 +298,18 @@
     "memo": "八潮公園多目的広場で「八潮まつり」が開催され、打ち上げ花火・盆踊り・模擬店・子どもコーナーなどを実施（2024年9/22開催実績あり）。品川区民まつりの会場としても利用される。",
     "needs_review": false,
     "notion_url": "https://app.notion.com/p/3718be04e762812a9606f1c2c67c8d22"
+  },
+  {
+    "venue": "六本木ヒルズアリーナ",
+    "region": "港区",
+    "month": "8月",
+    "scale": "大",
+    "access": "東京メトロ日比谷線 六本木駅直結／都営大江戸線 六本木駅 徒歩4分",
+    "in_tsukiji_30min": true,
+    "source_url": "https://www.roppongihills.com/events/2025/08/0478.html",
+    "memo": "六本木ヒルズ公式ページで2025-08-22〜2025-08-24開催を確認。22日は前夜祭、盆踊り動画は23/24。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/3818be04e762814b87eec2096a468d96"
   },
   {
     "venue": "六本木天祖神社",
@@ -358,6 +442,18 @@
     "memo": "「すみだストリートジャズフェスティバル（すみジャズ）」DJ岸野雄一による盆踊りセッションがYouTubeで拡散（2025年10/19開催分）。錦糸町駅・とうきょうスカイツリー駅からも近くアクセス良好。",
     "needs_review": false,
     "notion_url": "https://app.notion.com/p/3718be04e76281e8bb38fd1a876206e9"
+  },
+  {
+    "venue": "大正大学",
+    "region": "豊島区",
+    "month": "7月",
+    "scale": "大",
+    "access": "都営三田線西巣鴨駅から徒歩圏内",
+    "in_tsukiji_30min": true,
+    "source_url": "https://www.tais.ac.jp/guide/latest_news/20250627/92922/",
+    "memo": "こと裏取りで大正大学公式とPR TIMESを確認。第15回、2025-07-04〜2025-07-05、大正大学開催。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/3818be04e76281a28cfdf00332d49e14"
   },
   {
     "venue": "天妙国寺",
@@ -732,6 +828,18 @@
     "notion_url": "https://app.notion.com/p/3718be04e76281c4bdb3fba63fa90ace"
   },
   {
+    "venue": "浄土寺",
+    "region": "港区",
+    "month": "7月",
+    "scale": "中",
+    "access": "赤坂見附駅・赤坂駅から徒歩圏内",
+    "in_tsukiji_30min": true,
+    "source_url": "https://x.com/nsPFhl5JW382058/status/1939266951391613148",
+    "memo": "こと裏取りで赤坂あかね会Xと地域ブログを確認。2025-07-24〜2025-07-25、18:30〜22:00頃。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/3818be04e7628137b258e00a8249f46e"
+  },
+  {
     "venue": "浜町公園",
     "region": "中央区",
     "month": "8月,9月",
@@ -802,6 +910,18 @@
     "memo": "2025-09-13に石原一丁目 牛嶋神社 奉納踊り開催記録あり。",
     "needs_review": false,
     "notion_url": "https://app.notion.com/p/37b8be04e76281738275d6d25bb84374"
+  },
+  {
+    "venue": "神田明神境内",
+    "region": "千代田区",
+    "month": "8月",
+    "scale": "大",
+    "access": "御茶ノ水駅・末広町駅・秋葉原駅から徒歩圏内",
+    "in_tsukiji_30min": true,
+    "source_url": "https://event-checker.info/kandamyoujin-bonodori/",
+    "memo": "event-checkerで令和7年神田明神納涼祭りを確認。アニソン盆踊りは8/8枠で、YouTube11動画の検出日付と一致。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/3818be04e7628103b7f8f35ef76b7b3c"
   },
   {
     "venue": "秩父宮ラグビー場駐車場",
@@ -948,6 +1068,18 @@
     "notion_url": "https://app.notion.com/p/3718be04e76281cf8816d03d09bc9367"
   },
   {
+    "venue": "花園神社",
+    "region": "新宿区",
+    "month": "8月",
+    "scale": "中",
+    "access": "新宿三丁目駅から徒歩圏内",
+    "in_tsukiji_30min": true,
+    "source_url": "https://yokoso-shinjuku.com/shinjuku-event/hanazono-bonodori-2/",
+    "memo": "こと裏取りで2025-08-01〜2025-08-02、19:00〜21:00の開催情報を確認。",
+    "needs_review": false,
+    "notion_url": "https://app.notion.com/p/3818be04e762819eab8ed0c0c7a68c7c"
+  },
+  {
     "venue": "若宮公園",
     "region": "墨田区",
     "month": "9月",
@@ -1082,7 +1214,7 @@
   {
     "venue": "青山熊野神社",
     "region": "渋谷区",
-    "month": "9月",
+    "month": null,
     "scale": "中",
     "access": "東京メトロ銀座線「外苑前駅」出口3から徒歩約5分",
     "in_tsukiji_30min": true,
@@ -1406,7 +1538,7 @@
   {
     "venue": "代々木公園野外ステージ",
     "region": "渋谷区",
-    "month": "3月",
+    "month": "3月,4月",
     "scale": "小",
     "access": "原宿駅・明治神宮前駅・代々木公園駅から徒歩圏内",
     "in_tsukiji_30min": false,
@@ -1658,7 +1790,7 @@
   {
     "venue": "宮下公園",
     "region": "渋谷区",
-    "month": "9月",
+    "month": "5月,6月,9月",
     "scale": "大",
     "access": "渋谷駅から徒歩約3分。東京メトロ千代田線・副都心線 明治神宮前〈原宿〉駅 7番口から徒歩約8分。都営バス 宮下公園、ハチ公バス 宮下公園前から徒歩1分",
     "in_tsukiji_30min": false,

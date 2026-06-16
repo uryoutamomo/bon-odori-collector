@@ -1,8 +1,8 @@
 {
   "generated_by": "build_event_song_candidates.py",
-  "count": 197,
-  "public_event_count": 139,
-  "review_count": 58,
+  "count": 245,
+  "public_event_count": 174,
+  "review_count": 71,
   "candidates": [
     {
       "id": "b99edd9b8145fae8",
@@ -145,11 +145,11 @@
       "evidence_count": 1
     },
     {
-      "id": "f5e3fa51ff206a71",
-      "song_name": "炭坑節",
-      "event_name": "築地本願寺納涼盆踊り大会",
-      "venue": "築地本願寺",
-      "area": "中央区",
+      "id": "54dfdc26c823ce30",
+      "song_name": "大東京音頭",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "area": "北区",
       "status": "未確認",
       "confidence": "中",
       "reasons": [
@@ -159,13 +159,198 @@
       "evidence": [
         {
           "source": "x_voice",
-          "url": "https://x.com/natsutr_bon/status/2059805547512418608",
-          "date": "2026-05-28T01:14:46+00:00",
-          "text": "奈津大郎〘ナツタロ〙\n5/24築地JAM\n\n盆踊り会場としても人気の築地本願寺で民謡クルセイダーズLIVE♪\n花笠音頭からはじまり、ソーラン節では観客揃って船漕いだり波起こしたり〜🌊\n貝殻節、会津磐梯山、炭坑節と民謡踊りを楽しく✨\n\nそのあとも美味しいフードを食べたり、ジャズ、ボサノヴァなどをユルユルっと🥂\n\n#民クル https://t.co/BNQ6P4cM3h"
+          "url": "https://www.youtube.com/watch?v=OsS7wbeRIh0",
+          "date": "2026-06-09T10:00:37+00:00",
+          "text": "和太鼓お祭りCH\n大東京音頭　飛鳥山公園輪踊り　「舞ことり」22　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://yout"
         }
       ],
       "already_public": false,
       "evidence_count": 1
+    },
+    {
+      "id": "94953e2fb1f603eb",
+      "song_name": "東京音頭",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "status": "未確認",
+      "confidence": "中",
+      "reasons": [
+        "known_song_context",
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=dm6SxqoFPVA",
+          "date": "2026-06-13T01:00:25+00:00",
+          "text": "和太鼓お祭りCH\n男おけさ～〆太鼓　飛鳥山公園輪踊り　「舞ことり」30終　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=7ALmh64gFwA",
+          "date": "2026-06-12T01:30:16+00:00",
+          "text": "和太鼓お祭りCH\nソーラン北海　飛鳥山公園輪踊り　「舞ことり」29　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://you"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=4QtZ5d3ynZk",
+          "date": "2026-06-12T01:00:25+00:00",
+          "text": "和太鼓お祭りCH\n日本一だよ　飛鳥山公園輪踊り　「舞ことり」28　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://yout"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=CevVRysR7Bs",
+          "date": "2026-06-11T01:30:10+00:00",
+          "text": "和太鼓お祭りCH\n日本晴れだよ　飛鳥山公園輪踊り　「舞ことり」27　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://you"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=VPR1iNPV_yU",
+          "date": "2026-06-11T01:00:09+00:00",
+          "text": "和太鼓お祭りCH\n日本よいとこ　飛鳥山公園輪踊り　「舞ことり」26　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://you"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=yBZ1rXA6LRo",
+          "date": "2026-06-10T10:30:18+00:00",
+          "text": "和太鼓お祭りCH\n「東西南北音頭」　飛鳥山公園輪踊り　「舞ことり」25　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://y"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=tN5cocxKGmw",
+          "date": "2026-06-10T10:00:39+00:00",
+          "text": "和太鼓お祭りCH\n東北音頭　飛鳥山公園輪踊り　「舞ことり」24　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://youtu"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=JX5otrjUER4",
+          "date": "2026-06-09T10:30:18+00:00",
+          "text": "和太鼓お祭りCH\n花火音頭　飛鳥山公園輪踊り　「舞ことり」23　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://youtu"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=OsS7wbeRIh0",
+          "date": "2026-06-09T10:00:37+00:00",
+          "text": "和太鼓お祭りCH\n大東京音頭　飛鳥山公園輪踊り　「舞ことり」22　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://yout"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=B7quQ6JV8cs",
+          "date": "2026-06-08T10:30:14+00:00",
+          "text": "和太鼓お祭りCH\n【蟹工船】（村田英雄）　飛鳥山公園輪踊り　「舞ことり」21　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https:"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=3xiWUcepU08",
+          "date": "2026-06-08T10:00:07+00:00",
+          "text": "和太鼓お祭りCH\n百年桜　飛鳥山公園輪踊り　「舞ことり」20　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://youtu."
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=M0bWjUtfUBs",
+          "date": "2026-06-07T10:30:39+00:00",
+          "text": "和太鼓お祭りCH\n【少年八木節】　飛鳥山公園輪踊り　「舞ことり」19　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://yo"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=9CVl3g-jcYo",
+          "date": "2026-06-07T10:00:36+00:00",
+          "text": "和太鼓お祭りCH\n大江戸東京音頭　飛鳥山公園輪踊り　「舞ことり」18　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://yo"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=fxhLS--zqwQ",
+          "date": "2026-06-06T10:30:06+00:00",
+          "text": "和太鼓お祭りCH\n黒潮太鼓　飛鳥山公園輪踊り　「舞ことり」17　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://youtu"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=NxTvnbZME0M",
+          "date": "2026-06-06T10:00:23+00:00",
+          "text": "和太鼓お祭りCH\nらんまん踊り　飛鳥山公園輪踊り　「舞ことり」16　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://you"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=lrEeotdmhTM",
+          "date": "2026-06-05T10:30:23+00:00",
+          "text": "和太鼓お祭りCH\n「俺ら炭鉱夫」　飛鳥山公園輪踊り　「舞ことり」15　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://yo"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=12_m0E9kv3Y",
+          "date": "2026-06-05T10:00:39+00:00",
+          "text": "和太鼓お祭りCH\n「美子の三味線ドンパン」　飛鳥山公園輪踊り　「舞ことり」14　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=VW58EPXJmg4",
+          "date": "2026-06-04T10:30:33+00:00",
+          "text": "和太鼓お祭りCH\nゆかた音頭　飛鳥山公園輪踊り　「舞ことり」13　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://yout"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=NYWWFBYXeCE",
+          "date": "2026-06-04T10:00:34+00:00",
+          "text": "和太鼓お祭りCH\n「恋をするなら」　飛鳥山公園輪踊り　「舞ことり」12　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://y"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=PL7Fgs0ifSU",
+          "date": "2026-06-03T10:30:30+00:00",
+          "text": "和太鼓お祭りCH\n佐渡の恋唄　飛鳥山公園輪踊り　「舞ことり」11　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://yout"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=UBGvAcTE6_E",
+          "date": "2026-06-03T10:00:26+00:00",
+          "text": "和太鼓お祭りCH\nふるさと北区　飛鳥山公園輪踊り　「舞ことり」10　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://you"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=Nd1ADi6TxuM",
+          "date": "2026-06-02T11:30:06+00:00",
+          "text": "和太鼓お祭りCH\n東京北都音頭　飛鳥山公園輪踊り　「舞ことり」９　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://yout"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=iQkGYjz61rs",
+          "date": "2026-06-02T11:00:07+00:00",
+          "text": "和太鼓お祭りCH\n飛鳥山音頭　飛鳥山公園輪踊り　「舞ことり」８　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://youtu"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=w6mUO5UuS2g",
+          "date": "2026-06-01T11:30:22+00:00",
+          "text": "和太鼓お祭りCH\n王子小唄　飛鳥山公園輪踊り　「舞ことり」７　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://youtu."
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=3jKTtdLCnI8",
+          "date": "2026-06-01T11:00:24+00:00",
+          "text": "和太鼓お祭りCH\n「相馬盆唄」　飛鳥山公園輪踊り　「舞ことり」６　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=lEt68hsMb4A",
+          "date": "2026-05-31T03:00:37+00:00",
+          "text": "和太鼓お祭りCH\n文京音頭　飛鳥山公園輪踊り　「舞ことり」５　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=BnRG0iS5stA",
+          "date": "2026-05-30T03:00:06+00:00",
+          "text": "和太鼓お祭りCH\nたいとう音頭　飛鳥山公園輪踊り　「舞ことり」４　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=XBHe1QaHQl8",
+          "date": "2026-05-28T18:00:35+00:00",
+          "text": "和太鼓お祭りCH\n板橋音頭　飛鳥山公園輪踊り　「舞ことり」３　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 28
     },
     {
       "id": "fa5a2627cb46b716",
@@ -505,34 +690,6 @@
       "evidence_count": 1
     },
     {
-      "id": "0a207b79207790f8",
-      "song_name": "築地音頭",
-      "event_name": "築地本願寺納涼盆踊り大会",
-      "venue": "築地本願寺",
-      "area": "中央区",
-      "status": "未確認",
-      "confidence": "低",
-      "reasons": [
-        "song_suffix_near_context"
-      ],
-      "evidence": [
-        {
-          "source": "x_voice",
-          "url": "https://x.com/odori2024minato/status/2011648549642191279",
-          "date": "2026-01-15T03:56:03+00:00",
-          "text": "横浜みなと会（盆踊り•民踊•新舞踊）\n『音の巡礼ラジオ』\n#41 ついに発見！「築地音頭」SPレコード捜索大作戦 その顛末\n\n昨日、レコードを築地本願寺へ持参して、副宗務長、盆踊り担当者の方とお話させていただきました\n濃密な20分にまとめていただきました\n是非お聞きください！！\n\nお寺の「音」文化収集家\n未来の住職塾　遠藤卓也さま"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://x.com/odori2024minato/status/2011452236954837453",
-          "date": "2026-01-14T14:55:58+00:00",
-          "text": "横浜みなと会（盆踊り•民踊•新舞踊）\n本日は築地本願寺へ伺いました。\n\n盆踊り愛好家に大人気の『築地音頭』\n原盤が残されていないというお話を耳にし、何かお力になれればとご連絡したご縁です。\nとても良いお天気でした。 https://t.co/D7yp5OIYTx"
-        }
-      ],
-      "already_public": false,
-      "evidence_count": 2
-    },
-    {
       "id": "b90d0da920c040a1",
       "song_name": "花笠音頭",
       "event_name": "築地本願寺納涼盆踊り大会",
@@ -599,6 +756,116 @@
       "evidence_count": 1
     },
     {
+      "id": "ccaac9216e577953",
+      "song_name": "たいとう音頭",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=BnRG0iS5stA",
+          "date": "2026-05-30T03:00:06+00:00",
+          "text": "和太鼓お祭りCH\nたいとう音頭　飛鳥山公園輪踊り　「舞ことり」４　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "53d958b1c9d08402",
+      "song_name": "ゆかた音頭",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=VW58EPXJmg4",
+          "date": "2026-06-04T10:30:33+00:00",
+          "text": "和太鼓お祭りCH\nゆかた音頭　飛鳥山公園輪踊り　「舞ことり」13　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://yout"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "98d6bf44c88d5592",
+      "song_name": "らんまん踊り",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=NxTvnbZME0M",
+          "date": "2026-06-06T10:00:23+00:00",
+          "text": "和太鼓お祭りCH\nらんまん踊り　飛鳥山公園輪踊り　「舞ことり」16　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://you"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "d616462a171afe72",
+      "song_name": "大江戸東京音頭",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=9CVl3g-jcYo",
+          "date": "2026-06-07T10:00:36+00:00",
+          "text": "和太鼓お祭りCH\n大江戸東京音頭　飛鳥山公園輪踊り　「舞ことり」18　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://yo"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "969138311e49d455",
+      "song_name": "少年八木節",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=M0bWjUtfUBs",
+          "date": "2026-06-07T10:30:39+00:00",
+          "text": "和太鼓お祭りCH\n【少年八木節】　飛鳥山公園輪踊り　「舞ことり」19　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://yo"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
       "id": "fb1cf54858616868",
       "song_name": "山王音頭と千代田踊り",
       "event_name": "飛鳥山公園盆踊り会（有志サークル）",
@@ -615,6 +882,160 @@
           "url": "https://x.com/xxxnabekoxxx/status/2063607767861195209",
           "date": "2026-06-07T13:03:26+00:00",
           "text": "なべこ🍣［神楽坂ありす改め］\n本日は #飛鳥山公園 #盆踊り に少しだけお邪魔しました。開始直前に雨がパラついたけど大丈夫でしたね。良い感じで曇っていて、踊りやすかった〜🤗山王音頭と千代田踊り、良い予習ができました‼️うちわ仕舞うところでお暇。あさがお踊りたかった〜🥲楽しかったです。ありがとうございました😺 https://t.co/hm2IRfUhuE"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "e90e53d8bfc3af08",
+      "song_name": "文京音頭",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=lEt68hsMb4A",
+          "date": "2026-05-31T03:00:37+00:00",
+          "text": "和太鼓お祭りCH\n文京音頭　飛鳥山公園輪踊り　「舞ことり」５　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "fff34a8ad8f058af",
+      "song_name": "東京北都音頭",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=Nd1ADi6TxuM",
+          "date": "2026-06-02T11:30:06+00:00",
+          "text": "和太鼓お祭りCH\n東京北都音頭　飛鳥山公園輪踊り　「舞ことり」９　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://yout"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "c9b2864150750b02",
+      "song_name": "東北音頭",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=tN5cocxKGmw",
+          "date": "2026-06-10T10:00:39+00:00",
+          "text": "和太鼓お祭りCH\n東北音頭　飛鳥山公園輪踊り　「舞ことり」24　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://youtu"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "d8cfd7549f83504c",
+      "song_name": "東西南北音頭",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=yBZ1rXA6LRo",
+          "date": "2026-06-10T10:30:18+00:00",
+          "text": "和太鼓お祭りCH\n「東西南北音頭」　飛鳥山公園輪踊り　「舞ことり」25　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://y"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "93eb737253d8124e",
+      "song_name": "板橋音頭",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=XBHe1QaHQl8",
+          "date": "2026-05-28T18:00:35+00:00",
+          "text": "和太鼓お祭りCH\n板橋音頭　飛鳥山公園輪踊り　「舞ことり」３　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "8b0ee40f09fc4ed9",
+      "song_name": "王子小唄",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=w6mUO5UuS2g",
+          "date": "2026-06-01T11:30:22+00:00",
+          "text": "和太鼓お祭りCH\n王子小唄　飛鳥山公園輪踊り　「舞ことり」７　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://youtu."
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "001daae589e37bf6",
+      "song_name": "花火音頭",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=JX5otrjUER4",
+          "date": "2026-06-09T10:30:18+00:00",
+          "text": "和太鼓お祭りCH\n花火音頭　飛鳥山公園輪踊り　「舞ことり」23　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://youtu"
         }
       ],
       "already_public": false,
@@ -805,6 +1226,28 @@
       "evidence_count": 28
     },
     {
+      "id": "b96acfe5d45c32a2",
+      "song_name": "飛鳥山音頭",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=iQkGYjz61rs",
+          "date": "2026-06-02T11:00:07+00:00",
+          "text": "和太鼓お祭りCH\n飛鳥山音頭　飛鳥山公園輪踊り　「舞ことり」８　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://youtu"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
       "id": "45d3d45d2487e1a7",
       "song_name": "ぜひみなさん一緒に踊り",
       "event_name": "山王音頭と民踊大会",
@@ -893,7 +1336,7 @@
       "evidence_count": 1
     },
     {
-      "id": "c11d6317444d5c5b",
+      "id": "b98cc22e55fcf7da",
       "song_name": "美しい踊り",
       "event_name": "山王音頭と民踊大会",
       "venue": "山王パークタワー公開空地",
@@ -904,6 +1347,42 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=Rr-4SBo0MHA",
+          "date": "2026-06-16T12:30:32+00:00",
+          "text": "和太鼓お祭りCH\n東京音頭　赤坂日枝神社盆踊り３日目1　山王祭「山王音頭と民踊大会」　2026年6月15日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り最終日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭盆踊り、3日目最終日の熱気。\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n3日目\n１東京音頭　htt"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=wBY23DA9eiY",
+          "date": "2026-06-16T11:00:15+00:00",
+          "text": "和太鼓お祭りCH\n東京音頭　【赤坂日枝神社】山王祭盆踊り20　「山王音頭と民踊大会」の風景　2026年6月13日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り初日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭 初日の熱気\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n１東京音頭　https://youtu"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=fUZ_rCuiwsc",
+          "date": "2026-06-16T10:30:34+00:00",
+          "text": "和太鼓お祭りCH\n【炭坑節】（鈴木正夫）　【赤坂日枝神社】山王祭盆踊り19　「山王音頭と民踊大会」の風景　2026年6月13日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り初日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭 初日の熱気\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n１東京音頭　https:"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=NSPcZ2XRjuY",
+          "date": "2026-06-16T10:00:13+00:00",
+          "text": "和太鼓お祭りCH\n盆ギリ恋歌（サザンオールスターズ）　【赤坂日枝神社】山王祭盆踊り18　「山王音頭と民踊大会」の風景　2026年6月13日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り初日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭 初日の熱気\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n１東京音頭　"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=yShCRvzUMoQ",
+          "date": "2026-06-16T06:00:10+00:00",
+          "text": "和太鼓お祭りCH\n恋をするなら（橋幸夫）　【赤坂日枝神社】山王祭盆踊り17　「山王音頭と民踊大会」の風景　2026年6月13日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り初日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭 初日の熱気\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n１東京音頭　https:"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=H_B1TNabEyk",
+          "date": "2026-06-16T03:00:35+00:00",
+          "text": "和太鼓お祭りCH\nらんまん踊り　【赤坂日枝神社】山王祭盆踊り16　「山王音頭と民踊大会」の風景　2026年6月13日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り初日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭 初日の熱気\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n１東京音頭　https://you"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=OLVt1Scn6us",
@@ -996,29 +1475,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 15
-    },
-    {
-      "id": "3273f5d526d90ab6",
-      "song_name": "花笠踊り",
-      "event_name": "山王音頭と民踊大会",
-      "venue": "山王パークタワー公開空地",
-      "area": "千代田区",
-      "status": "未確認",
-      "confidence": "低",
-      "reasons": [
-        "song_suffix_near_context"
-      ],
-      "evidence": [
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=z5LdywjjDTM",
-          "date": "2026-06-15T08:35:03+00:00",
-          "text": "shu channel\n赤坂・日枝神社🏮盆踊り[3/7]「花笠踊り～おこさ節～相馬甚句」Tokyo Bon Dance👘2026.6.14 @山王パークタワー公開空地\n00:00 花笠踊り\n03:52 おこさ節\n07:55 相馬甚句\n「山王音頭と民踊大会」（納涼大会）\n■日程：令和8年6月13日(土)～6月15日(月)　\n■場所：東京都千代田区永田町2－10－5\n　　　　山王パークタワー公開空地\n■MC：落合先生\n■踊り：落合社中／赤坂あかね会 他\n■太鼓：鈴木社中\n■公式サイト\nhttps://www.tenkamatsuri.jp/minyo/\n\n#日枝神社\n#盆踊り\n#bondance"
-        }
-      ],
-      "already_public": false,
-      "evidence_count": 1
+      "evidence_count": 21
     },
     {
       "id": "16a818f0abbfcc4e",
@@ -2090,6 +2547,148 @@
       "evidence_count": 1
     },
     {
+      "id": "808b54f0d2afa249",
+      "song_name": "沢山踊り",
+      "event_name": "第15回 鴨台盆踊り",
+      "venue": "大正大学",
+      "area": "豊島区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/bonodori_tais/status/2065373744093434168",
+          "date": "2026-06-12T10:00:48+00:00",
+          "text": "第16回 鴨台盆踊り 2026\n第16回鴨台盆踊り実行委員会です🏮\n\n第8回目の授業風景！\n今週はなんと！授業内で踊り練習会を行いました🕺\n沢山踊りましたが、みんな笑顔で楽しく盆踊りを学んでいました✨\n盆踊りの魅力を実感できる素敵な時間となりました💖\n\n#第16回鴨台盆踊り　#鴨台盆踊り　#大正大学　#盆踊り https://t.co/Hz1w6tf7XH"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "86cfc01a3ba7e460",
+      "song_name": "東京音頭",
+      "event_name": "大銀座盆踊り",
+      "venue": "中央通り（銀座1丁目〜8丁目）",
+      "area": "中央区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "f8af94fa2c158ee1",
+      "song_name": "炭坑節",
+      "event_name": "大銀座盆踊り",
+      "venue": "中央通り（銀座1丁目〜8丁目）",
+      "area": "中央区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "2799e612349f3682",
+      "song_name": "銀座ときめき音頭",
+      "event_name": "大銀座盆踊り",
+      "venue": "中央通り（銀座1丁目〜8丁目）",
+      "area": "中央区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "4675b8ed34abf57f",
+      "song_name": "銀座音頭",
+      "event_name": "大銀座盆踊り",
+      "venue": "中央通り（銀座1丁目〜8丁目）",
+      "area": "中央区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "2484daf812e03c48",
+      "song_name": "ダンシングヒーロー",
+      "event_name": "イベント名未確認（晴海ふ頭公園）",
+      "venue": "晴海ふ頭公園",
+      "area": "中央区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "45f6dbb8a5ef459d",
+      "song_name": "令和音頭",
+      "event_name": "イベント名未確認（晴海ふ頭公園）",
+      "venue": "晴海ふ頭公園",
+      "area": "中央区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "48c9642f29ea0bad",
+      "song_name": "東京音頭",
+      "event_name": "イベント名未確認（晴海ふ頭公園）",
+      "venue": "晴海ふ頭公園",
+      "area": "中央区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "e8dc11f5a0ade3fc",
+      "song_name": "炭坑節",
+      "event_name": "イベント名未確認（晴海ふ頭公園）",
+      "venue": "晴海ふ頭公園",
+      "area": "中央区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
       "id": "c8d1c7332598e75c",
       "song_name": "濱町音頭",
       "event_name": "濱町音頭盆踊り大会",
@@ -2105,34 +2704,11 @@
       "evidence_count": 0
     },
     {
-      "id": "0b5a707f4abb6cc2",
-      "song_name": "たいとう音頭",
-      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
-      "venue": "飛鳥山公園",
-      "area": "北区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public",
-        "song_suffix_near_context"
-      ],
-      "evidence": [
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=BnRG0iS5stA",
-          "date": "2026-05-30T03:00:06+00:00",
-          "text": "和太鼓お祭りCH\nたいとう音頭　飛鳥山公園輪踊り　「舞ことり」４　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g"
-        }
-      ],
-      "already_public": true,
-      "evidence_count": 1
-    },
-    {
-      "id": "13059ee8d94fe39c",
-      "song_name": "ふるさと北区",
-      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
-      "venue": "飛鳥山公園",
-      "area": "北区",
+      "id": "ccab41ae2b8cf99d",
+      "song_name": "あやめ踊り",
+      "event_name": "築地本願寺納涼盆踊り大会",
+      "venue": "築地本願寺",
+      "area": "中央区",
       "status": "公開済み",
       "confidence": "公開済み",
       "reasons": [
@@ -2143,57 +2719,11 @@
       "evidence_count": 0
     },
     {
-      "id": "55b7fd4f88a288b9",
-      "song_name": "ゆかた音頭",
-      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
-      "venue": "飛鳥山公園",
-      "area": "北区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public",
-        "song_suffix_near_context"
-      ],
-      "evidence": [
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=VW58EPXJmg4",
-          "date": "2026-06-04T10:30:33+00:00",
-          "text": "和太鼓お祭りCH\nゆかた音頭　飛鳥山公園輪踊り　「舞ことり」13　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://yout"
-        }
-      ],
-      "already_public": true,
-      "evidence_count": 1
-    },
-    {
-      "id": "d71a323c33dfbcd4",
-      "song_name": "らんまん踊り",
-      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
-      "venue": "飛鳥山公園",
-      "area": "北区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public",
-        "song_suffix_near_context"
-      ],
-      "evidence": [
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=NxTvnbZME0M",
-          "date": "2026-06-06T10:00:23+00:00",
-          "text": "和太鼓お祭りCH\nらんまん踊り　飛鳥山公園輪踊り　「舞ことり」16　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://you"
-        }
-      ],
-      "already_public": true,
-      "evidence_count": 1
-    },
-    {
-      "id": "c9088173166af65a",
-      "song_name": "ソーラン北海",
-      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
-      "venue": "飛鳥山公園",
-      "area": "北区",
+      "id": "c64c89e8ad43b55a",
+      "song_name": "おこさ節",
+      "event_name": "築地本願寺納涼盆踊り大会",
+      "venue": "築地本願寺",
+      "area": "中央区",
       "status": "公開済み",
       "confidence": "公開済み",
       "reasons": [
@@ -2204,11 +2734,11 @@
       "evidence_count": 0
     },
     {
-      "id": "25b3ff5d7fa5fd78",
-      "song_name": "佐渡の恋唄",
-      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
-      "venue": "飛鳥山公園",
-      "area": "北区",
+      "id": "897a4b798b5aca1a",
+      "song_name": "ホームラン音頭",
+      "event_name": "築地本願寺納涼盆踊り大会",
+      "venue": "築地本願寺",
+      "area": "中央区",
       "status": "公開済み",
       "confidence": "公開済み",
       "reasons": [
@@ -2219,11 +2749,11 @@
       "evidence_count": 0
     },
     {
-      "id": "db642ce53ee5286a",
-      "song_name": "俺ら炭鉱夫",
-      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
-      "venue": "飛鳥山公園",
-      "area": "北区",
+      "id": "819a61c5034ff39c",
+      "song_name": "大江戸助六音頭",
+      "event_name": "築地本願寺納涼盆踊り大会",
+      "venue": "築地本願寺",
+      "area": "中央区",
       "status": "公開済み",
       "confidence": "公開済み",
       "reasons": [
@@ -2234,81 +2764,11 @@
       "evidence_count": 0
     },
     {
-      "id": "24b01b2c2b23bb37",
-      "song_name": "大東京音頭",
-      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
-      "venue": "飛鳥山公園",
-      "area": "北区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public",
-        "known_song_context",
-        "song_suffix_near_context"
-      ],
-      "evidence": [
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=OsS7wbeRIh0",
-          "date": "2026-06-09T10:00:37+00:00",
-          "text": "和太鼓お祭りCH\n大東京音頭　飛鳥山公園輪踊り　「舞ことり」22　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://yout"
-        }
-      ],
-      "already_public": true,
-      "evidence_count": 1
-    },
-    {
-      "id": "c17cd19d83f40279",
-      "song_name": "大江戸東京音頭",
-      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
-      "venue": "飛鳥山公園",
-      "area": "北区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public",
-        "song_suffix_near_context"
-      ],
-      "evidence": [
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=9CVl3g-jcYo",
-          "date": "2026-06-07T10:00:36+00:00",
-          "text": "和太鼓お祭りCH\n大江戸東京音頭　飛鳥山公園輪踊り　「舞ことり」18　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://yo"
-        }
-      ],
-      "already_public": true,
-      "evidence_count": 1
-    },
-    {
-      "id": "0fe716cbf0254836",
-      "song_name": "少年八木節",
-      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
-      "venue": "飛鳥山公園",
-      "area": "北区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public",
-        "song_suffix_near_context"
-      ],
-      "evidence": [
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=M0bWjUtfUBs",
-          "date": "2026-06-07T10:30:39+00:00",
-          "text": "和太鼓お祭りCH\n【少年八木節】　飛鳥山公園輪踊り　「舞ことり」19　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://yo"
-        }
-      ],
-      "already_public": true,
-      "evidence_count": 1
-    },
-    {
-      "id": "4568b7caa89af925",
-      "song_name": "恋をするなら",
-      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
-      "venue": "飛鳥山公園",
-      "area": "北区",
+      "id": "9c6d1020d5d887d4",
+      "song_name": "斎太郎節",
+      "event_name": "築地本願寺納涼盆踊り大会",
+      "venue": "築地本願寺",
+      "area": "中央区",
       "status": "公開済み",
       "confidence": "公開済み",
       "reasons": [
@@ -2319,102 +2779,41 @@
       "evidence_count": 0
     },
     {
-      "id": "9f172b1906d2c55e",
-      "song_name": "文京音頭",
-      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
-      "venue": "飛鳥山公園",
-      "area": "北区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public",
-        "song_suffix_near_context"
-      ],
-      "evidence": [
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=lEt68hsMb4A",
-          "date": "2026-05-31T03:00:37+00:00",
-          "text": "和太鼓お祭りCH\n文京音頭　飛鳥山公園輪踊り　「舞ことり」５　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g"
-        }
-      ],
-      "already_public": true,
-      "evidence_count": 1
-    },
-    {
-      "id": "6148c1e0757e02e6",
-      "song_name": "日本よいとこ",
-      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
-      "venue": "飛鳥山公園",
-      "area": "北区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
-      "id": "b9ce020ae8e99068",
-      "song_name": "日本一だよ",
-      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
-      "venue": "飛鳥山公園",
-      "area": "北区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
-      "id": "eb8f8664029dacf6",
-      "song_name": "日本晴れだよ",
-      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
-      "venue": "飛鳥山公園",
-      "area": "北区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
-      "id": "c90ac77cb98089ad",
-      "song_name": "東京北都音頭",
-      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
-      "venue": "飛鳥山公園",
-      "area": "北区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public",
-        "song_suffix_near_context"
-      ],
-      "evidence": [
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=Nd1ADi6TxuM",
-          "date": "2026-06-02T11:30:06+00:00",
-          "text": "和太鼓お祭りCH\n東京北都音頭　飛鳥山公園輪踊り　「舞ことり」９　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://yout"
-        }
-      ],
-      "already_public": true,
-      "evidence_count": 1
-    },
-    {
-      "id": "1dcf0978aca7e41d",
+      "id": "910db4c48cc6efe8",
       "song_name": "東京音頭",
-      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
-      "venue": "飛鳥山公園",
-      "area": "北区",
+      "event_name": "築地本願寺納涼盆踊り大会",
+      "venue": "築地本願寺",
+      "area": "中央区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "8decf40466aed1c1",
+      "song_name": "法輪音頭",
+      "event_name": "築地本願寺納涼盆踊り大会",
+      "venue": "築地本願寺",
+      "area": "中央区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "225ece15533e88e0",
+      "song_name": "炭坑節",
+      "event_name": "築地本願寺納涼盆踊り大会",
+      "venue": "築地本願寺",
+      "area": "中央区",
       "status": "公開済み",
       "confidence": "公開済み",
       "reasons": [
@@ -2425,182 +2824,20 @@
       "evidence": [
         {
           "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=dm6SxqoFPVA",
-          "date": "2026-06-13T01:00:25+00:00",
-          "text": "和太鼓お祭りCH\n男おけさ～〆太鼓　飛鳥山公園輪踊り　「舞ことり」30終　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=7ALmh64gFwA",
-          "date": "2026-06-12T01:30:16+00:00",
-          "text": "和太鼓お祭りCH\nソーラン北海　飛鳥山公園輪踊り　「舞ことり」29　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://you"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=4QtZ5d3ynZk",
-          "date": "2026-06-12T01:00:25+00:00",
-          "text": "和太鼓お祭りCH\n日本一だよ　飛鳥山公園輪踊り　「舞ことり」28　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://yout"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=CevVRysR7Bs",
-          "date": "2026-06-11T01:30:10+00:00",
-          "text": "和太鼓お祭りCH\n日本晴れだよ　飛鳥山公園輪踊り　「舞ことり」27　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://you"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=VPR1iNPV_yU",
-          "date": "2026-06-11T01:00:09+00:00",
-          "text": "和太鼓お祭りCH\n日本よいとこ　飛鳥山公園輪踊り　「舞ことり」26　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://you"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=yBZ1rXA6LRo",
-          "date": "2026-06-10T10:30:18+00:00",
-          "text": "和太鼓お祭りCH\n「東西南北音頭」　飛鳥山公園輪踊り　「舞ことり」25　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://y"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=tN5cocxKGmw",
-          "date": "2026-06-10T10:00:39+00:00",
-          "text": "和太鼓お祭りCH\n東北音頭　飛鳥山公園輪踊り　「舞ことり」24　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://youtu"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=JX5otrjUER4",
-          "date": "2026-06-09T10:30:18+00:00",
-          "text": "和太鼓お祭りCH\n花火音頭　飛鳥山公園輪踊り　「舞ことり」23　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://youtu"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=OsS7wbeRIh0",
-          "date": "2026-06-09T10:00:37+00:00",
-          "text": "和太鼓お祭りCH\n大東京音頭　飛鳥山公園輪踊り　「舞ことり」22　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://yout"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=B7quQ6JV8cs",
-          "date": "2026-06-08T10:30:14+00:00",
-          "text": "和太鼓お祭りCH\n【蟹工船】（村田英雄）　飛鳥山公園輪踊り　「舞ことり」21　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https:"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=3xiWUcepU08",
-          "date": "2026-06-08T10:00:07+00:00",
-          "text": "和太鼓お祭りCH\n百年桜　飛鳥山公園輪踊り　「舞ことり」20　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://youtu."
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=M0bWjUtfUBs",
-          "date": "2026-06-07T10:30:39+00:00",
-          "text": "和太鼓お祭りCH\n【少年八木節】　飛鳥山公園輪踊り　「舞ことり」19　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://yo"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=9CVl3g-jcYo",
-          "date": "2026-06-07T10:00:36+00:00",
-          "text": "和太鼓お祭りCH\n大江戸東京音頭　飛鳥山公園輪踊り　「舞ことり」18　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://yo"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=fxhLS--zqwQ",
-          "date": "2026-06-06T10:30:06+00:00",
-          "text": "和太鼓お祭りCH\n黒潮太鼓　飛鳥山公園輪踊り　「舞ことり」17　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://youtu"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=NxTvnbZME0M",
-          "date": "2026-06-06T10:00:23+00:00",
-          "text": "和太鼓お祭りCH\nらんまん踊り　飛鳥山公園輪踊り　「舞ことり」16　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://you"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=lrEeotdmhTM",
-          "date": "2026-06-05T10:30:23+00:00",
-          "text": "和太鼓お祭りCH\n「俺ら炭鉱夫」　飛鳥山公園輪踊り　「舞ことり」15　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://yo"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=12_m0E9kv3Y",
-          "date": "2026-06-05T10:00:39+00:00",
-          "text": "和太鼓お祭りCH\n「美子の三味線ドンパン」　飛鳥山公園輪踊り　「舞ことり」14　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=VW58EPXJmg4",
-          "date": "2026-06-04T10:30:33+00:00",
-          "text": "和太鼓お祭りCH\nゆかた音頭　飛鳥山公園輪踊り　「舞ことり」13　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://yout"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=NYWWFBYXeCE",
-          "date": "2026-06-04T10:00:34+00:00",
-          "text": "和太鼓お祭りCH\n「恋をするなら」　飛鳥山公園輪踊り　「舞ことり」12　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://y"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=PL7Fgs0ifSU",
-          "date": "2026-06-03T10:30:30+00:00",
-          "text": "和太鼓お祭りCH\n佐渡の恋唄　飛鳥山公園輪踊り　「舞ことり」11　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://yout"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=UBGvAcTE6_E",
-          "date": "2026-06-03T10:00:26+00:00",
-          "text": "和太鼓お祭りCH\nふるさと北区　飛鳥山公園輪踊り　「舞ことり」10　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://you"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=Nd1ADi6TxuM",
-          "date": "2026-06-02T11:30:06+00:00",
-          "text": "和太鼓お祭りCH\n東京北都音頭　飛鳥山公園輪踊り　「舞ことり」９　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://yout"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=iQkGYjz61rs",
-          "date": "2026-06-02T11:00:07+00:00",
-          "text": "和太鼓お祭りCH\n飛鳥山音頭　飛鳥山公園輪踊り　「舞ことり」８　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://youtu"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=w6mUO5UuS2g",
-          "date": "2026-06-01T11:30:22+00:00",
-          "text": "和太鼓お祭りCH\n王子小唄　飛鳥山公園輪踊り　「舞ことり」７　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://youtu."
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=3jKTtdLCnI8",
-          "date": "2026-06-01T11:00:24+00:00",
-          "text": "和太鼓お祭りCH\n「相馬盆唄」　飛鳥山公園輪踊り　「舞ことり」６　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=lEt68hsMb4A",
-          "date": "2026-05-31T03:00:37+00:00",
-          "text": "和太鼓お祭りCH\n文京音頭　飛鳥山公園輪踊り　「舞ことり」５　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=BnRG0iS5stA",
-          "date": "2026-05-30T03:00:06+00:00",
-          "text": "和太鼓お祭りCH\nたいとう音頭　飛鳥山公園輪踊り　「舞ことり」４　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=XBHe1QaHQl8",
-          "date": "2026-05-28T18:00:35+00:00",
-          "text": "和太鼓お祭りCH\n板橋音頭　飛鳥山公園輪踊り　「舞ことり」３　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g"
+          "url": "https://x.com/natsutr_bon/status/2059805547512418608",
+          "date": "2026-05-28T01:14:46+00:00",
+          "text": "奈津大郎〘ナツタロ〙\n5/24築地JAM\n\n盆踊り会場としても人気の築地本願寺で民謡クルセイダーズLIVE♪\n花笠音頭からはじまり、ソーラン節では観客揃って船漕いだり波起こしたり〜🌊\n貝殻節、会津磐梯山、炭坑節と民謡踊りを楽しく✨\n\nそのあとも美味しいフードを食べたり、ジャズ、ボサノヴァなどをユルユルっと🥂\n\n#民クル https://t.co/BNQ6P4cM3h"
         }
       ],
       "already_public": true,
-      "evidence_count": 28
+      "evidence_count": 1
     },
     {
-      "id": "02e260332ef0bc66",
-      "song_name": "東北音頭",
-      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
-      "venue": "飛鳥山公園",
-      "area": "北区",
+      "id": "7fa1b2e0916d811e",
+      "song_name": "築地音頭",
+      "event_name": "築地本願寺納涼盆踊り大会",
+      "venue": "築地本願寺",
+      "area": "中央区",
       "status": "公開済み",
       "confidence": "公開済み",
       "reasons": [
@@ -2610,233 +2847,19 @@
       "evidence": [
         {
           "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=tN5cocxKGmw",
-          "date": "2026-06-10T10:00:39+00:00",
-          "text": "和太鼓お祭りCH\n東北音頭　飛鳥山公園輪踊り　「舞ことり」24　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://youtu"
-        }
-      ],
-      "already_public": true,
-      "evidence_count": 1
-    },
-    {
-      "id": "1f6bb959d3896500",
-      "song_name": "東西南北音頭",
-      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
-      "venue": "飛鳥山公園",
-      "area": "北区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public",
-        "song_suffix_near_context"
-      ],
-      "evidence": [
+          "url": "https://x.com/odori2024minato/status/2011648549642191279",
+          "date": "2026-01-15T03:56:03+00:00",
+          "text": "横浜みなと会（盆踊り•民踊•新舞踊）\n『音の巡礼ラジオ』\n#41 ついに発見！「築地音頭」SPレコード捜索大作戦 その顛末\n\n昨日、レコードを築地本願寺へ持参して、副宗務長、盆踊り担当者の方とお話させていただきました\n濃密な20分にまとめていただきました\n是非お聞きください！！\n\nお寺の「音」文化収集家\n未来の住職塾　遠藤卓也さま"
+        },
         {
           "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=yBZ1rXA6LRo",
-          "date": "2026-06-10T10:30:18+00:00",
-          "text": "和太鼓お祭りCH\n「東西南北音頭」　飛鳥山公園輪踊り　「舞ことり」25　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://y"
+          "url": "https://x.com/odori2024minato/status/2011452236954837453",
+          "date": "2026-01-14T14:55:58+00:00",
+          "text": "横浜みなと会（盆踊り•民踊•新舞踊）\n本日は築地本願寺へ伺いました。\n\n盆踊り愛好家に大人気の『築地音頭』\n原盤が残されていないというお話を耳にし、何かお力になれればとご連絡したご縁です。\nとても良いお天気でした。 https://t.co/D7yp5OIYTx"
         }
       ],
       "already_public": true,
-      "evidence_count": 1
-    },
-    {
-      "id": "fba4ad715b6f33be",
-      "song_name": "板橋音頭",
-      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
-      "venue": "飛鳥山公園",
-      "area": "北区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public",
-        "song_suffix_near_context"
-      ],
-      "evidence": [
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=XBHe1QaHQl8",
-          "date": "2026-05-28T18:00:35+00:00",
-          "text": "和太鼓お祭りCH\n板橋音頭　飛鳥山公園輪踊り　「舞ことり」３　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g"
-        }
-      ],
-      "already_public": true,
-      "evidence_count": 1
-    },
-    {
-      "id": "c7f18960f3193ee6",
-      "song_name": "王子小唄",
-      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
-      "venue": "飛鳥山公園",
-      "area": "北区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public",
-        "song_suffix_near_context"
-      ],
-      "evidence": [
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=w6mUO5UuS2g",
-          "date": "2026-06-01T11:30:22+00:00",
-          "text": "和太鼓お祭りCH\n王子小唄　飛鳥山公園輪踊り　「舞ことり」７　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://youtu."
-        }
-      ],
-      "already_public": true,
-      "evidence_count": 1
-    },
-    {
-      "id": "8709edc581168f19",
-      "song_name": "百年桜",
-      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
-      "venue": "飛鳥山公園",
-      "area": "北区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
-      "id": "c888a67f789210dc",
-      "song_name": "相馬盆唄",
-      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
-      "venue": "飛鳥山公園",
-      "area": "北区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
-      "id": "6e23996ddc843e02",
-      "song_name": "終 男おけさ~〆太鼓",
-      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
-      "venue": "飛鳥山公園",
-      "area": "北区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
-      "id": "d3ec6930f20b0b17",
-      "song_name": "美子の三味線ドンパン",
-      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
-      "venue": "飛鳥山公園",
-      "area": "北区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
-      "id": "fa001e31bc3ea9af",
-      "song_name": "花火音頭",
-      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
-      "venue": "飛鳥山公園",
-      "area": "北区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public",
-        "song_suffix_near_context"
-      ],
-      "evidence": [
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=JX5otrjUER4",
-          "date": "2026-06-09T10:30:18+00:00",
-          "text": "和太鼓お祭りCH\n花火音頭　飛鳥山公園輪踊り　「舞ことり」23　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://youtu"
-        }
-      ],
-      "already_public": true,
-      "evidence_count": 1
-    },
-    {
-      "id": "cdaad56cdebbfe01",
-      "song_name": "荒川音頭",
-      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
-      "venue": "飛鳥山公園",
-      "area": "北区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
-      "id": "27eac24775ebd53b",
-      "song_name": "蟹工船",
-      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
-      "venue": "飛鳥山公園",
-      "area": "北区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
-      "id": "04dbdcb7617deb65",
-      "song_name": "飛鳥山音頭",
-      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
-      "venue": "飛鳥山公園",
-      "area": "北区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public",
-        "song_suffix_near_context"
-      ],
-      "evidence": [
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=iQkGYjz61rs",
-          "date": "2026-06-02T11:00:07+00:00",
-          "text": "和太鼓お祭りCH\n飛鳥山音頭　飛鳥山公園輪踊り　「舞ことり」８　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://youtu"
-        }
-      ],
-      "already_public": true,
-      "evidence_count": 1
-    },
-    {
-      "id": "5f8fc07fe38213ac",
-      "song_name": "黒潮太鼓",
-      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
-      "venue": "飛鳥山公園",
-      "area": "北区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
+      "evidence_count": 2
     },
     {
       "id": "be1e2f2f0d6aaf08",
@@ -2882,6 +2905,12 @@
       "evidence": [
         {
           "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=H_B1TNabEyk",
+          "date": "2026-06-16T03:00:35+00:00",
+          "text": "和太鼓お祭りCH\nらんまん踊り　【赤坂日枝神社】山王祭盆踊り16　「山王音頭と民踊大会」の風景　2026年6月13日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り初日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭 初日の熱気\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n１東京音頭　https://you"
+        },
+        {
+          "source": "x_voice",
           "url": "https://x.com/M125M8qgyhWueHS/status/2066525481378468197",
           "date": "2026-06-15T14:17:23+00:00",
           "text": "みそみそ3\n山王音頭と民踊大会\n皆勤出来たの初めてだ！✨\n今日は入れ替え制じゃなかったので一般の人も沢山いて盛り上がってた✨恋をするなら、らんまん踊りは10回は踊れたかも😂\n今年も宜しくお願い致します🙂‍↕️\n#千代田踊りはギリギリ間に合った\n#その後我らが日高屋　\n#思い入れがある人はすぐ描けない笑 https://t.co/18J5VZq9Ok"
@@ -2906,7 +2935,7 @@
         }
       ],
       "already_public": true,
-      "evidence_count": 4
+      "evidence_count": 5
     },
     {
       "id": "a87515d1dcd33862",
@@ -3105,6 +3134,48 @@
       "evidence": [
         {
           "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=Rr-4SBo0MHA",
+          "date": "2026-06-16T12:30:32+00:00",
+          "text": "和太鼓お祭りCH\n東京音頭　赤坂日枝神社盆踊り３日目1　山王祭「山王音頭と民踊大会」　2026年6月15日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り最終日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭盆踊り、3日目最終日の熱気。\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n3日目\n１東京音頭　htt"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=wBY23DA9eiY",
+          "date": "2026-06-16T11:00:15+00:00",
+          "text": "和太鼓お祭りCH\n東京音頭　【赤坂日枝神社】山王祭盆踊り20　「山王音頭と民踊大会」の風景　2026年6月13日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り初日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭 初日の熱気\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n１東京音頭　https://youtu"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=fUZ_rCuiwsc",
+          "date": "2026-06-16T10:30:34+00:00",
+          "text": "和太鼓お祭りCH\n【炭坑節】（鈴木正夫）　【赤坂日枝神社】山王祭盆踊り19　「山王音頭と民踊大会」の風景　2026年6月13日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り初日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭 初日の熱気\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n１東京音頭　https:"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=NSPcZ2XRjuY",
+          "date": "2026-06-16T10:00:13+00:00",
+          "text": "和太鼓お祭りCH\n盆ギリ恋歌（サザンオールスターズ）　【赤坂日枝神社】山王祭盆踊り18　「山王音頭と民踊大会」の風景　2026年6月13日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り初日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭 初日の熱気\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n１東京音頭　"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=yShCRvzUMoQ",
+          "date": "2026-06-16T06:00:10+00:00",
+          "text": "和太鼓お祭りCH\n恋をするなら（橋幸夫）　【赤坂日枝神社】山王祭盆踊り17　「山王音頭と民踊大会」の風景　2026年6月13日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り初日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭 初日の熱気\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n１東京音頭　https:"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=H_B1TNabEyk",
+          "date": "2026-06-16T03:00:35+00:00",
+          "text": "和太鼓お祭りCH\nらんまん踊り　【赤坂日枝神社】山王祭盆踊り16　「山王音頭と民踊大会」の風景　2026年6月13日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り初日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭 初日の熱気\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n１東京音頭　https://you"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://x.com/panda_dapan11/status/2066734648106143993",
+          "date": "2026-06-16T04:08:32+00:00",
+          "text": "パンダ子(パンちゃん)\n2026/06/15\n🏮山王音頭と民踊大会(日枝神社) 最終日\n\n全曲踊れました！\nやはりココならではの曲が好きです❤️\n水戸黄門、恋を…、らんまん、ワッショイで櫓に上がらせて頂きました🙇‍♀️\n昨年ここで櫓初体験をしてガチガチ🥶だったのを思い出しうれしはずかし😅💦\n\n楽しかったです\nありがとうございました🐼 https://t.co/CbEQ5XC0yq"
+        },
+        {
+          "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=OLVt1Scn6us",
           "date": "2026-06-15T11:00:36+00:00",
           "text": "和太鼓お祭りCH\n炭坑節　【赤坂日枝神社】山王祭盆踊り15　「山王音頭と民踊大会」の風景　2026年6月13日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り初日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭 初日の熱気\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n１東京音頭　https://youtu."
@@ -3261,7 +3332,7 @@
         }
       ],
       "already_public": true,
-      "evidence_count": 26
+      "evidence_count": 33
     },
     {
       "id": "f6f9628f0dcc2590",
@@ -3321,6 +3392,42 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=Rr-4SBo0MHA",
+          "date": "2026-06-16T12:30:32+00:00",
+          "text": "和太鼓お祭りCH\n東京音頭　赤坂日枝神社盆踊り３日目1　山王祭「山王音頭と民踊大会」　2026年6月15日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り最終日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭盆踊り、3日目最終日の熱気。\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n3日目\n１東京音頭　htt"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=wBY23DA9eiY",
+          "date": "2026-06-16T11:00:15+00:00",
+          "text": "和太鼓お祭りCH\n東京音頭　【赤坂日枝神社】山王祭盆踊り20　「山王音頭と民踊大会」の風景　2026年6月13日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り初日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭 初日の熱気\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n１東京音頭　https://youtu"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=fUZ_rCuiwsc",
+          "date": "2026-06-16T10:30:34+00:00",
+          "text": "和太鼓お祭りCH\n【炭坑節】（鈴木正夫）　【赤坂日枝神社】山王祭盆踊り19　「山王音頭と民踊大会」の風景　2026年6月13日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り初日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭 初日の熱気\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n１東京音頭　https:"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=NSPcZ2XRjuY",
+          "date": "2026-06-16T10:00:13+00:00",
+          "text": "和太鼓お祭りCH\n盆ギリ恋歌（サザンオールスターズ）　【赤坂日枝神社】山王祭盆踊り18　「山王音頭と民踊大会」の風景　2026年6月13日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り初日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭 初日の熱気\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n１東京音頭　"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=yShCRvzUMoQ",
+          "date": "2026-06-16T06:00:10+00:00",
+          "text": "和太鼓お祭りCH\n恋をするなら（橋幸夫）　【赤坂日枝神社】山王祭盆踊り17　「山王音頭と民踊大会」の風景　2026年6月13日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り初日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭 初日の熱気\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n１東京音頭　https:"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=H_B1TNabEyk",
+          "date": "2026-06-16T03:00:35+00:00",
+          "text": "和太鼓お祭りCH\nらんまん踊り　【赤坂日枝神社】山王祭盆踊り16　「山王音頭と民踊大会」の風景　2026年6月13日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り初日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭 初日の熱気\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n１東京音頭　https://you"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=OLVt1Scn6us",
@@ -3437,7 +3544,7 @@
         }
       ],
       "already_public": true,
-      "evidence_count": 19
+      "evidence_count": 25
     },
     {
       "id": "5a23c0d83a59b9d0",
@@ -3488,6 +3595,36 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=wBY23DA9eiY",
+          "date": "2026-06-16T11:00:15+00:00",
+          "text": "和太鼓お祭りCH\n東京音頭　【赤坂日枝神社】山王祭盆踊り20　「山王音頭と民踊大会」の風景　2026年6月13日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り初日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭 初日の熱気\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n１東京音頭　https://youtu"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=fUZ_rCuiwsc",
+          "date": "2026-06-16T10:30:34+00:00",
+          "text": "和太鼓お祭りCH\n【炭坑節】（鈴木正夫）　【赤坂日枝神社】山王祭盆踊り19　「山王音頭と民踊大会」の風景　2026年6月13日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り初日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭 初日の熱気\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n１東京音頭　https:"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=NSPcZ2XRjuY",
+          "date": "2026-06-16T10:00:13+00:00",
+          "text": "和太鼓お祭りCH\n盆ギリ恋歌（サザンオールスターズ）　【赤坂日枝神社】山王祭盆踊り18　「山王音頭と民踊大会」の風景　2026年6月13日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り初日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭 初日の熱気\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n１東京音頭　"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=yShCRvzUMoQ",
+          "date": "2026-06-16T06:00:10+00:00",
+          "text": "和太鼓お祭りCH\n恋をするなら（橋幸夫）　【赤坂日枝神社】山王祭盆踊り17　「山王音頭と民踊大会」の風景　2026年6月13日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り初日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭 初日の熱気\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n１東京音頭　https:"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=H_B1TNabEyk",
+          "date": "2026-06-16T03:00:35+00:00",
+          "text": "和太鼓お祭りCH\nらんまん踊り　【赤坂日枝神社】山王祭盆踊り16　「山王音頭と民踊大会」の風景　2026年6月13日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り初日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭 初日の熱気\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n１東京音頭　https://you"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=OLVt1Scn6us",
@@ -3610,7 +3747,7 @@
         }
       ],
       "already_public": true,
-      "evidence_count": 20
+      "evidence_count": 25
     },
     {
       "id": "e4cd723b71a48ab5",
@@ -3707,6 +3844,29 @@
       "evidence_count": 0
     },
     {
+      "id": "c2097e829ef0c8ff",
+      "song_name": "花笠踊り",
+      "event_name": "山王音頭と民踊大会",
+      "venue": "山王パークタワー公開空地",
+      "area": "千代田区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public",
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=z5LdywjjDTM",
+          "date": "2026-06-15T08:35:03+00:00",
+          "text": "shu channel\n赤坂・日枝神社🏮盆踊り[3/7]「花笠踊り～おこさ節～相馬甚句」Tokyo Bon Dance👘2026.6.14 @山王パークタワー公開空地\n00:00 花笠踊り\n03:52 おこさ節\n07:55 相馬甚句\n「山王音頭と民踊大会」（納涼大会）\n■日程：令和8年6月13日(土)～6月15日(月)　\n■場所：東京都千代田区永田町2－10－5\n　　　　山王パークタワー公開空地\n■MC：落合先生\n■踊り：落合社中／赤坂あかね会 他\n■太鼓：鈴木社中\n■公式サイト\nhttps://www.tenkamatsuri.jp/minyo/\n\n#日枝神社\n#盆踊り\n#bondance"
+        }
+      ],
+      "already_public": true,
+      "evidence_count": 1
+    },
+    {
       "id": "4f505d4be073d7eb",
       "song_name": "花笠音頭",
       "event_name": "山王音頭と民踊大会",
@@ -3729,6 +3889,36 @@
       ],
       "already_public": true,
       "evidence_count": 1
+    },
+    {
+      "id": "5590550f5b30fd2b",
+      "song_name": "ほっぺちゃん音頭",
+      "event_name": "神田明神納涼祭り アニソン盆踊り",
+      "venue": "神田明神境内",
+      "area": "千代田区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "1308e0ff72ca5978",
+      "song_name": "元気ハツラツ音頭",
+      "event_name": "神田明神納涼祭り アニソン盆踊り",
+      "venue": "神田明神境内",
+      "area": "千代田区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
     },
     {
       "id": "578b1ec86ee92b89",
@@ -3916,6 +4106,156 @@
       "event_name": "丸の内de盆踊り",
       "venue": "行幸通り",
       "area": "千代田区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "25f0ba6b7751b41a",
+      "song_name": "げんき音頭",
+      "event_name": "シタマチ.ふるさと盆踊り大会",
+      "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "3e52fc50d65d1b6e",
+      "song_name": "大東京音頭",
+      "event_name": "シタマチ.ふるさと盆踊り大会",
+      "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "7319b15b01b4fbec",
+      "song_name": "東京音頭",
+      "event_name": "シタマチ.ふるさと盆踊り大会",
+      "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "46bee35f4e0ede19",
+      "song_name": "江州音頭",
+      "event_name": "シタマチ.ふるさと盆踊り大会",
+      "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "e53831ebf2ed50b4",
+      "song_name": "河内音頭",
+      "event_name": "シタマチ.ふるさと盆踊り大会",
+      "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "7686f640bcaae5e3",
+      "song_name": "炭坑節",
+      "event_name": "シタマチ.ふるさと盆踊り大会",
+      "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "91663a5684668b57",
+      "song_name": "花笠音頭",
+      "event_name": "シタマチ.ふるさと盆踊り大会",
+      "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "417fd2c587519281",
+      "song_name": "ふるさと音頭",
+      "event_name": "東本願寺盆踊り",
+      "venue": "東本願寺（浅草）",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "fe1e9d466be1e5db",
+      "song_name": "東京音頭",
+      "event_name": "東本願寺盆踊り",
+      "venue": "東本願寺（浅草）",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "9e9344ab4e86f1c5",
+      "song_name": "炭坑節",
+      "event_name": "東本願寺盆踊り",
+      "venue": "東本願寺（浅草）",
+      "area": "台東区",
       "status": "公開済み",
       "confidence": "公開済み",
       "reasons": [
@@ -5803,10 +6143,520 @@
       "evidence_count": 0
     },
     {
+      "id": "e8cf2e0fce7e6969",
+      "song_name": "ダンシングヒーロー",
+      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE 2025",
+      "venue": "宮下公園",
+      "area": "渋谷区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "93bb85b1a98be704",
+      "song_name": "東京音頭",
+      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE 2025",
+      "venue": "宮下公園",
+      "area": "渋谷区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "b3b48a3779bf2262",
+      "song_name": "ドラえもん音頭",
+      "event_name": "六本木ヒルズ盆踊り",
+      "venue": "六本木ヒルズアリーナ",
+      "area": "港区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "9357276873176f97",
+      "song_name": "六本人音頭",
+      "event_name": "六本木ヒルズ盆踊り",
+      "venue": "六本木ヒルズアリーナ",
+      "area": "港区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "5ae11eb06357b227",
+      "song_name": "六本木音頭",
+      "event_name": "六本木ヒルズ盆踊り",
+      "venue": "六本木ヒルズアリーナ",
+      "area": "港区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "fa559c7f8cfdb0f6",
+      "song_name": "東京音頭",
+      "event_name": "六本木ヒルズ盆踊り",
+      "venue": "六本木ヒルズアリーナ",
+      "area": "港区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "e9a3537ef9782f98",
+      "song_name": "河内おとこ節",
+      "event_name": "六本木ヒルズ盆踊り",
+      "venue": "六本木ヒルズアリーナ",
+      "area": "港区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "2595aabf4829a921",
+      "song_name": "炭坑節",
+      "event_name": "六本木ヒルズ盆踊り",
+      "venue": "六本木ヒルズアリーナ",
+      "area": "港区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "b6f7c41e8276843c",
+      "song_name": "花火音頭",
+      "event_name": "六本木ヒルズ盆踊り",
+      "venue": "六本木ヒルズアリーナ",
+      "area": "港区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "75b99109ff4b2cd6",
+      "song_name": "ご祝儀音頭",
+      "event_name": "第28回新橋こいち祭 盆踊り",
+      "venue": "桜田公園",
+      "area": "港区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "17450f38256febf0",
+      "song_name": "ふるさと音頭",
+      "event_name": "第28回新橋こいち祭 盆踊り",
+      "venue": "桜田公園",
+      "area": "港区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "21bb370469a7319b",
+      "song_name": "ハワイ音頭",
+      "event_name": "第28回新橋こいち祭 盆踊り",
+      "venue": "桜田公園",
+      "area": "港区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "f7b83f024e198188",
+      "song_name": "八木節",
+      "event_name": "第28回新橋こいち祭 盆踊り",
+      "venue": "桜田公園",
+      "area": "港区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "ffa304c82bc69a7e",
+      "song_name": "大東京音頭",
+      "event_name": "第28回新橋こいち祭 盆踊り",
+      "venue": "桜田公園",
+      "area": "港区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "e65f93f91692fdcd",
+      "song_name": "新橋音頭",
+      "event_name": "第28回新橋こいち祭 盆踊り",
+      "venue": "桜田公園",
+      "area": "港区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "071850bf9c3fcabd",
+      "song_name": "新芝音頭",
+      "event_name": "第28回新橋こいち祭 盆踊り",
+      "venue": "桜田公園",
+      "area": "港区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "2fdffc60d7fd2e71",
+      "song_name": "東京音頭",
+      "event_name": "第28回新橋こいち祭 盆踊り",
+      "venue": "桜田公園",
+      "area": "港区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "627b41035537af2c",
+      "song_name": "炭坑節",
+      "event_name": "第28回新橋こいち祭 盆踊り",
+      "venue": "桜田公園",
+      "area": "港区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "f677445573f23a7e",
+      "song_name": "防災音頭",
+      "event_name": "第28回新橋こいち祭 盆踊り",
+      "venue": "桜田公園",
+      "area": "港区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "55b444d7972962b4",
+      "song_name": "ダンシングヒーロー",
+      "event_name": "第10回白金台どんぐり児童遊園 納涼盆踊り大会",
+      "venue": "白金台どんぐり児童遊園",
+      "area": "港区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "85e8484e81683ec7",
+      "song_name": "大東京音頭",
+      "event_name": "第10回白金台どんぐり児童遊園 納涼盆踊り大会",
+      "venue": "白金台どんぐり児童遊園",
+      "area": "港区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "dd26d8f85da736f2",
+      "song_name": "東京五輪音頭",
+      "event_name": "第10回白金台どんぐり児童遊園 納涼盆踊り大会",
+      "venue": "白金台どんぐり児童遊園",
+      "area": "港区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "4d4a1d7d54de7d5d",
+      "song_name": "東京音頭",
+      "event_name": "第10回白金台どんぐり児童遊園 納涼盆踊り大会",
+      "venue": "白金台どんぐり児童遊園",
+      "area": "港区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "172afa6d3bf39855",
+      "song_name": "炭坑節",
+      "event_name": "第10回白金台どんぐり児童遊園 納涼盆踊り大会",
+      "venue": "白金台どんぐり児童遊園",
+      "area": "港区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "22ae5c121d48994a",
+      "song_name": "花火音頭",
+      "event_name": "第10回白金台どんぐり児童遊園 納涼盆踊り大会",
+      "venue": "白金台どんぐり児童遊園",
+      "area": "港区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "30efae050f769d00",
+      "song_name": "花笠音頭",
+      "event_name": "第10回白金台どんぐり児童遊園 納涼盆踊り大会",
+      "venue": "白金台どんぐり児童遊園",
+      "area": "港区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
       "id": "be2c089096923f8d",
       "song_name": "郡上おどり",
       "event_name": "郡上おどり in 青山 2025",
       "venue": "秩父宮ラグビー場駐車場",
+      "area": "港区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "0f09df26de276aa6",
+      "song_name": "ドラえもん音頭",
+      "event_name": "西久保八幡神社 盆踊り",
+      "venue": "西久保八幡神社",
+      "area": "港区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "1d57c2426ceba380",
+      "song_name": "ドンパン節",
+      "event_name": "西久保八幡神社 盆踊り",
+      "venue": "西久保八幡神社",
+      "area": "港区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "f58b526096d192ab",
+      "song_name": "ハワイ音頭",
+      "event_name": "西久保八幡神社 盆踊り",
+      "venue": "西久保八幡神社",
+      "area": "港区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "6badb4c3c8ef5ed0",
+      "song_name": "八木節",
+      "event_name": "西久保八幡神社 盆踊り",
+      "venue": "西久保八幡神社",
+      "area": "港区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "44a14880ecf199fc",
+      "song_name": "大東京音頭",
+      "event_name": "西久保八幡神社 盆踊り",
+      "venue": "西久保八幡神社",
+      "area": "港区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "4ec0e07cbd9d03b9",
+      "song_name": "東京音頭",
+      "event_name": "西久保八幡神社 盆踊り",
+      "venue": "西久保八幡神社",
+      "area": "港区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "16e0cab5e32a60b7",
+      "song_name": "炭坑節",
+      "event_name": "西久保八幡神社 盆踊り",
+      "venue": "西久保八幡神社",
+      "area": "港区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "7ed16e978b0c7f35",
+      "song_name": "花笠音頭",
+      "event_name": "西久保八幡神社 盆踊り",
+      "venue": "西久保八幡神社",
       "area": "港区",
       "status": "公開済み",
       "confidence": "公開済み",
@@ -5898,6 +6748,21 @@
       "event_name": "自由が丘納涼盆踊り大会",
       "venue": "自由が丘駅前ロータリー 特設会場",
       "area": "目黒区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "63017737d48e55ba",
+      "song_name": "炭坑節",
+      "event_name": "第11回 にっぽり炭坑節まつり",
+      "venue": "JR日暮里駅前広場",
+      "area": "荒川区",
       "status": "公開済み",
       "confidence": "公開済み",
       "reasons": [

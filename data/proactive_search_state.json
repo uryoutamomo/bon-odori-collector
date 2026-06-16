@@ -395,7 +395,405 @@
       "last_status": "unconfirmed",
       "confirmed_count": 0,
       "checked_count": 1
+    },
+    "-両国-江戸noren|-両国-江戸noren": {
+      "venue": "-両国-江戸NOREN",
+      "event_name": "-両国-江戸NOREN",
+      "months": [
+        7
+      ],
+      "last_checked_at": "2026-06-16T20:02:37.147439+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "jr恵比寿駅西口広場|jr恵比寿駅西口広場": {
+      "venue": "JR恵比寿駅西口広場",
+      "event_name": "JR恵比寿駅西口広場",
+      "months": [
+        7
+      ],
+      "last_checked_at": "2026-06-16T20:02:37.147439+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "shibuya109前〜道玄坂・文化村通り一帯|shibuya109前〜道玄坂・文化村通り一帯": {
+      "venue": "SHIBUYA109前〜道玄坂・文化村通り一帯",
+      "event_name": "SHIBUYA109前〜道玄坂・文化村通り一帯",
+      "months": [
+        8
+      ],
+      "last_checked_at": "2026-06-16T20:02:37.147439+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "りそな銀行神楽坂支店前|りそな銀行神楽坂支店前": {
+      "venue": "りそな銀行神楽坂支店前",
+      "event_name": "りそな銀行神楽坂支店前",
+      "months": [
+        7
+      ],
+      "last_checked_at": "2026-06-16T20:02:37.147439+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "中央通り（銀座1丁目〜8丁目）|中央通り（銀座1丁目〜8丁目）": {
+      "venue": "中央通り（銀座1丁目〜8丁目）",
+      "event_name": "中央通り（銀座1丁目〜8丁目）",
+      "months": [
+        8
+      ],
+      "last_checked_at": "2026-06-16T20:02:37.147439+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "六本木ヒルズアリーナ|六本木ヒルズアリーナ": {
+      "venue": "六本木ヒルズアリーナ",
+      "event_name": "六本木ヒルズアリーナ",
+      "months": [
+        8
+      ],
+      "last_checked_at": "2026-06-16T20:02:37.147439+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "大正大学|大正大学": {
+      "venue": "大正大学",
+      "event_name": "大正大学",
+      "months": [
+        7
+      ],
+      "last_checked_at": "2026-06-16T20:02:37.147439+00:00",
+      "last_status": "confirmed",
+      "confirmed_count": 1,
+      "checked_count": 1
+    },
+    "大阪・関西万博ポップアップステージ北|大阪・関西万博ポップアップステージ北": {
+      "venue": "大阪・関西万博 ポップアップステージ北",
+      "event_name": "大阪・関西万博 ポップアップステージ北",
+      "months": [
+        7
+      ],
+      "last_checked_at": "2026-06-16T20:02:37.147439+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "天妙国寺|品川第二地区区民まつり・品川青年会盆踊り大会（天妙国寺）": {
+      "venue": "天妙国寺",
+      "event_name": "品川第二地区 区民まつり・品川青年会 盆踊り大会（天妙国寺）",
+      "months": [
+        7
+      ],
+      "last_checked_at": "2026-06-16T20:02:37.147439+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "奥沢小学校|奥沢交和会": {
+      "venue": "奥沢小学校",
+      "event_name": "奥沢交和会",
+      "months": [
+        7
+      ],
+      "last_checked_at": "2026-06-16T20:02:37.147439+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "子安八幡神社|納涼踊り大会": {
+      "venue": "子安八幡神社",
+      "event_name": "納涼踊り大会",
+      "months": [
+        7
+      ],
+      "last_checked_at": "2026-06-16T20:02:37.147439+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "宇奈根氷川神社|宇奈根町会盆踊り大会": {
+      "venue": "宇奈根氷川神社",
+      "event_name": "宇奈根町会 盆踊り大会",
+      "months": [
+        7
+      ],
+      "last_checked_at": "2026-06-16T20:02:37.147439+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "宮下公園|宮下公園": {
+      "venue": "宮下公園",
+      "event_name": "宮下公園",
+      "months": [
+        5,
+        6,
+        9
+      ],
+      "last_checked_at": "2026-06-16T20:02:37.147439+00:00",
+      "last_status": "confirmed",
+      "confirmed_count": 1,
+      "checked_count": 1
+    },
+    "宮前小学校|戸越宮前盆踊り": {
+      "venue": "宮前小学校",
+      "event_name": "戸越宮前盆踊り",
+      "months": [
+        6
+      ],
+      "last_checked_at": "2026-06-16T20:02:37.147439+00:00",
+      "last_status": "confirmed",
+      "confirmed_count": 1,
+      "checked_count": 1
+    },
+    "小山台小学校|小山台小学校": {
+      "venue": "小山台小学校",
+      "event_name": "小山台小学校",
+      "months": [
+        7
+      ],
+      "last_checked_at": "2026-06-16T20:02:37.147439+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "小田急線喜多見駅前南口広場|喜多見盆踊り大会": {
+      "venue": "小田急線喜多見駅前 南口広場",
+      "event_name": "喜多見盆踊り大会",
+      "months": [
+        7
+      ],
+      "last_checked_at": "2026-06-16T20:02:37.147439+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "小田急線祖師ヶ谷大蔵駅前広場|祖師谷商店街振興組合": {
+      "venue": "小田急線祖師ヶ谷大蔵駅前広場",
+      "event_name": "祖師谷商店街振興組合",
+      "months": [
+        7
+      ],
+      "last_checked_at": "2026-06-16T20:02:37.147439+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "山王パークタワー公開空地|山王パークタワー公開空地": {
+      "venue": "山王パークタワー公開空地",
+      "event_name": "山王パークタワー公開空地",
+      "months": [
+        6
+      ],
+      "last_checked_at": "2026-06-16T20:02:37.147439+00:00",
+      "last_status": "confirmed",
+      "confirmed_count": 1,
+      "checked_count": 1
+    },
+    "山王日枝神社|山王音頭と民踊大会": {
+      "venue": "山王日枝神社",
+      "event_name": "山王音頭と民踊大会",
+      "months": [
+        6
+      ],
+      "last_checked_at": "2026-06-16T20:02:37.147439+00:00",
+      "last_status": "confirmed",
+      "confirmed_count": 1,
+      "checked_count": 1
+    },
+    "岸根貴雲寺|岸根貴雲寺": {
+      "venue": "岸根貴雲寺",
+      "event_name": "岸根貴雲寺",
+      "months": [
+        8
+      ],
+      "last_checked_at": "2026-06-16T20:02:37.147439+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "市野倉南児童公園|市野倉南町会盆踊り": {
+      "venue": "市野倉南児童公園",
+      "event_name": "市野倉南町会 盆踊り",
+      "months": [
+        8
+      ],
+      "last_checked_at": "2026-06-16T20:02:37.147439+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "希望ヶ丘団地テニスコート|希望ヶ丘団地夏まつり": {
+      "venue": "希望ヶ丘団地 テニスコート",
+      "event_name": "希望ヶ丘団地夏まつり",
+      "months": [
+        7
+      ],
+      "last_checked_at": "2026-06-16T20:02:37.147439+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "常光寺|常光寺": {
+      "venue": "常光寺",
+      "event_name": "常光寺",
+      "months": [
+        8
+      ],
+      "last_checked_at": "2026-06-16T20:02:37.147439+00:00",
+      "last_status": "confirmed",
+      "confirmed_count": 1,
+      "checked_count": 1
+    },
+    "常龍寺|常龍寺": {
+      "venue": "常龍寺",
+      "event_name": "常龍寺",
+      "months": [
+        8
+      ],
+      "last_checked_at": "2026-06-16T20:02:37.147439+00:00",
+      "last_status": "confirmed",
+      "confirmed_count": 1,
+      "checked_count": 1
+    },
+    "廻沢稲荷神社|千歳台廻沢地区盆踊り": {
+      "venue": "廻沢稲荷神社",
+      "event_name": "千歳台廻沢地区盆踊り",
+      "months": [
+        7
+      ],
+      "last_checked_at": "2026-06-16T20:02:37.147439+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "御旅公園|御旅公園": {
+      "venue": "御旅公園",
+      "event_name": "御旅公園",
+      "months": [
+        8
+      ],
+      "last_checked_at": "2026-06-16T20:02:37.147439+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "恵庭ふるさと公園|恵庭ふるさと公園": {
+      "venue": "恵庭ふるさと公園",
+      "event_name": "恵庭ふるさと公園",
+      "months": [
+        8
+      ],
+      "last_checked_at": "2026-06-16T20:02:37.147439+00:00",
+      "last_status": "confirmed",
+      "confirmed_count": 1,
+      "checked_count": 1
+    },
+    "成城大学9号館前広場|成城学園盆踊り大会": {
+      "venue": "成城大学9号館前広場",
+      "event_name": "成城学園 盆踊り大会",
+      "months": [
+        7
+      ],
+      "last_checked_at": "2026-06-16T20:02:37.147439+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "新宿中央公園ファンモアタイム広場|新宿中央公園ファンモアタイム広場": {
+      "venue": "新宿中央公園 ファンモアタイム広場",
+      "event_name": "新宿中央公園 ファンモアタイム広場",
+      "months": [
+        8
+      ],
+      "last_checked_at": "2026-06-16T20:02:37.147439+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "新宿住友ビル三角広場|居酒屋盆踊り": {
+      "venue": "新宿住友ビル三角広場",
+      "event_name": "居酒屋盆踊り",
+      "months": [
+        6
+      ],
+      "last_checked_at": "2026-06-16T20:02:37.147439+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "旧杜松小学校|旧杜松小学校": {
+      "venue": "旧杜松小学校",
+      "event_name": "旧杜松小学校",
+      "months": [
+        8
+      ],
+      "last_checked_at": "2026-06-16T20:02:37.147439+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "旧江別小学校|旧江別小学校": {
+      "venue": "旧江別小学校",
+      "event_name": "旧江別小学校",
+      "months": [
+        8
+      ],
+      "last_checked_at": "2026-06-16T20:02:37.147439+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "旭児童遊園|東糀谷四・五・六町会納涼盆踊り大会": {
+      "venue": "旭児童遊園",
+      "event_name": "東糀谷四・五・六町会 納涼盆踊り大会",
+      "months": [
+        7
+      ],
+      "last_checked_at": "2026-06-16T20:02:37.147439+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "晴海ふ頭公園|晴海ふ頭公園": {
+      "venue": "晴海ふ頭公園",
+      "event_name": "晴海ふ頭公園",
+      "months": [
+        7
+      ],
+      "last_checked_at": "2026-06-16T20:02:37.147439+00:00",
+      "last_status": "confirmed",
+      "confirmed_count": 1,
+      "checked_count": 1
+    },
+    "木場二丁目公園|木場二丁目公園": {
+      "venue": "木場二丁目公園",
+      "event_name": "木場二丁目公園",
+      "months": [
+        7
+      ],
+      "last_checked_at": "2026-06-16T20:02:37.147439+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "本住吉神社|本住吉神社": {
+      "venue": "本住吉神社",
+      "event_name": "本住吉神社",
+      "months": [
+        8
+      ],
+      "last_checked_at": "2026-06-16T20:02:37.147439+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
     }
   },
-  "updated_at": "2026-06-15T20:11:39.870718+00:00"
+  "updated_at": "2026-06-16T20:02:37.147439+00:00"
 }

@@ -1,237 +1,16 @@
 {
   "generated_by": "build_song_occurrences.py",
-  "generated_at": "2026-06-15T20:13:17.059957+00:00",
+  "generated_at": "2026-06-16T20:04:25.450749+00:00",
   "target_year": 2026,
-  "snapshot_count": 229,
+  "snapshot_count": 271,
   "snapshots": [
     {
-      "snapshot_id": "ba79a669ad28865afe9d",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "fe87ba9e7882b3b07264",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
-      "occurrence_id": "7d7ad80a63c28f1f",
-      "event_name": "第42回大久保まつり パレード 百人町民民謡おどり",
-      "venue": "JR新大久保駅北側から東方向",
-      "song_name": "百人町民民謡おどり",
-      "probability": 24,
-      "basis": "past_evidence",
-      "basis_label": "2025年ヒント",
-      "evidence_count": 1,
-      "speaker_count": 1,
-      "prediction_reliability": [
-        0.4
-      ]
-    },
-    {
-      "snapshot_id": "90d0f45c204f515b1ed8",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
-      "target_year": 2026,
-      "occurrence_id": "2ea00da1f5d942a4",
-      "event_name": "第10回 すみだ輪おどり区民感謝デー",
-      "venue": "すみだ産業会館サンライズホール",
-      "song_name": "すみだ輪おどり",
-      "probability": 24,
-      "basis": "past_evidence",
-      "basis_label": "2025年ヒント",
-      "evidence_count": 1,
-      "speaker_count": 1,
-      "prediction_reliability": [
-        0.4
-      ]
-    },
-    {
-      "snapshot_id": "d9cea596ee291de19a75",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
-      "target_year": 2026,
-      "occurrence_id": "9182a33c790cec5a",
-      "event_name": "第25回 四谷納涼踊り大会",
-      "venue": "四谷ひろばグラウンド（旧四谷第四小学校）",
-      "song_name": "ズンパ音頭",
-      "probability": 24,
-      "basis": "past_evidence",
-      "basis_label": "2025年ヒント",
-      "evidence_count": 1,
-      "speaker_count": 1,
-      "prediction_reliability": [
-        0.4
-      ]
-    },
-    {
-      "snapshot_id": "ce281104d085f54bcbf0",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
-      "target_year": 2026,
-      "occurrence_id": "9182a33c790cec5a",
-      "event_name": "第25回 四谷納涼踊り大会",
-      "venue": "四谷ひろばグラウンド（旧四谷第四小学校）",
-      "song_name": "四谷納涼踊り",
-      "probability": 24,
-      "basis": "past_evidence",
-      "basis_label": "2025年ヒント",
-      "evidence_count": 1,
-      "speaker_count": 1,
-      "prediction_reliability": [
-        0.4
-      ]
-    },
-    {
-      "snapshot_id": "e61292f3d4cade7527ab",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
-      "target_year": 2026,
-      "occurrence_id": "199fd60013333951",
-      "event_name": "第71回大井どんたく夏まつり 初日 盆踊り",
-      "venue": "大井町駅前中央通り",
-      "song_name": "品川甚句",
-      "probability": 24,
-      "basis": "past_evidence",
-      "basis_label": "2025年ヒント",
-      "evidence_count": 1,
-      "speaker_count": 1,
-      "prediction_reliability": [
-        0.4
-      ]
-    },
-    {
-      "snapshot_id": "ed85d3051c2bbe9d97be",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
-      "target_year": 2026,
-      "occurrence_id": "199fd60013333951",
-      "event_name": "第71回大井どんたく夏まつり 初日 盆踊り",
-      "venue": "大井町駅前中央通り",
-      "song_name": "品川音頭",
-      "probability": 24,
-      "basis": "past_evidence",
-      "basis_label": "2025年ヒント",
-      "evidence_count": 1,
-      "speaker_count": 1,
-      "prediction_reliability": [
-        0.4
-      ]
-    },
-    {
-      "snapshot_id": "c7ab4a391e8bef8a1ca8",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
-      "target_year": 2026,
-      "occurrence_id": "199fd60013333951",
-      "event_name": "第71回大井どんたく夏まつり 初日 盆踊り",
-      "venue": "大井町駅前中央通り",
-      "song_name": "大井どんたく音頭",
-      "probability": 24,
-      "basis": "past_evidence",
-      "basis_label": "2025年ヒント",
-      "evidence_count": 1,
-      "speaker_count": 1,
-      "prediction_reliability": [
-        0.4
-      ]
-    },
-    {
-      "snapshot_id": "e135f18daec0a24966dc",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
-      "target_year": 2026,
-      "occurrence_id": "199fd60013333951",
-      "event_name": "第71回大井どんたく夏まつり 初日 盆踊り",
-      "venue": "大井町駅前中央通り",
-      "song_name": "東京音頭",
-      "probability": 24,
-      "basis": "past_evidence",
-      "basis_label": "2025年ヒント",
-      "evidence_count": 1,
-      "speaker_count": 1,
-      "prediction_reliability": [
-        0.4
-      ]
-    },
-    {
-      "snapshot_id": "e7565e0e3e79cf49ff9b",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
-      "target_year": 2026,
-      "occurrence_id": "0ada8e6a5d396db0",
-      "event_name": "旗の台稲荷通り商店会盆踊り 盆ROCK",
-      "venue": "旗の台稲荷通り商店街",
-      "song_name": "ドンパン節",
-      "probability": 24,
-      "basis": "past_evidence",
-      "basis_label": "2025年ヒント",
-      "evidence_count": 1,
-      "speaker_count": 1,
-      "prediction_reliability": [
-        0.4
-      ]
-    },
-    {
-      "snapshot_id": "31a91a92779fad1691fc",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
-      "target_year": 2026,
-      "occurrence_id": "0ada8e6a5d396db0",
-      "event_name": "旗の台稲荷通り商店会盆踊り 盆ROCK",
-      "venue": "旗の台稲荷通り商店街",
-      "song_name": "品川甚句",
-      "probability": 24,
-      "basis": "past_evidence",
-      "basis_label": "2025年ヒント",
-      "evidence_count": 1,
-      "speaker_count": 1,
-      "prediction_reliability": [
-        0.4
-      ]
-    },
-    {
-      "snapshot_id": "c4e75cae30d78fe09eff",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
-      "target_year": 2026,
-      "occurrence_id": "0ada8e6a5d396db0",
-      "event_name": "旗の台稲荷通り商店会盆踊り 盆ROCK",
-      "venue": "旗の台稲荷通り商店街",
-      "song_name": "品川音頭",
-      "probability": 24,
-      "basis": "past_evidence",
-      "basis_label": "2025年ヒント",
-      "evidence_count": 1,
-      "speaker_count": 1,
-      "prediction_reliability": [
-        0.4
-      ]
-    },
-    {
-      "snapshot_id": "d8b91b768ba2d1224ab5",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
-      "target_year": 2026,
-      "occurrence_id": "0ada8e6a5d396db0",
-      "event_name": "旗の台稲荷通り商店会盆踊り 盆ROCK",
-      "venue": "旗の台稲荷通り商店街",
-      "song_name": "大東京音頭",
-      "probability": 24,
-      "basis": "past_evidence",
-      "basis_label": "2025年ヒント",
-      "evidence_count": 1,
-      "speaker_count": 1,
-      "prediction_reliability": [
-        0.4
-      ]
-    },
-    {
-      "snapshot_id": "a829e246074a07fd06eb",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
-      "target_year": 2026,
-      "occurrence_id": "0ada8e6a5d396db0",
-      "event_name": "旗の台稲荷通り商店会盆踊り 盆ROCK",
-      "venue": "旗の台稲荷通り商店街",
-      "song_name": "東京音頭",
-      "probability": 24,
-      "basis": "past_evidence",
-      "basis_label": "2025年ヒント",
-      "evidence_count": 1,
-      "speaker_count": 1,
-      "prediction_reliability": [
-        0.4
-      ]
-    },
-    {
-      "snapshot_id": "d98b555065b692c87785",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
-      "target_year": 2026,
-      "occurrence_id": "0ada8e6a5d396db0",
-      "event_name": "旗の台稲荷通り商店会盆踊り 盆ROCK",
-      "venue": "旗の台稲荷通り商店街",
+      "occurrence_id": "4c3835f7c36098a8",
+      "event_name": "第11回 にっぽり炭坑節まつり",
+      "venue": "JR日暮里駅前広場",
       "song_name": "炭坑節",
       "probability": 24,
       "basis": "past_evidence",
@@ -243,8 +22,348 @@
       ]
     },
     {
-      "snapshot_id": "08e401445d837db9255a",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "253ad0c8d57d8d931e7e",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "5e31739f03c1c9cb",
+      "event_name": "シタマチ.ふるさと盆踊り大会",
+      "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+      "song_name": "げんき音頭",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "7eef5860de8049430f01",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "5e31739f03c1c9cb",
+      "event_name": "シタマチ.ふるさと盆踊り大会",
+      "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+      "song_name": "大東京音頭",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "18319fcb9755235224b8",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "5e31739f03c1c9cb",
+      "event_name": "シタマチ.ふるさと盆踊り大会",
+      "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+      "song_name": "東京音頭",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "c35bb5589131797c668d",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "5e31739f03c1c9cb",
+      "event_name": "シタマチ.ふるさと盆踊り大会",
+      "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+      "song_name": "江州音頭",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "5556819c9c757c2ee06a",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "5e31739f03c1c9cb",
+      "event_name": "シタマチ.ふるさと盆踊り大会",
+      "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+      "song_name": "河内音頭",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "ca3a1bfc33aa737f6109",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "5e31739f03c1c9cb",
+      "event_name": "シタマチ.ふるさと盆踊り大会",
+      "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+      "song_name": "炭坑節",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "fcc4624047e584fc42f8",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "5e31739f03c1c9cb",
+      "event_name": "シタマチ.ふるさと盆踊り大会",
+      "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+      "song_name": "花笠音頭",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "2a202035d07c3f5969b3",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "91acd68953d09a96",
+      "event_name": "大銀座盆踊り",
+      "venue": "中央通り（銀座1丁目〜8丁目）",
+      "song_name": "東京音頭",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "417a691fe0f1bb89aeec",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "91acd68953d09a96",
+      "event_name": "大銀座盆踊り",
+      "venue": "中央通り（銀座1丁目〜8丁目）",
+      "song_name": "炭坑節",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "74524155f5fbf5ecff37",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "91acd68953d09a96",
+      "event_name": "大銀座盆踊り",
+      "venue": "中央通り（銀座1丁目〜8丁目）",
+      "song_name": "銀座ときめき音頭",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "d3515e0475a0ab9cc28e",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "91acd68953d09a96",
+      "event_name": "大銀座盆踊り",
+      "venue": "中央通り（銀座1丁目〜8丁目）",
+      "song_name": "銀座音頭",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "e4c6b1a36e550ac47043",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "4ade13d9001399e1",
+      "event_name": "六本木ヒルズ盆踊り",
+      "venue": "六本木ヒルズアリーナ",
+      "song_name": "ドラえもん音頭",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "27a309096e657791b7c1",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "4ade13d9001399e1",
+      "event_name": "六本木ヒルズ盆踊り",
+      "venue": "六本木ヒルズアリーナ",
+      "song_name": "六本人音頭",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "4c666307ca14701bcae5",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "4ade13d9001399e1",
+      "event_name": "六本木ヒルズ盆踊り",
+      "venue": "六本木ヒルズアリーナ",
+      "song_name": "六本木音頭",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "7c69e72776d9c0a0ded8",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "4ade13d9001399e1",
+      "event_name": "六本木ヒルズ盆踊り",
+      "venue": "六本木ヒルズアリーナ",
+      "song_name": "東京音頭",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "6e5c7931756e74774596",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "4ade13d9001399e1",
+      "event_name": "六本木ヒルズ盆踊り",
+      "venue": "六本木ヒルズアリーナ",
+      "song_name": "河内おとこ節",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "6fd97fdb36803f26d232",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "4ade13d9001399e1",
+      "event_name": "六本木ヒルズ盆踊り",
+      "venue": "六本木ヒルズアリーナ",
+      "song_name": "炭坑節",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "4a5aa892ba218caecc6e",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "4ade13d9001399e1",
+      "event_name": "六本木ヒルズ盆踊り",
+      "venue": "六本木ヒルズアリーナ",
+      "song_name": "花火音頭",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "c3fd01f2a35eaeec8daa",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "5ba49c9460a4b680",
+      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE 2025",
+      "venue": "宮下公園",
+      "song_name": "ダンシングヒーロー",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "0f6e4c32bdd62b02c2dc",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "5ba49c9460a4b680",
+      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE 2025",
+      "venue": "宮下公園",
+      "song_name": "東京音頭",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "33bd2168421141070915",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ec59a8a891e1e0e5",
       "event_name": "Min-Yoi's盆踊り",
@@ -258,8 +377,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "6f8f9fb7e2d1873fe385",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "e9b58f89198da5330586",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ec59a8a891e1e0e5",
       "event_name": "Min-Yoi's盆踊り",
@@ -273,8 +392,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "4068327182ffae33a418",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "ac6e177ea7db6b281f96",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ec59a8a891e1e0e5",
       "event_name": "Min-Yoi's盆踊り",
@@ -288,8 +407,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "ffa35df8e96c55cec87e",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "e6e2e68bd157f9f5932e",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ec59a8a891e1e0e5",
       "event_name": "Min-Yoi's盆踊り",
@@ -303,8 +422,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "4cac45a0dee9a6a9a0e1",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "14b919339be1fcc949ce",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ec59a8a891e1e0e5",
       "event_name": "Min-Yoi's盆踊り",
@@ -318,8 +437,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "cbd9d4480fc919b73d4c",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "77acd3a3feae4aec1a0e",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ec59a8a891e1e0e5",
       "event_name": "Min-Yoi's盆踊り",
@@ -333,8 +452,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "5091ae3caaafd548dbcb",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "1174190c015acb6b64d6",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ec59a8a891e1e0e5",
       "event_name": "Min-Yoi's盆踊り",
@@ -348,8 +467,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "7b02a760e850d20fb14b",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "e12bd6a01219f5dac9e6",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ec59a8a891e1e0e5",
       "event_name": "Min-Yoi's盆踊り",
@@ -363,8 +482,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "3199a478ffd4ed78b2c9",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "5594db1f7cf9503468b7",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ec59a8a891e1e0e5",
       "event_name": "Min-Yoi's盆踊り",
@@ -378,8 +497,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "c4cf64cc8595136b8d11",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "f672672c2803046b7992",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ec59a8a891e1e0e5",
       "event_name": "Min-Yoi's盆踊り",
@@ -393,8 +512,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "a0ce5a3fa3b88c707098",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "efcc9a63088eb6bbf809",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ec59a8a891e1e0e5",
       "event_name": "Min-Yoi's盆踊り",
@@ -408,8 +527,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "f09ebd010e694a1983d5",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "1a8a6b6f113780585bbb",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ec59a8a891e1e0e5",
       "event_name": "Min-Yoi's盆踊り",
@@ -423,8 +542,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "bd8a81a4ff19534817e0",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "4b2d3a3036ad44d184aa",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ec59a8a891e1e0e5",
       "event_name": "Min-Yoi's盆踊り",
@@ -438,8 +557,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "2195db672e7c8769a9b8",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "4e1314b5631e32d899dd",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ec59a8a891e1e0e5",
       "event_name": "Min-Yoi's盆踊り",
@@ -453,8 +572,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "30530cea5874e8b7371a",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "f69a7ca4916e4a8251d2",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ec59a8a891e1e0e5",
       "event_name": "Min-Yoi's盆踊り",
@@ -468,8 +587,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "d24d3373175c0befd996",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "3d9267792da5057ac569",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ec59a8a891e1e0e5",
       "event_name": "Min-Yoi's盆踊り",
@@ -483,8 +602,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "fdf6ce93b50d9fc5505c",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "417e0175f21ad06dbd7b",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ec59a8a891e1e0e5",
       "event_name": "Min-Yoi's盆踊り",
@@ -498,8 +617,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "44a2bb99e45460ade338",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "801024d8e81a99b95617",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ec59a8a891e1e0e5",
       "event_name": "Min-Yoi's盆踊り",
@@ -513,8 +632,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "e06bd4aa373c2fc3b8a2",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "7daa6dcfc51f9d0f1b0f",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ec59a8a891e1e0e5",
       "event_name": "Min-Yoi's盆踊り",
@@ -528,8 +647,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "c02c556828c5c9f3a4f0",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "33006b734b441690f2d0",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ec59a8a891e1e0e5",
       "event_name": "Min-Yoi's盆踊り",
@@ -543,8 +662,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "362a19f9163408cff111",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "2eb6d8cdbd5b13a23d7a",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ec59a8a891e1e0e5",
       "event_name": "Min-Yoi's盆踊り",
@@ -558,8 +677,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "bbf507ffa83c219af56d",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "22aaa4e54c344213a2cb",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ec59a8a891e1e0e5",
       "event_name": "Min-Yoi's盆踊り",
@@ -573,8 +692,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "6167533183dc7187cd2b",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "9bf9547bfddaedec989e",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ec59a8a891e1e0e5",
       "event_name": "Min-Yoi's盆踊り",
@@ -588,8 +707,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "fa7156b2a6187ca08c9a",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "ed6b101841f5cdfd25d0",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ec59a8a891e1e0e5",
       "event_name": "Min-Yoi's盆踊り",
@@ -603,8 +722,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "2b00377d50c5cc4eb870",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "81231e4909e2770957ee",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ec59a8a891e1e0e5",
       "event_name": "Min-Yoi's盆踊り",
@@ -618,8 +737,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "2a631ebb7cacacd1fcc9",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "b6283cd0b0c935030e0b",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ec59a8a891e1e0e5",
       "event_name": "Min-Yoi's盆踊り",
@@ -633,8 +752,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "b45ea110dc928d953903",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "600747582e6332176ac1",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ec59a8a891e1e0e5",
       "event_name": "Min-Yoi's盆踊り",
@@ -648,8 +767,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "82af05ef530010293938",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "ec2aeae36a6a381f9bc3",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ec59a8a891e1e0e5",
       "event_name": "Min-Yoi's盆踊り",
@@ -663,29 +782,12 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "ce689d012dbeb63a12ef",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "6e812556401b400f7a45",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
-      "occurrence_id": "b13312dabcbce1fc",
-      "event_name": "郡上おどり in 青山 2025",
-      "venue": "秩父宮ラグビー場駐車場",
-      "song_name": "郡上おどり",
-      "probability": 24,
-      "basis": "past_evidence",
-      "basis_label": "2025年ヒント",
-      "evidence_count": 1,
-      "speaker_count": 1,
-      "prediction_reliability": [
-        0.4
-      ]
-    },
-    {
-      "snapshot_id": "6e1fd46bdd4bb0991297",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
-      "target_year": 2026,
-      "occurrence_id": "24e0fbd90ad9ef80",
-      "event_name": "自由が丘納涼盆踊り大会",
-      "venue": "自由が丘駅前ロータリー 特設会場",
+      "occurrence_id": "ea6194793eca1366",
+      "event_name": "イベント名未確認（晴海ふ頭公園）",
+      "venue": "晴海ふ頭公園",
       "song_name": "ダンシングヒーロー",
       "probability": 24,
       "basis": "past_evidence",
@@ -697,13 +799,13 @@
       ]
     },
     {
-      "snapshot_id": "8ea7eddeb1583fc5d254",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "937305867dc8865b0614",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
-      "occurrence_id": "b8db82255dd0e1f0",
-      "event_name": "丸の内de盆踊り",
-      "venue": "行幸通り",
-      "song_name": "令和おどり",
+      "occurrence_id": "ea6194793eca1366",
+      "event_name": "イベント名未確認（晴海ふ頭公園）",
+      "venue": "晴海ふ頭公園",
+      "song_name": "令和音頭",
       "probability": 24,
       "basis": "past_evidence",
       "basis_label": "2025年ヒント",
@@ -714,135 +816,16 @@
       ]
     },
     {
-      "snapshot_id": "62b76a29436854892eb7",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "d016decb5007fb514548",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
-      "occurrence_id": "b8db82255dd0e1f0",
-      "event_name": "丸の内de盆踊り",
-      "venue": "行幸通り",
-      "song_name": "千代田踊り",
-      "probability": 24,
-      "basis": "past_evidence",
-      "basis_label": "2025年ヒント",
-      "evidence_count": 1,
-      "speaker_count": 1,
-      "prediction_reliability": [
-        0.4
-      ]
-    },
-    {
-      "snapshot_id": "e195c4274afbd7a63552",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
-      "target_year": 2026,
-      "occurrence_id": "b8db82255dd0e1f0",
-      "event_name": "丸の内de盆踊り",
-      "venue": "行幸通り",
-      "song_name": "民謡お国巡り音頭",
-      "probability": 24,
-      "basis": "past_evidence",
-      "basis_label": "2025年ヒント",
-      "evidence_count": 1,
-      "speaker_count": 1,
-      "prediction_reliability": [
-        0.4
-      ]
-    },
-    {
-      "snapshot_id": "e5e220711b667c2ed759",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
-      "target_year": 2026,
-      "occurrence_id": "b8db82255dd0e1f0",
-      "event_name": "丸の内de盆踊り",
-      "venue": "行幸通り",
-      "song_name": "津軽甚句",
-      "probability": 24,
-      "basis": "past_evidence",
-      "basis_label": "2025年ヒント",
-      "evidence_count": 1,
-      "speaker_count": 1,
-      "prediction_reliability": [
-        0.4
-      ]
-    },
-    {
-      "snapshot_id": "61a4b842785093d25bdc",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
-      "target_year": 2026,
-      "occurrence_id": "b8db82255dd0e1f0",
-      "event_name": "丸の内de盆踊り",
-      "venue": "行幸通り",
-      "song_name": "花笠踊り",
-      "probability": 24,
-      "basis": "past_evidence",
-      "basis_label": "2025年ヒント",
-      "evidence_count": 1,
-      "speaker_count": 1,
-      "prediction_reliability": [
-        0.4
-      ]
-    },
-    {
-      "snapshot_id": "7c9e7220eac76f11d2f3",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
-      "target_year": 2026,
-      "occurrence_id": "b8db82255dd0e1f0",
-      "event_name": "丸の内de盆踊り",
-      "venue": "行幸通り",
-      "song_name": "輝き音頭",
-      "probability": 24,
-      "basis": "past_evidence",
-      "basis_label": "2025年ヒント",
-      "evidence_count": 1,
-      "speaker_count": 1,
-      "prediction_reliability": [
-        0.4
-      ]
-    },
-    {
-      "snapshot_id": "e0aaaecd020b6d106eaa",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
-      "target_year": 2026,
-      "occurrence_id": "b8db82255dd0e1f0",
-      "event_name": "丸の内de盆踊り",
-      "venue": "行幸通り",
-      "song_name": "郡上節",
-      "probability": 24,
-      "basis": "past_evidence",
-      "basis_label": "2025年ヒント",
-      "evidence_count": 1,
-      "speaker_count": 1,
-      "prediction_reliability": [
-        0.4
-      ]
-    },
-    {
-      "snapshot_id": "976f7a432a44ed6b7794",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
-      "target_year": 2026,
-      "occurrence_id": "b8db82255dd0e1f0",
-      "event_name": "丸の内de盆踊り",
-      "venue": "行幸通り",
-      "song_name": "龍馬おどり",
-      "probability": 24,
-      "basis": "past_evidence",
-      "basis_label": "2025年ヒント",
-      "evidence_count": 1,
-      "speaker_count": 1,
-      "prediction_reliability": [
-        0.4
-      ]
-    },
-    {
-      "snapshot_id": "2be1014dc7cfbe9043af",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
-      "target_year": 2026,
-      "occurrence_id": "a9bc9561db35d024",
-      "event_name": "第60回あらかわ青年大会 アリストック",
-      "venue": "あらかわ遊園アリスの広場",
+      "occurrence_id": "ea6194793eca1366",
+      "event_name": "イベント名未確認（晴海ふ頭公園）",
+      "venue": "晴海ふ頭公園",
       "song_name": "東京音頭",
-      "probability": 40,
-      "basis": "current_hint",
-      "basis_label": "今年ヒント",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
       "evidence_count": 1,
       "speaker_count": 1,
       "prediction_reliability": [
@@ -850,16 +833,16 @@
       ]
     },
     {
-      "snapshot_id": "960d51f775de16d575e0",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "acc0b98ff48fb4c5c26a",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
-      "occurrence_id": "a9bc9561db35d024",
-      "event_name": "第60回あらかわ青年大会 アリストック",
-      "venue": "あらかわ遊園アリスの広場",
+      "occurrence_id": "ea6194793eca1366",
+      "event_name": "イベント名未確認（晴海ふ頭公園）",
+      "venue": "晴海ふ頭公園",
       "song_name": "炭坑節",
-      "probability": 40,
-      "basis": "current_hint",
-      "basis_label": "今年ヒント",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
       "evidence_count": 1,
       "speaker_count": 1,
       "prediction_reliability": [
@@ -867,16 +850,16 @@
       ]
     },
     {
-      "snapshot_id": "fbfb0f64b26135aa1b48",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "3f12fb02324178b0da04",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
-      "occurrence_id": "a9bc9561db35d024",
-      "event_name": "第60回あらかわ青年大会 アリストック",
-      "venue": "あらかわ遊園アリスの広場",
-      "song_name": "荒川音頭",
-      "probability": 40,
-      "basis": "current_hint",
-      "basis_label": "今年ヒント",
+      "occurrence_id": "8cf18b7e954d1d60",
+      "event_name": "東本願寺盆踊り",
+      "venue": "東本願寺（浅草）",
+      "song_name": "ふるさと音頭",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
       "evidence_count": 1,
       "speaker_count": 1,
       "prediction_reliability": [
@@ -884,8 +867,654 @@
       ]
     },
     {
-      "snapshot_id": "28dbb4282f474ca59c89",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "5799bde4a350c26796d2",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "8cf18b7e954d1d60",
+      "event_name": "東本願寺盆踊り",
+      "venue": "東本願寺（浅草）",
+      "song_name": "東京音頭",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "c7e082a2ce3e42ee2595",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "8cf18b7e954d1d60",
+      "event_name": "東本願寺盆踊り",
+      "venue": "東本願寺（浅草）",
+      "song_name": "炭坑節",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "1878f1a3315c53534f42",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "241a41d1c2b6f59c",
+      "event_name": "第28回新橋こいち祭 盆踊り",
+      "venue": "桜田公園",
+      "song_name": "ご祝儀音頭",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "e3191fbdecad5815aefa",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "241a41d1c2b6f59c",
+      "event_name": "第28回新橋こいち祭 盆踊り",
+      "venue": "桜田公園",
+      "song_name": "ふるさと音頭",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "9d868c4fbc3c767365a4",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "241a41d1c2b6f59c",
+      "event_name": "第28回新橋こいち祭 盆踊り",
+      "venue": "桜田公園",
+      "song_name": "ハワイ音頭",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "5c67e072c335cf28680e",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "241a41d1c2b6f59c",
+      "event_name": "第28回新橋こいち祭 盆踊り",
+      "venue": "桜田公園",
+      "song_name": "八木節",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "841c77cc7931ab7c742a",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "241a41d1c2b6f59c",
+      "event_name": "第28回新橋こいち祭 盆踊り",
+      "venue": "桜田公園",
+      "song_name": "大東京音頭",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "54a7ec3f1728a902c007",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "241a41d1c2b6f59c",
+      "event_name": "第28回新橋こいち祭 盆踊り",
+      "venue": "桜田公園",
+      "song_name": "新橋音頭",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "22e96b4d53f887f6a7ad",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "241a41d1c2b6f59c",
+      "event_name": "第28回新橋こいち祭 盆踊り",
+      "venue": "桜田公園",
+      "song_name": "新芝音頭",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "0c81c830328f4d57b1d9",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "241a41d1c2b6f59c",
+      "event_name": "第28回新橋こいち祭 盆踊り",
+      "venue": "桜田公園",
+      "song_name": "東京音頭",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "49a523f3364baf0c68ed",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "241a41d1c2b6f59c",
+      "event_name": "第28回新橋こいち祭 盆踊り",
+      "venue": "桜田公園",
+      "song_name": "炭坑節",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "270665bc8120c43c98f5",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "241a41d1c2b6f59c",
+      "event_name": "第28回新橋こいち祭 盆踊り",
+      "venue": "桜田公園",
+      "song_name": "防災音頭",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "9549ff0f37b4cfd54218",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "2d10009d47f8d755",
+      "event_name": "第10回白金台どんぐり児童遊園 納涼盆踊り大会",
+      "venue": "白金台どんぐり児童遊園",
+      "song_name": "ダンシングヒーロー",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "bee5042232496e86f76a",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "2d10009d47f8d755",
+      "event_name": "第10回白金台どんぐり児童遊園 納涼盆踊り大会",
+      "venue": "白金台どんぐり児童遊園",
+      "song_name": "大東京音頭",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "6cf95ae7071f09a8bb10",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "2d10009d47f8d755",
+      "event_name": "第10回白金台どんぐり児童遊園 納涼盆踊り大会",
+      "venue": "白金台どんぐり児童遊園",
+      "song_name": "東京五輪音頭",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "9f6f8d8b1982eec0f71b",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "2d10009d47f8d755",
+      "event_name": "第10回白金台どんぐり児童遊園 納涼盆踊り大会",
+      "venue": "白金台どんぐり児童遊園",
+      "song_name": "東京音頭",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "ffc081ee191e27d10ffd",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "2d10009d47f8d755",
+      "event_name": "第10回白金台どんぐり児童遊園 納涼盆踊り大会",
+      "venue": "白金台どんぐり児童遊園",
+      "song_name": "炭坑節",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "96d25b42a94d5e997b90",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "2d10009d47f8d755",
+      "event_name": "第10回白金台どんぐり児童遊園 納涼盆踊り大会",
+      "venue": "白金台どんぐり児童遊園",
+      "song_name": "花火音頭",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "7e8c0fd00264633b3593",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "2d10009d47f8d755",
+      "event_name": "第10回白金台どんぐり児童遊園 納涼盆踊り大会",
+      "venue": "白金台どんぐり児童遊園",
+      "song_name": "花笠音頭",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "3329a20b365419ee2df3",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "b0cf10308c0f879f",
+      "event_name": "神田明神納涼祭り アニソン盆踊り",
+      "venue": "神田明神境内",
+      "song_name": "ほっぺちゃん音頭",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "baff4f24102b6cf071f8",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "b0cf10308c0f879f",
+      "event_name": "神田明神納涼祭り アニソン盆踊り",
+      "venue": "神田明神境内",
+      "song_name": "元気ハツラツ音頭",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "8963215dbc6bd9038a0c",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "24e0fbd90ad9ef80",
+      "event_name": "自由が丘納涼盆踊り大会",
+      "venue": "自由が丘駅前ロータリー 特設会場",
+      "song_name": "ホイップるん音頭",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "43653ae27245b4529f5a",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "24e0fbd90ad9ef80",
+      "event_name": "自由が丘納涼盆踊り大会",
+      "venue": "自由が丘駅前ロータリー 特設会場",
+      "song_name": "大東京音頭",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "e04ffbdc27c230239bc2",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "24e0fbd90ad9ef80",
+      "event_name": "自由が丘納涼盆踊り大会",
+      "venue": "自由が丘駅前ロータリー 特設会場",
+      "song_name": "東京音頭",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "6989d3046f898b8fc6ab",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "24e0fbd90ad9ef80",
+      "event_name": "自由が丘納涼盆踊り大会",
+      "venue": "自由が丘駅前ロータリー 特設会場",
+      "song_name": "炭坑節",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "56ae092f0542d395c4e8",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "b8db82255dd0e1f0",
+      "event_name": "丸の内de盆踊り",
+      "venue": "行幸通り",
+      "song_name": "ドンパン節",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "13cd44fe3afec6a77d18",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "b8db82255dd0e1f0",
+      "event_name": "丸の内de盆踊り",
+      "venue": "行幸通り",
+      "song_name": "八木節",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "acaacb8747e8e6d06560",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "b8db82255dd0e1f0",
+      "event_name": "丸の内de盆踊り",
+      "venue": "行幸通り",
+      "song_name": "大東京音頭",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "fda2cc99d3f457c10e60",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "b8db82255dd0e1f0",
+      "event_name": "丸の内de盆踊り",
+      "venue": "行幸通り",
+      "song_name": "東京音頭",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "babf6e4dbf6d00c2d0ee",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "b8db82255dd0e1f0",
+      "event_name": "丸の内de盆踊り",
+      "venue": "行幸通り",
+      "song_name": "炭坑節",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "ce4cc7f98a354adc6b9d",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "43fe06b06e09c295",
+      "event_name": "西久保八幡神社 盆踊り",
+      "venue": "西久保八幡神社",
+      "song_name": "ドラえもん音頭",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "9b37579c1fed574bc258",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "43fe06b06e09c295",
+      "event_name": "西久保八幡神社 盆踊り",
+      "venue": "西久保八幡神社",
+      "song_name": "ドンパン節",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "ed1c9e22319afba35268",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "43fe06b06e09c295",
+      "event_name": "西久保八幡神社 盆踊り",
+      "venue": "西久保八幡神社",
+      "song_name": "ハワイ音頭",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "dbc0e72383ee2d2fec94",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "43fe06b06e09c295",
+      "event_name": "西久保八幡神社 盆踊り",
+      "venue": "西久保八幡神社",
+      "song_name": "八木節",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "7eda51b94826966e9e19",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "43fe06b06e09c295",
+      "event_name": "西久保八幡神社 盆踊り",
+      "venue": "西久保八幡神社",
+      "song_name": "大東京音頭",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "762fec245872e7b5880f",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "43fe06b06e09c295",
+      "event_name": "西久保八幡神社 盆踊り",
+      "venue": "西久保八幡神社",
+      "song_name": "東京音頭",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "d78eb715f16684f1e6af",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "43fe06b06e09c295",
+      "event_name": "西久保八幡神社 盆踊り",
+      "venue": "西久保八幡神社",
+      "song_name": "炭坑節",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "109447ff5d57d343c7c4",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "43fe06b06e09c295",
+      "event_name": "西久保八幡神社 盆踊り",
+      "venue": "西久保八幡神社",
+      "song_name": "花笠音頭",
+      "probability": 24,
+      "basis": "past_evidence",
+      "basis_label": "2025年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "cba15909c2bd21fdb385",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "0583978e0c9fb89d",
       "event_name": "横浜開港祭 BON ODORI",
@@ -899,8 +1528,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "cc44423169eb248f695b",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "4a8759cb6afd234f0013",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "0583978e0c9fb89d",
       "event_name": "横浜開港祭 BON ODORI",
@@ -914,8 +1543,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "5796b7f4acf75d6b865a",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "6609d2fb786c30a10bca",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "0583978e0c9fb89d",
       "event_name": "横浜開港祭 BON ODORI",
@@ -929,8 +1558,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "de278c56d0b8caff6690",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "a45ba03bf57898240ee3",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "0583978e0c9fb89d",
       "event_name": "横浜開港祭 BON ODORI",
@@ -944,8 +1573,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "3df04219dcfd206faf79",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "ef4f27f41ca96b04f413",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "0583978e0c9fb89d",
       "event_name": "横浜開港祭 BON ODORI",
@@ -959,8 +1588,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "cab806cff4d70073a857",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "29186cd49c720f14b47b",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "0583978e0c9fb89d",
       "event_name": "横浜開港祭 BON ODORI",
@@ -974,8 +1603,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "68f7cca0481d41e00ddc",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "7a6ef13cf532c727142b",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "0583978e0c9fb89d",
       "event_name": "横浜開港祭 BON ODORI",
@@ -989,8 +1618,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "43b873a9b9fe26c027bd",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "ba09b44becf5c2dc7fea",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "0583978e0c9fb89d",
       "event_name": "横浜開港祭 BON ODORI",
@@ -1004,8 +1633,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "24e9fa477af1294575be",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "1663ae199ff7448867ad",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "0583978e0c9fb89d",
       "event_name": "横浜開港祭 BON ODORI",
@@ -1019,8 +1648,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "f488f14db7c65330d232",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "877c47e764aa0e0fd6c0",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "0583978e0c9fb89d",
       "event_name": "横浜開港祭 BON ODORI",
@@ -1034,8 +1663,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "f3520d8e783ebf2ec7c1",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "970669033ff5a31c8171",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "0583978e0c9fb89d",
       "event_name": "横浜開港祭 BON ODORI",
@@ -1049,8 +1678,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "f3faa2aa578cc9088885",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "ef0464dd313c79e98a3e",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "0583978e0c9fb89d",
       "event_name": "横浜開港祭 BON ODORI",
@@ -1064,8 +1693,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "e8e150e0457d36ae7531",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "957a4084bc07c661baee",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "0583978e0c9fb89d",
       "event_name": "横浜開港祭 BON ODORI",
@@ -1079,8 +1708,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "372c24768890b0d801f1",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "7b11d0d614c90398bc52",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "0583978e0c9fb89d",
       "event_name": "横浜開港祭 BON ODORI",
@@ -1094,8 +1723,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "22b3f2a0fd947c8e5b34",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "3ea809c1239942fe8fef",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "8b1c38fad2b90e29",
       "event_name": "マロニエまつり盆踊り大会 2 ヒューリック浅草橋ビル前(全曲ver)",
@@ -1109,8 +1738,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "dee755fbe2b2a5302f9b",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "d9ee0a018fa1a854ccbb",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "8b1c38fad2b90e29",
       "event_name": "マロニエまつり盆踊り大会 2 ヒューリック浅草橋ビル前(全曲ver)",
@@ -1124,8 +1753,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "10cdf0b514e2949efcff",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "ae1f46ea4fad17ff5ee7",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "8b1c38fad2b90e29",
       "event_name": "マロニエまつり盆踊り大会 2 ヒューリック浅草橋ビル前(全曲ver)",
@@ -1139,8 +1768,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "dcaeb7e9cada55d1bab2",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "e7e5aa607a76c105338e",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "8b1c38fad2b90e29",
       "event_name": "マロニエまつり盆踊り大会 2 ヒューリック浅草橋ビル前(全曲ver)",
@@ -1154,8 +1783,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "9476976df2d9b9316a2e",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "f17b5bea5cd64d615bf6",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "8b1c38fad2b90e29",
       "event_name": "マロニエまつり盆踊り大会 2 ヒューリック浅草橋ビル前(全曲ver)",
@@ -1169,8 +1798,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "d1de91181d2b2d1f7f3b",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "2e717efcbaa18feda793",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "8b1c38fad2b90e29",
       "event_name": "マロニエまつり盆踊り大会 2 ヒューリック浅草橋ビル前(全曲ver)",
@@ -1184,8 +1813,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "8be3c80e2f596132b39b",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "fd7a20609b1695430cea",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "8b1c38fad2b90e29",
       "event_name": "マロニエまつり盆踊り大会 2 ヒューリック浅草橋ビル前(全曲ver)",
@@ -1199,8 +1828,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "03d3e1ac9aab9454a879",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "6adfbf1d12168ed761f4",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "8b1c38fad2b90e29",
       "event_name": "マロニエまつり盆踊り大会 2 ヒューリック浅草橋ビル前(全曲ver)",
@@ -1214,8 +1843,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "e8f5d4ac8c6915358c49",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "54715ea1ca65c9ea8907",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "8b1c38fad2b90e29",
       "event_name": "マロニエまつり盆踊り大会 2 ヒューリック浅草橋ビル前(全曲ver)",
@@ -1229,8 +1858,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "2282b027b883567f86ec",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "784a8f9f63aae7d0e7d5",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "8b1c38fad2b90e29",
       "event_name": "マロニエまつり盆踊り大会 2 ヒューリック浅草橋ビル前(全曲ver)",
@@ -1244,8 +1873,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "a4b495a9f78872eace28",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "a9e1bdd22f211780cc30",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "8b1c38fad2b90e29",
       "event_name": "マロニエまつり盆踊り大会 2 ヒューリック浅草橋ビル前(全曲ver)",
@@ -1259,8 +1888,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "14d025a868d5962c26d6",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "92675c803866bf8fc75f",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "8b1c38fad2b90e29",
       "event_name": "マロニエまつり盆踊り大会 2 ヒューリック浅草橋ビル前(全曲ver)",
@@ -1274,8 +1903,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "e277c66c15f962c297ec",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "5ead102dc7fca175301b",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "8b1c38fad2b90e29",
       "event_name": "マロニエまつり盆踊り大会 2 ヒューリック浅草橋ビル前(全曲ver)",
@@ -1289,8 +1918,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "35f82a470c9973d3aa1d",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "bd85ee2de60430cbf37c",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "8b1c38fad2b90e29",
       "event_name": "マロニエまつり盆踊り大会 2 ヒューリック浅草橋ビル前(全曲ver)",
@@ -1304,8 +1933,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "ea69c69c4880b0b3176c",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "4510b946c8b01b420298",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "8b1c38fad2b90e29",
       "event_name": "マロニエまつり盆踊り大会 2 ヒューリック浅草橋ビル前(全曲ver)",
@@ -1319,8 +1948,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "378aac3f6d7565e7c770",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "7f0f118ba805ab8f5d47",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "8b1c38fad2b90e29",
       "event_name": "マロニエまつり盆踊り大会 2 ヒューリック浅草橋ビル前(全曲ver)",
@@ -1334,8 +1963,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "e00b81e86652403594e5",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "795514d31f8d828f7b1e",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "8b1c38fad2b90e29",
       "event_name": "マロニエまつり盆踊り大会 2 ヒューリック浅草橋ビル前(全曲ver)",
@@ -1349,8 +1978,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "9740dab92cc2068a98d9",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "bb2727756a7c31a2900f",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "8b1c38fad2b90e29",
       "event_name": "マロニエまつり盆踊り大会 2 ヒューリック浅草橋ビル前(全曲ver)",
@@ -1364,8 +1993,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "ddbaddeb87075a048f19",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "a157096fe8fa96cccac2",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "8b1c38fad2b90e29",
       "event_name": "マロニエまつり盆踊り大会 2 ヒューリック浅草橋ビル前(全曲ver)",
@@ -1379,8 +2008,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "ec09331b4c4ee8b5d959",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "96c40b5d7ac6e3bcc3a4",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "8b1c38fad2b90e29",
       "event_name": "マロニエまつり盆踊り大会 2 ヒューリック浅草橋ビル前(全曲ver)",
@@ -1394,8 +2023,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "2adc94722476c94d5482",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "d6700a2c67fd511b6843",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "8b1c38fad2b90e29",
       "event_name": "マロニエまつり盆踊り大会 2 ヒューリック浅草橋ビル前(全曲ver)",
@@ -1409,8 +2038,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "98c5c1445db5f0de0faf",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "6e370d7967cf2d734bac",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "8b1c38fad2b90e29",
       "event_name": "マロニエまつり盆踊り大会 2 ヒューリック浅草橋ビル前(全曲ver)",
@@ -1424,8 +2053,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "fcfdfd3b673b6890cb46",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "dc58f34c8ed17e0f2c3f",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "8b1c38fad2b90e29",
       "event_name": "マロニエまつり盆踊り大会 2 ヒューリック浅草橋ビル前(全曲ver)",
@@ -1439,8 +2068,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "8f2301190cb7ca446181",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "61a354d1f94178bced69",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "8b1c38fad2b90e29",
       "event_name": "マロニエまつり盆踊り大会 2 ヒューリック浅草橋ビル前(全曲ver)",
@@ -1454,8 +2083,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "0d78dbc758ba64ffa780",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "430d95a067d72f888157",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "8b1c38fad2b90e29",
       "event_name": "マロニエまつり盆踊り大会 2 ヒューリック浅草橋ビル前(全曲ver)",
@@ -1469,8 +2098,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "c4c17fbacd831733a30b",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "3156e0f00b85f34143f4",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "8b1c38fad2b90e29",
       "event_name": "マロニエまつり盆踊り大会 2 ヒューリック浅草橋ビル前(全曲ver)",
@@ -1484,8 +2113,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "a7804ab66bc3f7f02331",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "07c20b81a4225ee7ef7b",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "8b1c38fad2b90e29",
       "event_name": "マロニエまつり盆踊り大会 2 ヒューリック浅草橋ビル前(全曲ver)",
@@ -1499,8 +2128,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "42de9048ef9ed4f144e2",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "423d5fc5b422f66e2352",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "8b1c38fad2b90e29",
       "event_name": "マロニエまつり盆踊り大会 2 ヒューリック浅草橋ビル前(全曲ver)",
@@ -1514,8 +2143,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "0b53a970ebe797ab4b84",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "eaae8d9bb6ea294a9267",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "8b1c38fad2b90e29",
       "event_name": "マロニエまつり盆踊り大会 2 ヒューリック浅草橋ビル前(全曲ver)",
@@ -1529,8 +2158,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "ba2b6f73c3ef455c5807",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "a82ff701acaa23e0867c",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "8b1c38fad2b90e29",
       "event_name": "マロニエまつり盆踊り大会 2 ヒューリック浅草橋ビル前(全曲ver)",
@@ -1544,8 +2173,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "33dac53cda5b5b1d369f",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "a6736b2f0e40b3276a40",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "8b1c38fad2b90e29",
       "event_name": "マロニエまつり盆踊り大会 2 ヒューリック浅草橋ビル前(全曲ver)",
@@ -1559,8 +2188,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "9544a5d936cb9b4b355d",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "d2146c9ac488d175daf9",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "8b1c38fad2b90e29",
       "event_name": "マロニエまつり盆踊り大会 2 ヒューリック浅草橋ビル前(全曲ver)",
@@ -1574,8 +2203,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "d9ef6f9cb848016b02bf",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "a1b92ee34c2539ab8c7e",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "8b1c38fad2b90e29",
       "event_name": "マロニエまつり盆踊り大会 2 ヒューリック浅草橋ビル前(全曲ver)",
@@ -1589,8 +2218,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "e55b51a7a61fbde2a794",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "35755632219f92955cf3",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "8b1c38fad2b90e29",
       "event_name": "マロニエまつり盆踊り大会 2 ヒューリック浅草橋ビル前(全曲ver)",
@@ -1604,8 +2233,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "d39200e815b6a025830f",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "a5489ab42e1b11e118df",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "8b1c38fad2b90e29",
       "event_name": "マロニエまつり盆踊り大会 2 ヒューリック浅草橋ビル前(全曲ver)",
@@ -1619,8 +2248,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "11b80c57a80b41a6c851",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "7f53b532f52d6617bc50",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "8b1c38fad2b90e29",
       "event_name": "マロニエまつり盆踊り大会 2 ヒューリック浅草橋ビル前(全曲ver)",
@@ -1634,8 +2263,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "28c53d8d7841ad19bd22",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "cd905bab90d05b344708",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "8b1c38fad2b90e29",
       "event_name": "マロニエまつり盆踊り大会 2 ヒューリック浅草橋ビル前(全曲ver)",
@@ -1649,8 +2278,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "c14a5f5d1a2007767790",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "7d3b319e7a812c183570",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "8b1c38fad2b90e29",
       "event_name": "マロニエまつり盆踊り大会 2 ヒューリック浅草橋ビル前(全曲ver)",
@@ -1664,8 +2293,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "e6d50826bae1ac4f2612",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "596cef1080498dcb1c75",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "8b1c38fad2b90e29",
       "event_name": "マロニエまつり盆踊り大会 2 ヒューリック浅草橋ビル前(全曲ver)",
@@ -1679,8 +2308,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "a6d7b8b892a445699bc0",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "944125d043c74d094672",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "8b1c38fad2b90e29",
       "event_name": "マロニエまつり盆踊り大会 2 ヒューリック浅草橋ビル前(全曲ver)",
@@ -1694,8 +2323,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "6b42592a6053f6baf09a",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "a97f099675c471b8d038",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "8b1c38fad2b90e29",
       "event_name": "マロニエまつり盆踊り大会 2 ヒューリック浅草橋ビル前(全曲ver)",
@@ -1709,59 +2338,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "aa9c01d476e9ef3a6593",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
-      "target_year": 2026,
-      "occurrence_id": "8d41395b55af5e9a",
-      "event_name": "西図子 盆踊りとおでんの宴",
-      "venue": "向島百花会館",
-      "song_name": "スカイツリー踊り",
-      "probability": 40,
-      "basis": "current_hint",
-      "basis_label": "今年ヒント",
-      "evidence_count": 1,
-      "speaker_count": 1,
-      "prediction_reliability": [
-        0.4
-      ]
-    },
-    {
-      "snapshot_id": "c7e0c22db7b8e2b4f1b4",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
-      "target_year": 2026,
-      "occurrence_id": "8d41395b55af5e9a",
-      "event_name": "西図子 盆踊りとおでんの宴",
-      "venue": "向島百花会館",
-      "song_name": "東京音頭",
-      "probability": 40,
-      "basis": "current_hint",
-      "basis_label": "今年ヒント",
-      "evidence_count": 1,
-      "speaker_count": 1,
-      "prediction_reliability": [
-        0.4
-      ]
-    },
-    {
-      "snapshot_id": "48df8b10b00a889a1623",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
-      "target_year": 2026,
-      "occurrence_id": "8d41395b55af5e9a",
-      "event_name": "西図子 盆踊りとおでんの宴",
-      "venue": "向島百花会館",
-      "song_name": "河内音頭",
-      "probability": 40,
-      "basis": "current_hint",
-      "basis_label": "今年ヒント",
-      "evidence_count": 1,
-      "speaker_count": 1,
-      "prediction_reliability": [
-        0.4
-      ]
-    },
-    {
-      "snapshot_id": "7f74286aea518729d243",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "11ed7f1af5c0d01c5c60",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "88b95f0a8ac7f9ee",
       "event_name": "国立旭通りジューンフェスタ盆踊り",
@@ -1775,8 +2353,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "58e2f7128edec912d2fd",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "805a82917b1bc7536f73",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "88b95f0a8ac7f9ee",
       "event_name": "国立旭通りジューンフェスタ盆踊り",
@@ -1790,8 +2368,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "641f6cb972b77261862c",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "a5b2d2d2c3695cd8176a",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "88b95f0a8ac7f9ee",
       "event_name": "国立旭通りジューンフェスタ盆踊り",
@@ -1805,8 +2383,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "86c89e8cd89507d928c1",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "6d0cfb0220535931f2fd",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "88b95f0a8ac7f9ee",
       "event_name": "国立旭通りジューンフェスタ盆踊り",
@@ -1820,8 +2398,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "071871eba0844b436e8d",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "fe7f8309d7c2621028e0",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "88b95f0a8ac7f9ee",
       "event_name": "国立旭通りジューンフェスタ盆踊り",
@@ -1835,8 +2413,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "4124c5d1384ddb87dfae",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "d73ae53ad483a9e1e7c5",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "88b95f0a8ac7f9ee",
       "event_name": "国立旭通りジューンフェスタ盆踊り",
@@ -1850,8 +2428,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "10435021124b51414409",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "7afc63fc570ef2418980",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "88b95f0a8ac7f9ee",
       "event_name": "国立旭通りジューンフェスタ盆踊り",
@@ -1865,8 +2443,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "0d59791d3833d199f758",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "8b2ee170bcbd449c980a",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "88b95f0a8ac7f9ee",
       "event_name": "国立旭通りジューンフェスタ盆踊り",
@@ -1880,8 +2458,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "687627746ffdb206d350",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "78600c8d793bda3d358a",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "88b95f0a8ac7f9ee",
       "event_name": "国立旭通りジューンフェスタ盆踊り",
@@ -1895,8 +2473,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "e3875a9b50a88cb5a11d",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "bb94604718303a86dec5",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "88b95f0a8ac7f9ee",
       "event_name": "国立旭通りジューンフェスタ盆踊り",
@@ -1910,8 +2488,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "55703bbddd66699e2026",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "4ea951fcf8924b46f55d",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "88b95f0a8ac7f9ee",
       "event_name": "国立旭通りジューンフェスタ盆踊り",
@@ -1925,8 +2503,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "226243cddb1ba52eb313",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "8c56b5bf4e18395876a0",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "88b95f0a8ac7f9ee",
       "event_name": "国立旭通りジューンフェスタ盆踊り",
@@ -1940,8 +2518,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "8bf5f32ca32bfe7b8652",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "fe934f157f3b37c978af",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "cbc4f8f62ae2ed94",
       "event_name": "品川音頭 【おおさきHappy Olive Festival】「晴盆盆踊り」1",
@@ -1955,8 +2533,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "d13bb62881f17746c3ae",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "5d1b4ad41e7f6f5bf783",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "cbc4f8f62ae2ed94",
       "event_name": "品川音頭 【おおさきHappy Olive Festival】「晴盆盆踊り」1",
@@ -1970,8 +2548,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "615e4514cc34a7a0d9bd",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "4932f3b173f0d76bb3ed",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "cbc4f8f62ae2ed94",
       "event_name": "品川音頭 【おおさきHappy Olive Festival】「晴盆盆踊り」1",
@@ -1985,8 +2563,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "94cb3ef56a274593c838",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "e5c7690af28a889dc5ff",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "cbc4f8f62ae2ed94",
       "event_name": "品川音頭 【おおさきHappy Olive Festival】「晴盆盆踊り」1",
@@ -2000,8 +2578,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "eaa1e66abd8708a77db9",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "4244bea66a8a8ceadf6f",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "cbc4f8f62ae2ed94",
       "event_name": "品川音頭 【おおさきHappy Olive Festival】「晴盆盆踊り」1",
@@ -2015,8 +2593,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "c3294181941c7f1b19e8",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "f9a9b0d1b1614ecab094",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "cbc4f8f62ae2ed94",
       "event_name": "品川音頭 【おおさきHappy Olive Festival】「晴盆盆踊り」1",
@@ -2030,8 +2608,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "d5b27ef17059d87befbd",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "3e0b6ce6aff59bc06742",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "cbc4f8f62ae2ed94",
       "event_name": "品川音頭 【おおさきHappy Olive Festival】「晴盆盆踊り」1",
@@ -2045,8 +2623,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "950c927ee51bc8e52fdf",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "a8520a80fb5c4a44cf45",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "cbc4f8f62ae2ed94",
       "event_name": "品川音頭 【おおさきHappy Olive Festival】「晴盆盆踊り」1",
@@ -2060,8 +2638,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "c7565fbcc396d335ce33",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "1de1e2929731a6736659",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "a9cead8dcbd58d22",
       "event_name": "山王音頭と民踊大会",
@@ -2075,8 +2653,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "25ad6a935ccd3a4f454a",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "ab5c573dbb819cb3d888",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "a9cead8dcbd58d22",
       "event_name": "山王音頭と民踊大会",
@@ -2092,8 +2670,8 @@
       ]
     },
     {
-      "snapshot_id": "1af3c0b2fbe3a3ed2ab8",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "aa17eae9d0436684ff91",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "a9cead8dcbd58d22",
       "event_name": "山王音頭と民踊大会",
@@ -2109,8 +2687,8 @@
       ]
     },
     {
-      "snapshot_id": "eb0076e442beb9cfbab4",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "58f6fbc734a50c5b4847",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "a9cead8dcbd58d22",
       "event_name": "山王音頭と民踊大会",
@@ -2126,8 +2704,8 @@
       ]
     },
     {
-      "snapshot_id": "2fead32c3f11d733c287",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "9024f05ef37a293248c1",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "a9cead8dcbd58d22",
       "event_name": "山王音頭と民踊大会",
@@ -2143,8 +2721,8 @@
       ]
     },
     {
-      "snapshot_id": "a2d9a1f9526598b1a383",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "0e1e66126f4fbe0c8235",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "a9cead8dcbd58d22",
       "event_name": "山王音頭と民踊大会",
@@ -2160,8 +2738,8 @@
       ]
     },
     {
-      "snapshot_id": "1646459b24250520726f",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "5d95fa59c0eb3b731e00",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "a9cead8dcbd58d22",
       "event_name": "山王音頭と民踊大会",
@@ -2177,8 +2755,8 @@
       ]
     },
     {
-      "snapshot_id": "663757bbbc86bd9c624a",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "98b4306841dba3af78c5",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "a9cead8dcbd58d22",
       "event_name": "山王音頭と民踊大会",
@@ -2194,8 +2772,8 @@
       ]
     },
     {
-      "snapshot_id": "65ac19c177794db4b6a4",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "d4c6f52c8f3ea8109b23",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "a9cead8dcbd58d22",
       "event_name": "山王音頭と民踊大会",
@@ -2211,8 +2789,8 @@
       ]
     },
     {
-      "snapshot_id": "2f259e7d7e90bf4da59c",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "400082c58dc83d64bf53",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "a9cead8dcbd58d22",
       "event_name": "山王音頭と民踊大会",
@@ -2228,8 +2806,8 @@
       ]
     },
     {
-      "snapshot_id": "845e4319bd111980b453",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "124e488cbc051a21d0ce",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "a9cead8dcbd58d22",
       "event_name": "山王音頭と民踊大会",
@@ -2245,8 +2823,8 @@
       ]
     },
     {
-      "snapshot_id": "8eca65b15bd829525285",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "491a78840474b6c1a4a6",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "a9cead8dcbd58d22",
       "event_name": "山王音頭と民踊大会",
@@ -2262,8 +2840,8 @@
       ]
     },
     {
-      "snapshot_id": "eaa16584cceb7ced874d",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "a3e50677b3606a672356",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "a9cead8dcbd58d22",
       "event_name": "山王音頭と民踊大会",
@@ -2279,8 +2857,8 @@
       ]
     },
     {
-      "snapshot_id": "448132b20cb1ea4ca173",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "847a8acad9998003cff9",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "a9cead8dcbd58d22",
       "event_name": "山王音頭と民踊大会",
@@ -2296,8 +2874,8 @@
       ]
     },
     {
-      "snapshot_id": "4cdda49046dd0248da65",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "b1e1d4f41f16c502e1c1",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "a9cead8dcbd58d22",
       "event_name": "山王音頭と民踊大会",
@@ -2313,8 +2891,8 @@
       ]
     },
     {
-      "snapshot_id": "70b78c11dba49a42e974",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "2d4105ea3ca0f2ab2f13",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "a9cead8dcbd58d22",
       "event_name": "山王音頭と民踊大会",
@@ -2330,8 +2908,8 @@
       ]
     },
     {
-      "snapshot_id": "f3943bddf40a91a727f2",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "9854a85d424ea5fe428b",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "a9cead8dcbd58d22",
       "event_name": "山王音頭と民踊大会",
@@ -2347,8 +2925,8 @@
       ]
     },
     {
-      "snapshot_id": "42757e781fd251c38a98",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "13a399500f690e486c25",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "a9cead8dcbd58d22",
       "event_name": "山王音頭と民踊大会",
@@ -2364,8 +2942,8 @@
       ]
     },
     {
-      "snapshot_id": "01b3d1a234cd4290849b",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "54c6f695d234a06c1871",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "a9cead8dcbd58d22",
       "event_name": "山王音頭と民踊大会",
@@ -2381,8 +2959,8 @@
       ]
     },
     {
-      "snapshot_id": "4a21925c821d5ecd98d0",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "2cac4a9c51c54e342a3a",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "a9cead8dcbd58d22",
       "event_name": "山王音頭と民踊大会",
@@ -2398,8 +2976,25 @@
       ]
     },
     {
-      "snapshot_id": "10c3efa9ead7f0eb7c12",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "60d6349cb4336dc19f23",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "a9cead8dcbd58d22",
+      "event_name": "山王音頭と民踊大会",
+      "venue": "山王パークタワー公開空地",
+      "song_name": "花笠踊り",
+      "probability": 40,
+      "basis": "current_hint",
+      "basis_label": "今年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "9e25ae64a5f494213aa1",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "6bd132803b187ebe",
       "event_name": "Min-Yoi's盆踊り",
@@ -2413,8 +3008,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "7d9b39a240625a6f6a01",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "c2c9d94d93d8c871143f",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "6bd132803b187ebe",
       "event_name": "Min-Yoi's盆踊り",
@@ -2428,8 +3023,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "3f801953191116130fa7",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "c62faa16b062f8aa8d08",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "6bd132803b187ebe",
       "event_name": "Min-Yoi's盆踊り",
@@ -2443,8 +3038,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "8020eb461a2fdc25c735",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "33f393b0f813a863bee1",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "6bd132803b187ebe",
       "event_name": "Min-Yoi's盆踊り",
@@ -2458,8 +3053,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "6ba6d4e14f974730d707",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "fc412c519e80131c831b",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "6bd132803b187ebe",
       "event_name": "Min-Yoi's盆踊り",
@@ -2473,8 +3068,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "0e9d2e180de996e4ba57",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "7ce0174dcb10f817a984",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "6bd132803b187ebe",
       "event_name": "Min-Yoi's盆踊り",
@@ -2488,8 +3083,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "80999598417d278b4e29",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "1e6477e9610e6db4f983",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "6bd132803b187ebe",
       "event_name": "Min-Yoi's盆踊り",
@@ -2503,8 +3098,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "93cea4eeeaab69057993",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "33217054f7f913e74b66",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "6bd132803b187ebe",
       "event_name": "Min-Yoi's盆踊り",
@@ -2518,8 +3113,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "7b0852c353a168f438af",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "a88bacad120b3cc3e78f",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "6bd132803b187ebe",
       "event_name": "Min-Yoi's盆踊り",
@@ -2533,8 +3128,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "b3d4992d8a2b9394cb1b",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "d497c5945943c03dc7bf",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "6bd132803b187ebe",
       "event_name": "Min-Yoi's盆踊り",
@@ -2548,8 +3143,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "6873ce4e4281d28250a0",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "187e0198256679257db5",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "6bd132803b187ebe",
       "event_name": "Min-Yoi's盆踊り",
@@ -2563,8 +3158,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "0cbf4194212e04f5ab1a",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "208c2a216d9f3d7a3f7f",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "6bd132803b187ebe",
       "event_name": "Min-Yoi's盆踊り",
@@ -2578,8 +3173,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "12d27cde91c4fec31626",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "6f6757ee826b80515695",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "6bd132803b187ebe",
       "event_name": "Min-Yoi's盆踊り",
@@ -2593,8 +3188,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "e0273be6559c447c8455",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "abc8f7db08ec652eabf6",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "6bd132803b187ebe",
       "event_name": "Min-Yoi's盆踊り",
@@ -2608,8 +3203,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "a3a8646455a8ab49e127",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "40c4d788fcfa4be7ef4f",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "6bd132803b187ebe",
       "event_name": "Min-Yoi's盆踊り",
@@ -2623,8 +3218,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "39e88d37b45647805b0d",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "99aac4c3a5be4dcf1710",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "6bd132803b187ebe",
       "event_name": "Min-Yoi's盆踊り",
@@ -2638,8 +3233,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "f4bf10172705344061d7",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "f2edf445b7a19e7f735e",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "6bd132803b187ebe",
       "event_name": "Min-Yoi's盆踊り",
@@ -2653,8 +3248,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "078d62f38b267d11cdc9",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "52860cfdf4bdf5c3a8fc",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "6bd132803b187ebe",
       "event_name": "Min-Yoi's盆踊り",
@@ -2668,8 +3263,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "2f87436e3ba6a01cc5e8",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "b8a828c56a63773d9b34",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "6bd132803b187ebe",
       "event_name": "Min-Yoi's盆踊り",
@@ -2683,8 +3278,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "712b8e45f7bc49fb220d",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "60e66a779a0fbe3837ff",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "6bd132803b187ebe",
       "event_name": "Min-Yoi's盆踊り",
@@ -2698,8 +3293,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "5c518d96fe2aa7e3b305",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "5212efa136638c90138e",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "6bd132803b187ebe",
       "event_name": "Min-Yoi's盆踊り",
@@ -2713,8 +3308,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "99e04d479b13b23884d9",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "176046af4d953381bd1a",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "6bd132803b187ebe",
       "event_name": "Min-Yoi's盆踊り",
@@ -2728,8 +3323,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "6b39ed7fe1d04b07d008",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "b789ba218773d54ae5c8",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "6bd132803b187ebe",
       "event_name": "Min-Yoi's盆踊り",
@@ -2743,8 +3338,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "cea252e388f4b9f360e2",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "68550c13f81453d6a244",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "6bd132803b187ebe",
       "event_name": "Min-Yoi's盆踊り",
@@ -2758,8 +3353,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "c9e11acf0ae9df5cde7d",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "82e95f0c0612d39dcc30",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "6bd132803b187ebe",
       "event_name": "Min-Yoi's盆踊り",
@@ -2773,8 +3368,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "9ee37ee7d5950b14d0ca",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "b05b9e0e8dc9b1342c37",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "6bd132803b187ebe",
       "event_name": "Min-Yoi's盆踊り",
@@ -2788,8 +3383,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "a7bb411a05cb880149cb",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "9aa795e4ce067a38b396",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "6bd132803b187ebe",
       "event_name": "Min-Yoi's盆踊り",
@@ -2803,8 +3398,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "cdb47bfc51f0b514b81a",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "4598e8bde28d5ee012cb",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "6bd132803b187ebe",
       "event_name": "Min-Yoi's盆踊り",
@@ -2818,8 +3413,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "e67370a577a530a1b8c9",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "94753c9d9eb421f89758",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "6bd132803b187ebe",
       "event_name": "Min-Yoi's盆踊り",
@@ -2833,8 +3428,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "21eff64cfe947151de6f",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "b45d7ff5cdaee67a4d8f",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "6bd132803b187ebe",
       "event_name": "Min-Yoi's盆踊り",
@@ -2848,8 +3443,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "bc01b9350590c96c68e8",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "ce83612c3d1fbc42d986",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "6bd132803b187ebe",
       "event_name": "Min-Yoi's盆踊り",
@@ -2863,8 +3458,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "c3eda4d1fed27370497e",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "744df30cdc38e67a915d",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "6bd132803b187ebe",
       "event_name": "Min-Yoi's盆踊り",
@@ -2878,8 +3473,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "3bc13a55a855c8fc39ed",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "21b7953650c3807a7b21",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "6bd132803b187ebe",
       "event_name": "Min-Yoi's盆踊り",
@@ -2893,8 +3488,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "a0e5845c3e3f19d6972f",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "74b7de650bef1bc58708",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "6bd132803b187ebe",
       "event_name": "Min-Yoi's盆踊り",
@@ -2908,8 +3503,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "f0fe65bde18018a62c5f",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "1feb7b5702af1c6bfad7",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "6bd132803b187ebe",
       "event_name": "Min-Yoi's盆踊り",
@@ -2923,8 +3518,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "085e49731202e6eb712a",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "3891120180f397fc0709",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "6bd132803b187ebe",
       "event_name": "Min-Yoi's盆踊り",
@@ -2938,8 +3533,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "36e2ba948c4dbd425956",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "367c82e9bdebcfd9a332",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "6bd132803b187ebe",
       "event_name": "Min-Yoi's盆踊り",
@@ -2953,8 +3548,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "c3066eb54a4e528bf5b6",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "904393f2cab9f0c71205",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "6bd132803b187ebe",
       "event_name": "Min-Yoi's盆踊り",
@@ -2968,8 +3563,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "784caa790162bc1a3c2d",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "f6a07d35a6e5e1c4effe",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "6bd132803b187ebe",
       "event_name": "Min-Yoi's盆踊り",
@@ -2983,8 +3578,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "e2dedc85d62ebabd3b79",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "5f4878c57b140b280bfa",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "6bd132803b187ebe",
       "event_name": "Min-Yoi's盆踊り",
@@ -2998,8 +3593,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "79a94587bd66d09ac056",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "4069f3d2772f016fa592",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "6bd132803b187ebe",
       "event_name": "Min-Yoi's盆踊り",
@@ -3013,8 +3608,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "5ad5844660efac2d6d0d",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "efc25612ca9010cba644",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "6bd132803b187ebe",
       "event_name": "Min-Yoi's盆踊り",
@@ -3028,8 +3623,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "9314eed4eab6819bf846",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "4cb62efe0f4ab19ba4e1",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "6bd132803b187ebe",
       "event_name": "Min-Yoi's盆踊り",
@@ -3043,8 +3638,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "18cf3499d5b0daef3f3d",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "f67240ca2fe42c8ae4ef",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "6bd132803b187ebe",
       "event_name": "Min-Yoi's盆踊り",
@@ -3058,13 +3653,13 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "64a4bbfe1086a45914c9",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "bae41c569c7e079bb776",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
-      "occurrence_id": "8f45780e418d7f41",
-      "event_name": "すみだ錦糸町河内音頭大盆踊り",
-      "venue": "江東橋竪川親水公園",
-      "song_name": "河内音頭",
+      "occurrence_id": "8af4b480f7803ce5",
+      "event_name": "築地本願寺納涼盆踊り大会",
+      "venue": "築地本願寺",
+      "song_name": "あやめ踊り",
       "probability": 40,
       "basis": "current_hint",
       "basis_label": "今年ヒント",
@@ -3075,13 +3670,13 @@
       ]
     },
     {
-      "snapshot_id": "2e2b5f64a09b142b49a5",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "561491a96f662abbd6e3",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
-      "occurrence_id": "1c9517e91c7f52b2",
-      "event_name": "すみだ沖縄まつり",
-      "venue": "錦糸公園",
-      "song_name": "すみだ輪おどり",
+      "occurrence_id": "8af4b480f7803ce5",
+      "event_name": "築地本願寺納涼盆踊り大会",
+      "venue": "築地本願寺",
+      "song_name": "おこさ節",
       "probability": 40,
       "basis": "current_hint",
       "basis_label": "今年ヒント",
@@ -3092,8 +3687,127 @@
       ]
     },
     {
-      "snapshot_id": "3545fb3d70871ed430ec",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "74b601ac1eaaf1716d4a",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "8af4b480f7803ce5",
+      "event_name": "築地本願寺納涼盆踊り大会",
+      "venue": "築地本願寺",
+      "song_name": "ホームラン音頭",
+      "probability": 40,
+      "basis": "current_hint",
+      "basis_label": "今年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "f7ca9cdf03538da08759",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "8af4b480f7803ce5",
+      "event_name": "築地本願寺納涼盆踊り大会",
+      "venue": "築地本願寺",
+      "song_name": "大江戸助六音頭",
+      "probability": 40,
+      "basis": "current_hint",
+      "basis_label": "今年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "a840d88f163051c57485",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "8af4b480f7803ce5",
+      "event_name": "築地本願寺納涼盆踊り大会",
+      "venue": "築地本願寺",
+      "song_name": "斎太郎節",
+      "probability": 40,
+      "basis": "current_hint",
+      "basis_label": "今年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "4de7aeaf563f2bc3fb06",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "8af4b480f7803ce5",
+      "event_name": "築地本願寺納涼盆踊り大会",
+      "venue": "築地本願寺",
+      "song_name": "東京音頭",
+      "probability": 40,
+      "basis": "current_hint",
+      "basis_label": "今年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "de9552bf87bf66b9422d",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "8af4b480f7803ce5",
+      "event_name": "築地本願寺納涼盆踊り大会",
+      "venue": "築地本願寺",
+      "song_name": "法輪音頭",
+      "probability": 40,
+      "basis": "current_hint",
+      "basis_label": "今年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "3fe9cc7a7c3602344d5a",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "8af4b480f7803ce5",
+      "event_name": "築地本願寺納涼盆踊り大会",
+      "venue": "築地本願寺",
+      "song_name": "炭坑節",
+      "probability": 40,
+      "basis": "current_hint",
+      "basis_label": "今年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "f09d1e335e2b14ff2086",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
+      "target_year": 2026,
+      "occurrence_id": "8af4b480f7803ce5",
+      "event_name": "築地本願寺納涼盆踊り大会",
+      "venue": "築地本願寺",
+      "song_name": "築地音頭",
+      "probability": 40,
+      "basis": "current_hint",
+      "basis_label": "今年ヒント",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "prediction_reliability": [
+        0.4
+      ]
+    },
+    {
+      "snapshot_id": "e94b9310a4d259f4d05a",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ab493e0439532908",
       "event_name": "飛鳥山公園盆踊り会（有志サークル）",
@@ -3107,8 +3821,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "5d68e712fdad00ed13dd",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "99e68156edc925e76dc1",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ab493e0439532908",
       "event_name": "飛鳥山公園盆踊り会（有志サークル）",
@@ -3122,8 +3836,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "5f8945ac6b73b6628655",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "47c4a33efb8b96e4d40f",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ab493e0439532908",
       "event_name": "飛鳥山公園盆踊り会（有志サークル）",
@@ -3137,8 +3851,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "4e6b40eef8b0ccc641cc",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "e0fe25ac2a37c57807e5",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ab493e0439532908",
       "event_name": "飛鳥山公園盆踊り会（有志サークル）",
@@ -3152,8 +3866,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "d63c2078d6f2df854bcc",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "1bd6ccb74b7a8b8f4d57",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ab493e0439532908",
       "event_name": "飛鳥山公園盆踊り会（有志サークル）",
@@ -3167,8 +3881,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "287f0a3df6133bcd7e33",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "07f52d88017832d0e847",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ab493e0439532908",
       "event_name": "飛鳥山公園盆踊り会（有志サークル）",
@@ -3182,8 +3896,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "8d4aafa13c3e543ff0d4",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "49beb3d9b65e106cb5f2",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ab493e0439532908",
       "event_name": "飛鳥山公園盆踊り会（有志サークル）",
@@ -3197,8 +3911,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "cbb754e569481e3f3af4",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "0115c5e8c7be2d6803da",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ab493e0439532908",
       "event_name": "飛鳥山公園盆踊り会（有志サークル）",
@@ -3212,8 +3926,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "c58b1f051c7b408a91de",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "c6d2a9af7adcacd50ff3",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ab493e0439532908",
       "event_name": "飛鳥山公園盆踊り会（有志サークル）",
@@ -3227,8 +3941,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "22f26ea331c67089fceb",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "3a9d405c85d8ced3913c",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ab493e0439532908",
       "event_name": "飛鳥山公園盆踊り会（有志サークル）",
@@ -3242,8 +3956,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "bc92fbbcd8f0133fd0d3",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "81bfe08f05350a5bc7a2",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ab493e0439532908",
       "event_name": "飛鳥山公園盆踊り会（有志サークル）",
@@ -3257,8 +3971,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "8bb63da36f699e99ad5b",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "24cfbe483eb7e69069c0",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ab493e0439532908",
       "event_name": "飛鳥山公園盆踊り会（有志サークル）",
@@ -3272,8 +3986,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "aa1e2ec717c845b72217",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "b28edc7d8926a511631e",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ab493e0439532908",
       "event_name": "飛鳥山公園盆踊り会（有志サークル）",
@@ -3287,8 +4001,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "db63debc1d3c41edbef1",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "c63a74d01a8fc4e7c83d",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ab493e0439532908",
       "event_name": "飛鳥山公園盆踊り会（有志サークル）",
@@ -3302,8 +4016,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "0905f92ffeb3c7e55005",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "73e82e5106126ef173e0",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ab493e0439532908",
       "event_name": "飛鳥山公園盆踊り会（有志サークル）",
@@ -3317,8 +4031,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "19e0b8e19d87b62aef71",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "7ff16e36661c83ef3652",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ab493e0439532908",
       "event_name": "飛鳥山公園盆踊り会（有志サークル）",
@@ -3332,8 +4046,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "128799bc26310ca17b1d",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "56cfc27f3c4737d87462",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ab493e0439532908",
       "event_name": "飛鳥山公園盆踊り会（有志サークル）",
@@ -3347,8 +4061,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "b49c4cd02f8d56c26838",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "08e404ef15336836341c",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ab493e0439532908",
       "event_name": "飛鳥山公園盆踊り会（有志サークル）",
@@ -3362,8 +4076,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "dda40f6e710285394cd5",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "995bed49086e2edf51cb",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ab493e0439532908",
       "event_name": "飛鳥山公園盆踊り会（有志サークル）",
@@ -3377,8 +4091,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "8f2798ea87d39e461cef",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "182cd7334453b58ad250",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ab493e0439532908",
       "event_name": "飛鳥山公園盆踊り会（有志サークル）",
@@ -3392,8 +4106,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "483050f9b3a1b4a9dde4",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "31403f82114d2fd0a2d9",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ab493e0439532908",
       "event_name": "飛鳥山公園盆踊り会（有志サークル）",
@@ -3407,8 +4121,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "fd20a66a9f39a216ff8b",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "34f966b6f18e7a61366b",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ab493e0439532908",
       "event_name": "飛鳥山公園盆踊り会（有志サークル）",
@@ -3422,8 +4136,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "712cb25b6904167ea53c",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "f5bfe66d5c521dc2e0c9",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ab493e0439532908",
       "event_name": "飛鳥山公園盆踊り会（有志サークル）",
@@ -3437,8 +4151,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "22fbdd8c8468269f58ff",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "4cf9d9a5fb1f96324213",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ab493e0439532908",
       "event_name": "飛鳥山公園盆踊り会（有志サークル）",
@@ -3452,8 +4166,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "5b61e9a7d160da628dfe",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "c9093fb7275f8b6f77c3",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ab493e0439532908",
       "event_name": "飛鳥山公園盆踊り会（有志サークル）",
@@ -3467,8 +4181,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "44f323232ae94d1a037b",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "f478c87db04a3c3452d4",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ab493e0439532908",
       "event_name": "飛鳥山公園盆踊り会（有志サークル）",
@@ -3482,8 +4196,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "1e431342af8e8c7afec7",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "6dc14fe93c87af46041d",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ab493e0439532908",
       "event_name": "飛鳥山公園盆踊り会（有志サークル）",
@@ -3497,8 +4211,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "f62e148ba834efca1327",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "922d4a8a0fc846b1a9ba",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ab493e0439532908",
       "event_name": "飛鳥山公園盆踊り会（有志サークル）",
@@ -3512,8 +4226,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "18385021d4e31c2ac300",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "43deddf017323154271e",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ab493e0439532908",
       "event_name": "飛鳥山公園盆踊り会（有志サークル）",
@@ -3527,8 +4241,8 @@
       "prediction_reliability": []
     },
     {
-      "snapshot_id": "3057b349166c3d4ed36d",
-      "predicted_at": "2026-06-15T20:13:17.059957+00:00",
+      "snapshot_id": "4d8aaad3cb258932c556",
+      "predicted_at": "2026-06-16T20:04:25.450749+00:00",
       "target_year": 2026,
       "occurrence_id": "ab493e0439532908",
       "event_name": "飛鳥山公園盆踊り会（有志サークル）",

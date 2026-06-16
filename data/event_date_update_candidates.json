@@ -1,64 +1,6 @@
 {
   "candidates": [
     {
-      "event_id": "37b8be04-e762-81e4-b582-f399ca222194",
-      "event_name": "「第34回ふるさと千川 まつり」 6月5日(金)-6日(土) 17:30-(開場)。",
-      "venues": [
-        "ふるさと千川ひろば(千川小学校校庭跡地)"
-      ],
-      "current_date": "2026-06-05",
-      "current_date_end": null,
-      "new_date": "2026-06-05",
-      "new_date_end": "2026-06-06",
-      "score": 24,
-      "reasons": [
-        "event_name_exact",
-        "extracted_event_name",
-        "venue_exact",
-        "schedule_word",
-        "structured_blog_venue"
-      ],
-      "source": "blog_row",
-      "account": "東京盆踊りマップ",
-      "spoken_at": "",
-      "url": "https://drive.google.com/file/d/1rwFa5mbPoCsekMR4OpwAacVZxXgoF-on/view?usp=drive_link",
-      "text": "2026 [P2]\n6/5 - 6\nふるさと千川ひろば(千川小学校校庭跡地)\n「第34回ふるさと千川 まつり」 6月5日(金)-6日(土) 17:30-(開場)。\n・5日(金) 18:30-21:00。\n・6日(土) 18:30-20:30。\n(6/5夜掲)",
-      "raw_date": "6/5 - 6",
-      "extracted_event_names": [
-        "第34回ふるさと千川 まつり"
-      ],
-      "refresh_only": false
-    },
-    {
-      "event_id": "37b8be04-e762-8133-a1d8-d78450dfece9",
-      "event_name": "すみだ沖縄まつり",
-      "venues": [
-        "錦糸公園"
-      ],
-      "current_date": "2026-05-09",
-      "current_date_end": null,
-      "new_date": "2026-05-09",
-      "new_date_end": "2026-05-10",
-      "score": 24,
-      "reasons": [
-        "event_name_exact",
-        "extracted_event_name",
-        "venue_exact",
-        "schedule_word",
-        "structured_blog_venue"
-      ],
-      "source": "blog_row",
-      "account": "東京盆踊りマップ",
-      "spoken_at": "",
-      "url": "https://so-matsuri.com/",
-      "text": "2026 [G3]\n5/9 - 10\n錦糸公園\n「すみだ沖縄まつり」 5月9日(土)-10日(日)。\n・9日(土) 15:30- 盆おどり 梅美会 関東大和太鼓(約1時間)。\n・10日(日) 15:00- すみだ輪おどり(盆踊り)(約1時間)。\n＊イベント全体は両日10時-19時に開催。沖縄伝統民謡、エイサー他多数の出演あり。",
-      "raw_date": "5/9 - 10",
-      "extracted_event_names": [
-        "すみだ沖縄まつり"
-      ],
-      "refresh_only": false
-    },
-    {
       "event_id": "37e8be04-e762-81b0-9f3f-e48790ceac0c",
       "event_name": "笠間納涼盆踊り花火大会2026",
       "venues": [
@@ -268,8 +210,8 @@
       "venues": [
         "飛鳥山公園"
       ],
-      "current_date": null,
-      "current_date_end": null,
+      "current_date": "2025-04-19",
+      "current_date_end": "2025-04-19",
       "new_date": "2026-03-14",
       "new_date_end": null,
       "score": 14,
@@ -295,8 +237,8 @@
       "venues": [
         "飛鳥山公園"
       ],
-      "current_date": null,
-      "current_date_end": null,
+      "current_date": "2025-04-19",
+      "current_date_end": "2025-04-19",
       "new_date": "2026-04-26",
       "new_date_end": null,
       "score": 14,
@@ -322,8 +264,8 @@
       "venues": [
         "飛鳥山公園"
       ],
-      "current_date": null,
-      "current_date_end": null,
+      "current_date": "2025-04-19",
+      "current_date_end": "2025-04-19",
       "new_date": "2026-06-07",
       "new_date_end": null,
       "score": 14,
@@ -349,8 +291,8 @@
       "venues": [
         "飛鳥山公園"
       ],
-      "current_date": null,
-      "current_date_end": null,
+      "current_date": "2025-04-19",
+      "current_date_end": "2025-04-19",
       "new_date": "2026-05-24",
       "new_date_end": null,
       "score": 10,
