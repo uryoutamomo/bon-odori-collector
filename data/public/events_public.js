@@ -1543,11 +1543,6 @@ const EVENTS = [
     "detail": "2026-07-29〜2026-08-01 開催予定。X投稿から確定日として反映。 第79回築地本願寺納涼盆踊り大会 2026年7月29日（水）〜8月1日（土）開催！ 本日発表！ この夏も楽しみましょう！",
     "source_urls": [
       {
-        "label": "公式告知あり",
-        "url": "https://tsukijihongwanji.jp/news/10279/",
-        "kind": "official"
-      },
-      {
         "label": "告知HPあり",
         "url": "",
         "kind": "web"

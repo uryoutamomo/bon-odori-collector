@@ -3304,11 +3304,6 @@
     },
     "source_urls": [
       {
-        "label": "公式告知あり",
-        "url": "https://tsukijihongwanji.jp/news/10279/",
-        "kind": "official"
-      },
-      {
         "label": "告知HPあり",
         "url": "",
         "kind": "web"

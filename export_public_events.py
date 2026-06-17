@@ -74,6 +74,12 @@ PUBLIC_SOURCE_EXCLUDED_HOSTS = (
     "youtube.com",
     "youtu.be",
 )
+PUBLIC_SOURCE_EXCLUDED_URLS = {
+    # 2026-06-17 official source review: URL now returns 404, so keep it out of
+    # public "official evidence" links even if it remains in older evidence text.
+    "https://tsukijihongwanji.jp/news/10279/",
+    "https://www.city.setagaya.lg.jp/documents/891/163gou_2.pdf",
+}
 NOTICE_HOSTS = (
     "x.com",
     "twitter.com",
@@ -94,7 +100,11 @@ def _url_host(url):
 
 def _is_public_source_url(url):
     host = _url_host(url)
-    return bool(host) and not any(blocked in host for blocked in PUBLIC_SOURCE_EXCLUDED_HOSTS)
+    return (
+        bool(host)
+        and url not in PUBLIC_SOURCE_EXCLUDED_URLS
+        and not any(blocked in host for blocked in PUBLIC_SOURCE_EXCLUDED_HOSTS)
+    )
 
 
 def _is_notice_url(url):
