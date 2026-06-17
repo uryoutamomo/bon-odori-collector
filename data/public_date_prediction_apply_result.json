@@ -1,0 +1,184 @@
+{
+  "generated_by": "apply_public_date_predictions.py",
+  "source": "data/event_date_predictions.json",
+  "public_events": "data/public/events_public.json",
+  "applied_count": 7,
+  "skipped_count": 1,
+  "unmatched_count": 0,
+  "applied": [
+    {
+      "event_name": "丸の内de盆踊り",
+      "venue": "行幸通り",
+      "date_prediction": {
+        "target_year": 2026,
+        "date": "2026-07-31",
+        "date_end": "2026-07-31",
+        "weekday_start": "金",
+        "weekday_end": "金",
+        "confidence": "medium",
+        "score": 0.74,
+        "rule_type": "weekday_last",
+        "basis": "7月の最終金曜",
+        "evidence_years": [
+          2024,
+          2025
+        ],
+        "evidence_count": 2,
+        "has_actual_observation": false
+      }
+    },
+    {
+      "event_name": "シタマチ.ふるさと盆踊り大会",
+      "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+      "date_prediction": {
+        "target_year": 2026,
+        "date": "2026-08-15",
+        "date_end": "2026-08-15",
+        "weekday_start": "土",
+        "weekday_end": "土",
+        "confidence": "medium",
+        "score": 0.7,
+        "rule_type": "weekday_nth",
+        "basis": "8月第3土曜",
+        "evidence_years": [
+          2024,
+          2025
+        ],
+        "evidence_count": 2,
+        "has_actual_observation": false
+      }
+    },
+    {
+      "event_name": "東本願寺盆踊り",
+      "venue": "東本願寺（浅草）",
+      "date_prediction": {
+        "target_year": 2026,
+        "date": "2026-08-19",
+        "date_end": "2026-08-19",
+        "weekday_start": "水",
+        "weekday_end": "水",
+        "confidence": "medium",
+        "score": 0.7,
+        "rule_type": "weekday_nth",
+        "basis": "8月第3水曜",
+        "evidence_years": [
+          2024,
+          2025
+        ],
+        "evidence_count": 2,
+        "has_actual_observation": false
+      }
+    },
+    {
+      "event_name": "第28回新橋こいち祭 盆踊り",
+      "venue": "桜田公園",
+      "date_prediction": {
+        "target_year": 2026,
+        "date": "2026-07-23",
+        "date_end": "2026-07-23",
+        "weekday_start": "木",
+        "weekday_end": "木",
+        "confidence": "medium",
+        "score": 0.7,
+        "rule_type": "weekday_nth",
+        "basis": "7月第4木曜",
+        "evidence_years": [
+          2023,
+          2025
+        ],
+        "evidence_count": 2,
+        "has_actual_observation": false
+      }
+    },
+    {
+      "event_name": "自由が丘納涼盆踊り大会",
+      "venue": "自由が丘駅前ロータリー 特設会場",
+      "date_prediction": {
+        "target_year": 2026,
+        "date": "2026-07-18",
+        "date_end": "2026-07-20",
+        "weekday_start": "土",
+        "weekday_end": "月",
+        "confidence": "medium",
+        "score": 0.68,
+        "rule_type": "weekday_near_day",
+        "basis": "7月16日前後の土曜",
+        "evidence_years": [
+          2024,
+          2025
+        ],
+        "evidence_count": 2,
+        "has_actual_observation": false
+      }
+    },
+    {
+      "event_name": "郡上おどり in 青山 2025",
+      "venue": "秩父宮ラグビー場駐車場",
+      "date_prediction": {
+        "target_year": 2026,
+        "date": "2026-06-19",
+        "date_end": "2026-06-19",
+        "weekday_start": "金",
+        "weekday_end": "金",
+        "confidence": "medium",
+        "score": 0.68,
+        "rule_type": "weekday_near_day",
+        "basis": "6月17日前後の金曜",
+        "evidence_years": [
+          2024,
+          2025
+        ],
+        "evidence_count": 2,
+        "has_actual_observation": false
+      }
+    },
+    {
+      "event_name": "西久保八幡神社 盆踊り",
+      "venue": "西久保八幡神社",
+      "date_prediction": {
+        "target_year": 2026,
+        "date": "2026-08-08",
+        "date_end": "2026-08-08",
+        "weekday_start": "土",
+        "weekday_end": "土",
+        "confidence": "medium",
+        "score": 0.64,
+        "rule_type": "weekend_near_day",
+        "basis": "8月9日前後の週末",
+        "evidence_years": [
+          2023,
+          2024,
+          2025
+        ],
+        "evidence_count": 3,
+        "has_actual_observation": false
+      }
+    }
+  ],
+  "skipped": [
+    {
+      "event_name": "山王音頭と民踊大会",
+      "venue": "山王パークタワー公開空地",
+      "reason": "target_year_date_already_present",
+      "date": "2026-06-13",
+      "date_prediction": {
+        "target_year": 2026,
+        "date": "2026-06-13",
+        "date_end": "2026-06-15",
+        "weekday_start": "土",
+        "weekday_end": "月",
+        "confidence": "medium",
+        "score": 0.72,
+        "rule_type": "fixed_date",
+        "basis": "毎年6/13開始",
+        "evidence_years": [
+          2023,
+          2024
+        ],
+        "evidence_count": 2,
+        "has_actual_observation": true
+      }
+    }
+  ],
+  "unmatched": []
+}

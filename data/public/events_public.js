@@ -1876,7 +1876,24 @@ const EVENTS = [
     "last_seen_dates": [
       "2025-07-25",
       "2025-07-26"
-    ]
+    ],
+    "date_prediction": {
+      "target_year": 2026,
+      "date": "2026-07-31",
+      "date_end": "2026-07-31",
+      "weekday_start": "金",
+      "weekday_end": "金",
+      "confidence": "medium",
+      "score": 0.74,
+      "rule_type": "weekday_last",
+      "basis": "7月の最終金曜",
+      "evidence_years": [
+        2024,
+        2025
+      ],
+      "evidence_count": 2,
+      "has_actual_observation": false
+    }
   },
   {
     "name": "みたままつり 納涼民踊のつどい",
@@ -4636,7 +4653,24 @@ const EVENTS = [
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-24"
-    ]
+    ],
+    "date_prediction": {
+      "target_year": 2026,
+      "date": "2026-07-23",
+      "date_end": "2026-07-23",
+      "weekday_start": "木",
+      "weekday_end": "木",
+      "confidence": "medium",
+      "score": 0.7,
+      "rule_type": "weekday_nth",
+      "basis": "7月第4木曜",
+      "evidence_years": [
+        2023,
+        2025
+      ],
+      "evidence_count": 2,
+      "has_actual_observation": false
+    }
   },
   {
     "name": "赤坂浄土寺盆踊り大会",
@@ -5852,7 +5886,25 @@ const EVENTS = [
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-08-09"
-    ]
+    ],
+    "date_prediction": {
+      "target_year": 2026,
+      "date": "2026-08-08",
+      "date_end": "2026-08-08",
+      "weekday_start": "土",
+      "weekday_end": "土",
+      "confidence": "medium",
+      "score": 0.64,
+      "rule_type": "weekend_near_day",
+      "basis": "8月9日前後の週末",
+      "evidence_years": [
+        2023,
+        2024,
+        2025
+      ],
+      "evidence_count": 3,
+      "has_actual_observation": false
+    }
   },
   {
     "name": "赤坂夏おどり（旧 赤坂盆踊り）",
@@ -7662,7 +7714,24 @@ const EVENTS = [
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-08-16"
-    ]
+    ],
+    "date_prediction": {
+      "target_year": 2026,
+      "date": "2026-08-15",
+      "date_end": "2026-08-15",
+      "weekday_start": "土",
+      "weekday_end": "土",
+      "confidence": "medium",
+      "score": 0.7,
+      "rule_type": "weekday_nth",
+      "basis": "8月第3土曜",
+      "evidence_years": [
+        2024,
+        2025
+      ],
+      "evidence_count": 2,
+      "has_actual_observation": false
+    }
   },
   {
     "name": "坂本町会 納涼祭",
@@ -8281,7 +8350,24 @@ const EVENTS = [
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-08-20"
-    ]
+    ],
+    "date_prediction": {
+      "target_year": 2026,
+      "date": "2026-08-19",
+      "date_end": "2026-08-19",
+      "weekday_start": "水",
+      "weekday_end": "水",
+      "confidence": "medium",
+      "score": 0.7,
+      "rule_type": "weekday_nth",
+      "basis": "8月第3水曜",
+      "evidence_years": [
+        2024,
+        2025
+      ],
+      "evidence_count": 2,
+      "has_actual_observation": false
+    }
   },
   {
     "name": "第2回田原de盆踊り",
@@ -14657,7 +14743,24 @@ const EVENTS = [
     "last_seen_dates": [
       "2025-07-19",
       "2025-07-21"
-    ]
+    ],
+    "date_prediction": {
+      "target_year": 2026,
+      "date": "2026-07-18",
+      "date_end": "2026-07-20",
+      "weekday_start": "土",
+      "weekday_end": "月",
+      "confidence": "medium",
+      "score": 0.68,
+      "rule_type": "weekday_near_day",
+      "basis": "7月16日前後の土曜",
+      "evidence_years": [
+        2024,
+        2025
+      ],
+      "evidence_count": 2,
+      "has_actual_observation": false
+    }
   },
   {
     "name": "桜フェスタ商店街 みんなで盆踊り",
@@ -19435,7 +19538,24 @@ const EVENTS = [
     "last_seen_dates": [
       "2025-06-20",
       "2025-06-21"
-    ]
+    ],
+    "date_prediction": {
+      "target_year": 2026,
+      "date": "2026-06-19",
+      "date_end": "2026-06-19",
+      "weekday_start": "金",
+      "weekday_end": "金",
+      "confidence": "medium",
+      "score": 0.68,
+      "rule_type": "weekday_near_day",
+      "basis": "6月17日前後の金曜",
+      "evidence_years": [
+        2024,
+        2025
+      ],
+      "evidence_count": 2,
+      "has_actual_observation": false
+    }
   },
   {
     "name": "盆踊 〜BONDO〜",
