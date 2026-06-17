@@ -19,6 +19,7 @@ import urllib.request
 
 from bon_odori_songs import extract_song_hints
 import notion_config
+from score_event_recurrence import build_rows, enrich_public_events
 from export_public_venues import (
     MONTH_DAY_RE,
     MONTH_RE,
@@ -59,6 +60,110 @@ SIGNATURE_RE = re.compile(
 YOUTUBE_EVIDENCE_RE = re.compile(
     r"\[youtube_evidence\][^\n]*(?:\n(?!\[youtube_evidence\]).*)*",
 )
+URL_RE = re.compile(r"https?://[^\s）)」』】]+")
+PUBLIC_SOURCE_KEYS = (
+    "公式確認URL",
+    "公式URL",
+    "公式サイト",
+    "公式HP",
+    "出典URL",
+    "参照URL",
+    "YouTube検出元URL",
+)
+PUBLIC_SOURCE_EXCLUDED_HOSTS = (
+    "youtube.com",
+    "youtu.be",
+)
+NOTICE_HOSTS = (
+    "x.com",
+    "twitter.com",
+    "t.co",
+)
+OFFICIAL_SOURCE_KEYS = (
+    "公式URL",
+    "公式サイト",
+    "公式HP",
+    "YouTube検出元URL",
+)
+
+
+def _url_host(url):
+    match = re.match(r"https?://([^/]+)", url or "")
+    return match.group(1).lower() if match else ""
+
+
+def _is_public_source_url(url):
+    host = _url_host(url)
+    return bool(host) and not any(blocked in host for blocked in PUBLIC_SOURCE_EXCLUDED_HOSTS)
+
+
+def _is_notice_url(url):
+    host = _url_host(url)
+    return any(notice_host in host for notice_host in NOTICE_HOSTS)
+
+
+def _source_item(key, url):
+    key = (key or "").strip()
+    if any(source_key in key for source_key in OFFICIAL_SOURCE_KEYS):
+        return {"label": "公式告知あり", "url": url, "kind": "official"}
+    return {"label": "告知HPあり", "url": url, "kind": "web"}
+
+
+def extract_public_source_urls(text):
+    """Extract public-facing source URLs while excluding video/internal evidence links."""
+    official = []
+    web = []
+    seen = set()
+    has_notice = False
+    for line in (text or "").splitlines():
+        stripped = line.strip()
+        if not stripped:
+            continue
+        key = ""
+        body = stripped
+        is_bullet = stripped.startswith("- ")
+        if is_bullet:
+            body = stripped[2:].strip()
+            if ":" in body:
+                key, _, body = body.partition(":")
+            elif "：" in body:
+                key, _, body = body.partition("：")
+        key = key.strip()
+        is_source_line = any(source_key in key for source_key in PUBLIC_SOURCE_KEYS)
+        # Keep ordinary announcement URLs from the visible note, but do not expose
+        # video links or arbitrary URLs buried in internal evidence lines.
+        if not is_source_line and is_bullet:
+            continue
+        for url in URL_RE.findall(body):
+            if _is_notice_url(url):
+                has_notice = True
+                continue
+            if not _is_public_source_url(url) or url in seen:
+                continue
+            seen.add(url)
+            item = _source_item(key if is_source_line else "", url)
+            if item["kind"] == "official":
+                official.append(item)
+            else:
+                web.append(item)
+    sources = []
+    if official:
+        sources.append(official[0])
+    if web:
+        sources.append({"label": "告知HPあり", "url": "", "kind": "web"})
+    if has_notice:
+        sources.append({"label": "告知投稿あり", "url": "", "kind": "post"})
+    return sources
+
+
+def public_detail_text(text):
+    """Return a general-reader summary, without internal evidence blocks."""
+    if not text:
+        return ""
+    public = YOUTUBE_EVIDENCE_RE.sub("", text)
+    public = re.sub(r"https?://\S+", "", public)
+    public = re.sub(r"\s+", " ", public).strip()
+    return public
 
 
 def confidence_for_candidate(score, source, reasons):
@@ -224,6 +329,18 @@ def merge_song_occurrence_hints(existing_songs, occurrence):
         songs.values(),
         key=lambda row: (-(row.get("probability") or 0), row.get("name") or ""),
     )
+
+
+def strip_song_internal_fields(songs):
+    public_songs = []
+    for song in songs or []:
+        if not isinstance(song, dict):
+            public_songs.append(song)
+            continue
+        item = dict(song)
+        item.pop("evidence_urls", None)
+        public_songs.append(item)
+    return public_songs
 
 
 def parse_months(text):
@@ -396,18 +513,16 @@ def build_public_events():
             covered.add(vid)
             public_name = clean_public_text(name)
             description = clean_public_text(_prop(props, "公開紹介文"))
-            detail = clean_public_text(detail_text)
-            youtube_evidence = fill_youtube_evidence_defaults(
-                parse_youtube_evidence(detail),
-                public_name,
-                date,
-            )
-            songs = extract_song_hints(description, detail)
+            raw_detail = clean_public_text(detail_text)
+            detail = public_detail_text(raw_detail)
+            source_urls = extract_public_source_urls(raw_detail)
+            songs = extract_song_hints(description, raw_detail)
             occurrence_year = int(date[:4]) if date else 2026
             occurrence = song_occurrences.get(
                 _song_occurrence_key(public_name, v["venue"], occurrence_year)
             )
             songs = merge_song_occurrence_hints(songs, occurrence)
+            songs = strip_song_internal_fields(songs)
             event_months = sorted(months)
             if not event_months and "名称推定" not in public_name:
                 event_months = v["memo_months"]
@@ -434,11 +549,10 @@ def build_public_events():
                 "description": description,
                 # 詳細モーダル用：直近の開催実績（日時の記録）
                 "detail": detail,
-                # YouTube由来の2025実績証拠。公開UIでは動画リンク/サムネイル表示に使う。
-                "youtube_evidence": youtube_evidence,
+                # 一般閲覧者に見せる公式・準公式の根拠URL。内部ログや動画列挙は公開しない。
+                "source_urls": source_urls,
                 # 会場で流れる/踊られる曲の候補。公開時は「曲目ヒント」として扱う。
                 "songs": songs,
-                "song_occurrence": occurrence,
             })
 
     # イベント未整備の会場はフォールバックカード（名称確認中）
@@ -474,7 +588,7 @@ def build_public_events():
             },
             "description": v["intro"],
             "detail": None,
-            "youtube_evidence": [],
+            "source_urls": [],
             "songs": [],
         })
 
@@ -490,6 +604,11 @@ def write_public_js(path, events):
         f.write(";\n")
 
 
+def apply_public_recurrence_metadata(events):
+    """Attach public category and recurrence fields to the production export."""
+    return enrich_public_events(events, build_rows(events))
+
+
 def main():
     if not os.environ.get("NOTION_API_TOKEN"):
         print("Notion未設定 (NOTION_API_TOKEN) のためイベント公開エクスポートをスキップ")
@@ -499,6 +618,7 @@ def main():
     except urllib.error.HTTPError as e:
         print(f"イベント公開エクスポート失敗 (HTTP {e.code})。スキップ")
         return
+    events = apply_public_recurrence_metadata(events)
 
     os.makedirs(OUT_DIR, exist_ok=True)
     with open(OUT_JSON, "w", encoding="utf-8") as f:

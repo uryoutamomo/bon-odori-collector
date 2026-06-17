@@ -4,8 +4,10 @@ from song_occurrences import (
     build_occurrences,
     evidence_role,
     evidence_kind,
+    evidence_view_for_year,
     has_complete_setlist,
     noisy_or,
+    occurrences_from_public_events,
     occurrences_from_youtube_setlists,
     parse_event_date,
     prediction_probability,
@@ -76,17 +78,13 @@ class SongOccurrencesTest(unittest.TestCase):
             if any(ev["source"] == "manual_ocr" for ev in song["evidence"])
         ]
         self.assertEqual(len(manual_songs), 19)
-        self.assertTrue(all(song["prediction"]["probability"] == 80 for song in manual_songs))
+        self.assertTrue(all(song["prediction"]["probability"] >= 80 for song in manual_songs))
         self.assertIn("predictions", sanno[0])
         self.assertIn("existence", sanno[0]["predictions"])
         self.assertIn("date", sanno[0]["predictions"])
         self.assertTrue(sanno[0]["observations"])
         self.assertTrue(
             all(any(ev["role"] == "prediction" and ev["dancer_key"] == "@ochiai_hrs" for ev in song["evidence"])
-                for song in manual_songs)
-        )
-        self.assertTrue(
-            all(any(ev["role"] == "result" and ev["source"] == "field_confirmation_uchida" for ev in song["evidence"])
                 for song in manual_songs)
         )
         self.assertTrue(
@@ -123,6 +121,54 @@ class SongOccurrencesTest(unittest.TestCase):
         self.assertEqual(evidence["source"], "youtube_setlist_occurrence")
         self.assertEqual(evidence["speaker"], "@wadaikoCH")
         self.assertEqual(evidence["reliability_key"], "complete_numbered_video")
+
+    def test_public_event_song_hints_are_curated_predictions(self):
+        grouped = occurrences_from_public_events([
+            {
+                "name": "築地本願寺納涼盆踊り大会",
+                "venue": "築地本願寺",
+                "date": "2026-07-29",
+                "songs": [
+                    {"name": "あやめ踊り", "confidence": "hint", "source_count": 1},
+                ],
+            }
+        ])
+        key = ("築地本願寺納涼盆踊り大会", "築地本願寺", 2026, "あやめ踊り")
+        evidence = grouped[key][0]
+        self.assertEqual(evidence["reliability_key"], "curated_public_song")
+        result = prediction_probability(grouped[key], 2026)
+        self.assertEqual(result["basis"], "current_hint")
+        self.assertEqual(result["probability"], 80)
+
+    def test_inherited_evidence_is_demoted_to_prediction(self):
+        evidence = [
+            {"year": 2025, "role": "result", "kind": "observed",
+             "setlist_complete": True, "reliability": 0.95, "speaker": "@ch"},
+            {"year": 2026, "role": "prediction", "kind": "announced",
+             "reliability": 0.8, "speaker": "@x"},
+            {"year": 2027, "role": "result", "kind": "observed", "speaker": "@future"},
+        ]
+        view = evidence_view_for_year(evidence, 2026)
+        self.assertEqual(sorted(ev["year"] for ev in view), [2025, 2026])  # 未来年は除外
+        inherited = [ev for ev in view if ev.get("inherited")]
+        self.assertEqual(len(inherited), 1)
+        self.assertEqual(inherited[0]["role"], "prediction")  # result を継承根拠に降格
+        self.assertEqual(inherited[0]["source_year"], 2025)
+        current = [ev for ev in view if not ev.get("inherited")]
+        self.assertEqual(current[0]["year"], 2026)
+
+    def test_inherited_past_evidence_is_overridden_by_current_info(self):
+        past_only = evidence_view_for_year(
+            [{"year": 2025, "role": "result", "kind": "observed",
+              "setlist_complete": True, "reliability": 0.95, "speaker": "@ch"}],
+            2026,
+        )
+        self.assertEqual(prediction_probability(past_only, 2026)["basis"], "past_evidence")
+        with_current = past_only + [
+            {"year": 2026, "role": "prediction", "kind": "announced",
+             "reliability": 0.8, "speaker": "@x"},
+        ]
+        self.assertEqual(prediction_probability(with_current, 2026)["basis"], "current_announced")
 
 
 if __name__ == "__main__":

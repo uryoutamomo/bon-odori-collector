@@ -25,6 +25,17 @@ class BonOdoriSongsTest(unittest.TestCase):
         self.assertIn("東京音頭", names(rows))
         self.assertIn("品川甚句", names(rows))
 
+    def test_extracts_master_song_names_in_song_context(self):
+        rows = extract_song_hints("曲目はBeat It、東京音頭、炭坑節。")
+
+        self.assertIn("Beat It", names(rows))
+
+    def test_extracts_tsukiji_local_song_with_particles(self):
+        rows = extract_song_hints("曲目は築地音頭、これがお江戸の盆ダンス、あさりときりみのおだいどこ音頭、ホームラン音頭。")
+
+        self.assertIn("あさりときりみのおだいどこ音頭", names(rows))
+        self.assertIn("これがお江戸の盆ダンス", names(rows))
+
     def test_ignores_generic_event_words(self):
         rows = extract_song_hints("納涼盆踊り大会。踊り大会は18時開始。")
 

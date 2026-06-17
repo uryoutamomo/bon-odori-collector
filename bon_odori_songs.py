@@ -1,8 +1,15 @@
 """Extract public song hints from bon-odori event text."""
 
+import json
 import re
+from functools import lru_cache
+from pathlib import Path
 
 from suppression_rules import blocked_cultural_match, is_generic_song_name
+
+DATA_DIR = Path(__file__).resolve().parent / "data"
+SONG_MASTER_REGISTRATION = DATA_DIR / "song_master_initial_registration.json"
+RDB_SONG_REVIEW_SOURCE = DATA_DIR / "rdb_song_review_source.json"
 
 
 SONG_CONTEXT_RE = re.compile(
@@ -42,6 +49,46 @@ STOPWORDS = {
 }
 
 
+def _norm_song(value):
+    return re.sub(r"\s+", "", str(value or "")).casefold()
+
+
+def _load_json(path):
+    if not path.exists():
+        return {}
+    with path.open(encoding="utf-8") as handle:
+        return json.load(handle)
+
+
+@lru_cache(maxsize=1)
+def master_song_names():
+    """Known song names registered or reviewed in the local song sources."""
+    names = set()
+    registration = _load_json(SONG_MASTER_REGISTRATION)
+    for bucket in ("created", "skipped"):
+        for row in registration.get(bucket) or []:
+            name = row.get("song_name")
+            if name:
+                names.add(name)
+
+    rdb = _load_json(RDB_SONG_REVIEW_SOURCE)
+    for row in rdb.get("rows") or []:
+        name = row.get("canonical_song_name") or row.get("term")
+        if name:
+            names.add(name)
+
+    return tuple(sorted(names, key=lambda name: (-len(name), name)))
+
+
+@lru_cache(maxsize=1)
+def master_song_norms():
+    return {_norm_song(name) for name in master_song_names()}
+
+
+def is_master_song(value):
+    return _norm_song(value) in master_song_norms()
+
+
 def _clean_song(value):
     value = re.sub(r"^[、。・\s]+|[、。・\s]+$", "", value or "")
     value = re.sub(r"^(?:曲目は|曲は|演目は|などの)", "", value)
@@ -56,15 +103,24 @@ def _clean_song(value):
     return value.strip()
 
 
-def _add(out, value, source):
+def _add(out, value, source, explicit_list=False):
     song = _clean_song(value)
     if not song or song in STOPWORDS:
         return
-    if re.search(r"[0-9０-９]|[がをにへでからの]|盆踊り|盆おどり|奉納|祭礼|例大祭", song):
+    master_song = is_master_song(song)
+    if re.search(r"[0-9０-９]|盆踊り|盆おどり|奉納|祭礼|例大祭", song):
+        return
+    # 明示的な曲目リスト内では「あさりときりみのおだいどこ音頭」のような
+    # 助詞入りのご当地曲名を許可する。通常本文では文章断片の誤抽出を避ける。
+    if not (master_song or explicit_list) and re.search(r"[がをにへでからの]", song):
         return
     if len(song) < 2 or len(song) > 28:
         return
-    if not re.search(r"(音頭|おどり|踊り|小唄|甚句|節|ソーラン|八木節|盆ジョビ|ヒーロー)$", song):
+    if (
+        not re.search(r"(音頭|おどり|踊り|小唄|甚句|節|ソーラン|八木節|盆ジョビ|ヒーロー)$", song)
+        and not KNOWN_SONG_RE.fullmatch(song)
+        and not master_song
+    ):
         return
     for item in out:
         if item["name"] == song:
@@ -86,10 +142,16 @@ def extract_song_hints(*texts):
         source = f"text_{index + 1}"
         for match in KNOWN_SONG_RE.finditer(text):
             _add(found, match.group(1), source)
+        for song in master_song_names():
+            for match in re.finditer(re.escape(song), text):
+                start = max(0, match.start() - 40)
+                end = min(len(text), match.end() + 30)
+                if CANDIDATE_CONTEXT_RE.search(text[start:end]):
+                    _add(found, song, source)
         for context in SONG_CONTEXT_RE.finditer(text):
             segment = context.group(1)
             for match in SONG_NAME_RE.finditer(segment):
-                _add(found, match.group(1), source)
+                _add(found, match.group(1), source, explicit_list=True)
         for match in SONG_NAME_RE.finditer(text):
             name = match.group(1)
             start = max(0, match.start() - 40)

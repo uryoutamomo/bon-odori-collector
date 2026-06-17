@@ -36,625 +36,274 @@ const EVENTS = [
       "6": "中旬"
     },
     "description": "日本三大祭のひとつ山王祭の納涼行事。山王音頭にあわせて、ビルの谷間の公開空地がやぐらを囲む踊りの輪になる。",
-    "detail": "毎年6/13〜15開催（日枝神社「山王祭」の納涼大会として）。曜日は年により変動\n\n[youtube_evidence] YouTube実績証拠\n- 対象イベント: 山王音頭と民踊大会\n- 検出日付: 2026-06-13, 2026-06-14, 2026-06-15\n- 動画数: 16\n- チャンネル: Tokyo Lonely Walker, 和太鼓お祭りCH, 祭のきせき 盆踊り, shu channel\n- 代表動画: https://www.youtube.com/watch?v=_WhO6Kh08sE / Tokyo Lonely Walker / 盆踊りシーズン開幕！日枝神社 山王祭 盆踊り｜東京音頭 2026年 初日 / Dancing the traditional Japanese Tokyo Ondo. [4K]🇯🇵\n- 代表動画: https://www.youtube.com/watch?v=84q8qeG029A / Tokyo Lonely Walker / 盆踊り開幕！赤坂日枝神社 山王祭 盆踊り｜サザン｜東京音頭｜炭坑節｜山王音頭｜八木節 他 / Traditional Japanese Bon Dance at Hie Shrine. [4K]🇯🇵\n- 代表動画: https://www.youtube.com/watch?v=-H-T164L3QM / 和太鼓お祭りCH / 【速報】東京音頭　【赤坂日枝神社】　山王祭盆踊り１　「山王音頭と民踊大会」の風景　2026年6月13日\n- 代表動画: https://www.youtube.com/watch?v=hDckpEGkzTI / 和太鼓お祭りCH / 炭坑節　【赤坂日枝神社】 山王祭 盆踊り２　「山王音頭と民踊大会」の風景　2026年6月13日\n- 代表動画: https://www.youtube.com/watch?v=qd96HMCNCm8 / 和太鼓お祭りCH / 「大東京音頭」　赤坂日枝神社山王祭盆踊り３　「山王音頭と民踊大会」の風景　2026年6月13日\n- 追加動画: 11件 (詳細は data/youtube_active_existing_event_update_apply_result.json)\n- 関連URL: https://goo.gl/maps/kSAEbnkyHSchcccY6, https://maps.app.goo.gl/BbkXn5qwcQ1PM7aQ9, https://x.com/walkingfilmlove, https://www.tenkamatsuri.jp/minyo/\n- 曲目候補: 東京音頭, 炭坑節, 大東京音頭, ドンパン節, 白浜音頭, 八木節, 花笠音頭, おこさ節, 相馬甚句, 東京おどり, 山王音頭, 千代田おどり, 水戸黄門おどり\n\n[youtube_evidence] YouTube 2025公式URL確認済み証拠\n- 対象イベント: 山王音頭と民踊大会\n- 検出日付: 2025-06-13\n- 動画数: 6\n- 公式確認URL: https://www.tenkamatsuri.jp/minyo/\n- チャンネルID: UCEYq2_O_Sai0j9chJOmcKtQ\n- 代表動画: https://www.youtube.com/watch?v=3gmg_bltmu0 / 2025-06-13 / 赤坂・日枝神社🏮盆踊り(1/6)「白浜音頭～東京音頭～ドンパン節」Tokyo Bon Dance👘2025.6.13 @山王パークタワー公開空地\n- 代表動画: https://www.youtube.com/watch?v=RLOHnnauvS8 / 2025-06-13 / 赤坂・日枝神社🏮盆踊り(2/6)「炭坑節～大東京音頭～相馬盆唄」Tokyo Bon Dance👘2025.6.13 @山王パークタワー公開空地\n- 代表動画: https://www.youtube.com/watch?v=wvlo7_K2B0A / 2025-06-13 / 赤坂・日枝神社🏮盆踊り(3/6)「八木節～花笠踊り～おこさ節～相馬甚句」Tokyo Bon Dance👘2025.6.13 @山王パークタワー公開空地\n- 代表動画: https://www.youtube.com/watch?v=hrKOXrI7Zcc / 2025-06-13 / 赤坂・日枝神社🏮盆踊り(4/6)「東京おどり～水戸黄門おどり～ニッポン・ワッショイ」Tokyo Bon Dance👘2025.6.13 @山王パークタワー公開空地\n- 代表動画: https://www.youtube.com/watch?v=ed5hv9b8cNg / 2025-06-13 / 赤坂・日枝神社🏮盆踊り(5/6)「山王音頭～千代田踊り～ダンシング・ヒーロー」Tokyo Bon Dance👘2025.6.13 @山王パークタワー公開空地\n- 追加動画: 1件（詳細はapply結果JSON）",
-    "youtube_evidence": [],
+    "detail": "毎年6/13〜15開催（日枝神社「山王祭」の納涼大会として）。曜日は年により変動",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web"
+      }
+    ],
     "songs": [
       {
-        "name": "千代田おどり",
+        "name": "山王音頭",
         "confidence": "confirmed",
-        "source_count": 1,
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=GE_F7-n85Xo"
-        ]
+        "source_count": 3,
+        "probability": 99,
+        "basis": "current_announced",
+        "basis_label": "今年告知",
+        "evidence_count": 3,
+        "speaker_count": 3,
+        "setlist_complete": true
       },
       {
         "name": "おこさ節",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "source_count": 3,
-        "probability": 80,
+        "probability": 96,
         "basis": "current_announced",
         "basis_label": "今年告知",
         "evidence_count": 3,
         "speaker_count": 3,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=Kolply49UG4",
-          "https://x.com/ochiai_hrs/status/2063912862880534810"
-        ]
+        "setlist_complete": true
       },
       {
         "name": "らんまん踊り",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "source_count": 2,
-        "probability": 80,
+        "probability": 96,
         "basis": "current_announced",
         "basis_label": "今年告知",
         "evidence_count": 2,
         "speaker_count": 2,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://x.com/ochiai_hrs/status/2063912862880534810"
-        ]
+        "setlist_complete": true
       },
       {
         "name": "ダンシングヒーロー",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "source_count": 2,
-        "probability": 80,
+        "probability": 96,
         "basis": "current_announced",
         "basis_label": "今年告知",
         "evidence_count": 2,
         "speaker_count": 2,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://x.com/ochiai_hrs/status/2063912862880534810"
-        ]
+        "setlist_complete": true
       },
       {
         "name": "ドンパン節",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "source_count": 3,
-        "probability": 80,
+        "probability": 96,
         "basis": "current_announced",
         "basis_label": "今年告知",
         "evidence_count": 3,
         "speaker_count": 3,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=7f5Yuf3N9Aw",
-          "https://x.com/ochiai_hrs/status/2063912862880534810"
-        ]
+        "setlist_complete": true
       },
       {
         "name": "ニッポンワッショイ",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "source_count": 2,
-        "probability": 80,
+        "probability": 96,
         "basis": "current_announced",
         "basis_label": "今年告知",
         "evidence_count": 2,
         "speaker_count": 2,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://x.com/ochiai_hrs/status/2063912862880534810"
-        ]
+        "setlist_complete": true
       },
       {
         "name": "八木節",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "source_count": 3,
-        "probability": 80,
+        "probability": 96,
         "basis": "current_announced",
         "basis_label": "今年告知",
         "evidence_count": 3,
         "speaker_count": 3,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=U7S3ppeF_YU",
-          "https://x.com/ochiai_hrs/status/2063912862880534810"
-        ]
+        "setlist_complete": true
       },
       {
         "name": "千代田踊り",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "source_count": 2,
-        "probability": 80,
+        "probability": 96,
         "basis": "current_announced",
         "basis_label": "今年告知",
         "evidence_count": 2,
         "speaker_count": 2,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://x.com/ochiai_hrs/status/2063912862880534810"
-        ]
+        "setlist_complete": true
       },
       {
         "name": "大東京音頭",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "source_count": 3,
-        "probability": 80,
+        "probability": 96,
         "basis": "current_announced",
         "basis_label": "今年告知",
         "evidence_count": 3,
         "speaker_count": 3,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=qd96HMCNCm8",
-          "https://x.com/ochiai_hrs/status/2063912862880534810"
-        ]
-      },
-      {
-        "name": "山王音頭",
-        "confidence": "hint",
-        "source_count": 3,
-        "probability": 80,
-        "basis": "current_announced",
-        "basis_label": "今年告知",
-        "evidence_count": 3,
-        "speaker_count": 3,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=OhhRnGn9PGw",
-          "https://x.com/ochiai_hrs/status/2063912862880534810"
-        ]
+        "setlist_complete": true
       },
       {
         "name": "恋をするなら",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "source_count": 2,
-        "probability": 80,
+        "probability": 96,
         "basis": "current_announced",
         "basis_label": "今年告知",
         "evidence_count": 2,
         "speaker_count": 2,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://x.com/ochiai_hrs/status/2063912862880534810"
-        ]
+        "setlist_complete": true
       },
       {
         "name": "東京おどり",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "source_count": 3,
-        "probability": 80,
+        "probability": 96,
         "basis": "current_announced",
         "basis_label": "今年告知",
         "evidence_count": 3,
         "speaker_count": 3,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=fjrQwtowLI8",
-          "https://x.com/ochiai_hrs/status/2063912862880534810"
-        ]
+        "setlist_complete": true
       },
       {
         "name": "東京音頭",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "source_count": 3,
-        "probability": 80,
+        "probability": 96,
         "basis": "current_announced",
         "basis_label": "今年告知",
         "evidence_count": 3,
         "speaker_count": 3,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=-H-T164L3QM",
-          "https://x.com/ochiai_hrs/status/2063912862880534810"
-        ]
+        "setlist_complete": true
       },
       {
         "name": "水戸黄門おどり",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "source_count": 3,
-        "probability": 80,
+        "probability": 96,
         "basis": "current_announced",
         "basis_label": "今年告知",
         "evidence_count": 3,
         "speaker_count": 3,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=7EnO0iYnIYs",
-          "https://x.com/ochiai_hrs/status/2063912862880534810"
-        ]
+        "setlist_complete": true
       },
       {
         "name": "炭坑節",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "source_count": 3,
-        "probability": 80,
+        "probability": 96,
         "basis": "current_announced",
         "basis_label": "今年告知",
         "evidence_count": 3,
         "speaker_count": 3,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=hDckpEGkzTI",
-          "https://x.com/ochiai_hrs/status/2063912862880534810"
-        ]
+        "setlist_complete": true
       },
       {
         "name": "白浜音頭",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "source_count": 3,
-        "probability": 80,
+        "probability": 96,
         "basis": "current_announced",
         "basis_label": "今年告知",
         "evidence_count": 3,
         "speaker_count": 3,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=0y41AkjQLzI",
-          "https://x.com/ochiai_hrs/status/2063912862880534810"
-        ]
+        "setlist_complete": true
       },
       {
         "name": "盆ギリ恋歌",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "source_count": 2,
-        "probability": 80,
+        "probability": 96,
         "basis": "current_announced",
         "basis_label": "今年告知",
         "evidence_count": 2,
         "speaker_count": 2,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://x.com/ochiai_hrs/status/2063912862880534810"
-        ]
+        "setlist_complete": true
       },
       {
         "name": "相馬甚句",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "source_count": 3,
-        "probability": 80,
+        "probability": 96,
         "basis": "current_announced",
         "basis_label": "今年告知",
         "evidence_count": 3,
         "speaker_count": 3,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=2gfhUtwHOKA",
-          "https://x.com/ochiai_hrs/status/2063912862880534810"
-        ]
+        "setlist_complete": true
       },
       {
         "name": "相馬盆唄",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "source_count": 2,
-        "probability": 80,
+        "probability": 96,
         "basis": "current_announced",
         "basis_label": "今年告知",
         "evidence_count": 2,
         "speaker_count": 2,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://x.com/ochiai_hrs/status/2063912862880534810"
-        ]
+        "setlist_complete": true
       },
       {
         "name": "花笠音頭",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "source_count": 3,
-        "probability": 80,
+        "probability": 96,
         "basis": "current_announced",
         "basis_label": "今年告知",
         "evidence_count": 3,
         "speaker_count": 3,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=LhM7yggtrZ0",
-          "https://x.com/ochiai_hrs/status/2063912862880534810"
-        ]
+        "setlist_complete": true
+      },
+      {
+        "name": "千代田おどり",
+        "confidence": "confirmed",
+        "source_count": 2,
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
+      },
+      {
+        "name": "甚句",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "花笠踊り",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       }
     ],
-    "song_occurrence": {
-      "occurrence_id": "a9cead8dcbd58d22",
-      "event_name": "山王音頭と民踊大会",
-      "venue": "山王パークタワー公開空地",
-      "year": 2026,
-      "songs": [
-        {
-          "name": "千代田おどり",
-          "probability": 95,
-          "basis": "current_observed",
-          "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": true,
-          "prediction_reliability": [],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=GE_F7-n85Xo"
-          ]
-        },
-        {
-          "name": "おこさ節",
-          "probability": 80,
-          "basis": "current_announced",
-          "basis_label": "今年告知",
-          "evidence_count": 3,
-          "speaker_count": 3,
-          "setlist_complete": true,
-          "prediction_reliability": [
-            0.8
-          ],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=Kolply49UG4",
-            "https://x.com/ochiai_hrs/status/2063912862880534810"
-          ]
-        },
-        {
-          "name": "らんまん踊り",
-          "probability": 80,
-          "basis": "current_announced",
-          "basis_label": "今年告知",
-          "evidence_count": 2,
-          "speaker_count": 2,
-          "setlist_complete": true,
-          "prediction_reliability": [
-            0.8
-          ],
-          "evidence_urls": [
-            "https://x.com/ochiai_hrs/status/2063912862880534810"
-          ]
-        },
-        {
-          "name": "ダンシングヒーロー",
-          "probability": 80,
-          "basis": "current_announced",
-          "basis_label": "今年告知",
-          "evidence_count": 2,
-          "speaker_count": 2,
-          "setlist_complete": true,
-          "prediction_reliability": [
-            0.8
-          ],
-          "evidence_urls": [
-            "https://x.com/ochiai_hrs/status/2063912862880534810"
-          ]
-        },
-        {
-          "name": "ドンパン節",
-          "probability": 80,
-          "basis": "current_announced",
-          "basis_label": "今年告知",
-          "evidence_count": 3,
-          "speaker_count": 3,
-          "setlist_complete": true,
-          "prediction_reliability": [
-            0.8
-          ],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=7f5Yuf3N9Aw",
-            "https://x.com/ochiai_hrs/status/2063912862880534810"
-          ]
-        },
-        {
-          "name": "ニッポンワッショイ",
-          "probability": 80,
-          "basis": "current_announced",
-          "basis_label": "今年告知",
-          "evidence_count": 2,
-          "speaker_count": 2,
-          "setlist_complete": true,
-          "prediction_reliability": [
-            0.8
-          ],
-          "evidence_urls": [
-            "https://x.com/ochiai_hrs/status/2063912862880534810"
-          ]
-        },
-        {
-          "name": "八木節",
-          "probability": 80,
-          "basis": "current_announced",
-          "basis_label": "今年告知",
-          "evidence_count": 3,
-          "speaker_count": 3,
-          "setlist_complete": true,
-          "prediction_reliability": [
-            0.8
-          ],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=U7S3ppeF_YU",
-            "https://x.com/ochiai_hrs/status/2063912862880534810"
-          ]
-        },
-        {
-          "name": "千代田踊り",
-          "probability": 80,
-          "basis": "current_announced",
-          "basis_label": "今年告知",
-          "evidence_count": 2,
-          "speaker_count": 2,
-          "setlist_complete": true,
-          "prediction_reliability": [
-            0.8
-          ],
-          "evidence_urls": [
-            "https://x.com/ochiai_hrs/status/2063912862880534810"
-          ]
-        },
-        {
-          "name": "大東京音頭",
-          "probability": 80,
-          "basis": "current_announced",
-          "basis_label": "今年告知",
-          "evidence_count": 3,
-          "speaker_count": 3,
-          "setlist_complete": true,
-          "prediction_reliability": [
-            0.8
-          ],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=qd96HMCNCm8",
-            "https://x.com/ochiai_hrs/status/2063912862880534810"
-          ]
-        },
-        {
-          "name": "山王音頭",
-          "probability": 80,
-          "basis": "current_announced",
-          "basis_label": "今年告知",
-          "evidence_count": 3,
-          "speaker_count": 3,
-          "setlist_complete": true,
-          "prediction_reliability": [
-            0.8
-          ],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=OhhRnGn9PGw",
-            "https://x.com/ochiai_hrs/status/2063912862880534810"
-          ]
-        },
-        {
-          "name": "恋をするなら",
-          "probability": 80,
-          "basis": "current_announced",
-          "basis_label": "今年告知",
-          "evidence_count": 2,
-          "speaker_count": 2,
-          "setlist_complete": true,
-          "prediction_reliability": [
-            0.8
-          ],
-          "evidence_urls": [
-            "https://x.com/ochiai_hrs/status/2063912862880534810"
-          ]
-        },
-        {
-          "name": "東京おどり",
-          "probability": 80,
-          "basis": "current_announced",
-          "basis_label": "今年告知",
-          "evidence_count": 3,
-          "speaker_count": 3,
-          "setlist_complete": true,
-          "prediction_reliability": [
-            0.8
-          ],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=fjrQwtowLI8",
-            "https://x.com/ochiai_hrs/status/2063912862880534810"
-          ]
-        },
-        {
-          "name": "東京音頭",
-          "probability": 80,
-          "basis": "current_announced",
-          "basis_label": "今年告知",
-          "evidence_count": 3,
-          "speaker_count": 3,
-          "setlist_complete": true,
-          "prediction_reliability": [
-            0.8
-          ],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=-H-T164L3QM",
-            "https://x.com/ochiai_hrs/status/2063912862880534810"
-          ]
-        },
-        {
-          "name": "水戸黄門おどり",
-          "probability": 80,
-          "basis": "current_announced",
-          "basis_label": "今年告知",
-          "evidence_count": 3,
-          "speaker_count": 3,
-          "setlist_complete": true,
-          "prediction_reliability": [
-            0.8
-          ],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=7EnO0iYnIYs",
-            "https://x.com/ochiai_hrs/status/2063912862880534810"
-          ]
-        },
-        {
-          "name": "炭坑節",
-          "probability": 80,
-          "basis": "current_announced",
-          "basis_label": "今年告知",
-          "evidence_count": 3,
-          "speaker_count": 3,
-          "setlist_complete": true,
-          "prediction_reliability": [
-            0.8
-          ],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=hDckpEGkzTI",
-            "https://x.com/ochiai_hrs/status/2063912862880534810"
-          ]
-        },
-        {
-          "name": "白浜音頭",
-          "probability": 80,
-          "basis": "current_announced",
-          "basis_label": "今年告知",
-          "evidence_count": 3,
-          "speaker_count": 3,
-          "setlist_complete": true,
-          "prediction_reliability": [
-            0.8
-          ],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=0y41AkjQLzI",
-            "https://x.com/ochiai_hrs/status/2063912862880534810"
-          ]
-        },
-        {
-          "name": "盆ギリ恋歌",
-          "probability": 80,
-          "basis": "current_announced",
-          "basis_label": "今年告知",
-          "evidence_count": 2,
-          "speaker_count": 2,
-          "setlist_complete": true,
-          "prediction_reliability": [
-            0.8
-          ],
-          "evidence_urls": [
-            "https://x.com/ochiai_hrs/status/2063912862880534810"
-          ]
-        },
-        {
-          "name": "相馬甚句",
-          "probability": 80,
-          "basis": "current_announced",
-          "basis_label": "今年告知",
-          "evidence_count": 3,
-          "speaker_count": 3,
-          "setlist_complete": true,
-          "prediction_reliability": [
-            0.8
-          ],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=2gfhUtwHOKA",
-            "https://x.com/ochiai_hrs/status/2063912862880534810"
-          ]
-        },
-        {
-          "name": "相馬盆唄",
-          "probability": 80,
-          "basis": "current_announced",
-          "basis_label": "今年告知",
-          "evidence_count": 2,
-          "speaker_count": 2,
-          "setlist_complete": true,
-          "prediction_reliability": [
-            0.8
-          ],
-          "evidence_urls": [
-            "https://x.com/ochiai_hrs/status/2063912862880534810"
-          ]
-        },
-        {
-          "name": "花笠音頭",
-          "probability": 80,
-          "basis": "current_announced",
-          "basis_label": "今年告知",
-          "evidence_count": 3,
-          "speaker_count": 3,
-          "setlist_complete": true,
-          "prediction_reliability": [
-            0.8
-          ],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=LhM7yggtrZ0",
-            "https://x.com/ochiai_hrs/status/2063912862880534810"
-          ]
-        }
-      ]
-    }
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-06-13〜2026-06-15",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
+    "recurrence_reasons": [
+      "2026年開催済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-06-13",
+      "2026-06-15"
+    ]
   },
   {
     "name": "神田明神納涼祭り アニソン盆踊り",
@@ -688,31 +337,72 @@ const EVENTS = [
       "8": "上旬"
     },
     "description": null,
-    "detail": "[youtube_evidence] YouTube 2025公式URL確認済み証拠\n- 対象イベント: 神田明神納涼祭り アニソン盆踊り\n- 検出日付: 2025-08-08\n- 動画数: 11\n- 公式確認URL: https://event-checker.info/kandamyoujin-bonodori/\n- 判断: event-checkerで令和7年神田明神納涼祭りを確認。アニソン盆踊りは8/8枠で、YouTube11動画の検出日付と一致。\n- YouTube検出元URL: https://www.nouryo-matsuri.com/pages/6314608/page_202208061239\n- 動画: https://www.youtube.com/watch?v=ymzegsNDqfM / 2025-08-08 / 【神田明神⛩アニソン盆踊り🏮納涼祭り2025】（第1部 - 1）👘Tokyo Bon Dance🏮2025.8.8 @神田明神 Kanda Myojin Shrine\n- 動画: https://www.youtube.com/watch?v=T4ur74p7f5A / 2025-08-08 / 【神田明神⛩アニソン盆踊り🏮納涼祭り2025】（第1部 - 2）👘Tokyo Bon Dance🏮2025.8.8 @神田明神 Kanda Myojin Shrine\n- 動画: https://www.youtube.com/watch?v=CbndSYR6qEM / 2025-08-08 / 【神田明神⛩アニソン盆踊り🏮納涼祭り2025】（第2部 - 1）👘Tokyo Bon Dance🏮2025.8.8 @神田明神 Kanda Myojin Shrine\n- 動画: https://www.youtube.com/watch?v=_4NLh_EX-XE / 2025-08-08 / 【神田明神⛩アニソン盆踊り🏮納涼祭り2025】（第2部 - 2）👘Tokyo Bon Dance🏮2025.8.8 @神田明神 Kanda Myojin Shrine\n- 動画: https://www.youtube.com/watch?v=4pQDvVwQd3g / 2025-08-08 / 【神田明神⛩アニソン盆踊り🏮納涼祭り2025】（第2部 - 3）👘Tokyo Bon Dance🏮2025.8.8 @神田明神 Kanda Myojin Shrine\n- 動画: https://www.youtube.com/watch?v=TQG9UQzN9-8 / 2025-08-08 / 『クックロビン音頭 Cock Robin Ondo』【神田明神納涼祭り2025🏮アニソン盆踊り】🏮Tokyo Bon Dance👘2025.8.8 @神田明神 Kanda Myojin Shrine\n- 動画: https://www.youtube.com/watch?v=qS8OfeKRTjU / 2025-08-08 / 『おジャ魔女カーニバル』【神田明神納涼祭り2025🏮アニソン盆踊り】🏮Tokyo Bon Dance👘2025.8.8 @神田明神 Kanda Myojin Shrine\n- 動画: https://www.youtube.com/watch?v=Om01Om3MTUU / 2025-08-08 / 『邪神ちゃん音頭／大森日雅』【神田明神納涼祭り2025🏮アニソン盆踊り】🏮Tokyo Bon Dance👘2025.8.8 @神田明神 Kanda Myojin Shrine\n- 動画: https://www.youtube.com/watch?v=W6i6sxSXQ88 / 2025-08-08 / 初披露‼『ほっぺちゃん音頭／小見川千明』【神田明神納涼祭り2025🏮アニソン盆踊り】🏮Tokyo Bon Dance👘2025.8.8 @神田明神 Kanda Myojin Shrine\n- 動画: https://www.youtube.com/watch?v=PrxwlzLCQ3U / 2025-08-08 / 初披露‼『オロナミンC  元気ハツラツ音頭』【神田明神納涼祭り2025🏮アニソン盆踊り】🏮Tokyo Bon Dance👘2025.8.8 @神田明神 Kanda Myojin Shrine\n- 動画: https://www.youtube.com/watch?v=TOjT2fBLq64 / 202",
-    "youtube_evidence": [
+    "detail": "",
+    "source_urls": [
       {
-        "label": "YouTube 2025公式URL確認済み証拠",
-        "event_name": "神田明神納涼祭り アニソン盆踊り",
-        "detected_date": "2025-08-08",
-        "video_url": "https://www.youtube.com/watch?v=TOjT2fBLq64 / 202",
-        "channel": "",
-        "thumbnail_url": "",
-        "songs": []
+        "label": "公式告知あり",
+        "url": "https://www.nouryo-matsuri.com/pages/6314608/page_202208061239",
+        "kind": "official"
+      },
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web"
       }
     ],
     "songs": [
       {
+        "name": "おジャ魔女カーニバル",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
         "name": "ほっぺちゃん音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "元気ハツラツ音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       }
     ],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-08-08。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.55,
+    "recurrence_reasons": [
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:納涼"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-08-08",
+      "2025-08-08"
+    ]
   },
   {
     "name": "丸の内de盆踊り",
@@ -750,52 +440,110 @@ const EVENTS = [
       "7": "下旬"
     },
     "description": null,
-    "detail": "2025-07-25〜2025-07-26、行幸通りで開催。公式ページ「丸の内夏祭り2025」in 行幸通り内の丸の内de盆踊り。7/25 盆踊り 17:00-18:15 / 19:00-19:40 / 20:00-21:00、7/26 盆踊り 18:00-19:00 / 19:20-20:10 / 20:40-21:00。\n\n[youtube_evidence] 2025実績証拠\n- 動画: https://www.youtube.com/watch?v=_cggqDBTu20\n- チャンネル: shu channel\n- サムネイル: https://i.ytimg.com/vi/_cggqDBTu20/maxresdefault.jpg\n- 曲目候補: 丸の内音頭, 東京音頭, 大東京音頭, ドンパン節, 炭坑節, お江戸日本橋, 八木節\n\n[youtube_evidence] YouTube公式確認済み追加証拠\n- 対象イベント: 丸の内de盆踊り\n- 検出日付: 2025-07-26\n- 動画数: 3\n- チャンネル: Exploring Japan with Zen\n- 動画: https://www.youtube.com/watch?v=seY6P_Ngq4E / Exploring Japan with Zen / Marunouchi Bon Odori Dance festival PART 1  /  丸の内盆踊り 2025 パート１\n- 動画: https://www.youtube.com/watch?v=wsnxABvy3BM / Exploring Japan with Zen / Marunouchi Bon Odori Dance festival PART 2  /  丸の内盆踊り 2025 パート2\n- 動画: https://www.youtube.com/watch?v=Otv4gDwv8io / Exploring Japan with Zen / Marunouchi Bon Odori Dance festival DJ J-POP Time  /  丸の内盆踊り 2025 DJ J-POP Time\n- 公式確認URL: https://www.marunouchi.com/pickup/event/6763/\n\n[youtube_evidence] YouTube shorts追加証拠\n- 対象イベント: 丸の内de盆踊り\n- 検出日付: 未抽出\n- 動画数: 4\n- チャンネル: Exploring Japan with Zen\n- 動画: https://www.youtube.com/shorts/X7b8ZKhyOck / Exploring Japan with Zen / Marunouchi Bon Dance, Tokyo 01    丸の内 盆踊り 01    #shorts\n- 動画: https://www.youtube.com/shorts/Gr5qUEwYzdo / Exploring Japan with Zen / Marunouchi Bon Dance, Tokyo 02    丸の内 盆踊り 02   #shorts\n- 動画: https://www.youtube.com/shorts/DqLOwuakCjA / Exploring Japan with Zen / Marunouchi Bon Dance, 03 DJ TIme    丸の内 盆踊り 03 DJ TIme   #shorts\n- 動画: https://www.youtube.com/shorts/yG8WH6hESdg / Exploring Japan with Zen / Marunouchi Bon Dance, 04 DJ TIme    丸の内 盆踊り 04 DJ TIme    #shorts\n\n[youtube_evidence] YouTube実績証拠\n- 対象イベント: 丸の内de盆踊り\n- 検出日付: 2025-07-25\n- 動画数: 5\n- チャンネル: UCEYq2_O_Sai0j9chJOmcKtQ\n- 代表動画: https://www.youtube.com/watch?v=gUe2mxcuoVE / UCEYq2_O_Sai0j9chJOmcKtQ / 【東京丸の内盆踊り2025】『ダンシング・ヒーロー～どんとこいブギ！～輝き音頭～閉め太鼓』[7/7]  👘Tokyo Bon Dance 🏮2025.7.25 @東京駅丸の内口・行幸通り\n- 代表動画: https://www.youtube.com/watch?v=XIjIQ_sAGe0 / UCEYq2_O_Sai0j9chJOmcKtQ / 【東京丸の内盆踊り2025】『ドダレバチ（津軽甚句）～丸の内音頭～東京音頭～大東京音頭～ドンパン節～』[5/7]  👘Tokyo Bon Dance 🏮2025.7.25 @東京駅丸の内口・行幸通り\n- 代表動画: https://www.youtube.com/watch?v=Ukk2t5iSotc / UCEYq2_O_Sai0j9chJOmcKtQ / 【東京丸の内盆踊り2025】『花笠踊り～郡上節～ゆかた音頭～相馬盆唄～千代田踊り』[2/7]  👘Tokyo Bon Dance 🏮2025.7.25 @東京駅丸の内口・行幸通り\n- 代表動画: https://www.youtube.com/watch?v=NpkVCDS0zC0 / UCEYq2_O_Sai0j9chJOmcKtQ / 【東京丸の内盆踊り2025】『銀座カンカン娘～毬と殿様～にっぽんチャチャチャ～民謡お国巡り音頭』 [3/7] 👘Tokyo Bon Dance 🏮2025.7.25 @東京駅丸の内口・行幸通り\n- 代表動画: https://www.youtube.com/watch?v=0nZz5aWpLHg / UCEYq2_O_Sai0j9chJOmcKtQ / 【東京丸の内盆踊り2025】『龍馬おどり～令和おどり～ダンシング・ヒーロー～どんとこいブギ！〜』[4/7]  👘Tokyo Bon Dance 🏮2025.7.25 @東京駅丸の内口・行幸通り\n- 曲目候補: 未抽出\n\n[youtube_evidence] YouTube 2025公式URL確認済み証拠\n- 対象イベント: 丸の内de盆踊り\n- 検出日付: 2025-07-25, 2025-07-26\n- 動画数: 4\n- 公式確認URL: https://www.marunouchi.com/pickup/event/6763/\n- チャンネルID: UCSHoRoW171uEytgOcKkKU2Q, UCEYq2_O_Sai0j9chJOmcKtQ\n- 代表動画: https://www.youtube.com/watch?v=seY6P_Ngq4E / 2025-07-26 / Marunouchi Bon Odori Dance festival PART 1  /  丸の内盆踊り 2025 パート１\n- 代表動画: https://www.youtube.com/watch?v=wsnxABvy3BM / 2025-07-26 / Marunouchi Bon Odori Dance festival PART 2  /  丸の内盆踊り 2025 パート2\n- 代表動画: https://www.youtube.com/watch?v=Otv4gDwv8io / 2025-07-26 / Marunouchi Bon Odori Dance festival DJ J-POP Time  /  丸の内盆踊り 2025 DJ J-POP Time\n- 代表動画: https://www.youtube.com/watch?v=Ig4Ocvre8Y0 / 2025-07-25 / 【東京丸の内盆踊り2025】『ドンパン節～毬と殿様～にっぽんチャチャチャ～民謡お国巡り音頭～松の木小唄～龍馬おどり』 👘Tokyo Bon Dance 🏮2025.7.25 @東京駅丸の内口・行幸通り",
-    "youtube_evidence": [
+    "detail": "2025-07-25〜2025-07-26、行幸通りで開催。公式ページ「丸の内夏祭り2025」in 行幸通り内の丸の内de盆踊り。7/25 盆踊り 17:00-18:15 / 19:00-19:40 / 20:00-21:00、7/26 盆踊り 18:00-19:00 / 19:20-20:10 / 20:40-21:00。",
+    "source_urls": [
       {
-        "label": "2025実績証拠",
-        "event_name": "丸の内de盆踊り",
-        "detected_date": "2025-07-25",
-        "video_url": "https://www.youtube.com/watch?v=_cggqDBTu20",
-        "channel": "shu channel",
-        "thumbnail_url": "https://i.ytimg.com/vi/_cggqDBTu20/maxresdefault.jpg",
-        "songs": [
-          "丸の内音頭",
-          "東京音頭",
-          "大東京音頭",
-          "ドンパン節",
-          "炭坑節",
-          "お江戸日本橋",
-          "八木節"
-        ]
-      },
-      {
-        "label": "YouTube公式確認済み追加証拠",
-        "event_name": "丸の内de盆踊り",
-        "detected_date": "2025-07-26",
-        "video_url": "https://www.youtube.com/watch?v=Otv4gDwv8io / Exploring Japan with Zen / Marunouchi Bon Odori Dance festival DJ J-POP Time  /  丸の内盆踊り 2025 DJ J-POP Time",
-        "channel": "Exploring Japan with Zen",
-        "thumbnail_url": "",
-        "songs": []
-      },
-      {
-        "label": "YouTube shorts追加証拠",
-        "event_name": "丸の内de盆踊り",
-        "detected_date": "未抽出",
-        "video_url": "https://www.youtube.com/shorts/yG8WH6hESdg / Exploring Japan with Zen / Marunouchi Bon Dance, 04 DJ TIme    丸の内 盆踊り 04 DJ TIme    #shorts",
-        "channel": "Exploring Japan with Zen",
-        "thumbnail_url": "",
-        "songs": []
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web"
       }
     ],
     "songs": [
       {
+        "name": "お江戸日本橋",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "どんとこいブギ",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "にっぽんチャチャチャ",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "ゆかた音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "ドダレバチ",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "ドンパン節",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "丸の内音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
         "name": "令和おどり",
         "confidence": "hint",
         "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "八木節",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
         "evidence_count": 1,
         "speaker_count": 1,
         "setlist_complete": false
@@ -804,9 +552,42 @@ const EVENTS = [
         "name": "千代田踊り",
         "confidence": "hint",
         "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "大東京音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "松の木小唄",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
         "evidence_count": 1,
         "speaker_count": 1,
         "setlist_complete": false
@@ -815,9 +596,9 @@ const EVENTS = [
         "name": "民謡お国巡り音頭",
         "confidence": "hint",
         "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
         "evidence_count": 1,
         "speaker_count": 1,
         "setlist_complete": false
@@ -826,9 +607,42 @@ const EVENTS = [
         "name": "津軽甚句",
         "confidence": "hint",
         "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "甚句",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "相馬盆唄",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
         "evidence_count": 1,
         "speaker_count": 1,
         "setlist_complete": false
@@ -837,9 +651,9 @@ const EVENTS = [
         "name": "花笠踊り",
         "confidence": "hint",
         "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
         "evidence_count": 1,
         "speaker_count": 1,
         "setlist_complete": false
@@ -848,9 +662,9 @@ const EVENTS = [
         "name": "輝き音頭",
         "confidence": "hint",
         "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
         "evidence_count": 1,
         "speaker_count": 1,
         "setlist_complete": false
@@ -859,9 +673,20 @@ const EVENTS = [
         "name": "郡上節",
         "confidence": "hint",
         "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "銀座カンカン娘",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
         "evidence_count": 1,
         "speaker_count": 1,
         "setlist_complete": false
@@ -870,151 +695,34 @@ const EVENTS = [
         "name": "龍馬おどり",
         "confidence": "hint",
         "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
         "evidence_count": 1,
         "speaker_count": 1,
         "setlist_complete": false
-      },
-      {
-        "name": "ドンパン節",
-        "confidence": "hint",
-        "source_count": 1
-      },
-      {
-        "name": "八木節",
-        "confidence": "hint",
-        "source_count": 1
-      },
-      {
-        "name": "大東京音頭",
-        "confidence": "hint",
-        "source_count": 1
-      },
-      {
-        "name": "東京音頭",
-        "confidence": "hint",
-        "source_count": 1
-      },
-      {
-        "name": "炭坑節",
-        "confidence": "hint",
-        "source_count": 1
       }
     ],
-    "song_occurrence": {
-      "occurrence_id": "b8db82255dd0e1f0",
-      "event_name": "丸の内de盆踊り",
-      "venue": "行幸通り",
-      "year": 2025,
-      "songs": [
-        {
-          "name": "令和おどり",
-          "probability": 24,
-          "basis": "past_evidence",
-          "basis_label": "2025年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.4
-          ],
-          "evidence_urls": []
-        },
-        {
-          "name": "千代田踊り",
-          "probability": 24,
-          "basis": "past_evidence",
-          "basis_label": "2025年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.4
-          ],
-          "evidence_urls": []
-        },
-        {
-          "name": "民謡お国巡り音頭",
-          "probability": 24,
-          "basis": "past_evidence",
-          "basis_label": "2025年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.4
-          ],
-          "evidence_urls": []
-        },
-        {
-          "name": "津軽甚句",
-          "probability": 24,
-          "basis": "past_evidence",
-          "basis_label": "2025年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.4
-          ],
-          "evidence_urls": []
-        },
-        {
-          "name": "花笠踊り",
-          "probability": 24,
-          "basis": "past_evidence",
-          "basis_label": "2025年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.4
-          ],
-          "evidence_urls": []
-        },
-        {
-          "name": "輝き音頭",
-          "probability": 24,
-          "basis": "past_evidence",
-          "basis_label": "2025年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.4
-          ],
-          "evidence_urls": []
-        },
-        {
-          "name": "郡上節",
-          "probability": 24,
-          "basis": "past_evidence",
-          "basis_label": "2025年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.4
-          ],
-          "evidence_urls": []
-        },
-        {
-          "name": "龍馬おどり",
-          "probability": 24,
-          "basis": "past_evidence",
-          "basis_label": "2025年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.4
-          ],
-          "evidence_urls": []
-        }
-      ]
-    }
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-25〜2025-07-26。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.68,
+    "recurrence_reasons": [
+      "held_2025",
+      "official_or_semi_official_evidence",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:夏祭り"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-07-25",
+      "2025-07-26"
+    ]
   },
   {
     "name": "みたままつり 納涼民踊のつどい",
@@ -1052,10 +760,25 @@ const EVENTS = [
       "7": "中旬"
     },
     "description": "3万灯の提灯が掲げられる靖国神社「みたままつり」の夕べに、大村益次郎像の周りで踊る納涼民踊。圧巻の提灯の光の中で踊れる。",
-    "detail": "2026-07-13〜2026-07-16 開催予定。東京盆踊りマップから確定日として反映。\n2026 [A2]\n7/13 - 16\n靖国神社 大村銅像前\n千代田区「第79回みたままつり 納涼民踊の集い」\n7月13日(月)-7月16日(木) 午後6時30分-(例年8時30分まで)。\n＊雨天中止、小雨決行\n・練習会 6/5(金)、7/3(金) ともに19時より、千代田区スポーツセンターにて(対象:千代田区在住在勤者)。\n(4/4掲)",
-    "youtube_evidence": [],
+    "detail": "2026-07-13〜2026-07-16 開催予定。東京盆踊りマップから確定日として反映。 2026 [A2] 7/13 - 16 靖国神社 大村銅像前 千代田区「第79回みたままつり 納涼民踊の集い」 7月13日(月)-7月16日(木) 午後6時30分-(例年8時30分まで)。 ＊雨天中止、小雨決行 ・練習会 6/5(金)、7/3(金) ともに19時より、千代田区スポーツセンターにて(対象:千代田区在住在勤者)。 (4/4掲)",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-07-13〜2026-07-16",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-07-13",
+      "2026-07-16"
+    ]
   },
   {
     "name": "あかつき公園の盆踊り",
@@ -1081,8 +804,21 @@ const EVENTS = [
     "jun": {},
     "description": null,
     "detail": null,
-    "youtube_evidence": [],
-    "songs": []
+    "source_urls": [],
+    "songs": [],
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.15,
+    "recurrence_reasons": [],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "大銀座盆踊り",
@@ -1116,41 +852,110 @@ const EVENTS = [
       "8": "上旬"
     },
     "description": null,
-    "detail": "[youtube_evidence] YouTube 2025公式URL確認済み証拠\n- 対象イベント: 大銀座盆踊り\n- 検出日付: 2025-08-02\n- 動画数: 4\n- 公式確認URL: https://ginbura.ginza.jp/\n- 判断: ゆかたで銀ぶら公式ページで中央通り開催と大銀座盆踊りの実施を確認。YouTube動画は2025-08-02。\n- 動画: https://www.youtube.com/watch?v=bm87JsNkhJY / 2025-08-02 / 【 大銀座盆踊り👘ゆかたで銀ぶら2025】『炭坑節～東京音頭～バハマ・ママ～ダンシング・ヒーロー』（1/4）Tokyo Bon Dance🏮2025.8.2 @銀座通り 3丁目交差点\n- 動画: https://www.youtube.com/watch?v=QHWd7ISJouo / 2025-08-02 / 【 大銀座盆踊り👘ゆかたで銀ぶら2025】『銀座カンカン娘～銀座音頭～銀座ときめき音頭～これがお江戸の盆ダンス』（2/4）Tokyo Bon Dance🏮2025.8.2 @銀座通り 3丁目交差点\n- 動画: https://www.youtube.com/watch?v=RS78coFRx2A / 2025-08-02 / 【 大銀座盆踊り👘ゆかたで銀ぶら2025】『炭坑節～東京音頭～バハマ・ママ～ダンシング・ヒーロー』（3/4）Tokyo Bon Dance🏮2025.8.2  @銀座通り 3丁目交差点\n- 動画: https://www.youtube.com/watch?v=KHsVP9vhEmI / 2025-08-02 / 【 大銀座盆踊り👘ゆかたで銀ぶら2025】『銀座カンカン娘～銀座音頭～これがお江戸の盆ダンス～銀座ときめき音頭』（4/4）Tokyo Bon Dance🏮2025.8.2 @銀座通り 3丁目交差点",
-    "youtube_evidence": [
+    "detail": "",
+    "source_urls": [
       {
-        "label": "YouTube 2025公式URL確認済み証拠",
-        "event_name": "大銀座盆踊り",
-        "detected_date": "2025-08-02",
-        "video_url": "https://www.youtube.com/watch?v=KHsVP9vhEmI / 2025-08-02 / 【 大銀座盆踊り👘ゆかたで銀ぶら2025】『銀座カンカン娘～銀座音頭～これがお江戸の盆ダンス～銀座ときめき音頭』（4/4）Tokyo Bon Dance🏮2025.8.2 @銀座通り 3丁目交差点",
-        "channel": "",
-        "thumbnail_url": "",
-        "songs": []
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web"
       }
     ],
     "songs": [
       {
+        "name": "これがお江戸の盆ダンス",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "バハマ・ママ",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
         "name": "東京音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "炭坑節",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "銀座ときめき音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "銀座カンカン娘",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "銀座音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       }
     ],
-    "song_occurrence": null
+    "public_status": "expected_low",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-08-02。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 低",
+    "recurrence_score": 0.51,
+    "recurrence_reasons": [
+      "venue_present",
+      "tokyo_23ward"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-08-02",
+      "2025-08-02"
+    ]
   },
   {
     "name": "京橋盆踊り",
@@ -1185,9 +990,25 @@ const EVENTS = [
     },
     "description": "京橋盆踊りは、中央区の京橋エドグラン 京橋中央ひろばで行われる盆踊り。8月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2023年に約50年ぶり復活、以後毎年8月末開催。2026年日程は未発表（公式イベントページ要確認）",
-    "youtube_evidence": [],
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "小網神社の盆踊り（名称推定）",
@@ -1222,9 +1043,25 @@ const EVENTS = [
     },
     "description": "小網神社で開催される地域の盆踊り。名称は会場名と過去の開催情報からの推定。",
     "detail": "名称推定。開催日程は未確認。",
-    "youtube_evidence": [],
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "日本橋小学校の盆踊り（名称推定）",
@@ -1250,9 +1087,23 @@ const EVENTS = [
     "jun": {},
     "description": "日本橋小学校で開催される地域の盆踊り。名称は会場名と過去の開催情報からの推定。",
     "detail": "名称推定。開催日程は未確認。",
-    "youtube_evidence": [],
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.15,
+    "recurrence_reasons": [
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "第2回 大盆踊り祭 with 坂崎守寛",
@@ -1286,10 +1137,24 @@ const EVENTS = [
       "2": "下旬"
     },
     "description": "日本橋社会教育会館で行われる地域の盆踊りイベント。過去の開催実績をもとに掲載。",
-    "detail": "2026 [B1]\n2/21。小島民踊研究会「第2回 大盆踊り祭 with 坂崎守寛」 2月21日(土) 13:00-18:00(開場 12時)。\n・参加費 1000円。\n・持ち物 団扇。",
-    "youtube_evidence": [],
+    "detail": "2026 [B1] 2/21。小島民踊研究会「第2回 大盆踊り祭 with 坂崎守寛」 2月21日(土) 13:00-18:00(開場 12時)。 ・参加費 1000円。 ・持ち物 団扇。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-02-21",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
+    "recurrence_reasons": [
+      "2026年開催済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": 2,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-02-21"
+    ]
   },
   {
     "name": "イベント名未確認（晴海ふ頭公園）",
@@ -1323,31 +1188,93 @@ const EVENTS = [
       "7": "中旬"
     },
     "description": "晴海ふ頭公園で行われる地域の盆踊り。7月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "[youtube_2025_date_backfill] 開催日補正\n- 補正日: 2025-07-12\n- 根拠URL: https://tokyofesta.com/23ku/23612/\n- URL内一致: 2025/07/12, 2025.07.12, 2025年7月12日\n- YouTube検出日付: 2025-07-12\n- 対象動画数: 24\n\n[youtube_evidence] YouTube実績証拠\n- 対象イベント: イベント名未確認（晴海ふ頭公園）\n- 検出日付: 2025-07-12\n- 動画数: 24\n- チャンネル: UCNF_5e3ZvziJueTWvTPATGw, UCWz2tM7PAFGT7xSL5OAEllg\n- 代表動画: https://www.youtube.com/watch?v=O4FLEzwOcLI / UCNF_5e3ZvziJueTWvTPATGw / 【きよしのズンドコ節】（氷川きよし）　2025年第1回晴海ふ頭公園盆踊り大会14　HARUMI FLAG\n- 代表動画: https://www.youtube.com/watch?v=GvEARgJJnwE / UCNF_5e3ZvziJueTWvTPATGw / 【きよしのズンドコ節】（氷川きよし）　2025年第1回晴海ふ頭公園盆踊り大会22　HARUMI FLAG\n- 代表動画: https://www.youtube.com/watch?v=jA7McwUYOf8 / UCNF_5e3ZvziJueTWvTPATGw / 【きよしのズンドコ節】（氷川きよし）　2025年第1回晴海ふ頭公園盆踊り大会６　HARUMI FLAG\n- 代表動画: https://www.youtube.com/watch?v=zDHmFTkBtwM / UCNF_5e3ZvziJueTWvTPATGw / 【ダンシング・ヒーロー】（荻野目洋子）　2025年第1回晴海ふ頭公園盆踊り大会12　HARUMI FLAG\n- 代表動画: https://www.youtube.com/watch?v=OndrtlJbO3M / UCNF_5e3ZvziJueTWvTPATGw / 【ダンシング・ヒーロー】（荻野目洋子）　2025年第1回晴海ふ頭公園盆踊り大会20　HARUMI FLAG\n- 追加動画: 19件 (詳細はapply結果JSON)\n- 曲目候補: きよしのズンドコ節, ダンシングヒーロー, バハマ・ママ, 令和音頭, 東京音頭, これがお江戸の盆ダンス, ジャンボリミッキー, 炭坑節",
-    "youtube_evidence": [],
+    "detail": "[youtube_2025_date_backfill] 開催日補正 - 補正日: 2025-07-12 - 根拠URL: - URL内一致: 2025/07/12, 2025.07.12, 2025年7月12日 - YouTube検出日付: 2025-07-12 - 対象動画数: 24",
+    "source_urls": [],
     "songs": [
+      {
+        "name": "きよしのズンドコ節",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
       {
         "name": "ダンシングヒーロー",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "バハマ・ママ",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "令和音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "東京音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "炭坑節",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       }
     ],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-12。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.56,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-07-12"
+    ]
   },
   {
     "name": "有馬小学校の盆踊り",
@@ -1373,8 +1300,21 @@ const EVENTS = [
     "jun": {},
     "description": null,
     "detail": null,
-    "youtube_evidence": [],
-    "songs": []
+    "source_urls": [],
+    "songs": [],
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.15,
+    "recurrence_reasons": [],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "中央区大江戸まつり盆おどり大会",
@@ -1412,10 +1352,43 @@ const EVENTS = [
       "8": "下旬"
     },
     "description": "浜町公園いっぱいに櫓と提灯が広がる中央区最大の盆踊り。民謡歌手の生歌や子ども盆踊りタイムもある屈指の大規模大会。",
-    "detail": "2026-08-21〜2026-08-22 開催予定。X投稿から確定日として反映。\n第36回中央区大江戸まつり盆おどり大会のお知らせ📢8/21（金）、22日(土)の午後4時から浜町公園にて。区制施行80周年を記念したうちわを配布🎐東根市友好都市提携35周年を記念して、パネル展示や特産品販売🍑各地域において盆踊りの練習会も実施。\nhttps://t.co/3M5NVMFLGQ\n#大江戸まつり盆おどり大会 https://t.co/ubQcIh3Ovt",
-    "youtube_evidence": [],
-    "songs": [],
-    "song_occurrence": null
+    "detail": "2026-08-21〜2026-08-22 開催予定。X投稿から確定日として反映。 第36回中央区大江戸まつり盆おどり大会のお知らせ📢8/21（金）、22日(土)の午後4時から浜町公園にて。区制施行80周年を記念したうちわを配布🎐東根市友好都市提携35周年を記念して、パネル展示や特産品販売🍑各地域において盆踊りの練習会も実施。 #大江戸まつり盆おどり大会",
+    "source_urls": [
+      {
+        "label": "告知投稿あり",
+        "url": "",
+        "kind": "post"
+      }
+    ],
+    "songs": [
+      {
+        "name": "まつり",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      }
+    ],
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-21〜2026-08-22",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-21",
+      "2026-08-22"
+    ]
   },
   {
     "name": "浜二納涼盆踊り大会",
@@ -1449,10 +1422,26 @@ const EVENTS = [
       "9": "上旬"
     },
     "description": "浜二町会による浜町公園・遊具広場の納涼盆踊り。町会ならではのあたたかい雰囲気が魅力。",
-    "detail": null,
-    "youtube_evidence": [],
+    "detail": "",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "濱町音頭盆踊り大会",
@@ -1486,8 +1475,8 @@ const EVENTS = [
       "9": "下旬"
     },
     "description": "浜町音頭保存会が主催する、地元ゆかりの「濱町音頭」を踊り継ぐ大会。浜町公園の秋の風物詩。",
-    "detail": null,
-    "youtube_evidence": [],
+    "detail": "",
+    "source_urls": [],
     "songs": [
       {
         "name": "濱町音頭",
@@ -1495,7 +1484,23 @@ const EVENTS = [
         "source_count": 1
       }
     ],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "築地本願寺納涼盆踊り大会",
@@ -1535,66 +1540,185 @@ const EVENTS = [
       "8": "上旬"
     },
     "description": "「日本一おいしい盆踊り」と呼ばれる名物グルメ屋台と、本堂を背に踊る圧巻のロケーション。例年4日間開かれる都内屈指の大規模盆踊り。",
-    "detail": "2026-07-29〜2026-08-01 開催予定。X投稿から確定日として反映。\n第79回築地本願寺納涼盆踊り大会\n2026年7月29日（水）〜8月1日（土）開催！\n\n本日発表！\nこの夏も楽しみましょう！\nhttps://t.co/BoYHwlYb4A https://t.co/P5zxzMqK7T\n\n[youtube_evidence] YouTube 2025公式URL確認済み証拠\n- 対象イベント: 築地本願寺納涼盆踊り大会\n- 検出日付: 2025-07-30\n- 動画数: 6\n- 公式確認URL: https://tokyofesta.com/23ku/23763/\n- 判断: tokyofestaで第78回築地本願寺納涼盆踊り大会の2025-07-30〜2025-08-02開催を確認。YouTube6動画の検出日付は開催初日と一致。\n- YouTube検出元URL: https://tsukijihongwanji.jp/news/10279/\n- 動画: https://www.youtube.com/watch?v=mnqGmIwHq7A / 2025-07-30 / 【築地本願寺納涼盆踊り大会 2025】『築地音頭～これがお江戸の盆ダンス～あさりときりみのおだいどこ音頭～ホームラン音頭』🏮Tokyo Bon Dance👘2025.7.30 @築地本願寺\n- 動画: https://www.youtube.com/watch?v=W5IMViZwKTY / 2025-07-30 / 【築地本願寺納涼盆踊り大会 2025】『あやめ踊り～日本晴れだよ～おけさ唄えば～炭坑節』🏮Tokyo Bon Dance👘2025.7.30 @築地本願寺 Tsukiji Hongawanji\n- 動画: https://www.youtube.com/watch?v=Q8L7IDaQ_lI / 2025-07-30 / 【築地本願寺納涼盆踊り大会 2025】『和太鼓演奏：奉納組太鼓🥁大江戸助六太鼓 - 助六四段撃ち』🏮Japanese drum👘2025.7.30 @築地本願寺 Tsukiji Hongawanji\n- 動画: https://www.youtube.com/watch?v=BMzHeO-6XVw / 2025-07-30 / 【築地本願寺納涼盆踊り大会 2025】『大江戸助六音頭～斎太郎節～法輪音頭』🏮Tokyo Bon Dance👘2025.7.30 @築地本願寺 Tsukiji Hongawanji\n- 動画: https://www.youtube.com/watch?v=2QvUjfmcL94 / 2025-07-30 / 【築地本願寺納涼盆踊り大会 2025】『ゆかた音頭～おこさ節』🏮Tokyo Bon Dance👘2025.7.30 @築地本願寺 Tsukiji Hongawanji\n- 動画: https://www.youtube.com/watch?v=zFIi7VagkUQ / 2025-07-30 / 【築地本願寺納涼盆踊り大会 2025】『東京音頭～築地音頭』🏮Tokyo Bon Dance👘2025.7.30 @築地本願寺 Tsukiji Hongawanji",
-    "youtube_evidence": [
+    "detail": "2026-07-29〜2026-08-01 開催予定。X投稿から確定日として反映。 第79回築地本願寺納涼盆踊り大会 2026年7月29日（水）〜8月1日（土）開催！ 本日発表！ この夏も楽しみましょう！",
+    "source_urls": [
       {
-        "label": "YouTube 2025公式URL確認済み証拠",
-        "event_name": "築地本願寺納涼盆踊り大会",
-        "detected_date": "2025-07-30",
-        "video_url": "https://www.youtube.com/watch?v=zFIi7VagkUQ / 2025-07-30 / 【築地本願寺納涼盆踊り大会 2025】『東京音頭～築地音頭』🏮Tokyo Bon Dance👘2025.7.30 @築地本願寺 Tsukiji Hongawanji",
-        "channel": "",
-        "thumbnail_url": "",
-        "songs": []
+        "label": "公式告知あり",
+        "url": "https://tsukijihongwanji.jp/news/10279/",
+        "kind": "official"
+      },
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web"
+      },
+      {
+        "label": "告知投稿あり",
+        "url": "",
+        "kind": "post"
       }
     ],
     "songs": [
       {
+        "name": "あさりときりみのおだいどこ音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
         "name": "あやめ踊り",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "おこさ節",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "これがお江戸の盆ダンス",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "ゆかた音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "ホームラン音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "大江戸助六音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "斎太郎節",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "日本晴れだよ",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "東京音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "法輪音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "炭坑節",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "築地音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       }
     ],
-    "song_occurrence": null
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-07-29〜2026-08-01",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-07-29",
+      "2026-08-01"
+    ]
   },
   {
     "name": "イベント名未確認（築地社会教育会館）",
@@ -1621,10 +1745,25 @@ const EVENTS = [
     "hints": [],
     "jun": {},
     "description": "築地社会教育会館で行われる地域の盆踊り。詳しい開催日は確認中ですが、会場情報をもとに掲載しています。",
-    "detail": null,
-    "youtube_evidence": [],
+    "detail": "",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "アークヒルズ秋祭り 盆踊り",
@@ -1659,9 +1798,25 @@ const EVENTS = [
     },
     "description": "アークヒルズ秋祭り 盆踊りは、アーク・カラヤン広場（アークヒルズ）で開かれる屋外型の盆踊り・夏の地域イベント。9月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "秋祭り内で開催。2024年は9/14 18:00-20:00。2026年日程は未発表",
-    "youtube_evidence": [],
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "第16回ハマサイトの夏祭り",
@@ -1695,10 +1850,42 @@ const EVENTS = [
       "8": "下旬"
     },
     "description": "第16回ハマサイトの夏祭りは、ハマサイト前広場・汐留ビルディング外構で開かれる屋外型の盆踊り・夏の地域イベント。8月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025-08-22（金）16:00-21:00開催記録。例年、盆踊りの合間にライブ演奏等あり。\n\n[youtube_evidence] YouTube実績証拠\n- 対象イベント: 第16回ハマサイトの夏祭り\n- 検出日付: 2025-08-22\n- 動画数: 8\n- チャンネル: UCWz2tM7PAFGT7xSL5OAEllg, UCEYq2_O_Sai0j9chJOmcKtQ\n- 代表動画: https://www.youtube.com/watch?v=wsnOdq8Jv24 / UCWz2tM7PAFGT7xSL5OAEllg / B’z「ultra soul」盆踊り【ハマサイトの夏祭り 2025】ウルトラソウル 鳳蝶美成\n- 代表動画: https://www.youtube.com/watch?v=VVIgqDQNTcM / UCWz2tM7PAFGT7xSL5OAEllg / 【4K LIVE】「エボレボ！」- はやぶさ ライブ / デュエルマスターズ VSRF OP【ハマサイトの夏祭り 2025】デュエマ\n- 代表動画: https://www.youtube.com/watch?v=tZdn0Q3RQ5U / UCWz2tM7PAFGT7xSL5OAEllg / 【4K LIVE】「星降る街角」- はやぶさ  ライブ【ハマサイトの夏祭り 2025】敏いとうとハッピー＆ブルー カバー\n- 代表動画: https://www.youtube.com/watch?v=y65N8fR-DYI / UCWz2tM7PAFGT7xSL5OAEllg / 【4K】「BREAK OUT！」- 相川七瀬  ライブ【ハマサイトの夏祭り 2025】\n- 代表動画: https://www.youtube.com/watch?v=toOOPEi5K9g / UCEYq2_O_Sai0j9chJOmcKtQ / 【DJ KOO × 相川七瀬 × 鳳蝶美成 ほかLIVE】「第16回ハマサイトの夏祭り」🏮Tokyo Bon Dance👘2025.8.22 @浜松町駅北口駅前広場\n- 追加動画: 3件 (詳細はapply結果JSON)\n- 曲目候補: 未抽出",
-    "youtube_evidence": [],
-    "songs": [],
-    "song_occurrence": null
+    "detail": "2025-08-22（金）16:00-21:00開催記録。例年、盆踊りの合間にライブ演奏等あり。",
+    "source_urls": [],
+    "songs": [
+      {
+        "name": "ウルトラソウル",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      }
+    ],
+    "public_status": "expected_high",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "第16回・昨年開催: 2025-08-22。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 高",
+    "recurrence_score": 0.78,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "edition_number:16",
+      "edition_10plus",
+      "recurring_word:例年",
+      "recurring_word:夏祭り"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": 16,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-08-22"
+    ]
   },
   {
     "name": "桜まつり",
@@ -1732,10 +1919,32 @@ const EVENTS = [
       "3": "下旬"
     },
     "description": "三田松坂児童遊園で行われる地域の盆踊りイベント。過去の開催実績をもとに掲載。",
-    "detail": "2025-03-30 開催実績。2025 [C8]\n3/30。三田松坂町会「桜まつり」 3月30日(日) 11:00-15:00。\n踊りは①11:10-②13:30-(各30分間)。\n・3月29日開催分が雨天により延期となりました。\n(3/30朝掲)",
-    "youtube_evidence": [],
-    "songs": [],
-    "song_occurrence": null
+    "detail": "2025-03-30 開催実績。2025 [C8] 3/30。三田松坂町会「桜まつり」 3月30日(日) 11:00-15:00。 踊りは①11:10-②13:30-(各30分間)。 ・3月29日開催分が雨天により延期となりました。 (3/30朝掲)",
+    "source_urls": [],
+    "songs": [
+      {
+        "name": "まつり",
+        "confidence": "hint",
+        "source_count": 1
+      }
+    ],
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "六本木ヒルズ盆踊り",
@@ -1773,65 +1982,110 @@ const EVENTS = [
       "8": "下旬"
     },
     "description": null,
-    "detail": "[youtube_evidence] YouTube 2025公式URL確認済み証拠\n- 対象イベント: 六本木ヒルズ盆踊り\n- 検出日付: 2025-08-23, 2025-08-24\n- 動画数: 10\n- 公式確認URL: https://www.roppongihills.com/events/2025/08/0478.html\n- 判断: 六本木ヒルズ公式ページで2025-08-22〜2025-08-24開催を確認。22日は前夜祭、盆踊り動画は23/24。\n- 代表動画: https://www.youtube.com/watch?v=Iuw5CwPNUxY / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY1）】「日本の芸能：『加賀万歳』金沢市指無形民俗文化財 」2025.8.23 @六本木ヒルズアリーナ Roppongi Hills Arena\n- 代表動画: https://www.youtube.com/watch?v=O2_FxIRlZA8 / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY1）】「六本人音頭～花火音頭」六本木じろう with 里野鈴妹 ＆ 増田吏桜🎤2025.8.23 @六本木ヒルズアリーナ\n- 代表動画: https://www.youtube.com/watch?v=7E8P3YCST2Q / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY1）】「六本木音頭～炭坑節」2025.8.23 @六本木ヒルズアリーナ\n- 代表動画: https://www.youtube.com/watch?v=ixU_B6mszvE / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY1）】「河内おとこ節～夏祭り」　里野鈴妹 ＆ 増田吏桜（さとのすずめ ＆ ますだりお）🎤2025.8.23 @六本木ヒルズアリーナ\n- 代表動画: https://www.youtube.com/watch?v=JeYPdZc9rsA / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY1）】「ドラえもん音頭 Doraemon ondo」 2025.8.23 @六本木ヒルズアリーナ\n- 代表動画: https://www.youtube.com/watch?v=qvMiiQScrYU / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY1）】「東京音頭～炭坑節」六本木じろう with 里野鈴妹 ＆ 増田吏桜🎤 2025.8.23 @六本木ヒルズアリーナ\n- 追加動画: 2件（詳細はapply結果JSON）\n\n[youtube_evidence] YouTube 2025公式URL確認済み証拠\n- 対象イベント: 六本木ヒルズ盆踊り\n- 検出日付: 2025-08-23, 2025-08-24\n- 動画数: 10\n- 公式確認URL: https://www.roppongihills.com/events/2025/08/0478.html\n- 判断: 六本木ヒルズ公式ページで2025-08-22〜2025-08-24開催を確認。22日は前夜祭、盆踊り動画は23/24。\n- 動画: https://www.youtube.com/watch?v=Iuw5CwPNUxY / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY1）】「日本の芸能：『加賀万歳』金沢市指無形民俗文化財 」2025.8.23 @六本木ヒルズアリーナ Roppongi Hills Arena\n- 動画: https://www.youtube.com/watch?v=O2_FxIRlZA8 / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY1）】「六本人音頭～花火音頭」六本木じろう with 里野鈴妹 ＆ 増田吏桜🎤2025.8.23 @六本木ヒルズアリーナ\n- 動画: https://www.youtube.com/watch?v=7E8P3YCST2Q / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY1）】「六本木音頭～炭坑節」2025.8.23 @六本木ヒルズアリーナ\n- 動画: https://www.youtube.com/watch?v=ixU_B6mszvE / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY1）】「河内おとこ節～夏祭り」　里野鈴妹 ＆ 増田吏桜（さとのすずめ ＆ ますだりお）🎤2025.8.23 @六本木ヒルズアリーナ\n- 動画: https://www.youtube.com/watch?v=JeYPdZc9rsA / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY1）】「ドラえもん音頭 Doraemon ondo」 2025.8.23 @六本木ヒルズアリーナ\n- 動画: https://www.youtube.com/watch?v=qvMiiQScrYU / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY1）】「東京音頭～炭坑節」六本木じろう with 里野鈴妹 ＆ 増田吏桜🎤 2025.8.23 @六本木ヒルズアリーナ\n- 動画: https://www.youtube.com/watch?v=EE1JlcxJbLw / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY1）】「六本人音頭（アンコール）」六本木じろう with 里野鈴妹 ＆ 増田吏桜🎤 2025.8.23 @六本木ヒルズアリーナ\n- 動画: https://www.youtube.com/watch?v=xu4VXlbfrJU / 2025-08-24 / 【六本木ヒルズ盆踊り 2025（DAY2）】日本の芸能：「半浦の秋祭り／半浦青年団（石川県七尾市能登島半浦町）」 2025.8.24 @六本木ヒルズアリーナ\n\n[youtube_evidence] YouTube 2025公式URL確認済み証拠\n- 対象イベント: 六本木ヒルズ盆踊り\n- 検出日付: 2025-08-23, 2025-08-24\n- 動画数: 10\n- 公式確認URL: https://www.roppongihills.com/events/2025/08/0478.html\n- 判断: 六本木ヒルズ公式ページで2025-08-22〜2025-08-24開催を確認。22日は前夜祭、盆踊り動画は23/24。\n- 動画: https://www.youtube.com/watch?v=Iuw5CwPNUxY / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY1）】「日本の芸能：『加賀万歳』金沢市指無形民俗文化財 」2025.8.23 @六本木ヒルズアリーナ Roppongi Hills Arena\n- 動画: https://www.youtube.com/watch?v=O2_FxIRlZA8 / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY1）】「六本人音頭～花火音頭」六本木じろう with 里野鈴妹 ＆ 増田吏桜🎤2025.8.23 @六本木ヒルズアリーナ\n- 動画: https://www.youtube.com/watch?v=7E8P3YCST2Q / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY1）】「六本木音頭～炭坑節」2025.8.23 @六本木ヒルズアリーナ\n- 動画: https://www.youtube.com/watch?v=ixU_B6mszvE / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY1）】「河内おとこ節～夏祭り」　里野鈴妹 ＆ 増田吏桜（さとのすずめ ＆ ますだりお）🎤2025.8.23 @六本木ヒルズアリーナ\n- 動画: https://www.youtube.com/watch?v=JeYPdZc9rsA / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY1）】「ドラえもん音頭 Doraemon ondo」 2025.8.23 @六本木ヒルズアリーナ\n- 動画: https://www.youtube.com/watch?v=qvMiiQScrYU / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY1）】「東京音頭～炭坑節」六本木じろう with 里野鈴妹 ＆ 増田吏桜🎤 2025.8.23 @六本木ヒルズアリーナ\n- 動画: https://www.youtube.com/watch?v=EE1JlcxJbLw / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY1）】「六本人音頭（アンコール）」六本木じろう with 里野鈴妹 ＆ 増田吏桜🎤 2025.8.23 @六本木ヒルズアリーナ\n- 動画: https://www.youtube.com/watch?v=xu4VXlbfrJU / 2025-08-24 / 【六本木ヒルズ盆踊り 2025（DAY2）】日本の芸能：「半浦の秋祭り／半浦青年団（石川県七尾市能登島半浦町）」 2025.8.24 @六本木ヒルズアリーナ\n- 動画: https://www.youtube.com/watch?v=AViOtdpRo7w / 2025-08-24 / 【六本木ヒルズ盆踊り 2025（DAY2）】「ドラえもん音頭 Doraemon ondo」 2025.8.24 @六本木ヒルズアリーナ\n- 動画: https://www.youtube.com/watch?v=uv6Tn8WT_Ck / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY2）】「六本人音頭（アンコール）」六本木じろう with 里野鈴妹 ＆ 増田吏桜🎤 2025.8.24 @六本木ヒルズアリーナ",
-    "youtube_evidence": [
+    "detail": "",
+    "source_urls": [
       {
-        "label": "YouTube 2025公式URL確認済み証拠",
-        "event_name": "六本木ヒルズ盆踊り",
-        "detected_date": "2025-08-23, 2025-08-24",
-        "video_url": "https://www.youtube.com/watch?v=xu4VXlbfrJU / 2025-08-24 / 【六本木ヒルズ盆踊り 2025（DAY2）】日本の芸能：「半浦の秋祭り／半浦青年団（石川県七尾市能登島半浦町）」 2025.8.24 @六本木ヒルズアリーナ",
-        "channel": "",
-        "thumbnail_url": "",
-        "songs": []
-      },
-      {
-        "label": "YouTube 2025公式URL確認済み証拠",
-        "event_name": "六本木ヒルズ盆踊り",
-        "detected_date": "2025-08-23, 2025-08-24",
-        "video_url": "https://www.youtube.com/watch?v=uv6Tn8WT_Ck / 2025-08-23 / 【六本木ヒルズ盆踊り 2025（DAY2）】「六本人音頭（アンコール）」六本木じろう with 里野鈴妹 ＆ 増田吏桜🎤 2025.8.24 @六本木ヒルズアリーナ",
-        "channel": "",
-        "thumbnail_url": "",
-        "songs": []
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web"
       }
     ],
     "songs": [
       {
         "name": "ドラえもん音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "六本人音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "六本木音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "東京音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "河内おとこ節",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "炭坑節",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "花火音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       }
     ],
-    "song_occurrence": null
+    "public_status": "expected_low",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-08-22〜2025-08-24。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 低",
+    "recurrence_score": 0.51,
+    "recurrence_reasons": [
+      "venue_present",
+      "tokyo_23ward"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-08-22",
+      "2025-08-24"
+    ]
   },
   {
     "name": "六本木天祖神社（龍土神明宮）例大祭 盆踊り",
@@ -1865,10 +2119,26 @@ const EVENTS = [
       "9": "中旬"
     },
     "description": "六本木天祖神社（龍土神明宮）例大祭 盆踊りは、六本木天祖神社を舞台にした祭礼・地域行事にあわせた踊りの場。9月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": null,
-    "youtube_evidence": [],
+    "detail": "",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "海岸まつり",
@@ -1902,10 +2172,32 @@ const EVENTS = [
       "8": "上旬"
     },
     "description": "埠頭公園（港区芝浦港南）で行われる地域の盆踊りイベント。過去の開催実績をもとに掲載。",
-    "detail": "2025-08-01 開催実績。2025 [C20]\n8/1 - 2。海岸二・三丁目町会 「海岸まつり」 8月1日(金)-2日(土)\n「盆踊り大会を行います」\n詳細不明(2019年は午後6時-9時30分(2日目は9時まで)。",
-    "youtube_evidence": [],
-    "songs": [],
-    "song_occurrence": null
+    "detail": "2025-08-01 開催実績。2025 [C20] 8/1 - 2。海岸二・三丁目町会 「海岸まつり」 8月1日(金)-2日(土) 「盆踊り大会を行います」 詳細不明(2019年は午後6時-9時30分(2日目は9時まで)。",
+    "source_urls": [],
+    "songs": [
+      {
+        "name": "まつり",
+        "confidence": "hint",
+        "source_count": 1
+      }
+    ],
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "増上寺 地蔵尊盆踊り大会",
@@ -1940,9 +2232,25 @@ const EVENTS = [
     },
     "description": "東京タワーを背に、増上寺大殿前で踊る地蔵尊奉賛の盆踊り。例年7月中旬の2日間開かれる。",
     "detail": "2025年は三解脱門大修理により中止。2026年開催は公式サイト要確認。会場を芝公園→増上寺（大殿前広場）へ付け替え（2026-06-10 こと）",
-    "youtube_evidence": [],
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "第28回新橋こいち祭 盆踊り",
@@ -1976,61 +2284,183 @@ const EVENTS = [
       "7": "下旬"
     },
     "description": "桜田公園で行われる地域の盆踊りイベント。過去の開催実績をもとに掲載。",
-    "detail": "2025-07-24 開催実績。2025 [C16]\n7/24 - 25。新橋地区12商店会 「第28回新橋こいち祭 盆踊り」 7月24日(木)-25日(金) 15:00-20:30。\n時間詳細不明。\n\n[youtube_2025_date_backfill] 開催日補正\n- 補正日: 2025-07-24\n- 根拠URL: http://www.shinbashi.net/top/koichi/2025/greeting/\n- URL内一致: 2025年7月24日, 7月24日\n- YouTube検出日付: 2025-07-24\n- 対象動画数: 37\n\n[youtube_evidence] YouTube実績証拠\n- 対象イベント: 第28回新橋こいち祭 盆踊り\n- 検出日付: 2025-07-24\n- 動画数: 37\n- チャンネル: UCNF_5e3ZvziJueTWvTPATGw, UCEYq2_O_Sai0j9chJOmcKtQ\n- 代表動画: https://www.youtube.com/watch?v=YKxapvG8rZ0 / UCNF_5e3ZvziJueTWvTPATGw / 「チャンチキおけさ」（三波春夫）　2025年「第28回新橋こいち祭」盆踊り1日目26　柳通り第二部　東京都港区\n- 代表動画: https://www.youtube.com/watch?v=OarFTYAJ28g / UCNF_5e3ZvziJueTWvTPATGw / 「ハワイ音頭」　2025年「第28回新橋こいち祭」盆踊り1日目25　柳通り第二部　東京都港区\n- 代表動画: https://www.youtube.com/watch?v=ANKM84quG8U / UCNF_5e3ZvziJueTWvTPATGw / 「ハワイ音頭」　2025年「第28回新橋こいち祭」盆踊り1日目31　柳通り第二部　東京都港区\n- 代表動画: https://www.youtube.com/watch?v=jS9q1DLwIGY / UCNF_5e3ZvziJueTWvTPATGw / 「好きになった人」（都はるみ）　2025年「第28回新橋こいち祭」盆踊り1日目19　桜田会場第２部　東京都港区\n- 代表動画: https://www.youtube.com/watch?v=gtpIXYxORPA / UCNF_5e3ZvziJueTWvTPATGw / 「炭坑節」　2025年「第28回新橋こいち祭」盆踊り1日目27　柳通り第二部　東京都港区\n- 追加動画: 32件 (詳細はapply結果JSON)\n- 曲目候補: 八木節, 北海盆唄, 大東京音頭, 好きになった人, 燃えろ日本の夏祭り, ご祝儀音頭, ふるさと音頭, チャンチキおけさ, ハワイ音頭, 一円玉の旅がらす, 新橋音頭, 新芝音頭, 東京音頭, 火の国太鼓, 炭坑節, 防災音頭",
-    "youtube_evidence": [],
+    "detail": "2025-07-24 開催実績。2025 [C16] 7/24 - 25。新橋地区12商店会 「第28回新橋こいち祭 盆踊り」 7月24日(木)-25日(金) 15:00-20:30。 時間詳細不明。 [youtube_2025_date_backfill] 開催日補正 - 補正日: 2025-07-24 - 根拠URL: - URL内一致: 2025年7月24日, 7月24日 - YouTube検出日付: 2025-07-24 - 対象動画数: 37",
+    "source_urls": [],
     "songs": [
       {
         "name": "ご祝儀音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "ふるさと音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "チャンチキおけさ",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "ハワイ音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "八木節",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "北海盆唄",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "大東京音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "好きになった人",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "新橋音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "新芝音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "東京音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "炭坑節",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "燃えろ日本の夏祭り",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "防災音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       }
     ],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "第28回・昨年開催: 2025-07-24。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.7,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "edition_number:28",
+      "edition_10plus"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": 28,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-07-24"
+    ]
   },
   {
     "name": "赤坂浄土寺盆踊り大会",
@@ -2068,10 +2498,28 @@ const EVENTS = [
       "7": "下旬"
     },
     "description": null,
-    "detail": "[youtube_evidence] こと（Claude Code）2025裏取り反映\n- 対象イベント: 赤坂浄土寺盆踊り大会\n- 開催日: 2025-07-24〜2025-07-25\n- 会場: 浄土寺\n- 根拠URL: https://x.com/nsPFhl5JW382058/status/1939266951391613148\n- 判断: こと裏取りで赤坂あかね会Xと地域ブログを確認。2025-07-24〜2025-07-25、18:30〜22:00頃。\n- 補助URL: https://kaginokanai.com/2025/07/10/akasaka-jodoji-bonnodori-202507/",
-    "youtube_evidence": [],
+    "detail": "",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-24〜2025-07-25。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.59,
+    "recurrence_reasons": [
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:寺",
+      "recurring_word:盆踊り大会"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-07-24",
+      "2025-07-25"
+    ]
   },
   {
     "name": "盆ダンスフェスティバル2023",
@@ -2105,10 +2553,26 @@ const EVENTS = [
       "7": "下旬"
     },
     "description": "白金児童遊園で行われる地域の盆踊りイベント。過去の開催実績をもとに掲載。",
-    "detail": "2025-07-27 開催実績。2025 [C18]\n7/27。高輪台商店会 「盆ダンスフェスティバル2023」 7月27日(日)\n詳細不明。(2022年の盆踊りは 17:30-)\n(7/29朝掲)",
-    "youtube_evidence": [],
+    "detail": "2025-07-27 開催実績。2025 [C18] 7/27。高輪台商店会 「盆ダンスフェスティバル2023」 7月27日(日) 詳細不明。(2022年の盆踊りは 17:30-) (7/29朝掲)",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "第10回白金台どんぐり児童遊園 納涼盆踊り大会",
@@ -2142,46 +2606,152 @@ const EVENTS = [
       "9": "上旬"
     },
     "description": "白金台どんぐり児童遊園で行われる地域の盆踊りイベント。過去の開催実績をもとに掲載。",
-    "detail": "2025-09-07 開催実績。2025 [C29]\n9/7。「第10回白金台どんぐり児童遊園 納涼盆踊り大会」 9月7日(日)。\n盆踊りは 16:45-19:30。\n\n[youtube_2025_date_backfill] 開催日補正\n- 補正日: 2025-09-07\n- 根拠URL: https://sanko8.net/8996/\n- URL内一致: 9月7日\n- YouTube検出日付: 2025-09-07\n- 対象動画数: 53\n\n[youtube_evidence] YouTube実績証拠\n- 対象イベント: 第10回白金台どんぐり児童遊園 納涼盆踊り大会\n- 検出日付: 2025-09-07\n- 動画数: 53\n- チャンネル: UCNF_5e3ZvziJueTWvTPATGw\n- 代表動画: https://www.youtube.com/watch?v=IFy1da6JSEg / UCNF_5e3ZvziJueTWvTPATGw / 「かわいいだけじゃだめですか？」（CUTIE STREET）　2025年白金台どんぐり児童遊園盆踊り41　東京都港区\n- 代表動画: https://www.youtube.com/watch?v=zkVoXuNqyIU / UCNF_5e3ZvziJueTWvTPATGw / 「きよしのズンドコ節」（氷川きよし）　2025年白金台どんぐり児童遊園盆踊り47　東京都港区\n- 代表動画: https://www.youtube.com/watch?v=J3YcWOU4CYQ / UCNF_5e3ZvziJueTWvTPATGw / 「ジャンボリミッキー」　2025年白金台どんぐり児童遊園盆踊り17　東京都港区\n- 代表動画: https://www.youtube.com/watch?v=vCLK9vkm4uA / UCNF_5e3ZvziJueTWvTPATGw / 「ジャンボリミッキー」　2025年白金台どんぐり児童遊園盆踊り45　東京都港区\n- 代表動画: https://www.youtube.com/watch?v=ChtYs_3tAEo / UCNF_5e3ZvziJueTWvTPATGw / 「ダンシング・ヒーロー」（生歌・町あかり）　2025年白金台どんぐり児童遊園盆踊り13　東京都港区\n- 追加動画: 48件 (詳細はapply結果JSON)\n- 曲目候補: ダンシング・ヒーロー(生歌), ダンシングヒーロー, 一円玉の旅がらす, 南国土佐を後にして, 夜に駆ける, 東京音頭, 燃えろ日本の夏祭り, 花火音頭, 銀座カンカン娘, かわいいだけじゃだめですか?, さくらんぼ, そうらん節, サザエさん, 会津磐梯山, 僕の生まれは郡山(生歌), 大東京音頭, 東北音頭, 花笠音頭, きよしのズンドコ節, ご祝儀音頭, となりのトトロ, にっぽんチャチャチャ, ジャンボリミッキー, ドンパン節, どんぱん節, 僕の生まれは郡山, 八木節, 常磐ディスコ港町(生歌), 常磐ディスコ港町, 東京みなと音頭, 東京タワー音頭, 東京五輪音頭, 東京名物人混み, 東京名物・人混み(生歌), 炭坑節, 紅花摘み唄, 音頭福よ来い, 高輪Gateway夢拍子, 高輪ゲートウェイ, 黒潮ヤッサ",
-    "youtube_evidence": [],
+    "detail": "2025-09-07 開催実績。2025 [C29] 9/7。「第10回白金台どんぐり児童遊園 納涼盆踊り大会」 9月7日(日)。 盆踊りは 16:45-19:30。 [youtube_2025_date_backfill] 開催日補正 - 補正日: 2025-09-07 - 根拠URL: - URL内一致: 9月7日 - YouTube検出日付: 2025-09-07 - 対象動画数: 53",
+    "source_urls": [],
     "songs": [
+      {
+        "name": "きよしのズンドコ節",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "そうらん節",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "ジャンボリミッキー",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
       {
         "name": "ダンシングヒーロー",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "一円玉の旅がらす",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "大東京音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "東京五輪音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "東京音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "炭坑節",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "花火音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "花笠音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       }
     ],
-    "song_occurrence": null
+    "public_status": "expected_high",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "第10回・昨年開催: 2025-09-07。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 高",
+    "recurrence_score": 0.78,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "edition_number:10",
+      "edition_10plus",
+      "recurring_word:納涼",
+      "recurring_word:盆踊り大会"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": 10,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-09-07"
+    ]
   },
   {
     "name": "郡上おどり in 青山 2025",
@@ -2219,42 +2789,120 @@ const EVENTS = [
       "6": "下旬"
     },
     "description": "郡上八幡から保存会を迎え、本場の郡上おどりを東京で体験できる人気イベント。下駄の音を響かせて、誰でも輪に入れる。",
-    "detail": "青山外苑前商店街公式の郡上おどり2025詳細。既存2026年ページとは別に2025年分として登録。\n\n[youtube_evidence] YouTube実績証拠\n- 対象イベント: 郡上おどり in 青山 2025\n- 検出日付: 2025-06-20\n- 動画数: 40\n- チャンネル: UCKCspf_NrY16rUnODmBqOWA, UCWz2tM7PAFGT7xSL5OAEllg, UCEYq2_O_Sai0j9chJOmcKtQ, UCNF_5e3ZvziJueTWvTPATGw\n- 代表動画: https://www.youtube.com/watch?v=1__iWUspkTI / UCKCspf_NrY16rUnODmBqOWA / [4K]🇯🇵 郡上おどり in 青山 2025 全曲｜東京で酔いしれる日本三大盆踊り / Gujo Odori dance held in Aoyama, Tokyo.\n- 代表動画: https://www.youtube.com/watch?v=YpU3OWCpAFk / UCKCspf_NrY16rUnODmBqOWA / [4K]🇯🇵 郡上おどり in 青山｜かわさき｜春駒｜ 2曲抜粋 2025年 初日 盆踊り / Gujo Odori dance held in Aoyama, Tokyo.\n- 代表動画: https://www.youtube.com/watch?v=-zbuEpc9mL8 / UCWz2tM7PAFGT7xSL5OAEllg / 【4K】郡上おどり in 青山 ”最終日フィナーレは万雷の拍手とともに終了” / 盆踊り「かわさき / 三百 / 春駒 / 甚句 / まつさか 」Gujo Odori in Aoyama.\n- 代表動画: https://www.youtube.com/watch?v=hQ0UFL9bwnM / UCWz2tM7PAFGT7xSL5OAEllg / 【4K】郡上おどり in 青山 ”生歌 × 生演奏は控えめに言って最高!!” / 盆踊り「春駒 / やっちく / かわさき / さわぎ / 猫の手 」Gujo Odori in Aoyama.\n- 代表動画: https://www.youtube.com/watch?v=XSrb-8_-ok4 / UCEYq2_O_Sai0j9chJOmcKtQ / 【郡上おどりin青山 2025】「かわさき～三百」🏮Tokyo Bon Dance Festival👘2025.6.20 @秩父宮ラグビー場 駐車場\n- 追加動画: 35件 (詳細はapply結果JSON)\n- 曲目候補: 古調かわさき, 甚句",
-    "youtube_evidence": [],
+    "detail": "青山外苑前商店街公式の郡上おどり2025詳細。既存2026年ページとは別に2025年分として登録。",
+    "source_urls": [],
     "songs": [
       {
         "name": "郡上おどり",
         "confidence": "confirmed",
         "source_count": 2,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "かわさき",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "さわぎ",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "やっちく",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "三百",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "古調かわさき",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "春駒",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "甚句",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
         "evidence_count": 1,
         "speaker_count": 1,
         "setlist_complete": false
       }
     ],
-    "song_occurrence": {
-      "occurrence_id": "b13312dabcbce1fc",
-      "event_name": "郡上おどり in 青山 2025",
-      "venue": "秩父宮ラグビー場駐車場",
-      "year": 2025,
-      "songs": [
-        {
-          "name": "郡上おどり",
-          "probability": 24,
-          "basis": "past_evidence",
-          "basis_label": "2025年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.4
-          ],
-          "evidence_urls": []
-        }
-      ]
-    }
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-06-20〜2025-06-21。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.63,
+    "recurrence_reasons": [
+      "held_2025",
+      "official_or_semi_official_evidence",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:商店街"
+    ],
+    "recurrence_cautions": [
+      "イベント名に2025明記"
+    ],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-06-20",
+      "2025-06-21"
+    ]
   },
   {
     "name": "麻布十番納涼盆踊り大会",
@@ -2288,10 +2936,26 @@ const EVENTS = [
       "9": "中旬"
     },
     "description": "網代公園で行われる地域の盆踊りイベント。過去の開催実績をもとに掲載。",
-    "detail": "2025-09-13 開催実績。2025 [C32]\n9/13 - 14。麻布十番網代会 「麻布十番納涼盆踊り大会」 9月13日(土)-14日(日)。\n盆踊りは\n13日(土) 18:00-20:00、\n14日(日) 19:30-21:00。\n＊2024年よりMC担当が変更になったとの情報あり。",
-    "youtube_evidence": [],
+    "detail": "2025-09-13 開催実績。2025 [C32] 9/13 - 14。麻布十番網代会 「麻布十番納涼盆踊り大会」 9月13日(土)-14日(日)。 盆踊りは 13日(土) 18:00-20:00、 14日(日) 19:30-21:00。 ＊2024年よりMC担当が変更になったとの情報あり。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "みなと区民まつり 盆踊り",
@@ -2329,10 +2993,37 @@ const EVENTS = [
       "10": "中旬"
     },
     "description": "芝公園一帯で開かれる、みなと区民まつりの盆踊り。秋の区民まつりならではの多彩な催しと一緒に楽しめる。",
-    "detail": null,
-    "youtube_evidence": [],
-    "songs": [],
-    "song_occurrence": null
+    "detail": "",
+    "source_urls": [],
+    "songs": [
+      {
+        "name": "まつり",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      }
+    ],
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-10-10〜2026-10-12",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-10-10",
+      "2026-10-12"
+    ]
   },
   {
     "name": "芝大神宮 大祭 奉納輪踊り",
@@ -2366,10 +3057,26 @@ const EVENTS = [
       "9": "中旬"
     },
     "description": "芝新堀町児童遊園周辺で行われる祭礼にあわせた奉納踊り。地域の町会が支える昔ながらの盆踊り。",
-    "detail": "2025-09-12 開催実績。2025 [C30]\n9/12 - 13。「芝大神宮 大祭 奉納輪踊り」 9月12日(金)-13日(土) 19:00-21:00。",
-    "youtube_evidence": [],
+    "detail": "2025-09-12 開催実績。2025 [C30] 9/12 - 13。「芝大神宮 大祭 奉納輪踊り」 9月12日(金)-13日(土) 19:00-21:00。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "西久保八幡神社 盆踊り",
@@ -2403,51 +3110,171 @@ const EVENTS = [
       "8": "上旬"
     },
     "description": "西久保八幡神社で行われる地域の盆踊りイベント。過去の開催実績をもとに掲載。",
-    "detail": "2025-08-09 開催実績。2025 [C21]\n8/9 - 10。「西久保八幡神社 盆踊り」 \n8月9日(土)-10日(日)。\n踊り時間不明(2025年は 18:00-20:30)。\n(8/12掲)\n\n[youtube_2025_date_backfill] 開催日補正\n- 補正日: 2025-08-09\n- 根拠URL: http://www.hachimanjinja.or.jp/main/?p=5604\n- URL内一致: 8月9日\n- YouTube検出日付: 2025-08-09\n- 対象動画数: 37\n\n[youtube_evidence] YouTube実績証拠\n- 対象イベント: 西久保八幡神社 盆踊り\n- 検出日付: 2025-08-09\n- 動画数: 37\n- チャンネル: UCNF_5e3ZvziJueTWvTPATGw\n- 代表動画: https://www.youtube.com/watch?v=a_aBEFjxjQs / UCNF_5e3ZvziJueTWvTPATGw / 【八木節】（二代目鈴木正夫）　2025年西久保八幡神社例大祭盆踊り33　東京都港区\n- 代表動画: https://www.youtube.com/watch?v=5TsAPQzVncc / UCNF_5e3ZvziJueTWvTPATGw / 【八木節】（鈴木正夫）　2025年西久保八幡神社例大祭盆踊り15　東京都港区\n- 代表動画: https://www.youtube.com/watch?v=D6H4dOcZiPE / UCNF_5e3ZvziJueTWvTPATGw / 【大東京音頭】（金沢明子）　2025年西久保八幡神社例大祭盆踊り３　東京都港区\n- 代表動画: https://www.youtube.com/watch?v=sw-8NReroAQ / UCNF_5e3ZvziJueTWvTPATGw / 【花笠音頭】（金沢明子）　2025年西久保八幡神社例大祭盆踊り34　東京都港区\n- 代表動画: https://www.youtube.com/watch?v=Qb9Z9k2sMP4 / UCNF_5e3ZvziJueTWvTPATGw / お富さん　2025年西久保八幡神社例大祭盆踊り11　東京都港区\n- 追加動画: 32件 (詳細はapply結果JSON)\n- 曲目候補: 八木節, 大東京音頭, お富さん, さくら音頭, ひろしのさくら音頭, まつの木小唄, サザエさん, ステテコシャンシャン, ダンシング・ヒーロー, チャンチキおけさ, ドラえもん音頭, ドンパン節, ニッポンワッショイ, ハワイ音頭, バハマママ, ヨッ!太鼓持ち, 夜に駆ける, 大江戸東京音頭, 終 大角会和太鼓演奏, 好きになった人, 恋のブギウギナイト, 新二十一世紀音頭, 日本の夏ごよみ, 日本よいとこ, 東京ばやし, 東京タワー音頭, 東京音頭, 火の国太鼓, 炭坑節, 百年桜, 盆ギリ恋歌, 花笠音頭, 銀座カンカン娘, 福よ来い, 1+1の音頭",
-    "youtube_evidence": [],
+    "detail": "2025-08-09 開催実績。2025 [C21] 8/9 - 10。「西久保八幡神社 盆踊り」 8月9日(土)-10日(日)。 踊り時間不明(2025年は 18:00-20:30)。 (8/12掲) [youtube_2025_date_backfill] 開催日補正 - 補正日: 2025-08-09 - 根拠URL: - URL内一致: 8月9日 - YouTube検出日付: 2025-08-09 - 対象動画数: 37",
+    "source_urls": [],
     "songs": [
+      {
+        "name": "お富さん",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "さくら",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "さくら音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "ひろしのさくら音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "まつの木小唄",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
       {
         "name": "ドラえもん音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "ドンパン節",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "ハワイ音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "八木節",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "大東京音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "東京音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "炭坑節",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "花笠音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       }
     ],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-08-09。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.6,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:神社"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-08-09"
+    ]
   },
   {
     "name": "赤坂夏おどり（旧 赤坂盆踊り）",
@@ -2482,7 +3309,7 @@ const EVENTS = [
     },
     "description": "赤坂夏おどり（旧 赤坂盆踊り）は、赤坂サカス広場で開かれる屋外型の盆踊り・夏の地域イベント。8月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2022年開始。2024年は中止、2025年は「赤坂夏おどり」として8/29-30開催。2026年日程は未発表",
-    "youtube_evidence": [],
+    "source_urls": [],
     "songs": [
       {
         "name": "赤坂夏おどり",
@@ -2490,7 +3317,23 @@ const EVENTS = [
         "source_count": 1
       }
     ],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "赤坂氷川祭 盆踊り大会",
@@ -2524,10 +3367,25 @@ const EVENTS = [
       "9": "中旬"
     },
     "description": "赤坂氷川神社の例大祭にあわせた盆踊り大会。緑深い境内に露店が並び、都心とは思えない祭情緒が味わえる。",
-    "detail": null,
-    "youtube_evidence": [],
+    "detail": "",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "上笄町会お祭り 盆踊り",
@@ -2562,9 +3420,25 @@ const EVENTS = [
     },
     "description": "上笄町会お祭り 盆踊りは、長谷寺（西麻布・麻布大観音）を舞台にした祭礼・地域行事にあわせた踊りの場。9月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2024年は9/13-15。子供神輿・山車・縁日と併催。2026年日程は未発表",
-    "youtube_evidence": [],
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "謝恩納涼盆踊り大会（青山善光寺）",
@@ -2602,10 +3476,36 @@ const EVENTS = [
       "7": "下旬"
     },
     "description": "謝恩納涼盆踊り大会（青山善光寺）は、青山善光寺を舞台にした祭礼・地域行事にあわせた踊りの場。7月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "例年7月最終週の日曜・月曜 17:00-21:00。2024年は7/28-29。2026年日程は未発表\n\n[youtube_evidence] YouTube 2025公式URL確認済み証拠\n- 対象イベント: 謝恩納涼盆踊り大会（青山善光寺）\n- 検出日付: 2025-07-28\n- 動画数: 12\n- 公式確認URL: https://omoharareal.com/navi/news/detail/5157\n- 判断: 表参道メディアOMOHARAREALで2025-07-27〜2025-07-28、青山善光寺境内開催を確認。YouTube検出日2025-07-28は開催範囲内。",
-    "youtube_evidence": [],
+    "detail": "例年7月最終週の日曜・月曜 17:00-21:00。2024年は7/28-29。2026年日程は未発表",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web"
+      }
+    ],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-27〜2025-07-28。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.67,
+    "recurrence_reasons": [
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:例年",
+      "recurring_word:納涼",
+      "recurring_word:寺",
+      "recurring_word:盆踊り大会"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-07-27",
+      "2025-07-28"
+    ]
   },
   {
     "name": "青山熊野神社例大祭 奉納踊り",
@@ -2643,10 +3543,36 @@ const EVENTS = [
       "9": "下旬"
     },
     "description": "青山熊野神社周辺で行われる祭礼にあわせた奉納踊り。地域の町会が支える昔ながらの盆踊り。",
-    "detail": "【所在区訂正】神社本体は渋谷区神宮前に所在（venue_master.jsonでは港区登録だったが要訂正）。例大祭奉納踊り（例年9月最終金土日）は神社境内ではなく港区南青山1丁目の「青葉公園」（既存登録：区立青葉公園）で開催される＝東京で一番遅い盆踊りとして有名。神社と祭礼会場が別区にまたがる点に注意。\n\n[youtube_evidence] YouTube 2025公式URL確認済み証拠\n- 対象イベント: 青山熊野神社例大祭 奉納踊り\n- 検出日付: 2025-09-26, 2025-09-27\n- 動画数: 47\n- 公式確認URL: https://bonmaru.zenmin-odori.jp/archives/419\n- 判断: 盆まる記事の検出日2025-09-26/27と、9月最終金土の慣例が一致。青葉公園でのYouTube動画群とも一致。",
-    "youtube_evidence": [],
+    "detail": "【所在区訂正】神社本体は渋谷区神宮前に所在（venue_master.jsonでは港区登録だったが要訂正）。例大祭奉納踊り（例年9月最終金土日）は神社境内ではなく港区南青山1丁目の「青葉公園」（既存登録：区立青葉公園）で開催される＝東京で一番遅い盆踊りとして有名。神社と祭礼会場が別区にまたがる点に注意。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web"
+      }
+    ],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-09-26〜2025-09-27。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.67,
+    "recurrence_reasons": [
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:例年",
+      "recurring_word:例大祭",
+      "recurring_word:町会",
+      "recurring_word:神社"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-09-26",
+      "2025-09-27"
+    ]
   },
   {
     "name": "麻布氷川神社例大祭 盆踊り",
@@ -2680,10 +3606,25 @@ const EVENTS = [
       "9": "中旬"
     },
     "description": "麻布氷川神社の例大祭にあわせ、長谷寺の境内で開かれる盆踊り。子供神輿や屋台も出る麻布の秋の恒例行事。",
-    "detail": null,
-    "youtube_evidence": [],
+    "detail": "",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "第42回大久保まつり パレード 百人町民民謡おどり",
@@ -2718,41 +3659,52 @@ const EVENTS = [
     },
     "description": "第42回大久保まつり パレード 百人町民民謡おどりは、新宿区で民踊や輪踊りを楽しめる地域イベント。10月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025-10-13（月祝）12:00-14:40頃。13:30から鉄砲隊・百人町民民謡おどり。飛び入り不可、観覧のみ。",
-    "youtube_evidence": [],
+    "source_urls": [],
     "songs": [
+      {
+        "name": "まつり",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
       {
         "name": "百人町民民謡おどり",
         "confidence": "hint",
         "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
         "evidence_count": 1,
         "speaker_count": 1,
         "setlist_complete": false
       }
     ],
-    "song_occurrence": {
-      "occurrence_id": "7d7ad80a63c28f1f",
-      "event_name": "第42回大久保まつり パレード 百人町民民謡おどり",
-      "venue": "JR新大久保駅北側から東方向",
-      "year": 2025,
-      "songs": [
-        {
-          "name": "百人町民民謡おどり",
-          "probability": 24,
-          "basis": "past_evidence",
-          "basis_label": "2025年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.4
-          ],
-          "evidence_urls": []
-        }
-      ]
-    }
+    "public_status": "expected_high",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "第42回・昨年開催: 2025-10-13。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 高",
+    "recurrence_score": 0.78,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "edition_number:42",
+      "edition_10plus",
+      "edition_30plus",
+      "recurring_word:まつり"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": 42,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-10-13"
+    ]
   },
   {
     "name": "第51回 神楽坂まつり 盆踊り",
@@ -2790,10 +3742,42 @@ const EVENTS = [
       "7": "下旬"
     },
     "description": null,
-    "detail": "[youtube_evidence] こと（Claude Code）2025裏取り反映\n- 対象イベント: 第51回 神楽坂まつり 盆踊り\n- 開催日: 2025-07-23〜2025-07-24\n- 会場: りそな銀行神楽坂支店前\n- 根拠URL: https://www.kagurazaka.in/event/%E7%AC%AC51%E5%9B%9E%E7%A5%9E%E6%A5%BD%E5%9D%82%E3%81%BE%E3%81%A4%E3%82%8A/\n- 判断: こと裏取りで神楽坂通り商店会公式と新宿観光振興協会を確認。2025-07-23〜2025-07-24、18:00〜20:30。\n- 補助URL: https://www.kanko-shinjuku.jp/event/history/article_4567.html",
-    "youtube_evidence": [],
-    "songs": [],
-    "song_occurrence": null
+    "detail": "",
+    "source_urls": [],
+    "songs": [
+      {
+        "name": "まつり",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      }
+    ],
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "第51回・昨年開催: 2025-07-23〜2025-07-24。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.73,
+    "recurrence_reasons": [
+      "venue_present",
+      "tokyo_23ward",
+      "edition_number:51",
+      "edition_10plus",
+      "edition_30plus",
+      "recurring_word:まつり"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": 51,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-07-23",
+      "2025-07-24"
+    ]
   },
   {
     "name": "下落合四丁目町会 盆踊り大会",
@@ -2828,9 +3812,27 @@ const EVENTS = [
     },
     "description": "下落合四丁目町会 盆踊り大会は、下落合公園で開かれる屋外型の盆踊り・夏の地域イベント。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025-07-19（土）〜20（日）18:00-21:00開催記録。",
-    "youtube_evidence": [],
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-19。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.64,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:町会",
+      "recurring_word:盆踊り大会"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-07-19"
+    ]
   },
   {
     "name": "柏木地区6町会盆踊り大会",
@@ -2865,9 +3867,27 @@ const EVENTS = [
     },
     "description": "柏木地区6町会盆踊り大会は、北新宿公園で開かれる屋外型の盆踊り・夏の地域イベント。8月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025-08-02（土）〜03（日）18:00-21:00開催記録。",
-    "youtube_evidence": [],
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-08-02。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.64,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:町会",
+      "recurring_word:盆踊り大会"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-08-02"
+    ]
   },
   {
     "name": "北新宿四丁目 盆踊り大会",
@@ -2902,9 +3922,26 @@ const EVENTS = [
     },
     "description": "北新宿四丁目 盆踊り大会は、北柏木公園で開かれる屋外型の盆踊り・夏の地域イベント。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025-07-25（金）〜27（日）18:00-21:00開催記録。",
-    "youtube_evidence": [],
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-25。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.6,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:盆踊り大会"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-07-25"
+    ]
   },
   {
     "name": "原町一丁目町会 天祖神社例大祭 盆踊り",
@@ -2939,9 +3976,28 @@ const EVENTS = [
     },
     "description": "原町一丁目町会 天祖神社例大祭 盆踊りは、原町天祖神社を舞台にした祭礼・地域行事にあわせた踊りの場。9月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025-09-15（月祝）17:00-20:00開催記録。",
-    "youtube_evidence": [],
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-09-15。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.68,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:例大祭",
+      "recurring_word:町会",
+      "recurring_word:神社"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-09-15"
+    ]
   },
   {
     "name": "第25回 四谷納涼踊り大会",
@@ -2975,66 +4031,53 @@ const EVENTS = [
       "7": "中旬"
     },
     "description": "第25回 四谷納涼踊り大会は、四谷ひろばグラウンド（旧四谷第四小学校）を会場にした地域密着の盆踊り・夏祭り。7月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025-07-19（土）〜20（日）18:00-21:00、納涼踊り開催記録。\n\n[youtube_evidence] YouTube実績証拠\n- 対象イベント: 第25回 四谷納涼踊り大会\n- 検出日付: 2025-07-19\n- 動画数: 1\n- チャンネル: UCLSZK_q5ma6aeIrVRUEpkNw\n- 代表動画: https://www.youtube.com/watch?v=qYMrGH-rKJ4 / UCLSZK_q5ma6aeIrVRUEpkNw / 盆踊り　 ズンパ音頭　サイクロンあり 　四谷納涼踊り大会　四谷ひろば\n- 曲目候補: 未抽出",
-    "youtube_evidence": [],
+    "detail": "2025-07-19（土）〜20（日）18:00-21:00、納涼踊り開催記録。",
+    "source_urls": [],
     "songs": [
       {
-        "name": "ズンパ音頭",
-        "confidence": "hint",
-        "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
+        "name": "四谷納涼踊り",
+        "confidence": "confirmed",
+        "source_count": 2,
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
         "evidence_count": 1,
         "speaker_count": 1,
         "setlist_complete": false
       },
       {
-        "name": "四谷納涼踊り",
-        "confidence": "confirmed",
-        "source_count": 2,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
+        "name": "ズンパ音頭",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
         "evidence_count": 1,
         "speaker_count": 1,
         "setlist_complete": false
       }
     ],
-    "song_occurrence": {
-      "occurrence_id": "9182a33c790cec5a",
-      "event_name": "第25回 四谷納涼踊り大会",
-      "venue": "四谷ひろばグラウンド（旧四谷第四小学校）",
-      "year": 2025,
-      "songs": [
-        {
-          "name": "ズンパ音頭",
-          "probability": 24,
-          "basis": "past_evidence",
-          "basis_label": "2025年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.4
-          ],
-          "evidence_urls": []
-        },
-        {
-          "name": "四谷納涼踊り",
-          "probability": 24,
-          "basis": "past_evidence",
-          "basis_label": "2025年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.4
-          ],
-          "evidence_urls": []
-        }
-      ]
-    }
+    "public_status": "expected_high",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "第25回・昨年開催: 2025-07-19。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 高",
+    "recurrence_score": 0.78,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "edition_number:25",
+      "edition_10plus",
+      "recurring_word:納涼",
+      "recurring_word:夏祭り"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": 25,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-07-19"
+    ]
   },
   {
     "name": "新宿中央公園夏祭り 納涼盆踊り大会",
@@ -3069,9 +4112,31 @@ const EVENTS = [
     },
     "description": "新宿中央公園夏祭り 納涼盆踊り大会は、新宿中央公園 ファンモアタイム広場で開かれる屋外型の盆踊り・夏の地域イベント。8月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025年は8/23-24。主催：盆踊り＝角筈地区青少年育成委員会／夏まつり＝パークアップ共同体。2026年日程は未発表",
-    "youtube_evidence": [],
-    "songs": [],
-    "song_occurrence": null
+    "source_urls": [],
+    "songs": [
+      {
+        "name": "まつり",
+        "confidence": "hint",
+        "source_count": 1
+      }
+    ],
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "三角広場まつり「居酒屋盆踊り」",
@@ -3109,10 +4174,62 @@ const EVENTS = [
       "6": "下旬"
     },
     "description": "三角広場まつり 居酒屋盆踊りは、新宿住友ビル三角広場で開かれる屋外型の盆踊り・夏の地域イベント。6月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "新宿住友ビル三角広場公式告知。キュー上の「新宿住友ビル三角広場まつり居酒屋盆踊り」は同一候補として処理。\n\n[youtube_evidence] YouTube実績証拠\n- 対象イベント: 三角広場まつり「居酒屋盆踊り」\n- 検出日付: 2025-06-25, 2025-06-26\n- 動画数: 4\n- チャンネル: UCLSZK_q5ma6aeIrVRUEpkNw\n- 代表動画: https://www.youtube.com/watch?v=RxMD_f9qOkU / UCLSZK_q5ma6aeIrVRUEpkNw / モー娘。LOVEマシーン 盆踊りになる\n- 代表動画: https://www.youtube.com/watch?v=geI1U6Y7zMM / UCLSZK_q5ma6aeIrVRUEpkNw / ダンシング・ヒーロー　平日アフター５にサラリーマンが居酒屋盆踊り！　新宿三角広場　20250626\n- 代表動画: https://www.youtube.com/watch?v=Z3K3oGT3jJ0 / UCLSZK_q5ma6aeIrVRUEpkNw / 勝手にシンドバッド 居酒屋盆踊り サラリーマンがサザンで大はしゃぎ！　新宿三角広場　20250626\n- 代表動画: https://www.youtube.com/watch?v=zwfuO4o_Wno / UCLSZK_q5ma6aeIrVRUEpkNw / 盆踊り モーニング娘。：LOVEマシーン　新宿三角広場 居酒屋盆踊り　20250626\n- 曲目候補: 未抽出",
-    "youtube_evidence": [],
-    "songs": [],
-    "song_occurrence": null
+    "detail": "新宿住友ビル三角広場公式告知。キュー上の「新宿住友ビル三角広場まつり居酒屋盆踊り」は同一候補として処理。",
+    "source_urls": [],
+    "songs": [
+      {
+        "name": "まつり",
+        "confidence": "confirmed",
+        "source_count": 2,
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "LOVEマシーン",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "勝手にシンドバッド",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      }
+    ],
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-06-25〜2025-06-26。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.63,
+    "recurrence_reasons": [
+      "official_or_semi_official_evidence",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:まつり"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-06-25",
+      "2025-06-26"
+    ]
   },
   {
     "name": "歌舞伎町BON ODORI",
@@ -3146,37 +4263,50 @@ const EVENTS = [
       "8": "中旬"
     },
     "description": "歌舞伎町BON ODORIは、歌舞伎町シネシティ広場で開かれる屋外型の盆踊り・夏の地域イベント。8月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025-08-16 開催予定。東京盆踊りマップから確定日として反映。\n2025 [D10]\n8/16\n歌舞伎町シネシティ広場\n歌舞伎町商店街振興組合「歌舞伎町BON ODORI」 8月16日(土) 。\n開場 16:00、開始 17:30。\n\n[youtube_evidence] 2025実績証拠\n- 対象イベント: 歌舞伎町BON ODORI\n- 検出日付: 2025-08-16\n- 動画: https://www.youtube.com/watch?v=6APAt3DHhVs\n- チャンネル: Tokyo Lonely Walker\n- サムネイル: https://i.ytimg.com/vi/6APAt3DHhVs/maxresdefault.jpg\n- 曲目候補: EZ DO DANCE, 歌舞伎町の女王, Livin' on a Prayer, I Was Born To Love You, ダンシング・ヒーロー, Shake It Off, ultra soul, HOT LIMIT, Dancing Queen, September, 君の瞳に恋してる, Thriller, ライラック, Crazy Train, APT., Get Wild\n\n[youtube_evidence] YouTube実績証拠\n- 対象イベント: 歌舞伎町BON ODORI\n- 検出日付: 2025-08-16\n- 動画数: 18\n- チャンネル: UCWz2tM7PAFGT7xSL5OAEllg, UCKCspf_NrY16rUnODmBqOWA, UCLSZK_q5ma6aeIrVRUEpkNw\n- 代表動画: https://www.youtube.com/watch?v=m8zNQMQzgQs / UCWz2tM7PAFGT7xSL5OAEllg / B’z「ultra soul」歌舞伎町での盆踊りが楽しすぎてアンコール【歌舞伎町 BON ODORI 2025】/  新宿トー横 ウルトラソウル 鳳蝶美成 盆踊り\n- 代表動画: https://www.youtube.com/watch?v=sQXrND6MZdY / UCKCspf_NrY16rUnODmBqOWA / [4K]🇯🇵 B'z - ultra soul 歌舞伎町で激盛り上がりの盆踊り 新宿 2025 / Bon dance with B'z in Kabukicho BON ODORI 2025\n- 代表動画: https://www.youtube.com/watch?v=eTnDCp-Yro0 / UCWz2tM7PAFGT7xSL5OAEllg / 【歌舞伎町 BON ODORI 2025】「Crazy Train」オジー・オズボーン Ozzy Osbourne / 盆踊り 新宿トー横 鳳蝶美成 Kabukicho BON ODORI\n- 代表動画: https://www.youtube.com/watch?v=hhKFL6RJirM / UCWz2tM7PAFGT7xSL5OAEllg / 【歌舞伎町 BON ODORI 2025】「Dancing Queen」ダンシングクイーン - ABBA 盆踊り/ アバ 新宿トー横 鳳蝶美成\n- 代表動画: https://www.youtube.com/watch?v=m3qJEwJhUcA / UCWz2tM7PAFGT7xSL5OAEllg / 【歌舞伎町 BON ODORI 2025】「EZ DO DANCE」TRF 盆踊り/ 盆ジョヴィ 新宿トー横 鳳蝶美成\n- 追加動画: 13件 (詳細はapply結果JSON)\n- 曲目候補: 25",
-    "youtube_evidence": [
+    "detail": "2025-08-16 開催予定。東京盆踊りマップから確定日として反映。 2025 [D10] 8/16 歌舞伎町シネシティ広場 歌舞伎町商店街振興組合「歌舞伎町BON ODORI」 8月16日(土) 。 開場 16:00、開始 17:30。",
+    "source_urls": [],
+    "songs": [
       {
-        "label": "2025実績証拠",
-        "event_name": "歌舞伎町BON ODORI",
-        "detected_date": "2025-08-16",
-        "video_url": "https://www.youtube.com/watch?v=6APAt3DHhVs",
-        "channel": "Tokyo Lonely Walker",
-        "thumbnail_url": "https://i.ytimg.com/vi/6APAt3DHhVs/maxresdefault.jpg",
-        "songs": [
-          "EZ DO DANCE",
-          "歌舞伎町の女王",
-          "Livin' on a Prayer",
-          "I Was Born To Love You",
-          "ダンシング・ヒーロー",
-          "Shake It Off",
-          "ultra soul",
-          "HOT LIMIT",
-          "Dancing Queen",
-          "September",
-          "君の瞳に恋してる",
-          "Thriller",
-          "ライラック",
-          "Crazy Train",
-          "APT.",
-          "Get Wild"
-        ]
+        "name": "EZ DO DANCE",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "ウルトラソウル",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       }
     ],
-    "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-08-16。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.6,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:商店街"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-08-16"
+    ]
   },
   {
     "name": "下落合町会知久会 第9回盆踊り",
@@ -3211,9 +4341,27 @@ const EVENTS = [
     },
     "description": "下落合町会知久会 第9回盆踊りは、清水川橋公園で開かれる屋外型の盆踊り・夏の地域イベント。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025-07-19（土）17:00-21:00開催記録。雨天中止。",
-    "youtube_evidence": [],
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "第9回・昨年開催: 2025-07-19。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.7,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "edition_number:9",
+      "recurring_word:町会"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": 9,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-07-19"
+    ]
   },
   {
     "name": "花園神社 盆踊り",
@@ -3251,10 +4399,27 @@ const EVENTS = [
       "8": "上旬"
     },
     "description": null,
-    "detail": "[youtube_evidence] こと（Claude Code）2025裏取り反映\n- 対象イベント: 花園神社 盆踊り\n- 開催日: 2025-08-01〜2025-08-02\n- 会場: 花園神社\n- 根拠URL: https://yokoso-shinjuku.com/shinjuku-event/hanazono-bonodori-2/\n- 判断: こと裏取りで2025-08-01〜2025-08-02、19:00〜21:00の開催情報を確認。",
-    "youtube_evidence": [],
+    "detail": "",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-08-01〜2025-08-02。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.55,
+    "recurrence_reasons": [
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:神社"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-08-01",
+      "2025-08-02"
+    ]
   },
   {
     "name": "鶴巻小学校 納涼盆踊り大会＆子ども祭り",
@@ -3289,9 +4454,28 @@ const EVENTS = [
     },
     "description": "鶴巻小学校 納涼盆踊り大会＆子ども祭りは、鶴巻小学校を会場にした地域密着の盆踊り・夏祭り。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025-07-12（土）16:00-19:00開催記録。",
-    "youtube_evidence": [],
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-12。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.68,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:納涼",
+      "recurring_word:盆踊り大会",
+      "recurring_word:夏祭り"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-07-12"
+    ]
   },
   {
     "name": "根津神社 盆踊り（文京区）",
@@ -3326,9 +4510,25 @@ const EVENTS = [
     },
     "description": "根津神社 盆踊り（文京区）は、根津神社を舞台にした祭礼・地域行事にあわせた踊りの場。開催実績や公開情報をもとに、公開サイト用に掲載しています。",
     "detail": "根津八重垣町会盆踊り（境内）。9月例大祭時は藍染大通りで町内音頭会も。開催月・2026年日程は要確認",
-    "youtube_evidence": [],
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "シタマチ.ふるさと盆踊り大会",
@@ -3362,46 +4562,149 @@ const EVENTS = [
       "8": "中旬"
     },
     "description": "シタマチ.ふるさと盆踊り大会は、おかちまちパンダ広場（御徒町駅南口駅前広場）周辺で開かれる街なかの踊りイベント。8月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025年は第7回 8/16-17（11:00-20:30）。2026年日程は未発表\n\n[youtube_2025_date_backfill] 開催日補正\n- 補正日: 2025-08-16\n- 根拠URL: https://tokyofesta.com/23ku/24373/\n- URL内一致: 2025/08/16, 2025年8月16日, 8月16日\n- YouTube検出日付: 2025-08-16\n- 対象動画数: 79\n\n[youtube_evidence] YouTube実績証拠\n- 対象イベント: シタマチ.ふるさと盆踊り大会\n- 検出日付: 2025-08-16\n- 動画数: 79\n- チャンネル: UCNF_5e3ZvziJueTWvTPATGw, UCWz2tM7PAFGT7xSL5OAEllg\n- 代表動画: https://www.youtube.com/watch?v=OFls-bWJzyQ / UCNF_5e3ZvziJueTWvTPATGw / Fun! Fun! Fun!（新浜レオン）　2025年パンダ広場盆踊り2日目54　シタマチふるさと盆踊り大会　御徒町南口駅前広場\n- 代表動画: https://www.youtube.com/watch?v=WMEr8_l2-sk / UCNF_5e3ZvziJueTWvTPATGw / 「5,6,7,8」（ステップス）　2025年パンダ広場盆踊り2日目46　シタマチふるさと盆踊り大会　御徒町南口駅前広場（5,6,7,8・Steps）\n- 代表動画: https://www.youtube.com/watch?v=C5JwpShyXl0 / UCNF_5e3ZvziJueTWvTPATGw / 「かわいいだけじゃだめですか？」（CUTIE STREET）　2025年パンダ広場盆踊り2日目47　シタマチふるさと盆踊り大会　御徒町南口駅前広場\n- 代表動画: https://www.youtube.com/watch?v=tn5hpNB_xWA / UCNF_5e3ZvziJueTWvTPATGw / 「プレイバックPart2」（山口百恵）　2025年パンダ広場盆踊り2日目44　シタマチふるさと盆踊り大会　御徒町南口駅前広場\n- 代表動画: https://www.youtube.com/watch?v=aLI-2CPLExg / UCNF_5e3ZvziJueTWvTPATGw / 「炭坑節」　2025年パンダ広場盆踊り2日目７　シタマチふるさと盆踊り大会　御徒町南口駅前広場\n- 追加動画: 74件 (詳細はapply結果JSON)\n- 曲目候補: Fun! Fun! Fun!, 5,6,7,8, かわいいだけじゃだめですか?, プレイバックPart2, 炭坑節, U.S.A., うっせぇわ, げんき音頭, じょいふる, みちのく盆唄, オトノナルホウヘ, Shake It Off, ジンギスカン, 会津磐梯山, 大東京音頭, 最高到達点, 気分上々↑↑, 河内音頭, 相馬盆唄, 花笠音頭, かがやき音頭, たいとう音頭, ふるさと祭り音頭, ゆかたばやし, ジャンボリミッキー, 終 ドダレバチ, 津軽甚句, 三味線ブギウギ, 上野音頭, 令和おどり, 八木節, 終 関東やまと太鼓, 大昭和音頭, 新台東音頭, 日本一音頭, 東京百年おどり, 東京音頭, 江州音頭, 江戸っ子囃子, 涼みおどり",
-    "youtube_evidence": [],
+    "detail": "2025年は第7回 8/16-17（11:00-20:30）。2026年日程は未発表 [youtube_2025_date_backfill] 開催日補正 - 補正日: 2025-08-16 - 根拠URL: - URL内一致: 2025/08/16, 2025年8月16日, 8月16日 - YouTube検出日付: 2025-08-16 - 対象動画数: 79",
+    "source_urls": [],
     "songs": [
+      {
+        "name": "Fun! Fun! Fun!",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "かわいいだけじゃだめですか",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "かわいいだけじゃだめですか?",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
       {
         "name": "げんき音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "周辺で開かれる街なかの踊り",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "大東京音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "東京音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "江州音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "河内音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "炭坑節",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "花笠音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       }
     ],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-08-16。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.6,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:盆踊り大会"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-08-16"
+    ]
   },
   {
     "name": "坂本町会 納涼祭",
@@ -3436,9 +4739,27 @@ const EVENTS = [
     },
     "description": "坂本町会 納涼祭は、さかもと朝顔広場（旧坂本小学校跡地）で開かれる屋外型の盆踊り・夏の地域イベント。8月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025-08-23（土）17:00-21:00、納涼踊りは19:00から。雨天時翌日順延。",
-    "youtube_evidence": [],
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-08-23。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.64,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:納涼",
+      "recurring_word:町会"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-08-23"
+    ]
   },
   {
     "name": "浅草橋マロニエまつり盆踊り",
@@ -3473,9 +4794,23 @@ const EVENTS = [
     },
     "description": null,
     "detail": "2026-05-09開催済み。第一部は鳥越おかず横丁13:00-14:00、第二部はヒューリック浅草橋ビル前14:30-16:30。たいとう音頭・浅草橋音頭など。",
-    "youtube_evidence": [],
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-05-09",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
+    "recurrence_reasons": [
+      "2026年開催済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-05-09"
+    ]
   },
   {
     "name": "TOKYO盆ダンス×STEAM FESTIVAL2026",
@@ -3513,10 +4848,25 @@ const EVENTS = [
       "6": "下旬"
     },
     "description": "伝統の盆踊りと最新テクノロジーが出会う「盆ダンス」イベント。上野の杜で6月に開かれる、新感覚の踊りの祭典。",
-    "detail": null,
-    "youtube_evidence": [],
+    "detail": "",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-06-26〜2026-06-27",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-06-26",
+      "2026-06-27"
+    ]
   },
   {
     "name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
@@ -3550,10 +4900,26 @@ const EVENTS = [
       "10": "中旬"
     },
     "description": "江戸文化をテーマにした「Tokyo江戸ウィーク」の盆踊りフェス。上野の杜で、浴衣やグルメとともに下町の踊りを満喫できる。",
-    "detail": null,
-    "youtube_evidence": [],
+    "detail": "",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026",
@@ -3591,10 +4957,31 @@ const EVENTS = [
       "7": "上旬"
     },
     "description": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026は、上野恩賜公園で開かれる屋外型の盆踊り・夏の地域イベント。7月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2026-07-03〜2026-07-05 開催予定。X投稿から確定日として反映。\nふるさと東京応援祭\n第三回ビールと浴衣de盆踊りin上野2026\n\n2026年7月3日（金）〜7月5日（日）\n\n上野恩賜公園で開催！\nビールと盆踊りの夏祭り\n\n#台東区 #上野 #谷中\n#イベント #フェス\n\nhttps://t.co/eXUZckhuOG\n\n[retrospective_harvest] 追加証拠\n- 検出名: ビールと浴衣de盆踊り\n- 検出日付: 2026-07-03\n- 出典: https://x.com/event_checker/status/2064996223862370647\n- 出典: https://x.com/event_checker/status/2061985557266198794",
-    "youtube_evidence": [],
+    "detail": "2026-07-03〜2026-07-05 開催予定。X投稿から確定日として反映。 ふるさと東京応援祭 第三回ビールと浴衣de盆踊りin上野2026 2026年7月3日（金）〜7月5日（日） 上野恩賜公園で開催！ ビールと盆踊りの夏祭り #台東区 #上野 #谷中 #イベント #フェス [retrospective_harvest] 追加証拠 - 検出名: ビールと浴衣de盆踊り - 検出日付: 2026-07-03 - 出典: - 出典:",
+    "source_urls": [
+      {
+        "label": "告知投稿あり",
+        "url": "",
+        "kind": "post"
+      }
+    ],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-07-03〜2026-07-05",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-07-03",
+      "2026-07-05"
+    ]
   },
   {
     "name": "ゐの市盆踊り～不忍夢～",
@@ -3628,10 +5015,26 @@ const EVENTS = [
       "8": "中旬"
     },
     "description": "不忍池のほとりで開かれる夏の盆踊り。市（マルシェ）と一体になった、上野の夜を彩るイベント。",
-    "detail": null,
-    "youtube_evidence": [],
+    "detail": "",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "上野盆踊り会（厚澄会）",
@@ -3661,10 +5064,24 @@ const EVENTS = [
     "hints": [],
     "jun": {},
     "description": "民踊団体・厚澄会による踊りの会。月2回ほど日曜を中心に上野公園で開かれ、一年中盆踊りに触れられる貴重な場。",
-    "detail": null,
-    "youtube_evidence": [],
+    "detail": "",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "東本願寺盆踊り",
@@ -3698,26 +5115,105 @@ const EVENTS = [
       "8": "中旬"
     },
     "description": "東本願寺盆踊りは、東本願寺（浅草）を舞台にした祭礼・地域行事にあわせた踊りの場。8月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025年は8/20-21。約30年休止→2017年復活。2026年日程は未発表\n\n[youtube_2025_date_backfill] 開催日補正\n- 補正日: 2025-08-20\n- 根拠URL: https://www.asakusaevent.com/higashihonganji-bonodori-2025/\n- URL内一致: 2025年8月20日, 8月20日\n- YouTube検出日付: 2025-08-20\n- 対象動画数: 37\n\n[youtube_evidence] YouTube実績証拠\n- 対象イベント: 東本願寺盆踊り\n- 検出日付: 2025-08-20\n- 動画数: 36\n- チャンネル: UCNF_5e3ZvziJueTWvTPATGw, UCWz2tM7PAFGT7xSL5OAEllg\n- 代表動画: https://www.youtube.com/watch?v=Zez3AszAAos / UCNF_5e3ZvziJueTWvTPATGw / 「One Love」（嵐）　2025年浅草東本願寺盆踊り1日目24　東京都台東区\n- 代表動画: https://www.youtube.com/watch?v=ReyecfWdqFI / UCNF_5e3ZvziJueTWvTPATGw / 「エブリブレスユーテイク」（ポリス）　2025年浅草東本願寺盆踊り1日目23　東京都台東区　（Every Breath You Take・The Police）\n- 代表動画: https://www.youtube.com/watch?v=7I91YdUNCT0 / UCNF_5e3ZvziJueTWvTPATGw / 「チャンチキおけさ」　2025年浅草東本願寺盆踊り1日目９　東京都台東区\n- 代表動画: https://www.youtube.com/watch?v=oni2EpEVhEA / UCWz2tM7PAFGT7xSL5OAEllg / 【4K】東本願寺盆踊り 2025 第二部 / 洋楽盆踊り 「Let's Grove / Hold Me Now / The Power of Love / The Police / 嵐 ...」お浅草\n- 代表動画: https://www.youtube.com/watch?v=SyJ8vBe8iv8 / UCNF_5e3ZvziJueTWvTPATGw / 【ガット・トゥ・ビー・リアル】（シェリル・リン）　2025年浅草東本願寺盆踊り1日目28終　東京都台東区　（Got to Be Real・Cheryl Lynn）\n- 追加動画: 31件 (詳細はapply結果JSON)\n- 曲目候補: ONE LOVE, エブリブレスユーテイク, チャンチキおけさ, 終 ガット・トゥ・ビー・リアル, テレフォン・オペレーター, パワー・オブ・ラブ, ホールド・ミー・ナウ, DJタイム, ふるさと音頭, ガールズ・ジャスト・ワナ・ハブ・ファン, レッツ・グルーヴ, 七福神音頭, 北海盆唄, 東京本願寺音頭, 東京音頭, 炭坑節, 燃えろ日本の夏祭り, 蓮如音頭, 親鸞おどり, 親鸞音頭, あなたの出番",
-    "youtube_evidence": [],
+    "detail": "2025年は8/20-21。約30年休止→2017年復活。2026年日程は未発表 [youtube_2025_date_backfill] 開催日補正 - 補正日: 2025-08-20 - 根拠URL: - URL内一致: 2025年8月20日, 8月20日 - YouTube検出日付: 2025-08-20 - 対象動画数: 37",
+    "source_urls": [],
     "songs": [
+      {
+        "name": "ONE LOVE",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
       {
         "name": "ふるさと音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "エブリブレスユーテイク",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "チャンチキおけさ",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "東京音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "炭坑節",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "終 ガット・トゥ・ビー・リアル",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       }
     ],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-08-20。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.6,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:寺"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-08-20"
+    ]
   },
   {
     "name": "第2回田原de盆踊り",
@@ -3751,8 +5247,8 @@ const EVENTS = [
       "9": "下旬"
     },
     "description": "田原小学校で行われる地域の盆踊りイベント。過去の開催実績をもとに掲載。",
-    "detail": "2025-09-27 開催実績。2025 [F9]\n9/27。田原de盆踊り実行委員会「第2回田原de盆踊り」9月27日(土) 11:00-20:00。\n「第2部 盆踊り 17:00-20:00」 \n踊りの詳細時間不明。\n・昨年は ソーラン節、ハラハラ音頭、波乗りジョニー 他。\n＊雨天時 9/28開催。",
-    "youtube_evidence": [],
+    "detail": "2025-09-27 開催実績。2025 [F9] 9/27。田原de盆踊り実行委員会「第2回田原de盆踊り」9月27日(土) 11:00-20:00。 「第2部 盆踊り 17:00-20:00」 踊りの詳細時間不明。 ・昨年は ソーラン節、ハラハラ音頭、波乗りジョニー 他。 ＊雨天時 9/28開催。",
+    "source_urls": [],
     "songs": [
       {
         "name": "ソーラン節",
@@ -3763,9 +5259,30 @@ const EVENTS = [
         "name": "ハラハラ音頭",
         "confidence": "hint",
         "source_count": 1
+      },
+      {
+        "name": "波乗りジョニー",
+        "confidence": "hint",
+        "source_count": 1
       }
     ],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": 2,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "奥浅草盆踊り",
@@ -3799,36 +5316,24 @@ const EVENTS = [
       "6": "下旬"
     },
     "description": "山谷堀広場で開かれる、奥浅草の初夏の盆踊り。スカイツリーを望むロケーションで、地元グルメの出店も楽しい。",
-    "detail": "[youtube_evidence] 2025実績証拠\n- 対象イベント: 奥浅草盆踊り\n- 検出日付: 2025-06-28\n- 動画: https://www.youtube.com/watch?v=WzcxpMJuynA\n- チャンネル: Tokyo Hz\n- サムネイル: https://i.ytimg.com/vi/WzcxpMJuynA/maxresdefault.jpg\n- 曲目候補: \"Naminori Johnny\" by Southern All Stars, \"Furusato Ondo\", Erotica Seven by Southern All Stars, Dance to Traditional Japanese Songs by Ichito Fuyou of Fuyouryu, \"Naminori Johnny\", \"Tanko Bushi\", \"Tokyo Ondo\", \"Love Affair Himitsu No Date\" by Southern All Stars, \"Taito Ondo\", \"Shin (New) Taito Ondo\", \"Kyu (Old) Taito Ondo\", \"Harahara Ondo\", \"Moero Nihon No Natsumatsuri\", \"Goshugi Ondo\", \"Omedeta Ondo\"",
-    "youtube_evidence": [
-      {
-        "label": "2025実績証拠",
-        "event_name": "奥浅草盆踊り",
-        "detected_date": "2025-06-28",
-        "video_url": "https://www.youtube.com/watch?v=WzcxpMJuynA",
-        "channel": "Tokyo Hz",
-        "thumbnail_url": "https://i.ytimg.com/vi/WzcxpMJuynA/maxresdefault.jpg",
-        "songs": [
-          "\"Naminori Johnny\" by Southern All Stars",
-          "\"Furusato Ondo\"",
-          "Erotica Seven by Southern All Stars",
-          "Dance to Traditional Japanese Songs by Ichito Fuyou of Fuyouryu",
-          "\"Naminori Johnny\"",
-          "\"Tanko Bushi\"",
-          "\"Tokyo Ondo\"",
-          "\"Love Affair Himitsu No Date\" by Southern All Stars",
-          "\"Taito Ondo\"",
-          "\"Shin (New) Taito Ondo\"",
-          "\"Kyu (Old) Taito Ondo\"",
-          "\"Harahara Ondo\"",
-          "\"Moero Nihon No Natsumatsuri\"",
-          "\"Goshugi Ondo\"",
-          "\"Omedeta Ondo\""
-        ]
-      }
-    ],
+    "detail": "",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-06-27",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-06-27"
+    ]
   },
   {
     "name": "-両国- 江戸NOREN 妖怪BON DANCE",
@@ -3862,20 +5367,34 @@ const EVENTS = [
       "7": "中旬"
     },
     "description": null,
-    "detail": "[youtube_evidence] YouTube 2025公式URL確認済み証拠\n- 対象イベント: -両国- 江戸NOREN 妖怪BON DANCE\n- 検出日付: 2025-07-13\n- 動画数: 1\n- 公式確認URL: https://www.jrtk.jp/edonoren/\n- 判断: 江戸NOREN公式記事に妖怪BON DANCEを確認。掲載日も2025-07-04で、YouTube動画は2025-07-13。\n- 動画: https://www.youtube.com/watch?v=E9Uh-Iwfq4s / 2025-07-13 / The Yokai Bon Dance / 妖怪盆踊り 2005 at 両国 Edo Noren",
-    "youtube_evidence": [
+    "detail": "",
+    "source_urls": [
       {
-        "label": "YouTube 2025公式URL確認済み証拠",
-        "event_name": "-両国- 江戸NOREN 妖怪BON DANCE",
-        "detected_date": "2025-07-13",
-        "video_url": "https://www.youtube.com/watch?v=E9Uh-Iwfq4s / 2025-07-13 / The Yokai Bon Dance / 妖怪盆踊り 2005 at 両国 Edo Noren",
-        "channel": "",
-        "thumbnail_url": "",
-        "songs": []
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web"
       }
     ],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_low",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-13。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 低",
+    "recurrence_score": 0.46,
+    "recurrence_reasons": [
+      "venue_present",
+      "tokyo_23ward"
+    ],
+    "recurrence_cautions": [
+      "単発/企画色:BON DANCE"
+    ],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-07-13",
+      "2025-07-13"
+    ]
   },
   {
     "name": "すみだ公園の盆踊り（名称推定）",
@@ -3910,9 +5429,25 @@ const EVENTS = [
     },
     "description": "すみだ公園（隅田公園・墨田区側）で開催される地域の盆踊り。名称は会場名と過去の開催情報からの推定。",
     "detail": "名称推定。開催日程は未確認。",
-    "youtube_evidence": [],
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "第10回 すみだ輪おどり区民感謝デー",
@@ -3947,41 +5482,39 @@ const EVENTS = [
     },
     "description": "第10回 すみだ輪おどり区民感謝デーは、墨田区で民踊や輪踊りを楽しめる地域イベント。1月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025-01-11（土）13:00-16:00開催記録。墨田区で踊られている盆踊り定番曲を多数用意。",
-    "youtube_evidence": [],
+    "source_urls": [],
     "songs": [
       {
         "name": "すみだ輪おどり",
         "confidence": "hint",
         "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
         "evidence_count": 1,
         "speaker_count": 1,
         "setlist_complete": false
       }
     ],
-    "song_occurrence": {
-      "occurrence_id": "2ea00da1f5d942a4",
-      "event_name": "第10回 すみだ輪おどり区民感謝デー",
-      "venue": "すみだ産業会館サンライズホール",
-      "year": 2025,
-      "songs": [
-        {
-          "name": "すみだ輪おどり",
-          "probability": 24,
-          "basis": "past_evidence",
-          "basis_label": "2025年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.4
-          ],
-          "evidence_urls": []
-        }
-      ]
-    }
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "第10回・昨年開催: 2025-01-11。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.7,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "edition_number:10",
+      "edition_10plus"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": 10,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-01-11"
+    ]
   },
   {
     "name": "中之郷公園の盆踊り（名称推定）",
@@ -4016,9 +5549,25 @@ const EVENTS = [
     },
     "description": "中之郷公園（中之郷児童遊園）で開催される地域の盆踊り。名称は会場名と過去の開催情報からの推定。",
     "detail": "名称推定。開催日程は未確認。",
-    "youtube_evidence": [],
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "菊川一丁目町会 菊一お祭り広場・盆踊り大会",
@@ -4053,9 +5602,29 @@ const EVENTS = [
     },
     "description": "菊川一丁目町会 菊一お祭り広場・盆踊り大会は、中和小学校を会場にした地域密着の盆踊り・夏祭り。9月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025-09-27（土）〜28（日）17:00-20:30。18:00納涼踊り開始。",
-    "youtube_evidence": [],
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-09-27。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.72,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:納涼",
+      "recurring_word:町会",
+      "recurring_word:盆踊り大会",
+      "recurring_word:夏祭り"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-09-27"
+    ]
   },
   {
     "name": "押上三丁目伸成町会 飛木稲荷神社神幸大祭 祭礼踊り",
@@ -4090,9 +5659,40 @@ const EVENTS = [
     },
     "description": "押上三丁目伸成町会 飛木稲荷神社神幸大祭 祭礼踊りは、墨田区の伸成町会会館前 路上で行われる踊りのある地域イベント。9月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025-09-13（土）〜14（日）19:00から開催記録。例年21:00まで。",
-    "youtube_evidence": [],
-    "songs": [],
-    "song_occurrence": null
+    "source_urls": [],
+    "songs": [
+      {
+        "name": "路上で行われる踊り",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      }
+    ],
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-09-13。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.68,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:例年",
+      "recurring_word:町会",
+      "recurring_word:神社"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-09-13"
+    ]
   },
   {
     "name": "向島一丁目 牛嶋神社 ミニ奉納踊り",
@@ -4127,9 +5727,27 @@ const EVENTS = [
     },
     "description": "向島一丁目 牛嶋神社 ミニ奉納踊りは、向島1丁目旧町会会館前を舞台にした祭礼・地域行事にあわせた踊りの場。9月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025-09-13（土）19:00から開催記録。",
-    "youtube_evidence": [],
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-09-13。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.64,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:町会",
+      "recurring_word:神社"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-09-13"
+    ]
   },
   {
     "name": "西図子 盆踊りとおでんの宴",
@@ -4164,13 +5782,13 @@ const EVENTS = [
     },
     "description": "西図子 盆踊りとおでんの宴は、墨田区の向島百花会館で行われる盆踊り。3月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2026-03-01（日）14:00-17:00開催記録。東京音頭、スカイツリー踊り、河内音頭など。",
-    "youtube_evidence": [],
+    "source_urls": [],
     "songs": [
       {
         "name": "スカイツリー踊り",
         "confidence": "hint",
         "source_count": 1,
-        "probability": 40,
+        "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント",
         "evidence_count": 1,
@@ -4181,7 +5799,7 @@ const EVENTS = [
         "name": "東京音頭",
         "confidence": "hint",
         "source_count": 1,
-        "probability": 40,
+        "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント",
         "evidence_count": 1,
@@ -4192,7 +5810,7 @@ const EVENTS = [
         "name": "河内音頭",
         "confidence": "hint",
         "source_count": 1,
-        "probability": 40,
+        "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント",
         "evidence_count": 1,
@@ -4200,53 +5818,21 @@ const EVENTS = [
         "setlist_complete": false
       }
     ],
-    "song_occurrence": {
-      "occurrence_id": "8d41395b55af5e9a",
-      "event_name": "西図子 盆踊りとおでんの宴",
-      "venue": "向島百花会館",
-      "year": 2026,
-      "songs": [
-        {
-          "name": "スカイツリー踊り",
-          "probability": 40,
-          "basis": "current_hint",
-          "basis_label": "今年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.4
-          ],
-          "evidence_urls": []
-        },
-        {
-          "name": "東京音頭",
-          "probability": 40,
-          "basis": "current_hint",
-          "basis_label": "今年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.4
-          ],
-          "evidence_urls": []
-        },
-        {
-          "name": "河内音頭",
-          "probability": 40,
-          "basis": "current_hint",
-          "basis_label": "今年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.4
-          ],
-          "evidence_urls": []
-        }
-      ]
-    }
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-03-01",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
+    "recurrence_reasons": [
+      "2026年開催済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-03-01"
+    ]
   },
   {
     "name": "太平一丁目 牛嶋神社 奉納踊り",
@@ -4281,9 +5867,27 @@ const EVENTS = [
     },
     "description": "太平一丁目 牛嶋神社 奉納踊りは、報恩寺境内を舞台にした祭礼・地域行事にあわせた踊りの場。9月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025-09-12（金）〜13（土）19:00-20:45頃開催記録。",
-    "youtube_evidence": [],
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-09-12。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.64,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:神社",
+      "recurring_word:寺"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-09-12"
+    ]
   },
   {
     "name": "錦糸一丁目 牛嶋神社 奉納踊り",
@@ -4317,10 +5921,26 @@ const EVENTS = [
       "9": "中旬"
     },
     "description": "大横川親水公園周辺で行われる祭礼にあわせた奉納踊り。地域の町会が支える昔ながらの盆踊り。",
-    "detail": "2025-09-13 開催実績。2025 [G21]\n9/13。錦糸一丁目 牛嶋神社 奉納踊り 9月13日(土) 18:00-。",
-    "youtube_evidence": [],
+    "detail": "2025-09-13 開催実績。2025 [G21] 9/13。錦糸一丁目 牛嶋神社 奉納踊り 9月13日(土) 18:00-。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "小梅一丁目町会・睦会 牛嶋神社祭礼 奉納踊り",
@@ -4354,10 +5974,26 @@ const EVENTS = [
       "9": "中旬"
     },
     "description": "小梅児童遊園周辺で行われる祭礼にあわせた奉納踊り。地域の町会が支える昔ながらの盆踊り。",
-    "detail": "2025-09-12 開催実績。2025 [G16]\n9/12 - 13。小梅一丁目町会・睦会 牛嶋神社祭礼 奉納踊り 9月12日(金)-13日(土) 午後6時-。",
-    "youtube_evidence": [],
+    "detail": "2025-09-12 開催実績。2025 [G16] 9/12 - 13。小梅一丁目町会・睦会 牛嶋神社祭礼 奉納踊り 9月12日(金)-13日(土) 午後6時-。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "押上二町目町会 飛木稲荷神社神幸大祭 奉納おどり",
@@ -4391,10 +6027,26 @@ const EVENTS = [
       "9": "中旬"
     },
     "description": "押上二丁目町会会館前 路上周辺で行われる祭礼にあわせた奉納踊り。地域の町会が支える昔ながらの盆踊り。",
-    "detail": "2025-09-13 開催実績。2025 [G19]\n9/13。押上二町目町会 飛木稲荷神社神幸大祭 奉納おどり 9月13日(土) 午後7時-(2018年は9時まで)。",
-    "youtube_evidence": [],
+    "detail": "2025-09-13 開催実績。2025 [G19] 9/13。押上二町目町会 飛木稲荷神社神幸大祭 奉納おどり 9月13日(土) 午後7時-(2018年は9時まで)。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "牛嶋神社御祭礼 奉納踊り",
@@ -4428,10 +6080,26 @@ const EVENTS = [
       "9": "中旬"
     },
     "description": "日進公園周辺で行われる祭礼にあわせた奉納踊り。地域の町会が支える昔ながらの盆踊り。",
-    "detail": "2025-09-12 開催実績。2025 [G11]\n9/12 - 13。亀沢三丁目 「牛嶋神社御祭礼 奉納踊り」 9月12日(金)-13日(土) 17:00-。\n*日進公園での開催が復活します。\n*奉納踊りは夜店が一段落した18時頃からだそうです。",
-    "youtube_evidence": [],
+    "detail": "2025-09-12 開催実績。2025 [G11] 9/12 - 13。亀沢三丁目 「牛嶋神社御祭礼 奉納踊り」 9月12日(金)-13日(土) 17:00-。 *日進公園での開催が復活します。 *奉納踊りは夜店が一段落した18時頃からだそうです。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "本四三ツ目児童遊園の盆踊り（名称推定）",
@@ -4466,9 +6134,25 @@ const EVENTS = [
     },
     "description": "本四三ツ目児童遊園（三つ目児童公園）で開催される地域の盆踊り。名称は会場名と過去の開催情報からの推定。",
     "detail": "名称推定。開催日程は未確認。",
-    "youtube_evidence": [],
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "盆☆Dance 夏休み最後の土曜は校庭で踊ろう！",
@@ -4502,10 +6186,26 @@ const EVENTS = [
       "8": "下旬"
     },
     "description": "横川小学校で行われる地域の盆踊りイベント。過去の開催実績をもとに掲載。",
-    "detail": "2025-08-30 開催実績。区立小学校。放課後子ども教室「よこラボ」を実施中。盆踊り開催の具体的情報は見つからず（要継続調査）\n【月の手がかり】2025年8/30に盆踊り予定の掲載（東京盆踊りマップblog区別ページの一覧より、こと2026-06-10追記）\nアクセス・規模補完: 小学校会場の地域盆踊りとして中規模扱い。",
-    "youtube_evidence": [],
+    "detail": "2025-08-30 開催実績。区立小学校。放課後子ども教室「よこラボ」を実施中。盆踊り開催の具体的情報は見つからず（要継続調査） 【月の手がかり】2025年8/30に盆踊り予定の掲載（東京盆踊りマップblog区別ページの一覧より、こと2026-06-10追記） アクセス・規模補完: 小学校会場の地域盆踊りとして中規模扱い。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "すみだ錦糸町河内音頭大盆踊り",
@@ -4543,14 +6243,14 @@ const EVENTS = [
       "7": "下旬"
     },
     "description": "河内音頭の生演奏で夜まで踊り続ける、関東屈指の熱量を誇る大盆踊り。生バンドの音頭に身を任せれば初心者でも止まらなくなる。",
-    "detail": null,
-    "youtube_evidence": [],
+    "detail": "",
+    "source_urls": [],
     "songs": [
       {
         "name": "河内音頭",
         "confidence": "hint",
         "source_count": 1,
-        "probability": 40,
+        "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント",
         "evidence_count": 1,
@@ -4558,27 +6258,22 @@ const EVENTS = [
         "setlist_complete": false
       }
     ],
-    "song_occurrence": {
-      "occurrence_id": "8f45780e418d7f41",
-      "event_name": "すみだ錦糸町河内音頭大盆踊り",
-      "venue": "江東橋竪川親水公園",
-      "year": 2026,
-      "songs": [
-        {
-          "name": "河内音頭",
-          "probability": 40,
-          "basis": "current_hint",
-          "basis_label": "今年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.4
-          ],
-          "evidence_urls": []
-        }
-      ]
-    }
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-07-29〜2026-07-30",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-07-29",
+      "2026-07-30"
+    ]
   },
   {
     "name": "牛嶋神社祭礼 奉納踊り",
@@ -4612,10 +6307,25 @@ const EVENTS = [
       "9": "中旬"
     },
     "description": "撫牛で知られる本所の総鎮守・牛嶋神社の祭礼で、各町会が奉納踊りを繰り広げる。神輿や山車も巡行する隅田川エリアの大祭。",
-    "detail": null,
-    "youtube_evidence": [],
+    "detail": "",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "石原一丁目 牛嶋神社 奉納踊り",
@@ -4650,9 +6360,27 @@ const EVENTS = [
     },
     "description": "石原一丁目 牛嶋神社 奉納踊りは、石一町会会館前を舞台にした祭礼・地域行事にあわせた踊りの場。9月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025-09-13（土）18:00から開催記録。2024年は20:30まで。",
-    "youtube_evidence": [],
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-09-13。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.64,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:町会",
+      "recurring_word:神社"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-09-13"
+    ]
   },
   {
     "name": "亀沢1、2丁目合同 牛嶋神社 奉納踊り",
@@ -4686,10 +6414,26 @@ const EVENTS = [
       "9": "中旬"
     },
     "description": "緑町公園周辺で行われる祭礼にあわせた奉納踊り。地域の町会が支える昔ながらの盆踊り。",
-    "detail": "2025-09-12 開催実績。2025 [G10]\n9/12 - 13。「亀沢1、2丁目合同 牛嶋神社 奉納踊り」 9月12(金)-13日(土) 19:00-21:00。",
-    "youtube_evidence": [],
+    "detail": "2025-09-12 開催実績。2025 [G10] 9/12 - 13。「亀沢1、2丁目合同 牛嶋神社 奉納踊り」 9月12(金)-13日(土) 19:00-21:00。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "本所二丁目 牛嶋神社 奉納踊り",
@@ -4723,10 +6467,26 @@ const EVENTS = [
       "9": "中旬"
     },
     "description": "若宮公園周辺で行われる祭礼にあわせた奉納踊り。地域の町会が支える昔ながらの盆踊り。",
-    "detail": "2025-09-12 開催実績。2025 [G13]\n9/12 - 13。本所二丁目 牛嶋神社 奉納踊り 9月12日(金) -13日(土)。\n12日(金) 19:00-21:00、\n13日(土) 18:00-20:00",
-    "youtube_evidence": [],
+    "detail": "2025-09-12 開催実績。2025 [G13] 9/12 - 13。本所二丁目 牛嶋神社 奉納踊り 9月12日(金) -13日(土)。 12日(金) 19:00-21:00、 13日(土) 18:00-20:00",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "すみだ沖縄まつり",
@@ -4764,14 +6524,14 @@ const EVENTS = [
       "5": "上旬"
     },
     "description": "錦糸公園で行われる地域の盆踊りイベント。過去の開催実績をもとに掲載。",
-    "detail": "2026-05-09〜2026-05-10 開催予定。東京盆踊りマップから確定日として反映。\n2026 [G3]\n5/9 - 10\n錦糸公園\n「すみだ沖縄まつり」 5月9日(土)-10日(日)。\n・9日(土) 15:30- 盆おどり 梅美会 関東大和太鼓(約1時間)。\n・10日(日) 15:00- すみだ輪おどり(盆踊り)(約1時間)。\n＊イベント全体は両日10時-19時に開催。沖縄伝統民謡、エイサー他多数の出演あり。",
-    "youtube_evidence": [],
+    "detail": "2026-05-09〜2026-05-10 開催予定。東京盆踊りマップから確定日として反映。 2026 [G3] 5/9 - 10 錦糸公園 「すみだ沖縄まつり」 5月9日(土)-10日(日)。 ・9日(土) 15:30- 盆おどり 梅美会 関東大和太鼓(約1時間)。 ・10日(日) 15:00- すみだ輪おどり(盆踊り)(約1時間)。 ＊イベント全体は両日10時-19時に開催。沖縄伝統民謡、エイサー他多数の出演あり。",
+    "source_urls": [],
     "songs": [
       {
         "name": "すみだ輪おどり",
         "confidence": "hint",
         "source_count": 1,
-        "probability": 40,
+        "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント",
         "evidence_count": 1,
@@ -4779,27 +6539,22 @@ const EVENTS = [
         "setlist_complete": false
       }
     ],
-    "song_occurrence": {
-      "occurrence_id": "1c9517e91c7f52b2",
-      "event_name": "すみだ沖縄まつり",
-      "venue": "錦糸公園",
-      "year": 2026,
-      "songs": [
-        {
-          "name": "すみだ輪おどり",
-          "probability": 40,
-          "basis": "current_hint",
-          "basis_label": "今年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.4
-          ],
-          "evidence_urls": []
-        }
-      ]
-    }
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-05-09〜2026-05-10",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
+    "recurrence_reasons": [
+      "2026年開催済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-05-09",
+      "2026-05-10"
+    ]
   },
   {
     "name": "押上二町目町会 飛木稲荷神社神幸大祭 奉納おどり",
@@ -4833,10 +6588,26 @@ const EVENTS = [
       "9": "中旬"
     },
     "description": "押上二丁目町会会館前 路上周辺で行われる祭礼にあわせた奉納踊り。地域の町会が支える昔ながらの盆踊り。",
-    "detail": "2025-09-13 開催実績。2025 [G19]\n9/13。押上二町目町会 飛木稲荷神社神幸大祭 奉納おどり 9月13日(土) 午後7時-(2018年は9時まで)。",
-    "youtube_evidence": [],
+    "detail": "2025-09-13 開催実績。2025 [G19] 9/13。押上二町目町会 飛木稲荷神社神幸大祭 奉納おどり 9月13日(土) 午後7時-(2018年は9時まで)。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "第2回 辰巳で盆踊り",
@@ -4870,10 +6641,26 @@ const EVENTS = [
       "5": "中旬"
     },
     "description": "区立第二辰巳小学校で行われる地域の盆踊りイベント。過去の開催実績をもとに掲載。",
-    "detail": "2025-05-17 開催実績。2025 [H1]\n5/17。イベント「第2回 辰巳で盆踊り」5月17日(土)13:00-16:20。\n＊底を拭いた状態の草履、もしくは上履きのご使用をお願い致します(体育館用)。床を傷付ける恐れのある履物のご使用は御遠慮下さい。",
-    "youtube_evidence": [],
+    "detail": "2025-05-17 開催実績。2025 [H1] 5/17。イベント「第2回 辰巳で盆踊り」5月17日(土)13:00-16:20。 ＊底を拭いた状態の草履、もしくは上履きのご使用をお願い致します(体育館用)。床を傷付ける恐れのある履物のご使用は御遠慮下さい。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": 2,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "盆踊り大会",
@@ -4907,10 +6694,26 @@ const EVENTS = [
       "7": "中旬"
     },
     "description": "木場二丁目公園で行われる地域の盆踊りイベント。過去の開催実績をもとに掲載。",
-    "detail": "2025-07-18 開催実績。2025 [H2]\n7/18 - 19。木場2丁目町会 「盆踊り大会」 7/18(金)-19(土) 18:00~21:00(19日は20:30まで)。",
-    "youtube_evidence": [],
+    "detail": "2025-07-18 開催実績。2025 [H2] 7/18 - 19。木場2丁目町会 「盆踊り大会」 7/18(金)-19(土) 18:00~21:00(19日は20:30まで)。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "森下二丁目盆踊り",
@@ -4944,10 +6747,26 @@ const EVENTS = [
       "7": "中旬"
     },
     "description": "森下公園で行われる地域の盆踊りイベント。過去の開催実績をもとに掲載。",
-    "detail": "2025-07-19 開催実績。2025 [H3]\n7/19 - 20。森下二丁目町会 「森下二丁目盆踊り」 7/19(土)-20(日) 18:30-21:00。",
-    "youtube_evidence": [],
+    "detail": "2025-07-19 開催実績。2025 [H3] 7/19 - 20。森下二丁目町会 「森下二丁目盆踊り」 7/19(土)-20(日) 18:30-21:00。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "江東天祖神社の盆踊り（名称推定）",
@@ -4982,9 +6801,25 @@ const EVENTS = [
     },
     "description": "江東天祖神社（亀戸天祖神社）で開催される地域の盆踊り。名称は会場名と過去の開催情報からの推定。",
     "detail": "名称推定。開催日程は未確認。",
-    "youtube_evidence": [],
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "都の辰巳深川 臨海ぼんおどり",
@@ -5018,10 +6853,26 @@ const EVENTS = [
       "7": "中旬"
     },
     "description": "臨海小学校で行われる地域の盆踊りイベント。過去の開催実績をもとに掲載。",
-    "detail": "2025-07-19 開催実績。2025 [H4]\n7/19 - 20。臨海ぼんおどり実行委員会 「都の辰巳深川 臨海ぼんおどり」 7月19日(土)-20日(日) 。\n(2024年は 18:00-20:00)",
-    "youtube_evidence": [],
+    "detail": "2025-07-19 開催実績。2025 [H4] 7/19 - 20。臨海ぼんおどり実行委員会 「都の辰巳深川 臨海ぼんおどり」 7月19日(土)-20日(日) 。 (2024年は 18:00-20:00)",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "盆踊 〜BONDO〜",
@@ -5055,10 +6906,26 @@ const EVENTS = [
       "5": "中旬"
     },
     "description": "しながわ中央公園で開かれる新感覚の盆踊りフェス「BONDO」。デコトラのステージやキッチンカー、フリーマーケットも同時開催。",
-    "detail": null,
-    "youtube_evidence": [],
+    "detail": "",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "品川区民まつり 荏原第四地区",
@@ -5097,10 +6964,32 @@ const EVENTS = [
       "11": "上旬"
     },
     "description": "上神明小学校を会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
-    "detail": "2025-11-02 開催実績。2025 [I40]\n11/2。「品川区民まつり 荏原第四地区」11月2日(日) 10時-12時、16時-19:30。\n「オープニングイベント・模擬店・盆踊り・子どもコーナー・花火 ほか」。\n踊りは18:30-19:15。\n(10/17 踊りの時間を追記)",
-    "youtube_evidence": [],
-    "songs": [],
-    "song_occurrence": null
+    "detail": "2025-11-02 開催実績。2025 [I40] 11/2。「品川区民まつり 荏原第四地区」11月2日(日) 10時-12時、16時-19:30。 「オープニングイベント・模擬店・盆踊り・子どもコーナー・花火 ほか」。 踊りは18:30-19:15。 (10/17 踊りの時間を追記)",
+    "source_urls": [],
+    "songs": [
+      {
+        "name": "まつり",
+        "confidence": "hint",
+        "source_count": 1
+      }
+    ],
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "品川区民まつり 荏原第三地区",
@@ -5134,10 +7023,32 @@ const EVENTS = [
       "10": "中旬"
     },
     "description": "京陽小学校を会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
-    "detail": "2025-10-19 開催実績。2025 [I38]\n10/19。「品川区民まつり 荏原第三地区」10月19日(日) 11時-15:30。\n「模擬店・盆踊り ほか」。\n盆踊りは\n①12:00-12:30、\n②12:50-13:20、\n③14:35-15:05。\n(10/16 踊りの時間帯を追記)",
-    "youtube_evidence": [],
-    "songs": [],
-    "song_occurrence": null
+    "detail": "2025-10-19 開催実績。2025 [I38] 10/19。「品川区民まつり 荏原第三地区」10月19日(日) 11時-15:30。 「模擬店・盆踊り ほか」。 盆踊りは ①12:00-12:30、 ②12:50-13:20、 ③14:35-15:05。 (10/16 踊りの時間帯を追記)",
+    "source_urls": [],
+    "songs": [
+      {
+        "name": "まつり",
+        "confidence": "hint",
+        "source_count": 1
+      }
+    ],
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "品川区民まつり 八潮地区",
@@ -5171,10 +7082,32 @@ const EVENTS = [
       "9": "中旬"
     },
     "description": "八潮公園を会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
-    "detail": "2025-09-14 開催実績。2025 [I30]\n9/14。「品川区民まつり 八潮地区」9月14日(日) 11時-20:30。\n「模擬店・盆踊り・子どもコーナー ほか」。\n踊りの時間詳細不明。",
-    "youtube_evidence": [],
-    "songs": [],
-    "song_occurrence": null
+    "detail": "2025-09-14 開催実績。2025 [I30] 9/14。「品川区民まつり 八潮地区」9月14日(日) 11時-20:30。 「模擬店・盆踊り・子どもコーナー ほか」。 踊りの時間詳細不明。",
+    "source_urls": [],
+    "songs": [
+      {
+        "name": "まつり",
+        "confidence": "hint",
+        "source_count": 1
+      }
+    ],
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "品川区民まつり 品川第二地区",
@@ -5208,10 +7141,32 @@ const EVENTS = [
       "7": "下旬"
     },
     "description": "城南小学校を会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
-    "detail": "2025-07-26 開催実績。2025 [I17]\n7/26 - 27。「品川区民まつり 品川第二地区」7月26日(土)-27日(日) 17時-21時。\n「盆踊り・模擬店 ほか」。\n踊りは18時-21時。\n練習会 7/23(水)・24(木) 19:00-20:45 城南小学校体育館。\n(7/23朝 時間他追記)",
-    "youtube_evidence": [],
-    "songs": [],
-    "song_occurrence": null
+    "detail": "2025-07-26 開催実績。2025 [I17] 7/26 - 27。「品川区民まつり 品川第二地区」7月26日(土)-27日(日) 17時-21時。 「盆踊り・模擬店 ほか」。 踊りは18時-21時。 練習会 7/23(水)・24(木) 19:00-20:45 城南小学校体育館。 (7/23朝 時間他追記)",
+    "source_urls": [],
+    "songs": [
+      {
+        "name": "まつり",
+        "confidence": "hint",
+        "source_count": 1
+      }
+    ],
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "第71回大井どんたく夏まつり 初日 盆踊り",
@@ -5246,15 +7201,26 @@ const EVENTS = [
     },
     "description": "第71回大井どんたく夏まつり 初日 盆踊りは、大井町駅前中央通り周辺で開かれる街なかの踊りイベント。8月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025-08-23（土）18:00から盆踊り。大井どんたく音頭、品川音頭、東京音頭、品川甚句など。",
-    "youtube_evidence": [],
+    "source_urls": [],
     "songs": [
+      {
+        "name": "まつり",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
       {
         "name": "品川甚句",
         "confidence": "hint",
         "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
         "evidence_count": 1,
         "speaker_count": 1,
         "setlist_complete": false
@@ -5263,9 +7229,9 @@ const EVENTS = [
         "name": "品川音頭",
         "confidence": "hint",
         "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
         "evidence_count": 1,
         "speaker_count": 1,
         "setlist_complete": false
@@ -5274,9 +7240,20 @@ const EVENTS = [
         "name": "大井どんたく音頭",
         "confidence": "hint",
         "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "大井町駅前中央通り周辺で開かれる街なかの踊り",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
         "evidence_count": 1,
         "speaker_count": 1,
         "setlist_complete": false
@@ -5285,74 +7262,46 @@ const EVENTS = [
         "name": "東京音頭",
         "confidence": "hint",
         "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "甚句",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
         "evidence_count": 1,
         "speaker_count": 1,
         "setlist_complete": false
       }
     ],
-    "song_occurrence": {
-      "occurrence_id": "199fd60013333951",
-      "event_name": "第71回大井どんたく夏まつり 初日 盆踊り",
-      "venue": "大井町駅前中央通り",
-      "year": 2025,
-      "songs": [
-        {
-          "name": "品川甚句",
-          "probability": 24,
-          "basis": "past_evidence",
-          "basis_label": "2025年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.4
-          ],
-          "evidence_urls": []
-        },
-        {
-          "name": "品川音頭",
-          "probability": 24,
-          "basis": "past_evidence",
-          "basis_label": "2025年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.4
-          ],
-          "evidence_urls": []
-        },
-        {
-          "name": "大井どんたく音頭",
-          "probability": 24,
-          "basis": "past_evidence",
-          "basis_label": "2025年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.4
-          ],
-          "evidence_urls": []
-        },
-        {
-          "name": "東京音頭",
-          "probability": 24,
-          "basis": "past_evidence",
-          "basis_label": "2025年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.4
-          ],
-          "evidence_urls": []
-        }
-      ]
-    }
+    "public_status": "expected_high",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "第71回・昨年開催: 2025-08-23。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 高",
+    "recurrence_score": 0.78,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "edition_number:71",
+      "edition_10plus",
+      "edition_30plus",
+      "recurring_word:まつり"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": 71,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-08-23"
+    ]
   },
   {
     "name": "大井蔵王権現神社の盆踊り（名称推定）",
@@ -5387,9 +7336,25 @@ const EVENTS = [
     },
     "description": "大井蔵王権現神社で開催される地域の盆踊り。名称は会場名と過去の開催情報からの推定。",
     "detail": "名称推定。開催日程は未確認。",
-    "youtube_evidence": [],
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "品川第二地区 区民まつり・品川青年会 盆踊り大会（天妙国寺）",
@@ -5423,10 +7388,25 @@ const EVENTS = [
       "7": "下旬"
     },
     "description": "天妙国寺の境内で開かれる地域の盆踊り大会。例年7月下旬の週末2日間、子どもコーナーもある下町情緒たっぷりの夏祭り。",
-    "detail": null,
-    "youtube_evidence": [],
+    "detail": "",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "戸越宮前盆踊り",
@@ -5460,10 +7440,24 @@ const EVENTS = [
       "6": "上旬"
     },
     "description": "宮前小学校で行われる地域の盆踊りイベント。過去の開催実績をもとに掲載。",
-    "detail": "2026-06-07 開催予定。東京盆踊りマップから確定日として反映。\n2026 [I8]\n6/7\n宮前小学校\n戸越一丁目町会・戸越二丁目町会・戸越銀座町会「戸越宮前盆踊り」6月7日(日) 14:00-。\n・14:00-19:00 盆踊り\n・18:45頃 手持ち花火\n＊雨天時中止あるいは縮小開催。",
-    "youtube_evidence": [],
+    "detail": "2026-06-07 開催予定。東京盆踊りマップから確定日として反映。 2026 [I8] 6/7 宮前小学校 戸越一丁目町会・戸越二丁目町会・戸越銀座町会「戸越宮前盆踊り」6月7日(日) 14:00-。 ・14:00-19:00 盆踊り ・18:45頃 手持ち花火 ＊雨天時中止あるいは縮小開催。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-06-07",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
+    "recurrence_reasons": [
+      "2026年開催済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-06-07"
+    ]
   },
   {
     "name": "小山台二丁目町会 戸越八幡神社例大祭 盆踊り",
@@ -5497,10 +7491,26 @@ const EVENTS = [
       "9": "中旬"
     },
     "description": "小山台公園周辺で行われる祭礼にあわせた奉納踊り。地域の町会が支える昔ながらの盆踊り。",
-    "detail": "2025-09-13 開催実績。2025 [I24]\n9/13。小山台二丁目町会 戸越八幡神社例大祭 盆踊り 9月13日(土)。\n盆踊り:18:30-19:30。",
-    "youtube_evidence": [],
+    "detail": "2025-09-13 開催実績。2025 [I24] 9/13。小山台二丁目町会 戸越八幡神社例大祭 盆踊り 9月13日(土)。 盆踊り:18:30-19:30。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "品川区民まつり 荏原第一地区",
@@ -5534,10 +7544,32 @@ const EVENTS = [
       "7": "下旬"
     },
     "description": "小山台小学校を会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
-    "detail": "2025-07-26 開催実績。2025 [I15]\n7/26。「品川区民まつり 荏原第一地区」7月26日(土) 14時-19時。\n盆踊りは17:30-18:30。",
-    "youtube_evidence": [],
-    "songs": [],
-    "song_occurrence": null
+    "detail": "2025-07-26 開催実績。2025 [I15] 7/26。「品川区民まつり 荏原第一地区」7月26日(土) 14時-19時。 盆踊りは17:30-18:30。",
+    "source_urls": [],
+    "songs": [
+      {
+        "name": "まつり",
+        "confidence": "confirmed",
+        "source_count": 2
+      }
+    ],
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "中原共和町会 戸越八幡神社祭礼 盆踊り",
@@ -5571,10 +7603,26 @@ const EVENTS = [
       "9": "中旬"
     },
     "description": "平塚中央公園で行われる地域の盆踊りイベント。過去の開催実績をもとに掲載。",
-    "detail": "2025-09-13 開催実績。2025 [I26]\n9/13。中原共和町会 戸越八幡神社祭礼 盆踊り 9月13日(土) 18:00-19:00。\n＊例年「盆踊りみたいなものはやります」が今年あるかは不明。\n＊ポスターに盆踊り記載無し。",
-    "youtube_evidence": [],
+    "detail": "2025-09-13 開催実績。2025 [I26] 9/13。中原共和町会 戸越八幡神社祭礼 盆踊り 9月13日(土) 18:00-19:00。 ＊例年「盆踊りみたいなものはやります」が今年あるかは不明。 ＊ポスターに盆踊り記載無し。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "戸越八幡神社例大祭 盆踊り",
@@ -5608,10 +7656,25 @@ const EVENTS = [
       "9": "中旬"
     },
     "description": "9月中旬の例大祭にあわせて開かれる奉納盆踊り。神輿や山車の巡行とともに楽しめる、戸越の秋の風物詩。",
-    "detail": null,
-    "youtube_evidence": [],
+    "detail": "",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "旗の台稲荷通り商店会盆踊り 盆ROCK",
@@ -5645,16 +7708,49 @@ const EVENTS = [
       "10": "中旬"
     },
     "description": "旗の台稲荷通り商店会盆踊り 盆ROCKは、品川区の旗の台稲荷通り商店街で行われる盆踊り。10月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025-10-18（土）15:00-19:00。17:00-19:00に盆ROCK。\n\n[youtube_evidence] YouTube実績証拠\n- 対象イベント: 旗の台稲荷通り商店会盆踊り 盆ROCK\n- 検出日付: 2025-10-18\n- 動画数: 19\n- チャンネル: UCNF_5e3ZvziJueTWvTPATGw\n- 代表動画: https://www.youtube.com/watch?v=WEc9GFSU8eg / UCNF_5e3ZvziJueTWvTPATGw / Johnny B. Goode（Chuck Berry）　旗の台稲荷通り商店街「旗の台盆ROCK」19終　生歌生演奏盆踊り　2025年10月18日\n- 代表動画: https://www.youtube.com/watch?v=_lqOf2ToPuE / UCNF_5e3ZvziJueTWvTPATGw / 「オブ・ラ・ディ、オブ・ラ・ダ」（ビートルズ）　旗の台稲荷通り商店街「旗の台盆ROCK」２　生歌生演奏盆踊り　2025年10月18日\n- 代表動画: https://www.youtube.com/watch?v=9AJqbnmASyE / UCNF_5e3ZvziJueTWvTPATGw / 「バスケット・ケース」（グリーン・デイ）　旗の台稲荷通り商店街「旗の台盆ROCK」14　生歌生演奏盆踊り　2025年10月18日\n- 代表動画: https://www.youtube.com/watch?v=jrbrjKdzLDI / UCNF_5e3ZvziJueTWvTPATGw / ジョニー・Ｂ、グッド（チャックベリー）　旗の台稲荷通り商店街「旗の台盆ROCK」16　生歌生演奏盆踊り　2025年10月18日\n- 代表動画: https://www.youtube.com/watch?v=I0_lYt5t7tc / UCNF_5e3ZvziJueTWvTPATGw / タイムマシンにお願い（サディスティック・ミカ・バンド）　旗の台稲荷通り商店街「旗の台盆ROCK」12　生歌生演奏盆踊り　2025年10月18日\n- 追加動画: 14件 (詳細はapply結果JSON)\n- 曲目候補: オブ・ラ・ディ、オブ・ラ・ダ, バスケット・ケース, ジョニー・B、グッド, タイムマシンにお願い, ツイストアンドシャウト, ドント・ルック・バック・イン・アンガー, ドンパン節, マイ・シャローナ, ルージュの伝言, 今夜はビートイット, 品川甚句, 品川音頭, 大東京音頭, 旗の台音頭, 東京音頭, 炭坑節",
-    "youtube_evidence": [],
+    "detail": "2025-10-18（土）15:00-19:00。17:00-19:00に盆ROCK。",
+    "source_urls": [],
     "songs": [
+      {
+        "name": "オブ・ラ・ディ、オブ・ラ・ダ",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "ジョニー・B、グッド",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
       {
         "name": "ドンパン節",
         "confidence": "hint",
         "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "バスケット・ケース",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
         "evidence_count": 1,
         "speaker_count": 1,
         "setlist_complete": false
@@ -5663,9 +7759,9 @@ const EVENTS = [
         "name": "品川甚句",
         "confidence": "hint",
         "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
         "evidence_count": 1,
         "speaker_count": 1,
         "setlist_complete": false
@@ -5674,9 +7770,9 @@ const EVENTS = [
         "name": "品川音頭",
         "confidence": "hint",
         "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
         "evidence_count": 1,
         "speaker_count": 1,
         "setlist_complete": false
@@ -5685,9 +7781,9 @@ const EVENTS = [
         "name": "大東京音頭",
         "confidence": "hint",
         "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
         "evidence_count": 1,
         "speaker_count": 1,
         "setlist_complete": false
@@ -5696,9 +7792,9 @@ const EVENTS = [
         "name": "東京音頭",
         "confidence": "hint",
         "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
         "evidence_count": 1,
         "speaker_count": 1,
         "setlist_complete": false
@@ -5707,100 +7803,32 @@ const EVENTS = [
         "name": "炭坑節",
         "confidence": "hint",
         "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
         "evidence_count": 1,
         "speaker_count": 1,
         "setlist_complete": false
       }
     ],
-    "song_occurrence": {
-      "occurrence_id": "0ada8e6a5d396db0",
-      "event_name": "旗の台稲荷通り商店会盆踊り 盆ROCK",
-      "venue": "旗の台稲荷通り商店街",
-      "year": 2025,
-      "songs": [
-        {
-          "name": "ドンパン節",
-          "probability": 24,
-          "basis": "past_evidence",
-          "basis_label": "2025年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.4
-          ],
-          "evidence_urls": []
-        },
-        {
-          "name": "品川甚句",
-          "probability": 24,
-          "basis": "past_evidence",
-          "basis_label": "2025年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.4
-          ],
-          "evidence_urls": []
-        },
-        {
-          "name": "品川音頭",
-          "probability": 24,
-          "basis": "past_evidence",
-          "basis_label": "2025年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.4
-          ],
-          "evidence_urls": []
-        },
-        {
-          "name": "大東京音頭",
-          "probability": 24,
-          "basis": "past_evidence",
-          "basis_label": "2025年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.4
-          ],
-          "evidence_urls": []
-        },
-        {
-          "name": "東京音頭",
-          "probability": 24,
-          "basis": "past_evidence",
-          "basis_label": "2025年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.4
-          ],
-          "evidence_urls": []
-        },
-        {
-          "name": "炭坑節",
-          "probability": 24,
-          "basis": "past_evidence",
-          "basis_label": "2025年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.4
-          ],
-          "evidence_urls": []
-        }
-      ]
-    }
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-10-18。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.6,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:商店街"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-10-18"
+    ]
   },
   {
     "name": "旗岡八幡神社例大祭",
@@ -5834,10 +7862,26 @@ const EVENTS = [
       "9": "中旬"
     },
     "description": "旗岡八幡神社例大祭は、旗岡八幡神社を舞台にした祭礼・地域行事にあわせた踊りの場。9月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": null,
-    "youtube_evidence": [],
+    "detail": "",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "Min-Yoi's盆踊り",
@@ -5872,1205 +7916,739 @@ const EVENTS = [
     },
     "description": "Min-Yoi's盆踊りは、品川区の日本民謡会館で行われる盆踊り。5月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2026-05-31（日）開催記録。次回日程は未確認。",
-    "youtube_evidence": [],
+    "source_urls": [],
     "songs": [
       {
         "name": "Beat It盆踊り",
         "confidence": "confirmed",
-        "source_count": 1,
+        "source_count": 2,
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=-USPVIqmUKQ"
-        ]
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
       },
       {
         "name": "おしまこ輪踊り",
         "confidence": "confirmed",
-        "source_count": 1,
+        "source_count": 2,
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=6ZCsHqoCz8Y"
-        ]
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
       },
       {
         "name": "おてもやん",
         "confidence": "confirmed",
-        "source_count": 1,
+        "source_count": 2,
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=zvNk31XmwMM"
-        ]
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
       },
       {
         "name": "こまづくり唄",
         "confidence": "confirmed",
-        "source_count": 1,
+        "source_count": 2,
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=Ae8CYjM-y2Y"
-        ]
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
       },
       {
         "name": "さくら音頭",
         "confidence": "confirmed",
-        "source_count": 1,
+        "source_count": 2,
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=fwX0qtq6HQY"
-        ]
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
       },
       {
         "name": "でかんしょ節",
         "confidence": "confirmed",
-        "source_count": 1,
+        "source_count": 2,
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=0cz4BgmIJC4"
-        ]
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
       },
       {
         "name": "とらじょ様",
         "confidence": "confirmed",
-        "source_count": 1,
+        "source_count": 2,
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=bbKV6EYNny8"
-        ]
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
       },
       {
         "name": "にっぽんチャチャチャ",
         "confidence": "confirmed",
-        "source_count": 1,
+        "source_count": 2,
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=B3C481luK_w"
-        ]
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
       },
       {
         "name": "よこはまアラメヤ音頭",
         "confidence": "confirmed",
-        "source_count": 1,
+        "source_count": 2,
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=oxZtUYXg06w"
-        ]
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
       },
       {
         "name": "りんご節",
         "confidence": "confirmed",
-        "source_count": 1,
+        "source_count": 2,
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=3WDSTaX0-cw"
-        ]
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
       },
       {
         "name": "シッチョイ",
         "confidence": "confirmed",
-        "source_count": 1,
+        "source_count": 2,
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=lw9vaonH1uc"
-        ]
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
       },
       {
         "name": "ドンパン節",
         "confidence": "confirmed",
-        "source_count": 1,
+        "source_count": 3,
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=7v5c4qZQnSw"
-        ]
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 3,
+        "speaker_count": 2,
+        "setlist_complete": true
       },
       {
         "name": "下北小唄",
         "confidence": "confirmed",
-        "source_count": 1,
+        "source_count": 2,
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=UmULl-H4adI"
-        ]
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
       },
       {
         "name": "佐渡おけさ",
         "confidence": "confirmed",
-        "source_count": 1,
+        "source_count": 2,
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=81ECma43tG8"
-        ]
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
       },
       {
         "name": "八戸小唄",
         "confidence": "confirmed",
-        "source_count": 1,
+        "source_count": 2,
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=eUdaKOAjGEo"
-        ]
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
       },
       {
         "name": "北上おでんせ",
         "confidence": "confirmed",
-        "source_count": 1,
+        "source_count": 2,
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=jhNfVejczXk"
-        ]
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
       },
       {
         "name": "堀江盆歌",
         "confidence": "confirmed",
-        "source_count": 1,
+        "source_count": 2,
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=vhUEHrUbadI"
-        ]
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
       },
       {
         "name": "大森甚句",
         "confidence": "confirmed",
-        "source_count": 1,
+        "source_count": 3,
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=kDLvMlBtTxM"
-        ]
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 3,
+        "speaker_count": 2,
+        "setlist_complete": true
       },
       {
         "name": "子供盆踊り唄",
         "confidence": "confirmed",
-        "source_count": 1,
+        "source_count": 3,
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=K_ShDtWkpuc"
-        ]
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 3,
+        "speaker_count": 2,
+        "setlist_complete": true
       },
       {
         "name": "平和音頭",
         "confidence": "confirmed",
-        "source_count": 1,
+        "source_count": 2,
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=Ay26e53P9-E"
-        ]
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
       },
       {
         "name": "村崎野音頭",
         "confidence": "confirmed",
-        "source_count": 1,
+        "source_count": 2,
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=yOPU_J0TRdk"
-        ]
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
       },
       {
         "name": "東京音頭",
         "confidence": "confirmed",
-        "source_count": 1,
+        "source_count": 3,
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=UoiBfNfZswE"
-        ]
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 3,
+        "speaker_count": 2,
+        "setlist_complete": true
       },
       {
         "name": "江州音頭",
         "confidence": "confirmed",
-        "source_count": 1,
+        "source_count": 3,
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=cTCe5rRqG94"
-        ]
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 3,
+        "speaker_count": 2,
+        "setlist_complete": true
       },
       {
         "name": "河内音頭",
         "confidence": "confirmed",
-        "source_count": 1,
+        "source_count": 2,
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=gyyK6CeR2ls"
-        ]
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
       },
       {
         "name": "津軽甚句",
         "confidence": "confirmed",
-        "source_count": 1,
+        "source_count": 2,
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=-RP0e0LUCZk"
-        ]
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
       },
       {
         "name": "炭坑節",
         "confidence": "confirmed",
-        "source_count": 1,
+        "source_count": 2,
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=LBuOk033AcQ"
-        ]
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
       },
       {
         "name": "牛深ハイヤ",
         "confidence": "confirmed",
-        "source_count": 1,
+        "source_count": 2,
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=CAFh6Bp5YaI"
-        ]
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
       },
       {
         "name": "真室川音頭",
         "confidence": "confirmed",
-        "source_count": 1,
+        "source_count": 2,
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=c9uotLXGYLQ"
-        ]
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
       },
       {
         "name": "神代",
         "confidence": "confirmed",
-        "source_count": 1,
+        "source_count": 2,
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=PfVSbEplhXA"
-        ]
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
       },
       {
         "name": "秋田音頭",
         "confidence": "confirmed",
-        "source_count": 1,
+        "source_count": 3,
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=olANab36mxk"
-        ]
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 3,
+        "speaker_count": 2,
+        "setlist_complete": true
       },
       {
         "name": "紀州白浜音頭",
         "confidence": "confirmed",
-        "source_count": 1,
+        "source_count": 2,
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=tlWdGx5rLFA"
-        ]
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
       },
       {
         "name": "終 繁昌ぶし",
         "confidence": "confirmed",
-        "source_count": 1,
+        "source_count": 2,
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=9lkufMdYu2c"
-        ]
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
       },
       {
         "name": "老坂",
         "confidence": "confirmed",
-        "source_count": 1,
+        "source_count": 2,
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=SCS4NBMj8bA"
-        ]
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
       },
       {
         "name": "花笠音頭",
         "confidence": "confirmed",
-        "source_count": 1,
+        "source_count": 2,
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=7TkSF51SEs0"
-        ]
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
       },
       {
         "name": "郡上節かわさき",
         "confidence": "confirmed",
-        "source_count": 1,
+        "source_count": 3,
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=0eTmwqomFyA"
-        ]
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 3,
+        "speaker_count": 2,
+        "setlist_complete": true
       },
       {
         "name": "郡上節三百",
         "confidence": "confirmed",
-        "source_count": 1,
+        "source_count": 2,
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=rrPjw5lwGDU"
-        ]
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
       },
       {
         "name": "郡上節春駒",
         "confidence": "confirmed",
-        "source_count": 1,
+        "source_count": 2,
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=wYE6MCa9XxQ"
-        ]
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
       },
       {
         "name": "隠岐のしげさ節",
         "confidence": "confirmed",
-        "source_count": 1,
+        "source_count": 2,
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=TIHzTtK9a1c"
-        ]
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
       },
       {
         "name": "鯵ヶ沢甚句",
         "confidence": "confirmed",
-        "source_count": 1,
+        "source_count": 2,
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=4FeWN7pbr3w"
-        ]
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
       },
       {
         "name": "鹿島一声浮立",
         "confidence": "confirmed",
-        "source_count": 1,
+        "source_count": 2,
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=LuKtxSzNpDE"
-        ]
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
       },
       {
         "name": "麦わら音頭",
         "confidence": "confirmed",
-        "source_count": 1,
+        "source_count": 2,
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=I9_Fcsn5aJ0"
-        ]
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
       },
       {
         "name": "黒石じょんがら",
         "confidence": "confirmed",
-        "source_count": 1,
+        "source_count": 2,
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=YkLMCoVkPrE"
-        ]
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
       },
       {
         "name": "黒石よされ",
         "confidence": "confirmed",
-        "source_count": 1,
+        "source_count": 2,
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=jcQC0DFIiAc"
-        ]
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
       },
       {
         "name": "黒石甚句",
         "confidence": "confirmed",
-        "source_count": 1,
+        "source_count": 2,
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測",
-        "evidence_count": 1,
-        "speaker_count": 1,
-        "setlist_complete": true,
-        "evidence_urls": [
-          "https://www.youtube.com/watch?v=vPE-jc6d-BU"
-        ]
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
+      },
+      {
+        "name": "Isn't She Lovely",
+        "confidence": "hint",
+        "source_count": 2,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
+      },
+      {
+        "name": "ええじゃないか音頭",
+        "confidence": "hint",
+        "source_count": 2,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
+      },
+      {
+        "name": "えびすくい音頭",
+        "confidence": "hint",
+        "source_count": 2,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
+      },
+      {
+        "name": "じゃこっぺ踊り",
+        "confidence": "hint",
+        "source_count": 2,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
+      },
+      {
+        "name": "すみだ音頭",
+        "confidence": "hint",
+        "source_count": 2,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
+      },
+      {
+        "name": "とらじょさま",
+        "confidence": "hint",
+        "source_count": 2,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
+      },
+      {
+        "name": "にんにん忍たま音頭",
+        "confidence": "hint",
+        "source_count": 2,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
+      },
+      {
+        "name": "オバQ音頭",
+        "confidence": "hint",
+        "source_count": 2,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
+      },
+      {
+        "name": "マツケンサンバII",
+        "confidence": "hint",
+        "source_count": 2,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
+      },
+      {
+        "name": "二十一世紀音頭",
+        "confidence": "hint",
+        "source_count": 2,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
+      },
+      {
+        "name": "八木節",
+        "confidence": "hint",
+        "source_count": 2,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
+      },
+      {
+        "name": "春駒",
+        "confidence": "hint",
+        "source_count": 2,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
+      },
+      {
+        "name": "池袋西口音頭",
+        "confidence": "hint",
+        "source_count": 2,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
+      },
+      {
+        "name": "相馬盆唄",
+        "confidence": "hint",
+        "source_count": 2,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
+      },
+      {
+        "name": "終 メガヒッツ盆踊り",
+        "confidence": "hint",
+        "source_count": 2,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
+      },
+      {
+        "name": "終 夏祭り",
+        "confidence": "hint",
+        "source_count": 2,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
+      },
+      {
+        "name": "終 池袋盆BAND",
+        "confidence": "hint",
+        "source_count": 2,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
+      },
+      {
+        "name": "終 津軽甚句",
+        "confidence": "hint",
+        "source_count": 2,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
+      },
+      {
+        "name": "終 炭坑節",
+        "confidence": "hint",
+        "source_count": 2,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
+      },
+      {
+        "name": "花まつり",
+        "confidence": "hint",
+        "source_count": 2,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
+      },
+      {
+        "name": "黒石よされ節",
+        "confidence": "hint",
+        "source_count": 2,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
       }
     ],
-    "song_occurrence": {
-      "occurrence_id": "6bd132803b187ebe",
-      "event_name": "Min-Yoi's盆踊り",
-      "venue": "日本民謡会館",
-      "year": 2026,
-      "songs": [
-        {
-          "name": "Beat It盆踊り",
-          "probability": 95,
-          "basis": "current_observed",
-          "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": true,
-          "prediction_reliability": [],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=-USPVIqmUKQ"
-          ]
-        },
-        {
-          "name": "おしまこ輪踊り",
-          "probability": 95,
-          "basis": "current_observed",
-          "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": true,
-          "prediction_reliability": [],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=6ZCsHqoCz8Y"
-          ]
-        },
-        {
-          "name": "おてもやん",
-          "probability": 95,
-          "basis": "current_observed",
-          "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": true,
-          "prediction_reliability": [],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=zvNk31XmwMM"
-          ]
-        },
-        {
-          "name": "こまづくり唄",
-          "probability": 95,
-          "basis": "current_observed",
-          "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": true,
-          "prediction_reliability": [],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=Ae8CYjM-y2Y"
-          ]
-        },
-        {
-          "name": "さくら音頭",
-          "probability": 95,
-          "basis": "current_observed",
-          "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": true,
-          "prediction_reliability": [],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=fwX0qtq6HQY"
-          ]
-        },
-        {
-          "name": "でかんしょ節",
-          "probability": 95,
-          "basis": "current_observed",
-          "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": true,
-          "prediction_reliability": [],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=0cz4BgmIJC4"
-          ]
-        },
-        {
-          "name": "とらじょ様",
-          "probability": 95,
-          "basis": "current_observed",
-          "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": true,
-          "prediction_reliability": [],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=bbKV6EYNny8"
-          ]
-        },
-        {
-          "name": "にっぽんチャチャチャ",
-          "probability": 95,
-          "basis": "current_observed",
-          "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": true,
-          "prediction_reliability": [],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=B3C481luK_w"
-          ]
-        },
-        {
-          "name": "よこはまアラメヤ音頭",
-          "probability": 95,
-          "basis": "current_observed",
-          "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": true,
-          "prediction_reliability": [],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=oxZtUYXg06w"
-          ]
-        },
-        {
-          "name": "りんご節",
-          "probability": 95,
-          "basis": "current_observed",
-          "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": true,
-          "prediction_reliability": [],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=3WDSTaX0-cw"
-          ]
-        },
-        {
-          "name": "シッチョイ",
-          "probability": 95,
-          "basis": "current_observed",
-          "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": true,
-          "prediction_reliability": [],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=lw9vaonH1uc"
-          ]
-        },
-        {
-          "name": "ドンパン節",
-          "probability": 95,
-          "basis": "current_observed",
-          "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": true,
-          "prediction_reliability": [],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=7v5c4qZQnSw"
-          ]
-        },
-        {
-          "name": "下北小唄",
-          "probability": 95,
-          "basis": "current_observed",
-          "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": true,
-          "prediction_reliability": [],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=UmULl-H4adI"
-          ]
-        },
-        {
-          "name": "佐渡おけさ",
-          "probability": 95,
-          "basis": "current_observed",
-          "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": true,
-          "prediction_reliability": [],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=81ECma43tG8"
-          ]
-        },
-        {
-          "name": "八戸小唄",
-          "probability": 95,
-          "basis": "current_observed",
-          "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": true,
-          "prediction_reliability": [],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=eUdaKOAjGEo"
-          ]
-        },
-        {
-          "name": "北上おでんせ",
-          "probability": 95,
-          "basis": "current_observed",
-          "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": true,
-          "prediction_reliability": [],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=jhNfVejczXk"
-          ]
-        },
-        {
-          "name": "堀江盆歌",
-          "probability": 95,
-          "basis": "current_observed",
-          "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": true,
-          "prediction_reliability": [],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=vhUEHrUbadI"
-          ]
-        },
-        {
-          "name": "大森甚句",
-          "probability": 95,
-          "basis": "current_observed",
-          "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": true,
-          "prediction_reliability": [],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=kDLvMlBtTxM"
-          ]
-        },
-        {
-          "name": "子供盆踊り唄",
-          "probability": 95,
-          "basis": "current_observed",
-          "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": true,
-          "prediction_reliability": [],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=K_ShDtWkpuc"
-          ]
-        },
-        {
-          "name": "平和音頭",
-          "probability": 95,
-          "basis": "current_observed",
-          "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": true,
-          "prediction_reliability": [],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=Ay26e53P9-E"
-          ]
-        },
-        {
-          "name": "村崎野音頭",
-          "probability": 95,
-          "basis": "current_observed",
-          "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": true,
-          "prediction_reliability": [],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=yOPU_J0TRdk"
-          ]
-        },
-        {
-          "name": "東京音頭",
-          "probability": 95,
-          "basis": "current_observed",
-          "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": true,
-          "prediction_reliability": [],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=UoiBfNfZswE"
-          ]
-        },
-        {
-          "name": "江州音頭",
-          "probability": 95,
-          "basis": "current_observed",
-          "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": true,
-          "prediction_reliability": [],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=cTCe5rRqG94"
-          ]
-        },
-        {
-          "name": "河内音頭",
-          "probability": 95,
-          "basis": "current_observed",
-          "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": true,
-          "prediction_reliability": [],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=gyyK6CeR2ls"
-          ]
-        },
-        {
-          "name": "津軽甚句",
-          "probability": 95,
-          "basis": "current_observed",
-          "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": true,
-          "prediction_reliability": [],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=-RP0e0LUCZk"
-          ]
-        },
-        {
-          "name": "炭坑節",
-          "probability": 95,
-          "basis": "current_observed",
-          "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": true,
-          "prediction_reliability": [],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=LBuOk033AcQ"
-          ]
-        },
-        {
-          "name": "牛深ハイヤ",
-          "probability": 95,
-          "basis": "current_observed",
-          "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": true,
-          "prediction_reliability": [],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=CAFh6Bp5YaI"
-          ]
-        },
-        {
-          "name": "真室川音頭",
-          "probability": 95,
-          "basis": "current_observed",
-          "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": true,
-          "prediction_reliability": [],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=c9uotLXGYLQ"
-          ]
-        },
-        {
-          "name": "神代",
-          "probability": 95,
-          "basis": "current_observed",
-          "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": true,
-          "prediction_reliability": [],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=PfVSbEplhXA"
-          ]
-        },
-        {
-          "name": "秋田音頭",
-          "probability": 95,
-          "basis": "current_observed",
-          "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": true,
-          "prediction_reliability": [],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=olANab36mxk"
-          ]
-        },
-        {
-          "name": "紀州白浜音頭",
-          "probability": 95,
-          "basis": "current_observed",
-          "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": true,
-          "prediction_reliability": [],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=tlWdGx5rLFA"
-          ]
-        },
-        {
-          "name": "終 繁昌ぶし",
-          "probability": 95,
-          "basis": "current_observed",
-          "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": true,
-          "prediction_reliability": [],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=9lkufMdYu2c"
-          ]
-        },
-        {
-          "name": "老坂",
-          "probability": 95,
-          "basis": "current_observed",
-          "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": true,
-          "prediction_reliability": [],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=SCS4NBMj8bA"
-          ]
-        },
-        {
-          "name": "花笠音頭",
-          "probability": 95,
-          "basis": "current_observed",
-          "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": true,
-          "prediction_reliability": [],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=7TkSF51SEs0"
-          ]
-        },
-        {
-          "name": "郡上節かわさき",
-          "probability": 95,
-          "basis": "current_observed",
-          "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": true,
-          "prediction_reliability": [],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=0eTmwqomFyA"
-          ]
-        },
-        {
-          "name": "郡上節三百",
-          "probability": 95,
-          "basis": "current_observed",
-          "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": true,
-          "prediction_reliability": [],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=rrPjw5lwGDU"
-          ]
-        },
-        {
-          "name": "郡上節春駒",
-          "probability": 95,
-          "basis": "current_observed",
-          "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": true,
-          "prediction_reliability": [],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=wYE6MCa9XxQ"
-          ]
-        },
-        {
-          "name": "隠岐のしげさ節",
-          "probability": 95,
-          "basis": "current_observed",
-          "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": true,
-          "prediction_reliability": [],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=TIHzTtK9a1c"
-          ]
-        },
-        {
-          "name": "鯵ヶ沢甚句",
-          "probability": 95,
-          "basis": "current_observed",
-          "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": true,
-          "prediction_reliability": [],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=4FeWN7pbr3w"
-          ]
-        },
-        {
-          "name": "鹿島一声浮立",
-          "probability": 95,
-          "basis": "current_observed",
-          "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": true,
-          "prediction_reliability": [],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=LuKtxSzNpDE"
-          ]
-        },
-        {
-          "name": "麦わら音頭",
-          "probability": 95,
-          "basis": "current_observed",
-          "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": true,
-          "prediction_reliability": [],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=I9_Fcsn5aJ0"
-          ]
-        },
-        {
-          "name": "黒石じょんがら",
-          "probability": 95,
-          "basis": "current_observed",
-          "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": true,
-          "prediction_reliability": [],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=YkLMCoVkPrE"
-          ]
-        },
-        {
-          "name": "黒石よされ",
-          "probability": 95,
-          "basis": "current_observed",
-          "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": true,
-          "prediction_reliability": [],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=jcQC0DFIiAc"
-          ]
-        },
-        {
-          "name": "黒石甚句",
-          "probability": 95,
-          "basis": "current_observed",
-          "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": true,
-          "prediction_reliability": [],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=vPE-jc6d-BU"
-          ]
-        }
-      ]
-    }
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-05-31",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
+    "recurrence_reasons": [
+      "2026年開催済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-05-31"
+    ]
   },
   {
     "name": "品川区民まつり 荏原第五地区",
@@ -7104,10 +8682,32 @@ const EVENTS = [
       "8": "下旬"
     },
     "description": "旧杜松小学校を会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
-    "detail": "2025-08-23 開催実績。2025 [I22]\n8/23 - 24。「品川区民まつり 荏原第五地区」8月23日(土)-24日(日)。\n23日(土) 16:00-19:30。\n24日(日) 16:00-18:30。\n「模擬店・盆踊り・子どもコーナー・ステージ発表 ほか」。\n踊りの時間詳細不明。",
-    "youtube_evidence": [],
-    "songs": [],
-    "song_occurrence": null
+    "detail": "2025-08-23 開催実績。2025 [I22] 8/23 - 24。「品川区民まつり 荏原第五地区」8月23日(土)-24日(日)。 23日(土) 16:00-19:30。 24日(日) 16:00-18:30。 「模擬店・盆踊り・子どもコーナー・ステージ発表 ほか」。 踊りの時間詳細不明。",
+    "source_urls": [],
+    "songs": [
+      {
+        "name": "まつり",
+        "confidence": "hint",
+        "source_count": 1
+      }
+    ],
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "しながわ運河まつり ステージプログラム",
@@ -7141,10 +8741,37 @@ const EVENTS = [
       "4": "中旬"
     },
     "description": "東品川海上公園で行われる地域の盆踊りイベント。過去の開催実績をもとに掲載。",
-    "detail": "2025-04-13 開催実績。2025 [I5]\n4/13。「しながわ運河まつり ステージプログラム」 4月13日(日)10:00-15:10(2日目)。\n14:00-14:20 「しゅわしゅわデフリンピック」。\n14:20-14:40「わわわ！しながわ社協音頭」。\n14:40-15:10「晴盆セレクト盆踊り」。\n＊イベント全体は 4月12日 (土)から2日間開催。\n(4/12朝掲)",
-    "youtube_evidence": [],
-    "songs": [],
-    "song_occurrence": null
+    "detail": "2025-04-13 開催実績。2025 [I5] 4/13。「しながわ運河まつり ステージプログラム」 4月13日(日)10:00-15:10(2日目)。 14:00-14:20 「しゅわしゅわデフリンピック」。 14:20-14:40「わわわ！しながわ社協音頭」。 14:40-15:10「晴盆セレクト盆踊り」。 ＊イベント全体は 4月12日 (土)から2日間開催。 (4/12朝掲)",
+    "source_urls": [],
+    "songs": [
+      {
+        "name": "しながわ社協音頭",
+        "confidence": "hint",
+        "source_count": 1
+      },
+      {
+        "name": "まつり",
+        "confidence": "hint",
+        "source_count": 1
+      }
+    ],
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "品川区民まつり 大崎第一地区",
@@ -7178,10 +8805,32 @@ const EVENTS = [
       "7": "下旬"
     },
     "description": "第四日野小学校を会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
-    "detail": "2025-07-26 開催実績。2025 [I16]\n7/26。「品川区民まつり 大崎第一地区」7月26日(土) 15時-19時。\n「模擬店、盆踊り、ゲームコーナー ほか」。\n踊りの時間詳細不明。",
-    "youtube_evidence": [],
-    "songs": [],
-    "song_occurrence": null
+    "detail": "2025-07-26 開催実績。2025 [I16] 7/26。「品川区民まつり 大崎第一地区」7月26日(土) 15時-19時。 「模擬店、盆踊り、ゲームコーナー ほか」。 踊りの時間詳細不明。",
+    "source_urls": [],
+    "songs": [
+      {
+        "name": "まつり",
+        "confidence": "hint",
+        "source_count": 1
+      }
+    ],
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "第3回 延七昇竜太鼓盆踊り大会",
@@ -7215,10 +8864,26 @@ const EVENTS = [
       "5": "中旬"
     },
     "description": "第二延山小学校で行われる地域の盆踊りイベント。過去の開催実績をもとに掲載。",
-    "detail": "2025-05-11 開催実績。2025 [I7]\n5/11。延七昇竜太鼓「第3回 延七昇竜太鼓盆踊り大会」\n5月11日(日) 17時半-20時。\n(旧:品川で一番早い盆踊り大会)\n・参加費無料、雨天決行。\n＊各自上履きをご持参ください。",
-    "youtube_evidence": [],
+    "detail": "2025-05-11 開催実績。2025 [I7] 5/11。延七昇竜太鼓「第3回 延七昇竜太鼓盆踊り大会」 5月11日(日) 17時半-20時。 (旧:品川で一番早い盆踊り大会) ・参加費無料、雨天決行。 ＊各自上履きをご持参ください。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": 3,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "品川区民まつり 大崎第一地区",
@@ -7252,10 +8917,32 @@ const EVENTS = [
       "7": "下旬"
     },
     "description": "第四日野小学校を会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
-    "detail": "2025-07-26 開催実績。2025 [I16]\n7/26。「品川区民まつり 大崎第一地区」7月26日(土) 15時-19時。\n「模擬店、盆踊り、ゲームコーナー ほか」。\n踊りの時間詳細不明。",
-    "youtube_evidence": [],
-    "songs": [],
-    "song_occurrence": null
+    "detail": "2025-07-26 開催実績。2025 [I16] 7/26。「品川区民まつり 大崎第一地区」7月26日(土) 15時-19時。 「模擬店、盆踊り、ゲームコーナー ほか」。 踊りの時間詳細不明。",
+    "source_urls": [],
+    "songs": [
+      {
+        "name": "まつり",
+        "confidence": "hint",
+        "source_count": 1
+      }
+    ],
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "品川区民まつり 西大井広場公園 盆踊り",
@@ -7290,9 +8977,38 @@ const EVENTS = [
     },
     "description": "品川区民まつり 西大井広場公園 盆踊りは、西大井広場公園で開かれる屋外型の盆踊り・夏の地域イベント。9月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025-09-27 17:40～18:30の開催記録。通常は9月のどこか1日。2026年日程は未確認。",
-    "youtube_evidence": [],
-    "songs": [],
-    "song_occurrence": null
+    "source_urls": [],
+    "songs": [
+      {
+        "name": "まつり",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      }
+    ],
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-09-27。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.6,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:まつり"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-09-27"
+    ]
   },
   {
     "name": "戸越八幡神社例大祭 奉納盆踊り大会",
@@ -7327,9 +9043,28 @@ const EVENTS = [
     },
     "description": "戸越八幡神社例大祭 奉納盆踊り大会は、豊町一丁目会館前を舞台にした祭礼・地域行事にあわせた踊りの場。9月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025-09-13（土）18:00-20:00開催記録。戸越銀座音頭ほか。",
-    "youtube_evidence": [],
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-09-13。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.68,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:例大祭",
+      "recurring_word:神社",
+      "recurring_word:盆踊り大会"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-09-13"
+    ]
   },
   {
     "name": "鮫洲入江広場公園 ゆり園盆踊り",
@@ -7364,9 +9099,23 @@ const EVENTS = [
     },
     "description": "鮫洲入江広場公園 ゆり園盆踊りは、鮫洲入江広場公園で開かれる屋外型の盆踊り・夏の地域イベント。6月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2026-06-06（土）14:30から晴盆の盆踊り枠。次回日程は未確認。",
-    "youtube_evidence": [],
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-06-06",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
+    "recurrence_reasons": [
+      "2026年開催済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-06-06"
+    ]
   },
   {
     "name": "地域のふれあい第37回盆踊り大会",
@@ -7401,9 +9150,29 @@ const EVENTS = [
     },
     "description": "地域のふれあい第37回盆踊り大会は、目黒区のJR目黒駅西口前で行われる盆踊り。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025-07-27（日）10:00-20:00頃。盆踊りは17:00から19:40頃まで。",
-    "youtube_evidence": [],
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_high",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "第37回・昨年開催: 2025-07-27。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 高",
+    "recurrence_score": 0.78,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "edition_number:37",
+      "edition_10plus",
+      "edition_30plus",
+      "recurring_word:盆踊り大会"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": 37,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-07-27"
+    ]
   },
   {
     "name": "中目黒盆踊り大会 2025",
@@ -7438,9 +9207,28 @@ const EVENTS = [
     },
     "description": "中目黒盆踊り大会 2025は、フナイリバ（目黒川船入場広場）で開かれる屋外型の盆踊り・夏の地域イベント。8月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025-08-30（土）〜31（日）17:00-21:00。盆踊りスタートは17:30。",
-    "youtube_evidence": [],
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-08-30。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.55,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:盆踊り大会"
+    ],
+    "recurrence_cautions": [
+      "イベント名に2025明記"
+    ],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-08-30"
+    ]
   },
   {
     "name": "盆踊り in 駒場東大",
@@ -7475,9 +9263,25 @@ const EVENTS = [
     },
     "description": "盆踊り in 駒場東大は、目黒区の東京大学駒場キャンパス 学生会館東で行われる盆踊り。11月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025-11-23（日）〜24（月振）各日14:00-15:30。23日は伝統曲とアニソン盆踊り、24日は世界盆踊り。",
-    "youtube_evidence": [],
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-11-23。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.56,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-11-23"
+    ]
   },
   {
     "name": "第90回 祐天寺み魂まつり こども盆踊り大会",
@@ -7512,9 +9316,43 @@ const EVENTS = [
     },
     "description": "第90回 祐天寺み魂まつり こども盆踊り大会は、祐天寺境内を舞台にした祭礼・地域行事にあわせた踊りの場。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025-07-16（水）〜18（金）17:30-21:00。初日は雨のため中止。",
-    "youtube_evidence": [],
-    "songs": [],
-    "song_occurrence": null
+    "source_urls": [],
+    "songs": [
+      {
+        "name": "まつり",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      }
+    ],
+    "public_status": "expected_high",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "第90回・昨年開催: 2025-07-16。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 高",
+    "recurrence_score": 0.86,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "edition_number:90",
+      "edition_10plus",
+      "edition_30plus",
+      "recurring_word:寺",
+      "recurring_word:盆踊り大会",
+      "recurring_word:まつり"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": 90,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-07-16"
+    ]
   },
   {
     "name": "自由が丘納涼盆踊り大会",
@@ -7552,90 +9390,191 @@ const EVENTS = [
       "7": "下旬"
     },
     "description": "自由が丘納涼盆踊り大会は、自由が丘駅前ロータリー 特設会場周辺で開かれる街なかの踊りイベント。7月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025-07-19〜2025-07-21 開催予定。東京盆踊りマップから確定日として反映。\n2025 [J3]\n7/19 - 21\n自由が丘駅前ロータリー 特設会場\n自由が丘商店街振興組合、自由が丘住区青少年委員会\n「自由が丘納涼盆踊り大会」7月19日(土)-21日(月祝) 18時-21時。\n大好評企画:踊りコンテスト!! 20日(日)。\n「新曲:RPG」\n雨天中止。\n\n[youtube_evidence] 2025実績証拠\n- 対象イベント: 自由が丘納涼盆踊り大会\n- 検出日付: 2025-07-21\n- 動画: https://www.youtube.com/watch?v=mvHqQY2ISJE\n- チャンネル: 和太鼓お祭りチャンネル\n- サムネイル: https://i.ytimg.com/vi/mvHqQY2ISJE/maxresdefault.jpg\n- 曲目候補: 北海盆唄, 炭坑節, 大東京音頭, ダンシング・ヒーロー, やる気で音頭, 自由が丘小唄, ホイップるん音頭, 東京音頭\n\n[youtube_evidence] YouTube shorts追加証拠\n- 対象イベント: 自由が丘納涼盆踊り大会\n- 検出日付: 未抽出\n- 動画数: 2\n- チャンネル: Exploring Japan with Zen\n- 動画: https://www.youtube.com/shorts/s2Kij5MpxrA / Exploring Japan with Zen / Jiyugaoka Bon Dance 2025-03    自由が丘 盆踊り 2025　自由が丘小唄　#shorts\n- 動画: https://www.youtube.com/shorts/ayI7aE9ixWI / Exploring Japan with Zen / Jiyugaoka Bon Dance 2025-04    自由が丘 盆踊り 2025　ダンシングヒーロー　#shorts\n\n[youtube_evidence] YouTube実績証拠\n- 対象イベント: 自由が丘納涼盆踊り大会\n- 検出日付: 2025-07-19, 2025-07-21\n- 動画数: 21\n- チャンネル: UCWz2tM7PAFGT7xSL5OAEllg, UCNF_5e3ZvziJueTWvTPATGw\n- 代表動画: https://www.youtube.com/watch?v=243ylKS374E / UCWz2tM7PAFGT7xSL5OAEllg / 【自由が丘納涼盆踊り 2025】「ダンシングヒーロー」- 荻野目洋子 #盆踊り Jiyugaoka Bon Dance Festival 2025.\n- 代表動画: https://www.youtube.com/watch?v=QMSJZCP5vHc / UCWz2tM7PAFGT7xSL5OAEllg / 【自由が丘納涼盆踊り 2025】「夜に駆ける」- YOASOBI / #盆踊り Jiyugaoka Bon Dance Festival 2025.\n- 代表動画: https://www.youtube.com/watch?v=thydoshsXhg / UCWz2tM7PAFGT7xSL5OAEllg / 【自由が丘納涼盆踊り 2025】「高嶺の花子さん」 back number / #盆踊り Jiyugaoka Bon Dance Festival 2025.\n- 代表動画: https://www.youtube.com/watch?v=Pv41de-FhVU / UCWz2tM7PAFGT7xSL5OAEllg / 【自由が丘納涼盆踊り 2025】アンコールは今年の新曲「RPG」- SEKAI NO OWARI / #盆踊り Jiyugaoka Bon Dance Festival 2025.\n- 代表動画: https://www.youtube.com/watch?v=avCtmdwChnU / UCNF_5e3ZvziJueTWvTPATGw / 「夜に駆ける」　2025年自由が丘納涼盆踊り大会3日目17　東京都目黒区\n- 追加動画: 16件 (詳細はapply結果JSON)\n- 曲目候補: 夜に駆ける, 大東京音頭, 炭坑節, 希望の轍, 高嶺の花子さん, RPG, やる気で音頭, ホイップるん音頭, 北海盆唄, 東京音頭, 自由が丘小唄\n\n[youtube_evidence] YouTube 2025公式URL確認済み証拠\n- 対象イベント: 自由が丘納涼盆踊り大会\n- 検出日付: 2025-07-20\n- 動画数: 1\n- 公式確認URL: https://www.jiyugaoka-abc.com/event/2025/bonodori/\n- 判断: 自由が丘公式ページで2025-07-19〜2025-07-21開催、YouTube検出日付2025-07-20が範囲内\n- 代表動画: https://www.youtube.com/watch?v=25REB1IJg3k / 2025-07-20 / Jiyugaoka Bon Odori Dance festival / 自由が丘盆踊り 2025",
-    "youtube_evidence": [
+    "detail": "2025-07-19〜2025-07-21 開催予定。東京盆踊りマップから確定日として反映。 2025 [J3] 7/19 - 21 自由が丘駅前ロータリー 特設会場 自由が丘商店街振興組合、自由が丘住区青少年委員会 「自由が丘納涼盆踊り大会」7月19日(土)-21日(月祝) 18時-21時。 大好評企画:踊りコンテスト!! 20日(日)。 「新曲:RPG」 雨天中止。",
+    "source_urls": [
       {
-        "label": "2025実績証拠",
-        "event_name": "自由が丘納涼盆踊り大会",
-        "detected_date": "2025-07-21",
-        "video_url": "https://www.youtube.com/watch?v=mvHqQY2ISJE",
-        "channel": "和太鼓お祭りチャンネル",
-        "thumbnail_url": "https://i.ytimg.com/vi/mvHqQY2ISJE/maxresdefault.jpg",
-        "songs": [
-          "北海盆唄",
-          "炭坑節",
-          "大東京音頭",
-          "ダンシング・ヒーロー",
-          "やる気で音頭",
-          "自由が丘小唄",
-          "ホイップるん音頭",
-          "東京音頭"
-        ]
-      },
-      {
-        "label": "YouTube shorts追加証拠",
-        "event_name": "自由が丘納涼盆踊り大会",
-        "detected_date": "未抽出",
-        "video_url": "https://www.youtube.com/shorts/ayI7aE9ixWI / Exploring Japan with Zen / Jiyugaoka Bon Dance 2025-04    自由が丘 盆踊り 2025　ダンシングヒーロー　#shorts",
-        "channel": "Exploring Japan with Zen",
-        "thumbnail_url": "",
-        "songs": []
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web"
       }
     ],
     "songs": [
       {
+        "name": "RPG",
+        "confidence": "confirmed",
+        "source_count": 2,
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
+      },
+      {
+        "name": "やる気で音頭",
+        "confidence": "confirmed",
+        "source_count": 2,
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
+      },
+      {
+        "name": "ダンシング・ヒーロー",
+        "confidence": "confirmed",
+        "source_count": 2,
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
+      },
+      {
+        "name": "ホイップるん音頭",
+        "confidence": "confirmed",
+        "source_count": 2,
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
+      },
+      {
+        "name": "北海盆唄",
+        "confidence": "confirmed",
+        "source_count": 2,
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
+      },
+      {
+        "name": "夜に駆ける",
+        "confidence": "confirmed",
+        "source_count": 2,
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
+      },
+      {
+        "name": "大東京音頭",
+        "confidence": "confirmed",
+        "source_count": 2,
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
+      },
+      {
+        "name": "希望の轍",
+        "confidence": "confirmed",
+        "source_count": 2,
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "confirmed",
+        "source_count": 2,
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "confirmed",
+        "source_count": 2,
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
+      },
+      {
+        "name": "自由が丘小唄",
+        "confidence": "confirmed",
+        "source_count": 2,
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
+      },
+      {
+        "name": "高嶺の花子さん",
+        "confidence": "confirmed",
+        "source_count": 2,
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 2,
+        "speaker_count": 2,
+        "setlist_complete": true
+      },
+      {
         "name": "ダンシングヒーロー",
         "confidence": "hint",
         "source_count": 1,
-        "probability": 24,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント",
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
         "evidence_count": 1,
         "speaker_count": 1,
         "setlist_complete": false
       },
       {
-        "name": "ホイップるん音頭",
+        "name": "特設会場周辺で開かれる街なかの踊り",
         "confidence": "hint",
-        "source_count": 1
-      },
-      {
-        "name": "大東京音頭",
-        "confidence": "hint",
-        "source_count": 1
-      },
-      {
-        "name": "東京音頭",
-        "confidence": "hint",
-        "source_count": 1
-      },
-      {
-        "name": "炭坑節",
-        "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       }
     ],
-    "song_occurrence": {
-      "occurrence_id": "24e0fbd90ad9ef80",
-      "event_name": "自由が丘納涼盆踊り大会",
-      "venue": "自由が丘駅前ロータリー 特設会場",
-      "year": 2025,
-      "songs": [
-        {
-          "name": "ダンシングヒーロー",
-          "probability": 24,
-          "basis": "past_evidence",
-          "basis_label": "2025年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.4
-          ],
-          "evidence_urls": []
-        }
-      ]
-    }
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-19〜2025-07-21。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.68,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:納涼",
+      "recurring_word:商店街",
+      "recurring_word:盆踊り大会"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-07-19",
+      "2025-07-21"
+    ]
   },
   {
     "name": "桜フェスタ商店街 みんなで盆踊り",
@@ -7670,9 +9609,35 @@ const EVENTS = [
     },
     "description": "桜フェスタ商店街 みんなで盆踊りは、都立大学駅西口緑道周辺で開かれる街なかの踊りイベント。3月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2026-03-29（日）15:15から演舞＆みんなで盆踊り。主催は富志美会（都立大学駅前商店会）。",
-    "youtube_evidence": [],
-    "songs": [],
-    "song_occurrence": null
+    "source_urls": [],
+    "songs": [
+      {
+        "name": "都立大学駅西口緑道周辺で開かれる街なかの踊り",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      }
+    ],
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-03-29",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
+    "recurrence_reasons": [
+      "2026年開催済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-03-29"
+    ]
   },
   {
     "name": "蒲田魅力向上委員会(蒲田西口商店街振興組合、蒲田西地区自治会連合会) 「蒲田国際フェスティバル2025 -世界が出会う下町フェス 」 9月6日(土)(初日) 。",
@@ -7706,10 +9671,32 @@ const EVENTS = [
       "9": "上旬"
     },
     "description": "蒲田魅力向上委員会(蒲田西口商店街振興組合、蒲田西地区自治会連合会) 蒲田国際フェスティバル2025 -世界が出会う下町フェスは、JR蒲田駅西口駅前広場(駅前会場)周辺で開かれる街なかの踊りイベント。9月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025 [K13]\n9/6。次回日程は未確認。",
-    "youtube_evidence": [],
+    "detail": "2025 [K13] 9/6。次回日程は未確認。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_low",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-09-06。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 低",
+    "recurrence_score": 0.54,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:自治会",
+      "recurring_word:商店街"
+    ],
+    "recurrence_cautions": [
+      "次回日程未確認",
+      "単発/企画色:フェス",
+      "イベント名に2025明記"
+    ],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-09-06"
+    ]
   },
   {
     "name": "森ヶ崎自治会",
@@ -7743,10 +9730,29 @@ const EVENTS = [
       "7": "下旬"
     },
     "description": "森ヶ崎自治会は、大森南4丁目公園で開かれる屋外型の盆踊り・夏の地域イベント。7月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025 [K11]\n7/29 - 30。次回日程は未確認。",
-    "youtube_evidence": [],
+    "detail": "2025 [K11] 7/29 - 30。次回日程は未確認。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-29。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.6,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:自治会"
+    ],
+    "recurrence_cautions": [
+      "次回日程未確認"
+    ],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-07-29"
+    ]
   },
   {
     "name": "大森南一丁目自治会「納涼盆踊り大会」7月21日(月)-22日(火) 18:30-20:00。",
@@ -7780,10 +9786,31 @@ const EVENTS = [
       "7": "下旬"
     },
     "description": "大森南一丁目自治会 納涼盆踊り大会は、大森南一丁目公園で開かれる屋外型の盆踊り・夏の地域イベント。7月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025 [K6]\n7/21 - 22。次回日程は未確認。",
-    "youtube_evidence": [],
+    "detail": "2025 [K6] 7/21 - 22。次回日程は未確認。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-21。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.68,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:納涼",
+      "recurring_word:自治会",
+      "recurring_word:盆踊り大会"
+    ],
+    "recurrence_cautions": [
+      "次回日程未確認"
+    ],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-07-21"
+    ]
   },
   {
     "name": "北糀谷町会 「納涼踊り大会」 7月24日(木)-25日(金) 18:30-20:30。",
@@ -7817,10 +9844,31 @@ const EVENTS = [
       "7": "下旬"
     },
     "description": "北糀谷町会 納涼踊り大会は、子安八幡神社を舞台にした祭礼・地域行事にあわせた踊りの場。7月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025 [K8]\n7/24 - 25。次回日程は未確認。",
-    "youtube_evidence": [],
+    "detail": "2025 [K8] 7/24 - 25。次回日程は未確認。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-24。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.68,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:納涼",
+      "recurring_word:町会",
+      "recurring_word:神社"
+    ],
+    "recurrence_cautions": [
+      "次回日程未確認"
+    ],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-07-24"
+    ]
   },
   {
     "name": "市野倉南町会 盆踊り 8月2日(土)-3日(日)18:30-21:00(4日は20:30まで)。",
@@ -7854,10 +9902,29 @@ const EVENTS = [
       "8": "上旬"
     },
     "description": "市野倉南町会 盆踊りは、市野倉南児童公園で開かれる屋外型の盆踊り・夏の地域イベント。8月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025 [K12]\n8/2 - 3。次回日程は未確認。",
-    "youtube_evidence": [],
+    "detail": "2025 [K12] 8/2 - 3。次回日程は未確認。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-08-02。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.6,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:町会"
+    ],
+    "recurrence_cautions": [
+      "次回日程未確認"
+    ],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-08-02"
+    ]
   },
   {
     "name": "東糀谷四・五・六町会 納涼盆踊り大会 7月18日(金)=19日(土) 18:30-20:30。",
@@ -7891,10 +9958,31 @@ const EVENTS = [
       "7": "中旬"
     },
     "description": "東糀谷四・五・六町会 納涼盆踊り大会は、大田区の旭児童遊園で行われる盆踊り。7月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025 [K5]\n7/18 - 19。次回日程は未確認。",
-    "youtube_evidence": [],
+    "detail": "2025 [K5] 7/18 - 19。次回日程は未確認。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-18。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.68,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:納涼",
+      "recurring_word:町会",
+      "recurring_word:盆踊り大会"
+    ],
+    "recurrence_cautions": [
+      "次回日程未確認"
+    ],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-07-18"
+    ]
   },
   {
     "name": "堤方東町会「盆踊り大会」 7月26日(土) 16:30-20:00。",
@@ -7928,10 +10016,31 @@ const EVENTS = [
       "7": "下旬"
     },
     "description": "堤方東町会 盆踊り大会は、池上第二小学校を会場にした地域密着の盆踊り・夏祭り。7月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025 [K9]\n7/26。次回日程は未確認。",
-    "youtube_evidence": [],
+    "detail": "2025 [K9] 7/26。次回日程は未確認。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-26。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.68,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:町会",
+      "recurring_word:盆踊り大会",
+      "recurring_word:夏祭り"
+    ],
+    "recurrence_cautions": [
+      "次回日程未確認"
+    ],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-07-26"
+    ]
   },
   {
     "name": "羽田青年連合会",
@@ -7965,10 +10074,29 @@ const EVENTS = [
       "7": "中旬"
     },
     "description": "羽田青年連合会は、羽田神社を舞台にした祭礼・地域行事にあわせた踊りの場。7月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025 [K4]\n7/13 - 15。次回日程は未確認。",
-    "youtube_evidence": [],
+    "detail": "2025 [K4] 7/13 - 15。次回日程は未確認。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-13。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.6,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:神社"
+    ],
+    "recurrence_cautions": [
+      "次回日程未確認"
+    ],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-07-13"
+    ]
   },
   {
     "name": "萩中町会・オーベルグランディオ萩中自治会・新宿東町会「盆踊り大会」 7月11日(金)-12日(土) 18:30-20:30。",
@@ -8002,10 +10130,32 @@ const EVENTS = [
       "7": "中旬"
     },
     "description": "萩中町会・オーベルグランディオ萩中自治会・新宿東町会 盆踊り大会は、萩中神社を舞台にした祭礼・地域行事にあわせた踊りの場。7月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025 [K3]\n7/11 - 12。次回日程は未確認。",
-    "youtube_evidence": [],
+    "detail": "2025 [K3] 7/11 - 12。次回日程は未確認。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-11。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.72,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:町会",
+      "recurring_word:自治会",
+      "recurring_word:神社",
+      "recurring_word:盆踊り大会"
+    ],
+    "recurrence_cautions": [
+      "次回日程未確認"
+    ],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-07-11"
+    ]
   },
   {
     "name": "西糀谷四丁目町会 盆踊り大会 7月21日(月祝)-22日(火) 19時ｰ21時。",
@@ -8039,10 +10189,31 @@ const EVENTS = [
       "7": "下旬"
     },
     "description": "西糀谷四丁目町会 盆踊り大会は、西仲天祖神社を舞台にした祭礼・地域行事にあわせた踊りの場。7月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025 [K7]\n7/21 - 22。次回日程は未確認。",
-    "youtube_evidence": [],
+    "detail": "2025 [K7] 7/21 - 22。次回日程は未確認。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-21。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.68,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:町会",
+      "recurring_word:神社",
+      "recurring_word:盆踊り大会"
+    ],
+    "recurrence_cautions": [
+      "次回日程未確認"
+    ],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-07-21"
+    ]
   },
   {
     "name": "西糀谷三丁目町会「納涼盆踊り大会」7月28日(月)-29日(火) 19:00-20:30。",
@@ -8076,10 +10247,31 @@ const EVENTS = [
       "7": "下旬"
     },
     "description": "西糀谷三丁目町会 納涼盆踊り大会は、西糀谷さざんか公園で開かれる屋外型の盆踊り・夏の地域イベント。7月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025 [K10]\n7/28 - 29。次回日程は未確認。",
-    "youtube_evidence": [],
+    "detail": "2025 [K10] 7/28 - 29。次回日程は未確認。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-28。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.68,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:納涼",
+      "recurring_word:町会",
+      "recurring_word:盆踊り大会"
+    ],
+    "recurrence_cautions": [
+      "次回日程未確認"
+    ],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-07-28"
+    ]
   },
   {
     "name": "馬込地区自治会連合会、馬籠商店会連合睦会",
@@ -8113,10 +10305,29 @@ const EVENTS = [
       "4": "上旬"
     },
     "description": "馬込地区自治会連合会、馬籠商店会連合睦会は、馬込桜並木公園、馬込桜並木通りで開かれる屋外型の盆踊り・夏の地域イベント。4月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025 [K1]\n4/6。次回日程は未確認。",
-    "youtube_evidence": [],
+    "detail": "2025 [K1] 4/6。次回日程は未確認。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-04-06。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.6,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:自治会"
+    ],
+    "recurrence_cautions": [
+      "次回日程未確認"
+    ],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-04-06"
+    ]
   },
   {
     "name": "砧町町会「納涼夏祭り大会」 7月19日(土)-20日(日)。",
@@ -8150,10 +10361,31 @@ const EVENTS = [
       "7": "中旬"
     },
     "description": "砧町町会 納涼夏祭り大会は、三峰公園で開かれる屋外型の盆踊り・夏の地域イベント。7月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025 [L6]\n7/19 - 20。次回日程は未確認。",
-    "youtube_evidence": [],
+    "detail": "2025 [L6] 7/19 - 20。次回日程は未確認。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-19。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.68,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:納涼",
+      "recurring_word:町会",
+      "recurring_word:夏祭り"
+    ],
+    "recurrence_cautions": [
+      "次回日程未確認"
+    ],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-07-19"
+    ]
   },
   {
     "name": "上北沢盆踊り実行委員会 「上北沢の納涼盆踊り」 8月25(土)。",
@@ -8187,10 +10419,30 @@ const EVENTS = [
       "8": "下旬"
     },
     "description": "上北沢盆踊り実行委員会 上北沢の納涼盆踊りは、上北沢小学校を会場にした地域密着の盆踊り・夏祭り。8月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025 [L36]\n8/23。次回日程は未確認。",
-    "youtube_evidence": [],
+    "detail": "2025 [L36] 8/23。次回日程は未確認。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-08-23。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.64,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:納涼",
+      "recurring_word:夏祭り"
+    ],
+    "recurrence_cautions": [
+      "次回日程未確認"
+    ],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-08-23"
+    ]
   },
   {
     "name": "下代田東町会 「下代田東子供祭り・納涼祭り』 7月19日(土)-20日(日) 16時-21時。",
@@ -8224,10 +10476,30 @@ const EVENTS = [
       "7": "中旬"
     },
     "description": "下代田東町会 下代田東子供祭り・納涼祭りは、世田谷区の下代田児童遊園で行われる踊りのある地域イベント。7月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025 [L4]\n7/19 - 20。次回日程は未確認。",
-    "youtube_evidence": [],
+    "detail": "2025 [L4] 7/19 - 20。次回日程は未確認。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-19。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.64,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:納涼",
+      "recurring_word:町会"
+    ],
+    "recurrence_cautions": [
+      "次回日程未確認"
+    ],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-07-19"
+    ]
   },
   {
     "name": "あずま通り商店街「下北沢盆踊り2025」 8月9日(土)-10日(日) 13:00-20:00。",
@@ -8261,10 +10533,42 @@ const EVENTS = [
       "8": "上旬"
     },
     "description": "あずま通り商店街 下北沢盆踊り2025は、下北沢駅東口周辺で開かれる街なかの踊りイベント。8月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025 [L30]\n8/9 - 10。次回日程は未確認。",
-    "youtube_evidence": [],
-    "songs": [],
-    "song_occurrence": null
+    "detail": "2025 [L30] 8/9 - 10。次回日程は未確認。",
+    "source_urls": [],
+    "songs": [
+      {
+        "name": "下北沢駅東口周辺で開かれる街なかの踊り",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      }
+    ],
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-08-09。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.55,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:商店街"
+    ],
+    "recurrence_cautions": [
+      "次回日程未確認",
+      "イベント名に2025明記"
+    ],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-08-09"
+    ]
   },
   {
     "name": "新町公民会 盆踊り大会 8月17日(日) 17:00- 。",
@@ -8298,10 +10602,30 @@ const EVENTS = [
       "8": "中旬"
     },
     "description": "新町公民会 盆踊り大会は、久富稲荷神社を舞台にした祭礼・地域行事にあわせた踊りの場。8月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025 [L35]\n8/17。次回日程は未確認。",
-    "youtube_evidence": [],
+    "detail": "2025 [L35] 8/17。次回日程は未確認。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-08-17。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.64,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:神社",
+      "recurring_word:盆踊り大会"
+    ],
+    "recurrence_cautions": [
+      "次回日程未確認"
+    ],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-08-17"
+    ]
   },
   {
     "name": "玉川町会盆おどり大会 7月25日(金)、26日(土)",
@@ -8335,10 +10659,29 @@ const EVENTS = [
       "7": "下旬"
     },
     "description": "玉川町会盆おどり大会は、二子玉川西地区ふれあい広場(246高架下)で開かれる屋外型の盆踊り・夏の地域イベント。7月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025 [L13]\n7/25 - 26。次回日程は未確認。",
-    "youtube_evidence": [],
+    "detail": "2025 [L13] 7/25 - 26。次回日程は未確認。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-25。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.6,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:町会"
+    ],
+    "recurrence_cautions": [
+      "次回日程未確認"
+    ],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-07-25"
+    ]
   },
   {
     "name": "芦花公園商店街振興組合 「芦花公園駅前盆踊り大会」 7月25日(金) 17:00-。",
@@ -8372,10 +10715,42 @@ const EVENTS = [
       "7": "下旬"
     },
     "description": "芦花公園商店街振興組合 芦花公園駅前盆踊り大会は、京王線芦花公園駅前ロータリー(南口)周辺で開かれる街なかの踊りイベント。7月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025 [L12]\n7/25。次回日程は未確認。",
-    "youtube_evidence": [],
-    "songs": [],
-    "song_occurrence": null
+    "detail": "2025 [L12] 7/25。次回日程は未確認。",
+    "source_urls": [],
+    "songs": [
+      {
+        "name": "周辺で開かれる街なかの踊り",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      }
+    ],
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-25。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.64,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:商店街",
+      "recurring_word:盆踊り大会"
+    ],
+    "recurrence_cautions": [
+      "次回日程未確認"
+    ],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-07-25"
+    ]
   },
   {
     "name": "親子盆踊り大会 7月12日(土) 17:00-19:20。",
@@ -8409,10 +10784,30 @@ const EVENTS = [
       "7": "中旬"
     },
     "description": "親子盆踊り大会は、八幡小学校を会場にした地域密着の盆踊り・夏祭り。7月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025 [L1]\n7/12。次回日程は未確認。",
-    "youtube_evidence": [],
+    "detail": "2025 [L1] 7/12。次回日程は未確認。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-12。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.64,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:盆踊り大会",
+      "recurring_word:夏祭り"
+    ],
+    "recurrence_cautions": [
+      "次回日程未確認"
+    ],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-07-12"
+    ]
   },
   {
     "name": "世田谷駅前商店街振興組合「納涼盆踊り大会 」",
@@ -8446,10 +10841,43 @@ const EVENTS = [
       "7": "下旬"
     },
     "description": "世田谷駅前商店街振興組合 納涼盆踊り大会は、円光院駐車場周辺で開かれる街なかの踊りイベント。7月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025 [L22]\n7/26 - 27。次回日程は未確認。",
-    "youtube_evidence": [],
-    "songs": [],
-    "song_occurrence": null
+    "detail": "2025 [L22] 7/26 - 27。次回日程は未確認。",
+    "source_urls": [],
+    "songs": [
+      {
+        "name": "円光院駐車場周辺で開かれる街なかの踊り",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      }
+    ],
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-26。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.68,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:納涼",
+      "recurring_word:商店街",
+      "recurring_word:盆踊り大会"
+    ],
+    "recurrence_cautions": [
+      "次回日程未確認"
+    ],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-07-26"
+    ]
   },
   {
     "name": "船橋会 盆踊り 8月17日(日)。",
@@ -8483,10 +10911,40 @@ const EVENTS = [
       "8": "中旬"
     },
     "description": "船橋会 盆踊りは、千歳船橋駅前広場周辺で開かれる街なかの踊りイベント。8月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025 [L34]\n8/17。次回日程は未確認。",
-    "youtube_evidence": [],
-    "songs": [],
-    "song_occurrence": null
+    "detail": "2025 [L34] 8/17。次回日程は未確認。",
+    "source_urls": [],
+    "songs": [
+      {
+        "name": "千歳船橋駅前広場周辺で開かれる街なかの踊り",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      }
+    ],
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-08-17。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.56,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward"
+    ],
+    "recurrence_cautions": [
+      "次回日程未確認"
+    ],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-08-17"
+    ]
   },
   {
     "name": "大蔵本村睦会 ｢盆踊り大会｣ 7月20日(日)午後7時-(午後6時-子ども盆踊り)",
@@ -8520,10 +10978,30 @@ const EVENTS = [
       "7": "中旬"
     },
     "description": "大蔵本村睦会 ｢盆踊り大会｣は、大蔵氷川神社を舞台にした祭礼・地域行事にあわせた踊りの場。7月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025 [L10]\n7/20。次回日程は未確認。",
-    "youtube_evidence": [],
+    "detail": "2025 [L10] 7/20。次回日程は未確認。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-20。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.64,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:神社",
+      "recurring_word:盆踊り大会"
+    ],
+    "recurrence_cautions": [
+      "次回日程未確認"
+    ],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-07-20"
+    ]
   },
   {
     "name": "奥沢交和会",
@@ -8557,10 +11035,29 @@ const EVENTS = [
       "7": "下旬"
     },
     "description": "奥沢交和会は、奥沢小学校を会場にした地域密着の盆踊り・夏祭り。7月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025 [L19]\n7/26 - 27。次回日程は未確認。",
-    "youtube_evidence": [],
+    "detail": "2025 [L19] 7/26 - 27。次回日程は未確認。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-26。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.6,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:夏祭り"
+    ],
+    "recurrence_cautions": [
+      "次回日程未確認"
+    ],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-07-26"
+    ]
   },
   {
     "name": "宇奈根町会 盆踊り大会 7月19日(土)-20日(日)。",
@@ -8594,10 +11091,31 @@ const EVENTS = [
       "7": "中旬"
     },
     "description": "宇奈根町会 盆踊り大会は、宇奈根氷川神社を舞台にした祭礼・地域行事にあわせた踊りの場。7月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025 [L9]\n7/19 - 20。次回日程は未確認。",
-    "youtube_evidence": [],
+    "detail": "2025 [L9] 7/19 - 20。次回日程は未確認。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-19。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.68,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:町会",
+      "recurring_word:神社",
+      "recurring_word:盆踊り大会"
+    ],
+    "recurrence_cautions": [
+      "次回日程未確認"
+    ],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-07-19"
+    ]
   },
   {
     "name": "「喜多見盆踊り大会」 7月26日(土)-27日(日)。",
@@ -8631,10 +11149,41 @@ const EVENTS = [
       "7": "下旬"
     },
     "description": "喜多見盆踊り大会は、小田急線喜多見駅前 南口広場周辺で開かれる街なかの踊りイベント。7月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025 [L21]\n7/26 - 27。次回日程は未確認。",
-    "youtube_evidence": [],
-    "songs": [],
-    "song_occurrence": null
+    "detail": "2025 [L21] 7/26 - 27。次回日程は未確認。",
+    "source_urls": [],
+    "songs": [
+      {
+        "name": "南口広場周辺で開かれる街なかの踊り",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      }
+    ],
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-26。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.6,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:盆踊り大会"
+    ],
+    "recurrence_cautions": [
+      "次回日程未確認"
+    ],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-07-26"
+    ]
   },
   {
     "name": "祖師谷商店街振興組合",
@@ -8668,10 +11217,29 @@ const EVENTS = [
       "7": "下旬"
     },
     "description": "祖師谷商店街振興組合は、小田急線祖師ヶ谷大蔵駅前広場周辺で開かれる街なかの踊りイベント。7月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025 [L18]\n7/26。次回日程は未確認。",
-    "youtube_evidence": [],
+    "detail": "2025 [L18] 7/26。次回日程は未確認。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-26。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.6,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:商店街"
+    ],
+    "recurrence_cautions": [
+      "次回日程未確認"
+    ],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-07-26"
+    ]
   },
   {
     "name": "「希望ヶ丘団地夏まつり」 7月19日(土)-20日(日)。",
@@ -8705,10 +11273,41 @@ const EVENTS = [
       "7": "中旬"
     },
     "description": "希望ヶ丘団地夏まつりは、世田谷区の希望ヶ丘団地 テニスコートで行われる踊りのある地域イベント。7月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025 [L8]\n7/19 - 20。次回日程は未確認。",
-    "youtube_evidence": [],
-    "songs": [],
-    "song_occurrence": null
+    "detail": "2025 [L8] 7/19 - 20。次回日程は未確認。",
+    "source_urls": [],
+    "songs": [
+      {
+        "name": "まつり",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      }
+    ],
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-19。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.6,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:まつり"
+    ],
+    "recurrence_cautions": [
+      "次回日程未確認"
+    ],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-07-19"
+    ]
   },
   {
     "name": "千歳台廻沢地区盆踊り 7月19日(土)-20日(日)。",
@@ -8742,10 +11341,29 @@ const EVENTS = [
       "7": "中旬"
     },
     "description": "千歳台廻沢地区盆踊りは、廻沢稲荷神社を舞台にした祭礼・地域行事にあわせた踊りの場。7月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025 [L5]\n7/19 - 20。次回日程は未確認。",
-    "youtube_evidence": [],
+    "detail": "2025 [L5] 7/19 - 20。次回日程は未確認。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-19。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.6,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:神社"
+    ],
+    "recurrence_cautions": [
+      "次回日程未確認"
+    ],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-07-19"
+    ]
   },
   {
     "name": "「成城学園 盆踊り大会」 7月26日(土) 17:30-20:00。",
@@ -8779,10 +11397,29 @@ const EVENTS = [
       "7": "下旬"
     },
     "description": "成城学園 盆踊り大会は、成城大学9号館前広場で開かれる屋外型の盆踊り・夏の地域イベント。7月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025 [L14]\n7/26。次回日程は未確認。",
-    "youtube_evidence": [],
+    "detail": "2025 [L14] 7/26。次回日程は未確認。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-26。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.6,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:盆踊り大会"
+    ],
+    "recurrence_cautions": [
+      "次回日程未確認"
+    ],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-07-26"
+    ]
   },
   {
     "name": "大蔵東部町会「親子納涼盆踊り大会」7月26日(土)午後6時30分-午後9時。",
@@ -8816,10 +11453,32 @@ const EVENTS = [
       "7": "下旬"
     },
     "description": "大蔵東部町会 親子納涼盆踊り大会は、横根稲荷神社を舞台にした祭礼・地域行事にあわせた踊りの場。7月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025 [L16]\n7/26。次回日程は未確認。",
-    "youtube_evidence": [],
+    "detail": "2025 [L16] 7/26。次回日程は未確認。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-26。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.72,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:納涼",
+      "recurring_word:町会",
+      "recurring_word:神社",
+      "recurring_word:盆踊り大会"
+    ],
+    "recurrence_cautions": [
+      "次回日程未確認"
+    ],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-07-26"
+    ]
   },
   {
     "name": "盆踊り(池尻地区)8月1日(金)-2日(土)。",
@@ -8853,10 +11512,29 @@ const EVENTS = [
       "8": "上旬"
     },
     "description": "盆踊り(池尻地区)は、池尻稲荷神社を舞台にした祭礼・地域行事にあわせた踊りの場。8月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025 [L23]\n8/1 - 2。次回日程は未確認。",
-    "youtube_evidence": [],
+    "detail": "2025 [L23] 8/1 - 2。次回日程は未確認。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-08-01。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.6,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:神社"
+    ],
+    "recurrence_cautions": [
+      "次回日程未確認"
+    ],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-08-01"
+    ]
   },
   {
     "name": "瀬田商店会 瀬田納涼盆踊り 8月16日(土)ｰ17日(日)。",
@@ -8890,10 +11568,30 @@ const EVENTS = [
       "8": "中旬"
     },
     "description": "瀬田商店会 瀬田納涼盆踊りは、瀬田中学校を会場にした地域密着の盆踊り・夏祭り。8月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025 [L33]\n8/16 - 17。次回日程は未確認。",
-    "youtube_evidence": [],
+    "detail": "2025 [L33] 8/16 - 17。次回日程は未確認。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-08-16。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.64,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:納涼",
+      "recurring_word:夏祭り"
+    ],
+    "recurrence_cautions": [
+      "次回日程未確認"
+    ],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-08-16"
+    ]
   },
   {
     "name": "納涼盆踊り大会 7月19日(土)-20日(日)。",
@@ -8927,10 +11625,30 @@ const EVENTS = [
       "7": "中旬"
     },
     "description": "納涼盆踊り大会は、玉川中町公園で開かれる屋外型の盆踊り・夏の地域イベント。7月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025 [L7]\n7/19 - 20。次回日程は未確認。",
-    "youtube_evidence": [],
+    "detail": "2025 [L7] 7/19 - 20。次回日程は未確認。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-19。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.64,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:納涼",
+      "recurring_word:盆踊り大会"
+    ],
+    "recurrence_cautions": [
+      "次回日程未確認"
+    ],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-07-19"
+    ]
   },
   {
     "name": "法人格砧町自治会「納涼盆踊り大会」8月1日(金)-2日(土) 午後6時-8時30分。",
@@ -8964,10 +11682,31 @@ const EVENTS = [
       "8": "上旬"
     },
     "description": "法人格砧町自治会 納涼盆踊り大会は、世田谷区の砧八丁目児童遊園で行われる盆踊り。8月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025 [L24]\n8/1 - 2。次回日程は未確認。",
-    "youtube_evidence": [],
+    "detail": "2025 [L24] 8/1 - 2。次回日程は未確認。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-08-01。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.68,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:納涼",
+      "recurring_word:自治会",
+      "recurring_word:盆踊り大会"
+    ],
+    "recurrence_cautions": [
+      "次回日程未確認"
+    ],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-08-01"
+    ]
   },
   {
     "name": "砧小学校「第38回砧っ子夏祭り」7月19日(土)午後3時-7時30分。",
@@ -9001,10 +11740,32 @@ const EVENTS = [
       "7": "中旬"
     },
     "description": "砧小学校 第38回砧っ子夏祭りは、砧小学校を会場にした地域密着の盆踊り・夏祭り。7月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025 [L3]\n7/19。次回日程は未確認。",
-    "youtube_evidence": [],
+    "detail": "2025 [L3] 7/19。次回日程は未確認。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_high",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "第38回・昨年開催: 2025-07-19。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 高",
+    "recurrence_score": 0.78,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "edition_number:38",
+      "edition_10plus",
+      "edition_30plus",
+      "recurring_word:夏祭り"
+    ],
+    "recurrence_cautions": [
+      "次回日程未確認"
+    ],
+    "edition_number": 38,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-07-19"
+    ]
   },
   {
     "name": "祖師谷昇進会商店街(振)盆踊り 7月18日(金)-19日(土)。",
@@ -9038,10 +11799,41 @@ const EVENTS = [
       "7": "中旬"
     },
     "description": "祖師谷昇進会商店街(振)盆踊りは、祖師谷神明社周辺で開かれる街なかの踊りイベント。7月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025 [L2]\n7/18 - 19。次回日程は未確認。",
-    "youtube_evidence": [],
-    "songs": [],
-    "song_occurrence": null
+    "detail": "2025 [L2] 7/18 - 19。次回日程は未確認。",
+    "source_urls": [],
+    "songs": [
+      {
+        "name": "祖師谷神明社周辺で開かれる街なかの踊り",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      }
+    ],
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-18。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.6,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:商店街"
+    ],
+    "recurrence_cautions": [
+      "次回日程未確認"
+    ],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-07-18"
+    ]
   },
   {
     "name": "羽根木公園の盆踊り",
@@ -9076,8 +11868,24 @@ const EVENTS = [
     },
     "description": null,
     "detail": null,
-    "youtube_evidence": [],
-    "songs": []
+    "source_urls": [],
+    "songs": [],
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "野毛町会 納涼盆踊り大会 7月26日(土)-27日(日)",
@@ -9111,10 +11919,32 @@ const EVENTS = [
       "7": "下旬"
     },
     "description": "野毛町会 納涼盆踊り大会は、野毛六所神社を舞台にした祭礼・地域行事にあわせた踊りの場。7月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025 [L20]\n7/26 - 27。次回日程は未確認。",
-    "youtube_evidence": [],
+    "detail": "2025 [L20] 7/26 - 27。次回日程は未確認。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-26。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.72,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:納涼",
+      "recurring_word:町会",
+      "recurring_word:神社",
+      "recurring_word:盆踊り大会"
+    ],
+    "recurrence_cautions": [
+      "次回日程未確認"
+    ],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-07-26"
+    ]
   },
   {
     "name": "鎌田協和会 鎌田納涼盆踊り 7月26日(土) 18:30-。",
@@ -9148,10 +11978,30 @@ const EVENTS = [
       "7": "下旬"
     },
     "description": "鎌田協和会 鎌田納涼盆踊りは、鎌田天神社を舞台にした祭礼・地域行事にあわせた踊りの場。7月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025 [L17]\n7/26。次回日程は未確認。",
-    "youtube_evidence": [],
+    "detail": "2025 [L17] 7/26。次回日程は未確認。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-26。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.64,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:納涼",
+      "recurring_word:神社"
+    ],
+    "recurrence_cautions": [
+      "次回日程未確認"
+    ],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-07-26"
+    ]
   },
   {
     "name": "岡本自治会「盆踊り大会」 8月2日(土)-3日(日) 19:00-21:00 長圓寺境内",
@@ -9185,10 +12035,31 @@ const EVENTS = [
       "8": "上旬"
     },
     "description": "岡本自治会 盆踊り大会は、長円寺を舞台にした祭礼・地域行事にあわせた踊りの場。8月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025 [L27]\n8/2 - 3。次回日程は未確認。",
-    "youtube_evidence": [],
+    "detail": "2025 [L27] 8/2 - 3。次回日程は未確認。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-08-02。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.68,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:自治会",
+      "recurring_word:寺",
+      "recurring_word:盆踊り大会"
+    ],
+    "recurrence_cautions": [
+      "次回日程未確認"
+    ],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-08-02"
+    ]
   },
   {
     "name": "納涼盆踊り大会 8月3日(日)-4日(月) 19:00-。",
@@ -9222,10 +12093,30 @@ const EVENTS = [
       "8": "上旬"
     },
     "description": "納涼盆踊り大会は、駒沢緑泉公園で開かれる屋外型の盆踊り・夏の地域イベント。8月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025 [L28]\n8/3 - 4。次回日程は未確認。",
-    "youtube_evidence": [],
+    "detail": "2025 [L28] 8/3 - 4。次回日程は未確認。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-08-03。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.64,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:納涼",
+      "recurring_word:盆踊り大会"
+    ],
+    "recurrence_cautions": [
+      "次回日程未確認"
+    ],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-08-03"
+    ]
   },
   {
     "name": "駒澤大学同窓会東京都支部・営友会",
@@ -9259,10 +12150,28 @@ const EVENTS = [
       "8": "上旬"
     },
     "description": "駒澤大学同窓会東京都支部・営友会は、世田谷区の駒澤大学 駒沢キャンパスで行われる踊りのある地域イベント。8月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025 [L32]\n8/10。次回日程は未確認。",
-    "youtube_evidence": [],
+    "detail": "2025 [L32] 8/10。次回日程は未確認。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-08-10。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.56,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward"
+    ],
+    "recurrence_cautions": [
+      "次回日程未確認"
+    ],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-08-10"
+    ]
   },
   {
     "name": "第70回 恵比寿駅前盆踊り大会",
@@ -9300,10 +12209,30 @@ const EVENTS = [
       "7": "下旬"
     },
     "description": null,
-    "detail": "[youtube_evidence] こと（Claude Code）2025裏取り反映\n- 対象イベント: 第70回 恵比寿駅前盆踊り大会\n- 開催日: 2025-07-25〜2025-07-26\n- 会場: JR恵比寿駅西口広場\n- 根拠URL: https://ebisubondance.jp/about/\n- 判断: こと裏取りで公式サイトを確認。第70回、2025-07-25〜2025-07-26、17:30〜21:30。",
-    "youtube_evidence": [],
+    "detail": "",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "第70回・昨年開催: 2025-07-25〜2025-07-26。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.73,
+    "recurrence_reasons": [
+      "venue_present",
+      "tokyo_23ward",
+      "edition_number:70",
+      "edition_10plus",
+      "edition_30plus",
+      "recurring_word:盆踊り大会"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": 70,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-07-25",
+      "2025-07-26"
+    ]
   },
   {
     "name": "第6回 渋谷盆踊り",
@@ -9337,20 +12266,38 @@ const EVENTS = [
       "8": "上旬"
     },
     "description": null,
-    "detail": "[youtube_evidence] YouTube 2025公式URL確認済み証拠\n- 対象イベント: 第6回 渋谷盆踊り\n- 検出日付: 2025-08-02\n- 動画数: 1\n- 公式確認URL: https://tokyofesta.com/23ku/24135/\n- 判断: tokyofestaで第6回渋谷盆踊り2025の開催を確認。盆踊りは18:00〜21:30、YouTube動画日付と一致。\n- YouTube検出元URL: https://shibuyadogenzaka.com/?p=6827\n- 動画: https://www.youtube.com/watch?v=CTA9El6Hmfg / 2025-08-02 / Shibuya Bon Odori Dance festival 2025  /  渋谷 盆踊り 2025",
-    "youtube_evidence": [
+    "detail": "",
+    "source_urls": [
       {
-        "label": "YouTube 2025公式URL確認済み証拠",
-        "event_name": "第6回 渋谷盆踊り",
-        "detected_date": "2025-08-02",
-        "video_url": "https://www.youtube.com/watch?v=CTA9El6Hmfg / 2025-08-02 / Shibuya Bon Odori Dance festival 2025  /  渋谷 盆踊り 2025",
-        "channel": "",
-        "thumbnail_url": "",
-        "songs": []
+        "label": "公式告知あり",
+        "url": "https://shibuyadogenzaka.com/?p=6827",
+        "kind": "official"
+      },
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web"
       }
     ],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "第6回・昨年開催: 2025-08-02。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.61,
+    "recurrence_reasons": [
+      "venue_present",
+      "tokyo_23ward",
+      "edition_number:6"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": 6,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-08-02",
+      "2025-08-02"
+    ]
   },
   {
     "name": "アースデイ東京2025 イマジン盆踊り部",
@@ -9384,20 +12331,41 @@ const EVENTS = [
       "4": "中旬"
     },
     "description": null,
-    "detail": "[youtube_evidence] YouTube 2025公式URL確認済み証拠\n- 対象イベント: アースデイ東京2025 イマジン盆踊り部\n- 検出日付: 2025-04-19\n- 動画数: 1\n- 公式確認URL: https://www.earthday-tokyo.org/2025/04/01/14597\n- 判断: アースデイ東京公式ページでイマジン盆踊り部の出演を確認。イベント本体は2025-04-19〜20、盆踊り出演日は動画由来で4/19扱い。\n- YouTube検出元URL: https://www.earthday-tokyo.org/\n- 動画: https://www.youtube.com/watch?v=ZzDkJ2cX_F0 / 2025-04-19 / 【アースデイ東京で盆踊り👘イマジン盆踊り部  IMAGINE BONODORIBU】The Bon Dance Band［Earth Day Tokyo 2025］2025.4.19 @代々木公園",
-    "youtube_evidence": [
+    "detail": "",
+    "source_urls": [
       {
-        "label": "YouTube 2025公式URL確認済み証拠",
-        "event_name": "アースデイ東京2025 イマジン盆踊り部",
-        "detected_date": "2025-04-19",
-        "video_url": "https://www.youtube.com/watch?v=ZzDkJ2cX_F0 / 2025-04-19 / 【アースデイ東京で盆踊り👘イマジン盆踊り部  IMAGINE BONODORIBU】The Bon Dance Band［Earth Day Tokyo 2025］2025.4.19 @代々木公園",
-        "channel": "",
-        "thumbnail_url": "",
-        "songs": []
+        "label": "公式告知あり",
+        "url": "https://www.earthday-tokyo.org/",
+        "kind": "official"
+      },
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web"
       }
     ],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_low",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-04-19。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 低",
+    "recurrence_score": 0.46,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward"
+    ],
+    "recurrence_cautions": [
+      "単発/企画色:アースデイ",
+      "イベント名に2025明記"
+    ],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-04-19",
+      "2025-04-19"
+    ]
   },
   {
     "name": "グリーン アイルランド フェスティバル 2026 アイリッシュ盆踊り",
@@ -9432,9 +12400,23 @@ const EVENTS = [
     },
     "description": "グリーン アイルランド フェスティバル 2026 アイリッシュ盆踊りは、代々木公園野外ステージで開かれる屋外型の盆踊り・夏の地域イベント。3月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2026-03-15（日）13:30からアイリッシュ盆踊り約20分。イベント全体は3/14-15に代々木公園イベント広場で開催。",
-    "youtube_evidence": [],
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-03-15",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
+    "recurrence_reasons": [
+      "2026年開催済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-03-15"
+    ]
   },
   {
     "name": "GMOシブヤエンタメ祭 × JAME盆踊り",
@@ -9474,10 +12456,34 @@ const EVENTS = [
       "6": "上旬"
     },
     "description": null,
-    "detail": "[youtube_evidence] YouTube 2025公式URL確認済み証拠\n- 対象イベント: GMOシブヤエンタメ祭 × JAME盆踊り\n- 検出日付: 2025-05-30, 2025-06-01\n- 動画数: 4\n- 公式確認URL: https://tokyofesta.com/23ku/23185/\n- 判断: 東京フェスタでGMOシブヤエンタメ祭 × JAME盆踊りの2025-05-31〜2025-06-01開催を確認。SHIBUYA MIYASHITA PARK BON DANCE 2025とは主催・性格が別。",
-    "youtube_evidence": [],
+    "detail": "",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web"
+      }
+    ],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_low",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-05-31〜2025-06-01。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 低",
+    "recurrence_score": 0.46,
+    "recurrence_reasons": [
+      "venue_present",
+      "tokyo_23ward"
+    ],
+    "recurrence_cautions": [
+      "単発/企画色:シブヤエンタメ祭"
+    ],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-05-31",
+      "2025-06-01"
+    ]
   },
   {
     "name": "SHIBUYA MIYASHITA PARK BON DANCE 2025",
@@ -9515,31 +12521,92 @@ const EVENTS = [
       "9": "下旬"
     },
     "description": null,
-    "detail": "[youtube_evidence] YouTube 2025公式URL確認済み証拠\n- 対象イベント: SHIBUYA MIYASHITA PARK BON DANCE 2025\n- 検出日付: 2025-09-27, 2025-09-28\n- 動画数: 10\n- 公式確認URL: https://miyashita-bondance.jp/2025/\n- 判断: 公式アーカイブで2025年9月27日(土)、28日(日) 13:00〜21:00、MIYASHITA PARK4階 渋谷区立宮下公園 芝生ひろば開催を確認。5月/6月のGMOシブヤエンタメ祭系動画とは分離。\n- 動画: https://www.youtube.com/watch?v=dZp8xUrphEE / 2025-09-27 / [4K]🇯🇵 渋谷でultra soul！B'zで盆踊り！激混み会場で外国人も踊りまくる！！ / SHIBUYA MIYASHITA PARK BON DANCE 2025\n- 動画: https://www.youtube.com/watch?v=rCIetLTYOqQ / 2025-09-28 / [4K]🇯🇵 渋谷で盆ジョヴィ 2025 ダンシングヒーロー｜YOASOBI｜Bon Jovi  他 外国人に人気の盆踊り / SHIBUYA MIYASHITA PARK BON DANCE\n- 動画: https://www.youtube.com/watch?v=6tYsIFg2Pc8 / 2025-09-27 / [4K]🇯🇵 渋谷で阿波踊り！飛鳥連が素晴らしい演舞を披露！外国人も一緒になって阿波踊り！2025 / Awaodori at SHIBUYA MIYASHITA PARK BON DANCE\n- 動画: https://www.youtube.com/watch?v=tqN1_Zn1XGQ / 2025-09-27 / ”大盛況”「ギザギザハートの子守唄」盆踊り 【渋谷宮下パーク BON DANCE 2025】チェッカーズ SHIBUYA MIYASHITA PARK BON DANCE 2025\n- 動画: https://www.youtube.com/watch?v=aICldK2fWJs / 2025-09-27 / 【渋谷宮下パーク BON DANCE 2025】「東京音頭」 盆踊り / SHIBUYA MIYASHITA PARK BON DANCE 2025\n- 動画: https://www.youtube.com/watch?v=G33WqNK76dk / 2025-09-27 / 【渋谷宮下パーク BON DANCE 2025】「ultra soul」B’z 盆踊り / SHIBUYA MIYASHITA PARK BON DANCE 2025\n- 動画: https://www.youtube.com/watch?v=t64KZSUomf4 / 2025-09-28 / 渋谷宮下パークBON DANCE 2025 / 治安の悪い渋谷の公園も今は昔!! 人が集まる一大スポットに!! / SHIBUYA MIYASHITA PARK BON DANCE 2025\n- 動画: https://www.youtube.com/watch?v=1sf97ulUVcs / 2025-09-28 / Dancing Hero aka Eat You Up @ Shibuya Miyashita Park Bon Dance 2025 in Tokyo Japan 4kHDR\n- 動画: https://www.youtube.com/watch?v=SbCL22zc48s / 2025-09-28 / The Ground Was Shaking! B'z ultra soul @ Shibuya Miyashita Park Bon Dance 2025 in Tokyo 4kHDR\n- 動画: https://www.youtube.com/watch?v=AqTZJck5-FA / 2025-09-28 / This Summer's Final Bon Dance Festival! @ Shibuya Miyashita Park 2025 in Tokyo Japan 4kHDR",
-    "youtube_evidence": [
+    "detail": "",
+    "source_urls": [
       {
-        "label": "YouTube 2025公式URL確認済み証拠",
-        "event_name": "SHIBUYA MIYASHITA PARK BON DANCE 2025",
-        "detected_date": "2025-09-27, 2025-09-28",
-        "video_url": "https://www.youtube.com/watch?v=AqTZJck5-FA / 2025-09-28 / This Summer's Final Bon Dance Festival! @ Shibuya Miyashita Park 2025 in Tokyo Japan 4kHDR",
-        "channel": "",
-        "thumbnail_url": "",
-        "songs": []
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web"
       }
     ],
     "songs": [
       {
         "name": "ダンシングヒーロー",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "外国人も一緒になって阿波踊り",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       },
       {
         "name": "東京音頭",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "激混み会場で外国人も踊り",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "阿波踊り",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       }
     ],
-    "song_occurrence": null
+    "public_status": "expected_low",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-09-27〜2025-09-28。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 低",
+    "recurrence_score": 0.46,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward"
+    ],
+    "recurrence_cautions": [
+      "単発/企画色:BON DANCE",
+      "イベント名に2025明記"
+    ],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-09-27",
+      "2025-09-28"
+    ]
   },
   {
     "name": "SHIBUYA MIYASHITA PARK BON DANCE 2026",
@@ -9573,10 +12640,26 @@ const EVENTS = [
       "9": "中旬"
     },
     "description": "渋谷・宮下公園の芝生の上で開かれる現代型の盆踊り。買い物帰りにふらっと輪に入れる、渋谷らしいボンダンス。",
-    "detail": null,
-    "youtube_evidence": [],
+    "detail": "",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "新井町会連合会・中野通り桜まつり実行委員会「中野通り桜まつり」",
@@ -9610,10 +12693,36 @@ const EVENTS = [
       "3": "下旬"
     },
     "description": "新井町会連合会・中野通り桜まつり実行委員会 中野通り桜まつりは、新井薬師公園で開かれる屋外型の盆踊り・夏の地域イベント。3月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2026 [N1]\n3/28。次回日程は未確認。",
-    "youtube_evidence": [],
-    "songs": [],
-    "song_occurrence": null
+    "detail": "2026 [N1] 3/28。次回日程は未確認。",
+    "source_urls": [],
+    "songs": [
+      {
+        "name": "まつり",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      }
+    ],
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-03-28",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
+    "recurrence_reasons": [
+      "2026年開催済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-03-28"
+    ]
   },
   {
     "name": "「第34回ふるさと千川 まつり」 6月5日(金)-6日(土) 17:30-(開場)。",
@@ -9651,10 +12760,25 @@ const EVENTS = [
       "6": "上旬"
     },
     "description": "第34回ふるさと千川 まつりは、ふるさと千川ひろば(千川小学校校庭跡地)を会場にした地域密着の盆踊り・夏祭り。6月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2026-06-05〜2026-06-06 開催予定。東京盆踊りマップから確定日として反映。\n2026 [P2]\n6/5 - 6\nふるさと千川ひろば(千川小学校校庭跡地)\n「第34回ふるさと千川 まつり」 6月5日(金)-6日(土) 17:30-(開場)。\n・5日(金) 18:30-21:00。\n・6日(土) 18:30-20:30。\n(6/5夜掲)",
-    "youtube_evidence": [],
+    "detail": "2026-06-05〜2026-06-06 開催予定。東京盆踊りマップから確定日として反映。 2026 [P2] 6/5 - 6 ふるさと千川ひろば(千川小学校校庭跡地) 「第34回ふるさと千川 まつり」 6月5日(金)-6日(土) 17:30-(開場)。 ・5日(金) 18:30-21:00。 ・6日(土) 18:30-20:30。 (6/5夜掲)",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-06-05〜2026-06-06",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
+    "recurrence_reasons": [
+      "2026年開催済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": 34,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-06-05",
+      "2026-06-06"
+    ]
   },
   {
     "name": "「白鳥おどりin池袋」 4月25日(土) 11:00-20:00。",
@@ -9688,10 +12812,36 @@ const EVENTS = [
       "4": "下旬"
     },
     "description": "白鳥おどりin池袋は、中池袋公園で開かれる屋外型の盆踊り・夏の地域イベント。4月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2026 [P1]\n4/25。次回日程は未確認。",
-    "youtube_evidence": [],
-    "songs": [],
-    "song_occurrence": null
+    "detail": "2026 [P1] 4/25。次回日程は未確認。",
+    "source_urls": [],
+    "songs": [
+      {
+        "name": "白鳥おどり",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      }
+    ],
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-04-25",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
+    "recurrence_reasons": [
+      "2026年開催済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-04-25"
+    ]
   },
   {
     "name": "第15回 鴨台盆踊り",
@@ -9729,10 +12879,28 @@ const EVENTS = [
       "7": "上旬"
     },
     "description": null,
-    "detail": "[youtube_evidence] こと（Claude Code）2025裏取り反映\n- 対象イベント: 第15回 鴨台盆踊り\n- 開催日: 2025-07-04〜2025-07-05\n- 会場: 大正大学\n- 根拠URL: https://www.tais.ac.jp/guide/latest_news/20250627/92922/\n- 判断: こと裏取りで大正大学公式とPR TIMESを確認。第15回、2025-07-04〜2025-07-05、大正大学開催。\n- 補助URL: https://prtimes.jp/main/html/rd/p/000000346.000054969.html",
-    "youtube_evidence": [],
+    "detail": "",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "第15回・昨年開催: 2025-07-04〜2025-07-05。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.65,
+    "recurrence_reasons": [
+      "venue_present",
+      "tokyo_23ward",
+      "edition_number:15",
+      "edition_10plus"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": 15,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-07-04",
+      "2025-07-05"
+    ]
   },
   {
     "name": "飛鳥山公園盆踊り会（有志サークル）",
@@ -9768,10 +12936,55 @@ const EVENTS = [
       "4": "中旬"
     },
     "description": "盆踊り好きの有志が季節を問わず集う、飛鳥山公園の檜舞台での踊りの会。夏を待たずに踊りたい人の集まる場。",
-    "detail": "[youtube_evidence] YouTube 2025公式URL確認済み証拠\n- 対象イベント: 飛鳥山公園盆踊り会（有志サークル）\n- 検出日付: 2025-04-19\n- 動画数: 8\n- 公式確認URL: https://kumin.news/kita/articles/1057902\n- 判断: 北区民ニュースで2025-04-19の飛鳥山公園盆踊り会記事を確認。YouTube複数動画の日付・会場・イベント名とも一致。",
-    "youtube_evidence": [],
-    "songs": [],
-    "song_occurrence": null
+    "detail": "",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web"
+      }
+    ],
+    "songs": [
+      {
+        "name": "好きの有志が季節",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "飛鳥山公園の檜舞台での踊り",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      }
+    ],
+    "public_status": "expected_low",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-04-19。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 低",
+    "recurrence_score": 0.51,
+    "recurrence_reasons": [
+      "venue_present",
+      "tokyo_23ward"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-04-19",
+      "2025-04-19"
+    ]
   },
   {
     "name": "飛鳥山夏祭り～お城で盆おどり大作戦～",
@@ -9805,10 +13018,26 @@ const EVENTS = [
       "8": "中旬"
     },
     "description": "飛鳥山公園150周年記念から始まった夏祭り企画。お城の遊具で知られる公園で、ステージや出店とともに盆踊りを楽しめる。",
-    "detail": null,
-    "youtube_evidence": [],
+    "detail": "",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": []
   },
   {
     "name": "飛鳥山盆踊り",
@@ -9842,10 +13071,72 @@ const EVENTS = [
       "7": "上旬"
     },
     "description": "桜で名高い飛鳥山公園で例年7月上旬に開かれる盆踊り。地域ステージやキッチンカーも並ぶ、北区の夏の名物。",
-    "detail": "[youtube_2025_date_backfill] 開催日補正\n- 補正日: 2025-07-05\n- 根拠URL: https://asukayamabonodori.tokyo/\n- URL内一致: 2025.07.05, 7月5日, 7/5\n- YouTube検出日付: 2025-07-05, 2025-12-20\n- 対象動画数: 4\n\n[youtube_evidence] YouTube実績証拠\n- 対象イベント: 飛鳥山盆踊り\n- 検出日付: 2025-07-05\n- 動画数: 4\n- チャンネル: UCWz2tM7PAFGT7xSL5OAEllg\n- 代表動画: https://www.youtube.com/watch?v=WMp9Dm3p4bI / UCWz2tM7PAFGT7xSL5OAEllg / 【飛鳥山盆踊り 2025】「ジャンボリミッキー」で盆踊り  / Asukayama Park Bon Dance Festival　#盆踊り\n- 代表動画: https://www.youtube.com/watch?v=hwD8ELI2iPo / UCWz2tM7PAFGT7xSL5OAEllg / 【飛鳥山盆踊り 2025】「ジンギスカン」で盆踊り Dschinghis Khan / Asukayama Park Bon Dance Festival　#盆踊り\n- 代表動画: https://www.youtube.com/watch?v=zJ1nyw5-Y4A / UCWz2tM7PAFGT7xSL5OAEllg / 【飛鳥山盆踊り 2025】「盆ギリ恋歌」サザンオールスターズ で盆踊り / Asukayama Park Bon Dance Festival　盆踊り\n- 代表動画: https://www.youtube.com/watch?v=v_eLkKWnyA8 / UCWz2tM7PAFGT7xSL5OAEllg / 【飛鳥山盆踊り 2025】生歌「好きになった人」で盆踊り 都はるみ / Asukayama Park Bon Dance Festival　盆踊り\n- 曲目候補: 未抽出",
-    "youtube_evidence": [],
-    "songs": [],
-    "song_occurrence": null
+    "detail": "[youtube_2025_date_backfill] 開催日補正 - 補正日: 2025-07-05 - 根拠URL: - URL内一致: 2025.07.05, 7月5日, 7/5 - YouTube検出日付: 2025-07-05, 2025-12-20 - 対象動画数: 4",
+    "source_urls": [],
+    "songs": [
+      {
+        "name": "ジャンボリミッキー",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "ジンギスカン",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "好きになった人",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      },
+      {
+        "name": "盆ギリ恋歌",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      }
+    ],
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-07-05。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.6,
+    "recurrence_reasons": [
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:例年"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-07-05"
+    ]
   },
   {
     "name": "第11回 にっぽり炭坑節まつり",
@@ -9883,16 +13174,41 @@ const EVENTS = [
       "9": "中旬"
     },
     "description": null,
-    "detail": "[youtube_evidence] こと（Claude Code）2025裏取り反映\n- 対象イベント: 第11回 にっぽり炭坑節まつり\n- 開催日: 2025-09-14〜2025-09-15\n- 会場: JR日暮里駅前広場\n- 根拠URL: https://www.city.arakawa.tokyo.jp/a022/event/eventkouenmeigi/nipporitannkoubushimaturir791415.html\n- 判断: こと裏取りで荒川区公式と日本盆踊り協会サイトを確認。第11回、2025-09-14〜2025-09-15。\n- 補助URL: https://bon-odori.net/nippori-tankoubushi2025/",
-    "youtube_evidence": [],
+    "detail": "",
+    "source_urls": [],
     "songs": [
       {
         "name": "炭坑節",
         "confidence": "hint",
-        "source_count": 1
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
       }
     ],
-    "song_occurrence": null
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "第11回・昨年開催: 2025-09-14〜2025-09-15。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.69,
+    "recurrence_reasons": [
+      "venue_present",
+      "tokyo_23ward",
+      "edition_number:11",
+      "edition_10plus",
+      "recurring_word:まつり"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": 11,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-09-14",
+      "2025-09-15"
+    ]
   },
   {
     "name": "第60回あらかわ青年大会 アリストック",
@@ -9927,13 +13243,13 @@ const EVENTS = [
     },
     "description": "第60回あらかわ青年大会 アリストックは、あらかわ遊園アリスの広場で開かれる屋外型の盆踊り・夏の地域イベント。3月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2026-03-15（日）13:15から納涼太鼓 大場連が盆踊り3曲。曲目は東京音頭、炭坑節、荒川音頭。",
-    "youtube_evidence": [],
+    "source_urls": [],
     "songs": [
       {
         "name": "東京音頭",
         "confidence": "hint",
         "source_count": 1,
-        "probability": 40,
+        "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント",
         "evidence_count": 1,
@@ -9944,7 +13260,7 @@ const EVENTS = [
         "name": "炭坑節",
         "confidence": "hint",
         "source_count": 1,
-        "probability": 40,
+        "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント",
         "evidence_count": 1,
@@ -9955,7 +13271,7 @@ const EVENTS = [
         "name": "荒川音頭",
         "confidence": "hint",
         "source_count": 1,
-        "probability": 40,
+        "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント",
         "evidence_count": 1,
@@ -9963,53 +13279,21 @@ const EVENTS = [
         "setlist_complete": false
       }
     ],
-    "song_occurrence": {
-      "occurrence_id": "a9bc9561db35d024",
-      "event_name": "第60回あらかわ青年大会 アリストック",
-      "venue": "あらかわ遊園アリスの広場",
-      "year": 2026,
-      "songs": [
-        {
-          "name": "東京音頭",
-          "probability": 40,
-          "basis": "current_hint",
-          "basis_label": "今年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.4
-          ],
-          "evidence_urls": []
-        },
-        {
-          "name": "炭坑節",
-          "probability": 40,
-          "basis": "current_hint",
-          "basis_label": "今年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.4
-          ],
-          "evidence_urls": []
-        },
-        {
-          "name": "荒川音頭",
-          "probability": 40,
-          "basis": "current_hint",
-          "basis_label": "今年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.4
-          ],
-          "evidence_urls": []
-        }
-      ]
-    }
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-03-15",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
+    "recurrence_reasons": [
+      "2026年開催済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": 60,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-03-15"
+    ]
   },
   {
     "name": "荒川盆踊り会 初踊り",
@@ -10044,9 +13328,23 @@ const EVENTS = [
     },
     "description": "荒川盆踊り会 初踊りは、真土公園で開かれる屋外型の盆踊り・夏の地域イベント。2月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2026-02-22（日）13:00-17:00開催記録。協賛は鞆絵太鼓。",
-    "youtube_evidence": [],
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-02-22",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
+    "recurrence_reasons": [
+      "2026年開催済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-02-22"
+    ]
   },
   {
     "name": "西綾瀬町会 夏祭り盆踊り大会",
@@ -10080,10 +13378,41 @@ const EVENTS = [
       "6": "下旬"
     },
     "description": "西綾瀬町会 夏祭り盆踊り大会は、五反野コミュニティ公園で開かれる屋外型の盆踊り・夏の地域イベント。6月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "足立区の令和7年度盆踊り・まつり情報。17時開始。\n\n[retrospective_harvest] 追加証拠\n- 検出名: 足立区の盆踊りで最も早い盆踊り\n- 検出日付: 2026-06-20\n- 出典: https://x.com/Dk725aNpscBwpEa/status/2065082668396827008",
-    "youtube_evidence": [],
-    "songs": [],
-    "song_occurrence": null
+    "detail": "足立区の令和7年度盆踊り・まつり情報。17時開始。 [retrospective_harvest] 追加証拠 - 検出名: 足立区の盆踊りで最も早い盆踊り - 検出日付: 2026-06-20 - 出典:",
+    "source_urls": [],
+    "songs": [
+      {
+        "name": "まつり",
+        "confidence": "hint",
+        "source_count": 1,
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント",
+        "evidence_count": 1,
+        "speaker_count": 1,
+        "setlist_complete": false
+      }
+    ],
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-06-21。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.67,
+    "recurrence_reasons": [
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:町会",
+      "recurring_word:盆踊り大会",
+      "recurring_word:夏祭り",
+      "recurring_word:まつり"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": 2025,
+    "last_seen_dates": [
+      "2025-06-21"
+    ]
   },
   {
     "name": "「葛飾菖蒲まつり 水元公園会場 民踊パレード 5月31日(日)。",
@@ -10117,10 +13446,24 @@ const EVENTS = [
       "5": "下旬"
     },
     "description": "葛飾菖蒲まつり 水元公園会場 民踊パレードは、水元公園内はなしょうぶ園口で開かれる屋外型の盆踊り・夏の地域イベント。5月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2026 [V1]\n5/31。次回日程は未確認。",
-    "youtube_evidence": [],
+    "detail": "2026 [V1] 5/31。次回日程は未確認。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-05-31",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
+    "recurrence_reasons": [
+      "2026年開催済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-05-31"
+    ]
   },
   {
     "name": "倉雀会(くらすずめかい)",
@@ -10154,10 +13497,24 @@ const EVENTS = [
       "2": "上旬"
     },
     "description": "倉雀会(くらすずめかい)は、江戸川区の北葛西コミュニティ会館で行われる踊りのある地域イベント。2月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2026 [W1]\n2/8。次回日程は未確認。",
-    "youtube_evidence": [],
+    "detail": "2026 [W1] 2/8。次回日程は未確認。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-02-08",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
+    "recurrence_reasons": [
+      "2026年開催済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-02-08"
+    ]
   },
   {
     "name": "好踊会「第4回 好踊会フェア」 3月29日(日) 13:00-16:00。",
@@ -10191,9 +13548,23 @@ const EVENTS = [
       "3": "下旬"
     },
     "description": "好踊会 第4回 好踊会フェアは、鹿骨中学校を会場にした地域密着の盆踊り・夏祭り。3月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2026 [W2]\n3/29。次回日程は未確認。",
-    "youtube_evidence": [],
+    "detail": "2026 [W2] 3/29。次回日程は未確認。",
+    "source_urls": [],
     "songs": [],
-    "song_occurrence": null
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-03-29",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
+    "recurrence_reasons": [
+      "2026年開催済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": 4,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-03-29"
+    ]
   }
 ];

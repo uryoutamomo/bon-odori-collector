@@ -53,6 +53,7 @@ DEFAULT_PREDICTION_PARAMS = {
         "regular_advance_mention": 0.55,
         "complete_numbered_video": 0.95,
         "partial_impression": 0.70,
+        "curated_public_song": 0.80,
         "public_event_hint": 0.40,
         "unknown": 0.50,
     },
@@ -244,6 +245,29 @@ def evidence_role(observed_at=None, event_start=None, kind=None):
     return "prediction"
 
 
+def evidence_view_for_year(evidence_items, occ_year):
+    """Return evidence as seen from a given occurrence year.
+
+    過去年の証拠は当年予測の「根拠付き継承」として role=prediction に降格し
+    inherited フラグを付ける（前年実績を確定情報に見せないため。較正の
+    result 教師にも混入させない）。未来年の証拠は当年には使わない。
+    """
+    view = []
+    for ev in evidence_items:
+        year = ev.get("year")
+        if year is None or year > occ_year:
+            continue
+        if year < occ_year:
+            inherited = dict(ev)
+            inherited["role"] = "prediction"
+            inherited["inherited"] = True
+            inherited["source_year"] = year
+            view.append(inherited)
+        else:
+            view.append(ev)
+    return view
+
+
 def prediction_probability(evidence_items, target_year, params=None):
     """Return probability and label for one event-song relation.
 
@@ -428,8 +452,11 @@ def occurrences_from_public_events(events):
         if not event_date:
             continue
         for song in event.get("songs") or []:
-            if "probability" in song or song.get("basis"):
-                continue
+            reliability_key = (
+                "official_setlist"
+                if song.get("confidence") == "confirmed"
+                else "curated_public_song"
+            )
             _add_evidence(
                 grouped,
                 event_name,
@@ -441,7 +468,7 @@ def occurrences_from_public_events(events):
                 text=text,
                 setlist_complete=False,
                 source="events_public",
-                reliability_key="public_event_hint",
+                reliability_key=reliability_key,
             )
     return grouped
 
@@ -506,13 +533,35 @@ def build_occurrences(target_year=None, generated_at=None):
         occurrences_from_public_events(events),
         occurrences_from_manual_evidence(manual),
     )
-    occurrences = {}
+
+    # シリーズ（イベント×会場を年抜きで正規化したキー）単位に証拠を横断集約し、
+    # 前年実績を当年 occurrence の予測根拠として継承できるようにする。
+    # occurrence の単位（occ_key）は従来どおり年込みで保持する。
+    series_song_evidence = defaultdict(list)
+    series_all_songs = defaultdict(set)
+    occ_units = {}
     for (event_name, venue, year, song_name), evidence in grouped.items():
+        series = (normalize_name(event_name), normalize_name(venue))
+        series_song_evidence[(series, song_name)].extend(evidence)
+        series_all_songs[series].add(song_name)
         occ_key = occurrence_id(event_name, venue, year)
-        occurrence = occurrences.setdefault(occ_key, {
-            "occurrence_id": occ_key,
+        unit = occ_units.setdefault(occ_key, {
             "event_name": event_name,
             "venue": venue,
+            "year": year,
+            "series": series,
+            "current_songs": set(),
+        })
+        unit["current_songs"].add(song_name)
+
+    occurrences = {}
+    for occ_key, unit in occ_units.items():
+        year = unit["year"]
+        series = unit["series"]
+        occurrence = occurrences.setdefault(occ_key, {
+            "occurrence_id": occ_key,
+            "event_name": unit["event_name"],
+            "venue": unit["venue"],
             "year": year,
             "predictions": {
                 "existence": empty_prediction_block("existence"),
@@ -521,15 +570,25 @@ def build_occurrences(target_year=None, generated_at=None):
             "observations": [],
             "songs": {},
         })
-        speakers = sorted({speaker_key(ev.get("speaker")) for ev in evidence})
-        occurrence["songs"][song_name] = {
-            "song_name": song_name,
-            "evidence_count": len(evidence),
-            "speaker_count": len(speakers),
-            "speakers": speakers,
-            "evidence": sorted(evidence, key=lambda ev: (ev.get("date") or "", ev.get("url") or "")),
-            "prediction": prediction_probability(evidence, target_year, params=params),
-        }
+        # 当年（予測対象年）の occurrence には同シリーズの過去曲も継承候補として載せる。
+        # 過去 occurrence は実績なので、その年に観測された曲だけを保持する。
+        if year == target_year:
+            song_names = set(unit["current_songs"]) | series_all_songs[series]
+        else:
+            song_names = set(unit["current_songs"])
+        for song_name in song_names:
+            view = evidence_view_for_year(series_song_evidence[(series, song_name)], year)
+            if not view:
+                continue
+            speakers = sorted({speaker_key(ev.get("speaker")) for ev in view})
+            occurrence["songs"][song_name] = {
+                "song_name": song_name,
+                "evidence_count": len(view),
+                "speaker_count": len(speakers),
+                "speakers": speakers,
+                "evidence": sorted(view, key=lambda ev: (ev.get("date") or "", ev.get("url") or "")),
+                "prediction": prediction_probability(view, year, params=params),
+            }
 
     rows = []
     for occurrence in occurrences.values():

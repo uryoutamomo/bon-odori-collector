@@ -2,7 +2,14 @@ import unittest
 from pathlib import Path
 from tempfile import TemporaryDirectory
 
-from export_public_events import fill_youtube_evidence_defaults, parse_youtube_evidence, write_public_js
+from export_public_events import (
+    apply_public_recurrence_metadata,
+    extract_public_source_urls,
+    fill_youtube_evidence_defaults,
+    parse_youtube_evidence,
+    public_detail_text,
+    write_public_js,
+)
 
 
 class ExportPublicEventsTest(unittest.TestCase):
@@ -40,6 +47,66 @@ class ExportPublicEventsTest(unittest.TestCase):
 
         self.assertEqual(filled[0]["event_name"], "丸の内de盆踊り")
         self.assertEqual(filled[0]["detected_date"], "2025-07-25")
+
+    def test_public_detail_text_hides_internal_youtube_evidence(self):
+        detail = "\n".join([
+            "2026-07-29〜2026-08-01 開催予定。公式発表を確認。",
+            "[youtube_evidence] YouTube 2025公式URL確認済み証拠",
+            "- 対象イベント: 築地本願寺納涼盆踊り大会",
+            "- 公式確認URL: https://tokyofesta.com/23ku/23763/",
+            "- 動画: https://www.youtube.com/watch?v=abc",
+        ])
+
+        public = public_detail_text(detail)
+
+        self.assertIn("2026-07-29〜2026-08-01 開催予定。公式発表を確認。", public)
+        self.assertNotIn("[youtube_evidence]", public)
+        self.assertNotIn("YouTube", public)
+        self.assertNotIn("https://", public)
+
+    def test_extract_public_source_urls_keeps_official_urls_not_video_urls(self):
+        detail = "\n".join([
+            "2026発表 https://t.co/abc",
+            "[youtube_evidence] YouTube 2025公式URL確認済み証拠",
+            "- 公式確認URL: https://tokyofesta.com/23ku/23763/",
+            "- YouTube検出元URL: https://tsukijihongwanji.jp/news/10279/",
+            "- 動画: https://www.youtube.com/watch?v=abc",
+        ])
+
+        sources = extract_public_source_urls(detail)
+
+        self.assertEqual(
+            sources,
+            [
+                {"label": "公式告知あり", "url": "https://tsukijihongwanji.jp/news/10279/", "kind": "official"},
+                {"label": "告知HPあり", "url": "", "kind": "web"},
+                {"label": "告知投稿あり", "url": "", "kind": "post"},
+            ],
+        )
+
+    def test_extract_public_source_urls_collapses_multiple_notice_urls(self):
+        detail = "\n".join([
+            "発表 https://x.com/example/status/1",
+            "続報 https://twitter.com/example/status/2",
+            "短縮 https://t.co/abc",
+        ])
+
+        self.assertEqual(extract_public_source_urls(detail), [{"label": "告知投稿あり", "url": "", "kind": "post"}])
+
+    def test_apply_public_recurrence_metadata_adds_production_fields(self):
+        rows = apply_public_recurrence_metadata([{
+            "name": "第70回 恵比寿駅前盆踊り大会",
+            "venue": "JR恵比寿駅西口広場",
+            "area": "渋谷区",
+            "date": "2025-07-25",
+            "date_end": "2025-07-26",
+            "status": "開催終了",
+        }])
+
+        self.assertEqual(rows[0]["public_category"], "recurring_last_year")
+        self.assertGreaterEqual(rows[0]["recurrence_score"], 0.55)
+        self.assertEqual(rows[0]["edition_number"], 70)
+        self.assertEqual(rows[0]["last_seen_year"], 2025)
 
     def test_write_public_js(self):
         with TemporaryDirectory() as tmp:

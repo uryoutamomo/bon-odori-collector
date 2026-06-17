@@ -1,0 +1,171 @@
+{
+  "generated_by": "koto (Claude Code) 一次分類",
+  "generated_at": "2026-06-16",
+  "note": "おと依頼『2026イベント増加のAI分類』への一次分類。内田さんレビュー前の暫定。データ所見: retrospective_harvest の kind=event は会場名にX断片が混入し（例『今日は錦糸公園』『in上野恩賜公園』）、根拠1件が多い。確度が高いのは event_date_update_candidates の数件。残りは会場名クレンジング/名寄せが昇格の前提。",
+  "uchida_review": {
+    "reviewed_at": "2026-06-17",
+    "reviewed_by": "内田さん",
+    "decision": "1（即動かせる3件の昇格）と2（23区外2件の除外）を確定。hold群（B:山王/築地, C:上野/隅田4件, E:雑多）は会場クレンジング/名寄せ/名称特定が前提のため今回は据え置き。",
+    "confirmed_promote_or_create": [
+      "第34回ふるさと千川まつり｜create_new｜豊島区・ふるさと千川ひろば（千川小学校校庭跡地）・2026-06-05〜06",
+      "すみだ沖縄まつり｜promote_existing｜既存『すみだ沖縄まつり（current 2026-05-09）』に終了日2026-05-10を追記",
+      "飛鳥山公園盆踊り会（有志サークル・舞ことり）｜promote_existing｜回替わり型・開催回ごとに複数occurrenceで既存シリーズへ追記"
+    ],
+    "confirmed_exclude": [
+      "笠間納涼盆踊り花火大会2026（茨城・23区外・1投稿から日付誤分裂）",
+      "藤沢七夕まつり / 潮風を感じながら踊る盆踊り / 写楽盆踊り 等（神奈川・横浜・徳島＝23区外）"
+    ],
+    "next": "確定分をおとへ dry-run plan → apply で昇格依頼。除外2件は再提案不要（23区外）。"
+  },
+  "data_quality_findings": [
+    "event_date_update_candidates(12件)のうち6件は『笠間納涼盆踊り花火大会2026(茨城)』が1本のX花火カレンダー投稿から複数日付に誤分裂。23区外かつ重複なので除外推奨。",
+    "retrospective_harvest の会場名が未クレンジング（テキスト断片がvenueに入る）。23区内/外判定と名寄せを通さないとC昇格は危険。",
+    "score上位の大半は kind=song（曲名）。イベント昇格の母数は kind=event に絞る必要。"
+  ],
+  "classification": [
+    {
+      "label": "A",
+      "event_name": "第34回ふるさと千川まつり",
+      "venue": "ふるさと千川ひろば（千川小学校校庭跡地）",
+      "area": "豊島区",
+      "date": "2026-06-05",
+      "date_end": "2026-06-06",
+      "existing_event_match": null,
+      "evidence_url": "https://drive.google.com/file/d/1rwFa5mbPoCsekMR4OpwAacVZxXgoF-on/view",
+      "evidence_summary": "東京盆踊りマップ構造化行。event_name_exact+venue_exact+schedule_word。23区内・日付確定・盆踊り。",
+      "recommended_action": "create_new"
+    },
+    {
+      "label": "A",
+      "event_name": "すみだ沖縄まつり",
+      "venue": "錦糸公園",
+      "area": "墨田区",
+      "date": "2026-05-09",
+      "date_end": "2026-05-10",
+      "existing_event_match": "すみだ沖縄まつり（既存・current 2026-05-09）",
+      "evidence_url": "https://so-matsuri.com/",
+      "evidence_summary": "東京盆踊りマップ構造化行。両日とも盆踊り枠（梅美会/すみだ輪おどり）明記。既存に終了日2026-05-10を追記。",
+      "recommended_action": "promote_existing"
+    },
+    {
+      "label": "B",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル・舞ことり）",
+      "venue": "飛鳥山公園（飛鳥舞台）",
+      "area": "北区",
+      "date": "2026-06-07",
+      "date_end": null,
+      "existing_event_match": "飛鳥山公園盆踊り会（有志サークル）（既存）",
+      "evidence_url": "https://drive.google.com/file/d/1TCszOxBRwSzQF6Ke4jxVhaKzFEoAVJkN/view",
+      "evidence_summary": "練習会系の複数開催（3/14・4/26・5/24・6/7…）。回替わり型として既存シリーズへ複数occurrenceで追記。単一の確定日ではなく開催回ごとに紐付け要。",
+      "recommended_action": "promote_existing"
+    },
+    {
+      "label": "B",
+      "event_name": "日枝神社（山王）の盆踊り",
+      "venue": "赤坂日枝神社 / 山王パークタワー公開空地",
+      "area": "千代田区",
+      "date": "2026-06-15",
+      "date_end": null,
+      "existing_event_match": "山王音頭と民踊大会（既存）の可能性",
+      "evidence_url": null,
+      "evidence_summary": "『日枝神社の盆踊り（名称未確定）』。既存『山王音頭と民踊大会』と同一会場・同時期。名寄せで既存照合できれば昇格。要イベント名確認。",
+      "recommended_action": "hold"
+    },
+    {
+      "label": "B",
+      "event_name": "築地本願寺納涼盆踊り大会（関連投稿）",
+      "venue": "築地本願寺 / 波除神社",
+      "area": "中央区",
+      "date": null,
+      "date_end": null,
+      "existing_event_match": "築地本願寺納涼盆踊り大会（既存）",
+      "evidence_url": null,
+      "evidence_summary": "『ここから築地本願寺盆踊り』。会場が波除神社表記だが築地本願寺の定番盆踊りに紐づく可能性。2026開催日の裏取り要。",
+      "recommended_action": "hold"
+    },
+    {
+      "label": "C",
+      "event_name": "ビールと浴衣de盆踊り（上野公園）",
+      "venue": "上野公園",
+      "area": "台東区",
+      "date": "2026-07-03",
+      "date_end": null,
+      "existing_event_match": null,
+      "evidence_url": null,
+      "evidence_summary": "23区内・2026日付・盆踊り性あり。ただしX断片由来で根拠2件・会場が公園名のみ。新規候補だが会場/主催の裏取り要。",
+      "recommended_action": "hold"
+    },
+    {
+      "label": "C",
+      "event_name": "TOKYO盆ダンス（上野恩賜公園）",
+      "venue": "上野恩賜公園",
+      "area": "台東区",
+      "date": "2026-06-26",
+      "date_end": null,
+      "existing_event_match": null,
+      "evidence_url": null,
+      "evidence_summary": "23区内・盆踊り(BON DANCE)性あり。根拠1件・会場表記『in上野恩賜公園』のクレンジング要。",
+      "recommended_action": "hold"
+    },
+    {
+      "label": "C",
+      "event_name": "アニソン盆踊り（上野恩賜公園）",
+      "venue": "上野恩賜公園",
+      "area": "台東区",
+      "date": "2026-06-13",
+      "date_end": null,
+      "existing_event_match": "神田明神アニソン盆踊りとは別会場の可能性",
+      "evidence_url": null,
+      "evidence_summary": "ジャンル特化(アニソン)。上野開催か神田明神かの切り分け要。根拠1件。",
+      "recommended_action": "hold"
+    },
+    {
+      "label": "C",
+      "event_name": "隅田公園の盆踊り（名称未確定）",
+      "venue": "隅田公園",
+      "area": "台東区",
+      "date": "2026-07-07",
+      "date_end": null,
+      "existing_event_match": null,
+      "evidence_url": null,
+      "evidence_summary": "23区内・盆踊り性あり。名称未確定・根拠1件。会場/主催の裏取り要。",
+      "recommended_action": "hold"
+    },
+    {
+      "label": "D",
+      "event_name": "笠間納涼盆踊り花火大会2026",
+      "venue": "笠間大池公園",
+      "area": "茨城県笠間市",
+      "date": null,
+      "date_end": null,
+      "existing_event_match": null,
+      "evidence_url": "https://x.com/hitachi773X/status/2064326426661421255",
+      "evidence_summary": "23区外。さらに1本の花火カレンダー投稿から6つの異なる日付に誤分裂。除外。",
+      "recommended_action": "exclude"
+    },
+    {
+      "label": "D",
+      "event_name": "藤沢七夕まつり / 潮風を感じながら踊る盆踊り / 写楽盆踊り 等",
+      "venue": "辻堂・パシフィコ横浜・徳島駅前 等",
+      "area": "23区外（神奈川・横浜・徳島）",
+      "date": null,
+      "date_end": null,
+      "existing_event_match": null,
+      "evidence_url": null,
+      "evidence_summary": "いずれも23区外。原則対象外。",
+      "recommended_action": "exclude"
+    },
+    {
+      "label": "E",
+      "event_name": "1夏祭り / 真證寺夏祭り / さくら公園盆踊り大会 / 三日市小学校の盆踊り / 南新町納涼ふるさとまつり 等",
+      "venue": "上野公園・真證寺・さくら公園・三日市小学校・谷口ふれあい広場 等",
+      "area": "不明・要特定",
+      "date": null,
+      "date_end": null,
+      "existing_event_match": null,
+      "evidence_url": null,
+      "evidence_summary": "名称・会場・所在地が不明瞭、または会場名にX断片が混入。23区内外の判定と名寄せが先。要調査。",
+      "recommended_action": "hold"
+    }
+  ]
+}
