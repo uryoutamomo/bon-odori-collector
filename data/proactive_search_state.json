@@ -793,7 +793,404 @@
       "last_status": "unconfirmed",
       "confirmed_count": 0,
       "checked_count": 1
+    },
+    "六本木ヒルズアリーナ|六本木ヒルズ盆踊り": {
+      "venue": "六本木ヒルズアリーナ",
+      "event_name": "六本木ヒルズ盆踊り",
+      "months": [
+        8
+      ],
+      "last_checked_at": "2026-06-17T17:45:34.753740+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "円光院駐車場|世田谷駅前商店街振興組合「納涼盆踊り大会」": {
+      "venue": "円光院駐車場",
+      "event_name": "世田谷駅前商店街振興組合「納涼盆踊り大会 」",
+      "months": [
+        7
+      ],
+      "last_checked_at": "2026-06-17T17:45:34.753740+00:00",
+      "last_status": "confirmed",
+      "confirmed_count": 1,
+      "checked_count": 1
+    },
+    "大蔵氷川神社|大蔵本村睦会｢盆踊り大会｣": {
+      "venue": "大蔵氷川神社",
+      "event_name": "大蔵本村睦会 ｢盆踊り大会｣",
+      "months": [
+        7
+      ],
+      "last_checked_at": "2026-06-17T17:45:34.753740+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "山王パークタワー公開空地|山王音頭と民踊大会": {
+      "venue": "山王パークタワー公開空地",
+      "event_name": "山王音頭と民踊大会",
+      "months": [
+        6
+      ],
+      "last_checked_at": "2026-06-17T17:45:34.753740+00:00",
+      "last_status": "confirmed",
+      "confirmed_count": 1,
+      "checked_count": 1
+    },
+    "東本願寺（浅草）|東本願寺（浅草）": {
+      "venue": "東本願寺（浅草）",
+      "event_name": "東本願寺（浅草）",
+      "months": [
+        8
+      ],
+      "last_checked_at": "2026-06-17T17:45:34.753740+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "松戸中央公園|松戸中央公園": {
+      "venue": "松戸中央公園",
+      "event_name": "松戸中央公園",
+      "months": [
+        8
+      ],
+      "last_checked_at": "2026-06-17T17:45:34.753740+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "桜田公園|桜田公園": {
+      "venue": "桜田公園",
+      "event_name": "桜田公園",
+      "months": [
+        7
+      ],
+      "last_checked_at": "2026-06-17T17:45:34.753740+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "森下公園|森下公園": {
+      "venue": "森下公園",
+      "event_name": "森下公園",
+      "months": [
+        7
+      ],
+      "last_checked_at": "2026-06-17T17:45:34.753740+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "森戸海岸（森戸の浜）|森戸海岸（森戸の浜）": {
+      "venue": "森戸海岸（森戸の浜）",
+      "event_name": "森戸海岸（森戸の浜）",
+      "months": [
+        8
+      ],
+      "last_checked_at": "2026-06-17T17:45:34.753740+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "横川小学校|横川小学校": {
+      "venue": "横川小学校",
+      "event_name": "横川小学校",
+      "months": [
+        8
+      ],
+      "last_checked_at": "2026-06-17T17:45:34.753740+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "横根稲荷神社|親子納涼盆踊り大会": {
+      "venue": "横根稲荷神社",
+      "event_name": "親子納涼盆踊り大会",
+      "months": [
+        7
+      ],
+      "last_checked_at": "2026-06-17T17:45:34.753740+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "歌舞伎町シネシティ広場|歌舞伎町シネシティ広場": {
+      "venue": "歌舞伎町シネシティ広場",
+      "event_name": "歌舞伎町シネシティ広場",
+      "months": [
+        8
+      ],
+      "last_checked_at": "2026-06-17T17:45:34.753740+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "江東橋竪川親水公園|すみだ錦糸町河内音頭大盆踊り": {
+      "venue": "江東橋竪川親水公園",
+      "event_name": "すみだ錦糸町河内音頭大盆踊り",
+      "months": [
+        7
+      ],
+      "last_checked_at": "2026-06-17T17:45:34.753740+00:00",
+      "last_status": "confirmed",
+      "confirmed_count": 1,
+      "checked_count": 1
+    },
+    "池上第二小学校|盆踊り大会": {
+      "venue": "池上第二小学校",
+      "event_name": "盆踊り大会",
+      "months": [
+        7
+      ],
+      "last_checked_at": "2026-06-17T17:45:34.753740+00:00",
+      "last_status": "confirmed",
+      "confirmed_count": 1,
+      "checked_count": 1
+    },
+    "池尻稲荷神社|盆踊り(池尻地区)": {
+      "venue": "池尻稲荷神社",
+      "event_name": "盆踊り(池尻地区)",
+      "months": [
+        8
+      ],
+      "last_checked_at": "2026-06-17T17:45:34.753740+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "浄土寺|浄土寺": {
+      "venue": "浄土寺",
+      "event_name": "浄土寺",
+      "months": [
+        7
+      ],
+      "last_checked_at": "2026-06-17T17:45:34.753740+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "浜町公園|中央区大江戸まつり盆おどり大会": {
+      "venue": "浜町公園",
+      "event_name": "中央区大江戸まつり盆おどり大会",
+      "months": [
+        8
+      ],
+      "last_checked_at": "2026-06-17T17:45:34.753740+00:00",
+      "last_status": "confirmed",
+      "confirmed_count": 1,
+      "checked_count": 1
+    },
+    "清水川橋公園|下落合町会知久会第9回盆踊り": {
+      "venue": "清水川橋公園",
+      "event_name": "下落合町会知久会 第9回盆踊り",
+      "months": [
+        7
+      ],
+      "last_checked_at": "2026-06-17T17:45:34.753740+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "瀬田中学校|瀬田商店会瀬田納涼盆踊り": {
+      "venue": "瀬田中学校",
+      "event_name": "瀬田商店会 瀬田納涼盆踊り",
+      "months": [
+        8
+      ],
+      "last_checked_at": "2026-06-17T17:45:34.753740+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "玉川中町公園|納涼盆踊り大会": {
+      "venue": "玉川中町公園",
+      "event_name": "納涼盆踊り大会",
+      "months": [
+        7
+      ],
+      "last_checked_at": "2026-06-17T17:45:34.753740+00:00",
+      "last_status": "confirmed",
+      "confirmed_count": 1,
+      "checked_count": 1
+    },
+    "田井西公園|田井西公園": {
+      "venue": "田井西公園",
+      "event_name": "田井西公園",
+      "months": [
+        7
+      ],
+      "last_checked_at": "2026-06-17T17:45:34.753740+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "白金児童遊園|白金児童遊園": {
+      "venue": "白金児童遊園",
+      "event_name": "白金児童遊園",
+      "months": [
+        7
+      ],
+      "last_checked_at": "2026-06-17T17:45:34.753740+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "砧八丁目児童遊園|砧八丁目児童遊園": {
+      "venue": "砧八丁目児童遊園",
+      "event_name": "砧八丁目児童遊園",
+      "months": [
+        8
+      ],
+      "last_checked_at": "2026-06-17T17:45:34.753740+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "砧小学校|第38回砧っ子夏祭り": {
+      "venue": "砧小学校",
+      "event_name": "第38回砧っ子夏祭り",
+      "months": [
+        7
+      ],
+      "last_checked_at": "2026-06-17T17:45:34.753740+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "祐天寺境内|第90回祐天寺み魂まつりこども盆踊り大会": {
+      "venue": "祐天寺境内",
+      "event_name": "第90回 祐天寺み魂まつり こども盆踊り大会",
+      "months": [
+        7
+      ],
+      "last_checked_at": "2026-06-17T17:45:34.753740+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "祖師谷神明社|祖師谷昇進会商店街(振)盆踊り": {
+      "venue": "祖師谷神明社",
+      "event_name": "祖師谷昇進会商店街(振)盆踊り",
+      "months": [
+        7
+      ],
+      "last_checked_at": "2026-06-17T17:45:34.753740+00:00",
+      "last_status": "confirmed",
+      "confirmed_count": 1,
+      "checked_count": 1
+    },
+    "神田明神境内|神田明神納涼祭りアニソン盆踊り": {
+      "venue": "神田明神境内",
+      "event_name": "神田明神納涼祭り アニソン盆踊り",
+      "months": [
+        8
+      ],
+      "last_checked_at": "2026-06-17T17:45:34.753740+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "福井池公園|福井池公園": {
+      "venue": "福井池公園",
+      "event_name": "福井池公園",
+      "months": [
+        8
+      ],
+      "last_checked_at": "2026-06-17T17:45:34.753740+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "秋田港フェリーターミナル（中島埠頭）|秋田港フェリーターミナル（中島埠頭）": {
+      "venue": "秋田港フェリーターミナル（中島埠頭）",
+      "event_name": "秋田港フェリーターミナル（中島埠頭）",
+      "months": [
+        6
+      ],
+      "last_checked_at": "2026-06-17T17:45:34.753740+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "秩父宮ラグビー場駐車場|郡上おどりin青山": {
+      "venue": "秩父宮ラグビー場駐車場",
+      "event_name": "郡上おどり in 青山",
+      "months": [
+        6
+      ],
+      "last_checked_at": "2026-06-17T17:45:34.753740+00:00",
+      "last_status": "confirmed",
+      "confirmed_count": 1,
+      "checked_count": 1
+    },
+    "笠間大池公園（笠間ポレポレシティ前）|笠間大池公園（笠間ポレポレシティ前）": {
+      "venue": "笠間大池公園（笠間ポレポレシティ前）",
+      "event_name": "笠間大池公園（笠間ポレポレシティ前）",
+      "months": [
+        8
+      ],
+      "last_checked_at": "2026-06-17T17:45:34.753740+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "第一日野小学校|第一日野小学校": {
+      "venue": "第一日野小学校",
+      "event_name": "第一日野小学校",
+      "months": [
+        7
+      ],
+      "last_checked_at": "2026-06-17T17:45:34.753740+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "第四日野小学校|第四日野小学校": {
+      "venue": "第四日野小学校",
+      "event_name": "第四日野小学校",
+      "months": [
+        7
+      ],
+      "last_checked_at": "2026-06-17T17:45:34.753740+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "築地本願寺|築地本願寺納涼盆踊り大会": {
+      "venue": "築地本願寺",
+      "event_name": "築地本願寺納涼盆踊り大会",
+      "months": [
+        7,
+        8
+      ],
+      "last_checked_at": "2026-06-17T17:45:34.753740+00:00",
+      "last_status": "confirmed",
+      "confirmed_count": 1,
+      "checked_count": 1
+    },
+    "羽田神社|羽田青年連合会": {
+      "venue": "羽田神社",
+      "event_name": "羽田青年連合会",
+      "months": [
+        7
+      ],
+      "last_checked_at": "2026-06-17T17:45:34.753740+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "臨海小学校|臨海小学校": {
+      "venue": "臨海小学校",
+      "event_name": "臨海小学校",
+      "months": [
+        7
+      ],
+      "last_checked_at": "2026-06-17T17:45:34.753740+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
     }
   },
-  "updated_at": "2026-06-16T20:02:37.147439+00:00"
+  "updated_at": "2026-06-17T17:45:34.753740+00:00"
 }

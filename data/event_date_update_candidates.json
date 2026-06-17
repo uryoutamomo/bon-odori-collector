@@ -286,6 +286,34 @@
       "refresh_only": false
     },
     {
+      "event_id": "37b8be04-e762-8139-b06b-fc46eba78336",
+      "event_name": "第71回大井どんたく夏まつり 初日 盆踊り",
+      "venues": [
+        "大井町駅前中央通り"
+      ],
+      "current_date": "2025-08-23",
+      "current_date_end": null,
+      "new_date": "2026-08-22",
+      "new_date_end": null,
+      "score": 12,
+      "reasons": [
+        "extracted_event_name",
+        "venue_exact",
+        "schedule_word"
+      ],
+      "source": "x",
+      "account": "@natsutr_bon",
+      "spoken_at": "2026-06-17T05:45:05+00:00",
+      "url": "https://x.com/natsutr_bon/status/2067121332190683529",
+      "text": "【第72回大井どんたく夏まつり】\n🏮8/22(土)23(日)🕓14:00-20:00📍大井町駅周辺(品川区)\n\n大井町駅前中央通りを会場に開かれる、大井町の夏の一大イベント✨\nご当地曲大井どんたく音頭を踊る盆踊りタイムは22日(土)18:00-20:00(予定)\nほかにも和太鼓やダンス、LIVEなど♪\nhttps://t.co/Bft4W7hrzR",
+      "raw_date": "8/22",
+      "extracted_event_names": [
+        "第72回大井どんたく夏まつり",
+        "ご当地曲大井どんたく音頭を踊る盆踊り"
+      ],
+      "refresh_only": false
+    },
+    {
       "event_id": "3788be04-e762-8171-beaf-fbf4a04104bf",
       "event_name": "飛鳥山公園盆踊り会（有志サークル）",
       "venues": [
