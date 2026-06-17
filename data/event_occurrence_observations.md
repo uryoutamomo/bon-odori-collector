@@ -1,18 +1,20 @@
 # 年次開催回観測 初期JSON
 
-生成: 2026-06-17T14:57:42.257932+00:00
+生成: 2026-06-17T15:15:50.779801+00:00
 
 ## 集計
 
-- observation_count: 24
+- observation_count: 30
 - series_count: 22
-- source_video_count: 557
-- observed_years: ['2025', '2026']
-- series_with_3year_window: 0
-- observations_with_songs: 3
+- source_video_count: 590
+- observed_years: ['2023', '2024', '2025', '2026']
+- series_with_3year_window: 1
+- observations_with_songs: 9
 
 ## 年別
 
+- 2023: 2
+- 2024: 4
 - 2025: 22
 - 2026: 2
 
@@ -34,7 +36,7 @@
 - 山王音頭と民踊大会 / 山王パークタワー公開空地 / 2026-06-13〜2026-06-15: 16 videos, songs=13, confidence=high
 - 飛鳥山公園盆踊り会（有志サークル） / 飛鳥山公園 / 2025-04-19: 13 videos, songs=0, confidence=medium
 - 謝恩納涼盆踊り大会（青山善光寺） / 青山善光寺 / 2025-07-28: 12 videos, songs=0, confidence=medium
+- 山王音頭と民踊大会 / 山王パークタワー公開空地 / 2024-06-13〜2024-06-15: 10 videos, songs=11, confidence=high
 - SHIBUYA MIYASHITA PARK BON DANCE 2026 / 宮下公園 / 2025-09-27〜2025-09-28: 10 videos, songs=0, confidence=high
 - 第16回ハマサイトの夏祭り / ハマサイト前広場・汐留ビルディング外構 / 2025-08-22: 8 videos, songs=0, confidence=high
-- 丸の内de盆踊り / 行幸通り / 2025-07-25: 6 videos, songs=0, confidence=medium
-- SHIBUYA MIYASHITA PARK BON DANCE 2026 / 宮下公園 / 2025-05-30〜2025-06-01: 4 videos, songs=0, confidence=medium
+- 山王音頭と民踊大会 / 山王パークタワー公開空地 / 2023-06-13: 7 videos, songs=10, confidence=medium
