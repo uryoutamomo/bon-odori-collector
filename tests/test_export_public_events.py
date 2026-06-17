@@ -69,7 +69,7 @@ class ExportPublicEventsTest(unittest.TestCase):
             "2026発表 https://t.co/abc",
             "[youtube_evidence] YouTube 2025公式URL確認済み証拠",
             "- 公式確認URL: https://tokyofesta.com/23ku/23763/",
-            "- YouTube検出元URL: https://tsukijihongwanji.jp/news/10279/",
+            "- YouTube検出元URL: https://www.nouryo-matsuri.com/pages/6314608/page_202208061239",
             "- 動画: https://www.youtube.com/watch?v=abc",
         ])
 
@@ -78,11 +78,20 @@ class ExportPublicEventsTest(unittest.TestCase):
         self.assertEqual(
             sources,
             [
-                {"label": "公式告知あり", "url": "https://tsukijihongwanji.jp/news/10279/", "kind": "official"},
+                {"label": "公式告知あり", "url": "https://www.nouryo-matsuri.com/pages/6314608/page_202208061239", "kind": "official"},
                 {"label": "告知HPあり", "url": "", "kind": "web"},
                 {"label": "告知投稿あり", "url": "", "kind": "post"},
             ],
         )
+
+    def test_extract_public_source_urls_excludes_stale_official_urls(self):
+        detail = "\n".join([
+            "[youtube_evidence] YouTube 2025公式URL確認済み証拠",
+            "- YouTube検出元URL: https://tsukijihongwanji.jp/news/10279/",
+            "- 動画: https://www.youtube.com/watch?v=abc",
+        ])
+
+        self.assertEqual(extract_public_source_urls(detail), [])
 
     def test_extract_public_source_urls_collapses_multiple_notice_urls(self):
         detail = "\n".join([

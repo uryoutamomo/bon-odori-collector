@@ -922,6 +922,16 @@
     },
     "source_urls": [
       {
+        "label": "公式告知あり",
+        "url": "https://www.tenkamatsuri.jp/minyo/",
+        "kind": "official"
+      },
+      {
+        "label": "公式告知あり",
+        "url": "https://www.hiejinja.net/news/%E4%BB%A4%E5%92%8C8%E5%B9%B4%E5%B1%B1%E7%8E%8B%E7%A5%AD%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/",
+        "kind": "official"
+      },
+      {
         "label": "告知HPあり",
         "url": "",
         "kind": "web"
@@ -1835,6 +1845,11 @@
       ]
     },
     "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://www.marunouchi.com/pickup/event/6763/",
+        "kind": "official"
+      },
       {
         "label": "告知HPあり",
         "url": "",
@@ -3914,6 +3929,11 @@
     },
     "source_urls": [
       {
+        "label": "公式告知あり",
+        "url": "https://www.roppongihills.com/events/2025/08/0478.html",
+        "kind": "official"
+      },
+      {
         "label": "告知HPあり",
         "url": "",
         "kind": "web"
@@ -5200,7 +5220,19 @@
           "evidence_urls": []
         }
       ]
-    }
+    },
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://aoyama-gaienmae.or.jp/news/20260326/",
+        "kind": "official"
+      },
+      {
+        "label": "公式告知あり",
+        "url": "https://aoyama-gaienmae.or.jp/news/",
+        "kind": "official"
+      }
+    ]
   },
   {
     "name": "麻布十番納涼盆踊り大会",
@@ -15383,7 +15415,13 @@
     "youtube_evidence": [],
     "songs": [],
     "song_occurrence": null,
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "https://otakushoren.com/event/13451",
+        "kind": "web"
+      }
+    ],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -15441,7 +15479,13 @@
     "youtube_evidence": [],
     "songs": [],
     "song_occurrence": null,
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+        "kind": "official"
+      }
+    ],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -15501,7 +15545,13 @@
     "youtube_evidence": [],
     "songs": [],
     "song_occurrence": null,
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+        "kind": "official"
+      }
+    ],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -15631,7 +15681,13 @@
       }
     ],
     "song_occurrence": null,
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://shimokitazawa-east.com/archives/8228",
+        "kind": "official"
+      }
+    ],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -15690,7 +15746,13 @@
     "youtube_evidence": [],
     "songs": [],
     "song_occurrence": null,
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+        "kind": "official"
+      }
+    ],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -15749,7 +15811,13 @@
     "youtube_evidence": [],
     "songs": [],
     "song_occurrence": null,
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+        "kind": "official"
+      }
+    ],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -15819,7 +15887,13 @@
       }
     ],
     "song_occurrence": null,
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+        "kind": "official"
+      }
+    ],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -15878,7 +15952,13 @@
     "youtube_evidence": [],
     "songs": [],
     "song_occurrence": null,
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+        "kind": "official"
+      }
+    ],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -15949,7 +16029,13 @@
       }
     ],
     "song_occurrence": null,
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://setagaya-station.com/news/event/event-info2025/",
+        "kind": "official"
+      }
+    ],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -16021,7 +16107,13 @@
       }
     ],
     "song_occurrence": null,
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+        "kind": "official"
+      }
+    ],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -16078,7 +16170,13 @@
     "youtube_evidence": [],
     "songs": [],
     "song_occurrence": null,
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+        "kind": "official"
+      }
+    ],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -16137,7 +16235,13 @@
     "youtube_evidence": [],
     "songs": [],
     "song_occurrence": null,
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+        "kind": "official"
+      }
+    ],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -16195,7 +16299,13 @@
     "youtube_evidence": [],
     "songs": [],
     "song_occurrence": null,
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://www.city.setagaya.lg.jp/documents/10549/minikomisinogawa110gou.pdf",
+        "kind": "official"
+      }
+    ],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -16267,7 +16377,13 @@
       }
     ],
     "song_occurrence": null,
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "https://kitaminavi.com/topic/1337",
+        "kind": "web"
+      }
+    ],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -16325,7 +16441,13 @@
     "youtube_evidence": [],
     "songs": [],
     "song_occurrence": null,
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://www.city.setagaya.lg.jp/documents/889/minikomishi168.pdf",
+        "kind": "official"
+      }
+    ],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -16395,7 +16517,13 @@
       }
     ],
     "song_occurrence": null,
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+        "kind": "official"
+      }
+    ],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -16453,7 +16581,13 @@
     "youtube_evidence": [],
     "songs": [],
     "song_occurrence": null,
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+        "kind": "official"
+      }
+    ],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -16511,7 +16645,13 @@
     "youtube_evidence": [],
     "songs": [],
     "song_occurrence": null,
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://www.seijogakuen.ed.jp/news/2025/event0726.html",
+        "kind": "official"
+      }
+    ],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -16630,7 +16770,13 @@
     "youtube_evidence": [],
     "songs": [],
     "song_occurrence": null,
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+        "kind": "official"
+      }
+    ],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -16688,7 +16834,13 @@
     "youtube_evidence": [],
     "songs": [],
     "song_occurrence": null,
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+        "kind": "official"
+      }
+    ],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -16747,7 +16899,13 @@
     "youtube_evidence": [],
     "songs": [],
     "song_occurrence": null,
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+        "kind": "official"
+      }
+    ],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -16939,7 +17097,13 @@
       }
     ],
     "song_occurrence": null,
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://www.city.setagaya.lg.jp/documents/889/minikomishi168.pdf",
+        "kind": "official"
+      }
+    ],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -17050,7 +17214,13 @@
     "youtube_evidence": [],
     "songs": [],
     "song_occurrence": null,
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+        "kind": "official"
+      }
+    ],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -17111,7 +17281,13 @@
     "youtube_evidence": [],
     "songs": [],
     "song_occurrence": null,
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://www.city.setagaya.lg.jp/documents/10549/minikomisinogawa110gou.pdf",
+        "kind": "official"
+      }
+    ],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -17230,7 +17406,13 @@
     "youtube_evidence": [],
     "songs": [],
     "song_occurrence": null,
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+        "kind": "official"
+      }
+    ],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -17289,7 +17471,13 @@
     "youtube_evidence": [],
     "songs": [],
     "song_occurrence": null,
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+        "kind": "official"
+      }
+    ],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -17941,7 +18129,13 @@
       }
     ],
     "song_occurrence": null,
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://nakano-arai.gr.jp/nakanodoorisakuramatsuri/",
+        "kind": "official"
+      }
+    ],
     "public_status": "ended_2026",
     "public_category": "ended",
     "public_status_label": "開催終了",
@@ -18801,7 +18995,13 @@
     "youtube_evidence": [],
     "songs": [],
     "song_occurrence": null,
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://www.city.katsushika.lg.jp/tourism/1000064/1028427.html",
+        "kind": "official"
+      }
+    ],
     "public_status": "ended_2026",
     "public_category": "ended",
     "public_status_label": "開催終了",
