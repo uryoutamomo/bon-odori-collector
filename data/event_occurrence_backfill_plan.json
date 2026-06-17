@@ -1,6 +1,6 @@
 {
   "generated_by": "build_event_occurrence_backfill_plan.py",
-  "generated_at": "2026-06-17T15:18:42.047973+00:00",
+  "generated_at": "2026-06-17T15:38:51.311003+00:00",
   "source": "data/youtube_year_backfill_candidates.json",
   "summary": {
     "observation_count": 12,
@@ -10,8 +10,8 @@
       "2024": 7
     },
     "observations_with_songs": 11,
-    "excluded_low_observation_count": 6,
-    "excluded_low_source_video_count": 8
+    "excluded_low_observation_count": 8,
+    "excluded_low_source_video_count": 11
   },
   "observations": [
     {
@@ -1884,6 +1884,107 @@
           "source_count": 1,
           "source_urls": [
             "https://www.youtube.com/watch?v=dlY5xSYgUow"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        }
+      ]
+    },
+    {
+      "observation_id": "2da05f994b17e9c1",
+      "series_key": "39d53bfa116a",
+      "event_name": "旗の台稲荷通り商店会盆踊り 盆ROCK",
+      "venue": "旗の台稲荷通り商店街",
+      "area": "品川区",
+      "year": 2024,
+      "date_start": "2024-11-17",
+      "date_end": "2024-11-17",
+      "observed_dates": [
+        "2024-11-17"
+      ],
+      "weekday_start": "日",
+      "weekday_end": "日",
+      "source_type": "youtube_backfill_observed",
+      "source_video_count": 1,
+      "source_channels": [
+        "tekutekuTV"
+      ],
+      "confidence": "low",
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=u6-qkx30GLw",
+          "video_id": "u6-qkx30GLw",
+          "title": "てくてくTV　旗の台　稲荷通り商店会　盆踊り『盆ROCK』（ぼんロック）に行く　2024.11.17",
+          "channel": "tekutekuTV",
+          "published_at": "2024-11-22T04:24:28Z",
+          "score": 98
+        }
+      ],
+      "songs": [
+        {
+          "song_name": "盆ROCK",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=u6-qkx30GLw"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        }
+      ]
+    },
+    {
+      "observation_id": "5a3ae5702572e59c",
+      "series_key": "ebf98ce37bb4",
+      "event_name": "歌舞伎町BON ODORI",
+      "venue": "歌舞伎町シネシティ広場",
+      "area": "新宿区",
+      "year": 2024,
+      "date_start": "2024-08-17",
+      "date_end": "2024-08-17",
+      "observed_dates": [
+        "2024-08-17"
+      ],
+      "weekday_start": "土",
+      "weekday_end": "土",
+      "source_type": "youtube_backfill_observed",
+      "source_video_count": 2,
+      "source_channels": [
+        "Tokyo Lonely Walker"
+      ],
+      "confidence": "low",
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=5c4jwXCsQzM",
+          "video_id": "5c4jwXCsQzM",
+          "title": "[4K]🇯🇵 新宿 歌舞伎町で盆ジョヴィ Bon Jovi｜Michael Jackson｜B'z｜YOASOBI 他 Kabukicho BON ODORI 盆踊り 2024 2部",
+          "channel": "Tokyo Lonely Walker",
+          "published_at": "2024-08-20T08:38:44Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=mk72RwvRBz4",
+          "video_id": "mk72RwvRBz4",
+          "title": "[4K]🇯🇵 B'z ultra soulで盆踊り 新宿 歌舞伎町 BON ODORI 2部 / Bon dance with B'z in Shinjuku Kabukicho. 2024",
+          "channel": "Tokyo Lonely Walker",
+          "published_at": "2024-09-06T09:00:50Z",
+          "score": 98
+        }
+      ],
+      "songs": [
+        {
+          "song_name": "荻野目洋子 - ダンシング・ヒーロー / Yoko Oginome - Eat You Up",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=5c4jwXCsQzM"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "ブルーマングループ パフォーマンス （東京おとめ太鼓） / Blue Man Group",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=5c4jwXCsQzM"
           ],
           "source_type": "youtube_backfill_title_observed",
           "confidence": "hint"

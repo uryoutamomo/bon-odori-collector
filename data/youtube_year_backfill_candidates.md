@@ -1,10 +1,10 @@
 # YouTube 過去年バックフィル候補
 
-- 生成: 2026-06-17T15:18:35.070007+00:00
-- selected_queue_count: 24
-- candidate_count: 165
-- strong: 79
-- review: 14
+- 生成: 2026-06-17T15:38:26.751080+00:00
+- selected_queue_count: 36
+- candidate_count: 204
+- strong: 82
+- review: 15
 
 | status | score | year | event | venue | detected | channel | title | url |
 | --- | ---: | ---: | --- | --- | --- | --- | --- | --- |
@@ -40,6 +40,7 @@
 | strong | 100 | 2024 | 山王音頭と民踊大会 | 山王パークタワー公開空地 | 2024-06-13 | shu channel | 赤坂・日枝神社 山王祭「納涼大会 盆踊り（2/5）大東京音頭～ドンパン節～八木節」2024.6.13 @山王パークタワー公開空地 | https://www.youtube.com/watch?v=Dy9TVaZiow0 |
 | strong | 100 | 2024 | 山王音頭と民踊大会 | 山王パークタワー公開空地 | 2024-06-13 | shu channel | 赤坂・日枝神社 山王祭「納涼大会 盆踊り（4/5）相馬甚句～東京おどり～千代田おどり」2024.6.13 @山王パークタワー公開空地 | https://www.youtube.com/watch?v=Afl5z11mHpQ |
 | strong | 100 | 2024 | 東本願寺盆踊り | 東本願寺（浅草） | 2024-08-21 | joy joy | full 浅草・東本願寺盆踊り2024.8.21 Asakusa-Higashi Honganji Bondance tokyo japan | https://www.youtube.com/watch?v=Dyf9OD1euNQ |
+| strong | 100 | 2024 | 歌舞伎町BON ODORI | 歌舞伎町シネシティ広場 | 2024-08-17 | Tokyo Lonely Walker | [4K]🇯🇵 新宿 歌舞伎町で盆ジョヴィ Bon Jovi｜Michael Jackson｜B'z｜YOASOBI 他 Kabukicho BON ODORI 盆踊り 2024 2部 | https://www.youtube.com/watch?v=5c4jwXCsQzM |
 | strong | 100 | 2024 | 自由が丘納涼盆踊り大会 | 自由が丘駅前ロータリー 特設会場 | 2024-07-15 | Tokyo Lonely Walker | [4K]🇯🇵 自由が丘納涼盆踊り大会 「ホイップるん音頭」「自由が丘小唄」最終日 / Traditional Japanese Bon dance in Jiyugaoka. Short ver. | https://www.youtube.com/watch?v=ONuZ_KNO2FU |
 | strong | 100 | 2024 | 西久保八幡神社 盆踊り | 西久保八幡神社 | 2024-08-09 | 和太鼓お祭りチャンネル | ステテコシャンシャン　2024年西久保八幡神社盆踊り29　東京都港区 | https://www.youtube.com/watch?v=r56WKNmIGQU |
 | strong | 100 | 2024 | 西久保八幡神社 盆踊り | 西久保八幡神社 | 2024-08-09 | 和太鼓お祭りチャンネル | ドンパン節　2024年西久保八幡神社盆踊り８　東京都港区 | https://www.youtube.com/watch?v=LCIo27LHau4 |
@@ -69,9 +70,11 @@
 | strong | 98 | 2024 | 山王音頭と民踊大会 | 山王パークタワー公開空地 | 2024-06-13 | 和太鼓お祭りチャンネル | 東京音頭　2024年赤坂日枝神社山王祭盆踊り１　「山王音頭と民踊大会」 | https://www.youtube.com/watch?v=U74a8bWHZ5w |
 | strong | 98 | 2024 | 山王音頭と民踊大会 | 山王パークタワー公開空地 | 2024-06-13 | 和太鼓お祭りチャンネル | 白浜音頭　2024年赤坂日枝神社山王祭盆踊り３　「山王音頭と民踊大会」 | https://www.youtube.com/watch?v=torYM-7OrAU |
 | strong | 98 | 2024 | 山王音頭と民踊大会 | 山王パークタワー公開空地 | 2024-06-15 | 和太鼓お祭りチャンネル | 白浜音頭　2024年赤坂日枝神社山王祭盆踊り３日目２　「山王音頭と民踊大会」 | https://www.youtube.com/watch?v=NspVNcRBx50 |
+| strong | 98 | 2024 | 旗の台稲荷通り商店会盆踊り 盆ROCK | 旗の台稲荷通り商店街 | 2024-11-17 | tekutekuTV | てくてくTV　旗の台　稲荷通り商店会　盆踊り『盆ROCK』（ぼんロック）に行く　2024.11.17 | https://www.youtube.com/watch?v=u6-qkx30GLw |
 | strong | 98 | 2024 | 東本願寺盆踊り | 東本願寺（浅草） | 2024-08-21 | Tokyo Dance Storage | 盆踊り｜ご祝儀音頭｜東本願寺盆踊り2024 / Traditional Japanese Bon dance in Higashi Honganji Temple[4K] | https://www.youtube.com/watch?v=yP1rWVk6PdQ |
 | strong | 98 | 2024 | 東本願寺盆踊り | 東本願寺（浅草） | 2024-08-21 | Tokyo Dance Storage | 盆踊り｜ふるさと音頭｜東本願寺盆踊り2024 / Traditional Japanese Bon dance in Higashi Honganji Temple[4K] | https://www.youtube.com/watch?v=myNbWB8I6kY |
 | strong | 98 | 2024 | 東本願寺盆踊り | 東本願寺（浅草） | 2024-08-21 | Tokyo Dance Storage | 盆踊り｜嵐 - One Love｜東本願寺盆踊り2024 / Traditional Japanese Bon dance in Higashi Honganji Temple[4K] | https://www.youtube.com/watch?v=8IyBxxtvQmA |
+| strong | 98 | 2024 | 歌舞伎町BON ODORI | 歌舞伎町シネシティ広場 | 2024-08-17 | Tokyo Lonely Walker | [4K]🇯🇵 B'z ultra soulで盆踊り 新宿 歌舞伎町 BON ODORI 2部 / Bon dance with B'z in Shinjuku Kabukicho. 2024 | https://www.youtube.com/watch?v=mk72RwvRBz4 |
 | strong | 98 | 2024 | 自由が丘納涼盆踊り大会 | 自由が丘駅前ロータリー 特設会場 | 2024-07-13 | Urban Walk | 【自由が丘納涼盆踊り大会 2024】「夜に駆ける」- YOASOBI  #盆踊り Jiyugaoka Bon Dance Festival. | https://www.youtube.com/watch?v=HvX9QOedVNE |
 | strong | 98 | 2024 | 自由が丘納涼盆踊り大会 | 自由が丘駅前ロータリー 特設会場 | 2024-07-15 | 愛と光と優しさのお福分けch | 【自由が丘納涼盆踊り大会｜2024/7/15 KIN8】愛と平和の啓蒙/Enlightenment of Love and Peace | https://www.youtube.com/watch?v=lMgjZ_F8Mvw |
 | strong | 98 | 2024 | 自由が丘納涼盆踊り大会 | 自由が丘駅前ロータリー 特設会場 | 2024-07-24 | iTSCOM | 自由が丘納涼 盆踊り大会【地モトNEWS】2024/7/24放送 | https://www.youtube.com/watch?v=qNhz2yoaBL0 |
@@ -85,6 +88,3 @@
 | strong | 88 | 2024 | 郡上おどり in 青山 2025 | 秩父宮ラグビー場駐車場 | 2024-06-14 | shu channel | 【郡上おどりin青山 2024】（2/2）かわさき～さわぎ～三百～郡上甚句～春駒～まつさか🏮Tokyo Bon Dance Festival👘2024.6.15 @秩父宮ラグビー場 駐車場 | https://www.youtube.com/watch?v=lqzUIJ7u_bU |
 | strong | 83 | 2024 | 東本願寺盆踊り | 東本願寺（浅草） |  | 和太鼓お祭りチャンネル | Every Breath You Take　2024年浅草東本願寺盆踊り13　東京都台東区 | https://www.youtube.com/watch?v=xj79jLz1MIY |
 | strong | 83 | 2024 | 東本願寺盆踊り | 東本願寺（浅草） |  | 和太鼓お祭りチャンネル | こいこい音頭　2024年浅草東本願寺盆踊り14　東京都台東区 | https://www.youtube.com/watch?v=XMdsZOXbRJI |
-| strong | 83 | 2024 | 東本願寺盆踊り | 東本願寺（浅草） |  | 和太鼓お祭りチャンネル | チャンチキおけさ　2024年浅草東本願寺盆踊り16　東京都台東区 | https://www.youtube.com/watch?v=L8xvX6QIS38 |
-| strong | 83 | 2024 | 東本願寺盆踊り | 東本願寺（浅草） |  | 和太鼓お祭りチャンネル | 音頭あなたの出番　2024年浅草東本願寺盆踊り18　東京都台東区 | https://www.youtube.com/watch?v=in1Zjuy0M1s |
-| review | 73 | 2024 | 第10回白金台どんぐり児童遊園 納涼盆踊り大会 | 白金台どんぐり児童遊園 |  | 和太鼓お祭りチャンネル | 東北音頭　2024年白金台どんぐり児童遊園納涼盆踊り大会24　東京都港区 | https://www.youtube.com/watch?v=t9jxIJN6Spo |
