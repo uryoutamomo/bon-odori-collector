@@ -90,7 +90,8 @@
       "aliases": [
         "築地本願寺",
         "築地本願寺納涼",
-        "築地本願寺納涼盆踊り"
+        "築地本願寺納涼盆踊り",
+        "築地本願寺納涼盆踊り大会"
       ],
       "confirmation_terms": [
         "築地本願寺納涼盆踊り大会",
@@ -98,7 +99,8 @@
       ],
       "official_sources": [],
       "tier": "large",
-      "source": "auto_from_events_public_2026-06-13"
+      "source": "auto_from_events_public_2026-06-13",
+      "official_source_type": "official"
     },
     {
       "venue": "ハマサイト前広場・汐留ビルディング外構",
@@ -121,19 +123,27 @@
     },
     {
       "venue": "秩父宮ラグビー場駐車場",
-      "event_name": "郡上おどり in 青山 2025",
+      "event_name": "郡上おどり in 青山",
       "months": [
         6
       ],
       "scale": "大",
       "aliases": [
+        "郡上おどり2026",
+        "郡上おどり2026開催決定",
+        "青山外苑前商店街",
         "秩父宮ラグビー場駐車場"
       ],
       "confirmation_terms": [
-        "郡上おどり in 青山 2025",
+        "郡上おどり",
+        "郡上おどり in 青山",
         "秩父宮ラグビー場駐車場"
       ],
-      "official_sources": [],
+      "official_sources": [
+        "https://aoyama-gaienmae.or.jp/news/",
+        "https://aoyama-gaienmae.or.jp/news/20260326/"
+      ],
+      "official_source_type": "official",
       "tier": "large",
       "source": "auto_from_events_public_2026-06-13"
     },
@@ -1072,15 +1082,19 @@
       ],
       "scale": "中",
       "aliases": [
-        "馬込桜並木公園、馬込桜並木通り"
+        "馬込桜並木公園、馬込桜並木通り",
+        "馬込地区自治会連合会、馬籠商店会連合睦会"
       ],
       "confirmation_terms": [
         "馬込地区自治会連合会、馬籠商店会連合睦会",
         "馬込桜並木公園、馬込桜並木通り"
       ],
-      "official_sources": [],
+      "official_sources": [
+        "https://otakushoren.com/event/13451"
+      ],
       "tier": "medium",
-      "source": "auto_from_events_public_2026-06-13"
+      "source": "auto_from_events_public_2026-06-13",
+      "official_source_type": "hp"
     },
     {
       "venue": "三峰公園",
@@ -1091,15 +1105,20 @@
       "scale": "中",
       "aliases": [
         "三峰公園",
-        "納涼夏祭り"
+        "納涼夏祭り",
+        "砧町町会「納涼夏祭り大会」 7月19日(土)-20日(日)。"
       ],
       "confirmation_terms": [
         "納涼夏祭り大会",
-        "三峰公園"
+        "三峰公園",
+        "砧町町会「納涼夏祭り大会」 7月19日(土)-20日(日)。"
       ],
-      "official_sources": [],
+      "official_sources": [
+        "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf"
+      ],
       "tier": "medium",
-      "source": "auto_from_events_public_2026-06-13"
+      "source": "auto_from_events_public_2026-06-13",
+      "official_source_type": "official"
     },
     {
       "venue": "上北沢小学校",
@@ -1111,15 +1130,20 @@
       "aliases": [
         "上北沢の",
         "上北沢の納涼",
-        "上北沢小学校"
+        "上北沢小学校",
+        "上北沢盆踊り実行委員会 「上北沢の納涼盆踊り」 8月25(土)。"
       ],
       "confirmation_terms": [
         "上北沢の納涼盆踊り",
-        "上北沢小学校"
+        "上北沢小学校",
+        "上北沢盆踊り実行委員会 「上北沢の納涼盆踊り」 8月25(土)。"
       ],
-      "official_sources": [],
+      "official_sources": [
+        "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf"
+      ],
       "tier": "medium",
-      "source": "auto_from_events_public_2026-06-13"
+      "source": "auto_from_events_public_2026-06-13",
+      "official_source_type": "official"
     },
     {
       "venue": "下代田児童遊園",
@@ -1147,15 +1171,20 @@
       ],
       "scale": "小",
       "aliases": [
-        "下北沢駅東口"
+        "下北沢駅東口",
+        "あずま通り商店街「下北沢盆踊り2025」 8月9日(土)-10日(日) 13:00-20:00。"
       ],
       "confirmation_terms": [
         "下北沢盆踊り2025",
-        "下北沢駅東口"
+        "下北沢駅東口",
+        "あずま通り商店街「下北沢盆踊り2025」 8月9日(土)-10日(日) 13:00-20:00。"
       ],
-      "official_sources": [],
+      "official_sources": [
+        "https://shimokitazawa-east.com/archives/8228"
+      ],
       "tier": "small",
-      "source": "auto_from_events_public_2026-06-13"
+      "source": "auto_from_events_public_2026-06-13",
+      "official_source_type": "official"
     },
     {
       "venue": "久富稲荷神社",
@@ -1167,15 +1196,20 @@
       "aliases": [
         "久富稲荷神社",
         "新町公民会",
-        "新町公民会 盆踊り"
+        "新町公民会 盆踊り",
+        "新町公民会 盆踊り大会 8月17日(日) 17:00- 。"
       ],
       "confirmation_terms": [
         "新町公民会 盆踊り大会",
-        "久富稲荷神社"
+        "久富稲荷神社",
+        "新町公民会 盆踊り大会 8月17日(日) 17:00- 。"
       ],
-      "official_sources": [],
+      "official_sources": [
+        "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf"
+      ],
       "tier": "small",
-      "source": "auto_from_events_public_2026-06-13"
+      "source": "auto_from_events_public_2026-06-13",
+      "official_source_type": "official"
     },
     {
       "venue": "二子玉川西地区ふれあい広場(246高架下)",
@@ -1187,15 +1221,21 @@
       "aliases": [
         "二子玉川西地区ふれあい広場",
         "玉川町会",
-        "玉川町会盆おどり"
+        "玉川町会盆おどり",
+        "二子玉川西地区ふれあい広場(246高架下)",
+        "玉川町会盆おどり大会 7月25日(金)、26日(土)"
       ],
       "confirmation_terms": [
         "玉川町会盆おどり大会",
-        "二子玉川西地区ふれあい広場(246高架下)"
+        "二子玉川西地区ふれあい広場(246高架下)",
+        "玉川町会盆おどり大会 7月25日(金)、26日(土)"
       ],
-      "official_sources": [],
+      "official_sources": [
+        "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf"
+      ],
       "tier": "medium",
-      "source": "auto_from_events_public_2026-06-13"
+      "source": "auto_from_events_public_2026-06-13",
+      "official_source_type": "official"
     },
     {
       "venue": "京王線芦花公園駅前ロータリー(南口)",
@@ -1207,15 +1247,21 @@
       "aliases": [
         "京王線芦花公園駅前ロータリー",
         "芦花公園駅前",
-        "芦花公園駅前盆踊り"
+        "芦花公園駅前盆踊り",
+        "京王線芦花公園駅前ロータリー(南口)",
+        "芦花公園商店街振興組合 「芦花公園駅前盆踊り大会」 7月25日(金) 17:00-。"
       ],
       "confirmation_terms": [
         "芦花公園駅前盆踊り大会",
-        "京王線芦花公園駅前ロータリー(南口)"
+        "京王線芦花公園駅前ロータリー(南口)",
+        "芦花公園商店街振興組合 「芦花公園駅前盆踊り大会」 7月25日(金) 17:00-。"
       ],
-      "official_sources": [],
+      "official_sources": [
+        "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf"
+      ],
       "tier": "large",
-      "source": "auto_from_events_public_2026-06-13"
+      "source": "auto_from_events_public_2026-06-13",
+      "official_source_type": "official"
     },
     {
       "venue": "八幡小学校",
@@ -1227,15 +1273,20 @@
       "aliases": [
         "八幡小学校",
         "親子",
-        "親子盆踊り"
+        "親子盆踊り",
+        "親子盆踊り大会 7月12日(土) 17:00-19:20。"
       ],
       "confirmation_terms": [
         "親子盆踊り大会",
-        "八幡小学校"
+        "八幡小学校",
+        "親子盆踊り大会 7月12日(土) 17:00-19:20。"
       ],
-      "official_sources": [],
+      "official_sources": [
+        "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf"
+      ],
       "tier": "medium",
-      "source": "auto_from_events_public_2026-06-13"
+      "source": "auto_from_events_public_2026-06-13",
+      "official_source_type": "official"
     },
     {
       "venue": "千歳船橋駅前広場",
@@ -1246,15 +1297,20 @@
       "scale": "大",
       "aliases": [
         "千歳船橋駅前広場",
-        "船橋会"
+        "船橋会",
+        "船橋会 盆踊り 8月17日(日)。"
       ],
       "confirmation_terms": [
         "船橋会 盆踊り",
-        "千歳船橋駅前広場"
+        "千歳船橋駅前広場",
+        "船橋会 盆踊り 8月17日(日)。"
       ],
-      "official_sources": [],
+      "official_sources": [
+        "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf"
+      ],
       "tier": "large",
-      "source": "auto_from_events_public_2026-06-13"
+      "source": "auto_from_events_public_2026-06-13",
+      "official_source_type": "official"
     },
     {
       "venue": "奥沢小学校",
@@ -1264,15 +1320,19 @@
       ],
       "scale": "中",
       "aliases": [
-        "奥沢小学校"
+        "奥沢小学校",
+        "奥沢交和会"
       ],
       "confirmation_terms": [
         "奥沢交和会",
         "奥沢小学校"
       ],
-      "official_sources": [],
+      "official_sources": [
+        "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf"
+      ],
       "tier": "medium",
-      "source": "auto_from_events_public_2026-06-13"
+      "source": "auto_from_events_public_2026-06-13",
+      "official_source_type": "official"
     },
     {
       "venue": "宇奈根氷川神社",
@@ -1284,15 +1344,20 @@
       "aliases": [
         "宇奈根氷川神社",
         "宇奈根町会",
-        "宇奈根町会 盆踊り"
+        "宇奈根町会 盆踊り",
+        "宇奈根町会 盆踊り大会 7月19日(土)-20日(日)。"
       ],
       "confirmation_terms": [
         "宇奈根町会 盆踊り大会",
-        "宇奈根氷川神社"
+        "宇奈根氷川神社",
+        "宇奈根町会 盆踊り大会 7月19日(土)-20日(日)。"
       ],
-      "official_sources": [],
+      "official_sources": [
+        "https://www.city.setagaya.lg.jp/documents/10549/minikomisinogawa110gou.pdf"
+      ],
       "tier": "small",
-      "source": "auto_from_events_public_2026-06-13"
+      "source": "auto_from_events_public_2026-06-13",
+      "official_source_type": "official"
     },
     {
       "venue": "小田急線喜多見駅前 南口広場",
@@ -1304,15 +1369,20 @@
       "aliases": [
         "喜多見",
         "喜多見盆踊り",
-        "小田急線喜多見駅前 南口広場"
+        "小田急線喜多見駅前 南口広場",
+        "「喜多見盆踊り大会」 7月26日(土)-27日(日)。"
       ],
       "confirmation_terms": [
         "喜多見盆踊り大会",
-        "小田急線喜多見駅前 南口広場"
+        "小田急線喜多見駅前 南口広場",
+        "「喜多見盆踊り大会」 7月26日(土)-27日(日)。"
       ],
-      "official_sources": [],
+      "official_sources": [
+        "https://kitaminavi.com/topic/1337"
+      ],
       "tier": "large",
-      "source": "auto_from_events_public_2026-06-13"
+      "source": "auto_from_events_public_2026-06-13",
+      "official_source_type": "hp"
     },
     {
       "venue": "小田急線祖師ヶ谷大蔵駅前広場",
@@ -1322,15 +1392,19 @@
       ],
       "scale": "大",
       "aliases": [
-        "小田急線祖師ヶ谷大蔵駅前広場"
+        "小田急線祖師ヶ谷大蔵駅前広場",
+        "祖師谷商店街振興組合"
       ],
       "confirmation_terms": [
         "祖師谷商店街振興組合",
         "小田急線祖師ヶ谷大蔵駅前広場"
       ],
-      "official_sources": [],
+      "official_sources": [
+        "https://www.city.setagaya.lg.jp/documents/889/minikomishi168.pdf"
+      ],
       "tier": "large",
-      "source": "auto_from_events_public_2026-06-13"
+      "source": "auto_from_events_public_2026-06-13",
+      "official_source_type": "official"
     },
     {
       "venue": "希望ヶ丘団地 テニスコート",
@@ -1340,15 +1414,20 @@
       ],
       "scale": "中",
       "aliases": [
-        "希望ヶ丘団地 テニスコート"
+        "希望ヶ丘団地 テニスコート",
+        "「希望ヶ丘団地夏まつり」 7月19日(土)-20日(日)。"
       ],
       "confirmation_terms": [
         "希望ヶ丘団地夏まつり",
-        "希望ヶ丘団地 テニスコート"
+        "希望ヶ丘団地 テニスコート",
+        "「希望ヶ丘団地夏まつり」 7月19日(土)-20日(日)。"
       ],
-      "official_sources": [],
+      "official_sources": [
+        "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf"
+      ],
       "tier": "medium",
-      "source": "auto_from_events_public_2026-06-13"
+      "source": "auto_from_events_public_2026-06-13",
+      "official_source_type": "official"
     },
     {
       "venue": "廻沢稲荷神社",
@@ -1359,15 +1438,20 @@
       "scale": "小",
       "aliases": [
         "千歳台廻沢地区",
-        "廻沢稲荷神社"
+        "廻沢稲荷神社",
+        "千歳台廻沢地区盆踊り 7月19日(土)-20日(日)。"
       ],
       "confirmation_terms": [
         "千歳台廻沢地区盆踊り",
-        "廻沢稲荷神社"
+        "廻沢稲荷神社",
+        "千歳台廻沢地区盆踊り 7月19日(土)-20日(日)。"
       ],
-      "official_sources": [],
+      "official_sources": [
+        "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf"
+      ],
       "tier": "small",
-      "source": "auto_from_events_public_2026-06-13"
+      "source": "auto_from_events_public_2026-06-13",
+      "official_source_type": "official"
     },
     {
       "venue": "成城大学9号館前広場",
@@ -1379,15 +1463,20 @@
       "aliases": [
         "成城大学9号館前広場",
         "成城学園",
-        "成城学園 盆踊り"
+        "成城学園 盆踊り",
+        "「成城学園 盆踊り大会」 7月26日(土) 17:30-20:00。"
       ],
       "confirmation_terms": [
         "成城学園 盆踊り大会",
-        "成城大学9号館前広場"
+        "成城大学9号館前広場",
+        "「成城学園 盆踊り大会」 7月26日(土) 17:30-20:00。"
       ],
-      "official_sources": [],
+      "official_sources": [
+        "https://www.seijogakuen.ed.jp/news/2025/event0726.html"
+      ],
       "tier": "medium",
-      "source": "auto_from_events_public_2026-06-13"
+      "source": "auto_from_events_public_2026-06-13",
+      "official_source_type": "official"
     },
     {
       "venue": "横根稲荷神社",
@@ -1400,15 +1489,18 @@
         "横根稲荷神社",
         "親子",
         "親子納涼",
-        "親子納涼盆踊り"
+        "親子納涼盆踊り",
+        "大蔵東部町会「親子納涼盆踊り大会」7月26日(土)午後6時30分-午後9時。"
       ],
       "confirmation_terms": [
         "親子納涼盆踊り大会",
-        "横根稲荷神社"
+        "横根稲荷神社",
+        "大蔵東部町会「親子納涼盆踊り大会」7月26日(土)午後6時30分-午後9時。"
       ],
       "official_sources": [],
       "tier": "small",
-      "source": "auto_from_events_public_2026-06-13"
+      "source": "auto_from_events_public_2026-06-13",
+      "official_source_type": "official"
     },
     {
       "venue": "池尻稲荷神社",
@@ -1418,15 +1510,20 @@
       ],
       "scale": "小",
       "aliases": [
-        "池尻稲荷神社"
+        "池尻稲荷神社",
+        "盆踊り(池尻地区)8月1日(金)-2日(土)。"
       ],
       "confirmation_terms": [
         "盆踊り(池尻地区)",
-        "池尻稲荷神社"
+        "池尻稲荷神社",
+        "盆踊り(池尻地区)8月1日(金)-2日(土)。"
       ],
-      "official_sources": [],
+      "official_sources": [
+        "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf"
+      ],
       "tier": "small",
-      "source": "auto_from_events_public_2026-06-13"
+      "source": "auto_from_events_public_2026-06-13",
+      "official_source_type": "official"
     },
     {
       "venue": "瀬田中学校",
@@ -1438,15 +1535,20 @@
       "aliases": [
         "瀬田中学校",
         "瀬田商店会 瀬田",
-        "瀬田商店会 瀬田納涼"
+        "瀬田商店会 瀬田納涼",
+        "瀬田商店会 瀬田納涼盆踊り 8月16日(土)ｰ17日(日)。"
       ],
       "confirmation_terms": [
         "瀬田商店会 瀬田納涼盆踊り",
-        "瀬田中学校"
+        "瀬田中学校",
+        "瀬田商店会 瀬田納涼盆踊り 8月16日(土)ｰ17日(日)。"
       ],
-      "official_sources": [],
+      "official_sources": [
+        "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf"
+      ],
       "tier": "medium",
-      "source": "auto_from_events_public_2026-06-13"
+      "source": "auto_from_events_public_2026-06-13",
+      "official_source_type": "official"
     },
     {
       "venue": "砧小学校",
@@ -1457,15 +1559,18 @@
       "scale": "中",
       "aliases": [
         "砧っ子",
-        "砧小学校"
+        "砧小学校",
+        "砧小学校「第38回砧っ子夏祭り」7月19日(土)午後3時-7時30分。"
       ],
       "confirmation_terms": [
         "第38回砧っ子夏祭り",
-        "砧小学校"
+        "砧小学校",
+        "砧小学校「第38回砧っ子夏祭り」7月19日(土)午後3時-7時30分。"
       ],
       "official_sources": [],
       "tier": "medium",
-      "source": "auto_from_events_public_2026-06-13"
+      "source": "auto_from_events_public_2026-06-13",
+      "official_source_type": "official"
     },
     {
       "venue": "祖師谷神明社",
@@ -1476,15 +1581,20 @@
       "scale": "小",
       "aliases": [
         "祖師谷昇進会商店街(振)",
-        "祖師谷神明社"
+        "祖師谷神明社",
+        "祖師谷昇進会商店街(振)盆踊り 7月18日(金)-19日(土)。"
       ],
       "confirmation_terms": [
         "祖師谷昇進会商店街(振)盆踊り",
-        "祖師谷神明社"
+        "祖師谷神明社",
+        "祖師谷昇進会商店街(振)盆踊り 7月18日(金)-19日(土)。"
       ],
-      "official_sources": [],
+      "official_sources": [
+        "https://www.city.setagaya.lg.jp/documents/889/minikomishi168.pdf"
+      ],
       "tier": "small",
-      "source": "auto_from_events_public_2026-06-13"
+      "source": "auto_from_events_public_2026-06-13",
+      "official_source_type": "official"
     },
     {
       "venue": "野毛六所神社",
@@ -1497,15 +1607,20 @@
         "野毛六所神社",
         "野毛町会",
         "野毛町会 納涼",
-        "野毛町会 納涼盆踊り"
+        "野毛町会 納涼盆踊り",
+        "野毛町会 納涼盆踊り大会 7月26日(土)-27日(日)"
       ],
       "confirmation_terms": [
         "野毛町会 納涼盆踊り大会",
-        "野毛六所神社"
+        "野毛六所神社",
+        "野毛町会 納涼盆踊り大会 7月26日(土)-27日(日)"
       ],
-      "official_sources": [],
+      "official_sources": [
+        "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf"
+      ],
       "tier": "small",
-      "source": "auto_from_events_public_2026-06-13"
+      "source": "auto_from_events_public_2026-06-13",
+      "official_source_type": "official"
     },
     {
       "venue": "鎌田天神社",
@@ -1517,15 +1632,20 @@
       "aliases": [
         "鎌田協和会 鎌田",
         "鎌田協和会 鎌田納涼",
-        "鎌田天神社"
+        "鎌田天神社",
+        "鎌田協和会 鎌田納涼盆踊り 7月26日(土) 18:30-。"
       ],
       "confirmation_terms": [
         "鎌田協和会 鎌田納涼盆踊り",
-        "鎌田天神社"
+        "鎌田天神社",
+        "鎌田協和会 鎌田納涼盆踊り 7月26日(土) 18:30-。"
       ],
-      "official_sources": [],
+      "official_sources": [
+        "https://www.city.setagaya.lg.jp/documents/10549/minikomisinogawa110gou.pdf"
+      ],
       "tier": "small",
-      "source": "auto_from_events_public_2026-06-13"
+      "source": "auto_from_events_public_2026-06-13",
+      "official_source_type": "official"
     },
     {
       "venue": "駒澤大学 駒沢キャンパス",
@@ -1535,15 +1655,19 @@
       ],
       "scale": "小",
       "aliases": [
-        "駒澤大学 駒沢キャンパス"
+        "駒澤大学 駒沢キャンパス",
+        "駒澤大学同窓会東京都支部・営友会"
       ],
       "confirmation_terms": [
         "駒澤大学同窓会東京都支部・営友会",
         "駒澤大学 駒沢キャンパス"
       ],
-      "official_sources": [],
+      "official_sources": [
+        "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf"
+      ],
       "tier": "small",
-      "source": "auto_from_events_public_2026-06-13"
+      "source": "auto_from_events_public_2026-06-13",
+      "official_source_type": "official"
     },
     {
       "venue": "代々木公園野外ステージ",
@@ -1572,15 +1696,20 @@
       ],
       "scale": "中",
       "aliases": [
-        "新井薬師公園"
+        "新井薬師公園",
+        "新井町会連合会・中野通り桜まつり実行委員会「中野通り桜まつり」"
       ],
       "confirmation_terms": [
         "中野通り桜まつり",
-        "新井薬師公園"
+        "新井薬師公園",
+        "新井町会連合会・中野通り桜まつり実行委員会「中野通り桜まつり」"
       ],
-      "official_sources": [],
+      "official_sources": [
+        "https://nakano-arai.gr.jp/nakanodoorisakuramatsuri/"
+      ],
       "tier": "medium",
-      "source": "auto_from_events_public_2026-06-13"
+      "source": "auto_from_events_public_2026-06-13",
+      "official_source_type": "official"
     },
     {
       "venue": "ふるさと千川ひろば(千川小学校校庭跡地)",
@@ -1682,15 +1811,20 @@
       ],
       "scale": "大",
       "aliases": [
-        "水元公園内はなしょうぶ園口"
+        "水元公園内はなしょうぶ園口",
+        "「葛飾菖蒲まつり 水元公園会場 民踊パレード 5月31日(日)。"
       ],
       "confirmation_terms": [
         "葛飾菖蒲まつり 水元公園会場 民踊パレード",
-        "水元公園内はなしょうぶ園口"
+        "水元公園内はなしょうぶ園口",
+        "「葛飾菖蒲まつり 水元公園会場 民踊パレード 5月31日(日)。"
       ],
-      "official_sources": [],
+      "official_sources": [
+        "https://www.city.katsushika.lg.jp/tourism/1000064/1028427.html"
+      ],
       "tier": "large",
-      "source": "auto_from_events_public_2026-06-13"
+      "source": "auto_from_events_public_2026-06-13",
+      "official_source_type": "official"
     },
     {
       "venue": "北葛西コミュニティ会館",
@@ -1727,6 +1861,190 @@
       "official_sources": [],
       "tier": "medium",
       "source": "auto_from_events_public_2026-06-13"
+    },
+    {
+      "venue": "大蔵氷川神社",
+      "event_name": "大蔵本村睦会 ｢盆踊り大会｣",
+      "months": [
+        7
+      ],
+      "scale": "小",
+      "aliases": [
+        "大蔵氷川神社",
+        "大蔵本村睦会 ｢盆踊り大会｣",
+        "大蔵本村睦会 ｢盆踊り大会｣ 7月20日(日)午後7時-(午後6時-子ども盆踊り)"
+      ],
+      "confirmation_terms": [
+        "大蔵本村睦会 ｢盆踊り大会｣",
+        "大蔵氷川神社",
+        "大蔵本村睦会 ｢盆踊り大会｣ 7月20日(日)午後7時-(午後6時-子ども盆踊り)"
+      ],
+      "official_sources": [
+        "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf"
+      ],
+      "tier": "reviewed_source",
+      "source": "official_source_review",
+      "official_source_type": "official"
+    },
+    {
+      "venue": "玉川中町公園",
+      "event_name": "納涼盆踊り大会",
+      "months": [
+        7
+      ],
+      "scale": "中",
+      "aliases": [
+        "玉川中町公園",
+        "納涼盆踊り大会",
+        "納涼盆踊り大会 7月19日(土)-20日(日)。"
+      ],
+      "confirmation_terms": [
+        "納涼盆踊り大会",
+        "玉川中町公園",
+        "納涼盆踊り大会 7月19日(土)-20日(日)。"
+      ],
+      "official_sources": [
+        "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf"
+      ],
+      "tier": "reviewed_source",
+      "source": "official_source_review",
+      "official_source_type": "official"
+    },
+    {
+      "venue": "駒沢緑泉公園",
+      "event_name": "納涼盆踊り大会",
+      "months": [
+        8
+      ],
+      "scale": "中",
+      "aliases": [
+        "駒沢緑泉公園",
+        "納涼盆踊り大会",
+        "納涼盆踊り大会 8月3日(日)-4日(月) 19:00-。"
+      ],
+      "confirmation_terms": [
+        "納涼盆踊り大会",
+        "駒沢緑泉公園",
+        "納涼盆踊り大会 8月3日(日)-4日(月) 19:00-。"
+      ],
+      "official_sources": [
+        "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf"
+      ],
+      "tier": "reviewed_source",
+      "source": "official_source_review",
+      "official_source_type": "official"
+    },
+    {
+      "venue": "山王パークタワー公開空地",
+      "event_name": "山王音頭と民踊大会",
+      "months": [
+        6
+      ],
+      "scale": "",
+      "aliases": [
+        "山王パークタワー公開空地",
+        "山王音頭と民踊大会"
+      ],
+      "confirmation_terms": [
+        "山王音頭と民踊大会",
+        "山王パークタワー公開空地"
+      ],
+      "official_sources": [
+        "https://www.tenkamatsuri.jp/minyo/"
+      ],
+      "tier": "reviewed_source",
+      "source": "official_source_review",
+      "official_source_type": "official"
+    },
+    {
+      "venue": "行幸通り",
+      "event_name": "丸の内de盆踊り",
+      "months": [
+        7
+      ],
+      "scale": "",
+      "aliases": [
+        "行幸通り",
+        "丸の内de盆踊り"
+      ],
+      "confirmation_terms": [
+        "丸の内de盆踊り",
+        "行幸通り"
+      ],
+      "official_sources": [
+        "https://www.marunouchi.com/pickup/event/6763/"
+      ],
+      "tier": "reviewed_source",
+      "source": "official_source_review",
+      "official_source_type": "official"
+    },
+    {
+      "venue": "六本木ヒルズアリーナ",
+      "event_name": "六本木ヒルズ盆踊り",
+      "months": [
+        8
+      ],
+      "scale": "",
+      "aliases": [
+        "六本木ヒルズアリーナ",
+        "六本木ヒルズ盆踊り"
+      ],
+      "confirmation_terms": [
+        "六本木ヒルズ盆踊り",
+        "六本木ヒルズアリーナ"
+      ],
+      "official_sources": [
+        "https://www.roppongihills.com/events/2025/08/0478.html"
+      ],
+      "tier": "reviewed_source",
+      "source": "official_source_review",
+      "official_source_type": "official"
+    },
+    {
+      "venue": "神田明神境内",
+      "event_name": "神田明神納涼祭り アニソン盆踊り",
+      "months": [
+        8
+      ],
+      "scale": "",
+      "aliases": [
+        "神田明神境内",
+        "神田明神納涼祭り アニソン盆踊り"
+      ],
+      "confirmation_terms": [
+        "神田明神納涼祭り アニソン盆踊り",
+        "神田明神境内"
+      ],
+      "official_sources": [
+        "https://www.nouryo-matsuri.com/pages/6314608/page_202208061239"
+      ],
+      "tier": "reviewed_source",
+      "source": "official_source_review",
+      "official_source_type": "official"
+    },
+    {
+      "venue": "円光院駐車場",
+      "event_name": "世田谷駅前商店街振興組合「納涼盆踊り大会 」",
+      "months": [
+        7
+      ],
+      "scale": "小",
+      "aliases": [
+        "円光院駐車場",
+        "世田谷駅前商店街振興組合「納涼盆踊り大会 」"
+      ],
+      "confirmation_terms": [
+        "世田谷駅前商店街振興組合「納涼盆踊り大会 」",
+        "円光院駐車場"
+      ],
+      "official_sources": [
+        "https://setagaya-station.com/news/event/event-info2025/"
+      ],
+      "tier": "reviewed_source",
+      "source": "official_source_review",
+      "official_source_type": "official"
     }
-  ]
+  ],
+  "updated_at": "2026-06-17T13:37:14.936466+00:00",
+  "updated_by": "apply_official_source_review_decisions.py"
 }

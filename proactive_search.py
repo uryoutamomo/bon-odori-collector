@@ -2,13 +2,19 @@ import html
 import json
 import os
 import re
+import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
 
 
 DEFAULT_CONFIG = "data/evergreen_events.json"
 DEFAULT_STATE = "data/proactive_search_state.json"
+DEFAULT_OFFICIAL_CANDIDATES = "data/official_source_candidates.json"
 BON_KEYWORDS = ("盆踊り", "盆おどり", "民踊大会", "音頭と民踊")
+DATE_RE = re.compile(
+    r"(?:(20\d{2})年)?\s*(\d{1,2})月\s*(\d{1,2})日"
+    r"|(?:(20\d{2})[-/])?(\d{1,2})[-/](\d{1,2})"
+)
 
 
 def parse_months(value):
@@ -199,34 +205,175 @@ def build_queries(target, year):
 
 
 def check_official_sources(target, year, timeout=20):
-    evidence = []
+    return [
+        evidence
+        for result in scan_official_sources(target, year, timeout=timeout)
+        if result.get("status") == "confirmed"
+        for evidence in [result["evidence"]]
+    ]
+
+
+def scan_official_sources(target, year, timeout=20, max_links_per_source=8):
+    results = []
     for url in target.get("official_sources") or []:
         try:
-            req = urllib.request.Request(
-                url,
-                headers={"User-Agent": "bon-odori-collector/1.0"},
+            page = fetch_html_page(url, timeout=timeout)
+            if not page:
+                continue
+            pages = [page]
+            pages.extend(
+                linked_page
+                for linked_page in discover_relevant_pages(page, target, year, timeout=timeout)[:max_links_per_source]
+                if linked_page.get("url") != page.get("url")
             )
-            with urllib.request.urlopen(req, timeout=timeout) as response:
-                content_type = response.headers.get("Content-Type", "")
-                if "text/html" not in content_type:
-                    continue
-                raw = response.read(1_500_000).decode("utf-8", errors="ignore")
-            text = _html_to_text(raw)
-            item = {"text": text, "url": url}
-            if is_target_confirmation(item, target, year):
-                terms = _unique(
-                    list(target.get("confirmation_terms") or [])
-                    or [target.get("event_name"), target.get("venue")]
-                )
-                evidence.append({
-                    "source": "official",
-                    "title": f"{target['event_name']} 公式情報",
-                    "text": _snippet(text, terms, year),
-                    "url": url,
-                })
+            for candidate_page in pages:
+                item = {
+                    "title": candidate_page.get("title") or "",
+                    "text": candidate_page.get("text") or "",
+                    "url": candidate_page.get("url") or "",
+                }
+                status = "confirmed" if is_target_confirmation(item, target, year) else "unconfirmed"
+                candidate = build_official_source_candidate(target, item, year, status)
+                results.append(candidate)
         except Exception as exc:
             print(f"[proactive] 公式URL確認失敗（{url}）: {exc}")
-    return evidence
+    return dedupe_scan_results(results)
+
+
+def fetch_html_page(url, timeout=20):
+    req = urllib.request.Request(
+        url,
+        headers={"User-Agent": "bon-odori-collector/1.0"},
+    )
+    with urllib.request.urlopen(req, timeout=timeout) as response:
+        content_type = response.headers.get("Content-Type", "")
+        if "text/html" not in content_type:
+            return None
+        raw = response.read(1_500_000).decode("utf-8", errors="ignore")
+    return {
+        "url": url,
+        "title": extract_title(raw),
+        "text": _html_to_text(raw),
+        "links": extract_links(raw, url),
+    }
+
+
+def discover_relevant_pages(page, target, year, timeout=20):
+    pages = []
+    scored_links = []
+    terms = _unique(
+        list(target.get("confirmation_terms") or [])
+        + list(target.get("aliases") or [])
+        + [target.get("event_name"), target.get("venue")]
+    )
+    for link in page.get("links") or []:
+        label = link.get("label") or ""
+        url = link.get("url") or ""
+        hay = f"{label} {url}"
+        if not same_site(page.get("url"), url):
+            continue
+        has_term = any(term and term in hay for term in terms)
+        has_event_keyword = any(keyword in hay for keyword in BON_KEYWORDS)
+        if not has_term and not has_event_keyword:
+            continue
+        score = 0
+        if str(year) in hay:
+            score += 3
+        if has_term:
+            score += 4
+        if has_event_keyword:
+            score += 2
+        if score:
+            scored_links.append((score, link))
+    for _, link in sorted(scored_links, key=lambda row: (-row[0], row[1]["url"])):
+        try:
+            fetched = fetch_html_page(link["url"], timeout=timeout)
+            if fetched:
+                pages.append(fetched)
+        except Exception as exc:
+            print(f"[proactive] 関連ページ取得失敗（{link['url']}）: {exc}")
+    return pages
+
+
+def build_official_source_candidate(target, item, year, status):
+    terms = _unique(
+        list(target.get("confirmation_terms") or [])
+        or [target.get("event_name"), target.get("venue")]
+    )
+    text = item.get("text") or item.get("title") or ""
+    evidence_text = _snippet(text, terms, year, width=520)
+    evidence = {
+        "source": "official",
+        "title": item.get("title") or f"{target['event_name']} 公式情報",
+        "text": evidence_text,
+        "url": item.get("url") or "",
+    }
+    dates = extract_dates(evidence_text, year)
+    return {
+        "venue": target.get("venue") or "",
+        "event_name": target.get("event_name") or target.get("venue") or "",
+        "year": year,
+        "status": status,
+        "source_type": target.get("official_source_type") or "official",
+        "source_url": item.get("url") or "",
+        "title": item.get("title") or "",
+        "detected_dates": dates,
+        "evidence": evidence,
+    }
+
+
+def dedupe_scan_results(results):
+    deduped = {}
+    for row in results or []:
+        key = row.get("source_url") or row.get("title") or json.dumps(row, ensure_ascii=False)
+        current = deduped.get(key)
+        if not current or current.get("status") != "confirmed":
+            deduped[key] = row
+    return list(deduped.values())
+
+
+def extract_title(raw):
+    match = re.search(r"(?is)<title[^>]*>(.*?)</title>", raw or "")
+    if not match:
+        return ""
+    title = _html_to_text(match.group(1))
+    return title.strip()
+
+
+def extract_links(raw, base_url):
+    links = []
+    for match in re.finditer(r'(?is)<a\s+[^>]*href=["\']([^"\']+)["\'][^>]*>(.*?)</a>', raw or ""):
+        url = urllib.parse.urljoin(base_url, html.unescape(match.group(1)).strip())
+        if not url.startswith(("http://", "https://")):
+            continue
+        label = _html_to_text(match.group(2))
+        links.append({"url": url.split("#", 1)[0], "label": label})
+    return links
+
+
+def same_site(base_url, url):
+    try:
+        return urllib.parse.urlparse(base_url).netloc == urllib.parse.urlparse(url).netloc
+    except Exception:
+        return False
+
+
+def extract_dates(text, default_year):
+    dates = []
+    for match in DATE_RE.finditer(text or ""):
+        if match.group(2):
+            year = int(match.group(1) or default_year)
+            month = int(match.group(2))
+            day = int(match.group(3))
+        else:
+            year = int(match.group(4) or default_year)
+            month = int(match.group(5))
+            day = int(match.group(6))
+        if 1 <= month <= 12 and 1 <= day <= 31:
+            value = f"{year:04d}-{month:02d}-{day:02d}"
+            if value not in dates:
+                dates.append(value)
+    return dates
 
 
 def build_report(targets, collected_items, year):
@@ -267,7 +414,10 @@ def is_target_confirmation(item, target, year):
 def _is_confirmation(text, terms, year):
     compact = re.sub(r"\s+", " ", html.unescape(text or ""))
     has_name = any(term and term in compact for term in terms)
-    has_context = any(keyword in compact for keyword in BON_KEYWORDS)
+    has_context = (
+        any(keyword in compact for keyword in BON_KEYWORDS)
+        or any(term and term in compact and re.search(r"おどり|踊り|踊", term) for term in terms)
+    )
     has_year = str(year) in compact or f"令和{year - 2018}年" in compact
     return has_name and has_context and has_year
 

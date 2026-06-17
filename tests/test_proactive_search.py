@@ -7,6 +7,8 @@ from datetime import datetime, timezone
 from proactive_search import (
     build_queries,
     build_report,
+    extract_dates,
+    extract_links,
     load_targets,
     parse_months,
     select_due_targets,
@@ -185,6 +187,38 @@ class ProactiveSearchTest(unittest.TestCase):
         }]
         report = build_report([target], items, 2026)
         self.assertEqual(report[0]["status"], "unconfirmed")
+
+    def test_report_accepts_odori_event_without_bon_word(self):
+        target = {
+            "venue": "秩父宮ラグビー場駐車場",
+            "event_name": "郡上おどり in 青山",
+            "confirmation_terms": ["郡上おどり"],
+            "months": [6],
+        }
+        items = [{
+            "title": "郡上おどり2026開催決定!!",
+            "text": "郡上おどりの日程がきまりました。6月26日（金）17:00～20:30",
+            "url": "https://aoyama-gaienmae.or.jp/news/20260326/",
+        }]
+
+        report = build_report([target], items, 2026)
+
+        self.assertEqual(report[0]["status"], "confirmed")
+
+    def test_extract_links_normalizes_same_site_article_urls(self):
+        raw = '<a href="/news/20260326/">郡上おどり2026開催決定!!</a>'
+
+        links = extract_links(raw, "https://aoyama-gaienmae.or.jp/news/")
+
+        self.assertEqual(links, [{
+            "url": "https://aoyama-gaienmae.or.jp/news/20260326/",
+            "label": "郡上おどり2026開催決定!!",
+        }])
+
+    def test_extract_dates_from_japanese_text(self):
+        text = "6月26日（金）17:00～20:30 6月27日（土）17:00～20:00"
+
+        self.assertEqual(extract_dates(text, 2026), ["2026-06-26", "2026-06-27"])
 
 
 if __name__ == "__main__":
