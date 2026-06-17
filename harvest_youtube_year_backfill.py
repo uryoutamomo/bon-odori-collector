@@ -65,11 +65,11 @@ def year_of(date):
     return int(match.group(1)) if match else None
 
 
-def queue_rows(queue, limit, priorities):
+def queue_rows(queue, limit, priorities, offset=0):
     priorities = set(priorities)
     rows = [row for row in queue.get("rows") or [] if row.get("priority") in priorities]
     rows.sort(key=lambda row: (-row.get("priority_score", 0), row.get("target_year", 9999), row.get("event_name", "")))
-    return rows[:limit]
+    return rows[offset:offset + limit]
 
 
 def search_videos_for_row(row, api_key, max_results):
@@ -193,8 +193,8 @@ def candidate_row(queue_row, video):
     }
 
 
-def harvest(queue, api_key, limit=12, max_results=5, priorities=("high",)):
-    selected = queue_rows(queue, limit=limit, priorities=priorities)
+def harvest(queue, api_key, limit=12, max_results=5, priorities=("high",), offset=0):
+    selected = queue_rows(queue, limit=limit, priorities=priorities, offset=offset)
     search_rows = []
     seen_video_query = set()
     for row in selected:
@@ -237,6 +237,7 @@ def harvest(queue, api_key, limit=12, max_results=5, priorities=("high",)):
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "source": str(QUEUE),
         "selected_queue_count": len(selected),
+        "queue_offset": offset,
         "max_results_per_query": max_results,
         "api_request_count_estimate": len(selected) * 2 + ((len(snippets) + 49) // 50),
         "summary": {
@@ -247,6 +248,39 @@ def harvest(queue, api_key, limit=12, max_results=5, priorities=("high",)):
         },
         "selected_queue_rows": selected,
         "candidates": candidates,
+    }
+
+
+def merge_harvests(existing, fresh):
+    if not existing:
+        return fresh
+    selected = {}
+    for row in (existing.get("selected_queue_rows") or []) + (fresh.get("selected_queue_rows") or []):
+        selected[row.get("queue_id")] = row
+    candidates = {}
+    for row in (existing.get("candidates") or []) + (fresh.get("candidates") or []):
+        candidates[(row.get("queue_id"), row.get("video_id"))] = row
+    merged_candidates = sorted(
+        candidates.values(),
+        key=lambda row: (-row["score"], row["target_year"], row["event_name"], row["title"]),
+    )
+    counts = Counter(row["status"] for row in merged_candidates)
+    return {
+        **fresh,
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "selected_queue_count": len(selected),
+        "merged_from": existing.get("generated_at") or "",
+        "summary": {
+            "candidate_count": len(merged_candidates),
+            "status_counts": dict(sorted(counts.items())),
+            "strong_count": counts.get("strong", 0),
+            "review_count": counts.get("review", 0),
+        },
+        "selected_queue_rows": sorted(
+            selected.values(),
+            key=lambda row: (-row.get("priority_score", 0), row.get("target_year", 9999), row.get("event_name", "")),
+        ),
+        "candidates": merged_candidates,
     }
 
 
@@ -292,8 +326,10 @@ def main():
     parser.add_argument("--md-out", default=str(MD_OUT))
     parser.add_argument("--env", default=".env")
     parser.add_argument("--limit", type=int, default=12)
+    parser.add_argument("--offset", type=int, default=0)
     parser.add_argument("--max-results", type=int, default=5)
     parser.add_argument("--priority", action="append", dest="priorities")
+    parser.add_argument("--append-existing", action="store_true")
     args = parser.parse_args()
 
     api_key = load_env_value("YOUTUBE_DATA_API_KEY", args.env)
@@ -304,9 +340,12 @@ def main():
         queue,
         api_key=api_key,
         limit=args.limit,
+        offset=args.offset,
         max_results=args.max_results,
         priorities=args.priorities or ["high"],
     )
+    if args.append_existing:
+        data = merge_harvests(load_json(args.out, {}), data)
     atomic_write_json(args.out, data)
     atomic_write_text(args.md_out, render_markdown(data))
     print(

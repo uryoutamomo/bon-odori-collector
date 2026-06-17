@@ -1,17 +1,17 @@
 {
   "generated_by": "build_event_occurrence_backfill_plan.py",
-  "generated_at": "2026-06-17T15:14:41.186420+00:00",
+  "generated_at": "2026-06-17T15:18:42.047973+00:00",
   "source": "data/youtube_year_backfill_candidates.json",
   "summary": {
-    "observation_count": 6,
-    "source_video_count": 33,
+    "observation_count": 12,
+    "source_video_count": 67,
     "observations_by_year": {
-      "2023": 2,
-      "2024": 4
+      "2023": 5,
+      "2024": 7
     },
-    "observations_with_songs": 6,
-    "excluded_low_observation_count": 3,
-    "excluded_low_source_video_count": 3
+    "observations_with_songs": 11,
+    "excluded_low_observation_count": 6,
+    "excluded_low_source_video_count": 8
   },
   "observations": [
     {
@@ -179,6 +179,433 @@
           "source_count": 1,
           "source_urls": [
             "https://www.youtube.com/watch?v=dSWr8i-BIt4"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        }
+      ]
+    },
+    {
+      "observation_id": "c7d8559b7af0eb8a",
+      "series_key": "3152b3b0e9fd",
+      "event_name": "東本願寺盆踊り",
+      "venue": "東本願寺（浅草）",
+      "area": "台東区",
+      "year": 2023,
+      "date_start": "2023-08-22",
+      "date_end": "2023-08-22",
+      "observed_dates": [
+        "2023-08-22"
+      ],
+      "weekday_start": "火",
+      "weekday_end": "火",
+      "source_type": "youtube_backfill_observed",
+      "source_video_count": 7,
+      "source_channels": [
+        "祭のきせき　MatsuriNoKiseki"
+      ],
+      "confidence": "medium",
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=nBhx3qjLvFw",
+          "video_id": "nBhx3qjLvFw",
+          "title": "ご祝儀音頭 ① 　浅草 東本願寺 盆踊り 20230822",
+          "channel": "祭のきせき　MatsuriNoKiseki",
+          "published_at": "2023-08-23T08:52:11Z",
+          "score": 98
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=h1bsaNvZNFc",
+          "video_id": "h1bsaNvZNFc",
+          "title": "ご祝儀音頭 ② 　浅草 東本願寺 盆踊り 20230822",
+          "channel": "祭のきせき　MatsuriNoKiseki",
+          "published_at": "2023-08-23T08:52:11Z",
+          "score": 98
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=FYAdTKdEKdc",
+          "video_id": "FYAdTKdEKdc",
+          "title": "ふるさと音頭 ① 　浅草 東本願寺 盆踊り 20230822",
+          "channel": "祭のきせき　MatsuriNoKiseki",
+          "published_at": "2023-08-23T08:52:11Z",
+          "score": 98
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Ugvap9abX98",
+          "video_id": "Ugvap9abX98",
+          "title": "ふるさと音頭 ② 　浅草 東本願寺 盆踊り 20230822",
+          "channel": "祭のきせき　MatsuriNoKiseki",
+          "published_at": "2023-08-23T08:52:12Z",
+          "score": 98
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=HMjgBVjio1E",
+          "video_id": "HMjgBVjio1E",
+          "title": "東京音頭 ① 　浅草 東本願寺 盆踊り 20230822",
+          "channel": "祭のきせき　MatsuriNoKiseki",
+          "published_at": "2023-08-23T08:52:12Z",
+          "score": 98
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=D1c4OKGnpl4",
+          "video_id": "D1c4OKGnpl4",
+          "title": "燃えろ日本の夏祭り ① 　浅草 東本願寺 盆踊り 20230822",
+          "channel": "祭のきせき　MatsuriNoKiseki",
+          "published_at": "2023-08-23T08:52:12Z",
+          "score": 98
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=6MaXICcHnLM",
+          "video_id": "6MaXICcHnLM",
+          "title": "盆踊り エロティカセブン（サザンオールスターズ）  浅草 東本願寺 盆踊り 20230822",
+          "channel": "祭のきせき　MatsuriNoKiseki",
+          "published_at": "2023-08-23T08:52:12Z",
+          "score": 98
+        }
+      ],
+      "songs": [
+        {
+          "song_name": "ご祝儀音頭 ①",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=nBhx3qjLvFw"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "ご祝儀音頭 ②",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=h1bsaNvZNFc"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "ふるさと音頭 ①",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=FYAdTKdEKdc"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "ふるさと音頭 ②",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=Ugvap9abX98"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "東京音頭 ①",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=HMjgBVjio1E"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        }
+      ]
+    },
+    {
+      "observation_id": "5e38ae740179c50f",
+      "series_key": "30e9a87bdb27",
+      "event_name": "第28回新橋こいち祭 盆踊り",
+      "venue": "桜田公園",
+      "area": "港区",
+      "year": 2023,
+      "date_start": "2023-07-27",
+      "date_end": "2023-07-27",
+      "observed_dates": [
+        "2023-07-27"
+      ],
+      "weekday_start": "木",
+      "weekday_end": "木",
+      "source_type": "youtube_backfill_observed",
+      "source_video_count": 3,
+      "source_channels": [
+        "祭のきせき　MatsuriNoKiseki"
+      ],
+      "confidence": "medium",
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=f3UwWZfi8ig",
+          "video_id": "f3UwWZfi8ig",
+          "title": "北海盆唄 　新橋こいち祭 盆踊り 桜田公園会場１部 20230727",
+          "channel": "祭のきせき　MatsuriNoKiseki",
+          "published_at": "2023-07-27T17:40:33Z",
+          "score": 88
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=FQtiUvmv4XU",
+          "video_id": "FQtiUvmv4XU",
+          "title": "新橋音頭 　新橋こいち祭 盆踊り 桜田公園会場１部 20230727",
+          "channel": "祭のきせき　MatsuriNoKiseki",
+          "published_at": "2023-07-27T17:40:33Z",
+          "score": 88
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=OmshTDSWrHk",
+          "video_id": "OmshTDSWrHk",
+          "title": "燃えろ日本の夏祭り 　新橋こいち祭 盆踊り 桜田公園会場２部 20230727",
+          "channel": "祭のきせき　MatsuriNoKiseki",
+          "published_at": "2023-07-27T17:40:33Z",
+          "score": 88
+        }
+      ],
+      "songs": [
+        {
+          "song_name": "北海盆唄",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=f3UwWZfi8ig"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "新橋音頭",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=FQtiUvmv4XU"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        }
+      ]
+    },
+    {
+      "observation_id": "903be26b351a9911",
+      "series_key": "aca270553085",
+      "event_name": "西久保八幡神社 盆踊り",
+      "venue": "西久保八幡神社",
+      "area": "港区",
+      "year": 2023,
+      "date_start": "2023-08-10",
+      "date_end": "2023-08-12",
+      "observed_dates": [
+        "2023-08-10",
+        "2023-08-12"
+      ],
+      "weekday_start": "木",
+      "weekday_end": "土",
+      "source_type": "youtube_backfill_observed",
+      "source_video_count": 9,
+      "source_channels": [
+        "和太鼓お祭りチャンネル",
+        "山崎茂雄"
+      ],
+      "confidence": "high",
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=Oe3r8_nj_fg",
+          "video_id": "Oe3r8_nj_fg",
+          "title": "「チャンチキおけさ」　2023年西久保八幡神社例大祭盆踊り３２　東京都港区",
+          "channel": "和太鼓お祭りチャンネル",
+          "published_at": "2023-08-22T10:30:09Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=EBLflSvucS4",
+          "video_id": "EBLflSvucS4",
+          "title": "「ハワイ音頭」　2023年西久保八幡神社例大祭盆踊り７　東京都港区",
+          "channel": "和太鼓お祭りチャンネル",
+          "published_at": "2023-08-11T06:00:09Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=XkEMOfvHW_I",
+          "video_id": "XkEMOfvHW_I",
+          "title": "ステテコシャンシャン　2023年西久保八幡神社例大祭盆踊り３１　東京都港区",
+          "channel": "和太鼓お祭りチャンネル",
+          "published_at": "2023-08-22T10:00:31Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=nRSZj-VqOoQ",
+          "video_id": "nRSZj-VqOoQ",
+          "title": "大東京音頭　2023年西久保八幡神社例大祭盆踊り３６　東京都港区",
+          "channel": "和太鼓お祭りチャンネル",
+          "published_at": "2023-08-24T10:30:13Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=bqd4gOF7ZLg",
+          "video_id": "bqd4gOF7ZLg",
+          "title": "東京みなと音頭　2023年西久保八幡神社例大祭盆踊り３８　東京都港区",
+          "channel": "和太鼓お祭りチャンネル",
+          "published_at": "2023-08-25T10:30:11Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=GzQ1Eie6I7w",
+          "video_id": "GzQ1Eie6I7w",
+          "title": "４K🏮＃チャンチキおけさ🏮＃西久保八幡神社盆踊り大会2023＃日本の夏祭り＃ChantikiOkesa＃2023年8月12日",
+          "channel": "山崎茂雄",
+          "published_at": "2023-08-13T13:55:10Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=OAP1Zfk04Qc",
+          "video_id": "OAP1Zfk04Qc",
+          "title": "４K🏮＃夜に賭ける🏮＃西久保八幡神社盆踊り大会2023＃日本の夏祭り＃YoruniKakeru＃2023年8月12日",
+          "channel": "山崎茂雄",
+          "published_at": "2023-08-13T14:01:59Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=bg8A_dBB0fI",
+          "video_id": "bg8A_dBB0fI",
+          "title": "４K🏮＃東京ばやし🏮＃西久保八幡神社盆踊り大会2023＃日本の夏祭り＃TokyoBayashi＃2023年8月12日",
+          "channel": "山崎茂雄",
+          "published_at": "2023-08-13T13:51:03Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=xpWDtyzDfoY",
+          "video_id": "xpWDtyzDfoY",
+          "title": "４K🏮＃東京タワー音頭🏮＃西久保八幡神社盆踊り大会2023＃日本の夏祭り＃TokyoTowerOndo＃2023年8月12日",
+          "channel": "山崎茂雄",
+          "published_at": "2023-08-13T13:43:09Z",
+          "score": 100
+        }
+      ],
+      "songs": [
+        {
+          "song_name": "ドラえもん音頭",
+          "source_count": 5,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=aUaDD2AnzKg"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "品川音頭",
+          "source_count": 5,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=dWkvzuMjKto"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "巣鴨花咲き音頭",
+          "source_count": 5,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=ek_4th2ac_Q"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "東京音頭",
+          "source_count": 5,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=4ejK1xgeWkY"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "炭坑節",
+          "source_count": 5,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=NmWnvIUbpsA"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "品川甚句",
+          "source_count": 5,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=2VLjsb_YKG4"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "大東京音頭",
+          "source_count": 5,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=z-IDFwS5hr0"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "東京みなと音頭",
+          "source_count": 5,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=m-eM5cQnVLM"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "少年八木節",
+          "source_count": 3,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=bGwi1pwBwSQ"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "たいとう音頭",
+          "source_count": 2,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=j4GufSJaykI"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "ダンシングヒーロー",
+          "source_count": 2,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=urYWz39UAjA"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "ドンパン節",
+          "source_count": 2,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=O1OICW4Op6Y"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "チャンチキおけさ",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=Oe3r8_nj_fg"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "朝顔音頭",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=ECNfC0-rdMs"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "ハワイ音頭",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=EBLflSvucS4"
           ],
           "source_type": "youtube_backfill_title_observed",
           "confidence": "hint"
@@ -871,6 +1298,339 @@
       ]
     },
     {
+      "observation_id": "3825abd528e2edc7",
+      "series_key": "3152b3b0e9fd",
+      "event_name": "東本願寺盆踊り",
+      "venue": "東本願寺（浅草）",
+      "area": "台東区",
+      "year": 2024,
+      "date_start": "2024-08-21",
+      "date_end": "2024-08-21",
+      "observed_dates": [
+        "2024-08-21"
+      ],
+      "weekday_start": "水",
+      "weekday_end": "水",
+      "source_type": "youtube_backfill_observed",
+      "source_video_count": 4,
+      "source_channels": [
+        "Tokyo Dance Storage",
+        "joy joy"
+      ],
+      "confidence": "medium",
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=Dyf9OD1euNQ",
+          "video_id": "Dyf9OD1euNQ",
+          "title": "full 浅草・東本願寺盆踊り2024.8.21 Asakusa-Higashi Honganji Bondance tokyo japan",
+          "channel": "joy joy",
+          "published_at": "2024-08-22T02:37:11Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=yP1rWVk6PdQ",
+          "video_id": "yP1rWVk6PdQ",
+          "title": "盆踊り｜ご祝儀音頭｜東本願寺盆踊り2024 / Traditional Japanese Bon dance in Higashi Honganji Temple[4K]",
+          "channel": "Tokyo Dance Storage",
+          "published_at": "2025-02-12T09:01:12Z",
+          "score": 98
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=myNbWB8I6kY",
+          "video_id": "myNbWB8I6kY",
+          "title": "盆踊り｜ふるさと音頭｜東本願寺盆踊り2024 / Traditional Japanese Bon dance in Higashi Honganji Temple[4K]",
+          "channel": "Tokyo Dance Storage",
+          "published_at": "2025-02-12T09:01:02Z",
+          "score": 98
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=8IyBxxtvQmA",
+          "video_id": "8IyBxxtvQmA",
+          "title": "盆踊り｜嵐 - One Love｜東本願寺盆踊り2024 / Traditional Japanese Bon dance in Higashi Honganji Temple[4K]",
+          "channel": "Tokyo Dance Storage",
+          "published_at": "2025-02-14T09:00:14Z",
+          "score": 98
+        }
+      ],
+      "songs": []
+    },
+    {
+      "observation_id": "e50f081d8be1b6fb",
+      "series_key": "bcbfa4cac9e3",
+      "event_name": "自由が丘納涼盆踊り大会",
+      "venue": "自由が丘駅前ロータリー 特設会場",
+      "area": "目黒区",
+      "year": 2024,
+      "date_start": "2024-07-13",
+      "date_end": "2024-07-15",
+      "observed_dates": [
+        "2024-07-13",
+        "2024-07-15"
+      ],
+      "weekday_start": "土",
+      "weekday_end": "月",
+      "source_type": "youtube_backfill_observed",
+      "source_video_count": 3,
+      "source_channels": [
+        "Tokyo Lonely Walker",
+        "Urban Walk",
+        "愛と光と優しさのお福分けch"
+      ],
+      "confidence": "medium",
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=ONuZ_KNO2FU",
+          "video_id": "ONuZ_KNO2FU",
+          "title": "[4K]🇯🇵 自由が丘納涼盆踊り大会 「ホイップるん音頭」「自由が丘小唄」最終日 / Traditional Japanese Bon dance in Jiyugaoka. Short ver.",
+          "channel": "Tokyo Lonely Walker",
+          "published_at": "2024-07-15T13:57:11Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=HvX9QOedVNE",
+          "video_id": "HvX9QOedVNE",
+          "title": "【自由が丘納涼盆踊り大会 2024】「夜に駆ける」- YOASOBI  #盆踊り Jiyugaoka Bon Dance Festival.",
+          "channel": "Urban Walk",
+          "published_at": "2024-07-14T08:00:10Z",
+          "score": 98
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=lMgjZ_F8Mvw",
+          "video_id": "lMgjZ_F8Mvw",
+          "title": "【自由が丘納涼盆踊り大会｜2024/7/15 KIN8】愛と平和の啓蒙/Enlightenment of Love and Peace",
+          "channel": "愛と光と優しさのお福分けch",
+          "published_at": "2024-07-15T11:24:47Z",
+          "score": 98
+        }
+      ],
+      "songs": [
+        {
+          "song_name": "夜に駆ける",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=HvX9QOedVNE"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "ホイップるん音頭 with ホイップるん ＆ POiNT / Whiprun Ondo",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=ONuZ_KNO2FU"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "自由が丘小唄 / Jiyuugaoka Kouta",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=ONuZ_KNO2FU"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "ホイップるん音頭",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=ONuZ_KNO2FU"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "自由が丘小唄",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=ONuZ_KNO2FU"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        }
+      ]
+    },
+    {
+      "observation_id": "e1558ac87a836c1c",
+      "series_key": "aca270553085",
+      "event_name": "西久保八幡神社 盆踊り",
+      "venue": "西久保八幡神社",
+      "area": "港区",
+      "year": 2024,
+      "date_start": "2024-08-09",
+      "date_end": "2024-08-09",
+      "observed_dates": [
+        "2024-08-09"
+      ],
+      "weekday_start": "金",
+      "weekday_end": "金",
+      "source_type": "youtube_backfill_observed",
+      "source_video_count": 8,
+      "source_channels": [
+        "和太鼓お祭りチャンネル"
+      ],
+      "confidence": "medium",
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=r56WKNmIGQU",
+          "video_id": "r56WKNmIGQU",
+          "title": "ステテコシャンシャン　2024年西久保八幡神社盆踊り29　東京都港区",
+          "channel": "和太鼓お祭りチャンネル",
+          "published_at": "2024-08-17T10:00:46Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=LCIo27LHau4",
+          "video_id": "LCIo27LHau4",
+          "title": "ドンパン節　2024年西久保八幡神社盆踊り８　東京都港区",
+          "channel": "和太鼓お祭りチャンネル",
+          "published_at": "2024-08-13T11:30:10Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=0joH8q6PMow",
+          "video_id": "0joH8q6PMow",
+          "title": "八木節　2024年西久保八幡神社盆踊り25　東京都港区",
+          "channel": "和太鼓お祭りチャンネル",
+          "published_at": "2024-08-17T01:00:00Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=0mdYNfYiD1M",
+          "video_id": "0mdYNfYiD1M",
+          "title": "大角会　2024年西久保八幡神社盆踊り17　東京都港区",
+          "channel": "和太鼓お祭りチャンネル",
+          "published_at": "2024-08-16T10:00:02Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=tlxWBaWQRVw",
+          "video_id": "tlxWBaWQRVw",
+          "title": "新・二十一世紀音頭　2024年西久保八幡神社盆踊り５　東京都港区",
+          "channel": "和太鼓お祭りチャンネル",
+          "published_at": "2024-08-13T10:00:56Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=lT7nVNcJfhc",
+          "video_id": "lT7nVNcJfhc",
+          "title": "東京ばやし　2024年西久保八幡神社盆踊り12　東京都港区",
+          "channel": "和太鼓お祭りチャンネル",
+          "published_at": "2024-08-14T11:30:24Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=iyTlhZf72JU",
+          "video_id": "iyTlhZf72JU",
+          "title": "火の国太鼓　2024年西久保八幡神社盆踊り３　東京都港区",
+          "channel": "和太鼓お祭りチャンネル",
+          "published_at": "2024-08-12T11:00:44Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=I8US5cj39Lo",
+          "video_id": "I8US5cj39Lo",
+          "title": "銀座カンカン娘　2024年西久保八幡神社盆踊り23　東京都港区",
+          "channel": "和太鼓お祭りチャンネル",
+          "published_at": "2024-08-16T23:00:09Z",
+          "score": 100
+        }
+      ],
+      "songs": [
+        {
+          "song_name": "東京音頭",
+          "source_count": 8,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=HthHhLSB2p8"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "ハワイ音頭",
+          "source_count": 8,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=O820LE61H5c"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "東京タワー音頭",
+          "source_count": 8,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=95V9_ohrde4"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "新二十一世紀音頭",
+          "source_count": 8,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=tlxWBaWQRVw"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "ドラえもん音頭",
+          "source_count": 8,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=IjlciywfhlI"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "ひろしのさくら音頭",
+          "source_count": 6,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=ypONISwbhLU"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "ドンパン節",
+          "source_count": 6,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=LCIo27LHau4"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "花笠音頭",
+          "source_count": 6,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=q947Xl4eo-I"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "炭坑節",
+          "source_count": 6,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=ftVuba0bnnA"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "まつのき小唄",
+          "source_count": 6,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=tB-ujWMhKNM"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        }
+      ]
+    },
+    {
       "observation_id": "37bfe429d1174d03",
       "series_key": "b1749efb9aa6",
       "event_name": "郡上おどり in 青山 2025",
@@ -1127,6 +1887,310 @@
           ],
           "source_type": "youtube_backfill_title_observed",
           "confidence": "hint"
+        }
+      ]
+    },
+    {
+      "observation_id": "ff8ff75c8f6eb0d2",
+      "series_key": "bcbfa4cac9e3",
+      "event_name": "自由が丘納涼盆踊り大会",
+      "venue": "自由が丘駅前ロータリー 特設会場",
+      "area": "目黒区",
+      "year": 2023,
+      "date_start": "2023-07-17",
+      "date_end": "2023-07-17",
+      "observed_dates": [
+        "2023-07-17"
+      ],
+      "weekday_start": "月",
+      "weekday_end": "月",
+      "source_type": "youtube_backfill_observed",
+      "source_video_count": 2,
+      "source_channels": [
+        "和太鼓お祭りチャンネル"
+      ],
+      "confidence": "low",
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=QPxuVq-Nv3w",
+          "video_id": "QPxuVq-Nv3w",
+          "title": "やる気で音頭　2023年自由が丘納涼盆踊り大会１　東京都目黒区",
+          "channel": "和太鼓お祭りチャンネル",
+          "published_at": "2023-09-24T10:30:14Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ba6A8Z79pgM",
+          "video_id": "ba6A8Z79pgM",
+          "title": "北海盆唄　2023年自由が丘納涼盆踊り大会８　東京都目黒区",
+          "channel": "和太鼓お祭りチャンネル",
+          "published_at": "2023-09-29T10:00:28Z",
+          "score": 100
+        }
+      ],
+      "songs": [
+        {
+          "song_name": "ぷしゅぷしゅ音頭",
+          "source_count": 2,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=Nxaq-KoPqJ4"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "やる気で音頭",
+          "source_count": 2,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=QPxuVq-Nv3w"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "東京音頭",
+          "source_count": 2,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=hXWo9PbFfp0"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "炭坑節",
+          "source_count": 2,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=gOlwpcZIuHE"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "七福神音頭",
+          "source_count": 2,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=w385R4otSDQ"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "よろこび音頭",
+          "source_count": 2,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=qeX0aESWw3U"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "北海盆唄",
+          "source_count": 2,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=NRXAzkhoGww"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "少年八木節",
+          "source_count": 2,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=z39CW-J4LJg"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "ダンシングヒーロー",
+          "source_count": 2,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=TmN0vHpZ5N0"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "文京音頭",
+          "source_count": 2,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=W-Hi7ABCGeY"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        }
+      ]
+    },
+    {
+      "observation_id": "0636b08d350648ff",
+      "series_key": "bcbfa4cac9e3",
+      "event_name": "自由が丘納涼盆踊り大会",
+      "venue": "自由が丘駅前ロータリー 特設会場",
+      "area": "目黒区",
+      "year": 2024,
+      "date_start": "2024-07-24",
+      "date_end": "2024-07-24",
+      "observed_dates": [
+        "2024-07-24"
+      ],
+      "weekday_start": "水",
+      "weekday_end": "水",
+      "source_type": "youtube_backfill_observed",
+      "source_video_count": 1,
+      "source_channels": [
+        "iTSCOM"
+      ],
+      "confidence": "low",
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=qNhz2yoaBL0",
+          "video_id": "qNhz2yoaBL0",
+          "title": "自由が丘納涼 盆踊り大会【地モトNEWS】2024/7/24放送",
+          "channel": "iTSCOM",
+          "published_at": "2024-08-01T10:01:01Z",
+          "score": 98
+        }
+      ],
+      "songs": [
+        {
+          "song_name": "地モトNEWS",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=qNhz2yoaBL0"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        }
+      ]
+    },
+    {
+      "observation_id": "4bfd13729e4b2447",
+      "series_key": "00083613a8ec",
+      "event_name": "飛鳥山盆踊り",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "year": 2023,
+      "date_start": "2023-03-12",
+      "date_end": "2023-03-12",
+      "observed_dates": [
+        "2023-03-12"
+      ],
+      "weekday_start": "日",
+      "weekday_end": "日",
+      "source_type": "youtube_backfill_observed",
+      "source_video_count": 2,
+      "source_channels": [
+        "和太鼓お祭りチャンネル"
+      ],
+      "confidence": "low",
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=-dahLlLBKHo",
+          "video_id": "-dahLlLBKHo",
+          "title": "しながわ中央公園盆踊り　2023年3月12日　じょんから女節・品川音頭・大森甚句・波乗りジョニー・房州よいとこ・ベイサイドブギ・湘南盆踊り・水軍ばやし・我は海の子・飛び魚音頭・お台場音頭・ポ",
+          "channel": "和太鼓お祭りチャンネル",
+          "published_at": "2023-03-14T11:00:00Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Ttt-p1hwK_M",
+          "video_id": "Ttt-p1hwK_M",
+          "title": "飛鳥山公園盆踊り　2023年3月12日　東京都北区",
+          "channel": "和太鼓お祭りチャンネル",
+          "published_at": "2023-03-13T11:00:30Z",
+          "score": 100
+        }
+      ],
+      "songs": [
+        {
+          "song_name": "あかね音頭",
+          "source_count": 2,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=Cjatc6m2Wtg"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "大東京音頭",
+          "source_count": 2,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=nlae9XKzAFc"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "きよしのズンドコ節",
+          "source_count": 2,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=buiTnsRtZt8"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "たいとう音頭",
+          "source_count": 2,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=lapCW7ME6As"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "大江戸東京音頭",
+          "source_count": 2,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=9QoTZAZzolw"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "東京音頭",
+          "source_count": 2,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=AqyrVFPXB_4"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "炭坑節",
+          "source_count": 2,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=zblYT2aDFQQ"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "ダンシングヒーロー",
+          "source_count": 2,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=VBc3bEUj5yw"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "花笠音頭",
+          "source_count": 2,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=HA3Pb6BNZwg"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "八木節",
+          "source_count": 2,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=f48emcWw3s0"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
         }
       ]
     }

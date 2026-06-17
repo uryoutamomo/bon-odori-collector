@@ -1,20 +1,20 @@
 # 年次開催回観測 初期JSON
 
-生成: 2026-06-17T15:15:50.779801+00:00
+生成: 2026-06-17T15:18:52.831986+00:00
 
 ## 集計
 
-- observation_count: 30
+- observation_count: 36
 - series_count: 22
-- source_video_count: 590
+- source_video_count: 624
 - observed_years: ['2023', '2024', '2025', '2026']
-- series_with_3year_window: 1
-- observations_with_songs: 9
+- series_with_3year_window: 3
+- observations_with_songs: 14
 
 ## 年別
 
-- 2023: 2
-- 2024: 4
+- 2023: 5
+- 2024: 7
 - 2025: 22
 - 2026: 2
 
@@ -38,5 +38,5 @@
 - 謝恩納涼盆踊り大会（青山善光寺） / 青山善光寺 / 2025-07-28: 12 videos, songs=0, confidence=medium
 - 山王音頭と民踊大会 / 山王パークタワー公開空地 / 2024-06-13〜2024-06-15: 10 videos, songs=11, confidence=high
 - SHIBUYA MIYASHITA PARK BON DANCE 2026 / 宮下公園 / 2025-09-27〜2025-09-28: 10 videos, songs=0, confidence=high
-- 第16回ハマサイトの夏祭り / ハマサイト前広場・汐留ビルディング外構 / 2025-08-22: 8 videos, songs=0, confidence=high
-- 山王音頭と民踊大会 / 山王パークタワー公開空地 / 2023-06-13: 7 videos, songs=10, confidence=medium
+- 西久保八幡神社 盆踊り / 西久保八幡神社 / 2023-08-10〜2023-08-12: 9 videos, songs=15, confidence=high
+- 西久保八幡神社 盆踊り / 西久保八幡神社 / 2024-08-09: 8 videos, songs=10, confidence=medium
