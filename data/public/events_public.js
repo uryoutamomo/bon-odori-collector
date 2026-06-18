@@ -17362,7 +17362,24 @@ const EVENTS = [
     "last_seen_dates": [
       "2025-07-04",
       "2025-07-05"
-    ]
+    ],
+    "date_prediction": {
+      "target_year": 2026,
+      "date": "2026-07-04",
+      "date_end": "2026-07-05",
+      "weekday_start": "土",
+      "weekday_end": "日",
+      "confidence": "medium",
+      "score": 0.6,
+      "rule_type": "weekend_near_day",
+      "basis": "7月6日前後の週末",
+      "evidence_years": [
+        2023,
+        2024
+      ],
+      "evidence_count": 2,
+      "has_actual_observation": false
+    }
   },
   {
     "name": "飛鳥山公園盆踊り会（有志サークル）",

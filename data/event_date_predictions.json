@@ -1,19 +1,19 @@
 {
   "generated_by": "build_event_date_predictions.py",
-  "generated_at": "2026-06-18T03:14:03.471504+00:00",
+  "generated_at": "2026-06-18T09:44:16.710124+00:00",
   "target_year": 2026,
   "source": "data/event_occurrence_observations.json",
   "summary": {
-    "prediction_count": 9,
+    "prediction_count": 11,
     "rule_counts": {
       "fixed_date": 1,
       "weekday_last": 2,
       "weekday_near_day": 2,
       "weekday_nth": 3,
-      "weekend_near_day": 1
+      "weekend_near_day": 3
     },
     "confidence_counts": {
-      "medium": 9
+      "medium": 11
     },
     "with_actual_observation": 1
   },
@@ -1566,6 +1566,240 @@
               "duration_days": 1,
               "confidence": "medium",
               "source_video_count": 37
+            }
+          ]
+        }
+      ],
+      "actual_observations": []
+    },
+    {
+      "series_key": "734d7186ca67",
+      "event_name": "第15回 鴨台盆踊り",
+      "venue": "大正大学",
+      "target_year": 2026,
+      "prediction": {
+        "rule_type": "weekend_near_day",
+        "predicted_date_start": "2026-07-04",
+        "predicted_date_end": "2026-07-05",
+        "predicted_weekday_start": "土",
+        "predicted_weekday_end": "日",
+        "duration_days": 2,
+        "score": 0.6,
+        "confidence": "medium",
+        "basis": "7月6日前後の週末",
+        "evidence_years": [
+          2023,
+          2024
+        ],
+        "evidence_count": 2,
+        "evidence_rows": [
+          {
+            "year": 2023,
+            "date_start": "2023-07-06",
+            "date_end": "2023-07-08",
+            "weekday_start": "木",
+            "duration_days": 3,
+            "confidence": "medium",
+            "source_video_count": 2
+          },
+          {
+            "year": 2024,
+            "date_start": "2024-07-05",
+            "date_end": "2024-07-05",
+            "weekday_start": "金",
+            "duration_days": 1,
+            "confidence": "high",
+            "source_video_count": 6
+          }
+        ]
+      },
+      "candidate_rules": [
+        {
+          "rule_type": "weekend_near_day",
+          "predicted_date_start": "2026-07-04",
+          "predicted_date_end": "2026-07-05",
+          "predicted_weekday_start": "土",
+          "predicted_weekday_end": "日",
+          "duration_days": 2,
+          "score": 0.6,
+          "confidence": "medium",
+          "basis": "7月6日前後の週末",
+          "evidence_years": [
+            2023,
+            2024
+          ],
+          "evidence_count": 2,
+          "evidence_rows": [
+            {
+              "year": 2023,
+              "date_start": "2023-07-06",
+              "date_end": "2023-07-08",
+              "weekday_start": "木",
+              "duration_days": 3,
+              "confidence": "medium",
+              "source_video_count": 2
+            },
+            {
+              "year": 2024,
+              "date_start": "2024-07-05",
+              "date_end": "2024-07-05",
+              "weekday_start": "金",
+              "duration_days": 1,
+              "confidence": "high",
+              "source_video_count": 6
+            }
+          ]
+        },
+        {
+          "rule_type": "date_near",
+          "predicted_date_start": "2026-07-06",
+          "predicted_date_end": "2026-07-08",
+          "predicted_weekday_start": "月",
+          "predicted_weekday_end": "水",
+          "duration_days": 3,
+          "score": 0.58,
+          "confidence": "low",
+          "basis": "7月6日前後",
+          "evidence_years": [
+            2023,
+            2024
+          ],
+          "evidence_count": 2,
+          "evidence_rows": [
+            {
+              "year": 2023,
+              "date_start": "2023-07-06",
+              "date_end": "2023-07-08",
+              "weekday_start": "木",
+              "duration_days": 3,
+              "confidence": "medium",
+              "source_video_count": 2
+            },
+            {
+              "year": 2024,
+              "date_start": "2024-07-05",
+              "date_end": "2024-07-05",
+              "weekday_start": "金",
+              "duration_days": 1,
+              "confidence": "high",
+              "source_video_count": 6
+            }
+          ]
+        }
+      ],
+      "actual_observations": []
+    },
+    {
+      "series_key": "57b4ce72372b",
+      "event_name": "郡上おどり in 青山 2026",
+      "venue": "秩父宮ラグビー場駐車場",
+      "target_year": 2026,
+      "prediction": {
+        "rule_type": "weekend_near_day",
+        "predicted_date_start": "2026-06-13",
+        "predicted_date_end": "2026-06-14",
+        "predicted_weekday_start": "土",
+        "predicted_weekday_end": "日",
+        "duration_days": 2,
+        "score": 0.6,
+        "confidence": "medium",
+        "basis": "6月14日前後の週末",
+        "evidence_years": [
+          2023,
+          2024
+        ],
+        "evidence_count": 2,
+        "evidence_rows": [
+          {
+            "year": 2023,
+            "date_start": "2023-06-15",
+            "date_end": "2023-06-16",
+            "weekday_start": "木",
+            "duration_days": 2,
+            "confidence": "high",
+            "source_video_count": 5
+          },
+          {
+            "year": 2024,
+            "date_start": "2024-06-14",
+            "date_end": "2024-06-14",
+            "weekday_start": "金",
+            "duration_days": 1,
+            "confidence": "medium",
+            "source_video_count": 4
+          }
+        ]
+      },
+      "candidate_rules": [
+        {
+          "rule_type": "weekend_near_day",
+          "predicted_date_start": "2026-06-13",
+          "predicted_date_end": "2026-06-14",
+          "predicted_weekday_start": "土",
+          "predicted_weekday_end": "日",
+          "duration_days": 2,
+          "score": 0.6,
+          "confidence": "medium",
+          "basis": "6月14日前後の週末",
+          "evidence_years": [
+            2023,
+            2024
+          ],
+          "evidence_count": 2,
+          "evidence_rows": [
+            {
+              "year": 2023,
+              "date_start": "2023-06-15",
+              "date_end": "2023-06-16",
+              "weekday_start": "木",
+              "duration_days": 2,
+              "confidence": "high",
+              "source_video_count": 5
+            },
+            {
+              "year": 2024,
+              "date_start": "2024-06-14",
+              "date_end": "2024-06-14",
+              "weekday_start": "金",
+              "duration_days": 1,
+              "confidence": "medium",
+              "source_video_count": 4
+            }
+          ]
+        },
+        {
+          "rule_type": "date_near",
+          "predicted_date_start": "2026-06-14",
+          "predicted_date_end": "2026-06-15",
+          "predicted_weekday_start": "日",
+          "predicted_weekday_end": "月",
+          "duration_days": 2,
+          "score": 0.58,
+          "confidence": "low",
+          "basis": "6月14日前後",
+          "evidence_years": [
+            2023,
+            2024
+          ],
+          "evidence_count": 2,
+          "evidence_rows": [
+            {
+              "year": 2023,
+              "date_start": "2023-06-15",
+              "date_end": "2023-06-16",
+              "weekday_start": "木",
+              "duration_days": 2,
+              "confidence": "high",
+              "source_video_count": 5
+            },
+            {
+              "year": 2024,
+              "date_start": "2024-06-14",
+              "date_end": "2024-06-14",
+              "weekday_start": "金",
+              "duration_days": 1,
+              "confidence": "medium",
+              "source_video_count": 4
             }
           ]
         }
