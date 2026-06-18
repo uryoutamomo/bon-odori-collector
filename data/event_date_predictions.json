@@ -1,11 +1,12 @@
 {
   "generated_by": "build_event_date_predictions.py",
-  "generated_at": "2026-06-18T09:44:16.710124+00:00",
+  "generated_at": "2026-06-18T10:09:29.333982+00:00",
   "target_year": 2026,
   "source": "data/event_occurrence_observations.json",
   "summary": {
-    "prediction_count": 11,
+    "prediction_count": 12,
     "rule_counts": {
+      "date_near": 1,
       "fixed_date": 1,
       "weekday_last": 2,
       "weekday_near_day": 2,
@@ -13,6 +14,7 @@
       "weekend_near_day": 3
     },
     "confidence_counts": {
+      "low": 1,
       "medium": 11
     },
     "with_actual_observation": 1
@@ -1797,6 +1799,87 @@
               "date_start": "2024-06-14",
               "date_end": "2024-06-14",
               "weekday_start": "金",
+              "duration_days": 1,
+              "confidence": "medium",
+              "source_video_count": 4
+            }
+          ]
+        }
+      ],
+      "actual_observations": []
+    },
+    {
+      "series_key": "b727adc26276",
+      "event_name": "みたままつり 納涼民踊のつどい",
+      "venue": "靖国神社",
+      "target_year": 2026,
+      "prediction": {
+        "rule_type": "date_near",
+        "predicted_date_start": "2026-07-14",
+        "predicted_date_end": "2026-07-16",
+        "predicted_weekday_start": "火",
+        "predicted_weekday_end": "木",
+        "duration_days": 3,
+        "score": 0.58,
+        "confidence": "low",
+        "basis": "7月14日前後",
+        "evidence_years": [
+          2023,
+          2024
+        ],
+        "evidence_count": 2,
+        "evidence_rows": [
+          {
+            "year": 2023,
+            "date_start": "2023-07-13",
+            "date_end": "2023-07-15",
+            "weekday_start": "木",
+            "duration_days": 3,
+            "confidence": "medium",
+            "source_video_count": 4
+          },
+          {
+            "year": 2024,
+            "date_start": "2024-07-15",
+            "date_end": "2024-07-15",
+            "weekday_start": "月",
+            "duration_days": 1,
+            "confidence": "medium",
+            "source_video_count": 4
+          }
+        ]
+      },
+      "candidate_rules": [
+        {
+          "rule_type": "date_near",
+          "predicted_date_start": "2026-07-14",
+          "predicted_date_end": "2026-07-16",
+          "predicted_weekday_start": "火",
+          "predicted_weekday_end": "木",
+          "duration_days": 3,
+          "score": 0.58,
+          "confidence": "low",
+          "basis": "7月14日前後",
+          "evidence_years": [
+            2023,
+            2024
+          ],
+          "evidence_count": 2,
+          "evidence_rows": [
+            {
+              "year": 2023,
+              "date_start": "2023-07-13",
+              "date_end": "2023-07-15",
+              "weekday_start": "木",
+              "duration_days": 3,
+              "confidence": "medium",
+              "source_video_count": 4
+            },
+            {
+              "year": 2024,
+              "date_start": "2024-07-15",
+              "date_end": "2024-07-15",
+              "weekday_start": "月",
               "duration_days": 1,
               "confidence": "medium",
               "source_video_count": 4

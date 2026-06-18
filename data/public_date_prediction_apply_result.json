@@ -3,7 +3,7 @@
   "source": "data/event_date_predictions.json",
   "public_events": "data/public/events_public.json",
   "applied_count": 8,
-  "skipped_count": 2,
+  "skipped_count": 3,
   "unmatched_count": 1,
   "applied": [
     {
@@ -215,6 +215,29 @@
         "score": 0.6,
         "rule_type": "weekend_near_day",
         "basis": "6月14日前後の週末",
+        "evidence_years": [
+          2023,
+          2024
+        ],
+        "evidence_count": 2,
+        "has_actual_observation": false
+      }
+    },
+    {
+      "event_name": "みたままつり 納涼民踊のつどい",
+      "venue": "靖国神社",
+      "reason": "target_year_date_already_present",
+      "date": "2026-07-13",
+      "date_prediction": {
+        "target_year": 2026,
+        "date": "2026-07-14",
+        "date_end": "2026-07-16",
+        "weekday_start": "火",
+        "weekday_end": "木",
+        "confidence": "low",
+        "score": 0.58,
+        "rule_type": "date_near",
+        "basis": "7月14日前後",
         "evidence_years": [
           2023,
           2024

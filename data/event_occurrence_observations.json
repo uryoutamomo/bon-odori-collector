@@ -1,14 +1,14 @@
 {
   "generated_by": "build_event_occurrence_observations.py",
-  "generated_at": "2026-06-18T09:44:12.406508+00:00",
+  "generated_at": "2026-06-18T10:09:24.358989+00:00",
   "sources": {
     "active_review": "/Users/ryotauchida/bon-odori-collector/data/youtube_active_video_review.json",
     "setlist_occurrences": "/Users/ryotauchida/bon-odori-collector/data/youtube_setlist_occurrences.json"
   },
   "summary": {
-    "observation_count": 43,
-    "series_count": 25,
-    "source_video_count": 655,
+    "observation_count": 45,
+    "series_count": 26,
+    "source_video_count": 663,
     "observed_years": [
       "2023",
       "2024",
@@ -16,13 +16,13 @@
       "2026"
     ],
     "observations_by_year": {
-      "2023": 9,
-      "2024": 10,
+      "2023": 10,
+      "2024": 11,
       "2025": 22,
       "2026": 2
     },
     "series_with_3year_window": 3,
-    "observations_with_songs": 21,
+    "observations_with_songs": 23,
     "active_review_skipped": {
       "missing_event_venue_or_date": 3665
     },
@@ -34,9 +34,9 @@
     },
     "backfill_apply": {
       "added": 2,
-      "updated": 17,
+      "updated": 19,
       "source": "data/event_occurrence_backfill_plan.json",
-      "source_observation_count": 19
+      "source_observation_count": 21
     }
   },
   "series": [
@@ -241,6 +241,21 @@
       ]
     },
     {
+      "series_key": "b727adc26276",
+      "canonical_name": "みたままつり 納涼民踊のつどい",
+      "usual_venue": "靖国神社",
+      "observed_years": [
+        2023,
+        2024
+      ],
+      "observation_count": 2,
+      "has_3year_window": false,
+      "song_years": [
+        2023,
+        2024
+      ]
+    },
+    {
       "series_key": "bcbfa4cac9e3",
       "canonical_name": "自由が丘納涼盆踊り大会",
       "usual_venue": "自由が丘駅前ロータリー 特設会場",
@@ -367,6 +382,146 @@
     }
   ],
   "observations": [
+    {
+      "observation_id": "ac5d792eca0e5754",
+      "series_key": "b727adc26276",
+      "event_name": "みたままつり 納涼民踊のつどい",
+      "venue": "靖国神社",
+      "area": "千代田区",
+      "year": 2023,
+      "date_start": "2023-07-13",
+      "date_end": "2023-07-15",
+      "observed_dates": [
+        "2023-07-13",
+        "2023-07-15"
+      ],
+      "weekday_start": "木",
+      "weekday_end": "土",
+      "source_type": "youtube_backfill_observed",
+      "source_video_count": 4,
+      "source_channels": [
+        "上泉信綱",
+        "和太鼓お祭りチャンネル"
+      ],
+      "confidence": "medium",
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=QWKzHTEtE3s",
+          "video_id": "QWKzHTEtE3s",
+          "title": "東京スカツリー音頭　2023年靖国神社みたままつり１２終　納涼民踊の集い　盆踊り　東京都千代田区",
+          "channel": "和太鼓お祭りチャンネル",
+          "published_at": "2023-07-19T11:30:11Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=HrMUdjNNT90",
+          "video_id": "HrMUdjNNT90",
+          "title": "炭坑節　2023年靖国神社みたままつり４　納涼民踊の集い　盆踊り　東京都千代田区",
+          "channel": "和太鼓お祭りチャンネル",
+          "published_at": "2023-07-15T11:30:10Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=-vYmlkMnm3Y",
+          "video_id": "-vYmlkMnm3Y",
+          "title": "龍馬おどり　2023年靖国神社みたままつり１０　納涼民踊の集い　盆踊り　東京都千代田区",
+          "channel": "和太鼓お祭りチャンネル",
+          "published_at": "2023-07-18T11:30:00Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=s6BQ06eQ6GQ",
+          "video_id": "s6BQ06eQ6GQ",
+          "title": "みたままつり(靖国神社)／盆踊り",
+          "channel": "上泉信綱",
+          "published_at": "2023-07-26T11:37:16Z",
+          "score": 88
+        }
+      ],
+      "songs": [
+        {
+          "song_name": "交野節",
+          "source_count": 3,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=FcLa-B7sWqs"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "朝顔音頭",
+          "source_count": 3,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=ECNfC0-rdMs"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "東京音頭",
+          "source_count": 3,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=4ejK1xgeWkY"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "白蛇音頭",
+          "source_count": 3,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=7RxJrujA3Cg"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "万博音頭",
+          "source_count": 3,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=-FtvWPu84-s"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "大東京音頭",
+          "source_count": 3,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=z-IDFwS5hr0"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "少年八木節",
+          "source_count": 3,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=bGwi1pwBwSQ"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "東京踊り",
+          "source_count": 3,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=zSXC3_UsHoA"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "炭坑節",
+          "source_count": 3,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=M6WzGsc0zn4"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        }
+      ]
+    },
     {
       "observation_id": "e58714c9d972f33f",
       "series_key": "6fa7aa7ac980",
@@ -1741,6 +1896,153 @@
           "source_count": 1,
           "source_urls": [
             "https://www.youtube.com/watch?v=yOrCwOvrx7w"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        }
+      ]
+    },
+    {
+      "observation_id": "093f293c00e81050",
+      "series_key": "b727adc26276",
+      "event_name": "みたままつり 納涼民踊のつどい",
+      "venue": "靖国神社",
+      "area": "千代田区",
+      "year": 2024,
+      "date_start": "2024-07-15",
+      "date_end": "2024-07-15",
+      "observed_dates": [
+        "2024-07-15"
+      ],
+      "weekday_start": "月",
+      "weekday_end": "月",
+      "source_type": "youtube_backfill_observed",
+      "source_video_count": 4,
+      "source_channels": [
+        "和太鼓お祭りチャンネル"
+      ],
+      "confidence": "medium",
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=rrDmypHrtgA",
+          "video_id": "rrDmypHrtgA",
+          "title": "「炭坑節」　20240715靖国神社みたままつり奉納芸能盆踊り２　納涼民踊の集い　東京都千代田区",
+          "channel": "和太鼓お祭りチャンネル",
+          "published_at": "2024-07-18T12:30:38Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Cz3o9R1PbbU",
+          "video_id": "Cz3o9R1PbbU",
+          "title": "にっぽんチャチャチャ　20240715靖国神社みたままつり奉納芸能盆踊り６　納涼民踊の集い　東京都千代田区",
+          "channel": "和太鼓お祭りチャンネル",
+          "published_at": "2024-07-19T12:00:24Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=flooE1mSXNE",
+          "video_id": "flooE1mSXNE",
+          "title": "ドンパン節　20240715靖国神社みたままつり奉納芸能盆踊り１　納涼民踊の集い　東京都千代田区",
+          "channel": "和太鼓お祭りチャンネル",
+          "published_at": "2024-07-18T12:00:44Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=DY17GzPNrDI",
+          "video_id": "DY17GzPNrDI",
+          "title": "龍馬おどり　20240715靖国神社みたままつり奉納芸能盆踊り12　納涼民踊の集い　東京都千代田区",
+          "channel": "和太鼓お祭りチャンネル",
+          "published_at": "2024-07-22T10:30:05Z",
+          "score": 100
+        }
+      ],
+      "songs": [
+        {
+          "song_name": "ドンパン節",
+          "source_count": 4,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=flooE1mSXNE"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "炭坑節",
+          "source_count": 4,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=rrDmypHrtgA"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "阿波踊り",
+          "source_count": 4,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=F1Y9cQM2NxQ"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "八木節",
+          "source_count": 4,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=apJQPRyXjRk"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "民謡お国巡り音頭",
+          "source_count": 4,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=oHpebzANNYg"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "花火音頭",
+          "source_count": 4,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=IW5Pok5b4sI"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "ダンシングヒーロー",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=2sQR18Pz800"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "まつのき小唄",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=tSG-il7raJY"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "龍馬おどり",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=DY17GzPNrDI"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "令和おどり",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=swLyNcIzXhg"
           ],
           "source_type": "youtube_backfill_title_observed",
           "confidence": "hint"

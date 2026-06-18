@@ -1,13 +1,16 @@
 # YouTube 過去年バックフィル候補
 
-- 生成: 2026-06-18T09:44:01.650220+00:00
-- selected_queue_count: 57
-- candidate_count: 278
-- strong: 114
-- review: 19
+- 生成: 2026-06-18T10:09:12.336493+00:00
+- selected_queue_count: 77
+- candidate_count: 308
+- strong: 122
+- review: 25
 
 | status | score | year | event | venue | detected | channel | title | url |
 | --- | ---: | ---: | --- | --- | --- | --- | --- | --- |
+| strong | 100 | 2023 | みたままつり 納涼民踊のつどい | 靖国神社 | 2023-07-13 | 和太鼓お祭りチャンネル | 東京スカツリー音頭　2023年靖国神社みたままつり１２終　納涼民踊の集い　盆踊り　東京都千代田区 | https://www.youtube.com/watch?v=QWKzHTEtE3s |
+| strong | 100 | 2023 | みたままつり 納涼民踊のつどい | 靖国神社 | 2023-07-13 | 和太鼓お祭りチャンネル | 炭坑節　2023年靖国神社みたままつり４　納涼民踊の集い　盆踊り　東京都千代田区 | https://www.youtube.com/watch?v=HrMUdjNNT90 |
+| strong | 100 | 2023 | みたままつり 納涼民踊のつどい | 靖国神社 | 2023-07-13 | 和太鼓お祭りチャンネル | 龍馬おどり　2023年靖国神社みたままつり１０　納涼民踊の集い　盆踊り　東京都千代田区 | https://www.youtube.com/watch?v=-vYmlkMnm3Y |
 | strong | 100 | 2023 | 奥浅草盆踊り | 隅田公園 | 2023-07-02 | 和太鼓お祭りチャンネル | 東京音頭　2023年奥浅草盆踊り大会１　隅田公園　山谷堀広場　東京都台東区 | https://www.youtube.com/watch?v=1x7tnyhgdOE |
 | strong | 100 | 2023 | 山王音頭と民踊大会 | 山王パークタワー公開空地 | 2023-06-13 | 和太鼓お祭りチャンネル | 「大東京音頭」　2023年山王日枝神社　山王祭　山王音頭と民踊大会1日目１３　盆踊り　東京都千代田区 | https://www.youtube.com/watch?v=h21jifAOBBg |
 | strong | 100 | 2023 | 山王音頭と民踊大会 | 山王パークタワー公開空地 | 2023-06-13 | 和太鼓お祭りチャンネル | 【花笠音頭】　2023年山王日枝神社　山王祭　山王音頭と民踊大会1日目５　盆踊り　東京都千代田区 | https://www.youtube.com/watch?v=dSWr8i-BIt4 |
@@ -40,6 +43,10 @@
 | strong | 100 | 2023 | 郡上おどり in 青山 2026 | 秩父宮ラグビー場駐車場 | 2023-06-15 | 和太鼓お祭りチャンネル | 郡上おどりin青山1日目①　２０２３年　秩父宮ラグビー場駐車場　東京都港区 | https://www.youtube.com/watch?v=GRbTxDwruZo |
 | strong | 100 | 2023 | 飛鳥山盆踊り | 飛鳥山公園 | 2023-03-12 | 和太鼓お祭りチャンネル | しながわ中央公園盆踊り　2023年3月12日　じょんから女節・品川音頭・大森甚句・波乗りジョニー・房州よいとこ・ベイサイドブギ・湘南盆踊り・水軍ばやし・我は海の子・飛び魚音頭・お台場音頭・ポ | https://www.youtube.com/watch?v=-dahLlLBKHo |
 | strong | 100 | 2023 | 飛鳥山盆踊り | 飛鳥山公園 | 2023-03-12 | 和太鼓お祭りチャンネル | 飛鳥山公園盆踊り　2023年3月12日　東京都北区 | https://www.youtube.com/watch?v=Ttt-p1hwK_M |
+| strong | 100 | 2024 | みたままつり 納涼民踊のつどい | 靖国神社 | 2024-07-15 | 和太鼓お祭りチャンネル | 「炭坑節」　20240715靖国神社みたままつり奉納芸能盆踊り２　納涼民踊の集い　東京都千代田区 | https://www.youtube.com/watch?v=rrDmypHrtgA |
+| strong | 100 | 2024 | みたままつり 納涼民踊のつどい | 靖国神社 | 2024-07-15 | 和太鼓お祭りチャンネル | にっぽんチャチャチャ　20240715靖国神社みたままつり奉納芸能盆踊り６　納涼民踊の集い　東京都千代田区 | https://www.youtube.com/watch?v=Cz3o9R1PbbU |
+| strong | 100 | 2024 | みたままつり 納涼民踊のつどい | 靖国神社 | 2024-07-15 | 和太鼓お祭りチャンネル | ドンパン節　20240715靖国神社みたままつり奉納芸能盆踊り１　納涼民踊の集い　東京都千代田区 | https://www.youtube.com/watch?v=flooE1mSXNE |
+| strong | 100 | 2024 | みたままつり 納涼民踊のつどい | 靖国神社 | 2024-07-15 | 和太鼓お祭りチャンネル | 龍馬おどり　20240715靖国神社みたままつり奉納芸能盆踊り12　納涼民踊の集い　東京都千代田区 | https://www.youtube.com/watch?v=DY17GzPNrDI |
 | strong | 100 | 2024 | 丸の内de盆踊り | 行幸通り | 2024-07-26 | akkz01 | 4K60【丸の内盆踊り】行幸通り 東京駅舎 2024 東京 Japan | https://www.youtube.com/watch?v=-c_ofme99W0 |
 | strong | 100 | 2024 | 丸の内de盆踊り | 行幸通り | 2024-10-11 | akkz01 | 4K60【日比谷シネマフェスティバル】丸の内仲通り 2024 東京 Japan | https://www.youtube.com/watch?v=dlY5xSYgUow |
 | strong | 100 | 2024 | 丸の内de盆踊り | 行幸通り | 2024-08-23 | akkz01 | 4K60【東京ガーデンテラス紀尾井町】KIOI 盆おどり 2024 東京 Japan | https://www.youtube.com/watch?v=vzRBqx1kelI |
@@ -81,10 +88,3 @@
 | strong | 98 | 2023 | 東本願寺盆踊り | 東本願寺（浅草） | 2023-08-22 | 祭のきせき　MatsuriNoKiseki | ふるさと音頭 ① 　浅草 東本願寺 盆踊り 20230822 | https://www.youtube.com/watch?v=FYAdTKdEKdc |
 | strong | 98 | 2023 | 東本願寺盆踊り | 東本願寺（浅草） | 2023-08-22 | 祭のきせき　MatsuriNoKiseki | ふるさと音頭 ② 　浅草 東本願寺 盆踊り 20230822 | https://www.youtube.com/watch?v=Ugvap9abX98 |
 | strong | 98 | 2023 | 東本願寺盆踊り | 東本願寺（浅草） | 2023-08-22 | 祭のきせき　MatsuriNoKiseki | 東京音頭 ① 　浅草 東本願寺 盆踊り 20230822 | https://www.youtube.com/watch?v=HMjgBVjio1E |
-| strong | 98 | 2023 | 東本願寺盆踊り | 東本願寺（浅草） | 2023-08-22 | 祭のきせき　MatsuriNoKiseki | 燃えろ日本の夏祭り ① 　浅草 東本願寺 盆踊り 20230822 | https://www.youtube.com/watch?v=D1c4OKGnpl4 |
-| strong | 98 | 2023 | 東本願寺盆踊り | 東本願寺（浅草） | 2023-08-22 | 祭のきせき　MatsuriNoKiseki | 盆踊り エロティカセブン（サザンオールスターズ）  浅草 東本願寺 盆踊り 20230822 | https://www.youtube.com/watch?v=6MaXICcHnLM |
-| strong | 98 | 2024 | シタマチ.ふるさと盆踊り大会 | おかちまちパンダ広場（御徒町駅南口駅前広場） | 2024-08-17 | Urban Recruit | 「どんとこいブギ！」【シタマチ.ふるさと盆踊り大会 (御徒町パンダ広場盆踊り)】 #盆踊り Bon Dance 御徒町 | https://www.youtube.com/watch?v=rjon5MTSv80 |
-| strong | 98 | 2024 | シタマチ.ふるさと盆踊り大会 | おかちまちパンダ広場（御徒町駅南口駅前広場） | 2024-08-17 | Urban Recruit | 「ゆかたばやし」【シタマチ.ふるさと盆踊り大会 (御徒町パンダ広場盆踊り)】 #盆踊り Bon Dance 御徒町 | https://www.youtube.com/watch?v=YPThBdCY-EE |
-| strong | 98 | 2024 | シタマチ.ふるさと盆踊り大会 | おかちまちパンダ広場（御徒町駅南口駅前広場） | 2024-08-17 | Urban Recruit | 「日本一音頭」【シタマチ.ふるさと盆踊り大会 (御徒町パンダ広場盆踊り)】 #盆踊り Bon Dance 御徒町 | https://www.youtube.com/watch?v=pPvj7Bsug1U |
-| strong | 98 | 2024 | シタマチ.ふるさと盆踊り大会 | おかちまちパンダ広場（御徒町駅南口駅前広場） | 2024-08-17 | Urban Recruit | 「河内音頭」【シタマチ.ふるさと盆踊り大会 (御徒町パンダ広場盆踊り)】 #盆踊り Bon Dance 御徒町 | https://www.youtube.com/watch?v=ENGpFamoa2g |
-| strong | 98 | 2024 | シタマチ.ふるさと盆踊り大会 | おかちまちパンダ広場（御徒町駅南口駅前広場） | 2024-08-17 | Urban Recruit | 「相馬盆唄」【シタマチ.ふるさと盆踊り大会 (御徒町パンダ広場盆踊り)】 #盆踊り Bon Dance 御徒町 | https://www.youtube.com/watch?v=veZtYAyWInQ |
