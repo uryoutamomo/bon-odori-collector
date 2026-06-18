@@ -1,6 +1,6 @@
 {
   "generated_by": "build_song_occurrences.py",
-  "generated_at": "2026-06-17T17:47:18.147037+00:00",
+  "generated_at": "2026-06-18T12:42:06.993411+00:00",
   "target_year": 2026,
   "occurrences": [
     {
@@ -6144,19 +6144,6 @@
       "venue": "JR新大久保駅北側から東方向",
       "year": 2025,
       "songs": [
-        {
-          "name": "まつり",
-          "probability": 80,
-          "basis": "current_hint",
-          "basis_label": "今年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.8
-          ],
-          "evidence_urls": []
-        },
         {
           "name": "百人町民民謡おどり",
           "probability": 80,
@@ -180335,27 +180322,6 @@
       ]
     },
     {
-      "occurrence_id": "ac8f84f69619fd8f",
-      "event_name": "第51回 神楽坂まつり 盆踊り",
-      "venue": "りそな銀行神楽坂支店前",
-      "year": 2025,
-      "songs": [
-        {
-          "name": "まつり",
-          "probability": 80,
-          "basis": "current_hint",
-          "basis_label": "今年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.8
-          ],
-          "evidence_urls": []
-        }
-      ]
-    },
-    {
       "occurrence_id": "ea2590c56b1a7788",
       "event_name": "アイドル 2025年大正大学「第15回鴨台盆踊り」5 東京都豊島区",
       "venue": "アイドル 2025年大正大学「第15回鴨台盆踊り」5 東京都豊島区",
@@ -219048,27 +219014,6 @@
       ]
     },
     {
-      "occurrence_id": "6338d1de2ad45a2d",
-      "event_name": "西綾瀬町会 夏祭り盆踊り大会",
-      "venue": "五反野コミュニティ公園",
-      "year": 2025,
-      "songs": [
-        {
-          "name": "まつり",
-          "probability": 80,
-          "basis": "current_hint",
-          "basis_label": "今年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.8
-          ],
-          "evidence_urls": []
-        }
-      ]
-    },
-    {
       "occurrence_id": "f7de2b260de74025",
       "event_name": "京北音頭 柏ハウディモール「芸能フェスティバル」盆踊り17",
       "venue": "京北音頭 柏ハウディモール「芸能フェスティバル」盆踊り17",
@@ -241262,19 +241207,6 @@
       "year": 2025,
       "songs": [
         {
-          "name": "まつり",
-          "probability": 80,
-          "basis": "current_hint",
-          "basis_label": "今年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.8
-          ],
-          "evidence_urls": []
-        },
-        {
           "name": "品川甚句",
           "probability": 80,
           "basis": "current_hint",
@@ -255527,27 +255459,6 @@
       ]
     },
     {
-      "occurrence_id": "c9bfb68927431b95",
-      "event_name": "「希望ヶ丘団地夏まつり」 7月19日(土)-20日(日)。",
-      "venue": "希望ヶ丘団地 テニスコート",
-      "year": 2025,
-      "songs": [
-        {
-          "name": "まつり",
-          "probability": 80,
-          "basis": "current_hint",
-          "basis_label": "今年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.8
-          ],
-          "evidence_urls": []
-        }
-      ]
-    },
-    {
       "occurrence_id": "59f4e814574d73fc",
       "event_name": "常磐ディスコ港町(本人生歌・町あかり) 2025年白金台どんぐり児童遊園盆踊り14 東京都港区",
       "venue": "常磐ディスコ港町(本人生歌・町あかり) 2025年白金台どんぐり児童遊園盆踊り14 東京都港区",
@@ -261876,19 +261787,6 @@
       "venue": "新宿住友ビル三角広場",
       "year": 2025,
       "songs": [
-        {
-          "name": "まつり",
-          "probability": 95,
-          "basis": "current_hint",
-          "basis_label": "今年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.95
-          ],
-          "evidence_urls": []
-        },
         {
           "name": "LOVEマシーン",
           "probability": 80,
@@ -333346,27 +333244,6 @@
       ]
     },
     {
-      "occurrence_id": "516c0a1be027fb86",
-      "event_name": "第90回 祐天寺み魂まつり こども盆踊り大会",
-      "venue": "祐天寺境内",
-      "year": 2025,
-      "songs": [
-        {
-          "name": "まつり",
-          "probability": 80,
-          "basis": "current_hint",
-          "basis_label": "今年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.8
-          ],
-          "evidence_urls": []
-        }
-      ]
-    },
-    {
       "occurrence_id": "e72c1b93bac06498",
       "event_name": "祖師谷昇進会商店街(振)盆踊り 7月18日(金)-19日(土)。",
       "venue": "祖師谷神明社",
@@ -335434,19 +335311,6 @@
       "venue": "秩父宮ラグビー場駐車場",
       "year": 2025,
       "songs": [
-        {
-          "name": "郡上おどり",
-          "probability": 95,
-          "basis": "current_hint",
-          "basis_label": "今年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.95
-          ],
-          "evidence_urls": []
-        },
         {
           "name": "かわさき",
           "probability": 80,
@@ -345206,27 +345070,6 @@
         },
         {
           "name": "花笠音頭",
-          "probability": 80,
-          "basis": "current_hint",
-          "basis_label": "今年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.8
-          ],
-          "evidence_urls": []
-        }
-      ]
-    },
-    {
-      "occurrence_id": "1b83551ce217ece7",
-      "event_name": "品川区民まつり 西大井広場公園 盆踊り",
-      "venue": "西大井広場公園",
-      "year": 2025,
-      "songs": [
-        {
-          "name": "まつり",
           "probability": 80,
           "basis": "current_hint",
           "basis_label": "今年ヒント",
@@ -377357,27 +377200,6 @@
       ]
     },
     {
-      "occurrence_id": "a148a566e4c28cec",
-      "event_name": "新井町会連合会・中野通り桜まつり実行委員会「中野通り桜まつり」",
-      "venue": "新井薬師公園",
-      "year": 2026,
-      "songs": [
-        {
-          "name": "まつり",
-          "probability": 80,
-          "basis": "current_hint",
-          "basis_label": "今年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.8
-          ],
-          "evidence_urls": []
-        }
-      ]
-    },
-    {
       "occurrence_id": "6bd132803b187ebe",
       "event_name": "Min-Yoi's盆踊り",
       "venue": "日本民謡会館",
@@ -378417,27 +378239,6 @@
       ]
     },
     {
-      "occurrence_id": "de36bac587d7eb72",
-      "event_name": "中央区大江戸まつり盆おどり大会",
-      "venue": "浜町公園",
-      "year": 2026,
-      "songs": [
-        {
-          "name": "まつり",
-          "probability": 80,
-          "basis": "current_hint",
-          "basis_label": "今年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.8
-          ],
-          "evidence_urls": []
-        }
-      ]
-    },
-    {
       "occurrence_id": "8af4b480f7803ce5",
       "event_name": "築地本願寺納涼盆踊り大会",
       "venue": "築地本願寺",
@@ -378601,27 +378402,6 @@
         },
         {
           "name": "築地音頭",
-          "probability": 80,
-          "basis": "current_hint",
-          "basis_label": "今年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.8
-          ],
-          "evidence_urls": []
-        }
-      ]
-    },
-    {
-      "occurrence_id": "eb2bc64050735a03",
-      "event_name": "みなと区民まつり 盆踊り",
-      "venue": "芝公園",
-      "year": 2026,
-      "songs": [
-        {
-          "name": "まつり",
           "probability": 80,
           "basis": "current_hint",
           "basis_label": "今年ヒント",
