@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.ryotauchida.bon-odori.youtube-daily</string>
+
+  <key>WorkingDirectory</key>
+  <string>/Users/ryotauchida/bon-odori-collector</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/bin/python3</string>
+    <string>/Users/ryotauchida/bon-odori-collector/run_daily_youtube_backfill.py</string>
+    <string>--month</string>
+    <string>7</string>
+    <string>--limit</string>
+    <string>10</string>
+    <string>--max-results</string>
+    <string>5</string>
+    <string>--mail-reminder</string>
+    <string>--commit</string>
+    <string>--push</string>
+  </array>
+
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key>
+    <integer>16</integer>
+    <key>Minute</key>
+    <integer>35</integer>
+  </dict>
+
+  <key>StandardOutPath</key>
+  <string>/Users/ryotauchida/bon-odori-collector/logs/youtube-daily.out.log</string>
+
+  <key>StandardErrorPath</key>
+  <string>/Users/ryotauchida/bon-odori-collector/logs/youtube-daily.err.log</string>
+
+  <key>RunAtLoad</key>
+  <false/>
+</dict>
+</plist>
