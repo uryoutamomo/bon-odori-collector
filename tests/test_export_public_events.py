@@ -8,6 +8,8 @@ from export_public_events import (
     fill_youtube_evidence_defaults,
     parse_youtube_evidence,
     public_detail_text,
+    sanitize_public_event_details,
+    suppress_replaced_recurring_events,
     write_public_js,
 )
 
@@ -51,6 +53,7 @@ class ExportPublicEventsTest(unittest.TestCase):
     def test_public_detail_text_hides_internal_youtube_evidence(self):
         detail = "\n".join([
             "2026-07-29〜2026-08-01 開催予定。公式発表を確認。",
+            "",
             "[youtube_evidence] YouTube 2025公式URL確認済み証拠",
             "- 対象イベント: 築地本願寺納涼盆踊り大会",
             "- 公式確認URL: https://tokyofesta.com/23ku/23763/",
@@ -63,6 +66,27 @@ class ExportPublicEventsTest(unittest.TestCase):
         self.assertNotIn("[youtube_evidence]", public)
         self.assertNotIn("YouTube", public)
         self.assertNotIn("https://", public)
+
+    def test_sanitize_public_event_details_hides_existing_internal_evidence(self):
+        rows = sanitize_public_event_details([{
+            "name": "郡上おどり in 青山 2026",
+            "detail": "2026開催予定。公式URL: https://example.com\n\n[youtube_evidence] 内部ログ\n- 動画: https://www.youtube.com/watch?v=abc",
+            "source_urls": [
+                {"label": "公式告知あり", "url": "https://example.com/news/", "kind": "official"},
+                {"label": "公式告知あり", "url": "https://example.com/news/20260610/", "kind": "official"},
+            ],
+            "songs": [
+                {"name": "まつり", "confidence": "confirmed", "source_count": 2, "probability": 95, "basis": "current_hint", "evidence_count": 1},
+                {"name": "LOVEマシーン", "confidence": "hint", "source_count": 1, "probability": 80, "basis": "current_hint", "evidence_count": 1},
+            ],
+        }])
+
+        self.assertEqual(rows[0]["detail"], "2026開催予定。")
+        self.assertEqual(rows[0]["source_urls"], [
+            {"label": "公式告知あり", "url": "https://example.com/news/20260610/", "kind": "official"}
+        ])
+        self.assertEqual([song["name"] for song in rows[0]["songs"]], ["LOVEマシーン"])
+
 
     def test_extract_public_source_urls_keeps_official_urls_not_video_urls(self):
         detail = "\n".join([
@@ -116,6 +140,64 @@ class ExportPublicEventsTest(unittest.TestCase):
         self.assertGreaterEqual(rows[0]["recurrence_score"], 0.55)
         self.assertEqual(rows[0]["edition_number"], 70)
         self.assertEqual(rows[0]["last_seen_year"], 2025)
+
+    def test_suppress_replaced_recurring_events_keeps_2026_over_2025(self):
+        rows = apply_public_recurrence_metadata([
+            {
+                "name": "西綾瀬町会 夏祭り盆踊り大会",
+                "venue": "五反野コミュニティ公園",
+                "area": "足立区",
+                "date": "2026-06-20",
+                "status": "確認済み",
+            },
+            {
+                "name": "西綾瀬町会 夏祭り盆踊り大会",
+                "venue": "五反野コミュニティ公園",
+                "area": "足立区",
+                "date": "2025-06-21",
+                "status": "終了",
+                "songs": [
+                    {
+                        "name": "まつり",
+                        "confidence": "hint",
+                        "source_count": 1,
+                        "probability": 80,
+                        "basis": "current_hint",
+                        "evidence_count": 1,
+                    },
+                ],
+            },
+            {
+                "name": "郡上おどり in 青山 2026",
+                "venue": "秩父宮ラグビー場駐車場",
+                "area": "港区",
+                "date": "2026-06-26",
+                "status": "確認済み",
+                "songs": [{"name": "郡上おどり", "confidence": "confirmed", "source_count": 2}],
+            },
+            {
+                "name": "郡上おどり in 青山 2025",
+                "venue": "秩父宮ラグビー場駐車場",
+                "area": "港区",
+                "date": "2025-06-20",
+                "status": "終了",
+                "songs": [
+                    {"name": "郡上おどり", "confidence": "confirmed", "source_count": 2},
+                    {"name": "かわさき", "confidence": "hint", "source_count": 1},
+                    {"name": "春駒", "confidence": "hint", "source_count": 1},
+                ],
+            },
+        ])
+
+        filtered = suppress_replaced_recurring_events(rows)
+
+        self.assertEqual([row["name"] for row in filtered], [
+            "西綾瀬町会 夏祭り盆踊り大会",
+            "郡上おどり in 青山 2026",
+        ])
+        self.assertEqual(filtered[0].get("songs"), [])
+        self.assertEqual([song["name"] for song in filtered[1]["songs"]], ["かわさき", "春駒"])
+        self.assertEqual(filtered[1]["songs"][0]["basis_label"], "2025年ヒント")
 
     def test_write_public_js(self):
         with TemporaryDirectory() as tmp:

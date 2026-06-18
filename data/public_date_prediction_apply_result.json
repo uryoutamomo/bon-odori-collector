@@ -4,7 +4,7 @@
   "public_events": "data/public/events_public.json",
   "applied_count": 7,
   "skipped_count": 1,
-  "unmatched_count": 0,
+  "unmatched_count": 1,
   "applied": [
     {
       "event_name": "丸の内de盆踊り",
@@ -21,6 +21,27 @@
         "basis": "7月の最終金曜",
         "evidence_years": [
           2024,
+          2025
+        ],
+        "evidence_count": 2,
+        "has_actual_observation": false
+      }
+    },
+    {
+      "event_name": "謝恩納涼盆踊り大会（青山善光寺）",
+      "venue": "青山善光寺",
+      "date_prediction": {
+        "target_year": 2026,
+        "date": "2026-07-27",
+        "date_end": "2026-07-27",
+        "weekday_start": "月",
+        "weekday_end": "月",
+        "confidence": "medium",
+        "score": 0.74,
+        "rule_type": "weekday_last",
+        "basis": "7月の最終月曜",
+        "evidence_years": [
+          2023,
           2025
         ],
         "evidence_count": 2,
@@ -112,27 +133,6 @@
       }
     },
     {
-      "event_name": "郡上おどり in 青山 2025",
-      "venue": "秩父宮ラグビー場駐車場",
-      "date_prediction": {
-        "target_year": 2026,
-        "date": "2026-06-19",
-        "date_end": "2026-06-19",
-        "weekday_start": "金",
-        "weekday_end": "金",
-        "confidence": "medium",
-        "score": 0.68,
-        "rule_type": "weekday_near_day",
-        "basis": "6月17日前後の金曜",
-        "evidence_years": [
-          2024,
-          2025
-        ],
-        "evidence_count": 2,
-        "has_actual_observation": false
-      }
-    },
-    {
       "event_name": "西久保八幡神社 盆踊り",
       "venue": "西久保八幡神社",
       "date_prediction": {
@@ -180,5 +180,27 @@
       }
     }
   ],
-  "unmatched": []
+  "unmatched": [
+    {
+      "event_name": "郡上おどり in 青山 2025",
+      "venue": "秩父宮ラグビー場駐車場",
+      "date_prediction": {
+        "target_year": 2026,
+        "date": "2026-06-19",
+        "date_end": "2026-06-19",
+        "weekday_start": "金",
+        "weekday_end": "金",
+        "confidence": "medium",
+        "score": 0.68,
+        "rule_type": "weekday_near_day",
+        "basis": "6月17日前後の金曜",
+        "evidence_years": [
+          2024,
+          2025
+        ],
+        "evidence_count": 2,
+        "has_actual_observation": false
+      }
+    }
+  ]
 }

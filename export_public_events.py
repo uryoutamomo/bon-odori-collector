@@ -45,6 +45,14 @@ FALLBACK_SUPPRESSED_VENUES = {
     # 未整備会場フォールバックとして「青山熊野神社の盆踊り」を出さない。
     "青山熊野神社",
 }
+NON_SONG_LABELS = {
+    # ジャンル/イベント名であって曲名ではないため、曲目タグには出さない。
+    "郡上おどり",
+}
+AMBIGUOUS_SONG_LABELS = {
+    # 曲名にもなり得るが、イベント本文では一般語として誤抽出されやすい。
+    "まつり",
+}
 
 # 日付未確定イベントの「並び位置」を決めるヒント（内田さん指示 2026-06-10）：
 # 旬がわかれば 上旬≒5日 / 中旬≒15日 / 下旬≒25日、それも無ければ昨年実績の
@@ -58,7 +66,7 @@ SIGNATURE_RE = re.compile(
     r"（\d{4}-\d{1,2}-\d{1,2}[^）]*）"
     r"|(?:こと|おと)（?[A-Za-z]*）?\s*\d{4}-\d{1,2}-\d{1,2}(?:追記|時点)?")
 YOUTUBE_EVIDENCE_RE = re.compile(
-    r"\[youtube_evidence\][^\n]*(?:\n(?!\[youtube_evidence\]).*)*",
+    r"(?s)\n*\[youtube[^\]]*].*?(?=\n\[[a-z_]+]|\Z)",
 )
 URL_RE = re.compile(r"https?://[^\s）)」』】]+")
 PUBLIC_SOURCE_KEYS = (
@@ -166,12 +174,41 @@ def extract_public_source_urls(text):
     return sources
 
 
+def _source_rank(source):
+    url = source.get("url") or ""
+    generic = bool(re.search(r"/(?:news|info|event)/?$", url.rstrip("/")))
+    return (
+        1 if source.get("kind") == "official" else 0,
+        0 if generic else 1,
+        len(url),
+    )
+
+
+def collapse_public_source_urls(sources):
+    """Keep public evidence buttons compact; one official button is enough."""
+    best_official = None
+    notes = []
+    seen_note_keys = set()
+    for source in sources or []:
+        if source.get("kind") == "official":
+            if best_official is None or _source_rank(source) > _source_rank(best_official):
+                best_official = source
+            continue
+        key = (source.get("kind"), source.get("label"), source.get("url") or "")
+        if key in seen_note_keys:
+            continue
+        seen_note_keys.add(key)
+        notes.append(source)
+    return ([best_official] if best_official else []) + notes
+
+
 def public_detail_text(text):
     """Return a general-reader summary, without internal evidence blocks."""
     if not text:
         return ""
     public = YOUTUBE_EVIDENCE_RE.sub("", text)
     public = re.sub(r"https?://\S+", "", public)
+    public = re.sub(r"(?:公式URL|根拠URL|参照URL|出典URL)[:：]\s*(?=$|[。．])", "", public)
     public = re.sub(r"\s+", " ", public).strip()
     return public
 
@@ -202,6 +239,7 @@ def parse_youtube_evidence(detail):
     """Extract structured YouTube evidence from public detail text."""
     rows = []
     for block in YOUTUBE_EVIDENCE_RE.findall(detail or ""):
+        block = block.strip()
         row = {
             "label": block.splitlines()[0].replace("[youtube_evidence]", "").strip() or "YouTube証拠",
             "event_name": "",
@@ -619,6 +657,148 @@ def apply_public_recurrence_metadata(events):
     return enrich_public_events(events, build_rows(events))
 
 
+def sanitize_public_event_details(events):
+    """Strip internal evidence logs from detail text in already-built public rows."""
+    cleaned = []
+    for event in events:
+        item = dict(event)
+        item["detail"] = public_detail_text(item.get("detail"))
+        item["source_urls"] = collapse_public_source_urls(item.get("source_urls"))
+        item.pop("youtube_evidence", None)
+        item["songs"] = [
+            _public_song(song) for song in item.get("songs") or []
+            if _song_name(song).strip() not in NON_SONG_LABELS
+            and not _is_weak_ambiguous_song(song)
+        ]
+        item = strip_internal_public_fields(item)
+        cleaned.append(item)
+    return cleaned
+
+
+def public_series_key(event):
+    """Return a loose same-series key for suppressing replaced last-year cards."""
+    name = str(event.get("name") or "").translate(str.maketrans("０１２３４５６７８９", "0123456789"))
+    name = re.sub(r"\b20\d{2}\b", "", name)
+    name = re.sub(r"令和\s*\d+\s*年(?:度)?", "", name)
+    name = re.sub(r"\s+", " ", name).strip()
+    return "|".join([
+        str(event.get("area") or ""),
+        str(event.get("venue") or ""),
+        name,
+    ])
+
+
+def _song_name(song):
+    return song if isinstance(song, str) else str(song.get("name") or "")
+
+
+def _public_song(song):
+    if isinstance(song, str):
+        return song
+    item = dict(song)
+    item.pop("evidence_urls", None)
+    item.pop("media_urls", None)
+    item.pop("video_urls", None)
+    return item
+
+
+def strip_internal_public_fields(value):
+    if isinstance(value, list):
+        cleaned = []
+        for item in value:
+            if isinstance(item, str) and "youtube.com" in item:
+                continue
+            cleaned.append(strip_internal_public_fields(item))
+        return cleaned
+    if not isinstance(value, dict):
+        return value
+
+    cleaned = {}
+    skip_keys = {
+        "youtube_evidence",
+        "occurrences",
+        "evidence_urls",
+        "media_urls",
+        "video_urls",
+    }
+    for key, item in value.items():
+        if key in skip_keys:
+            continue
+        if key in {"url", "source_url"} and isinstance(item, str) and "youtube.com" in item:
+            continue
+        cleaned[key] = strip_internal_public_fields(item)
+    return cleaned
+
+
+def _song_score(song):
+    if isinstance(song, str):
+        return (0, 0, 0)
+    return (
+        int(song.get("probability") or 0),
+        int(song.get("source_count") or 0),
+        int(song.get("evidence_count") or 0),
+    )
+
+
+def _is_weak_ambiguous_song(song):
+    name = _song_name(song).strip()
+    if name not in AMBIGUOUS_SONG_LABELS:
+        return False
+    if isinstance(song, str):
+        return True
+    return (
+        int(song.get("evidence_count") or 0) <= 1
+        and song.get("basis") in {None, "current_hint", "past_evidence"}
+    )
+
+
+def merge_replacement_songs(current, recurring):
+    """Move useful last-year song evidence onto the current-year replacement card."""
+    merged = {}
+    for source in [current, recurring]:
+        for raw_song in source.get("songs") or []:
+            name = _song_name(raw_song).strip()
+            if not name or name in NON_SONG_LABELS:
+                continue
+            if source is recurring and _is_weak_ambiguous_song(raw_song):
+                continue
+            song = {"name": name, "confidence": "hint", "source_count": 0} if isinstance(raw_song, str) else dict(raw_song)
+            if source is recurring and str(recurring.get("date") or "").startswith("2025-"):
+                song["basis"] = "past_evidence"
+                song["basis_label"] = "2025年ヒント"
+                if song.get("probability") is None:
+                    song["probability"] = 80
+            existing = merged.get(name)
+            if existing is None or _song_score(song) > _song_score(existing):
+                merged[name] = song
+    current["songs"] = sorted(merged.values(), key=lambda song: (-_song_score(song)[0], _song_name(song)))
+
+
+def suppress_replaced_recurring_events(events):
+    """Hide 2025 recurrence cards when the same venue/series has a 2026 card."""
+    current_by_key = {
+        public_series_key(event): event
+        for event in events
+        if str(event.get("date") or "").startswith("2026-")
+        and event.get("public_category") in {"upcoming", "ended"}
+    }
+    if not current_by_key:
+        return events
+    for event in events:
+        if event.get("public_category") != "recurring_last_year":
+            continue
+        current = current_by_key.get(public_series_key(event))
+        if current:
+            merge_replacement_songs(current, event)
+    return [
+        event for event in events
+        if not (
+            event.get("public_category") == "recurring_last_year"
+            and public_series_key(event) in current_by_key
+        )
+    ]
+
+
 def main():
     if not os.environ.get("NOTION_API_TOKEN"):
         print("Notion未設定 (NOTION_API_TOKEN) のためイベント公開エクスポートをスキップ")
@@ -628,7 +808,7 @@ def main():
     except urllib.error.HTTPError as e:
         print(f"イベント公開エクスポート失敗 (HTTP {e.code})。スキップ")
         return
-    events = apply_public_recurrence_metadata(events)
+    events = suppress_replaced_recurring_events(apply_public_recurrence_metadata(sanitize_public_event_details(events)))
 
     os.makedirs(OUT_DIR, exist_ok=True)
     with open(OUT_JSON, "w", encoding="utf-8") as f:
