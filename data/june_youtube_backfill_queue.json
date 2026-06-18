@@ -1,0 +1,520 @@
+{
+  "generated_by": "build_month_youtube_backfill_queue.py",
+  "generated_at": "2026-06-18T04:32:50.930777+00:00",
+  "source": {
+    "queue": "data/youtube_year_backfill_queue.json",
+    "candidates": "data/youtube_year_backfill_candidates.json"
+  },
+  "month": 6,
+  "summary": {
+    "items": 16,
+    "priority_counts": {
+      "low": 16
+    },
+    "target_year_counts": {
+      "2023": 8,
+      "2024": 8
+    },
+    "estimated_search_calls": 32
+  },
+  "rows": [
+    {
+      "queue_id": "youtube-year-backfill:a6ecd7feb7302b42",
+      "target_year": 2023,
+      "priority_score": 24,
+      "priority": "low",
+      "event_name": "郡上おどり in 青山 2026",
+      "venue": "秩父宮ラグビー場駐車場",
+      "area": "港区",
+      "series_key": "57b4ce72372b",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2026-06-26",
+      "public_date_end": "2026-06-27",
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "recurrence_label": "",
+      "recurrence_score": 0,
+      "source_url_count": 2,
+      "song_count": 2,
+      "priority_reasons": [
+        "has_source_url",
+        "has_song_data"
+      ],
+      "search_queries": [
+        "郡上おどり in 青山 2023 秩父宮ラグビー場駐車場 港区 2023 盆踊り",
+        "郡上おどり in 青山 2023 2023 YouTube 盆踊り",
+        "秩父宮ラグビー場駐車場 2023 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:d58043d1499c12eb",
+      "target_year": 2024,
+      "priority_score": 24,
+      "priority": "low",
+      "event_name": "郡上おどり in 青山 2026",
+      "venue": "秩父宮ラグビー場駐車場",
+      "area": "港区",
+      "series_key": "57b4ce72372b",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2026-06-26",
+      "public_date_end": "2026-06-27",
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "recurrence_label": "",
+      "recurrence_score": 0,
+      "source_url_count": 2,
+      "song_count": 2,
+      "priority_reasons": [
+        "has_source_url",
+        "has_song_data"
+      ],
+      "search_queries": [
+        "郡上おどり in 青山 2024 秩父宮ラグビー場駐車場 港区 2024 盆踊り",
+        "郡上おどり in 青山 2024 2024 YouTube 盆踊り",
+        "秩父宮ラグビー場駐車場 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:128813fba0e30596",
+      "target_year": 2023,
+      "priority_score": 16,
+      "priority": "low",
+      "event_name": "西綾瀬町会 夏祭り盆踊り大会",
+      "venue": "五反野コミュニティ公園",
+      "area": "足立区",
+      "series_key": "58b7d2506c8c",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-06-21",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-06-21"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.67,
+      "source_url_count": 0,
+      "song_count": 1,
+      "priority_reasons": [
+        "medium_recurrence_score",
+        "has_song_data"
+      ],
+      "search_queries": [
+        "西綾瀬町会 夏祭り盆踊り大会 五反野コミュニティ公園 足立区 2023 盆踊り",
+        "西綾瀬町会 夏祭り盆踊り大会 2023 YouTube 盆踊り",
+        "五反野コミュニティ公園 2023 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:804cab8073565d95",
+      "target_year": 2024,
+      "priority_score": 16,
+      "priority": "low",
+      "event_name": "西綾瀬町会 夏祭り盆踊り大会",
+      "venue": "五反野コミュニティ公園",
+      "area": "足立区",
+      "series_key": "58b7d2506c8c",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-06-21",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-06-21"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.67,
+      "source_url_count": 0,
+      "song_count": 1,
+      "priority_reasons": [
+        "medium_recurrence_score",
+        "has_song_data"
+      ],
+      "search_queries": [
+        "西綾瀬町会 夏祭り盆踊り大会 五反野コミュニティ公園 足立区 2024 盆踊り",
+        "西綾瀬町会 夏祭り盆踊り大会 2024 YouTube 盆踊り",
+        "五反野コミュニティ公園 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:b5508bf5619e3f97",
+      "target_year": 2023,
+      "priority_score": 15,
+      "priority": "low",
+      "event_name": "TOKYO盆ダンス×STEAM FESTIVAL2026",
+      "venue": "上野恩賜公園",
+      "area": "台東区",
+      "series_key": "7d5d38678fee",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2026-06-26",
+      "public_date_end": "2026-06-27",
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-06-26",
+        "2026-06-27"
+      ],
+      "recurrence_label": "2026年確認済み",
+      "recurrence_score": 0.95,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "high_recurrence_score"
+      ],
+      "search_queries": [
+        "TOKYO盆ダンス×STEAM FESTIVAL2023 上野恩賜公園 台東区 2023 盆踊り",
+        "TOKYO盆ダンス×STEAM FESTIVAL2023 2023 YouTube 盆踊り",
+        "上野恩賜公園 2023 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:9dc550abbd95a062",
+      "target_year": 2023,
+      "priority_score": 15,
+      "priority": "low",
+      "event_name": "「第34回ふるさと千川 まつり」 6月5日(金)-6日(土) 17:30-(開場)。",
+      "venue": "ふるさと千川ひろば(千川小学校校庭跡地)",
+      "area": "豊島区",
+      "series_key": "c3ca84e02442",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2026-06-05",
+      "public_date_end": "2026-06-06",
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-06-05",
+        "2026-06-06"
+      ],
+      "recurrence_label": "2026年開催終了",
+      "recurrence_score": 0.98,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "high_recurrence_score"
+      ],
+      "search_queries": [
+        "「第34回ふるさと千川 まつり」 6月5日(金)-6日(土) 17:30-(開場)。 ふるさと千川ひろば(千川小学校校庭跡地) 豊島区 2023 盆踊り",
+        "「第34回ふるさと千川 まつり」 6月5日(金)-6日(土) 17:30-(開場)。 2023 YouTube 盆踊り",
+        "ふるさと千川ひろば(千川小学校校庭跡地) 2023 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:e5f5e77fcaacfa9a",
+      "target_year": 2023,
+      "priority_score": 15,
+      "priority": "low",
+      "event_name": "奥浅草盆踊り",
+      "venue": "隅田公園",
+      "area": "台東区",
+      "series_key": "6fa7aa7ac980",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2026-06-27",
+      "public_date_end": "",
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-06-27"
+      ],
+      "recurrence_label": "2026年確認済み",
+      "recurrence_score": 0.95,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "high_recurrence_score"
+      ],
+      "search_queries": [
+        "奥浅草盆踊り 隅田公園 台東区 2023 盆踊り",
+        "奥浅草盆踊り 2023 YouTube 盆踊り",
+        "隅田公園 2023 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:3d5a8517fb197ecb",
+      "target_year": 2023,
+      "priority_score": 15,
+      "priority": "low",
+      "event_name": "戸越宮前盆踊り",
+      "venue": "宮前小学校",
+      "area": "品川区",
+      "series_key": "6c95b3cfb74d",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2026-06-07",
+      "public_date_end": "",
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-06-07"
+      ],
+      "recurrence_label": "2026年開催終了",
+      "recurrence_score": 0.98,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "high_recurrence_score"
+      ],
+      "search_queries": [
+        "戸越宮前盆踊り 宮前小学校 品川区 2023 盆踊り",
+        "戸越宮前盆踊り 2023 YouTube 盆踊り",
+        "宮前小学校 2023 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:0454aac7cd9268b6",
+      "target_year": 2023,
+      "priority_score": 15,
+      "priority": "low",
+      "event_name": "鮫洲入江広場公園 ゆり園盆踊り",
+      "venue": "鮫洲入江広場公園",
+      "area": "品川区",
+      "series_key": "0bc3fbb9133a",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2026-06-06",
+      "public_date_end": "",
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-06-06"
+      ],
+      "recurrence_label": "2026年開催終了",
+      "recurrence_score": 0.98,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "high_recurrence_score"
+      ],
+      "search_queries": [
+        "鮫洲入江広場公園 ゆり園盆踊り 鮫洲入江広場公園 品川区 2023 盆踊り",
+        "鮫洲入江広場公園 ゆり園盆踊り 2023 YouTube 盆踊り",
+        "鮫洲入江広場公園 2023 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:b1189ddc16d99bf5",
+      "target_year": 2024,
+      "priority_score": 15,
+      "priority": "low",
+      "event_name": "TOKYO盆ダンス×STEAM FESTIVAL2026",
+      "venue": "上野恩賜公園",
+      "area": "台東区",
+      "series_key": "7d5d38678fee",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2026-06-26",
+      "public_date_end": "2026-06-27",
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-06-26",
+        "2026-06-27"
+      ],
+      "recurrence_label": "2026年確認済み",
+      "recurrence_score": 0.95,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "high_recurrence_score"
+      ],
+      "search_queries": [
+        "TOKYO盆ダンス×STEAM FESTIVAL2024 上野恩賜公園 台東区 2024 盆踊り",
+        "TOKYO盆ダンス×STEAM FESTIVAL2024 2024 YouTube 盆踊り",
+        "上野恩賜公園 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:a44c8b218c309ef3",
+      "target_year": 2024,
+      "priority_score": 15,
+      "priority": "low",
+      "event_name": "「第34回ふるさと千川 まつり」 6月5日(金)-6日(土) 17:30-(開場)。",
+      "venue": "ふるさと千川ひろば(千川小学校校庭跡地)",
+      "area": "豊島区",
+      "series_key": "c3ca84e02442",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2026-06-05",
+      "public_date_end": "2026-06-06",
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-06-05",
+        "2026-06-06"
+      ],
+      "recurrence_label": "2026年開催終了",
+      "recurrence_score": 0.98,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "high_recurrence_score"
+      ],
+      "search_queries": [
+        "「第34回ふるさと千川 まつり」 6月5日(金)-6日(土) 17:30-(開場)。 ふるさと千川ひろば(千川小学校校庭跡地) 豊島区 2024 盆踊り",
+        "「第34回ふるさと千川 まつり」 6月5日(金)-6日(土) 17:30-(開場)。 2024 YouTube 盆踊り",
+        "ふるさと千川ひろば(千川小学校校庭跡地) 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:b5a46725e628b7b0",
+      "target_year": 2024,
+      "priority_score": 15,
+      "priority": "low",
+      "event_name": "奥浅草盆踊り",
+      "venue": "隅田公園",
+      "area": "台東区",
+      "series_key": "6fa7aa7ac980",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2026-06-27",
+      "public_date_end": "",
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-06-27"
+      ],
+      "recurrence_label": "2026年確認済み",
+      "recurrence_score": 0.95,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "high_recurrence_score"
+      ],
+      "search_queries": [
+        "奥浅草盆踊り 隅田公園 台東区 2024 盆踊り",
+        "奥浅草盆踊り 2024 YouTube 盆踊り",
+        "隅田公園 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:f893cc313aed0ce4",
+      "target_year": 2024,
+      "priority_score": 15,
+      "priority": "low",
+      "event_name": "戸越宮前盆踊り",
+      "venue": "宮前小学校",
+      "area": "品川区",
+      "series_key": "6c95b3cfb74d",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2026-06-07",
+      "public_date_end": "",
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-06-07"
+      ],
+      "recurrence_label": "2026年開催終了",
+      "recurrence_score": 0.98,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "high_recurrence_score"
+      ],
+      "search_queries": [
+        "戸越宮前盆踊り 宮前小学校 品川区 2024 盆踊り",
+        "戸越宮前盆踊り 2024 YouTube 盆踊り",
+        "宮前小学校 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:4f747504ea3bf40c",
+      "target_year": 2024,
+      "priority_score": 15,
+      "priority": "low",
+      "event_name": "鮫洲入江広場公園 ゆり園盆踊り",
+      "venue": "鮫洲入江広場公園",
+      "area": "品川区",
+      "series_key": "0bc3fbb9133a",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2026-06-06",
+      "public_date_end": "",
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-06-06"
+      ],
+      "recurrence_label": "2026年開催終了",
+      "recurrence_score": 0.98,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "high_recurrence_score"
+      ],
+      "search_queries": [
+        "鮫洲入江広場公園 ゆり園盆踊り 鮫洲入江広場公園 品川区 2024 盆踊り",
+        "鮫洲入江広場公園 ゆり園盆踊り 2024 YouTube 盆踊り",
+        "鮫洲入江広場公園 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:5b37437e6308ac3e",
+      "target_year": 2023,
+      "priority_score": 0,
+      "priority": "low",
+      "event_name": "GMOシブヤエンタメ祭 × JAME盆踊り",
+      "venue": "宮下公園",
+      "area": "渋谷区",
+      "series_key": "672eeba3240a",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-05-31",
+      "public_date_end": "2025-06-01",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-05-31",
+        "2025-06-01"
+      ],
+      "recurrence_label": "昨年開催・継続性 低",
+      "recurrence_score": 0.46,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [],
+      "search_queries": [
+        "GMOシブヤエンタメ祭 × JAME盆踊り 宮下公園 渋谷区 2023 盆踊り",
+        "GMOシブヤエンタメ祭 × JAME盆踊り 2023 YouTube 盆踊り",
+        "宮下公園 2023 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:cc538ba4c649ec02",
+      "target_year": 2024,
+      "priority_score": 0,
+      "priority": "low",
+      "event_name": "GMOシブヤエンタメ祭 × JAME盆踊り",
+      "venue": "宮下公園",
+      "area": "渋谷区",
+      "series_key": "672eeba3240a",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-05-31",
+      "public_date_end": "2025-06-01",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-05-31",
+        "2025-06-01"
+      ],
+      "recurrence_label": "昨年開催・継続性 低",
+      "recurrence_score": 0.46,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [],
+      "search_queries": [
+        "GMOシブヤエンタメ祭 × JAME盆踊り 宮下公園 渋谷区 2024 盆踊り",
+        "GMOシブヤエンタメ祭 × JAME盆踊り 2024 YouTube 盆踊り",
+        "宮下公園 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    }
+  ]
+}
