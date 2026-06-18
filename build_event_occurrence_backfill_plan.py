@@ -19,6 +19,7 @@ from build_event_occurrence_observations import (
 
 DATA = Path("data")
 CANDIDATES = DATA / "youtube_year_backfill_candidates.json"
+DECISIONS = DATA / "low_confidence_backfill_decisions.json"
 OUT = DATA / "event_occurrence_backfill_plan.json"
 MD_OUT = DATA / "event_occurrence_backfill_plan.md"
 QUOTE_RE = re.compile(r"[「『【\"]([^」』】\"]{2,60})[」』】\"]")
@@ -115,7 +116,17 @@ def strong_candidates(payload):
     return rows
 
 
-def build_plan(payload):
+def accepted_low_ids(decisions):
+    return {
+        row.get("observation_id")
+        for row in decisions.get("accept") or []
+        if row.get("observation_id")
+    }
+
+
+def build_plan(payload, decisions=None):
+    decisions = decisions or {}
+    manual_accepts = accepted_low_ids(decisions)
     grouped = defaultdict(lambda: defaultdict(list))
     for row in strong_candidates(payload):
         key = (row.get("event_name") or "", row.get("venue") or "", row.get("target_year"))
@@ -166,6 +177,9 @@ def build_plan(payload):
                 "source_videos": videos[:20],
                 "songs": songs,
             }
+            if observation["observation_id"] in manual_accepts and observation["confidence"] == "low":
+                observation["confidence"] = "manual_accept"
+                observation["manual_review"] = "accepted_low_confidence"
             observations.append(observation)
 
     excluded_low = [row for row in observations if row["confidence"] == "low"]
@@ -181,6 +195,7 @@ def build_plan(payload):
             "source_video_count": sum(row["source_video_count"] for row in observations),
             "observations_by_year": dict(sorted(years.items())),
             "observations_with_songs": sum(1 for row in observations if row.get("songs")),
+            "manual_accepted_low_observation_count": sum(1 for row in observations if row["confidence"] == "manual_accept"),
             "excluded_low_observation_count": len(excluded_low),
             "excluded_low_source_video_count": sum(row["source_video_count"] for row in excluded_low),
         },
@@ -220,12 +235,14 @@ def render_markdown(data):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--candidates", default=str(CANDIDATES))
+    parser.add_argument("--decisions", default=str(DECISIONS))
     parser.add_argument("--out", default=str(OUT))
     parser.add_argument("--md-out", default=str(MD_OUT))
     args = parser.parse_args()
 
     payload = load_json(args.candidates, {})
-    data = build_plan(payload)
+    decisions = load_json(args.decisions, {})
+    data = build_plan(payload, decisions)
     atomic_write_json(args.out, data)
     atomic_write_text(args.md_out, render_markdown(data))
     print(

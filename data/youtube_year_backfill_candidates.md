@@ -1,9 +1,9 @@
 # YouTube 過去年バックフィル候補
 
-- 生成: 2026-06-17T15:38:26.751080+00:00
-- selected_queue_count: 36
-- candidate_count: 204
-- strong: 82
+- 生成: 2026-06-18T03:11:52.324370+00:00
+- selected_queue_count: 37
+- candidate_count: 206
+- strong: 84
 - review: 15
 
 | status | score | year | event | venue | detected | channel | title | url |
@@ -26,6 +26,8 @@
 | strong | 100 | 2023 | 西久保八幡神社 盆踊り | 西久保八幡神社 | 2023-08-12 | 山崎茂雄 | ４K🏮＃夜に賭ける🏮＃西久保八幡神社盆踊り大会2023＃日本の夏祭り＃YoruniKakeru＃2023年8月12日 | https://www.youtube.com/watch?v=OAP1Zfk04Qc |
 | strong | 100 | 2023 | 西久保八幡神社 盆踊り | 西久保八幡神社 | 2023-08-12 | 山崎茂雄 | ４K🏮＃東京ばやし🏮＃西久保八幡神社盆踊り大会2023＃日本の夏祭り＃TokyoBayashi＃2023年8月12日 | https://www.youtube.com/watch?v=bg8A_dBB0fI |
 | strong | 100 | 2023 | 西久保八幡神社 盆踊り | 西久保八幡神社 | 2023-08-12 | 山崎茂雄 | ４K🏮＃東京タワー音頭🏮＃西久保八幡神社盆踊り大会2023＃日本の夏祭り＃TokyoTowerOndo＃2023年8月12日 | https://www.youtube.com/watch?v=xpWDtyzDfoY |
+| strong | 100 | 2023 | 謝恩納涼盆踊り大会（青山善光寺） | 青山善光寺 | 2023-07-31 | 祭のきせき　MatsuriNoKiseki | 会津磐梯山 　謝恩納涼盆踊り大会（青山・善光寺）20230731 | https://www.youtube.com/watch?v=ZFiQx-pkzGM |
+| strong | 100 | 2023 | 謝恩納涼盆踊り大会（青山善光寺） | 青山善光寺 | 2023-07-31 | 祭のきせき　MatsuriNoKiseki | 好きになった人 　謝恩納涼盆踊り大会（青山・善光寺）20230731 | https://www.youtube.com/watch?v=rP9NbJeJlxs |
 | strong | 100 | 2023 | 郡上おどり in 青山 2025 | 秩父宮ラグビー場駐車場 | 2023-06-16 | shu channel | 4K【郡上おどりin青山 2023】[1/3]『かわさき～三百～春駒』🏮Tokyo Bon Dance Festival👘2023.6.16 @秩父宮ラグビー場駐車場 | https://www.youtube.com/watch?v=t87ypCg5l0M |
 | strong | 100 | 2023 | 郡上おどり in 青山 2025 | 秩父宮ラグビー場駐車場 | 2023-06-16 | shu channel | 4K【郡上おどりin青山 2023】[2/3]『郡上甚句』🏮Tokyo Bon Dance Festival👘2023.6.16 @秩父宮ラグビー場駐車場 | https://www.youtube.com/watch?v=_iUSVsgFeHk |
 | strong | 100 | 2023 | 郡上おどり in 青山 2025 | 秩父宮ラグビー場駐車場 | 2023-06-16 | shu channel | 4K【郡上おどりin青山 2023】[3/3]『春駒～まつさか』🏮Tokyo Bon Dance Festival👘2023.6.16 @秩父宮ラグビー場駐車場 | https://www.youtube.com/watch?v=yOrCwOvrx7w |
@@ -86,5 +88,3 @@
 | strong | 88 | 2024 | 郡上おどり in 青山 2025 | 秩父宮ラグビー場駐車場 | 2024-06-14 | Hidden NIPPON | 【日本三大盆踊り】郡上おどりin青山 2024夏 ‐Gujo Odori (Japanese Bon Dance）in Aoyama, Tokyo- | https://www.youtube.com/watch?v=Ng_9XEnpfQs |
 | strong | 88 | 2024 | 郡上おどり in 青山 2025 | 秩父宮ラグビー場駐車場 | 2024-06-14 | shu channel | 【郡上おどりin青山 2024】（1/2）かわさき～げんげんばらばら～さわぎ～春駒🏮Tokyo Bon Dance Festival👘2024.6.15 @秩父宮ラグビー場 駐車場 | https://www.youtube.com/watch?v=7nJ6Xg3XRgo |
 | strong | 88 | 2024 | 郡上おどり in 青山 2025 | 秩父宮ラグビー場駐車場 | 2024-06-14 | shu channel | 【郡上おどりin青山 2024】（2/2）かわさき～さわぎ～三百～郡上甚句～春駒～まつさか🏮Tokyo Bon Dance Festival👘2024.6.15 @秩父宮ラグビー場 駐車場 | https://www.youtube.com/watch?v=lqzUIJ7u_bU |
-| strong | 83 | 2024 | 東本願寺盆踊り | 東本願寺（浅草） |  | 和太鼓お祭りチャンネル | Every Breath You Take　2024年浅草東本願寺盆踊り13　東京都台東区 | https://www.youtube.com/watch?v=xj79jLz1MIY |
-| strong | 83 | 2024 | 東本願寺盆踊り | 東本願寺（浅草） |  | 和太鼓お祭りチャンネル | こいこい音頭　2024年浅草東本願寺盆踊り14　東京都台東区 | https://www.youtube.com/watch?v=XMdsZOXbRJI |

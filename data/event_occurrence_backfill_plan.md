@@ -1,9 +1,9 @@
 # 年次開催回バックフィル追加プラン
 
-- 生成: 2026-06-17T15:38:51.311003+00:00
-- observation_count: 12
-- source_video_count: 67
-- observations_with_songs: 11
+- 生成: 2026-06-18T03:13:43.452758+00:00
+- observation_count: 13
+- source_video_count: 69
+- observations_with_songs: 12
 - excluded_low_observation_count: 8
 
 | confidence | year | date | event | venue | videos | channels | songs |
@@ -12,6 +12,7 @@
 | medium | 2023 | 2023-08-22 | 東本願寺盆踊り | 東本願寺（浅草） | 7 | 1 | 5 |
 | medium | 2023 | 2023-07-27 | 第28回新橋こいち祭 盆踊り | 桜田公園 | 3 | 1 | 2 |
 | high | 2023 | 2023-08-10〜2023-08-12 | 西久保八幡神社 盆踊り | 西久保八幡神社 | 9 | 2 | 15 |
+| manual_accept | 2023 | 2023-07-31 | 謝恩納涼盆踊り大会（青山善光寺） | 青山善光寺 | 2 | 1 | 2 |
 | high | 2023 | 2023-06-15〜2023-06-16 | 郡上おどり in 青山 2025 | 秩父宮ラグビー場駐車場 | 5 | 3 | 16 |
 | medium | 2024 | 2024-08-17 | シタマチ.ふるさと盆踊り大会 | おかちまちパンダ広場（御徒町駅南口駅前広場） | 5 | 1 | 5 |
 | medium | 2024 | 2024-07-26 | 丸の内de盆踊り | 行幸通り | 2 | 2 | 12 |

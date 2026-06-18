@@ -1,19 +1,19 @@
 {
   "generated_by": "harvest_youtube_year_backfill.py",
-  "generated_at": "2026-06-17T15:38:26.751080+00:00",
+  "generated_at": "2026-06-18T03:11:52.324370+00:00",
   "source": "data/youtube_year_backfill_queue.json",
-  "selected_queue_count": 36,
-  "queue_offset": 24,
-  "max_results_per_query": 5,
-  "api_request_count_estimate": 25,
+  "selected_queue_count": 37,
+  "queue_offset": 0,
+  "max_results_per_query": 1,
+  "api_request_count_estimate": 3,
   "summary": {
-    "candidate_count": 204,
+    "candidate_count": 206,
     "status_counts": {
       "review": 15,
-      "strong": 82,
+      "strong": 84,
       "weak": 107
     },
-    "strong_count": 82,
+    "strong_count": 84,
     "review_count": 15
   },
   "selected_queue_rows": [
@@ -1326,6 +1326,42 @@
         "飛鳥山公園盆踊り会（有志サークル） 飛鳥山公園 北区 2024 盆踊り",
         "飛鳥山公園盆踊り会（有志サークル） 2024 YouTube 盆踊り",
         "飛鳥山公園 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:0d25e9b623a91058",
+      "target_year": 2023,
+      "priority_score": 78,
+      "priority": "medium",
+      "event_name": "謝恩納涼盆踊り大会（青山善光寺）",
+      "venue": "青山善光寺",
+      "area": "港区",
+      "series_key": "0870cb15867a",
+      "observed_years": [
+        2025
+      ],
+      "observed_source_video_count": 12,
+      "public_date": "2025-07-27",
+      "public_date_end": "2025-07-28",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-27",
+        "2025-07-28"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.67,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "youtube_observed_series",
+        "recent_youtube_observation",
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "謝恩納涼盆踊り大会（青山善光寺） 青山善光寺 港区 2023 盆踊り",
+        "謝恩納涼盆踊り大会（青山善光寺） 2023 YouTube 盆踊り",
+        "青山善光寺 2023 盆踊り"
       ],
       "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
     }
@@ -2693,6 +2729,62 @@
       "setlist_count": 0,
       "setlist_sample": [],
       "description_excerpt": "地下鉄・神谷町駅近くの西久保八幡神社境内で盆踊り大会2023が華やかに盛大に開催されました。 @shigeo-harusora ツイッター＃https://twitter.com/yama_shigeochan ✈[後編] 🙄✈強突風に舞う旅客機＃https://youtu.be/W7UWHfdxUqY 強突風に舞う旅客機＃https://youtu.be/ZBAJDREsrY0 元日の羽田空港その１＃https://youtu.be/aFAbjTOkXTA 元日の羽田空港その２＃https://youtu.be/fYinuwPbEjk 元日の羽田空港その３＃https://youtu.be/djO3NQ7vDSQ 羽田空港ターミナル展望デッキより撮影しました。"
+    },
+    {
+      "status": "strong",
+      "score": 100,
+      "reasons": [
+        "event_name_in_video",
+        "venue_in_video",
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:0d25e9b623a91058",
+      "target_year": 2023,
+      "event_name": "謝恩納涼盆踊り大会（青山善光寺）",
+      "venue": "青山善光寺",
+      "area": "港区",
+      "detected_event_date": "2023-07-31",
+      "video_id": "ZFiQx-pkzGM",
+      "video_url": "https://www.youtube.com/watch?v=ZFiQx-pkzGM",
+      "title": "会津磐梯山 　謝恩納涼盆踊り大会（青山・善光寺）20230731",
+      "channel_id": "UC8djZNe8ynSlUmop8Jjt45A",
+      "channel_title": "祭のきせき　MatsuriNoKiseki",
+      "published_at": "2023-08-01T02:08:17Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/ZFiQx-pkzGM/maxresdefault.jpg",
+      "query": "謝恩納涼盆踊り大会（青山善光寺） 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "https://youtu.be/OurgPgMswSE https://youtu.be/dWuHriSITeA https://youtu.be/EK0WG-jc7lU https://youtu.be/yuNRSaWHUro https://youtu.be/HN2EQRYYAgM https://youtu.be/xvFhag_E3ZY https://youtu.be/U_FmH2z8f7A https://youtu.be/rP9NbJeJlxs https://youtu.be/Z-OzMSq63qA https://youtu.be/ZFiQx-pkzGM https://youtu.be/7QRf_iNEyRc https://youtu.be/K762TgOSZE8 https://youtu.be/FjkTVg_G_24 https://youtu.be/lIMWRTfm-Vg https://youtu.be/pRMVz8DM6rE https://youtu.be/5r840P3nANc https://youtu.be/XZD2JtpQfe8 https:…"
+    },
+    {
+      "status": "strong",
+      "score": 100,
+      "reasons": [
+        "event_name_in_video",
+        "venue_in_video",
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:0d25e9b623a91058",
+      "target_year": 2023,
+      "event_name": "謝恩納涼盆踊り大会（青山善光寺）",
+      "venue": "青山善光寺",
+      "area": "港区",
+      "detected_event_date": "2023-07-31",
+      "video_id": "rP9NbJeJlxs",
+      "video_url": "https://www.youtube.com/watch?v=rP9NbJeJlxs",
+      "title": "好きになった人 　謝恩納涼盆踊り大会（青山・善光寺）20230731",
+      "channel_id": "UC8djZNe8ynSlUmop8Jjt45A",
+      "channel_title": "祭のきせき　MatsuriNoKiseki",
+      "published_at": "2023-08-01T02:08:16Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/rP9NbJeJlxs/maxresdefault.jpg",
+      "query": "謝恩納涼盆踊り大会（青山善光寺） 青山善光寺 港区 2023 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "https://youtu.be/OurgPgMswSE https://youtu.be/dWuHriSITeA https://youtu.be/EK0WG-jc7lU https://youtu.be/yuNRSaWHUro https://youtu.be/HN2EQRYYAgM https://youtu.be/xvFhag_E3ZY https://youtu.be/U_FmH2z8f7A https://youtu.be/rP9NbJeJlxs https://youtu.be/Z-OzMSq63qA https://youtu.be/ZFiQx-pkzGM https://youtu.be/7QRf_iNEyRc https://youtu.be/K762TgOSZE8 https://youtu.be/FjkTVg_G_24 https://youtu.be/lIMWRTfm-Vg https://youtu.be/pRMVz8DM6rE https://youtu.be/5r840P3nANc https://youtu.be/XZD2JtpQfe8 https:…"
     },
     {
       "status": "strong",
@@ -10992,5 +11084,5 @@
       "description_excerpt": ""
     }
   ],
-  "merged_from": "2026-06-17T15:18:35.070007+00:00"
+  "merged_from": "2026-06-17T15:38:26.751080+00:00"
 }

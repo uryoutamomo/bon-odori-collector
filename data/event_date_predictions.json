@@ -1,19 +1,19 @@
 {
   "generated_by": "build_event_date_predictions.py",
-  "generated_at": "2026-06-17T15:29:54.877804+00:00",
+  "generated_at": "2026-06-18T03:14:03.471504+00:00",
   "target_year": 2026,
   "source": "data/event_occurrence_observations.json",
   "summary": {
-    "prediction_count": 8,
+    "prediction_count": 9,
     "rule_counts": {
       "fixed_date": 1,
-      "weekday_last": 1,
+      "weekday_last": 2,
       "weekday_near_day": 2,
       "weekday_nth": 3,
       "weekend_near_day": 1
     },
     "confidence_counts": {
-      "medium": 8
+      "medium": 9
     },
     "with_actual_observation": 1
   },
@@ -237,6 +237,159 @@
               "duration_days": 1,
               "confidence": "medium",
               "source_video_count": 6
+            }
+          ]
+        }
+      ],
+      "actual_observations": []
+    },
+    {
+      "series_key": "0870cb15867a",
+      "event_name": "謝恩納涼盆踊り大会（青山善光寺）",
+      "venue": "青山善光寺",
+      "target_year": 2026,
+      "prediction": {
+        "rule_type": "weekday_last",
+        "predicted_date_start": "2026-07-27",
+        "predicted_date_end": "2026-07-27",
+        "predicted_weekday_start": "月",
+        "predicted_weekday_end": "月",
+        "duration_days": 1,
+        "score": 0.74,
+        "confidence": "medium",
+        "basis": "7月の最終月曜",
+        "evidence_years": [
+          2023,
+          2025
+        ],
+        "evidence_count": 2,
+        "evidence_rows": [
+          {
+            "year": 2023,
+            "date_start": "2023-07-31",
+            "date_end": "2023-07-31",
+            "weekday_start": "月",
+            "duration_days": 1,
+            "confidence": "manual_accept",
+            "source_video_count": 2
+          },
+          {
+            "year": 2025,
+            "date_start": "2025-07-28",
+            "date_end": "2025-07-28",
+            "weekday_start": "月",
+            "duration_days": 1,
+            "confidence": "medium",
+            "source_video_count": 12
+          }
+        ]
+      },
+      "candidate_rules": [
+        {
+          "rule_type": "weekday_last",
+          "predicted_date_start": "2026-07-27",
+          "predicted_date_end": "2026-07-27",
+          "predicted_weekday_start": "月",
+          "predicted_weekday_end": "月",
+          "duration_days": 1,
+          "score": 0.74,
+          "confidence": "medium",
+          "basis": "7月の最終月曜",
+          "evidence_years": [
+            2023,
+            2025
+          ],
+          "evidence_count": 2,
+          "evidence_rows": [
+            {
+              "year": 2023,
+              "date_start": "2023-07-31",
+              "date_end": "2023-07-31",
+              "weekday_start": "月",
+              "duration_days": 1,
+              "confidence": "manual_accept",
+              "source_video_count": 2
+            },
+            {
+              "year": 2025,
+              "date_start": "2025-07-28",
+              "date_end": "2025-07-28",
+              "weekday_start": "月",
+              "duration_days": 1,
+              "confidence": "medium",
+              "source_video_count": 12
+            }
+          ]
+        },
+        {
+          "rule_type": "weekday_near_day",
+          "predicted_date_start": "2026-07-27",
+          "predicted_date_end": "2026-07-27",
+          "predicted_weekday_start": "月",
+          "predicted_weekday_end": "月",
+          "duration_days": 1,
+          "score": 0.68,
+          "confidence": "medium",
+          "basis": "7月30日前後の月曜",
+          "evidence_years": [
+            2023,
+            2025
+          ],
+          "evidence_count": 2,
+          "evidence_rows": [
+            {
+              "year": 2023,
+              "date_start": "2023-07-31",
+              "date_end": "2023-07-31",
+              "weekday_start": "月",
+              "duration_days": 1,
+              "confidence": "manual_accept",
+              "source_video_count": 2
+            },
+            {
+              "year": 2025,
+              "date_start": "2025-07-28",
+              "date_end": "2025-07-28",
+              "weekday_start": "月",
+              "duration_days": 1,
+              "confidence": "medium",
+              "source_video_count": 12
+            }
+          ]
+        },
+        {
+          "rule_type": "date_near",
+          "predicted_date_start": "2026-07-30",
+          "predicted_date_end": "2026-07-30",
+          "predicted_weekday_start": "木",
+          "predicted_weekday_end": "木",
+          "duration_days": 1,
+          "score": 0.58,
+          "confidence": "low",
+          "basis": "7月30日前後",
+          "evidence_years": [
+            2023,
+            2025
+          ],
+          "evidence_count": 2,
+          "evidence_rows": [
+            {
+              "year": 2023,
+              "date_start": "2023-07-31",
+              "date_end": "2023-07-31",
+              "weekday_start": "月",
+              "duration_days": 1,
+              "confidence": "manual_accept",
+              "source_video_count": 2
+            },
+            {
+              "year": 2025,
+              "date_start": "2025-07-28",
+              "date_end": "2025-07-28",
+              "weekday_start": "月",
+              "duration_days": 1,
+              "confidence": "medium",
+              "source_video_count": 12
             }
           ]
         }

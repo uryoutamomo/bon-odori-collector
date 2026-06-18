@@ -1,15 +1,16 @@
 {
   "generated_by": "build_event_occurrence_backfill_plan.py",
-  "generated_at": "2026-06-17T15:38:51.311003+00:00",
+  "generated_at": "2026-06-18T03:13:43.452758+00:00",
   "source": "data/youtube_year_backfill_candidates.json",
   "summary": {
-    "observation_count": 12,
-    "source_video_count": 67,
+    "observation_count": 13,
+    "source_video_count": 69,
     "observations_by_year": {
-      "2023": 5,
+      "2023": 6,
       "2024": 7
     },
-    "observations_with_songs": 11,
+    "observations_with_songs": 12,
+    "manual_accepted_low_observation_count": 1,
     "excluded_low_observation_count": 8,
     "excluded_low_source_video_count": 11
   },
@@ -611,6 +612,66 @@
           "confidence": "hint"
         }
       ]
+    },
+    {
+      "observation_id": "05279db2439d1689",
+      "series_key": "0870cb15867a",
+      "event_name": "謝恩納涼盆踊り大会（青山善光寺）",
+      "venue": "青山善光寺",
+      "area": "港区",
+      "year": 2023,
+      "date_start": "2023-07-31",
+      "date_end": "2023-07-31",
+      "observed_dates": [
+        "2023-07-31"
+      ],
+      "weekday_start": "月",
+      "weekday_end": "月",
+      "source_type": "youtube_backfill_observed",
+      "source_video_count": 2,
+      "source_channels": [
+        "祭のきせき　MatsuriNoKiseki"
+      ],
+      "confidence": "manual_accept",
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=ZFiQx-pkzGM",
+          "video_id": "ZFiQx-pkzGM",
+          "title": "会津磐梯山 　謝恩納涼盆踊り大会（青山・善光寺）20230731",
+          "channel": "祭のきせき　MatsuriNoKiseki",
+          "published_at": "2023-08-01T02:08:17Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=rP9NbJeJlxs",
+          "video_id": "rP9NbJeJlxs",
+          "title": "好きになった人 　謝恩納涼盆踊り大会（青山・善光寺）20230731",
+          "channel": "祭のきせき　MatsuriNoKiseki",
+          "published_at": "2023-08-01T02:08:16Z",
+          "score": 100
+        }
+      ],
+      "songs": [
+        {
+          "song_name": "会津磐梯山",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=ZFiQx-pkzGM"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "好きになった人",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=rP9NbJeJlxs"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        }
+      ],
+      "manual_review": "accepted_low_confidence"
     },
     {
       "observation_id": "ebfad4c75b399d5a",
