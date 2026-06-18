@@ -294,9 +294,11 @@ def main():
     if args.mail_reminder:
         write_pending_mail(report)
     if args.commit:
-        report["git"] = git_commit_and_push(report, args.push)
+        report["git"] = "commit_requested"
         write_json(REPORT_JSON, report)
         REPORT_MD.write_text(render_report(report), encoding="utf-8")
+        git_result = git_commit_and_push(report, args.push)
+        print(f"daily youtube backfill git: {git_result}")
 
     print(
         "daily youtube backfill: "
