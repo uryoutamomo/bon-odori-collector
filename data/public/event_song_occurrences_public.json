@@ -1,6 +1,6 @@
 {
   "generated_by": "build_song_occurrences.py",
-  "generated_at": "2026-06-18T12:42:06.993411+00:00",
+  "generated_at": "2026-06-19T16:30:50.950879+00:00",
   "target_year": 2026,
   "occurrences": [
     {
@@ -335302,105 +335302,6 @@
           "evidence_urls": [
             "https://www.youtube.com/watch?v=cgz7pHWnv0o"
           ]
-        }
-      ]
-    },
-    {
-      "occurrence_id": "b13312dabcbce1fc",
-      "event_name": "郡上おどり in 青山 2025",
-      "venue": "秩父宮ラグビー場駐車場",
-      "year": 2025,
-      "songs": [
-        {
-          "name": "かわさき",
-          "probability": 80,
-          "basis": "current_hint",
-          "basis_label": "今年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.8
-          ],
-          "evidence_urls": []
-        },
-        {
-          "name": "さわぎ",
-          "probability": 80,
-          "basis": "current_hint",
-          "basis_label": "今年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.8
-          ],
-          "evidence_urls": []
-        },
-        {
-          "name": "やっちく",
-          "probability": 80,
-          "basis": "current_hint",
-          "basis_label": "今年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.8
-          ],
-          "evidence_urls": []
-        },
-        {
-          "name": "三百",
-          "probability": 80,
-          "basis": "current_hint",
-          "basis_label": "今年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.8
-          ],
-          "evidence_urls": []
-        },
-        {
-          "name": "古調かわさき",
-          "probability": 80,
-          "basis": "current_hint",
-          "basis_label": "今年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.8
-          ],
-          "evidence_urls": []
-        },
-        {
-          "name": "春駒",
-          "probability": 80,
-          "basis": "current_hint",
-          "basis_label": "今年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.8
-          ],
-          "evidence_urls": []
-        },
-        {
-          "name": "甚句",
-          "probability": 80,
-          "basis": "current_hint",
-          "basis_label": "今年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.8
-          ],
-          "evidence_urls": []
         }
       ]
     },

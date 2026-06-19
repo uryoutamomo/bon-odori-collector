@@ -1,6 +1,6 @@
 {
   "generated_by": "build_song_ocr_queue.py",
-  "count": 2,
+  "count": 3,
   "items": [
     {
       "id": "b21783a2a9785946",
@@ -11,6 +11,21 @@
       "date": "2026-06-08T09:15:46+00:00",
       "media_urls": [],
       "text": "🏮赤坂日枝神社 盆踊り🏮\n「山王音頭と民踊大会」\n📅2026年6月13日（土）〜15日（月）\n📍山王パークタワー 公開空地\n\n曲目リストです！\nみんなで楽しみましょう♪\n\n#盆踊り #赤坂日枝神社 #山王音頭 #民踊大会 #夏祭り #東京イベント https://t.co/XzgNI2P8oy",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "fbaeaeaa339d4da7",
+      "status": "needs_ocr",
+      "account": "@STBA_Bonodori",
+      "url": "https://x.com/STBA_Bonodori/status/2002985649381793944",
+      "tweet_id": "2002985649381793944",
+      "date": "2025-12-22T06:12:47+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/G8wI1EnaQAA2KJN.jpg",
+        "https://t.co/wEmL1s2kCQ",
+        "pic.twitter.com/wEmL1s2kCQ"
+      ],
+      "text": "毎度お世話になっております❗\n\n来年2026年6月27日(土)開催\n第4回奥浅草盆踊りの\n曲目&amp;プログラムです❗\n\nお楽しみに‼️ https://t.co/wEmL1s2kCQ",
       "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
     },
     {

@@ -1,105 +1,9 @@
 {
   "generated_by": "build_event_song_candidates.py",
-  "count": 765,
-  "public_event_count": 306,
-  "review_count": 459,
+  "count": 743,
+  "public_event_count": 275,
+  "review_count": 468,
   "candidates": [
-    {
-      "id": "b99edd9b8145fae8",
-      "song_name": "シモキタ音頭",
-      "event_name": "羽根木公園の盆踊り",
-      "venue": "羽根木公園",
-      "area": "世田谷区",
-      "status": "未確認",
-      "confidence": "中",
-      "reasons": [
-        "song_suffix_in_context",
-        "song_suffix_near_context",
-        "split_context"
-      ],
-      "evidence": [
-        {
-          "source": "x_voice",
-          "url": "https://x.com/natsutr_bon/status/2022211317432799408",
-          "date": "2026-02-13T07:28:43+00:00",
-          "text": "奈津大郎〘ナツタロ〙\n【せたがや梅まつり】\n🏮2/15(日)📍羽根木公園(世田谷区)\n\n梅まつりの舞台演芸会(寿の会演芸発表)に「代田盆踊りの会」が出演(13:30頃~)🪭\n曲目は梅まつりのテーマ曲せたがや梅囃子や新世田谷音頭、シモキタ音頭、ダイダラボッチ音頭、代田節、羽根木音頭など。輪踊りもあり♪\nhttps://t.co/QLkqbSzCVM"
-        }
-      ],
-      "already_public": false,
-      "evidence_count": 1
-    },
-    {
-      "id": "fcec48db9493d75d",
-      "song_name": "ダイダラボッチ音頭",
-      "event_name": "羽根木公園の盆踊り",
-      "venue": "羽根木公園",
-      "area": "世田谷区",
-      "status": "未確認",
-      "confidence": "中",
-      "reasons": [
-        "song_suffix_in_context",
-        "song_suffix_near_context",
-        "split_context"
-      ],
-      "evidence": [
-        {
-          "source": "x_voice",
-          "url": "https://x.com/natsutr_bon/status/2022211317432799408",
-          "date": "2026-02-13T07:28:43+00:00",
-          "text": "奈津大郎〘ナツタロ〙\n【せたがや梅まつり】\n🏮2/15(日)📍羽根木公園(世田谷区)\n\n梅まつりの舞台演芸会(寿の会演芸発表)に「代田盆踊りの会」が出演(13:30頃~)🪭\n曲目は梅まつりのテーマ曲せたがや梅囃子や新世田谷音頭、シモキタ音頭、ダイダラボッチ音頭、代田節、羽根木音頭など。輪踊りもあり♪\nhttps://t.co/QLkqbSzCVM"
-        }
-      ],
-      "already_public": false,
-      "evidence_count": 1
-    },
-    {
-      "id": "6e8fb724fa5cba6d",
-      "song_name": "代田節",
-      "event_name": "羽根木公園の盆踊り",
-      "venue": "羽根木公園",
-      "area": "世田谷区",
-      "status": "未確認",
-      "confidence": "中",
-      "reasons": [
-        "song_suffix_in_context",
-        "song_suffix_near_context",
-        "split_context"
-      ],
-      "evidence": [
-        {
-          "source": "x_voice",
-          "url": "https://x.com/natsutr_bon/status/2022211317432799408",
-          "date": "2026-02-13T07:28:43+00:00",
-          "text": "奈津大郎〘ナツタロ〙\n【せたがや梅まつり】\n🏮2/15(日)📍羽根木公園(世田谷区)\n\n梅まつりの舞台演芸会(寿の会演芸発表)に「代田盆踊りの会」が出演(13:30頃~)🪭\n曲目は梅まつりのテーマ曲せたがや梅囃子や新世田谷音頭、シモキタ音頭、ダイダラボッチ音頭、代田節、羽根木音頭など。輪踊りもあり♪\nhttps://t.co/QLkqbSzCVM"
-        }
-      ],
-      "already_public": false,
-      "evidence_count": 1
-    },
-    {
-      "id": "0c46ed373cfac9a4",
-      "song_name": "羽根木音頭",
-      "event_name": "羽根木公園の盆踊り",
-      "venue": "羽根木公園",
-      "area": "世田谷区",
-      "status": "未確認",
-      "confidence": "中",
-      "reasons": [
-        "song_suffix_in_context",
-        "song_suffix_near_context",
-        "split_context"
-      ],
-      "evidence": [
-        {
-          "source": "x_voice",
-          "url": "https://x.com/natsutr_bon/status/2022211317432799408",
-          "date": "2026-02-13T07:28:43+00:00",
-          "text": "奈津大郎〘ナツタロ〙\n【せたがや梅まつり】\n🏮2/15(日)📍羽根木公園(世田谷区)\n\n梅まつりの舞台演芸会(寿の会演芸発表)に「代田盆踊りの会」が出演(13:30頃~)🪭\n曲目は梅まつりのテーマ曲せたがや梅囃子や新世田谷音頭、シモキタ音頭、ダイダラボッチ音頭、代田節、羽根木音頭など。輪踊りもあり♪\nhttps://t.co/QLkqbSzCVM"
-        }
-      ],
-      "already_public": false,
-      "evidence_count": 1
-    },
     {
       "id": "95829de52283f32f",
       "song_name": "大東京音頭",
@@ -211,28 +115,6 @@
       ],
       "already_public": false,
       "evidence_count": 10
-    },
-    {
-      "id": "e73d5dcf20861c44",
-      "song_name": "ダンシングヒーロー",
-      "event_name": "有馬小学校の盆踊り",
-      "venue": "有馬小学校",
-      "area": "中央区",
-      "status": "未確認",
-      "confidence": "中",
-      "reasons": [
-        "known_song_context"
-      ],
-      "evidence": [
-        {
-          "source": "x_voice",
-          "url": "https://x.com/QTjittan/status/2048289247447449625",
-          "date": "2026-04-26T06:33:06+00:00",
-          "text": "jittan\n浜町音頭保存会でも、夏祭り向けに有馬小学校で盆踊り練習会した時、ダンシングヒーローが好きな小学生に声かけられたよ。\n\nわし、小学生の頃は日舞してたから、見る人が見れば、踊りが上手い方に入るから覚えられてたみたい。\n\n今は盆踊りもしてないからもっと下手になってるけどね。"
-        }
-      ],
-      "already_public": false,
-      "evidence_count": 1
     },
     {
       "id": "addaf74cfe28988f",
@@ -1294,6 +1176,35 @@
           "url": "https://www.youtube.com/watch?v=n__BcpwGILg",
           "date": "2025-07-16T08:00:56Z",
           "text": "Urban Walk\n【4K】靖国神社みたままつり盆踊り | 「花火音頭 / 常磐炭坑節 / かがやき音頭」| Yasukuni Shrine Mitama Festival 2025 #盆踊り\n#靖国神社 #みたままつり #龍馬おどり #盆踊り #靖国神社\n\n00:00　花火音頭\n04:26　常磐炭坑節\n07:30　かがやき音頭\n\n【靖国神社 みたままつり 2025】\n開催日\n７月１３日（日）午後５時　みたま祭前夜祭\n７月１４日（月）午後５時　みたま祭第一夜祭\n７月１５日（火）午後５時　みたま祭第二夜祭\n７月１６日（水）午後５時　みたま祭第三夜祭\n場所 靖国神社 \nhttps://www.google.com/maps/place/%E8%83%BD%E6%A5%BD%E5%A0%82/@35.6946889,139.7413739,17z/data=!3m1!4b1!4m6!3m5!1s0x60188c683bb5639"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 2
+    },
+    {
+      "id": "0536a9675a16a68f",
+      "song_name": "花笠音頭",
+      "event_name": "みたままつり 納涼民踊のつどい",
+      "venue": "靖国神社",
+      "area": "千代田区",
+      "status": "未確認",
+      "confidence": "中",
+      "reasons": [
+        "known_song_context",
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/esutoru26/status/1638671747431157760",
+          "date": "2023-03-22T22:39:24+00:00",
+          "text": "小島 ゆみこ「忠霊塔盆おどり会」\n#忠霊塔盆おどり会\n\n「#花笠音頭 \n\n#靖国神社みたままつり でかかる曲を練習します🎶 \n\n令和５年３月１９日 \n\n月寒公民館  」\n\n今年は 靖国神社のみたままつりな行って ４日間踊ります‼️\n\n３年間踊れなかったので 楽しみでしょうがないです〜💖 \n\nhttps://t.co/ISSOmLH8Br"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://x.com/esutoru26/status/1637363584186609667",
+          "date": "2023-03-19T08:01:13+00:00",
+          "text": "小島 ゆみこ「忠霊塔盆おどり会」\n#忠霊塔盆おどり会\n\n「 #花笠音頭  \n\n#靖国神社みたままつり で かかる曲を練習します🎶 \n\n令和５年３月１９日 月寒公民館 」\n\n#美子の三味線どんぱん\n\n#男節\n\n#大江戸喧嘩花\n https://t.co/ISSOmLH8Br"
         }
       ],
       "already_public": false,
@@ -3130,19 +3041,13 @@
         },
         {
           "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=YpU3OWCpAFk",
-          "date": "2025-06-20T13:20:53Z",
-          "text": "Tokyo Lonely Walker\n[4K]🇯🇵 郡上おどり in 青山｜かわさき｜春駒｜ 2曲抜粋 2025年 初日 盆踊り / Gujo Odori dance held in Aoyama, Tokyo.\n港区青山（外苑前駅）にある秩父宮ラグビー場 駐車場で「郡上おどり in 青山」が開催されました。岐阜県郡上市の伝統的な盆踊り「郡上おどり」を青山で体験できる貴重なお祭りとあって、初日のこの日は平日にもかかわらず多くの人で賑わいました。\n踊り自体は休憩を挟みながら3時間半行われましたが、この動画では先行して「春駒」と「かわさき」を公開させていただきます。\n\nGujo Odori in Aoyama\" was held in Aoyama, Minato-ku, Tokyo. The first day of the festival was a rare opportunity to experience “Gujo "
-        },
-        {
-          "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=PKLKjk32iVw",
           "date": "2025-06-17T09:00:38Z",
           "text": "Tokyo Lonely Walker\n[4K]🇯🇵 盆踊り 荻野目洋子 - ダンシング・ヒーロー｜赤坂日枝神社 納涼大会 初日 / Dancing Eat You Up at a Japanese Bon Odori dance.\n日枝神社 山王祭「山王音頭と民踊大会」（納涼大会）初日のダンシング・ヒーローの様子をピックアップしました。\n\nDancing Eat You Up at a Japanese Bon Odori dance. Hie Shrine in Akasaka, Tokyo.\n\n2025.6.13 Fri\n4K60fps virtual walking tour\nOsmo Pocket 3\n\nーーー\n▽Please Subscribe to my channel\nよろしければ登録お願いします\nhttps://www.youtube.com/channel/UCKCspf_NrY16rUnODmBqOWA\n\n"
         }
       ],
       "already_public": false,
-      "evidence_count": 3
+      "evidence_count": 2
     },
     {
       "id": "1a090d5182a74952",
@@ -3303,7 +3208,7 @@
       "evidence_count": 2
     },
     {
-      "id": "d4a49a3bf6618b93",
+      "id": "4a9f3a78832d1f9b",
       "song_name": "河内音頭",
       "event_name": "花園神社 盆踊り",
       "venue": "花園神社",
@@ -3316,19 +3221,13 @@
       "evidence": [
         {
           "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=YpU3OWCpAFk",
-          "date": "2025-06-20T13:20:53Z",
-          "text": "Tokyo Lonely Walker\n[4K]🇯🇵 郡上おどり in 青山｜かわさき｜春駒｜ 2曲抜粋 2025年 初日 盆踊り / Gujo Odori dance held in Aoyama, Tokyo.\n港区青山（外苑前駅）にある秩父宮ラグビー場 駐車場で「郡上おどり in 青山」が開催されました。岐阜県郡上市の伝統的な盆踊り「郡上おどり」を青山で体験できる貴重なお祭りとあって、初日のこの日は平日にもかかわらず多くの人で賑わいました。\n踊り自体は休憩を挟みながら3時間半行われましたが、この動画では先行して「春駒」と「かわさき」を公開させていただきます。\n\nGujo Odori in Aoyama\" was held in Aoyama, Minato-ku, Tokyo. The first day of the festival was a rare opportunity to experience “Gujo "
-        },
-        {
-          "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=PKLKjk32iVw",
           "date": "2025-06-17T09:00:38Z",
           "text": "Tokyo Lonely Walker\n[4K]🇯🇵 盆踊り 荻野目洋子 - ダンシング・ヒーロー｜赤坂日枝神社 納涼大会 初日 / Dancing Eat You Up at a Japanese Bon Odori dance.\n日枝神社 山王祭「山王音頭と民踊大会」（納涼大会）初日のダンシング・ヒーローの様子をピックアップしました。\n\nDancing Eat You Up at a Japanese Bon Odori dance. Hie Shrine in Akasaka, Tokyo.\n\n2025.6.13 Fri\n4K60fps virtual walking tour\nOsmo Pocket 3\n\nーーー\n▽Please Subscribe to my channel\nよろしければ登録お願いします\nhttps://www.youtube.com/channel/UCKCspf_NrY16rUnODmBqOWA\n\n"
         }
       ],
       "already_public": false,
-      "evidence_count": 2
+      "evidence_count": 1
     },
     {
       "id": "722415f15c73c5b7",
@@ -3383,29 +3282,6 @@
           "url": "https://www.youtube.com/watch?v=-OCtAId5Zdo",
           "date": "2025-08-05T09:15:00Z",
           "text": "祭のきせき　盆踊り\n花笠音頭 　新宿 花園神社　盆踊り 　20250803\n新宿 花園神社 盆踊り　2025年8月3日（日）\n\n前半\n大人コンクール　課題曲：新宿音頭\n\nhttps://youtu.be/PXZ97B0BKdw\nhttps://youtu.be/AsULmIH2Ky0\nhttps://youtu.be/CBERUJvgnoM\nhttps://youtu.be/-OCtAId5Zdo\nhttps://youtu.be/7CKKXbyYRRU\nhttps://youtu.be/35zMWf5RROc\nhttps://youtu.be/UJ7pthA6lPQ\nhttps://youtu.be/t4P3X1vBVI0\nhttps://youtu.be/OPpomvedZok\nhttps://youtu.be/npibEFUL31g\nhttps://youtu.be/saQWTdgycRA\nhttps://youtu.be"
-        }
-      ],
-      "already_public": false,
-      "evidence_count": 1
-    },
-    {
-      "id": "56e6810cd9a8b007",
-      "song_name": "郡上おどり",
-      "event_name": "花園神社 盆踊り",
-      "venue": "花園神社",
-      "area": "新宿区",
-      "status": "未確認",
-      "confidence": "中",
-      "reasons": [
-        "known_song_context",
-        "song_suffix_near_context"
-      ],
-      "evidence": [
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=YpU3OWCpAFk",
-          "date": "2025-06-20T13:20:53Z",
-          "text": "Tokyo Lonely Walker\n[4K]🇯🇵 郡上おどり in 青山｜かわさき｜春駒｜ 2曲抜粋 2025年 初日 盆踊り / Gujo Odori dance held in Aoyama, Tokyo.\n港区青山（外苑前駅）にある秩父宮ラグビー場 駐車場で「郡上おどり in 青山」が開催されました。岐阜県郡上市の伝統的な盆踊り「郡上おどり」を青山で体験できる貴重なお祭りとあって、初日のこの日は平日にもかかわらず多くの人で賑わいました。\n踊り自体は休憩を挟みながら3時間半行われましたが、この動画では先行して「春駒」と「かわさき」を公開させていただきます。\n\nGujo Odori in Aoyama\" was held in Aoyama, Minato-ku, Tokyo. The first day of the festival was a rare opportunity to experience “Gujo "
         }
       ],
       "already_public": false,
@@ -5641,9 +5517,9 @@
       "evidence_count": 1
     },
     {
-      "id": "b35e32f9ad26ccb2",
+      "id": "312f92099479b95b",
       "song_name": "ソーラン節",
-      "event_name": "郡上おどり in 青山 2025",
+      "event_name": "郡上おどり in 青山",
       "venue": "秩父宮ラグビー場駐車場",
       "area": "港区",
       "status": "未確認",
@@ -5663,9 +5539,9 @@
       "evidence_count": 1
     },
     {
-      "id": "19255a45778dc66c",
+      "id": "453a51683b4b2640",
       "song_name": "ダンシングヒーロー",
-      "event_name": "郡上おどり in 青山 2025",
+      "event_name": "郡上おどり in 青山",
       "venue": "秩父宮ラグビー場駐車場",
       "area": "港区",
       "status": "未確認",
@@ -5685,15 +5561,21 @@
           "url": "https://www.youtube.com/watch?v=1__iWUspkTI",
           "date": "2025-06-21T08:00:02Z",
           "text": "Tokyo Lonely Walker\n[4K]🇯🇵 郡上おどり in 青山 2025 全曲｜東京で酔いしれる日本三大盆踊り / Gujo Odori dance held in Aoyama, Tokyo.\n江戸が郡上で染まる2日間！\n東京都港区青山（外苑前駅）にある秩父宮ラグビー場 駐車場で「郡上おどり in 青山」が初日を迎えました。岐阜県郡上市の伝統的な盆踊り「郡上おどり」を青山で体験できる貴重なお祭りとあって、初日のこの日は平日にもかかわらず大変多くの人で賑わいました。\n踊り意外にも、郡上の特産品や食事が堪能できる素晴らしいお祭りなので、お時間ある方はぜひ！\n\n【開催期間】\n6月20日（金）〜21日（土）\n\nFor two days, Edo was dyed with Gujo!\nGujo Odori in Aoyama\" opened in Aoyama, Minato-ku, Tokyo. This is a r"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=YpU3OWCpAFk",
+          "date": "2025-06-20T13:20:53Z",
+          "text": "Tokyo Lonely Walker\n[4K]🇯🇵 郡上おどり in 青山｜かわさき｜春駒｜ 2曲抜粋 2025年 初日 盆踊り / Gujo Odori dance held in Aoyama, Tokyo.\n港区青山（外苑前駅）にある秩父宮ラグビー場 駐車場で「郡上おどり in 青山」が開催されました。岐阜県郡上市の伝統的な盆踊り「郡上おどり」を青山で体験できる貴重なお祭りとあって、初日のこの日は平日にもかかわらず多くの人で賑わいました。\n踊り自体は休憩を挟みながら3時間半行われましたが、この動画では先行して「春駒」と「かわさき」を公開させていただきます。\n\nGujo Odori in Aoyama\" was held in Aoyama, Minato-ku, Tokyo. The first day of the festival was a rare opportunity to experience “Gujo "
         }
       ],
       "already_public": false,
-      "evidence_count": 2
+      "evidence_count": 3
     },
     {
-      "id": "c17e98e740ad1f16",
+      "id": "35dc98ec57a58282",
       "song_name": "河内音頭",
-      "event_name": "郡上おどり in 青山 2025",
+      "event_name": "郡上おどり in 青山",
       "venue": "秩父宮ラグビー場駐車場",
       "area": "港区",
       "status": "未確認",
@@ -5707,6 +5589,310 @@
           "url": "https://www.youtube.com/watch?v=1__iWUspkTI",
           "date": "2025-06-21T08:00:02Z",
           "text": "Tokyo Lonely Walker\n[4K]🇯🇵 郡上おどり in 青山 2025 全曲｜東京で酔いしれる日本三大盆踊り / Gujo Odori dance held in Aoyama, Tokyo.\n江戸が郡上で染まる2日間！\n東京都港区青山（外苑前駅）にある秩父宮ラグビー場 駐車場で「郡上おどり in 青山」が初日を迎えました。岐阜県郡上市の伝統的な盆踊り「郡上おどり」を青山で体験できる貴重なお祭りとあって、初日のこの日は平日にもかかわらず大変多くの人で賑わいました。\n踊り意外にも、郡上の特産品や食事が堪能できる素晴らしいお祭りなので、お時間ある方はぜひ！\n\n【開催期間】\n6月20日（金）〜21日（土）\n\nFor two days, Edo was dyed with Gujo!\nGujo Odori in Aoyama\" opened in Aoyama, Minato-ku, Tokyo. This is a r"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=YpU3OWCpAFk",
+          "date": "2025-06-20T13:20:53Z",
+          "text": "Tokyo Lonely Walker\n[4K]🇯🇵 郡上おどり in 青山｜かわさき｜春駒｜ 2曲抜粋 2025年 初日 盆踊り / Gujo Odori dance held in Aoyama, Tokyo.\n港区青山（外苑前駅）にある秩父宮ラグビー場 駐車場で「郡上おどり in 青山」が開催されました。岐阜県郡上市の伝統的な盆踊り「郡上おどり」を青山で体験できる貴重なお祭りとあって、初日のこの日は平日にもかかわらず多くの人で賑わいました。\n踊り自体は休憩を挟みながら3時間半行われましたが、この動画では先行して「春駒」と「かわさき」を公開させていただきます。\n\nGujo Odori in Aoyama\" was held in Aoyama, Minato-ku, Tokyo. The first day of the festival was a rare opportunity to experience “Gujo "
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 2
+    },
+    {
+      "id": "90b967568d7c234a",
+      "song_name": "郡上おどり",
+      "event_name": "郡上おどり in 青山",
+      "venue": "秩父宮ラグビー場駐車場",
+      "area": "港区",
+      "status": "未確認",
+      "confidence": "中",
+      "reasons": [
+        "known_song_context",
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/UT_bondanceclub/status/2063267319141605469",
+          "date": "2026-06-06T14:30:37+00:00",
+          "text": "東大盆踊りサークル Next→@郡上おどりin青山\n金沢百万石まつり 踊り流しに参加してきました！\n毎年参加させて頂いているのですが、今年は新入生や新規生も多い中、例年以上に練習を重ねて臨みました。\n惜しくも入賞はできませんでしたが、全員で楽しく踊りきることができました！\n来年こそは...!\n#金沢百万石まつり\n#東大盆踊りサークル\n#盆踊り https://t.co/0e1qthEnN7"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=79TugH9VTVk",
+          "date": "2025-07-25T08:00:07Z",
+          "text": "和太鼓お祭りチャンネル\nまつさか　2025年郡上おどりin青山2日目15終　秩父宮ラグビー場駐車場　東京都港区\n2025年6月20日に行われました、\n「郡上おどりin青山」2日目の様子です。\n\n\n郡上おどりin青山\n２日目\n１古調かわさき　https://youtu.be/7EKBYQ-ndHw\n２かわさき　https://youtu.be/GuGH1hgtGxs\n３三百　https://youtu.be/UlLJuBNfva8\n４春駒　https://youtu.be/t2vsQ2Tu820\n５やっちく　https://youtu.be/cFOlLi_bqjg\n６三百　https://youtu.be/_Ko4yP5tLlw\n７げんげんばらばら　https://youtu.be/XDhZO5Vt-II\n８さわぎ　https://youtu.be/_MdlcFB0AqU\n９猫の子　https://youtu.be/_MwpxOa"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=63lHrefTHQ4",
+          "date": "2025-07-24T08:00:13Z",
+          "text": "和太鼓お祭りチャンネル\n甚句　2025年郡上おどりin青山2日目14　秩父宮ラグビー場駐車場　東京都港区\n2025年6月20日に行われました、\n「郡上おどりin青山」2日目の様子です。\n\n\n郡上おどりin青山\n２日目\n１古調かわさき　https://youtu.be/7EKBYQ-ndHw\n２かわさき　https://youtu.be/GuGH1hgtGxs\n３三百　https://youtu.be/UlLJuBNfva8\n４春駒　https://youtu.be/t2vsQ2Tu820\n５やっちく　https://youtu.be/cFOlLi_bqjg\n６三百　https://youtu.be/_Ko4yP5tLlw\n７げんげんばらばら　https://youtu.be/XDhZO5Vt-II\n８さわぎ　https://youtu.be/_MdlcFB0AqU\n９猫の子　https://youtu.be/_MwpxOatgW"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=UKX79bB2aAI",
+          "date": "2025-07-23T08:00:38Z",
+          "text": "和太鼓お祭りチャンネル\nやっちく　2025年郡上おどりin青山2日目13　秩父宮ラグビー場駐車場　東京都港区\n2025年6月20日に行われました、\n「郡上おどりin青山」2日目の様子です。\n\n\n郡上おどりin青山\n２日目\n１古調かわさき　https://youtu.be/7EKBYQ-ndHw\n２かわさき　https://youtu.be/GuGH1hgtGxs\n３三百　https://youtu.be/UlLJuBNfva8\n４春駒　https://youtu.be/t2vsQ2Tu820\n５やっちく　https://youtu.be/cFOlLi_bqjg\n６三百　https://youtu.be/_Ko4yP5tLlw\n７げんげんばらばら　https://youtu.be/XDhZO5Vt-II\n８さわぎ　https://youtu.be/_MdlcFB0AqU\n９猫の子　https://youtu.be/_MwpxOat"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=upejYNkRf_0",
+          "date": "2025-07-22T08:00:58Z",
+          "text": "和太鼓お祭りチャンネル\n春駒　2025年郡上おどりin青山2日目12　秩父宮ラグビー場駐車場　東京都港区\n2025年6月20日に行われました、\n「郡上おどりin青山」2日目の様子です。\n\n\n郡上おどりin青山\n２日目\n１古調かわさき　https://youtu.be/7EKBYQ-ndHw\n２かわさき　https://youtu.be/GuGH1hgtGxs\n３三百　https://youtu.be/UlLJuBNfva8\n４春駒　https://youtu.be/t2vsQ2Tu820\n５やっちく　https://youtu.be/cFOlLi_bqjg\n６三百　https://youtu.be/_Ko4yP5tLlw\n７げんげんばらばら　https://youtu.be/XDhZO5Vt-II\n８さわぎ　https://youtu.be/_MdlcFB0AqU\n９猫の子　https://youtu.be/_MwpxOatgW"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=5OriDybv6Y4",
+          "date": "2025-07-21T08:00:06Z",
+          "text": "和太鼓お祭りチャンネル\n三百　2025年郡上おどりin青山2日目11　秩父宮ラグビー場駐車場　東京都港区\n2025年6月20日に行われました、\n「郡上おどりin青山」2日目の様子です。\n\n\n郡上おどりin青山\n２日目\n１古調かわさき　https://youtu.be/7EKBYQ-ndHw\n２かわさき　https://youtu.be/GuGH1hgtGxs\n３三百　https://youtu.be/UlLJuBNfva8\n４春駒　https://youtu.be/t2vsQ2Tu820\n５やっちく　https://youtu.be/cFOlLi_bqjg\n６三百　https://youtu.be/_Ko4yP5tLlw\n７げんげんばらばら　https://youtu.be/XDhZO5Vt-II\n８さわぎ　https://youtu.be/_MdlcFB0AqU\n９猫の子　https://youtu.be/_MwpxOatgW"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=rkCJC07Qz8E",
+          "date": "2025-07-20T08:00:57Z",
+          "text": "和太鼓お祭りチャンネル\nかわさき　2025年郡上おどりin青山2日目10　秩父宮ラグビー場駐車場　東京都港区\n2025年6月20日に行われました、\n「郡上おどりin青山」2日目の様子です。\n\n\n郡上おどりin青山\n２日目\n１古調かわさき　https://youtu.be/7EKBYQ-ndHw\n２かわさき　https://youtu.be/GuGH1hgtGxs\n３三百　https://youtu.be/UlLJuBNfva8\n４春駒　https://youtu.be/t2vsQ2Tu820\n５やっちく　https://youtu.be/cFOlLi_bqjg\n６三百　https://youtu.be/_Ko4yP5tLlw\n７げんげんばらばら　https://youtu.be/XDhZO5Vt-II\n８さわぎ　https://youtu.be/_MdlcFB0AqU\n９猫の子　https://youtu.be/_MwpxOat"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=_MwpxOatgWI",
+          "date": "2025-07-19T08:00:44Z",
+          "text": "和太鼓お祭りチャンネル\n猫の子　2025年郡上おどりin青山2日目９　秩父宮ラグビー場駐車場　東京都港区\n2025年6月20日に行われました、\n「郡上おどりin青山」2日目の様子です。\n\n\n郡上おどりin青山\n２日目\n１古調かわさき　https://youtu.be/7EKBYQ-ndHw\n２かわさき　https://youtu.be/GuGH1hgtGxs\n３三百　https://youtu.be/UlLJuBNfva8\n４春駒　https://youtu.be/t2vsQ2Tu820\n５やっちく　https://youtu.be/cFOlLi_bqjg\n６三百　https://youtu.be/_Ko4yP5tLlw\n７げんげんばらばら　https://youtu.be/XDhZO5Vt-II\n８さわぎ　https://youtu.be/_MdlcFB0AqU\n９猫の子　https://youtu.be/_MwpxOatgW"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=_MdlcFB0AqU",
+          "date": "2025-07-18T08:00:45Z",
+          "text": "和太鼓お祭りチャンネル\nさわぎ　2025年郡上おどりin青山2日目８　秩父宮ラグビー場駐車場　東京都港区\n2025年6月20日に行われました、\n「郡上おどりin青山」2日目の様子です。\n\n\n郡上おどりin青山\n２日目\n１古調かわさき　https://youtu.be/7EKBYQ-ndHw\n２かわさき　https://youtu.be/GuGH1hgtGxs\n３三百　https://youtu.be/UlLJuBNfva8\n４春駒　https://youtu.be/t2vsQ2Tu820\n５やっちく　https://youtu.be/cFOlLi_bqjg\n６三百　https://youtu.be/_Ko4yP5tLlw\n７げんげんばらばら　https://youtu.be/XDhZO5Vt-II\n８さわぎ　https://youtu.be/_MdlcFB0AqU\n９猫の子　https://youtu.be/_MwpxOatgW"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=XDhZO5Vt-II",
+          "date": "2025-07-17T08:00:42Z",
+          "text": "和太鼓お祭りチャンネル\nげんげんばらばら　2025年郡上おどりin青山2日目７　秩父宮ラグビー場駐車場　東京都港区\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山\n２日目\n１古調かわさき　https://youtu.be/7EKBYQ-ndHw\n２かわさき　https://youtu.be/GuGH1hgtGxs\n３三百　https://youtu.be/UlLJuBNfva8\n４春駒　https://youtu.be/t2vsQ2Tu820\n５やっちく　https://youtu.be/cFOlLi_bqjg\n６三百　https://youtu.be/_Ko4yP5tLlw\n７げんげんばらばら　https://youtu.be/XDhZO5Vt-II\n８さわぎ　https://youtu.be/_MdlcFB0AqU\n\n\n\n1日目\n１古調かわさき　https://youtu"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=_Ko4yP5tLlw",
+          "date": "2025-07-16T08:00:42Z",
+          "text": "和太鼓お祭りチャンネル\n三百　2025年郡上おどりin青山2日目６　秩父宮ラグビー場駐車場　東京都港区\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山\n２日目\n１古調かわさき　https://youtu.be/7EKBYQ-ndHw\n２かわさき　https://youtu.be/GuGH1hgtGxs\n３三百　https://youtu.be/UlLJuBNfva8\n４春駒　https://youtu.be/t2vsQ2Tu820\n５やっちく　https://youtu.be/cFOlLi_bqjg\n６三百　https://youtu.be/_Ko4yP5tLlw\n７げんげんばらばら　https://youtu.be/XDhZO5Vt-II\n８さわぎ　https://youtu.be/_MdlcFB0AqU\n\n\n\n1日目\n１古調かわさき　https://youtu.be/pj"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=cFOlLi_bqjg",
+          "date": "2025-07-15T08:00:42Z",
+          "text": "和太鼓お祭りチャンネル\nやっちく　2025年郡上おどりin青山2日目５　秩父宮ラグビー場駐車場　東京都港区\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山\n２日目\n１古調かわさき　https://youtu.be/7EKBYQ-ndHw\n２かわさき　https://youtu.be/GuGH1hgtGxs\n３三百　https://youtu.be/UlLJuBNfva8\n４春駒　https://youtu.be/t2vsQ2Tu820\n５やっちく　https://youtu.be/cFOlLi_bqjg\n６三百　https://youtu.be/_Ko4yP5tLlw\n７げんげんばらばら　https://youtu.be/XDhZO5Vt-II\n８さわぎ　https://youtu.be/_MdlcFB0AqU\n\n\n\n1日目\n１古調かわさき　https://youtu.be/"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=t2vsQ2Tu820",
+          "date": "2025-07-14T08:00:57Z",
+          "text": "和太鼓お祭りチャンネル\n春駒　2025年郡上おどりin青山2日目４　秩父宮ラグビー場駐車場　東京都港区\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山\n２日目\n１古調かわさき　https://youtu.be/7EKBYQ-ndHw\n２かわさき　https://youtu.be/GuGH1hgtGxs\n３三百　https://youtu.be/UlLJuBNfva8\n４春駒　https://youtu.be/t2vsQ2Tu820\n５やっちく　https://youtu.be/cFOlLi_bqjg\n６三百　https://youtu.be/_Ko4yP5tLlw\n７げんげんばらばら　https://youtu.be/XDhZO5Vt-II\n８さわぎ　https://youtu.be/_MdlcFB0AqU\n\n\n\n1日目\n１古調かわさき　https://youtu.be/pj"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=UlLJuBNfva8",
+          "date": "2025-07-13T08:00:37Z",
+          "text": "和太鼓お祭りチャンネル\n三百　2025年郡上おどりin青山2日目３　秩父宮ラグビー場駐車場　東京都港区\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山\n２日目\n１古調かわさき　https://youtu.be/7EKBYQ-ndHw\n２かわさき　https://youtu.be/GuGH1hgtGxs\n３三百　https://youtu.be/UlLJuBNfva8\n４春駒　https://youtu.be/t2vsQ2Tu820\n\n\n\n1日目\n１古調かわさき　https://youtu.be/pj5XyTNEqs8\n２かわさき　https://youtu.be/rX2XZ4AF5ug\n３三百　https://youtu.be/ul-2jUB-TNw\n４春駒　https://youtu.be/wtKh2MK2fjA\n５やっちく　https://youtu.be/kV5Zub4"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=GuGH1hgtGxs",
+          "date": "2025-07-12T08:00:19Z",
+          "text": "和太鼓お祭りチャンネル\nかわさき　2025年郡上おどりin青山2日目２　秩父宮ラグビー場駐車場　東京都港区\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山\n２日目\n１古調かわさき　https://youtu.be/7EKBYQ-ndHw\n２かわさき　https://youtu.be/GuGH1hgtGxs\n３三百　https://youtu.be/UlLJuBNfva8\n\n\n\n\n1日目\n１古調かわさき　https://youtu.be/pj5XyTNEqs8\n２かわさき　https://youtu.be/rX2XZ4AF5ug\n３三百　https://youtu.be/ul-2jUB-TNw\n４春駒　https://youtu.be/wtKh2MK2fjA\n５やっちく　https://youtu.be/kV5Zub4pKnk\n６かわさき　https://youtu.be/1d"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=7EKBYQ-ndHw",
+          "date": "2025-07-11T08:00:07Z",
+          "text": "和太鼓お祭りチャンネル\n古調かわさき　2025年郡上おどりin青山2日目　秩父宮ラグビー場駐車場　東京都港区\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山\n２日目\n１古調かわさき　https://youtu.be/7EKBYQ-ndHw\n２かわさき　https://youtu.be/GuGH1hgtGxs\n３三百　https://youtu.be/UlLJuBNfva8\n\n\n\n\n1日目\n１古調かわさき　https://youtu.be/pj5XyTNEqs8\n２かわさき　https://youtu.be/rX2XZ4AF5ug\n３三百　https://youtu.be/ul-2jUB-TNw\n４春駒　https://youtu.be/wtKh2MK2fjA\n５やっちく　https://youtu.be/kV5Zub4pKnk\n６かわさき　https://youtu.be/1"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=0tD7gbg9tKc",
+          "date": "2025-07-09T09:07:58Z",
+          "text": "Tokyo Lonely Walker\n[4K]🇯🇵 入谷が最高に熱い夜！ 入谷朝顔音頭踊り大会 2025 盆踊り 東京 / Traditional Japanese Bon dance in Iriya, Tokyo.\n東京・入谷で3日間開催された「入谷朝顔音頭踊り大会」の初日の様子です。\n会場となる公園の半分を提灯と櫓が最高の盆踊り空間を演出しており、残りの半分はたくさんの遊具で遊ぶ子どもたちの声が聞こえる素敵な会場です！\nこの会場でしか流れない地元曲もあり、伝統的な楽曲を中心におよそ2時間の盆踊りでした。\n途中、地元の小学生たちによるソーラン節の素晴らしい演舞もあり、会場全体が幸せな空気に包まれました！\n\nA Bon dance festival was held in Iriya in downtown Tokyo. It was held at the same time as the Asagao Matsuri ("
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=_Oc3jeWJLAo",
+          "date": "2025-07-04T09:00:37Z",
+          "text": "Tokyo Lonely Walker\n[4K]🇯🇵 民謡ユニット こでらんに～ w NOURAH/エキゾ盆踊り「星と太陽のマーケット」東京ナイトマーケット / Japanese Bon dance in Shibuya, Tokyo.\n渋谷の代々木公園で「星と太陽のマーケット」が開催中！\nこの日は、民謡ユニット こでらんに～とNOURAH/エキゾ盆踊りのコラボレーション！\n素晴らしい時間でした！！素敵な演奏にあわせて、みんなで踊る素晴らしい時間でした！！\n7日にもNOURAHさんのエキゾ盆踊りがあるので、興味のある方はぜひ！！\n\n【民謡ユニット こでらんに～】\nミカド香奈子：篠笛、唄、お囃子…他、\n小山慶宗(よしむね)：津軽三味線、\nちゃんゆか：太鼓、唄、お囃子…他、\nフレディ塚本：唄\n\nA folk song performance was held in Shibuya, Tokyo. A Bon Odori dan"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=-zbuEpc9mL8",
+          "date": "2025-06-24T12:52:24Z",
+          "text": "Urban Walk\n【4K】郡上おどり in 青山 ”最終日フィナーレは万雷の拍手とともに終了” / 盆踊り「かわさき / 三百 / 春駒 / 甚句 / まつさか 」Gujo Odori in Aoyama.\n開催日時：2025年6月20日(金)～21日(土)\n20日(金) 午後5時～8時半迄\n21日(土) 午後5時～8時迄\n開催場所：秩父宮ラグビー場 駐車場\n\n00:00　かわさき\n13:10　三百\n25:06　春駒\n35:33　ヤッチク\n44:22　甚句\n52:05　まつさか\n59:25　三本締め\n\n#郡上おどり #かわさき #盆踊り #春駒 #三百 #さわぎ #まつさか #甚句"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=_62_4SmhyVA",
+          "date": "2025-06-24T12:30:49Z",
+          "text": "和太鼓お祭りチャンネル\nまつさか　2025年郡上おどりin青山初日17終　秩父宮ラグビー場駐車場\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山\n２日目\n１古調かわさき　https://youtu.be/7EKBYQ-ndHw\n２かわさき　https://youtu.be/GuGH1hgtGxs\n３三百　https://youtu.be/UlLJuBNfva8\n\n\n\n\n1日目\n１古調かわさき　https://youtu.be/pj5XyTNEqs8\n２かわさき　https://youtu.be/rX2XZ4AF5ug\n３三百　https://youtu.be/ul-2jUB-TNw\n４春駒　https://youtu.be/wtKh2MK2fjA\n５やっちく　https://youtu.be/kV5Zub4pKnk\n６かわさき　https://youtu.be/1dlVfxk"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=RGFEpC-x3YI",
+          "date": "2025-06-24T12:00:43Z",
+          "text": "和太鼓お祭りチャンネル\n甚句　2025年郡上おどりin青山初日16　秩父宮ラグビー場駐車場\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山1日目\n１古調かわさき　https://youtu.be/pj5XyTNEqs8\n２かわさき　https://youtu.be/rX2XZ4AF5ug\n３三百　https://youtu.be/ul-2jUB-TNw\n４春駒　https://youtu.be/wtKh2MK2fjA\n５やっちく　https://youtu.be/kV5Zub4pKnk\n６かわさき　https://youtu.be/1dlVfxkB6EM\n７さわぎ　https://youtu.be/kn7tk1m4NJk\n８げんげんばらばら　https://youtu.be/J0rXsjlX3HM\n９猫の子　https://youtu.be/_CwhJa6Qmig\n10かわさ"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=WzGm88ZedLk",
+          "date": "2025-06-24T08:00:37Z",
+          "text": "和太鼓お祭りチャンネル\nさわぎ　2025年郡上おどりin青山初日15　秩父宮ラグビー場駐車場\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山1日目\n１古調かわさき　https://youtu.be/pj5XyTNEqs8\n２かわさき　https://youtu.be/rX2XZ4AF5ug\n３三百　https://youtu.be/ul-2jUB-TNw\n４春駒　https://youtu.be/wtKh2MK2fjA\n５やっちく　https://youtu.be/kV5Zub4pKnk\n６かわさき　https://youtu.be/1dlVfxkB6EM\n７さわぎ　https://youtu.be/kn7tk1m4NJk\n８げんげんばらばら　https://youtu.be/J0rXsjlX3HM\n９猫の子　https://youtu.be/_CwhJa6Qmig\n10かわ"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=uMEPRsUS94o",
+          "date": "2025-06-24T04:01:04Z",
+          "text": "和太鼓お祭りチャンネル\nかわさき　2025年郡上おどりin青山初日14　秩父宮ラグビー場駐車場\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山1日目\n１古調かわさき　https://youtu.be/pj5XyTNEqs8\n２かわさき　https://youtu.be/rX2XZ4AF5ug\n３三百　https://youtu.be/ul-2jUB-TNw\n４春駒　https://youtu.be/wtKh2MK2fjA\n５やっちく　https://youtu.be/kV5Zub4pKnk\n６かわさき　https://youtu.be/1dlVfxkB6EM\n７さわぎ　https://youtu.be/kn7tk1m4NJk\n８げんげんばらばら　https://youtu.be/J0rXsjlX3HM\n９猫の子　https://youtu.be/_CwhJa6Qmig\n10か"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=neaJhgQjJI0",
+          "date": "2025-06-23T12:31:04Z",
+          "text": "和太鼓お祭りチャンネル\nやっちく　2025年郡上おどりin青山初日13　秩父宮ラグビー場駐車場　東京都港区\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山1日目\n１古調かわさき　https://youtu.be/pj5XyTNEqs8\n２かわさき　https://youtu.be/rX2XZ4AF5ug\n３三百　https://youtu.be/ul-2jUB-TNw\n４春駒　https://youtu.be/wtKh2MK2fjA\n５やっちく　https://youtu.be/kV5Zub4pKnk\n６かわさき　https://youtu.be/1dlVfxkB6EM\n７さわぎ　https://youtu.be/kn7tk1m4NJk\n８げんげんばらばら　https://youtu.be/J0rXsjlX3HM\n９猫の子　https://youtu.be/_CwhJa6Qm"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=pyntjOkvodE",
+          "date": "2025-06-23T12:01:28Z",
+          "text": "和太鼓お祭りチャンネル\n春駒　2025年郡上おどりin青山初日12　秩父宮ラグビー場駐車場　東京都港区\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山1日目\n１古調かわさき　https://youtu.be/pj5XyTNEqs8\n２かわさき　https://youtu.be/rX2XZ4AF5ug\n３三百　https://youtu.be/ul-2jUB-TNw\n４春駒　https://youtu.be/wtKh2MK2fjA\n５やっちく　https://youtu.be/kV5Zub4pKnk\n６かわさき　https://youtu.be/1dlVfxkB6EM\n７さわぎ　https://youtu.be/kn7tk1m4NJk\n８げんげんばらばら　https://youtu.be/J0rXsjlX3HM\n９猫の子　https://youtu.be/_CwhJa6Qmig"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=9xU6FoKKdYY",
+          "date": "2025-06-23T08:00:16Z",
+          "text": "和太鼓お祭りチャンネル\n三百　2025年郡上おどりin青山初日11　秩父宮ラグビー場駐車場\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山1日目\n１古調かわさき　https://youtu.be/pj5XyTNEqs8\n２かわさき　https://youtu.be/rX2XZ4AF5ug\n３三百　https://youtu.be/ul-2jUB-TNw\n４春駒　https://youtu.be/wtKh2MK2fjA\n５やっちく　https://youtu.be/kV5Zub4pKnk\n６かわさき　https://youtu.be/1dlVfxkB6EM\n７さわぎ　https://youtu.be/kn7tk1m4NJk\n８げんげんばらばら　https://youtu.be/J0rXsjlX3HM\n９猫の子　https://youtu.be/_CwhJa6Qmig\n10かわさ"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=XcxRPcImdWA",
+          "date": "2025-06-23T04:00:47Z",
+          "text": "和太鼓お祭りチャンネル\nかわさき　2025年郡上おどりin青山初日10　秩父宮ラグビー場駐車場\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山1日目\n１古調かわさき　https://youtu.be/pj5XyTNEqs8\n２かわさき　https://youtu.be/rX2XZ4AF5ug\n３三百　https://youtu.be/ul-2jUB-TNw\n４春駒　https://youtu.be/wtKh2MK2fjA\n５やっちく　https://youtu.be/kV5Zub4pKnk\n６かわさき　https://youtu.be/1dlVfxkB6EM\n７さわぎ　https://youtu.be/kn7tk1m4NJk\n８げんげんばらばら　https://youtu.be/J0rXsjlX3HM\n９猫の子　https://youtu.be/_CwhJa6Qmig\n10か"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=_CwhJa6Qmig",
+          "date": "2025-06-22T13:01:07Z",
+          "text": "和太鼓お祭りチャンネル\n猫の子　2025年郡上おどりin青山初日９　秩父宮ラグビー場駐車場\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山1日目\n１古調かわさき　https://youtu.be/pj5XyTNEqs8\n２かわさき　https://youtu.be/rX2XZ4AF5ug\n３三百　https://youtu.be/ul-2jUB-TNw\n４春駒　https://youtu.be/wtKh2MK2fjA\n５やっちく　https://youtu.be/kV5Zub4pKnk\n６かわさき　https://youtu.be/1dlVfxkB6EM\n７さわぎ　https://youtu.be/kn7tk1m4NJk\n８げんげんばらばら　https://youtu.be/J0rXsjlX3HM\n９猫の子　https://youtu.be/_CwhJa6Qmig\n10かわさ"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=J0rXsjlX3HM",
+          "date": "2025-06-22T12:30:23Z",
+          "text": "和太鼓お祭りチャンネル\nげんげんばらばら　2025年郡上おどりin青山初日８　秩父宮ラグビー場駐車場\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山1日目\n１古調かわさき　https://youtu.be/pj5XyTNEqs8\n２かわさき　https://youtu.be/rX2XZ4AF5ug\n３三百　https://youtu.be/ul-2jUB-TNw\n４春駒　https://youtu.be/wtKh2MK2fjA\n５やっちく　https://youtu.be/kV5Zub4pKnk\n６かわさき　https://youtu.be/1dlVfxkB6EM\n７さわぎ　https://youtu.be/kn7tk1m4NJk\n８げんげんばらばら　https://youtu.be/J0rXsjlX3HM\n９猫の子　https://youtu.be/_CwhJa6Qmig\n"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=kn7tk1m4NJk",
+          "date": "2025-06-22T12:01:17Z",
+          "text": "和太鼓お祭りチャンネル\nさわぎ　2025年郡上おどりin青山初日７　秩父宮ラグビー場駐車場\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山1日目\n１古調かわさき　https://youtu.be/pj5XyTNEqs8\n２かわさき　https://youtu.be/rX2XZ4AF5ug\n３三百　https://youtu.be/ul-2jUB-TNw\n４春駒　https://youtu.be/wtKh2MK2fjA\n５やっちく　https://youtu.be/kV5Zub4pKnk\n６かわさき　https://youtu.be/1dlVfxkB6EM\n７さわぎ　https://youtu.be/kn7tk1m4NJk\n８げんげんばらばら　https://youtu.be/J0rXsjlX3HM\n\n\n\nかすがい郡上おどり\n１古調かわさき　https://youtu.be/6"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=1dlVfxkB6EM",
+          "date": "2025-06-22T09:30:03Z",
+          "text": "和太鼓お祭りチャンネル\nかわさき　2025年郡上おどりin青山初日６　秩父宮ラグビー場駐車場\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山1日目\n１古調かわさき　https://youtu.be/pj5XyTNEqs8\n２かわさき　https://youtu.be/rX2XZ4AF5ug\n３三百　https://youtu.be/ul-2jUB-TNw\n４春駒　https://youtu.be/wtKh2MK2fjA\n５やっちく　https://youtu.be/kV5Zub4pKnk\n６かわさき　https://youtu.be/1dlVfxkB6EM\n７さわぎ　https://youtu.be/kn7tk1m4NJk\n８げんげんばらばら　https://youtu.be/J0rXsjlX3HM\n\n\n\nかすがい郡上おどり\n１古調かわさき　https://youtu.be/"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=kV5Zub4pKnk",
+          "date": "2025-06-22T07:15:10Z",
+          "text": "和太鼓お祭りチャンネル\nやっちく　2025年郡上おどりin青山初日５　秩父宮ラグビー場駐車場　東京都港区\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山1日目\n１古調かわさき　https://youtu.be/pj5XyTNEqs8\n２かわさき　https://youtu.be/rX2XZ4AF5ug\n３三百　https://youtu.be/ul-2jUB-TNw\n４春駒　https://youtu.be/wtKh2MK2fjA\n５やっちく　https://youtu.be/kV5Zub4pKnk\n６かわさき　https://youtu.be/1dlVfxkB6EM\n\n\nかすがい郡上おどり\n１古調かわさき　https://youtu.be/6NngfQomX7s\n２かわさき　https://youtu.be/JGBAH39Zr4w\n３春駒　https://youtu.be/"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=wtKh2MK2fjA",
+          "date": "2025-06-21T12:01:43Z",
+          "text": "和太鼓お祭りチャンネル\n春駒　2025年郡上おどりin青山初日４　秩父宮ラグビー場駐車場　東京都港区\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山1日目\n１古調かわさき　https://youtu.be/pj5XyTNEqs8\n２かわさき　https://youtu.be/rX2XZ4AF5ug\n３三百　https://youtu.be/ul-2jUB-TNw\n４春駒　https://youtu.be/wtKh2MK2fjA\n５やっちく　https://youtu.be/kV5Zub4pKnk\n\n\n\nかすがい郡上おどり\n１古調かわさき　https://youtu.be/6NngfQomX7s\n２かわさき　https://youtu.be/JGBAH39Zr4w\n３春駒　https://youtu.be/E75K3H8CkGk\n４やっちく　https://youtu.be/z"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=ul-2jUB-TNw",
+          "date": "2025-06-21T08:00:56Z",
+          "text": "和太鼓お祭りチャンネル\n三百　2025年郡上おどりin青山初日３　秩父宮ラグビー場駐車場　東京都港区\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山1日目\n１古調かわさき　https://youtu.be/pj5XyTNEqs8\n２かわさき　https://youtu.be/rX2XZ4AF5ug\n３三百　https://youtu.be/ul-2jUB-TNw\n４春駒　https://youtu.be/wtKh2MK2fjA\n\n\n\nかすがい郡上おどり\n１古調かわさき　https://youtu.be/6NngfQomX7s\n２かわさき　https://youtu.be/JGBAH39Zr4w\n３春駒　https://youtu.be/E75K3H8CkGk\n４やっちく　https://youtu.be/zUZEDY4rbSc\n５さわぎ　https://youtu.be/3S"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=1__iWUspkTI",
+          "date": "2025-06-21T08:00:02Z",
+          "text": "Tokyo Lonely Walker\n[4K]🇯🇵 郡上おどり in 青山 2025 全曲｜東京で酔いしれる日本三大盆踊り / Gujo Odori dance held in Aoyama, Tokyo.\n江戸が郡上で染まる2日間！\n東京都港区青山（外苑前駅）にある秩父宮ラグビー場 駐車場で「郡上おどり in 青山」が初日を迎えました。岐阜県郡上市の伝統的な盆踊り「郡上おどり」を青山で体験できる貴重なお祭りとあって、初日のこの日は平日にもかかわらず大変多くの人で賑わいました。\n踊り意外にも、郡上の特産品や食事が堪能できる素晴らしいお祭りなので、お時間ある方はぜひ！\n\n【開催期間】\n6月20日（金）〜21日（土）\n\nFor two days, Edo was dyed with Gujo!\nGujo Odori in Aoyama\" opened in Aoyama, Minato-ku, Tokyo. This is a r"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=rX2XZ4AF5ug",
+          "date": "2025-06-21T07:00:54Z",
+          "text": "和太鼓お祭りチャンネル\nかわさき　2025年郡上おどりin青山初日２　秩父宮ラグビー場駐車場\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山1日目\n１古調かわさき　https://youtu.be/pj5XyTNEqs8\n２かわさき　https://youtu.be/rX2XZ4AF5ug\n３三百　https://youtu.be/ul-2jUB-TNw\n\n\nかすがい郡上おどり\n１古調かわさき　https://youtu.be/6NngfQomX7s\n２かわさき　https://youtu.be/JGBAH39Zr4w\n３春駒　https://youtu.be/E75K3H8CkGk\n４やっちく　https://youtu.be/zUZEDY4rbSc\n５さわぎ　https://youtu.be/3SFBGg03Rqw\n６三百　https://youtu.be/flXKjTA"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=pj5XyTNEqs8",
+          "date": "2025-06-21T06:00:44Z",
+          "text": "和太鼓お祭りチャンネル\n古調かわさき　2025年郡上おどりin青山初日１　秩父宮ラグビー場駐車場\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山1日目\n１古調かわさき　https://youtu.be/pj5XyTNEqs8\n２かわさき　https://youtu.be/rX2XZ4AF5ug\n３三百　https://youtu.be/ul-2jUB-TNw\n\n\nかすがい郡上おどり\n１古調かわさき　https://youtu.be/6NngfQomX7s\n２かわさき　https://youtu.be/JGBAH39Zr4w\n３春駒　https://youtu.be/E75K3H8CkGk\n４やっちく　https://youtu.be/zUZEDY4rbSc\n５さわぎ　https://youtu.be/3SFBGg03Rqw\n６三百　https://youtu.be/flXKj"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=7rNIuRvIlZI",
+          "date": "2025-06-20T17:57:42Z",
+          "text": "shu channel\n【郡上おどりin青山 2025】「さわぎ～郡上甚句～まつさか」🏮Tokyo Bon Dance Festival👘2025.6.20 @秩父宮ラグビー場 駐車場\n00:00:00 さわぎ\n00:07:36 郡上甚句\n00:15:48 まつさか\n\n【郡上おどりin青山】\n■日時：2025年6月20日(金)・21日(土)\n■場所：東京都港区北青山2-8-35\n　　　　秩父宮ラグビー場 駐車場\n「青山」の地名の由来は、天正18年(1590年）に徳川家康の家臣「青山忠成」の下屋敷が置かれたことに因み名づけられたもので、青山家の支族が江戸中期に郡上藩を所領し、菩提寺が青山の「梅窓院」に置かれた縁から、『郡上おどりin青山』が開催されるようになりました。\n\n#郡上おどり\n#盆踊り \n#bondance"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=y-LtTdBS9-Y",
+          "date": "2025-06-20T17:57:27Z",
+          "text": "shu channel\n【郡上おどりin青山 2025】「げんげんばらばら～猫の子」🏮Tokyo Bon Dance Festival👘2025.6.20 @秩父宮ラグビー場 駐車場\n00:00:00 げんげんばらばら\n00:10:54 猫の子\n\n【郡上おどりin青山】\n■日時：2025年6月20日(金)・21日(土)\n■場所：東京都港区北青山2-8-35\n　　　　秩父宮ラグビー場 駐車場\n「青山」の地名の由来は、天正18年(1590年）に徳川家康の家臣「青山忠成」の下屋敷が置かれたことに因み名づけられたもので、青山家の支族が江戸中期に郡上藩を所領し、菩提寺が青山の「梅窓院」に置かれた縁から、『郡上おどりin青山』が開催されるようになりました。\n\n#郡上おどり\n#盆踊り \n#bondance"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=hQ0UFL9bwnM",
+          "date": "2025-06-20T17:06:57Z",
+          "text": "Urban Walk\n【4K】郡上おどり in 青山 ”生歌 × 生演奏は控えめに言って最高!!” / 盆踊り「春駒 / やっちく / かわさき / さわぎ / 猫の手 」Gujo Odori in Aoyama.\n開催日時：2025年6月20日(金)～21日(土)\n20日(金) 午後5時～8時半迄\n21日(土) 午後5時～8時迄\n開催場所：秩父宮ラグビー場 駐車場\n\n00:00　春駒\n06:27　やっちく\n11:52　かわさき\n23:07　さわぎ\n33:22　げんげんばらばら\n43:58　猫の手\n\n\n#郡上おどり #かわさき #盆踊り #春駒 #猫の手 #さわぎ #げんげんばらばら #やっちく"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=Yc2li1qRm4o",
+          "date": "2025-06-20T15:40:43Z",
+          "text": "shu channel\n【郡上おどりin青山 2025】「春駒～やっちく～かわさき」🏮Tokyo Bon Dance Festival👘2025.6.20 @秩父宮ラグビー場 駐車場\n00:00:00 春駒\n00:09:12 やっちく\n00:17:40 かわさき\n\n【郡上おどりin青山】\n■日時：2025年6月20日(金)・21日(土)\n■場所：東京都港区北青山2-8-35\n　　　　秩父宮ラグビー場 駐車場\n「青山」の地名の由来は、天正18年(1590年）に徳川家康の家臣「青山忠成」の下屋敷が置かれたことに因み名づけられたもので、青山家の支族が江戸中期に郡上藩を所領し、菩提寺が青山の「梅窓院」に置かれた縁から、『郡上おどりin青山』が開催されるようになりました。\n\n#郡上おどり\n#盆踊り \n#bondance"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=XSrb-8_-ok4",
+          "date": "2025-06-20T15:37:42Z",
+          "text": "shu channel\n【郡上おどりin青山 2025】「かわさき～三百」🏮Tokyo Bon Dance Festival👘2025.6.20 @秩父宮ラグビー場 駐車場\n00:00:00 かわさき\n00:13:20 三百\n\n【郡上おどりin青山】\n■日時：2025年6月20日(金)・21日(土)\n■場所：東京都港区北青山2-8-35\n　　　　秩父宮ラグビー場 駐車場\n「青山」の地名の由来は、天正18年(1590年）に徳川家康の家臣「青山忠成」の下屋敷が置かれたことに因み名づけられたもので、青山家の支族が江戸中期に郡上藩を所領し、菩提寺が青山の「梅窓院」に置かれた縁から、『郡上おどりin青山』が開催されるようになりました。\n\n#郡上おどり\n#盆踊り \n#bondance"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=YpU3OWCpAFk",
+          "date": "2025-06-20T13:20:53Z",
+          "text": "Tokyo Lonely Walker\n[4K]🇯🇵 郡上おどり in 青山｜かわさき｜春駒｜ 2曲抜粋 2025年 初日 盆踊り / Gujo Odori dance held in Aoyama, Tokyo.\n港区青山（外苑前駅）にある秩父宮ラグビー場 駐車場で「郡上おどり in 青山」が開催されました。岐阜県郡上市の伝統的な盆踊り「郡上おどり」を青山で体験できる貴重なお祭りとあって、初日のこの日は平日にもかかわらず多くの人で賑わいました。\n踊り自体は休憩を挟みながら3時間半行われましたが、この動画では先行して「春駒」と「かわさき」を公開させていただきます。\n\nGujo Odori in Aoyama\" was held in Aoyama, Minato-ku, Tokyo. The first day of the festival was a rare opportunity to experience “Gujo "
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 43
+    },
+    {
+      "id": "03e0ae722162db4a",
+      "song_name": "東京音頭",
+      "event_name": "赤坂夏おどり（旧 赤坂盆踊り）",
+      "venue": "赤坂サカス広場",
+      "area": "港区",
+      "status": "未確認",
+      "confidence": "中",
+      "reasons": [
+        "known_song_context",
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/moriron2/status/2031005891089293680",
+          "date": "2026-03-09T13:55:13+00:00",
+          "text": "ネイチャー\n東京音頭　赤坂茜彩「江戸盆踊り」12　2026年3月8日　TBS赤坂サカス広場　東京都港区 https://t.co/ZKZ5r9yfaB @YouTubeより\n私が映る時は大抵東京音頭なのでw東京音頭しか踊れないひとみたいだぁ(^-^) 皆さんは同じ曲でも地域によって振りが違うのに完璧に踊れるのは何故なのー？？"
         }
       ],
       "already_public": false,
@@ -6268,28 +6454,6 @@
       "evidence_count": 1
     },
     {
-      "id": "8de7400fa85dc703",
-      "song_name": "浜町音頭",
-      "event_name": "あかつき公園の盆踊り",
-      "venue": "あかつき公園",
-      "area": "中央区",
-      "status": "未確認",
-      "confidence": "低",
-      "reasons": [
-        "song_suffix_near_context"
-      ],
-      "evidence": [
-        {
-          "source": "x_voice",
-          "url": "https://x.com/tukishimanagaya/status/1987457842056704409",
-          "date": "2025-11-09T09:50:49+00:00",
-          "text": "月島長屋\n蔦屋重三郎に思いを馳せて盆踊り\n\n浜町音頭保存会の方々による盆踊りイベント\n去年はあかつき公園で今年は日本橋社会教育会館ホールにて開催\n紋章上絵師の福田昭三さんの生歌&amp;保存会の方々の見事な踊りに混じって楽しく盆踊り🎶\n展示で使用された風呂敷を頂きました🙏\n\n #まるごとミュージアム2025 https://t.co/pITqQ1NQnq"
-        }
-      ],
-      "already_public": false,
-      "evidence_count": 1
-    },
-    {
       "id": "a22a8a58b2053969",
       "song_name": "きよしのズンドコ節",
       "event_name": "京橋盆踊り",
@@ -6585,10 +6749,10 @@
       "evidence_count": 1
     },
     {
-      "id": "60b3e66e279adc95",
+      "id": "b62f53ef27e23c36",
       "song_name": "浜町音頭",
-      "event_name": "有馬小学校の盆踊り",
-      "venue": "有馬小学校",
+      "event_name": "第2回 大盆踊り祭 with 坂崎守寛",
+      "venue": "日本橋社会教育会館",
       "area": "中央区",
       "status": "未確認",
       "confidence": "低",
@@ -6598,9 +6762,9 @@
       "evidence": [
         {
           "source": "x_voice",
-          "url": "https://x.com/QTjittan/status/2048289247447449625",
-          "date": "2026-04-26T06:33:06+00:00",
-          "text": "jittan\n浜町音頭保存会でも、夏祭り向けに有馬小学校で盆踊り練習会した時、ダンシングヒーローが好きな小学生に声かけられたよ。\n\nわし、小学生の頃は日舞してたから、見る人が見れば、踊りが上手い方に入るから覚えられてたみたい。\n\n今は盆踊りもしてないからもっと下手になってるけどね。"
+          "url": "https://x.com/tukishimanagaya/status/1987457842056704409",
+          "date": "2025-11-09T09:50:49+00:00",
+          "text": "月島長屋\n蔦屋重三郎に思いを馳せて盆踊り\n\n浜町音頭保存会の方々による盆踊りイベント\n去年はあかつき公園で今年は日本橋社会教育会館ホールにて開催\n紋章上絵師の福田昭三さんの生歌&amp;保存会の方々の見事な踊りに混じって楽しく盆踊り🎶\n展示で使用された風呂敷を頂きました🙏\n\n #まるごとミュージアム2025 https://t.co/pITqQ1NQnq"
         }
       ],
       "already_public": false,
@@ -7506,6 +7670,28 @@
       "evidence_count": 1
     },
     {
+      "id": "5a298fa390bdf572",
+      "song_name": "おこさ節",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/bakushin339711/status/2037912056008237266",
+          "date": "2026-03-28T15:17:51+00:00",
+          "text": "バクシン\n3/8(日)\n赤坂茜彩2026盆踊りへ、飛鳥山公園から梯子しました！\n\nこちらでも今年の新曲2曲、赤坂ナンバー、少年八木節、おこさ節赤坂ver?踊れて良かった。非常に寒かったですが踊ラーの熱気で丁度良い☺️\n久しぶりに会う踊り仲間の人にも会えて嬉しい(^^)楽しい踊日、両会場様\nありがとうございました✨ https://t.co/ElGojSuk2s"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
       "id": "426d14a686c0181e",
       "song_name": "さくら音頭",
       "event_name": "飛鳥山盆踊り",
@@ -7666,6 +7852,28 @@
       "evidence_count": 1
     },
     {
+      "id": "07e671eceed7f71b",
+      "song_name": "久しぶりに会う踊り",
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/bakushin339711/status/2037912056008237266",
+          "date": "2026-03-28T15:17:51+00:00",
+          "text": "バクシン\n3/8(日)\n赤坂茜彩2026盆踊りへ、飛鳥山公園から梯子しました！\n\nこちらでも今年の新曲2曲、赤坂ナンバー、少年八木節、おこさ節赤坂ver?踊れて良かった。非常に寒かったですが踊ラーの熱気で丁度良い☺️\n久しぶりに会う踊り仲間の人にも会えて嬉しい(^^)楽しい踊日、両会場様\nありがとうございました✨ https://t.co/ElGojSuk2s"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
       "id": "d616462a171afe72",
       "song_name": "大江戸東京音頭",
       "event_name": "飛鳥山公園盆踊り会（有志サークル）",
@@ -7710,7 +7918,7 @@
       "evidence_count": 1
     },
     {
-      "id": "969138311e49d455",
+      "id": "3287e5ef2ad74197",
       "song_name": "少年八木節",
       "event_name": "飛鳥山公園盆踊り会（有志サークル）",
       "venue": "飛鳥山公園",
@@ -7723,13 +7931,19 @@
       "evidence": [
         {
           "source": "x_voice",
+          "url": "https://x.com/bakushin339711/status/2037912056008237266",
+          "date": "2026-03-28T15:17:51+00:00",
+          "text": "バクシン\n3/8(日)\n赤坂茜彩2026盆踊りへ、飛鳥山公園から梯子しました！\n\nこちらでも今年の新曲2曲、赤坂ナンバー、少年八木節、おこさ節赤坂ver?踊れて良かった。非常に寒かったですが踊ラーの熱気で丁度良い☺️\n久しぶりに会う踊り仲間の人にも会えて嬉しい(^^)楽しい踊日、両会場様\nありがとうございました✨ https://t.co/ElGojSuk2s"
+        },
+        {
+          "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=M0bWjUtfUBs",
           "date": "2026-06-07T10:30:39+00:00",
           "text": "和太鼓お祭りCH\n【少年八木節】　飛鳥山公園輪踊り　「舞ことり」19　2026年5月24日　東京都北区　#盆踊り\n2026年5月24日行われました、\n舞ことり「飛鳥山公園輪踊り（盆踊り）」の様子です。\n\n\n\n飛鳥山公園盆踊り（舞ことり）\n１東京音頭　https://youtu.be/lmX6GaG4HuY\n２荒川音頭　https://youtu.be/BSxbnISzZvI\n３板橋音頭　https://youtu.be/XBHe1QaHQl8\n４たいとう音頭　https://youtu.be/BnRG0iS5stA\n５文京音頭　https://youtu.be/lEt68hsMb4A\n６相馬盆唄　https://youtu.be/3jKTtdLCnI8\n７王子小唄　https://youtu.be/w6mUO5UuS2g\n８飛鳥山音頭　https://youtu.be/iQkGYjz61rs\n９東京北都音頭　https://yo"
         }
       ],
       "already_public": false,
-      "evidence_count": 1
+      "evidence_count": 2
     },
     {
       "id": "17805f521ea79114",
@@ -8642,7 +8856,7 @@
       "evidence_count": 1
     },
     {
-      "id": "2f3c721962e3e658",
+      "id": "3900cf1934cc0d29",
       "song_name": "美しい踊り",
       "event_name": "山王音頭と民踊大会",
       "venue": "山王パークタワー公開空地",
@@ -8653,6 +8867,30 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=KCRc5UOqCjU",
+          "date": "2026-06-19T10:30:15+00:00",
+          "text": "和太鼓お祭りCH\n花笠踊り　赤坂日枝神社盆踊り３日目７　山王祭「山王音頭と民踊大会」　2026年6月15日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り最終日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭盆踊り、3日目最終日の熱気。\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n3日目\n１東京音頭　htt"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=-6lAV4ZITXk",
+          "date": "2026-06-19T10:00:23+00:00",
+          "text": "和太鼓お祭りCH\n相馬盆唄　赤坂日枝神社盆踊り３日目６　山王祭「山王音頭と民踊大会」　2026年6月15日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り最終日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭盆踊り、3日目最終日の熱気。\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n3日目\n１東京音頭　htt"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=YtFkQkN0KRA",
+          "date": "2026-06-18T10:30:17+00:00",
+          "text": "和太鼓お祭りCH\n白浜音頭　赤坂日枝神社盆踊り３日目５　山王祭「山王音頭と民踊大会」　2026年6月15日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り最終日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭盆踊り、3日目最終日の熱気。\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n3日目\n１東京音頭　htt"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=DP23MZsxm7M",
+          "date": "2026-06-18T10:00:15+00:00",
+          "text": "和太鼓お祭りCH\nドンパン節　赤坂日枝神社盆踊り３日目４　山王祭「山王音頭と民踊大会」　2026年6月15日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り最終日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭盆踊り、3日目最終日の熱気。\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n3日目\n１東京音頭　ht"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=3XFTcnG4OYI",
@@ -8793,7 +9031,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 23
+      "evidence_count": 27
     },
     {
       "id": "fb3f578210d23dc4",
@@ -9206,6 +9444,28 @@
           "url": "https://www.youtube.com/watch?v=n__BcpwGILg",
           "date": "2025-07-16T08:00:56Z",
           "text": "Urban Walk\n【4K】靖国神社みたままつり盆踊り | 「花火音頭 / 常磐炭坑節 / かがやき音頭」| Yasukuni Shrine Mitama Festival 2025 #盆踊り\n#靖国神社 #みたままつり #龍馬おどり #盆踊り #靖国神社\n\n00:00　花火音頭\n04:26　常磐炭坑節\n07:30　かがやき音頭\n\n【靖国神社 みたままつり 2025】\n開催日\n７月１３日（日）午後５時　みたま祭前夜祭\n７月１４日（月）午後５時　みたま祭第一夜祭\n７月１５日（火）午後５時　みたま祭第二夜祭\n７月１６日（水）午後５時　みたま祭第三夜祭\n場所 靖国神社 \nhttps://www.google.com/maps/place/%E8%83%BD%E6%A5%BD%E5%A0%82/@35.6946889,139.7413739,17z/data=!3m1!4b1!4m6!3m5!1s0x60188c683bb5639"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "4ceede7cda14ee05",
+      "song_name": "日間踊り",
+      "event_name": "みたままつり 納涼民踊のつどい",
+      "venue": "靖国神社",
+      "area": "千代田区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/esutoru26/status/1638671747431157760",
+          "date": "2023-03-22T22:39:24+00:00",
+          "text": "小島 ゆみこ「忠霊塔盆おどり会」\n#忠霊塔盆おどり会\n\n「#花笠音頭 \n\n#靖国神社みたままつり でかかる曲を練習します🎶 \n\n令和５年３月１９日 \n\n月寒公民館  」\n\n今年は 靖国神社のみたままつりな行って ４日間踊ります‼️\n\n３年間踊れなかったので 楽しみでしょうがないです〜💖 \n\nhttps://t.co/ISSOmLH8Br"
         }
       ],
       "already_public": false,
@@ -10720,6 +10980,28 @@
       "evidence_count": 1
     },
     {
+      "id": "14068f9eb66aa4ce",
+      "song_name": "佐左ヱ門音頭",
+      "event_name": "奥浅草盆踊り",
+      "venue": "隅田公園",
+      "area": "台東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/terajimamura/status/1693274150037823808",
+          "date": "2023-08-20T14:49:51+00:00",
+          "text": "高橋一徳\n令和5年No.18\n8月6日は、隅田公園（墨田区側）そよかぜ広場の、寺島なす祭りに行きました。\n盆踊りタイムで\n寺島茄子之介音頭\n佐左ヱ門音頭\n江州音頭\nがかかりました。 https://t.co/C75BFuCW0g"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
       "id": "49d2c56b3340decc",
       "song_name": "台東音頭",
       "event_name": "奥浅草盆踊り",
@@ -10764,6 +11046,28 @@
           "url": "https://www.youtube.com/watch?v=F6WMpPVaOw4",
           "date": "2025-10-14T12:30:18Z",
           "text": "和太鼓お祭りチャンネル\n大森甚句（生歌 Min Yoi's）　月見夜会盆踊り３　2025年10月6日　隅田公園そよ風広場\n2025年10月6日に行われました、\n「月見夜会盆踊り」の様子です。\n\n\n月見夜会\n１郡上節かわさき　https://youtu.be/QLrMQdjvY64\n２郡上節春駒　https://youtu.be/M0Rh4DVydhY\n３大森甚句　https://youtu.be/F6WMpPVaOw4\n４ドンパン節　https://youtu.be/3UYeTguoU-k\n５秋田音頭　https://youtu.be/dZPB1VmmP8s\n６えびすくい音頭　https://youtu.be/28AIROUV1r4\n７江州音頭　https://youtu.be/RX5wCMy3TNc\n８じゃこっぺ踊り　https://youtu.be/GaPoE21BWXA\n９黒石よされ節　https://youtu.be/Y"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "882ea5e389364a82",
+      "song_name": "寺島茄子之介音頭",
+      "event_name": "奥浅草盆踊り",
+      "venue": "隅田公園",
+      "area": "台東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/terajimamura/status/1693274150037823808",
+          "date": "2023-08-20T14:49:51+00:00",
+          "text": "高橋一徳\n令和5年No.18\n8月6日は、隅田公園（墨田区側）そよかぜ広場の、寺島なす祭りに行きました。\n盆踊りタイムで\n寺島茄子之介音頭\n佐左ヱ門音頭\n江州音頭\nがかかりました。 https://t.co/C75BFuCW0g"
         }
       ],
       "already_public": false,
@@ -11024,7 +11328,7 @@
       "evidence_count": 35
     },
     {
-      "id": "66382805aeddceeb",
+      "id": "071e747d135d62e7",
       "song_name": "江州音頭",
       "event_name": "奥浅草盆踊り",
       "venue": "隅田公園",
@@ -11036,6 +11340,12 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/terajimamura/status/1693274150037823808",
+          "date": "2023-08-20T14:49:51+00:00",
+          "text": "高橋一徳\n令和5年No.18\n8月6日は、隅田公園（墨田区側）そよかぜ広場の、寺島なす祭りに行きました。\n盆踊りタイムで\n寺島茄子之介音頭\n佐左ヱ門音頭\n江州音頭\nがかかりました。 https://t.co/C75BFuCW0g"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=Sd2XR8i-ANQ",
@@ -11056,7 +11366,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 3
+      "evidence_count": 4
     },
     {
       "id": "a3692e6474a40124",
@@ -14006,6 +14316,28 @@
       "evidence_count": 16
     },
     {
+      "id": "f18ee11071f21817",
+      "song_name": "サラリーマンは踊り",
+      "event_name": "三角広場まつり「居酒屋盆踊り」",
+      "venue": "新宿住友ビル三角広場",
+      "area": "新宿区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=c1UjYV9i6kU",
+          "date": "2026-06-19T09:24:20+00:00",
+          "text": "祭のきせき 盆踊り\nサラリーマンは踊りたい！　盆ギリ恋歌 サザンオールスターズ　(新宿住友ビル三角広場)\n#盆踊り\n平日なんですけどね。\nサザンオールスターズ 盆ギリ恋歌 \n新宿住友ビル三角広場　三角広場まつり 居酒屋盆踊り 2025 06 25"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
       "id": "101bd4d231f5ecc4",
       "song_name": "阿波おどり",
       "event_name": "三角広場まつり「居酒屋盆踊り」",
@@ -14688,7 +15020,29 @@
       "evidence_count": 2
     },
     {
-      "id": "4d2c687af25ee9c8",
+      "id": "feb664ca13e6dfb9",
+      "song_name": "ドンパン節",
+      "event_name": "花園神社 盆踊り",
+      "venue": "花園神社",
+      "area": "新宿区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/dokodemodojo/status/1686753761660682240",
+          "date": "2023-08-02T15:00:09+00:00",
+          "text": "DOKODEMODOJO\n花園神社⛩令和五年盆踊り🐯\nとらら！🐯二日目\n\n盆踊り詰め合わせ🐯🐧🐯\n#ドンパン節 #新宿音頭 #八木節\n\n#新宿とらおの天気予報\n#とらお #てんぺんちー #とらぺんたーず\n#みにとら #みにとらお散歩 https://t.co/C7B7wqA9k8"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "00277aff4dee56db",
       "song_name": "八木節",
       "event_name": "花園神社 盆踊り",
       "venue": "花園神社",
@@ -14699,6 +15053,12 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/dokodemodojo/status/1686753761660682240",
+          "date": "2023-08-02T15:00:09+00:00",
+          "text": "DOKODEMODOJO\n花園神社⛩令和五年盆踊り🐯\nとらら！🐯二日目\n\n盆踊り詰め合わせ🐯🐧🐯\n#ドンパン節 #新宿音頭 #八木節\n\n#新宿とらおの天気予報\n#とらお #てんぺんちー #とらぺんたーず\n#みにとら #みにとらお散歩 https://t.co/C7B7wqA9k8"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=OPpomvedZok",
@@ -14716,12 +15076,6 @@
           "url": "https://www.youtube.com/watch?v=miRpwhuGNjo",
           "date": "2025-08-02T15:37:37Z",
           "text": "Urban Walk\n生歌「八木節」!! 粋な歌声は今年も健在!!【新宿 花園神社 盆踊り 2025】 盆踊り Hanazono  Shrine Bon Dance Festival\n#花園神社 #八木節 #新宿 #盆踊り #生歌 #生唄\n\n【新宿 花園神社 盆踊り2025】\n開催日時：2025年8月2日(土)～3日(日)雨天順延\n開催場所 ：新宿 花園神社\nhttps://www.google.com/maps/place/%E8%8A%B1%E5%9C%92%E7%A5%9E%E7%A4%BE/@35.6935311,139.702753,17z/data=!3m1!4b1!4m6!3m5!1s0x60188cdbe07cde2b:0x3b4028968ed9a754!8m2!3d35.6935311!4d139.7053279!16s%2Fm%2F0k54d7q?entry=ttu"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=YpU3OWCpAFk",
-          "date": "2025-06-20T13:20:53Z",
-          "text": "Tokyo Lonely Walker\n[4K]🇯🇵 郡上おどり in 青山｜かわさき｜春駒｜ 2曲抜粋 2025年 初日 盆踊り / Gujo Odori dance held in Aoyama, Tokyo.\n港区青山（外苑前駅）にある秩父宮ラグビー場 駐車場で「郡上おどり in 青山」が開催されました。岐阜県郡上市の伝統的な盆踊り「郡上おどり」を青山で体験できる貴重なお祭りとあって、初日のこの日は平日にもかかわらず多くの人で賑わいました。\n踊り自体は休憩を挟みながら3時間半行われましたが、この動画では先行して「春駒」と「かわさき」を公開させていただきます。\n\nGujo Odori in Aoyama\" was held in Aoyama, Minato-ku, Tokyo. The first day of the festival was a rare opportunity to experience “Gujo "
         },
         {
           "source": "x_voice",
@@ -14756,7 +15110,7 @@
       "evidence_count": 1
     },
     {
-      "id": "4b31125d25b7d99d",
+      "id": "8d474a176612065d",
       "song_name": "新宿音頭",
       "event_name": "花園神社 盆踊り",
       "venue": "花園神社",
@@ -14767,6 +15121,12 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/dokodemodojo/status/1686753761660682240",
+          "date": "2023-08-02T15:00:09+00:00",
+          "text": "DOKODEMODOJO\n花園神社⛩令和五年盆踊り🐯\nとらら！🐯二日目\n\n盆踊り詰め合わせ🐯🐧🐯\n#ドンパン節 #新宿音頭 #八木節\n\n#新宿とらおの天気予報\n#とらお #てんぺんちー #とらぺんたーず\n#みにとら #みにとらお散歩 https://t.co/C7B7wqA9k8"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=JbSm8mZusfE",
@@ -14865,7 +15225,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 16
+      "evidence_count": 17
     },
     {
       "id": "e85e3513db26f5bc",
@@ -17228,6 +17588,28 @@
           "url": "https://www.youtube.com/watch?v=8IihPuR74SM",
           "date": "2025-09-27T04:00:10Z",
           "text": "和太鼓お祭りチャンネル\n日本橋音頭　杉大門通り盆踊り大会11　2025年9月21日\n2025年9月21日に行われました、\n「杉大門通り商店街盆踊り大会」の様子です。\n\n\n杉大門盆踊り\n１東京音頭　https://youtu.be/HwJzkUH_hO0\n２大東京音頭　https://youtu.be/txpcR7qq74g\n３炭坑節　https://youtu.be/-RXW7ZL9X44\n４八木節　https://youtu.be/0FTC8TLY0kk\n５新宿音頭　https://youtu.be/MUuEGc5PPd4\n６平成新宿音頭　https://youtu.be/T8JtRAmT7sc\n７荒木町小唄　https://youtu.be/oZIq8yHjdKo\n８いもがらぼくと　https://youtu.be/FCm8Kx38O3M\n９きよしのズンドコ節　https://youtu.be/8Ydfa8Su81c\n10松"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "b7004ff533c44add",
+      "song_name": "東京公衆欲情音頭",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/aprlbar_Yokujyo/status/2067903954068124061",
+          "date": "2026-06-19T09:34:57+00:00",
+          "text": "アパレルバー東京公衆◯情\nなんか暑くなってきました。\n\nもう少しで盆踊りの季節ですね。\n\n東京公衆欲情では昔から地下で歌い継がれてきた、今年は各地の盆踊り大会で流れる予定のない民謡、\n\n『東京公衆欲情音頭』\n\nを現在復元中です。\n\n正しい振り付けを知っている人は今のところ誰もいません。\n\n📍上野仲町通り地下  \nアパレルバー東京公衆欲情\n\nそれでは今夜も湯島の地下で"
         }
       ],
       "already_public": false,
@@ -19634,9 +20016,9 @@
       "evidence_count": 1
     },
     {
-      "id": "59c3e75fed275f13",
+      "id": "2281b24687dec4a3",
       "song_name": "入谷朝顔音頭踊り",
-      "event_name": "郡上おどり in 青山 2025",
+      "event_name": "郡上おどり in 青山",
       "venue": "秩父宮ラグビー場駐車場",
       "area": "港区",
       "status": "未確認",
@@ -19656,9 +20038,31 @@
       "evidence_count": 1
     },
     {
-      "id": "c1d0127d303331fd",
+      "id": "c94a6be2b88227da",
+      "song_name": "全員で楽しく踊り",
+      "event_name": "郡上おどり in 青山",
+      "venue": "秩父宮ラグビー場駐車場",
+      "area": "港区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/UT_bondanceclub/status/2063267319141605469",
+          "date": "2026-06-06T14:30:37+00:00",
+          "text": "東大盆踊りサークル Next→@郡上おどりin青山\n金沢百万石まつり 踊り流しに参加してきました！\n毎年参加させて頂いているのですが、今年は新入生や新規生も多い中、例年以上に練習を重ねて臨みました。\n惜しくも入賞はできませんでしたが、全員で楽しく踊りきることができました！\n来年こそは...!\n#金沢百万石まつり\n#東大盆踊りサークル\n#盆踊り https://t.co/0e1qthEnN7"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "0958ae520d5a0f48",
       "song_name": "八木節",
-      "event_name": "郡上おどり in 青山 2025",
+      "event_name": "郡上おどり in 青山",
       "venue": "秩父宮ラグビー場駐車場",
       "area": "港区",
       "status": "未確認",
@@ -19678,15 +20082,21 @@
           "url": "https://www.youtube.com/watch?v=1__iWUspkTI",
           "date": "2025-06-21T08:00:02Z",
           "text": "Tokyo Lonely Walker\n[4K]🇯🇵 郡上おどり in 青山 2025 全曲｜東京で酔いしれる日本三大盆踊り / Gujo Odori dance held in Aoyama, Tokyo.\n江戸が郡上で染まる2日間！\n東京都港区青山（外苑前駅）にある秩父宮ラグビー場 駐車場で「郡上おどり in 青山」が初日を迎えました。岐阜県郡上市の伝統的な盆踊り「郡上おどり」を青山で体験できる貴重なお祭りとあって、初日のこの日は平日にもかかわらず大変多くの人で賑わいました。\n踊り意外にも、郡上の特産品や食事が堪能できる素晴らしいお祭りなので、お時間ある方はぜひ！\n\n【開催期間】\n6月20日（金）〜21日（土）\n\nFor two days, Edo was dyed with Gujo!\nGujo Odori in Aoyama\" opened in Aoyama, Minato-ku, Tokyo. This is a r"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=YpU3OWCpAFk",
+          "date": "2025-06-20T13:20:53Z",
+          "text": "Tokyo Lonely Walker\n[4K]🇯🇵 郡上おどり in 青山｜かわさき｜春駒｜ 2曲抜粋 2025年 初日 盆踊り / Gujo Odori dance held in Aoyama, Tokyo.\n港区青山（外苑前駅）にある秩父宮ラグビー場 駐車場で「郡上おどり in 青山」が開催されました。岐阜県郡上市の伝統的な盆踊り「郡上おどり」を青山で体験できる貴重なお祭りとあって、初日のこの日は平日にもかかわらず多くの人で賑わいました。\n踊り自体は休憩を挟みながら3時間半行われましたが、この動画では先行して「春駒」と「かわさき」を公開させていただきます。\n\nGujo Odori in Aoyama\" was held in Aoyama, Minato-ku, Tokyo. The first day of the festival was a rare opportunity to experience “Gujo "
         }
       ],
       "already_public": false,
-      "evidence_count": 2
+      "evidence_count": 3
     },
     {
-      "id": "d548b9201ac6e143",
+      "id": "3fd8ae4c148d4bf9",
       "song_name": "阿波踊り",
-      "event_name": "郡上おどり in 青山 2025",
+      "event_name": "郡上おどり in 青山",
       "venue": "秩父宮ラグビー場駐車場",
       "area": "港区",
       "status": "未確認",
@@ -20106,6 +20516,94 @@
           "url": "https://www.youtube.com/watch?v=WRgHB2Op-2k",
           "date": "2025-08-12T14:30:31Z",
           "text": "和太鼓お祭りチャンネル\n東京タワー音頭　2025年西久保八幡神社例大祭盆踊り６　東京都港区\n2025年8月9日に行われました、\n「西久保八幡神社例大祭盆踊り」1日目の様子です。\n\n\n西久保八幡神社盆踊り\n１東京音頭　https://youtu.be/Fuupxa5BuXY\n２火の国太鼓　https://youtu.be/Z31SN6dgYec\n３大東京音頭　https://youtu.be/D6H4dOcZiPE\n４ひろしのさくら音頭　https://youtu.be/OUEjbribJmU\n５ハワイ音頭　https://youtu.be/QWRspL8ddbg\n６東京タワー音頭　https://youtu.be/WRgHB2Op-2k\n７ドンパン節　https://youtu.be/cM8a5elMJww\n８炭坑節　https://youtu.be/PzEQT-x3lKY"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "7bed77f3a2bf89c9",
+      "song_name": "一転して寒い中踊り",
+      "event_name": "赤坂夏おどり（旧 赤坂盆踊り）",
+      "venue": "赤坂サカス広場",
+      "area": "港区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/Ma_umojh/status/2030850213779558801",
+          "date": "2026-03-09T03:36:36+00:00",
+          "text": "Ma-\n🏮8 赤坂茜彩「江戸盆踊り」\n2026/3/8 東京都港区赤坂サカス広場\n\n本日2会場目です。飛鳥山は暖かかったですが、一転して寒い中踊りました。\n梯子・見知った方多数。リードの方々が頼もしく、忘れてる曲でも安心して踊りきれました。\n真室川音頭がやっぱり楽しい。2回も踊れて感無量です！ https://t.co/onGi9TnNzL"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "b1840555acabec67",
+      "song_name": "令和おどり",
+      "event_name": "赤坂夏おどり（旧 赤坂盆踊り）",
+      "venue": "赤坂サカス広場",
+      "area": "港区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/yama_shigeochan/status/1584525528823799808",
+          "date": "2022-10-24T12:41:39+00:00",
+          "text": "山崎茂雄 @yama_shigeochan\n🏮🎎＃会津磐梯山２~＃令和おどり~＃白浜音頭🎎赤坂盆踊り2022＃2022年9月29日＃赤坂サカス広場＃TBS前 🎎華麗な全編映像は～https://t.co/em88qe6DEK 🏮🎎📹😎💝🇯🇵 https://t.co/LrlxfLK0b8"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "df59232dbc3fd879",
+      "song_name": "白浜音頭",
+      "event_name": "赤坂夏おどり（旧 赤坂盆踊り）",
+      "venue": "赤坂サカス広場",
+      "area": "港区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/yama_shigeochan/status/1584525528823799808",
+          "date": "2022-10-24T12:41:39+00:00",
+          "text": "山崎茂雄 @yama_shigeochan\n🏮🎎＃会津磐梯山２~＃令和おどり~＃白浜音頭🎎赤坂盆踊り2022＃2022年9月29日＃赤坂サカス広場＃TBS前 🎎華麗な全編映像は～https://t.co/em88qe6DEK 🏮🎎📹😎💝🇯🇵 https://t.co/LrlxfLK0b8"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "102188c4604c9888",
+      "song_name": "真室川音頭",
+      "event_name": "赤坂夏おどり（旧 赤坂盆踊り）",
+      "venue": "赤坂サカス広場",
+      "area": "港区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/Ma_umojh/status/2030850213779558801",
+          "date": "2026-03-09T03:36:36+00:00",
+          "text": "Ma-\n🏮8 赤坂茜彩「江戸盆踊り」\n2026/3/8 東京都港区赤坂サカス広場\n\n本日2会場目です。飛鳥山は暖かかったですが、一転して寒い中踊りました。\n梯子・見知った方多数。リードの方々が頼もしく、忘れてる曲でも安心して踊りきれました。\n真室川音頭がやっぱり楽しい。2回も踊れて感無量です！ https://t.co/onGi9TnNzL"
         }
       ],
       "already_public": false,
@@ -21481,21 +21979,6 @@
       "evidence_count": 0
     },
     {
-      "id": "85845a7e8aef7a65",
-      "song_name": "まつり",
-      "event_name": "「希望ヶ丘団地夏まつり」 7月19日(土)-20日(日)。",
-      "venue": "希望ヶ丘団地 テニスコート",
-      "area": "世田谷区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
       "id": "a788a8389aa5a7b3",
       "song_name": "祖師谷神明社周辺で開かれる街なかの踊り",
       "event_name": "祖師谷昇進会商店街(振)盆踊り 7月18日(金)-19日(土)。",
@@ -21747,21 +22230,6 @@
       "song_name": "炭坑節",
       "event_name": "イベント名未確認（晴海ふ頭公園）",
       "venue": "晴海ふ頭公園",
-      "area": "中央区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
-      "id": "e02f71d26078b898",
-      "song_name": "まつり",
-      "event_name": "中央区大江戸まつり盆おどり大会",
-      "venue": "浜町公園",
       "area": "中央区",
       "status": "公開済み",
       "confidence": "公開済み",
@@ -22479,21 +22947,6 @@
       "evidence_count": 18
     },
     {
-      "id": "06e2a9e53552e74f",
-      "song_name": "まつり",
-      "event_name": "新井町会連合会・中野通り桜まつり実行委員会「中野通り桜まつり」",
-      "venue": "新井薬師公園",
-      "area": "中野区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
       "id": "bf852cab27a4a743",
       "song_name": "ジャンボリミッキー",
       "event_name": "飛鳥山盆踊り",
@@ -22596,6 +23049,24 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=KCRc5UOqCjU",
+          "date": "2026-06-19T10:30:15+00:00",
+          "text": "和太鼓お祭りCH\n花笠踊り　赤坂日枝神社盆踊り３日目７　山王祭「山王音頭と民踊大会」　2026年6月15日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り最終日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭盆踊り、3日目最終日の熱気。\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n3日目\n１東京音頭　htt"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=-6lAV4ZITXk",
+          "date": "2026-06-19T10:00:23+00:00",
+          "text": "和太鼓お祭りCH\n相馬盆唄　赤坂日枝神社盆踊り３日目６　山王祭「山王音頭と民踊大会」　2026年6月15日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り最終日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭盆踊り、3日目最終日の熱気。\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n3日目\n１東京音頭　htt"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=YtFkQkN0KRA",
+          "date": "2026-06-18T10:30:17+00:00",
+          "text": "和太鼓お祭りCH\n白浜音頭　赤坂日枝神社盆踊り３日目５　山王祭「山王音頭と民踊大会」　2026年6月15日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り最終日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭盆踊り、3日目最終日の熱気。\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n3日目\n１東京音頭　htt"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=z5LdywjjDTM",
@@ -22706,7 +23177,7 @@
         }
       ],
       "already_public": true,
-      "evidence_count": 18
+      "evidence_count": 21
     },
     {
       "id": "243268bbbfa1aae6",
@@ -22793,6 +23264,12 @@
       "evidence": [
         {
           "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=DP23MZsxm7M",
+          "date": "2026-06-18T10:00:15+00:00",
+          "text": "和太鼓お祭りCH\nドンパン節　赤坂日枝神社盆踊り３日目４　山王祭「山王音頭と民踊大会」　2026年6月15日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り最終日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭盆踊り、3日目最終日の熱気。\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n3日目\n１東京音頭　ht"
+        },
+        {
+          "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=FXFYZouAFzI",
           "date": "2026-06-15T08:34:49+00:00",
           "text": "shu channel\n赤坂・日枝神社🏮盆踊り[2/7]「ドンパン節～白浜音頭～相馬盆唄」Tokyo Bon Dance👘2026.6.14 @山王パークタワー公開空地\n00:00 ドンパン節\n03:29 白浜音頭\n07:59 相馬盆唄\n「山王音頭と民踊大会」（納涼大会）\n■日程：令和8年6月13日(土)～6月15日(月)　\n■場所：東京都千代田区永田町2－10－5\n　　　　山王パークタワー公開空地\n■MC：落合先生\n■踊り：落合社中／赤坂あかね会 他\n■太鼓：鈴木社中\n■公式サイト\nhttps://www.tenkamatsuri.jp/minyo/\n\n#日枝神社\n#盆踊り\n#bondance"
@@ -22835,7 +23312,7 @@
         }
       ],
       "already_public": true,
-      "evidence_count": 7
+      "evidence_count": 8
     },
     {
       "id": "9e845115a85d2504",
@@ -23114,6 +23591,36 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=KCRc5UOqCjU",
+          "date": "2026-06-19T10:30:15+00:00",
+          "text": "和太鼓お祭りCH\n花笠踊り　赤坂日枝神社盆踊り３日目７　山王祭「山王音頭と民踊大会」　2026年6月15日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り最終日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭盆踊り、3日目最終日の熱気。\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n3日目\n１東京音頭　htt"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=-6lAV4ZITXk",
+          "date": "2026-06-19T10:00:23+00:00",
+          "text": "和太鼓お祭りCH\n相馬盆唄　赤坂日枝神社盆踊り３日目６　山王祭「山王音頭と民踊大会」　2026年6月15日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り最終日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭盆踊り、3日目最終日の熱気。\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n3日目\n１東京音頭　htt"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=YtFkQkN0KRA",
+          "date": "2026-06-18T10:30:17+00:00",
+          "text": "和太鼓お祭りCH\n白浜音頭　赤坂日枝神社盆踊り３日目５　山王祭「山王音頭と民踊大会」　2026年6月15日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り最終日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭盆踊り、3日目最終日の熱気。\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n3日目\n１東京音頭　htt"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=DP23MZsxm7M",
+          "date": "2026-06-18T10:00:15+00:00",
+          "text": "和太鼓お祭りCH\nドンパン節　赤坂日枝神社盆踊り３日目４　山王祭「山王音頭と民踊大会」　2026年6月15日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り最終日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭盆踊り、3日目最終日の熱気。\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n3日目\n１東京音頭　ht"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/shorts/wKJZMV2Q9C8",
+          "date": "2026-06-18T10:47:22+00:00",
+          "text": "祭のきせき 盆踊り\n東京おどり 山王音頭と民踊大会 #盆踊り #祭り #shorts\n2026 06 13\n#shorts"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=3XFTcnG4OYI",
@@ -23806,7 +24313,7 @@
         }
       ],
       "already_public": true,
-      "evidence_count": 115
+      "evidence_count": 120
     },
     {
       "id": "f6f9628f0dcc2590",
@@ -23890,6 +24397,30 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=KCRc5UOqCjU",
+          "date": "2026-06-19T10:30:15+00:00",
+          "text": "和太鼓お祭りCH\n花笠踊り　赤坂日枝神社盆踊り３日目７　山王祭「山王音頭と民踊大会」　2026年6月15日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り最終日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭盆踊り、3日目最終日の熱気。\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n3日目\n１東京音頭　htt"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=-6lAV4ZITXk",
+          "date": "2026-06-19T10:00:23+00:00",
+          "text": "和太鼓お祭りCH\n相馬盆唄　赤坂日枝神社盆踊り３日目６　山王祭「山王音頭と民踊大会」　2026年6月15日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り最終日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭盆踊り、3日目最終日の熱気。\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n3日目\n１東京音頭　htt"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=YtFkQkN0KRA",
+          "date": "2026-06-18T10:30:17+00:00",
+          "text": "和太鼓お祭りCH\n白浜音頭　赤坂日枝神社盆踊り３日目５　山王祭「山王音頭と民踊大会」　2026年6月15日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り最終日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭盆踊り、3日目最終日の熱気。\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n3日目\n１東京音頭　htt"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=DP23MZsxm7M",
+          "date": "2026-06-18T10:00:15+00:00",
+          "text": "和太鼓お祭りCH\nドンパン節　赤坂日枝神社盆踊り３日目４　山王祭「山王音頭と民踊大会」　2026年6月15日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り最終日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭盆踊り、3日目最終日の熱気。\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n3日目\n１東京音頭　ht"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=3XFTcnG4OYI",
@@ -24282,7 +24813,7 @@
         }
       ],
       "already_public": true,
-      "evidence_count": 65
+      "evidence_count": 69
     },
     {
       "id": "5a23c0d83a59b9d0",
@@ -24593,6 +25124,12 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=YtFkQkN0KRA",
+          "date": "2026-06-18T10:30:17+00:00",
+          "text": "和太鼓お祭りCH\n白浜音頭　赤坂日枝神社盆踊り３日目５　山王祭「山王音頭と民踊大会」　2026年6月15日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り最終日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭盆踊り、3日目最終日の熱気。\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n3日目\n１東京音頭　htt"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=FXFYZouAFzI",
@@ -25075,7 +25612,7 @@
         }
       ],
       "already_public": true,
-      "evidence_count": 80
+      "evidence_count": 81
     },
     {
       "id": "9503656c3d3606b0",
@@ -25187,6 +25724,24 @@
       "evidence": [
         {
           "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=KCRc5UOqCjU",
+          "date": "2026-06-19T10:30:15+00:00",
+          "text": "和太鼓お祭りCH\n花笠踊り　赤坂日枝神社盆踊り３日目７　山王祭「山王音頭と民踊大会」　2026年6月15日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り最終日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭盆踊り、3日目最終日の熱気。\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n3日目\n１東京音頭　htt"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=-6lAV4ZITXk",
+          "date": "2026-06-19T10:00:23+00:00",
+          "text": "和太鼓お祭りCH\n相馬盆唄　赤坂日枝神社盆踊り３日目６　山王祭「山王音頭と民踊大会」　2026年6月15日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り最終日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭盆踊り、3日目最終日の熱気。\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n3日目\n１東京音頭　htt"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=YtFkQkN0KRA",
+          "date": "2026-06-18T10:30:17+00:00",
+          "text": "和太鼓お祭りCH\n白浜音頭　赤坂日枝神社盆踊り３日目５　山王祭「山王音頭と民踊大会」　2026年6月15日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り最終日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭盆踊り、3日目最終日の熱気。\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n3日目\n１東京音頭　htt"
+        },
+        {
+          "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=z5LdywjjDTM",
           "date": "2026-06-15T08:35:03+00:00",
           "text": "shu channel\n赤坂・日枝神社🏮盆踊り[3/7]「花笠踊り～おこさ節～相馬甚句」Tokyo Bon Dance👘2026.6.14 @山王パークタワー公開空地\n00:00 花笠踊り\n03:52 おこさ節\n07:55 相馬甚句\n「山王音頭と民踊大会」（納涼大会）\n■日程：令和8年6月13日(土)～6月15日(月)　\n■場所：東京都千代田区永田町2－10－5\n　　　　山王パークタワー公開空地\n■MC：落合先生\n■踊り：落合社中／赤坂あかね会 他\n■太鼓：鈴木社中\n■公式サイト\nhttps://www.tenkamatsuri.jp/minyo/\n\n#日枝神社\n#盆踊り\n#bondance"
@@ -25277,7 +25832,7 @@
         }
       ],
       "already_public": true,
-      "evidence_count": 15
+      "evidence_count": 18
     },
     {
       "id": "4f505d4be073d7eb",
@@ -26782,81 +27337,6 @@
       "evidence_count": 0
     },
     {
-      "id": "9890b967c60c0265",
-      "song_name": "まつり",
-      "event_name": "品川区民まつり 荏原第四地区",
-      "venue": "上神明小学校",
-      "area": "品川区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
-      "id": "2e871d3603e1ab5a",
-      "song_name": "まつり",
-      "event_name": "品川区民まつり 荏原第三地区",
-      "venue": "京陽小学校",
-      "area": "品川区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
-      "id": "3a133ffd89cb0aae",
-      "song_name": "まつり",
-      "event_name": "品川区民まつり 八潮地区",
-      "venue": "八潮公園",
-      "area": "品川区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
-      "id": "d1bc2a5b5cf0cbd8",
-      "song_name": "まつり",
-      "event_name": "品川区民まつり 品川第二地区",
-      "venue": "城南小学校",
-      "area": "品川区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
-      "id": "c2fca645f520bf43",
-      "song_name": "まつり",
-      "event_name": "第71回大井どんたく夏まつり 初日 盆踊り",
-      "venue": "大井町駅前中央通り",
-      "area": "品川区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
       "id": "05ddf1ef1fec3b3f",
       "song_name": "品川甚句",
       "event_name": "第71回大井どんたく夏まつり 初日 盆踊り",
@@ -26936,21 +27416,6 @@
       "song_name": "甚句",
       "event_name": "第71回大井どんたく夏まつり 初日 盆踊り",
       "venue": "大井町駅前中央通り",
-      "area": "品川区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
-      "id": "5ee617e7c03bb639",
-      "song_name": "まつり",
-      "event_name": "品川区民まつり 荏原第一地区",
-      "venue": "小山台小学校",
       "area": "品川区",
       "status": "公開済み",
       "confidence": "公開済み",
@@ -29051,21 +29516,6 @@
       "evidence_count": 2
     },
     {
-      "id": "da2ead92051dd4e9",
-      "song_name": "まつり",
-      "event_name": "品川区民まつり 荏原第五地区",
-      "venue": "旧杜松小学校",
-      "area": "品川区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
       "id": "fcfa9932dcc184fa",
       "song_name": "しながわ社協音頭",
       "event_name": "しながわ運河まつり ステージプログラム",
@@ -29087,66 +29537,6 @@
       ],
       "already_public": true,
       "evidence_count": 1
-    },
-    {
-      "id": "dcc71741383a3649",
-      "song_name": "まつり",
-      "event_name": "しながわ運河まつり ステージプログラム",
-      "venue": "東品川海上公園",
-      "area": "品川区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
-      "id": "d4436b55c0cd36a5",
-      "song_name": "まつり",
-      "event_name": "品川区民まつり 大崎第一地区",
-      "venue": "第一日野小学校",
-      "area": "品川区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
-      "id": "98a4caacc1f3475f",
-      "song_name": "まつり",
-      "event_name": "品川区民まつり 大崎第一地区",
-      "venue": "第四日野小学校",
-      "area": "品川区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
-      "id": "6153049b8241e17d",
-      "song_name": "まつり",
-      "event_name": "品川区民まつり 西大井広場公園 盆踊り",
-      "venue": "西大井広場公園",
-      "area": "品川区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
     },
     {
       "id": "a68b9524fc8e474c",
@@ -29403,40 +29793,10 @@
       "evidence_count": 1
     },
     {
-      "id": "883c8ca57c30a9a8",
-      "song_name": "まつり",
-      "event_name": "第42回大久保まつり パレード 百人町民民謡おどり",
-      "venue": "JR新大久保駅北側から東方向",
-      "area": "新宿区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
       "id": "57cea9e9381dbc5c",
       "song_name": "百人町民民謡おどり",
       "event_name": "第42回大久保まつり パレード 百人町民民謡おどり",
       "venue": "JR新大久保駅北側から東方向",
-      "area": "新宿区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
-      "id": "d17143e409212bd9",
-      "song_name": "まつり",
-      "event_name": "第51回 神楽坂まつり 盆踊り",
-      "venue": "りそな銀行神楽坂支店前",
       "area": "新宿区",
       "status": "公開済み",
       "confidence": "公開済み",
@@ -29478,38 +29838,8 @@
       "evidence_count": 0
     },
     {
-      "id": "3568517b56a6c31c",
-      "song_name": "まつり",
-      "event_name": "新宿中央公園夏祭り 納涼盆踊り大会",
-      "venue": "新宿中央公園 ファンモアタイム広場",
-      "area": "新宿区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
       "id": "1c76f0b8e8f1fe6f",
       "song_name": "LOVEマシーン",
-      "event_name": "三角広場まつり「居酒屋盆踊り」",
-      "venue": "新宿住友ビル三角広場",
-      "area": "新宿区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
-      "id": "dee0fb725e5db16b",
-      "song_name": "まつり",
       "event_name": "三角広場まつり「居酒屋盆踊り」",
       "venue": "新宿住友ビル三角広場",
       "area": "新宿区",
@@ -29678,21 +30008,6 @@
       "song_name": "ウルトラソウル",
       "event_name": "第16回ハマサイトの夏祭り",
       "venue": "ハマサイト前広場・汐留ビルディング外構",
-      "area": "港区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
-      "id": "93cb5dffb0470b89",
-      "song_name": "まつり",
-      "event_name": "桜まつり",
-      "venue": "三田松坂児童遊園",
       "area": "港区",
       "status": "公開済み",
       "confidence": "公開済み",
@@ -29908,21 +30223,6 @@
       ],
       "already_public": true,
       "evidence_count": 1
-    },
-    {
-      "id": "9b0658b44d8f8729",
-      "song_name": "まつり",
-      "event_name": "海岸まつり",
-      "venue": "埠頭公園（港区芝浦港南）",
-      "area": "港区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
     },
     {
       "id": "75b99109ff4b2cd6",
@@ -30370,390 +30670,6 @@
       ],
       "already_public": true,
       "evidence_count": 1
-    },
-    {
-      "id": "55d48c6e5e1d7dbd",
-      "song_name": "かわさき",
-      "event_name": "郡上おどり in 青山 2025",
-      "venue": "秩父宮ラグビー場駐車場",
-      "area": "港区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
-      "id": "75b9bbac23f53c45",
-      "song_name": "さわぎ",
-      "event_name": "郡上おどり in 青山 2025",
-      "venue": "秩父宮ラグビー場駐車場",
-      "area": "港区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
-      "id": "0563a50ce0eb495a",
-      "song_name": "やっちく",
-      "event_name": "郡上おどり in 青山 2025",
-      "venue": "秩父宮ラグビー場駐車場",
-      "area": "港区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
-      "id": "bca415baa7ccc43e",
-      "song_name": "三百",
-      "event_name": "郡上おどり in 青山 2025",
-      "venue": "秩父宮ラグビー場駐車場",
-      "area": "港区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
-      "id": "7670a0da39dde180",
-      "song_name": "古調かわさき",
-      "event_name": "郡上おどり in 青山 2025",
-      "venue": "秩父宮ラグビー場駐車場",
-      "area": "港区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
-      "id": "803556818144ac7b",
-      "song_name": "春駒",
-      "event_name": "郡上おどり in 青山 2025",
-      "venue": "秩父宮ラグビー場駐車場",
-      "area": "港区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
-      "id": "7bff943da1a808ae",
-      "song_name": "甚句",
-      "event_name": "郡上おどり in 青山 2025",
-      "venue": "秩父宮ラグビー場駐車場",
-      "area": "港区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
-      "id": "be2c089096923f8d",
-      "song_name": "郡上おどり",
-      "event_name": "郡上おどり in 青山 2025",
-      "venue": "秩父宮ラグビー場駐車場",
-      "area": "港区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public",
-        "known_song_context",
-        "song_suffix_near_context"
-      ],
-      "evidence": [
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=79TugH9VTVk",
-          "date": "2025-07-25T08:00:07Z",
-          "text": "和太鼓お祭りチャンネル\nまつさか　2025年郡上おどりin青山2日目15終　秩父宮ラグビー場駐車場　東京都港区\n2025年6月20日に行われました、\n「郡上おどりin青山」2日目の様子です。\n\n\n郡上おどりin青山\n２日目\n１古調かわさき　https://youtu.be/7EKBYQ-ndHw\n２かわさき　https://youtu.be/GuGH1hgtGxs\n３三百　https://youtu.be/UlLJuBNfva8\n４春駒　https://youtu.be/t2vsQ2Tu820\n５やっちく　https://youtu.be/cFOlLi_bqjg\n６三百　https://youtu.be/_Ko4yP5tLlw\n７げんげんばらばら　https://youtu.be/XDhZO5Vt-II\n８さわぎ　https://youtu.be/_MdlcFB0AqU\n９猫の子　https://youtu.be/_MwpxOa"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=63lHrefTHQ4",
-          "date": "2025-07-24T08:00:13Z",
-          "text": "和太鼓お祭りチャンネル\n甚句　2025年郡上おどりin青山2日目14　秩父宮ラグビー場駐車場　東京都港区\n2025年6月20日に行われました、\n「郡上おどりin青山」2日目の様子です。\n\n\n郡上おどりin青山\n２日目\n１古調かわさき　https://youtu.be/7EKBYQ-ndHw\n２かわさき　https://youtu.be/GuGH1hgtGxs\n３三百　https://youtu.be/UlLJuBNfva8\n４春駒　https://youtu.be/t2vsQ2Tu820\n５やっちく　https://youtu.be/cFOlLi_bqjg\n６三百　https://youtu.be/_Ko4yP5tLlw\n７げんげんばらばら　https://youtu.be/XDhZO5Vt-II\n８さわぎ　https://youtu.be/_MdlcFB0AqU\n９猫の子　https://youtu.be/_MwpxOatgW"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=UKX79bB2aAI",
-          "date": "2025-07-23T08:00:38Z",
-          "text": "和太鼓お祭りチャンネル\nやっちく　2025年郡上おどりin青山2日目13　秩父宮ラグビー場駐車場　東京都港区\n2025年6月20日に行われました、\n「郡上おどりin青山」2日目の様子です。\n\n\n郡上おどりin青山\n２日目\n１古調かわさき　https://youtu.be/7EKBYQ-ndHw\n２かわさき　https://youtu.be/GuGH1hgtGxs\n３三百　https://youtu.be/UlLJuBNfva8\n４春駒　https://youtu.be/t2vsQ2Tu820\n５やっちく　https://youtu.be/cFOlLi_bqjg\n６三百　https://youtu.be/_Ko4yP5tLlw\n７げんげんばらばら　https://youtu.be/XDhZO5Vt-II\n８さわぎ　https://youtu.be/_MdlcFB0AqU\n９猫の子　https://youtu.be/_MwpxOat"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=upejYNkRf_0",
-          "date": "2025-07-22T08:00:58Z",
-          "text": "和太鼓お祭りチャンネル\n春駒　2025年郡上おどりin青山2日目12　秩父宮ラグビー場駐車場　東京都港区\n2025年6月20日に行われました、\n「郡上おどりin青山」2日目の様子です。\n\n\n郡上おどりin青山\n２日目\n１古調かわさき　https://youtu.be/7EKBYQ-ndHw\n２かわさき　https://youtu.be/GuGH1hgtGxs\n３三百　https://youtu.be/UlLJuBNfva8\n４春駒　https://youtu.be/t2vsQ2Tu820\n５やっちく　https://youtu.be/cFOlLi_bqjg\n６三百　https://youtu.be/_Ko4yP5tLlw\n７げんげんばらばら　https://youtu.be/XDhZO5Vt-II\n８さわぎ　https://youtu.be/_MdlcFB0AqU\n９猫の子　https://youtu.be/_MwpxOatgW"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=5OriDybv6Y4",
-          "date": "2025-07-21T08:00:06Z",
-          "text": "和太鼓お祭りチャンネル\n三百　2025年郡上おどりin青山2日目11　秩父宮ラグビー場駐車場　東京都港区\n2025年6月20日に行われました、\n「郡上おどりin青山」2日目の様子です。\n\n\n郡上おどりin青山\n２日目\n１古調かわさき　https://youtu.be/7EKBYQ-ndHw\n２かわさき　https://youtu.be/GuGH1hgtGxs\n３三百　https://youtu.be/UlLJuBNfva8\n４春駒　https://youtu.be/t2vsQ2Tu820\n５やっちく　https://youtu.be/cFOlLi_bqjg\n６三百　https://youtu.be/_Ko4yP5tLlw\n７げんげんばらばら　https://youtu.be/XDhZO5Vt-II\n８さわぎ　https://youtu.be/_MdlcFB0AqU\n９猫の子　https://youtu.be/_MwpxOatgW"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=rkCJC07Qz8E",
-          "date": "2025-07-20T08:00:57Z",
-          "text": "和太鼓お祭りチャンネル\nかわさき　2025年郡上おどりin青山2日目10　秩父宮ラグビー場駐車場　東京都港区\n2025年6月20日に行われました、\n「郡上おどりin青山」2日目の様子です。\n\n\n郡上おどりin青山\n２日目\n１古調かわさき　https://youtu.be/7EKBYQ-ndHw\n２かわさき　https://youtu.be/GuGH1hgtGxs\n３三百　https://youtu.be/UlLJuBNfva8\n４春駒　https://youtu.be/t2vsQ2Tu820\n５やっちく　https://youtu.be/cFOlLi_bqjg\n６三百　https://youtu.be/_Ko4yP5tLlw\n７げんげんばらばら　https://youtu.be/XDhZO5Vt-II\n８さわぎ　https://youtu.be/_MdlcFB0AqU\n９猫の子　https://youtu.be/_MwpxOat"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=_MwpxOatgWI",
-          "date": "2025-07-19T08:00:44Z",
-          "text": "和太鼓お祭りチャンネル\n猫の子　2025年郡上おどりin青山2日目９　秩父宮ラグビー場駐車場　東京都港区\n2025年6月20日に行われました、\n「郡上おどりin青山」2日目の様子です。\n\n\n郡上おどりin青山\n２日目\n１古調かわさき　https://youtu.be/7EKBYQ-ndHw\n２かわさき　https://youtu.be/GuGH1hgtGxs\n３三百　https://youtu.be/UlLJuBNfva8\n４春駒　https://youtu.be/t2vsQ2Tu820\n５やっちく　https://youtu.be/cFOlLi_bqjg\n６三百　https://youtu.be/_Ko4yP5tLlw\n７げんげんばらばら　https://youtu.be/XDhZO5Vt-II\n８さわぎ　https://youtu.be/_MdlcFB0AqU\n９猫の子　https://youtu.be/_MwpxOatgW"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=_MdlcFB0AqU",
-          "date": "2025-07-18T08:00:45Z",
-          "text": "和太鼓お祭りチャンネル\nさわぎ　2025年郡上おどりin青山2日目８　秩父宮ラグビー場駐車場　東京都港区\n2025年6月20日に行われました、\n「郡上おどりin青山」2日目の様子です。\n\n\n郡上おどりin青山\n２日目\n１古調かわさき　https://youtu.be/7EKBYQ-ndHw\n２かわさき　https://youtu.be/GuGH1hgtGxs\n３三百　https://youtu.be/UlLJuBNfva8\n４春駒　https://youtu.be/t2vsQ2Tu820\n５やっちく　https://youtu.be/cFOlLi_bqjg\n６三百　https://youtu.be/_Ko4yP5tLlw\n７げんげんばらばら　https://youtu.be/XDhZO5Vt-II\n８さわぎ　https://youtu.be/_MdlcFB0AqU\n９猫の子　https://youtu.be/_MwpxOatgW"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=XDhZO5Vt-II",
-          "date": "2025-07-17T08:00:42Z",
-          "text": "和太鼓お祭りチャンネル\nげんげんばらばら　2025年郡上おどりin青山2日目７　秩父宮ラグビー場駐車場　東京都港区\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山\n２日目\n１古調かわさき　https://youtu.be/7EKBYQ-ndHw\n２かわさき　https://youtu.be/GuGH1hgtGxs\n３三百　https://youtu.be/UlLJuBNfva8\n４春駒　https://youtu.be/t2vsQ2Tu820\n５やっちく　https://youtu.be/cFOlLi_bqjg\n６三百　https://youtu.be/_Ko4yP5tLlw\n７げんげんばらばら　https://youtu.be/XDhZO5Vt-II\n８さわぎ　https://youtu.be/_MdlcFB0AqU\n\n\n\n1日目\n１古調かわさき　https://youtu"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=_Ko4yP5tLlw",
-          "date": "2025-07-16T08:00:42Z",
-          "text": "和太鼓お祭りチャンネル\n三百　2025年郡上おどりin青山2日目６　秩父宮ラグビー場駐車場　東京都港区\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山\n２日目\n１古調かわさき　https://youtu.be/7EKBYQ-ndHw\n２かわさき　https://youtu.be/GuGH1hgtGxs\n３三百　https://youtu.be/UlLJuBNfva8\n４春駒　https://youtu.be/t2vsQ2Tu820\n５やっちく　https://youtu.be/cFOlLi_bqjg\n６三百　https://youtu.be/_Ko4yP5tLlw\n７げんげんばらばら　https://youtu.be/XDhZO5Vt-II\n８さわぎ　https://youtu.be/_MdlcFB0AqU\n\n\n\n1日目\n１古調かわさき　https://youtu.be/pj"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=cFOlLi_bqjg",
-          "date": "2025-07-15T08:00:42Z",
-          "text": "和太鼓お祭りチャンネル\nやっちく　2025年郡上おどりin青山2日目５　秩父宮ラグビー場駐車場　東京都港区\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山\n２日目\n１古調かわさき　https://youtu.be/7EKBYQ-ndHw\n２かわさき　https://youtu.be/GuGH1hgtGxs\n３三百　https://youtu.be/UlLJuBNfva8\n４春駒　https://youtu.be/t2vsQ2Tu820\n５やっちく　https://youtu.be/cFOlLi_bqjg\n６三百　https://youtu.be/_Ko4yP5tLlw\n７げんげんばらばら　https://youtu.be/XDhZO5Vt-II\n８さわぎ　https://youtu.be/_MdlcFB0AqU\n\n\n\n1日目\n１古調かわさき　https://youtu.be/"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=t2vsQ2Tu820",
-          "date": "2025-07-14T08:00:57Z",
-          "text": "和太鼓お祭りチャンネル\n春駒　2025年郡上おどりin青山2日目４　秩父宮ラグビー場駐車場　東京都港区\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山\n２日目\n１古調かわさき　https://youtu.be/7EKBYQ-ndHw\n２かわさき　https://youtu.be/GuGH1hgtGxs\n３三百　https://youtu.be/UlLJuBNfva8\n４春駒　https://youtu.be/t2vsQ2Tu820\n５やっちく　https://youtu.be/cFOlLi_bqjg\n６三百　https://youtu.be/_Ko4yP5tLlw\n７げんげんばらばら　https://youtu.be/XDhZO5Vt-II\n８さわぎ　https://youtu.be/_MdlcFB0AqU\n\n\n\n1日目\n１古調かわさき　https://youtu.be/pj"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=UlLJuBNfva8",
-          "date": "2025-07-13T08:00:37Z",
-          "text": "和太鼓お祭りチャンネル\n三百　2025年郡上おどりin青山2日目３　秩父宮ラグビー場駐車場　東京都港区\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山\n２日目\n１古調かわさき　https://youtu.be/7EKBYQ-ndHw\n２かわさき　https://youtu.be/GuGH1hgtGxs\n３三百　https://youtu.be/UlLJuBNfva8\n４春駒　https://youtu.be/t2vsQ2Tu820\n\n\n\n1日目\n１古調かわさき　https://youtu.be/pj5XyTNEqs8\n２かわさき　https://youtu.be/rX2XZ4AF5ug\n３三百　https://youtu.be/ul-2jUB-TNw\n４春駒　https://youtu.be/wtKh2MK2fjA\n５やっちく　https://youtu.be/kV5Zub4"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=GuGH1hgtGxs",
-          "date": "2025-07-12T08:00:19Z",
-          "text": "和太鼓お祭りチャンネル\nかわさき　2025年郡上おどりin青山2日目２　秩父宮ラグビー場駐車場　東京都港区\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山\n２日目\n１古調かわさき　https://youtu.be/7EKBYQ-ndHw\n２かわさき　https://youtu.be/GuGH1hgtGxs\n３三百　https://youtu.be/UlLJuBNfva8\n\n\n\n\n1日目\n１古調かわさき　https://youtu.be/pj5XyTNEqs8\n２かわさき　https://youtu.be/rX2XZ4AF5ug\n３三百　https://youtu.be/ul-2jUB-TNw\n４春駒　https://youtu.be/wtKh2MK2fjA\n５やっちく　https://youtu.be/kV5Zub4pKnk\n６かわさき　https://youtu.be/1d"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=7EKBYQ-ndHw",
-          "date": "2025-07-11T08:00:07Z",
-          "text": "和太鼓お祭りチャンネル\n古調かわさき　2025年郡上おどりin青山2日目　秩父宮ラグビー場駐車場　東京都港区\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山\n２日目\n１古調かわさき　https://youtu.be/7EKBYQ-ndHw\n２かわさき　https://youtu.be/GuGH1hgtGxs\n３三百　https://youtu.be/UlLJuBNfva8\n\n\n\n\n1日目\n１古調かわさき　https://youtu.be/pj5XyTNEqs8\n２かわさき　https://youtu.be/rX2XZ4AF5ug\n３三百　https://youtu.be/ul-2jUB-TNw\n４春駒　https://youtu.be/wtKh2MK2fjA\n５やっちく　https://youtu.be/kV5Zub4pKnk\n６かわさき　https://youtu.be/1"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=0tD7gbg9tKc",
-          "date": "2025-07-09T09:07:58Z",
-          "text": "Tokyo Lonely Walker\n[4K]🇯🇵 入谷が最高に熱い夜！ 入谷朝顔音頭踊り大会 2025 盆踊り 東京 / Traditional Japanese Bon dance in Iriya, Tokyo.\n東京・入谷で3日間開催された「入谷朝顔音頭踊り大会」の初日の様子です。\n会場となる公園の半分を提灯と櫓が最高の盆踊り空間を演出しており、残りの半分はたくさんの遊具で遊ぶ子どもたちの声が聞こえる素敵な会場です！\nこの会場でしか流れない地元曲もあり、伝統的な楽曲を中心におよそ2時間の盆踊りでした。\n途中、地元の小学生たちによるソーラン節の素晴らしい演舞もあり、会場全体が幸せな空気に包まれました！\n\nA Bon dance festival was held in Iriya in downtown Tokyo. It was held at the same time as the Asagao Matsuri ("
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=_Oc3jeWJLAo",
-          "date": "2025-07-04T09:00:37Z",
-          "text": "Tokyo Lonely Walker\n[4K]🇯🇵 民謡ユニット こでらんに～ w NOURAH/エキゾ盆踊り「星と太陽のマーケット」東京ナイトマーケット / Japanese Bon dance in Shibuya, Tokyo.\n渋谷の代々木公園で「星と太陽のマーケット」が開催中！\nこの日は、民謡ユニット こでらんに～とNOURAH/エキゾ盆踊りのコラボレーション！\n素晴らしい時間でした！！素敵な演奏にあわせて、みんなで踊る素晴らしい時間でした！！\n7日にもNOURAHさんのエキゾ盆踊りがあるので、興味のある方はぜひ！！\n\n【民謡ユニット こでらんに～】\nミカド香奈子：篠笛、唄、お囃子…他、\n小山慶宗(よしむね)：津軽三味線、\nちゃんゆか：太鼓、唄、お囃子…他、\nフレディ塚本：唄\n\nA folk song performance was held in Shibuya, Tokyo. A Bon Odori dan"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=-zbuEpc9mL8",
-          "date": "2025-06-24T12:52:24Z",
-          "text": "Urban Walk\n【4K】郡上おどり in 青山 ”最終日フィナーレは万雷の拍手とともに終了” / 盆踊り「かわさき / 三百 / 春駒 / 甚句 / まつさか 」Gujo Odori in Aoyama.\n開催日時：2025年6月20日(金)～21日(土)\n20日(金) 午後5時～8時半迄\n21日(土) 午後5時～8時迄\n開催場所：秩父宮ラグビー場 駐車場\n\n00:00　かわさき\n13:10　三百\n25:06　春駒\n35:33　ヤッチク\n44:22　甚句\n52:05　まつさか\n59:25　三本締め\n\n#郡上おどり #かわさき #盆踊り #春駒 #三百 #さわぎ #まつさか #甚句"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=_62_4SmhyVA",
-          "date": "2025-06-24T12:30:49Z",
-          "text": "和太鼓お祭りチャンネル\nまつさか　2025年郡上おどりin青山初日17終　秩父宮ラグビー場駐車場\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山\n２日目\n１古調かわさき　https://youtu.be/7EKBYQ-ndHw\n２かわさき　https://youtu.be/GuGH1hgtGxs\n３三百　https://youtu.be/UlLJuBNfva8\n\n\n\n\n1日目\n１古調かわさき　https://youtu.be/pj5XyTNEqs8\n２かわさき　https://youtu.be/rX2XZ4AF5ug\n３三百　https://youtu.be/ul-2jUB-TNw\n４春駒　https://youtu.be/wtKh2MK2fjA\n５やっちく　https://youtu.be/kV5Zub4pKnk\n６かわさき　https://youtu.be/1dlVfxk"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=RGFEpC-x3YI",
-          "date": "2025-06-24T12:00:43Z",
-          "text": "和太鼓お祭りチャンネル\n甚句　2025年郡上おどりin青山初日16　秩父宮ラグビー場駐車場\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山1日目\n１古調かわさき　https://youtu.be/pj5XyTNEqs8\n２かわさき　https://youtu.be/rX2XZ4AF5ug\n３三百　https://youtu.be/ul-2jUB-TNw\n４春駒　https://youtu.be/wtKh2MK2fjA\n５やっちく　https://youtu.be/kV5Zub4pKnk\n６かわさき　https://youtu.be/1dlVfxkB6EM\n７さわぎ　https://youtu.be/kn7tk1m4NJk\n８げんげんばらばら　https://youtu.be/J0rXsjlX3HM\n９猫の子　https://youtu.be/_CwhJa6Qmig\n10かわさ"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=WzGm88ZedLk",
-          "date": "2025-06-24T08:00:37Z",
-          "text": "和太鼓お祭りチャンネル\nさわぎ　2025年郡上おどりin青山初日15　秩父宮ラグビー場駐車場\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山1日目\n１古調かわさき　https://youtu.be/pj5XyTNEqs8\n２かわさき　https://youtu.be/rX2XZ4AF5ug\n３三百　https://youtu.be/ul-2jUB-TNw\n４春駒　https://youtu.be/wtKh2MK2fjA\n５やっちく　https://youtu.be/kV5Zub4pKnk\n６かわさき　https://youtu.be/1dlVfxkB6EM\n７さわぎ　https://youtu.be/kn7tk1m4NJk\n８げんげんばらばら　https://youtu.be/J0rXsjlX3HM\n９猫の子　https://youtu.be/_CwhJa6Qmig\n10かわ"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=uMEPRsUS94o",
-          "date": "2025-06-24T04:01:04Z",
-          "text": "和太鼓お祭りチャンネル\nかわさき　2025年郡上おどりin青山初日14　秩父宮ラグビー場駐車場\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山1日目\n１古調かわさき　https://youtu.be/pj5XyTNEqs8\n２かわさき　https://youtu.be/rX2XZ4AF5ug\n３三百　https://youtu.be/ul-2jUB-TNw\n４春駒　https://youtu.be/wtKh2MK2fjA\n５やっちく　https://youtu.be/kV5Zub4pKnk\n６かわさき　https://youtu.be/1dlVfxkB6EM\n７さわぎ　https://youtu.be/kn7tk1m4NJk\n８げんげんばらばら　https://youtu.be/J0rXsjlX3HM\n９猫の子　https://youtu.be/_CwhJa6Qmig\n10か"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=neaJhgQjJI0",
-          "date": "2025-06-23T12:31:04Z",
-          "text": "和太鼓お祭りチャンネル\nやっちく　2025年郡上おどりin青山初日13　秩父宮ラグビー場駐車場　東京都港区\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山1日目\n１古調かわさき　https://youtu.be/pj5XyTNEqs8\n２かわさき　https://youtu.be/rX2XZ4AF5ug\n３三百　https://youtu.be/ul-2jUB-TNw\n４春駒　https://youtu.be/wtKh2MK2fjA\n５やっちく　https://youtu.be/kV5Zub4pKnk\n６かわさき　https://youtu.be/1dlVfxkB6EM\n７さわぎ　https://youtu.be/kn7tk1m4NJk\n８げんげんばらばら　https://youtu.be/J0rXsjlX3HM\n９猫の子　https://youtu.be/_CwhJa6Qm"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=pyntjOkvodE",
-          "date": "2025-06-23T12:01:28Z",
-          "text": "和太鼓お祭りチャンネル\n春駒　2025年郡上おどりin青山初日12　秩父宮ラグビー場駐車場　東京都港区\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山1日目\n１古調かわさき　https://youtu.be/pj5XyTNEqs8\n２かわさき　https://youtu.be/rX2XZ4AF5ug\n３三百　https://youtu.be/ul-2jUB-TNw\n４春駒　https://youtu.be/wtKh2MK2fjA\n５やっちく　https://youtu.be/kV5Zub4pKnk\n６かわさき　https://youtu.be/1dlVfxkB6EM\n７さわぎ　https://youtu.be/kn7tk1m4NJk\n８げんげんばらばら　https://youtu.be/J0rXsjlX3HM\n９猫の子　https://youtu.be/_CwhJa6Qmig"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=9xU6FoKKdYY",
-          "date": "2025-06-23T08:00:16Z",
-          "text": "和太鼓お祭りチャンネル\n三百　2025年郡上おどりin青山初日11　秩父宮ラグビー場駐車場\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山1日目\n１古調かわさき　https://youtu.be/pj5XyTNEqs8\n２かわさき　https://youtu.be/rX2XZ4AF5ug\n３三百　https://youtu.be/ul-2jUB-TNw\n４春駒　https://youtu.be/wtKh2MK2fjA\n５やっちく　https://youtu.be/kV5Zub4pKnk\n６かわさき　https://youtu.be/1dlVfxkB6EM\n７さわぎ　https://youtu.be/kn7tk1m4NJk\n８げんげんばらばら　https://youtu.be/J0rXsjlX3HM\n９猫の子　https://youtu.be/_CwhJa6Qmig\n10かわさ"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=XcxRPcImdWA",
-          "date": "2025-06-23T04:00:47Z",
-          "text": "和太鼓お祭りチャンネル\nかわさき　2025年郡上おどりin青山初日10　秩父宮ラグビー場駐車場\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山1日目\n１古調かわさき　https://youtu.be/pj5XyTNEqs8\n２かわさき　https://youtu.be/rX2XZ4AF5ug\n３三百　https://youtu.be/ul-2jUB-TNw\n４春駒　https://youtu.be/wtKh2MK2fjA\n５やっちく　https://youtu.be/kV5Zub4pKnk\n６かわさき　https://youtu.be/1dlVfxkB6EM\n７さわぎ　https://youtu.be/kn7tk1m4NJk\n８げんげんばらばら　https://youtu.be/J0rXsjlX3HM\n９猫の子　https://youtu.be/_CwhJa6Qmig\n10か"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=_CwhJa6Qmig",
-          "date": "2025-06-22T13:01:07Z",
-          "text": "和太鼓お祭りチャンネル\n猫の子　2025年郡上おどりin青山初日９　秩父宮ラグビー場駐車場\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山1日目\n１古調かわさき　https://youtu.be/pj5XyTNEqs8\n２かわさき　https://youtu.be/rX2XZ4AF5ug\n３三百　https://youtu.be/ul-2jUB-TNw\n４春駒　https://youtu.be/wtKh2MK2fjA\n５やっちく　https://youtu.be/kV5Zub4pKnk\n６かわさき　https://youtu.be/1dlVfxkB6EM\n７さわぎ　https://youtu.be/kn7tk1m4NJk\n８げんげんばらばら　https://youtu.be/J0rXsjlX3HM\n９猫の子　https://youtu.be/_CwhJa6Qmig\n10かわさ"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=J0rXsjlX3HM",
-          "date": "2025-06-22T12:30:23Z",
-          "text": "和太鼓お祭りチャンネル\nげんげんばらばら　2025年郡上おどりin青山初日８　秩父宮ラグビー場駐車場\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山1日目\n１古調かわさき　https://youtu.be/pj5XyTNEqs8\n２かわさき　https://youtu.be/rX2XZ4AF5ug\n３三百　https://youtu.be/ul-2jUB-TNw\n４春駒　https://youtu.be/wtKh2MK2fjA\n５やっちく　https://youtu.be/kV5Zub4pKnk\n６かわさき　https://youtu.be/1dlVfxkB6EM\n７さわぎ　https://youtu.be/kn7tk1m4NJk\n８げんげんばらばら　https://youtu.be/J0rXsjlX3HM\n９猫の子　https://youtu.be/_CwhJa6Qmig\n"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=kn7tk1m4NJk",
-          "date": "2025-06-22T12:01:17Z",
-          "text": "和太鼓お祭りチャンネル\nさわぎ　2025年郡上おどりin青山初日７　秩父宮ラグビー場駐車場\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山1日目\n１古調かわさき　https://youtu.be/pj5XyTNEqs8\n２かわさき　https://youtu.be/rX2XZ4AF5ug\n３三百　https://youtu.be/ul-2jUB-TNw\n４春駒　https://youtu.be/wtKh2MK2fjA\n５やっちく　https://youtu.be/kV5Zub4pKnk\n６かわさき　https://youtu.be/1dlVfxkB6EM\n７さわぎ　https://youtu.be/kn7tk1m4NJk\n８げんげんばらばら　https://youtu.be/J0rXsjlX3HM\n\n\n\nかすがい郡上おどり\n１古調かわさき　https://youtu.be/6"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=1dlVfxkB6EM",
-          "date": "2025-06-22T09:30:03Z",
-          "text": "和太鼓お祭りチャンネル\nかわさき　2025年郡上おどりin青山初日６　秩父宮ラグビー場駐車場\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山1日目\n１古調かわさき　https://youtu.be/pj5XyTNEqs8\n２かわさき　https://youtu.be/rX2XZ4AF5ug\n３三百　https://youtu.be/ul-2jUB-TNw\n４春駒　https://youtu.be/wtKh2MK2fjA\n５やっちく　https://youtu.be/kV5Zub4pKnk\n６かわさき　https://youtu.be/1dlVfxkB6EM\n７さわぎ　https://youtu.be/kn7tk1m4NJk\n８げんげんばらばら　https://youtu.be/J0rXsjlX3HM\n\n\n\nかすがい郡上おどり\n１古調かわさき　https://youtu.be/"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=kV5Zub4pKnk",
-          "date": "2025-06-22T07:15:10Z",
-          "text": "和太鼓お祭りチャンネル\nやっちく　2025年郡上おどりin青山初日５　秩父宮ラグビー場駐車場　東京都港区\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山1日目\n１古調かわさき　https://youtu.be/pj5XyTNEqs8\n２かわさき　https://youtu.be/rX2XZ4AF5ug\n３三百　https://youtu.be/ul-2jUB-TNw\n４春駒　https://youtu.be/wtKh2MK2fjA\n５やっちく　https://youtu.be/kV5Zub4pKnk\n６かわさき　https://youtu.be/1dlVfxkB6EM\n\n\nかすがい郡上おどり\n１古調かわさき　https://youtu.be/6NngfQomX7s\n２かわさき　https://youtu.be/JGBAH39Zr4w\n３春駒　https://youtu.be/"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=wtKh2MK2fjA",
-          "date": "2025-06-21T12:01:43Z",
-          "text": "和太鼓お祭りチャンネル\n春駒　2025年郡上おどりin青山初日４　秩父宮ラグビー場駐車場　東京都港区\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山1日目\n１古調かわさき　https://youtu.be/pj5XyTNEqs8\n２かわさき　https://youtu.be/rX2XZ4AF5ug\n３三百　https://youtu.be/ul-2jUB-TNw\n４春駒　https://youtu.be/wtKh2MK2fjA\n５やっちく　https://youtu.be/kV5Zub4pKnk\n\n\n\nかすがい郡上おどり\n１古調かわさき　https://youtu.be/6NngfQomX7s\n２かわさき　https://youtu.be/JGBAH39Zr4w\n３春駒　https://youtu.be/E75K3H8CkGk\n４やっちく　https://youtu.be/z"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=ul-2jUB-TNw",
-          "date": "2025-06-21T08:00:56Z",
-          "text": "和太鼓お祭りチャンネル\n三百　2025年郡上おどりin青山初日３　秩父宮ラグビー場駐車場　東京都港区\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山1日目\n１古調かわさき　https://youtu.be/pj5XyTNEqs8\n２かわさき　https://youtu.be/rX2XZ4AF5ug\n３三百　https://youtu.be/ul-2jUB-TNw\n４春駒　https://youtu.be/wtKh2MK2fjA\n\n\n\nかすがい郡上おどり\n１古調かわさき　https://youtu.be/6NngfQomX7s\n２かわさき　https://youtu.be/JGBAH39Zr4w\n３春駒　https://youtu.be/E75K3H8CkGk\n４やっちく　https://youtu.be/zUZEDY4rbSc\n５さわぎ　https://youtu.be/3S"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=1__iWUspkTI",
-          "date": "2025-06-21T08:00:02Z",
-          "text": "Tokyo Lonely Walker\n[4K]🇯🇵 郡上おどり in 青山 2025 全曲｜東京で酔いしれる日本三大盆踊り / Gujo Odori dance held in Aoyama, Tokyo.\n江戸が郡上で染まる2日間！\n東京都港区青山（外苑前駅）にある秩父宮ラグビー場 駐車場で「郡上おどり in 青山」が初日を迎えました。岐阜県郡上市の伝統的な盆踊り「郡上おどり」を青山で体験できる貴重なお祭りとあって、初日のこの日は平日にもかかわらず大変多くの人で賑わいました。\n踊り意外にも、郡上の特産品や食事が堪能できる素晴らしいお祭りなので、お時間ある方はぜひ！\n\n【開催期間】\n6月20日（金）〜21日（土）\n\nFor two days, Edo was dyed with Gujo!\nGujo Odori in Aoyama\" opened in Aoyama, Minato-ku, Tokyo. This is a r"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=rX2XZ4AF5ug",
-          "date": "2025-06-21T07:00:54Z",
-          "text": "和太鼓お祭りチャンネル\nかわさき　2025年郡上おどりin青山初日２　秩父宮ラグビー場駐車場\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山1日目\n１古調かわさき　https://youtu.be/pj5XyTNEqs8\n２かわさき　https://youtu.be/rX2XZ4AF5ug\n３三百　https://youtu.be/ul-2jUB-TNw\n\n\nかすがい郡上おどり\n１古調かわさき　https://youtu.be/6NngfQomX7s\n２かわさき　https://youtu.be/JGBAH39Zr4w\n３春駒　https://youtu.be/E75K3H8CkGk\n４やっちく　https://youtu.be/zUZEDY4rbSc\n５さわぎ　https://youtu.be/3SFBGg03Rqw\n６三百　https://youtu.be/flXKjTA"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=pj5XyTNEqs8",
-          "date": "2025-06-21T06:00:44Z",
-          "text": "和太鼓お祭りチャンネル\n古調かわさき　2025年郡上おどりin青山初日１　秩父宮ラグビー場駐車場\n2025年6月20日に行われました、\n「郡上おどりin青山」初日の様子です。\n\n\n郡上おどりin青山1日目\n１古調かわさき　https://youtu.be/pj5XyTNEqs8\n２かわさき　https://youtu.be/rX2XZ4AF5ug\n３三百　https://youtu.be/ul-2jUB-TNw\n\n\nかすがい郡上おどり\n１古調かわさき　https://youtu.be/6NngfQomX7s\n２かわさき　https://youtu.be/JGBAH39Zr4w\n３春駒　https://youtu.be/E75K3H8CkGk\n４やっちく　https://youtu.be/zUZEDY4rbSc\n５さわぎ　https://youtu.be/3SFBGg03Rqw\n６三百　https://youtu.be/flXKj"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=7rNIuRvIlZI",
-          "date": "2025-06-20T17:57:42Z",
-          "text": "shu channel\n【郡上おどりin青山 2025】「さわぎ～郡上甚句～まつさか」🏮Tokyo Bon Dance Festival👘2025.6.20 @秩父宮ラグビー場 駐車場\n00:00:00 さわぎ\n00:07:36 郡上甚句\n00:15:48 まつさか\n\n【郡上おどりin青山】\n■日時：2025年6月20日(金)・21日(土)\n■場所：東京都港区北青山2-8-35\n　　　　秩父宮ラグビー場 駐車場\n「青山」の地名の由来は、天正18年(1590年）に徳川家康の家臣「青山忠成」の下屋敷が置かれたことに因み名づけられたもので、青山家の支族が江戸中期に郡上藩を所領し、菩提寺が青山の「梅窓院」に置かれた縁から、『郡上おどりin青山』が開催されるようになりました。\n\n#郡上おどり\n#盆踊り \n#bondance"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=y-LtTdBS9-Y",
-          "date": "2025-06-20T17:57:27Z",
-          "text": "shu channel\n【郡上おどりin青山 2025】「げんげんばらばら～猫の子」🏮Tokyo Bon Dance Festival👘2025.6.20 @秩父宮ラグビー場 駐車場\n00:00:00 げんげんばらばら\n00:10:54 猫の子\n\n【郡上おどりin青山】\n■日時：2025年6月20日(金)・21日(土)\n■場所：東京都港区北青山2-8-35\n　　　　秩父宮ラグビー場 駐車場\n「青山」の地名の由来は、天正18年(1590年）に徳川家康の家臣「青山忠成」の下屋敷が置かれたことに因み名づけられたもので、青山家の支族が江戸中期に郡上藩を所領し、菩提寺が青山の「梅窓院」に置かれた縁から、『郡上おどりin青山』が開催されるようになりました。\n\n#郡上おどり\n#盆踊り \n#bondance"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=hQ0UFL9bwnM",
-          "date": "2025-06-20T17:06:57Z",
-          "text": "Urban Walk\n【4K】郡上おどり in 青山 ”生歌 × 生演奏は控えめに言って最高!!” / 盆踊り「春駒 / やっちく / かわさき / さわぎ / 猫の手 」Gujo Odori in Aoyama.\n開催日時：2025年6月20日(金)～21日(土)\n20日(金) 午後5時～8時半迄\n21日(土) 午後5時～8時迄\n開催場所：秩父宮ラグビー場 駐車場\n\n00:00　春駒\n06:27　やっちく\n11:52　かわさき\n23:07　さわぎ\n33:22　げんげんばらばら\n43:58　猫の手\n\n\n#郡上おどり #かわさき #盆踊り #春駒 #猫の手 #さわぎ #げんげんばらばら #やっちく"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=Yc2li1qRm4o",
-          "date": "2025-06-20T15:40:43Z",
-          "text": "shu channel\n【郡上おどりin青山 2025】「春駒～やっちく～かわさき」🏮Tokyo Bon Dance Festival👘2025.6.20 @秩父宮ラグビー場 駐車場\n00:00:00 春駒\n00:09:12 やっちく\n00:17:40 かわさき\n\n【郡上おどりin青山】\n■日時：2025年6月20日(金)・21日(土)\n■場所：東京都港区北青山2-8-35\n　　　　秩父宮ラグビー場 駐車場\n「青山」の地名の由来は、天正18年(1590年）に徳川家康の家臣「青山忠成」の下屋敷が置かれたことに因み名づけられたもので、青山家の支族が江戸中期に郡上藩を所領し、菩提寺が青山の「梅窓院」に置かれた縁から、『郡上おどりin青山』が開催されるようになりました。\n\n#郡上おどり\n#盆踊り \n#bondance"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=XSrb-8_-ok4",
-          "date": "2025-06-20T15:37:42Z",
-          "text": "shu channel\n【郡上おどりin青山 2025】「かわさき～三百」🏮Tokyo Bon Dance Festival👘2025.6.20 @秩父宮ラグビー場 駐車場\n00:00:00 かわさき\n00:13:20 三百\n\n【郡上おどりin青山】\n■日時：2025年6月20日(金)・21日(土)\n■場所：東京都港区北青山2-8-35\n　　　　秩父宮ラグビー場 駐車場\n「青山」の地名の由来は、天正18年(1590年）に徳川家康の家臣「青山忠成」の下屋敷が置かれたことに因み名づけられたもので、青山家の支族が江戸中期に郡上藩を所領し、菩提寺が青山の「梅窓院」に置かれた縁から、『郡上おどりin青山』が開催されるようになりました。\n\n#郡上おどり\n#盆踊り \n#bondance"
-        }
-      ],
-      "already_public": true,
-      "evidence_count": 41
-    },
-    {
-      "id": "a5a082f10878ca75",
-      "song_name": "まつり",
-      "event_name": "みなと区民まつり 盆踊り",
-      "venue": "芝公園",
-      "area": "港区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
     },
     {
       "id": "846aad7b30b20799",
@@ -31279,21 +31195,6 @@
       "evidence_count": 0
     },
     {
-      "id": "ad5b198a2e1b0b19",
-      "song_name": "まつり",
-      "event_name": "第90回 祐天寺み魂まつり こども盆踊り大会",
-      "venue": "祐天寺境内",
-      "area": "目黒区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
       "id": "e46bc64ef036b644",
       "song_name": "RPG",
       "event_name": "自由が丘納涼盆踊り大会",
@@ -31600,21 +31501,6 @@
       ],
       "already_public": true,
       "evidence_count": 1
-    },
-    {
-      "id": "6930605750818f46",
-      "song_name": "まつり",
-      "event_name": "西綾瀬町会 夏祭り盆踊り大会",
-      "venue": "五反野コミュニティ公園",
-      "area": "足立区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
     }
   ]
 }

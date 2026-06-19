@@ -2222,7 +2222,7 @@
     ]
   },
   {
-    "name": "郡上おどり in 青山 2025",
+    "name": "郡上おどり in 青山",
     "name_confirmed": true,
     "venue": "秩父宮ラグビー場駐車場",
     "area": "港区",
@@ -2234,9 +2234,9 @@
     "address": "東京都港区北青山2-8-35",
     "lat": 35.672749,
     "lng": 139.718033,
-    "date": "2025-06-20",
-    "date_end": "2025-06-21",
-    "status": "終了",
+    "date": "2026-06-26",
+    "date_end": "2026-06-27",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -2246,91 +2246,35 @@
     "hints": [
       [
         6,
-        20
+        26
       ],
       [
         6,
-        21
+        27
       ]
     ],
     "jun": {
       "6": "下旬"
     },
     "description": "郡上八幡から保存会を迎え、本場の郡上おどりを東京で体験できる人気イベント。下駄の音を響かせて、誰でも輪に入れる。",
-    "detail": "青山外苑前商店街公式の郡上おどり2025詳細。既存2026年ページとは別に2025年分として登録。",
+    "detail": "",
     "source_urls": [],
-    "songs": [
-      {
-        "name": "かわさき",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
-      },
-      {
-        "name": "さわぎ",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
-      },
-      {
-        "name": "やっちく",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
-      },
-      {
-        "name": "三百",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
-      },
-      {
-        "name": "古調かわさき",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
-      },
-      {
-        "name": "春駒",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
-      },
-      {
-        "name": "甚句",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
-      }
-    ],
-    "public_status": "expected_medium",
-    "public_category": "recurring_last_year",
-    "public_status_label": "昨年開催",
-    "public_note": "昨年開催: 2025-06-20〜2025-06-21。今年の日程は未確認です。",
-    "recurrence_label": "昨年開催・継続性 中",
-    "recurrence_score": 0.63,
+    "songs": [],
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-06-26〜2026-06-27",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
     "recurrence_reasons": [
-      "held_2025",
-      "official_or_semi_official_evidence",
-      "venue_present",
-      "tokyo_23ward",
-      "recurring_word:商店街"
+      "2026年日付確認済み"
     ],
-    "recurrence_cautions": [
-      "イベント名に2025明記"
-    ],
+    "recurrence_cautions": [],
     "edition_number": null,
-    "last_seen_year": 2025,
+    "last_seen_year": null,
     "last_seen_dates": [
-      "2025-06-20",
-      "2025-06-21"
+      "2026-06-26",
+      "2026-06-27"
     ]
   },
   {

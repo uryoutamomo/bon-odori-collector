@@ -841,63 +841,6 @@
     ]
   },
   {
-    "name": "郡上おどり in 青山 2025",
-    "venue": "秩父宮ラグビー場駐車場",
-    "area": "港区",
-    "date": "2025-06-20",
-    "songs": [
-      {
-        "name": "かわさき",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
-      },
-      {
-        "name": "さわぎ",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
-      },
-      {
-        "name": "やっちく",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
-      },
-      {
-        "name": "三百",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
-      },
-      {
-        "name": "古調かわさき",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
-      },
-      {
-        "name": "春駒",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
-      },
-      {
-        "name": "甚句",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
-      }
-    ]
-  },
-  {
     "name": "西久保八幡神社 盆踊り",
     "venue": "西久保八幡神社",
     "area": "港区",
