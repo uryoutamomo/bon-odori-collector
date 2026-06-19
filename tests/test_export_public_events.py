@@ -52,7 +52,7 @@ class ExportPublicEventsTest(unittest.TestCase):
 
     def test_public_detail_text_hides_internal_youtube_evidence(self):
         detail = "\n".join([
-            "2026-07-29〜2026-08-01 開催予定。公式発表を確認。",
+            "2026-07-29〜2026-08-01 開催予定。[B1] 公式発表を確認。",
             "",
             "[youtube_evidence] YouTube 2025公式URL確認済み証拠",
             "- 対象イベント: 築地本願寺納涼盆踊り大会",
@@ -63,6 +63,7 @@ class ExportPublicEventsTest(unittest.TestCase):
         public = public_detail_text(detail)
 
         self.assertIn("2026-07-29〜2026-08-01 開催予定。公式発表を確認。", public)
+        self.assertNotIn("[B1]", public)
         self.assertNotIn("[youtube_evidence]", public)
         self.assertNotIn("YouTube", public)
         self.assertNotIn("https://", public)
@@ -76,8 +77,8 @@ class ExportPublicEventsTest(unittest.TestCase):
                 {"label": "公式告知あり", "url": "https://example.com/news/20260610/", "kind": "official"},
             ],
             "songs": [
-                {"name": "まつり", "confidence": "confirmed", "source_count": 2, "probability": 95, "basis": "current_hint", "evidence_count": 1},
-                {"name": "LOVEマシーン", "confidence": "hint", "source_count": 1, "probability": 80, "basis": "current_hint", "evidence_count": 1},
+                {"name": "まつり", "confidence": "confirmed", "source_count": 2, "probability": 95, "basis": "current_hint", "basis_label": "今年ヒント", "evidence_count": 1},
+                {"name": "LOVEマシーン", "confidence": "hint", "source_count": 1, "speaker_count": 1, "probability": 80, "basis": "current_hint", "basis_label": "今年ヒント", "evidence_count": 1},
             ],
         }])
 
@@ -86,6 +87,13 @@ class ExportPublicEventsTest(unittest.TestCase):
             {"label": "公式告知あり", "url": "https://example.com/news/20260610/", "kind": "official"}
         ])
         self.assertEqual([song["name"] for song in rows[0]["songs"]], ["LOVEマシーン"])
+        self.assertEqual(rows[0]["songs"][0], {
+            "name": "LOVEマシーン",
+            "confidence": "hint",
+            "probability": 80,
+            "basis": "current_hint",
+            "basis_label": "今年ヒント",
+        })
 
 
     def test_extract_public_source_urls_keeps_official_urls_not_video_urls(self):
@@ -103,8 +111,8 @@ class ExportPublicEventsTest(unittest.TestCase):
             sources,
             [
                 {"label": "公式告知あり", "url": "https://www.nouryo-matsuri.com/pages/6314608/page_202208061239", "kind": "official"},
-                {"label": "告知HPあり", "url": "", "kind": "web"},
-                {"label": "告知投稿あり", "url": "", "kind": "post"},
+                {"label": "告知HPあり", "url": "", "kind": "web", "count": 1},
+                {"label": "告知投稿あり", "url": "", "kind": "post", "count": 1},
             ],
         )
 
@@ -124,7 +132,7 @@ class ExportPublicEventsTest(unittest.TestCase):
             "短縮 https://t.co/abc",
         ])
 
-        self.assertEqual(extract_public_source_urls(detail), [{"label": "告知投稿あり", "url": "", "kind": "post"}])
+        self.assertEqual(extract_public_source_urls(detail), [{"label": "告知投稿あり", "url": "", "kind": "post", "count": 3}])
 
     def test_apply_public_recurrence_metadata_adds_production_fields(self):
         rows = apply_public_recurrence_metadata([{
@@ -173,7 +181,7 @@ class ExportPublicEventsTest(unittest.TestCase):
                 "area": "港区",
                 "date": "2026-06-26",
                 "status": "確認済み",
-                "songs": [{"name": "郡上おどり", "confidence": "confirmed", "source_count": 2}],
+                "songs": [{"name": "郡上おどり", "confidence": "confirmed", "source_count": 2, "probability": 95}],
             },
             {
                 "name": "郡上おどり in 青山 2025",
@@ -182,9 +190,9 @@ class ExportPublicEventsTest(unittest.TestCase):
                 "date": "2025-06-20",
                 "status": "終了",
                 "songs": [
-                    {"name": "郡上おどり", "confidence": "confirmed", "source_count": 2},
-                    {"name": "かわさき", "confidence": "hint", "source_count": 1},
-                    {"name": "春駒", "confidence": "hint", "source_count": 1},
+                    {"name": "郡上おどり", "confidence": "confirmed", "source_count": 2, "probability": 95},
+                    {"name": "かわさき", "confidence": "hint", "source_count": 1, "probability": 80},
+                    {"name": "春駒", "confidence": "hint", "source_count": 1, "probability": 80},
                 ],
             },
         ])
@@ -198,6 +206,32 @@ class ExportPublicEventsTest(unittest.TestCase):
         self.assertEqual(filtered[0].get("songs"), [])
         self.assertEqual([song["name"] for song in filtered[1]["songs"]], ["かわさき", "春駒"])
         self.assertEqual(filtered[1]["songs"][0]["basis_label"], "2025年ヒント")
+        self.assertNotIn("source_count", filtered[1]["songs"][0])
+
+    def test_sanitize_public_event_details_drops_empty_fallbacks(self):
+        rows = sanitize_public_event_details([
+            {
+                "name": "あかつき公園の盆踊り",
+                "name_confirmed": False,
+                "area": "中央区",
+                "months": [],
+                "hints": [],
+                "date": None,
+                "status": None,
+                "lat": None,
+                "lng": None,
+                "songs": [],
+            },
+            {
+                "name": "築地本願寺納涼盆踊り大会",
+                "name_confirmed": True,
+                "area": "中央区",
+                "date": "2026-07-29",
+                "status": "確認済み",
+            },
+        ])
+
+        self.assertEqual([row["name"] for row in rows], ["築地本願寺納涼盆踊り大会"])
 
     def test_write_public_js(self):
         with TemporaryDirectory() as tmp:

@@ -22,6 +22,14 @@
 - 公開UI: `youtube_evidence.video_url` は出典リンクとして必ず表示し、`thumbnail_url` は詳細内で任意表示にする。
 - 曲目: `songs` は動画由来の補助情報として扱い、公式曲目とは区別する。
 
+## 公開日程ステータスとの関係
+
+- 過去年YouTubeは `historical_reference` の根拠にできる。
+- YouTubeの根拠年は `historical_occurrences.year` / `evidence_years` に残す。
+- 複数年のYouTube実績は `continuity_score` を上げる材料にできる。
+- 過去年YouTubeだけで `current_confirmed_upcoming` に昇格しない。
+- 今年の事後YouTubeは、未来開催の告知ではなく、終了済みの実測証拠として扱う。
+
 ## 中期DB候補
 
 YouTube証拠DBの最小フィールド:

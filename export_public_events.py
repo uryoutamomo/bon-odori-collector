@@ -44,6 +44,10 @@ FALLBACK_SUPPRESSED_VENUES = {
     # 例大祭名の由来となる神社。実際の奉納踊り会場は青葉公園（港区立）なので、
     # 未整備会場フォールバックとして「青山熊野神社の盆踊り」を出さない。
     "青山熊野神社",
+    # 公開前チェックで「名前と区以外の情報が薄い不完全レコード」として除外。
+    "あかつき公園",
+    "有馬小学校",
+    "羽根木公園",
 }
 NON_SONG_LABELS = {
     # ジャンル/イベント名であって曲名ではないため、曲目タグには出さない。
@@ -132,7 +136,7 @@ def extract_public_source_urls(text):
     official = []
     web = []
     seen = set()
-    has_notice = False
+    notice_seen = set()
     for line in (text or "").splitlines():
         stripped = line.strip()
         if not stripped:
@@ -154,7 +158,7 @@ def extract_public_source_urls(text):
             continue
         for url in URL_RE.findall(body):
             if _is_notice_url(url):
-                has_notice = True
+                notice_seen.add(url)
                 continue
             if not _is_public_source_url(url) or url in seen:
                 continue
@@ -168,9 +172,9 @@ def extract_public_source_urls(text):
     if official:
         sources.append(official[0])
     if web:
-        sources.append({"label": "告知HPあり", "url": "", "kind": "web"})
-    if has_notice:
-        sources.append({"label": "告知投稿あり", "url": "", "kind": "post"})
+        sources.append({"label": "告知HPあり", "url": "", "kind": "web", "count": len(web)})
+    if notice_seen:
+        sources.append({"label": "告知投稿あり", "url": "", "kind": "post", "count": len(notice_seen)})
     return sources
 
 
@@ -187,18 +191,20 @@ def _source_rank(source):
 def collapse_public_source_urls(sources):
     """Keep public evidence buttons compact; one official button is enough."""
     best_official = None
-    notes = []
-    seen_note_keys = set()
+    note_counts = {}
+    note_labels = {}
     for source in sources or []:
         if source.get("kind") == "official":
             if best_official is None or _source_rank(source) > _source_rank(best_official):
                 best_official = source
             continue
-        key = (source.get("kind"), source.get("label"), source.get("url") or "")
-        if key in seen_note_keys:
-            continue
-        seen_note_keys.add(key)
-        notes.append(source)
+        kind = source.get("kind") or "web"
+        note_counts[kind] = note_counts.get(kind, 0) + int(source.get("count") or 1)
+        note_labels.setdefault(kind, source.get("label") or "告知HPあり")
+    notes = [
+        {"label": note_labels[kind], "url": "", "kind": kind, "count": count}
+        for kind, count in note_counts.items()
+    ]
     return ([best_official] if best_official else []) + notes
 
 
@@ -207,6 +213,7 @@ def public_detail_text(text):
     if not text:
         return ""
     public = YOUTUBE_EVIDENCE_RE.sub("", text)
+    public = re.sub(r"\[[A-Z]\d+\]\s*", "", public)
     public = re.sub(r"https?://\S+", "", public)
     public = re.sub(r"(?:公式URL|根拠URL|参照URL|出典URL)[:：]\s*(?=$|[。．])", "", public)
     public = re.sub(r"\s+", " ", public).strip()
@@ -382,12 +389,16 @@ def merge_song_occurrence_hints(existing_songs, occurrence):
 def strip_song_internal_fields(songs):
     public_songs = []
     for song in songs or []:
-        if not isinstance(song, dict):
-            public_songs.append(song)
+        if isinstance(song, str):
+            public_songs.append({"name": song, "confidence": "hint"})
             continue
-        item = dict(song)
-        item.pop("evidence_urls", None)
-        public_songs.append(item)
+        item = {
+            key: song[key]
+            for key in ["name", "confidence", "probability", "basis", "basis_label"]
+            if key in song and song[key] not in (None, "", [])
+        }
+        if item.get("name"):
+            public_songs.append(item)
     return public_songs
 
 
@@ -671,8 +682,29 @@ def sanitize_public_event_details(events):
             and not _is_weak_ambiguous_song(song)
         ]
         item = strip_internal_public_fields(item)
-        cleaned.append(item)
+        if is_public_event_complete_enough(item):
+            cleaned.append(item)
     return cleaned
+
+
+def is_public_event_complete_enough(event):
+    """Drop empty fallback rows that have no useful public date, venue, or geo signal."""
+    if event.get("name_confirmed"):
+        return True
+    useful_fields = [
+        event.get("date"),
+        event.get("status"),
+        event.get("months"),
+        event.get("hints"),
+        event.get("lat"),
+        event.get("lng"),
+        event.get("address"),
+        event.get("access"),
+        event.get("description"),
+        event.get("source_urls"),
+        event.get("songs"),
+    ]
+    return any(value not in (None, "", [], {}) for value in useful_fields)
 
 
 def public_series_key(event):
@@ -694,12 +726,12 @@ def _song_name(song):
 
 def _public_song(song):
     if isinstance(song, str):
-        return song
-    item = dict(song)
-    item.pop("evidence_urls", None)
-    item.pop("media_urls", None)
-    item.pop("video_urls", None)
-    return item
+        return {"name": song, "confidence": "hint"}
+    return {
+        key: song[key]
+        for key in ["name", "confidence", "probability", "basis", "basis_label"]
+        if key in song and song[key] not in (None, "", [])
+    }
 
 
 def strip_internal_public_fields(value):
@@ -720,6 +752,8 @@ def strip_internal_public_fields(value):
         "evidence_urls",
         "media_urls",
         "video_urls",
+        "source_count",
+        "speaker_count",
     }
     for key, item in value.items():
         if key in skip_keys:
@@ -771,7 +805,10 @@ def merge_replacement_songs(current, recurring):
             existing = merged.get(name)
             if existing is None or _song_score(song) > _song_score(existing):
                 merged[name] = song
-    current["songs"] = sorted(merged.values(), key=lambda song: (-_song_score(song)[0], _song_name(song)))
+    current["songs"] = sorted(
+        strip_song_internal_fields(merged.values()),
+        key=lambda song: (-_song_score(song)[0], _song_name(song)),
+    )
 
 
 def suppress_replaced_recurring_events(events):
