@@ -1,10 +1,10 @@
 # YouTube 過去年バックフィル候補
 
-- 生成: 2026-06-18T10:09:12.336493+00:00
-- selected_queue_count: 77
-- candidate_count: 308
-- strong: 122
-- review: 25
+- 生成: 2026-06-19T07:35:12.321224+00:00
+- selected_queue_count: 87
+- candidate_count: 346
+- strong: 145
+- review: 34
 
 | status | score | year | event | venue | detected | channel | title | url |
 | --- | ---: | ---: | --- | --- | --- | --- | --- | --- |
@@ -20,6 +20,11 @@
 | strong | 100 | 2023 | 山王音頭と民踊大会 | 山王パークタワー公開空地 | 2023-06-13 | 和太鼓お祭りチャンネル | 東京音頭　2023年山王日枝神社　山王祭　山王音頭と民踊大会1日目１６　盆踊り　東京都千代田区 | https://www.youtube.com/watch?v=w6u_8TI66Xw |
 | strong | 100 | 2023 | 山王音頭と民踊大会 | 山王パークタワー公開空地 | 2023-06-13 | 和太鼓お祭りチャンネル | 東京音頭　2023年山王日枝神社　山王祭　山王音頭と民踊大会1日目１７終　盆踊り　東京都千代田区 | https://www.youtube.com/watch?v=gXpQ1npVauI |
 | strong | 100 | 2023 | 第15回 鴨台盆踊り | 大正大学 | 2023-07-08 | 和太鼓お祭りチャンネル | スターダスト河内　交野節　２０２３年大正大学鴨台盆踊り２日目１ | https://www.youtube.com/watch?v=FcLa-B7sWqs |
+| strong | 100 | 2023 | 築地本願寺納涼盆踊り大会 | 築地本願寺 | 2023-08-03 | 祭のきせき　MatsuriNoKiseki | ゆかた音頭 　築地本願寺納涼盆踊り大会 20230803 | https://www.youtube.com/watch?v=Drph1QicthQ |
+| strong | 100 | 2023 | 築地本願寺納涼盆踊り大会 | 築地本願寺 | 2023-08-03 | 祭のきせき　MatsuriNoKiseki | 大江戸助六音頭 　築地本願寺納涼盆踊り大会 20230803 | https://www.youtube.com/watch?v=HrxwiJvjZYM |
+| strong | 100 | 2023 | 築地本願寺納涼盆踊り大会 | 築地本願寺 | 2023-08-03 | 祭のきせき　MatsuriNoKiseki | 斉太郎節 　築地本願寺納涼盆踊り大会 20230803 | https://www.youtube.com/watch?v=RRv6IykVpPg |
+| strong | 100 | 2023 | 築地本願寺納涼盆踊り大会 | 築地本願寺 | 2023-08-03 | 祭のきせき　MatsuriNoKiseki | 日本晴れだよ 　築地本願寺納涼盆踊り大会 20230803 | https://www.youtube.com/watch?v=_k6cW9ZfXVs |
+| strong | 100 | 2023 | 築地本願寺納涼盆踊り大会 | 築地本願寺 | 2023-08-03 | 祭のきせき　MatsuriNoKiseki | 築地音頭 　築地本願寺納涼盆踊り大会 20230803 | https://www.youtube.com/watch?v=BytVQojeBAA |
 | strong | 100 | 2023 | 自由が丘納涼盆踊り大会 | 自由が丘駅前ロータリー 特設会場 | 2023-07-17 | 和太鼓お祭りチャンネル | やる気で音頭　2023年自由が丘納涼盆踊り大会１　東京都目黒区 | https://www.youtube.com/watch?v=QPxuVq-Nv3w |
 | strong | 100 | 2023 | 自由が丘納涼盆踊り大会 | 自由が丘駅前ロータリー 特設会場 | 2023-07-17 | 和太鼓お祭りチャンネル | 北海盆唄　2023年自由が丘納涼盆踊り大会８　東京都目黒区 | https://www.youtube.com/watch?v=ba6A8Z79pgM |
 | strong | 100 | 2023 | 西久保八幡神社 盆踊り | 西久保八幡神社 | 2023-08-10 | 和太鼓お祭りチャンネル | 「チャンチキおけさ」　2023年西久保八幡神社例大祭盆踊り３２　東京都港区 | https://www.youtube.com/watch?v=Oe3r8_nj_fg |
@@ -77,14 +82,9 @@
 | strong | 100 | 2024 | 西久保八幡神社 盆踊り | 西久保八幡神社 | 2024-08-09 | 和太鼓お祭りチャンネル | 銀座カンカン娘　2024年西久保八幡神社盆踊り23　東京都港区 | https://www.youtube.com/watch?v=I8US5cj39Lo |
 | strong | 100 | 2024 | 郡上おどり in 青山 2025 | 秩父宮ラグビー場駐車場 | 2024-06-14 | Very JAPAN | 「郡上おどり in 青山」納涼大会 盆踊り 2024 Tokyo,Aoyama Bon Dance. Bon Odori 郡上踊り | https://www.youtube.com/watch?v=3uOCgqTaTG4 |
 | strong | 100 | 2024 | 郡上おどり in 青山 2026 | 秩父宮ラグビー場駐車場 | 2024-06-14 | Very JAPAN | 「郡上おどり in 青山」納涼大会 盆踊り 2024 Tokyo,Aoyama Bon Dance. Bon Odori 郡上踊り | https://www.youtube.com/watch?v=3uOCgqTaTG4 |
-| strong | 98 | 2023 | 奥浅草盆踊り | 隅田公園 | 2023-07-02 | 山崎茂雄 | ＃たいとう音頭～＃2023奥浅草盆踊り大会＃LIVEの様な盆踊り大会＃日本の夏祭り＃2023年7月2日 | https://www.youtube.com/watch?v=wpKpFduL8CQ |
-| strong | 98 | 2023 | 奥浅草盆踊り | 隅田公園 | 2023-07-02 | 山崎茂雄 | ＃ソーラン節～＃奥浅草盆踊り大会2023＃＃日本の夏祭り＃2023年7月2日 | https://www.youtube.com/watch?v=KlBhOwGKAFg |
-| strong | 98 | 2023 | 奥浅草盆踊り | 隅田公園 | 2023-07-02 | 山崎茂雄 | ＃平成音頭～＃奥浅草盆踊り大会2023＃LIVEの様な盆踊り大会＃日本の夏祭り＃2023年7月2日 | https://www.youtube.com/watch?v=53pEnwlGpbM |
-| strong | 98 | 2023 | 奥浅草盆踊り | 隅田公園 | 2023-07-02 | 山崎茂雄 | ＃波乗りジョニー(曲・桑田佳祐)～＃奥浅草盆踊り大会2023＃LIVEの様な盆踊り＃日本の夏祭り＃2023年7月2日 | https://www.youtube.com/watch?v=apLN4BR62GM |
-| strong | 98 | 2023 | 奥浅草盆踊り | 隅田公園 | 2023-07-02 | 山崎茂雄 | 🏮＃たいとう音頭 2️⃣ ～＃奥浅草盆踊り大会2023＃LIVEの様な盆踊り＃日本の夏祭り＃2023年7月2日＃TaitoOndo | https://www.youtube.com/watch?v=A5_d9nNFmKA |
-| strong | 98 | 2023 | 奥浅草盆踊り | 隅田公園 | 2023-07-02 | 山崎茂雄 | 🏮＃炭坑節 2️⃣ ～＃奥浅草盆踊り大会2023＃LIVEの様な盆踊り＃日本の夏祭り＃2023年7月2日＃TankoBushi | https://www.youtube.com/watch?v=sLad6R2fvU0 |
-| strong | 98 | 2023 | 東本願寺盆踊り | 東本願寺（浅草） | 2023-08-22 | 祭のきせき　MatsuriNoKiseki | ご祝儀音頭 ① 　浅草 東本願寺 盆踊り 20230822 | https://www.youtube.com/watch?v=nBhx3qjLvFw |
-| strong | 98 | 2023 | 東本願寺盆踊り | 東本願寺（浅草） | 2023-08-22 | 祭のきせき　MatsuriNoKiseki | ご祝儀音頭 ② 　浅草 東本願寺 盆踊り 20230822 | https://www.youtube.com/watch?v=h1bsaNvZNFc |
-| strong | 98 | 2023 | 東本願寺盆踊り | 東本願寺（浅草） | 2023-08-22 | 祭のきせき　MatsuriNoKiseki | ふるさと音頭 ① 　浅草 東本願寺 盆踊り 20230822 | https://www.youtube.com/watch?v=FYAdTKdEKdc |
-| strong | 98 | 2023 | 東本願寺盆踊り | 東本願寺（浅草） | 2023-08-22 | 祭のきせき　MatsuriNoKiseki | ふるさと音頭 ② 　浅草 東本願寺 盆踊り 20230822 | https://www.youtube.com/watch?v=Ugvap9abX98 |
-| strong | 98 | 2023 | 東本願寺盆踊り | 東本願寺（浅草） | 2023-08-22 | 祭のきせき　MatsuriNoKiseki | 東京音頭 ① 　浅草 東本願寺 盆踊り 20230822 | https://www.youtube.com/watch?v=HMjgBVjio1E |
+| strong | 98 | 2023 | すみだ錦糸町河内音頭大盆踊り | 江東橋竪川親水公園 | 2023-09-06 | joy joy | ① 1日目-第41回 すみだ錦糸町河内音頭大盆踊りSumida Kinshicho Kawachi Ondo Obon Odori(Dance)2023.9.6 | https://www.youtube.com/watch?v=sSvaDLB-_mE |
+| strong | 98 | 2023 | すみだ錦糸町河内音頭大盆踊り | 江東橋竪川親水公園 | 2023-09-06 | joy joy | ②1日目-第41回 すみだ錦糸町河内音頭大盆踊りSumida Kinshicho Kawachi Ondo Obon Odori(Dance)2023.9.6 | https://www.youtube.com/watch?v=1WHO4YvjBlQ |
+| strong | 98 | 2023 | すみだ錦糸町河内音頭大盆踊り | 江東橋竪川親水公園 | 2023-09-06 | joy joy | ③1日目-第41回 すみだ錦糸町河内音頭大盆踊りSumida  Kinshicho Kawachi Ondo Obon Odori(Dance)2023.9.6 | https://www.youtube.com/watch?v=U7BNtqVKDAY |
+| strong | 98 | 2023 | すみだ錦糸町河内音頭大盆踊り | 江東橋竪川親水公園 | 2023-09-06 | joy joy | ④ 2日目-第41回 すみだ錦糸町河内音頭大盆踊りSumida Kinshicho Kawachi Ondo Obon Odori(Dance)2023.9.7 | https://www.youtube.com/watch?v=tY-h4bUf4E0 |
+| strong | 98 | 2023 | すみだ錦糸町河内音頭大盆踊り | 江東橋竪川親水公園 | 2023-09-06 | joy joy | ⑥ 2日目-第41回 すみだ錦糸町河内音頭大盆踊りSumida Kinshicho Kawachi Ondo Obon Odori(Dance) | https://www.youtube.com/watch?v=-tZUm5Vw7PU |
+| strong | 98 | 2023 | すみだ錦糸町河内音頭大盆踊り | 江東橋竪川親水公園 | 2023-09-06 | 祭のきせき　MatsuriNoKiseki | すみだ錦糸町河内音頭大盆踊り　大盛況 !!　初日ラスト　20230906 | https://www.youtube.com/watch?v=27a-OXFmb_w |

@@ -1,14 +1,14 @@
 {
   "generated_by": "build_event_occurrence_observations.py",
-  "generated_at": "2026-06-18T10:09:24.358989+00:00",
+  "generated_at": "2026-06-19T07:35:12.509002+00:00",
   "sources": {
     "active_review": "/Users/ryotauchida/bon-odori-collector/data/youtube_active_video_review.json",
     "setlist_occurrences": "/Users/ryotauchida/bon-odori-collector/data/youtube_setlist_occurrences.json"
   },
   "summary": {
-    "observation_count": 45,
-    "series_count": 26,
-    "source_video_count": 663,
+    "observation_count": 48,
+    "series_count": 28,
+    "source_video_count": 684,
     "observed_years": [
       "2023",
       "2024",
@@ -16,13 +16,13 @@
       "2026"
     ],
     "observations_by_year": {
-      "2023": 10,
-      "2024": 11,
+      "2023": 12,
+      "2024": 12,
       "2025": 22,
       "2026": 2
     },
     "series_with_3year_window": 3,
-    "observations_with_songs": 23,
+    "observations_with_songs": 25,
     "active_review_skipped": {
       "missing_event_venue_or_date": 3665
     },
@@ -33,10 +33,10 @@
       }
     },
     "backfill_apply": {
-      "added": 2,
-      "updated": 19,
+      "added": 3,
+      "updated": 21,
       "source": "data/event_occurrence_backfill_plan.json",
-      "source_observation_count": 21
+      "source_observation_count": 24
     }
   },
   "series": [
@@ -241,6 +241,19 @@
       ]
     },
     {
+      "series_key": "b354f118cfbc",
+      "canonical_name": "築地本願寺納涼盆踊り大会",
+      "usual_venue": "築地本願寺",
+      "observed_years": [
+        2023
+      ],
+      "observation_count": 1,
+      "has_3year_window": false,
+      "song_years": [
+        2023
+      ]
+    },
+    {
       "series_key": "b727adc26276",
       "canonical_name": "みたままつり 納涼民踊のつどい",
       "usual_venue": "靖国神社",
@@ -370,6 +383,20 @@
       "song_years": []
     },
     {
+      "series_key": "f323875e8c97",
+      "canonical_name": "すみだ錦糸町河内音頭大盆踊り",
+      "usual_venue": "江東橋竪川親水公園",
+      "observed_years": [
+        2023,
+        2024
+      ],
+      "observation_count": 2,
+      "has_3year_window": false,
+      "song_years": [
+        2024
+      ]
+    },
+    {
       "series_key": "fcf41af7b1ed",
       "canonical_name": "飛鳥山公園盆踊り会（有志サークル）",
       "usual_venue": "飛鳥山公園",
@@ -382,6 +409,87 @@
     }
   ],
   "observations": [
+    {
+      "observation_id": "a7c94f5754b5fbd3",
+      "series_key": "f323875e8c97",
+      "event_name": "すみだ錦糸町河内音頭大盆踊り",
+      "venue": "江東橋竪川親水公園",
+      "area": "墨田区",
+      "year": 2023,
+      "date_start": "2023-09-06",
+      "date_end": "2023-09-06",
+      "observed_dates": [
+        "2023-09-06"
+      ],
+      "weekday_start": "水",
+      "weekday_end": "水",
+      "source_type": "youtube_backfill_observed",
+      "source_video_count": 7,
+      "source_channels": [
+        "joy joy",
+        "祭のきせき　MatsuriNoKiseki"
+      ],
+      "confidence": "high",
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=sSvaDLB-_mE",
+          "video_id": "sSvaDLB-_mE",
+          "title": "① 1日目-第41回 すみだ錦糸町河内音頭大盆踊りSumida Kinshicho Kawachi Ondo Obon Odori(Dance)2023.9.6",
+          "channel": "joy joy",
+          "published_at": "2023-09-07T21:42:37Z",
+          "score": 98
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=1WHO4YvjBlQ",
+          "video_id": "1WHO4YvjBlQ",
+          "title": "②1日目-第41回 すみだ錦糸町河内音頭大盆踊りSumida Kinshicho Kawachi Ondo Obon Odori(Dance)2023.9.6",
+          "channel": "joy joy",
+          "published_at": "2023-09-09T05:51:01Z",
+          "score": 98
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=U7BNtqVKDAY",
+          "video_id": "U7BNtqVKDAY",
+          "title": "③1日目-第41回 すみだ錦糸町河内音頭大盆踊りSumida  Kinshicho Kawachi Ondo Obon Odori(Dance)2023.9.6",
+          "channel": "joy joy",
+          "published_at": "2023-09-09T12:26:31Z",
+          "score": 98
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=tY-h4bUf4E0",
+          "video_id": "tY-h4bUf4E0",
+          "title": "④ 2日目-第41回 すみだ錦糸町河内音頭大盆踊りSumida Kinshicho Kawachi Ondo Obon Odori(Dance)2023.9.7",
+          "channel": "joy joy",
+          "published_at": "2023-09-09T20:09:24Z",
+          "score": 98
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=-tZUm5Vw7PU",
+          "video_id": "-tZUm5Vw7PU",
+          "title": "⑥ 2日目-第41回 すみだ錦糸町河内音頭大盆踊りSumida Kinshicho Kawachi Ondo Obon Odori(Dance)",
+          "channel": "joy joy",
+          "published_at": "2023-09-10T04:09:16Z",
+          "score": 98
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=27a-OXFmb_w",
+          "video_id": "27a-OXFmb_w",
+          "title": "すみだ錦糸町河内音頭大盆踊り　大盛況 !!　初日ラスト　20230906",
+          "channel": "祭のきせき　MatsuriNoKiseki",
+          "published_at": "2023-09-07T09:00:01Z",
+          "score": 98
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=dE_CA3Mdoa8",
+          "video_id": "dE_CA3Mdoa8",
+          "title": "すみだ錦糸町河内音頭大盆踊り　河内音頭（櫻川と黒鷲）瑞姫　20230906",
+          "channel": "祭のきせき　MatsuriNoKiseki",
+          "published_at": "2023-09-07T09:00:32Z",
+          "score": 98
+        }
+      ],
+      "songs": []
+    },
     {
       "observation_id": "ac5d792eca0e5754",
       "series_key": "b727adc26276",
@@ -1183,6 +1291,116 @@
       ]
     },
     {
+      "observation_id": "bf1e399806cc72ad",
+      "series_key": "b354f118cfbc",
+      "event_name": "築地本願寺納涼盆踊り大会",
+      "venue": "築地本願寺",
+      "area": "中央区",
+      "year": 2023,
+      "date_start": "2023-08-03",
+      "date_end": "2023-08-03",
+      "observed_dates": [
+        "2023-08-03"
+      ],
+      "weekday_start": "木",
+      "weekday_end": "木",
+      "source_type": "youtube_backfill_observed",
+      "source_video_count": 5,
+      "source_channels": [
+        "祭のきせき　MatsuriNoKiseki"
+      ],
+      "confidence": "medium",
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=Drph1QicthQ",
+          "video_id": "Drph1QicthQ",
+          "title": "ゆかた音頭 　築地本願寺納涼盆踊り大会 20230803",
+          "channel": "祭のきせき　MatsuriNoKiseki",
+          "published_at": "2023-08-03T16:16:25Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=HrxwiJvjZYM",
+          "video_id": "HrxwiJvjZYM",
+          "title": "大江戸助六音頭 　築地本願寺納涼盆踊り大会 20230803",
+          "channel": "祭のきせき　MatsuriNoKiseki",
+          "published_at": "2023-08-03T16:16:25Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=RRv6IykVpPg",
+          "video_id": "RRv6IykVpPg",
+          "title": "斉太郎節 　築地本願寺納涼盆踊り大会 20230803",
+          "channel": "祭のきせき　MatsuriNoKiseki",
+          "published_at": "2023-08-03T16:16:25Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=_k6cW9ZfXVs",
+          "video_id": "_k6cW9ZfXVs",
+          "title": "日本晴れだよ 　築地本願寺納涼盆踊り大会 20230803",
+          "channel": "祭のきせき　MatsuriNoKiseki",
+          "published_at": "2023-08-03T16:16:25Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=BytVQojeBAA",
+          "video_id": "BytVQojeBAA",
+          "title": "築地音頭 　築地本願寺納涼盆踊り大会 20230803",
+          "channel": "祭のきせき　MatsuriNoKiseki",
+          "published_at": "2023-08-03T16:16:25Z",
+          "score": 100
+        }
+      ],
+      "songs": [
+        {
+          "song_name": "ゆかた音頭",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=Drph1QicthQ"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "大江戸助六音頭",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=HrxwiJvjZYM"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "斉太郎節",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=RRv6IykVpPg"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "日本晴れだよ",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=_k6cW9ZfXVs"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "築地音頭",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=BytVQojeBAA"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        }
+      ]
+    },
+    {
       "observation_id": "903be26b351a9911",
       "series_key": "aca270553085",
       "event_name": "西久保八幡神社 盆踊り",
@@ -1896,6 +2114,140 @@
           "source_count": 1,
           "source_urls": [
             "https://www.youtube.com/watch?v=yOrCwOvrx7w"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        }
+      ]
+    },
+    {
+      "observation_id": "0b16b4543c1d85be",
+      "series_key": "f323875e8c97",
+      "event_name": "すみだ錦糸町河内音頭大盆踊り",
+      "venue": "江東橋竪川親水公園",
+      "area": "墨田区",
+      "year": 2024,
+      "date_start": "2024-08-28",
+      "date_end": "2024-08-28",
+      "observed_dates": [
+        "2024-08-28"
+      ],
+      "weekday_start": "水",
+      "weekday_end": "水",
+      "source_type": "youtube_backfill_observed",
+      "source_video_count": 9,
+      "source_channels": [
+        "joy joy",
+        "ねじまき鳥"
+      ],
+      "confidence": "high",
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=Y1S-zoRiWzI",
+          "video_id": "Y1S-zoRiWzI",
+          "title": "full 2日目第42回すみだ錦糸町河内音頭大盆踊り2024.8.29 Sumida Kinshicho Kawauchi Ondo Obon Odori,tokyo japan.",
+          "channel": "joy joy",
+          "published_at": "2024-09-01T02:37:48Z",
+          "score": 98
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=CW8f3zAJvaw",
+          "video_id": "CW8f3zAJvaw",
+          "title": "① 2日目第42回すみだ錦糸町河内音頭大盆踊り2024.8.29 Sumida Kinshicho Kawauchi Ondo Obon Odori,tokyo japan.",
+          "channel": "joy joy",
+          "published_at": "2024-09-01T02:38:28Z",
+          "score": 98
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=WO4zrBbmJwA",
+          "video_id": "WO4zrBbmJwA",
+          "title": "② 2日目第42回すみだ錦糸町河内音頭大盆踊り2024.8.29 Sumida Kinshicho Kawauchi Ondo Obon Odori,tokyo japan.",
+          "channel": "joy joy",
+          "published_at": "2024-09-01T02:38:55Z",
+          "score": 98
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=1nTUky7Hfz0",
+          "video_id": "1nTUky7Hfz0",
+          "title": "③ 2日目第42回すみだ錦糸町河内音頭大盆踊り2024.8.29 Sumida Kinshicho Kawauchi Ondo Obon Odori,tokyo japan.",
+          "channel": "joy joy",
+          "published_at": "2024-09-01T02:39:46Z",
+          "score": 98
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=cBSYwMCGxKE",
+          "video_id": "cBSYwMCGxKE",
+          "title": "山中一若丸「河内音頭 王将」@すみだ錦糸町河内音頭大盆踊り2024/8/28",
+          "channel": "ねじまき鳥",
+          "published_at": "2024-08-28T14:51:37Z",
+          "score": 98
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=dPr0nc766WM",
+          "video_id": "dPr0nc766WM",
+          "title": "錦糸町河内音頭大盆踊り2024/8/28@中西レモン「江州音頭 難波戦記」すずめのティアーズ＆久下惠生",
+          "channel": "ねじまき鳥",
+          "published_at": "2024-08-28T13:25:56Z",
+          "score": 98
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=3FGjH7ItOQ0",
+          "video_id": "3FGjH7ItOQ0",
+          "title": "錦糸町河内音頭大盆踊り2024/8/28@宇宙軒梅ぼし 前唄 江州音頭",
+          "channel": "ねじまき鳥",
+          "published_at": "2024-08-28T13:36:40Z",
+          "score": 98
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=8jU7ZH7I_hU",
+          "video_id": "8jU7ZH7I_hU",
+          "title": "錦糸町河内音頭大盆踊り2024/8/28@生駒尚子「河内音頭 忠太郎ですおっ母さん」",
+          "channel": "ねじまき鳥",
+          "published_at": "2024-08-28T14:57:42Z",
+          "score": 98
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=VCBV9H-xwuE",
+          "video_id": "VCBV9H-xwuE",
+          "title": "雲竜未衣「河内音頭 若き日の龍馬」@すみだ錦糸町河内音頭大盆踊り2024/8/28",
+          "channel": "ねじまき鳥",
+          "published_at": "2024-08-28T14:44:12Z",
+          "score": 98
+        }
+      ],
+      "songs": [
+        {
+          "song_name": "河内音頭 王将",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=cBSYwMCGxKE"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "江州音頭 難波戦記",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=dPr0nc766WM"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "河内音頭 忠太郎ですおっ母さん",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=8jU7ZH7I_hU"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "河内音頭 若き日の龍馬",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=VCBV9H-xwuE"
           ],
           "source_type": "youtube_backfill_title_observed",
           "confidence": "hint"

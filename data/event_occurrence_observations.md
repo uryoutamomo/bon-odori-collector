@@ -1,20 +1,20 @@
 # 年次開催回観測 初期JSON
 
-生成: 2026-06-18T10:09:24.358989+00:00
+生成: 2026-06-19T07:35:12.509002+00:00
 
 ## 集計
 
-- observation_count: 45
-- series_count: 26
-- source_video_count: 663
+- observation_count: 48
+- series_count: 28
+- source_video_count: 684
 - observed_years: ['2023', '2024', '2025', '2026']
 - series_with_3year_window: 3
-- observations_with_songs: 23
+- observations_with_songs: 25
 
 ## 年別
 
-- 2023: 10
-- 2024: 11
+- 2023: 12
+- 2024: 12
 - 2025: 22
 - 2026: 2
 
@@ -39,4 +39,4 @@
 - 山王音頭と民踊大会 / 山王パークタワー公開空地 / 2024-06-13〜2024-06-15: 10 videos, songs=11, confidence=high
 - SHIBUYA MIYASHITA PARK BON DANCE 2026 / 宮下公園 / 2025-09-27〜2025-09-28: 10 videos, songs=0, confidence=high
 - 西久保八幡神社 盆踊り / 西久保八幡神社 / 2023-08-10〜2023-08-12: 9 videos, songs=15, confidence=high
-- 西久保八幡神社 盆踊り / 西久保八幡神社 / 2024-08-09: 8 videos, songs=10, confidence=medium
+- すみだ錦糸町河内音頭大盆踊り / 江東橋竪川親水公園 / 2024-08-28: 9 videos, songs=4, confidence=high
