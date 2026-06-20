@@ -1,7 +1,7 @@
 {
   "generated_by": "build_event_song_candidates.py",
-  "count": 743,
-  "public_event_count": 275,
+  "count": 791,
+  "public_event_count": 323,
   "review_count": 468,
   "candidates": [
     {
@@ -2075,9 +2075,9 @@
       "evidence_count": 6
     },
     {
-      "id": "9265613acc1177b0",
+      "id": "ba6dbf9257f5f849",
       "song_name": "ドラえもん音頭",
-      "event_name": "萩中町会・オーベルグランディオ萩中自治会・新宿東町会「盆踊り大会」 7月11日(金)-12日(土) 18:30-20:30。",
+      "event_name": "萩中町会・オーベルグランディオ萩中自治会・新宿東町会「盆踊り大会」",
       "venue": "萩中神社",
       "area": "大田区",
       "status": "未確認",
@@ -2104,9 +2104,9 @@
       "evidence_count": 2
     },
     {
-      "id": "284cf11a73ead68d",
+      "id": "594cabfb57c86f44",
       "song_name": "炭坑節",
-      "event_name": "萩中町会・オーベルグランディオ萩中自治会・新宿東町会「盆踊り大会」 7月11日(金)-12日(土) 18:30-20:30。",
+      "event_name": "萩中町会・オーベルグランディオ萩中自治会・新宿東町会「盆踊り大会」",
       "venue": "萩中神社",
       "area": "大田区",
       "status": "未確認",
@@ -5350,7 +5350,7 @@
       "evidence_count": 1
     },
     {
-      "id": "13049f4013fd607b",
+      "id": "1d61312c7afa8e98",
       "song_name": "ダンシングヒーロー",
       "event_name": "GMOシブヤエンタメ祭 × JAME盆踊り",
       "venue": "宮下公園",
@@ -5363,30 +5363,18 @@
       "evidence": [
         {
           "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=MAsmj7UIKyA",
-          "date": "2025-06-10T12:00:42Z",
-          "text": "Urban Walk\n【GMOシブヤエンタメ祭 盆踊り】「ダンシングヒーロー」荻野目洋子 / #盆踊り SHIBUYA MIYASHITA PARK BON DANCE\n#GMOシブヤエンタメ祭 #ダンシングヒーロー #盆踊り #渋谷\n\n【GMOシブヤエンタメ祭】\n開催日時：2025年5月30日(金)～6月1日(日)\n開催場所：渋谷宮下公園"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=MPf7mKO1nc8",
-          "date": "2025-06-01T15:08:52Z",
-          "text": "Urban Walk\n【GMOシブヤエンタメ祭 盆踊り】「ダンシングヒーロー」荻野目洋子で盆踊り / #盆踊り SHIBUYA MIYASHITA PARK BON DANCE\n#GMOシブヤエンタメ祭 #ダンシングヒーロー #盆踊り #渋谷\n\n【GMOシブヤエンタメ祭】\n開催日時：2025年5月30日(金)～6月1日(日)\n開催場所：渋谷宮下公園"
-        },
-        {
-          "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=2VL89WkbEWE",
           "date": "2025-06-01T12:30:03Z",
           "text": "Tokyo Lonely Walker\n[4K]🇯🇵 DJ KOOが渋谷で盆踊り｜Get Wild｜EZ DO DANCE｜とっとこハム太郎｜他 / Japanese Bon dance in Shibuya, Tokyo.\n東京・渋谷のMIYASHITA PARK（宮下公園）でGMOシブヤエンタメ祭のJAME盆踊りが開催。\nTRFのDJ KOOさんがDJ TIME＆BON DANCEを披露！\n盆踊りの振付は鳳蝶美成先生がプロデュース！まさに最強＆最高の空間！\nありがとうございました！\n\nDJ KOO performs DJ performance and BON DANCE in Shibuya, Tokyo! Traditional Bon dance with Japanese pop music!\n\n2025.6.1 Sun\n4K60fps virtual walking tour\nOsmo Pocket 3\n\nーーー\n"
         }
       ],
       "already_public": false,
-      "evidence_count": 3
+      "evidence_count": 1
     },
     {
-      "id": "093428fd65690f0b",
+      "id": "60e3f5e7f3c32617",
       "song_name": "炭坑節",
-      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE 2025",
+      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE",
       "venue": "宮下公園",
       "area": "渋谷区",
       "status": "未確認",
@@ -5601,7 +5589,7 @@
       "evidence_count": 2
     },
     {
-      "id": "90b967568d7c234a",
+      "id": "40cc59fcb1bb0ed1",
       "song_name": "郡上おどり",
       "event_name": "郡上おどり in 青山",
       "venue": "秩父宮ラグビー場駐車場",
@@ -5613,6 +5601,12 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/mu4324/status/2068168050550124556",
+          "date": "2026-06-20T03:04:22+00:00",
+          "text": "宇佐美\n来週は毎年行ってる三角広場まつり盆踊りと郡上おどりin青山と奥浅草盆踊りに行こう。\n24〜25日は新宿住友ビル三角広場三角広場まつり盆踊りに行って26日は郡上おどりin青山に行って27日は奥浅草盆踊りに行く。"
+        },
         {
           "source": "x_voice",
           "url": "https://x.com/UT_bondanceclub/status/2063267319141605469",
@@ -5873,7 +5867,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 43
+      "evidence_count": 44
     },
     {
       "id": "03e0ae722162db4a",
@@ -6410,9 +6404,9 @@
       "evidence_count": 2
     },
     {
-      "id": "0e228fe74d97cc66",
+      "id": "cce6bc766cb64a37",
       "song_name": "シモキタ音頭",
-      "event_name": "あずま通り商店街「下北沢盆踊り2025」 8月9日(土)-10日(日) 13:00-20:00。",
+      "event_name": "あずま通り商店街「下北沢盆踊り2025」",
       "venue": "下北沢駅東口",
       "area": "世田谷区",
       "status": "未確認",
@@ -6432,9 +6426,9 @@
       "evidence_count": 1
     },
     {
-      "id": "007a1a0aae6e903f",
+      "id": "8c244dcbbde788c4",
       "song_name": "喜多見音頭",
-      "event_name": "「喜多見盆踊り大会」 7月26日(土)-27日(日)。",
+      "event_name": "喜多見盆踊り大会",
       "venue": "小田急線喜多見駅前 南口広場",
       "area": "世田谷区",
       "status": "未確認",
@@ -8856,7 +8850,7 @@
       "evidence_count": 1
     },
     {
-      "id": "3900cf1934cc0d29",
+      "id": "6c41bafe94e1c15f",
       "song_name": "美しい踊り",
       "event_name": "山王音頭と民踊大会",
       "venue": "山王パークタワー公開空地",
@@ -8867,6 +8861,18 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=IOGj4pO6sdI",
+          "date": "2026-06-20T10:30:35+00:00",
+          "text": "和太鼓お祭りCH\n相馬甚句　赤坂日枝神社盆踊り３日目９　山王祭「山王音頭と民踊大会」　2026年6月15日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り最終日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭盆踊り、3日目最終日の熱気。\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n3日目\n１東京音頭　htt"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=xmcDroLum1w",
+          "date": "2026-06-20T10:00:33+00:00",
+          "text": "和太鼓お祭りCH\nおこさ節　赤坂日枝神社盆踊り３日目８　山王祭「山王音頭と民踊大会」　2026年6月15日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り最終日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭盆踊り、3日目最終日の熱気。\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n3日目\n１東京音頭　htt"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=KCRc5UOqCjU",
@@ -9031,7 +9037,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 27
+      "evidence_count": 29
     },
     {
       "id": "fb3f578210d23dc4",
@@ -13488,9 +13494,9 @@
       "evidence_count": 16
     },
     {
-      "id": "237232d401a41e51",
+      "id": "ee1e9ab6ba4c4dca",
       "song_name": "池ニ郎音頭",
-      "event_name": "堤方東町会「盆踊り大会」 7月26日(土) 16:30-20:00。",
+      "event_name": "堤方東町会「盆踊り大会」",
       "venue": "池上第二小学校",
       "area": "大田区",
       "status": "未確認",
@@ -13510,9 +13516,9 @@
       "evidence_count": 1
     },
     {
-      "id": "0197a25aa773a361",
+      "id": "3d930699fe6128ae",
       "song_name": "きよしのズンドコ節",
-      "event_name": "萩中町会・オーベルグランディオ萩中自治会・新宿東町会「盆踊り大会」 7月11日(金)-12日(土) 18:30-20:30。",
+      "event_name": "萩中町会・オーベルグランディオ萩中自治会・新宿東町会「盆踊り大会」",
       "venue": "萩中神社",
       "area": "大田区",
       "status": "未確認",
@@ -13538,9 +13544,9 @@
       "evidence_count": 2
     },
     {
-      "id": "a18a5e9d657915b9",
+      "id": "01d107cc7c77e1de",
       "song_name": "八木節",
-      "event_name": "萩中町会・オーベルグランディオ萩中自治会・新宿東町会「盆踊り大会」 7月11日(金)-12日(土) 18:30-20:30。",
+      "event_name": "萩中町会・オーベルグランディオ萩中自治会・新宿東町会「盆踊り大会」",
       "venue": "萩中神社",
       "area": "大田区",
       "status": "未確認",
@@ -13566,9 +13572,9 @@
       "evidence_count": 2
     },
     {
-      "id": "535fd9a97b41cd9b",
+      "id": "4ff047e170f9e601",
       "song_name": "東京音頭",
-      "event_name": "萩中町会・オーベルグランディオ萩中自治会・新宿東町会「盆踊り大会」 7月11日(金)-12日(土) 18:30-20:30。",
+      "event_name": "萩中町会・オーベルグランディオ萩中自治会・新宿東町会「盆踊り大会」",
       "venue": "萩中神社",
       "area": "大田区",
       "status": "未確認",
@@ -13721,9 +13727,9 @@
       "evidence_count": 23
     },
     {
-      "id": "0b0f741642ea9639",
+      "id": "e386e2f009d8eb82",
       "song_name": "萩中音頭",
-      "event_name": "萩中町会・オーベルグランディオ萩中自治会・新宿東町会「盆踊り大会」 7月11日(金)-12日(土) 18:30-20:30。",
+      "event_name": "萩中町会・オーベルグランディオ萩中自治会・新宿東町会「盆踊り大会」",
       "venue": "萩中神社",
       "area": "大田区",
       "status": "未確認",
@@ -19350,9 +19356,9 @@
       "evidence_count": 4
     },
     {
-      "id": "0717cd4c3d6a6439",
+      "id": "78b63d66881612bf",
       "song_name": "プロ阿波踊り",
-      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE 2025",
+      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE",
       "venue": "宮下公園",
       "area": "渋谷区",
       "status": "未確認",
@@ -19372,9 +19378,9 @@
       "evidence_count": 1
     },
     {
-      "id": "adaf0c02c08b0525",
+      "id": "ae35bcf1bdc279a7",
       "song_name": "下北沢阿波おどり",
-      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE 2025",
+      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE",
       "venue": "宮下公園",
       "area": "渋谷区",
       "status": "未確認",
@@ -19394,9 +19400,9 @@
       "evidence_count": 1
     },
     {
-      "id": "2dc5d6b9b385e7f7",
+      "id": "523edcc21babb804",
       "song_name": "下北沢阿波踊り",
-      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE 2025",
+      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE",
       "venue": "宮下公園",
       "area": "渋谷区",
       "status": "未確認",
@@ -19416,9 +19422,9 @@
       "evidence_count": 1
     },
     {
-      "id": "4a28e2cc524a0637",
+      "id": "c0c6867982fc3038",
       "song_name": "渋谷で阿波踊り",
-      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE 2025",
+      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE",
       "venue": "宮下公園",
       "area": "渋谷区",
       "status": "未確認",
@@ -19438,9 +19444,9 @@
       "evidence_count": 1
     },
     {
-      "id": "f5f84f8035de676a",
+      "id": "8047c359d53eb3a2",
       "song_name": "薩摩川内おどり",
-      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE 2025",
+      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE",
       "venue": "宮下公園",
       "area": "渋谷区",
       "status": "未確認",
@@ -21686,9 +21692,9 @@
       "evidence_count": 1
     },
     {
-      "id": "f06ecbffe1d1d63d",
+      "id": "599d765b946db703",
       "song_name": "白鳥踊り",
-      "event_name": "「白鳥おどりin池袋」 4月25日(土) 11:00-20:00。",
+      "event_name": "白鳥おどりin池袋",
       "venue": "中池袋公園",
       "area": "豊島区",
       "status": "未確認",
@@ -21904,9 +21910,9 @@
       "evidence_count": 1
     },
     {
-      "id": "ce16c9750e17d307",
+      "id": "d6789a81357c4813",
       "song_name": "下北沢駅東口周辺で開かれる街なかの踊り",
-      "event_name": "あずま通り商店街「下北沢盆踊り2025」 8月9日(土)-10日(日) 13:00-20:00。",
+      "event_name": "あずま通り商店街「下北沢盆踊り2025」",
       "venue": "下北沢駅東口",
       "area": "世田谷区",
       "status": "公開済み",
@@ -21919,9 +21925,9 @@
       "evidence_count": 0
     },
     {
-      "id": "68055cf938a018fc",
+      "id": "5641a8c1b75dd3b5",
       "song_name": "周辺で開かれる街なかの踊り",
-      "event_name": "芦花公園商店街振興組合 「芦花公園駅前盆踊り大会」 7月25日(金) 17:00-。",
+      "event_name": "芦花公園商店街振興組合 「芦花公園駅前盆踊り大会」",
       "venue": "京王線芦花公園駅前ロータリー(南口)",
       "area": "世田谷区",
       "status": "公開済み",
@@ -21934,9 +21940,9 @@
       "evidence_count": 0
     },
     {
-      "id": "a4dea788db95115d",
+      "id": "f450e14d27dc4838",
       "song_name": "円光院駐車場周辺で開かれる街なかの踊り",
-      "event_name": "世田谷駅前商店街振興組合「納涼盆踊り大会 」",
+      "event_name": "世田谷駅前商店街振興組合「納涼盆踊り大会」",
       "venue": "円光院駐車場",
       "area": "世田谷区",
       "status": "公開済み",
@@ -21949,9 +21955,9 @@
       "evidence_count": 0
     },
     {
-      "id": "3208ac745f96b956",
+      "id": "7caae68fb6da4711",
       "song_name": "千歳船橋駅前広場周辺で開かれる街なかの踊り",
-      "event_name": "船橋会 盆踊り 8月17日(日)。",
+      "event_name": "船橋会 盆踊り",
       "venue": "千歳船橋駅前広場",
       "area": "世田谷区",
       "status": "公開済み",
@@ -21964,9 +21970,9 @@
       "evidence_count": 0
     },
     {
-      "id": "a4ec6776b00c3cbc",
+      "id": "75d418c699d7a72e",
       "song_name": "南口広場周辺で開かれる街なかの踊り",
-      "event_name": "「喜多見盆踊り大会」 7月26日(土)-27日(日)。",
+      "event_name": "喜多見盆踊り大会",
       "venue": "小田急線喜多見駅前 南口広場",
       "area": "世田谷区",
       "status": "公開済み",
@@ -21979,9 +21985,9 @@
       "evidence_count": 0
     },
     {
-      "id": "a788a8389aa5a7b3",
+      "id": "5f154b8542dabdd8",
       "song_name": "祖師谷神明社周辺で開かれる街なかの踊り",
-      "event_name": "祖師谷昇進会商店街(振)盆踊り 7月18日(金)-19日(土)。",
+      "event_name": "祖師谷昇進会商店街(振)盆踊り",
       "venue": "祖師谷神明社",
       "area": "世田谷区",
       "status": "公開済み",
@@ -23051,6 +23057,18 @@
       "evidence": [
         {
           "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=IOGj4pO6sdI",
+          "date": "2026-06-20T10:30:35+00:00",
+          "text": "和太鼓お祭りCH\n相馬甚句　赤坂日枝神社盆踊り３日目９　山王祭「山王音頭と民踊大会」　2026年6月15日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り最終日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭盆踊り、3日目最終日の熱気。\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n3日目\n１東京音頭　htt"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=xmcDroLum1w",
+          "date": "2026-06-20T10:00:33+00:00",
+          "text": "和太鼓お祭りCH\nおこさ節　赤坂日枝神社盆踊り３日目８　山王祭「山王音頭と民踊大会」　2026年6月15日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り最終日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭盆踊り、3日目最終日の熱気。\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n3日目\n１東京音頭　htt"
+        },
+        {
+          "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=KCRc5UOqCjU",
           "date": "2026-06-19T10:30:15+00:00",
           "text": "和太鼓お祭りCH\n花笠踊り　赤坂日枝神社盆踊り３日目７　山王祭「山王音頭と民踊大会」　2026年6月15日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り最終日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭盆踊り、3日目最終日の熱気。\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n3日目\n１東京音頭　htt"
@@ -23177,7 +23195,7 @@
         }
       ],
       "already_public": true,
-      "evidence_count": 21
+      "evidence_count": 23
     },
     {
       "id": "243268bbbfa1aae6",
@@ -23591,6 +23609,18 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=IOGj4pO6sdI",
+          "date": "2026-06-20T10:30:35+00:00",
+          "text": "和太鼓お祭りCH\n相馬甚句　赤坂日枝神社盆踊り３日目９　山王祭「山王音頭と民踊大会」　2026年6月15日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り最終日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭盆踊り、3日目最終日の熱気。\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n3日目\n１東京音頭　htt"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=xmcDroLum1w",
+          "date": "2026-06-20T10:00:33+00:00",
+          "text": "和太鼓お祭りCH\nおこさ節　赤坂日枝神社盆踊り３日目８　山王祭「山王音頭と民踊大会」　2026年6月15日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り最終日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭盆踊り、3日目最終日の熱気。\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n3日目\n１東京音頭　htt"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=KCRc5UOqCjU",
@@ -24313,7 +24343,7 @@
         }
       ],
       "already_public": true,
-      "evidence_count": 120
+      "evidence_count": 122
     },
     {
       "id": "f6f9628f0dcc2590",
@@ -24397,6 +24427,18 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=IOGj4pO6sdI",
+          "date": "2026-06-20T10:30:35+00:00",
+          "text": "和太鼓お祭りCH\n相馬甚句　赤坂日枝神社盆踊り３日目９　山王祭「山王音頭と民踊大会」　2026年6月15日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り最終日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭盆踊り、3日目最終日の熱気。\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n3日目\n１東京音頭　htt"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=xmcDroLum1w",
+          "date": "2026-06-20T10:00:33+00:00",
+          "text": "和太鼓お祭りCH\nおこさ節　赤坂日枝神社盆踊り３日目８　山王祭「山王音頭と民踊大会」　2026年6月15日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り最終日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭盆踊り、3日目最終日の熱気。\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n3日目\n１東京音頭　htt"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=KCRc5UOqCjU",
@@ -24813,7 +24855,7 @@
         }
       ],
       "already_public": true,
-      "evidence_count": 69
+      "evidence_count": 71
     },
     {
       "id": "5a23c0d83a59b9d0",
@@ -25644,6 +25686,12 @@
       "evidence": [
         {
           "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=IOGj4pO6sdI",
+          "date": "2026-06-20T10:30:35+00:00",
+          "text": "和太鼓お祭りCH\n相馬甚句　赤坂日枝神社盆踊り３日目９　山王祭「山王音頭と民踊大会」　2026年6月15日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り最終日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭盆踊り、3日目最終日の熱気。\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n3日目\n１東京音頭　htt"
+        },
+        {
+          "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=z5LdywjjDTM",
           "date": "2026-06-15T08:35:03+00:00",
           "text": "shu channel\n赤坂・日枝神社🏮盆踊り[3/7]「花笠踊り～おこさ節～相馬甚句」Tokyo Bon Dance👘2026.6.14 @山王パークタワー公開空地\n00:00 花笠踊り\n03:52 おこさ節\n07:55 相馬甚句\n「山王音頭と民踊大会」（納涼大会）\n■日程：令和8年6月13日(土)～6月15日(月)　\n■場所：東京都千代田区永田町2－10－5\n　　　　山王パークタワー公開空地\n■MC：落合先生\n■踊り：落合社中／赤坂あかね会 他\n■太鼓：鈴木社中\n■公式サイト\nhttps://www.tenkamatsuri.jp/minyo/\n\n#日枝神社\n#盆踊り\n#bondance"
@@ -25692,7 +25740,7 @@
         }
       ],
       "already_public": true,
-      "evidence_count": 8
+      "evidence_count": 9
     },
     {
       "id": "c69ff1830184a6b1",
@@ -25722,6 +25770,18 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=IOGj4pO6sdI",
+          "date": "2026-06-20T10:30:35+00:00",
+          "text": "和太鼓お祭りCH\n相馬甚句　赤坂日枝神社盆踊り３日目９　山王祭「山王音頭と民踊大会」　2026年6月15日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り最終日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭盆踊り、3日目最終日の熱気。\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n3日目\n１東京音頭　htt"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=xmcDroLum1w",
+          "date": "2026-06-20T10:00:33+00:00",
+          "text": "和太鼓お祭りCH\nおこさ節　赤坂日枝神社盆踊り３日目８　山王祭「山王音頭と民踊大会」　2026年6月15日\n江戸三大祭りの一つ、赤坂日枝神社の「山王祭」。 \nその中でも、櫓（やぐら）を囲んで踊る「山王音頭と民踊大会」は、東京の夏の訪れを告げる風物詩です。\n\n多くの踊り手が一体となって盛り上がる盆踊り最終日の風景をいち早くお届けします。 \n歴史ある神社の境内に響き渡る太鼓の音と、美しい踊りの輪。\n現地の臨場感あふれる雰囲気をお楽しみください！\n\n赤坂日枝神社の美しい夜景と櫓のコントラスト\n「東京音頭」での一体感あふれる盆踊り\n2026年 山王祭盆踊り、3日目最終日の熱気。\n\n今後も各地のお祭りや太鼓の魅力を発信していきます。 \n「また見たい！」と思っていただけたら、\nぜひチャンネル登録・高評価をお願いします！\n 感想や「当日会場にいたよ！」といったコメントもお待ちしています。\n\n2026年日枝神社盆踊り\n3日目\n１東京音頭　htt"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=KCRc5UOqCjU",
@@ -25832,7 +25892,7 @@
         }
       ],
       "already_public": true,
-      "evidence_count": 18
+      "evidence_count": 20
     },
     {
       "id": "4f505d4be073d7eb",
@@ -26818,6 +26878,621 @@
       ],
       "already_public": true,
       "evidence_count": 2
+    },
+    {
+      "id": "0d865732fc6933af",
+      "song_name": "U.S.A.",
+      "event_name": "浅草橋マロニエまつり盆踊り",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "dc2c5c07723935b6",
+      "song_name": "おけさ唄えば",
+      "event_name": "浅草橋マロニエまつり盆踊り",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "fe7fac5b73d46873",
+      "song_name": "さくら音頭",
+      "event_name": "浅草橋マロニエまつり盆踊り",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "9d4ad153e41f534e",
+      "song_name": "たいとう音頭",
+      "event_name": "浅草橋マロニエまつり盆踊り",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "68665081cc3032dd",
+      "song_name": "たいとう音頭 ダンシング・バージョン",
+      "event_name": "浅草橋マロニエまつり盆踊り",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "3e50e5c575e70a74",
+      "song_name": "また逢う日まで",
+      "event_name": "浅草橋マロニエまつり盆踊り",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "b929e2fd3dcb509e",
+      "song_name": "まんまる音頭",
+      "event_name": "浅草橋マロニエまつり盆踊り",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "3b04ab38acb67a2f",
+      "song_name": "やなぎブギ",
+      "event_name": "浅草橋マロニエまつり盆踊り",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "93a5db65496d5e6f",
+      "song_name": "ダンシングヒーロー",
+      "event_name": "浅草橋マロニエまつり盆踊り",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "17974d3125f159cd",
+      "song_name": "ボンゴ天国",
+      "event_name": "浅草橋マロニエまつり盆踊り",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "ae83891d6a8440ea",
+      "song_name": "ワイド節",
+      "event_name": "浅草橋マロニエまつり盆踊り",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "47481f64210e615d",
+      "song_name": "三味線ブギウギ",
+      "event_name": "浅草橋マロニエまつり盆踊り",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "b3fb862fa79bf009",
+      "song_name": "伊勢えび囃子",
+      "event_name": "浅草橋マロニエまつり盆踊り",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "84f783d8c4ac1755",
+      "song_name": "八木節",
+      "event_name": "浅草橋マロニエまつり盆踊り",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "29ae047c102539b6",
+      "song_name": "南州おどり",
+      "event_name": "浅草橋マロニエまつり盆踊り",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "525c3cd4d6655052",
+      "song_name": "大東京音頭",
+      "event_name": "浅草橋マロニエまつり盆踊り",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "050affd28422dda2",
+      "song_name": "天竜下れば",
+      "event_name": "浅草橋マロニエまつり盆踊り",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "8cc79fd848ad426e",
+      "song_name": "宇宙太鼓",
+      "event_name": "浅草橋マロニエまつり盆踊り",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "3847644d8811c015",
+      "song_name": "島人ぬ宝",
+      "event_name": "浅草橋マロニエまつり盆踊り",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "db42ded854a99bb7",
+      "song_name": "常磐炭坑節",
+      "event_name": "浅草橋マロニエまつり盆踊り",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "599ee7400dd6ca38",
+      "song_name": "御宿・曳き舟",
+      "event_name": "浅草橋マロニエまつり盆踊り",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "dbe82a447ad78982",
+      "song_name": "新浅草橋音頭",
+      "event_name": "浅草橋マロニエまつり盆踊り",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "99219afaf83ee96a",
+      "song_name": "日本はればれ音頭",
+      "event_name": "浅草橋マロニエまつり盆踊り",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "dc96802e6900ac84",
+      "song_name": "日本よいとこ",
+      "event_name": "浅草橋マロニエまつり盆踊り",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "fa496fda9bb7e6ba",
+      "song_name": "春駒ばやし",
+      "event_name": "浅草橋マロニエまつり盆踊り",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "3edc542c663f7448",
+      "song_name": "東京五輪音頭",
+      "event_name": "浅草橋マロニエまつり盆踊り",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "450bf9478c0e654e",
+      "song_name": "東京音頭",
+      "event_name": "浅草橋マロニエまつり盆踊り",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "732edc57cfebf4d6",
+      "song_name": "柳北音頭",
+      "event_name": "浅草橋マロニエまつり盆踊り",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "e0f63b890978ff68",
+      "song_name": "江戸っ子囃子",
+      "event_name": "浅草橋マロニエまつり盆踊り",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "3f6e3af2c277eb09",
+      "song_name": "河内酒",
+      "event_name": "浅草橋マロニエまつり盆踊り",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "5fde1e316f3a834c",
+      "song_name": "浅草ばし音頭",
+      "event_name": "浅草橋マロニエまつり盆踊り",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "8c547065a8c9132c",
+      "song_name": "涙そうそう",
+      "event_name": "浅草橋マロニエまつり盆踊り",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "6e942af006e9aa4a",
+      "song_name": "炭坑節",
+      "event_name": "浅草橋マロニエまつり盆踊り",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "37a460557cd17261",
+      "song_name": "白鳥おどり 世栄",
+      "event_name": "浅草橋マロニエまつり盆踊り",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "fbcb65e5a673c1af",
+      "song_name": "相馬壁塗り甚句",
+      "event_name": "浅草橋マロニエまつり盆踊り",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "e3af82a77d7809f6",
+      "song_name": "祭りだ!和っしょい",
+      "event_name": "浅草橋マロニエまつり盆踊り",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "4b1c84b79d4aef93",
+      "song_name": "祭り華〜神田明神",
+      "event_name": "浅草橋マロニエまつり盆踊り",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "03ab43ad5140d126",
+      "song_name": "締め太鼓",
+      "event_name": "浅草橋マロニエまつり盆踊り",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "b41bbb3cc405b5b6",
+      "song_name": "耐久!炭坑節で踊ろうメドレー",
+      "event_name": "浅草橋マロニエまつり盆踊り",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "be903a5f90d0812e",
+      "song_name": "雨の御堂筋",
+      "event_name": "浅草橋マロニエまつり盆踊り",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "bbbbcf60469bf5f5",
+      "song_name": "黒潮太鼓",
+      "event_name": "浅草橋マロニエまつり盆踊り",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
     },
     {
       "id": "2688c2cbe5935c6e",
@@ -29898,9 +30573,9 @@
       "evidence_count": 0
     },
     {
-      "id": "e8cf2e0fce7e6969",
+      "id": "13bc99336a869433",
       "song_name": "ダンシングヒーロー",
-      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE 2025",
+      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE",
       "venue": "宮下公園",
       "area": "渋谷区",
       "status": "公開済み",
@@ -29915,15 +30590,27 @@
           "url": "https://www.youtube.com/watch?v=t64KZSUomf4",
           "date": "2025-09-28T06:00:47Z",
           "text": "Urban Walk\n渋谷宮下パークBON DANCE 2025 / 治安の悪い渋谷の公園も今は昔!! 人が集まる一大スポットに!! / SHIBUYA MIYASHITA PARK BON DANCE 2025\n#宮下パーク盆踊り #ultrasoul #盆踊り #Bz #渋谷 #宮下公園 #bondance \n\n00:00　渋谷宮下パーク盆踊り\n00:21　夢見る渋谷\n05:55　レクチャー\n07:25　September\n11:57　レクチャー\n12:40　群青\n17:39　炭坑節\n21:21　ギザギザハートの子守歌\n26:20　八木節\n29:53　EZ DO DANCE\n34:26　ultra soul\n37:56　東京音頭\n41:29　レクチャー\n42:29　ダンシングヒーロー\n46:45　Livin' On A Prayer\n\n\n【渋谷宮下パーク盆踊り 2025】\n開催日：2025年9月27日 - 9月28日\n場所："
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=MAsmj7UIKyA",
+          "date": "2025-06-10T12:00:42Z",
+          "text": "Urban Walk\n【GMOシブヤエンタメ祭 盆踊り】「ダンシングヒーロー」荻野目洋子 / #盆踊り SHIBUYA MIYASHITA PARK BON DANCE\n#GMOシブヤエンタメ祭 #ダンシングヒーロー #盆踊り #渋谷\n\n【GMOシブヤエンタメ祭】\n開催日時：2025年5月30日(金)～6月1日(日)\n開催場所：渋谷宮下公園"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=MPf7mKO1nc8",
+          "date": "2025-06-01T15:08:52Z",
+          "text": "Urban Walk\n【GMOシブヤエンタメ祭 盆踊り】「ダンシングヒーロー」荻野目洋子で盆踊り / #盆踊り SHIBUYA MIYASHITA PARK BON DANCE\n#GMOシブヤエンタメ祭 #ダンシングヒーロー #盆踊り #渋谷\n\n【GMOシブヤエンタメ祭】\n開催日時：2025年5月30日(金)～6月1日(日)\n開催場所：渋谷宮下公園"
         }
       ],
       "already_public": true,
-      "evidence_count": 1
+      "evidence_count": 3
     },
     {
-      "id": "19ce81528b2c49d1",
+      "id": "f7c8866312340cb1",
       "song_name": "外国人も一緒になって阿波踊り",
-      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE 2025",
+      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE",
       "venue": "宮下公園",
       "area": "渋谷区",
       "status": "公開済み",
@@ -29936,9 +30623,9 @@
       "evidence_count": 0
     },
     {
-      "id": "93bb85b1a98be704",
+      "id": "b6436dfc046c68bc",
       "song_name": "東京音頭",
-      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE 2025",
+      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE",
       "venue": "宮下公園",
       "area": "渋谷区",
       "status": "公開済み",
@@ -29966,9 +30653,9 @@
       "evidence_count": 2
     },
     {
-      "id": "97d05279de0b81c6",
+      "id": "7206fc270df28a84",
       "song_name": "激混み会場で外国人も踊り",
-      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE 2025",
+      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE",
       "venue": "宮下公園",
       "area": "渋谷区",
       "status": "公開済み",
@@ -29981,9 +30668,9 @@
       "evidence_count": 0
     },
     {
-      "id": "0b6b989d62e2431b",
+      "id": "974c4006875195ae",
       "song_name": "阿波踊り",
-      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE 2025",
+      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE",
       "venue": "宮下公園",
       "area": "渋谷区",
       "status": "公開済み",
@@ -30670,6 +31357,111 @@
       ],
       "already_public": true,
       "evidence_count": 1
+    },
+    {
+      "id": "6a23b1c5b82e50af",
+      "song_name": "かわさき",
+      "event_name": "郡上おどり in 青山",
+      "venue": "秩父宮ラグビー場駐車場",
+      "area": "港区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "30ed63deefcc755e",
+      "song_name": "さわぎ",
+      "event_name": "郡上おどり in 青山",
+      "venue": "秩父宮ラグビー場駐車場",
+      "area": "港区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "e059845282fd5cca",
+      "song_name": "やっちく",
+      "event_name": "郡上おどり in 青山",
+      "venue": "秩父宮ラグビー場駐車場",
+      "area": "港区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "51d6b9f0214ca2fc",
+      "song_name": "三百",
+      "event_name": "郡上おどり in 青山",
+      "venue": "秩父宮ラグビー場駐車場",
+      "area": "港区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "5e64af1ee10d46d9",
+      "song_name": "古調かわさき",
+      "event_name": "郡上おどり in 青山",
+      "venue": "秩父宮ラグビー場駐車場",
+      "area": "港区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "8ef1bdae7e5b80fb",
+      "song_name": "春駒",
+      "event_name": "郡上おどり in 青山",
+      "venue": "秩父宮ラグビー場駐車場",
+      "area": "港区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "9e5aab039a05bf35",
+      "song_name": "甚句",
+      "event_name": "郡上おどり in 青山",
+      "venue": "秩父宮ラグビー場駐車場",
+      "area": "港区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
     },
     {
       "id": "846aad7b30b20799",
@@ -31480,9 +32272,9 @@
       "evidence_count": 0
     },
     {
-      "id": "e3b8e64db75e6225",
+      "id": "428c4e8c3608d718",
       "song_name": "白鳥おどり",
-      "event_name": "「白鳥おどりin池袋」 4月25日(土) 11:00-20:00。",
+      "event_name": "白鳥おどりin池袋",
       "venue": "中池袋公園",
       "area": "豊島区",
       "status": "公開済み",

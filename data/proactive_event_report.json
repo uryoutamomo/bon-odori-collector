@@ -1,60 +1,10 @@
 {
-  "generated_at": "2026-06-19T16:30:20.796907+00:00",
+  "generated_at": "2026-06-20T12:24:02.131426+00:00",
   "year": 2026,
   "items": [
     {
-      "venue": "自由が丘駅前ロータリー 特設会場",
-      "event_name": "自由が丘納涼盆踊り大会",
-      "months": [
-        7
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "花園神社",
-      "event_name": "花園神社",
-      "months": [
-        8
-      ],
-      "status": "confirmed",
-      "evidence": [
-        {
-          "source": "x",
-          "title": "スタリ→新宿の花園神社の盆踊りに居そう\nカルナイ→築地本願寺の盆踊りに居そう",
-          "text": "スタリ→新宿の花園神社の盆踊りに居そう\nカルナイ→築地本願寺の盆踊りに居そう",
-          "url": "https://x.com/anqoo/status/2059564119976825066"
-        }
-      ]
-    },
-    {
-      "venue": "萩中神社",
-      "event_name": "萩中神社",
-      "months": [
-        7
-      ],
-      "status": "confirmed",
-      "evidence": [
-        {
-          "source": "x_proactive",
-          "title": "2026盆踊り情報【糀谷】7/10(金)、11(土)萩中神社\n18:30〜20:30🏮盆踊りを楽しみましょう♪\nhttps://t.co/I05qTe7dIx\n",
-          "text": "2026盆踊り情報【糀谷】7/10(金)、11(土)萩中神社\n18:30〜20:30🏮盆踊りを楽しみましょう♪\nhttps://t.co/I05qTe7dIx\n＃大田区　#商店街　#萩中　#盆踊り https://t.co/6UfOLMjsrO",
-          "url": "https://x.com/otafull/status/2066657006174244873"
-        }
-      ]
-    },
-    {
-      "venue": "行幸通り",
-      "event_name": "丸の内de盆踊り",
-      "months": [
-        7
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "西久保八幡神社",
-      "event_name": "西久保八幡神社",
+      "venue": "久富稲荷神社",
+      "event_name": "新町公民会 盆踊り大会",
       "months": [
         8
       ],
@@ -62,8 +12,8 @@
       "evidence": []
     },
     {
-      "venue": "西仲天祖神社",
-      "event_name": "西糀谷四丁目町会 盆踊り大会",
+      "venue": "二子玉川西地区ふれあい広場(246高架下)",
+      "event_name": "玉川町会盆おどり大会",
       "months": [
         7
       ],
@@ -71,234 +21,8 @@
       "evidence": []
     },
     {
-      "venue": "西糀谷さざんか公園",
-      "event_name": "西糀谷さざんか公園",
-      "months": [
-        7
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "赤坂サカス広場",
-      "event_name": "赤坂サカス広場",
-      "months": [
-        8
-      ],
-      "status": "confirmed",
-      "evidence": [
-        {
-          "source": "x_proactive",
-          "title": "東京音頭　赤坂茜彩「江戸盆踊り」12　2026年3月8日　TBS赤坂サカス広場　東京都港区 https://t.co/ZKZ5r9yfaB @YouTubeより",
-          "text": "東京音頭　赤坂茜彩「江戸盆踊り」12　2026年3月8日　TBS赤坂サカス広場　東京都港区 https://t.co/ZKZ5r9yfaB @YouTubeより\n私が映る時は大抵東京音頭なのでw東京音頭しか踊れないひとみたいだぁ(^-^) 皆さんは同じ曲でも地域によって振りが違うのに完璧に踊れるのは何故なのー？？",
-          "url": "https://x.com/moriron2/status/2031005891089293680"
-        },
-        {
-          "source": "x_proactive",
-          "title": "🏮8 赤坂茜彩「江戸盆踊り」\n2026/3/8 東京都港区赤坂サカス広場\n\n本日2会場目です。飛鳥山は暖かかったですが、一転して寒い中踊りました。\n梯子・見知っ",
-          "text": "🏮8 赤坂茜彩「江戸盆踊り」\n2026/3/8 東京都港区赤坂サカス広場\n\n本日2会場目です。飛鳥山は暖かかったですが、一転して寒い中踊りました。\n梯子・見知った方多数。リードの方々が頼もしく、忘れてる曲でも安心して踊りきれました。\n真室川音頭がやっぱり楽しい。2回も踊れて感無量です！ https://t.co/onGi9TnNzL",
-          "url": "https://x.com/Ma_umojh/status/2030850213779558801"
-        },
-        {
-          "source": "x",
-          "title": "【赤坂茜祭 江戸盆踊り】\n 🏮3/8(日)🕓17:00～19:30(盆踊り)📍赤坂サカス(港区)\n\n赤坂地域の江戸文化イベントで「江戸盆踊り」開催🪭会場は赤坂サ",
-          "text": "【赤坂茜祭 江戸盆踊り】\n 🏮3/8(日)🕓17:00～19:30(盆踊り)📍赤坂サカス(港区)\n\n赤坂地域の江戸文化イベントで「江戸盆踊り」開催🪭会場は赤坂サカス広場、伝統の江戸型山車を輪の中心に踊る✨\n赤坂茜囃子の演奏披露も🎶\n▶参加無料\n\n★イベント全体で和文化プログラム多数★\nhttps://t.co/8SOjJNqD4T",
-          "url": "https://x.com/natsutr_bon/status/2026112012930191816"
-        }
-      ]
-    },
-    {
-      "venue": "足寄町民センター前グラウンド・駐車場",
-      "event_name": "足寄町民センター前グラウンド・駐車場",
-      "months": [
-        8
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "辻堂神台公園",
-      "event_name": "辻堂神台公園",
-      "months": [
-        7
-      ],
-      "status": "confirmed",
-      "evidence": [
-        {
-          "source": "collected",
-          "title": "【藤沢市】辻堂神台公園で藤沢七夕まつり開催！DJ盆踊りと湘南歌唱王 7月4日 - 湘南人",
-          "text": "【藤沢市】辻堂神台公園で藤沢七夕まつり開催！DJ盆踊りと湘南歌唱王 7月4日 - 湘南人",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1KTmowSWxfMGRjRXVFWGlRMlAtZjV1czRsNzRySWJBbk1Kc2s4OTBwcWpaVC1UN3E1V1JIdWQwX09RQUc4ZVl1VDNRSUpfQlR4alU1SGtpb2Z4cGl5Sk81UF9SZ0Y3b0JqcUxPaWs0SWgwTW8?oc=5"
-        },
-        {
-          "source": "x",
-          "title": "藤沢で、願いが叶う「藤沢七夕まつり」開催！\nＤＪ盆踊り大会も　7月4日（土）\n\n辻堂神台公園で大盆踊り大会が開催されます。当日は、DJ CELLYさんと荻野目洋",
-          "text": "藤沢で、願いが叶う「藤沢七夕まつり」開催！\nＤＪ盆踊り大会も　7月4日（土）\n\n辻堂神台公園で大盆踊り大会が開催されます。当日は、DJ CELLYさんと荻野目洋子をゲストに迎え、会場を盛り上げます。また、湘南える新聞社が叶えて欲しい願いごとを募集中ですよ！\nhttps://t.co/dVFFoFIczx https://t.co/zcuT1AHYPj",
-          "url": "https://x.com/yoshinew25/status/2065077488263578078"
-        }
-      ]
-    },
-    {
-      "venue": "野毛六所神社",
-      "event_name": "野毛町会 納涼盆踊り大会",
-      "months": [
-        7
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "金沢百万石まつり 百万石踊り流し会場",
-      "event_name": "金沢百万石まつり 百万石踊り流し会場",
-      "months": [
-        6
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "鎌田天神社",
-      "event_name": "鎌田協和会 鎌田納涼盆踊り",
-      "months": [
-        7
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "長円寺",
-      "event_name": "長円寺",
-      "months": [
-        8
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "隅田公園",
-      "event_name": "奥浅草盆踊り",
-      "months": [
-        6
-      ],
-      "status": "confirmed",
-      "evidence": [
-        {
-          "source": "collected",
-          "title": "隅田公園・山谷堀広場で「奥浅草盆踊り」 サザンの曲も交え参加しやすく（みんなの経済新聞ネットワーク） - Yahoo!ニュース",
-          "text": "隅田公園・山谷堀広場で「奥浅草盆踊り」 サザンの曲も交え参加しやすく（みんなの経済新聞ネットワーク） - Yahoo!ニュース",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1oV1BZVW03OWpwV0x6SHY4aF9mS183SzdzZTBBUl9xNkd5bDJpelJSQmJnR2NUY1Vnam5MZVFWQTQ1MGRiY1drOUhodDMyVFJKM2FneXhCUFpwX3hZSlZTUEt5ek4wX1g3ZGJZVlM0NmlWc0tEOWxzV3pnSUM0T0U?oc=5"
-        },
-        {
-          "source": "collected",
-          "title": "奥浅草盆踊り：過去開催時の様子 - 浅草経済新聞",
-          "text": "奥浅草盆踊り：過去開催時の様子 - 浅草経済新聞",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5QOFBMQWk5QTRFOVBpX2pXbmNwYWxwUE1oQzBGNHBseElROEN6UVk1RHRId0VwcEFrc3k0S1NZMDAzT2FhN1B1U0huVXM0UUdKYzZqYWlR?oc=5"
-        },
-        {
-          "source": "collected",
-          "title": "奥浅草盆踊り：過去開催時の様子 - 浅草経済新聞",
-          "text": "奥浅草盆踊り：過去開催時の様子 - 浅草経済新聞",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE82MUdsS1pIMHFmcUNCUVJTdGI0eXZqZnM0Vmc1b2hhTzB0N1BRSGNLQk9nWnVNM2JwRF9PbVFpSlBqRjFwc3h6NlFiTXRYdGJVRjBwSktn?oc=5"
-        }
-      ]
-    },
-    {
-      "venue": "青山善光寺",
-      "event_name": "青山善光寺",
-      "months": [
-        7
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "靖国神社",
-      "event_name": "みたままつり 納涼民踊のつどい",
-      "months": [
-        7
-      ],
-      "status": "confirmed",
-      "evidence": [
-        {
-          "source": "x",
-          "title": "現在の人気イベントはこちら💡\nNo.1\n7/5(日)の[上野公園] 懐かしの J-POP de 盆踊り  with 大量グルメカー  [昨年No.1夏祭り企画を",
-          "text": "現在の人気イベントはこちら💡\nNo.1\n7/5(日)の[上野公園] 懐かしの J-POP de 盆踊り  with 大量グルメカー  [昨年No.1夏祭り企画をもう1度！]\nhttps://t.co/E9fHMKpvj9\n\nNo.2\n6/13(土)の【20代30代限定】3000株の紫陽花を見に行こ〜🌺🌺🌺\nhttps://t.co/Sb5s60JO9V\n\nNo.3\n6/13(土)の【通常回 30代まで】カラオケオフ会！🎤✨\nhttps://t.co/V2PQMukkPJ\n\nNo.4\n6/13(土)の朝活｜ウォーキング、ついでにゴミ拾い🗑️\nhttps://t.co/up9nuxyozZ\n\nNo.5\n8/8(土)の【学んでから参拝＋博物館へ】靖国神社に行こう（勉強会＋史料館見学）\nhttps://t.co/tOsfZrACaU\n\n#つなげーと #趣味活",
-          "url": "https://x.com/tunagate/status/2065391293539529004"
-        }
-      ]
-    },
-    {
-      "venue": "飛鳥山公園",
-      "event_name": "飛鳥山公園",
-      "months": [
-        3,
-        4,
-        6,
-        7,
-        8
-      ],
-      "status": "confirmed",
-      "evidence": [
-        {
-          "source": "x_proactive",
-          "title": "流転の波止場（山内惠介）　飛鳥山公園五月女会盆踊り14　2026年4月19日　東京都北区 https://t.co/ZNXACJAp6S @YouTubeより\n",
-          "text": "流転の波止場（山内惠介）　飛鳥山公園五月女会盆踊り14　2026年4月19日　東京都北区 https://t.co/ZNXACJAp6S @YouTubeより\nうわ〜！流転の波止場で踊ってる‼️\nこの歌で盆踊りも良いよね😆\nうちの町内の盆踊りでも踊りたいなぁ❣️",
-          "url": "https://x.com/ZPd0DAPBD858628/status/2049172184392691783"
-        },
-        {
-          "source": "x_proactive",
-          "title": "飛鳥山公園五月女会盆踊り　2026年4月19日　東京都北区 \nhttps://t.co/oVBfnxcFwm \n山内惠介さんの『流転の波止場』\n🎶ととん が と",
-          "text": "飛鳥山公園五月女会盆踊り　2026年4月19日　東京都北区 \nhttps://t.co/oVBfnxcFwm \n山内惠介さんの『流転の波止場』\n🎶ととん が とん🎶と  盆踊り✨\n巷に惠介さんの歌が流れる～　嬉しいですね🥰\n＃飛鳥山公園五月女会盆踊り ＃山内惠介 ＃流転の波止場",
-          "url": "https://x.com/5tbDI3lsj65f35J/status/2049031481058820112"
-        },
-        {
-          "source": "x_proactive",
-          "title": "3/8(日)\n赤坂茜彩2026盆踊りへ、飛鳥山公園から梯子しました！\n\nこちらでも今年の新曲2曲、赤坂ナンバー、少年八木節、おこさ節赤坂ver?踊れて良かった。",
-          "text": "3/8(日)\n赤坂茜彩2026盆踊りへ、飛鳥山公園から梯子しました！\n\nこちらでも今年の新曲2曲、赤坂ナンバー、少年八木節、おこさ節赤坂ver?踊れて良かった。非常に寒かったですが踊ラーの熱気で丁度良い☺️\n久しぶりに会う踊り仲間の人にも会えて嬉しい(^^)楽しい踊日、両会場様\nありがとうございました✨ https://t.co/ElGojSuk2s",
-          "url": "https://x.com/bakushin339711/status/2037912056008237266"
-        }
-      ]
-    },
-    {
-      "venue": "駒沢緑泉公園",
-      "event_name": "納涼盆踊り大会",
-      "months": [
-        8
-      ],
-      "status": "confirmed",
-      "evidence": [
-        {
-          "source": "news_proactive",
-          "title": "上士幌町納涼盆踊り大会 - domingo.ne.jp",
-          "text": "上士幌町納涼盆踊り大会 - domingo.ne.jp",
-          "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE50MjR2TE5DLUlfSVdsQkV4U0xJOGtyNkhHVHhyN1ZRQUdqODF1c1E2OEtfN1BMc19yUlowMHZwQXRYWFBXbUVIbA?oc=5"
-        },
-        {
-          "source": "x",
-          "title": "お、日程出たわね！！今年は7/29から8/1か！！ド平日の仕事上がりに行っちゃいたい！！✨٩( ᐛ )و✨\n\n第79回築地本願寺納涼盆踊り大会のおしらせ | 築",
-          "text": "お、日程出たわね！！今年は7/29から8/1か！！ド平日の仕事上がりに行っちゃいたい！！✨٩( ᐛ )و✨\n\n第79回築地本願寺納涼盆踊り大会のおしらせ | 築地本願寺 https://t.co/v3JMKRU1g0",
-          "url": "https://x.com/chika_crunk/status/2067983004191080451"
-        },
-        {
-          "source": "x",
-          "title": "大ちゃんが盆踊りの魅力を360°紹介している素敵な番組でした🔥\n初心者必見、情報満載🙌\n\n【週10でおどる 盆バサダー心酔の盆踊り５選】佐藤智彦さん（大ちゃん）",
-          "text": "大ちゃんが盆踊りの魅力を360°紹介している素敵な番組でした🔥\n初心者必見、情報満載🙌\n\n【週10でおどる 盆バサダー心酔の盆踊り５選】佐藤智彦さん（大ちゃん）／昭和の名曲と食を楽しむ「築地本願寺納涼盆踊り大会」／下駄がマストの「郡上... https://t.co/Aav9iLs9Aj @YouTubeより",
-          "url": "https://x.com/dororon_eight/status/2067598118498226586"
-        }
-      ]
-    },
-    {
-      "venue": "駒澤大学 駒沢キャンパス",
-      "event_name": "駒澤大学同窓会東京都支部・営友会",
-      "months": [
-        8
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "鮫洲入江広場公園",
-      "event_name": "鮫洲入江広場公園 ゆり園盆踊り",
+      "venue": "五反野コミュニティ公園",
+      "event_name": "西綾瀬町会 夏祭り盆踊り大会",
       "months": [
         6
       ],
@@ -306,27 +30,15 @@
       "evidence": [
         {
           "source": "x",
-          "title": "鮫洲入江広場公園、例年6月に百合イベントがあって、いろんなプログラムの一つに盆踊りがあったのは知っていたけど、練習会でのアナウンスによると、それが「地域の盆踊り",
-          "text": "鮫洲入江広場公園、例年6月に百合イベントがあって、いろんなプログラムの一つに盆踊りがあったのは知っていたけど、練習会でのアナウンスによると、それが「地域の盆踊り」に格上げ、というか、昔やってたけど今はなくなってしまった鮫洲盆踊りの復活、という位置づけになるらしい。",
-          "url": "https://x.com/7376GgBw1gwxUM3/status/2042058785888608304"
-        },
-        {
-          "source": "x",
-          "title": "昨日の鮫洲入江広場公園ゆり園盆踊りの帰り\n公園外の歩道を歩いていたら\n最後のマイクアナウンスしていた\nお姉さんから声を掛けられた\n「どうして印西のTシャツ着てる",
-          "text": "昨日の鮫洲入江広場公園ゆり園盆踊りの帰り\n公園外の歩道を歩いていたら\n最後のマイクアナウンスしていた\nお姉さんから声を掛けられた\n「どうして印西のTシャツ着てるんですか？！」\n「印西音頭って言う踊りが好きなんですよ！」\n「私、印西なんです！」\n「え！印西音頭知ってます？」\n「知りません！",
-          "url": "https://x.com/rollingasahi/status/2063428301197299947"
-        },
-        {
-          "source": "x",
-          "title": "ユリ祭り　今年も歌います\n\n大井町音頭 歌います\n踊ってね💃🏮\n\n6月6日(土)\n\n品川区鮫洲 ゆり園\nゆり2万2千本鑑賞ラブウィーク2026\n\n鮫洲入江広場公",
-          "text": "ユリ祭り　今年も歌います\n\n大井町音頭 歌います\n踊ってね💃🏮\n\n6月6日(土)\n\n品川区鮫洲 ゆり園\nゆり2万2千本鑑賞ラブウィーク2026\n\n鮫洲入江広場公園\n\n10:00〜琴演奏\n11:00〜ウクレレ\n🌷12:00〜 A for-Real🌷\n13:00〜華湖 踊り\n13:30〜岡島寿幸\n14:30〜晴盆 盆踊り\n\n品川区東大井1-16-15\n鮫洲駅5分 https://t.co/vvM58MgZh7",
-          "url": "https://x.com/mizu516AforReal/status/2062799802266710143"
+          "title": "6月20日（土）\n板橋区民的にほ\n目黒区より足立区の方が近いかしら？\n西綾瀬町会夏まつり盆踊り\nin五反野コミュニティ公園\nココを予定しておりますが\nまあ、雨次",
+          "text": "6月20日（土）\n板橋区民的にほ\n目黒区より足立区の方が近いかしら？\n西綾瀬町会夏まつり盆踊り\nin五反野コミュニティ公園\nココを予定しておりますが\nまあ、雨次第😂\n予報は小雨っぽいし\n小雨決行っぽいし😂\n果たして😂\n#足立区\n#盆踊り https://t.co/JN9OVejPsB",
+          "url": "https://x.com/rollingasahi/status/2067923416800530710"
         }
       ]
     },
     {
-      "venue": "鳥山池公園",
-      "event_name": "鳥山池公園",
+      "venue": "京橋エドグラン 京橋中央ひろば",
+      "event_name": "京橋エドグラン 京橋中央ひろば",
       "months": [
         8
       ],
@@ -334,18 +46,8 @@
       "evidence": []
     },
     {
-      "venue": "鶴川団地セントラル商店街",
-      "event_name": "鶴川団地セントラル商店街",
-      "months": [
-        8,
-        10
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "鶴巻小学校",
-      "event_name": "鶴巻小学校 納涼盆踊り大会＆子ども祭り",
+      "venue": "京王線芦花公園駅前ロータリー(南口)",
+      "event_name": "芦花公園駅前盆踊り大会",
       "months": [
         7
       ],
@@ -353,8 +55,8 @@
       "evidence": []
     },
     {
-      "venue": "JR目黒駅西口前",
-      "event_name": "地域のふれあい第37回盆踊り大会",
+      "venue": "八幡小学校",
+      "event_name": "親子盆踊り大会",
       "months": [
         7
       ],
@@ -362,8 +64,8 @@
       "evidence": []
     },
     {
-      "venue": "JR苅田駅前広場",
-      "event_name": "JR苅田駅前広場",
+      "venue": "北新宿公園",
+      "event_name": "柏木地区6町会盆踊り大会",
       "months": [
         8
       ],
@@ -371,8 +73,17 @@
       "evidence": []
     },
     {
-      "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
-      "event_name": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+      "venue": "北柏木公園",
+      "event_name": "北新宿四丁目 盆踊り大会",
+      "months": [
+        7
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "千歳船橋駅前広場",
+      "event_name": "船橋会 盆踊り",
       "months": [
         8
       ],
@@ -380,17 +91,17 @@
       "evidence": []
     },
     {
-      "venue": "さかもと朝顔広場（旧坂本小学校跡地）",
-      "event_name": "坂本町会 納涼祭",
+      "venue": "四谷ひろばグラウンド（旧四谷第四小学校）",
+      "event_name": "第25回 四谷納涼踊り大会",
       "months": [
-        8
+        7
       ],
       "status": "unconfirmed",
       "evidence": []
     },
     {
-      "venue": "ふるさと千川ひろば(千川小学校校庭跡地)",
-      "event_name": "第34回ふるさと千川 まつり",
+      "venue": "国立旭通り 弥生ビル東側",
+      "event_name": "国立旭通り 弥生ビル東側",
       "months": [
         6
       ],
@@ -398,26 +109,8 @@
       "evidence": []
     },
     {
-      "venue": "ハマサイト前広場・汐留ビルディング外構",
-      "event_name": "第16回ハマサイトの夏祭り",
-      "months": [
-        8
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "フナイリバ（目黒川船入場広場）",
-      "event_name": "中目黒盆踊り大会 2025",
-      "months": [
-        8
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "三峰公園",
-      "event_name": "納涼夏祭り大会",
+      "venue": "城南小学校",
+      "event_name": "城南小学校",
       "months": [
         7
       ],
@@ -425,8 +118,8 @@
       "evidence": []
     },
     {
-      "venue": "上北沢小学校",
-      "event_name": "上北沢の納涼盆踊り",
+      "venue": "埠頭公園（港区芝浦港南）",
+      "event_name": "埠頭公園（港区芝浦港南）",
       "months": [
         8
       ],
@@ -434,8 +127,51 @@
       "evidence": []
     },
     {
-      "venue": "上野原市役所センタープラザ（もみじホール）",
-      "event_name": "上野原市役所センタープラザ（もみじホール）",
+      "venue": "増上寺（大殿前広場）",
+      "event_name": "増上寺（大殿前広場）",
+      "months": [
+        7
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "大井町駅前中央通り",
+      "event_name": "第71回大井どんたく夏まつり 初日 盆踊り",
+      "months": [
+        8
+      ],
+      "status": "confirmed",
+      "evidence": [
+        {
+          "source": "x",
+          "title": "【第72回大井どんたく夏まつり】\n🏮8/22(土)23(日)🕓14:00-20:00📍大井町駅周辺(品川区)\n\n大井町駅前中央通りを会場に開かれる、大井町の夏の",
+          "text": "【第72回大井どんたく夏まつり】\n🏮8/22(土)23(日)🕓14:00-20:00📍大井町駅周辺(品川区)\n\n大井町駅前中央通りを会場に開かれる、大井町の夏の一大イベント✨\nご当地曲大井どんたく音頭を踊る盆踊りタイムは22日(土)18:00-20:00(予定)\nほかにも和太鼓やダンス、LIVEなど♪\nhttps://t.co/Bft4W7hrzR",
+          "url": "https://x.com/natsutr_bon/status/2067121332190683529"
+        }
+      ]
+    },
+    {
+      "venue": "大口公園",
+      "event_name": "大口公園",
+      "months": [
+        7
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "大森南4丁目公園",
+      "event_name": "森ヶ崎自治会",
+      "months": [
+        7
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "大豆戸八杉神社",
+      "event_name": "大豆戸八杉神社",
       "months": [
         8
       ],
@@ -443,8 +179,8 @@
       "evidence": []
     },
     {
-      "venue": "下代田児童遊園",
-      "event_name": "下代田東子供祭り・納涼祭り",
+      "venue": "-両国-江戸NOREN",
+      "event_name": "-両国-江戸NOREN",
       "months": [
         7
       ],
@@ -452,10 +188,154 @@
       "evidence": []
     },
     {
-      "venue": "下落合公園",
-      "event_name": "下落合四丁目町会 盆踊り大会",
+      "venue": "JR恵比寿駅西口広場",
+      "event_name": "JR恵比寿駅西口広場",
       "months": [
         7
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "SHIBUYA109前〜道玄坂・文化村通り一帯",
+      "event_name": "SHIBUYA109前〜道玄坂・文化村通り一帯",
+      "months": [
+        8
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "りそな銀行神楽坂支店前",
+      "event_name": "りそな銀行神楽坂支店前",
+      "months": [
+        7
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "中央通り（銀座1丁目〜8丁目）",
+      "event_name": "中央通り（銀座1丁目〜8丁目）",
+      "months": [
+        8
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "大阪・関西万博 ポップアップステージ北",
+      "event_name": "大阪・関西万博 ポップアップステージ北",
+      "months": [
+        7
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "天妙国寺",
+      "event_name": "品川第二地区 区民まつり・品川青年会 盆踊り大会（天妙国寺）",
+      "months": [
+        7
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "奥沢小学校",
+      "event_name": "奥沢交和会",
+      "months": [
+        7
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "子安八幡神社",
+      "event_name": "納涼踊り大会",
+      "months": [
+        7
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "宇奈根氷川神社",
+      "event_name": "宇奈根町会 盆踊り大会",
+      "months": [
+        7
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "小山台小学校",
+      "event_name": "小山台小学校",
+      "months": [
+        7
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "小田急線喜多見駅前 南口広場",
+      "event_name": "喜多見盆踊り大会",
+      "months": [
+        7
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "小田急線祖師ヶ谷大蔵駅前広場",
+      "event_name": "祖師谷商店街振興組合",
+      "months": [
+        7
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "岸根貴雲寺",
+      "event_name": "岸根貴雲寺",
+      "months": [
+        8
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "市野倉南児童公園",
+      "event_name": "市野倉南町会 盆踊り",
+      "months": [
+        8
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "希望ヶ丘団地 テニスコート",
+      "event_name": "希望ヶ丘団地夏まつり",
+      "months": [
+        7
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "廻沢稲荷神社",
+      "event_name": "千歳台廻沢地区盆踊り",
+      "months": [
+        7
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "御旅公園",
+      "event_name": "御旅公園",
+      "months": [
+        8
       ],
       "status": "unconfirmed",
       "evidence": []
