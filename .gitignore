@@ -11,5 +11,8 @@ data/x_voices_experiment.json
 # ローカル再生成のRDB/証拠スナップショット
 data/*.sqlite
 
+# ローカル実行ログ
+logs/*.log
+
 __pycache__/
 *.pyc

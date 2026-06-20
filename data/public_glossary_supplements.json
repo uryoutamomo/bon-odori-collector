@@ -1,0 +1,75 @@
+{
+  "generated_by": "weekly_harvest_x_candidates",
+  "items": [
+    {
+      "term": "ハシゴ",
+      "reading": "",
+      "description": "複数会場を同日または連続して巡る行動。梯子とも表記する。",
+      "tags": [
+        "参加・行動",
+        "参加報告"
+      ],
+      "category": "行動語",
+      "category_label": "参加・行動",
+      "roles": [
+        "参加報告"
+      ],
+      "status": "候補",
+      "confidence": "X候補",
+      "source_count": 1
+    },
+    {
+      "term": "盆オフ",
+      "reading": "",
+      "description": "盆踊りを軸にしたオフ会・集まりの略称。",
+      "tags": [
+        "参加・行動",
+        "界隈語",
+        "参加報告"
+      ],
+      "category": "行動語",
+      "category_label": "参加・行動",
+      "roles": [
+        "参加報告"
+      ],
+      "status": "候補",
+      "confidence": "X候補",
+      "source_count": 1
+    },
+    {
+      "term": "盆活",
+      "reading": "",
+      "description": "盆踊り関連の参加・調査・練習などの活動。",
+      "tags": [
+        "参加・行動",
+        "界隈語",
+        "参加報告"
+      ],
+      "category": "行動語",
+      "category_label": "参加・行動",
+      "roles": [
+        "参加報告"
+      ],
+      "status": "候補",
+      "confidence": "X候補",
+      "source_count": 1
+    },
+    {
+      "term": "おどりはだり",
+      "reading": "",
+      "description": "踊りたい気持ちが強くなること、または踊りに行きたくなる状態を指す界隈語。",
+      "tags": [
+        "参加・行動",
+        "界隈語"
+      ],
+      "category": "行動語",
+      "category_label": "参加・行動",
+      "roles": [
+        "参加報告"
+      ],
+      "status": "候補",
+      "confidence": "X候補",
+      "source_count": 1
+    }
+  ]
+}

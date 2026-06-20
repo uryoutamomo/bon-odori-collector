@@ -1,0 +1,527 @@
+{
+  "generated_by": "audit_unified_model_v2.py",
+  "generated_at": "2026-06-19T11:48:18.484597+00:00",
+  "sources": {
+    "observations": "data/event_occurrence_observations.json",
+    "rdb": "data/bon_odori.sqlite"
+  },
+  "observation_audit": {
+    "summary": {
+      "observation_count": 48,
+      "series_count": 28,
+      "issue_count": 30,
+      "issues_by_type": {
+        "observation_id_mismatch": 24,
+        "event_name_year_mismatch": 6
+      },
+      "issues_by_severity": {
+        "medium": 24,
+        "review": 6
+      }
+    },
+    "issues": [
+      {
+        "issue_type": "observation_id_mismatch",
+        "severity": "medium",
+        "description": "Observation id is not derived from series_key, year, and observed_dates.",
+        "payload": {
+          "observation_id": "a7c94f5754b5fbd3",
+          "expected_observation_id": "95f0d9fb74043ce2",
+          "series_key": "f323875e8c97",
+          "year": 2023,
+          "observed_dates": [
+            "2023-09-06"
+          ]
+        }
+      },
+      {
+        "issue_type": "observation_id_mismatch",
+        "severity": "medium",
+        "description": "Observation id is not derived from series_key, year, and observed_dates.",
+        "payload": {
+          "observation_id": "ac5d792eca0e5754",
+          "expected_observation_id": "fef52fa242544aee",
+          "series_key": "b727adc26276",
+          "year": 2023,
+          "observed_dates": [
+            "2023-07-13",
+            "2023-07-15"
+          ]
+        }
+      },
+      {
+        "issue_type": "observation_id_mismatch",
+        "severity": "medium",
+        "description": "Observation id is not derived from series_key, year, and observed_dates.",
+        "payload": {
+          "observation_id": "e58714c9d972f33f",
+          "expected_observation_id": "037de4056b65cc1f",
+          "series_key": "6fa7aa7ac980",
+          "year": 2023,
+          "observed_dates": [
+            "2023-07-02"
+          ]
+        }
+      },
+      {
+        "issue_type": "observation_id_mismatch",
+        "severity": "medium",
+        "description": "Observation id is not derived from series_key, year, and observed_dates.",
+        "payload": {
+          "observation_id": "d86346e5c130b51a",
+          "expected_observation_id": "92df6283074d3dad",
+          "series_key": "d17bb14b4079",
+          "year": 2023,
+          "observed_dates": [
+            "2023-06-13"
+          ]
+        }
+      },
+      {
+        "issue_type": "observation_id_mismatch",
+        "severity": "medium",
+        "description": "Observation id is not derived from series_key, year, and observed_dates.",
+        "payload": {
+          "observation_id": "c7d8559b7af0eb8a",
+          "expected_observation_id": "f518bc11b2428ba4",
+          "series_key": "3152b3b0e9fd",
+          "year": 2023,
+          "observed_dates": [
+            "2023-08-22"
+          ]
+        }
+      },
+      {
+        "issue_type": "observation_id_mismatch",
+        "severity": "medium",
+        "description": "Observation id is not derived from series_key, year, and observed_dates.",
+        "payload": {
+          "observation_id": "42d6c748cdb4477e",
+          "expected_observation_id": "d5904433b65cd119",
+          "series_key": "734d7186ca67",
+          "year": 2023,
+          "observed_dates": [
+            "2023-07-06",
+            "2023-07-08"
+          ]
+        }
+      },
+      {
+        "issue_type": "observation_id_mismatch",
+        "severity": "medium",
+        "description": "Observation id is not derived from series_key, year, and observed_dates.",
+        "payload": {
+          "observation_id": "5e38ae740179c50f",
+          "expected_observation_id": "75930086ff15b044",
+          "series_key": "30e9a87bdb27",
+          "year": 2023,
+          "observed_dates": [
+            "2023-07-27"
+          ]
+        }
+      },
+      {
+        "issue_type": "observation_id_mismatch",
+        "severity": "medium",
+        "description": "Observation id is not derived from series_key, year, and observed_dates.",
+        "payload": {
+          "observation_id": "bf1e399806cc72ad",
+          "expected_observation_id": "ddfd7320e1f31b3d",
+          "series_key": "b354f118cfbc",
+          "year": 2023,
+          "observed_dates": [
+            "2023-08-03"
+          ]
+        }
+      },
+      {
+        "issue_type": "observation_id_mismatch",
+        "severity": "medium",
+        "description": "Observation id is not derived from series_key, year, and observed_dates.",
+        "payload": {
+          "observation_id": "903be26b351a9911",
+          "expected_observation_id": "9f20a5eefb36cf3f",
+          "series_key": "aca270553085",
+          "year": 2023,
+          "observed_dates": [
+            "2023-08-10",
+            "2023-08-12"
+          ]
+        }
+      },
+      {
+        "issue_type": "observation_id_mismatch",
+        "severity": "medium",
+        "description": "Observation id is not derived from series_key, year, and observed_dates.",
+        "payload": {
+          "observation_id": "05279db2439d1689",
+          "expected_observation_id": "ee276e36265d38b1",
+          "series_key": "0870cb15867a",
+          "year": 2023,
+          "observed_dates": [
+            "2023-07-31"
+          ]
+        }
+      },
+      {
+        "issue_type": "observation_id_mismatch",
+        "severity": "medium",
+        "description": "Observation id is not derived from series_key, year, and observed_dates.",
+        "payload": {
+          "observation_id": "ebfad4c75b399d5a",
+          "expected_observation_id": "1b1dd57562119fa1",
+          "series_key": "b1749efb9aa6",
+          "year": 2023,
+          "observed_dates": [
+            "2023-06-15",
+            "2023-06-16"
+          ]
+        }
+      },
+      {
+        "issue_type": "event_name_year_mismatch",
+        "severity": "review",
+        "description": "Event name contains a year that differs from the observed occurrence year.",
+        "payload": {
+          "observation_id": "ebfad4c75b399d5a",
+          "event_name": "郡上おどり in 青山 2025",
+          "year": 2023,
+          "name_years": [
+            2025
+          ],
+          "date_start": "2023-06-15"
+        }
+      },
+      {
+        "issue_type": "observation_id_mismatch",
+        "severity": "medium",
+        "description": "Observation id is not derived from series_key, year, and observed_dates.",
+        "payload": {
+          "observation_id": "a63083159e4ff236",
+          "expected_observation_id": "07f1b69b24c8f44c",
+          "series_key": "57b4ce72372b",
+          "year": 2023,
+          "observed_dates": [
+            "2023-06-15",
+            "2023-06-16"
+          ]
+        }
+      },
+      {
+        "issue_type": "event_name_year_mismatch",
+        "severity": "review",
+        "description": "Event name contains a year that differs from the observed occurrence year.",
+        "payload": {
+          "observation_id": "a63083159e4ff236",
+          "event_name": "郡上おどり in 青山 2026",
+          "year": 2023,
+          "name_years": [
+            2026
+          ],
+          "date_start": "2023-06-15"
+        }
+      },
+      {
+        "issue_type": "observation_id_mismatch",
+        "severity": "medium",
+        "description": "Observation id is not derived from series_key, year, and observed_dates.",
+        "payload": {
+          "observation_id": "0b16b4543c1d85be",
+          "expected_observation_id": "de08035efc7e094b",
+          "series_key": "f323875e8c97",
+          "year": 2024,
+          "observed_dates": [
+            "2024-08-28"
+          ]
+        }
+      },
+      {
+        "issue_type": "observation_id_mismatch",
+        "severity": "medium",
+        "description": "Observation id is not derived from series_key, year, and observed_dates.",
+        "payload": {
+          "observation_id": "093f293c00e81050",
+          "expected_observation_id": "d2b3e7bab5b0fd6b",
+          "series_key": "b727adc26276",
+          "year": 2024,
+          "observed_dates": [
+            "2024-07-15"
+          ]
+        }
+      },
+      {
+        "issue_type": "observation_id_mismatch",
+        "severity": "medium",
+        "description": "Observation id is not derived from series_key, year, and observed_dates.",
+        "payload": {
+          "observation_id": "60c7771d12b422d8",
+          "expected_observation_id": "dc07f91c8c98e472",
+          "series_key": "c9953a983451",
+          "year": 2024,
+          "observed_dates": [
+            "2024-08-17"
+          ]
+        }
+      },
+      {
+        "issue_type": "observation_id_mismatch",
+        "severity": "medium",
+        "description": "Observation id is not derived from series_key, year, and observed_dates.",
+        "payload": {
+          "observation_id": "d769da7140780732",
+          "expected_observation_id": "82acc46354e3aa16",
+          "series_key": "5be1649191ae",
+          "year": 2024,
+          "observed_dates": [
+            "2024-07-26"
+          ]
+        }
+      },
+      {
+        "issue_type": "observation_id_mismatch",
+        "severity": "medium",
+        "description": "Observation id is not derived from series_key, year, and observed_dates.",
+        "payload": {
+          "observation_id": "452c6a793fb3b445",
+          "expected_observation_id": "118f1904991baabe",
+          "series_key": "6fa7aa7ac980",
+          "year": 2024,
+          "observed_dates": [
+            "2024-06-29"
+          ]
+        }
+      },
+      {
+        "issue_type": "observation_id_mismatch",
+        "severity": "medium",
+        "description": "Observation id is not derived from series_key, year, and observed_dates.",
+        "payload": {
+          "observation_id": "b50c8b0ee4e7422c",
+          "expected_observation_id": "d9e9d36254cceba8",
+          "series_key": "d17bb14b4079",
+          "year": 2024,
+          "observed_dates": [
+            "2024-06-13",
+            "2024-06-15"
+          ]
+        }
+      },
+      {
+        "issue_type": "observation_id_mismatch",
+        "severity": "medium",
+        "description": "Observation id is not derived from series_key, year, and observed_dates.",
+        "payload": {
+          "observation_id": "3825abd528e2edc7",
+          "expected_observation_id": "9ee6e5ad270edf39",
+          "series_key": "3152b3b0e9fd",
+          "year": 2024,
+          "observed_dates": [
+            "2024-08-21"
+          ]
+        }
+      },
+      {
+        "issue_type": "observation_id_mismatch",
+        "severity": "medium",
+        "description": "Observation id is not derived from series_key, year, and observed_dates.",
+        "payload": {
+          "observation_id": "ca7e2062e653d832",
+          "expected_observation_id": "eb8dfa77bc25a943",
+          "series_key": "734d7186ca67",
+          "year": 2024,
+          "observed_dates": [
+            "2024-07-05"
+          ]
+        }
+      },
+      {
+        "issue_type": "observation_id_mismatch",
+        "severity": "medium",
+        "description": "Observation id is not derived from series_key, year, and observed_dates.",
+        "payload": {
+          "observation_id": "e50f081d8be1b6fb",
+          "expected_observation_id": "282fc4f632c1e44f",
+          "series_key": "bcbfa4cac9e3",
+          "year": 2024,
+          "observed_dates": [
+            "2024-07-13",
+            "2024-07-15"
+          ]
+        }
+      },
+      {
+        "issue_type": "observation_id_mismatch",
+        "severity": "medium",
+        "description": "Observation id is not derived from series_key, year, and observed_dates.",
+        "payload": {
+          "observation_id": "e1558ac87a836c1c",
+          "expected_observation_id": "3d4f5dcd89a7724e",
+          "series_key": "aca270553085",
+          "year": 2024,
+          "observed_dates": [
+            "2024-08-09"
+          ]
+        }
+      },
+      {
+        "issue_type": "observation_id_mismatch",
+        "severity": "medium",
+        "description": "Observation id is not derived from series_key, year, and observed_dates.",
+        "payload": {
+          "observation_id": "37bfe429d1174d03",
+          "expected_observation_id": "06846e9bc840865d",
+          "series_key": "b1749efb9aa6",
+          "year": 2024,
+          "observed_dates": [
+            "2024-06-14"
+          ]
+        }
+      },
+      {
+        "issue_type": "event_name_year_mismatch",
+        "severity": "review",
+        "description": "Event name contains a year that differs from the observed occurrence year.",
+        "payload": {
+          "observation_id": "37bfe429d1174d03",
+          "event_name": "郡上おどり in 青山 2025",
+          "year": 2024,
+          "name_years": [
+            2025
+          ],
+          "date_start": "2024-06-14"
+        }
+      },
+      {
+        "issue_type": "observation_id_mismatch",
+        "severity": "medium",
+        "description": "Observation id is not derived from series_key, year, and observed_dates.",
+        "payload": {
+          "observation_id": "8a47b212c99767d1",
+          "expected_observation_id": "1f373bd0dd2f7d70",
+          "series_key": "57b4ce72372b",
+          "year": 2024,
+          "observed_dates": [
+            "2024-06-14"
+          ]
+        }
+      },
+      {
+        "issue_type": "event_name_year_mismatch",
+        "severity": "review",
+        "description": "Event name contains a year that differs from the observed occurrence year.",
+        "payload": {
+          "observation_id": "8a47b212c99767d1",
+          "event_name": "郡上おどり in 青山 2026",
+          "year": 2024,
+          "name_years": [
+            2026
+          ],
+          "date_start": "2024-06-14"
+        }
+      },
+      {
+        "issue_type": "event_name_year_mismatch",
+        "severity": "review",
+        "description": "Event name contains a year that differs from the observed occurrence year.",
+        "payload": {
+          "observation_id": "11d9adcaaa224d06",
+          "event_name": "SHIBUYA MIYASHITA PARK BON DANCE 2026",
+          "year": 2025,
+          "name_years": [
+            2026
+          ],
+          "date_start": "2025-05-30"
+        }
+      },
+      {
+        "issue_type": "event_name_year_mismatch",
+        "severity": "review",
+        "description": "Event name contains a year that differs from the observed occurrence year.",
+        "payload": {
+          "observation_id": "986a0d139718fdfa",
+          "event_name": "SHIBUYA MIYASHITA PARK BON DANCE 2026",
+          "year": 2025,
+          "name_years": [
+            2026
+          ],
+          "date_start": "2025-09-27"
+        }
+      }
+    ]
+  },
+  "rdb_audit": {
+    "summary": {
+      "database": "data/bon_odori.sqlite",
+      "table_counts": {
+        "events": 214,
+        "venues": 207,
+        "event_venues": 241,
+        "songs": 141,
+        "dance_variants": 0,
+        "event_song_links": 373,
+        "evidence_items": 8449,
+        "event_evidence_links": 766,
+        "song_evidence_links": 36641,
+        "review_queue": 29500,
+        "rdb_issues": 1
+      },
+      "integrity_checks": {
+        "event_venues_missing_event": 36,
+        "event_venues_missing_venue": 0,
+        "event_evidence_missing_event": 0,
+        "event_evidence_missing_evidence": 0,
+        "event_song_missing_event": 0,
+        "song_evidence_missing_evidence": 3117,
+        "empty_event_name": 0,
+        "empty_venue_name": 0,
+        "empty_song_name": 0
+      },
+      "review_statuses": {
+        "song_not_in_master": 26941,
+        "ignore": 1020,
+        "matched_existing_event": 559,
+        "review_video_evidence": 348,
+        "out_of_scope": 240,
+        "already_reflected": 207,
+        "needs_official_confirmation": 155,
+        "promote": 15,
+        "watch": 13,
+        "reject": 2
+      },
+      "event_link_statuses": {
+        "matched_existing_event": 559,
+        "already_reflected": 207
+      },
+      "song_link_statuses": {
+        "unmatched_song": 26941,
+        "matched_song": 9700
+      },
+      "issue_count": 2,
+      "issues_by_type": {
+        "event_venues_missing_event": 1,
+        "song_evidence_missing_evidence": 1
+      },
+      "issues_by_severity": {
+        "high": 2
+      }
+    },
+    "issues": [
+      {
+        "issue_type": "event_venues_missing_event",
+        "severity": "high",
+        "description": "RDB integrity check failed: event_venues_missing_event.",
+        "payload": {
+          "count": 36
+        }
+      },
+      {
+        "issue_type": "song_evidence_missing_evidence",
+        "severity": "high",
+        "description": "RDB integrity check failed: song_evidence_missing_evidence.",
+        "payload": {
+          "count": 3117
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "Name": "AWSManagedRulesAmazonIpReputationList",
+    "Priority": 0,
+    "Statement": {
+      "ManagedRuleGroupStatement": {
+        "VendorName": "AWS",
+        "Name": "AWSManagedRulesAmazonIpReputationList"
+      }
+    },
+    "OverrideAction": {
+      "None": {}
+    },
+    "VisibilityConfig": {
+      "SampledRequestsEnabled": true,
+      "CloudWatchMetricsEnabled": true,
+      "MetricName": "AWSManagedRulesAmazonIpReputationList"
+    }
+  },
+  {
+    "Name": "AWSManagedRulesCommonRuleSet",
+    "Priority": 1,
+    "Statement": {
+      "ManagedRuleGroupStatement": {
+        "VendorName": "AWS",
+        "Name": "AWSManagedRulesCommonRuleSet"
+      }
+    },
+    "OverrideAction": {
+      "None": {}
+    },
+    "VisibilityConfig": {
+      "SampledRequestsEnabled": true,
+      "CloudWatchMetricsEnabled": true,
+      "MetricName": "AWSManagedRulesCommonRuleSet"
+    }
+  },
+  {
+    "Name": "AWSManagedRulesKnownBadInputsRuleSet",
+    "Priority": 2,
+    "Statement": {
+      "ManagedRuleGroupStatement": {
+        "VendorName": "AWS",
+        "Name": "AWSManagedRulesKnownBadInputsRuleSet"
+      }
+    },
+    "OverrideAction": {
+      "None": {}
+    },
+    "VisibilityConfig": {
+      "SampledRequestsEnabled": true,
+      "CloudWatchMetricsEnabled": true,
+      "MetricName": "AWSManagedRulesKnownBadInputsRuleSet"
+    }
+  }
+]
