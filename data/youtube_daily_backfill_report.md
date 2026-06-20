@@ -1,8 +1,8 @@
 # YouTube日次バックフィル
 
-- generated_at: 2026-06-20T09:51:21.677272+00:00
+- generated_at: 2026-06-20T09:51:26.996032+00:00
 - status: no_rows
-- month: 6
+- month: 7
 - selected_rows: 0
 - remaining_rows_before: 0
 - estimated_search_calls: 0
