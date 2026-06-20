@@ -152,6 +152,36 @@ Resources:
                 Effect: Allow
                 Action: cloudfront:CreateInvalidation
                 Resource: arn:aws:cloudfront::169805602203:distribution/ERA76BJB7WLEN
+        - PolicyName: StaticSiteCustomDomainAccess
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Sid: ReadRoute53HostedZones
+                Effect: Allow
+                Action:
+                  - route53:GetHostedZone
+                  - route53:ListHostedZonesByName
+                Resource: "*"
+              - Sid: WriteBonsukeDomainRecords
+                Effect: Allow
+                Action:
+                  - route53:ChangeResourceRecordSets
+                  - route53:ListResourceRecordSets
+                Resource: arn:aws:route53:::hostedzone/*
+              - Sid: ManageBonsukeAcmCertificate
+                Effect: Allow
+                Action:
+                  - acm:DescribeCertificate
+                  - acm:ListCertificates
+                  - acm:RequestCertificate
+                Resource: "*"
+              - Sid: ManageBonsukeCloudFrontDomain
+                Effect: Allow
+                Action:
+                  - cloudfront:GetDistribution
+                  - cloudfront:GetDistributionConfig
+                  - cloudfront:UpdateDistribution
+                Resource: arn:aws:cloudfront::169805602203:distribution/ERA76BJB7WLEN
       Tags:
         - Key: Project
           Value: bon-odori-collector
