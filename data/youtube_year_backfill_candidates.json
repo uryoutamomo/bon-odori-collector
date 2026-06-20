@@ -1,17 +1,17 @@
 {
   "generated_by": "harvest_youtube_year_backfill.py",
-  "generated_at": "2026-06-20T09:50:59.786109+00:00",
+  "generated_at": "2026-06-20T09:51:08.491127+00:00",
   "source": "data/youtube_year_backfill_queue.json",
-  "selected_queue_count": 157,
+  "selected_queue_count": 164,
   "queue_offset": 0,
   "max_results_per_query": 5,
-  "api_request_count_estimate": 21,
+  "api_request_count_estimate": 15,
   "summary": {
-    "candidate_count": 517,
+    "candidate_count": 523,
     "status_counts": {
       "review": 45,
       "strong": 172,
-      "weak": 300
+      "weak": 306
     },
     "strong_count": 172,
     "review_count": 45
@@ -3630,6 +3630,37 @@
       "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
     },
     {
+      "queue_id": "youtube-year-backfill:11b62a9521ff2ce7",
+      "target_year": 2023,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "森ヶ崎自治会",
+      "venue": "大森南4丁目公園",
+      "area": "大田区",
+      "series_key": "d9d8d002887f",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-07-29",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-29"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.6,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "森ヶ崎自治会 大森南4丁目公園 大田区 2023 盆踊り",
+        "森ヶ崎自治会 2023 YouTube 盆踊り",
+        "大森南4丁目公園 2023 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
       "queue_id": "youtube-year-backfill:7bd3c8e1b91035d9",
       "target_year": 2023,
       "priority_score": 8,
@@ -3939,6 +3970,37 @@
         "萩中町会・オーベルグランディオ萩中自治会・新宿東町会「盆踊り大会」 萩中神社 大田区 2023 盆踊り",
         "萩中町会・オーベルグランディオ萩中自治会・新宿東町会「盆踊り大会」 2023 YouTube 盆踊り",
         "萩中神社 2023 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:6630b320cdbcaa50",
+      "target_year": 2023,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "西糀谷三丁目町会「納涼盆踊り大会」",
+      "venue": "西糀谷さざんか公園",
+      "area": "大田区",
+      "series_key": "e9e9a31b74f3",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-07-28",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-28"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.68,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "西糀谷三丁目町会「納涼盆踊り大会」 西糀谷さざんか公園 大田区 2023 盆踊り",
+        "西糀谷三丁目町会「納涼盆踊り大会」 2023 YouTube 盆踊り",
+        "西糀谷さざんか公園 2023 盆踊り"
       ],
       "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
     },
@@ -4316,6 +4378,37 @@
       "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
     },
     {
+      "queue_id": "youtube-year-backfill:179bf2fd4b4a8473",
+      "target_year": 2024,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "地域のふれあい第37回盆踊り大会",
+      "venue": "JR目黒駅西口前",
+      "area": "目黒区",
+      "series_key": "c4ab3b7f50a8",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-07-27",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-27"
+      ],
+      "recurrence_label": "昨年開催・継続性 高",
+      "recurrence_score": 0.78,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "地域のふれあい第37回盆踊り大会 JR目黒駅西口前 目黒区 2024 盆踊り",
+        "地域のふれあい第37回盆踊り大会 2024 YouTube 盆踊り",
+        "JR目黒駅西口前 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
       "queue_id": "youtube-year-backfill:dfc7318f89a3808b",
       "target_year": 2024,
       "priority_score": 8,
@@ -4591,6 +4684,37 @@
         "東糀谷四・五・六町会 納涼盆踊り大会 旭児童遊園 大田区 2024 盆踊り",
         "東糀谷四・五・六町会 納涼盆踊り大会 2024 YouTube 盆踊り",
         "旭児童遊園 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:ba7db0101bcfc143",
+      "target_year": 2024,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "森ヶ崎自治会",
+      "venue": "大森南4丁目公園",
+      "area": "大田区",
+      "series_key": "d9d8d002887f",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-07-29",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-29"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.6,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "森ヶ崎自治会 大森南4丁目公園 大田区 2024 盆踊り",
+        "森ヶ崎自治会 2024 YouTube 盆踊り",
+        "大森南4丁目公園 2024 盆踊り"
       ],
       "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
     },
@@ -4908,6 +5032,37 @@
       "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
     },
     {
+      "queue_id": "youtube-year-backfill:8540ac5926ca11f0",
+      "target_year": 2024,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "西糀谷三丁目町会「納涼盆踊り大会」",
+      "venue": "西糀谷さざんか公園",
+      "area": "大田区",
+      "series_key": "e9e9a31b74f3",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-07-28",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-28"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.68,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "西糀谷三丁目町会「納涼盆踊り大会」 西糀谷さざんか公園 大田区 2024 盆踊り",
+        "西糀谷三丁目町会「納涼盆踊り大会」 2024 YouTube 盆踊り",
+        "西糀谷さざんか公園 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
       "queue_id": "youtube-year-backfill:5bb0e328527d5408",
       "target_year": 2024,
       "priority_score": 8,
@@ -5095,6 +5250,36 @@
       "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
     },
     {
+      "queue_id": "youtube-year-backfill:699a870d93f11789",
+      "target_year": 2023,
+      "priority_score": 0,
+      "priority": "low",
+      "event_name": "-両国- 江戸NOREN 妖怪BON DANCE",
+      "venue": "-両国-江戸NOREN",
+      "area": "墨田区",
+      "series_key": "2538c4edcb46",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-07-13",
+      "public_date_end": "2025-07-13",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-13",
+        "2025-07-13"
+      ],
+      "recurrence_label": "昨年開催・継続性 低",
+      "recurrence_score": 0.46,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [],
+      "search_queries": [
+        "-両国- 江戸NOREN 妖怪BON DANCE -両国-江戸NOREN 墨田区 2023 盆踊り",
+        "-両国- 江戸NOREN 妖怪BON DANCE 2023 YouTube 盆踊り",
+        "-両国-江戸NOREN 2023 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
       "queue_id": "youtube-year-backfill:5b37437e6308ac3e",
       "target_year": 2023,
       "priority_score": 0,
@@ -5121,6 +5306,36 @@
         "GMOシブヤエンタメ祭 × JAME盆踊り 宮下公園 渋谷区 2023 盆踊り",
         "GMOシブヤエンタメ祭 × JAME盆踊り 2023 YouTube 盆踊り",
         "宮下公園 2023 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:0d2e020cf3f050ae",
+      "target_year": 2024,
+      "priority_score": 0,
+      "priority": "low",
+      "event_name": "-両国- 江戸NOREN 妖怪BON DANCE",
+      "venue": "-両国-江戸NOREN",
+      "area": "墨田区",
+      "series_key": "2538c4edcb46",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-07-13",
+      "public_date_end": "2025-07-13",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-13",
+        "2025-07-13"
+      ],
+      "recurrence_label": "昨年開催・継続性 低",
+      "recurrence_score": 0.46,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [],
+      "search_queries": [
+        "-両国- 江戸NOREN 妖怪BON DANCE -両国-江戸NOREN 墨田区 2024 盆踊り",
+        "-両国- 江戸NOREN 妖怪BON DANCE 2024 YouTube 盆踊り",
+        "-両国-江戸NOREN 2024 盆踊り"
       ],
       "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
     },
@@ -19056,6 +19271,56 @@
       "score": 45,
       "reasons": [
         "target_year_in_video",
+        "target_year_date_detected"
+      ],
+      "queue_id": "youtube-year-backfill:11b62a9521ff2ce7",
+      "target_year": 2023,
+      "event_name": "森ヶ崎自治会",
+      "venue": "大森南4丁目公園",
+      "area": "大田区",
+      "detected_event_date": "2023-01-22",
+      "video_id": "ZxXx4BRgDlE",
+      "video_url": "https://www.youtube.com/watch?v=ZxXx4BRgDlE",
+      "title": "横浜和太鼓音や 大岡地区センター 新春和太鼓 2023.01.22",
+      "channel_id": "UCCzJMK67VmdB8uXl5YW1kzA",
+      "channel_title": "横浜和太鼓音や",
+      "published_at": "2023-01-22T08:03:17Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/ZxXx4BRgDlE/maxresdefault.jpg",
+      "query": "森ヶ崎自治会 大森南4丁目公園 大田区 2023 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "横浜和太鼓音や 大人から子供まで メンバー募集中です!! 体験随時OKです🎵 #旭区 #保土ヶ谷区 #戸塚区 #今井地区センター #和太鼓 #和太鼓チーム #和太鼓教室 #和太鼓サークル #横浜和太鼓音や #上大岡 #大岡地区センター #新春和太"
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
+        "target_year_date_detected"
+      ],
+      "queue_id": "youtube-year-backfill:11b62a9521ff2ce7",
+      "target_year": 2023,
+      "event_name": "森ヶ崎自治会",
+      "venue": "大森南4丁目公園",
+      "area": "大田区",
+      "detected_event_date": "2023-05-21",
+      "video_id": "movEigKTw3w",
+      "video_url": "https://www.youtube.com/watch?v=movEigKTw3w",
+      "title": "横浜和太鼓音や 浅草 三社祭 西浅草一丁目  2023.05.21 前半",
+      "channel_id": "UCCzJMK67VmdB8uXl5YW1kzA",
+      "channel_title": "横浜和太鼓音や",
+      "published_at": "2023-05-21T12:23:03Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/movEigKTw3w/maxresdefault.jpg",
+      "query": "森ヶ崎自治会 大森南4丁目公園 大田区 2023 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "#浅草 #三社祭 #お囃子 #和太鼓 #お神輿 #二之宮 #寿 #町内神輿 #西浅草一丁目 #田原町駅 #asakusa #sanjyamatsuri #ohayashi #wadaiko #mikoshi #tokyo #japanesefestival 横浜和太鼓音や 大人から子供まで メンバー募集中です!! 体験随時OKです🎵 #旭区 #保土ヶ谷区 #戸塚区 #今井地区センター #和太鼓 #和太鼓チーム #和太鼓教室 #和太鼓サークル #横浜和太鼓音や #子供太鼓 #幼稚園児 #小学生 #中学生 #高校"
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
         "target_year_date_detected",
         "bon_context"
       ],
@@ -23891,6 +24156,31 @@
         "target_year_in_video",
         "bon_context"
       ],
+      "queue_id": "youtube-year-backfill:11b62a9521ff2ce7",
+      "target_year": 2023,
+      "event_name": "森ヶ崎自治会",
+      "venue": "大森南4丁目公園",
+      "area": "大田区",
+      "detected_event_date": "",
+      "video_id": "xcwoVqyvvPk",
+      "video_url": "https://www.youtube.com/watch?v=xcwoVqyvvPk",
+      "title": "2023 サンシャインシティ盆踊り大会 ② #東京都豊島区 #盆踊り",
+      "channel_id": "UCQFXOaS-MaQzv0BnLwOe_iw",
+      "channel_title": "タケちゃんねる神輿",
+      "published_at": "2023-08-04T13:12:23Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/xcwoVqyvvPk/maxresdefault.jpg",
+      "query": "森ヶ崎自治会 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "令和5年8月4日"
+    },
+    {
+      "status": "weak",
+      "score": 33,
+      "reasons": [
+        "target_year_in_video",
+        "bon_context"
+      ],
       "queue_id": "youtube-year-backfill:7bd3c8e1b91035d9",
       "target_year": 2023,
       "event_name": "玉川町会盆おどり大会",
@@ -24483,6 +24773,31 @@
       "setlist_count": 0,
       "setlist_sample": [],
       "description_excerpt": ""
+    },
+    {
+      "status": "weak",
+      "score": 33,
+      "reasons": [
+        "target_year_in_video",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:179bf2fd4b4a8473",
+      "target_year": 2024,
+      "event_name": "地域のふれあい第37回盆踊り大会",
+      "venue": "JR目黒駅西口前",
+      "area": "目黒区",
+      "detected_event_date": "",
+      "video_id": "QGmYrYYQM88",
+      "video_url": "https://www.youtube.com/watch?v=QGmYrYYQM88",
+      "title": "This is FUCHU 2024〜70年目のまち記録〜",
+      "channel_id": "UCM8lWmK0IdzjyyGtJ9j2oYQ",
+      "channel_title": "府中動画配信部",
+      "published_at": "2024-12-29T10:00:06Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/QGmYrYYQM88/maxresdefault.jpg",
+      "query": "地域のふれあい第37回盆踊り大会 2024 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "市制施行70周年、馬場大門ケヤキ並木 国指定記念登録から100年と歴史的な1年となった2024年の府中。 そんな2024年の市内様子をまとめたスペシャルムービーを公開 主催・制作：府中動画配信部（府中市市民活動センタープラッツ登録団体） 協力：府中市市民活動センタープラッツ 撮影協力：たまいま・よさこいin府中実行委員会・JAZZinFUCHU実行委員会 市民協働まつり実行委員会・THE ART FUCHU実行委員会 Special Thanks：府中市・各イベント主催者の皆さん・番場の皆さん 🎥オープニング 0:00 🎥初詣 1:43 🎥初日の出 2:02 🎥府中で開運！新春デジタルスタンプラリー 2:37 🎥令和6年府中市消防団出初式 3:36 🎥どんど焼きの集い 8:17 🎥おもてなしライトアップ～竹あかりで府中のお正月～2023-2024 11:47 🎥 ロウバイの小径 12:23 🎥令和六年大國魂神社 節分祭 13:09 🎥市内積雪 14:11 🎥第77回府中駅伝競走大会 14:38 🎥郷土の森 梅まつり（2月） 16:28 🎥郷土の森 梅まつり（3月） 17:49 🎥府中…"
     },
     {
       "status": "weak",
@@ -26503,6 +26818,50 @@
       "status": "weak",
       "score": 3,
       "reasons": [],
+      "queue_id": "youtube-year-backfill:11b62a9521ff2ce7",
+      "target_year": 2023,
+      "event_name": "森ヶ崎自治会",
+      "venue": "大森南4丁目公園",
+      "area": "大田区",
+      "detected_event_date": "",
+      "video_id": "DSAIryb-D1c",
+      "video_url": "https://www.youtube.com/watch?v=DSAIryb-D1c",
+      "title": "どれがお祭りっぽいリズム？第二弾！ #和太鼓 #演奏 #shorts",
+      "channel_id": "UCZJJ5jxIlAaPg25vScyUNeg",
+      "channel_title": "和太鼓hitomi",
+      "published_at": "2023-02-14T10:00:06Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/DSAIryb-D1c/maxresdefault.jpg",
+      "query": "森ヶ崎自治会 大森南4丁目公園 大田区 2023 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": ""
+    },
+    {
+      "status": "weak",
+      "score": 3,
+      "reasons": [],
+      "queue_id": "youtube-year-backfill:11b62a9521ff2ce7",
+      "target_year": 2023,
+      "event_name": "森ヶ崎自治会",
+      "venue": "大森南4丁目公園",
+      "area": "大田区",
+      "detected_event_date": "",
+      "video_id": "2O-Rtg-lp9Q",
+      "video_url": "https://www.youtube.com/watch?v=2O-Rtg-lp9Q",
+      "title": "みんなが見てる前だもの、張り切ってます！ #祭り #神輿 #japaneseculture",
+      "channel_id": "UCnZCRDus2zf05F6BHlDxDhQ",
+      "channel_title": "宮田宣也【日本の祭を未来へ】",
+      "published_at": "2023-04-03T11:08:59Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/2O-Rtg-lp9Q/maxresdefault.jpg",
+      "query": "森ヶ崎自治会 大森南4丁目公園 大田区 2023 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": ""
+    },
+    {
+      "status": "weak",
+      "score": 3,
+      "reasons": [],
       "queue_id": "youtube-year-backfill:cd8cb6e6b8037dfa",
       "target_year": 2023,
       "event_name": "砧町町会「納涼夏祭り大会」",
@@ -26786,5 +27145,5 @@
       "description_excerpt": ""
     }
   ],
-  "merged_from": "2026-06-20T09:50:50.352007+00:00"
+  "merged_from": "2026-06-20T09:50:59.786109+00:00"
 }
