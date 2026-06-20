@@ -7,11 +7,11 @@
   "target_count": 95,
   "applied_count": 95,
   "skipped_count": 0,
-  "with_rule_prediction_count": 8,
-  "slide_count": 76,
+  "with_rule_prediction_count": 10,
+  "slide_count": 74,
   "fixed_date_rule_count": 1,
-  "reference_only_count": 19,
-  "rule_prediction_reference_count": 8,
+  "reference_only_count": 21,
+  "rule_prediction_reference_count": 10,
   "low_reference_only_count": 9,
   "past_slide_downgrade_count": 2,
   "confidence_counts": {
@@ -357,19 +357,36 @@
       "venue": "浄土寺",
       "before": {
         "historical_reference": null,
-        "display_tier": "historical_reference",
-        "date_prediction": null
+        "display_tier": "rule_predicted",
+        "date_prediction": {
+          "display_tier": "rule_predicted",
+          "target_year": 2026,
+          "date": "2026-07-26",
+          "date_end": "2026-07-27",
+          "weekday_start": "日",
+          "weekday_end": "月",
+          "confidence": "low",
+          "score": 0.58,
+          "rule_type": "date_near",
+          "basis": "7月26日前後",
+          "evidence_years": [
+            2023,
+            2024
+          ],
+          "evidence_count": 2,
+          "has_actual_observation": false
+        }
       },
       "after": {
         "historical_reference_label": "2025-07-24〜2025-07-25実績・今年未確認",
         "historical_reference_confidence": "medium",
         "historical_reference_score": 0.59,
-        "display_tier": "historical_slide",
-        "predicted_date": "2026-07-23",
-        "predicted_date_end": "2026-07-24"
+        "display_tier": "rule_predicted",
+        "predicted_date": "2026-07-26",
+        "predicted_date_end": "2026-07-27"
       },
       "historical_reference": {
-        "display_tier": "historical_slide",
+        "display_tier": "historical_reference",
         "last_seen_year": 2025,
         "last_seen_dates": [
           "2025-07-24",
@@ -389,16 +406,8 @@
         ],
         "cautions": [],
         "edition_number": null,
-        "has_rule_prediction": false,
-        "slide": {
-          "date": "2026-07-23",
-          "date_end": "2026-07-24",
-          "method": "same_weekday",
-          "basis": "2025年実績の同月第4木曜を2026年へスライド",
-          "source_date": "2025-07-24",
-          "source_date_end": "2025-07-25",
-          "duration_days": 2
-        }
+        "has_rule_prediction": true,
+        "slide": null
       }
     },
     {
@@ -1024,19 +1033,36 @@
       "venue": "歌舞伎町シネシティ広場",
       "before": {
         "historical_reference": null,
-        "display_tier": "historical_reference",
-        "date_prediction": null
+        "display_tier": "rule_predicted",
+        "date_prediction": {
+          "display_tier": "rule_predicted",
+          "target_year": 2026,
+          "date": "2026-08-15",
+          "date_end": "2026-08-15",
+          "weekday_start": "土",
+          "weekday_end": "土",
+          "confidence": "medium",
+          "score": 0.7,
+          "rule_type": "weekday_nth",
+          "basis": "8月第3土曜",
+          "evidence_years": [
+            2024,
+            2025
+          ],
+          "evidence_count": 2,
+          "has_actual_observation": false
+        }
       },
       "after": {
         "historical_reference_label": "2025-08-16実績・今年未確認",
         "historical_reference_confidence": "medium",
         "historical_reference_score": 0.6,
-        "display_tier": "historical_slide",
+        "display_tier": "rule_predicted",
         "predicted_date": "2026-08-15",
         "predicted_date_end": "2026-08-15"
       },
       "historical_reference": {
-        "display_tier": "historical_slide",
+        "display_tier": "historical_reference",
         "last_seen_year": 2025,
         "last_seen_dates": [
           "2025-08-16"
@@ -1055,16 +1081,8 @@
         ],
         "cautions": [],
         "edition_number": null,
-        "has_rule_prediction": false,
-        "slide": {
-          "date": "2026-08-15",
-          "date_end": "2026-08-15",
-          "method": "same_weekday",
-          "basis": "2025年実績の同月第3土曜を2026年へスライド",
-          "source_date": "2025-08-16",
-          "source_date_end": null,
-          "duration_days": 1
-        }
+        "has_rule_prediction": true,
+        "slide": null
       }
     },
     {

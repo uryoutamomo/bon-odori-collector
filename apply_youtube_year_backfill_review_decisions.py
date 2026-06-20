@@ -28,6 +28,7 @@ MANUAL_EVIDENCE = DATA / "song_evidence_manual.json"
 OUT = DATA / "youtube_year_backfill_review_apply_result.json"
 OUT_MD = DATA / "youtube_year_backfill_review_apply_result.md"
 SOURCE = "youtube_year_backfill_review"
+ACCEPT_SONG_DECISIONS = {"accept_with_songs", "accept_with_songs_existing_occurrence"}
 
 
 def load_json(path, default):
@@ -131,6 +132,10 @@ def fetch_enriched_videos(video_ids, api_key, candidate_map):
 
 
 def fallback_event_date(decision, enriched_videos):
+    if decision.get("matched_event_date"):
+        return decision["matched_event_date"]
+    if decision.get("event_date"):
+        return decision["event_date"]
     texts = []
     for video in enriched_videos:
         texts.extend([video.get("description") or "", video.get("title") or ""])
@@ -276,7 +281,7 @@ def build_result(decisions, candidates, decisions_path, fetch, apply, env):
         }
         if "要確認" in row["reason"] or "不一致" in row["reason"] or "年ズレ" in row["reason"]:
             needs_review.append(row)
-        if decision.get("decision") == "accept_with_songs":
+        if decision.get("decision") in ACCEPT_SONG_DECISIONS:
             items = build_accept_evidence(decision, videos, decisions_path)
             evidence_items.extend(items)
             row["evidence_items"] = len(items)

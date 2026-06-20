@@ -1,9 +1,9 @@
 {
   "generated_by": "build_youtube_song_master.py",
-  "generated_at": "2026-06-20T05:38:27.042126+00:00",
+  "generated_at": "2026-06-20T10:09:46.705786+00:00",
   "source": "data/song_occurrences.json",
-  "source_occurrence_count": 1855,
-  "source_song_relation_count": 28097,
+  "source_occurrence_count": 1856,
+  "source_song_relation_count": 28107,
   "song_count": 803,
   "public_ready_count": 701,
   "review_count": 102,
@@ -52,36 +52,37 @@
     {
       "song_name": "東京音頭",
       "aliases": [],
-      "evidence_count": 1231,
-      "good_evidence_count": 1226,
+      "evidence_count": 1234,
+      "good_evidence_count": 1229,
       "years": [
+        2023,
         2024,
         2025,
         2026
       ],
       "reliability_counts": {
-        "complete_numbered_video": 1206,
+        "complete_numbered_video": 1209,
         "partial_impression": 5,
         "curated_public_song": 15,
         "official_setlist": 4,
         "semi_official_setlist": 1
       },
       "source_counts": {
-        "youtube_year_backfill_review": 16,
+        "youtube_year_backfill_review": 19,
         "youtube_setlist_occurrence": 1195,
         "events_public": 19,
         "manual_ocr": 1
       },
       "speaker_count": 6,
-      "occurrence_count": 1210,
-      "evidence_url_count": 87,
+      "occurrence_count": 1211,
+      "evidence_url_count": 90,
       "status": "有効",
       "public_ready": true,
       "review_reason": "",
       "source_label": "YouTubeセットリスト / 公式曲目 / 準公式曲目 / 公開イベント曲目",
       "description": "盆踊り会場の曲目として確認されている曲です。",
       "bon_usage_rank": "定番",
-      "bon_usage_score": 516,
+      "bon_usage_score": 536,
       "song_genre_key": "local_ondo",
       "song_genre": "ご当地音頭",
       "genre_confidence": "高",
@@ -92,7 +93,7 @@
         "謝恩納涼盆踊り大会（青山善光寺）",
         "Min-Yoi's盆踊り",
         "山王音頭と民踊大会",
-        "阿波おどり「堀切あやめ連」流し踊り 2024年曳舟お宝市"
+        "赤坂浄土寺盆踊り大会"
       ],
       "sample_venues": [
         "白金台どんぐり児童遊園",
@@ -112,36 +113,37 @@
     {
       "song_name": "炭坑節",
       "aliases": [],
-      "evidence_count": 1058,
-      "good_evidence_count": 1056,
+      "evidence_count": 1061,
+      "good_evidence_count": 1059,
       "years": [
+        2023,
         2024,
         2025,
         2026
       ],
       "reliability_counts": {
-        "complete_numbered_video": 1037,
+        "complete_numbered_video": 1040,
         "curated_public_song": 14,
         "partial_impression": 2,
         "official_setlist": 4,
         "semi_official_setlist": 1
       },
       "source_counts": {
-        "youtube_year_backfill_review": 11,
+        "youtube_year_backfill_review": 14,
         "youtube_setlist_occurrence": 1028,
         "events_public": 18,
         "manual_ocr": 1
       },
       "speaker_count": 6,
-      "occurrence_count": 1041,
-      "evidence_url_count": 83,
+      "occurrence_count": 1042,
+      "evidence_url_count": 86,
       "status": "有効",
       "public_ready": true,
       "review_reason": "",
       "source_label": "YouTubeセットリスト / 公式曲目 / 準公式曲目 / 公開イベント曲目",
       "description": "盆踊り会場の曲目として確認されている曲です。",
       "bon_usage_rank": "定番",
-      "bon_usage_score": 506,
+      "bon_usage_score": 526,
       "song_genre_key": "folk",
       "song_genre": "民謡・新民謡",
       "genre_confidence": "高",
@@ -151,8 +153,8 @@
         "Min-Yoi's盆踊り",
         "第10回白金台どんぐり児童遊園 納涼盆踊り大会",
         "山王音頭と民踊大会",
-        "阿波おどり「堀切あやめ連」流し踊り 2024年曳舟お宝市",
-        "阿波おどり「江戸歌舞伎連」流し踊り 2024年曳舟お宝市"
+        "赤坂浄土寺盆踊り大会",
+        "阿波おどり「堀切あやめ連」流し踊り 2024年曳舟お宝市"
       ],
       "sample_venues": [
         "大崎駅周辺",
@@ -172,36 +174,37 @@
     {
       "song_name": "大東京音頭",
       "aliases": [],
-      "evidence_count": 890,
-      "good_evidence_count": 889,
+      "evidence_count": 893,
+      "good_evidence_count": 892,
       "years": [
+        2023,
         2024,
         2025,
         2026
       ],
       "reliability_counts": {
-        "complete_numbered_video": 879,
+        "complete_numbered_video": 882,
         "partial_impression": 1,
         "curated_public_song": 6,
         "official_setlist": 3,
         "semi_official_setlist": 1
       },
       "source_counts": {
-        "youtube_year_backfill_review": 11,
+        "youtube_year_backfill_review": 14,
         "youtube_setlist_occurrence": 869,
         "events_public": 9,
         "manual_ocr": 1
       },
       "speaker_count": 6,
-      "occurrence_count": 876,
-      "evidence_url_count": 59,
+      "occurrence_count": 877,
+      "evidence_url_count": 62,
       "status": "有効",
       "public_ready": true,
       "review_reason": "",
       "source_label": "YouTubeセットリスト / 公式曲目 / 準公式曲目 / 公開イベント曲目",
       "description": "盆踊り会場の曲目として確認されている曲です。",
       "bon_usage_rank": "定番",
-      "bon_usage_score": 410,
+      "bon_usage_score": 430,
       "song_genre_key": "local_ondo",
       "song_genre": "ご当地音頭",
       "genre_confidence": "高",
@@ -210,16 +213,16 @@
       "sample_events": [
         "第10回白金台どんぐり児童遊園 納涼盆踊り大会",
         "山王音頭と民踊大会",
+        "赤坂浄土寺盆踊り大会",
         "阿波おどり「堀切あやめ連」流し踊り 2024年曳舟お宝市",
-        "阿波おどり「江戸歌舞伎連」流し踊り 2024年曳舟お宝市",
-        "阿波おどり「浅草雷連」流し踊り 2024年曳舟お宝市"
+        "阿波おどり「江戸歌舞伎連」流し踊り 2024年曳舟お宝市"
       ],
       "sample_venues": [
         "白金台どんぐり児童遊園",
         "大崎駅周辺",
         "飛鳥山公園",
-        "阿波おどり「堀切あやめ連」流し踊り 2024年曳舟お宝市",
-        "阿波おどり「江戸歌舞伎連」流し踊り 2024年曳舟お宝市"
+        "浄土寺",
+        "阿波おどり「堀切あやめ連」流し踊り 2024年曳舟お宝市"
       ],
       "youtube_urls": [
         "https://www.youtube.com/watch?v=n-xZ2fVVeUk",
@@ -412,35 +415,36 @@
     {
       "song_name": "花笠音頭",
       "aliases": [],
-      "evidence_count": 379,
-      "good_evidence_count": 379,
+      "evidence_count": 382,
+      "good_evidence_count": 382,
       "years": [
+        2023,
         2024,
         2025,
         2026
       ],
       "reliability_counts": {
-        "complete_numbered_video": 373,
+        "complete_numbered_video": 376,
         "curated_public_song": 3,
         "official_setlist": 2,
         "semi_official_setlist": 1
       },
       "source_counts": {
-        "youtube_year_backfill_review": 7,
+        "youtube_year_backfill_review": 10,
         "youtube_setlist_occurrence": 366,
         "events_public": 5,
         "manual_ocr": 1
       },
       "speaker_count": 5,
-      "occurrence_count": 371,
-      "evidence_url_count": 21,
+      "occurrence_count": 372,
+      "evidence_url_count": 24,
       "status": "有効",
       "public_ready": true,
       "review_reason": "",
       "source_label": "YouTubeセットリスト / 公式曲目 / 準公式曲目 / 公開イベント曲目",
       "description": "盆踊り会場の曲目として確認されている曲です。",
       "bon_usage_rank": "定番",
-      "bon_usage_score": 339,
+      "bon_usage_score": 359,
       "song_genre_key": "folk",
       "song_genre": "民謡・新民謡",
       "genre_confidence": "高",
@@ -448,17 +452,17 @@
       "genre_review_status": "仮分類",
       "sample_events": [
         "第10回白金台どんぐり児童遊園 納涼盆踊り大会",
+        "赤坂浄土寺盆踊り大会",
         "阿波おどり「堀切あやめ連」流し踊り 2024年曳舟お宝市",
         "阿波おどり「江戸歌舞伎連」流し踊り 2024年曳舟お宝市",
-        "阿波おどり「浅草雷連」流し踊り 2024年曳舟お宝市",
-        "阿波おどり「浅草雷連」組踊り 2024年曳舟お宝市"
+        "阿波おどり「浅草雷連」流し踊り 2024年曳舟お宝市"
       ],
       "sample_venues": [
         "白金台どんぐり児童遊園",
+        "浄土寺",
         "阿波おどり「堀切あやめ連」流し踊り 2024年曳舟お宝市",
         "阿波おどり「江戸歌舞伎連」流し踊り 2024年曳舟お宝市",
-        "阿波おどり「浅草雷連」流し踊り 2024年曳舟お宝市",
-        "阿波おどり「浅草雷連」組踊り 2024年曳舟お宝市"
+        "阿波おどり「浅草雷連」流し踊り 2024年曳舟お宝市"
       ],
       "youtube_urls": [
         "https://www.youtube.com/watch?v=oYT8cZBWNdw",
@@ -1121,6 +1125,59 @@
       ]
     },
     {
+      "song_name": "まつのき小唄",
+      "aliases": [],
+      "evidence_count": 172,
+      "good_evidence_count": 172,
+      "years": [
+        2023,
+        2025
+      ],
+      "reliability_counts": {
+        "complete_numbered_video": 172
+      },
+      "source_counts": {
+        "youtube_year_backfill_review": 3,
+        "youtube_setlist_occurrence": 169
+      },
+      "speaker_count": 2,
+      "occurrence_count": 170,
+      "evidence_url_count": 8,
+      "status": "有効",
+      "public_ready": true,
+      "review_reason": "",
+      "source_label": "YouTubeセットリスト",
+      "description": "盆踊り会場の曲目として確認されている曲です。",
+      "bon_usage_rank": "ときどき使われる",
+      "bon_usage_score": 170,
+      "song_genre_key": "showa_kayo",
+      "song_genre": "昭和歌謡・歌謡曲",
+      "genre_confidence": "中",
+      "genre_basis": "歌謡曲・小唄系",
+      "genre_review_status": "仮分類",
+      "sample_events": [
+        "赤坂浄土寺盆踊り大会",
+        "「365日の紙飛行機」 「踊ろう!in荒木町の秋」20 新宿区荒木公園盆踊り",
+        "「まつのき小唄」 2025年東京大神宮盆踊り10 東京都千代田区",
+        "「ダンシング・ヒーロー」(荻野目洋子) 2025年東京大神宮盆踊り26 東京都千代田区",
+        "「ダンシング・ヒーロー」(荻野目洋子) 上篠崎自治会納涼盆踊り大会21"
+      ],
+      "sample_venues": [
+        "浄土寺",
+        "「365日の紙飛行機」 「踊ろう!in荒木町の秋」20 新宿区荒木公園盆踊り",
+        "「まつのき小唄」 2025年東京大神宮盆踊り10 東京都千代田区",
+        "「ダンシング・ヒーロー」(荻野目洋子) 2025年東京大神宮盆踊り26 東京都千代田区",
+        "「ダンシング・ヒーロー」(荻野目洋子) 上篠崎自治会納涼盆踊り大会21"
+      ],
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=3CK_rGhNgbo",
+        "https://www.youtube.com/watch?v=YIogmbe5wGY",
+        "https://www.youtube.com/watch?v=S03OkuA8W7Q",
+        "https://www.youtube.com/watch?v=fGEpskV9Un4",
+        "https://www.youtube.com/watch?v=9UDzgrFkQcw"
+      ]
+    },
+    {
       "song_name": "ご祝儀音頭",
       "aliases": [],
       "evidence_count": 171,
@@ -1228,57 +1285,6 @@
         "https://www.youtube.com/watch?v=eWDf8FLanwE",
         "https://www.youtube.com/watch?v=cvAen122K8M",
         "https://www.youtube.com/watch?v=uwsMDPhCtM0"
-      ]
-    },
-    {
-      "song_name": "まつのき小唄",
-      "aliases": [],
-      "evidence_count": 169,
-      "good_evidence_count": 169,
-      "years": [
-        2025
-      ],
-      "reliability_counts": {
-        "complete_numbered_video": 169
-      },
-      "source_counts": {
-        "youtube_setlist_occurrence": 169
-      },
-      "speaker_count": 1,
-      "occurrence_count": 169,
-      "evidence_url_count": 5,
-      "status": "有効",
-      "public_ready": true,
-      "review_reason": "",
-      "source_label": "YouTubeセットリスト",
-      "description": "盆踊り会場の曲目として確認されている曲です。",
-      "bon_usage_rank": "地域・会場固有",
-      "bon_usage_score": 125,
-      "song_genre_key": "showa_kayo",
-      "song_genre": "昭和歌謡・歌謡曲",
-      "genre_confidence": "中",
-      "genre_basis": "歌謡曲・小唄系",
-      "genre_review_status": "仮分類",
-      "sample_events": [
-        "「365日の紙飛行機」 「踊ろう!in荒木町の秋」20 新宿区荒木公園盆踊り",
-        "「まつのき小唄」 2025年東京大神宮盆踊り10 東京都千代田区",
-        "「ダンシング・ヒーロー」(荻野目洋子) 2025年東京大神宮盆踊り26 東京都千代田区",
-        "「ダンシング・ヒーロー」(荻野目洋子) 上篠崎自治会納涼盆踊り大会21",
-        "「令和音頭」 「踊ろう!in荒木町の秋」25 新宿区荒木公園盆踊り"
-      ],
-      "sample_venues": [
-        "「365日の紙飛行機」 「踊ろう!in荒木町の秋」20 新宿区荒木公園盆踊り",
-        "「まつのき小唄」 2025年東京大神宮盆踊り10 東京都千代田区",
-        "「ダンシング・ヒーロー」(荻野目洋子) 2025年東京大神宮盆踊り26 東京都千代田区",
-        "「ダンシング・ヒーロー」(荻野目洋子) 上篠崎自治会納涼盆踊り大会21",
-        "「令和音頭」 「踊ろう!in荒木町の秋」25 新宿区荒木公園盆踊り"
-      ],
-      "youtube_urls": [
-        "https://www.youtube.com/watch?v=3CK_rGhNgbo",
-        "https://www.youtube.com/watch?v=YIogmbe5wGY",
-        "https://www.youtube.com/watch?v=S03OkuA8W7Q",
-        "https://www.youtube.com/watch?v=fGEpskV9Un4",
-        "https://www.youtube.com/watch?v=9UDzgrFkQcw"
       ]
     },
     {
@@ -2143,6 +2149,61 @@
       ]
     },
     {
+      "song_name": "少年八木節",
+      "aliases": [],
+      "evidence_count": 118,
+      "good_evidence_count": 118,
+      "years": [
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "reliability_counts": {
+        "complete_numbered_video": 118
+      },
+      "source_counts": {
+        "youtube_year_backfill_review": 18,
+        "youtube_setlist_occurrence": 100
+      },
+      "speaker_count": 3,
+      "occurrence_count": 104,
+      "evidence_url_count": 31,
+      "status": "有効",
+      "public_ready": true,
+      "review_reason": "",
+      "source_label": "YouTubeセットリスト",
+      "description": "盆踊り会場の曲目として確認されている曲です。",
+      "bon_usage_rank": "ときどき使われる",
+      "bon_usage_score": 235,
+      "song_genre_key": "folk",
+      "song_genre": "民謡・新民謡",
+      "genre_confidence": "中",
+      "genre_basis": "民謡系の接尾辞・語を含む",
+      "genre_review_status": "仮分類",
+      "sample_events": [
+        "赤坂浄土寺盆踊り大会",
+        "第10回白金台どんぐり児童遊園 納涼盆踊り大会",
+        "阿波おどり「堀切あやめ連」流し踊り 2024年曳舟お宝市",
+        "阿波おどり「江戸歌舞伎連」流し踊り 2024年曳舟お宝市",
+        "阿波おどり「浅草雷連」流し踊り 2024年曳舟お宝市"
+      ],
+      "sample_venues": [
+        "飛鳥山公園",
+        "浄土寺",
+        "白金台どんぐり児童遊園",
+        "阿波おどり「堀切あやめ連」流し踊り 2024年曳舟お宝市",
+        "阿波おどり「江戸歌舞伎連」流し踊り 2024年曳舟お宝市"
+      ],
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=FqQ31RJb1TE",
+        "https://www.youtube.com/watch?v=ZYNYFQTjmPs",
+        "https://www.youtube.com/watch?v=fACTIdg9unI",
+        "https://www.youtube.com/watch?v=-oN7TmJ6_Xw",
+        "https://www.youtube.com/watch?v=xS0hpI1fKVI"
+      ]
+    },
+    {
       "song_name": "ジンギスカン",
       "aliases": [],
       "evidence_count": 117,
@@ -2194,60 +2255,6 @@
         "https://www.youtube.com/watch?v=o8YtsC1ihxg",
         "https://www.youtube.com/watch?v=4E_53WE4kMY",
         "https://www.youtube.com/watch?v=baahco6knCo"
-      ]
-    },
-    {
-      "song_name": "少年八木節",
-      "aliases": [],
-      "evidence_count": 115,
-      "good_evidence_count": 115,
-      "years": [
-        2024,
-        2025,
-        2026
-      ],
-      "reliability_counts": {
-        "complete_numbered_video": 115
-      },
-      "source_counts": {
-        "youtube_year_backfill_review": 15,
-        "youtube_setlist_occurrence": 100
-      },
-      "speaker_count": 3,
-      "occurrence_count": 103,
-      "evidence_url_count": 28,
-      "status": "有効",
-      "public_ready": true,
-      "review_reason": "",
-      "source_label": "YouTubeセットリスト",
-      "description": "盆踊り会場の曲目として確認されている曲です。",
-      "bon_usage_rank": "ときどき使われる",
-      "bon_usage_score": 215,
-      "song_genre_key": "folk",
-      "song_genre": "民謡・新民謡",
-      "genre_confidence": "中",
-      "genre_basis": "民謡系の接尾辞・語を含む",
-      "genre_review_status": "仮分類",
-      "sample_events": [
-        "第10回白金台どんぐり児童遊園 納涼盆踊り大会",
-        "阿波おどり「堀切あやめ連」流し踊り 2024年曳舟お宝市",
-        "阿波おどり「江戸歌舞伎連」流し踊り 2024年曳舟お宝市",
-        "阿波おどり「浅草雷連」流し踊り 2024年曳舟お宝市",
-        "阿波おどり「浅草雷連」組踊り 2024年曳舟お宝市"
-      ],
-      "sample_venues": [
-        "飛鳥山公園",
-        "白金台どんぐり児童遊園",
-        "阿波おどり「堀切あやめ連」流し踊り 2024年曳舟お宝市",
-        "阿波おどり「江戸歌舞伎連」流し踊り 2024年曳舟お宝市",
-        "阿波おどり「浅草雷連」流し踊り 2024年曳舟お宝市"
-      ],
-      "youtube_urls": [
-        "https://www.youtube.com/watch?v=FqQ31RJb1TE",
-        "https://www.youtube.com/watch?v=ZYNYFQTjmPs",
-        "https://www.youtube.com/watch?v=fACTIdg9unI",
-        "https://www.youtube.com/watch?v=-oN7TmJ6_Xw",
-        "https://www.youtube.com/watch?v=xS0hpI1fKVI"
       ]
     },
     {
@@ -3601,6 +3608,65 @@
       ]
     },
     {
+      "song_name": "白浜音頭",
+      "aliases": [],
+      "evidence_count": 82,
+      "good_evidence_count": 82,
+      "years": [
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "reliability_counts": {
+        "complete_numbered_video": 80,
+        "official_setlist": 1,
+        "semi_official_setlist": 1
+      },
+      "source_counts": {
+        "youtube_year_backfill_review": 11,
+        "youtube_setlist_occurrence": 69,
+        "events_public": 1,
+        "manual_ocr": 1
+      },
+      "speaker_count": 5,
+      "occurrence_count": 70,
+      "evidence_url_count": 21,
+      "status": "有効",
+      "public_ready": true,
+      "review_reason": "",
+      "source_label": "YouTubeセットリスト / 公式曲目 / 準公式曲目",
+      "description": "盆踊り会場の曲目として確認されている曲です。",
+      "bon_usage_rank": "よく使われる",
+      "bon_usage_score": 313,
+      "song_genre_key": "local_ondo",
+      "song_genre": "ご当地音頭",
+      "genre_confidence": "中",
+      "genre_basis": "地域名・場所名を冠した音頭らしい",
+      "genre_review_status": "仮分類",
+      "sample_events": [
+        "山王音頭と民踊大会",
+        "赤坂浄土寺盆踊り大会",
+        "謝恩納涼盆踊り大会（青山善光寺）",
+        "「となりのトトロ」 青山熊野神社例大祭奉納踊り37 青葉公園盆踊り",
+        "「チャンチキおけさ」(三波春夫) 青山熊野神社例大祭奉納踊り34 青葉公園盆踊り"
+      ],
+      "sample_venues": [
+        "浄土寺",
+        "青山善光寺",
+        "「となりのトトロ」 青山熊野神社例大祭奉納踊り37 青葉公園盆踊り",
+        "「チャンチキおけさ」(三波春夫) 青山熊野神社例大祭奉納踊り34 青葉公園盆踊り",
+        "「ハワイ音頭」 青山熊野神社例大祭奉納踊り41 青葉公園盆踊り"
+      ],
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=d_mp-01hYQk",
+        "https://www.youtube.com/watch?v=LtUcH01ffrI",
+        "https://www.youtube.com/watch?v=ibZQ8e9LjdQ",
+        "https://www.youtube.com/watch?v=hIjAGPRgfGc",
+        "https://www.youtube.com/watch?v=1p_hQrsvuSQ"
+      ]
+    },
+    {
       "song_name": "ステテコシャンシャン",
       "aliases": [],
       "evidence_count": 81,
@@ -3750,64 +3816,6 @@
         "https://www.youtube.com/watch?v=T8JtRAmT7sc",
         "https://www.youtube.com/watch?v=37pbtjd_5hA",
         "https://www.youtube.com/watch?v=O6ZERoi8bDI"
-      ]
-    },
-    {
-      "song_name": "白浜音頭",
-      "aliases": [],
-      "evidence_count": 80,
-      "good_evidence_count": 80,
-      "years": [
-        2024,
-        2025,
-        2026
-      ],
-      "reliability_counts": {
-        "complete_numbered_video": 78,
-        "official_setlist": 1,
-        "semi_official_setlist": 1
-      },
-      "source_counts": {
-        "youtube_year_backfill_review": 9,
-        "youtube_setlist_occurrence": 69,
-        "events_public": 1,
-        "manual_ocr": 1
-      },
-      "speaker_count": 5,
-      "occurrence_count": 69,
-      "evidence_url_count": 19,
-      "status": "有効",
-      "public_ready": true,
-      "review_reason": "",
-      "source_label": "YouTubeセットリスト / 公式曲目 / 準公式曲目",
-      "description": "盆踊り会場の曲目として確認されている曲です。",
-      "bon_usage_rank": "よく使われる",
-      "bon_usage_score": 293,
-      "song_genre_key": "local_ondo",
-      "song_genre": "ご当地音頭",
-      "genre_confidence": "中",
-      "genre_basis": "地域名・場所名を冠した音頭らしい",
-      "genre_review_status": "仮分類",
-      "sample_events": [
-        "山王音頭と民踊大会",
-        "謝恩納涼盆踊り大会（青山善光寺）",
-        "「となりのトトロ」 青山熊野神社例大祭奉納踊り37 青葉公園盆踊り",
-        "「チャンチキおけさ」(三波春夫) 青山熊野神社例大祭奉納踊り34 青葉公園盆踊り",
-        "「ハワイ音頭」 青山熊野神社例大祭奉納踊り41 青葉公園盆踊り"
-      ],
-      "sample_venues": [
-        "青山善光寺",
-        "「となりのトトロ」 青山熊野神社例大祭奉納踊り37 青葉公園盆踊り",
-        "「チャンチキおけさ」(三波春夫) 青山熊野神社例大祭奉納踊り34 青葉公園盆踊り",
-        "「ハワイ音頭」 青山熊野神社例大祭奉納踊り41 青葉公園盆踊り",
-        "「盆ギリ恋歌」(SOUTHERN ALL STARS) 2025年赤坂浄土寺盆踊り大会10 東京都港区"
-      ],
-      "youtube_urls": [
-        "https://www.youtube.com/watch?v=d_mp-01hYQk",
-        "https://www.youtube.com/watch?v=LtUcH01ffrI",
-        "https://www.youtube.com/watch?v=ibZQ8e9LjdQ",
-        "https://www.youtube.com/watch?v=hIjAGPRgfGc",
-        "https://www.youtube.com/watch?v=1p_hQrsvuSQ"
       ]
     },
     {
@@ -7315,6 +7323,60 @@
       ]
     },
     {
+      "song_name": "ソーラン節",
+      "aliases": [],
+      "evidence_count": 48,
+      "good_evidence_count": 48,
+      "years": [
+        2023,
+        2024,
+        2025
+      ],
+      "reliability_counts": {
+        "complete_numbered_video": 48
+      },
+      "source_counts": {
+        "youtube_year_backfill_review": 7,
+        "youtube_setlist_occurrence": 41
+      },
+      "speaker_count": 2,
+      "occurrence_count": 43,
+      "evidence_url_count": 8,
+      "status": "有効",
+      "public_ready": true,
+      "review_reason": "",
+      "source_label": "YouTubeセットリスト",
+      "description": "盆踊り会場の曲目として確認されている曲です。",
+      "bon_usage_rank": "ときどき使われる",
+      "bon_usage_score": 165,
+      "song_genre_key": "folk",
+      "song_genre": "民謡・新民謡",
+      "genre_confidence": "中",
+      "genre_basis": "民謡系の接尾辞・語を含む",
+      "genre_review_status": "仮分類",
+      "sample_events": [
+        "第10回白金台どんぐり児童遊園 納涼盆踊り大会",
+        "赤坂浄土寺盆踊り大会",
+        "「LOVE AFFAIR~秘密のデート」(サザンオールスターズ) 2025年第3回奥浅草盆踊り第二部22 隅田公園山谷堀広場 東京都台東区 4K動画",
+        "「炭坑節」 小野照崎神社納涼盆踊り大会2 東京都台東区",
+        "【大漁唄い込み(遠島甚句入り)】(金沢明子)(宮城県民謡) 2025年第3回奥浅草盆踊り第一部8 隅田公園山谷堀広場 東京都台東区 4K動画"
+      ],
+      "sample_venues": [
+        "白金台どんぐり児童遊園",
+        "浄土寺",
+        "「LOVE AFFAIR~秘密のデート」(サザンオールスターズ) 2025年第3回奥浅草盆踊り第二部22 隅田公園山谷堀広場 東京都台東区 4K動画",
+        "「炭坑節」 小野照崎神社納涼盆踊り大会2 東京都台東区",
+        "【大漁唄い込み(遠島甚句入り)】(金沢明子)(宮城県民謡) 2025年第3回奥浅草盆踊り第一部8 隅田公園山谷堀広場 東京都台東区 4K動画"
+      ],
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=_eFfyMqLFOA",
+        "https://www.youtube.com/watch?v=8X4EA9Ol0I0",
+        "https://www.youtube.com/watch?v=srSfBQI9Ch0",
+        "https://www.youtube.com/watch?v=sSZfShcGtEE",
+        "https://www.youtube.com/watch?v=t9jxIJN6Spo"
+      ]
+    },
+    {
       "song_name": "四季の花踊り",
       "aliases": [],
       "evidence_count": 48,
@@ -7569,59 +7631,6 @@
         "https://www.youtube.com/watch?v=WuRUOb6vLE4",
         "https://www.youtube.com/watch?v=eijzADh-Aig",
         "https://www.youtube.com/watch?v=12_m0E9kv3Y"
-      ]
-    },
-    {
-      "song_name": "ソーラン節",
-      "aliases": [],
-      "evidence_count": 45,
-      "good_evidence_count": 45,
-      "years": [
-        2024,
-        2025
-      ],
-      "reliability_counts": {
-        "complete_numbered_video": 45
-      },
-      "source_counts": {
-        "youtube_year_backfill_review": 4,
-        "youtube_setlist_occurrence": 41
-      },
-      "speaker_count": 2,
-      "occurrence_count": 42,
-      "evidence_url_count": 5,
-      "status": "有効",
-      "public_ready": true,
-      "review_reason": "",
-      "source_label": "YouTubeセットリスト",
-      "description": "盆踊り会場の曲目として確認されている曲です。",
-      "bon_usage_rank": "ときどき使われる",
-      "bon_usage_score": 143,
-      "song_genre_key": "folk",
-      "song_genre": "民謡・新民謡",
-      "genre_confidence": "中",
-      "genre_basis": "民謡系の接尾辞・語を含む",
-      "genre_review_status": "仮分類",
-      "sample_events": [
-        "第10回白金台どんぐり児童遊園 納涼盆踊り大会",
-        "「LOVE AFFAIR~秘密のデート」(サザンオールスターズ) 2025年第3回奥浅草盆踊り第二部22 隅田公園山谷堀広場 東京都台東区 4K動画",
-        "「炭坑節」 小野照崎神社納涼盆踊り大会2 東京都台東区",
-        "【大漁唄い込み(遠島甚句入り)】(金沢明子)(宮城県民謡) 2025年第3回奥浅草盆踊り第一部8 隅田公園山谷堀広場 東京都台東区 4K動画",
-        "【少年八木節】 小野照崎神社納涼盆踊り大会5 東京都台東区"
-      ],
-      "sample_venues": [
-        "白金台どんぐり児童遊園",
-        "「LOVE AFFAIR~秘密のデート」(サザンオールスターズ) 2025年第3回奥浅草盆踊り第二部22 隅田公園山谷堀広場 東京都台東区 4K動画",
-        "「炭坑節」 小野照崎神社納涼盆踊り大会2 東京都台東区",
-        "【大漁唄い込み(遠島甚句入り)】(金沢明子)(宮城県民謡) 2025年第3回奥浅草盆踊り第一部8 隅田公園山谷堀広場 東京都台東区 4K動画",
-        "【少年八木節】 小野照崎神社納涼盆踊り大会5 東京都台東区"
-      ],
-      "youtube_urls": [
-        "https://www.youtube.com/watch?v=_eFfyMqLFOA",
-        "https://www.youtube.com/watch?v=8X4EA9Ol0I0",
-        "https://www.youtube.com/watch?v=srSfBQI9Ch0",
-        "https://www.youtube.com/watch?v=sSZfShcGtEE",
-        "https://www.youtube.com/watch?v=t9jxIJN6Spo"
       ]
     },
     {
@@ -10174,6 +10183,58 @@
       ]
     },
     {
+      "song_name": "赤坂豊川音頭",
+      "aliases": [],
+      "evidence_count": 38,
+      "good_evidence_count": 38,
+      "years": [
+        2023,
+        2025
+      ],
+      "reliability_counts": {
+        "complete_numbered_video": 38
+      },
+      "source_counts": {
+        "youtube_year_backfill_review": 2,
+        "youtube_setlist_occurrence": 36
+      },
+      "speaker_count": 2,
+      "occurrence_count": 37,
+      "evidence_url_count": 4,
+      "status": "有効",
+      "public_ready": true,
+      "review_reason": "",
+      "source_label": "YouTubeセットリスト",
+      "description": "盆踊り会場の曲目として確認されている曲です。",
+      "bon_usage_rank": "ときどき使われる",
+      "bon_usage_score": 136,
+      "song_genre_key": "local_ondo",
+      "song_genre": "ご当地音頭",
+      "genre_confidence": "中",
+      "genre_basis": "地域名・場所名を冠した音頭らしい",
+      "genre_review_status": "仮分類",
+      "sample_events": [
+        "赤坂浄土寺盆踊り大会",
+        "Happiness(嵐)(無音) 赤坂冬おどり30",
+        "「Rockin’ Around The Christmas Tree」 赤坂冬おどり41",
+        "「盆ギリ恋歌」(SOUTHERN ALL STARS) 2025年赤坂浄土寺盆踊り大会10 東京都港区",
+        "【All I Want For Christmas Is You】(Mariah Carey) 赤坂冬おどり27"
+      ],
+      "sample_venues": [
+        "浄土寺",
+        "Happiness(嵐)(無音) 赤坂冬おどり30",
+        "「Rockin’ Around The Christmas Tree」 赤坂冬おどり41",
+        "「盆ギリ恋歌」(SOUTHERN ALL STARS) 2025年赤坂浄土寺盆踊り大会10 東京都港区",
+        "【All I Want For Christmas Is You】(Mariah Carey) 赤坂冬おどり27"
+      ],
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=ILJMD2upujY",
+        "https://www.youtube.com/watch?v=b_zYZPnba1U",
+        "https://www.youtube.com/watch?v=EjY6OOWT4qE",
+        "https://www.youtube.com/watch?v=nf8nNtIFn5A"
+      ]
+    },
+    {
       "song_name": "Y.M.C.A",
       "aliases": [],
       "evidence_count": 37,
@@ -10746,54 +10807,6 @@
       ],
       "youtube_urls": [
         "https://www.youtube.com/watch?v=w5QUjxsR9w8"
-      ]
-    },
-    {
-      "song_name": "赤坂豊川音頭",
-      "aliases": [],
-      "evidence_count": 36,
-      "good_evidence_count": 36,
-      "years": [
-        2025
-      ],
-      "reliability_counts": {
-        "complete_numbered_video": 36
-      },
-      "source_counts": {
-        "youtube_setlist_occurrence": 36
-      },
-      "speaker_count": 1,
-      "occurrence_count": 36,
-      "evidence_url_count": 2,
-      "status": "有効",
-      "public_ready": true,
-      "review_reason": "",
-      "source_label": "YouTubeセットリスト",
-      "description": "盆踊り会場の曲目として確認されている曲です。",
-      "bon_usage_rank": "地域・会場固有",
-      "bon_usage_score": 90,
-      "song_genre_key": "local_ondo",
-      "song_genre": "ご当地音頭",
-      "genre_confidence": "中",
-      "genre_basis": "地域名・場所名を冠した音頭らしい",
-      "genre_review_status": "仮分類",
-      "sample_events": [
-        "Happiness(嵐)(無音) 赤坂冬おどり30",
-        "「Rockin’ Around The Christmas Tree」 赤坂冬おどり41",
-        "「盆ギリ恋歌」(SOUTHERN ALL STARS) 2025年赤坂浄土寺盆踊り大会10 東京都港区",
-        "【All I Want For Christmas Is You】(Mariah Carey) 赤坂冬おどり27",
-        "【All I Want For Christmas Is You】(Mariah Carey) 赤坂冬おどり35"
-      ],
-      "sample_venues": [
-        "Happiness(嵐)(無音) 赤坂冬おどり30",
-        "「Rockin’ Around The Christmas Tree」 赤坂冬おどり41",
-        "「盆ギリ恋歌」(SOUTHERN ALL STARS) 2025年赤坂浄土寺盆踊り大会10 東京都港区",
-        "【All I Want For Christmas Is You】(Mariah Carey) 赤坂冬おどり27",
-        "【All I Want For Christmas Is You】(Mariah Carey) 赤坂冬おどり35"
-      ],
-      "youtube_urls": [
-        "https://www.youtube.com/watch?v=ILJMD2upujY",
-        "https://www.youtube.com/watch?v=b_zYZPnba1U"
       ]
     },
     {
@@ -16883,6 +16896,58 @@
       ]
     },
     {
+      "song_name": "あかね音頭",
+      "aliases": [],
+      "evidence_count": 20,
+      "good_evidence_count": 20,
+      "years": [
+        2023,
+        2025
+      ],
+      "reliability_counts": {
+        "complete_numbered_video": 20
+      },
+      "source_counts": {
+        "youtube_year_backfill_review": 3,
+        "youtube_setlist_occurrence": 17
+      },
+      "speaker_count": 2,
+      "occurrence_count": 18,
+      "evidence_url_count": 4,
+      "status": "有効",
+      "public_ready": true,
+      "review_reason": "",
+      "source_label": "YouTubeセットリスト",
+      "description": "盆踊り会場の曲目として確認されている曲です。",
+      "bon_usage_rank": "地域・会場固有",
+      "bon_usage_score": 113,
+      "song_genre_key": "local_ondo",
+      "song_genre": "ご当地音頭",
+      "genre_confidence": "中",
+      "genre_basis": "地域名・場所名を冠した音頭らしい",
+      "genre_review_status": "仮分類",
+      "sample_events": [
+        "赤坂浄土寺盆踊り大会",
+        "【かわいいだけじゃだめですか?】(CUTIE STREET) みなと区民まつり2 人と地域を元気にする盆踊り実行委員会",
+        "【まつのき小唄】 みなと区民まつり盆踊り12 人と地域を元気にする盆踊り実行委員会",
+        "【越中おわら節】 みなと区民まつり盆踊り13 人と地域を元気にする盆踊り実行委員会",
+        "あかね音頭 みなと区民まつり盆踊り14 人と地域を元気にする盆踊り実行委員会"
+      ],
+      "sample_venues": [
+        "浄土寺",
+        "【かわいいだけじゃだめですか?】(CUTIE STREET) みなと区民まつり2 人と地域を元気にする盆踊り実行委員会",
+        "【まつのき小唄】 みなと区民まつり盆踊り12 人と地域を元気にする盆踊り実行委員会",
+        "【越中おわら節】 みなと区民まつり盆踊り13 人と地域を元気にする盆踊り実行委員会",
+        "あかね音頭 みなと区民まつり盆踊り14 人と地域を元気にする盆踊り実行委員会"
+      ],
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=yp6H9_4Ue58",
+        "https://www.youtube.com/watch?v=EjY6OOWT4qE",
+        "https://www.youtube.com/watch?v=Fa5pDigMTiw",
+        "https://www.youtube.com/watch?v=nf8nNtIFn5A"
+      ]
+    },
+    {
       "song_name": "おジャ魔女カーニバル",
       "aliases": [],
       "evidence_count": 20,
@@ -18639,53 +18704,6 @@
       ],
       "youtube_urls": [
         "https://www.youtube.com/watch?v=VEWVMbZi_OY"
-      ]
-    },
-    {
-      "song_name": "あかね音頭",
-      "aliases": [],
-      "evidence_count": 17,
-      "good_evidence_count": 17,
-      "years": [
-        2025
-      ],
-      "reliability_counts": {
-        "complete_numbered_video": 17
-      },
-      "source_counts": {
-        "youtube_setlist_occurrence": 17
-      },
-      "speaker_count": 1,
-      "occurrence_count": 17,
-      "evidence_url_count": 1,
-      "status": "有効",
-      "public_ready": true,
-      "review_reason": "",
-      "source_label": "YouTubeセットリスト",
-      "description": "盆踊り会場の曲目として確認されている曲です。",
-      "bon_usage_rank": "地域・会場固有",
-      "bon_usage_score": 66,
-      "song_genre_key": "local_ondo",
-      "song_genre": "ご当地音頭",
-      "genre_confidence": "中",
-      "genre_basis": "地域名・場所名を冠した音頭らしい",
-      "genre_review_status": "仮分類",
-      "sample_events": [
-        "【かわいいだけじゃだめですか?】(CUTIE STREET) みなと区民まつり2 人と地域を元気にする盆踊り実行委員会",
-        "【まつのき小唄】 みなと区民まつり盆踊り12 人と地域を元気にする盆踊り実行委員会",
-        "【越中おわら節】 みなと区民まつり盆踊り13 人と地域を元気にする盆踊り実行委員会",
-        "あかね音頭 みなと区民まつり盆踊り14 人と地域を元気にする盆踊り実行委員会",
-        "かわいいだけじゃだめですか? みなと区民まつり盆踊り16 人と地域を元気にする盆踊り実行委員会"
-      ],
-      "sample_venues": [
-        "【かわいいだけじゃだめですか?】(CUTIE STREET) みなと区民まつり2 人と地域を元気にする盆踊り実行委員会",
-        "【まつのき小唄】 みなと区民まつり盆踊り12 人と地域を元気にする盆踊り実行委員会",
-        "【越中おわら節】 みなと区民まつり盆踊り13 人と地域を元気にする盆踊り実行委員会",
-        "あかね音頭 みなと区民まつり盆踊り14 人と地域を元気にする盆踊り実行委員会",
-        "かわいいだけじゃだめですか? みなと区民まつり盆踊り16 人と地域を元気にする盆踊り実行委員会"
-      ],
-      "youtube_urls": [
-        "https://www.youtube.com/watch?v=yp6H9_4Ue58"
       ]
     },
     {

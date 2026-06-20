@@ -920,7 +920,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        8
+      ],
+      "jun": {
+        "8": "下旬"
+      },
+      "hints": [
+        [
+          8,
+          27
+        ]
+      ],
+      "label": "8月下旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      8
+    ],
+    "season_jun": {
+      "8": "下旬"
+    },
+    "season_hint_label": "8月下旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "小網神社の盆踊り（名称推定）",
@@ -975,7 +1004,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        5
+      ],
+      "jun": {
+        "5": "中旬"
+      },
+      "hints": [
+        [
+          5,
+          15
+        ]
+      ],
+      "label": "5月中旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      5
+    ],
+    "season_jun": {
+      "5": "中旬"
+    },
+    "season_hint_label": "5月中旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "日本橋小学校の盆踊り（名称推定）",
@@ -1318,7 +1376,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        9
+      ],
+      "jun": {
+        "9": "上旬"
+      },
+      "hints": [
+        [
+          9,
+          5
+        ]
+      ],
+      "label": "9月上旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      9
+    ],
+    "season_jun": {
+      "9": "上旬"
+    },
+    "season_hint_label": "9月上旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "濱町音頭盆踊り大会",
@@ -1378,7 +1465,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        9
+      ],
+      "jun": {
+        "9": "下旬"
+      },
+      "hints": [
+        [
+          9,
+          25
+        ]
+      ],
+      "label": "9月下旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      9
+    ],
+    "season_jun": {
+      "9": "下旬"
+    },
+    "season_hint_label": "9月下旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "築地本願寺納涼盆踊り大会",
@@ -1590,7 +1706,27 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        3
+      ],
+      "jun": {},
+      "hints": [],
+      "label": "3月",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": false,
+      "has_sort_hint": false
+    },
+    "season_months": [
+      3
+    ],
+    "season_jun": {},
+    "season_hint_label": "3月",
+    "season_confidence": "lowest"
   },
   {
     "name": "アークヒルズ秋祭り 盆踊り",
@@ -1645,7 +1781,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        9
+      ],
+      "jun": {
+        "9": "中旬"
+      },
+      "hints": [
+        [
+          9,
+          14
+        ]
+      ],
+      "label": "9月中旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      9
+    ],
+    "season_jun": {
+      "9": "中旬"
+    },
+    "season_hint_label": "9月中旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "第16回ハマサイトの夏祭り",
@@ -1826,7 +1991,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        3
+      ],
+      "jun": {
+        "3": "下旬"
+      },
+      "hints": [
+        [
+          3,
+          30
+        ]
+      ],
+      "label": "3月下旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      3
+    ],
+    "season_jun": {
+      "3": "下旬"
+    },
+    "season_hint_label": "3月下旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "六本木ヒルズ盆踊り",
@@ -2028,7 +2222,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        9
+      ],
+      "jun": {
+        "9": "中旬"
+      },
+      "hints": [
+        [
+          9,
+          15
+        ]
+      ],
+      "label": "9月中旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      9
+    ],
+    "season_jun": {
+      "9": "中旬"
+    },
+    "season_hint_label": "9月中旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "海岸まつり",
@@ -2083,7 +2306,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        8
+      ],
+      "jun": {
+        "8": "上旬"
+      },
+      "hints": [
+        [
+          8,
+          1
+        ]
+      ],
+      "label": "8月上旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      8
+    ],
+    "season_jun": {
+      "8": "上旬"
+    },
+    "season_hint_label": "8月上旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "増上寺 地蔵尊盆踊り大会",
@@ -2138,7 +2390,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        7
+      ],
+      "jun": {
+        "7": "中旬"
+      },
+      "hints": [
+        [
+          7,
+          15
+        ]
+      ],
+      "label": "7月中旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      7
+    ],
+    "season_jun": {
+      "7": "中旬"
+    },
+    "season_hint_label": "7月中旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "第28回新橋こいち祭 盆踊り",
@@ -2413,9 +2694,35 @@ const EVENTS = [
       "2025-07-24",
       "2025-07-25"
     ],
+    "date_prediction": {
+      "display_tier": "rule_predicted",
+      "target_year": 2026,
+      "date": "2026-07-26",
+      "date_end": "2026-07-27",
+      "weekday_start": "日",
+      "weekday_end": "月",
+      "confidence": "low",
+      "score": 0.58,
+      "rule_type": "date_near",
+      "basis": "7月26日前後",
+      "evidence_years": [
+        2023,
+        2024
+      ],
+      "evidence_count": 2,
+      "has_actual_observation": false
+    },
     "display_tier": "rule_predicted",
+    "predicted_date": "2026-07-26",
+    "predicted_date_end": "2026-07-27",
+    "prediction_basis": "7月26日前後",
+    "prediction_confidence": "low",
+    "prediction_evidence_years": [
+      2023,
+      2024
+    ],
     "historical_reference": {
-      "display_tier": "historical_slide",
+      "display_tier": "historical_reference",
       "last_seen_year": 2025,
       "last_seen_dates": [
         "2025-07-24",
@@ -2435,18 +2742,10 @@ const EVENTS = [
       ],
       "cautions": [],
       "edition_number": null,
-      "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-07-23",
-        "date_end": "2026-07-24",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第4木曜を2026年へスライド",
-        "source_date": "2025-07-24",
-        "source_date_end": "2025-07-25",
-        "duration_days": 2
-      }
+      "has_rule_prediction": true,
+      "slide": null
     },
-    "historical_display_tier": "historical_slide",
+    "historical_display_tier": "historical_reference",
     "historical_last_seen_year": 2025,
     "historical_last_seen_dates": [
       "2025-07-24",
@@ -2454,46 +2753,7 @@ const EVENTS = [
     ],
     "historical_reference_label": "2025-07-24〜2025-07-25実績・今年未確認",
     "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.59,
-    "historical_slide": {
-      "date": "2026-07-23",
-      "date_end": "2026-07-24",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第4木曜を2026年へスライド",
-      "source_date": "2025-07-24",
-      "source_date_end": "2025-07-25",
-      "duration_days": 2
-    },
-    "historical_slide_date": "2026-07-23",
-    "historical_slide_date_end": "2026-07-24",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第4木曜を2026年へスライド",
-    "predicted_date": "2026-07-26",
-    "predicted_date_end": "2026-07-27",
-    "prediction_basis": "7月26日前後",
-    "prediction_confidence": "low",
-    "date_prediction": {
-      "display_tier": "rule_predicted",
-      "target_year": 2026,
-      "date": "2026-07-26",
-      "date_end": "2026-07-27",
-      "weekday_start": "日",
-      "weekday_end": "月",
-      "confidence": "low",
-      "score": 0.58,
-      "rule_type": "date_near",
-      "basis": "7月26日前後",
-      "evidence_years": [
-        2023,
-        2024
-      ],
-      "evidence_count": 2,
-      "has_actual_observation": false
-    },
-    "prediction_evidence_years": [
-      2023,
-      2024
-    ]
+    "historical_reference_score": 0.59
   },
   {
     "name": "盆ダンスフェスティバル2023",
@@ -2548,7 +2808,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        7
+      ],
+      "jun": {
+        "7": "下旬"
+      },
+      "hints": [
+        [
+          7,
+          27
+        ]
+      ],
+      "label": "7月下旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      7
+    ],
+    "season_jun": {
+      "7": "下旬"
+    },
+    "season_hint_label": "7月下旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "第10回白金台どんぐり児童遊園 納涼盆踊り大会",
@@ -2907,7 +3196,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        9
+      ],
+      "jun": {
+        "9": "中旬"
+      },
+      "hints": [
+        [
+          9,
+          13
+        ]
+      ],
+      "label": "9月中旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      9
+    ],
+    "season_jun": {
+      "9": "中旬"
+    },
+    "season_hint_label": "9月中旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "みなと区民まつり 盆踊り",
@@ -3020,7 +3338,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        9
+      ],
+      "jun": {
+        "9": "中旬"
+      },
+      "hints": [
+        [
+          9,
+          12
+        ]
+      ],
+      "label": "9月中旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      9
+    ],
+    "season_jun": {
+      "9": "中旬"
+    },
+    "season_hint_label": "9月中旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "西久保八幡神社 盆踊り",
@@ -3287,7 +3634,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        8
+      ],
+      "jun": {
+        "8": "下旬"
+      },
+      "hints": [
+        [
+          8,
+          29
+        ]
+      ],
+      "label": "8月下旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      8
+    ],
+    "season_jun": {
+      "8": "下旬"
+    },
+    "season_hint_label": "8月下旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "赤坂氷川祭 盆踊り大会",
@@ -3341,7 +3717,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        9
+      ],
+      "jun": {
+        "9": "中旬"
+      },
+      "hints": [
+        [
+          9,
+          15
+        ]
+      ],
+      "label": "9月中旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      9
+    ],
+    "season_jun": {
+      "9": "中旬"
+    },
+    "season_hint_label": "9月中旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "上笄町会お祭り 盆踊り",
@@ -3396,7 +3801,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        9
+      ],
+      "jun": {
+        "9": "中旬"
+      },
+      "hints": [
+        [
+          9,
+          13
+        ]
+      ],
+      "label": "9月中旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      9
+    ],
+    "season_jun": {
+      "9": "中旬"
+    },
+    "season_hint_label": "9月中旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "謝恩納涼盆踊り大会（青山善光寺）",
@@ -3711,7 +4145,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        9
+      ],
+      "jun": {
+        "9": "中旬"
+      },
+      "hints": [
+        [
+          9,
+          15
+        ]
+      ],
+      "label": "9月中旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      9
+    ],
+    "season_jun": {
+      "9": "中旬"
+    },
+    "season_hint_label": "9月中旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "第42回大久保まつり パレード 百人町民民謡おどり",
@@ -4604,7 +5067,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        8
+      ],
+      "jun": {
+        "8": "下旬"
+      },
+      "hints": [
+        [
+          8,
+          23
+        ]
+      ],
+      "label": "8月下旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      8
+    ],
+    "season_jun": {
+      "8": "下旬"
+    },
+    "season_hint_label": "8月下旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "三角広場まつり「居酒屋盆踊り」",
@@ -4809,63 +5301,6 @@ const EVENTS = [
     "last_seen_dates": [
       "2025-08-16"
     ],
-    "display_tier": "rule_predicted",
-    "historical_reference": {
-      "display_tier": "historical_slide",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-08-16"
-      ],
-      "label": "2025-08-16実績・今年未確認",
-      "confidence": "medium",
-      "score": 0.6,
-      "status": "expected_medium",
-      "status_label": "昨年開催",
-      "recurrence_label": "昨年開催・継続性 中",
-      "reasons": [
-        "held_2025",
-        "venue_present",
-        "tokyo_23ward",
-        "recurring_word:商店街"
-      ],
-      "cautions": [],
-      "edition_number": null,
-      "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-08-15",
-        "date_end": "2026-08-15",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第3土曜を2026年へスライド",
-        "source_date": "2025-08-16",
-        "source_date_end": null,
-        "duration_days": 1
-      }
-    },
-    "historical_display_tier": "historical_slide",
-    "historical_last_seen_year": 2025,
-    "historical_last_seen_dates": [
-      "2025-08-16"
-    ],
-    "historical_reference_label": "2025-08-16実績・今年未確認",
-    "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.6,
-    "historical_slide": {
-      "date": "2026-08-15",
-      "date_end": "2026-08-15",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第3土曜を2026年へスライド",
-      "source_date": "2025-08-16",
-      "source_date_end": null,
-      "duration_days": 1
-    },
-    "historical_slide_date": "2026-08-15",
-    "historical_slide_date_end": "2026-08-15",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第3土曜を2026年へスライド",
-    "predicted_date": "2026-08-15",
-    "predicted_date_end": "2026-08-15",
-    "prediction_basis": "8月第3土曜",
-    "prediction_confidence": "medium",
     "date_prediction": {
       "display_tier": "rule_predicted",
       "target_year": 2026,
@@ -4884,10 +5319,46 @@ const EVENTS = [
       "evidence_count": 2,
       "has_actual_observation": false
     },
+    "display_tier": "rule_predicted",
+    "predicted_date": "2026-08-15",
+    "predicted_date_end": "2026-08-15",
+    "prediction_basis": "8月第3土曜",
+    "prediction_confidence": "medium",
     "prediction_evidence_years": [
       2024,
       2025
-    ]
+    ],
+    "historical_reference": {
+      "display_tier": "historical_reference",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-16"
+      ],
+      "label": "2025-08-16実績・今年未確認",
+      "confidence": "medium",
+      "score": 0.6,
+      "status": "expected_medium",
+      "status_label": "昨年開催",
+      "recurrence_label": "昨年開催・継続性 中",
+      "reasons": [
+        "held_2025",
+        "venue_present",
+        "tokyo_23ward",
+        "recurring_word:商店街"
+      ],
+      "cautions": [],
+      "edition_number": null,
+      "has_rule_prediction": true,
+      "slide": null
+    },
+    "historical_display_tier": "historical_reference",
+    "historical_last_seen_year": 2025,
+    "historical_last_seen_dates": [
+      "2025-08-16"
+    ],
+    "historical_reference_label": "2025-08-16実績・今年未確認",
+    "historical_reference_confidence": "medium",
+    "historical_reference_score": 0.6
   },
   {
     "name": "下落合町会知久会 第9回盆踊り",
@@ -5303,7 +5774,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        9
+      ],
+      "jun": {
+        "9": "中旬"
+      },
+      "hints": [
+        [
+          9,
+          15
+        ]
+      ],
+      "label": "9月中旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      9
+    ],
+    "season_jun": {
+      "9": "中旬"
+    },
+    "season_hint_label": "9月中旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "シタマチ.ふるさと盆踊り大会",
@@ -6062,7 +6562,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        10
+      ],
+      "jun": {
+        "10": "中旬"
+      },
+      "hints": [
+        [
+          10,
+          15
+        ]
+      ],
+      "label": "10月中旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      10
+    ],
+    "season_jun": {
+      "10": "中旬"
+    },
+    "season_hint_label": "10月中旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026",
@@ -6182,7 +6711,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        8
+      ],
+      "jun": {
+        "8": "中旬"
+      },
+      "hints": [
+        [
+          8,
+          15
+        ]
+      ],
+      "label": "8月中旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      8
+    ],
+    "season_jun": {
+      "8": "中旬"
+    },
+    "season_hint_label": "8月中旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "上野盆踊り会（厚澄会）",
@@ -6231,7 +6789,33 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        6,
+        7,
+        8,
+        10
+      ],
+      "jun": {},
+      "hints": [],
+      "label": "6月・7月・8月・10月",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": false,
+      "has_sort_hint": false
+    },
+    "season_months": [
+      6,
+      7,
+      8,
+      10
+    ],
+    "season_jun": {},
+    "season_hint_label": "6月・7月・8月・10月",
+    "season_confidence": "lowest"
   },
   {
     "name": "東本願寺盆踊り",
@@ -6462,7 +7046,36 @@ const EVENTS = [
     "edition_number": 2,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        9
+      ],
+      "jun": {
+        "9": "下旬"
+      },
+      "hints": [
+        [
+          9,
+          27
+        ]
+      ],
+      "label": "9月下旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      9
+    ],
+    "season_jun": {
+      "9": "下旬"
+    },
+    "season_hint_label": "9月下旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "奥浅草盆踊り",
@@ -6667,7 +7280,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        9
+      ],
+      "jun": {
+        "9": "中旬"
+      },
+      "hints": [
+        [
+          9,
+          15
+        ]
+      ],
+      "label": "9月中旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      9
+    ],
+    "season_jun": {
+      "9": "中旬"
+    },
+    "season_hint_label": "9月中旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "第10回 すみだ輪おどり区民感謝デー",
@@ -6819,7 +7461,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        9
+      ],
+      "jun": {
+        "9": "中旬"
+      },
+      "hints": [
+        [
+          9,
+          15
+        ]
+      ],
+      "label": "9月中旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      9
+    ],
+    "season_jun": {
+      "9": "中旬"
+    },
+    "season_hint_label": "9月中旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "菊川一丁目町会 菊一お祭り広場・盆踊り大会",
@@ -7419,7 +8090,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        9
+      ],
+      "jun": {
+        "9": "中旬"
+      },
+      "hints": [
+        [
+          9,
+          13
+        ]
+      ],
+      "label": "9月中旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      9
+    ],
+    "season_jun": {
+      "9": "中旬"
+    },
+    "season_hint_label": "9月中旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "小梅一丁目町会・睦会 牛嶋神社祭礼 奉納踊り",
@@ -7474,7 +8174,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        9
+      ],
+      "jun": {
+        "9": "中旬"
+      },
+      "hints": [
+        [
+          9,
+          12
+        ]
+      ],
+      "label": "9月中旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      9
+    ],
+    "season_jun": {
+      "9": "中旬"
+    },
+    "season_hint_label": "9月中旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "押上二町目町会 飛木稲荷神社神幸大祭 奉納おどり",
@@ -7530,7 +8259,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        9
+      ],
+      "jun": {
+        "9": "中旬"
+      },
+      "hints": [
+        [
+          9,
+          13
+        ]
+      ],
+      "label": "9月中旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      9
+    ],
+    "season_jun": {
+      "9": "中旬"
+    },
+    "season_hint_label": "9月中旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "牛嶋神社御祭礼 奉納踊り",
@@ -7585,7 +8343,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        9
+      ],
+      "jun": {
+        "9": "中旬"
+      },
+      "hints": [
+        [
+          9,
+          12
+        ]
+      ],
+      "label": "9月中旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      9
+    ],
+    "season_jun": {
+      "9": "中旬"
+    },
+    "season_hint_label": "9月中旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "本四三ツ目児童遊園の盆踊り（名称推定）",
@@ -7640,7 +8427,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        9
+      ],
+      "jun": {
+        "9": "中旬"
+      },
+      "hints": [
+        [
+          9,
+          15
+        ]
+      ],
+      "label": "9月中旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      9
+    ],
+    "season_jun": {
+      "9": "中旬"
+    },
+    "season_hint_label": "9月中旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "盆☆Dance 夏休み最後の土曜は校庭で踊ろう！",
@@ -7695,7 +8511,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        8
+      ],
+      "jun": {
+        "8": "下旬"
+      },
+      "hints": [
+        [
+          8,
+          30
+        ]
+      ],
+      "label": "8月下旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      8
+    ],
+    "season_jun": {
+      "8": "下旬"
+    },
+    "season_hint_label": "8月下旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "すみだ錦糸町河内音頭大盆踊り",
@@ -7815,7 +8660,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        9
+      ],
+      "jun": {
+        "9": "中旬"
+      },
+      "hints": [
+        [
+          9,
+          15
+        ]
+      ],
+      "label": "9月中旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      9
+    ],
+    "season_jun": {
+      "9": "中旬"
+    },
+    "season_hint_label": "9月中旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "石原一丁目 牛嶋神社 奉納踊り",
@@ -7984,7 +8858,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        9
+      ],
+      "jun": {
+        "9": "中旬"
+      },
+      "hints": [
+        [
+          9,
+          12
+        ]
+      ],
+      "label": "9月中旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      9
+    ],
+    "season_jun": {
+      "9": "中旬"
+    },
+    "season_hint_label": "9月中旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "本所二丁目 牛嶋神社 奉納踊り",
@@ -8039,7 +8942,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        9
+      ],
+      "jun": {
+        "9": "中旬"
+      },
+      "hints": [
+        [
+          9,
+          12
+        ]
+      ],
+      "label": "9月中旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      9
+    ],
+    "season_jun": {
+      "9": "中旬"
+    },
+    "season_hint_label": "9月中旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "すみだ沖縄まつり",
@@ -8161,7 +9093,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        9
+      ],
+      "jun": {
+        "9": "中旬"
+      },
+      "hints": [
+        [
+          9,
+          13
+        ]
+      ],
+      "label": "9月中旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      9
+    ],
+    "season_jun": {
+      "9": "中旬"
+    },
+    "season_hint_label": "9月中旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "第2回 辰巳で盆踊り",
@@ -8216,7 +9177,36 @@ const EVENTS = [
     "edition_number": 2,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        5
+      ],
+      "jun": {
+        "5": "中旬"
+      },
+      "hints": [
+        [
+          5,
+          17
+        ]
+      ],
+      "label": "5月中旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      5
+    ],
+    "season_jun": {
+      "5": "中旬"
+    },
+    "season_hint_label": "5月中旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "盆踊り大会",
@@ -8271,7 +9261,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        7
+      ],
+      "jun": {
+        "7": "中旬"
+      },
+      "hints": [
+        [
+          7,
+          18
+        ]
+      ],
+      "label": "7月中旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      7
+    ],
+    "season_jun": {
+      "7": "中旬"
+    },
+    "season_hint_label": "7月中旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "森下二丁目盆踊り",
@@ -8326,7 +9345,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        7
+      ],
+      "jun": {
+        "7": "中旬"
+      },
+      "hints": [
+        [
+          7,
+          19
+        ]
+      ],
+      "label": "7月中旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      7
+    ],
+    "season_jun": {
+      "7": "中旬"
+    },
+    "season_hint_label": "7月中旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "江東天祖神社の盆踊り（名称推定）",
@@ -8381,7 +9429,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        9
+      ],
+      "jun": {
+        "9": "中旬"
+      },
+      "hints": [
+        [
+          9,
+          15
+        ]
+      ],
+      "label": "9月中旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      9
+    ],
+    "season_jun": {
+      "9": "中旬"
+    },
+    "season_hint_label": "9月中旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "都の辰巳深川 臨海ぼんおどり",
@@ -8436,7 +9513,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        7
+      ],
+      "jun": {
+        "7": "中旬"
+      },
+      "hints": [
+        [
+          7,
+          19
+        ]
+      ],
+      "label": "7月中旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      7
+    ],
+    "season_jun": {
+      "7": "中旬"
+    },
+    "season_hint_label": "7月中旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "盆踊 〜BONDO〜",
@@ -8491,7 +9597,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        5
+      ],
+      "jun": {
+        "5": "中旬"
+      },
+      "hints": [
+        [
+          5,
+          15
+        ]
+      ],
+      "label": "5月中旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      5
+    ],
+    "season_jun": {
+      "5": "中旬"
+    },
+    "season_hint_label": "5月中旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "品川区民まつり 荏原第四地区",
@@ -8551,7 +9686,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        11
+      ],
+      "jun": {
+        "11": "上旬"
+      },
+      "hints": [
+        [
+          11,
+          2
+        ]
+      ],
+      "label": "11月上旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      11
+    ],
+    "season_jun": {
+      "11": "上旬"
+    },
+    "season_hint_label": "11月上旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "品川区民まつり 荏原第三地区",
@@ -8606,7 +9770,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        10
+      ],
+      "jun": {
+        "10": "中旬"
+      },
+      "hints": [
+        [
+          10,
+          19
+        ]
+      ],
+      "label": "10月中旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      10
+    ],
+    "season_jun": {
+      "10": "中旬"
+    },
+    "season_hint_label": "10月中旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "品川区民まつり 八潮地区",
@@ -8661,7 +9854,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        9
+      ],
+      "jun": {
+        "9": "中旬"
+      },
+      "hints": [
+        [
+          9,
+          14
+        ]
+      ],
+      "label": "9月中旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      9
+    ],
+    "season_jun": {
+      "9": "中旬"
+    },
+    "season_hint_label": "9月中旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "品川区民まつり 品川第二地区",
@@ -8716,7 +9938,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        7
+      ],
+      "jun": {
+        "7": "下旬"
+      },
+      "hints": [
+        [
+          7,
+          26
+        ]
+      ],
+      "label": "7月下旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      7
+    ],
+    "season_jun": {
+      "7": "下旬"
+    },
+    "season_hint_label": "7月下旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "第71回大井どんたく夏まつり 初日 盆踊り",
@@ -8932,7 +10183,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        4
+      ],
+      "jun": {
+        "4": "中旬"
+      },
+      "hints": [
+        [
+          4,
+          15
+        ]
+      ],
+      "label": "4月中旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      4
+    ],
+    "season_jun": {
+      "4": "中旬"
+    },
+    "season_hint_label": "4月中旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "品川第二地区 区民まつり・品川青年会 盆踊り大会（天妙国寺）",
@@ -8986,7 +10266,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        7
+      ],
+      "jun": {
+        "7": "下旬"
+      },
+      "hints": [
+        [
+          7,
+          25
+        ]
+      ],
+      "label": "7月下旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      7
+    ],
+    "season_jun": {
+      "7": "下旬"
+    },
+    "season_hint_label": "7月下旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "戸越宮前盆踊り",
@@ -9094,7 +10403,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        9
+      ],
+      "jun": {
+        "9": "中旬"
+      },
+      "hints": [
+        [
+          9,
+          13
+        ]
+      ],
+      "label": "9月中旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      9
+    ],
+    "season_jun": {
+      "9": "中旬"
+    },
+    "season_hint_label": "9月中旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "品川区民まつり 荏原第一地区",
@@ -9149,7 +10487,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        7
+      ],
+      "jun": {
+        "7": "下旬"
+      },
+      "hints": [
+        [
+          7,
+          26
+        ]
+      ],
+      "label": "7月下旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      7
+    ],
+    "season_jun": {
+      "7": "下旬"
+    },
+    "season_hint_label": "7月下旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "中原共和町会 戸越八幡神社祭礼 盆踊り",
@@ -9204,7 +10571,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        9
+      ],
+      "jun": {
+        "9": "中旬"
+      },
+      "hints": [
+        [
+          9,
+          13
+        ]
+      ],
+      "label": "9月中旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      9
+    ],
+    "season_jun": {
+      "9": "中旬"
+    },
+    "season_hint_label": "9月中旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "戸越八幡神社例大祭 盆踊り",
@@ -9258,7 +10654,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        9
+      ],
+      "jun": {
+        "9": "中旬"
+      },
+      "hints": [
+        [
+          9,
+          15
+        ]
+      ],
+      "label": "9月中旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      9
+    ],
+    "season_jun": {
+      "9": "中旬"
+    },
+    "season_hint_label": "9月中旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "旗の台稲荷通り商店会盆踊り 盆ROCK",
@@ -9489,7 +10914,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        9
+      ],
+      "jun": {
+        "9": "中旬"
+      },
+      "hints": [
+        [
+          9,
+          15
+        ]
+      ],
+      "label": "9月中旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      9
+    ],
+    "season_jun": {
+      "9": "中旬"
+    },
+    "season_hint_label": "9月中旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "Min-Yoi's盆踊り",
@@ -10053,7 +11507,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        8
+      ],
+      "jun": {
+        "8": "下旬"
+      },
+      "hints": [
+        [
+          8,
+          23
+        ]
+      ],
+      "label": "8月下旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      8
+    ],
+    "season_jun": {
+      "8": "下旬"
+    },
+    "season_hint_label": "8月下旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "しながわ運河まつり ステージプログラム",
@@ -10113,7 +11596,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        4
+      ],
+      "jun": {
+        "4": "中旬"
+      },
+      "hints": [
+        [
+          4,
+          13
+        ]
+      ],
+      "label": "4月中旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      4
+    ],
+    "season_jun": {
+      "4": "中旬"
+    },
+    "season_hint_label": "4月中旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "品川区民まつり 大崎第一地区",
@@ -10169,7 +11681,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        7
+      ],
+      "jun": {
+        "7": "下旬"
+      },
+      "hints": [
+        [
+          7,
+          26
+        ]
+      ],
+      "label": "7月下旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      7
+    ],
+    "season_jun": {
+      "7": "下旬"
+    },
+    "season_hint_label": "7月下旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "第3回 延七昇竜太鼓盆踊り大会",
@@ -10224,7 +11765,36 @@ const EVENTS = [
     "edition_number": 3,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        5
+      ],
+      "jun": {
+        "5": "中旬"
+      },
+      "hints": [
+        [
+          5,
+          11
+        ]
+      ],
+      "label": "5月中旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      5
+    ],
+    "season_jun": {
+      "5": "中旬"
+    },
+    "season_hint_label": "5月中旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "品川区民まつり 大崎第一地区",
@@ -10280,7 +11850,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        7
+      ],
+      "jun": {
+        "7": "下旬"
+      },
+      "hints": [
+        [
+          7,
+          26
+        ]
+      ],
+      "label": "7月下旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      7
+    ],
+    "season_jun": {
+      "7": "下旬"
+    },
+    "season_hint_label": "7月下旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "品川区民まつり 西大井広場公園 盆踊り",
@@ -16965,7 +18564,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        9
+      ],
+      "jun": {
+        "9": "中旬"
+      },
+      "hints": [
+        [
+          9,
+          15
+        ]
+      ],
+      "label": "9月中旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      9
+    ],
+    "season_jun": {
+      "9": "中旬"
+    },
+    "season_hint_label": "9月中旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "新井町会連合会・中野通り桜まつり実行委員会「中野通り桜まつり」",
@@ -17419,7 +19047,36 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        8
+      ],
+      "jun": {
+        "8": "中旬"
+      },
+      "hints": [
+        [
+          8,
+          15
+        ]
+      ],
+      "label": "8月中旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      8
+    ],
+    "season_jun": {
+      "8": "中旬"
+    },
+    "season_hint_label": "8月中旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "飛鳥山盆踊り",

@@ -1,0 +1,177 @@
+{
+  "generated_by": "apply_youtube_year_backfill_review_decisions.py",
+  "generated_at": "2026-06-20T10:08:11.518982+00:00",
+  "mode": "apply",
+  "fetched_descriptions": false,
+  "fetched_video_count": 0,
+  "decisions": "data/youtube_year_backfill_review_decisions_oto_2026-06-20.json",
+  "decision_counts": {
+    "accept_with_songs_existing_occurrence": 1,
+    "hold": 2,
+    "merge_to_existing": 1,
+    "partial_merge_drop_mismatch": 1,
+    "reject": 2
+  },
+  "manual_evidence": "data/song_evidence_manual.json",
+  "removed_existing_source_items": 0,
+  "new_evidence_items": 3,
+  "new_song_mentions": 28,
+  "accept_groups": [
+    {
+      "event_name": "赤坂浄土寺盆踊り大会",
+      "venue": "浄土寺",
+      "target_year": 2023,
+      "decision": "accept_with_songs_existing_occurrence",
+      "video_count": 3,
+      "reason": "同じ赤坂浄土寺盆踊り2023の曲目動画。開催回日付は低信頼レビューで2023-07-26として手動昇格済みなので、曲目証拠候補として扱う。",
+      "videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=nf8nNtIFn5A",
+          "title": "【相馬盆唄】　2023年赤坂浄土寺盆踊り２３　東京都港区　一ツ木通り",
+          "setlist_count": 15,
+          "song_count_applied": 10
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Fa5pDigMTiw",
+          "title": "あかね音頭　2023年赤坂浄土寺盆踊り１　東京都港区　一ツ木通り",
+          "setlist_count": 8,
+          "song_count_applied": 8
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=EjY6OOWT4qE",
+          "title": "あかね音頭　2023年赤坂浄土寺盆踊り１９　東京都港区　一ツ木通り",
+          "setlist_count": 15,
+          "song_count_applied": 10
+        }
+      ],
+      "evidence_items": 3,
+      "song_mentions_applied": 28,
+      "unique_songs_applied": 10
+    }
+  ],
+  "occurrence_only_groups": [
+    {
+      "event_name": "築地本願寺納涼盆踊り大会",
+      "venue": "築地本願寺",
+      "target_year": 2024,
+      "decision": "merge_to_existing",
+      "video_count": 1,
+      "reason": "第77回築地本願寺納涼盆踊り大会の補助動画。曲目・日付の主証拠ではなく、既存2024開催回の補助として保持。",
+      "videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=HzOJelZNL8o",
+          "title": "【せりあおさん】47ヶ月児第77回築地本願寺納涼盆踊り大会にてホームラン音頭を踊る",
+          "setlist_count": 0,
+          "song_count_applied": 0
+        }
+      ]
+    }
+  ],
+  "skipped_groups": [
+    {
+      "event_name": "奥沢交和会",
+      "venue": "奥沢小学校",
+      "target_year": 2023,
+      "decision": "hold",
+      "video_count": 1,
+      "reason": "奉優会の夏の思い出動画で、盆踊りイベント名・日付・会場の直接証拠が不足。単一動画のため保留。",
+      "videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=IPsxSKCDUwc",
+          "title": "奉優会ケアマネ福太郎の夏の思い出",
+          "setlist_count": 0,
+          "song_count_applied": 0
+        }
+      ]
+    },
+    {
+      "event_name": "納涼盆踊り大会",
+      "venue": "玉川中町公園",
+      "target_year": 2023,
+      "decision": "reject",
+      "video_count": 2,
+      "reason": "汎用名『納涼盆踊り大会』による誤マッチ。番町/緑など別会場由来で、玉川中町公園の開催回証拠ではない。",
+      "videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=Uk5Q2EptOg0",
+          "title": "#104 納涼！盆踊り大会",
+          "setlist_count": 0,
+          "song_count_applied": 0
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=XnAQorLT45A",
+          "title": "炭坑節 rec　盆ダンス　緑・納涼盆踊り大会　23.07.15",
+          "setlist_count": 0,
+          "song_count_applied": 0
+        }
+      ]
+    },
+    {
+      "event_name": "親子盆踊り大会",
+      "venue": "八幡小学校",
+      "target_year": 2023,
+      "decision": "hold",
+      "video_count": 1,
+      "reason": "タイトルに八幡盆踊りと2023-08-14らしき日付はあるが、対象の八幡小学校・親子盆踊り大会との同一性が単一動画だけでは不足。",
+      "videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=Lj2pT69q3lY",
+          "title": "2023 08 14　八幡盆踊り　YAMABUSHI LIVE",
+          "setlist_count": 0,
+          "song_count_applied": 0
+        }
+      ]
+    },
+    {
+      "event_name": "納涼盆踊り大会",
+      "venue": "玉川中町公園",
+      "target_year": 2024,
+      "decision": "reject",
+      "video_count": 3,
+      "reason": "市場納涼盆踊り大会および浅草納涼盆踊り大会の動画で、玉川中町公園の開催回証拠ではない。",
+      "videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=E_8wMWjbaYw",
+          "title": "2024年 市場納涼盆踊り大会",
+          "setlist_count": 0,
+          "song_count_applied": 0
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=K9pxh9ycvW8",
+          "title": "2024年 市場納涼盆踊り大会",
+          "setlist_count": 0,
+          "song_count_applied": 0
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=h-xKpz3S9DY",
+          "title": "【踊り説明付き！炭坑節】第50回浅草納涼盆踊り大会 #盆踊り #浅草 #炭坑節 #asakusa #bonodori",
+          "setlist_count": 0,
+          "song_count_applied": 0
+        }
+      ]
+    },
+    {
+      "event_name": "郡上おどり in 青山",
+      "venue": "秩父宮ラグビー場駐車場",
+      "target_year": 2024,
+      "decision": "partial_merge_drop_mismatch",
+      "video_count": 2,
+      "reason": "2024-06-14公開の満員御礼動画は既存2024開催回の補助として保持可。2025-06-20公開の観光動画はtarget_year=2024の証拠として使わない。",
+      "videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=CADDwkPL7CE",
+          "title": "東京青山が「岐阜の夏」に染まる夜🌜「郡上おどりin青山」#盆踊り #郡上八幡 #郡上おどり",
+          "setlist_count": 0,
+          "song_count_applied": 0
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=nbD9ov4zqao",
+          "title": "満員御礼！ 郡上おどりin青山 #青山 #盆踊り #夏祭り",
+          "setlist_count": 0,
+          "song_count_applied": 0
+        }
+      ]
+    }
+  ],
+  "needs_review": []
+}

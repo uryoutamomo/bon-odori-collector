@@ -156,7 +156,7 @@
       "before": {
         "date": "2025-08-16",
         "date_end": null,
-        "display_tier": "historical_slide",
+        "display_tier": "rule_predicted",
         "predicted_date": "2026-08-15",
         "predicted_date_end": "2026-08-15"
       },
@@ -337,9 +337,9 @@
       "before": {
         "date": "2025-07-24",
         "date_end": "2025-07-25",
-        "display_tier": "historical_slide",
-        "predicted_date": "2026-07-23",
-        "predicted_date_end": "2026-07-24"
+        "display_tier": "rule_predicted",
+        "predicted_date": "2026-07-26",
+        "predicted_date_end": "2026-07-27"
       },
       "after": {
         "date": "2025-07-24",
