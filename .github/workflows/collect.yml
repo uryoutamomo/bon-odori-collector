@@ -71,6 +71,9 @@ jobs:
         EVENT_QUEUE_STORAGE_MODE: ${{ vars.EVENT_QUEUE_STORAGE_MODE || vars.QUEUE_STORAGE_MODE || 'notion' }}
       run: python collect.py
 
+    - name: Collect official venue sites (direct monitoring)
+      run: python collect_venue_sites.py
+
     - name: Promote high-confidence event dates
       env:
         NOTION_API_TOKEN: ${{ secrets.NOTION_API_TOKEN }}

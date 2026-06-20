@@ -1,0 +1,14 @@
+{
+  "venues": [
+    {
+      "venue_id": "sankaku-hiroba",
+      "venue_name": "新宿住友ビル三角広場",
+      "feed_url": "https://www.sumitomo-sankakuhiroba.jp/feed/?post_type=events",
+      "fallback_page_url": "https://www.sumitomo-sankakuhiroba.jp/event/",
+      "keywords": ["盆踊り", "盆おどり"],
+      "date_container_regex": "<div class=\"event-period\">(.*?)</div>",
+      "date_pair_regex": "(\\d{4})/(\\d{1,2})/(\\d{1,2})\\([^)]*\\)\\s*[〜～\\-]\\s*(?:(\\d{4})/)?(\\d{1,2})/(\\d{1,2})\\([^)]*\\)",
+      "title_regex": "<h4>([^<]+)</h4>"
+    }
+  ]
+}
