@@ -200,6 +200,7 @@ Resources:
                   - lambda:AddPermission
                   - lambda:CreateFunction
                   - lambda:GetFunction
+                  - lambda:GetFunctionConfiguration
                   - lambda:UpdateFunctionCode
                   - lambda:UpdateFunctionConfiguration
                 Resource:
