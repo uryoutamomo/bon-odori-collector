@@ -17,6 +17,7 @@ import harvest_youtube_year_backfill as harvest_mod
 DATA = Path("data")
 QUEUE = DATA / "youtube_year_backfill_queue.json"
 CANDIDATES = DATA / "youtube_year_backfill_candidates.json"
+SCHEDULE_RULES = DATA / "event_schedule_rules.json"
 REPORT_JSON = DATA / "youtube_daily_backfill_report.json"
 REPORT_MD = DATA / "youtube_daily_backfill_report.md"
 PENDING_MAIL = DATA / "pending_mail.json"
@@ -112,6 +113,7 @@ def regenerate_outputs(month):
         ["python3", "build_event_occurrence_backfill_plan.py"],
         ["python3", "build_low_confidence_backfill_review.py"],
         ["python3", "apply_event_occurrence_backfill_plan.py"],
+        ["python3", "build_event_schedule_rules.py", "--target-year", "2026"],
         ["python3", "build_event_date_predictions.py", "--target-year", "2026"],
         ["python3", "apply_public_date_predictions.py"],
         ["python3", "apply_public_historical_references.py"],
@@ -149,6 +151,9 @@ def render_report(report):
         f"- candidates_after: {report.get('candidates_after', 0)}",
         f"- strong_after: {report.get('strong_after', 0)}",
         f"- review_after: {report.get('review_after', 0)}",
+        f"- schedule_rule_count: {report.get('schedule_rule_count', 0)}",
+        f"- schedule_rule_confidence_counts: {report.get('schedule_rule_confidence_counts', {})}",
+        f"- schedule_rule_axis_counts: {report.get('schedule_rule_axis_counts', {})}",
         "",
     ]
     if report.get("error"):
@@ -187,6 +192,7 @@ def mail_text(report):
         f"推定検索数: {report['estimated_search_calls']}",
         f"候補数: {report.get('candidates_before', 0)} -> {report.get('candidates_after', 0)}",
         f"strong: {report.get('strong_after', 0)} / review: {report.get('review_after', 0)}",
+        f"開催パターン分類: {report.get('schedule_rule_count', 0)}件",
         "",
         "詳細: data/youtube_daily_backfill_report.md",
     ])
@@ -201,6 +207,15 @@ def write_pending_mail(report):
     })
 
 
+def attach_schedule_rule_summary(report):
+    rules = load_json(SCHEDULE_RULES, {})
+    summary = rules.get("summary") or {}
+    report["schedule_rule_count"] = summary.get("rule_count", 0)
+    report["schedule_rule_confidence_counts"] = summary.get("confidence_counts", {})
+    report["schedule_rule_axis_counts"] = summary.get("axis_counts", {})
+    report["schedule_rule_warning_counts"] = summary.get("warning_counts", {})
+
+
 def git_commit_and_push(report, push):
     paths = [
         "data/youtube_daily_backfill_report.json",
@@ -213,6 +228,8 @@ def git_commit_and_push(report, push):
         "data/event_occurrence_observations.json",
         "data/event_occurrence_observations.md",
         "data/low_confidence_backfill_review.md",
+        "data/event_schedule_rules.json",
+        "data/event_schedule_rules.md",
         "data/event_date_predictions.json",
         "data/event_date_predictions.md",
         "data/public/events_public.json",
@@ -296,6 +313,7 @@ def main():
                 raise
             report["status"] = "quota_limited"
             report["error"] = "HTTP Error 429: Too Many Requests"
+            report["regenerated"] = regenerate_outputs(args.month)
 
     if "candidates_after" not in report:
         current = load_json(CANDIDATES, {})
@@ -303,6 +321,7 @@ def main():
         report["candidates_after"] = summary.get("candidate_count", before_count)
         report["strong_after"] = summary.get("strong_count", 0)
         report["review_after"] = summary.get("review_count", 0)
+    attach_schedule_rule_summary(report)
 
     write_json(REPORT_JSON, report)
     REPORT_MD.write_text(render_report(report), encoding="utf-8")
