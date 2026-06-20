@@ -841,6 +841,63 @@
     ]
   },
   {
+    "name": "郡上おどり in 青山",
+    "venue": "秩父宮ラグビー場駐車場",
+    "area": "港区",
+    "date": "2026-06-26",
+    "songs": [
+      {
+        "name": "かわさき",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      },
+      {
+        "name": "さわぎ",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      },
+      {
+        "name": "やっちく",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      },
+      {
+        "name": "三百",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      },
+      {
+        "name": "古調かわさき",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      },
+      {
+        "name": "春駒",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      },
+      {
+        "name": "甚句",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      }
+    ]
+  },
+  {
     "name": "西久保八幡神社 盆踊り",
     "venue": "西久保八幡神社",
     "area": "港区",
@@ -1112,6 +1169,301 @@
         "name": "花笠音頭",
         "confidence": "hint",
         "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      }
+    ]
+  },
+  {
+    "name": "浅草橋マロニエまつり盆踊り",
+    "venue": "ヒューリック浅草橋ビル前",
+    "area": "台東区",
+    "date": "2026-05-09",
+    "songs": [
+      {
+        "name": "U.S.A.",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      },
+      {
+        "name": "おけさ唄えば",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      },
+      {
+        "name": "さくら音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      },
+      {
+        "name": "たいとう音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      },
+      {
+        "name": "たいとう音頭 ダンシング・バージョン",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      },
+      {
+        "name": "また逢う日まで",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      },
+      {
+        "name": "まんまる音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      },
+      {
+        "name": "やなぎブギ",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      },
+      {
+        "name": "ダンシングヒーロー",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      },
+      {
+        "name": "ボンゴ天国",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      },
+      {
+        "name": "ワイド節",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      },
+      {
+        "name": "三味線ブギウギ",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      },
+      {
+        "name": "伊勢えび囃子",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      },
+      {
+        "name": "八木節",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      },
+      {
+        "name": "南州おどり",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      },
+      {
+        "name": "大東京音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      },
+      {
+        "name": "天竜下れば",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      },
+      {
+        "name": "宇宙太鼓",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      },
+      {
+        "name": "島人ぬ宝",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      },
+      {
+        "name": "常磐炭坑節",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      },
+      {
+        "name": "御宿・曳き舟",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      },
+      {
+        "name": "新浅草橋音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      },
+      {
+        "name": "日本はればれ音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      },
+      {
+        "name": "日本よいとこ",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      },
+      {
+        "name": "春駒ばやし",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      },
+      {
+        "name": "東京五輪音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      },
+      {
+        "name": "柳北音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      },
+      {
+        "name": "江戸っ子囃子",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      },
+      {
+        "name": "河内酒",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      },
+      {
+        "name": "浅草ばし音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      },
+      {
+        "name": "涙そうそう",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      },
+      {
+        "name": "白鳥おどり 世栄",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      },
+      {
+        "name": "相馬壁塗り甚句",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      },
+      {
+        "name": "祭りだ!和っしょい",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      },
+      {
+        "name": "祭り華〜神田明神",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      },
+      {
+        "name": "締め太鼓",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      },
+      {
+        "name": "耐久!炭坑節で踊ろうメドレー",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      },
+      {
+        "name": "雨の御堂筋",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      },
+      {
+        "name": "黒潮太鼓",
+        "confidence": "confirmed",
+        "probability": 95,
         "basis": "current_hint",
         "basis_label": "今年ヒント"
       }
@@ -2001,37 +2353,31 @@
     ]
   },
   {
-    "name": "あずま通り商店街「下北沢盆踊り2025」 8月9日(土)-10日(日) 13:00-20:00。",
+    "name": "あずま通り商店街「下北沢盆踊り2025」",
     "venue": "下北沢駅東口",
     "area": "世田谷区",
     "date": "2025-08-09",
     "songs": [
       {
         "name": "下北沢駅東口周辺で開かれる街なかの踊り",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "confidence": "hint"
       }
     ]
   },
   {
-    "name": "芦花公園商店街振興組合 「芦花公園駅前盆踊り大会」 7月25日(金) 17:00-。",
+    "name": "芦花公園商店街振興組合 「芦花公園駅前盆踊り大会」",
     "venue": "京王線芦花公園駅前ロータリー(南口)",
     "area": "世田谷区",
     "date": "2025-07-25",
     "songs": [
       {
         "name": "周辺で開かれる街なかの踊り",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "confidence": "hint"
       }
     ]
   },
   {
-    "name": "世田谷駅前商店街振興組合「納涼盆踊り大会 」",
+    "name": "世田谷駅前商店街振興組合「納涼盆踊り大会」",
     "venue": "円光院駐車場",
     "area": "世田谷区",
     "date": "2025-07-26",
@@ -2046,52 +2392,43 @@
     ]
   },
   {
-    "name": "船橋会 盆踊り 8月17日(日)。",
+    "name": "船橋会 盆踊り",
     "venue": "千歳船橋駅前広場",
     "area": "世田谷区",
     "date": "2025-08-17",
     "songs": [
       {
         "name": "千歳船橋駅前広場周辺で開かれる街なかの踊り",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "confidence": "hint"
       }
     ]
   },
   {
-    "name": "「喜多見盆踊り大会」 7月26日(土)-27日(日)。",
+    "name": "喜多見盆踊り大会",
     "venue": "小田急線喜多見駅前 南口広場",
     "area": "世田谷区",
     "date": "2025-07-26",
     "songs": [
       {
         "name": "南口広場周辺で開かれる街なかの踊り",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "confidence": "hint"
       }
     ]
   },
   {
-    "name": "祖師谷昇進会商店街(振)盆踊り 7月18日(金)-19日(土)。",
+    "name": "祖師谷昇進会商店街(振)盆踊り",
     "venue": "祖師谷神明社",
     "area": "世田谷区",
     "date": "2025-07-18",
     "songs": [
       {
         "name": "祖師谷神明社周辺で開かれる街なかの踊り",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "confidence": "hint"
       }
     ]
   },
   {
-    "name": "SHIBUYA MIYASHITA PARK BON DANCE 2025",
+    "name": "SHIBUYA MIYASHITA PARK BON DANCE",
     "venue": "宮下公園",
     "area": "渋谷区",
     "date": "2025-09-27",
@@ -2134,17 +2471,14 @@
     ]
   },
   {
-    "name": "「白鳥おどりin池袋」 4月25日(土) 11:00-20:00。",
+    "name": "白鳥おどりin池袋",
     "venue": "中池袋公園",
     "area": "豊島区",
     "date": "2026-04-25",
     "songs": [
       {
         "name": "白鳥おどり",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "confidence": "hint"
       }
     ]
   },

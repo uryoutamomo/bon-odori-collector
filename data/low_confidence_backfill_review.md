@@ -1,7 +1,7 @@
 # 低信頼バックフィル候補レビュー
 
 - source: data/youtube_year_backfill_candidates.json
-- rows: 13
+- rows: 14
 
 | action | year | date | event | venue | videos | channels | songs | sample |
 | --- | ---: | --- | --- | --- | ---: | ---: | ---: | --- |
@@ -11,6 +11,7 @@
 | hold | 2023 | 2023-09-02 | 納涼盆踊り大会 | 玉川中町公園 | 1 | 1 | 0 | 4K【自由が丘のお祭り】自由が丘熊野神社例大祭 2023 東京 Japan https://www.youtube.com/watch?v=J7_fJaH9hFY |
 | review_promote | 2023 | 2023-07-30 | 羽田青年連合会 | 羽田神社 | 2 | 1 | 2 | 羽田まつり 2023【 14基町内神輿連合渡御 ヨコタ 】7/30(日) [1/5] https://www.youtube.com/watch?v=N8j9frja2Qo |
 | review_promote | 2023 | 2023-07-17 | 自由が丘納涼盆踊り大会 | 自由が丘駅前ロータリー 特設会場 | 2 | 1 | 10 | やる気で音頭　2023年自由が丘納涼盆踊り大会１　東京都目黒区 https://www.youtube.com/watch?v=QPxuVq-Nv3w |
+| hold | 2023 | 2023-07-26 | 赤坂浄土寺盆踊り大会 | 浄土寺 | 2 | 1 | 0 | 4K＃あかね音頭＃赤坂浄土寺盆踊り大会2023＃日本の夏祭り＃2023年7月26日＃AkasakaOndo https://www.youtube.com/watch?v=cCepBj07au8 |
 | review_promote | 2023 | 2023-03-12 | 飛鳥山盆踊り | 飛鳥山公園 | 2 | 1 | 10 | しながわ中央公園盆踊り　2023年3月12日　じょんから女節・品川音頭・大森甚句・波乗りジョニー・房州よいとこ・ベイサイドブギ・湘南盆踊り・水軍ばやし・我は海の子・飛び魚音頭・お台場音頭・ポ https://www.youtube.com/watch?v=-dahLlLBKHo |
 | hold | 2024 | 2024-08-23 | 丸の内de盆踊り | 行幸通り | 1 | 1 | 4 | 4K60【東京ガーデンテラス紀尾井町】KIOI 盆おどり 2024 東京 Japan https://www.youtube.com/watch?v=vzRBqx1kelI |
 | hold | 2024 | 2024-09-12 | 丸の内de盆踊り | 行幸通り | 1 | 1 | 1 | 4K60【銀座ショーウィンド秋】夜の銀座ソニーパーク 2024 東京 Japan https://www.youtube.com/watch?v=FUMkPRgbPIw |

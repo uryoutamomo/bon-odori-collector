@@ -1,0 +1,708 @@
+{
+  "generated_by": "こと（Claude Code）",
+  "generated_at": "2026-06-20",
+  "source": "data/youtube_year_backfill_candidates.json (status=strong, 145件)",
+  "review_basis": "イベント×年グループ単位。既存events_public.json(182件)と名寄せ照合＋盆踊り知識での品質判断。",
+  "decision_legend": {
+    "accept": "曲証拠あり・問題なし。そのままevidence昇格してよい",
+    "accept_occurrence_no_songs": "開催実測occurrenceは昇格可。曲evidenceは空（曲名を出さない踊り）",
+    "accept_with_fix": "指定videoを除外する補正をしてから昇格",
+    "hold_series_merge": "シリーズ統合（occurrence年次化）の判断待ち。単独昇格しない",
+    "hold_refetch": "曲0。概要欄再取得で救える可能性。再取得後に再判定",
+    "hold_offseason": "季節外・実在性要確認",
+    "reject": "誤マッチ等で昇格しない"
+  },
+  "summary": {
+    "accept_occurrence_no_songs": 2,
+    "accept": 15,
+    "hold_refetch": 5,
+    "hold_series_merge": 4,
+    "reject": 1,
+    "accept_with_fix": 1,
+    "hold_offseason": 1
+  },
+  "decisions": [
+    {
+      "event_name": "すみだ錦糸町河内音頭大盆踊り",
+      "target_year": 2023,
+      "venue": "江東橋竪川親水公園",
+      "videos": 7,
+      "songs": 0,
+      "channels": [
+        "joy joy",
+        "祭のきせき　MatsuriNoKiseki"
+      ],
+      "dates": [
+        "2023-09-06"
+      ],
+      "matched_existing": true,
+      "decision": "accept_occurrence_no_songs",
+      "reason": "河内音頭は曲名を立てない踊り＝曲0は自然。開催実測occurrenceとしては有効。曲evidenceは空で昇格。"
+    },
+    {
+      "event_name": "みたままつり 納涼民踊のつどい",
+      "target_year": 2023,
+      "venue": "靖国神社",
+      "videos": 4,
+      "songs": 135,
+      "channels": [
+        "上泉信綱",
+        "和太鼓お祭りチャンネル"
+      ],
+      "dates": [
+        "2023-07-13",
+        "2023-07-15"
+      ],
+      "matched_existing": true,
+      "decision": "accept",
+      "reason": "曲135・複数ch・名寄せ一致。良質な過去年実測。"
+    },
+    {
+      "event_name": "奥浅草盆踊り",
+      "target_year": 2023,
+      "venue": "隅田公園",
+      "videos": 7,
+      "songs": 52,
+      "channels": [
+        "和太鼓お祭りチャンネル",
+        "山崎茂雄"
+      ],
+      "dates": [
+        "2023-07-02"
+      ],
+      "matched_existing": true,
+      "decision": "accept",
+      "reason": "曲52・名寄せ一致。"
+    },
+    {
+      "event_name": "山王音頭と民踊大会",
+      "target_year": 2023,
+      "venue": "山王パークタワー公開空地",
+      "videos": 7,
+      "songs": 314,
+      "channels": [
+        "和太鼓お祭りチャンネル"
+      ],
+      "dates": [
+        "2023-06-13"
+      ],
+      "matched_existing": true,
+      "decision": "accept",
+      "reason": "曲314・2026較正済みイベントの強力な過去実測。最優先で昇格価値あり。"
+    },
+    {
+      "event_name": "東本願寺盆踊り",
+      "target_year": 2023,
+      "venue": "東本願寺（浅草）",
+      "videos": 7,
+      "songs": 0,
+      "channels": [
+        "祭のきせき　MatsuriNoKiseki"
+      ],
+      "dates": [
+        "2023-08-22"
+      ],
+      "matched_existing": true,
+      "decision": "hold_refetch",
+      "reason": "曲0だが2024は36曲取れている＝2023動画の概要欄が緩和前(500字切れ)の疑い。description再取得後に再判定。",
+      "action": "backfill_youtube_descriptions で当該videoを再取得→extract再実行"
+    },
+    {
+      "event_name": "第15回 鴨台盆踊り",
+      "target_year": 2023,
+      "venue": "大正大学",
+      "videos": 2,
+      "songs": 45,
+      "channels": [
+        "和太鼓お祭りチャンネル",
+        "東京盆踊り「魂舞会」"
+      ],
+      "dates": [
+        "2023-07-06",
+        "2023-07-08"
+      ],
+      "matched_existing": true,
+      "decision": "accept",
+      "reason": "曲45・名寄せ一致。"
+    },
+    {
+      "event_name": "第28回新橋こいち祭 盆踊り",
+      "target_year": 2023,
+      "venue": "桜田公園",
+      "videos": 3,
+      "songs": 0,
+      "channels": [
+        "祭のきせき　MatsuriNoKiseki"
+      ],
+      "dates": [
+        "2023-07-27"
+      ],
+      "matched_existing": true,
+      "decision": "hold_refetch",
+      "reason": "曲0。概要欄再取得で救える可能性。再取得後に再判定。",
+      "action": "同上"
+    },
+    {
+      "event_name": "築地本願寺納涼盆踊り大会",
+      "target_year": 2023,
+      "venue": "築地本願寺",
+      "videos": 7,
+      "songs": 1,
+      "channels": [
+        "everwalk",
+        "お祭り",
+        "祭のきせき　MatsuriNoKiseki"
+      ],
+      "dates": [
+        "2023-08-03"
+      ],
+      "matched_existing": true,
+      "decision": "accept",
+      "reason": "曲1のみだが看板曲証拠。occurrence昇格可・曲evidenceは限定的。"
+    },
+    {
+      "event_name": "自由が丘納涼盆踊り大会",
+      "target_year": 2023,
+      "venue": "自由が丘駅前ロータリー 特設会場",
+      "videos": 2,
+      "songs": 86,
+      "channels": [
+        "和太鼓お祭りチャンネル"
+      ],
+      "dates": [
+        "2023-07-17"
+      ],
+      "matched_existing": true,
+      "decision": "accept",
+      "reason": "曲86・名寄せ一致。"
+    },
+    {
+      "event_name": "西久保八幡神社 盆踊り",
+      "target_year": 2023,
+      "venue": "西久保八幡神社",
+      "videos": 9,
+      "songs": 189,
+      "channels": [
+        "和太鼓お祭りチャンネル",
+        "山崎茂雄"
+      ],
+      "dates": [
+        "2023-08-10",
+        "2023-08-12"
+      ],
+      "matched_existing": true,
+      "decision": "accept",
+      "reason": "曲189・3ch。良質。"
+    },
+    {
+      "event_name": "謝恩納涼盆踊り大会（青山善光寺）",
+      "target_year": 2023,
+      "venue": "青山善光寺",
+      "videos": 2,
+      "songs": 0,
+      "channels": [
+        "祭のきせき　MatsuriNoKiseki"
+      ],
+      "dates": [
+        "2023-07-31"
+      ],
+      "matched_existing": true,
+      "decision": "hold_refetch",
+      "reason": "曲0。概要欄再取得後に再判定。",
+      "action": "同上"
+    },
+    {
+      "event_name": "郡上おどり in 青山 2025",
+      "target_year": 2023,
+      "venue": "秩父宮ラグビー場駐車場",
+      "videos": 5,
+      "songs": 56,
+      "channels": [
+        "shu channel",
+        "メトロ23区",
+        "和太鼓お祭りチャンネル"
+      ],
+      "dates": [
+        "2023-06-15",
+        "2023-06-16"
+      ],
+      "matched_existing": true,
+      "decision": "hold_series_merge",
+      "reason": "郡上青山の2023実測。だが『〜2025』『〜2026』が別イベント登録のため同一動画が二重計上。単一シリーズ＋occurrence年次へ統合してから昇格。",
+      "action": "シリーズ統合（内田さん確認要）。統合まで単独昇格しない",
+      "videos_detail": [
+        {
+          "date": "2023-06-16",
+          "songs": 4,
+          "title": "4K【郡上おどりin青山 2023】[1/3]『かわさき～三百～春駒』🏮Tokyo Bon Dance Festival👘2023.6.16 @秩父宮ラグビー場駐車場",
+          "url": "https://www.youtube.com/watch?v=t87ypCg5l0M"
+        },
+        {
+          "date": "2023-06-16",
+          "songs": 2,
+          "title": "4K【郡上おどりin青山 2023】[2/3]『郡上甚句』🏮Tokyo Bon Dance Festival👘2023.6.16 @秩父宮ラグビー場駐車場",
+          "url": "https://www.youtube.com/watch?v=_iUSVsgFeHk"
+        },
+        {
+          "date": "2023-06-16",
+          "songs": 3,
+          "title": "4K【郡上おどりin青山 2023】[3/3]『春駒～まつさか』🏮Tokyo Bon Dance Festival👘2023.6.16 @秩父宮ラグビー場駐車場",
+          "url": "https://www.youtube.com/watch?v=yOrCwOvrx7w"
+        },
+        {
+          "date": "2023-06-15",
+          "songs": 47,
+          "title": "郡上おどりin青山1日目①　２０２３年　秩父宮ラグビー場駐車場　東京都港区",
+          "url": "https://www.youtube.com/watch?v=GRbTxDwruZo"
+        },
+        {
+          "date": "2023-06-16",
+          "songs": 0,
+          "title": "郡上踊り 青山 2023年 第27回（ぐじょうおどり）郡上おどり 春駒｜かわさき 日本三大盆踊り 盆踊り大会 郡上八幡  bon dance 郡上おどりin青山 gujo odori in japan",
+          "url": "https://www.youtube.com/watch?v=fwIYqL5eeMw"
+        }
+      ]
+    },
+    {
+      "event_name": "郡上おどり in 青山 2026",
+      "target_year": 2023,
+      "venue": "秩父宮ラグビー場駐車場",
+      "videos": 5,
+      "songs": 56,
+      "channels": [
+        "shu channel",
+        "メトロ23区",
+        "和太鼓お祭りチャンネル"
+      ],
+      "dates": [
+        "2023-06-15",
+        "2023-06-16"
+      ],
+      "matched_existing": false,
+      "decision": "hold_series_merge",
+      "reason": "上記の二重分。統合対象。単独昇格しない。",
+      "action": "シリーズ統合対象",
+      "videos_detail": [
+        {
+          "date": "2023-06-16",
+          "songs": 4,
+          "title": "4K【郡上おどりin青山 2023】[1/3]『かわさき～三百～春駒』🏮Tokyo Bon Dance Festival👘2023.6.16 @秩父宮ラグビー場駐車場",
+          "url": "https://www.youtube.com/watch?v=t87ypCg5l0M"
+        },
+        {
+          "date": "2023-06-16",
+          "songs": 2,
+          "title": "4K【郡上おどりin青山 2023】[2/3]『郡上甚句』🏮Tokyo Bon Dance Festival👘2023.6.16 @秩父宮ラグビー場駐車場",
+          "url": "https://www.youtube.com/watch?v=_iUSVsgFeHk"
+        },
+        {
+          "date": "2023-06-16",
+          "songs": 3,
+          "title": "4K【郡上おどりin青山 2023】[3/3]『春駒～まつさか』🏮Tokyo Bon Dance Festival👘2023.6.16 @秩父宮ラグビー場駐車場",
+          "url": "https://www.youtube.com/watch?v=yOrCwOvrx7w"
+        },
+        {
+          "date": "2023-06-15",
+          "songs": 47,
+          "title": "郡上おどりin青山1日目①　２０２３年　秩父宮ラグビー場駐車場　東京都港区",
+          "url": "https://www.youtube.com/watch?v=GRbTxDwruZo"
+        },
+        {
+          "date": "2023-06-16",
+          "songs": 0,
+          "title": "郡上踊り 青山 2023年 第27回（ぐじょうおどり）郡上おどり 春駒｜かわさき 日本三大盆踊り 盆踊り大会 郡上八幡  bon dance 郡上おどりin青山 gujo odori in japan",
+          "url": "https://www.youtube.com/watch?v=fwIYqL5eeMw"
+        }
+      ]
+    },
+    {
+      "event_name": "飛鳥山盆踊り",
+      "target_year": 2023,
+      "venue": "飛鳥山公園",
+      "videos": 2,
+      "songs": 60,
+      "channels": [
+        "和太鼓お祭りチャンネル"
+      ],
+      "dates": [
+        "2023-03-12"
+      ],
+      "matched_existing": true,
+      "decision": "reject",
+      "reason": "誤マッチ。3月の飛鳥山に盆踊りは無く、1本目はしながわ中央公園盆踊りの動画。60曲はタイトル曲名羅列由来で会場と無関係。飛鳥山evidenceにしない。",
+      "action": "グループ除外。しながわ動画は品川系として再分類を別途検討",
+      "videos_detail": [
+        {
+          "date": "2023-03-12",
+          "songs": 30,
+          "title": "しながわ中央公園盆踊り　2023年3月12日　じょんから女節・品川音頭・大森甚句・波乗りジョニー・房州よいとこ・ベイサイドブギ・湘南盆踊り・水軍ばやし・我は海の子・飛び魚音頭・お台場音頭・ポ",
+          "url": "https://www.youtube.com/watch?v=-dahLlLBKHo"
+        },
+        {
+          "date": "2023-03-12",
+          "songs": 30,
+          "title": "飛鳥山公園盆踊り　2023年3月12日　東京都北区",
+          "url": "https://www.youtube.com/watch?v=Ttt-p1hwK_M"
+        }
+      ]
+    },
+    {
+      "event_name": "すみだ錦糸町河内音頭大盆踊り",
+      "target_year": 2024,
+      "venue": "江東橋竪川親水公園",
+      "videos": 9,
+      "songs": 0,
+      "channels": [
+        "joy joy",
+        "ねじまき鳥"
+      ],
+      "dates": [
+        "2024-08-28"
+      ],
+      "matched_existing": true,
+      "decision": "accept_occurrence_no_songs",
+      "reason": "河内音頭・曲0は自然。occurrence昇格可。"
+    },
+    {
+      "event_name": "みたままつり 納涼民踊のつどい",
+      "target_year": 2024,
+      "venue": "靖国神社",
+      "videos": 4,
+      "songs": 28,
+      "channels": [
+        "和太鼓お祭りチャンネル"
+      ],
+      "dates": [
+        "2024-07-15"
+      ],
+      "matched_existing": true,
+      "decision": "accept",
+      "reason": "曲28・名寄せ一致。"
+    },
+    {
+      "event_name": "シタマチ.ふるさと盆踊り大会",
+      "target_year": 2024,
+      "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+      "videos": 5,
+      "songs": 0,
+      "channels": [
+        "Urban Recruit"
+      ],
+      "dates": [
+        "2024-08-17"
+      ],
+      "matched_existing": true,
+      "decision": "hold_refetch",
+      "reason": "曲0。概要欄再取得後に再判定。",
+      "action": "description再取得→extract再実行"
+    },
+    {
+      "event_name": "丸の内de盆踊り",
+      "target_year": 2024,
+      "venue": "行幸通り",
+      "videos": 5,
+      "songs": 18,
+      "channels": [
+        "akkz01",
+        "和太鼓お祭りチャンネル"
+      ],
+      "dates": [
+        "2024-07-26",
+        "2024-08-23",
+        "2024-09-12",
+        "2024-10-11"
+      ],
+      "matched_existing": true,
+      "decision": "accept_with_fix",
+      "reason": "本体は行幸通り7/26の2本のみ。10/11日比谷シネマフェス・8/23 KIOI盆おどり(紀尾井町)・9/12銀座ソニーパークの3本が会場周辺マッチで混入→除外して昇格。",
+      "action": "2024-10-11/2024-08-23/2024-09-12のvideoを除外して昇格。8/23『KIOI盆おどり』(東京ガーデンテラス紀尾井町)は独立した盆踊りイベント→新規イベント候補として切り出し検討",
+      "videos_detail": [
+        {
+          "date": "2024-07-26",
+          "songs": 5,
+          "title": "4K60【丸の内盆踊り】行幸通り 東京駅舎 2024 東京 Japan",
+          "url": "https://www.youtube.com/watch?v=-c_ofme99W0"
+        },
+        {
+          "date": "2024-10-11",
+          "songs": 2,
+          "title": "4K60【日比谷シネマフェスティバル】丸の内仲通り 2024 東京 Japan",
+          "url": "https://www.youtube.com/watch?v=dlY5xSYgUow"
+        },
+        {
+          "date": "2024-08-23",
+          "songs": 4,
+          "title": "4K60【東京ガーデンテラス紀尾井町】KIOI 盆おどり 2024 東京 Japan",
+          "url": "https://www.youtube.com/watch?v=vzRBqx1kelI"
+        },
+        {
+          "date": "2024-07-26",
+          "songs": 7,
+          "title": "丸の内de打ち水　「丸の内音頭」　2024年7月26日丸の内夏祭り１　「大手町・丸の内・有楽町夏祭り」盆踊り　東京駅・行幸通り",
+          "url": "https://www.youtube.com/watch?v=-b5NddLyoHM"
+        },
+        {
+          "date": "2024-09-12",
+          "songs": 0,
+          "title": "4K60【銀座ショーウィンド秋】夜の銀座ソニーパーク 2024 東京 Japan",
+          "url": "https://www.youtube.com/watch?v=FUMkPRgbPIw"
+        }
+      ]
+    },
+    {
+      "event_name": "奥浅草盆踊り",
+      "target_year": 2024,
+      "venue": "隅田公園",
+      "videos": 5,
+      "songs": 39,
+      "channels": [
+        "Tokyo Lonely Walker",
+        "オールデイズGOGO",
+        "和太鼓お祭りチャンネル"
+      ],
+      "dates": [
+        "2024-06-29"
+      ],
+      "matched_existing": true,
+      "decision": "accept",
+      "reason": "曲39・名寄せ一致。"
+    },
+    {
+      "event_name": "山王音頭と民踊大会",
+      "target_year": 2024,
+      "venue": "山王パークタワー公開空地",
+      "videos": 10,
+      "songs": 9,
+      "channels": [
+        "shu channel",
+        "和太鼓お祭りチャンネル",
+        "祭のきせき　盆踊り"
+      ],
+      "dates": [
+        "2024-06-13",
+        "2024-06-15"
+      ],
+      "matched_existing": true,
+      "decision": "accept",
+      "reason": "曲9。2026較正イベントの過去年。曲少だが実測として有効。"
+    },
+    {
+      "event_name": "戸越宮前盆踊り",
+      "target_year": 2024,
+      "venue": "宮前小学校",
+      "videos": 1,
+      "songs": 0,
+      "channels": [
+        "品川区公式チャンネル しながわネットTV"
+      ],
+      "dates": [],
+      "matched_existing": true,
+      "decision": "hold_refetch",
+      "reason": "1本・曲0。再取得/手動確認後に。",
+      "action": "description再取得 or 手動確認"
+    },
+    {
+      "event_name": "旗の台稲荷通り商店会盆踊り 盆ROCK",
+      "target_year": 2024,
+      "venue": "旗の台稲荷通り商店街",
+      "videos": 1,
+      "songs": 0,
+      "channels": [
+        "tekutekuTV"
+      ],
+      "dates": [
+        "2024-11-17"
+      ],
+      "matched_existing": true,
+      "decision": "hold_offseason",
+      "reason": "1本・曲0・11月開催。盆ROCKは秋開催の可能性あり要確認。日付・実在性を確認後に判定。",
+      "action": "開催月・実在性を手動確認",
+      "videos_detail": [
+        {
+          "date": "2024-11-17",
+          "songs": 0,
+          "title": "てくてくTV　旗の台　稲荷通り商店会　盆踊り『盆ROCK』（ぼんロック）に行く　2024.11.17",
+          "url": "https://www.youtube.com/watch?v=u6-qkx30GLw"
+        }
+      ]
+    },
+    {
+      "event_name": "東本願寺盆踊り",
+      "target_year": 2024,
+      "venue": "東本願寺（浅草）",
+      "videos": 8,
+      "songs": 36,
+      "channels": [
+        "Tokyo Dance Storage",
+        "joy joy",
+        "和太鼓お祭りチャンネル"
+      ],
+      "dates": [
+        "2024-08-21"
+      ],
+      "matched_existing": true,
+      "decision": "accept",
+      "reason": "曲36・名寄せ一致。2023(0曲)の再取得判定の基準。"
+    },
+    {
+      "event_name": "歌舞伎町BON ODORI",
+      "target_year": 2024,
+      "venue": "歌舞伎町シネシティ広場",
+      "videos": 2,
+      "songs": 3,
+      "channels": [
+        "Tokyo Lonely Walker"
+      ],
+      "dates": [
+        "2024-08-17"
+      ],
+      "matched_existing": true,
+      "decision": "accept",
+      "reason": "曲3・名寄せ一致。新しめの注目イベント。"
+    },
+    {
+      "event_name": "第15回 鴨台盆踊り",
+      "target_year": 2024,
+      "venue": "大正大学",
+      "videos": 6,
+      "songs": 40,
+      "channels": [
+        "和太鼓お祭りチャンネル",
+        "大正大学"
+      ],
+      "dates": [
+        "2024-07-05"
+      ],
+      "matched_existing": true,
+      "decision": "accept",
+      "reason": "曲40・名寄せ一致。"
+    },
+    {
+      "event_name": "自由が丘納涼盆踊り大会",
+      "target_year": 2024,
+      "venue": "自由が丘駅前ロータリー 特設会場",
+      "videos": 4,
+      "songs": 2,
+      "channels": [
+        "Tokyo Lonely Walker",
+        "Urban Walk",
+        "iTSCOM",
+        "愛と光と優しさのお福分けch"
+      ],
+      "dates": [
+        "2024-07-13",
+        "2024-07-15",
+        "2024-07-24"
+      ],
+      "matched_existing": true,
+      "decision": "accept",
+      "reason": "曲2と少ないが名寄せ一致・実測。"
+    },
+    {
+      "event_name": "西久保八幡神社 盆踊り",
+      "target_year": 2024,
+      "venue": "西久保八幡神社",
+      "videos": 8,
+      "songs": 94,
+      "channels": [
+        "和太鼓お祭りチャンネル"
+      ],
+      "dates": [
+        "2024-08-09"
+      ],
+      "matched_existing": true,
+      "decision": "accept",
+      "reason": "曲94・名寄せ一致。"
+    },
+    {
+      "event_name": "郡上おどり in 青山 2025",
+      "target_year": 2024,
+      "venue": "秩父宮ラグビー場駐車場",
+      "videos": 4,
+      "songs": 7,
+      "channels": [
+        "Hidden NIPPON",
+        "Very JAPAN",
+        "shu channel"
+      ],
+      "dates": [
+        "2024-06-14"
+      ],
+      "matched_existing": true,
+      "decision": "hold_series_merge",
+      "reason": "郡上青山2024実測の二重分。統合対象。",
+      "action": "シリーズ統合対象",
+      "videos_detail": [
+        {
+          "date": "2024-06-14",
+          "songs": 5,
+          "title": "「郡上おどり in 青山」納涼大会 盆踊り 2024 Tokyo,Aoyama Bon Dance. Bon Odori 郡上踊り",
+          "url": "https://www.youtube.com/watch?v=3uOCgqTaTG4"
+        },
+        {
+          "date": "2024-06-14",
+          "songs": 1,
+          "title": "【日本三大盆踊り】郡上おどりin青山 2024夏 ‐Gujo Odori (Japanese Bon Dance）in Aoyama, Tokyo-",
+          "url": "https://www.youtube.com/watch?v=Ng_9XEnpfQs"
+        },
+        {
+          "date": "2024-06-14",
+          "songs": 0,
+          "title": "【郡上おどりin青山 2024】（1/2）かわさき～げんげんばらばら～さわぎ～春駒🏮Tokyo Bon Dance Festival👘2024.6.15 @秩父宮ラグビー場 駐車場",
+          "url": "https://www.youtube.com/watch?v=7nJ6Xg3XRgo"
+        },
+        {
+          "date": "2024-06-14",
+          "songs": 1,
+          "title": "【郡上おどりin青山 2024】（2/2）かわさき～さわぎ～三百～郡上甚句～春駒～まつさか🏮Tokyo Bon Dance Festival👘2024.6.15 @秩父宮ラグビー場 駐車場",
+          "url": "https://www.youtube.com/watch?v=lqzUIJ7u_bU"
+        }
+      ]
+    },
+    {
+      "event_name": "郡上おどり in 青山 2026",
+      "target_year": 2024,
+      "venue": "秩父宮ラグビー場駐車場",
+      "videos": 4,
+      "songs": 7,
+      "channels": [
+        "Hidden NIPPON",
+        "Very JAPAN",
+        "shu channel"
+      ],
+      "dates": [
+        "2024-06-14"
+      ],
+      "matched_existing": false,
+      "decision": "hold_series_merge",
+      "reason": "同上の二重分。統合対象。",
+      "action": "シリーズ統合対象",
+      "videos_detail": [
+        {
+          "date": "2024-06-14",
+          "songs": 5,
+          "title": "「郡上おどり in 青山」納涼大会 盆踊り 2024 Tokyo,Aoyama Bon Dance. Bon Odori 郡上踊り",
+          "url": "https://www.youtube.com/watch?v=3uOCgqTaTG4"
+        },
+        {
+          "date": "2024-06-14",
+          "songs": 1,
+          "title": "【日本三大盆踊り】郡上おどりin青山 2024夏 ‐Gujo Odori (Japanese Bon Dance）in Aoyama, Tokyo-",
+          "url": "https://www.youtube.com/watch?v=Ng_9XEnpfQs"
+        },
+        {
+          "date": "2024-06-14",
+          "songs": 0,
+          "title": "【郡上おどりin青山 2024】（1/2）かわさき～げんげんばらばら～さわぎ～春駒🏮Tokyo Bon Dance Festival👘2024.6.15 @秩父宮ラグビー場 駐車場",
+          "url": "https://www.youtube.com/watch?v=7nJ6Xg3XRgo"
+        },
+        {
+          "date": "2024-06-14",
+          "songs": 1,
+          "title": "【郡上おどりin青山 2024】（2/2）かわさき～さわぎ～三百～郡上甚句～春駒～まつさか🏮Tokyo Bon Dance Festival👘2024.6.15 @秩父宮ラグビー場 駐車場",
+          "url": "https://www.youtube.com/watch?v=lqzUIJ7u_bU"
+        }
+      ]
+    }
+  ]
+}

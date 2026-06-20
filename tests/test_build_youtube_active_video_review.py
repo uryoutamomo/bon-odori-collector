@@ -93,6 +93,52 @@ class BuildYoutubeActiveVideoReviewTest(unittest.TestCase):
         self.assertEqual(row["matched_public_event"], None)
         self.assertEqual(row["action"], "review_video_evidence")
 
+    def test_matches_hanazono_after_public_event_exists(self):
+        review = build_review(
+            [
+                {
+                    "source": "youtube",
+                    "youtube_channel_id": "UC_ACTIVE",
+                    "youtube_channel_title": "Urban Walk",
+                    "name": "Urban Walk",
+                    "title": "生歌「八木節」!!【新宿 花園神社 盆踊り 2025】",
+                    "text": "開催日時：2025年8月2日(土)\n開催場所：新宿 花園神社",
+                    "url": "https://www.youtube.com/watch?v=hanazono",
+                    "date": "2025-08-02T15:37:37Z",
+                }
+            ],
+            {"channels": [{"channel_id": "UC_ACTIVE", "status": "active", "collection_enabled": True}]},
+            [{"name": "花園神社 盆踊り", "venue": "花園神社", "date": "2025-08-01", "date_end": "2025-08-02"}],
+            {"occurrences": []},
+        )
+
+        row = review["rows"][0]
+        self.assertEqual(row["action"], "append_existing_event")
+        self.assertEqual(row["matched_public_event"]["name"], "花園神社 盆踊り")
+
+    def test_does_not_match_weak_partial_without_detected_date(self):
+        review = build_review(
+            [
+                {
+                    "source": "youtube",
+                    "youtube_channel_id": "UC_ACTIVE",
+                    "youtube_channel_title": "Urban Walk",
+                    "name": "Urban Walk",
+                    "title": "【新宿 花園神社】酉の市 2025 一の酉",
+                    "text": "屋台 とりのいち",
+                    "url": "https://www.youtube.com/watch?v=tori",
+                    "date": "2025-11-13T00:00:00+00:00",
+                }
+            ],
+            {"channels": [{"channel_id": "UC_ACTIVE", "status": "active", "collection_enabled": True}]},
+            [{"name": "花園神社 盆踊り", "venue": "花園神社", "date": "2025-08-01", "date_end": "2025-08-02"}],
+            {"occurrences": []},
+        )
+
+        row = review["rows"][0]
+        self.assertEqual(row["matched_public_event"], None)
+        self.assertEqual(row["action"], "ignore")
+
     def test_marks_out_of_scope_setlist_video_as_out_of_scope(self):
         review = build_review(
             [

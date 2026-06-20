@@ -1,0 +1,408 @@
+{
+  "generated_by": "こと（Claude Code）",
+  "generated_at": "2026-06-20",
+  "source": "data/youtube_year_backfill_candidates.json (status=review 34本/13グループ・実データ全件確認)",
+  "review_basis": "review枠13グループ34本を実データで全件精査（前回の幻event_nameを実名で組み直し）。既存events_public.jsonと名寄せ照合＋盆踊り知識。主眼は新規候補発掘＋既存への良データ昇格＋誤マッチ/重複の除外。",
+  "decision_legend": {
+    "new_candidate": "既存DBに無い23区内の新規イベント候補。実在・日程の裏取りを推奨",
+    "accept_with_songs": "既存イベントの良データ。曲evidenceとして昇格",
+    "merge_to_existing": "既存イベントの追加動画（曲0中心）。occurrence/evidence補強",
+    "duplicate_year_drop": "他年グループと同一動画の年取り違え重複。公開登録は正しい年へ一本化しドロップ",
+    "reject": "誤マッチ等で除外。evidence化しない",
+    "needs_review": "未分類"
+  },
+  "summary": {
+    "merge_to_existing": 8,
+    "duplicate_year_drop": 1,
+    "reject": 1,
+    "accept_with_songs": 3
+  },
+  "decisions": [
+    {
+      "event_name": "みたままつり 納涼民踊のつどい",
+      "target_year": 2023,
+      "venue": "靖国神社",
+      "videos": 2,
+      "songs": 0,
+      "score_max": 58,
+      "matched_existing": true,
+      "matched_to": "みたままつり 納涼民踊のつどい",
+      "decision": "merge_to_existing",
+      "reason": "靖国神社みたままつり。既存イベントの追加動画2本。俯瞰撮影で曲0は自然。strong枠の靖国2023(135曲)に吸収。",
+      "videos_detail": [
+        {
+          "date": "",
+          "songs": 0,
+          "title": "4K 🏮＃鹿児島おはら節🎎＃靖国神社＃みたままつり盆踊り大会2023🏮＃日本の夏祭り＃KagoshimaOharaBushi",
+          "url": "https://www.youtube.com/watch?v=Jb59NHC19h4"
+        },
+        {
+          "date": "",
+          "songs": 0,
+          "title": "Mitama Festival 2023",
+          "url": "https://www.youtube.com/watch?v=hg6lGBwNPSk"
+        }
+      ]
+    },
+    {
+      "event_name": "奥浅草盆踊り",
+      "target_year": 2023,
+      "venue": "隅田公園",
+      "videos": 1,
+      "songs": 0,
+      "score_max": 65,
+      "matched_existing": true,
+      "matched_to": "奥浅草盆踊り",
+      "decision": "merge_to_existing",
+      "reason": "隅田公園・第1回奥浅草盆踊り大会。既存イベントの追加動画1本。曲0。",
+      "videos_detail": [
+        {
+          "date": "",
+          "songs": 0,
+          "title": "第１回 奥浅草盆踊り大会",
+          "url": "https://www.youtube.com/watch?v=dAN64AvV95s"
+        }
+      ]
+    },
+    {
+      "event_name": "第10回白金台どんぐり児童遊園 納涼盆踊り大会",
+      "target_year": 2023,
+      "venue": "白金台どんぐり児童遊園",
+      "videos": 2,
+      "songs": 56,
+      "score_max": 55,
+      "matched_existing": true,
+      "matched_to": "第10回白金台どんぐり児童遊園 納涼盆踊り大会",
+      "decision": "duplicate_year_drop",
+      "reason": "2024と同一動画2本(t9jxIJN6Spo/sSZfShcGtEE)・タイトルも『2024年』＝年取り違えで2023に重複分類。公開登録は2024へ一本化しこの2023グループはドロップ。",
+      "videos_detail": [
+        {
+          "date": "",
+          "songs": 28,
+          "title": "東北音頭　2024年白金台どんぐり児童遊園納涼盆踊り大会24　東京都港区",
+          "url": "https://www.youtube.com/watch?v=t9jxIJN6Spo"
+        },
+        {
+          "date": "",
+          "songs": 28,
+          "title": "黒潮ヤッサ　2024年白金台どんぐり児童遊園納涼盆踊り大会23　東京都港区",
+          "url": "https://www.youtube.com/watch?v=sSZfShcGtEE"
+        }
+      ]
+    },
+    {
+      "event_name": "第15回 鴨台盆踊り",
+      "target_year": 2023,
+      "venue": "大正大学",
+      "videos": 2,
+      "songs": 0,
+      "score_max": 58,
+      "matched_existing": true,
+      "matched_to": "第15回 鴨台盆踊り",
+      "decision": "merge_to_existing",
+      "reason": "大正大学・鴨台盆踊り。既存イベントの追加動画2本。Shorts主体で曲0。",
+      "videos_detail": [
+        {
+          "date": "",
+          "songs": 0,
+          "title": "4K 🏮＃チャンチキおけさ～🎎＃大正大学＃鴨台盆踊り大会2023🏮＃日本の夏祭り＃CyantikiOkesa",
+          "url": "https://www.youtube.com/watch?v=z6Q9xIfQt60"
+        },
+        {
+          "date": "",
+          "songs": 0,
+          "title": "4K🌺巣鴨音頭①🎶大正大学,鴨台盆踊り2023💑🌴🏮🎆💎#)Shorts🌸",
+          "url": "https://www.youtube.com/watch?v=98sqTRCqL7g"
+        }
+      ]
+    },
+    {
+      "event_name": "自由が丘納涼盆踊り大会",
+      "target_year": 2023,
+      "venue": "自由が丘駅前ロータリー 特設会場",
+      "videos": 1,
+      "songs": 0,
+      "score_max": 68,
+      "matched_existing": true,
+      "matched_to": "自由が丘納涼盆踊り大会",
+      "decision": "merge_to_existing",
+      "reason": "自由が丘駅前ロータリー。既存イベントの追加動画1本。東京音頭1曲タイトルで曲0扱い。",
+      "videos_detail": [
+        {
+          "date": "",
+          "songs": 0,
+          "title": "【Jiyugaoka Bon Odori】自由が丘納涼盆踊り大会2023 東京音頭【4K】",
+          "url": "https://www.youtube.com/watch?v=e0gHzNrGysA"
+        }
+      ]
+    },
+    {
+      "event_name": "飛鳥山盆踊り",
+      "target_year": 2023,
+      "venue": "飛鳥山公園",
+      "videos": 2,
+      "songs": 46,
+      "score_max": 58,
+      "matched_existing": true,
+      "matched_to": "飛鳥山盆踊り",
+      "decision": "reject",
+      "reason": "誤マッチ。2本目『2022年秋の盆踊りフェスタ ららぽーと名古屋みなとアクルス』は名古屋の別物で46曲はこれ由来。1本目(gyelA8hIxtA)は本物の2023飛鳥山だが曲0。グループごとevidence化から除外(本物1本はoccurrenceのみ保持可)。",
+      "videos_detail": [
+        {
+          "date": "",
+          "songs": 0,
+          "title": "2023年飛鳥山公園盆踊り会",
+          "url": "https://www.youtube.com/watch?v=gyelA8hIxtA"
+        },
+        {
+          "date": "",
+          "songs": 46,
+          "title": "おさかな天国　2022年秋の盆踊りフェスタ２３　ららぽーと名古屋みなとアクルス",
+          "url": "https://www.youtube.com/watch?v=Efm347Py-Bg"
+        }
+      ]
+    },
+    {
+      "event_name": "みたままつり 納涼民踊のつどい",
+      "target_year": 2024,
+      "venue": "靖国神社",
+      "videos": 4,
+      "songs": 0,
+      "score_max": 58,
+      "matched_existing": true,
+      "matched_to": "みたままつり 納涼民踊のつどい",
+      "decision": "merge_to_existing",
+      "reason": "同上の2024分4本。曲0。strong枠の靖国2024に吸収。",
+      "videos_detail": [
+        {
+          "date": "",
+          "songs": 0,
+          "title": "⛩️＃ご祝儀音頭🏮＃靖国神社みたままつり盆踊り2024 💞観光客も大盛り上がり＃GosyugiOndo＃YasukuniShrine",
+          "url": "https://www.youtube.com/watch?v=5HfVVgNBs8k"
+        },
+        {
+          "date": "",
+          "songs": 0,
+          "title": "⛩️＃七福神🏮＃靖国神社みたままつり盆踊り2024 💞七福踊りで大盛り上がり＃Shichifukujin＃YasukuniShrine",
+          "url": "https://www.youtube.com/watch?v=xhY2ACKdxO0"
+        },
+        {
+          "date": "",
+          "songs": 0,
+          "title": "＃四季の花踊り＃靖国神社みたままつり盆踊り2024 観光客も大盛り上がり＃ShikinoHanaOdori＃YasukuniShrine",
+          "url": "https://www.youtube.com/watch?v=2F8pO-AK034"
+        },
+        {
+          "date": "",
+          "songs": 0,
+          "title": "🏝️＃鹿児島おはら節⛩️＃靖国神社みたままつり盆踊り2024 🌺外国人客も大盛り上がり💞＃KagoshimaOharaBushi ＃YasukuniShrineBonDance",
+          "url": "https://www.youtube.com/watch?v=N3ttdSbivqw"
+        }
+      ]
+    },
+    {
+      "event_name": "奥浅草盆踊り",
+      "target_year": 2024,
+      "venue": "隅田公園",
+      "videos": 1,
+      "songs": 0,
+      "score_max": 68,
+      "matched_existing": true,
+      "matched_to": "奥浅草盆踊り",
+      "decision": "merge_to_existing",
+      "reason": "同上の追加動画。ただしタイトルが『奥浅草盆踊り大会2025』＝target_year=2024と不一致→occurrence年の取り違え疑い・要確認。",
+      "videos_detail": [
+        {
+          "date": "",
+          "songs": 0,
+          "title": "奥浅草盆踊り大会2025 芙蓉一翔先生民謡18曲4分30秒！！",
+          "url": "https://www.youtube.com/watch?v=5IR_UMx6ylM"
+        }
+      ]
+    },
+    {
+      "event_name": "東本願寺盆踊り",
+      "target_year": 2024,
+      "venue": "東本願寺（浅草）",
+      "videos": 1,
+      "songs": 0,
+      "score_max": 68,
+      "matched_existing": true,
+      "matched_to": "東本願寺盆踊り",
+      "decision": "merge_to_existing",
+      "reason": "浅草・東本願寺。既存イベントの追加動画(AJATEライブ)1本。曲0。strong枠の東本願寺2024(36曲)に追加。",
+      "videos_detail": [
+        {
+          "date": "",
+          "songs": 0,
+          "title": "浅草 東本願寺盆踊り - AJATE ライブ",
+          "url": "https://www.youtube.com/watch?v=gFLBg3h0uQg"
+        }
+      ]
+    },
+    {
+      "event_name": "歌舞伎町BON ODORI",
+      "target_year": 2024,
+      "venue": "歌舞伎町シネシティ広場",
+      "videos": 1,
+      "songs": 0,
+      "score_max": 68,
+      "matched_existing": true,
+      "matched_to": "歌舞伎町BON ODORI",
+      "decision": "merge_to_existing",
+      "reason": "歌舞伎町シネシティ広場。既存イベントの追加動画1本。曲0。",
+      "videos_detail": [
+        {
+          "date": "",
+          "songs": 0,
+          "title": "歌舞伎町BONODORI2024盆DANCEダンシングヒーロー！",
+          "url": "https://www.youtube.com/watch?v=FVyStPWePVQ"
+        }
+      ]
+    },
+    {
+      "event_name": "第10回白金台どんぐり児童遊園 納涼盆踊り大会",
+      "target_year": 2024,
+      "venue": "白金台どんぐり児童遊園",
+      "videos": 2,
+      "songs": 56,
+      "score_max": 73,
+      "matched_existing": true,
+      "matched_to": "第10回白金台どんぐり児童遊園 納涼盆踊り大会",
+      "decision": "accept_with_songs",
+      "reason": "港区・白金台どんぐり児童遊園。既存登録済み(recurring_last_year・既存date2025-09-07)＝新規ではない。2本/56曲(東北音頭・黒潮ヤッサ等)を既存へ曲evidence昇格。注意：動画タイトルは『2024年・第10回』で既存dateの2025と年ズレ→occurrence年/開催回を要確認。",
+      "videos_detail": [
+        {
+          "date": "",
+          "songs": 28,
+          "title": "東北音頭　2024年白金台どんぐり児童遊園納涼盆踊り大会24　東京都港区",
+          "url": "https://www.youtube.com/watch?v=t9jxIJN6Spo"
+        },
+        {
+          "date": "",
+          "songs": 28,
+          "title": "黒潮ヤッサ　2024年白金台どんぐり児童遊園納涼盆踊り大会23　東京都港区",
+          "url": "https://www.youtube.com/watch?v=sSZfShcGtEE"
+        }
+      ]
+    },
+    {
+      "event_name": "謝恩納涼盆踊り大会（青山善光寺）",
+      "target_year": 2024,
+      "venue": "青山善光寺",
+      "videos": 9,
+      "songs": 92,
+      "score_max": 73,
+      "matched_existing": true,
+      "matched_to": "謝恩納涼盆踊り大会（青山善光寺）",
+      "decision": "accept_with_songs",
+      "reason": "青山善光寺・港区。strong枠でhold_refetch済の系列の2024良データ9本/92曲(ニッポン・ワッショイ/ゆかた音頭/東京みなと音頭等)。曲evidence補強として昇格。",
+      "videos_detail": [
+        {
+          "date": "",
+          "songs": 3,
+          "title": "「ニッポン・ワッショイ」　2024年青山善光寺「謝恩納涼盆踊り大会」６　東京都港区　青山表参道商店会",
+          "url": "https://www.youtube.com/watch?v=UrKPWXZa2JA"
+        },
+        {
+          "date": "",
+          "songs": 14,
+          "title": "「バハマママ」　2024年青山善光寺「謝恩納涼盆踊り大会」23　東京都港区　青山表参道商店会",
+          "url": "https://www.youtube.com/watch?v=J26iE-vQrp4"
+        },
+        {
+          "date": "",
+          "songs": 14,
+          "title": "「好きになった人」　2024年青山善光寺「謝恩納涼盆踊り大会」21　東京都港区　青山表参道商店会",
+          "url": "https://www.youtube.com/watch?v=yclS4kSTUnE"
+        },
+        {
+          "date": "",
+          "songs": 8,
+          "title": "【ダンシング・ヒーロー（Eat You Up）】　2024年青山善光寺「謝恩納涼盆踊り大会」７　東京都港区　青山表参道商店会",
+          "url": "https://www.youtube.com/watch?v=Wzh56-DZ8QY"
+        },
+        {
+          "date": "",
+          "songs": 12,
+          "title": "【ハワイ音頭】　2024年青山善光寺「謝恩納涼盆踊り大会」16　東京都港区　青山表参道商店会",
+          "url": "https://www.youtube.com/watch?v=ZSauJBH3MA0"
+        },
+        {
+          "date": "",
+          "songs": 3,
+          "title": "【白浜音頭】　2024年青山善光寺「謝恩納涼盆踊り大会」４　東京都港区　青山表参道商店会",
+          "url": "https://www.youtube.com/watch?v=q79HgmniMgo"
+        },
+        {
+          "date": "",
+          "songs": 12,
+          "title": "にっぽんチャチャチャ　2024年青山善光寺「謝恩納涼盆踊り大会」18　東京都港区　青山表参道商店会",
+          "url": "https://www.youtube.com/watch?v=K5_ifXt5FpQ"
+        },
+        {
+          "date": "",
+          "songs": 14,
+          "title": "ゆかた音頭　2024年青山善光寺「謝恩納涼盆踊り大会」19　東京都港区　青山表参道商店会",
+          "url": "https://www.youtube.com/watch?v=HRGc7sxp2f0"
+        },
+        {
+          "date": "",
+          "songs": 12,
+          "title": "東京みなと音頭　2024年青山善光寺「謝恩納涼盆踊り大会」15　東京都港区　青山表参道商店会",
+          "url": "https://www.youtube.com/watch?v=O-YrdOb6u0U"
+        }
+      ]
+    },
+    {
+      "event_name": "飛鳥山盆踊り",
+      "target_year": 2024,
+      "venue": "飛鳥山公園",
+      "videos": 6,
+      "songs": 59,
+      "score_max": 73,
+      "matched_existing": true,
+      "matched_to": "飛鳥山盆踊り",
+      "decision": "accept_with_songs",
+      "reason": "本物の良データ。飛鳥山公園飛鳥舞台・東京都北区6本/59曲(温泉芸者・ふるさと北区・相馬盆唄等)。既存飛鳥山に曲evidence昇格。",
+      "videos_detail": [
+        {
+          "date": "",
+          "songs": 10,
+          "title": "「温泉芸者」　2024年飛鳥山公園盆踊り会15　飛鳥山公園飛鳥舞台　東京都北区",
+          "url": "https://www.youtube.com/watch?v=BhYvUCNb7m8"
+        },
+        {
+          "date": "",
+          "songs": 9,
+          "title": "いわき やっちき　2024年飛鳥山公園盆踊り会12　飛鳥山公園飛鳥舞台　東京都北区",
+          "url": "https://www.youtube.com/watch?v=gmBxP-PaP6U"
+        },
+        {
+          "date": "",
+          "songs": 7,
+          "title": "ふるさと北区　2024年飛鳥山公園盆踊り会５　飛鳥山公園飛鳥舞台　東京都北区",
+          "url": "https://www.youtube.com/watch?v=3vA0VL7zu2c"
+        },
+        {
+          "date": "",
+          "songs": 14,
+          "title": "女のきもち　2024年飛鳥山公園盆踊り会23　飛鳥山公園飛鳥舞台　東京都北区",
+          "url": "https://www.youtube.com/watch?v=788BK5t6Ee0"
+        },
+        {
+          "date": "",
+          "songs": 10,
+          "title": "百年桜　2024年飛鳥山公園盆踊り会13　飛鳥山公園飛鳥舞台　東京都北区",
+          "url": "https://www.youtube.com/watch?v=WoPKLse9Z6E"
+        },
+        {
+          "date": "",
+          "songs": 9,
+          "title": "相馬盆唄　2024年飛鳥山公園盆踊り会８　飛鳥山公園飛鳥舞台　東京都北区",
+          "url": "https://www.youtube.com/watch?v=dIlvJ0aEaSY"
+        }
+      ]
+    }
+  ]
+}

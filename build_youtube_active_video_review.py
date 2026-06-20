@@ -131,8 +131,11 @@ def dedupe_occurrences(rows):
 
 
 def date_matches_public_event(detected_date, match):
-    if not detected_date or not match:
+    if not match:
         return True
+    if not detected_date:
+        reasons = set(match.get("reasons") or [])
+        return bool(reasons & {"event_name_in_youtube", "event_alias_in_youtube"})
     start = match.get("date") or ""
     end = match.get("date_end") or start
     if not start:

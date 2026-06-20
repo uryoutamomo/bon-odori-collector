@@ -1,0 +1,77 @@
+{
+  "dry_run": false,
+  "invalid": [
+    {
+      "song_name": "横浜開港祭BON",
+      "page_id": "37c8be04-e762-81ee-9381-eac513d10a22",
+      "action": "invalid",
+      "dry_run": false
+    },
+    {
+      "song_name": "隅田公園そよ風ひろばに踊り",
+      "page_id": "37c8be04-e762-8189-bd29-cc7c4de0614f",
+      "action": "invalid",
+      "dry_run": false
+    },
+    {
+      "song_name": "飛鳥山公園輪踊り",
+      "page_id": "37c8be04-e762-8118-b46b-f2802a445af8",
+      "action": "invalid",
+      "dry_run": false
+    },
+    {
+      "song_name": "山王音頭と千代田踊り",
+      "page_id": "37c8be04-e762-81ce-a633-cb73b512d438",
+      "action": "invalid",
+      "dry_run": false
+    },
+    {
+      "song_name": "鯵ヶ沢甚句と村崎野音頭",
+      "page_id": "37c8be04-e762-814d-acef-fd9a046d828a",
+      "action": "invalid",
+      "dry_run": false
+    }
+  ],
+  "genres": [
+    {
+      "song_name": "郡上おどり",
+      "page_id": "37c8be04-e762-81ad-ad68-d5a7c173b5e9",
+      "action": "genre",
+      "dry_run": false
+    },
+    {
+      "song_name": "白鳥おどり",
+      "page_id": "37c8be04-e762-8134-94ee-d54bad5dd4d1",
+      "action": "genre",
+      "dry_run": false
+    }
+  ],
+  "aliases": [
+    {
+      "song_name": "郡上踊り",
+      "page_id": "37c8be04-e762-8111-81cb-d115e4f42470",
+      "action": "alias_invalid",
+      "dry_run": false
+    },
+    {
+      "song_name": "白鳥踊り",
+      "page_id": "37c8be04-e762-81ee-b8b8-db839321056a",
+      "action": "alias_invalid",
+      "dry_run": false
+    },
+    {
+      "song_name": "鰺ヶ沢甚句",
+      "page_id": "37c8be04-e762-8183-8a21-fa3a015eeb32",
+      "action": "alias_invalid",
+      "dry_run": false
+    }
+  ],
+  "ensured": [
+    {
+      "song_name": "千代田踊り",
+      "page_id": "37c8be04-e762-8112-ba90-c56f7568f5d1",
+      "action": "update_existing",
+      "dry_run": false
+    }
+  ]
+}

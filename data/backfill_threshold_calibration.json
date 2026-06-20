@@ -1,0 +1,156 @@
+{
+  "generated_by": "analyze_backfill_thresholds.py",
+  "source": "data/event_occurrence_backfill_plan.json",
+  "summary": {
+    "accepted_observations": 24,
+    "excluded_low_observations": 8,
+    "all_observations": 32,
+    "by_confidence": {
+      "high": 9,
+      "low": 8,
+      "manual_accept": 1,
+      "medium": 14
+    },
+    "accepted_by_bucket": {
+      "multi_video": 2,
+      "multi_video_multi_channel": 16,
+      "multi_video_song_rich": 6
+    },
+    "excluded_by_bucket": {
+      "multi_video": 1,
+      "multi_video_song_context": 2,
+      "single_video_song_context": 2,
+      "single_weak": 3
+    },
+    "promote_candidate_count": 2,
+    "hold_candidate_count": 6
+  },
+  "recommendation": {
+    "safe_threshold_change": "none",
+    "reason": "Keep automatic promotion unchanged. Review excluded low rows in the multi_video_* buckets first; single-video rows should stay manual."
+  },
+  "promote_candidates": [
+    {
+      "observation_id": "ff8ff75c8f6eb0d2",
+      "event_name": "自由が丘納涼盆踊り大会",
+      "venue": "自由が丘駅前ロータリー 特設会場",
+      "year": 2023,
+      "date_start": "2023-07-17",
+      "date_end": "2023-07-17",
+      "confidence": "low",
+      "source_video_count": 2,
+      "source_channel_count": 1,
+      "song_count": 10,
+      "bucket": "multi_video_song_context",
+      "sample_title": "やる気で音頭　2023年自由が丘納涼盆踊り大会１　東京都目黒区",
+      "sample_url": "https://www.youtube.com/watch?v=QPxuVq-Nv3w"
+    },
+    {
+      "observation_id": "4bfd13729e4b2447",
+      "event_name": "飛鳥山盆踊り",
+      "venue": "飛鳥山公園",
+      "year": 2023,
+      "date_start": "2023-03-12",
+      "date_end": "2023-03-12",
+      "confidence": "low",
+      "source_video_count": 2,
+      "source_channel_count": 1,
+      "song_count": 10,
+      "bucket": "multi_video_song_context",
+      "sample_title": "しながわ中央公園盆踊り　2023年3月12日　じょんから女節・品川音頭・大森甚句・波乗りジョニー・房州よいとこ・ベイサイドブギ・湘南盆踊り・水軍ばやし・我は海の子・飛び魚音頭・お台場音頭・ポ",
+      "sample_url": "https://www.youtube.com/watch?v=-dahLlLBKHo"
+    }
+  ],
+  "hold_samples": [
+    {
+      "observation_id": "706de924ce735247",
+      "event_name": "丸の内de盆踊り",
+      "venue": "行幸通り",
+      "year": 2024,
+      "date_start": "2024-08-23",
+      "date_end": "2024-08-23",
+      "confidence": "low",
+      "source_video_count": 1,
+      "source_channel_count": 1,
+      "song_count": 4,
+      "bucket": "single_video_song_context",
+      "sample_title": "4K60【東京ガーデンテラス紀尾井町】KIOI 盆おどり 2024 東京 Japan",
+      "sample_url": "https://www.youtube.com/watch?v=vzRBqx1kelI"
+    },
+    {
+      "observation_id": "b0e0b52c06bfbccb",
+      "event_name": "丸の内de盆踊り",
+      "venue": "行幸通り",
+      "year": 2024,
+      "date_start": "2024-09-12",
+      "date_end": "2024-09-12",
+      "confidence": "low",
+      "source_video_count": 1,
+      "source_channel_count": 1,
+      "song_count": 1,
+      "bucket": "single_weak",
+      "sample_title": "4K60【銀座ショーウィンド秋】夜の銀座ソニーパーク 2024 東京 Japan",
+      "sample_url": "https://www.youtube.com/watch?v=FUMkPRgbPIw"
+    },
+    {
+      "observation_id": "7667e95df2512e66",
+      "event_name": "丸の内de盆踊り",
+      "venue": "行幸通り",
+      "year": 2024,
+      "date_start": "2024-10-11",
+      "date_end": "2024-10-11",
+      "confidence": "low",
+      "source_video_count": 1,
+      "source_channel_count": 1,
+      "song_count": 3,
+      "bucket": "single_video_song_context",
+      "sample_title": "4K60【日比谷シネマフェスティバル】丸の内仲通り 2024 東京 Japan",
+      "sample_url": "https://www.youtube.com/watch?v=dlY5xSYgUow"
+    },
+    {
+      "observation_id": "2da05f994b17e9c1",
+      "event_name": "旗の台稲荷通り商店会盆踊り 盆ROCK",
+      "venue": "旗の台稲荷通り商店街",
+      "year": 2024,
+      "date_start": "2024-11-17",
+      "date_end": "2024-11-17",
+      "confidence": "low",
+      "source_video_count": 1,
+      "source_channel_count": 1,
+      "song_count": 1,
+      "bucket": "single_weak",
+      "sample_title": "てくてくTV　旗の台　稲荷通り商店会　盆踊り『盆ROCK』（ぼんロック）に行く　2024.11.17",
+      "sample_url": "https://www.youtube.com/watch?v=u6-qkx30GLw"
+    },
+    {
+      "observation_id": "5a3ae5702572e59c",
+      "event_name": "歌舞伎町BON ODORI",
+      "venue": "歌舞伎町シネシティ広場",
+      "year": 2024,
+      "date_start": "2024-08-17",
+      "date_end": "2024-08-17",
+      "confidence": "low",
+      "source_video_count": 2,
+      "source_channel_count": 1,
+      "song_count": 2,
+      "bucket": "multi_video",
+      "sample_title": "[4K]🇯🇵 新宿 歌舞伎町で盆ジョヴィ Bon Jovi｜Michael Jackson｜B'z｜YOASOBI 他 Kabukicho BON ODORI 盆踊り 2024 2部",
+      "sample_url": "https://www.youtube.com/watch?v=5c4jwXCsQzM"
+    },
+    {
+      "observation_id": "0636b08d350648ff",
+      "event_name": "自由が丘納涼盆踊り大会",
+      "venue": "自由が丘駅前ロータリー 特設会場",
+      "year": 2024,
+      "date_start": "2024-07-24",
+      "date_end": "2024-07-24",
+      "confidence": "low",
+      "source_video_count": 1,
+      "source_channel_count": 1,
+      "song_count": 1,
+      "bucket": "single_weak",
+      "sample_title": "自由が丘納涼 盆踊り大会【地モトNEWS】2024/7/24放送",
+      "sample_url": "https://www.youtube.com/watch?v=qNhz2yoaBL0"
+    }
+  ]
+}
