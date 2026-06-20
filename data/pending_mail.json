@@ -1,5 +1,0 @@
-{
-  "subject": "盆助 YouTube日次チェック: quota_limited",
-  "plain": "YouTube APIは429で止まりました。今日は追加収集せず、明日以降に再試行します。\n\n対象月: 8月\n選択件数: 10\n実行前の残り: 42\n推定検索数: 20\n候補数: 541 -> 541\nstrong: 181 / review: 47\n\n詳細: data/youtube_daily_backfill_report.md",
-  "html": "<pre>YouTube APIは429で止まりました。今日は追加収集せず、明日以降に再試行します。\n\n対象月: 8月\n選択件数: 10\n実行前の残り: 42\n推定検索数: 20\n候補数: 541 -&gt; 541\nstrong: 181 / review: 47\n\n詳細: data/youtube_daily_backfill_report.md</pre>"
-}
