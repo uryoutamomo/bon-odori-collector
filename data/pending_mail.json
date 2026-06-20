@@ -1,5 +1,5 @@
 {
-  "subject": "盆助 YouTube日次チェック: harvested",
-  "plain": "YouTube日次バックフィルを実行しました。\n\n対象月: 6月\n選択件数: 4\n実行前の残り: 4\n推定検索数: 8\n候補数: 523 -> 541\nstrong: 181 / review: 47\n\n詳細: data/youtube_daily_backfill_report.md",
-  "html": "<pre>YouTube日次バックフィルを実行しました。\n\n対象月: 6月\n選択件数: 4\n実行前の残り: 4\n推定検索数: 8\n候補数: 523 -&gt; 541\nstrong: 181 / review: 47\n\n詳細: data/youtube_daily_backfill_report.md</pre>"
+  "subject": "盆助 YouTube日次チェック: no_rows",
+  "plain": "6月の未処理YouTube候補はありません。\n\n対象月: 6月\n選択件数: 0\n実行前の残り: 0\n推定検索数: 0\n候補数: 541 -> 541\nstrong: 181 / review: 47\n\n詳細: data/youtube_daily_backfill_report.md",
+  "html": "<pre>6月の未処理YouTube候補はありません。\n\n対象月: 6月\n選択件数: 0\n実行前の残り: 0\n推定検索数: 0\n候補数: 541 -&gt; 541\nstrong: 181 / review: 47\n\n詳細: data/youtube_daily_backfill_report.md</pre>"
 }
