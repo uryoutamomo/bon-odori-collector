@@ -1,18 +1,18 @@
 {
   "generated_by": "build_event_occurrence_backfill_plan.py",
-  "generated_at": "2026-06-20T09:51:16.881940+00:00",
+  "generated_at": "2026-06-20T10:00:04.115016+00:00",
   "source": "data/youtube_year_backfill_candidates.json",
   "summary": {
-    "observation_count": 25,
-    "source_video_count": 147,
+    "observation_count": 28,
+    "source_video_count": 153,
     "observations_by_year": {
-      "2023": 12,
-      "2024": 13
+      "2023": 14,
+      "2024": 14
     },
-    "observations_with_songs": 23,
-    "manual_accepted_low_observation_count": 1,
-    "excluded_low_observation_count": 15,
-    "excluded_low_source_video_count": 21
+    "observations_with_songs": 25,
+    "manual_accepted_low_observation_count": 4,
+    "excluded_low_observation_count": 12,
+    "excluded_low_source_video_count": 15
   },
   "observations": [
     {
@@ -1077,6 +1077,138 @@
       ]
     },
     {
+      "observation_id": "ff8ff75c8f6eb0d2",
+      "series_key": "bcbfa4cac9e3",
+      "event_name": "自由が丘納涼盆踊り大会",
+      "venue": "自由が丘駅前ロータリー 特設会場",
+      "area": "目黒区",
+      "year": 2023,
+      "date_start": "2023-07-17",
+      "date_end": "2023-07-17",
+      "observed_dates": [
+        "2023-07-17"
+      ],
+      "weekday_start": "月",
+      "weekday_end": "月",
+      "source_type": "youtube_backfill_observed",
+      "source_video_count": 2,
+      "source_channels": [
+        "和太鼓お祭りチャンネル"
+      ],
+      "confidence": "manual_accept",
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=QPxuVq-Nv3w",
+          "video_id": "QPxuVq-Nv3w",
+          "title": "やる気で音頭　2023年自由が丘納涼盆踊り大会１　東京都目黒区",
+          "channel": "和太鼓お祭りチャンネル",
+          "published_at": "2023-09-24T10:30:14Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ba6A8Z79pgM",
+          "video_id": "ba6A8Z79pgM",
+          "title": "北海盆唄　2023年自由が丘納涼盆踊り大会８　東京都目黒区",
+          "channel": "和太鼓お祭りチャンネル",
+          "published_at": "2023-09-29T10:00:28Z",
+          "score": 100
+        }
+      ],
+      "songs": [
+        {
+          "song_name": "ぷしゅぷしゅ音頭",
+          "source_count": 2,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=Nxaq-KoPqJ4"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "やる気で音頭",
+          "source_count": 2,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=QPxuVq-Nv3w"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "東京音頭",
+          "source_count": 2,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=hXWo9PbFfp0"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "炭坑節",
+          "source_count": 2,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=gOlwpcZIuHE"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "七福神音頭",
+          "source_count": 2,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=w385R4otSDQ"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "よろこび音頭",
+          "source_count": 2,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=qeX0aESWw3U"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "北海盆唄",
+          "source_count": 2,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=NRXAzkhoGww"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "少年八木節",
+          "source_count": 2,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=z39CW-J4LJg"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "ダンシングヒーロー",
+          "source_count": 2,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=TmN0vHpZ5N0"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "文京音頭",
+          "source_count": 2,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=W-Hi7ABCGeY"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        }
+      ],
+      "manual_review": "accepted_low_confidence"
+    },
+    {
       "observation_id": "903be26b351a9911",
       "series_key": "aca270553085",
       "event_name": "西久保八幡神社 盆踊り",
@@ -1368,6 +1500,47 @@
           "confidence": "hint"
         }
       ],
+      "manual_review": "accepted_low_confidence"
+    },
+    {
+      "observation_id": "1cd292a9b8e09299",
+      "series_key": "cc7ce7868321",
+      "event_name": "赤坂浄土寺盆踊り大会",
+      "venue": "浄土寺",
+      "area": "港区",
+      "year": 2023,
+      "date_start": "2023-07-26",
+      "date_end": "2023-07-26",
+      "observed_dates": [
+        "2023-07-26"
+      ],
+      "weekday_start": "水",
+      "weekday_end": "水",
+      "source_type": "youtube_backfill_observed",
+      "source_video_count": 2,
+      "source_channels": [
+        "山崎茂雄"
+      ],
+      "confidence": "manual_accept",
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=cCepBj07au8",
+          "video_id": "cCepBj07au8",
+          "title": "4K＃あかね音頭＃赤坂浄土寺盆踊り大会2023＃日本の夏祭り＃2023年7月26日＃AkasakaOndo",
+          "channel": "山崎茂雄",
+          "published_at": "2023-08-04T10:47:45Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=hfouKEVU3bQ",
+          "video_id": "hfouKEVU3bQ",
+          "title": "４K🏮＃まつの木小唄🏮＃赤坂浄土寺盆踊り大会2023＃日本の夏祭り＃MatsunokiKouta＃2023年7月26日",
+          "channel": "山崎茂雄",
+          "published_at": "2023-07-29T04:55:22Z",
+          "score": 100
+        }
+      ],
+      "songs": [],
       "manual_review": "accepted_low_confidence"
     },
     {
@@ -2722,6 +2895,66 @@
       "songs": []
     },
     {
+      "observation_id": "5a3ae5702572e59c",
+      "series_key": "ebf98ce37bb4",
+      "event_name": "歌舞伎町BON ODORI",
+      "venue": "歌舞伎町シネシティ広場",
+      "area": "新宿区",
+      "year": 2024,
+      "date_start": "2024-08-17",
+      "date_end": "2024-08-17",
+      "observed_dates": [
+        "2024-08-17"
+      ],
+      "weekday_start": "土",
+      "weekday_end": "土",
+      "source_type": "youtube_backfill_observed",
+      "source_video_count": 2,
+      "source_channels": [
+        "Tokyo Lonely Walker"
+      ],
+      "confidence": "manual_accept",
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=5c4jwXCsQzM",
+          "video_id": "5c4jwXCsQzM",
+          "title": "[4K]🇯🇵 新宿 歌舞伎町で盆ジョヴィ Bon Jovi｜Michael Jackson｜B'z｜YOASOBI 他 Kabukicho BON ODORI 盆踊り 2024 2部",
+          "channel": "Tokyo Lonely Walker",
+          "published_at": "2024-08-20T08:38:44Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=mk72RwvRBz4",
+          "video_id": "mk72RwvRBz4",
+          "title": "[4K]🇯🇵 B'z ultra soulで盆踊り 新宿 歌舞伎町 BON ODORI 2部 / Bon dance with B'z in Shinjuku Kabukicho. 2024",
+          "channel": "Tokyo Lonely Walker",
+          "published_at": "2024-09-06T09:00:50Z",
+          "score": 98
+        }
+      ],
+      "songs": [
+        {
+          "song_name": "荻野目洋子 - ダンシング・ヒーロー / Yoko Oginome - Eat You Up",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=5c4jwXCsQzM"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "ブルーマングループ パフォーマンス （東京おとめ太鼓） / Blue Man Group",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=5c4jwXCsQzM"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        }
+      ],
+      "manual_review": "accepted_low_confidence"
+    },
+    {
       "observation_id": "ca7e2062e653d832",
       "series_key": "734d7186ca67",
       "event_name": "第15回 鴨台盆踊り",
@@ -3867,65 +4100,6 @@
       ]
     },
     {
-      "observation_id": "5a3ae5702572e59c",
-      "series_key": "ebf98ce37bb4",
-      "event_name": "歌舞伎町BON ODORI",
-      "venue": "歌舞伎町シネシティ広場",
-      "area": "新宿区",
-      "year": 2024,
-      "date_start": "2024-08-17",
-      "date_end": "2024-08-17",
-      "observed_dates": [
-        "2024-08-17"
-      ],
-      "weekday_start": "土",
-      "weekday_end": "土",
-      "source_type": "youtube_backfill_observed",
-      "source_video_count": 2,
-      "source_channels": [
-        "Tokyo Lonely Walker"
-      ],
-      "confidence": "low",
-      "source_videos": [
-        {
-          "url": "https://www.youtube.com/watch?v=5c4jwXCsQzM",
-          "video_id": "5c4jwXCsQzM",
-          "title": "[4K]🇯🇵 新宿 歌舞伎町で盆ジョヴィ Bon Jovi｜Michael Jackson｜B'z｜YOASOBI 他 Kabukicho BON ODORI 盆踊り 2024 2部",
-          "channel": "Tokyo Lonely Walker",
-          "published_at": "2024-08-20T08:38:44Z",
-          "score": 100
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=mk72RwvRBz4",
-          "video_id": "mk72RwvRBz4",
-          "title": "[4K]🇯🇵 B'z ultra soulで盆踊り 新宿 歌舞伎町 BON ODORI 2部 / Bon dance with B'z in Shinjuku Kabukicho. 2024",
-          "channel": "Tokyo Lonely Walker",
-          "published_at": "2024-09-06T09:00:50Z",
-          "score": 98
-        }
-      ],
-      "songs": [
-        {
-          "song_name": "荻野目洋子 - ダンシング・ヒーロー / Yoko Oginome - Eat You Up",
-          "source_count": 1,
-          "source_urls": [
-            "https://www.youtube.com/watch?v=5c4jwXCsQzM"
-          ],
-          "source_type": "youtube_backfill_title_observed",
-          "confidence": "hint"
-        },
-        {
-          "song_name": "ブルーマングループ パフォーマンス （東京おとめ太鼓） / Blue Man Group",
-          "source_count": 1,
-          "source_urls": [
-            "https://www.youtube.com/watch?v=5c4jwXCsQzM"
-          ],
-          "source_type": "youtube_backfill_title_observed",
-          "confidence": "hint"
-        }
-      ]
-    },
-    {
       "observation_id": "c3418ce70925eb8a",
       "series_key": "ef1ed76805b1",
       "event_name": "納涼盆踊り大会",
@@ -4091,137 +4265,6 @@
       ]
     },
     {
-      "observation_id": "ff8ff75c8f6eb0d2",
-      "series_key": "bcbfa4cac9e3",
-      "event_name": "自由が丘納涼盆踊り大会",
-      "venue": "自由が丘駅前ロータリー 特設会場",
-      "area": "目黒区",
-      "year": 2023,
-      "date_start": "2023-07-17",
-      "date_end": "2023-07-17",
-      "observed_dates": [
-        "2023-07-17"
-      ],
-      "weekday_start": "月",
-      "weekday_end": "月",
-      "source_type": "youtube_backfill_observed",
-      "source_video_count": 2,
-      "source_channels": [
-        "和太鼓お祭りチャンネル"
-      ],
-      "confidence": "low",
-      "source_videos": [
-        {
-          "url": "https://www.youtube.com/watch?v=QPxuVq-Nv3w",
-          "video_id": "QPxuVq-Nv3w",
-          "title": "やる気で音頭　2023年自由が丘納涼盆踊り大会１　東京都目黒区",
-          "channel": "和太鼓お祭りチャンネル",
-          "published_at": "2023-09-24T10:30:14Z",
-          "score": 100
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=ba6A8Z79pgM",
-          "video_id": "ba6A8Z79pgM",
-          "title": "北海盆唄　2023年自由が丘納涼盆踊り大会８　東京都目黒区",
-          "channel": "和太鼓お祭りチャンネル",
-          "published_at": "2023-09-29T10:00:28Z",
-          "score": 100
-        }
-      ],
-      "songs": [
-        {
-          "song_name": "ぷしゅぷしゅ音頭",
-          "source_count": 2,
-          "source_urls": [
-            "https://www.youtube.com/watch?v=Nxaq-KoPqJ4"
-          ],
-          "source_type": "youtube_backfill_title_observed",
-          "confidence": "observed"
-        },
-        {
-          "song_name": "やる気で音頭",
-          "source_count": 2,
-          "source_urls": [
-            "https://www.youtube.com/watch?v=QPxuVq-Nv3w"
-          ],
-          "source_type": "youtube_backfill_title_observed",
-          "confidence": "observed"
-        },
-        {
-          "song_name": "東京音頭",
-          "source_count": 2,
-          "source_urls": [
-            "https://www.youtube.com/watch?v=hXWo9PbFfp0"
-          ],
-          "source_type": "youtube_backfill_title_observed",
-          "confidence": "observed"
-        },
-        {
-          "song_name": "炭坑節",
-          "source_count": 2,
-          "source_urls": [
-            "https://www.youtube.com/watch?v=gOlwpcZIuHE"
-          ],
-          "source_type": "youtube_backfill_title_observed",
-          "confidence": "observed"
-        },
-        {
-          "song_name": "七福神音頭",
-          "source_count": 2,
-          "source_urls": [
-            "https://www.youtube.com/watch?v=w385R4otSDQ"
-          ],
-          "source_type": "youtube_backfill_title_observed",
-          "confidence": "observed"
-        },
-        {
-          "song_name": "よろこび音頭",
-          "source_count": 2,
-          "source_urls": [
-            "https://www.youtube.com/watch?v=qeX0aESWw3U"
-          ],
-          "source_type": "youtube_backfill_title_observed",
-          "confidence": "observed"
-        },
-        {
-          "song_name": "北海盆唄",
-          "source_count": 2,
-          "source_urls": [
-            "https://www.youtube.com/watch?v=NRXAzkhoGww"
-          ],
-          "source_type": "youtube_backfill_title_observed",
-          "confidence": "observed"
-        },
-        {
-          "song_name": "少年八木節",
-          "source_count": 2,
-          "source_urls": [
-            "https://www.youtube.com/watch?v=z39CW-J4LJg"
-          ],
-          "source_type": "youtube_backfill_title_observed",
-          "confidence": "observed"
-        },
-        {
-          "song_name": "ダンシングヒーロー",
-          "source_count": 2,
-          "source_urls": [
-            "https://www.youtube.com/watch?v=TmN0vHpZ5N0"
-          ],
-          "source_type": "youtube_backfill_title_observed",
-          "confidence": "observed"
-        },
-        {
-          "song_name": "文京音頭",
-          "source_count": 2,
-          "source_urls": [
-            "https://www.youtube.com/watch?v=W-Hi7ABCGeY"
-          ],
-          "source_type": "youtube_backfill_title_observed",
-          "confidence": "observed"
-        }
-      ]
-    },
-    {
       "observation_id": "0636b08d350648ff",
       "series_key": "bcbfa4cac9e3",
       "event_name": "自由が丘納涼盆踊り大会",
@@ -4262,46 +4305,6 @@
           "confidence": "hint"
         }
       ]
-    },
-    {
-      "observation_id": "1cd292a9b8e09299",
-      "series_key": "cc7ce7868321",
-      "event_name": "赤坂浄土寺盆踊り大会",
-      "venue": "浄土寺",
-      "area": "港区",
-      "year": 2023,
-      "date_start": "2023-07-26",
-      "date_end": "2023-07-26",
-      "observed_dates": [
-        "2023-07-26"
-      ],
-      "weekday_start": "水",
-      "weekday_end": "水",
-      "source_type": "youtube_backfill_observed",
-      "source_video_count": 2,
-      "source_channels": [
-        "山崎茂雄"
-      ],
-      "confidence": "low",
-      "source_videos": [
-        {
-          "url": "https://www.youtube.com/watch?v=cCepBj07au8",
-          "video_id": "cCepBj07au8",
-          "title": "4K＃あかね音頭＃赤坂浄土寺盆踊り大会2023＃日本の夏祭り＃2023年7月26日＃AkasakaOndo",
-          "channel": "山崎茂雄",
-          "published_at": "2023-08-04T10:47:45Z",
-          "score": 100
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=hfouKEVU3bQ",
-          "video_id": "hfouKEVU3bQ",
-          "title": "４K🏮＃まつの木小唄🏮＃赤坂浄土寺盆踊り大会2023＃日本の夏祭り＃MatsunokiKouta＃2023年7月26日",
-          "channel": "山崎茂雄",
-          "published_at": "2023-07-29T04:55:22Z",
-          "score": 100
-        }
-      ],
-      "songs": []
     },
     {
       "observation_id": "886b91fa43bc0989",

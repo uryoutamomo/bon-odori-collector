@@ -2412,7 +2412,7 @@
       "2025-07-24",
       "2025-07-25"
     ],
-    "display_tier": "historical_slide",
+    "display_tier": "rule_predicted",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -2467,10 +2467,32 @@
     "historical_slide_date_end": "2026-07-24",
     "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第4木曜を2026年へスライド",
-    "predicted_date": "2026-07-23",
-    "predicted_date_end": "2026-07-24",
-    "prediction_basis": "2025年実績の同月第4木曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "predicted_date": "2026-07-26",
+    "predicted_date_end": "2026-07-27",
+    "prediction_basis": "7月26日前後",
+    "prediction_confidence": "low",
+    "date_prediction": {
+      "display_tier": "rule_predicted",
+      "target_year": 2026,
+      "date": "2026-07-26",
+      "date_end": "2026-07-27",
+      "weekday_start": "日",
+      "weekday_end": "月",
+      "confidence": "low",
+      "score": 0.58,
+      "rule_type": "date_near",
+      "basis": "7月26日前後",
+      "evidence_years": [
+        2023,
+        2024
+      ],
+      "evidence_count": 2,
+      "has_actual_observation": false
+    },
+    "prediction_evidence_years": [
+      2023,
+      2024
+    ]
   },
   {
     "name": "盆ダンスフェスティバル2023",
@@ -4786,7 +4808,7 @@
     "last_seen_dates": [
       "2025-08-16"
     ],
-    "display_tier": "historical_slide",
+    "display_tier": "rule_predicted",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -4841,8 +4863,30 @@
     "historical_slide_basis": "2025年実績の同月第3土曜を2026年へスライド",
     "predicted_date": "2026-08-15",
     "predicted_date_end": "2026-08-15",
-    "prediction_basis": "2025年実績の同月第3土曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "prediction_basis": "8月第3土曜",
+    "prediction_confidence": "medium",
+    "date_prediction": {
+      "display_tier": "rule_predicted",
+      "target_year": 2026,
+      "date": "2026-08-15",
+      "date_end": "2026-08-15",
+      "weekday_start": "土",
+      "weekday_end": "土",
+      "confidence": "medium",
+      "score": 0.7,
+      "rule_type": "weekday_nth",
+      "basis": "8月第3土曜",
+      "evidence_years": [
+        2024,
+        2025
+      ],
+      "evidence_count": 2,
+      "has_actual_observation": false
+    },
+    "prediction_evidence_years": [
+      2024,
+      2025
+    ]
   },
   {
     "name": "下落合町会知久会 第9回盆踊り",
