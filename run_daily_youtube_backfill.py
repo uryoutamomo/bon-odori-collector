@@ -205,6 +205,7 @@ def git_commit_and_push(report, push):
         "data/event_occurrence_backfill_plan.md",
         "data/event_occurrence_observations.json",
         "data/event_occurrence_observations.md",
+        "data/low_confidence_backfill_review.md",
         "data/event_date_predictions.json",
         "data/event_date_predictions.md",
         "data/public/events_public.json",
@@ -213,7 +214,8 @@ def git_commit_and_push(report, push):
         f"data/month_{report['month']:02d}_youtube_backfill_queue.json",
         f"data/month_{report['month']:02d}_youtube_backfill_queue.md",
     ]
-    run_command(["git", "add", *paths])
+    existing_paths = [path for path in paths if Path(path).exists()]
+    run_command(["git", "add", *existing_paths])
     status = run_command(["git", "status", "--short"])
     if not status:
         return "no_changes"
