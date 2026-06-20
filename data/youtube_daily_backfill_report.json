@@ -1,123 +1,61 @@
 {
   "generated_by": "run_daily_youtube_backfill.py",
-  "generated_at": "2026-06-20T07:35:06.016992+00:00",
+  "generated_at": "2026-06-20T09:50:45.055422+00:00",
   "status": "harvested",
   "month": 7,
   "selected_rows": 10,
-  "remaining_rows_before": 37,
+  "remaining_rows_before": 27,
   "estimated_search_calls": 20,
-  "candidates_before": 432,
+  "candidates_before": 471,
   "selected": [
     {
-      "queue_id": "youtube-year-backfill:c0bb0d80b6648eca",
+      "queue_id": "youtube-year-backfill:7bd3c8e1b91035d9",
       "target_year": 2023,
       "priority_score": 8,
       "priority": "low",
-      "event_name": "西糀谷四丁目町会 盆踊り大会",
-      "venue": "西仲天祖神社",
-      "area": "大田区",
-      "series_key": "ccf1a2f8f2bb",
+      "event_name": "玉川町会盆おどり大会",
+      "venue": "二子玉川西地区ふれあい広場(246高架下)",
+      "area": "世田谷区",
+      "series_key": "5544ac3c9cfb",
       "observed_years": [],
       "observed_source_video_count": 0,
-      "public_date": "2025-07-21",
+      "public_date": "2025-07-25",
       "public_date_end": "",
       "last_seen_year": 2025,
       "last_seen_dates": [
-        "2025-07-21"
+        "2025-07-25"
       ],
       "recurrence_label": "昨年開催・継続性 中",
-      "recurrence_score": 0.68,
+      "recurrence_score": 0.6,
       "source_url_count": 0,
       "song_count": 0,
       "priority_reasons": [
         "medium_recurrence_score"
       ],
       "search_queries": [
-        "西糀谷四丁目町会 盆踊り大会 西仲天祖神社 大田区 2023 盆踊り",
-        "西糀谷四丁目町会 盆踊り大会 2023 YouTube 盆踊り",
-        "西仲天祖神社 2023 盆踊り"
+        "玉川町会盆おどり大会 二子玉川西地区ふれあい広場(246高架下) 世田谷区 2023 盆踊り",
+        "玉川町会盆おどり大会 2023 YouTube 盆踊り",
+        "二子玉川西地区ふれあい広場(246高架下) 2023 盆踊り"
       ],
       "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
     },
     {
-      "queue_id": "youtube-year-backfill:61cca02856a8f0b9",
-      "target_year": 2024,
-      "priority_score": 8,
-      "priority": "low",
-      "event_name": "大森南一丁目自治会「納涼盆踊り大会」",
-      "venue": "大森南一丁目公園",
-      "area": "大田区",
-      "series_key": "f02251822d5b",
-      "observed_years": [],
-      "observed_source_video_count": 0,
-      "public_date": "2025-07-21",
-      "public_date_end": "",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-07-21"
-      ],
-      "recurrence_label": "昨年開催・継続性 中",
-      "recurrence_score": 0.68,
-      "source_url_count": 0,
-      "song_count": 0,
-      "priority_reasons": [
-        "medium_recurrence_score"
-      ],
-      "search_queries": [
-        "大森南一丁目自治会「納涼盆踊り大会」 大森南一丁目公園 大田区 2024 盆踊り",
-        "大森南一丁目自治会「納涼盆踊り大会」 2024 YouTube 盆踊り",
-        "大森南一丁目公園 2024 盆踊り"
-      ],
-      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
-    },
-    {
-      "queue_id": "youtube-year-backfill:5bb0e328527d5408",
-      "target_year": 2024,
-      "priority_score": 8,
-      "priority": "low",
-      "event_name": "西糀谷四丁目町会 盆踊り大会",
-      "venue": "西仲天祖神社",
-      "area": "大田区",
-      "series_key": "ccf1a2f8f2bb",
-      "observed_years": [],
-      "observed_source_video_count": 0,
-      "public_date": "2025-07-21",
-      "public_date_end": "",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-07-21"
-      ],
-      "recurrence_label": "昨年開催・継続性 中",
-      "recurrence_score": 0.68,
-      "source_url_count": 0,
-      "song_count": 0,
-      "priority_reasons": [
-        "medium_recurrence_score"
-      ],
-      "search_queries": [
-        "西糀谷四丁目町会 盆踊り大会 西仲天祖神社 大田区 2024 盆踊り",
-        "西糀谷四丁目町会 盆踊り大会 2024 YouTube 盆踊り",
-        "西仲天祖神社 2024 盆踊り"
-      ],
-      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
-    },
-    {
-      "queue_id": "youtube-year-backfill:4f1b6ba32b59d348",
+      "queue_id": "youtube-year-backfill:fb894c88c930e1e3",
       "target_year": 2023,
       "priority_score": 8,
       "priority": "low",
-      "event_name": "第51回 神楽坂まつり 盆踊り",
-      "venue": "りそな銀行神楽坂支店前",
-      "area": "新宿区",
-      "series_key": "812250fa4c15",
+      "event_name": "第70回 恵比寿駅前盆踊り大会",
+      "venue": "JR恵比寿駅西口広場",
+      "area": "渋谷区",
+      "series_key": "cc11006afcc1",
       "observed_years": [],
       "observed_source_video_count": 0,
-      "public_date": "2025-07-23",
-      "public_date_end": "2025-07-24",
+      "public_date": "2025-07-25",
+      "public_date_end": "2025-07-26",
       "last_seen_year": 2025,
       "last_seen_dates": [
-        "2025-07-23",
-        "2025-07-24"
+        "2025-07-25",
+        "2025-07-26"
       ],
       "recurrence_label": "昨年開催・継続性 中",
       "recurrence_score": 0.73,
@@ -127,173 +65,15 @@
         "medium_recurrence_score"
       ],
       "search_queries": [
-        "第51回 神楽坂まつり 盆踊り りそな銀行神楽坂支店前 新宿区 2023 盆踊り",
-        "第51回 神楽坂まつり 盆踊り 2023 YouTube 盆踊り",
-        "りそな銀行神楽坂支店前 2023 盆踊り"
+        "第70回 恵比寿駅前盆踊り大会 JR恵比寿駅西口広場 渋谷区 2023 盆踊り",
+        "第70回 恵比寿駅前盆踊り大会 2023 YouTube 盆踊り",
+        "JR恵比寿駅西口広場 2023 盆踊り"
       ],
       "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
     },
     {
-      "queue_id": "youtube-year-backfill:66a129c62c50de39",
+      "queue_id": "youtube-year-backfill:519e4b06d34327d1",
       "target_year": 2024,
-      "priority_score": 8,
-      "priority": "low",
-      "event_name": "第51回 神楽坂まつり 盆踊り",
-      "venue": "りそな銀行神楽坂支店前",
-      "area": "新宿区",
-      "series_key": "812250fa4c15",
-      "observed_years": [],
-      "observed_source_video_count": 0,
-      "public_date": "2025-07-23",
-      "public_date_end": "2025-07-24",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-07-23",
-        "2025-07-24"
-      ],
-      "recurrence_label": "昨年開催・継続性 中",
-      "recurrence_score": 0.73,
-      "source_url_count": 0,
-      "song_count": 0,
-      "priority_reasons": [
-        "medium_recurrence_score"
-      ],
-      "search_queries": [
-        "第51回 神楽坂まつり 盆踊り りそな銀行神楽坂支店前 新宿区 2024 盆踊り",
-        "第51回 神楽坂まつり 盆踊り 2024 YouTube 盆踊り",
-        "りそな銀行神楽坂支店前 2024 盆踊り"
-      ],
-      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
-    },
-    {
-      "queue_id": "youtube-year-backfill:07942825bc0c0dc1",
-      "target_year": 2023,
-      "priority_score": 8,
-      "priority": "low",
-      "event_name": "北糀谷町会 「納涼踊り大会」",
-      "venue": "子安八幡神社",
-      "area": "大田区",
-      "series_key": "f0a7de0e53a8",
-      "observed_years": [],
-      "observed_source_video_count": 0,
-      "public_date": "2025-07-24",
-      "public_date_end": "",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-07-24"
-      ],
-      "recurrence_label": "昨年開催・継続性 中",
-      "recurrence_score": 0.68,
-      "source_url_count": 0,
-      "song_count": 0,
-      "priority_reasons": [
-        "medium_recurrence_score"
-      ],
-      "search_queries": [
-        "北糀谷町会 「納涼踊り大会」 子安八幡神社 大田区 2023 盆踊り",
-        "北糀谷町会 「納涼踊り大会」 2023 YouTube 盆踊り",
-        "子安八幡神社 2023 盆踊り"
-      ],
-      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
-    },
-    {
-      "queue_id": "youtube-year-backfill:dee977fb84c7f7cd",
-      "target_year": 2023,
-      "priority_score": 8,
-      "priority": "low",
-      "event_name": "赤坂浄土寺盆踊り大会",
-      "venue": "浄土寺",
-      "area": "港区",
-      "series_key": "cc7ce7868321",
-      "observed_years": [],
-      "observed_source_video_count": 0,
-      "public_date": "2025-07-24",
-      "public_date_end": "2025-07-25",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-07-24",
-        "2025-07-25"
-      ],
-      "recurrence_label": "昨年開催・継続性 中",
-      "recurrence_score": 0.59,
-      "source_url_count": 0,
-      "song_count": 0,
-      "priority_reasons": [
-        "medium_recurrence_score"
-      ],
-      "search_queries": [
-        "赤坂浄土寺盆踊り大会 浄土寺 港区 2023 盆踊り",
-        "赤坂浄土寺盆踊り大会 2023 YouTube 盆踊り",
-        "浄土寺 2023 盆踊り"
-      ],
-      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
-    },
-    {
-      "queue_id": "youtube-year-backfill:26e90ca3fa809467",
-      "target_year": 2024,
-      "priority_score": 8,
-      "priority": "low",
-      "event_name": "北糀谷町会 「納涼踊り大会」",
-      "venue": "子安八幡神社",
-      "area": "大田区",
-      "series_key": "f0a7de0e53a8",
-      "observed_years": [],
-      "observed_source_video_count": 0,
-      "public_date": "2025-07-24",
-      "public_date_end": "",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-07-24"
-      ],
-      "recurrence_label": "昨年開催・継続性 中",
-      "recurrence_score": 0.68,
-      "source_url_count": 0,
-      "song_count": 0,
-      "priority_reasons": [
-        "medium_recurrence_score"
-      ],
-      "search_queries": [
-        "北糀谷町会 「納涼踊り大会」 子安八幡神社 大田区 2024 盆踊り",
-        "北糀谷町会 「納涼踊り大会」 2024 YouTube 盆踊り",
-        "子安八幡神社 2024 盆踊り"
-      ],
-      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
-    },
-    {
-      "queue_id": "youtube-year-backfill:071c88db99549bba",
-      "target_year": 2024,
-      "priority_score": 8,
-      "priority": "low",
-      "event_name": "赤坂浄土寺盆踊り大会",
-      "venue": "浄土寺",
-      "area": "港区",
-      "series_key": "cc7ce7868321",
-      "observed_years": [],
-      "observed_source_video_count": 0,
-      "public_date": "2025-07-24",
-      "public_date_end": "2025-07-25",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-07-24",
-        "2025-07-25"
-      ],
-      "recurrence_label": "昨年開催・継続性 中",
-      "recurrence_score": 0.59,
-      "source_url_count": 0,
-      "song_count": 0,
-      "priority_reasons": [
-        "medium_recurrence_score"
-      ],
-      "search_queries": [
-        "赤坂浄土寺盆踊り大会 浄土寺 港区 2024 盆踊り",
-        "赤坂浄土寺盆踊り大会 2024 YouTube 盆踊り",
-        "浄土寺 2024 盆踊り"
-      ],
-      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
-    },
-    {
-      "queue_id": "youtube-year-backfill:cfa284cec3c4474b",
-      "target_year": 2023,
       "priority_score": 8,
       "priority": "low",
       "event_name": "北新宿四丁目 盆踊り大会",
@@ -316,33 +96,250 @@
         "medium_recurrence_score"
       ],
       "search_queries": [
-        "北新宿四丁目 盆踊り大会 北柏木公園 新宿区 2023 盆踊り",
-        "北新宿四丁目 盆踊り大会 2023 YouTube 盆踊り",
-        "北柏木公園 2023 盆踊り"
+        "北新宿四丁目 盆踊り大会 北柏木公園 新宿区 2024 盆踊り",
+        "北新宿四丁目 盆踊り大会 2024 YouTube 盆踊り",
+        "北柏木公園 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:e281db4d7322a660",
+      "target_year": 2024,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "玉川町会盆おどり大会",
+      "venue": "二子玉川西地区ふれあい広場(246高架下)",
+      "area": "世田谷区",
+      "series_key": "5544ac3c9cfb",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-07-25",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-25"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.6,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "玉川町会盆おどり大会 二子玉川西地区ふれあい広場(246高架下) 世田谷区 2024 盆踊り",
+        "玉川町会盆おどり大会 2024 YouTube 盆踊り",
+        "二子玉川西地区ふれあい広場(246高架下) 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:a01c3487a18effc3",
+      "target_year": 2024,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "第70回 恵比寿駅前盆踊り大会",
+      "venue": "JR恵比寿駅西口広場",
+      "area": "渋谷区",
+      "series_key": "cc11006afcc1",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-07-25",
+      "public_date_end": "2025-07-26",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-25",
+        "2025-07-26"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.73,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "第70回 恵比寿駅前盆踊り大会 JR恵比寿駅西口広場 渋谷区 2024 盆踊り",
+        "第70回 恵比寿駅前盆踊り大会 2024 YouTube 盆踊り",
+        "JR恵比寿駅西口広場 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:f2c264b6fa352911",
+      "target_year": 2023,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "堤方東町会「盆踊り大会」",
+      "venue": "池上第二小学校",
+      "area": "大田区",
+      "series_key": "1156476c7001",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-07-26",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-26"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.68,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "堤方東町会「盆踊り大会」 池上第二小学校 大田区 2023 盆踊り",
+        "堤方東町会「盆踊り大会」 2023 YouTube 盆踊り",
+        "池上第二小学校 2023 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:4c59be850639eae5",
+      "target_year": 2023,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "大蔵東部町会「親子納涼盆踊り大会」",
+      "venue": "横根稲荷神社",
+      "area": "世田谷区",
+      "series_key": "e28bdbfc4de9",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-07-26",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-26"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.72,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "大蔵東部町会「親子納涼盆踊り大会」 横根稲荷神社 世田谷区 2023 盆踊り",
+        "大蔵東部町会「親子納涼盆踊り大会」 2023 YouTube 盆踊り",
+        "横根稲荷神社 2023 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:5d621815eb017848",
+      "target_year": 2023,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "奥沢交和会",
+      "venue": "奥沢小学校",
+      "area": "世田谷区",
+      "series_key": "7cf9bbd115d1",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-07-26",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-26"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.6,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "奥沢交和会 奥沢小学校 世田谷区 2023 盆踊り",
+        "奥沢交和会 2023 YouTube 盆踊り",
+        "奥沢小学校 2023 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:f7219e15f217ac5f",
+      "target_year": 2023,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "成城学園 盆踊り大会",
+      "venue": "成城大学9号館前広場",
+      "area": "世田谷区",
+      "series_key": "56202bd98582",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-07-26",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-26"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.6,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "成城学園 盆踊り大会 成城大学9号館前広場 世田谷区 2023 盆踊り",
+        "成城学園 盆踊り大会 2023 YouTube 盆踊り",
+        "成城大学9号館前広場 2023 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:dceb63d1693034fd",
+      "target_year": 2023,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "祖師谷商店街振興組合",
+      "venue": "小田急線祖師ヶ谷大蔵駅前広場",
+      "area": "世田谷区",
+      "series_key": "22537f11f9e3",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-07-26",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-26"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.6,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "祖師谷商店街振興組合 小田急線祖師ヶ谷大蔵駅前広場 世田谷区 2023 盆踊り",
+        "祖師谷商店街振興組合 2023 YouTube 盆踊り",
+        "小田急線祖師ヶ谷大蔵駅前広場 2023 盆踊り"
       ],
       "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
     }
   ],
   "fresh_summary": {
-    "candidate_count": 39,
+    "candidate_count": 35,
     "status_counts": {
-      "review": 3,
-      "strong": 9,
-      "weak": 27
+      "review": 1,
+      "weak": 34
     },
-    "strong_count": 9,
-    "review_count": 3
+    "strong_count": 0,
+    "review_count": 1
   },
-  "candidates_after": 471,
+  "candidates_after": 506,
   "strong_after": 172,
-  "review_after": 44,
+  "review_after": 45,
   "regenerated": [
     "event occurrence backfill plan: observations=25 videos=140 with_songs=23",
     "low confidence backfill review: rows=14 -> data/low_confidence_backfill_review.md",
-    "event occurrence backfill applied: added=1 updated=24 observations=49 series_3year=3",
+    "event occurrence backfill applied: added=0 updated=25 observations=49 series_3year=3",
     "event date predictions: target_year=2026 predictions=11 rules={'date_near': 1, 'fixed_date': 1, 'weekday_last': 2, 'weekday_near_day': 2, 'weekday_nth': 3, 'weekend_near_day': 2}",
     "public date predictions: applied=8 skipped=3 unmatched=0",
-    "month youtube backfill queue: month=7 items=27 search_calls=54"
+    "month youtube backfill queue: month=7 items=17 search_calls=34"
   ],
   "git": "commit_requested"
 }
