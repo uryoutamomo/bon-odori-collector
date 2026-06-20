@@ -1,247 +1,170 @@
 {
   "generated_by": "run_daily_youtube_backfill.py",
-  "generated_at": "2026-06-20T09:51:05.394702+00:00",
+  "generated_at": "2026-06-20T09:51:14.729820+00:00",
   "status": "harvested",
-  "month": 7,
-  "selected_rows": 7,
-  "remaining_rows_before": 7,
-  "estimated_search_calls": 14,
-  "candidates_before": 517,
+  "month": 6,
+  "selected_rows": 4,
+  "remaining_rows_before": 4,
+  "estimated_search_calls": 8,
+  "candidates_before": 523,
   "selected": [
     {
-      "queue_id": "youtube-year-backfill:179bf2fd4b4a8473",
-      "target_year": 2024,
-      "priority_score": 8,
-      "priority": "low",
-      "event_name": "地域のふれあい第37回盆踊り大会",
-      "venue": "JR目黒駅西口前",
-      "area": "目黒区",
-      "series_key": "c4ab3b7f50a8",
-      "observed_years": [],
-      "observed_source_video_count": 0,
-      "public_date": "2025-07-27",
-      "public_date_end": "",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-07-27"
-      ],
-      "recurrence_label": "昨年開催・継続性 高",
-      "recurrence_score": 0.78,
-      "source_url_count": 0,
-      "song_count": 0,
-      "priority_reasons": [
-        "medium_recurrence_score"
-      ],
-      "search_queries": [
-        "地域のふれあい第37回盆踊り大会 JR目黒駅西口前 目黒区 2024 盆踊り",
-        "地域のふれあい第37回盆踊り大会 2024 YouTube 盆踊り",
-        "JR目黒駅西口前 2024 盆踊り"
-      ],
-      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
-    },
-    {
-      "queue_id": "youtube-year-backfill:6630b320cdbcaa50",
+      "queue_id": "youtube-year-backfill:ded3f8576e41114d",
       "target_year": 2023,
-      "priority_score": 8,
-      "priority": "low",
-      "event_name": "西糀谷三丁目町会「納涼盆踊り大会」",
-      "venue": "西糀谷さざんか公園",
-      "area": "大田区",
-      "series_key": "e9e9a31b74f3",
-      "observed_years": [],
-      "observed_source_video_count": 0,
-      "public_date": "2025-07-28",
-      "public_date_end": "",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-07-28"
+      "priority_score": 87,
+      "priority": "high",
+      "event_name": "郡上おどり in 青山",
+      "venue": "秩父宮ラグビー場駐車場",
+      "area": "港区",
+      "series_key": "f677ee46218e",
+      "observed_years": [
+        2025
       ],
-      "recurrence_label": "昨年開催・継続性 中",
-      "recurrence_score": 0.68,
+      "observed_source_video_count": 40,
+      "public_date": "2026-06-26",
+      "public_date_end": "2026-06-27",
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-06-26",
+        "2026-06-27"
+      ],
+      "recurrence_label": "2026年確認済み",
+      "recurrence_score": 0.95,
       "source_url_count": 0,
       "song_count": 0,
       "priority_reasons": [
-        "medium_recurrence_score"
+        "youtube_observed_series",
+        "recent_youtube_observation",
+        "high_recurrence_score"
       ],
       "search_queries": [
-        "西糀谷三丁目町会「納涼盆踊り大会」 西糀谷さざんか公園 大田区 2023 盆踊り",
-        "西糀谷三丁目町会「納涼盆踊り大会」 2023 YouTube 盆踊り",
-        "西糀谷さざんか公園 2023 盆踊り"
+        "郡上おどり in 青山 秩父宮ラグビー場駐車場 港区 2023 盆踊り",
+        "郡上おどり in 青山 2023 YouTube 盆踊り",
+        "秩父宮ラグビー場駐車場 2023 盆踊り"
       ],
       "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
     },
     {
-      "queue_id": "youtube-year-backfill:8540ac5926ca11f0",
+      "queue_id": "youtube-year-backfill:654343572c64f027",
       "target_year": 2024,
-      "priority_score": 8,
-      "priority": "low",
-      "event_name": "西糀谷三丁目町会「納涼盆踊り大会」",
-      "venue": "西糀谷さざんか公園",
-      "area": "大田区",
-      "series_key": "e9e9a31b74f3",
-      "observed_years": [],
-      "observed_source_video_count": 0,
-      "public_date": "2025-07-28",
-      "public_date_end": "",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-07-28"
+      "priority_score": 87,
+      "priority": "high",
+      "event_name": "郡上おどり in 青山",
+      "venue": "秩父宮ラグビー場駐車場",
+      "area": "港区",
+      "series_key": "f677ee46218e",
+      "observed_years": [
+        2025
       ],
-      "recurrence_label": "昨年開催・継続性 中",
-      "recurrence_score": 0.68,
+      "observed_source_video_count": 40,
+      "public_date": "2026-06-26",
+      "public_date_end": "2026-06-27",
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-06-26",
+        "2026-06-27"
+      ],
+      "recurrence_label": "2026年確認済み",
+      "recurrence_score": 0.95,
       "source_url_count": 0,
       "song_count": 0,
       "priority_reasons": [
-        "medium_recurrence_score"
+        "youtube_observed_series",
+        "recent_youtube_observation",
+        "high_recurrence_score"
       ],
       "search_queries": [
-        "西糀谷三丁目町会「納涼盆踊り大会」 西糀谷さざんか公園 大田区 2024 盆踊り",
-        "西糀谷三丁目町会「納涼盆踊り大会」 2024 YouTube 盆踊り",
-        "西糀谷さざんか公園 2024 盆踊り"
+        "郡上おどり in 青山 秩父宮ラグビー場駐車場 港区 2024 盆踊り",
+        "郡上おどり in 青山 2024 YouTube 盆踊り",
+        "秩父宮ラグビー場駐車場 2024 盆踊り"
       ],
       "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
     },
     {
-      "queue_id": "youtube-year-backfill:11b62a9521ff2ce7",
+      "queue_id": "youtube-year-backfill:ce6e8b57634e97ed",
       "target_year": 2023,
-      "priority_score": 8,
+      "priority_score": 15,
       "priority": "low",
-      "event_name": "森ヶ崎自治会",
-      "venue": "大森南4丁目公園",
-      "area": "大田区",
-      "series_key": "d9d8d002887f",
+      "event_name": "第34回ふるさと千川 まつり",
+      "venue": "ふるさと千川ひろば(千川小学校校庭跡地)",
+      "area": "豊島区",
+      "series_key": "a2231b6dc45b",
       "observed_years": [],
       "observed_source_video_count": 0,
-      "public_date": "2025-07-29",
-      "public_date_end": "",
-      "last_seen_year": 2025,
+      "public_date": "2026-06-05",
+      "public_date_end": "2026-06-06",
+      "last_seen_year": null,
       "last_seen_dates": [
-        "2025-07-29"
+        "2026-06-05",
+        "2026-06-06"
       ],
-      "recurrence_label": "昨年開催・継続性 中",
-      "recurrence_score": 0.6,
+      "recurrence_label": "2026年開催終了",
+      "recurrence_score": 0.98,
       "source_url_count": 0,
       "song_count": 0,
       "priority_reasons": [
-        "medium_recurrence_score"
+        "high_recurrence_score"
       ],
       "search_queries": [
-        "森ヶ崎自治会 大森南4丁目公園 大田区 2023 盆踊り",
-        "森ヶ崎自治会 2023 YouTube 盆踊り",
-        "大森南4丁目公園 2023 盆踊り"
+        "第34回ふるさと千川 まつり ふるさと千川ひろば(千川小学校校庭跡地) 豊島区 2023 盆踊り",
+        "第34回ふるさと千川 まつり 2023 YouTube 盆踊り",
+        "ふるさと千川ひろば(千川小学校校庭跡地) 2023 盆踊り"
       ],
       "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
     },
     {
-      "queue_id": "youtube-year-backfill:ba7db0101bcfc143",
+      "queue_id": "youtube-year-backfill:0887b88e9023afa5",
       "target_year": 2024,
-      "priority_score": 8,
+      "priority_score": 15,
       "priority": "low",
-      "event_name": "森ヶ崎自治会",
-      "venue": "大森南4丁目公園",
-      "area": "大田区",
-      "series_key": "d9d8d002887f",
+      "event_name": "第34回ふるさと千川 まつり",
+      "venue": "ふるさと千川ひろば(千川小学校校庭跡地)",
+      "area": "豊島区",
+      "series_key": "a2231b6dc45b",
       "observed_years": [],
       "observed_source_video_count": 0,
-      "public_date": "2025-07-29",
-      "public_date_end": "",
-      "last_seen_year": 2025,
+      "public_date": "2026-06-05",
+      "public_date_end": "2026-06-06",
+      "last_seen_year": null,
       "last_seen_dates": [
-        "2025-07-29"
+        "2026-06-05",
+        "2026-06-06"
       ],
-      "recurrence_label": "昨年開催・継続性 中",
-      "recurrence_score": 0.6,
+      "recurrence_label": "2026年開催終了",
+      "recurrence_score": 0.98,
       "source_url_count": 0,
       "song_count": 0,
       "priority_reasons": [
-        "medium_recurrence_score"
+        "high_recurrence_score"
       ],
       "search_queries": [
-        "森ヶ崎自治会 大森南4丁目公園 大田区 2024 盆踊り",
-        "森ヶ崎自治会 2024 YouTube 盆踊り",
-        "大森南4丁目公園 2024 盆踊り"
-      ],
-      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
-    },
-    {
-      "queue_id": "youtube-year-backfill:699a870d93f11789",
-      "target_year": 2023,
-      "priority_score": 0,
-      "priority": "low",
-      "event_name": "-両国- 江戸NOREN 妖怪BON DANCE",
-      "venue": "-両国-江戸NOREN",
-      "area": "墨田区",
-      "series_key": "2538c4edcb46",
-      "observed_years": [],
-      "observed_source_video_count": 0,
-      "public_date": "2025-07-13",
-      "public_date_end": "2025-07-13",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-07-13",
-        "2025-07-13"
-      ],
-      "recurrence_label": "昨年開催・継続性 低",
-      "recurrence_score": 0.46,
-      "source_url_count": 0,
-      "song_count": 0,
-      "priority_reasons": [],
-      "search_queries": [
-        "-両国- 江戸NOREN 妖怪BON DANCE -両国-江戸NOREN 墨田区 2023 盆踊り",
-        "-両国- 江戸NOREN 妖怪BON DANCE 2023 YouTube 盆踊り",
-        "-両国-江戸NOREN 2023 盆踊り"
-      ],
-      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
-    },
-    {
-      "queue_id": "youtube-year-backfill:0d2e020cf3f050ae",
-      "target_year": 2024,
-      "priority_score": 0,
-      "priority": "low",
-      "event_name": "-両国- 江戸NOREN 妖怪BON DANCE",
-      "venue": "-両国-江戸NOREN",
-      "area": "墨田区",
-      "series_key": "2538c4edcb46",
-      "observed_years": [],
-      "observed_source_video_count": 0,
-      "public_date": "2025-07-13",
-      "public_date_end": "2025-07-13",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-07-13",
-        "2025-07-13"
-      ],
-      "recurrence_label": "昨年開催・継続性 低",
-      "recurrence_score": 0.46,
-      "source_url_count": 0,
-      "song_count": 0,
-      "priority_reasons": [],
-      "search_queries": [
-        "-両国- 江戸NOREN 妖怪BON DANCE -両国-江戸NOREN 墨田区 2024 盆踊り",
-        "-両国- 江戸NOREN 妖怪BON DANCE 2024 YouTube 盆踊り",
-        "-両国-江戸NOREN 2024 盆踊り"
+        "第34回ふるさと千川 まつり ふるさと千川ひろば(千川小学校校庭跡地) 豊島区 2024 盆踊り",
+        "第34回ふるさと千川 まつり 2024 YouTube 盆踊り",
+        "ふるさと千川ひろば(千川小学校校庭跡地) 2024 盆踊り"
       ],
       "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
     }
   ],
   "fresh_summary": {
-    "candidate_count": 6,
+    "candidate_count": 18,
     "status_counts": {
-      "weak": 6
+      "review": 2,
+      "strong": 9,
+      "weak": 7
     },
-    "strong_count": 0,
-    "review_count": 0
+    "strong_count": 9,
+    "review_count": 2
   },
-  "candidates_after": 523,
-  "strong_after": 172,
-  "review_after": 45,
+  "candidates_after": 541,
+  "strong_after": 181,
+  "review_after": 47,
   "regenerated": [
-    "event occurrence backfill plan: observations=25 videos=140 with_songs=23",
-    "low confidence backfill review: rows=14 -> data/low_confidence_backfill_review.md",
+    "event occurrence backfill plan: observations=25 videos=147 with_songs=23",
+    "low confidence backfill review: rows=15 -> data/low_confidence_backfill_review.md",
     "event occurrence backfill applied: added=0 updated=25 observations=49 series_3year=3",
     "event date predictions: target_year=2026 predictions=11 rules={'date_near': 1, 'fixed_date': 1, 'weekday_last': 2, 'weekday_near_day': 2, 'weekday_nth': 3, 'weekend_near_day': 2}",
     "public date predictions: applied=8 skipped=3 unmatched=0",
-    "month youtube backfill queue: month=7 items=0 search_calls=0"
+    "month youtube backfill queue: month=6 items=0 search_calls=0"
   ],
   "git": "commit_requested"
 }

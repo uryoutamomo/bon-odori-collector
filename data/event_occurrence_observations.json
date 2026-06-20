@@ -1,6 +1,6 @@
 {
   "generated_by": "build_event_occurrence_observations.py",
-  "generated_at": "2026-06-20T09:51:08.696345+00:00",
+  "generated_at": "2026-06-20T09:51:16.988800+00:00",
   "sources": {
     "active_review": "/Users/ryotauchida/bon-odori-collector/data/youtube_active_video_review.json",
     "setlist_occurrences": "/Users/ryotauchida/bon-odori-collector/data/youtube_setlist_occurrences.json"
@@ -8,7 +8,7 @@
   "summary": {
     "observation_count": 49,
     "series_count": 29,
-    "source_video_count": 697,
+    "source_video_count": 704,
     "observed_years": [
       "2023",
       "2024",
@@ -1793,7 +1793,7 @@
       "weekday_start": "木",
       "weekday_end": "金",
       "source_type": "youtube_backfill_observed",
-      "source_video_count": 10,
+      "source_video_count": 14,
       "source_channels": [
         "shu channel",
         "メトロ23区",
@@ -1818,6 +1818,22 @@
           "score": 100
         },
         {
+          "url": "https://www.youtube.com/watch?v=GRbTxDwruZo",
+          "video_id": "GRbTxDwruZo",
+          "title": "郡上おどりin青山1日目①　２０２３年　秩父宮ラグビー場駐車場　東京都港区",
+          "channel": "和太鼓お祭りチャンネル",
+          "published_at": "2023-06-17T12:00:14Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=t87ypCg5l0M",
+          "video_id": "t87ypCg5l0M",
+          "title": "4K【郡上おどりin青山 2023】[1/3]『かわさき～三百～春駒』🏮Tokyo Bon Dance Festival👘2023.6.16 @秩父宮ラグビー場駐車場",
+          "channel": "shu channel",
+          "published_at": "2023-06-17T05:28:49Z",
+          "score": 100
+        },
+        {
           "url": "https://www.youtube.com/watch?v=t87ypCg5l0M",
           "video_id": "t87ypCg5l0M",
           "title": "4K【郡上おどりin青山 2023】[1/3]『かわさき～三百～春駒』🏮Tokyo Bon Dance Festival👘2023.6.16 @秩父宮ラグビー場駐車場",
@@ -1850,6 +1866,14 @@
           "score": 100
         },
         {
+          "url": "https://www.youtube.com/watch?v=_iUSVsgFeHk",
+          "video_id": "_iUSVsgFeHk",
+          "title": "4K【郡上おどりin青山 2023】[2/3]『郡上甚句』🏮Tokyo Bon Dance Festival👘2023.6.16 @秩父宮ラグビー場駐車場",
+          "channel": "shu channel",
+          "published_at": "2023-06-17T05:29:00Z",
+          "score": 100
+        },
+        {
           "url": "https://www.youtube.com/watch?v=yOrCwOvrx7w",
           "video_id": "yOrCwOvrx7w",
           "title": "4K【郡上おどりin青山 2023】[3/3]『春駒～まつさか』🏮Tokyo Bon Dance Festival👘2023.6.16 @秩父宮ラグビー場駐車場",
@@ -1863,6 +1887,14 @@
           "title": "4K【郡上おどりin青山 2023】[3/3]『春駒～まつさか』🏮Tokyo Bon Dance Festival👘2023.6.16 @秩父宮ラグビー場駐車場",
           "channel": "shu channel",
           "published_at": "2023-06-17T05:29:08Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=fwIYqL5eeMw",
+          "video_id": "fwIYqL5eeMw",
+          "title": "郡上踊り 青山 2023年 第27回（ぐじょうおどり）郡上おどり 春駒｜かわさき 日本三大盆踊り 盆踊り大会 郡上八幡  bon dance 郡上おどりin青山 gujo odori in japan",
+          "channel": "メトロ23区",
+          "published_at": "2023-06-16T14:06:30Z",
           "score": 100
         },
         {
@@ -1885,7 +1917,7 @@
       "songs": [
         {
           "song_name": "郡上おどり：春駒",
-          "source_count": 4,
+          "source_count": 5,
           "source_urls": [
             "https://www.youtube.com/watch?v=t87ypCg5l0M",
             "https://www.youtube.com/watch?v=yOrCwOvrx7w"
@@ -1895,7 +1927,7 @@
         },
         {
           "song_name": "ダンシングヒーロー",
-          "source_count": 2,
+          "source_count": 3,
           "source_urls": [
             "https://www.youtube.com/watch?v=f2clLkBgSkQ"
           ],
@@ -1904,7 +1936,7 @@
         },
         {
           "song_name": "東京音頭",
-          "source_count": 2,
+          "source_count": 3,
           "source_urls": [
             "https://www.youtube.com/watch?v=iwpON-POUyo"
           ],
@@ -1913,7 +1945,7 @@
         },
         {
           "song_name": "炭坑節",
-          "source_count": 2,
+          "source_count": 3,
           "source_urls": [
             "https://www.youtube.com/watch?v=e8D9kp52-xA"
           ],
@@ -1922,7 +1954,7 @@
         },
         {
           "song_name": "藤岡八木節愛好会",
-          "source_count": 2,
+          "source_count": 3,
           "source_urls": [
             "https://www.youtube.com/watch?v=FeF_HkRq9Vo"
           ],
@@ -1931,7 +1963,7 @@
         },
         {
           "song_name": "あやめ踊り",
-          "source_count": 2,
+          "source_count": 3,
           "source_urls": [
             "https://www.youtube.com/watch?v=k1EPtS0SQs0"
           ],
@@ -1940,7 +1972,7 @@
         },
         {
           "song_name": "とらじょさま・斎太郎節・北海盆唄",
-          "source_count": 2,
+          "source_count": 3,
           "source_urls": [
             "https://www.youtube.com/watch?v=B0UgTMeZuf4"
           ],
@@ -1949,7 +1981,7 @@
         },
         {
           "song_name": "ホームラン音頭",
-          "source_count": 2,
+          "source_count": 3,
           "source_urls": [
             "https://www.youtube.com/watch?v=peyxmVoRaKI"
           ],
@@ -1958,7 +1990,7 @@
         },
         {
           "song_name": "令和おどり",
-          "source_count": 2,
+          "source_count": 3,
           "source_urls": [
             "https://www.youtube.com/watch?v=HQbHIeuq4m4"
           ],
@@ -1967,7 +1999,7 @@
         },
         {
           "song_name": "郡上おどり：かわさき",
-          "source_count": 2,
+          "source_count": 3,
           "source_urls": [
             "https://www.youtube.com/watch?v=t87ypCg5l0M"
           ],
@@ -1976,7 +2008,7 @@
         },
         {
           "song_name": "郡上おどり：三百",
-          "source_count": 2,
+          "source_count": 3,
           "source_urls": [
             "https://www.youtube.com/watch?v=t87ypCg5l0M"
           ],
@@ -1985,7 +2017,7 @@
         },
         {
           "song_name": "かわさき～三百～春駒",
-          "source_count": 2,
+          "source_count": 3,
           "source_urls": [
             "https://www.youtube.com/watch?v=t87ypCg5l0M"
           ],
@@ -1994,7 +2026,7 @@
         },
         {
           "song_name": "郡上おどり：郡上甚句",
-          "source_count": 2,
+          "source_count": 3,
           "source_urls": [
             "https://www.youtube.com/watch?v=_iUSVsgFeHk"
           ],
@@ -2003,7 +2035,7 @@
         },
         {
           "song_name": "郡上甚句",
-          "source_count": 2,
+          "source_count": 3,
           "source_urls": [
             "https://www.youtube.com/watch?v=_iUSVsgFeHk"
           ],
@@ -3866,7 +3898,7 @@
       "weekday_start": "金",
       "weekday_end": "金",
       "source_type": "youtube_backfill_observed",
-      "source_video_count": 8,
+      "source_video_count": 11,
       "source_channels": [
         "Hidden NIPPON",
         "Very JAPAN",
@@ -3888,6 +3920,30 @@
           "title": "「郡上おどり in 青山」納涼大会 盆踊り 2024 Tokyo,Aoyama Bon Dance. Bon Odori 郡上踊り",
           "channel": "Very JAPAN",
           "published_at": "2024-06-15T05:07:16Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Ng_9XEnpfQs",
+          "video_id": "Ng_9XEnpfQs",
+          "title": "【日本三大盆踊り】郡上おどりin青山 2024夏 ‐Gujo Odori (Japanese Bon Dance）in Aoyama, Tokyo-",
+          "channel": "Hidden NIPPON",
+          "published_at": "2024-06-17T10:45:10Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=7nJ6Xg3XRgo",
+          "video_id": "7nJ6Xg3XRgo",
+          "title": "【郡上おどりin青山 2024】（1/2）かわさき～げんげんばらばら～さわぎ～春駒🏮Tokyo Bon Dance Festival👘2024.6.15 @秩父宮ラグビー場 駐車場",
+          "channel": "shu channel",
+          "published_at": "2024-06-14T18:40:07Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=lqzUIJ7u_bU",
+          "video_id": "lqzUIJ7u_bU",
+          "title": "【郡上おどりin青山 2024】（2/2）かわさき～さわぎ～三百～郡上甚句～春駒～まつさか🏮Tokyo Bon Dance Festival👘2024.6.15 @秩父宮ラグビー場 駐車場",
+          "channel": "shu channel",
+          "published_at": "2024-06-14T18:41:31Z",
           "score": 100
         },
         {
@@ -3942,7 +3998,7 @@
       "songs": [
         {
           "song_name": "郡上甚句",
-          "source_count": 4,
+          "source_count": 6,
           "source_urls": [
             "https://www.youtube.com/watch?v=Ng_9XEnpfQs",
             "https://www.youtube.com/watch?v=lqzUIJ7u_bU"

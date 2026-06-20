@@ -1,24 +1,21 @@
 # YouTube日次バックフィル
 
-- generated_at: 2026-06-20T09:51:05.394702+00:00
+- generated_at: 2026-06-20T09:51:14.729820+00:00
 - status: harvested
-- month: 7
-- selected_rows: 7
-- remaining_rows_before: 7
-- estimated_search_calls: 14
-- candidates_before: 517
-- candidates_after: 523
-- strong_after: 172
-- review_after: 45
+- month: 6
+- selected_rows: 4
+- remaining_rows_before: 4
+- estimated_search_calls: 8
+- candidates_before: 523
+- candidates_after: 541
+- strong_after: 181
+- review_after: 47
 
 ## selected
 
 | priority | score | year | event | venue | dates |
 | --- | ---: | ---: | --- | --- | --- |
-| low | 8 | 2024 | 地域のふれあい第37回盆踊り大会 | JR目黒駅西口前 | 2025-07-27 |
-| low | 8 | 2023 | 西糀谷三丁目町会「納涼盆踊り大会」 | 西糀谷さざんか公園 | 2025-07-28 |
-| low | 8 | 2024 | 西糀谷三丁目町会「納涼盆踊り大会」 | 西糀谷さざんか公園 | 2025-07-28 |
-| low | 8 | 2023 | 森ヶ崎自治会 | 大森南4丁目公園 | 2025-07-29 |
-| low | 8 | 2024 | 森ヶ崎自治会 | 大森南4丁目公園 | 2025-07-29 |
-| low | 0 | 2023 | -両国- 江戸NOREN 妖怪BON DANCE | -両国-江戸NOREN | 2025-07-13 |
-| low | 0 | 2024 | -両国- 江戸NOREN 妖怪BON DANCE | -両国-江戸NOREN | 2025-07-13 |
+| high | 87 | 2023 | 郡上おどり in 青山 | 秩父宮ラグビー場駐車場 | 2026-06-26, 2026-06-27 |
+| high | 87 | 2024 | 郡上おどり in 青山 | 秩父宮ラグビー場駐車場 | 2026-06-26, 2026-06-27 |
+| low | 15 | 2023 | 第34回ふるさと千川 まつり | ふるさと千川ひろば(千川小学校校庭跡地) | 2026-06-05, 2026-06-06 |
+| low | 15 | 2024 | 第34回ふるさと千川 まつり | ふるさと千川ひろば(千川小学校校庭跡地) | 2026-06-05, 2026-06-06 |

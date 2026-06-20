@@ -1,10 +1,10 @@
 # YouTube 過去年バックフィル候補
 
-- 生成: 2026-06-20T09:51:08.491127+00:00
-- selected_queue_count: 164
-- candidate_count: 523
-- strong: 172
-- review: 45
+- 生成: 2026-06-20T09:51:16.771133+00:00
+- selected_queue_count: 168
+- candidate_count: 541
+- strong: 181
+- review: 47
 
 | status | score | year | event | venue | detected | channel | title | url |
 | --- | ---: | ---: | --- | --- | --- | --- | --- | --- |
@@ -44,12 +44,16 @@
 | strong | 100 | 2023 | 赤坂浄土寺盆踊り大会 | 浄土寺 | 2023-07-26 | 山崎茂雄 | ４K🏮＃まつの木小唄🏮＃赤坂浄土寺盆踊り大会2023＃日本の夏祭り＃MatsunokiKouta＃2023年7月26日 | https://www.youtube.com/watch?v=hfouKEVU3bQ |
 | strong | 100 | 2023 | 郡上おどり in 青山 | 秩父宮ラグビー場駐車場 | 2023-06-16 | shu channel | 4K【郡上おどりin青山 2023】[1/3]『かわさき～三百～春駒』🏮Tokyo Bon Dance Festival👘2023.6.16 @秩父宮ラグビー場駐車場 | https://www.youtube.com/watch?v=t87ypCg5l0M |
 | strong | 100 | 2023 | 郡上おどり in 青山 | 秩父宮ラグビー場駐車場 | 2023-06-16 | shu channel | 4K【郡上おどりin青山 2023】[1/3]『かわさき～三百～春駒』🏮Tokyo Bon Dance Festival👘2023.6.16 @秩父宮ラグビー場駐車場 | https://www.youtube.com/watch?v=t87ypCg5l0M |
+| strong | 100 | 2023 | 郡上おどり in 青山 | 秩父宮ラグビー場駐車場 | 2023-06-16 | shu channel | 4K【郡上おどりin青山 2023】[1/3]『かわさき～三百～春駒』🏮Tokyo Bon Dance Festival👘2023.6.16 @秩父宮ラグビー場駐車場 | https://www.youtube.com/watch?v=t87ypCg5l0M |
+| strong | 100 | 2023 | 郡上おどり in 青山 | 秩父宮ラグビー場駐車場 | 2023-06-16 | shu channel | 4K【郡上おどりin青山 2023】[2/3]『郡上甚句』🏮Tokyo Bon Dance Festival👘2023.6.16 @秩父宮ラグビー場駐車場 | https://www.youtube.com/watch?v=_iUSVsgFeHk |
 | strong | 100 | 2023 | 郡上おどり in 青山 | 秩父宮ラグビー場駐車場 | 2023-06-16 | shu channel | 4K【郡上おどりin青山 2023】[2/3]『郡上甚句』🏮Tokyo Bon Dance Festival👘2023.6.16 @秩父宮ラグビー場駐車場 | https://www.youtube.com/watch?v=_iUSVsgFeHk |
 | strong | 100 | 2023 | 郡上おどり in 青山 | 秩父宮ラグビー場駐車場 | 2023-06-16 | shu channel | 4K【郡上おどりin青山 2023】[2/3]『郡上甚句』🏮Tokyo Bon Dance Festival👘2023.6.16 @秩父宮ラグビー場駐車場 | https://www.youtube.com/watch?v=_iUSVsgFeHk |
 | strong | 100 | 2023 | 郡上おどり in 青山 | 秩父宮ラグビー場駐車場 | 2023-06-16 | shu channel | 4K【郡上おどりin青山 2023】[3/3]『春駒～まつさか』🏮Tokyo Bon Dance Festival👘2023.6.16 @秩父宮ラグビー場駐車場 | https://www.youtube.com/watch?v=yOrCwOvrx7w |
 | strong | 100 | 2023 | 郡上おどり in 青山 | 秩父宮ラグビー場駐車場 | 2023-06-16 | shu channel | 4K【郡上おどりin青山 2023】[3/3]『春駒～まつさか』🏮Tokyo Bon Dance Festival👘2023.6.16 @秩父宮ラグビー場駐車場 | https://www.youtube.com/watch?v=yOrCwOvrx7w |
 | strong | 100 | 2023 | 郡上おどり in 青山 | 秩父宮ラグビー場駐車場 | 2023-06-15 | 和太鼓お祭りチャンネル | 郡上おどりin青山1日目①　２０２３年　秩父宮ラグビー場駐車場　東京都港区 | https://www.youtube.com/watch?v=GRbTxDwruZo |
 | strong | 100 | 2023 | 郡上おどり in 青山 | 秩父宮ラグビー場駐車場 | 2023-06-15 | 和太鼓お祭りチャンネル | 郡上おどりin青山1日目①　２０２３年　秩父宮ラグビー場駐車場　東京都港区 | https://www.youtube.com/watch?v=GRbTxDwruZo |
+| strong | 100 | 2023 | 郡上おどり in 青山 | 秩父宮ラグビー場駐車場 | 2023-06-15 | 和太鼓お祭りチャンネル | 郡上おどりin青山1日目①　２０２３年　秩父宮ラグビー場駐車場　東京都港区 | https://www.youtube.com/watch?v=GRbTxDwruZo |
+| strong | 100 | 2023 | 郡上おどり in 青山 | 秩父宮ラグビー場駐車場 | 2023-06-16 | メトロ23区 | 郡上踊り 青山 2023年 第27回（ぐじょうおどり）郡上おどり 春駒｜かわさき 日本三大盆踊り 盆踊り大会 郡上八幡  bon dance 郡上おどりin青山 gujo odori in japan | https://www.youtube.com/watch?v=fwIYqL5eeMw |
 | strong | 100 | 2023 | 飛鳥山盆踊り | 飛鳥山公園 | 2023-03-12 | 和太鼓お祭りチャンネル | しながわ中央公園盆踊り　2023年3月12日　じょんから女節・品川音頭・大森甚句・波乗りジョニー・房州よいとこ・ベイサイドブギ・湘南盆踊り・水軍ばやし・我は海の子・飛び魚音頭・お台場音頭・ポ | https://www.youtube.com/watch?v=-dahLlLBKHo |
 | strong | 100 | 2023 | 飛鳥山盆踊り | 飛鳥山公園 | 2023-03-12 | 和太鼓お祭りチャンネル | 飛鳥山公園盆踊り　2023年3月12日　東京都北区 | https://www.youtube.com/watch?v=Ttt-p1hwK_M |
 | strong | 100 | 2024 | みたままつり 納涼民踊のつどい | 靖国神社 | 2024-07-15 | 和太鼓お祭りチャンネル | 「炭坑節」　20240715靖国神社みたままつり奉納芸能盆踊り２　納涼民踊の集い　東京都千代田区 | https://www.youtube.com/watch?v=rrDmypHrtgA |
@@ -84,7 +88,3 @@
 | strong | 100 | 2024 | 築地本願寺納涼盆踊り大会 | 築地本願寺 | 2024-08-01 | 山崎茂雄 | 🏮[＃おこさ節 ]⛩️[＃第77回築地本願寺納涼盆踊り大会2024] 大盛り上がり＃OkosaBushi＃TsukijiHonganji＃2024年8月1日 | https://www.youtube.com/watch?v=izf4pmVM7A8 |
 | strong | 100 | 2024 | 自由が丘納涼盆踊り大会 | 自由が丘駅前ロータリー 特設会場 | 2024-07-15 | Tokyo Lonely Walker | [4K]🇯🇵 自由が丘納涼盆踊り大会 「ホイップるん音頭」「自由が丘小唄」最終日 / Traditional Japanese Bon dance in Jiyugaoka. Short ver. | https://www.youtube.com/watch?v=ONuZ_KNO2FU |
 | strong | 100 | 2024 | 西久保八幡神社 盆踊り | 西久保八幡神社 | 2024-08-09 | 和太鼓お祭りチャンネル | ステテコシャンシャン　2024年西久保八幡神社盆踊り29　東京都港区 | https://www.youtube.com/watch?v=r56WKNmIGQU |
-| strong | 100 | 2024 | 西久保八幡神社 盆踊り | 西久保八幡神社 | 2024-08-09 | 和太鼓お祭りチャンネル | ドンパン節　2024年西久保八幡神社盆踊り８　東京都港区 | https://www.youtube.com/watch?v=LCIo27LHau4 |
-| strong | 100 | 2024 | 西久保八幡神社 盆踊り | 西久保八幡神社 | 2024-08-09 | 和太鼓お祭りチャンネル | 八木節　2024年西久保八幡神社盆踊り25　東京都港区 | https://www.youtube.com/watch?v=0joH8q6PMow |
-| strong | 100 | 2024 | 西久保八幡神社 盆踊り | 西久保八幡神社 | 2024-08-09 | 和太鼓お祭りチャンネル | 大角会　2024年西久保八幡神社盆踊り17　東京都港区 | https://www.youtube.com/watch?v=0mdYNfYiD1M |
-| strong | 100 | 2024 | 西久保八幡神社 盆踊り | 西久保八幡神社 | 2024-08-09 | 和太鼓お祭りチャンネル | 新・二十一世紀音頭　2024年西久保八幡神社盆踊り５　東京都港区 | https://www.youtube.com/watch?v=tlxWBaWQRVw |

@@ -1,20 +1,20 @@
 {
   "generated_by": "harvest_youtube_year_backfill.py",
-  "generated_at": "2026-06-20T09:51:08.491127+00:00",
+  "generated_at": "2026-06-20T09:51:16.771133+00:00",
   "source": "data/youtube_year_backfill_queue.json",
-  "selected_queue_count": 164,
+  "selected_queue_count": 168,
   "queue_offset": 0,
   "max_results_per_query": 5,
-  "api_request_count_estimate": 15,
+  "api_request_count_estimate": 9,
   "summary": {
-    "candidate_count": 523,
+    "candidate_count": 541,
     "status_counts": {
-      "review": 45,
-      "strong": 172,
-      "weak": 306
+      "review": 47,
+      "strong": 181,
+      "weak": 313
     },
-    "strong_count": 172,
-    "review_count": 45
+    "strong_count": 181,
+    "review_count": 47
   },
   "selected_queue_rows": [
     {
@@ -641,6 +641,42 @@
       "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
     },
     {
+      "queue_id": "youtube-year-backfill:ded3f8576e41114d",
+      "target_year": 2023,
+      "priority_score": 87,
+      "priority": "high",
+      "event_name": "郡上おどり in 青山",
+      "venue": "秩父宮ラグビー場駐車場",
+      "area": "港区",
+      "series_key": "f677ee46218e",
+      "observed_years": [
+        2025
+      ],
+      "observed_source_video_count": 40,
+      "public_date": "2026-06-26",
+      "public_date_end": "2026-06-27",
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-06-26",
+        "2026-06-27"
+      ],
+      "recurrence_label": "2026年確認済み",
+      "recurrence_score": 0.95,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "youtube_observed_series",
+        "recent_youtube_observation",
+        "high_recurrence_score"
+      ],
+      "search_queries": [
+        "郡上おどり in 青山 秩父宮ラグビー場駐車場 港区 2023 盆踊り",
+        "郡上おどり in 青山 2023 YouTube 盆踊り",
+        "秩父宮ラグビー場駐車場 2023 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
       "queue_id": "youtube-year-backfill:0d348f9c950ed187",
       "target_year": 2023,
       "priority_score": 87,
@@ -854,6 +890,42 @@
         "西久保八幡神社 盆踊り 西久保八幡神社 港区 2024 盆踊り",
         "西久保八幡神社 盆踊り 2024 YouTube 盆踊り",
         "西久保八幡神社 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:654343572c64f027",
+      "target_year": 2024,
+      "priority_score": 87,
+      "priority": "high",
+      "event_name": "郡上おどり in 青山",
+      "venue": "秩父宮ラグビー場駐車場",
+      "area": "港区",
+      "series_key": "f677ee46218e",
+      "observed_years": [
+        2025
+      ],
+      "observed_source_video_count": 40,
+      "public_date": "2026-06-26",
+      "public_date_end": "2026-06-27",
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-06-26",
+        "2026-06-27"
+      ],
+      "recurrence_label": "2026年確認済み",
+      "recurrence_score": 0.95,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "youtube_observed_series",
+        "recent_youtube_observation",
+        "high_recurrence_score"
+      ],
+      "search_queries": [
+        "郡上おどり in 青山 秩父宮ラグビー場駐車場 港区 2024 盆踊り",
+        "郡上おどり in 青山 2024 YouTube 盆踊り",
+        "秩父宮ラグビー場駐車場 2024 盆踊り"
       ],
       "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
     },
@@ -2882,6 +2954,38 @@
       "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
     },
     {
+      "queue_id": "youtube-year-backfill:ce6e8b57634e97ed",
+      "target_year": 2023,
+      "priority_score": 15,
+      "priority": "low",
+      "event_name": "第34回ふるさと千川 まつり",
+      "venue": "ふるさと千川ひろば(千川小学校校庭跡地)",
+      "area": "豊島区",
+      "series_key": "a2231b6dc45b",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2026-06-05",
+      "public_date_end": "2026-06-06",
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-06-05",
+        "2026-06-06"
+      ],
+      "recurrence_label": "2026年開催終了",
+      "recurrence_score": 0.98,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "high_recurrence_score"
+      ],
+      "search_queries": [
+        "第34回ふるさと千川 まつり ふるさと千川ひろば(千川小学校校庭跡地) 豊島区 2023 盆踊り",
+        "第34回ふるさと千川 まつり 2023 YouTube 盆踊り",
+        "ふるさと千川ひろば(千川小学校校庭跡地) 2023 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
       "queue_id": "youtube-year-backfill:0454aac7cd9268b6",
       "target_year": 2023,
       "priority_score": 15,
@@ -3099,6 +3203,38 @@
         "戸越宮前盆踊り 宮前小学校 品川区 2024 盆踊り",
         "戸越宮前盆踊り 2024 YouTube 盆踊り",
         "宮前小学校 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:0887b88e9023afa5",
+      "target_year": 2024,
+      "priority_score": 15,
+      "priority": "low",
+      "event_name": "第34回ふるさと千川 まつり",
+      "venue": "ふるさと千川ひろば(千川小学校校庭跡地)",
+      "area": "豊島区",
+      "series_key": "a2231b6dc45b",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2026-06-05",
+      "public_date_end": "2026-06-06",
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-06-05",
+        "2026-06-06"
+      ],
+      "recurrence_label": "2026年開催終了",
+      "recurrence_score": 0.98,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "high_recurrence_score"
+      ],
+      "search_queries": [
+        "第34回ふるさと千川 まつり ふるさと千川ひろば(千川小学校校庭跡地) 豊島区 2024 盆踊り",
+        "第34回ふるさと千川 まつり 2024 YouTube 盆踊り",
+        "ふるさと千川ひろば(千川小学校校庭跡地) 2024 盆踊り"
       ],
       "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
     },
@@ -7596,6 +7732,60 @@
       "status": "strong",
       "score": 100,
       "reasons": [
+        "event_name_in_video",
+        "venue_in_video",
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context",
+        "setlist_detected"
+      ],
+      "queue_id": "youtube-year-backfill:ded3f8576e41114d",
+      "target_year": 2023,
+      "event_name": "郡上おどり in 青山",
+      "venue": "秩父宮ラグビー場駐車場",
+      "area": "港区",
+      "detected_event_date": "2023-06-16",
+      "video_id": "t87ypCg5l0M",
+      "video_url": "https://www.youtube.com/watch?v=t87ypCg5l0M",
+      "title": "4K【郡上おどりin青山 2023】[1/3]『かわさき～三百～春駒』🏮Tokyo Bon Dance Festival👘2023.6.16 @秩父宮ラグビー場駐車場",
+      "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ",
+      "channel_title": "shu channel",
+      "published_at": "2023-06-17T05:28:49Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/t87ypCg5l0M/maxresdefault.jpg",
+      "query": "郡上おどり in 青山 秩父宮ラグビー場駐車場 港区 2023 盆踊り",
+      "setlist_count": 4,
+      "setlist_sample": [
+        {
+          "number": 20,
+          "title": "19.9.1@東京・日本橋 福徳の森 Fukutoku Garden,Tokyo",
+          "url": "https://www.youtube.com/watch?v=89J0cWqROtk",
+          "source": "numbered_url"
+        },
+        {
+          "number": 1,
+          "title": "郡上おどり：かわさき",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 2,
+          "title": "郡上おどり：三百",
+          "url": "",
+          "source": "chapter"
+        },
+        {
+          "number": 3,
+          "title": "郡上おどり：春駒",
+          "url": "",
+          "source": "chapter"
+        }
+      ],
+      "description_excerpt": "00:00 郡上おどり：かわさき 14:53 郡上おどり：三百 27:11 郡上おどり：春駒 2023/06/16 秩父宮ラグビー場・駐車場に於いて、郡上八幡観光協会協力のもと、開催された「第27回 郡上おどりin青山 - Gujo Odori in Aoyama」の様子です。 郡上八幡城主・青山家の菩提寺が青山の梅窓院(ばいそういん) にある（青山の地名の由来も青山家からついた）という縁から、東京青山に本場の郡上おどり保存会を招いたことから始まりました。 ■名称 第27回 郡上おどりin青山 - Gujo Odori in Aoyama ■日程 2023年6月16日(金)～6月17日(土) ■場所 秩父宮ラグビー場・駐車場 ■住所 東京都港区北青山2-8-35 ■主催 青山外苑前商店街振興組合 ■共催 南北青山二丁目町会 ■協賛 港区 岐阜県郡上市 郡上八幡観光協会 ■関連動画 【4K】『郡上おどり（生歌・生演奏） 』六本木ヒルズ盆踊り2018《DAY1》Tokyo Bon Dance 2018.8.25 @六本木ヒルズアリーナ Roppongi Hills Arena https…"
+    },
+    {
+      "status": "strong",
+      "score": 100,
+      "reasons": [
         "venue_in_video",
         "target_year_in_video",
         "target_year_date_detected",
@@ -7657,6 +7847,48 @@
       "published_at": "2023-06-17T05:29:00Z",
       "thumbnail_url": "https://i.ytimg.com/vi/_iUSVsgFeHk/maxresdefault.jpg",
       "query": "郡上おどり in 青山 2023 秩父宮ラグビー場駐車場 港区 2023 盆踊り",
+      "setlist_count": 2,
+      "setlist_sample": [
+        {
+          "number": 20,
+          "title": "19.9.1@東京・日本橋 福徳の森 Fukutoku Garden,Tokyo",
+          "url": "https://www.youtube.com/watch?v=89J0cWqROtk",
+          "source": "numbered_url"
+        },
+        {
+          "number": 1,
+          "title": "郡上おどり：郡上甚句",
+          "url": "",
+          "source": "chapter"
+        }
+      ],
+      "description_excerpt": "00:00 郡上おどり：郡上甚句 2023/06/16 秩父宮ラグビー場・駐車場に於いて、郡上八幡観光協会協力のもと、開催された「第27回 郡上おどりin青山 - Gujo Odori in Aoyama」の様子です。 郡上八幡城主・青山家の菩提寺が青山の梅窓院(ばいそういん) にある（青山の地名の由来も青山家からついた）という縁から、東京青山に本場の郡上おどり保存会を招いたことから始まりました。 ■名称 第27回 郡上おどりin青山 - Gujo Odori in Aoyama ■日程 2023年6月16日(金)～6月17日(土) ■場所 秩父宮ラグビー場・駐車場 ■住所 東京都港区北青山2-8-35 ■主催 青山外苑前商店街振興組合 ■共催 南北青山二丁目町会 ■協賛 港区 岐阜県郡上市 郡上八幡観光協会 ■関連動画 【4K】『郡上おどり（生歌・生演奏） 』六本木ヒルズ盆踊り2018《DAY1》Tokyo Bon Dance 2018.8.25 @六本木ヒルズアリーナ Roppongi Hills Arena https://youtu.be/wZiocp_FVL0 【4K】郡上…"
+    },
+    {
+      "status": "strong",
+      "score": 100,
+      "reasons": [
+        "event_name_in_video",
+        "venue_in_video",
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context",
+        "setlist_detected"
+      ],
+      "queue_id": "youtube-year-backfill:ded3f8576e41114d",
+      "target_year": 2023,
+      "event_name": "郡上おどり in 青山",
+      "venue": "秩父宮ラグビー場駐車場",
+      "area": "港区",
+      "detected_event_date": "2023-06-16",
+      "video_id": "_iUSVsgFeHk",
+      "video_url": "https://www.youtube.com/watch?v=_iUSVsgFeHk",
+      "title": "4K【郡上おどりin青山 2023】[2/3]『郡上甚句』🏮Tokyo Bon Dance Festival👘2023.6.16 @秩父宮ラグビー場駐車場",
+      "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ",
+      "channel_title": "shu channel",
+      "published_at": "2023-06-17T05:29:00Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/_iUSVsgFeHk/maxresdefault.jpg",
+      "query": "郡上おどり in 青山 秩父宮ラグビー場駐車場 港区 2023 盆踊り",
       "setlist_count": 2,
       "setlist_sample": [
         {
@@ -7945,6 +8177,124 @@
         }
       ],
       "description_excerpt": "2023年6月15日に行われた、「郡上おどりin青山」1日目の前半の様子です。 おすすめ動画 郡上おどりin青山 ①https://youtu.be/GRbTxDwruZo ②終 https://youtu.be/hF3GdywzY44 日枝神社盆踊り １東京音頭 https://youtu.be/iwpON-POUyo ２炭坑節 https://youtu.be/M6WzGsc0zn4 ３大東京音頭 https://youtu.be/d_v4DMhwpZM ４どんぱん節 https://youtu.be/0h0J1gQ1tMk ５花笠音頭 https://youtu.be/dSWr8i-BIt4 ６八木節 https://youtu.be/XadA2e2xd6g ７どんとこいブギ https://youtu.be/Mn9f5VShbe4 ８まつのき小唄 https://youtu.be/Mn9f5VShbe4 ９白浜音頭 https://youtu.be/EK69R1B1eeQ １０山王音頭 https://youtu.be/p_yVG38KGnM １１千代田おどり https:/…"
+    },
+    {
+      "status": "strong",
+      "score": 100,
+      "reasons": [
+        "event_name_in_video",
+        "venue_in_video",
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context",
+        "setlist_detected"
+      ],
+      "queue_id": "youtube-year-backfill:ded3f8576e41114d",
+      "target_year": 2023,
+      "event_name": "郡上おどり in 青山",
+      "venue": "秩父宮ラグビー場駐車場",
+      "area": "港区",
+      "detected_event_date": "2023-06-15",
+      "video_id": "GRbTxDwruZo",
+      "video_url": "https://www.youtube.com/watch?v=GRbTxDwruZo",
+      "title": "郡上おどりin青山1日目①　２０２３年　秩父宮ラグビー場駐車場　東京都港区",
+      "channel_id": "UCNF_5e3ZvziJueTWvTPATGw",
+      "channel_title": "和太鼓お祭りチャンネル",
+      "published_at": "2023-06-17T12:00:14Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/GRbTxDwruZo/sddefault.jpg",
+      "query": "郡上おどり in 青山 秩父宮ラグビー場駐車場 港区 2023 盆踊り",
+      "setlist_count": 47,
+      "setlist_sample": [
+        {
+          "number": 1,
+          "title": "DJ盆踊り",
+          "url": "https://www.youtube.com/watch?v=mD1zcl4m5lw",
+          "source": "numbered_url"
+        },
+        {
+          "number": 1,
+          "title": "ダンシングヒーロー",
+          "url": "https://www.youtube.com/watch?v=f2clLkBgSkQ",
+          "source": "numbered_url"
+        },
+        {
+          "number": 1,
+          "title": "東京音頭",
+          "url": "https://www.youtube.com/watch?v=iwpON-POUyo",
+          "source": "numbered_url"
+        },
+        {
+          "number": 1,
+          "title": "炭坑節",
+          "url": "https://www.youtube.com/watch?v=e8D9kp52-xA",
+          "source": "numbered_url"
+        },
+        {
+          "number": 1,
+          "title": "藤岡八木節愛好会",
+          "url": "https://www.youtube.com/watch?v=FeF_HkRq9Vo",
+          "source": "numbered_url"
+        },
+        {
+          "number": 2,
+          "title": "あやめ踊り",
+          "url": "https://www.youtube.com/watch?v=k1EPtS0SQs0",
+          "source": "numbered_url"
+        },
+        {
+          "number": 2,
+          "title": "とらじょさま・斎太郎節・北海盆唄",
+          "url": "https://www.youtube.com/watch?v=B0UgTMeZuf4",
+          "source": "numbered_url"
+        },
+        {
+          "number": 2,
+          "title": "終 DJ盆踊り",
+          "url": "https://www.youtube.com/watch?v=2tlu7CR1qE4",
+          "source": "numbered_url"
+        },
+        {
+          "number": 3,
+          "title": "ホームラン音頭",
+          "url": "https://www.youtube.com/watch?v=peyxmVoRaKI",
+          "source": "numbered_url"
+        },
+        {
+          "number": 3,
+          "title": "令和おどり",
+          "url": "https://www.youtube.com/watch?v=HQbHIeuq4m4",
+          "source": "numbered_url"
+        }
+      ],
+      "description_excerpt": "2023年6月15日に行われた、「郡上おどりin青山」1日目の前半の様子です。 おすすめ動画 郡上おどりin青山 ①https://youtu.be/GRbTxDwruZo ②終 https://youtu.be/hF3GdywzY44 日枝神社盆踊り １東京音頭 https://youtu.be/iwpON-POUyo ２炭坑節 https://youtu.be/M6WzGsc0zn4 ３大東京音頭 https://youtu.be/d_v4DMhwpZM ４どんぱん節 https://youtu.be/0h0J1gQ1tMk ５花笠音頭 https://youtu.be/dSWr8i-BIt4 ６八木節 https://youtu.be/XadA2e2xd6g ７どんとこいブギ https://youtu.be/Mn9f5VShbe4 ８まつのき小唄 https://youtu.be/Mn9f5VShbe4 ９白浜音頭 https://youtu.be/EK69R1B1eeQ １０山王音頭 https://youtu.be/p_yVG38KGnM １１千代田おどり https:/…"
+    },
+    {
+      "status": "strong",
+      "score": 100,
+      "reasons": [
+        "event_name_in_video",
+        "venue_in_video",
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:ded3f8576e41114d",
+      "target_year": 2023,
+      "event_name": "郡上おどり in 青山",
+      "venue": "秩父宮ラグビー場駐車場",
+      "area": "港区",
+      "detected_event_date": "2023-06-16",
+      "video_id": "fwIYqL5eeMw",
+      "video_url": "https://www.youtube.com/watch?v=fwIYqL5eeMw",
+      "title": "郡上踊り 青山 2023年 第27回（ぐじょうおどり）郡上おどり 春駒｜かわさき 日本三大盆踊り 盆踊り大会 郡上八幡  bon dance 郡上おどりin青山 gujo odori in japan",
+      "channel_id": "UCap06-bjxcqeb7Y5bBm0Mhg",
+      "channel_title": "メトロ23区",
+      "published_at": "2023-06-16T14:06:30Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/fwIYqL5eeMw/sddefault.jpg",
+      "query": "郡上おどり in 青山 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "第27回 郡上踊り in 青山 2023年 (１日目) 開催日 2023年 6月16日(金) 17日(土) 午後５時～８時迄 会場：秩父宮ラグビー場 駐車場(港区北青山2-8-35） 郡上おどり（ぐじょうおどり）郡上節（ぐじょうぶし）岐阜県郡上市八幡町（旧・郡上郡八幡町、通称「郡上八幡」）で開催される伝統的な盆踊 日本三大盆踊り,三大民謡（郡上節） 毎年7月中旬から9月上旬まで32夜開催され、特に盂蘭盆会の徹夜踊りには、全国から数万人の踊り子が来場 郡上おどりは、見て楽しむ踊りではなく自分も踊って楽しむもの 振り付けも簡単、見よう見まねでも、踊りの輪に参加できます 東京（郡上おどり in 青山) 毎年6月 東京都港区南青山の寺院「梅窓院」の境内で開催される。同寺院が郡上藩主・青山氏の菩提寺であったことに由来する。郡上市から郡上おどり保存会が来訪し、郡上節の生演奏により本場さながらの踊りが繰り広げられる。同時に郡上市の物産展も催される。1994年から開催 Gujō Odori (郡上おどり) is a Bon Festival held every summer in Gujō, Gi…"
     },
     {
       "status": "strong",
@@ -10956,6 +11306,104 @@
     },
     {
       "status": "strong",
+      "score": 100,
+      "reasons": [
+        "event_name_in_video",
+        "venue_in_video",
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:654343572c64f027",
+      "target_year": 2024,
+      "event_name": "郡上おどり in 青山",
+      "venue": "秩父宮ラグビー場駐車場",
+      "area": "港区",
+      "detected_event_date": "2024-06-14",
+      "video_id": "Ng_9XEnpfQs",
+      "video_url": "https://www.youtube.com/watch?v=Ng_9XEnpfQs",
+      "title": "【日本三大盆踊り】郡上おどりin青山 2024夏 ‐Gujo Odori (Japanese Bon Dance）in Aoyama, Tokyo-",
+      "channel_id": "UCnNKwqDlQmbywfMGQgRG40A",
+      "channel_title": "Hidden NIPPON",
+      "published_at": "2024-06-17T10:45:10Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/Ng_9XEnpfQs/sddefault.jpg",
+      "query": "郡上おどり in 青山 秩父宮ラグビー場駐車場 港区 2024 盆踊り",
+      "setlist_count": 1,
+      "setlist_sample": [
+        {
+          "number": 1,
+          "title": "郡上甚句",
+          "url": "",
+          "source": "chapter"
+        }
+      ],
+      "description_excerpt": "日本三大盆踊りの一つである「郡上おどり」in 青山に参加してきました！ 臨場感たっぷりの動画を見て、一足先に日本の夏を体感してくださいね。 New!!→ https://youtu.be/7LL_tCQEOtA We have participated in \"Gujo Odori\" in Aoyama, one of the three major Bon Odori dance festivals in Japan! Watch the realistic video and experience the Japanese summer one step ahead of the others! 実は東京の「青山」の地名の由来は、天正18年(1590年）に徳川家康の家臣「青山忠成」の下屋敷が置かれたことに因んでいます。青山家の支族が江戸中期に郡上藩を所領し、菩提寺が青山の「梅窓院」に置かれた縁から、郡上おどり in 青山が開催されるようになりました。 ↓郡上おどりin青山 について↓ https://tabitabigujo.com/event/%E9%83%A1%E4%B8%8…"
+    },
+    {
+      "status": "strong",
+      "score": 100,
+      "reasons": [
+        "event_name_in_video",
+        "venue_in_video",
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:654343572c64f027",
+      "target_year": 2024,
+      "event_name": "郡上おどり in 青山",
+      "venue": "秩父宮ラグビー場駐車場",
+      "area": "港区",
+      "detected_event_date": "2024-06-14",
+      "video_id": "7nJ6Xg3XRgo",
+      "video_url": "https://www.youtube.com/watch?v=7nJ6Xg3XRgo",
+      "title": "【郡上おどりin青山 2024】（1/2）かわさき～げんげんばらばら～さわぎ～春駒🏮Tokyo Bon Dance Festival👘2024.6.15 @秩父宮ラグビー場 駐車場",
+      "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ",
+      "channel_title": "shu channel",
+      "published_at": "2024-06-14T18:40:07Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/7nJ6Xg3XRgo/maxresdefault.jpg",
+      "query": "郡上おどり in 青山 秩父宮ラグビー場駐車場 港区 2024 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "00:00:00 かわさき 00:12:48 げんげんばらばら 00:21:50 さわぎ 00:30:52 春駒 【郡上おどりin青山】 ■日時：2024年6月14日(金)・15日(土) ■場所：東京都港区北青山2-8-35 秩父宮ラグビー場 駐車場 「青山」の地名の由来は、天正18年(1590年）に徳川家康の家臣「青山忠成」の下屋敷が置かれたことに因み名づけられたもので、青山家の支族が江戸中期に郡上藩を所領し、菩提寺が青山の「梅窓院」に置かれた縁から、『郡上おどりin青山』が開催されるようになりました。 #郡上おどり #盆踊り #bondance"
+    },
+    {
+      "status": "strong",
+      "score": 100,
+      "reasons": [
+        "event_name_in_video",
+        "venue_in_video",
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:654343572c64f027",
+      "target_year": 2024,
+      "event_name": "郡上おどり in 青山",
+      "venue": "秩父宮ラグビー場駐車場",
+      "area": "港区",
+      "detected_event_date": "2024-06-14",
+      "video_id": "lqzUIJ7u_bU",
+      "video_url": "https://www.youtube.com/watch?v=lqzUIJ7u_bU",
+      "title": "【郡上おどりin青山 2024】（2/2）かわさき～さわぎ～三百～郡上甚句～春駒～まつさか🏮Tokyo Bon Dance Festival👘2024.6.15 @秩父宮ラグビー場 駐車場",
+      "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ",
+      "channel_title": "shu channel",
+      "published_at": "2024-06-14T18:41:31Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/lqzUIJ7u_bU/maxresdefault.jpg",
+      "query": "郡上おどり in 青山 秩父宮ラグビー場駐車場 港区 2024 盆踊り",
+      "setlist_count": 1,
+      "setlist_sample": [
+        {
+          "number": 1,
+          "title": "郡上甚句",
+          "url": "",
+          "source": "chapter"
+        }
+      ],
+      "description_excerpt": "00:00:00 かわさき 00:13:14 さわぎ 00:20:56 三百 00:32:22 郡上甚句 00:52:50 春駒 01:02:15 まつさか 【郡上おどりin青山】 ■日時：2024年6月14日(金)・15日(土) ■場所：東京都港区北青山2-8-35 秩父宮ラグビー場 駐車場 「青山」の地名の由来は、天正18年(1590年）に徳川家康の家臣「青山忠成」の下屋敷が置かれたことに因み名づけられたもので、青山家の支族が江戸中期に郡上藩を所領し、菩提寺が青山の「梅窓院」に置かれた縁から、『郡上おどりin青山』が開催されるようになりました。 #郡上おどり #盆踊り #bondance"
+    },
+    {
+      "status": "strong",
       "score": 98,
       "reasons": [
         "event_name_in_video",
@@ -11628,6 +12076,60 @@
       "setlist_count": 0,
       "setlist_sample": [],
       "description_excerpt": "板橋区桜川地区の桜川納涼盆踊り大会が、にぎやかに華やかに、楽しそうに盛大に開催されました。 @shigeo-harusora ツイッター＃https://twitter.com/yama_shigeochan ✈[後編] 🙄✈強突風に舞う旅客機＃https://youtu.be/W7UWHfdxUqY 強突風に舞う旅客機＃https://youtu.be/ZBAJDREsrY0 元日の羽田空港その１＃https://youtu.be/aFAbjTOkXTA 元日の羽田空港その２＃https://youtu.be/fYinuwPbEjk 元日の羽田空港その３＃https://youtu.be/djO3NQ7vDSQ 羽田空港ターミナル展望デッキより撮影しました。"
+    },
+    {
+      "status": "strong",
+      "score": 98,
+      "reasons": [
+        "event_name_in_video",
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:ded3f8576e41114d",
+      "target_year": 2023,
+      "event_name": "郡上おどり in 青山",
+      "venue": "秩父宮ラグビー場駐車場",
+      "area": "港区",
+      "detected_event_date": "2023-08-13",
+      "video_id": "iy_WYLHtIVc",
+      "video_url": "https://www.youtube.com/watch?v=iy_WYLHtIVc",
+      "title": "春駒 ①　盆踊り　郡上おどりin青山（外苑前＠秩父宮ラグビー場）20230617",
+      "channel_id": "UC8djZNe8ynSlUmop8Jjt45A",
+      "channel_title": "祭のきせき　MatsuriNoKiseki",
+      "published_at": "2023-08-10T15:57:01Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/iy_WYLHtIVc/maxresdefault.jpg",
+      "query": "郡上おどり in 青山 秩父宮ラグビー場駐車場 港区 2023 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "岐阜県の郡上八幡では、2023年8月13日〜16日に盂蘭盆会（徹夜おどり）が開催されます。 https://youtu.be/e_dAZuzCfFw https://youtu.be/CAYWfGTwbrI https://youtu.be/iy_WYLHtIVc https://youtu.be/_ynLKz1Vs4I https://youtu.be/_V7eFdJOHe8 https://youtu.be/7zzN8z2Nq00 https://youtu.be/dSjEmdXXTUw https://youtu.be/Z5RzQRObH_U https://youtu.be/XRiT9Udz5RY https://youtu.be/Tuhk71J8XR4 https://youtu.be/msYtb7Oie4s https://youtu.be/fBFmaKIpNo8 https://youtu.be/-H2EuDLQy-4 https://youtu.be/qVG9P6yYOpg https://youtu.be/3KfhmUFdAr8"
+    },
+    {
+      "status": "strong",
+      "score": 98,
+      "reasons": [
+        "event_name_in_video",
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:ded3f8576e41114d",
+      "target_year": 2023,
+      "event_name": "郡上おどり in 青山",
+      "venue": "秩父宮ラグビー場駐車場",
+      "area": "港区",
+      "detected_event_date": "2023-08-13",
+      "video_id": "_V7eFdJOHe8",
+      "video_url": "https://www.youtube.com/watch?v=_V7eFdJOHe8",
+      "title": "郡上甚句 ①　盆踊り　郡上おどりin青山（外苑前＠秩父宮ラグビー場）20230617",
+      "channel_id": "UC8djZNe8ynSlUmop8Jjt45A",
+      "channel_title": "祭のきせき　MatsuriNoKiseki",
+      "published_at": "2023-08-10T15:57:01Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/_V7eFdJOHe8/maxresdefault.jpg",
+      "query": "郡上おどり in 青山 秩父宮ラグビー場駐車場 港区 2023 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "岐阜県の郡上八幡では、2023年8月13日〜16日に盂蘭盆会（徹夜おどり）が開催されます。 https://youtu.be/e_dAZuzCfFw https://youtu.be/CAYWfGTwbrI https://youtu.be/iy_WYLHtIVc https://youtu.be/_ynLKz1Vs4I https://youtu.be/_V7eFdJOHe8 https://youtu.be/7zzN8z2Nq00 https://youtu.be/dSjEmdXXTUw https://youtu.be/Z5RzQRObH_U https://youtu.be/XRiT9Udz5RY https://youtu.be/Tuhk71J8XR4 https://youtu.be/msYtb7Oie4s https://youtu.be/fBFmaKIpNo8 https://youtu.be/-H2EuDLQy-4 https://youtu.be/qVG9P6yYOpg https://youtu.be/3KfhmUFdAr8"
     },
     {
       "status": "strong",
@@ -15943,6 +16445,56 @@
       "description_excerpt": ""
     },
     {
+      "status": "review",
+      "score": 50,
+      "reasons": [
+        "event_name_in_video",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:654343572c64f027",
+      "target_year": 2024,
+      "event_name": "郡上おどり in 青山",
+      "venue": "秩父宮ラグビー場駐車場",
+      "area": "港区",
+      "detected_event_date": "",
+      "video_id": "CADDwkPL7CE",
+      "video_url": "https://www.youtube.com/watch?v=CADDwkPL7CE",
+      "title": "東京青山が「岐阜の夏」に染まる夜🌜「郡上おどりin青山」#盆踊り #郡上八幡 #郡上おどり",
+      "channel_id": "UCb8b_-r7cU9t71mSixD25Tg",
+      "channel_title": "郡上市の公式観光情報サイト【TABITABI郡上】",
+      "published_at": "2025-06-20T13:55:51Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/CADDwkPL7CE/maxresdefault.jpg",
+      "query": "郡上おどり in 青山 2024 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": ""
+    },
+    {
+      "status": "review",
+      "score": 50,
+      "reasons": [
+        "event_name_in_video",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:654343572c64f027",
+      "target_year": 2024,
+      "event_name": "郡上おどり in 青山",
+      "venue": "秩父宮ラグビー場駐車場",
+      "area": "港区",
+      "detected_event_date": "",
+      "video_id": "nbD9ov4zqao",
+      "video_url": "https://www.youtube.com/watch?v=nbD9ov4zqao",
+      "title": "満員御礼！ 郡上おどりin青山 #青山 #盆踊り #夏祭り",
+      "channel_id": "UCb8b_-r7cU9t71mSixD25Tg",
+      "channel_title": "郡上市の公式観光情報サイト【TABITABI郡上】",
+      "published_at": "2024-06-14T13:00:14Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/nbD9ov4zqao/maxresdefault.jpg",
+      "query": "郡上おどり in 青山 2024 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": ""
+    },
+    {
       "status": "weak",
       "score": 49,
       "reasons": [
@@ -16587,6 +17139,66 @@
         }
       ],
       "description_excerpt": "2022年7月8日・9日に東京都豊島区にあります大正大学で行われました「鴨台盆踊り」２日目の様子です。 おすすめ動画 大正大学盆踊り2日目 １大正大学校歌 https://youtu.be/EbDap13DPxI ２東京音頭 https://youtu.be/AqyrVFPXB_4 ３365日の紙飛行機 https://youtu.be/bAQmvpN9pIM ４ﾁｬﾝﾁｷおけさ https://youtu.be/QCIfrZ8JEt8 ５USA https://youtu.be/nHa1gjciWD4 ６恋するﾌｫｰﾁｭﾝｸｯｷｰ https://youtu.be/SQdLtfF5n8M ７炭坑節 https://youtu.be/hST2SBT2Ihg ８大江戸東京音頭 https://youtu.be/7W8WvH8deg4 ９ﾀﾞﾝｼﾝｸﾞﾋｰﾛｰ https://youtu.be/bPiJWb7SJ1A １０巣鴨音頭 https://youtu.be/W78X-kNWrd8 １１東京音頭 https://youtu.be/UexZJm00eeU １２365日の紙飛行機 ht…"
+    },
+    {
+      "status": "weak",
+      "score": 49,
+      "reasons": [
+        "event_name_in_video",
+        "venue_in_video",
+        "target_year_in_video",
+        "other_year_date_detected",
+        "bon_context",
+        "setlist_detected"
+      ],
+      "queue_id": "youtube-year-backfill:ded3f8576e41114d",
+      "target_year": 2023,
+      "event_name": "郡上おどり in 青山",
+      "venue": "秩父宮ラグビー場駐車場",
+      "area": "港区",
+      "detected_event_date": "2024-06-14",
+      "video_id": "3uOCgqTaTG4",
+      "video_url": "https://www.youtube.com/watch?v=3uOCgqTaTG4",
+      "title": "「郡上おどり in 青山」納涼大会 盆踊り 2024 Tokyo,Aoyama Bon Dance. Bon Odori 郡上踊り",
+      "channel_id": "UCM7nHERAih74J-yXy8iNyLw",
+      "channel_title": "Very JAPAN",
+      "published_at": "2024-06-15T05:07:16Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/3uOCgqTaTG4/maxresdefault.jpg",
+      "query": "郡上おどり in 青山 2023 YouTube 盆踊り",
+      "setlist_count": 5,
+      "setlist_sample": [
+        {
+          "number": 1,
+          "title": ".6億円のTOKYOモニュメント!設置のその後を見に行く 晴海ふ頭公園 晴海フラッグ 晴海埠頭 東京2020選手村跡地 Tokyo,Harumi",
+          "url": "https://www.youtube.com/watch?v=DdrHziaGHkM",
+          "source": "numbered_url"
+        },
+        {
+          "number": 20,
+          "title": "24 Tokyo,Asakusa Iriya 入谷鬼子母神 真源寺 東京スカイツリー",
+          "url": "https://www.youtube.com/watch?v=JmsdVeSCRBI",
+          "source": "numbered_url"
+        },
+        {
+          "number": 20,
+          "title": "24 東京スカイツリー Tokyo,Asakusa Bon Dance. Bon Odori",
+          "url": "https://www.youtube.com/watch?v=GQlhgkp2KQU",
+          "source": "numbered_url"
+        },
+        {
+          "number": 20,
+          "title": "24 東京スカイツリー Tokyo,Asakusa Kappabashi",
+          "url": "https://www.youtube.com/watch?v=SHk_sPvv4zA",
+          "source": "numbered_url"
+        },
+        {
+          "number": 1,
+          "title": "甚句",
+          "url": "",
+          "source": "chapter"
+        }
+      ],
+      "description_excerpt": "2024年6月14日(金)・15日(土)、秩父宮ラグビー場 駐車場にて「郡上おどりin青山」が開催。 東京「青山」という地名は、天正18年(1590年)に徳川家康の家臣「青山忠成」の下屋敷が置かれたことにちなみ名づけられたらそう。 岐阜県郡上市で行なわれる「郡上まつり」は4日間徹夜で踊り明かし、徳島の阿波踊り・秋田の西馬音内盆踊りと合わせて日本三大盆踊りとされているそうです。 0:00:00 ご挨拶 0:06:15 古調かわさき 0:11:30 かわさき 0:13:49 春駒 0:20:16 ヤッチク 0:29:45 猫の子 0:30:08 夕暮れ時 0:41:24 かわさき 0:54:17 げんげんばらばら 1:02:57 さわぎ 1:05:48 春駒＆GJ8マン 1:15:57 かわさき(日没) 1:28:54 さわぎ 1:32:06 三百 1:43:30 甚句 1:45:53 ヤッチク 1:48:06 春駒 1:57:32 まつさか 「GJ8マン」という、ちびまる子ちゃん作者のさくらももこさんが「郡上八幡を愛し、頼まれてもいないのに勝手にキャラまで考えてみた。」というご当地キャ…"
     },
     {
       "status": "weak",
@@ -17699,6 +18311,41 @@
       "status": "weak",
       "score": 49,
       "reasons": [
+        "event_name_in_video",
+        "venue_in_video",
+        "target_year_in_video",
+        "other_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:654343572c64f027",
+      "target_year": 2024,
+      "event_name": "郡上おどり in 青山",
+      "venue": "秩父宮ラグビー場駐車場",
+      "area": "港区",
+      "detected_event_date": "2025-06-20",
+      "video_id": "1__iWUspkTI",
+      "video_url": "https://www.youtube.com/watch?v=1__iWUspkTI",
+      "title": "[4K]🇯🇵 郡上おどり in 青山 2025 全曲｜東京で酔いしれる日本三大盆踊り / Gujo Odori dance held in Aoyama, Tokyo.",
+      "channel_id": "UCKCspf_NrY16rUnODmBqOWA",
+      "channel_title": "Tokyo Lonely Walker",
+      "published_at": "2025-06-21T08:00:02Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/1__iWUspkTI/maxresdefault.jpg",
+      "query": "郡上おどり in 青山 秩父宮ラグビー場駐車場 港区 2024 盆踊り",
+      "setlist_count": 1,
+      "setlist_sample": [
+        {
+          "number": 1,
+          "title": "甚句 / Jinku",
+          "url": "",
+          "source": "chapter"
+        }
+      ],
+      "description_excerpt": "江戸が郡上で染まる2日間！ 東京都港区青山（外苑前駅）にある秩父宮ラグビー場 駐車場で「郡上おどり in 青山」が初日を迎えました。岐阜県郡上市の伝統的な盆踊り「郡上おどり」を青山で体験できる貴重なお祭りとあって、初日のこの日は平日にもかかわらず大変多くの人で賑わいました。 踊り意外にも、郡上の特産品や食事が堪能できる素晴らしいお祭りなので、お時間ある方はぜひ！ 【開催期間】 6月20日（金）〜21日（土） For two days, Edo was dyed with Gujo! Gujo Odori in Aoyama\" opened in Aoyama, Minato-ku, Tokyo. This is a rare festival where you can experience “Gujo Odori,” a traditional Bon dance of Gujo City, Gifu Prefecture, in Aoyama. On this first day of the festival, although it was a weekday, it was…"
+    },
+    {
+      "status": "weak",
+      "score": 49,
+      "reasons": [
         "venue_in_video",
         "target_year_in_video",
         "other_year_date_detected",
@@ -17745,6 +18392,34 @@
       "published_at": "2025-06-20T13:20:53Z",
       "thumbnail_url": "https://i.ytimg.com/vi/YpU3OWCpAFk/maxresdefault.jpg",
       "query": "郡上おどり in 青山 2024 秩父宮ラグビー場駐車場 港区 2024 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "港区青山（外苑前駅）にある秩父宮ラグビー場 駐車場で「郡上おどり in 青山」が開催されました。岐阜県郡上市の伝統的な盆踊り「郡上おどり」を青山で体験できる貴重なお祭りとあって、初日のこの日は平日にもかかわらず多くの人で賑わいました。 踊り自体は休憩を挟みながら3時間半行われましたが、この動画では先行して「春駒」と「かわさき」を公開させていただきます。 Gujo Odori in Aoyama\" was held in Aoyama, Minato-ku, Tokyo. The first day of the festival was a rare opportunity to experience “Gujo Odori,” a traditional Bon dance of Gujo City, Gifu Prefecture, in Aoyama, and even though it was a weekday, it was crowded with many people. The dance itself lasted for three and a half ho…"
+    },
+    {
+      "status": "weak",
+      "score": 49,
+      "reasons": [
+        "event_name_in_video",
+        "venue_in_video",
+        "target_year_in_video",
+        "other_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:654343572c64f027",
+      "target_year": 2024,
+      "event_name": "郡上おどり in 青山",
+      "venue": "秩父宮ラグビー場駐車場",
+      "area": "港区",
+      "detected_event_date": "2025-06-20",
+      "video_id": "YpU3OWCpAFk",
+      "video_url": "https://www.youtube.com/watch?v=YpU3OWCpAFk",
+      "title": "[4K]🇯🇵 郡上おどり in 青山｜かわさき｜春駒｜ 2曲抜粋 2025年 初日 盆踊り / Gujo Odori dance held in Aoyama, Tokyo.",
+      "channel_id": "UCKCspf_NrY16rUnODmBqOWA",
+      "channel_title": "Tokyo Lonely Walker",
+      "published_at": "2025-06-20T13:20:53Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/YpU3OWCpAFk/maxresdefault.jpg",
+      "query": "郡上おどり in 青山 秩父宮ラグビー場駐車場 港区 2024 盆踊り",
       "setlist_count": 0,
       "setlist_sample": [],
       "description_excerpt": "港区青山（外苑前駅）にある秩父宮ラグビー場 駐車場で「郡上おどり in 青山」が開催されました。岐阜県郡上市の伝統的な盆踊り「郡上おどり」を青山で体験できる貴重なお祭りとあって、初日のこの日は平日にもかかわらず多くの人で賑わいました。 踊り自体は休憩を挟みながら3時間半行われましたが、この動画では先行して「春駒」と「かわさき」を公開させていただきます。 Gujo Odori in Aoyama\" was held in Aoyama, Minato-ku, Tokyo. The first day of the festival was a rare opportunity to experience “Gujo Odori,” a traditional Bon dance of Gujo City, Gifu Prefecture, in Aoyama, and even though it was a weekday, it was crowded with many people. The dance itself lasted for three and a half ho…"
@@ -21313,6 +21988,32 @@
         "target_year_date_detected",
         "bon_context"
       ],
+      "queue_id": "youtube-year-backfill:ded3f8576e41114d",
+      "target_year": 2023,
+      "event_name": "郡上おどり in 青山",
+      "venue": "秩父宮ラグビー場駐車場",
+      "area": "港区",
+      "detected_event_date": "2023-08-14",
+      "video_id": "JDuD5_35tbk",
+      "video_url": "https://www.youtube.com/watch?v=JDuD5_35tbk",
+      "title": "「本当のお盆戻ってきた」日本3大盆踊り・郡上踊の徹夜おどり始まる",
+      "channel_id": "UCI4mta4pWhYhPSLhjmUAfZQ",
+      "channel_title": "毎日新聞",
+      "published_at": "2023-08-14T03:53:14Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/JDuD5_35tbk/maxresdefault.jpg",
+      "query": "郡上おどり in 青山 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "岐阜県郡上市八幡町で13日、日本3大盆踊りの一つ「郡上踊」を朝まで踊り明かす「徹夜おどり」が始まった。昨年まで新型コロナウイルス感染防止のため中止や規模縮小が続いており、今年は4年ぶりに午前4時までの通常開催となった。【撮影・兵藤公治】2023年8月14日公開 関連記事→https://mainichi.jp/articles/20230814/k00/00m/040/049000c"
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context"
+      ],
       "queue_id": "youtube-year-backfill:19b3e9187c61a720",
       "target_year": 2023,
       "event_name": "郡上おどり in 青山",
@@ -21353,6 +22054,32 @@
       "published_at": "2023-09-08T09:00:19Z",
       "thumbnail_url": "https://i.ytimg.com/vi/HDuOTPqU00k/maxresdefault.jpg",
       "query": "郡上おどり in 青山 2023 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "400年以上続く「#郡上おどり」は、新型コロナの影響で中止や規模縮小が続いていましたが、2023年は4年ぶりの通常開催となりました。町にはカラカラという下駄の音と、踊り助平たちの笑顔があふれていました。 #郡上八幡 2023年8月10日放送"
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:ded3f8576e41114d",
+      "target_year": 2023,
+      "event_name": "郡上おどり in 青山",
+      "venue": "秩父宮ラグビー場駐車場",
+      "area": "港区",
+      "detected_event_date": "2023-08-10",
+      "video_id": "HDuOTPqU00k",
+      "video_url": "https://www.youtube.com/watch?v=HDuOTPqU00k",
+      "title": "帰ってきた“いつもの夏”…4年ぶりに通常開催された『郡上おどり』次の世代へ受け継ぐ踊り囃子と下駄の音",
+      "channel_id": "UCUQ0AtI3k10_CyLYcu4WRVA",
+      "channel_title": "東海テレビ ニュースONE",
+      "published_at": "2023-09-08T09:00:19Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/HDuOTPqU00k/maxresdefault.jpg",
+      "query": "郡上おどり in 青山 2023 YouTube 盆踊り",
       "setlist_count": 0,
       "setlist_sample": [],
       "description_excerpt": "400年以上続く「#郡上おどり」は、新型コロナの影響で中止や規模縮小が続いていましたが、2023年は4年ぶりの通常開催となりました。町にはカラカラという下駄の音と、踊り助平たちの笑顔があふれていました。 #郡上八幡 2023年8月10日放送"
@@ -21457,6 +22184,32 @@
       "published_at": "2023-09-30T14:24:05Z",
       "thumbnail_url": "https://i.ytimg.com/vi/dZI0nOnHA_U/sddefault.jpg",
       "query": "郡上おどり in 青山 2023 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "2023年9月30日"
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:ded3f8576e41114d",
+      "target_year": 2023,
+      "event_name": "郡上おどり in 青山",
+      "venue": "秩父宮ラグビー場駐車場",
+      "area": "港区",
+      "detected_event_date": "2023-09-30",
+      "video_id": "dZI0nOnHA_U",
+      "video_url": "https://www.youtube.com/watch?v=dZI0nOnHA_U",
+      "title": "第十回 郡上おどりｉｎ永福北 東京都杉並区 #盆踊り   #郡上おどり #東京都杉並区",
+      "channel_id": "UCQFXOaS-MaQzv0BnLwOe_iw",
+      "channel_title": "タケちゃんねる神輿",
+      "published_at": "2023-09-30T14:24:05Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/dZI0nOnHA_U/sddefault.jpg",
+      "query": "郡上おどり in 青山 2023 YouTube 盆踊り",
       "setlist_count": 0,
       "setlist_sample": [],
       "description_excerpt": "2023年9月30日"
@@ -23885,6 +24638,32 @@
       "published_at": "2024-06-19T09:14:08Z",
       "thumbnail_url": "https://i.ytimg.com/vi/lcciFJS8lbU/maxresdefault.jpg",
       "query": "郡上おどり in 青山 2024 2024 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": ""
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:654343572c64f027",
+      "target_year": 2024,
+      "event_name": "郡上おどり in 青山",
+      "venue": "秩父宮ラグビー場駐車場",
+      "area": "港区",
+      "detected_event_date": "2024-06-14",
+      "video_id": "lcciFJS8lbU",
+      "video_url": "https://www.youtube.com/watch?v=lcciFJS8lbU",
+      "title": "【2024.06.14】郡上踊りin青山",
+      "channel_id": "UCNo0Pxp5mb8N28wsQyLvXjQ",
+      "channel_title": "arata_vlog",
+      "published_at": "2024-06-19T09:14:08Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/lcciFJS8lbU/maxresdefault.jpg",
+      "query": "郡上おどり in 青山 2024 YouTube 盆踊り",
       "setlist_count": 0,
       "setlist_sample": [],
       "description_excerpt": ""
@@ -27145,5 +27924,5 @@
       "description_excerpt": ""
     }
   ],
-  "merged_from": "2026-06-20T09:50:59.786109+00:00"
+  "merged_from": "2026-06-20T09:51:08.491127+00:00"
 }
