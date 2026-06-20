@@ -4,8 +4,6 @@ import argparse
 import json
 from pathlib import Path
 
-from export_public_events import write_public_js
-
 
 DATA = Path("data")
 PUBLIC_EVENTS = DATA / "public" / "events_public.json"
@@ -37,6 +35,7 @@ def event_key(name, venue):
 def public_prediction(prediction_row):
     prediction = prediction_row["prediction"]
     return {
+        "display_tier": "rule_predicted",
         "target_year": prediction_row["target_year"],
         "date": prediction["predicted_date_start"],
         "date_end": prediction["predicted_date_end"],
@@ -60,6 +59,32 @@ def should_attach(event, prediction):
     return True
 
 
+PREDICTION_EVENT_FIELDS = (
+    "date_prediction",
+    "display_tier",
+    "predicted_date",
+    "predicted_date_end",
+    "prediction_basis",
+    "prediction_confidence",
+    "prediction_evidence_years",
+)
+
+
+def clear_public_prediction_fields(event):
+    for field in PREDICTION_EVENT_FIELDS:
+        event.pop(field, None)
+
+
+def attach_public_prediction_fields(event, public):
+    event["date_prediction"] = public
+    event["display_tier"] = public["display_tier"]
+    event["predicted_date"] = public["date"]
+    event["predicted_date_end"] = public["date_end"]
+    event["prediction_basis"] = public["basis"]
+    event["prediction_confidence"] = public["confidence"]
+    event["prediction_evidence_years"] = public["evidence_years"]
+
+
 def apply_predictions(events, predictions):
     by_key = {
         event_key(row.get("name"), row.get("venue")): row
@@ -79,6 +104,13 @@ def apply_predictions(events, predictions):
                 "date_prediction": public,
             })
             continue
+        before = {
+            "date": event.get("date"),
+            "date_end": event.get("date_end"),
+            "display_tier": event.get("display_tier"),
+            "predicted_date": event.get("predicted_date"),
+            "predicted_date_end": event.get("predicted_date_end"),
+        }
         if not should_attach(event, public):
             skipped.append({
                 "event_name": event.get("name"),
@@ -87,12 +119,20 @@ def apply_predictions(events, predictions):
                 "date": event.get("date"),
                 "date_prediction": public,
             })
-            event.pop("date_prediction", None)
+            clear_public_prediction_fields(event)
             continue
-        event["date_prediction"] = public
+        attach_public_prediction_fields(event, public)
         applied.append({
             "event_name": event.get("name"),
             "venue": event.get("venue"),
+            "before": before,
+            "after": {
+                "date": event.get("date"),
+                "date_end": event.get("date_end"),
+                "display_tier": event.get("display_tier"),
+                "predicted_date": event.get("predicted_date"),
+                "predicted_date_end": event.get("predicted_date_end"),
+            },
             "date_prediction": public,
         })
     return {
@@ -118,13 +158,21 @@ def main():
     parser.add_argument("--out-json", default=str(PUBLIC_EVENTS))
     parser.add_argument("--out-js", default=str(PUBLIC_EVENTS_JS))
     parser.add_argument("--report", default=str(OUT_REPORT))
+    parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
 
     events = load_json(args.public_events, [])
     predictions = load_json(args.predictions, {})
     result = apply_predictions(events, predictions)
-    write_json(args.out_json, result["events"])
-    write_public_js(args.out_js, result["events"])
+    from apply_public_display_tiers import apply_display_tiers
+
+    result["events"] = apply_display_tiers(result["events"])
+    result["report"]["dry_run"] = bool(args.dry_run)
+    if not args.dry_run:
+        from export_public_events import write_public_js
+
+        write_json(args.out_json, result["events"])
+        write_public_js(args.out_js, result["events"])
     write_json(args.report, result["report"])
     print(
         "public date predictions: "

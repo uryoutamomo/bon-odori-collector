@@ -122,6 +122,54 @@ class SongOccurrencesTest(unittest.TestCase):
         self.assertEqual(evidence["speaker"], "@wadaikoCH")
         self.assertEqual(evidence["reliability_key"], "complete_numbered_video")
 
+    def test_youtube_setlists_canonicalize_marronnier_event(self):
+        grouped = occurrences_from_youtube_setlists({
+            "occurrences": [
+                {
+                    "event_name_hint": "マロニエまつり盆踊り大会 2 ヒューリック浅草橋ビル前(全曲ver)",
+                    "venue": "ヒューリック浅草橋前",
+                    "event_date": "2026-05-09",
+                    "accounts": ["@matsuribonodori"],
+                    "song_count": 3,
+                    "setlist": [
+                        {"title": "東京音頭", "url": "https://www.youtube.com/watch?v=abc"},
+                    ],
+                    "source_videos": [
+                        {
+                            "url": "https://www.youtube.com/watch?v=abc",
+                            "account": "@matsuribonodori",
+                            "published_at": "2026-05-13T00:00:00+00:00",
+                        }
+                    ],
+                }
+            ]
+        })
+        key = ("浅草橋マロニエまつり盆踊り", "ヒューリック浅草橋ビル前", 2026, "東京音頭")
+        self.assertIn(key, grouped)
+        self.assertEqual(grouped[key][0]["text"], (
+            "マロニエまつり盆踊り大会 2 ヒューリック浅草橋ビル前(全曲ver) / "
+            "ヒューリック浅草橋前 / 2026-05-09 / 東京音頭"
+        ))
+
+    def test_youtube_setlists_remove_occurrence_year_from_event_name(self):
+        grouped = occurrences_from_youtube_setlists({
+            "occurrences": [
+                {
+                    "event_name_hint": "郡上おどり in 青山 2025",
+                    "venue": "秩父宮ラグビー場駐車場",
+                    "event_date": "2025-06-20",
+                    "accounts": ["@ch"],
+                    "song_count": 3,
+                    "setlist": [
+                        {"title": "かわさき", "url": "https://www.youtube.com/watch?v=abc"},
+                    ],
+                }
+            ]
+        })
+
+        key = ("郡上おどり in 青山", "秩父宮ラグビー場駐車場", 2025, "かわさき")
+        self.assertIn(key, grouped)
+
     def test_public_event_song_hints_are_curated_predictions(self):
         grouped = occurrences_from_public_events([
             {

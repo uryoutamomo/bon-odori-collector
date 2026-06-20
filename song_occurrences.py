@@ -8,6 +8,7 @@ from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
+from event_series_normalization import series_event_name
 from event_evidence import dancer_key
 
 
@@ -85,13 +86,29 @@ def normalize_name(value):
     return re.sub(r"\s+", "", str(value or "")).casefold()
 
 
+YOUTUBE_SETLIST_CANONICAL_FIXES = (
+    {
+        "match": "マロニエまつり盆踊り大会 2 ヒューリック浅草橋ビル前(全曲ver)",
+        "event_name": "浅草橋マロニエまつり盆踊り",
+        "venue": "ヒューリック浅草橋ビル前",
+    },
+)
+
+
+def canonicalize_youtube_setlist_event(event_name, venue):
+    for fix in YOUTUBE_SETLIST_CANONICAL_FIXES:
+        if fix["match"] in event_name:
+            return fix["event_name"], fix["venue"]
+    return event_name, venue
+
+
 def occurrence_id(event_name, venue, year):
-    raw = f"{normalize_name(event_name)}\0{normalize_name(venue)}\0{year}"
+    raw = f"{normalize_name(series_event_name(event_name))}\0{normalize_name(venue)}\0{year}"
     return hashlib.sha256(raw.encode("utf-8")).hexdigest()[:16]
 
 
 def evidence_id(url, song_name, event_name, year):
-    raw = f"{url or ''}\0{normalize_name(song_name)}\0{normalize_name(event_name)}\0{year}"
+    raw = f"{url or ''}\0{normalize_name(song_name)}\0{normalize_name(series_event_name(event_name))}\0{year}"
     return hashlib.sha256(raw.encode("utf-8")).hexdigest()[:20]
 
 
@@ -331,6 +348,7 @@ def _add_evidence(grouped, event_name, venue, song_name, event_date, kind, speak
                   event_start=None, reliability=None, reliability_key=None, role=None):
     if not event_date:
         return
+    event_name = series_event_name(event_name)
     year = int(event_date[:4])
     role = role or evidence_role(observed_at=observed_at, event_start=event_start, kind=kind)
     if reliability is None:
@@ -363,7 +381,7 @@ def _add_evidence(grouped, event_name, venue, song_name, event_date, kind, speak
 def occurrences_from_youtube_review(review):
     grouped = defaultdict(list)
     for event in review.get("events", []):
-        event_name = event.get("event_name") or ""
+        event_name = series_event_name(event.get("event_name") or "")
         venue = event.get("venue") or ""
         sample_text = "\n".join(event.get("sample_titles") or [])
         for song in event.get("songs", []):
@@ -400,8 +418,9 @@ def occurrences_from_youtube_setlists(data):
         event_date = occurrence.get("event_date")
         if not event_date:
             continue
-        event_name = occurrence.get("canonical_event_name") or occurrence.get("event_name_hint") or ""
+        event_name = series_event_name(occurrence.get("canonical_event_name") or occurrence.get("event_name_hint") or "")
         venue = occurrence.get("canonical_venue") or occurrence.get("venue") or ""
+        event_name, venue = canonicalize_youtube_setlist_event(event_name, venue)
         source_by_url = {
             item.get("url"): item
             for item in occurrence.get("source_videos") or []
@@ -445,7 +464,7 @@ def occurrences_from_youtube_setlists(data):
 def occurrences_from_public_events(events):
     grouped = defaultdict(list)
     for event in events:
-        event_name = event.get("name") or ""
+        event_name = series_event_name(event.get("name") or "")
         venue = event.get("venue") or ""
         event_date = event.get("date")
         text = "\n".join(x for x in [event.get("description"), event.get("detail")] if x)
@@ -482,7 +501,7 @@ def occurrences_from_manual_evidence(manual):
         for song_name in songs:
             _add_evidence(
                 grouped,
-                item.get("event_name") or "",
+                series_event_name(item.get("event_name") or ""),
                 item.get("venue") or "",
                 song_name,
                 event_date,
@@ -541,7 +560,7 @@ def build_occurrences(target_year=None, generated_at=None):
     series_all_songs = defaultdict(set)
     occ_units = {}
     for (event_name, venue, year, song_name), evidence in grouped.items():
-        series = (normalize_name(event_name), normalize_name(venue))
+        series = (normalize_name(series_event_name(event_name)), normalize_name(venue))
         series_song_evidence[(series, song_name)].extend(evidence)
         series_all_songs[series].add(song_name)
         occ_key = occurrence_id(event_name, venue, year)
@@ -553,6 +572,24 @@ def build_occurrences(target_year=None, generated_at=None):
             "current_songs": set(),
         })
         unit["current_songs"].add(song_name)
+
+    # 公開イベントに開催日がある年は、曲証拠がまだ空でも occurrence を作る。
+    # これにより、2026年公式日程だけがある開催回へ過去年の曲実績を継承できる。
+    for event in events:
+        event_name = series_event_name(event.get("name") or "")
+        venue = event.get("venue") or ""
+        event_date = event.get("date") or ""
+        if not event_name or not venue or not re.match(r"^\d{4}-\d{2}-\d{2}$", event_date):
+            continue
+        year = int(event_date[:4])
+        occ_key = occurrence_id(event_name, venue, year)
+        occ_units.setdefault(occ_key, {
+            "event_name": event_name,
+            "venue": venue,
+            "year": year,
+            "series": (normalize_name(event_name), normalize_name(venue)),
+            "current_songs": set(),
+        })
 
     occurrences = {}
     for occ_key, unit in occ_units.items():

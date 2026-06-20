@@ -15,6 +15,7 @@ from pathlib import Path
 from notion_config import (
     GLOSSARY_V2_DATABASE_ID,
     NOTION_API_BASE,
+    SONG_MASTER_DATABASE_ID,
     load_local_env,
 )
 
@@ -23,11 +24,15 @@ load_local_env()
 
 NOTION_TOKEN = os.environ.get("NOTION_API_TOKEN")
 DB_ID = os.environ.get("GLOSSARY_V2_DB_ID") or GLOSSARY_V2_DATABASE_ID
+SONG_DB_ID = os.environ.get("SONG_MASTER_DB_ID") or SONG_MASTER_DATABASE_ID
 DEFAULT_OUT = Path.home() / "bon-odori-site" / "data" / "glossary_public.json"
+SUPPLEMENTS = Path("data/public_glossary_supplements.json")
+SONG_MASTER_REGISTRATION = Path("data/song_master_initial_registration.json")
+YOUTUBE_SONG_MASTER = Path("data/youtube_song_master.json")
 NOTION_VERSION = "2022-06-28"
 
 PUBLIC_STATES = {"候補", "有効", "保留"}
-EXCLUDED_KINDS = {"除外語"}
+EXCLUDED_KINDS = {"除外語", "イベント別名"}
 EXCLUDED_CONFIDENCES = {"除外確定"}
 
 KIND_LABELS = {
@@ -198,6 +203,119 @@ def write_json(path, payload):
     path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
+def load_public_supplements(path=SUPPLEMENTS):
+    if not path.exists():
+        return []
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    return payload.get("items") or []
+
+
+def merge_supplements(items, supplements):
+    by_key = {(item.get("term"), item.get("category")) for item in items}
+    merged = list(items)
+    for item in supplements:
+        key = (item.get("term"), item.get("category"))
+        if key not in by_key:
+            merged.append(item)
+            by_key.add(key)
+    return merged
+
+
+def youtube_song_master_rows(path=YOUTUBE_SONG_MASTER):
+    if not path.exists():
+        return []
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    rows = []
+    for row in payload.get("songs", []):
+        if not row.get("public_ready"):
+            continue
+        name = row.get("song_name")
+        if not name:
+            continue
+        rows.append({
+            "song_name": name,
+            "classification": "YouTube曲目",
+            "source_count": row.get("good_evidence_count") or row.get("evidence_count") or 1,
+            "description": row.get("description") or "",
+            "youtube_urls": row.get("youtube_urls") or [],
+            "aliases": row.get("aliases") or [],
+            "bon_usage_rank": row.get("bon_usage_rank") or "",
+            "bon_usage_score": row.get("bon_usage_score") or 0,
+            "song_genre": row.get("song_genre") or "",
+            "song_genre_key": row.get("song_genre_key") or "",
+            "genre_confidence": row.get("genre_confidence") or "",
+            "genre_basis": row.get("genre_basis") or "",
+            "genre_review_status": row.get("genre_review_status") or "",
+        })
+    return rows
+
+
+def song_master_rows(path=SONG_MASTER_REGISTRATION):
+    youtube_rows = youtube_song_master_rows()
+    if youtube_rows:
+        return youtube_rows
+    if NOTION_TOKEN and SONG_DB_ID:
+        rows = []
+        for row in query_all_pages(SONG_DB_ID):
+            props = row.get("properties", {})
+            name = plain_text(props.get("曲名", {}))
+            state = plain_text(props.get("状態", {})) or "候補"
+            classification = plain_text(props.get("分類", {}))
+            if not name or state == "無効" or classification == "ジャンル総称":
+                continue
+            rows.append({
+                "song_name": name,
+                "classification": classification,
+                "source_count": number_value(props.get("証拠数", {})) or 1,
+            })
+        return rows
+    if not path.exists():
+        return []
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    return payload.get("created", [])
+
+
+def load_song_master_items(path=SONG_MASTER_REGISTRATION):
+    rows = song_master_rows(path)
+    song_names = sorted({row.get("song_name") for row in rows if row.get("song_name")})
+    by_name = {row.get("song_name"): row for row in rows if row.get("song_name")}
+    return [
+        {
+            "term": name,
+            "reading": "",
+            "description": by_name.get(name, {}).get("description")
+            or "曲データベースに登録されている盆踊り曲です。会場カードや曲目データから参照されます。",
+            "tags": ["曲名・踊り名"],
+            "category": "曲名",
+            "category_label": "曲名・踊り名",
+            "roles": [],
+            "status": "有効",
+            "confidence": by_name.get(name, {}).get("classification") or "曲DB",
+            "source_count": by_name.get(name, {}).get("source_count") or 1,
+            "youtube_urls": by_name.get(name, {}).get("youtube_urls") or [],
+            "aliases": by_name.get(name, {}).get("aliases") or [],
+            "bon_usage_rank": by_name.get(name, {}).get("bon_usage_rank") or "",
+            "bon_usage_score": by_name.get(name, {}).get("bon_usage_score") or 0,
+            "song_genre": by_name.get(name, {}).get("song_genre") or "",
+            "song_genre_key": by_name.get(name, {}).get("song_genre_key") or "",
+            "genre_confidence": by_name.get(name, {}).get("genre_confidence") or "",
+            "genre_basis": by_name.get(name, {}).get("genre_basis") or "",
+            "genre_review_status": by_name.get(name, {}).get("genre_review_status") or "",
+        }
+        for name in song_names
+    ]
+
+
+def replace_song_glossary_items(items, song_items):
+    if not song_items:
+        return items
+    return [
+        item
+        for item in items
+        if item.get("category") != "曲名" and item.get("category_label") != "曲名・踊り名"
+    ] + song_items
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--out", default=str(DEFAULT_OUT), help="Output JSON path")
@@ -213,6 +331,22 @@ def main():
         body = exc.read().decode("utf-8", errors="replace")
         raise SystemExit(f"用語集公開JSON export失敗 (HTTP {exc.code}): {body}") from exc
 
+    supplements = load_public_supplements()
+    if supplements:
+        payload["items"] = merge_supplements(payload["items"], supplements)
+    song_items = load_song_master_items()
+    if song_items:
+        payload["items"] = replace_song_glossary_items(payload["items"], song_items)
+        payload["song_master_count"] = len(song_items)
+    if supplements or song_items:
+        payload["items"].sort(key=lambda item: (
+            KIND_ORDER.get(item["category"], 99),
+            item["reading"] or item["term"],
+            item["term"],
+        ))
+        payload["count"] = len(payload["items"])
+        if supplements:
+            payload["supplement_count"] = len(supplements)
     write_json(out_path, payload)
     print(
         f"用語集公開JSON export完了: {payload['count']} 件 "

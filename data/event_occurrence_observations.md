@@ -1,20 +1,20 @@
 # 年次開催回観測 初期JSON
 
-生成: 2026-06-19T07:35:12.509002+00:00
+生成: 2026-06-20T07:35:12.793994+00:00
 
 ## 集計
 
-- observation_count: 48
-- series_count: 28
-- source_video_count: 684
+- observation_count: 49
+- series_count: 29
+- source_video_count: 697
 - observed_years: ['2023', '2024', '2025', '2026']
 - series_with_3year_window: 3
-- observations_with_songs: 25
+- observations_with_songs: 26
 
 ## 年別
 
 - 2023: 12
-- 2024: 12
+- 2024: 13
 - 2025: 22
 - 2026: 2
 
@@ -24,7 +24,7 @@
 - 第10回白金台どんぐり児童遊園 納涼盆踊り大会 / 白金台どんぐり児童遊園 / 2025-09-07: 53 videos, songs=0, confidence=medium
 - 青山熊野神社例大祭 奉納踊り / 青山熊野神社 / 2025-09-26〜2025-09-27: 46 videos, songs=0, confidence=high
 - Min-Yoi's盆踊り / 日本民謡会館 / 2026-05-31: 42 videos, songs=44, confidence=medium
-- 郡上おどり in 青山 2025 / 秩父宮ラグビー場駐車場 / 2025-06-20: 40 videos, songs=0, confidence=high
+- 郡上おどり in 青山 / 秩父宮ラグビー場駐車場 / 2025-06-20: 40 videos, songs=0, confidence=high
 - 第28回新橋こいち祭 盆踊り / 桜田公園 / 2025-07-24: 37 videos, songs=0, confidence=high
 - 西久保八幡神社 盆踊り / 西久保八幡神社 / 2025-08-09: 37 videos, songs=0, confidence=medium
 - 東本願寺盆踊り / 東本願寺（浅草） / 2025-08-20: 36 videos, songs=0, confidence=high
@@ -36,7 +36,7 @@
 - 山王音頭と民踊大会 / 山王パークタワー公開空地 / 2026-06-13〜2026-06-15: 16 videos, songs=13, confidence=high
 - 飛鳥山公園盆踊り会（有志サークル） / 飛鳥山公園 / 2025-04-19: 13 videos, songs=0, confidence=medium
 - 謝恩納涼盆踊り大会（青山善光寺） / 青山善光寺 / 2025-07-28: 12 videos, songs=0, confidence=medium
+- 郡上おどり in 青山 / 秩父宮ラグビー場駐車場 / 2023-06-15〜2023-06-16: 10 videos, songs=16, confidence=high
 - 山王音頭と民踊大会 / 山王パークタワー公開空地 / 2024-06-13〜2024-06-15: 10 videos, songs=11, confidence=high
-- SHIBUYA MIYASHITA PARK BON DANCE 2026 / 宮下公園 / 2025-09-27〜2025-09-28: 10 videos, songs=0, confidence=high
+- SHIBUYA MIYASHITA PARK BON DANCE / 宮下公園 / 2025-09-27〜2025-09-28: 10 videos, songs=0, confidence=high
 - 西久保八幡神社 盆踊り / 西久保八幡神社 / 2023-08-10〜2023-08-12: 9 videos, songs=15, confidence=high
-- すみだ錦糸町河内音頭大盆踊り / 江東橋竪川親水公園 / 2024-08-28: 9 videos, songs=4, confidence=high

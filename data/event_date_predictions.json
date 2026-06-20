@@ -1,21 +1,21 @@
 {
   "generated_by": "build_event_date_predictions.py",
-  "generated_at": "2026-06-19T07:35:12.559858+00:00",
+  "generated_at": "2026-06-20T07:35:12.850020+00:00",
   "target_year": 2026,
   "source": "data/event_occurrence_observations.json",
   "summary": {
-    "prediction_count": 12,
+    "prediction_count": 11,
     "rule_counts": {
       "date_near": 1,
       "fixed_date": 1,
       "weekday_last": 2,
       "weekday_near_day": 2,
       "weekday_nth": 3,
-      "weekend_near_day": 3
+      "weekend_near_day": 2
     },
     "confidence_counts": {
       "low": 1,
-      "medium": 11
+      "medium": 10
     },
     "with_actual_observation": 1
   },
@@ -1219,8 +1219,8 @@
       "actual_observations": []
     },
     {
-      "series_key": "b1749efb9aa6",
-      "event_name": "郡上おどり in 青山 2025",
+      "series_key": "f677ee46218e",
+      "event_name": "郡上おどり in 青山",
       "venue": "秩父宮ラグビー場駐車場",
       "target_year": 2026,
       "prediction": {
@@ -1245,8 +1245,8 @@
             "date_end": "2024-06-14",
             "weekday_start": "金",
             "duration_days": 1,
-            "confidence": "medium",
-            "source_video_count": 4
+            "confidence": "high",
+            "source_video_count": 8
           },
           {
             "year": 2025,
@@ -1282,8 +1282,8 @@
               "date_end": "2024-06-14",
               "weekday_start": "金",
               "duration_days": 1,
-              "confidence": "medium",
-              "source_video_count": 4
+              "confidence": "high",
+              "source_video_count": 8
             },
             {
               "year": 2025,
@@ -1320,7 +1320,7 @@
               "weekday_start": "木",
               "duration_days": 2,
               "confidence": "high",
-              "source_video_count": 5
+              "source_video_count": 10
             },
             {
               "year": 2024,
@@ -1328,8 +1328,8 @@
               "date_end": "2024-06-14",
               "weekday_start": "金",
               "duration_days": 1,
-              "confidence": "medium",
-              "source_video_count": 4
+              "confidence": "high",
+              "source_video_count": 8
             },
             {
               "year": 2025,
@@ -1366,7 +1366,7 @@
               "weekday_start": "木",
               "duration_days": 2,
               "confidence": "high",
-              "source_video_count": 5
+              "source_video_count": 10
             },
             {
               "year": 2024,
@@ -1374,8 +1374,8 @@
               "date_end": "2024-06-14",
               "weekday_start": "金",
               "duration_days": 1,
-              "confidence": "medium",
-              "source_video_count": 4
+              "confidence": "high",
+              "source_video_count": 8
             },
             {
               "year": 2025,
@@ -1685,123 +1685,6 @@
               "duration_days": 1,
               "confidence": "high",
               "source_video_count": 6
-            }
-          ]
-        }
-      ],
-      "actual_observations": []
-    },
-    {
-      "series_key": "57b4ce72372b",
-      "event_name": "郡上おどり in 青山 2026",
-      "venue": "秩父宮ラグビー場駐車場",
-      "target_year": 2026,
-      "prediction": {
-        "rule_type": "weekend_near_day",
-        "predicted_date_start": "2026-06-13",
-        "predicted_date_end": "2026-06-14",
-        "predicted_weekday_start": "土",
-        "predicted_weekday_end": "日",
-        "duration_days": 2,
-        "score": 0.6,
-        "confidence": "medium",
-        "basis": "6月14日前後の週末",
-        "evidence_years": [
-          2023,
-          2024
-        ],
-        "evidence_count": 2,
-        "evidence_rows": [
-          {
-            "year": 2023,
-            "date_start": "2023-06-15",
-            "date_end": "2023-06-16",
-            "weekday_start": "木",
-            "duration_days": 2,
-            "confidence": "high",
-            "source_video_count": 5
-          },
-          {
-            "year": 2024,
-            "date_start": "2024-06-14",
-            "date_end": "2024-06-14",
-            "weekday_start": "金",
-            "duration_days": 1,
-            "confidence": "medium",
-            "source_video_count": 4
-          }
-        ]
-      },
-      "candidate_rules": [
-        {
-          "rule_type": "weekend_near_day",
-          "predicted_date_start": "2026-06-13",
-          "predicted_date_end": "2026-06-14",
-          "predicted_weekday_start": "土",
-          "predicted_weekday_end": "日",
-          "duration_days": 2,
-          "score": 0.6,
-          "confidence": "medium",
-          "basis": "6月14日前後の週末",
-          "evidence_years": [
-            2023,
-            2024
-          ],
-          "evidence_count": 2,
-          "evidence_rows": [
-            {
-              "year": 2023,
-              "date_start": "2023-06-15",
-              "date_end": "2023-06-16",
-              "weekday_start": "木",
-              "duration_days": 2,
-              "confidence": "high",
-              "source_video_count": 5
-            },
-            {
-              "year": 2024,
-              "date_start": "2024-06-14",
-              "date_end": "2024-06-14",
-              "weekday_start": "金",
-              "duration_days": 1,
-              "confidence": "medium",
-              "source_video_count": 4
-            }
-          ]
-        },
-        {
-          "rule_type": "date_near",
-          "predicted_date_start": "2026-06-14",
-          "predicted_date_end": "2026-06-15",
-          "predicted_weekday_start": "日",
-          "predicted_weekday_end": "月",
-          "duration_days": 2,
-          "score": 0.58,
-          "confidence": "low",
-          "basis": "6月14日前後",
-          "evidence_years": [
-            2023,
-            2024
-          ],
-          "evidence_count": 2,
-          "evidence_rows": [
-            {
-              "year": 2023,
-              "date_start": "2023-06-15",
-              "date_end": "2023-06-16",
-              "weekday_start": "木",
-              "duration_days": 2,
-              "confidence": "high",
-              "source_video_count": 5
-            },
-            {
-              "year": 2024,
-              "date_start": "2024-06-14",
-              "date_end": "2024-06-14",
-              "weekday_start": "金",
-              "duration_days": 1,
-              "confidence": "medium",
-              "source_video_count": 4
             }
           ]
         }

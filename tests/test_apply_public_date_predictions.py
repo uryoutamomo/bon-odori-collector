@@ -39,6 +39,14 @@ class ApplyPublicDatePredictionsTest(unittest.TestCase):
         self.assertEqual(result["events"][0]["date"], "2025-07-25")
         self.assertEqual(result["events"][0]["date_prediction"]["date"], "2026-07-31")
         self.assertEqual(result["events"][0]["date_prediction"]["rule_type"], "weekday_last")
+        self.assertEqual(result["events"][0]["display_tier"], "rule_predicted")
+        self.assertEqual(result["events"][0]["predicted_date"], "2026-07-31")
+        self.assertEqual(result["events"][0]["predicted_date_end"], "2026-07-31")
+        self.assertEqual(result["events"][0]["prediction_basis"], "7月の最終金曜")
+        self.assertEqual(result["events"][0]["prediction_confidence"], "medium")
+        self.assertEqual(result["events"][0]["prediction_evidence_years"], [2024, 2025])
+        self.assertEqual(result["report"]["applied"][0]["before"]["date"], "2025-07-25")
+        self.assertEqual(result["report"]["applied"][0]["after"]["display_tier"], "rule_predicted")
 
     def test_apply_predictions_skips_when_target_year_date_exists(self):
         events = [{
@@ -46,6 +54,12 @@ class ApplyPublicDatePredictionsTest(unittest.TestCase):
             "venue": "山王パークタワー公開空地",
             "date": "2026-06-13",
             "date_prediction": {"date": "old"},
+            "display_tier": "rule_predicted",
+            "predicted_date": "old",
+            "predicted_date_end": "old",
+            "prediction_basis": "old",
+            "prediction_confidence": "low",
+            "prediction_evidence_years": [2025],
         }]
 
         result = apply_predictions(events, {"predictions": [prediction_row("山王音頭と民踊大会", "山王パークタワー公開空地")]})
@@ -53,6 +67,8 @@ class ApplyPublicDatePredictionsTest(unittest.TestCase):
         self.assertEqual(result["report"]["applied_count"], 0)
         self.assertEqual(result["report"]["skipped_count"], 1)
         self.assertNotIn("date_prediction", result["events"][0])
+        self.assertNotIn("display_tier", result["events"][0])
+        self.assertNotIn("predicted_date", result["events"][0])
 
     def test_apply_predictions_reports_unmatched(self):
         result = apply_predictions([], {"predictions": [prediction_row()]})

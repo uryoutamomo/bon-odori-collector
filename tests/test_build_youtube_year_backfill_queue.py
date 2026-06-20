@@ -46,10 +46,10 @@ class BuildYoutubeYearBackfillQueueTest(unittest.TestCase):
         self.assertEqual(queue["rows"][0]["priority"], "low")
         self.assertEqual(queue["rows"][0]["observed_years"], [])
 
-    def test_event_name_for_target_year_replaces_existing_year(self):
+    def test_event_name_for_target_year_removes_occurrence_year(self):
         self.assertEqual(
             event_name_for_target_year("郡上おどり in 青山 2026", 2024),
-            "郡上おどり in 青山 2024",
+            "郡上おどり in 青山",
         )
 
     def test_build_queue_deduplicates_same_event_venue_year(self):
@@ -72,6 +72,7 @@ class BuildYoutubeYearBackfillQueueTest(unittest.TestCase):
         self.assertEqual(queue["rows"][0]["source_url_count"], 1)
         self.assertIn("2024", queue["rows"][0]["search_queries"][0])
         self.assertNotIn("2026", queue["rows"][0]["search_queries"][0])
+        self.assertEqual(queue["rows"][0]["event_name"], "SHIBUYA MIYASHITA PARK BON DANCE")
 
 
 if __name__ == "__main__":

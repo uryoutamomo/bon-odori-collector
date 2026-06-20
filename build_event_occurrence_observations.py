@@ -12,6 +12,8 @@ from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
+from event_series_normalization import series_event_name
+
 
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"
@@ -52,7 +54,7 @@ def year_of(date):
 
 
 def series_key(name, venue):
-    base = f"{norm(name)}__{norm(venue)}"
+    base = f"{norm(series_event_name(name))}__{norm(venue)}"
     return stable_id(base, length=12)
 
 
@@ -80,13 +82,17 @@ def build_active_observations(rows):
     for row in rows:
         matched = row.get("matched_public_event") or {}
         date = row.get("detected_event_date")
-        event_name = matched.get("name")
+        raw_event_name = matched.get("name")
+        event_name = series_event_name(raw_event_name)
         venue = matched.get("venue")
         year = year_of(date)
         if not event_name or not venue or not year:
             skipped["missing_event_venue_or_date"] += 1
             continue
         key = (event_name, venue, year)
+        matched_public_event = dict(matched)
+        if event_name:
+            matched_public_event["name"] = event_name
         group = groups.setdefault(key, {
             "event_name": event_name,
             "venue": venue,
@@ -94,7 +100,7 @@ def build_active_observations(rows):
             "year": year,
             "channels": set(),
             "videos_by_date": defaultdict(list),
-            "matched_public_event": matched,
+            "matched_public_event": matched_public_event,
         })
         if row.get("channel_title"):
             group["channels"].add(row.get("channel_title"))
@@ -187,7 +193,7 @@ def attach_songs(observations, setlist_occurrences):
 
     for occurrence in setlist_occurrences:
         matched = occurrence.get("matched_public_event") or {}
-        event_name = matched.get("name")
+        event_name = series_event_name(matched.get("name"))
         venue = matched.get("venue")
         year = year_of(occurrence.get("event_date"))
         if not event_name or not venue or not year:

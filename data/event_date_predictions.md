@@ -1,8 +1,8 @@
 # 年次開催回 日付予測
 
-- 生成: 2026-06-19T07:35:12.559858+00:00
+- 生成: 2026-06-20T07:35:12.850020+00:00
 - target_year: 2026
-- prediction_count: 12
+- prediction_count: 11
 - with_actual_observation: 1
 
 | confidence | rule | predicted | weekday | event | venue | basis | actual |
@@ -14,8 +14,7 @@
 | medium | weekday_nth | 2026-08-19 | 水 | 東本願寺盆踊り | 東本願寺（浅草） | 8月第3水曜 |  |
 | medium | weekday_nth | 2026-07-23 | 木 | 第28回新橋こいち祭 盆踊り | 桜田公園 | 7月第4木曜 |  |
 | medium | weekday_near_day | 2026-07-18〜2026-07-20 | 土〜月 | 自由が丘納涼盆踊り大会 | 自由が丘駅前ロータリー 特設会場 | 7月16日前後の土曜 |  |
-| medium | weekday_near_day | 2026-06-19 | 金 | 郡上おどり in 青山 2025 | 秩父宮ラグビー場駐車場 | 6月17日前後の金曜 |  |
+| medium | weekday_near_day | 2026-06-19 | 金 | 郡上おどり in 青山 | 秩父宮ラグビー場駐車場 | 6月17日前後の金曜 |  |
 | medium | weekend_near_day | 2026-08-08 | 土 | 西久保八幡神社 盆踊り | 西久保八幡神社 | 8月9日前後の週末 |  |
 | medium | weekend_near_day | 2026-07-04〜2026-07-05 | 土〜日 | 第15回 鴨台盆踊り | 大正大学 | 7月6日前後の週末 |  |
-| medium | weekend_near_day | 2026-06-13〜2026-06-14 | 土〜日 | 郡上おどり in 青山 2026 | 秩父宮ラグビー場駐車場 | 6月14日前後の週末 |  |
 | low | date_near | 2026-07-14〜2026-07-16 | 火〜木 | みたままつり 納涼民踊のつどい | 靖国神社 | 7月14日前後 |  |

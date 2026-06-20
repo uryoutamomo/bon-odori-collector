@@ -13,6 +13,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from build_event_occurrence_observations import norm, series_key
+from event_series_normalization import series_event_name
 
 
 ROOT = Path(__file__).resolve().parent
@@ -130,10 +131,7 @@ def search_queries(event_name, venue, area, year):
 
 
 def event_name_for_target_year(event_name, target_year):
-    name = compact(event_name)
-    if re.search(r"20\d{2}", name):
-        return re.sub(r"20\d{2}", str(target_year), name)
-    return name
+    return series_event_name(compact(event_name))
 
 
 def public_event_seed_score(event):
@@ -152,7 +150,7 @@ def build_queue(public_events, observations_payload, target_years):
     seen = set()
 
     for event in sorted(public_events, key=public_event_seed_score, reverse=True):
-        event_name = compact(event.get("name"))
+        event_name = series_event_name(compact(event.get("name")))
         venue = compact(event.get("venue"))
         if not event_name or not venue:
             continue

@@ -1,14 +1,14 @@
 {
   "generated_by": "build_event_occurrence_observations.py",
-  "generated_at": "2026-06-19T07:35:12.509002+00:00",
+  "generated_at": "2026-06-20T07:35:12.793994+00:00",
   "sources": {
     "active_review": "/Users/ryotauchida/bon-odori-collector/data/youtube_active_video_review.json",
     "setlist_occurrences": "/Users/ryotauchida/bon-odori-collector/data/youtube_setlist_occurrences.json"
   },
   "summary": {
-    "observation_count": 48,
-    "series_count": 28,
-    "source_video_count": 684,
+    "observation_count": 49,
+    "series_count": 29,
+    "source_video_count": 697,
     "observed_years": [
       "2023",
       "2024",
@@ -17,12 +17,12 @@
     ],
     "observations_by_year": {
       "2023": 12,
-      "2024": 12,
+      "2024": 13,
       "2025": 22,
       "2026": 2
     },
     "series_with_3year_window": 3,
-    "observations_with_songs": 25,
+    "observations_with_songs": 26,
     "active_review_skipped": {
       "missing_event_venue_or_date": 3665
     },
@@ -33,10 +33,10 @@
       }
     },
     "backfill_apply": {
-      "added": 3,
-      "updated": 21,
+      "added": 1,
+      "updated": 24,
       "source": "data/event_occurrence_backfill_plan.json",
-      "source_observation_count": 24
+      "source_observation_count": 25
     }
   },
   "series": [
@@ -77,17 +77,6 @@
       "song_years": []
     },
     {
-      "series_key": "1c3548cbcb40",
-      "canonical_name": "SHIBUYA MIYASHITA PARK BON DANCE 2026",
-      "usual_venue": "宮下公園",
-      "observed_years": [
-        2025
-      ],
-      "observation_count": 2,
-      "has_3year_window": false,
-      "song_years": []
-    },
-    {
       "series_key": "30e9a87bdb27",
       "canonical_name": "第28回新橋こいち祭 盆踊り",
       "usual_venue": "桜田公園",
@@ -117,6 +106,19 @@
       ]
     },
     {
+      "series_key": "376e95169dff",
+      "canonical_name": "喜多見盆踊り大会",
+      "usual_venue": "小田急線喜多見駅前 南口広場",
+      "observed_years": [
+        2023
+      ],
+      "observation_count": 1,
+      "has_3year_window": false,
+      "song_years": [
+        2023
+      ]
+    },
+    {
       "series_key": "39d53bfa116a",
       "canonical_name": "旗の台稲荷通り商店会盆踊り 盆ROCK",
       "usual_venue": "旗の台稲荷通り商店街",
@@ -137,21 +139,6 @@
       "observation_count": 1,
       "has_3year_window": false,
       "song_years": []
-    },
-    {
-      "series_key": "57b4ce72372b",
-      "canonical_name": "郡上おどり in 青山 2026",
-      "usual_venue": "秩父宮ラグビー場駐車場",
-      "observed_years": [
-        2023,
-        2024
-      ],
-      "observation_count": 2,
-      "has_3year_window": false,
-      "song_years": [
-        2023,
-        2024
-      ]
     },
     {
       "series_key": "5a61273424c4",
@@ -225,32 +212,18 @@
       ]
     },
     {
-      "series_key": "b1749efb9aa6",
-      "canonical_name": "郡上おどり in 青山 2025",
-      "usual_venue": "秩父宮ラグビー場駐車場",
-      "observed_years": [
-        2023,
-        2024,
-        2025
-      ],
-      "observation_count": 3,
-      "has_3year_window": true,
-      "song_years": [
-        2023,
-        2024
-      ]
-    },
-    {
       "series_key": "b354f118cfbc",
       "canonical_name": "築地本願寺納涼盆踊り大会",
       "usual_venue": "築地本願寺",
       "observed_years": [
-        2023
+        2023,
+        2024
       ],
-      "observation_count": 1,
+      "observation_count": 2,
       "has_3year_window": false,
       "song_years": [
-        2023
+        2023,
+        2024
       ]
     },
     {
@@ -320,6 +293,19 @@
       "observation_count": 1,
       "has_3year_window": false,
       "song_years": []
+    },
+    {
+      "series_key": "cc7ce7868321",
+      "canonical_name": "赤坂浄土寺盆踊り大会",
+      "usual_venue": "浄土寺",
+      "observed_years": [
+        2024
+      ],
+      "observation_count": 1,
+      "has_3year_window": false,
+      "song_years": [
+        2024
+      ]
     },
     {
       "series_key": "d17bb14b4079",
@@ -397,6 +383,22 @@
       ]
     },
     {
+      "series_key": "f677ee46218e",
+      "canonical_name": "郡上おどり in 青山",
+      "usual_venue": "秩父宮ラグビー場駐車場",
+      "observed_years": [
+        2023,
+        2024,
+        2025
+      ],
+      "observation_count": 3,
+      "has_3year_window": true,
+      "song_years": [
+        2023,
+        2024
+      ]
+    },
+    {
       "series_key": "fcf41af7b1ed",
       "canonical_name": "飛鳥山公園盆踊り会（有志サークル）",
       "usual_venue": "飛鳥山公園",
@@ -404,6 +406,17 @@
         2025
       ],
       "observation_count": 1,
+      "has_3year_window": false,
+      "song_years": []
+    },
+    {
+      "series_key": "ff2638954529",
+      "canonical_name": "SHIBUYA MIYASHITA PARK BON DANCE",
+      "usual_venue": "宮下公園",
+      "observed_years": [
+        2025
+      ],
+      "observation_count": 2,
       "has_3year_window": false,
       "song_years": []
     }
@@ -627,6 +640,76 @@
           ],
           "source_type": "youtube_backfill_title_observed",
           "confidence": "observed"
+        }
+      ]
+    },
+    {
+      "observation_id": "a1c1a6fb9f34e4ca",
+      "series_key": "376e95169dff",
+      "event_name": "喜多見盆踊り大会",
+      "venue": "小田急線喜多見駅前 南口広場",
+      "area": "世田谷区",
+      "year": 2023,
+      "date_start": "2023-07-29",
+      "date_end": "2023-07-30",
+      "observed_dates": [
+        "2023-07-29",
+        "2023-07-30"
+      ],
+      "weekday_start": "土",
+      "weekday_end": "日",
+      "source_type": "youtube_backfill_observed",
+      "source_video_count": 2,
+      "source_channels": [
+        "TAL-SHILL 吹奏楽ch",
+        "Tsubame Planning（吹奏楽・マーチングチャンネル）"
+      ],
+      "confidence": "medium",
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=UmZ0I0bk42U",
+          "video_id": "UmZ0I0bk42U",
+          "title": "国本女子中学高等学校吹奏楽部@喜多見盆踊り大会 2023.7.29【ノーカット】「シング・シング・シング」「星に願いを」など",
+          "channel": "TAL-SHILL 吹奏楽ch",
+          "published_at": "2023-07-29T13:55:00Z",
+          "score": 98
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=I24SQyLKJrM",
+          "video_id": "I24SQyLKJrM",
+          "title": "2023.07.30 国本女子中学校・高等学校吹奏楽部／喜多見盆踊り大会",
+          "channel": "Tsubame Planning（吹奏楽・マーチングチャンネル）",
+          "published_at": "2023-07-30T12:49:02Z",
+          "score": 98
+        }
+      ],
+      "songs": [
+        {
+          "song_name": "ノーカット",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=UmZ0I0bk42U"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "シング・シング・シング",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=UmZ0I0bk42U"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "星に願いを",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=UmZ0I0bk42U"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
         }
       ]
     },
@@ -1695,9 +1778,9 @@
       "manual_review": "accepted_low_confidence"
     },
     {
-      "observation_id": "ebfad4c75b399d5a",
-      "series_key": "b1749efb9aa6",
-      "event_name": "郡上おどり in 青山 2025",
+      "observation_id": "55a4990522c6086d",
+      "series_key": "f677ee46218e",
+      "event_name": "郡上おどり in 青山",
       "venue": "秩父宮ラグビー場駐車場",
       "area": "港区",
       "year": 2023,
@@ -1710,7 +1793,7 @@
       "weekday_start": "木",
       "weekday_end": "金",
       "source_type": "youtube_backfill_observed",
-      "source_video_count": 5,
+      "source_video_count": 10,
       "source_channels": [
         "shu channel",
         "メトロ23区",
@@ -1724,6 +1807,22 @@
           "title": "郡上おどりin青山1日目①　２０２３年　秩父宮ラグビー場駐車場　東京都港区",
           "channel": "和太鼓お祭りチャンネル",
           "published_at": "2023-06-17T12:00:14Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=GRbTxDwruZo",
+          "video_id": "GRbTxDwruZo",
+          "title": "郡上おどりin青山1日目①　２０２３年　秩父宮ラグビー場駐車場　東京都港区",
+          "channel": "和太鼓お祭りチャンネル",
+          "published_at": "2023-06-17T12:00:14Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=t87ypCg5l0M",
+          "video_id": "t87ypCg5l0M",
+          "title": "4K【郡上おどりin青山 2023】[1/3]『かわさき～三百～春駒』🏮Tokyo Bon Dance Festival👘2023.6.16 @秩父宮ラグビー場駐車場",
+          "channel": "shu channel",
+          "published_at": "2023-06-17T05:28:49Z",
           "score": 100
         },
         {
@@ -1743,211 +1842,6 @@
           "score": 100
         },
         {
-          "url": "https://www.youtube.com/watch?v=yOrCwOvrx7w",
-          "video_id": "yOrCwOvrx7w",
-          "title": "4K【郡上おどりin青山 2023】[3/3]『春駒～まつさか』🏮Tokyo Bon Dance Festival👘2023.6.16 @秩父宮ラグビー場駐車場",
-          "channel": "shu channel",
-          "published_at": "2023-06-17T05:29:08Z",
-          "score": 100
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=fwIYqL5eeMw",
-          "video_id": "fwIYqL5eeMw",
-          "title": "郡上踊り 青山 2023年 第27回（ぐじょうおどり）郡上おどり 春駒｜かわさき 日本三大盆踊り 盆踊り大会 郡上八幡  bon dance 郡上おどりin青山 gujo odori in japan",
-          "channel": "メトロ23区",
-          "published_at": "2023-06-16T14:06:30Z",
-          "score": 88
-        }
-      ],
-      "songs": [
-        {
-          "song_name": "郡上おどり：春駒",
-          "source_count": 2,
-          "source_urls": [
-            "https://www.youtube.com/watch?v=t87ypCg5l0M",
-            "https://www.youtube.com/watch?v=yOrCwOvrx7w"
-          ],
-          "source_type": "youtube_backfill_title_observed",
-          "confidence": "observed"
-        },
-        {
-          "song_name": "ダンシングヒーロー",
-          "source_count": 1,
-          "source_urls": [
-            "https://www.youtube.com/watch?v=f2clLkBgSkQ"
-          ],
-          "source_type": "youtube_backfill_title_observed",
-          "confidence": "hint"
-        },
-        {
-          "song_name": "東京音頭",
-          "source_count": 1,
-          "source_urls": [
-            "https://www.youtube.com/watch?v=iwpON-POUyo"
-          ],
-          "source_type": "youtube_backfill_title_observed",
-          "confidence": "hint"
-        },
-        {
-          "song_name": "炭坑節",
-          "source_count": 1,
-          "source_urls": [
-            "https://www.youtube.com/watch?v=e8D9kp52-xA"
-          ],
-          "source_type": "youtube_backfill_title_observed",
-          "confidence": "hint"
-        },
-        {
-          "song_name": "藤岡八木節愛好会",
-          "source_count": 1,
-          "source_urls": [
-            "https://www.youtube.com/watch?v=FeF_HkRq9Vo"
-          ],
-          "source_type": "youtube_backfill_title_observed",
-          "confidence": "hint"
-        },
-        {
-          "song_name": "あやめ踊り",
-          "source_count": 1,
-          "source_urls": [
-            "https://www.youtube.com/watch?v=k1EPtS0SQs0"
-          ],
-          "source_type": "youtube_backfill_title_observed",
-          "confidence": "hint"
-        },
-        {
-          "song_name": "とらじょさま・斎太郎節・北海盆唄",
-          "source_count": 1,
-          "source_urls": [
-            "https://www.youtube.com/watch?v=B0UgTMeZuf4"
-          ],
-          "source_type": "youtube_backfill_title_observed",
-          "confidence": "hint"
-        },
-        {
-          "song_name": "ホームラン音頭",
-          "source_count": 1,
-          "source_urls": [
-            "https://www.youtube.com/watch?v=peyxmVoRaKI"
-          ],
-          "source_type": "youtube_backfill_title_observed",
-          "confidence": "hint"
-        },
-        {
-          "song_name": "令和おどり",
-          "source_count": 1,
-          "source_urls": [
-            "https://www.youtube.com/watch?v=HQbHIeuq4m4"
-          ],
-          "source_type": "youtube_backfill_title_observed",
-          "confidence": "hint"
-        },
-        {
-          "song_name": "郡上おどり：かわさき",
-          "source_count": 1,
-          "source_urls": [
-            "https://www.youtube.com/watch?v=t87ypCg5l0M"
-          ],
-          "source_type": "youtube_backfill_title_observed",
-          "confidence": "hint"
-        },
-        {
-          "song_name": "郡上おどり：三百",
-          "source_count": 1,
-          "source_urls": [
-            "https://www.youtube.com/watch?v=t87ypCg5l0M"
-          ],
-          "source_type": "youtube_backfill_title_observed",
-          "confidence": "hint"
-        },
-        {
-          "song_name": "かわさき～三百～春駒",
-          "source_count": 1,
-          "source_urls": [
-            "https://www.youtube.com/watch?v=t87ypCg5l0M"
-          ],
-          "source_type": "youtube_backfill_title_observed",
-          "confidence": "hint"
-        },
-        {
-          "song_name": "郡上おどり：郡上甚句",
-          "source_count": 1,
-          "source_urls": [
-            "https://www.youtube.com/watch?v=_iUSVsgFeHk"
-          ],
-          "source_type": "youtube_backfill_title_observed",
-          "confidence": "hint"
-        },
-        {
-          "song_name": "郡上甚句",
-          "source_count": 1,
-          "source_urls": [
-            "https://www.youtube.com/watch?v=_iUSVsgFeHk"
-          ],
-          "source_type": "youtube_backfill_title_observed",
-          "confidence": "hint"
-        },
-        {
-          "song_name": "郡上おどり：まつさか",
-          "source_count": 1,
-          "source_urls": [
-            "https://www.youtube.com/watch?v=yOrCwOvrx7w"
-          ],
-          "source_type": "youtube_backfill_title_observed",
-          "confidence": "hint"
-        },
-        {
-          "song_name": "春駒～まつさか",
-          "source_count": 1,
-          "source_urls": [
-            "https://www.youtube.com/watch?v=yOrCwOvrx7w"
-          ],
-          "source_type": "youtube_backfill_title_observed",
-          "confidence": "hint"
-        }
-      ]
-    },
-    {
-      "observation_id": "a63083159e4ff236",
-      "series_key": "57b4ce72372b",
-      "event_name": "郡上おどり in 青山 2026",
-      "venue": "秩父宮ラグビー場駐車場",
-      "area": "港区",
-      "year": 2023,
-      "date_start": "2023-06-15",
-      "date_end": "2023-06-16",
-      "observed_dates": [
-        "2023-06-15",
-        "2023-06-16"
-      ],
-      "weekday_start": "木",
-      "weekday_end": "金",
-      "source_type": "youtube_backfill_observed",
-      "source_video_count": 5,
-      "source_channels": [
-        "shu channel",
-        "メトロ23区",
-        "和太鼓お祭りチャンネル"
-      ],
-      "confidence": "high",
-      "source_videos": [
-        {
-          "url": "https://www.youtube.com/watch?v=GRbTxDwruZo",
-          "video_id": "GRbTxDwruZo",
-          "title": "郡上おどりin青山1日目①　２０２３年　秩父宮ラグビー場駐車場　東京都港区",
-          "channel": "和太鼓お祭りチャンネル",
-          "published_at": "2023-06-17T12:00:14Z",
-          "score": 100
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=t87ypCg5l0M",
-          "video_id": "t87ypCg5l0M",
-          "title": "4K【郡上おどりin青山 2023】[1/3]『かわさき～三百～春駒』🏮Tokyo Bon Dance Festival👘2023.6.16 @秩父宮ラグビー場駐車場",
-          "channel": "shu channel",
-          "published_at": "2023-06-17T05:28:49Z",
-          "score": 100
-        },
-        {
           "url": "https://www.youtube.com/watch?v=_iUSVsgFeHk",
           "video_id": "_iUSVsgFeHk",
           "title": "4K【郡上おどりin青山 2023】[2/3]『郡上甚句』🏮Tokyo Bon Dance Festival👘2023.6.16 @秩父宮ラグビー場駐車場",
@@ -1964,6 +1858,22 @@
           "score": 100
         },
         {
+          "url": "https://www.youtube.com/watch?v=yOrCwOvrx7w",
+          "video_id": "yOrCwOvrx7w",
+          "title": "4K【郡上おどりin青山 2023】[3/3]『春駒～まつさか』🏮Tokyo Bon Dance Festival👘2023.6.16 @秩父宮ラグビー場駐車場",
+          "channel": "shu channel",
+          "published_at": "2023-06-17T05:29:08Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=fwIYqL5eeMw",
+          "video_id": "fwIYqL5eeMw",
+          "title": "郡上踊り 青山 2023年 第27回（ぐじょうおどり）郡上おどり 春駒｜かわさき 日本三大盆踊り 盆踊り大会 郡上八幡  bon dance 郡上おどりin青山 gujo odori in japan",
+          "channel": "メトロ23区",
+          "published_at": "2023-06-16T14:06:30Z",
+          "score": 88
+        },
+        {
           "url": "https://www.youtube.com/watch?v=fwIYqL5eeMw",
           "video_id": "fwIYqL5eeMw",
           "title": "郡上踊り 青山 2023年 第27回（ぐじょうおどり）郡上おどり 春駒｜かわさき 日本三大盆踊り 盆踊り大会 郡上八幡  bon dance 郡上おどりin青山 gujo odori in japan",
@@ -1975,7 +1885,7 @@
       "songs": [
         {
           "song_name": "郡上おどり：春駒",
-          "source_count": 2,
+          "source_count": 4,
           "source_urls": [
             "https://www.youtube.com/watch?v=t87ypCg5l0M",
             "https://www.youtube.com/watch?v=yOrCwOvrx7w"
@@ -1985,138 +1895,138 @@
         },
         {
           "song_name": "ダンシングヒーロー",
-          "source_count": 1,
+          "source_count": 2,
           "source_urls": [
             "https://www.youtube.com/watch?v=f2clLkBgSkQ"
           ],
           "source_type": "youtube_backfill_title_observed",
-          "confidence": "hint"
+          "confidence": "observed"
         },
         {
           "song_name": "東京音頭",
-          "source_count": 1,
+          "source_count": 2,
           "source_urls": [
             "https://www.youtube.com/watch?v=iwpON-POUyo"
           ],
           "source_type": "youtube_backfill_title_observed",
-          "confidence": "hint"
+          "confidence": "observed"
         },
         {
           "song_name": "炭坑節",
-          "source_count": 1,
+          "source_count": 2,
           "source_urls": [
             "https://www.youtube.com/watch?v=e8D9kp52-xA"
           ],
           "source_type": "youtube_backfill_title_observed",
-          "confidence": "hint"
+          "confidence": "observed"
         },
         {
           "song_name": "藤岡八木節愛好会",
-          "source_count": 1,
+          "source_count": 2,
           "source_urls": [
             "https://www.youtube.com/watch?v=FeF_HkRq9Vo"
           ],
           "source_type": "youtube_backfill_title_observed",
-          "confidence": "hint"
+          "confidence": "observed"
         },
         {
           "song_name": "あやめ踊り",
-          "source_count": 1,
+          "source_count": 2,
           "source_urls": [
             "https://www.youtube.com/watch?v=k1EPtS0SQs0"
           ],
           "source_type": "youtube_backfill_title_observed",
-          "confidence": "hint"
+          "confidence": "observed"
         },
         {
           "song_name": "とらじょさま・斎太郎節・北海盆唄",
-          "source_count": 1,
+          "source_count": 2,
           "source_urls": [
             "https://www.youtube.com/watch?v=B0UgTMeZuf4"
           ],
           "source_type": "youtube_backfill_title_observed",
-          "confidence": "hint"
+          "confidence": "observed"
         },
         {
           "song_name": "ホームラン音頭",
-          "source_count": 1,
+          "source_count": 2,
           "source_urls": [
             "https://www.youtube.com/watch?v=peyxmVoRaKI"
           ],
           "source_type": "youtube_backfill_title_observed",
-          "confidence": "hint"
+          "confidence": "observed"
         },
         {
           "song_name": "令和おどり",
-          "source_count": 1,
+          "source_count": 2,
           "source_urls": [
             "https://www.youtube.com/watch?v=HQbHIeuq4m4"
           ],
           "source_type": "youtube_backfill_title_observed",
-          "confidence": "hint"
+          "confidence": "observed"
         },
         {
           "song_name": "郡上おどり：かわさき",
-          "source_count": 1,
+          "source_count": 2,
           "source_urls": [
             "https://www.youtube.com/watch?v=t87ypCg5l0M"
           ],
           "source_type": "youtube_backfill_title_observed",
-          "confidence": "hint"
+          "confidence": "observed"
         },
         {
           "song_name": "郡上おどり：三百",
-          "source_count": 1,
+          "source_count": 2,
           "source_urls": [
             "https://www.youtube.com/watch?v=t87ypCg5l0M"
           ],
           "source_type": "youtube_backfill_title_observed",
-          "confidence": "hint"
+          "confidence": "observed"
         },
         {
           "song_name": "かわさき～三百～春駒",
-          "source_count": 1,
+          "source_count": 2,
           "source_urls": [
             "https://www.youtube.com/watch?v=t87ypCg5l0M"
           ],
           "source_type": "youtube_backfill_title_observed",
-          "confidence": "hint"
+          "confidence": "observed"
         },
         {
           "song_name": "郡上おどり：郡上甚句",
-          "source_count": 1,
+          "source_count": 2,
           "source_urls": [
             "https://www.youtube.com/watch?v=_iUSVsgFeHk"
           ],
           "source_type": "youtube_backfill_title_observed",
-          "confidence": "hint"
+          "confidence": "observed"
         },
         {
           "song_name": "郡上甚句",
-          "source_count": 1,
+          "source_count": 2,
           "source_urls": [
             "https://www.youtube.com/watch?v=_iUSVsgFeHk"
           ],
           "source_type": "youtube_backfill_title_observed",
-          "confidence": "hint"
+          "confidence": "observed"
         },
         {
           "song_name": "郡上おどり：まつさか",
-          "source_count": 1,
+          "source_count": 2,
           "source_urls": [
             "https://www.youtube.com/watch?v=yOrCwOvrx7w"
           ],
           "source_type": "youtube_backfill_title_observed",
-          "confidence": "hint"
+          "confidence": "observed"
         },
         {
           "song_name": "春駒～まつさか",
-          "source_count": 1,
+          "source_count": 2,
           "source_urls": [
             "https://www.youtube.com/watch?v=yOrCwOvrx7w"
           ],
           "source_type": "youtube_backfill_title_observed",
-          "confidence": "hint"
+          "confidence": "observed"
         }
       ]
     },
@@ -3333,6 +3243,156 @@
       ]
     },
     {
+      "observation_id": "b9bc1693b40a12d2",
+      "series_key": "b354f118cfbc",
+      "event_name": "築地本願寺納涼盆踊り大会",
+      "venue": "築地本願寺",
+      "area": "中央区",
+      "year": 2024,
+      "date_start": "2024-07-31",
+      "date_end": "2024-08-01",
+      "observed_dates": [
+        "2024-07-31",
+        "2024-08-01"
+      ],
+      "weekday_start": "水",
+      "weekday_end": "木",
+      "source_type": "youtube_backfill_observed",
+      "source_video_count": 4,
+      "source_channels": [
+        "Tokyo Lonely Walker",
+        "joy joy",
+        "山崎茂雄"
+      ],
+      "confidence": "medium",
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=agZGbUbID1Q",
+          "video_id": "agZGbUbID1Q",
+          "title": "[4K]🇯🇵 築地本願寺 納涼盆踊り大会 2025 人気観光地 / Traditional Japanese Bon dance in Tsukiji Honganji Temple, Tokyo.",
+          "channel": "Tokyo Lonely Walker",
+          "published_at": "2025-07-31T09:00:05Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Z0q3PLUxkz8",
+          "video_id": "Z0q3PLUxkz8",
+          "title": "full 第77回築地本願寺納涼盆踊り大会 2024.8.1 Tsukiji Hongan-ji Temple Noryo Bon Odori Festival tokyo japan.",
+          "channel": "joy joy",
+          "published_at": "2024-08-02T21:15:09Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=15zPoHOoTbg",
+          "video_id": "15zPoHOoTbg",
+          "title": "⚾＃ホームラン音頭 2️⃣🏮＃第77回築地本願寺納涼盆踊り大会2024 大盛り上がり＃HomeRunOndo＃TsukijiHonganji＃2024年8月1日",
+          "channel": "山崎茂雄",
+          "published_at": "2024-08-02T13:46:13Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=izf4pmVM7A8",
+          "video_id": "izf4pmVM7A8",
+          "title": "🏮[＃おこさ節 ]⛩️[＃第77回築地本願寺納涼盆踊り大会2024] 大盛り上がり＃OkosaBushi＃TsukijiHonganji＃2024年8月1日",
+          "channel": "山崎茂雄",
+          "published_at": "2024-08-03T13:22:20Z",
+          "score": 100
+        }
+      ],
+      "songs": [
+        {
+          "song_name": "築地音頭 / Tsukiji Ondo",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=agZGbUbID1Q"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "あさりときりみのおだいどこ音頭 / Asari to Kirimi no Odaidoko Ondo",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=agZGbUbID1Q"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "あやめ踊り / Ayame Odori",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=agZGbUbID1Q"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "ホームラン音頭 / Homerun Ondo",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=agZGbUbID1Q"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "おこさ節 / Okosa Bushi",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=agZGbUbID1Q"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "大江戸助六音頭 / Ooedo Sukeroku Ondo",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=agZGbUbID1Q"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "斎太郎節 / Saitarou Bushi",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=agZGbUbID1Q"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "斎太郎節② / Saitarou Bushi②",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=agZGbUbID1Q"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "法輪音頭 / Hourin Ondo",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=agZGbUbID1Q"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "浴衣音頭 / Yukata Ondo",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=agZGbUbID1Q"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        }
+      ]
+    },
+    {
       "observation_id": "e50f081d8be1b6fb",
       "series_key": "bcbfa4cac9e3",
       "event_name": "自由が丘納涼盆踊り大会",
@@ -3609,9 +3669,192 @@
       ]
     },
     {
-      "observation_id": "37bfe429d1174d03",
-      "series_key": "b1749efb9aa6",
-      "event_name": "郡上おどり in 青山 2025",
+      "observation_id": "acb9f4c5597cec3e",
+      "series_key": "cc7ce7868321",
+      "event_name": "赤坂浄土寺盆踊り大会",
+      "venue": "浄土寺",
+      "area": "港区",
+      "year": 2024,
+      "date_start": "2024-07-25",
+      "date_end": "2024-07-26",
+      "observed_dates": [
+        "2024-07-25",
+        "2024-07-26"
+      ],
+      "weekday_start": "木",
+      "weekday_end": "金",
+      "source_type": "youtube_backfill_observed",
+      "source_video_count": 7,
+      "source_channels": [
+        "Hidden NIPPON",
+        "和太鼓お祭りチャンネル",
+        "山崎茂雄"
+      ],
+      "confidence": "high",
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=_jOYdStx2nQ",
+          "video_id": "_jOYdStx2nQ",
+          "title": "「盆ギリ恋歌」　2024年7月25日赤坂浄土寺盆踊り３　東京都港区",
+          "channel": "和太鼓お祭りチャンネル",
+          "published_at": "2024-07-26T04:30:19Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=LOYOJsB6sU0",
+          "video_id": "LOYOJsB6sU0",
+          "title": "ニッポンワッショイ　2024年7月25日赤坂浄土寺盆踊り８　東京都港区",
+          "channel": "和太鼓お祭りチャンネル",
+          "published_at": "2024-08-03T08:00:13Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=UIdHEt1bukE",
+          "video_id": "UIdHEt1bukE",
+          "title": "佐渡おけさ　2024年7月25日赤坂浄土寺盆踊り５　東京都港区",
+          "channel": "和太鼓お祭りチャンネル",
+          "published_at": "2024-08-01T09:00:25Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=yyy8IqvJYrw",
+          "video_id": "yyy8IqvJYrw",
+          "title": "港区赤坂 浄土寺の盆踊り祭が熱狂的すぎた 2024.7.26 盆ギリ恋歌 /いわきやっちき / SUN燦サンバ Bon Dance Festival at Jodoji Temple, Akasaka",
+          "channel": "Hidden NIPPON",
+          "published_at": "2024-07-27T09:43:18Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=hkgE18K476I",
+          "video_id": "hkgE18K476I",
+          "title": "白浜音頭　2024年7月25日赤坂浄土寺盆踊り４　東京都港区",
+          "channel": "和太鼓お祭りチャンネル",
+          "published_at": "2024-08-01T08:00:33Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=6nDPFKeZszQ",
+          "video_id": "6nDPFKeZszQ",
+          "title": "👸＃あかね音頭🏮＃赤坂浄土寺盆踊り大会2024＃AkaneOndo＃日本の夏祭り＃2024年7月26日二日目",
+          "channel": "山崎茂雄",
+          "published_at": "2024-07-28T14:09:06Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=BpN4oVh1gYQ",
+          "video_id": "BpN4oVh1gYQ",
+          "title": "👸＃赤坂豊川音頭🏮＃赤坂浄土寺盆踊り大会2024＃AkasakaToyokawaOndo＃日本の夏祭り＃2024年7月26日二日目",
+          "channel": "山崎茂雄",
+          "published_at": "2024-07-27T12:15:22Z",
+          "score": 100
+        }
+      ],
+      "songs": [
+        {
+          "song_name": "白浜音頭",
+          "source_count": 4,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=hkgE18K476I"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "炭坑節",
+          "source_count": 4,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=yH3icZM0i14"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "東京音頭",
+          "source_count": 4,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=TozUgt6IZuQ"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "observed"
+        },
+        {
+          "song_name": "盆ギリ恋歌",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=_jOYdStx2nQ"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "八木節",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=yyy8IqvJYrw"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "白浜音頭（千葉県民謡）",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=yyy8IqvJYrw"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "赤坂小唄",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=yyy8IqvJYrw"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "赤坂豊川音頭（1回目）",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=yyy8IqvJYrw"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "赤坂音頭",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=yyy8IqvJYrw"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "あかね音頭",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=yyy8IqvJYrw"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "赤坂豊川音頭（2回目）",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=yyy8IqvJYrw"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        }
+      ]
+    },
+    {
+      "observation_id": "0bac50dbc764a71c",
+      "series_key": "f677ee46218e",
+      "event_name": "郡上おどり in 青山",
       "venue": "秩父宮ラグビー場駐車場",
       "area": "港区",
       "year": 2024,
@@ -3623,13 +3866,13 @@
       "weekday_start": "金",
       "weekday_end": "金",
       "source_type": "youtube_backfill_observed",
-      "source_video_count": 4,
+      "source_video_count": 8,
       "source_channels": [
         "Hidden NIPPON",
         "Very JAPAN",
         "shu channel"
       ],
-      "confidence": "medium",
+      "confidence": "high",
       "source_videos": [
         {
           "url": "https://www.youtube.com/watch?v=3uOCgqTaTG4",
@@ -3638,6 +3881,22 @@
           "channel": "Very JAPAN",
           "published_at": "2024-06-15T05:07:16Z",
           "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=3uOCgqTaTG4",
+          "video_id": "3uOCgqTaTG4",
+          "title": "「郡上おどり in 青山」納涼大会 盆踊り 2024 Tokyo,Aoyama Bon Dance. Bon Odori 郡上踊り",
+          "channel": "Very JAPAN",
+          "published_at": "2024-06-15T05:07:16Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Ng_9XEnpfQs",
+          "video_id": "Ng_9XEnpfQs",
+          "title": "【日本三大盆踊り】郡上おどりin青山 2024夏 ‐Gujo Odori (Japanese Bon Dance）in Aoyama, Tokyo-",
+          "channel": "Hidden NIPPON",
+          "published_at": "2024-06-17T10:45:10Z",
+          "score": 88
         },
         {
           "url": "https://www.youtube.com/watch?v=Ng_9XEnpfQs",
@@ -3656,85 +3915,6 @@
           "score": 88
         },
         {
-          "url": "https://www.youtube.com/watch?v=lqzUIJ7u_bU",
-          "video_id": "lqzUIJ7u_bU",
-          "title": "【郡上おどりin青山 2024】（2/2）かわさき～さわぎ～三百～郡上甚句～春駒～まつさか🏮Tokyo Bon Dance Festival👘2024.6.15 @秩父宮ラグビー場 駐車場",
-          "channel": "shu channel",
-          "published_at": "2024-06-14T18:41:31Z",
-          "score": 88
-        }
-      ],
-      "songs": [
-        {
-          "song_name": "郡上甚句",
-          "source_count": 2,
-          "source_urls": [
-            "https://www.youtube.com/watch?v=Ng_9XEnpfQs",
-            "https://www.youtube.com/watch?v=lqzUIJ7u_bU"
-          ],
-          "source_type": "youtube_backfill_title_observed",
-          "confidence": "observed"
-        },
-        {
-          "song_name": "甚句",
-          "source_count": 1,
-          "source_urls": [
-            "https://www.youtube.com/watch?v=3uOCgqTaTG4"
-          ],
-          "source_type": "youtube_backfill_title_observed",
-          "confidence": "hint"
-        },
-        {
-          "song_name": "郡上おどり in 青山",
-          "source_count": 1,
-          "source_urls": [
-            "https://www.youtube.com/watch?v=3uOCgqTaTG4"
-          ],
-          "source_type": "youtube_backfill_title_observed",
-          "confidence": "hint"
-        }
-      ]
-    },
-    {
-      "observation_id": "8a47b212c99767d1",
-      "series_key": "57b4ce72372b",
-      "event_name": "郡上おどり in 青山 2026",
-      "venue": "秩父宮ラグビー場駐車場",
-      "area": "港区",
-      "year": 2024,
-      "date_start": "2024-06-14",
-      "date_end": "2024-06-14",
-      "observed_dates": [
-        "2024-06-14"
-      ],
-      "weekday_start": "金",
-      "weekday_end": "金",
-      "source_type": "youtube_backfill_observed",
-      "source_video_count": 4,
-      "source_channels": [
-        "Hidden NIPPON",
-        "Very JAPAN",
-        "shu channel"
-      ],
-      "confidence": "medium",
-      "source_videos": [
-        {
-          "url": "https://www.youtube.com/watch?v=3uOCgqTaTG4",
-          "video_id": "3uOCgqTaTG4",
-          "title": "「郡上おどり in 青山」納涼大会 盆踊り 2024 Tokyo,Aoyama Bon Dance. Bon Odori 郡上踊り",
-          "channel": "Very JAPAN",
-          "published_at": "2024-06-15T05:07:16Z",
-          "score": 100
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=Ng_9XEnpfQs",
-          "video_id": "Ng_9XEnpfQs",
-          "title": "【日本三大盆踊り】郡上おどりin青山 2024夏 ‐Gujo Odori (Japanese Bon Dance）in Aoyama, Tokyo-",
-          "channel": "Hidden NIPPON",
-          "published_at": "2024-06-17T10:45:10Z",
-          "score": 88
-        },
-        {
           "url": "https://www.youtube.com/watch?v=7nJ6Xg3XRgo",
           "video_id": "7nJ6Xg3XRgo",
           "title": "【郡上おどりin青山 2024】（1/2）かわさき～げんげんばらばら～さわぎ～春駒🏮Tokyo Bon Dance Festival👘2024.6.15 @秩父宮ラグビー場 駐車場",
@@ -3749,12 +3929,20 @@
           "channel": "shu channel",
           "published_at": "2024-06-14T18:41:31Z",
           "score": 88
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=lqzUIJ7u_bU",
+          "video_id": "lqzUIJ7u_bU",
+          "title": "【郡上おどりin青山 2024】（2/2）かわさき～さわぎ～三百～郡上甚句～春駒～まつさか🏮Tokyo Bon Dance Festival👘2024.6.15 @秩父宮ラグビー場 駐車場",
+          "channel": "shu channel",
+          "published_at": "2024-06-14T18:41:31Z",
+          "score": 88
         }
       ],
       "songs": [
         {
           "song_name": "郡上甚句",
-          "source_count": 2,
+          "source_count": 4,
           "source_urls": [
             "https://www.youtube.com/watch?v=Ng_9XEnpfQs",
             "https://www.youtube.com/watch?v=lqzUIJ7u_bU"
@@ -3764,28 +3952,28 @@
         },
         {
           "song_name": "甚句",
-          "source_count": 1,
+          "source_count": 2,
           "source_urls": [
             "https://www.youtube.com/watch?v=3uOCgqTaTG4"
           ],
           "source_type": "youtube_backfill_title_observed",
-          "confidence": "hint"
+          "confidence": "observed"
         },
         {
           "song_name": "郡上おどり in 青山",
-          "source_count": 1,
+          "source_count": 2,
           "source_urls": [
             "https://www.youtube.com/watch?v=3uOCgqTaTG4"
           ],
           "source_type": "youtube_backfill_title_observed",
-          "confidence": "hint"
+          "confidence": "observed"
         }
       ]
     },
     {
-      "observation_id": "11d9adcaaa224d06",
-      "series_key": "1c3548cbcb40",
-      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE 2026",
+      "observation_id": "a8ee9e61ec7ac74c",
+      "series_key": "ff2638954529",
+      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE",
       "venue": "宮下公園",
       "area": "渋谷区",
       "year": 2025,
@@ -3805,7 +3993,7 @@
       ],
       "confidence": "medium",
       "matched_public_event": {
-        "name": "SHIBUYA MIYASHITA PARK BON DANCE 2026",
+        "name": "SHIBUYA MIYASHITA PARK BON DANCE",
         "venue": "宮下公園",
         "date": "",
         "date_end": "",
@@ -3848,9 +4036,9 @@
       "songs": []
     },
     {
-      "observation_id": "986a0d139718fdfa",
-      "series_key": "1c3548cbcb40",
-      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE 2026",
+      "observation_id": "52f31f9c273d17a5",
+      "series_key": "ff2638954529",
+      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE",
       "venue": "宮下公園",
       "area": "渋谷区",
       "year": 2025,
@@ -3871,7 +4059,7 @@
       ],
       "confidence": "high",
       "matched_public_event": {
-        "name": "SHIBUYA MIYASHITA PARK BON DANCE 2026",
+        "name": "SHIBUYA MIYASHITA PARK BON DANCE",
         "venue": "宮下公園",
         "date": "",
         "date_end": "",
@@ -6071,9 +6259,9 @@
       "songs": []
     },
     {
-      "observation_id": "59c6d425d44bc15d",
-      "series_key": "b1749efb9aa6",
-      "event_name": "郡上おどり in 青山 2025",
+      "observation_id": "d52f22fff123acf7",
+      "series_key": "f677ee46218e",
+      "event_name": "郡上おどり in 青山",
       "venue": "秩父宮ラグビー場駐車場",
       "area": "港区",
       "year": 2025,
@@ -6094,7 +6282,7 @@
       ],
       "confidence": "high",
       "matched_public_event": {
-        "name": "郡上おどり in 青山 2025",
+        "name": "郡上おどり in 青山",
         "venue": "秩父宮ラグビー場駐車場",
         "date": "2025-06-20",
         "date_end": "2025-06-21",

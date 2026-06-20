@@ -68,6 +68,40 @@ class BuildEventOccurrenceObservationsTest(unittest.TestCase):
         self.assertEqual(len(observations), 2)
         self.assertEqual([row["date_start"] for row in observations], ["2025-07-05", "2025-12-20"])
 
+    def test_build_active_observations_collapses_occurrence_year_in_event_name(self):
+        rows = [
+            {
+                "video_id": "a",
+                "video_url": "https://www.youtube.com/watch?v=a",
+                "title": "sample",
+                "channel_title": "ch",
+                "published_at": "2025-06-20T00:00:00Z",
+                "detected_event_date": "2025-06-20",
+                "matched_public_event": {
+                    "name": "郡上おどり in 青山 2025",
+                    "venue": "秩父宮ラグビー場駐車場",
+                },
+            },
+            {
+                "video_id": "b",
+                "video_url": "https://www.youtube.com/watch?v=b",
+                "title": "sample",
+                "channel_title": "ch",
+                "published_at": "2026-06-26T00:00:00Z",
+                "detected_event_date": "2026-06-26",
+                "matched_public_event": {
+                    "name": "郡上おどり in 青山 2026",
+                    "venue": "秩父宮ラグビー場駐車場",
+                },
+            },
+        ]
+
+        observations, skipped = build_active_observations(rows)
+
+        self.assertEqual(skipped, {})
+        self.assertEqual({row["event_name"] for row in observations}, {"郡上おどり in 青山"})
+        self.assertEqual(len({row["series_key"] for row in observations}), 1)
+
     def test_attach_songs_uses_matching_observation_date(self):
         rows = []
         for video_id, date in [("a", "2025-07-05"), ("b", "2025-12-20")]:

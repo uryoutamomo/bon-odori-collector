@@ -4,6 +4,8 @@ from tempfile import TemporaryDirectory
 
 from export_public_events import (
     apply_public_recurrence_metadata,
+    apply_public_event_name_cleanup,
+    clean_public_event_name,
     extract_public_source_urls,
     fill_youtube_evidence_defaults,
     parse_youtube_evidence,
@@ -134,6 +136,41 @@ class ExportPublicEventsTest(unittest.TestCase):
 
         self.assertEqual(extract_public_source_urls(detail), [{"label": "告知投稿あり", "url": "", "kind": "post", "count": 3}])
 
+    def test_clean_public_event_name_removes_schedule_tail(self):
+        self.assertEqual(
+            clean_public_event_name("大森南一丁目自治会「納涼盆踊り大会」7月21日(月)-22日(火) 18:30-20:00。"),
+            "大森南一丁目自治会「納涼盆踊り大会」",
+        )
+        self.assertEqual(
+            clean_public_event_name("下代田東町会 「下代田東子供祭り・納涼祭り』 7月19日(土)-20日(日) 16時-21時。"),
+            "下代田東町会 「下代田東子供祭り・納涼祭り」",
+        )
+        self.assertEqual(
+            clean_public_event_name("「喜多見盆踊り大会」 7月26日(土)-27日(日)。"),
+            "喜多見盆踊り大会",
+        )
+        self.assertEqual(
+            clean_public_event_name("第10回 すみだ輪おどり区民感謝デー"),
+            "第10回 すみだ輪おどり区民感謝デー",
+        )
+        self.assertEqual(
+            clean_public_event_name("盆踊 〜BONDO〜"),
+            "盆踊 〜BONDO〜",
+        )
+        self.assertEqual(
+            clean_public_event_name("「葛飾菖蒲まつり 水元公園会場 民踊パレード 5月31日(日)。"),
+            "葛飾菖蒲まつり 水元公園会場 民踊パレード",
+        )
+
+    def test_apply_public_event_name_cleanup_disambiguates_same_name_different_venues(self):
+        rows = apply_public_event_name_cleanup([
+            {"name": "品川区民まつり 大崎第一地区", "venue": "第一日野小学校", "area": "品川区"},
+            {"name": "品川区民まつり 大崎第一地区", "venue": "第四日野小学校", "area": "品川区"},
+        ])
+
+        self.assertEqual(rows[0]["display_name"], "品川区民まつり 大崎第一地区（第一日野小学校）")
+        self.assertEqual(rows[1]["display_name"], "品川区民まつり 大崎第一地区（第四日野小学校）")
+
     def test_apply_public_recurrence_metadata_adds_production_fields(self):
         rows = apply_public_recurrence_metadata([{
             "name": "第70回 恵比寿駅前盆踊り大会",
@@ -201,7 +238,7 @@ class ExportPublicEventsTest(unittest.TestCase):
 
         self.assertEqual([row["name"] for row in filtered], [
             "西綾瀬町会 夏祭り盆踊り大会",
-            "郡上おどり in 青山 2026",
+            "郡上おどり in 青山",
         ])
         self.assertEqual(filtered[0].get("songs"), [])
         self.assertEqual([song["name"] for song in filtered[1]["songs"]], ["かわさき", "春駒"])

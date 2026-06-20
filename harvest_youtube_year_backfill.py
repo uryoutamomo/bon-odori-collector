@@ -11,6 +11,7 @@ from pathlib import Path
 
 from backfill_youtube_descriptions import best_thumbnail_url, load_env_value
 from discover_youtube_channels import VIDEOS_API_URL, SEARCH_API_URL, enrich_video_candidate, youtube_get
+from event_series_normalization import series_event_name
 from extract_youtube_setlists import BON_CONTEXT_RE, parse_youtube_event_date
 
 
@@ -124,7 +125,7 @@ def fetch_video_snippets(video_ids, api_key):
 def evidence_score(row, video):
     text = "\n".join([video.get("title") or "", video.get("description") or ""])
     title_text = norm(text)
-    event_key = norm(row.get("event_name"))
+    event_key = norm(series_event_name(row.get("event_name")))
     venue_key = norm(row.get("venue"))
     target_year = row.get("target_year")
     parsed_date = parse_youtube_event_date(text)
@@ -175,7 +176,7 @@ def candidate_row(queue_row, video):
         "reasons": reasons,
         "queue_id": queue_row.get("queue_id"),
         "target_year": queue_row.get("target_year"),
-        "event_name": queue_row.get("event_name"),
+        "event_name": series_event_name(queue_row.get("event_name")),
         "venue": queue_row.get("venue"),
         "area": queue_row.get("area"),
         "detected_event_date": detected_date,
@@ -256,10 +257,14 @@ def merge_harvests(existing, fresh):
         return fresh
     selected = {}
     for row in (existing.get("selected_queue_rows") or []) + (fresh.get("selected_queue_rows") or []):
-        selected[row.get("queue_id")] = row
+        item = dict(row)
+        item["event_name"] = series_event_name(item.get("event_name"))
+        selected[item.get("queue_id")] = item
     candidates = {}
     for row in (existing.get("candidates") or []) + (fresh.get("candidates") or []):
-        candidates[(row.get("queue_id"), row.get("video_id"))] = row
+        item = dict(row)
+        item["event_name"] = series_event_name(item.get("event_name"))
+        candidates[(item.get("queue_id"), item.get("video_id"))] = item
     merged_candidates = sorted(
         candidates.values(),
         key=lambda row: (-row["score"], row["target_year"], row["event_name"], row["title"]),

@@ -18,6 +18,15 @@ import urllib.error
 import urllib.request
 
 from bon_odori_songs import extract_song_hints
+from event_series_normalization import series_event_name
+from apply_public_date_predictions import (
+    OUT_REPORT as DATE_PREDICTION_REPORT,
+    PREDICTIONS as DATE_PREDICTIONS,
+    apply_predictions as apply_public_date_predictions,
+    load_json as load_public_date_prediction_json,
+    write_json as write_public_date_prediction_json,
+)
+from apply_public_display_tiers import apply_display_tiers
 import notion_config
 from score_event_recurrence import build_rows, enrich_public_events
 from export_public_venues import (
@@ -57,6 +66,22 @@ AMBIGUOUS_SONG_LABELS = {
     # 曲名にもなり得るが、イベント本文では一般語として誤抽出されやすい。
     "まつり",
 }
+SCHEDULE_FRAGMENT_RE = re.compile(
+    r"\s*(?:"
+    r"\d{4}\s*)?"
+    r"(?:"
+    r"\d{1,2}月\d{1,2}日?"
+    r"|\d{1,2}月\d{1,2}\s*[（(]"
+    r")"
+    r"(?:[^\n]*)$"
+)
+TRAILING_EVENT_NAME_PUNCT_RE = re.compile(r"[\s。．、,・／/＝=\-~]+$")
+QUOTE_TRANSLATION = str.maketrans({
+    "｢": "「",
+    "｣": "」",
+    "『": "「",
+    "』": "」",
+})
 
 # 日付未確定イベントの「並び位置」を決めるヒント（内田さん指示 2026-06-10）：
 # 旬がわかれば 上旬≒5日 / 中旬≒15日 / 下旬≒25日、それも無ければ昨年実績の
@@ -213,11 +238,57 @@ def public_detail_text(text):
     if not text:
         return ""
     public = YOUTUBE_EVIDENCE_RE.sub("", text)
+    public = re.split(r"\s*追加証拠\s*", public, maxsplit=1)[0]
     public = re.sub(r"\[[A-Z]\d+\]\s*", "", public)
+    public = re.sub(r"\[[a-z_]+\]\s*", "", public)
     public = re.sub(r"https?://\S+", "", public)
     public = re.sub(r"(?:公式URL|根拠URL|参照URL|出典URL)[:：]\s*(?=$|[。．])", "", public)
     public = re.sub(r"\s+", " ", public).strip()
     return public
+
+
+def clean_public_event_name(name):
+    """Remove schedule fragments accidentally captured in public event names."""
+    original = str(name or "")
+    cleaned = original.translate(QUOTE_TRANSLATION)
+    cleaned = SCHEDULE_FRAGMENT_RE.sub("", cleaned)
+    cleaned = re.sub(r"\s+([」）)])", r"\1", cleaned)
+    cleaned = re.sub(r"([「（(])\s+", r"\1", cleaned)
+    cleaned = re.sub(r"\s+", " ", cleaned)
+    cleaned = TRAILING_EVENT_NAME_PUNCT_RE.sub("", cleaned).strip()
+    if cleaned.startswith("「") and cleaned.endswith("」") and cleaned.count("「") == 1 and cleaned.count("」") == 1:
+        cleaned = cleaned[1:-1].strip()
+    elif cleaned.startswith("「") and cleaned.count("「") == 1 and cleaned.count("」") == 0:
+        cleaned = cleaned[1:].strip()
+    return cleaned or original.strip()
+
+
+def apply_public_event_name_cleanup(events):
+    """Normalize public names and add display labels for same-name different-venue rows."""
+    cleaned = []
+    for event in events:
+        item = dict(event)
+        before = item.get("name") or ""
+        after = clean_public_event_name(before)
+        if after and after != before:
+            item["name"] = after
+            if item.get("display_name") == before:
+                item.pop("display_name", None)
+        cleaned.append(item)
+
+    by_name = {}
+    for item in cleaned:
+        by_name.setdefault(item.get("name") or "", []).append(item)
+    for name, rows in by_name.items():
+        if not name or len(rows) < 2:
+            continue
+        venues = {row.get("venue") or "" for row in rows}
+        if len(venues) < 2:
+            continue
+        for row in rows:
+            venue = row.get("venue") or row.get("area") or ""
+            row["display_name"] = f"{name}（{venue}）" if venue else name
+    return cleaned
 
 
 def confidence_for_candidate(score, source, reasons):
@@ -329,7 +400,7 @@ def load_date_candidates():
 
 def _song_occurrence_key(event_name, venue, year):
     return (
-        re.sub(r"\s+", "", event_name or "").casefold(),
+        re.sub(r"\s+", "", series_event_name(event_name)).casefold(),
         re.sub(r"\s+", "", venue or "").casefold(),
         int(year),
     )
@@ -570,7 +641,7 @@ def build_public_events():
         for vid in venue_ids:
             v = venues[vid]
             covered.add(vid)
-            public_name = clean_public_text(name)
+            public_name = series_event_name(clean_public_text(name))
             description = clean_public_text(_prop(props, "公開紹介文"))
             raw_detail = clean_public_text(detail_text)
             detail = public_detail_text(raw_detail)
@@ -673,6 +744,7 @@ def sanitize_public_event_details(events):
     cleaned = []
     for event in events:
         item = dict(event)
+        item["name"] = series_event_name(clean_public_event_name(item.get("name")))
         item["detail"] = public_detail_text(item.get("detail"))
         item["source_urls"] = collapse_public_source_urls(item.get("source_urls"))
         item.pop("youtube_evidence", None)
@@ -684,7 +756,7 @@ def sanitize_public_event_details(events):
         item = strip_internal_public_fields(item)
         if is_public_event_complete_enough(item):
             cleaned.append(item)
-    return cleaned
+    return apply_public_event_name_cleanup(cleaned)
 
 
 def is_public_event_complete_enough(event):
@@ -709,10 +781,7 @@ def is_public_event_complete_enough(event):
 
 def public_series_key(event):
     """Return a loose same-series key for suppressing replaced last-year cards."""
-    name = str(event.get("name") or "").translate(str.maketrans("０１２３４５６７８９", "0123456789"))
-    name = re.sub(r"\b20\d{2}\b", "", name)
-    name = re.sub(r"令和\s*\d+\s*年(?:度)?", "", name)
-    name = re.sub(r"\s+", " ", name).strip()
+    name = series_event_name(event.get("name"))
     return "|".join([
         str(event.get("area") or ""),
         str(event.get("venue") or ""),
@@ -813,6 +882,8 @@ def merge_replacement_songs(current, recurring):
 
 def suppress_replaced_recurring_events(events):
     """Hide 2025 recurrence cards when the same venue/series has a 2026 card."""
+    for event in events:
+        event["name"] = series_event_name(event.get("name"))
     current_by_key = {
         public_series_key(event): event
         for event in events
@@ -846,6 +917,12 @@ def main():
         print(f"イベント公開エクスポート失敗 (HTTP {e.code})。スキップ")
         return
     events = suppress_replaced_recurring_events(apply_public_recurrence_metadata(sanitize_public_event_details(events)))
+    prediction_result = apply_public_date_predictions(
+        events,
+        load_public_date_prediction_json(DATE_PREDICTIONS, {}),
+    )
+    events = apply_display_tiers(prediction_result["events"])
+    write_public_date_prediction_json(DATE_PREDICTION_REPORT, prediction_result["report"])
 
     os.makedirs(OUT_DIR, exist_ok=True)
     with open(OUT_JSON, "w", encoding="utf-8") as f:
