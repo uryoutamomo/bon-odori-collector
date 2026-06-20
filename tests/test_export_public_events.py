@@ -8,6 +8,7 @@ from export_public_events import (
     clean_public_event_name,
     extract_public_source_urls,
     fill_youtube_evidence_defaults,
+    fixed_date_rule_from_props,
     parse_youtube_evidence,
     public_detail_text,
     sanitize_public_event_details,
@@ -17,6 +18,25 @@ from export_public_events import (
 
 
 class ExportPublicEventsTest(unittest.TestCase):
+    def test_fixed_date_rule_from_props_reads_machine_columns(self):
+        rule = fixed_date_rule_from_props({
+            "固定日開始月": {"type": "number", "number": 8},
+            "固定日開始日": {"type": "number", "number": 1},
+            "固定日終了月": {"type": "number", "number": 8},
+            "固定日終了日": {"type": "number", "number": 2},
+            "固定日根拠URL": {"type": "url", "url": "https://example.com/hanazono"},
+        })
+
+        self.assertEqual(rule, {
+            "rule_type": "fixed_date_range",
+            "month": 8,
+            "day": 1,
+            "end_month": 8,
+            "end_day": 2,
+            "source_url": "https://example.com/hanazono",
+            "basis": "イベントDBの固定日カラムに記録",
+        })
+
     def test_parse_youtube_evidence_block(self):
         detail = "\n".join([
             "2025-07-19〜2025-07-21 開催予定。",

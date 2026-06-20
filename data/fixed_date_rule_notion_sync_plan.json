@@ -1,0 +1,115 @@
+{
+  "generated_at": "2026-06-20T08:59:27.705584+00:00",
+  "mode": "dry_run",
+  "data_source_id": "a83b5a63-7411-4d6a-8bbc-83bedf4e7b5d",
+  "schema_applied": false,
+  "schema": {
+    "missing_properties": {},
+    "wrong_type": [],
+    "property_count": 15
+  },
+  "rule_count": 2,
+  "ready_count": 2,
+  "applied_count": 0,
+  "updates": [
+    {
+      "rule_name": "花園神社 盆踊り",
+      "venue": "花園神社",
+      "status": "ready",
+      "matches": 1,
+      "page_id": "3818be04-e762-8183-9574-f8d2216af919",
+      "page_url": "https://app.notion.com/p/3818be04e76281839574f8d2216af919",
+      "changed": false,
+      "fixed_date": {
+        "month": 8,
+        "day": 1,
+        "end_month": 8,
+        "end_day": 2,
+        "source_url": "https://yokoso-shinjuku.com/shinjuku-event/hanazono-bonodori-2/"
+      },
+      "properties": {
+        "開催パターン種別": {
+          "select": {
+            "name": "固定日"
+          }
+        },
+        "固定日開始月": {
+          "number": 8
+        },
+        "固定日開始日": {
+          "number": 1
+        },
+        "固定日終了月": {
+          "number": 8
+        },
+        "固定日終了日": {
+          "number": 2
+        },
+        "固定日根拠URL": {
+          "url": "https://yokoso-shinjuku.com/shinjuku-event/hanazono-bonodori-2/"
+        },
+        "開催パターン詳細": {
+          "rich_text": [
+            {
+              "text": {
+                "content": "[youtube_evidence] こと（Claude Code）2025裏取り反映\n- 対象イベント: 花園神社 盆踊り\n- 開催日: 2025-08-01〜2025-08-02\n- 会場: 花園神社\n- 根拠URL: https://yokoso-shinjuku.com/shinjuku-event/hanazono-bonodori-2/\n- 判断: こと裏取りで2025-08-01〜2025-08-02、19:00〜21:00の開催情報を確認。\n\n[fixed_date_rule] おと（Codex）固定日ルール記録\n- 固定日: 毎年8/1〜8/2\n- 根拠: YOKOSO新宿の告知に「毎年8月1日・2日」と明記\n- 根拠URL: https://yokoso-shinjuku.com/shinjuku-event/hanazono-bonodori-2/"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "rule_name": "山王音頭と民踊大会",
+      "venue": "山王パークタワー公開空地",
+      "status": "ready",
+      "matches": 1,
+      "page_id": "3788be04-e762-8112-ae7e-eac6e8acb44b",
+      "page_url": "https://app.notion.com/p/3788be04e7628112ae7eeac6e8acb44b",
+      "changed": false,
+      "fixed_date": {
+        "month": 6,
+        "day": 13,
+        "end_month": 6,
+        "end_day": 15,
+        "source_url": ""
+      },
+      "properties": {
+        "開催パターン種別": {
+          "select": {
+            "name": "固定日"
+          }
+        },
+        "固定日開始月": {
+          "number": 6
+        },
+        "固定日開始日": {
+          "number": 13
+        },
+        "固定日終了月": {
+          "number": 6
+        },
+        "固定日終了日": {
+          "number": 15
+        },
+        "固定日根拠URL": {
+          "url": null
+        },
+        "開催パターン詳細": {
+          "rich_text": [
+            {
+              "text": {
+                "content": "毎年6/13〜15開催（日枝神社「山王祭」の納涼大会として）。曜日は年により変動\n\n[youtube_evidence] YouTube実績証拠\n- 対象イベント: 山王音頭と民踊大会\n- 検出日付: 2026-06-13, 2026-06-14, 2026-06-15\n- 動画数: 16\n- チャンネル: Tokyo Lonely Walker, 和太鼓お祭りCH, 祭のきせき 盆踊り, shu channel\n- 代表動画: https://www.youtube.com/watch?v=_WhO6Kh08sE / Tokyo Lonely Walker / 盆踊りシーズン開幕！日枝神社 山王祭 盆踊り｜東京音頭 2026年 初日 / Dancing the traditional Japanese Tokyo Ondo. [4K]🇯🇵\n- 代表動画: https://www.youtube.com/watch?v=84q8qeG029A / Tokyo Lonely Walker / 盆踊り開幕！赤坂日枝神社 山王祭 盆踊り｜サザン｜東京音頭｜炭坑節｜山王音頭｜八木節 他 / Traditional Japanese Bon Dance at Hie Shrine. [4K]🇯🇵\n- 代表動画: https://www.youtube.com/watch?v=-H-T164L3QM / 和太鼓お祭りCH / 【速報】東京音頭　【赤坂日枝神社】　山王祭盆踊り１　「山王音頭と民踊大会」の風景　2026年6月13日\n- 代表動画: https://www.youtube.com/watch?v=hDckpEGkzTI / 和太鼓お祭りCH / 炭坑節　【赤坂日枝神社】 山王祭 盆踊り２　「山王音頭と民踊大会」の風景　2026年6月13日\n- 代表動画: https://www.youtube.com/watch?v=qd96HMCNCm8 / 和太鼓お祭りCH / 「大東京音頭」　赤坂日枝神社山王祭盆踊り３　「山王音頭と民踊大会」の風景　2026年6月13日\n- 追加動画: 11件 (詳細は data/youtube_active_existing_event_update_apply_result.json)\n- 関連URL: https://goo.gl/maps/kSAEbnkyHSchcccY6, https://maps.app.goo.gl/BbkXn5qwcQ1PM7aQ9, https://x.com/walkingfilmlove, https://www.tenkamatsuri.jp/minyo/\n- 曲目候補: 東京音頭, 炭坑節, 大東京音頭, ドンパン節, 白浜音頭, 八木節, 花笠音頭, おこさ節, 相馬甚句, 東京おどり, 山王音頭, 千代田おどり, 水戸黄門おどり\n\n[youtube_evidence] YouTube 2025公式URL確認済み証拠\n- 対象イベント: 山王音頭と民踊大会\n- 検出日付: 2025-06-13\n- 動画数: 6\n- 公式確認URL: https://www.tenkamatsuri.jp/minyo/\n- チャンネルID: UCEYq2_O_Sai0j9chJOmcKtQ\n- 代表動画: https://www.youtube.com/watch?v=3gmg_bltmu0 / 2025-06-13 / 赤坂・日枝神社🏮盆踊り(1/6)「白浜音頭～東京音頭～ドンパン節」Tokyo Bon Dance👘2025.6.13 @山王パークタワー公開空地\n- 代表動画: https://www.youtube.com/watch?v=RLOHnnauvS8 / 2025-06-13 / 赤坂・日枝神社🏮盆踊り(2/6)「炭坑節～大東京音頭～相馬盆唄」Tokyo Bon Dance👘2025.6.13 @山王パークタワー公開空地\n- 代表動画: https://www.youtube.com/watch?v=wvlo7_K2B0A / 2025-06-13 / 赤坂・日枝神社🏮盆踊り(3/6)「八木節～花笠踊り～おこさ節～相馬甚句」Tokyo Bon Dance👘2025.6.13 @山王パークタワー公開空地\n- 代表動画: https://www.youtube.com/watch?v=hrKOXrI7Zcc / 2025-06-13 / 赤坂・日枝神社🏮盆踊り(4/6)"
+              }
+            },
+            {
+              "text": {
+                "content": "「東京おどり～水戸黄門おどり～ニッポン・ワッショイ」Tokyo Bon Dance👘2025.6.13 @山王パークタワー公開空地\n- 代表動画: https://www.youtube.com/watch?v=ed5hv9b8cNg / 2025-06-13 / 赤坂・日枝神社🏮盆踊り(5/6)「山王音頭～千代田踊り～ダンシング・ヒーロー」Tokyo Bon Dance👘2025.6.13 @山王パークタワー公開空地\n- 追加動画: 1件（詳細はapply結果JSON）\n\n[fixed_date_rule] おと（Codex）固定日ルール記録\n- 固定日: 毎年6/13〜6/15\n- 根拠: 公開データの詳細に「毎年6/13〜15開催」「曜日は年により変動」と明記"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

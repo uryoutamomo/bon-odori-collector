@@ -1,0 +1,31 @@
+{
+  "generated_by": "manual_official_source_review",
+  "rules": [
+    {
+      "name": "花園神社 盆踊り",
+      "venue": "花園神社",
+      "rule_type": "fixed_date_range",
+      "month": 8,
+      "day": 1,
+      "end_month": 8,
+      "end_day": 2,
+      "basis": "YOKOSO新宿の告知に「毎年8月1日・2日」と明記",
+      "source_url": "https://yokoso-shinjuku.com/shinjuku-event/hanazono-bonodori-2/",
+      "source_date": "2025-08-01",
+      "source_date_end": "2025-08-02"
+    },
+    {
+      "name": "山王音頭と民踊大会",
+      "venue": "山王パークタワー公開空地",
+      "rule_type": "fixed_date_range",
+      "month": 6,
+      "day": 13,
+      "end_month": 6,
+      "end_day": 15,
+      "basis": "公開データの詳細に「毎年6/13〜15開催」「曜日は年により変動」と明記",
+      "source_url": "",
+      "source_date": "2026-06-13",
+      "source_date_end": "2026-06-15"
+    }
+  ]
+}

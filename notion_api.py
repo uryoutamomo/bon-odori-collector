@@ -29,6 +29,9 @@ class NotionApi:
     def retrieve_data_source(self, data_source_id):
         return self.request("GET", f"/data_sources/{data_source_id}")
 
+    def update_data_source(self, data_source_id, payload):
+        return self.request("PATCH", f"/data_sources/{data_source_id}", payload)
+
     def query_data_source(self, data_source_id, payload=None):
         rows = []
         cursor = None

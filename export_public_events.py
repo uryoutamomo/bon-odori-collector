@@ -129,7 +129,6 @@ OFFICIAL_SOURCE_KEYS = (
     "YouTube検出元URL",
 )
 
-
 def _url_host(url):
     match = re.match(r"https?://([^/]+)", url or "")
     return match.group(1).lower() if match else ""
@@ -211,6 +210,44 @@ def _source_rank(source):
         0 if generic else 1,
         len(url),
     )
+
+
+def _number_prop(props, name):
+    prop = props.get(name) or {}
+    if prop.get("type") != "number":
+        return None
+    value = prop.get("number")
+    if value is None:
+        return None
+    try:
+        number = int(value)
+    except (TypeError, ValueError):
+        return None
+    return number
+
+
+def fixed_date_rule_from_props(props):
+    """Read machine-usable fixed-date columns from the event DB when present."""
+    month = _number_prop(props, "固定日開始月")
+    day = _number_prop(props, "固定日開始日")
+    if not month or not day:
+        return None
+    end_month = _number_prop(props, "固定日終了月") or month
+    end_day = _number_prop(props, "固定日終了日") or day
+    if not (1 <= month <= 12 and 1 <= end_month <= 12):
+        return None
+    if not (1 <= day <= 31 and 1 <= end_day <= 31):
+        return None
+    source_url = _prop(props, "固定日根拠URL") or ""
+    return {
+        "rule_type": "fixed_date_range",
+        "month": month,
+        "day": day,
+        "end_month": end_month,
+        "end_day": end_day,
+        "source_url": source_url,
+        "basis": "イベントDBの固定日カラムに記録",
+    }
 
 
 def collapse_public_source_urls(sources):
@@ -646,6 +683,7 @@ def build_public_events():
             raw_detail = clean_public_text(detail_text)
             detail = public_detail_text(raw_detail)
             source_urls = extract_public_source_urls(raw_detail)
+            fixed_date_rule = fixed_date_rule_from_props(props)
             songs = extract_song_hints(description, raw_detail)
             occurrence_year = int(date[:4]) if date else 2026
             occurrence = song_occurrences.get(
@@ -681,6 +719,8 @@ def build_public_events():
                 "detail": detail,
                 # 一般閲覧者に見せる公式・準公式の根拠URL。内部ログや動画列挙は公開しない。
                 "source_urls": source_urls,
+                # 固定日開催（例: 毎年8/1〜8/2）を機械的に翌年へ反映するための内部ルール。
+                "fixed_date_rule": fixed_date_rule,
                 # 会場で流れる/踊られる曲の候補。公開時は「曲目ヒント」として扱う。
                 "songs": songs,
             })
