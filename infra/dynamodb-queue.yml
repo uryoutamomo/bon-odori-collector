@@ -182,6 +182,87 @@ Resources:
                   - cloudfront:GetDistributionConfig
                   - cloudfront:UpdateDistribution
                 Resource: arn:aws:cloudfront::169805602203:distribution/ERA76BJB7WLEN
+        - PolicyName: StaticSiteProtectionAccess
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Sid: ManageBonsukeWaf
+                Effect: Allow
+                Action:
+                  - wafv2:CreateWebACL
+                  - wafv2:GetWebACL
+                  - wafv2:ListWebACLs
+                  - wafv2:UpdateWebACL
+                Resource: "*"
+              - Sid: ManageBonsukeContactLambda
+                Effect: Allow
+                Action:
+                  - lambda:AddPermission
+                  - lambda:CreateFunction
+                  - lambda:GetFunction
+                  - lambda:UpdateFunctionCode
+                  - lambda:UpdateFunctionConfiguration
+                Resource:
+                  - arn:aws:lambda:ap-northeast-1:169805602203:function:bonsuke-contact-form
+                  - arn:aws:lambda:ap-northeast-1:169805602203:function:bonsuke-contact-form-receive
+              - Sid: ManageBonsukeContactLambdaRole
+                Effect: Allow
+                Action:
+                  - iam:AttachRolePolicy
+                  - iam:CreateRole
+                  - iam:GetRole
+                  - iam:PassRole
+                  - iam:PutRolePolicy
+                Resource: arn:aws:iam::169805602203:role/bonsuke-contact-form-lambda-role
+              - Sid: ManageBonsukeContactApi
+                Effect: Allow
+                Action:
+                  - apigateway:DELETE
+                  - apigateway:GET
+                  - apigateway:PATCH
+                  - apigateway:POST
+                  - apigateway:PUT
+                Resource: arn:aws:apigateway:ap-northeast-1::/*
+              - Sid: ManageBonsukeContactApiV2
+                Effect: Allow
+                Action:
+                  - apigateway:DELETE
+                  - apigateway:GET
+                  - apigateway:PATCH
+                  - apigateway:POST
+                  - apigateway:PUT
+                Resource: "*"
+              - Sid: ManageBonsukeContactSes
+                Effect: Allow
+                Action:
+                  - ses:CreateReceiptRule
+                  - ses:CreateReceiptRuleSet
+                  - ses:DescribeReceiptRule
+                  - ses:DescribeReceiptRuleSet
+                  - ses:GetEmailIdentity
+                  - ses:ListEmailIdentities
+                  - ses:SendEmail
+                  - ses:SetActiveReceiptRuleSet
+                  - ses:UpdateReceiptRule
+                  - ses:VerifyDomainIdentity
+                  - ses:VerifyDomainDkim
+                  - ses:CreateEmailIdentity
+                Resource: "*"
+              - Sid: ManageBonsukeContactMailBucket
+                Effect: Allow
+                Action:
+                  - s3:CreateBucket
+                  - s3:GetBucketLocation
+                  - s3:ListBucket
+                  - s3:PutBucketPolicy
+                  - s3:PutBucketPublicAccessBlock
+                Resource: arn:aws:s3:::bonsuke-contact-mail-169805602203
+              - Sid: ReadBonsukeContactMailObjects
+                Effect: Allow
+                Action:
+                  - s3:GetObject
+                  - s3:PutObject
+                Resource: arn:aws:s3:::bonsuke-contact-mail-169805602203/incoming/*
       Tags:
         - Key: Project
           Value: bon-odori-collector
