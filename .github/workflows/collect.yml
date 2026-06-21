@@ -85,11 +85,17 @@ jobs:
       run: |
         python sync_venue_master.py
         python export_public_events.py
-        python build_song_occurrences.py
+        if [ -f data/master_rdb_migration_freeze.json ]; then
+          echo "[master-rdb] migration freeze active: skip build_song_occurrences.py and song prediction calibration"
+        else
+          python build_song_occurrences.py
+        fi
         python export_public_events.py
         python build_event_song_candidates.py
         python build_song_ocr_queue.py
-        python calibrate_song_predictions.py
+        if [ ! -f data/master_rdb_migration_freeze.json ]; then
+          python calibrate_song_predictions.py
+        fi
         python build_retrospective_harvest.py
 
     - name: Audit canonical event database after promotion
@@ -108,10 +114,14 @@ jobs:
         [ -f data/glossary_runtime.json ] && git add data/glossary_runtime.json
         [ -f data/public/events_public.json ] && git add data/public/events_public.json
         [ -f data/public/event_songs_public.json ] && git add data/public/event_songs_public.json
-        [ -f data/public/event_song_occurrences_public.json ] && git add data/public/event_song_occurrences_public.json
-        [ -f data/song_occurrences.json ] && git add data/song_occurrences.json
-        [ -f data/song_prediction_snapshots.json ] && git add data/song_prediction_snapshots.json
-        [ -f data/song_prediction_calibration.json ] && git add data/song_prediction_calibration.json
+        if [ -f data/master_rdb_migration_freeze.json ]; then
+          echo "[master-rdb] migration freeze active: do not stage song occurrence generated files"
+        else
+          [ -f data/public/event_song_occurrences_public.json ] && git add data/public/event_song_occurrences_public.json
+          [ -f data/song_occurrences.json ] && git add data/song_occurrences.json
+          [ -f data/song_prediction_snapshots.json ] && git add data/song_prediction_snapshots.json
+          [ -f data/song_prediction_calibration.json ] && git add data/song_prediction_calibration.json
+        fi
         [ -f data/song_ocr_queue.json ] && git add data/song_ocr_queue.json
         [ -f data/song_ocr_review.json ] && git add data/song_ocr_review.json
         [ -f data/song_evidence_manual.json ] && git add data/song_evidence_manual.json

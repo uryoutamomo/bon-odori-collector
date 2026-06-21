@@ -1,0 +1,19 @@
+{
+  "active": true,
+  "reason": "Master RDB migration Ph0/Ph1 writer control. Prevent local YouTube backfill commit/push and freeze song occurrence generated files during SQLite source-of-truth migration.",
+  "started_at": "2026-06-20",
+  "owner": "おと（Codex）",
+  "frozen_files": [
+    "data/song_occurrences.json",
+    "data/song_prediction_snapshots.json",
+    "data/song_prediction_calibration.json",
+    "data/public/event_song_occurrences_public.json",
+    "data/public/event_songs_public.json"
+  ],
+  "release_conditions": [
+    "master DB derived outputs have passed diff audit",
+    "writer workflows use the shared bon-odori-master-rdb concurrency group",
+    "local backfill commit/push ordering is explicit",
+    "koto review and Uchida approval are complete"
+  ]
+}
