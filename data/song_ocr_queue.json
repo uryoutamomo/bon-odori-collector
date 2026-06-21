@@ -1,6 +1,6 @@
 {
   "generated_by": "build_song_ocr_queue.py",
-  "count": 3,
+  "count": 4,
   "items": [
     {
       "id": "b21783a2a9785946",
@@ -41,6 +41,23 @@
         "pic.x.com/mAXy3pDz8C"
       ],
       "text": "山王日枝神社盆踊りの最終日に行ってきました✊\n平日という事もあってか入れ替えは最初の数回で終わり、気付けば踊るスペースも徐々に広げて下さり、初日に踊れなかった曲目全てを踊れて良かったです😆\n色々な方々にご挨拶も出来て、盆活の良いスタートとなりました〜✨ https://t.co/mAXy3pDz8C",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "712e1811289a938c",
+      "status": "needs_ocr",
+      "account": "@bonkyodora_",
+      "url": "https://x.com/bonkyodora_/status/2068636858666668113",
+      "tweet_id": "2068636858666668113",
+      "date": "2026-06-21T10:07:15+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/ext_tw_video_thumb/2068636256616214528/pu/img/pd-cZYI3R6cl0uDE.jpg",
+        "https://t.co/0ZFB12Tth0",
+        "pic.twitter.com/0ZFB12Tth0",
+        "https://pbs.twimg.com/ext_tw_video_thumb/2068636567875555328/pu/img/ukgPT47j_j-XolZe.jpg",
+        "https://pbs.twimg.com/ext_tw_video_thumb/2068636692559597568/pu/img/w9MXASfXQBZ4qim2.jpg"
+      ],
+      "text": "2026年6月21日(日)\n東京都台東区／長國寺\n「第23回 いきいき あじさい祭」\nこの数年、あじさいに惹かれ、今年、庭に植えました💠🌿\nあじさいも見られ、盆踊りもできて、とても嬉しかったです🤗✨\n\n【曲目】\n東京音頭\nたいとう音頭\n東京スカイツリー音頭\nご祝儀音頭\nにっぽん音頭\n輝け日本富士山踊り https://t.co/0ZFB12Tth0",
       "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
     }
   ]

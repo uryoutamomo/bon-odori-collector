@@ -1049,21 +1049,15 @@
     "name": "三角広場まつり「居酒屋盆踊り」",
     "venue": "新宿住友ビル三角広場",
     "area": "新宿区",
-    "date": "2025-06-25",
+    "date": "2026-06-24",
     "songs": [
       {
         "name": "LOVEマシーン",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "confidence": "hint"
       },
       {
         "name": "勝手にシンドバッド",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "confidence": "hint"
       }
     ]
   },
@@ -1097,13 +1091,6 @@
     "songs": [
       {
         "name": "Fun! Fun! Fun!",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
-      },
-      {
-        "name": "かわいいだけじゃだめですか",
         "confidence": "hint",
         "probability": 80,
         "basis": "current_hint",
@@ -2252,13 +2239,6 @@
         "basis_label": "今年ヒント"
       },
       {
-        "name": "ダンシング・ヒーロー",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
-      },
-      {
         "name": "ホイップるん音頭",
         "confidence": "confirmed",
         "probability": 95,
@@ -2323,7 +2303,7 @@
       },
       {
         "name": "ダンシングヒーロー",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント"

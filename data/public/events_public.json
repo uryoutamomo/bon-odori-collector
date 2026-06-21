@@ -3700,9 +3700,9 @@
     "address": "東京都新宿区西新宿2-6-1",
     "lat": 35.692017,
     "lng": 139.692459,
-    "date": "2025-06-25",
-    "date_end": "2025-06-26",
-    "status": "終了",
+    "date": "2026-06-24",
+    "date_end": "2026-06-25",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -3712,56 +3712,54 @@
     "hints": [
       [
         6,
-        25
+        24
       ],
       [
         6,
-        26
+        25
       ]
     ],
     "jun": {
       "6": "下旬"
     },
     "description": "三角広場まつり 居酒屋盆踊りは、新宿住友ビル三角広場で開かれる屋外型の盆踊り・夏の地域イベント。6月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "新宿住友ビル三角広場公式告知。キュー上の「新宿住友ビル三角広場まつり居酒屋盆踊り」は同一候補として処理。",
-    "source_urls": [],
+    "detail": "新宿住友ビル三角広場公式告知。キュー上の「新宿住友ビル三角広場まつり居酒屋盆踊り」は同一候補として処理。 【2026年確定】2026/06/24(水)〜06/25(木)開催。出典: （こと 2026-06-21 公式サイト直接確認）。タグ: 電車圏／夜開催（1日3回盆踊りタイム）",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "fixed_date_rule": null,
     "songs": [
       {
         "name": "LOVEマシーン",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "confidence": "hint"
       },
       {
         "name": "勝手にシンドバッド",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "confidence": "hint"
       }
     ],
-    "public_status": "expected_medium",
-    "public_category": "recurring_last_year",
-    "public_status_label": "昨年開催",
-    "public_note": "昨年開催: 2025-06-25〜2025-06-26。今年の日程は未確認です。",
-    "recurrence_label": "昨年開催・継続性 中",
-    "recurrence_score": 0.63,
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-06-24〜2026-06-25",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
     "recurrence_reasons": [
-      "official_or_semi_official_evidence",
-      "venue_present",
-      "tokyo_23ward",
-      "recurring_word:まつり"
+      "2026年日付確認済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
-    "last_seen_year": 2025,
+    "last_seen_year": null,
     "last_seen_dates": [
-      "2025-06-25",
-      "2025-06-26"
+      "2026-06-24",
+      "2026-06-25"
     ],
-    "display_tier": "historical_reference"
+    "display_tier": "confirmed"
   },
   {
     "name": "歌舞伎町BON ODORI",
@@ -4137,13 +4135,6 @@
     "songs": [
       {
         "name": "Fun! Fun! Fun!",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
-      },
-      {
-        "name": "かわいいだけじゃだめですか",
         "confidence": "hint",
         "probability": 80,
         "basis": "current_hint",
@@ -6986,8 +6977,8 @@
     "display_tier": "season_hint"
   },
   {
-    "name": "品川区民まつり 品川第二地区",
-    "name_confirmed": true,
+    "name": "城南小学校の盆踊り",
+    "name_confirmed": false,
     "venue": "城南小学校",
     "area": "品川区",
     "months": [
@@ -7000,7 +6991,7 @@
     "lng": 139.74411,
     "date": null,
     "date_end": null,
-    "status": "未確認",
+    "status": null,
     "date_confidence": {
       "level": "unknown",
       "label": "未確認",
@@ -7016,10 +7007,9 @@
     "jun": {
       "7": "下旬"
     },
-    "description": "城南小学校を会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
-    "detail": "2025-07-26 開催実績。2025 7/26 - 27。「品川区民まつり 品川第二地区」7月26日(土)-27日(日) 17時-21時。 「盆踊り・模擬店 ほか」。 踊りは18時-21時。 練習会 7/23(水)・24(木) 19:00-20:45 城南小学校体育館。 (7/23朝 時間他追記)",
+    "description": "城南小学校は、地域の夏祭りや盆踊りで使われる品川区の学校会場。 規模は「小」として整理しています、アクセスは京急本線「青物横丁駅」徒歩圈内（隔接する天妙国寺と同一エリア）。",
+    "detail": "",
     "source_urls": [],
-    "fixed_date_rule": null,
     "songs": [],
     "public_status": "date_unknown",
     "public_category": "date_unknown",
@@ -7029,8 +7019,7 @@
     "recurrence_score": 0.25,
     "recurrence_reasons": [
       "月ヒントあり",
-      "日付ヒントあり",
-      "未確認"
+      "日付ヒントあり"
     ],
     "recurrence_cautions": [
       "2026年日程なし"
@@ -7198,6 +7187,64 @@
     "display_tier": "season_hint"
   },
   {
+    "name": "品川区民まつり 品川第二地区",
+    "name_confirmed": true,
+    "venue": "天妙国寺",
+    "area": "品川区",
+    "months": [
+      7
+    ],
+    "scale": "中",
+    "access": "京急本線 青物横丁駅から徒歩5分（新馬場駅・りんかい線品川シーサイド駅からもアクセス可）",
+    "address": "東京都品川区南品川2-8-23",
+    "lat": null,
+    "lng": null,
+    "date": "2026-07-25",
+    "date_end": "2026-07-26",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        7,
+        25
+      ],
+      [
+        7,
+        26
+      ]
+    ],
+    "jun": {
+      "7": "下旬"
+    },
+    "description": "城南小学校を会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
+    "detail": "2025-07-26 開催実績。2025 7/26 - 27。「品川区民まつり 品川第二地区」7月26日(土)-27日(日) 17時-21時。 「盆踊り・模擬店 ほか」。 踊りは18時-21時。 練習会 7/23(水)・24(木) 19:00-20:45 城南小学校体育館。 (7/23朝 時間他追記)",
+    "source_urls": [],
+    "fixed_date_rule": null,
+    "songs": [],
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-07-25〜2026-07-26",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-07-25",
+      "2026-07-26"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
     "name": "品川第二地区 区民まつり・品川青年会 盆踊り大会（天妙国寺）",
     "name_confirmed": true,
     "venue": "天妙国寺",
@@ -7207,9 +7254,9 @@
     ],
     "scale": "中",
     "access": "京急本線 青物横丁駅から徒歩5分（新馬場駅・りんかい線品川シーサイド駅からもアクセス可）",
-    "address": "東京都品川区南品儑2-8-23",
-    "lat": 35.615791,
-    "lng": 139.743256,
+    "address": "東京都品川区南品川2-8-23",
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "確認済み",
@@ -7365,54 +7412,53 @@
     "venue": "小山台小学校",
     "area": "品川区",
     "months": [
-      7
+      7,
+      10
     ],
     "scale": "中",
     "access": "東急目黒線 武蔵小山駅から徒歩4〜5分",
     "address": "東京都品川区小山台1-18-24",
     "lat": 35.622478,
     "lng": 139.703033,
-    "date": null,
+    "date": "2026-10-10",
     "date_end": null,
-    "status": "未確認",
+    "status": "確認済み",
     "date_confidence": {
-      "level": "unknown",
-      "label": "未確認",
-      "description": "開催日はまだ確認できていません"
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
     },
     "date_candidates": [],
     "hints": [
       [
-        7,
-        26
+        10,
+        10
       ]
     ],
     "jun": {
-      "7": "下旬"
+      "10": "上旬"
     },
     "description": "小山台小学校を会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
     "detail": "2025-07-26 開催実績。2025 7/26。「品川区民まつり 荏原第一地区」7月26日(土) 14時-19時。 盆踊りは17:30-18:30。",
     "source_urls": [],
     "fixed_date_rule": null,
     "songs": [],
-    "public_status": "date_unknown",
-    "public_category": "date_unknown",
-    "public_status_label": "日程未確認",
-    "public_note": "今年の日程は未確認です。",
-    "recurrence_label": "日程未確認",
-    "recurrence_score": 0.25,
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-10-10",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
     "recurrence_reasons": [
-      "月ヒントあり",
-      "日付ヒントあり",
-      "未確認"
+      "2026年日付確認済み"
     ],
-    "recurrence_cautions": [
-      "2026年日程なし"
-    ],
+    "recurrence_cautions": [],
     "edition_number": null,
     "last_seen_year": null,
-    "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "last_seen_dates": [
+      "2026-10-10"
+    ],
+    "display_tier": "confirmed"
   },
   {
     "name": "中原共和町会 戸越八幡神社祭礼 盆踊り",
@@ -8949,13 +8995,6 @@
         "basis_label": "今年ヒント"
       },
       {
-        "name": "ダンシング・ヒーロー",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
-      },
-      {
         "name": "ホイップるん音頭",
         "confidence": "confirmed",
         "probability": 95,
@@ -9020,7 +9059,7 @@
       },
       {
         "name": "ダンシングヒーロー",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント"
