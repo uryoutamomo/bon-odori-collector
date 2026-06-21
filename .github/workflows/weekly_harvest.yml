@@ -22,7 +22,7 @@ on:
         default: true
 
 concurrency:
-  group: weekly-harvest
+  group: bon-odori-master-rdb
   cancel-in-progress: false
 
 jobs:
@@ -55,10 +55,18 @@ jobs:
       run: |
         python sync_venue_master.py
         python export_public_events.py
-        python build_song_occurrences.py
+        if python master_rdb_freeze_policy.py is-frozen legacy_song_occurrence_generation; then
+          echo "[master-rdb] legacy song occurrence generation frozen: skip build_song_occurrences.py"
+        else
+          python build_song_occurrences.py
+        fi
         python export_public_events.py
         python build_song_ocr_queue.py
-        python calibrate_song_predictions.py
+        if python master_rdb_freeze_policy.py is-frozen legacy_song_occurrence_generation; then
+          echo "[master-rdb] legacy song occurrence generation frozen: skip calibrate_song_predictions.py"
+        else
+          python calibrate_song_predictions.py
+        fi
         python build_retrospective_harvest.py
 
     - name: Build weekly harvest candidates
@@ -158,10 +166,20 @@ jobs:
         [ -f data/weekly_harvest_apply_result.json ] && git add data/weekly_harvest_apply_result.json
         [ -f data/venue_master.json ] && git add data/venue_master.json
         [ -f data/public/events_public.json ] && git add data/public/events_public.json
-        [ -f data/public/event_song_occurrences_public.json ] && git add data/public/event_song_occurrences_public.json
-        [ -f data/song_occurrences.json ] && git add data/song_occurrences.json
-        [ -f data/song_prediction_snapshots.json ] && git add data/song_prediction_snapshots.json
-        [ -f data/song_prediction_calibration.json ] && git add data/song_prediction_calibration.json
+        if python master_rdb_freeze_policy.py is-frozen ph1_public_song_export_files; then
+          echo "[master-rdb] Ph1 public song export files frozen: do not stage migrated public song files"
+        else
+          echo "[master-rdb] Ph1 public song export released; legacy song occurrence source remains frozen"
+          [ -f data/public/event_song_occurrences_public.json ] && git add data/public/event_song_occurrences_public.json
+          [ -f data/public/event_songs_public.json ] && git add data/public/event_songs_public.json
+        fi
+        if python master_rdb_freeze_policy.py is-frozen legacy_song_occurrence_generation; then
+          echo "[master-rdb] legacy song occurrence generation frozen: do not stage legacy song occurrence generated files"
+        else
+          [ -f data/song_occurrences.json ] && git add data/song_occurrences.json
+          [ -f data/song_prediction_snapshots.json ] && git add data/song_prediction_snapshots.json
+          [ -f data/song_prediction_calibration.json ] && git add data/song_prediction_calibration.json
+        fi
         [ -f data/song_ocr_queue.json ] && git add data/song_ocr_queue.json
         [ -f data/song_ocr_review.json ] && git add data/song_ocr_review.json
         [ -f data/song_evidence_manual.json ] && git add data/song_evidence_manual.json

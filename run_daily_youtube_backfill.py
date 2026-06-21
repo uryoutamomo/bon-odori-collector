@@ -12,6 +12,7 @@ from pathlib import Path
 
 from backfill_youtube_descriptions import load_env_value
 import harvest_youtube_year_backfill as harvest_mod
+from master_rdb_freeze_policy import is_group_frozen, load_policy
 
 
 DATA = Path("data")
@@ -21,6 +22,7 @@ SCHEDULE_RULES = DATA / "event_schedule_rules.json"
 REPORT_JSON = DATA / "youtube_daily_backfill_report.json"
 REPORT_MD = DATA / "youtube_daily_backfill_report.md"
 PENDING_MAIL = DATA / "pending_mail.json"
+MASTER_RDB_FREEZE = DATA / "master_rdb_migration_freeze.json"
 
 
 def load_json(path, default):
@@ -29,6 +31,22 @@ def load_json(path, default):
         return default
     with path.open(encoding="utf-8") as handle:
         return json.load(handle)
+
+
+def master_rdb_legacy_song_freeze():
+    return is_group_frozen(load_policy(MASTER_RDB_FREEZE), "legacy_song_occurrence_generation")
+
+
+def guard_master_rdb_freeze(args):
+    if not master_rdb_legacy_song_freeze() or args.ignore_migration_freeze:
+        return
+    if args.commit or args.push:
+        raise SystemExit(
+            "master RDB migration freeze is active; "
+            "run_daily_youtube_backfill.py must not commit/push during Ph1. "
+            "Use --dry-run or omit --commit/--push, or pass "
+            "--ignore-migration-freeze after an explicit migration decision."
+        )
 
 
 def write_json(path, data):
@@ -265,7 +283,9 @@ def main():
     parser.add_argument("--commit", action="store_true")
     parser.add_argument("--push", action="store_true")
     parser.add_argument("--mail-reminder", action="store_true")
+    parser.add_argument("--ignore-migration-freeze", action="store_true")
     args = parser.parse_args()
+    guard_master_rdb_freeze(args)
 
     queue = load_json(QUEUE, {})
     existing = load_json(CANDIDATES, {})

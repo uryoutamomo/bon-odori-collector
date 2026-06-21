@@ -10,7 +10,7 @@ on:
         default: false
 
 concurrency:
-  group: bon-odori-review-x-candidate-posts
+  group: bon-odori-master-rdb
   cancel-in-progress: false
 
 jobs:

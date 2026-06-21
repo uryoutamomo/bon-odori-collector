@@ -3,10 +3,44 @@
   "reason": "Master RDB migration Ph0/Ph1 writer control. Prevent local YouTube backfill commit/push and freeze song occurrence generated files during SQLite source-of-truth migration.",
   "started_at": "2026-06-20",
   "owner": "おと（Codex）",
+  "freeze_groups": {
+    "legacy_song_occurrence_generation": {
+      "active": true,
+      "reason": "Keep the legacy JSON song occurrence generation path frozen until Ph2/Ph3 decides how to merge it with the SQLite source of truth.",
+      "files": [
+        "data/song_occurrences.json",
+        "data/song_prediction_snapshots.json",
+        "data/song_prediction_calibration.json"
+      ],
+      "actions": [
+        "build_song_occurrences.py",
+        "calibrate_song_predictions.py",
+        "run_daily_youtube_backfill.py --commit/--push"
+      ]
+    },
+    "ph1_public_song_export_files": {
+      "active": false,
+      "released_at": "2026-06-21",
+      "released_by": "おと（Codex）",
+      "reason": "Ph1 public song occurrence outputs are now SQLite-derived and passed production verification.",
+      "files": [
+        "data/public/event_song_occurrences_public.json",
+        "data/public/event_songs_public.json"
+      ],
+      "source_of_truth": "data/bon_odori_master.sqlite"
+    }
+  },
+  "default_policy": {
+    "unknown_group": "frozen",
+    "malformed_freeze_file": "frozen",
+    "only_explicit_active_false_is_released": true
+  },
   "frozen_files": [
     "data/song_occurrences.json",
     "data/song_prediction_snapshots.json",
-    "data/song_prediction_calibration.json",
+    "data/song_prediction_calibration.json"
+  ],
+  "released_files": [
     "data/public/event_song_occurrences_public.json",
     "data/public/event_songs_public.json"
   ],

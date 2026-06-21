@@ -13,7 +13,7 @@ on:
   workflow_dispatch:
 
 concurrency:
-  group: bon-odori-send-mail
+  group: bon-odori-master-rdb
   cancel-in-progress: false
 
 jobs:
