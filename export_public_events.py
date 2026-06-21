@@ -14,6 +14,7 @@ export_public_venues.py と同じ方針。出力は data/public/events_public.js
 import json
 import os
 import re
+import unicodedata
 import urllib.error
 import urllib.request
 
@@ -43,11 +44,21 @@ from export_public_venues import (
     _query_all,
 )
 
-OUT_DIR = os.path.join(os.path.dirname(__file__), "data", "public")
+OUT_DIR = os.environ.get(
+    "BON_ODORI_PUBLIC_OUT_DIR",
+    os.path.join(os.path.dirname(__file__), "data", "public"),
+)
 OUT_JSON = os.path.join(OUT_DIR, "events_public.json")
 OUT_JS = os.path.join(OUT_DIR, "events_public.js")
 OUT_SONGS_JSON = os.path.join(OUT_DIR, "event_songs_public.json")
-OUT_SONG_OCCURRENCES_JSON = os.path.join(OUT_DIR, "event_song_occurrences_public.json")
+OUT_SONG_OCCURRENCES_JSON = os.environ.get(
+    "BON_ODORI_SONG_OCCURRENCES_JSON",
+    os.path.join(OUT_DIR, "event_song_occurrences_public.json"),
+)
+DATE_PREDICTION_REPORT = os.environ.get(
+    "BON_ODORI_PUBLIC_DATE_PREDICTION_REPORT",
+    DATE_PREDICTION_REPORT,
+)
 DATE_CANDIDATES_JSON = os.path.join(os.path.dirname(__file__), "data", "event_date_update_candidates.json")
 FALLBACK_SUPPRESSED_VENUES = {
     # 例大祭名の由来となる神社。実際の奉納踊り会場は青葉公園（港区立）なので、
@@ -460,13 +471,19 @@ def load_song_occurrences():
 
 
 def merge_song_occurrence_hints(existing_songs, occurrence):
-    songs = {
-        re.sub(r"\s+", "", song.get("name", "")).casefold(): dict(song)
-        for song in existing_songs or []
-        if song.get("name")
-    }
+    songs = {}
+    for song in existing_songs or []:
+        if not song.get("name"):
+            continue
+        key = _song_dedupe_key(song.get("name", ""))
+        if not key:
+            continue
+        current = songs.get(key)
+        candidate = dict(song)
+        if current is None or _song_score(candidate) > _song_score(current):
+            songs[key] = candidate
     for song in (occurrence or {}).get("songs", []):
-        key = re.sub(r"\s+", "", song.get("name", "")).casefold()
+        key = _song_dedupe_key(song.get("name", ""))
         if not key:
             continue
         merged = songs.setdefault(key, {
@@ -495,19 +512,24 @@ def merge_song_occurrence_hints(existing_songs, occurrence):
 
 
 def strip_song_internal_fields(songs):
-    public_songs = []
+    best_by_key = {}
+    order = []
     for song in songs or []:
         if isinstance(song, str):
-            public_songs.append({"name": song, "confidence": "hint"})
+            candidate = {"name": song, "confidence": "hint"}
+        else:
+            candidate = dict(song)
+        name = _song_name(candidate).strip()
+        key = _song_dedupe_key(name)
+        if not key:
             continue
-        item = {
-            key: song[key]
-            for key in ["name", "confidence", "probability", "basis", "basis_label"]
-            if key in song and song[key] not in (None, "", [])
-        }
-        if item.get("name"):
-            public_songs.append(item)
-    return public_songs
+        if key not in best_by_key:
+            order.append(key)
+            best_by_key[key] = candidate
+            continue
+        if _song_score(candidate) > _song_score(best_by_key[key]):
+            best_by_key[key] = candidate
+    return [_public_song(best_by_key[key]) for key in order if _song_name(best_by_key[key]).strip()]
 
 
 def parse_months(text):
@@ -833,6 +855,18 @@ def _song_name(song):
     return song if isinstance(song, str) else str(song.get("name") or "")
 
 
+def _song_dedupe_key(name):
+    normalized = unicodedata.normalize("NFKC", str(name or "")).casefold()
+    chars = []
+    for char in normalized:
+        if char.isspace():
+            continue
+        if unicodedata.category(char)[0] in {"P", "S"}:
+            continue
+        chars.append(char)
+    return "".join(chars)
+
+
 def _public_song(song):
     if isinstance(song, str):
         return {"name": song, "confidence": "hint"}
@@ -911,9 +945,10 @@ def merge_replacement_songs(current, recurring):
                 song["basis_label"] = "2025年ヒント"
                 if song.get("probability") is None:
                     song["probability"] = 80
-            existing = merged.get(name)
+            key = _song_dedupe_key(name)
+            existing = merged.get(key)
             if existing is None or _song_score(song) > _song_score(existing):
-                merged[name] = song
+                merged[key] = song
     current["songs"] = sorted(
         strip_song_internal_fields(merged.values()),
         key=lambda song: (-_song_score(song)[0], _song_name(song)),
