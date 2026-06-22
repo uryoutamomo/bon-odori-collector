@@ -1,17 +1,16 @@
 # Pre-cutover P0 apply plan
 
-- generated_at: 2026-06-22T13:57:48.764779+00:00
+- generated_at: 2026-06-22T14:04:00.194852+00:00
 - source_queue: `data/registered_event_investigation_queue.json`
 - source_master_db: `data/bon_odori_master.sqlite`
-- p0_task_count: 12
-- by_bucket: {'historical_reference_recorded': 8, 'current_2026_apply_candidate': 1, 'keep_investigation_queue': 3}
-- human_review_required_count: 8
+- p0_task_count: 11
+- by_bucket: {'historical_reference_recorded': 8, 'keep_investigation_queue': 3}
+- human_review_required_count: 7
 
 ## Current 2026 Apply Candidates
 
 | event | proposed date | proposed venue | action | review | source |
 | --- | --- | --- | --- | --- | --- |
-| 品川区民まつり 荏原第五地区 | 2026-07-18 to 2026-07-19 | 杜松ホーム | apply_current_2026_date_and_review_venue_name | yes | https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html |
 
 ## Historical Reference Only
 

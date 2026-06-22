@@ -31,11 +31,11 @@
     "notion_db": "20e460fa51a838cfc4e8c3e1a34e51d60707870eb39534d98d8673d1e1d67002",
     "song_occurrences": "2f129469c58dce45b8671dc964b0e62b882c999a06f181172a237ac04bf6e609"
   },
-  "database_checksum": "79d9a98f7cef249374fc7f3796ec9ae4832551133c99fc7921c5040d84b71b86",
+  "database_checksum": "1519a9e05011b692136fae6440a1efd9b5812535b5e9ecb09d1a0aa3358a5583",
   "report": "data/master_rdb_ph0_dry_run_report.json",
   "post_build_outputs": {
     "observed_promotion_candidates": "data/observed_promotion_candidates.json",
-    "registered_event_investigation_queue": "data/registered_event_investigation_queue_post_rdb_state.json",
+    "registered_event_investigation_queue": "data/registered_event_investigation_queue.json",
     "historical_promotion_candidates": "data/historical_promotion_candidates.json"
   },
   "post_build_steps": [

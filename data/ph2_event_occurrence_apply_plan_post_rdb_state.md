@@ -1,10 +1,10 @@
 # Ph2 event occurrence apply plan
 
-- generated_at: 2026-06-22T13:57:57.969167+00:00
-- mutation_count: 12
-- mutations_by_type: {'append_historical_reference_without_confirming_2026': 8, 'update_existing_2026_occurrence_from_current_official_source': 1, 'keep_investigation_queue': 3}
+- generated_at: 2026-06-22T14:04:28.520546+00:00
+- mutation_count: 11
+- mutations_by_type: {'append_historical_reference_without_confirming_2026': 8, 'keep_investigation_queue': 3}
 - blocked_or_review_required_count: 3
-- already_applied_current_official_count: 1
+- already_applied_current_official_count: 0
 - already_applied_historical_reference_count: 8
 - predicted_date_job_count: 12
 - predicted_date_jobs_by_application_status: {'candidate_for_2026_occurrence': 8, 'matches_curated': 1, 'superseded_by_curated': 3}
@@ -13,7 +13,6 @@
 
 | event | current | proposed | venue | flags | apply |
 | --- | --- | --- | --- | --- | --- |
-| 品川区民まつり 荏原第五地区 | 2026-07-18 to 2026-07-19 / 杜松ホーム | 2026-07-18 to 2026-07-19 | 杜松ホーム (exact_match) |  | already_applied |
 
 ## Historical Reference Mutations
 

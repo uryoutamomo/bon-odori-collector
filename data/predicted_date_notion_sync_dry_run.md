@@ -1,6 +1,6 @@
 # Master RDB -> Notion sync dry-run
 
-- generated_at: 2026-06-22T13:42:00.071545+00:00
+- generated_at: 2026-06-22T14:04:00.226857+00:00
 - mode: dry_run
 - master_db: `data/bon_odori_master.sqlite`
 - selected_jobs: 8
