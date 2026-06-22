@@ -10,6 +10,8 @@ data/x_voices_experiment.json
 
 # ローカル再生成のRDB/証拠スナップショット
 data/*.sqlite
+!data/bon_odori_master.sqlite
+data/backups/
 
 # ローカル実行ログ
 logs/*.log

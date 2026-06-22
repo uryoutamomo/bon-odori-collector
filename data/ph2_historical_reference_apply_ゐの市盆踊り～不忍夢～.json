@@ -1,0 +1,166 @@
+{
+  "generated_by": "dry_run_ph2_event_occurrence_apply.py",
+  "generated_at": "2026-06-21T16:14:36.908947+00:00",
+  "scope": "source_master_db_apply_no_notion_no_public_json",
+  "sources": {
+    "master_db": "data/bon_odori_master.sqlite",
+    "plan": "data/ph2_event_occurrence_apply_plan.json"
+  },
+  "outputs": {
+    "target_db": "data/bon_odori_master.sqlite",
+    "dry_run_db": "",
+    "backup_db": "data/backups/bon_odori_master.20260621T161436.908947+0000.sqlite.bak"
+  },
+  "options": {
+    "event_name": "ゐの市盆踊り～不忍夢～",
+    "include_blocked": false,
+    "mutation_type": "historical_reference",
+    "apply": true
+  },
+  "write_guard": {
+    "db_committed": true,
+    "rolled_back": false,
+    "rollback_reason": ""
+  },
+  "summary": {
+    "selected_count": 1,
+    "applied_count": 1,
+    "skipped_count": 13,
+    "issues_count": 0,
+    "issues_by_severity": {},
+    "dry_run_table_counts": {
+      "event_occurrences": 214,
+      "occurrence_dates": 132,
+      "notion_sync_jobs": 10,
+      "ph2_event_occurrence_sync_jobs": 2
+    }
+  },
+  "applied": [
+    {
+      "mutation_type": "append_historical_reference_without_confirming_2026",
+      "action": "append_historical_reference_without_confirming_2026",
+      "event_name": "ゐの市盆踊り～不忍夢～",
+      "occurrence_id": "occ_0ee14ffbf15fd0cf",
+      "notion_page_id": "3788be04-e762-819e-a1af-e5b4c80e4399",
+      "before": {
+        "occurrence_id": "occ_0ee14ffbf15fd0cf",
+        "series_id": "ser_59e508928cfca640",
+        "series_name": "ゐの市盆踊り～不忍夢～",
+        "event_year": 2026,
+        "display_name": "ゐの市盆踊り～不忍夢～",
+        "venue_id": "ven_2c7e944e2b1af336",
+        "venue_name": "上野恩賜公園",
+        "date_start": "",
+        "date_end": "",
+        "date_status": "unknown",
+        "lifecycle_status": "未確認",
+        "confidence": "unknown",
+        "source_kind": "notion_events",
+        "source_url": "https://www.uenopark.info/2025/inoichi-bonodori-2025/"
+      },
+      "after": {
+        "occurrence_id": "occ_0ee14ffbf15fd0cf",
+        "series_id": "ser_59e508928cfca640",
+        "series_name": "ゐの市盆踊り～不忍夢～",
+        "event_year": 2026,
+        "display_name": "ゐの市盆踊り～不忍夢～",
+        "venue_id": "ven_2c7e944e2b1af336",
+        "venue_name": "上野恩賜公園",
+        "date_start": "",
+        "date_end": "",
+        "date_status": "unknown",
+        "lifecycle_status": "未確認",
+        "confidence": "unknown",
+        "source_kind": "notion_events",
+        "source_url": "https://www.uenopark.info/2025/inoichi-bonodori-2025/"
+      },
+      "inserted_occurrence_date_id": "odate_d61d1ee01c66cad4",
+      "inserted_occurrence_date_type": "historical_reference",
+      "inserted_notion_sync_job_id": "",
+      "historical_reference": {
+        "year": 2025,
+        "date_start": "2025-08-09",
+        "date_end": "2025-08-11",
+        "venue_name": "上野恩賜公園",
+        "venue_lookup_status": "exact_match",
+        "venue_matches": [
+          {
+            "venue_id": "ven_2c7e944e2b1af336",
+            "canonical_name": "上野恩賜公園",
+            "normalized_name": "上野恩賜公園",
+            "area": "台東区",
+            "address": "〒110-0007 東京都台東区上野公園・池之端三丁目",
+            "matched_by": "canonical",
+            "matched_alias": ""
+          }
+        ],
+        "venue_suggestions": [],
+        "accepted_venue_id": "ven_2c7e944e2b1af336",
+        "accepted_venue_name": "上野恩賜公園",
+        "confidence": "medium",
+        "source_url": "https://www.uenopark.info/2025/inoichi-bonodori-2025/"
+      }
+    }
+  ],
+  "skipped": [
+    {
+      "event_name": "濱町音頭盆踊り大会",
+      "reason": "event_filter"
+    },
+    {
+      "event_name": "銀座一丁目東町会・新富町会 納涼盆踊り大会",
+      "reason": "event_filter"
+    },
+    {
+      "event_name": "京橋盆踊り",
+      "reason": "event_filter"
+    },
+    {
+      "event_name": "品川区民まつり 品川第二地区",
+      "reason": "not_selected_mutation_type",
+      "mutation_type": "update_existing_2026_occurrence_from_current_official_source"
+    },
+    {
+      "event_name": "品川区民まつり 荏原第一地区",
+      "reason": "not_selected_mutation_type",
+      "mutation_type": "update_existing_2026_occurrence_from_current_official_source"
+    },
+    {
+      "event_name": "品川区民まつり 荏原第五地区",
+      "reason": "not_selected_mutation_type",
+      "mutation_type": "update_existing_2026_occurrence_from_current_official_source"
+    },
+    {
+      "event_name": "増上寺 地蔵尊盆踊り大会",
+      "reason": "not_selected_mutation_type",
+      "mutation_type": "keep_investigation_queue"
+    },
+    {
+      "event_name": "新宿中央公園夏祭り 納涼盆踊り大会",
+      "reason": "event_filter"
+    },
+    {
+      "event_name": "旗岡八幡神社例大祭",
+      "reason": "not_selected_mutation_type",
+      "mutation_type": "keep_investigation_queue"
+    },
+    {
+      "event_name": "森下二丁目盆踊り",
+      "reason": "event_filter"
+    },
+    {
+      "event_name": "盆☆Dance 夏休み最後の土曜は校庭で踊ろう！",
+      "reason": "not_selected_mutation_type",
+      "mutation_type": "keep_investigation_queue"
+    },
+    {
+      "event_name": "赤坂夏おどり（旧 赤坂盆踊り）",
+      "reason": "event_filter"
+    },
+    {
+      "event_name": "都の辰巳深川 臨海ぼんおどり",
+      "reason": "event_filter"
+    }
+  ],
+  "issues": []
+}

@@ -1,0 +1,177 @@
+{
+  "generated_by": "dry_run_ph2_event_occurrence_apply.py",
+  "generated_at": "2026-06-21T16:14:36.835352+00:00",
+  "scope": "source_master_db_apply_no_notion_no_public_json",
+  "sources": {
+    "master_db": "data/bon_odori_master.sqlite",
+    "plan": "data/ph2_event_occurrence_apply_plan.json"
+  },
+  "outputs": {
+    "target_db": "data/bon_odori_master.sqlite",
+    "dry_run_db": "",
+    "backup_db": "data/backups/bon_odori_master.20260621T161436.835352+0000.sqlite.bak"
+  },
+  "options": {
+    "event_name": "濱町音頭盆踊り大会",
+    "include_blocked": false,
+    "mutation_type": "historical_reference",
+    "apply": true
+  },
+  "write_guard": {
+    "db_committed": true,
+    "rolled_back": false,
+    "rollback_reason": ""
+  },
+  "summary": {
+    "selected_count": 1,
+    "applied_count": 1,
+    "skipped_count": 13,
+    "issues_count": 0,
+    "issues_by_severity": {},
+    "dry_run_table_counts": {
+      "event_occurrences": 214,
+      "occurrence_dates": 131,
+      "notion_sync_jobs": 10,
+      "ph2_event_occurrence_sync_jobs": 2
+    }
+  },
+  "applied": [
+    {
+      "mutation_type": "append_historical_reference_without_confirming_2026",
+      "action": "append_historical_reference_without_confirming_2026",
+      "event_name": "濱町音頭盆踊り大会",
+      "occurrence_id": "occ_1a4d1fa95a29cc39",
+      "notion_page_id": "3788be04-e762-8134-aea5-fe0552b5adee",
+      "before": {
+        "occurrence_id": "occ_1a4d1fa95a29cc39",
+        "series_id": "ser_94b2c41e84fad260",
+        "series_name": "濱町音頭盆踊り大会",
+        "event_year": 2026,
+        "display_name": "濱町音頭盆踊り大会",
+        "venue_id": "ven_995ac6aca5a8b2f9",
+        "venue_name": "浜町公園",
+        "date_start": "",
+        "date_end": "",
+        "date_status": "unknown",
+        "lifecycle_status": "未確認",
+        "confidence": "unknown",
+        "source_kind": "notion_events",
+        "source_url": "https://tokyofesta.com/23ku/25652/"
+      },
+      "after": {
+        "occurrence_id": "occ_1a4d1fa95a29cc39",
+        "series_id": "ser_94b2c41e84fad260",
+        "series_name": "濱町音頭盆踊り大会",
+        "event_year": 2026,
+        "display_name": "濱町音頭盆踊り大会",
+        "venue_id": "ven_995ac6aca5a8b2f9",
+        "venue_name": "浜町公園",
+        "date_start": "",
+        "date_end": "",
+        "date_status": "unknown",
+        "lifecycle_status": "未確認",
+        "confidence": "unknown",
+        "source_kind": "notion_events",
+        "source_url": "https://tokyofesta.com/23ku/25652/"
+      },
+      "inserted_occurrence_date_id": "odate_ec21b005ddaa44f6",
+      "inserted_occurrence_date_type": "historical_reference",
+      "inserted_notion_sync_job_id": "",
+      "historical_reference": {
+        "year": 2025,
+        "date_start": "2025-09-27",
+        "date_end": "",
+        "venue_name": "浜町公園中央広場",
+        "venue_lookup_status": "missing_in_master",
+        "venue_matches": [],
+        "venue_suggestions": [
+          {
+            "venue_id": "ven_995ac6aca5a8b2f9",
+            "canonical_name": "浜町公園",
+            "normalized_name": "浜町公園",
+            "area": "中央区",
+            "address": "東京都中央区日本橋浜町2丁目59",
+            "matched_by": "canonical",
+            "matched_alias": "",
+            "match_score": 0.92
+          },
+          {
+            "venue_id": "ven_66ceb75663d405df",
+            "canonical_name": "緑町公園",
+            "normalized_name": "緑町公園",
+            "area": "墨田区",
+            "address": "東京都墨田区亀沢2-7-7",
+            "matched_by": "canonical",
+            "matched_alias": "",
+            "match_score": 0.5
+          }
+        ],
+        "accepted_venue_id": "ven_995ac6aca5a8b2f9",
+        "accepted_venue_name": "浜町公園",
+        "confidence": "medium",
+        "source_url": "https://tokyofesta.com/23ku/25652/"
+      }
+    }
+  ],
+  "skipped": [
+    {
+      "event_name": "銀座一丁目東町会・新富町会 納涼盆踊り大会",
+      "reason": "event_filter"
+    },
+    {
+      "event_name": "ゐの市盆踊り～不忍夢～",
+      "reason": "event_filter"
+    },
+    {
+      "event_name": "京橋盆踊り",
+      "reason": "event_filter"
+    },
+    {
+      "event_name": "品川区民まつり 品川第二地区",
+      "reason": "not_selected_mutation_type",
+      "mutation_type": "update_existing_2026_occurrence_from_current_official_source"
+    },
+    {
+      "event_name": "品川区民まつり 荏原第一地区",
+      "reason": "not_selected_mutation_type",
+      "mutation_type": "update_existing_2026_occurrence_from_current_official_source"
+    },
+    {
+      "event_name": "品川区民まつり 荏原第五地区",
+      "reason": "not_selected_mutation_type",
+      "mutation_type": "update_existing_2026_occurrence_from_current_official_source"
+    },
+    {
+      "event_name": "増上寺 地蔵尊盆踊り大会",
+      "reason": "not_selected_mutation_type",
+      "mutation_type": "keep_investigation_queue"
+    },
+    {
+      "event_name": "新宿中央公園夏祭り 納涼盆踊り大会",
+      "reason": "event_filter"
+    },
+    {
+      "event_name": "旗岡八幡神社例大祭",
+      "reason": "not_selected_mutation_type",
+      "mutation_type": "keep_investigation_queue"
+    },
+    {
+      "event_name": "森下二丁目盆踊り",
+      "reason": "event_filter"
+    },
+    {
+      "event_name": "盆☆Dance 夏休み最後の土曜は校庭で踊ろう！",
+      "reason": "not_selected_mutation_type",
+      "mutation_type": "keep_investigation_queue"
+    },
+    {
+      "event_name": "赤坂夏おどり（旧 赤坂盆踊り）",
+      "reason": "event_filter"
+    },
+    {
+      "event_name": "都の辰巳深川 臨海ぼんおどり",
+      "reason": "event_filter"
+    }
+  ],
+  "issues": []
+}

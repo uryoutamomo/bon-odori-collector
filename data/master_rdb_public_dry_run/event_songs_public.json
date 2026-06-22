@@ -1049,15 +1049,21 @@
     "name": "三角広場まつり「居酒屋盆踊り」",
     "venue": "新宿住友ビル三角広場",
     "area": "新宿区",
-    "date": "2026-06-24",
+    "date": "2025-06-25",
     "songs": [
       {
         "name": "LOVEマシーン",
-        "confidence": "hint"
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "勝手にシンドバッド",
-        "confidence": "hint"
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       }
     ]
   },

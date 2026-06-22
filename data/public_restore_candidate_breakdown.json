@@ -1,0 +1,1434 @@
+{
+  "generated_by": "breakdown_public_restore_candidates.py",
+  "generated_at": "2026-06-21T15:55:56.736319+00:00",
+  "scope": "read_only_restore_candidate_breakdown_no_writes",
+  "sources": {
+    "collector_events": "data/public/events_public.json",
+    "site_events": "/Users/ryotauchida/bon-odori-site/data/events_public.json",
+    "classification": "data/public_events_diff_classification.json",
+    "fixed_date_rules": "data/public_fixed_date_rules.json"
+  },
+  "parameters": {
+    "target_year": 2026,
+    "today": "2026-06-20"
+  },
+  "summary": {
+    "candidate_event_count": 76,
+    "by_resolution": {
+      "regenerate_exact_via_historical_reference_postprocess": 18,
+      "regenerate_exact_via_season_hint_postprocess": 58
+    },
+    "by_family_resolution": {
+      "historical_reference::regenerate_exact_via_historical_reference_postprocess": 18,
+      "season_hint::regenerate_exact_via_season_hint_postprocess": 58
+    },
+    "collector_restore_or_manual_review_count": 0,
+    "postprocess_exact_count": 76
+  },
+  "rows": [
+    {
+      "event_name": "-両国- 江戸NOREN 妖怪BON DANCE",
+      "venue": "-両国-江戸NOREN",
+      "families": [
+        "historical_reference"
+      ],
+      "fields": [
+        "historical_display_tier",
+        "historical_last_seen_dates",
+        "historical_last_seen_year",
+        "historical_reference",
+        "historical_reference_confidence",
+        "historical_reference_label",
+        "historical_reference_score"
+      ],
+      "field_count": 7,
+      "recommended_resolution": "regenerate_exact_via_historical_reference_postprocess",
+      "exact_field_count": 7,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "GMOシブヤエンタメ祭 × JAME盆踊り",
+      "venue": "宮下公園",
+      "families": [
+        "historical_reference"
+      ],
+      "fields": [
+        "historical_display_tier",
+        "historical_last_seen_dates",
+        "historical_last_seen_year",
+        "historical_reference",
+        "historical_reference_confidence",
+        "historical_reference_label",
+        "historical_reference_score"
+      ],
+      "field_count": 7,
+      "recommended_resolution": "regenerate_exact_via_historical_reference_postprocess",
+      "exact_field_count": 7,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE",
+      "venue": "宮下公園",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
+      "venue": "上野恩賜公園",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "しながわ運河まつり ステージプログラム",
+      "venue": "東品川海上公園",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "すみだ公園の盆踊り（名称推定）",
+      "venue": "すみだ公園（隅田公園・墨田区側）",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "ゐの市盆踊り～不忍夢～",
+      "venue": "上野恩賜公園",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "アークヒルズ秋祭り 盆踊り",
+      "venue": "アーク・カラヤン広場（アークヒルズ）",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "アースデイ東京2025 イマジン盆踊り部",
+      "venue": "代々木公園野外ステージ",
+      "families": [
+        "historical_reference"
+      ],
+      "fields": [
+        "historical_display_tier",
+        "historical_last_seen_dates",
+        "historical_last_seen_year",
+        "historical_reference",
+        "historical_reference_confidence",
+        "historical_reference_label",
+        "historical_reference_score"
+      ],
+      "field_count": 7,
+      "recommended_resolution": "regenerate_exact_via_historical_reference_postprocess",
+      "exact_field_count": 7,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "イベント名未確認（晴海ふ頭公園）",
+      "venue": "晴海ふ頭公園",
+      "families": [
+        "historical_reference"
+      ],
+      "fields": [
+        "historical_display_tier",
+        "historical_last_seen_dates",
+        "historical_last_seen_year",
+        "historical_reference",
+        "historical_reference_confidence",
+        "historical_reference_label",
+        "historical_reference_score"
+      ],
+      "field_count": 7,
+      "recommended_resolution": "regenerate_exact_via_historical_reference_postprocess",
+      "exact_field_count": 7,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "イベント名未確認（築地社会教育会館）",
+      "venue": "築地社会教育会館",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "シタマチ.ふるさと盆踊り大会",
+      "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+      "families": [
+        "historical_reference"
+      ],
+      "fields": [
+        "historical_display_tier",
+        "historical_last_seen_dates",
+        "historical_last_seen_year",
+        "historical_reference",
+        "historical_reference_confidence",
+        "historical_reference_label",
+        "historical_reference_score"
+      ],
+      "field_count": 7,
+      "recommended_resolution": "regenerate_exact_via_historical_reference_postprocess",
+      "exact_field_count": 7,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "上笄町会お祭り 盆踊り",
+      "venue": "長谷寺（西麻布・麻布大観音）",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "上野盆踊り会（厚澄会）",
+      "venue": "上野恩賜公園",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "中之郷公園の盆踊り（名称推定）",
+      "venue": "中之郷公園（中之郷児童遊園）",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "中原共和町会 戸越八幡神社祭礼 盆踊り",
+      "venue": "平塚中央公園",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "丸の内de盆踊り",
+      "venue": "行幸通り",
+      "families": [
+        "historical_reference"
+      ],
+      "fields": [
+        "historical_display_tier",
+        "historical_last_seen_dates",
+        "historical_last_seen_year",
+        "historical_reference",
+        "historical_reference_confidence",
+        "historical_reference_label",
+        "historical_reference_score"
+      ],
+      "field_count": 7,
+      "recommended_resolution": "regenerate_exact_via_historical_reference_postprocess",
+      "exact_field_count": 7,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "亀沢1、2丁目合同 牛嶋神社 奉納踊り",
+      "venue": "緑町公園",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "京橋盆踊り",
+      "venue": "京橋エドグラン 京橋中央ひろば",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "六本木ヒルズ盆踊り",
+      "venue": "六本木ヒルズアリーナ",
+      "families": [
+        "historical_reference"
+      ],
+      "fields": [
+        "historical_display_tier",
+        "historical_last_seen_dates",
+        "historical_last_seen_year",
+        "historical_reference",
+        "historical_reference_confidence",
+        "historical_reference_label",
+        "historical_reference_score"
+      ],
+      "field_count": 7,
+      "recommended_resolution": "regenerate_exact_via_historical_reference_postprocess",
+      "exact_field_count": 7,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "六本木天祖神社（龍土神明宮）例大祭 盆踊り",
+      "venue": "六本木天祖神社",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "品川区民まつり 八潮地区",
+      "venue": "八潮公園",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "品川区民まつり 品川第二地区",
+      "venue": "城南小学校",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "品川区民まつり 大崎第一地区",
+      "venue": "第一日野小学校",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "品川区民まつり 大崎第一地区",
+      "venue": "第四日野小学校",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "品川区民まつり 荏原第一地区",
+      "venue": "小山台小学校",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "品川区民まつり 荏原第三地区",
+      "venue": "京陽小学校",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "品川区民まつり 荏原第四地区",
+      "venue": "上神明小学校",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "品川第二地区 区民まつり・品川青年会 盆踊り大会（天妙国寺）",
+      "venue": "天妙国寺",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "増上寺 地蔵尊盆踊り大会",
+      "venue": "増上寺（大殿前広場）",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "大井蔵王権現神社の盆踊り（名称推定）",
+      "venue": "大井蔵王権現神社",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "大銀座盆踊り",
+      "venue": "中央通り（銀座1丁目〜8丁目）",
+      "families": [
+        "historical_reference"
+      ],
+      "fields": [
+        "historical_display_tier",
+        "historical_last_seen_dates",
+        "historical_last_seen_year",
+        "historical_reference",
+        "historical_reference_confidence",
+        "historical_reference_label",
+        "historical_reference_score"
+      ],
+      "field_count": 7,
+      "recommended_resolution": "regenerate_exact_via_historical_reference_postprocess",
+      "exact_field_count": 7,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "小山台二丁目町会 戸越八幡神社例大祭 盆踊り",
+      "venue": "小山台公園",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "小梅一丁目町会・睦会 牛嶋神社祭礼 奉納踊り",
+      "venue": "小梅児童遊園",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "小網神社の盆踊り（名称推定）",
+      "venue": "小網神社",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "戸越八幡神社例大祭 盆踊り",
+      "venue": "戸越八幡神社",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "押上二町目町会 飛木稲荷神社神幸大祭 奉納おどり",
+      "venue": "押上二丁目町会会館前 路上",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "押上二町目町会 飛木稲荷神社神幸大祭 奉納おどり",
+      "venue": "飛木稲荷神社",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "新宿中央公園夏祭り 納涼盆踊り大会",
+      "venue": "新宿中央公園 ファンモアタイム広場",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "旗岡八幡神社例大祭",
+      "venue": "旗岡八幡神社",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "本四三ツ目児童遊園の盆踊り（名称推定）",
+      "venue": "本四三ツ目児童遊園（三つ目児童公園）",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "本所二丁目 牛嶋神社 奉納踊り",
+      "venue": "若宮公園",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "東本願寺盆踊り",
+      "venue": "東本願寺（浅草）",
+      "families": [
+        "historical_reference"
+      ],
+      "fields": [
+        "historical_display_tier",
+        "historical_last_seen_dates",
+        "historical_last_seen_year",
+        "historical_reference",
+        "historical_reference_confidence",
+        "historical_reference_label",
+        "historical_reference_score"
+      ],
+      "field_count": 7,
+      "recommended_resolution": "regenerate_exact_via_historical_reference_postprocess",
+      "exact_field_count": 7,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "根津神社 盆踊り（文京区）",
+      "venue": "根津神社",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "桜まつり",
+      "venue": "三田松坂児童遊園",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "森下二丁目盆踊り",
+      "venue": "森下公園",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "江東天祖神社の盆踊り（名称推定）",
+      "venue": "江東天祖神社（亀戸天祖神社）",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "浜二納涼盆踊り大会",
+      "venue": "浜町公園",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "海岸まつり",
+      "venue": "埠頭公園（港区芝浦港南）",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "濱町音頭盆踊り大会",
+      "venue": "浜町公園",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "牛嶋神社御祭礼 奉納踊り",
+      "venue": "日進公園",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "牛嶋神社祭礼 奉納踊り",
+      "venue": "牛嶋神社",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "盆☆Dance 夏休み最後の土曜は校庭で踊ろう！",
+      "venue": "横川小学校",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "盆ダンスフェスティバル2023",
+      "venue": "白金児童遊園",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "盆踊 〜BONDO〜",
+      "venue": "しながわ中央公園",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "第10回 すみだ輪おどり区民感謝デー",
+      "venue": "すみだ産業会館サンライズホール",
+      "families": [
+        "historical_reference"
+      ],
+      "fields": [
+        "historical_display_tier",
+        "historical_last_seen_dates",
+        "historical_last_seen_year",
+        "historical_reference",
+        "historical_reference_confidence",
+        "historical_reference_label",
+        "historical_reference_score"
+      ],
+      "field_count": 7,
+      "recommended_resolution": "regenerate_exact_via_historical_reference_postprocess",
+      "exact_field_count": 7,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "第15回 鴨台盆踊り",
+      "venue": "大正大学",
+      "families": [
+        "historical_reference"
+      ],
+      "fields": [
+        "historical_display_tier",
+        "historical_last_seen_dates",
+        "historical_last_seen_year",
+        "historical_reference",
+        "historical_reference_confidence",
+        "historical_reference_label",
+        "historical_reference_score"
+      ],
+      "field_count": 7,
+      "recommended_resolution": "regenerate_exact_via_historical_reference_postprocess",
+      "exact_field_count": 7,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "第28回新橋こいち祭 盆踊り",
+      "venue": "桜田公園",
+      "families": [
+        "historical_reference"
+      ],
+      "fields": [
+        "historical_display_tier",
+        "historical_last_seen_dates",
+        "historical_last_seen_year",
+        "historical_reference",
+        "historical_reference_confidence",
+        "historical_reference_label",
+        "historical_reference_score"
+      ],
+      "field_count": 7,
+      "recommended_resolution": "regenerate_exact_via_historical_reference_postprocess",
+      "exact_field_count": 7,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "第2回 辰巳で盆踊り",
+      "venue": "区立第二辰巳小学校",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "第2回田原de盆踊り",
+      "venue": "田原小学校",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "第3回 延七昇竜太鼓盆踊り大会",
+      "venue": "第二延山小学校",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "自由が丘納涼盆踊り大会",
+      "venue": "自由が丘駅前ロータリー 特設会場",
+      "families": [
+        "historical_reference"
+      ],
+      "fields": [
+        "historical_display_tier",
+        "historical_last_seen_dates",
+        "historical_last_seen_year",
+        "historical_reference",
+        "historical_reference_confidence",
+        "historical_reference_label",
+        "historical_reference_score"
+      ],
+      "field_count": 7,
+      "recommended_resolution": "regenerate_exact_via_historical_reference_postprocess",
+      "exact_field_count": 7,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "芝大神宮 大祭 奉納輪踊り",
+      "venue": "芝新堀町児童遊園",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "蒲田魅力向上委員会(蒲田西口商店街振興組合、蒲田西地区自治会連合会) 「蒲田国際フェスティバル2025 -世界が出会う下町フェス」",
+      "venue": "JR蒲田駅西口駅前広場(駅前会場)",
+      "families": [
+        "historical_reference"
+      ],
+      "fields": [
+        "historical_display_tier",
+        "historical_last_seen_dates",
+        "historical_last_seen_year",
+        "historical_reference",
+        "historical_reference_confidence",
+        "historical_reference_label",
+        "historical_reference_score"
+      ],
+      "field_count": 7,
+      "recommended_resolution": "regenerate_exact_via_historical_reference_postprocess",
+      "exact_field_count": 7,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "西久保八幡神社 盆踊り",
+      "venue": "西久保八幡神社",
+      "families": [
+        "historical_reference"
+      ],
+      "fields": [
+        "historical_display_tier",
+        "historical_last_seen_dates",
+        "historical_last_seen_year",
+        "historical_reference",
+        "historical_reference_confidence",
+        "historical_reference_label",
+        "historical_reference_score"
+      ],
+      "field_count": 7,
+      "recommended_resolution": "regenerate_exact_via_historical_reference_postprocess",
+      "exact_field_count": 7,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "謝恩納涼盆踊り大会（青山善光寺）",
+      "venue": "青山善光寺",
+      "families": [
+        "historical_reference"
+      ],
+      "fields": [
+        "historical_display_tier",
+        "historical_last_seen_dates",
+        "historical_last_seen_year",
+        "historical_reference",
+        "historical_reference_confidence",
+        "historical_reference_label",
+        "historical_reference_score"
+      ],
+      "field_count": 7,
+      "recommended_resolution": "regenerate_exact_via_historical_reference_postprocess",
+      "exact_field_count": 7,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "赤坂夏おどり（旧 赤坂盆踊り）",
+      "venue": "赤坂サカス広場",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "赤坂氷川祭 盆踊り大会",
+      "venue": "赤坂氷川神社",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "都の辰巳深川 臨海ぼんおどり",
+      "venue": "臨海小学校",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "錦糸一丁目 牛嶋神社 奉納踊り",
+      "venue": "大横川親水公園",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "飛鳥山公園盆踊り会（有志サークル）",
+      "venue": "飛鳥山公園",
+      "families": [
+        "historical_reference"
+      ],
+      "fields": [
+        "historical_display_tier",
+        "historical_last_seen_dates",
+        "historical_last_seen_year",
+        "historical_reference",
+        "historical_reference_confidence",
+        "historical_reference_label",
+        "historical_reference_score"
+      ],
+      "field_count": 7,
+      "recommended_resolution": "regenerate_exact_via_historical_reference_postprocess",
+      "exact_field_count": 7,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "飛鳥山夏祭り～お城で盆おどり大作戦～",
+      "venue": "飛鳥山公園",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "馬込地区自治会連合会、馬籠商店会連合睦会",
+      "venue": "馬込桜並木公園、馬込桜並木通り",
+      "families": [
+        "historical_reference"
+      ],
+      "fields": [
+        "historical_display_tier",
+        "historical_last_seen_dates",
+        "historical_last_seen_year",
+        "historical_reference",
+        "historical_reference_confidence",
+        "historical_reference_label",
+        "historical_reference_score"
+      ],
+      "field_count": 7,
+      "recommended_resolution": "regenerate_exact_via_historical_reference_postprocess",
+      "exact_field_count": 7,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "麻布十番納涼盆踊り大会",
+      "venue": "網代公園",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    },
+    {
+      "event_name": "麻布氷川神社例大祭 盆踊り",
+      "venue": "麻布氷川神社",
+      "families": [
+        "season_hint"
+      ],
+      "fields": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "field_count": 5,
+      "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+      "exact_field_count": 5,
+      "missing_or_different_fields": []
+    }
+  ]
+}

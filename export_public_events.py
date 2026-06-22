@@ -108,6 +108,11 @@ SIGNATURE_RE = re.compile(
 YOUTUBE_EVIDENCE_RE = re.compile(
     r"(?s)\n*\[youtube[^\]]*].*?(?=\n\[[a-z_]+]|\Z)",
 )
+FIXED_DATE_INTERNAL_NOTE_RE = re.compile(
+    r"(?s)\n*(?:\[fixed_date_rule]\s*)?"
+    r"(?:おと（Codex）|こと（Claude Code）)\s*固定日ルール記録"
+    r".*?(?=\n\[[a-z_]+]|\Z)",
+)
 URL_RE = re.compile(r"https?://[^\s）)」』】]+")
 PUBLIC_SOURCE_KEYS = (
     "公式確認URL",
@@ -286,6 +291,7 @@ def public_detail_text(text):
     if not text:
         return ""
     public = YOUTUBE_EVIDENCE_RE.sub("", text)
+    public = FIXED_DATE_INTERNAL_NOTE_RE.sub("", public)
     public = re.split(r"\s*追加証拠\s*", public, maxsplit=1)[0]
     public = re.sub(r"\[[A-Z]\d+\]\s*", "", public)
     public = re.sub(r"\[[a-z_]+\]\s*", "", public)
@@ -705,7 +711,6 @@ def build_public_events():
             raw_detail = clean_public_text(detail_text)
             detail = public_detail_text(raw_detail)
             source_urls = extract_public_source_urls(raw_detail)
-            fixed_date_rule = fixed_date_rule_from_props(props)
             songs = extract_song_hints(description, raw_detail)
             occurrence_year = int(date[:4]) if date else 2026
             occurrence = song_occurrences.get(
@@ -741,8 +746,6 @@ def build_public_events():
                 "detail": detail,
                 # 一般閲覧者に見せる公式・準公式の根拠URL。内部ログや動画列挙は公開しない。
                 "source_urls": source_urls,
-                # 固定日開催（例: 毎年8/1〜8/2）を機械的に翌年へ反映するための内部ルール。
-                "fixed_date_rule": fixed_date_rule,
                 # 会場で流れる/踊られる曲の候補。公開時は「曲目ヒント」として扱う。
                 "songs": songs,
             })
@@ -897,6 +900,7 @@ def strip_internal_public_fields(value):
         "video_urls",
         "source_count",
         "speaker_count",
+        "fixed_date_rule",
     }
     for key, item in value.items():
         if key in skip_keys:

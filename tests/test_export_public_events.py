@@ -90,6 +90,21 @@ class ExportPublicEventsTest(unittest.TestCase):
         self.assertNotIn("YouTube", public)
         self.assertNotIn("https://", public)
 
+    def test_public_detail_text_hides_internal_fixed_date_rule_note(self):
+        detail = "\n".join([
+            "毎年6/13〜15開催。曜日は年により変動",
+            "",
+            "[fixed_date_rule] おと（Codex）固定日ルール記録",
+            "- 固定日: 毎年6/13〜6/15",
+            "- 根拠: 公開データの詳細に明記",
+        ])
+
+        public = public_detail_text(detail)
+
+        self.assertEqual(public, "毎年6/13〜15開催。曜日は年により変動")
+        self.assertNotIn("おと（Codex）", public)
+        self.assertNotIn("固定日ルール記録", public)
+
     def test_sanitize_public_event_details_hides_existing_internal_evidence(self):
         rows = sanitize_public_event_details([{
             "name": "郡上おどり in 青山 2026",
@@ -116,6 +131,30 @@ class ExportPublicEventsTest(unittest.TestCase):
             "basis": "current_hint",
             "basis_label": "今年ヒント",
         })
+
+    def test_sanitize_public_event_details_hides_fixed_date_rule_field(self):
+        rows = sanitize_public_event_details([{
+            "name": "花園神社 盆踊り",
+            "name_confirmed": True,
+            "venue": "花園神社",
+            "area": "新宿区",
+            "months": [8],
+            "hints": [],
+            "jun": {},
+            "detail": "毎年8月1日・2日開催。",
+            "source_urls": [],
+            "songs": [],
+            "fixed_date_rule": {
+                "rule_type": "fixed_date_range",
+                "month": 8,
+                "day": 1,
+                "end_month": 8,
+                "end_day": 2,
+                "basis": "内部ルール",
+            },
+        }])
+
+        self.assertNotIn("fixed_date_rule", rows[0])
 
 
     def test_extract_public_source_urls_keeps_official_urls_not_video_urls(self):

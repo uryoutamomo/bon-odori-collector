@@ -121,6 +121,16 @@ def apply_predictions(events, predictions):
             })
             clear_public_prediction_fields(event)
             continue
+        if public.get("confidence") == "low":
+            skipped.append({
+                "event_name": event.get("name"),
+                "venue": event.get("venue"),
+                "reason": "low_confidence_public_prediction",
+                "date": event.get("date"),
+                "date_prediction": public,
+            })
+            clear_public_prediction_fields(event)
+            continue
         attach_public_prediction_fields(event, public)
         applied.append({
             "event_name": event.get("name"),

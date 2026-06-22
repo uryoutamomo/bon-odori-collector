@@ -1,0 +1,160 @@
+{
+  "generated_by": "sync_master_to_notion.py",
+  "generated_at": "2026-06-21T06:56:19.724747+00:00",
+  "mode": "dry_run",
+  "apply_performed": false,
+  "sources": {
+    "master_db": "/tmp/ph2_apply_test.sqlite",
+    "notion_snapshot_db": "data/notion_snapshot.sqlite"
+  },
+  "options": {
+    "target_table": "event_occurrences",
+    "job_id": "",
+    "requested_by": "dry_run_ph2_event_occurrence_apply.py",
+    "include_dry_run_jobs": false
+  },
+  "summary": {
+    "selected_jobs": 1,
+    "ready_jobs": 1,
+    "skipped_jobs": 0,
+    "applied_jobs": 0,
+    "jobs_by_direction": {
+      "rdb_to_notion": 1
+    },
+    "jobs_by_target_table": {
+      "event_occurrences": 1
+    },
+    "issues_by_severity": {}
+  },
+  "applied_job_ids": [],
+  "updates": [
+    {
+      "job": {
+        "job_id": "nsj_9f1e9140663ba631",
+        "direction": "rdb_to_notion",
+        "target_table": "event_occurrences",
+        "target_id": "occ_35fcf0374711a3bd",
+        "notion_source_key": "events",
+        "notion_page_id": "37b8be04-e762-817f-aa8c-e3b49df8d530",
+        "status": "pending",
+        "requested_by": "dry_run_ph2_event_occurrence_apply.py",
+        "requested_at": "2026-06-21T06:56:10.284434+00:00",
+        "payload_json": null
+      },
+      "payload": {
+        "action": "set_confirmed_2026_date",
+        "confirmed_overwrite_allowed": false,
+        "direction": "rdb_to_notion",
+        "fields": {
+          "会場": "小山台小学校",
+          "情報源URL": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
+          "状態": "確認済み",
+          "開催日": "2026-10-10"
+        },
+        "target_table": "event_occurrences"
+      },
+      "target": {
+        "notion_page_id": "37b8be04-e762-817f-aa8c-e3b49df8d530",
+        "occurrence_id": "occ_35fcf0374711a3bd",
+        "event_name": "品川区民まつり 荏原第一地区",
+        "venue_id": "ven_3ea0097dcf20379d",
+        "venue_name": "小山台小学校",
+        "venue_notion_page_id": "3718be04-e762-815c-9681-e985b9e2fc4d",
+        "date_start": "2026-10-10",
+        "date_end": "",
+        "date_status": "confirmed",
+        "source_url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html"
+      },
+      "current_notion_snapshot": {
+        "page_id": "37b8be04-e762-817f-aa8c-e3b49df8d530",
+        "event_name": "品川区民まつり 荏原第一地区",
+        "start_date": "",
+        "end_date": "",
+        "status": "未確認",
+        "source_url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
+        "last_edited_time": "2026-06-10T13:12:00.000Z",
+        "venue_ids": [
+          "3718be04-e762-815c-9681-e985b9e2fc4d"
+        ],
+        "venue_names": [
+          "小山台小学校"
+        ]
+      },
+      "proposed_notion_values": {
+        "start_date": "2026-10-10",
+        "end_date": "",
+        "status": "確認済み",
+        "source_url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
+        "venue_ids": [
+          "3718be04-e762-815c-9681-e985b9e2fc4d"
+        ],
+        "venue_names": [
+          "小山台小学校"
+        ]
+      },
+      "field_diffs": [
+        {
+          "field": "開催日",
+          "current": "",
+          "proposed": "2026-10-10",
+          "changed": true
+        },
+        {
+          "field": "終了日",
+          "current": "",
+          "proposed": "",
+          "changed": false
+        },
+        {
+          "field": "状態",
+          "current": "未確認",
+          "proposed": "確認済み",
+          "changed": true
+        },
+        {
+          "field": "情報源URL",
+          "current": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
+          "proposed": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
+          "changed": false
+        },
+        {
+          "field": "会場",
+          "current": "小山台小学校",
+          "proposed": "小山台小学校",
+          "changed": false
+        },
+        {
+          "field": "会場ページID",
+          "current": "3718be04-e762-815c-9681-e985b9e2fc4d",
+          "proposed": "3718be04-e762-815c-9681-e985b9e2fc4d",
+          "changed": false
+        }
+      ],
+      "properties": {
+        "開催日": {
+          "date": {
+            "start": "2026-10-10"
+          }
+        },
+        "状態": {
+          "select": {
+            "name": "確認済み"
+          }
+        },
+        "情報源URL": {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html"
+        },
+        "会場": {
+          "relation": [
+            {
+              "id": "3718be04-e762-815c-9681-e985b9e2fc4d"
+            }
+          ]
+        }
+      },
+      "issues": [],
+      "skip_reason": ""
+    }
+  ],
+  "issues": []
+}

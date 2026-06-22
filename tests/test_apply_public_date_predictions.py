@@ -70,6 +70,31 @@ class ApplyPublicDatePredictionsTest(unittest.TestCase):
         self.assertNotIn("display_tier", result["events"][0])
         self.assertNotIn("predicted_date", result["events"][0])
 
+    def test_apply_predictions_skips_low_confidence_public_prediction(self):
+        events = [{
+            "name": "赤坂浄土寺盆踊り大会",
+            "venue": "浄土寺",
+            "date": "2025-07-24",
+            "date_prediction": {"date": "old"},
+            "display_tier": "rule_predicted",
+            "predicted_date": "old",
+            "predicted_date_end": "old",
+            "prediction_basis": "old",
+            "prediction_confidence": "low",
+            "prediction_evidence_years": [2024],
+        }]
+        low = prediction_row("赤坂浄土寺盆踊り大会", "浄土寺")
+        low["prediction"]["confidence"] = "low"
+
+        result = apply_predictions(events, {"predictions": [low]})
+
+        self.assertEqual(result["report"]["applied_count"], 0)
+        self.assertEqual(result["report"]["skipped_count"], 1)
+        self.assertEqual(result["report"]["skipped"][0]["reason"], "low_confidence_public_prediction")
+        self.assertNotIn("date_prediction", result["events"][0])
+        self.assertNotIn("display_tier", result["events"][0])
+        self.assertNotIn("predicted_date", result["events"][0])
+
     def test_apply_predictions_reports_unmatched(self):
         result = apply_predictions([], {"predictions": [prediction_row()]})
 

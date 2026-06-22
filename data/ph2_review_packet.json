@@ -1,0 +1,1178 @@
+{
+  "generated_by": "build_ph2_review_packet.py",
+  "generated_at": "2026-06-22T01:22:49.528009+00:00",
+  "scope": "local_review_packet_no_writes",
+  "sources": {
+    "apply_plan": "data/ph2_event_occurrence_apply_plan.json",
+    "cutover": "data/ph2_cutover_readiness.json",
+    "public_diff_classification": "data/public_events_diff_classification.json",
+    "public_restore_breakdown": "data/public_restore_candidate_breakdown.json",
+    "public_sync_guard": "data/public_events_sync_guard.json",
+    "song_collapse_analysis": "data/song_occurrence_collapse_analysis.json",
+    "public_individual_priority": "data/public_individual_review_priority.json"
+  },
+  "worktree": {
+    "changed_file_count": 117,
+    "bucket_counts": {
+      "A_scripts_review": 1,
+      "B_ph2_review_reports": 18,
+      "C_review_queue_evidence": 7,
+      "D_generated_master_rdb_artifacts": 12,
+      "E_public_export_dry_run_artifacts": 4,
+      "F_public_output_modified_do_not_wholesale_deploy": 5,
+      "G_youtube_song_master_side_changes": 3,
+      "H_repo_housekeeping": 1,
+      "Z_other": 66
+    },
+    "buckets": {
+      "A_scripts_review": [
+        "?? audit_master_rdb.py"
+      ],
+      "B_ph2_review_reports": [
+        " M data/ph2_cutover_readiness.json",
+        " M data/ph2_cutover_readiness.md",
+        "?? data/ph2_event_occurrence_apply_plan.json",
+        "?? data/ph2_event_occurrence_apply_plan.md",
+        "?? data/ph2_review_packet.json",
+        "?? data/ph2_review_packet.md",
+        "?? data/pre_cutover_p0_apply_plan.json",
+        "?? data/pre_cutover_p0_apply_plan.md",
+        "?? data/public_events_diff_classification.json",
+        "?? data/public_events_diff_classification.md",
+        "?? data/public_events_sync_guard.json",
+        "?? data/public_events_sync_guard.md",
+        "?? data/public_individual_review_priority.json",
+        "?? data/public_individual_review_priority.md",
+        "?? data/public_restore_candidate_breakdown.json",
+        "?? data/public_restore_candidate_breakdown.md",
+        "?? data/song_occurrence_collapse_analysis.json",
+        "?? data/song_occurrence_collapse_analysis.md"
+      ],
+      "C_review_queue_evidence": [
+        "A  data/historical_promotion_candidates.json",
+        "A  data/historical_promotion_candidates.md",
+        "A  data/observed_promotion_candidates.json",
+        "A  data/observed_promotion_candidates.md",
+        "A  data/registered_event_investigation_queue.json",
+        "A  data/registered_event_investigation_queue.md",
+        "?? data/pre_cutover_p0_research.md"
+      ],
+      "D_generated_master_rdb_artifacts": [
+        "?? data/master_rdb_event_song_occurrences_public.dry_run.json",
+        "?? data/master_rdb_event_song_occurrences_public.production_preview.json",
+        "?? data/master_rdb_ph1_freeze_release_proposal.json",
+        "?? data/master_rdb_ph1_freeze_release_proposal.md",
+        "?? data/master_rdb_public_dry_run/event_songs_public.json",
+        "?? data/master_rdb_public_dry_run/events_public.js",
+        "?? data/master_rdb_public_dry_run/events_public.json",
+        "?? data/master_rdb_public_dry_run/public_date_prediction_apply_result.json",
+        "?? data/master_rdb_public_production_preview/event_songs_public.json",
+        "?? data/master_rdb_public_production_preview/events_public.js",
+        "?? data/master_rdb_public_production_preview/events_public.json",
+        "?? data/master_rdb_public_production_preview/public_date_prediction_apply_result.json"
+      ],
+      "E_public_export_dry_run_artifacts": [
+        "?? data/current_public_dry_run/event_songs_public.json",
+        "?? data/current_public_dry_run/events_public.js",
+        "?? data/current_public_dry_run/events_public.json",
+        "?? data/current_public_dry_run/public_date_prediction_apply_result.json"
+      ],
+      "F_public_output_modified_do_not_wholesale_deploy": [
+        " M data/public/event_songs_public.json",
+        " M data/public/events_public.js",
+        " M data/public/events_public.json",
+        " M data/public/venues_geo.json",
+        " M data/public/venues_public.json"
+      ],
+      "G_youtube_song_master_side_changes": [
+        " M build_youtube_song_master.py",
+        " M data/youtube_song_master.json",
+        " M data/youtube_song_master_review.md"
+      ],
+      "H_repo_housekeeping": [
+        " M .gitignore"
+      ],
+      "Z_other": [
+        " M apply_public_date_predictions.py",
+        " M data/public_date_prediction_apply_result.json",
+        " M export_public_events.py",
+        " M tests/test_apply_public_date_predictions.py",
+        " M tests/test_export_public_events.py",
+        "?? data/ph2_ebara_fifth_apply_idempotency.json",
+        "?? data/ph2_ebara_fifth_apply_idempotency.md",
+        "?? data/ph2_ebara_fifth_apply_report.json",
+        "?? data/ph2_ebara_fifth_apply_report.md",
+        "?? data/ph2_ebara_fifth_copy_apply_report.json",
+        "?? data/ph2_ebara_fifth_copy_apply_report.md",
+        "?? data/ph2_ebara_fifth_public_preview.json",
+        "?? data/ph2_ebara_fifth_public_preview.md",
+        "?? data/ph2_ebara_fifth_public_preview/events_public.js",
+        "?? data/ph2_ebara_fifth_public_preview/events_public.json",
+        "?? data/ph2_ebara_fifth_public_preview/venues_geo.json",
+        "?? data/ph2_ebara_fifth_public_preview/venues_public.json",
+        "?? data/ph2_ebara_fifth_public_preview_guard.json",
+        "?? data/ph2_ebara_fifth_public_preview_guard.md",
+        "?? data/ph2_ebara_fifth_venue_plan.json",
+        "?? data/ph2_ebara_fifth_venue_plan.md",
+        "?? data/ph2_event_occurrence_apply_plan_shinagawa_second_test.json",
+        "?? data/ph2_event_occurrence_apply_plan_shinagawa_second_test.md",
+        "?? data/ph2_event_occurrence_review_decisions.json",
+        "?? data/ph2_historical_reference_apply_ginza_kyobashi.json",
+        "?? data/ph2_historical_reference_apply_ginza_kyobashi.md",
+        "?? \"data/ph2_historical_reference_apply_\\343\\202\\220\\343\\201\\256\\345\\270\\202\\347\\233\\206\\350\\270\\212\\343\\202\\212\\357\\275\\236\\344\\270\\215\\345\\277\\215\\345\\244\\242\\357\\275\\236.json\"",
+        "?? \"data/ph2_historical_reference_apply_\\343\\202\\220\\343\\201\\256\\345\\270\\202\\347\\233\\206\\350\\270\\212\\343\\202\\212\\357\\275\\236\\344\\270\\215\\345\\277\\215\\345\\244\\242\\357\\275\\236.md\"",
+        "?? \"data/ph2_historical_reference_apply_\\344\\272\\254\\346\\251\\213\\347\\233\\206\\350\\270\\212\\343\\202\\212.json\"",
+        "?? \"data/ph2_historical_reference_apply_\\344\\272\\254\\346\\251\\213\\347\\233\\206\\350\\270\\212\\343\\202\\212.md\"",
+        "?? \"data/ph2_historical_reference_apply_\\346\\226\\260\\345\\256\\277\\344\\270\\255\\345\\244\\256\\345\\205\\254\\345\\234\\222\\345\\244\\217\\347\\245\\255\\343\\202\\212 \\347\\264\\215\\346\\266\\274\\347\\233\\206\\350\\270\\212\\343\\202\\212\\345\\244\\247\\344\\274\\232.json\"",
+        "?? \"data/ph2_historical_reference_apply_\\346\\226\\260\\345\\256\\277\\344\\270\\255\\345\\244\\256\\345\\205\\254\\345\\234\\222\\345\\244\\217\\347\\245\\255\\343\\202\\212 \\347\\264\\215\\346\\266\\274\\347\\233\\206\\350\\270\\212\\343\\202\\212\\345\\244\\247\\344\\274\\232.md\"",
+        "?? \"data/ph2_historical_reference_apply_\\346\\243\\256\\344\\270\\213\\344\\272\\214\\344\\270\\201\\347\\233\\256\\347\\233\\206\\350\\270\\212\\343\\202\\212.json\"",
+        "?? \"data/ph2_historical_reference_apply_\\346\\243\\256\\344\\270\\213\\344\\272\\214\\344\\270\\201\\347\\233\\256\\347\\233\\206\\350\\270\\212\\343\\202\\212.md\"",
+        "?? \"data/ph2_historical_reference_apply_\\346\\277\\261\\347\\224\\272\\351\\237\\263\\351\\240\\255\\347\\233\\206\\350\\270\\212\\343\\202\\212\\345\\244\\247\\344\\274\\232.json\"",
+        "?? \"data/ph2_historical_reference_apply_\\346\\277\\261\\347\\224\\272\\351\\237\\263\\351\\240\\255\\347\\233\\206\\350\\270\\212\\343\\202\\212\\345\\244\\247\\344\\274\\232.md\"",
+        "?? \"data/ph2_historical_reference_apply_\\350\\265\\244\\345\\235\\202\\345\\244\\217\\343\\201\\212\\343\\201\\251\\343\\202\\212\\357\\274\\210\\346\\227\\247 \\350\\265\\244\\345\\235\\202\\347\\233\\206\\350\\270\\212\\343\\202\\212\\357\\274\\211.json\"",
+        "?? \"data/ph2_historical_reference_apply_\\350\\265\\244\\345\\235\\202\\345\\244\\217\\343\\201\\212\\343\\201\\251\\343\\202\\212\\357\\274\\210\\346\\227\\247 \\350\\265\\244\\345\\235\\202\\347\\233\\206\\350\\270\\212\\343\\202\\212\\357\\274\\211.md\"",
+        "?? \"data/ph2_historical_reference_apply_\\351\\203\\275\\343\\201\\256\\350\\276\\260\\345\\267\\263\\346\\267\\261\\345\\267\\235 \\350\\207\\250\\346\\265\\267\\343\\201\\274\\343\\202\\223\\343\\201\\212\\343\\201\\251\\343\\202\\212.json\"",
+        "?? \"data/ph2_historical_reference_apply_\\351\\203\\275\\343\\201\\256\\350\\276\\260\\345\\267\\263\\346\\267\\261\\345\\267\\235 \\350\\207\\250\\346\\265\\267\\343\\201\\274\\343\\202\\223\\343\\201\\212\\343\\201\\251\\343\\202\\212.md\"",
+        "?? data/ph2_master_to_notion_sync_dry_run.json",
+        "?? data/ph2_master_to_notion_sync_dry_run.md",
+        "?? data/ph2_master_to_notion_sync_tmp_apply_db_dry_run.json",
+        "?? data/ph2_master_to_notion_sync_tmp_apply_db_dry_run.md",
+        "?? data/ph2_shinagawa_second_apply_dry_run_report.json",
+        "?? data/ph2_shinagawa_second_apply_dry_run_report.md",
+        "?? data/ph2_shinagawa_second_apply_report.json",
+        "?? data/ph2_shinagawa_second_apply_report.md",
+        "?? data/ph2_shinagawa_second_notion_sync_apply.json",
+        "?? data/ph2_shinagawa_second_notion_sync_apply.md",
+        "?? data/ph2_shinagawa_second_notion_sync_dry_run.json",
+        "?? data/ph2_shinagawa_second_notion_sync_dry_run.md",
+        "?? data/ph2_shinagawa_second_notion_sync_pre_apply.json",
+        "?? data/ph2_shinagawa_second_notion_sync_pre_apply.md",
+        "?? data/ph2_shinagawa_second_post_apply_dry_run_report.json",
+        "?? data/ph2_shinagawa_second_post_apply_dry_run_report.md",
+        "?? data/ph2_shinagawa_second_venue_notion_sync_apply.json",
+        "?? data/ph2_shinagawa_second_venue_notion_sync_apply.md",
+        "?? data/ph2_shinagawa_second_venue_notion_sync_pre_apply.json",
+        "?? data/ph2_shinagawa_second_venue_notion_sync_pre_apply.md",
+        "?? data/ph2_shinagawa_second_venue_review.json",
+        "?? data/ph2_shinagawa_second_venue_review.md",
+        "?? data/ph2_shinagawa_second_venue_review_sync_job.json",
+        "?? data/ph2_shinagawa_second_venue_review_sync_job.md",
+        "?? data/ph2_shinagawa_second_venue_review_tmp_apply.json",
+        "?? data/ph2_shinagawa_second_venue_review_tmp_apply.md"
+      ]
+    },
+    "recommended_review_order": [
+      "A_scripts_review",
+      "A_design_doc_review",
+      "B_ph2_review_reports",
+      "C_review_queue_evidence",
+      "F_public_output_modified_do_not_wholesale_deploy",
+      "G_youtube_song_master_side_changes",
+      "D_generated_master_rdb_artifacts",
+      "E_public_export_dry_run_artifacts",
+      "H_repo_housekeeping"
+    ]
+  },
+  "venue_review": {
+    "row_count": 11,
+    "by_decision_bucket": {
+      "alias_candidate": 3,
+      "new_or_missing_venue_review": 1,
+      "possible_alias_review": 2,
+      "same_venue_confirmed": 5
+    },
+    "rows": [
+      {
+        "event_name": "濱町音頭盆踊り大会",
+        "purpose": "historical_reference_only",
+        "proposed_venue": "浜町公園中央広場",
+        "current_venue": "浜町公園",
+        "lookup_status": "missing_in_master",
+        "top_suggestion": {
+          "venue_id": "ven_995ac6aca5a8b2f9",
+          "canonical_name": "浜町公園",
+          "normalized_name": "浜町公園",
+          "area": "中央区",
+          "address": "東京都中央区日本橋浜町2丁目59",
+          "matched_by": "canonical",
+          "matched_alias": "",
+          "match_score": 0.92
+        },
+        "decision_bucket": "alias_candidate",
+        "review_flags": [],
+        "notes": "Useful 2025 evidence; do not copy as a 2026 date."
+      },
+      {
+        "event_name": "赤坂夏おどり（旧 赤坂盆踊り）",
+        "purpose": "historical_reference_only",
+        "proposed_venue": "TBS赤坂サカス広場",
+        "current_venue": "赤坂サカス広場",
+        "lookup_status": "missing_in_master",
+        "top_suggestion": {
+          "venue_id": "ven_2b922b1146373c1f",
+          "canonical_name": "赤坂サカス広場",
+          "normalized_name": "赤坂サカス広場",
+          "area": "港区",
+          "address": "港区赤坂5-3-6",
+          "matched_by": "canonical",
+          "matched_alias": "",
+          "match_score": 0.92
+        },
+        "decision_bucket": "alias_candidate",
+        "review_flags": [],
+        "notes": "Historical reference only."
+      },
+      {
+        "event_name": "都の辰巳深川 臨海ぼんおどり",
+        "purpose": "historical_reference_only",
+        "proposed_venue": "臨海小学校校庭",
+        "current_venue": "臨海小学校",
+        "lookup_status": "missing_in_master",
+        "top_suggestion": {
+          "venue_id": "ven_6775cd4bd6512581",
+          "canonical_name": "臨海小学校",
+          "normalized_name": "臨海小学校",
+          "area": "江東区",
+          "address": "東京都江東区門前仲町一丁目1番6号",
+          "matched_by": "canonical",
+          "matched_alias": "",
+          "match_score": 0.92
+        },
+        "decision_bucket": "alias_candidate",
+        "review_flags": [],
+        "notes": "2026 latest page did not expose this row in the previous pass."
+      },
+      {
+        "event_name": "銀座一丁目東町会・新富町会 納涼盆踊り大会",
+        "purpose": "historical_reference_only",
+        "proposed_venue": "京橋プラザ",
+        "current_venue": "",
+        "lookup_status": "missing_in_master",
+        "top_suggestion": {},
+        "decision_bucket": "new_or_missing_venue_review",
+        "review_flags": [],
+        "notes": "Observed evidence is useful, but source row needs review before apply."
+      },
+      {
+        "event_name": "京橋盆踊り",
+        "purpose": "historical_reference_only",
+        "proposed_venue": "京橋中央ひろば（ガレリア）",
+        "current_venue": "京橋エドグラン 京橋中央ひろば",
+        "lookup_status": "missing_in_master",
+        "top_suggestion": {
+          "venue_id": "ven_ecda7549cbef1f85",
+          "canonical_name": "京橋エドグラン 京橋中央ひろば",
+          "normalized_name": "京橋エドグラン京橋中央ひろば",
+          "area": "中央区",
+          "address": "中央区京橋2-2-1",
+          "matched_by": "canonical",
+          "matched_alias": "",
+          "match_score": 0.56
+        },
+        "decision_bucket": "possible_alias_review",
+        "review_flags": [],
+        "notes": "Historical reference only; source describes an ended event."
+      },
+      {
+        "event_name": "新宿中央公園夏祭り 納涼盆踊り大会",
+        "purpose": "historical_reference_only",
+        "proposed_venue": "新宿中央公園 ファンモアタイムひろば",
+        "current_venue": "新宿中央公園 ファンモアタイム広場",
+        "lookup_status": "missing_in_master",
+        "top_suggestion": {
+          "venue_id": "ven_9913801458cc7397",
+          "canonical_name": "新宿中央公園 ファンモアタイム広場",
+          "normalized_name": "新宿中央公園ファンモアタイム広場",
+          "area": "新宿区",
+          "address": "新宿区西新宿2-11",
+          "matched_by": "canonical",
+          "matched_alias": "",
+          "match_score": 0.848
+        },
+        "decision_bucket": "possible_alias_review",
+        "review_flags": [],
+        "notes": "Historical reference only."
+      },
+      {
+        "event_name": "品川区民まつり 品川第二地区",
+        "purpose": "current_2026_official_update",
+        "proposed_venue": "天妙国寺境内",
+        "current_venue": "天妙国寺",
+        "lookup_status": "exact_match",
+        "top_suggestion": {},
+        "decision_bucket": "same_venue_confirmed",
+        "review_flags": [],
+        "notes": "Official 2026 page has a child-corner slot at 城南小学校体育館 and the bon-odori slot at 天妙国寺境内. Do not overwrite blindly; either correct the existing venue or split occurrences."
+      },
+      {
+        "event_name": "品川区民まつり 荏原第一地区",
+        "purpose": "current_2026_official_update",
+        "proposed_venue": "小山台小学校",
+        "current_venue": "小山台小学校",
+        "lookup_status": "exact_match",
+        "top_suggestion": {},
+        "decision_bucket": "same_venue_confirmed",
+        "review_flags": [],
+        "notes": "Single current-year official date/venue. Straightforward after the Ph2 write boundary is ready."
+      },
+      {
+        "event_name": "品川区民まつり 荏原第五地区",
+        "purpose": "current_2026_official_update",
+        "proposed_venue": "杜松ホーム",
+        "current_venue": "杜松ホーム",
+        "lookup_status": "exact_match",
+        "top_suggestion": {},
+        "decision_bucket": "same_venue_confirmed",
+        "review_flags": [],
+        "notes": "Current registered venue is 旧杜松小学校. Official 2026 page says 杜松ホーム, so preserve the venue-change rationale."
+      },
+      {
+        "event_name": "ゐの市盆踊り～不忍夢～",
+        "purpose": "historical_reference_only",
+        "proposed_venue": "上野恩賜公園",
+        "current_venue": "上野恩賜公園",
+        "lookup_status": "exact_match",
+        "top_suggestion": {},
+        "decision_bucket": "same_venue_confirmed",
+        "review_flags": [],
+        "notes": "Historical reference only."
+      },
+      {
+        "event_name": "森下二丁目盆踊り",
+        "purpose": "historical_reference_only",
+        "proposed_venue": "森下公園",
+        "current_venue": "森下公園",
+        "lookup_status": "exact_match",
+        "top_suggestion": {},
+        "decision_bucket": "same_venue_confirmed",
+        "review_flags": [],
+        "notes": "2026 latest page did not expose this row in the previous pass."
+      }
+    ]
+  },
+  "public_diff_review": {
+    "event_counts_match": true,
+    "collector_only_count": 0,
+    "site_only_count": 0,
+    "common_rows_with_diff": 0,
+    "high_risk_diff_counts": {},
+    "suggested_handling": {
+      "historical_reference": "classify before any site wholesale sync",
+      "historical_slide": "classify before any site wholesale sync",
+      "season_hint": "classify before any site wholesale sync",
+      "date_prediction": "review individually; only 2 examples currently",
+      "detail": "review individually; only 2 examples currently"
+    },
+    "examples": {}
+  },
+  "public_diff_classification": {
+    "available": true,
+    "summary": {
+      "collector_event_count": 182,
+      "site_event_count": 182,
+      "collector_only_count": 0,
+      "site_only_count": 0,
+      "high_risk_diff_record_count": 0,
+      "high_risk_event_count": 0,
+      "records_by_family": {},
+      "records_by_action": {},
+      "events_by_action": {}
+    },
+    "field_level_site_update_candidates": [],
+    "restore_examples": [],
+    "individual_review_examples": []
+  },
+  "public_restore_breakdown": {
+    "available": true,
+    "summary": {
+      "candidate_event_count": 76,
+      "by_resolution": {
+        "regenerate_exact_via_historical_reference_postprocess": 18,
+        "regenerate_exact_via_season_hint_postprocess": 58
+      },
+      "by_family_resolution": {
+        "historical_reference::regenerate_exact_via_historical_reference_postprocess": 18,
+        "season_hint::regenerate_exact_via_season_hint_postprocess": 58
+      },
+      "collector_restore_or_manual_review_count": 0,
+      "postprocess_exact_count": 76
+    },
+    "examples": [
+      {
+        "event_name": "-両国- 江戸NOREN 妖怪BON DANCE",
+        "venue": "-両国-江戸NOREN",
+        "families": [
+          "historical_reference"
+        ],
+        "fields": [
+          "historical_display_tier",
+          "historical_last_seen_dates",
+          "historical_last_seen_year",
+          "historical_reference",
+          "historical_reference_confidence",
+          "historical_reference_label",
+          "historical_reference_score"
+        ],
+        "field_count": 7,
+        "recommended_resolution": "regenerate_exact_via_historical_reference_postprocess",
+        "exact_field_count": 7,
+        "missing_or_different_fields": []
+      },
+      {
+        "event_name": "GMOシブヤエンタメ祭 × JAME盆踊り",
+        "venue": "宮下公園",
+        "families": [
+          "historical_reference"
+        ],
+        "fields": [
+          "historical_display_tier",
+          "historical_last_seen_dates",
+          "historical_last_seen_year",
+          "historical_reference",
+          "historical_reference_confidence",
+          "historical_reference_label",
+          "historical_reference_score"
+        ],
+        "field_count": 7,
+        "recommended_resolution": "regenerate_exact_via_historical_reference_postprocess",
+        "exact_field_count": 7,
+        "missing_or_different_fields": []
+      },
+      {
+        "event_name": "SHIBUYA MIYASHITA PARK BON DANCE",
+        "venue": "宮下公園",
+        "families": [
+          "season_hint"
+        ],
+        "fields": [
+          "season_confidence",
+          "season_hint",
+          "season_hint_label",
+          "season_jun",
+          "season_months"
+        ],
+        "field_count": 5,
+        "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+        "exact_field_count": 5,
+        "missing_or_different_fields": []
+      },
+      {
+        "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
+        "venue": "上野恩賜公園",
+        "families": [
+          "season_hint"
+        ],
+        "fields": [
+          "season_confidence",
+          "season_hint",
+          "season_hint_label",
+          "season_jun",
+          "season_months"
+        ],
+        "field_count": 5,
+        "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+        "exact_field_count": 5,
+        "missing_or_different_fields": []
+      },
+      {
+        "event_name": "しながわ運河まつり ステージプログラム",
+        "venue": "東品川海上公園",
+        "families": [
+          "season_hint"
+        ],
+        "fields": [
+          "season_confidence",
+          "season_hint",
+          "season_hint_label",
+          "season_jun",
+          "season_months"
+        ],
+        "field_count": 5,
+        "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+        "exact_field_count": 5,
+        "missing_or_different_fields": []
+      },
+      {
+        "event_name": "すみだ公園の盆踊り（名称推定）",
+        "venue": "すみだ公園（隅田公園・墨田区側）",
+        "families": [
+          "season_hint"
+        ],
+        "fields": [
+          "season_confidence",
+          "season_hint",
+          "season_hint_label",
+          "season_jun",
+          "season_months"
+        ],
+        "field_count": 5,
+        "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+        "exact_field_count": 5,
+        "missing_or_different_fields": []
+      },
+      {
+        "event_name": "ゐの市盆踊り～不忍夢～",
+        "venue": "上野恩賜公園",
+        "families": [
+          "season_hint"
+        ],
+        "fields": [
+          "season_confidence",
+          "season_hint",
+          "season_hint_label",
+          "season_jun",
+          "season_months"
+        ],
+        "field_count": 5,
+        "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+        "exact_field_count": 5,
+        "missing_or_different_fields": []
+      },
+      {
+        "event_name": "アークヒルズ秋祭り 盆踊り",
+        "venue": "アーク・カラヤン広場（アークヒルズ）",
+        "families": [
+          "season_hint"
+        ],
+        "fields": [
+          "season_confidence",
+          "season_hint",
+          "season_hint_label",
+          "season_jun",
+          "season_months"
+        ],
+        "field_count": 5,
+        "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+        "exact_field_count": 5,
+        "missing_or_different_fields": []
+      },
+      {
+        "event_name": "アースデイ東京2025 イマジン盆踊り部",
+        "venue": "代々木公園野外ステージ",
+        "families": [
+          "historical_reference"
+        ],
+        "fields": [
+          "historical_display_tier",
+          "historical_last_seen_dates",
+          "historical_last_seen_year",
+          "historical_reference",
+          "historical_reference_confidence",
+          "historical_reference_label",
+          "historical_reference_score"
+        ],
+        "field_count": 7,
+        "recommended_resolution": "regenerate_exact_via_historical_reference_postprocess",
+        "exact_field_count": 7,
+        "missing_or_different_fields": []
+      },
+      {
+        "event_name": "イベント名未確認（晴海ふ頭公園）",
+        "venue": "晴海ふ頭公園",
+        "families": [
+          "historical_reference"
+        ],
+        "fields": [
+          "historical_display_tier",
+          "historical_last_seen_dates",
+          "historical_last_seen_year",
+          "historical_reference",
+          "historical_reference_confidence",
+          "historical_reference_label",
+          "historical_reference_score"
+        ],
+        "field_count": 7,
+        "recommended_resolution": "regenerate_exact_via_historical_reference_postprocess",
+        "exact_field_count": 7,
+        "missing_or_different_fields": []
+      },
+      {
+        "event_name": "イベント名未確認（築地社会教育会館）",
+        "venue": "築地社会教育会館",
+        "families": [
+          "season_hint"
+        ],
+        "fields": [
+          "season_confidence",
+          "season_hint",
+          "season_hint_label",
+          "season_jun",
+          "season_months"
+        ],
+        "field_count": 5,
+        "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+        "exact_field_count": 5,
+        "missing_or_different_fields": []
+      },
+      {
+        "event_name": "シタマチ.ふるさと盆踊り大会",
+        "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+        "families": [
+          "historical_reference"
+        ],
+        "fields": [
+          "historical_display_tier",
+          "historical_last_seen_dates",
+          "historical_last_seen_year",
+          "historical_reference",
+          "historical_reference_confidence",
+          "historical_reference_label",
+          "historical_reference_score"
+        ],
+        "field_count": 7,
+        "recommended_resolution": "regenerate_exact_via_historical_reference_postprocess",
+        "exact_field_count": 7,
+        "missing_or_different_fields": []
+      },
+      {
+        "event_name": "上笄町会お祭り 盆踊り",
+        "venue": "長谷寺（西麻布・麻布大観音）",
+        "families": [
+          "season_hint"
+        ],
+        "fields": [
+          "season_confidence",
+          "season_hint",
+          "season_hint_label",
+          "season_jun",
+          "season_months"
+        ],
+        "field_count": 5,
+        "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+        "exact_field_count": 5,
+        "missing_or_different_fields": []
+      },
+      {
+        "event_name": "上野盆踊り会（厚澄会）",
+        "venue": "上野恩賜公園",
+        "families": [
+          "season_hint"
+        ],
+        "fields": [
+          "season_confidence",
+          "season_hint",
+          "season_hint_label",
+          "season_jun",
+          "season_months"
+        ],
+        "field_count": 5,
+        "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+        "exact_field_count": 5,
+        "missing_or_different_fields": []
+      },
+      {
+        "event_name": "中之郷公園の盆踊り（名称推定）",
+        "venue": "中之郷公園（中之郷児童遊園）",
+        "families": [
+          "season_hint"
+        ],
+        "fields": [
+          "season_confidence",
+          "season_hint",
+          "season_hint_label",
+          "season_jun",
+          "season_months"
+        ],
+        "field_count": 5,
+        "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+        "exact_field_count": 5,
+        "missing_or_different_fields": []
+      },
+      {
+        "event_name": "中原共和町会 戸越八幡神社祭礼 盆踊り",
+        "venue": "平塚中央公園",
+        "families": [
+          "season_hint"
+        ],
+        "fields": [
+          "season_confidence",
+          "season_hint",
+          "season_hint_label",
+          "season_jun",
+          "season_months"
+        ],
+        "field_count": 5,
+        "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+        "exact_field_count": 5,
+        "missing_or_different_fields": []
+      },
+      {
+        "event_name": "丸の内de盆踊り",
+        "venue": "行幸通り",
+        "families": [
+          "historical_reference"
+        ],
+        "fields": [
+          "historical_display_tier",
+          "historical_last_seen_dates",
+          "historical_last_seen_year",
+          "historical_reference",
+          "historical_reference_confidence",
+          "historical_reference_label",
+          "historical_reference_score"
+        ],
+        "field_count": 7,
+        "recommended_resolution": "regenerate_exact_via_historical_reference_postprocess",
+        "exact_field_count": 7,
+        "missing_or_different_fields": []
+      },
+      {
+        "event_name": "亀沢1、2丁目合同 牛嶋神社 奉納踊り",
+        "venue": "緑町公園",
+        "families": [
+          "season_hint"
+        ],
+        "fields": [
+          "season_confidence",
+          "season_hint",
+          "season_hint_label",
+          "season_jun",
+          "season_months"
+        ],
+        "field_count": 5,
+        "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+        "exact_field_count": 5,
+        "missing_or_different_fields": []
+      },
+      {
+        "event_name": "京橋盆踊り",
+        "venue": "京橋エドグラン 京橋中央ひろば",
+        "families": [
+          "season_hint"
+        ],
+        "fields": [
+          "season_confidence",
+          "season_hint",
+          "season_hint_label",
+          "season_jun",
+          "season_months"
+        ],
+        "field_count": 5,
+        "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+        "exact_field_count": 5,
+        "missing_or_different_fields": []
+      },
+      {
+        "event_name": "六本木ヒルズ盆踊り",
+        "venue": "六本木ヒルズアリーナ",
+        "families": [
+          "historical_reference"
+        ],
+        "fields": [
+          "historical_display_tier",
+          "historical_last_seen_dates",
+          "historical_last_seen_year",
+          "historical_reference",
+          "historical_reference_confidence",
+          "historical_reference_label",
+          "historical_reference_score"
+        ],
+        "field_count": 7,
+        "recommended_resolution": "regenerate_exact_via_historical_reference_postprocess",
+        "exact_field_count": 7,
+        "missing_or_different_fields": []
+      },
+      {
+        "event_name": "六本木天祖神社（龍土神明宮）例大祭 盆踊り",
+        "venue": "六本木天祖神社",
+        "families": [
+          "season_hint"
+        ],
+        "fields": [
+          "season_confidence",
+          "season_hint",
+          "season_hint_label",
+          "season_jun",
+          "season_months"
+        ],
+        "field_count": 5,
+        "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+        "exact_field_count": 5,
+        "missing_or_different_fields": []
+      },
+      {
+        "event_name": "品川区民まつり 八潮地区",
+        "venue": "八潮公園",
+        "families": [
+          "season_hint"
+        ],
+        "fields": [
+          "season_confidence",
+          "season_hint",
+          "season_hint_label",
+          "season_jun",
+          "season_months"
+        ],
+        "field_count": 5,
+        "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+        "exact_field_count": 5,
+        "missing_or_different_fields": []
+      },
+      {
+        "event_name": "品川区民まつり 品川第二地区",
+        "venue": "城南小学校",
+        "families": [
+          "season_hint"
+        ],
+        "fields": [
+          "season_confidence",
+          "season_hint",
+          "season_hint_label",
+          "season_jun",
+          "season_months"
+        ],
+        "field_count": 5,
+        "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+        "exact_field_count": 5,
+        "missing_or_different_fields": []
+      },
+      {
+        "event_name": "品川区民まつり 大崎第一地区",
+        "venue": "第一日野小学校",
+        "families": [
+          "season_hint"
+        ],
+        "fields": [
+          "season_confidence",
+          "season_hint",
+          "season_hint_label",
+          "season_jun",
+          "season_months"
+        ],
+        "field_count": 5,
+        "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+        "exact_field_count": 5,
+        "missing_or_different_fields": []
+      },
+      {
+        "event_name": "品川区民まつり 大崎第一地区",
+        "venue": "第四日野小学校",
+        "families": [
+          "season_hint"
+        ],
+        "fields": [
+          "season_confidence",
+          "season_hint",
+          "season_hint_label",
+          "season_jun",
+          "season_months"
+        ],
+        "field_count": 5,
+        "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+        "exact_field_count": 5,
+        "missing_or_different_fields": []
+      },
+      {
+        "event_name": "品川区民まつり 荏原第一地区",
+        "venue": "小山台小学校",
+        "families": [
+          "season_hint"
+        ],
+        "fields": [
+          "season_confidence",
+          "season_hint",
+          "season_hint_label",
+          "season_jun",
+          "season_months"
+        ],
+        "field_count": 5,
+        "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+        "exact_field_count": 5,
+        "missing_or_different_fields": []
+      },
+      {
+        "event_name": "品川区民まつり 荏原第三地区",
+        "venue": "京陽小学校",
+        "families": [
+          "season_hint"
+        ],
+        "fields": [
+          "season_confidence",
+          "season_hint",
+          "season_hint_label",
+          "season_jun",
+          "season_months"
+        ],
+        "field_count": 5,
+        "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+        "exact_field_count": 5,
+        "missing_or_different_fields": []
+      },
+      {
+        "event_name": "品川区民まつり 荏原第四地区",
+        "venue": "上神明小学校",
+        "families": [
+          "season_hint"
+        ],
+        "fields": [
+          "season_confidence",
+          "season_hint",
+          "season_hint_label",
+          "season_jun",
+          "season_months"
+        ],
+        "field_count": 5,
+        "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+        "exact_field_count": 5,
+        "missing_or_different_fields": []
+      },
+      {
+        "event_name": "品川第二地区 区民まつり・品川青年会 盆踊り大会（天妙国寺）",
+        "venue": "天妙国寺",
+        "families": [
+          "season_hint"
+        ],
+        "fields": [
+          "season_confidence",
+          "season_hint",
+          "season_hint_label",
+          "season_jun",
+          "season_months"
+        ],
+        "field_count": 5,
+        "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+        "exact_field_count": 5,
+        "missing_or_different_fields": []
+      },
+      {
+        "event_name": "増上寺 地蔵尊盆踊り大会",
+        "venue": "増上寺（大殿前広場）",
+        "families": [
+          "season_hint"
+        ],
+        "fields": [
+          "season_confidence",
+          "season_hint",
+          "season_hint_label",
+          "season_jun",
+          "season_months"
+        ],
+        "field_count": 5,
+        "recommended_resolution": "regenerate_exact_via_season_hint_postprocess",
+        "exact_field_count": 5,
+        "missing_or_different_fields": []
+      }
+    ]
+  },
+  "public_sync_guard": {
+    "available": true,
+    "decision": {
+      "status": "pass",
+      "failures": [],
+      "warnings": [],
+      "safe_to_wholesale_sync": true,
+      "safe_to_deploy_without_review": false,
+      "public_deploy_requires_separate_approval": true,
+      "deploy_approval_note": "Guard pass only means no blocking public sync diffs remain. Public deploy still requires separate operator approval."
+    },
+    "raw_classification": {
+      "collector_event_count": 182,
+      "site_event_count": 182,
+      "collector_only_count": 0,
+      "site_only_count": 0,
+      "high_risk_diff_record_count": 0,
+      "high_risk_event_count": 0,
+      "records_by_family": {},
+      "records_by_action": {},
+      "events_by_action": {}
+    },
+    "postprocessed_classification": {
+      "collector_event_count": 182,
+      "site_event_count": 182,
+      "collector_only_count": 0,
+      "site_only_count": 0,
+      "high_risk_diff_record_count": 5,
+      "high_risk_event_count": 1,
+      "records_by_family": {
+        "historical_reference": 2,
+        "historical_slide": 3
+      },
+      "records_by_action": {
+        "individual_review": 5
+      },
+      "events_by_action": {
+        "fixed_date_rule_basis_refresh": 1
+      }
+    },
+    "blocking_examples": []
+  },
+  "song_collapse_analysis": {
+    "available": true,
+    "summary": {
+      "duplicate_collapsed_id_count": 2,
+      "intentional_duplicate_collapse_count": 2,
+      "review_required_count": 0,
+      "missing_public_song_row_count": 2,
+      "missing_sqlite_observed_song_id_count": 2
+    },
+    "rows": [
+      {
+        "observed_occurrence_song_id": "obsocs_0d7e82b8fa6bbce3",
+        "decision": "intentional_duplicate_collapse",
+        "source_count": 2,
+        "expected_missing_count": 1,
+        "actual_missing_public_song_row_count": 1,
+        "occurrence_key_count": 1,
+        "role_count": 1,
+        "normalized_title_count": 1,
+        "normalized_title": "ダンシングヒーロー",
+        "source_titles": [
+          "ダンシングヒーロー",
+          "ダンシング・ヒーロー"
+        ],
+        "exported_titles": [
+          "ダンシングヒーロー"
+        ],
+        "event_name": "山王音頭と民踊大会",
+        "venue": "赤坂日枝神社",
+        "year": 2025,
+        "role": "result",
+        "source_rows": [
+          {
+            "occurrence_id": "38c7d2ba4835f386",
+            "event_name": "山王音頭と民踊大会",
+            "venue": "赤坂日枝神社",
+            "year": 2025,
+            "song_name": "ダンシングヒーロー",
+            "role": "result",
+            "basis": "current_observed"
+          },
+          {
+            "occurrence_id": "38c7d2ba4835f386",
+            "event_name": "山王音頭と民踊大会",
+            "venue": "赤坂日枝神社",
+            "year": 2025,
+            "song_name": "ダンシング・ヒーロー",
+            "role": "result",
+            "basis": "current_observed"
+          }
+        ],
+        "missing_public_song_rows": [
+          {
+            "count": 1,
+            "key": {
+              "occurrence": {
+                "occurrence_id": "38c7d2ba4835f386",
+                "event_name": "山王音頭と民踊大会",
+                "venue": "赤坂日枝神社",
+                "year": 2025
+              },
+              "song": {
+                "name": "ダンシング・ヒーロー",
+                "probability": 95,
+                "basis": "current_observed",
+                "basis_label": "今年実測",
+                "evidence_count": 1,
+                "speaker_count": 1,
+                "setlist_complete": true,
+                "prediction_reliability": [],
+                "evidence_urls": [
+                  "https://www.youtube.com/watch?v=0MgN9YSz_6o"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "observed_occurrence_song_id": "obsocs_8225dc5eb383b962",
+        "decision": "intentional_duplicate_collapse",
+        "source_count": 2,
+        "expected_missing_count": 1,
+        "actual_missing_public_song_row_count": 1,
+        "occurrence_key_count": 1,
+        "role_count": 1,
+        "normalized_title_count": 1,
+        "normalized_title": "かわいいだけじゃだめですか",
+        "source_titles": [
+          "かわいいだけじゃだめですか",
+          "かわいいだけじゃだめですか?"
+        ],
+        "exported_titles": [
+          "かわいいだけじゃだめですか"
+        ],
+        "event_name": "シタマチ.ふるさと盆踊り大会",
+        "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+        "year": 2025,
+        "role": "prediction",
+        "source_rows": [
+          {
+            "occurrence_id": "5e31739f03c1c9cb",
+            "event_name": "シタマチ.ふるさと盆踊り大会",
+            "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+            "year": 2025,
+            "song_name": "かわいいだけじゃだめですか",
+            "role": "prediction",
+            "basis": "current_hint"
+          },
+          {
+            "occurrence_id": "5e31739f03c1c9cb",
+            "event_name": "シタマチ.ふるさと盆踊り大会",
+            "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+            "year": 2025,
+            "song_name": "かわいいだけじゃだめですか?",
+            "role": "prediction",
+            "basis": "current_hint"
+          }
+        ],
+        "missing_public_song_rows": [
+          {
+            "count": 1,
+            "key": {
+              "occurrence": {
+                "occurrence_id": "5e31739f03c1c9cb",
+                "event_name": "シタマチ.ふるさと盆踊り大会",
+                "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+                "year": 2025
+              },
+              "song": {
+                "name": "かわいいだけじゃだめですか?",
+                "probability": 80,
+                "basis": "current_hint",
+                "basis_label": "今年ヒント",
+                "evidence_count": 1,
+                "speaker_count": 1,
+                "setlist_complete": false,
+                "prediction_reliability": [
+                  0.8
+                ],
+                "evidence_urls": []
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "public_individual_priority": {
+    "available": true,
+    "summary": {
+      "individual_review_event_count": 0,
+      "by_priority": {},
+      "by_bucket": {},
+      "p0_p1_event_count": 0
+    },
+    "top_rows": []
+  },
+  "koto_review_request": {
+    "reviewer": "こと（Claude Code）",
+    "from": "おと（Codex）",
+    "request": [
+      "Review scripts in A_scripts_review, especially dry_run_ph2_event_occurrence_apply.py safety gates.",
+      "Review whether venue_review alias candidates can be accepted or need separate venue records.",
+      "Review that only 品川区民まつり 荏原第一地区 is ready for actual DB apply before broader Ph2.",
+      "Use public_diff_classification before any events_public.json sync decision.",
+      "Use public_restore_candidate_breakdown: 76 restore candidates regenerate exactly via existing public post-processors.",
+      "Use public_events_sync_guard.py as a blocking pre-sync check; current status passes with 0 postprocessed individual-review diffs.",
+      "Treat the 2 missing public song rows as intentional duplicate collapse unless reviewer disagrees.",
+      "Review public_individual_review_priority first: P0/P1 is 0 raw-diff events; use public_sync_guard blocking examples for the smaller postprocessed set.",
+      "For public diffs: keep raw individual-review rows separate from postprocess-regenerated restore candidates."
+    ],
+    "do_not_do_without_uchida_go": [
+      "write to Notion",
+      "apply to data/bon_odori_master.sqlite",
+      "deploy public site",
+      "unfreeze legacy song occurrence generation"
+    ]
+  }
+}

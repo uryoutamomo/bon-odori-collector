@@ -1,0 +1,164 @@
+{
+  "generated_by": "おと（Codex）",
+  "generated_at": "2026-06-21T02:50:00+09:00",
+  "status": "proposal_only",
+  "scope": "Ph1 occurrence_songs public export release",
+  "summary": "Keep legacy song occurrence source generation frozen, but allow already-migrated public song export files to be staged by normal public export workflows.",
+  "keep_freeze_active": true,
+  "release_candidates": [
+    "data/public/event_song_occurrences_public.json",
+    "data/public/event_songs_public.json"
+  ],
+  "remain_frozen": [
+    "data/song_occurrences.json",
+    "data/song_prediction_snapshots.json",
+    "data/song_prediction_calibration.json"
+  ],
+  "required_workflow_changes": [
+    {
+      "file": ".github/workflows/collect.yml",
+      "change": "Continue skipping build_song_occurrences.py and calibrate_song_predictions.py while data/master_rdb_migration_freeze.json exists, but stage data/public/event_songs_public.json and data/public/event_song_occurrences_public.json even during the Ph1 release state."
+    },
+    {
+      "file": ".github/workflows/weekly_harvest.yml",
+      "change": "Same as collect.yml: keep legacy source generation frozen, but allow staging of the two migrated public song export files."
+    },
+    {
+      "file": "run_daily_youtube_backfill.py",
+      "change": "Keep commit/push guard active. Local backfill still calls build_song_occurrences.py, so it must not commit/push until Ph2 or a separate legacy-skip mode is implemented."
+    },
+    {
+      "file": "data/master_rdb_migration_freeze.json",
+      "change": "Do not delete the file. Add an explicit released_files/public_export_release section, and leave active=true for legacy source freeze."
+    }
+  ],
+  "recommended_freeze_schema": {
+    "field": "freeze_groups",
+    "preferred_over": "released_files",
+    "reason": "Group-based state records both what remains frozen and what has been released, including actions as well as files.",
+    "groups": {
+      "legacy_song_occurrence_generation": {
+        "active": true,
+        "files": [
+          "data/song_occurrences.json",
+          "data/song_prediction_snapshots.json",
+          "data/song_prediction_calibration.json"
+        ],
+        "actions": [
+          "build_song_occurrences.py",
+          "calibrate_song_predictions.py",
+          "run_daily_youtube_backfill.py --commit/--push"
+        ]
+      },
+      "ph1_public_song_export_files": {
+        "active": false,
+        "files": [
+          "data/public/event_song_occurrences_public.json",
+          "data/public/event_songs_public.json"
+        ],
+        "source_of_truth": "data/bon_odori_master.sqlite"
+      }
+    },
+    "default_policy": {
+      "unknown_group": "frozen",
+      "malformed_freeze_file": "frozen",
+      "only_explicit_active_false_is_released": true
+    }
+  },
+  "review_points": {
+    "a_workflow_steps": {
+      "restore_to_normal": [
+        "Stage data/public/event_songs_public.json",
+        "Stage data/public/event_song_occurrences_public.json"
+      ],
+      "keep_frozen": [
+        "build_song_occurrences.py",
+        "calibrate_song_predictions.py",
+        "data/song_occurrences.json",
+        "data/song_prediction_snapshots.json",
+        "data/song_prediction_calibration.json",
+        "run_daily_youtube_backfill.py --commit/--push"
+      ]
+    },
+    "b_sqlite_public_export_source": [
+      "data/public/event_song_occurrences_public.json is now SQLite-derived",
+      "export_public_events.py reads that file and emits public song hints",
+      "Actions must not regenerate it through build_song_occurrences.py"
+    ],
+    "c_freeze_granularity": [
+      "Use group-level freeze state",
+      "Unknown or malformed state is frozen",
+      "Only explicit active=false releases a group"
+    ],
+    "d_concurrency": "Keep bon-odori-master-rdb for writer workflows.",
+    "e_rollback": [
+      "Set ph1_public_song_export_files.active back to true",
+      "Stop staging the two public song export files",
+      "Revert public JSON files if needed",
+      "Revert bon-odori-site deploy commit a573473 if needed and rerun Deploy static site"
+    ]
+  },
+  "collector_site_events_public_divergence": {
+    "compared_at": "2026-06-21T02:50:00+09:00",
+    "collector_event_count": 182,
+    "site_event_count": 182,
+    "collector_only_event_count": 0,
+    "site_only_event_count": 0,
+    "changed_common_event_count": 181,
+    "major_categories": [
+      {
+        "category": "site_only_historical_reference_fields",
+        "count": 94
+      },
+      {
+        "category": "site_only_historical_slide_fields",
+        "count": 76
+      },
+      {
+        "category": "site_only_season_hint_fields",
+        "count": 59
+      },
+      {
+        "category": "collector_only_date_prediction",
+        "count": 2,
+        "examples": [
+          "歌舞伎町BON ODORI",
+          "赤坂浄土寺盆踊り大会"
+        ]
+      },
+      {
+        "category": "collector_fixed_date_rule_key",
+        "count": 181,
+        "note": "Mostly null keys absent from site output."
+      },
+      {
+        "category": "detail_text_diff",
+        "count": 2,
+        "examples": [
+          "山王音頭と民踊大会",
+          "花園神社 盆踊り"
+        ]
+      }
+    ],
+    "interpretation": "The divergence is mainly historical/season/date-prediction post-processing and fixed-date-rule exposure, not the Ph1 song occurrence migration. Do not deploy collector events_public wholesale to site until this is reconciled."
+  },
+  "release_conditions_checked": {
+    "master_db_diff_audit": "passed",
+    "shared_concurrency_group": "applied",
+    "local_backfill_ordering": "not_released; commit/push remains blocked",
+    "koto_review": "pending for this proposal",
+    "uchida_approval": "pending for this proposal"
+  },
+  "rationale": [
+    "Ph1 public outputs have been deployed and independently verified.",
+    "Re-enabling build_song_occurrences.py now could regenerate data/song_occurrences.json through the old JSON path and diverge from the SQLite source of truth.",
+    "Normal public event export should be able to commit event_songs_public.json after Notion-driven event changes, as long as its song occurrence input remains SQLite-derived.",
+    "The freeze file must remain present because current workflows use its existence to stop legacy source generation."
+  ],
+  "not_in_scope": [
+    "Re-enabling build_song_occurrences.py",
+    "Re-enabling calibrate_song_predictions.py",
+    "Allowing run_daily_youtube_backfill.py --commit/--push",
+    "Full Ph2 event/venue master migration"
+  ]
+}

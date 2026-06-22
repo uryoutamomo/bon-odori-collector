@@ -130,6 +130,26 @@ GENRE_OR_SYSTEM_TERMS = {
     "阿波おどり",
 }
 
+MANUAL_REJECT_SONG_NAMES = {
+    # 2026-06-20: public glossary screenshot review.
+    # These are setlist fragments, performers, program sections, or non-bon-odori songs
+    # that were promoted from one-off YouTube evidence.
+    "まとめ1",
+    "まとめ2",
+    "まとめ3",
+    "ムーンライトステーション",
+    "ムーンライト伝説",
+    "ラジオ体操",
+    "阿波踊り「和楽連",
+    "阿波踊り「和樂連",
+    "一般の部",
+    "子どもの部",
+    "千本櫻",
+    "浅草右近屋",
+    "浅草右近屋パフォーマンス",
+    "大人の部",
+}
+
 CANONICAL_FIXES = {
     **CANONICAL_MAP,
     "ダンシング・ヒーロー": "ダンシングヒーロー",
@@ -221,6 +241,8 @@ def canonical_name(value):
 def hard_reject_reason(name):
     if not name:
         return "空の曲名"
+    if name in MANUAL_REJECT_SONG_NAMES:
+        return "手動レビューで曲マスター除外"
     if name in NOISE_EXACT:
         return "既知の文章断片"
     if "おどりはだり" in name or "踊りはだり" in name:

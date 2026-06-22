@@ -1,0 +1,54 @@
+{
+  "generated_by": "guard_public_events_sync.py",
+  "generated_at": "2026-06-22T01:22:17.924924+00:00",
+  "scope": "read_only_public_sync_guard_no_writes",
+  "sources": {
+    "collector_events": "data/public/events_public.json",
+    "site_events": "/Users/ryotauchida/bon-odori-site/data/events_public.json",
+    "fixed_date_rules": "data/public_fixed_date_rules.json"
+  },
+  "parameters": {
+    "target_year": 2026,
+    "today": "2026-06-20",
+    "allow_individual_review": false
+  },
+  "decision": {
+    "status": "pass",
+    "failures": [],
+    "warnings": [],
+    "safe_to_wholesale_sync": true,
+    "safe_to_deploy_without_review": false,
+    "public_deploy_requires_separate_approval": true,
+    "deploy_approval_note": "Guard pass only means no blocking public sync diffs remain. Public deploy still requires separate operator approval."
+  },
+  "raw_classification": {
+    "collector_event_count": 182,
+    "site_event_count": 182,
+    "collector_only_count": 0,
+    "site_only_count": 0,
+    "high_risk_diff_record_count": 0,
+    "high_risk_event_count": 0,
+    "records_by_family": {},
+    "records_by_action": {},
+    "events_by_action": {}
+  },
+  "postprocessed_classification": {
+    "collector_event_count": 182,
+    "site_event_count": 182,
+    "collector_only_count": 0,
+    "site_only_count": 0,
+    "high_risk_diff_record_count": 5,
+    "high_risk_event_count": 1,
+    "records_by_family": {
+      "historical_reference": 2,
+      "historical_slide": 3
+    },
+    "records_by_action": {
+      "individual_review": 5
+    },
+    "events_by_action": {
+      "fixed_date_rule_basis_refresh": 1
+    }
+  },
+  "blocking_examples": []
+}

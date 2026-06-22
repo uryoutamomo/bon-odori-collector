@@ -1,0 +1,159 @@
+{
+  "generated_by": "build_ph2_ebara_fifth_public_preview.py",
+  "generated_at": "2026-06-21T15:13:03.020991+00:00",
+  "sources": {
+    "db": "data/bon_odori_master.sqlite",
+    "events": "data/public/events_public.json",
+    "venues": "data/public/venues_public.json",
+    "geo": "data/public/venues_geo.json"
+  },
+  "outputs": {
+    "dir": "data/ph2_ebara_fifth_public_preview",
+    "json": "data/ph2_ebara_fifth_public_preview.json",
+    "markdown": "data/ph2_ebara_fifth_public_preview.md"
+  },
+  "summary": {
+    "event_count_before": 182,
+    "event_count_after": 182,
+    "changed_event_count": 1,
+    "changed_fields_count": 0,
+    "venue_count_before": 176,
+    "venue_count_after": 176,
+    "venue_created": false,
+    "geo_count_before": 160,
+    "geo_count_after": 160,
+    "geo_created": false
+  },
+  "event_diff": {
+    "name": "品川区民まつり 荏原第五地区",
+    "changed_fields": [],
+    "before": {
+      "name": "品川区民まつり 荏原第五地区",
+      "name_confirmed": true,
+      "venue": "杜松ホーム",
+      "area": "品川区",
+      "months": [
+        7
+      ],
+      "scale": "中",
+      "access": "東急大井町線 戸越公園駅から徒歩約5分。都営浅草線 中延駅から徒歩約8分",
+      "address": "東京都品川区豊町4-24-15",
+      "lat": 35.605442,
+      "lng": 139.722931,
+      "date": "2026-07-18",
+      "date_end": "2026-07-19",
+      "status": "確認済み",
+      "date_confidence": {
+        "level": "confirmed",
+        "label": "確認済み",
+        "description": "開催日として確認済みです"
+      },
+      "date_candidates": [],
+      "hints": [],
+      "jun": {},
+      "description": "杜松ホームを会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
+      "detail": "2026年公式情報: 2026-07-18〜2026-07-19、会場 杜松ホーム（東京都品川区豊町4-24-15）。",
+      "source_urls": [
+        {
+          "label": "公式告知あり",
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
+          "kind": "official"
+        }
+      ],
+      "fixed_date_rule": null,
+      "songs": [],
+      "public_status": "upcoming_confirmed",
+      "public_category": "upcoming",
+      "public_status_label": "今後開催",
+      "public_note": "2026年日程確認済み: 2026-07-18〜2026-07-19",
+      "recurrence_label": "2026年確認済み",
+      "recurrence_score": 1.0,
+      "recurrence_reasons": [
+        "2026年日付確認済み"
+      ],
+      "recurrence_cautions": [],
+      "edition_number": null,
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "display_tier": "confirmed"
+    },
+    "after": {
+      "name": "品川区民まつり 荏原第五地区",
+      "name_confirmed": true,
+      "venue": "杜松ホーム",
+      "area": "品川区",
+      "months": [
+        7
+      ],
+      "scale": "中",
+      "access": "東急大井町線 戸越公園駅から徒歩約5分。都営浅草線 中延駅から徒歩約8分",
+      "address": "東京都品川区豊町4-24-15",
+      "lat": 35.605442,
+      "lng": 139.722931,
+      "date": "2026-07-18",
+      "date_end": "2026-07-19",
+      "status": "確認済み",
+      "date_confidence": {
+        "level": "confirmed",
+        "label": "確認済み",
+        "description": "開催日として確認済みです"
+      },
+      "date_candidates": [],
+      "hints": [],
+      "jun": {},
+      "description": "杜松ホームを会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
+      "detail": "2026年公式情報: 2026-07-18〜2026-07-19、会場 杜松ホーム（東京都品川区豊町4-24-15）。",
+      "source_urls": [
+        {
+          "label": "公式告知あり",
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
+          "kind": "official"
+        }
+      ],
+      "fixed_date_rule": null,
+      "songs": [],
+      "public_status": "upcoming_confirmed",
+      "public_category": "upcoming",
+      "public_status_label": "今後開催",
+      "public_note": "2026年日程確認済み: 2026-07-18〜2026-07-19",
+      "recurrence_label": "2026年確認済み",
+      "recurrence_score": 1.0,
+      "recurrence_reasons": [
+        "2026年日付確認済み"
+      ],
+      "recurrence_cautions": [],
+      "edition_number": null,
+      "last_seen_year": null,
+      "last_seen_dates": [],
+      "display_tier": "confirmed"
+    }
+  },
+  "venue_row": {
+    "name": "杜松ホーム",
+    "area": "品川区",
+    "months": [
+      7
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都品川区豊町4-24-15",
+    "description": "杜松ホームは、品川区民まつり荏原第五地区の会場。",
+    "lat": 35.605442,
+    "lng": 139.722931
+  },
+  "geo_row": {
+    "name": "杜松ホーム",
+    "area": "品川区",
+    "address": "東京都品川区豊町4-24-15",
+    "query": "東京都品川区豊町4-24-15",
+    "source": "GSI AddressSearch",
+    "lat": 35.605442,
+    "lon": 139.722931,
+    "matched_title": "東京都品川区豊町四丁目２４番１５号"
+  },
+  "guard": {
+    "wholesale_replacement": false,
+    "legacy_song_occurrence_regeneration": false,
+    "writes_data_public": false
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "generated_by": "dry_run_ph2_event_occurrence_apply.py",
+  "generated_at": "2026-06-21T16:14:37.209786+00:00",
+  "scope": "source_master_db_apply_no_notion_no_public_json",
+  "sources": {
+    "master_db": "data/bon_odori_master.sqlite",
+    "plan": "data/ph2_event_occurrence_apply_plan.json"
+  },
+  "outputs": {
+    "target_db": "data/bon_odori_master.sqlite",
+    "dry_run_db": "",
+    "backup_db": "data/backups/bon_odori_master.20260621T161437.209786+0000.sqlite.bak"
+  },
+  "options": {
+    "event_name": "赤坂夏おどり（旧 赤坂盆踊り）",
+    "include_blocked": false,
+    "mutation_type": "historical_reference",
+    "apply": true
+  },
+  "write_guard": {
+    "db_committed": true,
+    "rolled_back": false,
+    "rollback_reason": ""
+  },
+  "summary": {
+    "selected_count": 1,
+    "applied_count": 1,
+    "skipped_count": 13,
+    "issues_count": 0,
+    "issues_by_severity": {},
+    "dry_run_table_counts": {
+      "event_occurrences": 214,
+      "occurrence_dates": 136,
+      "notion_sync_jobs": 10,
+      "ph2_event_occurrence_sync_jobs": 2
+    }
+  },
+  "applied": [
+    {
+      "mutation_type": "append_historical_reference_without_confirming_2026",
+      "action": "append_historical_reference_without_confirming_2026",
+      "event_name": "赤坂夏おどり（旧 赤坂盆踊り）",
+      "occurrence_id": "occ_3fa70d14d361b2f3",
+      "notion_page_id": "37b8be04-e762-81c1-a5c3-e9eb05da647a",
+      "before": {
+        "occurrence_id": "occ_3fa70d14d361b2f3",
+        "series_id": "ser_315f17b13278cf22",
+        "series_name": "赤坂夏おどり（旧 赤坂盆踊り）",
+        "event_year": 2026,
+        "display_name": "赤坂夏おどり（旧 赤坂盆踊り）",
+        "venue_id": "ven_2b922b1146373c1f",
+        "venue_name": "赤坂サカス広場",
+        "date_start": "",
+        "date_end": "",
+        "date_status": "unknown",
+        "lifecycle_status": "未確認",
+        "confidence": "unknown",
+        "source_kind": "notion_events",
+        "source_url": "https://sacas.tokyoevent.net/natsuodori.html"
+      },
+      "after": {
+        "occurrence_id": "occ_3fa70d14d361b2f3",
+        "series_id": "ser_315f17b13278cf22",
+        "series_name": "赤坂夏おどり（旧 赤坂盆踊り）",
+        "event_year": 2026,
+        "display_name": "赤坂夏おどり（旧 赤坂盆踊り）",
+        "venue_id": "ven_2b922b1146373c1f",
+        "venue_name": "赤坂サカス広場",
+        "date_start": "",
+        "date_end": "",
+        "date_status": "unknown",
+        "lifecycle_status": "未確認",
+        "confidence": "unknown",
+        "source_kind": "notion_events",
+        "source_url": "https://sacas.tokyoevent.net/natsuodori.html"
+      },
+      "inserted_occurrence_date_id": "odate_2e11327e45ac481f",
+      "inserted_occurrence_date_type": "historical_reference",
+      "inserted_notion_sync_job_id": "",
+      "historical_reference": {
+        "year": 2025,
+        "date_start": "2025-08-29",
+        "date_end": "2025-08-30",
+        "venue_name": "TBS赤坂サカス広場",
+        "venue_lookup_status": "missing_in_master",
+        "venue_matches": [],
+        "venue_suggestions": [
+          {
+            "venue_id": "ven_2b922b1146373c1f",
+            "canonical_name": "赤坂サカス広場",
+            "normalized_name": "赤坂サカス広場",
+            "area": "港区",
+            "address": "港区赤坂5-3-6",
+            "matched_by": "canonical",
+            "matched_alias": "",
+            "match_score": 0.92
+          }
+        ],
+        "accepted_venue_id": "ven_2b922b1146373c1f",
+        "accepted_venue_name": "赤坂サカス広場",
+        "confidence": "medium",
+        "source_url": "https://sacas.tokyoevent.net/natsuodori.html"
+      }
+    }
+  ],
+  "skipped": [
+    {
+      "event_name": "濱町音頭盆踊り大会",
+      "reason": "event_filter"
+    },
+    {
+      "event_name": "銀座一丁目東町会・新富町会 納涼盆踊り大会",
+      "reason": "event_filter"
+    },
+    {
+      "event_name": "ゐの市盆踊り～不忍夢～",
+      "reason": "event_filter"
+    },
+    {
+      "event_name": "京橋盆踊り",
+      "reason": "event_filter"
+    },
+    {
+      "event_name": "品川区民まつり 品川第二地区",
+      "reason": "not_selected_mutation_type",
+      "mutation_type": "update_existing_2026_occurrence_from_current_official_source"
+    },
+    {
+      "event_name": "品川区民まつり 荏原第一地区",
+      "reason": "not_selected_mutation_type",
+      "mutation_type": "update_existing_2026_occurrence_from_current_official_source"
+    },
+    {
+      "event_name": "品川区民まつり 荏原第五地区",
+      "reason": "not_selected_mutation_type",
+      "mutation_type": "update_existing_2026_occurrence_from_current_official_source"
+    },
+    {
+      "event_name": "増上寺 地蔵尊盆踊り大会",
+      "reason": "not_selected_mutation_type",
+      "mutation_type": "keep_investigation_queue"
+    },
+    {
+      "event_name": "新宿中央公園夏祭り 納涼盆踊り大会",
+      "reason": "event_filter"
+    },
+    {
+      "event_name": "旗岡八幡神社例大祭",
+      "reason": "not_selected_mutation_type",
+      "mutation_type": "keep_investigation_queue"
+    },
+    {
+      "event_name": "森下二丁目盆踊り",
+      "reason": "event_filter"
+    },
+    {
+      "event_name": "盆☆Dance 夏休み最後の土曜は校庭で踊ろう！",
+      "reason": "not_selected_mutation_type",
+      "mutation_type": "keep_investigation_queue"
+    },
+    {
+      "event_name": "都の辰巳深川 臨海ぼんおどり",
+      "reason": "event_filter"
+    }
+  ],
+  "issues": []
+}

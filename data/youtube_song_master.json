@@ -1,19 +1,20 @@
 {
   "generated_by": "build_youtube_song_master.py",
-  "generated_at": "2026-06-20T10:09:46.705786+00:00",
+  "generated_at": "2026-06-20T11:39:13.092927+00:00",
   "source": "data/song_occurrences.json",
   "source_occurrence_count": 1856,
   "source_song_relation_count": 28107,
-  "song_count": 803,
-  "public_ready_count": 701,
+  "song_count": 789,
+  "public_ready_count": 687,
   "review_count": 102,
-  "rejected_song_row_count": 424,
+  "rejected_song_row_count": 480,
   "rejected_reasons": {
     "番号だけ": 78,
     "動画タイトル・会場名由来の断片": 46,
     "曲名として長すぎる": 10,
     "曲ではなく用語・動画見出し": 90,
-    "曲ではなく体系・総称": 200
+    "曲ではなく体系・総称": 200,
+    "手動レビューで曲マスター除外": 56
   },
   "rejected_samples": {
     "番号だけ": [
@@ -46,6 +47,15 @@
     "曲ではなく体系・総称": [
       "盆おどり",
       "阿波踊り"
+    ],
+    "手動レビューで曲マスター除外": [
+      "まとめ1",
+      "まとめ2",
+      "まとめ3",
+      "ムーンライトステーション",
+      "ムーンライト伝説",
+      "千本櫻",
+      "浅草右近屋パフォーマンス"
     ]
   },
   "songs": [
@@ -24166,53 +24176,6 @@
       ]
     },
     {
-      "song_name": "浅草右近屋パフォーマンス",
-      "aliases": [],
-      "evidence_count": 10,
-      "good_evidence_count": 10,
-      "years": [
-        2025
-      ],
-      "reliability_counts": {
-        "complete_numbered_video": 10
-      },
-      "source_counts": {
-        "youtube_setlist_occurrence": 10
-      },
-      "speaker_count": 1,
-      "occurrence_count": 10,
-      "evidence_url_count": 1,
-      "status": "有効",
-      "public_ready": true,
-      "review_reason": "",
-      "source_label": "YouTubeセットリスト",
-      "description": "盆踊り会場の曲目として確認されている曲です。",
-      "bon_usage_rank": "地域・会場固有",
-      "bon_usage_score": 57,
-      "song_genre_key": "needs_research",
-      "song_genre": "要調査",
-      "genre_confidence": "低",
-      "genre_basis": "曲名だけでは判定不能",
-      "genre_review_status": "要調査",
-      "sample_events": [
-        "「CHA-LA HEAD-CHA-LA」(影山ヒロノブ) 浅草夜祭・アキバ盆踊り8",
-        "「GetWild」(TM NETWORK) 浅草夜祭・アキバ盆踊り12",
-        "【X】(X JAPAN) 浅草夜祭・アキバ盆踊り14",
-        "【ライオン】LION(May'n・中島愛) 浅草夜祭・アキバ盆踊り10",
-        "【レッツゴー!陰陽師】 浅草夜祭・アキバ盆踊り6"
-      ],
-      "sample_venues": [
-        "「CHA-LA HEAD-CHA-LA」(影山ヒロノブ) 浅草夜祭・アキバ盆踊り8",
-        "「GetWild」(TM NETWORK) 浅草夜祭・アキバ盆踊り12",
-        "【X】(X JAPAN) 浅草夜祭・アキバ盆踊り14",
-        "【ライオン】LION(May'n・中島愛) 浅草夜祭・アキバ盆踊り10",
-        "【レッツゴー!陰陽師】 浅草夜祭・アキバ盆踊り6"
-      ],
-      "youtube_urls": [
-        "https://www.youtube.com/watch?v=rlDN073p178"
-      ]
-    },
-    {
       "song_name": "篠笛&三味線披露",
       "aliases": [],
       "evidence_count": 10,
@@ -25159,53 +25122,6 @@
       ],
       "youtube_urls": [
         "https://www.youtube.com/watch?v=EckL8cYl6u8"
-      ]
-    },
-    {
-      "song_name": "阿波踊り「和楽連",
-      "aliases": [],
-      "evidence_count": 9,
-      "good_evidence_count": 9,
-      "years": [
-        2025
-      ],
-      "reliability_counts": {
-        "complete_numbered_video": 9
-      },
-      "source_counts": {
-        "youtube_setlist_occurrence": 9
-      },
-      "speaker_count": 1,
-      "occurrence_count": 9,
-      "evidence_url_count": 1,
-      "status": "有効",
-      "public_ready": true,
-      "review_reason": "",
-      "source_label": "YouTubeセットリスト",
-      "description": "盆踊り会場の曲目として確認されている曲です。",
-      "bon_usage_rank": "地域・会場固有",
-      "bon_usage_score": 56,
-      "song_genre_key": "needs_research",
-      "song_genre": "要調査",
-      "genre_confidence": "低",
-      "genre_basis": "曲名だけでは判定不能",
-      "genre_review_status": "要調査",
-      "sample_events": [
-        "【EZ DO DANCE】(TRF) 2025年新宿住友ビル三角広場盆踊り8 「居酒屋盆踊り」 東京都新宿区 住友不動産",
-        "【LOVEマシーン】(モーニング娘。) 2025年新宿住友ビル三角広場盆踊り13 「居酒屋盆踊り」 東京都新宿区 住友不動産",
-        "【勝手にシンドバッド】(サザンオールスターズ) 2025年新宿住友ビル三角広場盆踊り14 「居酒屋盆踊り」 東京都新宿区 住友不動産",
-        "【盆ギリ恋歌】(SOUTHERN ALL STARS) 2025年新宿住友ビル三角広場盆踊り12 「居酒屋盆踊り」 東京都新宿区 住友不動産",
-        "ジャンボリミッキー 2025年新宿住友ビル三角広場盆踊り11 「居酒屋盆踊り」 東京都新宿区 住友不動産"
-      ],
-      "sample_venues": [
-        "【EZ DO DANCE】(TRF) 2025年新宿住友ビル三角広場盆踊り8 「居酒屋盆踊り」 東京都新宿区 住友不動産",
-        "【LOVEマシーン】(モーニング娘。) 2025年新宿住友ビル三角広場盆踊り13 「居酒屋盆踊り」 東京都新宿区 住友不動産",
-        "【勝手にシンドバッド】(サザンオールスターズ) 2025年新宿住友ビル三角広場盆踊り14 「居酒屋盆踊り」 東京都新宿区 住友不動産",
-        "【盆ギリ恋歌】(SOUTHERN ALL STARS) 2025年新宿住友ビル三角広場盆踊り12 「居酒屋盆踊り」 東京都新宿区 住友不動産",
-        "ジャンボリミッキー 2025年新宿住友ビル三角広場盆踊り11 「居酒屋盆踊り」 東京都新宿区 住友不動産"
-      ],
-      "youtube_urls": [
-        "https://www.youtube.com/watch?v=Re0N9HAr3fA"
       ]
     },
     {
@@ -28759,51 +28675,6 @@
       ]
     },
     {
-      "song_name": "まとめ1",
-      "aliases": [],
-      "evidence_count": 4,
-      "good_evidence_count": 4,
-      "years": [
-        2025
-      ],
-      "reliability_counts": {
-        "complete_numbered_video": 4
-      },
-      "source_counts": {
-        "youtube_setlist_occurrence": 4
-      },
-      "speaker_count": 1,
-      "occurrence_count": 4,
-      "evidence_url_count": 1,
-      "status": "有効",
-      "public_ready": true,
-      "review_reason": "",
-      "source_label": "YouTubeセットリスト",
-      "description": "盆踊り会場の曲目として確認されている曲です。",
-      "bon_usage_rank": "地域・会場固有",
-      "bon_usage_score": 50,
-      "song_genre_key": "needs_research",
-      "song_genre": "要調査",
-      "genre_confidence": "低",
-      "genre_basis": "曲名だけでは判定不能",
-      "genre_review_status": "要調査",
-      "sample_events": [
-        "【4K】きよしのズンドコ節(氷川きよし) バハマ・ママ 柏おどり 2025年中原ふれあい防災公園 春の盆踊り24 千葉県柏市",
-        "【4K】ダンシング・ヒーロー 2025年中原ふれあい防災公園 春の盆踊り23 千葉県柏市",
-        "【4K】京北音頭 さくら音頭 柏おどり 2025年中原ふれあい防災公園 春の盆踊り25 千葉県柏市",
-        "【4K】大東京音頭 バハマ・ママ ダンシング・ヒーロー 2025年中原ふれあい防災公園 春の盆踊り26終 千葉県柏市"
-      ],
-      "sample_venues": [
-        "【4K】きよしのズンドコ節(氷川きよし) バハマ・ママ 柏おどり 2025年中原ふれあい防災公園 春の盆踊り24 千葉県柏市",
-        "【4K】ダンシング・ヒーロー 2025年中原ふれあい防災公園 春の盆踊り23 千葉県柏市",
-        "【4K】京北音頭 さくら音頭 柏おどり 2025年中原ふれあい防災公園 春の盆踊り25 千葉県柏市",
-        "【4K】大東京音頭 バハマ・ママ ダンシング・ヒーロー 2025年中原ふれあい防災公園 春の盆踊り26終 千葉県柏市"
-      ],
-      "youtube_urls": [
-        "https://www.youtube.com/watch?v=oTJQrrSq8U8"
-      ]
-    },
-    {
       "song_name": "らんまん踊り",
       "aliases": [],
       "evidence_count": 4,
@@ -29701,92 +29572,6 @@
       ]
     },
     {
-      "song_name": "まとめ2",
-      "aliases": [],
-      "evidence_count": 3,
-      "good_evidence_count": 3,
-      "years": [
-        2025
-      ],
-      "reliability_counts": {
-        "complete_numbered_video": 3
-      },
-      "source_counts": {
-        "youtube_setlist_occurrence": 3
-      },
-      "speaker_count": 1,
-      "occurrence_count": 3,
-      "evidence_url_count": 1,
-      "status": "有効",
-      "public_ready": true,
-      "review_reason": "",
-      "source_label": "YouTubeセットリスト",
-      "description": "盆踊り会場の曲目として確認されている曲です。",
-      "bon_usage_rank": "地域・会場固有",
-      "bon_usage_score": 48,
-      "song_genre_key": "needs_research",
-      "song_genre": "要調査",
-      "genre_confidence": "低",
-      "genre_basis": "曲名だけでは判定不能",
-      "genre_review_status": "要調査",
-      "sample_events": [
-        "【4K】きよしのズンドコ節(氷川きよし) バハマ・ママ 柏おどり 2025年中原ふれあい防災公園 春の盆踊り24 千葉県柏市",
-        "【4K】京北音頭 さくら音頭 柏おどり 2025年中原ふれあい防災公園 春の盆踊り25 千葉県柏市",
-        "【4K】大東京音頭 バハマ・ママ ダンシング・ヒーロー 2025年中原ふれあい防災公園 春の盆踊り26終 千葉県柏市"
-      ],
-      "sample_venues": [
-        "【4K】きよしのズンドコ節(氷川きよし) バハマ・ママ 柏おどり 2025年中原ふれあい防災公園 春の盆踊り24 千葉県柏市",
-        "【4K】京北音頭 さくら音頭 柏おどり 2025年中原ふれあい防災公園 春の盆踊り25 千葉県柏市",
-        "【4K】大東京音頭 バハマ・ママ ダンシング・ヒーロー 2025年中原ふれあい防災公園 春の盆踊り26終 千葉県柏市"
-      ],
-      "youtube_urls": [
-        "https://www.youtube.com/watch?v=SuGsOS6hQ_c"
-      ]
-    },
-    {
-      "song_name": "まとめ3",
-      "aliases": [],
-      "evidence_count": 3,
-      "good_evidence_count": 3,
-      "years": [
-        2025
-      ],
-      "reliability_counts": {
-        "complete_numbered_video": 3
-      },
-      "source_counts": {
-        "youtube_setlist_occurrence": 3
-      },
-      "speaker_count": 1,
-      "occurrence_count": 3,
-      "evidence_url_count": 1,
-      "status": "有効",
-      "public_ready": true,
-      "review_reason": "",
-      "source_label": "YouTubeセットリスト",
-      "description": "盆踊り会場の曲目として確認されている曲です。",
-      "bon_usage_rank": "地域・会場固有",
-      "bon_usage_score": 48,
-      "song_genre_key": "needs_research",
-      "song_genre": "要調査",
-      "genre_confidence": "低",
-      "genre_basis": "曲名だけでは判定不能",
-      "genre_review_status": "要調査",
-      "sample_events": [
-        "【4K】きよしのズンドコ節(氷川きよし) バハマ・ママ 柏おどり 2025年中原ふれあい防災公園 春の盆踊り24 千葉県柏市",
-        "【4K】京北音頭 さくら音頭 柏おどり 2025年中原ふれあい防災公園 春の盆踊り25 千葉県柏市",
-        "【4K】大東京音頭 バハマ・ママ ダンシング・ヒーロー 2025年中原ふれあい防災公園 春の盆踊り26終 千葉県柏市"
-      ],
-      "sample_venues": [
-        "【4K】きよしのズンドコ節(氷川きよし) バハマ・ママ 柏おどり 2025年中原ふれあい防災公園 春の盆踊り24 千葉県柏市",
-        "【4K】京北音頭 さくら音頭 柏おどり 2025年中原ふれあい防災公園 春の盆踊り25 千葉県柏市",
-        "【4K】大東京音頭 バハマ・ママ ダンシング・ヒーロー 2025年中原ふれあい防災公園 春の盆踊り26終 千葉県柏市"
-      ],
-      "youtube_urls": [
-        "https://www.youtube.com/watch?v=x1usREM0st0"
-      ]
-    },
-    {
       "song_name": "やなぎブギ",
       "aliases": [],
       "evidence_count": 3,
@@ -29966,135 +29751,6 @@
       ]
     },
     {
-      "song_name": "ムーンライトステーション",
-      "aliases": [],
-      "evidence_count": 3,
-      "good_evidence_count": 3,
-      "years": [
-        2025
-      ],
-      "reliability_counts": {
-        "complete_numbered_video": 3
-      },
-      "source_counts": {
-        "youtube_setlist_occurrence": 3
-      },
-      "speaker_count": 1,
-      "occurrence_count": 3,
-      "evidence_url_count": 1,
-      "status": "有効",
-      "public_ready": true,
-      "review_reason": "",
-      "source_label": "YouTubeセットリスト",
-      "description": "盆踊り会場の曲目として確認されている曲です。",
-      "bon_usage_rank": "地域・会場固有",
-      "bon_usage_score": 48,
-      "song_genre_key": "needs_research",
-      "song_genre": "要調査",
-      "genre_confidence": "低",
-      "genre_basis": "曲名だけでは判定不能",
-      "genre_review_status": "要調査",
-      "sample_events": [
-        "【4K】ultra soul(B'z) 2025年中野通り桜まつり3終 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園",
-        "【4K】「さくら」(ケツメイシ) 2025年中野通り桜まつり1 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園",
-        "【4K】【和楽・千本櫻】(杵家七三社中with佳館杏ノ助) 2025年中野通り桜まつり2 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園"
-      ],
-      "sample_venues": [
-        "【4K】ultra soul(B'z) 2025年中野通り桜まつり3終 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園",
-        "【4K】「さくら」(ケツメイシ) 2025年中野通り桜まつり1 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園",
-        "【4K】【和楽・千本櫻】(杵家七三社中with佳館杏ノ助) 2025年中野通り桜まつり2 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園"
-      ],
-      "youtube_urls": [
-        "https://www.youtube.com/watch?v=UBWK1tbACVg"
-      ]
-    },
-    {
-      "song_name": "ムーンライト伝説",
-      "aliases": [],
-      "evidence_count": 3,
-      "good_evidence_count": 3,
-      "years": [
-        2025
-      ],
-      "reliability_counts": {
-        "complete_numbered_video": 3
-      },
-      "source_counts": {
-        "youtube_setlist_occurrence": 3
-      },
-      "speaker_count": 1,
-      "occurrence_count": 3,
-      "evidence_url_count": 1,
-      "status": "有効",
-      "public_ready": true,
-      "review_reason": "",
-      "source_label": "YouTubeセットリスト",
-      "description": "盆踊り会場の曲目として確認されている曲です。",
-      "bon_usage_rank": "地域・会場固有",
-      "bon_usage_score": 48,
-      "song_genre_key": "needs_research",
-      "song_genre": "要調査",
-      "genre_confidence": "低",
-      "genre_basis": "曲名だけでは判定不能",
-      "genre_review_status": "要調査",
-      "sample_events": [
-        "【4K】ultra soul(B'z) 2025年中野通り桜まつり3終 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園",
-        "【4K】「さくら」(ケツメイシ) 2025年中野通り桜まつり1 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園",
-        "【4K】【和楽・千本櫻】(杵家七三社中with佳館杏ノ助) 2025年中野通り桜まつり2 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園"
-      ],
-      "sample_venues": [
-        "【4K】ultra soul(B'z) 2025年中野通り桜まつり3終 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園",
-        "【4K】「さくら」(ケツメイシ) 2025年中野通り桜まつり1 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園",
-        "【4K】【和楽・千本櫻】(杵家七三社中with佳館杏ノ助) 2025年中野通り桜まつり2 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園"
-      ],
-      "youtube_urls": [
-        "https://www.youtube.com/watch?v=H7c7zY1KLbk"
-      ]
-    },
-    {
-      "song_name": "ラジオ体操",
-      "aliases": [],
-      "evidence_count": 3,
-      "good_evidence_count": 3,
-      "years": [
-        2025
-      ],
-      "reliability_counts": {
-        "complete_numbered_video": 3
-      },
-      "source_counts": {
-        "youtube_setlist_occurrence": 3
-      },
-      "speaker_count": 1,
-      "occurrence_count": 3,
-      "evidence_url_count": 1,
-      "status": "有効",
-      "public_ready": true,
-      "review_reason": "",
-      "source_label": "YouTubeセットリスト",
-      "description": "盆踊り会場の曲目として確認されている曲です。",
-      "bon_usage_rank": "地域・会場固有",
-      "bon_usage_score": 48,
-      "song_genre_key": "needs_research",
-      "song_genre": "要調査",
-      "genre_confidence": "低",
-      "genre_basis": "曲名だけでは判定不能",
-      "genre_review_status": "要調査",
-      "sample_events": [
-        "【メガヒッツ盆踊り(メガ盆)】珍盤亭娯楽師匠 大和町八幡神社大盆踊り会2025年",
-        "ラジオ体操第一 大和町八幡神社大盆踊り会2025年",
-        "大和町八幡神社大盆踊り会2025年 中西レモン&にゃんとこ・ぽん「珍芸漫芸」"
-      ],
-      "sample_venues": [
-        "【メガヒッツ盆踊り(メガ盆)】珍盤亭娯楽師匠 大和町八幡神社大盆踊り会2025年",
-        "ラジオ体操第一 大和町八幡神社大盆踊り会2025年",
-        "大和町八幡神社大盆踊り会2025年 中西レモン&にゃんとこ・ぽん「珍芸漫芸」"
-      ],
-      "youtube_urls": [
-        "https://www.youtube.com/watch?v=LhB3fp0mFbk"
-      ]
-    },
-    {
       "song_name": "ワイド節",
       "aliases": [],
       "evidence_count": 3,
@@ -30137,49 +29793,6 @@
       "youtube_urls": [
         "https://www.youtube.com/watch?v=JhqWGM8YFgk",
         "https://www.youtube.com/watch?v=BfxIbU1zPn8"
-      ]
-    },
-    {
-      "song_name": "一般の部",
-      "aliases": [],
-      "evidence_count": 3,
-      "good_evidence_count": 3,
-      "years": [
-        2025
-      ],
-      "reliability_counts": {
-        "complete_numbered_video": 3
-      },
-      "source_counts": {
-        "youtube_setlist_occurrence": 3
-      },
-      "speaker_count": 1,
-      "occurrence_count": 3,
-      "evidence_url_count": 1,
-      "status": "有効",
-      "public_ready": true,
-      "review_reason": "",
-      "source_label": "YouTubeセットリスト",
-      "description": "盆踊り会場の曲目として確認されている曲です。",
-      "bon_usage_rank": "地域・会場固有",
-      "bon_usage_score": 48,
-      "song_genre_key": "needs_research",
-      "song_genre": "要調査",
-      "genre_confidence": "低",
-      "genre_basis": "曲名だけでは判定不能",
-      "genre_review_status": "要調査",
-      "sample_events": [
-        "相馬盆唄 生歌生演奏(子供の部・仮装の部) 2025年相馬盆踊り1 福島県相馬市",
-        "相馬盆唄(大人の部)生歌生演奏 2025年相馬盆踊り2 福島県相馬市 有吉ゼミ 玉ノ井部屋",
-        "相馬盆踊り(一般飛び入り参加) 2025年相馬盆踊り3終 相馬盆唄 福島県相馬市"
-      ],
-      "sample_venues": [
-        "相馬盆唄 生歌生演奏(子供の部・仮装の部) 2025年相馬盆踊り1 福島県相馬市",
-        "相馬盆唄(大人の部)生歌生演奏 2025年相馬盆踊り2 福島県相馬市 有吉ゼミ 玉ノ井部屋",
-        "相馬盆踊り(一般飛び入り参加) 2025年相馬盆踊り3終 相馬盆唄 福島県相馬市"
-      ],
-      "youtube_urls": [
-        "https://www.youtube.com/watch?v=M3V-o4HijEc"
       ]
     },
     {
@@ -30400,92 +30013,6 @@
       "youtube_urls": []
     },
     {
-      "song_name": "千本櫻",
-      "aliases": [],
-      "evidence_count": 3,
-      "good_evidence_count": 3,
-      "years": [
-        2025
-      ],
-      "reliability_counts": {
-        "complete_numbered_video": 3
-      },
-      "source_counts": {
-        "youtube_setlist_occurrence": 3
-      },
-      "speaker_count": 1,
-      "occurrence_count": 3,
-      "evidence_url_count": 1,
-      "status": "有効",
-      "public_ready": true,
-      "review_reason": "",
-      "source_label": "YouTubeセットリスト",
-      "description": "盆踊り会場の曲目として確認されている曲です。",
-      "bon_usage_rank": "地域・会場固有",
-      "bon_usage_score": 48,
-      "song_genre_key": "needs_research",
-      "song_genre": "要調査",
-      "genre_confidence": "低",
-      "genre_basis": "曲名だけでは判定不能",
-      "genre_review_status": "要調査",
-      "sample_events": [
-        "【4K】ultra soul(B'z) 2025年中野通り桜まつり3終 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園",
-        "【4K】「さくら」(ケツメイシ) 2025年中野通り桜まつり1 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園",
-        "【4K】【和楽・千本櫻】(杵家七三社中with佳館杏ノ助) 2025年中野通り桜まつり2 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園"
-      ],
-      "sample_venues": [
-        "【4K】ultra soul(B'z) 2025年中野通り桜まつり3終 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園",
-        "【4K】「さくら」(ケツメイシ) 2025年中野通り桜まつり1 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園",
-        "【4K】【和楽・千本櫻】(杵家七三社中with佳館杏ノ助) 2025年中野通り桜まつり2 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園"
-      ],
-      "youtube_urls": [
-        "https://www.youtube.com/watch?v=DaxoPQIlPxE"
-      ]
-    },
-    {
-      "song_name": "大人の部",
-      "aliases": [],
-      "evidence_count": 3,
-      "good_evidence_count": 3,
-      "years": [
-        2025
-      ],
-      "reliability_counts": {
-        "complete_numbered_video": 3
-      },
-      "source_counts": {
-        "youtube_setlist_occurrence": 3
-      },
-      "speaker_count": 1,
-      "occurrence_count": 3,
-      "evidence_url_count": 1,
-      "status": "有効",
-      "public_ready": true,
-      "review_reason": "",
-      "source_label": "YouTubeセットリスト",
-      "description": "盆踊り会場の曲目として確認されている曲です。",
-      "bon_usage_rank": "地域・会場固有",
-      "bon_usage_score": 48,
-      "song_genre_key": "needs_research",
-      "song_genre": "要調査",
-      "genre_confidence": "低",
-      "genre_basis": "曲名だけでは判定不能",
-      "genre_review_status": "要調査",
-      "sample_events": [
-        "相馬盆唄 生歌生演奏(子供の部・仮装の部) 2025年相馬盆踊り1 福島県相馬市",
-        "相馬盆唄(大人の部)生歌生演奏 2025年相馬盆踊り2 福島県相馬市 有吉ゼミ 玉ノ井部屋",
-        "相馬盆踊り(一般飛び入り参加) 2025年相馬盆踊り3終 相馬盆唄 福島県相馬市"
-      ],
-      "sample_venues": [
-        "相馬盆唄 生歌生演奏(子供の部・仮装の部) 2025年相馬盆踊り1 福島県相馬市",
-        "相馬盆唄(大人の部)生歌生演奏 2025年相馬盆踊り2 福島県相馬市 有吉ゼミ 玉ノ井部屋",
-        "相馬盆踊り(一般飛び入り参加) 2025年相馬盆踊り3終 相馬盆唄 福島県相馬市"
-      ],
-      "youtube_urls": [
-        "https://www.youtube.com/watch?v=MzWk8Zpdjr8"
-      ]
-    },
-    {
       "song_name": "妖怪盆踊り",
       "aliases": [],
       "evidence_count": 3,
@@ -30526,49 +30053,6 @@
       ],
       "youtube_urls": [
         "https://www.youtube.com/watch?v=gf-fdYMce7k"
-      ]
-    },
-    {
-      "song_name": "子どもの部",
-      "aliases": [],
-      "evidence_count": 3,
-      "good_evidence_count": 3,
-      "years": [
-        2025
-      ],
-      "reliability_counts": {
-        "complete_numbered_video": 3
-      },
-      "source_counts": {
-        "youtube_setlist_occurrence": 3
-      },
-      "speaker_count": 1,
-      "occurrence_count": 3,
-      "evidence_url_count": 1,
-      "status": "有効",
-      "public_ready": true,
-      "review_reason": "",
-      "source_label": "YouTubeセットリスト",
-      "description": "盆踊り会場の曲目として確認されている曲です。",
-      "bon_usage_rank": "地域・会場固有",
-      "bon_usage_score": 48,
-      "song_genre_key": "needs_research",
-      "song_genre": "要調査",
-      "genre_confidence": "低",
-      "genre_basis": "曲名だけでは判定不能",
-      "genre_review_status": "要調査",
-      "sample_events": [
-        "相馬盆唄 生歌生演奏(子供の部・仮装の部) 2025年相馬盆踊り1 福島県相馬市",
-        "相馬盆唄(大人の部)生歌生演奏 2025年相馬盆踊り2 福島県相馬市 有吉ゼミ 玉ノ井部屋",
-        "相馬盆踊り(一般飛び入り参加) 2025年相馬盆踊り3終 相馬盆唄 福島県相馬市"
-      ],
-      "sample_venues": [
-        "相馬盆唄 生歌生演奏(子供の部・仮装の部) 2025年相馬盆踊り1 福島県相馬市",
-        "相馬盆唄(大人の部)生歌生演奏 2025年相馬盆踊り2 福島県相馬市 有吉ゼミ 玉ノ井部屋",
-        "相馬盆踊り(一般飛び入り参加) 2025年相馬盆踊り3終 相馬盆唄 福島県相馬市"
-      ],
-      "youtube_urls": [
-        "https://www.youtube.com/watch?v=xPG4Yw9uEiw"
       ]
     },
     {
@@ -30832,49 +30316,6 @@
       "youtube_urls": [
         "https://www.youtube.com/watch?v=amhW4uzal9U",
         "https://www.youtube.com/watch?v=i2d4_AVPxsA"
-      ]
-    },
-    {
-      "song_name": "浅草右近屋",
-      "aliases": [],
-      "evidence_count": 3,
-      "good_evidence_count": 3,
-      "years": [
-        2025
-      ],
-      "reliability_counts": {
-        "complete_numbered_video": 3
-      },
-      "source_counts": {
-        "youtube_setlist_occurrence": 3
-      },
-      "speaker_count": 1,
-      "occurrence_count": 3,
-      "evidence_url_count": 1,
-      "status": "有効",
-      "public_ready": true,
-      "review_reason": "",
-      "source_label": "YouTubeセットリスト",
-      "description": "盆踊り会場の曲目として確認されている曲です。",
-      "bon_usage_rank": "地域・会場固有",
-      "bon_usage_score": 48,
-      "song_genre_key": "needs_research",
-      "song_genre": "要調査",
-      "genre_confidence": "低",
-      "genre_basis": "曲名だけでは判定不能",
-      "genre_review_status": "要調査",
-      "sample_events": [
-        "【浅草夜祭】「アキバ盆踊り」2 カラーポワント 浅草右近屋 DJササキチ ニコニコ超会議",
-        "【浅草夜祭】「アキバ盆踊り」3 浅草右近屋 カラーポワント DJササキチ ニコニコ超会議",
-        "【浅草夜祭】「アキバ盆踊り」4終 DJササキチ 浅草右近屋 カラーポワント ニコニコ超会議"
-      ],
-      "sample_venues": [
-        "【浅草夜祭】「アキバ盆踊り」2 カラーポワント 浅草右近屋 DJササキチ ニコニコ超会議",
-        "【浅草夜祭】「アキバ盆踊り」3 浅草右近屋 カラーポワント DJササキチ ニコニコ超会議",
-        "【浅草夜祭】「アキバ盆踊り」4終 DJササキチ 浅草右近屋 カラーポワント ニコニコ超会議"
-      ],
-      "youtube_urls": [
-        "https://www.youtube.com/watch?v=2IbsqluQOnQ"
       ]
     },
     {
@@ -31179,49 +30620,6 @@
         "https://www.youtube.com/watch?v=wCD1DBqMymU",
         "https://www.youtube.com/watch?v=LsrWRUfFiDY",
         "https://www.youtube.com/watch?v=B7quQ6JV8cs"
-      ]
-    },
-    {
-      "song_name": "阿波踊り「和樂連",
-      "aliases": [],
-      "evidence_count": 3,
-      "good_evidence_count": 3,
-      "years": [
-        2025
-      ],
-      "reliability_counts": {
-        "complete_numbered_video": 3
-      },
-      "source_counts": {
-        "youtube_setlist_occurrence": 3
-      },
-      "speaker_count": 1,
-      "occurrence_count": 3,
-      "evidence_url_count": 1,
-      "status": "有効",
-      "public_ready": true,
-      "review_reason": "",
-      "source_label": "YouTubeセットリスト",
-      "description": "盆踊り会場の曲目として確認されている曲です。",
-      "bon_usage_rank": "地域・会場固有",
-      "bon_usage_score": 48,
-      "song_genre_key": "needs_research",
-      "song_genre": "要調査",
-      "genre_confidence": "低",
-      "genre_basis": "曲名だけでは判定不能",
-      "genre_review_status": "要調査",
-      "sample_events": [
-        "【勝手にシンドバッド】(サザンオールスターズ) 2025年新宿住友ビル三角広場盆踊り14 「居酒屋盆踊り」 東京都新宿区 住友不動産",
-        "本編より盛り上がった?番外編(アニソンDJ「BANBANBAN鮫島」) 2025年新宿住友ビル三角広場盆踊り16終 「居酒屋盆踊り」 東京都新宿区 住友不動産",
-        "阿波おどり和楽連 2025年新宿住友ビル三角広場盆踊り15 「居酒屋盆踊り」 東京都新宿区 住友不動産"
-      ],
-      "sample_venues": [
-        "【勝手にシンドバッド】(サザンオールスターズ) 2025年新宿住友ビル三角広場盆踊り14 「居酒屋盆踊り」 東京都新宿区 住友不動産",
-        "本編より盛り上がった?番外編(アニソンDJ「BANBANBAN鮫島」) 2025年新宿住友ビル三角広場盆踊り16終 「居酒屋盆踊り」 東京都新宿区 住友不動産",
-        "阿波おどり和楽連 2025年新宿住友ビル三角広場盆踊り15 「居酒屋盆踊り」 東京都新宿区 住友不動産"
-      ],
-      "youtube_urls": [
-        "https://www.youtube.com/watch?v=bPXZNDSIZkQ"
       ]
     },
     {

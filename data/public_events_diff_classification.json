@@ -1,0 +1,30 @@
+{
+  "generated_by": "classify_public_events_diff.py",
+  "generated_at": "2026-06-21T16:54:05.950053+00:00",
+  "scope": "read_only_diff_classification_no_writes",
+  "sources": {
+    "collector_events": "data/public/events_public.json",
+    "site_events": "/Users/ryotauchida/bon-odori-site/data/events_public.json"
+  },
+  "policy": {
+    "restore_collector_from_site_or_reenable_export_postprocess": "site has post-processed fields that collector would delete on wholesale sync",
+    "site_update_candidate_after_review": "collector has new fields absent from site; review before copying",
+    "individual_review": "mixed direction or human-authored/detail/date fields; review event-by-event",
+    "collector_only_postprocess_rule": "collector has an internal postprocessor rule that is excluded from the public snapshot",
+    "rule_prediction_replaces_matching_historical_slide": "collector rule prediction keeps the same displayed date as the legacy historical slide",
+    "fixed_date_rule_basis_refresh": "collector fixed-date postprocessor keeps the same displayed date while refreshing the public basis text"
+  },
+  "summary": {
+    "collector_event_count": 182,
+    "site_event_count": 182,
+    "collector_only_count": 0,
+    "site_only_count": 0,
+    "high_risk_diff_record_count": 0,
+    "high_risk_event_count": 0,
+    "records_by_family": {},
+    "records_by_action": {},
+    "events_by_action": {}
+  },
+  "event_rows": [],
+  "records": []
+}

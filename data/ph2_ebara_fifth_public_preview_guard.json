@@ -1,0 +1,805 @@
+{
+  "generated_by": "guard_public_events_sync.py",
+  "generated_at": "2026-06-21T14:53:43.318489+00:00",
+  "scope": "read_only_public_sync_guard_no_writes",
+  "sources": {
+    "collector_events": "data/ph2_ebara_fifth_public_preview/events_public.json",
+    "site_events": "/Users/ryotauchida/bon-odori-site/data/events_public.json",
+    "fixed_date_rules": "data/public_fixed_date_rules.json"
+  },
+  "parameters": {
+    "target_year": 2026,
+    "today": "2026-06-20",
+    "allow_individual_review": false
+  },
+  "decision": {
+    "status": "block",
+    "failures": [
+      "event_key_mismatch",
+      "individual_review_diffs_remain"
+    ],
+    "warnings": [
+      "raw_restore_candidates_resolved_by_required_postprocessors"
+    ],
+    "safe_to_wholesale_sync": false,
+    "safe_to_deploy_without_review": false
+  },
+  "raw_classification": {
+    "collector_event_count": 182,
+    "site_event_count": 182,
+    "collector_only_count": 1,
+    "site_only_count": 1,
+    "high_risk_diff_record_count": 1639,
+    "high_risk_event_count": 153,
+    "records_by_family": {
+      "historical_reference": 658,
+      "season_hint": 290,
+      "historical_slide": 681,
+      "detail_or_fixed_rule": 4,
+      "date_prediction": 6
+    },
+    "records_by_action": {
+      "restore_collector_from_site_or_reenable_export_postprocess": 1548,
+      "individual_review": 87,
+      "site_update_candidate_after_review": 4
+    },
+    "events_by_action": {
+      "restore_collector_from_site_or_reenable_export_postprocess": 76,
+      "individual_review": 77
+    }
+  },
+  "postprocessed_classification": {
+    "collector_event_count": 182,
+    "site_event_count": 182,
+    "collector_only_count": 1,
+    "site_only_count": 1,
+    "high_risk_diff_record_count": 175,
+    "high_risk_event_count": 77,
+    "records_by_family": {
+      "historical_reference": 77,
+      "historical_slide": 88,
+      "detail_or_fixed_rule": 4,
+      "date_prediction": 6
+    },
+    "records_by_action": {
+      "individual_review": 163,
+      "site_update_candidate_after_review": 4,
+      "restore_collector_from_site_or_reenable_export_postprocess": 8
+    },
+    "events_by_action": {
+      "individual_review": 77
+    }
+  },
+  "blocking_examples": [
+    {
+      "event_key": "あずま通り商店街「下北沢盆踊り2025」||下北沢駅東口",
+      "event_name": "あずま通り商店街「下北沢盆踊り2025」",
+      "venue": "下北沢駅東口",
+      "recommended_action": "individual_review",
+      "families": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "field_count": 2,
+      "fields": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "actions": {
+        "individual_review": 2
+      }
+    },
+    {
+      "event_key": "三角広場まつり「居酒屋盆踊り」||新宿住友ビル三角広場",
+      "event_name": "三角広場まつり「居酒屋盆踊り」",
+      "venue": "新宿住友ビル三角広場",
+      "recommended_action": "individual_review",
+      "families": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "field_count": 2,
+      "fields": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "actions": {
+        "individual_review": 2
+      }
+    },
+    {
+      "event_key": "上北沢盆踊り実行委員会 「上北沢の納涼盆踊り」||上北沢小学校",
+      "event_name": "上北沢盆踊り実行委員会 「上北沢の納涼盆踊り」",
+      "venue": "上北沢小学校",
+      "recommended_action": "individual_review",
+      "families": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "field_count": 2,
+      "fields": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "actions": {
+        "individual_review": 2
+      }
+    },
+    {
+      "event_key": "下代田東町会 「下代田東子供祭り・納涼祭り」||下代田児童遊園",
+      "event_name": "下代田東町会 「下代田東子供祭り・納涼祭り」",
+      "venue": "下代田児童遊園",
+      "recommended_action": "individual_review",
+      "families": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "field_count": 2,
+      "fields": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "actions": {
+        "individual_review": 2
+      }
+    },
+    {
+      "event_key": "下落合四丁目町会 盆踊り大会||下落合公園",
+      "event_name": "下落合四丁目町会 盆踊り大会",
+      "venue": "下落合公園",
+      "recommended_action": "individual_review",
+      "families": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "field_count": 2,
+      "fields": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "actions": {
+        "individual_review": 2
+      }
+    },
+    {
+      "event_key": "下落合町会知久会 第9回盆踊り||清水川橋公園",
+      "event_name": "下落合町会知久会 第9回盆踊り",
+      "venue": "清水川橋公園",
+      "recommended_action": "individual_review",
+      "families": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "field_count": 2,
+      "fields": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "actions": {
+        "individual_review": 2
+      }
+    },
+    {
+      "event_key": "世田谷駅前商店街振興組合「納涼盆踊り大会」||円光院駐車場",
+      "event_name": "世田谷駅前商店街振興組合「納涼盆踊り大会」",
+      "venue": "円光院駐車場",
+      "recommended_action": "individual_review",
+      "families": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "field_count": 2,
+      "fields": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "actions": {
+        "individual_review": 2
+      }
+    },
+    {
+      "event_key": "中目黒盆踊り大会||フナイリバ（目黒川船入場広場）",
+      "event_name": "中目黒盆踊り大会",
+      "venue": "フナイリバ（目黒川船入場広場）",
+      "recommended_action": "individual_review",
+      "families": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "field_count": 2,
+      "fields": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "actions": {
+        "individual_review": 2
+      }
+    },
+    {
+      "event_key": "北新宿四丁目 盆踊り大会||北柏木公園",
+      "event_name": "北新宿四丁目 盆踊り大会",
+      "venue": "北柏木公園",
+      "recommended_action": "individual_review",
+      "families": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "field_count": 2,
+      "fields": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "actions": {
+        "individual_review": 2
+      }
+    },
+    {
+      "event_key": "北糀谷町会 「納涼踊り大会」||子安八幡神社",
+      "event_name": "北糀谷町会 「納涼踊り大会」",
+      "venue": "子安八幡神社",
+      "recommended_action": "individual_review",
+      "families": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "field_count": 2,
+      "fields": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "actions": {
+        "individual_review": 2
+      }
+    },
+    {
+      "event_key": "千歳台廻沢地区盆踊り||廻沢稲荷神社",
+      "event_name": "千歳台廻沢地区盆踊り",
+      "venue": "廻沢稲荷神社",
+      "recommended_action": "individual_review",
+      "families": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "field_count": 2,
+      "fields": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "actions": {
+        "individual_review": 2
+      }
+    },
+    {
+      "event_key": "原町一丁目町会 天祖神社例大祭 盆踊り||原町天祖神社",
+      "event_name": "原町一丁目町会 天祖神社例大祭 盆踊り",
+      "venue": "原町天祖神社",
+      "recommended_action": "individual_review",
+      "families": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "field_count": 2,
+      "fields": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "actions": {
+        "individual_review": 2
+      }
+    },
+    {
+      "event_key": "向島一丁目 牛嶋神社 ミニ奉納踊り||向島1丁目旧町会会館前",
+      "event_name": "向島一丁目 牛嶋神社 ミニ奉納踊り",
+      "venue": "向島1丁目旧町会会館前",
+      "recommended_action": "individual_review",
+      "families": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "field_count": 2,
+      "fields": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "actions": {
+        "individual_review": 2
+      }
+    },
+    {
+      "event_key": "品川区民まつり 西大井広場公園 盆踊り||西大井広場公園",
+      "event_name": "品川区民まつり 西大井広場公園 盆踊り",
+      "venue": "西大井広場公園",
+      "recommended_action": "individual_review",
+      "families": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "field_count": 2,
+      "fields": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "actions": {
+        "individual_review": 2
+      }
+    },
+    {
+      "event_key": "喜多見盆踊り大会||小田急線喜多見駅前 南口広場",
+      "event_name": "喜多見盆踊り大会",
+      "venue": "小田急線喜多見駅前 南口広場",
+      "recommended_action": "individual_review",
+      "families": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "field_count": 2,
+      "fields": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "actions": {
+        "individual_review": 2
+      }
+    },
+    {
+      "event_key": "地域のふれあい第37回盆踊り大会||JR目黒駅西口前",
+      "event_name": "地域のふれあい第37回盆踊り大会",
+      "venue": "JR目黒駅西口前",
+      "recommended_action": "individual_review",
+      "families": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "field_count": 2,
+      "fields": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "actions": {
+        "individual_review": 2
+      }
+    },
+    {
+      "event_key": "坂本町会 納涼祭||さかもと朝顔広場（旧坂本小学校跡地）",
+      "event_name": "坂本町会 納涼祭",
+      "venue": "さかもと朝顔広場（旧坂本小学校跡地）",
+      "recommended_action": "individual_review",
+      "families": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "field_count": 2,
+      "fields": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "actions": {
+        "individual_review": 2
+      }
+    },
+    {
+      "event_key": "堤方東町会「盆踊り大会」||池上第二小学校",
+      "event_name": "堤方東町会「盆踊り大会」",
+      "venue": "池上第二小学校",
+      "recommended_action": "individual_review",
+      "families": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "field_count": 2,
+      "fields": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "actions": {
+        "individual_review": 2
+      }
+    },
+    {
+      "event_key": "大森南一丁目自治会「納涼盆踊り大会」||大森南一丁目公園",
+      "event_name": "大森南一丁目自治会「納涼盆踊り大会」",
+      "venue": "大森南一丁目公園",
+      "recommended_action": "individual_review",
+      "families": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "field_count": 2,
+      "fields": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "actions": {
+        "individual_review": 2
+      }
+    },
+    {
+      "event_key": "大蔵本村睦会 「盆踊り大会」||大蔵氷川神社",
+      "event_name": "大蔵本村睦会 「盆踊り大会」",
+      "venue": "大蔵氷川神社",
+      "recommended_action": "individual_review",
+      "families": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "field_count": 2,
+      "fields": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "actions": {
+        "individual_review": 2
+      }
+    },
+    {
+      "event_key": "大蔵東部町会「親子納涼盆踊り大会」||横根稲荷神社",
+      "event_name": "大蔵東部町会「親子納涼盆踊り大会」",
+      "venue": "横根稲荷神社",
+      "recommended_action": "individual_review",
+      "families": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "field_count": 2,
+      "fields": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "actions": {
+        "individual_review": 2
+      }
+    },
+    {
+      "event_key": "太平一丁目 牛嶋神社 奉納踊り||報恩寺境内",
+      "event_name": "太平一丁目 牛嶋神社 奉納踊り",
+      "venue": "報恩寺境内",
+      "recommended_action": "individual_review",
+      "families": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "field_count": 2,
+      "fields": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "actions": {
+        "individual_review": 2
+      }
+    },
+    {
+      "event_key": "奥沢交和会||奥沢小学校",
+      "event_name": "奥沢交和会",
+      "venue": "奥沢小学校",
+      "recommended_action": "individual_review",
+      "families": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "field_count": 2,
+      "fields": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "actions": {
+        "individual_review": 2
+      }
+    },
+    {
+      "event_key": "宇奈根町会 盆踊り大会||宇奈根氷川神社",
+      "event_name": "宇奈根町会 盆踊り大会",
+      "venue": "宇奈根氷川神社",
+      "recommended_action": "individual_review",
+      "families": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "field_count": 2,
+      "fields": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "actions": {
+        "individual_review": 2
+      }
+    },
+    {
+      "event_key": "山王音頭と民踊大会||山王パークタワー公開空地",
+      "event_name": "山王音頭と民踊大会",
+      "venue": "山王パークタワー公開空地",
+      "recommended_action": "individual_review",
+      "families": [
+        "detail_or_fixed_rule"
+      ],
+      "field_count": 2,
+      "fields": [
+        "detail",
+        "fixed_date_rule"
+      ],
+      "actions": {
+        "individual_review": 2
+      }
+    },
+    {
+      "event_key": "岡本自治会「盆踊り大会」||長円寺",
+      "event_name": "岡本自治会「盆踊り大会」",
+      "venue": "長円寺",
+      "recommended_action": "individual_review",
+      "families": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "field_count": 2,
+      "fields": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "actions": {
+        "individual_review": 2
+      }
+    },
+    {
+      "event_key": "市野倉南町会 盆踊り||市野倉南児童公園",
+      "event_name": "市野倉南町会 盆踊り",
+      "venue": "市野倉南児童公園",
+      "recommended_action": "individual_review",
+      "families": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "field_count": 2,
+      "fields": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "actions": {
+        "individual_review": 2
+      }
+    },
+    {
+      "event_key": "希望ヶ丘団地夏まつり||希望ヶ丘団地 テニスコート",
+      "event_name": "希望ヶ丘団地夏まつり",
+      "venue": "希望ヶ丘団地 テニスコート",
+      "recommended_action": "individual_review",
+      "families": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "field_count": 2,
+      "fields": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "actions": {
+        "individual_review": 2
+      }
+    },
+    {
+      "event_key": "成城学園 盆踊り大会||成城大学9号館前広場",
+      "event_name": "成城学園 盆踊り大会",
+      "venue": "成城大学9号館前広場",
+      "recommended_action": "individual_review",
+      "families": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "field_count": 2,
+      "fields": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "actions": {
+        "individual_review": 2
+      }
+    },
+    {
+      "event_key": "戸越八幡神社例大祭 奉納盆踊り大会||豊町一丁目会館前",
+      "event_name": "戸越八幡神社例大祭 奉納盆踊り大会",
+      "venue": "豊町一丁目会館前",
+      "recommended_action": "individual_review",
+      "families": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "field_count": 2,
+      "fields": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "actions": {
+        "individual_review": 2
+      }
+    },
+    {
+      "event_key": "押上三丁目伸成町会 飛木稲荷神社神幸大祭 祭礼踊り||伸成町会会館前 路上",
+      "event_name": "押上三丁目伸成町会 飛木稲荷神社神幸大祭 祭礼踊り",
+      "venue": "伸成町会会館前 路上",
+      "recommended_action": "individual_review",
+      "families": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "field_count": 2,
+      "fields": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "actions": {
+        "individual_review": 2
+      }
+    },
+    {
+      "event_key": "新町公民会 盆踊り大会||久富稲荷神社",
+      "event_name": "新町公民会 盆踊り大会",
+      "venue": "久富稲荷神社",
+      "recommended_action": "individual_review",
+      "families": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "field_count": 2,
+      "fields": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "actions": {
+        "individual_review": 2
+      }
+    },
+    {
+      "event_key": "旗の台稲荷通り商店会盆踊り 盆ROCK||旗の台稲荷通り商店街",
+      "event_name": "旗の台稲荷通り商店会盆踊り 盆ROCK",
+      "venue": "旗の台稲荷通り商店街",
+      "recommended_action": "individual_review",
+      "families": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "field_count": 2,
+      "fields": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "actions": {
+        "individual_review": 2
+      }
+    },
+    {
+      "event_key": "東糀谷四・五・六町会 納涼盆踊り大会||旭児童遊園",
+      "event_name": "東糀谷四・五・六町会 納涼盆踊り大会",
+      "venue": "旭児童遊園",
+      "recommended_action": "individual_review",
+      "families": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "field_count": 2,
+      "fields": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "actions": {
+        "individual_review": 2
+      }
+    },
+    {
+      "event_key": "柏木地区6町会盆踊り大会||北新宿公園",
+      "event_name": "柏木地区6町会盆踊り大会",
+      "venue": "北新宿公園",
+      "recommended_action": "individual_review",
+      "families": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "field_count": 2,
+      "fields": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "actions": {
+        "individual_review": 2
+      }
+    },
+    {
+      "event_key": "森ヶ崎自治会||大森南4丁目公園",
+      "event_name": "森ヶ崎自治会",
+      "venue": "大森南4丁目公園",
+      "recommended_action": "individual_review",
+      "families": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "field_count": 2,
+      "fields": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "actions": {
+        "individual_review": 2
+      }
+    },
+    {
+      "event_key": "歌舞伎町BON ODORI||歌舞伎町シネシティ広場",
+      "event_name": "歌舞伎町BON ODORI",
+      "venue": "歌舞伎町シネシティ広場",
+      "recommended_action": "individual_review",
+      "families": [
+        "date_prediction",
+        "historical_reference",
+        "historical_slide"
+      ],
+      "field_count": 10,
+      "fields": [
+        "date_prediction",
+        "display_tier",
+        "historical_display_tier",
+        "historical_reference",
+        "historical_slide",
+        "historical_slide_basis",
+        "historical_slide_date",
+        "historical_slide_date_end",
+        "prediction_basis",
+        "prediction_evidence_years"
+      ],
+      "actions": {
+        "site_update_candidate_after_review": 2,
+        "individual_review": 4,
+        "restore_collector_from_site_or_reenable_export_postprocess": 4
+      }
+    },
+    {
+      "event_key": "法人格砧町自治会「納涼盆踊り大会」||砧八丁目児童遊園",
+      "event_name": "法人格砧町自治会「納涼盆踊り大会」",
+      "venue": "砧八丁目児童遊園",
+      "recommended_action": "individual_review",
+      "families": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "field_count": 2,
+      "fields": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "actions": {
+        "individual_review": 2
+      }
+    },
+    {
+      "event_key": "瀬田商店会 瀬田納涼盆踊り||瀬田中学校",
+      "event_name": "瀬田商店会 瀬田納涼盆踊り",
+      "venue": "瀬田中学校",
+      "recommended_action": "individual_review",
+      "families": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "field_count": 2,
+      "fields": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "actions": {
+        "individual_review": 2
+      }
+    },
+    {
+      "event_key": "玉川町会盆おどり大会||二子玉川西地区ふれあい広場(246高架下)",
+      "event_name": "玉川町会盆おどり大会",
+      "venue": "二子玉川西地区ふれあい広場(246高架下)",
+      "recommended_action": "individual_review",
+      "families": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "field_count": 2,
+      "fields": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "actions": {
+        "individual_review": 2
+      }
+    }
+  ]
+}

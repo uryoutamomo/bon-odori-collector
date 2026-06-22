@@ -1,0 +1,154 @@
+{
+  "generated_by": "analyze_song_occurrence_collapse.py",
+  "generated_at": "2026-06-21T03:40:09.280561+00:00",
+  "scope": "read_only_song_occurrence_collapse_analysis_no_writes",
+  "sources": {
+    "diff": "data/master_rdb_event_song_occurrences_production_preview_diff.json",
+    "exported": "data/master_rdb_event_song_occurrences_public.production_preview.json"
+  },
+  "summary": {
+    "duplicate_collapsed_id_count": 2,
+    "intentional_duplicate_collapse_count": 2,
+    "review_required_count": 0,
+    "missing_public_song_row_count": 2,
+    "missing_sqlite_observed_song_id_count": 2
+  },
+  "rows": [
+    {
+      "observed_occurrence_song_id": "obsocs_0d7e82b8fa6bbce3",
+      "decision": "intentional_duplicate_collapse",
+      "source_count": 2,
+      "expected_missing_count": 1,
+      "actual_missing_public_song_row_count": 1,
+      "occurrence_key_count": 1,
+      "role_count": 1,
+      "normalized_title_count": 1,
+      "normalized_title": "ダンシングヒーロー",
+      "source_titles": [
+        "ダンシングヒーロー",
+        "ダンシング・ヒーロー"
+      ],
+      "exported_titles": [
+        "ダンシングヒーロー"
+      ],
+      "event_name": "山王音頭と民踊大会",
+      "venue": "赤坂日枝神社",
+      "year": 2025,
+      "role": "result",
+      "source_rows": [
+        {
+          "occurrence_id": "38c7d2ba4835f386",
+          "event_name": "山王音頭と民踊大会",
+          "venue": "赤坂日枝神社",
+          "year": 2025,
+          "song_name": "ダンシングヒーロー",
+          "role": "result",
+          "basis": "current_observed"
+        },
+        {
+          "occurrence_id": "38c7d2ba4835f386",
+          "event_name": "山王音頭と民踊大会",
+          "venue": "赤坂日枝神社",
+          "year": 2025,
+          "song_name": "ダンシング・ヒーロー",
+          "role": "result",
+          "basis": "current_observed"
+        }
+      ],
+      "missing_public_song_rows": [
+        {
+          "count": 1,
+          "key": {
+            "occurrence": {
+              "occurrence_id": "38c7d2ba4835f386",
+              "event_name": "山王音頭と民踊大会",
+              "venue": "赤坂日枝神社",
+              "year": 2025
+            },
+            "song": {
+              "name": "ダンシング・ヒーロー",
+              "probability": 95,
+              "basis": "current_observed",
+              "basis_label": "今年実測",
+              "evidence_count": 1,
+              "speaker_count": 1,
+              "setlist_complete": true,
+              "prediction_reliability": [],
+              "evidence_urls": [
+                "https://www.youtube.com/watch?v=0MgN9YSz_6o"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "observed_occurrence_song_id": "obsocs_8225dc5eb383b962",
+      "decision": "intentional_duplicate_collapse",
+      "source_count": 2,
+      "expected_missing_count": 1,
+      "actual_missing_public_song_row_count": 1,
+      "occurrence_key_count": 1,
+      "role_count": 1,
+      "normalized_title_count": 1,
+      "normalized_title": "かわいいだけじゃだめですか",
+      "source_titles": [
+        "かわいいだけじゃだめですか",
+        "かわいいだけじゃだめですか?"
+      ],
+      "exported_titles": [
+        "かわいいだけじゃだめですか"
+      ],
+      "event_name": "シタマチ.ふるさと盆踊り大会",
+      "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+      "year": 2025,
+      "role": "prediction",
+      "source_rows": [
+        {
+          "occurrence_id": "5e31739f03c1c9cb",
+          "event_name": "シタマチ.ふるさと盆踊り大会",
+          "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+          "year": 2025,
+          "song_name": "かわいいだけじゃだめですか",
+          "role": "prediction",
+          "basis": "current_hint"
+        },
+        {
+          "occurrence_id": "5e31739f03c1c9cb",
+          "event_name": "シタマチ.ふるさと盆踊り大会",
+          "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+          "year": 2025,
+          "song_name": "かわいいだけじゃだめですか?",
+          "role": "prediction",
+          "basis": "current_hint"
+        }
+      ],
+      "missing_public_song_rows": [
+        {
+          "count": 1,
+          "key": {
+            "occurrence": {
+              "occurrence_id": "5e31739f03c1c9cb",
+              "event_name": "シタマチ.ふるさと盆踊り大会",
+              "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+              "year": 2025
+            },
+            "song": {
+              "name": "かわいいだけじゃだめですか?",
+              "probability": 80,
+              "basis": "current_hint",
+              "basis_label": "今年ヒント",
+              "evidence_count": 1,
+              "speaker_count": 1,
+              "setlist_complete": false,
+              "prediction_reliability": [
+                0.8
+              ],
+              "evidence_urls": []
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

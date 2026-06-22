@@ -1,6 +1,6 @@
 # Ph2 cutover readiness
 
-- generated_at: 2026-06-21T17:00:35.922025+00:00
+- generated_at: 2026-06-22T01:22:44.994091+00:00
 - scope: read_only_local_review_material
 
 ## Master DB
@@ -42,8 +42,8 @@
 
 ## Worktree Triage
 
-- changed_file_count: 168
-- groups: {'repo_housekeeping': 1, 'other': 106, 'youtube_song_master_side_changes': 3, 'public_output_modified': 5, 'review_commit_candidate_scripts': 10, 'master_rdb_generated_artifacts': 23, 'public_export_dry_run_artifacts': 4, 'review_queue_reports': 7, 'new_review_reports': 8, 'review_commit_candidate_docs': 1}
+- changed_file_count: 115
+- groups: {'repo_housekeeping': 1, 'other': 76, 'youtube_song_master_side_changes': 3, 'review_queue_reports': 7, 'public_output_modified': 5, 'review_commit_candidate_scripts': 1, 'public_export_dry_run_artifacts': 4, 'master_rdb_generated_artifacts': 12, 'new_review_reports': 6}
 
 ### Suggested Review Buckets
 
