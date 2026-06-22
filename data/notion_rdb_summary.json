@@ -1,6 +1,6 @@
 {
   "generated_by": "build_notion_rdb.py",
-  "generated_at": "2026-06-16T04:02:12.907707+00:00",
+  "generated_at": "2026-06-21T07:57:00.844675+00:00",
   "database": "data/notion_snapshot.sqlite",
   "targets": [
     {
@@ -8,14 +8,14 @@
       "source_name": "会場マスタ",
       "api_kind": "data_source",
       "notion_id": "cacdae5c-d793-43c5-b118-596e13023fcc",
-      "row_count": 207
+      "row_count": 213
     },
     {
       "source_key": "events",
       "source_name": "イベントDB",
       "api_kind": "data_source",
       "notion_id": "a83b5a63-7411-4d6a-8bbc-83bedf4e7b5d",
-      "row_count": 214
+      "row_count": 222
     },
     {
       "source_key": "plans",
@@ -41,11 +41,11 @@
   ],
   "table_counts": {
     "notion_sources": 5,
-    "notion_pages": 700,
-    "notion_properties": 8123,
-    "notion_relations": 495,
-    "notion_events": 214,
-    "notion_venues": 207,
+    "notion_pages": 714,
+    "notion_properties": 9385,
+    "notion_relations": 509,
+    "notion_events": 222,
+    "notion_venues": 213,
     "notion_songs": 141,
     "notion_plans": 17,
     "notion_glossary_terms": 121

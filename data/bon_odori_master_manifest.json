@@ -1,0 +1,46 @@
+{
+  "generated_by": "build_master_rdb.py",
+  "generated_at": "2026-06-22T01:21:35.342436+00:00",
+  "dry_run": true,
+  "database": "data/bon_odori_master.sqlite",
+  "schema": "data/bon_odori_master.schema.sql",
+  "table_counts": {
+    "event_investigation_tasks": 88,
+    "event_occurrences": 222,
+    "event_series": 221,
+    "evidence_items": 28419,
+    "external_record_links": 2654,
+    "historical_promotion_candidates": 15,
+    "master_meta": 0,
+    "notion_sync_jobs": 10,
+    "observed_occurrence_songs": 28105,
+    "observed_occurrences": 1856,
+    "occurrence_dates": 140,
+    "occurrence_evidence_links": 0,
+    "occurrence_song_evidence_links": 485,
+    "occurrence_songs": 308,
+    "predicted_occurrence_dates": 12,
+    "schema_migrations": 1,
+    "song_aliases": 141,
+    "songs": 141,
+    "venue_aliases": 213,
+    "venues": 213,
+    "write_batches": 0
+  },
+  "source_checksums": {
+    "notion_db": "20e460fa51a838cfc4e8c3e1a34e51d60707870eb39534d98d8673d1e1d67002",
+    "song_occurrences": "2f129469c58dce45b8671dc964b0e62b882c999a06f181172a237ac04bf6e609"
+  },
+  "database_checksum": "bb82ce9472a3eab65b35ffa7c5447921a44b4bca557c8900b5ab4c7f49d79068",
+  "report": "data/master_rdb_ph0_dry_run_report.json",
+  "post_build_outputs": {
+    "observed_promotion_candidates": "data/observed_promotion_candidates.json",
+    "registered_event_investigation_queue": "data/registered_event_investigation_queue.json",
+    "historical_promotion_candidates": "data/historical_promotion_candidates.json"
+  },
+  "post_build_steps": [
+    "build_observed_promotion_candidates.py",
+    "build_registered_event_investigation_queue.py",
+    "build_historical_promotion_candidates.py"
+  ]
+}
