@@ -1,0 +1,46 @@
+# Master RDB Ph0 dry-run
+
+- generated_at: 2026-06-22T01:21:35.342436+00:00
+- database: data/bon_odori_master.sqlite
+- dry_run: True
+
+## Source counts
+
+- notion_venues: 213
+- notion_events: 222
+- notion_songs: 141
+- song_occurrence_input_count: 1856
+- song_relation_input_count: 28107
+- unresolved_song_count: 20542
+- matched_curated_occurrence_count: 82
+- observed_only_occurrence_count: 1774
+- discard_candidate_observed_occurrence_count: 115
+
+## Table counts
+
+- event_investigation_tasks: 0
+- event_occurrences: 222
+- event_series: 221
+- evidence_items: 28419
+- external_record_links: 2654
+- historical_promotion_candidates: 0
+- master_meta: 0
+- notion_sync_jobs: 0
+- observed_occurrence_songs: 28105
+- observed_occurrences: 1856
+- occurrence_dates: 140
+- occurrence_evidence_links: 0
+- occurrence_song_evidence_links: 485
+- occurrence_songs: 308
+- predicted_occurrence_dates: 0
+- schema_migrations: 1
+- song_aliases: 141
+- songs: 141
+- venue_aliases: 213
+- venues: 213
+- write_batches: 0
+
+## Notes
+
+- placeholder_counts: {}
+- manifest: data/bon_odori_master_manifest.json

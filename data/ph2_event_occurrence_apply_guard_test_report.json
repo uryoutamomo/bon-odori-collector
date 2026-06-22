@@ -1,0 +1,127 @@
+{
+  "generated_by": "dry_run_ph2_event_occurrence_apply.py",
+  "generated_at": "2026-06-21T03:15:58.019643+00:00",
+  "scope": "source_master_db_apply_no_notion_no_public_json",
+  "sources": {
+    "master_db": "/private/tmp/ph2_apply_guard_test.sqlite",
+    "plan": "data/ph2_event_occurrence_apply_plan.json"
+  },
+  "outputs": {
+    "target_db": "/private/tmp/ph2_apply_guard_test.sqlite",
+    "dry_run_db": ""
+  },
+  "options": {
+    "event_name": "品川区民まつり 荏原第一地区",
+    "include_blocked": false,
+    "apply": true
+  },
+  "summary": {
+    "selected_count": 1,
+    "applied_count": 1,
+    "skipped_count": 13,
+    "issues_count": 0,
+    "issues_by_severity": {},
+    "dry_run_table_counts": {
+      "event_occurrences": 214,
+      "occurrence_dates": 128,
+      "notion_sync_jobs": 8,
+      "ph2_event_occurrence_sync_jobs": 1
+    }
+  },
+  "applied": [
+    {
+      "event_name": "品川区民まつり 荏原第一地区",
+      "occurrence_id": "occ_35fcf0374711a3bd",
+      "notion_page_id": "37b8be04-e762-817f-aa8c-e3b49df8d530",
+      "before": {
+        "occurrence_id": "occ_35fcf0374711a3bd",
+        "series_id": "ser_e565042ea6b77ac3",
+        "series_name": "品川区民まつり 荏原第一地区",
+        "event_year": 2026,
+        "display_name": "品川区民まつり 荏原第一地区",
+        "venue_id": "ven_3ea0097dcf20379d",
+        "venue_name": "小山台小学校",
+        "date_start": "",
+        "date_end": "",
+        "date_status": "unknown",
+        "lifecycle_status": "未確認",
+        "confidence": "unknown",
+        "source_kind": "notion_events",
+        "source_url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html"
+      },
+      "after": {
+        "occurrence_id": "occ_35fcf0374711a3bd",
+        "series_id": "ser_e565042ea6b77ac3",
+        "series_name": "品川区民まつり 荏原第一地区",
+        "event_year": 2026,
+        "display_name": "品川区民まつり 荏原第一地区",
+        "venue_id": "ven_3ea0097dcf20379d",
+        "venue_name": "小山台小学校",
+        "date_start": "2026-10-10",
+        "date_end": "",
+        "date_status": "confirmed",
+        "lifecycle_status": "未確認",
+        "confidence": "high",
+        "source_kind": "official_current_year",
+        "source_url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html"
+      },
+      "inserted_occurrence_date_id": "odate_f668dea3df4b8785",
+      "inserted_notion_sync_job_id": "nsj_9f1e9140663ba631"
+    }
+  ],
+  "skipped": [
+    {
+      "event_name": "濱町音頭盆踊り大会",
+      "reason": "not_current_official_mutation"
+    },
+    {
+      "event_name": "銀座一丁目東町会・新富町会 納涼盆踊り大会",
+      "reason": "not_current_official_mutation"
+    },
+    {
+      "event_name": "ゐの市盆踊り～不忍夢～",
+      "reason": "not_current_official_mutation"
+    },
+    {
+      "event_name": "京橋盆踊り",
+      "reason": "not_current_official_mutation"
+    },
+    {
+      "event_name": "品川区民まつり 品川第二地区",
+      "reason": "event_filter"
+    },
+    {
+      "event_name": "品川区民まつり 荏原第五地区",
+      "reason": "event_filter"
+    },
+    {
+      "event_name": "増上寺 地蔵尊盆踊り大会",
+      "reason": "not_current_official_mutation"
+    },
+    {
+      "event_name": "新宿中央公園夏祭り 納涼盆踊り大会",
+      "reason": "not_current_official_mutation"
+    },
+    {
+      "event_name": "旗岡八幡神社例大祭",
+      "reason": "not_current_official_mutation"
+    },
+    {
+      "event_name": "森下二丁目盆踊り",
+      "reason": "not_current_official_mutation"
+    },
+    {
+      "event_name": "盆☆Dance 夏休み最後の土曜は校庭で踊ろう！",
+      "reason": "not_current_official_mutation"
+    },
+    {
+      "event_name": "赤坂夏おどり（旧 赤坂盆踊り）",
+      "reason": "not_current_official_mutation"
+    },
+    {
+      "event_name": "都の辰巳深川 臨海ぼんおどり",
+      "reason": "not_current_official_mutation"
+    }
+  ],
+  "issues": []
+}
