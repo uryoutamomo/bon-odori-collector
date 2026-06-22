@@ -1,6 +1,6 @@
 # Master RDB next phase preflight
 
-- generated_at: 2026-06-22T15:04:00Z
+- generated_at: 2026-06-23T00:18:00Z
 - generated_by: おと（Codex）
 - status: ready_for_operator_decision
 - current_local_phase: complete_for_local_rdb_phase
@@ -40,6 +40,8 @@
 - do not force rebuild from snapshot at this stage: a temp rebuild from current snapshots would drop DB-only review state (`notion_sync_jobs`, `predicted_occurrence_dates`, `event_investigation_tasks`, `historical_promotion_candidates`).
 - source drift detail report: `data/notion_snapshot_master_drift.json` / `data/notion_snapshot_master_drift.md`
 - source drift detail: 32 field diffs; 19 preserve master, 12 conflict review, 1 Notion-only candidate.
+- source drift decisions: `data/notion_snapshot_master_drift_decisions.json` / `data/notion_snapshot_master_drift_decisions.md`
+- source drift decision detail: 19 preserve master, 7 preserve confirmed state, 5 hold for manual review, 1 local apply candidate.
 - next local-only step before any apply: design or run a state-preserving source refresh, then rerun audit and dry-run reports.
 
 ## Public Preflight
@@ -59,6 +61,7 @@ python3 build_notion_rdb.py
 python3 sync_master_to_notion.py --target-table event_occurrences --out-json data/ph2_master_to_notion_sync_dry_run.json --out-md data/ph2_master_to_notion_sync_dry_run.md
 python3 guard_public_events_sync.py
 python3 compare_notion_snapshot_to_master.py
+python3 build_notion_snapshot_drift_decisions.py
 PYTHONPATH=. pytest -q
 python3 audit_master_rdb.py
 python3 guard_git_large_files.py

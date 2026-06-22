@@ -1,6 +1,6 @@
 {
   "generated_by": "おと（Codex）",
-  "generated_at": "2026-06-22T15:04:00Z",
+  "generated_at": "2026-06-23T00:18:00Z",
   "phase": "master_rdb_next_phase_preflight",
   "status": "ready_for_operator_decision",
   "current_local_phase": "complete_for_local_rdb_phase",
@@ -93,6 +93,19 @@
         "review_before_copy_from_notion": 1
       },
       "status": "review_required_before_manifest_source_checksum_refresh"
+    },
+    "source_drift_decisions": {
+      "json": "data/notion_snapshot_master_drift_decisions.json",
+      "markdown": "data/notion_snapshot_master_drift_decisions.md",
+      "decision_count": 32,
+      "by_decision": {
+        "preserve_master": 19,
+        "preserve_master_confirmed_state": 7,
+        "hold_for_manual_review": 5,
+        "candidate_copy_notion_public_intro": 1
+      },
+      "apply_ready_count": 1,
+      "status": "one_local_apply_candidate_no_notion_or_public_deploy"
     }
   },
   "public_preflight": {
@@ -109,6 +122,7 @@
     "python3 sync_master_to_notion.py --target-table event_occurrences --out-json data/ph2_master_to_notion_sync_dry_run.json --out-md data/ph2_master_to_notion_sync_dry_run.md",
     "python3 guard_public_events_sync.py",
     "python3 compare_notion_snapshot_to_master.py",
+    "python3 build_notion_snapshot_drift_decisions.py",
     "PYTHONPATH=. pytest -q",
     "python3 audit_master_rdb.py",
     "python3 guard_git_large_files.py"
