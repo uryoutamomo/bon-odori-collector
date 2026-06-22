@@ -1,0 +1,72 @@
+{
+  "generated_by": "おと（Codex）",
+  "generated_at": "2026-06-22T14:33:41Z",
+  "head_commit": "569eef1",
+  "phase": "master_rdb_local_migration_readiness",
+  "status": "complete_for_local_rdb_phase",
+  "scope_completed": [
+    "RDB audit is clean",
+    "local review queues are regenerated from the current RDB state",
+    "predicted occurrence candidates are kept as review queues, not public writes",
+    "historical reference candidates already recorded are no longer shown as ready-to-insert",
+    "GitHub large-file guard is installed and wired into the collect workflow",
+    "Ph2 readiness reports a clean worktree and no public high-risk diffs"
+  ],
+  "verification": {
+    "pytest": "351 passed",
+    "master_rdb_audit_issues": 0,
+    "master_rdb_audit_issues_by_severity": {},
+    "git_large_file_guard": "warn data/bon_odori_master.sqlite 50.76 MiB; block threshold 95 MiB",
+    "ph2_cutover_readiness": {
+      "public_common_diffs": 0,
+      "high_risk_fields": {},
+      "worktree_files": 0
+    }
+  },
+  "current_counts": {
+    "event_series": 221,
+    "event_occurrences": 222,
+    "occurrence_dates": 171,
+    "historical_reference_dates": 25,
+    "predicted_occurrence_dates": 12,
+    "event_investigation_tasks": 79
+  },
+  "remaining_review_queues": {
+    "pre_cutover_p0": {
+      "p0_task_count": 11,
+      "historical_reference_recorded": 8,
+      "keep_investigation_queue": 3,
+      "human_review_required_count": 0
+    },
+    "ph2_event_occurrence_apply_plan": {
+      "mutation_count": 11,
+      "already_applied_historical_reference_count": 8,
+      "blocked_or_review_required_count": 3
+    },
+    "predicted_occurrence_research_queue": {
+      "item_count": 8,
+      "P0": 4,
+      "P1": 3,
+      "P2": 1
+    },
+    "historical_promotion_candidate_review": {
+      "candidate_count": 15,
+      "already_has_historical_reference": 10,
+      "manual_review_year_only_evidence": 2,
+      "series_or_venue_review": 1,
+      "manual_review": 2
+    }
+  },
+  "explicitly_not_done": [
+    "Notion production sync",
+    "public JSON wholesale deploy",
+    "automatic promotion of predicted 2026 dates without current-year confirmation",
+    "migration of the tracked SQLite file out of Git"
+  ],
+  "recommended_next_phase": [
+    "Ask for explicit approval before any Notion production sync or public deploy",
+    "Keep 増上寺, 旗岡八幡神社, and 盆☆Dance in investigation queue until current-year source appears",
+    "Recheck the 8 predicted occurrence candidates periodically and promote only with current-year evidence",
+    "Plan a separate storage strategy for data/bon_odori_master.sqlite before it approaches 95 MiB"
+  ]
+}
