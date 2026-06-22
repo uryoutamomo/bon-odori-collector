@@ -23,13 +23,22 @@ DEFAULT_TODAY = date(2026, 6, 22)
 SOURCE_REVIEW = {
     "丸の内de盆踊り": {
         "source_checked_at": "2026-06-22",
-        "source_review": "previous_year_official_source",
-        "source_note": "Marunouchi.com source confirms 2025-07-25 to 2025-07-26 at 行幸通り, not a 2026 date.",
+        "source_review": "current_year_source_not_found",
+        "source_note": "Marunouchi.com event index and 2025 article were rechecked; no 2026 丸の内de盆踊り source was found.",
+        "checked_urls": [
+            "https://www.marunouchi.com/pickup/event/",
+            "https://www.marunouchi.com/pickup/event/6763/",
+            "https://minato-bon-odori.blogspot.com/2021/05/coming-all-h.html",
+        ],
     },
     "謝恩納涼盆踊り大会（青山善光寺）": {
         "source_checked_at": "2026-06-22",
-        "source_review": "previous_year_local_media_source",
-        "source_note": "OMOHARAREAL source is 令和7年/2025 coverage; use it only as recurrence evidence.",
+        "source_review": "current_year_source_not_found",
+        "source_note": "OMOHARAREAL source is 令和7年/2025 coverage and the current bon-odori index had no 2026 row; keep as prediction.",
+        "checked_urls": [
+            "https://omoharareal.com/navi/news/detail/5157",
+            "https://minato-bon-odori.blogspot.com/2021/05/coming-all-h.html",
+        ],
     },
     "シタマチ.ふるさと盆踊り大会": {
         "source_checked_at": "2026-06-22",
@@ -48,8 +57,13 @@ SOURCE_REVIEW = {
     },
     "自由が丘納涼盆踊り大会": {
         "source_checked_at": "2026-06-22",
-        "source_review": "previous_year_third_party_source",
-        "source_note": "TokyoFesta source confirms 2025-07-19 to 2025-07-21 and links the organizer site; recheck organizer for 2026.",
+        "source_review": "current_year_source_not_found",
+        "source_note": "Jiyugaoka official 2026 event list still shows no July event; TokyoFesta remains 2025 evidence only.",
+        "checked_urls": [
+            "https://www.jiyugaoka-abc.com/event/",
+            "https://tokyofesta.com/23ku/23804/",
+            "https://minato-bon-odori.blogspot.com/2021/05/coming-all-h.html",
+        ],
     },
     "西久保八幡神社 盆踊り": {
         "source_checked_at": "2026-06-22",
@@ -58,8 +72,13 @@ SOURCE_REVIEW = {
     },
     "第15回 鴨台盆踊り": {
         "source_checked_at": "2026-06-22",
-        "source_review": "previous_year_official_source",
-        "source_note": "大正大学 source confirms the 2025 第15回 event; 2026 needs a new current-year source.",
+        "source_review": "current_year_source_not_found",
+        "source_note": "大正大学2026最新ニュース and 2025 第15回 article were rechecked; no 2026 鴨台盆踊り source was found.",
+        "checked_urls": [
+            "https://www.tais.ac.jp/guide/latest_news/",
+            "https://www.tais.ac.jp/guide/latest_news/20250627/92922/",
+            "https://minato-bon-odori.blogspot.com/2021/05/coming-all-h.html",
+        ],
     },
     "赤坂浄土寺盆踊り大会": {
         "source_checked_at": "2026-06-22",
@@ -190,6 +209,7 @@ def build_queue(master_db, today=DEFAULT_TODAY):
                 "source_checked_at": source_review.get("source_checked_at") or "",
                 "source_review": source_review.get("source_review") or "source_recheck_required",
                 "source_note": source_review.get("source_note") or "Current-year source has not been reviewed.",
+                "checked_urls": source_review.get("checked_urls") or [],
                 "priority_score": priority_score,
                 "priority_label": priority_label,
                 "recommended_action": action,
@@ -222,9 +242,10 @@ def render_markdown(result):
         )
     lines.extend(["", "## Source Notes", ""])
     for item in result["items"]:
+        checked = ", ".join(item["checked_urls"]) if item["checked_urls"] else item["source_url"] or "(none)"
         lines.append(
             f"- {item['priority_label']} {item['event_name']}: {item['source_note']} "
-            f"source={item['source_url'] or '(none)'}"
+            f"checked={checked}"
         )
     lines.append("")
     return "\n".join(lines)

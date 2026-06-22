@@ -1,6 +1,6 @@
 {
   "generated_by": "build_predicted_occurrence_research_queue.py",
-  "generated_at": "2026-06-22T13:42:00.073389+00:00",
+  "generated_at": "2026-06-22T13:49:08.078654+00:00",
   "scope": "read_only_predicted_date_source_research_queue",
   "sources": {
     "master_db": "data/bon_odori_master.sqlite"
@@ -64,8 +64,13 @@
         }
       ],
       "source_checked_at": "2026-06-22",
-      "source_review": "previous_year_official_source",
-      "source_note": "大正大学 source confirms the 2025 第15回 event; 2026 needs a new current-year source.",
+      "source_review": "current_year_source_not_found",
+      "source_note": "大正大学2026最新ニュース and 2025 第15回 article were rechecked; no 2026 鴨台盆踊り source was found.",
+      "checked_urls": [
+        "https://www.tais.ac.jp/guide/latest_news/",
+        "https://www.tais.ac.jp/guide/latest_news/20250627/92922/",
+        "https://minato-bon-odori.blogspot.com/2021/05/coming-all-h.html"
+      ],
       "priority_score": 12,
       "priority_label": "P0",
       "recommended_action": "source_recheck_before_promotion",
@@ -115,8 +120,13 @@
         }
       ],
       "source_checked_at": "2026-06-22",
-      "source_review": "previous_year_third_party_source",
-      "source_note": "TokyoFesta source confirms 2025-07-19 to 2025-07-21 and links the organizer site; recheck organizer for 2026.",
+      "source_review": "current_year_source_not_found",
+      "source_note": "Jiyugaoka official 2026 event list still shows no July event; TokyoFesta remains 2025 evidence only.",
+      "checked_urls": [
+        "https://www.jiyugaoka-abc.com/event/",
+        "https://tokyofesta.com/23ku/23804/",
+        "https://minato-bon-odori.blogspot.com/2021/05/coming-all-h.html"
+      ],
       "priority_score": 11,
       "priority_label": "P0",
       "recommended_action": "source_recheck_before_promotion",
@@ -166,8 +176,12 @@
         }
       ],
       "source_checked_at": "2026-06-22",
-      "source_review": "previous_year_local_media_source",
-      "source_note": "OMOHARAREAL source is 令和7年/2025 coverage; use it only as recurrence evidence.",
+      "source_review": "current_year_source_not_found",
+      "source_note": "OMOHARAREAL source is 令和7年/2025 coverage and the current bon-odori index had no 2026 row; keep as prediction.",
+      "checked_urls": [
+        "https://omoharareal.com/navi/news/detail/5157",
+        "https://minato-bon-odori.blogspot.com/2021/05/coming-all-h.html"
+      ],
       "priority_score": 9,
       "priority_label": "P0",
       "recommended_action": "source_recheck_before_promotion",
@@ -217,8 +231,13 @@
         }
       ],
       "source_checked_at": "2026-06-22",
-      "source_review": "previous_year_official_source",
-      "source_note": "Marunouchi.com source confirms 2025-07-25 to 2025-07-26 at 行幸通り, not a 2026 date.",
+      "source_review": "current_year_source_not_found",
+      "source_note": "Marunouchi.com event index and 2025 article were rechecked; no 2026 丸の内de盆踊り source was found.",
+      "checked_urls": [
+        "https://www.marunouchi.com/pickup/event/",
+        "https://www.marunouchi.com/pickup/event/6763/",
+        "https://minato-bon-odori.blogspot.com/2021/05/coming-all-h.html"
+      ],
       "priority_score": 9,
       "priority_label": "P0",
       "recommended_action": "source_recheck_before_promotion",
@@ -280,6 +299,7 @@
       "source_checked_at": "2026-06-22",
       "source_review": "previous_year_or_archival_official_source",
       "source_note": "Existing shrine source is recurrence evidence only; confirm 2026 before creating an occurrence.",
+      "checked_urls": [],
       "priority_score": 8,
       "priority_label": "P1",
       "recommended_action": "queue_for_source_recheck",
@@ -331,6 +351,7 @@
       "source_checked_at": "2026-06-22",
       "source_review": "previous_year_third_party_source",
       "source_note": "TokyoFesta source confirms 2025-08-16 to 2025-08-17, not a 2026 date.",
+      "checked_urls": [],
       "priority_score": 8,
       "priority_label": "P1",
       "recommended_action": "queue_for_source_recheck",
@@ -382,6 +403,7 @@
       "source_checked_at": "2026-06-22",
       "source_review": "previous_year_event_source",
       "source_note": "Existing source is prior-year event evidence; confirm 2026 with organizer or official area source before promotion.",
+      "checked_urls": [],
       "priority_score": 8,
       "priority_label": "P1",
       "recommended_action": "queue_for_source_recheck",
@@ -433,6 +455,7 @@
       "source_checked_at": "2026-06-22",
       "source_review": "previous_year_social_source",
       "source_note": "Existing X source is prior-year evidence and the prediction confidence is low; require stronger 2026 confirmation.",
+      "checked_urls": [],
       "priority_score": 4,
       "priority_label": "P2",
       "recommended_action": "keep_prediction_queue_only",
