@@ -1,6 +1,6 @@
 {
   "generated_by": "audit_master_rdb.py",
-  "generated_at": "2026-06-22T14:50:17.299939+00:00",
+  "generated_at": "2026-06-22T14:54:17.737746+00:00",
   "database": "data/bon_odori_master.sqlite",
   "table_counts": {
     "event_investigation_tasks": 79,
@@ -86,7 +86,7 @@
           "notion_db": true,
           "song_occurrences": false
         },
-        "resolution": "Rebuild the master DB from the current source snapshots during Ph2 cutover to clear benign source drift."
+        "resolution": "Refresh the master DB from current source snapshots with a state-preserving process during Ph2 cutover; do not force-rebuild after DB-only review state exists."
       }
     }
   ]

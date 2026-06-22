@@ -175,7 +175,10 @@ def audit(args):
                         "manifest_source_checksums": manifest_checksums,
                         "current_source_checksums": current_checksums,
                         "source_drift": source_drift,
-                        "resolution": "Rebuild the master DB from the current source snapshots during Ph2 cutover to clear benign source drift.",
+                        "resolution": (
+                            "Refresh the master DB from current source snapshots with a state-preserving "
+                            "process during Ph2 cutover; do not force-rebuild after DB-only review state exists."
+                        ),
                     },
                 )
             )

@@ -1,6 +1,6 @@
 # Master RDB next phase preflight
 
-- generated_at: 2026-06-22T14:52:00Z
+- generated_at: 2026-06-22T15:00:00Z
 - generated_by: おと（Codex）
 - status: ready_for_operator_decision
 - current_local_phase: complete_for_local_rdb_phase
@@ -36,7 +36,9 @@
   - `data/ph2_master_to_notion_sync_dry_run.json`
   - `data/ph2_master_to_notion_sync_tmp_apply_db_dry_run.json`
 - source snapshot drift: `data/notion_snapshot.sqlite` was refreshed after the current master DB build, so `audit_master_rdb.py` reports one medium `source_snapshot_drift` issue.
-- next local-only step before any apply: rebuild the master DB from the current source snapshots, then rerun audit and dry-run reports.
+- rebuild safety check: plain `python3 build_master_rdb.py` refuses to overwrite the existing master DB; this guard is working.
+- do not force rebuild from snapshot at this stage: a temp rebuild from current snapshots would drop DB-only review state (`notion_sync_jobs`, `predicted_occurrence_dates`, `event_investigation_tasks`, `historical_promotion_candidates`).
+- next local-only step before any apply: design or run a state-preserving source refresh, then rerun audit and dry-run reports.
 
 ## Public Preflight
 

@@ -1,6 +1,6 @@
 {
   "generated_by": "おと（Codex）",
-  "generated_at": "2026-06-22T14:52:00Z",
+  "generated_at": "2026-06-22T15:00:00Z",
   "phase": "master_rdb_next_phase_preflight",
   "status": "ready_for_operator_decision",
   "current_local_phase": "complete_for_local_rdb_phase",
@@ -60,7 +60,28 @@
       "severity": "medium",
       "issue_type": "source_snapshot_drift",
       "reason": "data/notion_snapshot.sqlite was refreshed after the current master DB build.",
-      "next_local_only_step": "Rebuild the master DB from the current source snapshots, then rerun audit and dry-run reports before any apply."
+      "next_local_only_step": "Design or run a state-preserving source refresh, then rerun audit and dry-run reports before any apply."
+    },
+    "rebuild_safety_check": {
+      "plain_build_master_rdb_refuses_existing_db": true,
+      "do_not_force_rebuild_from_snapshot": true,
+      "reason": "A temp rebuild from current snapshots would drop DB-only review state.",
+      "current_master_db_state_counts": {
+        "venues": 215,
+        "event_occurrences": 222,
+        "notion_sync_jobs": 10,
+        "predicted_occurrence_dates": 12,
+        "event_investigation_tasks": 79,
+        "historical_promotion_candidates": 15
+      },
+      "fresh_snapshot_rebuild_counts": {
+        "venues": 213,
+        "event_occurrences": 222,
+        "notion_sync_jobs": 0,
+        "predicted_occurrence_dates": 0,
+        "event_investigation_tasks": 0,
+        "historical_promotion_candidates": 0
+      }
     }
   },
   "public_preflight": {

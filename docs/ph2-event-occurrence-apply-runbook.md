@@ -40,8 +40,10 @@ Expected current result after 荏原第一 and 品川第二 have already been ap
 - Current official auto-apply plan: `applied=0`, because the remaining current
   official candidate, 荏原第五, requires a new venue review.
 - 荏原第五 venue-change dry-run: `issues=0`.
-- Audit may report medium `source_snapshot_drift` until the master DB is rebuilt
-  from the latest Notion/source snapshots during cutover.
+- Audit may report medium `source_snapshot_drift` until the master DB is
+  refreshed from the latest Notion/source snapshots during cutover while
+  preserving DB-only review state. Do not force-rebuild from snapshots after
+  review queues or apply state have been recorded in the master DB.
 
 ## Step 1: RDB apply only
 
