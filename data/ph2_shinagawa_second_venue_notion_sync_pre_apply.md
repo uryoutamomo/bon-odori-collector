@@ -33,4 +33,3 @@ The snapshot refresh is mandatory because drift detection uses `data/notion_snap
 | field | current Notion snapshot | proposed | changed |
 | --- | --- | --- | --- |
 | 住所 | 東京都品川区南品儑2-8-23 | 東京都品川区南品川2-8-23 | True |
-

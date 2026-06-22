@@ -38,4 +38,3 @@ The snapshot refresh is mandatory because drift detection uses `data/notion_snap
 | 情報源URL | https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html | https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html | False |
 | 会場 | 城南小学校 | 天妙国寺 | True |
 | 会場ページID | 3718be04-e762-8172-aa0d-c778081d41a0 | 3718be04-e762-816e-b1c0-ed3e65521bcb | True |
-

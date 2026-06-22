@@ -30,9 +30,9 @@
 
 ## Skipped
 
-- 品川区民まつり 品川第二地区: not_selected_mutation_type 
-- 品川区民まつり 荏原第一地区: not_selected_mutation_type 
-- 品川区民まつり 荏原第五地区: not_selected_mutation_type 
-- 増上寺 地蔵尊盆踊り大会: not_selected_mutation_type 
-- 旗岡八幡神社例大祭: not_selected_mutation_type 
-- 盆☆Dance 夏休み最後の土曜は校庭で踊ろう！: not_selected_mutation_type 
+- 品川区民まつり 品川第二地区: not_selected_mutation_type
+- 品川区民まつり 荏原第一地区: not_selected_mutation_type
+- 品川区民まつり 荏原第五地区: not_selected_mutation_type
+- 増上寺 地蔵尊盆踊り大会: not_selected_mutation_type
+- 旗岡八幡神社例大祭: not_selected_mutation_type
+- 盆☆Dance 夏休み最後の土曜は校庭で踊ろう！: not_selected_mutation_type

@@ -22,17 +22,17 @@
 
 ## Skipped
 
-- 濱町音頭盆踊り大会: not_selected_mutation_type 
-- 銀座一丁目東町会・新富町会 納涼盆踊り大会: not_selected_mutation_type 
-- ゐの市盆踊り～不忍夢～: not_selected_mutation_type 
-- 京橋盆踊り: not_selected_mutation_type 
-- 品川区民まつり 品川第二地区: already_applied 
-- 品川区民まつり 荏原第一地区: already_applied 
-- 品川区民まつり 荏原第五地区: already_applied 
-- 増上寺 地蔵尊盆踊り大会: not_selected_mutation_type 
-- 新宿中央公園夏祭り 納涼盆踊り大会: not_selected_mutation_type 
-- 旗岡八幡神社例大祭: not_selected_mutation_type 
-- 森下二丁目盆踊り: not_selected_mutation_type 
-- 盆☆Dance 夏休み最後の土曜は校庭で踊ろう！: not_selected_mutation_type 
-- 赤坂夏おどり（旧 赤坂盆踊り）: not_selected_mutation_type 
-- 都の辰巳深川 臨海ぼんおどり: not_selected_mutation_type 
+- 濱町音頭盆踊り大会: not_selected_mutation_type
+- 銀座一丁目東町会・新富町会 納涼盆踊り大会: not_selected_mutation_type
+- ゐの市盆踊り～不忍夢～: not_selected_mutation_type
+- 京橋盆踊り: not_selected_mutation_type
+- 品川区民まつり 品川第二地区: already_applied
+- 品川区民まつり 荏原第一地区: already_applied
+- 品川区民まつり 荏原第五地区: already_applied
+- 増上寺 地蔵尊盆踊り大会: not_selected_mutation_type
+- 新宿中央公園夏祭り 納涼盆踊り大会: not_selected_mutation_type
+- 旗岡八幡神社例大祭: not_selected_mutation_type
+- 森下二丁目盆踊り: not_selected_mutation_type
+- 盆☆Dance 夏休み最後の土曜は校庭で踊ろう！: not_selected_mutation_type
+- 赤坂夏おどり（旧 赤坂盆踊り）: not_selected_mutation_type
+- 都の辰巳深川 臨海ぼんおどり: not_selected_mutation_type

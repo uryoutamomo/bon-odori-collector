@@ -20,16 +20,16 @@
 
 ## Skipped
 
-- 濱町音頭盆踊り大会: not_current_official_mutation 
-- 銀座一丁目東町会・新富町会 納涼盆踊り大会: not_current_official_mutation 
-- ゐの市盆踊り～不忍夢～: not_current_official_mutation 
-- 京橋盆踊り: not_current_official_mutation 
-- 品川区民まつり 品川第二地区: event_filter 
-- 品川区民まつり 荏原第五地区: event_filter 
-- 増上寺 地蔵尊盆踊り大会: not_current_official_mutation 
-- 新宿中央公園夏祭り 納涼盆踊り大会: not_current_official_mutation 
-- 旗岡八幡神社例大祭: not_current_official_mutation 
-- 森下二丁目盆踊り: not_current_official_mutation 
-- 盆☆Dance 夏休み最後の土曜は校庭で踊ろう！: not_current_official_mutation 
-- 赤坂夏おどり（旧 赤坂盆踊り）: not_current_official_mutation 
-- 都の辰巳深川 臨海ぼんおどり: not_current_official_mutation 
+- 濱町音頭盆踊り大会: not_current_official_mutation
+- 銀座一丁目東町会・新富町会 納涼盆踊り大会: not_current_official_mutation
+- ゐの市盆踊り～不忍夢～: not_current_official_mutation
+- 京橋盆踊り: not_current_official_mutation
+- 品川区民まつり 品川第二地区: event_filter
+- 品川区民まつり 荏原第五地区: event_filter
+- 増上寺 地蔵尊盆踊り大会: not_current_official_mutation
+- 新宿中央公園夏祭り 納涼盆踊り大会: not_current_official_mutation
+- 旗岡八幡神社例大祭: not_current_official_mutation
+- 森下二丁目盆踊り: not_current_official_mutation
+- 盆☆Dance 夏休み最後の土曜は校庭で踊ろう！: not_current_official_mutation
+- 赤坂夏おどり（旧 赤坂盆踊り）: not_current_official_mutation
+- 都の辰巳深川 臨海ぼんおどり: not_current_official_mutation

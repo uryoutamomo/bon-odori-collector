@@ -38,4 +38,3 @@ The snapshot refresh is mandatory because drift detection uses `data/notion_snap
 | 情報源URL | https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html | https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html | False |
 | 会場 | 小山台小学校 | 小山台小学校 | False |
 | 会場ページID | 3718be04-e762-815c-9681-e985b9e2fc4d | 3718be04-e762-815c-9681-e985b9e2fc4d | False |
-
