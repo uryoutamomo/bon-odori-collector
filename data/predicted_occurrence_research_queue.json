@@ -1,6 +1,6 @@
 {
   "generated_by": "build_predicted_occurrence_research_queue.py",
-  "generated_at": "2026-06-22T13:29:24.217971+00:00",
+  "generated_at": "2026-06-22T13:42:00.073389+00:00",
   "scope": "read_only_predicted_date_source_research_queue",
   "sources": {
     "master_db": "data/bon_odori_master.sqlite"
@@ -9,14 +9,14 @@
     "today": "2026-06-22"
   },
   "summary": {
-    "item_count": 9,
+    "item_count": 8,
     "by_priority": {
-      "P0": 5,
+      "P0": 4,
       "P1": 3,
       "P2": 1
     },
     "by_action": {
-      "source_recheck_before_promotion": 5,
+      "source_recheck_before_promotion": 4,
       "queue_for_source_recheck": 3,
       "keep_prediction_queue_only": 1
     },
@@ -122,57 +122,6 @@
       "recommended_action": "source_recheck_before_promotion",
       "reason_codes": [
         "within_30_days",
-        "medium_prediction_confidence",
-        "weekday_based_prediction"
-      ]
-    },
-    {
-      "predicted_date_id": "preddate_6e157d3b898d1a01",
-      "event_name": "第28回新橋こいち祭 盆踊り",
-      "predicted_year": 2026,
-      "predicted_date_start": "2026-07-23",
-      "predicted_date_end": "2026-07-23",
-      "days_until_predicted_start": 31,
-      "basis": "7月第4木曜",
-      "basis_type": "weekday_based",
-      "rule_type": "weekday_nth",
-      "confidence": "medium",
-      "score": 0.7,
-      "usual_venue": "桜田公園",
-      "area": "",
-      "source_url": "http://www.shinbashi.net/top/koichi/2025/greeting/",
-      "evidence_years": [
-        2023,
-        2025
-      ],
-      "evidence_rows": [
-        {
-          "confidence": "medium",
-          "date_end": "2023-07-27",
-          "date_start": "2023-07-27",
-          "duration_days": 1,
-          "source_video_count": 3,
-          "weekday_start": "木",
-          "year": 2023
-        },
-        {
-          "confidence": "high",
-          "date_end": "2025-07-24",
-          "date_start": "2025-07-24",
-          "duration_days": 1,
-          "source_video_count": 37,
-          "weekday_start": "木",
-          "year": 2025
-        }
-      ],
-      "source_checked_at": "2026-06-22",
-      "source_review": "previous_year_official_source",
-      "source_note": "Existing 新橋こいち祭 source is 2025 material; confirm the 2026 program before promotion.",
-      "priority_score": 9,
-      "priority_label": "P0",
-      "recommended_action": "source_recheck_before_promotion",
-      "reason_codes": [
-        "within_45_days",
         "medium_prediction_confidence",
         "weekday_based_prediction"
       ]

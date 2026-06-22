@@ -1,6 +1,6 @@
 # Master RDB audit
 
-- generated_at: 2026-06-22T13:24:05.991820+00:00
+- generated_at: 2026-06-22T13:38:53.374193+00:00
 - database: data/bon_odori_master.sqlite
 - issue_count: 0
 - issues_by_severity: {}
@@ -17,7 +17,7 @@
 - notion_sync_jobs: 10
 - observed_occurrence_songs: 28105
 - observed_occurrences: 1856
-- occurrence_dates: 170
+- occurrence_dates: 171
 - occurrence_evidence_links: 0
 - occurrence_song_evidence_links: 485
 - occurrence_songs: 308
@@ -52,7 +52,7 @@
 - predicted_occurrence_dates_date_based: 3
 - predicted_occurrence_dates_weekday_based: 9
 - predicted_occurrence_dates_year_mismatch: 0
-- predicted_occurrence_dates_detached_series_only: 9
-- predicted_occurrence_dates_superseded_by_curated: 2
+- predicted_occurrence_dates_detached_series_only: 8
+- predicted_occurrence_dates_superseded_by_curated: 3
 - predicted_occurrence_dates_matches_curated: 1
 - predicted_occurrence_date_sync_jobs: 10

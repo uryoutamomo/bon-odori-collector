@@ -81,7 +81,66 @@ def curated_2026_occurrence_by_name(conn, prediction):
     return matches[0] if matches else None
 
 
+def linked_curated_occurrence(conn, prediction):
+    if not prediction.get("target_occurrence_id"):
+        return None
+    matches = rows(
+        conn,
+        """
+        SELECT o.occurrence_id, o.series_id, s.canonical_name AS series_name,
+               o.display_name, o.event_year, o.date_start, o.date_end,
+               o.date_status, o.lifecycle_status, o.confidence, o.source_url,
+               v.canonical_name AS venue_name
+        FROM event_occurrences o
+        JOIN event_series s ON s.series_id = o.series_id
+        LEFT JOIN venues v ON v.venue_id = o.venue_id
+        WHERE o.occurrence_id = ?
+          AND o.event_year = ?
+          AND o.date_status IN ('confirmed', 'ended')
+        """,
+        (prediction["target_occurrence_id"], prediction["predicted_year"]),
+    )
+    return matches[0] if matches else None
+
+
+def classify_against_curated(prediction, curated, linked=False):
+    predicted_start = prediction["date_start"]
+    predicted_end = prediction["date_end"] or prediction["date_start"]
+    curated_start = curated["date_start"]
+    curated_end = curated["date_end"] or curated["date_start"]
+    if predicted_start == curated_start and predicted_end == curated_end:
+        new_status = "matches_curated"
+        action = "already_matches_curated" if prediction["application_status"] == new_status else "mark_matches_curated"
+        reason = "linked_occurrence_matches_curated" if linked else "predicted_date_matches_curated_occurrence"
+    else:
+        new_status = "superseded_by_curated"
+        action = (
+            "already_superseded_by_curated"
+            if prediction["application_status"] == new_status
+            else "mark_superseded_by_curated"
+        )
+        reason = (
+            "linked_occurrence_has_different_confirmed_date"
+            if linked
+            else "curated_occurrence_has_different_confirmed_date"
+        )
+    return {
+        "predicted_date_id": prediction["predicted_date_id"],
+        "event_name": prediction["target_event_name"],
+        "current_status": prediction["application_status"],
+        "new_status": new_status,
+        "review_action": action,
+        "reason": reason,
+        "predicted": prediction,
+        "curated_occurrence": curated,
+    }
+
+
 def classify_prediction(conn, prediction):
+    linked_curated = linked_curated_occurrence(conn, prediction)
+    if linked_curated:
+        return classify_against_curated(prediction, linked_curated, linked=True)
+
     curated = curated_2026_occurrence(conn, prediction)
     if not curated:
         same_name_curated = curated_2026_occurrence_by_name(conn, prediction)
@@ -104,32 +163,7 @@ def classify_prediction(conn, prediction):
             "predicted": prediction,
             "curated_occurrence": None,
         }
-    predicted_start = prediction["date_start"]
-    predicted_end = prediction["date_end"] or prediction["date_start"]
-    curated_start = curated["date_start"]
-    curated_end = curated["date_end"] or curated["date_start"]
-    if predicted_start == curated_start and predicted_end == curated_end:
-        new_status = "matches_curated"
-        action = "already_matches_curated" if prediction["application_status"] == new_status else "mark_matches_curated"
-        reason = "predicted_date_matches_curated_occurrence"
-    else:
-        new_status = "superseded_by_curated"
-        action = (
-            "already_superseded_by_curated"
-            if prediction["application_status"] == new_status
-            else "mark_superseded_by_curated"
-        )
-        reason = "curated_occurrence_has_different_confirmed_date"
-    return {
-        "predicted_date_id": prediction["predicted_date_id"],
-        "event_name": prediction["target_event_name"],
-        "current_status": prediction["application_status"],
-        "new_status": new_status,
-        "review_action": action,
-        "reason": reason,
-        "predicted": prediction,
-        "curated_occurrence": curated,
-    }
+    return classify_against_curated(prediction, curated)
 
 
 def apply_review(conn, item, now):

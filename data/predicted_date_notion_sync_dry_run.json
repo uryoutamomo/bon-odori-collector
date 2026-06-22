@@ -1,6 +1,6 @@
 {
   "generated_by": "sync_master_to_notion.py",
-  "generated_at": "2026-06-22T13:09:34.029680+00:00",
+  "generated_at": "2026-06-22T13:42:00.071545+00:00",
   "mode": "dry_run",
   "apply_performed": false,
   "sources": {
@@ -14,18 +14,18 @@
     "include_dry_run_jobs": true
   },
   "summary": {
-    "selected_jobs": 9,
+    "selected_jobs": 8,
     "ready_jobs": 0,
-    "skipped_jobs": 9,
+    "skipped_jobs": 8,
     "applied_jobs": 0,
     "jobs_by_direction": {
-      "rdb_to_notion_dry_run": 9
+      "rdb_to_notion_dry_run": 8
     },
     "jobs_by_target_table": {
-      "predicted_occurrence_dates": 9
+      "predicted_occurrence_dates": 8
     },
     "issues_by_severity": {
-      "medium": 9
+      "medium": 8
     }
   },
   "applied_job_ids": [],
@@ -308,103 +308,6 @@
           "field": "会場候補",
           "current": "",
           "proposed": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
-          "changed": true
-        }
-      ],
-      "properties": {},
-      "issues": [
-        {
-          "severity": "medium",
-          "issue_type": "predicted_occurrence_date_jobs_are_review_only",
-          "detail": "sync_master_to_notion does not create predicted Notion events directly"
-        }
-      ],
-      "skip_reason": "prediction_review_only"
-    },
-    {
-      "job": {
-        "job_id": "nsj_9699bcb840c2a9ed",
-        "direction": "rdb_to_notion_dry_run",
-        "target_table": "predicted_occurrence_dates",
-        "target_id": "preddate_6e157d3b898d1a01",
-        "notion_source_key": "events",
-        "notion_page_id": "",
-        "status": "pending",
-        "requested_by": "build_historical_promotion_candidates.py",
-        "requested_at": "2026-06-22T01:21:59.620223+00:00",
-        "payload_json": null
-      },
-      "payload": {
-        "action": "create_predicted_2026_occurrence",
-        "application_status": "candidate_for_2026_occurrence",
-        "basis": "7月第4木曜",
-        "basis_type": "weekday_based",
-        "basis_type_label": "曜日ベース",
-        "confidence": "medium",
-        "confirmed_overwrite_allowed": false,
-        "date_end": "2026-07-23",
-        "date_start": "2026-07-23",
-        "date_status": "predicted",
-        "predicted_year": 2026,
-        "rule_type": "weekday_nth",
-        "target_event_name": "第28回新橋こいち祭 盆踊り"
-      },
-      "target": {
-        "predicted_date_id": "preddate_6e157d3b898d1a01",
-        "event_name": "第28回新橋こいち祭 盆踊り",
-        "series_id": "ser_b25e3d3ce5b22a32",
-        "series_name": "第28回新橋こいち祭 盆踊り",
-        "target_occurrence_id": "",
-        "predicted_year": 2026,
-        "date_start": "2026-07-23",
-        "date_end": "2026-07-23",
-        "date_status": "predicted",
-        "basis_type_label": "曜日ベース",
-        "rule_type": "weekday_nth",
-        "basis": "7月第4木曜",
-        "confidence": "medium",
-        "score": 0.7,
-        "application_status": "candidate_for_2026_occurrence",
-        "venue_name": "桜田公園"
-      },
-      "current_notion_snapshot": {},
-      "proposed_notion_values": {
-        "start_date": "2026-07-23",
-        "end_date": "2026-07-23",
-        "status": "predicted",
-        "venue_names": [
-          "桜田公園"
-        ]
-      },
-      "field_diffs": [
-        {
-          "field": "開催日",
-          "current": "",
-          "proposed": "2026-07-23",
-          "changed": true
-        },
-        {
-          "field": "終了日",
-          "current": "",
-          "proposed": "2026-07-23",
-          "changed": true
-        },
-        {
-          "field": "状態",
-          "current": "",
-          "proposed": "predicted",
-          "changed": true
-        },
-        {
-          "field": "予測根拠",
-          "current": "",
-          "proposed": "7月第4木曜",
-          "changed": true
-        },
-        {
-          "field": "会場候補",
-          "current": "",
-          "proposed": "桜田公園",
           "changed": true
         }
       ],
@@ -922,12 +825,6 @@
       "issue_type": "predicted_occurrence_date_jobs_are_review_only",
       "detail": "sync_master_to_notion does not create predicted Notion events directly",
       "job_id": "nsj_849055fd5e6248ed"
-    },
-    {
-      "severity": "medium",
-      "issue_type": "predicted_occurrence_date_jobs_are_review_only",
-      "detail": "sync_master_to_notion does not create predicted Notion events directly",
-      "job_id": "nsj_9699bcb840c2a9ed"
     },
     {
       "severity": "medium",

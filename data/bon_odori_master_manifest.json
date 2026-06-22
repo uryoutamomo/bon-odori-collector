@@ -15,7 +15,7 @@
     "notion_sync_jobs": 10,
     "observed_occurrence_songs": 28105,
     "observed_occurrences": 1856,
-    "occurrence_dates": 170,
+    "occurrence_dates": 171,
     "occurrence_evidence_links": 0,
     "occurrence_song_evidence_links": 485,
     "occurrence_songs": 308,
@@ -31,7 +31,7 @@
     "notion_db": "20e460fa51a838cfc4e8c3e1a34e51d60707870eb39534d98d8673d1e1d67002",
     "song_occurrences": "2f129469c58dce45b8671dc964b0e62b882c999a06f181172a237ac04bf6e609"
   },
-  "database_checksum": "6927b1050b5f77c3a219197641f0cb983fbf2a49a6a96d1c4aa9be9610710b2e",
+  "database_checksum": "79d9a98f7cef249374fc7f3796ec9ae4832551133c99fc7921c5040d84b71b86",
   "report": "data/master_rdb_ph0_dry_run_report.json",
   "post_build_outputs": {
     "observed_promotion_candidates": "data/observed_promotion_candidates.json",
@@ -43,5 +43,5 @@
     "build_registered_event_investigation_queue.py",
     "build_historical_promotion_candidates.py"
   ],
-  "database_updated_at": "2026-06-22T10:28:27.159571+00:00"
+  "database_updated_at": "2026-06-22T13:38:43.568896+00:00"
 }

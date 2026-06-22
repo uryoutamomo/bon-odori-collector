@@ -1,6 +1,6 @@
 {
   "generated_by": "review_predicted_occurrence_dates.py",
-  "generated_at": "2026-06-22T13:08:26.696536+00:00",
+  "generated_at": "2026-06-22T13:41:48.950461+00:00",
   "scope": "predicted_date_review_no_notion_no_public_json",
   "sources": {
     "master_db": "data/bon_odori_master.sqlite"
@@ -14,9 +14,9 @@
   "summary": {
     "prediction_count": 12,
     "actions": {
-      "keep_prediction_queue": 9,
+      "keep_prediction_queue": 8,
       "already_matches_curated": 1,
-      "already_superseded_by_curated": 2
+      "already_superseded_by_curated": 3
     },
     "applied_count": 0
   },
@@ -151,39 +151,6 @@
         "canonical_name": "歌舞伎町BON ODORI",
         "area": "",
         "usual_venue": "歌舞伎町シネシティ広場"
-      },
-      "curated_occurrence": null
-    },
-    {
-      "predicted_date_id": "preddate_6e157d3b898d1a01",
-      "event_name": "第28回新橋こいち祭 盆踊り",
-      "current_status": "candidate_for_2026_occurrence",
-      "review_action": "keep_prediction_queue",
-      "reason": "no_curated_2026_occurrence",
-      "predicted": {
-        "predicted_date_id": "preddate_6e157d3b898d1a01",
-        "historical_candidate_id": "histprom_0503c97793a6cd7d",
-        "target_series_id": "ser_b25e3d3ce5b22a32",
-        "target_occurrence_id": null,
-        "target_event_name": "第28回新橋こいち祭 盆踊り",
-        "predicted_year": 2026,
-        "date_start": "2026-07-23",
-        "date_end": "2026-07-23",
-        "date_status": "predicted",
-        "basis_type": "weekday_based",
-        "basis_type_label": "曜日ベース",
-        "rule_type": "weekday_nth",
-        "basis": "7月第4木曜",
-        "confidence": "medium",
-        "score": 0.7,
-        "application_status": "candidate_for_2026_occurrence",
-        "source": "event_date_predictions",
-        "source_payload_json": "{\"basis\": \"7月第4木曜\", \"confidence\": \"medium\", \"event_name\": \"第28回新橋こいち祭 盆踊り\", \"evidence_rows\": [{\"confidence\": \"medium\", \"date_end\": \"2023-07-27\", \"date_start\": \"2023-07-27\", \"duration_days\": 1, \"source_video_count\": 3, \"weekday_start\": \"木\", \"year\": 2023}, {\"confidence\": \"high\", \"date_end\": \"2025-07-24\", \"date_start\": \"2025-07-24\", \"duration_days\": 1, \"source_video_count\": 37, \"weekday_start\": \"木\", \"year\": 2025}], \"evidence_years\": [2023, 2025], \"predicted_date_end\": \"2026-07-23\", \"predicted_date_start\": \"2026-07-23\", \"rule_type\": \"weekday_nth\", \"score\": 0.7, \"series_key\": \"30e9a87bdb27\", \"source\": \"event_date_predictions\", \"venue\": \"桜田公園\"}",
-        "created_at": "2026-06-22T01:21:59.620223+00:00",
-        "updated_at": "2026-06-22T01:21:59.620223+00:00",
-        "canonical_name": "第28回新橋こいち祭 盆踊り",
-        "area": "",
-        "usual_venue": "桜田公園"
       },
       "curated_occurrence": null
     },
@@ -325,7 +292,7 @@
       "current_status": "matches_curated",
       "new_status": "matches_curated",
       "review_action": "already_matches_curated",
-      "reason": "predicted_date_matches_curated_occurrence",
+      "reason": "linked_occurrence_matches_curated",
       "predicted": {
         "predicted_date_id": "preddate_82498ebf603e67da",
         "historical_candidate_id": "histprom_ff87fea4662efda4",
@@ -353,6 +320,8 @@
       },
       "curated_occurrence": {
         "occurrence_id": "occ_b5a16804f0be9815",
+        "series_id": "ser_89120beee0d531cf",
+        "series_name": "山王音頭と民踊大会",
         "display_name": "山王音頭と民踊大会",
         "event_year": 2026,
         "date_start": "2026-06-13",
@@ -365,12 +334,59 @@
       }
     },
     {
+      "predicted_date_id": "preddate_6e157d3b898d1a01",
+      "event_name": "第28回新橋こいち祭 盆踊り",
+      "current_status": "superseded_by_curated",
+      "new_status": "superseded_by_curated",
+      "review_action": "already_superseded_by_curated",
+      "reason": "linked_occurrence_has_different_confirmed_date",
+      "predicted": {
+        "predicted_date_id": "preddate_6e157d3b898d1a01",
+        "historical_candidate_id": "histprom_0503c97793a6cd7d",
+        "target_series_id": "ser_b25e3d3ce5b22a32",
+        "target_occurrence_id": "occ_7a555fbc00d0c059",
+        "target_event_name": "第28回新橋こいち祭 盆踊り",
+        "predicted_year": 2026,
+        "date_start": "2026-07-23",
+        "date_end": "2026-07-23",
+        "date_status": "predicted",
+        "basis_type": "weekday_based",
+        "basis_type_label": "曜日ベース",
+        "rule_type": "weekday_nth",
+        "basis": "7月第4木曜",
+        "confidence": "medium",
+        "score": 0.7,
+        "application_status": "superseded_by_curated",
+        "source": "event_date_predictions",
+        "source_payload_json": "{\"basis\": \"7月第4木曜\", \"confidence\": \"medium\", \"event_name\": \"第28回新橋こいち祭 盆踊り\", \"evidence_rows\": [{\"confidence\": \"medium\", \"date_end\": \"2023-07-27\", \"date_start\": \"2023-07-27\", \"duration_days\": 1, \"source_video_count\": 3, \"weekday_start\": \"木\", \"year\": 2023}, {\"confidence\": \"high\", \"date_end\": \"2025-07-24\", \"date_start\": \"2025-07-24\", \"duration_days\": 1, \"source_video_count\": 37, \"weekday_start\": \"木\", \"year\": 2025}], \"evidence_years\": [2023, 2025], \"predicted_date_end\": \"2026-07-23\", \"predicted_date_start\": \"2026-07-23\", \"rule_type\": \"weekday_nth\", \"score\": 0.7, \"series_key\": \"30e9a87bdb27\", \"source\": \"event_date_predictions\", \"venue\": \"桜田公園\"}",
+        "created_at": "2026-06-22T01:21:59.620223+00:00",
+        "updated_at": "2026-06-22T13:38:42.712973+00:00",
+        "canonical_name": "第28回新橋こいち祭 盆踊り",
+        "area": "",
+        "usual_venue": "桜田公園"
+      },
+      "curated_occurrence": {
+        "occurrence_id": "occ_7a555fbc00d0c059",
+        "series_id": "ser_f91d329d77a2eda7",
+        "series_name": "新橋こいち祭",
+        "display_name": "新橋こいち祭",
+        "event_year": 2026,
+        "date_start": "2026-07-23",
+        "date_end": "2026-07-24",
+        "date_status": "confirmed",
+        "lifecycle_status": "published",
+        "confidence": "high",
+        "source_url": "http://www.shinbashi.net/top/koichi/2026/greeting/",
+        "venue_name": "桜田公園"
+      }
+    },
+    {
       "predicted_date_id": "preddate_293a0033eef0419d",
       "event_name": "郡上おどり in 青山",
       "current_status": "superseded_by_curated",
       "new_status": "superseded_by_curated",
       "review_action": "already_superseded_by_curated",
-      "reason": "curated_occurrence_has_different_confirmed_date",
+      "reason": "linked_occurrence_has_different_confirmed_date",
       "predicted": {
         "predicted_date_id": "preddate_293a0033eef0419d",
         "historical_candidate_id": "histprom_3a423c7c36628f83",
@@ -398,6 +414,8 @@
       },
       "curated_occurrence": {
         "occurrence_id": "occ_23ad1c8ae9eb48cf",
+        "series_id": "ser_d39870ddba633c11",
+        "series_name": "郡上おどり in 青山",
         "display_name": "郡上おどり in 青山",
         "event_year": 2026,
         "date_start": "2026-06-26",
@@ -415,7 +433,7 @@
       "current_status": "superseded_by_curated",
       "new_status": "superseded_by_curated",
       "review_action": "already_superseded_by_curated",
-      "reason": "curated_occurrence_has_different_confirmed_date",
+      "reason": "linked_occurrence_has_different_confirmed_date",
       "predicted": {
         "predicted_date_id": "preddate_09b24085f077c855",
         "historical_candidate_id": "histprom_ecd6fc8cd1e68a2d",
@@ -443,6 +461,8 @@
       },
       "curated_occurrence": {
         "occurrence_id": "occ_2704892d424f61c1",
+        "series_id": "ser_fcafc8f922526308",
+        "series_name": "みたままつり 納涼民踊のつどい",
         "display_name": "みたままつり 納涼民踊のつどい",
         "event_year": 2026,
         "date_start": "2026-07-13",

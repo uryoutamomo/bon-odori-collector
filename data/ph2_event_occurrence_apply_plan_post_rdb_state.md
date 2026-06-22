@@ -1,13 +1,13 @@
 # Ph2 event occurrence apply plan
 
-- generated_at: 2026-06-22T13:21:12.450059+00:00
+- generated_at: 2026-06-22T13:42:00.098900+00:00
 - mutation_count: 11
 - mutations_by_type: {'append_historical_reference_without_confirming_2026': 8, 'keep_investigation_queue': 3}
 - blocked_or_review_required_count: 3
 - already_applied_current_official_count: 0
 - already_applied_historical_reference_count: 8
 - predicted_date_job_count: 12
-- predicted_date_jobs_by_application_status: {'candidate_for_2026_occurrence': 9, 'matches_curated': 1, 'superseded_by_curated': 2}
+- predicted_date_jobs_by_application_status: {'candidate_for_2026_occurrence': 8, 'matches_curated': 1, 'superseded_by_curated': 3}
 
 ## Current Official 2026 Mutations
 
@@ -43,13 +43,13 @@
 | 丸の内de盆踊り | 2026-07-31 | 7月の最終金曜 | candidate_for_2026_occurrence | pending |
 | 歌舞伎町BON ODORI | 2026-08-15 | 8月第3土曜 | candidate_for_2026_occurrence | pending |
 | 第15回 鴨台盆踊り | 2026-07-04 to 2026-07-05 | 7月6日前後の週末 | candidate_for_2026_occurrence | pending |
-| 第28回新橋こいち祭 盆踊り | 2026-07-23 | 7月第4木曜 | candidate_for_2026_occurrence | pending |
 | 自由が丘納涼盆踊り大会 | 2026-07-18 to 2026-07-20 | 7月16日前後の土曜 | candidate_for_2026_occurrence | pending |
 | 西久保八幡神社 盆踊り | 2026-08-08 | 8月9日前後の週末 | candidate_for_2026_occurrence | pending |
 | 謝恩納涼盆踊り大会（青山善光寺） | 2026-07-27 | 7月の最終月曜 | candidate_for_2026_occurrence | pending |
 | 赤坂浄土寺盆踊り大会 | 2026-07-26 to 2026-07-27 | 7月26日前後 | candidate_for_2026_occurrence | pending |
 | 山王音頭と民踊大会 | 2026-06-13 to 2026-06-15 | 毎年6/13開始 | matches_curated |  |
 | みたままつり 納涼民踊のつどい | 2026-07-14 to 2026-07-16 | 7月14日前後 | superseded_by_curated |  |
+| 第28回新橋こいち祭 盆踊り | 2026-07-23 | 7月第4木曜 | superseded_by_curated | superseded_by_curated |
 | 郡上おどり in 青山 | 2026-06-19 | 6月17日前後の金曜 | superseded_by_curated | superseded_by_curated |
 
 ## Write Order

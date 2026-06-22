@@ -1,0 +1,197 @@
+{
+  "generated_by": "apply_predicted_occurrence_source_rechecks.py",
+  "generated_at": "2026-06-22T13:38:42.712973+00:00",
+  "mode": "apply",
+  "scope": "rdb_only_no_notion_no_public_json",
+  "sources": {
+    "master_db": "data/bon_odori_master.sqlite"
+  },
+  "outputs": {
+    "target_db": "data/bon_odori_master.sqlite",
+    "dry_run_db": "",
+    "backup_db": "data/backups/bon_odori_master.20260622T133842.712973+0000.sqlite.bak"
+  },
+  "write_guard": {
+    "db_committed": true,
+    "rolled_back": false
+  },
+  "summary": {
+    "applied_count": 1,
+    "skipped_count": 0,
+    "reviewed_only_count": 4,
+    "issues_by_severity": {},
+    "table_counts": {
+      "event_investigation_tasks": 79,
+      "event_occurrences": 222,
+      "event_series": 221,
+      "evidence_items": 28419,
+      "external_record_links": 2654,
+      "historical_promotion_candidates": 15,
+      "master_meta": 0,
+      "notion_sync_jobs": 10,
+      "observed_occurrence_songs": 28105,
+      "observed_occurrences": 1856,
+      "occurrence_dates": 171,
+      "occurrence_evidence_links": 0,
+      "occurrence_song_evidence_links": 485,
+      "occurrence_songs": 308,
+      "predicted_occurrence_dates": 12,
+      "schema_migrations": 1,
+      "song_aliases": 141,
+      "songs": 141,
+      "venue_aliases": 215,
+      "venues": 215,
+      "write_batches": 0
+    },
+    "confirmed_2026_occurrences": 21,
+    "predicted_occurrence_dates_by_status": {
+      "superseded_by_curated": 3,
+      "candidate_for_2026_occurrence": 8,
+      "matches_curated": 1
+    }
+  },
+  "audit": {
+    "issue_count": 0,
+    "issues_by_severity": {}
+  },
+  "applied": [
+    {
+      "event_name": "第28回新橋こいち祭 盆踊り",
+      "predicted_date_id": "preddate_6e157d3b898d1a01",
+      "review_result": "confirmed_existing_occurrence",
+      "target_occurrence_id": "occ_7a555fbc00d0c059",
+      "target_display_name": "新橋こいち祭",
+      "date_start": "2026-07-23",
+      "date_end": "2026-07-24",
+      "venue_name": "桜田公園",
+      "source_url": "http://www.shinbashi.net/top/koichi/2026/greeting/",
+      "source_excerpt": "第29回新橋こいち祭: 2026年7月23日（木）・24日（金）。桜田会場（盆踊り・ステージ・出店）15:00～20:30。",
+      "prediction_resolution": "superseded_by_curated",
+      "notes": "予測は旧系列名かつ7/23単日だったが、既存2026開催回は公式2026概要と一致する日付範囲を持つため公式確認済みに昇格。",
+      "before": {
+        "occurrence_id": "occ_7a555fbc00d0c059",
+        "display_name": "新橋こいち祭",
+        "event_year": 2026,
+        "venue_id": "ven_331b917a98238b0d",
+        "venue_name": "桜田公園",
+        "date_start": "2026-07-23",
+        "date_end": "2026-07-24",
+        "date_status": "predicted",
+        "lifecycle_status": "未確認",
+        "confidence": "unknown",
+        "source_kind": "notion_events",
+        "source_url": "http://www.shinbashi.net/top/koichi/"
+      },
+      "prediction": {
+        "predicted_date_id": "preddate_6e157d3b898d1a01",
+        "target_event_name": "第28回新橋こいち祭 盆踊り",
+        "target_occurrence_id": null,
+        "date_start": "2026-07-23",
+        "date_end": "2026-07-23",
+        "application_status": "candidate_for_2026_occurrence"
+      },
+      "after": {
+        "occurrence_id": "occ_7a555fbc00d0c059",
+        "display_name": "新橋こいち祭",
+        "event_year": 2026,
+        "venue_id": "ven_331b917a98238b0d",
+        "venue_name": "桜田公園",
+        "date_start": "2026-07-23",
+        "date_end": "2026-07-24",
+        "date_status": "confirmed",
+        "lifecycle_status": "published",
+        "confidence": "high",
+        "source_kind": "official_current_year",
+        "source_url": "http://www.shinbashi.net/top/koichi/2026/greeting/"
+      },
+      "prediction_after": {
+        "predicted_date_id": "preddate_6e157d3b898d1a01",
+        "target_event_name": "第28回新橋こいち祭 盆踊り",
+        "target_occurrence_id": "occ_7a555fbc00d0c059",
+        "date_start": "2026-07-23",
+        "date_end": "2026-07-23",
+        "application_status": "superseded_by_curated"
+      },
+      "occurrence_date_id": "odate_29a7c3cbac339634"
+    }
+  ],
+  "skipped": [],
+  "reviewed_only": [
+    {
+      "event_name": "第15回 鴨台盆踊り",
+      "predicted_date_id": "preddate_131b2204d5f23eae",
+      "review_result": "no_current_year_source_found",
+      "checked_urls": [
+        "https://www.tais.ac.jp/guide/latest_news/",
+        "https://www.tais.ac.jp/guide/latest_news/20250627/92922/",
+        "https://minato-bon-odori.blogspot.com/2021/05/coming-all-h.html"
+      ],
+      "notes": "大正大学最新ニュースと現行盆踊り一覧では2026年の鴨台盆踊りを確認できず、2025年公式記事は過去実績として保持。",
+      "prediction": {
+        "predicted_date_id": "preddate_131b2204d5f23eae",
+        "target_event_name": "第15回 鴨台盆踊り",
+        "target_occurrence_id": null,
+        "date_start": "2026-07-04",
+        "date_end": "2026-07-05",
+        "application_status": "candidate_for_2026_occurrence"
+      }
+    },
+    {
+      "event_name": "自由が丘納涼盆踊り大会",
+      "predicted_date_id": "preddate_4176bccdcae25ce9",
+      "review_result": "no_current_year_source_found",
+      "checked_urls": [
+        "https://www.jiyugaoka-abc.com/",
+        "https://www.jiyugaoka-abc.com/event/",
+        "https://tokyofesta.com/23ku/23804/",
+        "https://minato-bon-odori.blogspot.com/2021/05/coming-all-h.html"
+      ],
+      "notes": "自由が丘公式イベント一覧は2026年7月が未更新表示。2025年TokyoFestaは過去実績として保持。",
+      "prediction": {
+        "predicted_date_id": "preddate_4176bccdcae25ce9",
+        "target_event_name": "自由が丘納涼盆踊り大会",
+        "target_occurrence_id": null,
+        "date_start": "2026-07-18",
+        "date_end": "2026-07-20",
+        "application_status": "candidate_for_2026_occurrence"
+      }
+    },
+    {
+      "event_name": "謝恩納涼盆踊り大会（青山善光寺）",
+      "predicted_date_id": "preddate_bd796ef03c38aa69",
+      "review_result": "no_current_year_source_found",
+      "checked_urls": [
+        "https://omoharareal.com/navi/news/detail/5157",
+        "https://minato-bon-odori.blogspot.com/2021/05/coming-all-h.html"
+      ],
+      "notes": "OMOHARAREALは令和7年/2025年記事。現行盆踊り一覧では2026年行を確認できず、予測のまま保持。",
+      "prediction": {
+        "predicted_date_id": "preddate_bd796ef03c38aa69",
+        "target_event_name": "謝恩納涼盆踊り大会（青山善光寺）",
+        "target_occurrence_id": null,
+        "date_start": "2026-07-27",
+        "date_end": "2026-07-27",
+        "application_status": "candidate_for_2026_occurrence"
+      }
+    },
+    {
+      "event_name": "丸の内de盆踊り",
+      "predicted_date_id": "preddate_369836a93ec48b81",
+      "review_result": "no_current_year_source_found",
+      "checked_urls": [
+        "https://www.marunouchi.com/pickup/event/6763/",
+        "https://minato-bon-odori.blogspot.com/2021/05/coming-all-h.html"
+      ],
+      "notes": "Marunouchi.comは2025年の丸の内夏祭り記事。現行盆踊り一覧では2026年行を確認できず、予測のまま保持。",
+      "prediction": {
+        "predicted_date_id": "preddate_369836a93ec48b81",
+        "target_event_name": "丸の内de盆踊り",
+        "target_occurrence_id": null,
+        "date_start": "2026-07-31",
+        "date_end": "2026-07-31",
+        "application_status": "candidate_for_2026_occurrence"
+      }
+    }
+  ],
+  "issues": []
+}
