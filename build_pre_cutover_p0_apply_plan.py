@@ -152,7 +152,8 @@ P0_CLASSIFICATIONS = {
         "recommended_action": "keep_as_date_research_task",
         "confidence": "low",
         "source_url": "https://www.zojoji.or.jp/event/ev_bonodori.html",
-        "notes": "Official annual page confirms the event name but not a usable current-year date.",
+        "source_checked_at": "2026-06-22",
+        "notes": "Official annual page confirms the event name and directs inquiries to 安国殿, but does not publish a usable 2026 date.",
         "requires_human_review": False,
     },
     "旗岡八幡神社例大祭": {
@@ -160,7 +161,8 @@ P0_CLASSIFICATIONS = {
         "recommended_action": "keep_as_date_research_task",
         "confidence": "low",
         "source_url": "https://hatagaokahachiman-jinja.jp/",
-        "notes": "Homepage did not expose a usable 2026 date or bon-odori row in the previous pass.",
+        "source_checked_at": "2026-06-22",
+        "notes": "Homepage news still exposes 令和7年/2025例大祭 material, but not a usable 2026 date or bon-odori row.",
         "requires_human_review": False,
     },
     "盆☆Dance 夏休み最後の土曜は校庭で踊ろう！": {
@@ -168,7 +170,8 @@ P0_CLASSIFICATIONS = {
         "recommended_action": "source_specific_follow_up",
         "confidence": "low",
         "source_url": "https://minato-bon-odori.blogspot.com/",
-        "notes": "Index/map source needs a specific row follow-up.",
+        "source_checked_at": "2026-06-22",
+        "notes": "Current 東京内外の盆踊りマップ upcoming-all page did not expose 盆☆Dance/横川小学校; keep as source-specific follow-up.",
         "requires_human_review": False,
     },
     "品川区民まつり 大崎第一地区": {
@@ -352,8 +355,8 @@ def render_markdown(data):
             "",
             "## Keep In Investigation Queue",
             "",
-            "| event | action | review | source | note |",
-            "| --- | --- | --- | --- | --- |",
+            "| event | action | review | checked | source | note |",
+            "| --- | --- | --- | --- | --- | --- |",
         ]
     )
     for row in data["rows"]:
@@ -361,7 +364,8 @@ def render_markdown(data):
             continue
         lines.append(
             f"| {row['event_name']} | {row['recommended_action']} | "
-            f"{'yes' if row.get('requires_human_review') else ''} | {row.get('source_url', '')} | {row.get('notes', '')} |"
+            f"{'yes' if row.get('requires_human_review') else ''} | "
+            f"{row.get('source_checked_at', '')} | {row.get('source_url', '')} | {row.get('notes', '')} |"
         )
     lines.extend(
         [

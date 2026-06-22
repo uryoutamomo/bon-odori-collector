@@ -1,6 +1,6 @@
 # Pre-cutover P0 apply plan
 
-- generated_at: 2026-06-22T12:53:56.476814+00:00
+- generated_at: 2026-06-22T13:18:18.187294+00:00
 - source_queue: `data/registered_event_investigation_queue.json`
 - source_master_db: `data/bon_odori_master.sqlite`
 - p0_task_count: 12
@@ -33,11 +33,11 @@
 
 ## Keep In Investigation Queue
 
-| event | action | review | source | note |
-| --- | --- | --- | --- | --- |
-| 増上寺 地蔵尊盆踊り大会 | keep_as_date_research_task |  | https://www.zojoji.or.jp/event/ev_bonodori.html | Official annual page confirms the event name but not a usable current-year date. |
-| 旗岡八幡神社例大祭 | keep_as_date_research_task |  | https://hatagaokahachiman-jinja.jp/ | Homepage did not expose a usable 2026 date or bon-odori row in the previous pass. |
-| 盆☆Dance 夏休み最後の土曜は校庭で踊ろう！ | source_specific_follow_up |  | https://minato-bon-odori.blogspot.com/ | Index/map source needs a specific row follow-up. |
+| event | action | review | checked | source | note |
+| --- | --- | --- | --- | --- | --- |
+| 増上寺 地蔵尊盆踊り大会 | keep_as_date_research_task |  | 2026-06-22 | https://www.zojoji.or.jp/event/ev_bonodori.html | Official annual page confirms the event name and directs inquiries to 安国殿, but does not publish a usable 2026 date. |
+| 旗岡八幡神社例大祭 | keep_as_date_research_task |  | 2026-06-22 | https://hatagaokahachiman-jinja.jp/ | Homepage news still exposes 令和7年/2025例大祭 material, but not a usable 2026 date or bon-odori row. |
+| 盆☆Dance 夏休み最後の土曜は校庭で踊ろう！ | source_specific_follow_up |  | 2026-06-22 | https://minato-bon-odori.blogspot.com/ | Current 東京内外の盆踊りマップ upcoming-all page did not expose 盆☆Dance/横川小学校; keep as source-specific follow-up. |
 
 ## Write Policy
 

@@ -1,6 +1,6 @@
 {
   "generated_by": "build_pre_cutover_p0_apply_plan.py",
-  "generated_at": "2026-06-22T12:53:56.476814+00:00",
+  "generated_at": "2026-06-22T13:18:18.187294+00:00",
   "scope": "read_only_local_review_material",
   "source_queue": "data/registered_event_investigation_queue.json",
   "source_master_db": "data/bon_odori_master.sqlite",
@@ -196,7 +196,8 @@
       "recommended_action": "keep_as_date_research_task",
       "confidence": "low",
       "source_url": "https://www.zojoji.or.jp/event/ev_bonodori.html",
-      "notes": "Official annual page confirms the event name but not a usable current-year date.",
+      "source_checked_at": "2026-06-22",
+      "notes": "Official annual page confirms the event name and directs inquiries to 安国殿, but does not publish a usable 2026 date.",
       "requires_human_review": false
     },
     {
@@ -251,7 +252,8 @@
       "recommended_action": "keep_as_date_research_task",
       "confidence": "low",
       "source_url": "https://hatagaokahachiman-jinja.jp/",
-      "notes": "Homepage did not expose a usable 2026 date or bon-odori row in the previous pass.",
+      "source_checked_at": "2026-06-22",
+      "notes": "Homepage news still exposes 令和7年/2025例大祭 material, but not a usable 2026 date or bon-odori row.",
       "requires_human_review": false
     },
     {
@@ -306,7 +308,8 @@
       "recommended_action": "source_specific_follow_up",
       "confidence": "low",
       "source_url": "https://minato-bon-odori.blogspot.com/",
-      "notes": "Index/map source needs a specific row follow-up.",
+      "source_checked_at": "2026-06-22",
+      "notes": "Current 東京内外の盆踊りマップ upcoming-all page did not expose 盆☆Dance/横川小学校; keep as source-specific follow-up.",
       "requires_human_review": false
     },
     {
