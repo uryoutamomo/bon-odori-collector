@@ -1,6 +1,6 @@
 {
   "generated_by": "review_historical_promotion_candidates.py",
-  "generated_at": "2026-06-22T03:27:17.921244+00:00",
+  "generated_at": "2026-06-22T14:13:54.503603+00:00",
   "scope": "read_only_historical_reference_review",
   "sources": {
     "master_db": "data/bon_odori_master.sqlite"
@@ -8,7 +8,7 @@
   "summary": {
     "candidate_count": 15,
     "actions": {
-      "ready_to_insert_historical_reference": 10,
+      "already_has_historical_reference": 10,
       "manual_review_year_only_evidence": 2,
       "series_or_venue_review": 1,
       "manual_review": 2
@@ -32,6 +32,11 @@
         2024,
         2025
       ],
+      "insertable_historical_years": [
+        2023,
+        2024,
+        2025
+      ],
       "exact_dates": {
         "2023": [
           "2023-07-13",
@@ -45,11 +50,13 @@
         ]
       },
       "year_only_evidence": {},
-      "existing_historical_reference_dates": 0,
+      "existing_historical_reference_dates": 3,
       "evidence_url_count": 279,
       "song_title_count": 271,
-      "review_action": "ready_to_insert_historical_reference",
-      "review_reasons": []
+      "review_action": "already_has_historical_reference",
+      "review_reasons": [
+        "historical_reference_already_recorded"
+      ]
     },
     {
       "candidate_id": "histprom_58ee10d9e0fc8f1f",
@@ -67,6 +74,9 @@
         2024,
         2025
       ],
+      "insertable_historical_years": [
+        2024
+      ],
       "exact_dates": {
         "2024": [
           "2024-08-17"
@@ -76,11 +86,13 @@
         ]
       },
       "year_only_evidence": {},
-      "existing_historical_reference_dates": 0,
+      "existing_historical_reference_dates": 1,
       "evidence_url_count": 20,
       "song_title_count": 2,
-      "review_action": "ready_to_insert_historical_reference",
-      "review_reasons": []
+      "review_action": "already_has_historical_reference",
+      "review_reasons": [
+        "historical_reference_already_recorded"
+      ]
     },
     {
       "candidate_id": "histprom_20a7b1e973433bce",
@@ -98,6 +110,9 @@
         2023,
         2024,
         2025
+      ],
+      "insertable_historical_years": [
+        2023
       ],
       "exact_dates": {
         "2023": [
@@ -134,6 +149,9 @@
         2024,
         2025
       ],
+      "insertable_historical_years": [
+        2024
+      ],
       "exact_dates": {
         "2024": [
           "2024-08-17"
@@ -143,11 +161,13 @@
         ]
       },
       "year_only_evidence": {},
-      "existing_historical_reference_dates": 0,
+      "existing_historical_reference_dates": 1,
       "evidence_url_count": 1959,
       "song_title_count": 1886,
-      "review_action": "ready_to_insert_historical_reference",
-      "review_reasons": []
+      "review_action": "already_has_historical_reference",
+      "review_reasons": [
+        "historical_reference_already_recorded"
+      ]
     },
     {
       "candidate_id": "histprom_8cd681bc18bd8173",
@@ -165,6 +185,9 @@
         2024,
         2025
       ],
+      "insertable_historical_years": [
+        2024
+      ],
       "exact_dates": {
         "2024": [
           "2024-07-26"
@@ -175,11 +198,13 @@
         ]
       },
       "year_only_evidence": {},
-      "existing_historical_reference_dates": 0,
+      "existing_historical_reference_dates": 1,
       "evidence_url_count": 8,
       "song_title_count": 23,
-      "review_action": "ready_to_insert_historical_reference",
-      "review_reasons": []
+      "review_action": "already_has_historical_reference",
+      "review_reasons": [
+        "historical_reference_already_recorded"
+      ]
     },
     {
       "candidate_id": "histprom_ff87fea4662efda4",
@@ -198,6 +223,11 @@
         2024,
         2025
       ],
+      "insertable_historical_years": [
+        2023,
+        2024,
+        2025
+      ],
       "exact_dates": {
         "2023": [
           "2023-06-13"
@@ -212,11 +242,13 @@
         ]
       },
       "year_only_evidence": {},
-      "existing_historical_reference_dates": 0,
+      "existing_historical_reference_dates": 3,
       "evidence_url_count": 57,
       "song_title_count": 24,
-      "review_action": "ready_to_insert_historical_reference",
-      "review_reasons": []
+      "review_action": "already_has_historical_reference",
+      "review_reasons": [
+        "historical_reference_already_recorded"
+      ]
     },
     {
       "candidate_id": "histprom_ff950733e63010ca",
@@ -234,6 +266,7 @@
         2024,
         2025
       ],
+      "insertable_historical_years": [],
       "exact_dates": {
         "2025": [
           "2025-09-07"
@@ -267,6 +300,10 @@
         2024,
         2025
       ],
+      "insertable_historical_years": [
+        2023,
+        2024
+      ],
       "exact_dates": {
         "2023": [
           "2023-07-06",
@@ -280,11 +317,13 @@
         ]
       },
       "year_only_evidence": {},
-      "existing_historical_reference_dates": 0,
+      "existing_historical_reference_dates": 2,
       "evidence_url_count": 209,
       "song_title_count": 201,
-      "review_action": "ready_to_insert_historical_reference",
-      "review_reasons": []
+      "review_action": "already_has_historical_reference",
+      "review_reasons": [
+        "historical_reference_already_recorded"
+      ]
     },
     {
       "candidate_id": "histprom_0503c97793a6cd7d",
@@ -302,6 +341,9 @@
         2023,
         2025
       ],
+      "insertable_historical_years": [
+        2023
+      ],
       "exact_dates": {
         "2023": [
           "2023-07-27"
@@ -311,11 +353,13 @@
         ]
       },
       "year_only_evidence": {},
-      "existing_historical_reference_dates": 0,
+      "existing_historical_reference_dates": 1,
       "evidence_url_count": 480,
       "song_title_count": 454,
-      "review_action": "ready_to_insert_historical_reference",
-      "review_reasons": []
+      "review_action": "already_has_historical_reference",
+      "review_reasons": [
+        "historical_reference_already_recorded"
+      ]
     },
     {
       "candidate_id": "histprom_9e66d3b7a3aa4c6d",
@@ -333,6 +377,9 @@
         2024,
         2025
       ],
+      "insertable_historical_years": [
+        2024
+      ],
       "exact_dates": {
         "2024": [
           "2024-07-13",
@@ -344,11 +391,13 @@
         ]
       },
       "year_only_evidence": {},
-      "existing_historical_reference_dates": 0,
+      "existing_historical_reference_dates": 1,
       "evidence_url_count": 37,
       "song_title_count": 14,
-      "review_action": "ready_to_insert_historical_reference",
-      "review_reasons": []
+      "review_action": "already_has_historical_reference",
+      "review_reasons": [
+        "historical_reference_already_recorded"
+      ]
     },
     {
       "candidate_id": "histprom_e54f2816b8af6f41",
@@ -367,6 +416,10 @@
         2024,
         2025
       ],
+      "insertable_historical_years": [
+        2023,
+        2024
+      ],
       "exact_dates": {
         "2023": [
           "2023-08-10",
@@ -380,11 +433,13 @@
         ]
       },
       "year_only_evidence": {},
-      "existing_historical_reference_dates": 0,
+      "existing_historical_reference_dates": 2,
       "evidence_url_count": 890,
       "song_title_count": 849,
-      "review_action": "ready_to_insert_historical_reference",
-      "review_reasons": []
+      "review_action": "already_has_historical_reference",
+      "review_reasons": [
+        "historical_reference_already_recorded"
+      ]
     },
     {
       "candidate_id": "histprom_557fa293eae577ae",
@@ -403,6 +458,10 @@
         2024,
         2025
       ],
+      "insertable_historical_years": [
+        2023,
+        2024
+      ],
       "exact_dates": {
         "2023": [
           "2023-07-26"
@@ -416,11 +475,13 @@
         ]
       },
       "year_only_evidence": {},
-      "existing_historical_reference_dates": 0,
+      "existing_historical_reference_dates": 2,
       "evidence_url_count": 126,
       "song_title_count": 124,
-      "review_action": "ready_to_insert_historical_reference",
-      "review_reasons": []
+      "review_action": "already_has_historical_reference",
+      "review_reasons": [
+        "historical_reference_already_recorded"
+      ]
     },
     {
       "candidate_id": "histprom_3a423c7c36628f83",
@@ -430,13 +491,16 @@
       "target_date_start": "2025-06-20",
       "target_date_end": "2025-06-21",
       "target_date_status": "ended",
-      "venue": null,
+      "venue": "秩父宮ラグビー場駐車場",
       "match_score": 5,
       "promotion_confidence": "high",
       "auto_promote_eligible": true,
       "historical_years": [
         2024,
         2025
+      ],
+      "insertable_historical_years": [
+        2024
       ],
       "exact_dates": {
         "2024": [
@@ -456,7 +520,6 @@
       "song_title_count": 907,
       "review_action": "series_or_venue_review",
       "review_reasons": [
-        "target_occurrence_missing_venue",
         "many_dates_in_single_year",
         "known_series_split_review"
       ]
@@ -476,6 +539,9 @@
       "historical_years": [
         2024,
         2025
+      ],
+      "insertable_historical_years": [
+        2024
       ],
       "exact_dates": {
         "2024": [
@@ -511,6 +577,7 @@
         2024,
         2025
       ],
+      "insertable_historical_years": [],
       "exact_dates": {
         "2025": [
           "2025-07-05"

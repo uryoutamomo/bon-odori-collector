@@ -39,8 +39,16 @@ def load_payload(value, default):
 def classify(row):
     exact_dates = load_payload(row["exact_dates_json"], {})
     year_only = load_payload(row["year_only_evidence_json"], {})
+    historical_years = load_payload(row["historical_years_json"], [])
     date_counts = [len(value or []) for value in exact_dates.values()]
+    insertable_years = [
+        year
+        for year in historical_years
+        if int(year) < int(row["event_year"]) and exact_dates.get(str(year))
+    ]
     reasons = []
+    if row["existing_historical_reference_dates"] >= len(insertable_years) and insertable_years:
+        reasons.append("historical_reference_already_recorded")
     if not row["auto_promote_eligible"]:
         reasons.append("not_auto_promote_eligible")
     if row["promotion_confidence"] != "high":
@@ -54,7 +62,9 @@ def classify(row):
     if row["target_event_name"] == "郡上おどり in 青山":
         reasons.append("known_series_split_review")
 
-    if "known_series_split_review" in reasons or "target_occurrence_missing_venue" in reasons:
+    if "historical_reference_already_recorded" in reasons:
+        action = "already_has_historical_reference"
+    elif "known_series_split_review" in reasons or "target_occurrence_missing_venue" in reasons:
         action = "series_or_venue_review"
     elif "not_auto_promote_eligible" in reasons or "low_promotion_confidence" in reasons:
         action = "manual_review"
@@ -77,7 +87,8 @@ def classify(row):
         "match_score": row["match_score"],
         "promotion_confidence": row["promotion_confidence"],
         "auto_promote_eligible": bool(row["auto_promote_eligible"]),
-        "historical_years": load_payload(row["historical_years_json"], []),
+        "historical_years": historical_years,
+        "insertable_historical_years": insertable_years,
         "exact_dates": exact_dates,
         "year_only_evidence": year_only,
         "existing_historical_reference_dates": row["existing_historical_reference_dates"],
