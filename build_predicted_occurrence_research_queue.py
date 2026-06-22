@@ -96,8 +96,12 @@ SOURCE_REVIEW = {
     },
     "赤坂浄土寺盆踊り大会": {
         "source_checked_at": "2026-06-22",
-        "source_review": "previous_year_social_source",
-        "source_note": "Existing X source is prior-year evidence and the prediction confidence is low; require stronger 2026 confirmation.",
+        "source_review": "current_year_source_not_found",
+        "source_note": "Web search, current bon-odori index, and existing prior-year X evidence did not confirm 2026; keep low-confidence prediction only.",
+        "checked_urls": [
+            "https://x.com/nsPFhl5JW382058/status/1939266951391613148",
+            "https://minato-bon-odori.blogspot.com/2021/05/coming-all-h.html",
+        ],
     },
 }
 

@@ -1,6 +1,6 @@
 # Predicted occurrence research queue
 
-- generated_at: 2026-06-22T13:52:29.274525+00:00
+- generated_at: 2026-06-22T13:54:30.625260+00:00
 - master_db: `data/bon_odori_master.sqlite`
 - today: 2026-06-22
 - item_count: 8
@@ -16,7 +16,7 @@
 | P1 | 西久保八幡神社 盆踊り | 2026-08-08 | 8月9日前後の週末 | 西久保八幡神社 | current_year_source_not_found | queue_for_source_recheck |
 | P1 | シタマチ.ふるさと盆踊り大会 | 2026-08-15 | 8月第3土曜 | おかちまちパンダ広場（御徒町駅南口駅前広場） | current_year_source_not_found | queue_for_source_recheck |
 | P1 | 歌舞伎町BON ODORI | 2026-08-15 | 8月第3土曜 | 歌舞伎町シネシティ広場 | current_year_source_not_found | queue_for_source_recheck |
-| P2 | 赤坂浄土寺盆踊り大会 | 2026-07-26 to 2026-07-27 | 7月26日前後 | 浄土寺 | previous_year_social_source | keep_prediction_queue_only |
+| P2 | 赤坂浄土寺盆踊り大会 | 2026-07-26 to 2026-07-27 | 7月26日前後 | 浄土寺 | current_year_source_not_found | keep_prediction_queue_only |
 
 ## Source Notes
 
@@ -27,4 +27,4 @@
 - P1 西久保八幡神社 盆踊り: Official shrine article is 令和7年/2025例大祭 evidence and the current bon-odori index had no 2026 row; keep as prediction. checked=https://hachimanjinja.or.jp/main/?p=5604, https://minato-bon-odori.blogspot.com/2021/05/coming-all-h.html
 - P1 シタマチ.ふるさと盆踊り大会: TokyoFesta and 上野が、すき。 sources confirm 2025-08-16 to 2025-08-17; no 2026 source was found. checked=https://tokyofesta.com/23ku/24373/, https://shopblog.dmdepart.jp/ueno/uenogasuki/article/detail/?cd=000993, https://minato-bon-odori.blogspot.com/2021/05/coming-all-h.html
 - P1 歌舞伎町BON ODORI: Shinjuku tourism page is 2025-08-16 evidence and the current bon-odori index had no 2026 row; keep as prediction. checked=https://www.kanko-shinjuku.jp/event/-/article_4606.html, https://minato-bon-odori.blogspot.com/2021/05/coming-all-h.html
-- P2 赤坂浄土寺盆踊り大会: Existing X source is prior-year evidence and the prediction confidence is low; require stronger 2026 confirmation. checked=https://x.com/nsPFhl5JW382058/status/1939266951391613148
+- P2 赤坂浄土寺盆踊り大会: Web search, current bon-odori index, and existing prior-year X evidence did not confirm 2026; keep low-confidence prediction only. checked=https://x.com/nsPFhl5JW382058/status/1939266951391613148, https://minato-bon-odori.blogspot.com/2021/05/coming-all-h.html
