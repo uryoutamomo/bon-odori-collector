@@ -1,6 +1,6 @@
 # Ph2 cutover readiness
 
-- generated_at: 2026-06-22T13:24:05.151865+00:00
+- generated_at: 2026-06-22T13:29:56.933259+00:00
 - scope: read_only_local_review_material
 
 ## Master DB
@@ -41,8 +41,8 @@
 
 ## Worktree Triage
 
-- changed_file_count: 0
-- groups: {}
+- changed_file_count: 2
+- groups: {'new_review_reports': 2}
 
 ### Suggested Review Buckets
 
@@ -56,4 +56,5 @@
 - Keep data/song_occurrences.json and prediction snapshots frozen until Ph2/Ph3 explicitly reopens the legacy path.
 - Do not copy collector data/public/events_public.json wholesale to bon-odori-site until high-risk field diffs are classified.
 - Use predicted_occurrence_dates and event_investigation_tasks as review queues, not as automatic public updates.
+- Process data/predicted_occurrence_research_queue.md from P0 downward; only promote predictions after current-year source confirmation.
 - Proceed with Ph2 dry-run against event_series/event_occurrences before any large Notion or public JSON write.
