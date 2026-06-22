@@ -1,21 +1,21 @@
 # Ph2 cutover readiness
 
-- generated_at: 2026-06-22T13:30:20.031051+00:00
+- generated_at: 2026-06-22T13:43:16.213263+00:00
 - scope: read_only_local_review_material
 
 ## Master DB
 
 - event_series: 221
 - event_occurrences: 222
-- occurrence_dates: 170
+- occurrence_dates: 171
 - predicted_occurrence_dates: 12
 - historical_promotion_candidates: 15
 - event_investigation_tasks: 79
 - occurrences_by_year: {2023: 1, 2025: 99, 2026: 122}
-- occurrences_by_date_status: {'ended': 122, 'confirmed': 20, 'unknown': 77, 'predicted': 3}
+- occurrences_by_date_status: {'ended': 122, 'confirmed': 21, 'unknown': 77, 'predicted': 2}
 - missing_core_fields: {'date_start': 77, 'venue_id': 7, 'source_url': 4}
-- predicted_dates_by_application_status: {'superseded_by_curated': 2, 'candidate_for_2026_occurrence': 9, 'matches_curated': 1}
-- dry_run_sync_jobs_by_status: {'pending': 9, 'superseded_by_curated': 1}
+- predicted_dates_by_application_status: {'superseded_by_curated': 3, 'candidate_for_2026_occurrence': 8, 'matches_curated': 1}
+- dry_run_sync_jobs_by_status: {'pending': 8, 'superseded_by_curated': 2}
 
 ### Duplicate Series Name Examples
 
