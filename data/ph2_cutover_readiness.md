@@ -1,25 +1,24 @@
 # Ph2 cutover readiness
 
-- generated_at: 2026-06-22T01:22:44.994091+00:00
+- generated_at: 2026-06-22T10:30:10.326962+00:00
 - scope: read_only_local_review_material
 
 ## Master DB
 
 - event_series: 221
 - event_occurrences: 222
-- occurrence_dates: 140
+- occurrence_dates: 170
 - predicted_occurrence_dates: 12
 - historical_promotion_candidates: 15
-- event_investigation_tasks: 88
+- event_investigation_tasks: 79
 - occurrences_by_year: {2023: 1, 2025: 99, 2026: 122}
-- occurrences_by_date_status: {'ended': 122, 'confirmed': 15, 'unknown': 82, 'predicted': 3}
-- missing_core_fields: {'date_start': 82, 'venue_id': 12, 'source_url': 6}
-- predicted_dates_by_application_status: {'superseded_by_curated': 1, 'candidate_for_2026_occurrence': 10, 'matches_curated': 1}
-- dry_run_sync_jobs_by_status: {'pending': 10}
+- occurrences_by_date_status: {'ended': 122, 'confirmed': 20, 'unknown': 77, 'predicted': 3}
+- missing_core_fields: {'date_start': 77, 'venue_id': 7, 'source_url': 4}
+- predicted_dates_by_application_status: {'superseded_by_curated': 2, 'candidate_for_2026_occurrence': 9, 'matches_curated': 1}
+- dry_run_sync_jobs_by_status: {'pending': 9, 'superseded_by_curated': 1}
 
 ### Duplicate Series Name Examples
 
-- 郡上おどりin青山: 2
 
 ### Occurrence Split Risk Examples
 
@@ -28,8 +27,8 @@
 
 ## Collector vs Site Public Events
 
-- collector_event_count: 182
-- site_event_count: 182
+- collector_event_count: 183
+- site_event_count: 183
 - collector_only_count: 0
 - site_only_count: 0
 - common_rows_with_diff: 0
@@ -42,8 +41,8 @@
 
 ## Worktree Triage
 
-- changed_file_count: 115
-- groups: {'repo_housekeeping': 1, 'other': 76, 'youtube_song_master_side_changes': 3, 'review_queue_reports': 7, 'public_output_modified': 5, 'review_commit_candidate_scripts': 1, 'public_export_dry_run_artifacts': 4, 'master_rdb_generated_artifacts': 12, 'new_review_reports': 6}
+- changed_file_count: 137
+- groups: {'other': 84, 'review_commit_candidate_scripts': 3, 'master_rdb_generated_artifacts': 24, 'new_review_reports': 26}
 
 ### Suggested Review Buckets
 

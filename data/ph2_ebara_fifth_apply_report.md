@@ -1,14 +1,14 @@
 # Ph2 Ebara fifth RDB apply report
 
-- generated_at: 2026-06-21T14:52:59.740731+00:00
+- generated_at: 2026-06-22T03:35:15.039336+00:00
 - mode: apply
 - target_db: `data/bon_odori_master.sqlite`
 - dry_run_db: ``
-- backup_db: `data/backups/bon_odori_master.20260621T145259.740731+0000.sqlite.bak`
+- backup_db: `data/backups/bon_odori_master.20260622T033515.039336+0000.sqlite.bak`
 - db_committed: True
 - rolled_back: False
 - issues_by_severity: {}
-- audit_issues_by_severity: {'medium': 3}
+- audit_issues_by_severity: {}
 
 ## Change
 

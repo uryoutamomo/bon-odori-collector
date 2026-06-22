@@ -1,0 +1,308 @@
+{
+  "generated_by": "review_public_event_override_absorption.py",
+  "generated_at": "2026-06-22T03:38:22.413749+00:00",
+  "scope": "read_only_public_override_absorption_review",
+  "sources": {
+    "overrides_json": "data/public_event_overrides.json",
+    "master_db": "data/bon_odori_master.sqlite",
+    "notion_snapshot_db": "data/notion_snapshot.sqlite",
+    "public_events_json": "data/public/events_public.json"
+  },
+  "summary": {
+    "override_count": 2,
+    "actions": {
+      "keep_override_text_not_absorbed_upstream": 2
+    }
+  },
+  "review": [
+    {
+      "override_id": "ph2_ebara_fifth_confirmed_2026",
+      "match": {
+        "name": "品川区民まつり 荏原第五地区",
+        "venue": "旧杜松小学校"
+      },
+      "expected_fields": {
+        "venue": "杜松ホーム",
+        "area": "品川区",
+        "months": [
+          7
+        ],
+        "address": "東京都品川区豊町4-24-15",
+        "lat": 35.605442,
+        "lng": 139.722931,
+        "date": "2026-07-18",
+        "date_end": "2026-07-19",
+        "status": "確認済み",
+        "date_confidence": {
+          "level": "confirmed",
+          "label": "確認済み",
+          "description": "開催日として確認済みです"
+        },
+        "date_candidates": [],
+        "hints": [],
+        "jun": {},
+        "description": "杜松ホームを会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
+        "detail": "2026年公式情報: 2026-07-18〜2026-07-19、会場 杜松ホーム（東京都品川区豊町4-24-15）。",
+        "source_urls": [
+          {
+            "label": "公式告知あり",
+            "url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
+            "kind": "official"
+          }
+        ]
+      },
+      "rdb": {
+        "occurrence_id": "occ_5375fcfc19ab3505",
+        "display_name": "品川区民まつり 荏原第五地区",
+        "event_year": 2026,
+        "date_start": "2026-07-18",
+        "date_end": "2026-07-19",
+        "date_status": "confirmed",
+        "confidence": "high",
+        "source_url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
+        "public_intro_override": "旧杜松小学校を会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
+        "series_intro": "旧杜松小学校を会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
+        "venue": "杜松ホーム",
+        "address": "東京都品川区豊町4-24-15"
+      },
+      "notion_snapshot": {
+        "page_id": "37b8be04-e762-8109-bc1d-c5e7b068b281",
+        "event_name": "品川区民まつり 荏原第五地区",
+        "start_date": "",
+        "end_date": "",
+        "status": "未確認",
+        "public_intro": "旧杜松小学校を会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
+        "source_url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
+        "last_edited_time": "2026-06-10T13:12:00.000Z",
+        "venue_ids": [
+          "3718be04-e762-815d-8fa3-c55d00201d3c"
+        ],
+        "venues": [
+          {
+            "page_id": "3718be04-e762-815d-8fa3-c55d00201d3c",
+            "venue_name": "旧杜松小学校",
+            "address": "東京都品川区豊町4-22-15"
+          }
+        ]
+      },
+      "public_event": {
+        "name": "品川区民まつり 荏原第五地区",
+        "name_confirmed": true,
+        "venue": "杜松ホーム",
+        "area": "品川区",
+        "months": [
+          7
+        ],
+        "scale": "中",
+        "access": "東急大井町線 戸越公園駅から徒歩約5分。都営浅草線 中延駅から徒歩約8分",
+        "address": "東京都品川区豊町4-24-15",
+        "lat": 35.605442,
+        "lng": 139.722931,
+        "date": "2026-07-18",
+        "date_end": "2026-07-19",
+        "status": "確認済み",
+        "date_confidence": {
+          "level": "confirmed",
+          "label": "確認済み",
+          "description": "開催日として確認済みです"
+        },
+        "date_candidates": [],
+        "hints": [],
+        "jun": {},
+        "description": "杜松ホームを会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
+        "detail": "2026年公式情報: 2026-07-18〜2026-07-19、会場 杜松ホーム（東京都品川区豊町4-24-15）。",
+        "source_urls": [
+          {
+            "label": "公式告知あり",
+            "url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
+            "kind": "official"
+          }
+        ],
+        "songs": [],
+        "public_status": "upcoming_confirmed",
+        "public_category": "upcoming",
+        "public_status_label": "今後開催",
+        "public_note": "2026年日程確認済み: 2026-07-18〜2026-07-19",
+        "recurrence_label": "2026年確認済み",
+        "recurrence_score": 0.95,
+        "recurrence_reasons": [
+          "2026年日付確認済み"
+        ],
+        "recurrence_cautions": [],
+        "edition_number": null,
+        "last_seen_year": null,
+        "last_seen_dates": [
+          "2026-07-18",
+          "2026-07-19"
+        ],
+        "display_tier": "confirmed"
+      },
+      "rdb_mismatches": [
+        {
+          "field": "status",
+          "expected": "確認済み",
+          "actual": "confirmed"
+        },
+        {
+          "field": "description",
+          "expected": "杜松ホームを会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
+          "actual": "旧杜松小学校を会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。"
+        }
+      ],
+      "notion_mismatches": [
+        {
+          "field": "venue",
+          "expected": "杜松ホーム",
+          "actual": "旧杜松小学校"
+        },
+        {
+          "field": "date",
+          "expected": "2026-07-18",
+          "actual": ""
+        },
+        {
+          "field": "date_end",
+          "expected": "2026-07-19",
+          "actual": ""
+        },
+        {
+          "field": "status",
+          "expected": "確認済み",
+          "actual": "未確認"
+        },
+        {
+          "field": "description",
+          "expected": "杜松ホームを会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
+          "actual": ""
+        }
+      ],
+      "public_mismatches": [],
+      "rdb_core_absorbed": true,
+      "notion_core_absorbed": false,
+      "text_absorbed": false,
+      "public_absorbed": true,
+      "review_action": "keep_override_text_not_absorbed_upstream"
+    },
+    {
+      "override_id": "ph2_shinagawa_second_description_tenmyokokuji",
+      "match": {
+        "name": "品川区民まつり 品川第二地区",
+        "venue": "天妙国寺"
+      },
+      "expected_fields": {
+        "description": "天妙国寺を会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。"
+      },
+      "rdb": {
+        "occurrence_id": "occ_da7ddce69ae96791",
+        "display_name": "品川区民まつり 品川第二地区",
+        "event_year": 2026,
+        "date_start": "2026-07-25",
+        "date_end": "2026-07-26",
+        "date_status": "confirmed",
+        "confidence": "confirmed",
+        "source_url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
+        "public_intro_override": "城南小学校を会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
+        "series_intro": "城南小学校を会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
+        "venue": "天妙国寺",
+        "address": "東京都品川区南品川2-8-23"
+      },
+      "notion_snapshot": {
+        "page_id": "37b8be04-e762-8139-aa26-f7c1ae0a9ae6",
+        "event_name": "品川区民まつり 品川第二地区",
+        "start_date": "2026-07-25",
+        "end_date": "2026-07-26",
+        "status": "確認済み",
+        "public_intro": "城南小学校を会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
+        "source_url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
+        "last_edited_time": "2026-06-21T07:30:00.000Z",
+        "venue_ids": [
+          "3718be04-e762-816e-b1c0-ed3e65521bcb"
+        ],
+        "venues": [
+          {
+            "page_id": "3718be04-e762-816e-b1c0-ed3e65521bcb",
+            "venue_name": "天妙国寺",
+            "address": "東京都品川区南品川2-8-23"
+          }
+        ]
+      },
+      "public_event": {
+        "name": "品川区民まつり 品川第二地区",
+        "name_confirmed": true,
+        "venue": "天妙国寺",
+        "area": "品川区",
+        "months": [
+          7
+        ],
+        "scale": "中",
+        "access": "京急本線 青物横丁駅から徒歩5分（新馬場駅・りんかい線品川シーサイド駅からもアクセス可）",
+        "address": "東京都品川区南品川2-8-23",
+        "lat": null,
+        "lng": null,
+        "date": "2026-07-25",
+        "date_end": "2026-07-26",
+        "status": "確認済み",
+        "date_confidence": {
+          "level": "confirmed",
+          "label": "確認済み",
+          "description": "開催日として確認済みです"
+        },
+        "date_candidates": [],
+        "hints": [
+          [
+            7,
+            25
+          ],
+          [
+            7,
+            26
+          ]
+        ],
+        "jun": {
+          "7": "下旬"
+        },
+        "description": "天妙国寺を会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
+        "detail": "2025-07-26 開催実績。2025 7/26 - 27。「品川区民まつり 品川第二地区」7月26日(土)-27日(日) 17時-21時。 「盆踊り・模擬店 ほか」。 踊りは18時-21時。 練習会 7/23(水)・24(木) 19:00-20:45 城南小学校体育館。 (7/23朝 時間他追記)",
+        "source_urls": [],
+        "songs": [],
+        "public_status": "upcoming_confirmed",
+        "public_category": "upcoming",
+        "public_status_label": "今後開催",
+        "public_note": "2026年日程確認済み: 2026-07-25〜2026-07-26",
+        "recurrence_label": "2026年確認済み",
+        "recurrence_score": 0.95,
+        "recurrence_reasons": [
+          "2026年日付確認済み"
+        ],
+        "recurrence_cautions": [],
+        "edition_number": null,
+        "last_seen_year": null,
+        "last_seen_dates": [
+          "2026-07-25",
+          "2026-07-26"
+        ],
+        "display_tier": "confirmed"
+      },
+      "rdb_mismatches": [
+        {
+          "field": "description",
+          "expected": "天妙国寺を会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
+          "actual": "城南小学校を会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。"
+        }
+      ],
+      "notion_mismatches": [
+        {
+          "field": "description",
+          "expected": "天妙国寺を会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
+          "actual": ""
+        }
+      ],
+      "public_mismatches": [],
+      "rdb_core_absorbed": true,
+      "notion_core_absorbed": true,
+      "text_absorbed": false,
+      "public_absorbed": true,
+      "review_action": "keep_override_text_not_absorbed_upstream"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "generated_by": "dry_run_ph2_event_occurrence_apply.py",
+  "generated_at": "2026-06-22T03:43:42.304271+00:00",
+  "scope": "copied_sqlite_only_no_notion_no_public_json",
+  "sources": {
+    "master_db": "data/bon_odori_master.sqlite",
+    "plan": "data/ph2_event_occurrence_apply_plan.json"
+  },
+  "outputs": {
+    "target_db": "data/ph2_historical_reference_ready_dry_run.sqlite",
+    "dry_run_db": "data/ph2_historical_reference_ready_dry_run.sqlite",
+    "backup_db": ""
+  },
+  "options": {
+    "event_name": null,
+    "include_blocked": false,
+    "mutation_type": "historical_reference",
+    "apply": false
+  },
+  "write_guard": {
+    "db_committed": true,
+    "rolled_back": false,
+    "rollback_reason": ""
+  },
+  "summary": {
+    "selected_count": 0,
+    "applied_count": 0,
+    "skipped_count": 14,
+    "issues_count": 0,
+    "issues_by_severity": {},
+    "dry_run_table_counts": {
+      "event_occurrences": 222,
+      "occurrence_dates": 141,
+      "notion_sync_jobs": 10,
+      "ph2_event_occurrence_sync_jobs": 0
+    }
+  },
+  "applied": [],
+  "skipped": [
+    {
+      "event_name": "濱町音頭盆踊り大会",
+      "reason": "already_applied"
+    },
+    {
+      "event_name": "銀座一丁目東町会・新富町会 納涼盆踊り大会",
+      "reason": "already_applied"
+    },
+    {
+      "event_name": "ゐの市盆踊り～不忍夢～",
+      "reason": "already_applied"
+    },
+    {
+      "event_name": "京橋盆踊り",
+      "reason": "already_applied"
+    },
+    {
+      "event_name": "品川区民まつり 品川第二地区",
+      "reason": "not_selected_mutation_type",
+      "mutation_type": "update_existing_2026_occurrence_from_current_official_source"
+    },
+    {
+      "event_name": "品川区民まつり 荏原第一地区",
+      "reason": "not_selected_mutation_type",
+      "mutation_type": "update_existing_2026_occurrence_from_current_official_source"
+    },
+    {
+      "event_name": "品川区民まつり 荏原第五地区",
+      "reason": "not_selected_mutation_type",
+      "mutation_type": "update_existing_2026_occurrence_from_current_official_source"
+    },
+    {
+      "event_name": "増上寺 地蔵尊盆踊り大会",
+      "reason": "not_selected_mutation_type",
+      "mutation_type": "keep_investigation_queue"
+    },
+    {
+      "event_name": "新宿中央公園夏祭り 納涼盆踊り大会",
+      "reason": "already_applied"
+    },
+    {
+      "event_name": "旗岡八幡神社例大祭",
+      "reason": "not_selected_mutation_type",
+      "mutation_type": "keep_investigation_queue"
+    },
+    {
+      "event_name": "森下二丁目盆踊り",
+      "reason": "already_applied"
+    },
+    {
+      "event_name": "盆☆Dance 夏休み最後の土曜は校庭で踊ろう！",
+      "reason": "not_selected_mutation_type",
+      "mutation_type": "keep_investigation_queue"
+    },
+    {
+      "event_name": "赤坂夏おどり（旧 赤坂盆踊り）",
+      "reason": "already_applied"
+    },
+    {
+      "event_name": "都の辰巳深川 臨海ぼんおどり",
+      "reason": "already_applied"
+    }
+  ],
+  "issues": []
+}

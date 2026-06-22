@@ -1,0 +1,94 @@
+{
+  "generated_by": "apply_reviewed_missing_occurrence_venues.py",
+  "generated_at": "2026-06-22T03:48:23.906157+00:00",
+  "mode": "apply",
+  "scope": "source_master_db_apply_no_notion_no_public_json",
+  "sources": {
+    "master_db": "data/bon_odori_master.sqlite",
+    "review_json": "data/missing_occurrence_venue_review.json"
+  },
+  "outputs": {
+    "target_db": "data/bon_odori_master.sqlite",
+    "dry_run_db": "",
+    "backup_db": "data/backups/bon_odori_master.20260622T034823.906157+0000.sqlite.bak"
+  },
+  "write_guard": {
+    "db_committed": true,
+    "rolled_back": false,
+    "rollback_reason": ""
+  },
+  "summary": {
+    "planned_count": 1,
+    "applied_count": 1,
+    "skipped_count": 0,
+    "issues_count": 0,
+    "issues_by_severity": {},
+    "missing_venue_count": 11,
+    "table_counts": {
+      "event_investigation_tasks": 88,
+      "event_occurrences": 222,
+      "event_series": 221,
+      "evidence_items": 28419,
+      "external_record_links": 2654,
+      "historical_promotion_candidates": 15,
+      "master_meta": 0,
+      "notion_sync_jobs": 10,
+      "observed_occurrence_songs": 28105,
+      "observed_occurrences": 1856,
+      "occurrence_dates": 158,
+      "occurrence_evidence_links": 0,
+      "occurrence_song_evidence_links": 485,
+      "occurrence_songs": 308,
+      "predicted_occurrence_dates": 12,
+      "schema_migrations": 1,
+      "song_aliases": 141,
+      "songs": 141,
+      "venue_aliases": 214,
+      "venues": 214,
+      "write_batches": 0
+    }
+  },
+  "applied": [
+    {
+      "occurrence_id": "occ_16f296f06c6dfa6a",
+      "event_name": "藤沢七夕まつり（DJ盆踊り大会）",
+      "event_year": 2026,
+      "series_id": "ser_67279a1626b2dbb8",
+      "set_series_usual_venue": true,
+      "old_venue_id": "",
+      "new_venue_id": "ven_61c6063cf53195b5",
+      "new_venue_name": "辻堂神台公園",
+      "new_venue_address": "神奈川県藤沢市辻堂神台1-6-2",
+      "confidence": "high",
+      "reason": "retrospective venue registration recorded 辻堂駅北口神台公園 / 辻堂神台公園 for the same 2026-07-04 event",
+      "before": {
+        "occurrence_id": "occ_16f296f06c6dfa6a",
+        "series_id": "ser_67279a1626b2dbb8",
+        "usual_venue_id": null,
+        "display_name": "藤沢七夕まつり（DJ盆踊り大会）",
+        "event_year": 2026,
+        "venue_id": null,
+        "venue_name": null,
+        "date_start": "2026-07-04",
+        "date_end": "",
+        "date_status": "predicted",
+        "source_url": "https://shonan-el.co.jp/event/20260704/"
+      },
+      "after": {
+        "occurrence_id": "occ_16f296f06c6dfa6a",
+        "series_id": "ser_67279a1626b2dbb8",
+        "usual_venue_id": "ven_61c6063cf53195b5",
+        "display_name": "藤沢七夕まつり（DJ盆踊り大会）",
+        "event_year": 2026,
+        "venue_id": "ven_61c6063cf53195b5",
+        "venue_name": "辻堂神台公園",
+        "date_start": "2026-07-04",
+        "date_end": "",
+        "date_status": "predicted",
+        "source_url": "https://shonan-el.co.jp/event/20260704/"
+      }
+    }
+  ],
+  "skipped": [],
+  "issues": []
+}

@@ -1,0 +1,166 @@
+{
+  "generated_by": "apply_reviewed_shinagawa_date_fills.py",
+  "generated_at": "2026-06-22T04:47:38.478643+00:00",
+  "mode": "apply",
+  "scope": "source_master_db_apply_no_notion_no_public_json",
+  "sources": {
+    "master_db": "data/bon_odori_master.sqlite",
+    "official_source": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html"
+  },
+  "outputs": {
+    "target_db": "data/bon_odori_master.sqlite",
+    "dry_run_db": "",
+    "backup_db": "data/backups/bon_odori_master.20260622T044738.478643+0000.sqlite.bak"
+  },
+  "write_guard": {
+    "db_committed": true,
+    "rolled_back": false,
+    "rollback_reason": ""
+  },
+  "summary": {
+    "planned_count": 3,
+    "applied_count": 3,
+    "skipped_count": 0,
+    "issues_count": 0,
+    "issues_by_severity": {},
+    "missing_date_start_count": 77,
+    "table_counts": {
+      "event_investigation_tasks": 88,
+      "event_occurrences": 222,
+      "event_series": 221,
+      "evidence_items": 28419,
+      "external_record_links": 2654,
+      "historical_promotion_candidates": 15,
+      "master_meta": 0,
+      "notion_sync_jobs": 10,
+      "observed_occurrence_songs": 28105,
+      "observed_occurrences": 1856,
+      "occurrence_dates": 162,
+      "occurrence_evidence_links": 0,
+      "occurrence_song_evidence_links": 485,
+      "occurrence_songs": 308,
+      "predicted_occurrence_dates": 12,
+      "schema_migrations": 1,
+      "song_aliases": 141,
+      "songs": 141,
+      "venue_aliases": 215,
+      "venues": 215,
+      "write_batches": 0
+    }
+  },
+  "applied": [
+    {
+      "occurrence_id": "occ_10d1650413afccf4",
+      "event_name": "品川区民まつり 八潮地区",
+      "date_start": "2026-09-20",
+      "date_end": "",
+      "venue_name": "八潮公園",
+      "source_excerpt": "日時 9月20日（日）午前11時～午後8時30分 / 会場 八潮公園多目的広場",
+      "before": {
+        "occurrence_id": "occ_10d1650413afccf4",
+        "display_name": "品川区民まつり 八潮地区",
+        "event_year": 2026,
+        "venue_id": "ven_011d2f1555d9d0bc",
+        "venue_name": "八潮公園",
+        "date_start": "",
+        "date_end": "",
+        "date_status": "unknown",
+        "lifecycle_status": "未確認",
+        "confidence": "unknown",
+        "source_kind": "notion_events",
+        "source_url": "https://www.city.shinagawa.tokyo.jp/PC/kuseizyoho/kuseizyoho-koho/kuseizyoho-koho-kohoshinagawa/index.html"
+      },
+      "occurrence_date_id": "odate_5e27f8467cc07ce8",
+      "after": {
+        "occurrence_id": "occ_10d1650413afccf4",
+        "display_name": "品川区民まつり 八潮地区",
+        "event_year": 2026,
+        "venue_id": "ven_011d2f1555d9d0bc",
+        "venue_name": "八潮公園",
+        "date_start": "2026-09-20",
+        "date_end": "",
+        "date_status": "confirmed",
+        "lifecycle_status": "未確認",
+        "confidence": "high",
+        "source_kind": "official_current_year",
+        "source_url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html"
+      }
+    },
+    {
+      "occurrence_id": "occ_ba6a308f4bcbfff2",
+      "event_name": "品川区民まつり 荏原第三地区",
+      "date_start": "2026-10-18",
+      "date_end": "",
+      "venue_name": "京陽小学校",
+      "source_excerpt": "日時 10月18日（日）午前11時～午後3時 / 会場 京陽小学校",
+      "before": {
+        "occurrence_id": "occ_ba6a308f4bcbfff2",
+        "display_name": "品川区民まつり 荏原第三地区",
+        "event_year": 2026,
+        "venue_id": "ven_1adf67c22092d96d",
+        "venue_name": "京陽小学校",
+        "date_start": "",
+        "date_end": "",
+        "date_status": "unknown",
+        "lifecycle_status": "未確認",
+        "confidence": "unknown",
+        "source_kind": "notion_events",
+        "source_url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html"
+      },
+      "occurrence_date_id": "odate_b1180ce52c59ab6e",
+      "after": {
+        "occurrence_id": "occ_ba6a308f4bcbfff2",
+        "display_name": "品川区民まつり 荏原第三地区",
+        "event_year": 2026,
+        "venue_id": "ven_1adf67c22092d96d",
+        "venue_name": "京陽小学校",
+        "date_start": "2026-10-18",
+        "date_end": "",
+        "date_status": "confirmed",
+        "lifecycle_status": "未確認",
+        "confidence": "high",
+        "source_kind": "official_current_year",
+        "source_url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html"
+      }
+    },
+    {
+      "occurrence_id": "occ_400f1f551ca689a7",
+      "event_name": "品川区民まつり 荏原第四地区",
+      "date_start": "2026-10-11",
+      "date_end": "",
+      "venue_name": "上神明小学校",
+      "source_excerpt": "日時 10月11日（日）午前10時～正午、午後4時～午後7時30分 / 会場 上神明小学校",
+      "before": {
+        "occurrence_id": "occ_400f1f551ca689a7",
+        "display_name": "品川区民まつり 荏原第四地区",
+        "event_year": 2026,
+        "venue_id": "ven_797b7972516e7af7",
+        "venue_name": "上神明小学校",
+        "date_start": "",
+        "date_end": "",
+        "date_status": "unknown",
+        "lifecycle_status": "未確認",
+        "confidence": "unknown",
+        "source_kind": "notion_events",
+        "source_url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html"
+      },
+      "occurrence_date_id": "odate_9e62760c34ec7158",
+      "after": {
+        "occurrence_id": "occ_400f1f551ca689a7",
+        "display_name": "品川区民まつり 荏原第四地区",
+        "event_year": 2026,
+        "venue_id": "ven_797b7972516e7af7",
+        "venue_name": "上神明小学校",
+        "date_start": "2026-10-11",
+        "date_end": "",
+        "date_status": "confirmed",
+        "lifecycle_status": "未確認",
+        "confidence": "high",
+        "source_kind": "official_current_year",
+        "source_url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html"
+      }
+    }
+  ],
+  "skipped": [],
+  "issues": []
+}

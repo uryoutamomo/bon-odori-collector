@@ -1,0 +1,107 @@
+{
+  "generated_by": "review_missing_source_urls.py",
+  "generated_at": "2026-06-22T04:01:28.556069+00:00",
+  "scope": "read_only_missing_source_url_review",
+  "sources": {
+    "master_db": "data/bon_odori_master.sqlite"
+  },
+  "summary": {
+    "missing_source_url_occurrence_count": 4,
+    "actions": {
+      "source_research_required": 4
+    },
+    "ready_source_url_candidate_count": 0
+  },
+  "review": [
+    {
+      "occurrence_id": "occ_ef4845b7ed9ac900",
+      "event_name": "えどぐらん（江東区）",
+      "event_year": 2026,
+      "date_start": "",
+      "date_end": "",
+      "date_status": "unknown",
+      "lifecycle_status": "未確認",
+      "series_id": "ser_b3604da8bab18695",
+      "series_name": "えどぐらん（江東区）",
+      "current_source_kind": "notion_events",
+      "current_source_url": "",
+      "series_source_url": "",
+      "review_action": "source_research_required",
+      "candidate_source_url": "",
+      "candidate_source_kind": "",
+      "confidence": "low",
+      "reason": "name may be ambiguous and no reliable local/public source URL was found",
+      "next_step": "verify event name and source before filling source_url",
+      "local_evidence": [],
+      "matching_sourced_occurrences": []
+    },
+    {
+      "occurrence_id": "occ_a576d93013c35505",
+      "event_name": "すみだ河内音頭 小盆踊り",
+      "event_year": 2026,
+      "date_start": "2026-05-16",
+      "date_end": "",
+      "date_status": "ended",
+      "lifecycle_status": "published",
+      "series_id": "ser_ef27193f7ee6ef2c",
+      "series_name": "すみだ河内音頭 小盆踊り",
+      "current_source_kind": "notion_events",
+      "current_source_url": "",
+      "series_source_url": "",
+      "review_action": "source_research_required",
+      "candidate_source_url": "",
+      "candidate_source_kind": "",
+      "confidence": "low",
+      "reason": "occurrence has a date, but no reliable local/public source URL was found",
+      "next_step": "find organizer or trustworthy event source before filling source_url",
+      "local_evidence": [],
+      "matching_sourced_occurrences": []
+    },
+    {
+      "occurrence_id": "occ_e5ea459ea88de16c",
+      "event_name": "月島第二児童公園 盆踊り",
+      "event_year": 2026,
+      "date_start": "",
+      "date_end": "",
+      "date_status": "unknown",
+      "lifecycle_status": "未確認",
+      "series_id": "ser_831393e548a7e944",
+      "series_name": "月島第二児童公園 盆踊り",
+      "current_source_kind": "notion_events",
+      "current_source_url": "",
+      "series_source_url": "",
+      "review_action": "source_research_required",
+      "candidate_source_url": "",
+      "candidate_source_kind": "",
+      "confidence": "low",
+      "reason": "event name contains a venue-like hint, but no reliable source URL was found",
+      "next_step": "confirm source before linking or creating a venue",
+      "local_evidence": [],
+      "matching_sourced_occurrences": []
+    },
+    {
+      "occurrence_id": "occ_69eb62d9b1773ad9",
+      "event_name": "鉄砲洲児童公園 盆踊り",
+      "event_year": 2026,
+      "date_start": "",
+      "date_end": "",
+      "date_status": "unknown",
+      "lifecycle_status": "未確認",
+      "series_id": "ser_006ddb71d0fc398e",
+      "series_name": "鉄砲洲児童公園 盆踊り",
+      "current_source_kind": "notion_events",
+      "current_source_url": "",
+      "series_source_url": "",
+      "review_action": "source_research_required",
+      "candidate_source_url": "",
+      "candidate_source_kind": "",
+      "confidence": "low",
+      "reason": "local tests contain historical venue text, but no reliable 2026 source URL was found",
+      "next_step": "confirm current source before filling source_url or venue",
+      "local_evidence": [
+        "tests/test_build_youtube_event_review.py"
+      ],
+      "matching_sourced_occurrences": []
+    }
+  ]
+}

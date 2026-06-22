@@ -1,0 +1,171 @@
+{
+  "generated_by": "review_missing_source_urls.py",
+  "generated_at": "2026-06-22T04:01:04.368578+00:00",
+  "scope": "read_only_missing_source_url_review",
+  "sources": {
+    "master_db": "data/bon_odori_master.sqlite"
+  },
+  "summary": {
+    "missing_source_url_occurrence_count": 6,
+    "actions": {
+      "source_research_required": 4,
+      "ready_source_url_candidate": 2
+    },
+    "ready_source_url_candidate_count": 2
+  },
+  "review": [
+    {
+      "occurrence_id": "occ_ef4845b7ed9ac900",
+      "event_name": "えどぐらん（江東区）",
+      "event_year": 2026,
+      "date_start": "",
+      "date_end": "",
+      "date_status": "unknown",
+      "lifecycle_status": "未確認",
+      "series_id": "ser_b3604da8bab18695",
+      "series_name": "えどぐらん（江東区）",
+      "current_source_kind": "notion_events",
+      "current_source_url": "",
+      "series_source_url": "",
+      "review_action": "source_research_required",
+      "candidate_source_url": "",
+      "candidate_source_kind": "",
+      "confidence": "low",
+      "reason": "name may be ambiguous and no reliable local/public source URL was found",
+      "next_step": "verify event name and source before filling source_url",
+      "local_evidence": [],
+      "matching_sourced_occurrences": []
+    },
+    {
+      "occurrence_id": "occ_a576d93013c35505",
+      "event_name": "すみだ河内音頭 小盆踊り",
+      "event_year": 2026,
+      "date_start": "2026-05-16",
+      "date_end": "",
+      "date_status": "ended",
+      "lifecycle_status": "published",
+      "series_id": "ser_ef27193f7ee6ef2c",
+      "series_name": "すみだ河内音頭 小盆踊り",
+      "current_source_kind": "notion_events",
+      "current_source_url": "",
+      "series_source_url": "",
+      "review_action": "source_research_required",
+      "candidate_source_url": "",
+      "candidate_source_kind": "",
+      "confidence": "low",
+      "reason": "occurrence has a date, but no reliable local/public source URL was found",
+      "next_step": "find organizer or trustworthy event source before filling source_url",
+      "local_evidence": [],
+      "matching_sourced_occurrences": []
+    },
+    {
+      "occurrence_id": "occ_31e875571ef97fea",
+      "event_name": "マロニエまつり盆踊り大会",
+      "event_year": 2026,
+      "date_start": "2026-05-09",
+      "date_end": "",
+      "date_status": "ended",
+      "lifecycle_status": "published",
+      "series_id": "ser_0afea6d5ab6225e8",
+      "series_name": "マロニエまつり盆踊り大会",
+      "current_source_kind": "notion_events",
+      "current_source_url": "",
+      "series_source_url": "",
+      "review_action": "ready_source_url_candidate",
+      "candidate_source_url": "https://x.com/1205uzonke/status/2065200648086487508",
+      "candidate_source_kind": "retrospective_x_evidence",
+      "confidence": "high",
+      "reason": "same-date curated 浅草橋マロニエまつり盆踊り occurrence already has this source URL",
+      "next_step": "fill occurrence.source_url only; leave duplicate/alias merge as a separate review",
+      "local_evidence": [
+        "event_occurrences duplicate occ_d5e89254b19fffb5",
+        "data/retrospective_event_research_enriched.md",
+        "apply_retrospective_ready_venue_events.py"
+      ],
+      "matching_sourced_occurrences": [
+        {
+          "occurrence_id": "occ_d5e89254b19fffb5",
+          "display_name": "浅草橋マロニエまつり盆踊り",
+          "event_year": 2026,
+          "date_start": "2026-05-09",
+          "source_url": "https://x.com/1205uzonke/status/2065200648086487508",
+          "series_id": "ser_04d94784a2a09a03",
+          "canonical_name": "浅草橋マロニエまつり盆踊り",
+          "series_source_url": "https://x.com/1205uzonke/status/2065200648086487508"
+        }
+      ]
+    },
+    {
+      "occurrence_id": "occ_e5ea459ea88de16c",
+      "event_name": "月島第二児童公園 盆踊り",
+      "event_year": 2026,
+      "date_start": "",
+      "date_end": "",
+      "date_status": "unknown",
+      "lifecycle_status": "未確認",
+      "series_id": "ser_831393e548a7e944",
+      "series_name": "月島第二児童公園 盆踊り",
+      "current_source_kind": "notion_events",
+      "current_source_url": "",
+      "series_source_url": "",
+      "review_action": "source_research_required",
+      "candidate_source_url": "",
+      "candidate_source_kind": "",
+      "confidence": "low",
+      "reason": "event name contains a venue-like hint, but no reliable source URL was found",
+      "next_step": "confirm source before linking or creating a venue",
+      "local_evidence": [],
+      "matching_sourced_occurrences": []
+    },
+    {
+      "occurrence_id": "occ_69eb62d9b1773ad9",
+      "event_name": "鉄砲洲児童公園 盆踊り",
+      "event_year": 2026,
+      "date_start": "",
+      "date_end": "",
+      "date_status": "unknown",
+      "lifecycle_status": "未確認",
+      "series_id": "ser_006ddb71d0fc398e",
+      "series_name": "鉄砲洲児童公園 盆踊り",
+      "current_source_kind": "notion_events",
+      "current_source_url": "",
+      "series_source_url": "",
+      "review_action": "source_research_required",
+      "candidate_source_url": "",
+      "candidate_source_kind": "",
+      "confidence": "low",
+      "reason": "local tests contain historical venue text, but no reliable 2026 source URL was found",
+      "next_step": "confirm current source before filling source_url or venue",
+      "local_evidence": [
+        "tests/test_build_youtube_event_review.py"
+      ],
+      "matching_sourced_occurrences": []
+    },
+    {
+      "occurrence_id": "occ_90f1aef84c0ad6f7",
+      "event_name": "雷門盆踊り（浅草）",
+      "event_year": 2026,
+      "date_start": "",
+      "date_end": "",
+      "date_status": "unknown",
+      "lifecycle_status": "未確認",
+      "series_id": "ser_57b12dce4d688793",
+      "series_name": "雷門盆踊り（浅草）",
+      "current_source_kind": "notion_events",
+      "current_source_url": "",
+      "series_source_url": "",
+      "review_action": "ready_source_url_candidate",
+      "candidate_source_url": "https://x.com/STBA_Bonodori/status/2059220925862883623",
+      "candidate_source_kind": "retrospective_x_evidence",
+      "confidence": "medium",
+      "reason": "prior retrospective harvest captured a concrete X evidence URL for 雷門盆踊り, but no exact date/venue",
+      "next_step": "fill occurrence.source_url only; keep date and venue research open",
+      "local_evidence": [
+        "data/retrospective_occurrence_dry_run.json",
+        "data/retrospective_occurrence_dry_run.md",
+        "data/voices_seen.json"
+      ],
+      "matching_sourced_occurrences": []
+    }
+  ]
+}

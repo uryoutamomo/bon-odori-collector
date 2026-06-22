@@ -1,0 +1,770 @@
+{
+  "generated_by": "apply_reviewed_historical_references.py",
+  "generated_at": "2026-06-22T03:46:05.439110+00:00",
+  "mode": "apply",
+  "scope": "source_master_db_apply_no_notion_no_public_json",
+  "sources": {
+    "master_db": "data/bon_odori_master.sqlite",
+    "review_json": "data/historical_promotion_candidate_review.json"
+  },
+  "outputs": {
+    "target_db": "data/bon_odori_master.sqlite",
+    "dry_run_db": "",
+    "backup_db": "data/backups/bon_odori_master.20260622T034605.439110+0000.sqlite.bak"
+  },
+  "write_guard": {
+    "db_committed": true,
+    "rolled_back": false,
+    "rollback_reason": ""
+  },
+  "summary": {
+    "planned_count": 17,
+    "inserted_count": 17,
+    "skipped_count": 8,
+    "issues_count": 0,
+    "issues_by_severity": {},
+    "date_type_counts": {
+      "confirmed": 16,
+      "ended": 122,
+      "historical_reference": 17,
+      "predicted": 3
+    },
+    "table_counts": {
+      "event_investigation_tasks": 88,
+      "event_occurrences": 222,
+      "event_series": 221,
+      "evidence_items": 28419,
+      "external_record_links": 2654,
+      "historical_promotion_candidates": 15,
+      "master_meta": 0,
+      "notion_sync_jobs": 10,
+      "observed_occurrence_songs": 28105,
+      "observed_occurrences": 1856,
+      "occurrence_dates": 158,
+      "occurrence_evidence_links": 0,
+      "occurrence_song_evidence_links": 485,
+      "occurrence_songs": 308,
+      "predicted_occurrence_dates": 12,
+      "schema_migrations": 1,
+      "song_aliases": 141,
+      "songs": 141,
+      "venue_aliases": 214,
+      "venues": 214,
+      "write_batches": 0
+    }
+  },
+  "inserted": [
+    {
+      "occurrence_date_id": "odate_40f55a6d2be82e6a",
+      "occurrence_id": "occ_2704892d424f61c1",
+      "event_name": "みたままつり 納涼民踊のつどい",
+      "target_occurrence_year": 2026,
+      "historical_year": 2023,
+      "date_start": "2023-07-13",
+      "date_end": "2023-07-15",
+      "confidence": "high",
+      "venue": "靖国神社",
+      "evidence_url_count": 279,
+      "basis": {
+        "source": "reviewed_historical_promotion_candidate",
+        "candidate_id": "histprom_ecd6fc8cd1e68a2d",
+        "event_name": "みたままつり 納涼民踊のつどい",
+        "target_occurrence_id": "occ_2704892d424f61c1",
+        "target_occurrence_year": 2026,
+        "historical_year": 2023,
+        "historical_venue_name": "靖国神社",
+        "historical_years": [
+          2023,
+          2024,
+          2025
+        ],
+        "exact_dates": {
+          "2023": [
+            "2023-07-13",
+            "2023-07-15"
+          ],
+          "2024": [
+            "2024-07-15"
+          ],
+          "2025": [
+            "2025-07-14"
+          ]
+        },
+        "evidence_url_count": 279,
+        "does_not_confirm_target_year": true
+      }
+    },
+    {
+      "occurrence_date_id": "odate_91144df33d521fe0",
+      "occurrence_id": "occ_2704892d424f61c1",
+      "event_name": "みたままつり 納涼民踊のつどい",
+      "target_occurrence_year": 2026,
+      "historical_year": 2024,
+      "date_start": "2024-07-15",
+      "date_end": "",
+      "confidence": "high",
+      "venue": "靖国神社",
+      "evidence_url_count": 279,
+      "basis": {
+        "source": "reviewed_historical_promotion_candidate",
+        "candidate_id": "histprom_ecd6fc8cd1e68a2d",
+        "event_name": "みたままつり 納涼民踊のつどい",
+        "target_occurrence_id": "occ_2704892d424f61c1",
+        "target_occurrence_year": 2026,
+        "historical_year": 2024,
+        "historical_venue_name": "靖国神社",
+        "historical_years": [
+          2023,
+          2024,
+          2025
+        ],
+        "exact_dates": {
+          "2023": [
+            "2023-07-13",
+            "2023-07-15"
+          ],
+          "2024": [
+            "2024-07-15"
+          ],
+          "2025": [
+            "2025-07-14"
+          ]
+        },
+        "evidence_url_count": 279,
+        "does_not_confirm_target_year": true
+      }
+    },
+    {
+      "occurrence_date_id": "odate_2b1a6a88a346f379",
+      "occurrence_id": "occ_2704892d424f61c1",
+      "event_name": "みたままつり 納涼民踊のつどい",
+      "target_occurrence_year": 2026,
+      "historical_year": 2025,
+      "date_start": "2025-07-14",
+      "date_end": "",
+      "confidence": "high",
+      "venue": "靖国神社",
+      "evidence_url_count": 279,
+      "basis": {
+        "source": "reviewed_historical_promotion_candidate",
+        "candidate_id": "histprom_ecd6fc8cd1e68a2d",
+        "event_name": "みたままつり 納涼民踊のつどい",
+        "target_occurrence_id": "occ_2704892d424f61c1",
+        "target_occurrence_year": 2026,
+        "historical_year": 2025,
+        "historical_venue_name": "靖国神社",
+        "historical_years": [
+          2023,
+          2024,
+          2025
+        ],
+        "exact_dates": {
+          "2023": [
+            "2023-07-13",
+            "2023-07-15"
+          ],
+          "2024": [
+            "2024-07-15"
+          ],
+          "2025": [
+            "2025-07-14"
+          ]
+        },
+        "evidence_url_count": 279,
+        "does_not_confirm_target_year": true
+      }
+    },
+    {
+      "occurrence_date_id": "odate_ba18e4e310c534d0",
+      "occurrence_id": "occ_48ddfc15fd4a2cb1",
+      "event_name": "歌舞伎町BON ODORI",
+      "target_occurrence_year": 2025,
+      "historical_year": 2024,
+      "date_start": "2024-08-17",
+      "date_end": "",
+      "confidence": "high",
+      "venue": "歌舞伎町シネシティ広場",
+      "evidence_url_count": 20,
+      "basis": {
+        "source": "reviewed_historical_promotion_candidate",
+        "candidate_id": "histprom_58ee10d9e0fc8f1f",
+        "event_name": "歌舞伎町BON ODORI",
+        "target_occurrence_id": "occ_48ddfc15fd4a2cb1",
+        "target_occurrence_year": 2025,
+        "historical_year": 2024,
+        "historical_venue_name": "歌舞伎町シネシティ広場",
+        "historical_years": [
+          2024,
+          2025
+        ],
+        "exact_dates": {
+          "2024": [
+            "2024-08-17"
+          ],
+          "2025": [
+            "2025-08-16"
+          ]
+        },
+        "evidence_url_count": 20,
+        "does_not_confirm_target_year": true
+      }
+    },
+    {
+      "occurrence_date_id": "odate_c2816e2aa45a2377",
+      "occurrence_id": "occ_1218c84192b3927c",
+      "event_name": "シタマチ.ふるさと盆踊り大会",
+      "target_occurrence_year": 2025,
+      "historical_year": 2024,
+      "date_start": "2024-08-17",
+      "date_end": "",
+      "confidence": "high",
+      "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+      "evidence_url_count": 1959,
+      "basis": {
+        "source": "reviewed_historical_promotion_candidate",
+        "candidate_id": "histprom_e7c9782790b391af",
+        "event_name": "シタマチ.ふるさと盆踊り大会",
+        "target_occurrence_id": "occ_1218c84192b3927c",
+        "target_occurrence_year": 2025,
+        "historical_year": 2024,
+        "historical_venue_name": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+        "historical_years": [
+          2024,
+          2025
+        ],
+        "exact_dates": {
+          "2024": [
+            "2024-08-17"
+          ],
+          "2025": [
+            "2025-08-16"
+          ]
+        },
+        "evidence_url_count": 1959,
+        "does_not_confirm_target_year": true
+      }
+    },
+    {
+      "occurrence_date_id": "odate_c7b4adc78da29404",
+      "occurrence_id": "occ_36b02291ca55eb02",
+      "event_name": "丸の内de盆踊り",
+      "target_occurrence_year": 2025,
+      "historical_year": 2024,
+      "date_start": "2024-07-26",
+      "date_end": "",
+      "confidence": "high",
+      "venue": "行幸通り",
+      "evidence_url_count": 8,
+      "basis": {
+        "source": "reviewed_historical_promotion_candidate",
+        "candidate_id": "histprom_8cd681bc18bd8173",
+        "event_name": "丸の内de盆踊り",
+        "target_occurrence_id": "occ_36b02291ca55eb02",
+        "target_occurrence_year": 2025,
+        "historical_year": 2024,
+        "historical_venue_name": "行幸通り",
+        "historical_years": [
+          2024,
+          2025
+        ],
+        "exact_dates": {
+          "2024": [
+            "2024-07-26"
+          ],
+          "2025": [
+            "2025-07-25",
+            "2025-07-26"
+          ]
+        },
+        "evidence_url_count": 8,
+        "does_not_confirm_target_year": true
+      }
+    },
+    {
+      "occurrence_date_id": "odate_638f0aec03a7634c",
+      "occurrence_id": "occ_b5a16804f0be9815",
+      "event_name": "山王音頭と民踊大会",
+      "target_occurrence_year": 2026,
+      "historical_year": 2023,
+      "date_start": "2023-06-13",
+      "date_end": "",
+      "confidence": "high",
+      "venue": "山王パークタワー公開空地",
+      "evidence_url_count": 57,
+      "basis": {
+        "source": "reviewed_historical_promotion_candidate",
+        "candidate_id": "histprom_ff87fea4662efda4",
+        "event_name": "山王音頭と民踊大会",
+        "target_occurrence_id": "occ_b5a16804f0be9815",
+        "target_occurrence_year": 2026,
+        "historical_year": 2023,
+        "historical_venue_name": "山王パークタワー公開空地",
+        "historical_years": [
+          2023,
+          2024,
+          2025
+        ],
+        "exact_dates": {
+          "2023": [
+            "2023-06-13"
+          ],
+          "2024": [
+            "2024-06-13",
+            "2024-06-15"
+          ],
+          "2025": [
+            "2025-06-13",
+            "2025-06-15"
+          ]
+        },
+        "evidence_url_count": 57,
+        "does_not_confirm_target_year": true
+      }
+    },
+    {
+      "occurrence_date_id": "odate_ae5861328bb7af9f",
+      "occurrence_id": "occ_b5a16804f0be9815",
+      "event_name": "山王音頭と民踊大会",
+      "target_occurrence_year": 2026,
+      "historical_year": 2024,
+      "date_start": "2024-06-13",
+      "date_end": "2024-06-15",
+      "confidence": "high",
+      "venue": "山王パークタワー公開空地",
+      "evidence_url_count": 57,
+      "basis": {
+        "source": "reviewed_historical_promotion_candidate",
+        "candidate_id": "histprom_ff87fea4662efda4",
+        "event_name": "山王音頭と民踊大会",
+        "target_occurrence_id": "occ_b5a16804f0be9815",
+        "target_occurrence_year": 2026,
+        "historical_year": 2024,
+        "historical_venue_name": "山王パークタワー公開空地",
+        "historical_years": [
+          2023,
+          2024,
+          2025
+        ],
+        "exact_dates": {
+          "2023": [
+            "2023-06-13"
+          ],
+          "2024": [
+            "2024-06-13",
+            "2024-06-15"
+          ],
+          "2025": [
+            "2025-06-13",
+            "2025-06-15"
+          ]
+        },
+        "evidence_url_count": 57,
+        "does_not_confirm_target_year": true
+      }
+    },
+    {
+      "occurrence_date_id": "odate_015781ac77db9907",
+      "occurrence_id": "occ_b5a16804f0be9815",
+      "event_name": "山王音頭と民踊大会",
+      "target_occurrence_year": 2026,
+      "historical_year": 2025,
+      "date_start": "2025-06-13",
+      "date_end": "2025-06-15",
+      "confidence": "high",
+      "venue": "山王パークタワー公開空地",
+      "evidence_url_count": 57,
+      "basis": {
+        "source": "reviewed_historical_promotion_candidate",
+        "candidate_id": "histprom_ff87fea4662efda4",
+        "event_name": "山王音頭と民踊大会",
+        "target_occurrence_id": "occ_b5a16804f0be9815",
+        "target_occurrence_year": 2026,
+        "historical_year": 2025,
+        "historical_venue_name": "山王パークタワー公開空地",
+        "historical_years": [
+          2023,
+          2024,
+          2025
+        ],
+        "exact_dates": {
+          "2023": [
+            "2023-06-13"
+          ],
+          "2024": [
+            "2024-06-13",
+            "2024-06-15"
+          ],
+          "2025": [
+            "2025-06-13",
+            "2025-06-15"
+          ]
+        },
+        "evidence_url_count": 57,
+        "does_not_confirm_target_year": true
+      }
+    },
+    {
+      "occurrence_date_id": "odate_dc50c1d0ea36e4b6",
+      "occurrence_id": "occ_eb5984603eeb0f18",
+      "event_name": "第15回 鴨台盆踊り",
+      "target_occurrence_year": 2025,
+      "historical_year": 2023,
+      "date_start": "2023-07-06",
+      "date_end": "2023-07-08",
+      "confidence": "high",
+      "venue": "大正大学",
+      "evidence_url_count": 209,
+      "basis": {
+        "source": "reviewed_historical_promotion_candidate",
+        "candidate_id": "histprom_c0642df840aea6b7",
+        "event_name": "第15回 鴨台盆踊り",
+        "target_occurrence_id": "occ_eb5984603eeb0f18",
+        "target_occurrence_year": 2025,
+        "historical_year": 2023,
+        "historical_venue_name": "大正大学",
+        "historical_years": [
+          2023,
+          2024,
+          2025
+        ],
+        "exact_dates": {
+          "2023": [
+            "2023-07-06",
+            "2023-07-08"
+          ],
+          "2024": [
+            "2024-07-05"
+          ],
+          "2025": [
+            "2025-07-04"
+          ]
+        },
+        "evidence_url_count": 209,
+        "does_not_confirm_target_year": true
+      }
+    },
+    {
+      "occurrence_date_id": "odate_bbf89ba80d2ba96c",
+      "occurrence_id": "occ_eb5984603eeb0f18",
+      "event_name": "第15回 鴨台盆踊り",
+      "target_occurrence_year": 2025,
+      "historical_year": 2024,
+      "date_start": "2024-07-05",
+      "date_end": "",
+      "confidence": "high",
+      "venue": "大正大学",
+      "evidence_url_count": 209,
+      "basis": {
+        "source": "reviewed_historical_promotion_candidate",
+        "candidate_id": "histprom_c0642df840aea6b7",
+        "event_name": "第15回 鴨台盆踊り",
+        "target_occurrence_id": "occ_eb5984603eeb0f18",
+        "target_occurrence_year": 2025,
+        "historical_year": 2024,
+        "historical_venue_name": "大正大学",
+        "historical_years": [
+          2023,
+          2024,
+          2025
+        ],
+        "exact_dates": {
+          "2023": [
+            "2023-07-06",
+            "2023-07-08"
+          ],
+          "2024": [
+            "2024-07-05"
+          ],
+          "2025": [
+            "2025-07-04"
+          ]
+        },
+        "evidence_url_count": 209,
+        "does_not_confirm_target_year": true
+      }
+    },
+    {
+      "occurrence_date_id": "odate_0a5f0bd41a246de2",
+      "occurrence_id": "occ_85b5772373d4e5df",
+      "event_name": "第28回新橋こいち祭 盆踊り",
+      "target_occurrence_year": 2025,
+      "historical_year": 2023,
+      "date_start": "2023-07-27",
+      "date_end": "",
+      "confidence": "high",
+      "venue": "桜田公園",
+      "evidence_url_count": 480,
+      "basis": {
+        "source": "reviewed_historical_promotion_candidate",
+        "candidate_id": "histprom_0503c97793a6cd7d",
+        "event_name": "第28回新橋こいち祭 盆踊り",
+        "target_occurrence_id": "occ_85b5772373d4e5df",
+        "target_occurrence_year": 2025,
+        "historical_year": 2023,
+        "historical_venue_name": "桜田公園",
+        "historical_years": [
+          2023,
+          2025
+        ],
+        "exact_dates": {
+          "2023": [
+            "2023-07-27"
+          ],
+          "2025": [
+            "2025-07-24"
+          ]
+        },
+        "evidence_url_count": 480,
+        "does_not_confirm_target_year": true
+      }
+    },
+    {
+      "occurrence_date_id": "odate_8a1b2013c4f3f8af",
+      "occurrence_id": "occ_54ba9f31ac0f3844",
+      "event_name": "自由が丘納涼盆踊り大会",
+      "target_occurrence_year": 2025,
+      "historical_year": 2024,
+      "date_start": "2024-07-13",
+      "date_end": "2024-07-15",
+      "confidence": "high",
+      "venue": "自由が丘駅前ロータリー 特設会場",
+      "evidence_url_count": 37,
+      "basis": {
+        "source": "reviewed_historical_promotion_candidate",
+        "candidate_id": "histprom_9e66d3b7a3aa4c6d",
+        "event_name": "自由が丘納涼盆踊り大会",
+        "target_occurrence_id": "occ_54ba9f31ac0f3844",
+        "target_occurrence_year": 2025,
+        "historical_year": 2024,
+        "historical_venue_name": "自由が丘駅前ロータリー 特設会場",
+        "historical_years": [
+          2024,
+          2025
+        ],
+        "exact_dates": {
+          "2024": [
+            "2024-07-13",
+            "2024-07-15"
+          ],
+          "2025": [
+            "2025-07-19",
+            "2025-07-21"
+          ]
+        },
+        "evidence_url_count": 37,
+        "does_not_confirm_target_year": true
+      }
+    },
+    {
+      "occurrence_date_id": "odate_464ba44d5b4fb5bf",
+      "occurrence_id": "occ_0e26997fdac41f52",
+      "event_name": "西久保八幡神社 盆踊り",
+      "target_occurrence_year": 2025,
+      "historical_year": 2023,
+      "date_start": "2023-08-10",
+      "date_end": "2023-08-12",
+      "confidence": "high",
+      "venue": "西久保八幡神社",
+      "evidence_url_count": 890,
+      "basis": {
+        "source": "reviewed_historical_promotion_candidate",
+        "candidate_id": "histprom_e54f2816b8af6f41",
+        "event_name": "西久保八幡神社 盆踊り",
+        "target_occurrence_id": "occ_0e26997fdac41f52",
+        "target_occurrence_year": 2025,
+        "historical_year": 2023,
+        "historical_venue_name": "西久保八幡神社",
+        "historical_years": [
+          2023,
+          2024,
+          2025
+        ],
+        "exact_dates": {
+          "2023": [
+            "2023-08-10",
+            "2023-08-12"
+          ],
+          "2024": [
+            "2024-08-09"
+          ],
+          "2025": [
+            "2025-08-09"
+          ]
+        },
+        "evidence_url_count": 890,
+        "does_not_confirm_target_year": true
+      }
+    },
+    {
+      "occurrence_date_id": "odate_ff5b05203b424db2",
+      "occurrence_id": "occ_0e26997fdac41f52",
+      "event_name": "西久保八幡神社 盆踊り",
+      "target_occurrence_year": 2025,
+      "historical_year": 2024,
+      "date_start": "2024-08-09",
+      "date_end": "",
+      "confidence": "high",
+      "venue": "西久保八幡神社",
+      "evidence_url_count": 890,
+      "basis": {
+        "source": "reviewed_historical_promotion_candidate",
+        "candidate_id": "histprom_e54f2816b8af6f41",
+        "event_name": "西久保八幡神社 盆踊り",
+        "target_occurrence_id": "occ_0e26997fdac41f52",
+        "target_occurrence_year": 2025,
+        "historical_year": 2024,
+        "historical_venue_name": "西久保八幡神社",
+        "historical_years": [
+          2023,
+          2024,
+          2025
+        ],
+        "exact_dates": {
+          "2023": [
+            "2023-08-10",
+            "2023-08-12"
+          ],
+          "2024": [
+            "2024-08-09"
+          ],
+          "2025": [
+            "2025-08-09"
+          ]
+        },
+        "evidence_url_count": 890,
+        "does_not_confirm_target_year": true
+      }
+    },
+    {
+      "occurrence_date_id": "odate_4d2678059a5f2723",
+      "occurrence_id": "occ_8ff0a2c41a98d97b",
+      "event_name": "赤坂浄土寺盆踊り大会",
+      "target_occurrence_year": 2025,
+      "historical_year": 2023,
+      "date_start": "2023-07-26",
+      "date_end": "",
+      "confidence": "high",
+      "venue": "浄土寺",
+      "evidence_url_count": 126,
+      "basis": {
+        "source": "reviewed_historical_promotion_candidate",
+        "candidate_id": "histprom_557fa293eae577ae",
+        "event_name": "赤坂浄土寺盆踊り大会",
+        "target_occurrence_id": "occ_8ff0a2c41a98d97b",
+        "target_occurrence_year": 2025,
+        "historical_year": 2023,
+        "historical_venue_name": "浄土寺",
+        "historical_years": [
+          2023,
+          2024,
+          2025
+        ],
+        "exact_dates": {
+          "2023": [
+            "2023-07-26"
+          ],
+          "2024": [
+            "2024-07-25",
+            "2024-07-26"
+          ],
+          "2025": [
+            "2025-07-24"
+          ]
+        },
+        "evidence_url_count": 126,
+        "does_not_confirm_target_year": true
+      }
+    },
+    {
+      "occurrence_date_id": "odate_84db9d668ee850f5",
+      "occurrence_id": "occ_8ff0a2c41a98d97b",
+      "event_name": "赤坂浄土寺盆踊り大会",
+      "target_occurrence_year": 2025,
+      "historical_year": 2024,
+      "date_start": "2024-07-25",
+      "date_end": "2024-07-26",
+      "confidence": "high",
+      "venue": "浄土寺",
+      "evidence_url_count": 126,
+      "basis": {
+        "source": "reviewed_historical_promotion_candidate",
+        "candidate_id": "histprom_557fa293eae577ae",
+        "event_name": "赤坂浄土寺盆踊り大会",
+        "target_occurrence_id": "occ_8ff0a2c41a98d97b",
+        "target_occurrence_year": 2025,
+        "historical_year": 2024,
+        "historical_venue_name": "浄土寺",
+        "historical_years": [
+          2023,
+          2024,
+          2025
+        ],
+        "exact_dates": {
+          "2023": [
+            "2023-07-26"
+          ],
+          "2024": [
+            "2024-07-25",
+            "2024-07-26"
+          ],
+          "2025": [
+            "2025-07-24"
+          ]
+        },
+        "evidence_url_count": 126,
+        "does_not_confirm_target_year": true
+      }
+    }
+  ],
+  "skipped": [
+    {
+      "event_name": "歌舞伎町BON ODORI",
+      "target_occurrence_id": "occ_48ddfc15fd4a2cb1",
+      "year": 2025,
+      "reason": "not_before_target_occurrence_year"
+    },
+    {
+      "event_name": "シタマチ.ふるさと盆踊り大会",
+      "target_occurrence_id": "occ_1218c84192b3927c",
+      "year": 2025,
+      "reason": "not_before_target_occurrence_year"
+    },
+    {
+      "event_name": "丸の内de盆踊り",
+      "target_occurrence_id": "occ_36b02291ca55eb02",
+      "year": 2025,
+      "reason": "not_before_target_occurrence_year"
+    },
+    {
+      "event_name": "第15回 鴨台盆踊り",
+      "target_occurrence_id": "occ_eb5984603eeb0f18",
+      "year": 2025,
+      "reason": "not_before_target_occurrence_year"
+    },
+    {
+      "event_name": "第28回新橋こいち祭 盆踊り",
+      "target_occurrence_id": "occ_85b5772373d4e5df",
+      "year": 2025,
+      "reason": "not_before_target_occurrence_year"
+    },
+    {
+      "event_name": "自由が丘納涼盆踊り大会",
+      "target_occurrence_id": "occ_54ba9f31ac0f3844",
+      "year": 2025,
+      "reason": "not_before_target_occurrence_year"
+    },
+    {
+      "event_name": "西久保八幡神社 盆踊り",
+      "target_occurrence_id": "occ_0e26997fdac41f52",
+      "year": 2025,
+      "reason": "not_before_target_occurrence_year"
+    },
+    {
+      "event_name": "赤坂浄土寺盆踊り大会",
+      "target_occurrence_id": "occ_8ff0a2c41a98d97b",
+      "year": 2025,
+      "reason": "not_before_target_occurrence_year"
+    }
+  ],
+  "issues": []
+}

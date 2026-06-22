@@ -1,0 +1,1066 @@
+{
+  "generated_by": "sync_master_to_notion.py",
+  "generated_at": "2026-06-22T03:34:27.551012+00:00",
+  "mode": "dry_run",
+  "apply_performed": false,
+  "sources": {
+    "master_db": "data/bon_odori_master.sqlite",
+    "notion_snapshot_db": "data/notion_snapshot.sqlite"
+  },
+  "options": {
+    "target_table": "predicted_occurrence_dates",
+    "job_id": "",
+    "requested_by": "",
+    "include_dry_run_jobs": true
+  },
+  "summary": {
+    "selected_jobs": 10,
+    "ready_jobs": 0,
+    "skipped_jobs": 10,
+    "applied_jobs": 0,
+    "jobs_by_direction": {
+      "rdb_to_notion_dry_run": 10
+    },
+    "jobs_by_target_table": {
+      "predicted_occurrence_dates": 10
+    },
+    "issues_by_severity": {
+      "medium": 10
+    }
+  },
+  "applied_job_ids": [],
+  "updates": [
+    {
+      "job": {
+        "job_id": "nsj_570669415c22a2d5",
+        "direction": "rdb_to_notion_dry_run",
+        "target_table": "predicted_occurrence_dates",
+        "target_id": "preddate_020fd2ca31d901c5",
+        "notion_source_key": "events",
+        "notion_page_id": "",
+        "status": "pending",
+        "requested_by": "build_historical_promotion_candidates.py",
+        "requested_at": "2026-06-22T01:21:59.620223+00:00",
+        "payload_json": null
+      },
+      "payload": {
+        "action": "create_predicted_2026_occurrence",
+        "application_status": "candidate_for_2026_occurrence",
+        "basis": "8月第3土曜",
+        "basis_type": "weekday_based",
+        "basis_type_label": "曜日ベース",
+        "confidence": "medium",
+        "confirmed_overwrite_allowed": false,
+        "date_end": "2026-08-15",
+        "date_start": "2026-08-15",
+        "date_status": "predicted",
+        "predicted_year": 2026,
+        "rule_type": "weekday_nth",
+        "target_event_name": "歌舞伎町BON ODORI"
+      },
+      "target": {
+        "predicted_date_id": "preddate_020fd2ca31d901c5",
+        "event_name": "歌舞伎町BON ODORI",
+        "series_id": "ser_cded9da0a611fd02",
+        "series_name": "歌舞伎町BON ODORI",
+        "target_occurrence_id": "",
+        "predicted_year": 2026,
+        "date_start": "2026-08-15",
+        "date_end": "2026-08-15",
+        "date_status": "predicted",
+        "basis_type_label": "曜日ベース",
+        "rule_type": "weekday_nth",
+        "basis": "8月第3土曜",
+        "confidence": "medium",
+        "score": 0.7,
+        "application_status": "candidate_for_2026_occurrence",
+        "venue_name": "歌舞伎町シネシティ広場"
+      },
+      "current_notion_snapshot": {},
+      "proposed_notion_values": {
+        "start_date": "2026-08-15",
+        "end_date": "2026-08-15",
+        "status": "predicted",
+        "venue_names": [
+          "歌舞伎町シネシティ広場"
+        ]
+      },
+      "field_diffs": [
+        {
+          "field": "開催日",
+          "current": "",
+          "proposed": "2026-08-15",
+          "changed": true
+        },
+        {
+          "field": "終了日",
+          "current": "",
+          "proposed": "2026-08-15",
+          "changed": true
+        },
+        {
+          "field": "状態",
+          "current": "",
+          "proposed": "predicted",
+          "changed": true
+        },
+        {
+          "field": "予測根拠",
+          "current": "",
+          "proposed": "8月第3土曜",
+          "changed": true
+        },
+        {
+          "field": "会場候補",
+          "current": "",
+          "proposed": "歌舞伎町シネシティ広場",
+          "changed": true
+        }
+      ],
+      "properties": {},
+      "issues": [
+        {
+          "severity": "medium",
+          "issue_type": "predicted_occurrence_date_jobs_are_review_only",
+          "detail": "sync_master_to_notion does not create predicted Notion events directly"
+        }
+      ],
+      "skip_reason": "prediction_review_only"
+    },
+    {
+      "job": {
+        "job_id": "nsj_5a96718435cedd20",
+        "direction": "rdb_to_notion_dry_run",
+        "target_table": "predicted_occurrence_dates",
+        "target_id": "preddate_131b2204d5f23eae",
+        "notion_source_key": "events",
+        "notion_page_id": "",
+        "status": "pending",
+        "requested_by": "build_historical_promotion_candidates.py",
+        "requested_at": "2026-06-22T01:21:59.620223+00:00",
+        "payload_json": null
+      },
+      "payload": {
+        "action": "create_predicted_2026_occurrence",
+        "application_status": "candidate_for_2026_occurrence",
+        "basis": "7月6日前後の週末",
+        "basis_type": "weekday_based",
+        "basis_type_label": "曜日ベース",
+        "confidence": "medium",
+        "confirmed_overwrite_allowed": false,
+        "date_end": "2026-07-05",
+        "date_start": "2026-07-04",
+        "date_status": "predicted",
+        "predicted_year": 2026,
+        "rule_type": "weekend_near_day",
+        "target_event_name": "第15回 鴨台盆踊り"
+      },
+      "target": {
+        "predicted_date_id": "preddate_131b2204d5f23eae",
+        "event_name": "第15回 鴨台盆踊り",
+        "series_id": "ser_a3a6304574b4feb5",
+        "series_name": "第15回 鴨台盆踊り",
+        "target_occurrence_id": "",
+        "predicted_year": 2026,
+        "date_start": "2026-07-04",
+        "date_end": "2026-07-05",
+        "date_status": "predicted",
+        "basis_type_label": "曜日ベース",
+        "rule_type": "weekend_near_day",
+        "basis": "7月6日前後の週末",
+        "confidence": "medium",
+        "score": 0.6,
+        "application_status": "candidate_for_2026_occurrence",
+        "venue_name": "大正大学"
+      },
+      "current_notion_snapshot": {},
+      "proposed_notion_values": {
+        "start_date": "2026-07-04",
+        "end_date": "2026-07-05",
+        "status": "predicted",
+        "venue_names": [
+          "大正大学"
+        ]
+      },
+      "field_diffs": [
+        {
+          "field": "開催日",
+          "current": "",
+          "proposed": "2026-07-04",
+          "changed": true
+        },
+        {
+          "field": "終了日",
+          "current": "",
+          "proposed": "2026-07-05",
+          "changed": true
+        },
+        {
+          "field": "状態",
+          "current": "",
+          "proposed": "predicted",
+          "changed": true
+        },
+        {
+          "field": "予測根拠",
+          "current": "",
+          "proposed": "7月6日前後の週末",
+          "changed": true
+        },
+        {
+          "field": "会場候補",
+          "current": "",
+          "proposed": "大正大学",
+          "changed": true
+        }
+      ],
+      "properties": {},
+      "issues": [
+        {
+          "severity": "medium",
+          "issue_type": "predicted_occurrence_date_jobs_are_review_only",
+          "detail": "sync_master_to_notion does not create predicted Notion events directly"
+        }
+      ],
+      "skip_reason": "prediction_review_only"
+    },
+    {
+      "job": {
+        "job_id": "nsj_75af04af93ae266d",
+        "direction": "rdb_to_notion_dry_run",
+        "target_table": "predicted_occurrence_dates",
+        "target_id": "preddate_293a0033eef0419d",
+        "notion_source_key": "events",
+        "notion_page_id": "",
+        "status": "pending",
+        "requested_by": "build_historical_promotion_candidates.py",
+        "requested_at": "2026-06-22T01:21:59.620223+00:00",
+        "payload_json": null
+      },
+      "payload": {
+        "action": "create_predicted_2026_occurrence",
+        "application_status": "candidate_for_2026_occurrence",
+        "basis": "6月17日前後の金曜",
+        "basis_type": "weekday_based",
+        "basis_type_label": "曜日ベース",
+        "confidence": "medium",
+        "confirmed_overwrite_allowed": false,
+        "date_end": "2026-06-19",
+        "date_start": "2026-06-19",
+        "date_status": "predicted",
+        "predicted_year": 2026,
+        "rule_type": "weekday_near_day",
+        "target_event_name": "郡上おどり in 青山"
+      },
+      "target": {
+        "predicted_date_id": "preddate_293a0033eef0419d",
+        "event_name": "郡上おどり in 青山",
+        "series_id": "ser_ae34d6aa992bd0c8",
+        "series_name": "郡上おどり in 青山",
+        "target_occurrence_id": "",
+        "predicted_year": 2026,
+        "date_start": "2026-06-19",
+        "date_end": "2026-06-19",
+        "date_status": "predicted",
+        "basis_type_label": "曜日ベース",
+        "rule_type": "weekday_near_day",
+        "basis": "6月17日前後の金曜",
+        "confidence": "medium",
+        "score": 0.68,
+        "application_status": "candidate_for_2026_occurrence",
+        "venue_name": "秩父宮ラグビー場駐車場"
+      },
+      "current_notion_snapshot": {},
+      "proposed_notion_values": {
+        "start_date": "2026-06-19",
+        "end_date": "2026-06-19",
+        "status": "predicted",
+        "venue_names": [
+          "秩父宮ラグビー場駐車場"
+        ]
+      },
+      "field_diffs": [
+        {
+          "field": "開催日",
+          "current": "",
+          "proposed": "2026-06-19",
+          "changed": true
+        },
+        {
+          "field": "終了日",
+          "current": "",
+          "proposed": "2026-06-19",
+          "changed": true
+        },
+        {
+          "field": "状態",
+          "current": "",
+          "proposed": "predicted",
+          "changed": true
+        },
+        {
+          "field": "予測根拠",
+          "current": "",
+          "proposed": "6月17日前後の金曜",
+          "changed": true
+        },
+        {
+          "field": "会場候補",
+          "current": "",
+          "proposed": "秩父宮ラグビー場駐車場",
+          "changed": true
+        }
+      ],
+      "properties": {},
+      "issues": [
+        {
+          "severity": "medium",
+          "issue_type": "predicted_occurrence_date_jobs_are_review_only",
+          "detail": "sync_master_to_notion does not create predicted Notion events directly"
+        }
+      ],
+      "skip_reason": "prediction_review_only"
+    },
+    {
+      "job": {
+        "job_id": "nsj_849055fd5e6248ed",
+        "direction": "rdb_to_notion_dry_run",
+        "target_table": "predicted_occurrence_dates",
+        "target_id": "preddate_0799c89e7ee9392a",
+        "notion_source_key": "events",
+        "notion_page_id": "",
+        "status": "pending",
+        "requested_by": "build_historical_promotion_candidates.py",
+        "requested_at": "2026-06-22T01:21:59.620223+00:00",
+        "payload_json": null
+      },
+      "payload": {
+        "action": "create_predicted_2026_occurrence",
+        "application_status": "candidate_for_2026_occurrence",
+        "basis": "8月第3土曜",
+        "basis_type": "weekday_based",
+        "basis_type_label": "曜日ベース",
+        "confidence": "medium",
+        "confirmed_overwrite_allowed": false,
+        "date_end": "2026-08-15",
+        "date_start": "2026-08-15",
+        "date_status": "predicted",
+        "predicted_year": 2026,
+        "rule_type": "weekday_nth",
+        "target_event_name": "シタマチ.ふるさと盆踊り大会"
+      },
+      "target": {
+        "predicted_date_id": "preddate_0799c89e7ee9392a",
+        "event_name": "シタマチ.ふるさと盆踊り大会",
+        "series_id": "ser_faecad4b52248585",
+        "series_name": "シタマチ.ふるさと盆踊り大会",
+        "target_occurrence_id": "",
+        "predicted_year": 2026,
+        "date_start": "2026-08-15",
+        "date_end": "2026-08-15",
+        "date_status": "predicted",
+        "basis_type_label": "曜日ベース",
+        "rule_type": "weekday_nth",
+        "basis": "8月第3土曜",
+        "confidence": "medium",
+        "score": 0.7,
+        "application_status": "candidate_for_2026_occurrence",
+        "venue_name": "おかちまちパンダ広場（御徒町駅南口駅前広場）"
+      },
+      "current_notion_snapshot": {},
+      "proposed_notion_values": {
+        "start_date": "2026-08-15",
+        "end_date": "2026-08-15",
+        "status": "predicted",
+        "venue_names": [
+          "おかちまちパンダ広場（御徒町駅南口駅前広場）"
+        ]
+      },
+      "field_diffs": [
+        {
+          "field": "開催日",
+          "current": "",
+          "proposed": "2026-08-15",
+          "changed": true
+        },
+        {
+          "field": "終了日",
+          "current": "",
+          "proposed": "2026-08-15",
+          "changed": true
+        },
+        {
+          "field": "状態",
+          "current": "",
+          "proposed": "predicted",
+          "changed": true
+        },
+        {
+          "field": "予測根拠",
+          "current": "",
+          "proposed": "8月第3土曜",
+          "changed": true
+        },
+        {
+          "field": "会場候補",
+          "current": "",
+          "proposed": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+          "changed": true
+        }
+      ],
+      "properties": {},
+      "issues": [
+        {
+          "severity": "medium",
+          "issue_type": "predicted_occurrence_date_jobs_are_review_only",
+          "detail": "sync_master_to_notion does not create predicted Notion events directly"
+        }
+      ],
+      "skip_reason": "prediction_review_only"
+    },
+    {
+      "job": {
+        "job_id": "nsj_9699bcb840c2a9ed",
+        "direction": "rdb_to_notion_dry_run",
+        "target_table": "predicted_occurrence_dates",
+        "target_id": "preddate_6e157d3b898d1a01",
+        "notion_source_key": "events",
+        "notion_page_id": "",
+        "status": "pending",
+        "requested_by": "build_historical_promotion_candidates.py",
+        "requested_at": "2026-06-22T01:21:59.620223+00:00",
+        "payload_json": null
+      },
+      "payload": {
+        "action": "create_predicted_2026_occurrence",
+        "application_status": "candidate_for_2026_occurrence",
+        "basis": "7月第4木曜",
+        "basis_type": "weekday_based",
+        "basis_type_label": "曜日ベース",
+        "confidence": "medium",
+        "confirmed_overwrite_allowed": false,
+        "date_end": "2026-07-23",
+        "date_start": "2026-07-23",
+        "date_status": "predicted",
+        "predicted_year": 2026,
+        "rule_type": "weekday_nth",
+        "target_event_name": "第28回新橋こいち祭 盆踊り"
+      },
+      "target": {
+        "predicted_date_id": "preddate_6e157d3b898d1a01",
+        "event_name": "第28回新橋こいち祭 盆踊り",
+        "series_id": "ser_b25e3d3ce5b22a32",
+        "series_name": "第28回新橋こいち祭 盆踊り",
+        "target_occurrence_id": "",
+        "predicted_year": 2026,
+        "date_start": "2026-07-23",
+        "date_end": "2026-07-23",
+        "date_status": "predicted",
+        "basis_type_label": "曜日ベース",
+        "rule_type": "weekday_nth",
+        "basis": "7月第4木曜",
+        "confidence": "medium",
+        "score": 0.7,
+        "application_status": "candidate_for_2026_occurrence",
+        "venue_name": "桜田公園"
+      },
+      "current_notion_snapshot": {},
+      "proposed_notion_values": {
+        "start_date": "2026-07-23",
+        "end_date": "2026-07-23",
+        "status": "predicted",
+        "venue_names": [
+          "桜田公園"
+        ]
+      },
+      "field_diffs": [
+        {
+          "field": "開催日",
+          "current": "",
+          "proposed": "2026-07-23",
+          "changed": true
+        },
+        {
+          "field": "終了日",
+          "current": "",
+          "proposed": "2026-07-23",
+          "changed": true
+        },
+        {
+          "field": "状態",
+          "current": "",
+          "proposed": "predicted",
+          "changed": true
+        },
+        {
+          "field": "予測根拠",
+          "current": "",
+          "proposed": "7月第4木曜",
+          "changed": true
+        },
+        {
+          "field": "会場候補",
+          "current": "",
+          "proposed": "桜田公園",
+          "changed": true
+        }
+      ],
+      "properties": {},
+      "issues": [
+        {
+          "severity": "medium",
+          "issue_type": "predicted_occurrence_date_jobs_are_review_only",
+          "detail": "sync_master_to_notion does not create predicted Notion events directly"
+        }
+      ],
+      "skip_reason": "prediction_review_only"
+    },
+    {
+      "job": {
+        "job_id": "nsj_9e1da3d52f1f5167",
+        "direction": "rdb_to_notion_dry_run",
+        "target_table": "predicted_occurrence_dates",
+        "target_id": "preddate_de90654c70d616b6",
+        "notion_source_key": "events",
+        "notion_page_id": "",
+        "status": "pending",
+        "requested_by": "build_historical_promotion_candidates.py",
+        "requested_at": "2026-06-22T01:21:59.620223+00:00",
+        "payload_json": null
+      },
+      "payload": {
+        "action": "create_predicted_2026_occurrence",
+        "application_status": "candidate_for_2026_occurrence",
+        "basis": "8月9日前後の週末",
+        "basis_type": "weekday_based",
+        "basis_type_label": "曜日ベース",
+        "confidence": "medium",
+        "confirmed_overwrite_allowed": false,
+        "date_end": "2026-08-08",
+        "date_start": "2026-08-08",
+        "date_status": "predicted",
+        "predicted_year": 2026,
+        "rule_type": "weekend_near_day",
+        "target_event_name": "西久保八幡神社 盆踊り"
+      },
+      "target": {
+        "predicted_date_id": "preddate_de90654c70d616b6",
+        "event_name": "西久保八幡神社 盆踊り",
+        "series_id": "ser_e789605c6dd5bcf4",
+        "series_name": "西久保八幡神社 盆踊り",
+        "target_occurrence_id": "",
+        "predicted_year": 2026,
+        "date_start": "2026-08-08",
+        "date_end": "2026-08-08",
+        "date_status": "predicted",
+        "basis_type_label": "曜日ベース",
+        "rule_type": "weekend_near_day",
+        "basis": "8月9日前後の週末",
+        "confidence": "medium",
+        "score": 0.64,
+        "application_status": "candidate_for_2026_occurrence",
+        "venue_name": "西久保八幡神社"
+      },
+      "current_notion_snapshot": {},
+      "proposed_notion_values": {
+        "start_date": "2026-08-08",
+        "end_date": "2026-08-08",
+        "status": "predicted",
+        "venue_names": [
+          "西久保八幡神社"
+        ]
+      },
+      "field_diffs": [
+        {
+          "field": "開催日",
+          "current": "",
+          "proposed": "2026-08-08",
+          "changed": true
+        },
+        {
+          "field": "終了日",
+          "current": "",
+          "proposed": "2026-08-08",
+          "changed": true
+        },
+        {
+          "field": "状態",
+          "current": "",
+          "proposed": "predicted",
+          "changed": true
+        },
+        {
+          "field": "予測根拠",
+          "current": "",
+          "proposed": "8月9日前後の週末",
+          "changed": true
+        },
+        {
+          "field": "会場候補",
+          "current": "",
+          "proposed": "西久保八幡神社",
+          "changed": true
+        }
+      ],
+      "properties": {},
+      "issues": [
+        {
+          "severity": "medium",
+          "issue_type": "predicted_occurrence_date_jobs_are_review_only",
+          "detail": "sync_master_to_notion does not create predicted Notion events directly"
+        }
+      ],
+      "skip_reason": "prediction_review_only"
+    },
+    {
+      "job": {
+        "job_id": "nsj_d6a3faab9e5ac051",
+        "direction": "rdb_to_notion_dry_run",
+        "target_table": "predicted_occurrence_dates",
+        "target_id": "preddate_d02e6c194992c80f",
+        "notion_source_key": "events",
+        "notion_page_id": "",
+        "status": "pending",
+        "requested_by": "build_historical_promotion_candidates.py",
+        "requested_at": "2026-06-22T01:21:59.620223+00:00",
+        "payload_json": null
+      },
+      "payload": {
+        "action": "create_predicted_2026_occurrence",
+        "application_status": "candidate_for_2026_occurrence",
+        "basis": "7月26日前後",
+        "basis_type": "date_based",
+        "basis_type_label": "日にちベース",
+        "confidence": "low",
+        "confirmed_overwrite_allowed": false,
+        "date_end": "2026-07-27",
+        "date_start": "2026-07-26",
+        "date_status": "predicted",
+        "predicted_year": 2026,
+        "rule_type": "date_near",
+        "target_event_name": "赤坂浄土寺盆踊り大会"
+      },
+      "target": {
+        "predicted_date_id": "preddate_d02e6c194992c80f",
+        "event_name": "赤坂浄土寺盆踊り大会",
+        "series_id": "ser_89245fcd08d4a60b",
+        "series_name": "赤坂浄土寺盆踊り大会",
+        "target_occurrence_id": "",
+        "predicted_year": 2026,
+        "date_start": "2026-07-26",
+        "date_end": "2026-07-27",
+        "date_status": "predicted",
+        "basis_type_label": "日にちベース",
+        "rule_type": "date_near",
+        "basis": "7月26日前後",
+        "confidence": "low",
+        "score": 0.58,
+        "application_status": "candidate_for_2026_occurrence",
+        "venue_name": "浄土寺"
+      },
+      "current_notion_snapshot": {},
+      "proposed_notion_values": {
+        "start_date": "2026-07-26",
+        "end_date": "2026-07-27",
+        "status": "predicted",
+        "venue_names": [
+          "浄土寺"
+        ]
+      },
+      "field_diffs": [
+        {
+          "field": "開催日",
+          "current": "",
+          "proposed": "2026-07-26",
+          "changed": true
+        },
+        {
+          "field": "終了日",
+          "current": "",
+          "proposed": "2026-07-27",
+          "changed": true
+        },
+        {
+          "field": "状態",
+          "current": "",
+          "proposed": "predicted",
+          "changed": true
+        },
+        {
+          "field": "予測根拠",
+          "current": "",
+          "proposed": "7月26日前後",
+          "changed": true
+        },
+        {
+          "field": "会場候補",
+          "current": "",
+          "proposed": "浄土寺",
+          "changed": true
+        }
+      ],
+      "properties": {},
+      "issues": [
+        {
+          "severity": "medium",
+          "issue_type": "predicted_occurrence_date_jobs_are_review_only",
+          "detail": "sync_master_to_notion does not create predicted Notion events directly"
+        }
+      ],
+      "skip_reason": "prediction_review_only"
+    },
+    {
+      "job": {
+        "job_id": "nsj_df9086558cbc8cd0",
+        "direction": "rdb_to_notion_dry_run",
+        "target_table": "predicted_occurrence_dates",
+        "target_id": "preddate_bd796ef03c38aa69",
+        "notion_source_key": "events",
+        "notion_page_id": "",
+        "status": "pending",
+        "requested_by": "build_historical_promotion_candidates.py",
+        "requested_at": "2026-06-22T01:21:59.620223+00:00",
+        "payload_json": null
+      },
+      "payload": {
+        "action": "create_predicted_2026_occurrence",
+        "application_status": "candidate_for_2026_occurrence",
+        "basis": "7月の最終月曜",
+        "basis_type": "weekday_based",
+        "basis_type_label": "曜日ベース",
+        "confidence": "medium",
+        "confirmed_overwrite_allowed": false,
+        "date_end": "2026-07-27",
+        "date_start": "2026-07-27",
+        "date_status": "predicted",
+        "predicted_year": 2026,
+        "rule_type": "weekday_last",
+        "target_event_name": "謝恩納涼盆踊り大会（青山善光寺）"
+      },
+      "target": {
+        "predicted_date_id": "preddate_bd796ef03c38aa69",
+        "event_name": "謝恩納涼盆踊り大会（青山善光寺）",
+        "series_id": "ser_761826bb4d0b4f84",
+        "series_name": "謝恩納涼盆踊り大会（青山善光寺）",
+        "target_occurrence_id": "",
+        "predicted_year": 2026,
+        "date_start": "2026-07-27",
+        "date_end": "2026-07-27",
+        "date_status": "predicted",
+        "basis_type_label": "曜日ベース",
+        "rule_type": "weekday_last",
+        "basis": "7月の最終月曜",
+        "confidence": "medium",
+        "score": 0.74,
+        "application_status": "candidate_for_2026_occurrence",
+        "venue_name": "青山善光寺"
+      },
+      "current_notion_snapshot": {},
+      "proposed_notion_values": {
+        "start_date": "2026-07-27",
+        "end_date": "2026-07-27",
+        "status": "predicted",
+        "venue_names": [
+          "青山善光寺"
+        ]
+      },
+      "field_diffs": [
+        {
+          "field": "開催日",
+          "current": "",
+          "proposed": "2026-07-27",
+          "changed": true
+        },
+        {
+          "field": "終了日",
+          "current": "",
+          "proposed": "2026-07-27",
+          "changed": true
+        },
+        {
+          "field": "状態",
+          "current": "",
+          "proposed": "predicted",
+          "changed": true
+        },
+        {
+          "field": "予測根拠",
+          "current": "",
+          "proposed": "7月の最終月曜",
+          "changed": true
+        },
+        {
+          "field": "会場候補",
+          "current": "",
+          "proposed": "青山善光寺",
+          "changed": true
+        }
+      ],
+      "properties": {},
+      "issues": [
+        {
+          "severity": "medium",
+          "issue_type": "predicted_occurrence_date_jobs_are_review_only",
+          "detail": "sync_master_to_notion does not create predicted Notion events directly"
+        }
+      ],
+      "skip_reason": "prediction_review_only"
+    },
+    {
+      "job": {
+        "job_id": "nsj_e17c17509984fccf",
+        "direction": "rdb_to_notion_dry_run",
+        "target_table": "predicted_occurrence_dates",
+        "target_id": "preddate_369836a93ec48b81",
+        "notion_source_key": "events",
+        "notion_page_id": "",
+        "status": "pending",
+        "requested_by": "build_historical_promotion_candidates.py",
+        "requested_at": "2026-06-22T01:21:59.620223+00:00",
+        "payload_json": null
+      },
+      "payload": {
+        "action": "create_predicted_2026_occurrence",
+        "application_status": "candidate_for_2026_occurrence",
+        "basis": "7月の最終金曜",
+        "basis_type": "weekday_based",
+        "basis_type_label": "曜日ベース",
+        "confidence": "medium",
+        "confirmed_overwrite_allowed": false,
+        "date_end": "2026-07-31",
+        "date_start": "2026-07-31",
+        "date_status": "predicted",
+        "predicted_year": 2026,
+        "rule_type": "weekday_last",
+        "target_event_name": "丸の内de盆踊り"
+      },
+      "target": {
+        "predicted_date_id": "preddate_369836a93ec48b81",
+        "event_name": "丸の内de盆踊り",
+        "series_id": "ser_086f247e4d12348e",
+        "series_name": "丸の内de盆踊り",
+        "target_occurrence_id": "",
+        "predicted_year": 2026,
+        "date_start": "2026-07-31",
+        "date_end": "2026-07-31",
+        "date_status": "predicted",
+        "basis_type_label": "曜日ベース",
+        "rule_type": "weekday_last",
+        "basis": "7月の最終金曜",
+        "confidence": "medium",
+        "score": 0.74,
+        "application_status": "candidate_for_2026_occurrence",
+        "venue_name": "行幸通り"
+      },
+      "current_notion_snapshot": {},
+      "proposed_notion_values": {
+        "start_date": "2026-07-31",
+        "end_date": "2026-07-31",
+        "status": "predicted",
+        "venue_names": [
+          "行幸通り"
+        ]
+      },
+      "field_diffs": [
+        {
+          "field": "開催日",
+          "current": "",
+          "proposed": "2026-07-31",
+          "changed": true
+        },
+        {
+          "field": "終了日",
+          "current": "",
+          "proposed": "2026-07-31",
+          "changed": true
+        },
+        {
+          "field": "状態",
+          "current": "",
+          "proposed": "predicted",
+          "changed": true
+        },
+        {
+          "field": "予測根拠",
+          "current": "",
+          "proposed": "7月の最終金曜",
+          "changed": true
+        },
+        {
+          "field": "会場候補",
+          "current": "",
+          "proposed": "行幸通り",
+          "changed": true
+        }
+      ],
+      "properties": {},
+      "issues": [
+        {
+          "severity": "medium",
+          "issue_type": "predicted_occurrence_date_jobs_are_review_only",
+          "detail": "sync_master_to_notion does not create predicted Notion events directly"
+        }
+      ],
+      "skip_reason": "prediction_review_only"
+    },
+    {
+      "job": {
+        "job_id": "nsj_f7bb3c4ab1f9c0dd",
+        "direction": "rdb_to_notion_dry_run",
+        "target_table": "predicted_occurrence_dates",
+        "target_id": "preddate_4176bccdcae25ce9",
+        "notion_source_key": "events",
+        "notion_page_id": "",
+        "status": "pending",
+        "requested_by": "build_historical_promotion_candidates.py",
+        "requested_at": "2026-06-22T01:21:59.620223+00:00",
+        "payload_json": null
+      },
+      "payload": {
+        "action": "create_predicted_2026_occurrence",
+        "application_status": "candidate_for_2026_occurrence",
+        "basis": "7月16日前後の土曜",
+        "basis_type": "weekday_based",
+        "basis_type_label": "曜日ベース",
+        "confidence": "medium",
+        "confirmed_overwrite_allowed": false,
+        "date_end": "2026-07-20",
+        "date_start": "2026-07-18",
+        "date_status": "predicted",
+        "predicted_year": 2026,
+        "rule_type": "weekday_near_day",
+        "target_event_name": "自由が丘納涼盆踊り大会"
+      },
+      "target": {
+        "predicted_date_id": "preddate_4176bccdcae25ce9",
+        "event_name": "自由が丘納涼盆踊り大会",
+        "series_id": "ser_c7526cbcf3260dc3",
+        "series_name": "自由が丘納涼盆踊り大会",
+        "target_occurrence_id": "",
+        "predicted_year": 2026,
+        "date_start": "2026-07-18",
+        "date_end": "2026-07-20",
+        "date_status": "predicted",
+        "basis_type_label": "曜日ベース",
+        "rule_type": "weekday_near_day",
+        "basis": "7月16日前後の土曜",
+        "confidence": "medium",
+        "score": 0.68,
+        "application_status": "candidate_for_2026_occurrence",
+        "venue_name": "自由が丘駅前ロータリー 特設会場"
+      },
+      "current_notion_snapshot": {},
+      "proposed_notion_values": {
+        "start_date": "2026-07-18",
+        "end_date": "2026-07-20",
+        "status": "predicted",
+        "venue_names": [
+          "自由が丘駅前ロータリー 特設会場"
+        ]
+      },
+      "field_diffs": [
+        {
+          "field": "開催日",
+          "current": "",
+          "proposed": "2026-07-18",
+          "changed": true
+        },
+        {
+          "field": "終了日",
+          "current": "",
+          "proposed": "2026-07-20",
+          "changed": true
+        },
+        {
+          "field": "状態",
+          "current": "",
+          "proposed": "predicted",
+          "changed": true
+        },
+        {
+          "field": "予測根拠",
+          "current": "",
+          "proposed": "7月16日前後の土曜",
+          "changed": true
+        },
+        {
+          "field": "会場候補",
+          "current": "",
+          "proposed": "自由が丘駅前ロータリー 特設会場",
+          "changed": true
+        }
+      ],
+      "properties": {},
+      "issues": [
+        {
+          "severity": "medium",
+          "issue_type": "predicted_occurrence_date_jobs_are_review_only",
+          "detail": "sync_master_to_notion does not create predicted Notion events directly"
+        }
+      ],
+      "skip_reason": "prediction_review_only"
+    }
+  ],
+  "issues": [
+    {
+      "severity": "medium",
+      "issue_type": "predicted_occurrence_date_jobs_are_review_only",
+      "detail": "sync_master_to_notion does not create predicted Notion events directly",
+      "job_id": "nsj_570669415c22a2d5"
+    },
+    {
+      "severity": "medium",
+      "issue_type": "predicted_occurrence_date_jobs_are_review_only",
+      "detail": "sync_master_to_notion does not create predicted Notion events directly",
+      "job_id": "nsj_5a96718435cedd20"
+    },
+    {
+      "severity": "medium",
+      "issue_type": "predicted_occurrence_date_jobs_are_review_only",
+      "detail": "sync_master_to_notion does not create predicted Notion events directly",
+      "job_id": "nsj_75af04af93ae266d"
+    },
+    {
+      "severity": "medium",
+      "issue_type": "predicted_occurrence_date_jobs_are_review_only",
+      "detail": "sync_master_to_notion does not create predicted Notion events directly",
+      "job_id": "nsj_849055fd5e6248ed"
+    },
+    {
+      "severity": "medium",
+      "issue_type": "predicted_occurrence_date_jobs_are_review_only",
+      "detail": "sync_master_to_notion does not create predicted Notion events directly",
+      "job_id": "nsj_9699bcb840c2a9ed"
+    },
+    {
+      "severity": "medium",
+      "issue_type": "predicted_occurrence_date_jobs_are_review_only",
+      "detail": "sync_master_to_notion does not create predicted Notion events directly",
+      "job_id": "nsj_9e1da3d52f1f5167"
+    },
+    {
+      "severity": "medium",
+      "issue_type": "predicted_occurrence_date_jobs_are_review_only",
+      "detail": "sync_master_to_notion does not create predicted Notion events directly",
+      "job_id": "nsj_d6a3faab9e5ac051"
+    },
+    {
+      "severity": "medium",
+      "issue_type": "predicted_occurrence_date_jobs_are_review_only",
+      "detail": "sync_master_to_notion does not create predicted Notion events directly",
+      "job_id": "nsj_df9086558cbc8cd0"
+    },
+    {
+      "severity": "medium",
+      "issue_type": "predicted_occurrence_date_jobs_are_review_only",
+      "detail": "sync_master_to_notion does not create predicted Notion events directly",
+      "job_id": "nsj_e17c17509984fccf"
+    },
+    {
+      "severity": "medium",
+      "issue_type": "predicted_occurrence_date_jobs_are_review_only",
+      "detail": "sync_master_to_notion does not create predicted Notion events directly",
+      "job_id": "nsj_f7bb3c4ab1f9c0dd"
+    }
+  ]
+}
