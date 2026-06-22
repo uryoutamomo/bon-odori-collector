@@ -142,4 +142,5 @@ jobs:
         [ -f data/x_whitelist_state.json ] && git add data/x_whitelist_state.json
         [ -f data/x_event_evidence_state.json ] && git add data/x_event_evidence_state.json
         [ -f data/x_event_evidence_cohort.json ] && git add data/x_event_evidence_cohort.json
+        python guard_git_large_files.py
         git diff --cached --quiet || (git commit -m "Update bon-odori data (news + voices + event dates)" && git push)
