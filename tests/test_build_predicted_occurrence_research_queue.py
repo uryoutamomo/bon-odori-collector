@@ -77,8 +77,9 @@ class BuildPredictedOccurrenceResearchQueueTest(unittest.TestCase):
             self.assertEqual(items[0]["priority_label"], "P0")
             self.assertEqual(items[0]["recommended_action"], "source_recheck_before_promotion")
             self.assertEqual(items[0]["evidence_years"], [2023, 2024])
-            self.assertEqual(items[0]["source_review"], "current_year_source_not_found")
+            self.assertEqual(items[0]["source_review"], "current_year_third_party_source_found")
             self.assertIn("https://www.tais.ac.jp/guide/latest_news/", items[0]["checked_urls"])
+            self.assertIn("https://tokyofesta.com/23ku/31077/", items[0]["checked_urls"])
 
 
 if __name__ == "__main__":

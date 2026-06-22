@@ -42,13 +42,22 @@ SOURCE_REVIEW = {
     },
     "シタマチ.ふるさと盆踊り大会": {
         "source_checked_at": "2026-06-22",
-        "source_review": "previous_year_third_party_source",
-        "source_note": "TokyoFesta source confirms 2025-08-16 to 2025-08-17, not a 2026 date.",
+        "source_review": "current_year_source_not_found",
+        "source_note": "TokyoFesta and 上野が、すき。 sources confirm 2025-08-16 to 2025-08-17; no 2026 source was found.",
+        "checked_urls": [
+            "https://tokyofesta.com/23ku/24373/",
+            "https://shopblog.dmdepart.jp/ueno/uenogasuki/article/detail/?cd=000993",
+            "https://minato-bon-odori.blogspot.com/2021/05/coming-all-h.html",
+        ],
     },
     "歌舞伎町BON ODORI": {
         "source_checked_at": "2026-06-22",
-        "source_review": "previous_year_event_source",
-        "source_note": "Existing source is prior-year event evidence; confirm 2026 with organizer or official area source before promotion.",
+        "source_review": "current_year_source_not_found",
+        "source_note": "Shinjuku tourism page is 2025-08-16 evidence and the current bon-odori index had no 2026 row; keep as prediction.",
+        "checked_urls": [
+            "https://www.kanko-shinjuku.jp/event/-/article_4606.html",
+            "https://minato-bon-odori.blogspot.com/2021/05/coming-all-h.html",
+        ],
     },
     "第28回新橋こいち祭 盆踊り": {
         "source_checked_at": "2026-06-22",
@@ -67,16 +76,21 @@ SOURCE_REVIEW = {
     },
     "西久保八幡神社 盆踊り": {
         "source_checked_at": "2026-06-22",
-        "source_review": "previous_year_or_archival_official_source",
-        "source_note": "Existing shrine source is recurrence evidence only; confirm 2026 before creating an occurrence.",
+        "source_review": "current_year_source_not_found",
+        "source_note": "Official shrine article is 令和7年/2025例大祭 evidence and the current bon-odori index had no 2026 row; keep as prediction.",
+        "checked_urls": [
+            "https://hachimanjinja.or.jp/main/?p=5604",
+            "https://minato-bon-odori.blogspot.com/2021/05/coming-all-h.html",
+        ],
     },
     "第15回 鴨台盆踊り": {
         "source_checked_at": "2026-06-22",
-        "source_review": "current_year_source_not_found",
-        "source_note": "大正大学2026最新ニュース and 2025 第15回 article were rechecked; no 2026 鴨台盆踊り source was found.",
+        "source_review": "current_year_third_party_source_found",
+        "source_note": "TokyoFesta has a 2026 第16回 鴨台 article for 2026-07-10 to 2026-07-11, but 大正大学公式確認は未発見 and the prediction differs; keep in review queue.",
         "checked_urls": [
             "https://www.tais.ac.jp/guide/latest_news/",
             "https://www.tais.ac.jp/guide/latest_news/20250627/92922/",
+            "https://tokyofesta.com/23ku/31077/",
             "https://minato-bon-odori.blogspot.com/2021/05/coming-all-h.html",
         ],
     },
