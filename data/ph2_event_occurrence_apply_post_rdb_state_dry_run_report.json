@@ -1,14 +1,14 @@
 {
   "generated_by": "dry_run_ph2_event_occurrence_apply.py",
-  "generated_at": "2026-06-22T13:22:53.193880+00:00",
+  "generated_at": "2026-06-22T13:22:53.225936+00:00",
   "scope": "copied_sqlite_only_no_notion_no_public_json",
   "sources": {
     "master_db": "data/bon_odori_master.sqlite",
-    "plan": "data/ph2_event_occurrence_apply_plan.json"
+    "plan": "data/ph2_event_occurrence_apply_plan_post_rdb_state.json"
   },
   "outputs": {
-    "target_db": "data/ph2_event_occurrence_apply_dry_run.sqlite",
-    "dry_run_db": "data/ph2_event_occurrence_apply_dry_run.sqlite",
+    "target_db": "data/ph2_event_occurrence_apply_post_rdb_state_dry_run.sqlite",
+    "dry_run_db": "data/ph2_event_occurrence_apply_post_rdb_state_dry_run.sqlite",
     "backup_db": ""
   },
   "options": {
@@ -25,7 +25,7 @@
   "summary": {
     "selected_count": 0,
     "applied_count": 0,
-    "skipped_count": 12,
+    "skipped_count": 11,
     "issues_count": 0,
     "issues_by_severity": {},
     "dry_run_table_counts": {
@@ -56,10 +56,6 @@
       "event_name": "京橋盆踊り",
       "reason": "not_selected_mutation_type",
       "mutation_type": "append_historical_reference_without_confirming_2026"
-    },
-    {
-      "event_name": "品川区民まつり 荏原第五地区",
-      "reason": "already_applied"
     },
     {
       "event_name": "増上寺 地蔵尊盆踊り大会",

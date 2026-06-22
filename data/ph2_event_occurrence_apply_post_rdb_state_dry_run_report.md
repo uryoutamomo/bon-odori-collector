@@ -1,16 +1,16 @@
 # Ph2 event occurrence dry-run apply
 
-- generated_at: 2026-06-22T13:22:53.193880+00:00
+- generated_at: 2026-06-22T13:22:53.225936+00:00
 - mode: DRY-RUN
 - scope: copied_sqlite_only_no_notion_no_public_json
-- target_db: `data/ph2_event_occurrence_apply_dry_run.sqlite`
-- dry_run_db: `data/ph2_event_occurrence_apply_dry_run.sqlite`
+- target_db: `data/ph2_event_occurrence_apply_post_rdb_state_dry_run.sqlite`
+- dry_run_db: `data/ph2_event_occurrence_apply_post_rdb_state_dry_run.sqlite`
 - backup_db: ``
 - db_committed: True
 - rolled_back: False
 - selected_count: 0
 - applied_count: 0
-- skipped_count: 12
+- skipped_count: 11
 - issues_count: 0
 - issues_by_severity: {}
 - dry_run_table_counts: {'event_occurrences': 222, 'occurrence_dates': 170, 'notion_sync_jobs': 10, 'ph2_event_occurrence_sync_jobs': 0}
@@ -26,7 +26,6 @@
 - 銀座一丁目東町会・新富町会 納涼盆踊り大会: not_selected_mutation_type
 - ゐの市盆踊り～不忍夢～: not_selected_mutation_type
 - 京橋盆踊り: not_selected_mutation_type
-- 品川区民まつり 荏原第五地区: already_applied
 - 増上寺 地蔵尊盆踊り大会: not_selected_mutation_type
 - 新宿中央公園夏祭り 納涼盆踊り大会: not_selected_mutation_type
 - 旗岡八幡神社例大祭: not_selected_mutation_type

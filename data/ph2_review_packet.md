@@ -1,92 +1,38 @@
 # Ph2 review packet
 
-- generated_at: 2026-06-22T01:22:49.528009+00:00
+- generated_at: 2026-06-22T13:22:59.119147+00:00
 - scope: local_review_packet_no_writes
 
 ## Review Order
 
-- changed_file_count: 117
-- bucket_counts: {'A_scripts_review': 1, 'B_ph2_review_reports': 18, 'C_review_queue_evidence': 7, 'D_generated_master_rdb_artifacts': 12, 'E_public_export_dry_run_artifacts': 4, 'F_public_output_modified_do_not_wholesale_deploy': 5, 'G_youtube_song_master_side_changes': 3, 'H_repo_housekeeping': 1, 'Z_other': 66}
+- changed_file_count: 18
+- bucket_counts: {'A_scripts_review': 2, 'B_ph2_review_reports': 8, 'D_generated_master_rdb_artifacts': 2, 'Z_other': 6}
 
 ### A_scripts_review
 
-- `?? audit_master_rdb.py`
+- ` M build_ph2_event_occurrence_apply_plan.py`
+- ` M dry_run_ph2_event_occurrence_apply.py`
 
 ### B_ph2_review_reports
 
 - ` M data/ph2_cutover_readiness.json`
 - ` M data/ph2_cutover_readiness.md`
-- `?? data/ph2_event_occurrence_apply_plan.json`
-- `?? data/ph2_event_occurrence_apply_plan.md`
-- `?? data/ph2_review_packet.json`
-- `?? data/ph2_review_packet.md`
-- `?? data/pre_cutover_p0_apply_plan.json`
-- `?? data/pre_cutover_p0_apply_plan.md`
-- `?? data/public_events_diff_classification.json`
-- `?? data/public_events_diff_classification.md`
-- `?? data/public_events_sync_guard.json`
-- `?? data/public_events_sync_guard.md`
-- `?? data/public_individual_review_priority.json`
-- `?? data/public_individual_review_priority.md`
-- `?? data/public_restore_candidate_breakdown.json`
-- `?? data/public_restore_candidate_breakdown.md`
-- `?? data/song_occurrence_collapse_analysis.json`
-- `?? data/song_occurrence_collapse_analysis.md`
-
-### C_review_queue_evidence
-
-- `A  data/historical_promotion_candidates.json`
-- `A  data/historical_promotion_candidates.md`
-- `A  data/observed_promotion_candidates.json`
-- `A  data/observed_promotion_candidates.md`
-- `A  data/registered_event_investigation_queue.json`
-- `A  data/registered_event_investigation_queue.md`
-- `?? data/pre_cutover_p0_research.md`
-
-### F_public_output_modified_do_not_wholesale_deploy
-
-- ` M data/public/event_songs_public.json`
-- ` M data/public/events_public.js`
-- ` M data/public/events_public.json`
-- ` M data/public/venues_geo.json`
-- ` M data/public/venues_public.json`
-
-### G_youtube_song_master_side_changes
-
-- ` M build_youtube_song_master.py`
-- ` M data/youtube_song_master.json`
-- ` M data/youtube_song_master_review.md`
+- ` M data/ph2_event_occurrence_apply_dry_run_report.json`
+- ` M data/ph2_event_occurrence_apply_dry_run_report.md`
+- ` M data/ph2_event_occurrence_apply_plan.json`
+- ` M data/ph2_event_occurrence_apply_plan.md`
+- ` M data/ph2_review_packet.json`
+- ` M data/ph2_review_packet.md`
 
 ### D_generated_master_rdb_artifacts
 
-- `?? data/master_rdb_event_song_occurrences_public.dry_run.json`
-- `?? data/master_rdb_event_song_occurrences_public.production_preview.json`
-- `?? data/master_rdb_ph1_freeze_release_proposal.json`
-- `?? data/master_rdb_ph1_freeze_release_proposal.md`
-- `?? data/master_rdb_public_dry_run/event_songs_public.json`
-- `?? data/master_rdb_public_dry_run/events_public.js`
-- `?? data/master_rdb_public_dry_run/events_public.json`
-- `?? data/master_rdb_public_dry_run/public_date_prediction_apply_result.json`
-- `?? data/master_rdb_public_production_preview/event_songs_public.json`
-- `?? data/master_rdb_public_production_preview/events_public.js`
-- `?? data/master_rdb_public_production_preview/events_public.json`
-- `?? data/master_rdb_public_production_preview/public_date_prediction_apply_result.json`
-
-### E_public_export_dry_run_artifacts
-
-- `?? data/current_public_dry_run/event_songs_public.json`
-- `?? data/current_public_dry_run/events_public.js`
-- `?? data/current_public_dry_run/events_public.json`
-- `?? data/current_public_dry_run/public_date_prediction_apply_result.json`
-
-### H_repo_housekeeping
-
-- ` M .gitignore`
+- ` M data/master_rdb_audit.json`
+- ` M data/master_rdb_audit.md`
 
 ## Venue Review
 
-- row_count: 11
-- by_decision_bucket: {'alias_candidate': 3, 'new_or_missing_venue_review': 1, 'possible_alias_review': 2, 'same_venue_confirmed': 5}
+- row_count: 9
+- by_decision_bucket: {'alias_candidate': 3, 'new_or_missing_venue_review': 1, 'possible_alias_review': 2, 'same_venue_confirmed': 3}
 
 | decision | event | purpose | proposed | current | suggestion | flags |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -96,8 +42,6 @@
 | new_or_missing_venue_review | 銀座一丁目東町会・新富町会 納涼盆踊り大会 | historical_reference_only | 京橋プラザ |  |  |  |
 | possible_alias_review | 京橋盆踊り | historical_reference_only | 京橋中央ひろば（ガレリア） | 京橋エドグラン 京橋中央ひろば | 京橋エドグラン 京橋中央ひろば (0.56) |  |
 | possible_alias_review | 新宿中央公園夏祭り 納涼盆踊り大会 | historical_reference_only | 新宿中央公園 ファンモアタイムひろば | 新宿中央公園 ファンモアタイム広場 | 新宿中央公園 ファンモアタイム広場 (0.848) |  |
-| same_venue_confirmed | 品川区民まつり 品川第二地区 | current_2026_official_update | 天妙国寺境内 | 天妙国寺 |  |  |
-| same_venue_confirmed | 品川区民まつり 荏原第一地区 | current_2026_official_update | 小山台小学校 | 小山台小学校 |  |  |
 | same_venue_confirmed | 品川区民まつり 荏原第五地区 | current_2026_official_update | 杜松ホーム | 杜松ホーム |  |  |
 | same_venue_confirmed | ゐの市盆踊り～不忍夢～ | historical_reference_only | 上野恩賜公園 | 上野恩賜公園 |  |  |
 | same_venue_confirmed | 森下二丁目盆踊り | historical_reference_only | 森下公園 | 森下公園 |  |  |
@@ -187,7 +131,7 @@ Suggested handling:
 - safe_to_wholesale_sync: True
 - failures: []
 - warnings: []
-- postprocessed_events_by_action: {'fixed_date_rule_basis_refresh': 1}
+- postprocessed_events_by_action: {}
 
 | action | event | venue | families | fields |
 | --- | --- | --- | --- | ---: |

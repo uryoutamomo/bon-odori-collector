@@ -448,7 +448,7 @@ def build(args):
         if row["bucket"] == "current_2026_apply_candidate":
             venue_result = lookup_venue(venues, row.get("proposed_venue"))
             mutations.append(current_official_mutation(row, occurrence, venue_result, decisions.get(row["event_name"])))
-        elif row["bucket"] == "historical_reference_only":
+        elif row["bucket"] in {"historical_reference_only", "historical_reference_recorded"}:
             venue_result = lookup_venue(venues, row.get("historical_venue"))
             mutations.append(
                 historical_reference_mutation(

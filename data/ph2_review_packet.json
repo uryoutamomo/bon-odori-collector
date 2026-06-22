@@ -1,6 +1,6 @@
 {
   "generated_by": "build_ph2_review_packet.py",
-  "generated_at": "2026-06-22T01:22:49.528009+00:00",
+  "generated_at": "2026-06-22T13:22:59.119147+00:00",
   "scope": "local_review_packet_no_writes",
   "sources": {
     "apply_plan": "data/ph2_event_occurrence_apply_plan.json",
@@ -12,153 +12,39 @@
     "public_individual_priority": "data/public_individual_review_priority.json"
   },
   "worktree": {
-    "changed_file_count": 117,
+    "changed_file_count": 18,
     "bucket_counts": {
-      "A_scripts_review": 1,
-      "B_ph2_review_reports": 18,
-      "C_review_queue_evidence": 7,
-      "D_generated_master_rdb_artifacts": 12,
-      "E_public_export_dry_run_artifacts": 4,
-      "F_public_output_modified_do_not_wholesale_deploy": 5,
-      "G_youtube_song_master_side_changes": 3,
-      "H_repo_housekeeping": 1,
-      "Z_other": 66
+      "A_scripts_review": 2,
+      "B_ph2_review_reports": 8,
+      "D_generated_master_rdb_artifacts": 2,
+      "Z_other": 6
     },
     "buckets": {
       "A_scripts_review": [
-        "?? audit_master_rdb.py"
+        " M build_ph2_event_occurrence_apply_plan.py",
+        " M dry_run_ph2_event_occurrence_apply.py"
       ],
       "B_ph2_review_reports": [
         " M data/ph2_cutover_readiness.json",
         " M data/ph2_cutover_readiness.md",
-        "?? data/ph2_event_occurrence_apply_plan.json",
-        "?? data/ph2_event_occurrence_apply_plan.md",
-        "?? data/ph2_review_packet.json",
-        "?? data/ph2_review_packet.md",
-        "?? data/pre_cutover_p0_apply_plan.json",
-        "?? data/pre_cutover_p0_apply_plan.md",
-        "?? data/public_events_diff_classification.json",
-        "?? data/public_events_diff_classification.md",
-        "?? data/public_events_sync_guard.json",
-        "?? data/public_events_sync_guard.md",
-        "?? data/public_individual_review_priority.json",
-        "?? data/public_individual_review_priority.md",
-        "?? data/public_restore_candidate_breakdown.json",
-        "?? data/public_restore_candidate_breakdown.md",
-        "?? data/song_occurrence_collapse_analysis.json",
-        "?? data/song_occurrence_collapse_analysis.md"
-      ],
-      "C_review_queue_evidence": [
-        "A  data/historical_promotion_candidates.json",
-        "A  data/historical_promotion_candidates.md",
-        "A  data/observed_promotion_candidates.json",
-        "A  data/observed_promotion_candidates.md",
-        "A  data/registered_event_investigation_queue.json",
-        "A  data/registered_event_investigation_queue.md",
-        "?? data/pre_cutover_p0_research.md"
+        " M data/ph2_event_occurrence_apply_dry_run_report.json",
+        " M data/ph2_event_occurrence_apply_dry_run_report.md",
+        " M data/ph2_event_occurrence_apply_plan.json",
+        " M data/ph2_event_occurrence_apply_plan.md",
+        " M data/ph2_review_packet.json",
+        " M data/ph2_review_packet.md"
       ],
       "D_generated_master_rdb_artifacts": [
-        "?? data/master_rdb_event_song_occurrences_public.dry_run.json",
-        "?? data/master_rdb_event_song_occurrences_public.production_preview.json",
-        "?? data/master_rdb_ph1_freeze_release_proposal.json",
-        "?? data/master_rdb_ph1_freeze_release_proposal.md",
-        "?? data/master_rdb_public_dry_run/event_songs_public.json",
-        "?? data/master_rdb_public_dry_run/events_public.js",
-        "?? data/master_rdb_public_dry_run/events_public.json",
-        "?? data/master_rdb_public_dry_run/public_date_prediction_apply_result.json",
-        "?? data/master_rdb_public_production_preview/event_songs_public.json",
-        "?? data/master_rdb_public_production_preview/events_public.js",
-        "?? data/master_rdb_public_production_preview/events_public.json",
-        "?? data/master_rdb_public_production_preview/public_date_prediction_apply_result.json"
-      ],
-      "E_public_export_dry_run_artifacts": [
-        "?? data/current_public_dry_run/event_songs_public.json",
-        "?? data/current_public_dry_run/events_public.js",
-        "?? data/current_public_dry_run/events_public.json",
-        "?? data/current_public_dry_run/public_date_prediction_apply_result.json"
-      ],
-      "F_public_output_modified_do_not_wholesale_deploy": [
-        " M data/public/event_songs_public.json",
-        " M data/public/events_public.js",
-        " M data/public/events_public.json",
-        " M data/public/venues_geo.json",
-        " M data/public/venues_public.json"
-      ],
-      "G_youtube_song_master_side_changes": [
-        " M build_youtube_song_master.py",
-        " M data/youtube_song_master.json",
-        " M data/youtube_song_master_review.md"
-      ],
-      "H_repo_housekeeping": [
-        " M .gitignore"
+        " M data/master_rdb_audit.json",
+        " M data/master_rdb_audit.md"
       ],
       "Z_other": [
-        " M apply_public_date_predictions.py",
-        " M data/public_date_prediction_apply_result.json",
-        " M export_public_events.py",
-        " M tests/test_apply_public_date_predictions.py",
-        " M tests/test_export_public_events.py",
-        "?? data/ph2_ebara_fifth_apply_idempotency.json",
-        "?? data/ph2_ebara_fifth_apply_idempotency.md",
-        "?? data/ph2_ebara_fifth_apply_report.json",
-        "?? data/ph2_ebara_fifth_apply_report.md",
-        "?? data/ph2_ebara_fifth_copy_apply_report.json",
-        "?? data/ph2_ebara_fifth_copy_apply_report.md",
-        "?? data/ph2_ebara_fifth_public_preview.json",
-        "?? data/ph2_ebara_fifth_public_preview.md",
-        "?? data/ph2_ebara_fifth_public_preview/events_public.js",
-        "?? data/ph2_ebara_fifth_public_preview/events_public.json",
-        "?? data/ph2_ebara_fifth_public_preview/venues_geo.json",
-        "?? data/ph2_ebara_fifth_public_preview/venues_public.json",
-        "?? data/ph2_ebara_fifth_public_preview_guard.json",
-        "?? data/ph2_ebara_fifth_public_preview_guard.md",
-        "?? data/ph2_ebara_fifth_venue_plan.json",
-        "?? data/ph2_ebara_fifth_venue_plan.md",
-        "?? data/ph2_event_occurrence_apply_plan_shinagawa_second_test.json",
-        "?? data/ph2_event_occurrence_apply_plan_shinagawa_second_test.md",
-        "?? data/ph2_event_occurrence_review_decisions.json",
-        "?? data/ph2_historical_reference_apply_ginza_kyobashi.json",
-        "?? data/ph2_historical_reference_apply_ginza_kyobashi.md",
-        "?? \"data/ph2_historical_reference_apply_\\343\\202\\220\\343\\201\\256\\345\\270\\202\\347\\233\\206\\350\\270\\212\\343\\202\\212\\357\\275\\236\\344\\270\\215\\345\\277\\215\\345\\244\\242\\357\\275\\236.json\"",
-        "?? \"data/ph2_historical_reference_apply_\\343\\202\\220\\343\\201\\256\\345\\270\\202\\347\\233\\206\\350\\270\\212\\343\\202\\212\\357\\275\\236\\344\\270\\215\\345\\277\\215\\345\\244\\242\\357\\275\\236.md\"",
-        "?? \"data/ph2_historical_reference_apply_\\344\\272\\254\\346\\251\\213\\347\\233\\206\\350\\270\\212\\343\\202\\212.json\"",
-        "?? \"data/ph2_historical_reference_apply_\\344\\272\\254\\346\\251\\213\\347\\233\\206\\350\\270\\212\\343\\202\\212.md\"",
-        "?? \"data/ph2_historical_reference_apply_\\346\\226\\260\\345\\256\\277\\344\\270\\255\\345\\244\\256\\345\\205\\254\\345\\234\\222\\345\\244\\217\\347\\245\\255\\343\\202\\212 \\347\\264\\215\\346\\266\\274\\347\\233\\206\\350\\270\\212\\343\\202\\212\\345\\244\\247\\344\\274\\232.json\"",
-        "?? \"data/ph2_historical_reference_apply_\\346\\226\\260\\345\\256\\277\\344\\270\\255\\345\\244\\256\\345\\205\\254\\345\\234\\222\\345\\244\\217\\347\\245\\255\\343\\202\\212 \\347\\264\\215\\346\\266\\274\\347\\233\\206\\350\\270\\212\\343\\202\\212\\345\\244\\247\\344\\274\\232.md\"",
-        "?? \"data/ph2_historical_reference_apply_\\346\\243\\256\\344\\270\\213\\344\\272\\214\\344\\270\\201\\347\\233\\256\\347\\233\\206\\350\\270\\212\\343\\202\\212.json\"",
-        "?? \"data/ph2_historical_reference_apply_\\346\\243\\256\\344\\270\\213\\344\\272\\214\\344\\270\\201\\347\\233\\256\\347\\233\\206\\350\\270\\212\\343\\202\\212.md\"",
-        "?? \"data/ph2_historical_reference_apply_\\346\\277\\261\\347\\224\\272\\351\\237\\263\\351\\240\\255\\347\\233\\206\\350\\270\\212\\343\\202\\212\\345\\244\\247\\344\\274\\232.json\"",
-        "?? \"data/ph2_historical_reference_apply_\\346\\277\\261\\347\\224\\272\\351\\237\\263\\351\\240\\255\\347\\233\\206\\350\\270\\212\\343\\202\\212\\345\\244\\247\\344\\274\\232.md\"",
-        "?? \"data/ph2_historical_reference_apply_\\350\\265\\244\\345\\235\\202\\345\\244\\217\\343\\201\\212\\343\\201\\251\\343\\202\\212\\357\\274\\210\\346\\227\\247 \\350\\265\\244\\345\\235\\202\\347\\233\\206\\350\\270\\212\\343\\202\\212\\357\\274\\211.json\"",
-        "?? \"data/ph2_historical_reference_apply_\\350\\265\\244\\345\\235\\202\\345\\244\\217\\343\\201\\212\\343\\201\\251\\343\\202\\212\\357\\274\\210\\346\\227\\247 \\350\\265\\244\\345\\235\\202\\347\\233\\206\\350\\270\\212\\343\\202\\212\\357\\274\\211.md\"",
-        "?? \"data/ph2_historical_reference_apply_\\351\\203\\275\\343\\201\\256\\350\\276\\260\\345\\267\\263\\346\\267\\261\\345\\267\\235 \\350\\207\\250\\346\\265\\267\\343\\201\\274\\343\\202\\223\\343\\201\\212\\343\\201\\251\\343\\202\\212.json\"",
-        "?? \"data/ph2_historical_reference_apply_\\351\\203\\275\\343\\201\\256\\350\\276\\260\\345\\267\\263\\346\\267\\261\\345\\267\\235 \\350\\207\\250\\346\\265\\267\\343\\201\\274\\343\\202\\223\\343\\201\\212\\343\\201\\251\\343\\202\\212.md\"",
-        "?? data/ph2_master_to_notion_sync_dry_run.json",
-        "?? data/ph2_master_to_notion_sync_dry_run.md",
-        "?? data/ph2_master_to_notion_sync_tmp_apply_db_dry_run.json",
-        "?? data/ph2_master_to_notion_sync_tmp_apply_db_dry_run.md",
-        "?? data/ph2_shinagawa_second_apply_dry_run_report.json",
-        "?? data/ph2_shinagawa_second_apply_dry_run_report.md",
-        "?? data/ph2_shinagawa_second_apply_report.json",
-        "?? data/ph2_shinagawa_second_apply_report.md",
-        "?? data/ph2_shinagawa_second_notion_sync_apply.json",
-        "?? data/ph2_shinagawa_second_notion_sync_apply.md",
-        "?? data/ph2_shinagawa_second_notion_sync_dry_run.json",
-        "?? data/ph2_shinagawa_second_notion_sync_dry_run.md",
-        "?? data/ph2_shinagawa_second_notion_sync_pre_apply.json",
-        "?? data/ph2_shinagawa_second_notion_sync_pre_apply.md",
-        "?? data/ph2_shinagawa_second_post_apply_dry_run_report.json",
-        "?? data/ph2_shinagawa_second_post_apply_dry_run_report.md",
-        "?? data/ph2_shinagawa_second_venue_notion_sync_apply.json",
-        "?? data/ph2_shinagawa_second_venue_notion_sync_apply.md",
-        "?? data/ph2_shinagawa_second_venue_notion_sync_pre_apply.json",
-        "?? data/ph2_shinagawa_second_venue_notion_sync_pre_apply.md",
-        "?? data/ph2_shinagawa_second_venue_review.json",
-        "?? data/ph2_shinagawa_second_venue_review.md",
-        "?? data/ph2_shinagawa_second_venue_review_sync_job.json",
-        "?? data/ph2_shinagawa_second_venue_review_sync_job.md",
-        "?? data/ph2_shinagawa_second_venue_review_tmp_apply.json",
-        "?? data/ph2_shinagawa_second_venue_review_tmp_apply.md"
+        "?? data/ph2_event_occurrence_apply_plan_post_rdb_state.json",
+        "?? data/ph2_event_occurrence_apply_plan_post_rdb_state.md",
+        "?? data/ph2_event_occurrence_apply_post_rdb_state_dry_run_report.json",
+        "?? data/ph2_event_occurrence_apply_post_rdb_state_dry_run_report.md",
+        "?? data/ph2_event_occurrence_apply_post_rdb_state_historical_dry_run_report.json",
+        "?? data/ph2_event_occurrence_apply_post_rdb_state_historical_dry_run_report.md"
       ]
     },
     "recommended_review_order": [
@@ -174,12 +60,12 @@
     ]
   },
   "venue_review": {
-    "row_count": 11,
+    "row_count": 9,
     "by_decision_bucket": {
       "alias_candidate": 3,
       "new_or_missing_venue_review": 1,
       "possible_alias_review": 2,
-      "same_venue_confirmed": 5
+      "same_venue_confirmed": 3
     },
     "rows": [
       {
@@ -294,28 +180,6 @@
         "notes": "Historical reference only."
       },
       {
-        "event_name": "品川区民まつり 品川第二地区",
-        "purpose": "current_2026_official_update",
-        "proposed_venue": "天妙国寺境内",
-        "current_venue": "天妙国寺",
-        "lookup_status": "exact_match",
-        "top_suggestion": {},
-        "decision_bucket": "same_venue_confirmed",
-        "review_flags": [],
-        "notes": "Official 2026 page has a child-corner slot at 城南小学校体育館 and the bon-odori slot at 天妙国寺境内. Do not overwrite blindly; either correct the existing venue or split occurrences."
-      },
-      {
-        "event_name": "品川区民まつり 荏原第一地区",
-        "purpose": "current_2026_official_update",
-        "proposed_venue": "小山台小学校",
-        "current_venue": "小山台小学校",
-        "lookup_status": "exact_match",
-        "top_suggestion": {},
-        "decision_bucket": "same_venue_confirmed",
-        "review_flags": [],
-        "notes": "Single current-year official date/venue. Straightforward after the Ph2 write boundary is ready."
-      },
-      {
         "event_name": "品川区民まつり 荏原第五地区",
         "purpose": "current_2026_official_update",
         "proposed_venue": "杜松ホーム",
@@ -368,8 +232,8 @@
   "public_diff_classification": {
     "available": true,
     "summary": {
-      "collector_event_count": 182,
-      "site_event_count": 182,
+      "collector_event_count": 183,
+      "site_event_count": 183,
       "collector_only_count": 0,
       "site_only_count": 0,
       "high_risk_diff_record_count": 0,
@@ -961,13 +825,12 @@
       "failures": [],
       "warnings": [],
       "safe_to_wholesale_sync": true,
-      "safe_to_deploy_without_review": false,
       "public_deploy_requires_separate_approval": true,
       "deploy_approval_note": "Guard pass only means no blocking public sync diffs remain. Public deploy still requires separate operator approval."
     },
     "raw_classification": {
-      "collector_event_count": 182,
-      "site_event_count": 182,
+      "collector_event_count": 183,
+      "site_event_count": 183,
       "collector_only_count": 0,
       "site_only_count": 0,
       "high_risk_diff_record_count": 0,
@@ -977,22 +840,15 @@
       "events_by_action": {}
     },
     "postprocessed_classification": {
-      "collector_event_count": 182,
-      "site_event_count": 182,
+      "collector_event_count": 183,
+      "site_event_count": 183,
       "collector_only_count": 0,
       "site_only_count": 0,
-      "high_risk_diff_record_count": 5,
-      "high_risk_event_count": 1,
-      "records_by_family": {
-        "historical_reference": 2,
-        "historical_slide": 3
-      },
-      "records_by_action": {
-        "individual_review": 5
-      },
-      "events_by_action": {
-        "fixed_date_rule_basis_refresh": 1
-      }
+      "high_risk_diff_record_count": 0,
+      "high_risk_event_count": 0,
+      "records_by_family": {},
+      "records_by_action": {},
+      "events_by_action": {}
     },
     "blocking_examples": []
   },

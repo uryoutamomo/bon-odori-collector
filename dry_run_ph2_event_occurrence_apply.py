@@ -503,7 +503,9 @@ def render_markdown(result):
         )
     lines.extend(["", "## Skipped", ""])
     for row in result["skipped"][:40]:
-        lines.append(f"- {row.get('event_name')}: {row.get('reason')} {row.get('flags') or ''}")
+        flags = row.get("flags") or ""
+        suffix = f" {flags}" if flags else ""
+        lines.append(f"- {row.get('event_name')}: {row.get('reason')}{suffix}")
     if result["issues"]:
         lines.extend(["", "## Issues", ""])
         for row in result["issues"]:
