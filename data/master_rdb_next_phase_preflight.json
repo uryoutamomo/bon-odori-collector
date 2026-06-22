@@ -1,6 +1,6 @@
 {
   "generated_by": "おと（Codex）",
-  "generated_at": "2026-06-22T14:44:39Z",
+  "generated_at": "2026-06-22T14:52:00Z",
   "phase": "master_rdb_next_phase_preflight",
   "status": "ready_for_operator_decision",
   "current_local_phase": "complete_for_local_rdb_phase",
@@ -39,17 +39,29 @@
     }
   },
   "notion_preflight": {
+    "event_occurrence_dry_run": {
+      "selected_jobs": 0,
+      "ready_jobs": 0,
+      "skipped_jobs": 0,
+      "status": "no_pending_event_occurrence_jobs"
+    },
     "predicted_date_dry_run": {
       "selected_jobs": 8,
       "ready_jobs": 0,
       "skipped_jobs": 8,
       "status": "not_ready_for_apply"
     },
-    "stale_reports_to_regenerate_before_any_apply": [
+    "refreshed_reports": [
       "data/ph2_master_to_notion_sync_dry_run.json",
       "data/ph2_master_to_notion_sync_tmp_apply_db_dry_run.json"
     ],
-    "reason": "Older Ph2 dry-run reports still show one ready job from a prior state; current RDB queues no longer contain that apply candidate."
+    "status": "dry_run_reports_refreshed_not_ready_for_apply",
+    "source_snapshot_drift": {
+      "severity": "medium",
+      "issue_type": "source_snapshot_drift",
+      "reason": "data/notion_snapshot.sqlite was refreshed after the current master DB build.",
+      "next_local_only_step": "Rebuild the master DB from the current source snapshots, then rerun audit and dry-run reports before any apply."
+    }
   },
   "public_preflight": {
     "collector_event_count": 183,

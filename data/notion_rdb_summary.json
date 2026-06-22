@@ -1,6 +1,6 @@
 {
   "generated_by": "build_notion_rdb.py",
-  "generated_at": "2026-06-21T07:57:00.844675+00:00",
+  "generated_at": "2026-06-22T14:48:53.610740+00:00",
   "database": "data/notion_snapshot.sqlite",
   "targets": [
     {

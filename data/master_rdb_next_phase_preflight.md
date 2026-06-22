@@ -1,6 +1,6 @@
 # Master RDB next phase preflight
 
-- generated_at: 2026-06-22T14:44:39Z
+- generated_at: 2026-06-22T14:52:00Z
 - generated_by: おと（Codex）
 - status: ready_for_operator_decision
 - current_local_phase: complete_for_local_rdb_phase
@@ -29,12 +29,14 @@
 
 ## Notion Preflight
 
+- event_occurrence dry-run: selected 0 / ready 0 / skipped 0
 - predicted_date dry-run: selected 8 / ready 0 / skipped 8
-- status: not_ready_for_apply
-- stale reports to regenerate before any apply:
+- status: dry-run reports refreshed, not ready for apply
+- refreshed reports:
   - `data/ph2_master_to_notion_sync_dry_run.json`
   - `data/ph2_master_to_notion_sync_tmp_apply_db_dry_run.json`
-- reason: older Ph2 dry-run reports still show one ready job from a prior state; current RDB queues no longer contain that apply candidate.
+- source snapshot drift: `data/notion_snapshot.sqlite` was refreshed after the current master DB build, so `audit_master_rdb.py` reports one medium `source_snapshot_drift` issue.
+- next local-only step before any apply: rebuild the master DB from the current source snapshots, then rerun audit and dry-run reports.
 
 ## Public Preflight
 

@@ -1,9 +1,9 @@
 # Master RDB audit
 
-- generated_at: 2026-06-22T14:14:36.454723+00:00
+- generated_at: 2026-06-22T14:50:17.299939+00:00
 - database: data/bon_odori_master.sqlite
-- issue_count: 0
-- issues_by_severity: {}
+- issue_count: 1
+- issues_by_severity: {'medium': 1}
 
 ## Table counts
 
@@ -56,3 +56,7 @@
 - predicted_occurrence_dates_superseded_by_curated: 3
 - predicted_occurrence_dates_matches_curated: 1
 - predicted_occurrence_date_sync_jobs: 10
+
+## Issues
+
+- medium source_snapshot_drift: Current source snapshot differs from the master DB build manifest. {'manifest_source_checksums': {'notion_db': '20e460fa51a838cfc4e8c3e1a34e51d60707870eb39534d98d8673d1e1d67002', 'song_occurrences': '2f129469c58dce45b8671dc964b0e62b882c999a06f181172a237ac04bf6e609'}, 'current_source_checksums': {'notion_db': '7780d3c462796e6f28c8fa336ac1ad363742eedf3e044cc6525456eb76ba494e', 'song_occurrences': '2f129469c58dce45b8671dc964b0e62b882c999a06f181172a237ac04bf6e609'}, 'source_drift': {'notion_db': True, 'song_occurrences': False}, 'resolution': 'Rebuild the master DB from the current source snapshots during Ph2 cutover to clear benign source drift.'}
