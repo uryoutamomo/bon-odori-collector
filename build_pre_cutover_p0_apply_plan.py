@@ -7,9 +7,12 @@ investigation-only rows so that Ph2 dual-write work can apply a small batch.
 
 import argparse
 import json
+import sqlite3
 from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
+
+from master_db import MASTER_DB
 
 
 DATA = Path("data")
@@ -194,8 +197,26 @@ def write_json(path, data):
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
+def existing_historical_reference_keys(master_db):
+    master_db = Path(master_db)
+    if not master_db.exists():
+        return set()
+    with sqlite3.connect(master_db) as conn:
+        return {
+            (row[0], row[1], row[2] or "")
+            for row in conn.execute(
+                """
+                SELECT occurrence_id, date_start, COALESCE(date_end, '')
+                FROM occurrence_dates
+                WHERE date_type = 'historical_reference'
+                """
+            )
+        }
+
+
 def build(args):
     queue = load_json(args.queue_json, {})
+    historical_reference_keys = existing_historical_reference_keys(args.master_db)
     p0_tasks = [
         task
         for task in queue.get("tasks") or []
@@ -215,13 +236,25 @@ def build(args):
         row = {
             "event_name": task["event_name"],
             "task_id": task["task_id"],
+            "occurrence_id": task.get("occurrence_id") or "",
             "notion_page_id": task["notion_page_id"],
+            "event_year": task.get("event_year"),
             "current_known_venues": task.get("known_venue_names") or [],
             "current_source_url": task.get("source_url") or "",
             "queue_priority_score": task["priority_score"],
             "queue_reason_codes": task.get("reason_codes") or [],
         }
         row.update(classification)
+        historical_key = (
+            row["occurrence_id"],
+            row.get("historical_date_start") or "",
+            row.get("historical_date_end") or "",
+        )
+        if row.get("bucket") == "historical_reference_only" and historical_key in historical_reference_keys:
+            row["bucket"] = "historical_reference_recorded"
+            row["recommended_action_before_recorded"] = row["recommended_action"]
+            row["recommended_action"] = "already_recorded_historical_reference"
+            row["historical_reference_recorded"] = True
         plan_rows.append(row)
 
     by_bucket = Counter(row["bucket"] for row in plan_rows)
@@ -231,6 +264,7 @@ def build(args):
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "scope": "read_only_local_review_material",
         "source_queue": str(args.queue_json),
+        "source_master_db": str(args.master_db),
         "write_policy": {
             "notion_write": "do_not_write_before_dual_write_boundary_or_explicit_go",
             "public_json_write": "do_not_deploy; local review only",
@@ -264,6 +298,7 @@ def render_markdown(data):
         "",
         f"- generated_at: {data['generated_at']}",
         f"- source_queue: `{data['source_queue']}`",
+        f"- source_master_db: `{data['source_master_db']}`",
         f"- p0_task_count: {data['summary']['p0_task_count']}",
         f"- by_bucket: {data['summary']['by_bucket']}",
         f"- human_review_required_count: {data['summary']['human_review_required_count']}",
@@ -299,6 +334,22 @@ def render_markdown(data):
     lines.extend(
         [
             "",
+            "## Historical References Already Recorded",
+            "",
+            "| event | historical date | historical venue | source |",
+            "| --- | --- | --- | --- |",
+        ]
+    )
+    for row in data["rows"]:
+        if row["bucket"] != "historical_reference_recorded":
+            continue
+        lines.append(
+            f"| {row['event_name']} | {date_range(row, 'historical')} | "
+            f"{row.get('historical_venue', '')} | {row.get('source_url', '')} |"
+        )
+    lines.extend(
+        [
+            "",
             "## Keep In Investigation Queue",
             "",
             "| event | action | review | source | note |",
@@ -328,6 +379,7 @@ def render_markdown(data):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--queue-json", default=str(QUEUE_JSON))
+    parser.add_argument("--master-db", default=str(MASTER_DB))
     parser.add_argument("--out-json", default=str(OUT_JSON))
     parser.add_argument("--out-md", default=str(OUT_MD))
     args = parser.parse_args()

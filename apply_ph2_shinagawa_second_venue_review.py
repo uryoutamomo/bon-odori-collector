@@ -13,7 +13,7 @@ import sqlite3
 from datetime import datetime, timezone
 from pathlib import Path
 
-from master_db import MASTER_DB, normalize_text, stable_id
+from master_db import MASTER_DB, normalize_text, refresh_manifest_database_state, stable_id
 
 
 DATA = Path("data")
@@ -179,6 +179,7 @@ def run(args):
             apply_review(conn, now)
             conn.commit()
             after = venue_state(conn)
+            refresh_manifest_database_state(args.master_db, updated_at=now)
         else:
             after = dict(before)
             after["address"] = CORRECT_ADDRESS

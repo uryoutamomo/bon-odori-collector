@@ -29,7 +29,7 @@ from build_ph2_ebara_fifth_venue_plan import (
     NEW_VENUE_NAME,
     SOURCE_URL,
 )
-from master_db import MASTER_DB, normalize_text, stable_id, table_counts
+from master_db import MASTER_DB, normalize_text, refresh_manifest_database_state, stable_id, table_counts
 
 
 DATA = Path("data")
@@ -440,6 +440,8 @@ def run(args):
     )
     if args.apply and audit_result["issues_by_severity"].get("high"):
         raise ValueError(f"post-apply audit has high issues: {audit_result['issues_by_severity']}")
+    if args.apply and committed:
+        refresh_manifest_database_state(args.master_db, updated_at=now)
     result = {
         "generated_by": SCRIPT_NAME,
         "generated_at": now,

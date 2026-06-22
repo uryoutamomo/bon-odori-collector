@@ -456,3 +456,29 @@ def file_sha256(path):
         for chunk in iter(lambda: handle.read(1024 * 1024), b""):
             digest.update(chunk)
     return digest.hexdigest()
+
+
+def refresh_manifest_database_state(
+    db_path=MASTER_DB,
+    manifest_path=MASTER_MANIFEST,
+    updated_at=None,
+):
+    """Refresh manifest fields that describe the current SQLite database."""
+    db_path = Path(db_path)
+    manifest_path = Path(manifest_path)
+    manifest = {}
+    if manifest_path.exists():
+        with manifest_path.open(encoding="utf-8") as handle:
+            manifest = json.load(handle)
+
+    with sqlite3.connect(db_path) as conn:
+        counts = table_counts(conn)
+
+    manifest["database"] = str(db_path)
+    manifest["table_counts"] = counts
+    manifest["database_checksum"] = file_sha256(db_path)
+    manifest["database_updated_at"] = updated_at or datetime.now(timezone.utc).isoformat()
+
+    manifest_path.parent.mkdir(parents=True, exist_ok=True)
+    manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    return manifest

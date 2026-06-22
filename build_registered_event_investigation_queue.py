@@ -101,6 +101,24 @@ def occurrence_by_notion_page(master_db):
     }
 
 
+def occurrence_state_by_id(master_db):
+    if not Path(master_db).exists():
+        return {}
+    return {
+        row["occurrence_id"]: row
+        for row in rows(
+            master_db,
+            """
+            SELECT o.occurrence_id, o.event_year, o.date_start, o.date_end,
+                   o.venue_id, o.source_url, v.canonical_name AS venue_name,
+                   v.area AS venue_area, v.address AS venue_address
+            FROM event_occurrences o
+            LEFT JOIN venues v ON v.venue_id = o.venue_id
+            """,
+        )
+    }
+
+
 def observed_candidates_by_occurrence(path):
     data = load_json(path, {})
     grouped = defaultdict(list)
@@ -242,6 +260,7 @@ def build_queue(notion_db, master_db, observed_candidates_path):
     rels = relation_map(notion_db)
     venue_rows = venues_by_page(notion_db)
     occurrence_map = occurrence_by_notion_page(master_db)
+    occurrence_states = occurrence_state_by_id(master_db)
     observed_by_occurrence = observed_candidates_by_occurrence(observed_candidates_path)
 
     queue = []
@@ -249,37 +268,44 @@ def build_queue(notion_db, master_db, observed_candidates_path):
     for row in events:
         venue_page_ids = rels.get(row["page_id"]) or json.loads(row.get("venue_ids_json") or "[]")
         venues = [venue_rows[page_id] for page_id in venue_page_ids if page_id in venue_rows]
-        missing_date = not (row.get("start_date") or "").strip()
-        missing_venue = not venues
+        occurrence_id = occurrence_map.get(row["page_id"]) or ""
+        occurrence_state = occurrence_states.get(occurrence_id) or {}
+        rdb_start_date = (occurrence_state.get("date_start") or "").strip()
+        rdb_venue_name = (occurrence_state.get("venue_name") or "").strip()
+        missing_date = not ((row.get("start_date") or "").strip() or rdb_start_date)
+        missing_venue = not (venues or rdb_venue_name)
         if not missing_date and not missing_venue:
             skipped_complete += 1
             continue
 
         status = row.get("status") or ""
         scope = "primary_unconfirmed" if status == "未確認" else "secondary_incomplete"
-        occurrence_id = occurrence_map.get(row["page_id"]) or ""
         observed = observed_by_occurrence.get(occurrence_id) or {}
         venue_names = [venue.get("venue_name") or "" for venue in venues if venue.get("venue_name")]
+        if rdb_venue_name and rdb_venue_name not in venue_names:
+            venue_names.append(rdb_venue_name)
         search_text = " ".join(
             [
                 row.get("event_name") or "",
-                row.get("source_url") or "",
+                occurrence_state.get("source_url") or row.get("source_url") or "",
                 row.get("detail") or "",
                 row.get("public_intro") or "",
                 " ".join(venue_names),
+                occurrence_state.get("venue_area") or "",
+                occurrence_state.get("venue_address") or "",
                 " ".join(venue.get("area") or "" for venue in venues),
                 " ".join(venue.get("address") or "" for venue in venues),
             ]
         )
         outside_hint = bool(OUTSIDE_TOKYO_HINT_RE.search(search_text))
-        source_url = row.get("source_url") or ""
+        source_url = occurrence_state.get("source_url") or row.get("source_url") or ""
         item = {
             "task_id": stable_id("evtinv", row["page_id"], row.get("event_name")),
             "scope": scope,
             "occurrence_id": occurrence_id,
             "notion_page_id": row["page_id"],
             "event_name": row.get("event_name") or "",
-            "event_year": event_year(row.get("start_date"), row.get("event_name")),
+            "event_year": occurrence_state.get("event_year") or event_year(row.get("start_date"), row.get("event_name")),
             "status": status,
             "missing_date": missing_date,
             "missing_venue": missing_venue,

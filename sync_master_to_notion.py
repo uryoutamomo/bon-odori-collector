@@ -418,11 +418,90 @@ def build_venue_update(conn, job, snapshot_db):
     }
 
 
+def predicted_occurrence_date(conn, predicted_date_id):
+    result = rows(
+        conn,
+        """
+        SELECT p.predicted_date_id, p.target_event_name, p.predicted_year,
+               p.date_start, p.date_end, p.date_status, p.basis_type_label,
+               p.rule_type, p.basis, p.confidence, p.score,
+               p.application_status, p.target_series_id, p.target_occurrence_id,
+               p.source_payload_json, s.canonical_name AS series_name
+        FROM predicted_occurrence_dates p
+        JOIN event_series s ON s.series_id = p.target_series_id
+        WHERE p.predicted_date_id = ?
+        """,
+        (predicted_date_id,),
+    )
+    return result[0] if result else None
+
+
+def build_predicted_occurrence_date_update(conn, job, snapshot_db):
+    payload = load_payload(job["payload_json"])
+    target = predicted_occurrence_date(conn, job["target_id"])
+    issues = []
+    if not target:
+        issues.append({"severity": "high", "issue_type": "missing_predicted_occurrence_date"})
+        return {"job": job, "payload": payload, "issues": issues, "properties": {}, "skip_reason": "missing_target"}
+
+    source_payload = load_payload(target.get("source_payload_json"))
+    venue_name = source_payload.get("venue") or ""
+    issues.append(
+        {
+            "severity": "medium",
+            "issue_type": "predicted_occurrence_date_jobs_are_review_only",
+            "detail": "sync_master_to_notion does not create predicted Notion events directly",
+        }
+    )
+    field_diffs_ = [
+        {"field": "開催日", "current": "", "proposed": target.get("date_start") or "", "changed": True},
+        {"field": "終了日", "current": "", "proposed": target.get("date_end") or "", "changed": bool(target.get("date_end"))},
+        {"field": "状態", "current": "", "proposed": target.get("date_status") or "", "changed": True},
+        {"field": "予測根拠", "current": "", "proposed": target.get("basis") or "", "changed": bool(target.get("basis"))},
+        {"field": "会場候補", "current": "", "proposed": venue_name, "changed": bool(venue_name)},
+    ]
+    return {
+        "job": dict(job, payload_json=None),
+        "payload": payload,
+        "target": {
+            "predicted_date_id": target["predicted_date_id"],
+            "event_name": target["target_event_name"],
+            "series_id": target["target_series_id"],
+            "series_name": target["series_name"],
+            "target_occurrence_id": target.get("target_occurrence_id") or "",
+            "predicted_year": target["predicted_year"],
+            "date_start": target.get("date_start") or "",
+            "date_end": target.get("date_end") or "",
+            "date_status": target.get("date_status") or "",
+            "basis_type_label": target.get("basis_type_label") or "",
+            "rule_type": target.get("rule_type") or "",
+            "basis": target.get("basis") or "",
+            "confidence": target.get("confidence") or "",
+            "score": target.get("score"),
+            "application_status": target.get("application_status") or "",
+            "venue_name": venue_name,
+        },
+        "current_notion_snapshot": {},
+        "proposed_notion_values": {
+            "start_date": target.get("date_start") or "",
+            "end_date": target.get("date_end") or "",
+            "status": target.get("date_status") or "",
+            "venue_names": [venue_name] if venue_name else [],
+        },
+        "field_diffs": field_diffs_,
+        "properties": {},
+        "issues": issues,
+        "skip_reason": "prediction_review_only",
+    }
+
+
 def build_update(conn, job, snapshot_db):
     if job["target_table"] == "event_occurrences" and job["notion_source_key"] == "events":
         return build_event_occurrence_update(conn, job, snapshot_db)
     if job["target_table"] == "venues" and job["notion_source_key"] == "venues":
         return build_venue_update(conn, job, snapshot_db)
+    if job["target_table"] == "predicted_occurrence_dates" and job["notion_source_key"] == "events":
+        return build_predicted_occurrence_date_update(conn, job, snapshot_db)
     return {
         "job": dict(job, payload_json=None),
         "payload": load_payload(job["payload_json"]),
@@ -524,8 +603,8 @@ def render_markdown(result):
             "| {job} | {event} | {date} | {status} | {venue} | {page} | {result} |".format(
                 job=row["job"]["job_id"],
                 event=(target.get("event_name") or target.get("venue_name") or "").replace("|", "\\|"),
-                date=(date_value.get("start") or ""),
-                status=status_value,
+                date=(date_value.get("start") or target.get("date_start") or ""),
+                status=(status_value or target.get("date_status") or ""),
                 venue=(target.get("venue_name") or "").replace("|", "\\|"),
                 page=target.get("notion_page_id") or "",
                 result=result_text,

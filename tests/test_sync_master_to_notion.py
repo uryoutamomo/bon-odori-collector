@@ -28,6 +28,27 @@ class SyncMasterToNotionTest(unittest.TestCase):
               confidence TEXT,
               source_url TEXT
             );
+            CREATE TABLE event_series (
+              series_id TEXT PRIMARY KEY,
+              canonical_name TEXT
+            );
+            CREATE TABLE predicted_occurrence_dates (
+              predicted_date_id TEXT PRIMARY KEY,
+              target_event_name TEXT,
+              predicted_year INTEGER,
+              date_start TEXT,
+              date_end TEXT,
+              date_status TEXT,
+              basis_type_label TEXT,
+              rule_type TEXT,
+              basis TEXT,
+              confidence TEXT,
+              score REAL,
+              application_status TEXT,
+              target_series_id TEXT,
+              target_occurrence_id TEXT,
+              source_payload_json TEXT
+            );
             CREATE TABLE external_record_links (
               system TEXT,
               source_key TEXT,
@@ -93,6 +114,40 @@ class SyncMasterToNotionTest(unittest.TestCase):
         self.assertEqual(update["properties"]["会場"], {"relation": [{"id": "venue-page-1"}]})
         self.assertEqual(update["properties"]["情報源URL"], {"url": "https://example.test/source"})
         self.assertEqual(update["skip_reason"], "")
+
+    def test_predicted_occurrence_date_jobs_are_review_only_with_target_context(self):
+        conn = self.make_conn()
+        conn.execute("INSERT INTO event_series VALUES (?, ?)", ("ser1", "歌舞伎町BON ODORI"))
+        conn.execute(
+            """
+            INSERT INTO predicted_occurrence_dates VALUES (
+              'pred1', '歌舞伎町BON ODORI', 2026, '2026-08-15', '2026-08-15',
+              'predicted', '曜日ベース', 'weekday_nth', '8月第3土曜',
+              'medium', 0.7, 'candidate_for_2026_occurrence', 'ser1', '',
+              '{"venue": "歌舞伎町シネシティ広場"}'
+            )
+            """
+        )
+        job = {
+            "job_id": "job1",
+            "direction": "rdb_to_notion_dry_run",
+            "target_table": "predicted_occurrence_dates",
+            "target_id": "pred1",
+            "notion_source_key": "events",
+            "notion_page_id": "",
+            "status": "pending",
+            "requested_by": "test",
+            "requested_at": "2026-06-21T00:00:00+00:00",
+            "payload_json": '{"action": "create_predicted_2026_occurrence"}',
+        }
+
+        update = syncer.build_update(conn, job, None)
+
+        self.assertEqual(update["target"]["event_name"], "歌舞伎町BON ODORI")
+        self.assertEqual(update["target"]["date_start"], "2026-08-15")
+        self.assertEqual(update["target"]["venue_name"], "歌舞伎町シネシティ広場")
+        self.assertEqual(update["skip_reason"], "prediction_review_only")
+        self.assertEqual(update["issues"][0]["issue_type"], "predicted_occurrence_date_jobs_are_review_only")
 
     def test_apply_refuses_dry_run_jobs(self):
         updates = [
