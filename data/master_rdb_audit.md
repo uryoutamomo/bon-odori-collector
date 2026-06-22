@@ -1,6 +1,6 @@
 # Master RDB audit
 
-- generated_at: 2026-06-22T13:23:33.092499+00:00
+- generated_at: 2026-06-22T13:24:05.991820+00:00
 - database: data/bon_odori_master.sqlite
 - issue_count: 0
 - issues_by_severity: {}

@@ -1,6 +1,6 @@
 {
   "generated_by": "build_ph2_cutover_readiness.py",
-  "generated_at": "2026-06-22T13:23:32.150401+00:00",
+  "generated_at": "2026-06-22T13:24:05.151865+00:00",
   "scope": "read_only_local_review_material",
   "master_db": {
     "missing": false,
@@ -80,27 +80,10 @@
     "examples": {}
   },
   "git_status": {
-    "changed_file_count": 4,
-    "groups": {
-      "master_rdb_generated_artifacts": 2,
-      "new_review_reports": 2
-    },
-    "files_by_group": {
-      "master_rdb_generated_artifacts": [
-        " M data/master_rdb_audit.json",
-        " M data/master_rdb_audit.md"
-      ],
-      "new_review_reports": [
-        " M data/ph2_cutover_readiness.json",
-        " M data/ph2_cutover_readiness.md"
-      ]
-    },
-    "files": [
-      " M data/master_rdb_audit.json",
-      " M data/master_rdb_audit.md",
-      " M data/ph2_cutover_readiness.json",
-      " M data/ph2_cutover_readiness.md"
-    ]
+    "changed_file_count": 0,
+    "groups": {},
+    "files_by_group": {},
+    "files": []
   },
   "recommended_next_actions": [
     "Keep data/song_occurrences.json and prediction snapshots frozen until Ph2/Ph3 explicitly reopens the legacy path.",
