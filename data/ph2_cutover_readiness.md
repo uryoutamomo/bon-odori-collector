@@ -1,6 +1,6 @@
 # Ph2 cutover readiness
 
-- generated_at: 2026-06-22T13:29:56.933259+00:00
+- generated_at: 2026-06-22T13:30:20.031051+00:00
 - scope: read_only_local_review_material
 
 ## Master DB
@@ -41,8 +41,8 @@
 
 ## Worktree Triage
 
-- changed_file_count: 2
-- groups: {'new_review_reports': 2}
+- changed_file_count: 0
+- groups: {}
 
 ### Suggested Review Buckets
 
