@@ -1,6 +1,6 @@
 # Ph2 cutover readiness
 
-- generated_at: 2026-06-22T13:59:43.465050+00:00
+- generated_at: 2026-06-22T14:05:47.469344+00:00
 - scope: read_only_local_review_material
 
 ## Master DB
