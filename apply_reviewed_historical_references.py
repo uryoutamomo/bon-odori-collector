@@ -19,8 +19,10 @@ from master_db import MASTER_DB, refresh_manifest_database_state, stable_id, tab
 DATA = Path("data")
 REVIEW_JSON = DATA / "historical_promotion_candidate_review.json"
 OUT_DB = DATA / "reviewed_historical_references_dry_run.sqlite"
-OUT_JSON = DATA / "reviewed_historical_references_apply_report.json"
-OUT_MD = DATA / "reviewed_historical_references_apply_report.md"
+DRY_RUN_JSON = DATA / "reviewed_historical_references_dry_run_report.json"
+DRY_RUN_MD = DATA / "reviewed_historical_references_dry_run_report.md"
+APPLY_JSON = DATA / "reviewed_historical_references_apply_report.json"
+APPLY_MD = DATA / "reviewed_historical_references_apply_report.md"
 BACKUP_DIR = DATA / "backups"
 CONFIRM = "APPLY REVIEWED HISTORICAL REFERENCES"
 
@@ -413,11 +415,15 @@ def main():
     parser.add_argument("--master-db", type=Path, default=MASTER_DB)
     parser.add_argument("--review-json", type=Path, default=REVIEW_JSON)
     parser.add_argument("--out-db", type=Path, default=OUT_DB)
-    parser.add_argument("--out-json", type=Path, default=OUT_JSON)
-    parser.add_argument("--out-md", type=Path, default=OUT_MD)
+    parser.add_argument("--out-json", type=Path)
+    parser.add_argument("--out-md", type=Path)
     parser.add_argument("--apply", action="store_true")
     parser.add_argument("--confirm", default="")
     args = parser.parse_args()
+    if args.out_json is None:
+        args.out_json = APPLY_JSON if args.apply else DRY_RUN_JSON
+    if args.out_md is None:
+        args.out_md = APPLY_MD if args.apply else DRY_RUN_MD
     try:
         result = run(args)
     except ValueError as exc:

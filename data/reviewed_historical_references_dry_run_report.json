@@ -1,0 +1,59 @@
+{
+  "generated_by": "apply_reviewed_historical_references.py",
+  "generated_at": "2026-06-22T14:17:36.704243+00:00",
+  "mode": "dry_run",
+  "scope": "copied_sqlite_only_no_notion_no_public_json",
+  "sources": {
+    "master_db": "data/bon_odori_master.sqlite",
+    "review_json": "data/historical_promotion_candidate_review.json"
+  },
+  "outputs": {
+    "target_db": "data/reviewed_historical_references_dry_run.sqlite",
+    "dry_run_db": "data/reviewed_historical_references_dry_run.sqlite",
+    "backup_db": ""
+  },
+  "write_guard": {
+    "db_committed": true,
+    "rolled_back": false,
+    "rollback_reason": ""
+  },
+  "summary": {
+    "planned_count": 0,
+    "inserted_count": 0,
+    "skipped_count": 0,
+    "issues_count": 0,
+    "issues_by_severity": {},
+    "date_type_counts": {
+      "confirmed": 21,
+      "ended": 122,
+      "historical_reference": 25,
+      "predicted": 3
+    },
+    "table_counts": {
+      "event_investigation_tasks": 79,
+      "event_occurrences": 222,
+      "event_series": 221,
+      "evidence_items": 28419,
+      "external_record_links": 2654,
+      "historical_promotion_candidates": 15,
+      "master_meta": 0,
+      "notion_sync_jobs": 10,
+      "observed_occurrence_songs": 28105,
+      "observed_occurrences": 1856,
+      "occurrence_dates": 171,
+      "occurrence_evidence_links": 0,
+      "occurrence_song_evidence_links": 485,
+      "occurrence_songs": 308,
+      "predicted_occurrence_dates": 12,
+      "schema_migrations": 1,
+      "song_aliases": 141,
+      "songs": 141,
+      "venue_aliases": 215,
+      "venues": 215,
+      "write_batches": 0
+    }
+  },
+  "inserted": [],
+  "skipped": [],
+  "issues": []
+}
