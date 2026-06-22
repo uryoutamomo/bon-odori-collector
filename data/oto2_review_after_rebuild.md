@@ -17,6 +17,13 @@
 - `fixed_date_rule_basis_refresh` 1件は、表示日・終了日・固定日ルール・スコア帯が同等なので非ブロック扱いは概ね妥当。
 - ただし guard の pass は「公開反映してよい」という意味にしてはいけない。公開反映は別承認が必要。
 
+## 2026-06-22 追記: 指摘対応済み
+
+- `guard_public_events_sync.py` は `safe_to_deploy_without_review` を常に false にし、公開 deploy は別承認が必要なことを JSON/Markdown に出すように変更した。
+- `master_db.py` / `build_master_rdb.py` は、既存 `data/bon_odori_master.sqlite` を削除して再ビルドする場合に `--force-rebuild-from-snapshot` を必須にした。
+- `data/bon_odori_master_manifest.json` は post-build outputs / steps に `build_observed_promotion_candidates.py` と `data/observed_promotion_candidates.json` を含む状態へ更新された。
+- 検証: `python3 -m pytest -q` は `341 passed`。`python3 audit_master_rdb.py` は `issues=0`。`python3 guard_public_events_sync.py` は `status=pass`。
+
 ## 指摘
 
 ### Medium: public sync guard の文言が強すぎる
@@ -65,4 +72,3 @@
 2. 修正後に `python3 -m pytest -q`、`python3 audit_master_rdb.py`、`python3 guard_public_events_sync.py` を再実行する。
 3. 生成物を commit 分割する。少なくとも migration scripts/tests、docs/runbook、generated audit artifacts、public output、YouTube side changes は分ける。
 4. ことが復旧したら、このメモと `data/oto_impl_handoff.md`、`data/oto2_reviewer_codex_result.md` を見てもらう。
-
