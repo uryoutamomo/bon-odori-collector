@@ -617,12 +617,14 @@ def render_markdown(result):
     lines.extend(["", "## Field Diffs", ""])
     for row in result["updates"]:
         target = row.get("target") or {}
+        last_edited = md_escape((row.get("current_notion_snapshot") or {}).get("last_edited_time"))
+        last_edited_line = f"- Notion last edited: {last_edited}" if last_edited else "- Notion last edited:"
         lines.extend(
             [
                 f"### {md_escape(target.get('event_name') or target.get('venue_name'))}",
                 "",
                 f"- job: `{row['job']['job_id']}`",
-                f"- Notion last edited: {md_escape((row.get('current_notion_snapshot') or {}).get('last_edited_time'))}",
+                last_edited_line,
                 f"- job requested at: {md_escape(row['job'].get('requested_at'))}",
                 "",
                 "| field | current Notion snapshot | proposed | changed |",
@@ -635,7 +637,6 @@ def render_markdown(result):
                 f"{md_escape(diff['proposed'])} | {diff['changed']} |"
             )
         lines.append("")
-    lines.append("")
     return "\n".join(lines)
 
 

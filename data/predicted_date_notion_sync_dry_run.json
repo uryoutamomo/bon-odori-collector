@@ -1,6 +1,6 @@
 {
   "generated_by": "sync_master_to_notion.py",
-  "generated_at": "2026-06-22T03:34:27.551012+00:00",
+  "generated_at": "2026-06-22T13:09:34.029680+00:00",
   "mode": "dry_run",
   "apply_performed": false,
   "sources": {
@@ -14,18 +14,18 @@
     "include_dry_run_jobs": true
   },
   "summary": {
-    "selected_jobs": 10,
+    "selected_jobs": 9,
     "ready_jobs": 0,
-    "skipped_jobs": 10,
+    "skipped_jobs": 9,
     "applied_jobs": 0,
     "jobs_by_direction": {
-      "rdb_to_notion_dry_run": 10
+      "rdb_to_notion_dry_run": 9
     },
     "jobs_by_target_table": {
-      "predicted_occurrence_dates": 10
+      "predicted_occurrence_dates": 9
     },
     "issues_by_severity": {
-      "medium": 10
+      "medium": 9
     }
   },
   "applied_job_ids": [],
@@ -211,103 +211,6 @@
           "field": "会場候補",
           "current": "",
           "proposed": "大正大学",
-          "changed": true
-        }
-      ],
-      "properties": {},
-      "issues": [
-        {
-          "severity": "medium",
-          "issue_type": "predicted_occurrence_date_jobs_are_review_only",
-          "detail": "sync_master_to_notion does not create predicted Notion events directly"
-        }
-      ],
-      "skip_reason": "prediction_review_only"
-    },
-    {
-      "job": {
-        "job_id": "nsj_75af04af93ae266d",
-        "direction": "rdb_to_notion_dry_run",
-        "target_table": "predicted_occurrence_dates",
-        "target_id": "preddate_293a0033eef0419d",
-        "notion_source_key": "events",
-        "notion_page_id": "",
-        "status": "pending",
-        "requested_by": "build_historical_promotion_candidates.py",
-        "requested_at": "2026-06-22T01:21:59.620223+00:00",
-        "payload_json": null
-      },
-      "payload": {
-        "action": "create_predicted_2026_occurrence",
-        "application_status": "candidate_for_2026_occurrence",
-        "basis": "6月17日前後の金曜",
-        "basis_type": "weekday_based",
-        "basis_type_label": "曜日ベース",
-        "confidence": "medium",
-        "confirmed_overwrite_allowed": false,
-        "date_end": "2026-06-19",
-        "date_start": "2026-06-19",
-        "date_status": "predicted",
-        "predicted_year": 2026,
-        "rule_type": "weekday_near_day",
-        "target_event_name": "郡上おどり in 青山"
-      },
-      "target": {
-        "predicted_date_id": "preddate_293a0033eef0419d",
-        "event_name": "郡上おどり in 青山",
-        "series_id": "ser_ae34d6aa992bd0c8",
-        "series_name": "郡上おどり in 青山",
-        "target_occurrence_id": "",
-        "predicted_year": 2026,
-        "date_start": "2026-06-19",
-        "date_end": "2026-06-19",
-        "date_status": "predicted",
-        "basis_type_label": "曜日ベース",
-        "rule_type": "weekday_near_day",
-        "basis": "6月17日前後の金曜",
-        "confidence": "medium",
-        "score": 0.68,
-        "application_status": "candidate_for_2026_occurrence",
-        "venue_name": "秩父宮ラグビー場駐車場"
-      },
-      "current_notion_snapshot": {},
-      "proposed_notion_values": {
-        "start_date": "2026-06-19",
-        "end_date": "2026-06-19",
-        "status": "predicted",
-        "venue_names": [
-          "秩父宮ラグビー場駐車場"
-        ]
-      },
-      "field_diffs": [
-        {
-          "field": "開催日",
-          "current": "",
-          "proposed": "2026-06-19",
-          "changed": true
-        },
-        {
-          "field": "終了日",
-          "current": "",
-          "proposed": "2026-06-19",
-          "changed": true
-        },
-        {
-          "field": "状態",
-          "current": "",
-          "proposed": "predicted",
-          "changed": true
-        },
-        {
-          "field": "予測根拠",
-          "current": "",
-          "proposed": "6月17日前後の金曜",
-          "changed": true
-        },
-        {
-          "field": "会場候補",
-          "current": "",
-          "proposed": "秩父宮ラグビー場駐車場",
           "changed": true
         }
       ],
@@ -1013,12 +916,6 @@
       "issue_type": "predicted_occurrence_date_jobs_are_review_only",
       "detail": "sync_master_to_notion does not create predicted Notion events directly",
       "job_id": "nsj_5a96718435cedd20"
-    },
-    {
-      "severity": "medium",
-      "issue_type": "predicted_occurrence_date_jobs_are_review_only",
-      "detail": "sync_master_to_notion does not create predicted Notion events directly",
-      "job_id": "nsj_75af04af93ae266d"
     },
     {
       "severity": "medium",

@@ -1,6 +1,6 @@
 {
   "generated_by": "review_predicted_occurrence_dates.py",
-  "generated_at": "2026-06-22T03:19:01.844577+00:00",
+  "generated_at": "2026-06-22T13:08:26.696536+00:00",
   "scope": "predicted_date_review_no_notion_no_public_json",
   "sources": {
     "master_db": "data/bon_odori_master.sqlite"
@@ -15,9 +15,8 @@
     "prediction_count": 12,
     "actions": {
       "keep_prediction_queue": 9,
-      "series_link_review_curated_exists": 1,
       "already_matches_curated": 1,
-      "already_superseded_by_curated": 1
+      "already_superseded_by_curated": 2
     },
     "applied_count": 0
   },
@@ -222,52 +221,6 @@
       "curated_occurrence": null
     },
     {
-      "predicted_date_id": "preddate_293a0033eef0419d",
-      "event_name": "郡上おどり in 青山",
-      "current_status": "candidate_for_2026_occurrence",
-      "review_action": "series_link_review_curated_exists",
-      "reason": "curated_2026_occurrence_exists_on_different_series",
-      "predicted": {
-        "predicted_date_id": "preddate_293a0033eef0419d",
-        "historical_candidate_id": "histprom_3a423c7c36628f83",
-        "target_series_id": "ser_ae34d6aa992bd0c8",
-        "target_occurrence_id": null,
-        "target_event_name": "郡上おどり in 青山",
-        "predicted_year": 2026,
-        "date_start": "2026-06-19",
-        "date_end": "2026-06-19",
-        "date_status": "predicted",
-        "basis_type": "weekday_based",
-        "basis_type_label": "曜日ベース",
-        "rule_type": "weekday_near_day",
-        "basis": "6月17日前後の金曜",
-        "confidence": "medium",
-        "score": 0.68,
-        "application_status": "candidate_for_2026_occurrence",
-        "source": "event_date_predictions",
-        "source_payload_json": "{\"basis\": \"6月17日前後の金曜\", \"confidence\": \"medium\", \"event_name\": \"郡上おどり in 青山\", \"evidence_rows\": [{\"confidence\": \"high\", \"date_end\": \"2024-06-14\", \"date_start\": \"2024-06-14\", \"duration_days\": 1, \"source_video_count\": 11, \"weekday_start\": \"金\", \"year\": 2024}, {\"confidence\": \"high\", \"date_end\": \"2025-06-20\", \"date_start\": \"2025-06-20\", \"duration_days\": 1, \"source_video_count\": 40, \"weekday_start\": \"金\", \"year\": 2025}], \"evidence_years\": [2024, 2025], \"predicted_date_end\": \"2026-06-19\", \"predicted_date_start\": \"2026-06-19\", \"rule_type\": \"weekday_near_day\", \"score\": 0.68, \"series_key\": \"f677ee46218e\", \"source\": \"event_date_predictions\", \"venue\": \"秩父宮ラグビー場駐車場\"}",
-        "created_at": "2026-06-22T01:21:59.620223+00:00",
-        "updated_at": "2026-06-22T01:21:59.620223+00:00",
-        "canonical_name": "郡上おどり in 青山",
-        "area": "",
-        "usual_venue": null
-      },
-      "curated_occurrence": {
-        "occurrence_id": "occ_23ad1c8ae9eb48cf",
-        "series_id": "ser_d39870ddba633c11",
-        "series_name": "郡上おどり in 青山",
-        "display_name": "郡上おどり in 青山",
-        "event_year": 2026,
-        "date_start": "2026-06-26",
-        "date_end": "2026-06-27",
-        "date_status": "confirmed",
-        "lifecycle_status": "published",
-        "confidence": "confirmed",
-        "source_url": "https://aoyama-gaienmae.or.jp/news/20260326/",
-        "venue_name": "秩父宮ラグビー場駐車場"
-      }
-    },
-    {
       "predicted_date_id": "preddate_de90654c70d616b6",
       "event_name": "西久保八幡神社 盆踊り",
       "current_status": "candidate_for_2026_occurrence",
@@ -409,6 +362,51 @@
         "confidence": "confirmed",
         "source_url": "https://www.tenkamatsuri.jp/minyo/",
         "venue_name": "山王パークタワー公開空地"
+      }
+    },
+    {
+      "predicted_date_id": "preddate_293a0033eef0419d",
+      "event_name": "郡上おどり in 青山",
+      "current_status": "superseded_by_curated",
+      "new_status": "superseded_by_curated",
+      "review_action": "already_superseded_by_curated",
+      "reason": "curated_occurrence_has_different_confirmed_date",
+      "predicted": {
+        "predicted_date_id": "preddate_293a0033eef0419d",
+        "historical_candidate_id": "histprom_3a423c7c36628f83",
+        "target_series_id": "ser_d39870ddba633c11",
+        "target_occurrence_id": "occ_23ad1c8ae9eb48cf",
+        "target_event_name": "郡上おどり in 青山",
+        "predicted_year": 2026,
+        "date_start": "2026-06-19",
+        "date_end": "2026-06-19",
+        "date_status": "predicted",
+        "basis_type": "weekday_based",
+        "basis_type_label": "曜日ベース",
+        "rule_type": "weekday_near_day",
+        "basis": "6月17日前後の金曜",
+        "confidence": "medium",
+        "score": 0.68,
+        "application_status": "superseded_by_curated",
+        "source": "event_date_predictions",
+        "source_payload_json": "{\"basis\": \"6月17日前後の金曜\", \"confidence\": \"medium\", \"event_name\": \"郡上おどり in 青山\", \"evidence_rows\": [{\"confidence\": \"high\", \"date_end\": \"2024-06-14\", \"date_start\": \"2024-06-14\", \"duration_days\": 1, \"source_video_count\": 11, \"weekday_start\": \"金\", \"year\": 2024}, {\"confidence\": \"high\", \"date_end\": \"2025-06-20\", \"date_start\": \"2025-06-20\", \"duration_days\": 1, \"source_video_count\": 40, \"weekday_start\": \"金\", \"year\": 2025}], \"evidence_years\": [2024, 2025], \"predicted_date_end\": \"2026-06-19\", \"predicted_date_start\": \"2026-06-19\", \"rule_type\": \"weekday_near_day\", \"score\": 0.68, \"series_key\": \"f677ee46218e\", \"source\": \"event_date_predictions\", \"venue\": \"秩父宮ラグビー場駐車場\"}",
+        "created_at": "2026-06-22T01:21:59.620223+00:00",
+        "updated_at": "2026-06-22T03:51:29.400902+00:00",
+        "canonical_name": "郡上おどり in 青山",
+        "area": "",
+        "usual_venue": "秩父宮ラグビー場駐車場"
+      },
+      "curated_occurrence": {
+        "occurrence_id": "occ_23ad1c8ae9eb48cf",
+        "display_name": "郡上おどり in 青山",
+        "event_year": 2026,
+        "date_start": "2026-06-26",
+        "date_end": "2026-06-27",
+        "date_status": "confirmed",
+        "lifecycle_status": "published",
+        "confidence": "confirmed",
+        "source_url": "https://aoyama-gaienmae.or.jp/news/20260326/",
+        "venue_name": "秩父宮ラグビー場駐車場"
       }
     },
     {

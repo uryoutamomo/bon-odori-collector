@@ -1,13 +1,13 @@
 # Master RDB -> Notion sync dry-run
 
-- generated_at: 2026-06-22T03:34:27.551012+00:00
+- generated_at: 2026-06-22T13:09:34.029680+00:00
 - mode: dry_run
 - master_db: `data/bon_odori_master.sqlite`
-- selected_jobs: 10
+- selected_jobs: 9
 - ready_jobs: 0
-- skipped_jobs: 10
+- skipped_jobs: 9
 - applied_jobs: 0
-- issues_by_severity: {'medium': 10}
+- issues_by_severity: {'medium': 9}
 
 ## Apply Sequence
 
@@ -22,7 +22,6 @@ The snapshot refresh is mandatory because drift detection uses `data/notion_snap
 | --- | --- | --- | --- | --- | --- | --- |
 | nsj_570669415c22a2d5 | 歌舞伎町BON ODORI | 2026-08-15 | predicted | 歌舞伎町シネシティ広場 |  | prediction_review_only |
 | nsj_5a96718435cedd20 | 第15回 鴨台盆踊り | 2026-07-04 | predicted | 大正大学 |  | prediction_review_only |
-| nsj_75af04af93ae266d | 郡上おどり in 青山 | 2026-06-19 | predicted | 秩父宮ラグビー場駐車場 |  | prediction_review_only |
 | nsj_849055fd5e6248ed | シタマチ.ふるさと盆踊り大会 | 2026-08-15 | predicted | おかちまちパンダ広場（御徒町駅南口駅前広場） |  | prediction_review_only |
 | nsj_9699bcb840c2a9ed | 第28回新橋こいち祭 盆踊り | 2026-07-23 | predicted | 桜田公園 |  | prediction_review_only |
 | nsj_9e1da3d52f1f5167 | 西久保八幡神社 盆踊り | 2026-08-08 | predicted | 西久保八幡神社 |  | prediction_review_only |
@@ -35,7 +34,6 @@ The snapshot refresh is mandatory because drift detection uses `data/notion_snap
 
 - medium predicted_occurrence_date_jobs_are_review_only: {'severity': 'medium', 'issue_type': 'predicted_occurrence_date_jobs_are_review_only', 'detail': 'sync_master_to_notion does not create predicted Notion events directly', 'job_id': 'nsj_570669415c22a2d5'}
 - medium predicted_occurrence_date_jobs_are_review_only: {'severity': 'medium', 'issue_type': 'predicted_occurrence_date_jobs_are_review_only', 'detail': 'sync_master_to_notion does not create predicted Notion events directly', 'job_id': 'nsj_5a96718435cedd20'}
-- medium predicted_occurrence_date_jobs_are_review_only: {'severity': 'medium', 'issue_type': 'predicted_occurrence_date_jobs_are_review_only', 'detail': 'sync_master_to_notion does not create predicted Notion events directly', 'job_id': 'nsj_75af04af93ae266d'}
 - medium predicted_occurrence_date_jobs_are_review_only: {'severity': 'medium', 'issue_type': 'predicted_occurrence_date_jobs_are_review_only', 'detail': 'sync_master_to_notion does not create predicted Notion events directly', 'job_id': 'nsj_849055fd5e6248ed'}
 - medium predicted_occurrence_date_jobs_are_review_only: {'severity': 'medium', 'issue_type': 'predicted_occurrence_date_jobs_are_review_only', 'detail': 'sync_master_to_notion does not create predicted Notion events directly', 'job_id': 'nsj_9699bcb840c2a9ed'}
 - medium predicted_occurrence_date_jobs_are_review_only: {'severity': 'medium', 'issue_type': 'predicted_occurrence_date_jobs_are_review_only', 'detail': 'sync_master_to_notion does not create predicted Notion events directly', 'job_id': 'nsj_9e1da3d52f1f5167'}
@@ -73,20 +71,6 @@ The snapshot refresh is mandatory because drift detection uses `data/notion_snap
 | 状態 |  | predicted | True |
 | 予測根拠 |  | 7月6日前後の週末 | True |
 | 会場候補 |  | 大正大学 | True |
-
-### 郡上おどり in 青山
-
-- job: `nsj_75af04af93ae266d`
-- Notion last edited:
-- job requested at: 2026-06-22T01:21:59.620223+00:00
-
-| field | current Notion snapshot | proposed | changed |
-| --- | --- | --- | --- |
-| 開催日 |  | 2026-06-19 | True |
-| 終了日 |  | 2026-06-19 | True |
-| 状態 |  | predicted | True |
-| 予測根拠 |  | 6月17日前後の金曜 | True |
-| 会場候補 |  | 秩父宮ラグビー場駐車場 | True |
 
 ### シタマチ.ふるさと盆踊り大会
 
