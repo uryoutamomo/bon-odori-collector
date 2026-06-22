@@ -173,7 +173,6 @@ def guard_decision(raw, postprocessed, allow_individual_review):
         "failures": failures,
         "warnings": warnings,
         "safe_to_wholesale_sync": status == "pass",
-        "safe_to_deploy_without_review": False,
         "public_deploy_requires_separate_approval": True,
         "deploy_approval_note": deploy_note,
     }
@@ -239,7 +238,6 @@ def render_markdown(data):
         f"- scope: {data['scope']}",
         f"- status: {data['decision']['status']}",
         f"- safe_to_wholesale_sync: {data['decision']['safe_to_wholesale_sync']}",
-        f"- safe_to_deploy_without_review: {data['decision']['safe_to_deploy_without_review']}",
         f"- public_deploy_requires_separate_approval: {data['decision']['public_deploy_requires_separate_approval']}",
         f"- deploy_approval_note: {data['decision']['deploy_approval_note']}",
         f"- failures: {data['decision']['failures']}",

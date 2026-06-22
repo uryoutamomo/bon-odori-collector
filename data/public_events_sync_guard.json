@@ -1,6 +1,6 @@
 {
   "generated_by": "guard_public_events_sync.py",
-  "generated_at": "2026-06-22T02:25:07.071376+00:00",
+  "generated_at": "2026-06-22T09:19:02.184959+00:00",
   "scope": "read_only_public_sync_guard_no_writes",
   "sources": {
     "collector_events": "data/public/events_public.json",
@@ -17,7 +17,6 @@
     "failures": [],
     "warnings": [],
     "safe_to_wholesale_sync": true,
-    "safe_to_deploy_without_review": false,
     "public_deploy_requires_separate_approval": true,
     "deploy_approval_note": "Guard pass only means no blocking public sync diffs remain. Public deploy still requires separate operator approval."
   },

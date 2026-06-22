@@ -2,11 +2,10 @@
 
 **Note**: This guard checks for blocking diffs only. Guard status `pass` means no blocking issues remain, but is NOT a deploy approval. Deploy decisions require explicit confirmation from the operator.
 
-- generated_at: 2026-06-22T02:25:07.071376+00:00
+- generated_at: 2026-06-22T09:19:02.184959+00:00
 - scope: read_only_public_sync_guard_no_writes
 - status: pass
 - safe_to_wholesale_sync: True
-- safe_to_deploy_without_review: False
 - public_deploy_requires_separate_approval: True
 - deploy_approval_note: Guard pass only means no blocking public sync diffs remain. Public deploy still requires separate operator approval.
 - failures: []

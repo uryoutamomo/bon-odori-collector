@@ -20,7 +20,7 @@ class PublicEventsSyncGuardTest(unittest.TestCase):
 
         self.assertEqual(decision["status"], "pass")
         self.assertTrue(decision["safe_to_wholesale_sync"])
-        self.assertFalse(decision["safe_to_deploy_without_review"])
+        self.assertNotIn("safe_to_deploy_without_review", decision)
         self.assertTrue(decision["public_deploy_requires_separate_approval"])
 
 
