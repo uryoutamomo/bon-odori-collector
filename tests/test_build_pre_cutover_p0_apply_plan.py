@@ -68,6 +68,9 @@ class BuildPreCutoverP0ApplyPlanTest(unittest.TestCase):
 
             self.assertEqual(result["summary"]["by_bucket"], {"historical_reference_recorded": 1})
             self.assertEqual(result["rows"][0]["recommended_action"], "already_recorded_historical_reference")
+            self.assertFalse(result["rows"][0]["requires_human_review"])
+            self.assertTrue(result["rows"][0]["requires_human_review_before_recorded"])
+            self.assertEqual(result["summary"]["human_review_required_count"], 0)
 
 
 if __name__ == "__main__":

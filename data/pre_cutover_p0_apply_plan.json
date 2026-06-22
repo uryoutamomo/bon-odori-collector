@@ -1,6 +1,6 @@
 {
   "generated_by": "build_pre_cutover_p0_apply_plan.py",
-  "generated_at": "2026-06-22T14:04:00.194852+00:00",
+  "generated_at": "2026-06-22T14:07:58.923506+00:00",
   "scope": "read_only_local_review_material",
   "source_queue": "data/registered_event_investigation_queue.json",
   "source_master_db": "data/bon_odori_master.sqlite",
@@ -21,7 +21,7 @@
       "keep_as_date_research_task": 2,
       "source_specific_follow_up": 1
     },
-    "human_review_required_count": 7
+    "human_review_required_count": 0
   },
   "rows": [
     {
@@ -51,9 +51,10 @@
       "confidence": "medium",
       "source_url": "https://tokyofesta.com/23ku/25652/",
       "notes": "Useful 2025 evidence; do not copy as a 2026 date.",
-      "requires_human_review": true,
+      "requires_human_review": false,
       "recommended_action_before_recorded": "promote_2025_historical_reference_only",
-      "historical_reference_recorded": true
+      "historical_reference_recorded": true,
+      "requires_human_review_before_recorded": true
     },
     {
       "event_name": "銀座一丁目東町会・新富町会 納涼盆踊り大会",
@@ -79,9 +80,10 @@
       "confidence": "medium",
       "source_url": "https://www.chuo-kanko.or.jp/pages/other_details/115655",
       "notes": "Observed evidence is useful, but source row needs review before apply.",
-      "requires_human_review": true,
+      "requires_human_review": false,
       "recommended_action_before_recorded": "review_then_promote_2025_historical_reference_only",
-      "historical_reference_recorded": true
+      "historical_reference_recorded": true,
+      "requires_human_review_before_recorded": true
     },
     {
       "event_name": "ゐの市盆踊り～不忍夢～",
@@ -109,9 +111,10 @@
       "confidence": "medium",
       "source_url": "https://www.uenopark.info/2025/inoichi-bonodori-2025/",
       "notes": "Historical reference only.",
-      "requires_human_review": true,
+      "requires_human_review": false,
       "recommended_action_before_recorded": "promote_2025_historical_reference_only",
-      "historical_reference_recorded": true
+      "historical_reference_recorded": true,
+      "requires_human_review_before_recorded": true
     },
     {
       "event_name": "京橋盆踊り",
@@ -141,7 +144,8 @@
       "notes": "Historical reference only; source describes an ended event.",
       "requires_human_review": false,
       "recommended_action_before_recorded": "promote_2025_historical_reference_only",
-      "historical_reference_recorded": true
+      "historical_reference_recorded": true,
+      "requires_human_review_before_recorded": false
     },
     {
       "event_name": "増上寺 地蔵尊盆踊り大会",
@@ -195,9 +199,10 @@
       "confidence": "medium",
       "source_url": "https://tokyofesta.com/23ku/24845/",
       "notes": "Historical reference only.",
-      "requires_human_review": true,
+      "requires_human_review": false,
       "recommended_action_before_recorded": "promote_2025_historical_reference_only",
-      "historical_reference_recorded": true
+      "historical_reference_recorded": true,
+      "requires_human_review_before_recorded": true
     },
     {
       "event_name": "旗岡八幡神社例大祭",
@@ -251,9 +256,10 @@
       "confidence": "medium",
       "source_url": "https://minamisuna1.com/26743/",
       "notes": "2026 latest page did not expose this row in the previous pass.",
-      "requires_human_review": true,
+      "requires_human_review": false,
       "recommended_action_before_recorded": "keep_2026_unknown_and_promote_2025_historical_reference_only",
-      "historical_reference_recorded": true
+      "historical_reference_recorded": true,
+      "requires_human_review_before_recorded": true
     },
     {
       "event_name": "盆☆Dance 夏休み最後の土曜は校庭で踊ろう！",
@@ -307,9 +313,10 @@
       "confidence": "medium",
       "source_url": "https://sacas.tokyoevent.net/natsuodori.html",
       "notes": "Historical reference only.",
-      "requires_human_review": true,
+      "requires_human_review": false,
       "recommended_action_before_recorded": "promote_2025_historical_reference_only",
-      "historical_reference_recorded": true
+      "historical_reference_recorded": true,
+      "requires_human_review_before_recorded": true
     },
     {
       "event_name": "都の辰巳深川 臨海ぼんおどり",
@@ -337,9 +344,10 @@
       "confidence": "medium",
       "source_url": "https://minamisuna1.com/26743/",
       "notes": "2026 latest page did not expose this row in the previous pass.",
-      "requires_human_review": true,
+      "requires_human_review": false,
       "recommended_action_before_recorded": "keep_2026_unknown_and_promote_2025_historical_reference_only",
-      "historical_reference_recorded": true
+      "historical_reference_recorded": true,
+      "requires_human_review_before_recorded": true
     }
   ]
 }

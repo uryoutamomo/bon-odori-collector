@@ -1,6 +1,6 @@
 {
   "generated_by": "audit_master_rdb.py",
-  "generated_at": "2026-06-22T14:04:49.026376+00:00",
+  "generated_at": "2026-06-22T14:08:24.456657+00:00",
   "database": "data/bon_odori_master.sqlite",
   "table_counts": {
     "event_investigation_tasks": 79,

@@ -1,6 +1,6 @@
 # Ph2 event occurrence apply plan
 
-- generated_at: 2026-06-22T14:04:28.520546+00:00
+- generated_at: 2026-06-22T14:08:23.488948+00:00
 - mutation_count: 11
 - mutations_by_type: {'append_historical_reference_without_confirming_2026': 8, 'keep_investigation_queue': 3}
 - blocked_or_review_required_count: 3

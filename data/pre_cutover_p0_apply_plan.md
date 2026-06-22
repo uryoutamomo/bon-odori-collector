@@ -1,11 +1,11 @@
 # Pre-cutover P0 apply plan
 
-- generated_at: 2026-06-22T14:04:00.194852+00:00
+- generated_at: 2026-06-22T14:07:58.923506+00:00
 - source_queue: `data/registered_event_investigation_queue.json`
 - source_master_db: `data/bon_odori_master.sqlite`
 - p0_task_count: 11
 - by_bucket: {'historical_reference_recorded': 8, 'keep_investigation_queue': 3}
-- human_review_required_count: 7
+- human_review_required_count: 0
 
 ## Current 2026 Apply Candidates
 

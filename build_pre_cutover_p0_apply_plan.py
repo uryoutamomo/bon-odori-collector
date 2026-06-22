@@ -258,6 +258,8 @@ def build(args):
             row["recommended_action_before_recorded"] = row["recommended_action"]
             row["recommended_action"] = "already_recorded_historical_reference"
             row["historical_reference_recorded"] = True
+            row["requires_human_review_before_recorded"] = bool(row.get("requires_human_review"))
+            row["requires_human_review"] = False
         plan_rows.append(row)
 
     by_bucket = Counter(row["bucket"] for row in plan_rows)
