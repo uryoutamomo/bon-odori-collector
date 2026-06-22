@@ -1,6 +1,6 @@
 {
   "generated_by": "build_ph2_event_occurrence_apply_plan.py",
-  "generated_at": "2026-06-22T13:42:00.098900+00:00",
+  "generated_at": "2026-06-22T13:57:57.969167+00:00",
   "scope": "read_only_local_review_material",
   "sources": {
     "master_db": "data/bon_odori_master.sqlite",
@@ -14,13 +14,14 @@
     "legacy_song_occurrence_generation": "unchanged; keep frozen"
   },
   "summary": {
-    "mutation_count": 11,
+    "mutation_count": 12,
     "mutations_by_type": {
       "append_historical_reference_without_confirming_2026": 8,
+      "update_existing_2026_occurrence_from_current_official_source": 1,
       "keep_investigation_queue": 3
     },
     "blocked_or_review_required_count": 3,
-    "already_applied_current_official_count": 0,
+    "already_applied_current_official_count": 1,
     "already_applied_historical_reference_count": 8,
     "predicted_date_job_count": 12,
     "predicted_date_jobs_by_application_status": {
@@ -388,6 +389,86 @@
       }
     },
     {
+      "mutation_type": "update_existing_2026_occurrence_from_current_official_source",
+      "event_name": "品川区民まつり 荏原第五地区",
+      "task_id": "evtinv_12f84934a35bbc6f",
+      "notion_page_id": "37b8be04-e762-8109-bc1d-c5e7b068b281",
+      "target": {
+        "notion_page_id": "37b8be04-e762-8109-bc1d-c5e7b068b281",
+        "occurrence_id": "occ_5375fcfc19ab3505",
+        "series_id": "ser_de7117d1177532d4",
+        "series_name": "品川区民まつり 荏原第五地区",
+        "event_year": 2026,
+        "display_name": "品川区民まつり 荏原第五地区",
+        "venue_id": "ven_a2ba81d51cea787c",
+        "venue_name": "杜松ホーム",
+        "date_start": "2026-07-18",
+        "date_end": "2026-07-19",
+        "date_status": "confirmed",
+        "lifecycle_status": "未確認",
+        "confidence": "high",
+        "source_kind": "official_current_year",
+        "source_url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html"
+      },
+      "proposed": {
+        "date_start": "2026-07-18",
+        "date_end": "2026-07-19",
+        "date_status": "confirmed",
+        "confidence": "high",
+        "venue_name": "杜松ホーム",
+        "venue_lookup_status": "exact_match",
+        "venue_matches": [
+          {
+            "venue_id": "ven_a2ba81d51cea787c",
+            "canonical_name": "杜松ホーム",
+            "normalized_name": "杜松ホーム",
+            "area": "品川区",
+            "address": "東京都品川区豊町4-24-15",
+            "matched_by": "canonical",
+            "matched_alias": ""
+          }
+        ],
+        "venue_suggestions": [],
+        "source_kind": "official_current_year",
+        "source_url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
+        "source_checked_at": "2026-06-21"
+      },
+      "rdb_payload": {
+        "table": "event_occurrences",
+        "operation": "update",
+        "set": {
+          "date_start": "2026-07-18",
+          "date_end": "2026-07-19",
+          "date_status": "confirmed",
+          "confidence": "high",
+          "source_kind": "official_current_year",
+          "source_url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html"
+        },
+        "also_insert_occurrence_dates": true,
+        "venue_update_policy": "update_if_exact_match_after_review"
+      },
+      "notion_payload": {
+        "direction": "rdb_to_notion_dry_run",
+        "target_table": "event_occurrences",
+        "action": "set_confirmed_2026_date",
+        "fields": {
+          "開催日": "2026-07-18 to 2026-07-19",
+          "状態": "確認済み",
+          "情報源URL": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
+          "会場": "杜松ホーム"
+        },
+        "confirmed_overwrite_allowed": false
+      },
+      "review": {
+        "requires_human_review": false,
+        "flags": [],
+        "block_apply_until_resolved": false,
+        "already_applied": true,
+        "notes": "Current registered venue is 旧杜松小学校. Official 2026 page says 杜松ホーム, so preserve the venue-change rationale.",
+        "accepted_decision": {}
+      }
+    },
+    {
       "mutation_type": "keep_investigation_queue",
       "event_name": "増上寺 地蔵尊盆踊り大会",
       "task_id": "evtinv_6c4e82f0d3ef36d2",
@@ -400,7 +481,7 @@
           "no_apply_payload"
         ],
         "block_apply_until_resolved": true,
-        "notes": "Official annual page confirms the event name and directs inquiries to 安国殿, but does not publish a usable 2026 date."
+        "notes": "Official annual page was rechecked: it confirms the event name and directs inquiries to 安国殿, but still does not publish a usable 2026 date."
       }
     },
     {
@@ -501,7 +582,7 @@
           "no_apply_payload"
         ],
         "block_apply_until_resolved": true,
-        "notes": "Homepage news still exposes 令和7年/2025例大祭 material, but not a usable 2026 date or bon-odori row."
+        "notes": "Homepage was rechecked: latest visible festival news remains 令和7年/2025例大祭 material, with no usable 2026 date or bon-odori row."
       }
     },
     {
@@ -601,7 +682,7 @@
           "no_apply_payload"
         ],
         "block_apply_until_resolved": true,
-        "notes": "Current 東京内外の盆踊りマップ upcoming-all page did not expose 盆☆Dance/横川小学校; keep as source-specific follow-up."
+        "notes": "Current 東京内外の盆踊りマップ upcoming-all page was rechecked and did not expose 盆☆Dance/横川小学校; keep as source-specific follow-up."
       }
     },
     {

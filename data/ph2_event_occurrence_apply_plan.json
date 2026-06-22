@@ -1,6 +1,6 @@
 {
   "generated_by": "build_ph2_event_occurrence_apply_plan.py",
-  "generated_at": "2026-06-22T13:42:00.090238+00:00",
+  "generated_at": "2026-06-22T13:57:57.969166+00:00",
   "scope": "read_only_local_review_material",
   "sources": {
     "master_db": "data/bon_odori_master.sqlite",
@@ -481,7 +481,7 @@
           "no_apply_payload"
         ],
         "block_apply_until_resolved": true,
-        "notes": "Official annual page confirms the event name and directs inquiries to 安国殿, but does not publish a usable 2026 date."
+        "notes": "Official annual page was rechecked: it confirms the event name and directs inquiries to 安国殿, but still does not publish a usable 2026 date."
       }
     },
     {
@@ -582,7 +582,7 @@
           "no_apply_payload"
         ],
         "block_apply_until_resolved": true,
-        "notes": "Homepage news still exposes 令和7年/2025例大祭 material, but not a usable 2026 date or bon-odori row."
+        "notes": "Homepage was rechecked: latest visible festival news remains 令和7年/2025例大祭 material, with no usable 2026 date or bon-odori row."
       }
     },
     {
@@ -682,7 +682,7 @@
           "no_apply_payload"
         ],
         "block_apply_until_resolved": true,
-        "notes": "Current 東京内外の盆踊りマップ upcoming-all page did not expose 盆☆Dance/横川小学校; keep as source-specific follow-up."
+        "notes": "Current 東京内外の盆踊りマップ upcoming-all page was rechecked and did not expose 盆☆Dance/横川小学校; keep as source-specific follow-up."
       }
     },
     {

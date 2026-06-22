@@ -1,6 +1,6 @@
 # Ph2 event occurrence apply plan
 
-- generated_at: 2026-06-22T13:42:00.090238+00:00
+- generated_at: 2026-06-22T13:57:57.969166+00:00
 - mutation_count: 12
 - mutations_by_type: {'append_historical_reference_without_confirming_2026': 8, 'update_existing_2026_occurrence_from_current_official_source': 1, 'keep_investigation_queue': 3}
 - blocked_or_review_required_count: 3
@@ -32,9 +32,9 @@
 
 | event | action | note |
 | --- | --- | --- |
-| 増上寺 地蔵尊盆踊り大会 | keep_as_date_research_task | Official annual page confirms the event name and directs inquiries to 安国殿, but does not publish a usable 2026 date. |
-| 旗岡八幡神社例大祭 | keep_as_date_research_task | Homepage news still exposes 令和7年/2025例大祭 material, but not a usable 2026 date or bon-odori row. |
-| 盆☆Dance 夏休み最後の土曜は校庭で踊ろう！ | source_specific_follow_up | Current 東京内外の盆踊りマップ upcoming-all page did not expose 盆☆Dance/横川小学校; keep as source-specific follow-up. |
+| 増上寺 地蔵尊盆踊り大会 | keep_as_date_research_task | Official annual page was rechecked: it confirms the event name and directs inquiries to 安国殿, but still does not publish a usable 2026 date. |
+| 旗岡八幡神社例大祭 | keep_as_date_research_task | Homepage was rechecked: latest visible festival news remains 令和7年/2025例大祭 material, with no usable 2026 date or bon-odori row. |
+| 盆☆Dance 夏休み最後の土曜は校庭で踊ろう！ | source_specific_follow_up | Current 東京内外の盆踊りマップ upcoming-all page was rechecked and did not expose 盆☆Dance/横川小学校; keep as source-specific follow-up. |
 
 ## Predicted Date Jobs
 

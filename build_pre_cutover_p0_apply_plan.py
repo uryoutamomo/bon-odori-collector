@@ -153,7 +153,7 @@ P0_CLASSIFICATIONS = {
         "confidence": "low",
         "source_url": "https://www.zojoji.or.jp/event/ev_bonodori.html",
         "source_checked_at": "2026-06-22",
-        "notes": "Official annual page confirms the event name and directs inquiries to 安国殿, but does not publish a usable 2026 date.",
+        "notes": "Official annual page was rechecked: it confirms the event name and directs inquiries to 安国殿, but still does not publish a usable 2026 date.",
         "requires_human_review": False,
     },
     "旗岡八幡神社例大祭": {
@@ -162,7 +162,7 @@ P0_CLASSIFICATIONS = {
         "confidence": "low",
         "source_url": "https://hatagaokahachiman-jinja.jp/",
         "source_checked_at": "2026-06-22",
-        "notes": "Homepage news still exposes 令和7年/2025例大祭 material, but not a usable 2026 date or bon-odori row.",
+        "notes": "Homepage was rechecked: latest visible festival news remains 令和7年/2025例大祭 material, with no usable 2026 date or bon-odori row.",
         "requires_human_review": False,
     },
     "盆☆Dance 夏休み最後の土曜は校庭で踊ろう！": {
@@ -171,7 +171,7 @@ P0_CLASSIFICATIONS = {
         "confidence": "low",
         "source_url": "https://minato-bon-odori.blogspot.com/",
         "source_checked_at": "2026-06-22",
-        "notes": "Current 東京内外の盆踊りマップ upcoming-all page did not expose 盆☆Dance/横川小学校; keep as source-specific follow-up.",
+        "notes": "Current 東京内外の盆踊りマップ upcoming-all page was rechecked and did not expose 盆☆Dance/横川小学校; keep as source-specific follow-up.",
         "requires_human_review": False,
     },
     "品川区民まつり 大崎第一地区": {
