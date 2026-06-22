@@ -1,0 +1,96 @@
+{
+  "generated_by": "sync_master_to_notion.py",
+  "generated_at": "2026-06-21T07:33:16.366963+00:00",
+  "mode": "apply",
+  "apply_performed": true,
+  "sources": {
+    "master_db": "data/bon_odori_master.sqlite",
+    "notion_snapshot_db": "data/notion_snapshot.sqlite"
+  },
+  "options": {
+    "target_table": "venues",
+    "job_id": "",
+    "requested_by": "apply_ph2_shinagawa_second_venue_review.py",
+    "include_dry_run_jobs": false
+  },
+  "summary": {
+    "selected_jobs": 1,
+    "ready_jobs": 1,
+    "skipped_jobs": 0,
+    "applied_jobs": 1,
+    "jobs_by_direction": {
+      "rdb_to_notion": 1
+    },
+    "jobs_by_target_table": {
+      "venues": 1
+    },
+    "issues_by_severity": {}
+  },
+  "applied_job_ids": [
+    "nsj_99eca1b76cdbc965"
+  ],
+  "updates": [
+    {
+      "job": {
+        "job_id": "nsj_99eca1b76cdbc965",
+        "direction": "rdb_to_notion",
+        "target_table": "venues",
+        "target_id": "ven_717844b0f7d45fb6",
+        "notion_source_key": "venues",
+        "notion_page_id": "3718be04-e762-816e-b1c0-ed3e65521bcb",
+        "status": "pending",
+        "requested_by": "apply_ph2_shinagawa_second_venue_review.py",
+        "requested_at": "2026-06-21T07:32:02.338175+00:00",
+        "payload_json": null
+      },
+      "payload": {
+        "action": "update_venue_address",
+        "fields": {
+          "住所": "東京都品川区南品川2-8-23"
+        },
+        "source_url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html"
+      },
+      "target": {
+        "notion_page_id": "3718be04-e762-816e-b1c0-ed3e65521bcb",
+        "venue_id": "ven_717844b0f7d45fb6",
+        "venue_name": "天妙国寺",
+        "address": "東京都品川区南品川2-8-23"
+      },
+      "current_notion_snapshot": {
+        "page_id": "3718be04-e762-816e-b1c0-ed3e65521bcb",
+        "venue_name": "天妙国寺",
+        "area": "品川区",
+        "address": "東京都品川区南品儑2-8-23",
+        "access": "京急本線 青物横丁駅から徒歩5分（新馬場駅・りんかい線品川シーサイド駅からもアクセス可）",
+        "scale": "中",
+        "public_intro": "天妙国寺は、品川区にある祭礼や地域行事の拠点。 規模は「中」として整理しています、アクセスは京急本線 青物横丁駅から徒歩5分（新馬場駅・りんかい線品川シーサイド駅からもアクセス可）。",
+        "last_edited_time": "2026-06-11T15:27:00.000Z"
+      },
+      "proposed_notion_values": {
+        "address": "東京都品川区南品川2-8-23"
+      },
+      "field_diffs": [
+        {
+          "field": "住所",
+          "current": "東京都品川区南品儑2-8-23",
+          "proposed": "東京都品川区南品川2-8-23",
+          "changed": true
+        }
+      ],
+      "properties": {
+        "住所": {
+          "rich_text": [
+            {
+              "text": {
+                "content": "東京都品川区南品川2-8-23"
+              }
+            }
+          ]
+        }
+      },
+      "issues": [],
+      "skip_reason": ""
+    }
+  ],
+  "issues": []
+}

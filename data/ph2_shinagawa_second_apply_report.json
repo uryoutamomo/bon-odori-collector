@@ -1,0 +1,133 @@
+{
+  "generated_by": "dry_run_ph2_event_occurrence_apply.py",
+  "generated_at": "2026-06-21T07:29:02.020898+00:00",
+  "scope": "source_master_db_apply_no_notion_no_public_json",
+  "sources": {
+    "master_db": "data/bon_odori_master.sqlite",
+    "plan": "data/ph2_event_occurrence_apply_plan.json"
+  },
+  "outputs": {
+    "target_db": "data/bon_odori_master.sqlite",
+    "dry_run_db": "",
+    "backup_db": "data/backups/bon_odori_master.20260621T072902.020898+0000.sqlite.bak"
+  },
+  "options": {
+    "event_name": "品川区民まつり 品川第二地区",
+    "include_blocked": false,
+    "apply": true
+  },
+  "write_guard": {
+    "db_committed": true,
+    "rolled_back": false,
+    "rollback_reason": ""
+  },
+  "summary": {
+    "selected_count": 1,
+    "applied_count": 1,
+    "skipped_count": 13,
+    "issues_count": 0,
+    "issues_by_severity": {},
+    "dry_run_table_counts": {
+      "event_occurrences": 214,
+      "occurrence_dates": 129,
+      "notion_sync_jobs": 9,
+      "ph2_event_occurrence_sync_jobs": 2
+    }
+  },
+  "applied": [
+    {
+      "event_name": "品川区民まつり 品川第二地区",
+      "occurrence_id": "occ_0caf7b7f7e21d249",
+      "notion_page_id": "37b8be04-e762-8139-aa26-f7c1ae0a9ae6",
+      "before": {
+        "occurrence_id": "occ_0caf7b7f7e21d249",
+        "series_id": "ser_600a7ee9b425e367",
+        "series_name": "品川区民まつり 品川第二地区",
+        "event_year": 2026,
+        "display_name": "品川区民まつり 品川第二地区",
+        "venue_id": "ven_602364bc7658ab64",
+        "venue_name": "城南小学校",
+        "date_start": "",
+        "date_end": "",
+        "date_status": "unknown",
+        "lifecycle_status": "未確認",
+        "confidence": "unknown",
+        "source_kind": "notion_events",
+        "source_url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html"
+      },
+      "after": {
+        "occurrence_id": "occ_0caf7b7f7e21d249",
+        "series_id": "ser_600a7ee9b425e367",
+        "series_name": "品川区民まつり 品川第二地区",
+        "event_year": 2026,
+        "display_name": "品川区民まつり 品川第二地区",
+        "venue_id": "ven_717844b0f7d45fb6",
+        "venue_name": "天妙国寺",
+        "date_start": "2026-07-25",
+        "date_end": "2026-07-26",
+        "date_status": "confirmed",
+        "lifecycle_status": "未確認",
+        "confidence": "high",
+        "source_kind": "official_current_year",
+        "source_url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html"
+      },
+      "inserted_occurrence_date_id": "odate_797768af11aa0778",
+      "inserted_notion_sync_job_id": "nsj_054ac71c5ec10d2b"
+    }
+  ],
+  "skipped": [
+    {
+      "event_name": "濱町音頭盆踊り大会",
+      "reason": "not_current_official_mutation"
+    },
+    {
+      "event_name": "銀座一丁目東町会・新富町会 納涼盆踊り大会",
+      "reason": "not_current_official_mutation"
+    },
+    {
+      "event_name": "ゐの市盆踊り～不忍夢～",
+      "reason": "not_current_official_mutation"
+    },
+    {
+      "event_name": "京橋盆踊り",
+      "reason": "not_current_official_mutation"
+    },
+    {
+      "event_name": "品川区民まつり 荏原第一地区",
+      "reason": "event_filter"
+    },
+    {
+      "event_name": "品川区民まつり 荏原第五地区",
+      "reason": "event_filter"
+    },
+    {
+      "event_name": "増上寺 地蔵尊盆踊り大会",
+      "reason": "not_current_official_mutation"
+    },
+    {
+      "event_name": "新宿中央公園夏祭り 納涼盆踊り大会",
+      "reason": "not_current_official_mutation"
+    },
+    {
+      "event_name": "旗岡八幡神社例大祭",
+      "reason": "not_current_official_mutation"
+    },
+    {
+      "event_name": "森下二丁目盆踊り",
+      "reason": "not_current_official_mutation"
+    },
+    {
+      "event_name": "盆☆Dance 夏休み最後の土曜は校庭で踊ろう！",
+      "reason": "not_current_official_mutation"
+    },
+    {
+      "event_name": "赤坂夏おどり（旧 赤坂盆踊り）",
+      "reason": "not_current_official_mutation"
+    },
+    {
+      "event_name": "都の辰巳深川 臨海ぼんおどり",
+      "reason": "not_current_official_mutation"
+    }
+  ],
+  "issues": []
+}

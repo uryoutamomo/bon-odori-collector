@@ -1,0 +1,33 @@
+{
+  "generated_by": "apply_ph2_shinagawa_second_venue_review.py",
+  "generated_at": "2026-06-21T07:25:57.890178+00:00",
+  "mode": "apply",
+  "applied": true,
+  "source_url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
+  "before": {
+    "venue_id": "ven_717844b0f7d45fb6",
+    "canonical_name": "天妙国寺",
+    "normalized_name": "天妙国寺",
+    "area": "品川区",
+    "address": "東京都品川区南品儑2-8-23",
+    "source_url": "",
+    "updated_at": "2026-06-20T16:25:51.023658+00:00",
+    "aliases": [
+      "天妙国寺"
+    ]
+  },
+  "after": {
+    "venue_id": "ven_717844b0f7d45fb6",
+    "canonical_name": "天妙国寺",
+    "normalized_name": "天妙国寺",
+    "area": "品川区",
+    "address": "東京都品川区南品川2-8-23",
+    "source_url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
+    "updated_at": "2026-06-21T07:25:57.890178+00:00",
+    "aliases": [
+      "天妙国寺",
+      "天妙国寺境内"
+    ]
+  },
+  "foreign_key_issues": []
+}

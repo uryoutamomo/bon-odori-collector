@@ -1,0 +1,161 @@
+{
+  "generated_by": "sync_master_to_notion.py",
+  "generated_at": "2026-06-21T07:28:32.476479+00:00",
+  "mode": "dry_run",
+  "apply_performed": false,
+  "sources": {
+    "master_db": "data/ph2_shinagawa_second_apply_dry_run.sqlite",
+    "notion_snapshot_db": "data/notion_snapshot.sqlite"
+  },
+  "options": {
+    "target_table": "event_occurrences",
+    "job_id": "",
+    "requested_by": "dry_run_ph2_event_occurrence_apply.py",
+    "include_dry_run_jobs": true
+  },
+  "summary": {
+    "selected_jobs": 1,
+    "ready_jobs": 1,
+    "skipped_jobs": 0,
+    "applied_jobs": 0,
+    "jobs_by_direction": {
+      "rdb_to_notion_dry_run": 1
+    },
+    "jobs_by_target_table": {
+      "event_occurrences": 1
+    },
+    "issues_by_severity": {}
+  },
+  "applied_job_ids": [],
+  "updates": [
+    {
+      "job": {
+        "job_id": "nsj_054ac71c5ec10d2b",
+        "direction": "rdb_to_notion_dry_run",
+        "target_table": "event_occurrences",
+        "target_id": "occ_0caf7b7f7e21d249",
+        "notion_source_key": "events",
+        "notion_page_id": "37b8be04-e762-8139-aa26-f7c1ae0a9ae6",
+        "status": "pending",
+        "requested_by": "dry_run_ph2_event_occurrence_apply.py",
+        "requested_at": "2026-06-21T07:27:51.477068+00:00",
+        "payload_json": null
+      },
+      "payload": {
+        "action": "set_confirmed_2026_date",
+        "confirmed_overwrite_allowed": false,
+        "direction": "rdb_to_notion_dry_run",
+        "fields": {
+          "会場": "天妙国寺境内",
+          "情報源URL": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
+          "状態": "確認済み",
+          "開催日": "2026-07-25 to 2026-07-26"
+        },
+        "target_table": "event_occurrences"
+      },
+      "target": {
+        "notion_page_id": "37b8be04-e762-8139-aa26-f7c1ae0a9ae6",
+        "occurrence_id": "occ_0caf7b7f7e21d249",
+        "event_name": "品川区民まつり 品川第二地区",
+        "venue_id": "ven_717844b0f7d45fb6",
+        "venue_name": "天妙国寺",
+        "venue_notion_page_id": "3718be04-e762-816e-b1c0-ed3e65521bcb",
+        "date_start": "2026-07-25",
+        "date_end": "2026-07-26",
+        "date_status": "confirmed",
+        "source_url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html"
+      },
+      "current_notion_snapshot": {
+        "page_id": "37b8be04-e762-8139-aa26-f7c1ae0a9ae6",
+        "event_name": "品川区民まつり 品川第二地区",
+        "start_date": "",
+        "end_date": "",
+        "status": "未確認",
+        "source_url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
+        "last_edited_time": "2026-06-10T13:12:00.000Z",
+        "venue_ids": [
+          "3718be04-e762-8172-aa0d-c778081d41a0"
+        ],
+        "venue_names": [
+          "城南小学校"
+        ]
+      },
+      "proposed_notion_values": {
+        "start_date": "2026-07-25",
+        "end_date": "2026-07-26",
+        "status": "確認済み",
+        "source_url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
+        "venue_ids": [
+          "3718be04-e762-816e-b1c0-ed3e65521bcb"
+        ],
+        "venue_names": [
+          "天妙国寺"
+        ]
+      },
+      "field_diffs": [
+        {
+          "field": "開催日",
+          "current": "",
+          "proposed": "2026-07-25",
+          "changed": true
+        },
+        {
+          "field": "終了日",
+          "current": "",
+          "proposed": "2026-07-26",
+          "changed": true
+        },
+        {
+          "field": "状態",
+          "current": "未確認",
+          "proposed": "確認済み",
+          "changed": true
+        },
+        {
+          "field": "情報源URL",
+          "current": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
+          "proposed": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
+          "changed": false
+        },
+        {
+          "field": "会場",
+          "current": "城南小学校",
+          "proposed": "天妙国寺",
+          "changed": true
+        },
+        {
+          "field": "会場ページID",
+          "current": "3718be04-e762-8172-aa0d-c778081d41a0",
+          "proposed": "3718be04-e762-816e-b1c0-ed3e65521bcb",
+          "changed": true
+        }
+      ],
+      "properties": {
+        "開催日": {
+          "date": {
+            "start": "2026-07-25",
+            "end": "2026-07-26"
+          }
+        },
+        "状態": {
+          "select": {
+            "name": "確認済み"
+          }
+        },
+        "情報源URL": {
+          "url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html"
+        },
+        "会場": {
+          "relation": [
+            {
+              "id": "3718be04-e762-816e-b1c0-ed3e65521bcb"
+            }
+          ]
+        }
+      },
+      "issues": [],
+      "skip_reason": ""
+    }
+  ],
+  "issues": []
+}

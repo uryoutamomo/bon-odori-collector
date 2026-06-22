@@ -1,0 +1,138 @@
+{
+  "generated_by": "apply_ph2_ebara_fifth_rdb.py",
+  "generated_at": "2026-06-21T13:51:32.708453+00:00",
+  "mode": "apply",
+  "sources": {
+    "master_db": "data/ph2_ebara_fifth_apply_source_copy.sqlite",
+    "official_source_url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html"
+  },
+  "outputs": {
+    "target_db": "data/ph2_ebara_fifth_apply_source_copy.sqlite",
+    "dry_run_db": "",
+    "backup_db": "data/backups/ph2_ebara_fifth_apply_source_copy.20260621T135132.708453+0000.sqlite.bak",
+    "json": "data/ph2_ebara_fifth_copy_apply_report.json",
+    "markdown": "data/ph2_ebara_fifth_copy_apply_report.md"
+  },
+  "options": {
+    "apply": true
+  },
+  "write_guard": {
+    "db_committed": true,
+    "rolled_back": false,
+    "rollback_reason": ""
+  },
+  "summary": {
+    "issues_count": 0,
+    "issues_by_severity": {},
+    "audit_issues_by_severity": {
+      "medium": 3
+    },
+    "table_counts": {
+      "event_investigation_tasks": 93,
+      "event_occurrences": 214,
+      "event_series": 214,
+      "evidence_items": 28419,
+      "external_record_links": 2632,
+      "historical_promotion_candidates": 13,
+      "master_meta": 0,
+      "notion_sync_jobs": 10,
+      "observed_occurrence_songs": 28105,
+      "observed_occurrences": 1856,
+      "occurrence_dates": 130,
+      "occurrence_evidence_links": 0,
+      "occurrence_song_evidence_links": 504,
+      "occurrence_songs": 334,
+      "predicted_occurrence_dates": 10,
+      "schema_migrations": 1,
+      "song_aliases": 141,
+      "songs": 141,
+      "venue_aliases": 209,
+      "venues": 208,
+      "write_batches": 0
+    }
+  },
+  "source_evidence": {
+    "event_name": "品川区民まつり 荏原第五地区",
+    "date_start": "2026-07-18",
+    "date_end": "2026-07-19",
+    "venue_name": "杜松ホーム",
+    "venue_address": "東京都品川区豊町4-24-15",
+    "source_url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html"
+  },
+  "applied": {
+    "occurrence_id": "occ_5375fcfc19ab3505",
+    "old_venue_id": "ven_3e4793480293aa92",
+    "new_venue_id": "ven_a2ba81d51cea787c",
+    "venue_created": true,
+    "before": {
+      "occurrence_id": "occ_5375fcfc19ab3505",
+      "origin": "curated",
+      "series_id": "ser_de7117d1177532d4",
+      "event_year": 2026,
+      "occurrence_sequence": 1,
+      "display_name": "品川区民まつり 荏原第五地区",
+      "venue_id": "ven_3e4793480293aa92",
+      "date_start": "",
+      "date_end": "",
+      "date_status": "unknown",
+      "lifecycle_status": "未確認",
+      "confidence": "unknown",
+      "source_kind": "notion_events",
+      "source_url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
+      "inherited_from_occurrence_id": null,
+      "public_intro_override": "旧杜松小学校を会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
+      "detail": "2025-08-23 開催実績。2025 [I22]\n8/23 - 24。「品川区民まつり 荏原第五地区」8月23日(土)-24日(日)。\n23日(土) 16:00-19:30。\n24日(日) 16:00-18:30。\n「模擬店・盆踊り・子どもコーナー・ステージ発表 ほか」。\n踊りの時間詳細不明。",
+      "created_at": "2026-06-20T16:25:51.023658+00:00",
+      "updated_at": "2026-06-20T16:25:51.023658+00:00",
+      "venue_name": "旧杜松小学校",
+      "venue_address": "東京都品川区豊町4-22-15",
+      "venue_latitude": null,
+      "venue_longitude": null
+    },
+    "after": {
+      "occurrence_id": "occ_5375fcfc19ab3505",
+      "origin": "curated",
+      "series_id": "ser_de7117d1177532d4",
+      "event_year": 2026,
+      "occurrence_sequence": 1,
+      "display_name": "品川区民まつり 荏原第五地区",
+      "venue_id": "ven_a2ba81d51cea787c",
+      "date_start": "2026-07-18",
+      "date_end": "2026-07-19",
+      "date_status": "confirmed",
+      "lifecycle_status": "未確認",
+      "confidence": "high",
+      "source_kind": "official_current_year",
+      "source_url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
+      "inherited_from_occurrence_id": null,
+      "public_intro_override": "旧杜松小学校を会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
+      "detail": "2025-08-23 開催実績。2025 [I22]\n8/23 - 24。「品川区民まつり 荏原第五地区」8月23日(土)-24日(日)。\n23日(土) 16:00-19:30。\n24日(日) 16:00-18:30。\n「模擬店・盆踊り・子どもコーナー・ステージ発表 ほか」。\n踊りの時間詳細不明。",
+      "created_at": "2026-06-20T16:25:51.023658+00:00",
+      "updated_at": "2026-06-21T13:51:32.708453+00:00",
+      "venue_name": "杜松ホーム",
+      "venue_address": "東京都品川区豊町4-24-15",
+      "venue_latitude": 35.605442,
+      "venue_longitude": 139.722931
+    },
+    "inserted_occurrence_date_id": "odate_96fff57a09c95e65"
+  },
+  "issues": [],
+  "audit": {
+    "issue_count": 3,
+    "issues_by_severity": {
+      "medium": 3
+    },
+    "issues_by_type": {
+      "source_snapshot_drift": 1,
+      "source_count_drift": 2
+    }
+  },
+  "notion_writeback": {
+    "enabled": false,
+    "policy": "RDB primary; no Notion sync jobs are created."
+  },
+  "public_json_write": {
+    "enabled": false,
+    "policy": "Run a separate public export dry-run after RDB review."
+  }
+}

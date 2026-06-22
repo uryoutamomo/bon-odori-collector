@@ -1,0 +1,130 @@
+{
+  "generated_by": "おと（Codex）",
+  "generated_at": "2026-06-21",
+  "scope": "manual Ph2 event occurrence review decisions",
+  "decisions": [
+    {
+      "event_name": "品川区民まつり 品川第二地区",
+      "decision": "accept_current_official_venue_change",
+      "target_venue_id": "ven_717844b0f7d45fb6",
+      "target_venue_name": "天妙国寺",
+      "accepted_alias": "天妙国寺境内",
+      "reviewed_by": "内田さん + おと（Codex）",
+      "reviewed_at": "2026-06-21",
+      "source_url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
+      "notes": "公式ページでは城南小学校体育館は子どもコーナー、天妙国寺境内が盆踊り・模擬店。既存会場 天妙国寺 に alias 天妙国寺境内 を追加して、品川第二地区の2026開催回会場として採用する。"
+    },
+    {
+      "event_name": "濱町音頭盆踊り大会",
+      "decision": "accept_historical_reference",
+      "historical_date_start": "2025-09-27",
+      "historical_date_end": "",
+      "target_venue_id": "ven_995ac6aca5a8b2f9",
+      "target_venue_name": "浜町公園",
+      "accepted_alias": "浜町公園中央広場",
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-06-21",
+      "source_url": "https://tokyofesta.com/23ku/25652/",
+      "notes": "出典で日時 2025-09-27、会場 浜町公園中央広場を確認。既存会場 浜町公園 の中央広場として履歴参照のみ採用する。"
+    },
+    {
+      "event_name": "ゐの市盆踊り～不忍夢～",
+      "decision": "accept_historical_reference",
+      "historical_date_start": "2025-08-09",
+      "historical_date_end": "2025-08-11",
+      "target_venue_id": "ven_2c7e944e2b1af336",
+      "target_venue_name": "上野恩賜公園",
+      "accepted_alias": "上野恩賜公園 袴腰広場",
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-06-21",
+      "source_url": "https://www.uenopark.info/2025/inoichi-bonodori-2025/",
+      "notes": "出典で 2025-08-09〜2025-08-11、会場 上野恩賜公園 袴腰広場を確認。既存会場 上野恩賜公園 として履歴参照のみ採用する。"
+    },
+    {
+      "event_name": "京橋盆踊り",
+      "decision": "accept_historical_reference",
+      "historical_date_start": "2025-08-29",
+      "historical_date_end": "2025-08-30",
+      "target_venue_id": "ven_ecda7549cbef1f85",
+      "target_venue_name": "京橋エドグラン 京橋中央ひろば",
+      "accepted_alias": "京橋中央ひろば（ガレリア）",
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-06-21",
+      "source_url": "https://www.edogrand.tokyo/event/6924",
+      "notes": "出典で 2025-08-29〜2025-08-30、開催場所 京橋中央ひろば（ガレリア）を確認。既存会場 京橋エドグラン 京橋中央ひろば として履歴参照のみ採用する。"
+    },
+    {
+      "event_name": "新宿中央公園夏祭り 納涼盆踊り大会",
+      "decision": "accept_historical_reference",
+      "historical_date_start": "2025-08-23",
+      "historical_date_end": "2025-08-24",
+      "target_venue_id": "ven_9913801458cc7397",
+      "target_venue_name": "新宿中央公園 ファンモアタイム広場",
+      "accepted_alias": "新宿中央公園 ファンモアタイムひろば",
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-06-21",
+      "source_url": "https://tokyofesta.com/23ku/24845/",
+      "notes": "出典で 2025-08-23〜2025-08-24、開催場所 新宿中央公園 ファンモアタイムひろばを確認。既存会場は表記ゆれの広場で、履歴参照のみ採用する。"
+    },
+    {
+      "event_name": "森下二丁目盆踊り",
+      "decision": "accept_historical_reference",
+      "historical_date_start": "2025-07-19",
+      "historical_date_end": "2025-07-20",
+      "target_venue_id": "ven_db5e8909ac6a87a5",
+      "target_venue_name": "森下公園",
+      "accepted_alias": "森下公園",
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-06-21",
+      "source_url": "https://minamisuna1.com/26743/",
+      "notes": "出典で 森下二丁目 盆踊り 2025-07-19〜2025-07-20、会場 森下公園を確認。履歴参照のみ採用する。"
+    },
+    {
+      "event_name": "赤坂夏おどり（旧 赤坂盆踊り）",
+      "decision": "accept_historical_reference",
+      "historical_date_start": "2025-08-29",
+      "historical_date_end": "2025-08-30",
+      "target_venue_id": "ven_2b922b1146373c1f",
+      "target_venue_name": "赤坂サカス広場",
+      "accepted_alias": "TBS赤坂サカス広場",
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-06-21",
+      "source_url": "https://sacas.tokyoevent.net/natsuodori.html",
+      "notes": "出典で開催日 2025-08-29〜2025-08-30、開催場所 TBS赤坂サカス広場を確認。既存会場 赤坂サカス広場 として履歴参照のみ採用する。"
+    },
+    {
+      "event_name": "都の辰巳深川 臨海ぼんおどり",
+      "decision": "accept_historical_reference",
+      "historical_date_start": "2025-07-19",
+      "historical_date_end": "",
+      "target_venue_id": "ven_6775cd4bd6512581",
+      "target_venue_name": "臨海小学校",
+      "accepted_alias": "臨海小学校校庭",
+      "reviewed_by": "おと（Codex）",
+      "reviewed_at": "2026-06-21",
+      "source_url": "https://minamisuna1.com/26743/",
+      "notes": "出典で 臨海ぼんおどり 2025-07-19、会場 臨海小学校校庭を確認。既存会場 臨海小学校 として履歴参照のみ採用する。"
+    },
+    {
+      "event_name": "銀座一丁目東町会・新富町会 納涼盆踊り大会",
+      "decision": "accept_historical_reference",
+      "historical_date_start": "2025-07-19",
+      "historical_date_end": "",
+      "target_venue_id": "",
+      "target_venue_name": "京橋プラザ",
+      "accepted_alias": "京橋プラザ",
+      "accept_unregistered_venue": true,
+      "reviewed_by": "内田さん + おと（Codex）",
+      "reviewed_at": "2026-06-21",
+      "source_url": "https://www.chuo-kanko.or.jp/pages/other_details/115655",
+      "primary_evidence_url": "https://www.youtube.com/watch?v=mVajTkgO08A",
+      "evidence_urls": [
+        "https://www.youtube.com/watch?v=mVajTkgO08A",
+        "https://www.youtube.com/watch?v=a00n8T2v1OU",
+        "https://www.youtube.com/watch?v=-fKKAOBMPGE",
+        "https://www.chuo-kanko.or.jp/pages/other_details/115655"
+      ],
+      "notes": "YouTube観測証拠に 2025年7月19日、京橋プラザ、銀座一丁目東町会・新富町会が複数本で出ている。中央区観光協会ページは中央区の盆踊り文脈の補助証拠として扱う。2026確定にはせず、2025履歴参照のみ採用する。京橋プラザは会場マスタ未登録のため venue_id は付けず、履歴参照の会場名として保持する。"
+    }
+  ]
+}
