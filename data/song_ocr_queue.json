@@ -1,6 +1,6 @@
 {
   "generated_by": "build_song_ocr_queue.py",
-  "count": 4,
+  "count": 6,
   "items": [
     {
       "id": "b21783a2a9785946",
@@ -26,6 +26,22 @@
         "pic.twitter.com/wEmL1s2kCQ"
       ],
       "text": "毎度お世話になっております❗\n\n来年2026年6月27日(土)開催\n第4回奥浅草盆踊りの\n曲目&amp;プログラムです❗\n\nお楽しみに‼️ https://t.co/wEmL1s2kCQ",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "961ae2949fcef029",
+      "status": "needs_ocr",
+      "account": "@pmpmgal_bon",
+      "url": "https://x.com/pmpmgal_bon/status/2030270362114830568",
+      "tweet_id": "2030270362114830568",
+      "date": "2026-03-07T13:12:29+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HCz4IXRboAAUBQ5.jpg",
+        "https://t.co/KGV3od0jPm",
+        "pic.twitter.com/KGV3od0jPm",
+        "https://pbs.twimg.com/media/HCz4IXGacAA-lp0.jpg"
+      ],
+      "text": "急遽開催！\n3/20柏ハウディモール盆踊り！\n今回は振り返り会として\n盆踊り倶楽部のメンバーがまた踊りたい曲を流します🌟\n\nしかも、曲順は当日くじで決めるという柏では新しい試みです👏\n\n祝日なので私は参加未定ですが\nよろしくお願いいたします🙏 https://t.co/KGV3od0jPm",
       "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
     },
     {
@@ -58,6 +74,24 @@
         "https://pbs.twimg.com/ext_tw_video_thumb/2068636692559597568/pu/img/w9MXASfXQBZ4qim2.jpg"
       ],
       "text": "2026年6月21日(日)\n東京都台東区／長國寺\n「第23回 いきいき あじさい祭」\nこの数年、あじさいに惹かれ、今年、庭に植えました💠🌿\nあじさいも見られ、盆踊りもできて、とても嬉しかったです🤗✨\n\n【曲目】\n東京音頭\nたいとう音頭\n東京スカイツリー音頭\nご祝儀音頭\nにっぽん音頭\n輝け日本富士山踊り https://t.co/0ZFB12Tth0",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "af33b068f8225818",
+      "status": "needs_ocr",
+      "account": "@michiru_zenryo9",
+      "url": "https://x.com/michiru_zenryo9/status/2068919265001091525",
+      "tweet_id": "2068919265001091525",
+      "date": "2026-06-22T04:49:26+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HLZHFWVbwAAGLKF.jpg",
+        "https://t.co/NMrzu6lJam",
+        "pic.twitter.com/NMrzu6lJam",
+        "https://pbs.twimg.com/media/HLZHFWZa4AA6EQt.jpg",
+        "https://pbs.twimg.com/media/HLZHFWWbEAAFmuO.jpg",
+        "https://pbs.twimg.com/media/HLZHFWXbsAAO7Rh.jpg"
+      ],
+      "text": "長崎にも届きました♪なんとステキなデザイン！曲目もたっぷり！竜宮城のような、東京での盆踊り三昧の日々を思い出す。\n一度目よりも二度目、二度目よりも三度目…聴けば聴くほど「うわぁ♡いいなぁ🍋」ってなる！前作「ひなのいえづと」同様これもヘビロテ確定だ✨\n#夜明け烏の渡るまで #中西レモン https://t.co/NMrzu6lJam",
       "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
     }
   ]
