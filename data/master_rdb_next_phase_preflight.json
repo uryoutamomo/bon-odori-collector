@@ -1,6 +1,6 @@
 {
   "generated_by": "おと（Codex）",
-  "generated_at": "2026-06-22T15:00:00Z",
+  "generated_at": "2026-06-22T15:04:00Z",
   "phase": "master_rdb_next_phase_preflight",
   "status": "ready_for_operator_decision",
   "current_local_phase": "complete_for_local_rdb_phase",
@@ -82,6 +82,17 @@
         "event_investigation_tasks": 0,
         "historical_promotion_candidates": 0
       }
+    },
+    "source_drift_detail_report": {
+      "json": "data/notion_snapshot_master_drift.json",
+      "markdown": "data/notion_snapshot_master_drift.md",
+      "diff_count": 32,
+      "diffs_by_recommendation": {
+        "preserve_master": 19,
+        "review_conflict": 12,
+        "review_before_copy_from_notion": 1
+      },
+      "status": "review_required_before_manifest_source_checksum_refresh"
     }
   },
   "public_preflight": {
@@ -97,6 +108,7 @@
     "python3 build_notion_rdb.py",
     "python3 sync_master_to_notion.py --target-table event_occurrences --out-json data/ph2_master_to_notion_sync_dry_run.json --out-md data/ph2_master_to_notion_sync_dry_run.md",
     "python3 guard_public_events_sync.py",
+    "python3 compare_notion_snapshot_to_master.py",
     "PYTHONPATH=. pytest -q",
     "python3 audit_master_rdb.py",
     "python3 guard_git_large_files.py"
