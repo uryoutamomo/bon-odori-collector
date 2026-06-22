@@ -10065,7 +10065,7 @@
     "jun": {
       "7": "下旬"
     },
-    "description": "城南小学校を会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
+    "description": "天妙国寺を会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
     "detail": "2025-07-26 開催実績。2025 7/26 - 27。「品川区民まつり 品川第二地区」7月26日(土)-27日(日) 17時-21時。 「盆踊り・模擬店 ほか」。 踊りは18時-21時。 練習会 7/23(水)・24(木) 19:00-20:45 城南小学校体育館。 (7/23朝 時間他追記)",
     "source_urls": [],
     "songs": [],
@@ -11291,85 +11291,54 @@
   {
     "name": "品川区民まつり 荏原第五地区",
     "name_confirmed": true,
-    "venue": "旧杜松小学校",
+    "venue": "杜松ホーム",
     "area": "品川区",
     "months": [
-      8
+      7
     ],
     "scale": "中",
     "access": "東急大井町線 戸越公園駅から徒歩約5分。都営浅草線 中延駅から徒歩約8分",
-    "address": "東京都品川区豊町4-22-15",
-    "lat": 35.604641,
-    "lng": 139.721832,
-    "date": null,
-    "date_end": null,
-    "status": "未確認",
+    "address": "東京都品川区豊町4-24-15",
+    "lat": 35.605442,
+    "lng": 139.722931,
+    "date": "2026-07-18",
+    "date_end": "2026-07-19",
+    "status": "確認済み",
     "date_confidence": {
-      "level": "unknown",
-      "label": "未確認",
-      "description": "開催日はまだ確認できていません"
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
     },
     "date_candidates": [],
-    "hints": [
-      [
-        8,
-        23
-      ]
+    "hints": [],
+    "jun": {},
+    "description": "杜松ホームを会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
+    "detail": "2026年公式情報: 2026-07-18〜2026-07-19、会場 杜松ホーム（東京都品川区豊町4-24-15）。",
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
+        "kind": "official"
+      }
     ],
-    "jun": {
-      "8": "下旬"
-    },
-    "description": "旧杜松小学校を会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
-    "detail": "2025-08-23 開催実績。2025 8/23 - 24。「品川区民まつり 荏原第五地区」8月23日(土)-24日(日)。 23日(土) 16:00-19:30。 24日(日) 16:00-18:30。 「模擬店・盆踊り・子どもコーナー・ステージ発表 ほか」。 踊りの時間詳細不明。",
-    "source_urls": [],
     "songs": [],
-    "public_status": "date_unknown",
-    "public_category": "date_unknown",
-    "public_status_label": "日程未確認",
-    "public_note": "今年の日程は未確認です。",
-    "recurrence_label": "日程未確認",
-    "recurrence_score": 0.25,
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-07-18〜2026-07-19",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
     "recurrence_reasons": [
-      "月ヒントあり",
-      "日付ヒントあり",
-      "未確認"
+      "2026年日付確認済み"
     ],
-    "recurrence_cautions": [
-      "2026年日程なし"
-    ],
+    "recurrence_cautions": [],
     "edition_number": null,
     "last_seen_year": null,
-    "last_seen_dates": [],
-    "display_tier": "season_hint",
-    "season_hint": {
-      "display_tier": "season_hint",
-      "target_year": 2026,
-      "months": [
-        8
-      ],
-      "jun": {
-        "8": "下旬"
-      },
-      "hints": [
-        [
-          8,
-          23
-        ]
-      ],
-      "label": "8月下旬",
-      "confidence": "lowest",
-      "basis": "例年の開催月・旬ヒント",
-      "has_jun_hint": true,
-      "has_sort_hint": true
-    },
-    "season_months": [
-      8
+    "last_seen_dates": [
+      "2026-07-18",
+      "2026-07-19"
     ],
-    "season_jun": {
-      "8": "下旬"
-    },
-    "season_hint_label": "8月下旬",
-    "season_confidence": "lowest"
+    "display_tier": "confirmed"
   },
   {
     "name": "しながわ運河まつり ステージプログラム",

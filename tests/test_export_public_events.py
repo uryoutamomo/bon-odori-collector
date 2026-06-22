@@ -4,6 +4,7 @@ from tempfile import TemporaryDirectory
 
 from export_public_events import (
     apply_public_recurrence_metadata,
+    apply_public_event_overrides,
     apply_public_event_name_cleanup,
     clean_public_event_name,
     extract_public_source_urls,
@@ -328,6 +329,48 @@ class ExportPublicEventsTest(unittest.TestCase):
         ])
 
         self.assertEqual([row["name"] for row in rows], ["築地本願寺納涼盆踊り大会"])
+
+    def test_apply_public_event_overrides_patches_reviewed_public_rows(self):
+        rows = apply_public_event_overrides(
+            [
+                {
+                    "name": "品川区民まつり 荏原第五地区",
+                    "venue": "旧杜松小学校",
+                    "area": "品川区",
+                    "date": None,
+                    "status": "未確認",
+                    "season_hint": {"label": "8月下旬"},
+                },
+                {
+                    "name": "品川区民まつり 品川第二地区",
+                    "venue": "天妙国寺",
+                    "area": "品川区",
+                    "description": "城南小学校を会場に行われる品川区民まつりの地域イベント。",
+                },
+            ],
+            {
+                "overrides": [
+                    {
+                        "match": {"name": "品川区民まつり 荏原第五地区", "venue": "旧杜松小学校"},
+                        "remove": ["season_hint"],
+                        "set": {
+                            "venue": "杜松ホーム",
+                            "date": "2026-07-18",
+                            "status": "確認済み",
+                        },
+                    },
+                    {
+                        "match": {"name": "品川区民まつり 品川第二地区", "venue": "天妙国寺"},
+                        "set": {"description": "天妙国寺を会場に行われる品川区民まつりの地域イベント。"},
+                    },
+                ]
+            },
+        )
+
+        self.assertEqual(rows[0]["venue"], "杜松ホーム")
+        self.assertEqual(rows[0]["date"], "2026-07-18")
+        self.assertNotIn("season_hint", rows[0])
+        self.assertEqual(rows[1]["description"], "天妙国寺を会場に行われる品川区民まつりの地域イベント。")
 
     def test_write_public_js(self):
         with TemporaryDirectory() as tmp:

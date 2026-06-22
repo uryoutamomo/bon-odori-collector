@@ -3,11 +3,11 @@
   "source": "data/public/events_public.json",
   "target_year": 2026,
   "target_category": "date_unknown",
-  "target_count": 59,
-  "applied_count": 58,
+  "target_count": 58,
+  "applied_count": 57,
   "skipped_count": 1,
-  "with_jun_hint_count": 56,
-  "with_sort_hint_count": 56,
+  "with_jun_hint_count": 55,
+  "with_sort_hint_count": 55,
   "applied": [
     {
       "name": "京橋盆踊り",
@@ -2031,46 +2031,6 @@
           ]
         ],
         "label": "9月中旬",
-        "confidence": "lowest",
-        "basis": "例年の開催月・旬ヒント",
-        "has_jun_hint": true,
-        "has_sort_hint": true
-      }
-    },
-    {
-      "name": "品川区民まつり 荏原第五地区",
-      "venue": "旧杜松小学校",
-      "before": {
-        "season_hint": null,
-        "season_months": null,
-        "season_hint_label": null
-      },
-      "after": {
-        "season_months": [
-          8
-        ],
-        "season_jun": {
-          "8": "下旬"
-        },
-        "season_hint_label": "8月下旬",
-        "season_confidence": "lowest"
-      },
-      "season_hint": {
-        "display_tier": "season_hint",
-        "target_year": 2026,
-        "months": [
-          8
-        ],
-        "jun": {
-          "8": "下旬"
-        },
-        "hints": [
-          [
-            8,
-            23
-          ]
-        ],
-        "label": "8月下旬",
         "confidence": "lowest",
         "basis": "例年の開催月・旬ヒント",
         "has_jun_hint": true,

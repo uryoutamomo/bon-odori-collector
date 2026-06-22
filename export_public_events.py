@@ -60,6 +60,7 @@ DATE_PREDICTION_REPORT = os.environ.get(
     DATE_PREDICTION_REPORT,
 )
 DATE_CANDIDATES_JSON = os.path.join(os.path.dirname(__file__), "data", "event_date_update_candidates.json")
+PUBLIC_EVENT_OVERRIDES_JSON = os.path.join(os.path.dirname(__file__), "data", "public_event_overrides.json")
 FALLBACK_SUPPRESSED_VENUES = {
     # 例大祭名の由来となる神社。実際の奉納踊り会場は青葉公園（港区立）なので、
     # 未整備会場フォールバックとして「青山熊野神社の盆踊り」を出さない。
@@ -824,6 +825,44 @@ def sanitize_public_event_details(events):
     return apply_public_event_name_cleanup(cleaned)
 
 
+def _load_json_file(path, default):
+    if not os.path.exists(path):
+        return default
+    with open(path, encoding="utf-8") as handle:
+        return json.load(handle)
+
+
+def _override_matches(event, match):
+    if event.get("name") != match.get("name"):
+        return False
+    venues = match.get("venues")
+    if venues is not None:
+        return event.get("venue") in venues
+    if match.get("venue") is not None:
+        return event.get("venue") == match.get("venue")
+    return True
+
+
+def apply_public_event_overrides(events, overrides=None):
+    """Apply reviewed public-only patches that are not yet in the Notion source."""
+    payload = overrides if overrides is not None else _load_json_file(PUBLIC_EVENT_OVERRIDES_JSON, {})
+    rules = payload.get("overrides") or []
+    if not rules:
+        return events
+
+    patched = []
+    for event in events:
+        item = dict(event)
+        for rule in rules:
+            if not _override_matches(item, rule.get("match") or {}):
+                continue
+            for field in rule.get("remove") or []:
+                item.pop(field, None)
+            item.update(rule.get("set") or {})
+        patched.append(item)
+    return apply_public_event_name_cleanup(patched)
+
+
 def is_public_event_complete_enough(event):
     """Drop empty fallback rows that have no useful public date, venue, or geo signal."""
     if event.get("name_confirmed"):
@@ -995,7 +1034,8 @@ def main():
     except urllib.error.HTTPError as e:
         print(f"イベント公開エクスポート失敗 (HTTP {e.code})。スキップ")
         return
-    events = suppress_replaced_recurring_events(apply_public_recurrence_metadata(sanitize_public_event_details(events)))
+    events = apply_public_event_overrides(sanitize_public_event_details(events))
+    events = suppress_replaced_recurring_events(apply_public_recurrence_metadata(events))
     prediction_result = apply_public_date_predictions(
         events,
         load_public_date_prediction_json(DATE_PREDICTIONS, {}),

@@ -1,6 +1,6 @@
 {
   "generated_by": "classify_public_events_diff.py",
-  "generated_at": "2026-06-21T16:54:05.950053+00:00",
+  "generated_at": "2026-06-22T02:16:04.912461+00:00",
   "scope": "read_only_diff_classification_no_writes",
   "sources": {
     "collector_events": "data/public/events_public.json",
@@ -15,16 +15,741 @@
     "fixed_date_rule_basis_refresh": "collector fixed-date postprocessor keeps the same displayed date while refreshing the public basis text"
   },
   "summary": {
-    "collector_event_count": 182,
+    "collector_event_count": 183,
     "site_event_count": 182,
-    "collector_only_count": 0,
-    "site_only_count": 0,
-    "high_risk_diff_record_count": 0,
-    "high_risk_event_count": 0,
-    "records_by_family": {},
-    "records_by_action": {},
-    "events_by_action": {}
+    "collector_only_count": 2,
+    "site_only_count": 1,
+    "high_risk_diff_record_count": 43,
+    "high_risk_event_count": 5,
+    "records_by_family": {
+      "detail": 1,
+      "historical_slide": 19,
+      "historical_reference": 11,
+      "date_prediction": 7,
+      "season_hint": 5
+    },
+    "records_by_action": {
+      "individual_review": 14,
+      "restore_collector_from_site_or_reenable_export_postprocess": 24,
+      "low_priority_or_unclassified": 3,
+      "site_update_candidate_after_review": 2
+    },
+    "events_by_action": {
+      "fixed_date_rule_basis_refresh": 1,
+      "individual_review": 2,
+      "low_priority_or_unclassified": 1,
+      "rule_prediction_replaces_matching_historical_slide": 1
+    }
   },
-  "event_rows": [],
-  "records": []
+  "event_rows": [
+    {
+      "event_key": "花園神社 盆踊り||花園神社",
+      "event_name": "花園神社 盆踊り",
+      "venue": "花園神社",
+      "recommended_action": "fixed_date_rule_basis_refresh",
+      "families": [
+        "historical_reference",
+        "historical_slide"
+      ],
+      "field_count": 5,
+      "fields": [
+        "historical_reference",
+        "historical_reference_score",
+        "historical_slide",
+        "historical_slide_basis",
+        "prediction_basis"
+      ],
+      "actions": {
+        "individual_review": 5
+      }
+    },
+    {
+      "event_key": "三角広場まつり「居酒屋盆踊り」||新宿住友ビル三角広場",
+      "event_name": "三角広場まつり「居酒屋盆踊り」",
+      "venue": "新宿住友ビル三角広場",
+      "recommended_action": "individual_review",
+      "families": [
+        "date_prediction",
+        "detail",
+        "historical_reference",
+        "historical_slide"
+      ],
+      "field_count": 19,
+      "fields": [
+        "detail",
+        "display_tier",
+        "historical_display_tier",
+        "historical_last_seen_dates",
+        "historical_last_seen_year",
+        "historical_reference",
+        "historical_reference_confidence",
+        "historical_reference_label",
+        "historical_reference_score",
+        "historical_slide",
+        "historical_slide_basis",
+        "historical_slide_date",
+        "historical_slide_date_end",
+        "predicted_date",
+        "predicted_date_end",
+        "prediction_basis",
+        "prediction_confidence",
+        "recurrence_reasons",
+        "recurrence_score"
+      ],
+      "actions": {
+        "individual_review": 3,
+        "restore_collector_from_site_or_reenable_export_postprocess": 15,
+        "low_priority_or_unclassified": 1
+      }
+    },
+    {
+      "event_key": "品川区民まつり 荏原第一地区||小山台小学校",
+      "event_name": "品川区民まつり 荏原第一地区",
+      "venue": "小山台小学校",
+      "recommended_action": "individual_review",
+      "families": [
+        "date_prediction",
+        "historical_slide",
+        "season_hint"
+      ],
+      "field_count": 8,
+      "fields": [
+        "display_tier",
+        "recurrence_reasons",
+        "recurrence_score",
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "actions": {
+        "individual_review": 2,
+        "low_priority_or_unclassified": 1,
+        "restore_collector_from_site_or_reenable_export_postprocess": 5
+      }
+    },
+    {
+      "event_key": "品川区民まつり 荏原第五地区||杜松ホーム",
+      "event_name": "品川区民まつり 荏原第五地区",
+      "venue": "杜松ホーム",
+      "recommended_action": "low_priority_or_unclassified",
+      "families": [
+        "date_prediction"
+      ],
+      "field_count": 1,
+      "fields": [
+        "recurrence_score"
+      ],
+      "actions": {
+        "low_priority_or_unclassified": 1
+      }
+    },
+    {
+      "event_key": "歌舞伎町BON ODORI||歌舞伎町シネシティ広場",
+      "event_name": "歌舞伎町BON ODORI",
+      "venue": "歌舞伎町シネシティ広場",
+      "recommended_action": "rule_prediction_replaces_matching_historical_slide",
+      "families": [
+        "date_prediction",
+        "historical_reference",
+        "historical_slide"
+      ],
+      "field_count": 10,
+      "fields": [
+        "date_prediction",
+        "display_tier",
+        "historical_display_tier",
+        "historical_reference",
+        "historical_slide",
+        "historical_slide_basis",
+        "historical_slide_date",
+        "historical_slide_date_end",
+        "prediction_basis",
+        "prediction_evidence_years"
+      ],
+      "actions": {
+        "site_update_candidate_after_review": 2,
+        "individual_review": 4,
+        "restore_collector_from_site_or_reenable_export_postprocess": 4
+      }
+    }
+  ],
+  "records": [
+    {
+      "event_key": "三角広場まつり「居酒屋盆踊り」||新宿住友ビル三角広場",
+      "event_name": "三角広場まつり「居酒屋盆踊り」",
+      "venue": "新宿住友ビル三角広場",
+      "field": "detail",
+      "family": "detail",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": "新宿住友ビル三角広場公式告知。キュー上の「新宿住友ビル三角広場まつり居酒屋盆踊り」は同一候補として処理。 【2026年確定】2026/06/24(水)〜06/25(木)開催。出典: （こと 2026-06-21 公式サイト直接確認）。タグ: 電車圏／夜開催（1日3回盆踊りタイム）",
+      "site_value": "新宿住友ビル三角広場公式告知。キュー上の「新宿住友ビル三角広場まつり居酒屋盆踊り」は同一候補として処理。"
+    },
+    {
+      "event_key": "三角広場まつり「居酒屋盆踊り」||新宿住友ビル三角広場",
+      "event_name": "三角広場まつり「居酒屋盆踊り」",
+      "venue": "新宿住友ビル三角広場",
+      "field": "display_tier",
+      "family": "historical_slide",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": "confirmed",
+      "site_value": "historical_slide"
+    },
+    {
+      "event_key": "三角広場まつり「居酒屋盆踊り」||新宿住友ビル三角広場",
+      "event_name": "三角広場まつり「居酒屋盆踊り」",
+      "venue": "新宿住友ビル三角広場",
+      "field": "historical_display_tier",
+      "family": "historical_reference",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": "historical_slide"
+    },
+    {
+      "event_key": "三角広場まつり「居酒屋盆踊り」||新宿住友ビル三角広場",
+      "event_name": "三角広場まつり「居酒屋盆踊り」",
+      "venue": "新宿住友ビル三角広場",
+      "field": "historical_last_seen_dates",
+      "family": "historical_reference",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": [
+        "2025-06-25",
+        "2025-06-26"
+      ]
+    },
+    {
+      "event_key": "三角広場まつり「居酒屋盆踊り」||新宿住友ビル三角広場",
+      "event_name": "三角広場まつり「居酒屋盆踊り」",
+      "venue": "新宿住友ビル三角広場",
+      "field": "historical_last_seen_year",
+      "family": "historical_reference",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": 2025
+    },
+    {
+      "event_key": "三角広場まつり「居酒屋盆踊り」||新宿住友ビル三角広場",
+      "event_name": "三角広場まつり「居酒屋盆踊り」",
+      "venue": "新宿住友ビル三角広場",
+      "field": "historical_reference",
+      "family": "historical_reference",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": {
+        "display_tier": "historical_slide",
+        "label": "2025-06-25〜2025-06-26実績・今年未確認",
+        "confidence": "medium",
+        "score": 0.63,
+        "last_seen_year": 2025,
+        "last_seen_dates": [
+          "2025-06-25",
+          "2025-06-26"
+        ]
+      }
+    },
+    {
+      "event_key": "三角広場まつり「居酒屋盆踊り」||新宿住友ビル三角広場",
+      "event_name": "三角広場まつり「居酒屋盆踊り」",
+      "venue": "新宿住友ビル三角広場",
+      "field": "historical_reference_confidence",
+      "family": "historical_reference",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": "medium"
+    },
+    {
+      "event_key": "三角広場まつり「居酒屋盆踊り」||新宿住友ビル三角広場",
+      "event_name": "三角広場まつり「居酒屋盆踊り」",
+      "venue": "新宿住友ビル三角広場",
+      "field": "historical_reference_label",
+      "family": "historical_reference",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": "2025-06-25〜2025-06-26実績・今年未確認"
+    },
+    {
+      "event_key": "三角広場まつり「居酒屋盆踊り」||新宿住友ビル三角広場",
+      "event_name": "三角広場まつり「居酒屋盆踊り」",
+      "venue": "新宿住友ビル三角広場",
+      "field": "historical_reference_score",
+      "family": "historical_reference",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": 0.63
+    },
+    {
+      "event_key": "三角広場まつり「居酒屋盆踊り」||新宿住友ビル三角広場",
+      "event_name": "三角広場まつり「居酒屋盆踊り」",
+      "venue": "新宿住友ビル三角広場",
+      "field": "historical_slide",
+      "family": "historical_slide",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": {
+        "date": "2026-06-24",
+        "date_end": "2026-06-25",
+        "basis": "2025年実績の同月第4水曜を2026年へスライド"
+      }
+    },
+    {
+      "event_key": "三角広場まつり「居酒屋盆踊り」||新宿住友ビル三角広場",
+      "event_name": "三角広場まつり「居酒屋盆踊り」",
+      "venue": "新宿住友ビル三角広場",
+      "field": "historical_slide_basis",
+      "family": "historical_slide",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": "2025年実績の同月第4水曜を2026年へスライド"
+    },
+    {
+      "event_key": "三角広場まつり「居酒屋盆踊り」||新宿住友ビル三角広場",
+      "event_name": "三角広場まつり「居酒屋盆踊り」",
+      "venue": "新宿住友ビル三角広場",
+      "field": "historical_slide_date",
+      "family": "historical_slide",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": "2026-06-24"
+    },
+    {
+      "event_key": "三角広場まつり「居酒屋盆踊り」||新宿住友ビル三角広場",
+      "event_name": "三角広場まつり「居酒屋盆踊り」",
+      "venue": "新宿住友ビル三角広場",
+      "field": "historical_slide_date_end",
+      "family": "historical_slide",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": "2026-06-25"
+    },
+    {
+      "event_key": "三角広場まつり「居酒屋盆踊り」||新宿住友ビル三角広場",
+      "event_name": "三角広場まつり「居酒屋盆踊り」",
+      "venue": "新宿住友ビル三角広場",
+      "field": "predicted_date",
+      "family": "historical_slide",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": "2026-06-24"
+    },
+    {
+      "event_key": "三角広場まつり「居酒屋盆踊り」||新宿住友ビル三角広場",
+      "event_name": "三角広場まつり「居酒屋盆踊り」",
+      "venue": "新宿住友ビル三角広場",
+      "field": "predicted_date_end",
+      "family": "historical_slide",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": "2026-06-25"
+    },
+    {
+      "event_key": "三角広場まつり「居酒屋盆踊り」||新宿住友ビル三角広場",
+      "event_name": "三角広場まつり「居酒屋盆踊り」",
+      "venue": "新宿住友ビル三角広場",
+      "field": "prediction_basis",
+      "family": "historical_slide",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": "2025年実績の同月第4水曜を2026年へスライド"
+    },
+    {
+      "event_key": "三角広場まつり「居酒屋盆踊り」||新宿住友ビル三角広場",
+      "event_name": "三角広場まつり「居酒屋盆踊り」",
+      "venue": "新宿住友ビル三角広場",
+      "field": "prediction_confidence",
+      "family": "historical_slide",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": "medium"
+    },
+    {
+      "event_key": "三角広場まつり「居酒屋盆踊り」||新宿住友ビル三角広場",
+      "event_name": "三角広場まつり「居酒屋盆踊り」",
+      "venue": "新宿住友ビル三角広場",
+      "field": "recurrence_reasons",
+      "family": "date_prediction",
+      "side": "both_different",
+      "recommended_action": "low_priority_or_unclassified",
+      "collector_value": [
+        "2026年日付確認済み"
+      ],
+      "site_value": [
+        "official_or_semi_official_evidence",
+        "venue_present",
+        "tokyo_23ward",
+        "recurring_word:まつり"
+      ]
+    },
+    {
+      "event_key": "三角広場まつり「居酒屋盆踊り」||新宿住友ビル三角広場",
+      "event_name": "三角広場まつり「居酒屋盆踊り」",
+      "venue": "新宿住友ビル三角広場",
+      "field": "recurrence_score",
+      "family": "date_prediction",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": 0.95,
+      "site_value": 0.63
+    },
+    {
+      "event_key": "品川区民まつり 荏原第一地区||小山台小学校",
+      "event_name": "品川区民まつり 荏原第一地区",
+      "venue": "小山台小学校",
+      "field": "display_tier",
+      "family": "historical_slide",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": "confirmed",
+      "site_value": "season_hint"
+    },
+    {
+      "event_key": "品川区民まつり 荏原第一地区||小山台小学校",
+      "event_name": "品川区民まつり 荏原第一地区",
+      "venue": "小山台小学校",
+      "field": "recurrence_reasons",
+      "family": "date_prediction",
+      "side": "both_different",
+      "recommended_action": "low_priority_or_unclassified",
+      "collector_value": [
+        "2026年日付確認済み"
+      ],
+      "site_value": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ]
+    },
+    {
+      "event_key": "品川区民まつり 荏原第一地区||小山台小学校",
+      "event_name": "品川区民まつり 荏原第一地区",
+      "venue": "小山台小学校",
+      "field": "recurrence_score",
+      "family": "date_prediction",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": 0.95,
+      "site_value": 0.25
+    },
+    {
+      "event_key": "品川区民まつり 荏原第一地区||小山台小学校",
+      "event_name": "品川区民まつり 荏原第一地区",
+      "venue": "小山台小学校",
+      "field": "season_confidence",
+      "family": "season_hint",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": "lowest"
+    },
+    {
+      "event_key": "品川区民まつり 荏原第一地区||小山台小学校",
+      "event_name": "品川区民まつり 荏原第一地区",
+      "venue": "小山台小学校",
+      "field": "season_hint",
+      "family": "season_hint",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": {
+        "display_tier": "season_hint",
+        "label": "7月下旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      }
+    },
+    {
+      "event_key": "品川区民まつり 荏原第一地区||小山台小学校",
+      "event_name": "品川区民まつり 荏原第一地区",
+      "venue": "小山台小学校",
+      "field": "season_hint_label",
+      "family": "season_hint",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": "7月下旬"
+    },
+    {
+      "event_key": "品川区民まつり 荏原第一地区||小山台小学校",
+      "event_name": "品川区民まつり 荏原第一地区",
+      "venue": "小山台小学校",
+      "field": "season_jun",
+      "family": "season_hint",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": {
+        "7": "下旬"
+      }
+    },
+    {
+      "event_key": "品川区民まつり 荏原第一地区||小山台小学校",
+      "event_name": "品川区民まつり 荏原第一地区",
+      "venue": "小山台小学校",
+      "field": "season_months",
+      "family": "season_hint",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": [
+        7
+      ]
+    },
+    {
+      "event_key": "品川区民まつり 荏原第五地区||杜松ホーム",
+      "event_name": "品川区民まつり 荏原第五地区",
+      "venue": "杜松ホーム",
+      "field": "recurrence_score",
+      "family": "date_prediction",
+      "side": "both_different",
+      "recommended_action": "low_priority_or_unclassified",
+      "collector_value": 0.95,
+      "site_value": 1.0
+    },
+    {
+      "event_key": "歌舞伎町BON ODORI||歌舞伎町シネシティ広場",
+      "event_name": "歌舞伎町BON ODORI",
+      "venue": "歌舞伎町シネシティ広場",
+      "field": "date_prediction",
+      "family": "date_prediction",
+      "side": "collector_only",
+      "recommended_action": "site_update_candidate_after_review",
+      "collector_value": {
+        "display_tier": "rule_predicted",
+        "confidence": "medium",
+        "score": 0.7,
+        "date": "2026-08-15",
+        "date_end": "2026-08-15",
+        "basis": "8月第3土曜",
+        "rule_type": "weekday_nth"
+      },
+      "site_value": null
+    },
+    {
+      "event_key": "歌舞伎町BON ODORI||歌舞伎町シネシティ広場",
+      "event_name": "歌舞伎町BON ODORI",
+      "venue": "歌舞伎町シネシティ広場",
+      "field": "display_tier",
+      "family": "historical_slide",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": "rule_predicted",
+      "site_value": "historical_slide"
+    },
+    {
+      "event_key": "歌舞伎町BON ODORI||歌舞伎町シネシティ広場",
+      "event_name": "歌舞伎町BON ODORI",
+      "venue": "歌舞伎町シネシティ広場",
+      "field": "historical_display_tier",
+      "family": "historical_reference",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": "historical_reference",
+      "site_value": "historical_slide"
+    },
+    {
+      "event_key": "歌舞伎町BON ODORI||歌舞伎町シネシティ広場",
+      "event_name": "歌舞伎町BON ODORI",
+      "venue": "歌舞伎町シネシティ広場",
+      "field": "historical_reference",
+      "family": "historical_reference",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": {
+        "display_tier": "historical_reference",
+        "label": "2025-08-16実績・今年未確認",
+        "confidence": "medium",
+        "score": 0.6,
+        "last_seen_year": 2025,
+        "last_seen_dates": [
+          "2025-08-16"
+        ]
+      },
+      "site_value": {
+        "display_tier": "historical_slide",
+        "label": "2025-08-16実績・今年未確認",
+        "confidence": "medium",
+        "score": 0.6,
+        "last_seen_year": 2025,
+        "last_seen_dates": [
+          "2025-08-16"
+        ]
+      }
+    },
+    {
+      "event_key": "歌舞伎町BON ODORI||歌舞伎町シネシティ広場",
+      "event_name": "歌舞伎町BON ODORI",
+      "venue": "歌舞伎町シネシティ広場",
+      "field": "historical_slide",
+      "family": "historical_slide",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": {
+        "date": "2026-08-15",
+        "date_end": "2026-08-15",
+        "basis": "2025年実績の同月第3土曜を2026年へスライド"
+      }
+    },
+    {
+      "event_key": "歌舞伎町BON ODORI||歌舞伎町シネシティ広場",
+      "event_name": "歌舞伎町BON ODORI",
+      "venue": "歌舞伎町シネシティ広場",
+      "field": "historical_slide_basis",
+      "family": "historical_slide",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": "2025年実績の同月第3土曜を2026年へスライド"
+    },
+    {
+      "event_key": "歌舞伎町BON ODORI||歌舞伎町シネシティ広場",
+      "event_name": "歌舞伎町BON ODORI",
+      "venue": "歌舞伎町シネシティ広場",
+      "field": "historical_slide_date",
+      "family": "historical_slide",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": "2026-08-15"
+    },
+    {
+      "event_key": "歌舞伎町BON ODORI||歌舞伎町シネシティ広場",
+      "event_name": "歌舞伎町BON ODORI",
+      "venue": "歌舞伎町シネシティ広場",
+      "field": "historical_slide_date_end",
+      "family": "historical_slide",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": "2026-08-15"
+    },
+    {
+      "event_key": "歌舞伎町BON ODORI||歌舞伎町シネシティ広場",
+      "event_name": "歌舞伎町BON ODORI",
+      "venue": "歌舞伎町シネシティ広場",
+      "field": "prediction_basis",
+      "family": "historical_slide",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": "8月第3土曜",
+      "site_value": "2025年実績の同月第3土曜を2026年へスライド"
+    },
+    {
+      "event_key": "歌舞伎町BON ODORI||歌舞伎町シネシティ広場",
+      "event_name": "歌舞伎町BON ODORI",
+      "venue": "歌舞伎町シネシティ広場",
+      "field": "prediction_evidence_years",
+      "family": "date_prediction",
+      "side": "collector_only",
+      "recommended_action": "site_update_candidate_after_review",
+      "collector_value": [
+        2024,
+        2025
+      ],
+      "site_value": null
+    },
+    {
+      "event_key": "花園神社 盆踊り||花園神社",
+      "event_name": "花園神社 盆踊り",
+      "venue": "花園神社",
+      "field": "historical_reference",
+      "family": "historical_reference",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": {
+        "display_tier": "historical_slide",
+        "label": "2025-08-01〜2025-08-02実績・今年未確認",
+        "confidence": "medium",
+        "score": 0.55,
+        "last_seen_year": 2025,
+        "last_seen_dates": [
+          "2025-08-01",
+          "2025-08-02"
+        ]
+      },
+      "site_value": {
+        "display_tier": "historical_slide",
+        "label": "2025-08-01〜2025-08-02実績・今年未確認",
+        "confidence": "medium",
+        "score": 0.59,
+        "last_seen_year": 2025,
+        "last_seen_dates": [
+          "2025-08-01",
+          "2025-08-02"
+        ]
+      }
+    },
+    {
+      "event_key": "花園神社 盆踊り||花園神社",
+      "event_name": "花園神社 盆踊り",
+      "venue": "花園神社",
+      "field": "historical_reference_score",
+      "family": "historical_reference",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": 0.55,
+      "site_value": 0.59
+    },
+    {
+      "event_key": "花園神社 盆踊り||花園神社",
+      "event_name": "花園神社 盆踊り",
+      "venue": "花園神社",
+      "field": "historical_slide",
+      "family": "historical_slide",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": {
+        "date": "2026-08-01",
+        "date_end": "2026-08-02",
+        "basis": "YOKOSO新宿の告知に「毎年8月1日・2日」と明記",
+        "rule_type": "fixed_date_range"
+      },
+      "site_value": {
+        "date": "2026-08-01",
+        "date_end": "2026-08-02",
+        "basis": "イベントDBの固定日カラムに記録",
+        "rule_type": "fixed_date_range"
+      }
+    },
+    {
+      "event_key": "花園神社 盆踊り||花園神社",
+      "event_name": "花園神社 盆踊り",
+      "venue": "花園神社",
+      "field": "historical_slide_basis",
+      "family": "historical_slide",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": "YOKOSO新宿の告知に「毎年8月1日・2日」と明記",
+      "site_value": "イベントDBの固定日カラムに記録"
+    },
+    {
+      "event_key": "花園神社 盆踊り||花園神社",
+      "event_name": "花園神社 盆踊り",
+      "venue": "花園神社",
+      "field": "prediction_basis",
+      "family": "historical_slide",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": "YOKOSO新宿の告知に「毎年8月1日・2日」と明記",
+      "site_value": "イベントDBの固定日カラムに記録"
+    }
+  ]
 }

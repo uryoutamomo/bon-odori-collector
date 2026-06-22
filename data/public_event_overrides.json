@@ -1,0 +1,75 @@
+{
+  "generated_by": "おと（Codex）",
+  "generated_at": "2026-06-22",
+  "scope": "reviewed_public_only_overrides_until_notion_sync_catches_up",
+  "overrides": [
+    {
+      "id": "ph2_ebara_fifth_confirmed_2026",
+      "reason": "Ph2 apply reviewed: official 2026 page says 荏原第五地区 is at 杜松ホーム on 2026-07-18 to 2026-07-19. Notion write-back is not yet the source for export_public_events.py.",
+      "match": {
+        "name": "品川区民まつり 荏原第五地区",
+        "venue": "旧杜松小学校"
+      },
+      "remove": [
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months",
+        "historical_reference",
+        "historical_display_tier",
+        "historical_last_seen_year",
+        "historical_last_seen_dates",
+        "historical_reference_label",
+        "historical_reference_confidence",
+        "historical_reference_score",
+        "historical_slide",
+        "historical_slide_date",
+        "historical_slide_date_end",
+        "historical_slide_method",
+        "historical_slide_basis"
+      ],
+      "set": {
+        "venue": "杜松ホーム",
+        "area": "品川区",
+        "months": [
+          7
+        ],
+        "address": "東京都品川区豊町4-24-15",
+        "lat": 35.605442,
+        "lng": 139.722931,
+        "date": "2026-07-18",
+        "date_end": "2026-07-19",
+        "status": "確認済み",
+        "date_confidence": {
+          "level": "confirmed",
+          "label": "確認済み",
+          "description": "開催日として確認済みです"
+        },
+        "date_candidates": [],
+        "hints": [],
+        "jun": {},
+        "description": "杜松ホームを会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
+        "detail": "2026年公式情報: 2026-07-18〜2026-07-19、会場 杜松ホーム（東京都品川区豊町4-24-15）。",
+        "source_urls": [
+          {
+            "label": "公式告知あり",
+            "url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
+            "kind": "official"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ph2_shinagawa_second_description_tenmyokokuji",
+      "reason": "Ph2 venue review accepted 天妙国寺境内 as alias of 天妙国寺. 城南小学校 is the child-corner venue, not the bon-odori venue.",
+      "match": {
+        "name": "品川区民まつり 品川第二地区",
+        "venue": "天妙国寺"
+      },
+      "set": {
+        "description": "天妙国寺を会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。"
+      }
+    }
+  ]
+}
