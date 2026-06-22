@@ -1,0 +1,2761 @@
+{
+  "generated_by": "build_observed_promotion_candidates.py",
+  "generated_at": "2026-06-22T01:21:42.791260+00:00",
+  "sources": {
+    "db": "data/bon_odori_master.sqlite",
+    "song_occurrences": "data/song_occurrences.json"
+  },
+  "summary": {
+    "candidate_count": 14,
+    "candidates_by_confidence": {
+      "high": 6,
+      "medium": 1,
+      "low": 7
+    },
+    "skipped": {
+      "no_tokyo_23_hint": 1144,
+      "no_curated_match": 316
+    }
+  },
+  "candidates": [
+    {
+      "candidate_key": "occ_85b5772373d4e5df|2025-07-24||",
+      "target_occurrence_id": "occ_85b5772373d4e5df",
+      "target_event_name": "第28回新橋こいち祭 盆踊り",
+      "target_event_year": 2025,
+      "target_current_date": "2025-07-24",
+      "target_current_venue": "桜田公園",
+      "proposed_event_name": "(三波春夫) 「第28回新橋こいち祭」盆踊り1日目26 柳通り第二部",
+      "proposed_venue": "",
+      "match_score": 5,
+      "source_rows": [
+        {
+          "observed_occurrence_id": "obsocc_33a81e5954e0a129",
+          "source_occurrence_id": "22d10400dcc1de2f",
+          "raw_event_name": "「チャンチキおけさ」(三波春夫) 「第28回新橋こいち祭」盆踊り1日目26 柳通り第二部 東京都港区",
+          "raw_venue_name": "「チャンチキおけさ」(三波春夫) 2025年「第28回新橋こいち祭」盆踊り1日目26 柳通り第二部 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_55e9ed1413eada24",
+          "source_occurrence_id": "b396fbfb2bd27089",
+          "raw_event_name": "「ハワイ音頭」 「第28回新橋こいち祭」盆踊り1日目25 柳通り第二部 東京都港区",
+          "raw_venue_name": "「ハワイ音頭」 2025年「第28回新橋こいち祭」盆踊り1日目25 柳通り第二部 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_78097e4f9665fb34",
+          "source_occurrence_id": "6731f83b7f3abc14",
+          "raw_event_name": "「ハワイ音頭」 「第28回新橋こいち祭」盆踊り1日目31 柳通り第二部 東京都港区",
+          "raw_venue_name": "「ハワイ音頭」 2025年「第28回新橋こいち祭」盆踊り1日目31 柳通り第二部 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_4c2ab773d0661c0d",
+          "source_occurrence_id": "4a4214f8e6693336",
+          "raw_event_name": "「好きになった人」(都はるみ) 「第28回新橋こいち祭」盆踊り1日目19 桜田会場第2部 東京都港区",
+          "raw_venue_name": "「好きになった人」(都はるみ) 2025年「第28回新橋こいち祭」盆踊り1日目19 桜田会場第2部 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_33d62ea24635ee65",
+          "source_occurrence_id": "d4815d83c955bf12",
+          "raw_event_name": "「炭坑節」 「第28回新橋こいち祭」盆踊り1日目27 柳通り第二部 東京都港区",
+          "raw_venue_name": "「炭坑節」 2025年「第28回新橋こいち祭」盆踊り1日目27 柳通り第二部 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_5e8cb44d5cfec135",
+          "source_occurrence_id": "9030074b47ce2fef",
+          "raw_event_name": "【チャンチキおけさ】(三波春夫) 「第28回新橋こいち祭」盆踊り1日目17 桜田会場第2部 東京都港区",
+          "raw_venue_name": "【チャンチキおけさ】(三波春夫) 2025年「第28回新橋こいち祭」盆踊り1日目17 桜田会場第2部 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_2a92fbf96547ae24",
+          "source_occurrence_id": "bc2b0d793d6cbf03",
+          "raw_event_name": "【八木節】(4代目堀込源太) 「第28回新橋こいち祭」盆踊り1日目18 桜田会場第2部 東京都港区",
+          "raw_venue_name": "【八木節】(4代目堀込源太) 2025年「第28回新橋こいち祭」盆踊り1日目18 桜田会場第2部 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_b0c463ebf8273b45",
+          "source_occurrence_id": "9b4c4331d4540196",
+          "raw_event_name": "【北海盆唄】 「第28回新橋こいち祭」盆踊り1日目6 桜田会場第一部 東京都港区",
+          "raw_venue_name": "【北海盆唄】 2025年「第28回新橋こいち祭」盆踊り1日目6 桜田会場第一部 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_98d9b31c0f8be7b6",
+          "source_occurrence_id": "d7ea33baa3c9fb4f",
+          "raw_event_name": "【大東京音頭】(金沢明子) 「第28回新橋こいち祭」盆踊り1日目3 桜田会場第一部 東京都港区",
+          "raw_venue_name": "【大東京音頭】(金沢明子) 2025年「第28回新橋こいち祭」盆踊り1日目3 桜田会場第一部 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_3d6eb0b4bd77fef2",
+          "source_occurrence_id": "82c84f558b7b290c",
+          "raw_event_name": "【好きになった人】(都はるみ) 「第28回新橋こいち祭」盆踊り1日目14 柳通り第一部 東京都港区",
+          "raw_venue_name": "【好きになった人】(都はるみ) 2025年「第28回新橋こいち祭」盆踊り1日目14 柳通り第一部 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_b8655c83643c6ace",
+          "source_occurrence_id": "32757a29738cb1eb",
+          "raw_event_name": "【好きになった人】(都はるみ) 「第28回新橋こいち祭」盆踊り1日目28 柳通り第二部 東京都港区",
+          "raw_venue_name": "【好きになった人】(都はるみ) 2025年「第28回新橋こいち祭」盆踊り1日目28 柳通り第二部 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_f8fa2ec85ef4ef1a",
+          "source_occurrence_id": "183c4e19160b9069",
+          "raw_event_name": "【燃えろ日本の夏祭り】(橋幸夫) 「第28回新橋こいち祭」盆踊り1日目22 桜田会場第2部 東京都港区",
+          "raw_venue_name": "【燃えろ日本の夏祭り】(橋幸夫) 2025年「第28回新橋こいち祭」盆踊り1日目22 桜田会場第2部 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_1d6445e1b9717583",
+          "source_occurrence_id": "80ca6a33cbece532",
+          "raw_event_name": "ご祝儀音頭 「第28回新橋こいち祭」盆踊り1日目21 桜田会場第2部 東京都港区",
+          "raw_venue_name": "ご祝儀音頭 2025年「第28回新橋こいち祭」盆踊り1日目21 桜田会場第2部 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_9018f103de3b6420",
+          "source_occurrence_id": "0fcf7a35b3620bbb",
+          "raw_event_name": "ふるさと音頭 「第28回新橋こいち祭」盆踊り1日目16 桜田会場第2部 東京都港区",
+          "raw_venue_name": "ふるさと音頭 2025年「第28回新橋こいち祭」盆踊り1日目16 桜田会場第2部 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_d723e740ececf6f9",
+          "source_occurrence_id": "5d0950a716536737",
+          "raw_event_name": "チャンチキおけさ 「第28回新橋こいち祭」盆踊り1日目12 柳通り第一部 東京都港区",
+          "raw_venue_name": "チャンチキおけさ 2025年「第28回新橋こいち祭」盆踊り1日目12 柳通り第一部 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_9357ffd4788cf648",
+          "source_occurrence_id": "8ce338872af05ee8",
+          "raw_event_name": "ハワイ音頭 「第28回新橋こいち祭」盆踊り1日目11 柳通り第一部 東京都港区",
+          "raw_venue_name": "ハワイ音頭 2025年「第28回新橋こいち祭」盆踊り1日目11 柳通り第一部 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_013771baef2dee05",
+          "source_occurrence_id": "83951f0852d5d0d0",
+          "raw_event_name": "ハワイ音頭 「第28回新橋こいち祭」盆踊り1日目7 桜田会場第一部 東京都港区",
+          "raw_venue_name": "ハワイ音頭 2025年「第28回新橋こいち祭」盆踊り1日目7 桜田会場第一部 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_8cab2f0f03be3ab5",
+          "source_occurrence_id": "9e0154ae315c3470",
+          "raw_event_name": "一円玉の旅がらす 「第28回新橋こいち祭」盆踊り1日目20 桜田会場第2部 東京都港区",
+          "raw_venue_name": "一円玉の旅がらす 2025年「第28回新橋こいち祭」盆踊り1日目20 桜田会場第2部 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_3cb80e923b2d6e1f",
+          "source_occurrence_id": "095589df43181032",
+          "raw_event_name": "新橋音頭 「第28回新橋こいち祭」盆踊り1日目10 柳通り第一部 東京都港区",
+          "raw_venue_name": "新橋音頭 2025年「第28回新橋こいち祭」盆踊り1日目10 柳通り第一部 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_55275ae28ce21479",
+          "source_occurrence_id": "acbdce861b48aba6",
+          "raw_event_name": "新橋音頭 「第28回新橋こいち祭」盆踊り1日目24 柳通り第二部 東京都港区",
+          "raw_venue_name": "新橋音頭 2025年「第28回新橋こいち祭」盆踊り1日目24 柳通り第二部 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_eedd809246c22edf",
+          "source_occurrence_id": "36c3430127fde065",
+          "raw_event_name": "新橋音頭 「第28回新橋こいち祭」盆踊り1日目30 柳通り第二部 東京都港区",
+          "raw_venue_name": "新橋音頭 2025年「第28回新橋こいち祭」盆踊り1日目30 柳通り第二部 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_4463774be7ddcefb",
+          "source_occurrence_id": "f7f9ecbd6e1a4d90",
+          "raw_event_name": "新橋音頭 「第28回新橋こいち祭」盆踊り1日目33終 柳通り第二部 東京都港区",
+          "raw_venue_name": "新橋音頭 2025年「第28回新橋こいち祭」盆踊り1日目33終 柳通り第二部 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_5a338e2fc27ddf0e",
+          "source_occurrence_id": "31260d20e61ef028",
+          "raw_event_name": "新橋音頭 「第28回新橋こいち祭」盆踊り1日目4 桜田会場第一部 東京都港区",
+          "raw_venue_name": "新橋音頭 2025年「第28回新橋こいち祭」盆踊り1日目4 桜田会場第一部 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_954a5c466bdd8cc3",
+          "source_occurrence_id": "f7b2efc17a90b5f0",
+          "raw_event_name": "新芝音頭 「第28回新橋こいち祭」盆踊り1日目8 桜田会場第一部 東京都港区",
+          "raw_venue_name": "新芝音頭 2025年「第28回新橋こいち祭」盆踊り1日目8 桜田会場第一部 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_5c6284e515bbbdac",
+          "source_occurrence_id": "d8412e3276d7dcf3",
+          "raw_event_name": "東京音頭 「第28回新橋こいち祭」盆踊り1日目2 桜田会場第一部 東京都港区",
+          "raw_venue_name": "東京音頭 2025年「第28回新橋こいち祭」盆踊り1日目2 桜田会場第一部 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_74dd413c7b58a244",
+          "source_occurrence_id": "80ab316728f72765",
+          "raw_event_name": "東京音頭 「第28回新橋こいち祭」盆踊り1日目23 柳通り第二部 東京都港区",
+          "raw_venue_name": "東京音頭 2025年「第28回新橋こいち祭」盆踊り1日目23 柳通り第二部 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_a7750e2c33fdeb58",
+          "source_occurrence_id": "e20a42d6c0e9a1db",
+          "raw_event_name": "東京音頭 「第28回新橋こいち祭」盆踊り1日目29 柳通り第二部 東京都港区",
+          "raw_venue_name": "東京音頭 2025年「第28回新橋こいち祭」盆踊り1日目29 柳通り第二部 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_a169951336169ed9",
+          "source_occurrence_id": "6970c47d883447fc",
+          "raw_event_name": "東京音頭 「第28回新橋こいち祭」盆踊り1日目9 柳通り第一部 東京都港区",
+          "raw_venue_name": "東京音頭 2025年「第28回新橋こいち祭」盆踊り1日目9 柳通り第一部 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_f94aa58021ef9a9a",
+          "source_occurrence_id": "487586484fe65047",
+          "raw_event_name": "火の国太鼓 「第28回新橋こいち祭」盆踊り1日目15 桜田会場第2部 東京都港区",
+          "raw_venue_name": "火の国太鼓 2025年「第28回新橋こいち祭」盆踊り1日目15 桜田会場第2部 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_a40ef823a5390a68",
+          "source_occurrence_id": "ccde36c83a6c022f",
+          "raw_event_name": "炭坑節 「第28回新橋こいち祭」盆踊り1日目13 柳通り第一部 東京都港区",
+          "raw_venue_name": "炭坑節 2025年「第28回新橋こいち祭」盆踊り1日目13 柳通り第一部 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_32f2410b27b4a5c4",
+          "source_occurrence_id": "ec4e3927a52c0524",
+          "raw_event_name": "炭坑節 「第28回新橋こいち祭」盆踊り1日目32 柳通り第二部 東京都港区",
+          "raw_venue_name": "炭坑節 2025年「第28回新橋こいち祭」盆踊り1日目32 柳通り第二部 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_0494d9f086a006cc",
+          "source_occurrence_id": "a38f5c0908525dfe",
+          "raw_event_name": "炭坑節 「第28回新橋こいち祭」盆踊り1日目5 桜田会場第一部 東京都港区",
+          "raw_venue_name": "炭坑節 2025年「第28回新橋こいち祭」盆踊り1日目5 桜田会場第一部 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_06d3f47168685c6c",
+          "source_occurrence_id": "f2b3c5a3f3249969",
+          "raw_event_name": "防災音頭 「第28回新橋こいち祭」盆踊り1日目1 桜田会場第一部 東京都港区",
+          "raw_venue_name": "防災音頭 2025年「第28回新橋こいち祭」盆踊り1日目1 桜田会場第一部 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        }
+      ],
+      "proposed_date_start": "2025-07-24",
+      "proposed_date_end": "",
+      "proposed_date_values": [
+        "2025-07-24"
+      ],
+      "organizers": [],
+      "matched_tokens": [
+        "第28回新橋こいち祭"
+      ],
+      "source_occurrence_ids": [
+        "095589df43181032",
+        "0fcf7a35b3620bbb",
+        "183c4e19160b9069",
+        "22d10400dcc1de2f",
+        "31260d20e61ef028",
+        "32757a29738cb1eb",
+        "36c3430127fde065",
+        "487586484fe65047",
+        "4a4214f8e6693336",
+        "5d0950a716536737",
+        "6731f83b7f3abc14",
+        "6970c47d883447fc",
+        "80ab316728f72765",
+        "80ca6a33cbece532",
+        "82c84f558b7b290c",
+        "83951f0852d5d0d0",
+        "8ce338872af05ee8",
+        "9030074b47ce2fef",
+        "9b4c4331d4540196",
+        "9e0154ae315c3470",
+        "a38f5c0908525dfe",
+        "acbdce861b48aba6",
+        "b396fbfb2bd27089",
+        "bc2b0d793d6cbf03",
+        "ccde36c83a6c022f",
+        "d4815d83c955bf12",
+        "d7ea33baa3c9fb4f",
+        "d8412e3276d7dcf3",
+        "e20a42d6c0e9a1db",
+        "ec4e3927a52c0524",
+        "f2b3c5a3f3249969",
+        "f7b2efc17a90b5f0",
+        "f7f9ecbd6e1a4d90"
+      ],
+      "source_occurrence_count": 33,
+      "song_titles_sample": [
+        "ご祝儀音頭",
+        "ふるさと音頭",
+        "チャンチキおけさ",
+        "ハワイ音頭",
+        "一円玉の旅がらす",
+        "八木節",
+        "北海盆唄",
+        "大東京音頭",
+        "好きになった人",
+        "新橋音頭",
+        "新芝音頭",
+        "東京音頭",
+        "火の国太鼓",
+        "炭坑節",
+        "燃えろ日本の夏祭り",
+        "防災音頭"
+      ],
+      "song_title_count": 16,
+      "evidence_urls_sample": [
+        "https://www.youtube.com/watch?v=-e-erZezdKQ",
+        "https://www.youtube.com/watch?v=12FspXoZjnM",
+        "https://www.youtube.com/watch?v=1hMGKT4Bpiw",
+        "https://www.youtube.com/watch?v=2YaFM2zk9Ms",
+        "https://www.youtube.com/watch?v=3UGlRoxJnKA",
+        "https://www.youtube.com/watch?v=6l25PR8Y1MI",
+        "https://www.youtube.com/watch?v=9TP04lkapKM",
+        "https://www.youtube.com/watch?v=OhXumZLdg54",
+        "https://www.youtube.com/watch?v=XNKMBMHx0Rc",
+        "https://www.youtube.com/watch?v=XbffFJB9EIc"
+      ],
+      "evidence_url_count": 16,
+      "quality_status_counts": {
+        "review": 33
+      },
+      "promotion_confidence": "high",
+      "recommended_action": "review_then_promote_historical_reference"
+    },
+    {
+      "candidate_key": "occ_56d48c1deeded4ab|2025-06-20||",
+      "target_occurrence_id": "occ_56d48c1deeded4ab",
+      "target_event_name": "郡上おどり in 青山",
+      "target_event_year": 2025,
+      "target_current_date": "2025-06-20",
+      "target_current_venue": "",
+      "proposed_event_name": "かわさき 2025年郡上おどりin青山2日目10 秩父宮ラグビー場駐車場",
+      "proposed_venue": "",
+      "match_score": 5,
+      "source_rows": [
+        {
+          "observed_occurrence_id": "obsocc_09c2446365b8a56d",
+          "source_occurrence_id": "591f2bce8de1092f",
+          "raw_event_name": "かわさき 2025年郡上おどりin青山2日目10 秩父宮ラグビー場駐車場 東京都港区",
+          "raw_venue_name": "かわさき 2025年郡上おどりin青山2日目10 秩父宮ラグビー場駐車場 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_fc36cfcc292ac131",
+          "source_occurrence_id": "4db84ec347493133",
+          "raw_event_name": "かわさき 2025年郡上おどりin青山2日目2 秩父宮ラグビー場駐車場 東京都港区",
+          "raw_venue_name": "かわさき 2025年郡上おどりin青山2日目2 秩父宮ラグビー場駐車場 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_34dd1ef380218c4b",
+          "source_occurrence_id": "f33711ca69eea048",
+          "raw_event_name": "げんげんばらばら 2025年郡上おどりin青山2日目7 秩父宮ラグビー場駐車場 東京都港区",
+          "raw_venue_name": "げんげんばらばら 2025年郡上おどりin青山2日目7 秩父宮ラグビー場駐車場 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_bacbe6830eebffab",
+          "source_occurrence_id": "75a546bfd46eb98d",
+          "raw_event_name": "さわぎ 2025年郡上おどりin青山2日目8 秩父宮ラグビー場駐車場 東京都港区",
+          "raw_venue_name": "さわぎ 2025年郡上おどりin青山2日目8 秩父宮ラグビー場駐車場 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_674c47ae2752412f",
+          "source_occurrence_id": "b38152a0ac97633e",
+          "raw_event_name": "まつさか 2025年郡上おどりin青山2日目15終 秩父宮ラグビー場駐車場 東京都港区",
+          "raw_venue_name": "まつさか 2025年郡上おどりin青山2日目15終 秩父宮ラグビー場駐車場 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_952d02cd613d0096",
+          "source_occurrence_id": "10fbc12dfb96c712",
+          "raw_event_name": "やっちく 2025年郡上おどりin青山2日目13 秩父宮ラグビー場駐車場 東京都港区",
+          "raw_venue_name": "やっちく 2025年郡上おどりin青山2日目13 秩父宮ラグビー場駐車場 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_520661206d8480e3",
+          "source_occurrence_id": "58dcb5614d0f039a",
+          "raw_event_name": "やっちく 2025年郡上おどりin青山2日目5 秩父宮ラグビー場駐車場 東京都港区",
+          "raw_venue_name": "やっちく 2025年郡上おどりin青山2日目5 秩父宮ラグビー場駐車場 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_2ea966d05599b6d7",
+          "source_occurrence_id": "f76087b5cf31e2eb",
+          "raw_event_name": "やっちく 2025年郡上おどりin青山初日13 秩父宮ラグビー場駐車場 東京都港区",
+          "raw_venue_name": "やっちく 2025年郡上おどりin青山初日13 秩父宮ラグビー場駐車場 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_f919227c9a063b63",
+          "source_occurrence_id": "3c9169a7002c95d7",
+          "raw_event_name": "やっちく 2025年郡上おどりin青山初日5 秩父宮ラグビー場駐車場 東京都港区",
+          "raw_venue_name": "やっちく 2025年郡上おどりin青山初日5 秩父宮ラグビー場駐車場 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_906039004fef71f4",
+          "source_occurrence_id": "34749e23e1e2d5c8",
+          "raw_event_name": "三百 2025年郡上おどりin青山2日目11 秩父宮ラグビー場駐車場 東京都港区",
+          "raw_venue_name": "三百 2025年郡上おどりin青山2日目11 秩父宮ラグビー場駐車場 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_cfd793f03c85a07a",
+          "source_occurrence_id": "cb3905bfb8eb779a",
+          "raw_event_name": "三百 2025年郡上おどりin青山2日目3 秩父宮ラグビー場駐車場 東京都港区",
+          "raw_venue_name": "三百 2025年郡上おどりin青山2日目3 秩父宮ラグビー場駐車場 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_49c679bf479f4b7e",
+          "source_occurrence_id": "afe6f755aca096fa",
+          "raw_event_name": "三百 2025年郡上おどりin青山2日目6 秩父宮ラグビー場駐車場 東京都港区",
+          "raw_venue_name": "三百 2025年郡上おどりin青山2日目6 秩父宮ラグビー場駐車場 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_fd2d3d893effaf83",
+          "source_occurrence_id": "0213f7f9bde4c9b1",
+          "raw_event_name": "三百 2025年郡上おどりin青山初日3 秩父宮ラグビー場駐車場 東京都港区",
+          "raw_venue_name": "三百 2025年郡上おどりin青山初日3 秩父宮ラグビー場駐車場 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_054b0c0e0b8a43cf",
+          "source_occurrence_id": "63f727549e397519",
+          "raw_event_name": "古調かわさき 2025年郡上おどりin青山2日目 秩父宮ラグビー場駐車場 東京都港区",
+          "raw_venue_name": "古調かわさき 2025年郡上おどりin青山2日目 秩父宮ラグビー場駐車場 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_9e87470b7abb1a8a",
+          "source_occurrence_id": "902892a3b813a5f9",
+          "raw_event_name": "春駒 2025年郡上おどりin青山2日目12 秩父宮ラグビー場駐車場 東京都港区",
+          "raw_venue_name": "春駒 2025年郡上おどりin青山2日目12 秩父宮ラグビー場駐車場 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_d3a7fb73d02df891",
+          "source_occurrence_id": "3ba56319c3d1c3e3",
+          "raw_event_name": "春駒 2025年郡上おどりin青山2日目4 秩父宮ラグビー場駐車場 東京都港区",
+          "raw_venue_name": "春駒 2025年郡上おどりin青山2日目4 秩父宮ラグビー場駐車場 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_fe11eb2f4622f15c",
+          "source_occurrence_id": "27a6f635e728199f",
+          "raw_event_name": "春駒 2025年郡上おどりin青山初日12 秩父宮ラグビー場駐車場 東京都港区",
+          "raw_venue_name": "春駒 2025年郡上おどりin青山初日12 秩父宮ラグビー場駐車場 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_60d31f97f3d2d16e",
+          "source_occurrence_id": "fa39e181b23ea406",
+          "raw_event_name": "春駒 2025年郡上おどりin青山初日4 秩父宮ラグビー場駐車場 東京都港区",
+          "raw_venue_name": "春駒 2025年郡上おどりin青山初日4 秩父宮ラグビー場駐車場 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_1b01f527a889a4d0",
+          "source_occurrence_id": "442c9e5f775ac6e5",
+          "raw_event_name": "猫の子 2025年郡上おどりin青山2日目9 秩父宮ラグビー場駐車場 東京都港区",
+          "raw_venue_name": "猫の子 2025年郡上おどりin青山2日目9 秩父宮ラグビー場駐車場 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_07800544f2793bda",
+          "source_occurrence_id": "5de59f6bfd7f8982",
+          "raw_event_name": "甚句 2025年郡上おどりin青山2日目14 秩父宮ラグビー場駐車場 東京都港区",
+          "raw_venue_name": "甚句 2025年郡上おどりin青山2日目14 秩父宮ラグビー場駐車場 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        }
+      ],
+      "proposed_date_start": "2025-06-20",
+      "proposed_date_end": "",
+      "proposed_date_values": [
+        "2025-06-20"
+      ],
+      "organizers": [],
+      "matched_tokens": [
+        "郡上おどり"
+      ],
+      "source_occurrence_ids": [
+        "0213f7f9bde4c9b1",
+        "10fbc12dfb96c712",
+        "27a6f635e728199f",
+        "34749e23e1e2d5c8",
+        "3ba56319c3d1c3e3",
+        "3c9169a7002c95d7",
+        "442c9e5f775ac6e5",
+        "4db84ec347493133",
+        "58dcb5614d0f039a",
+        "591f2bce8de1092f",
+        "5de59f6bfd7f8982",
+        "63f727549e397519",
+        "75a546bfd46eb98d",
+        "902892a3b813a5f9",
+        "afe6f755aca096fa",
+        "b38152a0ac97633e",
+        "cb3905bfb8eb779a",
+        "f33711ca69eea048",
+        "f76087b5cf31e2eb",
+        "fa39e181b23ea406"
+      ],
+      "source_occurrence_count": 20,
+      "song_titles_sample": [
+        "かわさき",
+        "げんげんばらばら",
+        "さわぎ",
+        "やっちく",
+        "三百",
+        "古調かわさき",
+        "春駒",
+        "流しおどり",
+        "猫の子",
+        "甚句",
+        "終 まつさか",
+        "西馬音内盆踊り",
+        "遊行おどり",
+        "郡上おどり",
+        "阿波踊り"
+      ],
+      "song_title_count": 15,
+      "evidence_urls_sample": [
+        "https://www.youtube.com/watch?v=3SFBGg03Rqw",
+        "https://www.youtube.com/watch?v=42wycNTML1g",
+        "https://www.youtube.com/watch?v=63lHrefTHQ4",
+        "https://www.youtube.com/watch?v=7EKBYQ-ndHw",
+        "https://www.youtube.com/watch?v=9jH820fnetk",
+        "https://www.youtube.com/watch?v=E75K3H8CkGk",
+        "https://www.youtube.com/watch?v=H--pb7rMQpg",
+        "https://www.youtube.com/watch?v=RGFEpC-x3YI",
+        "https://www.youtube.com/watch?v=SuT7DKYt6oQ",
+        "https://www.youtube.com/watch?v=VSZmGwTKtEk"
+      ],
+      "evidence_url_count": 17,
+      "quality_status_counts": {
+        "review": 20
+      },
+      "promotion_confidence": "high",
+      "recommended_action": "review_then_promote_historical_reference"
+    },
+    {
+      "candidate_key": "occ_eb5984603eeb0f18|2025-07-04|大正大学|",
+      "target_occurrence_id": "occ_eb5984603eeb0f18",
+      "target_event_name": "第15回 鴨台盆踊り",
+      "target_event_year": 2025,
+      "target_current_date": "2025-07-04",
+      "target_current_venue": "大正大学",
+      "proposed_event_name": "大正大学「第15回鴨台盆踊り」",
+      "proposed_venue": "大正大学",
+      "match_score": 5,
+      "source_rows": [
+        {
+          "observed_occurrence_id": "obsocc_f225c6b123533993",
+          "source_occurrence_id": "9771c0e38ad3c12d",
+          "raw_event_name": "「365日の紙飛行機」 2025年大正大学「第15回鴨台盆踊り」13 東京都豊島区",
+          "raw_venue_name": "「365日の紙飛行機」 2025年大正大学「第15回鴨台盆踊り」13 東京都豊島区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_bb0843b6e8fbc9d4",
+          "source_occurrence_id": "567e1bbdb4923a15",
+          "raw_event_name": "「恋するフォーチュンクッキー」 2025年大正大学「第15回鴨台盆踊り」2 東京都豊島区",
+          "raw_venue_name": "「恋するフォーチュンクッキー」 2025年大正大学「第15回鴨台盆踊り」2 東京都豊島区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_c7ab8adb44482b02",
+          "source_occurrence_id": "dba68111e35feaba",
+          "raw_event_name": "【U.S.A.(DA PUMP)】 2025年大正大学「第15回鴨台盆踊り」9 東京都豊島区",
+          "raw_venue_name": "【U.S.A.(DA PUMP)】 2025年大正大学「第15回鴨台盆踊り」9 東京都豊島区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_c875edac0e84b9e2",
+          "source_occurrence_id": "d2a315ae8fae7b83",
+          "raw_event_name": "【おジャ魔女カーニバル!!】(MAHO堂) 2025年大正大学「第15回鴨台盆踊り」7 東京都豊島区",
+          "raw_venue_name": "【おジャ魔女カーニバル!!】(MAHO堂) 2025年大正大学「第15回鴨台盆踊り」7 東京都豊島区",
+          "quality_status": "discard_candidate",
+          "quality_flags_json": "[\"venue_too_long\", \"venue_looks_like_text_fragment\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_2849cf58de70c64c",
+          "source_occurrence_id": "f613f8b245aa39d7",
+          "raw_event_name": "【アイドル(YOASOBI)】 2025年大正大学「第15回鴨台盆踊り」15 東京都豊島区",
+          "raw_venue_name": "【アイドル(YOASOBI)】 2025年大正大学「第15回鴨台盆踊り」15 東京都豊島区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_7e827e81b8300291",
+          "source_occurrence_id": "af49f787974023ff",
+          "raw_event_name": "おジャ魔女カーニバル!!(MAHO堂) 2025年大正大学「第15回鴨台盆踊り」16 東京都豊島区",
+          "raw_venue_name": "おジャ魔女カーニバル!!(MAHO堂) 2025年大正大学「第15回鴨台盆踊り」16 東京都豊島区",
+          "quality_status": "discard_candidate",
+          "quality_flags_json": "[\"venue_too_long\", \"venue_looks_like_text_fragment\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_e6d10f98e2b17916",
+          "source_occurrence_id": "2b360377dc700535",
+          "raw_event_name": "みなとヨイサ 2025年大正大学「第15回鴨台盆踊り」6 東京都豊島区",
+          "raw_venue_name": "みなとヨイサ 2025年大正大学「第15回鴨台盆踊り」6 東京都豊島区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_73663e9dddd576e3",
+          "source_occurrence_id": "ea2590c56b1a7788",
+          "raw_event_name": "アイドル 2025年大正大学「第15回鴨台盆踊り」5 東京都豊島区",
+          "raw_venue_name": "アイドル 2025年大正大学「第15回鴨台盆踊り」5 東京都豊島区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_d6010341fce82306",
+          "source_occurrence_id": "62561128dda21cc0",
+          "raw_event_name": "ダンシング・ヒーロー 2025年大正大学「第15回鴨台盆踊り」14 東京都豊島区",
+          "raw_venue_name": "ダンシング・ヒーロー 2025年大正大学「第15回鴨台盆踊り」14 東京都豊島区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_fd8552804d105652",
+          "source_occurrence_id": "ff8e9c283d852f37",
+          "raw_event_name": "ダンシング・ヒーロー 2025年大正大学「第15回鴨台盆踊り」18終 東京都豊島区",
+          "raw_venue_name": "ダンシング・ヒーロー 2025年大正大学「第15回鴨台盆踊り」18終 東京都豊島区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_46682f5f30c05edf",
+          "source_occurrence_id": "000bccaf8b7b1bca",
+          "raw_event_name": "万博音頭 交野節編 豊島区Ver 2025年大正大学「第15回鴨台盆踊り」11 東京都豊島区",
+          "raw_venue_name": "万博音頭 交野節編 豊島区Ver 2025年大正大学「第15回鴨台盆踊り」11 東京都豊島区",
+          "quality_status": "discard_candidate",
+          "quality_flags_json": "[\"venue_too_long\", \"venue_looks_like_text_fragment\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_9f9aaa5a7a7061c9",
+          "source_occurrence_id": "087890b0cdec49b3",
+          "raw_event_name": "大江戸東京音頭 2025年大正大学「第15回鴨台盆踊り」12 東京都豊島区",
+          "raw_venue_name": "大江戸東京音頭 2025年大正大学「第15回鴨台盆踊り」12 東京都豊島区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_77a4204abddd8810",
+          "source_occurrence_id": "332d79802b981d4e",
+          "raw_event_name": "大江戸東京音頭 2025年大正大学「第15回鴨台盆踊り」17 東京都豊島区",
+          "raw_venue_name": "大江戸東京音頭 2025年大正大学「第15回鴨台盆踊り」17 東京都豊島区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_9e9baf9a29f78a3c",
+          "source_occurrence_id": "c89f4b9ccda41e9d",
+          "raw_event_name": "巣鴨音頭 2025年大正大学「第15回鴨台盆踊り」4 東京都豊島区",
+          "raw_venue_name": "巣鴨音頭 2025年大正大学「第15回鴨台盆踊り」4 東京都豊島区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_c0ec3a82c76b9596",
+          "source_occurrence_id": "0deee91859978d26",
+          "raw_event_name": "東京音頭 2025年大正大学「第15回鴨台盆踊り」1 東京都豊島区",
+          "raw_venue_name": "東京音頭 2025年大正大学「第15回鴨台盆踊り」1 東京都豊島区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_7ef9bbb35fef6ffa",
+          "source_occurrence_id": "b35dfc4ef5d9167a",
+          "raw_event_name": "炭坑節 2025年大正大学「第15回鴨台盆踊り」3 東京都豊島区",
+          "raw_venue_name": "炭坑節 2025年大正大学「第15回鴨台盆踊り」3 東京都豊島区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_a5294c5889337341",
+          "source_occurrence_id": "57c52949f8ac1ec3",
+          "raw_event_name": "種物音頭(生歌) 2025年大正大学「第15回鴨台盆踊り」10 東京都豊島区",
+          "raw_venue_name": "種物音頭(生歌) 2025年大正大学「第15回鴨台盆踊り」10 東京都豊島区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_9259569e757bd407",
+          "source_occurrence_id": "057297b9872f37b1",
+          "raw_event_name": "飛島音頭(レクチャーあり) 2025年大正大学「第15回鴨台盆踊り」8 東京都豊島区",
+          "raw_venue_name": "飛島音頭(レクチャーあり) 2025年大正大学「第15回鴨台盆踊り」8 東京都豊島区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        }
+      ],
+      "proposed_date_start": "2025-07-04",
+      "proposed_date_end": "",
+      "proposed_date_values": [
+        "2025-07-04"
+      ],
+      "organizers": [],
+      "matched_tokens": [
+        "第15回",
+        "鴨台盆踊り"
+      ],
+      "source_occurrence_ids": [
+        "000bccaf8b7b1bca",
+        "057297b9872f37b1",
+        "087890b0cdec49b3",
+        "0deee91859978d26",
+        "2b360377dc700535",
+        "332d79802b981d4e",
+        "567e1bbdb4923a15",
+        "57c52949f8ac1ec3",
+        "62561128dda21cc0",
+        "9771c0e38ad3c12d",
+        "af49f787974023ff",
+        "b35dfc4ef5d9167a",
+        "c89f4b9ccda41e9d",
+        "d2a315ae8fae7b83",
+        "dba68111e35feaba",
+        "ea2590c56b1a7788",
+        "f613f8b245aa39d7",
+        "ff8e9c283d852f37"
+      ],
+      "source_occurrence_count": 18,
+      "song_titles_sample": [
+        "365日の紙飛行機",
+        "USA",
+        "おジャ魔女カーニバル",
+        "みなとヨイサ",
+        "アイドル",
+        "ダンシング・ヒーロー",
+        "万博音頭交野節編",
+        "大江戸東京音頭",
+        "巣鴨音頭",
+        "恋するフォーチュンクッキー",
+        "東京音頭",
+        "炭坑節",
+        "種物音頭",
+        "飛島音頭"
+      ],
+      "song_title_count": 14,
+      "evidence_urls_sample": [
+        "https://www.youtube.com/watch?v=0ZDUIo3VM3Y",
+        "https://www.youtube.com/watch?v=3i3VI6y2C14",
+        "https://www.youtube.com/watch?v=EHSB2YnDWNA",
+        "https://www.youtube.com/watch?v=EP-aHV5gnps",
+        "https://www.youtube.com/watch?v=KerwfhoHAzg",
+        "https://www.youtube.com/watch?v=LRQhnOL4BxA",
+        "https://www.youtube.com/watch?v=N9tUPCi3vDs",
+        "https://www.youtube.com/watch?v=PBkuLkvutgE",
+        "https://www.youtube.com/watch?v=Rn1S2DWxgTA",
+        "https://www.youtube.com/watch?v=a8FJSulj11Y"
+      ],
+      "evidence_url_count": 14,
+      "quality_status_counts": {
+        "review": 15,
+        "discard_candidate": 3
+      },
+      "promotion_confidence": "high",
+      "recommended_action": "review_then_promote_historical_reference"
+    },
+    {
+      "candidate_key": "occ_8ff0a2c41a98d97b|2025-07-24||",
+      "target_occurrence_id": "occ_8ff0a2c41a98d97b",
+      "target_event_name": "赤坂浄土寺盆踊り大会",
+      "target_event_year": 2025,
+      "target_current_date": "2025-07-24",
+      "target_current_venue": "浄土寺",
+      "proposed_event_name": "(SOUTHERN ALL STARS) 2025年赤坂浄土寺盆踊り大会",
+      "proposed_venue": "",
+      "match_score": 5,
+      "source_rows": [
+        {
+          "observed_occurrence_id": "obsocc_92d9ed6feaddaad5",
+          "source_occurrence_id": "10d3b86d1d7b2091",
+          "raw_event_name": "「盆ギリ恋歌」(SOUTHERN ALL STARS) 2025年赤坂浄土寺盆踊り大会10 東京都港区",
+          "raw_venue_name": "「盆ギリ恋歌」(SOUTHERN ALL STARS) 2025年赤坂浄土寺盆踊り大会10 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_35a68006259fe90d",
+          "source_occurrence_id": "54d422cd61e2afea",
+          "raw_event_name": "【佐渡おけさ】 2025年赤坂浄土寺盆踊り大会6 東京都港区",
+          "raw_venue_name": "【佐渡おけさ】 2025年赤坂浄土寺盆踊り大会6 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_0e1258c6646557e2",
+          "source_occurrence_id": "d8ac525a76af3827",
+          "raw_event_name": "【炭坑節】 2025年赤坂浄土寺盆踊り大会8 東京都港区",
+          "raw_venue_name": "【炭坑節】 2025年赤坂浄土寺盆踊り大会8 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_bbf0ba23dcb39040",
+          "source_occurrence_id": "47a11a8d8381220d",
+          "raw_event_name": "かがやき音頭 2025年赤坂浄土寺盆踊り大会3 東京都港区",
+          "raw_venue_name": "かがやき音頭 2025年赤坂浄土寺盆踊り大会3 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_d7cb38db8a48c5e4",
+          "source_occurrence_id": "51439b0bcfc6a7f8",
+          "raw_event_name": "ステテコシャンシャン 2025年赤坂浄土寺盆踊り大会9 東京都港区",
+          "raw_venue_name": "ステテコシャンシャン 2025年赤坂浄土寺盆踊り大会9 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_db4aeca717b3dd86",
+          "source_occurrence_id": "5db761ccbd5a869f",
+          "raw_event_name": "ドダレバチ(津軽甚句) 2025年赤坂浄土寺盆踊り大会4 東京都港区",
+          "raw_venue_name": "ドダレバチ(津軽甚句) 2025年赤坂浄土寺盆踊り大会4 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_334ad6b18e603c10",
+          "source_occurrence_id": "7fcb7108a5253824",
+          "raw_event_name": "ニッポンワッショイ 2025年赤坂浄土寺盆踊り大会11 東京都港区",
+          "raw_venue_name": "ニッポンワッショイ 2025年赤坂浄土寺盆踊り大会11 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_9dc8bd80803bb68c",
+          "source_occurrence_id": "5b42aff76762ccb9",
+          "raw_event_name": "東京音頭 〆太鼓 2025年赤坂浄土寺盆踊り大会12終 東京都港区",
+          "raw_venue_name": "東京音頭 〆太鼓 2025年赤坂浄土寺盆踊り大会12終 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_01b11cc55a4ceacc",
+          "source_occurrence_id": "96af97728eb61ab5",
+          "raw_event_name": "白浜音頭 2025年赤坂浄土寺盆踊り大会5 東京都港区",
+          "raw_venue_name": "白浜音頭 2025年赤坂浄土寺盆踊り大会5 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_91e10ff9a9903b32",
+          "source_occurrence_id": "cced5ec680dbc719",
+          "raw_event_name": "赤坂豊川音頭 2025年赤坂浄土寺盆踊り大会2 東京都港区",
+          "raw_venue_name": "赤坂豊川音頭 2025年赤坂浄土寺盆踊り大会2 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_9e04c9d202902e6d",
+          "source_occurrence_id": "00a65b47a4805435",
+          "raw_event_name": "赤坂音頭(曲の途中から) 2025年赤坂浄土寺盆踊り大会1 東京都港区",
+          "raw_venue_name": "赤坂音頭(曲の途中から) 2025年赤坂浄土寺盆踊り大会1 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_226a45593ec60e9e",
+          "source_occurrence_id": "40c1cf450b3648b4",
+          "raw_event_name": "郡上節かわさき 2025年赤坂浄土寺盆踊り大会7 東京都港区",
+          "raw_venue_name": "郡上節かわさき 2025年赤坂浄土寺盆踊り大会7 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        }
+      ],
+      "proposed_date_start": "2025-07-24",
+      "proposed_date_end": "",
+      "proposed_date_values": [
+        "2025-07-24"
+      ],
+      "organizers": [],
+      "matched_tokens": [
+        "赤坂浄土寺盆踊り大会"
+      ],
+      "source_occurrence_ids": [
+        "00a65b47a4805435",
+        "10d3b86d1d7b2091",
+        "40c1cf450b3648b4",
+        "47a11a8d8381220d",
+        "51439b0bcfc6a7f8",
+        "54d422cd61e2afea",
+        "5b42aff76762ccb9",
+        "5db761ccbd5a869f",
+        "7fcb7108a5253824",
+        "96af97728eb61ab5",
+        "cced5ec680dbc719",
+        "d8ac525a76af3827"
+      ],
+      "source_occurrence_count": 12,
+      "song_titles_sample": [
+        "かがやき音頭",
+        "ステテコシャンシャン",
+        "ドダレバチ",
+        "ニッポンワッショイ",
+        "佐渡おけさ",
+        "炭坑節",
+        "白浜音頭",
+        "盆ギリ恋歌",
+        "終 東京音頭",
+        "赤坂豊川音頭",
+        "赤坂音頭",
+        "郡上節かわさき"
+      ],
+      "song_title_count": 12,
+      "evidence_urls_sample": [
+        "https://www.youtube.com/watch?v=AN-r0O7il-E",
+        "https://www.youtube.com/watch?v=B5wEPux7L_o",
+        "https://www.youtube.com/watch?v=Hh3hogPYz_o",
+        "https://www.youtube.com/watch?v=IGkCXPe7kiA",
+        "https://www.youtube.com/watch?v=LP4sI365UrY",
+        "https://www.youtube.com/watch?v=LtUcH01ffrI",
+        "https://www.youtube.com/watch?v=b_zYZPnba1U",
+        "https://www.youtube.com/watch?v=f10nW62zsQ0",
+        "https://www.youtube.com/watch?v=h6VMxhSGP2E",
+        "https://www.youtube.com/watch?v=jB8YAocilmg"
+      ],
+      "evidence_url_count": 12,
+      "quality_status_counts": {
+        "review": 12
+      },
+      "promotion_confidence": "high",
+      "recommended_action": "review_then_promote_historical_reference"
+    },
+    {
+      "candidate_key": "occ_0544277c16ebe157|2025-10-10||",
+      "target_occurrence_id": "occ_0544277c16ebe157",
+      "target_event_name": "うえのはら盆踊り",
+      "target_event_year": 2026,
+      "target_current_date": "",
+      "target_current_venue": "上野原市役所センタープラザ（もみじホール）",
+      "proposed_event_name": "",
+      "proposed_venue": "",
+      "match_score": 4,
+      "source_rows": [
+        {
+          "observed_occurrence_id": "obsocc_82bf64801d9da55e",
+          "source_occurrence_id": "d7bd4840ea8077e0",
+          "raw_event_name": "「365日の紙飛行機」 「踊ろう!in荒木町の秋」20 新宿区荒木公園盆踊り",
+          "raw_venue_name": "「365日の紙飛行機」 「踊ろう!in荒木町の秋」20 新宿区荒木公園盆踊り",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_464a0572085f5846",
+          "source_occurrence_id": "ecfa033aea13616e",
+          "raw_event_name": "「令和音頭」 「踊ろう!in荒木町の秋」25 新宿区荒木公園盆踊り",
+          "raw_venue_name": "「令和音頭」 「踊ろう!in荒木町の秋」25 新宿区荒木公園盆踊り",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        }
+      ],
+      "proposed_date_start": "2025-10-10",
+      "proposed_date_end": "",
+      "proposed_date_values": [
+        "2025-10-10"
+      ],
+      "organizers": [],
+      "matched_tokens": [],
+      "source_occurrence_ids": [
+        "d7bd4840ea8077e0",
+        "ecfa033aea13616e"
+      ],
+      "source_occurrence_count": 2,
+      "song_titles_sample": [
+        "365日の紙飛行機",
+        "いもがらぼくと",
+        "かがやき音頭",
+        "きよしのズンドコ節",
+        "さくら音頭",
+        "にっぽんチャチャチャ",
+        "ふるさと音頭",
+        "まつのき小唄",
+        "ゆかた音頭",
+        "オバQ音頭",
+        "チャンチキおけさ",
+        "ドンパン節",
+        "ニッポンワッショイ",
+        "ハワイ音頭",
+        "バハマ・ママ",
+        "令和音頭",
+        "北海盆唄",
+        "大東京音頭",
+        "大江戸東京音頭",
+        "平成新宿音頭"
+      ],
+      "song_title_count": 28,
+      "evidence_urls_sample": [
+        "https://www.youtube.com/watch?v=1FRqebrUUjA",
+        "https://www.youtube.com/watch?v=1r1TAxLp4so",
+        "https://www.youtube.com/watch?v=2_YlrW_rwjM",
+        "https://www.youtube.com/watch?v=37pbtjd_5hA",
+        "https://www.youtube.com/watch?v=3U0cGZTFNFw",
+        "https://www.youtube.com/watch?v=7iHwzCpKV2Q",
+        "https://www.youtube.com/watch?v=E6jy5MWXm60",
+        "https://www.youtube.com/watch?v=EFE2H8cFYxM",
+        "https://www.youtube.com/watch?v=F5WgK5w28jw",
+        "https://www.youtube.com/watch?v=Gse2JmG6u9c"
+      ],
+      "evidence_url_count": 28,
+      "quality_status_counts": {
+        "review": 2
+      },
+      "promotion_confidence": "high",
+      "recommended_action": "review_then_promote_historical_reference"
+    },
+    {
+      "candidate_key": "occ_1a4d1fa95a29cc39|2025-07-20||",
+      "target_occurrence_id": "occ_1a4d1fa95a29cc39",
+      "target_event_name": "濱町音頭盆踊り大会",
+      "target_event_year": 2026,
+      "target_current_date": "",
+      "target_current_venue": "浜町公園",
+      "proposed_event_name": "音頭",
+      "proposed_venue": "",
+      "match_score": 4,
+      "source_rows": [
+        {
+          "observed_occurrence_id": "obsocc_eb20a7426e6bbe57",
+          "source_occurrence_id": "318c35a6730104b2",
+          "raw_event_name": "2000年音頭 中央区中洲町会盆踊り大会6 中央区立あやめ第一公園",
+          "raw_venue_name": "2000年音頭 中央区中洲町会盆踊り大会6 中央区立あやめ第一公園",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        }
+      ],
+      "proposed_date_start": "2025-07-20",
+      "proposed_date_end": "",
+      "proposed_date_values": [
+        "2025-07-20"
+      ],
+      "organizers": [],
+      "matched_tokens": [],
+      "source_occurrence_ids": [
+        "318c35a6730104b2"
+      ],
+      "source_occurrence_count": 1,
+      "song_titles_sample": [
+        "000年音頭",
+        "これがお江戸の盆ダンス",
+        "どだればちサンバ",
+        "ダンシング・ヒーロー",
+        "バハマママ",
+        "銀座カンカン娘"
+      ],
+      "song_title_count": 6,
+      "evidence_urls_sample": [
+        "https://www.youtube.com/watch?v=4fs9cfgTCyg",
+        "https://www.youtube.com/watch?v=6rTxt3aAT8U",
+        "https://www.youtube.com/watch?v=EIYy2RhsFaA",
+        "https://www.youtube.com/watch?v=L0UfWIPJ6Ec",
+        "https://www.youtube.com/watch?v=Yn3Im0_WAtw",
+        "https://www.youtube.com/watch?v=zUBhLd-q6oo"
+      ],
+      "evidence_url_count": 6,
+      "quality_status_counts": {
+        "review": 1
+      },
+      "promotion_confidence": "high",
+      "recommended_action": "review_then_promote_historical_reference"
+    },
+    {
+      "candidate_key": "occ_225f239652267ed9|2025-07-19|京橋プラザ|銀座一丁目東町会新富町会",
+      "target_occurrence_id": "occ_225f239652267ed9",
+      "target_event_name": "銀座一丁目東町会・新富町会 納涼盆踊り大会",
+      "target_event_year": 2026,
+      "target_current_date": "",
+      "target_current_venue": "",
+      "proposed_event_name": "(荻野目洋子) 京橋公園納涼盆踊り大会6 (銀座一丁目東町会 新富町会)中央区京橋プラザ",
+      "proposed_venue": "京橋プラザ",
+      "match_score": 3,
+      "source_rows": [
+        {
+          "observed_occurrence_id": "obsocc_246247466178490f",
+          "source_occurrence_id": "aa898289cda93720",
+          "raw_event_name": "【ダンシング・ヒーロー】(荻野目洋子) 京橋公園納涼盆踊り大会6 (銀座一丁目東町会 新富町会)中央区京橋プラザ",
+          "raw_venue_name": "【ダンシング・ヒーロー】(荻野目洋子) 京橋公園納涼盆踊り大会6 (銀座一丁目東町会 新富町会)中央区京橋プラザ",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_8c1d4e19a9051c75",
+          "source_occurrence_id": "e53d5d1a0bd76fa4",
+          "raw_event_name": "【ベイサイド・ブギ】(氷川きよし) 京橋公園納涼盆踊り大会5 (銀座一丁目東町会 新富町会)中央区京橋プラザ",
+          "raw_venue_name": "【ベイサイド・ブギ】(氷川きよし) 京橋公園納涼盆踊り大会5 (銀座一丁目東町会 新富町会)中央区京橋プラザ",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_dd29cdbee4cce92b",
+          "source_occurrence_id": "e28c01370f1edba8",
+          "raw_event_name": "【東京音頭】(原田直之) 京橋公園納涼盆踊り大会7 (銀座一丁目東町会 新富町会)中央区京橋プラザ",
+          "raw_venue_name": "【東京音頭】(原田直之) 京橋公園納涼盆踊り大会7 (銀座一丁目東町会 新富町会)中央区京橋プラザ",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        }
+      ],
+      "proposed_date_start": "2025-07-19",
+      "proposed_date_end": "",
+      "proposed_date_values": [
+        "2025-07-19"
+      ],
+      "organizers": [
+        "銀座一丁目東町会 新富町会"
+      ],
+      "matched_tokens": [
+        "新富町会",
+        "銀座一丁目東町会"
+      ],
+      "source_occurrence_ids": [
+        "aa898289cda93720",
+        "e28c01370f1edba8",
+        "e53d5d1a0bd76fa4"
+      ],
+      "source_occurrence_count": 3,
+      "song_titles_sample": [
+        "000年音頭",
+        "ダンシング・ヒーロー",
+        "バハマママ",
+        "ベイサイドブギ",
+        "令和音頭",
+        "終 東京音頭",
+        "銀座カンカン娘"
+      ],
+      "song_title_count": 7,
+      "evidence_urls_sample": [
+        "https://www.youtube.com/watch?v=-fKKAOBMPGE",
+        "https://www.youtube.com/watch?v=GotzxtYPlm8",
+        "https://www.youtube.com/watch?v=LwpPWzU1aQU",
+        "https://www.youtube.com/watch?v=a00n8T2v1OU",
+        "https://www.youtube.com/watch?v=d4-0d9Z2d4U",
+        "https://www.youtube.com/watch?v=mVajTkgO08A",
+        "https://www.youtube.com/watch?v=xuZN-YwFtq4"
+      ],
+      "evidence_url_count": 7,
+      "quality_status_counts": {
+        "review": 3
+      },
+      "promotion_confidence": "medium",
+      "recommended_action": "review_then_promote_historical_reference"
+    },
+    {
+      "candidate_key": "occ_3457fbcaa3574e2a|2025-04-13||",
+      "target_occurrence_id": "occ_3457fbcaa3574e2a",
+      "target_event_name": "しながわ運河まつり ステージプログラム",
+      "target_event_year": 2026,
+      "target_current_date": "",
+      "target_current_venue": "東品川海上公園",
+      "proposed_event_name": "わわわ しながわ社協音頭(レクチャーあり) 2025年しながわ運河まつり1 品川区社会福祉協議会 盆おどらー晴盆",
+      "proposed_venue": "",
+      "match_score": 2,
+      "source_rows": [
+        {
+          "observed_occurrence_id": "obsocc_5b5f445929c8e087",
+          "source_occurrence_id": "43004e2f0af396dd",
+          "raw_event_name": "【4K】わわわ しながわ社協音頭(レクチャーあり) 2025年しながわ運河まつり1 品川区社会福祉協議会 盆おどらー晴盆 東京都品川区",
+          "raw_venue_name": "大崎駅周辺",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        }
+      ],
+      "proposed_date_start": "2025-04-13",
+      "proposed_date_end": "",
+      "proposed_date_values": [
+        "2025-04-13"
+      ],
+      "organizers": [],
+      "matched_tokens": [
+        "しながわ運河まつり"
+      ],
+      "source_occurrence_ids": [
+        "43004e2f0af396dd"
+      ],
+      "source_occurrence_count": 1,
+      "song_titles_sample": [
+        "Azonto",
+        "Bling-Bang-Bang-Born",
+        "Uptown Funk",
+        "わわわしながわ社協音頭",
+        "エビカニクス音頭",
+        "ココロオドル",
+        "品川甚句",
+        "品川音頭",
+        "大井町音頭",
+        "旗の台音頭",
+        "炭坑節",
+        "終 エビカニクス",
+        "終 盆ギリ恋歌"
+      ],
+      "song_title_count": 13,
+      "evidence_urls_sample": [
+        "https://www.youtube.com/watch?v=3UGkjEGLzsQ",
+        "https://www.youtube.com/watch?v=5FYqMEKvK-c",
+        "https://www.youtube.com/watch?v=BKZPaVPOzk8",
+        "https://www.youtube.com/watch?v=IkWYDTdelpw",
+        "https://www.youtube.com/watch?v=L8Xhdl5Ks7s",
+        "https://www.youtube.com/watch?v=MI90RTMbAXM",
+        "https://www.youtube.com/watch?v=MOdYioLsWrM",
+        "https://www.youtube.com/watch?v=XOIx2vzwLSk",
+        "https://www.youtube.com/watch?v=XPSOdGR2gec",
+        "https://www.youtube.com/watch?v=bBSD9PVCzE8"
+      ],
+      "evidence_url_count": 13,
+      "quality_status_counts": {
+        "review": 1
+      },
+      "promotion_confidence": "low",
+      "recommended_action": "manual_review_low_confidence"
+    },
+    {
+      "candidate_key": "occ_0e26997fdac41f52|2025-08-09||",
+      "target_occurrence_id": "occ_0e26997fdac41f52",
+      "target_event_name": "西久保八幡神社 盆踊り",
+      "target_event_year": 2025,
+      "target_current_date": "2025-08-09",
+      "target_current_venue": "西久保八幡神社",
+      "proposed_event_name": "1+1の音頭 2025年西久保八幡神社例大祭盆踊り",
+      "proposed_venue": "",
+      "match_score": 1,
+      "source_rows": [
+        {
+          "observed_occurrence_id": "obsocc_b1c0b1b05dcfca40",
+          "source_occurrence_id": "62fcc575d733dac1",
+          "raw_event_name": "1+1の音頭 2025年西久保八幡神社例大祭盆踊り30 東京都港区",
+          "raw_venue_name": "1+1の音頭 2025年西久保八幡神社例大祭盆踊り30 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_9bd23cb47e3ffeb8",
+          "source_occurrence_id": "d5ce61ce46e577d4",
+          "raw_event_name": "【八木節】(二代目鈴木正夫) 2025年西久保八幡神社例大祭盆踊り33 東京都港区",
+          "raw_venue_name": "【八木節】(二代目鈴木正夫) 2025年西久保八幡神社例大祭盆踊り33 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_5d2a7c5b85837e71",
+          "source_occurrence_id": "00df191684206aec",
+          "raw_event_name": "【八木節】(鈴木正夫) 2025年西久保八幡神社例大祭盆踊り15 東京都港区",
+          "raw_venue_name": "【八木節】(鈴木正夫) 2025年西久保八幡神社例大祭盆踊り15 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_655d2cc26b7596c7",
+          "source_occurrence_id": "56ccf3ec8090e7b8",
+          "raw_event_name": "【大東京音頭】(金沢明子) 2025年西久保八幡神社例大祭盆踊り3 東京都港区",
+          "raw_venue_name": "【大東京音頭】(金沢明子) 2025年西久保八幡神社例大祭盆踊り3 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_d3bba5325fbbc3e3",
+          "source_occurrence_id": "d20f5ac27a2827dd",
+          "raw_event_name": "【花笠音頭】(金沢明子) 2025年西久保八幡神社例大祭盆踊り34 東京都港区",
+          "raw_venue_name": "【花笠音頭】(金沢明子) 2025年西久保八幡神社例大祭盆踊り34 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_93546d83aeab3906",
+          "source_occurrence_id": "bf230f7ea01a2c32",
+          "raw_event_name": "お富さん 2025年西久保八幡神社例大祭盆踊り11 東京都港区",
+          "raw_venue_name": "お富さん 2025年西久保八幡神社例大祭盆踊り11 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_fe4e83c5a5817f7f",
+          "source_occurrence_id": "0440f09ef110eb5d",
+          "raw_event_name": "さくら音頭(木津茂理・木津かおり) 2025年西久保八幡神社例大祭盆踊り29 東京都港区",
+          "raw_venue_name": "さくら音頭(木津茂理・木津かおり) 2025年西久保八幡神社例大祭盆踊り29 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_5acea4500f1e7f7a",
+          "source_occurrence_id": "fd2e85a28a5622f6",
+          "raw_event_name": "ひろしのさくら音頭 2025年西久保八幡神社例大祭盆踊り4 東京都港区",
+          "raw_venue_name": "ひろしのさくら音頭 2025年西久保八幡神社例大祭盆踊り4 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_b96221bec1f46793",
+          "source_occurrence_id": "bfe90f839ee8f2c9",
+          "raw_event_name": "まつの木小唄 2025年西久保八幡神社例大祭盆踊り27 東京都港区",
+          "raw_venue_name": "まつの木小唄 2025年西久保八幡神社例大祭盆踊り27 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_50b4edafe0b8b4ff",
+          "source_occurrence_id": "e8d1bea263a4971a",
+          "raw_event_name": "サザエさん 2025年西久保八幡神社例大祭盆踊り13 東京都港区",
+          "raw_venue_name": "サザエさん 2025年西久保八幡神社例大祭盆踊り13 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_527ac0a1d5c384fb",
+          "source_occurrence_id": "cba897013e6af0ef",
+          "raw_event_name": "ステテコシャンシャン 2025年西久保八幡神社例大祭盆踊り25 東京都港区",
+          "raw_venue_name": "ステテコシャンシャン 2025年西久保八幡神社例大祭盆踊り25 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_a8eb833abddf3b57",
+          "source_occurrence_id": "3f49fe656611a0d6",
+          "raw_event_name": "ダンシング・ヒーロー(荻野目洋子) 2025年西久保八幡神社例大祭盆踊り18 東京都港区",
+          "raw_venue_name": "ダンシング・ヒーロー(荻野目洋子) 2025年西久保八幡神社例大祭盆踊り18 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_3935de8afcaff098",
+          "source_occurrence_id": "bccbceea56782224",
+          "raw_event_name": "チャンチキおけさ 2025年西久保八幡神社例大祭盆踊り16 東京都港区",
+          "raw_venue_name": "チャンチキおけさ 2025年西久保八幡神社例大祭盆踊り16 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_9e0339785e9344ad",
+          "source_occurrence_id": "71a6dfd3003b2e57",
+          "raw_event_name": "ドラえもん音頭 2025年西久保八幡神社例大祭盆踊り10 東京都港区",
+          "raw_venue_name": "ドラえもん音頭 2025年西久保八幡神社例大祭盆踊り10 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_27c66e195f94457c",
+          "source_occurrence_id": "43e9be1c74f2ccde",
+          "raw_event_name": "ドンパン節 2025年西久保八幡神社例大祭盆踊り7 東京都港区",
+          "raw_venue_name": "ドンパン節 2025年西久保八幡神社例大祭盆踊り7 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_e739e1dc2105b069",
+          "source_occurrence_id": "c9569afd873af9c8",
+          "raw_event_name": "ニッポンワッショイ 2025年西久保八幡神社例大祭盆踊り26 東京都港区",
+          "raw_venue_name": "ニッポンワッショイ 2025年西久保八幡神社例大祭盆踊り26 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_9aa2dfbd2d67897d",
+          "source_occurrence_id": "5a53a382ed5c5d89",
+          "raw_event_name": "ハワイ音頭 2025年西久保八幡神社例大祭盆踊り5 東京都港区",
+          "raw_venue_name": "ハワイ音頭 2025年西久保八幡神社例大祭盆踊り5 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_493b5a888a83cb86",
+          "source_occurrence_id": "eb0bcdc681563150",
+          "raw_event_name": "バハマママ 2025年西久保八幡神社例大祭盆踊り31 東京都港区",
+          "raw_venue_name": "バハマママ 2025年西久保八幡神社例大祭盆踊り31 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_08e12d2a59d610a6",
+          "source_occurrence_id": "271d8ffa5bc64aa3",
+          "raw_event_name": "ヨッ!太鼓持ち 2025年西久保八幡神社例大祭盆踊り19 東京都港区",
+          "raw_venue_name": "ヨッ!太鼓持ち 2025年西久保八幡神社例大祭盆踊り19 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_b14926b679f89486",
+          "source_occurrence_id": "ebc8c1919e98f8a9",
+          "raw_event_name": "夜に駆ける 2025年西久保八幡神社例大祭盆踊り36 東京都港区",
+          "raw_venue_name": "夜に駆ける 2025年西久保八幡神社例大祭盆踊り36 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_0c098c8b76e80a26",
+          "source_occurrence_id": "a7ff29065d4ff307",
+          "raw_event_name": "大江戸東京音頭 2025年西久保八幡神社例大祭盆踊り35 東京都港区",
+          "raw_venue_name": "大江戸東京音頭 2025年西久保八幡神社例大祭盆踊り35 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_565127fa315cb25f",
+          "source_occurrence_id": "ce4dc0c3f89a3927",
+          "raw_event_name": "大角会(組太鼓)和太鼓演奏 2025年西久保八幡神社例大祭盆踊り37終 東京都港区",
+          "raw_venue_name": "大角会(組太鼓)和太鼓演奏 2025年西久保八幡神社例大祭盆踊り37終 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_82aeac8c562e8c0e",
+          "source_occurrence_id": "099e5cfda47f8809",
+          "raw_event_name": "好きになった人 2025年西久保八幡神社例大祭盆踊り24 東京都港区",
+          "raw_venue_name": "好きになった人 2025年西久保八幡神社例大祭盆踊り24 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_d655f9b251d205ce",
+          "source_occurrence_id": "9548df0f5325ab75",
+          "raw_event_name": "恋のブギウギナイト 2025年西久保八幡神社例大祭盆踊り14 東京都港区",
+          "raw_venue_name": "恋のブギウギナイト 2025年西久保八幡神社例大祭盆踊り14 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_8f6916fa8ccb3ce6",
+          "source_occurrence_id": "1a86fbf10a45ffa2",
+          "raw_event_name": "新・二十一世紀音頭 2025年西久保八幡神社例大祭盆踊り17 東京都港区",
+          "raw_venue_name": "新・二十一世紀音頭 2025年西久保八幡神社例大祭盆踊り17 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_893006bcf3ec4f2a",
+          "source_occurrence_id": "bc729e7a99c3d08b",
+          "raw_event_name": "日本の夏ごよみ 2025年西久保八幡神社例大祭盆踊り22 東京都港区",
+          "raw_venue_name": "日本の夏ごよみ 2025年西久保八幡神社例大祭盆踊り22 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_7d4b2a3e59f8abc4",
+          "source_occurrence_id": "c281f01d814fa7eb",
+          "raw_event_name": "日本よいとこ 2025年西久保八幡神社例大祭盆踊り28 東京都港区",
+          "raw_venue_name": "日本よいとこ 2025年西久保八幡神社例大祭盆踊り28 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_146410ab4e8a215f",
+          "source_occurrence_id": "2d0d8b1a2da1ee9a",
+          "raw_event_name": "東京ばやし 2025年西久保八幡神社例大祭盆踊り12 東京都港区",
+          "raw_venue_name": "東京ばやし 2025年西久保八幡神社例大祭盆踊り12 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_6b14b9dcec8c5c4b",
+          "source_occurrence_id": "58760b51519bbb3e",
+          "raw_event_name": "東京タワー音頭 2025年西久保八幡神社例大祭盆踊り6 東京都港区",
+          "raw_venue_name": "東京タワー音頭 2025年西久保八幡神社例大祭盆踊り6 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_dd12048adf9e50bf",
+          "source_occurrence_id": "cca2ea72513ada17",
+          "raw_event_name": "東京音頭 2025年西久保八幡神社例大祭盆踊り1 東京都港区",
+          "raw_venue_name": "東京音頭 2025年西久保八幡神社例大祭盆踊り1 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_1b3b315fa043aca4",
+          "source_occurrence_id": "ac55dada95c68424",
+          "raw_event_name": "火の国太鼓 2025年西久保八幡神社例大祭盆踊り2 東京都港区",
+          "raw_venue_name": "火の国太鼓 2025年西久保八幡神社例大祭盆踊り2 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_8b0ccf192749ace0",
+          "source_occurrence_id": "a38dc91c0ca7edf6",
+          "raw_event_name": "炭坑節 2025年西久保八幡神社例大祭盆踊り8 東京都港区",
+          "raw_venue_name": "炭坑節 2025年西久保八幡神社例大祭盆踊り8 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_5ae045b86d3b9ae0",
+          "source_occurrence_id": "4faca1552534b4ae",
+          "raw_event_name": "百年桜 2025年西久保八幡神社例大祭盆踊り23 東京都港区",
+          "raw_venue_name": "百年桜 2025年西久保八幡神社例大祭盆踊り23 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_d459bac665389642",
+          "source_occurrence_id": "3462d7df7b97c0ce",
+          "raw_event_name": "盆ギリ恋歌 2025年西久保八幡神社例大祭盆踊り32 東京都港区",
+          "raw_venue_name": "盆ギリ恋歌 2025年西久保八幡神社例大祭盆踊り32 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_c9ae72fbd1c435f6",
+          "source_occurrence_id": "9cc97855f17fc415",
+          "raw_event_name": "花笠音頭 2025年西久保八幡神社例大祭盆踊り9 東京都港区",
+          "raw_venue_name": "花笠音頭 2025年西久保八幡神社例大祭盆踊り9 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_9b019c3e6487a2ce",
+          "source_occurrence_id": "2238c05f8d88122d",
+          "raw_event_name": "銀座カンカン娘 2025年西久保八幡神社例大祭盆踊り20 東京都港区",
+          "raw_venue_name": "銀座カンカン娘 2025年西久保八幡神社例大祭盆踊り20 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_ef95a6378d7eaaed",
+          "source_occurrence_id": "064b7a1f0ea261c7",
+          "raw_event_name": "音頭「福よ来い」 2025年西久保八幡神社例大祭盆踊り21 東京都港区",
+          "raw_venue_name": "音頭「福よ来い」 2025年西久保八幡神社例大祭盆踊り21 東京都港区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        }
+      ],
+      "proposed_date_start": "2025-08-09",
+      "proposed_date_end": "",
+      "proposed_date_values": [
+        "2025-08-09"
+      ],
+      "organizers": [],
+      "matched_tokens": [
+        "西久保八幡神社"
+      ],
+      "source_occurrence_ids": [
+        "00df191684206aec",
+        "0440f09ef110eb5d",
+        "064b7a1f0ea261c7",
+        "099e5cfda47f8809",
+        "1a86fbf10a45ffa2",
+        "2238c05f8d88122d",
+        "271d8ffa5bc64aa3",
+        "2d0d8b1a2da1ee9a",
+        "3462d7df7b97c0ce",
+        "3f49fe656611a0d6",
+        "43e9be1c74f2ccde",
+        "4faca1552534b4ae",
+        "56ccf3ec8090e7b8",
+        "58760b51519bbb3e",
+        "5a53a382ed5c5d89",
+        "62fcc575d733dac1",
+        "71a6dfd3003b2e57",
+        "9548df0f5325ab75",
+        "9cc97855f17fc415",
+        "a38dc91c0ca7edf6",
+        "a7ff29065d4ff307",
+        "ac55dada95c68424",
+        "bc729e7a99c3d08b",
+        "bccbceea56782224",
+        "bf230f7ea01a2c32",
+        "bfe90f839ee8f2c9",
+        "c281f01d814fa7eb",
+        "c9569afd873af9c8",
+        "cba897013e6af0ef",
+        "cca2ea72513ada17",
+        "ce4dc0c3f89a3927",
+        "d20f5ac27a2827dd",
+        "d5ce61ce46e577d4",
+        "e8d1bea263a4971a",
+        "eb0bcdc681563150",
+        "ebc8c1919e98f8a9",
+        "fd2e85a28a5622f6"
+      ],
+      "source_occurrence_count": 37,
+      "song_titles_sample": [
+        "1+1の音頭",
+        "お富さん",
+        "さくら音頭",
+        "ひろしのさくら音頭",
+        "まつの木小唄",
+        "サザエさん",
+        "ステテコシャンシャン",
+        "ダンシング・ヒーロー",
+        "チャンチキおけさ",
+        "ドラえもん音頭",
+        "ドンパン節",
+        "ニッポンワッショイ",
+        "ハワイ音頭",
+        "バハマママ",
+        "ヨッ!太鼓持ち",
+        "八木節",
+        "夜に駆ける",
+        "大東京音頭",
+        "大江戸東京音頭",
+        "好きになった人"
+      ],
+      "song_title_count": 35,
+      "evidence_urls_sample": [
+        "https://www.youtube.com/watch?v=0kVOimHezUI",
+        "https://www.youtube.com/watch?v=11su-8dytLQ",
+        "https://www.youtube.com/watch?v=4zEw_Ev9XJI",
+        "https://www.youtube.com/watch?v=5CjvBMSYljE",
+        "https://www.youtube.com/watch?v=5TsAPQzVncc",
+        "https://www.youtube.com/watch?v=7nQtT8jKxgs",
+        "https://www.youtube.com/watch?v=9rioIT4RwmI",
+        "https://www.youtube.com/watch?v=ADX9hY4LvX8",
+        "https://www.youtube.com/watch?v=AIyJwR8D7xU",
+        "https://www.youtube.com/watch?v=AXTDFrUVJtI"
+      ],
+      "evidence_url_count": 35,
+      "quality_status_counts": {
+        "review": 37
+      },
+      "promotion_confidence": "low",
+      "recommended_action": "manual_review_low_confidence"
+    },
+    {
+      "candidate_key": "occ_e4c1f913880556e6|2025-06-28|隅田公園山谷堀広場|",
+      "target_occurrence_id": "occ_e4c1f913880556e6",
+      "target_event_name": "第3回 延七昇竜太鼓盆踊り大会",
+      "target_event_year": 2026,
+      "target_current_date": "",
+      "target_current_venue": "第二延山小学校",
+      "proposed_event_name": "(サザンオールスターズ) 2025年第3回奥浅草盆踊り第二部22 隅田公園山谷堀広場",
+      "proposed_venue": "隅田公園山谷堀広場",
+      "match_score": 1,
+      "source_rows": [
+        {
+          "observed_occurrence_id": "obsocc_30b42b4fc74a1335",
+          "source_occurrence_id": "86fa0c71d60c6b71",
+          "raw_event_name": "「LOVE AFFAIR~秘密のデート」(サザンオールスターズ) 2025年第3回奥浅草盆踊り第二部22 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "raw_venue_name": "「LOVE AFFAIR~秘密のデート」(サザンオールスターズ) 2025年第3回奥浅草盆踊り第二部22 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "quality_status": "discard_candidate",
+          "quality_flags_json": "[\"venue_too_long\", \"venue_looks_like_text_fragment\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_d5ac607e035ac19e",
+          "source_occurrence_id": "f741ec5fd3235033",
+          "raw_event_name": "【エロティカセブン】(SOUTHERN ALL STARS) 2025年第3回奥浅草盆踊り第三部30 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "raw_venue_name": "【エロティカセブン】(SOUTHERN ALL STARS) 2025年第3回奥浅草盆踊り第三部30 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "quality_status": "discard_candidate",
+          "quality_flags_json": "[\"venue_too_long\", \"venue_looks_like_text_fragment\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_2e6377a6d67fd364",
+          "source_occurrence_id": "9da809b41d5fce52",
+          "raw_event_name": "【大漁唄い込み(遠島甚句入り)】(金沢明子)(宮城県民謡) 2025年第3回奥浅草盆踊り第一部8 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "raw_venue_name": "【大漁唄い込み(遠島甚句入り)】(金沢明子)(宮城県民謡) 2025年第3回奥浅草盆踊り第一部8 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "quality_status": "discard_candidate",
+          "quality_flags_json": "[\"venue_too_long\", \"venue_looks_like_text_fragment\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_54e78dd5f1912c34",
+          "source_occurrence_id": "db523166d1aa1a31",
+          "raw_event_name": "【東京音頭】 2025年第3回奥浅草盆踊り第一部13 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "raw_venue_name": "【東京音頭】 2025年第3回奥浅草盆踊り第一部13 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "quality_status": "discard_candidate",
+          "quality_flags_json": "[\"venue_too_long\", \"venue_looks_like_text_fragment\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_f82629f0031e490a",
+          "source_occurrence_id": "ab50eeadb68051fe",
+          "raw_event_name": "【東京音頭】 2025年第3回奥浅草盆踊り第三部26 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "raw_venue_name": "【東京音頭】 2025年第3回奥浅草盆踊り第三部26 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "quality_status": "discard_candidate",
+          "quality_flags_json": "[\"venue_too_long\", \"venue_looks_like_text_fragment\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_e2bb06cdd257e25f",
+          "source_occurrence_id": "76c24334c394cfbf",
+          "raw_event_name": "【東京音頭】 2025年第3回奥浅草盆踊り第三部35終 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "raw_venue_name": "【東京音頭】 2025年第3回奥浅草盆踊り第三部35終 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "quality_status": "discard_candidate",
+          "quality_flags_json": "[\"venue_too_long\", \"venue_looks_like_text_fragment\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_4dd0785f05e3169e",
+          "source_occurrence_id": "700264af8600f883",
+          "raw_event_name": "【波乗りジョニー】(サザンオールスターズ) 2025年第3回奥浅草盆踊り第三部34 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "raw_venue_name": "【波乗りジョニー】(サザンオールスターズ) 2025年第3回奥浅草盆踊り第三部34 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "quality_status": "discard_candidate",
+          "quality_flags_json": "[\"venue_too_long\", \"venue_looks_like_text_fragment\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_aae49f24da0d57c4",
+          "source_occurrence_id": "ca79e7a18784f8b8",
+          "raw_event_name": "【炭坑節】 2025年第3回奥浅草盆踊り第一部2 隅田公園山谷堀広場 東京都台東区",
+          "raw_venue_name": "【炭坑節】 2025年第3回奥浅草盆踊り第一部2 隅田公園山谷堀広場 東京都台東区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_a868f1bd85c85a32",
+          "source_occurrence_id": "dadfd5a9924047eb",
+          "raw_event_name": "【炭坑節】 2025年第3回奥浅草盆踊り第三部31 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "raw_venue_name": "【炭坑節】 2025年第3回奥浅草盆踊り第三部31 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "quality_status": "discard_candidate",
+          "quality_flags_json": "[\"venue_too_long\", \"venue_looks_like_text_fragment\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_fff30a49e3491a72",
+          "source_occurrence_id": "4a97329c496f90f3",
+          "raw_event_name": "【燃えろ日本の夏祭り(橋幸夫)】 2025年第3回奥浅草盆踊り第一部12 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "raw_venue_name": "【燃えろ日本の夏祭り(橋幸夫)】 2025年第3回奥浅草盆踊り第一部12 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "quality_status": "discard_candidate",
+          "quality_flags_json": "[\"venue_too_long\", \"venue_looks_like_text_fragment\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_b068160505b06278",
+          "source_occurrence_id": "3d1a5023ce4ac6d1",
+          "raw_event_name": "【燃えろ日本の夏祭り】(橋幸夫) 2025年第3回奥浅草盆踊り第三部28 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "raw_venue_name": "【燃えろ日本の夏祭り】(橋幸夫) 2025年第3回奥浅草盆踊り第三部28 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "quality_status": "discard_candidate",
+          "quality_flags_json": "[\"venue_too_long\", \"venue_looks_like_text_fragment\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_5bc84fc051e3568c",
+          "source_occurrence_id": "57abe786591db555",
+          "raw_event_name": "【花笠音頭】(金沢明子)(山形県民謡) 2025年第3回奥浅草盆踊り第一部9 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "raw_venue_name": "【花笠音頭】(金沢明子)(山形県民謡) 2025年第3回奥浅草盆踊り第一部9 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "quality_status": "discard_candidate",
+          "quality_flags_json": "[\"venue_too_long\", \"venue_looks_like_text_fragment\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_c3275bc4931967a5",
+          "source_occurrence_id": "b86cc1888bc794c3",
+          "raw_event_name": "【速報】【東京音頭】 2025年第3回奥浅草盆踊り第一部1 隅田公園山谷堀広場 東京都台東区 【4K】",
+          "raw_venue_name": "【速報】【東京音頭】 2025年第3回奥浅草盆踊り第一部1 隅田公園山谷堀広場 東京都台東区 【4K】",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_3e3d5f9979e60854",
+          "source_occurrence_id": "87ed484082cbdaa9",
+          "raw_event_name": "おめでた音頭 2025年第3回奥浅草盆踊り第三部29 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "raw_venue_name": "おめでた音頭 2025年第3回奥浅草盆踊り第三部29 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "quality_status": "discard_candidate",
+          "quality_flags_json": "[\"venue_too_long\", \"venue_looks_like_text_fragment\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_746251880e079ab7",
+          "source_occurrence_id": "430811cc801f0c5f",
+          "raw_event_name": "おめでた音頭 2025年第3回奥浅草盆踊り第二部15 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "raw_venue_name": "おめでた音頭 2025年第3回奥浅草盆踊り第二部15 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "quality_status": "discard_candidate",
+          "quality_flags_json": "[\"venue_too_long\", \"venue_looks_like_text_fragment\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_4739296e88af881b",
+          "source_occurrence_id": "78fbcbfc1deefc17",
+          "raw_event_name": "ご祝儀音頭 2025年第3回奥浅草盆踊り第一部11 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "raw_venue_name": "ご祝儀音頭 2025年第3回奥浅草盆踊り第一部11 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "quality_status": "discard_candidate",
+          "quality_flags_json": "[\"venue_too_long\", \"venue_looks_like_text_fragment\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_70d0ac58e6d8350e",
+          "source_occurrence_id": "7ee44177f6d0325d",
+          "raw_event_name": "ご祝儀音頭 2025年第3回奥浅草盆踊り第三部27 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "raw_venue_name": "ご祝儀音頭 2025年第3回奥浅草盆踊り第三部27 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "quality_status": "discard_candidate",
+          "quality_flags_json": "[\"venue_too_long\", \"venue_looks_like_text_fragment\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_b4b966ea3a402f43",
+          "source_occurrence_id": "8733cedc9883e176",
+          "raw_event_name": "ご祝儀音頭 2025年第3回奥浅草盆踊り第二部16 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "raw_venue_name": "ご祝儀音頭 2025年第3回奥浅草盆踊り第二部16 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "quality_status": "discard_candidate",
+          "quality_flags_json": "[\"venue_too_long\", \"venue_looks_like_text_fragment\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_9c944650ce39002c",
+          "source_occurrence_id": "ca2dc0e23383e968",
+          "raw_event_name": "たいとう音頭 2025年第3回奥浅草盆踊り第一部5 隅田公園山谷堀広場 東京都台東区 【4K動画】",
+          "raw_venue_name": "たいとう音頭 2025年第3回奥浅草盆踊り第一部5 隅田公園山谷堀広場 東京都台東区 【4K動画】",
+          "quality_status": "discard_candidate",
+          "quality_flags_json": "[\"venue_too_long\", \"venue_looks_like_text_fragment\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_e8c83cd340060452",
+          "source_occurrence_id": "12fe61c45dd66193",
+          "raw_event_name": "たいとう音頭 2025年第3回奥浅草盆踊り第二部21 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "raw_venue_name": "たいとう音頭 2025年第3回奥浅草盆踊り第二部21 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "quality_status": "discard_candidate",
+          "quality_flags_json": "[\"venue_too_long\", \"venue_looks_like_text_fragment\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_7b650b170d0de7bc",
+          "source_occurrence_id": "929050a353808c48",
+          "raw_event_name": "ふるさと音頭 2025年第3回奥浅草盆踊り第一部7 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "raw_venue_name": "ふるさと音頭 2025年第3回奥浅草盆踊り第一部7 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "quality_status": "discard_candidate",
+          "quality_flags_json": "[\"venue_too_long\", \"venue_looks_like_text_fragment\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_93a9ac15cab35575",
+          "source_occurrence_id": "de50ec4520b45ea1",
+          "raw_event_name": "ふるさと音頭 2025年第3回奥浅草盆踊り第三部32 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "raw_venue_name": "ふるさと音頭 2025年第3回奥浅草盆踊り第三部32 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "quality_status": "discard_candidate",
+          "quality_flags_json": "[\"venue_too_long\", \"venue_looks_like_text_fragment\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_913611086ed2fac2",
+          "source_occurrence_id": "cb04cb1ba3cb2a17",
+          "raw_event_name": "ふるさと音頭 2025年第3回奥浅草盆踊り第二部14 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "raw_venue_name": "ふるさと音頭 2025年第3回奥浅草盆踊り第二部14 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "quality_status": "discard_candidate",
+          "quality_flags_json": "[\"venue_too_long\", \"venue_looks_like_text_fragment\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_9deb502d3a5c15e9",
+          "source_occurrence_id": "b3be92bed8974b4f",
+          "raw_event_name": "ハラハラ音頭 2025年第3回奥浅草盆踊り第一部6 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "raw_venue_name": "ハラハラ音頭 2025年第3回奥浅草盆踊り第一部6 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "quality_status": "discard_candidate",
+          "quality_flags_json": "[\"venue_too_long\", \"venue_looks_like_text_fragment\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_fa7ad6e3e9b5953d",
+          "source_occurrence_id": "316c61b89386788d",
+          "raw_event_name": "ハラハラ音頭 2025年第3回奥浅草盆踊り第三部33 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "raw_venue_name": "ハラハラ音頭 2025年第3回奥浅草盆踊り第三部33 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "quality_status": "discard_candidate",
+          "quality_flags_json": "[\"venue_too_long\", \"venue_looks_like_text_fragment\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_49d8004e28c7c8b2",
+          "source_occurrence_id": "9bd36d0b18507fed",
+          "raw_event_name": "ハラハラ音頭 2025年第3回奥浅草盆踊り第二部18 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "raw_venue_name": "ハラハラ音頭 2025年第3回奥浅草盆踊り第二部18 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "quality_status": "discard_candidate",
+          "quality_flags_json": "[\"venue_too_long\", \"venue_looks_like_text_fragment\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_8093dab4a955a886",
+          "source_occurrence_id": "01bf3dcac9a301f4",
+          "raw_event_name": "会津磐梯山(福島県民謡) 2025年第3回奥浅草盆踊り第一部10 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "raw_venue_name": "会津磐梯山(福島県民謡) 2025年第3回奥浅草盆踊り第一部10 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "quality_status": "discard_candidate",
+          "quality_flags_json": "[\"venue_too_long\", \"venue_looks_like_text_fragment\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_12db066af405b103",
+          "source_occurrence_id": "b99419e866f96699",
+          "raw_event_name": "新台東音頭 2025年第3回奥浅草盆踊り第一部4 隅田公園山谷堀広場 東京都台東区",
+          "raw_venue_name": "新台東音頭 2025年第3回奥浅草盆踊り第一部4 隅田公園山谷堀広場 東京都台東区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_6ae8df9c707655a4",
+          "source_occurrence_id": "fad6b2d442f37dd7",
+          "raw_event_name": "新台東音頭 2025年第3回奥浅草盆踊り第二部20 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "raw_venue_name": "新台東音頭 2025年第3回奥浅草盆踊り第二部20 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "quality_status": "discard_candidate",
+          "quality_flags_json": "[\"venue_too_long\", \"venue_looks_like_text_fragment\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_124c1038e6036c56",
+          "source_occurrence_id": "0fe2bb776e24260f",
+          "raw_event_name": "旧 台東音頭 2025年第3回奥浅草盆踊り第一部3 隅田公園山谷堀広場 東京都台東区 【4K】",
+          "raw_venue_name": "旧 台東音頭 2025年第3回奥浅草盆踊り第一部3 隅田公園山谷堀広場 東京都台東区 【4K】",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_4edd3e6d9acf282d",
+          "source_occurrence_id": "70787905ce1adeb3",
+          "raw_event_name": "旧 台東音頭 2025年第3回奥浅草盆踊り第二部19 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "raw_venue_name": "旧 台東音頭 2025年第3回奥浅草盆踊り第二部19 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "quality_status": "discard_candidate",
+          "quality_flags_json": "[\"venue_too_long\", \"venue_looks_like_text_fragment\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_d563f2771ebe1600",
+          "source_occurrence_id": "2da367db675d53be",
+          "raw_event_name": "東京音頭 2025年第3回奥浅草盆踊り第二部23 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "raw_venue_name": "東京音頭 2025年第3回奥浅草盆踊り第二部23 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "quality_status": "discard_candidate",
+          "quality_flags_json": "[\"venue_too_long\", \"venue_looks_like_text_fragment\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_48ef7fd20edd8814",
+          "source_occurrence_id": "95d1690f3fe38cf8",
+          "raw_event_name": "波乗りジョニー 2025年第3回奥浅草盆踊り第二部25 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "raw_venue_name": "波乗りジョニー 2025年第3回奥浅草盆踊り第二部25 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "quality_status": "discard_candidate",
+          "quality_flags_json": "[\"venue_too_long\", \"venue_looks_like_text_fragment\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_23cb9528f0724070",
+          "source_occurrence_id": "e936a9863a06a1da",
+          "raw_event_name": "炭坑節 2025年第3回奥浅草盆踊り第二部24 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "raw_venue_name": "炭坑節 2025年第3回奥浅草盆踊り第二部24 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "quality_status": "discard_candidate",
+          "quality_flags_json": "[\"venue_too_long\", \"venue_looks_like_text_fragment\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_6a10f8e9cdf84e4e",
+          "source_occurrence_id": "f42a3aa8e7ef1335",
+          "raw_event_name": "燃えろ日本の夏祭り 2025年第3回奥浅草盆踊り第二部17 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "raw_venue_name": "燃えろ日本の夏祭り 2025年第3回奥浅草盆踊り第二部17 隅田公園山谷堀広場 東京都台東区 4K動画",
+          "quality_status": "discard_candidate",
+          "quality_flags_json": "[\"venue_too_long\", \"venue_looks_like_text_fragment\", \"tokyo_23_hint\"]"
+        }
+      ],
+      "proposed_date_start": "2025-06-28",
+      "proposed_date_end": "",
+      "proposed_date_values": [
+        "2025-06-28"
+      ],
+      "organizers": [],
+      "matched_tokens": [
+        "第3回"
+      ],
+      "source_occurrence_ids": [
+        "01bf3dcac9a301f4",
+        "0fe2bb776e24260f",
+        "12fe61c45dd66193",
+        "2da367db675d53be",
+        "316c61b89386788d",
+        "3d1a5023ce4ac6d1",
+        "430811cc801f0c5f",
+        "4a97329c496f90f3",
+        "57abe786591db555",
+        "700264af8600f883",
+        "70787905ce1adeb3",
+        "76c24334c394cfbf",
+        "78fbcbfc1deefc17",
+        "7ee44177f6d0325d",
+        "86fa0c71d60c6b71",
+        "8733cedc9883e176",
+        "87ed484082cbdaa9",
+        "929050a353808c48",
+        "95d1690f3fe38cf8",
+        "9bd36d0b18507fed",
+        "9da809b41d5fce52",
+        "ab50eeadb68051fe",
+        "b3be92bed8974b4f",
+        "b86cc1888bc794c3",
+        "b99419e866f96699",
+        "ca2dc0e23383e968",
+        "ca79e7a18784f8b8",
+        "cb04cb1ba3cb2a17",
+        "dadfd5a9924047eb",
+        "db523166d1aa1a31",
+        "de50ec4520b45ea1",
+        "e936a9863a06a1da",
+        "f42a3aa8e7ef1335",
+        "f741ec5fd3235033",
+        "fad6b2d442f37dd7"
+      ],
+      "source_occurrence_count": 35,
+      "song_titles_sample": [
+        "LOVE AFFAIR",
+        "ROCK AND ROLL HERO",
+        "いろは音頭",
+        "おめでた音頭",
+        "ご祝儀音頭",
+        "さくら音頭",
+        "たいとう音頭",
+        "ふるさと音頭",
+        "りんご節",
+        "エロティカセブン",
+        "ソーラン節",
+        "ハラハラ音頭",
+        "下町甚句",
+        "会津磐梯山",
+        "外山節",
+        "大漁唄い込み",
+        "平成音頭",
+        "御祝儀音頭",
+        "押せ押せ音頭",
+        "新台東音頭"
+      ],
+      "song_title_count": 30,
+      "evidence_urls_sample": [
+        "https://www.youtube.com/watch?v=-EgKFGsu3As",
+        "https://www.youtube.com/watch?v=0Mo_wHA6L2o",
+        "https://www.youtube.com/watch?v=1GNTdPt-zKk",
+        "https://www.youtube.com/watch?v=4PDWLgTn3_I",
+        "https://www.youtube.com/watch?v=5K8ZUnBNX5Y",
+        "https://www.youtube.com/watch?v=7DGRAkwQqGc",
+        "https://www.youtube.com/watch?v=8ELrW904yfY",
+        "https://www.youtube.com/watch?v=A9u0UrbG1e8",
+        "https://www.youtube.com/watch?v=GMEGNcTOMPk",
+        "https://www.youtube.com/watch?v=GUvULOcUEA8"
+      ],
+      "evidence_url_count": 38,
+      "quality_status_counts": {
+        "discard_candidate": 31,
+        "review": 4
+      },
+      "promotion_confidence": "low",
+      "recommended_action": "manual_review_low_confidence"
+    },
+    {
+      "candidate_key": "occ_c2b890eb32b32469|2025-08-20||",
+      "target_occurrence_id": "occ_c2b890eb32b32469",
+      "target_event_name": "東本願寺盆踊り",
+      "target_event_year": 2025,
+      "target_current_date": "2025-08-20",
+      "target_current_venue": "東本願寺（浅草）",
+      "proposed_event_name": "(嵐) 2025年浅草東本願寺盆踊り1日目",
+      "proposed_venue": "",
+      "match_score": 1,
+      "source_rows": [
+        {
+          "observed_occurrence_id": "obsocc_9d63d75fc695caa8",
+          "source_occurrence_id": "e52ab89bcba0fadf",
+          "raw_event_name": "「One Love」(嵐) 2025年浅草東本願寺盆踊り1日目24 東京都台東区",
+          "raw_venue_name": "「One Love」(嵐) 2025年浅草東本願寺盆踊り1日目24 東京都台東区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_0123f85fbd87e6b7",
+          "source_occurrence_id": "262a229800297f92",
+          "raw_event_name": "「エブリブレスユーテイク」(ポリス) 2025年浅草東本願寺盆踊り1日目23 東京都台東区 (Every Breath You Take・The Police)",
+          "raw_venue_name": "「エブリブレスユーテイク」(ポリス) 2025年浅草東本願寺盆踊り1日目23 東京都台東区 (Every Breath You Take・The Police)",
+          "quality_status": "discard_candidate",
+          "quality_flags_json": "[\"venue_too_long\", \"venue_looks_like_text_fragment\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_043cc32ddc1b775c",
+          "source_occurrence_id": "958643ea47bdf512",
+          "raw_event_name": "「チャンチキおけさ」 2025年浅草東本願寺盆踊り1日目9 東京都台東区",
+          "raw_venue_name": "「チャンチキおけさ」 2025年浅草東本願寺盆踊り1日目9 東京都台東区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_5a8e25d4dd18bc42",
+          "source_occurrence_id": "22f534f14c322c0d",
+          "raw_event_name": "【ガット・トゥ・ビー・リアル】(シェリル・リン) 2025年浅草東本願寺盆踊り1日目28終 東京都台東区 (Got to Be Real・Cheryl Lynn)",
+          "raw_venue_name": "【ガット・トゥ・ビー・リアル】(シェリル・リン) 2025年浅草東本願寺盆踊り1日目28終 東京都台東区 (Got to Be Real・Cheryl Lynn)",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_08709946eb84a719",
+          "source_occurrence_id": "d27680367f7c39a4",
+          "raw_event_name": "【テレフォン・オペレーター】(ピート・シェリー) 2025年浅草東本願寺盆踊り1日目19 東京都台東区 (Telephone Operator・Pete Shelley)",
+          "raw_venue_name": "【テレフォン・オペレーター】(ピート・シェリー) 2025年浅草東本願寺盆踊り1日目19 東京都台東区 (Telephone Operator・Pete Shelley)",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_0cbe7ce12106fb57",
+          "source_occurrence_id": "04c6dbc188e99a1f",
+          "raw_event_name": "【パワー・オブ・ラブ】(ヒューイ・ルイス&ザ・ニュース) 2025年浅草東本願寺盆踊り1日目17 東京都台東区 (The Power Of Love・Huey Lewis&The News)",
+          "raw_venue_name": "【パワー・オブ・ラブ】(ヒューイ・ルイス&ザ・ニュース) 2025年浅草東本願寺盆踊り1日目17 東京都台東区 (The Power Of Love・Huey Lewis&The News)",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_8fc65411a9cba849",
+          "source_occurrence_id": "c384dd5fe42be490",
+          "raw_event_name": "【ホールド・ミー・ナウ】(トンプソンズ・ツインズ) 2025年浅草東本願寺盆踊り1日目18 東京都台東区 (Hold me now・Thompson Twins)",
+          "raw_venue_name": "【ホールド・ミー・ナウ】(トンプソンズ・ツインズ) 2025年浅草東本願寺盆踊り1日目18 東京都台東区 (Hold me now・Thompson Twins)",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_adb2a20ae6ec031e",
+          "source_occurrence_id": "bc51801bcfdf4e6d",
+          "raw_event_name": "【大盛り上がり!!!】DJタイム(モグモグタイム) 2025年浅草東本願寺盆踊り1日目15 東京都台東区",
+          "raw_venue_name": "【大盛り上がり!!!】DJタイム(モグモグタイム) 2025年浅草東本願寺盆踊り1日目15 東京都台東区",
+          "quality_status": "discard_candidate",
+          "quality_flags_json": "[\"venue_too_long\", \"venue_looks_like_text_fragment\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_16edebc767f91620",
+          "source_occurrence_id": "19216598d0c22f56",
+          "raw_event_name": "ふるさと音頭 2025年浅草東本願寺盆踊り1日目8 東京都台東区",
+          "raw_venue_name": "ふるさと音頭 2025年浅草東本願寺盆踊り1日目8 東京都台東区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_0ca6387de68cc24a",
+          "source_occurrence_id": "6d31a955522c620a",
+          "raw_event_name": "ガールズ・ジャスト・ワナ・ハブ・ファン(シンディ・ローパー) 2025年浅草東本願寺盆踊り1日目16 東京都台東区 (Girls Just Want to Have Fun・Cyndi Lauper)",
+          "raw_venue_name": "ガールズ・ジャスト・ワナ・ハブ・ファン(シンディ・ローパー) 2025年浅草東本願寺盆踊り1日目16 東京都台東区 (Girls Just Want to Have Fun・Cyndi Lauper)",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_b3c6a6ba609d2ccc",
+          "source_occurrence_id": "95604debec7c4eb0",
+          "raw_event_name": "レッツ・グルーヴ(アース・ウィンド&ファイヤー) 2025年浅草東本願寺盆踊り1日目25 東京都台東区 (Let's Groove・Earth,Wind&Fire)",
+          "raw_venue_name": "レッツ・グルーヴ(アース・ウィンド&ファイヤー) 2025年浅草東本願寺盆踊り1日目25 東京都台東区 (Let's Groove・Earth,Wind&Fire)",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_e5689d3187c29020",
+          "source_occurrence_id": "d5a14c460da3befa",
+          "raw_event_name": "七福神音頭 2025年浅草東本願寺盆踊り1日目12 東京都台東区",
+          "raw_venue_name": "七福神音頭 2025年浅草東本願寺盆踊り1日目12 東京都台東区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_4e55837f266b33e6",
+          "source_occurrence_id": "812c6c7cbf46da84",
+          "raw_event_name": "北海盆唄 2025年浅草東本願寺盆踊り1日目7 東京都台東区",
+          "raw_venue_name": "北海盆唄 2025年浅草東本願寺盆踊り1日目7 東京都台東区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_3b88ede17ca331dd",
+          "source_occurrence_id": "f1982a6d0811b663",
+          "raw_event_name": "東京本願寺音頭 2025年浅草東本願寺盆踊り1日目13 東京都台東区",
+          "raw_venue_name": "東京本願寺音頭 2025年浅草東本願寺盆踊り1日目13 東京都台東区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_9d008e98551aa340",
+          "source_occurrence_id": "a7998c3ff4865c0e",
+          "raw_event_name": "東京本願寺音頭 2025年浅草東本願寺盆踊り1日目26 東京都台東区",
+          "raw_venue_name": "東京本願寺音頭 2025年浅草東本願寺盆踊り1日目26 東京都台東区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_30b363a3dd847f84",
+          "source_occurrence_id": "5835697f8887ef50",
+          "raw_event_name": "東京本願寺音頭 2025年浅草東本願寺盆踊り1日目6 東京都台東区",
+          "raw_venue_name": "東京本願寺音頭 2025年浅草東本願寺盆踊り1日目6 東京都台東区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_be0b7505f703e962",
+          "source_occurrence_id": "4a910df2640c0666",
+          "raw_event_name": "東京音頭 2025年浅草東本願寺盆踊り1日目1 東京都台東区",
+          "raw_venue_name": "東京音頭 2025年浅草東本願寺盆踊り1日目1 東京都台東区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_3d685aa41f2b8feb",
+          "source_occurrence_id": "d059b55baf03e333",
+          "raw_event_name": "東京音頭 2025年浅草東本願寺盆踊り1日目14 東京都台東区",
+          "raw_venue_name": "東京音頭 2025年浅草東本願寺盆踊り1日目14 東京都台東区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_f05649c368eeb944",
+          "source_occurrence_id": "c34a88fed970794a",
+          "raw_event_name": "東京音頭 2025年浅草東本願寺盆踊り1日目27 東京都台東区",
+          "raw_venue_name": "東京音頭 2025年浅草東本願寺盆踊り1日目27 東京都台東区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_9438677a7cef1b99",
+          "source_occurrence_id": "7d2b3c22019f38c7",
+          "raw_event_name": "炭坑節 2025年浅草東本願寺盆踊り1日目2 東京都台東区",
+          "raw_venue_name": "炭坑節 2025年浅草東本願寺盆踊り1日目2 東京都台東区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_95f2f4cb03197f81",
+          "source_occurrence_id": "be742ab80e93e365",
+          "raw_event_name": "炭坑節 2025年浅草東本願寺盆踊り1日目20 東京都台東区",
+          "raw_venue_name": "炭坑節 2025年浅草東本願寺盆踊り1日目20 東京都台東区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_5efeed7e376d70c7",
+          "source_occurrence_id": "4e7fac822ec1b484",
+          "raw_event_name": "燃えろ日本の夏祭り 2025年浅草東本願寺盆踊り1日目11 東京都台東区",
+          "raw_venue_name": "燃えろ日本の夏祭り 2025年浅草東本願寺盆踊り1日目11 東京都台東区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_f1432eb01052bd29",
+          "source_occurrence_id": "e5754225b2fe6a01",
+          "raw_event_name": "蓮如音頭 2025年浅草東本願寺盆踊り1日目3 東京都台東区",
+          "raw_venue_name": "蓮如音頭 2025年浅草東本願寺盆踊り1日目3 東京都台東区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_67e4836041fbad73",
+          "source_occurrence_id": "bc35b5dda2de9181",
+          "raw_event_name": "親鸞おどり 2025年浅草東本願寺盆踊り1日目21 東京都台東区",
+          "raw_venue_name": "親鸞おどり 2025年浅草東本願寺盆踊り1日目21 東京都台東区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_fd106496793b1522",
+          "source_occurrence_id": "ccbda128dbf9bbf0",
+          "raw_event_name": "親鸞おどり 2025年浅草東本願寺盆踊り1日目5 東京都台東区",
+          "raw_venue_name": "親鸞おどり 2025年浅草東本願寺盆踊り1日目5 東京都台東区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_004a604deddac5aa",
+          "source_occurrence_id": "9e229a0fa58c5307",
+          "raw_event_name": "親鸞音頭 2025年浅草東本願寺盆踊り1日目22 東京都台東区",
+          "raw_venue_name": "親鸞音頭 2025年浅草東本願寺盆踊り1日目22 東京都台東区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_896095374b4511b8",
+          "source_occurrence_id": "f9f4a59712867be1",
+          "raw_event_name": "親鸞音頭 2025年浅草東本願寺盆踊り1日目4 東京都台東区",
+          "raw_venue_name": "親鸞音頭 2025年浅草東本願寺盆踊り1日目4 東京都台東区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_5965417a24026c75",
+          "source_occurrence_id": "37f22b399b8fda0b",
+          "raw_event_name": "音頭「あなたの出番」 2025年浅草東本願寺盆踊り1日目10 東京都台東区",
+          "raw_venue_name": "音頭「あなたの出番」 2025年浅草東本願寺盆踊り1日目10 東京都台東区",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        }
+      ],
+      "proposed_date_start": "2025-08-20",
+      "proposed_date_end": "",
+      "proposed_date_values": [
+        "2025-08-20"
+      ],
+      "organizers": [],
+      "matched_tokens": [
+        "東本願寺盆踊り"
+      ],
+      "source_occurrence_ids": [
+        "04c6dbc188e99a1f",
+        "19216598d0c22f56",
+        "22f534f14c322c0d",
+        "262a229800297f92",
+        "37f22b399b8fda0b",
+        "4a910df2640c0666",
+        "4e7fac822ec1b484",
+        "5835697f8887ef50",
+        "6d31a955522c620a",
+        "7d2b3c22019f38c7",
+        "812c6c7cbf46da84",
+        "95604debec7c4eb0",
+        "958643ea47bdf512",
+        "9e229a0fa58c5307",
+        "a7998c3ff4865c0e",
+        "bc35b5dda2de9181",
+        "bc51801bcfdf4e6d",
+        "be742ab80e93e365",
+        "c34a88fed970794a",
+        "c384dd5fe42be490",
+        "ccbda128dbf9bbf0",
+        "d059b55baf03e333",
+        "d27680367f7c39a4",
+        "d5a14c460da3befa",
+        "e52ab89bcba0fadf",
+        "e5754225b2fe6a01",
+        "f1982a6d0811b663",
+        "f9f4a59712867be1"
+      ],
+      "source_occurrence_count": 28,
+      "song_titles_sample": [
+        "DJタイム",
+        "ONE LOVE",
+        "あなたの出番",
+        "ふるさと音頭",
+        "エブリブレスユーテイク",
+        "ガールズ・ジャスト・ワナ・ハブ・ファン",
+        "チャンチキおけさ",
+        "テレフォン・オペレーター",
+        "パワー・オブ・ラブ",
+        "ホールド・ミー・ナウ",
+        "レッツ・グルーヴ",
+        "七福神音頭",
+        "北海盆唄",
+        "東京本願寺音頭",
+        "東京音頭",
+        "炭坑節",
+        "燃えろ日本の夏祭り",
+        "終 ガット・トゥ・ビー・リアル",
+        "蓮如音頭",
+        "親鸞おどり"
+      ],
+      "song_title_count": 21,
+      "evidence_urls_sample": [
+        "https://www.youtube.com/watch?v=-zwYip56Xfk",
+        "https://www.youtube.com/watch?v=0ImKUNVYWLo",
+        "https://www.youtube.com/watch?v=70zU9lUhvXM",
+        "https://www.youtube.com/watch?v=7I91YdUNCT0",
+        "https://www.youtube.com/watch?v=B4ovTOF8Jtk",
+        "https://www.youtube.com/watch?v=HQdw5q0smow",
+        "https://www.youtube.com/watch?v=ReyecfWdqFI",
+        "https://www.youtube.com/watch?v=SyJ8vBe8iv8",
+        "https://www.youtube.com/watch?v=Ui0DpqKwTRc",
+        "https://www.youtube.com/watch?v=VzetRN5EtW0"
+      ],
+      "evidence_url_count": 21,
+      "quality_status_counts": {
+        "review": 26,
+        "discard_candidate": 2
+      },
+      "promotion_confidence": "low",
+      "recommended_action": "manual_review_low_confidence"
+    },
+    {
+      "candidate_key": "occ_1a303dadd13493de|2025-06-15||",
+      "target_occurrence_id": "occ_1a303dadd13493de",
+      "target_event_name": "三角広場まつり「居酒屋盆踊り」",
+      "target_event_year": 2026,
+      "target_current_date": "2026-06-24",
+      "target_current_venue": "新宿住友ビル三角広場",
+      "proposed_event_name": "CHA-LA HEAD-CHA-LA(DRAGON BALL) 2025年新宿住友ビル三角広場盆踊り3 「居酒屋盆踊り」",
+      "proposed_venue": "",
+      "match_score": 1,
+      "source_rows": [
+        {
+          "observed_occurrence_id": "obsocc_5518228a19a007b0",
+          "source_occurrence_id": "6d8e7995f1f1bea8",
+          "raw_event_name": "CHA-LA HEAD-CHA-LA(DRAGON BALL) 2025年新宿住友ビル三角広場盆踊り3 「居酒屋盆踊り」 東京都新宿区 住友不動産",
+          "raw_venue_name": "CHA-LA HEAD-CHA-LA(DRAGON BALL) 2025年新宿住友ビル三角広場盆踊り3 「居酒屋盆踊り」 東京都新宿区 住友不動産",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_ce0f695f59daf672",
+          "source_occurrence_id": "45275e21141407a0",
+          "raw_event_name": "Y.M.C.A. 2025年新宿住友ビル三角広場盆踊り6 「居酒屋盆踊り」 東京都新宿区 住友不動産",
+          "raw_venue_name": "Y.M.C.A. 2025年新宿住友ビル三角広場盆踊り6 「居酒屋盆踊り」 東京都新宿区 住友不動産",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_cd3bb0ed7ec917ea",
+          "source_occurrence_id": "20218f50334d77a4",
+          "raw_event_name": "【EZ DO DANCE】(TRF) 2025年新宿住友ビル三角広場盆踊り8 「居酒屋盆踊り」 東京都新宿区 住友不動産",
+          "raw_venue_name": "【EZ DO DANCE】(TRF) 2025年新宿住友ビル三角広場盆踊り8 「居酒屋盆踊り」 東京都新宿区 住友不動産",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_a03930af37863122",
+          "source_occurrence_id": "4cd802d373dd9e50",
+          "raw_event_name": "【LOVEマシーン】(モーニング娘。) 2025年新宿住友ビル三角広場盆踊り13 「居酒屋盆踊り」 東京都新宿区 住友不動産",
+          "raw_venue_name": "【LOVEマシーン】(モーニング娘。) 2025年新宿住友ビル三角広場盆踊り13 「居酒屋盆踊り」 東京都新宿区 住友不動産",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_954cc3e5b963552e",
+          "source_occurrence_id": "bf036506811e84c0",
+          "raw_event_name": "【マツケンサンバII】(松平健) 2025年新宿住友ビル三角広場盆踊り7 「居酒屋盆踊り」 東京都新宿区 住友不動産",
+          "raw_venue_name": "【マツケンサンバII】(松平健) 2025年新宿住友ビル三角広場盆踊り7 「居酒屋盆踊り」 東京都新宿区 住友不動産",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_2320bfb2039c6ab1",
+          "source_occurrence_id": "588fe18389fa4465",
+          "raw_event_name": "【勝手にシンドバッド】(サザンオールスターズ) 2025年新宿住友ビル三角広場盆踊り14 「居酒屋盆踊り」 東京都新宿区 住友不動産",
+          "raw_venue_name": "【勝手にシンドバッド】(サザンオールスターズ) 2025年新宿住友ビル三角広場盆踊り14 「居酒屋盆踊り」 東京都新宿区 住友不動産",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_071a8123a8ae16e4",
+          "source_occurrence_id": "d7f02e0f075cb748",
+          "raw_event_name": "【唱】(Ado) 2025年新宿住友ビル三角広場盆踊り4 「居酒屋盆踊り」 東京都新宿区 住友不動産",
+          "raw_venue_name": "【唱】(Ado) 2025年新宿住友ビル三角広場盆踊り4 「居酒屋盆踊り」 東京都新宿区 住友不動産",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_ef49b6026b336dbc",
+          "source_occurrence_id": "ff8e392a4f61f46a",
+          "raw_event_name": "【盆ギリ恋歌】(SOUTHERN ALL STARS) 2025年新宿住友ビル三角広場盆踊り12 「居酒屋盆踊り」 東京都新宿区 住友不動産",
+          "raw_venue_name": "【盆ギリ恋歌】(SOUTHERN ALL STARS) 2025年新宿住友ビル三角広場盆踊り12 「居酒屋盆踊り」 東京都新宿区 住友不動産",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_7ceabcab85bf7231",
+          "source_occurrence_id": "3e4bed61a2929e15",
+          "raw_event_name": "ジャンボリミッキー 2025年新宿住友ビル三角広場盆踊り11 「居酒屋盆踊り」 東京都新宿区 住友不動産",
+          "raw_venue_name": "ジャンボリミッキー 2025年新宿住友ビル三角広場盆踊り11 「居酒屋盆踊り」 東京都新宿区 住友不動産",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_21c819c15dc36956",
+          "source_occurrence_id": "b77df8ee23c79294",
+          "raw_event_name": "ダンシング・ヒーロー 2025年新宿住友ビル三角広場盆踊り2 「居酒屋盆踊り」 東京都新宿区 住友不動産",
+          "raw_venue_name": "ダンシング・ヒーロー 2025年新宿住友ビル三角広場盆踊り2 「居酒屋盆踊り」 東京都新宿区 住友不動産",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_34ff43575813bfe0",
+          "source_occurrence_id": "2358c2091dc2464e",
+          "raw_event_name": "大東京音頭 2025年新宿住友ビル三角広場盆踊り10 「居酒屋盆踊り」 東京都新宿区 住友不動産",
+          "raw_venue_name": "大東京音頭 2025年新宿住友ビル三角広場盆踊り10 「居酒屋盆踊り」 東京都新宿区 住友不動産",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_f4a572246d33649a",
+          "source_occurrence_id": "3c3247d582eccc44",
+          "raw_event_name": "本編より盛り上がった?番外編(アニソンDJ「BANBANBAN鮫島」) 2025年新宿住友ビル三角広場盆踊り16終 「居酒屋盆踊り」 東京都新宿区 住友不動産",
+          "raw_venue_name": "本編より盛り上がった?番外編(アニソンDJ「BANBANBAN鮫島」) 2025年新宿住友ビル三角広場盆踊り16終 「居酒屋盆踊り」 東京都新宿区 住友不動産",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_0a067d36d48d19f1",
+          "source_occurrence_id": "aefaa69a1bdf5d89",
+          "raw_event_name": "東京音頭 2025年新宿住友ビル三角広場盆踊り1 「居酒屋盆踊り」 東京都新宿区 住友不動産",
+          "raw_venue_name": "東京音頭 2025年新宿住友ビル三角広場盆踊り1 「居酒屋盆踊り」 東京都新宿区 住友不動産",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_a452af86a153e2f7",
+          "source_occurrence_id": "27381a2159e7163e",
+          "raw_event_name": "炭坑節 2025年新宿住友ビル三角広場盆踊り5 「居酒屋盆踊り」 東京都新宿区 住友不動産",
+          "raw_venue_name": "炭坑節 2025年新宿住友ビル三角広場盆踊り5 「居酒屋盆踊り」 東京都新宿区 住友不動産",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_758834fec278aaa5",
+          "source_occurrence_id": "c43dcaa078c30901",
+          "raw_event_name": "阿波おどり和楽連 2025年新宿住友ビル三角広場盆踊り15 「居酒屋盆踊り」 東京都新宿区 住友不動産",
+          "raw_venue_name": "阿波おどり和楽連 2025年新宿住友ビル三角広場盆踊り15 「居酒屋盆踊り」 東京都新宿区 住友不動産",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_ebed2bb531c8c14c",
+          "source_occurrence_id": "3bf78c0e35fffe95",
+          "raw_event_name": "阿波おどり和楽連 2025年新宿住友ビル三角広場盆踊り9 「居酒屋盆踊り」 東京都新宿区 住友不動産",
+          "raw_venue_name": "阿波おどり和楽連 2025年新宿住友ビル三角広場盆踊り9 「居酒屋盆踊り」 東京都新宿区 住友不動産",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        }
+      ],
+      "proposed_date_start": "2025-06-15",
+      "proposed_date_end": "",
+      "proposed_date_values": [
+        "2025-06-15"
+      ],
+      "organizers": [],
+      "matched_tokens": [
+        "居酒屋盆踊り"
+      ],
+      "source_occurrence_ids": [
+        "20218f50334d77a4",
+        "2358c2091dc2464e",
+        "27381a2159e7163e",
+        "3bf78c0e35fffe95",
+        "3c3247d582eccc44",
+        "3e4bed61a2929e15",
+        "45275e21141407a0",
+        "4cd802d373dd9e50",
+        "588fe18389fa4465",
+        "6d8e7995f1f1bea8",
+        "aefaa69a1bdf5d89",
+        "b77df8ee23c79294",
+        "bf036506811e84c0",
+        "c43dcaa078c30901",
+        "d7f02e0f075cb748",
+        "ff8e392a4f61f46a"
+      ],
+      "source_occurrence_count": 16,
+      "song_titles_sample": [
+        "CHA-LA HEAD-CHA-LA",
+        "EZ DO DANCE",
+        "LOVEマシーン",
+        "Y.M.C.A.",
+        "ジャンボリミッキー",
+        "ダンシングヒーロー",
+        "マツケンサンバII",
+        "勝手にシンドバッド",
+        "唱",
+        "大東京音頭",
+        "東京音頭",
+        "炭坑節",
+        "盆ギリ恋歌",
+        "終 番外編",
+        "阿波踊り「和楽連」",
+        "阿波踊り「和樂連」"
+      ],
+      "song_title_count": 16,
+      "evidence_urls_sample": [
+        "https://www.youtube.com/watch?v=-CVDOa-7fsc",
+        "https://www.youtube.com/watch?v=5Y1JM1FyjiY",
+        "https://www.youtube.com/watch?v=AKhltn_Q5_8",
+        "https://www.youtube.com/watch?v=JucOzuFVEb4",
+        "https://www.youtube.com/watch?v=NJTXBHo043w",
+        "https://www.youtube.com/watch?v=Qj2TBacilvI",
+        "https://www.youtube.com/watch?v=Re0N9HAr3fA",
+        "https://www.youtube.com/watch?v=UcRMthkOelw",
+        "https://www.youtube.com/watch?v=Uli6s8MMf7I",
+        "https://www.youtube.com/watch?v=WEQo7xRuv00"
+      ],
+      "evidence_url_count": 16,
+      "quality_status_counts": {
+        "review": 16
+      },
+      "promotion_confidence": "low",
+      "recommended_action": "manual_review_low_confidence"
+    },
+    {
+      "candidate_key": "occ_38f8a7a86d5518b5|2025-03-29||",
+      "target_occurrence_id": "occ_38f8a7a86d5518b5",
+      "target_event_name": "桜まつり",
+      "target_event_year": 2026,
+      "target_current_date": "",
+      "target_current_venue": "三田松坂児童遊園",
+      "proposed_event_name": "ultra soul(B'z) 2025年中野通り桜まつり3終 鳳蝶会民舞・盆踊り",
+      "proposed_venue": "",
+      "match_score": 1,
+      "source_rows": [
+        {
+          "observed_occurrence_id": "obsocc_035c1b2653b5c788",
+          "source_occurrence_id": "c158a575628a0172",
+          "raw_event_name": "【4K】ultra soul(B'z) 2025年中野通り桜まつり3終 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園",
+          "raw_venue_name": "【4K】ultra soul(B'z) 2025年中野通り桜まつり3終 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_dc20b3ac3a4a7329",
+          "source_occurrence_id": "ac823a53ad175ba2",
+          "raw_event_name": "【4K】「さくら」(ケツメイシ) 2025年中野通り桜まつり1 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園",
+          "raw_venue_name": "【4K】「さくら」(ケツメイシ) 2025年中野通り桜まつり1 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        },
+        {
+          "observed_occurrence_id": "obsocc_1bb21d638fb2c901",
+          "source_occurrence_id": "fad6232cb830c67c",
+          "raw_event_name": "【4K】【和楽・千本櫻】(杵家七三社中with佳館杏ノ助) 2025年中野通り桜まつり2 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園",
+          "raw_venue_name": "【4K】【和楽・千本櫻】(杵家七三社中with佳館杏ノ助) 2025年中野通り桜まつり2 鳳蝶会民舞・盆踊り 東京都中野区 新井薬師公園",
+          "quality_status": "review",
+          "quality_flags_json": "[\"venue_too_long\", \"tokyo_23_hint\"]"
+        }
+      ],
+      "proposed_date_start": "2025-03-29",
+      "proposed_date_end": "",
+      "proposed_date_values": [
+        "2025-03-29"
+      ],
+      "organizers": [],
+      "matched_tokens": [
+        "桜まつり"
+      ],
+      "source_occurrence_ids": [
+        "ac823a53ad175ba2",
+        "c158a575628a0172",
+        "fad6232cb830c67c"
+      ],
+      "source_occurrence_count": 3,
+      "song_titles_sample": [
+        "Can't Take My Eyes Off You",
+        "It’sMy Life",
+        "SEPTEMBER",
+        "YMCA",
+        "さくら",
+        "ダンシングクィーン",
+        "ダンシング・ヒーロー",
+        "ムーンライトステーション",
+        "ムーンライト伝説",
+        "中野音頭",
+        "千本櫻",
+        "月夜のポンチャラリン",
+        "東京音頭",
+        "炎と森のカーニバル",
+        "炭坑節",
+        "終 Livin’OnAPrayer",
+        "終 ultra soul",
+        "美しく燃える森",
+        "鹿児島おはら節"
+      ],
+      "song_title_count": 19,
+      "evidence_urls_sample": [
+        "https://www.youtube.com/watch?v=-sfKoDJurOA",
+        "https://www.youtube.com/watch?v=4RB6zVWao6A",
+        "https://www.youtube.com/watch?v=819G5gz0LoE",
+        "https://www.youtube.com/watch?v=Co1V5G-KZZ4",
+        "https://www.youtube.com/watch?v=DaxoPQIlPxE",
+        "https://www.youtube.com/watch?v=Gf-NLGK8oXM",
+        "https://www.youtube.com/watch?v=H7c7zY1KLbk",
+        "https://www.youtube.com/watch?v=JvCF-2RqraU",
+        "https://www.youtube.com/watch?v=QGpMhhAv-n4",
+        "https://www.youtube.com/watch?v=S_yAs2FmGKU"
+      ],
+      "evidence_url_count": 19,
+      "quality_status_counts": {
+        "review": 3
+      },
+      "promotion_confidence": "low",
+      "recommended_action": "manual_review_low_confidence"
+    },
+    {
+      "candidate_key": "occ_485aa6f6c2b5f6ce|2025-06-29||",
+      "target_occurrence_id": "occ_485aa6f6c2b5f6ce",
+      "target_event_name": "戸越宮前盆踊り",
+      "target_event_year": 2026,
+      "target_current_date": "2026-06-07",
+      "target_current_venue": "宮前小学校",
+      "proposed_event_name": "品川音頭 2025年戸越宮前盆踊り1 品川区の盆おどらー晴盆",
+      "proposed_venue": "",
+      "match_score": 1,
+      "source_rows": [
+        {
+          "observed_occurrence_id": "obsocc_82606edec5b14822",
+          "source_occurrence_id": "d033865bebc16694",
+          "raw_event_name": "品川音頭 2025年戸越宮前盆踊り1 品川区の盆おどらー晴盆 東京都品川区 宮前小学校",
+          "raw_venue_name": "大崎駅周辺",
+          "quality_status": "review",
+          "quality_flags_json": "[\"tokyo_23_hint\"]"
+        }
+      ],
+      "proposed_date_start": "2025-06-29",
+      "proposed_date_end": "",
+      "proposed_date_values": [
+        "2025-06-29"
+      ],
+      "organizers": [],
+      "matched_tokens": [
+        "戸越宮前盆踊り"
+      ],
+      "source_occurrence_ids": [
+        "d033865bebc16694"
+      ],
+      "source_occurrence_count": 1,
+      "song_titles_sample": [
+        "U.S.A.",
+        "エビカニクス音頭",
+        "ダンスホール",
+        "品川甚句",
+        "品川音頭",
+        "大東京音頭",
+        "戸越銀座音頭",
+        "東京音頭",
+        "炭坑節",
+        "盆ギリ恋歌",
+        "終 Bling-Bang-Bang-Born"
+      ],
+      "song_title_count": 11,
+      "evidence_urls_sample": [
+        "https://www.youtube.com/watch?v=8CjKmU7Q84w",
+        "https://www.youtube.com/watch?v=EjwSS3dAJ2w",
+        "https://www.youtube.com/watch?v=FtCH6QaiC0U",
+        "https://www.youtube.com/watch?v=PBmNK9mM-hM",
+        "https://www.youtube.com/watch?v=UbLn1E91jOI",
+        "https://www.youtube.com/watch?v=VOpnrQZOozM",
+        "https://www.youtube.com/watch?v=ajlQG-sah80",
+        "https://www.youtube.com/watch?v=jeV90dCUSug",
+        "https://www.youtube.com/watch?v=rTxHtZwVoJ8",
+        "https://www.youtube.com/watch?v=wnxnVDgqRKY"
+      ],
+      "evidence_url_count": 11,
+      "quality_status_counts": {
+        "review": 1
+      },
+      "promotion_confidence": "low",
+      "recommended_action": "manual_review_low_confidence"
+    }
+  ]
+}
