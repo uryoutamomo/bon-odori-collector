@@ -1,0 +1,497 @@
+{
+  "generated_by": "build_predicted_occurrence_research_queue.py",
+  "generated_at": "2026-06-22T13:29:24.217971+00:00",
+  "scope": "read_only_predicted_date_source_research_queue",
+  "sources": {
+    "master_db": "data/bon_odori_master.sqlite"
+  },
+  "options": {
+    "today": "2026-06-22"
+  },
+  "summary": {
+    "item_count": 9,
+    "by_priority": {
+      "P0": 5,
+      "P1": 3,
+      "P2": 1
+    },
+    "by_action": {
+      "source_recheck_before_promotion": 5,
+      "queue_for_source_recheck": 3,
+      "keep_prediction_queue_only": 1
+    },
+    "notion_write": "not_allowed",
+    "public_json_write": "not_allowed"
+  },
+  "items": [
+    {
+      "predicted_date_id": "preddate_131b2204d5f23eae",
+      "event_name": "第15回 鴨台盆踊り",
+      "predicted_year": 2026,
+      "predicted_date_start": "2026-07-04",
+      "predicted_date_end": "2026-07-05",
+      "days_until_predicted_start": 12,
+      "basis": "7月6日前後の週末",
+      "basis_type": "weekday_based",
+      "rule_type": "weekend_near_day",
+      "confidence": "medium",
+      "score": 0.6,
+      "usual_venue": "大正大学",
+      "area": "",
+      "source_url": "https://www.tais.ac.jp/guide/latest_news/20250627/92922/",
+      "evidence_years": [
+        2023,
+        2024
+      ],
+      "evidence_rows": [
+        {
+          "confidence": "medium",
+          "date_end": "2023-07-08",
+          "date_start": "2023-07-06",
+          "duration_days": 3,
+          "source_video_count": 2,
+          "weekday_start": "木",
+          "year": 2023
+        },
+        {
+          "confidence": "high",
+          "date_end": "2024-07-05",
+          "date_start": "2024-07-05",
+          "duration_days": 1,
+          "source_video_count": 6,
+          "weekday_start": "金",
+          "year": 2024
+        }
+      ],
+      "source_checked_at": "2026-06-22",
+      "source_review": "previous_year_official_source",
+      "source_note": "大正大学 source confirms the 2025 第15回 event; 2026 needs a new current-year source.",
+      "priority_score": 12,
+      "priority_label": "P0",
+      "recommended_action": "source_recheck_before_promotion",
+      "reason_codes": [
+        "within_14_days",
+        "medium_prediction_confidence",
+        "weekday_based_prediction"
+      ]
+    },
+    {
+      "predicted_date_id": "preddate_4176bccdcae25ce9",
+      "event_name": "自由が丘納涼盆踊り大会",
+      "predicted_year": 2026,
+      "predicted_date_start": "2026-07-18",
+      "predicted_date_end": "2026-07-20",
+      "days_until_predicted_start": 26,
+      "basis": "7月16日前後の土曜",
+      "basis_type": "weekday_based",
+      "rule_type": "weekday_near_day",
+      "confidence": "medium",
+      "score": 0.68,
+      "usual_venue": "自由が丘駅前ロータリー 特設会場",
+      "area": "",
+      "source_url": "https://tokyofesta.com/23ku/23804/",
+      "evidence_years": [
+        2024,
+        2025
+      ],
+      "evidence_rows": [
+        {
+          "confidence": "medium",
+          "date_end": "2024-07-15",
+          "date_start": "2024-07-13",
+          "duration_days": 3,
+          "source_video_count": 3,
+          "weekday_start": "土",
+          "year": 2024
+        },
+        {
+          "confidence": "high",
+          "date_end": "2025-07-21",
+          "date_start": "2025-07-19",
+          "duration_days": 3,
+          "source_video_count": 22,
+          "weekday_start": "土",
+          "year": 2025
+        }
+      ],
+      "source_checked_at": "2026-06-22",
+      "source_review": "previous_year_third_party_source",
+      "source_note": "TokyoFesta source confirms 2025-07-19 to 2025-07-21 and links the organizer site; recheck organizer for 2026.",
+      "priority_score": 11,
+      "priority_label": "P0",
+      "recommended_action": "source_recheck_before_promotion",
+      "reason_codes": [
+        "within_30_days",
+        "medium_prediction_confidence",
+        "weekday_based_prediction"
+      ]
+    },
+    {
+      "predicted_date_id": "preddate_6e157d3b898d1a01",
+      "event_name": "第28回新橋こいち祭 盆踊り",
+      "predicted_year": 2026,
+      "predicted_date_start": "2026-07-23",
+      "predicted_date_end": "2026-07-23",
+      "days_until_predicted_start": 31,
+      "basis": "7月第4木曜",
+      "basis_type": "weekday_based",
+      "rule_type": "weekday_nth",
+      "confidence": "medium",
+      "score": 0.7,
+      "usual_venue": "桜田公園",
+      "area": "",
+      "source_url": "http://www.shinbashi.net/top/koichi/2025/greeting/",
+      "evidence_years": [
+        2023,
+        2025
+      ],
+      "evidence_rows": [
+        {
+          "confidence": "medium",
+          "date_end": "2023-07-27",
+          "date_start": "2023-07-27",
+          "duration_days": 1,
+          "source_video_count": 3,
+          "weekday_start": "木",
+          "year": 2023
+        },
+        {
+          "confidence": "high",
+          "date_end": "2025-07-24",
+          "date_start": "2025-07-24",
+          "duration_days": 1,
+          "source_video_count": 37,
+          "weekday_start": "木",
+          "year": 2025
+        }
+      ],
+      "source_checked_at": "2026-06-22",
+      "source_review": "previous_year_official_source",
+      "source_note": "Existing 新橋こいち祭 source is 2025 material; confirm the 2026 program before promotion.",
+      "priority_score": 9,
+      "priority_label": "P0",
+      "recommended_action": "source_recheck_before_promotion",
+      "reason_codes": [
+        "within_45_days",
+        "medium_prediction_confidence",
+        "weekday_based_prediction"
+      ]
+    },
+    {
+      "predicted_date_id": "preddate_bd796ef03c38aa69",
+      "event_name": "謝恩納涼盆踊り大会（青山善光寺）",
+      "predicted_year": 2026,
+      "predicted_date_start": "2026-07-27",
+      "predicted_date_end": "2026-07-27",
+      "days_until_predicted_start": 35,
+      "basis": "7月の最終月曜",
+      "basis_type": "weekday_based",
+      "rule_type": "weekday_last",
+      "confidence": "medium",
+      "score": 0.74,
+      "usual_venue": "青山善光寺",
+      "area": "",
+      "source_url": "https://omoharareal.com/navi/news/detail/5157",
+      "evidence_years": [
+        2023,
+        2025
+      ],
+      "evidence_rows": [
+        {
+          "confidence": "manual_accept",
+          "date_end": "2023-07-31",
+          "date_start": "2023-07-31",
+          "duration_days": 1,
+          "source_video_count": 2,
+          "weekday_start": "月",
+          "year": 2023
+        },
+        {
+          "confidence": "medium",
+          "date_end": "2025-07-28",
+          "date_start": "2025-07-28",
+          "duration_days": 1,
+          "source_video_count": 12,
+          "weekday_start": "月",
+          "year": 2025
+        }
+      ],
+      "source_checked_at": "2026-06-22",
+      "source_review": "previous_year_local_media_source",
+      "source_note": "OMOHARAREAL source is 令和7年/2025 coverage; use it only as recurrence evidence.",
+      "priority_score": 9,
+      "priority_label": "P0",
+      "recommended_action": "source_recheck_before_promotion",
+      "reason_codes": [
+        "within_45_days",
+        "medium_prediction_confidence",
+        "weekday_based_prediction"
+      ]
+    },
+    {
+      "predicted_date_id": "preddate_369836a93ec48b81",
+      "event_name": "丸の内de盆踊り",
+      "predicted_year": 2026,
+      "predicted_date_start": "2026-07-31",
+      "predicted_date_end": "2026-07-31",
+      "days_until_predicted_start": 39,
+      "basis": "7月の最終金曜",
+      "basis_type": "weekday_based",
+      "rule_type": "weekday_last",
+      "confidence": "medium",
+      "score": 0.74,
+      "usual_venue": "行幸通り",
+      "area": "",
+      "source_url": "https://www.marunouchi.com/pickup/event/6763/",
+      "evidence_years": [
+        2024,
+        2025
+      ],
+      "evidence_rows": [
+        {
+          "confidence": "medium",
+          "date_end": "2024-07-26",
+          "date_start": "2024-07-26",
+          "duration_days": 1,
+          "source_video_count": 2,
+          "weekday_start": "金",
+          "year": 2024
+        },
+        {
+          "confidence": "medium",
+          "date_end": "2025-07-25",
+          "date_start": "2025-07-25",
+          "duration_days": 1,
+          "source_video_count": 6,
+          "weekday_start": "金",
+          "year": 2025
+        }
+      ],
+      "source_checked_at": "2026-06-22",
+      "source_review": "previous_year_official_source",
+      "source_note": "Marunouchi.com source confirms 2025-07-25 to 2025-07-26 at 行幸通り, not a 2026 date.",
+      "priority_score": 9,
+      "priority_label": "P0",
+      "recommended_action": "source_recheck_before_promotion",
+      "reason_codes": [
+        "within_45_days",
+        "medium_prediction_confidence",
+        "weekday_based_prediction"
+      ]
+    },
+    {
+      "predicted_date_id": "preddate_de90654c70d616b6",
+      "event_name": "西久保八幡神社 盆踊り",
+      "predicted_year": 2026,
+      "predicted_date_start": "2026-08-08",
+      "predicted_date_end": "2026-08-08",
+      "days_until_predicted_start": 47,
+      "basis": "8月9日前後の週末",
+      "basis_type": "weekday_based",
+      "rule_type": "weekend_near_day",
+      "confidence": "medium",
+      "score": 0.64,
+      "usual_venue": "西久保八幡神社",
+      "area": "",
+      "source_url": "http://www.hachimanjinja.or.jp/main/?p=5604",
+      "evidence_years": [
+        2023,
+        2024,
+        2025
+      ],
+      "evidence_rows": [
+        {
+          "confidence": "high",
+          "date_end": "2023-08-12",
+          "date_start": "2023-08-10",
+          "duration_days": 3,
+          "source_video_count": 9,
+          "weekday_start": "木",
+          "year": 2023
+        },
+        {
+          "confidence": "medium",
+          "date_end": "2024-08-09",
+          "date_start": "2024-08-09",
+          "duration_days": 1,
+          "source_video_count": 8,
+          "weekday_start": "金",
+          "year": 2024
+        },
+        {
+          "confidence": "medium",
+          "date_end": "2025-08-09",
+          "date_start": "2025-08-09",
+          "duration_days": 1,
+          "source_video_count": 37,
+          "weekday_start": "土",
+          "year": 2025
+        }
+      ],
+      "source_checked_at": "2026-06-22",
+      "source_review": "previous_year_or_archival_official_source",
+      "source_note": "Existing shrine source is recurrence evidence only; confirm 2026 before creating an occurrence.",
+      "priority_score": 8,
+      "priority_label": "P1",
+      "recommended_action": "queue_for_source_recheck",
+      "reason_codes": [
+        "within_60_days",
+        "medium_prediction_confidence",
+        "weekday_based_prediction"
+      ]
+    },
+    {
+      "predicted_date_id": "preddate_0799c89e7ee9392a",
+      "event_name": "シタマチ.ふるさと盆踊り大会",
+      "predicted_year": 2026,
+      "predicted_date_start": "2026-08-15",
+      "predicted_date_end": "2026-08-15",
+      "days_until_predicted_start": 54,
+      "basis": "8月第3土曜",
+      "basis_type": "weekday_based",
+      "rule_type": "weekday_nth",
+      "confidence": "medium",
+      "score": 0.7,
+      "usual_venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+      "area": "",
+      "source_url": "https://tokyofesta.com/23ku/24373/",
+      "evidence_years": [
+        2024,
+        2025
+      ],
+      "evidence_rows": [
+        {
+          "confidence": "medium",
+          "date_end": "2024-08-17",
+          "date_start": "2024-08-17",
+          "duration_days": 1,
+          "source_video_count": 5,
+          "weekday_start": "土",
+          "year": 2024
+        },
+        {
+          "confidence": "high",
+          "date_end": "2025-08-16",
+          "date_start": "2025-08-16",
+          "duration_days": 1,
+          "source_video_count": 79,
+          "weekday_start": "土",
+          "year": 2025
+        }
+      ],
+      "source_checked_at": "2026-06-22",
+      "source_review": "previous_year_third_party_source",
+      "source_note": "TokyoFesta source confirms 2025-08-16 to 2025-08-17, not a 2026 date.",
+      "priority_score": 8,
+      "priority_label": "P1",
+      "recommended_action": "queue_for_source_recheck",
+      "reason_codes": [
+        "within_60_days",
+        "medium_prediction_confidence",
+        "weekday_based_prediction"
+      ]
+    },
+    {
+      "predicted_date_id": "preddate_020fd2ca31d901c5",
+      "event_name": "歌舞伎町BON ODORI",
+      "predicted_year": 2026,
+      "predicted_date_start": "2026-08-15",
+      "predicted_date_end": "2026-08-15",
+      "days_until_predicted_start": 54,
+      "basis": "8月第3土曜",
+      "basis_type": "weekday_based",
+      "rule_type": "weekday_nth",
+      "confidence": "medium",
+      "score": 0.7,
+      "usual_venue": "歌舞伎町シネシティ広場",
+      "area": "",
+      "source_url": "https://www.kanko-shinjuku.jp/event/-/article_4606.html",
+      "evidence_years": [
+        2024,
+        2025
+      ],
+      "evidence_rows": [
+        {
+          "confidence": "manual_accept",
+          "date_end": "2024-08-17",
+          "date_start": "2024-08-17",
+          "duration_days": 1,
+          "source_video_count": 2,
+          "weekday_start": "土",
+          "year": 2024
+        },
+        {
+          "confidence": "high",
+          "date_end": "2025-08-16",
+          "date_start": "2025-08-16",
+          "duration_days": 1,
+          "source_video_count": 18,
+          "weekday_start": "土",
+          "year": 2025
+        }
+      ],
+      "source_checked_at": "2026-06-22",
+      "source_review": "previous_year_event_source",
+      "source_note": "Existing source is prior-year event evidence; confirm 2026 with organizer or official area source before promotion.",
+      "priority_score": 8,
+      "priority_label": "P1",
+      "recommended_action": "queue_for_source_recheck",
+      "reason_codes": [
+        "within_60_days",
+        "medium_prediction_confidence",
+        "weekday_based_prediction"
+      ]
+    },
+    {
+      "predicted_date_id": "preddate_d02e6c194992c80f",
+      "event_name": "赤坂浄土寺盆踊り大会",
+      "predicted_year": 2026,
+      "predicted_date_start": "2026-07-26",
+      "predicted_date_end": "2026-07-27",
+      "days_until_predicted_start": 34,
+      "basis": "7月26日前後",
+      "basis_type": "date_based",
+      "rule_type": "date_near",
+      "confidence": "low",
+      "score": 0.58,
+      "usual_venue": "浄土寺",
+      "area": "",
+      "source_url": "https://x.com/nsPFhl5JW382058/status/1939266951391613148",
+      "evidence_years": [
+        2023,
+        2024
+      ],
+      "evidence_rows": [
+        {
+          "confidence": "manual_accept",
+          "date_end": "2023-07-26",
+          "date_start": "2023-07-26",
+          "duration_days": 1,
+          "source_video_count": 2,
+          "weekday_start": "水",
+          "year": 2023
+        },
+        {
+          "confidence": "high",
+          "date_end": "2024-07-26",
+          "date_start": "2024-07-25",
+          "duration_days": 2,
+          "source_video_count": 7,
+          "weekday_start": "木",
+          "year": 2024
+        }
+      ],
+      "source_checked_at": "2026-06-22",
+      "source_review": "previous_year_social_source",
+      "source_note": "Existing X source is prior-year evidence and the prediction confidence is low; require stronger 2026 confirmation.",
+      "priority_score": 4,
+      "priority_label": "P2",
+      "recommended_action": "keep_prediction_queue_only",
+      "reason_codes": [
+        "within_45_days",
+        "low_prediction_confidence",
+        "date_based_prediction"
+      ]
+    }
+  ]
+}

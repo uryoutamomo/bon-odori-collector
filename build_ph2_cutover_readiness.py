@@ -238,6 +238,7 @@ def git_status_summary(repo):
             "build_registered_event_investigation_queue.py",
             "build_ph2_cutover_readiness.py",
             "build_ph2_event_occurrence_apply_plan.py",
+            "build_predicted_occurrence_research_queue.py",
             "build_pre_cutover_p0_apply_plan.py",
         }:
             group = "review_commit_candidate_scripts"
@@ -250,6 +251,7 @@ def git_status_summary(repo):
         elif (
             path.startswith("data/ph2_cutover_readiness")
             or path.startswith("data/ph2_event_occurrence_apply_plan")
+            or path.startswith("data/predicted_occurrence_research_queue")
             or path.startswith("data/pre_cutover_p0_apply_plan")
         ):
             group = "new_review_reports"
@@ -298,6 +300,7 @@ def build(args):
             "Keep data/song_occurrences.json and prediction snapshots frozen until Ph2/Ph3 explicitly reopens the legacy path.",
             "Do not copy collector data/public/events_public.json wholesale to bon-odori-site until high-risk field diffs are classified.",
             "Use predicted_occurrence_dates and event_investigation_tasks as review queues, not as automatic public updates.",
+            "Process data/predicted_occurrence_research_queue.md from P0 downward; only promote predictions after current-year source confirmation.",
             "Proceed with Ph2 dry-run against event_series/event_occurrences before any large Notion or public JSON write.",
         ],
     }
