@@ -4,19 +4,19 @@
   "target_year": 2026,
   "today": "2026-06-20",
   "target_category": "recurring_last_year",
-  "target_count": 95,
-  "applied_count": 95,
+  "target_count": 94,
+  "applied_count": 94,
   "skipped_count": 0,
-  "with_rule_prediction_count": 10,
+  "with_rule_prediction_count": 9,
   "slide_count": 74,
   "fixed_date_rule_count": 1,
-  "reference_only_count": 21,
-  "rule_prediction_reference_count": 10,
+  "reference_only_count": 20,
+  "rule_prediction_reference_count": 9,
   "low_reference_only_count": 9,
   "past_slide_downgrade_count": 2,
   "confidence_counts": {
     "high": 8,
-    "medium": 78,
+    "medium": 77,
     "low": 9
   },
   "applied": [
@@ -357,36 +357,19 @@
       "venue": "浄土寺",
       "before": {
         "historical_reference": null,
-        "display_tier": "rule_predicted",
-        "date_prediction": {
-          "display_tier": "rule_predicted",
-          "target_year": 2026,
-          "date": "2026-07-26",
-          "date_end": "2026-07-27",
-          "weekday_start": "日",
-          "weekday_end": "月",
-          "confidence": "low",
-          "score": 0.58,
-          "rule_type": "date_near",
-          "basis": "7月26日前後",
-          "evidence_years": [
-            2023,
-            2024
-          ],
-          "evidence_count": 2,
-          "has_actual_observation": false
-        }
+        "display_tier": "historical_reference",
+        "date_prediction": null
       },
       "after": {
         "historical_reference_label": "2025-07-24〜2025-07-25実績・今年未確認",
         "historical_reference_confidence": "medium",
         "historical_reference_score": 0.59,
-        "display_tier": "rule_predicted",
-        "predicted_date": "2026-07-26",
-        "predicted_date_end": "2026-07-27"
+        "display_tier": "historical_slide",
+        "predicted_date": "2026-07-23",
+        "predicted_date_end": "2026-07-24"
       },
       "historical_reference": {
-        "display_tier": "historical_reference",
+        "display_tier": "historical_slide",
         "last_seen_year": 2025,
         "last_seen_dates": [
           "2025-07-24",
@@ -406,8 +389,16 @@
         ],
         "cautions": [],
         "edition_number": null,
-        "has_rule_prediction": true,
-        "slide": null
+        "has_rule_prediction": false,
+        "slide": {
+          "date": "2026-07-23",
+          "date_end": "2026-07-24",
+          "method": "same_weekday",
+          "basis": "2025年実績の同月第4木曜を2026年へスライド",
+          "source_date": "2025-07-24",
+          "source_date_end": "2025-07-25",
+          "duration_days": 2
+        }
       }
     },
     {
@@ -980,55 +971,6 @@
       }
     },
     {
-      "name": "三角広場まつり「居酒屋盆踊り」",
-      "venue": "新宿住友ビル三角広場",
-      "before": {
-        "historical_reference": null,
-        "display_tier": "historical_reference",
-        "date_prediction": null
-      },
-      "after": {
-        "historical_reference_label": "2025-06-25〜2025-06-26実績・今年未確認",
-        "historical_reference_confidence": "medium",
-        "historical_reference_score": 0.63,
-        "display_tier": "historical_slide",
-        "predicted_date": "2026-06-24",
-        "predicted_date_end": "2026-06-25"
-      },
-      "historical_reference": {
-        "display_tier": "historical_slide",
-        "last_seen_year": 2025,
-        "last_seen_dates": [
-          "2025-06-25",
-          "2025-06-26"
-        ],
-        "label": "2025-06-25〜2025-06-26実績・今年未確認",
-        "confidence": "medium",
-        "score": 0.63,
-        "status": "expected_medium",
-        "status_label": "昨年開催",
-        "recurrence_label": "昨年開催・継続性 中",
-        "reasons": [
-          "official_or_semi_official_evidence",
-          "venue_present",
-          "tokyo_23ward",
-          "recurring_word:まつり"
-        ],
-        "cautions": [],
-        "edition_number": null,
-        "has_rule_prediction": false,
-        "slide": {
-          "date": "2026-06-24",
-          "date_end": "2026-06-25",
-          "method": "same_weekday",
-          "basis": "2025年実績の同月第4水曜を2026年へスライド",
-          "source_date": "2025-06-25",
-          "source_date_end": "2025-06-26",
-          "duration_days": 2
-        }
-      }
-    },
-    {
       "name": "歌舞伎町BON ODORI",
       "venue": "歌舞伎町シネシティ広場",
       "before": {
@@ -1145,7 +1087,7 @@
       "after": {
         "historical_reference_label": "2025-08-01〜2025-08-02実績・今年未確認",
         "historical_reference_confidence": "medium",
-        "historical_reference_score": 0.59,
+        "historical_reference_score": 0.55,
         "display_tier": "historical_slide",
         "predicted_date": "2026-08-01",
         "predicted_date_end": "2026-08-02"
@@ -1159,14 +1101,13 @@
         ],
         "label": "2025-08-01〜2025-08-02実績・今年未確認",
         "confidence": "medium",
-        "score": 0.59,
+        "score": 0.55,
         "status": "expected_medium",
         "status_label": "昨年開催",
         "recurrence_label": "昨年開催・継続性 中",
         "reasons": [
           "venue_present",
           "tokyo_23ward",
-          "recurring_word:毎年",
           "recurring_word:神社"
         ],
         "cautions": [],
@@ -1176,9 +1117,9 @@
           "date": "2026-08-01",
           "date_end": "2026-08-02",
           "method": "fixed_date",
-          "basis": "イベントDBの固定日カラムに記録",
-          "source_date": null,
-          "source_date_end": null,
+          "basis": "YOKOSO新宿の告知に「毎年8月1日・2日」と明記",
+          "source_date": "2025-08-01",
+          "source_date_end": "2025-08-02",
           "duration_days": 2,
           "rule_type": "fixed_date_range",
           "source_url": "https://yokoso-shinjuku.com/shinjuku-event/hanazono-bonodori-2/"

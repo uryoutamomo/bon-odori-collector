@@ -3,11 +3,11 @@
   "source": "data/public/events_public.json",
   "target_year": 2026,
   "target_category": "date_unknown",
-  "target_count": 60,
-  "applied_count": 59,
+  "target_count": 59,
+  "applied_count": 58,
   "skipped_count": 1,
-  "with_jun_hint_count": 57,
-  "with_sort_hint_count": 57,
+  "with_jun_hint_count": 56,
+  "with_sort_hint_count": 56,
   "applied": [
     {
       "name": "京橋盆踊り",
@@ -1758,7 +1758,7 @@
       }
     },
     {
-      "name": "品川区民まつり 品川第二地区",
+      "name": "城南小学校の盆踊り",
       "venue": "城南小学校",
       "before": {
         "season_hint": null,
@@ -1911,46 +1911,6 @@
           ]
         ],
         "label": "9月中旬",
-        "confidence": "lowest",
-        "basis": "例年の開催月・旬ヒント",
-        "has_jun_hint": true,
-        "has_sort_hint": true
-      }
-    },
-    {
-      "name": "品川区民まつり 荏原第一地区",
-      "venue": "小山台小学校",
-      "before": {
-        "season_hint": null,
-        "season_months": null,
-        "season_hint_label": null
-      },
-      "after": {
-        "season_months": [
-          7
-        ],
-        "season_jun": {
-          "7": "下旬"
-        },
-        "season_hint_label": "7月下旬",
-        "season_confidence": "lowest"
-      },
-      "season_hint": {
-        "display_tier": "season_hint",
-        "target_year": 2026,
-        "months": [
-          7
-        ],
-        "jun": {
-          "7": "下旬"
-        },
-        "hints": [
-          [
-            7,
-            26
-          ]
-        ],
-        "label": "7月下旬",
         "confidence": "lowest",
         "basis": "例年の開催月・旬ヒント",
         "has_jun_hint": true,

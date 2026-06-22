@@ -331,6 +331,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-08-14",
         "date_end": "2026-08-14",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第2金曜を2026年へスライド",
         "source_date": "2025-08-08",
         "source_date_end": "2025-08-08",
@@ -349,6 +350,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-08-14",
       "date_end": "2026-08-14",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第2金曜を2026年へスライド",
       "source_date": "2025-08-08",
       "source_date_end": "2025-08-08",
@@ -356,6 +358,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-08-14",
     "historical_slide_date_end": "2026-08-14",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第2金曜を2026年へスライド",
     "predicted_date": "2026-08-14",
     "predicted_date_end": "2026-08-14",
@@ -1877,6 +1880,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-08-28",
         "date_end": "2026-08-28",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第4金曜を2026年へスライド",
         "source_date": "2025-08-22",
         "source_date_end": null,
@@ -1894,6 +1898,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-08-28",
       "date_end": "2026-08-28",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第4金曜を2026年へスライド",
       "source_date": "2025-08-22",
       "source_date_end": null,
@@ -1901,6 +1906,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-08-28",
     "historical_slide_date_end": "2026-08-28",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第4金曜を2026年へスライド",
     "predicted_date": "2026-08-28",
     "predicted_date_end": "2026-08-28",
@@ -2682,6 +2688,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-07-23",
         "date_end": "2026-07-24",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第4木曜を2026年へスライド",
         "source_date": "2025-07-24",
         "source_date_end": "2025-07-25",
@@ -2700,6 +2707,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-07-23",
       "date_end": "2026-07-24",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第4木曜を2026年へスライド",
       "source_date": "2025-07-24",
       "source_date_end": "2025-07-25",
@@ -2707,6 +2715,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-07-23",
     "historical_slide_date_end": "2026-07-24",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第4木曜を2026年へスライド",
     "predicted_date": "2026-07-23",
     "predicted_date_end": "2026-07-24",
@@ -2958,6 +2967,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-09-06",
         "date_end": "2026-09-06",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第1日曜を2026年へスライド",
         "source_date": "2025-09-07",
         "source_date_end": null,
@@ -2975,6 +2985,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-09-06",
       "date_end": "2026-09-06",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第1日曜を2026年へスライド",
       "source_date": "2025-09-07",
       "source_date_end": null,
@@ -2982,6 +2993,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-09-06",
     "historical_slide_date_end": "2026-09-06",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第1日曜を2026年へスライド",
     "predicted_date": "2026-09-06",
     "predicted_date_end": "2026-09-06",
@@ -4002,6 +4014,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-09-25",
         "date_end": "2026-09-26",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第4金曜を2026年へスライド",
         "source_date": "2025-09-26",
         "source_date_end": "2025-09-27",
@@ -4020,6 +4033,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-09-25",
       "date_end": "2026-09-26",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第4金曜を2026年へスライド",
       "source_date": "2025-09-26",
       "source_date_end": "2025-09-27",
@@ -4027,6 +4041,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-09-25",
     "historical_slide_date_end": "2026-09-26",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第4金曜を2026年へスライド",
     "predicted_date": "2026-09-25",
     "predicted_date_end": "2026-09-26",
@@ -4207,6 +4222,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-10-12",
         "date_end": "2026-10-12",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第2月曜を2026年へスライド",
         "source_date": "2025-10-13",
         "source_date_end": null,
@@ -4224,6 +4240,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-10-12",
       "date_end": "2026-10-12",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第2月曜を2026年へスライド",
       "source_date": "2025-10-13",
       "source_date_end": null,
@@ -4231,6 +4248,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-10-12",
     "historical_slide_date_end": "2026-10-12",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第2月曜を2026年へスライド",
     "predicted_date": "2026-10-12",
     "predicted_date_end": "2026-10-12",
@@ -4325,6 +4343,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-07-22",
         "date_end": "2026-07-23",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第4水曜を2026年へスライド",
         "source_date": "2025-07-23",
         "source_date_end": "2025-07-24",
@@ -4343,6 +4362,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-07-22",
       "date_end": "2026-07-23",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第4水曜を2026年へスライド",
       "source_date": "2025-07-23",
       "source_date_end": "2025-07-24",
@@ -4350,6 +4370,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-07-22",
     "historical_slide_date_end": "2026-07-23",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第4水曜を2026年へスライド",
     "predicted_date": "2026-07-22",
     "predicted_date_end": "2026-07-23",
@@ -4436,6 +4457,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-07-18",
         "date_end": "2026-07-18",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第3土曜を2026年へスライド",
         "source_date": "2025-07-19",
         "source_date_end": null,
@@ -4453,6 +4475,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-07-18",
       "date_end": "2026-07-18",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第3土曜を2026年へスライド",
       "source_date": "2025-07-19",
       "source_date_end": null,
@@ -4460,6 +4483,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-07-18",
     "historical_slide_date_end": "2026-07-18",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第3土曜を2026年へスライド",
     "predicted_date": "2026-07-18",
     "predicted_date_end": "2026-07-18",
@@ -4546,6 +4570,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-08-01",
         "date_end": "2026-08-01",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第1土曜を2026年へスライド",
         "source_date": "2025-08-02",
         "source_date_end": null,
@@ -4563,6 +4588,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-08-01",
       "date_end": "2026-08-01",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第1土曜を2026年へスライド",
       "source_date": "2025-08-02",
       "source_date_end": null,
@@ -4570,6 +4596,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-08-01",
     "historical_slide_date_end": "2026-08-01",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第1土曜を2026年へスライド",
     "predicted_date": "2026-08-01",
     "predicted_date_end": "2026-08-01",
@@ -4654,6 +4681,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-07-24",
         "date_end": "2026-07-24",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第4金曜を2026年へスライド",
         "source_date": "2025-07-25",
         "source_date_end": null,
@@ -4671,6 +4699,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-07-24",
       "date_end": "2026-07-24",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第4金曜を2026年へスライド",
       "source_date": "2025-07-25",
       "source_date_end": null,
@@ -4678,6 +4707,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-07-24",
     "historical_slide_date_end": "2026-07-24",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第4金曜を2026年へスライド",
     "predicted_date": "2026-07-24",
     "predicted_date_end": "2026-07-24",
@@ -4766,6 +4796,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-09-21",
         "date_end": "2026-09-21",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第3月曜を2026年へスライド",
         "source_date": "2025-09-15",
         "source_date_end": null,
@@ -4783,6 +4814,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-09-21",
       "date_end": "2026-09-21",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第3月曜を2026年へスライド",
       "source_date": "2025-09-15",
       "source_date_end": null,
@@ -4790,6 +4822,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-09-21",
     "historical_slide_date_end": "2026-09-21",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第3月曜を2026年へスライド",
     "predicted_date": "2026-09-21",
     "predicted_date_end": "2026-09-21",
@@ -4895,6 +4928,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-07-18",
         "date_end": "2026-07-18",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第3土曜を2026年へスライド",
         "source_date": "2025-07-19",
         "source_date_end": null,
@@ -4912,6 +4946,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-07-18",
       "date_end": "2026-07-18",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第3土曜を2026年へスライド",
       "source_date": "2025-07-19",
       "source_date_end": null,
@@ -4919,6 +4954,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-07-18",
     "historical_slide_date_end": "2026-07-18",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第3土曜を2026年へスライド",
     "predicted_date": "2026-07-18",
     "predicted_date_end": "2026-07-18",
@@ -5021,9 +5057,9 @@ const EVENTS = [
     "address": "東京都新宿区西新宿2-6-1",
     "lat": 35.692017,
     "lng": 139.692459,
-    "date": "2025-06-25",
-    "date_end": "2025-06-26",
-    "status": "終了",
+    "date": "2026-06-24",
+    "date_end": "2026-06-25",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -5033,110 +5069,53 @@ const EVENTS = [
     "hints": [
       [
         6,
-        25
+        24
       ],
       [
         6,
-        26
+        25
       ]
     ],
     "jun": {
       "6": "下旬"
     },
     "description": "三角広場まつり 居酒屋盆踊りは、新宿住友ビル三角広場で開かれる屋外型の盆踊り・夏の地域イベント。6月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "新宿住友ビル三角広場公式告知。キュー上の「新宿住友ビル三角広場まつり居酒屋盆踊り」は同一候補として処理。",
-    "source_urls": [],
+    "detail": "新宿住友ビル三角広場公式告知。キュー上の「新宿住友ビル三角広場まつり居酒屋盆踊り」は同一候補として処理。 【2026年確定】2026/06/24(水)〜06/25(木)開催。出典: （こと 2026-06-21 公式サイト直接確認）。タグ: 電車圏／夜開催（1日3回盆踊りタイム）",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [
       {
         "name": "LOVEマシーン",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "confidence": "hint"
       },
       {
         "name": "勝手にシンドバッド",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "confidence": "hint"
       }
     ],
-    "public_status": "expected_medium",
-    "public_category": "recurring_last_year",
-    "public_status_label": "昨年開催",
-    "public_note": "昨年開催: 2025-06-25〜2025-06-26。今年の日程は未確認です。",
-    "recurrence_label": "昨年開催・継続性 中",
-    "recurrence_score": 0.63,
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-06-24〜2026-06-25",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
     "recurrence_reasons": [
-      "official_or_semi_official_evidence",
-      "venue_present",
-      "tokyo_23ward",
-      "recurring_word:まつり"
+      "2026年日付確認済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
-    "last_seen_year": 2025,
+    "last_seen_year": null,
     "last_seen_dates": [
-      "2025-06-25",
-      "2025-06-26"
+      "2026-06-24",
+      "2026-06-25"
     ],
-    "display_tier": "historical_slide",
-    "historical_reference": {
-      "display_tier": "historical_slide",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-06-25",
-        "2025-06-26"
-      ],
-      "label": "2025-06-25〜2025-06-26実績・今年未確認",
-      "confidence": "medium",
-      "score": 0.63,
-      "status": "expected_medium",
-      "status_label": "昨年開催",
-      "recurrence_label": "昨年開催・継続性 中",
-      "reasons": [
-        "official_or_semi_official_evidence",
-        "venue_present",
-        "tokyo_23ward",
-        "recurring_word:まつり"
-      ],
-      "cautions": [],
-      "edition_number": null,
-      "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-06-24",
-        "date_end": "2026-06-25",
-        "basis": "2025年実績の同月第4水曜を2026年へスライド",
-        "source_date": "2025-06-25",
-        "source_date_end": "2025-06-26",
-        "duration_days": 2
-      }
-    },
-    "historical_display_tier": "historical_slide",
-    "historical_last_seen_year": 2025,
-    "historical_last_seen_dates": [
-      "2025-06-25",
-      "2025-06-26"
-    ],
-    "historical_reference_label": "2025-06-25〜2025-06-26実績・今年未確認",
-    "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.63,
-    "historical_slide": {
-      "date": "2026-06-24",
-      "date_end": "2026-06-25",
-      "basis": "2025年実績の同月第4水曜を2026年へスライド",
-      "source_date": "2025-06-25",
-      "source_date_end": "2025-06-26",
-      "duration_days": 2
-    },
-    "historical_slide_date": "2026-06-24",
-    "historical_slide_date_end": "2026-06-25",
-    "historical_slide_basis": "2025年実績の同月第4水曜を2026年へスライド",
-    "predicted_date": "2026-06-24",
-    "predicted_date_end": "2026-06-25",
-    "prediction_basis": "2025年実績の同月第4水曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "display_tier": "confirmed"
   },
   {
     "name": "歌舞伎町BON ODORI",
@@ -5206,9 +5185,35 @@ const EVENTS = [
     "last_seen_dates": [
       "2025-08-16"
     ],
-    "display_tier": "historical_slide",
+    "date_prediction": {
+      "display_tier": "rule_predicted",
+      "target_year": 2026,
+      "date": "2026-08-15",
+      "date_end": "2026-08-15",
+      "weekday_start": "土",
+      "weekday_end": "土",
+      "confidence": "medium",
+      "score": 0.7,
+      "rule_type": "weekday_nth",
+      "basis": "8月第3土曜",
+      "evidence_years": [
+        2024,
+        2025
+      ],
+      "evidence_count": 2,
+      "has_actual_observation": false
+    },
+    "display_tier": "rule_predicted",
+    "predicted_date": "2026-08-15",
+    "predicted_date_end": "2026-08-15",
+    "prediction_basis": "8月第3土曜",
+    "prediction_confidence": "medium",
+    "prediction_evidence_years": [
+      2024,
+      2025
+    ],
     "historical_reference": {
-      "display_tier": "historical_slide",
+      "display_tier": "historical_reference",
       "last_seen_year": 2025,
       "last_seen_dates": [
         "2025-08-16"
@@ -5227,39 +5232,17 @@ const EVENTS = [
       ],
       "cautions": [],
       "edition_number": null,
-      "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-08-15",
-        "date_end": "2026-08-15",
-        "basis": "2025年実績の同月第3土曜を2026年へスライド",
-        "source_date": "2025-08-16",
-        "source_date_end": null,
-        "duration_days": 1
-      }
+      "has_rule_prediction": true,
+      "slide": null
     },
-    "historical_display_tier": "historical_slide",
+    "historical_display_tier": "historical_reference",
     "historical_last_seen_year": 2025,
     "historical_last_seen_dates": [
       "2025-08-16"
     ],
     "historical_reference_label": "2025-08-16実績・今年未確認",
     "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.6,
-    "historical_slide": {
-      "date": "2026-08-15",
-      "date_end": "2026-08-15",
-      "basis": "2025年実績の同月第3土曜を2026年へスライド",
-      "source_date": "2025-08-16",
-      "source_date_end": null,
-      "duration_days": 1
-    },
-    "historical_slide_date": "2026-08-15",
-    "historical_slide_date_end": "2026-08-15",
-    "historical_slide_basis": "2025年実績の同月第3土曜を2026年へスライド",
-    "predicted_date": "2026-08-15",
-    "predicted_date_end": "2026-08-15",
-    "prediction_basis": "2025年実績の同月第3土曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "historical_reference_score": 0.6
   },
   {
     "name": "下落合町会知久会 第9回盆踊り",
@@ -5341,6 +5324,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-07-18",
         "date_end": "2026-07-18",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第3土曜を2026年へスライド",
         "source_date": "2025-07-19",
         "source_date_end": null,
@@ -5358,6 +5342,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-07-18",
       "date_end": "2026-07-18",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第3土曜を2026年へスライド",
       "source_date": "2025-07-19",
       "source_date_end": null,
@@ -5365,6 +5350,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-07-18",
     "historical_slide_date_end": "2026-07-18",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第3土曜を2026年へスライド",
     "predicted_date": "2026-07-18",
     "predicted_date_end": "2026-07-18",
@@ -5438,14 +5424,13 @@ const EVENTS = [
       ],
       "label": "2025-08-01〜2025-08-02実績・今年未確認",
       "confidence": "medium",
-      "score": 0.59,
+      "score": 0.55,
       "status": "expected_medium",
       "status_label": "昨年開催",
       "recurrence_label": "昨年開催・継続性 中",
       "reasons": [
         "venue_present",
         "tokyo_23ward",
-        "recurring_word:毎年",
         "recurring_word:神社"
       ],
       "cautions": [],
@@ -5455,9 +5440,9 @@ const EVENTS = [
         "date": "2026-08-01",
         "date_end": "2026-08-02",
         "method": "fixed_date",
-        "basis": "イベントDBの固定日カラムに記録",
-        "source_date": null,
-        "source_date_end": null,
+        "basis": "YOKOSO新宿の告知に「毎年8月1日・2日」と明記",
+        "source_date": "2025-08-01",
+        "source_date_end": "2025-08-02",
         "duration_days": 2,
         "rule_type": "fixed_date_range",
         "source_url": "https://yokoso-shinjuku.com/shinjuku-event/hanazono-bonodori-2/"
@@ -5471,24 +5456,25 @@ const EVENTS = [
     ],
     "historical_reference_label": "2025-08-01〜2025-08-02実績・今年未確認",
     "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.59,
+    "historical_reference_score": 0.55,
     "historical_slide": {
       "date": "2026-08-01",
       "date_end": "2026-08-02",
       "method": "fixed_date",
-      "basis": "イベントDBの固定日カラムに記録",
-      "source_date": null,
-      "source_date_end": null,
+      "basis": "YOKOSO新宿の告知に「毎年8月1日・2日」と明記",
+      "source_date": "2025-08-01",
+      "source_date_end": "2025-08-02",
       "duration_days": 2,
       "rule_type": "fixed_date_range",
       "source_url": "https://yokoso-shinjuku.com/shinjuku-event/hanazono-bonodori-2/"
     },
     "historical_slide_date": "2026-08-01",
     "historical_slide_date_end": "2026-08-02",
-    "historical_slide_basis": "イベントDBの固定日カラムに記録",
+    "historical_slide_method": "fixed_date",
+    "historical_slide_basis": "YOKOSO新宿の告知に「毎年8月1日・2日」と明記",
     "predicted_date": "2026-08-01",
     "predicted_date_end": "2026-08-02",
-    "prediction_basis": "イベントDBの固定日カラムに記録",
+    "prediction_basis": "YOKOSO新宿の告知に「毎年8月1日・2日」と明記",
     "prediction_confidence": "medium"
   },
   {
@@ -5573,6 +5559,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-07-11",
         "date_end": "2026-07-11",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第2土曜を2026年へスライド",
         "source_date": "2025-07-12",
         "source_date_end": null,
@@ -5590,6 +5577,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-07-11",
       "date_end": "2026-07-11",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第2土曜を2026年へスライド",
       "source_date": "2025-07-12",
       "source_date_end": null,
@@ -5597,6 +5585,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-07-11",
     "historical_slide_date_end": "2026-07-11",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第2土曜を2026年へスライド",
     "predicted_date": "2026-07-11",
     "predicted_date_end": "2026-07-11",
@@ -5949,6 +5938,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-08-22",
         "date_end": "2026-08-22",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第4土曜を2026年へスライド",
         "source_date": "2025-08-23",
         "source_date_end": null,
@@ -5966,6 +5956,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-08-22",
       "date_end": "2026-08-22",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第4土曜を2026年へスライド",
       "source_date": "2025-08-23",
       "source_date_end": null,
@@ -5973,6 +5964,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-08-22",
     "historical_slide_date_end": "2026-08-22",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第4土曜を2026年へスライド",
     "predicted_date": "2026-08-22",
     "predicted_date_end": "2026-08-22",
@@ -7432,6 +7424,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-09-26",
         "date_end": "2026-09-26",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第4土曜を2026年へスライド",
         "source_date": "2025-09-27",
         "source_date_end": null,
@@ -7449,6 +7442,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-09-26",
       "date_end": "2026-09-26",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第4土曜を2026年へスライド",
       "source_date": "2025-09-27",
       "source_date_end": null,
@@ -7456,6 +7450,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-09-26",
     "historical_slide_date_end": "2026-09-26",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第4土曜を2026年へスライド",
     "predicted_date": "2026-09-26",
     "predicted_date_end": "2026-09-26",
@@ -7552,6 +7547,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-09-12",
         "date_end": "2026-09-12",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第2土曜を2026年へスライド",
         "source_date": "2025-09-13",
         "source_date_end": null,
@@ -7569,6 +7565,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-09-12",
       "date_end": "2026-09-12",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第2土曜を2026年へスライド",
       "source_date": "2025-09-13",
       "source_date_end": null,
@@ -7576,6 +7573,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-09-12",
     "historical_slide_date_end": "2026-09-12",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第2土曜を2026年へスライド",
     "predicted_date": "2026-09-12",
     "predicted_date_end": "2026-09-12",
@@ -7662,6 +7660,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-09-12",
         "date_end": "2026-09-12",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第2土曜を2026年へスライド",
         "source_date": "2025-09-13",
         "source_date_end": null,
@@ -7679,6 +7678,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-09-12",
       "date_end": "2026-09-12",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第2土曜を2026年へスライド",
       "source_date": "2025-09-13",
       "source_date_end": null,
@@ -7686,6 +7686,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-09-12",
     "historical_slide_date_end": "2026-09-12",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第2土曜を2026年へスライド",
     "predicted_date": "2026-09-12",
     "predicted_date_end": "2026-09-12",
@@ -7846,6 +7847,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-09-11",
         "date_end": "2026-09-11",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第2金曜を2026年へスライド",
         "source_date": "2025-09-12",
         "source_date_end": null,
@@ -7863,6 +7865,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-09-11",
       "date_end": "2026-09-11",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第2金曜を2026年へスライド",
       "source_date": "2025-09-12",
       "source_date_end": null,
@@ -7870,6 +7873,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-09-11",
     "historical_slide_date_end": "2026-09-11",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第2金曜を2026年へスライド",
     "predicted_date": "2026-09-11",
     "predicted_date_end": "2026-09-11",
@@ -8602,6 +8606,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-09-12",
         "date_end": "2026-09-12",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第2土曜を2026年へスライド",
         "source_date": "2025-09-13",
         "source_date_end": null,
@@ -8619,6 +8624,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-09-12",
       "date_end": "2026-09-12",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第2土曜を2026年へスライド",
       "source_date": "2025-09-13",
       "source_date_end": null,
@@ -8626,6 +8632,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-09-12",
     "historical_slide_date_end": "2026-09-12",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第2土曜を2026年へスライド",
     "predicted_date": "2026-09-12",
     "predicted_date_end": "2026-09-12",
@@ -9700,8 +9707,8 @@ const EVENTS = [
     "season_confidence": "lowest"
   },
   {
-    "name": "品川区民まつり 品川第二地区",
-    "name_confirmed": true,
+    "name": "城南小学校の盆踊り",
+    "name_confirmed": false,
     "venue": "城南小学校",
     "area": "品川区",
     "months": [
@@ -9714,7 +9721,7 @@ const EVENTS = [
     "lng": 139.74411,
     "date": null,
     "date_end": null,
-    "status": "未確認",
+    "status": null,
     "date_confidence": {
       "level": "unknown",
       "label": "未確認",
@@ -9730,8 +9737,8 @@ const EVENTS = [
     "jun": {
       "7": "下旬"
     },
-    "description": "城南小学校を会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
-    "detail": "2025-07-26 開催実績。2025 7/26 - 27。「品川区民まつり 品川第二地区」7月26日(土)-27日(日) 17時-21時。 「盆踊り・模擬店 ほか」。 踊りは18時-21時。 練習会 7/23(水)・24(木) 19:00-20:45 城南小学校体育館。 (7/23朝 時間他追記)",
+    "description": "城南小学校は、地域の夏祭りや盆踊りで使われる品川区の学校会場。 規模は「小」として整理しています、アクセスは京急本線「青物横丁駅」徒歩圈内（隔接する天妙国寺と同一エリア）。",
+    "detail": "",
     "source_urls": [],
     "songs": [],
     "public_status": "date_unknown",
@@ -9742,8 +9749,7 @@ const EVENTS = [
     "recurrence_score": 0.25,
     "recurrence_reasons": [
       "月ヒントあり",
-      "日付ヒントあり",
-      "未確認"
+      "日付ヒントあり"
     ],
     "recurrence_cautions": [
       "2026年日程なし"
@@ -9909,6 +9915,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-08-22",
         "date_end": "2026-08-22",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第4土曜を2026年へスライド",
         "source_date": "2025-08-23",
         "source_date_end": null,
@@ -9926,6 +9933,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-08-22",
       "date_end": "2026-08-22",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第4土曜を2026年へスライド",
       "source_date": "2025-08-23",
       "source_date_end": null,
@@ -9933,6 +9941,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-08-22",
     "historical_slide_date_end": "2026-08-22",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第4土曜を2026年へスライド",
     "predicted_date": "2026-08-22",
     "predicted_date_end": "2026-08-22",
@@ -10023,6 +10032,63 @@ const EVENTS = [
     "season_confidence": "lowest"
   },
   {
+    "name": "品川区民まつり 品川第二地区",
+    "name_confirmed": true,
+    "venue": "天妙国寺",
+    "area": "品川区",
+    "months": [
+      7
+    ],
+    "scale": "中",
+    "access": "京急本線 青物横丁駅から徒歩5分（新馬場駅・りんかい線品川シーサイド駅からもアクセス可）",
+    "address": "東京都品川区南品川2-8-23",
+    "lat": null,
+    "lng": null,
+    "date": "2026-07-25",
+    "date_end": "2026-07-26",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        7,
+        25
+      ],
+      [
+        7,
+        26
+      ]
+    ],
+    "jun": {
+      "7": "下旬"
+    },
+    "description": "城南小学校を会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
+    "detail": "2025-07-26 開催実績。2025 7/26 - 27。「品川区民まつり 品川第二地区」7月26日(土)-27日(日) 17時-21時。 「盆踊り・模擬店 ほか」。 踊りは18時-21時。 練習会 7/23(水)・24(木) 19:00-20:45 城南小学校体育館。 (7/23朝 時間他追記)",
+    "source_urls": [],
+    "songs": [],
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-07-25〜2026-07-26",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-07-25",
+      "2026-07-26"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
     "name": "品川第二地区 区民まつり・品川青年会 盆踊り大会（天妙国寺）",
     "name_confirmed": true,
     "venue": "天妙国寺",
@@ -10032,9 +10098,9 @@ const EVENTS = [
     ],
     "scale": "中",
     "access": "京急本線 青物横丁駅から徒歩5分（新馬場駅・りんかい線品川シーサイド駅からもアクセス可）",
-    "address": "東京都品川区南品儑2-8-23",
-    "lat": 35.615791,
-    "lng": 139.743256,
+    "address": "東京都品川区南品川2-8-23",
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "確認済み",
@@ -10245,82 +10311,52 @@ const EVENTS = [
     "venue": "小山台小学校",
     "area": "品川区",
     "months": [
-      7
+      7,
+      10
     ],
     "scale": "中",
     "access": "東急目黒線 武蔵小山駅から徒歩4〜5分",
     "address": "東京都品川区小山台1-18-24",
     "lat": 35.622478,
     "lng": 139.703033,
-    "date": null,
+    "date": "2026-10-10",
     "date_end": null,
-    "status": "未確認",
+    "status": "確認済み",
     "date_confidence": {
-      "level": "unknown",
-      "label": "未確認",
-      "description": "開催日はまだ確認できていません"
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
     },
     "date_candidates": [],
     "hints": [
       [
-        7,
-        26
+        10,
+        10
       ]
     ],
     "jun": {
-      "7": "下旬"
+      "10": "上旬"
     },
     "description": "小山台小学校を会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
     "detail": "2025-07-26 開催実績。2025 7/26。「品川区民まつり 荏原第一地区」7月26日(土) 14時-19時。 盆踊りは17:30-18:30。",
     "source_urls": [],
     "songs": [],
-    "public_status": "date_unknown",
-    "public_category": "date_unknown",
-    "public_status_label": "日程未確認",
-    "public_note": "今年の日程は未確認です。",
-    "recurrence_label": "日程未確認",
-    "recurrence_score": 0.25,
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-10-10",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
     "recurrence_reasons": [
-      "月ヒントあり",
-      "日付ヒントあり",
-      "未確認"
+      "2026年日付確認済み"
     ],
-    "recurrence_cautions": [
-      "2026年日程なし"
-    ],
+    "recurrence_cautions": [],
     "edition_number": null,
     "last_seen_year": null,
-    "last_seen_dates": [],
-    "display_tier": "season_hint",
-    "season_hint": {
-      "display_tier": "season_hint",
-      "target_year": 2026,
-      "months": [
-        7
-      ],
-      "jun": {
-        "7": "下旬"
-      },
-      "hints": [
-        [
-          7,
-          26
-        ]
-      ],
-      "label": "7月下旬",
-      "confidence": "lowest",
-      "basis": "例年の開催月・旬ヒント",
-      "has_jun_hint": true,
-      "has_sort_hint": true
-    },
-    "season_months": [
-      7
+    "last_seen_dates": [
+      "2026-10-10"
     ],
-    "season_jun": {
-      "7": "下旬"
-    },
-    "season_hint_label": "7月下旬",
-    "season_confidence": "lowest"
+    "display_tier": "confirmed"
   },
   {
     "name": "中原共和町会 戸越八幡神社祭礼 盆踊り",
@@ -10629,6 +10665,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-10-17",
         "date_end": "2026-10-17",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第3土曜を2026年へスライド",
         "source_date": "2025-10-18",
         "source_date_end": null,
@@ -10646,6 +10683,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-10-17",
       "date_end": "2026-10-17",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第3土曜を2026年へスライド",
       "source_date": "2025-10-18",
       "source_date_end": null,
@@ -10653,6 +10691,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-10-17",
     "historical_slide_date_end": "2026-10-17",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第3土曜を2026年へスライド",
     "predicted_date": "2026-10-17",
     "predicted_date_end": "2026-10-17",
@@ -11253,51 +11292,85 @@ const EVENTS = [
   {
     "name": "品川区民まつり 荏原第五地区",
     "name_confirmed": true,
-    "venue": "杜松ホーム",
+    "venue": "旧杜松小学校",
     "area": "品川区",
     "months": [
-      7
+      8
     ],
     "scale": "中",
     "access": "東急大井町線 戸越公園駅から徒歩約5分。都営浅草線 中延駅から徒歩約8分",
-    "address": "東京都品川区豊町4-24-15",
-    "lat": 35.605442,
-    "lng": 139.722931,
-    "date": "2026-07-18",
-    "date_end": "2026-07-19",
-    "status": "確認済み",
+    "address": "東京都品川区豊町4-22-15",
+    "lat": 35.604641,
+    "lng": 139.721832,
+    "date": null,
+    "date_end": null,
+    "status": "未確認",
     "date_confidence": {
-      "level": "confirmed",
-      "label": "確認済み",
-      "description": "開催日として確認済みです"
+      "level": "unknown",
+      "label": "未確認",
+      "description": "開催日はまだ確認できていません"
     },
     "date_candidates": [],
-    "hints": [],
-    "jun": {},
-    "description": "杜松ホームを会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
-    "detail": "2026年公式情報: 2026-07-18〜2026-07-19、会場 杜松ホーム（東京都品川区豊町4-24-15）。",
-    "source_urls": [
-      {
-        "label": "公式告知あり",
-        "url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
-        "kind": "official"
-      }
+    "hints": [
+      [
+        8,
+        23
+      ]
     ],
+    "jun": {
+      "8": "下旬"
+    },
+    "description": "旧杜松小学校を会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
+    "detail": "2025-08-23 開催実績。2025 8/23 - 24。「品川区民まつり 荏原第五地区」8月23日(土)-24日(日)。 23日(土) 16:00-19:30。 24日(日) 16:00-18:30。 「模擬店・盆踊り・子どもコーナー・ステージ発表 ほか」。 踊りの時間詳細不明。",
+    "source_urls": [],
     "songs": [],
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-07-18〜2026-07-19",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 1.0,
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
     ],
-    "recurrence_cautions": [],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "confirmed"
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        8
+      ],
+      "jun": {
+        "8": "下旬"
+      },
+      "hints": [
+        [
+          8,
+          23
+        ]
+      ],
+      "label": "8月下旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      8
+    ],
+    "season_jun": {
+      "8": "下旬"
+    },
+    "season_hint_label": "8月下旬",
+    "season_confidence": "lowest"
   },
   {
     "name": "しながわ運河まつり ステージプログラム",
@@ -11716,6 +11789,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-09-26",
         "date_end": "2026-09-26",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第4土曜を2026年へスライド",
         "source_date": "2025-09-27",
         "source_date_end": null,
@@ -11733,6 +11807,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-09-26",
       "date_end": "2026-09-26",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第4土曜を2026年へスライド",
       "source_date": "2025-09-27",
       "source_date_end": null,
@@ -11740,6 +11815,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-09-26",
     "historical_slide_date_end": "2026-09-26",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第4土曜を2026年へスライド",
     "predicted_date": "2026-09-26",
     "predicted_date_end": "2026-09-26",
@@ -11828,6 +11904,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-09-12",
         "date_end": "2026-09-12",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第2土曜を2026年へスライド",
         "source_date": "2025-09-13",
         "source_date_end": null,
@@ -11845,6 +11922,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-09-12",
       "date_end": "2026-09-12",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第2土曜を2026年へスライド",
       "source_date": "2025-09-13",
       "source_date_end": null,
@@ -11852,6 +11930,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-09-12",
     "historical_slide_date_end": "2026-09-12",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第2土曜を2026年へスライド",
     "predicted_date": "2026-09-12",
     "predicted_date_end": "2026-09-12",
@@ -11994,6 +12073,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-07-26",
         "date_end": "2026-07-26",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第4日曜を2026年へスライド",
         "source_date": "2025-07-27",
         "source_date_end": null,
@@ -12011,6 +12091,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-07-26",
       "date_end": "2026-07-26",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第4日曜を2026年へスライド",
       "source_date": "2025-07-27",
       "source_date_end": null,
@@ -12018,6 +12099,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-07-26",
     "historical_slide_date_end": "2026-07-26",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第4日曜を2026年へスライド",
     "predicted_date": "2026-07-26",
     "predicted_date_end": "2026-07-26",
@@ -12102,6 +12184,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-08-29",
         "date_end": "2026-08-29",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第5土曜を2026年へスライド",
         "source_date": "2025-08-30",
         "source_date_end": null,
@@ -12119,6 +12202,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-08-29",
       "date_end": "2026-08-29",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第5土曜を2026年へスライド",
       "source_date": "2025-08-30",
       "source_date_end": null,
@@ -12126,6 +12210,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-08-29",
     "historical_slide_date_end": "2026-08-29",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第5土曜を2026年へスライド",
     "predicted_date": "2026-08-29",
     "predicted_date_end": "2026-08-29",
@@ -12208,6 +12293,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-11-22",
         "date_end": "2026-11-22",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第4日曜を2026年へスライド",
         "source_date": "2025-11-23",
         "source_date_end": null,
@@ -12225,6 +12311,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-11-22",
       "date_end": "2026-11-22",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第4日曜を2026年へスライド",
       "source_date": "2025-11-23",
       "source_date_end": null,
@@ -12232,6 +12319,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-11-22",
     "historical_slide_date_end": "2026-11-22",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第4日曜を2026年へスライド",
     "predicted_date": "2026-11-22",
     "predicted_date_end": "2026-11-22",
@@ -12326,6 +12414,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-07-15",
         "date_end": "2026-07-15",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第3水曜を2026年へスライド",
         "source_date": "2025-07-16",
         "source_date_end": null,
@@ -12343,6 +12432,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-07-15",
       "date_end": "2026-07-15",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第3水曜を2026年へスライド",
       "source_date": "2025-07-16",
       "source_date_end": null,
@@ -12350,6 +12440,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-07-15",
     "historical_slide_date_end": "2026-07-15",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第3水曜を2026年へスライド",
     "predicted_date": "2026-07-15",
     "predicted_date_end": "2026-07-15",
@@ -12816,6 +12907,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-07-28",
         "date_end": "2026-07-28",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第5火曜を2026年へスライド",
         "source_date": "2025-07-29",
         "source_date_end": null,
@@ -12833,6 +12925,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-07-28",
       "date_end": "2026-07-28",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第5火曜を2026年へスライド",
       "source_date": "2025-07-29",
       "source_date_end": null,
@@ -12840,6 +12933,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-07-28",
     "historical_slide_date_end": "2026-07-28",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第5火曜を2026年へスライド",
     "predicted_date": "2026-07-28",
     "predicted_date_end": "2026-07-28",
@@ -12932,6 +13026,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-07-20",
         "date_end": "2026-07-20",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第3月曜を2026年へスライド",
         "source_date": "2025-07-21",
         "source_date_end": null,
@@ -12949,6 +13044,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-07-20",
       "date_end": "2026-07-20",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第3月曜を2026年へスライド",
       "source_date": "2025-07-21",
       "source_date_end": null,
@@ -12956,6 +13052,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-07-20",
     "historical_slide_date_end": "2026-07-20",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第3月曜を2026年へスライド",
     "predicted_date": "2026-07-20",
     "predicted_date_end": "2026-07-20",
@@ -13048,6 +13145,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-07-23",
         "date_end": "2026-07-23",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第4木曜を2026年へスライド",
         "source_date": "2025-07-24",
         "source_date_end": null,
@@ -13065,6 +13163,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-07-23",
       "date_end": "2026-07-23",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第4木曜を2026年へスライド",
       "source_date": "2025-07-24",
       "source_date_end": null,
@@ -13072,6 +13171,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-07-23",
     "historical_slide_date_end": "2026-07-23",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第4木曜を2026年へスライド",
     "predicted_date": "2026-07-23",
     "predicted_date_end": "2026-07-23",
@@ -13160,6 +13260,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-08-01",
         "date_end": "2026-08-01",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第1土曜を2026年へスライド",
         "source_date": "2025-08-02",
         "source_date_end": null,
@@ -13177,6 +13278,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-08-01",
       "date_end": "2026-08-01",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第1土曜を2026年へスライド",
       "source_date": "2025-08-02",
       "source_date_end": null,
@@ -13184,6 +13286,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-08-01",
     "historical_slide_date_end": "2026-08-01",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第1土曜を2026年へスライド",
     "predicted_date": "2026-08-01",
     "predicted_date_end": "2026-08-01",
@@ -13276,6 +13379,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-07-17",
         "date_end": "2026-07-17",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第3金曜を2026年へスライド",
         "source_date": "2025-07-18",
         "source_date_end": null,
@@ -13293,6 +13397,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-07-17",
       "date_end": "2026-07-17",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第3金曜を2026年へスライド",
       "source_date": "2025-07-18",
       "source_date_end": null,
@@ -13300,6 +13405,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-07-17",
     "historical_slide_date_end": "2026-07-17",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第3金曜を2026年へスライド",
     "predicted_date": "2026-07-17",
     "predicted_date_end": "2026-07-17",
@@ -13392,6 +13498,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-07-25",
         "date_end": "2026-07-25",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第4土曜を2026年へスライド",
         "source_date": "2025-07-26",
         "source_date_end": null,
@@ -13409,6 +13516,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-07-25",
       "date_end": "2026-07-25",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第4土曜を2026年へスライド",
       "source_date": "2025-07-26",
       "source_date_end": null,
@@ -13416,6 +13524,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-07-25",
     "historical_slide_date_end": "2026-07-25",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第4土曜を2026年へスライド",
     "predicted_date": "2026-07-25",
     "predicted_date_end": "2026-07-25",
@@ -13504,6 +13613,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-07-12",
         "date_end": "2026-07-12",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第2日曜を2026年へスライド",
         "source_date": "2025-07-13",
         "source_date_end": null,
@@ -13521,6 +13631,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-07-12",
       "date_end": "2026-07-12",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第2日曜を2026年へスライド",
       "source_date": "2025-07-13",
       "source_date_end": null,
@@ -13528,6 +13639,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-07-12",
     "historical_slide_date_end": "2026-07-12",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第2日曜を2026年へスライド",
     "predicted_date": "2026-07-12",
     "predicted_date_end": "2026-07-12",
@@ -13622,6 +13734,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-07-10",
         "date_end": "2026-07-10",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第2金曜を2026年へスライド",
         "source_date": "2025-07-11",
         "source_date_end": null,
@@ -13639,6 +13752,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-07-10",
       "date_end": "2026-07-10",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第2金曜を2026年へスライド",
       "source_date": "2025-07-11",
       "source_date_end": null,
@@ -13646,6 +13760,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-07-10",
     "historical_slide_date_end": "2026-07-10",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第2金曜を2026年へスライド",
     "predicted_date": "2026-07-10",
     "predicted_date_end": "2026-07-10",
@@ -13738,6 +13853,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-07-20",
         "date_end": "2026-07-20",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第3月曜を2026年へスライド",
         "source_date": "2025-07-21",
         "source_date_end": null,
@@ -13755,6 +13871,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-07-20",
       "date_end": "2026-07-20",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第3月曜を2026年へスライド",
       "source_date": "2025-07-21",
       "source_date_end": null,
@@ -13762,6 +13879,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-07-20",
     "historical_slide_date_end": "2026-07-20",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第3月曜を2026年へスライド",
     "predicted_date": "2026-07-20",
     "predicted_date_end": "2026-07-20",
@@ -13854,6 +13972,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-07-27",
         "date_end": "2026-07-27",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第4月曜を2026年へスライド",
         "source_date": "2025-07-28",
         "source_date_end": null,
@@ -13871,6 +13990,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-07-27",
       "date_end": "2026-07-27",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第4月曜を2026年へスライド",
       "source_date": "2025-07-28",
       "source_date_end": null,
@@ -13878,6 +13998,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-07-27",
     "historical_slide_date_end": "2026-07-27",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第4月曜を2026年へスライド",
     "predicted_date": "2026-07-27",
     "predicted_date_end": "2026-07-27",
@@ -14060,6 +14181,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-07-18",
         "date_end": "2026-07-18",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第3土曜を2026年へスライド",
         "source_date": "2025-07-19",
         "source_date_end": null,
@@ -14077,6 +14199,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-07-18",
       "date_end": "2026-07-18",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第3土曜を2026年へスライド",
       "source_date": "2025-07-19",
       "source_date_end": null,
@@ -14084,6 +14207,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-07-18",
     "historical_slide_date_end": "2026-07-18",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第3土曜を2026年へスライド",
     "predicted_date": "2026-07-18",
     "predicted_date_end": "2026-07-18",
@@ -14174,6 +14298,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-08-22",
         "date_end": "2026-08-22",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第4土曜を2026年へスライド",
         "source_date": "2025-08-23",
         "source_date_end": null,
@@ -14191,6 +14316,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-08-22",
       "date_end": "2026-08-22",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第4土曜を2026年へスライド",
       "source_date": "2025-08-23",
       "source_date_end": null,
@@ -14198,6 +14324,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-08-22",
     "historical_slide_date_end": "2026-08-22",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第4土曜を2026年へスライド",
     "predicted_date": "2026-08-22",
     "predicted_date_end": "2026-08-22",
@@ -14288,6 +14415,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-07-18",
         "date_end": "2026-07-18",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第3土曜を2026年へスライド",
         "source_date": "2025-07-19",
         "source_date_end": null,
@@ -14305,6 +14433,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-07-18",
       "date_end": "2026-07-18",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第3土曜を2026年へスライド",
       "source_date": "2025-07-19",
       "source_date_end": null,
@@ -14312,6 +14441,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-07-18",
     "historical_slide_date_end": "2026-07-18",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第3土曜を2026年へスライド",
     "predicted_date": "2026-07-18",
     "predicted_date_end": "2026-07-18",
@@ -14407,6 +14537,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-08-08",
         "date_end": "2026-08-08",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第2土曜を2026年へスライド",
         "source_date": "2025-08-09",
         "source_date_end": null,
@@ -14424,6 +14555,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-08-08",
       "date_end": "2026-08-08",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第2土曜を2026年へスライド",
       "source_date": "2025-08-09",
       "source_date_end": null,
@@ -14431,6 +14563,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-08-08",
     "historical_slide_date_end": "2026-08-08",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第2土曜を2026年へスライド",
     "predicted_date": "2026-08-08",
     "predicted_date_end": "2026-08-08",
@@ -14521,6 +14654,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-08-16",
         "date_end": "2026-08-16",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第3日曜を2026年へスライド",
         "source_date": "2025-08-17",
         "source_date_end": null,
@@ -14538,6 +14672,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-08-16",
       "date_end": "2026-08-16",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第3日曜を2026年へスライド",
       "source_date": "2025-08-17",
       "source_date_end": null,
@@ -14545,6 +14680,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-08-16",
     "historical_slide_date_end": "2026-08-16",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第3日曜を2026年へスライド",
     "predicted_date": "2026-08-16",
     "predicted_date_end": "2026-08-16",
@@ -14633,6 +14769,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-07-24",
         "date_end": "2026-07-24",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第4金曜を2026年へスライド",
         "source_date": "2025-07-25",
         "source_date_end": null,
@@ -14650,6 +14787,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-07-24",
       "date_end": "2026-07-24",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第4金曜を2026年へスライド",
       "source_date": "2025-07-25",
       "source_date_end": null,
@@ -14657,6 +14795,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-07-24",
     "historical_slide_date_end": "2026-07-24",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第4金曜を2026年へスライド",
     "predicted_date": "2026-07-24",
     "predicted_date_end": "2026-07-24",
@@ -14752,6 +14891,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-07-24",
         "date_end": "2026-07-24",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第4金曜を2026年へスライド",
         "source_date": "2025-07-25",
         "source_date_end": null,
@@ -14769,6 +14909,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-07-24",
       "date_end": "2026-07-24",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第4金曜を2026年へスライド",
       "source_date": "2025-07-25",
       "source_date_end": null,
@@ -14776,6 +14917,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-07-24",
     "historical_slide_date_end": "2026-07-24",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第4金曜を2026年へスライド",
     "predicted_date": "2026-07-24",
     "predicted_date_end": "2026-07-24",
@@ -14866,6 +15008,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-07-11",
         "date_end": "2026-07-11",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第2土曜を2026年へスライド",
         "source_date": "2025-07-12",
         "source_date_end": null,
@@ -14883,6 +15026,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-07-11",
       "date_end": "2026-07-11",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第2土曜を2026年へスライド",
       "source_date": "2025-07-12",
       "source_date_end": null,
@@ -14890,6 +15034,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-07-11",
     "historical_slide_date_end": "2026-07-11",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第2土曜を2026年へスライド",
     "predicted_date": "2026-07-11",
     "predicted_date_end": "2026-07-11",
@@ -14990,6 +15135,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-07-25",
         "date_end": "2026-07-25",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第4土曜を2026年へスライド",
         "source_date": "2025-07-26",
         "source_date_end": null,
@@ -15007,6 +15153,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-07-25",
       "date_end": "2026-07-25",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第4土曜を2026年へスライド",
       "source_date": "2025-07-26",
       "source_date_end": null,
@@ -15014,6 +15161,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-07-25",
     "historical_slide_date_end": "2026-07-25",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第4土曜を2026年へスライド",
     "predicted_date": "2026-07-25",
     "predicted_date_end": "2026-07-25",
@@ -15105,6 +15253,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-08-16",
         "date_end": "2026-08-16",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第3日曜を2026年へスライド",
         "source_date": "2025-08-17",
         "source_date_end": null,
@@ -15122,6 +15271,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-08-16",
       "date_end": "2026-08-16",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第3日曜を2026年へスライド",
       "source_date": "2025-08-17",
       "source_date_end": null,
@@ -15129,6 +15279,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-08-16",
     "historical_slide_date_end": "2026-08-16",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第3日曜を2026年へスライド",
     "predicted_date": "2026-08-16",
     "predicted_date_end": "2026-08-16",
@@ -15219,6 +15370,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-07-19",
         "date_end": "2026-07-19",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第3日曜を2026年へスライド",
         "source_date": "2025-07-20",
         "source_date_end": null,
@@ -15236,6 +15388,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-07-19",
       "date_end": "2026-07-19",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第3日曜を2026年へスライド",
       "source_date": "2025-07-20",
       "source_date_end": null,
@@ -15243,6 +15396,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-07-19",
     "historical_slide_date_end": "2026-07-19",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第3日曜を2026年へスライド",
     "predicted_date": "2026-07-19",
     "predicted_date_end": "2026-07-19",
@@ -15331,6 +15485,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-07-25",
         "date_end": "2026-07-25",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第4土曜を2026年へスライド",
         "source_date": "2025-07-26",
         "source_date_end": null,
@@ -15348,6 +15503,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-07-25",
       "date_end": "2026-07-25",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第4土曜を2026年へスライド",
       "source_date": "2025-07-26",
       "source_date_end": null,
@@ -15355,6 +15511,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-07-25",
     "historical_slide_date_end": "2026-07-25",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第4土曜を2026年へスライド",
     "predicted_date": "2026-07-25",
     "predicted_date_end": "2026-07-25",
@@ -15447,6 +15604,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-07-18",
         "date_end": "2026-07-18",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第3土曜を2026年へスライド",
         "source_date": "2025-07-19",
         "source_date_end": null,
@@ -15464,6 +15622,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-07-18",
       "date_end": "2026-07-18",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第3土曜を2026年へスライド",
       "source_date": "2025-07-19",
       "source_date_end": null,
@@ -15471,6 +15630,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-07-18",
     "historical_slide_date_end": "2026-07-18",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第3土曜を2026年へスライド",
     "predicted_date": "2026-07-18",
     "predicted_date_end": "2026-07-18",
@@ -15564,6 +15724,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-07-25",
         "date_end": "2026-07-25",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第4土曜を2026年へスライド",
         "source_date": "2025-07-26",
         "source_date_end": null,
@@ -15581,6 +15742,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-07-25",
       "date_end": "2026-07-25",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第4土曜を2026年へスライド",
       "source_date": "2025-07-26",
       "source_date_end": null,
@@ -15588,6 +15750,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-07-25",
     "historical_slide_date_end": "2026-07-25",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第4土曜を2026年へスライド",
     "predicted_date": "2026-07-25",
     "predicted_date_end": "2026-07-25",
@@ -15676,6 +15839,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-07-25",
         "date_end": "2026-07-25",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第4土曜を2026年へスライド",
         "source_date": "2025-07-26",
         "source_date_end": null,
@@ -15693,6 +15857,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-07-25",
       "date_end": "2026-07-25",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第4土曜を2026年へスライド",
       "source_date": "2025-07-26",
       "source_date_end": null,
@@ -15700,6 +15865,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-07-25",
     "historical_slide_date_end": "2026-07-25",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第4土曜を2026年へスライド",
     "predicted_date": "2026-07-25",
     "predicted_date_end": "2026-07-25",
@@ -15788,6 +15954,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-07-18",
         "date_end": "2026-07-18",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第3土曜を2026年へスライド",
         "source_date": "2025-07-19",
         "source_date_end": null,
@@ -15805,6 +15972,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-07-18",
       "date_end": "2026-07-18",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第3土曜を2026年へスライド",
       "source_date": "2025-07-19",
       "source_date_end": null,
@@ -15812,6 +15980,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-07-18",
     "historical_slide_date_end": "2026-07-18",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第3土曜を2026年へスライド",
     "predicted_date": "2026-07-18",
     "predicted_date_end": "2026-07-18",
@@ -15900,6 +16069,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-07-18",
         "date_end": "2026-07-18",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第3土曜を2026年へスライド",
         "source_date": "2025-07-19",
         "source_date_end": null,
@@ -15917,6 +16087,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-07-18",
       "date_end": "2026-07-18",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第3土曜を2026年へスライド",
       "source_date": "2025-07-19",
       "source_date_end": null,
@@ -15924,6 +16095,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-07-18",
     "historical_slide_date_end": "2026-07-18",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第3土曜を2026年へスライド",
     "predicted_date": "2026-07-18",
     "predicted_date_end": "2026-07-18",
@@ -16012,6 +16184,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-07-25",
         "date_end": "2026-07-25",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第4土曜を2026年へスライド",
         "source_date": "2025-07-26",
         "source_date_end": null,
@@ -16029,6 +16202,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-07-25",
       "date_end": "2026-07-25",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第4土曜を2026年へスライド",
       "source_date": "2025-07-26",
       "source_date_end": null,
@@ -16036,6 +16210,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-07-25",
     "historical_slide_date_end": "2026-07-25",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第4土曜を2026年へスライド",
     "predicted_date": "2026-07-25",
     "predicted_date_end": "2026-07-25",
@@ -16130,6 +16305,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-07-25",
         "date_end": "2026-07-25",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第4土曜を2026年へスライド",
         "source_date": "2025-07-26",
         "source_date_end": null,
@@ -16147,6 +16323,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-07-25",
       "date_end": "2026-07-25",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第4土曜を2026年へスライド",
       "source_date": "2025-07-26",
       "source_date_end": null,
@@ -16154,6 +16331,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-07-25",
     "historical_slide_date_end": "2026-07-25",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第4土曜を2026年へスライド",
     "predicted_date": "2026-07-25",
     "predicted_date_end": "2026-07-25",
@@ -16242,6 +16420,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-08-07",
         "date_end": "2026-08-07",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第1金曜を2026年へスライド",
         "source_date": "2025-08-01",
         "source_date_end": null,
@@ -16259,6 +16438,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-08-07",
       "date_end": "2026-08-07",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第1金曜を2026年へスライド",
       "source_date": "2025-08-01",
       "source_date_end": null,
@@ -16266,6 +16446,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-08-07",
     "historical_slide_date_end": "2026-08-07",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第1金曜を2026年へスライド",
     "predicted_date": "2026-08-07",
     "predicted_date_end": "2026-08-07",
@@ -16356,6 +16537,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-08-15",
         "date_end": "2026-08-15",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第3土曜を2026年へスライド",
         "source_date": "2025-08-16",
         "source_date_end": null,
@@ -16373,6 +16555,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-08-15",
       "date_end": "2026-08-15",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第3土曜を2026年へスライド",
       "source_date": "2025-08-16",
       "source_date_end": null,
@@ -16380,6 +16563,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-08-15",
     "historical_slide_date_end": "2026-08-15",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第3土曜を2026年へスライド",
     "predicted_date": "2026-08-15",
     "predicted_date_end": "2026-08-15",
@@ -16471,6 +16655,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-07-18",
         "date_end": "2026-07-18",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第3土曜を2026年へスライド",
         "source_date": "2025-07-19",
         "source_date_end": null,
@@ -16488,6 +16673,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-07-18",
       "date_end": "2026-07-18",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第3土曜を2026年へスライド",
       "source_date": "2025-07-19",
       "source_date_end": null,
@@ -16495,6 +16681,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-07-18",
     "historical_slide_date_end": "2026-07-18",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第3土曜を2026年へスライド",
     "predicted_date": "2026-07-18",
     "predicted_date_end": "2026-07-18",
@@ -16587,6 +16774,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-08-07",
         "date_end": "2026-08-07",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第1金曜を2026年へスライド",
         "source_date": "2025-08-01",
         "source_date_end": null,
@@ -16604,6 +16792,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-08-07",
       "date_end": "2026-08-07",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第1金曜を2026年へスライド",
       "source_date": "2025-08-01",
       "source_date_end": null,
@@ -16611,6 +16800,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-08-07",
     "historical_slide_date_end": "2026-08-07",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第1金曜を2026年へスライド",
     "predicted_date": "2026-08-07",
     "predicted_date_end": "2026-08-07",
@@ -16705,6 +16895,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-07-18",
         "date_end": "2026-07-18",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第3土曜を2026年へスライド",
         "source_date": "2025-07-19",
         "source_date_end": null,
@@ -16722,6 +16913,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-07-18",
       "date_end": "2026-07-18",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第3土曜を2026年へスライド",
       "source_date": "2025-07-19",
       "source_date_end": null,
@@ -16729,6 +16921,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-07-18",
     "historical_slide_date_end": "2026-07-18",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第3土曜を2026年へスライド",
     "predicted_date": "2026-07-18",
     "predicted_date_end": "2026-07-18",
@@ -16822,6 +17015,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-07-17",
         "date_end": "2026-07-17",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第3金曜を2026年へスライド",
         "source_date": "2025-07-18",
         "source_date_end": null,
@@ -16839,6 +17033,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-07-17",
       "date_end": "2026-07-17",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第3金曜を2026年へスライド",
       "source_date": "2025-07-18",
       "source_date_end": null,
@@ -16846,6 +17041,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-07-17",
     "historical_slide_date_end": "2026-07-17",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第3金曜を2026年へスライド",
     "predicted_date": "2026-07-17",
     "predicted_date_end": "2026-07-17",
@@ -16940,6 +17136,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-07-25",
         "date_end": "2026-07-25",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第4土曜を2026年へスライド",
         "source_date": "2025-07-26",
         "source_date_end": null,
@@ -16957,6 +17154,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-07-25",
       "date_end": "2026-07-25",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第4土曜を2026年へスライド",
       "source_date": "2025-07-26",
       "source_date_end": null,
@@ -16964,6 +17162,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-07-25",
     "historical_slide_date_end": "2026-07-25",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第4土曜を2026年へスライド",
     "predicted_date": "2026-07-25",
     "predicted_date_end": "2026-07-25",
@@ -17054,6 +17253,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-07-25",
         "date_end": "2026-07-25",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第4土曜を2026年へスライド",
         "source_date": "2025-07-26",
         "source_date_end": null,
@@ -17071,6 +17271,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-07-25",
       "date_end": "2026-07-25",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第4土曜を2026年へスライド",
       "source_date": "2025-07-26",
       "source_date_end": null,
@@ -17078,6 +17279,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-07-25",
     "historical_slide_date_end": "2026-07-25",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第4土曜を2026年へスライド",
     "predicted_date": "2026-07-25",
     "predicted_date_end": "2026-07-25",
@@ -17170,6 +17372,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-08-01",
         "date_end": "2026-08-01",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第1土曜を2026年へスライド",
         "source_date": "2025-08-02",
         "source_date_end": null,
@@ -17187,6 +17390,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-08-01",
       "date_end": "2026-08-01",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第1土曜を2026年へスライド",
       "source_date": "2025-08-02",
       "source_date_end": null,
@@ -17194,6 +17398,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-08-01",
     "historical_slide_date_end": "2026-08-01",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第1土曜を2026年へスライド",
     "predicted_date": "2026-08-01",
     "predicted_date_end": "2026-08-01",
@@ -17285,6 +17490,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-08-02",
         "date_end": "2026-08-02",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第1日曜を2026年へスライド",
         "source_date": "2025-08-03",
         "source_date_end": null,
@@ -17302,6 +17508,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-08-02",
       "date_end": "2026-08-02",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第1日曜を2026年へスライド",
       "source_date": "2025-08-03",
       "source_date_end": null,
@@ -17309,6 +17516,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-08-02",
     "historical_slide_date_end": "2026-08-02",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第1日曜を2026年へスライド",
     "predicted_date": "2026-08-02",
     "predicted_date_end": "2026-08-02",
@@ -17395,6 +17603,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-08-09",
         "date_end": "2026-08-09",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第2日曜を2026年へスライド",
         "source_date": "2025-08-10",
         "source_date_end": null,
@@ -17412,6 +17621,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-08-09",
       "date_end": "2026-08-09",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第2日曜を2026年へスライド",
       "source_date": "2025-08-10",
       "source_date_end": null,
@@ -17419,6 +17629,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-08-09",
     "historical_slide_date_end": "2026-08-09",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第2日曜を2026年へスライド",
     "predicted_date": "2026-08-09",
     "predicted_date_end": "2026-08-09",
@@ -17513,6 +17724,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-07-24",
         "date_end": "2026-07-25",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第4金曜を2026年へスライド",
         "source_date": "2025-07-25",
         "source_date_end": "2025-07-26",
@@ -17531,6 +17743,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-07-24",
       "date_end": "2026-07-25",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第4金曜を2026年へスライド",
       "source_date": "2025-07-25",
       "source_date_end": "2025-07-26",
@@ -17538,6 +17751,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-07-24",
     "historical_slide_date_end": "2026-07-25",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第4金曜を2026年へスライド",
     "predicted_date": "2026-07-24",
     "predicted_date_end": "2026-07-25",
@@ -17634,6 +17848,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-08-01",
         "date_end": "2026-08-01",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第1土曜を2026年へスライド",
         "source_date": "2025-08-02",
         "source_date_end": "2025-08-02",
@@ -17652,6 +17867,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-08-01",
       "date_end": "2026-08-01",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第1土曜を2026年へスライド",
       "source_date": "2025-08-02",
       "source_date_end": "2025-08-02",
@@ -17659,6 +17875,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-08-01",
     "historical_slide_date_end": "2026-08-01",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第1土曜を2026年へスライド",
     "predicted_date": "2026-08-01",
     "predicted_date_end": "2026-08-01",
@@ -18725,6 +18942,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-07-04",
         "date_end": "2026-07-04",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第1土曜を2026年へスライド",
         "source_date": "2025-07-05",
         "source_date_end": null,
@@ -18742,6 +18960,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-07-04",
       "date_end": "2026-07-04",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第1土曜を2026年へスライド",
       "source_date": "2025-07-05",
       "source_date_end": null,
@@ -18749,6 +18968,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-07-04",
     "historical_slide_date_end": "2026-07-04",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第1土曜を2026年へスライド",
     "predicted_date": "2026-07-04",
     "predicted_date_end": "2026-07-04",
@@ -18849,6 +19069,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-09-13",
         "date_end": "2026-09-14",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第2日曜を2026年へスライド",
         "source_date": "2025-09-14",
         "source_date_end": "2025-09-15",
@@ -18867,6 +19088,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-09-13",
       "date_end": "2026-09-14",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第2日曜を2026年へスライド",
       "source_date": "2025-09-14",
       "source_date_end": "2025-09-15",
@@ -18874,6 +19096,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-09-13",
     "historical_slide_date_end": "2026-09-14",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第2日曜を2026年へスライド",
     "predicted_date": "2026-09-13",
     "predicted_date_end": "2026-09-14",
@@ -19088,6 +19311,7 @@ const EVENTS = [
       "slide": {
         "date": "2026-06-20",
         "date_end": "2026-06-20",
+        "method": "same_weekday",
         "basis": "2025年実績の同月第3土曜を2026年へスライド",
         "source_date": "2025-06-21",
         "source_date_end": null,
@@ -19105,6 +19329,7 @@ const EVENTS = [
     "historical_slide": {
       "date": "2026-06-20",
       "date_end": "2026-06-20",
+      "method": "same_weekday",
       "basis": "2025年実績の同月第3土曜を2026年へスライド",
       "source_date": "2025-06-21",
       "source_date_end": null,
@@ -19112,6 +19337,7 @@ const EVENTS = [
     },
     "historical_slide_date": "2026-06-20",
     "historical_slide_date_end": "2026-06-20",
+    "historical_slide_method": "same_weekday",
     "historical_slide_basis": "2025年実績の同月第3土曜を2026年へスライド",
     "predicted_date": "2026-06-20",
     "predicted_date_end": "2026-06-20",

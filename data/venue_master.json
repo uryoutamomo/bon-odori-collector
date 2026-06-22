@@ -362,7 +362,7 @@
   {
     "venue": "城南小学校",
     "region": "品川区",
-    "month": "7月",
+    "month": null,
     "scale": "小",
     "access": "京急本線「青物横丁駅」徒歩圈内（隔接する天妙国寺と同一エリア）",
     "in_tsukiji_30min": true,
@@ -494,7 +494,7 @@
   {
     "venue": "小山台小学校",
     "region": "品川区",
-    "month": "7月",
+    "month": "7月,10月",
     "scale": "中",
     "access": "東急目黒線 武蔵小山駅から徒歩4〜5分",
     "in_tsukiji_30min": true,
