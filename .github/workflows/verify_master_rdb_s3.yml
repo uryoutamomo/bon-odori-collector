@@ -1,0 +1,48 @@
+name: verify-master-rdb-s3
+
+on:
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v6
+        with:
+          role-to-assume: ${{ vars.AWS_ROLE_ARN }}
+          aws-region: ap-northeast-1
+
+      - name: Fetch master RDB artifact
+        env:
+          MASTER_DB_S3_BUCKET: ${{ vars.MASTER_DB_S3_BUCKET }}
+          MASTER_DB_S3_PREFIX: ${{ vars.MASTER_DB_S3_PREFIX || 'master-rdb' }}
+          AWS_REGION: ap-northeast-1
+        run: python master_db_s3_artifact.py fetch --overwrite
+
+      - name: Audit fetched master RDB
+        run: |
+          python audit_master_rdb.py \
+            --db data/bon_odori_master.sqlite \
+            --out-json /tmp/master_rdb_s3_verify_audit.json \
+            --out-md /tmp/master_rdb_s3_verify_audit.md
+
+      - name: Verify fetched DB stays untracked
+        run: |
+          git check-ignore -v data/bon_odori_master.sqlite
+          test -z "$(git status --short data/bon_odori_master.sqlite)"
