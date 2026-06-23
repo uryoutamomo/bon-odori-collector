@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T07:03:30.907180+00:00",
+  "generated_at": "2026-06-23T07:11:57.194777+00:00",
   "accounts": {
     "2tsuo_g": {
       "handle": "@2tsuo_g",
@@ -24377,6 +24377,43 @@
       "noise_posts": 0,
       "value_points": 14.0,
       "last_seen": "2026-06-12T23:50:49+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1,
+        "date_time": 1,
+        "experience": 1,
+        "link": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 14.0,
+      "lifetime_score": 14.4,
+      "recent_score": 14.4,
+      "recent_days": 30,
+      "quality_score": 14.4,
+      "score": 14.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 45.8,
+      "role_tags": [
+        "裏取り型",
+        "参加レポ型"
+      ]
+    },
+    "teikyo_u_kg": {
+      "handle": "@teikyo_u_kg",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 14.0,
+      "last_seen": "2026-06-23T07:05:16+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1,

@@ -1,9 +1,9 @@
 {
   "generated_by": "build_retrospective_harvest.py",
-  "generated_at": "2026-06-23T07:07:01.586281+00:00",
+  "generated_at": "2026-06-23T07:15:45.909731+00:00",
   "source": "data/voices.json",
-  "voice_count": 8012,
-  "classified_event_evidence_count": 1510,
+  "voice_count": 8013,
+  "classified_event_evidence_count": 1511,
   "candidate_count": 1497,
   "counts": {
     "by_kind": {

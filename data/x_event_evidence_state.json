@@ -1,7 +1,7 @@
 {
   "status": "awaiting_review",
-  "window_start": "2026-03-03T00:00:00+00:00",
-  "window_end": "2026-03-17T00:00:00+00:00",
+  "window_start": "2026-03-17T00:00:00+00:00",
+  "window_end": "2026-03-31T00:00:00+00:00",
   "selected_handles": [
     "@2tsuo_g",
     "@5khfya5pjksggov",
@@ -62,12 +62,12 @@
     1,
     2
   ],
-  "pages_completed": 47,
-  "tweets_scanned": 844,
-  "evidence_detected": 151,
+  "pages_completed": 49,
+  "tweets_scanned": 901,
+  "evidence_detected": 142,
   "pending_evidence": [],
-  "started_at": "2026-06-23T07:03:31.621181+00:00",
-  "updated_at": "2026-06-23T07:06:24.939178+00:00",
+  "started_at": "2026-06-23T07:11:57.821265+00:00",
+  "updated_at": "2026-06-23T07:14:49.935438+00:00",
   "window_history": [
     {
       "window_start": "2025-06-10T00:00:00+00:00",
@@ -277,10 +277,21 @@
       "pages_completed": 47,
       "tweets_scanned": 858,
       "evidence_detected": 159
+    },
+    {
+      "window_start": "2026-03-03T00:00:00+00:00",
+      "window_end": "2026-03-17T00:00:00+00:00",
+      "covered_until": "2026-03-17T00:00:00+00:00",
+      "completed_at": "2026-06-23T07:06:24.945264+00:00",
+      "reviewed_at": "2026-06-23T07:11:57.821265+00:00",
+      "review_note": "auto-advance continuous event evidence window",
+      "pages_completed": 47,
+      "tweets_scanned": 844,
+      "evidence_detected": 151
     }
   ],
-  "previous_covered_until": "2026-03-03T00:00:00+00:00",
-  "completed_at": "2026-06-23T07:06:24.945264+00:00",
-  "covered_until": "2026-03-17T00:00:00+00:00",
-  "pending_cleared_at": "2026-06-23T07:06:35.156152+00:00"
+  "previous_covered_until": "2026-03-17T00:00:00+00:00",
+  "completed_at": "2026-06-23T07:14:49.941040+00:00",
+  "covered_until": "2026-03-31T00:00:00+00:00",
+  "pending_cleared_at": "2026-06-23T07:15:01.301912+00:00"
 }
