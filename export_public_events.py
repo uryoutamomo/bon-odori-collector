@@ -1242,7 +1242,7 @@ def suppress_replaced_recurring_events(events):
 
 
 def main():
-    if not os.environ.get("NOTION_API_TOKEN"):
+    if PUBLIC_SOURCE in {"notion", "legacy_notion"} and not os.environ.get("NOTION_API_TOKEN"):
         print("Notion未設定 (NOTION_API_TOKEN) のためイベント公開エクスポートをスキップ")
         return
     try:
