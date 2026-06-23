@@ -1,8 +1,8 @@
 """Dry-run apply Ph2 event occurrence mutations on a copied SQLite DB.
 
-By default this script never writes to Notion, public JSON, or the source master
-DB. It copies the master DB, applies only unblocked mutations from the Ph2 apply
-plan, and records equivalent Notion sync jobs in the copied DB for review.
+By default this script never writes to Notion, queues Notion sync jobs, writes
+public JSON, or touches the source master DB. It copies the master DB and
+applies only unblocked mutations from the Ph2 apply plan.
 
 The source master DB can only be updated with an explicit --apply invocation
 that names exactly one event and repeats the required confirmation phrase.
@@ -118,7 +118,7 @@ def exact_venue_id(mutation):
     return matches[0]["venue_id"]
 
 
-def apply_current_official(conn, mutation, now, notion_direction="rdb_to_notion_dry_run"):
+def apply_current_official(conn, mutation, now):
     target = mutation["target"]
     proposed = mutation["proposed"]
     occurrence_id = target["occurrence_id"]
@@ -166,29 +166,6 @@ def apply_current_official(conn, mutation, now, notion_direction="rdb_to_notion_
         ),
     )
 
-    notion_payload = dict(mutation.get("notion_payload") or {})
-    notion_payload["direction"] = notion_direction
-    job_id = stable_id("nsj", occurrence_id, proposed["date_start"], proposed["source_url"])
-    conn.execute(
-        """
-        INSERT OR REPLACE INTO notion_sync_jobs(
-          job_id, direction, target_table, target_id, notion_source_key,
-          notion_page_id, status, requested_by, requested_at, payload_json
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-        """,
-        (
-            job_id,
-            notion_direction,
-            "event_occurrences",
-            occurrence_id,
-            "events",
-            mutation["notion_page_id"],
-            "pending",
-            "dry_run_ph2_event_occurrence_apply.py",
-            now,
-            json.dumps(notion_payload, ensure_ascii=False, sort_keys=True),
-        ),
-    )
     after = target_occurrence(conn, occurrence_id)
     return {
         "mutation_type": mutation["mutation_type"],
@@ -199,7 +176,8 @@ def apply_current_official(conn, mutation, now, notion_direction="rdb_to_notion_
         "before": before,
         "after": after,
         "inserted_occurrence_date_id": occurrence_date_id,
-        "inserted_notion_sync_job_id": job_id,
+        "inserted_notion_sync_job_id": "",
+        "notion_sync_job_queued": False,
     }
 
 
@@ -366,9 +344,9 @@ def select_mutations(plan, event_name=None, include_blocked=False, mutation_type
     return selected, skipped
 
 
-def apply_mutation(conn, mutation, now, notion_direction):
+def apply_mutation(conn, mutation, now):
     if mutation.get("mutation_type") == MUTATION_TYPES["current_official"]:
-        return apply_current_official(conn, mutation, now, notion_direction)
+        return apply_current_official(conn, mutation, now)
     if mutation.get("mutation_type") == MUTATION_TYPES["historical_reference"]:
         return apply_historical_reference(conn, mutation, now)
     raise ValueError(f"unsupported mutation_type: {mutation.get('mutation_type')}")
@@ -388,7 +366,6 @@ def run(args):
     target_db = Path(args.master_db if args.apply else args.out_db)
     backup_path = ""
     now = datetime.now(timezone.utc).isoformat()
-    notion_direction = "rdb_to_notion" if args.apply else "rdb_to_notion_dry_run"
     if not args.apply:
         copy_db(args.master_db, args.out_db)
     else:
@@ -399,7 +376,7 @@ def run(args):
     with sqlite3.connect(target_db) as conn:
         conn.execute("PRAGMA foreign_keys = ON")
         for mutation in selected:
-            applied.append(apply_mutation(conn, mutation, now, notion_direction))
+            applied.append(apply_mutation(conn, mutation, now))
         issues = consistency_checks(conn, applied)
         summary_counts = {
             "event_occurrences": scalar(conn, "SELECT COUNT(*) FROM event_occurrences"),
