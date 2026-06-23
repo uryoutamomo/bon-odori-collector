@@ -45,7 +45,17 @@ def issue(severity, issue_type, description, payload=None):
 
 
 def count_table(path, table):
-    with sqlite3.connect(path) as conn:
+    path = Path(path)
+    if not path.exists():
+        return None
+    uri = f"file:{path.as_posix()}?mode=ro"
+    with sqlite3.connect(uri, uri=True) as conn:
+        exists = conn.execute(
+            "SELECT 1 FROM sqlite_master WHERE type='table' AND name = ?",
+            (table,),
+        ).fetchone()
+        if not exists:
+            return None
         return scalar(conn, f"SELECT COUNT(*) FROM {table}")
 
 
@@ -55,6 +65,8 @@ def source_checksum(path):
 
 
 def linked_source_gap(conn, notion_db, source_key, master_table, source_table):
+    if count_table(notion_db, source_table) is None:
+        return None
     conn.execute("ATTACH DATABASE ? AS notion_source", (str(notion_db),))
     try:
         return scalar(
@@ -162,7 +174,7 @@ def audit(args):
             "song_occurrences": source_checksum(args.song_occurrences),
         }
         source_drift = {
-            key: bool(manifest_checksums.get(key) and manifest_checksums.get(key) != value)
+            key: bool(manifest_checksums.get(key) and value and manifest_checksums.get(key) != value)
             for key, value in current_checksums.items()
         }
         if any(source_drift.values()):
@@ -188,6 +200,8 @@ def audit(args):
             "event_occurrences": (source_counts["notion_events"], "notion_db"),
         }
         for table, (minimum, source_key) in expected_minimums.items():
+            if minimum is None:
+                continue
             actual = counts.get(table, 0)
             if actual < minimum:
                 severity = "medium" if source_drift.get(source_key) else "high"
