@@ -11,8 +11,8 @@ const EVENTS = [
     "scale": "中",
     "access": "東京メトロ銀座線・南北線 溜池山王駅 7番出口直結。東京メトロ丸ノ内線・千代田線 国会議事堂前駅から地下通路で接続",
     "address": "〒100-0014 東京都千代田区永田町2-10-5",
-    "lat": 35.67485,
-    "lng": 139.739838,
+    "lat": null,
+    "lng": null,
     "date": "2026-06-13",
     "date_end": "2026-06-15",
     "status": "確認済み",
@@ -42,7 +42,7 @@ const EVENTS = [
         "label": "告知HPあり",
         "url": "",
         "kind": "web",
-        "count": 1
+        "count": 2
       }
     ],
     "songs": [
@@ -234,7 +234,7 @@ const EVENTS = [
     "lng": null,
     "date": "2025-08-08",
     "date_end": "2025-08-08",
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -250,7 +250,7 @@ const EVENTS = [
     "jun": {
       "8": "上旬"
     },
-    "description": null,
+    "description": "",
     "detail": "",
     "source_urls": [
       {
@@ -262,7 +262,7 @@ const EVENTS = [
         "label": "告知HPあり",
         "url": "",
         "kind": "web",
-        "count": 1
+        "count": 2
       }
     ],
     "songs": [
@@ -380,7 +380,7 @@ const EVENTS = [
     "lng": null,
     "date": "2025-07-25",
     "date_end": "2025-07-26",
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -400,14 +400,14 @@ const EVENTS = [
     "jun": {
       "7": "下旬"
     },
-    "description": null,
+    "description": "",
     "detail": "2025-07-25〜2025-07-26、行幸通りで開催。公式ページ「丸の内夏祭り2025」in 行幸通り内の丸の内de盆踊り。7/25 盆踊り 17:00-18:15 / 19:00-19:40 / 20:00-21:00、7/26 盆踊り 18:00-19:00 / 19:20-20:10 / 20:40-21:00。",
     "source_urls": [
       {
         "label": "告知HPあり",
         "url": "",
         "kind": "web",
-        "count": 1
+        "count": 2
       }
     ],
     "songs": [
@@ -666,8 +666,8 @@ const EVENTS = [
     "scale": "大",
     "access": "地下鉄九段下駅（1番出口）・市ケ谷駅（1番出口）より徒歩",
     "address": "〒102-8246 東京都千代田区靖国2-3-1",
-    "lat": 35.69389,
-    "lng": 139.753616,
+    "lat": null,
+    "lng": null,
     "date": "2026-07-13",
     "date_end": "2026-07-16",
     "status": "確認済み",
@@ -692,7 +692,14 @@ const EVENTS = [
     },
     "description": "3万灯の提灯が掲げられる靖国神社「みたままつり」の夕べに、大村益次郎像の周りで踊る納涼民踊。圧巻の提灯の光の中で踊れる。",
     "detail": "2026-07-13〜2026-07-16 開催予定。東京盆踊りマップから確定日として反映。 2026 7/13 - 16 靖国神社 大村銅像前 千代田区「第79回みたままつり 納涼民踊の集い」 7月13日(月)-7月16日(木) 午後6時30分-(例年8時30分まで)。 ＊雨天中止、小雨決行 ・練習会 6/5(金)、7/3(金) ともに19時より、千代田区スポーツセンターにて(対象:千代田区在住在勤者)。 (4/4掲)",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "upcoming_confirmed",
     "public_category": "upcoming",
@@ -727,7 +734,7 @@ const EVENTS = [
     "lng": null,
     "date": "2025-08-02",
     "date_end": "2025-08-02",
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -743,14 +750,14 @@ const EVENTS = [
     "jun": {
       "8": "上旬"
     },
-    "description": null,
+    "description": "",
     "detail": "",
     "source_urls": [
       {
         "label": "告知HPあり",
         "url": "",
         "kind": "web",
-        "count": 1
+        "count": 2
       }
     ],
     "songs": [
@@ -865,8 +872,8 @@ const EVENTS = [
     "scale": "中",
     "access": "東京メトロ銀座線 京橋駅直結",
     "address": "中央区京橋2-2-1",
-    "lat": 35.677818,
-    "lng": 139.769318,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "未確認",
@@ -887,7 +894,14 @@ const EVENTS = [
     },
     "description": "京橋盆踊りは、中央区の京橋エドグラン 京橋中央ひろばで行われる盆踊り。8月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2023年に約50年ぶり復活、以後毎年8月末開催。2026年日程は未発表（公式イベントページ要確認）",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "date_unknown",
     "public_category": "date_unknown",
@@ -948,8 +962,8 @@ const EVENTS = [
     "scale": "小",
     "access": "東京メトロ日比谷線・都営浅草線「人形町駅」徒歩5分",
     "address": "東京都中央区日本橋小網町16-23",
-    "lat": 35.684105,
-    "lng": 139.780563,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "未確認",
@@ -962,11 +976,11 @@ const EVENTS = [
     "hints": [
       [
         5,
-        15
+        28
       ]
     ],
     "jun": {
-      "5": "中旬"
+      "5": "下旬"
     },
     "description": "小網神社で開催される地域の盆踊り。名称は会場名と過去の開催情報からの推定。",
     "detail": "名称推定。開催日程は未確認。",
@@ -997,15 +1011,15 @@ const EVENTS = [
         5
       ],
       "jun": {
-        "5": "中旬"
+        "5": "下旬"
       },
       "hints": [
         [
           5,
-          15
+          28
         ]
       ],
-      "label": "5月中旬",
+      "label": "5月下旬",
       "confidence": "lowest",
       "basis": "例年の開催月・旬ヒント",
       "has_jun_hint": true,
@@ -1015,9 +1029,9 @@ const EVENTS = [
       5
     ],
     "season_jun": {
-      "5": "中旬"
+      "5": "下旬"
     },
-    "season_hint_label": "5月中旬",
+    "season_hint_label": "5月下旬",
     "season_confidence": "lowest"
   },
   {
@@ -1029,8 +1043,8 @@ const EVENTS = [
     "scale": "小",
     "access": "都営浅草線・東京メトロ日比谷線 人形町駅から徒歩2〜3分",
     "address": "東京都中央区日本橋人形町1-1-17",
-    "lat": 35.684723,
-    "lng": 139.781815,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "未確認",
@@ -1044,7 +1058,14 @@ const EVENTS = [
     "jun": {},
     "description": "日本橋小学校で開催される地域の盆踊り。名称は会場名と過去の開催情報からの推定。",
     "detail": "名称推定。開催日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "date_unknown",
     "public_category": "date_unknown",
@@ -1074,11 +1095,11 @@ const EVENTS = [
     "scale": "中",
     "access": "東京メトロ日比谷線・都営浅草線「人形町駅」A2/A6番出口から徒歩4分、東京メトロ半蔵門線「水天宮前駅」8番出口から徒歩5分",
     "address": "東京都中央区日本橋人形町一丁目1番17号（日本橋小学校等複合施設内）",
-    "lat": 35.684723,
-    "lng": 139.781815,
+    "lat": null,
+    "lng": null,
     "date": "2026-02-21",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -1096,7 +1117,14 @@ const EVENTS = [
     },
     "description": "日本橋社会教育会館で行われる地域の盆踊りイベント。過去の開催実績をもとに掲載。",
     "detail": "2026 2/21。小島民踊研究会「第2回 大盆踊り祭 with 坂崎守寛」 2月21日(土) 13:00-18:00(開場 12時)。 ・参加費 1000円。 ・持ち物 団扇。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "ended_2026",
     "public_category": "ended",
@@ -1126,11 +1154,11 @@ const EVENTS = [
     "scale": "中",
     "access": "都営大江戸線 勝どき駅から徒歩25分。都営バス 晴海埠頭下車 徒歩2分",
     "address": "東京都中央区晴海五丁目",
-    "lat": 35.649506,
-    "lng": 139.775055,
+    "lat": null,
+    "lng": null,
     "date": "2025-07-12",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -1148,7 +1176,14 @@ const EVENTS = [
     },
     "description": "晴海ふ頭公園で行われる地域の盆踊り。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [
       {
         "name": "きよしのズンドコ節",
@@ -1246,13 +1281,16 @@ const EVENTS = [
     "venue": "浜町公園",
     "area": "中央区",
     "months": [
+      1,
+      2,
+      4,
       8
     ],
     "scale": "大",
     "access": "都営新宿線「浜町駅」A1・A2出口より徒歩1分（駅の真上）。東京メトロ日比谷線「人形町駅」・半蔵門線「水天宮前駅」からも徒歩約13分",
     "address": "東京都中央区日本橋浜町2丁目59",
-    "lat": 35.687218,
-    "lng": 139.788834,
+    "lat": null,
+    "lng": null,
     "date": "2026-08-21",
     "date_end": "2026-08-22",
     "status": "確認済み",
@@ -1283,6 +1321,12 @@ const EVENTS = [
         "url": "",
         "kind": "post",
         "count": 2
+      },
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
       }
     ],
     "songs": [],
@@ -1315,8 +1359,8 @@ const EVENTS = [
     "scale": "大",
     "access": "都営新宿線「浜町駅」A1・A2出口より徒歩1分（駅の真上）。東京メトロ日比谷線「人形町駅」・半蔵門線「水天宮前駅」からも徒歩約13分",
     "address": "東京都中央区日本橋浜町2丁目59",
-    "lat": 35.687218,
-    "lng": 139.788834,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "未確認",
@@ -1328,16 +1372,28 @@ const EVENTS = [
     "date_candidates": [],
     "hints": [
       [
+        8,
+        22
+      ],
+      [
         9,
-        5
+        15
       ]
     ],
     "jun": {
-      "9": "上旬"
+      "8": "下旬",
+      "9": "中旬"
     },
     "description": "浜二町会による浜町公園・遊具広場の納涼盆踊り。町会ならではのあたたかい雰囲気が魅力。",
     "detail": "",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "date_unknown",
     "public_category": "date_unknown",
@@ -1364,15 +1420,15 @@ const EVENTS = [
         9
       ],
       "jun": {
-        "9": "上旬"
+        "9": "中旬"
       },
       "hints": [
         [
           9,
-          5
+          15
         ]
       ],
-      "label": "9月上旬",
+      "label": "9月中旬",
       "confidence": "lowest",
       "basis": "例年の開催月・旬ヒント",
       "has_jun_hint": true,
@@ -1382,9 +1438,9 @@ const EVENTS = [
       9
     ],
     "season_jun": {
-      "9": "上旬"
+      "9": "中旬"
     },
-    "season_hint_label": "9月上旬",
+    "season_hint_label": "9月中旬",
     "season_confidence": "lowest"
   },
   {
@@ -1398,8 +1454,8 @@ const EVENTS = [
     "scale": "大",
     "access": "都営新宿線「浜町駅」A1・A2出口より徒歩1分（駅の真上）。東京メトロ日比谷線「人形町駅」・半蔵門線「水天宮前駅」からも徒歩約13分",
     "address": "東京都中央区日本橋浜町2丁目59",
-    "lat": 35.687218,
-    "lng": 139.788834,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "未確認",
@@ -1411,16 +1467,28 @@ const EVENTS = [
     "date_candidates": [],
     "hints": [
       [
+        8,
+        22
+      ],
+      [
         9,
-        25
+        15
       ]
     ],
     "jun": {
-      "9": "下旬"
+      "8": "下旬",
+      "9": "中旬"
     },
     "description": "浜町音頭保存会が主催する、地元ゆかりの「濱町音頭」を踊り継ぐ大会。浜町公園の秋の風物詩。",
     "detail": "",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [
       {
         "name": "濱町音頭",
@@ -1452,15 +1520,15 @@ const EVENTS = [
         9
       ],
       "jun": {
-        "9": "下旬"
+        "9": "中旬"
       },
       "hints": [
         [
           9,
-          25
+          15
         ]
       ],
-      "label": "9月下旬",
+      "label": "9月中旬",
       "confidence": "lowest",
       "basis": "例年の開催月・旬ヒント",
       "has_jun_hint": true,
@@ -1470,9 +1538,9 @@ const EVENTS = [
       9
     ],
     "season_jun": {
-      "9": "下旬"
+      "9": "中旬"
     },
-    "season_hint_label": "9月下旬",
+    "season_hint_label": "9月中旬",
     "season_confidence": "lowest"
   },
   {
@@ -1487,8 +1555,8 @@ const EVENTS = [
     "scale": "大",
     "access": "東京メトロ日比谷線 築地駅 出口1直結。東京メトロ有楽町線 新富町駅 出口4から徒歩約5分。都営浅草線 東銀座駅 出口5、都営大江戸線 築地市場駅 A1出口から各徒歩約5分",
     "address": "東京都中央区築地3-15-1",
-    "lat": 35.666466,
-    "lng": 139.772446,
+    "lat": null,
+    "lng": null,
     "date": "2026-07-29",
     "date_end": "2026-08-01",
     "status": "確認済み",
@@ -1519,7 +1587,7 @@ const EVENTS = [
         "label": "告知HPあり",
         "url": "",
         "kind": "web",
-        "count": 1
+        "count": 2
       },
       {
         "label": "告知投稿あり",
@@ -1644,14 +1712,12 @@ const EVENTS = [
     "name_confirmed": true,
     "venue": "築地社会教育会館",
     "area": "中央区",
-    "months": [
-      3
-    ],
+    "months": [],
     "scale": "小",
     "access": "東京メトロ日比谷線・都営浅草線「東銀座駅」6番出口徒歩5分、都営大江戸線「築地市場駅」A1番出口徒歩5分",
     "address": "〒104-0045 東京都中央区築地4丁目15番1号",
-    "lat": 35.66605,
-    "lng": 139.768539,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "未確認",
@@ -1661,11 +1727,25 @@ const EVENTS = [
       "description": "開催日はまだ確認できていません"
     },
     "date_candidates": [],
-    "hints": [],
-    "jun": {},
+    "hints": [
+      [
+        3,
+        25
+      ]
+    ],
+    "jun": {
+      "3": "下旬"
+    },
     "description": "築地社会教育会館で行われる地域の盆踊り。詳しい開催日は確認中ですが、会場情報をもとに掲載しています。",
     "detail": "",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "date_unknown",
     "public_category": "date_unknown",
@@ -1674,7 +1754,7 @@ const EVENTS = [
     "recurrence_label": "日程未確認",
     "recurrence_score": 0.25,
     "recurrence_reasons": [
-      "月ヒントあり",
+      "日付ヒントあり",
       "未確認"
     ],
     "recurrence_cautions": [
@@ -1683,27 +1763,7 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint",
-    "season_hint": {
-      "display_tier": "season_hint",
-      "target_year": 2026,
-      "months": [
-        3
-      ],
-      "jun": {},
-      "hints": [],
-      "label": "3月",
-      "confidence": "lowest",
-      "basis": "例年の開催月・旬ヒント",
-      "has_jun_hint": false,
-      "has_sort_hint": false
-    },
-    "season_months": [
-      3
-    ],
-    "season_jun": {},
-    "season_hint_label": "3月",
-    "season_confidence": "lowest"
+    "display_tier": "season_hint"
   },
   {
     "name": "アークヒルズ秋祭り 盆踊り",
@@ -1716,8 +1776,8 @@ const EVENTS = [
     "scale": "中",
     "access": "南北線 六本木一丁目駅直結／銀座線 溜池山王駅 徒歩5分",
     "address": "港区赤坂1-12-32",
-    "lat": 35.667343,
-    "lng": 139.741302,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "未確認",
@@ -1730,7 +1790,7 @@ const EVENTS = [
     "hints": [
       [
         9,
-        14
+        15
       ]
     ],
     "jun": {
@@ -1738,7 +1798,14 @@ const EVENTS = [
     },
     "description": "アークヒルズ秋祭り 盆踊りは、アーク・カラヤン広場（アークヒルズ）で開かれる屋外型の盆踊り・夏の地域イベント。9月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "秋祭り内で開催。2024年は9/14 18:00-20:00。2026年日程は未発表",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "date_unknown",
     "public_category": "date_unknown",
@@ -1770,7 +1837,7 @@ const EVENTS = [
       "hints": [
         [
           9,
-          14
+          15
         ]
       ],
       "label": "9月中旬",
@@ -1799,11 +1866,11 @@ const EVENTS = [
     "scale": "小",
     "access": "浜松町駅・大門駅から徒歩圏内",
     "address": "東京都港区海岸1-2-34",
-    "lat": 35.656849,
-    "lng": 139.759186,
+    "lat": null,
+    "lng": null,
     "date": "2025-08-22",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -1821,7 +1888,14 @@ const EVENTS = [
     },
     "description": "第16回ハマサイトの夏祭りは、ハマサイト前広場・汐留ビルディング外構で開かれる屋外型の盆踊り・夏の地域イベント。8月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025-08-22（金）16:00-21:00開催記録。例年、盆踊りの合間にライブ演奏等あり。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [
       {
         "name": "ウルトラソウル",
@@ -1924,8 +1998,8 @@ const EVENTS = [
     "scale": "小",
     "access": "都営三田線・東京メトロ南北線「白金高輪駅」から徒歩3分",
     "address": "東京都港区三田5丁目",
-    "lat": 35.646225,
-    "lng": 139.737808,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "未確認",
@@ -1946,7 +2020,14 @@ const EVENTS = [
     },
     "description": "三田松坂児童遊園で行われる地域の盆踊りイベント。過去の開催実績をもとに掲載。",
     "detail": "2025-03-30 開催実績。2025 3/30。三田松坂町会「桜まつり」 3月30日(日) 11:00-15:00。 踊りは①11:10-②13:30-(各30分間)。 ・3月29日開催分が雨天により延期となりました。 (3/30朝掲)",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "date_unknown",
     "public_category": "date_unknown",
@@ -2011,7 +2092,7 @@ const EVENTS = [
     "lng": null,
     "date": "2025-08-22",
     "date_end": "2025-08-24",
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -2031,14 +2112,14 @@ const EVENTS = [
     "jun": {
       "8": "下旬"
     },
-    "description": null,
+    "description": "",
     "detail": "",
     "source_urls": [
       {
         "label": "告知HPあり",
         "url": "",
         "kind": "web",
-        "count": 1
+        "count": 2
       }
     ],
     "songs": [
@@ -2148,13 +2229,15 @@ const EVENTS = [
     "venue": "六本木天祖神社",
     "area": "港区",
     "months": [
+      2,
+      4,
       9
     ],
     "scale": "中",
     "access": "東京メトロ千代田線「乃木坂駅」徒歩5分・日比谷線「六本木駅」徒歩5分・都営大江戸線「六本木駅」徒歩3分",
     "address": "〒106-0032 東京都港区六本木7-7-7",
-    "lat": 35.664986,
-    "lng": 139.728821,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "未確認",
@@ -2166,16 +2249,33 @@ const EVENTS = [
     "date_candidates": [],
     "hints": [
       [
+        2,
+        15
+      ],
+      [
+        4,
+        15
+      ],
+      [
         9,
         15
       ]
     ],
     "jun": {
+      "2": "中旬",
+      "4": "中旬",
       "9": "中旬"
     },
     "description": "六本木天祖神社（龍土神明宮）例大祭 盆踊りは、六本木天祖神社を舞台にした祭礼・地域行事にあわせた踊りの場。9月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "date_unknown",
     "public_category": "date_unknown",
@@ -2199,30 +2299,46 @@ const EVENTS = [
       "display_tier": "season_hint",
       "target_year": 2026,
       "months": [
+        2,
+        4,
         9
       ],
       "jun": {
+        "2": "中旬",
+        "4": "中旬",
         "9": "中旬"
       },
       "hints": [
+        [
+          2,
+          15
+        ],
+        [
+          4,
+          15
+        ],
         [
           9,
           15
         ]
       ],
-      "label": "9月中旬",
+      "label": "2月中旬・4月中旬・9月中旬",
       "confidence": "lowest",
       "basis": "例年の開催月・旬ヒント",
       "has_jun_hint": true,
       "has_sort_hint": true
     },
     "season_months": [
+      2,
+      4,
       9
     ],
     "season_jun": {
+      "2": "中旬",
+      "4": "中旬",
       "9": "中旬"
     },
-    "season_hint_label": "9月中旬",
+    "season_hint_label": "2月中旬・4月中旬・9月中旬",
     "season_confidence": "lowest"
   },
   {
@@ -2236,8 +2352,8 @@ const EVENTS = [
     "scale": "小",
     "access": "JR・都営大江戸線「田町駅」東口から徒歩約12分（1km強）、海岸通りからは徒歩3分",
     "address": "東京都港区海岸3丁目（旧海岸通り沿い）",
-    "lat": 35.640808,
-    "lng": 139.756882,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "未確認",
@@ -2258,7 +2374,14 @@ const EVENTS = [
     },
     "description": "埠頭公園（港区芝浦港南）で行われる地域の盆踊りイベント。過去の開催実績をもとに掲載。",
     "detail": "2025-08-01 開催実績。2025 8/1 - 2。海岸二・三丁目町会 「海岸まつり」 8月1日(金)-2日(土) 「盆踊り大会を行います」 詳細不明(2019年は午後6時-9時30分(2日目は9時まで)。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "date_unknown",
     "public_category": "date_unknown",
@@ -2314,13 +2437,14 @@ const EVENTS = [
     "venue": "増上寺（大殿前広場）",
     "area": "港区",
     "months": [
+      2,
       7
     ],
     "scale": "大",
     "access": "都営三田線 御成門駅・芝公園駅 徒歩3分／JR浜松町駅 徒歩10分",
     "address": "港区芝公園4-7-35",
-    "lat": 35.657249,
-    "lng": 139.748413,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "未確認",
@@ -2332,16 +2456,28 @@ const EVENTS = [
     "date_candidates": [],
     "hints": [
       [
+        2,
+        15
+      ],
+      [
         7,
         15
       ]
     ],
     "jun": {
-      "7": "中旬"
+      "7": "中旬",
+      "2": "中旬"
     },
     "description": "東京タワーを背に、増上寺大殿前で踊る地蔵尊奉賛の盆踊り。例年7月中旬の2日間開かれる。",
     "detail": "2025年は三解脱門大修理により中止。2026年開催は公式サイト要確認。会場を芝公園→増上寺（大殿前広場）へ付け替え（2026-06-10 こと）",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "date_unknown",
     "public_category": "date_unknown",
@@ -2365,31 +2501,102 @@ const EVENTS = [
       "display_tier": "season_hint",
       "target_year": 2026,
       "months": [
+        2,
         7
       ],
       "jun": {
-        "7": "中旬"
+        "7": "中旬",
+        "2": "中旬"
       },
       "hints": [
+        [
+          2,
+          15
+        ],
         [
           7,
           15
         ]
       ],
-      "label": "7月中旬",
+      "label": "2月中旬・7月中旬",
       "confidence": "lowest",
       "basis": "例年の開催月・旬ヒント",
       "has_jun_hint": true,
       "has_sort_hint": true
     },
     "season_months": [
+      2,
       7
     ],
     "season_jun": {
-      "7": "中旬"
+      "7": "中旬",
+      "2": "中旬"
     },
-    "season_hint_label": "7月中旬",
+    "season_hint_label": "2月中旬・7月中旬",
     "season_confidence": "lowest"
+  },
+  {
+    "name": "新橋こいち祭",
+    "name_confirmed": true,
+    "venue": "桜田公園",
+    "area": "港区",
+    "months": [
+      7
+    ],
+    "scale": "小",
+    "access": "JR・地下鉄各線 新橋駅から徒歩圏内",
+    "address": "東京都港区新橋3-16-15",
+    "lat": null,
+    "lng": null,
+    "date": "2026-07-23",
+    "date_end": "2026-07-24",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        7,
+        23
+      ],
+      [
+        7,
+        24
+      ]
+    ],
+    "jun": {
+      "7": "下旬"
+    },
+    "description": "桜田公園は、港区の屋外で踊りの輪を作りやすい会場。 規模は「小」として整理しています、アクセスはJR・地下鉄各線 新橋駅から徒歩圏内。",
+    "detail": "",
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "http://www.shinbashi.net/top/koichi/2026/greeting/",
+        "kind": "official"
+      }
+    ],
+    "songs": [],
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-07-23〜2026-07-24",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-07-23",
+      "2026-07-24"
+    ],
+    "display_tier": "confirmed"
   },
   {
     "name": "第28回新橋こいち祭 盆踊り",
@@ -2402,11 +2609,11 @@ const EVENTS = [
     "scale": "小",
     "access": "JR・地下鉄各線 新橋駅から徒歩圏内",
     "address": "東京都港区新橋3-16-15",
-    "lat": 35.665482,
-    "lng": 139.756836,
+    "lat": null,
+    "lng": null,
     "date": "2025-07-24",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -2424,7 +2631,14 @@ const EVENTS = [
     },
     "description": "桜田公園で行われる地域の盆踊りイベント。過去の開催実績をもとに掲載。",
     "detail": "2025-07-24 開催実績。2025 7/24 - 25。新橋地区12商店会 「第28回新橋こいち祭 盆踊り」 7月24日(木)-25日(金) 15:00-20:30。 時間詳細不明。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [
       {
         "name": "ご祝儀音頭",
@@ -2619,7 +2833,7 @@ const EVENTS = [
     "lng": null,
     "date": "2025-07-24",
     "date_end": "2025-07-25",
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -2639,9 +2853,16 @@ const EVENTS = [
     "jun": {
       "7": "下旬"
     },
-    "description": null,
+    "description": "",
     "detail": "",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -2733,8 +2954,8 @@ const EVENTS = [
     "scale": "中",
     "access": "都営三田線・東京メトロ南北線 白金高輪駅から徒歩圏内",
     "address": "東京都港区白金台2-24-3",
-    "lat": 35.632942,
-    "lng": 139.729294,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "未確認",
@@ -2755,7 +2976,14 @@ const EVENTS = [
     },
     "description": "白金児童遊園で行われる地域の盆踊りイベント。過去の開催実績をもとに掲載。",
     "detail": "2025-07-27 開催実績。2025 7/27。高輪台商店会 「盆ダンスフェスティバル2023」 7月27日(日) 詳細不明。(2022年の盆踊りは 17:30-) (7/29朝掲)",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "date_unknown",
     "public_category": "date_unknown",
@@ -2816,11 +3044,11 @@ const EVENTS = [
     "scale": "小",
     "access": "東京メトロ南北線・都営三田線「白金台駅」1番出口から徒歩7分",
     "address": "東京都港区白金台五丁目19番1号",
-    "lat": 35.636536,
-    "lng": 139.722168,
+    "lat": null,
+    "lng": null,
     "date": "2025-09-07",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -2838,7 +3066,14 @@ const EVENTS = [
     },
     "description": "白金台どんぐり児童遊園で行われる地域の盆踊りイベント。過去の開催実績をもとに掲載。",
     "detail": "2025-09-07 開催実績。2025 9/7。「第10回白金台どんぐり児童遊園 納涼盆踊り大会」 9月7日(日)。 盆踊りは 16:45-19:30。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [
       {
         "name": "きよしのズンドコ節",
@@ -3011,8 +3246,8 @@ const EVENTS = [
     "scale": "大",
     "access": "東京メトロ銀座線 外苑前駅 3番出口から徒歩約5分。都営大江戸線 国立競技場駅、JR千駄ケ谷駅・信濃町駅から徒歩約15分",
     "address": "東京都港区北青山2-8-35",
-    "lat": 35.672749,
-    "lng": 139.718033,
+    "lat": null,
+    "lng": null,
     "date": "2026-06-26",
     "date_end": "2026-06-27",
     "status": "確認済み",
@@ -3037,7 +3272,14 @@ const EVENTS = [
     },
     "description": "郡上八幡から保存会を迎え、本場の郡上おどりを東京で体験できる人気イベント。下駄の音を響かせて、誰でも輪に入れる。",
     "detail": "",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [
       {
         "name": "かわさき",
@@ -3118,8 +3360,8 @@ const EVENTS = [
     "scale": "小",
     "access": "東京メトロ南北線・都営大江戸線 麻布十番駅から徒歩約3分",
     "address": "東京都港区麻布十番2-15-1",
-    "lat": 35.654484,
-    "lng": 139.735535,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "未確認",
@@ -3140,7 +3382,14 @@ const EVENTS = [
     },
     "description": "網代公園で行われる地域の盆踊りイベント。過去の開催実績をもとに掲載。",
     "detail": "2025-09-13 開催実績。2025 9/13 - 14。麻布十番網代会 「麻布十番納涼盆踊り大会」 9月13日(土)-14日(日)。 盆踊りは 13日(土) 18:00-20:00、 14日(日) 19:30-21:00。 ＊2024年よりMC担当が変更になったとの情報あり。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "date_unknown",
     "public_category": "date_unknown",
@@ -3201,8 +3450,8 @@ const EVENTS = [
     "scale": "大",
     "access": "都営三田線「芝公園駅」徒歩すぐ／都営大江戸線「赤羽橋駅」徒歩5分／JR・都営地下鉄「浜松町駅」徒歩10分",
     "address": "〒105-0011 東京都港区芝公園",
-    "lat": 35.658932,
-    "lng": 139.751419,
+    "lat": null,
+    "lng": null,
     "date": "2026-10-10",
     "date_end": "2026-10-12",
     "status": "確認済み",
@@ -3227,7 +3476,14 @@ const EVENTS = [
     },
     "description": "芝公園一帯で開かれる、みなと区民まつりの盆踊り。秋の区民まつりならではの多彩な催しと一緒に楽しめる。",
     "detail": "",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "upcoming_confirmed",
     "public_category": "upcoming",
@@ -3258,8 +3514,8 @@ const EVENTS = [
     "scale": "小",
     "access": "都営三田線「芝公園駅」から徒歩約5分、都営浅草線・大江戸線「三田駅」「大門駅」からも徒歩約9分",
     "address": "東京都港区芝二丁目12番3号",
-    "lat": 35.651501,
-    "lng": 139.752731,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "未確認",
@@ -3271,16 +3527,28 @@ const EVENTS = [
     "date_candidates": [],
     "hints": [
       [
+        7,
+        25
+      ],
+      [
         9,
         12
       ]
     ],
     "jun": {
+      "7": "下旬",
       "9": "中旬"
     },
     "description": "芝新堀町児童遊園周辺で行われる祭礼にあわせた奉納踊り。地域の町会が支える昔ながらの盆踊り。",
     "detail": "2025-09-12 開催実績。2025 9/12 - 13。「芝大神宮 大祭 奉納輪踊り」 9月12日(金)-13日(土) 19:00-21:00。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "date_unknown",
     "public_category": "date_unknown",
@@ -3341,11 +3609,11 @@ const EVENTS = [
     "scale": "中",
     "access": "東京メトロ日比谷線「神谷町駅」から徒歩約3分",
     "address": "東京都港区虎ノ門5-10-14",
-    "lat": 35.661674,
-    "lng": 139.743027,
+    "lat": null,
+    "lng": null,
     "date": "2025-08-09",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -3363,7 +3631,14 @@ const EVENTS = [
     },
     "description": "西久保八幡神社で行われる地域の盆踊りイベント。過去の開催実績をもとに掲載。",
     "detail": "2025-08-09 開催実績。2025 8/9 - 10。「西久保八幡神社 盆踊り」 8月9日(土)-10日(日)。 踊り時間不明(2025年は 18:00-20:30)。 (8/12掲)",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [
       {
         "name": "お富さん",
@@ -3542,13 +3817,14 @@ const EVENTS = [
     "venue": "赤坂サカス広場",
     "area": "港区",
     "months": [
+      2,
       8
     ],
     "scale": "中",
     "access": "千代田線 赤坂駅直結",
     "address": "港区赤坂5-3-6",
-    "lat": 35.672558,
-    "lng": 139.735168,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "未確認",
@@ -3560,16 +3836,28 @@ const EVENTS = [
     "date_candidates": [],
     "hints": [
       [
+        2,
+        15
+      ],
+      [
         8,
         29
       ]
     ],
     "jun": {
+      "2": "中旬",
       "8": "下旬"
     },
     "description": "赤坂夏おどり（旧 赤坂盆踊り）は、赤坂サカス広場で開かれる屋外型の盆踊り・夏の地域イベント。8月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2022年開始。2024年は中止、2025年は「赤坂夏おどり」として8/29-30開催。2026年日程は未発表",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [
       {
         "name": "赤坂夏おどり",
@@ -3598,30 +3886,38 @@ const EVENTS = [
       "display_tier": "season_hint",
       "target_year": 2026,
       "months": [
+        2,
         8
       ],
       "jun": {
+        "2": "中旬",
         "8": "下旬"
       },
       "hints": [
+        [
+          2,
+          15
+        ],
         [
           8,
           29
         ]
       ],
-      "label": "8月下旬",
+      "label": "2月中旬・8月下旬",
       "confidence": "lowest",
       "basis": "例年の開催月・旬ヒント",
       "has_jun_hint": true,
       "has_sort_hint": true
     },
     "season_months": [
+      2,
       8
     ],
     "season_jun": {
+      "2": "中旬",
       "8": "下旬"
     },
-    "season_hint_label": "8月下旬",
+    "season_hint_label": "2月中旬・8月下旬",
     "season_confidence": "lowest"
   },
   {
@@ -3630,95 +3926,16 @@ const EVENTS = [
     "venue": "赤坂氷川神社",
     "area": "港区",
     "months": [
+      1,
+      2,
+      3,
       9
     ],
     "scale": "中",
     "access": "東京メトロ千代田線「赤坂駅」5番出口・日比谷線/都営大江戸線「六本木駅」7番出口より徒歩約7分",
     "address": "〒107-0052 東京都港区赤坂6-10-12",
-    "lat": 35.668682,
-    "lng": 139.735565,
-    "date": null,
-    "date_end": null,
-    "status": "確認済み",
-    "date_confidence": {
-      "level": "unknown",
-      "label": "未確認",
-      "description": "開催日はまだ確認できていません"
-    },
-    "date_candidates": [],
-    "hints": [
-      [
-        9,
-        15
-      ]
-    ],
-    "jun": {
-      "9": "中旬"
-    },
-    "description": "赤坂氷川神社の例大祭にあわせた盆踊り大会。緑深い境内に露店が並び、都心とは思えない祭情緒が味わえる。",
-    "detail": "",
-    "source_urls": [],
-    "songs": [],
-    "public_status": "date_unknown",
-    "public_category": "date_unknown",
-    "public_status_label": "日程未確認",
-    "public_note": "今年の日程は未確認です。",
-    "recurrence_label": "日程未確認",
-    "recurrence_score": 0.25,
-    "recurrence_reasons": [
-      "月ヒントあり",
-      "日付ヒントあり"
-    ],
-    "recurrence_cautions": [
-      "2026年日程なし"
-    ],
-    "edition_number": null,
-    "last_seen_year": null,
-    "last_seen_dates": [],
-    "display_tier": "season_hint",
-    "season_hint": {
-      "display_tier": "season_hint",
-      "target_year": 2026,
-      "months": [
-        9
-      ],
-      "jun": {
-        "9": "中旬"
-      },
-      "hints": [
-        [
-          9,
-          15
-        ]
-      ],
-      "label": "9月中旬",
-      "confidence": "lowest",
-      "basis": "例年の開催月・旬ヒント",
-      "has_jun_hint": true,
-      "has_sort_hint": true
-    },
-    "season_months": [
-      9
-    ],
-    "season_jun": {
-      "9": "中旬"
-    },
-    "season_hint_label": "9月中旬",
-    "season_confidence": "lowest"
-  },
-  {
-    "name": "上笄町会お祭り 盆踊り",
-    "name_confirmed": true,
-    "venue": "長谷寺（西麻布・麻布大観音）",
-    "area": "港区",
-    "months": [
-      9
-    ],
-    "scale": "小",
-    "access": "日比谷線 広尾駅 徒歩10分",
-    "address": "港区西麻布2-21-34",
-    "lat": 35.661209,
-    "lng": 139.718994,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "未確認",
@@ -3730,16 +3947,38 @@ const EVENTS = [
     "date_candidates": [],
     "hints": [
       [
+        1,
+        15
+      ],
+      [
+        2,
+        15
+      ],
+      [
+        3,
+        15
+      ],
+      [
         9,
-        13
+        15
       ]
     ],
     "jun": {
-      "9": "中旬"
+      "9": "中旬",
+      "1": "中旬",
+      "2": "中旬",
+      "3": "中旬"
     },
-    "description": "上笄町会お祭り 盆踊りは、長谷寺（西麻布・麻布大観音）を舞台にした祭礼・地域行事にあわせた踊りの場。9月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2024年は9/13-15。子供神輿・山車・縁日と併催。2026年日程は未発表",
-    "source_urls": [],
+    "description": "赤坂氷川神社の例大祭にあわせた盆踊り大会。緑深い境内に露店が並び、都心とは思えない祭情緒が味わえる。",
+    "detail": "",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "date_unknown",
     "public_category": "date_unknown",
@@ -3763,30 +4002,158 @@ const EVENTS = [
       "display_tier": "season_hint",
       "target_year": 2026,
       "months": [
+        1,
+        2,
+        3,
         9
       ],
       "jun": {
-        "9": "中旬"
+        "9": "中旬",
+        "1": "中旬",
+        "2": "中旬",
+        "3": "中旬"
       },
       "hints": [
         [
+          1,
+          15
+        ],
+        [
+          2,
+          15
+        ],
+        [
+          3,
+          15
+        ],
+        [
           9,
-          13
+          15
         ]
       ],
-      "label": "9月中旬",
+      "label": "1月中旬・2月中旬・3月中旬・9月中旬",
       "confidence": "lowest",
       "basis": "例年の開催月・旬ヒント",
       "has_jun_hint": true,
       "has_sort_hint": true
     },
     "season_months": [
+      1,
+      2,
+      3,
       9
     ],
     "season_jun": {
+      "9": "中旬",
+      "1": "中旬",
+      "2": "中旬",
+      "3": "中旬"
+    },
+    "season_hint_label": "1月中旬・2月中旬・3月中旬・9月中旬",
+    "season_confidence": "lowest"
+  },
+  {
+    "name": "上笄町会お祭り 盆踊り",
+    "name_confirmed": true,
+    "venue": "長谷寺（西麻布・麻布大観音）",
+    "area": "港区",
+    "months": [
+      3,
+      9
+    ],
+    "scale": "小",
+    "access": "日比谷線 広尾駅 徒歩10分",
+    "address": "港区西麻布2-21-34",
+    "lat": null,
+    "lng": null,
+    "date": null,
+    "date_end": null,
+    "status": "未確認",
+    "date_confidence": {
+      "level": "unknown",
+      "label": "未確認",
+      "description": "開催日はまだ確認できていません"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        3,
+        15
+      ],
+      [
+        9,
+        13
+      ]
+    ],
+    "jun": {
+      "3": "中旬",
       "9": "中旬"
     },
-    "season_hint_label": "9月中旬",
+    "description": "上笄町会お祭り 盆踊りは、長谷寺（西麻布・麻布大観音）を舞台にした祭礼・地域行事にあわせた踊りの場。9月開催の情報をもとに、公開サイト用に掲載しています。",
+    "detail": "2024年は9/13-15。子供神輿・山車・縁日と併催。2026年日程は未発表",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [],
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        3,
+        9
+      ],
+      "jun": {
+        "3": "中旬",
+        "9": "中旬"
+      },
+      "hints": [
+        [
+          3,
+          15
+        ],
+        [
+          9,
+          13
+        ]
+      ],
+      "label": "3月中旬・9月中旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      3,
+      9
+    ],
+    "season_jun": {
+      "3": "中旬",
+      "9": "中旬"
+    },
+    "season_hint_label": "3月中旬・9月中旬",
     "season_confidence": "lowest"
   },
   {
@@ -3800,11 +4167,11 @@ const EVENTS = [
     "scale": "中",
     "access": "銀座線ほか 表参道駅 徒歩3分",
     "address": "港区北青山3-5-17",
-    "lat": 35.665634,
-    "lng": 139.712769,
+    "lat": null,
+    "lng": null,
     "date": "2025-07-27",
     "date_end": "2025-07-28",
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -3831,7 +4198,7 @@ const EVENTS = [
         "label": "告知HPあり",
         "url": "",
         "kind": "web",
-        "count": 1
+        "count": 2
       }
     ],
     "songs": [],
@@ -3930,11 +4297,11 @@ const EVENTS = [
     "scale": "中",
     "access": "東京メトロ銀座線「青山一丁目駅」から徒歩3分",
     "address": "東京都港区南青山1-6",
-    "lat": 35.670315,
-    "lng": 139.724594,
+    "lat": null,
+    "lng": null,
     "date": "2025-09-26",
     "date_end": "2025-09-27",
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -3961,7 +4328,7 @@ const EVENTS = [
         "label": "告知HPあり",
         "url": "",
         "kind": "web",
-        "count": 1
+        "count": 2
       }
     ],
     "songs": [],
@@ -4054,16 +4421,20 @@ const EVENTS = [
     "venue": "麻布氷川神社",
     "area": "港区",
     "months": [
-      9
+      1,
+      2,
+      3,
+      9,
+      12
     ],
     "scale": "中",
     "access": "東京メトロ南北線/都営大江戸線「麻布十番駅」出口4または1より徒歩8分、「仙台坂上駅」より徒歩1分",
     "address": "〒106-0046 東京都港区元麻布1-4-23",
-    "lat": 35.653446,
-    "lng": 139.731232,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
-    "status": "確認済み",
+    "status": "未確認",
     "date_confidence": {
       "level": "unknown",
       "label": "未確認",
@@ -4072,16 +4443,43 @@ const EVENTS = [
     "date_candidates": [],
     "hints": [
       [
+        1,
+        15
+      ],
+      [
+        2,
+        15
+      ],
+      [
+        3,
+        15
+      ],
+      [
         9,
+        15
+      ],
+      [
+        12,
         15
       ]
     ],
     "jun": {
-      "9": "中旬"
+      "9": "中旬",
+      "1": "中旬",
+      "2": "中旬",
+      "3": "中旬",
+      "12": "中旬"
     },
     "description": "麻布氷川神社の例大祭にあわせ、長谷寺の境内で開かれる盆踊り。子供神輿や屋台も出る麻布の秋の恒例行事。",
     "detail": "",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "date_unknown",
     "public_category": "date_unknown",
@@ -4091,7 +4489,8 @@ const EVENTS = [
     "recurrence_score": 0.25,
     "recurrence_reasons": [
       "月ヒントあり",
-      "日付ヒントあり"
+      "日付ヒントあり",
+      "未確認"
     ],
     "recurrence_cautions": [
       "2026年日程なし"
@@ -4104,30 +4503,62 @@ const EVENTS = [
       "display_tier": "season_hint",
       "target_year": 2026,
       "months": [
-        9
+        1,
+        2,
+        3,
+        9,
+        12
       ],
       "jun": {
-        "9": "中旬"
+        "9": "中旬",
+        "1": "中旬",
+        "2": "中旬",
+        "3": "中旬",
+        "12": "中旬"
       },
       "hints": [
         [
+          1,
+          15
+        ],
+        [
+          2,
+          15
+        ],
+        [
+          3,
+          15
+        ],
+        [
           9,
+          15
+        ],
+        [
+          12,
           15
         ]
       ],
-      "label": "9月中旬",
+      "label": "1月中旬・2月中旬・3月中旬・9月中旬・12月中旬",
       "confidence": "lowest",
       "basis": "例年の開催月・旬ヒント",
       "has_jun_hint": true,
       "has_sort_hint": true
     },
     "season_months": [
-      9
+      1,
+      2,
+      3,
+      9,
+      12
     ],
     "season_jun": {
-      "9": "中旬"
+      "9": "中旬",
+      "1": "中旬",
+      "2": "中旬",
+      "3": "中旬",
+      "12": "中旬"
     },
-    "season_hint_label": "9月中旬",
+    "season_hint_label": "1月中旬・2月中旬・3月中旬・9月中旬・12月中旬",
     "season_confidence": "lowest"
   },
   {
@@ -4141,11 +4572,11 @@ const EVENTS = [
     "scale": "小",
     "access": "新大久保駅から徒歩すぐ",
     "address": "東京都新宿区百人町1丁目付近",
-    "lat": 35.699921,
-    "lng": 139.699234,
+    "lat": null,
+    "lng": null,
     "date": "2025-10-13",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -4163,7 +4594,14 @@ const EVENTS = [
     },
     "description": "第42回大久保まつり パレード 百人町民民謡おどりは、新宿区で民踊や輪踊りを楽しめる地域イベント。10月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025-10-13（月祝）12:00-14:40頃。13:30から鉄砲隊・百人町民民謡おどり。飛び入り不可、観覧のみ。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [
       {
         "name": "百人町民民謡おどり",
@@ -4270,7 +4708,7 @@ const EVENTS = [
     "lng": null,
     "date": "2025-07-23",
     "date_end": "2025-07-24",
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -4290,9 +4728,16 @@ const EVENTS = [
     "jun": {
       "7": "下旬"
     },
-    "description": null,
+    "description": "",
     "detail": "",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -4388,11 +4833,11 @@ const EVENTS = [
     "scale": "小",
     "access": "下落合駅から徒歩圏内",
     "address": "東京都新宿区下落合4-18",
-    "lat": 35.720238,
-    "lng": 139.696838,
+    "lat": null,
+    "lng": null,
     "date": "2025-07-19",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -4410,7 +4855,14 @@ const EVENTS = [
     },
     "description": "下落合四丁目町会 盆踊り大会は、下落合公園で開かれる屋外型の盆踊り・夏の地域イベント。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025-07-19（土）〜20（日）18:00-21:00開催記録。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -4501,11 +4953,11 @@ const EVENTS = [
     "scale": "小",
     "access": "大久保駅・東中野駅から徒歩圏内",
     "address": "東京都新宿区北新宿3-20",
-    "lat": 35.702381,
-    "lng": 139.689209,
+    "lat": null,
+    "lng": null,
     "date": "2025-08-02",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -4523,7 +4975,14 @@ const EVENTS = [
     },
     "description": "柏木地区6町会盆踊り大会は、北新宿公園で開かれる屋外型の盆踊り・夏の地域イベント。8月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025-08-02（土）〜03（日）18:00-21:00開催記録。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -4614,11 +5073,11 @@ const EVENTS = [
     "scale": "小",
     "access": "東中野駅・落合駅から徒歩圏内",
     "address": "東京都新宿区北新宿4-12",
-    "lat": 35.706985,
-    "lng": 139.692764,
+    "lat": null,
+    "lng": null,
     "date": "2025-07-25",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -4636,7 +5095,14 @@ const EVENTS = [
     },
     "description": "北新宿四丁目 盆踊り大会は、北柏木公園で開かれる屋外型の盆踊り・夏の地域イベント。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025-07-25（金）〜27（日）18:00-21:00開催記録。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -4725,11 +5191,11 @@ const EVENTS = [
     "scale": "小",
     "access": "牛込柳町駅から徒歩圏内",
     "address": "東京都新宿区原町1-42",
-    "lat": 35.700771,
-    "lng": 139.725891,
+    "lat": null,
+    "lng": null,
     "date": "2025-09-15",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -4747,7 +5213,14 @@ const EVENTS = [
     },
     "description": "原町一丁目町会 天祖神社例大祭 盆踊りは、原町天祖神社を舞台にした祭礼・地域行事にあわせた踊りの場。9月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025-09-15（月祝）17:00-20:00開催記録。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -4840,11 +5313,11 @@ const EVENTS = [
     "scale": "小",
     "access": "四谷三丁目駅・新宿御苑前駅から徒歩圏内",
     "address": "東京都新宿区四谷4-20",
-    "lat": 35.689213,
-    "lng": 139.718002,
+    "lat": null,
+    "lng": null,
     "date": "2025-07-19",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -4862,7 +5335,14 @@ const EVENTS = [
     },
     "description": "第25回 四谷納涼踊り大会は、四谷ひろばグラウンド（旧四谷第四小学校）を会場にした地域密着の盆踊り・夏祭り。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025-07-19（土）〜20（日）18:00-21:00、納涼踊り開催記録。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [
       {
         "name": "四谷納涼踊り",
@@ -4967,13 +5447,14 @@ const EVENTS = [
     "venue": "新宿中央公園 ファンモアタイム広場",
     "area": "新宿区",
     "months": [
+      2,
       8
     ],
     "scale": "中",
     "access": "都営大江戸線 都庁前駅すぐ",
     "address": "新宿区西新宿2-11",
-    "lat": 35.691105,
-    "lng": 139.687698,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "未確認",
@@ -4985,16 +5466,28 @@ const EVENTS = [
     "date_candidates": [],
     "hints": [
       [
+        2,
+        15
+      ],
+      [
         8,
         23
       ]
     ],
     "jun": {
+      "2": "中旬",
       "8": "下旬"
     },
     "description": "新宿中央公園夏祭り 納涼盆踊り大会は、新宿中央公園 ファンモアタイム広場で開かれる屋外型の盆踊り・夏の地域イベント。8月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025年は8/23-24。主催：盆踊り＝角筈地区青少年育成委員会／夏まつり＝パークアップ共同体。2026年日程は未発表",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "date_unknown",
     "public_category": "date_unknown",
@@ -5018,30 +5511,38 @@ const EVENTS = [
       "display_tier": "season_hint",
       "target_year": 2026,
       "months": [
+        2,
         8
       ],
       "jun": {
+        "2": "中旬",
         "8": "下旬"
       },
       "hints": [
+        [
+          2,
+          15
+        ],
         [
           8,
           23
         ]
       ],
-      "label": "8月下旬",
+      "label": "2月中旬・8月下旬",
       "confidence": "lowest",
       "basis": "例年の開催月・旬ヒント",
       "has_jun_hint": true,
       "has_sort_hint": true
     },
     "season_months": [
+      2,
       8
     ],
     "season_jun": {
+      "2": "中旬",
       "8": "下旬"
     },
-    "season_hint_label": "8月下旬",
+    "season_hint_label": "2月中旬・8月下旬",
     "season_confidence": "lowest"
   },
   {
@@ -5055,8 +5556,8 @@ const EVENTS = [
     "scale": "大",
     "access": "都営大江戸線 都庁前駅 A6出口直結。東京メトロ丸ノ内線 西新宿駅 2番出口から徒歩4分。JR・小田急線・京王線 新宿駅西口から徒歩8分",
     "address": "東京都新宿区西新宿2-6-1",
-    "lat": 35.692017,
-    "lng": 139.692459,
+    "lat": null,
+    "lng": null,
     "date": "2026-06-24",
     "date_end": "2026-06-25",
     "status": "確認済み",
@@ -5086,7 +5587,7 @@ const EVENTS = [
         "label": "告知HPあり",
         "url": "",
         "kind": "web",
-        "count": 1
+        "count": 2
       }
     ],
     "songs": [
@@ -5128,11 +5629,11 @@ const EVENTS = [
     "scale": "中",
     "access": "西武新宿駅 徒歩2分／大江戸線 新宿西口駅 徒歩5分",
     "address": "新宿区歌舞伎町1-19",
-    "lat": 35.695339,
-    "lng": 139.701996,
+    "lat": null,
+    "lng": null,
     "date": "2025-08-16",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -5150,7 +5651,14 @@ const EVENTS = [
     },
     "description": "歌舞伎町BON ODORIは、歌舞伎町シネシティ広場で開かれる屋外型の盆踊り・夏の地域イベント。8月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025-08-16 開催予定。東京盆踊りマップから確定日として反映。 2025 8/16 歌舞伎町シネシティ広場 歌舞伎町商店街振興組合「歌舞伎町BON ODORI」 8月16日(土) 。 開場 16:00、開始 17:30。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [
       {
         "name": "EZ DO DANCE",
@@ -5255,11 +5763,11 @@ const EVENTS = [
     "scale": "小",
     "access": "高田馬場駅から徒歩圏内",
     "address": "東京都新宿区下落合1-1",
-    "lat": 35.71516,
-    "lng": 139.704086,
+    "lat": null,
+    "lng": null,
     "date": "2025-07-19",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -5277,7 +5785,14 @@ const EVENTS = [
     },
     "description": "下落合町会知久会 第9回盆踊りは、清水川橋公園で開かれる屋外型の盆踊り・夏の地域イベント。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025-07-19（土）17:00-21:00開催記録。雨天中止。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -5372,7 +5887,7 @@ const EVENTS = [
     "lng": null,
     "date": "2025-08-01",
     "date_end": "2025-08-02",
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -5392,9 +5907,16 @@ const EVENTS = [
     "jun": {
       "8": "上旬"
     },
-    "description": null,
+    "description": "",
     "detail": "",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -5488,11 +6010,11 @@ const EVENTS = [
     "scale": "小",
     "access": "早稲田駅から徒歩圏内",
     "address": "東京都新宿区早稲田鶴巻町140-140",
-    "lat": 35.70826,
-    "lng": 139.724945,
+    "lat": null,
+    "lng": null,
     "date": "2025-07-12",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -5510,7 +6032,14 @@ const EVENTS = [
     },
     "description": "鶴巻小学校 納涼盆踊り大会＆子ども祭りは、鶴巻小学校を会場にした地域密着の盆踊り・夏祭り。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025-07-12（土）16:00-19:00開催記録。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -5597,14 +6126,12 @@ const EVENTS = [
     "name_confirmed": true,
     "venue": "根津神社",
     "area": "文京区",
-    "months": [
-      9
-    ],
+    "months": [],
     "scale": "中",
     "access": "千代田線 根津駅 徒歩5分",
     "address": "文京区根津1-28-9",
-    "lat": 35.719185,
-    "lng": 139.761581,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "未確認",
@@ -5625,7 +6152,14 @@ const EVENTS = [
     },
     "description": "根津神社 盆踊り（文京区）は、根津神社を舞台にした祭礼・地域行事にあわせた踊りの場。開催実績や公開情報をもとに、公開サイト用に掲載しています。",
     "detail": "根津八重垣町会盆踊り（境内）。9月例大祭時は藍染大通りで町内音頭会も。開催月・2026年日程は要確認",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "date_unknown",
     "public_category": "date_unknown",
@@ -5634,7 +6168,6 @@ const EVENTS = [
     "recurrence_label": "日程未確認",
     "recurrence_score": 0.25,
     "recurrence_reasons": [
-      "月ヒントあり",
       "日付ヒントあり",
       "未確認"
     ],
@@ -5644,36 +6177,7 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint",
-    "season_hint": {
-      "display_tier": "season_hint",
-      "target_year": 2026,
-      "months": [
-        9
-      ],
-      "jun": {
-        "9": "中旬"
-      },
-      "hints": [
-        [
-          9,
-          15
-        ]
-      ],
-      "label": "9月中旬",
-      "confidence": "lowest",
-      "basis": "例年の開催月・旬ヒント",
-      "has_jun_hint": true,
-      "has_sort_hint": true
-    },
-    "season_months": [
-      9
-    ],
-    "season_jun": {
-      "9": "中旬"
-    },
-    "season_hint_label": "9月中旬",
-    "season_confidence": "lowest"
+    "display_tier": "season_hint"
   },
   {
     "name": "シタマチ.ふるさと盆踊り大会",
@@ -5681,16 +6185,17 @@ const EVENTS = [
     "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
     "area": "台東区",
     "months": [
+      2,
       8
     ],
     "scale": "中",
     "access": "JR御徒町駅南口すぐ／日比谷線 仲御徒町駅",
     "address": "台東区上野5-27",
-    "lat": 35.707333,
-    "lng": 139.774765,
+    "lat": null,
+    "lng": null,
     "date": "2025-08-16",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -5708,7 +6213,14 @@ const EVENTS = [
     },
     "description": "シタマチ.ふるさと盆踊り大会は、おかちまちパンダ広場（御徒町駅南口駅前広場）周辺で開かれる街なかの踊りイベント。8月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025年は第7回 8/16-17（11:00-20:30）。2026年日程は未発表",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [
       {
         "name": "Fun! Fun! Fun!",
@@ -5869,11 +6381,11 @@ const EVENTS = [
     "scale": "小",
     "access": "東京メトロ日比谷線 入谷駅から徒歩約150m",
     "address": "東京都台東区下谷1-12-8",
-    "lat": 35.720016,
-    "lng": 139.781952,
+    "lat": null,
+    "lng": null,
     "date": "2025-08-23",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -5891,7 +6403,14 @@ const EVENTS = [
     },
     "description": "坂本町会 納涼祭は、さかもと朝顔広場（旧坂本小学校跡地）で開かれる屋外型の盆踊り・夏の地域イベント。8月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025-08-23（土）17:00-21:00、納涼踊りは19:00から。雨天時翌日順延。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -5972,7 +6491,7 @@ const EVENTS = [
     "prediction_confidence": "medium"
   },
   {
-    "name": "浅草橋マロニエまつり盆踊り",
+    "name": "マロニエまつり盆踊り大会",
     "name_confirmed": true,
     "venue": "ヒューリック浅草橋ビル前",
     "area": "台東区",
@@ -5986,7 +6505,7 @@ const EVENTS = [
     "lng": null,
     "date": "2026-05-09",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -6002,9 +6521,75 @@ const EVENTS = [
     "jun": {
       "5": "上旬"
     },
-    "description": null,
+    "description": "",
+    "detail": "",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-05-09",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
+    "recurrence_reasons": [
+      "2026年開催済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-05-09"
+    ],
+    "display_tier": "ended"
+  },
+  {
+    "name": "浅草橋マロニエまつり盆踊り",
+    "name_confirmed": true,
+    "venue": "ヒューリック浅草橋ビル前",
+    "area": "台東区",
+    "months": [
+      5
+    ],
+    "scale": "小",
+    "access": "JR・都営浅草橋駅から徒歩約3分",
+    "address": "東京都台東区浅草橋1丁目22-16付近",
+    "lat": null,
+    "lng": null,
+    "date": "2026-05-09",
+    "date_end": null,
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        5,
+        9
+      ]
+    ],
+    "jun": {
+      "5": "上旬"
+    },
+    "description": "",
     "detail": "2026-05-09開催済み。第一部は鳥越おかず横丁13:00-14:00、第二部はヒューリック浅草橋ビル前14:30-16:30。たいとう音頭・浅草橋音頭など。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [
       {
         "name": "U.S.A.",
@@ -6322,8 +6907,8 @@ const EVENTS = [
     "scale": "大",
     "access": "JR「上野駅」公園口・京成「京成上野駅」・東京メトロ「上野駅」から徒歩すぐ",
     "address": "〒110-0007 東京都台東区上野公園・池之端三丁目",
-    "lat": 35.715328,
-    "lng": 139.773544,
+    "lat": null,
+    "lng": null,
     "date": "2026-06-26",
     "date_end": "2026-06-27",
     "status": "確認済み",
@@ -6348,7 +6933,14 @@ const EVENTS = [
     },
     "description": "伝統の盆踊りと最新テクノロジーが出会う「盆ダンス」イベント。上野の杜で6月に開かれる、新感覚の踊りの祭典。",
     "detail": "",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "upcoming_confirmed",
     "public_category": "upcoming",
@@ -6379,8 +6971,8 @@ const EVENTS = [
     "scale": "大",
     "access": "JR「上野駅」公園口・京成「京成上野駅」・東京メトロ「上野駅」から徒歩すぐ",
     "address": "〒110-0007 東京都台東区上野公園・池之端三丁目",
-    "lat": 35.715328,
-    "lng": 139.773544,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "未確認",
@@ -6392,16 +6984,38 @@ const EVENTS = [
     "date_candidates": [],
     "hints": [
       [
+        6,
+        15
+      ],
+      [
+        7,
+        15
+      ],
+      [
+        8,
+        15
+      ],
+      [
         10,
         15
       ]
     ],
     "jun": {
+      "6": "中旬",
+      "7": "中旬",
+      "8": "中旬",
       "10": "中旬"
     },
     "description": "江戸文化をテーマにした「Tokyo江戸ウィーク」の盆踊りフェス。上野の杜で、浴衣やグルメとともに下町の踊りを満喫できる。",
     "detail": "",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "date_unknown",
     "public_category": "date_unknown",
@@ -6462,8 +7076,8 @@ const EVENTS = [
     "scale": "大",
     "access": "JR「上野駅」公園口・京成「京成上野駅」・東京メトロ「上野駅」から徒歩すぐ",
     "address": "〒110-0007 東京都台東区上野公園・池之端三丁目",
-    "lat": 35.715328,
-    "lng": 139.773544,
+    "lat": null,
+    "lng": null,
     "date": "2026-07-03",
     "date_end": "2026-07-05",
     "status": "確認済み",
@@ -6493,6 +7107,12 @@ const EVENTS = [
         "label": "告知投稿あり",
         "url": "",
         "kind": "post",
+        "count": 1
+      },
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
         "count": 1
       }
     ],
@@ -6526,8 +7146,8 @@ const EVENTS = [
     "scale": "大",
     "access": "JR「上野駅」公園口・京成「京成上野駅」・東京メトロ「上野駅」から徒歩すぐ",
     "address": "〒110-0007 東京都台東区上野公園・池之端三丁目",
-    "lat": 35.715328,
-    "lng": 139.773544,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "未確認",
@@ -6539,16 +7159,38 @@ const EVENTS = [
     "date_candidates": [],
     "hints": [
       [
+        6,
+        15
+      ],
+      [
+        7,
+        15
+      ],
+      [
         8,
+        15
+      ],
+      [
+        10,
         15
       ]
     ],
     "jun": {
-      "8": "中旬"
+      "6": "中旬",
+      "7": "中旬",
+      "8": "中旬",
+      "10": "中旬"
     },
     "description": "不忍池のほとりで開かれる夏の盆踊り。市（マルシェ）と一体になった、上野の夜を彩るイベント。",
     "detail": "",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "date_unknown",
     "public_category": "date_unknown",
@@ -6604,30 +7246,61 @@ const EVENTS = [
     "venue": "上野恩賜公園",
     "area": "台東区",
     "months": [
-      6,
-      7,
-      8,
-      10
+      2
     ],
     "scale": "大",
     "access": "JR「上野駅」公園口・京成「京成上野駅」・東京メトロ「上野駅」から徒歩すぐ",
     "address": "〒110-0007 東京都台東区上野公園・池之端三丁目",
-    "lat": 35.715328,
-    "lng": 139.773544,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
-    "status": "確認済み",
+    "status": "未確認",
     "date_confidence": {
       "level": "unknown",
       "label": "未確認",
       "description": "開催日はまだ確認できていません"
     },
     "date_candidates": [],
-    "hints": [],
-    "jun": {},
+    "hints": [
+      [
+        2,
+        15
+      ],
+      [
+        6,
+        15
+      ],
+      [
+        7,
+        15
+      ],
+      [
+        8,
+        15
+      ],
+      [
+        10,
+        15
+      ]
+    ],
+    "jun": {
+      "2": "中旬",
+      "6": "中旬",
+      "7": "中旬",
+      "8": "中旬",
+      "10": "中旬"
+    },
     "description": "民踊団体・厚澄会による踊りの会。月2回ほど日曜を中心に上野公園で開かれ、一年中盆踊りに触れられる貴重な場。",
     "detail": "",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "date_unknown",
     "public_category": "date_unknown",
@@ -6636,7 +7309,9 @@ const EVENTS = [
     "recurrence_label": "日程未確認",
     "recurrence_score": 0.25,
     "recurrence_reasons": [
-      "月ヒントあり"
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
     ],
     "recurrence_cautions": [
       "2026年日程なし"
@@ -6649,27 +7324,30 @@ const EVENTS = [
       "display_tier": "season_hint",
       "target_year": 2026,
       "months": [
-        6,
-        7,
-        8,
-        10
+        2
       ],
-      "jun": {},
-      "hints": [],
-      "label": "6月・7月・8月・10月",
+      "jun": {
+        "2": "中旬"
+      },
+      "hints": [
+        [
+          2,
+          15
+        ]
+      ],
+      "label": "2月中旬",
       "confidence": "lowest",
       "basis": "例年の開催月・旬ヒント",
-      "has_jun_hint": false,
-      "has_sort_hint": false
+      "has_jun_hint": true,
+      "has_sort_hint": true
     },
     "season_months": [
-      6,
-      7,
-      8,
-      10
+      2
     ],
-    "season_jun": {},
-    "season_hint_label": "6月・7月・8月・10月",
+    "season_jun": {
+      "2": "中旬"
+    },
+    "season_hint_label": "2月中旬",
     "season_confidence": "lowest"
   },
   {
@@ -6678,16 +7356,17 @@ const EVENTS = [
     "venue": "東本願寺（浅草）",
     "area": "台東区",
     "months": [
+      2,
       8
     ],
     "scale": "中",
     "access": "銀座線 田原町駅 徒歩5分／TX浅草駅 徒歩7分",
     "address": "台東区西浅草1-5-5",
-    "lat": 35.711037,
-    "lng": 139.78923,
+    "lat": null,
+    "lng": null,
     "date": "2025-08-20",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -6705,7 +7384,14 @@ const EVENTS = [
     },
     "description": "東本願寺盆踊りは、東本願寺（浅草）を舞台にした祭礼・地域行事にあわせた踊りの場。8月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025年は8/20-21。約30年休止→2017年復活。2026年日程は未発表",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [
       {
         "name": "ONE LOVE",
@@ -6845,8 +7531,8 @@ const EVENTS = [
     "scale": "中",
     "access": "東京メトロ銀座線 田原町駅から徒歩約3分。都営浅草線 浅草駅から徒歩約8分",
     "address": "東京都台東区雷門1-5-14",
-    "lat": 35.710236,
-    "lng": 139.793045,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "未確認",
@@ -6867,7 +7553,14 @@ const EVENTS = [
     },
     "description": "田原小学校で行われる地域の盆踊りイベント。過去の開催実績をもとに掲載。",
     "detail": "2025-09-27 開催実績。2025 9/27。田原de盆踊り実行委員会「第2回田原de盆踊り」9月27日(土) 11:00-20:00。 「第2部 盆踊り 17:00-20:00」 踊りの詳細時間不明。 ・昨年は ソーラン節、ハラハラ音頭、波乗りジョニー 他。 ＊雨天時 9/28開催。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [
       {
         "name": "ソーラン節",
@@ -6941,8 +7634,8 @@ const EVENTS = [
     "scale": "大",
     "access": "東武・都営地下鉄 浅草駅 より徒歩",
     "address": "〒111-0033 東京都台東区浅衉7-1-22（山谷堀広場付近）",
-    "lat": 35.71228,
-    "lng": 139.794907,
+    "lat": null,
+    "lng": null,
     "date": "2026-06-27",
     "date_end": null,
     "status": "確認済み",
@@ -6963,7 +7656,14 @@ const EVENTS = [
     },
     "description": "山谷堀広場で開かれる、奥浅草の初夏の盆踊り。スカイツリーを望むロケーションで、地元グルメの出店も楽しい。",
     "detail": "",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "upcoming_confirmed",
     "public_category": "upcoming",
@@ -6997,7 +7697,7 @@ const EVENTS = [
     "lng": null,
     "date": "2025-07-13",
     "date_end": "2025-07-13",
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -7013,14 +7713,14 @@ const EVENTS = [
     "jun": {
       "7": "中旬"
     },
-    "description": null,
+    "description": "",
     "detail": "",
     "source_urls": [
       {
         "label": "告知HPあり",
         "url": "",
         "kind": "web",
-        "count": 1
+        "count": 2
       }
     ],
     "songs": [],
@@ -7089,8 +7789,8 @@ const EVENTS = [
     "scale": "大",
     "access": "都営浅草線「本所吾妻橋駅」または東武スカイツリーライン「とうきょうスカイツリー駅」から徒歩",
     "address": "〒130-0033 東京都墨田区向島１・２・５丁目",
-    "lat": 35.711773,
-    "lng": 139.804611,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "未確認",
@@ -7103,7 +7803,7 @@ const EVENTS = [
     "hints": [
       [
         9,
-        15
+        13
       ]
     ],
     "jun": {
@@ -7111,7 +7811,14 @@ const EVENTS = [
     },
     "description": "すみだ公園（隅田公園・墨田区側）で開催される地域の盆踊り。名称は会場名と過去の開催情報からの推定。",
     "detail": "名称推定。開催日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "date_unknown",
     "public_category": "date_unknown",
@@ -7143,7 +7850,7 @@ const EVENTS = [
       "hints": [
         [
           9,
-          15
+          13
         ]
       ],
       "label": "9月中旬",
@@ -7172,11 +7879,11 @@ const EVENTS = [
     "scale": "小",
     "access": "錦糸町駅から徒歩すぐ",
     "address": "東京都墨田区江東橋3-9-10",
-    "lat": 35.695351,
-    "lng": 139.813736,
+    "lat": null,
+    "lng": null,
     "date": "2025-01-11",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -7194,7 +7901,14 @@ const EVENTS = [
     },
     "description": "第10回 すみだ輪おどり区民感謝デーは、墨田区で民踊や輪踊りを楽しめる地域イベント。1月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025-01-11（土）13:00-16:00開催記録。墨田区で踊られている盆踊り定番曲を多数用意。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [
       {
         "name": "すみだ輪おどり",
@@ -7268,8 +7982,8 @@ const EVENTS = [
     "scale": "小",
     "access": "東武スカイツリーライン・都営浅草線「押上駅（スカイツリー前）」から徒歩約2分",
     "address": "〒131-0045 東京都墨田区押上2-12-1",
-    "lat": 35.712242,
-    "lng": 139.812119,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "未確認",
@@ -7282,7 +7996,7 @@ const EVENTS = [
     "hints": [
       [
         9,
-        15
+        13
       ]
     ],
     "jun": {
@@ -7290,7 +8004,14 @@ const EVENTS = [
     },
     "description": "中之郷公園（中之郷児童遊園）で開催される地域の盆踊り。名称は会場名と過去の開催情報からの推定。",
     "detail": "名称推定。開催日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "date_unknown",
     "public_category": "date_unknown",
@@ -7322,7 +8043,7 @@ const EVENTS = [
       "hints": [
         [
           9,
-          15
+          13
         ]
       ],
       "label": "9月中旬",
@@ -7351,11 +8072,11 @@ const EVENTS = [
     "scale": "小",
     "access": "都営新宿線「菊川駅」から徒歩約5分（森下駅・清澄白河駅も比較的近い）",
     "address": "〒130-0024 東京都墨田区菊川1丁目18-10",
-    "lat": 35.690304,
-    "lng": 139.802567,
+    "lat": null,
+    "lng": null,
     "date": "2025-09-27",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -7373,7 +8094,14 @@ const EVENTS = [
     },
     "description": "菊川一丁目町会 菊一お祭り広場・盆踊り大会は、中和小学校を会場にした地域密着の盆踊り・夏祭り。9月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025-09-27（土）〜28（日）17:00-20:30。18:00納涼踊り開始。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -7468,11 +8196,11 @@ const EVENTS = [
     "scale": "小",
     "access": "押上駅から徒歩圏内",
     "address": "東京都墨田区押上3-19-6",
-    "lat": 35.712841,
-    "lng": 139.818695,
+    "lat": null,
+    "lng": null,
     "date": "2025-09-13",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -7490,7 +8218,14 @@ const EVENTS = [
     },
     "description": "押上三丁目伸成町会 飛木稲荷神社神幸大祭 祭礼踊りは、墨田区の伸成町会会館前 路上で行われる踊りのある地域イベント。9月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025-09-13（土）〜14（日）19:00から開催記録。例年21:00まで。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [
       {
         "name": "路上で行われる踊り",
@@ -7591,11 +8326,11 @@ const EVENTS = [
     "scale": "小",
     "access": "とうきょうスカイツリー駅・本所吾妻橋駅から徒歩圏内",
     "address": "東京都墨田区向島1-2付近",
-    "lat": 35.71109,
-    "lng": 139.803345,
+    "lat": null,
+    "lng": null,
     "date": "2025-09-13",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -7613,7 +8348,14 @@ const EVENTS = [
     },
     "description": "向島一丁目 牛嶋神社 ミニ奉納踊りは、向島1丁目旧町会会館前を舞台にした祭礼・地域行事にあわせた踊りの場。9月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025-09-13（土）19:00から開催記録。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -7704,11 +8446,11 @@ const EVENTS = [
     "scale": "小",
     "access": "東向島駅・曳舟駅から徒歩圏内",
     "address": "東京都墨田区東向島3-29-5",
-    "lat": 35.723534,
-    "lng": 139.814377,
+    "lat": null,
+    "lng": null,
     "date": "2026-03-01",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -7726,7 +8468,14 @@ const EVENTS = [
     },
     "description": "西図子 盆踊りとおでんの宴は、墨田区の向島百花会館で行われる盆踊り。3月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2026-03-01（日）14:00-17:00開催記録。東京音頭、スカイツリー踊り、河内音頭など。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [
       {
         "name": "スカイツリー踊り",
@@ -7778,11 +8527,11 @@ const EVENTS = [
     "scale": "小",
     "access": "錦糸町駅から徒歩圏内",
     "address": "東京都墨田区太平1-26付近",
-    "lat": 35.702114,
-    "lng": 139.810013,
+    "lat": null,
+    "lng": null,
     "date": "2025-09-12",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -7800,7 +8549,14 @@ const EVENTS = [
     },
     "description": "太平一丁目 牛嶋神社 奉納踊りは、報恩寺境内を舞台にした祭礼・地域行事にあわせた踊りの場。9月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025-09-12（金）〜13（土）19:00-20:45頃開催記録。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -7891,8 +8647,8 @@ const EVENTS = [
     "scale": "大",
     "access": "南側(長崎橋)はJR総武線・半蔵門線錦糸町駅から徒歩5分、北側(業平橋)は半蔵門線・京成押上線押上駅・東武スカイツリーラインとうきょうスカイツリー駅・都営浅草線本所吾妻橋駅からいずれも徒歩5分程度",
     "address": "東京都墨田区（吉妻橋3丁目〜緊糸町1丁目他、南北に約1.85km累る細長い公園）",
-    "lat": 35.710678,
-    "lng": 139.801514,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "未確認",
@@ -7906,14 +8662,26 @@ const EVENTS = [
       [
         9,
         13
+      ],
+      [
+        10,
+        19
       ]
     ],
     "jun": {
-      "9": "中旬"
+      "9": "中旬",
+      "10": "中旬"
     },
     "description": "大横川親水公園周辺で行われる祭礼にあわせた奉納踊り。地域の町会が支える昔ながらの盆踊り。",
     "detail": "2025-09-13 開催実績。2025 9/13。錦糸一丁目 牛嶋神社 奉納踊り 9月13日(土) 18:00-。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "date_unknown",
     "public_category": "date_unknown",
@@ -7974,8 +8742,8 @@ const EVENTS = [
     "scale": "小",
     "access": "東武スカイツリーライン とうきょうスカイツリー駅から徒歩約4分。都営浅草線 本所吾妻橋駅から徒歩約5分",
     "address": "東京都墨田区向島1-33-3",
-    "lat": 35.710354,
-    "lng": 139.808014,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "未確認",
@@ -7996,7 +8764,14 @@ const EVENTS = [
     },
     "description": "小梅児童遊園周辺で行われる祭礼にあわせた奉納踊り。地域の町会が支える昔ながらの盆踊り。",
     "detail": "2025-09-12 開催実績。2025 9/12 - 13。小梅一丁目町会・睦会 牛嶋神社祭礼 奉納踊り 9月12日(金)-13日(土) 午後6時-。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "date_unknown",
     "public_category": "date_unknown",
@@ -8047,90 +8822,6 @@ const EVENTS = [
     "season_confidence": "lowest"
   },
   {
-    "name": "押上二町目町会 飛木稲荷神社神幸大祭 奉納おどり",
-    "name_confirmed": true,
-    "venue": "押上二丁目町会会館前 路上",
-    "area": "墨田区",
-    "months": [
-      9
-    ],
-    "scale": "小",
-    "access": "押上駅から徒歩圏内",
-    "address": "東京都墨田区押上2-19-12",
-    "lat": 35.712868,
-    "lng": 139.814163,
-    "date": null,
-    "date_end": null,
-    "status": "未確認",
-    "date_confidence": {
-      "level": "unknown",
-      "label": "未確認",
-      "description": "開催日はまだ確認できていません"
-    },
-    "date_candidates": [],
-    "hints": [
-      [
-        9,
-        13
-      ]
-    ],
-    "jun": {
-      "9": "中旬"
-    },
-    "description": "押上二丁目町会会館前 路上周辺で行われる祭礼にあわせた奉納踊り。地域の町会が支える昔ながらの盆踊り。",
-    "detail": "2025-09-13 開催実績。2025 9/13。押上二町目町会 飛木稲荷神社神幸大祭 奉納おどり 9月13日(土) 午後7時-(2018年は9時まで)。",
-    "source_urls": [],
-    "songs": [],
-    "display_name": "押上二町目町会 飛木稲荷神社神幸大祭 奉納おどり（押上二丁目町会会館前 路上）",
-    "public_status": "date_unknown",
-    "public_category": "date_unknown",
-    "public_status_label": "日程未確認",
-    "public_note": "今年の日程は未確認です。",
-    "recurrence_label": "日程未確認",
-    "recurrence_score": 0.25,
-    "recurrence_reasons": [
-      "月ヒントあり",
-      "日付ヒントあり",
-      "未確認"
-    ],
-    "recurrence_cautions": [
-      "2026年日程なし"
-    ],
-    "edition_number": null,
-    "last_seen_year": null,
-    "last_seen_dates": [],
-    "display_tier": "season_hint",
-    "season_hint": {
-      "display_tier": "season_hint",
-      "target_year": 2026,
-      "months": [
-        9
-      ],
-      "jun": {
-        "9": "中旬"
-      },
-      "hints": [
-        [
-          9,
-          13
-        ]
-      ],
-      "label": "9月中旬",
-      "confidence": "lowest",
-      "basis": "例年の開催月・旬ヒント",
-      "has_jun_hint": true,
-      "has_sort_hint": true
-    },
-    "season_months": [
-      9
-    ],
-    "season_jun": {
-      "9": "中旬"
-    },
-    "season_hint_label": "9月中旬",
-    "season_confidence": "lowest"
-  },
-  {
     "name": "牛嶋神社御祭礼 奉納踊り",
     "name_confirmed": true,
     "venue": "日進公園",
@@ -8141,8 +8832,8 @@ const EVENTS = [
     "scale": "小",
     "access": "都営大江戸線「両国駅」から徒歩約10分",
     "address": "東京都墨田区亀沢三丁目24番3号",
-    "lat": 35.698574,
-    "lng": 139.804001,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "未確認",
@@ -8163,7 +8854,14 @@ const EVENTS = [
     },
     "description": "日進公園周辺で行われる祭礼にあわせた奉納踊り。地域の町会が支える昔ながらの盆踊り。",
     "detail": "2025-09-12 開催実績。2025 9/12 - 13。亀沢三丁目 「牛嶋神社御祭礼 奉納踊り」 9月12日(金)-13日(土) 17:00-。 *日進公園での開催が復活します。 *奉納踊りは夜店が一段落した18時頃からだそうです。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "date_unknown",
     "public_category": "date_unknown",
@@ -8224,8 +8922,8 @@ const EVENTS = [
     "scale": "小",
     "access": "都営大江戸線・半蔵門線「錦糸町駅」、またはJR総武線「錦糸町駅」から徒歩圏内",
     "address": "東京都墨田区本所四丁目１番４号",
-    "lat": 35.70282,
-    "lng": 139.804916,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "未確認",
@@ -8238,7 +8936,7 @@ const EVENTS = [
     "hints": [
       [
         9,
-        15
+        12
       ]
     ],
     "jun": {
@@ -8246,7 +8944,14 @@ const EVENTS = [
     },
     "description": "本四三ツ目児童遊園（三つ目児童公園）で開催される地域の盆踊り。名称は会場名と過去の開催情報からの推定。",
     "detail": "名称推定。開催日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "date_unknown",
     "public_category": "date_unknown",
@@ -8278,7 +8983,7 @@ const EVENTS = [
       "hints": [
         [
           9,
-          15
+          12
         ]
       ],
       "label": "9月中旬",
@@ -8307,8 +9012,8 @@ const EVENTS = [
     "scale": "中",
     "access": "都営浅草線 本所吾妻橋駅から徒歩約8分。東武スカイツリーライン とうきょうスカイツリー駅から徒歩約10分",
     "address": "東京都墨田区東駒形町4-18-4",
-    "lat": 35.706188,
-    "lng": 139.798279,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "未確認",
@@ -8329,7 +9034,14 @@ const EVENTS = [
     },
     "description": "横川小学校で行われる地域の盆踊りイベント。過去の開催実績をもとに掲載。",
     "detail": "2025-08-30 開催実績。区立小学校。放課後子ども教室「よこラボ」を実施中。盆踊り開催の具体的情報は見つからず（要継続調査） 【月の手がかり】2025年8/30に盆踊り予定の掲載（東京盆踊りマップblog区別ページの一覧より、こと2026-06-10追記） アクセス・規模補完: 小学校会場の地域盆踊りとして中規模扱い。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "date_unknown",
     "public_category": "date_unknown",
@@ -8390,8 +9102,8 @@ const EVENTS = [
     "scale": "大",
     "access": "JR総武線・東京メトロ半蔵門線 録糸町駅南口から徒歩約6分",
     "address": "東京都墨田区江東橋2丁目付近（竛川親水公園特設会場・首都高速7号線高架下）",
-    "lat": 35.694832,
-    "lng": 139.812103,
+    "lat": null,
+    "lng": null,
     "date": "2026-07-29",
     "date_end": "2026-07-30",
     "status": "確認済み",
@@ -8416,7 +9128,14 @@ const EVENTS = [
     },
     "description": "河内音頭の生演奏で夜まで踊り続ける、関東屈指の熱量を誇る大盆踊り。生バンドの音頭に身を任せれば初心者でも止まらなくなる。",
     "detail": "",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [
       {
         "name": "河内音頭",
@@ -8450,16 +9169,19 @@ const EVENTS = [
     "venue": "牛嶋神社",
     "area": "墨田区",
     "months": [
-      9
+      1,
+      2,
+      9,
+      12
     ],
     "scale": "中",
     "access": "都営浅草線「本所吾妻橋駅」徒歩3分・東武スカイツリーライン「とうきょうスカイツリー駅」徒歩3分",
     "address": "〒131-0033 東京都墨田区向島1-4-5",
-    "lat": 35.712784,
-    "lng": 139.804947,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
-    "status": "確認済み",
+    "status": "未確認",
     "date_confidence": {
       "level": "unknown",
       "label": "未確認",
@@ -8468,16 +9190,38 @@ const EVENTS = [
     "date_candidates": [],
     "hints": [
       [
+        1,
+        15
+      ],
+      [
+        2,
+        15
+      ],
+      [
         9,
+        15
+      ],
+      [
+        12,
         15
       ]
     ],
     "jun": {
-      "9": "中旬"
+      "9": "中旬",
+      "1": "中旬",
+      "2": "中旬",
+      "12": "中旬"
     },
     "description": "撫牛で知られる本所の総鎮守・牛嶋神社の祭礼で、各町会が奉納踊りを繰り広げる。神輿や山車も巡行する隅田川エリアの大祭。",
     "detail": "",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "date_unknown",
     "public_category": "date_unknown",
@@ -8487,7 +9231,8 @@ const EVENTS = [
     "recurrence_score": 0.25,
     "recurrence_reasons": [
       "月ヒントあり",
-      "日付ヒントあり"
+      "日付ヒントあり",
+      "未確認"
     ],
     "recurrence_cautions": [
       "2026年日程なし"
@@ -8500,30 +9245,54 @@ const EVENTS = [
       "display_tier": "season_hint",
       "target_year": 2026,
       "months": [
-        9
+        1,
+        2,
+        9,
+        12
       ],
       "jun": {
-        "9": "中旬"
+        "9": "中旬",
+        "1": "中旬",
+        "2": "中旬",
+        "12": "中旬"
       },
       "hints": [
         [
+          1,
+          15
+        ],
+        [
+          2,
+          15
+        ],
+        [
           9,
+          15
+        ],
+        [
+          12,
           15
         ]
       ],
-      "label": "9月中旬",
+      "label": "1月中旬・2月中旬・9月中旬・12月中旬",
       "confidence": "lowest",
       "basis": "例年の開催月・旬ヒント",
       "has_jun_hint": true,
       "has_sort_hint": true
     },
     "season_months": [
-      9
+      1,
+      2,
+      9,
+      12
     ],
     "season_jun": {
-      "9": "中旬"
+      "9": "中旬",
+      "1": "中旬",
+      "2": "中旬",
+      "12": "中旬"
     },
-    "season_hint_label": "9月中旬",
+    "season_hint_label": "1月中旬・2月中旬・9月中旬・12月中旬",
     "season_confidence": "lowest"
   },
   {
@@ -8537,11 +9306,11 @@ const EVENTS = [
     "scale": "小",
     "access": "両国駅・蔵前駅から徒歩圏内",
     "address": "東京都墨田区石原1-7-3",
-    "lat": 35.69944,
-    "lng": 139.798706,
+    "lat": null,
+    "lng": null,
     "date": "2025-09-13",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -8559,7 +9328,14 @@ const EVENTS = [
     },
     "description": "石原一丁目 牛嶋神社 奉納踊りは、石一町会会館前を舞台にした祭礼・地域行事にあわせた踊りの場。9月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025-09-13（土）18:00から開催記録。2024年は20:30まで。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -8650,8 +9426,8 @@ const EVENTS = [
     "scale": "中",
     "access": "JR総武線・都営大江戸線 両国駅から徒歩圏内（すみだ北斎美術館併設）",
     "address": "東京都墨田区亀沢2-7-7",
-    "lat": 35.696976,
-    "lng": 139.800262,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "未確認",
@@ -8672,7 +9448,14 @@ const EVENTS = [
     },
     "description": "緑町公園周辺で行われる祭礼にあわせた奉納踊り。地域の町会が支える昔ながらの盆踊り。",
     "detail": "2025-09-12 開催実績。2025 9/12 - 13。「亀沢1、2丁目合同 牛嶋神社 奉納踊り」 9月12(金)-13日(土) 19:00-21:00。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "date_unknown",
     "public_category": "date_unknown",
@@ -8733,8 +9516,8 @@ const EVENTS = [
     "scale": "中",
     "access": "都営大江戸線「両国駅」・都営浅草線「本所吾妻橋駅」から徒歩圏内",
     "address": "東京都墨田区本所2-2-19",
-    "lat": 35.702164,
-    "lng": 139.801437,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "未確認",
@@ -8755,7 +9538,14 @@ const EVENTS = [
     },
     "description": "若宮公園周辺で行われる祭礼にあわせた奉納踊り。地域の町会が支える昔ながらの盆踊り。",
     "detail": "2025-09-12 開催実績。2025 9/12 - 13。本所二丁目 牛嶋神社 奉納踊り 9月12日(金) -13日(土)。 12日(金) 19:00-21:00、 13日(土) 18:00-20:00",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "date_unknown",
     "public_category": "date_unknown",
@@ -8816,11 +9606,11 @@ const EVENTS = [
     "scale": "大",
     "access": "JR総武線「錦糸町駅」北口から徒歩約3分、東京メトロ半蔵門線「錦糸町駅」4番出口すぐ",
     "address": "東京都墨田区錦糸4-15-1",
-    "lat": 35.698021,
-    "lng": 139.815079,
+    "lat": null,
+    "lng": null,
     "date": "2026-05-09",
     "date_end": "2026-05-10",
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -8842,7 +9632,14 @@ const EVENTS = [
     },
     "description": "錦糸公園で行われる地域の盆踊りイベント。過去の開催実績をもとに掲載。",
     "detail": "2026-05-09〜2026-05-10 開催予定。東京盆踊りマップから確定日として反映。 2026 5/9 - 10 錦糸公園 「すみだ沖縄まつり」 5月9日(土)-10日(日)。 ・9日(土) 15:30- 盆おどり 梅美会 関東大和太鼓(約1時間)。 ・10日(日) 15:00- すみだ輪おどり(盆踊り)(約1時間)。 ＊イベント全体は両日10時-19時に開催。沖縄伝統民謡、エイサー他多数の出演あり。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [
       {
         "name": "すみだ輪おどり",
@@ -8881,8 +9678,8 @@ const EVENTS = [
     "scale": "中",
     "access": "東武亀戸線・スカイツリーライン「曳舟駅」から徒歩約4分、都営浅草線・東京メトロ半蔵門線「押上駅」から徒歩約4分",
     "address": "東京都墨田区押上2-39-6",
-    "lat": 35.713829,
-    "lng": 139.815353,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "未確認",
@@ -8903,9 +9700,15 @@ const EVENTS = [
     },
     "description": "押上二丁目町会会館前 路上周辺で行われる祭礼にあわせた奉納踊り。地域の町会が支える昔ながらの盆踊り。",
     "detail": "2025-09-13 開催実績。2025 9/13。押上二町目町会 飛木稲荷神社神幸大祭 奉納おどり 9月13日(土) 午後7時-(2018年は9時まで)。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
-    "display_name": "押上二町目町会 飛木稲荷神社神幸大祭 奉納おどり（飛木稲荷神社）",
     "public_status": "date_unknown",
     "public_category": "date_unknown",
     "public_status_label": "日程未確認",
@@ -8965,8 +9768,8 @@ const EVENTS = [
     "scale": "小",
     "access": "東京メトロ有楽町線「辰巳駅」1番出口から徒歩約5分",
     "address": "〒135-0053 東京都江東区辰巳1-1-22",
-    "lat": 35.648907,
-    "lng": 139.808411,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "未確認",
@@ -8987,7 +9790,14 @@ const EVENTS = [
     },
     "description": "区立第二辰巳小学校で行われる地域の盆踊りイベント。過去の開催実績をもとに掲載。",
     "detail": "2025-05-17 開催実績。2025 5/17。イベント「第2回 辰巳で盆踊り」5月17日(土)13:00-16:20。 ＊底を拭いた状態の草履、もしくは上履きのご使用をお願い致します(体育館用)。床を傷付ける恐れのある履物のご使用は御遠慮下さい。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "date_unknown",
     "public_category": "date_unknown",
@@ -9048,8 +9858,8 @@ const EVENTS = [
     "scale": "中",
     "access": "東京メトロ東西線 木場駅から徒歩4分",
     "address": "東京都江東区木場2-11-11",
-    "lat": 35.670288,
-    "lng": 139.804306,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "未確認",
@@ -9070,7 +9880,14 @@ const EVENTS = [
     },
     "description": "木場二丁目公園で行われる地域の盆踊りイベント。過去の開催実績をもとに掲載。",
     "detail": "2025-07-18 開催実績。2025 7/18 - 19。木場2丁目町会 「盆踊り大会」 7/18(金)-19(土) 18:00~21:00(19日は20:30まで)。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "date_unknown",
     "public_category": "date_unknown",
@@ -9131,8 +9948,8 @@ const EVENTS = [
     "scale": "中",
     "access": "都営新宿線 森下駅から徒歩1分",
     "address": "東京都江東区森下2-5-16",
-    "lat": 35.686226,
-    "lng": 139.799454,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "未確認",
@@ -9153,7 +9970,14 @@ const EVENTS = [
     },
     "description": "森下公園で行われる地域の盆踊りイベント。過去の開催実績をもとに掲載。",
     "detail": "2025-07-19 開催実績。2025 7/19 - 20。森下二丁目町会 「森下二丁目盆踊り」 7/19(土)-20(日) 18:30-21:00。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "date_unknown",
     "public_category": "date_unknown",
@@ -9214,8 +10038,8 @@ const EVENTS = [
     "scale": "中",
     "access": "JR総武線・東武亀戸線「亀戸駅」北口から徒歩約17分、または都営浅草線「京成押上駅」から徒歩約10分",
     "address": "東京都江東区亀戸3-38-35",
-    "lat": 35.70612,
-    "lng": 139.820648,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "未確認",
@@ -9228,7 +10052,7 @@ const EVENTS = [
     "hints": [
       [
         9,
-        15
+        13
       ]
     ],
     "jun": {
@@ -9236,7 +10060,14 @@ const EVENTS = [
     },
     "description": "江東天祖神社（亀戸天祖神社）で開催される地域の盆踊り。名称は会場名と過去の開催情報からの推定。",
     "detail": "名称推定。開催日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "date_unknown",
     "public_category": "date_unknown",
@@ -9268,7 +10099,7 @@ const EVENTS = [
       "hints": [
         [
           9,
-          15
+          13
         ]
       ],
       "label": "9月中旬",
@@ -9297,8 +10128,8 @@ const EVENTS = [
     "scale": "中",
     "access": "東京メトロ東西線・都営大江戸線「門前仲町駅」から徒歩約3分",
     "address": "東京都江東区門前仲町一丁目1番6号",
-    "lat": 35.67247,
-    "lng": 139.79274,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "未確認",
@@ -9312,14 +10143,26 @@ const EVENTS = [
       [
         7,
         19
+      ],
+      [
+        10,
+        15
       ]
     ],
     "jun": {
-      "7": "中旬"
+      "7": "中旬",
+      "10": "中旬"
     },
     "description": "臨海小学校で行われる地域の盆踊りイベント。過去の開催実績をもとに掲載。",
     "detail": "2025-07-19 開催実績。2025 7/19 - 20。臨海ぼんおどり実行委員会 「都の辰巳深川 臨海ぼんおどり」 7月19日(土)-20日(日) 。 (2024年は 18:00-20:00)",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "date_unknown",
     "public_category": "date_unknown",
@@ -9380,8 +10223,8 @@ const EVENTS = [
     "scale": "大",
     "access": "東急大井町線 下神明駅から徒歩1分／JR・東急大井町線・りんかい線 大井町駅から徒歩10分",
     "address": "東京都品川区西品川1-27-20",
-    "lat": 35.60915,
-    "lng": 139.728943,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "未確認",
@@ -9394,15 +10237,22 @@ const EVENTS = [
     "hints": [
       [
         5,
-        15
+        23
       ]
     ],
     "jun": {
-      "5": "中旬"
+      "5": "下旬"
     },
     "description": "しながわ中央公園で開かれる新感覚の盆踊りフェス「BONDO」。デコトラのステージやキッチンカー、フリーマーケットも同時開催。",
     "detail": "",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "date_unknown",
     "public_category": "date_unknown",
@@ -9429,15 +10279,15 @@ const EVENTS = [
         5
       ],
       "jun": {
-        "5": "中旬"
+        "5": "下旬"
       },
       "hints": [
         [
           5,
-          15
+          23
         ]
       ],
-      "label": "5月中旬",
+      "label": "5月下旬",
       "confidence": "lowest",
       "basis": "例年の開催月・旬ヒント",
       "has_jun_hint": true,
@@ -9447,9 +10297,9 @@ const EVENTS = [
       5
     ],
     "season_jun": {
-      "5": "中旬"
+      "5": "下旬"
     },
-    "season_hint_label": "5月中旬",
+    "season_hint_label": "5月下旬",
     "season_confidence": "lowest"
   },
   {
@@ -9458,87 +10308,58 @@ const EVENTS = [
     "venue": "上神明小学校",
     "area": "品川区",
     "months": [
+      10,
       11
     ],
     "scale": "中",
     "access": "東急大井町線・都営浅草線「中延駅」、またはJR横須賀線「西大井駅」",
     "address": "東京都品川区二葉４－４－１０",
-    "lat": 35.602905,
-    "lng": 139.715851,
-    "date": null,
+    "lat": null,
+    "lng": null,
+    "date": "2026-10-11",
     "date_end": null,
-    "status": "未確認",
+    "status": "確認済み",
     "date_confidence": {
-      "level": "unknown",
-      "label": "未確認",
-      "description": "開催日はまだ確認できていません"
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
     },
     "date_candidates": [],
     "hints": [
       [
         10,
-        17
-      ],
-      [
-        11,
-        2
+        11
       ]
     ],
     "jun": {
-      "10": "中旬",
-      "11": "上旬"
+      "10": "中旬"
     },
     "description": "上神明小学校を会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
     "detail": "2025-11-02 開催実績。2025 11/2。「品川区民まつり 荏原第四地区」11月2日(日) 10時-12時、16時-19:30。 「オープニングイベント・模擬店・盆踊り・子どもコーナー・花火 ほか」。 踊りは18:30-19:15。 (10/17 踊りの時間を追記)",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
+        "kind": "official"
+      }
+    ],
     "songs": [],
-    "public_status": "date_unknown",
-    "public_category": "date_unknown",
-    "public_status_label": "日程未確認",
-    "public_note": "今年の日程は未確認です。",
-    "recurrence_label": "日程未確認",
-    "recurrence_score": 0.25,
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-10-11",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
     "recurrence_reasons": [
-      "月ヒントあり",
-      "日付ヒントあり",
-      "未確認"
+      "2026年日付確認済み"
     ],
-    "recurrence_cautions": [
-      "2026年日程なし"
-    ],
+    "recurrence_cautions": [],
     "edition_number": null,
     "last_seen_year": null,
-    "last_seen_dates": [],
-    "display_tier": "season_hint",
-    "season_hint": {
-      "display_tier": "season_hint",
-      "target_year": 2026,
-      "months": [
-        11
-      ],
-      "jun": {
-        "11": "上旬"
-      },
-      "hints": [
-        [
-          11,
-          2
-        ]
-      ],
-      "label": "11月上旬",
-      "confidence": "lowest",
-      "basis": "例年の開催月・旬ヒント",
-      "has_jun_hint": true,
-      "has_sort_hint": true
-    },
-    "season_months": [
-      11
+    "last_seen_dates": [
+      "2026-10-11"
     ],
-    "season_jun": {
-      "11": "上旬"
-    },
-    "season_hint_label": "11月上旬",
-    "season_confidence": "lowest"
+    "display_tier": "confirmed"
   },
   {
     "name": "品川区民まつり 荏原第三地区",
@@ -9551,21 +10372,21 @@ const EVENTS = [
     "scale": "中",
     "access": "東急池上線「戸越銀座駅」徒歩3分、都営浅草線「戸越駅」徒歩6分",
     "address": "東京都品川区平塚2-19-20",
-    "lat": 35.614975,
-    "lng": 139.712479,
-    "date": null,
+    "lat": null,
+    "lng": null,
+    "date": "2026-10-18",
     "date_end": null,
-    "status": "未確認",
+    "status": "確認済み",
     "date_confidence": {
-      "level": "unknown",
-      "label": "未確認",
-      "description": "開催日はまだ確認できていません"
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
     },
     "date_candidates": [],
     "hints": [
       [
         10,
-        19
+        18
       ]
     ],
     "jun": {
@@ -9573,55 +10394,30 @@ const EVENTS = [
     },
     "description": "京陽小学校を会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
     "detail": "2025-10-19 開催実績。2025 10/19。「品川区民まつり 荏原第三地区」10月19日(日) 11時-15:30。 「模擬店・盆踊り ほか」。 盆踊りは ①12:00-12:30、 ②12:50-13:20、 ③14:35-15:05。 (10/16 踊りの時間帯を追記)",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
+        "kind": "official"
+      }
+    ],
     "songs": [],
-    "public_status": "date_unknown",
-    "public_category": "date_unknown",
-    "public_status_label": "日程未確認",
-    "public_note": "今年の日程は未確認です。",
-    "recurrence_label": "日程未確認",
-    "recurrence_score": 0.25,
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-10-18",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
     "recurrence_reasons": [
-      "月ヒントあり",
-      "日付ヒントあり",
-      "未確認"
+      "2026年日付確認済み"
     ],
-    "recurrence_cautions": [
-      "2026年日程なし"
-    ],
+    "recurrence_cautions": [],
     "edition_number": null,
     "last_seen_year": null,
-    "last_seen_dates": [],
-    "display_tier": "season_hint",
-    "season_hint": {
-      "display_tier": "season_hint",
-      "target_year": 2026,
-      "months": [
-        10
-      ],
-      "jun": {
-        "10": "中旬"
-      },
-      "hints": [
-        [
-          10,
-          19
-        ]
-      ],
-      "label": "10月中旬",
-      "confidence": "lowest",
-      "basis": "例年の開催月・旬ヒント",
-      "has_jun_hint": true,
-      "has_sort_hint": true
-    },
-    "season_months": [
-      10
+    "last_seen_dates": [
+      "2026-10-18"
     ],
-    "season_jun": {
-      "10": "中旬"
-    },
-    "season_hint_label": "10月中旬",
-    "season_confidence": "lowest"
+    "display_tier": "confirmed"
   },
   {
     "name": "品川区民まつり 八潮地区",
@@ -9634,21 +10430,21 @@ const EVENTS = [
     "scale": "中",
     "access": "りんかい線「品川シーサイド駅」から徒歩約16分、または「八潮公園前」バス停から徒歩2分",
     "address": "〒140-0003 東京都品川区八潮5-11-16",
-    "lat": 35.600132,
-    "lng": 139.751862,
-    "date": null,
+    "lat": null,
+    "lng": null,
+    "date": "2026-09-20",
     "date_end": null,
-    "status": "未確認",
+    "status": "確認済み",
     "date_confidence": {
-      "level": "unknown",
-      "label": "未確認",
-      "description": "開催日はまだ確認できていません"
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
     },
     "date_candidates": [],
     "hints": [
       [
         9,
-        14
+        20
       ]
     ],
     "jun": {
@@ -9656,137 +10452,30 @@ const EVENTS = [
     },
     "description": "八潮公園を会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
     "detail": "2025-09-14 開催実績。2025 9/14。「品川区民まつり 八潮地区」9月14日(日) 11時-20:30。 「模擬店・盆踊り・子どもコーナー ほか」。 踊りの時間詳細不明。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
+        "kind": "official"
+      }
+    ],
     "songs": [],
-    "public_status": "date_unknown",
-    "public_category": "date_unknown",
-    "public_status_label": "日程未確認",
-    "public_note": "今年の日程は未確認です。",
-    "recurrence_label": "日程未確認",
-    "recurrence_score": 0.25,
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-09-20",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
     "recurrence_reasons": [
-      "月ヒントあり",
-      "日付ヒントあり",
-      "未確認"
+      "2026年日付確認済み"
     ],
-    "recurrence_cautions": [
-      "2026年日程なし"
-    ],
+    "recurrence_cautions": [],
     "edition_number": null,
     "last_seen_year": null,
-    "last_seen_dates": [],
-    "display_tier": "season_hint",
-    "season_hint": {
-      "display_tier": "season_hint",
-      "target_year": 2026,
-      "months": [
-        9
-      ],
-      "jun": {
-        "9": "中旬"
-      },
-      "hints": [
-        [
-          9,
-          14
-        ]
-      ],
-      "label": "9月中旬",
-      "confidence": "lowest",
-      "basis": "例年の開催月・旬ヒント",
-      "has_jun_hint": true,
-      "has_sort_hint": true
-    },
-    "season_months": [
-      9
+    "last_seen_dates": [
+      "2026-09-20"
     ],
-    "season_jun": {
-      "9": "中旬"
-    },
-    "season_hint_label": "9月中旬",
-    "season_confidence": "lowest"
-  },
-  {
-    "name": "城南小学校の盆踊り",
-    "name_confirmed": false,
-    "venue": "城南小学校",
-    "area": "品川区",
-    "months": [
-      7
-    ],
-    "scale": "小",
-    "access": "京急本線「青物横丁駅」徒歩圈内（隔接する天妙国寺と同一エリア）",
-    "address": "東京都品川区南品川2丁目8番21号",
-    "lat": 35.612305,
-    "lng": 139.74411,
-    "date": null,
-    "date_end": null,
-    "status": null,
-    "date_confidence": {
-      "level": "unknown",
-      "label": "未確認",
-      "description": "開催日はまだ確認できていません"
-    },
-    "date_candidates": [],
-    "hints": [
-      [
-        7,
-        26
-      ]
-    ],
-    "jun": {
-      "7": "下旬"
-    },
-    "description": "城南小学校は、地域の夏祭りや盆踊りで使われる品川区の学校会場。 規模は「小」として整理しています、アクセスは京急本線「青物横丁駅」徒歩圈内（隔接する天妙国寺と同一エリア）。",
-    "detail": "",
-    "source_urls": [],
-    "songs": [],
-    "public_status": "date_unknown",
-    "public_category": "date_unknown",
-    "public_status_label": "日程未確認",
-    "public_note": "今年の日程は未確認です。",
-    "recurrence_label": "日程未確認",
-    "recurrence_score": 0.25,
-    "recurrence_reasons": [
-      "月ヒントあり",
-      "日付ヒントあり"
-    ],
-    "recurrence_cautions": [
-      "2026年日程なし"
-    ],
-    "edition_number": null,
-    "last_seen_year": null,
-    "last_seen_dates": [],
-    "display_tier": "season_hint",
-    "season_hint": {
-      "display_tier": "season_hint",
-      "target_year": 2026,
-      "months": [
-        7
-      ],
-      "jun": {
-        "7": "下旬"
-      },
-      "hints": [
-        [
-          7,
-          26
-        ]
-      ],
-      "label": "7月下旬",
-      "confidence": "lowest",
-      "basis": "例年の開催月・旬ヒント",
-      "has_jun_hint": true,
-      "has_sort_hint": true
-    },
-    "season_months": [
-      7
-    ],
-    "season_jun": {
-      "7": "下旬"
-    },
-    "season_hint_label": "7月下旬",
-    "season_confidence": "lowest"
+    "display_tier": "confirmed"
   },
   {
     "name": "第71回大井どんたく夏まつり 初日 盆踊り",
@@ -9799,11 +10488,11 @@ const EVENTS = [
     "scale": "小",
     "access": "大井町駅から徒歩すぐ",
     "address": "東京都品川区大井1丁目付近",
-    "lat": 35.605854,
-    "lng": 139.732559,
+    "lat": null,
+    "lng": null,
     "date": "2025-08-23",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -9821,7 +10510,14 @@ const EVENTS = [
     },
     "description": "第71回大井どんたく夏まつり 初日 盆踊りは、大井町駅前中央通り周辺で開かれる街なかの踊りイベント。8月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025-08-23（土）18:00から盆踊り。大井どんたく音頭、品川音頭、東京音頭、品川甚句など。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [
       {
         "name": "品川甚句",
@@ -9959,8 +10655,8 @@ const EVENTS = [
     "scale": "小",
     "access": "JR京浜東北線・りんかい線・東急大井町線 大井町駅から徒歩5分",
     "address": "東京都品川区大井1-14-3",
-    "lat": 35.607689,
-    "lng": 139.731827,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "未確認",
@@ -9981,7 +10677,14 @@ const EVENTS = [
     },
     "description": "大井蔵王権現神社で開催される地域の盆踊り。名称は会場名と過去の開催情報からの推定。",
     "detail": "名称推定。開催日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "date_unknown",
     "public_category": "date_unknown",
@@ -10068,7 +10771,14 @@ const EVENTS = [
     },
     "description": "天妙国寺を会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
     "detail": "2025-07-26 開催実績。2025 7/26 - 27。「品川区民まつり 品川第二地区」7月26日(土)-27日(日) 17時-21時。 「盆踊り・模擬店 ほか」。 踊りは18時-21時。 練習会 7/23(水)・24(木) 19:00-20:45 城南小学校体育館。 (7/23朝 時間他追記)",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "upcoming_confirmed",
     "public_category": "upcoming",
@@ -10094,7 +10804,10 @@ const EVENTS = [
     "venue": "天妙国寺",
     "area": "品川区",
     "months": [
-      7
+      1,
+      2,
+      7,
+      8
     ],
     "scale": "中",
     "access": "京急本線 青物横丁駅から徒歩5分（新馬場駅・りんかい線品川シーサイド駅からもアクセス可）",
@@ -10103,7 +10816,7 @@ const EVENTS = [
     "lng": null,
     "date": null,
     "date_end": null,
-    "status": "確認済み",
+    "status": "未確認",
     "date_confidence": {
       "level": "unknown",
       "label": "未確認",
@@ -10112,16 +10825,38 @@ const EVENTS = [
     "date_candidates": [],
     "hints": [
       [
+        1,
+        15
+      ],
+      [
+        2,
+        15
+      ],
+      [
         7,
         25
+      ],
+      [
+        8,
+        15
       ]
     ],
     "jun": {
-      "7": "下旬"
+      "7": "下旬",
+      "1": "中旬",
+      "2": "中旬",
+      "8": "中旬"
     },
     "description": "天妙国寺の境内で開かれる地域の盆踊り大会。例年7月下旬の週末2日間、子どもコーナーもある下町情緒たっぷりの夏祭り。",
     "detail": "",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "date_unknown",
     "public_category": "date_unknown",
@@ -10131,7 +10866,8 @@ const EVENTS = [
     "recurrence_score": 0.25,
     "recurrence_reasons": [
       "月ヒントあり",
-      "日付ヒントあり"
+      "日付ヒントあり",
+      "未確認"
     ],
     "recurrence_cautions": [
       "2026年日程なし"
@@ -10144,30 +10880,54 @@ const EVENTS = [
       "display_tier": "season_hint",
       "target_year": 2026,
       "months": [
-        7
+        1,
+        2,
+        7,
+        8
       ],
       "jun": {
-        "7": "下旬"
+        "7": "下旬",
+        "1": "中旬",
+        "2": "中旬",
+        "8": "中旬"
       },
       "hints": [
         [
+          1,
+          15
+        ],
+        [
+          2,
+          15
+        ],
+        [
           7,
           25
+        ],
+        [
+          8,
+          15
         ]
       ],
-      "label": "7月下旬",
+      "label": "1月中旬・2月中旬・7月下旬・8月中旬",
       "confidence": "lowest",
       "basis": "例年の開催月・旬ヒント",
       "has_jun_hint": true,
       "has_sort_hint": true
     },
     "season_months": [
-      7
+      1,
+      2,
+      7,
+      8
     ],
     "season_jun": {
-      "7": "下旬"
+      "7": "下旬",
+      "1": "中旬",
+      "2": "中旬",
+      "8": "中旬"
     },
-    "season_hint_label": "7月下旬",
+    "season_hint_label": "1月中旬・2月中旬・7月下旬・8月中旬",
     "season_confidence": "lowest"
   },
   {
@@ -10181,11 +10941,11 @@ const EVENTS = [
     "scale": "中",
     "access": "東急大井町線「戸越公園駅」徒歩5分",
     "address": "東京都品川区（戸越公園駅周辺）",
-    "lat": 35.608997,
-    "lng": 139.730225,
+    "lat": null,
+    "lng": null,
     "date": "2026-06-07",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -10203,7 +10963,14 @@ const EVENTS = [
     },
     "description": "宮前小学校で行われる地域の盆踊りイベント。過去の開催実績をもとに掲載。",
     "detail": "2026-06-07 開催予定。東京盆踊りマップから確定日として反映。 2026 6/7 宮前小学校 戸越一丁目町会・戸越二丁目町会・戸越銀座町会「戸越宮前盆踊り」6月7日(日) 14:00-。 ・14:00-19:00 盆踊り ・18:45頃 手持ち花火 ＊雨天時中止あるいは縮小開催。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "ended_2026",
     "public_category": "ended",
@@ -10233,8 +11000,8 @@ const EVENTS = [
     "scale": "小",
     "access": "東急目黒線「武蔵小山駅」西口から徒歩約10分",
     "address": "東京都品川区小山台2-2-1",
-    "lat": 35.625652,
-    "lng": 139.698853,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "未確認",
@@ -10246,16 +11013,28 @@ const EVENTS = [
     "date_candidates": [],
     "hints": [
       [
+        7,
+        26
+      ],
+      [
         9,
         13
       ]
     ],
     "jun": {
+      "7": "下旬",
       "9": "中旬"
     },
     "description": "小山台公園周辺で行われる祭礼にあわせた奉納踊り。地域の町会が支える昔ながらの盆踊り。",
     "detail": "2025-09-13 開催実績。2025 9/13。小山台二丁目町会 戸越八幡神社例大祭 盆踊り 9月13日(土)。 盆踊り:18:30-19:30。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "date_unknown",
     "public_category": "date_unknown",
@@ -10317,8 +11096,8 @@ const EVENTS = [
     "scale": "中",
     "access": "東急目黒線 武蔵小山駅から徒歩4〜5分",
     "address": "東京都品川区小山台1-18-24",
-    "lat": 35.622478,
-    "lng": 139.703033,
+    "lat": null,
+    "lng": null,
     "date": "2026-10-10",
     "date_end": null,
     "status": "確認済み",
@@ -10339,7 +11118,14 @@ const EVENTS = [
     },
     "description": "小山台小学校を会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
     "detail": "2025-07-26 開催実績。2025 7/26。「品川区民まつり 荏原第一地区」7月26日(土) 14時-19時。 盆踊りは17:30-18:30。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "upcoming_confirmed",
     "public_category": "upcoming",
@@ -10369,8 +11155,8 @@ const EVENTS = [
     "scale": "小",
     "access": "東急池上線 戸越銀座駅から徒歩約6分。都営浅草線 戸越駅から徒歩約8分",
     "address": "東京都品川区平塚2-2-12",
-    "lat": 35.618626,
-    "lng": 139.717102,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "未確認",
@@ -10391,7 +11177,14 @@ const EVENTS = [
     },
     "description": "平塚中央公園で行われる地域の盆踊りイベント。過去の開催実績をもとに掲載。",
     "detail": "2025-09-13 開催実績。2025 9/13。中原共和町会 戸越八幡神社祭礼 盆踊り 9月13日(土) 18:00-19:00。 ＊例年「盆踊りみたいなものはやります」が今年あるかは不明。 ＊ポスターに盆踊り記載無し。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "date_unknown",
     "public_category": "date_unknown",
@@ -10447,16 +11240,19 @@ const EVENTS = [
     "venue": "戸越八幡神社",
     "area": "品川区",
     "months": [
-      9
+      1,
+      2,
+      9,
+      12
     ],
     "scale": "中",
     "access": "都営浅草線「戸越駅」徒歩8分・東急池上線「戸越銀座駅」徒歩10分・東急大井町線「戸越公園駅」徒歩10分",
     "address": "〒142-0041 東京都品川区戸越2-6-23",
-    "lat": 35.612946,
-    "lng": 139.720062,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
-    "status": "確認済み",
+    "status": "未確認",
     "date_confidence": {
       "level": "unknown",
       "label": "未確認",
@@ -10465,16 +11261,38 @@ const EVENTS = [
     "date_candidates": [],
     "hints": [
       [
+        1,
+        15
+      ],
+      [
+        2,
+        15
+      ],
+      [
         9,
+        15
+      ],
+      [
+        12,
         15
       ]
     ],
     "jun": {
-      "9": "中旬"
+      "9": "中旬",
+      "1": "中旬",
+      "2": "中旬",
+      "12": "中旬"
     },
     "description": "9月中旬の例大祭にあわせて開かれる奉納盆踊り。神輿や山車の巡行とともに楽しめる、戸越の秋の風物詩。",
     "detail": "",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "date_unknown",
     "public_category": "date_unknown",
@@ -10484,7 +11302,8 @@ const EVENTS = [
     "recurrence_score": 0.25,
     "recurrence_reasons": [
       "月ヒントあり",
-      "日付ヒントあり"
+      "日付ヒントあり",
+      "未確認"
     ],
     "recurrence_cautions": [
       "2026年日程なし"
@@ -10497,30 +11316,54 @@ const EVENTS = [
       "display_tier": "season_hint",
       "target_year": 2026,
       "months": [
-        9
+        1,
+        2,
+        9,
+        12
       ],
       "jun": {
-        "9": "中旬"
+        "9": "中旬",
+        "1": "中旬",
+        "2": "中旬",
+        "12": "中旬"
       },
       "hints": [
         [
+          1,
+          15
+        ],
+        [
+          2,
+          15
+        ],
+        [
           9,
+          15
+        ],
+        [
+          12,
           15
         ]
       ],
-      "label": "9月中旬",
+      "label": "1月中旬・2月中旬・9月中旬・12月中旬",
       "confidence": "lowest",
       "basis": "例年の開催月・旬ヒント",
       "has_jun_hint": true,
       "has_sort_hint": true
     },
     "season_months": [
-      9
+      1,
+      2,
+      9,
+      12
     ],
     "season_jun": {
-      "9": "中旬"
+      "9": "中旬",
+      "1": "中旬",
+      "2": "中旬",
+      "12": "中旬"
     },
-    "season_hint_label": "9月中旬",
+    "season_hint_label": "1月中旬・2月中旬・9月中旬・12月中旬",
     "season_confidence": "lowest"
   },
   {
@@ -10534,11 +11377,11 @@ const EVENTS = [
     "scale": "小",
     "access": "旗の台駅から徒歩圏内",
     "address": "東京都品川区旗の台5-3-5付近",
-    "lat": 35.604675,
-    "lng": 139.700851,
+    "lat": null,
+    "lng": null,
     "date": "2025-10-18",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -10556,7 +11399,14 @@ const EVENTS = [
     },
     "description": "旗の台稲荷通り商店会盆踊り 盆ROCKは、品川区の旗の台稲荷通り商店街で行われる盆踊り。10月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025-10-18（土）15:00-19:00。17:00-19:00に盆ROCK。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [
       {
         "name": "オブ・ラ・ディ、オブ・ラ・ダ",
@@ -10704,13 +11554,15 @@ const EVENTS = [
     "venue": "旗岡八幡神社",
     "area": "品川区",
     "months": [
+      2,
+      8,
       9
     ],
     "scale": "中",
     "access": "東急大井町線「荏原町駅」徒歩2分",
     "address": "〒142-0064 東京都品川区旗の台3-6-12",
-    "lat": 35.604702,
-    "lng": 139.708572,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "未確認",
@@ -10722,16 +11574,33 @@ const EVENTS = [
     "date_candidates": [],
     "hints": [
       [
-        9,
+        2,
         15
+      ],
+      [
+        8,
+        15
+      ],
+      [
+        9,
+        27
       ]
     ],
     "jun": {
-      "9": "中旬"
+      "2": "中旬",
+      "8": "中旬",
+      "9": "下旬"
     },
     "description": "旗岡八幡神社例大祭は、旗岡八幡神社を舞台にした祭礼・地域行事にあわせた踊りの場。9月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "date_unknown",
     "public_category": "date_unknown",
@@ -10755,30 +11624,46 @@ const EVENTS = [
       "display_tier": "season_hint",
       "target_year": 2026,
       "months": [
+        2,
+        8,
         9
       ],
       "jun": {
-        "9": "中旬"
+        "2": "中旬",
+        "8": "中旬",
+        "9": "下旬"
       },
       "hints": [
         [
-          9,
+          2,
           15
+        ],
+        [
+          8,
+          15
+        ],
+        [
+          9,
+          27
         ]
       ],
-      "label": "9月中旬",
+      "label": "2月中旬・8月中旬・9月下旬",
       "confidence": "lowest",
       "basis": "例年の開催月・旬ヒント",
       "has_jun_hint": true,
       "has_sort_hint": true
     },
     "season_months": [
+      2,
+      8,
       9
     ],
     "season_jun": {
-      "9": "中旬"
+      "2": "中旬",
+      "8": "中旬",
+      "9": "下旬"
     },
-    "season_hint_label": "9月中旬",
+    "season_hint_label": "2月中旬・8月中旬・9月下旬",
     "season_confidence": "lowest"
   },
   {
@@ -10792,11 +11677,11 @@ const EVENTS = [
     "scale": "小",
     "access": "大井町駅から徒歩圏内",
     "address": "東京都品川区南品川6-8-20",
-    "lat": 35.610355,
-    "lng": 139.736359,
+    "lat": null,
+    "lng": null,
     "date": "2026-05-31",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -11295,10 +12180,11 @@ const EVENTS = [
     "venue": "杜松ホーム",
     "area": "品川区",
     "months": [
-      7
+      7,
+      8
     ],
-    "scale": "中",
-    "access": "東急大井町線 戸越公園駅から徒歩約5分。都営浅草線 中延駅から徒歩約8分",
+    "scale": null,
+    "access": "",
     "address": "東京都品川区豊町4-24-15",
     "lat": 35.605442,
     "lng": 139.722931,
@@ -11311,10 +12197,21 @@ const EVENTS = [
       "description": "開催日として確認済みです"
     },
     "date_candidates": [],
-    "hints": [],
-    "jun": {},
-    "description": "杜松ホームを会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
-    "detail": "2026年公式情報: 2026-07-18〜2026-07-19、会場 杜松ホーム（東京都品川区豊町4-24-15）。",
+    "hints": [
+      [
+        7,
+        18
+      ],
+      [
+        7,
+        19
+      ]
+    ],
+    "jun": {
+      "7": "中旬"
+    },
+    "description": "旧杜松小学校を会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
+    "detail": "2025-08-23 開催実績。2025 8/23 - 24。「品川区民まつり 荏原第五地区」8月23日(土)-24日(日)。 23日(土) 16:00-19:30。 24日(日) 16:00-18:30。 「模擬店・盆踊り・子どもコーナー・ステージ発表 ほか」。 踊りの時間詳細不明。",
     "source_urls": [
       {
         "label": "公式告知あり",
@@ -11352,8 +12249,8 @@ const EVENTS = [
     "scale": "中",
     "access": "りんかい線・東京モノレール 天王洲アイル駅から徒歩約5分。京急本線 新馬場駅から徒歩約15分",
     "address": "東京都品川区東品川3-9-21",
-    "lat": 35.615974,
-    "lng": 139.749268,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "未確認",
@@ -11374,7 +12271,14 @@ const EVENTS = [
     },
     "description": "東品川海上公園で行われる地域の盆踊りイベント。過去の開催実績をもとに掲載。",
     "detail": "2025-04-13 開催実績。2025 4/13。「しながわ運河まつり ステージプログラム」 4月13日(日)10:00-15:10(2日目)。 14:00-14:20 「しゅわしゅわデフリンピック」。 14:20-14:40「わわわ！しながわ社協音頭」。 14:40-15:10「晴盆セレクト盆踊り」。 ＊イベント全体は 4月12日 (土)から2日間開催。 (4/12朝掲)",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [
       {
         "name": "しながわ社協音頭",
@@ -11430,90 +12334,6 @@ const EVENTS = [
     "season_confidence": "lowest"
   },
   {
-    "name": "品川区民まつり 大崎第一地区",
-    "name_confirmed": true,
-    "venue": "第一日野小学校",
-    "area": "品川区",
-    "months": [
-      7
-    ],
-    "scale": "中",
-    "access": "東急目黒線 不動前駅から徒歩約7分。JR五反田駅から徒歩約15分",
-    "address": "東京都品川区西五反田6-5-32",
-    "lat": 35.622047,
-    "lng": 139.715668,
-    "date": null,
-    "date_end": null,
-    "status": "未確認",
-    "date_confidence": {
-      "level": "unknown",
-      "label": "未確認",
-      "description": "開催日はまだ確認できていません"
-    },
-    "date_candidates": [],
-    "hints": [
-      [
-        7,
-        26
-      ]
-    ],
-    "jun": {
-      "7": "下旬"
-    },
-    "description": "第四日野小学校を会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
-    "detail": "2025-07-26 開催実績。2025 7/26。「品川区民まつり 大崎第一地区」7月26日(土) 15時-19時。 「模擬店、盆踊り、ゲームコーナー ほか」。 踊りの時間詳細不明。",
-    "source_urls": [],
-    "songs": [],
-    "display_name": "品川区民まつり 大崎第一地区（第一日野小学校）",
-    "public_status": "date_unknown",
-    "public_category": "date_unknown",
-    "public_status_label": "日程未確認",
-    "public_note": "今年の日程は未確認です。",
-    "recurrence_label": "日程未確認",
-    "recurrence_score": 0.25,
-    "recurrence_reasons": [
-      "月ヒントあり",
-      "日付ヒントあり",
-      "未確認"
-    ],
-    "recurrence_cautions": [
-      "2026年日程なし"
-    ],
-    "edition_number": null,
-    "last_seen_year": null,
-    "last_seen_dates": [],
-    "display_tier": "season_hint",
-    "season_hint": {
-      "display_tier": "season_hint",
-      "target_year": 2026,
-      "months": [
-        7
-      ],
-      "jun": {
-        "7": "下旬"
-      },
-      "hints": [
-        [
-          7,
-          26
-        ]
-      ],
-      "label": "7月下旬",
-      "confidence": "lowest",
-      "basis": "例年の開催月・旬ヒント",
-      "has_jun_hint": true,
-      "has_sort_hint": true
-    },
-    "season_months": [
-      7
-    ],
-    "season_jun": {
-      "7": "下旬"
-    },
-    "season_hint_label": "7月下旬",
-    "season_confidence": "lowest"
-  },
-  {
     "name": "第3回 延七昇竜太鼓盆踊り大会",
     "name_confirmed": true,
     "venue": "第二延山小学校",
@@ -11524,8 +12344,8 @@ const EVENTS = [
     "scale": "中",
     "access": "東急池上線 荏原中延駅から徒歩約6分。東急大井町線・池上線 旗の台駅から徒歩約8分",
     "address": "東京都品川区旗の台1-6-1",
-    "lat": 35.610626,
-    "lng": 139.703262,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "未確認",
@@ -11546,7 +12366,14 @@ const EVENTS = [
     },
     "description": "第二延山小学校で行われる地域の盆踊りイベント。過去の開催実績をもとに掲載。",
     "detail": "2025-05-11 開催実績。2025 5/11。延七昇竜太鼓「第3回 延七昇竜太鼓盆踊り大会」 5月11日(日) 17時半-20時。 (旧:品川で一番早い盆踊り大会) ・参加費無料、雨天決行。 ＊各自上履きをご持参ください。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "date_unknown",
     "public_category": "date_unknown",
@@ -11607,8 +12434,8 @@ const EVENTS = [
     "scale": "中",
     "access": "東急目黒線 不動前駅から徒歩約4分。JR目黒駅から徒歩約15分",
     "address": "東京都品川区西五反田4-29-9",
-    "lat": 35.625908,
-    "lng": 139.712418,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "未確認",
@@ -11629,9 +12456,15 @@ const EVENTS = [
     },
     "description": "第四日野小学校を会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
     "detail": "2025-07-26 開催実績。2025 7/26。「品川区民まつり 大崎第一地区」7月26日(土) 15時-19時。 「模擬店、盆踊り、ゲームコーナー ほか」。 踊りの時間詳細不明。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
-    "display_name": "品川区民まつり 大崎第一地区（第四日野小学校）",
     "public_status": "date_unknown",
     "public_category": "date_unknown",
     "public_status_label": "日程未確認",
@@ -11691,11 +12524,11 @@ const EVENTS = [
     "scale": "小",
     "access": "横須賀線・湘南新宿ライン 西大井駅から徒歩約5分",
     "address": "東京都品川区西大井1丁目4-10",
-    "lat": 35.601753,
-    "lng": 139.723602,
+    "lat": null,
+    "lng": null,
     "date": "2025-09-27",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -11713,7 +12546,14 @@ const EVENTS = [
     },
     "description": "品川区民まつり 西大井広場公園 盆踊りは、西大井広場公園で開かれる屋外型の盆踊り・夏の地域イベント。9月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025-09-27 17:40～18:30の開催記録。通常は9月のどこか1日。2026年日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -11802,11 +12642,11 @@ const EVENTS = [
     "scale": "小",
     "access": "戸越駅・戸越公園駅から徒歩圏内",
     "address": "東京都品川区豊町1-4-14",
-    "lat": 35.614216,
-    "lng": 139.722549,
+    "lat": null,
+    "lng": null,
     "date": "2025-09-13",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -11824,7 +12664,14 @@ const EVENTS = [
     },
     "description": "戸越八幡神社例大祭 奉納盆踊り大会は、豊町一丁目会館前を舞台にした祭礼・地域行事にあわせた踊りの場。9月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025-09-13（土）18:00-20:00開催記録。戸越銀座音頭ほか。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -11917,11 +12764,11 @@ const EVENTS = [
     "scale": "小",
     "access": "京急 鮫洲駅から徒歩約5分",
     "address": "東京都品川区東大井1-16-15",
-    "lat": 35.604309,
-    "lng": 139.743912,
+    "lat": null,
+    "lng": null,
     "date": "2026-06-06",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -11939,7 +12786,14 @@ const EVENTS = [
     },
     "description": "鮫洲入江広場公園 ゆり園盆踊りは、鮫洲入江広場公園で開かれる屋外型の盆踊り・夏の地域イベント。6月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2026-06-06（土）14:30から晴盆の盆踊り枠。次回日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "ended_2026",
     "public_category": "ended",
@@ -11969,11 +12823,11 @@ const EVENTS = [
     "scale": "小",
     "access": "目黒駅から徒歩すぐ",
     "address": "東京都目黒区下目黒3-21-9付近",
-    "lat": 35.629047,
-    "lng": 139.707596,
+    "lat": null,
+    "lng": null,
     "date": "2025-07-27",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -11991,7 +12845,14 @@ const EVENTS = [
     },
     "description": "地域のふれあい第37回盆踊り大会は、目黒区のJR目黒駅西口前で行われる盆踊り。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025-07-27（日）10:00-20:00頃。盆踊りは17:00から19:40頃まで。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_high",
     "public_category": "recurring_last_year",
@@ -12086,11 +12947,11 @@ const EVENTS = [
     "scale": "小",
     "access": "中目黒駅から徒歩圏内",
     "address": "東京都目黒区中目黒1-11-18",
-    "lat": 35.641674,
-    "lng": 139.701843,
+    "lat": null,
+    "lng": null,
     "date": "2025-08-30",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -12108,7 +12969,14 @@ const EVENTS = [
     },
     "description": "中目黒盆踊り大会 2025は、フナイリバ（目黒川船入場広場）で開かれる屋外型の盆踊り・夏の地域イベント。8月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025-08-30（土）〜31（日）17:00-21:00。盆踊りスタートは17:30。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -12197,11 +13065,11 @@ const EVENTS = [
     "scale": "小",
     "access": "駒場東大前駅から徒歩圏内",
     "address": "東京都目黒区駒場3-8-1",
-    "lat": 35.660641,
-    "lng": 139.683151,
+    "lat": null,
+    "lng": null,
     "date": "2025-11-23",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -12219,7 +13087,14 @@ const EVENTS = [
     },
     "description": "盆踊り in 駒場東大は、目黒区の東京大学駒場キャンパス 学生会館東で行われる盆踊り。11月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025-11-23（日）〜24（月振）各日14:00-15:30。23日は伝統曲とアニソン盆踊り、24日は世界盆踊り。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -12306,11 +13181,11 @@ const EVENTS = [
     "scale": "小",
     "access": "祐天寺駅から徒歩圏内",
     "address": "東京都目黒区中目黒5-24-53",
-    "lat": 35.637329,
-    "lng": 139.696442,
+    "lat": null,
+    "lng": null,
     "date": "2025-07-16",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -12328,7 +13203,14 @@ const EVENTS = [
     },
     "description": "第90回 祐天寺み魂まつり こども盆踊り大会は、祐天寺境内を舞台にした祭礼・地域行事にあわせた踊りの場。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025-07-16（水）〜18（金）17:30-21:00。初日は雨のため中止。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_high",
     "public_category": "recurring_last_year",
@@ -12427,11 +13309,11 @@ const EVENTS = [
     "scale": "小",
     "access": "自由が丘駅正面口前",
     "address": "東京都目黒区自由が丘1丁目付近",
-    "lat": 35.610138,
-    "lng": 139.669952,
+    "lat": null,
+    "lng": null,
     "date": "2025-07-19",
     "date_end": "2025-07-21",
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -12458,7 +13340,7 @@ const EVENTS = [
         "label": "告知HPあり",
         "url": "",
         "kind": "web",
-        "count": 1
+        "count": 2
       }
     ],
     "songs": [
@@ -12649,11 +13531,11 @@ const EVENTS = [
     "scale": "小",
     "access": "東急東横線 都立大学駅すぐ",
     "address": "東京都目黒区中根1-3-10",
-    "lat": 35.617424,
-    "lng": 139.675613,
+    "lat": null,
+    "lng": null,
     "date": "2026-03-29",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -12671,7 +13553,14 @@ const EVENTS = [
     },
     "description": "桜フェスタ商店街 みんなで盆踊りは、都立大学駅西口緑道周辺で開かれる街なかの踊りイベント。3月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2026-03-29（日）15:15から演舞＆みんなで盆踊り。主催は富志美会（都立大学駅前商店会）。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [
       {
         "name": "都立大学駅西口緑道周辺で開かれる街なかの踊り",
@@ -12709,11 +13598,11 @@ const EVENTS = [
     "scale": "大",
     "access": "最寄駅前",
     "address": "東京都大田区西蒲田7-68",
-    "lat": 35.562431,
-    "lng": 139.715424,
+    "lat": null,
+    "lng": null,
     "date": "2025-09-06",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -12731,7 +13620,14 @@ const EVENTS = [
     },
     "description": "蒲田魅力向上委員会(蒲田西口商店街振興組合、蒲田西地区自治会連合会) 蒲田国際フェスティバル2025 -世界が出会う下町フェスは、JR蒲田駅西口駅前広場(駅前会場)周辺で開かれる街なかの踊りイベント。9月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 9/6。次回日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_low",
     "public_category": "recurring_last_year",
@@ -12805,11 +13701,11 @@ const EVENTS = [
     "scale": "中",
     "access": "大田区内。詳細アクセスは出典URLを参照",
     "address": "東京都大田区大森南4-14-2",
-    "lat": 35.56588,
-    "lng": 139.745514,
+    "lat": null,
+    "lng": null,
     "date": "2025-07-29",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -12827,7 +13723,14 @@ const EVENTS = [
     },
     "description": "森ヶ崎自治会は、大森南4丁目公園で開かれる屋外型の盆踊り・夏の地域イベント。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 7/29 - 30。次回日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -12920,11 +13823,11 @@ const EVENTS = [
     "scale": "中",
     "access": "大田区内。詳細アクセスは出典URLを参照",
     "address": "東京都大田区大森南1-23-20",
-    "lat": 35.561398,
-    "lng": 139.738388,
+    "lat": null,
+    "lng": null,
     "date": "2025-07-21",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -12942,7 +13845,14 @@ const EVENTS = [
     },
     "description": "大森南一丁目自治会 納涼盆踊り大会は、大森南一丁目公園で開かれる屋外型の盆踊り・夏の地域イベント。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 7/21 - 22。次回日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -13039,11 +13949,11 @@ const EVENTS = [
     "scale": "小",
     "access": "大田区内。詳細アクセスは出典URLを参照",
     "address": "東京都大田区北糀谷1-22-10",
-    "lat": 35.561264,
-    "lng": 139.73613,
+    "lat": null,
+    "lng": null,
     "date": "2025-07-24",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -13061,7 +13971,14 @@ const EVENTS = [
     },
     "description": "北糀谷町会 納涼踊り大会は、子安八幡神社を舞台にした祭礼・地域行事にあわせた踊りの場。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 7/24 - 25。次回日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -13158,11 +14075,11 @@ const EVENTS = [
     "scale": "中",
     "access": "大田区内。詳細アクセスは出典URLを参照",
     "address": "東京都大田区中央7-15",
-    "lat": 35.574951,
-    "lng": 139.715012,
+    "lat": null,
+    "lng": null,
     "date": "2025-08-02",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -13180,7 +14097,14 @@ const EVENTS = [
     },
     "description": "市野倉南町会 盆踊りは、市野倉南児童公園で開かれる屋外型の盆踊り・夏の地域イベント。8月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 8/2 - 3。次回日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -13273,11 +14197,11 @@ const EVENTS = [
     "scale": "小",
     "access": "大田区内。詳細アクセスは出典URLを参照",
     "address": "東京都大田区東糀谷4-3-6",
-    "lat": 35.556377,
-    "lng": 139.744568,
+    "lat": null,
+    "lng": null,
     "date": "2025-07-18",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -13295,7 +14219,14 @@ const EVENTS = [
     },
     "description": "東糀谷四・五・六町会 納涼盆踊り大会は、大田区の旭児童遊園で行われる盆踊り。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 7/18 - 19。次回日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -13392,11 +14323,11 @@ const EVENTS = [
     "scale": "中",
     "access": "大田区内。詳細アクセスは出典URLを参照",
     "address": "東京都大田区中央8-9-1",
-    "lat": 35.573612,
-    "lng": 139.713455,
+    "lat": null,
+    "lng": null,
     "date": "2025-07-26",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -13414,7 +14345,14 @@ const EVENTS = [
     },
     "description": "堤方東町会 盆踊り大会は、池上第二小学校を会場にした地域密着の盆踊り・夏祭り。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 7/26。次回日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -13511,11 +14449,11 @@ const EVENTS = [
     "scale": "小",
     "access": "大田区内。詳細アクセスは出典URLを参照",
     "address": "東京都大田区本羽田3-9-12",
-    "lat": 35.546978,
-    "lng": 139.740967,
+    "lat": null,
+    "lng": null,
     "date": "2025-07-13",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -13533,7 +14471,14 @@ const EVENTS = [
     },
     "description": "羽田青年連合会は、羽田神社を舞台にした祭礼・地域行事にあわせた踊りの場。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 7/13 - 15。次回日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -13626,11 +14571,11 @@ const EVENTS = [
     "scale": "小",
     "access": "大田区内。詳細アクセスは出典URLを参照",
     "address": "東京都大田区萩中1-5",
-    "lat": 35.552441,
-    "lng": 139.727203,
+    "lat": null,
+    "lng": null,
     "date": "2025-07-11",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -13648,7 +14593,14 @@ const EVENTS = [
     },
     "description": "萩中町会・オーベルグランディオ萩中自治会・新宿東町会 盆踊り大会は、萩中神社を舞台にした祭礼・地域行事にあわせた踊りの場。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 7/11 - 12。次回日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -13747,11 +14699,11 @@ const EVENTS = [
     "scale": "小",
     "access": "大田区内。詳細アクセスは出典URLを参照",
     "address": "東京都大田区西糀谷4-9-17",
-    "lat": 35.555637,
-    "lng": 139.730652,
+    "lat": null,
+    "lng": null,
     "date": "2025-07-21",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -13769,7 +14721,14 @@ const EVENTS = [
     },
     "description": "西糀谷四丁目町会 盆踊り大会は、西仲天祖神社を舞台にした祭礼・地域行事にあわせた踊りの場。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 7/21 - 22。次回日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -13866,11 +14825,11 @@ const EVENTS = [
     "scale": "中",
     "access": "大田区内。詳細アクセスは出典URLを参照",
     "address": "東京都大田区西糀谷2-14-18",
-    "lat": 35.558617,
-    "lng": 139.735962,
+    "lat": null,
+    "lng": null,
     "date": "2025-07-28",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -13888,7 +14847,14 @@ const EVENTS = [
     },
     "description": "西糀谷三丁目町会 納涼盆踊り大会は、西糀谷さざんか公園で開かれる屋外型の盆踊り・夏の地域イベント。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 7/28 - 29。次回日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -13985,11 +14951,11 @@ const EVENTS = [
     "scale": "中",
     "access": "大田区内。詳細アクセスは出典URLを参照",
     "address": "東京都大田区南馬込4-48～南馬込6-11付近",
-    "lat": 35.582912,
-    "lng": 139.714645,
+    "lat": null,
+    "lng": null,
     "date": "2025-04-06",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -14007,7 +14973,14 @@ const EVENTS = [
     },
     "description": "馬込地区自治会連合会、馬籠商店会連合睦会は、馬込桜並木公園、馬込桜並木通りで開かれる屋外型の盆踊り・夏の地域イベント。4月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 4/6。次回日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -14075,11 +15048,11 @@ const EVENTS = [
     "scale": "中",
     "access": "世田谷区内。詳細アクセスは出典URLを参照",
     "address": "東京都世田谷区砧4-6",
-    "lat": 35.640839,
-    "lng": 139.613022,
+    "lat": null,
+    "lng": null,
     "date": "2025-07-19",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -14097,7 +15070,14 @@ const EVENTS = [
     },
     "description": "砧町町会 納涼夏祭り大会は、三峰公園で開かれる屋外型の盆踊り・夏の地域イベント。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 7/19 - 20。次回日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -14194,11 +15174,11 @@ const EVENTS = [
     "scale": "中",
     "access": "世田谷区内。詳細アクセスは出典URLを参照",
     "address": "東京都世田谷区上北沢4-22-29",
-    "lat": 35.66991,
-    "lng": 139.621841,
+    "lat": null,
+    "lng": null,
     "date": "2025-08-23",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -14216,7 +15196,14 @@ const EVENTS = [
     },
     "description": "上北沢盆踊り実行委員会 上北沢の納涼盆踊りは、上北沢小学校を会場にした地域密着の盆踊り・夏祭り。8月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 8/23。次回日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -14311,11 +15298,11 @@ const EVENTS = [
     "scale": "小",
     "access": "世田谷区内。詳細アクセスは出典URLを参照",
     "address": "東京都世田谷区代沢1-23",
-    "lat": 35.656403,
-    "lng": 139.677658,
+    "lat": null,
+    "lng": null,
     "date": "2025-07-19",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -14333,7 +15320,14 @@ const EVENTS = [
     },
     "description": "下代田東町会 下代田東子供祭り・納涼祭りは、世田谷区の下代田児童遊園で行われる踊りのある地域イベント。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 7/19 - 20。次回日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -14428,11 +15422,11 @@ const EVENTS = [
     "scale": "小",
     "access": "世田谷区内。詳細アクセスは出典URLを参照",
     "address": "東京都世田谷区北沢2-23",
-    "lat": 35.661465,
-    "lng": 139.666016,
+    "lat": null,
+    "lng": null,
     "date": "2025-08-09",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -14450,7 +15444,14 @@ const EVENTS = [
     },
     "description": "あずま通り商店街 下北沢盆踊り2025は、下北沢駅東口周辺で開かれる街なかの踊りイベント。8月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 8/9 - 10。次回日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [
       {
         "name": "下北沢駅東口周辺で開かれる街なかの踊り",
@@ -14550,11 +15551,11 @@ const EVENTS = [
     "scale": "小",
     "access": "世田谷区内。詳細アクセスは出典URLを参照",
     "address": "東京都世田谷区新町2-17-1",
-    "lat": 35.629112,
-    "lng": 139.648773,
+    "lat": null,
+    "lng": null,
     "date": "2025-08-17",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -14572,7 +15573,14 @@ const EVENTS = [
     },
     "description": "新町公民会 盆踊り大会は、久富稲荷神社を舞台にした祭礼・地域行事にあわせた踊りの場。8月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 8/17。次回日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -14667,11 +15675,11 @@ const EVENTS = [
     "scale": "中",
     "access": "世田谷区内。詳細アクセスは出典URLを参照",
     "address": "東京都世田谷区玉川3-24（高架下）",
-    "lat": 35.614258,
-    "lng": 139.624802,
+    "lat": null,
+    "lng": null,
     "date": "2025-07-25",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -14689,7 +15697,14 @@ const EVENTS = [
     },
     "description": "玉川町会盆おどり大会は、二子玉川西地区ふれあい広場(246高架下)で開かれる屋外型の盆踊り・夏の地域イベント。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 7/25 - 26。次回日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -14782,11 +15797,11 @@ const EVENTS = [
     "scale": "大",
     "access": "最寄駅前",
     "address": "東京都世田谷区南烏山2-38-16",
-    "lat": 35.670525,
-    "lng": 139.60849,
+    "lat": null,
+    "lng": null,
     "date": "2025-07-25",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -14804,7 +15819,14 @@ const EVENTS = [
     },
     "description": "芦花公園商店街振興組合 芦花公園駅前盆踊り大会は、京王線芦花公園駅前ロータリー(南口)周辺で開かれる街なかの踊りイベント。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 7/25。次回日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [
       {
         "name": "周辺で開かれる街なかの踊り",
@@ -14904,11 +15926,11 @@ const EVENTS = [
     "scale": "中",
     "access": "世田谷区内。詳細アクセスは出典URLを参照",
     "address": "東京都世田谷区玉川田園調布2-17-15",
-    "lat": 35.602921,
-    "lng": 139.666824,
+    "lat": null,
+    "lng": null,
     "date": "2025-07-12",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -14926,7 +15948,14 @@ const EVENTS = [
     },
     "description": "親子盆踊り大会は、八幡小学校を会場にした地域密着の盆踊り・夏祭り。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 7/12。次回日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -15021,11 +16050,11 @@ const EVENTS = [
     "scale": "小",
     "access": "世田谷区内。詳細アクセスは出典URLを参照",
     "address": "東京都世田谷区世田谷4-7-19",
-    "lat": 35.643337,
-    "lng": 139.650391,
+    "lat": null,
+    "lng": null,
     "date": "2025-07-26",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -15043,7 +16072,14 @@ const EVENTS = [
     },
     "description": "世田谷駅前商店街振興組合 納涼盆踊り大会は、円光院駐車場周辺で開かれる街なかの踊りイベント。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 7/26 - 27。次回日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [
       {
         "name": "円光院駐車場周辺で開かれる街なかの踊り",
@@ -15148,11 +16184,11 @@ const EVENTS = [
     "scale": "大",
     "access": "最寄駅前",
     "address": "東京都世田谷区船橋1",
-    "lat": 35.650036,
-    "lng": 139.62178,
+    "lat": null,
+    "lng": null,
     "date": "2025-08-17",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -15170,7 +16206,14 @@ const EVENTS = [
     },
     "description": "船橋会 盆踊りは、千歳船橋駅前広場周辺で開かれる街なかの踊りイベント。8月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 8/17。次回日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [
       {
         "name": "千歳船橋駅前広場周辺で開かれる街なかの踊り",
@@ -15266,11 +16309,11 @@ const EVENTS = [
     "scale": "小",
     "access": "世田谷区内。詳細アクセスは出典URLを参照",
     "address": "東京都世田谷区大蔵6-6-7",
-    "lat": 35.62484,
-    "lng": 139.611282,
+    "lat": null,
+    "lng": null,
     "date": "2025-07-20",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -15288,7 +16331,14 @@ const EVENTS = [
     },
     "description": "大蔵本村睦会 ｢盆踊り大会｣は、大蔵氷川神社を舞台にした祭礼・地域行事にあわせた踊りの場。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 7/20。次回日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -15383,11 +16433,11 @@ const EVENTS = [
     "scale": "中",
     "access": "世田谷区内。詳細アクセスは出典URLを参照",
     "address": "東京都世田谷区奥沢3-1-1",
-    "lat": 35.599216,
-    "lng": 139.675415,
+    "lat": null,
+    "lng": null,
     "date": "2025-07-26",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -15405,7 +16455,14 @@ const EVENTS = [
     },
     "description": "奥沢交和会は、奥沢小学校を会場にした地域密着の盆踊り・夏祭り。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 7/26 - 27。次回日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -15498,11 +16555,11 @@ const EVENTS = [
     "scale": "小",
     "access": "世田谷区内。詳細アクセスは出典URLを参照",
     "address": "東京都世田谷区宇奈根2-13-19",
-    "lat": 35.621624,
-    "lng": 139.600937,
+    "lat": null,
+    "lng": null,
     "date": "2025-07-19",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -15520,7 +16577,14 @@ const EVENTS = [
     },
     "description": "宇奈根町会 盆踊り大会は、宇奈根氷川神社を舞台にした祭礼・地域行事にあわせた踊りの場。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 7/19 - 20。次回日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -15617,11 +16681,11 @@ const EVENTS = [
     "scale": "大",
     "access": "最寄駅前",
     "address": "東京都世田谷区喜多見8-21",
-    "lat": 35.636303,
-    "lng": 139.587372,
+    "lat": null,
+    "lng": null,
     "date": "2025-07-26",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -15639,7 +16703,14 @@ const EVENTS = [
     },
     "description": "喜多見盆踊り大会は、小田急線喜多見駅前 南口広場周辺で開かれる街なかの踊りイベント。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 7/26 - 27。次回日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [
       {
         "name": "南口広場周辺で開かれる街なかの踊り",
@@ -15737,11 +16808,11 @@ const EVENTS = [
     "scale": "大",
     "access": "最寄駅前",
     "address": "東京都世田谷区祖師谷1-8-12",
-    "lat": 35.643444,
-    "lng": 139.608826,
+    "lat": null,
+    "lng": null,
     "date": "2025-07-26",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -15759,7 +16830,14 @@ const EVENTS = [
     },
     "description": "祖師谷商店街振興組合は、小田急線祖師ヶ谷大蔵駅前広場周辺で開かれる街なかの踊りイベント。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 7/26。次回日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -15852,11 +16930,11 @@ const EVENTS = [
     "scale": "中",
     "access": "世田谷区内。詳細アクセスは出典URLを参照",
     "address": "東京都世田谷区船橋7-8-1",
-    "lat": 35.657269,
-    "lng": 139.620438,
+    "lat": null,
+    "lng": null,
     "date": "2025-07-19",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -15874,7 +16952,14 @@ const EVENTS = [
     },
     "description": "希望ヶ丘団地夏まつりは、世田谷区の希望ヶ丘団地 テニスコートで行われる踊りのある地域イベント。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 7/19 - 20。次回日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -15967,11 +17052,11 @@ const EVENTS = [
     "scale": "小",
     "access": "世田谷区内。詳細アクセスは出典URLを参照",
     "address": "東京都世田谷区千歳台5-17-23",
-    "lat": 35.656544,
-    "lng": 139.611145,
+    "lat": null,
+    "lng": null,
     "date": "2025-07-19",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -15989,7 +17074,14 @@ const EVENTS = [
     },
     "description": "千歳台廻沢地区盆踊りは、廻沢稲荷神社を舞台にした祭礼・地域行事にあわせた踊りの場。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 7/19 - 20。次回日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -16082,11 +17174,11 @@ const EVENTS = [
     "scale": "中",
     "access": "世田谷区内。詳細アクセスは出典URLを参照",
     "address": "東京都世田谷区成城6-1-20",
-    "lat": 35.642353,
-    "lng": 139.600174,
+    "lat": null,
+    "lng": null,
     "date": "2025-07-26",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -16104,7 +17196,14 @@ const EVENTS = [
     },
     "description": "成城学園 盆踊り大会は、成城大学9号館前広場で開かれる屋外型の盆踊り・夏の地域イベント。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 7/26。次回日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -16197,11 +17296,11 @@ const EVENTS = [
     "scale": "小",
     "access": "世田谷区内。詳細アクセスは出典URLを参照",
     "address": "東京都世田谷区大蔵1-6",
-    "lat": 35.633888,
-    "lng": 139.619736,
+    "lat": null,
+    "lng": null,
     "date": "2025-07-26",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -16318,11 +17417,11 @@ const EVENTS = [
     "scale": "小",
     "access": "世田谷区内。詳細アクセスは出典URLを参照",
     "address": "東京都世田谷区池尻2-34-15",
-    "lat": 35.648876,
-    "lng": 139.681564,
+    "lat": null,
+    "lng": null,
     "date": "2025-08-01",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -16340,7 +17439,14 @@ const EVENTS = [
     },
     "description": "盆踊り(池尻地区)は、池尻稲荷神社を舞台にした祭礼・地域行事にあわせた踊りの場。8月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 8/1 - 2。次回日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -16433,11 +17539,11 @@ const EVENTS = [
     "scale": "中",
     "access": "世田谷区内。詳細アクセスは出典URLを参照",
     "address": "東京都世田谷区瀬田2-17-1",
-    "lat": 35.617512,
-    "lng": 139.633652,
+    "lat": null,
+    "lng": null,
     "date": "2025-08-16",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -16455,7 +17561,14 @@ const EVENTS = [
     },
     "description": "瀬田商店会 瀬田納涼盆踊りは、瀬田中学校を会場にした地域密着の盆踊り・夏祭り。8月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 8/16 - 17。次回日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -16550,11 +17663,11 @@ const EVENTS = [
     "scale": "中",
     "access": "世田谷区内。詳細アクセスは出典URLを参照",
     "address": "東京都世田谷区中町5-19",
-    "lat": 35.61998,
-    "lng": 139.642227,
+    "lat": null,
+    "lng": null,
     "date": "2025-07-19",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -16572,7 +17685,14 @@ const EVENTS = [
     },
     "description": "納涼盆踊り大会は、玉川中町公園で開かれる屋外型の盆踊り・夏の地域イベント。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 7/19 - 20。次回日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "display_name": "納涼盆踊り大会（玉川中町公園）",
     "public_status": "expected_medium",
@@ -16668,11 +17788,11 @@ const EVENTS = [
     "scale": "小",
     "access": "世田谷区内。詳細アクセスは出典URLを参照",
     "address": "東京都世田谷区砧8-2-21",
-    "lat": 35.639313,
-    "lng": 139.607483,
+    "lat": null,
+    "lng": null,
     "date": "2025-08-01",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -16787,11 +17907,11 @@ const EVENTS = [
     "scale": "中",
     "access": "世田谷区内。詳細アクセスは出典URLを参照",
     "address": "東京都世田谷区喜多見6-9-1",
-    "lat": 35.630672,
-    "lng": 139.605118,
+    "lat": null,
+    "lng": null,
     "date": "2025-07-19",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -16908,11 +18028,11 @@ const EVENTS = [
     "scale": "小",
     "access": "世田谷区内。詳細アクセスは出典URLを参照",
     "address": "東京都世田谷区祖師谷5-1-7",
-    "lat": 35.650131,
-    "lng": 139.607346,
+    "lat": null,
+    "lng": null,
     "date": "2025-07-18",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -16930,7 +18050,14 @@ const EVENTS = [
     },
     "description": "祖師谷昇進会商店街(振)盆踊りは、祖師谷神明社周辺で開かれる街なかの踊りイベント。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 7/18 - 19。次回日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [
       {
         "name": "祖師谷神明社周辺で開かれる街なかの踊り",
@@ -17028,11 +18155,11 @@ const EVENTS = [
     "scale": "小",
     "access": "世田谷区内。詳細アクセスは出典URLを参照",
     "address": "東京都世田谷区野毛2-14-2",
-    "lat": 35.602432,
-    "lng": 139.642471,
+    "lat": null,
+    "lng": null,
     "date": "2025-07-26",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -17050,7 +18177,14 @@ const EVENTS = [
     },
     "description": "野毛町会 納涼盆踊り大会は、野毛六所神社を舞台にした祭礼・地域行事にあわせた踊りの場。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 7/26 - 27。次回日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -17149,11 +18283,11 @@ const EVENTS = [
     "scale": "小",
     "access": "世田谷区内。詳細アクセスは出典URLを参照",
     "address": "東京都世田谷区鎌田4-11-19",
-    "lat": 35.622417,
-    "lng": 139.611099,
+    "lat": null,
+    "lng": null,
     "date": "2025-07-26",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -17171,7 +18305,14 @@ const EVENTS = [
     },
     "description": "鎌田協和会 鎌田納涼盆踊りは、鎌田天神社を舞台にした祭礼・地域行事にあわせた踊りの場。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 7/26。次回日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -17266,11 +18407,11 @@ const EVENTS = [
     "scale": "小",
     "access": "世田谷区内。詳細アクセスは出典URLを参照",
     "address": "東京都世田谷区岡本1-20-1",
-    "lat": 35.625576,
-    "lng": 139.621399,
+    "lat": null,
+    "lng": null,
     "date": "2025-08-02",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -17385,11 +18526,11 @@ const EVENTS = [
     "scale": "中",
     "access": "世田谷区内。詳細アクセスは出典URLを参照",
     "address": "東京都世田谷区駒沢3-19",
-    "lat": 35.631878,
-    "lng": 139.653351,
+    "lat": null,
+    "lng": null,
     "date": "2025-08-03",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -17407,7 +18548,14 @@ const EVENTS = [
     },
     "description": "納涼盆踊り大会は、駒沢緑泉公園で開かれる屋外型の盆踊り・夏の地域イベント。8月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 8/3 - 4。次回日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "display_name": "納涼盆踊り大会（駒沢緑泉公園）",
     "public_status": "expected_medium",
@@ -17503,11 +18651,11 @@ const EVENTS = [
     "scale": "小",
     "access": "世田谷区内。詳細アクセスは出典URLを参照",
     "address": "東京都世田谷区駒沢1-23-1",
-    "lat": 35.628857,
-    "lng": 139.65863,
+    "lat": null,
+    "lng": null,
     "date": "2025-08-10",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -17525,7 +18673,14 @@ const EVENTS = [
     },
     "description": "駒澤大学同窓会東京都支部・営友会は、世田谷区の駒澤大学 駒沢キャンパスで行われる踊りのある地域イベント。8月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 8/10。次回日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -17620,7 +18775,7 @@ const EVENTS = [
     "lng": null,
     "date": "2025-07-25",
     "date_end": "2025-07-26",
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -17640,9 +18795,16 @@ const EVENTS = [
     "jun": {
       "7": "下旬"
     },
-    "description": null,
+    "description": "",
     "detail": "",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -17742,7 +18904,7 @@ const EVENTS = [
     "lng": null,
     "date": "2025-08-02",
     "date_end": "2025-08-02",
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -17758,7 +18920,7 @@ const EVENTS = [
     "jun": {
       "8": "上旬"
     },
-    "description": null,
+    "description": "",
     "detail": "",
     "source_urls": [
       {
@@ -17770,7 +18932,7 @@ const EVENTS = [
         "label": "告知HPあり",
         "url": "",
         "kind": "web",
-        "count": 1
+        "count": 2
       }
     ],
     "songs": [],
@@ -17862,11 +19024,11 @@ const EVENTS = [
     "scale": "小",
     "access": "原宿駅・明治神宮前駅・代々木公園駅から徒歩圏内",
     "address": "東京都渋谷区神南2-3",
-    "lat": 35.666958,
-    "lng": 139.693863,
+    "lat": null,
+    "lng": null,
     "date": "2025-04-19",
     "date_end": "2025-04-19",
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -17882,7 +19044,7 @@ const EVENTS = [
     "jun": {
       "4": "中旬"
     },
-    "description": null,
+    "description": "代々木公園野外ステージは、渋谷区の屋外で踊りの輪を作りやすい会場。 規模は「小」として整理しています、アクセスは原宿駅・明治神宮前駅・代々木公園駅から徒歩圏内。",
     "detail": "",
     "source_urls": [
       {
@@ -17894,7 +19056,7 @@ const EVENTS = [
         "label": "告知HPあり",
         "url": "",
         "kind": "web",
-        "count": 1
+        "count": 2
       }
     ],
     "songs": [],
@@ -17967,11 +19129,11 @@ const EVENTS = [
     "scale": "小",
     "access": "原宿駅・明治神宮前駅・代々木公園駅から徒歩圏内",
     "address": "東京都渋谷区神南2-3",
-    "lat": 35.666958,
-    "lng": 139.693863,
+    "lat": null,
+    "lng": null,
     "date": "2026-03-15",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -17989,7 +19151,14 @@ const EVENTS = [
     },
     "description": "グリーン アイルランド フェスティバル 2026 アイリッシュ盆踊りは、代々木公園野外ステージで開かれる屋外型の盆踊り・夏の地域イベント。3月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2026-03-15（日）13:30からアイリッシュ盆踊り約20分。イベント全体は3/14-15に代々木公園イベント広場で開催。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "ended_2026",
     "public_category": "ended",
@@ -18020,11 +19189,11 @@ const EVENTS = [
     "scale": "大",
     "access": "渋谷駅から徒歩約3分。東京メトロ千代田線・副都心線 明治神宮前〈原宿〉駅 7番口から徒歩約8分。都営バス 宮下公園、ハチ公バス 宮下公園前から徒歩1分",
     "address": "東京都渋谷区神宮前6-20-10",
-    "lat": 35.662376,
-    "lng": 139.702011,
+    "lat": null,
+    "lng": null,
     "date": "2025-05-31",
     "date_end": "2025-06-01",
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -18045,14 +19214,14 @@ const EVENTS = [
       "5": "下旬",
       "6": "上旬"
     },
-    "description": null,
+    "description": "宮下公園は、渋谷区の屋外で踊りの輪を作りやすい会場。 規模は「大」として整理しています、アクセスは渋谷駅から徒歩約3分。東京メトロ千代田線・副都心線 明治神宮前〈原宿〉駅 7番口から徒歩約8分。都営バス 宮下公園、ハチ公バス 宮下公園前から徒歩1分。",
     "detail": "",
     "source_urls": [
       {
         "label": "告知HPあり",
         "url": "",
         "kind": "web",
-        "count": 1
+        "count": 2
       }
     ],
     "songs": [],
@@ -18121,11 +19290,11 @@ const EVENTS = [
     "scale": "大",
     "access": "渋谷駅から徒歩約3分。東京メトロ千代田線・副都心線 明治神宮前〈原宿〉駅 7番口から徒歩約8分。都営バス 宮下公園、ハチ公バス 宮下公園前から徒歩1分",
     "address": "東京都渋谷区神宮前6-20-10",
-    "lat": 35.662376,
-    "lng": 139.702011,
+    "lat": null,
+    "lng": null,
     "date": "2025-09-27",
     "date_end": "2025-09-28",
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -18145,14 +19314,14 @@ const EVENTS = [
     "jun": {
       "9": "下旬"
     },
-    "description": null,
+    "description": "宮下公園は、渋谷区の屋外で踊りの輪を作りやすい会場。 規模は「大」として整理しています、アクセスは渋谷駅から徒歩約3分。東京メトロ千代田線・副都心線 明治神宮前〈原宿〉駅 7番口から徒歩約8分。都営バス 宮下公園、ハチ公バス 宮下公園前から徒歩1分。",
     "detail": "",
     "source_urls": [
       {
         "label": "告知HPあり",
         "url": "",
         "kind": "web",
-        "count": 1
+        "count": 2
       }
     ],
     "songs": [
@@ -18257,8 +19426,8 @@ const EVENTS = [
     "scale": "大",
     "access": "渋谷駅から徒歩約3分。東京メトロ千代田線・副都心線 明治神宮前〈原宿〉駅 7番口から徒歩約8分。都営バス 宮下公園、ハチ公バス 宮下公園前から徒歩1分",
     "address": "東京都渋谷区神宮前6-20-10",
-    "lat": 35.662376,
-    "lng": 139.702011,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "未確認",
@@ -18271,15 +19440,22 @@ const EVENTS = [
     "hints": [
       [
         9,
-        15
+        26
       ]
     ],
     "jun": {
-      "9": "中旬"
+      "9": "下旬"
     },
     "description": "渋谷・宮下公園の芝生の上で開かれる現代型の盆踊り。買い物帰りにふらっと輪に入れる、渋谷らしいボンダンス。",
     "detail": "",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "date_unknown",
     "public_category": "date_unknown",
@@ -18306,15 +19482,15 @@ const EVENTS = [
         9
       ],
       "jun": {
-        "9": "中旬"
+        "9": "下旬"
       },
       "hints": [
         [
           9,
-          15
+          26
         ]
       ],
-      "label": "9月中旬",
+      "label": "9月下旬",
       "confidence": "lowest",
       "basis": "例年の開催月・旬ヒント",
       "has_jun_hint": true,
@@ -18324,10 +19500,73 @@ const EVENTS = [
       9
     ],
     "season_jun": {
-      "9": "中旬"
+      "9": "下旬"
     },
-    "season_hint_label": "9月中旬",
+    "season_hint_label": "9月下旬",
     "season_confidence": "lowest"
+  },
+  {
+    "name": "中野駅前大盆踊り大会",
+    "name_confirmed": true,
+    "venue": "中野セントラルパーク",
+    "area": "中野区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": "JR中央線、JR総武線、東京メトロ東西線「中野」駅より徒歩5分",
+    "address": "",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-01",
+    "date_end": "2026-08-02",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        1
+      ],
+      [
+        8,
+        2
+      ]
+    ],
+    "jun": {
+      "8": "上旬"
+    },
+    "description": "",
+    "detail": "",
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://nakabon.jp/",
+        "kind": "official"
+      }
+    ],
+    "songs": [],
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-01〜2026-08-02",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-01",
+      "2026-08-02"
+    ],
+    "display_tier": "confirmed"
   },
   {
     "name": "新井町会連合会・中野通り桜まつり実行委員会「中野通り桜まつり」",
@@ -18340,11 +19579,11 @@ const EVENTS = [
     "scale": "中",
     "access": "中野区内。詳細アクセスは出典URLを参照",
     "address": "東京都中野区新井5-4",
-    "lat": 35.714664,
-    "lng": 139.667068,
+    "lat": null,
+    "lng": null,
     "date": "2026-03-28",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -18362,7 +19601,14 @@ const EVENTS = [
     },
     "description": "新井町会連合会・中野通り桜まつり実行委員会 中野通り桜まつりは、新井薬師公園で開かれる屋外型の盆踊り・夏の地域イベント。3月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2026 3/28。次回日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "ended_2026",
     "public_category": "ended",
@@ -18392,11 +19638,11 @@ const EVENTS = [
     "scale": "中",
     "access": "豊島区内。詳細アクセスは出典URLを参照",
     "address": "東京都豊島区要町3-54-16",
-    "lat": 35.740974,
-    "lng": 139.689026,
+    "lat": null,
+    "lng": null,
     "date": "2026-06-05",
     "date_end": "2026-06-06",
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -18418,7 +19664,14 @@ const EVENTS = [
     },
     "description": "第34回ふるさと千川 まつりは、ふるさと千川ひろば(千川小学校校庭跡地)を会場にした地域密着の盆踊り・夏祭り。6月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2026-06-05〜2026-06-06 開催予定。東京盆踊りマップから確定日として反映。 2026 6/5 - 6 ふるさと千川ひろば(千川小学校校庭跡地) 「第34回ふるさと千川 まつり」 6月5日(金)-6日(土) 17:30-(開場)。 ・5日(金) 18:30-21:00。 ・6日(土) 18:30-20:30。 (6/5夜掲)",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "ended_2026",
     "public_category": "ended",
@@ -18449,11 +19702,11 @@ const EVENTS = [
     "scale": "中",
     "access": "豊島区内。詳細アクセスは出典URLを参照",
     "address": "東京都豊島区東池袋1-16-1",
-    "lat": 35.731369,
-    "lng": 139.715149,
+    "lat": null,
+    "lng": null,
     "date": "2026-04-25",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -18471,7 +19724,14 @@ const EVENTS = [
     },
     "description": "白鳥おどりin池袋は、中池袋公園で開かれる屋外型の盆踊り・夏の地域イベント。4月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2026 4/25。次回日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [
       {
         "name": "白鳥おどり",
@@ -18510,7 +19770,7 @@ const EVENTS = [
     "lng": null,
     "date": "2025-07-04",
     "date_end": "2025-07-05",
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -18530,9 +19790,16 @@ const EVENTS = [
     "jun": {
       "7": "上旬"
     },
-    "description": null,
+    "description": "",
     "detail": "",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -18620,18 +19887,21 @@ const EVENTS = [
     "venue": "飛鳥山公園",
     "area": "北区",
     "months": [
+      1,
+      2,
       3,
       4,
-      6
+      6,
+      7
     ],
     "scale": "大",
     "access": "JR京浜東北線・都電荒川線・北区コミュニティバス「王子駅」徒歩す7分",
     "address": "〒114-0002 東京都北区王子１丁目",
-    "lat": 35.754356,
-    "lng": 139.739349,
+    "lat": null,
+    "lng": null,
     "date": "2025-04-19",
     "date_end": "2025-04-19",
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -18654,7 +19924,7 @@ const EVENTS = [
         "label": "告知HPあり",
         "url": "",
         "kind": "web",
-        "count": 1
+        "count": 2
       }
     ],
     "songs": [
@@ -18729,13 +19999,15 @@ const EVENTS = [
     "venue": "飛鳥山公園",
     "area": "北区",
     "months": [
+      1,
+      2,
       8
     ],
     "scale": "大",
     "access": "JR京浜東北線・都電荒川線・北区コミュニティバス「王子駅」徒歩す7分",
     "address": "〒114-0002 東京都北区王子１丁目",
-    "lat": 35.754356,
-    "lng": 139.739349,
+    "lat": null,
+    "lng": null,
     "date": null,
     "date_end": null,
     "status": "未確認",
@@ -18747,16 +20019,38 @@ const EVENTS = [
     "date_candidates": [],
     "hints": [
       [
+        1,
+        15
+      ],
+      [
+        2,
+        15
+      ],
+      [
+        7,
+        5
+      ],
+      [
         8,
         15
       ]
     ],
     "jun": {
+      "7": "上旬",
+      "1": "中旬",
+      "2": "中旬",
       "8": "中旬"
     },
     "description": "飛鳥山公園150周年記念から始まった夏祭り企画。お城の遊具で知られる公園で、ステージや出店とともに盆踊りを楽しめる。",
     "detail": "",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "date_unknown",
     "public_category": "date_unknown",
@@ -18780,30 +20074,46 @@ const EVENTS = [
       "display_tier": "season_hint",
       "target_year": 2026,
       "months": [
+        1,
+        2,
         8
       ],
       "jun": {
+        "1": "中旬",
+        "2": "中旬",
         "8": "中旬"
       },
       "hints": [
+        [
+          1,
+          15
+        ],
+        [
+          2,
+          15
+        ],
         [
           8,
           15
         ]
       ],
-      "label": "8月中旬",
+      "label": "1月中旬・2月中旬・8月中旬",
       "confidence": "lowest",
       "basis": "例年の開催月・旬ヒント",
       "has_jun_hint": true,
       "has_sort_hint": true
     },
     "season_months": [
+      1,
+      2,
       8
     ],
     "season_jun": {
+      "1": "中旬",
+      "2": "中旬",
       "8": "中旬"
     },
-    "season_hint_label": "8月中旬",
+    "season_hint_label": "1月中旬・2月中旬・8月中旬",
     "season_confidence": "lowest"
   },
   {
@@ -18812,16 +20122,20 @@ const EVENTS = [
     "venue": "飛鳥山公園",
     "area": "北区",
     "months": [
-      7
+      2,
+      5,
+      6,
+      7,
+      12
     ],
     "scale": "大",
     "access": "JR京浜東北線・都電荒川線・北区コミュニティバス「王子駅」徒歩す7分",
     "address": "〒114-0002 東京都北区王子１丁目",
-    "lat": 35.754356,
-    "lng": 139.739349,
+    "lat": null,
+    "lng": null,
     "date": "2025-07-05",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -18839,7 +20153,14 @@ const EVENTS = [
     },
     "description": "桜で名高い飛鳥山公園で例年7月上旬に開かれる盆踊り。地域ステージやキッチンカーも並ぶ、北区の夏の名物。",
     "detail": "",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [
       {
         "name": "ジャンボリミッキー",
@@ -18959,7 +20280,7 @@ const EVENTS = [
     "lng": null,
     "date": "2025-09-14",
     "date_end": "2025-09-15",
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -18979,9 +20300,16 @@ const EVENTS = [
     "jun": {
       "9": "中旬"
     },
-    "description": null,
+    "description": "",
     "detail": "",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [
       {
         "name": "炭坑節",
@@ -19083,11 +20411,11 @@ const EVENTS = [
     "scale": "小",
     "access": "都電荒川線 荒川遊園地前停留場から徒歩圏内",
     "address": "東京都荒川区西尾久6-35-11",
-    "lat": 35.753117,
-    "lng": 139.75766,
+    "lat": null,
+    "lng": null,
     "date": "2026-03-15",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -19105,7 +20433,14 @@ const EVENTS = [
     },
     "description": "第60回あらかわ青年大会 アリストックは、あらかわ遊園アリスの広場で開かれる屋外型の盆踊り・夏の地域イベント。3月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2026-03-15（日）13:15から納涼太鼓 大場連が盆踊り3曲。曲目は東京音頭、炭坑節、荒川音頭。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [
       {
         "name": "東京音頭",
@@ -19157,11 +20492,11 @@ const EVENTS = [
     "scale": "小",
     "access": "新三河島駅・三河島駅から徒歩圏内",
     "address": "東京都荒川区西日暮里1-26-9",
-    "lat": 35.733704,
-    "lng": 139.776047,
+    "lat": null,
+    "lng": null,
     "date": "2026-02-22",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -19179,7 +20514,14 @@ const EVENTS = [
     },
     "description": "荒川盆踊り会 初踊りは、真土公園で開かれる屋外型の盆踊り・夏の地域イベント。2月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2026-02-22（日）13:00-17:00開催記録。協賛は鞆絵太鼓。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "ended_2026",
     "public_category": "ended",
@@ -19209,11 +20551,11 @@ const EVENTS = [
     "scale": "小",
     "access": "東武スカイツリーライン 五反野駅から徒歩約7分。東武スカイツリーライン 小菅駅から徒歩約10分",
     "address": "東京都足立区西綾瀬2-1-18",
-    "lat": 35.761593,
-    "lng": 139.814835,
+    "lat": null,
+    "lng": null,
     "date": "2025-06-21",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -19231,7 +20573,14 @@ const EVENTS = [
     },
     "description": "西綾瀬町会 夏祭り盆踊り大会は、五反野コミュニティ公園で開かれる屋外型の盆踊り・夏の地域イベント。6月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "足立区の令和7年度盆踊り・まつり情報。17時開始。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -19324,11 +20673,11 @@ const EVENTS = [
     "scale": "大",
     "access": "葛飾区内。詳細アクセスは出典URLを参照",
     "address": "東京都葛飾区水元公園2",
-    "lat": 35.781769,
-    "lng": 139.871155,
+    "lat": null,
+    "lng": null,
     "date": "2026-05-31",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -19346,7 +20695,14 @@ const EVENTS = [
     },
     "description": "葛飾菖蒲まつり 水元公園会場 民踊パレードは、水元公園内はなしょうぶ園口で開かれる屋外型の盆踊り・夏の地域イベント。5月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2026 5/31。次回日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "ended_2026",
     "public_category": "ended",
@@ -19376,11 +20732,11 @@ const EVENTS = [
     "scale": "小",
     "access": "江戸川区内。詳細アクセスは出典URLを参照",
     "address": "東京都江戸川区北葛西2-11-39",
-    "lat": 35.672775,
-    "lng": 139.85672,
+    "lat": null,
+    "lng": null,
     "date": "2026-02-08",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -19398,7 +20754,14 @@ const EVENTS = [
     },
     "description": "倉雀会(くらすずめかい)は、江戸川区の北葛西コミュニティ会館で行われる踊りのある地域イベント。2月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2026 2/8。次回日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "ended_2026",
     "public_category": "ended",
@@ -19428,11 +20791,11 @@ const EVENTS = [
     "scale": "中",
     "access": "江戸川区内。詳細アクセスは出典URLを参照",
     "address": "東京都江戸川区鹿骨2-12-1",
-    "lat": 35.707256,
-    "lng": 139.892502,
+    "lat": null,
+    "lng": null,
     "date": "2026-03-29",
     "date_end": null,
-    "status": "終了",
+    "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
       "label": "確認済み",
@@ -19450,7 +20813,14 @@ const EVENTS = [
     },
     "description": "好踊会 第4回 好踊会フェアは、鹿骨中学校を会場にした地域密着の盆踊り・夏祭り。3月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2026 3/29。次回日程は未確認。",
-    "source_urls": [],
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "",
+        "kind": "web",
+        "count": 1
+      }
+    ],
     "songs": [],
     "public_status": "ended_2026",
     "public_category": "ended",

@@ -1,10 +1,9 @@
-"""Notion「🎆 イベントDB」＋「🏮 会場マスタ」から、Web一般公開サイト用の
-イベント一覧（東京23区）をエクスポートするスクリプト。
+"""Master RDBから、Web一般公開サイト用のイベント一覧（東京23区）を
+エクスポートするスクリプト。
 
 公開サイトのメインカードは会場ではなく**イベント名**（内田さん指示 2026-06-10）。
-- イベントDBの各行（東京23区の会場に紐づくもの）を1カードとして出力
-- イベントが未整備の公開会場は「○○の盆踊り」のフォールバックカードを出力
-  （name_confirmed=false。イベント登録が進むと自動的に置き換わる）
+- `data/bon_odori_master.sqlite` の event_occurrences を1カードとして出力
+- Notion経路は `BON_ODORI_PUBLIC_SOURCE=notion` の明示指定時だけ使う
 
 23区判定・区名正規化・文字化け置換・内部フィールド除去は
 export_public_venues.py と同じ方針。出力は data/public/events_public.json。
@@ -14,12 +13,14 @@ export_public_venues.py と同じ方針。出力は data/public/events_public.js
 import json
 import os
 import re
+import sqlite3
 import unicodedata
 import urllib.error
 import urllib.request
 
 from bon_odori_songs import extract_song_hints
 from event_series_normalization import series_event_name
+from master_db import MASTER_DB, connect_existing
 from apply_public_date_predictions import (
     OUT_REPORT as DATE_PREDICTION_REPORT,
     PREDICTIONS as DATE_PREDICTIONS,
@@ -61,6 +62,7 @@ DATE_PREDICTION_REPORT = os.environ.get(
 )
 DATE_CANDIDATES_JSON = os.path.join(os.path.dirname(__file__), "data", "event_date_update_candidates.json")
 PUBLIC_EVENT_OVERRIDES_JSON = os.path.join(os.path.dirname(__file__), "data", "public_event_overrides.json")
+PUBLIC_SOURCE = os.environ.get("BON_ODORI_PUBLIC_SOURCE", "master_rdb").strip().lower()
 FALLBACK_SUPPRESSED_VENUES = {
     # 例大祭名の由来となる神社。実際の奉納踊り会場は青葉公園（港区立）なので、
     # 未整備会場フォールバックとして「青山熊野神社の盆踊り」を出さない。
@@ -477,6 +479,86 @@ def load_song_occurrences():
     return grouped
 
 
+def _json_list(value):
+    if not value:
+        return []
+    try:
+        parsed = json.loads(value)
+    except json.JSONDecodeError:
+        return []
+    return parsed if isinstance(parsed, list) else []
+
+
+def _public_status_from_rdb(date_status, lifecycle_status):
+    if date_status in {"confirmed", "ended"}:
+        return "確認済み"
+    if lifecycle_status == "published" and date_status == "unknown":
+        return "未確認"
+    return "未確認"
+
+
+def _public_confidence_from_rdb(date, date_status):
+    if date and date_status in {"confirmed", "ended"}:
+        return confirmed_confidence()
+    return unknown_confidence()
+
+
+def _rdb_source_urls(detail, source_url, source_kind):
+    sources = extract_public_source_urls(detail)
+    if source_url and _is_public_source_url(source_url):
+        key = "公式URL" if source_kind == "official_current_year" else "出典URL"
+        sources.append(_source_item(key, source_url))
+    return collapse_public_source_urls(sources)
+
+
+def _song_from_rdb(row):
+    probability = row["probability"]
+    if probability is not None:
+        probability = int(probability) if float(probability).is_integer() else float(probability)
+    basis = "past_evidence"
+    basis_label = "過去実績"
+    if row["evidence_status"] == "announced":
+        basis = "current_announced"
+        basis_label = "今年告知"
+    elif row["evidence_status"] == "observed":
+        basis = "current_observed"
+        basis_label = "実測"
+    elif row["inherited_from_year"]:
+        basis_label = f"{row['inherited_from_year']}年ヒント"
+    song = {
+        "name": row["song_title_raw"],
+        "confidence": "confirmed" if (probability or 0) >= 95 or row["confidence"] == "high" else "hint",
+        "probability": probability,
+        "basis": basis,
+        "basis_label": basis_label,
+        "evidence_count": row["evidence_count"],
+        "source_count": row["source_count"],
+    }
+    return {key: value for key, value in song.items() if value not in (None, "", [])}
+
+
+def load_rdb_occurrence_songs(conn):
+    grouped = {}
+    rows = conn.execute(
+        """
+        SELECT
+          occurrence_id,
+          song_title_raw,
+          evidence_status,
+          probability,
+          confidence,
+          source_count,
+          evidence_count,
+          inherited_from_year
+        FROM occurrence_songs
+        ORDER BY occurrence_id, probability DESC, song_title_raw
+        """
+    ).fetchall()
+    for row in rows:
+        grouped.setdefault(row["occurrence_id"], []).append(_song_from_rdb(row))
+    return grouped
+
+
 def merge_song_occurrence_hints(existing_songs, occurrence):
     songs = {}
     for song in existing_songs or []:
@@ -663,7 +745,7 @@ def fetch_public_venues():
     return venues
 
 
-def build_public_events():
+def build_public_events_from_notion():
     venues = fetch_public_venues()
     date_candidates_by_event = load_date_candidates()
     song_occurrences = load_song_occurrences()
@@ -792,6 +874,120 @@ def build_public_events():
     return events, len(covered), fallback, skipped
 
 
+def build_public_events_from_master(db_path=MASTER_DB):
+    song_occurrences = load_song_occurrences()
+    date_candidates_by_event = load_date_candidates()
+    events, covered = [], set()
+    with connect_existing(db_path) as conn:
+        conn.row_factory = sqlite3.Row
+        rdb_songs = load_rdb_occurrence_songs(conn)
+        rows = conn.execute(
+            """
+            SELECT
+              o.occurrence_id,
+              o.display_name,
+              o.event_year,
+              o.date_start,
+              o.date_end,
+              o.date_status,
+              o.lifecycle_status,
+              o.confidence,
+              o.source_kind,
+              o.source_url,
+              o.public_intro_override,
+              o.detail,
+              s.canonical_name AS series_name,
+              s.annual_months_json,
+              s.public_intro AS series_intro,
+              v.venue_id,
+              v.canonical_name AS venue,
+              v.area,
+              v.scale,
+              v.access,
+              v.address,
+              v.past_memo,
+              v.public_intro AS venue_intro,
+              v.latitude,
+              v.longitude
+            FROM event_occurrences o
+            JOIN event_series s ON s.series_id = o.series_id
+            JOIN venues v ON v.venue_id = o.venue_id
+            WHERE v.area IN ({ward_placeholders})
+              AND v.review_status = 'active'
+              AND o.origin = 'curated'
+            ORDER BY v.area, v.canonical_name, o.display_name, o.event_year
+            """.format(ward_placeholders=",".join("?" for _ in WARD_ORDER)),
+            list(WARD_ORDER),
+        ).fetchall()
+
+    for row in rows:
+        date = row["date_start"] or None
+        date_end = row["date_end"] or None
+        annual_months = [
+            int(month)
+            for month in _json_list(row["annual_months_json"])
+            if isinstance(month, int) or str(month).isdigit()
+        ]
+        months = {month for month in annual_months if 1 <= int(month) <= 12}
+        if date:
+            months.add(int(date[5:7]))
+        raw_detail = clean_public_text(row["detail"])
+        description = clean_public_text(row["public_intro_override"] or row["series_intro"] or row["venue_intro"])
+        public_name = series_event_name(clean_public_text(row["display_name"] or row["series_name"]))
+        if date:
+            hints = hints_from_date_range(date, date_end)
+            jun = jun_labels_from_date_range(date, date_end)
+        else:
+            hints = merge_hints(
+                hints_from_text(raw_detail),
+                hints_from_text(row["past_memo"]),
+                months=months,
+            )
+            jun = merge_jun_labels(jun_labels(raw_detail), jun_labels(row["past_memo"]), jun_labels_from_hints(hints))
+        songs = extract_song_hints(description, raw_detail)
+        if rdb_songs.get(row["occurrence_id"]):
+            songs = merge_song_occurrence_hints(songs, {"songs": rdb_songs[row["occurrence_id"]]})
+        occurrence = song_occurrences.get(
+            _song_occurrence_key(public_name, row["venue"], int(row["event_year"] or 2026))
+        )
+        songs = merge_song_occurrence_hints(songs, occurrence)
+        songs = strip_song_internal_fields(songs)
+        date_candidates = [] if date else date_candidates_by_event.get(row["occurrence_id"], [])
+        events.append({
+            "name": public_name,
+            "name_confirmed": True,
+            "venue": clean_public_text(row["venue"]),
+            "area": row["area"],
+            "months": sorted(int(month) for month in months),
+            "scale": row["scale"] if row["scale"] in ("大", "中", "小") else None,
+            "access": clean_public_text(row["access"]),
+            "address": clean_public_text(row["address"]),
+            "lat": row["latitude"],
+            "lng": row["longitude"],
+            "date": date,
+            "date_end": date_end,
+            "status": _public_status_from_rdb(row["date_status"], row["lifecycle_status"]),
+            "date_confidence": _public_confidence_from_rdb(date, row["date_status"]),
+            "date_candidates": date_candidates,
+            "hints": hints,
+            "jun": {str(m): j for m, j in jun.items()},
+            "description": description,
+            "detail": public_detail_text(raw_detail),
+            "source_urls": _rdb_source_urls(raw_detail, row["source_url"], row["source_kind"]),
+            "songs": songs,
+        })
+        covered.add(row["venue_id"])
+
+    events.sort(key=lambda e: (WARD_ORDER[e["area"]], e["venue"], e["name"]))
+    return events, len(covered), 0, 0
+
+
+def build_public_events():
+    if PUBLIC_SOURCE in {"notion", "legacy_notion"}:
+        return build_public_events_from_notion()
+    return build_public_events_from_master()
+
+
 def write_public_js(path, events):
     with open(path, "w", encoding="utf-8") as f:
         f.write("// Auto-generated by export_public_events.py. Do not edit by hand.\n")
@@ -803,6 +999,26 @@ def write_public_js(path, events):
 def apply_public_recurrence_metadata(events):
     """Attach public category and recurrence fields to the production export."""
     return enrich_public_events(events, build_rows(events))
+
+
+def apply_public_site_postprocessors(events):
+    """Apply the public-site-only fields that used to be run as separate steps."""
+    from apply_public_historical_references import (
+        DEFAULT_TODAY,
+        apply_historical_references,
+        load_fixed_date_rules,
+    )
+    from apply_public_season_hints import apply_season_hints
+
+    events = apply_historical_references(
+        events,
+        target_year=2026,
+        today=DEFAULT_TODAY,
+        fixed_date_rules=load_fixed_date_rules(),
+    )["events"]
+    events = apply_display_tiers(events)
+    events = apply_season_hints(events, target_year=2026)["events"]
+    return apply_display_tiers(events)
 
 
 def sanitize_public_event_details(events):
@@ -1041,6 +1257,7 @@ def main():
         load_public_date_prediction_json(DATE_PREDICTIONS, {}),
     )
     events = apply_display_tiers(prediction_result["events"])
+    events = apply_public_site_postprocessors(events)
     write_public_date_prediction_json(DATE_PREDICTION_REPORT, prediction_result["report"])
 
     os.makedirs(OUT_DIR, exist_ok=True)

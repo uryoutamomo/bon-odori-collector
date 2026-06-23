@@ -1,6 +1,6 @@
 {
   "generated_by": "classify_public_events_diff.py",
-  "generated_at": "2026-06-22T02:25:07.027857+00:00",
+  "generated_at": "2026-06-23T06:46:23.613247+00:00",
   "scope": "read_only_diff_classification_no_writes",
   "sources": {
     "collector_events": "data/public/events_public.json",
@@ -17,14 +17,2393 @@
   "summary": {
     "collector_event_count": 183,
     "site_event_count": 183,
-    "collector_only_count": 0,
-    "site_only_count": 0,
-    "high_risk_diff_record_count": 0,
-    "high_risk_event_count": 0,
-    "records_by_family": {},
-    "records_by_action": {},
-    "events_by_action": {}
+    "collector_only_count": 3,
+    "site_only_count": 3,
+    "high_risk_diff_record_count": 115,
+    "high_risk_event_count": 29,
+    "records_by_family": {
+      "season_hint": 97,
+      "date_prediction": 14,
+      "historical_slide": 3,
+      "detail": 1
+    },
+    "records_by_action": {
+      "individual_review": 79,
+      "low_priority_or_unclassified": 11,
+      "restore_collector_from_site_or_reenable_export_postprocess": 25
+    },
+    "events_by_action": {
+      "individual_review": 27,
+      "restore_collector_from_site_or_reenable_export_postprocess": 2
+    }
   },
-  "event_rows": [],
-  "records": []
+  "event_rows": [
+    {
+      "event_key": "SHIBUYA MIYASHITA PARK BON DANCE||宮下公園",
+      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE",
+      "venue": "宮下公園",
+      "recommended_action": "individual_review",
+      "families": [
+        "season_hint"
+      ],
+      "field_count": 3,
+      "fields": [
+        "season_hint",
+        "season_hint_label",
+        "season_jun"
+      ],
+      "actions": {
+        "individual_review": 3
+      }
+    },
+    {
+      "event_key": "すみだ公園の盆踊り（名称推定）||すみだ公園（隅田公園・墨田区側）",
+      "event_name": "すみだ公園の盆踊り（名称推定）",
+      "venue": "すみだ公園（隅田公園・墨田区側）",
+      "recommended_action": "individual_review",
+      "families": [
+        "season_hint"
+      ],
+      "field_count": 1,
+      "fields": [
+        "season_hint"
+      ],
+      "actions": {
+        "individual_review": 1
+      }
+    },
+    {
+      "event_key": "アークヒルズ秋祭り 盆踊り||アーク・カラヤン広場（アークヒルズ）",
+      "event_name": "アークヒルズ秋祭り 盆踊り",
+      "venue": "アーク・カラヤン広場（アークヒルズ）",
+      "recommended_action": "individual_review",
+      "families": [
+        "season_hint"
+      ],
+      "field_count": 1,
+      "fields": [
+        "season_hint"
+      ],
+      "actions": {
+        "individual_review": 1
+      }
+    },
+    {
+      "event_key": "上笄町会お祭り 盆踊り||長谷寺（西麻布・麻布大観音）",
+      "event_name": "上笄町会お祭り 盆踊り",
+      "venue": "長谷寺（西麻布・麻布大観音）",
+      "recommended_action": "individual_review",
+      "families": [
+        "season_hint"
+      ],
+      "field_count": 4,
+      "fields": [
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "actions": {
+        "individual_review": 4
+      }
+    },
+    {
+      "event_key": "上野盆踊り会（厚澄会）||上野恩賜公園",
+      "event_name": "上野盆踊り会（厚澄会）",
+      "venue": "上野恩賜公園",
+      "recommended_action": "individual_review",
+      "families": [
+        "date_prediction",
+        "season_hint"
+      ],
+      "field_count": 5,
+      "fields": [
+        "recurrence_reasons",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "actions": {
+        "low_priority_or_unclassified": 1,
+        "individual_review": 4
+      }
+    },
+    {
+      "event_key": "中之郷公園の盆踊り（名称推定）||中之郷公園（中之郷児童遊園）",
+      "event_name": "中之郷公園の盆踊り（名称推定）",
+      "venue": "中之郷公園（中之郷児童遊園）",
+      "recommended_action": "individual_review",
+      "families": [
+        "season_hint"
+      ],
+      "field_count": 1,
+      "fields": [
+        "season_hint"
+      ],
+      "actions": {
+        "individual_review": 1
+      }
+    },
+    {
+      "event_key": "六本木天祖神社（龍土神明宮）例大祭 盆踊り||六本木天祖神社",
+      "event_name": "六本木天祖神社（龍土神明宮）例大祭 盆踊り",
+      "venue": "六本木天祖神社",
+      "recommended_action": "individual_review",
+      "families": [
+        "season_hint"
+      ],
+      "field_count": 4,
+      "fields": [
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "actions": {
+        "individual_review": 4
+      }
+    },
+    {
+      "event_key": "品川区民まつり 八潮地区||八潮公園",
+      "event_name": "品川区民まつり 八潮地区",
+      "venue": "八潮公園",
+      "recommended_action": "individual_review",
+      "families": [
+        "date_prediction",
+        "historical_slide",
+        "season_hint"
+      ],
+      "field_count": 8,
+      "fields": [
+        "display_tier",
+        "recurrence_reasons",
+        "recurrence_score",
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "actions": {
+        "individual_review": 2,
+        "low_priority_or_unclassified": 1,
+        "restore_collector_from_site_or_reenable_export_postprocess": 5
+      }
+    },
+    {
+      "event_key": "品川区民まつり 荏原第三地区||京陽小学校",
+      "event_name": "品川区民まつり 荏原第三地区",
+      "venue": "京陽小学校",
+      "recommended_action": "individual_review",
+      "families": [
+        "date_prediction",
+        "historical_slide",
+        "season_hint"
+      ],
+      "field_count": 8,
+      "fields": [
+        "display_tier",
+        "recurrence_reasons",
+        "recurrence_score",
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "actions": {
+        "individual_review": 2,
+        "low_priority_or_unclassified": 1,
+        "restore_collector_from_site_or_reenable_export_postprocess": 5
+      }
+    },
+    {
+      "event_key": "品川区民まつり 荏原第五地区||杜松ホーム",
+      "event_name": "品川区民まつり 荏原第五地区",
+      "venue": "杜松ホーム",
+      "recommended_action": "individual_review",
+      "families": [
+        "detail"
+      ],
+      "field_count": 1,
+      "fields": [
+        "detail"
+      ],
+      "actions": {
+        "individual_review": 1
+      }
+    },
+    {
+      "event_key": "品川区民まつり 荏原第四地区||上神明小学校",
+      "event_name": "品川区民まつり 荏原第四地区",
+      "venue": "上神明小学校",
+      "recommended_action": "individual_review",
+      "families": [
+        "date_prediction",
+        "historical_slide",
+        "season_hint"
+      ],
+      "field_count": 8,
+      "fields": [
+        "display_tier",
+        "recurrence_reasons",
+        "recurrence_score",
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "actions": {
+        "individual_review": 2,
+        "low_priority_or_unclassified": 1,
+        "restore_collector_from_site_or_reenable_export_postprocess": 5
+      }
+    },
+    {
+      "event_key": "品川第二地区 区民まつり・品川青年会 盆踊り大会（天妙国寺）||天妙国寺",
+      "event_name": "品川第二地区 区民まつり・品川青年会 盆踊り大会（天妙国寺）",
+      "venue": "天妙国寺",
+      "recommended_action": "individual_review",
+      "families": [
+        "date_prediction",
+        "season_hint"
+      ],
+      "field_count": 5,
+      "fields": [
+        "recurrence_reasons",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "actions": {
+        "low_priority_or_unclassified": 1,
+        "individual_review": 4
+      }
+    },
+    {
+      "event_key": "増上寺 地蔵尊盆踊り大会||増上寺（大殿前広場）",
+      "event_name": "増上寺 地蔵尊盆踊り大会",
+      "venue": "増上寺（大殿前広場）",
+      "recommended_action": "individual_review",
+      "families": [
+        "season_hint"
+      ],
+      "field_count": 4,
+      "fields": [
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "actions": {
+        "individual_review": 4
+      }
+    },
+    {
+      "event_key": "小網神社の盆踊り（名称推定）||小網神社",
+      "event_name": "小網神社の盆踊り（名称推定）",
+      "venue": "小網神社",
+      "recommended_action": "individual_review",
+      "families": [
+        "season_hint"
+      ],
+      "field_count": 3,
+      "fields": [
+        "season_hint",
+        "season_hint_label",
+        "season_jun"
+      ],
+      "actions": {
+        "individual_review": 3
+      }
+    },
+    {
+      "event_key": "戸越八幡神社例大祭 盆踊り||戸越八幡神社",
+      "event_name": "戸越八幡神社例大祭 盆踊り",
+      "venue": "戸越八幡神社",
+      "recommended_action": "individual_review",
+      "families": [
+        "date_prediction",
+        "season_hint"
+      ],
+      "field_count": 5,
+      "fields": [
+        "recurrence_reasons",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "actions": {
+        "low_priority_or_unclassified": 1,
+        "individual_review": 4
+      }
+    },
+    {
+      "event_key": "新宿中央公園夏祭り 納涼盆踊り大会||新宿中央公園 ファンモアタイム広場",
+      "event_name": "新宿中央公園夏祭り 納涼盆踊り大会",
+      "venue": "新宿中央公園 ファンモアタイム広場",
+      "recommended_action": "individual_review",
+      "families": [
+        "season_hint"
+      ],
+      "field_count": 4,
+      "fields": [
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "actions": {
+        "individual_review": 4
+      }
+    },
+    {
+      "event_key": "旗岡八幡神社例大祭||旗岡八幡神社",
+      "event_name": "旗岡八幡神社例大祭",
+      "venue": "旗岡八幡神社",
+      "recommended_action": "individual_review",
+      "families": [
+        "season_hint"
+      ],
+      "field_count": 4,
+      "fields": [
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "actions": {
+        "individual_review": 4
+      }
+    },
+    {
+      "event_key": "本四三ツ目児童遊園の盆踊り（名称推定）||本四三ツ目児童遊園（三つ目児童公園）",
+      "event_name": "本四三ツ目児童遊園の盆踊り（名称推定）",
+      "venue": "本四三ツ目児童遊園（三つ目児童公園）",
+      "recommended_action": "individual_review",
+      "families": [
+        "season_hint"
+      ],
+      "field_count": 1,
+      "fields": [
+        "season_hint"
+      ],
+      "actions": {
+        "individual_review": 1
+      }
+    },
+    {
+      "event_key": "江東天祖神社の盆踊り（名称推定）||江東天祖神社（亀戸天祖神社）",
+      "event_name": "江東天祖神社の盆踊り（名称推定）",
+      "venue": "江東天祖神社（亀戸天祖神社）",
+      "recommended_action": "individual_review",
+      "families": [
+        "season_hint"
+      ],
+      "field_count": 1,
+      "fields": [
+        "season_hint"
+      ],
+      "actions": {
+        "individual_review": 1
+      }
+    },
+    {
+      "event_key": "浜二納涼盆踊り大会||浜町公園",
+      "event_name": "浜二納涼盆踊り大会",
+      "venue": "浜町公園",
+      "recommended_action": "individual_review",
+      "families": [
+        "season_hint"
+      ],
+      "field_count": 3,
+      "fields": [
+        "season_hint",
+        "season_hint_label",
+        "season_jun"
+      ],
+      "actions": {
+        "individual_review": 3
+      }
+    },
+    {
+      "event_key": "濱町音頭盆踊り大会||浜町公園",
+      "event_name": "濱町音頭盆踊り大会",
+      "venue": "浜町公園",
+      "recommended_action": "individual_review",
+      "families": [
+        "season_hint"
+      ],
+      "field_count": 3,
+      "fields": [
+        "season_hint",
+        "season_hint_label",
+        "season_jun"
+      ],
+      "actions": {
+        "individual_review": 3
+      }
+    },
+    {
+      "event_key": "牛嶋神社祭礼 奉納踊り||牛嶋神社",
+      "event_name": "牛嶋神社祭礼 奉納踊り",
+      "venue": "牛嶋神社",
+      "recommended_action": "individual_review",
+      "families": [
+        "date_prediction",
+        "season_hint"
+      ],
+      "field_count": 5,
+      "fields": [
+        "recurrence_reasons",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "actions": {
+        "low_priority_or_unclassified": 1,
+        "individual_review": 4
+      }
+    },
+    {
+      "event_key": "盆踊 〜BONDO〜||しながわ中央公園",
+      "event_name": "盆踊 〜BONDO〜",
+      "venue": "しながわ中央公園",
+      "recommended_action": "individual_review",
+      "families": [
+        "season_hint"
+      ],
+      "field_count": 3,
+      "fields": [
+        "season_hint",
+        "season_hint_label",
+        "season_jun"
+      ],
+      "actions": {
+        "individual_review": 3
+      }
+    },
+    {
+      "event_key": "赤坂夏おどり（旧 赤坂盆踊り）||赤坂サカス広場",
+      "event_name": "赤坂夏おどり（旧 赤坂盆踊り）",
+      "venue": "赤坂サカス広場",
+      "recommended_action": "individual_review",
+      "families": [
+        "season_hint"
+      ],
+      "field_count": 4,
+      "fields": [
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "actions": {
+        "individual_review": 4
+      }
+    },
+    {
+      "event_key": "赤坂氷川祭 盆踊り大会||赤坂氷川神社",
+      "event_name": "赤坂氷川祭 盆踊り大会",
+      "venue": "赤坂氷川神社",
+      "recommended_action": "individual_review",
+      "families": [
+        "date_prediction",
+        "season_hint"
+      ],
+      "field_count": 5,
+      "fields": [
+        "recurrence_reasons",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "actions": {
+        "low_priority_or_unclassified": 1,
+        "individual_review": 4
+      }
+    },
+    {
+      "event_key": "飛鳥山夏祭り～お城で盆おどり大作戦～||飛鳥山公園",
+      "event_name": "飛鳥山夏祭り～お城で盆おどり大作戦～",
+      "venue": "飛鳥山公園",
+      "recommended_action": "individual_review",
+      "families": [
+        "season_hint"
+      ],
+      "field_count": 4,
+      "fields": [
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "actions": {
+        "individual_review": 4
+      }
+    },
+    {
+      "event_key": "麻布氷川神社例大祭 盆踊り||麻布氷川神社",
+      "event_name": "麻布氷川神社例大祭 盆踊り",
+      "venue": "麻布氷川神社",
+      "recommended_action": "individual_review",
+      "families": [
+        "date_prediction",
+        "season_hint"
+      ],
+      "field_count": 5,
+      "fields": [
+        "recurrence_reasons",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "actions": {
+        "low_priority_or_unclassified": 1,
+        "individual_review": 4
+      }
+    },
+    {
+      "event_key": "イベント名未確認（築地社会教育会館）||築地社会教育会館",
+      "event_name": "イベント名未確認（築地社会教育会館）",
+      "venue": "築地社会教育会館",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "families": [
+        "date_prediction",
+        "season_hint"
+      ],
+      "field_count": 6,
+      "fields": [
+        "recurrence_reasons",
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "actions": {
+        "low_priority_or_unclassified": 1,
+        "restore_collector_from_site_or_reenable_export_postprocess": 5
+      }
+    },
+    {
+      "event_key": "根津神社 盆踊り（文京区）||根津神社",
+      "event_name": "根津神社 盆踊り（文京区）",
+      "venue": "根津神社",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "families": [
+        "date_prediction",
+        "season_hint"
+      ],
+      "field_count": 6,
+      "fields": [
+        "recurrence_reasons",
+        "season_confidence",
+        "season_hint",
+        "season_hint_label",
+        "season_jun",
+        "season_months"
+      ],
+      "actions": {
+        "low_priority_or_unclassified": 1,
+        "restore_collector_from_site_or_reenable_export_postprocess": 5
+      }
+    }
+  ],
+  "records": [
+    {
+      "event_key": "SHIBUYA MIYASHITA PARK BON DANCE||宮下公園",
+      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE",
+      "venue": "宮下公園",
+      "field": "season_hint",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": {
+        "display_tier": "season_hint",
+        "label": "9月下旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      },
+      "site_value": {
+        "display_tier": "season_hint",
+        "label": "9月中旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      }
+    },
+    {
+      "event_key": "SHIBUYA MIYASHITA PARK BON DANCE||宮下公園",
+      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE",
+      "venue": "宮下公園",
+      "field": "season_hint_label",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": "9月下旬",
+      "site_value": "9月中旬"
+    },
+    {
+      "event_key": "SHIBUYA MIYASHITA PARK BON DANCE||宮下公園",
+      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE",
+      "venue": "宮下公園",
+      "field": "season_jun",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": {
+        "9": "下旬"
+      },
+      "site_value": {
+        "9": "中旬"
+      }
+    },
+    {
+      "event_key": "すみだ公園の盆踊り（名称推定）||すみだ公園（隅田公園・墨田区側）",
+      "event_name": "すみだ公園の盆踊り（名称推定）",
+      "venue": "すみだ公園（隅田公園・墨田区側）",
+      "field": "season_hint",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": {
+        "display_tier": "season_hint",
+        "label": "9月中旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      },
+      "site_value": {
+        "display_tier": "season_hint",
+        "label": "9月中旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      }
+    },
+    {
+      "event_key": "アークヒルズ秋祭り 盆踊り||アーク・カラヤン広場（アークヒルズ）",
+      "event_name": "アークヒルズ秋祭り 盆踊り",
+      "venue": "アーク・カラヤン広場（アークヒルズ）",
+      "field": "season_hint",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": {
+        "display_tier": "season_hint",
+        "label": "9月中旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      },
+      "site_value": {
+        "display_tier": "season_hint",
+        "label": "9月中旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      }
+    },
+    {
+      "event_key": "イベント名未確認（築地社会教育会館）||築地社会教育会館",
+      "event_name": "イベント名未確認（築地社会教育会館）",
+      "venue": "築地社会教育会館",
+      "field": "recurrence_reasons",
+      "family": "date_prediction",
+      "side": "both_different",
+      "recommended_action": "low_priority_or_unclassified",
+      "collector_value": [
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "site_value": [
+        "月ヒントあり",
+        "未確認"
+      ]
+    },
+    {
+      "event_key": "イベント名未確認（築地社会教育会館）||築地社会教育会館",
+      "event_name": "イベント名未確認（築地社会教育会館）",
+      "venue": "築地社会教育会館",
+      "field": "season_confidence",
+      "family": "season_hint",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": "lowest"
+    },
+    {
+      "event_key": "イベント名未確認（築地社会教育会館）||築地社会教育会館",
+      "event_name": "イベント名未確認（築地社会教育会館）",
+      "venue": "築地社会教育会館",
+      "field": "season_hint",
+      "family": "season_hint",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": {
+        "display_tier": "season_hint",
+        "label": "3月",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      }
+    },
+    {
+      "event_key": "イベント名未確認（築地社会教育会館）||築地社会教育会館",
+      "event_name": "イベント名未確認（築地社会教育会館）",
+      "venue": "築地社会教育会館",
+      "field": "season_hint_label",
+      "family": "season_hint",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": "3月"
+    },
+    {
+      "event_key": "イベント名未確認（築地社会教育会館）||築地社会教育会館",
+      "event_name": "イベント名未確認（築地社会教育会館）",
+      "venue": "築地社会教育会館",
+      "field": "season_jun",
+      "family": "season_hint",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": {}
+    },
+    {
+      "event_key": "イベント名未確認（築地社会教育会館）||築地社会教育会館",
+      "event_name": "イベント名未確認（築地社会教育会館）",
+      "venue": "築地社会教育会館",
+      "field": "season_months",
+      "family": "season_hint",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": [
+        3
+      ]
+    },
+    {
+      "event_key": "上笄町会お祭り 盆踊り||長谷寺（西麻布・麻布大観音）",
+      "event_name": "上笄町会お祭り 盆踊り",
+      "venue": "長谷寺（西麻布・麻布大観音）",
+      "field": "season_hint",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": {
+        "display_tier": "season_hint",
+        "label": "3月中旬・9月中旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      },
+      "site_value": {
+        "display_tier": "season_hint",
+        "label": "9月中旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      }
+    },
+    {
+      "event_key": "上笄町会お祭り 盆踊り||長谷寺（西麻布・麻布大観音）",
+      "event_name": "上笄町会お祭り 盆踊り",
+      "venue": "長谷寺（西麻布・麻布大観音）",
+      "field": "season_hint_label",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": "3月中旬・9月中旬",
+      "site_value": "9月中旬"
+    },
+    {
+      "event_key": "上笄町会お祭り 盆踊り||長谷寺（西麻布・麻布大観音）",
+      "event_name": "上笄町会お祭り 盆踊り",
+      "venue": "長谷寺（西麻布・麻布大観音）",
+      "field": "season_jun",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": {
+        "3": "中旬",
+        "9": "中旬"
+      },
+      "site_value": {
+        "9": "中旬"
+      }
+    },
+    {
+      "event_key": "上笄町会お祭り 盆踊り||長谷寺（西麻布・麻布大観音）",
+      "event_name": "上笄町会お祭り 盆踊り",
+      "venue": "長谷寺（西麻布・麻布大観音）",
+      "field": "season_months",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": [
+        3,
+        9
+      ],
+      "site_value": [
+        9
+      ]
+    },
+    {
+      "event_key": "上野盆踊り会（厚澄会）||上野恩賜公園",
+      "event_name": "上野盆踊り会（厚澄会）",
+      "venue": "上野恩賜公園",
+      "field": "recurrence_reasons",
+      "family": "date_prediction",
+      "side": "both_different",
+      "recommended_action": "low_priority_or_unclassified",
+      "collector_value": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "site_value": [
+        "月ヒントあり"
+      ]
+    },
+    {
+      "event_key": "上野盆踊り会（厚澄会）||上野恩賜公園",
+      "event_name": "上野盆踊り会（厚澄会）",
+      "venue": "上野恩賜公園",
+      "field": "season_hint",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": {
+        "display_tier": "season_hint",
+        "label": "2月中旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      },
+      "site_value": {
+        "display_tier": "season_hint",
+        "label": "6月・7月・8月・10月",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      }
+    },
+    {
+      "event_key": "上野盆踊り会（厚澄会）||上野恩賜公園",
+      "event_name": "上野盆踊り会（厚澄会）",
+      "venue": "上野恩賜公園",
+      "field": "season_hint_label",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": "2月中旬",
+      "site_value": "6月・7月・8月・10月"
+    },
+    {
+      "event_key": "上野盆踊り会（厚澄会）||上野恩賜公園",
+      "event_name": "上野盆踊り会（厚澄会）",
+      "venue": "上野恩賜公園",
+      "field": "season_jun",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": {
+        "2": "中旬"
+      },
+      "site_value": {}
+    },
+    {
+      "event_key": "上野盆踊り会（厚澄会）||上野恩賜公園",
+      "event_name": "上野盆踊り会（厚澄会）",
+      "venue": "上野恩賜公園",
+      "field": "season_months",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": [
+        2
+      ],
+      "site_value": [
+        6,
+        7,
+        8,
+        10
+      ]
+    },
+    {
+      "event_key": "中之郷公園の盆踊り（名称推定）||中之郷公園（中之郷児童遊園）",
+      "event_name": "中之郷公園の盆踊り（名称推定）",
+      "venue": "中之郷公園（中之郷児童遊園）",
+      "field": "season_hint",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": {
+        "display_tier": "season_hint",
+        "label": "9月中旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      },
+      "site_value": {
+        "display_tier": "season_hint",
+        "label": "9月中旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      }
+    },
+    {
+      "event_key": "六本木天祖神社（龍土神明宮）例大祭 盆踊り||六本木天祖神社",
+      "event_name": "六本木天祖神社（龍土神明宮）例大祭 盆踊り",
+      "venue": "六本木天祖神社",
+      "field": "season_hint",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": {
+        "display_tier": "season_hint",
+        "label": "2月中旬・4月中旬・9月中旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      },
+      "site_value": {
+        "display_tier": "season_hint",
+        "label": "9月中旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      }
+    },
+    {
+      "event_key": "六本木天祖神社（龍土神明宮）例大祭 盆踊り||六本木天祖神社",
+      "event_name": "六本木天祖神社（龍土神明宮）例大祭 盆踊り",
+      "venue": "六本木天祖神社",
+      "field": "season_hint_label",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": "2月中旬・4月中旬・9月中旬",
+      "site_value": "9月中旬"
+    },
+    {
+      "event_key": "六本木天祖神社（龍土神明宮）例大祭 盆踊り||六本木天祖神社",
+      "event_name": "六本木天祖神社（龍土神明宮）例大祭 盆踊り",
+      "venue": "六本木天祖神社",
+      "field": "season_jun",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": {
+        "2": "中旬",
+        "4": "中旬",
+        "9": "中旬"
+      },
+      "site_value": {
+        "9": "中旬"
+      }
+    },
+    {
+      "event_key": "六本木天祖神社（龍土神明宮）例大祭 盆踊り||六本木天祖神社",
+      "event_name": "六本木天祖神社（龍土神明宮）例大祭 盆踊り",
+      "venue": "六本木天祖神社",
+      "field": "season_months",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": [
+        2,
+        4,
+        9
+      ],
+      "site_value": [
+        9
+      ]
+    },
+    {
+      "event_key": "品川区民まつり 八潮地区||八潮公園",
+      "event_name": "品川区民まつり 八潮地区",
+      "venue": "八潮公園",
+      "field": "display_tier",
+      "family": "historical_slide",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": "confirmed",
+      "site_value": "season_hint"
+    },
+    {
+      "event_key": "品川区民まつり 八潮地区||八潮公園",
+      "event_name": "品川区民まつり 八潮地区",
+      "venue": "八潮公園",
+      "field": "recurrence_reasons",
+      "family": "date_prediction",
+      "side": "both_different",
+      "recommended_action": "low_priority_or_unclassified",
+      "collector_value": [
+        "2026年日付確認済み"
+      ],
+      "site_value": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ]
+    },
+    {
+      "event_key": "品川区民まつり 八潮地区||八潮公園",
+      "event_name": "品川区民まつり 八潮地区",
+      "venue": "八潮公園",
+      "field": "recurrence_score",
+      "family": "date_prediction",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": 0.95,
+      "site_value": 0.25
+    },
+    {
+      "event_key": "品川区民まつり 八潮地区||八潮公園",
+      "event_name": "品川区民まつり 八潮地区",
+      "venue": "八潮公園",
+      "field": "season_confidence",
+      "family": "season_hint",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": "lowest"
+    },
+    {
+      "event_key": "品川区民まつり 八潮地区||八潮公園",
+      "event_name": "品川区民まつり 八潮地区",
+      "venue": "八潮公園",
+      "field": "season_hint",
+      "family": "season_hint",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": {
+        "display_tier": "season_hint",
+        "label": "9月中旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      }
+    },
+    {
+      "event_key": "品川区民まつり 八潮地区||八潮公園",
+      "event_name": "品川区民まつり 八潮地区",
+      "venue": "八潮公園",
+      "field": "season_hint_label",
+      "family": "season_hint",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": "9月中旬"
+    },
+    {
+      "event_key": "品川区民まつり 八潮地区||八潮公園",
+      "event_name": "品川区民まつり 八潮地区",
+      "venue": "八潮公園",
+      "field": "season_jun",
+      "family": "season_hint",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": {
+        "9": "中旬"
+      }
+    },
+    {
+      "event_key": "品川区民まつり 八潮地区||八潮公園",
+      "event_name": "品川区民まつり 八潮地区",
+      "venue": "八潮公園",
+      "field": "season_months",
+      "family": "season_hint",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": [
+        9
+      ]
+    },
+    {
+      "event_key": "品川区民まつり 荏原第三地区||京陽小学校",
+      "event_name": "品川区民まつり 荏原第三地区",
+      "venue": "京陽小学校",
+      "field": "display_tier",
+      "family": "historical_slide",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": "confirmed",
+      "site_value": "season_hint"
+    },
+    {
+      "event_key": "品川区民まつり 荏原第三地区||京陽小学校",
+      "event_name": "品川区民まつり 荏原第三地区",
+      "venue": "京陽小学校",
+      "field": "recurrence_reasons",
+      "family": "date_prediction",
+      "side": "both_different",
+      "recommended_action": "low_priority_or_unclassified",
+      "collector_value": [
+        "2026年日付確認済み"
+      ],
+      "site_value": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ]
+    },
+    {
+      "event_key": "品川区民まつり 荏原第三地区||京陽小学校",
+      "event_name": "品川区民まつり 荏原第三地区",
+      "venue": "京陽小学校",
+      "field": "recurrence_score",
+      "family": "date_prediction",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": 0.95,
+      "site_value": 0.25
+    },
+    {
+      "event_key": "品川区民まつり 荏原第三地区||京陽小学校",
+      "event_name": "品川区民まつり 荏原第三地区",
+      "venue": "京陽小学校",
+      "field": "season_confidence",
+      "family": "season_hint",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": "lowest"
+    },
+    {
+      "event_key": "品川区民まつり 荏原第三地区||京陽小学校",
+      "event_name": "品川区民まつり 荏原第三地区",
+      "venue": "京陽小学校",
+      "field": "season_hint",
+      "family": "season_hint",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": {
+        "display_tier": "season_hint",
+        "label": "10月中旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      }
+    },
+    {
+      "event_key": "品川区民まつり 荏原第三地区||京陽小学校",
+      "event_name": "品川区民まつり 荏原第三地区",
+      "venue": "京陽小学校",
+      "field": "season_hint_label",
+      "family": "season_hint",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": "10月中旬"
+    },
+    {
+      "event_key": "品川区民まつり 荏原第三地区||京陽小学校",
+      "event_name": "品川区民まつり 荏原第三地区",
+      "venue": "京陽小学校",
+      "field": "season_jun",
+      "family": "season_hint",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": {
+        "10": "中旬"
+      }
+    },
+    {
+      "event_key": "品川区民まつり 荏原第三地区||京陽小学校",
+      "event_name": "品川区民まつり 荏原第三地区",
+      "venue": "京陽小学校",
+      "field": "season_months",
+      "family": "season_hint",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": [
+        10
+      ]
+    },
+    {
+      "event_key": "品川区民まつり 荏原第五地区||杜松ホーム",
+      "event_name": "品川区民まつり 荏原第五地区",
+      "venue": "杜松ホーム",
+      "field": "detail",
+      "family": "detail",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": "2025-08-23 開催実績。2025 8/23 - 24。「品川区民まつり 荏原第五地区」8月23日(土)-24日(日)。 23日(土) 16:00-19:30。 24日(日) 16:00-18:30。 「模擬店・盆踊り・子どもコーナー・ステージ発表 ほか」。 踊りの時間詳細不明。",
+      "site_value": "2026年公式情報: 2026-07-18〜2026-07-19、会場 杜松ホーム（東京都品川区豊町4-24-15）。"
+    },
+    {
+      "event_key": "品川区民まつり 荏原第四地区||上神明小学校",
+      "event_name": "品川区民まつり 荏原第四地区",
+      "venue": "上神明小学校",
+      "field": "display_tier",
+      "family": "historical_slide",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": "confirmed",
+      "site_value": "season_hint"
+    },
+    {
+      "event_key": "品川区民まつり 荏原第四地区||上神明小学校",
+      "event_name": "品川区民まつり 荏原第四地区",
+      "venue": "上神明小学校",
+      "field": "recurrence_reasons",
+      "family": "date_prediction",
+      "side": "both_different",
+      "recommended_action": "low_priority_or_unclassified",
+      "collector_value": [
+        "2026年日付確認済み"
+      ],
+      "site_value": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ]
+    },
+    {
+      "event_key": "品川区民まつり 荏原第四地区||上神明小学校",
+      "event_name": "品川区民まつり 荏原第四地区",
+      "venue": "上神明小学校",
+      "field": "recurrence_score",
+      "family": "date_prediction",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": 0.95,
+      "site_value": 0.25
+    },
+    {
+      "event_key": "品川区民まつり 荏原第四地区||上神明小学校",
+      "event_name": "品川区民まつり 荏原第四地区",
+      "venue": "上神明小学校",
+      "field": "season_confidence",
+      "family": "season_hint",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": "lowest"
+    },
+    {
+      "event_key": "品川区民まつり 荏原第四地区||上神明小学校",
+      "event_name": "品川区民まつり 荏原第四地区",
+      "venue": "上神明小学校",
+      "field": "season_hint",
+      "family": "season_hint",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": {
+        "display_tier": "season_hint",
+        "label": "11月上旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      }
+    },
+    {
+      "event_key": "品川区民まつり 荏原第四地区||上神明小学校",
+      "event_name": "品川区民まつり 荏原第四地区",
+      "venue": "上神明小学校",
+      "field": "season_hint_label",
+      "family": "season_hint",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": "11月上旬"
+    },
+    {
+      "event_key": "品川区民まつり 荏原第四地区||上神明小学校",
+      "event_name": "品川区民まつり 荏原第四地区",
+      "venue": "上神明小学校",
+      "field": "season_jun",
+      "family": "season_hint",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": {
+        "11": "上旬"
+      }
+    },
+    {
+      "event_key": "品川区民まつり 荏原第四地区||上神明小学校",
+      "event_name": "品川区民まつり 荏原第四地区",
+      "venue": "上神明小学校",
+      "field": "season_months",
+      "family": "season_hint",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": [
+        11
+      ]
+    },
+    {
+      "event_key": "品川第二地区 区民まつり・品川青年会 盆踊り大会（天妙国寺）||天妙国寺",
+      "event_name": "品川第二地区 区民まつり・品川青年会 盆踊り大会（天妙国寺）",
+      "venue": "天妙国寺",
+      "field": "recurrence_reasons",
+      "family": "date_prediction",
+      "side": "both_different",
+      "recommended_action": "low_priority_or_unclassified",
+      "collector_value": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "site_value": [
+        "月ヒントあり",
+        "日付ヒントあり"
+      ]
+    },
+    {
+      "event_key": "品川第二地区 区民まつり・品川青年会 盆踊り大会（天妙国寺）||天妙国寺",
+      "event_name": "品川第二地区 区民まつり・品川青年会 盆踊り大会（天妙国寺）",
+      "venue": "天妙国寺",
+      "field": "season_hint",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": {
+        "display_tier": "season_hint",
+        "label": "1月中旬・2月中旬・7月下旬・8月中旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      },
+      "site_value": {
+        "display_tier": "season_hint",
+        "label": "7月下旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      }
+    },
+    {
+      "event_key": "品川第二地区 区民まつり・品川青年会 盆踊り大会（天妙国寺）||天妙国寺",
+      "event_name": "品川第二地区 区民まつり・品川青年会 盆踊り大会（天妙国寺）",
+      "venue": "天妙国寺",
+      "field": "season_hint_label",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": "1月中旬・2月中旬・7月下旬・8月中旬",
+      "site_value": "7月下旬"
+    },
+    {
+      "event_key": "品川第二地区 区民まつり・品川青年会 盆踊り大会（天妙国寺）||天妙国寺",
+      "event_name": "品川第二地区 区民まつり・品川青年会 盆踊り大会（天妙国寺）",
+      "venue": "天妙国寺",
+      "field": "season_jun",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": {
+        "7": "下旬",
+        "1": "中旬",
+        "2": "中旬",
+        "8": "中旬"
+      },
+      "site_value": {
+        "7": "下旬"
+      }
+    },
+    {
+      "event_key": "品川第二地区 区民まつり・品川青年会 盆踊り大会（天妙国寺）||天妙国寺",
+      "event_name": "品川第二地区 区民まつり・品川青年会 盆踊り大会（天妙国寺）",
+      "venue": "天妙国寺",
+      "field": "season_months",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": [
+        1,
+        2,
+        7,
+        8
+      ],
+      "site_value": [
+        7
+      ]
+    },
+    {
+      "event_key": "増上寺 地蔵尊盆踊り大会||増上寺（大殿前広場）",
+      "event_name": "増上寺 地蔵尊盆踊り大会",
+      "venue": "増上寺（大殿前広場）",
+      "field": "season_hint",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": {
+        "display_tier": "season_hint",
+        "label": "2月中旬・7月中旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      },
+      "site_value": {
+        "display_tier": "season_hint",
+        "label": "7月中旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      }
+    },
+    {
+      "event_key": "増上寺 地蔵尊盆踊り大会||増上寺（大殿前広場）",
+      "event_name": "増上寺 地蔵尊盆踊り大会",
+      "venue": "増上寺（大殿前広場）",
+      "field": "season_hint_label",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": "2月中旬・7月中旬",
+      "site_value": "7月中旬"
+    },
+    {
+      "event_key": "増上寺 地蔵尊盆踊り大会||増上寺（大殿前広場）",
+      "event_name": "増上寺 地蔵尊盆踊り大会",
+      "venue": "増上寺（大殿前広場）",
+      "field": "season_jun",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": {
+        "7": "中旬",
+        "2": "中旬"
+      },
+      "site_value": {
+        "7": "中旬"
+      }
+    },
+    {
+      "event_key": "増上寺 地蔵尊盆踊り大会||増上寺（大殿前広場）",
+      "event_name": "増上寺 地蔵尊盆踊り大会",
+      "venue": "増上寺（大殿前広場）",
+      "field": "season_months",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": [
+        2,
+        7
+      ],
+      "site_value": [
+        7
+      ]
+    },
+    {
+      "event_key": "小網神社の盆踊り（名称推定）||小網神社",
+      "event_name": "小網神社の盆踊り（名称推定）",
+      "venue": "小網神社",
+      "field": "season_hint",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": {
+        "display_tier": "season_hint",
+        "label": "5月下旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      },
+      "site_value": {
+        "display_tier": "season_hint",
+        "label": "5月中旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      }
+    },
+    {
+      "event_key": "小網神社の盆踊り（名称推定）||小網神社",
+      "event_name": "小網神社の盆踊り（名称推定）",
+      "venue": "小網神社",
+      "field": "season_hint_label",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": "5月下旬",
+      "site_value": "5月中旬"
+    },
+    {
+      "event_key": "小網神社の盆踊り（名称推定）||小網神社",
+      "event_name": "小網神社の盆踊り（名称推定）",
+      "venue": "小網神社",
+      "field": "season_jun",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": {
+        "5": "下旬"
+      },
+      "site_value": {
+        "5": "中旬"
+      }
+    },
+    {
+      "event_key": "戸越八幡神社例大祭 盆踊り||戸越八幡神社",
+      "event_name": "戸越八幡神社例大祭 盆踊り",
+      "venue": "戸越八幡神社",
+      "field": "recurrence_reasons",
+      "family": "date_prediction",
+      "side": "both_different",
+      "recommended_action": "low_priority_or_unclassified",
+      "collector_value": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "site_value": [
+        "月ヒントあり",
+        "日付ヒントあり"
+      ]
+    },
+    {
+      "event_key": "戸越八幡神社例大祭 盆踊り||戸越八幡神社",
+      "event_name": "戸越八幡神社例大祭 盆踊り",
+      "venue": "戸越八幡神社",
+      "field": "season_hint",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": {
+        "display_tier": "season_hint",
+        "label": "1月中旬・2月中旬・9月中旬・12月中旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      },
+      "site_value": {
+        "display_tier": "season_hint",
+        "label": "9月中旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      }
+    },
+    {
+      "event_key": "戸越八幡神社例大祭 盆踊り||戸越八幡神社",
+      "event_name": "戸越八幡神社例大祭 盆踊り",
+      "venue": "戸越八幡神社",
+      "field": "season_hint_label",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": "1月中旬・2月中旬・9月中旬・12月中旬",
+      "site_value": "9月中旬"
+    },
+    {
+      "event_key": "戸越八幡神社例大祭 盆踊り||戸越八幡神社",
+      "event_name": "戸越八幡神社例大祭 盆踊り",
+      "venue": "戸越八幡神社",
+      "field": "season_jun",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": {
+        "9": "中旬",
+        "1": "中旬",
+        "2": "中旬",
+        "12": "中旬"
+      },
+      "site_value": {
+        "9": "中旬"
+      }
+    },
+    {
+      "event_key": "戸越八幡神社例大祭 盆踊り||戸越八幡神社",
+      "event_name": "戸越八幡神社例大祭 盆踊り",
+      "venue": "戸越八幡神社",
+      "field": "season_months",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": [
+        1,
+        2,
+        9,
+        12
+      ],
+      "site_value": [
+        9
+      ]
+    },
+    {
+      "event_key": "新宿中央公園夏祭り 納涼盆踊り大会||新宿中央公園 ファンモアタイム広場",
+      "event_name": "新宿中央公園夏祭り 納涼盆踊り大会",
+      "venue": "新宿中央公園 ファンモアタイム広場",
+      "field": "season_hint",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": {
+        "display_tier": "season_hint",
+        "label": "2月中旬・8月下旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      },
+      "site_value": {
+        "display_tier": "season_hint",
+        "label": "8月下旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      }
+    },
+    {
+      "event_key": "新宿中央公園夏祭り 納涼盆踊り大会||新宿中央公園 ファンモアタイム広場",
+      "event_name": "新宿中央公園夏祭り 納涼盆踊り大会",
+      "venue": "新宿中央公園 ファンモアタイム広場",
+      "field": "season_hint_label",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": "2月中旬・8月下旬",
+      "site_value": "8月下旬"
+    },
+    {
+      "event_key": "新宿中央公園夏祭り 納涼盆踊り大会||新宿中央公園 ファンモアタイム広場",
+      "event_name": "新宿中央公園夏祭り 納涼盆踊り大会",
+      "venue": "新宿中央公園 ファンモアタイム広場",
+      "field": "season_jun",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": {
+        "2": "中旬",
+        "8": "下旬"
+      },
+      "site_value": {
+        "8": "下旬"
+      }
+    },
+    {
+      "event_key": "新宿中央公園夏祭り 納涼盆踊り大会||新宿中央公園 ファンモアタイム広場",
+      "event_name": "新宿中央公園夏祭り 納涼盆踊り大会",
+      "venue": "新宿中央公園 ファンモアタイム広場",
+      "field": "season_months",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": [
+        2,
+        8
+      ],
+      "site_value": [
+        8
+      ]
+    },
+    {
+      "event_key": "旗岡八幡神社例大祭||旗岡八幡神社",
+      "event_name": "旗岡八幡神社例大祭",
+      "venue": "旗岡八幡神社",
+      "field": "season_hint",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": {
+        "display_tier": "season_hint",
+        "label": "2月中旬・8月中旬・9月下旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      },
+      "site_value": {
+        "display_tier": "season_hint",
+        "label": "9月中旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      }
+    },
+    {
+      "event_key": "旗岡八幡神社例大祭||旗岡八幡神社",
+      "event_name": "旗岡八幡神社例大祭",
+      "venue": "旗岡八幡神社",
+      "field": "season_hint_label",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": "2月中旬・8月中旬・9月下旬",
+      "site_value": "9月中旬"
+    },
+    {
+      "event_key": "旗岡八幡神社例大祭||旗岡八幡神社",
+      "event_name": "旗岡八幡神社例大祭",
+      "venue": "旗岡八幡神社",
+      "field": "season_jun",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": {
+        "2": "中旬",
+        "8": "中旬",
+        "9": "下旬"
+      },
+      "site_value": {
+        "9": "中旬"
+      }
+    },
+    {
+      "event_key": "旗岡八幡神社例大祭||旗岡八幡神社",
+      "event_name": "旗岡八幡神社例大祭",
+      "venue": "旗岡八幡神社",
+      "field": "season_months",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": [
+        2,
+        8,
+        9
+      ],
+      "site_value": [
+        9
+      ]
+    },
+    {
+      "event_key": "本四三ツ目児童遊園の盆踊り（名称推定）||本四三ツ目児童遊園（三つ目児童公園）",
+      "event_name": "本四三ツ目児童遊園の盆踊り（名称推定）",
+      "venue": "本四三ツ目児童遊園（三つ目児童公園）",
+      "field": "season_hint",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": {
+        "display_tier": "season_hint",
+        "label": "9月中旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      },
+      "site_value": {
+        "display_tier": "season_hint",
+        "label": "9月中旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      }
+    },
+    {
+      "event_key": "根津神社 盆踊り（文京区）||根津神社",
+      "event_name": "根津神社 盆踊り（文京区）",
+      "venue": "根津神社",
+      "field": "recurrence_reasons",
+      "family": "date_prediction",
+      "side": "both_different",
+      "recommended_action": "low_priority_or_unclassified",
+      "collector_value": [
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "site_value": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ]
+    },
+    {
+      "event_key": "根津神社 盆踊り（文京区）||根津神社",
+      "event_name": "根津神社 盆踊り（文京区）",
+      "venue": "根津神社",
+      "field": "season_confidence",
+      "family": "season_hint",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": "lowest"
+    },
+    {
+      "event_key": "根津神社 盆踊り（文京区）||根津神社",
+      "event_name": "根津神社 盆踊り（文京区）",
+      "venue": "根津神社",
+      "field": "season_hint",
+      "family": "season_hint",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": {
+        "display_tier": "season_hint",
+        "label": "9月中旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      }
+    },
+    {
+      "event_key": "根津神社 盆踊り（文京区）||根津神社",
+      "event_name": "根津神社 盆踊り（文京区）",
+      "venue": "根津神社",
+      "field": "season_hint_label",
+      "family": "season_hint",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": "9月中旬"
+    },
+    {
+      "event_key": "根津神社 盆踊り（文京区）||根津神社",
+      "event_name": "根津神社 盆踊り（文京区）",
+      "venue": "根津神社",
+      "field": "season_jun",
+      "family": "season_hint",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": {
+        "9": "中旬"
+      }
+    },
+    {
+      "event_key": "根津神社 盆踊り（文京区）||根津神社",
+      "event_name": "根津神社 盆踊り（文京区）",
+      "venue": "根津神社",
+      "field": "season_months",
+      "family": "season_hint",
+      "side": "site_only",
+      "recommended_action": "restore_collector_from_site_or_reenable_export_postprocess",
+      "collector_value": null,
+      "site_value": [
+        9
+      ]
+    },
+    {
+      "event_key": "江東天祖神社の盆踊り（名称推定）||江東天祖神社（亀戸天祖神社）",
+      "event_name": "江東天祖神社の盆踊り（名称推定）",
+      "venue": "江東天祖神社（亀戸天祖神社）",
+      "field": "season_hint",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": {
+        "display_tier": "season_hint",
+        "label": "9月中旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      },
+      "site_value": {
+        "display_tier": "season_hint",
+        "label": "9月中旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      }
+    },
+    {
+      "event_key": "浜二納涼盆踊り大会||浜町公園",
+      "event_name": "浜二納涼盆踊り大会",
+      "venue": "浜町公園",
+      "field": "season_hint",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": {
+        "display_tier": "season_hint",
+        "label": "9月中旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      },
+      "site_value": {
+        "display_tier": "season_hint",
+        "label": "9月上旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      }
+    },
+    {
+      "event_key": "浜二納涼盆踊り大会||浜町公園",
+      "event_name": "浜二納涼盆踊り大会",
+      "venue": "浜町公園",
+      "field": "season_hint_label",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": "9月中旬",
+      "site_value": "9月上旬"
+    },
+    {
+      "event_key": "浜二納涼盆踊り大会||浜町公園",
+      "event_name": "浜二納涼盆踊り大会",
+      "venue": "浜町公園",
+      "field": "season_jun",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": {
+        "9": "中旬"
+      },
+      "site_value": {
+        "9": "上旬"
+      }
+    },
+    {
+      "event_key": "濱町音頭盆踊り大会||浜町公園",
+      "event_name": "濱町音頭盆踊り大会",
+      "venue": "浜町公園",
+      "field": "season_hint",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": {
+        "display_tier": "season_hint",
+        "label": "9月中旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      },
+      "site_value": {
+        "display_tier": "season_hint",
+        "label": "9月下旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      }
+    },
+    {
+      "event_key": "濱町音頭盆踊り大会||浜町公園",
+      "event_name": "濱町音頭盆踊り大会",
+      "venue": "浜町公園",
+      "field": "season_hint_label",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": "9月中旬",
+      "site_value": "9月下旬"
+    },
+    {
+      "event_key": "濱町音頭盆踊り大会||浜町公園",
+      "event_name": "濱町音頭盆踊り大会",
+      "venue": "浜町公園",
+      "field": "season_jun",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": {
+        "9": "中旬"
+      },
+      "site_value": {
+        "9": "下旬"
+      }
+    },
+    {
+      "event_key": "牛嶋神社祭礼 奉納踊り||牛嶋神社",
+      "event_name": "牛嶋神社祭礼 奉納踊り",
+      "venue": "牛嶋神社",
+      "field": "recurrence_reasons",
+      "family": "date_prediction",
+      "side": "both_different",
+      "recommended_action": "low_priority_or_unclassified",
+      "collector_value": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "site_value": [
+        "月ヒントあり",
+        "日付ヒントあり"
+      ]
+    },
+    {
+      "event_key": "牛嶋神社祭礼 奉納踊り||牛嶋神社",
+      "event_name": "牛嶋神社祭礼 奉納踊り",
+      "venue": "牛嶋神社",
+      "field": "season_hint",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": {
+        "display_tier": "season_hint",
+        "label": "1月中旬・2月中旬・9月中旬・12月中旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      },
+      "site_value": {
+        "display_tier": "season_hint",
+        "label": "9月中旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      }
+    },
+    {
+      "event_key": "牛嶋神社祭礼 奉納踊り||牛嶋神社",
+      "event_name": "牛嶋神社祭礼 奉納踊り",
+      "venue": "牛嶋神社",
+      "field": "season_hint_label",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": "1月中旬・2月中旬・9月中旬・12月中旬",
+      "site_value": "9月中旬"
+    },
+    {
+      "event_key": "牛嶋神社祭礼 奉納踊り||牛嶋神社",
+      "event_name": "牛嶋神社祭礼 奉納踊り",
+      "venue": "牛嶋神社",
+      "field": "season_jun",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": {
+        "9": "中旬",
+        "1": "中旬",
+        "2": "中旬",
+        "12": "中旬"
+      },
+      "site_value": {
+        "9": "中旬"
+      }
+    },
+    {
+      "event_key": "牛嶋神社祭礼 奉納踊り||牛嶋神社",
+      "event_name": "牛嶋神社祭礼 奉納踊り",
+      "venue": "牛嶋神社",
+      "field": "season_months",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": [
+        1,
+        2,
+        9,
+        12
+      ],
+      "site_value": [
+        9
+      ]
+    },
+    {
+      "event_key": "盆踊 〜BONDO〜||しながわ中央公園",
+      "event_name": "盆踊 〜BONDO〜",
+      "venue": "しながわ中央公園",
+      "field": "season_hint",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": {
+        "display_tier": "season_hint",
+        "label": "5月下旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      },
+      "site_value": {
+        "display_tier": "season_hint",
+        "label": "5月中旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      }
+    },
+    {
+      "event_key": "盆踊 〜BONDO〜||しながわ中央公園",
+      "event_name": "盆踊 〜BONDO〜",
+      "venue": "しながわ中央公園",
+      "field": "season_hint_label",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": "5月下旬",
+      "site_value": "5月中旬"
+    },
+    {
+      "event_key": "盆踊 〜BONDO〜||しながわ中央公園",
+      "event_name": "盆踊 〜BONDO〜",
+      "venue": "しながわ中央公園",
+      "field": "season_jun",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": {
+        "5": "下旬"
+      },
+      "site_value": {
+        "5": "中旬"
+      }
+    },
+    {
+      "event_key": "赤坂夏おどり（旧 赤坂盆踊り）||赤坂サカス広場",
+      "event_name": "赤坂夏おどり（旧 赤坂盆踊り）",
+      "venue": "赤坂サカス広場",
+      "field": "season_hint",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": {
+        "display_tier": "season_hint",
+        "label": "2月中旬・8月下旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      },
+      "site_value": {
+        "display_tier": "season_hint",
+        "label": "8月下旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      }
+    },
+    {
+      "event_key": "赤坂夏おどり（旧 赤坂盆踊り）||赤坂サカス広場",
+      "event_name": "赤坂夏おどり（旧 赤坂盆踊り）",
+      "venue": "赤坂サカス広場",
+      "field": "season_hint_label",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": "2月中旬・8月下旬",
+      "site_value": "8月下旬"
+    },
+    {
+      "event_key": "赤坂夏おどり（旧 赤坂盆踊り）||赤坂サカス広場",
+      "event_name": "赤坂夏おどり（旧 赤坂盆踊り）",
+      "venue": "赤坂サカス広場",
+      "field": "season_jun",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": {
+        "2": "中旬",
+        "8": "下旬"
+      },
+      "site_value": {
+        "8": "下旬"
+      }
+    },
+    {
+      "event_key": "赤坂夏おどり（旧 赤坂盆踊り）||赤坂サカス広場",
+      "event_name": "赤坂夏おどり（旧 赤坂盆踊り）",
+      "venue": "赤坂サカス広場",
+      "field": "season_months",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": [
+        2,
+        8
+      ],
+      "site_value": [
+        8
+      ]
+    },
+    {
+      "event_key": "赤坂氷川祭 盆踊り大会||赤坂氷川神社",
+      "event_name": "赤坂氷川祭 盆踊り大会",
+      "venue": "赤坂氷川神社",
+      "field": "recurrence_reasons",
+      "family": "date_prediction",
+      "side": "both_different",
+      "recommended_action": "low_priority_or_unclassified",
+      "collector_value": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "site_value": [
+        "月ヒントあり",
+        "日付ヒントあり"
+      ]
+    },
+    {
+      "event_key": "赤坂氷川祭 盆踊り大会||赤坂氷川神社",
+      "event_name": "赤坂氷川祭 盆踊り大会",
+      "venue": "赤坂氷川神社",
+      "field": "season_hint",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": {
+        "display_tier": "season_hint",
+        "label": "1月中旬・2月中旬・3月中旬・9月中旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      },
+      "site_value": {
+        "display_tier": "season_hint",
+        "label": "9月中旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      }
+    },
+    {
+      "event_key": "赤坂氷川祭 盆踊り大会||赤坂氷川神社",
+      "event_name": "赤坂氷川祭 盆踊り大会",
+      "venue": "赤坂氷川神社",
+      "field": "season_hint_label",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": "1月中旬・2月中旬・3月中旬・9月中旬",
+      "site_value": "9月中旬"
+    },
+    {
+      "event_key": "赤坂氷川祭 盆踊り大会||赤坂氷川神社",
+      "event_name": "赤坂氷川祭 盆踊り大会",
+      "venue": "赤坂氷川神社",
+      "field": "season_jun",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": {
+        "9": "中旬",
+        "1": "中旬",
+        "2": "中旬",
+        "3": "中旬"
+      },
+      "site_value": {
+        "9": "中旬"
+      }
+    },
+    {
+      "event_key": "赤坂氷川祭 盆踊り大会||赤坂氷川神社",
+      "event_name": "赤坂氷川祭 盆踊り大会",
+      "venue": "赤坂氷川神社",
+      "field": "season_months",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": [
+        1,
+        2,
+        3,
+        9
+      ],
+      "site_value": [
+        9
+      ]
+    },
+    {
+      "event_key": "飛鳥山夏祭り～お城で盆おどり大作戦～||飛鳥山公園",
+      "event_name": "飛鳥山夏祭り～お城で盆おどり大作戦～",
+      "venue": "飛鳥山公園",
+      "field": "season_hint",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": {
+        "display_tier": "season_hint",
+        "label": "1月中旬・2月中旬・8月中旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      },
+      "site_value": {
+        "display_tier": "season_hint",
+        "label": "8月中旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      }
+    },
+    {
+      "event_key": "飛鳥山夏祭り～お城で盆おどり大作戦～||飛鳥山公園",
+      "event_name": "飛鳥山夏祭り～お城で盆おどり大作戦～",
+      "venue": "飛鳥山公園",
+      "field": "season_hint_label",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": "1月中旬・2月中旬・8月中旬",
+      "site_value": "8月中旬"
+    },
+    {
+      "event_key": "飛鳥山夏祭り～お城で盆おどり大作戦～||飛鳥山公園",
+      "event_name": "飛鳥山夏祭り～お城で盆おどり大作戦～",
+      "venue": "飛鳥山公園",
+      "field": "season_jun",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": {
+        "1": "中旬",
+        "2": "中旬",
+        "8": "中旬"
+      },
+      "site_value": {
+        "8": "中旬"
+      }
+    },
+    {
+      "event_key": "飛鳥山夏祭り～お城で盆おどり大作戦～||飛鳥山公園",
+      "event_name": "飛鳥山夏祭り～お城で盆おどり大作戦～",
+      "venue": "飛鳥山公園",
+      "field": "season_months",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": [
+        1,
+        2,
+        8
+      ],
+      "site_value": [
+        8
+      ]
+    },
+    {
+      "event_key": "麻布氷川神社例大祭 盆踊り||麻布氷川神社",
+      "event_name": "麻布氷川神社例大祭 盆踊り",
+      "venue": "麻布氷川神社",
+      "field": "recurrence_reasons",
+      "family": "date_prediction",
+      "side": "both_different",
+      "recommended_action": "low_priority_or_unclassified",
+      "collector_value": [
+        "月ヒントあり",
+        "日付ヒントあり",
+        "未確認"
+      ],
+      "site_value": [
+        "月ヒントあり",
+        "日付ヒントあり"
+      ]
+    },
+    {
+      "event_key": "麻布氷川神社例大祭 盆踊り||麻布氷川神社",
+      "event_name": "麻布氷川神社例大祭 盆踊り",
+      "venue": "麻布氷川神社",
+      "field": "season_hint",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": {
+        "display_tier": "season_hint",
+        "label": "1月中旬・2月中旬・3月中旬・9月中旬・12月中旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      },
+      "site_value": {
+        "display_tier": "season_hint",
+        "label": "9月中旬",
+        "confidence": "lowest",
+        "basis": "例年の開催月・旬ヒント"
+      }
+    },
+    {
+      "event_key": "麻布氷川神社例大祭 盆踊り||麻布氷川神社",
+      "event_name": "麻布氷川神社例大祭 盆踊り",
+      "venue": "麻布氷川神社",
+      "field": "season_hint_label",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": "1月中旬・2月中旬・3月中旬・9月中旬・12月中旬",
+      "site_value": "9月中旬"
+    },
+    {
+      "event_key": "麻布氷川神社例大祭 盆踊り||麻布氷川神社",
+      "event_name": "麻布氷川神社例大祭 盆踊り",
+      "venue": "麻布氷川神社",
+      "field": "season_jun",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": {
+        "9": "中旬",
+        "1": "中旬",
+        "2": "中旬",
+        "3": "中旬",
+        "12": "中旬"
+      },
+      "site_value": {
+        "9": "中旬"
+      }
+    },
+    {
+      "event_key": "麻布氷川神社例大祭 盆踊り||麻布氷川神社",
+      "event_name": "麻布氷川神社例大祭 盆踊り",
+      "venue": "麻布氷川神社",
+      "field": "season_months",
+      "family": "season_hint",
+      "side": "both_different",
+      "recommended_action": "individual_review",
+      "collector_value": [
+        1,
+        2,
+        3,
+        9,
+        12
+      ],
+      "site_value": [
+        9
+      ]
+    }
+  ]
 }
