@@ -1,8 +1,8 @@
 {
   "generated_by": "build_event_song_candidates.py",
-  "count": 793,
+  "count": 806,
   "public_event_count": 321,
-  "review_count": 472,
+  "review_count": 485,
   "candidates": [
     {
       "id": "95829de52283f32f",
@@ -1209,6 +1209,29 @@
       ],
       "already_public": false,
       "evidence_count": 2
+    },
+    {
+      "id": "0ff280e54b6d6ebd",
+      "song_name": "大東京音頭",
+      "event_name": "マロニエまつり盆踊り大会",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "status": "未確認",
+      "confidence": "中",
+      "reasons": [
+        "known_song_context",
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=2juoO7pnUWU",
+          "date": "2025-05-15T11:06:43Z",
+          "text": "祭のきせき　盆踊り\n【盆踊り】マロニエまつり盆踊り大会 A面　大東京音頭 三味線ブギ たいとう音頭　20250510\nマロニエまつり盆踊り大会 A面　2025年5月10日\n\n■A面／13〜14時\n鳥越おかず横丁路上・魚米付近\n\n0:00　ダイジェスト\n4:10　タイトル\n4:41　東京音頭\n7:50　柳北音頭　\n11:20\n14:35　三味線ブギ⚪︎\n17:46　江戸っ子囃子\n21:33　炭坑節\n24:50　黒石よされ\n29:35　ドダレバチ（津軽甚句）\n33:55　花笠音頭⚪︎\n37:11　はめつけ音頭\n40:38　春駒はやし\n45:03　ワイド節\n48:20　ハワイ音頭⚪︎\n52:25　大東京音頭⚪︎\n55:44　たいとう音頭"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
     },
     {
       "id": "f1d252962363612e",
@@ -3937,12 +3960,6 @@
         },
         {
           "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=2juoO7pnUWU",
-          "date": "2025-05-15T11:06:43Z",
-          "text": "祭のきせき　盆踊り\n【盆踊り】マロニエまつり盆踊り大会 A面　大東京音頭 三味線ブギ たいとう音頭　20250510\nマロニエまつり盆踊り大会 A面　2025年5月10日\n\n■A面／13〜14時\n鳥越おかず横丁路上・魚米付近\n\n0:00　ダイジェスト\n4:10　タイトル\n4:41　東京音頭\n7:50　柳北音頭　\n11:20\n14:35　三味線ブギ⚪︎\n17:46　江戸っ子囃子\n21:33　炭坑節\n24:50　黒石よされ\n29:35　ドダレバチ（津軽甚句）\n33:55　花笠音頭⚪︎\n37:11　はめつけ音頭\n40:38　春駒はやし\n45:03　ワイド節\n48:20　ハワイ音頭⚪︎\n52:25　大東京音頭⚪︎\n55:44　たいとう音頭"
-        },
-        {
-          "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=q-cPrM6wCZs",
           "date": "2025-03-14T10:30:24Z",
           "text": "和太鼓お祭りチャンネル\n炭坑節（生歌）　2024年浜町音頭保存会盆踊り大会10終　東京都中央区\n2024年東京都中央区にあります浜町公園で行われました、\n「濱町音頭保存会盆踊り大会」の様子です。\n\n\n浜町音頭保存会盆踊り\n１浜町音頭　https://youtu.be/dEQoJfTywtQ\n２新浜町音頭　https://youtu.be/XVy11Yvjxms\n３浜町美人音頭　https://youtu.be/ui29K_EVero\n４大東京音頭　https://youtu.be/u3jj9RgIcBE\n５どだればちサンバ　https://youtu.be/5r1S2O27Clw\n６きよしのズンドコ節　https://youtu.be/O0TqMX5my18\n７チャンチキおけさ　https://youtu.be/-wE5sYDafnI\n８ゆかた音頭　https://youtu.be/jii7G5dMslI\n９神田明神音頭　htt"
@@ -4099,7 +4116,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 75
+      "evidence_count": 74
     },
     {
       "id": "74b4b77223dd58c8",
@@ -4119,84 +4136,6 @@
           "url": "https://x.com/_masakari/status/2065078577687863764",
           "date": "2026-06-11T14:27:54+00:00",
           "text": "まさかり (盆踊り／奉納踊り／輪踊り) 記録用\n6/11(木)19:00~20:30\nさくら公園盆踊り大会 盆踊り練習会\n椿音頭(うちわ)を初めて踊った。\n\n365日の紙飛行機の、最後の決めポーズが勉強になった。\n\n同級会音頭\nドンパン節\n花の盆踊り\n東京音頭\n大東京音頭\n\n快く受け入れて頂き、ありがとうございました。楽しかったです。"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=bKGzyQHWWcI",
-          "date": "2026-05-14T04:00:24+00:00",
-          "text": "祭のきせき 盆踊り\n28 締め太鼓　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509\nマロニエまつり盆踊り大会・第二部　ヒューリック浅草橋ビル前　20260年5月9日（土）\n\nマロニエまつり盆踊り大会 ② ヒューリック浅草橋ビル前（全曲ver）\nhttps://youtu.be/aeilLaeE8w8\n01 東京音頭　https://youtu.be/SbEosGTQNeI\n02 東京音頭　https://youtu.be/2ZG3iTZJVtc\n03 おけさ唄えば　https://youtu.be/Tv841KIFT2w\n04 日本よいとこ　https://youtu.be/2jqAe2cuGcY\n05 東京五輪音頭　https://youtu.be/Vw5JjfD_uCk\n06 まんまる音頭　https://youtu.be/TiplDr6GtRg\n07 浅草ばし音頭　https://youtu.be/"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=dJAb8mtqBb0",
-          "date": "2026-05-14T03:00:27+00:00",
-          "text": "祭のきせき 盆踊り\n27 ボンゴ天国　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509\nマロニエまつり盆踊り大会・第二部　ヒューリック浅草橋ビル前　20260年5月9日（土）\n\nマロニエまつり盆踊り大会 ② ヒューリック浅草橋ビル前（全曲ver）\nhttps://youtu.be/aeilLaeE8w8\n01 東京音頭　https://youtu.be/SbEosGTQNeI\n02 東京音頭　https://youtu.be/2ZG3iTZJVtc\n03 おけさ唄えば　https://youtu.be/Tv841KIFT2w\n04 日本よいとこ　https://youtu.be/2jqAe2cuGcY\n05 東京五輪音頭　https://youtu.be/Vw5JjfD_uCk\n06 まんまる音頭　https://youtu.be/TiplDr6GtRg\n07 浅草ばし音頭　https://youtu."
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=7rktk9ypI70",
-          "date": "2026-05-14T02:00:34+00:00",
-          "text": "祭のきせき 盆踊り\n26 U.S.A.　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509\nマロニエまつり盆踊り大会・第二部　ヒューリック浅草橋ビル前　20260年5月9日（土）\n\nマロニエまつり盆踊り大会 ② ヒューリック浅草橋ビル前（全曲ver）\nhttps://youtu.be/aeilLaeE8w8\n01 東京音頭　https://youtu.be/SbEosGTQNeI\n02 東京音頭　https://youtu.be/2ZG3iTZJVtc\n03 おけさ唄えば　https://youtu.be/Tv841KIFT2w\n04 日本よいとこ　https://youtu.be/2jqAe2cuGcY\n05 東京五輪音頭　https://youtu.be/Vw5JjfD_uCk\n06 まんまる音頭　https://youtu.be/TiplDr6GtRg\n07 浅草ばし音頭　https://youtu.b"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=G7p5vBash6M",
-          "date": "2026-05-14T01:00:04+00:00",
-          "text": "祭のきせき 盆踊り\n25 また逢う日まで　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509\nマロニエまつり盆踊り大会・第二部　ヒューリック浅草橋ビル前　20260年5月9日（土）\n\nマロニエまつり盆踊り大会 ② ヒューリック浅草橋ビル前（全曲ver）\nhttps://youtu.be/aeilLaeE8w8\n01 東京音頭　https://youtu.be/SbEosGTQNeI\n02 東京音頭　https://youtu.be/2ZG3iTZJVtc\n03 おけさ唄えば　https://youtu.be/Tv841KIFT2w\n04 日本よいとこ　https://youtu.be/2jqAe2cuGcY\n05 東京五輪音頭　https://youtu.be/Vw5JjfD_uCk\n06 まんまる音頭　https://youtu.be/TiplDr6GtRg\n07 浅草ばし音頭　https://youtu"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=ApUiu9aGfKs",
-          "date": "2026-05-14T00:00:15+00:00",
-          "text": "祭のきせき 盆踊り\n24 白鳥おどり 世栄　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509\nマロニエまつり盆踊り大会・第二部　ヒューリック浅草橋ビル前　20260年5月9日（土）\n\nマロニエまつり盆踊り大会 ② ヒューリック浅草橋ビル前（全曲ver）\nhttps://youtu.be/aeilLaeE8w8\n01 東京音頭　https://youtu.be/SbEosGTQNeI\n02 東京音頭　https://youtu.be/2ZG3iTZJVtc\n03 おけさ唄えば　https://youtu.be/Tv841KIFT2w\n04 日本よいとこ　https://youtu.be/2jqAe2cuGcY\n05 東京五輪音頭　https://youtu.be/Vw5JjfD_uCk\n06 まんまる音頭　https://youtu.be/TiplDr6GtRg\n07 浅草ばし音頭　https://yout"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=3iexflX8QmI",
-          "date": "2026-05-13T23:00:06+00:00",
-          "text": "祭のきせき 盆踊り\n23 ダンシングヒーロー　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509\nマロニエまつり盆踊り大会・第二部　ヒューリック浅草橋ビル前　20260年5月9日（土）\n\nマロニエまつり盆踊り大会 ② ヒューリック浅草橋ビル前（全曲ver）\nhttps://youtu.be/aeilLaeE8w8\n01 東京音頭　https://youtu.be/SbEosGTQNeI\n02 東京音頭　https://youtu.be/2ZG3iTZJVtc\n03 おけさ唄えば　https://youtu.be/Tv841KIFT2w\n04 日本よいとこ　https://youtu.be/2jqAe2cuGcY\n05 東京五輪音頭　https://youtu.be/Vw5JjfD_uCk\n06 まんまる音頭　https://youtu.be/TiplDr6GtRg\n07 浅草ばし音頭　https://yo"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=-Hge85DeCGs",
-          "date": "2026-05-13T22:00:20+00:00",
-          "text": "祭のきせき 盆踊り\n22 雨の御堂筋　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509\nマロニエまつり盆踊り大会・第二部　ヒューリック浅草橋ビル前　20260年5月9日（土）\n\nマロニエまつり盆踊り大会 ② ヒューリック浅草橋ビル前（全曲ver）\nhttps://youtu.be/aeilLaeE8w8\n01 東京音頭　https://youtu.be/SbEosGTQNeI\n02 東京音頭　https://youtu.be/2ZG3iTZJVtc\n03 おけさ唄えば　https://youtu.be/Tv841KIFT2w\n04 日本よいとこ　https://youtu.be/2jqAe2cuGcY\n05 東京五輪音頭　https://youtu.be/Vw5JjfD_uCk\n06 まんまる音頭　https://youtu.be/TiplDr6GtRg\n07 浅草ばし音頭　https://youtu.be"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=LcY8fBoEpfA",
-          "date": "2026-05-13T21:00:07+00:00",
-          "text": "祭のきせき 盆踊り\n21 日本はればれ音頭　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509\nマロニエまつり盆踊り大会・第二部　ヒューリック浅草橋ビル前　20260年5月9日（土）\n\nマロニエまつり盆踊り大会 ② ヒューリック浅草橋ビル前（全曲ver）\nhttps://youtu.be/aeilLaeE8w8\n01 東京音頭　https://youtu.be/SbEosGTQNeI\n02 東京音頭　https://youtu.be/2ZG3iTZJVtc\n03 おけさ唄えば　https://youtu.be/Tv841KIFT2w\n04 日本よいとこ　https://youtu.be/2jqAe2cuGcY\n05 東京五輪音頭　https://youtu.be/Vw5JjfD_uCk\n06 まんまる音頭　https://youtu.be/TiplDr6GtRg\n07 浅草ばし音頭　https://yout"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=KXprFpoe6t4",
-          "date": "2026-05-13T20:00:05+00:00",
-          "text": "祭のきせき 盆踊り\n20 宇宙太鼓　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509\nマロニエまつり盆踊り大会・第二部　ヒューリック浅草橋ビル前　20260年5月9日（土）\n\nマロニエまつり盆踊り大会 ② ヒューリック浅草橋ビル前（全曲ver）\nhttps://youtu.be/aeilLaeE8w8\n01 東京音頭　https://youtu.be/SbEosGTQNeI\n02 東京音頭　https://youtu.be/2ZG3iTZJVtc\n03 おけさ唄えば　https://youtu.be/Tv841KIFT2w\n04 日本よいとこ　https://youtu.be/2jqAe2cuGcY\n05 東京五輪音頭　https://youtu.be/Vw5JjfD_uCk\n06 まんまる音頭　https://youtu.be/TiplDr6GtRg\n07 浅草ばし音頭　https://youtu.be/"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=JrGlofeenWE",
-          "date": "2026-05-13T19:00:23+00:00",
-          "text": "祭のきせき 盆踊り\n19 黒潮太鼓　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509\nマロニエまつり盆踊り大会・第二部　ヒューリック浅草橋ビル前　20260年5月9日（土）\n\nマロニエまつり盆踊り大会 ② ヒューリック浅草橋ビル前（全曲ver）\nhttps://youtu.be/aeilLaeE8w8\n01 東京音頭　https://youtu.be/SbEosGTQNeI\n02 東京音頭　https://youtu.be/2ZG3iTZJVtc\n03 おけさ唄えば　https://youtu.be/Tv841KIFT2w\n04 日本よいとこ　https://youtu.be/2jqAe2cuGcY\n05 東京五輪音頭　https://youtu.be/Vw5JjfD_uCk\n06 まんまる音頭　https://youtu.be/TiplDr6GtRg\n07 浅草ばし音頭　https://youtu.be/"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=xY1o8tSJhWg",
-          "date": "2026-05-13T18:00:40+00:00",
-          "text": "祭のきせき 盆踊り\n18 島人ぬ宝　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509\nマロニエまつり盆踊り大会・第二部　ヒューリック浅草橋ビル前　20260年5月9日（土）\n\nマロニエまつり盆踊り大会 ② ヒューリック浅草橋ビル前（全曲ver）\nhttps://youtu.be/aeilLaeE8w8\n01 東京音頭　https://youtu.be/SbEosGTQNeI\n02 東京音頭　https://youtu.be/2ZG3iTZJVtc\n03 おけさ唄えば　https://youtu.be/Tv841KIFT2w\n04 日本よいとこ　https://youtu.be/2jqAe2cuGcY\n05 東京五輪音頭　https://youtu.be/Vw5JjfD_uCk\n06 まんまる音頭　https://youtu.be/TiplDr6GtRg\n07 浅草ばし音頭　https://youtu.be/"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=cjXn62ErNvE",
-          "date": "2026-05-13T17:00:08+00:00",
-          "text": "祭のきせき 盆踊り\n17 祭り華〜神田明神　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509\nマロニエまつり盆踊り大会・第二部　ヒューリック浅草橋ビル前　20260年5月9日（土）\n\nマロニエまつり盆踊り大会 ② ヒューリック浅草橋ビル前（全曲ver）\nhttps://youtu.be/aeilLaeE8w8\n01 東京音頭　https://youtu.be/SbEosGTQNeI\n02 東京音頭　https://youtu.be/2ZG3iTZJVtc\n03 おけさ唄えば　https://youtu.be/Tv841KIFT2w\n04 日本よいとこ　https://youtu.be/2jqAe2cuGcY\n05 東京五輪音頭　https://youtu.be/Vw5JjfD_uCk\n06 まんまる音頭　https://youtu.be/TiplDr6GtRg\n07 浅草ばし音頭　https://youtu"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=i2d4_AVPxsA",
-          "date": "2026-05-13T16:00:15+00:00",
-          "text": "祭のきせき 盆踊り\n16 河内酒　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509\nマロニエまつり盆踊り大会・第二部　ヒューリック浅草橋ビル前　20260年5月9日（土）\n\nマロニエまつり盆踊り大会 ② ヒューリック浅草橋ビル前（全曲ver）\nhttps://youtu.be/aeilLaeE8w8\n01 東京音頭　https://youtu.be/SbEosGTQNeI\n02 東京音頭　https://youtu.be/2ZG3iTZJVtc\n03 おけさ唄えば　https://youtu.be/Tv841KIFT2w\n04 日本よいとこ　https://youtu.be/2jqAe2cuGcY\n05 東京五輪音頭　https://youtu.be/Vw5JjfD_uCk\n06 まんまる音頭　https://youtu.be/TiplDr6GtRg\n07 浅草ばし音頭　https://youtu.be/3"
         },
         {
           "source": "x_voice",
@@ -5220,7 +5159,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 184
+      "evidence_count": 171
     },
     {
       "id": "e6ad694b32fea9d3",
@@ -5428,6 +5367,135 @@
       ],
       "already_public": false,
       "evidence_count": 3
+    },
+    {
+      "id": "76833b95e0152d32",
+      "song_name": "大東京音頭",
+      "event_name": "新橋こいち祭",
+      "venue": "桜田公園",
+      "area": "港区",
+      "status": "未確認",
+      "confidence": "中",
+      "reasons": [
+        "known_song_context",
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=qeq2m7KDot0",
+          "date": "2025-07-28T14:45:07Z",
+          "text": "和太鼓お祭りチャンネル\n【大東京音頭】（金沢明子）　2025年「第28回新橋こいち祭」盆踊り1日目３　桜田会場第一部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "6ddbbd2b43704382",
+      "song_name": "東京音頭",
+      "event_name": "新橋こいち祭",
+      "venue": "桜田公園",
+      "area": "港区",
+      "status": "未確認",
+      "confidence": "中",
+      "reasons": [
+        "known_song_context",
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=mMFZ141KBqw",
+          "date": "2025-10-17T03:00:55Z",
+          "text": "和太鼓お祭りチャンネル\n新橋こいちまつり　東京音頭 #祭り #盆踊り #盆踊りのりんりん\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms\n\n９東京音頭　https://youtu.be/u6ZeSKLpPzc\n10新橋音頭　h"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=8UmSS-S78Mc",
+          "date": "2025-08-04T10:30:04Z",
+          "text": "和太鼓お祭りチャンネル\n東京音頭　2025年「第28回新橋こいち祭」盆踊り1日目29　柳通り第二部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms\n\n９東京音頭　https://youtu.be/u6ZeSKLpP"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=D1rzTY7oFCQ",
+          "date": "2025-08-02T11:00:31Z",
+          "text": "和太鼓お祭りチャンネル\n東京音頭　2025年「第28回新橋こいち祭」盆踊り1日目23　柳通り第二部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms\n\n９東京音頭　https://youtu.be/u6ZeSKLpP"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=u6ZeSKLpPzc",
+          "date": "2025-07-30T10:01:24Z",
+          "text": "和太鼓お祭りチャンネル\n東京音頭　2025年「第28回新橋こいち祭」盆踊り1日目９　柳通り第一部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms\n\n９東京音頭　https://youtu.be/u6ZeSKLpPz"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=XNKMBMHx0Rc",
+          "date": "2025-07-28T14:30:33Z",
+          "text": "和太鼓お祭りチャンネル\n東京音頭　2025年「第28回新橋こいち祭」盆踊り1日目２　桜田会場第一部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=QCkFeK62XCw",
+          "date": "2025-07-24T15:19:07Z",
+          "text": "shu channel\n【第28回新橋こいち祭（盆踊り）】『ふるさと音頭～東京音頭～新橋音頭』[4/4]🏮Tokyo Bon Dance Festival👘2025.7.24 @新橋駅前・桜田会場～柳通り\n00:00 ふるさと音頭\n04:24 東京音頭\n07:45 新橋音頭\n\n■「第28回新橋こいち祭」公式サイト\nhttp://www.shinbashi.net/top/koichi/2025/greeting/"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=Q-oclZpyCbY",
+          "date": "2025-07-24T14:23:26Z",
+          "text": "shu channel\n【第28回新橋こいち祭（盆踊り）】『東京音頭～新橋音頭〜ハワイ音頭～炭坑節』[1/4]🏮Tokyo Bon Dance Festival👘2025.7.24 @新橋駅前・柳通り\n00:00 東京音頭\n03:19 新橋音頭\n07:39 ハワイ音頭\n11:48 炭坑節\n\n■「第28回新橋こいち祭」公式サイト\nhttp://www.shinbashi.net/top/koichi/2025/greeting/"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 7
+    },
+    {
+      "id": "b7b9b228cb29ffdc",
+      "song_name": "炭坑節",
+      "event_name": "新橋こいち祭",
+      "venue": "桜田公園",
+      "area": "港区",
+      "status": "未確認",
+      "confidence": "中",
+      "reasons": [
+        "known_song_context",
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=RkpEfxySkAs",
+          "date": "2025-08-05T10:30:16Z",
+          "text": "和太鼓お祭りチャンネル\n炭坑節　2025年「第28回新橋こいち祭」盆踊り1日目32　柳通り第二部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms\n\n９東京音頭　https://youtu.be/u6ZeSKLpPz"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=gtpIXYxORPA",
+          "date": "2025-08-03T11:01:07Z",
+          "text": "和太鼓お祭りチャンネル\n「炭坑節」　2025年「第28回新橋こいち祭」盆踊り1日目27　柳通り第二部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms\n\n９東京音頭　https://youtu.be/u6ZeSKLp"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=gPC4TOyj5u0",
+          "date": "2025-07-31T10:01:12Z",
+          "text": "和太鼓お祭りチャンネル\n炭坑節　2025年「第28回新橋こいち祭」盆踊り1日目13　柳通り第一部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms\n\n９東京音頭　https://youtu.be/u6ZeSKLpPz"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=qHFe5yIS1fU",
+          "date": "2025-07-29T11:01:32Z",
+          "text": "和太鼓お祭りチャンネル\n炭坑節　2025年「第28回新橋こいち祭」盆踊り1日目５　桜田会場第一部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=Q-oclZpyCbY",
+          "date": "2025-07-24T14:23:26Z",
+          "text": "shu channel\n【第28回新橋こいち祭（盆踊り）】『東京音頭～新橋音頭〜ハワイ音頭～炭坑節』[1/4]🏮Tokyo Bon Dance Festival👘2025.7.24 @新橋駅前・柳通り\n00:00 東京音頭\n03:19 新橋音頭\n07:39 ハワイ音頭\n11:48 炭坑節\n\n■「第28回新橋こいち祭」公式サイト\nhttp://www.shinbashi.net/top/koichi/2025/greeting/"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 5
     },
     {
       "id": "0afca83d9c4df902",
@@ -7636,6 +7704,72 @@
           "url": "https://x.com/natsutr_bon/status/2059805547512418608",
           "date": "2026-05-28T01:14:46+00:00",
           "text": "奈津大郎〘ナツタロ〙\n5/24築地JAM\n\n盆踊り会場としても人気の築地本願寺で民謡クルセイダーズLIVE♪\n花笠音頭からはじまり、ソーラン節では観客揃って船漕いだり波起こしたり〜🌊\n貝殻節、会津磐梯山、炭坑節と民謡踊りを楽しく✨\n\nそのあとも美味しいフードを食べたり、ジャズ、ボサノヴァなどをユルユルっと🥂\n\n#民クル https://t.co/BNQ6P4cM3h"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "310323bd23342225",
+      "song_name": "よされ節",
+      "event_name": "中野駅前大盆踊り大会",
+      "venue": "中野セントラルパーク",
+      "area": "中野区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=PaQFRqPPYKE",
+          "date": "2025-09-16T07:00:22Z",
+          "text": "Urban Walk\n【中野駅前大盆踊り大会 2025】青森民謡協会 / 津軽三味線 民謡 / 津軽じょんから節ドダレバチ よされ節 津軽手踊り\n#青森民謡協会l #津軽三味線 #中野駅前盆踊り #盆踊り #盆ジョヴィ 津軽じょんから節 #ナカボン #祭り\n\n開催日程：2025年8月2日(土)・3日(日)\n開催時間：10:00〜21:00　\n開催場所：中野セントラルパーク・パークアベニュー/中野四季の森公園\n\n00:00　三味線\n09:58　津軽じょんから節　\n13:47　ドダレバチ\n16:56　津軽手踊り / よされ節\n\n【関連動画】\nhttps://youtu.be/GuEK0LXUm9k\nhttps://youtu.be/QCIMciHikLs\nhttps://youtu.be/c65bBHP-Jw0"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "891a0e993108f9c4",
+      "song_name": "津軽じょんから節",
+      "event_name": "中野駅前大盆踊り大会",
+      "venue": "中野セントラルパーク",
+      "area": "中野区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=PaQFRqPPYKE",
+          "date": "2025-09-16T07:00:22Z",
+          "text": "Urban Walk\n【中野駅前大盆踊り大会 2025】青森民謡協会 / 津軽三味線 民謡 / 津軽じょんから節ドダレバチ よされ節 津軽手踊り\n#青森民謡協会l #津軽三味線 #中野駅前盆踊り #盆踊り #盆ジョヴィ 津軽じょんから節 #ナカボン #祭り\n\n開催日程：2025年8月2日(土)・3日(日)\n開催時間：10:00〜21:00　\n開催場所：中野セントラルパーク・パークアベニュー/中野四季の森公園\n\n00:00　三味線\n09:58　津軽じょんから節　\n13:47　ドダレバチ\n16:56　津軽手踊り / よされ節\n\n【関連動画】\nhttps://youtu.be/GuEK0LXUm9k\nhttps://youtu.be/QCIMciHikLs\nhttps://youtu.be/c65bBHP-Jw0"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "2be69a3d3812efaf",
+      "song_name": "津軽手踊り",
+      "event_name": "中野駅前大盆踊り大会",
+      "venue": "中野セントラルパーク",
+      "area": "中野区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=PaQFRqPPYKE",
+          "date": "2025-09-16T07:00:22Z",
+          "text": "Urban Walk\n【中野駅前大盆踊り大会 2025】青森民謡協会 / 津軽三味線 民謡 / 津軽じょんから節ドダレバチ よされ節 津軽手踊り\n#青森民謡協会l #津軽三味線 #中野駅前盆踊り #盆踊り #盆ジョヴィ 津軽じょんから節 #ナカボン #祭り\n\n開催日程：2025年8月2日(土)・3日(日)\n開催時間：10:00〜21:00　\n開催場所：中野セントラルパーク・パークアベニュー/中野四季の森公園\n\n00:00　三味線\n09:58　津軽じょんから節　\n13:47　ドダレバチ\n16:56　津軽手踊り / よされ節\n\n【関連動画】\nhttps://youtu.be/GuEK0LXUm9k\nhttps://youtu.be/QCIMciHikLs\nhttps://youtu.be/c65bBHP-Jw0"
         }
       ],
       "already_public": false,
@@ -10392,6 +10526,28 @@
       "evidence_count": 1
     },
     {
+      "id": "855510e14aeba962",
+      "song_name": "たいとう音頭",
+      "event_name": "マロニエまつり盆踊り大会",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=2juoO7pnUWU",
+          "date": "2025-05-15T11:06:43Z",
+          "text": "祭のきせき　盆踊り\n【盆踊り】マロニエまつり盆踊り大会 A面　大東京音頭 三味線ブギ たいとう音頭　20250510\nマロニエまつり盆踊り大会 A面　2025年5月10日\n\n■A面／13〜14時\n鳥越おかず横丁路上・魚米付近\n\n0:00　ダイジェスト\n4:10　タイトル\n4:41　東京音頭\n7:50　柳北音頭　\n11:20\n14:35　三味線ブギ⚪︎\n17:46　江戸っ子囃子\n21:33　炭坑節\n24:50　黒石よされ\n29:35　ドダレバチ（津軽甚句）\n33:55　花笠音頭⚪︎\n37:11　はめつけ音頭\n40:38　春駒はやし\n45:03　ワイド節\n48:20　ハワイ音頭⚪︎\n52:25　大東京音頭⚪︎\n55:44　たいとう音頭"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
       "id": "16a818f0abbfcc4e",
       "song_name": "一日中踊り",
       "event_name": "浅草橋マロニエまつり盆踊り",
@@ -10408,6 +10564,166 @@
           "url": "https://x.com/1205uzonke/status/2065200648086487508",
           "date": "2026-06-11T22:32:58+00:00",
           "text": "yoppesan\n5月9日浅草橋マロニエまつり盆踊りへ。13時と14時30分の二部制だけど、午前中のプログラムで、踊りの披露があるから、一緒になって踊った。今年も佐渡おけさ踊れた。一日中踊りっぱなしで満足〜。"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "dd0c0a9d4ceb158b",
+      "song_name": "新浅草橋音頭",
+      "event_name": "マロニエまつり盆踊り大会",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/bon_odoroo/status/2053092202902114489",
+          "date": "2026-05-09T12:38:20+00:00",
+          "text": "おーすけ（おーちゃん）\nマロニエまつり盆踊り大会を訪ねました。名曲をたくさん踊れて楽しかったです。\n\n浅草橋音頭は神曲で振り付けも洒落てる。新浅草橋音頭は清水百恵さんの生歌で明るい雰囲気に。\n\n魅せられては柳北子さんの生歌で艶やかな雰囲気。市丸姐さんの曲や春駒ばやし、相馬壁塗り甚句なども渋くて良かったです。 https://t.co/2VYboVFWTU"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "28477e312a414ff4",
+      "song_name": "東京音頭",
+      "event_name": "マロニエまつり盆踊り大会",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=bKGzyQHWWcI",
+          "date": "2026-05-14T04:00:24+00:00",
+          "text": "祭のきせき 盆踊り\n28 締め太鼓　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509\nマロニエまつり盆踊り大会・第二部　ヒューリック浅草橋ビル前　20260年5月9日（土）\n\nマロニエまつり盆踊り大会 ② ヒューリック浅草橋ビル前（全曲ver）\nhttps://youtu.be/aeilLaeE8w8\n01 東京音頭　https://youtu.be/SbEosGTQNeI\n02 東京音頭　https://youtu.be/2ZG3iTZJVtc\n03 おけさ唄えば　https://youtu.be/Tv841KIFT2w\n04 日本よいとこ　https://youtu.be/2jqAe2cuGcY\n05 東京五輪音頭　https://youtu.be/Vw5JjfD_uCk\n06 まんまる音頭　https://youtu.be/TiplDr6GtRg\n07 浅草ばし音頭　https://youtu.be/"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=dJAb8mtqBb0",
+          "date": "2026-05-14T03:00:27+00:00",
+          "text": "祭のきせき 盆踊り\n27 ボンゴ天国　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509\nマロニエまつり盆踊り大会・第二部　ヒューリック浅草橋ビル前　20260年5月9日（土）\n\nマロニエまつり盆踊り大会 ② ヒューリック浅草橋ビル前（全曲ver）\nhttps://youtu.be/aeilLaeE8w8\n01 東京音頭　https://youtu.be/SbEosGTQNeI\n02 東京音頭　https://youtu.be/2ZG3iTZJVtc\n03 おけさ唄えば　https://youtu.be/Tv841KIFT2w\n04 日本よいとこ　https://youtu.be/2jqAe2cuGcY\n05 東京五輪音頭　https://youtu.be/Vw5JjfD_uCk\n06 まんまる音頭　https://youtu.be/TiplDr6GtRg\n07 浅草ばし音頭　https://youtu."
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=7rktk9ypI70",
+          "date": "2026-05-14T02:00:34+00:00",
+          "text": "祭のきせき 盆踊り\n26 U.S.A.　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509\nマロニエまつり盆踊り大会・第二部　ヒューリック浅草橋ビル前　20260年5月9日（土）\n\nマロニエまつり盆踊り大会 ② ヒューリック浅草橋ビル前（全曲ver）\nhttps://youtu.be/aeilLaeE8w8\n01 東京音頭　https://youtu.be/SbEosGTQNeI\n02 東京音頭　https://youtu.be/2ZG3iTZJVtc\n03 おけさ唄えば　https://youtu.be/Tv841KIFT2w\n04 日本よいとこ　https://youtu.be/2jqAe2cuGcY\n05 東京五輪音頭　https://youtu.be/Vw5JjfD_uCk\n06 まんまる音頭　https://youtu.be/TiplDr6GtRg\n07 浅草ばし音頭　https://youtu.b"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=G7p5vBash6M",
+          "date": "2026-05-14T01:00:04+00:00",
+          "text": "祭のきせき 盆踊り\n25 また逢う日まで　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509\nマロニエまつり盆踊り大会・第二部　ヒューリック浅草橋ビル前　20260年5月9日（土）\n\nマロニエまつり盆踊り大会 ② ヒューリック浅草橋ビル前（全曲ver）\nhttps://youtu.be/aeilLaeE8w8\n01 東京音頭　https://youtu.be/SbEosGTQNeI\n02 東京音頭　https://youtu.be/2ZG3iTZJVtc\n03 おけさ唄えば　https://youtu.be/Tv841KIFT2w\n04 日本よいとこ　https://youtu.be/2jqAe2cuGcY\n05 東京五輪音頭　https://youtu.be/Vw5JjfD_uCk\n06 まんまる音頭　https://youtu.be/TiplDr6GtRg\n07 浅草ばし音頭　https://youtu"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=ApUiu9aGfKs",
+          "date": "2026-05-14T00:00:15+00:00",
+          "text": "祭のきせき 盆踊り\n24 白鳥おどり 世栄　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509\nマロニエまつり盆踊り大会・第二部　ヒューリック浅草橋ビル前　20260年5月9日（土）\n\nマロニエまつり盆踊り大会 ② ヒューリック浅草橋ビル前（全曲ver）\nhttps://youtu.be/aeilLaeE8w8\n01 東京音頭　https://youtu.be/SbEosGTQNeI\n02 東京音頭　https://youtu.be/2ZG3iTZJVtc\n03 おけさ唄えば　https://youtu.be/Tv841KIFT2w\n04 日本よいとこ　https://youtu.be/2jqAe2cuGcY\n05 東京五輪音頭　https://youtu.be/Vw5JjfD_uCk\n06 まんまる音頭　https://youtu.be/TiplDr6GtRg\n07 浅草ばし音頭　https://yout"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=3iexflX8QmI",
+          "date": "2026-05-13T23:00:06+00:00",
+          "text": "祭のきせき 盆踊り\n23 ダンシングヒーロー　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509\nマロニエまつり盆踊り大会・第二部　ヒューリック浅草橋ビル前　20260年5月9日（土）\n\nマロニエまつり盆踊り大会 ② ヒューリック浅草橋ビル前（全曲ver）\nhttps://youtu.be/aeilLaeE8w8\n01 東京音頭　https://youtu.be/SbEosGTQNeI\n02 東京音頭　https://youtu.be/2ZG3iTZJVtc\n03 おけさ唄えば　https://youtu.be/Tv841KIFT2w\n04 日本よいとこ　https://youtu.be/2jqAe2cuGcY\n05 東京五輪音頭　https://youtu.be/Vw5JjfD_uCk\n06 まんまる音頭　https://youtu.be/TiplDr6GtRg\n07 浅草ばし音頭　https://yo"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=-Hge85DeCGs",
+          "date": "2026-05-13T22:00:20+00:00",
+          "text": "祭のきせき 盆踊り\n22 雨の御堂筋　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509\nマロニエまつり盆踊り大会・第二部　ヒューリック浅草橋ビル前　20260年5月9日（土）\n\nマロニエまつり盆踊り大会 ② ヒューリック浅草橋ビル前（全曲ver）\nhttps://youtu.be/aeilLaeE8w8\n01 東京音頭　https://youtu.be/SbEosGTQNeI\n02 東京音頭　https://youtu.be/2ZG3iTZJVtc\n03 おけさ唄えば　https://youtu.be/Tv841KIFT2w\n04 日本よいとこ　https://youtu.be/2jqAe2cuGcY\n05 東京五輪音頭　https://youtu.be/Vw5JjfD_uCk\n06 まんまる音頭　https://youtu.be/TiplDr6GtRg\n07 浅草ばし音頭　https://youtu.be"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=LcY8fBoEpfA",
+          "date": "2026-05-13T21:00:07+00:00",
+          "text": "祭のきせき 盆踊り\n21 日本はればれ音頭　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509\nマロニエまつり盆踊り大会・第二部　ヒューリック浅草橋ビル前　20260年5月9日（土）\n\nマロニエまつり盆踊り大会 ② ヒューリック浅草橋ビル前（全曲ver）\nhttps://youtu.be/aeilLaeE8w8\n01 東京音頭　https://youtu.be/SbEosGTQNeI\n02 東京音頭　https://youtu.be/2ZG3iTZJVtc\n03 おけさ唄えば　https://youtu.be/Tv841KIFT2w\n04 日本よいとこ　https://youtu.be/2jqAe2cuGcY\n05 東京五輪音頭　https://youtu.be/Vw5JjfD_uCk\n06 まんまる音頭　https://youtu.be/TiplDr6GtRg\n07 浅草ばし音頭　https://yout"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=KXprFpoe6t4",
+          "date": "2026-05-13T20:00:05+00:00",
+          "text": "祭のきせき 盆踊り\n20 宇宙太鼓　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509\nマロニエまつり盆踊り大会・第二部　ヒューリック浅草橋ビル前　20260年5月9日（土）\n\nマロニエまつり盆踊り大会 ② ヒューリック浅草橋ビル前（全曲ver）\nhttps://youtu.be/aeilLaeE8w8\n01 東京音頭　https://youtu.be/SbEosGTQNeI\n02 東京音頭　https://youtu.be/2ZG3iTZJVtc\n03 おけさ唄えば　https://youtu.be/Tv841KIFT2w\n04 日本よいとこ　https://youtu.be/2jqAe2cuGcY\n05 東京五輪音頭　https://youtu.be/Vw5JjfD_uCk\n06 まんまる音頭　https://youtu.be/TiplDr6GtRg\n07 浅草ばし音頭　https://youtu.be/"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=JrGlofeenWE",
+          "date": "2026-05-13T19:00:23+00:00",
+          "text": "祭のきせき 盆踊り\n19 黒潮太鼓　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509\nマロニエまつり盆踊り大会・第二部　ヒューリック浅草橋ビル前　20260年5月9日（土）\n\nマロニエまつり盆踊り大会 ② ヒューリック浅草橋ビル前（全曲ver）\nhttps://youtu.be/aeilLaeE8w8\n01 東京音頭　https://youtu.be/SbEosGTQNeI\n02 東京音頭　https://youtu.be/2ZG3iTZJVtc\n03 おけさ唄えば　https://youtu.be/Tv841KIFT2w\n04 日本よいとこ　https://youtu.be/2jqAe2cuGcY\n05 東京五輪音頭　https://youtu.be/Vw5JjfD_uCk\n06 まんまる音頭　https://youtu.be/TiplDr6GtRg\n07 浅草ばし音頭　https://youtu.be/"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=xY1o8tSJhWg",
+          "date": "2026-05-13T18:00:40+00:00",
+          "text": "祭のきせき 盆踊り\n18 島人ぬ宝　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509\nマロニエまつり盆踊り大会・第二部　ヒューリック浅草橋ビル前　20260年5月9日（土）\n\nマロニエまつり盆踊り大会 ② ヒューリック浅草橋ビル前（全曲ver）\nhttps://youtu.be/aeilLaeE8w8\n01 東京音頭　https://youtu.be/SbEosGTQNeI\n02 東京音頭　https://youtu.be/2ZG3iTZJVtc\n03 おけさ唄えば　https://youtu.be/Tv841KIFT2w\n04 日本よいとこ　https://youtu.be/2jqAe2cuGcY\n05 東京五輪音頭　https://youtu.be/Vw5JjfD_uCk\n06 まんまる音頭　https://youtu.be/TiplDr6GtRg\n07 浅草ばし音頭　https://youtu.be/"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=cjXn62ErNvE",
+          "date": "2026-05-13T17:00:08+00:00",
+          "text": "祭のきせき 盆踊り\n17 祭り華〜神田明神　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509\nマロニエまつり盆踊り大会・第二部　ヒューリック浅草橋ビル前　20260年5月9日（土）\n\nマロニエまつり盆踊り大会 ② ヒューリック浅草橋ビル前（全曲ver）\nhttps://youtu.be/aeilLaeE8w8\n01 東京音頭　https://youtu.be/SbEosGTQNeI\n02 東京音頭　https://youtu.be/2ZG3iTZJVtc\n03 おけさ唄えば　https://youtu.be/Tv841KIFT2w\n04 日本よいとこ　https://youtu.be/2jqAe2cuGcY\n05 東京五輪音頭　https://youtu.be/Vw5JjfD_uCk\n06 まんまる音頭　https://youtu.be/TiplDr6GtRg\n07 浅草ばし音頭　https://youtu"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=i2d4_AVPxsA",
+          "date": "2026-05-13T16:00:15+00:00",
+          "text": "祭のきせき 盆踊り\n16 河内酒　マロニエまつり盆踊り大会・後半（ヒューリック浅草橋前）20260509\nマロニエまつり盆踊り大会・第二部　ヒューリック浅草橋ビル前　20260年5月9日（土）\n\nマロニエまつり盆踊り大会 ② ヒューリック浅草橋ビル前（全曲ver）\nhttps://youtu.be/aeilLaeE8w8\n01 東京音頭　https://youtu.be/SbEosGTQNeI\n02 東京音頭　https://youtu.be/2ZG3iTZJVtc\n03 おけさ唄えば　https://youtu.be/Tv841KIFT2w\n04 日本よいとこ　https://youtu.be/2jqAe2cuGcY\n05 東京五輪音頭　https://youtu.be/Vw5JjfD_uCk\n06 まんまる音頭　https://youtu.be/TiplDr6GtRg\n07 浅草ばし音頭　https://youtu.be/3"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 13
+    },
+    {
+      "id": "e8a3a936c914333a",
+      "song_name": "浅草橋音頭",
+      "event_name": "マロニエまつり盆踊り大会",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/bon_odoroo/status/2053092202902114489",
+          "date": "2026-05-09T12:38:20+00:00",
+          "text": "おーすけ（おーちゃん）\nマロニエまつり盆踊り大会を訪ねました。名曲をたくさん踊れて楽しかったです。\n\n浅草橋音頭は神曲で振り付けも洒落てる。新浅草橋音頭は清水百恵さんの生歌で明るい雰囲気に。\n\n魅せられては柳北子さんの生歌で艶やかな雰囲気。市丸姐さんの曲や春駒ばやし、相馬壁塗り甚句なども渋くて良かったです。 https://t.co/2VYboVFWTU"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "1f1e10a6f9a824cf",
+      "song_name": "相馬壁塗り甚句",
+      "event_name": "マロニエまつり盆踊り大会",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/bon_odoroo/status/2053092202902114489",
+          "date": "2026-05-09T12:38:20+00:00",
+          "text": "おーすけ（おーちゃん）\nマロニエまつり盆踊り大会を訪ねました。名曲をたくさん踊れて楽しかったです。\n\n浅草橋音頭は神曲で振り付けも洒落てる。新浅草橋音頭は清水百恵さんの生歌で明るい雰囲気に。\n\n魅せられては柳北子さんの生歌で艶やかな雰囲気。市丸姐さんの曲や春駒ばやし、相馬壁塗り甚句なども渋くて良かったです。 https://t.co/2VYboVFWTU"
         }
       ],
       "already_public": false,
@@ -15827,12 +16143,6 @@
         },
         {
           "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=2juoO7pnUWU",
-          "date": "2025-05-15T11:06:43Z",
-          "text": "祭のきせき　盆踊り\n【盆踊り】マロニエまつり盆踊り大会 A面　大東京音頭 三味線ブギ たいとう音頭　20250510\nマロニエまつり盆踊り大会 A面　2025年5月10日\n\n■A面／13〜14時\n鳥越おかず横丁路上・魚米付近\n\n0:00　ダイジェスト\n4:10　タイトル\n4:41　東京音頭\n7:50　柳北音頭　\n11:20\n14:35　三味線ブギ⚪︎\n17:46　江戸っ子囃子\n21:33　炭坑節\n24:50　黒石よされ\n29:35　ドダレバチ（津軽甚句）\n33:55　花笠音頭⚪︎\n37:11　はめつけ音頭\n40:38　春駒はやし\n45:03　ワイド節\n48:20　ハワイ音頭⚪︎\n52:25　大東京音頭⚪︎\n55:44　たいとう音頭"
-        },
-        {
-          "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=M4jB-5rTWzE",
           "date": "2025-01-03T10:30:15Z",
           "text": "和太鼓お祭りチャンネル\n大江戸助六太鼓門下生　和太鼓演奏　2024年外神田納涼盆踊り大会22終　秋葉原芳林公園　東京都千代田区\n2024年東京都千代田区にあります芳林公園で行われました、\n「外神田納涼盆踊り大会」の様子です。\n\n\n\n芳林公園盆踊り\n１東京音頭　https://youtu.be/oR1q3BIhGjY\n２炭坑節　https://youtu.be/-St_HK6rbI4\n３相馬盆唄　https://youtu.be/8qVP3O_H2i0\n４常磐炭坑節　https://youtu.be/_XztM_84LSU\n５恋するフォーチュンクッキー　https://youtu.be/9JB-jpLYJ4c\n６ゆかた音頭　https://youtu.be/ymp2FEpMclI\n７千代田おどり　https://youtu.be/lPmB1-n5EiU\n８花笠音頭　https://youtu.be/RNkAArRaUFA\n９オバQ"
@@ -15869,7 +16179,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 9
+      "evidence_count": 8
     },
     {
       "id": "f4008f63e09a50db",
@@ -16036,28 +16346,6 @@
       ],
       "already_public": false,
       "evidence_count": 3
-    },
-    {
-      "id": "49b170901d59c4d2",
-      "song_name": "よされ節",
-      "event_name": "盆踊り大会",
-      "venue": "木場二丁目公園",
-      "area": "江東区",
-      "status": "未確認",
-      "confidence": "低",
-      "reasons": [
-        "song_suffix_near_context"
-      ],
-      "evidence": [
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=PaQFRqPPYKE",
-          "date": "2025-09-16T07:00:22Z",
-          "text": "Urban Walk\n【中野駅前大盆踊り大会 2025】青森民謡協会 / 津軽三味線 民謡 / 津軽じょんから節ドダレバチ よされ節 津軽手踊り\n#青森民謡協会l #津軽三味線 #中野駅前盆踊り #盆踊り #盆ジョヴィ 津軽じょんから節 #ナカボン #祭り\n\n開催日程：2025年8月2日(土)・3日(日)\n開催時間：10:00〜21:00　\n開催場所：中野セントラルパーク・パークアベニュー/中野四季の森公園\n\n00:00　三味線\n09:58　津軽じょんから節　\n13:47　ドダレバチ\n16:56　津軽手踊り / よされ節\n\n【関連動画】\nhttps://youtu.be/GuEK0LXUm9k\nhttps://youtu.be/QCIMciHikLs\nhttps://youtu.be/c65bBHP-Jw0"
-        }
-      ],
-      "already_public": false,
-      "evidence_count": 1
     },
     {
       "id": "4e847687eaedaf76",
@@ -17450,28 +17738,6 @@
       "evidence_count": 12
     },
     {
-      "id": "5112864d63784769",
-      "song_name": "新浅草橋音頭",
-      "event_name": "盆踊り大会",
-      "venue": "木場二丁目公園",
-      "area": "江東区",
-      "status": "未確認",
-      "confidence": "低",
-      "reasons": [
-        "song_suffix_near_context"
-      ],
-      "evidence": [
-        {
-          "source": "x_voice",
-          "url": "https://x.com/bon_odoroo/status/2053092202902114489",
-          "date": "2026-05-09T12:38:20+00:00",
-          "text": "おーすけ（おーちゃん）\nマロニエまつり盆踊り大会を訪ねました。名曲をたくさん踊れて楽しかったです。\n\n浅草橋音頭は神曲で振り付けも洒落てる。新浅草橋音頭は清水百恵さんの生歌で明るい雰囲気に。\n\n魅せられては柳北子さんの生歌で艶やかな雰囲気。市丸姐さんの曲や春駒ばやし、相馬壁塗り甚句なども渋くて良かったです。 https://t.co/2VYboVFWTU"
-        }
-      ],
-      "already_public": false,
-      "evidence_count": 1
-    },
-    {
       "id": "5b8b47e872a99d0e",
       "song_name": "新浜町音頭",
       "event_name": "盆踊り大会",
@@ -18044,72 +18310,6 @@
           "url": "https://www.youtube.com/watch?v=w1I_qlLEf68",
           "date": "2025-09-28T06:00:51Z",
           "text": "和太鼓お祭りチャンネル\n法輪音頭　杉大門通り盆踊り大会19　2025年9月21日\n2025年9月21日に行われました、\n「杉大門通り商店街盆踊り大会」の様子です。\n\n\n杉大門盆踊り\n１東京音頭　https://youtu.be/HwJzkUH_hO0\n２大東京音頭　https://youtu.be/txpcR7qq74g\n３炭坑節　https://youtu.be/-RXW7ZL9X44\n４八木節　https://youtu.be/0FTC8TLY0kk\n５新宿音頭　https://youtu.be/MUuEGc5PPd4\n６平成新宿音頭　https://youtu.be/T8JtRAmT7sc\n７荒木町小唄　https://youtu.be/oZIq8yHjdKo\n８いもがらぼくと　https://youtu.be/FCm8Kx38O3M\n９きよしのズンドコ節　https://youtu.be/8Ydfa8Su81c\n10松の"
-        }
-      ],
-      "already_public": false,
-      "evidence_count": 1
-    },
-    {
-      "id": "4eddc66d41d822f7",
-      "song_name": "津軽じょんから節",
-      "event_name": "盆踊り大会",
-      "venue": "木場二丁目公園",
-      "area": "江東区",
-      "status": "未確認",
-      "confidence": "低",
-      "reasons": [
-        "song_suffix_near_context"
-      ],
-      "evidence": [
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=PaQFRqPPYKE",
-          "date": "2025-09-16T07:00:22Z",
-          "text": "Urban Walk\n【中野駅前大盆踊り大会 2025】青森民謡協会 / 津軽三味線 民謡 / 津軽じょんから節ドダレバチ よされ節 津軽手踊り\n#青森民謡協会l #津軽三味線 #中野駅前盆踊り #盆踊り #盆ジョヴィ 津軽じょんから節 #ナカボン #祭り\n\n開催日程：2025年8月2日(土)・3日(日)\n開催時間：10:00〜21:00　\n開催場所：中野セントラルパーク・パークアベニュー/中野四季の森公園\n\n00:00　三味線\n09:58　津軽じょんから節　\n13:47　ドダレバチ\n16:56　津軽手踊り / よされ節\n\n【関連動画】\nhttps://youtu.be/GuEK0LXUm9k\nhttps://youtu.be/QCIMciHikLs\nhttps://youtu.be/c65bBHP-Jw0"
-        }
-      ],
-      "already_public": false,
-      "evidence_count": 1
-    },
-    {
-      "id": "4fec12263d57831a",
-      "song_name": "津軽手踊り",
-      "event_name": "盆踊り大会",
-      "venue": "木場二丁目公園",
-      "area": "江東区",
-      "status": "未確認",
-      "confidence": "低",
-      "reasons": [
-        "song_suffix_near_context"
-      ],
-      "evidence": [
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=PaQFRqPPYKE",
-          "date": "2025-09-16T07:00:22Z",
-          "text": "Urban Walk\n【中野駅前大盆踊り大会 2025】青森民謡協会 / 津軽三味線 民謡 / 津軽じょんから節ドダレバチ よされ節 津軽手踊り\n#青森民謡協会l #津軽三味線 #中野駅前盆踊り #盆踊り #盆ジョヴィ 津軽じょんから節 #ナカボン #祭り\n\n開催日程：2025年8月2日(土)・3日(日)\n開催時間：10:00〜21:00　\n開催場所：中野セントラルパーク・パークアベニュー/中野四季の森公園\n\n00:00　三味線\n09:58　津軽じょんから節　\n13:47　ドダレバチ\n16:56　津軽手踊り / よされ節\n\n【関連動画】\nhttps://youtu.be/GuEK0LXUm9k\nhttps://youtu.be/QCIMciHikLs\nhttps://youtu.be/c65bBHP-Jw0"
-        }
-      ],
-      "already_public": false,
-      "evidence_count": 1
-    },
-    {
-      "id": "31c8dd13cc51c078",
-      "song_name": "浅草橋音頭",
-      "event_name": "盆踊り大会",
-      "venue": "木場二丁目公園",
-      "area": "江東区",
-      "status": "未確認",
-      "confidence": "低",
-      "reasons": [
-        "song_suffix_near_context"
-      ],
-      "evidence": [
-        {
-          "source": "x_voice",
-          "url": "https://x.com/bon_odoroo/status/2053092202902114489",
-          "date": "2026-05-09T12:38:20+00:00",
-          "text": "おーすけ（おーちゃん）\nマロニエまつり盆踊り大会を訪ねました。名曲をたくさん踊れて楽しかったです。\n\n浅草橋音頭は神曲で振り付けも洒落てる。新浅草橋音頭は清水百恵さんの生歌で明るい雰囲気に。\n\n魅せられては柳北子さんの生歌で艶やかな雰囲気。市丸姐さんの曲や春駒ばやし、相馬壁塗り甚句なども渋くて良かったです。 https://t.co/2VYboVFWTU"
         }
       ],
       "already_public": false,
@@ -18885,28 +19085,6 @@
       "evidence_count": 1
     },
     {
-      "id": "739a4e6a4673e947",
-      "song_name": "相馬壁塗り甚句",
-      "event_name": "盆踊り大会",
-      "venue": "木場二丁目公園",
-      "area": "江東区",
-      "status": "未確認",
-      "confidence": "低",
-      "reasons": [
-        "song_suffix_near_context"
-      ],
-      "evidence": [
-        {
-          "source": "x_voice",
-          "url": "https://x.com/bon_odoroo/status/2053092202902114489",
-          "date": "2026-05-09T12:38:20+00:00",
-          "text": "おーすけ（おーちゃん）\nマロニエまつり盆踊り大会を訪ねました。名曲をたくさん踊れて楽しかったです。\n\n浅草橋音頭は神曲で振り付けも洒落てる。新浅草橋音頭は清水百恵さんの生歌で明るい雰囲気に。\n\n魅せられては柳北子さんの生歌で艶やかな雰囲気。市丸姐さんの曲や春駒ばやし、相馬壁塗り甚句なども渋くて良かったです。 https://t.co/2VYboVFWTU"
-        }
-      ],
-      "already_public": false,
-      "evidence_count": 1
-    },
-    {
       "id": "91586ddd544e7237",
       "song_name": "神田明神音頭",
       "event_name": "盆踊り大会",
@@ -19632,6 +19810,430 @@
       ],
       "already_public": false,
       "evidence_count": 1
+    },
+    {
+      "id": "2719fb8dba0547e6",
+      "song_name": "ご祝儀音頭",
+      "event_name": "新橋こいち祭",
+      "venue": "桜田公園",
+      "area": "港区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=XbffFJB9EIc",
+          "date": "2025-08-02T10:00:52Z",
+          "text": "和太鼓お祭りチャンネル\nご祝儀音頭　2025年「第28回新橋こいち祭」盆踊り1日目21　桜田会場第２部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms\n\n９東京音頭　https://youtu.be/u6ZeSKL"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "0a2e57cc2ac6111d",
+      "song_name": "ふるさと音頭",
+      "event_name": "新橋こいち祭",
+      "venue": "桜田公園",
+      "area": "港区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=tefDLHxFY4k",
+          "date": "2025-07-31T11:30:47Z",
+          "text": "和太鼓お祭りチャンネル\nふるさと音頭　2025年「第28回新橋こいち祭」盆踊り1日目16　桜田会場第２部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms\n\n９東京音頭　https://youtu.be/u6ZeSK"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=QCkFeK62XCw",
+          "date": "2025-07-24T15:19:07Z",
+          "text": "shu channel\n【第28回新橋こいち祭（盆踊り）】『ふるさと音頭～東京音頭～新橋音頭』[4/4]🏮Tokyo Bon Dance Festival👘2025.7.24 @新橋駅前・桜田会場～柳通り\n00:00 ふるさと音頭\n04:24 東京音頭\n07:45 新橋音頭\n\n■「第28回新橋こいち祭」公式サイト\nhttp://www.shinbashi.net/top/koichi/2025/greeting/"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 2
+    },
+    {
+      "id": "7b91dc88bda9ccdf",
+      "song_name": "ハワイ音頭",
+      "event_name": "新橋こいち祭",
+      "venue": "桜田公園",
+      "area": "港区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=ANKM84quG8U",
+          "date": "2025-08-05T10:00:28Z",
+          "text": "和太鼓お祭りチャンネル\n「ハワイ音頭」　2025年「第28回新橋こいち祭」盆踊り1日目31　柳通り第二部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms\n\n９東京音頭　https://youtu.be/u6ZeSK"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=OarFTYAJ28g",
+          "date": "2025-08-03T10:00:36Z",
+          "text": "和太鼓お祭りチャンネル\n「ハワイ音頭」　2025年「第28回新橋こいち祭」盆踊り1日目25　柳通り第二部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms\n\n９東京音頭　https://youtu.be/u6ZeSK"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=gNCUFtdxVlc",
+          "date": "2025-07-30T11:01:15Z",
+          "text": "和太鼓お祭りチャンネル\nハワイ音頭　2025年「第28回新橋こいち祭」盆踊り1日目11　柳通り第一部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms\n\n９東京音頭　https://youtu.be/u6ZeSKLp"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=6l25PR8Y1MI",
+          "date": "2025-07-29T12:00:13Z",
+          "text": "和太鼓お祭りチャンネル\nハワイ音頭　2025年「第28回新橋こいち祭」盆踊り1日目７　桜田会場第一部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=Q-oclZpyCbY",
+          "date": "2025-07-24T14:23:26Z",
+          "text": "shu channel\n【第28回新橋こいち祭（盆踊り）】『東京音頭～新橋音頭〜ハワイ音頭～炭坑節』[1/4]🏮Tokyo Bon Dance Festival👘2025.7.24 @新橋駅前・柳通り\n00:00 東京音頭\n03:19 新橋音頭\n07:39 ハワイ音頭\n11:48 炭坑節\n\n■「第28回新橋こいち祭」公式サイト\nhttp://www.shinbashi.net/top/koichi/2025/greeting/"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 5
+    },
+    {
+      "id": "f934366ae06a1bf1",
+      "song_name": "八木節",
+      "event_name": "新橋こいち祭",
+      "venue": "桜田公園",
+      "area": "港区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=vbMZmuUfJDo",
+          "date": "2025-07-24T15:18:59Z",
+          "text": "shu channel\n【第28回新橋こいち祭（盆踊り）】『火の国太鼓～チャンチキおけさ〜八木節』[3/4]🏮Tokyo Bon Dance Festival👘2025.7.24 @新橋駅前・桜田会場\n00:00 火の国太鼓\n03:07 チャンチキおけさ\n06:18 八木節\n\n■「第28回新橋こいち祭」公式サイト\nhttp://www.shinbashi.net/top/koichi/2025/greeting/"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "1a35632e102d3853",
+      "song_name": "新橋音頭",
+      "event_name": "新橋こいち祭",
+      "venue": "桜田公園",
+      "area": "港区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=wyFMV7_lC6Q",
+          "date": "2025-08-05T11:01:41Z",
+          "text": "和太鼓お祭りチャンネル\n新橋音頭　2025年「第28回新橋こいち祭」盆踊り1日目33終　柳通り第二部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms\n\n９東京音頭　https://youtu.be/u6ZeSKLp"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=XFLg0JdaksU",
+          "date": "2025-08-04T11:00:56Z",
+          "text": "和太鼓お祭りチャンネル\n新橋音頭　2025年「第28回新橋こいち祭」盆踊り1日目30　柳通り第二部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms\n\n９東京音頭　https://youtu.be/u6ZeSKLpP"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=2kiEs2J2Gok",
+          "date": "2025-08-02T11:30:06Z",
+          "text": "和太鼓お祭りチャンネル\n新橋音頭　2025年「第28回新橋こいち祭」盆踊り1日目24　柳通り第二部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms\n\n９東京音頭　https://youtu.be/u6ZeSKLpP"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=RTORl_omqQs",
+          "date": "2025-07-30T10:30:16Z",
+          "text": "和太鼓お祭りチャンネル\n新橋音頭　2025年「第28回新橋こいち祭」盆踊り1日目10　柳通り第一部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms\n\n９東京音頭　https://youtu.be/u6ZeSKLpP"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=arquGXJLUJU",
+          "date": "2025-07-28T15:00:04Z",
+          "text": "和太鼓お祭りチャンネル\n新橋音頭　2025年「第28回新橋こいち祭」盆踊り1日目４　桜田会場第一部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=QCkFeK62XCw",
+          "date": "2025-07-24T15:19:07Z",
+          "text": "shu channel\n【第28回新橋こいち祭（盆踊り）】『ふるさと音頭～東京音頭～新橋音頭』[4/4]🏮Tokyo Bon Dance Festival👘2025.7.24 @新橋駅前・桜田会場～柳通り\n00:00 ふるさと音頭\n04:24 東京音頭\n07:45 新橋音頭\n\n■「第28回新橋こいち祭」公式サイト\nhttp://www.shinbashi.net/top/koichi/2025/greeting/"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=Q-oclZpyCbY",
+          "date": "2025-07-24T14:23:26Z",
+          "text": "shu channel\n【第28回新橋こいち祭（盆踊り）】『東京音頭～新橋音頭〜ハワイ音頭～炭坑節』[1/4]🏮Tokyo Bon Dance Festival👘2025.7.24 @新橋駅前・柳通り\n00:00 東京音頭\n03:19 新橋音頭\n07:39 ハワイ音頭\n11:48 炭坑節\n\n■「第28回新橋こいち祭」公式サイト\nhttp://www.shinbashi.net/top/koichi/2025/greeting/"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 7
+    },
+    {
+      "id": "c93420a161d983b6",
+      "song_name": "新芝音頭",
+      "event_name": "新橋こいち祭",
+      "venue": "桜田公園",
+      "area": "港区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=2YaFM2zk9Ms",
+          "date": "2025-07-29T12:30:03Z",
+          "text": "和太鼓お祭りチャンネル\n新芝音頭　2025年「第28回新橋こいち祭」盆踊り1日目８　桜田会場第一部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms\n\n９東京音頭　https://youtu.be/u6ZeSKLpP"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "7ee920742af8fe45",
+      "song_name": "防災音頭",
+      "event_name": "新橋こいち祭",
+      "venue": "桜田公園",
+      "area": "港区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=mMFZ141KBqw",
+          "date": "2025-10-17T03:00:55Z",
+          "text": "和太鼓お祭りチャンネル\n新橋こいちまつり　東京音頭 #祭り #盆踊り #盆踊りのりんりん\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms\n\n９東京音頭　https://youtu.be/u6ZeSKLpPzc\n10新橋音頭　h"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=MpSKnXjihx4",
+          "date": "2025-10-16T07:30:22Z",
+          "text": "和太鼓お祭りチャンネル\n新橋こいちまつり　北海盆唄 #日本祭典 #祭り #こいち #盆踊りのりんりん #盆踊り\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms\n\n９東京音頭　https://youtu.be/u6ZeSKLpP"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=wyFMV7_lC6Q",
+          "date": "2025-08-05T11:01:41Z",
+          "text": "和太鼓お祭りチャンネル\n新橋音頭　2025年「第28回新橋こいち祭」盆踊り1日目33終　柳通り第二部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms\n\n９東京音頭　https://youtu.be/u6ZeSKLp"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=RkpEfxySkAs",
+          "date": "2025-08-05T10:30:16Z",
+          "text": "和太鼓お祭りチャンネル\n炭坑節　2025年「第28回新橋こいち祭」盆踊り1日目32　柳通り第二部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms\n\n９東京音頭　https://youtu.be/u6ZeSKLpPz"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=ANKM84quG8U",
+          "date": "2025-08-05T10:00:28Z",
+          "text": "和太鼓お祭りチャンネル\n「ハワイ音頭」　2025年「第28回新橋こいち祭」盆踊り1日目31　柳通り第二部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms\n\n９東京音頭　https://youtu.be/u6ZeSK"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=XFLg0JdaksU",
+          "date": "2025-08-04T11:00:56Z",
+          "text": "和太鼓お祭りチャンネル\n新橋音頭　2025年「第28回新橋こいち祭」盆踊り1日目30　柳通り第二部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms\n\n９東京音頭　https://youtu.be/u6ZeSKLpP"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=8UmSS-S78Mc",
+          "date": "2025-08-04T10:30:04Z",
+          "text": "和太鼓お祭りチャンネル\n東京音頭　2025年「第28回新橋こいち祭」盆踊り1日目29　柳通り第二部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms\n\n９東京音頭　https://youtu.be/u6ZeSKLpP"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=uOfbVnKWRfY",
+          "date": "2025-08-04T10:01:28Z",
+          "text": "和太鼓お祭りチャンネル\n【好きになった人】（都はるみ）　2025年「第28回新橋こいち祭」盆踊り1日目28　柳通り第二部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms\n\n９東京音頭　https://youtu.b"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=gtpIXYxORPA",
+          "date": "2025-08-03T11:01:07Z",
+          "text": "和太鼓お祭りチャンネル\n「炭坑節」　2025年「第28回新橋こいち祭」盆踊り1日目27　柳通り第二部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms\n\n９東京音頭　https://youtu.be/u6ZeSKLp"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=YKxapvG8rZ0",
+          "date": "2025-08-03T10:30:15Z",
+          "text": "和太鼓お祭りチャンネル\n「チャンチキおけさ」（三波春夫）　2025年「第28回新橋こいち祭」盆踊り1日目26　柳通り第二部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms\n\n９東京音頭　https://youtu."
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=OarFTYAJ28g",
+          "date": "2025-08-03T10:00:36Z",
+          "text": "和太鼓お祭りチャンネル\n「ハワイ音頭」　2025年「第28回新橋こいち祭」盆踊り1日目25　柳通り第二部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms\n\n９東京音頭　https://youtu.be/u6ZeSK"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=2kiEs2J2Gok",
+          "date": "2025-08-02T11:30:06Z",
+          "text": "和太鼓お祭りチャンネル\n新橋音頭　2025年「第28回新橋こいち祭」盆踊り1日目24　柳通り第二部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms\n\n９東京音頭　https://youtu.be/u6ZeSKLpP"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=D1rzTY7oFCQ",
+          "date": "2025-08-02T11:00:31Z",
+          "text": "和太鼓お祭りチャンネル\n東京音頭　2025年「第28回新橋こいち祭」盆踊り1日目23　柳通り第二部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms\n\n９東京音頭　https://youtu.be/u6ZeSKLpP"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=gFdRQJDMRxY",
+          "date": "2025-08-02T10:30:32Z",
+          "text": "和太鼓お祭りチャンネル\n【燃えろ日本の夏祭り】（橋幸夫）　2025年「第28回新橋こいち祭」盆踊り1日目22　桜田会場第２部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms\n\n９東京音頭　https://youtu"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=XbffFJB9EIc",
+          "date": "2025-08-02T10:00:52Z",
+          "text": "和太鼓お祭りチャンネル\nご祝儀音頭　2025年「第28回新橋こいち祭」盆踊り1日目21　桜田会場第２部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms\n\n９東京音頭　https://youtu.be/u6ZeSKL"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=ZZuPKoGK9p0",
+          "date": "2025-08-01T11:30:36Z",
+          "text": "和太鼓お祭りチャンネル\n一円玉の旅がらす　2025年「第28回新橋こいち祭」盆踊り1日目20　桜田会場第２部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms\n\n９東京音頭　https://youtu.be/u6Ze"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=jS9q1DLwIGY",
+          "date": "2025-08-01T11:01:16Z",
+          "text": "和太鼓お祭りチャンネル\n「好きになった人」（都はるみ）　2025年「第28回新橋こいち祭」盆踊り1日目19　桜田会場第２部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms\n\n９東京音頭　https://youtu."
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=1hMGKT4Bpiw",
+          "date": "2025-08-01T10:30:02Z",
+          "text": "和太鼓お祭りチャンネル\n【八木節】（4代目堀込源太）　2025年「第28回新橋こいち祭」盆踊り1日目18　桜田会場第２部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms\n\n９東京音頭　https://youtu.b"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=6BudhgFz734",
+          "date": "2025-08-01T10:00:15Z",
+          "text": "和太鼓お祭りチャンネル\n【チャンチキおけさ】（三波春夫）　2025年「第28回新橋こいち祭」盆踊り1日目17　桜田会場第２部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms\n\n９東京音頭　https://youtu"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=tefDLHxFY4k",
+          "date": "2025-07-31T11:30:47Z",
+          "text": "和太鼓お祭りチャンネル\nふるさと音頭　2025年「第28回新橋こいち祭」盆踊り1日目16　桜田会場第２部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms\n\n９東京音頭　https://youtu.be/u6ZeSK"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=OhXumZLdg54",
+          "date": "2025-07-31T11:00:42Z",
+          "text": "和太鼓お祭りチャンネル\n火の国太鼓　2025年「第28回新橋こいち祭」盆踊り1日目15　桜田会場第２部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms\n\n９東京音頭　https://youtu.be/u6ZeSKL"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=9TP04lkapKM",
+          "date": "2025-07-31T10:30:06Z",
+          "text": "和太鼓お祭りチャンネル\n【好きになった人】（都はるみ）　2025年「第28回新橋こいち祭」盆踊り1日目14　柳通り第一部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms\n\n９東京音頭　https://youtu.b"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=gPC4TOyj5u0",
+          "date": "2025-07-31T10:01:12Z",
+          "text": "和太鼓お祭りチャンネル\n炭坑節　2025年「第28回新橋こいち祭」盆踊り1日目13　柳通り第一部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms\n\n９東京音頭　https://youtu.be/u6ZeSKLpPz"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=12FspXoZjnM",
+          "date": "2025-07-30T11:30:02Z",
+          "text": "和太鼓お祭りチャンネル\nチャンチキおけさ　2025年「第28回新橋こいち祭」盆踊り1日目12　柳通り第一部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms\n\n９東京音頭　https://youtu.be/u6ZeS"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=gNCUFtdxVlc",
+          "date": "2025-07-30T11:01:15Z",
+          "text": "和太鼓お祭りチャンネル\nハワイ音頭　2025年「第28回新橋こいち祭」盆踊り1日目11　柳通り第一部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms\n\n９東京音頭　https://youtu.be/u6ZeSKLp"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=RTORl_omqQs",
+          "date": "2025-07-30T10:30:16Z",
+          "text": "和太鼓お祭りチャンネル\n新橋音頭　2025年「第28回新橋こいち祭」盆踊り1日目10　柳通り第一部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms\n\n９東京音頭　https://youtu.be/u6ZeSKLpP"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=u6ZeSKLpPzc",
+          "date": "2025-07-30T10:01:24Z",
+          "text": "和太鼓お祭りチャンネル\n東京音頭　2025年「第28回新橋こいち祭」盆踊り1日目９　柳通り第一部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms\n\n９東京音頭　https://youtu.be/u6ZeSKLpPz"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=2YaFM2zk9Ms",
+          "date": "2025-07-29T12:30:03Z",
+          "text": "和太鼓お祭りチャンネル\n新芝音頭　2025年「第28回新橋こいち祭」盆踊り1日目８　桜田会場第一部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms\n\n９東京音頭　https://youtu.be/u6ZeSKLpP"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=6l25PR8Y1MI",
+          "date": "2025-07-29T12:00:13Z",
+          "text": "和太鼓お祭りチャンネル\nハワイ音頭　2025年「第28回新橋こいち祭」盆踊り1日目７　桜田会場第一部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=-e-erZezdKQ",
+          "date": "2025-07-29T11:30:00Z",
+          "text": "和太鼓お祭りチャンネル\n【北海盆唄】　2025年「第28回新橋こいち祭」盆踊り1日目６　桜田会場第一部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=qHFe5yIS1fU",
+          "date": "2025-07-29T11:01:32Z",
+          "text": "和太鼓お祭りチャンネル\n炭坑節　2025年「第28回新橋こいち祭」盆踊り1日目５　桜田会場第一部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=arquGXJLUJU",
+          "date": "2025-07-28T15:00:04Z",
+          "text": "和太鼓お祭りチャンネル\n新橋音頭　2025年「第28回新橋こいち祭」盆踊り1日目４　桜田会場第一部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=qeq2m7KDot0",
+          "date": "2025-07-28T14:45:07Z",
+          "text": "和太鼓お祭りチャンネル\n【大東京音頭】（金沢明子）　2025年「第28回新橋こいち祭」盆踊り1日目３　桜田会場第一部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=XNKMBMHx0Rc",
+          "date": "2025-07-28T14:30:33Z",
+          "text": "和太鼓お祭りチャンネル\n東京音頭　2025年「第28回新橋こいち祭」盆踊り1日目２　桜田会場第一部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=3UGlRoxJnKA",
+          "date": "2025-07-28T14:15:00Z",
+          "text": "和太鼓お祭りチャンネル\n防災音頭　2025年「第28回新橋こいち祭」盆踊り1日目１　桜田会場第一部　東京都港区\n2025年7月24日に行われました、\n「新橋こいち祭り」盆踊りの様子です。\n\n\n\n新橋こいちまつり\n１防災音頭　https://youtu.be/3UGlRoxJnKA\n２東京音頭　https://youtu.be/XNKMBMHx0Rc\n３大東京音頭　https://youtu.be/qeq2m7KDot0\n４新橋音頭　https://youtu.be/arquGXJLUJU\n５炭坑節　https://youtu.be/qHFe5yIS1fU\n６北海盆唄　https://youtu.be/-e-erZezdKQ\n７ハワイ音頭　https://youtu.be/6l25PR8Y1MI\n８新芝音頭　https://youtu.be/2YaFM2zk9Ms"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 35
     },
     {
       "id": "5c77b5ccb21e93d6",

@@ -1,23 +1,23 @@
 {
   "generated_by": "build_retrospective_harvest.py",
-  "generated_at": "2026-06-23T05:41:15.520531+00:00",
+  "generated_at": "2026-06-23T07:07:01.586281+00:00",
   "source": "data/voices.json",
-  "voice_count": 7975,
-  "classified_event_evidence_count": 1507,
-  "candidate_count": 1491,
+  "voice_count": 8012,
+  "classified_event_evidence_count": 1510,
+  "candidate_count": 1497,
   "counts": {
     "by_kind": {
-      "event": 567,
-      "song": 749,
-      "venue": 175
+      "event": 570,
+      "song": 750,
+      "venue": 177
     },
     "by_tier": {
       "hold": 287,
       "promote": 322,
-      "review": 882
+      "review": 888
     },
-    "suppressed_event_hint_count": 124,
-    "venue_month_grouped_count": 228
+    "suppressed_event_hint_count": 126,
+    "venue_month_grouped_count": 232
   },
   "candidates": [
     {
@@ -12922,6 +12922,57 @@
     },
     {
       "kind": "event",
+      "candidate_key": "event:c0613567ceffbde8bb1c98cc0d4a63ec6d6ec5fcc016d9f0bd60c8e5943154ac",
+      "display_name": "ええじゃないか盆踊り",
+      "normalized_event": "ええじゃないか",
+      "venue": "",
+      "venue_key": "",
+      "month": "08",
+      "estimated_date": "8月11日",
+      "year": 2026,
+      "hashtags": [],
+      "score": 33,
+      "tier": "review",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:2069299088185868690",
+          "tweet_id": "2069299088185868690",
+          "url": "https://x.com/hakuko_yokohama/status/2069299088185868690",
+          "text": "行くぞ！武道館🧅\n8月11日山の日㊗️ 爆風スランプ 35年ぶりの武道館🧅コンサートやります！チケット大好評発売中🎟.·\nいい席はお早めに！\nこちらのMVがまたいいのよ😆\n\n爆風スランプ 「よしおと爆風の、ええじゃないか盆踊り～武道館で編」Official Music Video https://t.co/QHDNxRYw0k @YouTubeより",
+          "account": "@hakuko_yokohama",
+          "dancer_key": "@hakuko_yokohama",
+          "spoken_at": "2026-06-23T05:58:42+00:00",
+          "observed_at": "2026-06-23T05:58:42+00:00",
+          "patterns": [
+            "A"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊"
+          ],
+          "source_score": 13,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3"
+          ],
+          "estimated_event": "ええじゃないか盆踊り",
+          "normalized_event": "ええじゃないか",
+          "estimated_venue": "",
+          "time_hints": [
+            "8月11日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
       "candidate_key": "event:d524194314e925039acc38a46cc8ef5edd5280c755dc97c01699b96521952c1b",
       "display_name": "おやまの盆踊り",
       "normalized_event": "おやま",
@@ -16258,6 +16309,60 @@
             "8/5",
             "8/7",
             "8/8"
+          ],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "candidate_key": "event:dbd68184c7df39e9c433f3640adf9cb8ad1936da9cd78eaeb38331d87a37dab4",
+      "display_name": "大宮まつり",
+      "normalized_event": "大宮",
+      "venue": "奈良市立大宮小学校",
+      "venue_key": "a7dc397ac15604bf1ac204b9caeedbd7eed64ec2fb9aefcb4bfb49d5e17daeca",
+      "month": "08",
+      "estimated_date": "2026年8月1日",
+      "year": 2026,
+      "hashtags": [],
+      "score": 33,
+      "tier": "review",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:2069301544886186095",
+          "tweet_id": "2069301544886186095",
+          "url": "https://x.com/skylanternassoc/status/2069301544886186095",
+          "text": "日本スカイランタン協会®です！😊\n\n2026年8月1日（土）奈良県奈良市 奈良市立大宮小学校「第34回 大宮まつり」（主催：第34回 大宮まつり実行委員会）が開催されます🎊\n日暮れ後の19:00にはスカイランタン＆盆踊りが行われます❗\n\n大宮の「こどもみこし」が復活し、飾りづくりから巡行まで子どもたちが主役になれる参加型のおまつりです。ウォーターイベント、みんなのステージ、ビンゴゲーム大会、キャンドルナイト、ゲーム、グルメ、マルシェ、キッチンカーなど、昼から夜まで楽しめる内容が盛りだくさん。夜にはスカイランタンと盆踊りが重なり、会場全体があたたかな光に包まれます。\n\nご家族やご友人、大切な人と一緒に、夏の思い出をつくりに出かけませんか？👨‍👨‍👦‍👦✨ 子どもたちの笑顔、夜空に浮かぶ光、みんなで過ごす時間が、きっと心に残る一日になります🌙\n\n［詳細・お問い合わせ先］\n第34回 大宮まつり実行委員会\nhttps://t.co/zH4ZRIqJU9\n\n🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟\n\n［当日のスケジュール］\n2026年8月1日（土）\n14:00 開会式・各店舗営業開始\n15:00 ウォーターイベン",
+          "account": "@skylanternassoc",
+          "dancer_key": "@skylanternassoc",
+          "spoken_at": "2026-06-23T06:08:28+00:00",
+          "observed_at": "2026-06-23T06:08:28+00:00",
+          "patterns": [
+            "B",
+            "D"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊"
+          ],
+          "source_score": 17,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "song_or_group:+2",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "大宮まつり",
+          "normalized_event": "大宮",
+          "estimated_venue": "奈良市立大宮小学校",
+          "time_hints": [
+            "2026年8月1日"
           ],
           "year_signals": [],
           "year": 2026
@@ -26715,6 +26820,63 @@
           "time_hints": [],
           "year_signals": [],
           "year": 2024
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "candidate_key": "event:9dbf33fb61f673e400c9278b76eedd188c3799c0235e793ee00c90afd1586877",
+      "display_name": "球技広場の盆踊り（名称未確定）",
+      "normalized_event": "",
+      "venue": "球技広場",
+      "venue_key": "e9fc0c506670d3a06090b8cea73888db19191f50919e841117e94da32ab79ed5",
+      "month": "09",
+      "estimated_date": "2026年9月5日",
+      "year": 2026,
+      "hashtags": [
+        "深北緑地",
+        "納涼盆踊り",
+        "菊乃家"
+      ],
+      "score": 25,
+      "tier": "review",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [
+        "納涼盆踊り"
+      ],
+      "evidence": [
+        {
+          "identity": "evidence:2069306127205200316",
+          "tweet_id": "2069306127205200316",
+          "url": "https://x.com/eetoko_park/status/2069306127205200316",
+          "text": "第２回　深北緑地　納涼盆踊り開催決定‼\n日程：2026年9月5日(土)\n時間：18:00～21:00\n会場：深北緑地　球技広場\n出演：月乃家　菊若会\n※雨天中止\nイベントの詳細が決まり次第、お知らせいたします。\n内容が確定していない為、時間が前後する可能性がございます。\n#深北緑地\n#納涼盆踊り\n#菊乃家 https://t.co/xXZrOSJyUz",
+          "account": "@eetoko_park",
+          "dancer_key": "@eetoko_park",
+          "spoken_at": "2026-06-23T06:26:41+00:00",
+          "observed_at": "2026-06-23T06:26:41+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊"
+          ],
+          "source_score": 11,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "",
+          "normalized_event": "",
+          "estimated_venue": "球技広場",
+          "time_hints": [
+            "2026年9月5日"
+          ],
+          "year_signals": [],
+          "year": 2026
         }
       ]
     },
@@ -46669,6 +46831,23 @@
       "evidence": [
         {
           "identity": "",
+          "tweet_id": "1954047554079142382",
+          "url": "https://x.com/AmateurTrip/status/1954047554079142382",
+          "text": "令和七年・神田明神納涼祭り『アニソン盆踊り』8月8日-10日まで #ダンシングヒーロー #神田明神納涼祭り #お祭り男 #盆踊り https://t.co/1U8Yus6cXU",
+          "account": "@AmateurTrip",
+          "dancer_key": "@amateurtrip",
+          "observed_at": "2025-08-09T05:10:15+00:00",
+          "score": 0,
+          "song_name": "ダンシングヒーロー",
+          "reasons": [
+            "known_song_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        },
+        {
+          "identity": "",
           "tweet_id": "2069267430715834690",
           "url": "https://x.com/Tdkig5555/status/2069267430715834690",
           "text": "@saibabadayo 🤣🤣🤣爆笑 盆ジョビとダンシングヒーローでカンベンしてください😂😂 あーでも、アニソン盆踊りもなんか激しそうなイメージ（サイリウム振り回すイメージ）※あくまでも個人のイメージです。ホンモノは知らん笑",
@@ -48372,8 +48551,8 @@
         "known_song_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 100,
-      "speaker_count": 15
+      "evidence_count": 101,
+      "speaker_count": 16
     },
     {
       "kind": "song",
@@ -147373,6 +147552,45 @@
     },
     {
       "kind": "song",
+      "candidate_key": "song:112f114a2425b67b9db24a5cf7abb9fff93ff92a05ec89fdada93134d9a7db26",
+      "display_name": "ナニャドヤラの踊り",
+      "normalized_event": "",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": "",
+      "hashtags": [],
+      "score": 30,
+      "tier": "review",
+      "evidence": [
+        {
+          "identity": "",
+          "tweet_id": "2069312277279567949",
+          "url": "https://x.com/Commet220Tomcat/status/2069312277279567949",
+          "text": "先日キリスト祭見てきたけど ナニャドヤラの踊り覚えられなかった いわゆる盆踊り風なんだけど 考えないとコピーできない #ゴゴナビ",
+          "account": "@Commet220Tomcat",
+          "dancer_key": "@commet220tomcat",
+          "observed_at": "2026-06-23T06:51:07+00:00",
+          "score": 0,
+          "song_name": "ナニャドヤラの踊り",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        }
+      ],
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 1,
+      "speaker_count": 1
+    },
+    {
+      "kind": "song",
       "candidate_key": "song:e9a7e1177a29059e7839f1cfc57df19c166115a0152f5d77c364e961ba0080f9",
       "display_name": "ネトウヨ音頭",
       "normalized_event": "",
@@ -164275,6 +164493,40 @@
     },
     {
       "kind": "venue",
+      "candidate_key": "venue:7f0934aa012778ef32e17bc0e5b98e04bf6c62d24472e0aaff7c8733ec5f5375",
+      "display_name": "奈良市立大宮小学校",
+      "normalized_event": "",
+      "venue": "奈良市立大宮小学校",
+      "venue_key": "a7dc397ac15604bf1ac204b9caeedbd7eed64ec2fb9aefcb4bfb49d5e17daeca",
+      "month": "08",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 35,
+      "tier": "review",
+      "evidence": [
+        {
+          "identity": "evidence:2069301544886186095",
+          "tweet_id": "2069301544886186095",
+          "url": "https://x.com/skylanternassoc/status/2069301544886186095",
+          "text": "日本スカイランタン協会®です！😊 2026年8月1日（土）奈良県奈良市 奈良市立大宮小学校「第34回 大宮まつり」（主催：第34回 大宮まつり実行委員会）が開催されます🎊 日暮れ後の19:00にはスカイランタン＆盆踊りが行われます❗ 大宮の「こどもみこし」が復活し、飾りづくりから巡行まで子どもたちが主役になれる参加型のおまつりです。ウォーターイベント、みんなのステージ、ビンゴゲーム大会、キャンドルナイト、ゲーム、グルメ、マルシェ、キッチンカーなど、昼から夜まで楽しめる内容が盛りだくさん。夜にはスカイランタンと盆踊りが重なり、会場全体があたたかな光に包まれます。 ご家族やご友人、大切な人と一緒に、夏の思い出をつくりに出かけませんか？👨‍👨‍👦‍👦✨ 子どもたちの笑顔、夜空に浮かぶ光、みんなで過ごす時間が、きっと心に残る一日になります🌙 ［詳細・お問い合わせ先］ 第34回 大宮まつり実行委員会 https://t.co/zH4ZRIqJU9 🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟 ［当日のスケジュール］ 2026年8月1日（土） 14:00 開会式・各店舗営業開始 15:00 ウォーターイベン",
+          "account": "@skylanternassoc",
+          "dancer_key": "@skylanternassoc",
+          "observed_at": "2026-06-23T06:08:28+00:00",
+          "score": 17,
+          "estimated_event": "大宮まつり",
+          "estimated_venue": "奈良市立大宮小学校",
+          "time_hints": [
+            "2026年8月1日"
+          ]
+        }
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 1,
+      "speaker_count": 1
+    },
+    {
+      "kind": "venue",
       "candidate_key": "venue:7bf34ffc08d1f5ca357b932c4492e89c2077bc33b08daccf21a3b62cf8d9b4ea",
       "display_name": "小網神社",
       "normalized_event": "",
@@ -164819,6 +165071,42 @@
         }
       ],
       "suppressed_event_hints": [],
+      "evidence_count": 1,
+      "speaker_count": 1
+    },
+    {
+      "kind": "venue",
+      "candidate_key": "venue:3988f56f02e4dcf95f22727e7f4c38809e60767f2a426418fb3931088163a27d",
+      "display_name": "球技広場",
+      "normalized_event": "",
+      "venue": "球技広場",
+      "venue_key": "e9fc0c506670d3a06090b8cea73888db19191f50919e841117e94da32ab79ed5",
+      "month": "09",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 35,
+      "tier": "review",
+      "evidence": [
+        {
+          "identity": "evidence:2069306127205200316",
+          "tweet_id": "2069306127205200316",
+          "url": "https://x.com/eetoko_park/status/2069306127205200316",
+          "text": "第２回 深北緑地 納涼盆踊り開催決定‼ 日程：2026年9月5日(土) 時間：18:00～21:00 会場：深北緑地 球技広場 出演：月乃家 菊若会 ※雨天中止 イベントの詳細が決まり次第、お知らせいたします。 内容が確定していない為、時間が前後する可能性がございます。 #深北緑地 #納涼盆踊り #菊乃家 https://t.co/xXZrOSJyUz",
+          "account": "@eetoko_park",
+          "dancer_key": "@eetoko_park",
+          "observed_at": "2026-06-23T06:26:41+00:00",
+          "score": 11,
+          "estimated_event": "",
+          "estimated_venue": "球技広場",
+          "time_hints": [
+            "2026年9月5日"
+          ]
+        }
+      ],
+      "suppressed_event_hints": [
+        "納涼盆踊り"
+      ],
       "evidence_count": 1,
       "speaker_count": 1
     },
