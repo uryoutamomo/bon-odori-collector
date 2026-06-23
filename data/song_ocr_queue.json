@@ -1,6 +1,6 @@
 {
   "generated_by": "build_song_ocr_queue.py",
-  "count": 6,
+  "count": 7,
   "items": [
     {
       "id": "b21783a2a9785946",
@@ -92,6 +92,22 @@
         "https://pbs.twimg.com/media/HLZHFWXbsAAO7Rh.jpg"
       ],
       "text": "長崎にも届きました♪なんとステキなデザイン！曲目もたっぷり！竜宮城のような、東京での盆踊り三昧の日々を思い出す。\n一度目よりも二度目、二度目よりも三度目…聴けば聴くほど「うわぁ♡いいなぁ🍋」ってなる！前作「ひなのいえづと」同様これもヘビロテ確定だ✨\n#夜明け烏の渡るまで #中西レモン https://t.co/NMrzu6lJam",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "d5b1f372dfe64679",
+      "status": "needs_ocr",
+      "account": "@2tsuo_g",
+      "url": "https://x.com/2tsuo_g/status/2069330493456433478",
+      "tweet_id": "2069330493456433478",
+      "date": "2026-06-23T08:03:30+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HLe9HOEawAATHba.jpg",
+        "https://t.co/oWLAUYE9IN",
+        "pic.twitter.com/oWLAUYE9IN",
+        "https://pbs.twimg.com/media/HLe9HOCboAAnmaG.jpg"
+      ],
+      "text": "82件目 上赤塚町会盆踊り 練習会\n(6/22)月曜日は踊りがないと言ったアレは嘘、練習会ありましたw\n遅れて参加したので「成増音頭」は踊れなかったけどCD貰えました💿\n曲目にない「南の島のハメハメハ大王」も楽しく可愛く踊ってきました🌴🌺 https://t.co/oWLAUYE9IN",
       "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
     }
   ]
