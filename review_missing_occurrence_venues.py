@@ -12,7 +12,7 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
-from master_db import MASTER_DB, normalize_text
+from master_db import MASTER_DB, connect_existing, normalize_text
 
 
 DATA = Path("data")
@@ -233,7 +233,7 @@ def build(args):
     decisions = load_json(args.decisions_json, {})
     queue_index = queue_by_occurrence(queue)
     decision_index = decisions_by_event(decisions)
-    with sqlite3.connect(args.master_db) as conn:
+    with connect_existing(args.master_db) as conn:
         occurrences = rows(
             conn,
             """

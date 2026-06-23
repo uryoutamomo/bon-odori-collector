@@ -13,7 +13,7 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
-from master_db import MASTER_DB, normalize_text, refresh_manifest_database_state, table_counts
+from master_db import MASTER_DB, connect_existing, normalize_text, refresh_manifest_database_state, table_counts
 
 
 DATA = Path("data")
@@ -367,7 +367,7 @@ def run(args):
     else:
         copy_db(args.master_db, args.out_db)
 
-    with sqlite3.connect(target_db) as conn:
+    with connect_existing(target_db) as conn:
         conn.execute("PRAGMA foreign_keys = ON")
         before, after, pre_issues = apply_merge(conn, now)
         issues = pre_issues + consistency_checks(conn)

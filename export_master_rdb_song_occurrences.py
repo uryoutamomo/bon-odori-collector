@@ -8,7 +8,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from build_master_rdb import song_role
-from master_db import MASTER_DB, json_text, normalize_text, stable_id
+from master_db import MASTER_DB, connect_existing, json_text, normalize_text, stable_id
 
 
 DATA = Path("data")
@@ -52,7 +52,7 @@ def public_probability(value):
 
 
 def export_rows(args):
-    with sqlite3.connect(args.db) as conn:
+    with connect_existing(args.db) as conn:
         conn.row_factory = sqlite3.Row
         rows = conn.execute(
             """
@@ -189,7 +189,7 @@ def source_observed_song_ids(source):
 
 
 def sqlite_observed_song_ids(db_path):
-    with sqlite3.connect(db_path) as conn:
+    with connect_existing(db_path) as conn:
         return Counter(
             row[0]
             for row in conn.execute("SELECT observed_occurrence_song_id FROM observed_occurrence_songs")

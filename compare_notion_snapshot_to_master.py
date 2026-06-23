@@ -15,7 +15,7 @@ from pathlib import Path
 
 from build_master_rdb import date_status, lifecycle_status, parse_months, parse_year
 from event_series_normalization import series_event_name
-from master_db import MASTER_DB
+from master_db import MASTER_DB, connect_existing
 
 
 DATA = Path("data")
@@ -256,7 +256,7 @@ def compare_events(master_conn):
 
 
 def build_report(master_db, notion_db):
-    with sqlite3.connect(master_db) as master_conn:
+    with connect_existing(master_db) as master_conn:
         master_conn.execute("ATTACH DATABASE ? AS notion", (str(notion_db),))
         diffs = []
         diffs.extend(compare_venues(master_conn))

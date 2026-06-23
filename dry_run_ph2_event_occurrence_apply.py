@@ -16,7 +16,7 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
-from master_db import MASTER_DB, stable_id
+from master_db import MASTER_DB, connect_existing, stable_id
 
 
 DATA = Path("data")
@@ -373,7 +373,7 @@ def run(args):
     applied = []
     committed = False
     rolled_back = False
-    with sqlite3.connect(target_db) as conn:
+    with connect_existing(target_db) as conn:
         conn.execute("PRAGMA foreign_keys = ON")
         for mutation in selected:
             applied.append(apply_mutation(conn, mutation, now))

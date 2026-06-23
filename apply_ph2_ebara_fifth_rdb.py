@@ -29,7 +29,7 @@ from build_ph2_ebara_fifth_venue_plan import (
     NEW_VENUE_NAME,
     SOURCE_URL,
 )
-from master_db import MASTER_DB, normalize_text, refresh_manifest_database_state, stable_id, table_counts
+from master_db import MASTER_DB, connect_existing, normalize_text, refresh_manifest_database_state, stable_id, table_counts
 
 
 DATA = Path("data")
@@ -402,7 +402,7 @@ def run(args):
         # issues before the source DB is opened for a write transaction.
         preflight_db = DATA / "ph2_ebara_fifth_apply_preflight.sqlite"
         copy_db(args.master_db, preflight_db)
-        with sqlite3.connect(preflight_db) as conn:
+        with connect_existing(preflight_db) as conn:
             conn.execute("PRAGMA foreign_keys = ON")
             preflight_applied = apply_change(conn, now)
             preflight_issues = consistency_checks(conn, preflight_applied)
@@ -420,7 +420,7 @@ def run(args):
 
     committed = False
     rolled_back = False
-    with sqlite3.connect(target_db) as conn:
+    with connect_existing(target_db) as conn:
         conn.execute("PRAGMA foreign_keys = ON")
         applied = apply_change(conn, now)
         issues = consistency_checks(conn, applied)

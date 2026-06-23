@@ -13,7 +13,7 @@ from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
-from master_db import MASTER_DB, MASTER_MANIFEST, file_sha256, normalize_text, stable_id, table_counts
+from master_db import MASTER_DB, MASTER_MANIFEST, connect_existing, file_sha256, normalize_text, stable_id, table_counts
 
 
 DATA = Path("data")
@@ -51,7 +51,7 @@ def write_json(path, data):
 
 
 def rows(db_path, query, params=()):
-    with sqlite3.connect(db_path) as conn:
+    with connect_existing(db_path) as conn:
         conn.row_factory = sqlite3.Row
         return [dict(row) for row in conn.execute(query, params)]
 
@@ -345,7 +345,7 @@ def build_queue(notion_db, master_db, observed_candidates_path):
 
 def write_tasks_to_master(master_db, queue):
     now = datetime.now(timezone.utc).isoformat()
-    with sqlite3.connect(master_db) as conn:
+    with connect_existing(master_db) as conn:
         conn.execute("PRAGMA foreign_keys = ON")
         conn.execute("DELETE FROM event_investigation_tasks")
         for item in queue:
@@ -389,7 +389,7 @@ def refresh_manifest(master_db, manifest_path, queue_output_path):
     if not manifest_path.exists():
         return
     manifest = load_json(manifest_path, {})
-    with sqlite3.connect(master_db) as conn:
+    with connect_existing(master_db) as conn:
         manifest["table_counts"] = table_counts(conn)
     manifest["database_checksum"] = file_sha256(master_db)
     manifest.setdefault("post_build_outputs", {})

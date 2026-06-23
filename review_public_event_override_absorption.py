@@ -13,7 +13,7 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
-from master_db import MASTER_DB
+from master_db import MASTER_DB, connect_existing
 
 
 DATA = Path("data")
@@ -214,7 +214,7 @@ def build(args):
     overrides = load_json(args.overrides_json, {})
     public_events = load_json(args.public_events_json, [])
     review = []
-    with sqlite3.connect(args.master_db) as conn:
+    with connect_existing(args.master_db) as conn:
         for rule in overrides.get("overrides") or []:
             match = rule.get("match") or {}
             name = match.get("name") or ""

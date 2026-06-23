@@ -23,7 +23,7 @@ from build_observed_promotion_candidates import (
     occurrence_by_id,
     write_json,
 )
-from master_db import MASTER_DB, MASTER_MANIFEST, file_sha256, stable_id, table_counts
+from master_db import MASTER_DB, MASTER_MANIFEST, connect_existing, file_sha256, stable_id, table_counts
 
 
 DATA = Path("data")
@@ -47,7 +47,7 @@ DATE_RULE_TYPES = {
 
 
 def rows(db_path, query, params=()):
-    with sqlite3.connect(db_path) as conn:
+    with connect_existing(db_path) as conn:
         conn.row_factory = sqlite3.Row
         return [dict(row) for row in conn.execute(query, params)]
 
@@ -500,7 +500,7 @@ def refresh_manifest(master_db, manifest_path, output_path):
     if not manifest_path.exists():
         return
     manifest = load_json(manifest_path, {})
-    with sqlite3.connect(master_db) as conn:
+    with connect_existing(master_db) as conn:
         manifest["table_counts"] = table_counts(conn)
     manifest["database_checksum"] = file_sha256(master_db)
     manifest.setdefault("post_build_outputs", {})

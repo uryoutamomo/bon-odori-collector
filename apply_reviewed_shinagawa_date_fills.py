@@ -12,7 +12,7 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
-from master_db import MASTER_DB, refresh_manifest_database_state, stable_id, table_counts
+from master_db import MASTER_DB, connect_existing, refresh_manifest_database_state, stable_id, table_counts
 
 
 DATA = Path("data")
@@ -263,7 +263,7 @@ def run(args):
     else:
         copy_db(args.master_db, args.out_db)
 
-    with sqlite3.connect(target_db) as conn:
+    with connect_existing(target_db) as conn:
         conn.execute("PRAGMA foreign_keys = ON")
         planned, skipped = build_plan(conn)
         applied = apply_plan(conn, planned, now)

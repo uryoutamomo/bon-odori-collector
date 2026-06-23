@@ -12,7 +12,7 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
-from master_db import MASTER_DB
+from master_db import MASTER_DB, connect_existing
 
 
 DATA = Path("data")
@@ -175,7 +175,7 @@ def classify(conn, occurrence):
 
 
 def build(args):
-    with sqlite3.connect(args.master_db) as conn:
+    with connect_existing(args.master_db) as conn:
         occurrences = rows(
             conn,
             """
