@@ -87,11 +87,8 @@ jobs:
         NOTION_API_TOKEN: ${{ secrets.NOTION_API_TOKEN }}
       run: python promote_event_dates.py --apply
 
-    - name: Refresh public event export
-      env:
-        NOTION_API_TOKEN: ${{ secrets.NOTION_API_TOKEN }}
+    - name: Refresh public event export from master RDB
       run: |
-        python sync_venue_master.py
         python export_public_events.py
         if python master_rdb_freeze_policy.py is-frozen legacy_song_occurrence_generation; then
           echo "[master-rdb] legacy song occurrence generation frozen: skip build_song_occurrences.py"

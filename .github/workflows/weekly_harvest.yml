@@ -30,6 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      id-token: write
 
     env:
       HARVEST_DAYS: ${{ inputs.days || '7' }}
@@ -49,11 +50,23 @@ jobs:
     - name: Install dependencies
       run: pip install -r requirements.txt
 
-    - name: Sync venue master and public events
+    - name: Configure AWS credentials
+      if: ${{ vars.AWS_ROLE_ARN != '' }}
+      uses: aws-actions/configure-aws-credentials@v6
+      with:
+        role-to-assume: ${{ vars.AWS_ROLE_ARN }}
+        aws-region: ap-northeast-1
+
+    - name: Fetch master RDB artifact
+      if: ${{ vars.MASTER_DB_S3_BUCKET != '' }}
       env:
-        NOTION_API_TOKEN: ${{ secrets.NOTION_API_TOKEN }}
+        MASTER_DB_S3_BUCKET: ${{ vars.MASTER_DB_S3_BUCKET }}
+        MASTER_DB_S3_PREFIX: ${{ vars.MASTER_DB_S3_PREFIX || 'master-rdb' }}
+        AWS_REGION: ap-northeast-1
+      run: python master_db_s3_artifact.py fetch --overwrite
+
+    - name: Refresh public events from master RDB
       run: |
-        python sync_venue_master.py
         python export_public_events.py
         if python master_rdb_freeze_policy.py is-frozen legacy_song_occurrence_generation; then
           echo "[master-rdb] legacy song occurrence generation frozen: skip build_song_occurrences.py"
