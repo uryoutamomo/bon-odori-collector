@@ -41,6 +41,14 @@ jobs:
         role-to-assume: ${{ vars.AWS_ROLE_ARN }}
         aws-region: ap-northeast-1
 
+    - name: Fetch master RDB artifact
+      if: ${{ vars.MASTER_DB_S3_BUCKET != '' }}
+      env:
+        MASTER_DB_S3_BUCKET: ${{ vars.MASTER_DB_S3_BUCKET }}
+        MASTER_DB_S3_PREFIX: ${{ vars.MASTER_DB_S3_PREFIX || 'master-rdb' }}
+        AWS_REGION: ap-northeast-1
+      run: python master_db_s3_artifact.py fetch --overwrite
+
     - name: Sync venue master (Notion DB -> JSON)
       env:
         NOTION_API_TOKEN: ${{ secrets.NOTION_API_TOKEN }}
