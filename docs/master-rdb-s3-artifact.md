@@ -56,7 +56,7 @@ workflow variable:
 
 ```bash
 aws cloudformation deploy \
-  --stack-name bon-odori-collector-queue \
+  --stack-name bon-odori-dynamodb \
   --template-file infra/dynamodb-queue.yml \
   --capabilities CAPABILITY_NAMED_IAM
 ```
@@ -65,7 +65,7 @@ If the default bucket name is unavailable, pass a globally unique name:
 
 ```bash
 aws cloudformation deploy \
-  --stack-name bon-odori-collector-queue \
+  --stack-name bon-odori-dynamodb \
   --template-file infra/dynamodb-queue.yml \
   --capabilities CAPABILITY_NAMED_IAM \
   --parameter-overrides MasterRdbBucketName=<unique-bucket-name>

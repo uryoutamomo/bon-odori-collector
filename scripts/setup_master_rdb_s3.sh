@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-STACK_NAME="${STACK_NAME:-bon-odori-collector-queue}"
+STACK_NAME="${STACK_NAME:-bon-odori-dynamodb}"
 REGION="${AWS_REGION:-ap-northeast-1}"
 BUCKET_NAME="${MASTER_DB_S3_BUCKET:-bon-odori-master-rdb-169805602203}"
 PREFIX="${MASTER_DB_S3_PREFIX:-master-rdb}"

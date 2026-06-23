@@ -115,18 +115,6 @@ Resources:
           - ObjectOwnership: BucketOwnerEnforced
       VersioningConfiguration:
         Status: Enabled
-      LifecycleConfiguration:
-        Rules:
-          - Id: ExpireNoncurrentLatestVersions
-            Status: Enabled
-            NoncurrentVersionExpiration:
-              NoncurrentDays: 90
-            Filter:
-              Prefix: !Sub "${MasterRdbPrefix}/latest/"
-          - Id: AbortIncompleteMultipartUploads
-            Status: Enabled
-            AbortIncompleteMultipartUpload:
-              DaysAfterInitiation: 7
       Tags:
         - Key: Project
           Value: bon-odori-collector
