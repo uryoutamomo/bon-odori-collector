@@ -49,16 +49,6 @@ jobs:
         AWS_REGION: ap-northeast-1
       run: python master_db_s3_artifact.py fetch --overwrite
 
-    - name: Sync venue master (Notion DB -> JSON)
-      env:
-        NOTION_API_TOKEN: ${{ secrets.NOTION_API_TOKEN }}
-      run: python sync_venue_master.py
-
-    - name: Audit canonical event database
-      env:
-        NOTION_API_TOKEN: ${{ secrets.NOTION_API_TOKEN }}
-      run: python event_audit.py --fail-on-duplicates
-
     - name: Build glossary runtime
       env:
         NOTION_API_TOKEN: ${{ secrets.NOTION_API_TOKEN }}
@@ -67,7 +57,6 @@ jobs:
     - name: Run collector
       env:
         NOTION_API_TOKEN: ${{ secrets.NOTION_API_TOKEN }}
-        NOTION_PAGE_ID: ${{ secrets.NOTION_PAGE_ID }}
         # X(twitterapi.io)収集用。未設定でも collect.py 側で fail-safe スキップする
         TWITTERAPI_IO_KEY: ${{ secrets.TWITTERAPI_IO_KEY }}
         # 📖 盆踊ラー用語集 DB（速報・確度シグナル検知に使用）。未設定でも fail-safe スキップ
@@ -75,17 +64,12 @@ jobs:
         AWS_REGION: ap-northeast-1
         DYNAMODB_QUEUE_TABLE: ${{ vars.DYNAMODB_QUEUE_TABLE }}
         EVENT_CANDIDATE_QUEUE_TABLE: ${{ vars.EVENT_CANDIDATE_QUEUE_TABLE }}
-        QUEUE_STORAGE_MODE: ${{ vars.QUEUE_STORAGE_MODE || 'notion' }}
-        EVENT_QUEUE_STORAGE_MODE: ${{ vars.EVENT_QUEUE_STORAGE_MODE || vars.QUEUE_STORAGE_MODE || 'notion' }}
+        QUEUE_STORAGE_MODE: ${{ vars.QUEUE_STORAGE_MODE || 'dynamodb' }}
+        EVENT_QUEUE_STORAGE_MODE: ${{ vars.EVENT_QUEUE_STORAGE_MODE || vars.QUEUE_STORAGE_MODE || 'dynamodb' }}
       run: python collect.py
 
     - name: Collect official venue sites (direct monitoring)
       run: python collect_venue_sites.py
-
-    - name: Promote high-confidence event dates
-      env:
-        NOTION_API_TOKEN: ${{ secrets.NOTION_API_TOKEN }}
-      run: python promote_event_dates.py --apply
 
     - name: Refresh public event export from master RDB
       run: |
@@ -104,11 +88,6 @@ jobs:
           python calibrate_song_predictions.py
         fi
         python build_retrospective_harvest.py
-
-    - name: Audit canonical event database after promotion
-      env:
-        NOTION_API_TOKEN: ${{ secrets.NOTION_API_TOKEN }}
-      run: python event_audit.py --fail-on-duplicates
 
     - name: Commit and Push changes
       run: |
