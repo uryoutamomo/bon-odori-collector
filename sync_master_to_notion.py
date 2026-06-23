@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Build or apply Notion updates from master RDB sync jobs.
+"""Build frozen Notion write-back review material from master RDB sync jobs.
 
 Default mode is a local dry-run: it reads pending notion_sync_jobs and writes
-JSON/Markdown review material without calling Notion. Actual Notion writes
-require --apply, non-dry-run jobs, and the confirmation phrase.
+JSON/Markdown review material without calling Notion. Actual Notion write-back
+is frozen by the RDB-only policy and requires an explicit break-glass flag in
+addition to the legacy confirmation phrase.
 """
 
 import argparse
@@ -25,6 +26,11 @@ OUT_JSON = DATA / "master_to_notion_sync_dry_run.json"
 OUT_MD = DATA / "master_to_notion_sync_dry_run.md"
 NOTION_SNAPSHOT = DATA / "notion_snapshot.sqlite"
 CONFIRM_PHRASE = "APPLY RDB TO NOTION"
+FROZEN_WRITEBACK_MESSAGE = (
+    "RDB-to-Notion write-back is frozen by the RDB-only policy. "
+    "Use dry-run output for historical review only; do not apply unless this is "
+    "an explicit recovery operation."
+)
 
 
 def rows(conn, query, params=()):
@@ -514,6 +520,11 @@ def build_update(conn, job, snapshot_db):
 def validate_apply(args, updates):
     if not args.apply:
         return
+    if not getattr(args, "allow_frozen_notion_write", False):
+        raise ValueError(
+            f"{FROZEN_WRITEBACK_MESSAGE} "
+            "Re-run with --allow-frozen-notion-write only after explicit approval."
+        )
     if args.confirm != CONFIRM_PHRASE:
         raise ValueError(f"--apply requires --confirm '{CONFIRM_PHRASE}'")
     dry_run_jobs = [row for row in updates if row["job"]["direction"] == "rdb_to_notion_dry_run"]
@@ -561,15 +572,15 @@ def render_markdown(result):
     apply_event_name = event_names[0] if len(set(event_names)) == 1 else "<reviewed event name>"
     if target_tables == {"venues"}:
         sequence_lines = [
-            "1. RDB venue review apply queues the venue sync job.",
-            "2. Refresh Notion snapshot immediately before Notion apply: `python3 build_notion_rdb.py`",
-            "3. Venue sync only after review: `python3 sync_master_to_notion.py --target-table venues --requested-by apply_ph2_shinagawa_second_venue_review.py --apply --confirm 'APPLY RDB TO NOTION'`",
+            "1. RDB-only venue review applies to the local master RDB.",
+            "2. Notion write-back is frozen; do not queue or apply new venue sync jobs.",
+            "3. Public output should be reviewed through the RDB-to-public export path.",
         ]
     else:
         sequence_lines = [
-            f"1. RDB apply only: `python3 dry_run_ph2_event_occurrence_apply.py --apply --event-name '{apply_event_name}' --confirm 'APPLY PH2 EVENT OCCURRENCE'`",
-            "2. Refresh Notion snapshot immediately before Notion apply: `python3 build_notion_rdb.py`",
-            "3. Notion sync only after review: `python3 sync_master_to_notion.py --requested-by dry_run_ph2_event_occurrence_apply.py --apply --confirm 'APPLY RDB TO NOTION'`",
+            f"1. RDB apply only: `{apply_event_name}` changes should land in the local master RDB.",
+            "2. Notion write-back is frozen; pending jobs are historical review material only.",
+            "3. Public output should be reviewed through the RDB-to-public export path.",
         ]
     lines = [
         "# Master RDB -> Notion sync dry-run",
@@ -587,8 +598,8 @@ def render_markdown(result):
         "",
         *sequence_lines,
         "",
-        "Both apply steps require separate review and explicit approval before running against production inputs.",
-        "The snapshot refresh is mandatory because drift detection uses `data/notion_snapshot.sqlite`.",
+        "This report does not authorize Notion writes.",
+        FROZEN_WRITEBACK_MESSAGE,
         "",
         "| job | target | date | status | venue | page | result |",
         "| --- | --- | --- | --- | --- | --- | --- |",
@@ -677,6 +688,7 @@ def run(args):
             "job_id": args.job_id or "",
             "requested_by": args.requested_by or "",
             "include_dry_run_jobs": args.include_dry_run_jobs,
+            "allow_frozen_notion_write": getattr(args, "allow_frozen_notion_write", False),
         },
         "summary": summary,
         "applied_job_ids": applied,
@@ -701,6 +713,11 @@ def main():
     parser.add_argument("--include-dry-run-jobs", action="store_true")
     parser.add_argument("--apply", action="store_true")
     parser.add_argument("--confirm", default="")
+    parser.add_argument(
+        "--allow-frozen-notion-write",
+        action="store_true",
+        help="Break-glass only: permit frozen RDB-to-Notion write-back after explicit approval.",
+    )
     args = parser.parse_args()
     try:
         result = run(args)

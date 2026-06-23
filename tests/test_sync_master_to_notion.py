@@ -160,9 +160,33 @@ class SyncMasterToNotionTest(unittest.TestCase):
                 "skip_reason": "",
             }
         ]
-        args = Namespace(apply=True, confirm=syncer.CONFIRM_PHRASE)
+        args = Namespace(
+            apply=True,
+            confirm=syncer.CONFIRM_PHRASE,
+            allow_frozen_notion_write=True,
+        )
 
         with self.assertRaises(ValueError):
+            syncer.validate_apply(args, updates)
+
+    def test_apply_refuses_frozen_notion_writeback_by_default(self):
+        updates = [
+            {
+                "job": {
+                    "job_id": "job1",
+                    "direction": "rdb_to_notion",
+                    "target_table": "event_occurrences",
+                },
+                "skip_reason": "",
+            }
+        ]
+        args = Namespace(
+            apply=True,
+            confirm=syncer.CONFIRM_PHRASE,
+            allow_frozen_notion_write=False,
+        )
+
+        with self.assertRaisesRegex(ValueError, "RDB-to-Notion write-back is frozen"):
             syncer.validate_apply(args, updates)
 
     def test_run_writes_dry_run_report_without_notion_api(self):
