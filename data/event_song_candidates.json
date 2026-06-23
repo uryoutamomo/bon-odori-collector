@@ -1,8 +1,8 @@
 {
   "generated_by": "build_event_song_candidates.py",
-  "count": 792,
+  "count": 793,
   "public_event_count": 321,
-  "review_count": 471,
+  "review_count": 472,
   "candidates": [
     {
       "id": "95829de52283f32f",
@@ -15774,6 +15774,28 @@
           "url": "https://www.youtube.com/watch?v=dxN6dQOy1fo",
           "date": "2025-09-27T12:01:19Z",
           "text": "和太鼓お祭りチャンネル\nすみだ音頭　杉大門通り盆踊り大会15　2025年9月21日\n2025年9月21日に行われました、\n「杉大門通り商店街盆踊り大会」の様子です。\n\n\n杉大門盆踊り\n１東京音頭　https://youtu.be/HwJzkUH_hO0\n２大東京音頭　https://youtu.be/txpcR7qq74g\n３炭坑節　https://youtu.be/-RXW7ZL9X44\n４八木節　https://youtu.be/0FTC8TLY0kk\n５新宿音頭　https://youtu.be/MUuEGc5PPd4\n６平成新宿音頭　https://youtu.be/T8JtRAmT7sc\n７荒木町小唄　https://youtu.be/oZIq8yHjdKo\n８いもがらぼくと　https://youtu.be/FCm8Kx38O3M\n９きよしのズンドコ節　https://youtu.be/8Ydfa8Su81c\n10松"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "828f12218b77c094",
+      "song_name": "そして踊り",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/nakano_bonodori/status/2069261113552773393",
+          "date": "2026-06-23T03:27:49+00:00",
+          "text": "中野駅前大盆踊り大会【公式】\n⟡ 🎼🪕 新民謡・歌詞募集 🪈🎼 ⟡\n┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈\n\n昨年度は約9万人にご来場いただいた、#ナカボン こと「中野駅前大盆踊り大会」。\n\n今年、ナカボンでは新たな民謡づくりに挑戦します🏮✨\n\nその第一歩として、皆さまから歌詞を募集いたします。\n\n目指すのは、中野の風景や人々の想いを織り込みながら、100年後も歌い継がれる民謡。\n\nそして毎年少しずつ歌詞を増やし、地域のみんなで育てていく唄です。\n\n今回募集するのは、民謡でよく用いられる「七・七・七・五」の形式による一節。\n\n〽︎\nめでためでたの（7）\n若松様よ（7）\n枝も栄える（7）\n葉も茂る（5）\n\nこのような形で、\n\n・中野の風景\n・街の魅力や思い出\n・好きな場所やお店\n・人とのつながり\n・未来への願い\n\nなどを自由に表現してください😊\n\n踊りが好きな方は、自分の歌詞で踊る楽しみを。\n\n歌が好きな方は、自分の歌詞を歌う喜びを。\n"
         }
       ],
       "already_public": false,
