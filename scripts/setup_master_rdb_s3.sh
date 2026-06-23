@@ -16,6 +16,7 @@ aws cloudformation deploy \
   --stack-name "$STACK_NAME" \
   --template-file "$TEMPLATE_FILE" \
   --capabilities CAPABILITY_NAMED_IAM \
+  --no-fail-on-empty-changeset \
   --parameter-overrides \
     MasterRdbBucketName="$BUCKET_NAME" \
     MasterRdbPrefix="$PREFIX"
@@ -34,25 +35,32 @@ OUTPUT_PREFIX="$(python3 -c 'import json,sys
 outputs = {item["OutputKey"]: item["OutputValue"] for item in json.load(sys.stdin)}
 print(outputs["MasterRdbS3Prefix"])' <<<"$OUTPUTS_JSON")"
 
-echo "[master-rdb-s3] starting bootstrap workflow"
-gh workflow run bootstrap_master_rdb_s3.yml \
-  -f bucket="$OUTPUT_BUCKET" \
-  -f prefix="$OUTPUT_PREFIX"
+if aws s3api head-object \
+  --region "$REGION" \
+  --bucket "$OUTPUT_BUCKET" \
+  --key "$OUTPUT_PREFIX/latest/bon_odori_master_manifest.json" >/dev/null 2>&1; then
+  echo "[master-rdb-s3] latest artifact already exists; skip bootstrap workflow"
+else
+  echo "[master-rdb-s3] starting bootstrap workflow"
+  gh workflow run bootstrap_master_rdb_s3.yml \
+    -f bucket="$OUTPUT_BUCKET" \
+    -f prefix="$OUTPUT_PREFIX"
 
-echo "[master-rdb-s3] waiting for bootstrap workflow run"
-sleep 8
-RUN_ID="$(gh run list \
-  --workflow bootstrap_master_rdb_s3.yml \
-  --limit 1 \
-  --json databaseId \
-  --jq '.[0].databaseId')"
+  echo "[master-rdb-s3] waiting for bootstrap workflow run"
+  sleep 8
+  RUN_ID="$(gh run list \
+    --workflow bootstrap_master_rdb_s3.yml \
+    --limit 1 \
+    --json databaseId \
+    --jq '.[0].databaseId')"
 
-if [ -z "$RUN_ID" ] || [ "$RUN_ID" = "null" ]; then
-  echo "[master-rdb-s3] could not find bootstrap workflow run" >&2
-  exit 1
+  if [ -z "$RUN_ID" ] || [ "$RUN_ID" = "null" ]; then
+    echo "[master-rdb-s3] could not find bootstrap workflow run" >&2
+    exit 1
+  fi
+
+  gh run watch "$RUN_ID" --exit-status
 fi
-
-gh run watch "$RUN_ID" --exit-status
 
 echo "[master-rdb-s3] enabling collect workflow variables"
 gh variable set MASTER_DB_S3_BUCKET --body "$OUTPUT_BUCKET"
