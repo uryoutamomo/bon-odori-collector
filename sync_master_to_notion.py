@@ -15,7 +15,7 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
-from master_db import MASTER_DB
+from master_db import MASTER_DB, connect_existing
 from notion_api import NotionApi
 from notion_config import load_local_env
 
@@ -642,7 +642,7 @@ def render_markdown(result):
 
 def run(args):
     now = datetime.now(timezone.utc).isoformat()
-    with sqlite3.connect(args.master_db) as conn:
+    with connect_existing(args.master_db) as conn:
         jobs = pending_jobs(conn, args)
         updates = [build_update(conn, job, args.notion_snapshot_db) for job in jobs]
         validate_apply(args, updates)

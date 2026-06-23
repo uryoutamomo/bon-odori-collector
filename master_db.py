@@ -384,6 +384,25 @@ def now_utc():
     return datetime.now(timezone.utc).isoformat()
 
 
+def require_existing_db(path=MASTER_DB):
+    """Return an existing SQLite path or stop before sqlite3 creates an empty DB."""
+    path = Path(path)
+    if path.exists():
+        return path
+    raise SystemExit(
+        f"Master DB is missing: {path}. "
+        "Fetch it with `python3 master_db_s3_artifact.py fetch --overwrite` "
+        "or rebuild it intentionally before running this command."
+    )
+
+
+def connect_existing(path=MASTER_DB, **kwargs):
+    """Open an existing SQLite DB without allowing implicit file creation."""
+    path = require_existing_db(path)
+    uri = f"file:{path.as_posix()}?mode=rw"
+    return sqlite3.connect(uri, uri=True, **kwargs)
+
+
 def json_text(value):
     return json.dumps(value if value is not None else {}, ensure_ascii=False, sort_keys=True)
 

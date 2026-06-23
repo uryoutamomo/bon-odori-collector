@@ -7,7 +7,7 @@ from io import BytesIO
 from pathlib import Path
 
 import master_db_s3_artifact as artifact
-from master_db import file_sha256
+from master_db import connect_existing, file_sha256
 
 
 class FakeClientError(Exception):
@@ -47,6 +47,15 @@ def make_db(path):
 
 
 class MasterDbS3ArtifactTest(unittest.TestCase):
+    def test_connect_existing_does_not_create_missing_database(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            missing = Path(tmp) / "missing.sqlite"
+
+            with self.assertRaises(SystemExit):
+                connect_existing(missing)
+
+            self.assertFalse(missing.exists())
+
     def test_artifact_keys_use_latest_and_snapshot_paths(self):
         keys = artifact.artifact_keys("prefix/", snapshot_id="snap1")
 

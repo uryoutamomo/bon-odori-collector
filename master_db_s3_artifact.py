@@ -9,13 +9,19 @@ import argparse
 import json
 import os
 import shutil
-import sqlite3
 import sys
 import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
 
-from master_db import MASTER_DB, MASTER_MANIFEST, file_sha256, refresh_manifest_database_state, table_counts
+from master_db import (
+    MASTER_DB,
+    MASTER_MANIFEST,
+    connect_existing,
+    file_sha256,
+    refresh_manifest_database_state,
+    table_counts,
+)
 
 
 DEFAULT_PREFIX = "master-rdb"
@@ -135,7 +141,7 @@ def upload_file(client, source, bucket, key, content_type):
 
 
 def database_summary(db_path):
-    with sqlite3.connect(db_path) as conn:
+    with connect_existing(db_path) as conn:
         return table_counts(conn)
 
 

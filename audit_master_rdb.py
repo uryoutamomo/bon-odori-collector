@@ -7,7 +7,7 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
-from master_db import MASTER_DB, MASTER_MANIFEST, file_sha256, table_counts
+from master_db import MASTER_DB, MASTER_MANIFEST, connect_existing, file_sha256, table_counts
 
 
 DATA = Path("data")
@@ -82,7 +82,7 @@ def audit(args):
         issues.append(issue("high", "master_db_missing", "Master DB is missing.", {"path": str(db_path)}))
         return build_result(args, {}, issues)
 
-    with sqlite3.connect(db_path) as conn:
+    with connect_existing(db_path) as conn:
         conn.execute("PRAGMA foreign_keys = ON")
         counts = table_counts(conn)
         fk_rows = conn.execute("PRAGMA foreign_key_check").fetchall()

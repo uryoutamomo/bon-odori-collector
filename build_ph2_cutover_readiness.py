@@ -13,7 +13,7 @@ from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
-from master_db import MASTER_DB
+from master_db import MASTER_DB, connect_existing
 
 
 DATA = Path("data")
@@ -59,13 +59,13 @@ def write_json(path, data):
 
 
 def rows(db_path, query, params=()):
-    with sqlite3.connect(db_path) as conn:
+    with connect_existing(db_path) as conn:
         conn.row_factory = sqlite3.Row
         return [dict(row) for row in conn.execute(query, params)]
 
 
 def one(db_path, query, params=()):
-    with sqlite3.connect(db_path) as conn:
+    with connect_existing(db_path) as conn:
         return conn.execute(query, params).fetchone()[0]
 
 

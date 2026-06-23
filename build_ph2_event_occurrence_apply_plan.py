@@ -13,7 +13,7 @@ from datetime import datetime, timezone
 from difflib import SequenceMatcher
 from pathlib import Path
 
-from master_db import MASTER_DB, normalize_text
+from master_db import MASTER_DB, connect_existing, normalize_text
 
 
 DATA = Path("data")
@@ -38,7 +38,7 @@ def write_json(path, data):
 
 
 def rows(db_path, query, params=()):
-    with sqlite3.connect(db_path) as conn:
+    with connect_existing(db_path) as conn:
         conn.row_factory = sqlite3.Row
         return [dict(row) for row in conn.execute(query, params)]
 

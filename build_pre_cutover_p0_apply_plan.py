@@ -12,7 +12,7 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
-from master_db import MASTER_DB
+from master_db import MASTER_DB, connect_existing
 
 
 DATA = Path("data")
@@ -204,7 +204,7 @@ def existing_historical_reference_keys(master_db):
     master_db = Path(master_db)
     if not master_db.exists():
         return set()
-    with sqlite3.connect(master_db) as conn:
+    with connect_existing(master_db) as conn:
         return {
             (row[0], row[1], row[2] or "")
             for row in conn.execute(

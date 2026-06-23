@@ -13,7 +13,7 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
-from master_db import MASTER_DB
+from master_db import MASTER_DB, connect_existing
 
 
 DATA = Path("data")
@@ -264,7 +264,7 @@ def run(args):
     backup_path = ""
     if args.apply:
         backup_path = str(backup_db(args.master_db, now))
-    with sqlite3.connect(args.master_db) as conn:
+    with connect_existing(args.master_db) as conn:
         conn.execute("PRAGMA foreign_keys = ON")
         predictions, review = build_report(conn)
         applied = []
