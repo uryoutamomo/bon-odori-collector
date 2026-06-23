@@ -32,7 +32,27 @@ Default values:
 - bucket: `bon-odori-master-rdb-169805602203`
 - prefix: `master-rdb`
 
-Deploy or update the stack before enabling the collect workflow variable:
+After local AWS credentials are configured, the setup script performs the full
+bootstrap sequence:
+
+1. Deploy or update the CloudFormation stack.
+2. Run the one-time bootstrap workflow.
+3. Set the GitHub Actions variables after the artifact publish succeeds.
+
+```bash
+scripts/setup_master_rdb_s3.sh
+```
+
+To override the bucket name or prefix:
+
+```bash
+MASTER_DB_S3_BUCKET=<unique-bucket-name> \
+MASTER_DB_S3_PREFIX=master-rdb \
+scripts/setup_master_rdb_s3.sh
+```
+
+For manual setup, deploy or update the stack before enabling the collect
+workflow variable:
 
 ```bash
 aws cloudformation deploy \
