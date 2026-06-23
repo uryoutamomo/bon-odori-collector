@@ -405,23 +405,7 @@ def predicted_dates_for_candidate(item, occurrence_lookup=None):
     return rows
 
 
-def notion_page_by_occurrence(conn):
-    return {
-        row[0]: row[1]
-        for row in conn.execute(
-            """
-            SELECT master_id, external_id
-            FROM external_record_links
-            WHERE system = 'notion'
-              AND source_key = 'events'
-              AND master_table = 'event_occurrences'
-            """
-        )
-    }
-
-
-def write_predicted_date_sync_jobs(conn, predictions, now):
-    page_by_occurrence = notion_page_by_occurrence(conn)
+def clear_predicted_date_sync_jobs(conn):
     conn.execute(
         """
         DELETE FROM notion_sync_jobs
@@ -430,50 +414,6 @@ def write_predicted_date_sync_jobs(conn, predictions, now):
         """,
         ("build_historical_promotion_candidates.py",),
     )
-    for prediction in predictions:
-        status = prediction["application_status"]
-        if status in {"matches_curated", "superseded_by_curated"}:
-            continue
-        action = (
-            "set_predicted_date_existing_2026_occurrence"
-            if status == "candidate_for_existing_2026_occurrence"
-            else "create_predicted_2026_occurrence"
-        )
-        payload = {
-            "action": action,
-            "date_status": "predicted",
-            "target_event_name": prediction["target_event_name"],
-            "predicted_year": prediction["predicted_year"],
-            "date_start": prediction["date_start"],
-            "date_end": prediction["date_end"],
-            "basis_type": prediction["basis_type"],
-            "basis_type_label": prediction["basis_type_label"],
-            "rule_type": prediction["rule_type"],
-            "basis": prediction["basis"],
-            "confidence": prediction["confidence"],
-            "application_status": status,
-            "confirmed_overwrite_allowed": False,
-        }
-        conn.execute(
-            """
-            INSERT INTO notion_sync_jobs(
-              job_id, direction, target_table, target_id, notion_source_key,
-              notion_page_id, status, requested_by, requested_at, payload_json
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-            """,
-            (
-                stable_id("nsj", prediction["predicted_date_id"], action),
-                "rdb_to_notion_dry_run",
-                "predicted_occurrence_dates",
-                prediction["predicted_date_id"],
-                "events",
-                page_by_occurrence.get(prediction["target_occurrence_id"], ""),
-                "pending",
-                "build_historical_promotion_candidates.py",
-                now,
-                json.dumps(payload, ensure_ascii=False, sort_keys=True),
-            ),
-        )
 
 
 def write_candidates_to_master(db_path, candidates):
@@ -551,12 +491,7 @@ def write_candidates_to_master(db_path, candidates):
                         now,
                     ),
                 )
-        all_predictions = [
-            prediction
-            for item in candidates
-            for prediction in predicted_dates_for_candidate(item, occurrence_lookup)
-        ]
-        write_predicted_date_sync_jobs(conn, all_predictions, now)
+        clear_predicted_date_sync_jobs(conn)
         conn.commit()
 
 
@@ -652,6 +587,7 @@ def main():
             "candidate_count": len(candidates),
             "auto_promote_eligible_count": sum(1 for row in candidates if row["auto_promote_eligible"]),
             "predicted_date_count": len(predicted_dates),
+            "notion_sync_jobs_queued": 0,
             "predicted_dates_by_basis_type": dict(Counter(row["basis_type_label"] for row in predicted_dates)),
             "by_confidence": dict(Counter(row["promotion_confidence"] for row in candidates)),
             "by_source_type": dict(
