@@ -52,9 +52,10 @@ CloudFormationで次をまとめて作成する。
 
 - DynamoDBテーブル `bon-odori-torimochi-queue`
 - DynamoDBテーブル `bon-odori-event-candidate-queue`
+- S3バケット `bon-odori-master-rdb-169805602203`
 - GitHub OIDCプロバイダー
 - 対象リポジトリの`main`ブランチだけが引き受けられるIAMロール
-- 対象テーブルだけを操作できる最小権限ポリシー
+- 対象テーブルとmaster RDB artifactだけを操作できる最小権限ポリシー
 
 テンプレート: `infra/dynamodb-queue.yml`
 
@@ -65,8 +66,13 @@ CloudFormationで次をまとめて作成する。
 | `AWS_ROLE_ARN` | `GitHubActionsRoleArn` の出力 |
 | `DYNAMODB_QUEUE_TABLE` | `QueueTableName` の出力 |
 | `EVENT_CANDIDATE_QUEUE_TABLE` | `EventCandidateQueueTableName` の出力 |
+| `MASTER_DB_S3_BUCKET` | `MasterRdbS3BucketName` の出力 |
+| `MASTER_DB_S3_PREFIX` | `MasterRdbS3Prefix` の出力 |
 | `QUEUE_STORAGE_MODE` | 初回は `dual` |
 | `EVENT_QUEUE_STORAGE_MODE` | 初回は `dual` |
+
+`MASTER_DB_S3_BUCKET` は、初回 artifact publish が成功してから登録する。
+先に登録すると、日次 collect workflow が存在しないS3 artifactを取りに行って失敗する。
 
 ## フェーズ4: 切り替え
 

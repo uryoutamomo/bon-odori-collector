@@ -1,0 +1,70 @@
+name: bootstrap-master-rdb-s3
+
+on:
+  workflow_dispatch:
+    inputs:
+      bucket:
+        description: "S3 bucket for the master RDB artifact"
+        required: true
+        type: string
+      prefix:
+        description: "S3 object prefix"
+        required: true
+        default: "master-rdb"
+        type: string
+      source_commit:
+        description: "Optional commit that still contains data/bon_odori_master.sqlite"
+        required: false
+        type: string
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+
+    steps:
+      - name: Checkout repository history
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v6
+        with:
+          role-to-assume: ${{ vars.AWS_ROLE_ARN }}
+          aws-region: ap-northeast-1
+
+      - name: Restore master DB from Git history
+        env:
+          SOURCE_COMMIT: ${{ inputs.source_commit }}
+        run: |
+          set -euo pipefail
+          mkdir -p data
+          if [ -z "$SOURCE_COMMIT" ]; then
+            SOURCE_COMMIT="$(git rev-list -n 1 HEAD -- data/bon_odori_master.sqlite)"
+          fi
+          if [ -z "$SOURCE_COMMIT" ]; then
+            echo "Could not find data/bon_odori_master.sqlite in Git history" >&2
+            exit 1
+          fi
+          git show "${SOURCE_COMMIT}:data/bon_odori_master.sqlite" > data/bon_odori_master.sqlite
+          ls -lh data/bon_odori_master.sqlite
+
+      - name: Publish initial master RDB artifact
+        env:
+          MASTER_DB_S3_BUCKET: ${{ inputs.bucket }}
+          MASTER_DB_S3_PREFIX: ${{ inputs.prefix }}
+          AWS_REGION: ap-northeast-1
+        run: |
+          python master_db_s3_artifact.py publish \
+            --snapshot-id "initial-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"

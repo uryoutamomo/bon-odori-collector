@@ -20,6 +20,12 @@ Parameters:
   EventCandidateTableName:
     Type: String
     Default: bon-odori-event-candidate-queue
+  MasterRdbBucketName:
+    Type: String
+    Default: bon-odori-master-rdb-169805602203
+  MasterRdbPrefix:
+    Type: String
+    Default: master-rdb
 
 Resources:
   GitHubOidcProvider:
@@ -91,6 +97,40 @@ Resources:
         - Key: Project
           Value: bon-odori-collector
 
+  MasterRdbArtifactBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Ref MasterRdbBucketName
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+      OwnershipControls:
+        Rules:
+          - ObjectOwnership: BucketOwnerEnforced
+      VersioningConfiguration:
+        Status: Enabled
+      LifecycleConfiguration:
+        Rules:
+          - Id: ExpireNoncurrentLatestVersions
+            Status: Enabled
+            NoncurrentVersionExpiration:
+              NoncurrentDays: 90
+            Filter:
+              Prefix: !Sub "${MasterRdbPrefix}/latest/"
+          - Id: AbortIncompleteMultipartUploads
+            Status: Enabled
+            AbortIncompleteMultipartUpload:
+              DaysAfterInitiation: 7
+      Tags:
+        - Key: Project
+          Value: bon-odori-collector
+
   GitHubActionsQueueRole:
     Type: AWS::IAM::Role
     Properties:
@@ -152,6 +192,28 @@ Resources:
                 Effect: Allow
                 Action: cloudfront:CreateInvalidation
                 Resource: arn:aws:cloudfront::169805602203:distribution/ERA76BJB7WLEN
+        - PolicyName: MasterRdbArtifactAccess
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Sid: ListMasterRdbArtifactBucket
+                Effect: Allow
+                Action: s3:ListBucket
+                Resource: !GetAtt MasterRdbArtifactBucket.Arn
+                Condition:
+                  StringLike:
+                    s3:prefix:
+                      - !Sub "${MasterRdbPrefix}/*"
+              - Sid: GetMasterRdbArtifactBucketLocation
+                Effect: Allow
+                Action: s3:GetBucketLocation
+                Resource: !GetAtt MasterRdbArtifactBucket.Arn
+              - Sid: ReadWriteMasterRdbArtifacts
+                Effect: Allow
+                Action:
+                  - s3:GetObject
+                  - s3:PutObject
+                Resource: !Sub "${MasterRdbArtifactBucket.Arn}/${MasterRdbPrefix}/*"
         - PolicyName: StaticSiteCustomDomainAccess
           PolicyDocument:
             Version: "2012-10-17"
@@ -273,5 +335,9 @@ Outputs:
     Value: !Ref QueueTable
   EventCandidateQueueTableName:
     Value: !Ref EventCandidateQueueTable
+  MasterRdbS3BucketName:
+    Value: !Ref MasterRdbArtifactBucket
+  MasterRdbS3Prefix:
+    Value: !Ref MasterRdbPrefix
   GitHubActionsRoleArn:
     Value: !GetAtt GitHubActionsQueueRole.Arn

@@ -22,16 +22,61 @@ s3://$MASTER_DB_S3_BUCKET/$MASTER_DB_S3_PREFIX/snapshots/<snapshot-id>/bon_odori
 s3://$MASTER_DB_S3_BUCKET/$MASTER_DB_S3_PREFIX/snapshots/<snapshot-id>/bon_odori_master_manifest.json
 ```
 
-## First Publish
+## Infrastructure
 
-Run this once after the bucket is ready:
+The shared AWS stack defines the private artifact bucket and grants the
+GitHub Actions OIDC role read/write access to only the configured prefix.
+
+Default values:
+
+- bucket: `bon-odori-master-rdb-169805602203`
+- prefix: `master-rdb`
+
+Deploy or update the stack before enabling the collect workflow variable:
 
 ```bash
-python3 master_db_s3_artifact.py publish --snapshot-id initial-YYYYMMDD --force
+aws cloudformation deploy \
+  --stack-name bon-odori-collector-queue \
+  --template-file infra/dynamodb-queue.yml \
+  --capabilities CAPABILITY_NAMED_IAM
 ```
 
-`--force` is acceptable only for the initial publish or for an explicit recovery
-operation. Normal publishes should use optimistic locking.
+If the default bucket name is unavailable, pass a globally unique name:
+
+```bash
+aws cloudformation deploy \
+  --stack-name bon-odori-collector-queue \
+  --template-file infra/dynamodb-queue.yml \
+  --capabilities CAPABILITY_NAMED_IAM \
+  --parameter-overrides MasterRdbBucketName=<unique-bucket-name>
+```
+
+## First Publish
+
+Run this once after the bucket is ready. The manual workflow restores the last
+tracked `data/bon_odori_master.sqlite` from Git history and publishes it to S3:
+
+```bash
+gh workflow run bootstrap_master_rdb_s3.yml \
+  -f bucket=bon-odori-master-rdb-169805602203 \
+  -f prefix=master-rdb
+```
+
+After the workflow succeeds, enable the collect workflow fetch step:
+
+```bash
+gh variable set MASTER_DB_S3_BUCKET --body bon-odori-master-rdb-169805602203
+gh variable set MASTER_DB_S3_PREFIX --body master-rdb
+```
+
+For local initial publish, use this only after configuring AWS credentials:
+
+```bash
+python3 master_db_s3_artifact.py publish --snapshot-id initial-YYYYMMDD
+```
+
+`--force` is acceptable only for an explicit recovery operation. Normal
+publishes should use optimistic locking.
 
 ## Daily Local Workflow
 
@@ -54,8 +99,9 @@ Then commit only the manifest, schema, reports, and code changes. Do not commit
 
 ## GitHub Actions
 
-The collect workflow fetches the DB only when `MASTER_DB_S3_BUCKET` is set. This
-keeps existing workflows safe before the bucket is configured.
+The collect workflow fetches the DB only when `MASTER_DB_S3_BUCKET` is set. Set
+that variable only after the S3 bucket exists and the first artifact publish has
+succeeded. This keeps scheduled runs safe during setup.
 
 If a workflow mutates the master RDB in the future, it must:
 
