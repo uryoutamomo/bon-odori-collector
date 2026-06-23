@@ -14,22 +14,27 @@
     <string>/usr/bin/python3</string>
     <string>/Users/ryotauchida/bon-odori-collector/run_daily_youtube_backfill.py</string>
     <string>--month</string>
+    <string>6</string>
+    <string>--auto-next-month</string>
+    <string>--focus-month</string>
+    <string>6</string>
+    <string>--focus-month</string>
     <string>7</string>
     <string>--limit</string>
-    <string>10</string>
+    <string>1</string>
     <string>--max-results</string>
     <string>5</string>
+    <string>--retry-selected</string>
+    <string>--until-quota-limited</string>
     <string>--mail-reminder</string>
-    <string>--commit</string>
-    <string>--push</string>
   </array>
 
   <key>StartCalendarInterval</key>
   <dict>
     <key>Hour</key>
-    <integer>16</integer>
+    <integer>5</integer>
     <key>Minute</key>
-    <integer>35</integer>
+    <integer>0</integer>
   </dict>
 
   <key>StandardOutPath</key>

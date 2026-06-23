@@ -1,0 +1,156 @@
+name: youtube-daily-backfill
+
+on:
+  schedule:
+    # 毎日 05:00 JST (UTC 20:00) に実行。
+    - cron: '0 20 * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'APIを使わず、選択対象だけ確認する'
+        required: false
+        type: boolean
+        default: false
+      max_batches:
+        description: '手動実行時の最大バッチ数。0ならquota制限まで続ける'
+        required: false
+        default: '0'
+
+concurrency:
+  group: bon-odori-master-rdb
+  cancel-in-progress: false
+
+jobs:
+  youtube-backfill:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    env:
+      YOUTUBE_DATA_API_KEY: ${{ secrets.YOUTUBE_DATA_API_KEY }}
+      MAX_BATCHES: ${{ inputs.max_batches || '0' }}
+      DRY_RUN: ${{ inputs.dry_run || false }}
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v6
+      with:
+        fetch-depth: 0
+
+    - name: Fast-forward main
+      run: git pull --ff-only origin main
+
+    - name: Set up Python
+      uses: actions/setup-python@v6
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: pip install -r requirements.txt
+
+    - name: Check YouTube API key
+      if: ${{ env.DRY_RUN != 'true' }}
+      run: test -n "$YOUTUBE_DATA_API_KEY"
+
+    - name: Run YouTube daily backfill
+      run: |
+        FLAGS=""
+        if [ "$DRY_RUN" = "true" ]; then
+          FLAGS="$FLAGS --dry-run"
+        fi
+        if [ "$MAX_BATCHES" != "0" ]; then
+          FLAGS="$FLAGS --max-batches $MAX_BATCHES"
+        fi
+        python run_daily_youtube_backfill.py \
+          --month 6 \
+          --auto-next-month \
+          --focus-month 6 \
+          --focus-month 7 \
+          --limit 1 \
+          --max-results 5 \
+          --retry-selected \
+          --until-quota-limited \
+          --mail-reminder \
+          $FLAGS
+
+    - name: Append run summary
+      run: |
+        if [ -f data/youtube_daily_backfill_report.md ]; then
+          cat data/youtube_daily_backfill_report.md >> "$GITHUB_STEP_SUMMARY"
+        fi
+
+    - name: Commit result branch
+      id: commit
+      if: ${{ env.DRY_RUN != 'true' }}
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git checkout -B automation/youtube-daily-backfill
+        git add data/youtube_daily_backfill_report.json
+        git add data/youtube_daily_backfill_report.md
+        git add data/pending_mail.json
+        git add data/youtube_year_backfill_candidates.json
+        git add data/youtube_year_backfill_candidates.md
+        git add data/event_occurrence_backfill_plan.json
+        git add data/event_occurrence_backfill_plan.md
+        git add data/event_occurrence_observations.json
+        git add data/event_occurrence_observations.md
+        git add data/low_confidence_backfill_review.md
+        git add data/event_schedule_rules.json
+        git add data/event_schedule_rules.md
+        git add data/event_date_predictions.json
+        git add data/event_date_predictions.md
+        git add data/public/events_public.json
+        git add data/public/events_public.js
+        git add data/public_date_prediction_apply_result.json
+        git add data/public_historical_reference_dry_run.json
+        git add data/public_season_hint_dry_run.json
+        git add data/month_06_youtube_backfill_queue.json
+        git add data/month_06_youtube_backfill_queue.md
+        git add data/month_07_youtube_backfill_queue.json
+        git add data/month_07_youtube_backfill_queue.md
+        if python master_rdb_freeze_policy.py is-frozen legacy_song_occurrence_generation; then
+          echo "[master-rdb] legacy song occurrence generation frozen: skip staging legacy song occurrence outputs"
+        else
+          git add data/song_occurrences.json
+          git add data/song_prediction_snapshots.json
+          git add data/public/event_song_occurrences_public.json
+          git add data/public/event_songs_public.json
+        fi
+        if git diff --cached --quiet; then
+          echo "changed=false" >> "$GITHUB_OUTPUT"
+          exit 0
+        fi
+        git commit -m "Run YouTube daily backfill"
+        git push --force-with-lease origin automation/youtube-daily-backfill
+        echo "changed=true" >> "$GITHUB_OUTPUT"
+
+    - name: Open or update pull request
+      if: ${{ steps.commit.outputs.changed == 'true' }}
+      env:
+        GH_TOKEN: ${{ github.token }}
+      run: |
+        BODY=$(cat <<'EOF'
+        Automated YouTube daily backfill result.
+
+        Scope:
+        - Focus months: June and July
+        - Target years: 2024 first, then 2023
+        - Thin previously selected rows can be retried
+        - Stops when YouTube quota is limited
+
+        See `data/youtube_daily_backfill_report.md` for the run summary.
+        EOF
+        )
+        if gh pr view automation/youtube-daily-backfill --json number >/dev/null 2>&1; then
+          gh pr edit automation/youtube-daily-backfill \
+            --title "Run YouTube daily backfill" \
+            --body "$BODY"
+        else
+          gh pr create \
+            --base main \
+            --head automation/youtube-daily-backfill \
+            --title "Run YouTube daily backfill" \
+            --body "$BODY"
+        fi
