@@ -132,6 +132,27 @@ If a workflow mutates the master RDB in the future, it must:
 5. Publish with `--expect-remote-checksum`.
 6. Commit the manifest/report changes only.
 
+## Production Verification
+
+As of 2026-06-23, the S3 artifact path is enabled for GitHub Actions:
+
+- `MASTER_DB_S3_BUCKET=bon-odori-master-rdb-169805602203`
+- `MASTER_DB_S3_PREFIX=master-rdb`
+- latest checksum:
+  `1519a9e05011b692136fae6440a1efd9b5812535b5e9ecb09d1a0aa3358a5583`
+
+Verified runs:
+
+- `bootstrap-master-rdb-s3` run `28002138921`: initial publish succeeded.
+- `verify-master-rdb-s3` run `28004172057`: fetch, checksum, audit, and
+  untracked DB guard succeeded.
+- `verify-aws-queue` run `28004500579`: queue access and table counts
+  succeeded.
+- `bon-odori-collect` run `28004533368`: production collect fetched
+  `s3://bon-odori-master-rdb-169805602203/master-rdb/latest/bon_odori_master.sqlite`,
+  completed in 10m10s, passed pre/post duplicate audits, ran
+  `guard_git_large_files.py`, and committed only JSON data updates.
+
 ## Safety Rules
 
 - SQLite is never opened directly on S3.
