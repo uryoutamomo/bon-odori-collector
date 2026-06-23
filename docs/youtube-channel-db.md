@@ -4,7 +4,8 @@
 
 ## 位置づけ
 
-- YouTube関連作業の入口は Notion「今後の課題リスト: YouTubeデータ活用」。
+- YouTube関連作業の入口は、このリポジトリ内の台帳・レビューJSON・RDBを優先する。
+- 旧Notion「今後の課題リスト: YouTubeデータ活用」は過去ログとして残す。
   - https://app.notion.com/p/YouTube-37f8be04e762814ca63fdff18fe6cf35
 - `data/youtube_channel_registry.json` を収集対象チャンネルの台帳にする。
 - `data/youtube_channels.json` は既存収集データから作る分析結果で、手編集しない。

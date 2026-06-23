@@ -9,7 +9,8 @@
 - 保存時暗号化: DynamoDB標準の暗号化を有効化
 - GitHub Actions認証: OIDCによる短期認証
 - 長期アクセスキーは作成・保管しない
-- 初期運用: `QUEUE_STORAGE_MODE=dual` でNotionと並行稼働
+- 現行運用: `QUEUE_STORAGE_MODE=dynamodb`
+- `dual` / `notion` は移行検証・復旧時の明示指定だけに使う
 
 ## フェーズ1: 内田さんが行う初期設定
 
@@ -68,17 +69,18 @@ CloudFormationで次をまとめて作成する。
 | `EVENT_CANDIDATE_QUEUE_TABLE` | `EventCandidateQueueTableName` の出力 |
 | `MASTER_DB_S3_BUCKET` | `MasterRdbS3BucketName` の出力 |
 | `MASTER_DB_S3_PREFIX` | `MasterRdbS3Prefix` の出力 |
-| `QUEUE_STORAGE_MODE` | 初回は `dual` |
-| `EVENT_QUEUE_STORAGE_MODE` | 初回は `dual` |
+| `QUEUE_STORAGE_MODE` | 通常は `dynamodb` |
+| `EVENT_QUEUE_STORAGE_MODE` | 通常は `dynamodb` |
 
 `MASTER_DB_S3_BUCKET` は、初回 artifact publish が成功してから登録する。
 先に登録すると、日次 collect workflow が存在しないS3 artifactを取りに行って失敗する。
 
-## フェーズ4: 切り替え
+## フェーズ4: 切り替え（完了済み）
 
 1. GitHub Actionsを手動実行する。
-2. NotionとDynamoDBの追加内容を照合する。
+2. 移行対象だった旧Notionキュー行とDynamoDBの追加内容を照合する。
 3. 数回の定期実行で重複・欠落がないことを確認する。
 4. 既存データ移行後に `QUEUE_STORAGE_MODE=dynamodb` へ変更する。
 
-Notionを操作画面として残す期間は、ステータス同期を継続する。
+2026-06-23時点で、daily collect のキュー保存先はDynamoDBへ切り替え済み。
+Notionキューを操作画面として同期し続ける前提は終了した。

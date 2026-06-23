@@ -35,7 +35,7 @@ try:
 except ImportError:
     _HAS_FEEDPARSER = False
 
-# --- Notion 連携設定 ---
+# --- Notion 連携設定（レガシー/明示的な手動レビュー用途のみ） ---
 NOTION_TOKEN = os.environ.get("NOTION_API_TOKEN")
 NOTION_PAGE_ID = os.environ.get("NOTION_PAGE_ID")
 NOTION_VERSION = "2022-06-28"
@@ -48,7 +48,7 @@ def _env_or_default(name, default):
 # --- X(twitterapi.io)収集設定 ---
 # キーは GitHub Secrets / 環境変数で渡す。未設定なら X 収集はスキップ（fail-safe）。
 TWITTERAPI_IO_KEY = os.environ.get("TWITTERAPI_IO_KEY")
-# 「🐦 X収集ログ DB」（盆踊り情報開発 配下）。DB ID は秘匿情報ではないので既定値を持つ。
+# 旧「X収集ログ DB」。Notion token がある明示運用時だけ使う。
 X_LOG_DB_ID = _env_or_default("X_LOG_DB_ID", "ef2f627d-3ac5-4133-9abd-f5d6d655afa7")
 TWITTERAPI_IO_BASE = "https://api.twitterapi.io/twitter/tweet/advanced_search"
 X_QUERIES_FILE = "x_queries.json"
@@ -200,7 +200,7 @@ def _rich_text(content, link=None):
 
 def push_to_notion(latest_items, updated_at, x_voices=None, x_cost=None,
                    sokuho=None, event_signals=None, proactive_report=None):
-    """Notion ページの内容を最新データで全面更新する。
+    """明示設定されたNotionページの内容を最新データで全面更新する。
 
     x_voices: X由来の「人の言葉」（一次レポ/関心、直近分）。
     x_cost: {"today", "month", "daily_cap", "monthly_cap"}。コスト見える化用。
@@ -678,7 +678,7 @@ def _x_map_to_voice(tw):
 
 
 def _append_x_log_row(voice, query_id, judgement, cost):
-    """「🐦 X収集ログ DB」に1行追記。Notion未設定なら静かにスキップ。"""
+    """旧X収集ログDBに1行追記。Notion未設定なら静かにスキップ。"""
     if not NOTION_TOKEN or not X_LOG_DB_ID:
         return
     text = voice["text"] or "(本文なし)"
@@ -858,7 +858,7 @@ def collect_proactive_x(targets, seen_urls, config):
 
 
 # --- ホワイトリスト収集 / 会場検知→裏取りキュー（2段構え）---
-# 仕様: 盆踊り情報開発 >「🔎 盆踊ラー起点・会場裏取り 2段構え（仕様）」
+# キューの正規保存先は DynamoDB。Notion は明示指定時だけ使うレガシー/手動レビュー用。
 # A. 既存「X メンバーリスト」DB の from: をバッチ収集（since_time で新規のみ）→ ⭐盆踊ラー最優先
 # B. 盆踊ラー声＋ニュースから会場名を検知 →「🔎 裏取りキュー」DB へ（裏取りはこわ）。既出は再投入しない。
 
@@ -887,7 +887,7 @@ X_MEMBER_OBSOLETE_SCORE_PROPS = (
 X_EVENT_EVIDENCE_STATE_FILE = "data/x_event_evidence_state.json"
 X_EVENT_EVIDENCE_COHORT_FILE = "data/x_event_evidence_cohort.json"
 QUEUE_SEEN_FILE = "data/torimochi_queue_seen.json"
-QUEUE_STORAGE_MODE = os.environ.get("QUEUE_STORAGE_MODE", "notion").lower()
+QUEUE_STORAGE_MODE = os.environ.get("QUEUE_STORAGE_MODE", "dynamodb").lower()
 EVENT_QUEUE_STORAGE_MODE = os.environ.get("EVENT_QUEUE_STORAGE_MODE", QUEUE_STORAGE_MODE).lower()
 QUEUE_TYPE_VENUE = "会場"
 QUEUE_TYPE_EVENT = "イベント"
@@ -3112,7 +3112,7 @@ def main():
     print(f"完了: 全 {len(latest_items)} 件を記録しました。")
 
     # --- voices 収集（fail-safe: 失敗してもニュース収集結果に影響しない）---
-    deduped_voices = []  # Notion へ X由来の言葉を載せるため、try の外で確実に定義
+    deduped_voices = []  # 後段のレポート生成で使うため、try の外で確実に定義
     try:
         voices_seen_file = 'data/voices_seen.json'
         voices_seen_urls = set()
@@ -3259,7 +3259,7 @@ def main():
     except Exception as e:
         print(f"[proactive/report] 作成失敗（スキップ）: {e}")
 
-    # Notion へ書き戻し（直近7日分のみ）
+    # 明示設定されたNotionサマリー投稿用に直近7日分を抽出
     jst = timezone(timedelta(hours=9))
     updated_at = datetime.now(jst).strftime("%Y-%m-%d %H:%M JST")
     cutoff = datetime.now(timezone.utc) - timedelta(days=7)
@@ -3283,7 +3283,7 @@ def main():
         if (_parse_date(item.get("date")) or datetime.min.replace(tzinfo=timezone.utc)) >= cutoff
     ]
 
-    # X由来の「人の言葉」を直近7日で抽出して配信ネタとしてNotionへ載せる
+    # X由来の「人の言葉」を直近7日で抽出してサマリー投稿素材にする
     # （⭐盆踊ラー→🟢一次レポを優先。deduped_voices は新規が先頭）
     x_voices_all = [
         v for v in deduped_voices

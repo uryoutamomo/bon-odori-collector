@@ -3,6 +3,10 @@
 更新: 2026-06-19
 署名: おと（Codex）
 
+> 2026-06-23 update: Notion is no longer the source of truth for public event data.
+> Apply this policy against the Master RDB first. Mentions of Notion below are
+> legacy/manual-review references unless explicitly re-approved.
+
 ## 目的
 
 盆踊りイベントDBでは、2025年と2026年の同名イベントを同一行に混ぜず、年ごとの開催回として扱う。
@@ -225,9 +229,9 @@
 
 - まずは既存 `events` を年次開催回テーブルとして明確に使う。
 - 必要に応じて `event_year`、`series_key`、`inherited_from_year` を追加する。
-- 継承結果は直接Notionへ大量反映せず、まずdry-run JSON/MDに出す。
+- 継承結果は直接正本へ大量反映せず、まずdry-run JSON/MDに出す。
 - dry-runで、作成候補、既存2026イベントへの紐付け候補、保留、対象外を分ける。
-- Notion反映は既存apply系スクリプトに寄せ、根拠と差分が追える形にする。
+- 反映はMaster RDB向けのapply系スクリプトに寄せ、根拠と差分が追える形にする。旧Notion-backed applyは明示的な手動レビュー用途に限る。
 - RDBでは、証拠ごとに `evidence_year` と `evidence_role` を持つ方針にする。
 
 `evidence_role` の例:
@@ -265,4 +269,4 @@
 - YouTubeに動画があることを、今年開催確定の根拠にしない。
 - 開催日を過去年から機械変換しない。
 - 年ごとのカラムを増やしてスキーマを固定年に依存させない。
-- Notion正本を壊さないため、継承バッチは必ずdry-runを挟む。
+- Master RDB正本を壊さないため、継承バッチは必ずdry-runを挟む。

@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       apply:
-        description: "Write eligible Notion-only rows into DynamoDB"
+        description: "Legacy one-off migration: write eligible Notion-only rows into DynamoDB"
         required: true
         default: "false"
         type: choice
@@ -12,7 +12,7 @@ on:
           - "false"
           - "true"
       cutoff:
-        description: "Only Notion rows created before this timestamp are considered"
+        description: "Legacy migration cutoff; only Notion rows created before this timestamp are considered"
         required: true
         default: "2026-06-07T00:00:00+09:00"
 
@@ -41,7 +41,7 @@ jobs:
           role-to-assume: ${{ vars.AWS_ROLE_ARN }}
           aws-region: ap-northeast-1
 
-      - name: Migrate Notion queue rows
+      - name: Migrate legacy Notion queue rows
         env:
           NOTION_API_TOKEN: ${{ secrets.NOTION_API_TOKEN }}
           AWS_REGION: ap-northeast-1

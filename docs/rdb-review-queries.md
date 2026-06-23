@@ -19,18 +19,18 @@ python3 build_bon_odori_rdb.py
 
 ## 現在のDB
 
-- `data/notion_snapshot.sqlite`: Notion正本ミラー
+- `data/notion_snapshot.sqlite`: legacy Notion snapshot（読み取り専用参照）
 - `data/evidence.sqlite`: X/YouTube投稿証拠
 - `data/youtube_evidence.sqlite`: YouTube詳細分析
 - `data/bon_odori.sqlite`: 横断リンク、レビュー状態、未解決点
 - `data/rdb_review_queue.json` / `.md`: 横断DBから作るレビューキュー
-- `data/rdb_event_apply_plan.json` / `.md`: Notionイベント詳細欄への反映計画
+- `data/rdb_event_apply_plan.json` / `.md`: 移行期に作成した旧Notion反映計画。通常運用では新規反映に使わない
 - `data/rdb_song_review_source.json` / `.md`: 曲マスタ未登録候補のレビュー元データ
 - `data/rdb_apply_plan_summary.json`: 反映計画の件数サマリ
 
 ## 代表クエリ
 
-YouTube証拠がNotionへ反映済みのイベント:
+YouTube証拠が移行前Notion詳細欄へ反映済みだったイベント:
 
 ```sql
 SELECT e.event_name, e.start_date, i.title, i.url
@@ -41,7 +41,7 @@ WHERE l.link_status = 'already_reflected'
 ORDER BY e.start_date DESC, e.event_name;
 ```
 
-YouTube側では既存イベント一致だが、Notion詳細欄への反映確認がまだ必要なもの:
+YouTube側では既存イベント一致だが、移行前Notion詳細欄では未反映だったもの:
 
 ```sql
 SELECT e.event_name, e.start_date, i.title, i.url, l.link_source
@@ -93,7 +93,7 @@ ORDER BY severity, issue_type;
 
 ## 現時点の注意
 
-- X投稿からNotionイベントへの自動リンクは未実装。X投稿は `evidence_items` に保持し、後続で照合ルールを追加する。
-- `matched_existing_event` は `data/rdb_event_apply_plan.json` でNotion詳細欄への反映可否を判定する。山王音頭と民踊大会の11件は、Notion詳細欄に「追加動画: 11件」として要約反映済みなので重複追記しない。
+- X投稿からイベント正本への自動リンクは未実装。X投稿は `evidence_items` に保持し、後続で照合ルールを追加する。
+- `matched_existing_event` は、移行期には `data/rdb_event_apply_plan.json` で旧Notion詳細欄への反映可否を判定していた。通常運用ではMaster RDB側の反映計画へ寄せる。
 - 曲マスタ未登録候補は `data/rdb_song_review_source.json` から人間レビュー/決定ファイルを作って登録する。RDBから曲マスタへ無確認で直接追加しない。
 - YouTube 2025総浚いは、この横断DBを使って既存イベント・会場・曲と照合してから進める。

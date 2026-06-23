@@ -11,7 +11,7 @@ on:
         required: false
         default: '7'
       apply_reviewed:
-        description: 'レビュー済みJSONをNotionへ反映する'
+        description: 'レビュー済みJSONを legacy Notion-backed song/glossary flow へ反映する'
         required: false
         type: boolean
         default: false

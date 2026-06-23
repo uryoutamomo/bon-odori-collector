@@ -81,7 +81,8 @@ YouTube証拠DBの最小フィールド:
 - `x_candidate_post_reviews`: 候補アカウントの投稿レビュー結果。
 - `x_candidate_review_sample_posts`: 昇格判断に使った代表投稿。
 
-短期は `data/evidence.sqlite` を機械処理・分析用、Notionを人間レビューUIとして併用する。
+短期は `data/evidence.sqlite` を機械処理・分析用に使う。
+Notionは既存メモや明示的な手動レビュー用途に限定し、新しい既定レビューUIはJSON/HTMLまたはRDB側に寄せる。
 本番の正本DBへ移す場合も、このスキーマをそのまま土台にするのではなく、運用で必要な問い合わせから逆算して整理する。
 
 ## 現在の成果物

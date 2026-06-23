@@ -845,7 +845,7 @@ Ph1 後に解除候補とするのは、公開 export 側の2ファイルに限�
 3. RDB dry-run ingest
 4. audit
 5. apply
-6. RDB -> Notion 表示同期
+6. 旧設計: RDB -> Notion 表示同期（2026-06-23以降の通常運用では行わない）
 7. 公開 JSON export
 8. メール配信
 
@@ -1132,8 +1132,8 @@ Ph0/Ph1 dry-run では以下を必須にする。
 6. `event_series` / `event_occurrences` 取り込み。
 7. 日付昇格スクリプトの dual write 化。
 8. venues/songs の正本化。
-9. RDB -> Notion 表示同期。
-10. Notion -> RDB 昇格。
+9. 旧設計: RDB -> Notion 表示同期。
+10. 旧設計: Notion -> RDB 昇格。
 
 この順なら、Ph1で一番小さいユーザー影響範囲を使って ID、lock、監査、git永続化を検証できる。
 
