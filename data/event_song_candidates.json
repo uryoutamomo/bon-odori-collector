@@ -1,8 +1,8 @@
 {
   "generated_by": "build_event_song_candidates.py",
-  "count": 806,
+  "count": 807,
   "public_event_count": 321,
-  "review_count": 485,
+  "review_count": 486,
   "candidates": [
     {
       "id": "95829de52283f32f",
@@ -16194,6 +16194,28 @@
       "evidence_count": 8
     },
     {
+      "id": "5601812a20d2455b",
+      "song_name": "とか速度落とせば炭坑節",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/rijaccrijacc/status/2069478597153481133",
+          "date": "2026-06-23T17:52:01+00:00",
+          "text": "もうふ\nうたプリ盆踊り大会、、！\n曲目なんなんだろ、、、\nマジLOVE1000%とか速度落とせば炭坑節の振り付けとかなり合うと思う\n（そういうことじゃない"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
       "id": "f4008f63e09a50db",
       "song_name": "にっぽん花咲か音頭",
       "event_name": "盆踊り大会",
@@ -31324,10 +31346,16 @@
           "url": "https://www.youtube.com/watch?v=Rag_--g3Y9Q",
           "date": "2025-05-25T11:41:48Z",
           "text": "Tokyo Lonely Walker\n[4K]🇯🇵 【生演奏盆踊り】民謡ガールズバンド｜第5回 千住・人情芸術祭 1DAYパフォーマンス表現街 / Japanese Bon dance in Senjyu, Tokyo.\n東京の千住ほんちょう商店街で「第5回 千住・人情芸術祭 1DAYパフォーマンス表現街」が開催され、民謡ガールズバンドさんの生演奏盆踊りに行ってきました！\n民謡ガールズバンドさんの生唄・生演奏はとても素晴らしく、1時間のパフォーマンスはあっという間に過ぎていきました！\n多くの踊り手さんも参加され、大いに盛り上がりました！\nありがとうございました！！\n\nA Bon Odori dance with live music and singing was held in Kitasenju, Tokyo. The performance was performed by a Minyo Girls' Band was"
+        },
+        {
+          "source": "latest_news",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5uZlFSZ0JnSV9veU4xWVlUVUcwLU5MYzNucmlSa084ZlY0c3NQTVB5V1RuTmo4U0Jyb1RCUzZHMWlSc1ZtVDhRdVpWSnA0aUNuNEplcw?oc=5",
+          "date": "Wed, 24 Jun 2026 06:12:20 GMT",
+          "text": "すみだ錦糸町河内音頭大盆踊り（昨年の様子） - すみだ経済新聞"
         }
       ],
       "already_public": true,
-      "evidence_count": 23
+      "evidence_count": 24
     },
     {
       "id": "7a7fb49d90eeab18",

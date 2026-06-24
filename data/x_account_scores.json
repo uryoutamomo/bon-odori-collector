@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-23T16:17:53.012421+00:00",
+  "generated_at": "2026-06-24T09:54:51.164654+00:00",
   "accounts": {
     "2tsuo_g": {
       "handle": "@2tsuo_g",
-      "posts_seen": 34,
+      "posts_seen": 35,
       "valuable_posts": 13,
       "future_schedule_posts": 8,
       "noise_posts": 7,
-      "value_points": 196.0,
-      "last_seen": "2026-06-23T08:03:30+00:00",
+      "value_points": 199.0,
+      "last_seen": "2026-06-24T04:22:22+00:00",
       "top_reasons": {
+        "context": 24,
         "schedule_like": 2,
         "bon": 2,
-        "context": 23,
         "date_time": 6,
         "experience": 6,
         "link": 7,
@@ -20,18 +20,18 @@
         "media_hint": 1,
         "no_context": 7
       },
-      "recent_posts_seen": 34,
+      "recent_posts_seen": 35,
       "recent_valuable_posts": 13,
       "recent_future_schedule_posts": 8,
       "recent_noise_posts": 7,
-      "recent_value_points": 196.0,
-      "lifetime_score": 6.765,
-      "recent_score": 6.765,
+      "recent_value_points": 199.0,
+      "lifetime_score": 6.686,
+      "recent_score": 6.686,
       "recent_days": 30,
-      "quality_score": 6.765,
-      "score": 6.765,
-      "value_ratio": 0.382,
-      "recent_value_ratio": 0.382,
+      "quality_score": 6.686,
+      "score": 6.686,
+      "value_ratio": 0.371,
+      "recent_value_ratio": 0.371,
       "status": "trusted",
       "confidence": "high",
       "usefulness_rank": "S",
@@ -168,32 +168,32 @@
     },
     "agehabijo": {
       "handle": "@agehabijo",
-      "posts_seen": 11,
-      "valuable_posts": 11,
-      "future_schedule_posts": 2,
+      "posts_seen": 12,
+      "valuable_posts": 12,
+      "future_schedule_posts": 3,
       "noise_posts": 0,
-      "value_points": 155.0,
-      "last_seen": "2026-06-22T09:00:05+00:00",
+      "value_points": 175.0,
+      "last_seen": "2026-06-24T09:15:41+00:00",
       "top_reasons": {
-        "future_schedule": 2,
-        "bon": 10,
-        "context": 11,
-        "date_time": 8,
-        "link": 9,
+        "future_schedule": 3,
+        "bon": 11,
+        "context": 12,
+        "date_time": 9,
+        "link": 10,
         "schedule_like": 4,
         "experience": 2,
         "venue": 1
       },
-      "recent_posts_seen": 9,
-      "recent_valuable_posts": 9,
-      "recent_future_schedule_posts": 1,
+      "recent_posts_seen": 10,
+      "recent_valuable_posts": 10,
+      "recent_future_schedule_posts": 2,
       "recent_noise_posts": 0,
-      "recent_value_points": 120.0,
-      "lifetime_score": 18.091,
-      "recent_score": 16.933,
+      "recent_value_points": 140.0,
+      "lifetime_score": 18.583,
+      "recent_score": 18.0,
       "recent_days": 30,
-      "quality_score": 17.466,
-      "score": 17.466,
+      "quality_score": 18.233,
+      "score": 18.233,
       "value_ratio": 1.0,
       "recent_value_ratio": 1.0,
       "status": "trusted",
@@ -264,18 +264,18 @@
         "media_hint": 1,
         "future_schedule": 1
       },
-      "recent_posts_seen": 7,
-      "recent_valuable_posts": 4,
+      "recent_posts_seen": 6,
+      "recent_valuable_posts": 3,
       "recent_future_schedule_posts": 0,
       "recent_noise_posts": 0,
-      "recent_value_points": 54.0,
+      "recent_value_points": 40.0,
       "lifetime_score": 11.7,
-      "recent_score": 9.314,
+      "recent_score": 7.867,
       "recent_days": 30,
-      "quality_score": 10.698,
-      "score": 10.698,
+      "quality_score": 10.32,
+      "score": 10.32,
       "value_ratio": 0.571,
-      "recent_value_ratio": 0.571,
+      "recent_value_ratio": 0.5,
       "status": "trusted",
       "confidence": "high",
       "usefulness_rank": "S",
@@ -289,35 +289,35 @@
     },
     "bondbont": {
       "handle": "@bondbont",
-      "posts_seen": 114,
-      "valuable_posts": 56,
+      "posts_seen": 115,
+      "valuable_posts": 57,
       "future_schedule_posts": 8,
       "noise_posts": 2,
-      "value_points": 445.0,
-      "last_seen": "2026-06-23T15:15:35+00:00",
+      "value_points": 449.0,
+      "last_seen": "2026-06-24T08:17:48+00:00",
       "top_reasons": {
-        "link": 106,
+        "context": 53,
+        "link": 107,
         "experience": 7,
         "bon": 9,
-        "context": 52,
         "date_time": 15,
         "future_schedule": 8,
         "schedule_like": 2,
         "no_context": 2,
         "media_hint": 1
       },
-      "recent_posts_seen": 114,
-      "recent_valuable_posts": 56,
+      "recent_posts_seen": 115,
+      "recent_valuable_posts": 57,
       "recent_future_schedule_posts": 8,
       "recent_noise_posts": 2,
-      "recent_value_points": 445.0,
+      "recent_value_points": 449.0,
       "lifetime_score": 6.704,
       "recent_score": 6.704,
       "recent_days": 30,
       "quality_score": 6.704,
       "score": 6.704,
-      "value_ratio": 0.491,
-      "recent_value_ratio": 0.491,
+      "value_ratio": 0.496,
+      "recent_value_ratio": 0.496,
       "status": "trusted",
       "confidence": "high",
       "usefulness_rank": "S",
@@ -327,6 +327,44 @@
         "発見型",
         "裏取り型",
         "参加レポ型"
+      ]
+    },
+    "bonodorijapan": {
+      "handle": "@bonodorijapan",
+      "posts_seen": 10,
+      "valuable_posts": 9,
+      "future_schedule_posts": 1,
+      "noise_posts": 0,
+      "value_points": 93.0,
+      "last_seen": "2026-06-24T07:37:10+00:00",
+      "top_reasons": {
+        "bon": 7,
+        "context": 9,
+        "link": 10,
+        "future_schedule": 1,
+        "date_time": 3,
+        "schedule_like": 2
+      },
+      "recent_posts_seen": 10,
+      "recent_valuable_posts": 9,
+      "recent_future_schedule_posts": 1,
+      "recent_noise_posts": 0,
+      "recent_value_points": 93.0,
+      "lifetime_score": 12.9,
+      "recent_score": 12.9,
+      "recent_days": 30,
+      "quality_score": 12.9,
+      "score": 12.9,
+      "value_ratio": 0.9,
+      "recent_value_ratio": 0.9,
+      "status": "trusted",
+      "confidence": "high",
+      "usefulness_rank": "S",
+      "usefulness_rank_number": 5,
+      "usefulness_score": 100,
+      "role_tags": [
+        "発見型",
+        "裏取り型"
       ]
     },
     "hideshanbonbon": {
@@ -409,6 +447,47 @@
         "参加レポ型"
       ]
     },
+    "kasui21": {
+      "handle": "@kasui21",
+      "posts_seen": 16,
+      "valuable_posts": 8,
+      "future_schedule_posts": 2,
+      "noise_posts": 0,
+      "value_points": 103.0,
+      "last_seen": "2026-06-24T07:47:41+00:00",
+      "top_reasons": {
+        "schedule_like": 1,
+        "context": 10,
+        "date_time": 2,
+        "link": 7,
+        "future_schedule": 2,
+        "bon": 5,
+        "media_hint": 2,
+        "experience": 5
+      },
+      "recent_posts_seen": 16,
+      "recent_valuable_posts": 8,
+      "recent_future_schedule_posts": 2,
+      "recent_noise_posts": 0,
+      "recent_value_points": 103.0,
+      "lifetime_score": 9.637,
+      "recent_score": 9.637,
+      "recent_days": 30,
+      "quality_score": 9.637,
+      "score": 9.637,
+      "value_ratio": 0.5,
+      "recent_value_ratio": 0.5,
+      "status": "trusted",
+      "confidence": "high",
+      "usefulness_rank": "S",
+      "usefulness_rank_number": 5,
+      "usefulness_score": 100,
+      "role_tags": [
+        "発見型",
+        "裏取り型",
+        "参加レポ型"
+      ]
+    },
     "kaz0045": {
       "handle": "@kaz0045",
       "posts_seen": 17,
@@ -452,31 +531,31 @@
     },
     "kuma_bot999": {
       "handle": "@kuma_bot999",
-      "posts_seen": 13,
-      "valuable_posts": 13,
+      "posts_seen": 16,
+      "valuable_posts": 16,
       "future_schedule_posts": 1,
       "noise_posts": 0,
-      "value_points": 115.0,
-      "last_seen": "2026-06-22T23:46:00+00:00",
+      "value_points": 136.0,
+      "last_seen": "2026-06-24T08:07:00+00:00",
       "top_reasons": {
-        "bon": 13,
-        "context": 13,
+        "bon": 16,
+        "context": 16,
         "future_schedule": 1,
         "date_time": 1,
         "experience": 2,
         "media_hint": 1,
         "link": 5
       },
-      "recent_posts_seen": 11,
-      "recent_valuable_posts": 11,
+      "recent_posts_seen": 14,
+      "recent_valuable_posts": 14,
       "recent_future_schedule_posts": 1,
       "recent_noise_posts": 0,
-      "recent_value_points": 97.0,
-      "lifetime_score": 12.846,
-      "recent_score": 12.818,
+      "recent_value_points": 118.0,
+      "lifetime_score": 12.5,
+      "recent_score": 12.429,
       "recent_days": 30,
-      "quality_score": 12.829,
-      "score": 12.829,
+      "quality_score": 12.457,
+      "score": 12.457,
       "value_ratio": 1.0,
       "recent_value_ratio": 1.0,
       "status": "trusted",
@@ -609,34 +688,34 @@
     },
     "mu4324": {
       "handle": "@mu4324",
-      "posts_seen": 19,
-      "valuable_posts": 18,
+      "posts_seen": 20,
+      "valuable_posts": 19,
       "future_schedule_posts": 2,
       "noise_posts": 0,
-      "value_points": 187.0,
-      "last_seen": "2026-06-21T07:15:27+00:00",
+      "value_points": 200.0,
+      "last_seen": "2026-06-24T08:57:57+00:00",
       "top_reasons": {
-        "bon": 13,
-        "context": 18,
+        "bon": 14,
+        "context": 19,
+        "venue": 3,
+        "link": 7,
         "experience": 4,
-        "link": 6,
         "schedule_like": 1,
         "date_time": 10,
-        "future_schedule": 2,
-        "venue": 2
+        "future_schedule": 2
       },
-      "recent_posts_seen": 19,
-      "recent_valuable_posts": 18,
+      "recent_posts_seen": 20,
+      "recent_valuable_posts": 19,
       "recent_future_schedule_posts": 2,
       "recent_noise_posts": 0,
-      "recent_value_points": 187.0,
-      "lifetime_score": 13.842,
-      "recent_score": 13.842,
+      "recent_value_points": 200.0,
+      "lifetime_score": 14.0,
+      "recent_score": 14.0,
       "recent_days": 30,
-      "quality_score": 13.842,
-      "score": 13.842,
-      "value_ratio": 0.947,
-      "recent_value_ratio": 0.947,
+      "quality_score": 14.0,
+      "score": 14.0,
+      "value_ratio": 0.95,
+      "recent_value_ratio": 0.95,
       "status": "trusted",
       "confidence": "high",
       "usefulness_rank": "S",
@@ -651,35 +730,35 @@
     },
     "natsutr_bon": {
       "handle": "@natsutr_bon",
-      "posts_seen": 31,
-      "valuable_posts": 28,
-      "future_schedule_posts": 16,
+      "posts_seen": 32,
+      "valuable_posts": 29,
+      "future_schedule_posts": 17,
       "noise_posts": 0,
-      "value_points": 518.0,
-      "last_seen": "2026-06-21T10:31:36+00:00",
+      "value_points": 538.0,
+      "last_seen": "2026-06-24T01:38:23+00:00",
       "top_reasons": {
+        "future_schedule": 17,
+        "bon": 25,
+        "context": 31,
+        "date_time": 28,
+        "link": 27,
         "schedule_like": 2,
-        "context": 30,
-        "date_time": 27,
-        "future_schedule": 16,
-        "bon": 24,
-        "link": 26,
         "experience": 10,
         "media_hint": 1,
         "venue": 8
       },
-      "recent_posts_seen": 27,
-      "recent_valuable_posts": 24,
-      "recent_future_schedule_posts": 13,
+      "recent_posts_seen": 28,
+      "recent_valuable_posts": 25,
+      "recent_future_schedule_posts": 14,
       "recent_noise_posts": 0,
-      "recent_value_points": 426.0,
-      "lifetime_score": 20.71,
-      "recent_score": 19.778,
+      "recent_value_points": 446.0,
+      "lifetime_score": 20.812,
+      "recent_score": 19.929,
       "recent_days": 30,
-      "quality_score": 20.151,
-      "score": 20.151,
-      "value_ratio": 0.903,
-      "recent_value_ratio": 0.889,
+      "quality_score": 20.282,
+      "score": 20.282,
+      "value_ratio": 0.906,
+      "recent_value_ratio": 0.893,
       "status": "trusted",
       "confidence": "high",
       "usefulness_rank": "S",
@@ -694,21 +773,21 @@
     },
     "niinobon_uta": {
       "handle": "@niinobon_uta",
-      "posts_seen": 25,
-      "valuable_posts": 25,
+      "posts_seen": 26,
+      "valuable_posts": 26,
       "future_schedule_posts": 0,
       "noise_posts": 0,
-      "value_points": 175.0,
-      "last_seen": "2026-06-23T03:18:09+00:00",
+      "value_points": 182.0,
+      "last_seen": "2026-06-23T23:38:14+00:00",
       "top_reasons": {
-        "bon": 25,
-        "context": 25
+        "bon": 26,
+        "context": 26
       },
-      "recent_posts_seen": 25,
-      "recent_valuable_posts": 25,
+      "recent_posts_seen": 26,
+      "recent_valuable_posts": 26,
       "recent_future_schedule_posts": 0,
       "recent_noise_posts": 0,
-      "recent_value_points": 175.0,
+      "recent_value_points": 182.0,
       "lifetime_score": 11.0,
       "recent_score": 11.0,
       "recent_days": 30,
@@ -806,31 +885,31 @@
     },
     "odori2024minato": {
       "handle": "@odori2024minato",
-      "posts_seen": 10,
-      "valuable_posts": 10,
-      "future_schedule_posts": 4,
+      "posts_seen": 11,
+      "valuable_posts": 11,
+      "future_schedule_posts": 5,
       "noise_posts": 0,
-      "value_points": 143.0,
-      "last_seen": "2026-06-20T11:06:44+00:00",
+      "value_points": 156.0,
+      "last_seen": "2026-06-24T04:13:57+00:00",
       "top_reasons": {
+        "future_schedule": 5,
+        "context": 11,
+        "link": 6,
         "bon": 8,
-        "context": 10,
-        "link": 5,
-        "future_schedule": 4,
         "date_time": 5,
         "experience": 5,
         "venue": 2
       },
-      "recent_posts_seen": 4,
-      "recent_valuable_posts": 4,
-      "recent_future_schedule_posts": 1,
+      "recent_posts_seen": 5,
+      "recent_valuable_posts": 5,
+      "recent_future_schedule_posts": 2,
       "recent_noise_posts": 0,
-      "recent_value_points": 44.0,
-      "lifetime_score": 18.3,
-      "recent_score": 12.6,
+      "recent_value_points": 57.0,
+      "lifetime_score": 18.182,
+      "recent_score": 13.4,
       "recent_days": 30,
-      "quality_score": 16.932,
-      "score": 16.932,
+      "quality_score": 16.747,
+      "score": 16.747,
       "value_ratio": 1.0,
       "recent_value_ratio": 1.0,
       "status": "trusted",
@@ -847,36 +926,36 @@
     },
     "pink_daiamond_": {
       "handle": "@pink_daiamond_",
-      "posts_seen": 19,
-      "valuable_posts": 9,
+      "posts_seen": 20,
+      "valuable_posts": 10,
       "future_schedule_posts": 2,
       "noise_posts": 4,
-      "value_points": 102.0,
-      "last_seen": "2026-06-21T05:59:14+00:00",
+      "value_points": 113.0,
+      "last_seen": "2026-06-24T04:54:35+00:00",
       "top_reasons": {
+        "schedule_like": 2,
+        "context": 12,
+        "date_time": 4,
         "future_schedule": 2,
         "bon": 5,
-        "context": 11,
-        "date_time": 3,
         "venue": 2,
         "link": 8,
         "experience": 1,
         "media_hint": 2,
-        "schedule_like": 1,
         "no_context": 4
       },
-      "recent_posts_seen": 19,
-      "recent_valuable_posts": 9,
+      "recent_posts_seen": 20,
+      "recent_valuable_posts": 10,
       "recent_future_schedule_posts": 2,
       "recent_noise_posts": 4,
-      "recent_value_points": 102.0,
-      "lifetime_score": 6.568,
-      "recent_score": 6.568,
+      "recent_value_points": 113.0,
+      "lifetime_score": 7.25,
+      "recent_score": 7.25,
       "recent_days": 30,
-      "quality_score": 6.568,
-      "score": 6.568,
-      "value_ratio": 0.474,
-      "recent_value_ratio": 0.474,
+      "quality_score": 7.25,
+      "score": 7.25,
+      "value_ratio": 0.5,
+      "recent_value_ratio": 0.5,
       "status": "trusted",
       "confidence": "high",
       "usefulness_rank": "S",
@@ -891,33 +970,33 @@
     },
     "pw9skrdcfyjfxfv": {
       "handle": "@pw9skrdcfyjfxfv",
-      "posts_seen": 15,
-      "valuable_posts": 11,
-      "future_schedule_posts": 3,
+      "posts_seen": 16,
+      "valuable_posts": 12,
+      "future_schedule_posts": 4,
       "noise_posts": 0,
-      "value_points": 114.0,
-      "last_seen": "2026-06-22T04:16:56+00:00",
+      "value_points": 130.0,
+      "last_seen": "2026-06-24T02:56:40+00:00",
       "top_reasons": {
+        "future_schedule": 4,
+        "context": 12,
+        "date_time": 9,
+        "link": 10,
         "bon": 3,
-        "context": 11,
-        "link": 9,
-        "date_time": 8,
         "experience": 2,
-        "future_schedule": 3,
         "venue": 1
       },
-      "recent_posts_seen": 15,
-      "recent_valuable_posts": 11,
-      "recent_future_schedule_posts": 3,
+      "recent_posts_seen": 16,
+      "recent_valuable_posts": 12,
+      "recent_future_schedule_posts": 4,
       "recent_noise_posts": 0,
-      "recent_value_points": 114.0,
-      "lifetime_score": 11.6,
-      "recent_score": 11.6,
+      "recent_value_points": 130.0,
+      "lifetime_score": 12.125,
+      "recent_score": 12.125,
       "recent_days": 30,
-      "quality_score": 11.6,
-      "score": 11.6,
-      "value_ratio": 0.733,
-      "recent_value_ratio": 0.733,
+      "quality_score": 12.125,
+      "score": 12.125,
+      "value_ratio": 0.75,
+      "recent_value_ratio": 0.75,
       "status": "trusted",
       "confidence": "high",
       "usefulness_rank": "S",
@@ -932,32 +1011,32 @@
     },
     "qtjittan": {
       "handle": "@qtjittan",
-      "posts_seen": 40,
-      "valuable_posts": 10,
+      "posts_seen": 43,
+      "valuable_posts": 12,
       "future_schedule_posts": 0,
       "noise_posts": 0,
-      "value_points": 133.0,
-      "last_seen": "2026-06-23T12:20:22+00:00",
+      "value_points": 142.0,
+      "last_seen": "2026-06-24T03:23:08+00:00",
       "top_reasons": {
-        "experience": 8,
-        "link": 18,
-        "context": 20,
+        "link": 21,
+        "context": 21,
+        "experience": 9,
         "bon": 4,
         "media_hint": 3,
         "venue": 2
       },
-      "recent_posts_seen": 37,
-      "recent_valuable_posts": 7,
+      "recent_posts_seen": 40,
+      "recent_valuable_posts": 9,
       "recent_future_schedule_posts": 0,
       "recent_noise_posts": 0,
-      "recent_value_points": 99.0,
-      "lifetime_score": 7.325,
-      "recent_score": 5.476,
+      "recent_value_points": 108.0,
+      "lifetime_score": 7.302,
+      "recent_score": 6.3,
       "recent_days": 30,
-      "quality_score": 6.216,
-      "score": 6.216,
-      "value_ratio": 0.25,
-      "recent_value_ratio": 0.189,
+      "quality_score": 6.701,
+      "score": 6.701,
+      "value_ratio": 0.279,
+      "recent_value_ratio": 0.225,
       "status": "trusted",
       "confidence": "high",
       "usefulness_rank": "S",
@@ -971,33 +1050,33 @@
     },
     "rollingasahi": {
       "handle": "@rollingasahi",
-      "posts_seen": 12,
+      "posts_seen": 13,
       "valuable_posts": 12,
       "future_schedule_posts": 6,
       "noise_posts": 0,
-      "value_points": 183.0,
-      "last_seen": "2026-06-21T12:07:41+00:00",
+      "value_points": 184.0,
+      "last_seen": "2026-06-24T08:21:45+00:00",
       "top_reasons": {
+        "link": 8,
         "future_schedule": 6,
         "bon": 11,
         "context": 12,
-        "link": 7,
         "date_time": 8,
         "venue": 3,
         "schedule_like": 1
       },
-      "recent_posts_seen": 12,
+      "recent_posts_seen": 13,
       "recent_valuable_posts": 12,
       "recent_future_schedule_posts": 6,
       "recent_noise_posts": 0,
-      "recent_value_points": 183.0,
-      "lifetime_score": 19.25,
-      "recent_score": 19.25,
+      "recent_value_points": 184.0,
+      "lifetime_score": 18.154,
+      "recent_score": 18.154,
       "recent_days": 30,
-      "quality_score": 19.25,
-      "score": 19.25,
-      "value_ratio": 1.0,
-      "recent_value_ratio": 1.0,
+      "quality_score": 18.154,
+      "score": 18.154,
+      "value_ratio": 0.923,
+      "recent_value_ratio": 0.923,
       "status": "trusted",
       "confidence": "high",
       "usefulness_rank": "S",
@@ -1011,34 +1090,34 @@
     },
     "sasakichi_akiba": {
       "handle": "@sasakichi_akiba",
-      "posts_seen": 44,
-      "valuable_posts": 18,
-      "future_schedule_posts": 3,
+      "posts_seen": 45,
+      "valuable_posts": 19,
+      "future_schedule_posts": 4,
       "noise_posts": 0,
-      "value_points": 212.0,
-      "last_seen": "2026-06-23T04:57:02+00:00",
+      "value_points": 232.0,
+      "last_seen": "2026-06-24T03:46:22+00:00",
       "top_reasons": {
-        "link": 36,
-        "context": 21,
+        "future_schedule": 4,
+        "bon": 14,
+        "context": 22,
+        "date_time": 4,
+        "link": 37,
         "schedule_like": 1,
-        "bon": 13,
-        "date_time": 3,
         "media_hint": 6,
-        "future_schedule": 3,
         "experience": 2
       },
-      "recent_posts_seen": 44,
-      "recent_valuable_posts": 18,
-      "recent_future_schedule_posts": 3,
+      "recent_posts_seen": 45,
+      "recent_valuable_posts": 19,
+      "recent_future_schedule_posts": 4,
       "recent_noise_posts": 0,
-      "recent_value_points": 212.0,
-      "lifetime_score": 8.818,
-      "recent_score": 8.818,
+      "recent_value_points": 232.0,
+      "lifetime_score": 9.156,
+      "recent_score": 9.156,
       "recent_days": 30,
-      "quality_score": 8.818,
-      "score": 8.818,
-      "value_ratio": 0.409,
-      "recent_value_ratio": 0.409,
+      "quality_score": 9.156,
+      "score": 9.156,
+      "value_ratio": 0.422,
+      "recent_value_ratio": 0.422,
       "status": "trusted",
       "confidence": "high",
       "usefulness_rank": "S",
@@ -1131,6 +1210,45 @@
         "地域/会場型"
       ]
     },
+    "stba_bonodori": {
+      "handle": "@stba_bonodori",
+      "posts_seen": 10,
+      "valuable_posts": 9,
+      "future_schedule_posts": 2,
+      "noise_posts": 0,
+      "value_points": 106.0,
+      "last_seen": "2026-06-24T05:15:12+00:00",
+      "top_reasons": {
+        "schedule_like": 1,
+        "bon": 8,
+        "context": 10,
+        "date_time": 4,
+        "future_schedule": 2,
+        "link": 5,
+        "media_hint": 2
+      },
+      "recent_posts_seen": 7,
+      "recent_valuable_posts": 6,
+      "recent_future_schedule_posts": 2,
+      "recent_noise_posts": 0,
+      "recent_value_points": 78.0,
+      "lifetime_score": 14.2,
+      "recent_score": 13.543,
+      "recent_days": 30,
+      "quality_score": 13.924,
+      "score": 13.924,
+      "value_ratio": 0.9,
+      "recent_value_ratio": 0.857,
+      "status": "trusted",
+      "confidence": "high",
+      "usefulness_rank": "S",
+      "usefulness_rank_number": 5,
+      "usefulness_score": 100,
+      "role_tags": [
+        "発見型",
+        "裏取り型"
+      ]
+    },
     "tadashi_isono": {
       "handle": "@tadashi_isono",
       "posts_seen": 12,
@@ -1175,33 +1293,33 @@
     },
     "takasho06130613": {
       "handle": "@takasho06130613",
-      "posts_seen": 23,
+      "posts_seen": 29,
       "valuable_posts": 15,
       "future_schedule_posts": 4,
       "noise_posts": 0,
-      "value_points": 186.0,
-      "last_seen": "2026-06-23T14:05:55+00:00",
+      "value_points": 194.0,
+      "last_seen": "2026-06-24T08:06:00+00:00",
       "top_reasons": {
+        "link": 16,
+        "context": 18,
         "future_schedule": 4,
         "bon": 14,
-        "context": 17,
         "date_time": 8,
-        "link": 11,
         "venue": 1,
         "experience": 1
       },
-      "recent_posts_seen": 21,
+      "recent_posts_seen": 27,
       "recent_valuable_posts": 13,
       "recent_future_schedule_posts": 4,
       "recent_noise_posts": 0,
-      "recent_value_points": 169.0,
-      "lifetime_score": 12.087,
-      "recent_score": 12.048,
+      "recent_value_points": 177.0,
+      "lifetime_score": 10.69,
+      "recent_score": 10.556,
       "recent_days": 30,
-      "quality_score": 12.064,
-      "score": 12.064,
-      "value_ratio": 0.652,
-      "recent_value_ratio": 0.619,
+      "quality_score": 10.61,
+      "score": 10.61,
+      "value_ratio": 0.517,
+      "recent_value_ratio": 0.481,
       "status": "trusted",
       "confidence": "high",
       "usefulness_rank": "S",
@@ -1216,29 +1334,31 @@
     },
     "tashiro_kai": {
       "handle": "@tashiro_kai",
-      "posts_seen": 14,
-      "valuable_posts": 14,
-      "future_schedule_posts": 0,
+      "posts_seen": 15,
+      "valuable_posts": 15,
+      "future_schedule_posts": 1,
       "noise_posts": 0,
-      "value_points": 111.0,
-      "last_seen": "2026-06-12T13:42:20+00:00",
+      "value_points": 134.0,
+      "last_seen": "2026-06-24T05:31:20+00:00",
       "top_reasons": {
-        "bon": 14,
-        "context": 14,
-        "link": 7,
-        "experience": 1,
-        "media_hint": 1
+        "future_schedule": 1,
+        "bon": 15,
+        "context": 15,
+        "date_time": 1,
+        "media_hint": 2,
+        "link": 8,
+        "experience": 1
       },
-      "recent_posts_seen": 14,
-      "recent_valuable_posts": 14,
-      "recent_future_schedule_posts": 0,
+      "recent_posts_seen": 15,
+      "recent_valuable_posts": 15,
+      "recent_future_schedule_posts": 1,
       "recent_noise_posts": 0,
-      "recent_value_points": 111.0,
-      "lifetime_score": 11.929,
-      "recent_score": 11.929,
+      "recent_value_points": 134.0,
+      "lifetime_score": 12.933,
+      "recent_score": 12.933,
       "recent_days": 30,
-      "quality_score": 11.929,
-      "score": 11.929,
+      "quality_score": 12.933,
+      "score": 12.933,
       "value_ratio": 1.0,
       "recent_value_ratio": 1.0,
       "status": "trusted",
@@ -1247,38 +1367,39 @@
       "usefulness_rank_number": 5,
       "usefulness_score": 100,
       "role_tags": [
+        "発見型",
         "裏取り型",
         "参加レポ型"
       ]
     },
     "wadaikoch": {
       "handle": "@wadaikoch",
-      "posts_seen": 21,
-      "valuable_posts": 16,
+      "posts_seen": 22,
+      "valuable_posts": 17,
       "future_schedule_posts": 0,
       "noise_posts": 0,
-      "value_points": 98.0,
-      "last_seen": "2026-06-21T06:24:30+00:00",
+      "value_points": 106.0,
+      "last_seen": "2026-06-24T09:39:22+00:00",
       "top_reasons": {
-        "bon": 5,
-        "context": 16,
-        "link": 21,
+        "bon": 6,
+        "context": 17,
+        "link": 22,
         "schedule_like": 1,
         "date_time": 1,
         "media_hint": 1
       },
-      "recent_posts_seen": 21,
-      "recent_valuable_posts": 16,
+      "recent_posts_seen": 22,
+      "recent_valuable_posts": 17,
       "recent_future_schedule_posts": 0,
       "recent_noise_posts": 0,
-      "recent_value_points": 98.0,
-      "lifetime_score": 8.667,
-      "recent_score": 8.667,
+      "recent_value_points": 106.0,
+      "lifetime_score": 8.818,
+      "recent_score": 8.818,
       "recent_days": 30,
-      "quality_score": 8.667,
-      "score": 8.667,
-      "value_ratio": 0.762,
-      "recent_value_ratio": 0.762,
+      "quality_score": 8.818,
+      "score": 8.818,
+      "value_ratio": 0.773,
+      "recent_value_ratio": 0.773,
       "status": "trusted",
       "confidence": "high",
       "usefulness_rank": "S",
@@ -1447,6 +1568,45 @@
         "裏取り型"
       ]
     },
+    "event_fes": {
+      "handle": "@event_fes",
+      "posts_seen": 5,
+      "valuable_posts": 5,
+      "future_schedule_posts": 5,
+      "noise_posts": 0,
+      "value_points": 110.0,
+      "last_seen": "2026-06-24T01:15:49+00:00",
+      "top_reasons": {
+        "future_schedule": 5,
+        "bon": 5,
+        "context": 5,
+        "date_time": 5,
+        "link": 5,
+        "venue": 2
+      },
+      "recent_posts_seen": 5,
+      "recent_valuable_posts": 5,
+      "recent_future_schedule_posts": 5,
+      "recent_noise_posts": 0,
+      "recent_value_points": 110.0,
+      "lifetime_score": 24.0,
+      "recent_score": 24.0,
+      "recent_days": 30,
+      "quality_score": 24.0,
+      "score": 24.0,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "trusted",
+      "confidence": "medium",
+      "usefulness_rank": "A",
+      "usefulness_rank_number": 4,
+      "usefulness_score": 93.0,
+      "role_tags": [
+        "発見型",
+        "裏取り型",
+        "地域/会場型"
+      ]
+    },
     "isesakipop": {
       "handle": "@isesakipop",
       "posts_seen": 6,
@@ -1599,49 +1759,6 @@
         "裏取り型"
       ]
     },
-    "stardustkawachi": {
-      "handle": "@stardustkawachi",
-      "posts_seen": 5,
-      "valuable_posts": 5,
-      "future_schedule_posts": 3,
-      "noise_posts": 0,
-      "value_points": 95.0,
-      "last_seen": "2026-06-22T08:22:21+00:00",
-      "top_reasons": {
-        "future_schedule": 3,
-        "bon": 5,
-        "context": 5,
-        "media_hint": 4,
-        "link": 5,
-        "venue": 1,
-        "schedule_like": 1,
-        "date_time": 1,
-        "experience": 1
-      },
-      "recent_posts_seen": 5,
-      "recent_valuable_posts": 5,
-      "recent_future_schedule_posts": 3,
-      "recent_noise_posts": 0,
-      "recent_value_points": 95.0,
-      "lifetime_score": 21.0,
-      "recent_score": 21.0,
-      "recent_days": 30,
-      "quality_score": 21.0,
-      "score": 21.0,
-      "value_ratio": 1.0,
-      "recent_value_ratio": 1.0,
-      "status": "trusted",
-      "confidence": "medium",
-      "usefulness_rank": "A",
-      "usefulness_rank_number": 4,
-      "usefulness_score": 93.0,
-      "role_tags": [
-        "発見型",
-        "裏取り型",
-        "参加レポ型",
-        "地域/会場型"
-      ]
-    },
     "sunshinechoukai": {
       "handle": "@sunshinechoukai",
       "posts_seen": 6,
@@ -1658,16 +1775,16 @@
         "link": 5,
         "experience": 5
       },
-      "recent_posts_seen": 6,
-      "recent_valuable_posts": 6,
-      "recent_future_schedule_posts": 6,
+      "recent_posts_seen": 5,
+      "recent_valuable_posts": 5,
+      "recent_future_schedule_posts": 5,
       "recent_noise_posts": 0,
-      "recent_value_points": 134.0,
+      "recent_value_points": 112.0,
       "lifetime_score": 24.733,
-      "recent_score": 24.733,
+      "recent_score": 24.4,
       "recent_days": 30,
-      "quality_score": 24.733,
-      "score": 24.733,
+      "quality_score": 24.633,
+      "score": 24.633,
       "value_ratio": 1.0,
       "recent_value_ratio": 1.0,
       "status": "trusted",
@@ -1723,30 +1840,30 @@
     },
     "tomkamoshida": {
       "handle": "@tomkamoshida",
-      "posts_seen": 5,
-      "valuable_posts": 5,
-      "future_schedule_posts": 5,
+      "posts_seen": 6,
+      "valuable_posts": 6,
+      "future_schedule_posts": 6,
       "noise_posts": 0,
-      "value_points": 115.0,
-      "last_seen": "2026-06-22T07:36:59+00:00",
+      "value_points": 138.0,
+      "last_seen": "2026-06-24T03:33:03+00:00",
       "top_reasons": {
-        "future_schedule": 5,
-        "bon": 5,
-        "context": 5,
-        "date_time": 5,
-        "media_hint": 5,
-        "link": 5
+        "future_schedule": 6,
+        "bon": 6,
+        "context": 6,
+        "date_time": 6,
+        "media_hint": 6,
+        "link": 6
       },
-      "recent_posts_seen": 5,
-      "recent_valuable_posts": 5,
-      "recent_future_schedule_posts": 5,
+      "recent_posts_seen": 6,
+      "recent_valuable_posts": 6,
+      "recent_future_schedule_posts": 6,
       "recent_noise_posts": 0,
-      "recent_value_points": 115.0,
-      "lifetime_score": 25.0,
-      "recent_score": 25.0,
+      "recent_value_points": 138.0,
+      "lifetime_score": 25.4,
+      "recent_score": 25.4,
       "recent_days": 30,
-      "quality_score": 25.0,
-      "score": 25.0,
+      "quality_score": 25.4,
+      "score": 25.4,
       "value_ratio": 1.0,
       "recent_value_ratio": 1.0,
       "status": "trusted",
@@ -1757,6 +1874,86 @@
       "role_tags": [
         "発見型",
         "裏取り型"
+      ]
+    },
+    "sayokai": {
+      "handle": "@sayokai",
+      "posts_seen": 8,
+      "valuable_posts": 8,
+      "future_schedule_posts": 5,
+      "noise_posts": 0,
+      "value_points": 130.0,
+      "last_seen": "2026-06-24T06:44:44+00:00",
+      "top_reasons": {
+        "bon": 8,
+        "context": 8,
+        "date_time": 8,
+        "future_schedule": 5,
+        "schedule_like": 1
+      },
+      "recent_posts_seen": 8,
+      "recent_valuable_posts": 8,
+      "recent_future_schedule_posts": 5,
+      "recent_noise_posts": 0,
+      "recent_value_points": 130.0,
+      "lifetime_score": 19.45,
+      "recent_score": 19.45,
+      "recent_days": 30,
+      "quality_score": 19.45,
+      "score": 19.45,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "trusted",
+      "confidence": "medium",
+      "usefulness_rank": "A",
+      "usefulness_rank_number": 4,
+      "usefulness_score": 92.8,
+      "role_tags": [
+        "発見型",
+        "裏取り型"
+      ]
+    },
+    "stardustkawachi": {
+      "handle": "@stardustkawachi",
+      "posts_seen": 6,
+      "valuable_posts": 6,
+      "future_schedule_posts": 3,
+      "noise_posts": 0,
+      "value_points": 103.0,
+      "last_seen": "2026-06-24T04:29:52+00:00",
+      "top_reasons": {
+        "bon": 6,
+        "context": 6,
+        "link": 6,
+        "future_schedule": 3,
+        "media_hint": 4,
+        "venue": 1,
+        "schedule_like": 1,
+        "date_time": 1,
+        "experience": 1
+      },
+      "recent_posts_seen": 6,
+      "recent_valuable_posts": 6,
+      "recent_future_schedule_posts": 3,
+      "recent_noise_posts": 0,
+      "recent_value_points": 103.0,
+      "lifetime_score": 19.567,
+      "recent_score": 19.567,
+      "recent_days": 30,
+      "quality_score": 19.567,
+      "score": 19.567,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "trusted",
+      "confidence": "medium",
+      "usefulness_rank": "A",
+      "usefulness_rank_number": 4,
+      "usefulness_score": 92.8,
+      "role_tags": [
+        "発見型",
+        "裏取り型",
+        "参加レポ型",
+        "地域/会場型"
       ]
     },
     "bonodori_tais": {
@@ -1798,43 +1995,6 @@
         "発見型",
         "裏取り型",
         "地域/会場型"
-      ]
-    },
-    "sayokai": {
-      "handle": "@sayokai",
-      "posts_seen": 6,
-      "valuable_posts": 6,
-      "future_schedule_posts": 4,
-      "noise_posts": 0,
-      "value_points": 101.0,
-      "last_seen": "2026-06-19T00:46:14+00:00",
-      "top_reasons": {
-        "bon": 6,
-        "context": 6,
-        "date_time": 6,
-        "future_schedule": 4,
-        "schedule_like": 1
-      },
-      "recent_posts_seen": 6,
-      "recent_valuable_posts": 6,
-      "recent_future_schedule_posts": 4,
-      "recent_noise_posts": 0,
-      "recent_value_points": 101.0,
-      "lifetime_score": 19.233,
-      "recent_score": 19.233,
-      "recent_days": 30,
-      "quality_score": 19.233,
-      "score": 19.233,
-      "value_ratio": 1.0,
-      "recent_value_ratio": 1.0,
-      "status": "trusted",
-      "confidence": "medium",
-      "usefulness_rank": "A",
-      "usefulness_rank_number": 4,
-      "usefulness_score": 92.7,
-      "role_tags": [
-        "発見型",
-        "裏取り型"
       ]
     },
     "anisondisco": {
@@ -2072,6 +2232,45 @@
         "裏取り型"
       ]
     },
+    "wannyantanookan": {
+      "handle": "@wannyantanookan",
+      "posts_seen": 5,
+      "valuable_posts": 5,
+      "future_schedule_posts": 2,
+      "noise_posts": 0,
+      "value_points": 64.0,
+      "last_seen": "2026-06-24T08:02:59+00:00",
+      "top_reasons": {
+        "future_schedule": 2,
+        "bon": 5,
+        "context": 5,
+        "date_time": 2,
+        "experience": 1,
+        "link": 2
+      },
+      "recent_posts_seen": 5,
+      "recent_valuable_posts": 5,
+      "recent_future_schedule_posts": 2,
+      "recent_noise_posts": 0,
+      "recent_value_points": 64.0,
+      "lifetime_score": 14.8,
+      "recent_score": 14.8,
+      "recent_days": 30,
+      "quality_score": 14.8,
+      "score": 14.8,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "trusted",
+      "confidence": "medium",
+      "usefulness_rank": "A",
+      "usefulness_rank_number": 4,
+      "usefulness_score": 90.9,
+      "role_tags": [
+        "発見型",
+        "裏取り型",
+        "参加レポ型"
+      ]
+    },
     "dreadyarou": {
       "handle": "@dreadyarou",
       "posts_seen": 5,
@@ -2109,6 +2308,41 @@
         "発見型",
         "裏取り型",
         "参加レポ型"
+      ]
+    },
+    "gengoevents": {
+      "handle": "@gengoevents",
+      "posts_seen": 6,
+      "valuable_posts": 6,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 66.0,
+      "last_seen": "2026-06-24T06:10:37+00:00",
+      "top_reasons": {
+        "bon": 6,
+        "context": 6,
+        "date_time": 6,
+        "link": 6
+      },
+      "recent_posts_seen": 6,
+      "recent_valuable_posts": 6,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 66.0,
+      "lifetime_score": 13.4,
+      "recent_score": 13.4,
+      "recent_days": 30,
+      "quality_score": 13.4,
+      "score": 13.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "trusted",
+      "confidence": "medium",
+      "usefulness_rank": "A",
+      "usefulness_rank_number": 4,
+      "usefulness_score": 90.4,
+      "role_tags": [
+        "裏取り型"
       ]
     },
     "qucdgpgcz0ydzqc": {
@@ -2266,44 +2500,6 @@
         "裏取り型"
       ]
     },
-    "stba_bonodori": {
-      "handle": "@stba_bonodori",
-      "posts_seen": 9,
-      "valuable_posts": 8,
-      "future_schedule_posts": 2,
-      "noise_posts": 0,
-      "value_points": 91.0,
-      "last_seen": "2026-06-23T00:25:19+00:00",
-      "top_reasons": {
-        "context": 9,
-        "bon": 7,
-        "future_schedule": 2,
-        "date_time": 3,
-        "link": 5,
-        "media_hint": 2
-      },
-      "recent_posts_seen": 6,
-      "recent_valuable_posts": 5,
-      "recent_future_schedule_posts": 2,
-      "recent_noise_posts": 0,
-      "recent_value_points": 63.0,
-      "lifetime_score": 13.311,
-      "recent_score": 12.5,
-      "recent_days": 30,
-      "quality_score": 13.019,
-      "score": 13.019,
-      "value_ratio": 0.889,
-      "recent_value_ratio": 0.833,
-      "status": "trusted",
-      "confidence": "medium",
-      "usefulness_rank": "A",
-      "usefulness_rank_number": 4,
-      "usefulness_score": 89.8,
-      "role_tags": [
-        "発見型",
-        "裏取り型"
-      ]
-    },
     "vnhntlevfykvkry": {
       "handle": "@vnhntlevfykvkry",
       "posts_seen": 5,
@@ -2410,43 +2606,6 @@
         "参加レポ型"
       ]
     },
-    "bonodorijapan": {
-      "handle": "@bonodorijapan",
-      "posts_seen": 8,
-      "valuable_posts": 7,
-      "future_schedule_posts": 0,
-      "noise_posts": 0,
-      "value_points": 65.0,
-      "last_seen": "2026-06-22T06:16:07+00:00",
-      "top_reasons": {
-        "bon": 5,
-        "context": 7,
-        "link": 8,
-        "schedule_like": 2,
-        "date_time": 2
-      },
-      "recent_posts_seen": 8,
-      "recent_valuable_posts": 7,
-      "recent_future_schedule_posts": 0,
-      "recent_noise_posts": 0,
-      "recent_value_points": 65.0,
-      "lifetime_score": 10.925,
-      "recent_score": 10.925,
-      "recent_days": 30,
-      "quality_score": 10.925,
-      "score": 10.925,
-      "value_ratio": 0.875,
-      "recent_value_ratio": 0.875,
-      "status": "trusted",
-      "confidence": "medium",
-      "usefulness_rank": "A",
-      "usefulness_rank_number": 4,
-      "usefulness_score": 88.9,
-      "role_tags": [
-        "発見型",
-        "裏取り型"
-      ]
-    },
     "8_mame": {
       "handle": "@8_mame",
       "posts_seen": 6,
@@ -2547,44 +2706,41 @@
         "発見型"
       ]
     },
-    "kasui21": {
-      "handle": "@kasui21",
-      "posts_seen": 14,
-      "valuable_posts": 6,
+    "gokuraku_15": {
+      "handle": "@gokuraku_15",
+      "posts_seen": 13,
+      "valuable_posts": 7,
       "future_schedule_posts": 1,
       "noise_posts": 0,
-      "value_points": 75.0,
-      "last_seen": "2026-06-22T00:55:20+00:00",
+      "value_points": 54.0,
+      "last_seen": "2026-06-24T06:42:18+00:00",
       "top_reasons": {
-        "context": 8,
-        "bon": 4,
-        "media_hint": 2,
-        "link": 6,
-        "experience": 5,
+        "date_time": 8,
+        "link": 11,
         "future_schedule": 1,
-        "date_time": 1
+        "venue": 2
       },
-      "recent_posts_seen": 14,
-      "recent_valuable_posts": 6,
+      "recent_posts_seen": 11,
+      "recent_valuable_posts": 5,
       "recent_future_schedule_posts": 1,
       "recent_noise_posts": 0,
-      "recent_value_points": 75.0,
-      "lifetime_score": 7.757,
-      "recent_score": 7.757,
+      "recent_value_points": 37.0,
+      "lifetime_score": 6.954,
+      "recent_score": 5.364,
       "recent_days": 30,
-      "quality_score": 7.757,
-      "score": 7.757,
-      "value_ratio": 0.429,
-      "recent_value_ratio": 0.429,
+      "quality_score": 6.0,
+      "score": 6.0,
+      "value_ratio": 0.538,
+      "recent_value_ratio": 0.455,
       "status": "trusted",
       "confidence": "medium",
       "usefulness_rank": "A",
       "usefulness_rank_number": 4,
-      "usefulness_score": 85.8,
+      "usefulness_score": 85.6,
       "role_tags": [
         "発見型",
         "裏取り型",
-        "参加レポ型"
+        "地域/会場型"
       ]
     },
     "bremen_ohshima": {
@@ -2625,43 +2781,6 @@
         "発見型",
         "裏取り型",
         "参加レポ型",
-        "地域/会場型"
-      ]
-    },
-    "gokuraku_15": {
-      "handle": "@gokuraku_15",
-      "posts_seen": 12,
-      "valuable_posts": 6,
-      "future_schedule_posts": 1,
-      "noise_posts": 0,
-      "value_points": 50.0,
-      "last_seen": "2026-06-22T16:09:08+00:00",
-      "top_reasons": {
-        "link": 10,
-        "date_time": 7,
-        "future_schedule": 1,
-        "venue": 2
-      },
-      "recent_posts_seen": 10,
-      "recent_valuable_posts": 4,
-      "recent_future_schedule_posts": 1,
-      "recent_noise_posts": 0,
-      "recent_value_points": 33.0,
-      "lifetime_score": 6.567,
-      "recent_score": 4.9,
-      "recent_days": 30,
-      "quality_score": 5.567,
-      "score": 5.567,
-      "value_ratio": 0.5,
-      "recent_value_ratio": 0.4,
-      "status": "active",
-      "confidence": "medium",
-      "usefulness_rank": "A",
-      "usefulness_rank_number": 4,
-      "usefulness_score": 85.2,
-      "role_tags": [
-        "発見型",
-        "裏取り型",
         "地域/会場型"
       ]
     },
@@ -2706,82 +2825,6 @@
         "参加レポ型"
       ]
     },
-    "okeeboho": {
-      "handle": "@okeeboho",
-      "posts_seen": 5,
-      "valuable_posts": 3,
-      "future_schedule_posts": 1,
-      "noise_posts": 0,
-      "value_points": 37.0,
-      "last_seen": "2026-06-15T16:10:17+00:00",
-      "top_reasons": {
-        "future_schedule": 1,
-        "bon": 2,
-        "context": 2,
-        "date_time": 1,
-        "experience": 2,
-        "link": 5
-      },
-      "recent_posts_seen": 4,
-      "recent_valuable_posts": 2,
-      "recent_future_schedule_posts": 1,
-      "recent_noise_posts": 0,
-      "recent_value_points": 29.0,
-      "lifetime_score": 8.6,
-      "recent_score": 8.05,
-      "recent_days": 30,
-      "quality_score": 8.468,
-      "score": 8.468,
-      "value_ratio": 0.6,
-      "recent_value_ratio": 0.5,
-      "status": "trusted",
-      "confidence": "medium",
-      "usefulness_rank": "A",
-      "usefulness_rank_number": 4,
-      "usefulness_score": 84.8,
-      "role_tags": [
-        "発見型",
-        "裏取り型",
-        "参加レポ型"
-      ]
-    },
-    "middonaitogaru": {
-      "handle": "@middonaitogaru",
-      "posts_seen": 18,
-      "valuable_posts": 6,
-      "future_schedule_posts": 0,
-      "noise_posts": 0,
-      "value_points": 65.0,
-      "last_seen": "2026-06-23T03:09:18+00:00",
-      "top_reasons": {
-        "context": 6,
-        "media_hint": 2,
-        "link": 11,
-        "bon": 5,
-        "experience": 4
-      },
-      "recent_posts_seen": 18,
-      "recent_valuable_posts": 6,
-      "recent_future_schedule_posts": 0,
-      "recent_noise_posts": 0,
-      "recent_value_points": 65.0,
-      "lifetime_score": 6.011,
-      "recent_score": 6.011,
-      "recent_days": 30,
-      "quality_score": 6.011,
-      "score": 6.011,
-      "value_ratio": 0.333,
-      "recent_value_ratio": 0.333,
-      "status": "trusted",
-      "confidence": "medium",
-      "usefulness_rank": "A",
-      "usefulness_rank_number": 4,
-      "usefulness_score": 84.7,
-      "role_tags": [
-        "裏取り型",
-        "参加レポ型"
-      ]
-    },
     "komaikai": {
       "handle": "@komaikai",
       "posts_seen": 7,
@@ -2817,6 +2860,43 @@
       "role_tags": [
         "発見型",
         "裏取り型"
+      ]
+    },
+    "middonaitogaru": {
+      "handle": "@middonaitogaru",
+      "posts_seen": 20,
+      "valuable_posts": 6,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 67.0,
+      "last_seen": "2026-06-24T08:47:30+00:00",
+      "top_reasons": {
+        "link": 13,
+        "context": 6,
+        "media_hint": 2,
+        "bon": 5,
+        "experience": 4
+      },
+      "recent_posts_seen": 20,
+      "recent_valuable_posts": 6,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 67.0,
+      "lifetime_score": 5.75,
+      "recent_score": 5.75,
+      "recent_days": 30,
+      "quality_score": 5.75,
+      "score": 5.75,
+      "value_ratio": 0.3,
+      "recent_value_ratio": 0.3,
+      "status": "active",
+      "confidence": "medium",
+      "usefulness_rank": "A",
+      "usefulness_rank_number": 4,
+      "usefulness_score": 84.5,
+      "role_tags": [
+        "裏取り型",
+        "参加レポ型"
       ]
     },
     "mimi33yuyu26na": {
@@ -2931,6 +3011,45 @@
       "usefulness_rank_number": 4,
       "usefulness_score": 84.2,
       "role_tags": [
+        "裏取り型",
+        "参加レポ型"
+      ]
+    },
+    "okeeboho": {
+      "handle": "@okeeboho",
+      "posts_seen": 6,
+      "valuable_posts": 3,
+      "future_schedule_posts": 1,
+      "noise_posts": 0,
+      "value_points": 38.0,
+      "last_seen": "2026-06-24T08:27:57+00:00",
+      "top_reasons": {
+        "link": 6,
+        "future_schedule": 1,
+        "bon": 2,
+        "context": 2,
+        "date_time": 1,
+        "experience": 2
+      },
+      "recent_posts_seen": 5,
+      "recent_valuable_posts": 2,
+      "recent_future_schedule_posts": 1,
+      "recent_noise_posts": 0,
+      "recent_value_points": 30.0,
+      "lifetime_score": 7.533,
+      "recent_score": 6.8,
+      "recent_days": 30,
+      "quality_score": 7.313,
+      "score": 7.313,
+      "value_ratio": 0.5,
+      "recent_value_ratio": 0.4,
+      "status": "trusted",
+      "confidence": "medium",
+      "usefulness_rank": "A",
+      "usefulness_rank_number": 4,
+      "usefulness_score": 83.9,
+      "role_tags": [
+        "発見型",
         "裏取り型",
         "参加レポ型"
       ]
@@ -3054,6 +3173,43 @@
         "地域/会場型"
       ]
     },
+    "streamerpress": {
+      "handle": "@streamerpress",
+      "posts_seen": 4,
+      "valuable_posts": 4,
+      "future_schedule_posts": 3,
+      "noise_posts": 0,
+      "value_points": 71.0,
+      "last_seen": "2026-06-24T09:08:17+00:00",
+      "top_reasons": {
+        "bon": 4,
+        "context": 4,
+        "date_time": 4,
+        "link": 4,
+        "future_schedule": 3
+      },
+      "recent_posts_seen": 4,
+      "recent_valuable_posts": 4,
+      "recent_future_schedule_posts": 3,
+      "recent_noise_posts": 0,
+      "recent_value_points": 71.0,
+      "lifetime_score": 19.35,
+      "recent_score": 19.35,
+      "recent_days": 30,
+      "quality_score": 19.35,
+      "score": 19.35,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "trusted",
+      "confidence": "low",
+      "usefulness_rank": "B",
+      "usefulness_rank_number": 3,
+      "usefulness_score": 70.7,
+      "role_tags": [
+        "発見型",
+        "裏取り型"
+      ]
+    },
     "nyantokonyan": {
       "handle": "@nyantokonyan",
       "posts_seen": 3,
@@ -3119,43 +3275,6 @@
       "recent_days": 30,
       "quality_score": 20.867,
       "score": 20.867,
-      "value_ratio": 1.0,
-      "recent_value_ratio": 1.0,
-      "status": "trusted",
-      "confidence": "low",
-      "usefulness_rank": "B",
-      "usefulness_rank_number": 3,
-      "usefulness_score": 70.0,
-      "role_tags": [
-        "発見型",
-        "裏取り型"
-      ]
-    },
-    "streamerpress": {
-      "handle": "@streamerpress",
-      "posts_seen": 3,
-      "valuable_posts": 3,
-      "future_schedule_posts": 3,
-      "noise_posts": 0,
-      "value_points": 60.0,
-      "last_seen": "2026-06-20T04:04:31+00:00",
-      "top_reasons": {
-        "future_schedule": 3,
-        "bon": 3,
-        "context": 3,
-        "date_time": 3,
-        "link": 3
-      },
-      "recent_posts_seen": 3,
-      "recent_valuable_posts": 3,
-      "recent_future_schedule_posts": 3,
-      "recent_noise_posts": 0,
-      "recent_value_points": 60.0,
-      "lifetime_score": 21.2,
-      "recent_score": 21.2,
-      "recent_days": 30,
-      "quality_score": 21.2,
-      "score": 21.2,
       "value_ratio": 1.0,
       "recent_value_ratio": 1.0,
       "status": "trusted",
@@ -3328,6 +3447,43 @@
         "裏取り型"
       ]
     },
+    "esutoru26": {
+      "handle": "@esutoru26",
+      "posts_seen": 3,
+      "valuable_posts": 3,
+      "future_schedule_posts": 2,
+      "noise_posts": 0,
+      "value_points": 51.0,
+      "last_seen": "2026-06-24T09:52:13+00:00",
+      "top_reasons": {
+        "future_schedule": 2,
+        "bon": 3,
+        "context": 3,
+        "date_time": 3,
+        "link": 3
+      },
+      "recent_posts_seen": 3,
+      "recent_valuable_posts": 3,
+      "recent_future_schedule_posts": 2,
+      "recent_noise_posts": 0,
+      "recent_value_points": 51.0,
+      "lifetime_score": 18.2,
+      "recent_score": 18.2,
+      "recent_days": 30,
+      "quality_score": 18.2,
+      "score": 18.2,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "trusted",
+      "confidence": "low",
+      "usefulness_rank": "B",
+      "usefulness_rank_number": 3,
+      "usefulness_score": 69.3,
+      "role_tags": [
+        "発見型",
+        "裏取り型"
+      ]
+    },
     "midorimushi54": {
       "handle": "@midorimushi54",
       "posts_seen": 3,
@@ -3478,45 +3634,6 @@
       "role_tags": [
         "発見型",
         "裏取り型"
-      ]
-    },
-    "event_fes": {
-      "handle": "@event_fes",
-      "posts_seen": 2,
-      "valuable_posts": 2,
-      "future_schedule_posts": 2,
-      "noise_posts": 0,
-      "value_points": 45.0,
-      "last_seen": "2026-06-23T00:38:56+00:00",
-      "top_reasons": {
-        "future_schedule": 2,
-        "bon": 2,
-        "context": 2,
-        "date_time": 2,
-        "link": 2,
-        "venue": 1
-      },
-      "recent_posts_seen": 2,
-      "recent_valuable_posts": 2,
-      "recent_future_schedule_posts": 2,
-      "recent_noise_posts": 0,
-      "recent_value_points": 45.0,
-      "lifetime_score": 23.3,
-      "recent_score": 23.3,
-      "recent_days": 30,
-      "quality_score": 23.3,
-      "score": 23.3,
-      "value_ratio": 1.0,
-      "recent_value_ratio": 1.0,
-      "status": "active",
-      "confidence": "low",
-      "usefulness_rank": "B",
-      "usefulness_rank_number": 3,
-      "usefulness_score": 69.0,
-      "role_tags": [
-        "発見型",
-        "裏取り型",
-        "地域/会場型"
       ]
     },
     "furusato_tokyo": {
@@ -3710,6 +3827,45 @@
         "裏取り型"
       ]
     },
+    "ikebukuro_times": {
+      "handle": "@ikebukuro_times",
+      "posts_seen": 2,
+      "valuable_posts": 2,
+      "future_schedule_posts": 2,
+      "noise_posts": 0,
+      "value_points": 45.0,
+      "last_seen": "2026-06-24T03:00:02+00:00",
+      "top_reasons": {
+        "future_schedule": 2,
+        "bon": 2,
+        "context": 2,
+        "date_time": 2,
+        "venue": 1,
+        "link": 2
+      },
+      "recent_posts_seen": 2,
+      "recent_valuable_posts": 2,
+      "recent_future_schedule_posts": 2,
+      "recent_noise_posts": 0,
+      "recent_value_points": 45.0,
+      "lifetime_score": 23.3,
+      "recent_score": 23.3,
+      "recent_days": 30,
+      "quality_score": 23.3,
+      "score": 23.3,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "B",
+      "usefulness_rank_number": 3,
+      "usefulness_score": 69.0,
+      "role_tags": [
+        "発見型",
+        "裏取り型",
+        "地域/会場型"
+      ]
+    },
     "jmbd62kkvdqtng4": {
       "handle": "@jmbd62kkvdqtng4",
       "posts_seen": 2,
@@ -3821,6 +3977,45 @@
       "role_tags": [
         "発見型",
         "裏取り型"
+      ]
+    },
+    "m_sh_30171": {
+      "handle": "@m_sh_30171",
+      "posts_seen": 2,
+      "valuable_posts": 2,
+      "future_schedule_posts": 2,
+      "noise_posts": 0,
+      "value_points": 43.0,
+      "last_seen": "2026-06-24T04:44:03+00:00",
+      "top_reasons": {
+        "future_schedule": 2,
+        "bon": 2,
+        "context": 2,
+        "date_time": 2,
+        "experience": 1,
+        "link": 2
+      },
+      "recent_posts_seen": 2,
+      "recent_valuable_posts": 2,
+      "recent_future_schedule_posts": 2,
+      "recent_noise_posts": 0,
+      "recent_value_points": 43.0,
+      "lifetime_score": 22.3,
+      "recent_score": 22.3,
+      "recent_days": 30,
+      "quality_score": 22.3,
+      "score": 22.3,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "B",
+      "usefulness_rank_number": 3,
+      "usefulness_score": 69.0,
+      "role_tags": [
+        "発見型",
+        "裏取り型",
+        "参加レポ型"
       ]
     },
     "midorijichikyo": {
@@ -4463,6 +4658,45 @@
         "地域/会場型"
       ]
     },
+    "indexebni": {
+      "handle": "@indexebni",
+      "posts_seen": 2,
+      "valuable_posts": 2,
+      "future_schedule_posts": 1,
+      "noise_posts": 0,
+      "value_points": 36.0,
+      "last_seen": "2026-06-24T00:10:57+00:00",
+      "top_reasons": {
+        "future_schedule": 1,
+        "bon": 2,
+        "context": 2,
+        "date_time": 2,
+        "venue": 1,
+        "link": 2
+      },
+      "recent_posts_seen": 2,
+      "recent_valuable_posts": 2,
+      "recent_future_schedule_posts": 1,
+      "recent_noise_posts": 0,
+      "recent_value_points": 36.0,
+      "lifetime_score": 18.8,
+      "recent_score": 18.8,
+      "recent_days": 30,
+      "quality_score": 18.8,
+      "score": 18.8,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "B",
+      "usefulness_rank_number": 3,
+      "usefulness_score": 68.5,
+      "role_tags": [
+        "発見型",
+        "裏取り型",
+        "地域/会場型"
+      ]
+    },
     "tomohikos": {
       "handle": "@tomohikos",
       "posts_seen": 4,
@@ -4692,41 +4926,6 @@
       "usefulness_score": 68.1,
       "role_tags": [
         "発見型",
-        "裏取り型"
-      ]
-    },
-    "gengoevents": {
-      "handle": "@gengoevents",
-      "posts_seen": 4,
-      "valuable_posts": 4,
-      "future_schedule_posts": 0,
-      "noise_posts": 0,
-      "value_points": 44.0,
-      "last_seen": "2026-06-23T12:34:23+00:00",
-      "top_reasons": {
-        "bon": 4,
-        "context": 4,
-        "date_time": 4,
-        "link": 4
-      },
-      "recent_posts_seen": 4,
-      "recent_valuable_posts": 4,
-      "recent_future_schedule_posts": 0,
-      "recent_noise_posts": 0,
-      "recent_value_points": 44.0,
-      "lifetime_score": 12.6,
-      "recent_score": 12.6,
-      "recent_days": 30,
-      "quality_score": 12.6,
-      "score": 12.6,
-      "value_ratio": 1.0,
-      "recent_value_ratio": 1.0,
-      "status": "trusted",
-      "confidence": "low",
-      "usefulness_rank": "B",
-      "usefulness_rank_number": 3,
-      "usefulness_score": 68.0,
-      "role_tags": [
         "裏取り型"
       ]
     },
@@ -5028,43 +5227,6 @@
         "裏取り型"
       ]
     },
-    "wannyantanookan": {
-      "handle": "@wannyantanookan",
-      "posts_seen": 4,
-      "valuable_posts": 4,
-      "future_schedule_posts": 1,
-      "noise_posts": 0,
-      "value_points": 42.0,
-      "last_seen": "2026-06-20T08:02:56+00:00",
-      "top_reasons": {
-        "bon": 4,
-        "context": 4,
-        "link": 2,
-        "future_schedule": 1,
-        "date_time": 1
-      },
-      "recent_posts_seen": 4,
-      "recent_valuable_posts": 4,
-      "recent_future_schedule_posts": 1,
-      "recent_noise_posts": 0,
-      "recent_value_points": 42.0,
-      "lifetime_score": 12.1,
-      "recent_score": 12.1,
-      "recent_days": 30,
-      "quality_score": 12.1,
-      "score": 12.1,
-      "value_ratio": 1.0,
-      "recent_value_ratio": 1.0,
-      "status": "trusted",
-      "confidence": "low",
-      "usefulness_rank": "B",
-      "usefulness_rank_number": 3,
-      "usefulness_score": 67.8,
-      "role_tags": [
-        "発見型",
-        "裏取り型"
-      ]
-    },
     "20wyume": {
       "handle": "@20wyume",
       "posts_seen": 2,
@@ -5101,32 +5263,32 @@
     },
     "akane_withd": {
       "handle": "@akane_withd",
-      "posts_seen": 2,
-      "valuable_posts": 2,
+      "posts_seen": 3,
+      "valuable_posts": 3,
       "future_schedule_posts": 1,
       "noise_posts": 0,
-      "value_points": 32.0,
-      "last_seen": "2026-06-23T14:36:31+00:00",
+      "value_points": 39.0,
+      "last_seen": "2026-06-23T22:08:44+00:00",
       "top_reasons": {
+        "bon": 3,
+        "context": 3,
         "future_schedule": 1,
-        "bon": 2,
-        "context": 2,
         "media_hint": 1,
         "experience": 2
       },
-      "recent_posts_seen": 2,
-      "recent_valuable_posts": 2,
+      "recent_posts_seen": 3,
+      "recent_valuable_posts": 3,
       "recent_future_schedule_posts": 1,
       "recent_noise_posts": 0,
-      "recent_value_points": 32.0,
-      "lifetime_score": 16.8,
-      "recent_score": 16.8,
+      "recent_value_points": 39.0,
+      "lifetime_score": 14.2,
+      "recent_score": 14.2,
       "recent_days": 30,
-      "quality_score": 16.8,
-      "score": 16.8,
+      "quality_score": 14.2,
+      "score": 14.2,
       "value_ratio": 1.0,
       "recent_value_ratio": 1.0,
-      "status": "active",
+      "status": "trusted",
       "confidence": "low",
       "usefulness_rank": "B",
       "usefulness_rank_number": 3,
@@ -5178,6 +5340,43 @@
         "地域/会場型"
       ]
     },
+    "ryukyutimes": {
+      "handle": "@ryukyutimes",
+      "posts_seen": 2,
+      "valuable_posts": 2,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 32.0,
+      "last_seen": "2026-06-24T09:15:01+00:00",
+      "top_reasons": {
+        "schedule_like": 2,
+        "bon": 2,
+        "context": 2,
+        "date_time": 2,
+        "link": 2
+      },
+      "recent_posts_seen": 2,
+      "recent_valuable_posts": 2,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 32.0,
+      "lifetime_score": 16.8,
+      "recent_score": 16.8,
+      "recent_days": 30,
+      "quality_score": 16.8,
+      "score": 16.8,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "B",
+      "usefulness_rank_number": 3,
+      "usefulness_score": 67.7,
+      "role_tags": [
+        "発見型",
+        "裏取り型"
+      ]
+    },
     "sing4momo": {
       "handle": "@sing4momo",
       "posts_seen": 2,
@@ -5213,43 +5412,6 @@
       "role_tags": [
         "裏取り型",
         "地域/会場型"
-      ]
-    },
-    "esutoru26": {
-      "handle": "@esutoru26",
-      "posts_seen": 2,
-      "valuable_posts": 2,
-      "future_schedule_posts": 1,
-      "noise_posts": 0,
-      "value_points": 31.0,
-      "last_seen": "2026-06-08T06:56:00+00:00",
-      "top_reasons": {
-        "bon": 2,
-        "context": 2,
-        "date_time": 2,
-        "link": 2,
-        "future_schedule": 1
-      },
-      "recent_posts_seen": 2,
-      "recent_valuable_posts": 2,
-      "recent_future_schedule_posts": 1,
-      "recent_noise_posts": 0,
-      "recent_value_points": 31.0,
-      "lifetime_score": 16.3,
-      "recent_score": 16.3,
-      "recent_days": 30,
-      "quality_score": 16.3,
-      "score": 16.3,
-      "value_ratio": 1.0,
-      "recent_value_ratio": 1.0,
-      "status": "active",
-      "confidence": "low",
-      "usefulness_rank": "B",
-      "usefulness_rank_number": 3,
-      "usefulness_score": 67.5,
-      "role_tags": [
-        "発見型",
-        "裏取り型"
       ]
     },
     "tora1985tigers2": {
@@ -6820,6 +6982,43 @@
         "参加レポ型"
       ]
     },
+    "2n2ki": {
+      "handle": "@2n2ki",
+      "posts_seen": 2,
+      "valuable_posts": 2,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 24.0,
+      "last_seen": "2026-06-24T09:07:11+00:00",
+      "top_reasons": {
+        "schedule_like": 1,
+        "bon": 2,
+        "context": 2,
+        "date_time": 1,
+        "link": 2
+      },
+      "recent_posts_seen": 2,
+      "recent_valuable_posts": 2,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 24.0,
+      "lifetime_score": 12.8,
+      "recent_score": 12.8,
+      "recent_days": 30,
+      "quality_score": 12.8,
+      "score": 12.8,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "B",
+      "usefulness_rank_number": 3,
+      "usefulness_score": 66.1,
+      "role_tags": [
+        "発見型",
+        "裏取り型"
+      ]
+    },
     "irodonob_suki": {
       "handle": "@irodonob_suki",
       "posts_seen": 2,
@@ -6963,6 +7162,40 @@
       "role_tags": [
         "発見型",
         "裏取り型"
+      ]
+    },
+    "apollotequira": {
+      "handle": "@apollotequira",
+      "posts_seen": 2,
+      "valuable_posts": 2,
+      "future_schedule_posts": 1,
+      "noise_posts": 0,
+      "value_points": 23.0,
+      "last_seen": "2026-06-24T04:53:19+00:00",
+      "top_reasons": {
+        "bon": 2,
+        "context": 2,
+        "future_schedule": 1
+      },
+      "recent_posts_seen": 2,
+      "recent_valuable_posts": 2,
+      "recent_future_schedule_posts": 1,
+      "recent_noise_posts": 0,
+      "recent_value_points": 23.0,
+      "lifetime_score": 12.3,
+      "recent_score": 12.3,
+      "recent_days": 30,
+      "quality_score": 12.3,
+      "score": 12.3,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "B",
+      "usefulness_rank_number": 3,
+      "usefulness_score": 65.9,
+      "role_tags": [
+        "発見型"
       ]
     },
     "ccnet_motosu_pr": {
@@ -7282,6 +7515,42 @@
       "role_tags": [
         "裏取り型",
         "参加レポ型"
+      ]
+    },
+    "chappu_puipui": {
+      "handle": "@chappu_puipui",
+      "posts_seen": 2,
+      "valuable_posts": 2,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 22.0,
+      "last_seen": "2026-06-24T06:20:09+00:00",
+      "top_reasons": {
+        "bon": 2,
+        "context": 2,
+        "schedule_like": 1,
+        "date_time": 1
+      },
+      "recent_posts_seen": 2,
+      "recent_valuable_posts": 2,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 22.0,
+      "lifetime_score": 11.8,
+      "recent_score": 11.8,
+      "recent_days": 30,
+      "quality_score": 11.8,
+      "score": 11.8,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "B",
+      "usefulness_rank_number": 3,
+      "usefulness_score": 65.7,
+      "role_tags": [
+        "発見型",
+        "裏取り型"
       ]
     },
     "drmemi": {
@@ -7742,6 +8011,40 @@
       "usefulness_score": 65.7,
       "role_tags": [
         "参加レポ型"
+      ]
+    },
+    "maho_do7": {
+      "handle": "@maho_do7",
+      "posts_seen": 3,
+      "valuable_posts": 3,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 22.0,
+      "last_seen": "2026-06-24T09:32:37+00:00",
+      "top_reasons": {
+        "bon": 3,
+        "context": 3,
+        "media_hint": 1
+      },
+      "recent_posts_seen": 3,
+      "recent_valuable_posts": 3,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 22.0,
+      "lifetime_score": 8.533,
+      "recent_score": 8.533,
+      "recent_days": 30,
+      "quality_score": 8.533,
+      "score": 8.533,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "trusted",
+      "confidence": "low",
+      "usefulness_rank": "B",
+      "usefulness_rank_number": 3,
+      "usefulness_score": 65.4,
+      "role_tags": [
+        "裏取り型"
       ]
     },
     "tanpakushitsu06": {
@@ -9173,6 +9476,40 @@
         "参加レポ型"
       ]
     },
+    "mzciig": {
+      "handle": "@mzciig",
+      "posts_seen": 2,
+      "valuable_posts": 2,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 17.0,
+      "last_seen": "2026-06-24T04:27:40+00:00",
+      "top_reasons": {
+        "bon": 2,
+        "context": 2,
+        "experience": 1
+      },
+      "recent_posts_seen": 2,
+      "recent_valuable_posts": 2,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 17.0,
+      "lifetime_score": 9.3,
+      "recent_score": 9.3,
+      "recent_days": 30,
+      "quality_score": 9.3,
+      "score": 9.3,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "B",
+      "usefulness_rank_number": 3,
+      "usefulness_score": 64.7,
+      "role_tags": [
+        "参加レポ型"
+      ]
+    },
     "nnn_oka1216": {
       "handle": "@nnn_oka1216",
       "posts_seen": 2,
@@ -9343,6 +9680,40 @@
         "参加レポ型"
       ]
     },
+    "wazakana_yuuki": {
+      "handle": "@wazakana_yuuki",
+      "posts_seen": 2,
+      "valuable_posts": 2,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 17.0,
+      "last_seen": "2026-06-24T09:43:57+00:00",
+      "top_reasons": {
+        "bon": 2,
+        "context": 2,
+        "experience": 1
+      },
+      "recent_posts_seen": 2,
+      "recent_valuable_posts": 2,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 17.0,
+      "lifetime_score": 9.3,
+      "recent_score": 9.3,
+      "recent_days": 30,
+      "quality_score": 9.3,
+      "score": 9.3,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "B",
+      "usefulness_rank_number": 3,
+      "usefulness_score": 64.7,
+      "role_tags": [
+        "参加レポ型"
+      ]
+    },
     "yukiyama": {
       "handle": "@yukiyama",
       "posts_seen": 2,
@@ -9419,6 +9790,40 @@
       "noise_posts": 0,
       "value_points": 16.0,
       "last_seen": "2026-06-23T15:22:56+00:00",
+      "top_reasons": {
+        "bon": 2,
+        "context": 2,
+        "link": 2
+      },
+      "recent_posts_seen": 2,
+      "recent_valuable_posts": 2,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 16.0,
+      "lifetime_score": 8.8,
+      "recent_score": 8.8,
+      "recent_days": 30,
+      "quality_score": 8.8,
+      "score": 8.8,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "B",
+      "usefulness_rank_number": 3,
+      "usefulness_score": 64.5,
+      "role_tags": [
+        "裏取り型"
+      ]
+    },
+    "genkitoyuuki031": {
+      "handle": "@genkitoyuuki031",
+      "posts_seen": 2,
+      "valuable_posts": 2,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 16.0,
+      "last_seen": "2026-06-24T06:21:25+00:00",
       "top_reasons": {
         "bon": 2,
         "context": 2,
@@ -10693,6 +11098,39 @@
         "文脈確認型"
       ]
     },
+    "cesap4": {
+      "handle": "@cesap4",
+      "posts_seen": 2,
+      "valuable_posts": 2,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 14.0,
+      "last_seen": "2026-06-24T09:46:02+00:00",
+      "top_reasons": {
+        "bon": 2,
+        "context": 2
+      },
+      "recent_posts_seen": 2,
+      "recent_valuable_posts": 2,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 14.0,
+      "lifetime_score": 7.8,
+      "recent_score": 7.8,
+      "recent_days": 30,
+      "quality_score": 7.8,
+      "score": 7.8,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "B",
+      "usefulness_rank_number": 3,
+      "usefulness_score": 64.1,
+      "role_tags": [
+        "文脈確認型"
+      ]
+    },
     "chains07091550": {
       "handle": "@chains07091550",
       "posts_seen": 2,
@@ -10924,6 +11362,39 @@
         "文脈確認型"
       ]
     },
+    "fooquchan": {
+      "handle": "@fooquchan",
+      "posts_seen": 2,
+      "valuable_posts": 2,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 14.0,
+      "last_seen": "2026-06-24T09:30:45+00:00",
+      "top_reasons": {
+        "bon": 2,
+        "context": 2
+      },
+      "recent_posts_seen": 2,
+      "recent_valuable_posts": 2,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 14.0,
+      "lifetime_score": 7.8,
+      "recent_score": 7.8,
+      "recent_days": 30,
+      "quality_score": 7.8,
+      "score": 7.8,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "B",
+      "usefulness_rank_number": 3,
+      "usefulness_score": 64.1,
+      "role_tags": [
+        "文脈確認型"
+      ]
+    },
     "grata23": {
       "handle": "@grata23",
       "posts_seen": 2,
@@ -11130,6 +11601,39 @@
       "noise_posts": 0,
       "value_points": 14.0,
       "last_seen": "2026-06-20T02:38:41+00:00",
+      "top_reasons": {
+        "bon": 2,
+        "context": 2
+      },
+      "recent_posts_seen": 2,
+      "recent_valuable_posts": 2,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 14.0,
+      "lifetime_score": 7.8,
+      "recent_score": 7.8,
+      "recent_days": 30,
+      "quality_score": 7.8,
+      "score": 7.8,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "B",
+      "usefulness_rank_number": 3,
+      "usefulness_score": 64.1,
+      "role_tags": [
+        "文脈確認型"
+      ]
+    },
+    "koko_mononohu": {
+      "handle": "@koko_mononohu",
+      "posts_seen": 2,
+      "valuable_posts": 2,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 14.0,
+      "last_seen": "2026-06-24T03:43:59+00:00",
       "top_reasons": {
         "bon": 2,
         "context": 2
@@ -11427,6 +11931,39 @@
       "noise_posts": 0,
       "value_points": 14.0,
       "last_seen": "2026-06-09T15:06:24+00:00",
+      "top_reasons": {
+        "bon": 2,
+        "context": 2
+      },
+      "recent_posts_seen": 2,
+      "recent_valuable_posts": 2,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 14.0,
+      "lifetime_score": 7.8,
+      "recent_score": 7.8,
+      "recent_days": 30,
+      "quality_score": 7.8,
+      "score": 7.8,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "B",
+      "usefulness_rank_number": 3,
+      "usefulness_score": 64.1,
+      "role_tags": [
+        "文脈確認型"
+      ]
+    },
+    "myotoo": {
+      "handle": "@myotoo",
+      "posts_seen": 2,
+      "valuable_posts": 2,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 14.0,
+      "last_seen": "2026-06-24T08:23:38+00:00",
       "top_reasons": {
         "bon": 2,
         "context": 2
@@ -12215,6 +12752,39 @@
         "地域/会場型"
       ]
     },
+    "nana20090623": {
+      "handle": "@nana20090623",
+      "posts_seen": 2,
+      "valuable_posts": 2,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 14.0,
+      "last_seen": "2026-06-24T08:07:08+00:00",
+      "top_reasons": {
+        "bon": 2,
+        "context": 2
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 7.0,
+      "lifetime_score": 7.8,
+      "recent_score": 7.4,
+      "recent_days": 30,
+      "quality_score": 7.72,
+      "score": 7.72,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "B",
+      "usefulness_rank_number": 3,
+      "usefulness_score": 63.1,
+      "role_tags": [
+        "文脈確認型"
+      ]
+    },
     "bon_odorer": {
       "handle": "@bon_odorer",
       "posts_seen": 3,
@@ -12509,6 +13079,45 @@
         "裏取り型"
       ]
     },
+    "ando_shinsaku": {
+      "handle": "@ando_shinsaku",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 1,
+      "noise_posts": 0,
+      "value_points": 23.0,
+      "last_seen": "2026-06-24T09:42:27+00:00",
+      "top_reasons": {
+        "future_schedule": 1,
+        "bon": 1,
+        "context": 1,
+        "date_time": 1,
+        "experience": 1,
+        "link": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 1,
+      "recent_noise_posts": 0,
+      "recent_value_points": 23.0,
+      "lifetime_score": 23.4,
+      "recent_score": 23.4,
+      "recent_days": 30,
+      "quality_score": 23.4,
+      "score": 23.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 48.0,
+      "role_tags": [
+        "発見型",
+        "裏取り型",
+        "参加レポ型"
+      ]
+    },
     "askatomomi": {
       "handle": "@askatomomi",
       "posts_seen": 1,
@@ -12698,6 +13307,44 @@
         "参加レポ型"
       ]
     },
+    "camp_takigahara": {
+      "handle": "@camp_takigahara",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 1,
+      "noise_posts": 0,
+      "value_points": 23.0,
+      "last_seen": "2026-06-24T03:00:03+00:00",
+      "top_reasons": {
+        "future_schedule": 1,
+        "bon": 1,
+        "context": 1,
+        "date_time": 1,
+        "media_hint": 1,
+        "link": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 1,
+      "recent_noise_posts": 0,
+      "recent_value_points": 23.0,
+      "lifetime_score": 23.4,
+      "recent_score": 23.4,
+      "recent_days": 30,
+      "quality_score": 23.4,
+      "score": 23.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 48.0,
+      "role_tags": [
+        "発見型",
+        "裏取り型"
+      ]
+    },
     "carlasuarezm": {
       "handle": "@carlasuarezm",
       "posts_seen": 1,
@@ -12761,6 +13408,43 @@
       "recent_days": 30,
       "quality_score": 23.4,
       "score": 23.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 48.0,
+      "role_tags": [
+        "発見型",
+        "裏取り型"
+      ]
+    },
+    "centrairairport": {
+      "handle": "@centrairairport",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 1,
+      "noise_posts": 0,
+      "value_points": 20.0,
+      "last_seen": "2026-06-24T08:27:58+00:00",
+      "top_reasons": {
+        "future_schedule": 1,
+        "bon": 1,
+        "context": 1,
+        "date_time": 1,
+        "link": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 1,
+      "recent_noise_posts": 0,
+      "recent_value_points": 20.0,
+      "lifetime_score": 20.4,
+      "recent_score": 20.4,
+      "recent_days": 30,
+      "quality_score": 20.4,
+      "score": 20.4,
       "value_ratio": 1.0,
       "recent_value_ratio": 1.0,
       "status": "active",
@@ -12924,6 +13608,43 @@
         "裏取り型"
       ]
     },
+    "doremi_staff": {
+      "handle": "@doremi_staff",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 1,
+      "noise_posts": 0,
+      "value_points": 20.0,
+      "last_seen": "2026-06-24T08:00:00+00:00",
+      "top_reasons": {
+        "future_schedule": 1,
+        "bon": 1,
+        "context": 1,
+        "date_time": 1,
+        "link": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 1,
+      "recent_noise_posts": 0,
+      "recent_value_points": 20.0,
+      "lifetime_score": 20.4,
+      "recent_score": 20.4,
+      "recent_days": 30,
+      "quality_score": 20.4,
+      "score": 20.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 48.0,
+      "role_tags": [
+        "発見型",
+        "裏取り型"
+      ]
+    },
     "ebisuya_smile": {
       "handle": "@ebisuya_smile",
       "posts_seen": 1,
@@ -13035,6 +13756,43 @@
         "裏取り型"
       ]
     },
+    "enokidoku": {
+      "handle": "@enokidoku",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 1,
+      "noise_posts": 0,
+      "value_points": 20.0,
+      "last_seen": "2026-06-24T05:47:26+00:00",
+      "top_reasons": {
+        "future_schedule": 1,
+        "bon": 1,
+        "context": 1,
+        "date_time": 1,
+        "link": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 1,
+      "recent_noise_posts": 0,
+      "recent_value_points": 20.0,
+      "lifetime_score": 20.4,
+      "recent_score": 20.4,
+      "recent_days": 30,
+      "quality_score": 20.4,
+      "score": 20.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 48.0,
+      "role_tags": [
+        "発見型",
+        "裏取り型"
+      ]
+    },
     "etb_news": {
       "handle": "@etb_news",
       "posts_seen": 1,
@@ -13080,6 +13838,43 @@
       "noise_posts": 0,
       "value_points": 20.0,
       "last_seen": "2026-06-17T06:50:33+00:00",
+      "top_reasons": {
+        "future_schedule": 1,
+        "bon": 1,
+        "context": 1,
+        "date_time": 1,
+        "link": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 1,
+      "recent_noise_posts": 0,
+      "recent_value_points": 20.0,
+      "lifetime_score": 20.4,
+      "recent_score": 20.4,
+      "recent_days": 30,
+      "quality_score": 20.4,
+      "score": 20.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 48.0,
+      "role_tags": [
+        "発見型",
+        "裏取り型"
+      ]
+    },
+    "festival1632414": {
+      "handle": "@festival1632414",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 1,
+      "noise_posts": 0,
+      "value_points": 20.0,
+      "last_seen": "2026-06-23T23:12:47+00:00",
       "top_reasons": {
         "future_schedule": 1,
         "bon": 1,
@@ -13562,6 +14357,43 @@
         "参加レポ型"
       ]
     },
+    "highlandrail": {
+      "handle": "@highlandrail",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 1,
+      "noise_posts": 0,
+      "value_points": 20.0,
+      "last_seen": "2026-06-24T08:49:01+00:00",
+      "top_reasons": {
+        "future_schedule": 1,
+        "bon": 1,
+        "context": 1,
+        "date_time": 1,
+        "link": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 1,
+      "recent_noise_posts": 0,
+      "recent_value_points": 20.0,
+      "lifetime_score": 20.4,
+      "recent_score": 20.4,
+      "recent_days": 30,
+      "quality_score": 20.4,
+      "score": 20.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 48.0,
+      "role_tags": [
+        "発見型",
+        "裏取り型"
+      ]
+    },
     "hikari_shoda": {
       "handle": "@hikari_shoda",
       "posts_seen": 1,
@@ -13896,14 +14728,14 @@
         "裏取り型"
       ]
     },
-    "ikebukuro_times": {
-      "handle": "@ikebukuro_times",
+    "ikedashichou24": {
+      "handle": "@ikedashichou24",
       "posts_seen": 1,
       "valuable_posts": 1,
       "future_schedule_posts": 1,
       "noise_posts": 0,
       "value_points": 20.0,
-      "last_seen": "2026-06-19T03:40:11+00:00",
+      "last_seen": "2026-06-19T13:24:58+00:00",
       "top_reasons": {
         "future_schedule": 1,
         "bon": 1,
@@ -13933,14 +14765,14 @@
         "裏取り型"
       ]
     },
-    "ikedashichou24": {
-      "handle": "@ikedashichou24",
+    "iko_yo_trip": {
+      "handle": "@iko_yo_trip",
       "posts_seen": 1,
       "valuable_posts": 1,
       "future_schedule_posts": 1,
       "noise_posts": 0,
       "value_points": 20.0,
-      "last_seen": "2026-06-19T13:24:58+00:00",
+      "last_seen": "2026-06-24T06:45:00+00:00",
       "top_reasons": {
         "future_schedule": 1,
         "bon": 1,
@@ -14572,43 +15404,6 @@
         "裏取り型"
       ]
     },
-    "m_sh_30171": {
-      "handle": "@m_sh_30171",
-      "posts_seen": 1,
-      "valuable_posts": 1,
-      "future_schedule_posts": 1,
-      "noise_posts": 0,
-      "value_points": 20.0,
-      "last_seen": "2026-06-23T03:59:51+00:00",
-      "top_reasons": {
-        "future_schedule": 1,
-        "bon": 1,
-        "context": 1,
-        "date_time": 1,
-        "link": 1
-      },
-      "recent_posts_seen": 1,
-      "recent_valuable_posts": 1,
-      "recent_future_schedule_posts": 1,
-      "recent_noise_posts": 0,
-      "recent_value_points": 20.0,
-      "lifetime_score": 20.4,
-      "recent_score": 20.4,
-      "recent_days": 30,
-      "quality_score": 20.4,
-      "score": 20.4,
-      "value_ratio": 1.0,
-      "recent_value_ratio": 1.0,
-      "status": "active",
-      "confidence": "low",
-      "usefulness_rank": "Candidate",
-      "usefulness_rank_number": 2,
-      "usefulness_score": 48.0,
-      "role_tags": [
-        "発見型",
-        "裏取り型"
-      ]
-    },
     "masa_bleecker": {
       "handle": "@masa_bleecker",
       "posts_seen": 1,
@@ -15211,6 +16006,43 @@
         "裏取り型"
       ]
     },
+    "nerimajmpy": {
+      "handle": "@nerimajmpy",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 1,
+      "noise_posts": 0,
+      "value_points": 20.0,
+      "last_seen": "2026-06-24T03:40:45+00:00",
+      "top_reasons": {
+        "future_schedule": 1,
+        "bon": 1,
+        "context": 1,
+        "date_time": 1,
+        "link": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 1,
+      "recent_noise_posts": 0,
+      "recent_value_points": 20.0,
+      "lifetime_score": 20.4,
+      "recent_score": 20.4,
+      "recent_days": 30,
+      "quality_score": 20.4,
+      "score": 20.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 48.0,
+      "role_tags": [
+        "発見型",
+        "裏取り型"
+      ]
+    },
     "niccori_369": {
       "handle": "@niccori_369",
       "posts_seen": 1,
@@ -15472,6 +16304,43 @@
         "参加レポ型"
       ]
     },
+    "ooedosansa": {
+      "handle": "@ooedosansa",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 1,
+      "noise_posts": 0,
+      "value_points": 20.0,
+      "last_seen": "2026-06-24T08:29:28+00:00",
+      "top_reasons": {
+        "future_schedule": 1,
+        "bon": 1,
+        "context": 1,
+        "date_time": 1,
+        "link": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 1,
+      "recent_noise_posts": 0,
+      "recent_value_points": 20.0,
+      "lifetime_score": 20.4,
+      "recent_score": 20.4,
+      "recent_days": 30,
+      "quality_score": 20.4,
+      "score": 20.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 48.0,
+      "role_tags": [
+        "発見型",
+        "裏取り型"
+      ]
+    },
     "oomeshi": {
       "handle": "@oomeshi",
       "posts_seen": 1,
@@ -15629,6 +16498,43 @@
       "noise_posts": 0,
       "value_points": 20.0,
       "last_seen": "2026-06-21T02:16:46+00:00",
+      "top_reasons": {
+        "future_schedule": 1,
+        "bon": 1,
+        "context": 1,
+        "date_time": 1,
+        "link": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 1,
+      "recent_noise_posts": 0,
+      "recent_value_points": 20.0,
+      "lifetime_score": 20.4,
+      "recent_score": 20.4,
+      "recent_days": 30,
+      "quality_score": 20.4,
+      "score": 20.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 48.0,
+      "role_tags": [
+        "発見型",
+        "裏取り型"
+      ]
+    },
+    "ostrea_shacho": {
+      "handle": "@ostrea_shacho",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 1,
+      "noise_posts": 0,
+      "value_points": 20.0,
+      "last_seen": "2026-06-24T08:46:03+00:00",
       "top_reasons": {
         "future_schedule": 1,
         "bon": 1,
@@ -16751,6 +17657,43 @@
         "裏取り型"
       ]
     },
+    "tknettkondo": {
+      "handle": "@tknettkondo",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 1,
+      "noise_posts": 0,
+      "value_points": 20.0,
+      "last_seen": "2026-06-24T09:15:00+00:00",
+      "top_reasons": {
+        "future_schedule": 1,
+        "bon": 1,
+        "context": 1,
+        "date_time": 1,
+        "link": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 1,
+      "recent_noise_posts": 0,
+      "recent_value_points": 20.0,
+      "lifetime_score": 20.4,
+      "recent_score": 20.4,
+      "recent_days": 30,
+      "quality_score": 20.4,
+      "score": 20.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 48.0,
+      "role_tags": [
+        "発見型",
+        "裏取り型"
+      ]
+    },
     "tmyk_tkhs": {
       "handle": "@tmyk_tkhs",
       "posts_seen": 1,
@@ -16759,6 +17702,43 @@
       "noise_posts": 0,
       "value_points": 20.0,
       "last_seen": "2026-06-06T08:10:11+00:00",
+      "top_reasons": {
+        "future_schedule": 1,
+        "bon": 1,
+        "context": 1,
+        "date_time": 1,
+        "link": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 1,
+      "recent_noise_posts": 0,
+      "recent_value_points": 20.0,
+      "lifetime_score": 20.4,
+      "recent_score": 20.4,
+      "recent_days": 30,
+      "quality_score": 20.4,
+      "score": 20.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 48.0,
+      "role_tags": [
+        "発見型",
+        "裏取り型"
+      ]
+    },
+    "toeianime_mc": {
+      "handle": "@toeianime_mc",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 1,
+      "noise_posts": 0,
+      "value_points": 20.0,
+      "last_seen": "2026-06-24T08:01:00+00:00",
       "top_reasons": {
         "future_schedule": 1,
         "bon": 1,
@@ -16853,6 +17833,45 @@
       "recent_days": 30,
       "quality_score": 25.4,
       "score": 25.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 48.0,
+      "role_tags": [
+        "発見型",
+        "裏取り型",
+        "地域/会場型"
+      ]
+    },
+    "toyosu_tokyo": {
+      "handle": "@toyosu_tokyo",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 21.0,
+      "last_seen": "2026-06-24T05:09:50+00:00",
+      "top_reasons": {
+        "schedule_like": 1,
+        "bon": 1,
+        "context": 1,
+        "date_time": 1,
+        "venue": 1,
+        "link": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 21.0,
+      "lifetime_score": 21.4,
+      "recent_score": 21.4,
+      "recent_days": 30,
+      "quality_score": 21.4,
+      "score": 21.4,
       "value_ratio": 1.0,
       "recent_value_ratio": 1.0,
       "status": "active",
@@ -16977,6 +17996,43 @@
         "裏取り型"
       ]
     },
+    "victormusic": {
+      "handle": "@victormusic",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 1,
+      "noise_posts": 0,
+      "value_points": 20.0,
+      "last_seen": "2026-06-24T03:00:00+00:00",
+      "top_reasons": {
+        "future_schedule": 1,
+        "bon": 1,
+        "context": 1,
+        "date_time": 1,
+        "link": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 1,
+      "recent_noise_posts": 0,
+      "recent_value_points": 20.0,
+      "lifetime_score": 20.4,
+      "recent_score": 20.4,
+      "recent_days": 30,
+      "quality_score": 20.4,
+      "score": 20.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 48.0,
+      "role_tags": [
+        "発見型",
+        "裏取り型"
+      ]
+    },
     "visit_koriyama": {
       "handle": "@visit_koriyama",
       "posts_seen": 1,
@@ -17051,6 +18107,44 @@
         "発見型",
         "裏取り型",
         "地域/会場型"
+      ]
+    },
+    "yanagicho_es": {
+      "handle": "@yanagicho_es",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 1,
+      "noise_posts": 0,
+      "value_points": 22.0,
+      "last_seen": "2026-06-24T05:01:50+00:00",
+      "top_reasons": {
+        "future_schedule": 1,
+        "bon": 1,
+        "context": 1,
+        "date_time": 1,
+        "experience": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 1,
+      "recent_noise_posts": 0,
+      "recent_value_points": 22.0,
+      "lifetime_score": 22.4,
+      "recent_score": 22.4,
+      "recent_days": 30,
+      "quality_score": 22.4,
+      "score": 22.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 48.0,
+      "role_tags": [
+        "発見型",
+        "裏取り型",
+        "参加レポ型"
       ]
     },
     "yasagure_suppo": {
@@ -18204,6 +19298,45 @@
         "裏取り型"
       ]
     },
+    "kirakirabo2020": {
+      "handle": "@kirakirabo2020",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 19.0,
+      "last_seen": "2026-06-24T07:07:38+00:00",
+      "top_reasons": {
+        "schedule_like": 1,
+        "bon": 1,
+        "context": 1,
+        "date_time": 1,
+        "experience": 1,
+        "link": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 19.0,
+      "lifetime_score": 19.4,
+      "recent_score": 19.4,
+      "recent_days": 30,
+      "quality_score": 19.4,
+      "score": 19.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 47.8,
+      "role_tags": [
+        "発見型",
+        "裏取り型",
+        "参加レポ型"
+      ]
+    },
     "kissa_ayame_vrc": {
       "handle": "@kissa_ayame_vrc",
       "posts_seen": 1,
@@ -18789,6 +19922,42 @@
         "裏取り型"
       ]
     },
+    "pink_suzune": {
+      "handle": "@pink_suzune",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 1,
+      "noise_posts": 0,
+      "value_points": 19.0,
+      "last_seen": "2026-06-24T02:06:53+00:00",
+      "top_reasons": {
+        "future_schedule": 1,
+        "bon": 1,
+        "context": 1,
+        "date_time": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 1,
+      "recent_noise_posts": 0,
+      "recent_value_points": 19.0,
+      "lifetime_score": 19.4,
+      "recent_score": 19.4,
+      "recent_days": 30,
+      "quality_score": 19.4,
+      "score": 19.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 47.8,
+      "role_tags": [
+        "発見型",
+        "裏取り型"
+      ]
+    },
     "r_shinohara525": {
       "handle": "@r_shinohara525",
       "posts_seen": 1,
@@ -19297,6 +20466,44 @@
         "地域/会場型"
       ]
     },
+    "freegoemon": {
+      "handle": "@freegoemon",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 18.0,
+      "last_seen": "2026-06-23T20:00:43+00:00",
+      "top_reasons": {
+        "schedule_like": 1,
+        "bon": 1,
+        "context": 1,
+        "date_time": 1,
+        "experience": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 18.0,
+      "lifetime_score": 18.4,
+      "recent_score": 18.4,
+      "recent_days": 30,
+      "quality_score": 18.4,
+      "score": 18.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 47.4,
+      "role_tags": [
+        "発見型",
+        "裏取り型",
+        "参加レポ型"
+      ]
+    },
     "htz0u9ckaocyzel": {
       "handle": "@htz0u9ckaocyzel",
       "posts_seen": 1,
@@ -19417,6 +20624,44 @@
       "noise_posts": 0,
       "value_points": 18.0,
       "last_seen": "2026-06-12T13:34:06+00:00",
+      "top_reasons": {
+        "schedule_like": 1,
+        "bon": 1,
+        "context": 1,
+        "date_time": 1,
+        "experience": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 18.0,
+      "lifetime_score": 18.4,
+      "recent_score": 18.4,
+      "recent_days": 30,
+      "quality_score": 18.4,
+      "score": 18.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 47.4,
+      "role_tags": [
+        "発見型",
+        "裏取り型",
+        "参加レポ型"
+      ]
+    },
+    "mirimiri529": {
+      "handle": "@mirimiri529",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 18.0,
+      "last_seen": "2026-06-24T07:36:36+00:00",
       "top_reasons": {
         "schedule_like": 1,
         "bon": 1,
@@ -20570,40 +21815,6 @@
         "発見型"
       ]
     },
-    "apollotequira": {
-      "handle": "@apollotequira",
-      "posts_seen": 1,
-      "valuable_posts": 1,
-      "future_schedule_posts": 1,
-      "noise_posts": 0,
-      "value_points": 16.0,
-      "last_seen": "2026-06-23T13:22:22+00:00",
-      "top_reasons": {
-        "future_schedule": 1,
-        "bon": 1,
-        "context": 1
-      },
-      "recent_posts_seen": 1,
-      "recent_valuable_posts": 1,
-      "recent_future_schedule_posts": 1,
-      "recent_noise_posts": 0,
-      "recent_value_points": 16.0,
-      "lifetime_score": 16.4,
-      "recent_score": 16.4,
-      "recent_days": 30,
-      "quality_score": 16.4,
-      "score": 16.4,
-      "value_ratio": 1.0,
-      "recent_value_ratio": 1.0,
-      "status": "active",
-      "confidence": "low",
-      "usefulness_rank": "Candidate",
-      "usefulness_rank_number": 2,
-      "usefulness_score": 46.6,
-      "role_tags": [
-        "発見型"
-      ]
-    },
     "asahi_comment": {
       "handle": "@asahi_comment",
       "posts_seen": 1,
@@ -21045,6 +22256,43 @@
         "裏取り型"
       ]
     },
+    "fuyukapi": {
+      "handle": "@fuyukapi",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 16.0,
+      "last_seen": "2026-06-24T02:05:20+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1,
+        "media_hint": 1,
+        "venue": 1,
+        "link": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 16.0,
+      "lifetime_score": 16.4,
+      "recent_score": 16.4,
+      "recent_days": 30,
+      "quality_score": 16.4,
+      "score": 16.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 46.6,
+      "role_tags": [
+        "裏取り型",
+        "地域/会場型"
+      ]
+    },
     "hachioji_koho": {
       "handle": "@hachioji_koho",
       "posts_seen": 1,
@@ -21292,6 +22540,43 @@
       "usefulness_score": 46.6,
       "role_tags": [
         "発見型"
+      ]
+    },
+    "ilias0322": {
+      "handle": "@ilias0322",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 16.0,
+      "last_seen": "2026-06-24T08:19:04+00:00",
+      "top_reasons": {
+        "schedule_like": 1,
+        "bon": 1,
+        "context": 1,
+        "date_time": 1,
+        "link": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 16.0,
+      "lifetime_score": 16.4,
+      "recent_score": 16.4,
+      "recent_days": 30,
+      "quality_score": 16.4,
+      "score": 16.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 46.6,
+      "role_tags": [
+        "発見型",
+        "裏取り型"
       ]
     },
     "imtmynrkrmxy28": {
@@ -22099,6 +23384,43 @@
         "発見型"
       ]
     },
+    "naruko_onsenkyo": {
+      "handle": "@naruko_onsenkyo",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 16.0,
+      "last_seen": "2026-06-24T08:26:43+00:00",
+      "top_reasons": {
+        "schedule_like": 1,
+        "bon": 1,
+        "context": 1,
+        "date_time": 1,
+        "link": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 16.0,
+      "lifetime_score": 16.4,
+      "recent_score": 16.4,
+      "recent_days": 30,
+      "quality_score": 16.4,
+      "score": 16.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 46.6,
+      "role_tags": [
+        "発見型",
+        "裏取り型"
+      ]
+    },
     "natui_chou": {
       "handle": "@natui_chou",
       "posts_seen": 1,
@@ -22355,14 +23677,14 @@
         "裏取り型"
       ]
     },
-    "ririka48": {
-      "handle": "@ririka48",
+    "prtimes_etm": {
+      "handle": "@prtimes_etm",
       "posts_seen": 1,
       "valuable_posts": 1,
       "future_schedule_posts": 0,
       "noise_posts": 0,
       "value_points": 16.0,
-      "last_seen": "2026-06-16T11:54:30+00:00",
+      "last_seen": "2026-06-24T08:07:04+00:00",
       "top_reasons": {
         "schedule_like": 1,
         "bon": 1,
@@ -22392,14 +23714,14 @@
         "裏取り型"
       ]
     },
-    "ryukyutimes": {
-      "handle": "@ryukyutimes",
+    "ririka48": {
+      "handle": "@ririka48",
       "posts_seen": 1,
       "valuable_posts": 1,
       "future_schedule_posts": 0,
       "noise_posts": 0,
       "value_points": 16.0,
-      "last_seen": "2026-06-16T12:30:58+00:00",
+      "last_seen": "2026-06-16T11:54:30+00:00",
       "top_reasons": {
         "schedule_like": 1,
         "bon": 1,
@@ -24377,6 +25699,42 @@
         "裏取り型"
       ]
     },
+    "lifekanako": {
+      "handle": "@lifekanako",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 15.0,
+      "last_seen": "2026-06-24T06:34:36+00:00",
+      "top_reasons": {
+        "schedule_like": 1,
+        "bon": 1,
+        "context": 1,
+        "date_time": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 15.0,
+      "lifetime_score": 15.4,
+      "recent_score": 15.4,
+      "recent_days": 30,
+      "quality_score": 15.4,
+      "score": 15.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 46.2,
+      "role_tags": [
+        "発見型",
+        "裏取り型"
+      ]
+    },
     "m__love_like_": {
       "handle": "@m__love_like_",
       "posts_seen": 1,
@@ -24457,6 +25815,42 @@
       "noise_posts": 0,
       "value_points": 15.0,
       "last_seen": "2026-06-13T02:59:30+00:00",
+      "top_reasons": {
+        "schedule_like": 1,
+        "bon": 1,
+        "context": 1,
+        "date_time": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 15.0,
+      "lifetime_score": 15.4,
+      "recent_score": 15.4,
+      "recent_days": 30,
+      "quality_score": 15.4,
+      "score": 15.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 46.2,
+      "role_tags": [
+        "発見型",
+        "裏取り型"
+      ]
+    },
+    "manadeluxe": {
+      "handle": "@manadeluxe",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 15.0,
+      "last_seen": "2026-06-24T02:37:46+00:00",
       "top_reasons": {
         "schedule_like": 1,
         "bon": 1,
@@ -25276,6 +26670,42 @@
         "裏取り型"
       ]
     },
+    "umekokoo": {
+      "handle": "@umekokoo",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 15.0,
+      "last_seen": "2026-06-24T02:34:58+00:00",
+      "top_reasons": {
+        "schedule_like": 1,
+        "bon": 1,
+        "context": 1,
+        "date_time": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 15.0,
+      "lifetime_score": 15.4,
+      "recent_score": 15.4,
+      "recent_days": 30,
+      "quality_score": 15.4,
+      "score": 15.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 46.2,
+      "role_tags": [
+        "発見型",
+        "裏取り型"
+      ]
+    },
     "yc_ry9": {
       "handle": "@yc_ry9",
       "posts_seen": 1,
@@ -25907,6 +27337,42 @@
       "noise_posts": 0,
       "value_points": 13.0,
       "last_seen": "2026-06-18T13:19:40+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1,
+        "venue": 1,
+        "link": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 13.0,
+      "lifetime_score": 13.4,
+      "recent_score": 13.4,
+      "recent_days": 30,
+      "quality_score": 13.4,
+      "score": 13.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 45.4,
+      "role_tags": [
+        "裏取り型",
+        "地域/会場型"
+      ]
+    },
+    "ffleurs": {
+      "handle": "@ffleurs",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 13.0,
+      "last_seen": "2026-06-24T08:59:06+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1,
@@ -28117,41 +29583,6 @@
         "裏取り型"
       ]
     },
-    "indexebni": {
-      "handle": "@indexebni",
-      "posts_seen": 1,
-      "valuable_posts": 1,
-      "future_schedule_posts": 0,
-      "noise_posts": 0,
-      "value_points": 11.0,
-      "last_seen": "2026-06-19T08:43:34+00:00",
-      "top_reasons": {
-        "bon": 1,
-        "context": 1,
-        "date_time": 1,
-        "link": 1
-      },
-      "recent_posts_seen": 1,
-      "recent_valuable_posts": 1,
-      "recent_future_schedule_posts": 0,
-      "recent_noise_posts": 0,
-      "recent_value_points": 11.0,
-      "lifetime_score": 11.4,
-      "recent_score": 11.4,
-      "recent_days": 30,
-      "quality_score": 11.4,
-      "score": 11.4,
-      "value_ratio": 1.0,
-      "recent_value_ratio": 1.0,
-      "status": "active",
-      "confidence": "low",
-      "usefulness_rank": "Candidate",
-      "usefulness_rank_number": 2,
-      "usefulness_score": 44.6,
-      "role_tags": [
-        "裏取り型"
-      ]
-    },
     "inugami_info": {
       "handle": "@inugami_info",
       "posts_seen": 1,
@@ -28220,6 +29651,42 @@
       "usefulness_score": 44.6,
       "role_tags": [
         "裏取り型"
+      ]
+    },
+    "issyrider": {
+      "handle": "@issyrider",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 11.0,
+      "last_seen": "2026-06-24T02:11:25+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1,
+        "media_hint": 1,
+        "experience": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 11.0,
+      "lifetime_score": 11.4,
+      "recent_score": 11.4,
+      "recent_days": 30,
+      "quality_score": 11.4,
+      "score": 11.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 44.6,
+      "role_tags": [
+        "裏取り型",
+        "参加レポ型"
       ]
     },
     "jun_mizunoki": {
@@ -28908,6 +30375,41 @@
       "noise_posts": 0,
       "value_points": 11.0,
       "last_seen": "2026-06-06T14:54:09+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1,
+        "date_time": 1,
+        "link": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 11.0,
+      "lifetime_score": 11.4,
+      "recent_score": 11.4,
+      "recent_days": 30,
+      "quality_score": 11.4,
+      "score": 11.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 44.6,
+      "role_tags": [
+        "裏取り型"
+      ]
+    },
+    "matsuzakichikai": {
+      "handle": "@matsuzakichikai",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 11.0,
+      "last_seen": "2026-06-24T01:47:39+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1,
@@ -29716,6 +31218,41 @@
       "role_tags": [
         "裏取り型",
         "参加レポ型"
+      ]
+    },
+    "shojihoukatsu": {
+      "handle": "@shojihoukatsu",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 11.0,
+      "last_seen": "2026-06-24T07:12:00+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1,
+        "date_time": 1,
+        "link": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 11.0,
+      "lifetime_score": 11.4,
+      "recent_score": 11.4,
+      "recent_days": 30,
+      "quality_score": 11.4,
+      "score": 11.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 44.6,
+      "role_tags": [
+        "裏取り型"
       ]
     },
     "smzirv3fwm31944": {
@@ -31146,6 +32683,40 @@
         "裏取り型"
       ]
     },
+    "annin_tornado": {
+      "handle": "@annin_tornado",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 10.0,
+      "last_seen": "2026-06-24T09:32:18+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1,
+        "experience": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 10.0,
+      "lifetime_score": 10.4,
+      "recent_score": 10.4,
+      "recent_days": 30,
+      "quality_score": 10.4,
+      "score": 10.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 44.2,
+      "role_tags": [
+        "参加レポ型"
+      ]
+    },
     "ao0oi_giras0l": {
       "handle": "@ao0oi_giras0l",
       "posts_seen": 1,
@@ -32302,6 +33873,40 @@
         "参加レポ型"
       ]
     },
+    "elavnyqjm8xzojf": {
+      "handle": "@elavnyqjm8xzojf",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 10.0,
+      "last_seen": "2026-06-24T06:56:58+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1,
+        "experience": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 10.0,
+      "lifetime_score": 10.4,
+      "recent_score": 10.4,
+      "recent_days": 30,
+      "quality_score": 10.4,
+      "score": 10.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 44.2,
+      "role_tags": [
+        "参加レポ型"
+      ]
+    },
     "erk_05": {
       "handle": "@erk_05",
       "posts_seen": 1,
@@ -32583,6 +34188,74 @@
       "noise_posts": 0,
       "value_points": 10.0,
       "last_seen": "2026-06-09T13:35:21+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1,
+        "experience": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 10.0,
+      "lifetime_score": 10.4,
+      "recent_score": 10.4,
+      "recent_days": 30,
+      "quality_score": 10.4,
+      "score": 10.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 44.2,
+      "role_tags": [
+        "参加レポ型"
+      ]
+    },
+    "h_akie_nogames": {
+      "handle": "@h_akie_nogames",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 10.0,
+      "last_seen": "2026-06-24T03:30:21+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1,
+        "experience": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 10.0,
+      "lifetime_score": 10.4,
+      "recent_score": 10.4,
+      "recent_days": 30,
+      "quality_score": 10.4,
+      "score": 10.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 44.2,
+      "role_tags": [
+        "参加レポ型"
+      ]
+    },
+    "hana___meerkat": {
+      "handle": "@hana___meerkat",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 10.0,
+      "last_seen": "2026-06-24T08:41:24+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1,
@@ -33119,6 +34792,40 @@
         "裏取り型"
       ]
     },
+    "jinbun_mamama": {
+      "handle": "@jinbun_mamama",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 10.0,
+      "last_seen": "2026-06-24T07:22:47+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1,
+        "experience": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 10.0,
+      "lifetime_score": 10.4,
+      "recent_score": 10.4,
+      "recent_days": 30,
+      "quality_score": 10.4,
+      "score": 10.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 44.2,
+      "role_tags": [
+        "参加レポ型"
+      ]
+    },
     "jinsei50000nen": {
       "handle": "@jinsei50000nen",
       "posts_seen": 1,
@@ -33355,6 +35062,40 @@
       "usefulness_score": 44.2,
       "role_tags": [
         "参加レポ型"
+      ]
+    },
+    "katze_tanzen": {
+      "handle": "@katze_tanzen",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 10.0,
+      "last_seen": "2026-06-24T08:34:08+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1,
+        "date_time": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 10.0,
+      "lifetime_score": 10.4,
+      "recent_score": 10.4,
+      "recent_days": 30,
+      "quality_score": 10.4,
+      "score": 10.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 44.2,
+      "role_tags": [
+        "裏取り型"
       ]
     },
     "kayoo5726": {
@@ -36179,6 +37920,40 @@
         "参加レポ型"
       ]
     },
+    "sui04suichan": {
+      "handle": "@sui04suichan",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 10.0,
+      "last_seen": "2026-06-24T03:05:04+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1,
+        "experience": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 10.0,
+      "lifetime_score": 10.4,
+      "recent_score": 10.4,
+      "recent_days": 30,
+      "quality_score": 10.4,
+      "score": 10.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 44.2,
+      "role_tags": [
+        "参加レポ型"
+      ]
+    },
     "sumika2539": {
       "handle": "@sumika2539",
       "posts_seen": 1,
@@ -37683,6 +39458,41 @@
         "裏取り型"
       ]
     },
+    "clane72mc": {
+      "handle": "@clane72mc",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 9.0,
+      "last_seen": "2026-06-24T00:49:05+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1,
+        "media_hint": 1,
+        "link": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 9.0,
+      "lifetime_score": 9.4,
+      "recent_score": 9.4,
+      "recent_days": 30,
+      "quality_score": 9.4,
+      "score": 9.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.8,
+      "role_tags": [
+        "裏取り型"
+      ]
+    },
     "hanasonic_arts": {
       "handle": "@hanasonic_arts",
       "posts_seen": 1,
@@ -38762,6 +40572,40 @@
         "裏取り型"
       ]
     },
+    "_own_ayaco": {
+      "handle": "@_own_ayaco",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 8.0,
+      "last_seen": "2026-06-24T03:16:07+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1,
+        "link": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 8.0,
+      "lifetime_score": 8.4,
+      "recent_score": 8.4,
+      "recent_days": 30,
+      "quality_score": 8.4,
+      "score": 8.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.4,
+      "role_tags": [
+        "裏取り型"
+      ]
+    },
     "_yoshiharu_i": {
       "handle": "@_yoshiharu_i",
       "posts_seen": 1,
@@ -39782,6 +41626,40 @@
         "裏取り型"
       ]
     },
+    "calamus390": {
+      "handle": "@calamus390",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 8.0,
+      "last_seen": "2026-06-24T09:44:19+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1,
+        "link": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 8.0,
+      "lifetime_score": 8.4,
+      "recent_score": 8.4,
+      "recent_days": 30,
+      "quality_score": 8.4,
+      "score": 8.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.4,
+      "role_tags": [
+        "裏取り型"
+      ]
+    },
     "celly_cecil0kh0": {
       "handle": "@celly_cecil0kh0",
       "posts_seen": 1,
@@ -40122,6 +42000,40 @@
         "裏取り型"
       ]
     },
+    "decontractio": {
+      "handle": "@decontractio",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 8.0,
+      "last_seen": "2026-06-24T09:28:21+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1,
+        "link": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 8.0,
+      "lifetime_score": 8.4,
+      "recent_score": 8.4,
+      "recent_days": 30,
+      "quality_score": 8.4,
+      "score": 8.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.4,
+      "role_tags": [
+        "裏取り型"
+      ]
+    },
     "devi_lolitalife": {
       "handle": "@devi_lolitalife",
       "posts_seen": 1,
@@ -40164,6 +42076,40 @@
       "noise_posts": 0,
       "value_points": 8.0,
       "last_seen": "2026-06-21T09:49:19+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1,
+        "link": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 8.0,
+      "lifetime_score": 8.4,
+      "recent_score": 8.4,
+      "recent_days": 30,
+      "quality_score": 8.4,
+      "score": 8.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.4,
+      "role_tags": [
+        "裏取り型"
+      ]
+    },
+    "dreamnews_press": {
+      "handle": "@dreamnews_press",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 8.0,
+      "last_seen": "2026-06-24T09:05:44+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1,
@@ -40538,40 +42484,6 @@
       "noise_posts": 0,
       "value_points": 8.0,
       "last_seen": "2026-06-13T02:06:15+00:00",
-      "top_reasons": {
-        "bon": 1,
-        "context": 1,
-        "link": 1
-      },
-      "recent_posts_seen": 1,
-      "recent_valuable_posts": 1,
-      "recent_future_schedule_posts": 0,
-      "recent_noise_posts": 0,
-      "recent_value_points": 8.0,
-      "lifetime_score": 8.4,
-      "recent_score": 8.4,
-      "recent_days": 30,
-      "quality_score": 8.4,
-      "score": 8.4,
-      "value_ratio": 1.0,
-      "recent_value_ratio": 1.0,
-      "status": "active",
-      "confidence": "low",
-      "usefulness_rank": "Candidate",
-      "usefulness_rank_number": 2,
-      "usefulness_score": 43.4,
-      "role_tags": [
-        "裏取り型"
-      ]
-    },
-    "genkitoyuuki031": {
-      "handle": "@genkitoyuuki031",
-      "posts_seen": 1,
-      "valuable_posts": 1,
-      "future_schedule_posts": 0,
-      "noise_posts": 0,
-      "value_points": 8.0,
-      "last_seen": "2026-06-20T21:45:00+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1,
@@ -41754,6 +43666,40 @@
         "裏取り型"
       ]
     },
+    "ji_ma_san": {
+      "handle": "@ji_ma_san",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 8.0,
+      "last_seen": "2026-06-24T07:21:19+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1,
+        "link": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 8.0,
+      "lifetime_score": 8.4,
+      "recent_score": 8.4,
+      "recent_days": 30,
+      "quality_score": 8.4,
+      "score": 8.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.4,
+      "role_tags": [
+        "裏取り型"
+      ]
+    },
     "johanesuzuki": {
       "handle": "@johanesuzuki",
       "posts_seen": 1,
@@ -42480,6 +44426,40 @@
         "bon": 1,
         "context": 1,
         "media_hint": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 8.0,
+      "lifetime_score": 8.4,
+      "recent_score": 8.4,
+      "recent_days": 30,
+      "quality_score": 8.4,
+      "score": 8.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.4,
+      "role_tags": [
+        "裏取り型"
+      ]
+    },
+    "kudo_titoselove": {
+      "handle": "@kudo_titoselove",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 8.0,
+      "last_seen": "2026-06-24T09:02:56+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1,
+        "link": 1
       },
       "recent_posts_seen": 1,
       "recent_valuable_posts": 1,
@@ -43768,6 +45748,40 @@
       "noise_posts": 0,
       "value_points": 8.0,
       "last_seen": "2026-06-17T15:40:34+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1,
+        "link": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 8.0,
+      "lifetime_score": 8.4,
+      "recent_score": 8.4,
+      "recent_days": 30,
+      "quality_score": 8.4,
+      "score": 8.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.4,
+      "role_tags": [
+        "裏取り型"
+      ]
+    },
+    "mio20200701": {
+      "handle": "@mio20200701",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 8.0,
+      "last_seen": "2026-06-24T09:03:20+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1,
@@ -45468,6 +47482,40 @@
       "noise_posts": 0,
       "value_points": 8.0,
       "last_seen": "2026-06-17T14:30:53+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1,
+        "link": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 8.0,
+      "lifetime_score": 8.4,
+      "recent_score": 8.4,
+      "recent_days": 30,
+      "quality_score": 8.4,
+      "score": 8.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.4,
+      "role_tags": [
+        "裏取り型"
+      ]
+    },
+    "rising1974": {
+      "handle": "@rising1974",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 8.0,
+      "last_seen": "2026-06-24T08:18:52+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1,
@@ -48448,6 +50496,39 @@
         "文脈確認型"
       ]
     },
+    "09155hokanko": {
+      "handle": "@09155hokanko",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-24T06:07:34+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 7.0,
+      "lifetime_score": 7.4,
+      "recent_score": 7.4,
+      "recent_days": 30,
+      "quality_score": 7.4,
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.0,
+      "role_tags": [
+        "文脈確認型"
+      ]
+    },
     "0m0ay": {
       "handle": "@0m0ay",
       "posts_seen": 1,
@@ -48489,6 +50570,39 @@
       "noise_posts": 0,
       "value_points": 7.0,
       "last_seen": "2026-06-07T13:46:12+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 7.0,
+      "lifetime_score": 7.4,
+      "recent_score": 7.4,
+      "recent_days": 30,
+      "quality_score": 7.4,
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.0,
+      "role_tags": [
+        "文脈確認型"
+      ]
+    },
+    "0stlich": {
+      "handle": "@0stlich",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-24T09:08:12+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1
@@ -50989,6 +53103,39 @@
         "文脈確認型"
       ]
     },
+    "alive_316": {
+      "handle": "@alive_316",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-24T08:40:15+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 7.0,
+      "lifetime_score": 7.4,
+      "recent_score": 7.4,
+      "recent_days": 30,
+      "quality_score": 7.4,
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.0,
+      "role_tags": [
+        "文脈確認型"
+      ]
+    },
     "amaebi33": {
       "handle": "@amaebi33",
       "posts_seen": 1,
@@ -51162,6 +53309,39 @@
       "noise_posts": 0,
       "value_points": 7.0,
       "last_seen": "2026-06-04T14:56:31+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 7.0,
+      "lifetime_score": 7.4,
+      "recent_score": 7.4,
+      "recent_days": 30,
+      "quality_score": 7.4,
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.0,
+      "role_tags": [
+        "文脈確認型"
+      ]
+    },
+    "amenonocturne": {
+      "handle": "@amenonocturne",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-24T03:41:59+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1
@@ -52606,6 +54786,39 @@
         "文脈確認型"
       ]
     },
+    "bluenote_place": {
+      "handle": "@bluenote_place",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-24T09:26:46+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 7.0,
+      "lifetime_score": 7.4,
+      "recent_score": 7.4,
+      "recent_days": 30,
+      "quality_score": 7.4,
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.0,
+      "role_tags": [
+        "文脈確認型"
+      ]
+    },
     "bocchi_one_of": {
       "handle": "@bocchi_one_of",
       "posts_seen": 1,
@@ -52614,6 +54827,39 @@
       "noise_posts": 0,
       "value_points": 7.0,
       "last_seen": "2026-06-15T13:09:47+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 7.0,
+      "lifetime_score": 7.4,
+      "recent_score": 7.4,
+      "recent_days": 30,
+      "quality_score": 7.4,
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.0,
+      "role_tags": [
+        "文脈確認型"
+      ]
+    },
+    "boiaauuhkmtntu": {
+      "handle": "@boiaauuhkmtntu",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-24T09:06:58+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1
@@ -53926,6 +56172,39 @@
         "文脈確認型"
       ]
     },
+    "curenunu": {
+      "handle": "@curenunu",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-24T09:47:46+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 7.0,
+      "lifetime_score": 7.4,
+      "recent_score": 7.4,
+      "recent_days": 30,
+      "quality_score": 7.4,
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.0,
+      "role_tags": [
+        "文脈確認型"
+      ]
+    },
     "cusacabe": {
       "handle": "@cusacabe",
       "posts_seen": 1,
@@ -54528,6 +56807,39 @@
       "noise_posts": 0,
       "value_points": 7.0,
       "last_seen": "2026-06-22T16:53:45+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 7.0,
+      "lifetime_score": 7.4,
+      "recent_score": 7.4,
+      "recent_days": 30,
+      "quality_score": 7.4,
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.0,
+      "role_tags": [
+        "文脈確認型"
+      ]
+    },
+    "dre91978210": {
+      "handle": "@dre91978210",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-24T08:39:38+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1
@@ -55188,6 +57500,39 @@
       "noise_posts": 0,
       "value_points": 7.0,
       "last_seen": "2026-06-12T14:05:04+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 7.0,
+      "lifetime_score": 7.4,
+      "recent_score": 7.4,
+      "recent_days": 30,
+      "quality_score": 7.4,
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.0,
+      "role_tags": [
+        "文脈確認型"
+      ]
+    },
+    "favi_chita": {
+      "handle": "@favi_chita",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-24T08:52:40+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1
@@ -58949,6 +61294,39 @@
         "文脈確認型"
       ]
     },
+    "ikkeicyann": {
+      "handle": "@ikkeicyann",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-24T08:51:01+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 7.0,
+      "lifetime_score": 7.4,
+      "recent_score": 7.4,
+      "recent_days": 30,
+      "quality_score": 7.4,
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.0,
+      "role_tags": [
+        "文脈確認型"
+      ]
+    },
     "ilife_yu": {
       "handle": "@ilife_yu",
       "posts_seen": 1,
@@ -59122,6 +61500,39 @@
       "noise_posts": 0,
       "value_points": 7.0,
       "last_seen": "2026-06-23T05:57:13+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 7.0,
+      "lifetime_score": 7.4,
+      "recent_score": 7.4,
+      "recent_days": 30,
+      "quality_score": 7.4,
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.0,
+      "role_tags": [
+        "文脈確認型"
+      ]
+    },
+    "iori_mga30": {
+      "handle": "@iori_mga30",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-24T08:55:29+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1
@@ -61259,6 +63670,39 @@
         "文脈確認型"
       ]
     },
+    "key_note_goods": {
+      "handle": "@key_note_goods",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-24T03:36:10+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 7.0,
+      "lifetime_score": 7.4,
+      "recent_score": 7.4,
+      "recent_days": 30,
+      "quality_score": 7.4,
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.0,
+      "role_tags": [
+        "文脈確認型"
+      ]
+    },
     "kf44red": {
       "handle": "@kf44red",
       "posts_seen": 1,
@@ -61300,6 +63744,39 @@
       "noise_posts": 0,
       "value_points": 7.0,
       "last_seen": "2026-06-19T15:30:55+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 7.0,
+      "lifetime_score": 7.4,
+      "recent_score": 7.4,
+      "recent_days": 30,
+      "quality_score": 7.4,
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.0,
+      "role_tags": [
+        "文脈確認型"
+      ]
+    },
+    "kidsgarden_fs": {
+      "handle": "@kidsgarden_fs",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-24T06:24:10+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1
@@ -62084,39 +64561,6 @@
         "文脈確認型"
       ]
     },
-    "koko_mononohu": {
-      "handle": "@koko_mononohu",
-      "posts_seen": 1,
-      "valuable_posts": 1,
-      "future_schedule_posts": 0,
-      "noise_posts": 0,
-      "value_points": 7.0,
-      "last_seen": "2026-06-08T11:30:18+00:00",
-      "top_reasons": {
-        "bon": 1,
-        "context": 1
-      },
-      "recent_posts_seen": 1,
-      "recent_valuable_posts": 1,
-      "recent_future_schedule_posts": 0,
-      "recent_noise_posts": 0,
-      "recent_value_points": 7.0,
-      "lifetime_score": 7.4,
-      "recent_score": 7.4,
-      "recent_days": 30,
-      "quality_score": 7.4,
-      "score": 7.4,
-      "value_ratio": 1.0,
-      "recent_value_ratio": 1.0,
-      "status": "active",
-      "confidence": "low",
-      "usefulness_rank": "Candidate",
-      "usefulness_rank_number": 2,
-      "usefulness_score": 43.0,
-      "role_tags": [
-        "文脈確認型"
-      ]
-    },
     "kokuminmacha2": {
       "handle": "@kokuminmacha2",
       "posts_seen": 1,
@@ -62158,6 +64602,39 @@
       "noise_posts": 0,
       "value_points": 7.0,
       "last_seen": "2026-06-15T11:36:06+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 7.0,
+      "lifetime_score": 7.4,
+      "recent_score": 7.4,
+      "recent_days": 30,
+      "quality_score": 7.4,
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.0,
+      "role_tags": [
+        "文脈確認型"
+      ]
+    },
+    "komi_utapri": {
+      "handle": "@komi_utapri",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-23T16:21:19+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1
@@ -63305,6 +65782,39 @@
         "文脈確認型"
       ]
     },
+    "leo_620": {
+      "handle": "@leo_620",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-24T07:44:52+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 7.0,
+      "lifetime_score": 7.4,
+      "recent_score": 7.4,
+      "recent_days": 30,
+      "quality_score": 7.4,
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.0,
+      "role_tags": [
+        "文脈確認型"
+      ]
+    },
     "liebnajn": {
       "handle": "@liebnajn",
       "posts_seen": 1,
@@ -64328,6 +66838,39 @@
         "文脈確認型"
       ]
     },
+    "marizo_0_0_0_0_": {
+      "handle": "@marizo_0_0_0_0_",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-24T05:44:13+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 7.0,
+      "lifetime_score": 7.4,
+      "recent_score": 7.4,
+      "recent_days": 30,
+      "quality_score": 7.4,
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.0,
+      "role_tags": [
+        "文脈確認型"
+      ]
+    },
     "maru__dai": {
       "handle": "@maru__dai",
       "posts_seen": 1,
@@ -64567,6 +67110,72 @@
       "noise_posts": 0,
       "value_points": 7.0,
       "last_seen": "2026-06-17T15:44:27+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 7.0,
+      "lifetime_score": 7.4,
+      "recent_score": 7.4,
+      "recent_days": 30,
+      "quality_score": 7.4,
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.0,
+      "role_tags": [
+        "文脈確認型"
+      ]
+    },
+    "maxd75ufdmf4pml": {
+      "handle": "@maxd75ufdmf4pml",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-24T09:19:42+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 7.0,
+      "lifetime_score": 7.4,
+      "recent_score": 7.4,
+      "recent_days": 30,
+      "quality_score": 7.4,
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.0,
+      "role_tags": [
+        "文脈確認型"
+      ]
+    },
+    "mayou20_": {
+      "handle": "@mayou20_",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-24T09:27:13+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1
@@ -65747,6 +68356,39 @@
         "文脈確認型"
       ]
     },
+    "mimimichyun327": {
+      "handle": "@mimimichyun327",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-24T03:07:03+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 7.0,
+      "lifetime_score": 7.4,
+      "recent_score": 7.4,
+      "recent_days": 30,
+      "quality_score": 7.4,
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.0,
+      "role_tags": [
+        "文脈確認型"
+      ]
+    },
     "minamimuki_____": {
       "handle": "@minamimuki_____",
       "posts_seen": 1,
@@ -66572,6 +69214,39 @@
         "文脈確認型"
       ]
     },
+    "mosukenostalgia": {
+      "handle": "@mosukenostalgia",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-24T03:31:41+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 7.0,
+      "lifetime_score": 7.4,
+      "recent_score": 7.4,
+      "recent_days": 30,
+      "quality_score": 7.4,
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.0,
+      "role_tags": [
+        "文脈確認型"
+      ]
+    },
     "motaririri": {
       "handle": "@motaririri",
       "posts_seen": 1,
@@ -67100,39 +69775,6 @@
         "文脈確認型"
       ]
     },
-    "myotoo": {
-      "handle": "@myotoo",
-      "posts_seen": 1,
-      "valuable_posts": 1,
-      "future_schedule_posts": 0,
-      "noise_posts": 0,
-      "value_points": 7.0,
-      "last_seen": "2026-06-07T00:56:07+00:00",
-      "top_reasons": {
-        "bon": 1,
-        "context": 1
-      },
-      "recent_posts_seen": 1,
-      "recent_valuable_posts": 1,
-      "recent_future_schedule_posts": 0,
-      "recent_noise_posts": 0,
-      "recent_value_points": 7.0,
-      "lifetime_score": 7.4,
-      "recent_score": 7.4,
-      "recent_days": 30,
-      "quality_score": 7.4,
-      "score": 7.4,
-      "value_ratio": 1.0,
-      "recent_value_ratio": 1.0,
-      "status": "active",
-      "confidence": "low",
-      "usefulness_rank": "Candidate",
-      "usefulness_rank_number": 2,
-      "usefulness_score": 43.0,
-      "role_tags": [
-        "文脈確認型"
-      ]
-    },
     "myu18689322": {
       "handle": "@myu18689322",
       "posts_seen": 1,
@@ -67306,6 +69948,39 @@
       "noise_posts": 0,
       "value_points": 7.0,
       "last_seen": "2026-06-17T11:02:13+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 7.0,
+      "lifetime_score": 7.4,
+      "recent_score": 7.4,
+      "recent_days": 30,
+      "quality_score": 7.4,
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.0,
+      "role_tags": [
+        "文脈確認型"
+      ]
+    },
+    "nakimovie": {
+      "handle": "@nakimovie",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-24T09:02:00+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1
@@ -68585,6 +71260,39 @@
         "文脈確認型"
       ]
     },
+    "nori07181": {
+      "handle": "@nori07181",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-23T21:36:43+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 7.0,
+      "lifetime_score": 7.4,
+      "recent_score": 7.4,
+      "recent_days": 30,
+      "quality_score": 7.4,
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.0,
+      "role_tags": [
+        "文脈確認型"
+      ]
+    },
     "nslovers_ka": {
       "handle": "@nslovers_ka",
       "posts_seen": 1,
@@ -69377,6 +72085,39 @@
         "文脈確認型"
       ]
     },
+    "olkjc": {
+      "handle": "@olkjc",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-24T08:23:17+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 7.0,
+      "lifetime_score": 7.4,
+      "recent_score": 7.4,
+      "recent_days": 30,
+      "quality_score": 7.4,
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.0,
+      "role_tags": [
+        "文脈確認型"
+      ]
+    },
     "omanu_san": {
       "handle": "@omanu_san",
       "posts_seen": 1,
@@ -69674,6 +72415,39 @@
         "文脈確認型"
       ]
     },
+    "otama410410": {
+      "handle": "@otama410410",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-24T03:05:53+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 7.0,
+      "lifetime_score": 7.4,
+      "recent_score": 7.4,
+      "recent_days": 30,
+      "quality_score": 7.4,
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.0,
+      "role_tags": [
+        "文脈確認型"
+      ]
+    },
     "oto125music": {
       "handle": "@oto125music",
       "posts_seen": 1,
@@ -69781,6 +72555,39 @@
       "noise_posts": 0,
       "value_points": 7.0,
       "last_seen": "2026-06-15T11:44:49+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 7.0,
+      "lifetime_score": 7.4,
+      "recent_score": 7.4,
+      "recent_days": 30,
+      "quality_score": 7.4,
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.0,
+      "role_tags": [
+        "文脈確認型"
+      ]
+    },
+    "ou_sato_show": {
+      "handle": "@ou_sato_show",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-24T08:41:03+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1
@@ -70895,6 +73702,39 @@
         "文脈確認型"
       ]
     },
+    "pudding_my_life": {
+      "handle": "@pudding_my_life",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-24T09:44:03+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 7.0,
+      "lifetime_score": 7.4,
+      "recent_score": 7.4,
+      "recent_days": 30,
+      "quality_score": 7.4,
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.0,
+      "role_tags": [
+        "文脈確認型"
+      ]
+    },
     "puni_2": {
       "handle": "@puni_2",
       "posts_seen": 1,
@@ -71390,6 +74230,39 @@
         "文脈確認型"
       ]
     },
+    "rb_vov_516": {
+      "handle": "@rb_vov_516",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-24T03:05:31+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 7.0,
+      "lifetime_score": 7.4,
+      "recent_score": 7.4,
+      "recent_days": 30,
+      "quality_score": 7.4,
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.0,
+      "role_tags": [
+        "文脈確認型"
+      ]
+    },
     "re_er_re_": {
       "handle": "@re_er_re_",
       "posts_seen": 1,
@@ -71588,6 +74461,39 @@
         "文脈確認型"
       ]
     },
+    "rijaccrijacc": {
+      "handle": "@rijaccrijacc",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-23T17:52:01+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 7.0,
+      "lifetime_score": 7.4,
+      "recent_score": 7.4,
+      "recent_days": 30,
+      "quality_score": 7.4,
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.0,
+      "role_tags": [
+        "文脈確認型"
+      ]
+    },
     "rikohayamajp": {
       "handle": "@rikohayamajp",
       "posts_seen": 1,
@@ -71728,6 +74634,39 @@
       "noise_posts": 0,
       "value_points": 7.0,
       "last_seen": "2026-06-10T03:52:32+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 7.0,
+      "lifetime_score": 7.4,
+      "recent_score": 7.4,
+      "recent_days": 30,
+      "quality_score": 7.4,
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.0,
+      "role_tags": [
+        "文脈確認型"
+      ]
+    },
+    "rinapytoon": {
+      "handle": "@rinapytoon",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-24T03:40:56+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1
@@ -71926,6 +74865,39 @@
       "noise_posts": 0,
       "value_points": 7.0,
       "last_seen": "2026-06-11T01:58:59+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 7.0,
+      "lifetime_score": 7.4,
+      "recent_score": 7.4,
+      "recent_days": 30,
+      "quality_score": 7.4,
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.0,
+      "role_tags": [
+        "文脈確認型"
+      ]
+    },
+    "rnbmellow": {
+      "handle": "@rnbmellow",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-24T03:47:28+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1
@@ -73403,6 +76375,39 @@
         "文脈確認型"
       ]
     },
+    "saumo33": {
+      "handle": "@saumo33",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-24T03:03:26+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 7.0,
+      "lifetime_score": 7.4,
+      "recent_score": 7.4,
+      "recent_days": 30,
+      "quality_score": 7.4,
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.0,
+      "role_tags": [
+        "文脈確認型"
+      ]
+    },
     "sayakadaimyojin": {
       "handle": "@sayakadaimyojin",
       "posts_seen": 1,
@@ -74824,6 +77829,39 @@
         "文脈確認型"
       ]
     },
+    "sivuki23": {
+      "handle": "@sivuki23",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-24T05:52:23+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 7.0,
+      "lifetime_score": 7.4,
+      "recent_score": 7.4,
+      "recent_days": 30,
+      "quality_score": 7.4,
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.0,
+      "role_tags": [
+        "文脈確認型"
+      ]
+    },
     "six_ff610": {
       "handle": "@six_ff610",
       "posts_seen": 1,
@@ -75154,6 +78192,39 @@
         "文脈確認型"
       ]
     },
+    "soregashi_eiji": {
+      "handle": "@soregashi_eiji",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-24T07:38:55+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 7.0,
+      "lifetime_score": 7.4,
+      "recent_score": 7.4,
+      "recent_days": 30,
+      "quality_score": 7.4,
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.0,
+      "role_tags": [
+        "文脈確認型"
+      ]
+    },
     "sphere_taketatu": {
       "handle": "@sphere_taketatu",
       "posts_seen": 1,
@@ -75294,6 +78365,39 @@
       "noise_posts": 0,
       "value_points": 7.0,
       "last_seen": "2026-06-21T07:07:03+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 7.0,
+      "lifetime_score": 7.4,
+      "recent_score": 7.4,
+      "recent_days": 30,
+      "quality_score": 7.4,
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.0,
+      "role_tags": [
+        "文脈確認型"
+      ]
+    },
+    "str_mi9": {
+      "handle": "@str_mi9",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-24T08:29:53+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1
@@ -76870,6 +79974,39 @@
         "文脈確認型"
       ]
     },
+    "terminator_mayu": {
+      "handle": "@terminator_mayu",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-24T05:12:34+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 7.0,
+      "lifetime_score": 7.4,
+      "recent_score": 7.4,
+      "recent_days": 30,
+      "quality_score": 7.4,
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.0,
+      "role_tags": [
+        "文脈確認型"
+      ]
+    },
     "terzand2": {
       "handle": "@terzand2",
       "posts_seen": 1,
@@ -77076,6 +80213,39 @@
       "noise_posts": 0,
       "value_points": 7.0,
       "last_seen": "2026-06-04T16:42:39+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 7.0,
+      "lifetime_score": 7.4,
+      "recent_score": 7.4,
+      "recent_days": 30,
+      "quality_score": 7.4,
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.0,
+      "role_tags": [
+        "文脈確認型"
+      ]
+    },
+    "tkkr_b": {
+      "handle": "@tkkr_b",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-24T08:39:10+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1
@@ -78619,6 +81789,39 @@
         "文脈確認型"
       ]
     },
+    "uzysakai": {
+      "handle": "@uzysakai",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-24T03:29:38+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 7.0,
+      "lifetime_score": 7.4,
+      "recent_score": 7.4,
+      "recent_days": 30,
+      "quality_score": 7.4,
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.0,
+      "role_tags": [
+        "文脈確認型"
+      ]
+    },
     "vauvau455": {
       "handle": "@vauvau455",
       "posts_seen": 1,
@@ -79015,6 +82218,39 @@
         "文脈確認型"
       ]
     },
+    "waon_wanwan": {
+      "handle": "@waon_wanwan",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-24T09:47:41+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 7.0,
+      "lifetime_score": 7.4,
+      "recent_score": 7.4,
+      "recent_days": 30,
+      "quality_score": 7.4,
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.0,
+      "role_tags": [
+        "文脈確認型"
+      ]
+    },
     "warukitokyo": {
       "handle": "@warukitokyo",
       "posts_seen": 1,
@@ -79089,6 +82325,39 @@
       "noise_posts": 0,
       "value_points": 7.0,
       "last_seen": "2026-06-03T13:30:38+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 7.0,
+      "lifetime_score": 7.4,
+      "recent_score": 7.4,
+      "recent_days": 30,
+      "quality_score": 7.4,
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.0,
+      "role_tags": [
+        "文脈確認型"
+      ]
+    },
+    "we_will_be__": {
+      "handle": "@we_will_be__",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-24T03:30:55+00:00",
       "top_reasons": {
         "bon": 1,
         "context": 1
@@ -81358,6 +84627,39 @@
         "文脈確認型"
       ]
     },
+    "zc33s_glaucus": {
+      "handle": "@zc33s_glaucus",
+      "posts_seen": 1,
+      "valuable_posts": 1,
+      "future_schedule_posts": 0,
+      "noise_posts": 0,
+      "value_points": 7.0,
+      "last_seen": "2026-06-24T08:46:18+00:00",
+      "top_reasons": {
+        "bon": 1,
+        "context": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 1,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 0,
+      "recent_value_points": 7.0,
+      "lifetime_score": 7.4,
+      "recent_score": 7.4,
+      "recent_days": 30,
+      "quality_score": 7.4,
+      "score": 7.4,
+      "value_ratio": 1.0,
+      "recent_value_ratio": 1.0,
+      "status": "active",
+      "confidence": "low",
+      "usefulness_rank": "Candidate",
+      "usefulness_rank_number": 2,
+      "usefulness_score": 43.0,
+      "role_tags": [
+        "文脈確認型"
+      ]
+    },
     "zeekdimension": {
       "handle": "@zeekdimension",
       "posts_seen": 1,
@@ -82020,39 +85322,6 @@
         "文脈確認型"
       ]
     },
-    "nana20090623": {
-      "handle": "@nana20090623",
-      "posts_seen": 1,
-      "valuable_posts": 1,
-      "future_schedule_posts": 0,
-      "noise_posts": 0,
-      "value_points": 7.0,
-      "last_seen": "2025-12-07T12:19:28+00:00",
-      "top_reasons": {
-        "bon": 1,
-        "context": 1
-      },
-      "recent_posts_seen": 0,
-      "recent_valuable_posts": 0,
-      "recent_future_schedule_posts": 0,
-      "recent_noise_posts": 0,
-      "recent_value_points": 0.0,
-      "lifetime_score": 7.4,
-      "recent_score": 0,
-      "recent_days": 30,
-      "quality_score": 7.4,
-      "score": 7.4,
-      "value_ratio": 1.0,
-      "recent_value_ratio": 0,
-      "status": "active",
-      "confidence": "low",
-      "usefulness_rank": "Candidate",
-      "usefulness_rank_number": 2,
-      "usefulness_score": 42.0,
-      "role_tags": [
-        "文脈確認型"
-      ]
-    },
     "tritongurashi": {
       "handle": "@tritongurashi",
       "posts_seen": 1,
@@ -82450,6 +85719,36 @@
       "usefulness_score": 15.0,
       "role_tags": []
     },
+    "takumaobonro": {
+      "handle": "@takumaobonro",
+      "posts_seen": 1,
+      "valuable_posts": 0,
+      "future_schedule_posts": 0,
+      "noise_posts": 1,
+      "value_points": -1.0,
+      "last_seen": "2026-06-24T00:29:09+00:00",
+      "top_reasons": {
+        "no_context": 1
+      },
+      "recent_posts_seen": 1,
+      "recent_valuable_posts": 0,
+      "recent_future_schedule_posts": 0,
+      "recent_noise_posts": 1,
+      "recent_value_points": -1.0,
+      "lifetime_score": -1.6,
+      "recent_score": -1.6,
+      "recent_days": 30,
+      "quality_score": -1.6,
+      "score": -1.6,
+      "value_ratio": 0.0,
+      "recent_value_ratio": 0.0,
+      "status": "probation",
+      "confidence": "low",
+      "usefulness_rank": "Probation",
+      "usefulness_rank_number": 1,
+      "usefulness_score": 15.0,
+      "role_tags": []
+    },
     "mrapple_bycandy": {
       "handle": "@mrapple_bycandy",
       "posts_seen": 7,
@@ -82549,35 +85848,38 @@
     },
     "tarokoba55": {
       "handle": "@tarokoba55",
-      "posts_seen": 8,
-      "valuable_posts": 2,
-      "future_schedule_posts": 0,
+      "posts_seen": 9,
+      "valuable_posts": 3,
+      "future_schedule_posts": 1,
       "noise_posts": 4,
-      "value_points": 6.0,
-      "last_seen": "2026-06-08T07:53:48+00:00",
+      "value_points": 23.0,
+      "last_seen": "2026-06-24T08:36:48+00:00",
       "top_reasons": {
-        "link": 4,
-        "no_context": 4,
-        "context": 2
+        "future_schedule": 1,
+        "bon": 1,
+        "context": 3,
+        "link": 5,
+        "no_context": 4
       },
-      "recent_posts_seen": 8,
-      "recent_valuable_posts": 2,
-      "recent_future_schedule_posts": 0,
+      "recent_posts_seen": 9,
+      "recent_valuable_posts": 3,
+      "recent_future_schedule_posts": 1,
       "recent_noise_posts": 4,
-      "recent_value_points": 6.0,
-      "lifetime_score": -0.85,
-      "recent_score": -0.85,
+      "recent_value_points": 23.0,
+      "lifetime_score": 1.356,
+      "recent_score": 1.356,
       "recent_days": 30,
-      "quality_score": -0.85,
-      "score": -0.85,
-      "value_ratio": 0.25,
-      "recent_value_ratio": 0.25,
+      "quality_score": 1.356,
+      "score": 1.356,
+      "value_ratio": 0.333,
+      "recent_value_ratio": 0.333,
       "status": "muted",
-      "confidence": "low",
+      "confidence": "medium",
       "usefulness_rank": "Muted",
       "usefulness_rank_number": 0,
       "usefulness_score": 0,
       "role_tags": [
+        "発見型",
         "裏取り型"
       ]
     }
