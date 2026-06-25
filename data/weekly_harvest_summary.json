@@ -1,21 +1,21 @@
 {
   "generated_by": "prepare_weekly_harvest_review.py",
-  "generated_at": "2026-06-19T11:42:58.233962+00:00",
+  "generated_at": "2026-06-25T11:30:01.997981+00:00",
   "source": "build_weekly_harvest_candidates.py",
-  "source_generated_at": "2026-06-19T11:42:50.374770+00:00",
+  "source_generated_at": "2026-06-25T11:29:54.219560+00:00",
   "days": 7,
-  "voice_count": 841,
-  "candidate_count": 85,
+  "voice_count": 1456,
+  "candidate_count": 135,
   "category_counts": {
-    "曲×会場共起": 11,
-    "曲候補": 67,
+    "曲×会場共起": 1,
+    "曲候補": 127,
     "用語候補": 7
   },
-  "non_song_review_count": 18,
-  "song_candidate_count": 67,
-  "song_direct_dry_run_count": 55,
+  "non_song_review_count": 8,
+  "song_candidate_count": 127,
+  "song_direct_dry_run_count": 105,
   "song_review_count": 2,
-  "song_rejected_noise_count": 10,
+  "song_rejected_noise_count": 20,
   "review_files": {
     "non_song_json": "data/weekly_harvest_review_candidates.json",
     "non_song_ui": "data/weekly_harvest_review_ui.html",
@@ -28,22 +28,18 @@
   ],
   "samples": {
     "non_song_review": [
-      "山王音頭 × 山王パークタワー公開空地",
-      "らんまん踊り × 山王パークタワー公開空地",
-      "水戸黄門おどり × 山王パークタワー公開空地",
-      "おこさ節 × 山王パークタワー公開空地",
-      "ぜひみなさん一緒に踊り × 山王パークタワー公開空地",
-      "千代田おどり × 山王パークタワー公開空地",
-      "千代田踊り × 山王パークタワー公開空地",
-      "東京音頭 × 飛鳥山公園",
-      "相馬甚句 × 山王パークタワー公開空地",
-      "花笠踊り × 山王パークタワー公開空地",
-      "飛鳥山公園輪踊り × 飛鳥山公園",
-      "練習会"
+      "郡上おどり × 新宿住友ビル三角広場",
+      "練習会",
+      "踊り会",
+      "参戦",
+      "はしご",
+      "ハシゴ",
+      "盆活",
+      "踊り始め"
     ],
     "song_review": [
       "郡上おどり",
-      "飛鳥山公園輪踊り"
+      "盆ジョビ"
     ]
   }
 }
