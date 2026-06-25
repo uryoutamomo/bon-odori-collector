@@ -1101,12 +1101,20 @@ def is_public_event_complete_enough(event):
 
 def public_series_key(event):
     """Return a loose same-series key for suppressing replaced last-year cards."""
-    name = series_event_name(event.get("name"))
+    name = public_series_name_for_replacement(event.get("name"))
     return "|".join([
         str(event.get("area") or ""),
         str(event.get("venue") or ""),
         name,
     ])
+
+
+def public_series_name_for_replacement(name):
+    """Normalize display variants that should replace the same prior-year card."""
+    text = series_event_name(name)
+    text = re.sub(r"^第[0-9０-９]+回\s*", "", text)
+    text = re.sub(r"\s*盆踊り$", "", text)
+    return text.strip()
 
 
 def _song_name(song):

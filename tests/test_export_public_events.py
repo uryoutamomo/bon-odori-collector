@@ -305,6 +305,35 @@ class ExportPublicEventsTest(unittest.TestCase):
         self.assertEqual(filtered[1]["songs"][0]["basis_label"], "2025年ヒント")
         self.assertNotIn("source_count", filtered[1]["songs"][0])
 
+    def test_suppress_replaced_recurring_events_matches_numbered_bon_odori_variant(self):
+        rows = apply_public_recurrence_metadata([
+            {
+                "name": "新橋こいち祭",
+                "venue": "桜田公園",
+                "area": "港区",
+                "date": "2026-07-23",
+                "date_end": "2026-07-24",
+                "status": "確認済み",
+            },
+            {
+                "name": "第28回新橋こいち祭 盆踊り",
+                "venue": "桜田公園",
+                "area": "港区",
+                "date": "2025-07-24",
+                "status": "終了",
+                "songs": [
+                    {"name": "東京音頭", "confidence": "hint", "source_count": 2, "probability": 80},
+                    {"name": "新橋音頭", "confidence": "hint", "source_count": 2, "probability": 80},
+                ],
+            },
+        ])
+
+        filtered = suppress_replaced_recurring_events(rows)
+
+        self.assertEqual([row["name"] for row in filtered], ["新橋こいち祭"])
+        self.assertEqual([song["name"] for song in filtered[0]["songs"]], ["新橋音頭", "東京音頭"])
+        self.assertEqual(filtered[0]["songs"][0]["basis_label"], "2025年ヒント")
+
     def test_sanitize_public_event_details_drops_empty_fallbacks(self):
         rows = sanitize_public_event_details([
             {
