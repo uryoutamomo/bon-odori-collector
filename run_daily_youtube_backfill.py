@@ -23,6 +23,7 @@ REPORT_JSON = DATA / "youtube_daily_backfill_report.json"
 REPORT_MD = DATA / "youtube_daily_backfill_report.md"
 PENDING_MAIL = DATA / "pending_mail.json"
 MASTER_RDB_FREEZE = DATA / "master_rdb_migration_freeze.json"
+OPS_METRICS_DASHBOARD = DATA / "ops_metrics_dashboard.html"
 QUOTA_LIMIT_RE = re.compile(
     r"quotaExceeded|dailyLimitExceeded|rateLimitExceeded|userRateLimitExceeded|Too Many Requests",
     re.I,
@@ -297,6 +298,25 @@ def regenerate_outputs(month):
     return [run_command(command) for command in commands]
 
 
+def collect_ops_metrics():
+    return run_command(["python3", "collect_ops_metrics.py"])
+
+
+def open_ops_metrics_dashboard():
+    if OPS_METRICS_DASHBOARD.exists():
+        target = str(OPS_METRICS_DASHBOARD.resolve())
+        for command in [
+            ["open", "-a", "Google Chrome", target],
+            ["open", "-a", "Safari", target],
+            ["open", target],
+        ]:
+            result = subprocess.run(command, text=True, capture_output=True)
+            if result.returncode == 0:
+                return "opened:" + " ".join(command[1:-1] or ["default"])
+        return "open_failed"
+    return "dashboard_not_found"
+
+
 def render_report(report):
     lines = [
         "# YouTube日次バックフィル",
@@ -418,6 +438,9 @@ def git_commit_and_push(report, push):
         "data/song_prediction_snapshots.json",
         "data/public/event_song_occurrences_public.json",
         "data/public/event_songs_public.json",
+        "data/ops_metrics_history.jsonl",
+        "data/ops_metrics_latest.md",
+        "data/ops_metrics_dashboard.html",
         f"data/month_{report['month']:02d}_youtube_backfill_queue.json",
         f"data/month_{report['month']:02d}_youtube_backfill_queue.md",
     ]
@@ -528,6 +551,7 @@ def main():
     parser.add_argument("--commit", action="store_true")
     parser.add_argument("--push", action="store_true")
     parser.add_argument("--mail-reminder", action="store_true")
+    parser.add_argument("--open-dashboard", action="store_true")
     parser.add_argument("--ignore-migration-freeze", action="store_true")
     args = parser.parse_args()
     guard_master_rdb_freeze(args)
@@ -595,6 +619,11 @@ def main():
     REPORT_MD.write_text(render_report(report), encoding="utf-8")
     if args.mail_reminder:
         write_pending_mail(report)
+    report["ops_metrics"] = collect_ops_metrics()
+    if args.open_dashboard:
+        report["ops_metrics_dashboard"] = open_ops_metrics_dashboard()
+    write_json(REPORT_JSON, report)
+    REPORT_MD.write_text(render_report(report), encoding="utf-8")
     if args.commit:
         report["git"] = "commit_requested"
         write_json(REPORT_JSON, report)

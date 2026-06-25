@@ -42,6 +42,15 @@ jobs:
     - name: Fast-forward main
       run: git pull --ff-only origin main
 
+    - name: Restore ops metrics history
+      run: |
+        git fetch origin automation/youtube-daily-backfill:refs/remotes/origin/automation/youtube-daily-backfill || true
+        if git show origin/automation/youtube-daily-backfill:data/ops_metrics_history.jsonl > data/ops_metrics_history.jsonl 2>/dev/null; then
+          echo "Restored previous ops metrics history"
+        else
+          echo "No previous ops metrics history"
+        fi
+
     - name: Set up Python
       uses: actions/setup-python@v6
       with:
@@ -122,6 +131,9 @@ jobs:
         git add data/public_date_prediction_apply_result.json
         git add data/public_historical_reference_dry_run.json
         git add data/public_season_hint_dry_run.json
+        git add data/ops_metrics_history.jsonl
+        git add data/ops_metrics_latest.md
+        git add data/ops_metrics_dashboard.html
         git add data/month_06_youtube_backfill_queue.json
         git add data/month_06_youtube_backfill_queue.md
         git add data/month_07_youtube_backfill_queue.json
