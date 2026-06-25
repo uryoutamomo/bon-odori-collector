@@ -1,57 +1,23 @@
 {
   "generated_by": "build_month_youtube_backfill_queue.py",
-  "generated_at": "2026-06-20T10:11:55.939656+00:00",
+  "generated_at": "2026-06-23T11:00:38.618222+00:00",
   "source": {
     "queue": "data/youtube_year_backfill_queue.json",
     "candidates": "data/youtube_year_backfill_candidates.json"
   },
   "month": 8,
   "summary": {
-    "items": 42,
+    "items": 41,
     "priority_counts": {
-      "low": 42
+      "low": 41
     },
     "target_year_counts": {
-      "2023": 21,
+      "2023": 20,
       "2024": 21
     },
-    "estimated_search_calls": 84
+    "estimated_search_calls": 82
   },
   "rows": [
-    {
-      "queue_id": "youtube-year-backfill:d424afab54d4ffc5",
-      "target_year": 2023,
-      "priority_score": 24,
-      "priority": "low",
-      "event_name": "神田明神納涼祭り アニソン盆踊り",
-      "venue": "神田明神境内",
-      "area": "千代田区",
-      "series_key": "90b1820eac7a",
-      "observed_years": [],
-      "observed_source_video_count": 0,
-      "public_date": "2025-08-08",
-      "public_date_end": "2025-08-08",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-08-08",
-        "2025-08-08"
-      ],
-      "recurrence_label": "昨年開催・継続性 中",
-      "recurrence_score": 0.55,
-      "source_url_count": 1,
-      "song_count": 3,
-      "priority_reasons": [
-        "has_source_url",
-        "medium_recurrence_score",
-        "has_song_data"
-      ],
-      "search_queries": [
-        "神田明神納涼祭り アニソン盆踊り 神田明神境内 千代田区 2023 盆踊り",
-        "神田明神納涼祭り アニソン盆踊り 2023 YouTube 盆踊り",
-        "神田明神境内 2023 盆踊り"
-      ],
-      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
-    },
     {
       "queue_id": "youtube-year-backfill:9fd7b26ad03a8f8b",
       "target_year": 2024,

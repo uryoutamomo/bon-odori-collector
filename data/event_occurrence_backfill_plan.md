@@ -1,9 +1,9 @@
 # 年次開催回バックフィル追加プラン
 
-- 生成: 2026-06-20T10:00:04.115016+00:00
-- observation_count: 28
-- source_video_count: 153
-- observations_with_songs: 25
+- 生成: 2026-06-24T20:00:33.251160+00:00
+- observation_count: 29
+- source_video_count: 155
+- observations_with_songs: 26
 - excluded_low_observation_count: 12
 
 | confidence | year | date | event | venue | videos | channels | songs |
@@ -14,6 +14,7 @@
 | high | 2023 | 2023-07-02 | 奥浅草盆踊り | 隅田公園 | 7 | 2 | 9 |
 | medium | 2023 | 2023-06-13 | 山王音頭と民踊大会 | 山王パークタワー公開空地 | 7 | 1 | 10 |
 | medium | 2023 | 2023-08-22 | 東本願寺盆踊り | 東本願寺（浅草） | 7 | 1 | 5 |
+| medium | 2023 | 2023-08-11 | 神田明神納涼祭り アニソン盆踊り | 神田明神境内 | 2 | 2 | 10 |
 | medium | 2023 | 2023-07-06〜2023-07-08 | 第15回 鴨台盆踊り | 大正大学 | 2 | 2 | 10 |
 | medium | 2023 | 2023-07-27 | 第28回新橋こいち祭 盆踊り | 桜田公園 | 3 | 1 | 2 |
 | medium | 2023 | 2023-08-03 | 築地本願寺納涼盆踊り大会 | 築地本願寺 | 5 | 1 | 5 |

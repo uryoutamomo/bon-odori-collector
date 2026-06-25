@@ -1,15 +1,15 @@
 {
   "generated_by": "build_event_occurrence_backfill_plan.py",
-  "generated_at": "2026-06-20T10:00:04.115016+00:00",
+  "generated_at": "2026-06-24T20:00:33.251160+00:00",
   "source": "data/youtube_year_backfill_candidates.json",
   "summary": {
-    "observation_count": 28,
-    "source_video_count": 153,
+    "observation_count": 29,
+    "source_video_count": 155,
     "observations_by_year": {
-      "2023": 14,
+      "2023": 15,
       "2024": 14
     },
-    "observations_with_songs": 25,
+    "observations_with_songs": 26,
     "manual_accepted_low_observation_count": 4,
     "excluded_low_observation_count": 12,
     "excluded_low_source_video_count": 15
@@ -760,6 +760,138 @@
           "source_count": 1,
           "source_urls": [
             "https://www.youtube.com/watch?v=HMjgBVjio1E"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        }
+      ]
+    },
+    {
+      "observation_id": "6e8b511a4fd0b64b",
+      "series_key": "90b1820eac7a",
+      "event_name": "神田明神納涼祭り アニソン盆踊り",
+      "venue": "神田明神境内",
+      "area": "千代田区",
+      "year": 2023,
+      "date_start": "2023-08-11",
+      "date_end": "2023-08-11",
+      "observed_dates": [
+        "2023-08-11"
+      ],
+      "weekday_start": "金",
+      "weekday_end": "金",
+      "source_type": "youtube_backfill_observed",
+      "source_video_count": 2,
+      "source_channels": [
+        "Walk in Japan 4K",
+        "和太鼓お祭りチャンネル"
+      ],
+      "confidence": "medium",
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=Jev8P9VyOWI",
+          "video_id": "Jev8P9VyOWI",
+          "title": "神田明神音頭（生歌）　2023年神田明神納涼祭り　アニソン盆踊り１３終",
+          "channel": "和太鼓お祭りチャンネル",
+          "published_at": "2023-09-04T10:30:07Z",
+          "score": 100
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=C5pqQVUe-no",
+          "video_id": "C5pqQVUe-no",
+          "title": "【4K Japan】2023.8.11 ※速報※ 神田明神 納涼祭り「アニソン盆踊り」『Kanda Myojin Shrine Summer Festival 2023』#アニソン盆踊り",
+          "channel": "Walk in Japan 4K",
+          "published_at": "2023-08-11T13:30:10Z",
+          "score": 98
+        }
+      ],
+      "songs": [
+        {
+          "song_name": "サンシャインぴっかぴか音頭",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=UGhScZxmlLA"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "品川音頭",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=dWkvzuMjKto"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "巣鴨花咲き音頭",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=ek_4th2ac_Q"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "東京音頭",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=hXWo9PbFfp0"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "炭坑節",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=NmWnvIUbpsA"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "おそ松くん音頭",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=mGbDaFGrpFY"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "七福神音頭",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=w385R4otSDQ"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "品川甚句",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=2VLjsb_YKG4"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "東京みなと音頭",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=m-eM5cQnVLM"
+          ],
+          "source_type": "youtube_backfill_title_observed",
+          "confidence": "hint"
+        },
+        {
+          "song_name": "北海盆唄",
+          "source_count": 1,
+          "source_urls": [
+            "https://www.youtube.com/watch?v=NRXAzkhoGww"
           ],
           "source_type": "youtube_backfill_title_observed",
           "confidence": "hint"
