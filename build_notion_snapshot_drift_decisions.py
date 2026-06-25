@@ -21,6 +21,11 @@ OUT_MD = DATA / "notion_snapshot_master_drift_decisions.md"
 CONFIRMED_STATE_FIELDS = {"date_status", "lifecycle_status"}
 NOTION_EMPTY_VALUES = {"", None, "unknown", "predicted", "未確認"}
 MASTER_CONFIRMED_VALUES = {"confirmed", "published"}
+REVIEWED_PRESERVE_MASTER_CONFLICTS = {
+    ("event_occurrence", "新橋こいち祭", "source_url"),
+    ("event_occurrence", "品川区民まつり 荏原第五地区", "venue_id"),
+    ("event_occurrence", "品川区民まつり 八潮地区", "source_url"),
+}
 
 
 def load_json(path):
@@ -57,6 +62,16 @@ def decision_for(row):
             "decision": "preserve_master_confirmed_state",
             "apply_ready": False,
             "reason": "Master DB already records reviewed confirmed/published state; Notion snapshot is weaker.",
+        }
+
+    if (
+        recommendation == "review_conflict"
+        and (row.get("entity_type"), row.get("title"), field) in REVIEWED_PRESERVE_MASTER_CONFLICTS
+    ):
+        return {
+            "decision": "preserve_master_reviewed_conflict",
+            "apply_ready": False,
+            "reason": "Reviewed conflict; keep the more specific/current Master RDB value and do not write Notion.",
         }
 
     if (
@@ -110,7 +125,7 @@ def build_decisions(report):
             "preserve_master_empty_notion": True,
             "preserve_reviewed_confirmed_state_over_weaker_notion": True,
             "copy_notion_public_intro_when_master_empty": "candidate_only",
-            "conflicting_source_url_or_venue": "hold_for_manual_review",
+            "conflicting_source_url_or_venue": "hold_for_manual_review_unless_reviewed_preserve_master",
         },
         "summary": {
             "decision_count": len(rows),

@@ -226,6 +226,26 @@ def compare_events(master_conn):
         add_diff(diffs, "event_occurrence", entity_id, title, "public_intro_override", row["public_intro_override"], row["public_intro"])
         add_diff(diffs, "event_occurrence", entity_id, title, "detail", row["master_detail"], row["detail"])
 
+    series_public_intro_values = {}
+    series_source_url_values = {}
+    for row in rows(
+        master_conn,
+        """
+        SELECT l.master_id AS series_id, n.public_intro, n.source_url
+        FROM notion.notion_events n
+        JOIN external_record_links l
+          ON l.system = 'notion'
+         AND l.source_key = 'events'
+         AND l.master_table = 'event_series'
+         AND l.relation_kind = 'series_for_occurrence'
+         AND l.external_id = n.page_id
+        """,
+    ):
+        if row.get("public_intro"):
+            series_public_intro_values.setdefault(row["series_id"], set()).add(row["public_intro"])
+        if row.get("source_url"):
+            series_source_url_values.setdefault(row["series_id"], set()).add(row["source_url"])
+
     series_rows = rows(
         master_conn,
         """
@@ -250,8 +270,18 @@ def compare_events(master_conn):
         add_diff(diffs, "event_series", entity_id, title, "canonical_name", row["canonical_name"], expected_name)
         add_diff(diffs, "event_series", entity_id, title, "usual_venue_id", row["usual_venue_id"], expected_venue)
         add_diff(diffs, "event_series", entity_id, title, "annual_months_json", row["annual_months_json"], json_list(parse_months(row["annual_months"])))
-        add_diff(diffs, "event_series", entity_id, title, "public_intro", row["master_public_intro"], row["public_intro"])
-        add_diff(diffs, "event_series", entity_id, title, "source_url", row["master_source_url"], row["source_url"])
+        if not (
+            row["master_public_intro"]
+            and not row["public_intro"]
+            and row["master_public_intro"] in series_public_intro_values.get(entity_id, set())
+        ):
+            add_diff(diffs, "event_series", entity_id, title, "public_intro", row["master_public_intro"], row["public_intro"])
+        if not (
+            row["master_source_url"]
+            and row["master_source_url"] != row["source_url"]
+            and row["master_source_url"] in series_source_url_values.get(entity_id, set())
+        ):
+            add_diff(diffs, "event_series", entity_id, title, "source_url", row["master_source_url"], row["source_url"])
     return diffs
 
 
