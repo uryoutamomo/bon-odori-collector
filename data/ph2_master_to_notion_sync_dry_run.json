@@ -1,6 +1,6 @@
 {
   "generated_by": "sync_master_to_notion.py",
-  "generated_at": "2026-06-22T14:49:40.168456+00:00",
+  "generated_at": "2026-06-25T13:46:34.371995+00:00",
   "mode": "dry_run",
   "apply_performed": false,
   "sources": {
@@ -11,7 +11,8 @@
     "target_table": "event_occurrences",
     "job_id": "",
     "requested_by": "",
-    "include_dry_run_jobs": false
+    "include_dry_run_jobs": false,
+    "allow_frozen_notion_write": false
   },
   "summary": {
     "selected_jobs": 0,

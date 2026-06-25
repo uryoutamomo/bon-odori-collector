@@ -1,14 +1,14 @@
 {
   "generated_by": "compare_notion_snapshot_to_master.py",
-  "generated_at": "2026-06-22T15:02:17.462942+00:00",
+  "generated_at": "2026-06-25T13:46:07.783014+00:00",
   "master_db": "data/bon_odori_master.sqlite",
   "notion_db": "data/notion_snapshot.sqlite",
   "status": "review_required",
   "summary": {
-    "diff_count": 32,
+    "diff_count": 29,
     "diffs_by_entity_type": {
       "event_occurrence": 24,
-      "event_series": 8
+      "event_series": 5
     },
     "diffs_by_field": {
       "event_occurrence.date_end": 2,
@@ -17,19 +17,15 @@
       "event_occurrence.lifecycle_status": 1,
       "event_occurrence.source_url": 4,
       "event_occurrence.venue_id": 6,
-      "event_series.public_intro": 1,
-      "event_series.source_url": 2,
       "event_series.usual_venue_id": 5
     },
     "diffs_by_kind": {
       "master_has_value_notion_empty": 19,
-      "notion_has_value_master_empty": 1,
-      "value_conflict": 12
+      "value_conflict": 10
     },
     "diffs_by_recommendation": {
       "preserve_master": 19,
-      "review_before_copy_from_notion": 1,
-      "review_conflict": 12
+      "review_conflict": 10
     },
     "linked_counts": {
       "notion_venues_linked": 213,
@@ -343,28 +339,6 @@
     {
       "severity": "review",
       "entity_type": "event_series",
-      "entity_id": "ser_d0140daa64d7a876",
-      "title": "SHIBUYA MIYASHITA PARK BON DANCE",
-      "field": "public_intro",
-      "drift_kind": "notion_has_value_master_empty",
-      "recommendation": "review_before_copy_from_notion",
-      "master_value": "",
-      "notion_snapshot_value": "渋谷・宮下公園の芝生の上で開かれる現代型の盆踊り。買い物帰りにふらっと輪に入れる、渋谷らしいボンダンス。"
-    },
-    {
-      "severity": "review",
-      "entity_type": "event_series",
-      "entity_id": "ser_d0140daa64d7a876",
-      "title": "SHIBUYA MIYASHITA PARK BON DANCE",
-      "field": "source_url",
-      "drift_kind": "value_conflict",
-      "recommendation": "review_conflict",
-      "master_value": "https://miyashita-bondance.jp/2025/",
-      "notion_snapshot_value": "https://mantan-web.jp/prtimes/article/20260527prt00m200000530a.html"
-    },
-    {
-      "severity": "review",
-      "entity_type": "event_series",
       "entity_id": "ser_67279a1626b2dbb8",
       "title": "藤沢七夕まつり（DJ盆踊り大会）",
       "field": "usual_venue_id",
@@ -383,17 +357,6 @@
       "recommendation": "preserve_master",
       "master_value": "ven_a52431fddb1891f8",
       "notion_snapshot_value": ""
-    },
-    {
-      "severity": "review",
-      "entity_type": "event_series",
-      "entity_id": "ser_d39870ddba633c11",
-      "title": "郡上おどり in 青山",
-      "field": "source_url",
-      "drift_kind": "value_conflict",
-      "recommendation": "review_conflict",
-      "master_value": "https://aoyama-gaienmae.or.jp/news/20260326/",
-      "notion_snapshot_value": "https://aoyama-gaienmae.or.jp/news/20250617/"
     }
   ]
 }

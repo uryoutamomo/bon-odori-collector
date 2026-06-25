@@ -1,17 +1,17 @@
 # Notion snapshot -> master drift report
 
-- generated_at: 2026-06-22T15:02:17.462942+00:00
+- generated_at: 2026-06-25T13:46:07.783014+00:00
 - status: review_required
 - master_db: `data/bon_odori_master.sqlite`
 - notion_db: `data/notion_snapshot.sqlite`
-- diff_count: 32
+- diff_count: 29
 - linked_counts: {'notion_venues_linked': 213, 'notion_events_linked': 222, 'notion_songs_linked': 141}
 - notion_counts: {'notion_venues': 213, 'notion_events': 222, 'notion_songs': 141}
 
 ## Diffs by entity
 
 - event_occurrence: 24
-- event_series: 8
+- event_series: 5
 
 ## Diffs by field
 
@@ -21,15 +21,12 @@
 - event_occurrence.lifecycle_status: 1
 - event_occurrence.source_url: 4
 - event_occurrence.venue_id: 6
-- event_series.public_intro: 1
-- event_series.source_url: 2
 - event_series.usual_venue_id: 5
 
 ## Diffs by kind
 
 - master_has_value_notion_empty: 19
-- notion_has_value_master_empty: 1
-- value_conflict: 12
+- value_conflict: 10
 
 ## Diff detail
 
@@ -62,8 +59,5 @@
 | event_series | 新橋こいち祭 | usual_venue_id | master_has_value_notion_empty | preserve_master | ven_331b917a98238b0d |  |
 | event_series | 中野駅前大盆踊り大会 | usual_venue_id | master_has_value_notion_empty | preserve_master | ven_c1a0d7dbd4fae8d5 |  |
 | event_series | マロニエまつり盆踊り大会 | usual_venue_id | master_has_value_notion_empty | preserve_master | ven_e82a2aed94e45d29 |  |
-| event_series | SHIBUYA MIYASHITA PARK BON DANCE | public_intro | notion_has_value_master_empty | review_before_copy_from_notion |  | 渋谷・宮下公園の芝生の上で開かれる現代型の盆踊り。買い物帰りにふらっと輪に入れる、渋谷らしいボンダンス。 |
-| event_series | SHIBUYA MIYASHITA PARK BON DANCE | source_url | value_conflict | review_conflict | https://miyashita-bondance.jp/2025/ | https://mantan-web.jp/prtimes/article/20260527prt00m200000530a.html |
 | event_series | 藤沢七夕まつり（DJ盆踊り大会） | usual_venue_id | master_has_value_notion_empty | preserve_master | ven_61c6063cf53195b5 |  |
 | event_series | 郡上おどり in 青山 | usual_venue_id | master_has_value_notion_empty | preserve_master | ven_a52431fddb1891f8 |  |
-| event_series | 郡上おどり in 青山 | source_url | value_conflict | review_conflict | https://aoyama-gaienmae.or.jp/news/20260326/ | https://aoyama-gaienmae.or.jp/news/20250617/ |

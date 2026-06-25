@@ -1,27 +1,25 @@
 {
   "generated_by": "build_notion_snapshot_drift_decisions.py",
-  "generated_at": "2026-06-22T15:17:25.074989+00:00",
+  "generated_at": "2026-06-25T13:46:19.464259+00:00",
   "source_report": "compare_notion_snapshot_to_master.py",
-  "source_report_generated_at": "2026-06-22T15:02:17.462942+00:00",
-  "source_diff_count": 32,
-  "status": "apply_candidates_ready",
+  "source_report_generated_at": "2026-06-25T13:46:07.783014+00:00",
+  "source_diff_count": 29,
+  "status": "review_only",
   "policy": {
     "preserve_master_empty_notion": true,
     "preserve_reviewed_confirmed_state_over_weaker_notion": true,
     "copy_notion_public_intro_when_master_empty": "candidate_only",
-    "conflicting_source_url_or_venue": "hold_for_manual_review"
+    "conflicting_source_url_or_venue": "hold_for_manual_review_unless_reviewed_preserve_master"
   },
   "summary": {
-    "decision_count": 32,
+    "decision_count": 29,
     "by_decision": {
-      "candidate_copy_notion_public_intro": 1,
-      "hold_for_manual_review": 5,
       "preserve_master": 19,
-      "preserve_master_confirmed_state": 7
+      "preserve_master_confirmed_state": 7,
+      "preserve_master_reviewed_conflict": 3
     },
     "by_apply_readiness": {
-      "apply_ready": 1,
-      "not_apply_ready": 31
+      "not_apply_ready": 29
     }
   },
   "decisions": [
@@ -77,9 +75,9 @@
       "recommendation": "review_conflict",
       "master_value": "http://www.shinbashi.net/top/koichi/2026/greeting/",
       "notion_snapshot_value": "http://www.shinbashi.net/top/koichi/",
-      "decision": "hold_for_manual_review",
+      "decision": "preserve_master_reviewed_conflict",
       "apply_ready": false,
-      "reason": "Conflict needs source review before changing master DB."
+      "reason": "Reviewed conflict; keep the more specific/current Master RDB value and do not write Notion."
     },
     {
       "decision_id": "notion_drift_005",
@@ -217,9 +215,9 @@
       "recommendation": "review_conflict",
       "master_value": "ven_a2ba81d51cea787c",
       "notion_snapshot_value": "ven_3e4793480293aa92",
-      "decision": "hold_for_manual_review",
+      "decision": "preserve_master_reviewed_conflict",
       "apply_ready": false,
-      "reason": "Conflict needs source review before changing master DB."
+      "reason": "Reviewed conflict; keep the more specific/current Master RDB value and do not write Notion."
     },
     {
       "decision_id": "notion_drift_015",
@@ -329,9 +327,9 @@
       "recommendation": "review_conflict",
       "master_value": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
       "notion_snapshot_value": "https://www.city.shinagawa.tokyo.jp/PC/kuseizyoho/kuseizyoho-koho/kuseizyoho-koho-kohoshinagawa/index.html",
-      "decision": "hold_for_manual_review",
+      "decision": "preserve_master_reviewed_conflict",
       "apply_ready": false,
-      "reason": "Conflict needs source review before changing master DB."
+      "reason": "Reviewed conflict; keep the more specific/current Master RDB value and do not write Notion."
     },
     {
       "decision_id": "notion_drift_023",
@@ -406,34 +404,6 @@
     {
       "decision_id": "notion_drift_028",
       "entity_type": "event_series",
-      "entity_id": "ser_d0140daa64d7a876",
-      "title": "SHIBUYA MIYASHITA PARK BON DANCE",
-      "field": "public_intro",
-      "drift_kind": "notion_has_value_master_empty",
-      "recommendation": "review_before_copy_from_notion",
-      "master_value": "",
-      "notion_snapshot_value": "渋谷・宮下公園の芝生の上で開かれる現代型の盆踊り。買い物帰りにふらっと輪に入れる、渋谷らしいボンダンス。",
-      "decision": "candidate_copy_notion_public_intro",
-      "apply_ready": true,
-      "reason": "Notion has public_intro text and master is empty; local DB copy is low risk but still separate from Notion/public deploy."
-    },
-    {
-      "decision_id": "notion_drift_029",
-      "entity_type": "event_series",
-      "entity_id": "ser_d0140daa64d7a876",
-      "title": "SHIBUYA MIYASHITA PARK BON DANCE",
-      "field": "source_url",
-      "drift_kind": "value_conflict",
-      "recommendation": "review_conflict",
-      "master_value": "https://miyashita-bondance.jp/2025/",
-      "notion_snapshot_value": "https://mantan-web.jp/prtimes/article/20260527prt00m200000530a.html",
-      "decision": "hold_for_manual_review",
-      "apply_ready": false,
-      "reason": "Conflict needs source review before changing master DB."
-    },
-    {
-      "decision_id": "notion_drift_030",
-      "entity_type": "event_series",
       "entity_id": "ser_67279a1626b2dbb8",
       "title": "藤沢七夕まつり（DJ盆踊り大会）",
       "field": "usual_venue_id",
@@ -446,7 +416,7 @@
       "reason": "Master DB has reviewed value while Notion snapshot is empty."
     },
     {
-      "decision_id": "notion_drift_031",
+      "decision_id": "notion_drift_029",
       "entity_type": "event_series",
       "entity_id": "ser_d39870ddba633c11",
       "title": "郡上おどり in 青山",
@@ -458,20 +428,6 @@
       "decision": "preserve_master",
       "apply_ready": false,
       "reason": "Master DB has reviewed value while Notion snapshot is empty."
-    },
-    {
-      "decision_id": "notion_drift_032",
-      "entity_type": "event_series",
-      "entity_id": "ser_d39870ddba633c11",
-      "title": "郡上おどり in 青山",
-      "field": "source_url",
-      "drift_kind": "value_conflict",
-      "recommendation": "review_conflict",
-      "master_value": "https://aoyama-gaienmae.or.jp/news/20260326/",
-      "notion_snapshot_value": "https://aoyama-gaienmae.or.jp/news/20250617/",
-      "decision": "hold_for_manual_review",
-      "apply_ready": false,
-      "reason": "Conflict needs source review before changing master DB."
     }
   ]
 }
