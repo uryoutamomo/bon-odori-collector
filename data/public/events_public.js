@@ -2579,66 +2579,6 @@ const EVENTS = [
         "kind": "official"
       }
     ],
-    "songs": [],
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-07-23〜2026-07-24",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
-    "recurrence_reasons": [
-      "2026年日付確認済み"
-    ],
-    "recurrence_cautions": [],
-    "edition_number": null,
-    "last_seen_year": null,
-    "last_seen_dates": [
-      "2026-07-23",
-      "2026-07-24"
-    ],
-    "display_tier": "confirmed"
-  },
-  {
-    "name": "第28回新橋こいち祭 盆踊り",
-    "name_confirmed": true,
-    "venue": "桜田公園",
-    "area": "港区",
-    "months": [
-      7
-    ],
-    "scale": "小",
-    "access": "JR・地下鉄各線 新橋駅から徒歩圏内",
-    "address": "東京都港区新橋3-16-15",
-    "lat": null,
-    "lng": null,
-    "date": "2025-07-24",
-    "date_end": null,
-    "status": "確認済み",
-    "date_confidence": {
-      "level": "confirmed",
-      "label": "確認済み",
-      "description": "開催日として確認済みです"
-    },
-    "date_candidates": [],
-    "hints": [
-      [
-        7,
-        24
-      ]
-    ],
-    "jun": {
-      "7": "下旬"
-    },
-    "description": "桜田公園で行われる地域の盆踊りイベント。過去の開催実績をもとに掲載。",
-    "detail": "2025-07-24 開催実績。2025 7/24 - 25。新橋地区12商店会 「第28回新橋こいち祭 盆踊り」 7月24日(木)-25日(金) 15:00-20:30。 時間詳細不明。",
-    "source_urls": [
-      {
-        "label": "告知HPあり",
-        "url": "",
-        "kind": "web",
-        "count": 1
-      }
-    ],
     "songs": [
       {
         "name": "ご祝儀音頭",
@@ -2739,84 +2679,23 @@ const EVENTS = [
         "basis_label": "今年ヒント"
       }
     ],
-    "public_status": "expected_medium",
-    "public_category": "recurring_last_year",
-    "public_status_label": "昨年開催",
-    "public_note": "第28回・昨年開催: 2025-07-24。今年の日程は未確認です。",
-    "recurrence_label": "昨年開催・継続性 中",
-    "recurrence_score": 0.7,
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-07-23〜2026-07-24",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
     "recurrence_reasons": [
-      "held_2025",
-      "venue_present",
-      "tokyo_23ward",
-      "edition_number:28",
-      "edition_10plus"
+      "2026年日付確認済み"
     ],
     "recurrence_cautions": [],
-    "edition_number": 28,
-    "last_seen_year": 2025,
+    "edition_number": null,
+    "last_seen_year": null,
     "last_seen_dates": [
-      "2025-07-24"
+      "2026-07-23",
+      "2026-07-24"
     ],
-    "date_prediction": {
-      "display_tier": "rule_predicted",
-      "target_year": 2026,
-      "date": "2026-07-23",
-      "date_end": "2026-07-23",
-      "weekday_start": "木",
-      "weekday_end": "木",
-      "confidence": "medium",
-      "score": 0.7,
-      "rule_type": "weekday_nth",
-      "basis": "7月第4木曜",
-      "evidence_years": [
-        2023,
-        2025
-      ],
-      "evidence_count": 2,
-      "has_actual_observation": false
-    },
-    "display_tier": "rule_predicted",
-    "predicted_date": "2026-07-23",
-    "predicted_date_end": "2026-07-23",
-    "prediction_basis": "7月第4木曜",
-    "prediction_confidence": "medium",
-    "prediction_evidence_years": [
-      2023,
-      2025
-    ],
-    "historical_reference": {
-      "display_tier": "historical_reference",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-07-24"
-      ],
-      "label": "2025-07-24実績・今年未確認",
-      "confidence": "medium",
-      "score": 0.7,
-      "status": "expected_medium",
-      "status_label": "昨年開催",
-      "recurrence_label": "昨年開催・継続性 中",
-      "reasons": [
-        "held_2025",
-        "venue_present",
-        "tokyo_23ward",
-        "edition_number:28",
-        "edition_10plus"
-      ],
-      "cautions": [],
-      "edition_number": 28,
-      "has_rule_prediction": true,
-      "slide": null
-    },
-    "historical_display_tier": "historical_reference",
-    "historical_last_seen_year": 2025,
-    "historical_last_seen_dates": [
-      "2025-07-24"
-    ],
-    "historical_reference_label": "2025-07-24実績・今年未確認",
-    "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.7
+    "display_tier": "confirmed"
   },
   {
     "name": "赤坂浄土寺盆踊り大会",
@@ -5593,11 +5472,17 @@ const EVENTS = [
     "songs": [
       {
         "name": "LOVEマシーン",
-        "confidence": "hint"
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "勝手にシンドバッド",
-        "confidence": "hint"
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       }
     ],
     "public_status": "upcoming_confirmed",
@@ -13359,6 +13244,13 @@ const EVENTS = [
         "basis_label": "今年ヒント"
       },
       {
+        "name": "ダンシングヒーロー",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測"
+      },
+      {
         "name": "ホイップるん音頭",
         "confidence": "confirmed",
         "probability": 95,
@@ -13418,13 +13310,6 @@ const EVENTS = [
         "name": "高嶺の花子さん",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
-      },
-      {
-        "name": "ダンシングヒーロー",
-        "confidence": "confirmed",
-        "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント"
       },
@@ -19314,7 +19199,7 @@ const EVENTS = [
     "jun": {
       "9": "下旬"
     },
-    "description": "宮下公園は、渋谷区の屋外で踊りの輪を作りやすい会場。 規模は「大」として整理しています、アクセスは渋谷駅から徒歩約3分。東京メトロ千代田線・副都心線 明治神宮前〈原宿〉駅 7番口から徒歩約8分。都営バス 宮下公園、ハチ公バス 宮下公園前から徒歩1分。",
+    "description": "渋谷・宮下公園の芝生の上で開かれる現代型の盆踊り。買い物帰りにふらっと輪に入れる、渋谷らしいボンダンス。",
     "detail": "",
     "source_urls": [
       {

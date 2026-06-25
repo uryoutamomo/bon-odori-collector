@@ -2,9 +2,9 @@
   "generated_by": "apply_public_date_predictions.py",
   "source": "data/event_date_predictions.json",
   "public_events": "data/public/events_public.json",
-  "applied_count": 9,
+  "applied_count": 8,
   "skipped_count": 4,
-  "unmatched_count": 0,
+  "unmatched_count": 1,
   "applied": [
     {
       "event_name": "丸の内de盆踊り",
@@ -180,42 +180,6 @@
         "basis": "8月第3土曜",
         "evidence_years": [
           2024,
-          2025
-        ],
-        "evidence_count": 2,
-        "has_actual_observation": false
-      }
-    },
-    {
-      "event_name": "第28回新橋こいち祭 盆踊り",
-      "venue": "桜田公園",
-      "before": {
-        "date": "2025-07-24",
-        "date_end": null,
-        "display_tier": null,
-        "predicted_date": null,
-        "predicted_date_end": null
-      },
-      "after": {
-        "date": "2025-07-24",
-        "date_end": null,
-        "display_tier": "rule_predicted",
-        "predicted_date": "2026-07-23",
-        "predicted_date_end": "2026-07-23"
-      },
-      "date_prediction": {
-        "display_tier": "rule_predicted",
-        "target_year": 2026,
-        "date": "2026-07-23",
-        "date_end": "2026-07-23",
-        "weekday_start": "木",
-        "weekday_end": "木",
-        "confidence": "medium",
-        "score": 0.7,
-        "rule_type": "weekday_nth",
-        "basis": "7月第4木曜",
-        "evidence_years": [
-          2023,
           2025
         ],
         "evidence_count": 2,
@@ -430,5 +394,28 @@
       }
     }
   ],
-  "unmatched": []
+  "unmatched": [
+    {
+      "event_name": "第28回新橋こいち祭 盆踊り",
+      "venue": "桜田公園",
+      "date_prediction": {
+        "display_tier": "rule_predicted",
+        "target_year": 2026,
+        "date": "2026-07-23",
+        "date_end": "2026-07-23",
+        "weekday_start": "木",
+        "weekday_end": "木",
+        "confidence": "medium",
+        "score": 0.7,
+        "rule_type": "weekday_nth",
+        "basis": "7月第4木曜",
+        "evidence_years": [
+          2023,
+          2025
+        ],
+        "evidence_count": 2,
+        "has_actual_observation": false
+      }
+    }
+  ]
 }

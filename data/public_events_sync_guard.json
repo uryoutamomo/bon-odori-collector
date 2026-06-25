@@ -1,6 +1,6 @@
 {
   "generated_by": "guard_public_events_sync.py",
-  "generated_at": "2026-06-23T06:47:09.182814+00:00",
+  "generated_at": "2026-06-25T13:37:37.613919+00:00",
   "scope": "read_only_public_sync_guard_no_writes",
   "sources": {
     "collector_events": "data/public/events_public.json",
@@ -21,8 +21,8 @@
     "deploy_approval_note": "Guard pass only means no blocking public sync diffs remain. Public deploy still requires separate operator approval."
   },
   "raw_classification": {
-    "collector_event_count": 183,
-    "site_event_count": 183,
+    "collector_event_count": 182,
+    "site_event_count": 182,
     "collector_only_count": 0,
     "site_only_count": 0,
     "high_risk_diff_record_count": 0,
@@ -32,8 +32,8 @@
     "events_by_action": {}
   },
   "postprocessed_classification": {
-    "collector_event_count": 183,
-    "site_event_count": 183,
+    "collector_event_count": 182,
+    "site_event_count": 182,
     "collector_only_count": 0,
     "site_only_count": 0,
     "high_risk_diff_record_count": 0,

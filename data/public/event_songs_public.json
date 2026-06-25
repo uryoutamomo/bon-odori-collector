@@ -650,10 +650,10 @@
     ]
   },
   {
-    "name": "第28回新橋こいち祭 盆踊り",
+    "name": "新橋こいち祭",
     "venue": "桜田公園",
     "area": "港区",
-    "date": "2025-07-24",
+    "date": "2026-07-23",
     "songs": [
       {
         "name": "ご祝儀音頭",
@@ -1053,11 +1053,17 @@
     "songs": [
       {
         "name": "LOVEマシーン",
-        "confidence": "hint"
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "勝手にシンドバッド",
-        "confidence": "hint"
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       }
     ]
   },
@@ -2239,6 +2245,13 @@
         "basis_label": "今年ヒント"
       },
       {
+        "name": "ダンシングヒーロー",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測"
+      },
+      {
         "name": "ホイップるん音頭",
         "confidence": "confirmed",
         "probability": 95,
@@ -2298,13 +2311,6 @@
         "name": "高嶺の花子さん",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
-      },
-      {
-        "name": "ダンシングヒーロー",
-        "confidence": "confirmed",
-        "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント"
       },
