@@ -1,7 +1,7 @@
 # Master RDB local diff hold note 2026-06-25
 
 - generated_by: おと（Codex）
-- status: hold until AWS CLI login is restored
+- status: published to S3 artifact
 - local_db: `data/bon_odori_master.sqlite`
 - local_checksum: `b9bda2eab36c24c739e285400deef3b1a95f630da7293c148671e1e905240807`
 - previous_s3_bootstrap_checksum: `1519a9e05011b692136fae6440a1efd9b5812535b5e9ecb09d1a0aa3358a5583`
@@ -11,6 +11,9 @@
 The local master RDB differs from the last tracked pre-S3 database by one
 `event_series` row only. It is not a bulk rebuild and does not add or delete
 event rows.
+
+On 2026-06-25, after AWS CLI login was restored, this local DB was published to
+the Master RDB S3 artifact with optimistic locking.
 
 Changed series:
 
@@ -42,6 +45,13 @@ Audit:
 - severity: `medium`
 - remaining issue: known `source_snapshot_drift`
 
+Published artifact:
+
+- snapshot_id: `shibuya-miyashita-public-intro-source-20260623`
+- latest checksum: `b9bda2eab36c24c739e285400deef3b1a95f630da7293c148671e1e905240807`
+- snapshot DB: `s3://bon-odori-master-rdb-169805602203/master-rdb/snapshots/shibuya-miyashita-public-intro-source-20260623/bon_odori_master.sqlite`
+- latest DB: `s3://bon-odori-master-rdb-169805602203/master-rdb/latest/bon_odori_master.sqlite`
+
 ## Why not commit generated public JSON yet
 
 The dirty public and YouTube JSON files are generated outputs. They currently
@@ -55,9 +65,9 @@ Do not commit them as a normal data snapshot until the Master RDB artifact is
 published or the generated outputs are intentionally regenerated from the
 current remote artifact.
 
-## Resume steps after AWS CLI login works
+## Publish steps used
 
-1. Confirm remote and local checksums:
+1. Confirmed remote and local checksums:
 
 ```sh
 /tmp/bon-odori-venv/bin/python master_db_s3_artifact.py \
@@ -66,9 +76,9 @@ current remote artifact.
   status
 ```
 
-2. If remote checksum is still
-   `1519a9e05011b692136fae6440a1efd9b5812535b5e9ecb09d1a0aa3358a5583`,
-   publish the reviewed local DB with optimistic locking:
+2. Remote checksum was still
+   `1519a9e05011b692136fae6440a1efd9b5812535b5e9ecb09d1a0aa3358a5583`.
+   Published the reviewed local DB with optimistic locking:
 
 ```sh
 /tmp/bon-odori-venv/bin/python master_db_s3_artifact.py \
@@ -79,19 +89,23 @@ current remote artifact.
   --expect-remote-checksum 1519a9e05011b692136fae6440a1efd9b5812535b5e9ecb09d1a0aa3358a5583
 ```
 
-3. Commit only the manifest and the two apply report pairs after publish.
+3. Confirmed remote latest checksum now matches local checksum:
+   `b9bda2eab36c24c739e285400deef3b1a95f630da7293c148671e1e905240807`.
 
-4. Regenerate public exports from the published DB before deciding whether to
+4. Commit only the manifest and the two apply report pairs after publish.
+
+5. Regenerate public exports from the published DB before deciding whether to
    commit public JSON or site-sync data.
 
 ## AWS login blocker
 
-On 2026-06-25, `aws login` opened the AWS sign-in page, but both the active
-session path and the new-session path ended in AWS `400 Bad Request`.
-`aws sts get-caller-identity` still reported:
+Earlier on 2026-06-25, `aws login` opened the AWS sign-in page, but both the
+active session path and the new-session path ended in AWS `400 Bad Request`.
+`aws sts get-caller-identity` reported:
 
 ```text
 Your session has expired. Please reauthenticate using 'aws login'.
 ```
 
-Do not force S3 publish until CLI authentication is actually restored.
+Uchida-san later completed CLI login manually. `aws sts get-caller-identity`
+then returned account `169805602203`, allowing the publish to proceed.

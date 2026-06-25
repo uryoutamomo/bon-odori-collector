@@ -1,9 +1,38 @@
 {
-  "generated_by": "build_master_rdb.py",
-  "generated_at": "2026-06-22T01:21:35.342436+00:00",
-  "dry_run": true,
+  "artifact": {
+    "bucket": "bon-odori-master-rdb-169805602203",
+    "latest_database_key": "master-rdb/latest/bon_odori_master.sqlite",
+    "latest_manifest_key": "master-rdb/latest/bon_odori_master_manifest.json",
+    "local_database_path": "data/bon_odori_master.sqlite",
+    "prefix": "master-rdb",
+    "published_at": "2026-06-25T13:30:58.711662+00:00",
+    "snapshot_database_key": "master-rdb/snapshots/shibuya-miyashita-public-intro-source-20260623/bon_odori_master.sqlite",
+    "snapshot_id": "shibuya-miyashita-public-intro-source-20260623",
+    "snapshot_manifest_key": "master-rdb/snapshots/shibuya-miyashita-public-intro-source-20260623/bon_odori_master_manifest.json",
+    "storage": "s3"
+  },
   "database": "data/bon_odori_master.sqlite",
+  "database_checksum": "b9bda2eab36c24c739e285400deef3b1a95f630da7293c148671e1e905240807",
+  "database_updated_at": "2026-06-25T13:30:58.711662+00:00",
+  "dry_run": true,
+  "generated_at": "2026-06-22T01:21:35.342436+00:00",
+  "generated_by": "build_master_rdb.py",
+  "post_build_outputs": {
+    "historical_promotion_candidates": "data/historical_promotion_candidates.json",
+    "observed_promotion_candidates": "data/observed_promotion_candidates.json",
+    "registered_event_investigation_queue": "data/registered_event_investigation_queue.json"
+  },
+  "post_build_steps": [
+    "build_observed_promotion_candidates.py",
+    "build_registered_event_investigation_queue.py",
+    "build_historical_promotion_candidates.py"
+  ],
+  "report": "data/master_rdb_ph0_dry_run_report.json",
   "schema": "data/bon_odori_master.schema.sql",
+  "source_checksums": {
+    "notion_db": "20e460fa51a838cfc4e8c3e1a34e51d60707870eb39534d98d8673d1e1d67002",
+    "song_occurrences": "2f129469c58dce45b8671dc964b0e62b882c999a06f181172a237ac04bf6e609"
+  },
   "table_counts": {
     "event_investigation_tasks": 79,
     "event_occurrences": 222,
@@ -26,22 +55,5 @@
     "venue_aliases": 215,
     "venues": 215,
     "write_batches": 0
-  },
-  "source_checksums": {
-    "notion_db": "20e460fa51a838cfc4e8c3e1a34e51d60707870eb39534d98d8673d1e1d67002",
-    "song_occurrences": "2f129469c58dce45b8671dc964b0e62b882c999a06f181172a237ac04bf6e609"
-  },
-  "database_checksum": "1519a9e05011b692136fae6440a1efd9b5812535b5e9ecb09d1a0aa3358a5583",
-  "report": "data/master_rdb_ph0_dry_run_report.json",
-  "post_build_outputs": {
-    "observed_promotion_candidates": "data/observed_promotion_candidates.json",
-    "registered_event_investigation_queue": "data/registered_event_investigation_queue.json",
-    "historical_promotion_candidates": "data/historical_promotion_candidates.json"
-  },
-  "post_build_steps": [
-    "build_observed_promotion_candidates.py",
-    "build_registered_event_investigation_queue.py",
-    "build_historical_promotion_candidates.py"
-  ],
-  "database_updated_at": "2026-06-22T13:38:43.568896+00:00"
+  }
 }

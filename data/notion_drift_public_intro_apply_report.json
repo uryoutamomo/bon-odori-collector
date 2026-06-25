@@ -1,0 +1,37 @@
+{
+  "generated_by": "apply_notion_drift_public_intro.py",
+  "generated_at": "2026-06-23T09:29:06+00:00",
+  "mode": "apply",
+  "applied": true,
+  "master_db": "data/bon_odori_master.sqlite",
+  "target_db": "data/bon_odori_master.sqlite",
+  "backup": "data/backups/bon_odori_master.20260623T092906+0000.sqlite.bak",
+  "decisions": "data/notion_snapshot_master_drift_decisions.json",
+  "summary": {
+    "planned_count": 1,
+    "applied_count": 1,
+    "skipped_count": 0
+  },
+  "applied_items": [
+    {
+      "decision_id": "notion_drift_028",
+      "entity_type": "event_series",
+      "series_id": "ser_d0140daa64d7a876",
+      "title": "SHIBUYA MIYASHITA PARK BON DANCE",
+      "field": "public_intro",
+      "public_intro": "渋谷・宮下公園の芝生の上で開かれる現代型の盆踊り。買い物帰りにふらっと輪に入れる、渋谷らしいボンダンス。",
+      "reason": "Notion has public_intro text and master is empty; local DB copy is low risk but still separate from Notion/public deploy.",
+      "before": {
+        "series_id": "ser_d0140daa64d7a876",
+        "canonical_name": "SHIBUYA MIYASHITA PARK BON DANCE",
+        "public_intro": ""
+      },
+      "after": {
+        "series_id": "ser_d0140daa64d7a876",
+        "canonical_name": "SHIBUYA MIYASHITA PARK BON DANCE",
+        "public_intro": "渋谷・宮下公園の芝生の上で開かれる現代型の盆踊り。買い物帰りにふらっと輪に入れる、渋谷らしいボンダンス。"
+      }
+    }
+  ],
+  "skipped_items": []
+}

@@ -1,0 +1,36 @@
+{
+  "generated_by": "apply_notion_drift_source_url_resolutions.py",
+  "generated_at": "2026-06-23T10:10:37+00:00",
+  "mode": "apply",
+  "applied": true,
+  "master_db": "data/bon_odori_master.sqlite",
+  "target_db": "data/bon_odori_master.sqlite",
+  "backup": "data/backups/bon_odori_master.20260623T101037+0000.sqlite.bak",
+  "summary": {
+    "planned_count": 1,
+    "applied_count": 1,
+    "skipped_count": 0,
+    "issues_by_severity": {}
+  },
+  "applied_items": [
+    {
+      "series_id": "ser_d0140daa64d7a876",
+      "title": "SHIBUYA MIYASHITA PARK BON DANCE",
+      "old_source_url": "https://miyashita-bondance.jp/2025/",
+      "new_source_url": "https://mantan-web.jp/prtimes/article/20260527prt00m200000530a.html",
+      "reason": "Notion 2026 page points to a dated PR TIMES/MANTAN source confirming the 2026 occurrence; replace the 2025 archive URL for series-level current evidence.",
+      "before": {
+        "series_id": "ser_d0140daa64d7a876",
+        "canonical_name": "SHIBUYA MIYASHITA PARK BON DANCE",
+        "source_url": "https://miyashita-bondance.jp/2025/"
+      },
+      "after": {
+        "series_id": "ser_d0140daa64d7a876",
+        "canonical_name": "SHIBUYA MIYASHITA PARK BON DANCE",
+        "source_url": "https://mantan-web.jp/prtimes/article/20260527prt00m200000530a.html"
+      }
+    }
+  ],
+  "skipped_items": [],
+  "issues": []
+}
