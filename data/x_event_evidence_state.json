@@ -1,7 +1,7 @@
 {
   "status": "awaiting_review",
-  "window_start": "2026-04-28T00:00:00+00:00",
-  "window_end": "2026-05-12T00:00:00+00:00",
+  "window_start": "2026-05-12T00:00:00+00:00",
+  "window_end": "2026-05-26T00:00:00+00:00",
   "selected_handles": [
     "@2tsuo_g",
     "@5khfya5pjksggov",
@@ -55,19 +55,19 @@
     "@yurubon_off"
   ],
   "selection_id": "664d239cbfb21c903b90366b808d6e5ebcf0e7024980d3bd613f6d865df58cf9",
-  "batch_index": 0,
+  "batch_index": 2,
   "batch_cursors": {},
   "completed_batches": [
     0,
     1,
     2
   ],
-  "pages_completed": 60,
-  "tweets_scanned": 1121,
-  "evidence_detected": 187,
+  "pages_completed": 54,
+  "tweets_scanned": 989,
+  "evidence_detected": 167,
   "pending_evidence": [],
-  "started_at": "2026-06-25T09:48:16.205208+00:00",
-  "updated_at": "2026-06-25T09:52:00.565881+00:00",
+  "started_at": "2026-06-26T09:56:50.372395+00:00",
+  "updated_at": "2026-06-26T10:00:48.872471+00:00",
   "window_history": [
     {
       "window_start": "2025-06-10T00:00:00+00:00",
@@ -321,10 +321,21 @@
       "pages_completed": 49,
       "tweets_scanned": 904,
       "evidence_detected": 156
+    },
+    {
+      "window_start": "2026-04-28T00:00:00+00:00",
+      "window_end": "2026-05-12T00:00:00+00:00",
+      "covered_until": "2026-05-12T00:00:00+00:00",
+      "completed_at": "2026-06-25T09:52:00.573370+00:00",
+      "reviewed_at": "2026-06-26T09:56:50.372395+00:00",
+      "review_note": "auto-advance continuous event evidence window",
+      "pages_completed": 60,
+      "tweets_scanned": 1121,
+      "evidence_detected": 187
     }
   ],
-  "previous_covered_until": "2026-04-28T00:00:00+00:00",
-  "completed_at": "2026-06-25T09:52:00.573370+00:00",
-  "covered_until": "2026-05-12T00:00:00+00:00",
-  "pending_cleared_at": "2026-06-25T09:52:10.527635+00:00"
+  "previous_covered_until": "2026-05-12T00:00:00+00:00",
+  "completed_at": "2026-06-26T10:00:48.879354+00:00",
+  "covered_until": "2026-05-26T00:00:00+00:00",
+  "pending_cleared_at": "2026-06-26T10:01:04.383684+00:00"
 }
