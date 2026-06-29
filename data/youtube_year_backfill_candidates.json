@@ -1,17 +1,17 @@
 {
   "generated_by": "harvest_youtube_year_backfill.py",
-  "generated_at": "2026-06-24T20:00:32.747249+00:00",
+  "generated_at": "2026-06-29T21:26:44.179392+00:00",
   "source": "data/youtube_year_backfill_queue.json",
   "selected_queue_count": 169,
   "queue_offset": 0,
   "max_results_per_query": 5,
   "api_request_count_estimate": 2,
   "summary": {
-    "candidate_count": 556,
+    "candidate_count": 563,
     "status_counts": {
       "review": 48,
       "strong": 183,
-      "weak": 325
+      "weak": 332
     },
     "strong_count": 183,
     "review_count": 48
@@ -19811,6 +19811,94 @@
       "score": 45,
       "reasons": [
         "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context",
+        "setlist_detected"
+      ],
+      "queue_id": "youtube-year-backfill:356f859bb68abc08",
+      "target_year": 2023,
+      "event_name": "大森南一丁目自治会「納涼盆踊り大会」",
+      "venue": "大森南一丁目公園",
+      "area": "大田区",
+      "detected_event_date": "2023-05-13",
+      "video_id": "sw_3ryI1iFE",
+      "video_url": "https://www.youtube.com/watch?v=sw_3ryI1iFE",
+      "title": "三味線ブギウギ　2023年浅草橋紅白マロニエまつり　盆踊り大会１５　東京都台東区",
+      "channel_id": "UCNF_5e3ZvziJueTWvTPATGw",
+      "channel_title": "和太鼓お祭りチャンネル",
+      "published_at": "2023-05-17T11:30:30Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/sw_3ryI1iFE/sddefault.jpg",
+      "query": "大森南一丁目自治会「納涼盆踊り大会」 2023 YouTube 盆踊り",
+      "setlist_count": 35,
+      "setlist_sample": [
+        {
+          "number": 1,
+          "title": "DJ盆踊り",
+          "url": "https://www.youtube.com/watch?v=mD1zcl4m5lw",
+          "source": "numbered_url"
+        },
+        {
+          "number": 1,
+          "title": "ダンシングヒーロー",
+          "url": "https://www.youtube.com/watch?v=f2clLkBgSkQ",
+          "source": "numbered_url"
+        },
+        {
+          "number": 1,
+          "title": "東京音頭",
+          "url": "https://www.youtube.com/watch?v=syVQtCaTEBM",
+          "source": "numbered_url"
+        },
+        {
+          "number": 2,
+          "title": "あやめ踊り",
+          "url": "https://www.youtube.com/watch?v=k1EPtS0SQs0",
+          "source": "numbered_url"
+        },
+        {
+          "number": 2,
+          "title": "大東京音頭",
+          "url": "https://www.youtube.com/watch?v=v_lEwE7CvMM",
+          "source": "numbered_url"
+        },
+        {
+          "number": 2,
+          "title": "炭坑節",
+          "url": "https://www.youtube.com/watch?v=jizrn9bRnDc",
+          "source": "numbered_url"
+        },
+        {
+          "number": 2,
+          "title": "終 DJ盆踊り",
+          "url": "https://www.youtube.com/watch?v=2tlu7CR1qE4",
+          "source": "numbered_url"
+        },
+        {
+          "number": 3,
+          "title": "ホームラン音頭",
+          "url": "https://www.youtube.com/watch?v=peyxmVoRaKI",
+          "source": "numbered_url"
+        },
+        {
+          "number": 3,
+          "title": "朝顔音頭",
+          "url": "https://www.youtube.com/watch?v=0W3HfHzLws0",
+          "source": "numbered_url"
+        },
+        {
+          "number": 4,
+          "title": "ギザギザハートの子守唄",
+          "url": "https://www.youtube.com/watch?v=Qniewu_Gkh8",
+          "source": "numbered_url"
+        }
+      ],
+      "description_excerpt": "2023年5月13日に、東京都台東区・ヒューリック浅草橋周辺で行われた、 「第16回浅草橋紅白マロニエまつり」盆踊り大会の様子です。 司会進行は盆バサダー大ちゃん！ おすすめ動画 ﾏﾛﾆｴまつり盆踊り １東京音頭 https://youtu.be/syVQtCaTEBM ２炭坑節 https://youtu.be/jizrn9bRnDc ３大東京音頭 https://youtu.be/96LShToG-h4 ４黒石よされ https://youtu.be/8Oh7p-WRq-0 ５津軽甚句ﾄﾞﾀﾞﾚﾊﾞﾁ https://youtu.be/HirH5OOaYH0 ６ドンパン節 https://youtu.be/-VvtX12HlAs ７はめつけ音頭 https://youtu.be/lwWOfRm8l8k ８東京五輪おどり https://youtu.be/ej7ZJmvnKFE ９まんまる音頭 https://youtu.be/5jK6oyg6LTc １０浅草橋音頭 https://youtu.be/Mim46KhJGq0 １１新浅草橋音頭・生歌 https://youtu.be/…"
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
         "target_year_date_detected"
       ],
       "queue_id": "youtube-year-backfill:65631588a7239bb3",
@@ -20095,6 +20183,31 @@
       "setlist_count": 0,
       "setlist_sample": [],
       "description_excerpt": "【東京祭り散歩】新宿神輿・花園神社の祭り例大祭 花園神社例大祭 町会神輿 4年ぶりに担ぎ上げ 神輿が練り新宿の町を賑わせる 新宿ゴールデン街通過 露店 かっぽれ舞台 新宿の風物詩 散歩。 2023年5月28日 日曜日16時ごろの様子、 【 One cut Walk】自然音と散歩目線で今の東京を撮ってきたものです。 ※目次（チャプター）からも、お好みのシーンをご覧いただけます。 ↓↓↓ ▼※目次（チャプター）table of contents 00:00 町会神輿（歌舞伎町二丁目交差点） 21:25 新宿ゴールデン街前で休憩 町会神輿 22:31 花園神社 23:43 露店巡り 25:22 花園神社 大鳥居 27:40 威徳稲荷神社 28:44 かっぽれ舞台 32:05 唐獅子像 花園神社 チャンネル登録と👍いただけると、とてもうれしいです😊。https://www.youtube.com/channel/UC2fuOvqX4_gh4DRS2TOvlyw?sub_confirmation=1 MAP： https://www.google.co.jp/maps/search/%E8%8…"
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
+        "target_year_date_detected"
+      ],
+      "queue_id": "youtube-year-backfill:3d5a8517fb197ecb",
+      "target_year": 2023,
+      "event_name": "戸越宮前盆踊り",
+      "venue": "宮前小学校",
+      "area": "品川区",
+      "detected_event_date": "2023-08-11",
+      "video_id": "Mvh195l8irU",
+      "video_url": "https://www.youtube.com/watch?v=Mvh195l8irU",
+      "title": "令和５年　港区虎ノ門＜西久保八幡神社＞神幸祭　御本社神輿＝渡御（虎ノ門～神谷町）宮入・着座（神社前）",
+      "channel_id": "UC3QG-mSvgVaFf0tT2jCflOA",
+      "channel_title": "太田裕",
+      "published_at": "2023-08-12T02:08:25Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/Mvh195l8irU/hqdefault.jpg",
+      "query": "戸越宮前盆踊り 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "まつり巡行記＜申＞2023年8月11日 先代の大神輿は昭和20年3月、東京大空襲により焼失致しましたが、平成27年(2017年)7月、氏子の総意協力により70年の時を経て神輿を復興いたしました。戦後初となる本社みこしの神幸祭を73年ぶりに開催し、2019年に戦後二度目の同祭を開催した後、コロナ禍で中止していた。今回は4年ぶり三回目の開催となる。 台輪 四尺（121ｃｍ）平成26年(2016年）新調 六世宮惣（種谷吉雄）作 屋根延型、総漆、金箔押し、極彩色の彫刻、その他錺金具で飾られる。四面唐戸、その上の欄間には住所にちなみ虎の彫刻を配し、その両脇には狛犬を配す。唐戸下には波に鳩の彫刻。唐戸横には龍の彫刻。屋根四面は左三つ巴紋、露盤（大鳥下）の紋は徳川葵。"
     },
     {
       "status": "weak",
@@ -22016,6 +22129,32 @@
       "venue": "五反野コミュニティ公園",
       "area": "足立区",
       "detected_event_date": "2023-08-25",
+      "video_id": "QrQ8vjW-j_Q",
+      "video_url": "https://www.youtube.com/watch?v=QrQ8vjW-j_Q",
+      "title": "会津磐梯山 　東綾瀬公園ハト広場 納涼盆踊り大会 20230825",
+      "channel_id": "UC8djZNe8ynSlUmop8Jjt45A",
+      "channel_title": "祭のきせき　MatsuriNoKiseki",
+      "published_at": "2023-08-25T13:51:54Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/QrQ8vjW-j_Q/maxresdefault.jpg",
+      "query": "西綾瀬町会 夏祭り盆踊り大会 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "当チャンネル地元の盆踊りです。 https://youtu.be/rj-WN1DUnmo https://youtu.be/Z84CRSmbdXI https://youtu.be/4InftQ_y_KM https://youtu.be/ANbB3DlGOhc https://youtu.be/QrQ8vjW-j_Q https://youtu.be/nPswMYL5rD0 https://youtu.be/l6U2BDPOLy0 https://youtu.be/YvaaGitE-p0 https://youtu.be/LM-FQB0DGMw https://youtu.be/ztC2R_Y5qNs https://youtu.be/3CAZf-iXal8 https://youtu.be/9-o3lMXCRPo https://youtu.be/TFVMAZcmDbw https://youtu.be/saKRxJFeMO4 https://youtu.be/N3X6GrT9ZZ8 https://youtu.be/AKlS0QQ2viU https://youtu.be/mm…"
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:128813fba0e30596",
+      "target_year": 2023,
+      "event_name": "西綾瀬町会 夏祭り盆踊り大会",
+      "venue": "五反野コミュニティ公園",
+      "area": "足立区",
+      "detected_event_date": "2023-08-25",
       "video_id": "rj-WN1DUnmo",
       "video_url": "https://www.youtube.com/watch?v=rj-WN1DUnmo",
       "title": "北海盆唄 　東綾瀬公園ハト広場 納涼盆踊り大会 20230825",
@@ -22053,6 +22192,32 @@
       "setlist_count": 0,
       "setlist_sample": [],
       "description_excerpt": "会場：山谷堀広場（台東リバーサイドスポーツセンター横） ​ @shigeo-harusora ツイッター＃https://twitter.com/yama_shigeochan ✈[後編] 🙄✈強突風に舞う旅客機＃https://youtu.be/W7UWHfdxUqY 強突風に舞う旅客機＃https://youtu.be/ZBAJDREsrY0 元日の羽田空港その１＃https://youtu.be/aFAbjTOkXTA 元日の羽田空港その２＃https://youtu.be/fYinuwPbEjk 元日の羽田空港その３＃https://youtu.be/djO3NQ7vDSQ 羽田空港ターミナル展望デッキより撮影しました。"
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:128813fba0e30596",
+      "target_year": 2023,
+      "event_name": "西綾瀬町会 夏祭り盆踊り大会",
+      "venue": "五反野コミュニティ公園",
+      "area": "足立区",
+      "detected_event_date": "2023-08-12",
+      "video_id": "xpWDtyzDfoY",
+      "video_url": "https://www.youtube.com/watch?v=xpWDtyzDfoY",
+      "title": "４K🏮＃東京タワー音頭🏮＃西久保八幡神社盆踊り大会2023＃日本の夏祭り＃TokyoTowerOndo＃2023年8月12日",
+      "channel_id": "UCNkvIGUPWOAxjHgjcu9Vvdg",
+      "channel_title": "山崎茂雄",
+      "published_at": "2023-08-13T13:43:09Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/xpWDtyzDfoY/maxresdefault.jpg",
+      "query": "西綾瀬町会 夏祭り盆踊り大会 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "地下鉄・神谷町駅近くの西久保八幡神社境内で盆踊り大会2023が華やかに盛大に開催されました。 @shigeo-harusora ツイッター＃https://twitter.com/yama_shigeochan ✈[後編] 🙄✈強突風に舞う旅客機＃https://youtu.be/W7UWHfdxUqY 強突風に舞う旅客機＃https://youtu.be/ZBAJDREsrY0 元日の羽田空港その１＃https://youtu.be/aFAbjTOkXTA 元日の羽田空港その２＃https://youtu.be/fYinuwPbEjk 元日の羽田空港その３＃https://youtu.be/djO3NQ7vDSQ 羽田空港ターミナル展望デッキより撮影しました。"
     },
     {
       "status": "weak",
@@ -26191,6 +26356,92 @@
       "status": "weak",
       "score": 30,
       "reasons": [
+        "bon_context",
+        "setlist_detected"
+      ],
+      "queue_id": "youtube-year-backfill:443b767f4ded8171",
+      "target_year": 2023,
+      "event_name": "砧小学校「第38回砧っ子夏祭り」",
+      "venue": "砧小学校",
+      "area": "世田谷区",
+      "detected_event_date": "",
+      "video_id": "pHM3rVYICxc",
+      "video_url": "https://www.youtube.com/watch?v=pHM3rVYICxc",
+      "title": "小東京音頭　2022年秋の盆踊りフェスタ３２　ららぽーと名古屋みなとアクルス",
+      "channel_id": "UCNF_5e3ZvziJueTWvTPATGw",
+      "channel_title": "和太鼓お祭りチャンネル",
+      "published_at": "2023-03-28T11:30:18Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/pHM3rVYICxc/maxresdefault.jpg",
+      "query": "砧小学校「第38回砧っ子夏祭り」 2023 YouTube 盆踊り",
+      "setlist_count": 48,
+      "setlist_sample": [
+        {
+          "number": 1,
+          "title": "あかね音頭",
+          "url": "https://www.youtube.com/watch?v=Cjatc6m2Wtg",
+          "source": "numbered_url"
+        },
+        {
+          "number": 1,
+          "title": "あきあじ音頭",
+          "url": "https://www.youtube.com/watch?v=HD9Khz5g2mA",
+          "source": "numbered_url"
+        },
+        {
+          "number": 1,
+          "title": "大東京音頭",
+          "url": "https://www.youtube.com/watch?v=nlae9XKzAFc",
+          "source": "numbered_url"
+        },
+        {
+          "number": 2,
+          "title": "きよしのズンドコ節",
+          "url": "https://www.youtube.com/watch?v=buiTnsRtZt8",
+          "source": "numbered_url"
+        },
+        {
+          "number": 2,
+          "title": "たいとう音頭",
+          "url": "https://www.youtube.com/watch?v=lapCW7ME6As",
+          "source": "numbered_url"
+        },
+        {
+          "number": 2,
+          "title": "大江戸東京音頭",
+          "url": "https://www.youtube.com/watch?v=9QoTZAZzolw",
+          "source": "numbered_url"
+        },
+        {
+          "number": 2,
+          "title": "新庄節",
+          "url": "https://www.youtube.com/watch?v=e53si_qh3O4",
+          "source": "numbered_url"
+        },
+        {
+          "number": 2,
+          "title": "炭坑節",
+          "url": "https://www.youtube.com/watch?v=zblYT2aDFQQ",
+          "source": "numbered_url"
+        },
+        {
+          "number": 3,
+          "title": "ダンシングヒーロー",
+          "url": "https://www.youtube.com/watch?v=VBc3bEUj5yw",
+          "source": "numbered_url"
+        },
+        {
+          "number": 3,
+          "title": "東京音頭",
+          "url": "https://www.youtube.com/watch?v=hf5c9auRdWM",
+          "source": "numbered_url"
+        }
+      ],
+      "description_excerpt": "2022年、愛知県で行われた盆踊りの様子です。 おすすめ動画 ららぽーと名古屋盆踊り １あきあじ音頭 https://youtu.be/HD9Khz5g2mA ２新庄節 https://youtu.be/e53si_qh3O4 ３大漁歌い込み https://youtu.be/uZNh28OyiSk ４日光和楽踊り https://youtu.be/jZ6E40TKQOQ ５ちゃっきり節 https://youtu.be/Sl4MhwfxcUU ６十四山音頭 https://youtu.be/iTCPwKPSRFk ７伊勢音頭～さわぎ～ https://youtu.be/n9BkLGiYwkM ８ﾃﾞｶﾝｼｮ節 https://youtu.be/zNwGlUJi-kQ ９祖谷の粉ひき唄 https://youtu.be/3_fFYyo1_k4 １０備中松山踊り https://youtu.be/XA6oerbNkUQ １１桜島音頭 https://youtu.be/LJ9azjoVPFg １２豊年音頭 https://youtu.be/ts_8m6OreeE １３ｱﾝﾊﾟﾝﾏﾝのﾏｰ…"
+    },
+    {
+      "status": "weak",
+      "score": 30,
+      "reasons": [
         "other_year_date_detected",
         "bon_context",
         "setlist_detected"
@@ -26545,6 +26796,30 @@
       "setlist_count": 0,
       "setlist_sample": [],
       "description_excerpt": "メシャ」熱い中お疲れ様でした。 皆さんメシャ熱い中でお疲れ様でした。 羽田神社 御祭神は「須佐之男命（すさのおのみこと）」 「稲田姫命（いなだひめのみこと）」の二柱・ ご夫婦の神様をお祀りしています。「えんむすび」「勝負事」のご神徳でも知られています。 2023 JAPON.Cultura＆tradition。【Copyright License & ALL Rights Reserved】 by Labrador From Havana City CUBA 、 世界中で キューバ人です。《 日本のお祭り、神輿 伝統と文化 》です。（キューバとジャパン文化交流です）。 GoPro Hero８ Black"
+    },
+    {
+      "status": "weak",
+      "score": 21,
+      "reasons": [
+        "target_year_in_video"
+      ],
+      "queue_id": "youtube-year-backfill:356f859bb68abc08",
+      "target_year": 2023,
+      "event_name": "大森南一丁目自治会「納涼盆踊り大会」",
+      "venue": "大森南一丁目公園",
+      "area": "大田区",
+      "detected_event_date": "",
+      "video_id": "xr9yfoKJ1zY",
+      "video_url": "https://www.youtube.com/watch?v=xr9yfoKJ1zY",
+      "title": "松前さくらまつり2023神輿宮入",
+      "channel_id": "UCMAp1W3MW9efsDJDpN40u0Q",
+      "channel_title": "家鴨の生活",
+      "published_at": "2023-05-09T08:02:15Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/xr9yfoKJ1zY/maxresdefault.jpg",
+      "query": "大森南一丁目自治会「納涼盆踊り大会」 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "松前さくらまつり2023松前神社へ神輿宮入"
     },
     {
       "status": "weak",
@@ -27869,6 +28144,28 @@
       "status": "weak",
       "score": 3,
       "reasons": [],
+      "queue_id": "youtube-year-backfill:356f859bb68abc08",
+      "target_year": 2023,
+      "event_name": "大森南一丁目自治会「納涼盆踊り大会」",
+      "venue": "大森南一丁目公園",
+      "area": "大田区",
+      "detected_event_date": "",
+      "video_id": "PdKU8yWVIEE",
+      "video_url": "https://www.youtube.com/watch?v=PdKU8yWVIEE",
+      "title": "令和5年稗田神社例大祭",
+      "channel_id": "UCx1LDT34gXymp6kjndWiolg",
+      "channel_title": "サンバマツケン",
+      "published_at": "2023-09-17T22:25:43Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/PdKU8yWVIEE/maxresdefault.jpg",
+      "query": "大森南一丁目自治会「納涼盆踊り大会」 大森南一丁目公園 大田区 2023 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "東京都大田区蒲田なんですが、8月の蒲田八幡神社のお祭りと別で行われています。こちらもかなり盛り上がりました。 蒲田って言ってもかなり広い地域になりますので、神社が違う地域は他の日に行います。 ちなみに蒲田西口は御園神社がありますので、7月に行われます。"
+    },
+    {
+      "status": "weak",
+      "score": 3,
+      "reasons": [],
       "queue_id": "youtube-year-backfill:65631588a7239bb3",
       "target_year": 2023,
       "event_name": "宇奈根町会 盆踊り大会",
@@ -28416,5 +28713,5 @@
       "description_excerpt": ""
     }
   ],
-  "merged_from": "2026-06-24T20:00:32.272160+00:00"
+  "merged_from": "2026-06-29T21:26:43.705575+00:00"
 }
