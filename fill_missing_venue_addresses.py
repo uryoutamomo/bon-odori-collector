@@ -1,6 +1,8 @@
+import argparse
 import json
 import os
 
+from manual_apply_guards import LEGACY_NOTION_REPAIR_CONFIRMATION, require_confirmation
 from notion_api import NotionApi, plain_text
 from notion_config import VENUE_DATA_SOURCE_ID
 
@@ -64,6 +66,19 @@ def append_source_note(memo, note):
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--confirm", default="")
+    args = parser.parse_args()
+    try:
+        require_confirmation(
+            True,
+            args.confirm,
+            LEGACY_NOTION_REPAIR_CONFIRMATION,
+            "legacy venue address repair",
+        )
+    except ValueError as exc:
+        parser.error(str(exc))
+
     api = NotionApi(os.environ.get("NOTION_API_TOKEN"))
     results = []
     for name, update in UPDATES.items():

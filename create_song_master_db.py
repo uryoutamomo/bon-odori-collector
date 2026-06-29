@@ -6,6 +6,7 @@ import json
 import os
 import urllib.request
 
+from manual_apply_guards import LEGACY_NOTION_REPAIR_CONFIRMATION, require_confirmation
 from notion_config import (
     EVENT_DATABASE_ID,
     GLOSSARY_V2_DATABASE_ID,
@@ -129,10 +130,20 @@ def ensure_glossary_relation(song_db_id):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--confirm", default="")
     args = parser.parse_args()
 
     if not TOKEN:
         raise SystemExit("NOTION_API_TOKEN is not set")
+    try:
+        require_confirmation(
+            not args.dry_run,
+            args.confirm,
+            LEGACY_NOTION_REPAIR_CONFIRMATION,
+            "legacy song master database setup",
+        )
+    except ValueError as exc:
+        parser.error(str(exc))
     existing = find_existing_database()
     if existing:
         song_db_id = existing

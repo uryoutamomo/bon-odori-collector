@@ -1,0 +1,16 @@
+"""Shared confirmation checks for manual apply commands."""
+
+
+LEGACY_YOUTUBE_NOTION_CONFIRMATION = "APPLY LEGACY YOUTUBE NOTION UPDATES"
+LEGACY_NOTION_REPAIR_CONFIRMATION = "APPLY LEGACY NOTION REPAIR"
+PUBLIC_JSON_ONE_OFF_CONFIRMATION = "APPLY PUBLIC JSON ONE-OFF"
+MASTER_RDB_ONE_OFF_CONFIRMATION = "APPLY MASTER RDB ONE-OFF"
+LOCAL_EVIDENCE_ONE_OFF_CONFIRMATION = "APPLY LOCAL EVIDENCE ONE-OFF"
+NOTION_WORKLOG_MAINTENANCE_CONFIRMATION = "APPLY NOTION WORKLOG MAINTENANCE"
+
+
+def require_confirmation(apply, confirmation, phrase, action):
+    if not apply:
+        return
+    if confirmation != phrase:
+        raise ValueError(f"{action} requires --confirm '{phrase}'")

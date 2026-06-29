@@ -6,7 +6,13 @@ on:
     # 注: GitHub の schedule は SLA がなく、特に "0分"(毎時ちょうど)は世界中のジョブが
     # 集中して遅延・ドロップされやすい。混雑を避けるため意図的に分をずらしている。
     - cron: '13 6 * * *'
-  workflow_dispatch: # 手動実行ボタンも有効にする
+  workflow_dispatch:
+    inputs:
+      allow_notion_writes:
+        description: 'legacy Notion log / queue / summary writesを許可する（通常false）'
+        required: false
+        type: boolean
+        default: false
 
 concurrency:
   group: bon-odori-master-rdb
@@ -49,6 +55,14 @@ jobs:
         AWS_REGION: ap-northeast-1
       run: python master_db_s3_artifact.py fetch --overwrite
 
+    - name: Audit fetched master RDB
+      if: ${{ vars.MASTER_DB_S3_BUCKET != '' }}
+      run: |
+        python audit_master_rdb.py \
+          --out-json "$RUNNER_TEMP/master_rdb_audit.json" \
+          --out-md "$RUNNER_TEMP/master_rdb_audit.md" \
+          --append-github-summary
+
     - name: Build glossary runtime
       env:
         NOTION_API_TOKEN: ${{ secrets.NOTION_API_TOKEN }}
@@ -61,6 +75,8 @@ jobs:
         TWITTERAPI_IO_KEY: ${{ secrets.TWITTERAPI_IO_KEY }}
         # 📖 盆踊ラー用語集 DB（速報・確度シグナル検知に使用）。未設定でも fail-safe スキップ
         GLOSSARY_DB_ID: ${{ secrets.GLOSSARY_DB_ID }}
+        # 通常の日次収集はNotionへ書かない。手動実行時だけ明示的にtrueへできる。
+        COLLECT_ALLOW_NOTION_WRITES: ${{ inputs.allow_notion_writes || false }}
         AWS_REGION: ap-northeast-1
         DYNAMODB_QUEUE_TABLE: ${{ vars.DYNAMODB_QUEUE_TABLE }}
         EVENT_CANDIDATE_QUEUE_TABLE: ${{ vars.EVENT_CANDIDATE_QUEUE_TABLE }}
@@ -71,8 +87,11 @@ jobs:
     - name: Collect official venue sites (direct monitoring)
       run: python collect_venue_sites.py
 
-    - name: Refresh public event export from master RDB
+    - name: Refresh public event export and daily X harvest
+      env:
+        NOTION_API_TOKEN: ${{ secrets.NOTION_API_TOKEN }}
       run: |
+        TODAY="$(TZ=Asia/Tokyo date +%F)"
         python export_public_events.py
         if python master_rdb_freeze_policy.py is-frozen legacy_song_occurrence_generation; then
           echo "[master-rdb] legacy song occurrence generation frozen: skip build_song_occurrences.py"
@@ -80,7 +99,25 @@ jobs:
           python build_song_occurrences.py
         fi
         python export_public_events.py
+        python apply_public_date_predictions.py
+        python apply_public_historical_references.py --today "$TODAY"
+        python apply_public_season_hints.py
         python build_event_song_candidates.py
+        python build_x_news_digest_for_oto.py
+        if [ -f data/x_news_digest_oto_reviews.json ]; then
+          python promote_x_news_digest_reviews.py
+          python build_rare_signal_backcheck_queue.py
+          if [ -f data/review_console/staged/rare_signal_backcheck_decisions.json ]; then
+            python export_rare_signal_backcheck_reviews.py
+          fi
+          if [ -f data/rare_signal_backcheck_reviews.json ]; then
+            python stage_rare_signal_backcheck_reviews.py
+          else
+            echo "[rare-signal] no backcheck review file; skip registration staging"
+          fi
+        else
+          echo "[x-news-digest] no Oto review file; skip rare_signal promotion"
+        fi
         python build_song_ocr_queue.py
         if python master_rdb_freeze_policy.py is-frozen legacy_song_occurrence_generation; then
           echo "[master-rdb] legacy song occurrence generation frozen: skip calibrate_song_predictions.py"
@@ -88,6 +125,36 @@ jobs:
           python calibrate_song_predictions.py
         fi
         python build_retrospective_harvest.py
+        python build_weekly_harvest_candidates.py --days 3
+        python triage_weekly_song_candidates.py --dry-run
+        python prepare_weekly_harvest_review.py
+        python build_keyboard_review_ui.py \
+          --input data/weekly_harvest_review_candidates.json \
+          --rows-key rows \
+          --out data/weekly_harvest_review_ui.html \
+          --title '日次X収穫レビュー（用語・共起）' \
+          --term-field term \
+          --category-field category \
+          --summary-fields interpretation,type,confidence,evidence_count \
+          --detail-fields reason,evidence_text,evidence_url \
+          --source-field evidence \
+          --key-fields term,category,type,evidence_url \
+          --download-name weekly_harvest_review_decisions.json \
+          --storage-key daily-x-harvest-review
+        python build_keyboard_review_ui.py \
+          --input data/weekly_song_candidates_review.json \
+          --rows-key rows \
+          --out data/weekly_song_candidates_review_ui.html \
+          --title '日次X収穫レビュー（曲候補）' \
+          --term-field term \
+          --category-field category \
+          --summary-fields canonical_song_name,triage_reason,evidence_count \
+          --detail-fields reason,evidence_text,evidence_url \
+          --source-field evidence \
+          --key-fields term,category,type,evidence_url \
+          --decisions-labels '曲として採用,曲ではない,分割,用語集へ,保留' \
+          --download-name weekly_song_review_decisions.json \
+          --storage-key daily-x-song-review
 
     - name: Commit and Push changes
       run: |
@@ -97,6 +164,25 @@ jobs:
         [ -f data/venue_master.json ] && git add data/venue_master.json
         [ -f data/event_date_update_candidates.json ] && git add data/event_date_update_candidates.json
         [ -f data/event_song_candidates.json ] && git add data/event_song_candidates.json
+        [ -f data/x_news_digest_for_oto.json ] && git add data/x_news_digest_for_oto.json
+        [ -f data/x_news_digest_for_oto.md ] && git add data/x_news_digest_for_oto.md
+        [ -f data/x_news_digest_oto_reviews.json ] && git add data/x_news_digest_oto_reviews.json
+        [ -f data/rare_signal_candidates.json ] && git add data/rare_signal_candidates.json
+        [ -f data/rare_signal_candidates.md ] && git add data/rare_signal_candidates.md
+        [ -f data/rare_signal_backcheck_queue.json ] && git add data/rare_signal_backcheck_queue.json
+        [ -f data/rare_signal_backcheck_queue.md ] && git add data/rare_signal_backcheck_queue.md
+        [ -f data/rare_signal_backcheck_reviews.json ] && git add data/rare_signal_backcheck_reviews.json
+        [ -f data/rare_signal_backcheck_reviews.md ] && git add data/rare_signal_backcheck_reviews.md
+        [ -f data/rare_signal_registration_candidates.json ] && git add data/rare_signal_registration_candidates.json
+        [ -f data/rare_signal_registration_candidates.md ] && git add data/rare_signal_registration_candidates.md
+        [ -f data/weekly_harvest_candidates.json ] && git add data/weekly_harvest_candidates.json
+        [ -f data/weekly_harvest_review_candidates.json ] && git add data/weekly_harvest_review_candidates.json
+        [ -f data/weekly_harvest_review_ui.html ] && git add data/weekly_harvest_review_ui.html
+        [ -f data/weekly_harvest_summary.json ] && git add data/weekly_harvest_summary.json
+        [ -f data/weekly_harvest_summary.md ] && git add data/weekly_harvest_summary.md
+        [ -f data/weekly_song_candidates_review.json ] && git add data/weekly_song_candidates_review.json
+        [ -f data/weekly_song_candidates_review_ui.html ] && git add data/weekly_song_candidates_review_ui.html
+        [ -f data/weekly_song_triage_result.json ] && git add data/weekly_song_triage_result.json
         [ -f data/glossary_runtime.json ] && git add data/glossary_runtime.json
         [ -f data/public/events_public.json ] && git add data/public/events_public.json
         if python master_rdb_freeze_policy.py is-frozen ph1_public_song_export_files; then

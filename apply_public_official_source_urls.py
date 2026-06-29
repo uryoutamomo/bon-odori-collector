@@ -5,6 +5,8 @@ import json
 import re
 from pathlib import Path
 
+from manual_apply_guards import PUBLIC_JSON_ONE_OFF_CONFIRMATION, require_confirmation
+
 
 ROOT = Path(__file__).resolve().parent
 DEFAULT_EVERGREEN = ROOT / "data/evergreen_events.json"
@@ -183,7 +185,17 @@ def main():
     parser.add_argument("--public", default=str(DEFAULT_PUBLIC))
     parser.add_argument("--public-js", default=str(DEFAULT_PUBLIC_JS))
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--confirm", default="")
     args = parser.parse_args()
+    try:
+        require_confirmation(
+            not args.dry_run,
+            args.confirm,
+            PUBLIC_JSON_ONE_OFF_CONFIRMATION,
+            "public JSON official-source URL one-off",
+        )
+    except ValueError as exc:
+        parser.error(str(exc))
 
     evergreen = read_json(args.evergreen)
     events = read_json(args.public)

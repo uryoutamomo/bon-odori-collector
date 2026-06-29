@@ -6,6 +6,7 @@ import json
 import os
 from pathlib import Path
 
+from manual_apply_guards import LEGACY_NOTION_REPAIR_CONFIRMATION, require_confirmation
 from notion_config import (
     GLOSSARY_V2_DATABASE_ID,
     SONG_MASTER_DATABASE_ID,
@@ -26,32 +27,32 @@ REMOVE_SONG_UPDATES = [
     {
         "song_name": "夜の踊り子",
         "page_id": "37c8be04-e762-81b9-9424-ee8eb21a0918",
-        "reason": "内田さん最終判定: `夜の踊り` は曲候補として不採用。週次収穫由来の更新を取り消し。",
+        "reason": "内田さん最終判定: `夜の踊り` は曲候補として不採用。日次X収穫由来の更新を取り消し。",
     },
     {
         "song_name": "馬鹿おどり",
         "page_id": "37c8be04-e762-81c7-b8a4-d56cc9e46590",
-        "reason": "内田さん最終判定: 曲ではない。週次収穫由来の更新を取り消し。",
+        "reason": "内田さん最終判定: 曲ではない。日次X収穫由来の更新を取り消し。",
     },
 ]
 
 SOURCE_MEMOS = {
     "山王音頭": (
-        "週次収穫11件の最終判定でWeb裏取り済み。"
+        "日次X収穫11件の最終判定でWeb裏取り済み。"
         "山王祭限定のご当地ソングとして扱う。"
         "出典: https://www.tenkamatsuri.jp/minyo/"
     ),
     "千代田踊り": (
-        "週次収穫11件の最終判定でWeb裏取り済み。"
+        "日次X収穫11件の最終判定でWeb裏取り済み。"
         "千代田区民踊連盟の民踊として扱う。"
         "出典: https://www.edo-chiyoda.jp/chiyoda-bonodori.html"
     ),
     "岡崎音頭": (
-        "週次収穫11件の最終判定でWeb裏取り済み。"
+        "日次X収穫11件の最終判定でWeb裏取り済み。"
         "岡崎周辺の曲候補として曲マスタに残す。"
     ),
     "五万石おどり": (
-        "週次収穫11件の最終判定でWeb裏取り済み。"
+        "日次X収穫11件の最終判定でWeb裏取り済み。"
         "正式名は「岡崎五万石」の可能性が高いため別名メモとして保持。"
         "出典: https://nichimin.or.jp/commentary/岡崎五万石/"
     ),
@@ -88,7 +89,7 @@ def existing_glossary_pages(term):
 
 def update_song_to_rejected(item, dry_run=False):
     memo = (
-        "週次収穫11件の最終判定により、曲マスタ有効更新を取り消し。\n"
+        "日次X収穫11件の最終判定により、曲マスタ有効更新を取り消し。\n"
         f"{item['reason']}\n"
         "運用メモ: ページは監査用に残し、状態を無効・証拠数0・出典URL空にする。"
     )
@@ -121,7 +122,7 @@ def append_song_source_memo(song_name, song_index, dry_run=False):
 
 def bonjovi_props():
     memo = (
-        "週次収穫11件レビュー最終判定から登録。\n"
+        "日次X収穫11件レビュー最終判定から登録。\n"
         "曲マスタではなく用語集v2候補として扱う。\n"
         f"表記ゆれ: {BONJOVI_TERM['aliases']}\n"
         f"証拠URL: {BONJOVI_TERM['source_url']}"
@@ -165,7 +166,17 @@ def register_bonjovi(dry_run=False):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--confirm", default="")
     args = parser.parse_args()
+    try:
+        require_confirmation(
+            not args.dry_run,
+            args.confirm,
+            LEGACY_NOTION_REPAIR_CONFIRMATION,
+            "legacy weekly song final correction Notion repair",
+        )
+    except ValueError as exc:
+        parser.error(str(exc))
 
     if not TOKEN:
         raise SystemExit("NOTION_API_TOKEN is not set")

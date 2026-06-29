@@ -6,6 +6,7 @@ import os
 import urllib.request
 from datetime import datetime, timezone
 
+from manual_apply_guards import NOTION_WORKLOG_MAINTENANCE_CONFIRMATION, require_confirmation
 from notion_config import load_local_env
 
 
@@ -82,6 +83,7 @@ def append_progress_note():
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--confirm", default="")
     args = parser.parse_args()
 
     if not NOTION_TOKEN:
@@ -96,6 +98,15 @@ def main():
         print(f"Would update current work block: {CURRENT_WORK_OKU_ASAKUSA_BLOCK_ID} -> {current_oku}")
         print(f"Would append progress note to: {YOUTUBE_TASK_PAGE_ID}")
         return
+    try:
+        require_confirmation(
+            True,
+            args.confirm,
+            NOTION_WORKLOG_MAINTENANCE_CONFIRMATION,
+            "YouTube Notion follow-up progress update",
+        )
+    except ValueError as exc:
+        parser.error(str(exc))
 
     check_todo(YOUTUBE_OKU_ASAKUSA_TODO_BLOCK_ID)
     update_bullet(CURRENT_WORK_NEW_EVENTS_BLOCK_ID, current_new_events)

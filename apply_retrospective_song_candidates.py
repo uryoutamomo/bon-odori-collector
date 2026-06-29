@@ -6,6 +6,7 @@ import json
 import os
 from pathlib import Path
 
+from manual_apply_guards import LEGACY_NOTION_REPAIR_CONFIRMATION, require_confirmation
 from notion_config import (
     EVENT_DATABASE_ID,
     SONG_MASTER_DATABASE_ID,
@@ -133,7 +134,17 @@ def main():
     parser.add_argument("--source", type=Path, default=SOURCE)
     parser.add_argument("--out", type=Path, default=OUT)
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--confirm", default="")
     args = parser.parse_args()
+    try:
+        require_confirmation(
+            not args.dry_run,
+            args.confirm,
+            LEGACY_NOTION_REPAIR_CONFIRMATION,
+            "legacy retrospective song Notion repair",
+        )
+    except ValueError as exc:
+        parser.error(str(exc))
 
     if not TOKEN:
         raise SystemExit("NOTION_API_TOKEN is not set")

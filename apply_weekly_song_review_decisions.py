@@ -6,6 +6,7 @@ import json
 import os
 from pathlib import Path
 
+from manual_apply_guards import LEGACY_NOTION_REPAIR_CONFIRMATION, require_confirmation
 from notion_config import SONG_MASTER_DATABASE_ID, load_local_env
 from register_song_master_initial import classify_song
 from triage_weekly_song_candidates import (
@@ -55,7 +56,7 @@ def decision_rows(path):
 
 def song_props(song_name, source, note):
     memo = (
-        "週次収穫レビュー結果から曲マスタへ反映。\n"
+        "日次X収穫レビュー結果から曲マスタへ反映。\n"
         f"元候補: {source.get('term', song_name)}\n"
         f"レビュー注記: {note}\n"
         f"証拠URL: {source.get('evidence_url', '')}\n"
@@ -93,7 +94,17 @@ def main():
     parser.add_argument("--decisions", type=Path, default=DECISIONS)
     parser.add_argument("--out", type=Path, default=OUT)
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--confirm", default="")
     args = parser.parse_args()
+    try:
+        require_confirmation(
+            not args.dry_run,
+            args.confirm,
+            LEGACY_NOTION_REPAIR_CONFIRMATION,
+            "legacy weekly song review Notion repair",
+        )
+    except ValueError as exc:
+        parser.error(str(exc))
 
     if not TOKEN:
         raise SystemExit("NOTION_API_TOKEN is not set")

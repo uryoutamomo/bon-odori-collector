@@ -5,6 +5,8 @@ import json
 import os
 from pathlib import Path
 
+from manual_apply_guards import require_confirmation
+
 
 def load_env():
     try:
@@ -23,6 +25,7 @@ import collect  # noqa: E402
 
 VOICES_FILE = Path("data/voices.json")
 OUTPUT_FILE = Path("data/x_display_name_updates.json")
+CONFIRM_PHRASE = "APPLY X DISPLAY NAMES TO NOTION"
 
 
 def load_latest_names():
@@ -121,7 +124,12 @@ def apply_updates(updates):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--apply", action="store_true")
+    parser.add_argument("--confirm", default="")
     args = parser.parse_args()
+    try:
+        require_confirmation(args.apply, args.confirm, CONFIRM_PHRASE, "X display name Notion sync")
+    except ValueError as exc:
+        parser.error(str(exc))
 
     latest_names = load_latest_names()
     members = fetch_members()

@@ -6,6 +6,7 @@ import json
 import os
 import urllib.request
 
+from manual_apply_guards import LEGACY_NOTION_REPAIR_CONFIRMATION, require_confirmation
 from notion_config import EVENT_DATABASE_ID, GLOSSARY_V2_DATABASE_ID, load_local_env
 from register_glossary_v2_seed_candidates import selected_candidates
 
@@ -111,10 +112,20 @@ def gujo_props(event_id, event_name):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--confirm", default="")
     args = parser.parse_args()
 
     if not TOKEN:
         raise SystemExit("NOTION_API_TOKEN is not set")
+    try:
+        require_confirmation(
+            not args.dry_run,
+            args.confirm,
+            LEGACY_NOTION_REPAIR_CONFIRMATION,
+            "legacy reviewed glossary v2 promotion",
+        )
+    except ValueError as exc:
+        parser.error(str(exc))
 
     terms = reviewed_terms()
     gujo_event = event_page(GUJO_REQUESTED_EVENT_NAME)

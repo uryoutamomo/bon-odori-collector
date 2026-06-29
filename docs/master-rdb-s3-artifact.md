@@ -79,8 +79,13 @@ tracked `data/bon_odori_master.sqlite` from Git history and publishes it to S3:
 ```bash
 gh workflow run bootstrap_master_rdb_s3.yml \
   -f bucket=bon-odori-master-rdb-169805602203 \
-  -f prefix=master-rdb
+  -f prefix=master-rdb \
+  -f confirm="BOOTSTRAP MASTER RDB S3"
 ```
+
+The confirmation text is required because this workflow publishes the initial
+artifact. Normal scheduled workflows should fetch and audit the artifact, not
+bootstrap it again.
 
 After the workflow succeeds, enable the collect workflow fetch step:
 
@@ -122,6 +127,12 @@ Then commit only the manifest, schema, reports, and code changes. Do not commit
 The collect workflow fetches the DB only when `MASTER_DB_S3_BUCKET` is set. Set
 that variable only after the S3 bucket exists and the first artifact publish has
 succeeded. This keeps scheduled runs safe during setup.
+
+After fetching the artifact, the scheduled collector, YouTube daily backfill,
+and weekly harvest workflows run `audit_master_rdb.py` in read-only mode and
+append the Markdown audit to the GitHub Step Summary. The audit fails the job
+only for high-severity issues. Medium issues, such as legacy source snapshot
+drift, are reported but do not block the normal read-only workflows.
 
 If a workflow mutates the master RDB in the future, it must:
 

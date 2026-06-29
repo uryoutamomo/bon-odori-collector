@@ -7,6 +7,7 @@ import os
 from datetime import date
 from pathlib import Path
 
+from manual_apply_guards import LEGACY_YOUTUBE_NOTION_CONFIRMATION, require_confirmation
 from notion_api import NotionApi
 from notion_config import EVENT_DATA_SOURCE_ID, VENUE_DATA_SOURCE_ID
 
@@ -248,8 +249,18 @@ def update_event(api, event_id, venue_id, item):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--apply", action="store_true")
+    parser.add_argument("--confirm", default="")
     parser.add_argument("--out", type=Path, default=OUT)
     args = parser.parse_args()
+    try:
+        require_confirmation(
+            args.apply,
+            args.confirm,
+            LEGACY_YOUTUBE_NOTION_CONFIRMATION,
+            "legacy retrospective ready venue/event Notion update",
+        )
+    except ValueError as exc:
+        parser.error(str(exc))
 
     api = NotionApi(os.environ.get("NOTION_API_TOKEN"))
     results = []

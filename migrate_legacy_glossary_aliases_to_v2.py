@@ -6,6 +6,7 @@ import json
 import os
 import urllib.request
 
+from manual_apply_guards import LEGACY_NOTION_REPAIR_CONFIRMATION, require_confirmation
 from notion_config import GLOSSARY_V2_DATABASE_ID, load_local_env
 
 
@@ -111,10 +112,20 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--limit", type=int, default=200)
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--confirm", default="")
     args = parser.parse_args()
 
     if not TOKEN:
         raise SystemExit("NOTION_API_TOKEN is not set")
+    try:
+        require_confirmation(
+            not args.dry_run,
+            args.confirm,
+            LEGACY_NOTION_REPAIR_CONFIRMATION,
+            "legacy glossary alias migration",
+        )
+    except ValueError as exc:
+        parser.error(str(exc))
 
     created = 0
     skipped = 0

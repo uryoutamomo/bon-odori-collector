@@ -23,6 +23,7 @@ from build_observed_promotion_candidates import (
     occurrence_by_id,
     write_json,
 )
+from manual_apply_guards import MASTER_RDB_ONE_OFF_CONFIRMATION, require_confirmation
 from master_db import MASTER_DB, MASTER_MANIFEST, connect_existing, file_sha256, stable_id, table_counts
 
 
@@ -562,7 +563,17 @@ def main():
     parser.add_argument("--out-json", default=str(OUT_JSON))
     parser.add_argument("--out-md", default=str(OUT_MD))
     parser.add_argument("--manifest", default=str(MASTER_MANIFEST))
+    parser.add_argument("--confirm", default="")
     args = parser.parse_args()
+    try:
+        require_confirmation(
+            True,
+            args.confirm,
+            MASTER_RDB_ONE_OFF_CONFIRMATION,
+            "master RDB historical promotion derived-table rebuild",
+        )
+    except ValueError as exc:
+        parser.error(str(exc))
 
     candidates, skipped = build_candidates(
         Path(args.db),
