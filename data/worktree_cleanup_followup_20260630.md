@@ -37,36 +37,37 @@
 | `2b7adda` | Update master RDB workflow reference | 設計docの workflow 名を現行 `weekly_harvest.yml` に合わせて更新。 |
 | `5b059f4` | Refresh cleanup follow-up after doc split | doc切り出し後の残状況を記録。 |
 | `ef5434c` | Document review console and X collection operations | レビューコンソール次アクション設計と X/RSS 収集運用境界を追加。 |
+| `30b5a10` | Add public official source URLs | `events_public.json` と `.js` を揃え、34件の公開ソースURLを反映。 |
+| `c7cafb4` | Add July official source promotion reports | July公式URL昇格スクリプト、dry-run現状レポート、ギャップレポートを追加。 |
 
 ## Current remaining scale
 
 | metric | value |
 | --- | ---: |
-| tracked changed files | 55 |
-| untracked files | 38 |
-| tracked diff size | +103,511 / -455,475 |
+| tracked changed files | 54 |
+| untracked files | 32 |
+| tracked diff size | +103,500 / -455,467 |
 
 ## Public JSON status
 
-Do not deploy the remaining public JSON diff as-is.
+The event URL mismatch is resolved, but do not deploy the remaining public/song JSON diff as-is.
 
 Observed state:
 
-- `data/public/events_public.js` has 3 official URL additions.
-- `data/public/events_public.json` is not changed.
+- `data/public/events_public.json` and `data/public/events_public.js` are aligned after `30b5a10`.
+- `python3 apply_public_official_source_urls.py --dry-run` now reports `updated: 0` and `added_urls: 0`.
+- The URL-only public event update added 34 source URLs across 33 public events.
 - `data/public/event_songs_public.json` and `data/public/event_song_occurrences_public.json` still contain generated song diffs.
-- `python3 apply_public_official_source_urls.py --dry-run` reports 33 public events would be updated with 34 URLs if applied to the JSON source.
 
 Risk:
 
-- The current JS-only diff is not aligned with the JSON source.
-- A deploy should first regenerate a clean public JSON/JS pair or explicitly choose a source-of-truth path.
+- The former JS-only URL mismatch is gone.
+- The remaining public deploy blocker is now the generated song/public-song occurrence diff, not `events_public.json/.js`.
 
 Recommended next split:
 
-1. Rebuild `data/public/events_public.json` and `.js` from the intended source.
-2. Confirm whether the 33-event official-source URL update is desired.
-3. Keep song export files in a separate song/public export review.
+1. Review or regenerate the song/public-song occurrence outputs as a separate batch.
+2. Keep non-song public guard/dry-run files separate from deploy until reviewed.
 
 ## Remaining groups
 
@@ -74,7 +75,6 @@ Recommended next split:
 
 Files include:
 
-- `data/public/events_public.js`
 - `data/public/event_songs_public.json`
 - `data/public/event_song_occurrences_public.json`
 - `data/public_events_sync_guard.*`
@@ -104,9 +104,7 @@ Action:
 
 Untracked groups remain for:
 
-- July official source promotions
 - event time / source / venue review batches
-- generated July source URL gap reports
 - one-off Notion append note scripts
 - YouTube morning review launchd/runner files
 
