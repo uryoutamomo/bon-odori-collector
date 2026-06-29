@@ -23,5 +23,8 @@ __pycache__/
 data/review_console/
 data/automation/
 
-# ブラウザ保存した元素材。コミットするのは curated/generated 側だけにする
+# ブラウザ保存した元素材。キャラクター素材の正本は bonsuke-manga 側に置く
 assets/character/originals/
+
+# キャラクター素材の正本は /Users/ryotauchida/bonsuke-manga 側
+assets/character/generated/
