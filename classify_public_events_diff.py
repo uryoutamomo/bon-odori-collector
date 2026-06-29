@@ -294,11 +294,62 @@ def fixed_date_rule_basis_refresh(records):
     return True
 
 
+def expired_historical_slide_downgrade(records):
+    actionable = [
+        record
+        for record in records
+        if record["recommended_action"]
+        in {
+            "individual_review",
+            "site_update_candidate_after_review",
+            "restore_collector_from_site_or_reenable_export_postprocess",
+        }
+    ]
+    allowed_fields = {
+        "display_tier",
+        "historical_display_tier",
+        "historical_reference",
+        "historical_reference_confidence",
+        "historical_reference_label",
+        "historical_reference_score",
+        "historical_slide",
+        "historical_slide_basis",
+        "historical_slide_date",
+        "historical_slide_date_end",
+        "predicted_date",
+        "predicted_date_end",
+        "prediction_basis",
+        "prediction_confidence",
+    }
+    if not actionable or any(record["field"] not in allowed_fields for record in actionable):
+        return False
+
+    historical_reference = next((record for record in records if record["field"] == "historical_reference"), None)
+    historical_display_tier = next((record for record in records if record["field"] == "historical_display_tier"), None)
+    display_tier = next((record for record in records if record["field"] == "display_tier"), None)
+
+    collector_ref = (historical_reference or {}).get("collector_value") or {}
+    site_ref = (historical_reference or {}).get("site_value") or {}
+    collector_tier = (
+        collector_ref.get("display_tier")
+        or (historical_display_tier or {}).get("collector_value")
+        or (display_tier or {}).get("collector_value")
+    )
+    site_tier = (
+        site_ref.get("display_tier")
+        or (historical_display_tier or {}).get("site_value")
+        or (display_tier or {}).get("site_value")
+    )
+    return collector_tier == "historical_reference" and site_tier == "historical_slide"
+
+
 def recommended_event_action(actions, records):
     if rule_prediction_replaces_matching_historical_slide(records):
         return "rule_prediction_replaces_matching_historical_slide"
     if fixed_date_rule_basis_refresh(records):
         return "fixed_date_rule_basis_refresh"
+    if expired_historical_slide_downgrade(records):
+        return "expired_historical_slide_downgrade"
     if actions.get("individual_review"):
         return "individual_review"
     if actions.get("site_update_candidate_after_review") and actions.get(
@@ -436,6 +487,7 @@ def build(args):
             "collector_only_postprocess_rule": "collector has an internal postprocessor rule that is excluded from the public snapshot",
             "rule_prediction_replaces_matching_historical_slide": "collector rule prediction keeps the same displayed date as the legacy historical slide",
             "fixed_date_rule_basis_refresh": "collector fixed-date postprocessor keeps the same displayed date while refreshing the public basis text",
+            "expired_historical_slide_downgrade": "required postprocessor removes an expired historical slide and keeps it as reference-only",
         },
         **classified,
     }
@@ -471,6 +523,7 @@ def render_markdown(data):
         "collector_only_postprocess_rule",
         "rule_prediction_replaces_matching_historical_slide",
         "fixed_date_rule_basis_refresh",
+        "expired_historical_slide_downgrade",
         "low_priority_or_unclassified",
     ]:
         rows = [row for row in data["event_rows"] if row["recommended_action"] == action]
