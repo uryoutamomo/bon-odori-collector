@@ -1,10 +1,17 @@
 import unittest
 
-from build_youtube_active_video_review import build_review, video_id_from_url
+from build_youtube_active_video_review import (
+    DEFAULT_EXPORT_MAX_PER_CHANNEL,
+    build_review,
+    video_id_from_url,
+)
 from youtube_title_parts import split_youtube_title
 
 
 class BuildYoutubeActiveVideoReviewTest(unittest.TestCase):
+    def test_cli_default_keeps_canonical_export_full_size(self):
+        self.assertEqual(DEFAULT_EXPORT_MAX_PER_CHANNEL, 10000)
+
     def test_extracts_video_id_from_shorts_url(self):
         self.assertEqual(
             video_id_from_url("https://www.youtube.com/shorts/abc123"),

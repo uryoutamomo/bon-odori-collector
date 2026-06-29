@@ -21,6 +21,7 @@ PUBLIC_EVENTS = DATA / "public" / "events_public.json"
 YOUTUBE_SETLISTS = DATA / "youtube_setlist_occurrences.json"
 OUT = DATA / "youtube_active_video_review.json"
 MARKDOWN_OUT = DATA / "youtube_active_video_review.md"
+DEFAULT_EXPORT_MAX_PER_CHANNEL = 10000
 
 BON_CONTEXT_RE = re.compile(r"(盆踊り|盆おどり|bon\s*odori|bondance|bon\s*dance|音頭|民踊)", re.I)
 NOISY_WEAK_EVIDENCE_CHANNELS = {"Tokyo Hz", "Tokyo Lonely Walker"}
@@ -499,7 +500,7 @@ def render_markdown(review):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--max-per-channel", type=int, default=15)
+    parser.add_argument("--max-per-channel", type=int, default=DEFAULT_EXPORT_MAX_PER_CHANNEL)
     parser.add_argument("--out", default=str(OUT))
     parser.add_argument("--markdown-out", default=str(MARKDOWN_OUT))
     args = parser.parse_args()
