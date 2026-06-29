@@ -33,14 +33,16 @@
 | `51ed25d` | Rename harvest wording to daily X | weekly harvest 表現を daily X 向けへ整理。 |
 | `ad62501` | Point Bonsuke notes to manga assets | Bonsuke 画像メモの参照先を `bonsuke-manga` 側へ更新。 |
 | `9b6b8a0` | Ignore local review outputs | ローカル生成レビュー出力と pending mail を ignore。 |
+| `fe40ca4` | Refresh cleanup follow-up after ignores | ignore 整理後の残状況を記録。 |
+| `2b7adda` | Update master RDB workflow reference | 設計docの workflow 名を現行 `weekly_harvest.yml` に合わせて更新。 |
 
 ## Current remaining scale
 
 | metric | value |
 | --- | ---: |
-| tracked changed files | 56 |
+| tracked changed files | 55 |
 | untracked files | 40 |
-| tracked diff size | +103,512 / -455,476 |
+| tracked diff size | +103,511 / -455,475 |
 
 ## Public JSON status
 
@@ -126,16 +128,6 @@ Now ignored by `.gitignore`:
 Action:
 
 - Keep these out of normal commits. If one is intentionally needed later, add it explicitly with `git add -f` and document why.
-
-### E. Small tracked doc change
-
-Tracked doc diff remains in:
-
-- `docs/master-rdb-migration-ph0-design.md`
-
-Action:
-
-- This appears to update the workflow concurrency name for `weekly_harvest.yml`. It can be committed separately after confirming the workflow rename is intentional.
 
 ## Still not safe for whole-repo deploy
 
