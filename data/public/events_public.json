@@ -693,10 +693,9 @@
     "detail": "2026-07-13〜2026-07-16 開催予定。東京盆踊りマップから確定日として反映。 2026 7/13 - 16 靖国神社 大村銅像前 千代田区「第79回みたままつり 納涼民踊の集い」 7月13日(月)-7月16日(木) 午後6時30分-(例年8時30分まで)。 ＊雨天中止、小雨決行 ・練習会 6/5(金)、7/3(金) ともに19時より、千代田区スポーツセンターにて(対象:千代田区在住在勤者)。 (4/4掲)",
     "source_urls": [
       {
-        "label": "告知HPあり",
-        "url": "",
-        "kind": "web",
-        "count": 1
+        "label": "公式告知あり",
+        "url": "https://www.yasukuni.or.jp/schedule/saiji.html#saiji03",
+        "kind": "official"
       }
     ],
     "songs": [],
@@ -2576,99 +2575,99 @@
         "name": "ご祝儀音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "ふるさと音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "チャンチキおけさ",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "ハワイ音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "八木節",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "北海盆唄",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "大東京音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "好きになった人",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "新橋音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "新芝音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "東京音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "炭坑節",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "燃えろ日本の夏祭り",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "防災音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       }
     ],
     "public_status": "upcoming_confirmed",
@@ -5464,11 +5463,17 @@
     "songs": [
       {
         "name": "LOVEマシーン",
-        "confidence": "hint"
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "勝手にシンドバッド",
-        "confidence": "hint"
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       }
     ],
     "public_status": "upcoming_confirmed",
@@ -7248,6 +7253,11 @@
     "description": "佐竹商店街夏祭り「サタケオドリ」内で、2026年7月18日(土)15:00-19:00に開かれる第1回の盆踊り。",
     "detail": "2026年ポスター画像で、佐竹商店街夏祭り「サタケオドリ」内の第1回佐竹ゲバゲバ盆踊りを確認。 開催日は2026年7月18日(土)。アートマーケットは13:00-19:00、佐竹ゲバゲバ盆踊りは15:00-19:00。会場は佐竹商店街アーケード下で、新御徒町駅A2出口すぐ。雨天決行、駐車場なし。 投稿では「40年ぶりの復活開催」とされ、練習会投稿では新ご当地曲「佐竹音頭」から定番曲、アニソンまで踊る旨が確認できる。 主催: 佐竹商店街振興組合。協力: 佐竹町会。後援: 台東区。ポスター作画・一部デザイン: 広井チムニー。",
     "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://satakeshotengai.com/satakeodori/",
+        "kind": "official"
+      },
       {
         "label": "告知投稿あり",
         "url": "",
@@ -10725,10 +10735,9 @@
     "detail": "2025-07-26 開催実績。2025 7/26 - 27。「品川区民まつり 品川第二地区」7月26日(土)-27日(日) 17時-21時。 「盆踊り・模擬店 ほか」。 踊りは18時-21時。 練習会 7/23(水)・24(木) 19:00-20:45 城南小学校体育館。 (7/23朝 時間他追記)",
     "source_urls": [
       {
-        "label": "告知HPあり",
-        "url": "",
-        "kind": "web",
-        "count": 1
+        "label": "公式告知あり",
+        "url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
+        "kind": "official"
       }
     ],
     "songs": [],
@@ -13311,6 +13320,13 @@
         "basis_label": "今年ヒント"
       },
       {
+        "name": "ダンシングヒーロー",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測"
+      },
+      {
         "name": "ホイップるん音頭",
         "confidence": "confirmed",
         "probability": 95,
@@ -13370,13 +13386,6 @@
         "name": "高嶺の花子さん",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
-      },
-      {
-        "name": "ダンシングヒーロー",
-        "confidence": "confirmed",
-        "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント"
       },
