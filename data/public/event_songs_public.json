@@ -1457,6 +1457,42 @@
     ]
   },
   {
+    "name": "佐竹ゲバゲバ盆踊り",
+    "venue": "佐竹商店街アーケード下",
+    "area": "台東区",
+    "date": "2026-07-18",
+    "songs": [
+      {
+        "name": "佐竹音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_announced",
+        "basis_label": "今年告知"
+      },
+      {
+        "name": "クックロビン音頭",
+        "confidence": "hint",
+        "probability": 85,
+        "basis": "current_announced",
+        "basis_label": "今年告知"
+      },
+      {
+        "name": "ダンシングヒーロー",
+        "confidence": "hint",
+        "probability": 85,
+        "basis": "current_announced",
+        "basis_label": "今年告知"
+      },
+      {
+        "name": "電線マン音頭",
+        "confidence": "hint",
+        "probability": 85,
+        "basis": "current_announced",
+        "basis_label": "今年告知"
+      }
+    ]
+  },
+  {
     "name": "東本願寺盆踊り",
     "venue": "東本願寺（浅草）",
     "area": "台東区",

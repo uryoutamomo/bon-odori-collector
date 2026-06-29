@@ -1581,19 +1581,12 @@ const EVENTS = [
       "8": "上旬"
     },
     "description": "「日本一おいしい盆踊り」と呼ばれる名物グルメ屋台と、本堂を背に踊る圧巻のロケーション。例年4日間開かれる都内屈指の大規模盆踊り。",
-    "detail": "2026-07-29〜2026-08-01 開催予定。X投稿から確定日として反映。 第79回築地本願寺納涼盆踊り大会 2026年7月29日（水）〜8月1日（土）開催！ 本日発表！ この夏も楽しみましょう！",
+    "detail": "2026-07-29〜2026-08-01 開催。築地本願寺公式告知で19:00〜21:00（最終日のみ18:00〜20:30）を確認。大江戸助六太鼓等の関連演奏時間あり。",
     "source_urls": [
       {
-        "label": "告知HPあり",
-        "url": "",
-        "kind": "web",
-        "count": 2
-      },
-      {
-        "label": "告知投稿あり",
-        "url": "",
-        "kind": "post",
-        "count": 2
+        "label": "公式告知あり",
+        "url": "https://tsukijihongwanji.jp/news/11529/",
+        "kind": "official"
       }
     ],
     "songs": [
@@ -2571,7 +2564,7 @@ const EVENTS = [
       "7": "下旬"
     },
     "description": "桜田公園は、港区の屋外で踊りの輪を作りやすい会場。 規模は「小」として整理しています、アクセスはJR・地下鉄各線 新橋駅から徒歩圏内。",
-    "detail": "",
+    "detail": "2026-07-23〜2026-07-24 開催。公式実施概要で桜田会場（盆踊り・ステージ・出店）15:00〜20:30を確認。",
     "source_urls": [
       {
         "label": "公式告知あり",
@@ -6986,19 +6979,12 @@ const EVENTS = [
       "7": "上旬"
     },
     "description": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026は、上野恩賜公園で開かれる屋外型の盆踊り・夏の地域イベント。7月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2026-07-03〜2026-07-05 開催予定。X投稿から確定日として反映。 ふるさと東京応援祭 第三回ビールと浴衣de盆踊りin上野2026 2026年7月3日（金）〜7月5日（日） 上野恩賜公園で開催！ ビールと盆踊りの夏祭り #台東区 #上野 #谷中 #イベント #フェス",
+    "detail": "2026-07-03〜2026-07-05 11:00-21:00予定（最終日のみ20:00終了予定）。公式サイト開催概要で確認。会場: 上野恩賜公園 竹の台広場（噴水広場）。",
     "source_urls": [
       {
-        "label": "告知投稿あり",
-        "url": "",
-        "kind": "post",
-        "count": 1
-      },
-      {
-        "label": "告知HPあり",
-        "url": "",
-        "kind": "web",
-        "count": 1
+        "label": "公式告知あり",
+        "url": "https://www.furusatotokyofes.com/",
+        "kind": "official"
       }
     ],
     "songs": [],
@@ -7234,6 +7220,95 @@ const EVENTS = [
     },
     "season_hint_label": "2月中旬",
     "season_confidence": "lowest"
+  },
+  {
+    "name": "佐竹ゲバゲバ盆踊り",
+    "name_confirmed": true,
+    "venue": "佐竹商店街アーケード下",
+    "area": "台東区",
+    "months": [
+      7
+    ],
+    "scale": "中",
+    "access": "都営大江戸線・つくばエクスプレス 新御徒町駅A2出口すぐ",
+    "address": "東京都台東区台東3-4丁目 佐竹商店街",
+    "lat": 35.7062817,
+    "lng": 139.781263,
+    "date": "2026-07-18",
+    "date_end": "2026-07-18",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        7,
+        18
+      ]
+    ],
+    "jun": {
+      "7": "中旬"
+    },
+    "description": "佐竹商店街夏祭り「サタケオドリ」内で、2026年7月18日(土)15:00-19:00に開かれる第1回の盆踊り。",
+    "detail": "2026年ポスター画像で、佐竹商店街夏祭り「サタケオドリ」内の第1回佐竹ゲバゲバ盆踊りを確認。 開催日は2026年7月18日(土)。アートマーケットは13:00-19:00、佐竹ゲバゲバ盆踊りは15:00-19:00。会場は佐竹商店街アーケード下で、新御徒町駅A2出口すぐ。雨天決行、駐車場なし。 投稿では「40年ぶりの復活開催」とされ、練習会投稿では新ご当地曲「佐竹音頭」から定番曲、アニソンまで踊る旨が確認できる。 主催: 佐竹商店街振興組合。協力: 佐竹町会。後援: 台東区。ポスター作画・一部デザイン: 広井チムニー。",
+    "source_urls": [
+      {
+        "label": "告知投稿あり",
+        "url": "",
+        "kind": "post",
+        "count": 2
+      }
+    ],
+    "songs": [
+      {
+        "name": "佐竹音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_announced",
+        "basis_label": "今年告知"
+      },
+      {
+        "name": "クックロビン音頭",
+        "confidence": "hint",
+        "probability": 85,
+        "basis": "current_announced",
+        "basis_label": "今年告知"
+      },
+      {
+        "name": "ダンシングヒーロー",
+        "confidence": "hint",
+        "probability": 85,
+        "basis": "current_announced",
+        "basis_label": "今年告知"
+      },
+      {
+        "name": "電線マン音頭",
+        "confidence": "hint",
+        "probability": 85,
+        "basis": "current_announced",
+        "basis_label": "今年告知"
+      }
+    ],
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-07-18",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-07-18",
+      "2026-07-18"
+    ],
+    "display_tier": "confirmed"
   },
   {
     "name": "東本願寺盆踊り",
@@ -9012,13 +9087,12 @@ const EVENTS = [
       "7": "下旬"
     },
     "description": "河内音頭の生演奏で夜まで踊り続ける、関東屈指の熱量を誇る大盆踊り。生バンドの音頭に身を任せれば初心者でも止まらなくなる。",
-    "detail": "",
+    "detail": "2026-07-29〜2026-07-30 開催。公式開催概要で17時30分から21時00分（予定・プレイベントあり）を確認。",
     "source_urls": [
       {
-        "label": "告知HPあり",
-        "url": "",
-        "kind": "web",
-        "count": 1
+        "label": "公式告知あり",
+        "url": "https://www.kinshicho-kawachiondo.jp/archives/1058",
+        "kind": "official"
       }
     ],
     "songs": [
