@@ -35,13 +35,15 @@
 | `9b6b8a0` | Ignore local review outputs | ローカル生成レビュー出力と pending mail を ignore。 |
 | `fe40ca4` | Refresh cleanup follow-up after ignores | ignore 整理後の残状況を記録。 |
 | `2b7adda` | Update master RDB workflow reference | 設計docの workflow 名を現行 `weekly_harvest.yml` に合わせて更新。 |
+| `5b059f4` | Refresh cleanup follow-up after doc split | doc切り出し後の残状況を記録。 |
+| `ef5434c` | Document review console and X collection operations | レビューコンソール次アクション設計と X/RSS 収集運用境界を追加。 |
 
 ## Current remaining scale
 
 | metric | value |
 | --- | ---: |
 | tracked changed files | 55 |
-| untracked files | 40 |
+| untracked files | 38 |
 | tracked diff size | +103,511 / -455,475 |
 
 ## Public JSON status
@@ -106,7 +108,6 @@ Untracked groups remain for:
 - event time / source / venue review batches
 - generated July source URL gap reports
 - one-off Notion append note scripts
-- review console operation docs
 - YouTube morning review launchd/runner files
 
 Action:
