@@ -48,14 +48,15 @@
 | `df740b3` | Align harvest review labels with daily X flow | 週次収穫レビュー生成物の表示文言を日次X収穫へ統一。 |
 | `7eae4b9` | Record X candidate review decisions | X候補30件の内田さんレビュー判断を保存。 |
 | `feffed0` | Preserve official source review decisions | 公式ソース候補の再生成時に既存レビュー判定を保持し、51件保持・新規pending 1件の状態へ修復。 |
+| `a196275` | Record YouTube backfill evidence batch | YouTube evidence/active review/RDB summary/backfill report を切り出し、active review の既定出力を全件側へ修正。 |
 
 ## Current remaining scale
 
 | metric | value |
 | --- | ---: |
-| tracked changed files | 36 |
+| tracked changed files | 24 |
 | untracked files | 31 |
-| tracked diff size | +101,674 / -454,386 |
+| tracked diff size | +62,356 / -58,380 |
 
 ## Public JSON status
 
@@ -83,7 +84,7 @@ Recommended next split:
 
 1. Review non-song public dry-run files (historical reference dry-run, season hint dry-run).
 2. Keep old song generation files frozen unless explicitly regenerated from the approved path.
-3. Handle YouTube review/backfill outputs separately.
+3. Keep YouTube-derived ops metrics separate from frozen song/public dry-run state.
 
 ## Remaining groups
 
@@ -99,22 +100,20 @@ Action:
 - Keep separate from deploy until regenerated and reviewed.
 - `data/public_events_sync_guard.*` has already been split and is no longer part of this remaining group.
 
-### B. YouTube/song generated data
+### B. Song/ops generated data
 
-Largest files/diffs include:
+Largest files/diffs still include:
 
 - `data/song_occurrences.json`
 - `data/song_prediction_snapshots.json`
-- `data/youtube_setlist_occurrences.json`
-- `data/youtube_active_video_review.json`
-- `data/youtube_active_video_review.md`
-- `data/youtube_daily_backfill_report.*`
-- `data/youtube_channels.json`
+- `data/ops_metrics_*`
+- `data/evidence_rdb_summary.json`
 
 Action:
 
 - Treat as a batch output. `legacy_song_occurrence_generation` is still frozen, so do not commit `data/song_occurrences.json` or `data/song_prediction_snapshots.json` from the old generation path.
-- Commit YouTube review/backfill outputs only with the exact runner/test context, or regenerate cleanly before review.
+- YouTube evidence/backfill outputs were split in `a196275`.
+- Keep ops metrics out until the remaining frozen song/public dry-run state is either reverted, regenerated from approved paths, or explicitly accepted.
 
 ### C. Review/research feature workstreams
 
