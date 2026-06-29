@@ -778,7 +778,7 @@ SQLite 正本へ push する workflow はこの group に参加させる。
 | 実行元 | 現行 concurrency | 主な書き込み | 移行中の扱い |
 | --- | --- | --- | --- |
 | `.github/workflows/collect.yml` | `bon-odori-collect` | `data/voices*.json`, `data/public/events_public.json`, `data/song_occurrences.json`, `data/public/event_song_occurrences_public.json` など | 正本更新 workflow へ統合、または共通 group 化 |
-| `.github/workflows/weekly_harvest.yml` | `weekly-harvest` | 週次レビューJSON、`data/public/events_public.json`, `data/song_occurrences.json` など | Ph1中は song/public song occurrence 書き込みを止める |
+| `.github/workflows/weekly_harvest.yml` | `manual-song-glossary-harvest-fallback` | 手動fallbackレビューJSON、`data/public/events_public.json`, `data/song_occurrences.json` など | Ph1中は song/public song occurrence 書き込みを止める |
 | `.github/workflows/send_mail.yml` | `bon-odori-send-mail` | `data/pending_mail.json` の削除 commit | 共通 group 化。メール送信自体は継続可 |
 | ローカル `run_daily_youtube_backfill.py --commit --push` | なし | YouTube backfill候補、`event_occurrence_observations`, `event_schedule_rules`, `event_date_predictions`, `data/public/events_public.json`, `data/song_occurrences.json` など | 移行中は commit/push 停止、または候補・レポートのみ |
 
