@@ -1,0 +1,717 @@
+{
+  "generated_by": "build_july_official_url_gap_report.py",
+  "generated_at": "2026-06-29T16:40:37.355011+00:00",
+  "summary": {
+    "july_target_event_count": 61,
+    "without_official_url_count": 36,
+    "with_official_url_count": 25,
+    "one_shot_promoted_count": 3,
+    "official_source_review_july_count": 31,
+    "official_source_review_july_reviewed_count": 30,
+    "official_source_review_july_pending_count": 1,
+    "remaining_by_public_status": {
+      "expected_low": 2,
+      "date_unknown": 7,
+      "expected_medium": 23,
+      "expected_high": 4
+    }
+  },
+  "one_shot_promoted": [
+    {
+      "event_name": "みたままつり 納涼民踊のつどい",
+      "source_url": "https://www.yasukuni.or.jp/schedule/saiji.html#saiji03",
+      "reason": "靖国神社公式の祭事ページで、みたままつり 7月13日〜16日と期間中の盆踊りを確認。"
+    },
+    {
+      "event_name": "佐竹ゲバゲバ盆踊り",
+      "source_url": "https://satakeshotengai.com/satakeodori/",
+      "reason": "佐竹商店街公式サイトのサタケオドリ専用ページで、2026年7月18日開催と佐竹ゲバゲバ盆踊りの内容を確認。"
+    },
+    {
+      "event_name": "品川区民まつり 品川第二地区",
+      "source_url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
+      "reason": "品川区公式ページで、2026年7月25日〜26日の天妙国寺境内の盆踊りを確認。既存URLの source_kind を公式扱いへ補正。"
+    }
+  ],
+  "remaining_without_official_url": [
+    {
+      "name": "イベント名未確認（晴海ふ頭公園）",
+      "venue": "晴海ふ頭公園",
+      "area": "中央区",
+      "date": "2025-07-12",
+      "date_end": null,
+      "status": "確認済み",
+      "public_status": "expected_low",
+      "display_tier": "historical_reference",
+      "source_summary": "web:"
+    },
+    {
+      "name": "増上寺 地蔵尊盆踊り大会",
+      "venue": "増上寺（大殿前広場）",
+      "area": "港区",
+      "date": null,
+      "date_end": null,
+      "status": "未確認",
+      "public_status": "date_unknown",
+      "display_tier": "season_hint",
+      "source_summary": "web:"
+    },
+    {
+      "name": "赤坂浄土寺盆踊り大会",
+      "venue": "浄土寺",
+      "area": "港区",
+      "date": "2025-07-24",
+      "date_end": "2025-07-25",
+      "status": "確認済み",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "source_summary": "web:"
+    },
+    {
+      "name": "盆ダンスフェスティバル2023",
+      "venue": "白金児童遊園",
+      "area": "港区",
+      "date": null,
+      "date_end": null,
+      "status": "未確認",
+      "public_status": "date_unknown",
+      "display_tier": "season_hint",
+      "source_summary": "web:"
+    },
+    {
+      "name": "謝恩納涼盆踊り大会（青山善光寺）",
+      "venue": "青山善光寺",
+      "area": "港区",
+      "date": "2025-07-27",
+      "date_end": "2025-07-28",
+      "status": "確認済み",
+      "public_status": "expected_medium",
+      "display_tier": "rule_predicted",
+      "source_summary": "web:"
+    },
+    {
+      "name": "第51回 神楽坂まつり 盆踊り",
+      "venue": "りそな銀行神楽坂支店前",
+      "area": "新宿区",
+      "date": "2025-07-23",
+      "date_end": "2025-07-24",
+      "status": "確認済み",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "source_summary": "web:"
+    },
+    {
+      "name": "下落合四丁目町会 盆踊り大会",
+      "venue": "下落合公園",
+      "area": "新宿区",
+      "date": "2025-07-19",
+      "date_end": null,
+      "status": "確認済み",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "source_summary": "web:"
+    },
+    {
+      "name": "北新宿四丁目 盆踊り大会",
+      "venue": "北柏木公園",
+      "area": "新宿区",
+      "date": "2025-07-25",
+      "date_end": null,
+      "status": "確認済み",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "source_summary": "web:"
+    },
+    {
+      "name": "第25回 四谷納涼踊り大会",
+      "venue": "四谷ひろばグラウンド（旧四谷第四小学校）",
+      "area": "新宿区",
+      "date": "2025-07-19",
+      "date_end": null,
+      "status": "確認済み",
+      "public_status": "expected_high",
+      "display_tier": "historical_slide",
+      "source_summary": "web:"
+    },
+    {
+      "name": "下落合町会知久会 第9回盆踊り",
+      "venue": "清水川橋公園",
+      "area": "新宿区",
+      "date": "2025-07-19",
+      "date_end": null,
+      "status": "確認済み",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "source_summary": "web:"
+    },
+    {
+      "name": "鶴巻小学校 納涼盆踊り大会＆子ども祭り",
+      "venue": "鶴巻小学校",
+      "area": "新宿区",
+      "date": "2025-07-12",
+      "date_end": null,
+      "status": "確認済み",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "source_summary": "web:"
+    },
+    {
+      "name": "-両国- 江戸NOREN 妖怪BON DANCE",
+      "venue": "-両国-江戸NOREN",
+      "area": "墨田区",
+      "date": "2025-07-13",
+      "date_end": "2025-07-13",
+      "status": "確認済み",
+      "public_status": "expected_low",
+      "display_tier": "historical_reference",
+      "source_summary": "web:"
+    },
+    {
+      "name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "date": null,
+      "date_end": null,
+      "status": "未確認",
+      "public_status": "date_unknown",
+      "display_tier": "season_hint",
+      "source_summary": "web:"
+    },
+    {
+      "name": "森下二丁目盆踊り",
+      "venue": "森下公園",
+      "area": "江東区",
+      "date": null,
+      "date_end": null,
+      "status": "未確認",
+      "public_status": "date_unknown",
+      "display_tier": "season_hint",
+      "source_summary": "web:"
+    },
+    {
+      "name": "都の辰巳深川 臨海ぼんおどり",
+      "venue": "臨海小学校",
+      "area": "江東区",
+      "date": null,
+      "date_end": null,
+      "status": "未確認",
+      "public_status": "date_unknown",
+      "display_tier": "season_hint",
+      "source_summary": "web:"
+    },
+    {
+      "name": "品川第二地区 区民まつり・品川青年会 盆踊り大会（天妙国寺）",
+      "venue": "天妙国寺",
+      "area": "品川区",
+      "date": null,
+      "date_end": null,
+      "status": "未確認",
+      "public_status": "date_unknown",
+      "display_tier": "season_hint",
+      "source_summary": "web:"
+    },
+    {
+      "name": "品川区民まつり 大崎第一地区",
+      "venue": "第四日野小学校",
+      "area": "品川区",
+      "date": null,
+      "date_end": null,
+      "status": "未確認",
+      "public_status": "date_unknown",
+      "display_tier": "season_hint",
+      "source_summary": "web:"
+    },
+    {
+      "name": "地域のふれあい第37回盆踊り大会",
+      "venue": "JR目黒駅西口前",
+      "area": "目黒区",
+      "date": "2025-07-27",
+      "date_end": null,
+      "status": "確認済み",
+      "public_status": "expected_high",
+      "display_tier": "historical_slide",
+      "source_summary": "web:"
+    },
+    {
+      "name": "第90回 祐天寺み魂まつり こども盆踊り大会",
+      "venue": "祐天寺境内",
+      "area": "目黒区",
+      "date": "2025-07-16",
+      "date_end": null,
+      "status": "確認済み",
+      "public_status": "expected_high",
+      "display_tier": "historical_slide",
+      "source_summary": "web:"
+    },
+    {
+      "name": "自由が丘納涼盆踊り大会",
+      "venue": "自由が丘駅前ロータリー 特設会場",
+      "area": "目黒区",
+      "date": "2025-07-19",
+      "date_end": "2025-07-21",
+      "status": "確認済み",
+      "public_status": "expected_medium",
+      "display_tier": "rule_predicted",
+      "source_summary": "web:"
+    },
+    {
+      "name": "森ヶ崎自治会",
+      "venue": "大森南4丁目公園",
+      "area": "大田区",
+      "date": "2025-07-29",
+      "date_end": null,
+      "status": "確認済み",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "source_summary": "web:"
+    },
+    {
+      "name": "大森南一丁目自治会「納涼盆踊り大会」",
+      "venue": "大森南一丁目公園",
+      "area": "大田区",
+      "date": "2025-07-21",
+      "date_end": null,
+      "status": "確認済み",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "source_summary": "web:"
+    },
+    {
+      "name": "北糀谷町会 「納涼踊り大会」",
+      "venue": "子安八幡神社",
+      "area": "大田区",
+      "date": "2025-07-24",
+      "date_end": null,
+      "status": "確認済み",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "source_summary": "web:"
+    },
+    {
+      "name": "東糀谷四・五・六町会 納涼盆踊り大会",
+      "venue": "旭児童遊園",
+      "area": "大田区",
+      "date": "2025-07-18",
+      "date_end": null,
+      "status": "確認済み",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "source_summary": "web:"
+    },
+    {
+      "name": "堤方東町会「盆踊り大会」",
+      "venue": "池上第二小学校",
+      "area": "大田区",
+      "date": "2025-07-26",
+      "date_end": null,
+      "status": "確認済み",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "source_summary": "web:"
+    },
+    {
+      "name": "羽田青年連合会",
+      "venue": "羽田神社",
+      "area": "大田区",
+      "date": "2025-07-13",
+      "date_end": null,
+      "status": "確認済み",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "source_summary": "web:"
+    },
+    {
+      "name": "萩中町会・オーベルグランディオ萩中自治会・新宿東町会「盆踊り大会」",
+      "venue": "萩中神社",
+      "area": "大田区",
+      "date": "2025-07-11",
+      "date_end": null,
+      "status": "確認済み",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "source_summary": "web:"
+    },
+    {
+      "name": "西糀谷四丁目町会 盆踊り大会",
+      "venue": "西仲天祖神社",
+      "area": "大田区",
+      "date": "2025-07-21",
+      "date_end": null,
+      "status": "確認済み",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "source_summary": "web:"
+    },
+    {
+      "name": "西糀谷三丁目町会「納涼盆踊り大会」",
+      "venue": "西糀谷さざんか公園",
+      "area": "大田区",
+      "date": "2025-07-28",
+      "date_end": null,
+      "status": "確認済み",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "source_summary": "web:"
+    },
+    {
+      "name": "下代田東町会 「下代田東子供祭り・納涼祭り」",
+      "venue": "下代田児童遊園",
+      "area": "世田谷区",
+      "date": "2025-07-19",
+      "date_end": null,
+      "status": "確認済み",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "source_summary": "web:"
+    },
+    {
+      "name": "喜多見盆踊り大会",
+      "venue": "小田急線喜多見駅前 南口広場",
+      "area": "世田谷区",
+      "date": "2025-07-26",
+      "date_end": null,
+      "status": "確認済み",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "source_summary": "web:https://kitaminavi.com/topic/1337 ; web:"
+    },
+    {
+      "name": "大蔵東部町会「親子納涼盆踊り大会」",
+      "venue": "横根稲荷神社",
+      "area": "世田谷区",
+      "date": "2025-07-26",
+      "date_end": null,
+      "status": "確認済み",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "source_summary": ""
+    },
+    {
+      "name": "砧小学校「第38回砧っ子夏祭り」",
+      "venue": "砧小学校",
+      "area": "世田谷区",
+      "date": "2025-07-19",
+      "date_end": null,
+      "status": "確認済み",
+      "public_status": "expected_high",
+      "display_tier": "historical_slide",
+      "source_summary": ""
+    },
+    {
+      "name": "第70回 恵比寿駅前盆踊り大会",
+      "venue": "JR恵比寿駅西口広場",
+      "area": "渋谷区",
+      "date": "2025-07-25",
+      "date_end": "2025-07-26",
+      "status": "確認済み",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "source_summary": "web:"
+    },
+    {
+      "name": "第15回 鴨台盆踊り",
+      "venue": "大正大学",
+      "area": "豊島区",
+      "date": "2025-07-04",
+      "date_end": "2025-07-05",
+      "status": "確認済み",
+      "public_status": "expected_medium",
+      "display_tier": "rule_predicted",
+      "source_summary": "web:"
+    },
+    {
+      "name": "飛鳥山盆踊り",
+      "venue": "飛鳥山公園",
+      "area": "北区",
+      "date": "2025-07-05",
+      "date_end": null,
+      "status": "確認済み",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "source_summary": "web:"
+    }
+  ],
+  "official_source_review_july_reviewed": [
+    {
+      "id": "c20beb261994",
+      "event_name": "大蔵東部町会「親子納涼盆踊り大会」7月26日(土)午後6時30分-午後9時。",
+      "venue": "横根稲荷神社",
+      "region": "世田谷区",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/891/163gou_2.pdf",
+      "suggested_source_type": "official",
+      "console_decision": "hold"
+    },
+    {
+      "id": "cdd6484ee136",
+      "event_name": "砧小学校「第38回砧っ子夏祭り」7月19日(土)午後3時-7時30分。",
+      "venue": "砧小学校",
+      "region": "世田谷区",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/891/163gou_2.pdf",
+      "suggested_source_type": "official",
+      "console_decision": "hold"
+    },
+    {
+      "id": "092f102084cd",
+      "event_name": "築地本願寺納涼盆踊り大会",
+      "venue": "築地本願寺",
+      "region": "中央区",
+      "source_url": "https://tsukijihongwanji.jp/news/10279/",
+      "suggested_source_type": "hp",
+      "console_decision": "hold"
+    },
+    {
+      "id": "499c6be9369c",
+      "event_name": "北糀谷町会 「納涼踊り大会」 7月24日(木)-25日(金) 18:30-20:30。",
+      "venue": "子安八幡神社",
+      "region": "大田区",
+      "source_url": "https://drive.google.com/file/d/1_29ARyUGtOCqB53ppmXo-iOh6h6qaEjt/view?usp=drive_link",
+      "suggested_source_type": "hp",
+      "console_decision": "hold"
+    },
+    {
+      "id": "d28386f53de6",
+      "event_name": "堤方東町会「盆踊り大会」 7月26日(土) 16:30-20:00。",
+      "venue": "池上第二小学校",
+      "region": "大田区",
+      "source_url": "https://drive.google.com/file/d/1QLA-aZWCl2zvCga0v8d2rrA0or_ymCsK/view?usp=drive_link",
+      "suggested_source_type": "hp",
+      "console_decision": "hold"
+    },
+    {
+      "id": "3a5da0c97fa4",
+      "event_name": "大森南一丁目自治会「納涼盆踊り大会」7月21日(月)-22日(火) 18:30-20:00。",
+      "venue": "大森南一丁目公園",
+      "region": "大田区",
+      "source_url": "https://drive.google.com/file/d/1myPvLkT7V4xH36LLQsLTmsG9hG_d7wW0/view?usp=drive_link",
+      "suggested_source_type": "hp",
+      "console_decision": "hold"
+    },
+    {
+      "id": "2fea843caa2a",
+      "event_name": "東糀谷四・五・六町会 納涼盆踊り大会 7月18日(金)=19日(土) 18:30-20:30。",
+      "venue": "旭児童遊園",
+      "region": "大田区",
+      "source_url": "https://drive.google.com/file/d/15OgYsC2CUVPaXKMTyQdE0bLu3T6cDiR2/view?usp=drive_link",
+      "suggested_source_type": "hp",
+      "console_decision": "hold"
+    },
+    {
+      "id": "18898c63067e",
+      "event_name": "森ヶ崎自治会",
+      "venue": "大森南4丁目公園",
+      "region": "大田区",
+      "source_url": "https://drive.google.com/file/d/1zfAfkreIrAhHrnh_cvQA7XUsdtmHc7ON/view?usp=drive_link",
+      "suggested_source_type": "hp",
+      "console_decision": "hold"
+    },
+    {
+      "id": "2c9777a5ba4a",
+      "event_name": "羽田青年連合会",
+      "venue": "羽田神社",
+      "region": "大田区",
+      "source_url": "https://drive.google.com/file/d/1jbWa9OuIOch3NHPhA6kgCjeF1M2qWnFo/view?usp=drive_link",
+      "suggested_source_type": "hp",
+      "console_decision": "hold"
+    },
+    {
+      "id": "25222af41849",
+      "event_name": "西糀谷三丁目町会「納涼盆踊り大会」7月28日(月)-29日(火) 19:00-20:30。",
+      "venue": "西糀谷さざんか公園",
+      "region": "大田区",
+      "source_url": "https://drive.google.com/file/d/1mgZ822XFIhVTZHFdbqeiYw3NYsIWeeZ-/view?usp=drive_link",
+      "suggested_source_type": "hp",
+      "console_decision": "hold"
+    },
+    {
+      "id": "ad5c34b4cc8b",
+      "event_name": "西糀谷四丁目町会 盆踊り大会 7月21日(月祝)-22日(火) 19時ｰ21時。",
+      "venue": "西仲天祖神社",
+      "region": "大田区",
+      "source_url": "https://drive.google.com/file/d/1t0wrwk_Netwu2VmGvRy61Is78zuB5HoC/view?usp=drive_link",
+      "suggested_source_type": "hp",
+      "console_decision": "hold"
+    },
+    {
+      "id": "9f63ad66102a",
+      "event_name": "下代田東町会 「下代田東子供祭り・納涼祭り』 7月19日(土)-20日(日) 16時-21時。",
+      "venue": "下代田児童遊園",
+      "region": "世田谷区",
+      "source_url": "https://www.facebook.com/photo/?fbid=1021395170206703&set=a.384324273913799&locale=ja_JP",
+      "suggested_source_type": "post",
+      "console_decision": "post"
+    },
+    {
+      "id": "35fb7625b2f7",
+      "event_name": "「希望ヶ丘団地夏まつり」 7月19日(土)-20日(日)。",
+      "venue": "希望ヶ丘団地 テニスコート",
+      "region": "世田谷区",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+      "suggested_source_type": "official",
+      "console_decision": "official"
+    },
+    {
+      "id": "7659d59d7f3d",
+      "event_name": "千歳台廻沢地区盆踊り 7月19日(土)-20日(日)。",
+      "venue": "廻沢稲荷神社",
+      "region": "世田谷区",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+      "suggested_source_type": "official",
+      "console_decision": "official"
+    },
+    {
+      "id": "7f1dac66264f",
+      "event_name": "大蔵本村睦会 ｢盆踊り大会｣ 7月20日(日)午後7時-(午後6時-子ども盆踊り)",
+      "venue": "大蔵氷川神社",
+      "region": "世田谷区",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+      "suggested_source_type": "official",
+      "console_decision": "official"
+    },
+    {
+      "id": "bdf993e2c4b1",
+      "event_name": "奥沢交和会",
+      "venue": "奥沢小学校",
+      "region": "世田谷区",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+      "suggested_source_type": "official",
+      "console_decision": "official"
+    },
+    {
+      "id": "d91230151802",
+      "event_name": "宇奈根町会 盆踊り大会 7月19日(土)-20日(日)。",
+      "venue": "宇奈根氷川神社",
+      "region": "世田谷区",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/10549/minikomisinogawa110gou.pdf",
+      "suggested_source_type": "official",
+      "console_decision": "official"
+    },
+    {
+      "id": "e6b8c54be70c",
+      "event_name": "玉川町会盆おどり大会 7月25日(金)、26日(土)",
+      "venue": "二子玉川西地区ふれあい広場(246高架下)",
+      "region": "世田谷区",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+      "suggested_source_type": "official",
+      "console_decision": "official"
+    },
+    {
+      "id": "e4bc56270a5c",
+      "event_name": "砧町町会「納涼夏祭り大会」 7月19日(土)-20日(日)。",
+      "venue": "三峰公園",
+      "region": "世田谷区",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+      "suggested_source_type": "official",
+      "console_decision": "official"
+    },
+    {
+      "id": "149abdcdd659",
+      "event_name": "祖師谷商店街振興組合",
+      "venue": "小田急線祖師ヶ谷大蔵駅前広場",
+      "region": "世田谷区",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/889/minikomishi168.pdf",
+      "suggested_source_type": "official",
+      "console_decision": "official"
+    },
+    {
+      "id": "7b253e99beb0",
+      "event_name": "祖師谷昇進会商店街(振)盆踊り 7月18日(金)-19日(土)。",
+      "venue": "祖師谷神明社",
+      "region": "世田谷区",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/889/minikomishi168.pdf",
+      "suggested_source_type": "official",
+      "console_decision": "official"
+    },
+    {
+      "id": "9fa33575eaf5",
+      "event_name": "納涼盆踊り大会 7月19日(土)-20日(日)。",
+      "venue": "玉川中町公園",
+      "region": "世田谷区",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+      "suggested_source_type": "official",
+      "console_decision": "official"
+    },
+    {
+      "id": "b6ab11a85a99",
+      "event_name": "芦花公園商店街振興組合 「芦花公園駅前盆踊り大会」 7月25日(金) 17:00-。",
+      "venue": "京王線芦花公園駅前ロータリー(南口)",
+      "region": "世田谷区",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+      "suggested_source_type": "official",
+      "console_decision": "official"
+    },
+    {
+      "id": "77ca2c415d5b",
+      "event_name": "親子盆踊り大会 7月12日(土) 17:00-19:20。",
+      "venue": "八幡小学校",
+      "region": "世田谷区",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+      "suggested_source_type": "official",
+      "console_decision": "official"
+    },
+    {
+      "id": "b4454a240757",
+      "event_name": "野毛町会 納涼盆踊り大会 7月26日(土)-27日(日)",
+      "venue": "野毛六所神社",
+      "region": "世田谷区",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+      "suggested_source_type": "official",
+      "console_decision": "official"
+    },
+    {
+      "id": "e07ad095f3aa",
+      "event_name": "鎌田協和会 鎌田納涼盆踊り 7月26日(土) 18:30-。",
+      "venue": "鎌田天神社",
+      "region": "世田谷区",
+      "source_url": "https://www.city.setagaya.lg.jp/documents/10549/minikomisinogawa110gou.pdf",
+      "suggested_source_type": "official",
+      "console_decision": "official"
+    },
+    {
+      "id": "71929872bc9f",
+      "event_name": "丸の内de盆踊り",
+      "venue": "行幸通り",
+      "region": "千代田区",
+      "source_url": "https://www.marunouchi.com/pickup/event/6763/",
+      "suggested_source_type": "official",
+      "console_decision": "official"
+    },
+    {
+      "id": "12a9e411c8cf",
+      "event_name": "「喜多見盆踊り大会」 7月26日(土)-27日(日)。",
+      "venue": "小田急線喜多見駅前 南口広場",
+      "region": "世田谷区",
+      "source_url": "https://kitaminavi.com/topic/1337",
+      "suggested_source_type": "hp",
+      "console_decision": "hp"
+    },
+    {
+      "id": "bd6488e2627c",
+      "event_name": "「成城学園 盆踊り大会」 7月26日(土) 17:30-20:00。",
+      "venue": "成城大学9号館前広場",
+      "region": "世田谷区",
+      "source_url": "https://www.seijogakuen.ed.jp/news/2025/event0726.html",
+      "suggested_source_type": "hp",
+      "console_decision": "official"
+    },
+    {
+      "id": "3ed88515efa0",
+      "event_name": "世田谷駅前商店街振興組合「納涼盆踊り大会 」",
+      "venue": "円光院駐車場",
+      "region": "世田谷区",
+      "source_url": "https://setagaya-station.com/news/event/event-info2025/",
+      "suggested_source_type": "hp",
+      "console_decision": "official"
+    }
+  ],
+  "official_source_review_july_pending": [
+    {
+      "id": "5c3503918c01",
+      "event_name": "Jiyugaoka Bon Odori Dance festival / 自由が丘盆踊り 2025",
+      "venue": "",
+      "region": "",
+      "source_url": "https://www.jiyugaoka-abc.com/event/2025/bonodori/",
+      "suggested_source_type": "hp",
+      "console_decision": "pending"
+    }
+  ]
+}
