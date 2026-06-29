@@ -1,0 +1,453 @@
+{
+  "generated_by": "build_official_social_source_review.py",
+  "generated_at": "2026-06-29T11:17:29+00:00",
+  "input": {
+    "rare_signal_generated_at": "2026-06-29T11:15:35+00:00"
+  },
+  "summary": {
+    "candidate_account_count": 18,
+    "classification_counts": {
+      "community_source_candidate": 18
+    }
+  },
+  "policy": {
+    "does_not_register": true,
+    "registered_accounts_live_in": "data/x_official_source_accounts.json",
+    "review_rule": "Register only accounts whose profile/name clearly represents the organizer, municipality, venue, shrine, temple, town association, or shopping district."
+  },
+  "accounts": [
+    {
+      "review_status": "pending",
+      "recommendation": "watch_or_register_after_more_evidence",
+      "handle": "@bondbont",
+      "account_name": "みぽぽみぽ",
+      "classification": "community_source_candidate",
+      "score": 3,
+      "reasons": [
+        "schedule_post_with_bon_context",
+        "area_or_name_overlap"
+      ],
+      "candidate_id": "xoto_b64bd73f4bff1e0e",
+      "source_urls": [
+        "https://x.com/bonDbonT/status/2069997773102182619"
+      ],
+      "event_name": "福井フェニックスまつり 民踊大会",
+      "venue": "",
+      "area": "",
+      "date_text": "7月31日から",
+      "summary": "福井フェニックスまつりのメイン行事として民踊大会が含まれる日程情報。盆踊り単独ではないが、民踊大会枠として候補化し裏どりする。",
+      "related_candidates": [
+        "xoto_b64bd73f4bff1e0e"
+      ]
+    },
+    {
+      "review_status": "pending",
+      "recommendation": "watch_or_register_after_more_evidence",
+      "handle": "@bot87bi",
+      "account_name": "花火に行こう🎆花火大会更新履歴bot",
+      "classification": "community_source_candidate",
+      "score": 3,
+      "reasons": [
+        "schedule_post_with_bon_context",
+        "area_or_name_overlap"
+      ],
+      "candidate_id": "xoto_c95d1084337b69cb",
+      "source_urls": [
+        "https://x.com/Bot87bi/status/2069777822152008170"
+      ],
+      "event_name": "仏向町睦ヶ丘自治会 盆踊り・花火大会",
+      "venue": "",
+      "area": "神奈川県横浜市",
+      "date_text": "2026年8月1日",
+      "summary": "仏向町睦ヶ丘自治会の盆踊り・花火大会情報。自治会単位の小規模開催で、既存DBにない可能性が高いため新規候補にする。",
+      "related_candidates": [
+        "xoto_c95d1084337b69cb"
+      ]
+    },
+    {
+      "review_status": "pending",
+      "recommendation": "watch_or_register_after_more_evidence",
+      "handle": "@cffc381",
+      "account_name": "あのユウチャン",
+      "classification": "community_source_candidate",
+      "score": 3,
+      "reasons": [
+        "schedule_post_with_bon_context",
+        "area_or_name_overlap"
+      ],
+      "candidate_id": "xoto_13c556875bf58275",
+      "source_urls": [
+        "https://x.com/cffc381/status/2070026979529970022"
+      ],
+      "event_name": "盆ジョヴィ」発祥の地である中野駅前の盆踊り",
+      "venue": "",
+      "area": "",
+      "date_text": "2026年8月1日; 8月2日",
+      "summary": "中野駅前大盆踊り大会の2026年8月1日・2日開催情報と盆ジョヴィ文脈。既存イベントに一致するため、日程・話題性の証拠追加候補にする。",
+      "related_candidates": [
+        "xoto_13c556875bf58275"
+      ]
+    },
+    {
+      "review_status": "pending",
+      "recommendation": "watch_or_register_after_more_evidence",
+      "handle": "@dk_bon_odori",
+      "account_name": "第52回ダイキン淀川盆踊り大会",
+      "classification": "community_source_candidate",
+      "score": 3,
+      "reasons": [
+        "schedule_post_with_bon_context",
+        "area_or_name_overlap"
+      ],
+      "candidate_id": "xoto_ef631aa9a36cb5e1",
+      "source_urls": [
+        "https://x.com/DK_bon_odori/status/2069951963379499128"
+      ],
+      "event_name": "ダイキン淀川盆踊り大会",
+      "venue": "",
+      "area": "",
+      "date_text": "2026年8月21日",
+      "summary": "第52回ダイキン淀川盆踊り大会の2026年8月21日開催告知。企業主催の大規模盆踊りとして新規または日程更新候補にする。",
+      "related_candidates": [
+        "xoto_ef631aa9a36cb5e1"
+      ]
+    },
+    {
+      "review_status": "pending",
+      "recommendation": "watch_or_register_after_more_evidence",
+      "handle": "@dubly_ut",
+      "account_name": "東大Dubly（ダブリー）【東大生向け情報メディア】",
+      "classification": "community_source_candidate",
+      "score": 3,
+      "reasons": [
+        "schedule_post_with_bon_context",
+        "area_or_name_overlap"
+      ],
+      "candidate_id": "xoto_34ed320866f31b1c",
+      "source_urls": [
+        "https://x.com/dubly_ut/status/2069998631827161566"
+      ],
+      "event_name": "盆踊り&七夕交流会",
+      "venue": "",
+      "area": "",
+      "date_text": "7月3日",
+      "summary": "グローバル教育センター駒場支部による『盆踊り&七夕交流会』の告知。国際交流と文化体験を目的にした小規模イベント候補として裏どりする。",
+      "related_candidates": [
+        "xoto_34ed320866f31b1c"
+      ]
+    },
+    {
+      "review_status": "pending",
+      "recommendation": "watch_or_register_after_more_evidence",
+      "handle": "@event_checker",
+      "account_name": "イベントチェッカー製作委員会",
+      "classification": "community_source_candidate",
+      "score": 3,
+      "reasons": [
+        "schedule_post_with_bon_context",
+        "area_or_name_overlap"
+      ],
+      "candidate_id": "xoto_3c83301cc72eb8a9",
+      "source_urls": [
+        "https://x.com/event_checker/status/2069910984353775763"
+      ],
+      "event_name": "本場の盆踊り",
+      "venue": "",
+      "area": "",
+      "date_text": "6/26",
+      "summary": "郡上おどり in 青山の開催告知。既存イベントに一致するため、新規ではなく2026年開催・物産展ありの証拠追加候補にする。",
+      "related_candidates": [
+        "xoto_3c83301cc72eb8a9"
+      ]
+    },
+    {
+      "review_status": "pending",
+      "recommendation": "watch_or_register_after_more_evidence",
+      "handle": "@fukagawa_net",
+      "account_name": "深川ねっと",
+      "classification": "community_source_candidate",
+      "score": 3,
+      "reasons": [
+        "schedule_post_with_bon_context",
+        "area_or_name_overlap"
+      ],
+      "candidate_id": "xoto_cfb61d9ee34ad282",
+      "source_urls": [
+        "https://x.com/fukagawa_net/status/2070004045776093613"
+      ],
+      "event_name": "晴海ふ頭公園盆踊り大会",
+      "venue": "晴海ふ頭公園",
+      "area": "中央区",
+      "date_text": "",
+      "summary": "晴海ふ頭公園盆踊り大会2026の開催を伝える地域媒体情報。既存会場には一致するがイベントとして未登録の可能性があり、新規候補として裏どりする。",
+      "related_candidates": [
+        "xoto_cfb61d9ee34ad282"
+      ]
+    },
+    {
+      "review_status": "pending",
+      "recommendation": "watch_or_register_after_more_evidence",
+      "handle": "@kaiou2",
+      "account_name": "柏の葉サイクルライフ",
+      "classification": "community_source_candidate",
+      "score": 3,
+      "reasons": [
+        "schedule_post_with_bon_context",
+        "area_or_name_overlap"
+      ],
+      "candidate_id": "xoto_7885379e954721a3",
+      "source_urls": [
+        "https://x.com/kaiou2/status/2070021121450348887"
+      ],
+      "event_name": "かしわ縁日＋盆踊り",
+      "venue": "イオンモール柏",
+      "area": "",
+      "date_text": "7月19日",
+      "summary": "イオンモール柏で『かしわ縁日＋盆踊り』が7月19日に開催される地域イベント情報。既存DBにない可能性があり、新規候補として裏どりする。",
+      "related_candidates": [
+        "xoto_7885379e954721a3"
+      ]
+    },
+    {
+      "review_status": "pending",
+      "recommendation": "watch_or_register_after_more_evidence",
+      "handle": "@machi_hokusetsu",
+      "account_name": "【公式】まちっと北摂",
+      "classification": "community_source_candidate",
+      "score": 3,
+      "reasons": [
+        "schedule_post_with_bon_context",
+        "area_or_name_overlap"
+      ],
+      "candidate_id": "xoto_cf10df658317bc20",
+      "source_urls": [
+        "https://x.com/machi_hokusetsu/status/2070077090872119431"
+      ],
+      "event_name": "大阪大学夏まつり 盆踊り",
+      "venue": "大阪大学箕面キャンパス",
+      "area": "",
+      "date_text": "6月27日",
+      "summary": "大阪大学夏まつり内で盆踊りが実施予定という地域ニュース。独立イベントではなく祭り内プログラムの可能性があるため、複合イベント内の盆踊り候補として裏どりする。",
+      "related_candidates": [
+        "xoto_cf10df658317bc20"
+      ]
+    },
+    {
+      "review_status": "pending",
+      "recommendation": "watch_or_register_after_more_evidence",
+      "handle": "@mogupick_x",
+      "account_name": "Mogupick",
+      "classification": "community_source_candidate",
+      "score": 3,
+      "reasons": [
+        "schedule_post_with_bon_context",
+        "area_or_name_overlap"
+      ],
+      "candidate_id": "xoto_3990c3a0340541df",
+      "source_urls": [
+        "https://x.com/Mogupick_x/status/2069969516269027763"
+      ],
+      "event_name": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り",
+      "venue": "東京都 台東区 上野恩賜公園 竹の台広場",
+      "area": "台東区",
+      "date_text": "2026-07-03",
+      "summary": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in 上野の開催日・会場詳細。既存イベントと一致するため、上野恩賜公園竹の台広場の会場情報と日程証拠として扱う。",
+      "related_candidates": [
+        "xoto_3990c3a0340541df"
+      ]
+    },
+    {
+      "review_status": "pending",
+      "recommendation": "watch_or_register_after_more_evidence",
+      "handle": "@natsutr_bon",
+      "account_name": "奈津大郎〘ナツタロ〙",
+      "classification": "community_source_candidate",
+      "score": 3,
+      "reasons": [
+        "schedule_post_with_bon_context",
+        "area_or_name_overlap"
+      ],
+      "candidate_id": "xoto_431c1269a15c404b",
+      "source_urls": [
+        "https://x.com/natsutr_bon/status/2069978561319243964"
+      ],
+      "event_name": "居酒屋盆踊り",
+      "venue": "",
+      "area": "",
+      "date_text": "6/24",
+      "summary": "三角広場の居酒屋盆踊りに関する現場レポ。J-POP中心、八木節の当て振りなど曲・雰囲気の実績証拠として既存イベントに追加候補。",
+      "related_candidates": [
+        "xoto_431c1269a15c404b",
+        "xoto_4e508ae9a78d2729"
+      ]
+    },
+    {
+      "review_status": "pending",
+      "recommendation": "watch_or_register_after_more_evidence",
+      "handle": "@pia_kansai",
+      "account_name": "ぴあ関西版WEB",
+      "classification": "community_source_candidate",
+      "score": 3,
+      "reasons": [
+        "schedule_post_with_bon_context",
+        "area_or_name_overlap"
+      ],
+      "candidate_id": "xoto_1d106b7228c1cd0b",
+      "source_urls": [
+        "https://x.com/pia_kansai/status/2069979060089036824"
+      ],
+      "event_name": "おジャ魔女どれみ 星見やぐら盆踊りカーニバル",
+      "venue": "東映太秦映画村",
+      "area": "",
+      "date_text": "8月1日",
+      "summary": "東映太秦映画村で『おジャ魔女どれみ 星見やぐら盆踊りカーニバル』が1日限定開催される告知。アニメIPと盆踊りの企画型イベントとして新規候補にする。",
+      "related_candidates": [
+        "xoto_1d106b7228c1cd0b"
+      ]
+    },
+    {
+      "review_status": "pending",
+      "recommendation": "watch_or_register_after_more_evidence",
+      "handle": "@sankakuhiroba",
+      "account_name": "新宿住友ビル三角広場",
+      "classification": "community_source_candidate",
+      "score": 3,
+      "reasons": [
+        "schedule_post_with_bon_context",
+        "area_or_name_overlap"
+      ],
+      "candidate_id": "xoto_6b68e28e63dc9cbe",
+      "source_urls": [
+        "https://x.com/sankakuhiroba/status/2070046845678809389"
+      ],
+      "event_name": "三角広場まつり 居酒屋盆踊り",
+      "venue": "",
+      "area": "",
+      "date_text": "17:30",
+      "summary": "三角広場まつり「居酒屋盆踊り」の当日開催告知。既存イベントへの開催実績・当日告知証拠として追加候補にする。",
+      "related_candidates": [
+        "xoto_6b68e28e63dc9cbe"
+      ]
+    },
+    {
+      "review_status": "pending",
+      "recommendation": "watch_or_register_after_more_evidence",
+      "handle": "@sekabon298",
+      "account_name": "7/25(土)開催🏮世界のつくばで盆おどり2026🏮",
+      "classification": "community_source_candidate",
+      "score": 3,
+      "reasons": [
+        "schedule_post_with_bon_context",
+        "area_or_name_overlap"
+      ],
+      "candidate_id": "xoto_1d9c7cd4d9e1929f",
+      "source_urls": [
+        "https://x.com/sekabon298/status/2069978861325136165"
+      ],
+      "event_name": "世界のつくばで盆おどり",
+      "venue": "",
+      "area": "",
+      "date_text": "7月25日",
+      "summary": "『世界のつくばで盆おどり』本番に向けた会場飾りワークショップ告知。イベント本体の日付が読めるため、新規イベント候補として裏どりする。",
+      "related_candidates": [
+        "xoto_1d9c7cd4d9e1929f"
+      ]
+    },
+    {
+      "review_status": "pending",
+      "recommendation": "watch_or_register_after_more_evidence",
+      "handle": "@tonbori_wolfen",
+      "account_name": "がちキャラ・ウルフェン(Wolfen)🌎",
+      "classification": "community_source_candidate",
+      "score": 3,
+      "reasons": [
+        "schedule_post_with_bon_context",
+        "area_or_name_overlap"
+      ],
+      "candidate_id": "xoto_7f6cb8e1a1b790a9",
+      "source_urls": [
+        "https://x.com/tonbori_wolfen/status/2070033377542197676"
+      ],
+      "event_name": "なんば盆踊り大会",
+      "venue": "",
+      "area": "",
+      "date_text": "8月31日",
+      "summary": "なんば盆踊り大会の3周年開催を示す投稿。公式性は未確認だが、イベント名と日付が読み取れるため新規候補として裏どりする。",
+      "related_candidates": [
+        "xoto_7f6cb8e1a1b790a9"
+      ]
+    },
+    {
+      "review_status": "pending",
+      "recommendation": "watch_or_register_after_more_evidence",
+      "handle": "@value_press",
+      "account_name": "valuepress(バリュープレス)",
+      "classification": "community_source_candidate",
+      "score": 3,
+      "reasons": [
+        "schedule_post_with_bon_context",
+        "area_or_name_overlap"
+      ],
+      "candidate_id": "xoto_25c01a49779b71a6",
+      "source_urls": [
+        "https://x.com/value_press/status/2070069783794753685"
+      ],
+      "event_name": "新小岩納涼盆踊り大会",
+      "venue": "",
+      "area": "葛飾区",
+      "date_text": "2026年7月25日〜7月26日",
+      "summary": "新小岩納涼盆踊り大会2026の7月25日・26日開催告知。地域イベントとして新規または日程更新候補にする。",
+      "related_candidates": [
+        "xoto_25c01a49779b71a6"
+      ]
+    },
+    {
+      "review_status": "pending",
+      "recommendation": "watch_or_register_after_more_evidence",
+      "handle": "@yamabon_zaimoku",
+      "account_name": "おやまの盆踊り祭（やまぼん）",
+      "classification": "community_source_candidate",
+      "score": 3,
+      "reasons": [
+        "schedule_post_with_bon_context",
+        "area_or_name_overlap"
+      ],
+      "candidate_id": "xoto_c9b5ddc232c2fb62",
+      "source_urls": [
+        "https://x.com/yamabon_zaimoku/status/2069961807092121722"
+      ],
+      "event_name": "おやまの盆踊り祭（やまぼん）",
+      "venue": "",
+      "area": "",
+      "date_text": "7月20日",
+      "summary": "鎌倉の『おやまの盆踊り祭（やまぼん）』と盆踊りバンド『盆神』の新聞掲載情報。地域色の強い新規イベント候補として裏どりする。",
+      "related_candidates": [
+        "xoto_c9b5ddc232c2fb62"
+      ]
+    },
+    {
+      "review_status": "pending",
+      "recommendation": "watch_or_register_after_more_evidence",
+      "handle": "@yupi_wgb37",
+      "account_name": "ゆいね",
+      "classification": "community_source_candidate",
+      "score": 3,
+      "reasons": [
+        "schedule_post_with_bon_context",
+        "area_or_name_overlap"
+      ],
+      "candidate_id": "xoto_b8e2ddd8117c2c6e",
+      "source_urls": [
+        "https://x.com/yupi_wgb37/status/2070022353900445862"
+      ],
+      "event_name": "武将隊盆踊り大会",
+      "venue": "",
+      "area": "",
+      "date_text": "",
+      "summary": "名古屋おもてなし武将隊に関連する武将隊盆踊り大会の2026年開催決定・クラウドファンディング情報。既存DBにない可能性が高く、新規イベント候補として裏どりする。",
+      "related_candidates": [
+        "xoto_b8e2ddd8117c2c6e"
+      ]
+    }
+  ]
+}
