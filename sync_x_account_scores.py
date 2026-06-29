@@ -5,9 +5,11 @@ This is a stable entrypoint for local runs. It replaces ad-hoc
 `python3 -c ...` one-liners so Codex approval can be scoped to this file.
 """
 
+import argparse
 import os
-import sys
 from pathlib import Path
+
+from manual_apply_guards import LEGACY_NOTION_REPAIR_CONFIRMATION, require_confirmation
 
 
 def load_dotenv(path=".env"):
@@ -23,15 +25,29 @@ def load_dotenv(path=".env"):
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--confirm", default="")
+    args = parser.parse_args()
+
     load_dotenv()
 
     import collect
 
     cfg = collect._load_x_config() or {}
     accounts = collect.load_whitelist_accounts()
-    if "--dry-run" in sys.argv:
+    if args.dry_run:
         print(f"accounts={len(accounts)}")
         return 0
+    try:
+        require_confirmation(
+            True,
+            args.confirm,
+            LEGACY_NOTION_REPAIR_CONFIRMATION,
+            "legacy X account score sync",
+        )
+    except ValueError as exc:
+        parser.error(str(exc))
     collect._sync_x_account_scores_to_notion(accounts, cfg)
     print(f"accounts={len(accounts)}")
     return 0

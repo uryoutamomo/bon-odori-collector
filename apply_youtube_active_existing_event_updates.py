@@ -9,6 +9,7 @@ from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
+from manual_apply_guards import LEGACY_YOUTUBE_NOTION_CONFIRMATION, require_confirmation
 from notion_api import NotionApi, plain_text
 from notion_config import load_local_env
 
@@ -259,7 +260,17 @@ def main():
     parser.add_argument("--markdown-out", type=Path, default=MARKDOWN_OUT)
     parser.add_argument("--event-name", help="Only apply rows for this exact event name.")
     parser.add_argument("--apply", action="store_true")
+    parser.add_argument("--confirm", default="")
     args = parser.parse_args()
+    try:
+        require_confirmation(
+            args.apply,
+            args.confirm,
+            LEGACY_YOUTUBE_NOTION_CONFIRMATION,
+            "legacy YouTube active existing-event Notion update",
+        )
+    except ValueError as exc:
+        parser.error(str(exc))
 
     load_local_env()
     api = NotionApi(os.environ.get("NOTION_API_TOKEN"))

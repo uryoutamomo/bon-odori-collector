@@ -8,6 +8,7 @@ import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
+from manual_apply_guards import NOTION_WORKLOG_MAINTENANCE_CONFIRMATION, require_confirmation
 from notion_config import load_local_env
 
 
@@ -152,10 +153,20 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--parent-page-id", default=DEFAULT_PARENT_PAGE_ID)
     parser.add_argument("--out", default=str(OUT))
+    parser.add_argument("--confirm", default="")
     args = parser.parse_args()
 
     if not NOTION_TOKEN:
         raise SystemExit("NOTION_API_TOKEN is not set")
+    try:
+        require_confirmation(
+            True,
+            args.confirm,
+            NOTION_WORKLOG_MAINTENANCE_CONFIRMATION,
+            "current work Notion index creation",
+        )
+    except ValueError as exc:
+        parser.error(str(exc))
     parent = notion_request("GET", f"/pages/{args.parent_page_id}")
     parent_title = plain_title(parent)
     title = "今やっていること"

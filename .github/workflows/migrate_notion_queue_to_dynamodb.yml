@@ -15,6 +15,11 @@ on:
         description: "Legacy migration cutoff; only Notion rows created before this timestamp are considered"
         required: true
         default: "2026-06-07T00:00:00+09:00"
+      confirm:
+        description: "Type MIGRATE NOTION QUEUE TO DYNAMODB when apply=true"
+        required: false
+        default: ""
+        type: string
 
 jobs:
   migrate:
@@ -41,6 +46,23 @@ jobs:
           role-to-assume: ${{ vars.AWS_ROLE_ARN }}
           aws-region: ap-northeast-1
 
+      - name: Validate migration confirmation
+        env:
+          APPLY: ${{ inputs.apply }}
+          CONFIRMATION: ${{ inputs.confirm }}
+        run: |
+          set -euo pipefail
+          if [ "$APPLY" != "true" ]; then
+            echo "Dry-run mode; no confirmation required."
+            exit 0
+          fi
+          expected="MIGRATE NOTION QUEUE TO DYNAMODB"
+          if [ "$CONFIRMATION" != "$expected" ]; then
+            echo "This legacy one-off workflow writes Notion queue rows into DynamoDB."
+            echo "Re-run with confirm='$expected'."
+            exit 1
+          fi
+
       - name: Migrate legacy Notion queue rows
         env:
           NOTION_API_TOKEN: ${{ secrets.NOTION_API_TOKEN }}
@@ -48,7 +70,7 @@ jobs:
           DYNAMODB_QUEUE_TABLE: ${{ vars.DYNAMODB_QUEUE_TABLE }}
         run: |
           if [ "${{ inputs.apply }}" = "true" ]; then
-            python migrate_notion_queue_to_dynamodb.py --cutoff "${{ inputs.cutoff }}" --apply
+            python migrate_notion_queue_to_dynamodb.py --cutoff "${{ inputs.cutoff }}" --apply --confirm "${{ inputs.confirm }}"
           else
             python migrate_notion_queue_to_dynamodb.py --cutoff "${{ inputs.cutoff }}"
           fi

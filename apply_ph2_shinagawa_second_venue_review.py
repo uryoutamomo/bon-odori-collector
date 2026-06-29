@@ -13,6 +13,7 @@ import sqlite3
 from datetime import datetime, timezone
 from pathlib import Path
 
+from manual_apply_guards import MASTER_RDB_ONE_OFF_CONFIRMATION, require_confirmation
 from master_db import (
     MASTER_DB,
     MASTER_MANIFEST,
@@ -174,7 +175,17 @@ def main():
     parser.add_argument("--out-json", type=Path, default=OUT_JSON)
     parser.add_argument("--out-md", type=Path, default=OUT_MD)
     parser.add_argument("--apply", action="store_true")
+    parser.add_argument("--confirm", default="")
     args = parser.parse_args()
+    try:
+        require_confirmation(
+            args.apply,
+            args.confirm,
+            MASTER_RDB_ONE_OFF_CONFIRMATION,
+            "Ph2 Shinagawa second venue Master RDB update",
+        )
+    except ValueError as exc:
+        parser.error(str(exc))
     result = run(args)
     print(
         "ph2 shinagawa second venue review: "

@@ -14,11 +14,13 @@ from pathlib import Path
 
 from notion_api import NotionApi, plain_text
 from notion_config import EVENT_DATA_SOURCE_ID, load_local_env
+from manual_apply_guards import require_confirmation
 
 
 RULES = Path("data/public_fixed_date_rules.json")
 OUT_JSON = Path("data/fixed_date_rule_notion_sync_plan.json")
 OUT_MD = Path("data/fixed_date_rule_notion_sync_plan.md")
+CONFIRM_PHRASE = "APPLY FIXED DATE RULES TO NOTION"
 
 FIXED_DATE_SCHEMA = {
     "固定日開始月": {"number": {}},
@@ -242,8 +244,13 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--rules", default=str(RULES))
     parser.add_argument("--apply", action="store_true")
+    parser.add_argument("--confirm", default="")
     parser.add_argument("--ensure-schema", action="store_true")
     args = parser.parse_args()
+    try:
+        require_confirmation(args.apply, args.confirm, CONFIRM_PHRASE, "fixed-date Notion sync")
+    except ValueError as exc:
+        parser.error(str(exc))
 
     api = NotionApi(os.environ.get("NOTION_API_TOKEN"))
     rules = load_json(args.rules, {}).get("rules") or []

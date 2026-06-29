@@ -5,6 +5,7 @@ import re
 from datetime import date
 from pathlib import Path
 
+from manual_apply_guards import require_confirmation
 from notion_api import NotionApi, date_value, plain_text
 from notion_config import EVENT_DATA_SOURCE_ID, VENUE_DATA_SOURCE_ID
 
@@ -14,6 +15,7 @@ BLOG_ROWS = Path("data/blog_venue_rows.json")
 OUT = Path("data/event_date_update_candidates.json")
 TODAY = date(2026, 6, 10)
 TARGET_YEAR = 2026
+CONFIRM_PHRASE = "APPLY EVENT DATES TO NOTION"
 
 EVENT_WORDS = (
     "盆踊り", "盆おどり", "盆踊", "納涼", "夏祭り", "まつり", "祭り", "音頭", "輪踊り",
@@ -412,11 +414,16 @@ def filter_candidates(candidates, event_name=None, event_id=None):
 def main():
     parser = argparse.ArgumentParser(description="Promote confirmed event dates from local X/voice evidence.")
     parser.add_argument("--apply", action="store_true", help="Update Notion for high-confidence candidates.")
+    parser.add_argument("--confirm", default="")
     parser.add_argument("--min-score", type=int, default=18, help="Minimum score for --apply.")
     parser.add_argument("--target-year", type=int, default=TARGET_YEAR)
     parser.add_argument("--event-name", help="Only show/apply candidates for this exact event name.")
     parser.add_argument("--event-id", help="Only show/apply candidates for this exact Notion page id.")
     args = parser.parse_args()
+    try:
+        require_confirmation(args.apply, args.confirm, CONFIRM_PHRASE, "event-date Notion promotion")
+    except ValueError as exc:
+        parser.error(str(exc))
 
     api = NotionApi(os.environ.get("NOTION_API_TOKEN"))
     events = fetch_events(api)

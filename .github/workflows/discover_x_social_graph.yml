@@ -2,6 +2,11 @@ name: bon-odori-discover-x-social-graph
 
 on:
   workflow_dispatch:
+    inputs:
+      confirm:
+        description: 'X API follow graph exploration. Type DISCOVER X SOCIAL GRAPH'
+        required: true
+        type: string
 
 concurrency:
   group: bon-odori-master-rdb
@@ -21,6 +26,18 @@ jobs:
       uses: actions/setup-python@v6
       with:
         python-version: '3.x'
+
+    - name: Validate manual X graph confirmation
+      env:
+        CONFIRMATION: ${{ inputs.confirm }}
+      run: |
+        set -euo pipefail
+        expected="DISCOVER X SOCIAL GRAPH"
+        if [[ "$CONFIRMATION" != "$expected" ]]; then
+          echo "This workflow spends X API quota to explore follow graph candidates."
+          echo "Re-run with confirm='$expected'."
+          exit 1
+        fi
 
     - name: Discover X candidate accounts from follow graph
       env:

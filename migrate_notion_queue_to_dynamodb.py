@@ -36,6 +36,7 @@ SKIP_STATUSES = {
     "昇格済み",
 }
 EVENT_CANDIDATE_TYPE = "イベント候補"
+APPLY_CONFIRMATION = "MIGRATE NOTION QUEUE TO DYNAMODB"
 
 
 def notion_request(method, path, payload=None):
@@ -190,11 +191,23 @@ def migrate(rows, apply=False):
     return migrated, skipped_existing
 
 
+def validate_apply_confirmation(apply, confirmation):
+    if not apply:
+        return
+    if confirmation != APPLY_CONFIRMATION:
+        raise ValueError(f"--apply requires --confirm '{APPLY_CONFIRMATION}'")
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--cutoff", default="2026-06-07T00:00:00+09:00")
     parser.add_argument("--apply", action="store_true")
+    parser.add_argument("--confirm", default="")
     args = parser.parse_args()
+    try:
+        validate_apply_confirmation(args.apply, args.confirm)
+    except ValueError as exc:
+        raise SystemExit(str(exc)) from exc
 
     cutoff_dt = datetime.fromisoformat(args.cutoff)
     if cutoff_dt.tzinfo is None:

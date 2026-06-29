@@ -8,6 +8,7 @@ import re
 import unicodedata
 from pathlib import Path
 
+from manual_apply_guards import LEGACY_NOTION_REPAIR_CONFIRMATION, require_confirmation
 from notion_config import SONG_MASTER_DATABASE_ID, VENUE_DATABASE_ID, load_local_env
 from register_song_master_initial import classify_song
 from triage_weekly_song_candidates import notion_request, rich_text, title_index
@@ -291,12 +292,22 @@ def main():
     parser.add_argument("--out", type=Path, default=OUT)
     parser.add_argument("--out-md", type=Path, default=OUT_MD)
     parser.add_argument("--apply", action="store_true")
+    parser.add_argument("--confirm", default="")
     args = parser.parse_args()
 
     if not TOKEN:
         raise SystemExit("NOTION_API_TOKEN is not set")
     if not SONG_DB_ID:
         raise SystemExit("SONG_MASTER_DB_ID is not set")
+    try:
+        require_confirmation(
+            args.apply,
+            args.confirm,
+            LEGACY_NOTION_REPAIR_CONFIRMATION,
+            "legacy venue-song association Notion apply",
+        )
+    except ValueError as exc:
+        parser.error(str(exc))
 
     source = load_json(args.source)
     rows = source.get("associations", [])

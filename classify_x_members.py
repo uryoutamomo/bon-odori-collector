@@ -18,9 +18,12 @@ from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
+from manual_apply_guards import require_confirmation
+
 
 OUTPUT_FILE = Path("data/x_member_classification_proposal.json")
 VOICES_FILE = Path("data/voices.json")
+CONFIRM_PHRASE = "APPLY X MEMBER CLASSIFICATION TO NOTION"
 
 ACCOUNT_TYPES = (
     "盆踊りダンサー",
@@ -220,7 +223,12 @@ def apply_to_notion(proposals):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--apply", action="store_true")
+    parser.add_argument("--confirm", default="")
     args = parser.parse_args()
+    try:
+        require_confirmation(args.apply, args.confirm, CONFIRM_PHRASE, "X member classification Notion sync")
+    except ValueError as exc:
+        parser.error(str(exc))
 
     load_env()
     rows = fetch_member_rows()

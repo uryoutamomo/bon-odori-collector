@@ -8,6 +8,7 @@ import urllib.parse
 import urllib.error
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
+from pathlib import Path
 
 from proactive_search import (
     build_queries,
@@ -28,6 +29,7 @@ from event_evidence import (
     build_initial_window,
     classify_event_evidence,
 )
+from x_official_source_accounts import load_official_source_accounts
 
 try:
     import feedparser
@@ -40,6 +42,17 @@ NOTION_TOKEN = os.environ.get("NOTION_API_TOKEN")
 NOTION_PAGE_ID = os.environ.get("NOTION_PAGE_ID")
 NOTION_VERSION = "2022-06-28"
 NOTION_API = "https://api.notion.com/v1"
+_TRUE_ENV_VALUES = {"1", "true", "yes", "on"}
+
+
+def collect_notion_writes_enabled():
+    """Return True only for explicit, opt-in Notion writes from collect.py."""
+    return (
+        os.environ.get("COLLECT_ALLOW_NOTION_WRITES", "")
+        .strip()
+        .lower()
+        in _TRUE_ENV_VALUES
+    )
 
 
 def _env_or_default(name, default):
@@ -214,6 +227,9 @@ def push_to_notion(latest_items, updated_at, x_voices=None, x_cost=None,
     proactive_report = proactive_report or []
     if not NOTION_TOKEN or not NOTION_PAGE_ID:
         print("Notion未設定 (NOTION_API_TOKEN / NOTION_PAGE_ID) のためスキップ")
+        return
+    if not collect_notion_writes_enabled():
+        print("[notion] COLLECT_ALLOW_NOTION_WRITES=true ではないためサマリー投稿をスキップ")
         return
 
     try:
@@ -679,7 +695,7 @@ def _x_map_to_voice(tw):
 
 def _append_x_log_row(voice, query_id, judgement, cost):
     """旧X収集ログDBに1行追記。Notion未設定なら静かにスキップ。"""
-    if not NOTION_TOKEN or not X_LOG_DB_ID:
+    if not collect_notion_writes_enabled() or not NOTION_TOKEN or not X_LOG_DB_ID:
         return
     text = voice["text"] or "(本文なし)"
     props = {
@@ -872,6 +888,7 @@ GLOSSARY_V2_AUTO_CONFIDENCES = ("公式確認", "複数一致", "除外確定")
 VENUE_MASTER_FILE = "data/venue_master.json"
 X_WHITELIST_STATE_FILE = "data/x_whitelist_state.json"
 X_ACCOUNT_SCORES_FILE = "data/x_account_scores.json"
+X_OFFICIAL_SOURCE_ACCOUNTS_FILE = "data/x_official_source_accounts.json"
 X_MEMBER_OBSOLETE_SCORE_PROPS = (
     "自動スコア",
     "手動重み",
@@ -1390,6 +1407,9 @@ def _sync_x_account_scores_to_notion(accounts, cfg=None):
     """XメンバーリストDBへ自動スコアを書き戻す。人間の微調整欄も用意する。"""
     if not NOTION_TOKEN or not accounts:
         return
+    if not collect_notion_writes_enabled():
+        print("[rank] COLLECT_ALLOW_NOTION_WRITES=true ではないためNotionスコア書き戻しをスキップ")
+        return
     cfg = cfg or {}
     _ensure_x_member_score_props()
     _cleanup_x_member_obsolete_score_props()
@@ -1664,16 +1684,17 @@ def add_promoted_x_members(review_results):
 
 
 def load_whitelist_accounts():
-    """「X メンバーリスト」DB から収集対象アカウントを返す。
+    """「X メンバーリスト」DB とローカル公式X台帳から収集対象を返す。
 
     任意プロパティ:
     - 収集ステータス: 優先 / 通常 / 休止
     既存DBに無ければ無視する。
     """
+    local_accounts = load_official_source_accounts(Path(X_OFFICIAL_SOURCE_ACCOUNTS_FILE))
     if not NOTION_TOKEN:
         print("[whitelist] NOTION_API_TOKEN 未設定のためメンバーリスト読込スキップ")
-        return []
-    accounts = []
+        return _dedupe_whitelist_accounts(local_accounts)
+    accounts = list(local_accounts)
     try:
         cursor = None
         while True:
@@ -1695,14 +1716,19 @@ def load_whitelist_accounts():
             cursor = data.get("next_cursor")
     except Exception as e:
         print(f"[whitelist] メンバーリスト読込エラー（スキップ）: {e}")
-        return []
+        return _dedupe_whitelist_accounts(local_accounts)
+    out = _dedupe_whitelist_accounts(accounts)
+    print(f"[whitelist] メンバーリスト+公式X台帳 {len(out)} アカウント取得")
+    return out
+
+
+def _dedupe_whitelist_accounts(accounts):
     seen, out = set(), []
     for account in accounts:
         k = _norm_handle(account.get("handle"))
         if k not in seen:
             seen.add(k)
             out.append(account)
-    print(f"[whitelist] メンバーリスト {len(out)} アカウント取得")
     return out
 
 
@@ -2439,8 +2465,11 @@ def _event_candidate_notion_props(candidate):
 def push_event_candidate_queue(event_evidence):
     """イベント断片をイベント候補単位へ集約して裏取りキューへ同期する。"""
     candidates = aggregate_event_candidates(event_evidence, _load_known_venues())
-    use_notion = EVENT_QUEUE_STORAGE_MODE in ("notion", "dual")
+    requested_notion = EVENT_QUEUE_STORAGE_MODE in ("notion", "dual")
+    use_notion = requested_notion and collect_notion_writes_enabled()
     use_dynamodb = EVENT_QUEUE_STORAGE_MODE in ("dynamodb", "dual")
+    if requested_notion and not use_notion:
+        print("[event-queue] COLLECT_ALLOW_NOTION_WRITES=true ではないためNotion追記をスキップ")
     if use_notion and not NOTION_TOKEN:
         print("[event-queue] NOTION_API_TOKEN 未設定のため追記スキップ")
         return {"added": 0, "failed": len(candidates), "skipped": 0, "promote_dry_run": []}
@@ -2449,6 +2478,9 @@ def push_event_candidate_queue(event_evidence):
         use_dynamodb = False
         if EVENT_QUEUE_STORAGE_MODE == "dynamodb":
             return {"added": 0, "failed": len(candidates), "skipped": 0, "promote_dry_run": []}
+    if not use_notion and not use_dynamodb:
+        print("[event-queue] 有効な保存先がないため追記スキップ")
+        return {"added": 0, "failed": len(candidates), "skipped": 0, "promote_dry_run": []}
     if not candidates:
         print("[event-queue] イベント候補なし")
         return {"added": 0, "failed": 0, "skipped": 0, "promote_dry_run": []}
@@ -2534,13 +2566,19 @@ def push_event_candidate_queue(event_evidence):
 
 def push_torimochi_queue(detected):
     """検出会場を裏取りキューへ追記。既出はスキップ。fail-safe。"""
-    use_notion = QUEUE_STORAGE_MODE in ("notion", "dual")
+    requested_notion = QUEUE_STORAGE_MODE in ("notion", "dual")
+    use_notion = requested_notion and collect_notion_writes_enabled()
     use_dynamodb = QUEUE_STORAGE_MODE in ("dynamodb", "dual")
+    if requested_notion and not use_notion:
+        print("[queue] COLLECT_ALLOW_NOTION_WRITES=true ではないためNotion裏取りキュー追記をスキップ")
     if use_notion and not NOTION_TOKEN:
         print("[queue] NOTION_API_TOKEN 未設定のため裏取りキュー追記スキップ")
         return {"added": 0, "failed": len(detected), "skipped": 0}
     if use_dynamodb and not os.environ.get("DYNAMODB_QUEUE_TABLE"):
         print("[queue] DYNAMODB_QUEUE_TABLE 未設定のため裏取りキュー追記スキップ")
+        return {"added": 0, "failed": len(detected), "skipped": 0}
+    if not use_notion and not use_dynamodb:
+        print("[queue] 有効な保存先がないため裏取りキュー追記スキップ")
         return {"added": 0, "failed": len(detected), "skipped": 0}
     if not detected:
         print("[queue] 検出会場なし")
@@ -2618,6 +2656,9 @@ def archive_resolved_queue():
     こわが誤検知と判断した行を自動で片付ける。queue_seen からは消さない
     （= 再検知で蒸し返さない）。fail-safe。"""
     if not NOTION_TOKEN:
+        return
+    if not collect_notion_writes_enabled():
+        print("[queue] COLLECT_ALLOW_NOTION_WRITES=true ではないためNotion掃除ループをスキップ")
         return
     archived = 0
     dynamodb = None
@@ -2820,7 +2861,7 @@ def register_glossary_alias(alias, canonical, source_url="", confidence="推察"
     """新出表記ゆれを用語集DBに登録/追記する。fail-safe。
     既存の正規名称エントリがあれば表記ゆれ列に追記。なければ新規作成。
     """
-    if not NOTION_TOKEN or not GLOSSARY_DB_ID:
+    if not collect_notion_writes_enabled() or not NOTION_TOKEN or not GLOSSARY_DB_ID:
         return
     alias = alias.strip()
     canonical = canonical.strip()
@@ -2880,7 +2921,7 @@ def bootstrap_glossary_if_empty(venue_master):
     """用語集DBが空の場合、会場マスタの会場名を正規名称として初期投入する。
     一度だけ動けば良い処理（2回目以降は entries > 0 でスキップ）。
     """
-    if not NOTION_TOKEN or not GLOSSARY_DB_ID:
+    if not collect_notion_writes_enabled() or not NOTION_TOKEN or not GLOSSARY_DB_ID:
         return
     try:
         check = _notion_query_database(GLOSSARY_DB_ID, {"page_size": 1})

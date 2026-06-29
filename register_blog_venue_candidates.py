@@ -1,9 +1,11 @@
+import argparse
 import json
 import os
 import re
 from datetime import date
 from pathlib import Path
 
+from manual_apply_guards import LEGACY_NOTION_REPAIR_CONFIRMATION, require_confirmation
 from notion_api import NotionApi, plain_text
 from notion_config import EVENT_DATA_SOURCE_ID, VENUE_DATA_SOURCE_ID
 
@@ -111,6 +113,19 @@ def create_event(api, venue_id, item):
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--confirm", default="")
+    args = parser.parse_args()
+    try:
+        require_confirmation(
+            True,
+            args.confirm,
+            LEGACY_NOTION_REPAIR_CONFIRMATION,
+            "legacy blog venue candidate registration",
+        )
+    except ValueError as exc:
+        parser.error(str(exc))
+
     api = NotionApi(os.environ.get("NOTION_API_TOKEN"))
     items = json.loads(INPUT.read_text(encoding="utf-8"))["items"]
     results = []

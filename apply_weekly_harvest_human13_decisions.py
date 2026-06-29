@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Apply the human-reviewed weekly harvest terms and co-occurrence rows."""
+"""Apply the human-reviewed daily X harvest terms and co-occurrence rows."""
 
 import argparse
 import json
@@ -7,6 +7,7 @@ import os
 import urllib.request
 from pathlib import Path
 
+from manual_apply_guards import LEGACY_NOTION_REPAIR_CONFIRMATION, require_confirmation
 from notion_config import (
     GLOSSARY_V2_DATABASE_ID,
     SONG_MASTER_DATABASE_ID,
@@ -89,7 +90,7 @@ def term_roles(term):
 def glossary_props(row, review_note):
     term = row["term"]
     memo = (
-        "週次収穫13件レビューで内田さん採用。\n"
+        "日次X収穫レビューで内田さん採用。\n"
         f"元分類: {row.get('type') or row.get('category', '')}\n"
         f"理由: {row.get('reason', '')}\n"
         f"レビュー注記: {review_note}\n"
@@ -187,7 +188,17 @@ def main():
     parser.add_argument("--decisions", type=Path, default=DECISIONS)
     parser.add_argument("--out", type=Path, default=OUT)
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--confirm", default="")
     args = parser.parse_args()
+    try:
+        require_confirmation(
+            not args.dry_run,
+            args.confirm,
+            LEGACY_NOTION_REPAIR_CONFIRMATION,
+            "legacy weekly harvest human13 Notion repair",
+        )
+    except ValueError as exc:
+        parser.error(str(exc))
 
     if not TOKEN:
         raise SystemExit("NOTION_API_TOKEN is not set")

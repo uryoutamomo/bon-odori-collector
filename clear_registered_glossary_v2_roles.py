@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 """Clear signal roles for the glossary v2 rows created by the review import."""
 
+import argparse
 import json
 import os
 import urllib.request
 from pathlib import Path
 
+from manual_apply_guards import LEGACY_NOTION_REPAIR_CONFIRMATION, require_confirmation
 from notion_config import load_local_env
 
 
@@ -28,6 +30,19 @@ def notion_request(method, path, payload=None):
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--confirm", default="")
+    args = parser.parse_args()
+    try:
+        require_confirmation(
+            True,
+            args.confirm,
+            LEGACY_NOTION_REPAIR_CONFIRMATION,
+            "legacy glossary role cleanup",
+        )
+    except ValueError as exc:
+        parser.error(str(exc))
+
     if not TOKEN:
         raise SystemExit("NOTION_API_TOKEN is not set")
     data = json.loads(SOURCE.read_text(encoding="utf-8"))

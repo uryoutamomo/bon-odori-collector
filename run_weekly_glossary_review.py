@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate weekly glossary/song review artifacts without applying decisions."""
+"""Generate local fallback glossary/song review artifacts without applying decisions."""
 
 from __future__ import annotations
 
@@ -31,7 +31,7 @@ def command_line(args: list[str]) -> str:
 
 def render_markdown(report: dict) -> str:
     lines = [
-        "# 週次用語集v2レビュー生成",
+        "# 日次X収穫レビュー生成（手動fallback）",
         "",
         f"- generated_at: {report['generated_at']}",
         f"- status: {report['status']}",
@@ -57,7 +57,18 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--days", type=int, default=7)
     parser.add_argument("--continue-on-error", action="store_true")
+    parser.add_argument(
+        "--manual",
+        action="store_true",
+        help="Required to generate local fallback review artifacts.",
+    )
     args = parser.parse_args()
+
+    if not args.manual:
+        raise SystemExit(
+            "run_weekly_glossary_review.py is a manual local fallback. "
+            "Use `python3 run_weekly_glossary_review.py --manual --days 7`."
+        )
 
     commands = [
         ["python3", "build_weekly_harvest_candidates.py", "--days", str(args.days)],
@@ -73,7 +84,7 @@ def main() -> None:
             "--out",
             "data/weekly_harvest_review_ui.html",
             "--title",
-            "週次用語・共起レビュー",
+            "日次X収穫レビュー（用語・共起）",
             "--summary-fields",
             "interpretation,type,confidence,evidence_count",
             "--detail-fields",
@@ -97,7 +108,7 @@ def main() -> None:
             "--out",
             "data/weekly_song_candidates_review_ui.html",
             "--title",
-            "週次曲候補レビュー",
+            "日次X収穫レビュー（曲候補）",
             "--summary-fields",
             "canonical_song_name,triage_reason,evidence_count",
             "--detail-fields",
@@ -145,7 +156,7 @@ def main() -> None:
     }
     REPORT_JSON.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     REPORT_MD.write_text(render_markdown(report), encoding="utf-8")
-    print(f"weekly glossary review: {status} -> {REPORT_MD}")
+    print(f"local harvest review fallback: {status} -> {REPORT_MD}")
     if status != "ok":
         raise SystemExit(1)
 

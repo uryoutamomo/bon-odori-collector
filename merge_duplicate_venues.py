@@ -1,6 +1,8 @@
+import argparse
 import json
 import os
 
+from manual_apply_guards import LEGACY_NOTION_REPAIR_CONFIRMATION, require_confirmation
 from notion_api import NotionApi
 from notion_config import EVENT_DATA_SOURCE_ID
 
@@ -40,6 +42,19 @@ def replace_relation_ids(relations, old_id, keep_id):
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--confirm", default="")
+    args = parser.parse_args()
+    try:
+        require_confirmation(
+            True,
+            args.confirm,
+            LEGACY_NOTION_REPAIR_CONFIRMATION,
+            "legacy duplicate venue merge",
+        )
+    except ValueError as exc:
+        parser.error(str(exc))
+
     api = NotionApi(os.environ.get("NOTION_API_TOKEN"))
     events = api.query_data_source(EVENT_DATA_SOURCE_ID)
     actions = []

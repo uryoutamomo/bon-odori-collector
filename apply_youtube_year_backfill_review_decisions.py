@@ -19,6 +19,7 @@ from discover_youtube_channels import (
 )
 from event_series_normalization import series_event_name
 from extract_youtube_setlists import extract_setlist, parse_youtube_event_date
+from manual_apply_guards import LOCAL_EVIDENCE_ONE_OFF_CONFIRMATION, require_confirmation
 
 
 DATA = Path("data")
@@ -366,7 +367,17 @@ def main():
     parser.add_argument("--env", default=".env")
     parser.add_argument("--fetch-descriptions", action="store_true")
     parser.add_argument("--apply", action="store_true")
+    parser.add_argument("--confirm", default="")
     args = parser.parse_args()
+    try:
+        require_confirmation(
+            args.apply,
+            args.confirm,
+            LOCAL_EVIDENCE_ONE_OFF_CONFIRMATION,
+            "YouTube year backfill manual evidence update",
+        )
+    except ValueError as exc:
+        parser.error(str(exc))
 
     result = build_result(
         load_json(args.decisions, {}),

@@ -8,6 +8,7 @@ import re
 import urllib.request
 from pathlib import Path
 
+from manual_apply_guards import LEGACY_NOTION_REPAIR_CONFIRMATION, require_confirmation
 from notion_config import (
     GLOSSARY_V2_DATABASE_ID,
     SONG_MASTER_DATABASE_ID,
@@ -219,12 +220,22 @@ def connect_glossary_pages(row, song_page_id, dry_run=False):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--confirm", default="")
     args = parser.parse_args()
 
     if not TOKEN:
         raise SystemExit("NOTION_API_TOKEN is not set")
     if not SONG_DB_ID:
         raise SystemExit("SONG_MASTER_DB_ID is not set")
+    try:
+        require_confirmation(
+            not args.dry_run,
+            args.confirm,
+            LEGACY_NOTION_REPAIR_CONFIRMATION,
+            "legacy song master initial registration",
+        )
+    except ValueError as exc:
+        parser.error(str(exc))
 
     songs = merge_sources()
     existing = existing_song_pages()

@@ -6,6 +6,9 @@
   <key>Label</key>
   <string>com.ryotauchida.bon-odori.glossary-weekly</string>
 
+  <key>Disabled</key>
+  <true/>
+
   <key>WorkingDirectory</key>
   <string>/Users/ryotauchida/bon-odori-collector</string>
 
@@ -13,19 +16,10 @@
   <array>
     <string>/usr/bin/python3</string>
     <string>/Users/ryotauchida/bon-odori-collector/run_weekly_glossary_review.py</string>
+    <string>--manual</string>
     <string>--days</string>
     <string>7</string>
   </array>
-
-  <key>StartCalendarInterval</key>
-  <dict>
-    <key>Weekday</key>
-    <integer>4</integer>
-    <key>Hour</key>
-    <integer>10</integer>
-    <key>Minute</key>
-    <integer>15</integer>
-  </dict>
 
   <key>StandardOutPath</key>
   <string>/Users/ryotauchida/bon-odori-collector/logs/glossary-weekly.out.log</string>
