@@ -23,6 +23,14 @@ DEFAULT_PUBLIC_EVENTS = ROOT / "data/public/events_public.json"
 DEFAULT_OUT_JSON = ROOT / "data/official_source_review_candidates.json"
 DEFAULT_OUT_MD = ROOT / "data/official_source_review_candidates.md"
 
+DECISION_VALUES = ("official", "hp", "post", "reject", "hold", "pending")
+REVIEW_STATE_FIELDS = (
+    "decision",
+    "review_note",
+    "reviewed_at",
+    "reviewed_by",
+)
+
 EXCLUDED_DOMAINS = {
     "minato-bon-odori.blogspot.com",
     "www.youtube.com",
@@ -130,6 +138,53 @@ def classify_url(url: str):
 def stable_id(venue: str, event_name: str, url: str) -> str:
     raw = f"{venue}|{event_name}|{url}"
     return hashlib.sha1(raw.encode("utf-8")).hexdigest()[:12]
+
+
+def review_key(row) -> tuple[str, str, str]:
+    return (
+        row.get("venue") or "",
+        row.get("event_name") or "",
+        row.get("source_url") or "",
+    )
+
+
+def collect_existing_review_states(rows):
+    by_id = {}
+    by_key = {}
+    for row in rows:
+        decision = row.get("decision")
+        if decision not in DECISION_VALUES:
+            continue
+        state = {
+            field: row.get(field)
+            for field in REVIEW_STATE_FIELDS
+            if row.get(field) not in (None, "")
+        }
+        if not state:
+            continue
+        row_id = row.get("id")
+        if row_id:
+            by_id[row_id] = state
+        by_key[review_key(row)] = state
+    return {"by_id": by_id, "by_key": by_key}
+
+
+def load_existing_review_states(path: Path):
+    payload = read_json(path, {"rows": []})
+    return collect_existing_review_states(payload.get("rows") or [])
+
+
+def apply_existing_review_states(rows, states) -> int:
+    preserved = 0
+    for row in rows:
+        state = states.get("by_id", {}).get(row.get("id"))
+        if not state:
+            state = states.get("by_key", {}).get(review_key(row))
+        if not state:
+            continue
+        row.update(state)
+        preserved += 1
+    return preserved
 
 
 def load_existing_sources(path: Path):
@@ -270,6 +325,16 @@ def main():
     parser.add_argument("--public-events", default=str(DEFAULT_PUBLIC_EVENTS))
     parser.add_argument("--out-json", default=str(DEFAULT_OUT_JSON))
     parser.add_argument("--out-md", default=str(DEFAULT_OUT_MD))
+    parser.add_argument(
+        "--existing-review",
+        default=None,
+        help="Existing review JSON to preserve decisions from. Defaults to --out-json.",
+    )
+    parser.add_argument(
+        "--no-preserve-existing-decisions",
+        action="store_true",
+        help="Do not copy existing decision values into regenerated rows.",
+    )
     parser.add_argument("--limit", type=int, default=None)
     args = parser.parse_args()
 
@@ -288,7 +353,16 @@ def main():
     if args.limit:
         rows = rows[:args.limit]
 
+    preserved_decision_count = 0
+    if not args.no_preserve_existing_decisions:
+        existing_review = Path(args.existing_review) if args.existing_review else Path(args.out_json)
+        preserved_decision_count = apply_existing_review_states(
+            rows,
+            load_existing_review_states(existing_review),
+        )
+
     counts = Counter(row.get("suggested_source_type") for row in rows)
+    decision_counts = Counter(row.get("decision") or "pending" for row in rows)
     output = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "generated_by": "build_official_source_review.py",
@@ -302,6 +376,8 @@ def main():
         },
         "source_counts": dict(counts),
         "candidate_count": len(rows),
+        "decision_counts": dict(decision_counts),
+        "preserved_decision_count": preserved_decision_count,
         "rows": rows,
     }
     write_json(Path(args.out_json), output)
@@ -310,7 +386,8 @@ def main():
         f"official source review: candidates={len(rows)} "
         f"official_suggested={counts.get('official', 0)} "
         f"hp_suggested={counts.get('hp', 0)} "
-        f"post_suggested={counts.get('post', 0)} -> {args.out_json}"
+        f"post_suggested={counts.get('post', 0)} "
+        f"preserved_decisions={preserved_decision_count} -> {args.out_json}"
     )
 
 
