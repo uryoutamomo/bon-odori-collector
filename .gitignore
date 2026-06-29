@@ -17,3 +17,40 @@ logs/*.log
 
 __pycache__/
 *.pyc
+.venv/
+
+# ローカル運用状態・一時成果物
+data/review_console/
+data/automation/
+data/youtube_morning_oto_review_*.md
+ops/com.ryotauchida.bon-odori.youtube-morning-oto-review.*.plist
+scripts/run_youtube_morning_oto_review.command
+scripts/run_youtube_morning_oto_review.sh
+
+# ブラウザ保存した元素材。キャラクター素材の正本は bonsuke-manga 側に置く
+assets/character/originals/
+
+# キャラクター素材の正本は /Users/ryotauchida/bonsuke-manga 側
+assets/character/generated/
+
+# ローカル生成レビュー出力。必要なら意図して個別に -f で追加する
+data/x_news_digest_for_oto.json
+data/x_news_digest_for_oto.md
+data/x_news_digest_oto_reviews.json
+data/rare_signal_*.json
+data/rare_signal_*.md
+data/historical_reference_quality_review.json
+data/historical_reference_quality_review.md
+data/youtube_song_clip_fragment_audit.json
+data/youtube_song_clip_fragment_audit.md
+data/post_batch_maintenance_report.json
+data/post_batch_maintenance_report.md
+data/manual_x_*.json
+data/manual_x_*.md
+data/x_manual_account_candidates.json
+data/event_time_research_queue.md
+data/publication_gap_review.json
+data/notion_regional_seo_*.json
+
+# ローカルメール送信キュー
+data/pending_mail.json
