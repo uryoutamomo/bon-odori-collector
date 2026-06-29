@@ -1,0 +1,66 @@
+{
+  "generated_at": "2026-06-29T12:59:00+00:00",
+  "generated_by": "おと（Codex）",
+  "scope": "follow-up URL research after missing occurrence and series source URLs were filled",
+  "writes_applied": {
+    "master_rdb_event_series_source_url_inheritance": true,
+    "public_json": false,
+    "notion": false
+  },
+  "master_rdb_source_url_missing_counts": {
+    "event_occurrences": 0,
+    "event_series": 0
+  },
+  "candidates": [
+    {
+      "confidence": "high",
+      "event_name": "第25回 四谷納涼踊り大会",
+      "aliases": ["四谷納涼踊り大会"],
+      "current_public_date": "2025-07-19",
+      "current_public_date_end": "2025-07-20",
+      "candidate_url": "https://www.yotsuya3.jp/2025yotsuya-bon-odori/",
+      "source_type": "organizer_current_year_2025",
+      "note": "四谷三丁目商店街 page confirms 2025 dates and 四谷ひろば venue."
+    },
+    {
+      "confidence": "high",
+      "event_name": "第26回 四谷納涼踊り大会",
+      "aliases": ["四谷納涼踊り大会"],
+      "current_public_date": "2026-07-18",
+      "current_public_date_end": "2026-07-19",
+      "candidate_url": "https://shinjuku-kushoren.jp/event/event_20260618_5/",
+      "source_type": "official_current_year_2026",
+      "note": "新宿区商店会連合会 page confirms 2026 dates and 四谷ひろば venue; useful if promoting this event to 2026."
+    },
+    {
+      "confidence": "medium",
+      "event_name": "地域のふれあい第37回盆踊り大会",
+      "aliases": ["目黒駅前地域ふれあい盆踊り大会"],
+      "current_public_date": "2025-07-27",
+      "current_public_date_end": "",
+      "candidate_url": "https://meguromag.jp/event/meguro-bonodiri.html",
+      "source_type": "local_media_current_year_2025",
+      "note": "Page confirms 第39回, 2025-07-27, JR目黒駅西口駅前. Not official."
+    },
+    {
+      "confidence": "high",
+      "event_name": "第90回 祐天寺み魂まつり こども盆踊り大会",
+      "aliases": ["祐天寺み魂まつり 子ども盆踊り大会"],
+      "current_public_date": "2025-07-16",
+      "current_public_date_end": "2025-07-18",
+      "candidate_url": "https://www.chokai.info/areanews/019220.php",
+      "source_type": "community_info_current_year_2025",
+      "note": "Page confirms 第90回, 令和7年7月16日-18日, 盆踊り time, 祐天寺境内, and organizer."
+    },
+    {
+      "confidence": "high",
+      "event_name": "砧小学校「第38回砧っ子夏祭り」",
+      "aliases": ["第38回砧っ子夏祭り"],
+      "current_public_date": "2025-07-19",
+      "current_public_date_end": "",
+      "candidate_url": "https://school.setagaya.ed.jp/kita/weblog/104972635",
+      "source_type": "official_school_retrospective_2025",
+      "note": "世田谷区立砧小学校 official diary confirms 第38回砧っ子夏祭り on 2025-07-19."
+    }
+  ]
+}
