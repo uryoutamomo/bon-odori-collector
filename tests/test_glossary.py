@@ -40,6 +40,7 @@ class GlossaryRegistrationTest(unittest.TestCase):
 
     def test_skips_low_confidence_alias_for_confident_legacy_row(self):
         with (
+            patch.dict(os.environ, {"COLLECT_ALLOW_NOTION_WRITES": "true"}),
             patch.object(collect, "NOTION_TOKEN", "token"),
             patch.object(collect, "GLOSSARY_DB_ID", "glossary"),
             patch.object(
@@ -60,6 +61,7 @@ class GlossaryRegistrationTest(unittest.TestCase):
 
     def test_keeps_existing_behavior_for_confident_alias(self):
         with (
+            patch.dict(os.environ, {"COLLECT_ALLOW_NOTION_WRITES": "true"}),
             patch.object(collect, "NOTION_TOKEN", "token"),
             patch.object(collect, "GLOSSARY_DB_ID", "glossary"),
             patch.object(
