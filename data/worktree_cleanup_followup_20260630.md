@@ -47,14 +47,15 @@
 | `f0ec170` | Add public glossary supplement notes | 公開glossary補足語42件と曲本文メモ51件を追加。 |
 | `df740b3` | Align harvest review labels with daily X flow | 週次収穫レビュー生成物の表示文言を日次X収穫へ統一。 |
 | `7eae4b9` | Record X candidate review decisions | X候補30件の内田さんレビュー判断を保存。 |
+| `feffed0` | Preserve official source review decisions | 公式ソース候補の再生成時に既存レビュー判定を保持し、51件保持・新規pending 1件の状態へ修復。 |
 
 ## Current remaining scale
 
 | metric | value |
 | --- | ---: |
-| tracked changed files | 38 |
+| tracked changed files | 36 |
 | untracked files | 31 |
-| tracked diff size | +102,308 / -455,087 |
+| tracked diff size | +101,674 / -454,386 |
 
 ## Public JSON status
 
@@ -83,7 +84,6 @@ Recommended next split:
 1. Review non-song public dry-run files (historical reference dry-run, season hint dry-run).
 2. Keep old song generation files frozen unless explicitly regenerated from the approved path.
 3. Handle YouTube review/backfill outputs separately.
-4. Do not commit `official_source_review_candidates.*` from the current diff; it resets previously reviewed decisions to `pending`.
 
 ## Remaining groups
 
@@ -126,9 +126,12 @@ Untracked groups remain for:
 
 Tracked review state also remains for:
 
-- `data/official_source_review_candidates.*` (current diff resets reviewed decisions to `pending`; do not commit as-is)
 - `data/ops_metrics_*` (current numbers depend on uncommitted YouTube outputs)
 - Master RDB audit/manifest outputs (current numbers depend on local DB state and frozen song inputs)
+
+Resolved tracked review state:
+
+- `data/official_source_review_candidates.*` was repaired in `feffed0`; regenerated rows now preserve existing decisions by id/key and leave only the new 自由が丘 candidate as `pending`.
 
 Action:
 
