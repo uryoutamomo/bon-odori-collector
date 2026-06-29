@@ -1,7 +1,12 @@
 import unittest
 from datetime import date
 
-from sync_weekly_costs import build_weekly_summary, format_week_label, week_start_for
+from sync_weekly_costs import (
+    build_weekly_summary,
+    format_week_label,
+    render_markdown,
+    week_start_for,
+)
 
 
 class SyncWeeklyCostsTest(unittest.TestCase):
@@ -27,6 +32,43 @@ class SyncWeeklyCostsTest(unittest.TestCase):
         self.assertEqual(summary["notion"], 0.0)
         self.assertEqual(summary["gmail_smtp"], 0.0)
         self.assertEqual(summary["total"], 0.6)
+
+    def test_render_markdown_marks_dry_run_as_no_notion_write(self):
+        summary = build_weekly_summary({"2026-06-08": 0.1}, date(2026, 6, 8))
+        markdown = render_markdown(
+            {
+                **summary,
+                "database_id": "cost-db",
+                "database_source": "configured",
+                "schema_changed": False,
+                "title_property": "名前",
+                "action": "update",
+                "page_id": "page-id",
+                "applied": False,
+            }
+        )
+
+        self.assertIn("- mode: dry-run", markdown)
+        self.assertIn("- notion_write: no", markdown)
+        self.assertIn("sync_weekly_costs_to_notion=true", markdown)
+
+    def test_render_markdown_marks_apply_as_notion_write(self):
+        summary = build_weekly_summary({"2026-06-08": 0.1}, date(2026, 6, 8))
+        markdown = render_markdown(
+            {
+                **summary,
+                "database_id": "cost-db",
+                "database_source": "configured",
+                "schema_changed": False,
+                "title_property": "名前",
+                "action": "update",
+                "page_id": "page-id",
+                "applied": True,
+            }
+        )
+
+        self.assertIn("- mode: applied", markdown)
+        self.assertIn("- notion_write: yes", markdown)
 
 
 if __name__ == "__main__":

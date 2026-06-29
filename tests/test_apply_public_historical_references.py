@@ -139,6 +139,32 @@ class ApplyPublicHistoricalReferencesTest(unittest.TestCase):
         self.assertEqual(result["events"][0]["display_tier"], "historical_reference")
         self.assertNotIn("predicted_date", result["events"][0])
 
+    def test_past_slide_clears_stale_slide_and_prediction_fields(self):
+        events = [{
+            "name": "西綾瀬町会 夏祭り盆踊り大会",
+            "venue": "五反野コミュニティ公園",
+            "public_category": "recurring_last_year",
+            "public_status": "expected_medium",
+            "recurrence_score": 0.67,
+            "last_seen_year": 2025,
+            "last_seen_dates": ["2025-06-21"],
+            "date": "2025-06-21",
+            "historical_display_tier": "historical_slide",
+            "historical_slide": {"date": "2026-06-20"},
+            "predicted_date": "2026-06-20",
+            "prediction_basis": "stale slide",
+            "display_tier": "historical_slide",
+        }]
+
+        result = apply_historical_references(events, today=date(2026, 6, 26))
+
+        self.assertEqual(result["events"][0]["historical_display_tier"], "historical_reference")
+        self.assertEqual(result["events"][0]["display_tier"], "historical_reference")
+        self.assertNotIn("historical_slide", result["events"][0])
+        self.assertNotIn("predicted_date", result["events"][0])
+        self.assertNotIn("prediction_basis", result["events"][0])
+        self.assertEqual(result["report"]["past_slide_downgrade_count"], 1)
+
     def test_clears_existing_reference_from_non_target_event(self):
         events = [{
             "name": "確定イベント",
