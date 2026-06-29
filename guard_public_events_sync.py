@@ -8,6 +8,7 @@ historical/season fields are regenerated before sync.
 import argparse
 import copy
 import json
+import os
 import sys
 from collections import Counter, defaultdict
 from datetime import datetime, timezone
@@ -269,6 +270,21 @@ def render_markdown(data):
     return "\n".join(lines)
 
 
+def append_github_summary(markdown_path, explicit_path=None):
+    target = explicit_path or os.environ.get("GITHUB_STEP_SUMMARY")
+    if not target:
+        return None
+    markdown_path = Path(markdown_path)
+    if not markdown_path.exists():
+        return None
+    summary_path = Path(target)
+    with summary_path.open("a", encoding="utf-8") as handle:
+        handle.write("\n\n")
+        handle.write(markdown_path.read_text(encoding="utf-8"))
+        handle.write("\n")
+    return str(summary_path)
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--collector-events", default=str(COLLECTOR_EVENTS))
@@ -280,14 +296,21 @@ def main():
     parser.add_argument("--report-only", action="store_true")
     parser.add_argument("--out-json", default=str(OUT_JSON))
     parser.add_argument("--out-md", default=str(OUT_MD))
+    parser.add_argument("--append-github-summary", action="store_true")
+    parser.add_argument("--github-summary")
     args = parser.parse_args()
     data = build(args)
+    summary_path = None
+    if args.append_github_summary or args.github_summary:
+        summary_path = append_github_summary(args.out_md, args.github_summary)
     print(
         "public events sync guard: "
         f"status={data['decision']['status']} "
         f"failures={data['decision']['failures']} "
         f"postprocessed_actions={data['postprocessed_classification']['events_by_action']}"
     )
+    if summary_path:
+        print(f"github_summary={summary_path}")
     if data["decision"]["status"] != "pass" and not args.report_only:
         return 1
     return 0

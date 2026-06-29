@@ -31,6 +31,19 @@ HISTORICAL_REFERENCE_FIELDS = (
     "historical_slide_method",
     "historical_slide_basis",
 )
+HISTORICAL_SLIDE_OUTPUT_FIELDS = (
+    "historical_slide",
+    "historical_slide_date",
+    "historical_slide_date_end",
+    "historical_slide_method",
+    "historical_slide_basis",
+)
+HISTORICAL_SLIDE_PREDICTION_FIELDS = (
+    "predicted_date",
+    "predicted_date_end",
+    "prediction_basis",
+    "prediction_confidence",
+)
 
 
 def load_json(path, default):
@@ -69,6 +82,18 @@ def write_json(path, data):
 
 def clear_historical_reference_fields(event):
     for field in HISTORICAL_REFERENCE_FIELDS:
+        event.pop(field, None)
+    if not event.get("date_prediction"):
+        clear_historical_slide_prediction_fields(event)
+
+
+def clear_historical_slide_fields(event):
+    for field in HISTORICAL_SLIDE_OUTPUT_FIELDS:
+        event.pop(field, None)
+
+
+def clear_historical_slide_prediction_fields(event):
+    for field in HISTORICAL_SLIDE_PREDICTION_FIELDS:
         event.pop(field, None)
 
 
@@ -217,6 +242,9 @@ def public_historical_reference(event, target_year=2026, today=DEFAULT_TODAY, fi
 
 
 def attach_historical_reference_fields(event, reference):
+    clear_historical_slide_fields(event)
+    if not reference.get("has_rule_prediction"):
+        clear_historical_slide_prediction_fields(event)
     event["historical_reference"] = reference
     event["historical_display_tier"] = reference["display_tier"]
     event["historical_last_seen_year"] = reference["last_seen_year"]
@@ -236,7 +264,7 @@ def attach_historical_reference_fields(event, reference):
         event["predicted_date_end"] = slide["date_end"]
         event["prediction_basis"] = slide["basis"]
         event["prediction_confidence"] = reference["confidence"]
-    elif not event.get("display_tier"):
+    elif not reference.get("has_rule_prediction"):
         event["display_tier"] = "historical_reference"
 
 
