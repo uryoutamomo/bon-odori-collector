@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Triage weekly song candidates before sending only ambiguous rows to review."""
+"""Triage daily X harvest song candidates before sending only ambiguous rows to review."""
 
 import argparse
 import json
@@ -246,7 +246,7 @@ def song_props(row, canonical, venue_ids, event_ids, existing_page=None):
     merged_events = [{"id": page_id} for page_id in sorted(set(current_events + event_ids))]
     evidence_count = max(int(current_evidence), int(row.get("evidence_count") or 0))
     memo = (
-        "週次収穫候補からおと判断で明白曲として処理。\n"
+        "日次X収穫候補からおと判断で明白曲として処理。\n"
         f"元候補: {row['term']}\n"
         f"理由: {row.get('triage_reason', '')}\n"
         f"証拠URL: {row.get('evidence_url', '')}\n"
