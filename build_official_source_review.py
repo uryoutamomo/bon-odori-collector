@@ -12,6 +12,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlparse
 
+from tokyo23_scope import is_outside_tokyo_23_scope
+
 
 ROOT = Path(__file__).resolve().parent
 DEFAULT_BLOG_CANDIDATES = ROOT / "data/blog_registration_candidates.json"
@@ -148,6 +150,8 @@ def row_from_blog_item(item, existing_urls):
     event = item.get("event") or {}
     venue = item.get("venue_name") or ""
     event_name = event.get("name") or item.get("event_name") or venue
+    if is_outside_tokyo_23_scope(event_name, venue, item.get("region"), item.get("address")):
+        return None
     suggested, score, reason = classify_url(url)
     return {
         "id": stable_id(venue, event_name, url),
@@ -179,6 +183,14 @@ def load_public_event_index(path: Path):
     return by_name
 
 
+def has_existing_event_identity_match(match) -> bool:
+    """Date-only YouTube matches are not enough to attach a URL to an event."""
+    reasons = match.get("reasons") if isinstance(match, dict) else []
+    if not isinstance(reasons, list):
+        return False
+    return any(str(reason) and not str(reason).startswith("date_overlap") for reason in reasons)
+
+
 def rows_from_youtube_validation(data, existing_urls, public_by_name):
     rows = []
     for item in data.get("rows", []):
@@ -186,6 +198,13 @@ def rows_from_youtube_validation(data, existing_urls, public_by_name):
         if not url or is_excluded(url):
             continue
         best = (item.get("best_existing_matches") or [{}])[0]
+        if best and not has_existing_event_identity_match(best):
+            # The official-source review attaches a URL to an existing event.
+            # A shared date alone often points to a different event, so do not
+            # let that weak match become an event-specific official URL candidate.
+            if item.get("status") != "new_event_review":
+                continue
+            best = {}
         venue = best.get("venue") or ""
         event_name = best.get("event_name") or ""
         if not event_name:
@@ -194,6 +213,8 @@ def rows_from_youtube_validation(data, existing_urls, public_by_name):
         public_event = public_by_name.get(event_name) or {}
         venue = venue or public_event.get("venue") or ""
         region = public_event.get("area") or ""
+        if is_outside_tokyo_23_scope(event_name, venue, region, item.get("area")):
+            continue
         months = public_event.get("months") or []
         suggested, score, reason = classify_url(url)
         if item.get("status") == "existing_event_append_ready":
