@@ -2,7 +2,7 @@
 
 - generated_at: 2026-06-30
 - generated_by: おと（Codex）
-- scope: post-cleanup status after splitting URL, review console, operation-boundary, and character-asset handoff commits
+- scope: post-cleanup status after splitting URL, review console, operation-boundary, character-asset, and review-tooling commits
 - deploy_performed: false
 - push_performed: false
 
@@ -15,14 +15,23 @@
 | `03ab05a` | Document worktree cleanup plan | 初回整理メモとローカル成果物 ignore。 |
 | `996af49` | Document manual operation boundaries | 手動/自動運用境界、確認フレーズ、policy tests を切り出し済み。 |
 | `468302c` | Document character asset handoff | キャラクター素材の正本を `bonsuke-manga` 側に寄せ、collector 側の generated コピーを ignore。 |
+| `9bf00b6` | Add official social source registry | X/公式SNS情報源の登録・判定・レビュー候補を切り出し済み。 |
+| `ac158ad` | Add X news digest tooling | X由来ニュース候補生成/昇格のコードとテストだけを切り出し済み。生成digest JSONは未コミット。 |
+| `8a379e4` | Add rare signal backcheck tooling | rare signal 裏どり用コード、設計doc、テストを切り出し済み。生成キューJSONは未コミット。 |
+| `4f25cc0` | Constrain source reviews to Tokyo wards | 東京23区スコープ補助と公式ソースレビューの除外条件を切り出し済み。 |
+| `d36c83e` | Add post-batch operations reports | post-batch/ops metrics のコードとテストを切り出し済み。生成レポートは未コミット。 |
+| `2604504` | Improve YouTube title song parsing | YouTube title/setlist解析、title helper、監査スクリプト、関連テストを切り出し済み。生成監査JSONは未コミット。 |
+| `5924968` | Add historical reference quality review | historical reference quality review のコード、doc、テストを切り出し済み。生成レビューJSONは未コミット。 |
+| `1a86a96` | Opt in glossary tests to Notion writes | 既存テストを Notion 書き込み opt-in 方針へ追随。 |
+| `82385d1` | Accept approved X member rows | 承認済みXメンバー候補の扱いを小さく切り出し済み。 |
 
 ## Current remaining scale
 
 | metric | value |
 | --- | ---: |
-| tracked changed files | 80 |
-| untracked files | 103 |
-| tracked diff size | +104,932 / -455,562 |
+| tracked changed files | 71 |
+| untracked files | 68 |
+| tracked diff size | +103,991 / -455,535 |
 
 ## Public JSON status
 
@@ -82,12 +91,10 @@ Action:
 
 Untracked groups remain for:
 
-- rare signal backcheck
-- official social source discovery
-- X news digest for Oto
 - July official source promotions
 - event time / source / venue review batches
-- YouTube song clip fragment audit
+- generated X news / rare-signal / historical-reference review outputs
+- one-off Notion append note scripts
 
 Action:
 
@@ -97,11 +104,8 @@ Action:
 
 Tracked code changes remain in:
 
-- `build_youtube_active_video_review.py`
-- `extract_youtube_setlists.py`
 - `export_public_glossary.py`
 - `review_missing_occurrence_venues.py`
-- `collect_ops_metrics.py`
 - `audit_master_rdb.py`
 - associated tests
 
