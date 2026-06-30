@@ -32,10 +32,10 @@ def write_json(path: Path, payload: Any) -> None:
 
 
 def git_show_json(repo: Path, ref_path: str) -> list[dict[str, Any]]:
-    data = subprocess.check_output(["git", "-C", str(repo), "show", f"HEAD:{ref_path}"])
+    data = subprocess.check_output(["git", "-C", str(repo), "show", ref_path])
     payload = json.loads(data.decode("utf-8"))
     if not isinstance(payload, list):
-        raise ValueError(f"HEAD:{ref_path} is not a JSON array")
+        raise ValueError(f"{ref_path} is not a JSON array")
     return payload
 
 
@@ -123,7 +123,7 @@ def render_markdown(result: dict[str, Any]) -> str:
         f"- deploy_requires_operator_approval: {decision['deploy_requires_operator_approval']}",
         f"- failures: {decision['failures']}",
         f"- warnings: {decision['warnings']}",
-        f"- base: `{result['sources']['site_head_ref']}`",
+        f"- base: `{result['sources']['site_base_ref']}`",
         f"- current: `{result['sources']['site_events']}`",
         f"- added_count: {summary['added_count']}",
         f"- removed_count: {summary['removed_count']}",
@@ -154,7 +154,8 @@ def render_markdown(result: dict[str, Any]) -> str:
 
 
 def run(args: argparse.Namespace) -> dict[str, Any]:
-    base_events = git_show_json(args.site_repo, str(args.site_events_rel))
+    base_ref_path = f"{args.base_ref}:{args.site_events_rel}"
+    base_events = git_show_json(args.site_repo, base_ref_path)
     site_events_path = args.site_repo / args.site_events_rel
     current_events = load_json(site_events_path, [])
     if not isinstance(current_events, list):
@@ -166,7 +167,7 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "sources": {
             "site_repo": str(args.site_repo),
-            "site_head_ref": f"HEAD:{args.site_events_rel}",
+            "site_base_ref": base_ref_path,
             "site_events": str(site_events_path),
         },
         "parameters": {
@@ -191,6 +192,7 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--site-repo", type=Path, default=SITE_REPO)
     parser.add_argument("--site-events-rel", type=Path, default=SITE_EVENTS_REL)
+    parser.add_argument("--base-ref", default="HEAD")
     parser.add_argument("--expected-event-name", action="append", default=[])
     parser.add_argument("--out-json", type=Path, default=OUT_JSON)
     parser.add_argument("--out-md", type=Path, default=OUT_MD)

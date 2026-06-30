@@ -1,9 +1,9 @@
 {
   "generated_by": "guard_site_public_event_additions.py",
-  "generated_at": "2026-06-30T15:23:08.947997+00:00",
+  "generated_at": "2026-06-30T15:34:35.406767+00:00",
   "sources": {
     "site_repo": "/Users/ryotauchida/bon-odori-site",
-    "site_head_ref": "HEAD:data/events_public.json",
+    "site_base_ref": "HEAD^:data/events_public.json",
     "site_events": "/Users/ryotauchida/bon-odori-site/data/events_public.json"
   },
   "parameters": {

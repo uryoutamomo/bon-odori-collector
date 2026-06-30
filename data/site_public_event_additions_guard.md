@@ -1,12 +1,12 @@
 # Site public event additions guard
 
-- generated_at: 2026-06-30T15:23:08.947997+00:00
+- generated_at: 2026-06-30T15:34:35.406767+00:00
 - status: pass
 - safe_to_deploy_data_delta: True
 - deploy_requires_operator_approval: True
 - failures: []
 - warnings: []
-- base: `HEAD:data/events_public.json`
+- base: `HEAD^:data/events_public.json`
 - current: `/Users/ryotauchida/bon-odori-site/data/events_public.json`
 - added_count: 2
 - removed_count: 0
