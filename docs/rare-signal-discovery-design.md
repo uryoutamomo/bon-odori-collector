@@ -1,6 +1,6 @@
 # X Interpreted News Discovery Plan
 
-作成日: 2026-06-27 JST  
+作成日: 2026-06-27 JST
 署名: おと（Codex）
 
 ## Purpose
