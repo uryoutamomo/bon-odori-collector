@@ -8,6 +8,28 @@
 
 ## Completed cleanup commits
 
+### 2026-06-30 deploy cleanup continuation
+
+| repo | commit | summary | note |
+| --- | --- | --- | --- |
+| `bon-odori-site` | `6d7ccf0` | Ignore local public deploy guard reports | site local was fast-forwarded to `origin/main` first; no push/deploy performed. |
+| `bon-odori-collector` | `8922222` | Ignore one-off YouTube morning review artifacts | 2026-06-29専用の朝レビュー起動ファイルをローカル生成物として扱う。 |
+| `bon-odori-collector` | `f12b824` | Add review console batch decision helpers | レビューコンソール用の一括一次判断helperを追加。既定URLは `http://127.0.0.1:8751` に修正し、`--base-url` で上書き可能。 |
+
+Additional checks:
+
+- `bon-odori-site`: `python3 -m pytest -q tests/test_guard_public_deploy.py tests/test_public_sync_deploy_policy.py` -> 6 passed.
+- `bon-odori-collector`: `python3 -m py_compile review_current_date_batch.py review_source_url_batch.py review_venue_batch.py` -> OK.
+- `bon-odori-collector`: remaining untracked Notion append / planning scripts were syntax-checked but not run or committed because several perform Notion writes when executed.
+
+Current safe stance remains unchanged:
+
+- Do not push/deploy the whole collector worktree.
+- Public deploy remains already handled by `bon-odori-site` Actions; local collector dirty state is not automatically part of production.
+- Remaining generated data diffs need review or regeneration from approved paths before commit.
+
+### Earlier cleanup commits
+
 | commit | summary | note |
 | --- | --- | --- |
 | `a542488` | Fill missing event source URLs | URL補完だけを切り出し済み。 |
@@ -55,7 +77,7 @@
 | metric | value |
 | --- | ---: |
 | tracked changed files | 24 |
-| untracked files | 31 |
+| untracked files | 24 |
 | tracked diff size | +62,356 / -58,380 |
 
 ## Public JSON status
