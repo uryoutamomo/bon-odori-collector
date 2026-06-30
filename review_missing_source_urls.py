@@ -13,6 +13,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from master_db import MASTER_DB, connect_existing
+from tokyo23_scope import is_outside_tokyo_23_scope
 
 
 DATA = Path("data")
@@ -154,6 +155,9 @@ def classify(conn, occurrence):
         "occurrence_id": occurrence["occurrence_id"],
         "event_name": occurrence["display_name"],
         "event_year": occurrence["event_year"],
+        "area": occurrence.get("area") or "",
+        "venue_area": occurrence.get("venue_area") or "",
+        "venue_address": occurrence.get("venue_address") or "",
         "date_start": occurrence.get("date_start") or "",
         "date_end": occurrence.get("date_end") or "",
         "date_status": occurrence.get("date_status") or "",
@@ -181,15 +185,31 @@ def build(args):
             """
             SELECT o.occurrence_id, o.display_name, o.event_year, o.date_start,
                    o.date_end, o.date_status, o.lifecycle_status, o.source_kind,
-                   o.source_url, o.series_id, s.canonical_name,
+                   o.source_url, o.series_id, s.canonical_name, s.area,
+                   v.area AS venue_area, v.address AS venue_address,
                    s.source_url AS series_source_url
             FROM event_occurrences o
             JOIN event_series s ON s.series_id = o.series_id
+            LEFT JOIN venues v ON v.venue_id = COALESCE(o.venue_id, s.usual_venue_id)
             WHERE COALESCE(o.source_url, '') = ''
             ORDER BY o.event_year DESC, o.display_name
             """,
         )
-        review = [classify(conn, occurrence) for occurrence in occurrences]
+        in_scope = []
+        skipped_outside_tokyo_23 = []
+        for occurrence in occurrences:
+            scope_values = (
+                occurrence.get("display_name"),
+                occurrence.get("canonical_name"),
+                occurrence.get("area"),
+                occurrence.get("venue_area"),
+                occurrence.get("venue_address"),
+            )
+            if is_outside_tokyo_23_scope(*scope_values):
+                skipped_outside_tokyo_23.append(occurrence)
+                continue
+            in_scope.append(occurrence)
+        review = [classify(conn, occurrence) for occurrence in in_scope]
 
     result = {
         "generated_by": "review_missing_source_urls.py",
@@ -198,12 +218,23 @@ def build(args):
         "sources": {"master_db": str(args.master_db)},
         "summary": {
             "missing_source_url_occurrence_count": len(review),
+            "skipped_outside_tokyo_23_count": len(skipped_outside_tokyo_23),
             "actions": dict(Counter(item["review_action"] for item in review)),
             "ready_source_url_candidate_count": sum(
                 1 for item in review if item["review_action"] == "ready_source_url_candidate"
             ),
         },
         "review": review,
+        "skipped_outside_tokyo_23": [
+            {
+                "occurrence_id": item.get("occurrence_id"),
+                "event_name": item.get("display_name"),
+                "event_year": item.get("event_year"),
+                "area": item.get("area") or item.get("venue_area") or "",
+                "venue_address": item.get("venue_address") or "",
+            }
+            for item in skipped_outside_tokyo_23
+        ],
     }
     write_json(args.out_json, result)
     Path(args.out_md).write_text(render_markdown(result), encoding="utf-8")
@@ -217,6 +248,7 @@ def render_markdown(result):
         f"- generated_at: {result['generated_at']}",
         f"- scope: {result['scope']}",
         f"- missing_source_url_occurrence_count: {result['summary']['missing_source_url_occurrence_count']}",
+        f"- skipped_outside_tokyo_23_count: {result['summary'].get('skipped_outside_tokyo_23_count', 0)}",
         f"- actions: {result['summary']['actions']}",
         f"- ready_source_url_candidate_count: {result['summary']['ready_source_url_candidate_count']}",
         "",
