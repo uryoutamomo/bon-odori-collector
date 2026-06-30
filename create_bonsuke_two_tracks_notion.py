@@ -22,9 +22,11 @@ OUT = Path("data/bonsuke_two_tracks_notion.json")
 
 PROJECT_ROOT = Path("/Users/ryotauchida/bon-odori-collector")
 SITE_ROOT = Path("/Users/ryotauchida/bon-odori-site")
-ASSET_ROOT = PROJECT_ROOT / "assets/character"
-CHARACTER_BIBLE = ASSET_ROOT / "character-bible.md"
-MASCOT_IMAGE = ASSET_ROOT / "originals/bonsuke-mascot-lantern-original.png"
+MANGA_ROOT = Path("/Users/ryotauchida/bonsuke-manga")
+CHARACTER_ROOT = MANGA_ROOT / "characters"
+REFERENCE_ROOT = MANGA_ROOT / "assets/references/from-bon-odori-collector"
+CHARACTER_BIBLE = CHARACTER_ROOT / "canon/character-bible.md"
+MASCOT_IMAGE = REFERENCE_ROOT / "originals/bonsuke-mascot-lantern-original.png"
 
 
 def rich_text(text, href=None):
@@ -183,15 +185,17 @@ def content_blocks(kindle_url):
         bullet("開催日や会場の確定判断"),
         bullet("本番公開データのデプロイ"),
         heading(2, "画像・キャラクター素材の置き場所"),
-        bullet(str(ASSET_ROOT)),
-        bullet(str(ASSET_ROOT / "originals")),
-        bullet(str(ASSET_ROOT / "variants")),
-        bullet(str(ASSET_ROOT / "covers")),
+        bullet(str(MANGA_ROOT)),
+        bullet(str(CHARACTER_ROOT / "canon")),
+        bullet(str(CHARACTER_ROOT / "reference-sheets")),
+        bullet(str(REFERENCE_ROOT)),
+        bullet(str(MANGA_ROOT / "publish")),
         heading(3, "主要素材"),
         bullet(f"主役マスコット: {MASCOT_IMAGE}"),
         bullet(f"キャラクター設定書: {CHARACTER_BIBLE}"),
-        bullet(f"説明マンガ: {ASSET_ROOT / 'originals/bonsuke-explainer-manga-5panel.png'}"),
-        bullet(f"モモ素材: {ASSET_ROOT / 'originals/bonsuke-guide-man-yukata-original.png'}"),
+        bullet(f"説明マンガ: {REFERENCE_ROOT / 'originals/bonsuke-explainer-manga-5panel.png'}"),
+        bullet(f"モモ素材: {REFERENCE_ROOT / 'originals/bonsuke-guide-man-yukata-original.png'}"),
+        bullet(f"設定画・ポーズ集: {CHARACTER_ROOT / 'reference-sheets'}"),
         heading(2, "現在のキャラクター設定"),
         bullet("モモ: はげのおっさん。名前の由来は不明。マニアックでこだわりがある。非エンジニアだがITに詳しい。盆踊り2年生の新入り。"),
         bullet("陳さん: ITは疎いが営業職らしく行動的。天然ボケ。盆踊り2年目だが、盆踊り情報の収集能力は半端ない。"),
@@ -278,7 +282,9 @@ def main():
             "url": content_page.get("url") or "",
         },
         "kindle_strategy_url": kindle.get("url") or "",
-        "asset_root": str(ASSET_ROOT),
+        "manga_root": str(MANGA_ROOT),
+        "character_root": str(CHARACTER_ROOT),
+        "reference_root": str(REFERENCE_ROOT),
         "character_bible": str(CHARACTER_BIBLE),
         "mascot_image": str(MASCOT_IMAGE),
     }
