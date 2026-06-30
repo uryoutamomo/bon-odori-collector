@@ -876,6 +876,7 @@ function renderItem(item) {
       ${decisionButtonsHtml(item, decision.decision)}
       ${applyOptionsHtml(item, decision.apply_value || "")}
       ${youtubeManualFieldsHtml(item, decision)}
+      <p class="decision-error" hidden></p>
       <textarea class="note" placeholder="メモ (n)">${escapeHtml(decision.note || "")}</textarea>
       <div class="decision-actions">
         <button type="button" class="clear">解除 <kbd>c</kbd></button>
@@ -1068,15 +1069,18 @@ function decisionButton(value, selected, shortcut) {
 async function saveDecision(article, itemId, values = {}) {
   if (state.savingItemIds.has(itemId)) {
     showMessage("保存中です");
+    setDecisionError(article, "保存中です");
     return;
   }
   const decision = values.decision || article.dataset.decision;
   if (!decision) {
     showMessage("判断ボタンを選んでください");
+    setDecisionError(article, "判断ボタンを選んでください");
     return;
   }
   const applyValue = values.applyValue ?? article.dataset.applyValue ?? "";
   state.savingItemIds.add(itemId);
+  setDecisionError(article, "");
   setDecisionBoxDisabled(article, true);
   try {
     await api("/api/decision", {
@@ -1092,6 +1096,7 @@ async function saveDecision(article, itemId, values = {}) {
     });
   } catch (error) {
     showMessage(error.message);
+    setDecisionError(article, error.message);
     setDecisionBoxDisabled(article, false);
     state.savingItemIds.delete(itemId);
     return;
@@ -1099,6 +1104,13 @@ async function saveDecision(article, itemId, values = {}) {
   showMessage("保存しました");
   state.savingItemIds.delete(itemId);
   await refreshCurrentView();
+}
+
+function setDecisionError(article, message) {
+  const errorBox = article.querySelector(".decision-error");
+  if (!errorBox) return;
+  errorBox.textContent = message || "";
+  errorBox.hidden = !message;
 }
 
 function setDecisionBoxDisabled(article, disabled) {

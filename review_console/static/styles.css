@@ -1390,6 +1390,18 @@ kbd {
   font-weight: 700;
 }
 
+.decision-error {
+  margin: 0;
+  border: 1px solid #e19994;
+  border-radius: 6px;
+  background: #fff1f0;
+  color: #9f2f29;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.45;
+  padding: 8px 9px;
+}
+
 .decision-buttons button[data-decision="accept"].selected {
   background: var(--accent);
   border-color: var(--accent);
