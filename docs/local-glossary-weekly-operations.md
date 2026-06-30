@@ -1,6 +1,6 @@
 # Local Song/Glossary Harvest Fallback Operations
 
-Updated: 2026-06-27 JST  
+Updated: 2026-06-27 JST
 署名: おと（Codex）
 
 ## Position

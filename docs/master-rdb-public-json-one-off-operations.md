@@ -1,6 +1,6 @@
 # Master RDB / Public JSON One-Off Operations
 
-作成日: 2026-06-26 JST  
+作成日: 2026-06-26 JST
 署名: おと（Codex）
 
 ## Purpose

@@ -1,6 +1,6 @@
 # Koto LaunchAgents Operations
 
-Updated: 2026-06-26 JST  
+Updated: 2026-06-26 JST
 署名: おと（Codex）
 
 ## Position

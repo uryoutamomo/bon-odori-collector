@@ -1,6 +1,6 @@
 # Notion Work-Log / Task-Page Maintenance Operations
 
-作成日: 2026-06-26 JST  
+作成日: 2026-06-26 JST
 署名: おと（Codex）
 
 ## Purpose
