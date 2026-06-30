@@ -1,0 +1,45 @@
+flowchart TB
+  subgraph collector[Collector / Master RDB]
+    c1[根拠収集結果]
+    c2[official social registry]
+    c3[bon_odori_master.sqlite]
+    c4[publication_gap_review.json]
+    c5[data/public/events_public.json]
+  end
+
+  subgraph reviewer[Human Review]
+    r1[根拠本文レビュー]
+    r2[会場レビュー]
+    r3[日程/statusレビュー]
+    r4[diffレビュー]
+    r5[deploy承認]
+  end
+
+  subgraph site[Site Repo]
+    s1[bon-odori-site/data/events_public.json]
+    s2[app/index表示]
+    s3[commit/push]
+  end
+
+  subgraph deploysys[GitHub Actions / Public Site]
+    d1[Deploy static site workflow]
+    d2[S3/CloudFront]
+    d3[公開URL確認]
+  end
+
+  c1 --> r1
+  r1 --> c2
+  r1 --> c3
+  c3 --> r2
+  r2 --> c3
+  c3 --> r3
+  r3 --> c3
+  c3 --> c4
+  c4 --> r4
+  r4 --> c5
+  c5 --> s1
+  s1 --> s2
+  s2 --> r4
+  r4 --> r5
+  r5 --> s3
+  s3 --> d1 --> d2 --> d3

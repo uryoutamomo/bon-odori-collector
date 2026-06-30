@@ -1,0 +1,8 @@
+flowchart LR
+    R["更新 r"] --> R1["読み直しのみ<br/>書き込みなし"]
+    T["棚卸し保存 t"] --> T1["source_inventory.json / .md<br/>件数スナップショット"]
+    S["保存 s"] --> S1["decisions.json<br/>1件の判断を保存"]
+    C["解除 c"] --> C1["decisions.json<br/>1件の判断を削除"]
+    E["エクスポート e"] --> E1["exported_decisions.json / .md<br/>判断を束ねる"]
+    G["ステージ適用 g"] --> G1["staged/*_decisions.json<br/>apply用パケット"]
+    G1 -. 直接変更しない .-> P["Master RDB / Notion / 公開JSON / S3等"]

@@ -1,0 +1,35 @@
+stateDiagram-v2
+  [*] --> EvidenceFound: 根拠発見
+  EvidenceFound --> SourceRejected: 公式性/本文不足
+  SourceRejected --> [*]
+
+  EvidenceFound --> SourceReviewed: 公式/主催/台帳SNSとして確認
+  SourceReviewed --> IdentityMatched: series/event_year確認
+  IdentityMatched --> OutOfScope: 東京23区対象外
+  OutOfScope --> [*]
+
+  IdentityMatched --> VenuePending: venue_idなし
+  VenuePending --> VenueReviewed: 会場作成/既存会場選定
+  VenueReviewed --> VenuePending: 区/address/source不備
+
+  VenueReviewed --> DatePending: 日程未確認
+  VenueReviewed --> DateConfirmed: 2026日程確認
+  DatePending --> DateConfirmed: 公式根拠で日程確認
+
+  DateConfirmed --> RdbDryRunReady: apply plan生成
+  DatePending --> RdbDryRunReady: 未確認公開候補としてレビュー
+  RdbDryRunReady --> RdbReviewed: dry-run/report確認
+  RdbReviewed --> RdbApplied: 明示承認 + 確認文字列
+
+  RdbApplied --> PublicationGapCheck: build_publication_gap_review.py
+  PublicationGapCheck --> RdbDryRunReady: blockerあり
+  PublicationGapCheck --> PublicExported: blockerなし
+
+  PublicExported --> SyncGuarded: guard_public_events_sync.py
+  SyncGuarded --> RdbDryRunReady: guard block
+  SyncGuarded --> SiteSynced: guard pass + site差分確認
+
+  SiteSynced --> DeployHeld: デプロイ承認なし
+  SiteSynced --> Deployed: 明示承認あり
+  DeployHeld --> Deployed: 後日まとめて承認
+  Deployed --> [*]
