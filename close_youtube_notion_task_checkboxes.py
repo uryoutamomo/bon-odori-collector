@@ -6,6 +6,7 @@ import os
 import urllib.request
 from datetime import datetime, timezone
 
+from manual_apply_guards import NOTION_WORKLOG_MAINTENANCE_CONFIRMATION, require_confirmation
 from notion_config import load_local_env
 
 
@@ -120,6 +121,7 @@ def append_close_note():
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--confirm", default="")
     args = parser.parse_args()
 
     if not NOTION_TOKEN:
@@ -130,6 +132,15 @@ def main():
             print(f"Would check {block_id}: {text}")
         print(f"Would append close note to: {YOUTUBE_TASK_PAGE_ID}")
         return
+    try:
+        require_confirmation(
+            True,
+            args.confirm,
+            NOTION_WORKLOG_MAINTENANCE_CONFIRMATION,
+            "YouTube Notion task checkbox close",
+        )
+    except ValueError as exc:
+        parser.error(str(exc))
 
     for block_id, text in TASK_UPDATES.items():
         update_todo(block_id, text)

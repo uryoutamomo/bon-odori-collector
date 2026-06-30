@@ -4,10 +4,13 @@ This script is intentionally explicit: candidates and paused accounts are
 listed in code so a local run is auditable.
 """
 
+import argparse
 import json
 import os
 from datetime import datetime, timezone
 from pathlib import Path
+
+from manual_apply_guards import LEGACY_NOTION_REPAIR_CONFIRMATION, require_confirmation
 
 
 ADD_CANDIDATES = [
@@ -115,6 +118,19 @@ def pause_accounts(handles):
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--confirm", default="")
+    args = parser.parse_args()
+    try:
+        require_confirmation(
+            True,
+            args.confirm,
+            LEGACY_NOTION_REPAIR_CONFIRMATION,
+            "legacy X member replacement",
+        )
+    except ValueError as exc:
+        parser.error(str(exc))
+
     load_dotenv()
 
     import collect

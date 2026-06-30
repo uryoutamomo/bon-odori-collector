@@ -1,17 +1,14 @@
-name: weekly-harvest
+name: manual-song-glossary-harvest-fallback
 
 on:
-  schedule:
-    # 毎週木曜 10:23 JST (UTC 01:23) に実行。GitHub schedule混雑回避のため0分を避ける。
-    - cron: '23 1 * * 4'
   workflow_dispatch:
     inputs:
       days:
-        description: '候補収穫の対象日数'
+        description: '手動フォールバック時の候補収穫対象日数'
         required: false
-        default: '7'
+        default: '3'
       apply_reviewed:
-        description: 'レビュー済みJSONを legacy Notion-backed song/glossary flow へ反映する'
+        description: 'レビュー済みJSONを legacy Notion-backed song/glossary flow へ反映する（手動時のみ）'
         required: false
         type: boolean
         default: false
@@ -20,6 +17,11 @@ on:
         required: false
         type: boolean
         default: true
+      sync_weekly_costs_to_notion:
+        description: '週次コストをNotionへ書き込む。手動fallback実行でも通常はfalseのままにする'
+        required: false
+        type: boolean
+        default: false
 
 concurrency:
   group: bon-odori-master-rdb
@@ -33,7 +35,8 @@ jobs:
       id-token: write
 
     env:
-      HARVEST_DAYS: ${{ inputs.days || '7' }}
+      HARVEST_DAYS: ${{ inputs.days || '3' }}
+      SYNC_WEEKLY_COSTS_TO_NOTION: ${{ inputs.sync_weekly_costs_to_notion || false }}
 
     steps:
     - name: Checkout repository
@@ -65,8 +68,17 @@ jobs:
         AWS_REGION: ap-northeast-1
       run: python master_db_s3_artifact.py fetch --overwrite
 
+    - name: Audit fetched master RDB
+      if: ${{ vars.MASTER_DB_S3_BUCKET != '' }}
+      run: |
+        python audit_master_rdb.py \
+          --out-json "$RUNNER_TEMP/master_rdb_audit.json" \
+          --out-md "$RUNNER_TEMP/master_rdb_audit.md" \
+          --append-github-summary
+
     - name: Refresh public events from master RDB
       run: |
+        TODAY="$(TZ=Asia/Tokyo date +%F)"
         python export_public_events.py
         if python master_rdb_freeze_policy.py is-frozen legacy_song_occurrence_generation; then
           echo "[master-rdb] legacy song occurrence generation frozen: skip build_song_occurrences.py"
@@ -74,6 +86,9 @@ jobs:
           python build_song_occurrences.py
         fi
         python export_public_events.py
+        python apply_public_date_predictions.py
+        python apply_public_historical_references.py --today "$TODAY"
+        python apply_public_season_hints.py
         python build_song_ocr_queue.py
         if python master_rdb_freeze_policy.py is-frozen legacy_song_occurrence_generation; then
           echo "[master-rdb] legacy song occurrence generation frozen: skip calibrate_song_predictions.py"
@@ -82,7 +97,7 @@ jobs:
         fi
         python build_retrospective_harvest.py
 
-    - name: Build weekly harvest candidates
+    - name: Build manual fallback harvest candidates
       run: python build_weekly_harvest_candidates.py --days "$HARVEST_DAYS"
 
     - name: Triage song candidates in dry-run mode
@@ -93,10 +108,17 @@ jobs:
     - name: Prepare review queues and summary
       run: python prepare_weekly_harvest_review.py
 
-    - name: Sync weekly cost record
+    - name: Prepare weekly cost record in dry-run by default
       env:
         NOTION_API_TOKEN: ${{ secrets.NOTION_API_TOKEN }}
-      run: python sync_weekly_costs.py --apply
+      run: |
+        FLAGS="--append-github-summary"
+        if [ "$SYNC_WEEKLY_COSTS_TO_NOTION" = "true" ]; then
+          FLAGS="$FLAGS --apply"
+        else
+          echo "[weekly-cost] Notion apply disabled; writing dry-run report only."
+        fi
+        python sync_weekly_costs.py $FLAGS
 
     - name: Build term/co-occurrence review UI
       run: |
@@ -104,7 +126,7 @@ jobs:
           --input data/weekly_harvest_review_candidates.json \
           --rows-key rows \
           --out data/weekly_harvest_review_ui.html \
-          --title '週次収穫レビュー（用語・共起）' \
+          --title '日次X収穫レビュー（用語・共起）' \
           --term-field term \
           --category-field category \
           --summary-fields interpretation,type,confidence,evidence_count \
@@ -120,7 +142,7 @@ jobs:
           --input data/weekly_song_candidates_review.json \
           --rows-key rows \
           --out data/weekly_song_candidates_review_ui.html \
-          --title '週次収穫レビュー（曲候補）' \
+          --title '日次X収穫レビュー（曲候補）' \
           --term-field term \
           --category-field category \
           --summary-fields canonical_song_name,triage_reason,evidence_count \
@@ -172,6 +194,7 @@ jobs:
         git add data/weekly_harvest_summary.json
         git add data/weekly_harvest_summary.md
         git add data/weekly_cost_sync_result.json
+        git add data/weekly_cost_sync_result.md
         git add data/weekly_song_candidates_review.json
         git add data/weekly_song_candidates_review_ui.html
         git add data/weekly_song_triage_result.json
@@ -198,4 +221,4 @@ jobs:
         [ -f data/song_evidence_manual.json ] && git add data/song_evidence_manual.json
         [ -f data/prediction_params.json ] && git add data/prediction_params.json
         [ -f data/retrospective_harvest_candidates.json ] && git add data/retrospective_harvest_candidates.json
-        git diff --cached --quiet || (git commit -m "Update weekly harvest review queues" && git push)
+        git diff --cached --quiet || (git commit -m "Update manual song/glossary harvest review queues" && git push)

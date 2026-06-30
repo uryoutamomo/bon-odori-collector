@@ -2,6 +2,15 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
   "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
+<!--
+  Manual fallback template only.
+
+  The daily scheduler for YouTube backfill is GitHub Actions:
+  .github/workflows/youtube_daily_backfill.yml
+
+  Keep this plist without StartCalendarInterval so copying it into
+  ~/Library/LaunchAgents does not create a second daily quota consumer.
+-->
 <dict>
   <key>Label</key>
   <string>com.ryotauchida.bon-odori.youtube-daily</string>
@@ -26,16 +35,10 @@
     <string>5</string>
     <string>--retry-selected</string>
     <string>--until-quota-limited</string>
+    <string>--max-batches</string>
+    <string>1</string>
     <string>--mail-reminder</string>
   </array>
-
-  <key>StartCalendarInterval</key>
-  <dict>
-    <key>Hour</key>
-    <integer>5</integer>
-    <key>Minute</key>
-    <integer>0</integer>
-  </dict>
 
   <key>StandardOutPath</key>
   <string>/Users/ryotauchida/bon-odori-collector/logs/youtube-daily.out.log</string>

@@ -8,6 +8,7 @@ import json
 from pathlib import Path
 
 from export_public_events import apply_public_event_name_cleanup, clean_public_event_name, write_public_js
+from manual_apply_guards import PUBLIC_JSON_ONE_OFF_CONFIRMATION, require_confirmation
 
 
 ROOT = Path(__file__).resolve().parent
@@ -51,7 +52,17 @@ def main():
     parser.add_argument("--public", default=str(DEFAULT_PUBLIC))
     parser.add_argument("--public-js", default=str(DEFAULT_PUBLIC_JS))
     parser.add_argument("--apply", action="store_true")
+    parser.add_argument("--confirm", default="")
     args = parser.parse_args()
+    try:
+        require_confirmation(
+            args.apply,
+            args.confirm,
+            PUBLIC_JSON_ONE_OFF_CONFIRMATION,
+            "public JSON event-name cleanup",
+        )
+    except ValueError as exc:
+        parser.error(str(exc))
 
     public_path = Path(args.public)
     events = read_json(public_path)

@@ -1,6 +1,8 @@
+import argparse
 import json
 import os
 
+from manual_apply_guards import LEGACY_NOTION_REPAIR_CONFIRMATION, require_confirmation
 from notion_api import NotionApi, plain_text
 from notion_config import EVENT_DATA_SOURCE_ID, VENUE_DATA_SOURCE_ID
 
@@ -111,6 +113,19 @@ def clean_venue_text(api):
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--confirm", default="")
+    args = parser.parse_args()
+    try:
+        require_confirmation(
+            True,
+            args.confirm,
+            LEGACY_NOTION_REPAIR_CONFIRMATION,
+            "legacy venue master cleanup",
+        )
+    except ValueError as exc:
+        parser.error(str(exc))
+
     api = NotionApi(os.environ.get("NOTION_API_TOKEN"))
     actions = [merge_sakamoto(api), clean_venue_text(api)]
     print(json.dumps(actions, ensure_ascii=False, indent=2))

@@ -16,6 +16,10 @@ on:
         description: "Optional commit that still contains data/bon_odori_master.sqlite"
         required: false
         type: string
+      confirm:
+        description: "Type BOOTSTRAP MASTER RDB S3 to publish the initial artifact"
+        required: true
+        type: string
 
 jobs:
   publish:
@@ -43,6 +47,18 @@ jobs:
         with:
           role-to-assume: ${{ vars.AWS_ROLE_ARN }}
           aws-region: ap-northeast-1
+
+      - name: Validate bootstrap confirmation
+        env:
+          CONFIRMATION: ${{ inputs.confirm }}
+        run: |
+          set -euo pipefail
+          expected="BOOTSTRAP MASTER RDB S3"
+          if [ "$CONFIRMATION" != "$expected" ]; then
+            echo "This workflow publishes an initial Master RDB artifact."
+            echo "Re-run with confirm='$expected'."
+            exit 1
+          fi
 
       - name: Restore master DB from Git history
         env:

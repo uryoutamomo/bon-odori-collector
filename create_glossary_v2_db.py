@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 """Create the glossary v2 Notion database if it does not already exist."""
 
+import argparse
 import json
 import os
 import urllib.request
 
+from manual_apply_guards import LEGACY_NOTION_REPAIR_CONFIRMATION, require_confirmation
 from notion_config import (
     EVENT_DATABASE_ID,
     VENUE_DATABASE_ID,
@@ -71,6 +73,7 @@ def create_database(parent):
         "title": [{"type": "text", "text": {"content": TITLE}}],
         "properties": {
             "使用語": {"title": {}},
+            "読み": {"rich_text": {}},
             "解釈": {"rich_text": {}},
             "種別": {
                 "select": {
@@ -142,12 +145,25 @@ def create_database(parent):
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--confirm", default="")
+    args = parser.parse_args()
+
     if not TOKEN:
         raise SystemExit("NOTION_API_TOKEN is not set")
     existing_id = find_existing_database()
     if existing_id:
         print(f"exists: {existing_id}")
         return
+    try:
+        require_confirmation(
+            True,
+            args.confirm,
+            LEGACY_NOTION_REPAIR_CONFIRMATION,
+            "legacy glossary v2 database creation",
+        )
+    except ValueError as exc:
+        parser.error(str(exc))
     created = create_database(legacy_parent())
     print(f"created: {created['id']}")
 

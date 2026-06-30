@@ -2,6 +2,7 @@
 
 import argparse
 import json
+import os
 import sqlite3
 from collections import Counter
 from datetime import datetime, timezone
@@ -312,6 +313,21 @@ def render_markdown(result):
     return "\n".join(lines) + "\n"
 
 
+def append_github_summary(markdown_path, explicit_path=None):
+    target = explicit_path or os.environ.get("GITHUB_STEP_SUMMARY")
+    if not target:
+        return None
+    markdown_path = Path(markdown_path)
+    if not markdown_path.exists():
+        return None
+    summary_path = Path(target)
+    with summary_path.open("a", encoding="utf-8") as handle:
+        handle.write("\n\n")
+        handle.write(markdown_path.read_text(encoding="utf-8"))
+        handle.write("\n")
+    return str(summary_path)
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--db", default=str(MASTER_DB))
@@ -320,16 +336,23 @@ def main():
     parser.add_argument("--manifest", default=str(MASTER_MANIFEST))
     parser.add_argument("--out-json", default=str(OUT_JSON))
     parser.add_argument("--out-md", default=str(OUT_MD))
+    parser.add_argument("--append-github-summary", action="store_true")
+    parser.add_argument("--github-summary")
     args = parser.parse_args()
     result = audit(args)
     write_json(args.out_json, result)
     Path(args.out_md).write_text(render_markdown(result), encoding="utf-8")
+    summary_path = None
+    if args.append_github_summary or args.github_summary:
+        summary_path = append_github_summary(args.out_md, args.github_summary)
     print(
         "master rdb audit: "
         f"issues={result['issue_count']} "
         f"severity={result['issues_by_severity']} "
         f"checks={result['check_counts']}"
     )
+    if summary_path:
+        print(f"github_summary={summary_path}")
     return 1 if result["issues_by_severity"].get("high") else 0
 
 

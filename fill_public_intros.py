@@ -9,6 +9,7 @@ import argparse
 import os
 import re
 
+from manual_apply_guards import LEGACY_NOTION_REPAIR_CONFIRMATION, require_confirmation
 from notion_api import NotionApi, plain_text
 import notion_config
 from export_public_venues import (
@@ -215,8 +216,18 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--kind", choices=("events", "venues", "all"), default="all")
     parser.add_argument("--apply", action="store_true")
+    parser.add_argument("--confirm", default="")
     parser.add_argument("--limit", type=int)
     args = parser.parse_args()
+    try:
+        require_confirmation(
+            args.apply,
+            args.confirm,
+            LEGACY_NOTION_REPAIR_CONFIRMATION,
+            "legacy public intro Notion fill",
+        )
+    except ValueError as exc:
+        parser.error(str(exc))
 
     updates = build_updates(args.kind)
     if args.limit:

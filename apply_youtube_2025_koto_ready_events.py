@@ -8,6 +8,7 @@ import tempfile
 from datetime import date, datetime, timezone
 from pathlib import Path
 
+from manual_apply_guards import LEGACY_YOUTUBE_NOTION_CONFIRMATION, require_confirmation
 from notion_api import NotionApi, plain_text
 from notion_config import EVENT_DATA_SOURCE_ID, VENUE_DATA_SOURCE_ID, load_local_env
 
@@ -302,9 +303,19 @@ def render_markdown(output):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--apply", action="store_true")
+    parser.add_argument("--confirm", default="")
     parser.add_argument("--out", type=Path, default=OUT)
     parser.add_argument("--markdown-out", type=Path, default=MD_OUT)
     args = parser.parse_args()
+    try:
+        require_confirmation(
+            args.apply,
+            args.confirm,
+            LEGACY_YOUTUBE_NOTION_CONFIRMATION,
+            "legacy YouTube 2025 koto-ready Notion update",
+        )
+    except ValueError as exc:
+        parser.error(str(exc))
 
     load_local_env()
     api = NotionApi(os.environ.get("NOTION_API_TOKEN"))

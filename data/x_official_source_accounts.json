@@ -1,0 +1,23 @@
+{
+  "updated_at": "2026-06-29",
+  "updated_by": "おと（Codex）",
+  "purpose": "Organizer and official social accounts that can provide direct event evidence when their posts include event name, date, venue, and time.",
+  "accounts": [
+    {
+      "handle": "@iri2choukai",
+      "name": "入船二丁目町会",
+      "description": "東京都中央区入船二丁目町会です。生年月日は旧入船町會の創立日です。担当 広報部",
+      "location": "東京都中央区入船二丁目",
+      "source_type": "official_or_organizer_social",
+      "trust_level": "organizer_official",
+      "manual_status": "優先",
+      "evidence_url": "https://x.com/iri2choukai",
+      "related_event_keywords": [
+        "鉄砲洲納涼盆踊り",
+        "鉄砲洲",
+        "鉄砲洲公園"
+      ],
+      "notes": "鉄砲洲納涼盆踊り 2026 告知投稿を町会広報アカウントとして確認。X認証はないため、公開前レビューで投稿本文とアカウントプロフィールを確認する。"
+    }
+  ]
+}

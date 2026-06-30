@@ -13,6 +13,7 @@ NOTION_VERSION = "2022-06-28"
 JST = timezone(timedelta(hours=9))
 DEFAULT_BUDGET_FILE = "data/x_budget.json"
 DEFAULT_OUT = "data/weekly_cost_sync_result.json"
+DEFAULT_MD_OUT = "data/weekly_cost_sync_result.md"
 
 
 def week_start_for(value):
@@ -210,6 +211,56 @@ def build_properties(title_property, summary):
     }
 
 
+def render_markdown(result):
+    mode = "applied" if result["applied"] else "dry-run"
+    notion_write = "yes" if result["applied"] else "no"
+    lines = [
+        "# Weekly Cost Sync",
+        "",
+        f"- mode: {mode}",
+        f"- notion_write: {notion_write}",
+        f"- period: {result['period']}",
+        f"- week_start: {result['week_start']}",
+        f"- week_end: {result['week_end']}",
+        f"- action: {result['action']}",
+        f"- schema_changed: {result['schema_changed']}",
+        f"- database_source: {result['database_source']}",
+        f"- twitterapi.io: ${result['twitterapi_io']:.6f}",
+        f"- GitHub Actions: ${result['github_actions']:.6f}",
+        f"- Notion: ${result['notion']:.6f}",
+        f"- Gmail SMTP: ${result['gmail_smtp']:.6f}",
+        f"- total: ${result['total']:.6f}",
+        "",
+        "## Daily twitterapi.io",
+        "",
+        "| date | cost |",
+        "| --- | ---: |",
+    ]
+    for day, cost in result["daily"].items():
+        lines.append(f"| {day} | ${cost:.6f} |")
+    lines.append("")
+    if not result["applied"]:
+        lines.extend([
+            "## Manual Apply",
+            "",
+            "This scheduled run did not write to Notion. "
+            "To write the weekly cost record, run `manual-song-glossary-harvest-fallback` "
+            "manually with `sync_weekly_costs_to_notion=true`.",
+            "",
+        ])
+    return "\n".join(lines)
+
+
+def append_github_summary(markdown):
+    summary_path = os.environ.get("GITHUB_STEP_SUMMARY")
+    if not summary_path:
+        return False
+    with open(summary_path, "a", encoding="utf-8") as handle:
+        handle.write(markdown)
+        handle.write("\n")
+    return True
+
+
 def upsert_weekly_cost(token, database_id, summary, apply):
     database_id, database, schema_changed, database_source = ensure_database_shape(
         token,
@@ -253,10 +304,12 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--budget-file", default=DEFAULT_BUDGET_FILE)
     parser.add_argument("--out", default=DEFAULT_OUT)
+    parser.add_argument("--out-md", default=DEFAULT_MD_OUT)
     parser.add_argument("--database-id", default=COST_DATABASE_ID)
     parser.add_argument("--week-start")
     parser.add_argument("--today")
     parser.add_argument("--apply", action="store_true")
+    parser.add_argument("--append-github-summary", action="store_true")
     args = parser.parse_args()
 
     load_local_env()
@@ -276,6 +329,13 @@ def main():
     with open(args.out, "w", encoding="utf-8") as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
         f.write("\n")
+    markdown = render_markdown(result)
+    os.makedirs(os.path.dirname(args.out_md) or ".", exist_ok=True)
+    with open(args.out_md, "w", encoding="utf-8") as f:
+        f.write(markdown)
+        f.write("\n")
+    if args.append_github_summary:
+        append_github_summary(markdown)
 
     mode = "applied" if args.apply else "dry-run"
     print(

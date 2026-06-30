@@ -31,6 +31,18 @@ class AuditMasterRdbTest(unittest.TestCase):
             self.assertNotIn("high", result["issues_by_severity"])
             self.assertIsNone(result["source_counts"]["notion_venues"])
 
+    def test_append_github_summary(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp = Path(tmp)
+            markdown = tmp / "audit.md"
+            summary = tmp / "summary.md"
+            markdown.write_text("# Master RDB audit\n\n- issue_count: 0\n", encoding="utf-8")
+
+            result = audit_master_rdb.append_github_summary(markdown, summary)
+
+            self.assertEqual(result, str(summary))
+            self.assertIn("issue_count: 0", summary.read_text(encoding="utf-8"))
+
 
 if __name__ == "__main__":
     unittest.main()

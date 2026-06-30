@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 """Apply small schema updates to the glossary v2 Notion database."""
 
+import argparse
 import json
 import os
 import urllib.request
 
+from manual_apply_guards import LEGACY_NOTION_REPAIR_CONFIRMATION, require_confirmation
 from notion_config import GLOSSARY_V2_DATABASE_ID, load_local_env
 
 
@@ -27,6 +29,10 @@ def notion_request(method, path, payload=None):
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--confirm", default="")
+    args = parser.parse_args()
+
     if not TOKEN:
         raise SystemExit("NOTION_API_TOKEN is not set")
     database = notion_request("GET", f"/databases/{DB_ID}")
@@ -36,6 +42,15 @@ def main():
         return
     if "正規語/表示名" not in props:
         raise SystemExit("neither 解釈 nor 正規語/表示名 exists")
+    try:
+        require_confirmation(
+            True,
+            args.confirm,
+            LEGACY_NOTION_REPAIR_CONFIRMATION,
+            "legacy glossary v2 schema update",
+        )
+    except ValueError as exc:
+        parser.error(str(exc))
     notion_request("PATCH", f"/databases/{DB_ID}", {
         "properties": {
             "正規語/表示名": {"name": "解釈"}

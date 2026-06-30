@@ -139,10 +139,19 @@ class SyncGcalTest(unittest.TestCase):
     def test_sync_creates_only_confirmed_dated_event(self):
         api = FakeApi([event_page()], [plan_page()])
         gcal = FakeGcal()
-        stats = sync(api, gcal)
+        stats = sync(api, gcal, apply_changes=True)
         self.assertEqual(stats["created"], 1)
         self.assertEqual(gcal.event_api.calls[0][0], "insert")
         self.assertEqual(api.updates[0][0], "plan-1")
+
+    def test_sync_defaults_to_dry_run_without_calendar_or_notion_writes(self):
+        api = FakeApi([event_page()], [plan_page()])
+        gcal = FakeGcal()
+        stats = sync(api, gcal)
+        self.assertEqual(stats["would_create"], 1)
+        self.assertEqual(stats["created"], 0)
+        self.assertEqual(gcal.event_api.calls, [])
+        self.assertEqual(api.updates, [])
 
     def test_sync_skips_unconfirmed_event(self):
         api = FakeApi(
@@ -158,15 +167,32 @@ class SyncGcalTest(unittest.TestCase):
             [plan_page(gcal_id="gcal-old")],
         )
         gcal = FakeGcal()
-        stats = sync(api, gcal)
+        stats = sync(api, gcal, apply_changes=True)
         self.assertEqual(stats["deleted"], 1)
         self.assertEqual(gcal.event_api.calls[0][0], "delete")
         self.assertEqual(api.updates[0][1]["日付"], {"date": None})
+
+    def test_sync_dry_run_counts_calendar_deletion_without_writing(self):
+        api = FakeApi(
+            [event_page(state="未確認")],
+            [plan_page(gcal_id="gcal-old")],
+        )
+        gcal = FakeGcal()
+        stats = sync(api, gcal)
+        self.assertEqual(stats["would_delete"], 1)
+        self.assertEqual(stats["deleted"], 0)
+        self.assertEqual(gcal.event_api.calls, [])
+        self.assertEqual(api.updates, [])
 
     def test_sync_rejects_noncanonical_relation(self):
         api = FakeApi([event_page()], [plan_page(event_id="old-event")])
         with self.assertRaisesRegex(ValueError, "non-canonical"):
             sync(api, FakeGcal())
+
+    def test_apply_requires_gcal_service(self):
+        api = FakeApi([event_page()], [plan_page()])
+        with self.assertRaisesRegex(ValueError, "gcal service"):
+            sync(api, None, apply_changes=True)
 
 
 if __name__ == "__main__":

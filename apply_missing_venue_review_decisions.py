@@ -6,6 +6,7 @@ import json
 import os
 from pathlib import Path
 
+from manual_apply_guards import LEGACY_NOTION_REPAIR_CONFIRMATION, require_confirmation
 from notion_config import VENUE_DATABASE_ID, load_local_env
 from triage_weekly_song_candidates import notion_request, title_index, norm, rich_text
 
@@ -229,10 +230,20 @@ def main():
     parser.add_argument("--out", type=Path, default=OUT)
     parser.add_argument("--out-md", type=Path, default=OUT_MD)
     parser.add_argument("--apply", action="store_true")
+    parser.add_argument("--confirm", default="")
     args = parser.parse_args()
 
     if not TOKEN:
         raise SystemExit("NOTION_API_TOKEN is not set")
+    try:
+        require_confirmation(
+            args.apply,
+            args.confirm,
+            LEGACY_NOTION_REPAIR_CONFIRMATION,
+            "legacy missing venue review Notion apply",
+        )
+    except ValueError as exc:
+        parser.error(str(exc))
 
     created, existing, merged, rejected, held, skipped = apply_decisions(
         source_rows(args.source),

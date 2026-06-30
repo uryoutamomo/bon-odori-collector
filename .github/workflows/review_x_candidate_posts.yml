@@ -8,6 +8,11 @@ on:
         required: false
         type: boolean
         default: false
+      confirm:
+        description: '通常レビューは REVIEW X CANDIDATES、Notion同期は SYNC APPROVED X MEMBERS と入力'
+        required: false
+        type: string
+        default: ""
 
 concurrency:
   group: bon-odori-master-rdb
@@ -27,6 +32,23 @@ jobs:
       uses: actions/setup-python@v6
       with:
         python-version: '3.x'
+
+    - name: Validate manual X workflow confirmation
+      env:
+        SYNC_ONLY: ${{ inputs.sync_only }}
+        CONFIRMATION: ${{ inputs.confirm }}
+      run: |
+        set -euo pipefail
+        if [[ "$SYNC_ONLY" == "true" ]]; then
+          expected="SYNC APPROVED X MEMBERS"
+        else
+          expected="REVIEW X CANDIDATES"
+        fi
+        if [[ "$CONFIRMATION" != "$expected" ]]; then
+          echo "This workflow either spends X API quota or writes approved members to Notion."
+          echo "Re-run with confirm='$expected'."
+          exit 1
+        fi
 
     - name: Review candidate accounts by recent posts
       if: ${{ !inputs.sync_only }}

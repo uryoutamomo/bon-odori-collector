@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Sync canonical Notion participation plans to Google Calendar."""
 
+import argparse
 import os
 from datetime import date, datetime, timedelta
 
@@ -44,6 +45,15 @@ VENUE_SCHEMA = {
     "住所": {"type": "rich_text"},
     "所在区・市": {"type": "rich_text"},
 }
+STAT_KEYS = (
+    "created",
+    "updated",
+    "deleted",
+    "would_create",
+    "would_update",
+    "would_delete",
+    "skipped",
+)
 
 
 def get_gcal_service():
@@ -161,12 +171,26 @@ def _delete_calendar_entry(api, gcal, plan_id, gcal_id):
     )
 
 
-def sync(api, gcal):
+def _empty_stats():
+    return {key: 0 for key in STAT_KEYS}
+
+
+def _delete_or_count(api, gcal, plan_id, gcal_id, stats, apply_changes):
+    if apply_changes:
+        _delete_calendar_entry(api, gcal, plan_id, gcal_id)
+        stats["deleted"] += 1
+    else:
+        stats["would_delete"] += 1
+
+
+def sync(api, gcal=None, apply_changes=False):
+    if apply_changes and gcal is None:
+        raise ValueError("gcal service is required when apply_changes=True")
     events = validate_notion_setup(api)
     event_cache = {row["id"]: row for row in events}
     venue_cache = {}
     plans = api.query_data_source(PLAN_DATA_SOURCE_ID)
-    stats = {"created": 0, "updated": 0, "deleted": 0, "skipped": 0}
+    stats = _empty_stats()
 
     for plan in plans:
         plan_id = plan["id"]
@@ -177,10 +201,7 @@ def sync(api, gcal):
 
         if participation not in ("参加予定", "検討中"):
             if gcal_id:
-                _delete_calendar_entry(
-                    api, gcal, plan_id, gcal_id
-                )
-                stats["deleted"] += 1
+                _delete_or_count(api, gcal, plan_id, gcal_id, stats, apply_changes)
             else:
                 stats["skipped"] += 1
             continue
@@ -197,10 +218,7 @@ def sync(api, gcal):
         event_props = event["properties"]
         if plain_text(event_props.get("状態")) != "確認済み":
             if gcal_id:
-                _delete_calendar_entry(
-                    api, gcal, plan_id, gcal_id
-                )
-                stats["deleted"] += 1
+                _delete_or_count(api, gcal, plan_id, gcal_id, stats, apply_changes)
             else:
                 stats["skipped"] += 1
             continue
@@ -216,48 +234,63 @@ def sync(api, gcal):
         body = build_gcal_event(plan, event, venue)
         if not body:
             if gcal_id:
-                _delete_calendar_entry(
-                    api, gcal, plan_id, gcal_id
-                )
-                stats["deleted"] += 1
+                _delete_or_count(api, gcal, plan_id, gcal_id, stats, apply_changes)
             else:
                 stats["skipped"] += 1
             continue
         date_prop = _calendar_date_property(body)
 
         if gcal_id:
-            gcal.events().update(
-                calendarId="primary", eventId=gcal_id, body=body
-            ).execute()
-            api.update_page(plan_id, {"日付": date_prop})
-            stats["updated"] += 1
+            if apply_changes:
+                gcal.events().update(
+                    calendarId="primary", eventId=gcal_id, body=body
+                ).execute()
+                api.update_page(plan_id, {"日付": date_prop})
+                stats["updated"] += 1
+            else:
+                stats["would_update"] += 1
         else:
-            created = gcal.events().insert(
-                calendarId="primary", body=body
-            ).execute()
-            api.update_page(
-                plan_id,
-                {
-                    "GCal同期ID": {
-                        "rich_text": [
-                            {"text": {"content": created["id"]}}
-                        ]
+            if apply_changes:
+                created = gcal.events().insert(
+                    calendarId="primary", body=body
+                ).execute()
+                api.update_page(
+                    plan_id,
+                    {
+                        "GCal同期ID": {
+                            "rich_text": [
+                                {"text": {"content": created["id"]}}
+                            ]
+                        },
+                        "日付": date_prop,
                     },
-                    "日付": date_prop,
-                },
-            )
-            stats["created"] += 1
+                )
+                stats["created"] += 1
+            else:
+                stats["would_create"] += 1
     return stats
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--apply",
+        action="store_true",
+        help="Google Calendar and Notion GCal sync fields. Default is dry-run.",
+    )
+    args = parser.parse_args()
+
     load_local_env()
     api = NotionApi(os.environ.get("NOTION_API_TOKEN"))
-    stats = sync(api, get_gcal_service())
+    gcal = get_gcal_service() if args.apply else None
+    stats = sync(api, gcal, apply_changes=args.apply)
+    mode = "apply" if args.apply else "dry-run"
     print(
-        "完了: "
+        f"完了 ({mode}): "
         + " ".join(f"{name}={value}" for name, value in stats.items())
     )
+    if not args.apply:
+        print("反映する場合は内容確認後に `python3 sync_gcal.py --apply` を実行してください")
 
 
 if __name__ == "__main__":

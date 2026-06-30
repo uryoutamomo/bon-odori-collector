@@ -8,6 +8,7 @@ import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
+from manual_apply_guards import NOTION_WORKLOG_MAINTENANCE_CONFIRMATION, require_confirmation
 from notion_config import load_local_env
 
 
@@ -164,10 +165,28 @@ def main():
     parser.add_argument("--parent-page-id", default="")
     parser.add_argument("--archive-page-id", default="")
     parser.add_argument("--out", default=str(OUT))
+    parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--confirm", default="")
     args = parser.parse_args()
+    try:
+        require_confirmation(
+            not args.dry_run,
+            args.confirm,
+            NOTION_WORKLOG_MAINTENANCE_CONFIRMATION,
+            "YouTube task-list page lifecycle maintenance",
+        )
+    except ValueError as exc:
+        parser.error(str(exc))
 
     if not NOTION_TOKEN:
         raise SystemExit("NOTION_API_TOKEN is not set")
+    if args.dry_run:
+        parent_page_id = args.parent_page_id or NOTION_PAGE_ID or DEFAULT_PARENT_PAGE_ID
+        print(f"Would create YouTube task-list page under: {parent_page_id}")
+        if args.archive_page_id:
+            print(f"Would archive old YouTube task-list page: {args.archive_page_id}")
+        print(f"Would write result JSON: {args.out}")
+        return
     parent_page_id, parent_title = choose_parent_page_id(args.parent_page_id)
     title = "今後の課題リスト: YouTubeデータ活用"
     if args.archive_page_id:

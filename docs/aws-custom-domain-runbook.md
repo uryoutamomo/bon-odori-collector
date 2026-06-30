@@ -52,6 +52,19 @@ validation is often 5 to 30 minutes after the validation CNAME is visible.
 7. Create Route53 A/AAAA ALIAS records to the CloudFront distribution.
 8. Verify `https://DOMAIN_NAME/` and optional `https://www.DOMAIN_NAME/`.
 
+## GitHub Actions guardrail
+
+The site repository has manual GitHub Actions workflows for this infrastructure
+area:
+
+- `configure-custom-domain.yml`
+- `configure-contact-form.yml`
+- `configure-waf.yml`
+
+Keep these workflows manual. Dry-run uses `apply=false`. Real changes require
+`apply=true` and the workflow-specific confirmation text documented in
+`docs/manual-infra-workflows.md`.
+
 ## Dry-run helper
 
 The helper prints the AWS CLI actions and can execute them only when

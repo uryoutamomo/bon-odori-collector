@@ -2,6 +2,8 @@ name: youtube-daily-backfill
 
 on:
   schedule:
+    # YouTube日次バックフィルの正の自動実行元。
+    # ローカルLaunchAgentは手動フォールバック専用にする。
     # 毎日 05:00 JST (UTC 20:00) に実行。
     - cron: '0 20 * * *'
   workflow_dispatch:
@@ -74,6 +76,14 @@ jobs:
         AWS_REGION: ap-northeast-1
       run: python master_db_s3_artifact.py fetch --overwrite
 
+    - name: Audit fetched master RDB
+      if: ${{ vars.MASTER_DB_S3_BUCKET != '' }}
+      run: |
+        python audit_master_rdb.py \
+          --out-json "$RUNNER_TEMP/master_rdb_audit.json" \
+          --out-md "$RUNNER_TEMP/master_rdb_audit.md" \
+          --append-github-summary
+
     - name: Check YouTube API key
       if: ${{ env.DRY_RUN != 'true' }}
       run: test -n "$YOUTUBE_DATA_API_KEY"
@@ -102,8 +112,17 @@ jobs:
     - name: Append run summary
       run: |
         if [ -f data/youtube_daily_backfill_report.md ]; then
+          echo "## YouTube日次バックフィル詳細" >> "$GITHUB_STEP_SUMMARY"
           cat data/youtube_daily_backfill_report.md >> "$GITHUB_STEP_SUMMARY"
         fi
+        if [ -f data/ops_metrics_latest.md ]; then
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "## 運用メトリクス最新" >> "$GITHUB_STEP_SUMMARY"
+          cat data/ops_metrics_latest.md >> "$GITHUB_STEP_SUMMARY"
+        fi
+
+    - name: Run post-batch maintenance report
+      run: python run_post_batch_maintenance.py --append-github-summary
 
     - name: Commit result branch
       id: commit
@@ -114,6 +133,8 @@ jobs:
         git checkout -B automation/youtube-daily-backfill
         git add data/youtube_daily_backfill_report.json
         git add data/youtube_daily_backfill_report.md
+        git add data/post_batch_maintenance_report.json
+        git add data/post_batch_maintenance_report.md
         git add data/pending_mail.json
         git add data/youtube_year_backfill_candidates.json
         git add data/youtube_year_backfill_candidates.md
@@ -159,8 +180,27 @@ jobs:
       env:
         GH_TOKEN: ${{ github.token }}
       run: |
-        BODY=$(cat <<'EOF'
+        REPORT_SUMMARY=""
+        if [ -f data/youtube_daily_backfill_report.md ]; then
+          REPORT_SUMMARY=$(sed -n '1,120p' data/youtube_daily_backfill_report.md)
+        fi
+        OPS_SUMMARY=""
+        if [ -f data/ops_metrics_latest.md ]; then
+          OPS_SUMMARY=$(sed -n '1,80p' data/ops_metrics_latest.md)
+        fi
+        BODY=$(cat <<EOF
         Automated YouTube daily backfill result.
+
+        Actions run:
+        ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}
+
+        ## Latest run summary
+
+        ${REPORT_SUMMARY}
+
+        ## Latest operations metrics
+
+        ${OPS_SUMMARY}
 
         Scope:
         - Focus months: June and July
@@ -168,7 +208,8 @@ jobs:
         - Thin previously selected rows can be retried
         - Stops when YouTube quota is limited
 
-        See `data/youtube_daily_backfill_report.md` for the run summary.
+        See data/youtube_daily_backfill_report.md for the run summary.
+        See data/post_batch_maintenance_report.md for the read-only post-batch maintenance check.
         EOF
         )
         if gh pr view automation/youtube-daily-backfill --json number >/dev/null 2>&1; then

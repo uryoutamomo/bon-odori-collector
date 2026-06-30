@@ -84,3 +84,14 @@ CloudFormationで次をまとめて作成する。
 
 2026-06-23時点で、daily collect のキュー保存先はDynamoDBへ切り替え済み。
 Notionキューを操作画面として同期し続ける前提は終了した。
+
+## Legacy Notion queue migration
+
+`migrate_notion_queue_to_dynamodb.yml` は過去Notionキュー行をDynamoDBへ
+移すための legacy one-off workflow。
+
+通常運用では実行しない。必要時はまず `apply=false` のdry-runで対象を確認する。
+実反映は `apply=true` と確認文字列
+`MIGRATE NOTION QUEUE TO DYNAMODB` が両方ある場合だけ。
+
+詳しい扱いは `docs/notion-queue-migration-operations.md` を正とする。

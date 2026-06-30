@@ -1,9 +1,11 @@
 """Rename the visible Notion first-look current-work link."""
 
+import argparse
 import json
 import os
 import urllib.request
 
+from manual_apply_guards import NOTION_WORKLOG_MAINTENANCE_CONFIRMATION, require_confirmation
 from notion_config import load_local_env
 from add_current_work_to_first_look_notion import rich_text
 
@@ -33,8 +35,21 @@ def notion_request(method, path, payload=None):
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--confirm", default="")
+    args = parser.parse_args()
+
     if not NOTION_TOKEN:
         raise SystemExit("NOTION_API_TOKEN is not set")
+    try:
+        require_confirmation(
+            True,
+            args.confirm,
+            NOTION_WORKLOG_MAINTENANCE_CONFIRMATION,
+            "current work first-look link rename",
+        )
+    except ValueError as exc:
+        parser.error(str(exc))
     notion_request(
         "PATCH",
         f"/blocks/{DEFAULT_BLOCK_ID}",
