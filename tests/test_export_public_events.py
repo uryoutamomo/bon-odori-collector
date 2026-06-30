@@ -401,6 +401,39 @@ class ExportPublicEventsTest(unittest.TestCase):
         self.assertNotIn("season_hint", rows[0])
         self.assertEqual(rows[1]["description"], "天妙国寺を会場に行われる品川区民まつりの地域イベント。")
 
+    def test_apply_public_event_overrides_skips_reviewed_hold_rows(self):
+        rows = apply_public_event_overrides(
+            [
+                {
+                    "name": "銀座一丁目東町会・新富町会 納涼盆踊り大会",
+                    "venue": "京橋プラザ区民館",
+                    "area": "中央区",
+                    "date": None,
+                    "status": "未確認",
+                },
+                {
+                    "name": "鉄砲洲納涼盆踊り",
+                    "venue": "鉄砲洲公園",
+                    "area": "中央区",
+                    "date": "2026-08-03",
+                    "status": "確認済み",
+                },
+            ],
+            {
+                "overrides": [
+                    {
+                        "match": {
+                            "name": "銀座一丁目東町会・新富町会 納涼盆踊り大会",
+                            "venue": "京橋プラザ区民館",
+                        },
+                        "skip": True,
+                    }
+                ]
+            },
+        )
+
+        self.assertEqual([row["name"] for row in rows], ["鉄砲洲納涼盆踊り"])
+
     def test_write_public_js(self):
         with TemporaryDirectory() as tmp:
             path = Path(tmp) / "events_public.js"

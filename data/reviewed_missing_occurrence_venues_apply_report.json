@@ -1,16 +1,16 @@
 {
   "generated_by": "apply_reviewed_missing_occurrence_venues.py",
-  "generated_at": "2026-06-30T03:15:44.398169+00:00",
-  "mode": "dry_run",
-  "scope": "copied_sqlite_only_no_notion_no_public_json",
+  "generated_at": "2026-06-30T14:45:45.182297+00:00",
+  "mode": "apply",
+  "scope": "source_master_db_apply_no_notion_no_public_json",
   "sources": {
     "master_db": "data/bon_odori_master.sqlite",
     "review_json": "data/missing_occurrence_venue_review.json"
   },
   "outputs": {
-    "target_db": "data/reviewed_missing_occurrence_venues_dry_run.sqlite",
-    "dry_run_db": "data/reviewed_missing_occurrence_venues_dry_run.sqlite",
-    "backup_db": ""
+    "target_db": "data/bon_odori_master.sqlite",
+    "dry_run_db": "",
+    "backup_db": "data/backups/bon_odori_master.20260630T144545.182297+0000.sqlite.bak"
   },
   "write_guard": {
     "db_committed": true,
@@ -23,7 +23,7 @@
     "skipped_count": 0,
     "issues_count": 0,
     "issues_by_severity": {},
-    "missing_venue_count": 6,
+    "missing_venue_count": 3,
     "table_counts": {
       "event_investigation_tasks": 79,
       "event_occurrences": 223,
@@ -35,7 +35,7 @@
       "notion_sync_jobs": 10,
       "observed_occurrence_songs": 28105,
       "observed_occurrences": 1856,
-      "occurrence_dates": 172,
+      "occurrence_dates": 173,
       "occurrence_evidence_links": 2,
       "occurrence_song_evidence_links": 485,
       "occurrence_songs": 312,
@@ -43,63 +43,62 @@
       "schema_migrations": 1,
       "song_aliases": 141,
       "songs": 144,
-      "venue_aliases": 218,
-      "venues": 217,
+      "venue_aliases": 226,
+      "venues": 220,
       "write_batches": 0
     }
   },
   "applied": [
     {
       "action": "create_venue_and_fill_occurrence",
-      "occurrence_id": "occ_225f239652267ed9",
-      "event_name": "銀座一丁目東町会・新富町会 納涼盆踊り大会",
+      "occurrence_id": "occ_e5ea459ea88de16c",
+      "event_name": "月島第二児童公園 盆踊り",
       "event_year": 2026,
-      "series_id": "ser_128817ee1c8ca940",
+      "series_id": "ser_831393e548a7e944",
       "set_series_usual_venue": true,
       "old_venue_id": "",
-      "new_venue_id": "ven_3823a14944e4649f",
-      "new_venue_name": "京橋プラザ区民館",
-      "new_venue_address": "東京都中央区銀座一丁目25番3号",
+      "new_venue_id": "ven_456beaee9aa43b0e",
+      "new_venue_name": "月島第二児童公園",
+      "new_venue_address": "東京都中央区勝どき一丁目9番8号",
       "candidate_venue_data": {
-        "canonical_name": "京橋プラザ区民館",
+        "canonical_name": "月島第二児童公園",
         "aliases": [
-          "京橋プラザ",
-          "中央区京橋プラザ"
+          "月島第二公園"
         ],
         "area": "中央区",
-        "address": "東京都中央区銀座一丁目25番3号",
-        "access": "東京メトロ有楽町線「新富町」駅徒歩2分、都営浅草線「宝町」駅徒歩5分",
-        "source_url": "https://www.city.chuo.lg.jp/a0013/kurashi/chiikicommunity/kuminkan/syukaisisetu02.html",
-        "source_kind": "official_facility"
+        "address": "東京都中央区勝どき一丁目9番8号",
+        "access": "",
+        "source_url": "https://www.city.chuo.lg.jp/a0037/machizukuri/kouenryokka/kouen/kouen_hiroba_ichiran.html",
+        "source_kind": "official_facility_list"
       },
-      "confidence": "high",
-      "reason": "official Chuo City facility page confirms 京橋プラザ区民館, and multiple observed YouTube evidence rows confirm the 2025 event/date/organizers at 京橋プラザ",
+      "confidence": "medium",
+      "reason": "official Chuo City park/facility list confirms 月島第二児童公園 and address; event date/source is still unconfirmed, so this is venue-fill only",
       "before": {
-        "occurrence_id": "occ_225f239652267ed9",
-        "series_id": "ser_128817ee1c8ca940",
+        "occurrence_id": "occ_e5ea459ea88de16c",
+        "series_id": "ser_831393e548a7e944",
         "usual_venue_id": null,
-        "display_name": "銀座一丁目東町会・新富町会 納涼盆踊り大会",
+        "display_name": "月島第二児童公園 盆踊り",
         "event_year": 2026,
         "venue_id": null,
         "venue_name": null,
         "date_start": "",
         "date_end": "",
         "date_status": "unknown",
-        "source_url": "https://www.chuo-kanko.or.jp/pages/other_details/115655"
+        "source_url": "https://x.com/harumichiku/status/1955267713292435643"
       },
       "venue_created": true,
       "after": {
-        "occurrence_id": "occ_225f239652267ed9",
-        "series_id": "ser_128817ee1c8ca940",
-        "usual_venue_id": "ven_3823a14944e4649f",
-        "display_name": "銀座一丁目東町会・新富町会 納涼盆踊り大会",
+        "occurrence_id": "occ_e5ea459ea88de16c",
+        "series_id": "ser_831393e548a7e944",
+        "usual_venue_id": "ven_456beaee9aa43b0e",
+        "display_name": "月島第二児童公園 盆踊り",
         "event_year": 2026,
-        "venue_id": "ven_3823a14944e4649f",
-        "venue_name": "京橋プラザ区民館",
+        "venue_id": "ven_456beaee9aa43b0e",
+        "venue_name": "月島第二児童公園",
         "date_start": "",
         "date_end": "",
         "date_status": "unknown",
-        "source_url": "https://www.chuo-kanko.or.jp/pages/other_details/115655"
+        "source_url": "https://x.com/harumichiku/status/1955267713292435643"
       }
     }
   ],

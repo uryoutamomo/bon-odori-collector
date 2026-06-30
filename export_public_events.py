@@ -1069,13 +1069,18 @@ def apply_public_event_overrides(events, overrides=None):
     patched = []
     for event in events:
         item = dict(event)
+        skip = False
         for rule in rules:
             if not _override_matches(item, rule.get("match") or {}):
                 continue
+            if rule.get("skip"):
+                skip = True
+                break
             for field in rule.get("remove") or []:
                 item.pop(field, None)
             item.update(rule.get("set") or {})
-        patched.append(item)
+        if not skip:
+            patched.append(item)
     return apply_public_event_name_cleanup(patched)
 
 

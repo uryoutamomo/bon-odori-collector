@@ -190,9 +190,12 @@ def ensure_new_venue(conn, data, now):
     return venue_id, created
 
 
-def ready_items(review):
+def ready_items(review, occurrence_ids=None):
+    allowed_ids = set(occurrence_ids or [])
     items = []
     for item in review.get("review") or []:
+        if allowed_ids and item.get("occurrence_id") not in allowed_ids:
+            continue
         if item.get("review_action") == "ready_existing_venue_candidate" and item.get("candidate_venue_id"):
             items.append(item)
         elif item.get("review_action") == "ready_new_venue_candidate" and item.get("candidate_venue_data"):
@@ -200,10 +203,10 @@ def ready_items(review):
     return items
 
 
-def build_plan(conn, review):
+def build_plan(conn, review, occurrence_ids=None):
     planned = []
     skipped = []
-    for item in ready_items(review):
+    for item in ready_items(review, occurrence_ids=occurrence_ids):
         before = occurrence(conn, item["occurrence_id"])
         candidate = venue(conn, item.get("candidate_venue_id") or "")
         if not before:
@@ -382,7 +385,7 @@ def run(args):
 
     with connect_existing(target_db) as conn:
         conn.execute("PRAGMA foreign_keys = ON")
-        planned, skipped = build_plan(conn, review)
+        planned, skipped = build_plan(conn, review, occurrence_ids=args.occurrence_id)
         applied = apply_plan(conn, planned, now)
         issues = consistency_checks(conn, applied)
         has_high_issue = any(issue.get("severity") == "high" for issue in issues)
@@ -449,6 +452,12 @@ def main():
     parser.add_argument("--out-db", type=Path, default=OUT_DB)
     parser.add_argument("--out-json", type=Path, default=OUT_JSON)
     parser.add_argument("--out-md", type=Path, default=OUT_MD)
+    parser.add_argument(
+        "--occurrence-id",
+        action="append",
+        default=[],
+        help="limit apply/dry-run to a reviewed occurrence_id; may be repeated",
+    )
     parser.add_argument("--apply", action="store_true")
     parser.add_argument("--confirm", default="")
     args = parser.parse_args()

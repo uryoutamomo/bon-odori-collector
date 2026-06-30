@@ -23,6 +23,19 @@ OUT_MD = DATA / "missing_occurrence_venue_review.md"
 
 
 CONFIRMED_NEW_VENUES = {
+    "honjo_chiiki_plaza_big_ship": {
+        "canonical_name": "本所地域プラザ BIG SHIP 多目的ホール",
+        "aliases": [
+            "墨田区本所地域プラザ BIG SHIP 多目的ホール",
+            "本所地域プラザ BIG SHIP",
+            "本所地域プラザ",
+        ],
+        "area": "墨田区",
+        "address": "東京都墨田区本所1丁目13番4号",
+        "access": "都営浅草線「蔵前」駅徒歩10分、JR「両国」駅徒歩15分",
+        "source_url": "https://www.kinshicho-kawachiondo.jp/archives/1067",
+        "source_kind": "official_event_page",
+    },
     "kyobashi_plaza_kuminkan": {
         "canonical_name": "京橋プラザ区民館",
         "aliases": ["京橋プラザ", "中央区京橋プラザ"],
@@ -31,6 +44,15 @@ CONFIRMED_NEW_VENUES = {
         "access": "東京メトロ有楽町線「新富町」駅徒歩2分、都営浅草線「宝町」駅徒歩5分",
         "source_url": "https://www.city.chuo.lg.jp/a0013/kurashi/chiikicommunity/kuminkan/syukaisisetu02.html",
         "source_kind": "official_facility",
+    },
+    "tsukishima_daini_jido_koen": {
+        "canonical_name": "月島第二児童公園",
+        "aliases": ["月島第二公園"],
+        "area": "中央区",
+        "address": "東京都中央区勝どき一丁目9番8号",
+        "access": "",
+        "source_url": "https://www.city.chuo.lg.jp/a0037/machizukuri/kouenryokka/kouen/kouen_hiroba_ichiran.html",
+        "source_kind": "official_facility_list",
     },
 }
 
@@ -81,12 +103,16 @@ REVIEW_HINTS = {
         "next_step": "auto-create the confirmed venue and fill this occurrence venue_id; no human venue review required",
     },
     "月島第二児童公園 盆踊り": {
-        "review_action": "new_venue_candidate_needs_source",
+        "review_action": "ready_new_venue_candidate",
+        "candidate_action": "already_decided",
+        "current_decision": "auto_create_venue_and_fill_occurrence",
+        "decided_by": "auto_rule:official_facility_list_confirms_venue",
         "candidate_venue_name": "月島第二児童公園",
         "candidate_venue_id": "",
-        "confidence": "low",
-        "reason": "event name contains a venue-like place name, but the occurrence has no source_url",
-        "next_step": "confirm address/source before creating a venue row",
+        "candidate_venue_data": CONFIRMED_NEW_VENUES["tsukishima_daini_jido_koen"],
+        "confidence": "medium",
+        "reason": "official Chuo City park/facility list confirms 月島第二児童公園 and address; event date/source is still unconfirmed, so this is venue-fill only",
+        "next_step": "auto-create the confirmed venue and fill this occurrence venue_id; keep out of public export until a current official/organizer event source is confirmed",
     },
     "鉄砲洲児童公園 盆踊り": {
         "review_action": "new_venue_candidate_needs_source",
@@ -129,12 +155,16 @@ REVIEW_HINTS = {
         "next_step": "verify event name and venue source before any venue_id fill",
     },
     "すみだ河内音頭 小盆踊り": {
-        "review_action": "manual_venue_research_required",
-        "candidate_venue_name": "",
+        "review_action": "ready_new_venue_candidate",
+        "candidate_action": "already_decided",
+        "current_decision": "auto_create_venue_and_fill_occurrence",
+        "decided_by": "auto_rule:official_event_page_has_exact_venue_address",
+        "candidate_venue_name": "本所地域プラザ BIG SHIP 多目的ホール",
         "candidate_venue_id": "",
-        "confidence": "low",
-        "reason": "no source_url or existing master venue candidate is available",
-        "next_step": "research exact venue before filling venue_id",
+        "candidate_venue_data": CONFIRMED_NEW_VENUES["honjo_chiiki_plaza_big_ship"],
+        "confidence": "high",
+        "reason": "official event page confirms 2026-05-16 event venue as 墨田区本所地域プラザ BIG SHIP 多目的ホール with address 東京都墨田区本所1丁目13番4号",
+        "next_step": "auto-create the confirmed venue and fill this occurrence venue_id",
     },
 }
 
