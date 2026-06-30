@@ -14,7 +14,9 @@
     "url": "https://app.notion.com/p/3888be04e76281198211eae8f483480b"
   },
   "kindle_strategy_url": "https://app.notion.com/p/Kindle-250-3888be04e7628198a566d03dad20bbc0",
-  "asset_root": "/Users/ryotauchida/bon-odori-collector/assets/character",
-  "character_bible": "/Users/ryotauchida/bon-odori-collector/assets/character/character-bible.md",
-  "mascot_image": "/Users/ryotauchida/bon-odori-collector/assets/character/originals/bonsuke-mascot-lantern-original.png"
+  "manga_root": "/Users/ryotauchida/bonsuke-manga",
+  "character_root": "/Users/ryotauchida/bonsuke-manga/characters",
+  "reference_root": "/Users/ryotauchida/bonsuke-manga/assets/references/from-bon-odori-collector",
+  "character_bible": "/Users/ryotauchida/bonsuke-manga/characters/canon/character-bible.md",
+  "mascot_image": "/Users/ryotauchida/bonsuke-manga/assets/references/from-bon-odori-collector/originals/bonsuke-mascot-lantern-original.png"
 }

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Prepare weekly harvest review queues and a compact run summary."""
+"""Prepare daily X harvest review queues and a compact run summary."""
 
 import argparse
 import json
@@ -77,7 +77,7 @@ def build_summary(source, song_triage, non_song_rows, song_review):
 
 def render_markdown(summary):
     lines = [
-        "# 週次収穫サマリ",
+        "# 日次X収穫サマリ",
         "",
         f"- 生成時刻: {summary['generated_at']}",
         f"- 対象期間: 直近 {summary.get('days') or '?'} 日",
@@ -146,7 +146,7 @@ def main():
     args.summary_md.write_text(render_markdown(summary), encoding="utf-8")
 
     print(
-        "weekly harvest summary: candidates={candidate_count} non_song_review={non_song_review_count} "
+        "daily X harvest summary: candidates={candidate_count} non_song_review={non_song_review_count} "
         "song_review={song_review_count} song_direct_dry_run={song_direct_dry_run_count}".format(**summary)
     )
     print(f"wrote {args.review_out}")
