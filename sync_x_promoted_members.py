@@ -21,7 +21,7 @@ def _is_user_approved(row):
 def approved_promote_results(results):
     return [
         row for row in (results or [])
-        if row.get("recommendation") == "promote" and _is_user_approved(row)
+        if _is_user_approved(row)
     ]
 
 
