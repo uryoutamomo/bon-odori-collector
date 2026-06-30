@@ -22,6 +22,10 @@ __pycache__/
 # ローカル運用状態・一時成果物
 data/review_console/
 data/automation/
+data/youtube_morning_oto_review_*.md
+ops/com.ryotauchida.bon-odori.youtube-morning-oto-review.*.plist
+scripts/run_youtube_morning_oto_review.command
+scripts/run_youtube_morning_oto_review.sh
 
 # ブラウザ保存した元素材。キャラクター素材の正本は bonsuke-manga 側に置く
 assets/character/originals/
