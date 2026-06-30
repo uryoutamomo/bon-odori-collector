@@ -2,7 +2,7 @@
 
 **Note**: This guard checks for blocking diffs only. Guard status `pass` means no blocking issues remain, but is NOT a deploy approval. Deploy decisions require explicit confirmation from the operator.
 
-- generated_at: 2026-06-25T13:37:37.613919+00:00
+- generated_at: 2026-06-29T16:53:37.652552+00:00
 - scope: read_only_public_sync_guard_no_writes
 - status: pass
 - safe_to_wholesale_sync: True
@@ -13,8 +13,8 @@
 
 ## Raw Collector vs Site
 
-- collector_event_count: 182
-- site_event_count: 182
+- collector_event_count: 183
+- site_event_count: 183
 - collector_only_count: 0
 - site_only_count: 0
 - high_risk_diff_record_count: 0
@@ -25,8 +25,8 @@
 
 ## After Required Public Postprocessors
 
-- collector_event_count: 182
-- site_event_count: 182
+- collector_event_count: 183
+- site_event_count: 183
 - collector_only_count: 0
 - site_only_count: 0
 - high_risk_diff_record_count: 0

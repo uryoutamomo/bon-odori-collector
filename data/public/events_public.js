@@ -39,6 +39,16 @@ const EVENTS = [
     "detail": "毎年6/13〜15開催（日枝神社「山王祭」の納涼大会として）。曜日は年により変動",
     "source_urls": [
       {
+        "label": "公式告知あり",
+        "url": "https://www.tenkamatsuri.jp/minyo/",
+        "kind": "official"
+      },
+      {
+        "label": "公式告知あり",
+        "url": "https://www.hiejinja.net/news/%E4%BB%A4%E5%92%8C8%E5%B9%B4%E5%B1%B1%E7%8E%8B%E7%A5%AD%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/",
+        "kind": "official"
+      },
+      {
         "label": "告知HPあり",
         "url": "",
         "kind": "web",
@@ -404,6 +414,11 @@ const EVENTS = [
     "detail": "2025-07-25〜2025-07-26、行幸通りで開催。公式ページ「丸の内夏祭り2025」in 行幸通り内の丸の内de盆踊り。7/25 盆踊り 17:00-18:15 / 19:00-19:40 / 20:00-21:00、7/26 盆踊り 18:00-19:00 / 19:20-20:10 / 20:40-21:00。",
     "source_urls": [
       {
+        "label": "公式告知あり",
+        "url": "https://www.marunouchi.com/pickup/event/6763/",
+        "kind": "official"
+      },
+      {
         "label": "告知HPあり",
         "url": "",
         "kind": "web",
@@ -694,10 +709,9 @@ const EVENTS = [
     "detail": "2026-07-13〜2026-07-16 開催予定。東京盆踊りマップから確定日として反映。 2026 7/13 - 16 靖国神社 大村銅像前 千代田区「第79回みたままつり 納涼民踊の集い」 7月13日(月)-7月16日(木) 午後6時30分-(例年8時30分まで)。 ＊雨天中止、小雨決行 ・練習会 6/5(金)、7/3(金) ともに19時より、千代田区スポーツセンターにて(対象:千代田区在住在勤者)。 (4/4掲)",
     "source_urls": [
       {
-        "label": "告知HPあり",
-        "url": "",
-        "kind": "web",
-        "count": 1
+        "label": "公式告知あり",
+        "url": "https://www.yasukuni.or.jp/schedule/saiji.html#saiji03",
+        "kind": "official"
       }
     ],
     "songs": [],
@@ -2109,6 +2123,11 @@ const EVENTS = [
     "detail": "",
     "source_urls": [
       {
+        "label": "公式告知あり",
+        "url": "https://www.roppongihills.com/events/2025/08/0478.html",
+        "kind": "official"
+      },
+      {
         "label": "告知HPあり",
         "url": "",
         "kind": "web",
@@ -3145,6 +3164,16 @@ const EVENTS = [
     "description": "郡上八幡から保存会を迎え、本場の郡上おどりを東京で体験できる人気イベント。下駄の音を響かせて、誰でも輪に入れる。",
     "detail": "",
     "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://aoyama-gaienmae.or.jp/news/20260326/",
+        "kind": "official"
+      },
+      {
+        "label": "公式告知あり",
+        "url": "https://aoyama-gaienmae.or.jp/news/",
+        "kind": "official"
+      },
       {
         "label": "告知HPあり",
         "url": "",
@@ -7256,6 +7285,11 @@ const EVENTS = [
     "detail": "2026年ポスター画像で、佐竹商店街夏祭り「サタケオドリ」内の第1回佐竹ゲバゲバ盆踊りを確認。 開催日は2026年7月18日(土)。アートマーケットは13:00-19:00、佐竹ゲバゲバ盆踊りは15:00-19:00。会場は佐竹商店街アーケード下で、新御徒町駅A2出口すぐ。雨天決行、駐車場なし。 投稿では「40年ぶりの復活開催」とされ、練習会投稿では新ご当地曲「佐竹音頭」から定番曲、アニソンまで踊る旨が確認できる。 主催: 佐竹商店街振興組合。協力: 佐竹町会。後援: 台東区。ポスター作画・一部デザイン: 広井チムニー。",
     "source_urls": [
       {
+        "label": "公式告知あり",
+        "url": "https://satakeshotengai.com/satakeodori/",
+        "kind": "official"
+      },
+      {
         "label": "告知投稿あり",
         "url": "",
         "kind": "post",
@@ -10732,10 +10766,9 @@ const EVENTS = [
     "detail": "2025-07-26 開催実績。2025 7/26 - 27。「品川区民まつり 品川第二地区」7月26日(土)-27日(日) 17時-21時。 「盆踊り・模擬店 ほか」。 踊りは18時-21時。 練習会 7/23(水)・24(木) 19:00-20:45 城南小学校体育館。 (7/23朝 時間他追記)",
     "source_urls": [
       {
-        "label": "告知HPあり",
-        "url": "",
-        "kind": "web",
-        "count": 1
+        "label": "公式告知あり",
+        "url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
+        "kind": "official"
       }
     ],
     "songs": [],
@@ -14935,6 +14968,11 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
+        "url": "https://otakushoren.com/event/13451",
+        "kind": "web"
+      },
+      {
+        "label": "告知HPあり",
         "url": "",
         "kind": "web",
         "count": 1
@@ -15030,6 +15068,11 @@ const EVENTS = [
     "description": "砧町町会 納涼夏祭り大会は、三峰公園で開かれる屋外型の盆踊り・夏の地域イベント。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 7/19 - 20。次回日程は未確認。",
     "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+        "kind": "official"
+      },
       {
         "label": "告知HPあり",
         "url": "",
@@ -15156,6 +15199,11 @@ const EVENTS = [
     "description": "上北沢盆踊り実行委員会 上北沢の納涼盆踊りは、上北沢小学校を会場にした地域密着の盆踊り・夏祭り。8月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 8/23。次回日程は未確認。",
     "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+        "kind": "official"
+      },
       {
         "label": "告知HPあり",
         "url": "",
@@ -15405,6 +15453,11 @@ const EVENTS = [
     "detail": "2025 8/9 - 10。次回日程は未確認。",
     "source_urls": [
       {
+        "label": "公式告知あり",
+        "url": "https://shimokitazawa-east.com/archives/8228",
+        "kind": "official"
+      },
+      {
         "label": "告知HPあり",
         "url": "",
         "kind": "web",
@@ -15534,6 +15587,11 @@ const EVENTS = [
     "detail": "2025 8/17。次回日程は未確認。",
     "source_urls": [
       {
+        "label": "公式告知あり",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+        "kind": "official"
+      },
+      {
         "label": "告知HPあり",
         "url": "",
         "kind": "web",
@@ -15658,6 +15716,11 @@ const EVENTS = [
     "detail": "2025 7/25 - 26。次回日程は未確認。",
     "source_urls": [
       {
+        "label": "公式告知あり",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+        "kind": "official"
+      },
+      {
         "label": "告知HPあり",
         "url": "",
         "kind": "web",
@@ -15779,6 +15842,11 @@ const EVENTS = [
     "description": "芦花公園商店街振興組合 芦花公園駅前盆踊り大会は、京王線芦花公園駅前ロータリー(南口)周辺で開かれる街なかの踊りイベント。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 7/25。次回日程は未確認。",
     "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+        "kind": "official"
+      },
       {
         "label": "告知HPあり",
         "url": "",
@@ -15909,6 +15977,11 @@ const EVENTS = [
     "detail": "2025 7/12。次回日程は未確認。",
     "source_urls": [
       {
+        "label": "公式告知あり",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+        "kind": "official"
+      },
+      {
         "label": "告知HPあり",
         "url": "",
         "kind": "web",
@@ -16032,6 +16105,11 @@ const EVENTS = [
     "description": "世田谷駅前商店街振興組合 納涼盆踊り大会は、円光院駐車場周辺で開かれる街なかの踊りイベント。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 7/26 - 27。次回日程は未確認。",
     "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://setagaya-station.com/news/event/event-info2025/",
+        "kind": "official"
+      },
       {
         "label": "告知HPあり",
         "url": "",
@@ -16167,6 +16245,11 @@ const EVENTS = [
     "detail": "2025 8/17。次回日程は未確認。",
     "source_urls": [
       {
+        "label": "公式告知あり",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+        "kind": "official"
+      },
+      {
         "label": "告知HPあり",
         "url": "",
         "kind": "web",
@@ -16292,6 +16375,11 @@ const EVENTS = [
     "detail": "2025 7/20。次回日程は未確認。",
     "source_urls": [
       {
+        "label": "公式告知あり",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+        "kind": "official"
+      },
+      {
         "label": "告知HPあり",
         "url": "",
         "kind": "web",
@@ -16416,6 +16504,11 @@ const EVENTS = [
     "detail": "2025 7/26 - 27。次回日程は未確認。",
     "source_urls": [
       {
+        "label": "公式告知あり",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+        "kind": "official"
+      },
+      {
         "label": "告知HPあり",
         "url": "",
         "kind": "web",
@@ -16537,6 +16630,11 @@ const EVENTS = [
     "description": "宇奈根町会 盆踊り大会は、宇奈根氷川神社を舞台にした祭礼・地域行事にあわせた踊りの場。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 7/19 - 20。次回日程は未確認。",
     "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://www.city.setagaya.lg.jp/documents/10549/minikomisinogawa110gou.pdf",
+        "kind": "official"
+      },
       {
         "label": "告知HPあり",
         "url": "",
@@ -16665,6 +16763,11 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
+        "url": "https://kitaminavi.com/topic/1337",
+        "kind": "web"
+      },
+      {
+        "label": "告知HPあり",
         "url": "",
         "kind": "web",
         "count": 1
@@ -16791,6 +16894,11 @@ const EVENTS = [
     "detail": "2025 7/26。次回日程は未確認。",
     "source_urls": [
       {
+        "label": "公式告知あり",
+        "url": "https://www.city.setagaya.lg.jp/documents/889/minikomishi168.pdf",
+        "kind": "official"
+      },
+      {
         "label": "告知HPあり",
         "url": "",
         "kind": "web",
@@ -16912,6 +17020,11 @@ const EVENTS = [
     "description": "希望ヶ丘団地夏まつりは、世田谷区の希望ヶ丘団地 テニスコートで行われる踊りのある地域イベント。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 7/19 - 20。次回日程は未確認。",
     "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+        "kind": "official"
+      },
       {
         "label": "告知HPあり",
         "url": "",
@@ -17035,6 +17148,11 @@ const EVENTS = [
     "detail": "2025 7/19 - 20。次回日程は未確認。",
     "source_urls": [
       {
+        "label": "公式告知あり",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+        "kind": "official"
+      },
+      {
         "label": "告知HPあり",
         "url": "",
         "kind": "web",
@@ -17156,6 +17274,11 @@ const EVENTS = [
     "description": "成城学園 盆踊り大会は、成城大学9号館前広場で開かれる屋外型の盆踊り・夏の地域イベント。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 7/26。次回日程は未確認。",
     "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://www.seijogakuen.ed.jp/news/2025/event0726.html",
+        "kind": "official"
+      },
       {
         "label": "告知HPあり",
         "url": "",
@@ -17400,6 +17523,11 @@ const EVENTS = [
     "detail": "2025 8/1 - 2。次回日程は未確認。",
     "source_urls": [
       {
+        "label": "公式告知あり",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+        "kind": "official"
+      },
+      {
         "label": "告知HPあり",
         "url": "",
         "kind": "web",
@@ -17521,6 +17649,11 @@ const EVENTS = [
     "description": "瀬田商店会 瀬田納涼盆踊りは、瀬田中学校を会場にした地域密着の盆踊り・夏祭り。8月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 8/16 - 17。次回日程は未確認。",
     "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+        "kind": "official"
+      },
       {
         "label": "告知HPあり",
         "url": "",
@@ -17645,6 +17778,11 @@ const EVENTS = [
     "description": "納涼盆踊り大会は、玉川中町公園で開かれる屋外型の盆踊り・夏の地域イベント。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 7/19 - 20。次回日程は未確認。",
     "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+        "kind": "official"
+      },
       {
         "label": "告知HPあり",
         "url": "",
@@ -18011,6 +18149,11 @@ const EVENTS = [
     "detail": "2025 7/18 - 19。次回日程は未確認。",
     "source_urls": [
       {
+        "label": "公式告知あり",
+        "url": "https://www.city.setagaya.lg.jp/documents/889/minikomishi168.pdf",
+        "kind": "official"
+      },
+      {
         "label": "告知HPあり",
         "url": "",
         "kind": "web",
@@ -18137,6 +18280,11 @@ const EVENTS = [
     "description": "野毛町会 納涼盆踊り大会は、野毛六所神社を舞台にした祭礼・地域行事にあわせた踊りの場。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 7/26 - 27。次回日程は未確認。",
     "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+        "kind": "official"
+      },
       {
         "label": "告知HPあり",
         "url": "",
@@ -18265,6 +18413,11 @@ const EVENTS = [
     "description": "鎌田協和会 鎌田納涼盆踊りは、鎌田天神社を舞台にした祭礼・地域行事にあわせた踊りの場。7月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 7/26。次回日程は未確認。",
     "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://www.city.setagaya.lg.jp/documents/10549/minikomisinogawa110gou.pdf",
+        "kind": "official"
+      },
       {
         "label": "告知HPあり",
         "url": "",
@@ -18509,6 +18662,11 @@ const EVENTS = [
     "detail": "2025 8/3 - 4。次回日程は未確認。",
     "source_urls": [
       {
+        "label": "公式告知あり",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+        "kind": "official"
+      },
+      {
         "label": "告知HPあり",
         "url": "",
         "kind": "web",
@@ -18633,6 +18791,11 @@ const EVENTS = [
     "description": "駒澤大学同窓会東京都支部・営友会は、世田谷区の駒澤大学 駒沢キャンパスで行われる踊りのある地域イベント。8月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2025 8/10。次回日程は未確認。",
     "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
+        "kind": "official"
+      },
       {
         "label": "告知HPあり",
         "url": "",
@@ -19561,6 +19724,11 @@ const EVENTS = [
     "description": "新井町会連合会・中野通り桜まつり実行委員会 中野通り桜まつりは、新井薬師公園で開かれる屋外型の盆踊り・夏の地域イベント。3月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2026 3/28。次回日程は未確認。",
     "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://nakano-arai.gr.jp/nakanodoorisakuramatsuri/",
+        "kind": "official"
+      },
       {
         "label": "告知HPあり",
         "url": "",
@@ -20655,6 +20823,11 @@ const EVENTS = [
     "description": "葛飾菖蒲まつり 水元公園会場 民踊パレードは、水元公園内はなしょうぶ園口で開かれる屋外型の盆踊り・夏の地域イベント。5月開催の情報をもとに、公開サイト用に掲載しています。",
     "detail": "2026 5/31。次回日程は未確認。",
     "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://www.city.katsushika.lg.jp/tourism/1000064/1028427.html",
+        "kind": "official"
+      },
       {
         "label": "告知HPあり",
         "url": "",
