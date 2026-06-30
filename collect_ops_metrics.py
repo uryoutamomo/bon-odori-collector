@@ -249,11 +249,15 @@ def delta(current, previous, key):
 
 
 LATEST_ROWS = [
+    ("今回選択", "youtube_run_selected_rows"),
+    ("完了バッチ", "youtube_run_completed_batches"),
+    ("実行前の残り", "youtube_run_remaining_before"),
+    ("今回対象の残り", "youtube_run_remaining_after"),
+    ("推定検索数", "youtube_run_estimated_search_calls"),
     ("YouTube候補", "youtube_candidates_total"),
     ("strong", "youtube_candidates_strong"),
     ("review", "youtube_candidates_review"),
     ("weak", "youtube_candidates_weak"),
-    ("月別キュー合計", "youtube_run_remaining_after"),
     ("低信頼未判断", "low_confidence_review_unreviewed_rows"),
     ("日付予測適用", "public_date_prediction_applied"),
     ("過去実績表示", "public_historical_reference_applied"),
@@ -402,9 +406,12 @@ def render_dashboard(rows):
     previous = previous_row(rows, current) if current else None
     generated = html.escape(datetime.now(timezone.utc).isoformat())
     cards = [
+        ("今回選択", "youtube_run_selected_rows", "この実行で検索対象にした行数"),
+        ("完了バッチ", "youtube_run_completed_batches", "quota停止前に完了した検索単位"),
         ("YouTube候補", "youtube_candidates_total", "取得済み候補の総数"),
         ("review", "youtube_candidates_review", "自動採用には弱い候補"),
         ("今回対象の残り", "youtube_run_remaining_after", "日次実行で残った検索対象"),
+        ("推定検索数", "youtube_run_estimated_search_calls", "今回試みたYouTube検索数の見積もり"),
         ("低信頼未判断", "low_confidence_review_unreviewed_rows", "手動判断待ち"),
         ("日付予測適用", "public_date_prediction_applied", "公開データに出た予測"),
         ("登録済み不完全", "registered_events_incomplete", "正本側の未整備"),
@@ -423,6 +430,11 @@ def render_dashboard(rows):
     queue_delta = delta(current, previous, "youtube_run_remaining_after") if current else ""
     review_delta = delta(current, previous, "low_confidence_review_unreviewed_rows") if current else ""
     status_label = status_explanation(current.get("youtube_run_status", ""))
+    run_selected = int_value(current.get("youtube_run_selected_rows"))
+    run_batches = int_value(current.get("youtube_run_completed_batches"))
+    run_before = int_value(current.get("youtube_run_remaining_before"))
+    run_after = int_value(current.get("youtube_run_remaining_after"))
+    run_searches = int_value(current.get("youtube_run_estimated_search_calls"))
     return f"""<!doctype html>
 <html lang="ja">
 <head>
@@ -491,7 +503,7 @@ th {{ color: var(--muted); font-weight: 600; }}
     <div class="guide-grid">
       <div class="guide-card"><strong>まず見る</strong><span>YouTube候補が増え、今回対象の残りが減っていれば収集は進んでいます。今日の候補差分は {html.escape(candidate_delta or "初回")}、残り差分は {html.escape(queue_delta or "初回")} です。</span></div>
       <div class="guide-card"><strong>詰まりを見る</strong><span>低信頼未判断や登録済み不完全が増えると、人手レビューや正本整備が必要です。低信頼未判断の差分は {html.escape(review_delta or "初回")} です。</span></div>
-      <div class="guide-card"><strong>今日の状態</strong><span>{html.escape(status_label)} quota制限で止まるのは通常の停止条件で、途中までの取得結果は保存されています。</span></div>
+      <div class="guide-card"><strong>今日の状態</strong><span>{html.escape(status_label)} 選択 {run_selected} 件、完了 {run_batches} batches、残り {run_before} → {run_after}、推定検索 {run_searches} 件です。quota制限で止まるのは通常の停止条件で、途中までの取得結果は保存されています。</span></div>
     </div>
   </section>
   <section class="metrics">
@@ -541,6 +553,9 @@ th {{ color: var(--muted); font-weight: 600; }}
 def render_history_table(rows):
     headers = [
         ("日付", "snapshot_date"),
+        ("選択", "youtube_run_selected_rows"),
+        ("完了", "youtube_run_completed_batches"),
+        ("残り", "youtube_run_remaining_after"),
         ("候補", "youtube_candidates_total"),
         ("strong", "youtube_candidates_strong"),
         ("review", "youtube_candidates_review"),

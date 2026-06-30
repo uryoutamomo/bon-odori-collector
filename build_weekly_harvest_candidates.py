@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build a weekly review queue for glossary terms and song/venue co-occurrence."""
+"""Build a daily X harvest review queue for glossary terms and song/venue co-occurrence."""
 
 import argparse
 import json
@@ -119,7 +119,7 @@ def build(days):
                         "term": term,
                         "interpretation": interpretation,
                         "confidence": "要レビュー",
-                        "reason": "週次収穫パターンに一致。準公式用語も対象に含める。",
+                        "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
                         "evidence_count": 1,
                         "evidence": [ev],
                     },
@@ -192,7 +192,7 @@ def main():
     args.out.parent.mkdir(parents=True, exist_ok=True)
     args.out.write_text(json.dumps(output, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(
-        f"週次収穫候補生成: voices {output['voice_count']} / "
+        f"日次X収穫候補生成: voices {output['voice_count']} / "
         f"candidates {output['candidate_count']} -> {args.out}"
     )
 
