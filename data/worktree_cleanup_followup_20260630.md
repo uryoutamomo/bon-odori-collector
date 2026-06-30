@@ -87,9 +87,9 @@ Current safe stance remains unchanged:
 
 | metric | value |
 | --- | ---: |
-| tracked changed files | 8 |
+| tracked changed files | 0 |
 | untracked files | 0 |
-| tracked diff size | +57,468 / -57,305 |
+| tracked diff size | +0 / -0 |
 
 ## Public JSON status
 
@@ -111,13 +111,13 @@ Risk:
 - The former JS-only URL mismatch is gone.
 - The former public song occurrence blocker is gone.
 - The former public event sync guard blocker is gone.
-- The remaining deploy blockers are now broader YouTube/ops generated outputs plus Master RDB/local audit drift and frozen legacy song outputs.
+- The former remaining generated diffs were backed up as a patch and reverted from the worktree.
 
 Recommended next split:
 
 1. Keep old song generation files frozen unless explicitly regenerated from the approved path.
-2. Keep YouTube-derived ops metrics separate from frozen song state.
-3. Hold Master RDB manifest/audit until the matching RDB artifact/cutover decision is explicit.
+2. Regenerate ops metrics only after the accepted upstream generated state is clear.
+3. Recreate Master RDB manifest/audit only with the matching RDB artifact/cutover decision.
 
 ## Remaining groups
 
@@ -141,27 +141,36 @@ Action:
 - Treat as a batch output. `legacy_song_occurrence_generation` is still frozen, so do not commit `data/song_occurrences.json` or `data/song_prediction_snapshots.json` from the old generation path.
 - YouTube evidence/backfill outputs were split in `a196275`.
 - `data/evidence_rdb_summary.json` was refreshed and split in `10d46be`.
-- Keep ops metrics out until the remaining frozen song/public dry-run state is either reverted, regenerated from approved paths, or explicitly accepted.
+- The remaining frozen song/ops/Master RDB generated diffs were backed up and reverted on 2026-06-30.
 
 2026-06-30 status:
 
-- `data/song_occurrences.json` and `data/song_prediction_snapshots.json` still account for most of the remaining diff and remain non-committable under the freeze policy.
-- `data/ops_metrics_*` reflects local generated state and should wait until the frozen song/public dry-run state is resolved.
+- Backup patch: `/private/tmp/bon-odori-collector-frozen-song-generated-diff-20260630.patch`
+- Reverted files: `data/song_occurrences.json`, `data/song_prediction_snapshots.json`, `data/ops_metrics_dashboard.html`, `data/ops_metrics_history.jsonl`, `data/ops_metrics_latest.md`, `data/bon_odori_master_manifest.json`, `data/master_rdb_audit.json`, `data/master_rdb_audit.md`.
+- Before revert, the local diff was 8 files, +57,468 / -57,305.
+- `data/song_occurrences.json`: occurrence_count 1856 -> 1864, song_relation_count 28107 -> 28106, generated_at 2026-06-20 -> 2026-06-26.
+- `data/song_prediction_snapshots.json`: snapshot_count 28107 -> 28106; most of the large diff was `predicted_at` churn.
+- Added occurrences were mainly 2026 rows: 品川区民まつり related 0-song rows, 新橋こいち祭 2026 with 14 songs, 三角広場まつり「居酒屋盆踊り」2026 with 2 songs, and 中野駅前大盆踊り大会 0-song row.
+- Removed occurrences were 2025 rows for 第28回新橋こいち祭 盆踊り and 三角広場まつり「居酒屋盆踊り」.
+- Song relation net change was -1: 16 added relations for 2026 新橋/三角広場, 17 removed relations from 2025 新橋/三角広場 plus シタマチ.ふるさと盆踊り大会 / かわいいだけじゃだめですか.
+- Snapshot content changes beyond timestamp churn were 2 rows around 自由が丘納涼盆踊り大会の「ダンシングヒーロー」表記ゆれ and evidence/probability.
+- `data/ops_metrics_*` and Master RDB audit/manifest were reverted because they reflected this unaccepted frozen song state.
 - `data/evidence_rdb_summary.json` is no longer part of the dirty set.
 
 ### E. Remaining generated-data groups after Notion cleanup
 
 | group | files | current action |
 | --- | --- | --- |
-| Master RDB lineage/audit | `data/bon_odori_master_manifest.json`, `data/master_rdb_audit.json`, `data/master_rdb_audit.md` | Hold. These refer to local DB/source checksum drift and should not be pushed without the matching RDB artifact/cutover decision. |
-| Ops metrics | `data/ops_metrics_dashboard.html`, `data/ops_metrics_history.jsonl`, `data/ops_metrics_latest.md` | Hold until upstream generated state is accepted or reset. |
-| Frozen legacy song outputs | `data/song_occurrences.json`, `data/song_prediction_snapshots.json` | Do not commit unless Ph2/Ph3 explicitly reopens the legacy path. |
+| Master RDB lineage/audit | `data/bon_odori_master_manifest.json`, `data/master_rdb_audit.json`, `data/master_rdb_audit.md` | Reverted from worktree; regenerate only with matching RDB artifact/cutover decision. |
+| Ops metrics | `data/ops_metrics_dashboard.html`, `data/ops_metrics_history.jsonl`, `data/ops_metrics_latest.md` | Reverted from worktree; regenerate after upstream generated state is accepted. |
+| Frozen legacy song outputs | `data/song_occurrences.json`, `data/song_prediction_snapshots.json` | Reverted from worktree; do not commit unless Ph2/Ph3 explicitly reopens the legacy path. |
 
 Resolved in this continuation:
 
 - `data/missing_occurrence_venue_review.*` and `data/reviewed_missing_occurrence_venues_apply_report.*` were split in `b3d4ab4`; this is still dry-run evidence only.
 - `data/evidence_rdb_summary.json` was split in `10d46be` after `tests.test_build_evidence_rdb` passed.
 - `data/public_historical_reference_dry_run.json` and `data/public_season_hint_dry_run.json` were split in `42940c5`; public event JSON/JS stayed unchanged.
+- Frozen song/ops/Master RDB generated diffs were backed up to `/private/tmp/bon-odori-collector-frozen-song-generated-diff-20260630.patch` and reverted from the worktree.
 
 ### C. Review/research feature workstreams
 
@@ -173,10 +182,7 @@ Recent resolution:
 - One-off Notion append / manual maintenance helpers are committed in `3bab84c`.
 - YouTube morning review launchd/runner files are ignored as one-off local artifacts by `8922222`.
 
-Tracked review state also remains for:
-
-- `data/ops_metrics_*` (current numbers depend on uncommitted YouTube outputs)
-- Master RDB audit/manifest outputs (current numbers depend on local DB state and frozen song inputs)
+Tracked review state no longer remains dirty in the worktree.
 
 Resolved tracked review state:
 
@@ -204,10 +210,10 @@ Action:
 
 ## Still not safe for whole-repo deploy
 
-The repository is cleaner than before, but it still contains multiple independent workstreams and large generated diffs.
+The repository worktree is clean after the generated diff cleanup. The branch still contains many local cleanup commits, so do not push/deploy the whole branch without a separate review.
 
 Current safe stance:
 
 - Commit/deploy only intentionally isolated groups.
 - Do not push/deploy the whole worktree.
-- Treat remaining generated public guard files and YouTube/ops outputs as review-required.
+- Treat any future generated public guard files and YouTube/ops outputs as review-required.
