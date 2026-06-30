@@ -7,8 +7,9 @@ import subprocess
 import sys
 import urllib.error
 from collections import Counter
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
 from backfill_youtube_descriptions import load_env_value
 import harvest_youtube_year_backfill as harvest_mod
@@ -28,6 +29,11 @@ QUOTA_LIMIT_RE = re.compile(
     r"quotaExceeded|dailyLimitExceeded|rateLimitExceeded|userRateLimitExceeded|Too Many Requests",
     re.I,
 )
+
+try:
+    JST = ZoneInfo("Asia/Tokyo")
+except ZoneInfoNotFoundError:
+    JST = timezone(timedelta(hours=9))
 
 
 def load_json(path, default):
@@ -269,7 +275,12 @@ def next_rows_for_args(queue, candidates, args, attempted_queue_ids=None):
     return args.month, [], []
 
 
+def today_jst_iso():
+    return datetime.now(timezone.utc).astimezone(JST).date().isoformat()
+
+
 def regenerate_outputs(month):
+    today = today_jst_iso()
     commands = [
         ["python3", "build_event_occurrence_backfill_plan.py"],
         ["python3", "build_low_confidence_backfill_review.py"],
@@ -277,12 +288,12 @@ def regenerate_outputs(month):
         ["python3", "build_event_schedule_rules.py", "--target-year", "2026"],
         ["python3", "build_event_date_predictions.py", "--target-year", "2026"],
         ["python3", "apply_public_date_predictions.py"],
-        ["python3", "apply_public_historical_references.py"],
+        ["python3", "apply_public_historical_references.py", "--today", today],
         ["python3", "apply_public_season_hints.py"],
         ["python3", "build_song_occurrences.py"],
         ["python3", "export_public_events.py"],
         ["python3", "apply_public_date_predictions.py"],
-        ["python3", "apply_public_historical_references.py"],
+        ["python3", "apply_public_historical_references.py", "--today", today],
         ["python3", "apply_public_season_hints.py"],
         [
             "python3",

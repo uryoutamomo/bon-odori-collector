@@ -140,6 +140,32 @@ class RunDailyYoutubeBackfillTest(unittest.TestCase):
         self.assertEqual(result["remaining_rows_after"], 1)
         self.assertIn("quotaExceeded", result["error"])
 
+    def test_regenerate_outputs_passes_current_jst_day_to_historical_references(self):
+        commands = []
+        original_run_command = daily.run_command
+        original_today = daily.today_jst_iso
+        try:
+            daily.run_command = lambda command: commands.append(command) or {"returncode": 0}
+            daily.today_jst_iso = lambda: "2026-06-30"
+
+            daily.regenerate_outputs(7)
+        finally:
+            daily.run_command = original_run_command
+            daily.today_jst_iso = original_today
+
+        historical_commands = [
+            command
+            for command in commands
+            if command[:2] == ["python3", "apply_public_historical_references.py"]
+        ]
+        self.assertEqual(
+            historical_commands,
+            [
+                ["python3", "apply_public_historical_references.py", "--today", "2026-06-30"],
+                ["python3", "apply_public_historical_references.py", "--today", "2026-06-30"],
+            ],
+        )
+
 
 if __name__ == "__main__":
     unittest.main()
