@@ -12,7 +12,7 @@
         "7"
       ],
       "returncode": 0,
-      "stdout": "週次収穫候補生成: voices 841 / candidates 85 -> data/weekly_harvest_candidates.json",
+      "stdout": "日次X収穫候補生成: voices 841 / candidates 85 -> data/weekly_harvest_candidates.json",
       "stderr": ""
     },
     {
@@ -31,7 +31,7 @@
         "prepare_weekly_harvest_review.py"
       ],
       "returncode": 0,
-      "stdout": "weekly harvest summary: candidates=85 non_song_review=18 song_review=2 song_direct_dry_run=55\nwrote data/weekly_harvest_review_candidates.json\nwrote data/weekly_harvest_summary.json\nwrote data/weekly_harvest_summary.md",
+      "stdout": "daily X harvest summary: candidates=85 non_song_review=18 song_review=2 song_direct_dry_run=55\nwrote data/weekly_harvest_review_candidates.json\nwrote data/weekly_harvest_summary.json\nwrote data/weekly_harvest_summary.md",
       "stderr": ""
     },
     {
@@ -45,7 +45,7 @@
         "--out",
         "data/weekly_harvest_review_ui.html",
         "--title",
-        "週次用語・共起レビュー",
+        "日次X収穫レビュー（用語・共起）",
         "--summary-fields",
         "interpretation,type,confidence,evidence_count",
         "--detail-fields",
@@ -74,7 +74,7 @@
         "--out",
         "data/weekly_song_candidates_review_ui.html",
         "--title",
-        "週次曲候補レビュー",
+        "日次X収穫レビュー（曲候補）",
         "--summary-fields",
         "canonical_song_name,triage_reason,evidence_count",
         "--detail-fields",
