@@ -15,11 +15,13 @@
 | `bon-odori-site` | `6d7ccf0` | Ignore local public deploy guard reports | site local was fast-forwarded to `origin/main` first; no push/deploy performed. |
 | `bon-odori-collector` | `8922222` | Ignore one-off YouTube morning review artifacts | 2026-06-29専用の朝レビュー起動ファイルをローカル生成物として扱う。 |
 | `bon-odori-collector` | `f12b824` | Add review console batch decision helpers | レビューコンソール用の一括一次判断helperを追加。既定URLは `http://127.0.0.1:8751` に修正し、`--base-url` で上書き可能。 |
+| `bon-odori-collector` | `b671fec` | Add publication gap review builder | 採用済みデータと公開siteデータのズレを `data/publication_gap_review.json` に出すローカル分析ツール。出力JSONはignore済み。 |
 
 Additional checks:
 
 - `bon-odori-site`: `python3 -m pytest -q tests/test_guard_public_deploy.py tests/test_public_sync_deploy_policy.py` -> 6 passed.
 - `bon-odori-collector`: `python3 -m py_compile review_current_date_batch.py review_source_url_batch.py review_venue_batch.py` -> OK.
+- `bon-odori-collector`: `python3 build_publication_gap_review.py` -> rows=152.
 - `bon-odori-collector`: remaining untracked Notion append / planning scripts were syntax-checked but not run or committed because several perform Notion writes when executed.
 
 Current safe stance remains unchanged:
@@ -77,7 +79,7 @@ Current safe stance remains unchanged:
 | metric | value |
 | --- | ---: |
 | tracked changed files | 24 |
-| untracked files | 24 |
+| untracked files | 23 |
 | tracked diff size | +62,356 / -58,380 |
 
 ## Public JSON status
