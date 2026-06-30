@@ -20,7 +20,7 @@ class XMemberRegistrationFlowTest(unittest.TestCase):
 
         self.assertEqual(
             [row["handle"] for row in approved],
-            ["@approved", "@decision"],
+            ["@approved", "@watch", "@decision"],
         )
 
 
