@@ -1,6 +1,6 @@
 {
-  "generated_by": "build_song_occurrences.py",
-  "generated_at": "2026-06-20T12:25:31.536144+00:00",
+  "generated_by": "export_master_rdb_song_occurrences.py",
+  "generated_at": "2026-06-29T16:48:31.521526+00:00",
   "target_year": 2026,
   "occurrences": [
     {
@@ -137192,19 +137192,6 @@
         },
         {
           "name": "かわいいだけじゃだめですか",
-          "probability": 80,
-          "basis": "current_hint",
-          "basis_label": "今年ヒント",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": false,
-          "prediction_reliability": [
-            0.8
-          ],
-          "evidence_urls": []
-        },
-        {
-          "name": "かわいいだけじゃだめですか?",
           "probability": 80,
           "basis": "current_hint",
           "basis_label": "今年ヒント",
@@ -349542,19 +349529,6 @@
           "prediction_reliability": [],
           "evidence_urls": [
             "https://www.youtube.com/watch?v=iYSdJjMu9Io"
-          ]
-        },
-        {
-          "name": "ダンシング・ヒーロー",
-          "probability": 95,
-          "basis": "current_observed",
-          "basis_label": "今年実測",
-          "evidence_count": 1,
-          "speaker_count": 1,
-          "setlist_complete": true,
-          "prediction_reliability": [],
-          "evidence_urls": [
-            "https://www.youtube.com/watch?v=0MgN9YSz_6o"
           ]
         },
         {
