@@ -1,5 +1,5 @@
 {
-  "generated_by": "weekly_harvest_x_candidates",
+  "generated_by": "curated_public_glossary_supplements",
   "items": [
     {
       "term": "ハシゴ",
@@ -16,7 +16,8 @@
       ],
       "status": "候補",
       "confidence": "X候補",
-      "source_count": 1
+      "source_count": 1,
+      "example": "今日は夕方に神社の盆踊りへ行って、そのあと駅前の会場をハシゴする。"
     },
     {
       "term": "盆オフ",
@@ -34,7 +35,8 @@
       ],
       "status": "候補",
       "confidence": "X候補",
-      "source_count": 1
+      "source_count": 1,
+      "example": "週末は盆オフで集まって、去年よかった会場の話をした。"
     },
     {
       "term": "盆活",
@@ -52,7 +54,8 @@
       ],
       "status": "候補",
       "confidence": "X候補",
-      "source_count": 1
+      "source_count": 1,
+      "example": "今年の盆活は、練習会と近所の盆踊りから始める。"
     },
     {
       "term": "おどりはだり",
@@ -69,7 +72,617 @@
       ],
       "status": "候補",
       "confidence": "X候補",
-      "source_count": 1
+      "source_count": 1,
+      "example": "動画を見ていたら、おどりはだりが出てきて会場に行きたくなった。"
+    },
+    {
+      "term": "櫓",
+      "reading": "やぐら",
+      "description": "会場中央などに組まれる高台。太鼓や音頭取り、見本踊りの位置になることが多い。",
+      "tags": [
+        "会場・運営",
+        "基本語"
+      ],
+      "category": "運営語",
+      "category_label": "会場・運営",
+      "roles": [],
+      "status": "候補",
+      "confidence": "補助語",
+      "source_count": 1,
+      "example": "太鼓は櫓の上にあり、その周りをみんなで踊っていた。"
+    },
+    {
+      "term": "踊り輪",
+      "reading": "おどりわ",
+      "description": "櫓や会場の中心を囲むように、参加者が輪になって踊る列。",
+      "tags": [
+        "参加・行動",
+        "基本語"
+      ],
+      "category": "行動語",
+      "category_label": "参加・行動",
+      "roles": [],
+      "status": "候補",
+      "confidence": "補助語",
+      "source_count": 1,
+      "example": "初めてでも、踊り輪の後ろのほうに入ると参加しやすい。"
+    },
+    {
+      "term": "二重輪",
+      "reading": "にじゅうわ",
+      "description": "混雑時などに、踊りの輪が内側と外側の二列になる状態。",
+      "tags": [
+        "参加・行動",
+        "会場・運営"
+      ],
+      "category": "行動語",
+      "category_label": "参加・行動",
+      "roles": [],
+      "status": "候補",
+      "confidence": "補助語",
+      "source_count": 1,
+      "example": "人が増えてきたので、踊り輪が二重輪になった。"
+    },
+    {
+      "term": "進行方向",
+      "reading": "しんこうほうこう",
+      "description": "踊りの輪が流れていく向き。曲や会場によって時計回り・反時計回りがある。",
+      "tags": [
+        "参加・行動",
+        "基本語"
+      ],
+      "category": "行動語",
+      "category_label": "参加・行動",
+      "roles": [],
+      "status": "候補",
+      "confidence": "補助語",
+      "source_count": 1,
+      "example": "まず進行方向を見てから、流れに合わせて輪に入る。"
+    },
+    {
+      "term": "時計回り",
+      "reading": "とけいまわり",
+      "description": "時計の針と同じ向きに踊りの輪が進むこと。",
+      "tags": [
+        "参加・行動",
+        "基本語"
+      ],
+      "category": "行動語",
+      "category_label": "参加・行動",
+      "roles": [],
+      "status": "候補",
+      "confidence": "補助語",
+      "source_count": 1,
+      "example": "この曲は時計回りに進みながら踊る。"
+    },
+    {
+      "term": "反時計回り",
+      "reading": "はんとけいまわり",
+      "description": "時計の針とは逆向きに踊りの輪が進むこと。",
+      "tags": [
+        "参加・行動",
+        "基本語"
+      ],
+      "category": "行動語",
+      "category_label": "参加・行動",
+      "roles": [],
+      "status": "候補",
+      "confidence": "補助語",
+      "source_count": 1,
+      "example": "次の曲は反時計回りなので、前の人の動きをよく見る。"
+    },
+    {
+      "term": "音頭",
+      "reading": "おんど",
+      "description": "盆踊りでよく使われる歌や曲の形式。地域名や題材名を冠した曲名にも多い。",
+      "tags": [
+        "曲名・踊り名",
+        "基本語"
+      ],
+      "category": "音楽語",
+      "category_label": "音楽・演奏",
+      "roles": [],
+      "status": "候補",
+      "confidence": "補助語",
+      "source_count": 1,
+      "example": "会場では東京音頭のような定番の音頭も流れる。"
+    },
+    {
+      "term": "音頭取り",
+      "reading": "おんどとり",
+      "description": "音頭を歌って場を導く人。生唄の盆踊りでは進行や盛り上がりの中心になる。",
+      "tags": [
+        "音楽・演奏",
+        "会場・運営"
+      ],
+      "category": "音楽語",
+      "category_label": "音楽・演奏",
+      "roles": [],
+      "status": "候補",
+      "confidence": "補助語",
+      "source_count": 1,
+      "example": "音頭取りの声に合わせて、踊りの輪が自然に盛り上がった。"
+    },
+    {
+      "term": "地方",
+      "reading": "じかた",
+      "description": "唄や三味線、太鼓、笛などで踊りを支える演奏側の人たち。",
+      "tags": [
+        "音楽・演奏",
+        "会場・運営"
+      ],
+      "category": "音楽語",
+      "category_label": "音楽・演奏",
+      "roles": [],
+      "status": "候補",
+      "confidence": "補助語",
+      "source_count": 1,
+      "example": "今日は地方の生演奏が入っていて、会場の雰囲気が濃かった。"
+    },
+    {
+      "term": "囃子方",
+      "reading": "はやしかた",
+      "description": "太鼓・笛・鉦などでお囃子を担当する演奏者。",
+      "tags": [
+        "音楽・演奏",
+        "会場・運営"
+      ],
+      "category": "音楽語",
+      "category_label": "音楽・演奏",
+      "roles": [],
+      "status": "候補",
+      "confidence": "補助語",
+      "source_count": 1,
+      "example": "囃子方の太鼓と笛が始まると、踊り手が輪に集まってきた。"
+    },
+    {
+      "term": "お囃子",
+      "reading": "おはやし",
+      "description": "太鼓や笛などで祭りや踊りを支える伴奏・リズム。",
+      "tags": [
+        "音楽・演奏",
+        "基本語"
+      ],
+      "category": "音楽語",
+      "category_label": "音楽・演奏",
+      "roles": [],
+      "status": "候補",
+      "confidence": "補助語",
+      "source_count": 1,
+      "example": "遠くからお囃子が聞こえて、会場の場所がすぐ分かった。"
+    },
+    {
+      "term": "生演奏",
+      "reading": "なまえんそう",
+      "description": "録音音源ではなく、会場で演奏者がその場で演奏すること。",
+      "tags": [
+        "音楽・演奏",
+        "会場・運営"
+      ],
+      "category": "音楽語",
+      "category_label": "音楽・演奏",
+      "roles": [],
+      "status": "候補",
+      "confidence": "補助語",
+      "source_count": 1,
+      "example": "録音ではなく生演奏なので、曲の間合いも会場ごとに少し違う。"
+    },
+    {
+      "term": "太鼓",
+      "reading": "たいこ",
+      "description": "盆踊りの拍や勢いを支える打楽器。櫓上や舞台上で演奏されることが多い。",
+      "tags": [
+        "音楽・演奏",
+        "基本語"
+      ],
+      "category": "音楽語",
+      "category_label": "音楽・演奏",
+      "roles": [],
+      "status": "候補",
+      "confidence": "補助語",
+      "source_count": 1,
+      "example": "太鼓の拍に合わせると、初見の曲でも足が出しやすい。"
+    },
+    {
+      "term": "笛",
+      "reading": "ふえ",
+      "description": "お囃子や民謡系の演奏で旋律や合図を担う管楽器。",
+      "tags": [
+        "音楽・演奏",
+        "基本語"
+      ],
+      "category": "音楽語",
+      "category_label": "音楽・演奏",
+      "roles": [],
+      "status": "候補",
+      "confidence": "補助語",
+      "source_count": 1,
+      "example": "笛の音が入ると、民謡らしい雰囲気が強くなる。"
+    },
+    {
+      "term": "鉦",
+      "reading": "かね",
+      "description": "金属製の打楽器。お囃子で拍子やアクセントを作る。",
+      "tags": [
+        "音楽・演奏",
+        "基本語"
+      ],
+      "category": "音楽語",
+      "category_label": "音楽・演奏",
+      "roles": [],
+      "status": "候補",
+      "confidence": "補助語",
+      "source_count": 1,
+      "example": "鉦の音がアクセントになって、踊りの拍が取りやすい。"
+    },
+    {
+      "term": "三味線",
+      "reading": "しゃみせん",
+      "description": "民謡や地域の踊りで使われる弦楽器。地方の演奏に入ることがある。",
+      "tags": [
+        "音楽・演奏",
+        "基本語"
+      ],
+      "category": "音楽語",
+      "category_label": "音楽・演奏",
+      "roles": [],
+      "status": "候補",
+      "confidence": "補助語",
+      "source_count": 1,
+      "example": "三味線と唄に合わせて、ゆったりした踊りが続いた。"
+    },
+    {
+      "term": "民踊",
+      "reading": "みんよう",
+      "description": "地域や生活文化に根ざした踊り。盆踊りの演目や大会名で使われることがある。",
+      "tags": [
+        "曲名・踊り名",
+        "基本語"
+      ],
+      "category": "音楽語",
+      "category_label": "音楽・演奏",
+      "roles": [],
+      "status": "候補",
+      "confidence": "補助語",
+      "source_count": 1,
+      "example": "民踊大会では、地域の曲をいくつも続けて踊ることがある。"
+    },
+    {
+      "term": "民謡",
+      "reading": "みんよう",
+      "description": "地域で歌い継がれてきた歌。盆踊り曲の元になっていることも多い。",
+      "tags": [
+        "音楽・演奏",
+        "基本語"
+      ],
+      "category": "音楽語",
+      "category_label": "音楽・演奏",
+      "roles": [],
+      "status": "候補",
+      "confidence": "補助語",
+      "source_count": 1,
+      "example": "この盆踊りでは、地元の民謡を元にした曲も使われている。"
+    },
+    {
+      "term": "新民謡",
+      "reading": "しんみんよう",
+      "description": "近代以降に作られた、地域色を持つ民謡調の歌。盆踊り曲として使われることがある。",
+      "tags": [
+        "音楽・演奏",
+        "基本語"
+      ],
+      "category": "音楽語",
+      "category_label": "音楽・演奏",
+      "roles": [],
+      "status": "候補",
+      "confidence": "補助語",
+      "source_count": 1,
+      "example": "新民謡の曲は、地域名が入っていても比較的新しく作られたものがある。"
+    },
+    {
+      "term": "振り",
+      "reading": "ふり",
+      "description": "踊りの手や足の動き。曲ごとに決まった振りがある場合が多い。",
+      "tags": [
+        "参加・行動",
+        "基本語"
+      ],
+      "category": "行動語",
+      "category_label": "参加・行動",
+      "roles": [],
+      "status": "候補",
+      "confidence": "補助語",
+      "source_count": 1,
+      "example": "振りが分からないときは、前の人の手元を見る。"
+    },
+    {
+      "term": "振り付け",
+      "reading": "ふりつけ",
+      "description": "曲に合わせて決められた踊りの動きの組み合わせ。",
+      "tags": [
+        "参加・行動",
+        "基本語"
+      ],
+      "category": "行動語",
+      "category_label": "参加・行動",
+      "roles": [],
+      "status": "候補",
+      "confidence": "補助語",
+      "source_count": 1,
+      "example": "この曲の振り付けは手振りが多く、初めてでも追いやすい。"
+    },
+    {
+      "term": "手振り",
+      "reading": "てぶり",
+      "description": "手や腕を中心にした踊りの動き。",
+      "tags": [
+        "参加・行動",
+        "基本語"
+      ],
+      "category": "行動語",
+      "category_label": "参加・行動",
+      "roles": [],
+      "status": "候補",
+      "confidence": "補助語",
+      "source_count": 1,
+      "example": "手振りだけ先に覚えると、輪に入りやすくなる。"
+    },
+    {
+      "term": "足運び",
+      "reading": "あしはこび",
+      "description": "踊りでの足の出し方、進み方、重心移動のこと。",
+      "tags": [
+        "参加・行動",
+        "基本語"
+      ],
+      "category": "行動語",
+      "category_label": "参加・行動",
+      "roles": [],
+      "status": "候補",
+      "confidence": "補助語",
+      "source_count": 1,
+      "example": "足運びが分かると、進行方向に自然についていける。"
+    },
+    {
+      "term": "見本踊り",
+      "reading": "みほんおどり",
+      "description": "参加者が真似できるように、前方や櫓上で示される踊り。",
+      "tags": [
+        "参加・行動",
+        "会場・運営"
+      ],
+      "category": "行動語",
+      "category_label": "参加・行動",
+      "roles": [],
+      "status": "候補",
+      "confidence": "補助語",
+      "source_count": 1,
+      "example": "櫓の見本踊りを見ながら、少しずつ振りを覚えた。"
+    },
+    {
+      "term": "模範踊り",
+      "reading": "もはんおどり",
+      "description": "踊り方の手本として披露される踊り。初心者が振りを追う目印になる。",
+      "tags": [
+        "参加・行動",
+        "会場・運営"
+      ],
+      "category": "行動語",
+      "category_label": "参加・行動",
+      "roles": [],
+      "status": "候補",
+      "confidence": "補助語",
+      "source_count": 1,
+      "example": "模範踊りの人の後ろにつくと、初見でも流れをつかみやすい。"
+    },
+    {
+      "term": "講習会",
+      "reading": "こうしゅうかい",
+      "description": "本番前や別日に、曲や振りを教わるための集まり。",
+      "tags": [
+        "参加・行動",
+        "会場・運営"
+      ],
+      "category": "行動語",
+      "category_label": "参加・行動",
+      "roles": [],
+      "status": "候補",
+      "confidence": "補助語",
+      "source_count": 1,
+      "example": "本番前の講習会で、東京音頭と炭坑節を練習した。"
+    },
+    {
+      "term": "飛び入り歓迎",
+      "reading": "とびいりかんげい",
+      "description": "事前申込や所属がなくても、その場で踊りに参加しやすい雰囲気や案内。",
+      "tags": [
+        "参加・行動",
+        "初心者向け"
+      ],
+      "category": "行動語",
+      "category_label": "参加・行動",
+      "roles": [],
+      "status": "候補",
+      "confidence": "補助語",
+      "source_count": 1,
+      "example": "飛び入り歓迎の会場なら、浴衣でなくても気軽に参加しやすい。"
+    },
+    {
+      "term": "見物",
+      "reading": "けんぶつ",
+      "description": "踊らずに会場の雰囲気や踊りを見ること。初参加前の入り方にもなる。",
+      "tags": [
+        "参加・行動",
+        "初心者向け"
+      ],
+      "category": "行動語",
+      "category_label": "参加・行動",
+      "roles": [],
+      "status": "候補",
+      "confidence": "補助語",
+      "source_count": 1,
+      "example": "最初は見物だけのつもりだったが、最後は輪に入って踊った。"
+    },
+    {
+      "term": "浴衣",
+      "reading": "ゆかた",
+      "description": "夏祭りや盆踊りでよく着られる和装。会場によっては普段着でも参加できる。",
+      "tags": [
+        "服装・持ち物",
+        "基本語"
+      ],
+      "category": "服装語",
+      "category_label": "服装・持ち物",
+      "roles": [],
+      "status": "候補",
+      "confidence": "補助語",
+      "source_count": 1,
+      "example": "浴衣で来ている人も、普段着で踊っている人もいた。"
+    },
+    {
+      "term": "下駄",
+      "reading": "げた",
+      "description": "浴衣に合わせることが多い履物。長時間踊る場合は足元の慣れも大事になる。",
+      "tags": [
+        "服装・持ち物",
+        "基本語"
+      ],
+      "category": "服装語",
+      "category_label": "服装・持ち物",
+      "roles": [],
+      "status": "候補",
+      "confidence": "補助語",
+      "source_count": 1,
+      "example": "下駄で長く踊るなら、鼻緒ずれに気をつけたい。"
+    },
+    {
+      "term": "法被",
+      "reading": "はっぴ",
+      "description": "祭りや団体参加で着られる上着。運営・踊り手・連の目印になることがある。",
+      "tags": [
+        "服装・持ち物",
+        "会場・運営"
+      ],
+      "category": "服装語",
+      "category_label": "服装・持ち物",
+      "roles": [],
+      "status": "候補",
+      "confidence": "補助語",
+      "source_count": 1,
+      "example": "保存会の人たちはそろいの法被で踊っていた。"
+    },
+    {
+      "term": "手ぬぐい",
+      "reading": "てぬぐい",
+      "description": "汗拭きや踊り小道具として使われる布。曲によっては振りの中で使うこともある。",
+      "tags": [
+        "服装・持ち物",
+        "基本語"
+      ],
+      "category": "服装語",
+      "category_label": "服装・持ち物",
+      "roles": [],
+      "status": "候補",
+      "confidence": "補助語",
+      "source_count": 1,
+      "example": "汗を拭く手ぬぐいを持っていくと、夏の会場では助かる。"
+    },
+    {
+      "term": "うちわ",
+      "reading": "うちわ",
+      "description": "暑さ対策や踊り小道具として使われる扇ぎ道具。",
+      "tags": [
+        "服装・持ち物",
+        "基本語"
+      ],
+      "category": "服装語",
+      "category_label": "服装・持ち物",
+      "roles": [],
+      "status": "候補",
+      "confidence": "補助語",
+      "source_count": 1,
+      "example": "待ち時間はうちわで涼みながら、次の曲を待った。"
+    },
+    {
+      "term": "提灯",
+      "reading": "ちょうちん",
+      "description": "会場装飾や明かりとして使われる灯り。盆踊りらしい夜の景色を作る。",
+      "tags": [
+        "会場・運営",
+        "基本語"
+      ],
+      "category": "運営語",
+      "category_label": "会場・運営",
+      "roles": [],
+      "status": "候補",
+      "confidence": "補助語",
+      "source_count": 1,
+      "example": "提灯が灯ると、夜の盆踊りらしい雰囲気になる。"
+    },
+    {
+      "term": "連",
+      "reading": "れん",
+      "description": "踊りや祭りで一緒に参加する団体・グループ。",
+      "tags": [
+        "呼び名・略語",
+        "会場・運営"
+      ],
+      "category": "団体語",
+      "category_label": "呼び名・略語",
+      "roles": [],
+      "status": "候補",
+      "confidence": "補助語",
+      "source_count": 1,
+      "example": "同じ連の人たちがまとまって踊り流しに参加していた。"
+    },
+    {
+      "term": "地元勢",
+      "reading": "じもとぜい",
+      "description": "その会場や地域を普段からよく知っている参加者・関係者。",
+      "tags": [
+        "界隈語",
+        "呼び名・略語"
+      ],
+      "category": "団体語",
+      "category_label": "呼び名・略語",
+      "roles": [],
+      "status": "候補",
+      "confidence": "補助語",
+      "source_count": 1,
+      "example": "地元勢の後ろにつくと、その会場の踊り方が分かりやすい。"
+    },
+    {
+      "term": "遠征勢",
+      "reading": "えんせいぜい",
+      "description": "遠方から盆踊りや練習会に参加しに来る人たち。",
+      "tags": [
+        "界隈語",
+        "呼び名・略語",
+        "参加・行動"
+      ],
+      "category": "団体語",
+      "category_label": "呼び名・略語",
+      "roles": [],
+      "status": "候補",
+      "confidence": "補助語",
+      "source_count": 1,
+      "example": "遠征勢が集まる会場は、曲目の話でも盛り上がる。"
+    },
+    {
+      "term": "常連",
+      "reading": "じょうれん",
+      "description": "同じ会場や界隈に継続して通っている参加者。",
+      "tags": [
+        "界隈語",
+        "呼び名・略語"
+      ],
+      "category": "団体語",
+      "category_label": "呼び名・略語",
+      "roles": [],
+      "status": "候補",
+      "confidence": "補助語",
+      "source_count": 1,
+      "example": "常連の人が、初めて来た人に輪の入り方を教えていた。"
     }
   ]
 }
