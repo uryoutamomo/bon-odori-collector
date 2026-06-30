@@ -17,6 +17,7 @@
 | `bon-odori-collector` | `f12b824` | Add review console batch decision helpers | レビューコンソール用の一括一次判断helperを追加。既定URLは `http://127.0.0.1:8751` に修正し、`--base-url` で上書き可能。 |
 | `bon-odori-collector` | `b671fec` | Add publication gap review builder | 採用済みデータと公開siteデータのズレを `data/publication_gap_review.json` に出すローカル分析ツール。出力JSONはignore済み。 |
 | `bon-odori-collector` | `3bab84c` | Add manual Notion maintenance helpers | 未追跡のNotion追記/手動メンテ系スクリプトを保存。DB更新/ページ作成系2本には確認文字列を追加。 |
+| `bon-odori-collector` | `c2f3f26` | Update glossary review wording for daily X flow | 生成データと独立した文言修正を切り出し。 |
 
 Additional checks:
 
@@ -30,6 +31,7 @@ Current safe stance remains unchanged:
 - Do not push/deploy the whole collector worktree.
 - Public deploy remains already handled by `bon-odori-site` Actions; local collector dirty state is not automatically part of production.
 - Remaining generated data diffs need review or regeneration from approved paths before commit.
+- Timestamp-only diffs in event occurrence derived JSON/MD were removed from the dirty set as cleanup noise.
 
 ### Earlier cleanup commits
 
@@ -79,9 +81,9 @@ Current safe stance remains unchanged:
 
 | metric | value |
 | --- | ---: |
-| tracked changed files | 24 |
+| tracked changed files | 15 |
 | untracked files | 0 |
-| tracked diff size | +62,356 / -58,380 |
+| tracked diff size | +62,344 / -58,368 |
 
 ## Public JSON status
 
@@ -139,6 +141,22 @@ Action:
 - Treat as a batch output. `legacy_song_occurrence_generation` is still frozen, so do not commit `data/song_occurrences.json` or `data/song_prediction_snapshots.json` from the old generation path.
 - YouTube evidence/backfill outputs were split in `a196275`.
 - Keep ops metrics out until the remaining frozen song/public dry-run state is either reverted, regenerated from approved paths, or explicitly accepted.
+
+2026-06-30 status:
+
+- `data/song_occurrences.json` and `data/song_prediction_snapshots.json` still account for most of the remaining diff and remain non-committable under the freeze policy.
+- `data/ops_metrics_*` reflects local generated state and should wait until the frozen song/public dry-run state is resolved.
+
+### E. Remaining generated-data groups after Notion cleanup
+
+| group | files | current action |
+| --- | --- | --- |
+| Master RDB lineage/audit | `data/bon_odori_master_manifest.json`, `data/master_rdb_audit.json`, `data/master_rdb_audit.md` | Hold. These refer to local DB/source checksum drift and should not be pushed without the matching RDB artifact/cutover decision. |
+| Evidence RDB summary | `data/evidence_rdb_summary.json` | Hold or commit separately only if the evidence DB refresh is intended as an audit artifact. |
+| Missing venue review dry-run | `data/missing_occurrence_venue_review.*`, `data/reviewed_missing_occurrence_venues_apply_report.*` | Hold pending review. Current report is dry-run for 京橋プラザ区民館, not production apply. |
+| Public postprocessor dry-runs | `data/public_historical_reference_dry_run.json`, `data/public_season_hint_dry_run.json` | Hold pending public data review. Do not treat as deploy approval. |
+| Ops metrics | `data/ops_metrics_dashboard.html`, `data/ops_metrics_history.jsonl`, `data/ops_metrics_latest.md` | Hold until upstream generated state is accepted or reset. |
+| Frozen legacy song outputs | `data/song_occurrences.json`, `data/song_prediction_snapshots.json` | Do not commit unless Ph2/Ph3 explicitly reopens the legacy path. |
 
 ### C. Review/research feature workstreams
 
