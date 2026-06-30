@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>盆踊り管理コンソール</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header class="app-header">
+    <div class="header-main">
+      <h1>盆踊り管理コンソール</h1>
+      <p id="lastUpdated">読み込み中</p>
+    </div>
+    <nav class="view-tabs" aria-label="画面">
+      <button class="view-tab active" type="button" data-view="home">ホーム <kbd>h</kbd></button>
+      <button class="view-tab" type="button" data-view="collection">取得状況 <kbd>q</kbd></button>
+      <button class="view-tab" type="button" data-view="metrics">メトリクス <kbd>m</kbd></button>
+      <button class="view-tab" type="button" data-view="review">レビュー <kbd>v</kbd></button>
+    </nav>
+    <div class="header-actions">
+      <button id="helpButton" type="button">操作ガイド <kbd>?</kbd></button>
+      <button id="refreshButton" type="button">更新 <kbd>r</kbd></button>
+      <button id="undoButton" type="button" disabled>元に戻す <kbd>z</kbd></button>
+      <button id="inventoryButton" type="button">件数を保存 <kbd>t</kbd></button>
+      <button id="exportButton" type="button">判断をまとめる <kbd>e</kbd></button>
+      <button id="stageButton" type="button" class="primary">反映準備 <kbd>g</kbd></button>
+    </div>
+  </header>
+
+  <section id="stageNotice" class="stage-notice" hidden aria-live="polite"></section>
+  <div id="message" class="message global-message" hidden></div>
+
+  <main id="homeView" class="home-view app-view">
+    <section class="home-head">
+      <div>
+        <h2>今日の運用</h2>
+        <p id="homeUpdated">読み込み中</p>
+      </div>
+      <button id="openPendingButton" type="button" class="primary">未レビューを見る</button>
+    </section>
+
+    <section class="home-grid" aria-label="主要指標">
+      <button class="stat-card urgent" type="button" data-target-view="review" data-target-status="pending">
+        <span>未レビュー</span>
+        <strong id="homePendingCount">0</strong>
+        <small>判断待ちの候補</small>
+      </button>
+      <button class="stat-card done" type="button" data-target-view="review" data-target-status="reviewed">
+        <span>決定済み</span>
+        <strong id="homeReviewedCount">0</strong>
+        <small>保存済み判断</small>
+      </button>
+      <button class="stat-card" type="button" data-target-view="review" data-target-status="reviewed">
+        <span>反映準備</span>
+        <strong id="homeStageCount">0</strong>
+        <small id="homeStageLabel">反映待ちなし</small>
+      </button>
+      <button class="stat-card" type="button" data-target-view="review" data-target-action-group="youtube" data-target-status="pending">
+        <span>YouTube候補</span>
+        <strong id="homeYoutubeCandidates">0</strong>
+        <small>過去実績候補</small>
+      </button>
+      <button class="stat-card warn" type="button" data-target-view="review" data-target-action-group="source_url" data-target-status="pending">
+        <span>根拠URL不足</span>
+        <strong id="homeMissingSource">0</strong>
+        <small>証拠リンク確認</small>
+      </button>
+      <button class="stat-card warn" type="button" data-target-view="review" data-target-action-group="venue" data-target-status="pending">
+        <span>会場不足</span>
+        <strong id="homeMissingVenue">0</strong>
+        <small>会場紐づけ確認</small>
+      </button>
+    </section>
+
+    <section class="home-columns">
+      <section class="home-panel">
+        <div class="panel-head">
+          <h2>今日の注意</h2>
+          <span id="attentionCount" class="badge">0</span>
+        </div>
+        <div id="attentionList" class="attention-list"></div>
+      </section>
+
+      <section class="home-panel">
+        <div class="panel-head">
+          <h2>今日やること</h2>
+        </div>
+        <div id="todayActions" class="action-list"></div>
+      </section>
+    </section>
+
+    <section class="home-panel ops-panel">
+      <div class="panel-head">
+        <h2>YouTube収集と公開補助</h2>
+        <span id="opsSnapshotDate" class="muted"></span>
+      </div>
+      <div id="opsSummary" class="ops-summary"></div>
+    </section>
+  </main>
+
+  <main id="metricsView" class="metrics-view app-view" hidden>
+    <section class="home-head">
+      <div>
+        <h2>数字の推移</h2>
+        <p id="metricsUpdated">読み込み中</p>
+      </div>
+      <button id="openMetricsReviewButton" type="button">未レビューを見る</button>
+    </section>
+
+    <section id="metricCards" class="metric-card-grid" aria-label="最新値と前回差分"></section>
+
+    <section id="trendCharts" class="trend-grid" aria-label="推移グラフ"></section>
+
+    <section class="home-panel history-panel">
+      <div class="panel-head">
+        <h2>履歴</h2>
+        <span id="historyCount" class="badge">0</span>
+      </div>
+      <div id="historyTable" class="history-table"></div>
+    </section>
+  </main>
+
+  <main id="collectionView" class="collection-view app-view" hidden>
+    <section class="home-head">
+      <div>
+        <h2>取得状況と起動</h2>
+        <p id="collectionUpdated">読み込み中</p>
+      </div>
+      <button id="reloadCollectionButton" type="button" class="primary">状況を更新</button>
+    </section>
+
+    <section id="collectionLanes" class="collection-lanes" aria-label="YouTubeとXの取得状況"></section>
+  </main>
+
+  <main id="reviewView" class="layout app-view" hidden>
+    <aside class="sidebar">
+      <section class="metric-grid" aria-label="集計">
+        <button class="metric active" data-status="">
+          <span>全件 <kbd>a</kbd></span>
+          <strong id="totalCount">0</strong>
+        </button>
+        <button class="metric urgent" data-status="pending">
+          <span>未レビュー <kbd>u</kbd></span>
+          <strong id="pendingCount">0</strong>
+        </button>
+        <button class="metric done" data-status="reviewed">
+          <span>決定済み <kbd>d</kbd></span>
+          <strong id="reviewedCount">0</strong>
+        </button>
+        <button class="metric quiet" data-status="closed">
+          <span>処理済み <kbd>p</kbd></span>
+          <strong id="closedCount">0</strong>
+        </button>
+      </section>
+
+      <label class="search">
+        <span>検索 <kbd>/</kbd></span>
+        <input id="searchInput" type="search" autocomplete="off">
+      </label>
+
+      <section>
+        <h2>次アクション</h2>
+        <div id="actionGroupFilters" class="filter-list"></div>
+      </section>
+
+      <section>
+        <h2>種類</h2>
+        <div id="domainFilters" class="filter-list"></div>
+      </section>
+
+      <section class="quick-help">
+        <div class="section-head">
+          <h2>操作</h2>
+          <button id="helpInlineButton" type="button">詳しく <kbd>?</kbd></button>
+        </div>
+        <dl>
+          <div><dt><kbd>j</kbd>/<kbd>k</kbd></dt><dd>候補を移動</dd></div>
+          <div><dt><kbd>1</kbd>-<kbd>5</kbd></dt><dd>判断を保存</dd></div>
+          <div><dt><kbd>n</kbd></dt><dd>メモ</dd></div>
+          <div><dt><kbd>y</kbd></dt><dd>追加先イベント名</dd></div>
+          <div><dt><kbd>x</kbd></dt><dd>曲名</dd></div>
+          <div><dt><kbd>s</kbd></dt><dd>Google検索</dd></div>
+          <div><dt><kbd>z</kbd></dt><dd>元に戻す</dd></div>
+          <div><dt><kbd>c</kbd></dt><dd>解除</dd></div>
+          <div><dt><kbd>/</kbd></dt><dd>検索</dd></div>
+          <div><dt><kbd>?</kbd></dt><dd>操作ガイド</dd></div>
+        </dl>
+      </section>
+
+      <section>
+        <h2>ソース</h2>
+        <div id="sourceList" class="source-list"></div>
+      </section>
+    </aside>
+
+    <section class="content">
+      <div class="content-head">
+        <div>
+          <h2 id="listTitle">レビュー待ち</h2>
+          <p id="listSummary">0件</p>
+        </div>
+        <select id="limitSelect" aria-label="表示件数">
+          <option value="100">100件</option>
+          <option value="250" selected>250件</option>
+          <option value="500">500件</option>
+          <option value="1000">1000件</option>
+        </select>
+      </div>
+      <div id="items" class="items"></div>
+    </section>
+  </main>
+
+  <dialog id="detailDialog">
+    <div class="dialog-head">
+      <h2 id="detailTitle">詳細</h2>
+      <button id="closeDialog" type="button" aria-label="閉じる">閉じる</button>
+    </div>
+    <pre id="detailRaw"></pre>
+  </dialog>
+
+  <dialog id="helpDialog">
+    <div class="dialog-head">
+      <h2>操作ガイド</h2>
+      <button id="closeHelpDialog" type="button" aria-label="閉じる">閉じる</button>
+    </div>
+    <div class="help-body">
+      <section>
+        <h3>判断ボタン</h3>
+        <div class="help-grid">
+          <div><strong>押すと保存</strong><p>カード右側の判断ボタンを押すと、その判断が保存される。X/RSS情報源候補は候補JSONへ直接保存される。</p></div>
+          <div><strong>要調査</strong><p>公式確認、会場同一性、日付差分、曲候補など追加確認が必要。</p></div>
+          <div><strong>不採用</strong><p>誤り、対象外、重複ノイズなど。反映しない理由を残す。</p></div>
+          <div><strong>保留</strong><p>今は採否を決めない。弱い根拠や文脈保持に使う。</p></div>
+        </div>
+      </section>
+
+      <section>
+        <h3>上部ボタン</h3>
+        <div class="help-grid">
+          <div><strong>更新 <kbd>r</kbd></strong><p>review/queue JSON と decisions.json を読み直す。書き込みなし。</p></div>
+          <div><strong>件数を保存 <kbd>t</kbd></strong><p>件数内訳を source_inventory.json/md に保存する。</p></div>
+          <div><strong>判断をまとめる <kbd>e</kbd></strong><p>保存済み判定を exported_decisions.json/md にまとめる。X/RSS情報源候補には通常不要。</p></div>
+          <div><strong>反映準備 <kbd>g</kbd></strong><p>イベント、会場、根拠URLなど高リスク反映用の staged/*_decisions.json を作る。本番DBや公開データは変更しない。</p></div>
+          <div><strong>個別apply済みとして記録</strong><p>個別applyをdry-run後に明示実行したことだけを記録する。実反映は実行しない。</p></div>
+        </div>
+      </section>
+
+      <section>
+        <h3>ショートカット</h3>
+        <div class="shortcut-grid">
+          <div><kbd>j</kbd> / <kbd>↓</kbd><span>次の候補</span></div>
+          <div><kbd>k</kbd> / <kbd>↑</kbd><span>前の候補</span></div>
+          <div><kbd>1</kbd>-<kbd>5</kbd><span>判断を保存</span></div>
+          <div><kbd>h</kbd><span>ホームへ移動</span></div>
+          <div><kbd>m</kbd><span>メトリクスへ移動</span></div>
+          <div><kbd>v</kbd><span>レビューへ移動</span></div>
+          <div><kbd>z</kbd><span>元に戻す</span></div>
+          <div><kbd>c</kbd><span>解除</span></div>
+          <div><kbd>n</kbd><span>メモ欄</span></div>
+          <div><kbd>s</kbd><span>イベント名でGoogle検索</span></div>
+          <div><kbd>i</kbd><span>JSON詳細</span></div>
+          <div><kbd>y</kbd><span>追加先イベント名</span></div>
+          <div><kbd>x</kbd><span>曲名</span></div>
+          <div><kbd>o</kbd><span>最初の根拠URL</span></div>
+          <div><kbd>/</kbd><span>検索</span></div>
+          <div><kbd>u</kbd><span>未レビュー</span></div>
+          <div><kbd>a</kbd><span>全件</span></div>
+          <div><kbd>d</kbd><span>決定済み</span></div>
+          <div><kbd>p</kbd><span>処理済み</span></div>
+          <div><kbd>Esc</kbd><span>入力欄/詳細から戻る</span></div>
+        </div>
+      </section>
+    </div>
+  </dialog>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
