@@ -41,6 +41,8 @@ SITE_EVENTS = Path("/Users/ryotauchida/bon-odori-site/data/events_public.json")
 FIXED_DATE_RULES = DATA / "public_fixed_date_rules.json"
 OUT_JSON = DATA / "public_events_sync_guard.json"
 OUT_MD = DATA / "public_events_sync_guard.md"
+MASTER_DB = DATA / "bon_odori_master.sqlite"
+PUBLICATION_GAP_REVIEW = DATA / "publication_gap_review.json"
 
 
 def load_json(path, default):
@@ -55,6 +57,36 @@ def write_json(path, data):
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+def file_mtime(path):
+    path = Path(path)
+    try:
+        return path.stat().st_mtime
+    except OSError:
+        return None
+
+
+def flow_artifact_warnings(master_db, publication_gap_review, collector_events):
+    """Warn when the public-event flow appears to have skipped a review step."""
+    warnings = []
+    master_mtime = file_mtime(master_db)
+    gap_mtime = file_mtime(publication_gap_review)
+    collector_mtime = file_mtime(collector_events)
+
+    if master_mtime is None:
+        warnings.append("missing_master_rdb")
+        return warnings
+    if gap_mtime is None:
+        warnings.append("missing_publication_gap_review")
+    elif gap_mtime < master_mtime:
+        warnings.append("master_rdb_newer_than_publication_gap_review")
+
+    if collector_mtime is None:
+        warnings.append("missing_collector_public_events")
+    elif collector_mtime < master_mtime:
+        warnings.append("master_rdb_newer_than_public_export")
+    return warnings
 
 
 def classify_rows(collector_rows, site_rows):
@@ -195,6 +227,12 @@ def build(args):
     )
     postprocessed = classify_rows(postprocessed_events, site_events)
     decision = guard_decision(raw, postprocessed, args.allow_individual_review)
+    procedure_warnings = flow_artifact_warnings(
+        args.master_db,
+        args.publication_gap_review,
+        args.collector_events,
+    )
+    decision["warnings"] = [*decision["warnings"], *procedure_warnings]
 
     data = {
         "generated_by": "guard_public_events_sync.py",
@@ -204,6 +242,8 @@ def build(args):
             "collector_events": str(args.collector_events),
             "site_events": str(args.site_events),
             "fixed_date_rules": str(args.fixed_date_rules),
+            "master_db": str(args.master_db),
+            "publication_gap_review": str(args.publication_gap_review),
         },
         "parameters": {
             "target_year": args.target_year,
@@ -211,6 +251,7 @@ def build(args):
             "allow_individual_review": bool(args.allow_individual_review),
         },
         "decision": decision,
+        "procedure_warnings": procedure_warnings,
         "raw_classification": raw["summary"],
         "postprocessed_classification": postprocessed["summary"],
         "blocking_examples": [
@@ -243,10 +284,25 @@ def render_markdown(data):
         f"- deploy_approval_note: {data['decision']['deploy_approval_note']}",
         f"- failures: {data['decision']['failures']}",
         f"- warnings: {data['decision']['warnings']}",
+        f"- procedure_warnings: {data['procedure_warnings']}",
         "",
-        "## Raw Collector vs Site",
+        "## Procedure Warnings",
+        "",
+        "These warnings mean the public-event publication flow may have skipped a review step. They do not automatically approve or reject deploys; they should be resolved or consciously accepted before syncing/deploying.",
         "",
     ]
+    if data["procedure_warnings"]:
+        for warning in data["procedure_warnings"]:
+            lines.append(f"- {warning}")
+    else:
+        lines.append("- none")
+    lines.extend(
+        [
+            "",
+            "## Raw Collector vs Site",
+            "",
+        ]
+    )
     for key, value in data["raw_classification"].items():
         lines.append(f"- {key}: {value}")
     lines.extend(["", "## After Required Public Postprocessors", ""])
@@ -290,6 +346,8 @@ def main():
     parser.add_argument("--collector-events", default=str(COLLECTOR_EVENTS))
     parser.add_argument("--site-events", default=str(SITE_EVENTS))
     parser.add_argument("--fixed-date-rules", default=str(FIXED_DATE_RULES))
+    parser.add_argument("--master-db", default=str(MASTER_DB))
+    parser.add_argument("--publication-gap-review", default=str(PUBLICATION_GAP_REVIEW))
     parser.add_argument("--target-year", type=int, default=2026)
     parser.add_argument("--today", default=DEFAULT_TODAY.isoformat())
     parser.add_argument("--allow-individual-review", action="store_true")
@@ -307,6 +365,7 @@ def main():
         "public events sync guard: "
         f"status={data['decision']['status']} "
         f"failures={data['decision']['failures']} "
+        f"warnings={data['decision']['warnings']} "
         f"postprocessed_actions={data['postprocessed_classification']['events_by_action']}"
     )
     if summary_path:

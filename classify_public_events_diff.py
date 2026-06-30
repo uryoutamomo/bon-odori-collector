@@ -54,6 +54,9 @@ DATE_PREDICTION_FIELDS = {
 DETAIL_FIELDS = {
     "detail",
 }
+SOURCE_FIELDS = {
+    "source_urls",
+}
 POSTPROCESSOR_RULE_FIELDS = {
     "fixed_date_rule",
 }
@@ -64,6 +67,7 @@ HIGH_RISK_FIELDS = (
     | SEASON_FIELDS
     | DATE_PREDICTION_FIELDS
     | DETAIL_FIELDS
+    | SOURCE_FIELDS
     | POSTPROCESSOR_RULE_FIELDS
 )
 
@@ -101,6 +105,8 @@ def field_family(field):
         return "date_prediction"
     if field in DETAIL_FIELDS:
         return "detail"
+    if field in SOURCE_FIELDS:
+        return "source"
     if field in POSTPROCESSOR_RULE_FIELDS:
         return "fixed_date_rule"
     return "other"
@@ -171,6 +177,9 @@ def classify_diff(field, collector_value, site_value):
         return "individual_review"
 
     if family == "detail":
+        return "individual_review"
+
+    if family == "source":
         return "individual_review"
 
     if family == "fixed_date_rule":

@@ -15,6 +15,7 @@ class ClassifyPublicEventsDiffTest(unittest.TestCase):
     def test_fixed_date_rule_is_postprocess_rule_not_detail_review(self):
         self.assertEqual(field_family("detail"), "detail")
         self.assertEqual(field_family("fixed_date_rule"), "fixed_date_rule")
+        self.assertEqual(field_family("source_urls"), "source")
         self.assertEqual(
             classify_diff("fixed_date_rule", {"rule_type": "fixed_mmdd"}, None),
             "collector_only_postprocess_rule",
@@ -23,6 +24,42 @@ class ClassifyPublicEventsDiffTest(unittest.TestCase):
             classify_diff("detail", "public text", None),
             "individual_review",
         )
+        self.assertEqual(
+            classify_diff("source_urls", [], [{"url": "https://example.com", "kind": "official"}]),
+            "individual_review",
+        )
+
+    def test_source_url_removal_is_high_risk_individual_review(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            collector_path = root / "collector.json"
+            site_path = root / "site.json"
+            base = {
+                "name": "丸の内de盆踊り",
+                "venue": "行幸通り",
+                "date": "2026-07-25",
+            }
+            write_json(collector_path, [{**base, "source_urls": []}])
+            write_json(
+                site_path,
+                [
+                    {
+                        **base,
+                        "source_urls": [
+                            {
+                                "label": "公式告知あり",
+                                "url": "https://www.marunouchi.com/pickup/event/6763/",
+                                "kind": "official",
+                            }
+                        ],
+                    }
+                ],
+            )
+
+            result = build_classification(collector_path, site_path)
+
+        self.assertEqual(result["summary"]["records_by_family"], {"source": 1})
+        self.assertEqual(result["summary"]["events_by_action"], {"individual_review": 1})
 
     def test_collector_only_fixed_date_rule_does_not_force_individual_review(self):
         with tempfile.TemporaryDirectory() as tmp:
