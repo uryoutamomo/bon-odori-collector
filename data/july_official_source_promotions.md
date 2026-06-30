@@ -6,7 +6,7 @@
 - checked_count: 3
 - updated_count: 0
 - already_current_count: 3
-- backup_db: 
+- backup_db:
 
 | event | changed | before source_kind | after source_kind | source_url | reason |
 | --- | --- | --- | --- | --- | --- |
