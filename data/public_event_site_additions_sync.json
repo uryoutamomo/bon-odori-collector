@@ -1,0 +1,153 @@
+{
+  "generated_by": "sync_public_event_additions_to_site.py",
+  "generated_at": "2026-06-30T14:46:18.673452+00:00",
+  "mode": "write",
+  "write_performed": true,
+  "sources": {
+    "collector_events": "/Users/ryotauchida/bon-odori-collector/data/public/events_public.json",
+    "site_repo": "/Users/ryotauchida/bon-odori-site",
+    "site_events": "/Users/ryotauchida/bon-odori-site/data/events_public.json",
+    "site_head_ref": "HEAD:data/events_public.json"
+  },
+  "summary": {
+    "selected_count": 2,
+    "missing_count": 0,
+    "ambiguous_count": 0,
+    "site_head_count": 183,
+    "proposed_count": 185,
+    "site_local_data_diff_before_sync": true
+  },
+  "requested_event_names": [
+    "鉄砲洲納涼盆踊り",
+    "すみだ河内音頭 小盆踊り"
+  ],
+  "missing_event_names": [],
+  "ambiguous_event_names": [],
+  "selected_event_keys": [
+    "鉄砲洲納涼盆踊り␟鉄砲洲公園",
+    "すみだ河内音頭 小盆踊り␟本所地域プラザ BIG SHIP 多目的ホール"
+  ],
+  "selected_events": [
+    {
+      "name": "鉄砲洲納涼盆踊り",
+      "name_confirmed": true,
+      "venue": "鉄砲洲公園",
+      "area": "中央区",
+      "months": [
+        8
+      ],
+      "scale": null,
+      "access": "",
+      "address": "",
+      "lat": null,
+      "lng": null,
+      "date": "2026-08-03",
+      "date_end": "2026-08-05",
+      "status": "確認済み",
+      "date_confidence": {
+        "level": "confirmed",
+        "label": "確認済み",
+        "description": "開催日として確認済みです"
+      },
+      "date_candidates": [],
+      "hints": [
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          5
+        ]
+      ],
+      "jun": {
+        "8": "上旬"
+      },
+      "description": "",
+      "detail": "入船二丁目町会の公式/町会広報X投稿で、2026年8月3日から8月5日、鉄砲洲公園、18:45-21:00の開催を確認。",
+      "source_urls": [
+        {
+          "label": "公式告知あり",
+          "url": "https://x.com/iri2choukai/status/2069959259895496872",
+          "kind": "official"
+        }
+      ],
+      "songs": [],
+      "public_status": "upcoming_confirmed",
+      "public_category": "upcoming",
+      "public_status_label": "今後開催",
+      "public_note": "2026年日程確認済み: 2026-08-03〜2026-08-05",
+      "recurrence_label": "2026年確認済み",
+      "recurrence_score": 0.95,
+      "recurrence_reasons": [
+        "2026年日付確認済み"
+      ],
+      "recurrence_cautions": [],
+      "edition_number": null,
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-08-03",
+        "2026-08-05"
+      ],
+      "display_tier": "confirmed"
+    },
+    {
+      "name": "すみだ河内音頭 小盆踊り",
+      "name_confirmed": true,
+      "venue": "本所地域プラザ BIG SHIP 多目的ホール",
+      "area": "墨田区",
+      "months": [
+        5
+      ],
+      "scale": null,
+      "access": "都営浅草線「蔵前」駅徒歩10分、JR「両国」駅徒歩15分",
+      "address": "東京都墨田区本所1丁目13番4号",
+      "lat": null,
+      "lng": null,
+      "date": "2026-05-16",
+      "date_end": null,
+      "status": "確認済み",
+      "date_confidence": {
+        "level": "confirmed",
+        "label": "確認済み",
+        "description": "開催日として確認済みです"
+      },
+      "date_candidates": [],
+      "hints": [
+        [
+          5,
+          16
+        ]
+      ],
+      "jun": {
+        "5": "中旬"
+      },
+      "description": "",
+      "detail": "",
+      "source_urls": [
+        {
+          "label": "公式告知あり",
+          "url": "https://www.kinshicho-kawachiondo.jp/archives/1067",
+          "kind": "official"
+        }
+      ],
+      "songs": [],
+      "public_status": "ended_2026",
+      "public_category": "ended",
+      "public_status_label": "開催終了",
+      "public_note": "2026年開催終了: 2026-05-16",
+      "recurrence_label": "2026年開催終了",
+      "recurrence_score": 0.98,
+      "recurrence_reasons": [
+        "2026年開催済み"
+      ],
+      "recurrence_cautions": [],
+      "edition_number": null,
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-05-16"
+      ],
+      "display_tier": "ended"
+    }
+  ]
+}
