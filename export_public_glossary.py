@@ -27,6 +27,7 @@ DB_ID = os.environ.get("GLOSSARY_V2_DB_ID") or GLOSSARY_V2_DATABASE_ID
 SONG_DB_ID = os.environ.get("SONG_MASTER_DB_ID") or SONG_MASTER_DATABASE_ID
 DEFAULT_OUT = Path.home() / "bon-odori-site" / "data" / "glossary_public.json"
 SUPPLEMENTS = Path("data/public_glossary_supplements.json")
+SONG_CONTENT_NOTES = Path("data/public_song_content_notes.json")
 SONG_MASTER_REGISTRATION = Path("data/song_master_initial_registration.json")
 YOUTUBE_SONG_MASTER = Path("data/youtube_song_master.json")
 NOTION_VERSION = "2022-06-28"
@@ -34,6 +35,10 @@ NOTION_VERSION = "2022-06-28"
 PUBLIC_STATES = {"候補", "有効", "保留"}
 EXCLUDED_KINDS = {"除外語", "イベント別名"}
 EXCLUDED_CONFIDENCES = {"除外確定"}
+GENERIC_SONG_DESCRIPTIONS = {
+    "盆踊り会場の曲目として確認されている曲です。",
+    "曲データベースに登録されている盆踊り曲です。会場カードや曲目データから参照されます。",
+}
 
 KIND_LABELS = {
     "会場別名": "会場の呼び名",
@@ -152,11 +157,12 @@ def row_to_public_item(row):
     kind = plain_text(props.get("種別", {}))
     roles = multi_select(props.get("シグナル役割", {}))
     description = first_existing_text(props, ("公開説明", "説明", "解釈", "正規語/表示名")) or term
+    example = first_existing_text(props, ("公開使用例", "使用例", "例文", "用例"))
     reading = first_existing_text(props, ("読み", "よみ", "フリガナ", "ふりがな"))
     confidence = plain_text(props.get("確度", {}))
     state = plain_text(props.get("状態", {})) or "候補"
 
-    return {
+    item = {
         "term": term,
         "reading": reading,
         "description": description,
@@ -168,6 +174,9 @@ def row_to_public_item(row):
         "confidence": confidence,
         "source_count": number_value(props.get("証拠数", {})),
     }
+    if example:
+        item["example"] = example
+    return item
 
 
 def build_public_glossary():
@@ -208,6 +217,17 @@ def load_public_supplements(path=SUPPLEMENTS):
         return []
     payload = json.loads(path.read_text(encoding="utf-8"))
     return payload.get("items") or []
+
+
+def load_song_content_notes(path=SONG_CONTENT_NOTES):
+    if not path.exists():
+        return {}
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    return {
+        item.get("term"): item
+        for item in payload.get("items", [])
+        if item.get("term")
+    }
 
 
 def merge_supplements(items, supplements):
@@ -275,16 +295,53 @@ def song_master_rows(path=SONG_MASTER_REGISTRATION):
     return payload.get("created", [])
 
 
+def song_public_description(name, row):
+    description = (row.get("description") or "").strip()
+    if description and description not in GENERIC_SONG_DESCRIPTIONS:
+        return description
+
+    rank = row.get("bon_usage_rank") or ""
+    genre = row.get("song_genre") or ""
+    basis = row.get("genre_basis") or ""
+    source_count = int(row.get("source_count") or 0)
+
+    if rank == "定番":
+        lead = "多くの盆踊り会場で確認されている定番曲です。"
+    elif rank == "よく使われる":
+        lead = "複数の盆踊り会場でよく使われる曲として確認されています。"
+    elif rank == "ときどき使われる":
+        lead = "会場によって曲目に入ることがある曲です。"
+    elif rank == "地域・会場固有":
+        lead = "特定の地域や会場で使われることが多い曲として扱っています。"
+    elif rank == "要確認":
+        lead = "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。"
+    else:
+        lead = "盆踊り会場の曲目として確認されている曲です。"
+
+    details = []
+    if genre and genre != "要調査":
+        details.append(f"このサイトでは「{genre}」系として仮分類しています。")
+    elif genre == "要調査":
+        details.append("曲のジャンルはまだ要調査です。")
+    if basis and basis != "曲名だけでは判定不能":
+        details.append(f"分類メモ: {basis}。")
+    if source_count:
+        details.append(f"確認根拠は {source_count} 件あります。")
+    return " ".join([lead, *details])
+
+
 def load_song_master_items(path=SONG_MASTER_REGISTRATION):
     rows = song_master_rows(path)
     song_names = sorted({row.get("song_name") for row in rows if row.get("song_name")})
     by_name = {row.get("song_name"): row for row in rows if row.get("song_name")}
-    return [
-        {
+    content_notes = load_song_content_notes()
+    items = []
+    for name in song_names:
+        note = content_notes.get(name, {})
+        item = {
             "term": name,
             "reading": "",
-            "description": by_name.get(name, {}).get("description")
-            or "曲データベースに登録されている盆踊り曲です。会場カードや曲目データから参照されます。",
+            "description": song_public_description(name, by_name.get(name, {})),
             "tags": ["曲名・踊り名"],
             "category": "曲名",
             "category_label": "曲名・踊り名",
@@ -302,18 +359,32 @@ def load_song_master_items(path=SONG_MASTER_REGISTRATION):
             "genre_basis": by_name.get(name, {}).get("genre_basis") or "",
             "genre_review_status": by_name.get(name, {}).get("genre_review_status") or "",
         }
-        for name in song_names
-    ]
+        if note.get("content_note"):
+            item["content_note"] = note["content_note"]
+        if note.get("content_note_status"):
+            item["content_note_status"] = note["content_note_status"]
+        items.append(item)
+    return items
 
 
 def replace_song_glossary_items(items, song_items):
     if not song_items:
         return items
+    readings_by_term = {
+        item.get("term"): item.get("reading")
+        for item in items
+        if item.get("term") and item.get("reading")
+    }
+    merged_song_items = []
+    for item in song_items:
+        merged = dict(item)
+        merged["reading"] = merged.get("reading") or readings_by_term.get(merged.get("term"), "")
+        merged_song_items.append(merged)
     return [
         item
         for item in items
         if item.get("category") != "曲名" and item.get("category_label") != "曲名・踊り名"
-    ] + song_items
+    ] + merged_song_items
 
 
 def main():
