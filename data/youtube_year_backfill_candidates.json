@@ -1,17 +1,17 @@
 {
   "generated_by": "harvest_youtube_year_backfill.py",
-  "generated_at": "2026-06-24T20:00:32.747249+00:00",
+  "generated_at": "2026-06-26T20:02:53.689531+00:00",
   "source": "data/youtube_year_backfill_queue.json",
   "selected_queue_count": 169,
   "queue_offset": 0,
   "max_results_per_query": 5,
   "api_request_count_estimate": 2,
   "summary": {
-    "candidate_count": 556,
+    "candidate_count": 558,
     "status_counts": {
       "review": 48,
       "strong": 183,
-      "weak": 325
+      "weak": 327
     },
     "strong_count": 183,
     "review_count": 48
@@ -22016,6 +22016,32 @@
       "venue": "五反野コミュニティ公園",
       "area": "足立区",
       "detected_event_date": "2023-08-25",
+      "video_id": "QrQ8vjW-j_Q",
+      "video_url": "https://www.youtube.com/watch?v=QrQ8vjW-j_Q",
+      "title": "会津磐梯山 　東綾瀬公園ハト広場 納涼盆踊り大会 20230825",
+      "channel_id": "UC8djZNe8ynSlUmop8Jjt45A",
+      "channel_title": "祭のきせき　MatsuriNoKiseki",
+      "published_at": "2023-08-25T13:51:54Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/QrQ8vjW-j_Q/maxresdefault.jpg",
+      "query": "西綾瀬町会 夏祭り盆踊り大会 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "当チャンネル地元の盆踊りです。 https://youtu.be/rj-WN1DUnmo https://youtu.be/Z84CRSmbdXI https://youtu.be/4InftQ_y_KM https://youtu.be/ANbB3DlGOhc https://youtu.be/QrQ8vjW-j_Q https://youtu.be/nPswMYL5rD0 https://youtu.be/l6U2BDPOLy0 https://youtu.be/YvaaGitE-p0 https://youtu.be/LM-FQB0DGMw https://youtu.be/ztC2R_Y5qNs https://youtu.be/3CAZf-iXal8 https://youtu.be/9-o3lMXCRPo https://youtu.be/TFVMAZcmDbw https://youtu.be/saKRxJFeMO4 https://youtu.be/N3X6GrT9ZZ8 https://youtu.be/AKlS0QQ2viU https://youtu.be/mm…"
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:128813fba0e30596",
+      "target_year": 2023,
+      "event_name": "西綾瀬町会 夏祭り盆踊り大会",
+      "venue": "五反野コミュニティ公園",
+      "area": "足立区",
+      "detected_event_date": "2023-08-25",
       "video_id": "rj-WN1DUnmo",
       "video_url": "https://www.youtube.com/watch?v=rj-WN1DUnmo",
       "title": "北海盆唄 　東綾瀬公園ハト広場 納涼盆踊り大会 20230825",
@@ -28089,6 +28115,28 @@
       "status": "weak",
       "score": 3,
       "reasons": [],
+      "queue_id": "youtube-year-backfill:443b767f4ded8171",
+      "target_year": 2023,
+      "event_name": "砧小学校「第38回砧っ子夏祭り」",
+      "venue": "砧小学校",
+      "area": "世田谷区",
+      "detected_event_date": "",
+      "video_id": "cltLPToqJlk",
+      "video_url": "https://www.youtube.com/watch?v=cltLPToqJlk",
+      "title": "東日本大震災の津波に耐え震災遺産に登録された荒浜小学校",
+      "channel_id": "UCa5xRa5E41rMgpUp_uOxhQA",
+      "channel_title": "ロブロえふチャンネル",
+      "published_at": "2023-06-11T03:44:12Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/cltLPToqJlk/maxresdefault.jpg",
+      "query": "砧小学校「第38回砧っ子夏祭り」 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": ""
+    },
+    {
+      "status": "weak",
+      "score": 3,
+      "reasons": [],
       "queue_id": "youtube-year-backfill:cd8cb6e6b8037dfa",
       "target_year": 2023,
       "event_name": "砧町町会「納涼夏祭り大会」",
@@ -28416,5 +28464,5 @@
       "description_excerpt": ""
     }
   ],
-  "merged_from": "2026-06-24T20:00:32.272160+00:00"
+  "merged_from": "2026-06-26T20:02:52.985980+00:00"
 }

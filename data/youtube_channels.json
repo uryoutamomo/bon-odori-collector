@@ -1,11 +1,11 @@
 {
   "generated_by": "build_youtube_channels.py",
-  "generated_at": "2026-06-15T06:59:07.417496+00:00",
+  "generated_at": "2026-06-29T19:56:29.967946+00:00",
   "source": "data/voices.json",
   "setlist_source": "data/youtube_setlist_occurrences.json",
   "channel_count": 7,
-  "priority_channel_count": 2,
-  "youtube_voice_count": 288,
+  "priority_channel_count": 5,
+  "youtube_voice_count": 4414,
   "channels": [
     {
       "channel_key": "UCNF_5e3ZvziJueTWvTPATGw",
@@ -13,211 +13,140 @@
       "channel_title": "和太鼓お祭りCH",
       "channel_url": "https://www.youtube.com/channel/UCNF_5e3ZvziJueTWvTPATGw",
       "accounts": [
-        "@wadaikoCH"
+        "@wadaikoCH",
+        "UCNF_5e3ZvziJueTWvTPATGw"
       ],
       "feed_names": [
-        "和太鼓お祭りCH"
+        "和太鼓お祭りCH",
+        "和太鼓お祭りチャンネル"
       ],
       "representative_thumbnail_url": "https://i.ytimg.com/vi/dm6SxqoFPVA/maxresdefault.jpg",
-      "video_count": 146,
-      "bon_odori_video_count": 121,
-      "text_gt_500_count": 113,
-      "media_url_video_count": 140,
-      "setlist_occurrence_count": 8,
-      "setlist_song_count": 160,
-      "complete_setlist_count": 8,
-      "venue_date_success_count": 7,
-      "first_published_at": "2026-05-28T10:00:07Z",
-      "last_published_at": "2026-06-14T21:00:30+00:00",
+      "video_count": 2547,
+      "bon_odori_video_count": 2337,
+      "text_gt_500_count": 1790,
+      "media_url_video_count": 2492,
+      "setlist_occurrence_count": 1877,
+      "setlist_song_count": 35689,
+      "complete_setlist_count": 1858,
+      "venue_date_success_count": 1634,
+      "first_published_at": "2025-01-01T10:00:16Z",
+      "last_published_at": "2026-06-29T11:00:38+00:00",
       "sample_videos": [
         {
-          "url": "https://www.youtube.com/watch?v=GE_F7-n85Xo",
-          "video_id": "GE_F7-n85Xo",
-          "title": "千代田おどり　【赤坂日枝神社】山王祭盆踊り12　「山王音頭と民踊大会」の風景　2026年6月13日",
-          "published_at": "2026-06-14T21:00:30+00:00",
+          "url": "https://www.youtube.com/watch?v=pOLB44on37M",
+          "video_id": "pOLB44on37M",
+          "title": "さわぎ　郡上おどりin青山９　2026年6月26日　秩父宮ラグビー場駐車場　ダブル台風接近中　雨の郡上おどり",
+          "published_at": "2026-06-29T11:00:38+00:00",
           "thumbnail_url": ""
         },
         {
-          "url": "https://www.youtube.com/watch?v=OhhRnGn9PGw",
-          "video_id": "OhhRnGn9PGw",
-          "title": "山王音頭　【赤坂日枝神社】山王祭盆踊り11　「山王音頭と民踊大会」の風景　2026年6月13日",
-          "published_at": "2026-06-14T18:00:26+00:00",
+          "url": "https://www.youtube.com/watch?v=hnEPdGHN5Ac",
+          "video_id": "hnEPdGHN5Ac",
+          "title": "炭坑節　赤坂日枝神社盆踊り３日目27　山王祭「山王音頭と民踊大会」　2026年6月15日",
+          "published_at": "2026-06-29T10:30:05+00:00",
           "thumbnail_url": ""
         },
         {
-          "url": "https://www.youtube.com/watch?v=fjrQwtowLI8",
-          "video_id": "fjrQwtowLI8",
-          "title": "東京おどり　【赤坂日枝神社】山王祭盆踊り10　「山王音頭と民踊大会」の風景　2026年6月13日",
-          "published_at": "2026-06-14T15:00:19+00:00",
+          "url": "https://www.youtube.com/watch?v=QotaLkX7usI",
+          "video_id": "QotaLkX7usI",
+          "title": "恋をするなら（橋幸夫）　赤坂日枝神社盆踊り３日目26　山王祭「山王音頭と民踊大会」　2026年6月15日",
+          "published_at": "2026-06-29T10:00:20+00:00",
           "thumbnail_url": ""
         },
         {
-          "url": "https://www.youtube.com/watch?v=EQGF-Zpk7zo",
-          "video_id": "EQGF-Zpk7zo",
-          "title": "【4K】矢先稲荷神社大祭 本社神輿が街をゆく 2026年6月14日",
-          "published_at": "2026-06-14T04:30:05+00:00",
+          "url": "https://www.youtube.com/watch?v=Jn3nSWAV1D8",
+          "video_id": "Jn3nSWAV1D8",
+          "title": "葛飾音頭　「柏駅東口ハウディモール盆踊り大会」３　芸能フェスティバル　2026年6月28日",
+          "published_at": "2026-06-29T09:30:17+00:00",
           "thumbnail_url": ""
         },
         {
-          "url": "https://www.youtube.com/watch?v=2gfhUtwHOKA",
-          "video_id": "2gfhUtwHOKA",
-          "title": "相馬甚句　【赤坂日枝神社】山王祭盆踊り９　「山王音頭と民踊大会」の風景　2026年6月13日",
-          "published_at": "2026-06-14T02:00:16+00:00",
+          "url": "https://www.youtube.com/watch?v=pdUPMLX0mlk",
+          "video_id": "pdUPMLX0mlk",
+          "title": "かわさき　「第2回郡上まつりin名古屋」２　納谷橋COLORS 366　郡上節ガールズバンド",
+          "published_at": "2026-06-29T09:00:38+00:00",
           "thumbnail_url": ""
         }
       ],
       "events": [
         {
-          "occurrence_key": "512602130c654f9b",
-          "event_name": "山王音頭と民踊大会",
-          "venue": "山王パークタワー公開空地",
-          "event_date": "2026-06-13",
-          "song_count": 13,
-          "confidence": "high"
-        },
-        {
-          "occurrence_key": "370e7eb76465ada1",
-          "event_name": "国立旭通りジューンフェスタ盆踊り",
-          "venue": "国立旭通り",
-          "event_date": "2026-06-07",
-          "song_count": 12,
-          "confidence": "high"
-        },
-        {
-          "occurrence_key": "1debf98e280dc2da",
-          "event_name": "横浜開港祭 BON ODORI",
-          "venue": "パシフィコ横浜プラザ広場",
-          "event_date": "2026-06-01",
-          "song_count": 14,
-          "confidence": "high"
-        },
-        {
-          "occurrence_key": "b193da52941a7fd5",
-          "event_name": "Min-Yoi's盆踊り",
-          "venue": "日本民謡会館",
-          "event_date": "2026-05-31",
-          "song_count": 44,
-          "confidence": "high"
-        },
-        {
-          "occurrence_key": "5633fd82e92b855e",
-          "event_name": "品川音頭 【おおさきHappy Olive Festival】「晴盆盆踊り」1",
-          "venue": "大崎駅周辺",
-          "event_date": "2026-05-30",
+          "occurrence_key": "387662eee834d81d",
+          "event_name": "郡上おどり in 青山",
+          "venue": "秩父宮ラグビー場駐車場",
+          "event_date": "2026-06-26",
           "song_count": 8,
           "confidence": "high"
         },
         {
-          "occurrence_key": "7728efdca27d5f06",
-          "event_name": "飛鳥山公園盆踊り会（有志サークル）",
-          "venue": "飛鳥山公園",
-          "event_date": "2026-05-24",
-          "song_count": 30,
+          "occurrence_key": "01cd6bbeac82155b",
+          "event_name": "郡上おどり in 青山",
+          "venue": "秩父宮ラグビー場駐車場",
+          "event_date": "2026-06-26",
+          "song_count": 6,
           "confidence": "high"
         },
         {
-          "occurrence_key": "c443a1817bc8a71e",
-          "event_name": "Min-Yoi's盆踊り",
-          "venue": "日本民謡会館",
-          "event_date": "2025-10-19",
-          "song_count": 28,
+          "occurrence_key": "c5e8d96e22c5bd57",
+          "event_name": "郡上おどり in 青山",
+          "venue": "秩父宮ラグビー場駐車場",
+          "event_date": "2026-06-26",
+          "song_count": 6,
           "confidence": "high"
         },
         {
-          "occurrence_key": "df5ed425972aa1f4",
-          "event_name": "お囃子同好会「雅」レクチャー",
-          "venue": "お囃子同好会「雅」レクチャー",
-          "event_date": "",
-          "song_count": 11,
-          "confidence": "low"
-        }
-      ],
-      "source": "existing_voices",
-      "auto_score": 100,
-      "collection_status": "優先",
-      "score_reasons": [
-        "youtube動画146本",
-        "盆踊り文脈121本",
-        "会場日付つきセットリスト8件",
-        "曲リンク160件",
-        "まとまった曲目表8件",
-        "説明欄リンクあり140本"
-      ]
-    },
-    {
-      "channel_key": "UCLSZK_q5ma6aeIrVRUEpkNw",
-      "channel_id": "UCLSZK_q5ma6aeIrVRUEpkNw",
-      "channel_title": "祭のきせき 盆踊り",
-      "channel_url": "https://www.youtube.com/channel/UCLSZK_q5ma6aeIrVRUEpkNw",
-      "accounts": [
-        "@matsuribonodori"
-      ],
-      "feed_names": [
-        "祭のきせき 盆踊り"
-      ],
-      "representative_thumbnail_url": "https://i.ytimg.com/vi/4RAaOtSbF-A/maxresdefault.jpg",
-      "video_count": 67,
-      "bon_odori_video_count": 65,
-      "text_gt_500_count": 64,
-      "media_url_video_count": 67,
-      "setlist_occurrence_count": 2,
-      "setlist_song_count": 55,
-      "complete_setlist_count": 2,
-      "venue_date_success_count": 2,
-      "first_published_at": "2026-05-14T01:00:15Z",
-      "last_published_at": "2026-06-13T09:50:00+00:00",
-      "sample_videos": [
-        {
-          "url": "https://www.youtube.com/watch?v=VmouD0eIXsg",
-          "video_id": "VmouD0eIXsg",
-          "title": "盆踊りシーズン開幕！山王音頭と民踊大会 【 日枝神社 山王祭 】後半",
-          "published_at": "2026-06-13T09:50:00+00:00",
-          "thumbnail_url": ""
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=_XvxNzDV7Ew",
-          "video_id": "_XvxNzDV7Ew",
-          "title": "22 よこはまアラメヤ音頭（３部） 　横浜開港祭 BON ODORI　20260601",
-          "published_at": "2026-06-05T20:00:36+00:00",
-          "thumbnail_url": ""
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=e_rYMmfRaVE",
-          "video_id": "e_rYMmfRaVE",
-          "title": "21 ダンシングヒーロー 　横浜開港祭 BON ODORI　20260601",
-          "published_at": "2026-06-05T19:00:09+00:00",
-          "thumbnail_url": ""
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=stvVBO2W0CI",
-          "video_id": "stvVBO2W0CI",
-          "title": "20 希望の轍 　横浜開港祭 BON ODORI　20260601",
-          "published_at": "2026-06-05T18:00:23+00:00",
-          "thumbnail_url": ""
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=zYYzOZUEcGU",
-          "video_id": "zYYzOZUEcGU",
-          "title": "19 Septmber 　横浜開港祭 BON ODORI　20260601",
-          "published_at": "2026-06-05T17:00:32+00:00",
-          "thumbnail_url": ""
-        }
-      ],
-      "events": [
-        {
-          "occurrence_key": "1debf98e280dc2da",
-          "event_name": "横浜開港祭 BON ODORI",
-          "venue": "パシフィコ横浜プラザ広場",
-          "event_date": "2026-06-01",
-          "song_count": 14,
+          "occurrence_key": "5d08b9958c2bf400",
+          "event_name": "盆ギリ恋歌(サザンオールスターズ) 住友三角広場",
+          "venue": "盆ギリ恋歌(サザンオールスターズ) 住友三角広場",
+          "event_date": "2026-06-24",
+          "song_count": 21,
           "confidence": "high"
         },
         {
-          "occurrence_key": "06a515b0207f1b2d",
-          "event_name": "マロニエまつり盆踊り大会 2 ヒューリック浅草橋ビル前(全曲ver)",
-          "venue": "ヒューリック浅草橋前",
-          "event_date": "2026-05-09",
-          "song_count": 41,
+          "occurrence_key": "ac5eeecab6b883a2",
+          "event_name": "炭坑節 住友三角広場",
+          "venue": "炭坑節 住友三角広場",
+          "event_date": "2026-06-24",
+          "song_count": 8,
+          "confidence": "high"
+        },
+        {
+          "occurrence_key": "0ab456de26bfcf20",
+          "event_name": "東京音頭 住友三角広場",
+          "venue": "東京音頭 住友三角広場",
+          "event_date": "2026-06-24",
+          "song_count": 8,
+          "confidence": "high"
+        },
+        {
+          "occurrence_key": "de24c6e3ade0e714",
+          "event_name": "恋愛レボリューション21(モーニング娘。) 住友三角広場",
+          "venue": "恋愛レボリューション21(モーニング娘。) 住友三角広場",
+          "event_date": "2026-06-24",
+          "song_count": 21,
+          "confidence": "high"
+        },
+        {
+          "occurrence_key": "26303b8358f7244f",
+          "event_name": "勇気100%(なにわ男子) 住友三角広場",
+          "venue": "勇気100%(なにわ男子) 住友三角広場",
+          "event_date": "2026-06-24",
+          "song_count": 8,
+          "confidence": "high"
+        },
+        {
+          "occurrence_key": "622553a47308b212",
+          "event_name": "住友三角広場「居酒屋盆踊り」5 新宿住友ビル (Insta360 Ace Pro 2)",
+          "venue": "住友三角広場「居酒屋盆踊り」5 新宿住友ビル (Insta360 Ace Pro 2)",
+          "event_date": "2026-06-24",
+          "song_count": 8,
+          "confidence": "high"
+        },
+        {
+          "occurrence_key": "46d69807d7e7b5d0",
+          "event_name": "マツケンサンバII(松平健) 住友三角広場",
+          "venue": "マツケンサンバII(松平健) 住友三角広場",
+          "event_date": "2026-06-24",
+          "song_count": 8,
           "confidence": "high"
         }
       ],
@@ -225,287 +154,12 @@
       "auto_score": 100,
       "collection_status": "優先",
       "score_reasons": [
-        "youtube動画67本",
-        "盆踊り文脈65本",
-        "会場日付つきセットリスト2件",
-        "曲リンク55件",
-        "まとまった曲目表2件",
-        "説明欄リンクあり67本"
-      ]
-    },
-    {
-      "channel_key": "UCKCspf_NrY16rUnODmBqOWA",
-      "channel_id": "UCKCspf_NrY16rUnODmBqOWA",
-      "channel_title": "Tokyo Lonely Walker",
-      "channel_url": "https://www.youtube.com/channel/UCKCspf_NrY16rUnODmBqOWA",
-      "accounts": [
-        "UCKCspf_NrY16rUnODmBqOWA"
-      ],
-      "feed_names": [
-        "Tokyo Lonely Walker"
-      ],
-      "representative_thumbnail_url": "",
-      "video_count": 15,
-      "bon_odori_video_count": 8,
-      "text_gt_500_count": 13,
-      "media_url_video_count": 15,
-      "setlist_occurrence_count": 0,
-      "setlist_song_count": 0,
-      "complete_setlist_count": 0,
-      "venue_date_success_count": 0,
-      "first_published_at": "2026-05-17T01:09:03+00:00",
-      "last_published_at": "2026-06-14T01:00:29+00:00",
-      "sample_videos": [
-        {
-          "url": "https://www.youtube.com/watch?v=84q8qeG029A",
-          "video_id": "84q8qeG029A",
-          "title": "盆踊り開幕！赤坂日枝神社 山王祭 盆踊り｜サザン｜東京音頭｜炭坑節｜山王音頭｜八木節 他 / Traditional Japanese Bon Dance at Hie Shrine. [4K]🇯🇵",
-          "published_at": "2026-06-14T01:00:29+00:00",
-          "thumbnail_url": ""
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=_WhO6Kh08sE",
-          "video_id": "_WhO6Kh08sE",
-          "title": "盆踊りシーズン開幕！日枝神社 山王祭 盆踊り｜東京音頭 2026年 初日 / Dancing the traditional Japanese Tokyo Ondo. [4K]🇯🇵",
-          "published_at": "2026-06-13T16:00:34+00:00",
-          "thumbnail_url": ""
-        },
-        {
-          "url": "https://www.youtube.com/shorts/mDNrK_VLaiM",
-          "video_id": "",
-          "title": "映画『Michael／マイケル』公開記念イベント！記念展示が素敵！東京ミッドタウン日比谷",
-          "published_at": "2026-06-13T04:20:25+00:00",
-          "thumbnail_url": ""
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=y6Yd44m5UNo",
-          "video_id": "y6Yd44m5UNo",
-          "title": "大量のピカチュウが踊りまくる！可愛い！Pokemon GO Fest 2026 TOKYO ダンスステージ -EDM- ポケモン / Pikachu Dance Stage [4K]🇯🇵",
-          "published_at": "2026-06-10T00:00:26+00:00",
-          "thumbnail_url": ""
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=lqrTdZyCEhE",
-          "video_id": "lqrTdZyCEhE",
-          "title": "必見のオタクの舞！ ヲタ芸！fripSide - only my railgun｜肉フェス2026 A-POP RAVE powered by ANTHEM AKIBA  [4K]🇯🇵",
-          "published_at": "2026-06-08T01:00:21+00:00",
-          "thumbnail_url": ""
-        }
-      ],
-      "events": [],
-      "source": "existing_voices",
-      "auto_score": 49,
-      "collection_status": "通常",
-      "score_reasons": [
-        "youtube動画15本",
-        "盆踊り文脈8本",
-        "説明欄リンクあり15本"
-      ]
-    },
-    {
-      "channel_key": "UCSHoRoW171uEytgOcKkKU2Q",
-      "channel_id": "UCSHoRoW171uEytgOcKkKU2Q",
-      "channel_title": "Exploring Japan with Zen",
-      "channel_url": "https://www.youtube.com/channel/UCSHoRoW171uEytgOcKkKU2Q",
-      "accounts": [
-        "UCSHoRoW171uEytgOcKkKU2Q"
-      ],
-      "feed_names": [
-        "Exploring Japan with Zen"
-      ],
-      "representative_thumbnail_url": "",
-      "video_count": 15,
-      "bon_odori_video_count": 14,
-      "text_gt_500_count": 4,
-      "media_url_video_count": 4,
-      "setlist_occurrence_count": 0,
-      "setlist_song_count": 0,
-      "complete_setlist_count": 0,
-      "venue_date_success_count": 0,
-      "first_published_at": "2025-07-23T21:31:17+00:00",
-      "last_published_at": "2025-08-10T19:35:17+00:00",
-      "sample_videos": [
-        {
-          "url": "https://www.youtube.com/shorts/Ccx04lQCgUY",
-          "video_id": "",
-          "title": "Shibuya Bon Dance 2025, Cheerleader Show   渋谷盆踊り 2025 チアリーダー、フラダンスなど　#shorts",
-          "published_at": "2025-08-10T19:35:17+00:00",
-          "thumbnail_url": ""
-        },
-        {
-          "url": "https://www.youtube.com/shorts/NU9Ed2ypoR4",
-          "video_id": "",
-          "title": "Shibuya Bon Dance 2025, Great Tokyo Ondo 2    渋谷盆踊り 2025 大東京音頭-2    #shorts",
-          "published_at": "2025-08-08T23:28:42+00:00",
-          "thumbnail_url": ""
-        },
-        {
-          "url": "https://www.youtube.com/shorts/BY7he8CsGwk",
-          "video_id": "",
-          "title": "Shibuya Bon Dance 2025, Great Tokyo Ondo 1   渋谷盆踊り 2025 大東京音頭-1   #shorts",
-          "published_at": "2025-08-07T14:58:29+00:00",
-          "thumbnail_url": ""
-        },
-        {
-          "url": "https://www.youtube.com/shorts/tmgiQ18cXvY",
-          "video_id": "",
-          "title": "Shibuya Bon Dance 2025, You Make Shibuya    渋谷盆踊り 2025 夢みる渋谷　#shorts",
-          "published_at": "2025-08-06T20:32:38+00:00",
-          "thumbnail_url": ""
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=CTA9El6Hmfg",
-          "video_id": "CTA9El6Hmfg",
-          "title": "Shibuya Bon Odori Dance festival 2025  /  渋谷 盆踊り 2025",
-          "published_at": "2025-08-03T22:38:15+00:00",
-          "thumbnail_url": ""
-        }
-      ],
-      "events": [],
-      "source": "existing_voices",
-      "auto_score": 43,
-      "collection_status": "通常",
-      "score_reasons": [
-        "youtube動画15本",
-        "盆踊り文脈14本",
-        "説明欄リンクあり4本"
-      ]
-    },
-    {
-      "channel_key": "UCEYq2_O_Sai0j9chJOmcKtQ",
-      "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ",
-      "channel_title": "shu channel",
-      "channel_url": "https://www.youtube.com/channel/UCEYq2_O_Sai0j9chJOmcKtQ",
-      "accounts": [
-        "UCEYq2_O_Sai0j9chJOmcKtQ"
-      ],
-      "feed_names": [
-        "shu channel"
-      ],
-      "representative_thumbnail_url": "",
-      "video_count": 15,
-      "bon_odori_video_count": 1,
-      "text_gt_500_count": 6,
-      "media_url_video_count": 15,
-      "setlist_occurrence_count": 0,
-      "setlist_song_count": 0,
-      "complete_setlist_count": 0,
-      "venue_date_success_count": 0,
-      "first_published_at": "2026-05-16T07:46:21+00:00",
-      "last_published_at": "2026-06-14T07:31:20+00:00",
-      "sample_videos": [
-        {
-          "url": "https://www.youtube.com/watch?v=MJlUhvLyCAE",
-          "video_id": "MJlUhvLyCAE",
-          "title": "赤坂・日枝神社⛩山王祭「太鼓演奏🥁加賀豊年太鼓 ＆ 鵜浦豊年太鼓」Japanese Drum 2026.6.15 @山王パークタワー公開空地",
-          "published_at": "2026-06-14T07:31:20+00:00",
-          "thumbnail_url": ""
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=e4DwpcKoS68",
-          "video_id": "e4DwpcKoS68",
-          "title": "赤坂・日枝神社⛩山王祭「下町連合渡御」[4/4] 日本橋檜物町神輿ほか Sanno Matsuri (Festival) 2026.6.14 @日本橋・日本国道路元標前",
-          "published_at": "2026-06-14T05:53:02+00:00",
-          "thumbnail_url": ""
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=DiqDOOBAPjg",
-          "video_id": "DiqDOOBAPjg",
-          "title": "赤坂・日枝神社⛩山王祭「下町連合渡御」[3/4]日本橋一丁目（日本一）神輿ほか Sanno Matsuri (Festival) 2026.6.14 @日本橋・日本国道路元標前",
-          "published_at": "2026-06-14T05:52:53+00:00",
-          "thumbnail_url": ""
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=B0ML4j8N4eU",
-          "video_id": "B0ML4j8N4eU",
-          "title": "赤坂・日枝神社⛩山王祭「下町連合渡御」[2/4] 木遣り他 Sanno Matsuri (Festival) 2026.6.14 @日本橋・日本国道路元標前",
-          "published_at": "2026-06-14T05:52:03+00:00",
-          "thumbnail_url": ""
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=rw6hb_2c2Jc",
-          "video_id": "rw6hb_2c2Jc",
-          "title": "赤坂・日枝神社⛩山王祭「下町連合渡御」[1/4]子供神輿ほか Sanno Matsuri (Festival) 2026.6.14 @日本橋・日本国道路元標前",
-          "published_at": "2026-06-14T05:51:53+00:00",
-          "thumbnail_url": ""
-        }
-      ],
-      "events": [],
-      "source": "existing_voices",
-      "auto_score": 28,
-      "collection_status": "候補",
-      "score_reasons": [
-        "youtube動画15本",
-        "盆踊り文脈1本",
-        "説明欄リンクあり15本"
-      ]
-    },
-    {
-      "channel_key": "UCaVANrt14S6q-if2BBOE4TQ",
-      "channel_id": "UCaVANrt14S6q-if2BBOE4TQ",
-      "channel_title": "Tokyo Hz",
-      "channel_url": "https://www.youtube.com/channel/UCaVANrt14S6q-if2BBOE4TQ",
-      "accounts": [
-        "UCaVANrt14S6q-if2BBOE4TQ"
-      ],
-      "feed_names": [
-        "Tokyo Hz"
-      ],
-      "representative_thumbnail_url": "",
-      "video_count": 15,
-      "bon_odori_video_count": 0,
-      "text_gt_500_count": 15,
-      "media_url_video_count": 15,
-      "setlist_occurrence_count": 0,
-      "setlist_song_count": 0,
-      "complete_setlist_count": 0,
-      "venue_date_success_count": 0,
-      "first_published_at": "2026-06-07T01:00:05+00:00",
-      "last_published_at": "2026-06-14T01:00:03+00:00",
-      "sample_videos": [
-        {
-          "url": "https://www.youtube.com/watch?v=QKi5tlHXqYw",
-          "video_id": "QKi5tlHXqYw",
-          "title": "⚽World Cup Fever Has Taken Over Shibuya! | Miyashita Park to Shibuya Crossing in Tokyo Jp 4kHDR",
-          "published_at": "2026-06-14T01:00:03+00:00",
-          "thumbnail_url": ""
-        },
-        {
-          "url": "https://www.youtube.com/shorts/L9i70lMMHsI",
-          "video_id": "",
-          "title": "💗So Inspiring! A Gentle Yet Powerful Sunset w/ Clear Mt. Fuji | Windy Shibuya Sky in Tokyo Jp",
-          "published_at": "2026-06-13T18:00:26+00:00",
-          "thumbnail_url": ""
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=u90QeD9TZu4",
-          "video_id": "u90QeD9TZu4",
-          "title": "💗So Inspiring! A Gentle Yet Powerful Sunset w/ Clear Mt. Fuji | Windy Shibuya Sky in Tokyo Jp 4kHDR",
-          "published_at": "2026-06-13T01:00:16+00:00",
-          "thumbnail_url": ""
-        },
-        {
-          "url": "https://www.youtube.com/shorts/B3eg3PNJ39w",
-          "video_id": "",
-          "title": "😆More Cosplayers Than Before! | Very Crowded Shibuya Crossing & Walk in Tokyo Jp  2026",
-          "published_at": "2026-06-12T18:00:19+00:00",
-          "thumbnail_url": ""
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=J2nvA6zk2uo",
-          "video_id": "J2nvA6zk2uo",
-          "title": "😆More Cosplayers Than Before! | Very Crowded Shibuya Crossing & Walk in Tokyo Jp  2026 4kHDR",
-          "published_at": "2026-06-12T01:00:27+00:00",
-          "thumbnail_url": ""
-        }
-      ],
-      "events": [],
-      "source": "existing_voices",
-      "auto_score": 25,
-      "collection_status": "候補",
-      "score_reasons": [
-        "youtube動画15本",
-        "説明欄リンクあり15本"
+        "youtube動画2547本",
+        "盆踊り文脈2337本",
+        "会場日付つきセットリスト1877件",
+        "曲リンク35689件",
+        "まとまった曲目表1858件",
+        "説明欄リンクあり2492本"
       ]
     },
     {
@@ -519,61 +173,755 @@
       "feed_names": [
         "Urban Walk"
       ],
-      "representative_thumbnail_url": "",
-      "video_count": 15,
-      "bon_odori_video_count": 0,
-      "text_gt_500_count": 5,
-      "media_url_video_count": 14,
+      "representative_thumbnail_url": "https://i.ytimg.com/vi/MO0HUbBehdE/maxresdefault.jpg",
+      "video_count": 817,
+      "bon_odori_video_count": 257,
+      "text_gt_500_count": 562,
+      "media_url_video_count": 671,
+      "setlist_occurrence_count": 82,
+      "setlist_song_count": 209,
+      "complete_setlist_count": 23,
+      "venue_date_success_count": 80,
+      "first_published_at": "2025-01-01T05:11:34Z",
+      "last_published_at": "2026-06-27T06:50:12+00:00",
+      "sample_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=WMSRCAoVfsw",
+          "video_id": "WMSRCAoVfsw",
+          "title": "【東京ドーム】三代目 J SOUL BROTHERS「PRESENTS \"JSB LAND 〜FOREVER〜\"」1日目開演前の様子 /  Tokyo Dome ライブ コンサート",
+          "published_at": "2026-06-27T06:50:12+00:00",
+          "thumbnail_url": ""
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=WvHQKSH3M-M",
+          "video_id": "WvHQKSH3M-M",
+          "title": "【東京ドーム】IVE「WORLD TOUR ‘SHOW WHAT I AM’ IN JAPAN」1日目開演前の様子 / アイヴ Tokyo Dome",
+          "published_at": "2026-06-24T00:50:14+00:00",
+          "thumbnail_url": ""
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=gadTwYkD1AI",
+          "video_id": "gadTwYkD1AI",
+          "title": "【4K】ニコニコ超会議 × 盆踊り 「おジャ魔女カーニバル / とっとこハム太郎 / ダンスロボットダンス /レッツゴー！陰陽師 / 紅蓮の弓矢」コール 超ニコニコ盆踊り 2日目",
+          "published_at": "2026-06-22T23:51:26+00:00",
+          "thumbnail_url": ""
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=SOebIygsKM0",
+          "video_id": "SOebIygsKM0",
+          "title": "【ニコニコ超会議 盆踊り 2026】「女々しくて」ゴールデンボンバー【オタ芸】コール 超ニコニコ盆踊り 2日目",
+          "published_at": "2026-06-22T00:06:45+00:00",
+          "thumbnail_url": ""
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=sTYYhx7RW44",
+          "video_id": "sTYYhx7RW44",
+          "title": "【国立競技場】＝LOVE「STADIUM LIVE「Beyond \"KYUN\"♡」」1日目開演前の様子 / MUFGスタジアム イコールラブ イコラブ",
+          "published_at": "2026-06-20T00:07:16+00:00",
+          "thumbnail_url": ""
+        }
+      ],
+      "events": [
+        {
+          "occurrence_key": "c96d34f162642e75",
+          "event_name": "【4K】氣志團 (早番)「ルーレット」- 真島昌利 Cover ライブ【下町ハイカロリーフェス 2025】 綾小路翔 気志團",
+          "venue": "【4K】氣志團 (早番)「ルーレット」- 真島昌利 Cover ライブ【下町ハイカロリーフェス 2025】 綾小路翔 気志團",
+          "event_date": "2025-12-04",
+          "song_count": 1,
+          "confidence": "low"
+        },
+        {
+          "occurrence_key": "96613cc426241cf4",
+          "event_name": "【4K】「茜色の夕日」- 氣志團 (早番) ライブ / フジファブリック Cover【下町ハイカロリーフェス 2025】 綾小路翔 気志團",
+          "venue": "【4K】「茜色の夕日」- 氣志團 (早番) ライブ / フジファブリック Cover【下町ハイカロリーフェス 2025】 綾小路翔 気志團",
+          "event_date": "2025-12-04",
+          "song_count": 1,
+          "confidence": "low"
+        },
+        {
+          "occurrence_key": "2d098317e516237e",
+          "event_name": "【4K】「パラダイス銀河」- 氣志團 (早番) ライブ / 光GENJI Cover【下町ハイカロリーフェス 2025】 綾小路翔 気志團",
+          "venue": "【4K】「パラダイス銀河」- 氣志團 (早番) ライブ / 光GENJI Cover【下町ハイカロリーフェス 2025】 綾小路翔 気志團",
+          "event_date": "2025-12-04",
+          "song_count": 1,
+          "confidence": "low"
+        },
+        {
+          "occurrence_key": "63488e0aba218b61",
+          "event_name": "【4K】「デイ・ドリーム・ビリーバー」- 氣志團 (早番) ライブ / ザ・タイマーズ Cover/【下町ハイカロリーフェス 2025】DAY DREAM BELIEVER 忌野清志郎 綾小路翔",
+          "venue": "【4K】「デイ・ドリーム・ビリーバー」- 氣志團 (早番) ライブ / ザ・タイマーズ Cover/【下町ハイカロリーフェス 2025】DAY DREAM BELIEVER 忌野清志郎 綾小路翔",
+          "event_date": "2025-12-04",
+          "song_count": 1,
+          "confidence": "low"
+        },
+        {
+          "occurrence_key": "b84030bbfacccf5f",
+          "event_name": "【4K】「オーシャンゼリゼ」- 氣志團 (早番) ライブ【下町ハイカロリーフェス 2025】 綾小路翔 LES CHAMP-ELYSEES 気志團",
+          "venue": "【4K】「オーシャンゼリゼ」- 氣志團 (早番) ライブ【下町ハイカロリーフェス 2025】 綾小路翔 LES CHAMP-ELYSEES 気志團",
+          "event_date": "2025-12-04",
+          "song_count": 1,
+          "confidence": "low"
+        },
+        {
+          "occurrence_key": "085284ddb03b1c64",
+          "event_name": "【4K】「どっかにいこー」- 氣志團 (早番) ライブ / The ピーズ Cover【下町ハイカロリーフェス 2025】 綾小路翔 気志團",
+          "venue": "【4K】「どっかにいこー」- 氣志團 (早番) ライブ / The ピーズ Cover【下町ハイカロリーフェス 2025】 綾小路翔 気志團",
+          "event_date": "2025-12-04",
+          "song_count": 1,
+          "confidence": "low"
+        },
+        {
+          "occurrence_key": "f3b1b0e1b8a06b95",
+          "event_name": "【4K】「One Night Carnival」- 氣志團 (早番) ライブ【下町ハイカロリーフェス 2025】ワンナイトカーニバル 綾小路翔 気志團",
+          "venue": "【4K】「One Night Carnival」- 氣志團 (早番) ライブ【下町ハイカロリーフェス 2025】ワンナイトカーニバル 綾小路翔 気志團",
+          "event_date": "2025-12-04",
+          "song_count": 1,
+          "confidence": "low"
+        },
+        {
+          "occurrence_key": "19e78c219858989b",
+          "event_name": "【4K】「LOVE YOU ONLY」- 氣志團 (早番) ライブ / TOKIO Cover【下町ハイカロリーフェス 2025】 綾小路翔 気志團",
+          "venue": "【4K】「LOVE YOU ONLY」- 氣志團 (早番) ライブ / TOKIO Cover【下町ハイカロリーフェス 2025】 綾小路翔 気志團",
+          "event_date": "2025-12-04",
+          "song_count": 1,
+          "confidence": "low"
+        },
+        {
+          "occurrence_key": "c6384dcbc7c92fe6",
+          "event_name": "荻野目洋子/ ~下町盆踊りフェス~ 上野公園 噴水広場",
+          "venue": "荻野目洋子/ ~下町盆踊りフェス~ 上野公園 噴水広場",
+          "event_date": "2025-10-10",
+          "song_count": 1,
+          "confidence": "low"
+        },
+        {
+          "occurrence_key": "4a476c34a0367d6a",
+          "event_name": "盆踊り / ~下町盆踊りフェス~ 上野公園 噴水広場",
+          "venue": "盆踊り / ~下町盆踊りフェス~ 上野公園 噴水広場",
+          "event_date": "2025-10-10",
+          "song_count": 2,
+          "confidence": "medium"
+        }
+      ],
+      "source": "existing_voices",
+      "auto_score": 100,
+      "collection_status": "優先",
+      "score_reasons": [
+        "youtube動画817本",
+        "盆踊り文脈257本",
+        "会場日付つきセットリスト82件",
+        "曲リンク209件",
+        "まとまった曲目表23件",
+        "説明欄リンクあり671本"
+      ]
+    },
+    {
+      "channel_key": "UCLSZK_q5ma6aeIrVRUEpkNw",
+      "channel_id": "UCLSZK_q5ma6aeIrVRUEpkNw",
+      "channel_title": "祭のきせき 盆踊り",
+      "channel_url": "https://www.youtube.com/channel/UCLSZK_q5ma6aeIrVRUEpkNw",
+      "accounts": [
+        "@matsuribonodori",
+        "UCLSZK_q5ma6aeIrVRUEpkNw"
+      ],
+      "feed_names": [
+        "祭のきせき 盆踊り",
+        "祭のきせき　盆踊り"
+      ],
+      "representative_thumbnail_url": "https://i.ytimg.com/vi/4RAaOtSbF-A/maxresdefault.jpg",
+      "video_count": 199,
+      "bon_odori_video_count": 197,
+      "text_gt_500_count": 109,
+      "media_url_video_count": 157,
+      "setlist_occurrence_count": 26,
+      "setlist_song_count": 115,
+      "complete_setlist_count": 5,
+      "venue_date_success_count": 26,
+      "first_published_at": "2025-05-15T11:06:43Z",
+      "last_published_at": "2026-06-26T15:45:04+00:00",
+      "sample_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=ZxNM9H4v1lc",
+          "video_id": "ZxNM9H4v1lc",
+          "title": "【 三角広場まつり 居酒屋盆踊り 】リーマン盆踊りが世界を上書き！新宿住友三角ビルで地域社会の未来を創造中！サザン  モー娘。プリプリ SnowMan",
+          "published_at": "2026-06-26T15:45:04+00:00",
+          "thumbnail_url": ""
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=9a_lXHTTxec",
+          "video_id": "9a_lXHTTxec",
+          "title": "【 三角広場まつり 居酒屋盆踊り 】都庁隣接！新宿住友三角ビルで盆踊り！リーマンが平日からハメ外す！サザン  モー娘。プリプリ SnowMan",
+          "published_at": "2026-06-25T16:21:48+00:00",
+          "thumbnail_url": ""
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=WdqoYPhAJ8U",
+          "video_id": "WdqoYPhAJ8U",
+          "title": "盆踊り  浅草酉の市 長國寺　いきいき浅草あじさい祭り 　東京音頭 たいとう音頭 東京スカイツリー音頭 ご祝儀音頭",
+          "published_at": "2026-06-23T00:35:57+00:00",
+          "thumbnail_url": ""
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=c1UjYV9i6kU",
+          "video_id": "c1UjYV9i6kU",
+          "title": "サラリーマンは踊りたい！　盆ギリ恋歌 サザンオールスターズ　(新宿住友ビル三角広場)",
+          "published_at": "2026-06-19T09:24:20+00:00",
+          "thumbnail_url": ""
+        },
+        {
+          "url": "https://www.youtube.com/shorts/wKJZMV2Q9C8",
+          "video_id": "",
+          "title": "東京おどり 山王音頭と民踊大会 #盆踊り #祭り #shorts",
+          "published_at": "2026-06-18T01:47:22+00:00",
+          "thumbnail_url": ""
+        }
+      ],
+      "events": [
+        {
+          "occurrence_key": "de4b6e72944390ec",
+          "event_name": "山王音頭と民踊大会",
+          "venue": "山王パークタワー公開空地",
+          "event_date": "2026-06-14",
+          "song_count": 1,
+          "confidence": "low"
+        },
+        {
+          "occurrence_key": "1debf98e280dc2da",
+          "event_name": "横浜開港祭 BON ODORI",
+          "venue": "パシフィコ横浜プラザ広場",
+          "event_date": "2026-06-01",
+          "song_count": 14,
+          "confidence": "high"
+        },
+        {
+          "occurrence_key": "06a515b0207f1b2d",
+          "event_name": "マロニエまつり盆踊り大会",
+          "venue": "ヒューリック浅草橋ビル前",
+          "event_date": "2026-05-09",
+          "song_count": 41,
+          "confidence": "high"
+        },
+        {
+          "occurrence_key": "0e6b961433ee2363",
+          "event_name": "花笠音頭 新宿 花園神社 盆踊り",
+          "venue": "花笠音頭 新宿 花園神社 盆踊り",
+          "event_date": "2025-08-03",
+          "song_count": 1,
+          "confidence": "low"
+        },
+        {
+          "occurrence_key": "97fe5e4546d8e35a",
+          "event_name": "炭坑節 新宿 花園神社 盆踊り",
+          "venue": "炭坑節 新宿 花園神社 盆踊り",
+          "event_date": "2025-08-03",
+          "song_count": 1,
+          "confidence": "low"
+        },
+        {
+          "occurrence_key": "9e3f7d05a5fb1244",
+          "event_name": "浪花節だよ人生は 新宿 花園神社 盆踊り",
+          "venue": "浪花節だよ人生は 新宿 花園神社 盆踊り",
+          "event_date": "2025-08-03",
+          "song_count": 1,
+          "confidence": "low"
+        },
+        {
+          "occurrence_key": "8b88974f6ae7d1db",
+          "event_name": "東京音頭 新宿 花園神社 盆踊り",
+          "venue": "東京音頭 新宿 花園神社 盆踊り",
+          "event_date": "2025-08-03",
+          "song_count": 1,
+          "confidence": "low"
+        },
+        {
+          "occurrence_key": "8f5f81dc5def11ff",
+          "event_name": "新宿音頭コンクール 予選決勝 新宿 花園神社 盆踊り",
+          "venue": "新宿音頭コンクール 予選決勝 新宿 花園神社 盆踊り",
+          "event_date": "2025-08-03",
+          "song_count": 1,
+          "confidence": "low"
+        },
+        {
+          "occurrence_key": "5d796fed0782ec49",
+          "event_name": "新宿音頭2 新宿 花園神社 盆踊り",
+          "venue": "新宿音頭2 新宿 花園神社 盆踊り",
+          "event_date": "2025-08-03",
+          "song_count": 1,
+          "confidence": "low"
+        },
+        {
+          "occurrence_key": "83abf788489f749f",
+          "event_name": "新宿音頭1 新宿 花園神社 盆踊り",
+          "venue": "新宿音頭1 新宿 花園神社 盆踊り",
+          "event_date": "2025-08-03",
+          "song_count": 1,
+          "confidence": "low"
+        }
+      ],
+      "source": "existing_voices",
+      "auto_score": 100,
+      "collection_status": "優先",
+      "score_reasons": [
+        "youtube動画199本",
+        "盆踊り文脈197本",
+        "会場日付つきセットリスト26件",
+        "曲リンク115件",
+        "まとまった曲目表5件",
+        "説明欄リンクあり157本"
+      ]
+    },
+    {
+      "channel_key": "UCKCspf_NrY16rUnODmBqOWA",
+      "channel_id": "UCKCspf_NrY16rUnODmBqOWA",
+      "channel_title": "Tokyo Lonely Walker",
+      "channel_url": "https://www.youtube.com/channel/UCKCspf_NrY16rUnODmBqOWA",
+      "accounts": [
+        "UCKCspf_NrY16rUnODmBqOWA"
+      ],
+      "feed_names": [
+        "Tokyo Lonely Walker"
+      ],
+      "representative_thumbnail_url": "https://i.ytimg.com/vi/xw9G9nEYlWQ/maxresdefault.jpg",
+      "video_count": 153,
+      "bon_odori_video_count": 109,
+      "text_gt_500_count": 141,
+      "media_url_video_count": 153,
+      "setlist_occurrence_count": 45,
+      "setlist_song_count": 91,
+      "complete_setlist_count": 4,
+      "venue_date_success_count": 45,
+      "first_published_at": "2025-01-01T12:02:48Z",
+      "last_published_at": "2026-06-29T10:59:29+00:00",
+      "sample_videos": [
+        {
+          "url": "https://www.youtube.com/shorts/qJPxBBk19WY",
+          "video_id": "",
+          "title": "イケナイ太陽でヲタ芸！肉フェス2026 ORANGE RANGE",
+          "published_at": "2026-06-29T10:59:29+00:00",
+          "thumbnail_url": ""
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Ga0b-SwfPuA",
+          "video_id": "Ga0b-SwfPuA",
+          "title": "雨の盆踊り「郡上おどり in 青山 2026」台風接近中 / Traditional Japanese Dance Gujo Odori held in Aoyama, Tokyo. [4K]🇯🇵",
+          "published_at": "2026-06-27T03:05:21+00:00",
+          "thumbnail_url": ""
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=-Env7gVAN14",
+          "video_id": "-Env7gVAN14",
+          "title": "雨でもかまわぬ踊り助平大集合！春駒でテンション最高潮！郡上おどり in 青山 2026 / Gujo Odori dance held in Aoyama, Tokyo. [4K]🇯🇵",
+          "published_at": "2026-06-26T12:59:55+00:00",
+          "thumbnail_url": ""
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=9_Nfqf_MtiE",
+          "video_id": "9_Nfqf_MtiE",
+          "title": "[4K]🇯🇵 FIFAワールドカップ 日本 チュニジア戦 直後！激混みの渋谷！ / The hustle and bustle of Shibuya after the World Cup!",
+          "published_at": "2026-06-20T22:49:17+00:00",
+          "thumbnail_url": ""
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=84q8qeG029A",
+          "video_id": "84q8qeG029A",
+          "title": "盆踊り開幕！赤坂日枝神社 山王祭 盆踊り｜サザン｜東京音頭｜炭坑節｜山王音頭｜八木節 他 / Traditional Japanese Bon Dance at Hie Shrine. [4K]🇯🇵",
+          "published_at": "2026-06-14T01:00:29+00:00",
+          "thumbnail_url": ""
+        }
+      ],
+      "events": [
+        {
+          "occurrence_key": "b79d8c6e36747cbb",
+          "event_name": "雨の盆踊り",
+          "venue": "雨の盆踊り",
+          "event_date": "2026-06-26",
+          "song_count": 1,
+          "confidence": "low"
+        },
+        {
+          "occurrence_key": "512602130c654f9b",
+          "event_name": "山王音頭と民踊大会",
+          "venue": "山王パークタワー公開空地",
+          "event_date": "2026-06-13",
+          "song_count": 18,
+          "confidence": "high"
+        },
+        {
+          "occurrence_key": "4c8f84a3ad6931aa",
+          "event_name": "Japanese Bon dance in Yokohama.",
+          "venue": "Japanese Bon dance in Yokohama.",
+          "event_date": "2026-06-01",
+          "song_count": 1,
+          "confidence": "low"
+        },
+        {
+          "occurrence_key": "52967b92685fbef7",
+          "event_name": "Bon Odori at the Yokohama Port Festival 2026. [4K]🇯🇵",
+          "venue": "Bon Odori at the Yokohama Port Festival 2026. [4K]🇯🇵",
+          "event_date": "2026-06-01",
+          "song_count": 1,
+          "confidence": "low"
+        },
+        {
+          "occurrence_key": "6f9f0190864ba3c9",
+          "event_name": "Min-Yoi's盆踊り",
+          "venue": "日本民謡会館",
+          "event_date": "2026-05-31",
+          "song_count": 1,
+          "confidence": "low"
+        },
+        {
+          "occurrence_key": "598ff1165224e473",
+          "event_name": "Japanese Bon dance illuminated at the racetrack.",
+          "venue": "Japanese Bon dance illuminated at the racetrack.",
+          "event_date": "2025-11-29",
+          "song_count": 1,
+          "confidence": "low"
+        },
+        {
+          "occurrence_key": "d9d606b7e86749cc",
+          "event_name": "Anime Song Bon Odori in Asakusa, Tokyo",
+          "venue": "Anime Song Bon Odori in Asakusa, Tokyo",
+          "event_date": "2025-11-23",
+          "song_count": 1,
+          "confidence": "low"
+        },
+        {
+          "occurrence_key": "bdf8c526b275295b",
+          "event_name": "The Anime Song Bon Odori Association",
+          "venue": "The Anime Song Bon Odori Association",
+          "event_date": "2025-10-18",
+          "song_count": 1,
+          "confidence": "low"
+        },
+        {
+          "occurrence_key": "4f61dccc87ca4b55",
+          "event_name": "SHIBUYA MIYASHITA PARK BON DANCE",
+          "venue": "宮下公園",
+          "event_date": "2025-09-27",
+          "song_count": 2,
+          "confidence": "medium"
+        },
+        {
+          "occurrence_key": "a0115f365e993d1b",
+          "event_name": "で盆踊り ふるさとフェス 2025 / Bon Odori dancing to Creepy Nuts' songs.",
+          "venue": "で盆踊り ふるさとフェス 2025 / Bon Odori dancing to Creepy Nuts' songs.",
+          "event_date": "2025-09-23",
+          "song_count": 1,
+          "confidence": "low"
+        }
+      ],
+      "source": "existing_voices",
+      "auto_score": 100,
+      "collection_status": "優先",
+      "score_reasons": [
+        "youtube動画153本",
+        "盆踊り文脈109本",
+        "会場日付つきセットリスト45件",
+        "曲リンク91件",
+        "まとまった曲目表4件",
+        "説明欄リンクあり153本"
+      ]
+    },
+    {
+      "channel_key": "UCEYq2_O_Sai0j9chJOmcKtQ",
+      "channel_id": "UCEYq2_O_Sai0j9chJOmcKtQ",
+      "channel_title": "shu channel",
+      "channel_url": "https://www.youtube.com/channel/UCEYq2_O_Sai0j9chJOmcKtQ",
+      "accounts": [
+        "UCEYq2_O_Sai0j9chJOmcKtQ"
+      ],
+      "feed_names": [
+        "shu channel"
+      ],
+      "representative_thumbnail_url": "https://i.ytimg.com/vi/KzPvTapAaw8/maxresdefault.jpg",
+      "video_count": 138,
+      "bon_odori_video_count": 65,
+      "text_gt_500_count": 26,
+      "media_url_video_count": 123,
+      "setlist_occurrence_count": 11,
+      "setlist_song_count": 52,
+      "complete_setlist_count": 9,
+      "venue_date_success_count": 11,
+      "first_published_at": "2025-01-12T06:32:25Z",
+      "last_published_at": "2026-06-14T23:41:04+00:00",
+      "sample_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=hl4ryJH0ID4",
+          "video_id": "hl4ryJH0ID4",
+          "title": "赤坂・日枝神社🏮盆踊り[7/7]「ダンシング・ヒーロー～炭坑節～東京音頭～閉めの太鼓」Tokyo Bon Dance👘2026.6.14 @山王パークタワー公開空地",
+          "published_at": "2026-06-14T23:41:04+00:00",
+          "thumbnail_url": ""
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=yiEUqwqHp9k",
+          "video_id": "yiEUqwqHp9k",
+          "title": "赤坂・日枝神社🏮盆踊り[6/7]「恋をするなら（橋 幸夫）～ニッポン・ワッショイ～盆ギリ恋歌」Tokyo Bon Dance👘2026.6.14 @山王パークタワー公開空地",
+          "published_at": "2026-06-14T23:40:50+00:00",
+          "thumbnail_url": ""
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=fZ3WGRy46R4",
+          "video_id": "fZ3WGRy46R4",
+          "title": "赤坂・日枝神社🏮盆踊り[5/7]「千代田おどり～水戸黄門おどり～らんまん踊り」Tokyo Bon Dance👘2026.6.14 @山王パークタワー公開空地",
+          "published_at": "2026-06-14T23:35:27+00:00",
+          "thumbnail_url": ""
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=As6nqVjhpZU",
+          "video_id": "As6nqVjhpZU",
+          "title": "赤坂・日枝神社🏮盆踊り[4/7]「八木節～東京おどり～山王音頭」Tokyo Bon Dance👘2026.6.14 @山王パークタワー公開空地",
+          "published_at": "2026-06-14T23:35:16+00:00",
+          "thumbnail_url": ""
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=z5LdywjjDTM",
+          "video_id": "z5LdywjjDTM",
+          "title": "赤坂・日枝神社🏮盆踊り[3/7]「花笠踊り～おこさ節～相馬甚句」Tokyo Bon Dance👘2026.6.14 @山王パークタワー公開空地",
+          "published_at": "2026-06-14T23:35:03+00:00",
+          "thumbnail_url": ""
+        }
+      ],
+      "events": [
+        {
+          "occurrence_key": "cd0ca7b322306896",
+          "event_name": "Tokyo Bon Dance👘 @山王パークタワー公開空地",
+          "venue": "Tokyo Bon Dance👘 @山王パークタワー公開空地",
+          "event_date": "2026-06-14",
+          "song_count": 7,
+          "confidence": "high"
+        },
+        {
+          "occurrence_key": "6373c67bc69269c6",
+          "event_name": "六本木ヒルズ盆踊り",
+          "venue": "六本木ヒルズアリーナ",
+          "event_date": "2025-08-24",
+          "song_count": 1,
+          "confidence": "low"
+        },
+        {
+          "occurrence_key": "c0ae3b6f30fe2789",
+          "event_name": "六本木ヒルズ盆踊り",
+          "venue": "六本木ヒルズアリーナ",
+          "event_date": "2025-08-23",
+          "song_count": 1,
+          "confidence": "low"
+        },
+        {
+          "occurrence_key": "b925071dc7b07871",
+          "event_name": "六本木ヒルズ盆踊り",
+          "venue": "六本木ヒルズアリーナ",
+          "event_date": "2025-08-23",
+          "song_count": 6,
+          "confidence": "high"
+        },
+        {
+          "occurrence_key": "d4912039e5a8f6d6",
+          "event_name": "神田明神納涼祭り2025🏮アニソン盆踊り",
+          "venue": "神田明神納涼祭り2025🏮アニソン盆踊り",
+          "event_date": "2025-08-08",
+          "song_count": 6,
+          "confidence": "high"
+        },
+        {
+          "occurrence_key": "e81a973a438f23ba",
+          "event_name": "大銀座盆踊り",
+          "venue": "中央通り（銀座1丁目〜8丁目）",
+          "event_date": "2025-08-02",
+          "song_count": 3,
+          "confidence": "high"
+        },
+        {
+          "occurrence_key": "9c315adbfb5562c7",
+          "event_name": "築地本願寺納涼盆踊り大会",
+          "venue": "築地本願寺納涼盆踊り大会",
+          "event_date": "2025-07-30",
+          "song_count": 7,
+          "confidence": "high"
+        },
+        {
+          "occurrence_key": "42d1fa16cf500b64",
+          "event_name": "東京丸の内盆踊り",
+          "venue": "東京丸の内盆踊り",
+          "event_date": "2025-07-25",
+          "song_count": 7,
+          "confidence": "high"
+        },
+        {
+          "occurrence_key": "a3a3d01cb7d70444",
+          "event_name": "新橋こいち祭(盆踊り)",
+          "venue": "新橋こいち祭(盆踊り)",
+          "event_date": "2025-07-24",
+          "song_count": 4,
+          "confidence": "high"
+        },
+        {
+          "occurrence_key": "55dd99963b479ede",
+          "event_name": "🏮Tokyo Bon Dance Festival👘 @秩父宮ラグビー場 駐車場",
+          "venue": "🏮Tokyo Bon Dance Festival👘 @秩父宮ラグビー場 駐車場",
+          "event_date": "2025-06-20",
+          "song_count": 4,
+          "confidence": "high"
+        }
+      ],
+      "source": "existing_voices",
+      "auto_score": 100,
+      "collection_status": "優先",
+      "score_reasons": [
+        "youtube動画138本",
+        "盆踊り文脈65本",
+        "会場日付つきセットリスト11件",
+        "曲リンク52件",
+        "まとまった曲目表9件",
+        "説明欄リンクあり123本"
+      ]
+    },
+    {
+      "channel_key": "UCSHoRoW171uEytgOcKkKU2Q",
+      "channel_id": "UCSHoRoW171uEytgOcKkKU2Q",
+      "channel_title": "Exploring Japan with Zen",
+      "channel_url": "https://www.youtube.com/channel/UCSHoRoW171uEytgOcKkKU2Q",
+      "accounts": [
+        "UCSHoRoW171uEytgOcKkKU2Q"
+      ],
+      "feed_names": [
+        "Exploring Japan with Zen"
+      ],
+      "representative_thumbnail_url": "https://i.ytimg.com/vi/Ccx04lQCgUY/maxresdefault.jpg",
+      "video_count": 73,
+      "bon_odori_video_count": 33,
+      "text_gt_500_count": 11,
+      "media_url_video_count": 11,
+      "setlist_occurrence_count": 1,
+      "setlist_song_count": 1,
+      "complete_setlist_count": 0,
+      "venue_date_success_count": 1,
+      "first_published_at": "2025-01-06T09:26:52Z",
+      "last_published_at": "2025-08-11T04:35:17Z",
+      "sample_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=Ccx04lQCgUY",
+          "video_id": "Ccx04lQCgUY",
+          "title": "Shibuya Bon Dance 2025, Cheerleader Show   渋谷盆踊り 2025 チアリーダー、フラダンスなど　#shorts",
+          "published_at": "2025-08-11T04:35:17Z",
+          "thumbnail_url": "https://i.ytimg.com/vi/Ccx04lQCgUY/maxresdefault.jpg"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/Ccx04lQCgUY",
+          "video_id": "",
+          "title": "Shibuya Bon Dance 2025, Cheerleader Show   渋谷盆踊り 2025 チアリーダー、フラダンスなど　#shorts",
+          "published_at": "2025-08-10T19:35:17+00:00",
+          "thumbnail_url": ""
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=NU9Ed2ypoR4",
+          "video_id": "NU9Ed2ypoR4",
+          "title": "Shibuya Bon Dance 2025, Great Tokyo Ondo 2    渋谷盆踊り 2025 大東京音頭-2    #shorts",
+          "published_at": "2025-08-09T08:28:42Z",
+          "thumbnail_url": "https://i.ytimg.com/vi/NU9Ed2ypoR4/maxresdefault.jpg"
+        },
+        {
+          "url": "https://www.youtube.com/shorts/NU9Ed2ypoR4",
+          "video_id": "",
+          "title": "Shibuya Bon Dance 2025, Great Tokyo Ondo 2    渋谷盆踊り 2025 大東京音頭-2    #shorts",
+          "published_at": "2025-08-08T23:28:42+00:00",
+          "thumbnail_url": ""
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=BY7he8CsGwk",
+          "video_id": "BY7he8CsGwk",
+          "title": "Shibuya Bon Dance 2025, Great Tokyo Ondo 1   渋谷盆踊り 2025 大東京音頭-1   #shorts",
+          "published_at": "2025-08-07T23:58:29Z",
+          "thumbnail_url": "https://i.ytimg.com/vi/BY7he8CsGwk/maxresdefault.jpg"
+        }
+      ],
+      "events": [
+        {
+          "occurrence_key": "7ce0027cc517764f",
+          "event_name": "妖怪盆踊り 2005 at 両国 Edo Noren",
+          "venue": "妖怪盆踊り 2005 at 両国 Edo Noren",
+          "event_date": "2025-07-13",
+          "song_count": 1,
+          "confidence": "low"
+        }
+      ],
+      "source": "existing_voices",
+      "auto_score": 64,
+      "collection_status": "通常",
+      "score_reasons": [
+        "youtube動画73本",
+        "盆踊り文脈33本",
+        "会場日付つきセットリスト1件",
+        "説明欄リンクあり11本"
+      ]
+    },
+    {
+      "channel_key": "UCaVANrt14S6q-if2BBOE4TQ",
+      "channel_id": "UCaVANrt14S6q-if2BBOE4TQ",
+      "channel_title": "Tokyo Hz",
+      "channel_url": "https://www.youtube.com/channel/UCaVANrt14S6q-if2BBOE4TQ",
+      "accounts": [
+        "UCaVANrt14S6q-if2BBOE4TQ"
+      ],
+      "feed_names": [
+        "Tokyo Hz"
+      ],
+      "representative_thumbnail_url": "https://i.ytimg.com/vi/KYgNkVTq7-c/maxresdefault.jpg",
+      "video_count": 487,
+      "bon_odori_video_count": 129,
+      "text_gt_500_count": 448,
+      "media_url_video_count": 465,
       "setlist_occurrence_count": 0,
       "setlist_song_count": 0,
       "complete_setlist_count": 0,
       "venue_date_success_count": 0,
-      "first_published_at": "2026-05-27T01:36:01+00:00",
-      "last_published_at": "2026-06-14T04:16:36+00:00",
+      "first_published_at": "2025-01-01T08:00:48Z",
+      "last_published_at": "2026-06-29T10:00:36+00:00",
       "sample_videos": [
         {
-          "url": "https://www.youtube.com/watch?v=NF-PnEv5Gao",
-          "video_id": "NF-PnEv5Gao",
-          "title": "【4K】「オワリはじまり」- 前川真悟(かりゆし58 / O-ROOTS) ライブ 【下町ハイボールフェス】  上野",
-          "published_at": "2026-06-14T04:16:36+00:00",
+          "url": "https://www.youtube.com/watch?v=PTdDFgZUyNQ",
+          "video_id": "PTdDFgZUyNQ",
+          "title": "[4K HDR]🥰So Many Bright Smiles! Satsuei (Photo/Film) Dash! | Shibuya Crossing in Tokyo Jp 2026",
+          "published_at": "2026-06-29T10:00:36+00:00",
           "thumbnail_url": ""
         },
         {
-          "url": "https://www.youtube.com/watch?v=A6seMX5giYI",
-          "video_id": "A6seMX5giYI",
-          "title": "【4K】「アンマー」- 前川真悟(かりゆし58 / O-ROOTS) ライブ 【下町ハイボールフェス】お母さん  上野",
-          "published_at": "2026-06-14T02:17:22+00:00",
+          "url": "https://www.youtube.com/shorts/W8DRDvEpO8E",
+          "video_id": "",
+          "title": "😆Even an Angel Joins the Madness! | Shibuya Crossing in Tokyo Jp 2026",
+          "published_at": "2026-06-29T03:00:02+00:00",
           "thumbnail_url": ""
         },
         {
-          "url": "https://www.youtube.com/watch?v=p30XofgX9AU",
-          "video_id": "p30XofgX9AU",
-          "title": "【東京ドーム】NiziU 「Live with U 2026 \"NiziU : THE CINEMA\"」1日目開演前の様子 / コンサート ニジュー Tokyo Dome",
-          "published_at": "2026-06-12T22:41:49+00:00",
+          "url": "https://www.youtube.com/watch?v=at4paCX49uo",
+          "video_id": "at4paCX49uo",
+          "title": "[4K HDR]😆Even an Angel Joins the Madness! | Shibuya Crossing in Tokyo Jp 2026",
+          "published_at": "2026-06-28T10:00:30+00:00",
           "thumbnail_url": ""
         },
         {
-          "url": "https://www.youtube.com/watch?v=pXMgH6VFg3E",
-          "video_id": "pXMgH6VFg3E",
-          "title": "【4K】 DIAMANTES ライブ【沖縄めんそーれフェスタ 2026】「片手に三線を / 勝利のうた / VIVA!! 夏の色」  池袋サンシャイン ディアマンテス",
-          "published_at": "2026-06-12T02:16:32+00:00",
+          "url": "https://www.youtube.com/shorts/ukv0OHJcD-M",
+          "video_id": "",
+          "title": "😍So Bright Even at Night! So Dreamlike Views Thanks to the Clouds | Shibuya Sky in Tokyo JP",
+          "published_at": "2026-06-28T03:00:13+00:00",
           "thumbnail_url": ""
         },
         {
-          "url": "https://www.youtube.com/watch?v=lxYmETpLFlA",
-          "video_id": "lxYmETpLFlA",
-          "title": "【4K】「ハピネス」- AI ライブ【Tokyo Pride 2026】東京プライドレインボープライド  ai ストーリー",
-          "published_at": "2026-06-11T00:57:19+00:00",
+          "url": "https://www.youtube.com/watch?v=3GL3EhtOPKQ",
+          "video_id": "3GL3EhtOPKQ",
+          "title": "[4K HDR]😍So Bright Even at Night! So Dreamlike Views Thanks to the Clouds | Shibuya Sky in Tokyo JP",
+          "published_at": "2026-06-27T10:03:17+00:00",
           "thumbnail_url": ""
         }
       ],
       "events": [],
       "source": "existing_voices",
-      "auto_score": 25,
-      "collection_status": "候補",
+      "auto_score": 54,
+      "collection_status": "通常",
       "score_reasons": [
-        "youtube動画15本",
-        "説明欄リンクあり14本"
+        "youtube動画487本",
+        "盆踊り文脈129本",
+        "説明欄リンクあり465本"
       ]
     }
   ]

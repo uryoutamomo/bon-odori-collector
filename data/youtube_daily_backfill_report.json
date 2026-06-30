@@ -1,13 +1,13 @@
 {
   "generated_by": "run_daily_youtube_backfill.py",
-  "generated_at": "2026-06-24T20:00:05.074043+00:00",
+  "generated_at": "2026-06-26T20:02:27.321465+00:00",
   "status": "harvested_until_quota_limited",
   "month": 6,
-  "selected_rows": 57,
+  "selected_rows": 49,
   "remaining_rows_before": 94,
-  "remaining_rows_after": 38,
-  "estimated_search_calls": 114,
-  "candidates_before": 550,
+  "remaining_rows_after": 46,
+  "estimated_search_calls": 98,
+  "candidates_before": 557,
   "selected": [
     {
       "queue_id": "youtube-year-backfill:2bb32005a3f74bc3",
@@ -75,38 +75,6 @@
         "第34回ふるさと千川 まつり ふるさと千川ひろば(千川小学校校庭跡地) 豊島区 2024 盆踊り",
         "第34回ふるさと千川 まつり 2024 YouTube 盆踊り",
         "ふるさと千川ひろば(千川小学校校庭跡地) 2024 盆踊り"
-      ],
-      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
-    },
-    {
-      "queue_id": "youtube-year-backfill:ce6e8b57634e97ed",
-      "target_year": 2023,
-      "priority_score": 15,
-      "priority": "low",
-      "event_name": "第34回ふるさと千川 まつり",
-      "venue": "ふるさと千川ひろば(千川小学校校庭跡地)",
-      "area": "豊島区",
-      "series_key": "a2231b6dc45b",
-      "observed_years": [],
-      "observed_source_video_count": 0,
-      "public_date": "2026-06-05",
-      "public_date_end": "2026-06-06",
-      "last_seen_year": null,
-      "last_seen_dates": [
-        "2026-06-05",
-        "2026-06-06"
-      ],
-      "recurrence_label": "2026年開催終了",
-      "recurrence_score": 0.98,
-      "source_url_count": 0,
-      "song_count": 0,
-      "priority_reasons": [
-        "high_recurrence_score"
-      ],
-      "search_queries": [
-        "第34回ふるさと千川 まつり ふるさと千川ひろば(千川小学校校庭跡地) 豊島区 2023 盆踊り",
-        "第34回ふるさと千川 まつり 2023 YouTube 盆踊り",
-        "ふるさと千川ひろば(千川小学校校庭跡地) 2023 盆踊り"
       ],
       "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
     },
@@ -267,6 +235,38 @@
       "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
     },
     {
+      "queue_id": "youtube-year-backfill:ce6e8b57634e97ed",
+      "target_year": 2023,
+      "priority_score": 15,
+      "priority": "low",
+      "event_name": "第34回ふるさと千川 まつり",
+      "venue": "ふるさと千川ひろば(千川小学校校庭跡地)",
+      "area": "豊島区",
+      "series_key": "a2231b6dc45b",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2026-06-05",
+      "public_date_end": "2026-06-06",
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-06-05",
+        "2026-06-06"
+      ],
+      "recurrence_label": "2026年開催終了",
+      "recurrence_score": 0.98,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "high_recurrence_score"
+      ],
+      "search_queries": [
+        "第34回ふるさと千川 まつり ふるさと千川ひろば(千川小学校校庭跡地) 豊島区 2023 盆踊り",
+        "第34回ふるさと千川 まつり 2023 YouTube 盆踊り",
+        "ふるさと千川ひろば(千川小学校校庭跡地) 2023 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
       "queue_id": "youtube-year-backfill:cc538ba4c649ec02",
       "target_year": 2024,
       "priority_score": 0,
@@ -365,37 +365,6 @@
       "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
     },
     {
-      "queue_id": "youtube-year-backfill:128813fba0e30596",
-      "target_year": 2023,
-      "priority_score": 8,
-      "priority": "low",
-      "event_name": "西綾瀬町会 夏祭り盆踊り大会",
-      "venue": "五反野コミュニティ公園",
-      "area": "足立区",
-      "series_key": "58b7d2506c8c",
-      "observed_years": [],
-      "observed_source_video_count": 0,
-      "public_date": "2025-06-21",
-      "public_date_end": "",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-06-21"
-      ],
-      "recurrence_label": "昨年開催・継続性 中",
-      "recurrence_score": 0.67,
-      "source_url_count": 0,
-      "song_count": 0,
-      "priority_reasons": [
-        "medium_recurrence_score"
-      ],
-      "search_queries": [
-        "西綾瀬町会 夏祭り盆踊り大会 五反野コミュニティ公園 足立区 2023 盆踊り",
-        "西綾瀬町会 夏祭り盆踊り大会 2023 YouTube 盆踊り",
-        "五反野コミュニティ公園 2023 盆踊り"
-      ],
-      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
-    },
-    {
       "queue_id": "youtube-year-backfill:3d5a8517fb197ecb",
       "target_year": 2023,
       "priority_score": 15,
@@ -423,6 +392,37 @@
         "戸越宮前盆踊り 宮前小学校 品川区 2023 盆踊り",
         "戸越宮前盆踊り 2023 YouTube 盆踊り",
         "宮前小学校 2023 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:128813fba0e30596",
+      "target_year": 2023,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "西綾瀬町会 夏祭り盆踊り大会",
+      "venue": "五反野コミュニティ公園",
+      "area": "足立区",
+      "series_key": "58b7d2506c8c",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-06-21",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-06-21"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.67,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "西綾瀬町会 夏祭り盆踊り大会 五反野コミュニティ公園 足立区 2023 盆踊り",
+        "西綾瀬町会 夏祭り盆踊り大会 2023 YouTube 盆踊り",
+        "五反野コミュニティ公園 2023 盆踊り"
       ],
       "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
     },
@@ -1342,37 +1342,6 @@
       "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
     },
     {
-      "queue_id": "youtube-year-backfill:e281db4d7322a660",
-      "target_year": 2024,
-      "priority_score": 8,
-      "priority": "low",
-      "event_name": "玉川町会盆おどり大会",
-      "venue": "二子玉川西地区ふれあい広場(246高架下)",
-      "area": "世田谷区",
-      "series_key": "5544ac3c9cfb",
-      "observed_years": [],
-      "observed_source_video_count": 0,
-      "public_date": "2025-07-25",
-      "public_date_end": "",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-07-25"
-      ],
-      "recurrence_label": "昨年開催・継続性 中",
-      "recurrence_score": 0.6,
-      "source_url_count": 0,
-      "song_count": 0,
-      "priority_reasons": [
-        "medium_recurrence_score"
-      ],
-      "search_queries": [
-        "玉川町会盆おどり大会 二子玉川西地区ふれあい広場(246高架下) 世田谷区 2024 盆踊り",
-        "玉川町会盆おどり大会 2024 YouTube 盆踊り",
-        "二子玉川西地区ふれあい広場(246高架下) 2024 盆踊り"
-      ],
-      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
-    },
-    {
       "queue_id": "youtube-year-backfill:dfc7318f89a3808b",
       "target_year": 2024,
       "priority_score": 8,
@@ -1588,229 +1557,9 @@
         "横根稲荷神社 2023 盆踊り"
       ],
       "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
-    },
-    {
-      "queue_id": "youtube-year-backfill:eb16c21fc5993901",
-      "target_year": 2023,
-      "priority_score": 8,
-      "priority": "low",
-      "event_name": "鎌田協和会 鎌田納涼盆踊り",
-      "venue": "鎌田天神社",
-      "area": "世田谷区",
-      "series_key": "9b74ac04c2ca",
-      "observed_years": [],
-      "observed_source_video_count": 0,
-      "public_date": "2025-07-26",
-      "public_date_end": "",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-07-26"
-      ],
-      "recurrence_label": "昨年開催・継続性 中",
-      "recurrence_score": 0.64,
-      "source_url_count": 0,
-      "song_count": 0,
-      "priority_reasons": [
-        "medium_recurrence_score"
-      ],
-      "search_queries": [
-        "鎌田協和会 鎌田納涼盆踊り 鎌田天神社 世田谷区 2023 盆踊り",
-        "鎌田協和会 鎌田納涼盆踊り 2023 YouTube 盆踊り",
-        "鎌田天神社 2023 盆踊り"
-      ],
-      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
-    },
-    {
-      "queue_id": "youtube-year-backfill:8540ac5926ca11f0",
-      "target_year": 2024,
-      "priority_score": 8,
-      "priority": "low",
-      "event_name": "西糀谷三丁目町会「納涼盆踊り大会」",
-      "venue": "西糀谷さざんか公園",
-      "area": "大田区",
-      "series_key": "e9e9a31b74f3",
-      "observed_years": [],
-      "observed_source_video_count": 0,
-      "public_date": "2025-07-28",
-      "public_date_end": "",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-07-28"
-      ],
-      "recurrence_label": "昨年開催・継続性 中",
-      "recurrence_score": 0.68,
-      "source_url_count": 0,
-      "song_count": 0,
-      "priority_reasons": [
-        "medium_recurrence_score"
-      ],
-      "search_queries": [
-        "西糀谷三丁目町会「納涼盆踊り大会」 西糀谷さざんか公園 大田区 2024 盆踊り",
-        "西糀谷三丁目町会「納涼盆踊り大会」 2024 YouTube 盆踊り",
-        "西糀谷さざんか公園 2024 盆踊り"
-      ],
-      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
-    },
-    {
-      "queue_id": "youtube-year-backfill:6630b320cdbcaa50",
-      "target_year": 2023,
-      "priority_score": 8,
-      "priority": "low",
-      "event_name": "西糀谷三丁目町会「納涼盆踊り大会」",
-      "venue": "西糀谷さざんか公園",
-      "area": "大田区",
-      "series_key": "e9e9a31b74f3",
-      "observed_years": [],
-      "observed_source_video_count": 0,
-      "public_date": "2025-07-28",
-      "public_date_end": "",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-07-28"
-      ],
-      "recurrence_label": "昨年開催・継続性 中",
-      "recurrence_score": 0.68,
-      "source_url_count": 0,
-      "song_count": 0,
-      "priority_reasons": [
-        "medium_recurrence_score"
-      ],
-      "search_queries": [
-        "西糀谷三丁目町会「納涼盆踊り大会」 西糀谷さざんか公園 大田区 2023 盆踊り",
-        "西糀谷三丁目町会「納涼盆踊り大会」 2023 YouTube 盆踊り",
-        "西糀谷さざんか公園 2023 盆踊り"
-      ],
-      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
-    },
-    {
-      "queue_id": "youtube-year-backfill:ba7db0101bcfc143",
-      "target_year": 2024,
-      "priority_score": 8,
-      "priority": "low",
-      "event_name": "森ヶ崎自治会",
-      "venue": "大森南4丁目公園",
-      "area": "大田区",
-      "series_key": "d9d8d002887f",
-      "observed_years": [],
-      "observed_source_video_count": 0,
-      "public_date": "2025-07-29",
-      "public_date_end": "",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-07-29"
-      ],
-      "recurrence_label": "昨年開催・継続性 中",
-      "recurrence_score": 0.6,
-      "source_url_count": 0,
-      "song_count": 0,
-      "priority_reasons": [
-        "medium_recurrence_score"
-      ],
-      "search_queries": [
-        "森ヶ崎自治会 大森南4丁目公園 大田区 2024 盆踊り",
-        "森ヶ崎自治会 2024 YouTube 盆踊り",
-        "大森南4丁目公園 2024 盆踊り"
-      ],
-      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
-    },
-    {
-      "queue_id": "youtube-year-backfill:0d2e020cf3f050ae",
-      "target_year": 2024,
-      "priority_score": 0,
-      "priority": "low",
-      "event_name": "-両国- 江戸NOREN 妖怪BON DANCE",
-      "venue": "-両国-江戸NOREN",
-      "area": "墨田区",
-      "series_key": "2538c4edcb46",
-      "observed_years": [],
-      "observed_source_video_count": 0,
-      "public_date": "2025-07-13",
-      "public_date_end": "2025-07-13",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-07-13",
-        "2025-07-13"
-      ],
-      "recurrence_label": "昨年開催・継続性 低",
-      "recurrence_score": 0.46,
-      "source_url_count": 0,
-      "song_count": 0,
-      "priority_reasons": [],
-      "search_queries": [
-        "-両国- 江戸NOREN 妖怪BON DANCE -両国-江戸NOREN 墨田区 2024 盆踊り",
-        "-両国- 江戸NOREN 妖怪BON DANCE 2024 YouTube 盆踊り",
-        "-両国-江戸NOREN 2024 盆踊り"
-      ],
-      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
-    },
-    {
-      "queue_id": "youtube-year-backfill:699a870d93f11789",
-      "target_year": 2023,
-      "priority_score": 0,
-      "priority": "low",
-      "event_name": "-両国- 江戸NOREN 妖怪BON DANCE",
-      "venue": "-両国-江戸NOREN",
-      "area": "墨田区",
-      "series_key": "2538c4edcb46",
-      "observed_years": [],
-      "observed_source_video_count": 0,
-      "public_date": "2025-07-13",
-      "public_date_end": "2025-07-13",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-07-13",
-        "2025-07-13"
-      ],
-      "recurrence_label": "昨年開催・継続性 低",
-      "recurrence_score": 0.46,
-      "source_url_count": 0,
-      "song_count": 0,
-      "priority_reasons": [],
-      "search_queries": [
-        "-両国- 江戸NOREN 妖怪BON DANCE -両国-江戸NOREN 墨田区 2023 盆踊り",
-        "-両国- 江戸NOREN 妖怪BON DANCE 2023 YouTube 盆踊り",
-        "-両国-江戸NOREN 2023 盆踊り"
-      ],
-      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
-    },
-    {
-      "queue_id": "youtube-year-backfill:d43527b17167e51e",
-      "target_year": 2024,
-      "priority_score": 86,
-      "priority": "high",
-      "event_name": "第25回 四谷納涼踊り大会",
-      "venue": "四谷ひろばグラウンド（旧四谷第四小学校）",
-      "area": "新宿区",
-      "series_key": "1b921428ffd8",
-      "observed_years": [
-        2025
-      ],
-      "observed_source_video_count": 1,
-      "public_date": "2025-07-19",
-      "public_date_end": "",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-07-19"
-      ],
-      "recurrence_label": "昨年開催・継続性 高",
-      "recurrence_score": 0.78,
-      "source_url_count": 0,
-      "song_count": 2,
-      "priority_reasons": [
-        "youtube_observed_series",
-        "recent_youtube_observation",
-        "medium_recurrence_score",
-        "has_song_data"
-      ],
-      "search_queries": [
-        "第25回 四谷納涼踊り大会 四谷ひろばグラウンド（旧四谷第四小学校） 新宿区 2024 盆踊り",
-        "第25回 四谷納涼踊り大会 2024 YouTube 盆踊り",
-        "四谷ひろばグラウンド（旧四谷第四小学校） 2024 盆踊り"
-      ],
-      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
     }
   ],
-  "completed_batches": 56,
+  "completed_batches": 48,
   "batches": [
     {
       "batch": 1,
@@ -1825,7 +1574,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 550,
+      "candidate_count": 557,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1842,31 +1591,12 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 550,
+      "candidate_count": 557,
       "strong_count": 183,
       "review_count": 48
     },
     {
       "batch": 3,
-      "month": 6,
-      "selected_rows": 1,
-      "queue_ids": [
-        "youtube-year-backfill:ce6e8b57634e97ed"
-      ],
-      "fresh_summary": {
-        "candidate_count": 1,
-        "status_counts": {
-          "weak": 1
-        },
-        "strong_count": 0,
-        "review_count": 0
-      },
-      "candidate_count": 551,
-      "strong_count": 183,
-      "review_count": 48
-    },
-    {
-      "batch": 4,
       "month": 6,
       "selected_rows": 1,
       "queue_ids": [
@@ -1878,12 +1608,12 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 551,
+      "candidate_count": 557,
       "strong_count": 183,
       "review_count": 48
     },
     {
-      "batch": 5,
+      "batch": 4,
       "month": 6,
       "selected_rows": 1,
       "queue_ids": [
@@ -1895,12 +1625,12 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 551,
+      "candidate_count": 557,
       "strong_count": 183,
       "review_count": 48
     },
     {
-      "batch": 6,
+      "batch": 5,
       "month": 6,
       "selected_rows": 1,
       "queue_ids": [
@@ -1912,12 +1642,12 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 551,
+      "candidate_count": 557,
       "strong_count": 183,
       "review_count": 48
     },
     {
-      "batch": 7,
+      "batch": 6,
       "month": 6,
       "selected_rows": 1,
       "queue_ids": [
@@ -1929,12 +1659,12 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 551,
+      "candidate_count": 557,
       "strong_count": 183,
       "review_count": 48
     },
     {
-      "batch": 8,
+      "batch": 7,
       "month": 6,
       "selected_rows": 1,
       "queue_ids": [
@@ -1946,7 +1676,24 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 551,
+      "candidate_count": 557,
+      "strong_count": 183,
+      "review_count": 48
+    },
+    {
+      "batch": 8,
+      "month": 6,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:ce6e8b57634e97ed"
+      ],
+      "fresh_summary": {
+        "candidate_count": 0,
+        "status_counts": {},
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "candidate_count": 557,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1965,7 +1712,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 551,
+      "candidate_count": 557,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1984,7 +1731,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 553,
+      "candidate_count": 557,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2003,12 +1750,31 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 553,
+      "candidate_count": 557,
       "strong_count": 183,
       "review_count": 48
     },
     {
       "batch": 12,
+      "month": 6,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:3d5a8517fb197ecb"
+      ],
+      "fresh_summary": {
+        "candidate_count": 5,
+        "status_counts": {
+          "weak": 5
+        },
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "candidate_count": 557,
+      "strong_count": 183,
+      "review_count": 48
+    },
+    {
+      "batch": 13,
       "month": 6,
       "selected_rows": 1,
       "queue_ids": [
@@ -2022,26 +1788,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 554,
-      "strong_count": 183,
-      "review_count": 48
-    },
-    {
-      "batch": 13,
-      "month": 6,
-      "selected_rows": 1,
-      "queue_ids": [
-        "youtube-year-backfill:3d5a8517fb197ecb"
-      ],
-      "fresh_summary": {
-        "candidate_count": 6,
-        "status_counts": {
-          "weak": 6
-        },
-        "strong_count": 0,
-        "review_count": 0
-      },
-      "candidate_count": 554,
+      "candidate_count": 557,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2058,7 +1805,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 554,
+      "candidate_count": 557,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2075,7 +1822,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 554,
+      "candidate_count": 557,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2092,7 +1839,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 554,
+      "candidate_count": 557,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2109,7 +1856,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 554,
+      "candidate_count": 557,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2126,7 +1873,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 554,
+      "candidate_count": 557,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2143,7 +1890,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 554,
+      "candidate_count": 557,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2160,7 +1907,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 554,
+      "candidate_count": 557,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2177,7 +1924,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 554,
+      "candidate_count": 557,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2194,7 +1941,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 554,
+      "candidate_count": 557,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2211,7 +1958,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 554,
+      "candidate_count": 557,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2228,7 +1975,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 554,
+      "candidate_count": 557,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2245,7 +1992,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 554,
+      "candidate_count": 557,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2262,7 +2009,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 554,
+      "candidate_count": 557,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2279,7 +2026,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 554,
+      "candidate_count": 557,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2296,7 +2043,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 554,
+      "candidate_count": 557,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2313,7 +2060,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 554,
+      "candidate_count": 557,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2330,7 +2077,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 554,
+      "candidate_count": 557,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2347,7 +2094,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 554,
+      "candidate_count": 557,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2364,7 +2111,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 554,
+      "candidate_count": 557,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2381,7 +2128,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 554,
+      "candidate_count": 557,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2398,7 +2145,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 554,
+      "candidate_count": 557,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2415,7 +2162,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 554,
+      "candidate_count": 557,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2427,12 +2174,14 @@
         "youtube-year-backfill:443b767f4ded8171"
       ],
       "fresh_summary": {
-        "candidate_count": 0,
-        "status_counts": {},
+        "candidate_count": 1,
+        "status_counts": {
+          "weak": 1
+        },
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 554,
+      "candidate_count": 558,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2449,7 +2198,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 554,
+      "candidate_count": 558,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2466,7 +2215,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 554,
+      "candidate_count": 558,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2483,7 +2232,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 554,
+      "candidate_count": 558,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2500,7 +2249,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 554,
+      "candidate_count": 558,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2517,7 +2266,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 554,
+      "candidate_count": 558,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2534,31 +2283,12 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 554,
+      "candidate_count": 558,
       "strong_count": 183,
       "review_count": 48
     },
     {
       "batch": 43,
-      "month": 7,
-      "selected_rows": 1,
-      "queue_ids": [
-        "youtube-year-backfill:e281db4d7322a660"
-      ],
-      "fresh_summary": {
-        "candidate_count": 1,
-        "status_counts": {
-          "weak": 1
-        },
-        "strong_count": 0,
-        "review_count": 0
-      },
-      "candidate_count": 555,
-      "strong_count": 183,
-      "review_count": 48
-    },
-    {
-      "batch": 44,
       "month": 7,
       "selected_rows": 1,
       "queue_ids": [
@@ -2570,12 +2300,12 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 555,
+      "candidate_count": 558,
       "strong_count": 183,
       "review_count": 48
     },
     {
-      "batch": 45,
+      "batch": 44,
       "month": 7,
       "selected_rows": 1,
       "queue_ids": [
@@ -2587,12 +2317,12 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 555,
+      "candidate_count": 558,
       "strong_count": 183,
       "review_count": 48
     },
     {
-      "batch": 46,
+      "batch": 45,
       "month": 7,
       "selected_rows": 1,
       "queue_ids": [
@@ -2604,12 +2334,12 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 555,
+      "candidate_count": 558,
       "strong_count": 183,
       "review_count": 48
     },
     {
-      "batch": 47,
+      "batch": 46,
       "month": 7,
       "selected_rows": 1,
       "queue_ids": [
@@ -2621,12 +2351,12 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 555,
+      "candidate_count": 558,
       "strong_count": 183,
       "review_count": 48
     },
     {
-      "batch": 48,
+      "batch": 47,
       "month": 7,
       "selected_rows": 1,
       "queue_ids": [
@@ -2638,12 +2368,12 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 555,
+      "candidate_count": 558,
       "strong_count": 183,
       "review_count": 48
     },
     {
-      "batch": 49,
+      "batch": 48,
       "month": 7,
       "selected_rows": 1,
       "queue_ids": [
@@ -2655,128 +2385,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 555,
-      "strong_count": 183,
-      "review_count": 48
-    },
-    {
-      "batch": 50,
-      "month": 7,
-      "selected_rows": 1,
-      "queue_ids": [
-        "youtube-year-backfill:4c59be850639eae5"
-      ],
-      "fresh_summary": {
-        "candidate_count": 0,
-        "status_counts": {},
-        "strong_count": 0,
-        "review_count": 0
-      },
-      "candidate_count": 555,
-      "strong_count": 183,
-      "review_count": 48
-    },
-    {
-      "batch": 51,
-      "month": 7,
-      "selected_rows": 1,
-      "queue_ids": [
-        "youtube-year-backfill:eb16c21fc5993901"
-      ],
-      "fresh_summary": {
-        "candidate_count": 0,
-        "status_counts": {},
-        "strong_count": 0,
-        "review_count": 0
-      },
-      "candidate_count": 555,
-      "strong_count": 183,
-      "review_count": 48
-    },
-    {
-      "batch": 52,
-      "month": 7,
-      "selected_rows": 1,
-      "queue_ids": [
-        "youtube-year-backfill:8540ac5926ca11f0"
-      ],
-      "fresh_summary": {
-        "candidate_count": 0,
-        "status_counts": {},
-        "strong_count": 0,
-        "review_count": 0
-      },
-      "candidate_count": 555,
-      "strong_count": 183,
-      "review_count": 48
-    },
-    {
-      "batch": 53,
-      "month": 7,
-      "selected_rows": 1,
-      "queue_ids": [
-        "youtube-year-backfill:6630b320cdbcaa50"
-      ],
-      "fresh_summary": {
-        "candidate_count": 1,
-        "status_counts": {
-          "weak": 1
-        },
-        "strong_count": 0,
-        "review_count": 0
-      },
-      "candidate_count": 556,
-      "strong_count": 183,
-      "review_count": 48
-    },
-    {
-      "batch": 54,
-      "month": 7,
-      "selected_rows": 1,
-      "queue_ids": [
-        "youtube-year-backfill:ba7db0101bcfc143"
-      ],
-      "fresh_summary": {
-        "candidate_count": 0,
-        "status_counts": {},
-        "strong_count": 0,
-        "review_count": 0
-      },
-      "candidate_count": 556,
-      "strong_count": 183,
-      "review_count": 48
-    },
-    {
-      "batch": 55,
-      "month": 7,
-      "selected_rows": 1,
-      "queue_ids": [
-        "youtube-year-backfill:0d2e020cf3f050ae"
-      ],
-      "fresh_summary": {
-        "candidate_count": 0,
-        "status_counts": {},
-        "strong_count": 0,
-        "review_count": 0
-      },
-      "candidate_count": 556,
-      "strong_count": 183,
-      "review_count": 48
-    },
-    {
-      "batch": 56,
-      "month": 7,
-      "selected_rows": 1,
-      "queue_ids": [
-        "youtube-year-backfill:699a870d93f11789"
-      ],
-      "fresh_summary": {
-        "candidate_count": 0,
-        "status_counts": {},
-        "strong_count": 0,
-        "review_count": 0
-      },
-      "candidate_count": 556,
+      "candidate_count": 558,
       "strong_count": 183,
       "review_count": 48
     }
@@ -2798,7 +2407,7 @@
     "public season hints: applied=49 skipped=3",
     "month youtube backfill queue: month=6 items=0 search_calls=0"
   ],
-  "candidates_after": 556,
+  "candidates_after": 558,
   "strong_after": 183,
   "review_after": 48,
   "schedule_rule_count": 13,
@@ -2814,6 +2423,6 @@
     "weekend_near_date": 2
   },
   "schedule_rule_warning_counts": {},
-  "ops_metrics": "ops metrics: date=2026-06-25 youtube_candidates=556 review=48 history_rows=2",
+  "ops_metrics": "ops metrics: date=2026-06-27 youtube_candidates=558 review=48 history_rows=3",
   "ops_metrics_dashboard": "opened:-a Google Chrome"
 }
