@@ -20,6 +20,7 @@
 | `bon-odori-collector` | `c2f3f26` | Update glossary review wording for daily X flow | 生成データと独立した文言修正を切り出し。 |
 | `bon-odori-collector` | `b3d4ab4` | Refresh missing venue review dry-run | missing occurrence venue review と dry-run apply report を再生成・保存。production apply は未実行。 |
 | `bon-odori-collector` | `10d46be` | Refresh evidence RDB summary | evidence RDB summary を現行入力から再生成。SQLite本体はignore対象のローカル成果物。 |
+| `bon-odori-collector` | `42940c5` | Refresh public postprocessor dry-run reports | historical reference / season hint の公開postprocessor report を `--dry-run` で再生成。公開JSON本体は未変更。 |
 
 Additional checks:
 
@@ -29,6 +30,7 @@ Additional checks:
 - `bon-odori-collector`: Notion append / planning scripts were syntax-checked and committed, but not run. `fill_glossary_readings.py --apply` and `create_regional_seo_illustrated_list_plan_notion.py --apply` now require explicit `--confirm`.
 - `bon-odori-collector`: `python3 -m unittest tests.test_apply_reviewed_missing_occurrence_venues` -> OK.
 - `bon-odori-collector`: `python3 -m unittest tests.test_build_evidence_rdb` -> OK.
+- `bon-odori-collector`: `python3 -m unittest tests.test_apply_public_historical_references tests.test_apply_public_season_hints tests.test_public_json_postprocessor_policy` -> OK.
 
 Current safe stance remains unchanged:
 
@@ -85,9 +87,9 @@ Current safe stance remains unchanged:
 
 | metric | value |
 | --- | ---: |
-| tracked changed files | 10 |
+| tracked changed files | 8 |
 | untracked files | 0 |
-| tracked diff size | +62,226 / -58,105 |
+| tracked diff size | +57,468 / -57,305 |
 
 ## Public JSON status
 
@@ -109,26 +111,21 @@ Risk:
 - The former JS-only URL mismatch is gone.
 - The former public song occurrence blocker is gone.
 - The former public event sync guard blocker is gone.
-- The remaining deploy blockers are now non-song public dry-run files plus broader YouTube/ops generated outputs.
+- The remaining deploy blockers are now broader YouTube/ops generated outputs plus Master RDB/local audit drift and frozen legacy song outputs.
 
 Recommended next split:
 
-1. Review non-song public dry-run files (historical reference dry-run, season hint dry-run).
-2. Keep old song generation files frozen unless explicitly regenerated from the approved path.
-3. Keep YouTube-derived ops metrics separate from frozen song/public dry-run state.
+1. Keep old song generation files frozen unless explicitly regenerated from the approved path.
+2. Keep YouTube-derived ops metrics separate from frozen song state.
+3. Hold Master RDB manifest/audit until the matching RDB artifact/cutover decision is explicit.
 
 ## Remaining groups
 
 ### A. Public/generated data
 
-Files include:
+Resolved:
 
-- `data/public_historical_reference_dry_run.json`
-- `data/public_season_hint_dry_run.json`
-
-Action:
-
-- Keep separate from deploy until regenerated and reviewed.
+- `data/public_historical_reference_dry_run.json` and `data/public_season_hint_dry_run.json` were regenerated with `--dry-run` and split in `42940c5`.
 - `data/public_events_sync_guard.*` has already been split and is no longer part of this remaining group.
 
 ### B. Song/ops generated data
@@ -157,7 +154,6 @@ Action:
 | group | files | current action |
 | --- | --- | --- |
 | Master RDB lineage/audit | `data/bon_odori_master_manifest.json`, `data/master_rdb_audit.json`, `data/master_rdb_audit.md` | Hold. These refer to local DB/source checksum drift and should not be pushed without the matching RDB artifact/cutover decision. |
-| Public postprocessor dry-runs | `data/public_historical_reference_dry_run.json`, `data/public_season_hint_dry_run.json` | Hold pending public data review. Do not treat as deploy approval. |
 | Ops metrics | `data/ops_metrics_dashboard.html`, `data/ops_metrics_history.jsonl`, `data/ops_metrics_latest.md` | Hold until upstream generated state is accepted or reset. |
 | Frozen legacy song outputs | `data/song_occurrences.json`, `data/song_prediction_snapshots.json` | Do not commit unless Ph2/Ph3 explicitly reopens the legacy path. |
 
@@ -165,6 +161,7 @@ Resolved in this continuation:
 
 - `data/missing_occurrence_venue_review.*` and `data/reviewed_missing_occurrence_venues_apply_report.*` were split in `b3d4ab4`; this is still dry-run evidence only.
 - `data/evidence_rdb_summary.json` was split in `10d46be` after `tests.test_build_evidence_rdb` passed.
+- `data/public_historical_reference_dry_run.json` and `data/public_season_hint_dry_run.json` were split in `42940c5`; public event JSON/JS stayed unchanged.
 
 ### C. Review/research feature workstreams
 
