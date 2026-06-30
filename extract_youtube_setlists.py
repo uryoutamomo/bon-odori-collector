@@ -30,6 +30,43 @@ SPACE_RE = re.compile(r"\s+")
 COMPACT_DATE_RE = re.compile(r"(20\d{2})(\d{2})(\d{2})")
 DOT_DATE_RE = re.compile(r"(20\d{2})\.(\d{1,2})\.(\d{1,2})")
 BON_CONTEXT_RE = re.compile(r"(盆踊り|輪踊り|郡上おどり|民踊|民謡|音頭|踊り)")
+EVENT_CONTEXT_RE = re.compile(
+    r"(盆踊り|輪踊り|Bon\s*Odori|Bon\s*Dance|Bondance|納涼踊り|夏祭り|祭り|Festival)",
+    re.I,
+)
+TITLE_DECORATION_RE = re.compile(r"^\s*(?:\[[^\]]*(?:4K|HDR)[^\]]*\]|【[^】]*(?:4K|HDR)[^】]*】)\s*", re.I)
+TITLE_HASH_RE = re.compile(r"#\S+")
+TITLE_DATE_RE = re.compile(
+    r"(?:20\d{2}年\d{1,2}月\d{1,2}日|20\d{2}[./]\d{1,2}[./]\d{1,2}|20\d{6})"
+)
+TITLE_TRAILING_PLACE_RE = re.compile(r"\s+(?:in|at)\s+(?:Tokyo|Japan|Tokyo Japan|Shinjuku,?\s*Tokyo).*$", re.I)
+TITLE_SONG_QUOTES_RE = re.compile(r"[「『\"“]([^」』\"”]{1,80})[」』\"”]")
+TITLE_NUMBER_RE = re.compile(r"(?:^|\s)(?:part|pt\.?|第)?\s*[0-9０-９]{1,2}(?:部|曲目?|終)?(?:\s|[:：])", re.I)
+KNOWN_TITLE_EVENT_PATTERNS = (
+    r"GMOシブヤエンタメ祭",
+    r"SHIBUYA MIYASHITA PARK BON DANCE",
+    r"Kabukicho Bon Odori",
+    r"Jiyugaoka Bon Odori(?: Festival)?",
+    r"Oku-?Asakusa Bon (?:Dance|Odori)(?: Festival)?",
+    r"OkuAsakusa Bon Dance",
+    r"Ohdai Bon Odori",
+    r"鴨台盆踊り",
+    r"大正大学盆踊り",
+    r"戸田ふるさと祭り",
+    r"恵比寿駅前盆踊り大会",
+    r"飛鳥山盆踊り",
+    r"飛鳥山公園輪踊り",
+    r"横浜開港祭 BON ODORI",
+    r"山王音頭と民踊大会",
+    r"赤坂日枝神社山王祭盆踊り",
+    r"浅草夜祭・アキバ盆踊り",
+    r"国立旭通りジューンフェスタ盆踊り",
+    r"千住・人情芸術祭",
+)
+TRAILING_NOISE_HEADING_RE = re.compile(
+    r"^\s*(?:▽?\s*)?(?:Related Videos?\b|関連動画\b|backgrou?d music\b|BGM\b|Opening Music\b|Ending Music\b|【(?:AI songs|4K [^】]+)】)",
+    re.I,
+)
 
 
 def load_json(path, default):
@@ -70,6 +107,15 @@ def compact_url(url):
     return url
 
 
+def primary_description_text(text):
+    lines = []
+    for line in str(text or "").splitlines():
+        if TRAILING_NOISE_HEADING_RE.search(line):
+            break
+        lines.append(line)
+    return "\n".join(lines)
+
+
 def occurrence_key(venue, event_date):
     raw = f"{normalize_key(venue)}\0{event_date or ''}"
     return hashlib.sha256(raw.encode("utf-8")).hexdigest()[:16]
@@ -97,10 +143,12 @@ def parse_youtube_event_date(*texts):
 def extract_setlist(text):
     rows = []
     seen = set()
-    for match in SETLIST_ITEM_RE.finditer(str(text or "")):
+    for match in SETLIST_ITEM_RE.finditer(primary_description_text(text)):
         number = int(unicodedata.normalize("NFKC", match.group(1)))
         title = normalize_text(match.group(2))
         title = URL_RE.sub("", title).strip(" 　-:：、。")
+        if re.fullmatch(r"[0-9０-９]+", title):
+            continue
         url = compact_url(match.group(3))
         if not title or len(title) > 80:
             continue
@@ -114,7 +162,7 @@ def extract_setlist(text):
 
 
 def has_bon_context(voice, setlist):
-    text = "\n".join([voice.get("title") or "", voice.get("text") or ""])
+    text = "\n".join([voice.get("title") or "", primary_description_text(voice.get("text") or "")])
     if BON_CONTEXT_RE.search(text):
         return True
     return sum(1 for item in setlist if BON_CONTEXT_RE.search(item.get("title") or "")) >= 2
@@ -128,7 +176,7 @@ def first_setlist_line_index(lines):
 
 
 def event_label_from_text(text):
-    lines = [normalize_text(line) for line in str(text or "").splitlines()]
+    lines = [normalize_text(line) for line in primary_description_text(text).splitlines()]
     lines = [line for line in lines if line]
     idx = first_setlist_line_index(lines)
     if idx > 0:
@@ -146,14 +194,155 @@ def title_prefix_before_date(title):
     return normalize_text(title[:match.start()])
 
 
+def clean_title_piece(value):
+    value = normalize_text(value)
+    value = TITLE_DECORATION_RE.sub("", value)
+    value = TITLE_HASH_RE.sub("", value)
+    value = TITLE_DATE_RE.sub("", value)
+    value = TITLE_TRAILING_PLACE_RE.sub("", value)
+    value = re.sub(r"^[|｜/／:：・\-\s]+|[|｜/／:：・\-\s]+$", "", value)
+    return normalize_text(value)
+
+
+def clean_event_title(value):
+    value = clean_title_piece(value)
+    value = re.sub(r"^(?:第[0-9０-９]+回\s*)", "", value)
+    value = re.sub(r"\s*20\d{2}\s*$", "", value)
+    value = re.sub(r"\s+[0-9０-９]{1,2}(?:部|終)?$", "", value)
+    return clean_title_piece(value)
+
+
+def clean_song_from_title(value):
+    value = clean_title_piece(value)
+    value = re.sub(r"^[^0-9A-Za-z一-龥ぁ-んァ-ヶー「『\"“]+", "", value)
+    value = re.sub(r"^(?:終|ラスト|最後)\s*", "", value)
+    value = re.sub(r"\s*(?:激盛り|盛り上がり|大盛況|大熱狂).*$", "", value)
+    value = re.sub(r"\s+で盆踊り.*$", "", value)
+    value = re.sub(r"\s+Bon dance to .*$", "", value, flags=re.I)
+    value = re.sub(r"\s+(?:盆踊り|Bon Odori|Bon Dance)\s*$", "", value, flags=re.I)
+    return clean_title_piece(value)
+
+
+def title_looks_like_song(value):
+    value = clean_song_from_title(value)
+    if not value or len(value) > 80:
+        return False
+    if EVENT_CONTEXT_RE.search(value) and not re.search(r"^JAME盆踊り\s+", value, re.I):
+        return False
+    if TITLE_NUMBER_RE.search(value):
+        return False
+    return bool(re.search(r"[A-Za-z一-龥ぁ-んァ-ヶー]", value))
+
+
+def known_event_match(title):
+    best = None
+    for pattern in KNOWN_TITLE_EVENT_PATTERNS:
+        match = re.search(pattern, title, re.I)
+        if not match:
+            continue
+        event_name = clean_event_title(match.group(0))
+        if not event_name:
+            continue
+        if best is None or len(event_name) > len(best["event_name"]):
+            best = {
+                "event_name": event_name,
+                "start": match.start(),
+                "end": match.end(),
+            }
+    return best
+
+
+def split_title_event_song(title):
+    raw_title = normalize_text(title)
+    if not raw_title or not EVENT_CONTEXT_RE.search(raw_title):
+        return None
+
+    title = clean_title_piece(raw_title)
+    quoted = TITLE_SONG_QUOTES_RE.search(title)
+    bracket_event = re.search(r"【([^】]*(?:盆踊り|Bon\s*Odori|Bon\s*Dance|Bondance)[^】]*)】", title, re.I)
+    known_event = known_event_match(title)
+    if quoted and bracket_event:
+        return {
+            "event_name": clean_event_title(bracket_event.group(1)),
+            "song_title": clean_song_from_title(quoted.group(1)),
+            "method": "bracket_event_and_quote",
+        }
+    if quoted and known_event:
+        return {
+            "event_name": known_event["event_name"],
+            "song_title": clean_song_from_title(quoted.group(1)),
+            "method": "quote_and_known_event",
+        }
+
+    if quoted:
+        before = clean_event_title(title[:quoted.start()])
+        after = clean_event_title(title[quoted.end():])
+        event_name = after if EVENT_CONTEXT_RE.search(after) else before
+        if event_name:
+            return {
+                "event_name": event_name,
+                "song_title": clean_song_from_title(quoted.group(1)),
+                "method": "quoted_song",
+            }
+
+    at_match = re.search(r"\s+(?:at|in)\s+(.+)$", title, re.I)
+    if at_match:
+        event_name = clean_event_title(at_match.group(1))
+        song_title = clean_song_from_title(title[:at_match.start()])
+        if event_name and title_looks_like_song(song_title):
+            return {"event_name": event_name, "song_title": song_title, "method": "at_event"}
+
+    if known_event:
+        before = clean_song_from_title(title[:known_event["start"]])
+        after = clean_song_from_title(title[known_event["end"]:])
+        song_title = before if title_looks_like_song(before) else after
+        if title_looks_like_song(song_title):
+            return {
+                "event_name": known_event["event_name"],
+                "song_title": song_title,
+                "method": "known_event",
+            }
+
+    slash_parts = [clean_title_piece(part) for part in re.split(r"\s*[|｜/／]\s*", title)]
+    event_parts = [part for part in slash_parts if EVENT_CONTEXT_RE.search(part)]
+    song_parts = [part for part in slash_parts if title_looks_like_song(part)]
+    if event_parts and song_parts:
+        return {
+            "event_name": clean_event_title(event_parts[-1]),
+            "song_title": clean_song_from_title(song_parts[0]),
+            "method": "slash_parts",
+        }
+
+    parts = [clean_title_piece(part) for part in re.split(r"\s{2,}|　+", title)]
+    event_parts = [part for part in parts if EVENT_CONTEXT_RE.search(part)]
+    song_parts = [part for part in parts if title_looks_like_song(part)]
+    if event_parts and song_parts:
+        return {
+            "event_name": clean_event_title(event_parts[-1]),
+            "song_title": clean_song_from_title(song_parts[0]),
+            "method": "space_parts",
+        }
+
+    return None
+
+
+def is_title_fragment_setlist(setlist):
+    return bool(setlist) and all(item.get("evidence_type") == "title_song_fragment" for item in setlist)
+
+
 def infer_event_and_venue(voice, review_map):
     url = compact_url(voice.get("url"))
     if url in review_map:
         return review_map[url]["event_name"], review_map[url]["venue"], review_map[url]["event_key"]
 
     text_label = event_label_from_text(voice.get("text") or "")
-    title_prefix = title_prefix_before_date(voice.get("title") or "")
-    event_name = text_label or title_prefix or normalize_text(voice.get("title") or "")
+    parsed_title = split_title_event_song(voice.get("title") or "")
+    title_prefix = (
+        voice.get("title_event_name_hint")
+        or (parsed_title["event_name"] if parsed_title else "")
+        or title_prefix_before_date(voice.get("title") or "")
+    )
+    event_name = title_prefix if voice.get("title_event_name_hint") else text_label or title_prefix or normalize_text(voice.get("title") or "")
     venue = ""
 
     title = voice.get("title") or ""
@@ -223,6 +412,23 @@ def merge_setlist(target, source):
         elif not by_title[key].get("url") and item.get("url"):
             by_title[key]["url"] = item["url"]
     return sorted(by_title.values(), key=lambda row: (row["number"], row["title"]))
+
+
+def setlist_from_title(voice):
+    parsed = split_title_event_song(voice.get("title") or "")
+    if not parsed:
+        return []
+    song_title = clean_song_from_title(parsed.get("song_title") or "")
+    if not title_looks_like_song(song_title):
+        return []
+    return [{
+        "number": 1,
+        "title": song_title,
+        "url": compact_url(voice.get("url")),
+        "evidence_type": "title_song_fragment",
+        "event_name_hint": parsed.get("event_name") or "",
+        "title_parse_method": parsed.get("method") or "",
+    }]
 
 
 def event_hint_is_better(current, candidate, current_key="", candidate_key=""):
@@ -318,15 +524,26 @@ def extract_occurrences(voices, review=None):
     youtube_voices = [v for v in voices if v.get("source") == "youtube"]
 
     for voice in youtube_voices:
-        setlist = extract_setlist(voice.get("text") or "")
+        primary_text = primary_description_text(voice.get("text") or "")
+        event_date = parse_youtube_event_date(primary_text, voice.get("title"))
+        setlist = extract_setlist(primary_text)
         if len(setlist) < 2:
-            skipped.append({
-                "url": voice.get("url"),
-                "title": voice.get("title"),
-                "reason": "no_numbered_setlist",
-            })
-            continue
-        if not has_bon_context(voice, setlist):
+            setlist = setlist_from_title({**voice, "text": primary_text})
+            if not setlist:
+                skipped.append({
+                    "url": voice.get("url"),
+                    "title": voice.get("title"),
+                    "reason": "no_numbered_setlist",
+                })
+                continue
+            if not event_date:
+                skipped.append({
+                    "url": voice.get("url"),
+                    "title": voice.get("title"),
+                    "reason": "title_song_without_event_date",
+                })
+                continue
+        if not has_bon_context({**voice, "text": primary_text}, setlist):
             skipped.append({
                 "url": voice.get("url"),
                 "title": voice.get("title"),
@@ -334,8 +551,11 @@ def extract_occurrences(voices, review=None):
             })
             continue
 
-        event_date = parse_youtube_event_date(voice.get("text"), voice.get("title"))
-        event_name, venue, event_key = infer_event_and_venue(voice, review_map)
+        title_event_name_hint = setlist[0].get("event_name_hint") if is_title_fragment_setlist(setlist) else ""
+        event_name, venue, event_key = infer_event_and_venue(
+            {**voice, "text": primary_text, "title_event_name_hint": title_event_name_hint},
+            review_map,
+        )
         account = voice.get("account") or "youtube"
         key = occurrence_key(venue, event_date)
         row = grouped.setdefault(key, {
