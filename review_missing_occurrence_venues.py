@@ -22,6 +22,19 @@ OUT_JSON = DATA / "missing_occurrence_venue_review.json"
 OUT_MD = DATA / "missing_occurrence_venue_review.md"
 
 
+CONFIRMED_NEW_VENUES = {
+    "kyobashi_plaza_kuminkan": {
+        "canonical_name": "京橋プラザ区民館",
+        "aliases": ["京橋プラザ", "中央区京橋プラザ"],
+        "area": "中央区",
+        "address": "東京都中央区銀座一丁目25番3号",
+        "access": "東京メトロ有楽町線「新富町」駅徒歩2分、都営浅草線「宝町」駅徒歩5分",
+        "source_url": "https://www.city.chuo.lg.jp/a0013/kurashi/chiikicommunity/kuminkan/syukaisisetu02.html",
+        "source_kind": "official_facility",
+    },
+}
+
+
 REVIEW_HINTS = {
     "新橋こいち祭": {
         "review_action": "series_link_review_existing_venue_candidate",
@@ -56,12 +69,16 @@ REVIEW_HINTS = {
         "next_step": "resolve duplicate 郡上おどり in 青山 series before applying the venue to the 2025 row",
     },
     "銀座一丁目東町会・新富町会 納涼盆踊り大会": {
-        "review_action": "preserve_missing_unregistered_historical_venue",
-        "candidate_venue_name": "京橋プラザ",
+        "review_action": "ready_new_venue_candidate",
+        "candidate_action": "already_decided",
+        "current_decision": "auto_create_venue_and_fill_occurrence",
+        "decided_by": "auto_rule:official_facility_plus_observed_evidence",
+        "candidate_venue_name": "京橋プラザ区民館",
         "candidate_venue_id": "",
-        "confidence": "medium",
-        "reason": "review decision accepted 2025 historical venue evidence but intentionally left venue_id empty because 京橋プラザ is not registered in master",
-        "next_step": "register 京橋プラザ as a venue first if current/future occurrences need a venue_id",
+        "candidate_venue_data": CONFIRMED_NEW_VENUES["kyobashi_plaza_kuminkan"],
+        "confidence": "high",
+        "reason": "official Chuo City facility page confirms 京橋プラザ区民館, and multiple observed YouTube evidence rows confirm the 2025 event/date/organizers at 京橋プラザ",
+        "next_step": "auto-create the confirmed venue and fill this occurrence venue_id; no human venue review required",
     },
     "月島第二児童公園 盆踊り": {
         "review_action": "new_venue_candidate_needs_source",
@@ -155,6 +172,39 @@ def venue_by_id(conn, venue_id):
     return found[0] if found else None
 
 
+def existing_venue_by_names(conn, names):
+    normalized_names = [normalize_text(name) for name in names if normalize_text(name)]
+    if not normalized_names:
+        return None
+    for normalized in normalized_names:
+        found = rows(
+            conn,
+            """
+            SELECT venue_id, canonical_name, area, address, source_url
+            FROM venues
+            WHERE normalized_name = ?
+            LIMIT 1
+            """,
+            (normalized,),
+        )
+        if found:
+            return found[0]
+        found = rows(
+            conn,
+            """
+            SELECT v.venue_id, v.canonical_name, v.area, v.address, v.source_url
+            FROM venue_aliases a
+            JOIN venues v ON v.venue_id = a.venue_id
+            WHERE a.normalized_alias = ?
+            LIMIT 1
+            """,
+            (normalized,),
+        )
+        if found:
+            return found[0]
+    return None
+
+
 def existing_venue_name_matches(conn, event_name):
     norm = normalize_text(event_name)
     matches = []
@@ -194,6 +244,18 @@ def classify(conn, occurrence, task, decision):
         }
 
     candidate_venue = venue_by_id(conn, hint.get("candidate_venue_id"))
+    candidate_venue_data = hint.get("candidate_venue_data") or {}
+    if not candidate_venue and candidate_venue_data:
+        candidate_names = [
+            candidate_venue_data.get("canonical_name"),
+            *(candidate_venue_data.get("aliases") or []),
+            hint.get("candidate_venue_name"),
+        ]
+        candidate_venue = existing_venue_by_names(conn, candidate_names)
+        if candidate_venue:
+            hint["candidate_venue_id"] = candidate_venue["venue_id"]
+            if hint.get("review_action") == "ready_new_venue_candidate":
+                hint["review_action"] = "ready_existing_venue_candidate"
     existing_name_matches = existing_venue_name_matches(conn, occurrence["display_name"])
     observed_candidate = (task or {}).get("observed_candidate") or {}
 
@@ -209,9 +271,13 @@ def classify(conn, occurrence, task, decision):
         "series_id": occurrence.get("series_id") or "",
         "series_usual_venue_id": occurrence.get("usual_venue_id") or "",
         "review_action": hint["review_action"],
+        "candidate_action": hint.get("candidate_action") or "",
+        "current_decision": hint.get("current_decision") or "",
+        "decided_by": hint.get("decided_by") or "",
         "candidate_venue_name": hint.get("candidate_venue_name") or "",
         "candidate_venue_id": hint.get("candidate_venue_id") or "",
         "candidate_venue": candidate_venue,
+        "candidate_venue_data": candidate_venue_data,
         "confidence": hint.get("confidence") or "unknown",
         "reason": hint.get("reason") or "",
         "next_step": hint.get("next_step") or "",
@@ -272,6 +338,9 @@ def build(args):
             "new_or_unregistered_venue_candidate_count": sum(
                 1 for item in review if item.get("candidate_venue_name") and not item.get("candidate_venue_id")
             ),
+            "auto_resolved_count": sum(
+                1 for item in review if item.get("candidate_action") == "already_decided"
+            ),
         },
         "review": review,
     }
@@ -290,6 +359,7 @@ def render_markdown(result):
         f"- actions: {result['summary']['actions']}",
         f"- candidate_existing_venue_count: {result['summary']['candidate_existing_venue_count']}",
         f"- new_or_unregistered_venue_candidate_count: {result['summary']['new_or_unregistered_venue_candidate_count']}",
+        f"- auto_resolved_count: {result['summary']['auto_resolved_count']}",
         "",
         "| action | event | date | candidate venue | confidence | next step |",
         "| --- | --- | --- | --- | --- | --- |",
