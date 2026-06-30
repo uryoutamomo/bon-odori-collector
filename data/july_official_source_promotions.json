@@ -1,12 +1,12 @@
 {
   "generated_by": "apply_july_official_source_promotions.py",
-  "generated_at": "2026-06-29T16:41:48.280856+00:00",
-  "mode": "dry_run",
-  "applied": false,
-  "backup_db": "",
+  "generated_at": "2026-06-30T14:21:40.627614+00:00",
+  "mode": "apply",
+  "applied": true,
+  "backup_db": "data/backups/bon_odori_master.20260630T142140.627614+0000.sqlite.bak",
   "summary": {
-    "checked_count": 3,
-    "updated_count": 0,
+    "checked_count": 4,
+    "updated_count": 1,
     "already_current_count": 3,
     "foreign_key_issue_count": 0
   },
@@ -36,7 +36,7 @@
         "lifecycle_status": "published",
         "source_kind": "official_current_year",
         "source_url": "https://www.yasukuni.or.jp/schedule/saiji.html#saiji03",
-        "updated_at": "2026-06-29T16:41:48.280856+00:00"
+        "updated_at": "2026-06-30T14:21:40.627614+00:00"
       }
     },
     {
@@ -64,7 +64,7 @@
         "lifecycle_status": "published",
         "source_kind": "official_current_year",
         "source_url": "https://satakeshotengai.com/satakeodori/",
-        "updated_at": "2026-06-29T16:41:48.280856+00:00"
+        "updated_at": "2026-06-30T14:21:40.627614+00:00"
       }
     },
     {
@@ -92,7 +92,35 @@
         "lifecycle_status": "published",
         "source_kind": "official_current_year",
         "source_url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
-        "updated_at": "2026-06-29T16:41:48.280856+00:00"
+        "updated_at": "2026-06-30T14:21:40.627614+00:00"
+      }
+    },
+    {
+      "event_name": "すみだ河内音頭 小盆踊り",
+      "reason": "すみだ錦糸町河内音頭大盆踊り公式サイトで、2026年5月16日開催と本所地域プラザ BIG SHIP 多目的ホールを確認。既存URLの source_kind を公式扱いへ補正。",
+      "changed": true,
+      "before": {
+        "occurrence_id": "occ_a576d93013c35505",
+        "display_name": "すみだ河内音頭 小盆踊り",
+        "event_year": 2026,
+        "date_start": "2026-05-16",
+        "date_end": "",
+        "date_status": "ended",
+        "lifecycle_status": "published",
+        "source_kind": "notion_events",
+        "source_url": "https://www.kinshicho-kawachiondo.jp/archives/1067"
+      },
+      "after": {
+        "occurrence_id": "occ_a576d93013c35505",
+        "display_name": "すみだ河内音頭 小盆踊り",
+        "event_year": 2026,
+        "date_start": "2026-05-16",
+        "date_end": "",
+        "date_status": "ended",
+        "lifecycle_status": "published",
+        "source_kind": "official_current_year",
+        "source_url": "https://www.kinshicho-kawachiondo.jp/archives/1067",
+        "updated_at": "2026-06-30T14:21:40.627614+00:00"
       }
     }
   ],
