@@ -1,0 +1,112 @@
+{
+  "generated_by": "apply_series_source_url_inheritance.py",
+  "generated_at": "2026-06-29T12:55:39.470741+00:00",
+  "mode": "apply",
+  "scope": "master_db_series_source_url_only_no_notion_no_public_json",
+  "outputs": {
+    "target_db": "data/bon_odori_master.sqlite",
+    "backup_db": "data/backups/bon_odori_master.20260629T125539.470741+0000.sqlite.bak"
+  },
+  "summary": {
+    "planned_count": 7,
+    "applied_count": 7,
+    "skipped_count": 0,
+    "issues_by_severity": {},
+    "missing_series_source_url_count": 0
+  },
+  "applied": [
+    {
+      "series_id": "ser_b3604da8bab18695",
+      "canonical_name": "えどぐらん（江東区）",
+      "old_source_url": "",
+      "occurrence_id": "occ_ef4845b7ed9ac900",
+      "display_name": "えどぐらん（江東区）",
+      "new_source_url": "https://www.edogrand.tokyo/event/6924",
+      "after": {
+        "series_id": "ser_b3604da8bab18695",
+        "canonical_name": "えどぐらん（江東区）",
+        "source_url": "https://www.edogrand.tokyo/event/6924"
+      }
+    },
+    {
+      "series_id": "ser_ef27193f7ee6ef2c",
+      "canonical_name": "すみだ河内音頭 小盆踊り",
+      "old_source_url": "",
+      "occurrence_id": "occ_a576d93013c35505",
+      "display_name": "すみだ河内音頭 小盆踊り",
+      "new_source_url": "https://www.kinshicho-kawachiondo.jp/archives/1067",
+      "after": {
+        "series_id": "ser_ef27193f7ee6ef2c",
+        "canonical_name": "すみだ河内音頭 小盆踊り",
+        "source_url": "https://www.kinshicho-kawachiondo.jp/archives/1067"
+      }
+    },
+    {
+      "series_id": "ser_0afea6d5ab6225e8",
+      "canonical_name": "マロニエまつり盆踊り大会",
+      "old_source_url": "",
+      "occurrence_id": "occ_31e875571ef97fea",
+      "display_name": "マロニエまつり盆踊り大会",
+      "new_source_url": "https://x.com/1205uzonke/status/2065200648086487508",
+      "after": {
+        "series_id": "ser_0afea6d5ab6225e8",
+        "canonical_name": "マロニエまつり盆踊り大会",
+        "source_url": "https://x.com/1205uzonke/status/2065200648086487508"
+      }
+    },
+    {
+      "series_id": "series_03be5c839d96d5bb",
+      "canonical_name": "佐竹ゲバゲバ盆踊り",
+      "old_source_url": null,
+      "occurrence_id": "occ_f13cbee67f9cb225",
+      "display_name": "佐竹ゲバゲバ盆踊り",
+      "new_source_url": "https://satakeshotengai.com/satakeodori/",
+      "after": {
+        "series_id": "series_03be5c839d96d5bb",
+        "canonical_name": "佐竹ゲバゲバ盆踊り",
+        "source_url": "https://satakeshotengai.com/satakeodori/"
+      }
+    },
+    {
+      "series_id": "ser_831393e548a7e944",
+      "canonical_name": "月島第二児童公園 盆踊り",
+      "old_source_url": "",
+      "occurrence_id": "occ_e5ea459ea88de16c",
+      "display_name": "月島第二児童公園 盆踊り",
+      "new_source_url": "https://x.com/harumichiku/status/1955267713292435643",
+      "after": {
+        "series_id": "ser_831393e548a7e944",
+        "canonical_name": "月島第二児童公園 盆踊り",
+        "source_url": "https://x.com/harumichiku/status/1955267713292435643"
+      }
+    },
+    {
+      "series_id": "ser_006ddb71d0fc398e",
+      "canonical_name": "鉄砲洲児童公園 盆踊り",
+      "old_source_url": "",
+      "occurrence_id": "occ_69eb62d9b1773ad9",
+      "display_name": "鉄砲洲児童公園 盆踊り",
+      "new_source_url": "https://x.com/iri2choukai/status/2069959259895496872",
+      "after": {
+        "series_id": "ser_006ddb71d0fc398e",
+        "canonical_name": "鉄砲洲児童公園 盆踊り",
+        "source_url": "https://x.com/iri2choukai/status/2069959259895496872"
+      }
+    },
+    {
+      "series_id": "ser_57b12dce4d688793",
+      "canonical_name": "雷門盆踊り（浅草）",
+      "old_source_url": "",
+      "occurrence_id": "occ_90f1aef84c0ad6f7",
+      "display_name": "雷門盆踊り（浅草）",
+      "new_source_url": "https://x.com/STBA_Bonodori/status/2059220925862883623",
+      "after": {
+        "series_id": "ser_57b12dce4d688793",
+        "canonical_name": "雷門盆踊り（浅草）",
+        "source_url": "https://x.com/STBA_Bonodori/status/2059220925862883623"
+      }
+    }
+  ],
+  "skipped": [],
+  "issues": []
+}

@@ -191,6 +191,60 @@ class SourceUrlScopeTest(unittest.TestCase):
 
         self.assertEqual([row["event_name"] for row in rows], ["豊洲盆踊り"])
 
+    def test_official_source_review_preserves_existing_decision_by_id(self):
+        rows = [
+            {
+                "id": "same-row",
+                "decision": "pending",
+                "venue": "豊洲公園",
+                "event_name": "豊洲盆踊り",
+                "source_url": "https://example.com/toyosu",
+            }
+        ]
+        states = build_official_source_review.collect_existing_review_states(
+            [
+                {
+                    "id": "same-row",
+                    "decision": "official",
+                    "venue": "豊洲公園",
+                    "event_name": "豊洲盆踊り",
+                    "source_url": "https://example.com/toyosu",
+                }
+            ]
+        )
+
+        preserved = build_official_source_review.apply_existing_review_states(rows, states)
+
+        self.assertEqual(preserved, 1)
+        self.assertEqual(rows[0]["decision"], "official")
+
+    def test_official_source_review_does_not_preserve_by_url_only(self):
+        rows = [
+            {
+                "id": "new-row",
+                "decision": "pending",
+                "venue": "",
+                "event_name": "自由が丘盆踊り",
+                "source_url": "https://example.com/shared",
+            }
+        ]
+        states = build_official_source_review.collect_existing_review_states(
+            [
+                {
+                    "id": "old-row",
+                    "decision": "reject",
+                    "venue": "大蔵氷川神社",
+                    "event_name": "大蔵本村睦会 盆踊り大会",
+                    "source_url": "https://example.com/shared",
+                }
+            ]
+        )
+
+        preserved = build_official_source_review.apply_existing_review_states(rows, states)
+
+        self.assertEqual(preserved, 0)
+        self.assertEqual(rows[0]["decision"], "pending")
+
     def test_rare_signal_backcheck_skips_outside_tokyo_23(self):
         result = build_rare_signal_backcheck_queue.build(
             {
