@@ -1,8 +1,8 @@
 """Apply reviewed missing occurrence venue candidates to the master RDB.
 
-Default mode writes to a copied SQLite DB. Apply mode only fills venue_id for
-rows classified as ready_existing_venue_candidate; it does not write Notion or
-public JSON.
+Default mode writes to a copied SQLite DB. Apply mode fills venue_id for
+rows classified as ready_existing_venue_candidate and can create explicitly
+reviewed/auto-confirmed new venues. It does not write Notion or public JSON.
 """
 
 import argparse
@@ -13,7 +13,14 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
-from master_db import MASTER_DB, connect_existing, refresh_manifest_database_state, table_counts
+from master_db import (
+    MASTER_DB,
+    connect_existing,
+    normalize_text,
+    refresh_manifest_database_state,
+    stable_id,
+    table_counts,
+)
 
 
 DATA = Path("data")
@@ -91,13 +98,106 @@ def venue(conn, venue_id):
     return result[0] if result else None
 
 
+def find_venue_by_name_address(conn, data):
+    result = rows(
+        conn,
+        """
+        SELECT venue_id, canonical_name, area, address
+        FROM venues
+        WHERE normalized_name = ?
+          AND COALESCE(address, '') = ?
+        """,
+        (normalize_text(data["canonical_name"]), data.get("address") or ""),
+    )
+    return result[0] if result else None
+
+
+def ensure_new_venue(conn, data, now):
+    existing = find_venue_by_name_address(conn, data)
+    if existing:
+        venue_id = existing["venue_id"]
+        conn.execute(
+            """
+            UPDATE venues
+            SET area = ?,
+                access = ?,
+                source_url = ?,
+                review_status = 'active',
+                updated_at = ?
+            WHERE venue_id = ?
+            """,
+            (
+                data.get("area") or "",
+                data.get("access") or "",
+                data.get("source_url") or "",
+                now,
+                venue_id,
+            ),
+        )
+        created = False
+    else:
+        venue_id = stable_id(
+            "ven",
+            data["canonical_name"],
+            data.get("address") or "",
+            data.get("source_url") or "",
+        )
+        conn.execute(
+            """
+            INSERT INTO venues(
+              venue_id, origin, canonical_name, normalized_name, area, address,
+              access, scale, public_intro, past_memo, source_url,
+              latitude, longitude, review_status, created_at, updated_at
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """,
+            (
+                venue_id,
+                "curated",
+                data["canonical_name"],
+                normalize_text(data["canonical_name"]),
+                data.get("area") or "",
+                data.get("address") or "",
+                data.get("access") or "",
+                "",
+                "",
+                "",
+                data.get("source_url") or "",
+                None,
+                None,
+                "active",
+                now,
+                now,
+            ),
+        )
+        created = True
+
+    aliases = [data["canonical_name"], *(data.get("aliases") or [])]
+    for index, alias in enumerate(alias for alias in aliases if alias):
+        conn.execute(
+            """
+            INSERT OR IGNORE INTO venue_aliases(
+              venue_id, alias, normalized_alias, source, confidence
+            ) VALUES (?, ?, ?, ?, ?)
+            """,
+            (
+                venue_id,
+                alias,
+                normalize_text(alias),
+                "canonical" if index == 0 else "reviewed_missing_occurrence_venues",
+                "manual" if index == 0 else "auto",
+            ),
+        )
+    return venue_id, created
+
+
 def ready_items(review):
-    return [
-        item
-        for item in review.get("review") or []
-        if item.get("review_action") == "ready_existing_venue_candidate"
-           and item.get("candidate_venue_id")
-    ]
+    items = []
+    for item in review.get("review") or []:
+        if item.get("review_action") == "ready_existing_venue_candidate" and item.get("candidate_venue_id"):
+            items.append(item)
+        elif item.get("review_action") == "ready_new_venue_candidate" and item.get("candidate_venue_data"):
+            items.append(item)
+    return items
 
 
 def build_plan(conn, review):
@@ -105,18 +205,43 @@ def build_plan(conn, review):
     skipped = []
     for item in ready_items(review):
         before = occurrence(conn, item["occurrence_id"])
-        candidate = venue(conn, item["candidate_venue_id"])
+        candidate = venue(conn, item.get("candidate_venue_id") or "")
         if not before:
             skipped.append({**item, "reason": "missing_occurrence"})
             continue
-        if not candidate:
+        if item.get("review_action") == "ready_existing_venue_candidate" and not candidate:
             skipped.append({**item, "reason": "missing_candidate_venue"})
             continue
         if before.get("venue_id"):
             skipped.append({**item, "reason": "occurrence_already_has_venue"})
             continue
+        if item.get("review_action") == "ready_new_venue_candidate":
+            venue_data = item.get("candidate_venue_data") or {}
+            if not venue_data.get("canonical_name"):
+                skipped.append({**item, "reason": "missing_candidate_venue_data"})
+                continue
+            planned.append(
+                {
+                    "action": "create_venue_and_fill_occurrence",
+                    "occurrence_id": item["occurrence_id"],
+                    "event_name": item["event_name"],
+                    "event_year": item["event_year"],
+                    "series_id": before["series_id"],
+                    "set_series_usual_venue": not before.get("usual_venue_id"),
+                    "old_venue_id": before.get("venue_id") or "",
+                    "new_venue_id": "",
+                    "new_venue_name": venue_data["canonical_name"],
+                    "new_venue_address": venue_data.get("address") or "",
+                    "candidate_venue_data": venue_data,
+                    "confidence": item.get("confidence") or "unknown",
+                    "reason": item.get("reason") or "",
+                    "before": before,
+                }
+            )
+            continue
         planned.append(
             {
+                "action": "fill_existing_venue",
                 "occurrence_id": item["occurrence_id"],
                 "event_name": item["event_name"],
                 "event_year": item["event_year"],
@@ -137,7 +262,12 @@ def build_plan(conn, review):
 def apply_plan(conn, planned, now):
     applied = []
     for item in planned:
-        conn.execute(
+        if item["action"] == "create_venue_and_fill_occurrence":
+            venue_id, venue_created = ensure_new_venue(conn, item["candidate_venue_data"], now)
+            item["new_venue_id"] = venue_id
+        else:
+            venue_created = False
+        cursor = conn.execute(
             """
             UPDATE event_occurrences
             SET venue_id = ?,
@@ -147,7 +277,7 @@ def apply_plan(conn, planned, now):
             """,
             (item["new_venue_id"], now, item["occurrence_id"]),
         )
-        if conn.total_changes < 1:
+        if cursor.rowcount < 1:
             raise ValueError(f"failed to update occurrence venue: {item['occurrence_id']}")
         if item["set_series_usual_venue"]:
             conn.execute(
@@ -161,7 +291,7 @@ def apply_plan(conn, planned, now):
                 (item["new_venue_id"], now, item["series_id"]),
             )
         after = occurrence(conn, item["occurrence_id"])
-        applied.append({**item, "after": after})
+        applied.append({**item, "venue_created": venue_created, "after": after})
     return applied
 
 
@@ -208,13 +338,14 @@ def render_markdown(result):
         f"- issues_by_severity: {result['summary']['issues_by_severity']}",
         f"- missing_venue_count: {result['summary']['missing_venue_count']}",
         "",
-        "| event | before | after | series usual venue updated | reason |",
-        "| --- | --- | --- | --- | --- |",
+        "| action | event | before | after | venue created | series usual venue updated | reason |",
+        "| --- | --- | --- | --- | --- | --- | --- |",
     ]
     for item in result["applied"]:
         lines.append(
-            f"| {item['event_name']} | {item['old_venue_id'] or '(none)'} | "
+            f"| {item['action']} | {item['event_name']} | {item['old_venue_id'] or '(none)'} | "
             f"{item['new_venue_name']} (`{item['new_venue_id']}`) | "
+            f"{item.get('venue_created', False)} | "
             f"{item['set_series_usual_venue']} | {item['reason']} |"
         )
     if result["skipped"]:

@@ -33,7 +33,7 @@
       "term": "練習会",
       "interpretation": "盆踊りの曲や振りを練習する会",
       "confidence": "要レビュー",
-      "reason": "週次収穫パターンに一致。準公式用語も対象に含める。",
+      "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
       "evidence_count": 66,
       "evidence": [
         {
@@ -76,7 +76,7 @@
       "term": "踊り会",
       "interpretation": "盆踊りや輪踊りの会",
       "confidence": "要レビュー",
-      "reason": "週次収穫パターンに一致。準公式用語も対象に含める。",
+      "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
       "evidence_count": 11,
       "evidence": [
         {
@@ -119,7 +119,7 @@
       "term": "参戦",
       "interpretation": "盆踊りイベントへ参加すること",
       "confidence": "要レビュー",
-      "reason": "週次収穫パターンに一致。準公式用語も対象に含める。",
+      "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
       "evidence_count": 2,
       "evidence": [
         {
@@ -144,7 +144,7 @@
       "term": "はしご",
       "interpretation": "複数会場を同日または連続して巡る行動",
       "confidence": "要レビュー",
-      "reason": "週次収穫パターンに一致。準公式用語も対象に含める。",
+      "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
       "evidence_count": 1,
       "evidence": [
         {
@@ -163,7 +163,7 @@
       "term": "ハシゴ",
       "interpretation": "複数会場を同日または連続して巡る行動",
       "confidence": "要レビュー",
-      "reason": "週次収穫パターンに一致。準公式用語も対象に含める。",
+      "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
       "evidence_count": 1,
       "evidence": [
         {
@@ -182,7 +182,7 @@
       "term": "盆活",
       "interpretation": "盆踊り関連の参加・調査・練習などの活動",
       "confidence": "要レビュー",
-      "reason": "週次収穫パターンに一致。準公式用語も対象に含める。",
+      "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
       "evidence_count": 1,
       "evidence": [
         {
@@ -201,7 +201,7 @@
       "term": "踊り始め",
       "interpretation": "その年や時期の最初の盆踊り参加",
       "confidence": "要レビュー",
-      "reason": "週次収穫パターンに一致。準公式用語も対象に含める。",
+      "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
       "evidence_count": 1,
       "evidence": [
         {
