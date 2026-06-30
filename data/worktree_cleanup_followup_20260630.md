@@ -18,6 +18,8 @@
 | `bon-odori-collector` | `b671fec` | Add publication gap review builder | 採用済みデータと公開siteデータのズレを `data/publication_gap_review.json` に出すローカル分析ツール。出力JSONはignore済み。 |
 | `bon-odori-collector` | `3bab84c` | Add manual Notion maintenance helpers | 未追跡のNotion追記/手動メンテ系スクリプトを保存。DB更新/ページ作成系2本には確認文字列を追加。 |
 | `bon-odori-collector` | `c2f3f26` | Update glossary review wording for daily X flow | 生成データと独立した文言修正を切り出し。 |
+| `bon-odori-collector` | `b3d4ab4` | Refresh missing venue review dry-run | missing occurrence venue review と dry-run apply report を再生成・保存。production apply は未実行。 |
+| `bon-odori-collector` | `10d46be` | Refresh evidence RDB summary | evidence RDB summary を現行入力から再生成。SQLite本体はignore対象のローカル成果物。 |
 
 Additional checks:
 
@@ -25,6 +27,8 @@ Additional checks:
 - `bon-odori-collector`: `python3 -m py_compile review_current_date_batch.py review_source_url_batch.py review_venue_batch.py` -> OK.
 - `bon-odori-collector`: `python3 build_publication_gap_review.py` -> rows=152.
 - `bon-odori-collector`: Notion append / planning scripts were syntax-checked and committed, but not run. `fill_glossary_readings.py --apply` and `create_regional_seo_illustrated_list_plan_notion.py --apply` now require explicit `--confirm`.
+- `bon-odori-collector`: `python3 -m unittest tests.test_apply_reviewed_missing_occurrence_venues` -> OK.
+- `bon-odori-collector`: `python3 -m unittest tests.test_build_evidence_rdb` -> OK.
 
 Current safe stance remains unchanged:
 
@@ -81,9 +85,9 @@ Current safe stance remains unchanged:
 
 | metric | value |
 | --- | ---: |
-| tracked changed files | 15 |
+| tracked changed files | 10 |
 | untracked files | 0 |
-| tracked diff size | +62,344 / -58,368 |
+| tracked diff size | +62,226 / -58,105 |
 
 ## Public JSON status
 
@@ -134,29 +138,33 @@ Largest files/diffs still include:
 - `data/song_occurrences.json`
 - `data/song_prediction_snapshots.json`
 - `data/ops_metrics_*`
-- `data/evidence_rdb_summary.json`
 
 Action:
 
 - Treat as a batch output. `legacy_song_occurrence_generation` is still frozen, so do not commit `data/song_occurrences.json` or `data/song_prediction_snapshots.json` from the old generation path.
 - YouTube evidence/backfill outputs were split in `a196275`.
+- `data/evidence_rdb_summary.json` was refreshed and split in `10d46be`.
 - Keep ops metrics out until the remaining frozen song/public dry-run state is either reverted, regenerated from approved paths, or explicitly accepted.
 
 2026-06-30 status:
 
 - `data/song_occurrences.json` and `data/song_prediction_snapshots.json` still account for most of the remaining diff and remain non-committable under the freeze policy.
 - `data/ops_metrics_*` reflects local generated state and should wait until the frozen song/public dry-run state is resolved.
+- `data/evidence_rdb_summary.json` is no longer part of the dirty set.
 
 ### E. Remaining generated-data groups after Notion cleanup
 
 | group | files | current action |
 | --- | --- | --- |
 | Master RDB lineage/audit | `data/bon_odori_master_manifest.json`, `data/master_rdb_audit.json`, `data/master_rdb_audit.md` | Hold. These refer to local DB/source checksum drift and should not be pushed without the matching RDB artifact/cutover decision. |
-| Evidence RDB summary | `data/evidence_rdb_summary.json` | Hold or commit separately only if the evidence DB refresh is intended as an audit artifact. |
-| Missing venue review dry-run | `data/missing_occurrence_venue_review.*`, `data/reviewed_missing_occurrence_venues_apply_report.*` | Hold pending review. Current report is dry-run for 京橋プラザ区民館, not production apply. |
 | Public postprocessor dry-runs | `data/public_historical_reference_dry_run.json`, `data/public_season_hint_dry_run.json` | Hold pending public data review. Do not treat as deploy approval. |
 | Ops metrics | `data/ops_metrics_dashboard.html`, `data/ops_metrics_history.jsonl`, `data/ops_metrics_latest.md` | Hold until upstream generated state is accepted or reset. |
 | Frozen legacy song outputs | `data/song_occurrences.json`, `data/song_prediction_snapshots.json` | Do not commit unless Ph2/Ph3 explicitly reopens the legacy path. |
+
+Resolved in this continuation:
+
+- `data/missing_occurrence_venue_review.*` and `data/reviewed_missing_occurrence_venues_apply_report.*` were split in `b3d4ab4`; this is still dry-run evidence only.
+- `data/evidence_rdb_summary.json` was split in `10d46be` after `tests.test_build_evidence_rdb` passed.
 
 ### C. Review/research feature workstreams
 
