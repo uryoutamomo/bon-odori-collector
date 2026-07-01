@@ -72,13 +72,38 @@
       }
     },
     {
-      "id": "ginza_itchome_shintomi_kyobashi_plaza_hold_until_2026_date",
-      "reason": "おと（Codex）2026-06-30: official Chuo City facility page confirms 京橋プラザ区民館, so the venue can be linked in master. The occurrence still has date_status=unknown and lifecycle_status=未確認, so keep it out of public export until a 2026 official/organizer date source is confirmed.",
+      "id": "ginza_itchome_shintomi_kyobashi_plaza_predict_from_history",
+      "reason": "おと（Codex）2026-07-01: publish as historical-slide candidate. 2025-07-19（土） is confirmed from YouTube evidence, and 2023-07-28（金） is confirmed from machihito descriptions. 2026 official date is still unconfirmed, so expose the row as past-performance based prediction rather than confirmed.",
       "match": {
         "name": "銀座一丁目東町会・新富町会 納涼盆踊り大会",
         "venue": "京橋プラザ区民館"
       },
-      "skip": true
+      "set": {
+        "months": [
+          7
+        ],
+        "date": "2025-07-19",
+        "date_end": null,
+        "status": "未確認",
+        "date_confidence": {
+          "level": "unknown",
+          "label": "未確認",
+          "description": "2026年の開催日は未確認です"
+        },
+        "date_candidates": [],
+        "hints": [
+          [
+            7,
+            19
+          ]
+        ],
+        "jun": {
+          "7": "中旬"
+        },
+        "description": "京橋プラザ区民館・京橋公園周辺で行われる、銀座一丁目東町会・新富町会の納涼盆踊り大会。",
+        "detail": "2026年日程は未確認。過去実績として、2025年は7月19日（土）、2023年は7月28日（金）開催をYouTube説明欄で確認。近年は7月後半の週末開催と見なし、2026年は7月18日（土）を予想候補として扱う。",
+        "source_urls": []
+      }
     },
     {
       "id": "tsukishima_daini_jido_koen_hold_until_2026_event_source",
