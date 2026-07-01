@@ -1,0 +1,130 @@
+{
+  "generated_at": "2026-06-30T14:09:38.965329+00:00",
+  "generated_by": "apply_reviewed_official_wait_events.py",
+  "mode": "apply",
+  "outputs": {
+    "target_db": "data/bon_odori_master.sqlite",
+    "dry_run_db": "data/reviewed_official_wait_events_dry_run.sqlite",
+    "backup_db": "data/backups/bon_odori_master.20260630T140938.965329+0000.sqlite.bak",
+    "json": "data/reviewed_official_wait_events_apply_report.json",
+    "markdown": "data/reviewed_official_wait_events_apply_report.md"
+  },
+  "write_guard": {
+    "db_committed": true,
+    "rolled_back": false,
+    "apply_requires_confirm": "APPLY REVIEWED OFFICIAL WAIT EVENTS"
+  },
+  "summary": {
+    "planned_count": 0,
+    "applied_count": 0,
+    "skipped_count": 1,
+    "issues_by_severity": {},
+    "before_counts": {
+      "event_investigation_tasks": 79,
+      "event_occurrences": 223,
+      "event_series": 222,
+      "evidence_items": 28421,
+      "external_record_links": 2654,
+      "historical_promotion_candidates": 15,
+      "master_meta": 0,
+      "notion_sync_jobs": 10,
+      "observed_occurrence_songs": 28105,
+      "observed_occurrences": 1856,
+      "occurrence_dates": 173,
+      "occurrence_evidence_links": 2,
+      "occurrence_song_evidence_links": 485,
+      "occurrence_songs": 312,
+      "predicted_occurrence_dates": 12,
+      "schema_migrations": 1,
+      "song_aliases": 141,
+      "songs": 144,
+      "venue_aliases": 217,
+      "venues": 217,
+      "write_batches": 0
+    },
+    "after_counts": {
+      "event_investigation_tasks": 79,
+      "event_occurrences": 223,
+      "event_series": 222,
+      "evidence_items": 28421,
+      "external_record_links": 2654,
+      "historical_promotion_candidates": 15,
+      "master_meta": 0,
+      "notion_sync_jobs": 10,
+      "observed_occurrence_songs": 28105,
+      "observed_occurrences": 1856,
+      "occurrence_dates": 173,
+      "occurrence_evidence_links": 2,
+      "occurrence_song_evidence_links": 485,
+      "occurrence_songs": 312,
+      "predicted_occurrence_dates": 12,
+      "schema_migrations": 1,
+      "song_aliases": 141,
+      "songs": 144,
+      "venue_aliases": 217,
+      "venues": 217,
+      "write_batches": 0
+    }
+  },
+  "applied": [],
+  "skipped": [
+    {
+      "occurrence_id": "occ_69eb62d9b1773ad9",
+      "old_event_name": "鉄砲洲児童公園 盆踊り",
+      "event_name": "鉄砲洲納涼盆踊り",
+      "venue": {
+        "canonical_name": "鉄砲洲公園",
+        "area": "中央区",
+        "address": "",
+        "access": "",
+        "source_url": "https://x.com/iri2choukai/status/2069959259895496872",
+        "aliases": [
+          "鉄砲洲児童公園"
+        ]
+      },
+      "occurrence_update": {
+        "date_start": "2026-08-03",
+        "date_end": "2026-08-05",
+        "date_status": "confirmed",
+        "lifecycle_status": "published",
+        "confidence": "high",
+        "source_kind": "official_current_year",
+        "source_url": "https://x.com/iri2choukai/status/2069959259895496872",
+        "detail_note": "入船二丁目町会の公式/町会広報X投稿で、2026年8月3日から8月5日、鉄砲洲公園、18:45-21:00の開催を確認。"
+      },
+      "evidence": {
+        "review_file": "data/rare_signal_backcheck_reviews.json",
+        "official_account_file": "data/x_official_source_accounts.json",
+        "confirmed_source_url": "https://x.com/iri2choukai/status/2069959259895496872",
+        "confirmed_source_type": "official_or_organizer_social",
+        "reviewed_by": "おと（Codex）"
+      },
+      "reason": "レビュー済みの町会公式/広報X根拠で、名称・日付・会場が揃っているため、候補へ戻らないようRDBの必須公開条件をまとめて反映する。",
+      "skip_reason": "already_applied",
+      "before": {
+        "occurrence_id": "occ_69eb62d9b1773ad9",
+        "series_id": "ser_006ddb71d0fc398e",
+        "display_name": "鉄砲洲納涼盆踊り",
+        "event_year": 2026,
+        "venue_id": "ven_0063d9f2eb90363a",
+        "venue_name": "鉄砲洲公園",
+        "venue_area": "中央区",
+        "venue_review_status": "active",
+        "date_start": "2026-08-03",
+        "date_end": "2026-08-05",
+        "date_status": "confirmed",
+        "lifecycle_status": "published",
+        "confidence": "high",
+        "source_kind": "official_current_year",
+        "source_url": "https://x.com/iri2choukai/status/2069959259895496872",
+        "detail": "入船二丁目町会の公式/町会広報X投稿で、2026年8月3日から8月5日、鉄砲洲公園、18:45-21:00の開催を確認。",
+        "series_name": "鉄砲洲納涼盆踊り",
+        "series_normalized_name": "鉄砲洲納涼盆踊り",
+        "usual_venue_id": "ven_0063d9f2eb90363a",
+        "series_area": "中央区",
+        "series_source_url": "https://x.com/iri2choukai/status/2069959259895496872"
+      }
+    }
+  ],
+  "issues": []
+}

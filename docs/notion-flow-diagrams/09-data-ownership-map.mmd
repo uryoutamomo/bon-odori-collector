@@ -1,0 +1,24 @@
+flowchart LR
+  evidence[X/公式HP/自治体/主催ページ]
+  registry[data/x_official_source_accounts.json]
+  snapshot[data/notion_snapshot.sqlite]
+  master[data/bon_odori_master.sqlite]
+  gap[data/publication_gap_review.json]
+  public_json[data/public/events_public.json]
+  site_json[bon-odori-site/data/events_public.json]
+  guard[data/public_events_sync_guard.json]
+  public_site[Public Website]
+
+  evidence -- read --> registry
+  evidence -- read --> master
+  snapshot -- reference only --> master
+  master -- read --> gap
+  master -- export --> public_json
+  public_json -- compare --> guard
+  site_json -- compare --> guard
+  public_json -- reviewed sync --> site_json
+  site_json -- GitHub Actions --> public_site
+
+  public_site -. never source of truth .-> site_json
+  site_json -. generated artifact .-> master
+  public_json -. generated artifact .-> master

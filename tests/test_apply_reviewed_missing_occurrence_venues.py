@@ -88,6 +88,49 @@ class ApplyReviewedMissingOccurrenceVenuesTest(unittest.TestCase):
             finally:
                 conn.close()
 
+    def test_build_plan_can_limit_to_selected_occurrence_ids(self):
+        venue_data = {
+            "canonical_name": "京橋プラザ区民館",
+            "aliases": ["京橋プラザ"],
+            "area": "中央区",
+            "address": "東京都中央区銀座一丁目25番3号",
+            "access": "",
+            "source_url": "https://www.city.chuo.lg.jp/a0013/kurashi/chiikicommunity/kuminkan/syukaisisetu02.html",
+        }
+        review = {
+            "review": [
+                {
+                    "occurrence_id": "occ_1",
+                    "event_name": "銀座一丁目東町会・新富町会 納涼盆踊り大会",
+                    "event_year": 2025,
+                    "review_action": "ready_new_venue_candidate",
+                    "candidate_venue_data": venue_data,
+                    "confidence": "high",
+                    "reason": "official facility confirmed",
+                },
+                {
+                    "occurrence_id": "occ_skip",
+                    "event_name": "別イベント",
+                    "event_year": 2025,
+                    "review_action": "ready_new_venue_candidate",
+                    "candidate_venue_data": venue_data,
+                    "confidence": "high",
+                    "reason": "not selected",
+                },
+            ]
+        }
+
+        with tempfile.TemporaryDirectory() as tmp:
+            db_path = Path(tmp) / "master.sqlite"
+            conn = create_db(db_path)
+            try:
+                planned, skipped = build_plan(conn, review, occurrence_ids=["occ_1"])
+
+                self.assertEqual(skipped, [])
+                self.assertEqual([item["occurrence_id"] for item in planned], ["occ_1"])
+            finally:
+                conn.close()
+
 
 if __name__ == "__main__":
     unittest.main()

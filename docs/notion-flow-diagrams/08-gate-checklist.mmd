@@ -1,0 +1,53 @@
+flowchart TD
+  g0([Gate 0: Source])
+  g1([Gate 1: Identity])
+  g2([Gate 2: Venue])
+  g3([Gate 3: Date])
+  g4([Gate 4: RDB Apply])
+  g5([Gate 5: Publication Gap])
+  g6([Gate 6: Sync Guard])
+  g7([Gate 7: Deploy])
+
+  g0 --> g0a{公式HP/自治体/主催SNSか}
+  g0a -- no --> stop0[Stop: 調査メモ]
+  g0a -- yes --> g0b{本文にイベント名があるか}
+  g0b -- no --> stop0
+  g0b -- yes --> g1
+
+  g1 --> g1a{series_key重複確認済みか}
+  g1a -- no --> stop1[Stop: 重複レビュー]
+  g1a -- yes --> g1b{event_yearは正しいか}
+  g1b -- no --> stop1
+  g1b -- yes --> g2
+
+  g2 --> g2a{venue_idがあるか}
+  g2a -- no --> stop2[Stop: missing_venue_id]
+  g2a -- yes --> g2b{venue active + 23区areaか}
+  g2b -- no --> stop2
+  g2b -- yes --> g3
+
+  g3 --> g3a{根拠に2026日程があるか}
+  g3a -- yes --> g3b{date_start/date_end/status反映済みか}
+  g3b -- no --> stop3[Stop: missing_date_start]
+  g3b -- yes --> g4
+  g3a -- no --> g3c{未確認公開として出す判断か}
+  g3c -- no --> stop3
+  g3c -- yes --> g4
+
+  g4 --> g4a{dry-run/report作成済みか}
+  g4a -- no --> stop4[Stop: apply禁止]
+  g4a -- yes --> g4b{明示承認 + 確認文字列か}
+  g4b -- no --> stop4
+  g4b -- yes --> g5
+
+  g5 --> g5a{publication_gap event blockerなし?}
+  g5a -- no --> stop5[Stop: RDBへ戻す]
+  g5a -- yes --> g6
+
+  g6 --> g6a{public sync guard pass?}
+  g6a -- no --> stop6[Stop: 差分レビュー]
+  g6a -- yes --> g7
+
+  g7 --> g7a{内田さんが公開反映を明示?}
+  g7a -- no --> hold7[Hold: ローカル/PRまで]
+  g7a -- yes --> deploy_ok[Deploy OK]

@@ -1,0 +1,388 @@
+{
+  "generated_by": "sync_reviewed_public_event_updates_to_site_20260701.py",
+  "generated_at": "2026-07-01T11:49:39.698474+00:00",
+  "mode": "write",
+  "write_performed": true,
+  "sources": {
+    "collector_events": "/Users/ryotauchida/bon-odori-collector/data/public/events_public.json",
+    "site_events": "/Users/ryotauchida/bon-odori-site/data/events_public.json"
+  },
+  "summary": {
+    "site_count_before": 186,
+    "proposed_count": 186,
+    "upsert_count": 5,
+    "removed_count": 0,
+    "missing_count": 0,
+    "ambiguous_count": 0
+  },
+  "upsert_event_names": [
+    "SHIBUYA MIYASHITA PARK BON DANCE",
+    "盆踊 〜BONDO〜",
+    "木場二丁目 盆踊り大会",
+    "木場一・六町会 盆踊り大会",
+    "東陽一丁目町会 盆踊り大会"
+  ],
+  "remove_event_names": [
+    "品川第二地区 区民まつり・品川青年会 盆踊り大会（天妙国寺）"
+  ],
+  "missing_event_names": [],
+  "ambiguous_event_names": [],
+  "upsert_event_keys": [
+    "SHIBUYA MIYASHITA PARK BON DANCE␟宮下公園",
+    "盆踊 〜BONDO〜␟しながわ中央公園",
+    "木場二丁目 盆踊り大会␟木場二丁目公園",
+    "木場一・六町会 盆踊り大会␟深川ギャザリアセンタープラザ",
+    "東陽一丁目町会 盆踊り大会␟旧子供広場"
+  ],
+  "upsert_events": [
+    {
+      "name": "SHIBUYA MIYASHITA PARK BON DANCE",
+      "name_confirmed": true,
+      "venue": "宮下公園",
+      "area": "渋谷区",
+      "months": [
+        9
+      ],
+      "scale": "大",
+      "access": "渋谷駅から徒歩約3分。東京メトロ千代田線・副都心線 明治神宮前〈原宿〉駅 7番口から徒歩約8分。都営バス 宮下公園、ハチ公バス 宮下公園前から徒歩1分",
+      "address": "東京都渋谷区神宮前6-20-10",
+      "lat": null,
+      "lng": null,
+      "date": "2026-09-26",
+      "date_end": "2026-09-27",
+      "status": "確認済み",
+      "date_confidence": {
+        "level": "confirmed",
+        "label": "確認済み",
+        "description": "開催日として確認済みです"
+      },
+      "date_candidates": [],
+      "hints": [
+        [
+          9,
+          26
+        ],
+        [
+          9,
+          27
+        ]
+      ],
+      "jun": {
+        "9": "下旬"
+      },
+      "description": "渋谷・宮下公園の芝生の上で開かれる現代型の盆踊り。買い物帰りにふらっと輪に入れる、渋谷らしいボンダンス。",
+      "detail": "公式HPで2026年9月26日・27日、MIYASHITA PARK4階 渋谷区立宮下公園 芝生ひろば、13:00-21:00開催を確認。",
+      "source_urls": [
+        {
+          "label": "公式告知あり",
+          "url": "https://miyashita-bondance.jp/",
+          "kind": "official"
+        }
+      ],
+      "songs": [
+        {
+          "name": "ダンシングヒーロー",
+          "confidence": "hint",
+          "probability": 80,
+          "basis": "past_evidence",
+          "basis_label": "2025年ヒント"
+        },
+        {
+          "name": "外国人も一緒になって阿波踊り",
+          "confidence": "hint",
+          "probability": 80,
+          "basis": "past_evidence",
+          "basis_label": "2025年ヒント"
+        },
+        {
+          "name": "東京音頭",
+          "confidence": "hint",
+          "probability": 80,
+          "basis": "past_evidence",
+          "basis_label": "2025年ヒント"
+        },
+        {
+          "name": "激混み会場で外国人も踊り",
+          "confidence": "hint",
+          "probability": 80,
+          "basis": "past_evidence",
+          "basis_label": "2025年ヒント"
+        },
+        {
+          "name": "阿波踊り",
+          "confidence": "hint",
+          "probability": 80,
+          "basis": "past_evidence",
+          "basis_label": "2025年ヒント"
+        }
+      ],
+      "public_status": "upcoming_confirmed",
+      "public_category": "upcoming",
+      "public_status_label": "今後開催",
+      "public_note": "2026年日程確認済み: 2026-09-26〜2026-09-27",
+      "recurrence_label": "2026年確認済み",
+      "recurrence_score": 0.95,
+      "recurrence_reasons": [
+        "2026年日付確認済み"
+      ],
+      "recurrence_cautions": [],
+      "edition_number": null,
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-09-26",
+        "2026-09-27"
+      ],
+      "display_tier": "confirmed"
+    },
+    {
+      "name": "盆踊 〜BONDO〜",
+      "name_confirmed": true,
+      "venue": "しながわ中央公園",
+      "area": "品川区",
+      "months": [
+        5
+      ],
+      "scale": "大",
+      "access": "東急大井町線 下神明駅から徒歩1分／JR・東急大井町線・りんかい線 大井町駅から徒歩10分",
+      "address": "東京都品川区西品川1-27-20",
+      "lat": null,
+      "lng": null,
+      "date": "2026-05-23",
+      "date_end": null,
+      "status": "確認済み",
+      "date_confidence": {
+        "level": "confirmed",
+        "label": "確認済み",
+        "description": "開催日として確認済みです"
+      },
+      "date_candidates": [],
+      "hints": [
+        [
+          5,
+          23
+        ]
+      ],
+      "jun": {
+        "5": "下旬"
+      },
+      "description": "しながわ中央公園で開かれる新感覚の盆踊りフェス「BONDO」。デコトラのステージやキッチンカー、フリーマーケットも同時開催。",
+      "detail": "しながわ観光協会で2026年5月23日、しながわ中央公園ヘリポート広場、10:20-18:30開催を確認。",
+      "source_urls": [
+        {
+          "label": "公式告知あり",
+          "url": "https://shinagawa-kanko.or.jp/event/bondo2026/",
+          "kind": "official"
+        }
+      ],
+      "songs": [],
+      "public_status": "ended_2026",
+      "public_category": "ended",
+      "public_status_label": "開催終了",
+      "public_note": "2026年開催終了: 2026-05-23",
+      "recurrence_label": "2026年開催終了",
+      "recurrence_score": 0.98,
+      "recurrence_reasons": [
+        "2026年開催済み"
+      ],
+      "recurrence_cautions": [],
+      "edition_number": null,
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-05-23"
+      ],
+      "display_tier": "ended"
+    },
+    {
+      "name": "木場二丁目 盆踊り大会",
+      "name_confirmed": true,
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "months": [
+        7
+      ],
+      "scale": "中",
+      "access": "東京メトロ東西線 木場駅から徒歩4分",
+      "address": "東京都江東区木場2-11-11",
+      "lat": null,
+      "lng": null,
+      "date": "2026-07-17",
+      "date_end": "2026-07-18",
+      "status": "確認済み",
+      "date_confidence": {
+        "level": "confirmed",
+        "label": "確認済み",
+        "description": "開催日として確認済みです"
+      },
+      "date_candidates": [],
+      "hints": [
+        [
+          7,
+          17
+        ],
+        [
+          7,
+          18
+        ]
+      ],
+      "jun": {
+        "7": "中旬"
+      },
+      "description": "木場二丁目公園で開かれる地域の盆踊り大会。",
+      "detail": "2026年告知確認。Instagram投稿本文で、会場: 木場二丁目公園、日時: 7月17日(金)18:00-21:00、7月18日(土)18:00-20:30を確認。",
+      "source_urls": [
+        {
+          "label": "告知HPあり",
+          "url": "https://www.instagram.com/p/DZm2_6mytN3/",
+          "kind": "web",
+          "count": 1
+        }
+      ],
+      "songs": [],
+      "public_status": "upcoming_confirmed",
+      "public_category": "upcoming",
+      "public_status_label": "今後開催",
+      "public_note": "2026年日程確認済み: 2026-07-17〜2026-07-18",
+      "recurrence_label": "2026年確認済み",
+      "recurrence_score": 0.95,
+      "recurrence_reasons": [
+        "2026年日付確認済み"
+      ],
+      "recurrence_cautions": [],
+      "edition_number": null,
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-07-17",
+        "2026-07-18"
+      ],
+      "display_tier": "confirmed"
+    },
+    {
+      "name": "木場一・六町会 盆踊り大会",
+      "name_confirmed": true,
+      "venue": "深川ギャザリアセンタープラザ",
+      "area": "江東区",
+      "months": [
+        7
+      ],
+      "scale": null,
+      "access": "東京メトロ東西線「木場」駅4a・b出口徒歩約2分",
+      "address": "東京都江東区木場1-5-10",
+      "lat": null,
+      "lng": null,
+      "date": "2026-07-18",
+      "date_end": "2026-07-19",
+      "status": "確認済み",
+      "date_confidence": {
+        "level": "confirmed",
+        "label": "確認済み",
+        "description": "開催日として確認済みです"
+      },
+      "date_candidates": [],
+      "hints": [
+        [
+          7,
+          18
+        ],
+        [
+          7,
+          19
+        ]
+      ],
+      "jun": {
+        "7": "中旬"
+      },
+      "description": "深川ギャザリアセンタープラザで開かれる木場一・六町会主催の盆踊り大会。",
+      "detail": "2026年告知確認。掲載記事の開催概要で、開催日時: 2026年7月18日(土)・19日(日)18:00-20:30、会場: 深川ギャザリアセンタープラザ、主催: 木場一・六町会を確認。",
+      "source_urls": [
+        {
+          "label": "告知HPあり",
+          "url": "https://minamisuna1.com/38004/",
+          "kind": "web",
+          "count": 1
+        }
+      ],
+      "songs": [],
+      "public_status": "upcoming_confirmed",
+      "public_category": "upcoming",
+      "public_status_label": "今後開催",
+      "public_note": "2026年日程確認済み: 2026-07-18〜2026-07-19",
+      "recurrence_label": "2026年確認済み",
+      "recurrence_score": 0.95,
+      "recurrence_reasons": [
+        "2026年日付確認済み"
+      ],
+      "recurrence_cautions": [],
+      "edition_number": null,
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-07-18",
+        "2026-07-19"
+      ],
+      "display_tier": "confirmed"
+    },
+    {
+      "name": "東陽一丁目町会 盆踊り大会",
+      "name_confirmed": true,
+      "venue": "旧子供広場",
+      "area": "江東区",
+      "months": [
+        7
+      ],
+      "scale": null,
+      "access": "",
+      "address": "東京都江東区東陽1-19-6",
+      "lat": null,
+      "lng": null,
+      "date": "2026-07-25",
+      "date_end": "2026-07-26",
+      "status": "確認済み",
+      "date_confidence": {
+        "level": "confirmed",
+        "label": "確認済み",
+        "description": "開催日として確認済みです"
+      },
+      "date_candidates": [],
+      "hints": [
+        [
+          7,
+          25
+        ],
+        [
+          7,
+          26
+        ]
+      ],
+      "jun": {
+        "7": "下旬"
+      },
+      "description": "東陽一丁目町会による地域の盆踊り大会。",
+      "detail": "2026年告知確認。東陽1丁目町会公式の活動予定で、令和8年7月25日-26日の盆踊り大会を確認。時刻・会場は地域情報記事で、7月25日18:00-20:30、7月26日18:00-20:00、旧子供広場（東陽1-19-6）を確認。",
+      "source_urls": [
+        {
+          "label": "公式告知あり",
+          "url": "https://toyo1tyokai.1net.jp/schedule.html",
+          "kind": "official"
+        }
+      ],
+      "songs": [],
+      "public_status": "upcoming_confirmed",
+      "public_category": "upcoming",
+      "public_status_label": "今後開催",
+      "public_note": "2026年日程確認済み: 2026-07-25〜2026-07-26",
+      "recurrence_label": "2026年確認済み",
+      "recurrence_score": 0.95,
+      "recurrence_reasons": [
+        "2026年日付確認済み"
+      ],
+      "recurrence_cautions": [],
+      "edition_number": null,
+      "last_seen_year": null,
+      "last_seen_dates": [
+        "2026-07-25",
+        "2026-07-26"
+      ],
+      "display_tier": "confirmed"
+    }
+  ],
+  "removed_events": []
+}

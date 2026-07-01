@@ -1,0 +1,17 @@
+flowchart TD
+    A["レビュー候補JSON<br/>data/*review / data/*queue"] --> B["レビューコンソール<br/>http://127.0.0.1:8751/"]
+    B --> C{"内田さんの判断"}
+    C -->|1 採用| D["decisions.json<br/>decision=accept"]
+    C -->|2 却下| E["decisions.json<br/>decision=reject"]
+    C -->|3 保留| F["decisions.json<br/>decision=hold"]
+    C -->|4 要調査| G["decisions.json<br/>decision=needs_research"]
+    D --> H["エクスポート e<br/>exported_decisions.json / .md"]
+    E --> H
+    F --> H
+    G --> H
+    H --> I["ステージ適用 g<br/>staged/*_decisions.json"]
+    I --> J["おと、または個別applyが確認"]
+    J --> K{"本番反映する?"}
+    K -->|はい| L["個別applyスクリプト<br/>dry-run後に明示実行"]
+    K -->|いいえ| M["ローカルに保持"]
+    L --> N["Master RDB / 公開JSON / Notion等"]

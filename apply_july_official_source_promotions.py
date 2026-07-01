@@ -34,6 +34,11 @@ PROMOTIONS = [
         "source_url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
         "reason": "品川区公式ページで、2026年7月25日〜26日の天妙国寺境内の盆踊りを確認。既存URLの source_kind を公式扱いへ補正。",
     },
+    {
+        "event_name": "すみだ河内音頭 小盆踊り",
+        "source_url": "https://www.kinshicho-kawachiondo.jp/archives/1067",
+        "reason": "すみだ錦糸町河内音頭大盆踊り公式サイトで、2026年5月16日開催と本所地域プラザ BIG SHIP 多目的ホールを確認。既存URLの source_kind を公式扱いへ補正。",
+    },
 ]
 
 

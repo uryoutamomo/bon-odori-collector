@@ -1,8 +1,14 @@
-import unittest
 import tempfile
+import unittest
+import os
 from pathlib import Path
 
-from guard_public_events_sync import append_github_summary, classify_rows, guard_decision
+from guard_public_events_sync import (
+    append_github_summary,
+    classify_rows,
+    flow_artifact_warnings,
+    guard_decision,
+)
 
 
 class PublicEventsSyncGuardTest(unittest.TestCase):
@@ -55,6 +61,41 @@ class PublicEventsSyncGuardTest(unittest.TestCase):
 
             self.assertEqual(result, str(summary))
             self.assertIn("status: pass", summary.read_text(encoding="utf-8"))
+
+    def test_flow_artifact_warnings_when_master_is_newer_than_review_outputs(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp = Path(tmp)
+            master = tmp / "bon_odori_master.sqlite"
+            gap = tmp / "publication_gap_review.json"
+            public_events = tmp / "events_public.json"
+            master.write_text("db", encoding="utf-8")
+            gap.write_text("{}", encoding="utf-8")
+            public_events.write_text("[]", encoding="utf-8")
+            os.utime(gap, (100, 100))
+            os.utime(public_events, (100, 100))
+            os.utime(master, (200, 200))
+
+            warnings = flow_artifact_warnings(master, gap, public_events)
+
+            self.assertIn("master_rdb_newer_than_publication_gap_review", warnings)
+            self.assertIn("master_rdb_newer_than_public_export", warnings)
+
+    def test_flow_artifact_warnings_clear_when_review_outputs_are_current(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp = Path(tmp)
+            master = tmp / "bon_odori_master.sqlite"
+            gap = tmp / "publication_gap_review.json"
+            public_events = tmp / "events_public.json"
+            master.write_text("db", encoding="utf-8")
+            gap.write_text("{}", encoding="utf-8")
+            public_events.write_text("[]", encoding="utf-8")
+            os.utime(master, (100, 100))
+            os.utime(gap, (200, 200))
+            os.utime(public_events, (200, 200))
+
+            warnings = flow_artifact_warnings(master, gap, public_events)
+
+            self.assertEqual(warnings, [])
 
     def test_expired_historical_slide_downgrade_is_safe_action(self):
         collector_rows = [

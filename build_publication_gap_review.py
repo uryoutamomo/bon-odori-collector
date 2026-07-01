@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import json
+import sqlite3
 from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
@@ -13,6 +14,32 @@ from typing import Any
 ROOT = Path(__file__).resolve().parent
 SITE_ROOT = ROOT.parent / "bon-odori-site"
 OUT_PATH = ROOT / "data" / "publication_gap_review.json"
+MASTER_DB_PATH = ROOT / "data" / "bon_odori_master.sqlite"
+TOKYO23_WARDS = {
+    "千代田区",
+    "中央区",
+    "港区",
+    "新宿区",
+    "文京区",
+    "台東区",
+    "墨田区",
+    "江東区",
+    "品川区",
+    "目黒区",
+    "大田区",
+    "世田谷区",
+    "渋谷区",
+    "中野区",
+    "杉並区",
+    "豊島区",
+    "北区",
+    "荒川区",
+    "板橋区",
+    "練馬区",
+    "足立区",
+    "葛飾区",
+    "江戸川区",
+}
 
 
 def read_json(path: Path, default: Any) -> Any:
@@ -61,6 +88,121 @@ def song_map(master: dict[str, Any]) -> dict[str, dict[str, Any]]:
     }
 
 
+def public_event_name_set(public_events: list[Any]) -> set[str]:
+    return {
+        str(event.get("name") or "").strip()
+        for event in public_events
+        if isinstance(event, dict) and str(event.get("name") or "").strip()
+    }
+
+
+def has_table_column(conn: sqlite3.Connection, table_name: str, column_name: str) -> bool:
+    return any(row[1] == column_name for row in conn.execute(f"PRAGMA table_info({table_name})"))
+
+
+def event_publication_blockers(public_events: list[Any]) -> tuple[list[dict[str, Any]], dict[str, int]]:
+    if not MASTER_DB_PATH.exists():
+        return [], {}
+
+    public_names = public_event_name_set(public_events)
+    rows: list[dict[str, Any]] = []
+    reason_counts: Counter[str] = Counter()
+
+    with sqlite3.connect(MASTER_DB_PATH) as conn:
+        conn.row_factory = sqlite3.Row
+        series_status_filter = "AND s.status = 'active'" if has_table_column(conn, "event_series", "status") else ""
+        query = f"""
+        SELECT
+          o.occurrence_id,
+          o.display_name,
+          o.event_year,
+          o.date_start,
+          o.date_end,
+          o.date_status,
+          o.lifecycle_status,
+          o.confidence,
+          o.source_kind,
+          o.source_url AS occurrence_source_url,
+          o.detail,
+          s.canonical_name AS series_name,
+          s.source_url AS series_source_url,
+          o.venue_id,
+          v.canonical_name AS venue_name,
+          v.area,
+          v.review_status AS venue_review_status
+        FROM event_occurrences o
+        JOIN event_series s ON s.series_id = o.series_id
+        LEFT JOIN venues v ON v.venue_id = o.venue_id
+        WHERE o.origin = 'curated'
+          AND o.event_year >= 2026
+          {series_status_filter}
+          AND o.lifecycle_status NOT IN ('merged', 'duplicate', 'rejected', 'superseded_by_curated')
+          AND (
+            COALESCE(o.source_url, '') != ''
+            OR COALESCE(s.source_url, '') != ''
+            OR COALESCE(o.detail, '') LIKE '%http%'
+          )
+        """
+        db_rows = conn.execute(query).fetchall()
+
+    for row in db_rows:
+        source_url = row["occurrence_source_url"] or row["series_source_url"] or ""
+        reason_codes: list[str] = []
+        if not row["venue_id"]:
+            reason_codes.append("missing_venue_id")
+        elif row["venue_review_status"] != "active":
+            reason_codes.append("venue_not_active")
+        elif not row["area"]:
+            reason_codes.append("venue_missing_area")
+        elif row["area"] not in TOKYO23_WARDS:
+            continue
+        if not row["date_start"]:
+            reason_codes.append("missing_date_start")
+
+        if not reason_codes:
+            continue
+
+        for code in reason_codes:
+            reason_counts[code] += 1
+        name = str(row["display_name"] or row["series_name"] or "").strip()
+        priority = "P0" if "missing_venue_id" in reason_codes else "P1"
+        rows.append(
+            {
+                "gap_id": f"event_publication_blocked:{row['occurrence_id']}",
+                "gap_type": "根拠ありイベントが公開整備待ち",
+                "domain": "イベント",
+                "term": name,
+                "event_name": name,
+                "series_name": row["series_name"],
+                "occurrence_id": row["occurrence_id"],
+                "event_year": row["event_year"],
+                "venue": row["venue_name"] or "",
+                "area": row["area"] or "",
+                "date_start": row["date_start"] or "",
+                "date_end": row["date_end"] or "",
+                "date_status": row["date_status"] or "",
+                "lifecycle_status": row["lifecycle_status"] or "",
+                "confidence": row["confidence"] or "",
+                "source_kind": row["source_kind"] or "",
+                "source_url": source_url,
+                "public_name_present": name in public_names,
+                "reason_codes": reason_codes,
+                "recommended_action": "review_and_apply_event_occurrence_to_master_rdb",
+                "priority_label": priority,
+                "reason": (
+                    "master RDBに根拠URLはありますが、公開エクスポートに必要な"
+                    "会場または日程が未整備です。レビュー済み根拠として扱うなら、"
+                    "会場行・occurrenceの日程/会場/statusをRDBへ反映してから公開JSONを再生成します。"
+                ),
+                "source_file": "data/bon_odori_master.sqlite",
+                "public_file": "bon-odori-site/data/events_public.json",
+            }
+        )
+
+    rows.sort(key=lambda item: (item["priority_label"], item["event_year"], item["event_name"]))
+    return rows, dict(reason_counts)
+
+
 def build_rows() -> dict[str, Any]:
     glossary_review = read_json(ROOT / "data" / "glossary_v2_oto123_review_result.json", {})
     weekly_terms = read_json(ROOT / "data" / "weekly_harvest_human13_apply_result.json", {})
@@ -69,6 +211,8 @@ def build_rows() -> dict[str, Any]:
     occurrences = read_json(ROOT / "data" / "public" / "event_song_occurrences_public.json", {})
     public_glossary = read_json(SITE_ROOT / "data" / "glossary_public.json", {})
     song_priors = read_json(SITE_ROOT / "data" / "song_priors.json", {})
+    public_events = read_json(SITE_ROOT / "data" / "events_public.json", [])
+    event_blockers, event_blocker_reason_counts = event_publication_blockers(public_events)
 
     public_all_terms = public_terms(public_glossary)
     public_song_terms = public_terms(public_glossary, category="曲名")
@@ -202,6 +346,8 @@ def build_rows() -> dict[str, Any]:
             }
         )
 
+    rows.extend(event_blockers)
+
     summary = {
         "accepted_glossary_v2_count": len(accepted_terms),
         "weekly_applied_term_count": len(weekly_applied_terms),
@@ -218,6 +364,8 @@ def build_rows() -> dict[str, Any]:
         "weekly_updated_songs_missing_public": len(set(weekly_updated_song_names) - set(public_song_terms)),
         "public_occurrence_songs_not_in_master": len(set(occurrence_unique) - set(master_names)),
         "song_priors_not_public_ready": len(set(priors_songs) - set(public_ready_song_names)),
+        "event_publication_blocked_count": len(event_blockers),
+        "event_publication_blocked_by_reason": event_blocker_reason_counts,
     }
 
     return {

@@ -1,0 +1,134 @@
+flowchart LR
+  start([Start: 新しいイベント根拠を発見])
+
+  subgraph collect[1. Evidence Collection]
+    source_type{根拠の種類}
+    official[公式HP・自治体・主催ページ]
+    registered_social[登録済み公式/主催SNS投稿]
+    candidate_social[未登録SNS・町会らしき投稿]
+    youtube[YouTube・動画・過去実績]
+    weak[まとめサイト・個人ブログ・弱い投稿]
+
+    source_type --> official
+    source_type --> registered_social
+    source_type --> candidate_social
+    source_type --> youtube
+    source_type --> weak
+  end
+
+  start --> source_type
+
+  candidate_social --> social_review[公式/主催SNS台帳レビュー]
+  social_review --> social_gate{台帳登録できるか}
+  social_gate -- yes --> registered_social
+  social_gate -- no --> hold_social[[Hold: candidate_official_social のまま確定根拠にしない]]
+
+  youtube --> historical_only[[Historical reference only: 未来/今年の確定日には使わない]]
+  weak --> weak_review[補助根拠として個別レビュー]
+
+  official --> evidence_record[根拠URL・本文・取得日時を記録]
+  registered_social --> post_body_review[投稿本文レビュー: イベント名/日付/会場/時間]
+  post_body_review --> post_body_gate{本文に公開必要情報が揃うか}
+  post_body_gate -- yes --> evidence_record
+  post_body_gate -- no --> hold_social_post[[Hold: 投稿本文不足。公開確定根拠にしない]]
+  weak_review --> weak_gate{公式相当として扱えるか}
+  weak_gate -- no --> hold_weak[[Hold: 調査メモのみ]]
+  weak_gate -- yes --> evidence_record
+
+  subgraph identify[2. Identity And Scope Review]
+    event_identity[イベント名・series_keyを確認]
+    year_identity[event_year と開催回を確認]
+    scope_gate{東京23区公開対象か}
+    duplicate_gate{既存series/occurrenceと重複しないか}
+    duplicate_merge[既存series/occurrenceへ統合]
+    new_series[新規series/occurrence候補]
+  end
+
+  evidence_record --> event_identity --> year_identity --> scope_gate
+  scope_gate -- no --> outside_scope[[Hold: 23区公開対象外。全国/参考データへ分離]]
+  scope_gate -- yes --> duplicate_gate
+  duplicate_gate -- duplicate --> duplicate_merge
+  duplicate_gate -- new --> new_series
+
+  subgraph venue[3. Venue Review]
+    venue_found{会場は既存venuesにあるか}
+    venue_match[既存venue_idを選定]
+    venue_create_review[新規会場レビュー]
+    venue_fields[会場名/区/address/access/scale/source_urlを確認]
+    venue_active_gate{venues.review_status == active か}
+    venue_ready[venue_id ready]
+  end
+
+  duplicate_merge --> venue_found
+  new_series --> venue_found
+  venue_found -- yes --> venue_match --> venue_active_gate
+  venue_found -- no --> venue_create_review --> venue_fields --> venue_active_gate
+  venue_active_gate -- yes --> venue_ready
+  venue_active_gate -- no --> hold_venue[[Hold: 会場未レビュー。missing_venue_id / venue_not_active]]
+
+  subgraph date[4. Date And Status Review]
+    date_in_source{根拠本文に2026日程があるか}
+    date_parse[date_start/date_end を抽出]
+    time_note[時間は detail/public note に保存]
+    date_status_confirmed[date_status=confirmed]
+    lifecycle_publishable[lifecycle_statusを公開可能状態へ]
+    date_unknown[date_start空のまま。日程未確認扱い]
+  end
+
+  venue_ready --> date_in_source
+  date_in_source -- yes --> date_parse --> time_note --> date_status_confirmed --> lifecycle_publishable
+  date_in_source -- no --> date_unknown
+
+  subgraph apply[5. Reviewed Master RDB Apply]
+    dry_run[専用scriptでdry-run/report生成]
+    human_review[Koto/内田さんレビュー]
+    apply_gate{apply承認と確認文字列あり?}
+    rdb_apply[master RDB apply]
+    backup[backup/reportを保存]
+  end
+
+  lifecycle_publishable --> dry_run
+  date_unknown --> dry_run
+  dry_run --> human_review --> apply_gate
+  apply_gate -- no --> hold_apply[[Stop: applyしない]]
+  apply_gate -- yes --> rdb_apply --> backup
+
+  subgraph gap[6. Publication Gap Review]
+    gap_build[python3 build_publication_gap_review.py]
+    gap_json[data/publication_gap_review.json]
+    blocker_gate{イベントblockerが残るか}
+    p0_gate{P0: missing_venue_id など}
+    p1_gate{P1: missing_date_start など}
+  end
+
+  backup --> gap_build --> gap_json --> blocker_gate
+  blocker_gate -- no --> export_step
+  blocker_gate -- yes --> p0_gate
+  p0_gate -- yes --> hold_p0[[Stop: 公開同期禁止。会場/occurrenceを修正]]
+  p0_gate -- no --> p1_gate
+  p1_gate -- yes --> review_p1[[Review: 未確認として出すか、日程反映してから出すか判断]]
+
+  subgraph export[7. Public Export And Site Sync]
+    export_step[python3 export_public_events.py]
+    postprocessors[public postprocessors]
+    sync_guard[python3 guard_public_events_sync.py]
+    guard_gate{guard status pass?}
+    site_sync[collector -> bon-odori-site sync]
+    site_diff[site diff review]
+  end
+
+  review_p1 --> export_step
+  export_step --> postprocessors --> sync_guard --> guard_gate
+  guard_gate -- no --> hold_guard[[Stop: syncしない。差分をレビュー]]
+  guard_gate -- yes --> site_sync --> site_diff
+
+  subgraph deploy[8. Deploy Approval]
+    deploy_gate{内田さんが公開反映を明示承認?}
+    commit_push[site repo commit/push]
+    actions[GitHub Actions Deploy static site]
+    verify[公開URLで確認]
+  end
+
+  site_diff --> deploy_gate
+  deploy_gate -- no --> local_done[[Done: ローカル/PR準備まで]]
+  deploy_gate -- yes --> commit_push --> actions --> verify --> done([Done])
