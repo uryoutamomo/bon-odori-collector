@@ -417,6 +417,30 @@
     ]
   },
   {
+    "name": "入船三丁目町会納涼盆踊り",
+    "venue": "入船三丁目町会周辺（会場未確認）",
+    "area": "中央区",
+    "date": null,
+    "songs": [
+      {
+        "name": "バハマ・ママ",
+        "confidence": "hint"
+      },
+      {
+        "name": "大東京音頭",
+        "confidence": "hint"
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "hint"
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "hint"
+      }
+    ]
+  },
+  {
     "name": "イベント名未確認（晴海ふ頭公園）",
     "venue": "晴海ふ頭公園",
     "area": "中央区",

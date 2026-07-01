@@ -1100,6 +1100,106 @@
     "prediction_confidence": "medium"
   },
   {
+    "name": "入船三丁目町会納涼盆踊り",
+    "name_confirmed": true,
+    "venue": "入船三丁目町会周辺（会場未確認）",
+    "area": "中央区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": "東京メトロ有楽町線 新富町駅、JR・東京メトロ日比谷線 八丁堀駅から徒歩圏内",
+    "address": "東京都中央区入船三丁目付近",
+    "lat": null,
+    "lng": null,
+    "date": null,
+    "date_end": null,
+    "status": "未確認",
+    "date_confidence": {
+      "level": "unknown",
+      "label": "未確認",
+      "description": "開催日はまだ確認できていません"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        15
+      ]
+    ],
+    "jun": {
+      "8": "中旬"
+    },
+    "description": "入船三丁目町会の納涼盆踊り。2024年の動画実績をもとに、今年未確認の候補として掲載しています。",
+    "detail": "2024年に入船三丁目町会納涼盆踊りの開催実績あり。和太鼓お祭りチャンネルのYouTube動画群で、東京音頭、バハマ・ママ、これがお江戸の盆ダンス、チャンチキおけさ、大東京音頭、少年八木節、ダンシング・ヒーロー、炭坑節、きよしの数え唄、ベイサイドブギ、銀座カンカン娘、きよしのズンドコ節、どだればちサンバを確認。ただし動画から具体開催日と会場名は確認できないため、2026年日程は未確認。",
+    "source_urls": [],
+    "songs": [
+      {
+        "name": "バハマ・ママ",
+        "confidence": "hint"
+      },
+      {
+        "name": "大東京音頭",
+        "confidence": "hint"
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "hint"
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "hint"
+      }
+    ],
+    "public_status": "date_unknown",
+    "public_category": "date_unknown",
+    "public_status_label": "日程未確認",
+    "public_note": "今年の日程は未確認です。",
+    "recurrence_label": "日程未確認",
+    "recurrence_score": 0.25,
+    "recurrence_reasons": [
+      "月ヒントあり",
+      "日付ヒントあり",
+      "未確認"
+    ],
+    "recurrence_cautions": [
+      "2026年日程なし"
+    ],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [],
+    "display_tier": "season_hint",
+    "season_hint": {
+      "display_tier": "season_hint",
+      "target_year": 2026,
+      "months": [
+        8
+      ],
+      "jun": {
+        "8": "中旬"
+      },
+      "hints": [
+        [
+          8,
+          15
+        ]
+      ],
+      "label": "8月中旬",
+      "confidence": "lowest",
+      "basis": "例年の開催月・旬ヒント",
+      "has_jun_hint": true,
+      "has_sort_hint": true
+    },
+    "season_months": [
+      8
+    ],
+    "season_jun": {
+      "8": "中旬"
+    },
+    "season_hint_label": "8月中旬",
+    "season_confidence": "lowest"
+  },
+  {
     "name": "小網神社の盆踊り（名称推定）",
     "name_confirmed": true,
     "venue": "小網神社",
