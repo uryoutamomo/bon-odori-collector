@@ -1,0 +1,2568 @@
+{
+  "generated_by": "audit_hidden_historical_public_candidates.py",
+  "generated_at": "2026-07-01T14:12:43.543900+00:00",
+  "sources": {
+    "db": "/Users/ryotauchida/bon-odori-collector/data/bon_odori_master.sqlite",
+    "public_events": "/Users/ryotauchida/bon-odori-collector/data/public/events_public.json",
+    "overrides": "/Users/ryotauchida/bon-odori-collector/data/public_event_overrides.json"
+  },
+  "summary": {
+    "candidate_count": 63,
+    "recommendation_counts": {
+      "already_public_check_prediction_fields": 54,
+      "fix_blockers_before_public": 8,
+      "insufficient_historical_evidence": 1
+    },
+    "hidden_candidate_count": 9,
+    "skipped_by_override_count": 1
+  },
+  "candidates": [
+    {
+      "event_name": "佃島の盆踊り",
+      "venue": null,
+      "area": null,
+      "occurrence_id": "occ_b0ac40639f5d2d5c",
+      "series_id": "ser_7573dc4558c4ee1d",
+      "date_start": "2026-07-13",
+      "date_status": "predicted",
+      "lifecycle_status": "未確認",
+      "public_key": "佃島の盆踊り␟",
+      "in_public_json": false,
+      "skipped_by_override": false,
+      "public_eligible": false,
+      "blockers": [
+        "outside_tokyo23_or_missing_area",
+        "missing_venue",
+        "venue_not_active"
+      ],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_b0ac40639f5d2d5c",
+          "date_start": "2026-07-13",
+          "date_end": "2026-07-15",
+          "date_type": "predicted",
+          "confidence": "unknown",
+          "basis": "notion_events"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "fix_blockers_before_public"
+    },
+    {
+      "event_name": "第44回 足寄ふるさと盆踊り・両国花火大会",
+      "venue": "足寄町民センター前グラウンド・駐車場",
+      "area": "北海道足寄郡足寄町",
+      "occurrence_id": "occ_e28debd0dbf4512a",
+      "series_id": "ser_4474a142d5aa220b",
+      "date_start": "2026-08-15",
+      "date_status": "confirmed",
+      "lifecycle_status": "published",
+      "public_key": "第44回 足寄ふるさと盆踊り・両国花火大会␟足寄町民センター前グラウンド・駐車場",
+      "in_public_json": false,
+      "skipped_by_override": false,
+      "public_eligible": false,
+      "blockers": [
+        "outside_tokyo23_or_missing_area"
+      ],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_e28debd0dbf4512a",
+          "date_start": "2026-08-15",
+          "date_end": "",
+          "date_type": "confirmed",
+          "confidence": "confirmed",
+          "basis": "notion_events"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "fix_blockers_before_public"
+    },
+    {
+      "event_name": "ジューンフェスタ2026 盆踊り（国立市旭通り商店会）",
+      "venue": "国立旭通り 弥生ビル東側",
+      "area": "国立市",
+      "occurrence_id": "occ_d4c1cf913d2770f7",
+      "series_id": "ser_a08d0e5faea4e9e2",
+      "date_start": "2026-06-07",
+      "date_status": "ended",
+      "lifecycle_status": "published",
+      "public_key": "ジューンフェスタ2026 盆踊り（国立市旭通り商店会）␟国立旭通り 弥生ビル東側",
+      "in_public_json": false,
+      "skipped_by_override": false,
+      "public_eligible": false,
+      "blockers": [
+        "outside_tokyo23_or_missing_area"
+      ],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_d4c1cf913d2770f7",
+          "date_start": "2026-06-07",
+          "date_end": "",
+          "date_type": "ended",
+          "confidence": "confirmed",
+          "basis": "notion_events"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "fix_blockers_before_public"
+    },
+    {
+      "event_name": "まるっと秋田博 西馬音内盆踊り",
+      "venue": "エリアなかいち（秋田市にぎわい交流館AU周辺）",
+      "area": "秋田市",
+      "occurrence_id": "occ_c5f42e44f362ec59",
+      "series_id": "ser_b58a0401de6449c2",
+      "date_start": "2026-05-30",
+      "date_status": "ended",
+      "lifecycle_status": "published",
+      "public_key": "まるっと秋田博 西馬音内盆踊り␟エリアなかいち（秋田市にぎわい交流館AU周辺）",
+      "in_public_json": false,
+      "skipped_by_override": false,
+      "public_eligible": false,
+      "blockers": [
+        "outside_tokyo23_or_missing_area"
+      ],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_c5f42e44f362ec59",
+          "date_start": "2026-05-30",
+          "date_end": "",
+          "date_type": "ended",
+          "confidence": "confirmed",
+          "basis": "notion_events"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "fix_blockers_before_public"
+    },
+    {
+      "event_name": "ヘリテージ・アドベンチャラー寄港 西馬音内盆踊り",
+      "venue": "秋田港フェリーターミナル（中島埠頭）",
+      "area": "秋田市",
+      "occurrence_id": "occ_8ff7f95d48b4022e",
+      "series_id": "ser_7ba7787df736339b",
+      "date_start": "2026-06-07",
+      "date_status": "ended",
+      "lifecycle_status": "published",
+      "public_key": "ヘリテージ・アドベンチャラー寄港 西馬音内盆踊り␟秋田港フェリーターミナル（中島埠頭）",
+      "in_public_json": false,
+      "skipped_by_override": false,
+      "public_eligible": false,
+      "blockers": [
+        "outside_tokyo23_or_missing_area"
+      ],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_8ff7f95d48b4022e",
+          "date_start": "2026-06-07",
+          "date_end": "",
+          "date_type": "ended",
+          "confidence": "confirmed",
+          "basis": "notion_events"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "fix_blockers_before_public"
+    },
+    {
+      "event_name": "笠間納涼盆踊り花火大会2026",
+      "venue": "笠間大池公園（笠間ポレポレシティ前）",
+      "area": "笠間市",
+      "occurrence_id": "occ_8e8f8c2c35a150bf",
+      "series_id": "ser_c278289b6b30bd8f",
+      "date_start": "2026-08-08",
+      "date_status": "confirmed",
+      "lifecycle_status": "published",
+      "public_key": "笠間納涼盆踊り花火大会2026␟笠間大池公園（笠間ポレポレシティ前）",
+      "in_public_json": false,
+      "skipped_by_override": false,
+      "public_eligible": false,
+      "blockers": [
+        "outside_tokyo23_or_missing_area"
+      ],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_8e8f8c2c35a150bf",
+          "date_start": "2026-08-08",
+          "date_end": "",
+          "date_type": "confirmed",
+          "confidence": "confirmed",
+          "basis": "notion_events"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "fix_blockers_before_public"
+    },
+    {
+      "event_name": "藤沢七夕まつり",
+      "venue": "辻堂神台公園",
+      "area": "藤沢市",
+      "occurrence_id": "occ_6ff071589e85371d",
+      "series_id": "ser_aef9876fedc28c45",
+      "date_start": "2026-07-04",
+      "date_status": "confirmed",
+      "lifecycle_status": "published",
+      "public_key": "藤沢七夕まつり␟辻堂神台公園",
+      "in_public_json": false,
+      "skipped_by_override": false,
+      "public_eligible": false,
+      "blockers": [
+        "outside_tokyo23_or_missing_area"
+      ],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_6ff071589e85371d",
+          "date_start": "2026-07-04",
+          "date_end": "",
+          "date_type": "confirmed",
+          "confidence": "confirmed",
+          "basis": "notion_events"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "fix_blockers_before_public"
+    },
+    {
+      "event_name": "藤沢七夕まつり（DJ盆踊り大会）",
+      "venue": "辻堂神台公園",
+      "area": "藤沢市",
+      "occurrence_id": "occ_16f296f06c6dfa6a",
+      "series_id": "ser_67279a1626b2dbb8",
+      "date_start": "2026-07-04",
+      "date_status": "predicted",
+      "lifecycle_status": "未確認",
+      "public_key": "藤沢七夕まつり（DJ盆踊り大会）␟辻堂神台公園",
+      "in_public_json": false,
+      "skipped_by_override": false,
+      "public_eligible": false,
+      "blockers": [
+        "outside_tokyo23_or_missing_area"
+      ],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_16f296f06c6dfa6a",
+          "date_start": "2026-07-04",
+          "date_end": "",
+          "date_type": "predicted",
+          "confidence": "unknown",
+          "basis": "notion_events"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "fix_blockers_before_public"
+    },
+    {
+      "event_name": "月島第二児童公園 盆踊り",
+      "venue": "月島第二児童公園",
+      "area": "中央区",
+      "occurrence_id": "occ_e5ea459ea88de16c",
+      "series_id": "ser_831393e548a7e944",
+      "date_start": "",
+      "date_status": "unknown",
+      "lifecycle_status": "未確認",
+      "public_key": "月島第二児童公園 盆踊り␟月島第二児童公園",
+      "in_public_json": false,
+      "skipped_by_override": true,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 0,
+      "evidence_reasons": [],
+      "historical_dates": [],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "insufficient_historical_evidence"
+    },
+    {
+      "event_name": "みたままつり 納涼民踊のつどい",
+      "venue": "靖国神社",
+      "area": "千代田区",
+      "occurrence_id": "occ_2704892d424f61c1",
+      "series_id": "ser_fcafc8f922526308",
+      "date_start": "2026-07-13",
+      "date_status": "confirmed",
+      "lifecycle_status": "published",
+      "public_key": "みたままつり 納涼民踊のつどい␟靖国神社",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 11,
+      "evidence_reasons": [
+        "historical_dates:2023,2024,2025,2026",
+        "multiple_historical_years",
+        "historical_reference_date",
+        "predicted_occurrence_date",
+        "promotion_confidence:high",
+        "external_or_song_evidence"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_2704892d424f61c1",
+          "date_start": "2023-07-13",
+          "date_end": "2023-07-15",
+          "date_type": "historical_reference",
+          "confidence": "high",
+          "basis": {
+            "candidate_id": "histprom_ecd6fc8cd1e68a2d",
+            "does_not_confirm_target_year": true,
+            "event_name": "みたままつり 納涼民踊のつどい",
+            "evidence_url_count": 279,
+            "exact_dates": {
+              "2023": [
+                "2023-07-13",
+                "2023-07-15"
+              ],
+              "2024": [
+                "2024-07-15"
+              ],
+              "2025": [
+                "2025-07-14"
+              ]
+            },
+            "historical_venue_name": "靖国神社",
+            "historical_year": 2023,
+            "historical_years": [
+              2023,
+              2024,
+              2025
+            ],
+            "source": "reviewed_historical_promotion_candidate",
+            "target_occurrence_id": "occ_2704892d424f61c1",
+            "target_occurrence_year": 2026
+          }
+        },
+        {
+          "occurrence_id": "occ_2704892d424f61c1",
+          "date_start": "2024-07-15",
+          "date_end": null,
+          "date_type": "historical_reference",
+          "confidence": "high",
+          "basis": {
+            "candidate_id": "histprom_ecd6fc8cd1e68a2d",
+            "does_not_confirm_target_year": true,
+            "event_name": "みたままつり 納涼民踊のつどい",
+            "evidence_url_count": 279,
+            "exact_dates": {
+              "2023": [
+                "2023-07-13",
+                "2023-07-15"
+              ],
+              "2024": [
+                "2024-07-15"
+              ],
+              "2025": [
+                "2025-07-14"
+              ]
+            },
+            "historical_venue_name": "靖国神社",
+            "historical_year": 2024,
+            "historical_years": [
+              2023,
+              2024,
+              2025
+            ],
+            "source": "reviewed_historical_promotion_candidate",
+            "target_occurrence_id": "occ_2704892d424f61c1",
+            "target_occurrence_year": 2026
+          }
+        },
+        {
+          "occurrence_id": "occ_2704892d424f61c1",
+          "date_start": "2025-07-14",
+          "date_end": null,
+          "date_type": "historical_reference",
+          "confidence": "high",
+          "basis": {
+            "candidate_id": "histprom_ecd6fc8cd1e68a2d",
+            "does_not_confirm_target_year": true,
+            "event_name": "みたままつり 納涼民踊のつどい",
+            "evidence_url_count": 279,
+            "exact_dates": {
+              "2023": [
+                "2023-07-13",
+                "2023-07-15"
+              ],
+              "2024": [
+                "2024-07-15"
+              ],
+              "2025": [
+                "2025-07-14"
+              ]
+            },
+            "historical_venue_name": "靖国神社",
+            "historical_year": 2025,
+            "historical_years": [
+              2023,
+              2024,
+              2025
+            ],
+            "source": "reviewed_historical_promotion_candidate",
+            "target_occurrence_id": "occ_2704892d424f61c1",
+            "target_occurrence_year": 2026
+          }
+        },
+        {
+          "occurrence_id": "occ_2704892d424f61c1",
+          "date_start": "2026-07-13",
+          "date_end": "2026-07-16",
+          "date_type": "confirmed",
+          "confidence": "confirmed",
+          "basis": "notion_events"
+        }
+      ],
+      "predicted_dates": [
+        {
+          "target_occurrence_id": "occ_2704892d424f61c1",
+          "date_start": "2026-07-14",
+          "date_end": "2026-07-16",
+          "basis_type": "date_based",
+          "rule_type": "date_near",
+          "basis": "7月14日前後",
+          "confidence": "low",
+          "score": 0.58,
+          "application_status": "superseded_by_curated"
+        }
+      ],
+      "historical_promotion_candidates": [
+        {
+          "target_occurrence_id": "occ_2704892d424f61c1",
+          "historical_years_json": "[2023, 2024, 2025]",
+          "exact_dates_json": "{\"2023\": [\"2023-07-13\", \"2023-07-15\"], \"2024\": [\"2024-07-15\"], \"2025\": [\"2025-07-14\"]}",
+          "prediction_json": "[{\"basis\": \"7月14日前後\", \"confidence\": \"low\", \"event_name\": \"みたままつり 納涼民踊のつどい\", \"evidence_rows\": [{\"confidence\": \"medium\", \"date_end\": \"2023-07-15\", \"date_start\": \"2023-07-13\", \"duration_days\": 3, \"source_video_count\": 4, \"weekday_start\": \"木\", \"year\": 2023}, {\"confidence\": \"medium\", \"date_end\": \"2024-07-15\", \"date_start\": \"2024-07-15\", \"duration_days\": 1, \"source_video_count\": 4, \"weekday_start\": \"月\", \"year\": 2024}], \"evidence_years\": [2023, 2024], \"predicted_date_end\": \"2026-07-16\", \"predicted_date_start\": \"2026-07-14\", \"rule_type\": \"date_near\", \"score\": 0.58, \"series_key\": \"b727adc26276\", \"source\": \"event_date_predictions\", \"venue\": \"靖国神社\"}]",
+          "evidence_url_count": 279,
+          "song_title_count": 271,
+          "match_score": 7,
+          "promotion_confidence": "high",
+          "auto_promote_eligible": 1,
+          "recommended_action": "auto_promote_historical_reference",
+          "notes": "Promote as historical evidence only; do not copy historical dates to 2026.",
+          "historical_years": [
+            2023,
+            2024,
+            2025
+          ],
+          "exact_dates": {
+            "2023": [
+              "2023-07-13",
+              "2023-07-15"
+            ],
+            "2024": [
+              "2024-07-15"
+            ],
+            "2025": [
+              "2025-07-14"
+            ]
+          },
+          "prediction": [
+            {
+              "basis": "7月14日前後",
+              "confidence": "low",
+              "event_name": "みたままつり 納涼民踊のつどい",
+              "evidence_rows": [
+                {
+                  "confidence": "medium",
+                  "date_end": "2023-07-15",
+                  "date_start": "2023-07-13",
+                  "duration_days": 3,
+                  "source_video_count": 4,
+                  "weekday_start": "木",
+                  "year": 2023
+                },
+                {
+                  "confidence": "medium",
+                  "date_end": "2024-07-15",
+                  "date_start": "2024-07-15",
+                  "duration_days": 1,
+                  "source_video_count": 4,
+                  "weekday_start": "月",
+                  "year": 2024
+                }
+              ],
+              "evidence_years": [
+                2023,
+                2024
+              ],
+              "predicted_date_end": "2026-07-16",
+              "predicted_date_start": "2026-07-14",
+              "rule_type": "date_near",
+              "score": 0.58,
+              "series_key": "b727adc26276",
+              "source": "event_date_predictions",
+              "venue": "靖国神社"
+            }
+          ]
+        }
+      ],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "山王音頭と民踊大会",
+      "venue": "山王パークタワー公開空地",
+      "area": "千代田区",
+      "occurrence_id": "occ_b5a16804f0be9815",
+      "series_id": "ser_89120beee0d531cf",
+      "date_start": "2026-06-13",
+      "date_status": "ended",
+      "lifecycle_status": "published",
+      "public_key": "山王音頭と民踊大会␟山王パークタワー公開空地",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 11,
+      "evidence_reasons": [
+        "historical_dates:2023,2024,2025,2026",
+        "multiple_historical_years",
+        "historical_reference_date",
+        "predicted_occurrence_date",
+        "promotion_confidence:high",
+        "external_or_song_evidence"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_b5a16804f0be9815",
+          "date_start": "2023-06-13",
+          "date_end": null,
+          "date_type": "historical_reference",
+          "confidence": "high",
+          "basis": {
+            "candidate_id": "histprom_ff87fea4662efda4",
+            "does_not_confirm_target_year": true,
+            "event_name": "山王音頭と民踊大会",
+            "evidence_url_count": 57,
+            "exact_dates": {
+              "2023": [
+                "2023-06-13"
+              ],
+              "2024": [
+                "2024-06-13",
+                "2024-06-15"
+              ],
+              "2025": [
+                "2025-06-13",
+                "2025-06-15"
+              ]
+            },
+            "historical_venue_name": "山王パークタワー公開空地",
+            "historical_year": 2023,
+            "historical_years": [
+              2023,
+              2024,
+              2025
+            ],
+            "source": "reviewed_historical_promotion_candidate",
+            "target_occurrence_id": "occ_b5a16804f0be9815",
+            "target_occurrence_year": 2026
+          }
+        },
+        {
+          "occurrence_id": "occ_b5a16804f0be9815",
+          "date_start": "2024-06-13",
+          "date_end": "2024-06-15",
+          "date_type": "historical_reference",
+          "confidence": "high",
+          "basis": {
+            "candidate_id": "histprom_ff87fea4662efda4",
+            "does_not_confirm_target_year": true,
+            "event_name": "山王音頭と民踊大会",
+            "evidence_url_count": 57,
+            "exact_dates": {
+              "2023": [
+                "2023-06-13"
+              ],
+              "2024": [
+                "2024-06-13",
+                "2024-06-15"
+              ],
+              "2025": [
+                "2025-06-13",
+                "2025-06-15"
+              ]
+            },
+            "historical_venue_name": "山王パークタワー公開空地",
+            "historical_year": 2024,
+            "historical_years": [
+              2023,
+              2024,
+              2025
+            ],
+            "source": "reviewed_historical_promotion_candidate",
+            "target_occurrence_id": "occ_b5a16804f0be9815",
+            "target_occurrence_year": 2026
+          }
+        },
+        {
+          "occurrence_id": "occ_b5a16804f0be9815",
+          "date_start": "2025-06-13",
+          "date_end": "2025-06-15",
+          "date_type": "historical_reference",
+          "confidence": "high",
+          "basis": {
+            "candidate_id": "histprom_ff87fea4662efda4",
+            "does_not_confirm_target_year": true,
+            "event_name": "山王音頭と民踊大会",
+            "evidence_url_count": 57,
+            "exact_dates": {
+              "2023": [
+                "2023-06-13"
+              ],
+              "2024": [
+                "2024-06-13",
+                "2024-06-15"
+              ],
+              "2025": [
+                "2025-06-13",
+                "2025-06-15"
+              ]
+            },
+            "historical_venue_name": "山王パークタワー公開空地",
+            "historical_year": 2025,
+            "historical_years": [
+              2023,
+              2024,
+              2025
+            ],
+            "source": "reviewed_historical_promotion_candidate",
+            "target_occurrence_id": "occ_b5a16804f0be9815",
+            "target_occurrence_year": 2026
+          }
+        },
+        {
+          "occurrence_id": "occ_b5a16804f0be9815",
+          "date_start": "2026-06-13",
+          "date_end": "2026-06-15",
+          "date_type": "ended",
+          "confidence": "confirmed",
+          "basis": "notion_events"
+        }
+      ],
+      "predicted_dates": [
+        {
+          "target_occurrence_id": "occ_b5a16804f0be9815",
+          "date_start": "2026-06-13",
+          "date_end": "2026-06-15",
+          "basis_type": "date_based",
+          "rule_type": "fixed_date",
+          "basis": "毎年6/13開始",
+          "confidence": "medium",
+          "score": 0.72,
+          "application_status": "matches_curated"
+        }
+      ],
+      "historical_promotion_candidates": [
+        {
+          "target_occurrence_id": "occ_b5a16804f0be9815",
+          "historical_years_json": "[2023, 2024, 2025]",
+          "exact_dates_json": "{\"2023\": [\"2023-06-13\"], \"2024\": [\"2024-06-13\", \"2024-06-15\"], \"2025\": [\"2025-06-13\", \"2025-06-15\"]}",
+          "prediction_json": "[{\"basis\": \"毎年6/13開始\", \"confidence\": \"medium\", \"event_name\": \"山王音頭と民踊大会\", \"evidence_rows\": [{\"confidence\": \"medium\", \"date_end\": \"2023-06-13\", \"date_start\": \"2023-06-13\", \"duration_days\": 1, \"source_video_count\": 7, \"weekday_start\": \"火\", \"year\": 2023}, {\"confidence\": \"high\", \"date_end\": \"2024-06-15\", \"date_start\": \"2024-06-13\", \"duration_days\": 3, \"source_video_count\": 10, \"weekday_start\": \"木\", \"year\": 2024}], \"evidence_years\": [2023, 2024], \"predicted_date_end\": \"2026-06-15\", \"predicted_date_start\": \"2026-06-13\", \"rule_type\": \"fixed_date\", \"score\": 0.72, \"series_key\": \"d17bb14b4079\", \"source\": \"event_date_predictions\", \"venue\": \"山王パークタワー公開空地\"}]",
+          "evidence_url_count": 57,
+          "song_title_count": 24,
+          "match_score": 5,
+          "promotion_confidence": "high",
+          "auto_promote_eligible": 1,
+          "recommended_action": "auto_promote_historical_reference",
+          "notes": "Promote as historical evidence only; do not copy historical dates to 2026.",
+          "historical_years": [
+            2023,
+            2024,
+            2025
+          ],
+          "exact_dates": {
+            "2023": [
+              "2023-06-13"
+            ],
+            "2024": [
+              "2024-06-13",
+              "2024-06-15"
+            ],
+            "2025": [
+              "2025-06-13",
+              "2025-06-15"
+            ]
+          },
+          "prediction": [
+            {
+              "basis": "毎年6/13開始",
+              "confidence": "medium",
+              "event_name": "山王音頭と民踊大会",
+              "evidence_rows": [
+                {
+                  "confidence": "medium",
+                  "date_end": "2023-06-13",
+                  "date_start": "2023-06-13",
+                  "duration_days": 1,
+                  "source_video_count": 7,
+                  "weekday_start": "火",
+                  "year": 2023
+                },
+                {
+                  "confidence": "high",
+                  "date_end": "2024-06-15",
+                  "date_start": "2024-06-13",
+                  "duration_days": 3,
+                  "source_video_count": 10,
+                  "weekday_start": "木",
+                  "year": 2024
+                }
+              ],
+              "evidence_years": [
+                2023,
+                2024
+              ],
+              "predicted_date_end": "2026-06-15",
+              "predicted_date_start": "2026-06-13",
+              "rule_type": "fixed_date",
+              "score": 0.72,
+              "series_key": "d17bb14b4079",
+              "source": "event_date_predictions",
+              "venue": "山王パークタワー公開空地"
+            }
+          ]
+        }
+      ],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "新橋こいち祭",
+      "venue": "桜田公園",
+      "area": "港区",
+      "occurrence_id": "occ_7a555fbc00d0c059",
+      "series_id": "ser_f91d329d77a2eda7",
+      "date_start": "2026-07-23",
+      "date_status": "confirmed",
+      "lifecycle_status": "published",
+      "public_key": "新橋こいち祭␟桜田公園",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 5,
+      "evidence_reasons": [
+        "historical_dates:2026",
+        "predicted_occurrence_date"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_7a555fbc00d0c059",
+          "date_start": "2026-07-23",
+          "date_end": "2026-07-24",
+          "date_type": "predicted",
+          "confidence": "unknown",
+          "basis": "notion_events"
+        },
+        {
+          "occurrence_id": "occ_7a555fbc00d0c059",
+          "date_start": "2026-07-23",
+          "date_end": "2026-07-24",
+          "date_type": "confirmed",
+          "confidence": "high",
+          "basis": "official_current_year"
+        }
+      ],
+      "predicted_dates": [
+        {
+          "target_occurrence_id": "occ_7a555fbc00d0c059",
+          "date_start": "2026-07-23",
+          "date_end": "2026-07-23",
+          "basis_type": "weekday_based",
+          "rule_type": "weekday_nth",
+          "basis": "7月第4木曜",
+          "confidence": "medium",
+          "score": 0.7,
+          "application_status": "superseded_by_curated"
+        }
+      ],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "郡上おどり in 青山",
+      "venue": "秩父宮ラグビー場駐車場",
+      "area": "港区",
+      "occurrence_id": "occ_23ad1c8ae9eb48cf",
+      "series_id": "ser_d39870ddba633c11",
+      "date_start": "2026-06-26",
+      "date_status": "confirmed",
+      "lifecycle_status": "published",
+      "public_key": "郡上おどり in 青山␟秩父宮ラグビー場駐車場",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 5,
+      "evidence_reasons": [
+        "historical_dates:2026",
+        "predicted_occurrence_date"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_23ad1c8ae9eb48cf",
+          "date_start": "2026-06-26",
+          "date_end": "2026-06-27",
+          "date_type": "confirmed",
+          "confidence": "confirmed",
+          "basis": "notion_events"
+        }
+      ],
+      "predicted_dates": [
+        {
+          "target_occurrence_id": "occ_23ad1c8ae9eb48cf",
+          "date_start": "2026-06-19",
+          "date_end": "2026-06-19",
+          "basis_type": "weekday_based",
+          "rule_type": "weekday_near_day",
+          "basis": "6月17日前後の金曜",
+          "confidence": "medium",
+          "score": 0.68,
+          "application_status": "superseded_by_curated"
+        }
+      ],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "京橋盆踊り",
+      "venue": "京橋エドグラン 京橋中央ひろば",
+      "area": "中央区",
+      "occurrence_id": "occ_07f775ba65031a6e",
+      "series_id": "ser_e763e24c3496cf82",
+      "date_start": "",
+      "date_status": "unknown",
+      "lifecycle_status": "未確認",
+      "public_key": "京橋盆踊り␟京橋エドグラン 京橋中央ひろば",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 3,
+      "evidence_reasons": [
+        "historical_dates:2025",
+        "historical_reference_date"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_07f775ba65031a6e",
+          "date_start": "2025-08-29",
+          "date_end": "2025-08-30",
+          "date_type": "historical_reference",
+          "confidence": "high",
+          "basis": {
+            "does_not_confirm_target_year": true,
+            "event_name": "京橋盆踊り",
+            "historical_venue_name": "京橋中央ひろば（ガレリア）",
+            "historical_year": 2025,
+            "recommended_action": "promote_2025_historical_reference_only",
+            "requires_human_review": false,
+            "source": "pre_cutover_p0_apply_plan",
+            "source_plan": "build_pre_cutover_p0_apply_plan.py",
+            "source_url": "https://www.edogrand.tokyo/event/6924",
+            "target_occurrence_id": "occ_07f775ba65031a6e",
+            "target_occurrence_year": 2026
+          }
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "濱町音頭盆踊り大会",
+      "venue": "浜町公園",
+      "area": "中央区",
+      "occurrence_id": "occ_1a4d1fa95a29cc39",
+      "series_id": "ser_94b2c41e84fad260",
+      "date_start": "",
+      "date_status": "unknown",
+      "lifecycle_status": "未確認",
+      "public_key": "濱町音頭盆踊り大会␟浜町公園",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 3,
+      "evidence_reasons": [
+        "historical_dates:2025",
+        "historical_reference_date"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_1a4d1fa95a29cc39",
+          "date_start": "2025-09-27",
+          "date_end": null,
+          "date_type": "historical_reference",
+          "confidence": "medium",
+          "basis": {
+            "does_not_confirm_target_year": true,
+            "event_name": "濱町音頭盆踊り大会",
+            "historical_venue_name": "浜町公園中央広場",
+            "historical_year": 2025,
+            "recommended_action": "promote_2025_historical_reference_only",
+            "requires_human_review": true,
+            "source": "pre_cutover_p0_apply_plan",
+            "source_plan": "build_pre_cutover_p0_apply_plan.py",
+            "source_url": "https://tokyofesta.com/23ku/25652/",
+            "target_occurrence_id": "occ_1a4d1fa95a29cc39",
+            "target_occurrence_year": 2026
+          }
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "銀座一丁目東町会・新富町会 納涼盆踊り大会",
+      "venue": "京橋プラザ区民館",
+      "area": "中央区",
+      "occurrence_id": "occ_225f239652267ed9",
+      "series_id": "ser_128817ee1c8ca940",
+      "date_start": "",
+      "date_status": "unknown",
+      "lifecycle_status": "未確認",
+      "public_key": "銀座一丁目東町会・新富町会 納涼盆踊り大会␟京橋プラザ区民館",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 3,
+      "evidence_reasons": [
+        "historical_dates:2025",
+        "historical_reference_date"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_225f239652267ed9",
+          "date_start": "2025-07-19",
+          "date_end": null,
+          "date_type": "historical_reference",
+          "confidence": "medium",
+          "basis": {
+            "does_not_confirm_target_year": true,
+            "event_name": "銀座一丁目東町会・新富町会 納涼盆踊り大会",
+            "historical_venue_name": "京橋プラザ",
+            "historical_year": 2025,
+            "recommended_action": "review_then_promote_2025_historical_reference_only",
+            "requires_human_review": true,
+            "source": "pre_cutover_p0_apply_plan",
+            "source_plan": "build_pre_cutover_p0_apply_plan.py",
+            "source_url": "https://www.chuo-kanko.or.jp/pages/other_details/115655",
+            "target_occurrence_id": "occ_225f239652267ed9",
+            "target_occurrence_year": 2026
+          }
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "ゐの市盆踊り～不忍夢～",
+      "venue": "上野恩賜公園",
+      "area": "台東区",
+      "occurrence_id": "occ_0ee14ffbf15fd0cf",
+      "series_id": "ser_59e508928cfca640",
+      "date_start": "",
+      "date_status": "unknown",
+      "lifecycle_status": "未確認",
+      "public_key": "ゐの市盆踊り～不忍夢～␟上野恩賜公園",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 3,
+      "evidence_reasons": [
+        "historical_dates:2025",
+        "historical_reference_date"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_0ee14ffbf15fd0cf",
+          "date_start": "2025-08-09",
+          "date_end": "2025-08-11",
+          "date_type": "historical_reference",
+          "confidence": "medium",
+          "basis": {
+            "does_not_confirm_target_year": true,
+            "event_name": "ゐの市盆踊り～不忍夢～",
+            "historical_venue_name": "上野恩賜公園",
+            "historical_year": 2025,
+            "recommended_action": "promote_2025_historical_reference_only",
+            "requires_human_review": true,
+            "source": "pre_cutover_p0_apply_plan",
+            "source_plan": "build_pre_cutover_p0_apply_plan.py",
+            "source_url": "https://www.uenopark.info/2025/inoichi-bonodori-2025/",
+            "target_occurrence_id": "occ_0ee14ffbf15fd0cf",
+            "target_occurrence_year": 2026
+          }
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "新宿中央公園夏祭り 納涼盆踊り大会",
+      "venue": "新宿中央公園 ファンモアタイム広場",
+      "area": "新宿区",
+      "occurrence_id": "occ_99e2dd44bce470e3",
+      "series_id": "ser_097893ea5628e504",
+      "date_start": "",
+      "date_status": "unknown",
+      "lifecycle_status": "未確認",
+      "public_key": "新宿中央公園夏祭り 納涼盆踊り大会␟新宿中央公園 ファンモアタイム広場",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 3,
+      "evidence_reasons": [
+        "historical_dates:2025",
+        "historical_reference_date"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_99e2dd44bce470e3",
+          "date_start": "2025-08-23",
+          "date_end": "2025-08-24",
+          "date_type": "historical_reference",
+          "confidence": "medium",
+          "basis": {
+            "does_not_confirm_target_year": true,
+            "event_name": "新宿中央公園夏祭り 納涼盆踊り大会",
+            "historical_venue_name": "新宿中央公園 ファンモアタイムひろば",
+            "historical_year": 2025,
+            "recommended_action": "promote_2025_historical_reference_only",
+            "requires_human_review": true,
+            "source": "pre_cutover_p0_apply_plan",
+            "source_plan": "build_pre_cutover_p0_apply_plan.py",
+            "source_url": "https://tokyofesta.com/23ku/24845/",
+            "target_occurrence_id": "occ_99e2dd44bce470e3",
+            "target_occurrence_year": 2026
+          }
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "森下二丁目盆踊り",
+      "venue": "森下公園",
+      "area": "江東区",
+      "occurrence_id": "occ_69ee7abd5466f5fd",
+      "series_id": "ser_1a3ab17f2d87fd89",
+      "date_start": "",
+      "date_status": "unknown",
+      "lifecycle_status": "未確認",
+      "public_key": "森下二丁目盆踊り␟森下公園",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 3,
+      "evidence_reasons": [
+        "historical_dates:2025",
+        "historical_reference_date"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_69ee7abd5466f5fd",
+          "date_start": "2025-07-19",
+          "date_end": "2025-07-20",
+          "date_type": "historical_reference",
+          "confidence": "medium",
+          "basis": {
+            "does_not_confirm_target_year": true,
+            "event_name": "森下二丁目盆踊り",
+            "historical_venue_name": "森下公園",
+            "historical_year": 2025,
+            "recommended_action": "keep_2026_unknown_and_promote_2025_historical_reference_only",
+            "requires_human_review": true,
+            "source": "pre_cutover_p0_apply_plan",
+            "source_plan": "build_pre_cutover_p0_apply_plan.py",
+            "source_url": "https://minamisuna1.com/26743/",
+            "target_occurrence_id": "occ_69ee7abd5466f5fd",
+            "target_occurrence_year": 2026
+          }
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "都の辰巳深川 臨海ぼんおどり",
+      "venue": "臨海小学校",
+      "area": "江東区",
+      "occurrence_id": "occ_56b5ccafaa074788",
+      "series_id": "ser_d4cf73876d270a29",
+      "date_start": "",
+      "date_status": "unknown",
+      "lifecycle_status": "未確認",
+      "public_key": "都の辰巳深川 臨海ぼんおどり␟臨海小学校",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 3,
+      "evidence_reasons": [
+        "historical_dates:2025",
+        "historical_reference_date"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_56b5ccafaa074788",
+          "date_start": "2025-07-19",
+          "date_end": null,
+          "date_type": "historical_reference",
+          "confidence": "medium",
+          "basis": {
+            "does_not_confirm_target_year": true,
+            "event_name": "都の辰巳深川 臨海ぼんおどり",
+            "historical_venue_name": "臨海小学校校庭",
+            "historical_year": 2025,
+            "recommended_action": "keep_2026_unknown_and_promote_2025_historical_reference_only",
+            "requires_human_review": true,
+            "source": "pre_cutover_p0_apply_plan",
+            "source_plan": "build_pre_cutover_p0_apply_plan.py",
+            "source_url": "https://minamisuna1.com/26743/",
+            "target_occurrence_id": "occ_56b5ccafaa074788",
+            "target_occurrence_year": 2026
+          }
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "赤坂夏おどり（旧 赤坂盆踊り）",
+      "venue": "赤坂サカス広場",
+      "area": "港区",
+      "occurrence_id": "occ_3fa70d14d361b2f3",
+      "series_id": "ser_315f17b13278cf22",
+      "date_start": "",
+      "date_status": "unknown",
+      "lifecycle_status": "未確認",
+      "public_key": "赤坂夏おどり（旧 赤坂盆踊り）␟赤坂サカス広場",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 3,
+      "evidence_reasons": [
+        "historical_dates:2025",
+        "historical_reference_date"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_3fa70d14d361b2f3",
+          "date_start": "2025-08-29",
+          "date_end": "2025-08-30",
+          "date_type": "historical_reference",
+          "confidence": "medium",
+          "basis": {
+            "does_not_confirm_target_year": true,
+            "event_name": "赤坂夏おどり（旧 赤坂盆踊り）",
+            "historical_venue_name": "TBS赤坂サカス広場",
+            "historical_year": 2025,
+            "recommended_action": "promote_2025_historical_reference_only",
+            "requires_human_review": true,
+            "source": "pre_cutover_p0_apply_plan",
+            "source_plan": "build_pre_cutover_p0_apply_plan.py",
+            "source_url": "https://sacas.tokyoevent.net/natsuodori.html",
+            "target_occurrence_id": "occ_3fa70d14d361b2f3",
+            "target_occurrence_year": 2026
+          }
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "中央区大江戸まつり盆おどり大会",
+      "venue": "浜町公園",
+      "area": "中央区",
+      "occurrence_id": "occ_748784f87c0cce79",
+      "series_id": "ser_1809edbdd5531661",
+      "date_start": "2026-08-21",
+      "date_status": "confirmed",
+      "lifecycle_status": "published",
+      "public_key": "中央区大江戸まつり盆おどり大会␟浜町公園",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_748784f87c0cce79",
+          "date_start": "2026-08-21",
+          "date_end": "2026-08-22",
+          "date_type": "confirmed",
+          "confidence": "confirmed",
+          "basis": "notion_events"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "第2回 大盆踊り祭 with 坂崎守寛",
+      "venue": "日本橋社会教育会館",
+      "area": "中央区",
+      "occurrence_id": "occ_abe042cd26872aaf",
+      "series_id": "ser_d9b15e6b0057687d",
+      "date_start": "2026-02-21",
+      "date_status": "ended",
+      "lifecycle_status": "published",
+      "public_key": "第2回 大盆踊り祭 with 坂崎守寛␟日本橋社会教育会館",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_abe042cd26872aaf",
+          "date_start": "2026-02-21",
+          "date_end": "",
+          "date_type": "ended",
+          "confidence": "confirmed",
+          "basis": "notion_events"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "築地本願寺納涼盆踊り大会",
+      "venue": "築地本願寺",
+      "area": "中央区",
+      "occurrence_id": "occ_4816ef9a03c3b9c1",
+      "series_id": "ser_6921aaa8a562d5eb",
+      "date_start": "2026-07-29",
+      "date_status": "confirmed",
+      "lifecycle_status": "published",
+      "public_key": "築地本願寺納涼盆踊り大会␟築地本願寺",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_4816ef9a03c3b9c1",
+          "date_start": "2026-07-29",
+          "date_end": "2026-08-01",
+          "date_type": "confirmed",
+          "confidence": "confirmed",
+          "basis": "notion_events"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "鉄砲洲納涼盆踊り",
+      "venue": "鉄砲洲公園",
+      "area": "中央区",
+      "occurrence_id": "occ_69eb62d9b1773ad9",
+      "series_id": "ser_006ddb71d0fc398e",
+      "date_start": "2026-08-03",
+      "date_status": "confirmed",
+      "lifecycle_status": "published",
+      "public_key": "鉄砲洲納涼盆踊り␟鉄砲洲公園",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_69eb62d9b1773ad9",
+          "date_start": "2026-08-03",
+          "date_end": "2026-08-05",
+          "date_type": "confirmed",
+          "confidence": "high",
+          "basis": "official_current_year"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "中野駅前大盆踊り大会",
+      "venue": "中野セントラルパーク",
+      "area": "中野区",
+      "occurrence_id": "occ_47fe4ad246321896",
+      "series_id": "ser_fe9bf19a8067e1c9",
+      "date_start": "2026-08-01",
+      "date_status": "confirmed",
+      "lifecycle_status": "未確認",
+      "public_key": "中野駅前大盆踊り大会␟中野セントラルパーク",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_47fe4ad246321896",
+          "date_start": "2026-08-01",
+          "date_end": "2026-08-02",
+          "date_type": "confirmed",
+          "confidence": "high",
+          "basis": "official_current_year"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "新井町会連合会・中野通り桜まつり実行委員会「中野通り桜まつり」",
+      "venue": "新井薬師公園",
+      "area": "中野区",
+      "occurrence_id": "occ_38458e541875d01e",
+      "series_id": "ser_1807349b32af2593",
+      "date_start": "2026-03-28",
+      "date_status": "ended",
+      "lifecycle_status": "published",
+      "public_key": "新井町会連合会・中野通り桜まつり実行委員会「中野通り桜まつり」␟新井薬師公園",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_38458e541875d01e",
+          "date_start": "2026-03-28",
+          "date_end": "",
+          "date_type": "ended",
+          "confidence": "confirmed",
+          "basis": "notion_events"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "TOKYO盆ダンス×STEAM FESTIVAL2026",
+      "venue": "上野恩賜公園",
+      "area": "台東区",
+      "occurrence_id": "occ_0a9bacc3184dd916",
+      "series_id": "ser_9718b500c9b1418f",
+      "date_start": "2026-06-26",
+      "date_status": "confirmed",
+      "lifecycle_status": "published",
+      "public_key": "TOKYO盆ダンス×STEAM FESTIVAL2026␟上野恩賜公園",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_0a9bacc3184dd916",
+          "date_start": "2026-06-26",
+          "date_end": "2026-06-27",
+          "date_type": "confirmed",
+          "confidence": "confirmed",
+          "basis": "notion_events"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026",
+      "venue": "上野恩賜公園",
+      "area": "台東区",
+      "occurrence_id": "occ_e3afc61ae62aa5f3",
+      "series_id": "ser_46497a1200251097",
+      "date_start": "2026-07-03",
+      "date_status": "confirmed",
+      "lifecycle_status": "published",
+      "public_key": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026␟上野恩賜公園",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_e3afc61ae62aa5f3",
+          "date_start": "2026-07-03",
+          "date_end": "2026-07-05",
+          "date_type": "confirmed",
+          "confidence": "confirmed",
+          "basis": "notion_events"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "マロニエまつり盆踊り大会",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "occurrence_id": "occ_31e875571ef97fea",
+      "series_id": "ser_0afea6d5ab6225e8",
+      "date_start": "2026-05-09",
+      "date_status": "ended",
+      "lifecycle_status": "published",
+      "public_key": "マロニエまつり盆踊り大会␟ヒューリック浅草橋ビル前",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_31e875571ef97fea",
+          "date_start": "2026-05-09",
+          "date_end": "",
+          "date_type": "ended",
+          "confidence": "confirmed",
+          "basis": "notion_events"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "佐竹ゲバゲバ盆踊り",
+      "venue": "佐竹商店街アーケード下",
+      "area": "台東区",
+      "occurrence_id": "occ_f13cbee67f9cb225",
+      "series_id": "series_03be5c839d96d5bb",
+      "date_start": "2026-07-18",
+      "date_status": "confirmed",
+      "lifecycle_status": "published",
+      "public_key": "佐竹ゲバゲバ盆踊り␟佐竹商店街アーケード下",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_f13cbee67f9cb225",
+          "date_start": "2026-07-18",
+          "date_end": "2026-07-18",
+          "date_type": "confirmed",
+          "confidence": "confirmed",
+          "basis": "ポスター画像で2026年7月18日(土)開催を確認。"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "奥浅草盆踊り",
+      "venue": "隅田公園",
+      "area": "台東区",
+      "occurrence_id": "occ_798cc1dfd0fd8d57",
+      "series_id": "ser_2b8c2b23ea4a07c9",
+      "date_start": "2026-06-27",
+      "date_status": "confirmed",
+      "lifecycle_status": "published",
+      "public_key": "奥浅草盆踊り␟隅田公園",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_798cc1dfd0fd8d57",
+          "date_start": "2026-06-27",
+          "date_end": "",
+          "date_type": "confirmed",
+          "confidence": "confirmed",
+          "basis": "notion_events"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "浅草橋マロニエまつり盆踊り",
+      "venue": "ヒューリック浅草橋ビル前",
+      "area": "台東区",
+      "occurrence_id": "occ_d5e89254b19fffb5",
+      "series_id": "ser_04d94784a2a09a03",
+      "date_start": "2026-05-09",
+      "date_status": "ended",
+      "lifecycle_status": "published",
+      "public_key": "浅草橋マロニエまつり盆踊り␟ヒューリック浅草橋ビル前",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_d5e89254b19fffb5",
+          "date_start": "2026-05-09",
+          "date_end": "",
+          "date_type": "ended",
+          "confidence": "confirmed",
+          "basis": "notion_events"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "Min-Yoi's盆踊り",
+      "venue": "日本民謡会館",
+      "area": "品川区",
+      "occurrence_id": "occ_7aa66170abb13156",
+      "series_id": "ser_bab425533510a178",
+      "date_start": "2026-05-31",
+      "date_status": "ended",
+      "lifecycle_status": "published",
+      "public_key": "Min-Yoi's盆踊り␟日本民謡会館",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_7aa66170abb13156",
+          "date_start": "2026-05-31",
+          "date_end": "",
+          "date_type": "ended",
+          "confidence": "confirmed",
+          "basis": "notion_events"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "品川区民まつり 八潮地区",
+      "venue": "八潮公園",
+      "area": "品川区",
+      "occurrence_id": "occ_10d1650413afccf4",
+      "series_id": "ser_22be3eb05c778887",
+      "date_start": "2026-09-20",
+      "date_status": "confirmed",
+      "lifecycle_status": "未確認",
+      "public_key": "品川区民まつり 八潮地区␟八潮公園",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_10d1650413afccf4",
+          "date_start": "2026-09-20",
+          "date_end": "",
+          "date_type": "confirmed",
+          "confidence": "high",
+          "basis": "official_current_year"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "品川区民まつり 品川第二地区",
+      "venue": "天妙国寺",
+      "area": "品川区",
+      "occurrence_id": "occ_da7ddce69ae96791",
+      "series_id": "ser_75978db01c455e34",
+      "date_start": "2026-07-25",
+      "date_status": "confirmed",
+      "lifecycle_status": "published",
+      "public_key": "品川区民まつり 品川第二地区␟天妙国寺",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_da7ddce69ae96791",
+          "date_start": "2026-07-25",
+          "date_end": "2026-07-26",
+          "date_type": "confirmed",
+          "confidence": "confirmed",
+          "basis": "notion_events"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "品川区民まつり 荏原第一地区",
+      "venue": "小山台小学校",
+      "area": "品川区",
+      "occurrence_id": "occ_35fcf0374711a3bd",
+      "series_id": "ser_e565042ea6b77ac3",
+      "date_start": "2026-10-10",
+      "date_status": "confirmed",
+      "lifecycle_status": "published",
+      "public_key": "品川区民まつり 荏原第一地区␟小山台小学校",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_35fcf0374711a3bd",
+          "date_start": "2026-10-10",
+          "date_end": "",
+          "date_type": "confirmed",
+          "confidence": "confirmed",
+          "basis": "notion_events"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "品川区民まつり 荏原第三地区",
+      "venue": "京陽小学校",
+      "area": "品川区",
+      "occurrence_id": "occ_ba6a308f4bcbfff2",
+      "series_id": "ser_81011e991e6fc8e2",
+      "date_start": "2026-10-18",
+      "date_status": "confirmed",
+      "lifecycle_status": "未確認",
+      "public_key": "品川区民まつり 荏原第三地区␟京陽小学校",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_ba6a308f4bcbfff2",
+          "date_start": "2026-10-18",
+          "date_end": "",
+          "date_type": "confirmed",
+          "confidence": "high",
+          "basis": "official_current_year"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "品川区民まつり 荏原第五地区",
+      "venue": "杜松ホーム",
+      "area": "品川区",
+      "occurrence_id": "occ_5375fcfc19ab3505",
+      "series_id": "ser_de7117d1177532d4",
+      "date_start": "2026-07-18",
+      "date_status": "confirmed",
+      "lifecycle_status": "未確認",
+      "public_key": "品川区民まつり 荏原第五地区␟杜松ホーム",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_5375fcfc19ab3505",
+          "date_start": "2026-07-18",
+          "date_end": "2026-07-19",
+          "date_type": "confirmed",
+          "confidence": "high",
+          "basis": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "品川区民まつり 荏原第四地区",
+      "venue": "上神明小学校",
+      "area": "品川区",
+      "occurrence_id": "occ_400f1f551ca689a7",
+      "series_id": "ser_b95941461c13a095",
+      "date_start": "2026-10-11",
+      "date_status": "confirmed",
+      "lifecycle_status": "未確認",
+      "public_key": "品川区民まつり 荏原第四地区␟上神明小学校",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_400f1f551ca689a7",
+          "date_start": "2026-10-11",
+          "date_end": "",
+          "date_type": "confirmed",
+          "confidence": "high",
+          "basis": "official_current_year"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "戸越宮前盆踊り",
+      "venue": "宮前小学校",
+      "area": "品川区",
+      "occurrence_id": "occ_485aa6f6c2b5f6ce",
+      "series_id": "ser_33f74ac30a6a48b6",
+      "date_start": "2026-06-07",
+      "date_status": "ended",
+      "lifecycle_status": "published",
+      "public_key": "戸越宮前盆踊り␟宮前小学校",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_485aa6f6c2b5f6ce",
+          "date_start": "2026-06-07",
+          "date_end": "",
+          "date_type": "ended",
+          "confidence": "confirmed",
+          "basis": "notion_events"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "盆踊 〜BONDO〜",
+      "venue": "しながわ中央公園",
+      "area": "品川区",
+      "occurrence_id": "occ_ebe2be50bfd7b761",
+      "series_id": "ser_30ace769c75deea4",
+      "date_start": "2026-05-23",
+      "date_status": "ended",
+      "lifecycle_status": "published",
+      "public_key": "盆踊 〜BONDO〜␟しながわ中央公園",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_ebe2be50bfd7b761",
+          "date_start": "2026-05-23",
+          "date_end": "",
+          "date_type": "ended",
+          "confidence": "high",
+          "basis": "official_current_year"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "鮫洲入江広場公園 ゆり園盆踊り",
+      "venue": "鮫洲入江広場公園",
+      "area": "品川区",
+      "occurrence_id": "occ_467606ed2b3447fd",
+      "series_id": "ser_afba47a86dedb31c",
+      "date_start": "2026-06-06",
+      "date_status": "ended",
+      "lifecycle_status": "published",
+      "public_key": "鮫洲入江広場公園 ゆり園盆踊り␟鮫洲入江広場公園",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_467606ed2b3447fd",
+          "date_start": "2026-06-06",
+          "date_end": "",
+          "date_type": "ended",
+          "confidence": "confirmed",
+          "basis": "notion_events"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "すみだ沖縄まつり",
+      "venue": "錦糸公園",
+      "area": "墨田区",
+      "occurrence_id": "occ_8f229566f51d9d13",
+      "series_id": "ser_31c192904dbdb09e",
+      "date_start": "2026-05-09",
+      "date_status": "ended",
+      "lifecycle_status": "published",
+      "public_key": "すみだ沖縄まつり␟錦糸公園",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_8f229566f51d9d13",
+          "date_start": "2026-05-09",
+          "date_end": "2026-05-10",
+          "date_type": "ended",
+          "confidence": "confirmed",
+          "basis": "notion_events"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "すみだ河内音頭 小盆踊り",
+      "venue": "本所地域プラザ BIG SHIP 多目的ホール",
+      "area": "墨田区",
+      "occurrence_id": "occ_a576d93013c35505",
+      "series_id": "ser_ef27193f7ee6ef2c",
+      "date_start": "2026-05-16",
+      "date_status": "ended",
+      "lifecycle_status": "published",
+      "public_key": "すみだ河内音頭 小盆踊り␟本所地域プラザ BIG SHIP 多目的ホール",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_a576d93013c35505",
+          "date_start": "2026-05-16",
+          "date_end": "",
+          "date_type": "ended",
+          "confidence": "confirmed",
+          "basis": "notion_events"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "すみだ錦糸町河内音頭大盆踊り",
+      "venue": "江東橋竪川親水公園",
+      "area": "墨田区",
+      "occurrence_id": "occ_368d6231a208af34",
+      "series_id": "ser_65928abb372dbd41",
+      "date_start": "2026-07-29",
+      "date_status": "confirmed",
+      "lifecycle_status": "published",
+      "public_key": "すみだ錦糸町河内音頭大盆踊り␟江東橋竪川親水公園",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_368d6231a208af34",
+          "date_start": "2026-07-29",
+          "date_end": "2026-07-30",
+          "date_type": "confirmed",
+          "confidence": "confirmed",
+          "basis": "notion_events"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "西図子 盆踊りとおでんの宴",
+      "venue": "向島百花会館",
+      "area": "墨田区",
+      "occurrence_id": "occ_03ff782c4fcf5f6b",
+      "series_id": "ser_9f6880fdde3952e4",
+      "date_start": "2026-03-01",
+      "date_status": "ended",
+      "lifecycle_status": "published",
+      "public_key": "西図子 盆踊りとおでんの宴␟向島百花会館",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_03ff782c4fcf5f6b",
+          "date_start": "2026-03-01",
+          "date_end": "",
+          "date_type": "ended",
+          "confidence": "confirmed",
+          "basis": "notion_events"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "三角広場まつり「居酒屋盆踊り」",
+      "venue": "新宿住友ビル三角広場",
+      "area": "新宿区",
+      "occurrence_id": "occ_1a303dadd13493de",
+      "series_id": "ser_7650b9a808b00d21",
+      "date_start": "2026-06-24",
+      "date_status": "confirmed",
+      "lifecycle_status": "published",
+      "public_key": "三角広場まつり「居酒屋盆踊り」␟新宿住友ビル三角広場",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_1a303dadd13493de",
+          "date_start": "2026-06-24",
+          "date_end": "2026-06-25",
+          "date_type": "confirmed",
+          "confidence": "confirmed",
+          "basis": "notion_events"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "倉雀会(くらすずめかい)",
+      "venue": "北葛西コミュニティ会館",
+      "area": "江戸川区",
+      "occurrence_id": "occ_1d65f63e15c2b1d8",
+      "series_id": "ser_fceddde5d30805d9",
+      "date_start": "2026-02-08",
+      "date_status": "ended",
+      "lifecycle_status": "published",
+      "public_key": "倉雀会(くらすずめかい)␟北葛西コミュニティ会館",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_1d65f63e15c2b1d8",
+          "date_start": "2026-02-08",
+          "date_end": "",
+          "date_type": "ended",
+          "confidence": "confirmed",
+          "basis": "notion_events"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "好踊会「第4回 好踊会フェア」",
+      "venue": "鹿骨中学校",
+      "area": "江戸川区",
+      "occurrence_id": "occ_3635e5858dc38fde",
+      "series_id": "ser_8a4b51ca7693d7eb",
+      "date_start": "2026-03-29",
+      "date_status": "ended",
+      "lifecycle_status": "published",
+      "public_key": "好踊会「第4回 好踊会フェア」␟鹿骨中学校",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_3635e5858dc38fde",
+          "date_start": "2026-03-29",
+          "date_end": "",
+          "date_type": "ended",
+          "confidence": "confirmed",
+          "basis": "notion_events"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "木場一・六町会 盆踊り大会",
+      "venue": "深川ギャザリアセンタープラザ",
+      "area": "江東区",
+      "occurrence_id": "occ_ac38d43f4701c4ac",
+      "series_id": "ser_fb2c310999f79c63",
+      "date_start": "2026-07-18",
+      "date_status": "confirmed",
+      "lifecycle_status": "published",
+      "public_key": "木場一・六町会 盆踊り大会␟深川ギャザリアセンタープラザ",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_ac38d43f4701c4ac",
+          "date_start": "2026-07-18",
+          "date_end": "2026-07-19",
+          "date_type": "confirmed",
+          "confidence": "high",
+          "basis": "local_media_press_release_current_year"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "木場二丁目 盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "occurrence_id": "occ_31f1726dde1f04b9",
+      "series_id": "ser_43b739eab65788c5",
+      "date_start": "2026-07-17",
+      "date_status": "confirmed",
+      "lifecycle_status": "published",
+      "public_key": "木場二丁目 盆踊り大会␟木場二丁目公園",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_31f1726dde1f04b9",
+          "date_start": "2026-07-17",
+          "date_end": "2026-07-18",
+          "date_type": "confirmed",
+          "confidence": "high",
+          "basis": "instagram_current_year"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "東陽一丁目町会 盆踊り大会",
+      "venue": "旧子供広場",
+      "area": "江東区",
+      "occurrence_id": "occ_c806d3f5bce38efa",
+      "series_id": "ser_a403f37fcd3fa183",
+      "date_start": "2026-07-25",
+      "date_status": "confirmed",
+      "lifecycle_status": "published",
+      "public_key": "東陽一丁目町会 盆踊り大会␟旧子供広場",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_c806d3f5bce38efa",
+          "date_start": "2026-07-25",
+          "date_end": "2026-07-26",
+          "date_type": "confirmed",
+          "confidence": "high",
+          "basis": "official_current_year"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "SHIBUYA MIYASHITA PARK BON DANCE",
+      "venue": "宮下公園",
+      "area": "渋谷区",
+      "occurrence_id": "occ_bf608105456f35f4",
+      "series_id": "ser_d0140daa64d7a876",
+      "date_start": "2026-09-26",
+      "date_status": "confirmed",
+      "lifecycle_status": "published",
+      "public_key": "SHIBUYA MIYASHITA PARK BON DANCE␟宮下公園",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_bf608105456f35f4",
+          "date_start": "2026-09-26",
+          "date_end": "2026-09-27",
+          "date_type": "confirmed",
+          "confidence": "high",
+          "basis": "official_current_year"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "グリーン アイルランド フェスティバル アイリッシュ盆踊り",
+      "venue": "代々木公園野外ステージ",
+      "area": "渋谷区",
+      "occurrence_id": "occ_dcabdf54d0d1abb2",
+      "series_id": "ser_c93af96db127c611",
+      "date_start": "2026-03-15",
+      "date_status": "ended",
+      "lifecycle_status": "published",
+      "public_key": "グリーン アイルランド フェスティバル アイリッシュ盆踊り␟代々木公園野外ステージ",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_dcabdf54d0d1abb2",
+          "date_start": "2026-03-15",
+          "date_end": "",
+          "date_type": "ended",
+          "confidence": "confirmed",
+          "basis": "notion_events"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "みなと区民まつり 盆踊り",
+      "venue": "芝公園",
+      "area": "港区",
+      "occurrence_id": "occ_f31959e29f133806",
+      "series_id": "ser_a52721b6eee9ef2e",
+      "date_start": "2026-10-10",
+      "date_status": "confirmed",
+      "lifecycle_status": "published",
+      "public_key": "みなと区民まつり 盆踊り␟芝公園",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_f31959e29f133806",
+          "date_start": "2026-10-10",
+          "date_end": "2026-10-12",
+          "date_type": "confirmed",
+          "confidence": "confirmed",
+          "basis": "notion_events"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "増上寺 地蔵尊盆踊り大会",
+      "venue": "増上寺（大殿前広場）",
+      "area": "港区",
+      "occurrence_id": "occ_19b921bc4203d6e7",
+      "series_id": "ser_1a892df80d9e6c96",
+      "date_start": "2026-07-24",
+      "date_status": "confirmed",
+      "lifecycle_status": "published",
+      "public_key": "増上寺 地蔵尊盆踊り大会␟増上寺（大殿前広場）",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_19b921bc4203d6e7",
+          "date_start": "2026-07-24",
+          "date_end": "2026-07-25",
+          "date_type": "confirmed",
+          "confidence": "high",
+          "basis": "official_current_year"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "桜フェスタ商店街 みんなで盆踊り",
+      "venue": "都立大学駅西口緑道",
+      "area": "目黒区",
+      "occurrence_id": "occ_142520030f76690b",
+      "series_id": "ser_787caf3cc2799b45",
+      "date_start": "2026-03-29",
+      "date_status": "ended",
+      "lifecycle_status": "published",
+      "public_key": "桜フェスタ商店街 みんなで盆踊り␟都立大学駅西口緑道",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_142520030f76690b",
+          "date_start": "2026-03-29",
+          "date_end": "",
+          "date_type": "ended",
+          "confidence": "confirmed",
+          "basis": "notion_events"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "第60回あらかわ青年大会 アリストック",
+      "venue": "あらかわ遊園アリスの広場",
+      "area": "荒川区",
+      "occurrence_id": "occ_7551914dfed5e2a6",
+      "series_id": "ser_6baf3037c86f6a7c",
+      "date_start": "2026-03-15",
+      "date_status": "ended",
+      "lifecycle_status": "published",
+      "public_key": "第60回あらかわ青年大会 アリストック␟あらかわ遊園アリスの広場",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_7551914dfed5e2a6",
+          "date_start": "2026-03-15",
+          "date_end": "",
+          "date_type": "ended",
+          "confidence": "confirmed",
+          "basis": "notion_events"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "荒川盆踊り会 初踊り",
+      "venue": "真土公園",
+      "area": "荒川区",
+      "occurrence_id": "occ_c59ae13b422cc8ac",
+      "series_id": "ser_97686e012c02aad4",
+      "date_start": "2026-02-22",
+      "date_status": "ended",
+      "lifecycle_status": "published",
+      "public_key": "荒川盆踊り会 初踊り␟真土公園",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_c59ae13b422cc8ac",
+          "date_start": "2026-02-22",
+          "date_end": "",
+          "date_type": "ended",
+          "confidence": "confirmed",
+          "basis": "notion_events"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "葛飾菖蒲まつり 水元公園会場 民踊パレード",
+      "venue": "水元公園内はなしょうぶ園口",
+      "area": "葛飾区",
+      "occurrence_id": "occ_dfc7cc03281fd1a8",
+      "series_id": "ser_1a35b5320167dc93",
+      "date_start": "2026-05-31",
+      "date_status": "ended",
+      "lifecycle_status": "published",
+      "public_key": "葛飾菖蒲まつり 水元公園会場 民踊パレード␟水元公園内はなしょうぶ園口",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_dfc7cc03281fd1a8",
+          "date_start": "2026-05-31",
+          "date_end": "",
+          "date_type": "ended",
+          "confidence": "confirmed",
+          "basis": "notion_events"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "白鳥おどりin池袋",
+      "venue": "中池袋公園",
+      "area": "豊島区",
+      "occurrence_id": "occ_195dfc3409ac8129",
+      "series_id": "ser_956ef203c2268719",
+      "date_start": "2026-04-25",
+      "date_status": "ended",
+      "lifecycle_status": "published",
+      "public_key": "白鳥おどりin池袋␟中池袋公園",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_195dfc3409ac8129",
+          "date_start": "2026-04-25",
+          "date_end": "",
+          "date_type": "ended",
+          "confidence": "confirmed",
+          "basis": "notion_events"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    },
+    {
+      "event_name": "第34回ふるさと千川 まつり",
+      "venue": "ふるさと千川ひろば(千川小学校校庭跡地)",
+      "area": "豊島区",
+      "occurrence_id": "occ_1109890ad4fd8a71",
+      "series_id": "ser_7665b4ee7244166a",
+      "date_start": "2026-06-05",
+      "date_status": "ended",
+      "lifecycle_status": "published",
+      "public_key": "第34回ふるさと千川 まつり␟ふるさと千川ひろば(千川小学校校庭跡地)",
+      "in_public_json": true,
+      "skipped_by_override": false,
+      "public_eligible": true,
+      "blockers": [],
+      "evidence_score": 2,
+      "evidence_reasons": [
+        "historical_dates:2026"
+      ],
+      "historical_dates": [
+        {
+          "occurrence_id": "occ_1109890ad4fd8a71",
+          "date_start": "2026-06-05",
+          "date_end": "2026-06-06",
+          "date_type": "ended",
+          "confidence": "confirmed",
+          "basis": "notion_events"
+        }
+      ],
+      "predicted_dates": [],
+      "historical_promotion_candidates": [],
+      "recommendation": "already_public_check_prediction_fields"
+    }
+  ]
+}
