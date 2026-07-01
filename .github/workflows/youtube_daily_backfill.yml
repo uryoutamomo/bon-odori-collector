@@ -133,9 +133,6 @@ jobs:
         git checkout -B automation/youtube-daily-backfill
         git add data/youtube_daily_backfill_report.json
         git add data/youtube_daily_backfill_report.md
-        git add data/post_batch_maintenance_report.json
-        git add data/post_batch_maintenance_report.md
-        git add data/pending_mail.json
         git add data/youtube_year_backfill_candidates.json
         git add data/youtube_year_backfill_candidates.md
         git add data/event_occurrence_backfill_plan.json
@@ -209,7 +206,7 @@ jobs:
         - Stops when YouTube quota is limited
 
         See data/youtube_daily_backfill_report.md for the run summary.
-        See data/post_batch_maintenance_report.md for the read-only post-batch maintenance check.
+        See this Actions run summary for the read-only post-batch maintenance check.
         EOF
         )
         if gh pr view automation/youtube-daily-backfill --json number >/dev/null 2>&1; then
