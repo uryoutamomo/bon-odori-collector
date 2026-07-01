@@ -96,6 +96,10 @@ def public_event_name_set(public_events: list[Any]) -> set[str]:
     }
 
 
+def has_table_column(conn: sqlite3.Connection, table_name: str, column_name: str) -> bool:
+    return any(row[1] == column_name for row in conn.execute(f"PRAGMA table_info({table_name})"))
+
+
 def event_publication_blockers(public_events: list[Any]) -> tuple[list[dict[str, Any]], dict[str, int]]:
     if not MASTER_DB_PATH.exists():
         return [], {}
@@ -104,7 +108,10 @@ def event_publication_blockers(public_events: list[Any]) -> tuple[list[dict[str,
     rows: list[dict[str, Any]] = []
     reason_counts: Counter[str] = Counter()
 
-    query = """
+    with sqlite3.connect(MASTER_DB_PATH) as conn:
+        conn.row_factory = sqlite3.Row
+        series_status_filter = "AND s.status = 'active'" if has_table_column(conn, "event_series", "status") else ""
+        query = f"""
         SELECT
           o.occurrence_id,
           o.display_name,
@@ -128,14 +135,14 @@ def event_publication_blockers(public_events: list[Any]) -> tuple[list[dict[str,
         LEFT JOIN venues v ON v.venue_id = o.venue_id
         WHERE o.origin = 'curated'
           AND o.event_year >= 2026
+          {series_status_filter}
+          AND o.lifecycle_status NOT IN ('merged', 'duplicate', 'rejected', 'superseded_by_curated')
           AND (
             COALESCE(o.source_url, '') != ''
             OR COALESCE(s.source_url, '') != ''
             OR COALESCE(o.detail, '') LIKE '%http%'
           )
-    """
-    with sqlite3.connect(MASTER_DB_PATH) as conn:
-        conn.row_factory = sqlite3.Row
+        """
         db_rows = conn.execute(query).fetchall()
 
     for row in db_rows:

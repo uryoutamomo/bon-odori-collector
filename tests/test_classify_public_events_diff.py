@@ -61,6 +61,25 @@ class ClassifyPublicEventsDiffTest(unittest.TestCase):
         self.assertEqual(result["summary"]["records_by_family"], {"source": 1})
         self.assertEqual(result["summary"]["events_by_action"], {"individual_review": 1})
 
+    def test_source_url_metadata_difference_with_same_urls_is_not_high_risk(self):
+        collector = [
+            {"label": "告知HPあり", "url": "https://example.com/event", "kind": "web", "count": 1}
+        ]
+        site = [
+            {"label": "公式告知あり", "url": "https://example.com/event", "kind": "official"},
+            {"label": "告知HPあり", "url": "", "kind": "web", "count": 1},
+        ]
+
+        self.assertFalse(values_differ("source_urls", collector, site))
+
+    def test_missing_collector_source_url_on_site_remains_high_risk(self):
+        collector = [
+            {"label": "告知HPあり", "url": "https://example.com/event", "kind": "web", "count": 1}
+        ]
+        site = [{"label": "告知HPあり", "url": "", "kind": "web", "count": 1}]
+
+        self.assertTrue(values_differ("source_urls", collector, site))
+
     def test_collector_only_fixed_date_rule_does_not_force_individual_review(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

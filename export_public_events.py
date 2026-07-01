@@ -274,6 +274,7 @@ def collapse_public_source_urls(sources):
     best_official = None
     note_counts = {}
     note_labels = {}
+    note_first = {}
     for source in sources or []:
         if source.get("kind") == "official":
             if best_official is None or _source_rank(source) > _source_rank(best_official):
@@ -282,8 +283,14 @@ def collapse_public_source_urls(sources):
         kind = source.get("kind") or "web"
         note_counts[kind] = note_counts.get(kind, 0) + int(source.get("count") or 1)
         note_labels.setdefault(kind, source.get("label") or "告知HPあり")
+        note_first.setdefault(kind, source)
     notes = [
-        {"label": note_labels[kind], "url": "", "kind": kind, "count": count}
+        {
+            "label": note_labels[kind],
+            "url": (note_first.get(kind) or {}).get("url", "") if count == 1 else "",
+            "kind": kind,
+            "count": count,
+        }
         for kind, count in note_counts.items()
     ]
     return ([best_official] if best_official else []) + notes
@@ -296,6 +303,11 @@ def public_detail_text(text):
     public = YOUTUBE_EVIDENCE_RE.sub("", text)
     public = FIXED_DATE_INTERNAL_NOTE_RE.sub("", public)
     public = re.split(r"\s*追加証拠\s*", public, maxsplit=1)[0]
+    public = re.sub(
+        r"(?m)^\s*-\s*(?:公式確認URL|公式URL|公式サイト|公式HP|出典URL|参照URL|補足URL|会場URL|YouTube検出元URL)[:：].*$",
+        "",
+        public,
+    )
     public = re.sub(r"\[[A-Z]\d+\]\s*", "", public)
     public = re.sub(r"\[[a-z_]+\]\s*", "", public)
     public = re.sub(r"https?://\S+", "", public)
@@ -506,6 +518,16 @@ def _public_confidence_from_rdb(date, date_status):
 def _rdb_source_urls(detail, source_url, source_kind):
     sources = extract_public_source_urls(detail)
     if source_url and _is_public_source_url(source_url):
+        if any(source.get("url") == source_url for source in sources):
+            return collapse_public_source_urls(sources)
+        if (
+            len(sources) == 1
+            and sources[0].get("kind") != "official"
+            and not sources[0].get("url")
+            and int(sources[0].get("count") or 1) == 1
+        ):
+            sources[0]["url"] = source_url
+            return collapse_public_source_urls(sources)
         key = "公式URL" if source_kind == "official_current_year" else "出典URL"
         sources.append(_source_item(key, source_url))
     return collapse_public_source_urls(sources)
@@ -915,6 +937,8 @@ def build_public_events_from_master(db_path=MASTER_DB):
             WHERE v.area IN ({ward_placeholders})
               AND v.review_status = 'active'
               AND o.origin = 'curated'
+              AND s.status = 'active'
+              AND o.lifecycle_status NOT IN ('merged', 'duplicate', 'rejected', 'superseded_by_curated')
             ORDER BY v.area, v.canonical_name, o.display_name, o.event_year
             """.format(ward_placeholders=",".join("?" for _ in WARD_ORDER)),
             list(WARD_ORDER),

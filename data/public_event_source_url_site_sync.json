@@ -1,0 +1,20 @@
+{
+  "generated_by": "sync_public_event_source_urls_to_site.py",
+  "generated_at": "2026-07-01T11:49:42.672823+00:00",
+  "mode": "write",
+  "write_performed": true,
+  "sources": {
+    "collector_events": "/Users/ryotauchida/bon-odori-collector/data/public/events_public.json",
+    "site_events": "/Users/ryotauchida/bon-odori-site/data/events_public.json"
+  },
+  "summary": {
+    "collector_event_count": 186,
+    "site_event_count": 186,
+    "updated_event_count": 0,
+    "added_url_count": 0,
+    "missing_site_key_count": 0,
+    "added_urls_by_kind": {}
+  },
+  "updated_rows": [],
+  "missing_site_keys": []
+}

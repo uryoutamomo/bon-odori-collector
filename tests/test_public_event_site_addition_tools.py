@@ -65,6 +65,24 @@ class PublicEventSiteAdditionToolsTest(unittest.TestCase):
         self.assertEqual(decision["status"], "block")
         self.assertIn("modified_existing_public_events", decision["failures"])
 
+    def test_source_url_only_modification_passes_when_explicitly_allowed(self):
+        base = [{"name": "既存盆踊り", "venue": "広場", "date": "2026-07-01", "source_urls": []}]
+        current = [
+            {
+                "name": "既存盆踊り",
+                "venue": "広場",
+                "date": "2026-07-01",
+                "source_urls": [{"url": "https://example.com/source", "kind": "web"}],
+            }
+        ]
+
+        diff = classify_addition_diff(base, current)
+        default_decision = guard_decision(diff, [])
+        allowed_decision = guard_decision(diff, [], allow_source_url_modifications=True)
+
+        self.assertEqual(default_decision["status"], "block")
+        self.assertEqual(allowed_decision["status"], "pass")
+
     def test_existing_event_date_change_blocks_as_removal(self):
         base = [{"name": "既存盆踊り", "venue": "広場", "date": "2026-07-01"}]
         current = [{"name": "既存盆踊り", "venue": "広場", "date": "2026-07-02"}]
@@ -74,6 +92,37 @@ class PublicEventSiteAdditionToolsTest(unittest.TestCase):
 
         self.assertEqual(decision["status"], "block")
         self.assertIn("removed_existing_public_events", decision["failures"])
+
+    def test_reviewed_replacement_passes_with_expected_removed_names(self):
+        base = [
+            {"name": "日程昇格盆踊り", "venue": "広場", "date": None},
+            {"name": "既存盆踊り", "venue": "公園", "date": "2026-07-01"},
+        ]
+        current = [
+            {"name": "既存盆踊り", "venue": "公園", "date": "2026-07-01"},
+            {"name": "日程昇格盆踊り", "venue": "広場", "date": "2026-07-02"},
+        ]
+
+        diff = classify_addition_diff(base, current)
+        decision = guard_decision(diff, ["日程昇格盆踊り"], ["日程昇格盆踊り"])
+
+        self.assertEqual(decision["status"], "pass")
+
+    def test_reviewed_replacement_blocks_unexpected_removed_names(self):
+        base = [
+            {"name": "別の既存盆踊り", "venue": "広場", "date": None},
+            {"name": "既存盆踊り", "venue": "公園", "date": "2026-07-01"},
+        ]
+        current = [
+            {"name": "既存盆踊り", "venue": "公園", "date": "2026-07-01"},
+            {"name": "日程昇格盆踊り", "venue": "広場", "date": "2026-07-02"},
+        ]
+
+        diff = classify_addition_diff(base, current)
+        decision = guard_decision(diff, ["日程昇格盆踊り"], ["日程昇格盆踊り"])
+
+        self.assertEqual(decision["status"], "block")
+        self.assertIn("removed_events_do_not_match_expected_names", decision["failures"])
 
     def test_expected_name_mismatch_blocks(self):
         base = [{"name": "既存盆踊り", "venue": "広場"}]

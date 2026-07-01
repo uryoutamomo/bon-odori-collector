@@ -39,20 +39,10 @@ const EVENTS = [
     "detail": "毎年6/13〜15開催（日枝神社「山王祭」の納涼大会として）。曜日は年により変動",
     "source_urls": [
       {
-        "label": "公式告知あり",
-        "url": "https://www.tenkamatsuri.jp/minyo/",
-        "kind": "official"
-      },
-      {
-        "label": "公式告知あり",
-        "url": "https://www.hiejinja.net/news/%E4%BB%A4%E5%92%8C8%E5%B9%B4%E5%B1%B1%E7%8E%8B%E7%A5%AD%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/",
-        "kind": "official"
-      },
-      {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.tenkamatsuri.jp/minyo/",
         "kind": "web",
-        "count": 2
+        "count": 1
       }
     ],
     "songs": [
@@ -414,15 +404,10 @@ const EVENTS = [
     "detail": "2025-07-25〜2025-07-26、行幸通りで開催。公式ページ「丸の内夏祭り2025」in 行幸通り内の丸の内de盆踊り。7/25 盆踊り 17:00-18:15 / 19:00-19:40 / 20:00-21:00、7/26 盆踊り 18:00-19:00 / 19:20-20:10 / 20:40-21:00。",
     "source_urls": [
       {
-        "label": "公式告知あり",
-        "url": "https://www.marunouchi.com/pickup/event/6763/",
-        "kind": "official"
-      },
-      {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.marunouchi.com/pickup/event/6763/",
         "kind": "web",
-        "count": 2
+        "count": 1
       }
     ],
     "songs": [
@@ -769,9 +754,9 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://ginbura.ginza.jp/",
         "kind": "web",
-        "count": 2
+        "count": 1
       }
     ],
     "songs": [
@@ -911,7 +896,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.edogrand.tokyo/event/6924",
         "kind": "web",
         "count": 1
       }
@@ -1075,7 +1060,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://minato-bon-odori.blogspot.com/",
         "kind": "web",
         "count": 1
       }
@@ -1134,7 +1119,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://drive.google.com/file/d/1716m5RR5zIT37OWYsyzvtMrLvDx77DBw/view?usp=drive_link",
         "kind": "web",
         "count": 1
       }
@@ -1193,7 +1178,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://tokyofesta.com/23ku/23612/",
         "kind": "web",
         "count": 1
       }
@@ -1338,7 +1323,7 @@ const EVENTS = [
       },
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://x.com/yamarie0324/status/2061768438180425958",
         "kind": "web",
         "count": 1
       }
@@ -1403,7 +1388,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://ameblo.jp/newmackn/entry-12929910203.html",
         "kind": "web",
         "count": 1
       }
@@ -1498,7 +1483,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://tokyofesta.com/23ku/25652/",
         "kind": "web",
         "count": 1
       }
@@ -1748,7 +1733,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "http://minato-bon-odori.blogspot.com/2021/05/coming-all-h.html",
         "kind": "web",
         "count": 1
       }
@@ -1771,6 +1756,69 @@ const EVENTS = [
     "last_seen_year": null,
     "last_seen_dates": [],
     "display_tier": "season_hint"
+  },
+  {
+    "name": "鉄砲洲納涼盆踊り",
+    "name_confirmed": true,
+    "venue": "鉄砲洲公園",
+    "area": "中央区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": "",
+    "address": "",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-03",
+    "date_end": "2026-08-05",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        3
+      ],
+      [
+        8,
+        5
+      ]
+    ],
+    "jun": {
+      "8": "上旬"
+    },
+    "description": "",
+    "detail": "入船二丁目町会の公式/町会広報X投稿で、2026年8月3日から8月5日、鉄砲洲公園、18:45-21:00の開催を確認。",
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://x.com/iri2choukai/status/2069959259895496872",
+        "kind": "official"
+      }
+    ],
+    "songs": [],
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-03〜2026-08-05",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-03",
+      "2026-08-05"
+    ],
+    "display_tier": "confirmed"
   },
   {
     "name": "アークヒルズ秋祭り 盆踊り",
@@ -1808,7 +1856,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.arkhills.com/events/regular_events.html",
         "kind": "web",
         "count": 1
       }
@@ -1898,7 +1946,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://minato-bon-odori.blogspot.com/2025/01/00c-minato-p.html",
         "kind": "web",
         "count": 1
       }
@@ -2030,7 +2078,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://drive.google.com/file/d/169cclYMhojgMBlSMTYd1PS2od40BPhe-/view?usp=drive_link",
         "kind": "web",
         "count": 1
       }
@@ -2123,15 +2171,10 @@ const EVENTS = [
     "detail": "",
     "source_urls": [
       {
-        "label": "公式告知あり",
-        "url": "https://www.roppongihills.com/events/2025/08/0478.html",
-        "kind": "official"
-      },
-      {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.roppongihills.com/events/2025/08/0478.html",
         "kind": "web",
-        "count": 2
+        "count": 1
       }
     ],
     "songs": [
@@ -2283,7 +2326,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "http://tensojinja.tokyo-jinjacho.or.jp/saiten00.html",
         "kind": "web",
         "count": 1
       }
@@ -2389,7 +2432,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.minato.tokyo.jp/kouhou/kuse/koho/minato2025/202507/20250701top/01.html",
         "kind": "web",
         "count": 1
       }
@@ -2457,95 +2500,55 @@ const EVENTS = [
     "address": "港区芝公園4-7-35",
     "lat": null,
     "lng": null,
-    "date": null,
-    "date_end": null,
-    "status": "未確認",
+    "date": "2026-07-24",
+    "date_end": "2026-07-25",
+    "status": "確認済み",
     "date_confidence": {
-      "level": "unknown",
-      "label": "未確認",
-      "description": "開催日はまだ確認できていません"
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
     },
     "date_candidates": [],
     "hints": [
       [
-        2,
-        15
+        7,
+        24
       ],
       [
         7,
-        15
+        25
       ]
     ],
     "jun": {
-      "7": "中旬",
-      "2": "中旬"
+      "7": "下旬"
     },
     "description": "東京タワーを背に、増上寺大殿前で踊る地蔵尊奉賛の盆踊り。例年7月中旬の2日間開かれる。",
-    "detail": "2025年は三解脱門大修理により中止。2026年開催は公式サイト要確認。会場を芝公園→増上寺（大殿前広場）へ付け替え（2026-06-10 こと）",
+    "detail": "2025年は三解脱門大修理により中止。2026年開催は公式サイト要確認。会場を芝公園→増上寺（大殿前広場）へ付け替え（2026-06-10 こと） 増上寺公式ページで2026年画像（ev_bonodori2026.jpg）と、7月24日（金）・25日（土）18:00-21:00、増上寺大殿前広場、主催 大本山増上寺・講中連合会・増上寺護持会を確認。",
     "source_urls": [
       {
-        "label": "告知HPあり",
-        "url": "",
-        "kind": "web",
-        "count": 1
+        "label": "公式告知あり",
+        "url": "https://www.zojoji.or.jp/event/ev_bonodori.html",
+        "kind": "official"
       }
     ],
     "songs": [],
-    "public_status": "date_unknown",
-    "public_category": "date_unknown",
-    "public_status_label": "日程未確認",
-    "public_note": "今年の日程は未確認です。",
-    "recurrence_label": "日程未確認",
-    "recurrence_score": 0.25,
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-07-24〜2026-07-25",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
     "recurrence_reasons": [
-      "月ヒントあり",
-      "日付ヒントあり",
-      "未確認"
+      "2026年日付確認済み"
     ],
-    "recurrence_cautions": [
-      "2026年日程なし"
-    ],
+    "recurrence_cautions": [],
     "edition_number": null,
     "last_seen_year": null,
-    "last_seen_dates": [],
-    "display_tier": "season_hint",
-    "season_hint": {
-      "display_tier": "season_hint",
-      "target_year": 2026,
-      "months": [
-        2,
-        7
-      ],
-      "jun": {
-        "7": "中旬",
-        "2": "中旬"
-      },
-      "hints": [
-        [
-          2,
-          15
-        ],
-        [
-          7,
-          15
-        ]
-      ],
-      "label": "2月中旬・7月中旬",
-      "confidence": "lowest",
-      "basis": "例年の開催月・旬ヒント",
-      "has_jun_hint": true,
-      "has_sort_hint": true
-    },
-    "season_months": [
-      2,
-      7
+    "last_seen_dates": [
+      "2026-07-24",
+      "2026-07-25"
     ],
-    "season_jun": {
-      "7": "中旬",
-      "2": "中旬"
-    },
-    "season_hint_label": "2月中旬・7月中旬",
-    "season_confidence": "lowest"
+    "display_tier": "confirmed"
   },
   {
     "name": "新橋こいち祭",
@@ -2596,99 +2599,99 @@ const EVENTS = [
         "name": "ご祝儀音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "ふるさと音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "チャンチキおけさ",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "ハワイ音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "八木節",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "北海盆唄",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "大東京音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "好きになった人",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "新橋音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "新芝音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "東京音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "炭坑節",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "燃えろ日本の夏祭り",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "防災音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       }
     ],
     "public_status": "upcoming_confirmed",
@@ -2749,7 +2752,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://x.com/nsPFhl5JW382058/status/1939266951391613148",
         "kind": "web",
         "count": 1
       }
@@ -2870,7 +2873,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.minato.tokyo.jp/kouhou/kuse/koho/minato2025/202507/20250701top/01.html",
         "kind": "web",
         "count": 1
       }
@@ -2960,7 +2963,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://sanko8.net/8996/",
         "kind": "web",
         "count": 1
       }
@@ -3165,18 +3168,8 @@ const EVENTS = [
     "detail": "",
     "source_urls": [
       {
-        "label": "公式告知あり",
-        "url": "https://aoyama-gaienmae.or.jp/news/20260326/",
-        "kind": "official"
-      },
-      {
-        "label": "公式告知あり",
-        "url": "https://aoyama-gaienmae.or.jp/news/",
-        "kind": "official"
-      },
-      {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://aoyama-gaienmae.or.jp/news/20260326/",
         "kind": "web",
         "count": 1
       }
@@ -3286,7 +3279,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://drive.google.com/file/d/1z8x5vmQXIXx-h2kV_zBMkStLWoOqpHyh/view?usp=drive_link",
         "kind": "web",
         "count": 1
       }
@@ -3380,7 +3373,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.kissport.or.jp/matsuri/",
         "kind": "web",
         "count": 1
       }
@@ -3445,7 +3438,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://drive.google.com/file/d/1k_CE5VEEJMasD35iO5n9rccJXDxpTuth/view?usp=drive_link",
         "kind": "web",
         "count": 1
       }
@@ -3535,7 +3528,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "http://www.hachimanjinja.or.jp/main/?p=5604",
         "kind": "web",
         "count": 1
       }
@@ -3754,7 +3747,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://sacas.tokyoevent.net/natsuodori.html",
         "kind": "web",
         "count": 1
       }
@@ -3875,7 +3868,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.akasakahikawa.or.jp/hikawasai-r07/",
         "kind": "web",
         "count": 1
       }
@@ -3995,7 +3988,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://event-schedule.eventokyo.jp/topic/453",
         "kind": "web",
         "count": 1
       }
@@ -4097,9 +4090,9 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://omoharareal.com/navi/news/detail/5157",
         "kind": "web",
-        "count": 2
+        "count": 1
       }
     ],
     "songs": [],
@@ -4227,9 +4220,9 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://bonmaru.zenmin-odori.jp/archives/419",
         "kind": "web",
-        "count": 2
+        "count": 1
       }
     ],
     "songs": [],
@@ -4376,7 +4369,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.azabuhikawa.or.jp/festival/",
         "kind": "web",
         "count": 1
       }
@@ -4498,7 +4491,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://minato-bon-odori.blogspot.com/2025/01/00d-shinjuku-p.html",
         "kind": "web",
         "count": 1
       }
@@ -4634,7 +4627,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.kagurazaka.in/event/%E7%AC%AC51%E5%9B%9E%E7%A5%9E%E6%A5%BD%E5%9D%82%E3%81%BE%E3%81%A4%E3%82%8A/",
         "kind": "web",
         "count": 1
       }
@@ -4759,7 +4752,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://minato-bon-odori.blogspot.com/2025/01/00d-shinjuku-p.html",
         "kind": "web",
         "count": 1
       }
@@ -4879,7 +4872,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://minato-bon-odori.blogspot.com/2025/01/00d-shinjuku-p.html",
         "kind": "web",
         "count": 1
       }
@@ -4999,7 +4992,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://minato-bon-odori.blogspot.com/2025/01/00d-shinjuku-p.html",
         "kind": "web",
         "count": 1
       }
@@ -5117,7 +5110,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://minato-bon-odori.blogspot.com/2025/01/00d-shinjuku-p.html",
         "kind": "web",
         "count": 1
       }
@@ -5239,7 +5232,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://minato-bon-odori.blogspot.com/2025/01/00d-shinjuku-p.html",
         "kind": "web",
         "count": 1
       }
@@ -5384,7 +5377,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://tokyofesta.com/23ku/24845/",
         "kind": "web",
         "count": 1
       }
@@ -5486,25 +5479,19 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.sumitomo-sankakuhiroba.jp/event/",
         "kind": "web",
-        "count": 2
+        "count": 1
       }
     ],
     "songs": [
       {
         "name": "LOVEマシーン",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "confidence": "hint"
       },
       {
         "name": "勝手にシンドバッド",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "confidence": "hint"
       }
     ],
     "public_status": "upcoming_confirmed",
@@ -5561,7 +5548,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.kanko-shinjuku.jp/event/-/article_4606.html",
         "kind": "web",
         "count": 1
       }
@@ -5695,7 +5682,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://minato-bon-odori.blogspot.com/2025/01/00d-shinjuku-p.html",
         "kind": "web",
         "count": 1
       }
@@ -5819,7 +5806,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://yokoso-shinjuku.com/shinjuku-event/hanazono-bonodori-2/",
         "kind": "web",
         "count": 1
       }
@@ -5942,7 +5929,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://minato-bon-odori.blogspot.com/2025/01/00d-shinjuku-p.html",
         "kind": "web",
         "count": 1
       }
@@ -6062,7 +6049,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://bonmaru.zenmin-odori.jp/archives/2674",
         "kind": "web",
         "count": 1
       }
@@ -6123,7 +6110,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://tokyofesta.com/23ku/24373/",
         "kind": "web",
         "count": 1
       }
@@ -6313,7 +6300,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://minato-bon-odori.blogspot.com/2025/01/00f-taito-p.html",
         "kind": "web",
         "count": 1
       }
@@ -6433,7 +6420,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://x.com/1205uzonke/status/2065200648086487508",
         "kind": "web",
         "count": 1
       }
@@ -6492,7 +6479,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://x.com/1205uzonke/status/2065200648086487508",
         "kind": "web",
         "count": 1
       }
@@ -6843,7 +6830,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.uenopark.info/2026/tokyo-bondance-steam-festival-2026/",
         "kind": "web",
         "count": 1
       }
@@ -6918,7 +6905,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.uenopark.info/2025/edo-week-ueno-2025/",
         "kind": "web",
         "count": 1
       }
@@ -7086,7 +7073,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.uenopark.info/2025/inoichi-bonodori-2025/",
         "kind": "web",
         "count": 1
       }
@@ -7196,7 +7183,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://zenmin-odori.jp/ueno/",
         "kind": "web",
         "count": 1
       }
@@ -7381,7 +7368,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.asakusaevent.com/higashihonganji-bonodori-2025/",
         "kind": "web",
         "count": 1
       }
@@ -7550,7 +7537,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://drive.google.com/file/d/1VC-1M9-KplP2FQUT387YkMeu5olASeLM/view?usp=drive_link",
         "kind": "web",
         "count": 1
       }
@@ -7653,7 +7640,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://twitter.com/Okuasakusa_bon",
         "kind": "web",
         "count": 1
       }
@@ -7712,9 +7699,9 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.jrtk.jp/edonoren/",
         "kind": "web",
-        "count": 2
+        "count": 1
       }
     ],
     "songs": [],
@@ -7808,7 +7795,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://minato-bon-odori.blogspot.com/ / https://www.city.sumida.lg.jp/sisetu_info/kouen/kunai_park_annai/sumida_park/park33.html",
         "kind": "web",
         "count": 1
       }
@@ -7898,7 +7885,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://minato-bon-odori.blogspot.com/2025/01/00g-sumida-p.html",
         "kind": "web",
         "count": 1
       }
@@ -8001,7 +7988,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://minato-bon-odori.blogspot.com/ / https://www.city.sumida.lg.jp/sisetu_info/kouen/kunai_park_annai/sumida_zidouteien/park35.html",
         "kind": "web",
         "count": 1
       }
@@ -8091,7 +8078,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://minato-bon-odori.blogspot.com/2025/01/00g-sumida-p.html",
         "kind": "web",
         "count": 1
       }
@@ -8215,7 +8202,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://minato-bon-odori.blogspot.com/2025/01/00g-sumida-p.html",
         "kind": "web",
         "count": 1
       }
@@ -8345,7 +8332,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://minato-bon-odori.blogspot.com/2025/01/00g-sumida-p.html",
         "kind": "web",
         "count": 1
       }
@@ -8465,7 +8452,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://minato-bon-odori.blogspot.com/2026/01/00g-sumida-q.html",
         "kind": "web",
         "count": 1
       }
@@ -8546,7 +8533,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://minato-bon-odori.blogspot.com/2025/01/00g-sumida-p.html",
         "kind": "web",
         "count": 1
       }
@@ -8671,7 +8658,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://drive.google.com/file/d/1Uc_OmanM9-KLRerTOxwbETQKfPAqZMgT/view?usp=drive_link",
         "kind": "web",
         "count": 1
       }
@@ -8761,7 +8748,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://drive.google.com/file/d/19x5Qoy_fIW5ZfO7qAk1kJ_3v5xFxh4n7/view?usp=drive_link",
         "kind": "web",
         "count": 1
       }
@@ -8851,7 +8838,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://drive.google.com/file/d/1KDRD1OtIFLbE56FPmanhGEXWQTHHJYqb/view?usp=drive_link",
         "kind": "web",
         "count": 1
       }
@@ -8941,7 +8928,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://minato-bon-odori.blogspot.com/ / https://www.city.sumida.lg.jp/sisetu_info/kouen/kunai_park_annai/sumida_zidouteien/park49.html",
         "kind": "web",
         "count": 1
       }
@@ -8996,6 +8983,64 @@ const EVENTS = [
     "season_confidence": "lowest"
   },
   {
+    "name": "すみだ河内音頭 小盆踊り",
+    "name_confirmed": true,
+    "venue": "本所地域プラザ BIG SHIP 多目的ホール",
+    "area": "墨田区",
+    "months": [
+      5
+    ],
+    "scale": null,
+    "access": "都営浅草線「蔵前」駅徒歩10分、JR「両国」駅徒歩15分",
+    "address": "東京都墨田区本所1丁目13番4号",
+    "lat": null,
+    "lng": null,
+    "date": "2026-05-16",
+    "date_end": null,
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        5,
+        16
+      ]
+    ],
+    "jun": {
+      "5": "中旬"
+    },
+    "description": "",
+    "detail": "",
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://www.kinshicho-kawachiondo.jp/archives/1067",
+        "kind": "official"
+      }
+    ],
+    "songs": [],
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-05-16",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
+    "recurrence_reasons": [
+      "2026年開催済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-05-16"
+    ],
+    "display_tier": "ended"
+  },
+  {
     "name": "盆☆Dance 夏休み最後の土曜は校庭で踊ろう！",
     "name_confirmed": true,
     "venue": "横川小学校",
@@ -9031,7 +9076,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://minato-bon-odori.blogspot.com/",
         "kind": "web",
         "count": 1
       }
@@ -9210,7 +9255,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://visit-sumida.jp/event/ushijima2025/",
         "kind": "web",
         "count": 1
       }
@@ -9324,7 +9369,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://minato-bon-odori.blogspot.com/2025/01/00g-sumida-p.html",
         "kind": "web",
         "count": 1
       }
@@ -9444,7 +9489,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://drive.google.com/file/d/1dk1wAfZLD6KUVKhE9aFwHv9cojzcBB4P/view?usp=drive_link",
         "kind": "web",
         "count": 1
       }
@@ -9534,7 +9579,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://drive.google.com/file/d/1jHCfWkCE0pc7DZX2gLiD8VIGlpA12ONk/view?usp=drive_link",
         "kind": "web",
         "count": 1
       }
@@ -9628,7 +9673,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://so-matsuri.com/",
         "kind": "web",
         "count": 1
       }
@@ -9696,7 +9741,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://drive.google.com/file/d/18ZOGXRlC6C-G8Wqu5wa2wGc1ZYeVOCbj/view?usp=drive_link",
         "kind": "web",
         "count": 1
       }
@@ -9786,7 +9831,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://x.com/mosukedance51/status/1911961610299822105?t=BjX2YyHByPrnqff1k0UgrQ&s=19",
         "kind": "web",
         "count": 1
       }
@@ -9841,6 +9886,133 @@ const EVENTS = [
     "season_confidence": "lowest"
   },
   {
+    "name": "東陽一丁目町会 盆踊り大会",
+    "name_confirmed": true,
+    "venue": "旧子供広場",
+    "area": "江東区",
+    "months": [
+      7
+    ],
+    "scale": null,
+    "access": "",
+    "address": "東京都江東区東陽1-19-6",
+    "lat": null,
+    "lng": null,
+    "date": "2026-07-25",
+    "date_end": "2026-07-26",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        7,
+        25
+      ],
+      [
+        7,
+        26
+      ]
+    ],
+    "jun": {
+      "7": "下旬"
+    },
+    "description": "東陽一丁目町会による地域の盆踊り大会。",
+    "detail": "2026年告知確認。東陽1丁目町会公式の活動予定で、令和8年7月25日-26日の盆踊り大会を確認。時刻・会場は地域情報記事で、7月25日18:00-20:30、7月26日18:00-20:00、旧子供広場（東陽1-19-6）を確認。",
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://toyo1tyokai.1net.jp/schedule.html",
+        "kind": "official"
+      }
+    ],
+    "songs": [],
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-07-25〜2026-07-26",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-07-25",
+      "2026-07-26"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
+    "name": "木場二丁目 盆踊り大会",
+    "name_confirmed": true,
+    "venue": "木場二丁目公園",
+    "area": "江東区",
+    "months": [
+      7
+    ],
+    "scale": "中",
+    "access": "東京メトロ東西線 木場駅から徒歩4分",
+    "address": "東京都江東区木場2-11-11",
+    "lat": null,
+    "lng": null,
+    "date": "2026-07-17",
+    "date_end": "2026-07-18",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        7,
+        17
+      ],
+      [
+        7,
+        18
+      ]
+    ],
+    "jun": {
+      "7": "中旬"
+    },
+    "description": "木場二丁目公園で開かれる地域の盆踊り大会。",
+    "detail": "2026年告知確認。Instagram投稿本文で、会場: 木場二丁目公園、日時: 7月17日(金)18:00-21:00、7月18日(土)18:00-20:30を確認。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "https://www.instagram.com/p/DZm2_6mytN3/",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-07-17〜2026-07-18",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-07-17",
+      "2026-07-18"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
     "name": "盆踊り大会",
     "name_confirmed": true,
     "venue": "木場二丁目公園",
@@ -9876,7 +10048,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://minamisuna1.com/26743/#google_vignette",
         "kind": "web",
         "count": 1
       }
@@ -9966,7 +10138,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://minamisuna1.com/26743/#google_vignette",
         "kind": "web",
         "count": 1
       }
@@ -10056,7 +10228,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://minato-bon-odori.blogspot.com/ / http://www.tensojinja.com/",
         "kind": "web",
         "count": 1
       }
@@ -10111,6 +10283,70 @@ const EVENTS = [
     "season_confidence": "lowest"
   },
   {
+    "name": "木場一・六町会 盆踊り大会",
+    "name_confirmed": true,
+    "venue": "深川ギャザリアセンタープラザ",
+    "area": "江東区",
+    "months": [
+      7
+    ],
+    "scale": null,
+    "access": "東京メトロ東西線「木場」駅4a・b出口徒歩約2分",
+    "address": "東京都江東区木場1-5-10",
+    "lat": null,
+    "lng": null,
+    "date": "2026-07-18",
+    "date_end": "2026-07-19",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        7,
+        18
+      ],
+      [
+        7,
+        19
+      ]
+    ],
+    "jun": {
+      "7": "中旬"
+    },
+    "description": "深川ギャザリアセンタープラザで開かれる木場一・六町会主催の盆踊り大会。",
+    "detail": "2026年告知確認。掲載記事の開催概要で、開催日時: 2026年7月18日(土)・19日(日)18:00-20:30、会場: 深川ギャザリアセンタープラザ、主催: 木場一・六町会を確認。",
+    "source_urls": [
+      {
+        "label": "告知HPあり",
+        "url": "https://minamisuna1.com/38004/",
+        "kind": "web",
+        "count": 1
+      }
+    ],
+    "songs": [],
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-07-18〜2026-07-19",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-07-18",
+      "2026-07-19"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
     "name": "都の辰巳深川 臨海ぼんおどり",
     "name_confirmed": true,
     "venue": "臨海小学校",
@@ -10151,7 +10387,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://minamisuna1.com/26743/#google_vignette",
         "kind": "web",
         "count": 1
       }
@@ -10218,13 +10454,13 @@ const EVENTS = [
     "address": "東京都品川区西品川1-27-20",
     "lat": null,
     "lng": null,
-    "date": null,
+    "date": "2026-05-23",
     "date_end": null,
-    "status": "未確認",
+    "status": "確認済み",
     "date_confidence": {
-      "level": "unknown",
-      "label": "未確認",
-      "description": "開催日はまだ確認できていません"
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
     },
     "date_candidates": [],
     "hints": [
@@ -10237,63 +10473,31 @@ const EVENTS = [
       "5": "下旬"
     },
     "description": "しながわ中央公園で開かれる新感覚の盆踊りフェス「BONDO」。デコトラのステージやキッチンカー、フリーマーケットも同時開催。",
-    "detail": "",
+    "detail": "しながわ観光協会で2026年5月23日、しながわ中央公園ヘリポート広場、10:20-18:30開催を確認。",
     "source_urls": [
       {
-        "label": "告知HPあり",
-        "url": "",
-        "kind": "web",
-        "count": 1
+        "label": "公式告知あり",
+        "url": "https://shinagawa-kanko.or.jp/event/bondo2026/",
+        "kind": "official"
       }
     ],
     "songs": [],
-    "public_status": "date_unknown",
-    "public_category": "date_unknown",
-    "public_status_label": "日程未確認",
-    "public_note": "今年の日程は未確認です。",
-    "recurrence_label": "日程未確認",
-    "recurrence_score": 0.25,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-05-23",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "月ヒントあり",
-      "日付ヒントあり",
-      "未確認"
+      "2026年開催済み"
     ],
-    "recurrence_cautions": [
-      "2026年日程なし"
-    ],
+    "recurrence_cautions": [],
     "edition_number": null,
     "last_seen_year": null,
-    "last_seen_dates": [],
-    "display_tier": "season_hint",
-    "season_hint": {
-      "display_tier": "season_hint",
-      "target_year": 2026,
-      "months": [
-        5
-      ],
-      "jun": {
-        "5": "下旬"
-      },
-      "hints": [
-        [
-          5,
-          23
-        ]
-      ],
-      "label": "5月下旬",
-      "confidence": "lowest",
-      "basis": "例年の開催月・旬ヒント",
-      "has_jun_hint": true,
-      "has_sort_hint": true
-    },
-    "season_months": [
-      5
+    "last_seen_dates": [
+      "2026-05-23"
     ],
-    "season_jun": {
-      "5": "下旬"
-    },
-    "season_hint_label": "5月下旬",
-    "season_confidence": "lowest"
+    "display_tier": "ended"
   },
   {
     "name": "品川区民まつり 荏原第四地区",
@@ -10506,7 +10710,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://minato-bon-odori.blogspot.com/2025/01/00i-sinagawa-p.html",
         "kind": "web",
         "count": 1
       }
@@ -10673,7 +10877,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://minato-bon-odori.blogspot.com/ / https://shinagawa-kanko.or.jp/spot/oizaougongen/",
         "kind": "web",
         "count": 1
       }
@@ -10791,138 +10995,6 @@ const EVENTS = [
     "display_tier": "confirmed"
   },
   {
-    "name": "品川第二地区 区民まつり・品川青年会 盆踊り大会（天妙国寺）",
-    "name_confirmed": true,
-    "venue": "天妙国寺",
-    "area": "品川区",
-    "months": [
-      1,
-      2,
-      7,
-      8
-    ],
-    "scale": "中",
-    "access": "京急本線 青物横丁駅から徒歩5分（新馬場駅・りんかい線品川シーサイド駅からもアクセス可）",
-    "address": "東京都品川区南品川2-8-23",
-    "lat": null,
-    "lng": null,
-    "date": null,
-    "date_end": null,
-    "status": "未確認",
-    "date_confidence": {
-      "level": "unknown",
-      "label": "未確認",
-      "description": "開催日はまだ確認できていません"
-    },
-    "date_candidates": [],
-    "hints": [
-      [
-        1,
-        15
-      ],
-      [
-        2,
-        15
-      ],
-      [
-        7,
-        25
-      ],
-      [
-        8,
-        15
-      ]
-    ],
-    "jun": {
-      "7": "下旬",
-      "1": "中旬",
-      "2": "中旬",
-      "8": "中旬"
-    },
-    "description": "天妙国寺の境内で開かれる地域の盆踊り大会。例年7月下旬の週末2日間、子どもコーナーもある下町情緒たっぷりの夏祭り。",
-    "detail": "",
-    "source_urls": [
-      {
-        "label": "告知HPあり",
-        "url": "",
-        "kind": "web",
-        "count": 1
-      }
-    ],
-    "songs": [],
-    "public_status": "date_unknown",
-    "public_category": "date_unknown",
-    "public_status_label": "日程未確認",
-    "public_note": "今年の日程は未確認です。",
-    "recurrence_label": "日程未確認",
-    "recurrence_score": 0.25,
-    "recurrence_reasons": [
-      "月ヒントあり",
-      "日付ヒントあり",
-      "未確認"
-    ],
-    "recurrence_cautions": [
-      "2026年日程なし"
-    ],
-    "edition_number": null,
-    "last_seen_year": null,
-    "last_seen_dates": [],
-    "display_tier": "season_hint",
-    "season_hint": {
-      "display_tier": "season_hint",
-      "target_year": 2026,
-      "months": [
-        1,
-        2,
-        7,
-        8
-      ],
-      "jun": {
-        "7": "下旬",
-        "1": "中旬",
-        "2": "中旬",
-        "8": "中旬"
-      },
-      "hints": [
-        [
-          1,
-          15
-        ],
-        [
-          2,
-          15
-        ],
-        [
-          7,
-          25
-        ],
-        [
-          8,
-          15
-        ]
-      ],
-      "label": "1月中旬・2月中旬・7月下旬・8月中旬",
-      "confidence": "lowest",
-      "basis": "例年の開催月・旬ヒント",
-      "has_jun_hint": true,
-      "has_sort_hint": true
-    },
-    "season_months": [
-      1,
-      2,
-      7,
-      8
-    ],
-    "season_jun": {
-      "7": "下旬",
-      "1": "中旬",
-      "2": "中旬",
-      "8": "中旬"
-    },
-    "season_hint_label": "1月中旬・2月中旬・7月下旬・8月中旬",
-    "season_confidence": "lowest"
-  },
-  {
     "name": "戸越宮前盆踊り",
     "name_confirmed": true,
     "venue": "宮前小学校",
@@ -10958,7 +11030,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://drive.google.com/file/d/1fKJszN8XZatC74G2Ujm3eiNNHZXEEuef/view?usp=drive_link",
         "kind": "web",
         "count": 1
       }
@@ -11022,7 +11094,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://drive.google.com/file/d/19oZjWpZ1ZXy4Ki7UWrjIi0eJUQ7QNons/view?usp=drive_link",
         "kind": "web",
         "count": 1
       }
@@ -11113,7 +11185,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
         "kind": "web",
         "count": 1
       }
@@ -11172,7 +11244,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://drive.google.com/file/d/1yk8i75rXqU7srV3vbQCLjYxjLUp1trGI/view?usp=drive_link",
         "kind": "web",
         "count": 1
       }
@@ -11280,7 +11352,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://togoshihachiman.jp/",
         "kind": "web",
         "count": 1
       }
@@ -11394,7 +11466,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://minato-bon-odori.blogspot.com/2025/01/00i-sinagawa-p.html",
         "kind": "web",
         "count": 1
       }
@@ -11588,7 +11660,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://hatagaokahachiman-jinja.jp/",
         "kind": "web",
         "count": 1
       }
@@ -12266,7 +12338,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://x.com/harebon_odori/status/1908169012430991839",
         "kind": "web",
         "count": 1
       }
@@ -12361,7 +12433,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://drive.google.com/file/d/17whgSC2R2Zp2wbEkwA1U_VJJGZ3bDucd/view?usp=drive_link",
         "kind": "web",
         "count": 1
       }
@@ -12451,7 +12523,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
         "kind": "web",
         "count": 1
       }
@@ -12541,7 +12613,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://bonmaru.zenmin-odori.jp/archives/202668",
         "kind": "web",
         "count": 1
       }
@@ -12659,7 +12731,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://minato-bon-odori.blogspot.com/2025/01/00i-sinagawa-p.html",
         "kind": "web",
         "count": 1
       }
@@ -12781,7 +12853,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://x.com/mizu516AforReal/status/2062799802266710143",
         "kind": "web",
         "count": 1
       }
@@ -12840,7 +12912,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://minato-bon-odori.blogspot.com/2025/01/00j-meguro-p.html",
         "kind": "web",
         "count": 1
       }
@@ -12964,7 +13036,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://minato-bon-odori.blogspot.com/2025/01/00j-meguro-p.html",
         "kind": "web",
         "count": 1
       }
@@ -13082,7 +13154,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://minato-bon-odori.blogspot.com/2025/01/00j-meguro-p.html",
         "kind": "web",
         "count": 1
       }
@@ -13198,7 +13270,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://minato-bon-odori.blogspot.com/2025/01/00j-meguro-p.html",
         "kind": "web",
         "count": 1
       }
@@ -13330,9 +13402,9 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://tokyofesta.com/23ku/23804/",
         "kind": "web",
-        "count": 2
+        "count": 1
       }
     ],
     "songs": [
@@ -13349,13 +13421,6 @@ const EVENTS = [
         "probability": 95,
         "basis": "current_hint",
         "basis_label": "今年ヒント"
-      },
-      {
-        "name": "ダンシングヒーロー",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "今年実測"
       },
       {
         "name": "ホイップるん音頭",
@@ -13417,6 +13482,13 @@ const EVENTS = [
         "name": "高嶺の花子さん",
         "confidence": "confirmed",
         "probability": 95,
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
+      },
+      {
+        "name": "ダンシングヒーロー",
+        "confidence": "confirmed",
+        "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント"
       },
@@ -13548,7 +13620,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://minato-bon-odori.blogspot.com/2026/01/00j-meguro-q.html",
         "kind": "web",
         "count": 1
       }
@@ -13615,7 +13687,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://x.com/otakanko2/status/1963557665998565458",
         "kind": "web",
         "count": 1
       }
@@ -13718,7 +13790,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://drive.google.com/file/d/1zfAfkreIrAhHrnh_cvQA7XUsdtmHc7ON/view?usp=drive_link",
         "kind": "web",
         "count": 1
       }
@@ -13840,7 +13912,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://drive.google.com/file/d/1myPvLkT7V4xH36LLQsLTmsG9hG_d7wW0/view?usp=drive_link",
         "kind": "web",
         "count": 1
       }
@@ -13966,7 +14038,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://drive.google.com/file/d/1_29ARyUGtOCqB53ppmXo-iOh6h6qaEjt/view?usp=drive_link",
         "kind": "web",
         "count": 1
       }
@@ -14092,7 +14164,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://drive.google.com/file/d/1ZRXNUbG0bvdqIYXEY8jdBbD6_IRbAgoJ/view?usp=drive_link",
         "kind": "web",
         "count": 1
       }
@@ -14214,7 +14286,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://drive.google.com/file/d/15OgYsC2CUVPaXKMTyQdE0bLu3T6cDiR2/view?usp=drive_link",
         "kind": "web",
         "count": 1
       }
@@ -14340,7 +14412,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://drive.google.com/file/d/1QLA-aZWCl2zvCga0v8d2rrA0or_ymCsK/view?usp=drive_link",
         "kind": "web",
         "count": 1
       }
@@ -14466,7 +14538,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://drive.google.com/file/d/1jbWa9OuIOch3NHPhA6kgCjeF1M2qWnFo/view?usp=drive_link",
         "kind": "web",
         "count": 1
       }
@@ -14588,7 +14660,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://x.com/chokai_info/status/1940564839002526037",
         "kind": "web",
         "count": 1
       }
@@ -14716,7 +14788,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://drive.google.com/file/d/1t0wrwk_Netwu2VmGvRy61Is78zuB5HoC/view?usp=drive_link",
         "kind": "web",
         "count": 1
       }
@@ -14842,7 +14914,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://drive.google.com/file/d/1mgZ822XFIhVTZHFdbqeiYw3NYsIWeeZ-/view?usp=drive_link",
         "kind": "web",
         "count": 1
       }
@@ -14969,11 +15041,6 @@ const EVENTS = [
       {
         "label": "告知HPあり",
         "url": "https://otakushoren.com/event/13451",
-        "kind": "web"
-      },
-      {
-        "label": "告知HPあり",
-        "url": "",
         "kind": "web",
         "count": 1
       }
@@ -15069,13 +15136,8 @@ const EVENTS = [
     "detail": "2025 7/19 - 20。次回日程は未確認。",
     "source_urls": [
       {
-        "label": "公式告知あり",
-        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
-        "kind": "official"
-      },
-      {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
         "kind": "web",
         "count": 1
       }
@@ -15200,13 +15262,8 @@ const EVENTS = [
     "detail": "2025 8/23。次回日程は未確認。",
     "source_urls": [
       {
-        "label": "公式告知あり",
-        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
-        "kind": "official"
-      },
-      {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
         "kind": "web",
         "count": 1
       }
@@ -15330,7 +15387,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.facebook.com/photo/?fbid=1021395170206703&set=a.384324273913799&locale=ja_JP",
         "kind": "web",
         "count": 1
       }
@@ -15453,13 +15510,8 @@ const EVENTS = [
     "detail": "2025 8/9 - 10。次回日程は未確認。",
     "source_urls": [
       {
-        "label": "公式告知あり",
-        "url": "https://shimokitazawa-east.com/archives/8228",
-        "kind": "official"
-      },
-      {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://shimokitazawa-east.com/archives/8228",
         "kind": "web",
         "count": 1
       }
@@ -15587,13 +15639,8 @@ const EVENTS = [
     "detail": "2025 8/17。次回日程は未確認。",
     "source_urls": [
       {
-        "label": "公式告知あり",
-        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
-        "kind": "official"
-      },
-      {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
         "kind": "web",
         "count": 1
       }
@@ -15716,13 +15763,8 @@ const EVENTS = [
     "detail": "2025 7/25 - 26。次回日程は未確認。",
     "source_urls": [
       {
-        "label": "公式告知あり",
-        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
-        "kind": "official"
-      },
-      {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
         "kind": "web",
         "count": 1
       }
@@ -15843,13 +15885,8 @@ const EVENTS = [
     "detail": "2025 7/25。次回日程は未確認。",
     "source_urls": [
       {
-        "label": "公式告知あり",
-        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
-        "kind": "official"
-      },
-      {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
         "kind": "web",
         "count": 1
       }
@@ -15977,13 +16014,8 @@ const EVENTS = [
     "detail": "2025 7/12。次回日程は未確認。",
     "source_urls": [
       {
-        "label": "公式告知あり",
-        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
-        "kind": "official"
-      },
-      {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
         "kind": "web",
         "count": 1
       }
@@ -16106,13 +16138,8 @@ const EVENTS = [
     "detail": "2025 7/26 - 27。次回日程は未確認。",
     "source_urls": [
       {
-        "label": "公式告知あり",
-        "url": "https://setagaya-station.com/news/event/event-info2025/",
-        "kind": "official"
-      },
-      {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://setagaya-station.com/news/event/event-info2025/",
         "kind": "web",
         "count": 1
       }
@@ -16245,13 +16272,8 @@ const EVENTS = [
     "detail": "2025 8/17。次回日程は未確認。",
     "source_urls": [
       {
-        "label": "公式告知あり",
-        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
-        "kind": "official"
-      },
-      {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
         "kind": "web",
         "count": 1
       }
@@ -16375,13 +16397,8 @@ const EVENTS = [
     "detail": "2025 7/20。次回日程は未確認。",
     "source_urls": [
       {
-        "label": "公式告知あり",
-        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
-        "kind": "official"
-      },
-      {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
         "kind": "web",
         "count": 1
       }
@@ -16504,13 +16521,8 @@ const EVENTS = [
     "detail": "2025 7/26 - 27。次回日程は未確認。",
     "source_urls": [
       {
-        "label": "公式告知あり",
-        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
-        "kind": "official"
-      },
-      {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
         "kind": "web",
         "count": 1
       }
@@ -16631,13 +16643,8 @@ const EVENTS = [
     "detail": "2025 7/19 - 20。次回日程は未確認。",
     "source_urls": [
       {
-        "label": "公式告知あり",
-        "url": "https://www.city.setagaya.lg.jp/documents/10549/minikomisinogawa110gou.pdf",
-        "kind": "official"
-      },
-      {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.setagaya.lg.jp/documents/10549/minikomisinogawa110gou.pdf",
         "kind": "web",
         "count": 1
       }
@@ -16764,11 +16771,6 @@ const EVENTS = [
       {
         "label": "告知HPあり",
         "url": "https://kitaminavi.com/topic/1337",
-        "kind": "web"
-      },
-      {
-        "label": "告知HPあり",
-        "url": "",
         "kind": "web",
         "count": 1
       }
@@ -16894,13 +16896,8 @@ const EVENTS = [
     "detail": "2025 7/26。次回日程は未確認。",
     "source_urls": [
       {
-        "label": "公式告知あり",
-        "url": "https://www.city.setagaya.lg.jp/documents/889/minikomishi168.pdf",
-        "kind": "official"
-      },
-      {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.setagaya.lg.jp/documents/889/minikomishi168.pdf",
         "kind": "web",
         "count": 1
       }
@@ -17021,13 +17018,8 @@ const EVENTS = [
     "detail": "2025 7/19 - 20。次回日程は未確認。",
     "source_urls": [
       {
-        "label": "公式告知あり",
-        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
-        "kind": "official"
-      },
-      {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
         "kind": "web",
         "count": 1
       }
@@ -17148,13 +17140,8 @@ const EVENTS = [
     "detail": "2025 7/19 - 20。次回日程は未確認。",
     "source_urls": [
       {
-        "label": "公式告知あり",
-        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
-        "kind": "official"
-      },
-      {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
         "kind": "web",
         "count": 1
       }
@@ -17275,13 +17262,8 @@ const EVENTS = [
     "detail": "2025 7/26。次回日程は未確認。",
     "source_urls": [
       {
-        "label": "公式告知あり",
-        "url": "https://www.seijogakuen.ed.jp/news/2025/event0726.html",
-        "kind": "official"
-      },
-      {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.seijogakuen.ed.jp/news/2025/event0726.html",
         "kind": "web",
         "count": 1
       }
@@ -17523,13 +17505,8 @@ const EVENTS = [
     "detail": "2025 8/1 - 2。次回日程は未確認。",
     "source_urls": [
       {
-        "label": "公式告知あり",
-        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
-        "kind": "official"
-      },
-      {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
         "kind": "web",
         "count": 1
       }
@@ -17650,13 +17627,8 @@ const EVENTS = [
     "detail": "2025 8/16 - 17。次回日程は未確認。",
     "source_urls": [
       {
-        "label": "公式告知あり",
-        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
-        "kind": "official"
-      },
-      {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
         "kind": "web",
         "count": 1
       }
@@ -17779,13 +17751,8 @@ const EVENTS = [
     "detail": "2025 7/19 - 20。次回日程は未確認。",
     "source_urls": [
       {
-        "label": "公式告知あり",
-        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
-        "kind": "official"
-      },
-      {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
         "kind": "web",
         "count": 1
       }
@@ -18149,13 +18116,8 @@ const EVENTS = [
     "detail": "2025 7/18 - 19。次回日程は未確認。",
     "source_urls": [
       {
-        "label": "公式告知あり",
-        "url": "https://www.city.setagaya.lg.jp/documents/889/minikomishi168.pdf",
-        "kind": "official"
-      },
-      {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.setagaya.lg.jp/documents/889/minikomishi168.pdf",
         "kind": "web",
         "count": 1
       }
@@ -18281,13 +18243,8 @@ const EVENTS = [
     "detail": "2025 7/26 - 27。次回日程は未確認。",
     "source_urls": [
       {
-        "label": "公式告知あり",
-        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
-        "kind": "official"
-      },
-      {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
         "kind": "web",
         "count": 1
       }
@@ -18414,13 +18371,8 @@ const EVENTS = [
     "detail": "2025 7/26。次回日程は未確認。",
     "source_urls": [
       {
-        "label": "公式告知あり",
-        "url": "https://www.city.setagaya.lg.jp/documents/10549/minikomisinogawa110gou.pdf",
-        "kind": "official"
-      },
-      {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.setagaya.lg.jp/documents/10549/minikomisinogawa110gou.pdf",
         "kind": "web",
         "count": 1
       }
@@ -18662,13 +18614,8 @@ const EVENTS = [
     "detail": "2025 8/3 - 4。次回日程は未確認。",
     "source_urls": [
       {
-        "label": "公式告知あり",
-        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
-        "kind": "official"
-      },
-      {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
         "kind": "web",
         "count": 1
       }
@@ -18792,13 +18739,8 @@ const EVENTS = [
     "detail": "2025 8/10。次回日程は未確認。",
     "source_urls": [
       {
-        "label": "公式告知あり",
-        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
-        "kind": "official"
-      },
-      {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.setagaya.lg.jp/documents/2043/1-1maturi.pdf",
         "kind": "web",
         "count": 1
       }
@@ -18922,7 +18864,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://ebisubondance.jp/about/",
         "kind": "web",
         "count": 1
       }
@@ -19276,7 +19218,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://minato-bon-odori.blogspot.com/2026/01/00m-shibuya-q.html",
         "kind": "web",
         "count": 1
       }
@@ -19341,9 +19283,9 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://tokyofesta.com/23ku/23185/",
         "kind": "web",
-        "count": 2
+        "count": 1
       }
     ],
     "songs": [],
@@ -19414,8 +19356,8 @@ const EVENTS = [
     "address": "東京都渋谷区神宮前6-20-10",
     "lat": null,
     "lng": null,
-    "date": "2025-09-27",
-    "date_end": "2025-09-28",
+    "date": "2026-09-26",
+    "date_end": "2026-09-27",
     "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
@@ -19426,24 +19368,23 @@ const EVENTS = [
     "hints": [
       [
         9,
-        27
+        26
       ],
       [
         9,
-        28
+        27
       ]
     ],
     "jun": {
       "9": "下旬"
     },
     "description": "渋谷・宮下公園の芝生の上で開かれる現代型の盆踊り。買い物帰りにふらっと輪に入れる、渋谷らしいボンダンス。",
-    "detail": "",
+    "detail": "公式HPで2026年9月26日・27日、MIYASHITA PARK4階 渋谷区立宮下公園 芝生ひろば、13:00-21:00開催を確認。",
     "source_urls": [
       {
-        "label": "告知HPあり",
-        "url": "",
-        "kind": "web",
-        "count": 2
+        "label": "公式告知あり",
+        "url": "https://miyashita-bondance.jp/",
+        "kind": "official"
       }
     ],
     "songs": [
@@ -19451,181 +19392,55 @@ const EVENTS = [
         "name": "ダンシングヒーロー",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "外国人も一緒になって阿波踊り",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "東京音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "激混み会場で外国人も踊り",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "阿波踊り",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       }
     ],
-    "public_status": "expected_low",
-    "public_category": "recurring_last_year",
-    "public_status_label": "昨年開催",
-    "public_note": "昨年開催: 2025-09-27〜2025-09-28。今年の日程は未確認です。",
-    "recurrence_label": "昨年開催・継続性 低",
-    "recurrence_score": 0.46,
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-09-26〜2026-09-27",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
     "recurrence_reasons": [
-      "venue_present",
-      "tokyo_23ward"
+      "2026年日付確認済み"
     ],
-    "recurrence_cautions": [
-      "単発/企画色:BON DANCE"
-    ],
-    "edition_number": null,
-    "last_seen_year": 2025,
-    "last_seen_dates": [
-      "2025-09-27",
-      "2025-09-28"
-    ],
-    "display_tier": "historical_reference",
-    "historical_reference": {
-      "display_tier": "historical_reference",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-09-27",
-        "2025-09-28"
-      ],
-      "label": "2025-09-27〜2025-09-28実績・今年未確認",
-      "confidence": "low",
-      "score": 0.46,
-      "status": "expected_low",
-      "status_label": "昨年開催",
-      "recurrence_label": "昨年開催・継続性 低",
-      "reasons": [
-        "venue_present",
-        "tokyo_23ward"
-      ],
-      "cautions": [
-        "単発/企画色:BON DANCE"
-      ],
-      "edition_number": null,
-      "has_rule_prediction": false,
-      "slide": null
-    },
-    "historical_display_tier": "historical_reference",
-    "historical_last_seen_year": 2025,
-    "historical_last_seen_dates": [
-      "2025-09-27",
-      "2025-09-28"
-    ],
-    "historical_reference_label": "2025-09-27〜2025-09-28実績・今年未確認",
-    "historical_reference_confidence": "low",
-    "historical_reference_score": 0.46
-  },
-  {
-    "name": "SHIBUYA MIYASHITA PARK BON DANCE",
-    "name_confirmed": true,
-    "venue": "宮下公園",
-    "area": "渋谷区",
-    "months": [
-      9
-    ],
-    "scale": "大",
-    "access": "渋谷駅から徒歩約3分。東京メトロ千代田線・副都心線 明治神宮前〈原宿〉駅 7番口から徒歩約8分。都営バス 宮下公園、ハチ公バス 宮下公園前から徒歩1分",
-    "address": "東京都渋谷区神宮前6-20-10",
-    "lat": null,
-    "lng": null,
-    "date": null,
-    "date_end": null,
-    "status": "未確認",
-    "date_confidence": {
-      "level": "unknown",
-      "label": "未確認",
-      "description": "開催日はまだ確認できていません"
-    },
-    "date_candidates": [],
-    "hints": [
-      [
-        9,
-        26
-      ]
-    ],
-    "jun": {
-      "9": "下旬"
-    },
-    "description": "渋谷・宮下公園の芝生の上で開かれる現代型の盆踊り。買い物帰りにふらっと輪に入れる、渋谷らしいボンダンス。",
-    "detail": "",
-    "source_urls": [
-      {
-        "label": "告知HPあり",
-        "url": "",
-        "kind": "web",
-        "count": 1
-      }
-    ],
-    "songs": [],
-    "public_status": "date_unknown",
-    "public_category": "date_unknown",
-    "public_status_label": "日程未確認",
-    "public_note": "今年の日程は未確認です。",
-    "recurrence_label": "日程未確認",
-    "recurrence_score": 0.25,
-    "recurrence_reasons": [
-      "月ヒントあり",
-      "日付ヒントあり",
-      "未確認"
-    ],
-    "recurrence_cautions": [
-      "2026年日程なし"
-    ],
+    "recurrence_cautions": [],
     "edition_number": null,
     "last_seen_year": null,
-    "last_seen_dates": [],
-    "display_tier": "season_hint",
-    "season_hint": {
-      "display_tier": "season_hint",
-      "target_year": 2026,
-      "months": [
-        9
-      ],
-      "jun": {
-        "9": "下旬"
-      },
-      "hints": [
-        [
-          9,
-          26
-        ]
-      ],
-      "label": "9月下旬",
-      "confidence": "lowest",
-      "basis": "例年の開催月・旬ヒント",
-      "has_jun_hint": true,
-      "has_sort_hint": true
-    },
-    "season_months": [
-      9
+    "last_seen_dates": [
+      "2026-09-26",
+      "2026-09-27"
     ],
-    "season_jun": {
-      "9": "下旬"
-    },
-    "season_hint_label": "9月下旬",
-    "season_confidence": "lowest"
+    "display_tier": "confirmed"
   },
   {
     "name": "中野駅前大盆踊り大会",
@@ -19725,13 +19540,8 @@ const EVENTS = [
     "detail": "2026 3/28。次回日程は未確認。",
     "source_urls": [
       {
-        "label": "公式告知あり",
-        "url": "https://nakano-arai.gr.jp/nakanodoorisakuramatsuri/",
-        "kind": "official"
-      },
-      {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://nakano-arai.gr.jp/nakanodoorisakuramatsuri/",
         "kind": "web",
         "count": 1
       }
@@ -19794,7 +19604,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://drive.google.com/file/d/1rwFa5mbPoCsekMR4OpwAacVZxXgoF-on/view?usp=drive_link",
         "kind": "web",
         "count": 1
       }
@@ -19854,7 +19664,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.instagram.com/p/DSju4PKEUNW/?igsh=MW02NXNoY3hycjNhYQ%3D%3D",
         "kind": "web",
         "count": 1
       }
@@ -19922,7 +19732,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.tais.ac.jp/guide/latest_news/20250627/92922/",
         "kind": "web",
         "count": 1
       }
@@ -20049,9 +19859,9 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://kumin.news/kita/articles/1057902",
         "kind": "web",
-        "count": 2
+        "count": 1
       }
     ],
     "songs": [
@@ -20173,7 +19983,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.kita.tokyo.jp/koho/kuse/koho/hodo/press-releases/r0508/230824.html",
         "kind": "web",
         "count": 1
       }
@@ -20283,7 +20093,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://asukayamabonodori.tokyo/",
         "kind": "web",
         "count": 1
       }
@@ -20432,7 +20242,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.arakawa.tokyo.jp/a022/event/eventkouenmeigi/nipporitannkoubushimaturir791415.html",
         "kind": "web",
         "count": 1
       }
@@ -20563,7 +20373,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://minato-bon-odori.blogspot.com/2026/01/00r-arakawa-q.html",
         "kind": "web",
         "count": 1
       }
@@ -20644,7 +20454,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://minato-bon-odori.blogspot.com/2026/01/00r-arakawa-q.html",
         "kind": "web",
         "count": 1
       }
@@ -20703,7 +20513,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.adachi.tokyo.jp/chiiki/bonfes2025.html",
         "kind": "web",
         "count": 1
       }
@@ -20824,13 +20634,8 @@ const EVENTS = [
     "detail": "2026 5/31。次回日程は未確認。",
     "source_urls": [
       {
-        "label": "公式告知あり",
-        "url": "https://www.city.katsushika.lg.jp/tourism/1000064/1028427.html",
-        "kind": "official"
-      },
-      {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://www.city.katsushika.lg.jp/tourism/1000064/1028427.html",
         "kind": "web",
         "count": 1
       }
@@ -20889,7 +20694,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://x.com/kurasuzume_39/status/1985919952835264972?s=46",
         "kind": "web",
         "count": 1
       }
@@ -20948,7 +20753,7 @@ const EVENTS = [
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "",
+        "url": "https://drive.google.com/file/d/1ZuZhK-FUuhCW9wk_XyHtrAtuBEZao-MX/view?usp=drive_link",
         "kind": "web",
         "count": 1
       }

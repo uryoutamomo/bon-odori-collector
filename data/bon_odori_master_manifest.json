@@ -12,8 +12,8 @@
     "storage": "s3"
   },
   "database": "data/bon_odori_master.sqlite",
-  "database_checksum": "caeffc8c8597ebe8d17b2011db276525505892dfbf5587bb9249caf81c42edb1",
-  "database_updated_at": "2026-06-30T14:45:45.182297+00:00",
+  "database_checksum": "5c08b6f88ac467a3f92fa1b33a4435959379235d6e96845248c936068384ebfa",
+  "database_updated_at": "2026-07-01T11:11:22.051224+00:00",
   "dry_run": true,
   "generated_at": "2026-06-22T01:21:35.342436+00:00",
   "generated_by": "build_master_rdb.py",
@@ -35,8 +35,8 @@
   },
   "table_counts": {
     "event_investigation_tasks": 79,
-    "event_occurrences": 223,
-    "event_series": 222,
+    "event_occurrences": 226,
+    "event_series": 225,
     "evidence_items": 28421,
     "external_record_links": 2654,
     "historical_promotion_candidates": 15,
@@ -44,7 +44,7 @@
     "notion_sync_jobs": 10,
     "observed_occurrence_songs": 28105,
     "observed_occurrences": 1856,
-    "occurrence_dates": 173,
+    "occurrence_dates": 179,
     "occurrence_evidence_links": 2,
     "occurrence_song_evidence_links": 485,
     "occurrence_songs": 312,
@@ -52,8 +52,8 @@
     "schema_migrations": 1,
     "song_aliases": 141,
     "songs": 144,
-    "venue_aliases": 226,
-    "venues": 220,
+    "venue_aliases": 231,
+    "venues": 222,
     "write_batches": 0
   }
 }

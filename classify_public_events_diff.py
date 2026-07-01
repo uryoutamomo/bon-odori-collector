@@ -207,7 +207,27 @@ def normalized_generated_value(field, value):
     return value
 
 
+def source_url_set(value):
+    if not isinstance(value, list):
+        return set()
+    return {
+        str(item.get("url") or "").strip()
+        for item in value
+        if isinstance(item, dict) and str(item.get("url") or "").strip()
+    }
+
+
+def source_urls_semantically_equal(collector_value, site_value):
+    collector_urls = source_url_set(collector_value)
+    site_urls = source_url_set(site_value)
+    if not collector_urls:
+        return not site_urls
+    return collector_urls.issubset(site_urls)
+
+
 def values_differ(field, collector_value, site_value):
+    if field == "source_urls" and source_urls_semantically_equal(collector_value, site_value):
+        return False
     return normalized_generated_value(field, collector_value) != normalized_generated_value(field, site_value)
 
 

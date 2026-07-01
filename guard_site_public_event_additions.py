@@ -85,13 +85,35 @@ def classify_addition_diff(base_events: list[dict[str, Any]], current_events: li
     }
 
 
-def guard_decision(diff: dict[str, Any], expected_names: list[str]) -> dict[str, Any]:
+def modified_fields(item: dict[str, Any]) -> list[str]:
+    before = item.get("before") or {}
+    after = item.get("after") or {}
+    return sorted(field for field in set(before) | set(after) if before.get(field) != after.get(field))
+
+
+def guard_decision(
+    diff: dict[str, Any],
+    expected_names: list[str],
+    expected_removed_names: list[str] | None = None,
+    allow_source_url_modifications: bool = False,
+) -> dict[str, Any]:
     failures: list[str] = []
     warnings: list[str] = []
     added_names = [event.get("name") or "" for event in diff["added"]]
+    removed_names = [event.get("name") or "" for event in diff["removed"]]
+    expected_removed_names = expected_removed_names or []
     if diff["removed"]:
-        failures.append("removed_existing_public_events")
-    if diff["modified"]:
+        if expected_removed_names:
+            expected_removed_counter = Counter(expected_removed_names)
+            removed_counter = Counter(removed_names)
+            if removed_counter != expected_removed_counter:
+                failures.append("removed_events_do_not_match_expected_names")
+        else:
+            failures.append("removed_existing_public_events")
+    if diff["modified"] and (
+        not allow_source_url_modifications
+        or any(modified_fields(item) != ["source_urls"] for item in diff["modified"])
+    ):
         failures.append("modified_existing_public_events")
     if expected_names:
         expected_counter = Counter(expected_names)
@@ -161,7 +183,12 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
     if not isinstance(current_events, list):
         raise ValueError(f"{site_events_path} is not a JSON array")
     diff = classify_addition_diff(base_events, current_events)
-    decision = guard_decision(diff, args.expected_event_name)
+    decision = guard_decision(
+        diff,
+        args.expected_event_name,
+        args.expected_removed_event_name,
+        args.allow_source_url_modifications,
+    )
     result = {
         "generated_by": "guard_site_public_event_additions.py",
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -172,6 +199,8 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
         },
         "parameters": {
             "expected_event_names": args.expected_event_name,
+            "expected_removed_event_names": args.expected_removed_event_name,
+            "allow_source_url_modifications": args.allow_source_url_modifications,
         },
         "decision": decision,
         "summary": {
@@ -194,6 +223,8 @@ def main() -> int:
     parser.add_argument("--site-events-rel", type=Path, default=SITE_EVENTS_REL)
     parser.add_argument("--base-ref", default="HEAD")
     parser.add_argument("--expected-event-name", action="append", default=[])
+    parser.add_argument("--expected-removed-event-name", action="append", default=[])
+    parser.add_argument("--allow-source-url-modifications", action="store_true")
     parser.add_argument("--out-json", type=Path, default=OUT_JSON)
     parser.add_argument("--out-md", type=Path, default=OUT_MD)
     args = parser.parse_args()
