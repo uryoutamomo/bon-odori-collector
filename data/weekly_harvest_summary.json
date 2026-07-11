@@ -1,19 +1,19 @@
 {
   "generated_by": "prepare_weekly_harvest_review.py",
-  "generated_at": "2026-07-11T03:59:19.270969+00:00",
+  "generated_at": "2026-07-11T08:17:34.210270+00:00",
   "source": "build_weekly_harvest_candidates.py",
-  "source_generated_at": "2026-07-11T03:59:13.681397+00:00",
+  "source_generated_at": "2026-07-11T08:17:28.557745+00:00",
   "days": 3,
-  "voice_count": 359,
-  "candidate_count": 81,
+  "voice_count": 531,
+  "candidate_count": 89,
   "category_counts": {
-    "曲×会場共起": 7,
-    "曲候補": 68,
+    "曲×会場共起": 9,
+    "曲候補": 74,
     "用語候補": 6
   },
-  "non_song_review_count": 13,
-  "song_candidate_count": 68,
-  "song_direct_dry_run_count": 59,
+  "non_song_review_count": 15,
+  "song_candidate_count": 74,
+  "song_direct_dry_run_count": 65,
   "song_review_count": 0,
   "song_rejected_noise_count": 9,
   "review_files": {
@@ -31,15 +31,15 @@
       "ダンシングヒーロー × 大正大学",
       "あっぱれ音頭 × 大正大学",
       "あるいは踊り × 靖国神社",
+      "よさこいまた踊り × 大正大学",
+      "恵聖さん生唄の種物音頭 × 大正大学",
       "本番前最後の踊り × 大正大学",
       "江州音頭 × 隅田公園",
       "河内おとこ節 × 浄土寺",
       "腕光らせて踊り × 晴海ふ頭公園",
       "練習会",
       "踊り会",
-      "はしご",
-      "参戦",
-      "踊り始め"
+      "参戦"
     ],
     "song_review": []
   }

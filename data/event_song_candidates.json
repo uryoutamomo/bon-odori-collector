@@ -1,8 +1,8 @@
 {
   "generated_by": "build_event_song_candidates.py",
-  "count": 834,
+  "count": 837,
   "public_event_count": 321,
-  "review_count": 513,
+  "review_count": 516,
   "candidates": [
     {
       "id": "9870f5a616f1a007",
@@ -6605,7 +6605,7 @@
       "evidence_count": 1
     },
     {
-      "id": "a5607f01213b8394",
+      "id": "e7bd6612134c279d",
       "song_name": "ダンシングヒーロー",
       "event_name": "第15回 鴨台盆踊り",
       "venue": "大正大学",
@@ -6616,6 +6616,12 @@
         "known_song_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=M9tR7LhJ3EU",
+          "date": "2026-07-11T08:00:12+00:00",
+          "text": "Tokyo Lonely Walker\n鴨台盆踊り ダンシングヒーロー｜ultra soul｜おジャ魔女カーニバル!!｜ 他 2026 大正大学 / Bon dance in Taisho University. [4K]🇯🇵\n大正大学で『第16回 鴨台盆踊り「◯をかけろ（わをかけろ）」』が開催されました。\n授業の一環として大学生が主催をし、「巣鴨三大盆踊りの一つ」とも呼ばれる人気の盆踊りです。\n学生の皆さま、今年も素敵な空間をありがとうございました！\n\nTaisho University hosted the “16th Kamodai Bon Odori.” This popular Bon Odori event is organized by university students as part of their coursework. Thank you to all the students for creatin"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=pol6M4T7vXI",
@@ -6642,7 +6648,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 4
+      "evidence_count": 5
     },
     {
       "id": "cb35c7023852dbc2",
@@ -17927,6 +17933,28 @@
       "evidence_count": 1
     },
     {
+      "id": "4ba0bb59b5a5745c",
+      "song_name": "土支田八幡宮氏子中納涼踊り",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/ji_ma_san/status/2075851362873888819",
+          "date": "2026-07-11T07:55:07+00:00",
+          "text": "平和島\n西練馬側のイベント関連（20260711Ver）\n\n12日\nガラクタ公園三防災会防災フェア\n場所：ガラクタ公園　練馬区貫井4-2−20\n時間：午前9:30～\n主催：貫井町会三防災会\nhttps://t.co/bPvqHgJ4KR\n\n17～18日\nしもしゃく祭り\n場所：昭和通り（下石神井商店街振興組合メイン通り）\n時間：午後5:00〜8:50\n主催：下石神井商店街振興組合\nhttps://t.co/dD9bg56mWv\n\n17〜18日\n土支田八幡宮境内盆踊り\n場所：土支田八幡宮境内　練馬区土支田4-28-1\n時間：午後6:30～\n主催：土支田八幡宮氏子中納涼踊り実行委員会\n\n17～18日\n南田中町会盆踊り\n場所：南田中稲荷神社境内　練馬区南田中5-14-14\n時間：午後6:00～9:00\n主催：南田中町会\n\n18日\n関北夏まつり2026\n場所：関町北小学校校庭　練馬区関町北5-13-40\n時間：午後4:00～8:00\n主催"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
       "id": "f9f79a159370419d",
       "song_name": "夕方も暑さが続く季節",
       "event_name": "盆踊り大会",
@@ -23331,6 +23359,28 @@
       "evidence_count": 1
     },
     {
+      "id": "1c3aeb61ec0c6105",
+      "song_name": "よさこいまた踊り",
+      "event_name": "第15回 鴨台盆踊り",
+      "venue": "大正大学",
+      "area": "豊島区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/bangqiu1094/status/2075851425931042960",
+          "date": "2026-07-11T07:55:22+00:00",
+          "text": "あんじ〜⚾️\n大正大学の盆踊りに来たのによさこいの総踊りの『正調』を踊っていた\n懐かしい\nよさこいまた踊りたい！\n\nちなみに正調は上手く踊れないのです💦 https://t.co/h019BlGZxw"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
       "id": "a66a05c903f5d252",
       "song_name": "交野節",
       "event_name": "第15回 鴨台盆踊り",
@@ -23403,6 +23453,28 @@
           "url": "https://www.youtube.com/watch?v=0ZDUIo3VM3Y",
           "date": "2025-07-05T07:00:01Z",
           "text": "和太鼓お祭りチャンネル\n巣鴨音頭　2025年大正大学「第15回鴨台盆踊り」４　東京都豊島区\n2025年7月4日に行われました、\n「大正大学　第15回鴨台盆踊り」の様子です。\n\n\n大正大学盆踊り\n大正大学校歌　https://youtu.be/5j4qts5Tl8Q\n１東京音頭　https://youtu.be/j5LH8xdLRYE\n２恋するフォーチュンクッキー　https://youtu.be/LRQhnOL4BxA\n３炭坑節　https://youtu.be/N9tUPCi3vDs\n４巣鴨音頭　https://youtu.be/0ZDUIo3VM3Y\n５アイドル　https://youtu.be/PBkuLkvutgE\n６みなとヨイサ　https://youtu.be/Rn1S2DWxgTA\n７おジャ魔女カーニバル　https://youtu.be/qsacokB8VWE\n８飛島音頭　https://youtu.be/Ker"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "df8cc47ae8999b12",
+      "song_name": "恵聖さん生唄の種物音頭",
+      "event_name": "第15回 鴨台盆踊り",
+      "venue": "大正大学",
+      "area": "豊島区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/natsutr_bon/status/2075838433046704623",
+          "date": "2026-07-11T07:03:44+00:00",
+          "text": "奈津大郎〘ナツタロ〙\n7/10 鴨台盆踊り@大正大学\n\n学生主体の運営で毎年元気満点ですが、大学創立100周年の今年は書道研究会が大書したとおり「踊躍」でした🎊\n\n伝統の大正大学校歌にご当地巣鴨音頭、恵聖さん生唄の種物音頭から、アイドル(手ぬぐい)、おジャ魔女、ダンヒロ〜🤩\n新曲倍倍FIGHT！の弾けっぷりスゴかった🔥 https://t.co/vVtMkzvKPN"
         }
       ],
       "already_public": false,
