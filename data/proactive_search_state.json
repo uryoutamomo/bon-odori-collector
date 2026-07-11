@@ -1460,7 +1460,403 @@
       "last_status": "unconfirmed",
       "confirmed_count": 0,
       "checked_count": 5
+    },
+    "jr日暮里駅前広場|jr日暮里駅前広場": {
+      "venue": "JR日暮里駅前広場",
+      "event_name": "JR日暮里駅前広場",
+      "months": [
+        9
+      ],
+      "last_checked_at": "2026-07-11T03:58:40.167951+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "jr蒲田駅西口駅前広場(駅前会場)|蒲田国際フェスティバル2025-世界が出会う下町フェス": {
+      "venue": "JR蒲田駅西口駅前広場(駅前会場)",
+      "event_name": "蒲田国際フェスティバル2025 -世界が出会う下町フェス",
+      "months": [
+        9
+      ],
+      "last_checked_at": "2026-07-11T03:58:40.167951+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "すみだ公園（隅田公園・墨田区側）|すみだ公園（隅田公園・墨田区側）": {
+      "venue": "すみだ公園（隅田公園・墨田区側）",
+      "event_name": "すみだ公園（隅田公園・墨田区側）",
+      "months": [
+        9
+      ],
+      "last_checked_at": "2026-07-11T03:58:40.167951+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "アーク・カラヤン広場（アークヒルズ）|アーク・カラヤン広場（アークヒルズ）": {
+      "venue": "アーク・カラヤン広場（アークヒルズ）",
+      "event_name": "アーク・カラヤン広場（アークヒルズ）",
+      "months": [
+        9
+      ],
+      "last_checked_at": "2026-07-11T03:58:40.167951+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "中之郷公園（中之郷児童遊園）|中之郷公園（中之郷児童遊園）": {
+      "venue": "中之郷公園（中之郷児童遊園）",
+      "event_name": "中之郷公園（中之郷児童遊園）",
+      "months": [
+        9
+      ],
+      "last_checked_at": "2026-07-11T03:58:40.167951+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "中和小学校|菊川一丁目町会菊一お祭り広場・盆踊り大会": {
+      "venue": "中和小学校",
+      "event_name": "菊川一丁目町会 菊一お祭り広場・盆踊り大会",
+      "months": [
+        9
+      ],
+      "last_checked_at": "2026-07-11T03:58:40.167951+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "伸成町会会館前路上|押上三丁目伸成町会飛木稲荷神社神幸大祭祭礼踊り": {
+      "venue": "伸成町会会館前 路上",
+      "event_name": "押上三丁目伸成町会 飛木稲荷神社神幸大祭 祭礼踊り",
+      "months": [
+        9
+      ],
+      "last_checked_at": "2026-07-11T03:58:40.167951+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "八潮公園|八潮公園": {
+      "venue": "八潮公園",
+      "event_name": "八潮公園",
+      "months": [
+        9
+      ],
+      "last_checked_at": "2026-07-11T03:58:40.167951+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "六本木天祖神社|六本木天祖神社": {
+      "venue": "六本木天祖神社",
+      "event_name": "六本木天祖神社",
+      "months": [
+        9
+      ],
+      "last_checked_at": "2026-07-11T03:58:40.167951+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "原町天祖神社|原町一丁目町会天祖神社例大祭盆踊り": {
+      "venue": "原町天祖神社",
+      "event_name": "原町一丁目町会 天祖神社例大祭 盆踊り",
+      "months": [
+        9
+      ],
+      "last_checked_at": "2026-07-11T03:58:40.167951+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "向島1丁目旧町会会館前|向島一丁目牛嶋神社ミニ奉納踊り": {
+      "venue": "向島1丁目旧町会会館前",
+      "event_name": "向島一丁目 牛嶋神社 ミニ奉納踊り",
+      "months": [
+        9
+      ],
+      "last_checked_at": "2026-07-11T03:58:40.167951+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "報恩寺境内|太平一丁目牛嶋神社奉納踊り": {
+      "venue": "報恩寺境内",
+      "event_name": "太平一丁目 牛嶋神社 奉納踊り",
+      "months": [
+        9
+      ],
+      "last_checked_at": "2026-07-11T03:58:40.167951+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "大横川親水公園|大横川親水公園": {
+      "venue": "大横川親水公園",
+      "event_name": "大横川親水公園",
+      "months": [
+        9
+      ],
+      "last_checked_at": "2026-07-11T03:58:40.167951+00:00",
+      "last_status": "confirmed",
+      "confirmed_count": 1,
+      "checked_count": 1
+    },
+    "小山台公園|小山台公園": {
+      "venue": "小山台公園",
+      "event_name": "小山台公園",
+      "months": [
+        9
+      ],
+      "last_checked_at": "2026-07-11T03:58:40.167951+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "小梅児童遊園|小梅児童遊園": {
+      "venue": "小梅児童遊園",
+      "event_name": "小梅児童遊園",
+      "months": [
+        9
+      ],
+      "last_checked_at": "2026-07-11T03:58:40.167951+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "平塚中央公園|平塚中央公園": {
+      "venue": "平塚中央公園",
+      "event_name": "平塚中央公園",
+      "months": [
+        9
+      ],
+      "last_checked_at": "2026-07-11T03:58:40.167951+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "戸越八幡神社|戸越八幡神社例大祭盆踊り": {
+      "venue": "戸越八幡神社",
+      "event_name": "戸越八幡神社例大祭 盆踊り",
+      "months": [
+        9
+      ],
+      "last_checked_at": "2026-07-11T03:58:40.167951+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "押上二丁目町会会館前路上|押上二丁目町会会館前路上": {
+      "venue": "押上二丁目町会会館前 路上",
+      "event_name": "押上二丁目町会会館前 路上",
+      "months": [
+        9
+      ],
+      "last_checked_at": "2026-07-11T03:58:40.167951+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "旗岡八幡神社|旗岡八幡神社": {
+      "venue": "旗岡八幡神社",
+      "event_name": "旗岡八幡神社",
+      "months": [
+        9
+      ],
+      "last_checked_at": "2026-07-11T03:58:40.167951+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "日進公園|日進公園": {
+      "venue": "日進公園",
+      "event_name": "日進公園",
+      "months": [
+        9
+      ],
+      "last_checked_at": "2026-07-11T03:58:40.167951+00:00",
+      "last_status": "confirmed",
+      "confirmed_count": 1,
+      "checked_count": 1
+    },
+    "本四三ツ目児童遊園（三つ目児童公園）|本四三ツ目児童遊園（三つ目児童公園）": {
+      "venue": "本四三ツ目児童遊園（三つ目児童公園）",
+      "event_name": "本四三ツ目児童遊園（三つ目児童公園）",
+      "months": [
+        9
+      ],
+      "last_checked_at": "2026-07-11T03:58:40.167951+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "江東天祖神社（亀戸天祖神社）|江東天祖神社（亀戸天祖神社）": {
+      "venue": "江東天祖神社（亀戸天祖神社）",
+      "event_name": "江東天祖神社（亀戸天祖神社）",
+      "months": [
+        9
+      ],
+      "last_checked_at": "2026-07-11T03:58:40.167951+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "牛嶋神社|牛嶋神社祭礼奉納踊り": {
+      "venue": "牛嶋神社",
+      "event_name": "牛嶋神社祭礼 奉納踊り",
+      "months": [
+        9
+      ],
+      "last_checked_at": "2026-07-11T03:58:40.167951+00:00",
+      "last_status": "confirmed",
+      "confirmed_count": 1,
+      "checked_count": 1
+    },
+    "田原小学校|田原小学校": {
+      "venue": "田原小学校",
+      "event_name": "田原小学校",
+      "months": [
+        9
+      ],
+      "last_checked_at": "2026-07-11T03:58:40.167951+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "白金台どんぐり児童遊園|白金台どんぐり児童遊園": {
+      "venue": "白金台どんぐり児童遊園",
+      "event_name": "白金台どんぐり児童遊園",
+      "months": [
+        9
+      ],
+      "last_checked_at": "2026-07-11T03:58:40.167951+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "石一町会会館前|石原一丁目牛嶋神社奉納踊り": {
+      "venue": "石一町会会館前",
+      "event_name": "石原一丁目 牛嶋神社 奉納踊り",
+      "months": [
+        9
+      ],
+      "last_checked_at": "2026-07-11T03:58:40.167951+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "網代公園|網代公園": {
+      "venue": "網代公園",
+      "event_name": "網代公園",
+      "months": [
+        9
+      ],
+      "last_checked_at": "2026-07-11T03:58:40.167951+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "緑町公園|緑町公園": {
+      "venue": "緑町公園",
+      "event_name": "緑町公園",
+      "months": [
+        9
+      ],
+      "last_checked_at": "2026-07-11T03:58:40.167951+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "芝新堀町児童遊園|芝新堀町児童遊園": {
+      "venue": "芝新堀町児童遊園",
+      "event_name": "芝新堀町児童遊園",
+      "months": [
+        9
+      ],
+      "last_checked_at": "2026-07-11T03:58:40.167951+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "若宮公園|若宮公園": {
+      "venue": "若宮公園",
+      "event_name": "若宮公園",
+      "months": [
+        9
+      ],
+      "last_checked_at": "2026-07-11T03:58:40.167951+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "西大井広場公園|品川区民まつり西大井広場公園盆踊り": {
+      "venue": "西大井広場公園",
+      "event_name": "品川区民まつり 西大井広場公園 盆踊り",
+      "months": [
+        9
+      ],
+      "last_checked_at": "2026-07-11T03:58:40.167951+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "豊町一丁目会館前|戸越八幡神社例大祭奉納盆踊り大会": {
+      "venue": "豊町一丁目会館前",
+      "event_name": "戸越八幡神社例大祭 奉納盆踊り大会",
+      "months": [
+        9
+      ],
+      "last_checked_at": "2026-07-11T03:58:40.167951+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "赤坂氷川神社|赤坂氷川祭盆踊り大会": {
+      "venue": "赤坂氷川神社",
+      "event_name": "赤坂氷川祭 盆踊り大会",
+      "months": [
+        9
+      ],
+      "last_checked_at": "2026-07-11T03:58:40.167951+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "長谷寺（西麻布・麻布大観音）|長谷寺（西麻布・麻布大観音）": {
+      "venue": "長谷寺（西麻布・麻布大観音）",
+      "event_name": "長谷寺（西麻布・麻布大観音）",
+      "months": [
+        9
+      ],
+      "last_checked_at": "2026-07-11T03:58:40.167951+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "青葉公園（港区立）|青葉公園（港区立）": {
+      "venue": "青葉公園（港区立）",
+      "event_name": "青葉公園（港区立）",
+      "months": [
+        9
+      ],
+      "last_checked_at": "2026-07-11T03:58:40.167951+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
+    },
+    "飛木稲荷神社|飛木稲荷神社": {
+      "venue": "飛木稲荷神社",
+      "event_name": "飛木稲荷神社",
+      "months": [
+        9
+      ],
+      "last_checked_at": "2026-07-11T03:58:40.167951+00:00",
+      "last_status": "unconfirmed",
+      "confirmed_count": 0,
+      "checked_count": 1
     }
   },
-  "updated_at": "2026-06-29T11:33:10.022250+00:00"
+  "updated_at": "2026-07-11T03:58:40.167951+00:00"
 }

@@ -417,30 +417,6 @@
     ]
   },
   {
-    "name": "入船三丁目町会納涼盆踊り",
-    "venue": "入船三丁目町会周辺（会場未確認）",
-    "area": "中央区",
-    "date": null,
-    "songs": [
-      {
-        "name": "バハマ・ママ",
-        "confidence": "hint"
-      },
-      {
-        "name": "大東京音頭",
-        "confidence": "hint"
-      },
-      {
-        "name": "東京音頭",
-        "confidence": "hint"
-      },
-      {
-        "name": "炭坑節",
-        "confidence": "hint"
-      }
-    ]
-  },
-  {
     "name": "イベント名未確認（晴海ふ頭公園）",
     "venue": "晴海ふ頭公園",
     "area": "中央区",
@@ -1481,42 +1457,6 @@
     ]
   },
   {
-    "name": "佐竹ゲバゲバ盆踊り",
-    "venue": "佐竹商店街アーケード下",
-    "area": "台東区",
-    "date": "2026-07-18",
-    "songs": [
-      {
-        "name": "佐竹音頭",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_announced",
-        "basis_label": "今年告知"
-      },
-      {
-        "name": "クックロビン音頭",
-        "confidence": "hint",
-        "probability": 85,
-        "basis": "current_announced",
-        "basis_label": "今年告知"
-      },
-      {
-        "name": "ダンシングヒーロー",
-        "confidence": "hint",
-        "probability": 85,
-        "basis": "current_announced",
-        "basis_label": "今年告知"
-      },
-      {
-        "name": "電線マン音頭",
-        "confidence": "hint",
-        "probability": 85,
-        "basis": "current_announced",
-        "basis_label": "今年告知"
-      }
-    ]
-  },
-  {
     "name": "東本願寺盆踊り",
     "venue": "東本願寺（浅草）",
     "area": "台東区",
@@ -2471,42 +2411,42 @@
     "name": "SHIBUYA MIYASHITA PARK BON DANCE",
     "venue": "宮下公園",
     "area": "渋谷区",
-    "date": "2026-09-26",
+    "date": "2025-09-27",
     "songs": [
       {
         "name": "ダンシングヒーロー",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "外国人も一緒になって阿波踊り",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "東京音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "激混み会場で外国人も踊り",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "阿波踊り",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       }
     ]
   },
