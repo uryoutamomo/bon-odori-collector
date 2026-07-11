@@ -1,6 +1,6 @@
 {
   "generated_by": "build_song_ocr_queue.py",
-  "count": 13,
+  "count": 15,
   "items": [
     {
       "id": "b21783a2a9785946",
@@ -199,6 +199,37 @@
         "pic.x.com/qdvxuaYQVw"
       ],
       "text": "川崎市多摩区の盆踊り情報🏮\n\n川崎市立稲田中学校\n7/25.7/26\n最寄りは南武線宿河原駅\n\n以前は多摩川音頭、宿河原音頭、郡上かわさきとか沢山の曲がかかってたんだけど、最近は曲目減っちゃったから、多分今年も行かないな……… https://t.co/qdvxuaYQVw",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "a5a45b01716a8bc1",
+      "status": "needs_ocr",
+      "account": "@bonodori_tais",
+      "url": "https://x.com/bonodori_tais/status/2075871014240809470",
+      "tweet_id": "2075871014240809470",
+      "date": "2026-07-11T09:13:12+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2075870914168913920/img/GqgZu8qcfcqiz1pX.jpg",
+        "https://t.co/9rXY1i43aV",
+        "pic.x.com/9rXY1i43aV"
+      ],
+      "text": "第16回鴨台盆踊り 2日目の盆踊りがいよいよスタートしました！！！\n\n3部構成になっていますので、ぜひ曲目にも注目して踊ってみてください🕺\n\nここから、さらに盛り上がっていきます🔥\n\n#第16回鴨台盆踊り　#鴨台盆踊り　#大正大学　#盆踊り　＃盆オドラー https://t.co/9rXY1i43aV",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "03bd67d91f59a19f",
+      "status": "needs_ocr",
+      "account": "@bonodori_tais",
+      "url": "https://x.com/bonodori_tais/status/2075880132565426520",
+      "tweet_id": "2075880132565426520",
+      "date": "2026-07-11T09:49:26+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2075879851773566976/img/clwRvjwi4Bp8vmfp.jpg",
+        "https://t.co/AtJGyyERzs",
+        "pic.x.com/AtJGyyERzs",
+        "https://pbs.twimg.com/amplify_video_thumb/2075879574265901056/img/J_9pZFxCxOmRvDvt.jpg"
+      ],
+      "text": "盆踊り第2部がスタートしました！！！\n\n「中夜　地域連携」をテーマに、これまで鴨台盆踊りと繋がり、関わりを持つ楽曲を中心に踊ります🐙\n\nぜひ曲目にも注目して踊ってみてください🕺\n\n#第16回鴨台盆踊り　#鴨台盆踊り　#大正大学　#盆踊り　＃盆オドラー https://t.co/AtJGyyERzs",
       "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
     }
   ]

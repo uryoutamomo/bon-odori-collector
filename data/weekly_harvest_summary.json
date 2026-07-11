@@ -1,21 +1,21 @@
 {
   "generated_by": "prepare_weekly_harvest_review.py",
-  "generated_at": "2026-07-11T08:17:34.210270+00:00",
+  "generated_at": "2026-07-11T13:33:37.476072+00:00",
   "source": "build_weekly_harvest_candidates.py",
-  "source_generated_at": "2026-07-11T08:17:28.557745+00:00",
+  "source_generated_at": "2026-07-11T13:33:31.854743+00:00",
   "days": 3,
-  "voice_count": 531,
-  "candidate_count": 89,
+  "voice_count": 760,
+  "candidate_count": 120,
   "category_counts": {
-    "曲×会場共起": 9,
-    "曲候補": 74,
-    "用語候補": 6
+    "曲×会場共起": 15,
+    "曲候補": 97,
+    "用語候補": 8
   },
-  "non_song_review_count": 15,
-  "song_candidate_count": 74,
-  "song_direct_dry_run_count": 65,
+  "non_song_review_count": 23,
+  "song_candidate_count": 97,
+  "song_direct_dry_run_count": 86,
   "song_review_count": 0,
-  "song_rejected_noise_count": 9,
+  "song_rejected_noise_count": 11,
   "review_files": {
     "non_song_json": "data/weekly_harvest_review_candidates.json",
     "non_song_ui": "data/weekly_harvest_review_ui.html",
@@ -29,17 +29,17 @@
   "samples": {
     "non_song_review": [
       "ダンシングヒーロー × 大正大学",
+      "万博音頭 × 大正大学",
       "あっぱれ音頭 × 大正大学",
       "あるいは踊り × 靖国神社",
       "よさこいまた踊り × 大正大学",
+      "交野節 × 大正大学",
+      "人と地域がつながる季節 × 大正大学",
+      "仏像音頭 × 大正大学",
       "恵聖さん生唄の種物音頭 × 大正大学",
       "本番前最後の踊り × 大正大学",
-      "江州音頭 × 隅田公園",
-      "河内おとこ節 × 浄土寺",
-      "腕光らせて踊り × 晴海ふ頭公園",
-      "練習会",
-      "踊り会",
-      "参戦"
+      "東京音頭 × 大正大学",
+      "江州音頭 × 隅田公園"
     ],
     "song_review": []
   }
