@@ -1,0 +1,52 @@
+{
+  "updated_at": "2026-07-11",
+  "updated_by": "おと（Codex）",
+  "purpose": "Individual bon-odori dancers and field reporters who are manually known to provide high-value future-event evidence such as official poster or flyer images. These accounts are discovery and corroboration sources, not official/organizer accounts.",
+  "accounts": [
+    {
+      "handle": "@natsutr_bon",
+      "name": "なつたろ",
+      "description": "盆踊ラー。これからの盆踊り情報、公式ポスター、チラシ、現地掲示画像の重要な情報提供者。",
+      "source_type": "important_informant",
+      "trust_level": "trusted_field_reporter",
+      "manual_status": "優先",
+      "score_status": "trusted",
+      "confidence": "high",
+      "usefulness_rank": "S",
+      "usefulness_score": 98,
+      "score_floor": 9,
+      "collection_enabled": true,
+      "role_tags": [
+        "発見型",
+        "裏取り型",
+        "参加レポ型"
+      ],
+      "notes": "内田さん確認: 特に重要。今後開催される盆踊りの公式ポスター/チラシ画像を投稿することがあり、画像OCR対象として最優先に扱う。"
+    },
+    {
+      "handle": "@gPVEQeAD9U10257",
+      "name": "卯ケン",
+      "description": "盆踊ラー。公式情報のポスターやチラシ画像を投稿する重要な情報提供者。",
+      "location": "東京 板橋区",
+      "source_type": "important_informant",
+      "trust_level": "trusted_field_reporter",
+      "manual_status": "優先",
+      "score_status": "trusted",
+      "confidence": "high",
+      "usefulness_rank": "S",
+      "usefulness_score": 95,
+      "score_floor": 8,
+      "collection_enabled": true,
+      "role_tags": [
+        "発見型",
+        "裏取り型",
+        "参加レポ型"
+      ],
+      "evidence_url": "https://x.com/gPVEQeAD9U10257/status/2070451837338091585",
+      "previous_handles": [
+        "@jhf6giih6918081"
+      ],
+      "notes": "内田さん確認: とても重要な盆踊ラーかつ情報提供者。公式情報のポスターなどを画像でアップしており、未来イベントの正確な日時把握に有用。公開前には投稿画像・本文・主催元を確認する。"
+    }
+  ]
+}

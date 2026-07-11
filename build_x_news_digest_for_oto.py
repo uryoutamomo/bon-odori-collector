@@ -27,6 +27,7 @@ PUBLIC_EVENTS = DATA / "public" / "events_public.json"
 VENUE_MASTER = DATA / "venue_master.json"
 VOICES = DATA / "voices.json"
 X_ACCOUNT_CANDIDATES = DATA / "x_candidate_accounts.json"
+IMPORTANT_INFORMANTS = DATA / "x_important_informants.json"
 OUT_JSON = DATA / "x_news_digest_for_oto.json"
 OUT_MD = DATA / "x_news_digest_for_oto.md"
 
@@ -38,6 +39,7 @@ DATE_HINT_RE = re.compile(
     r"(?:20\d{2}[/-]\d{1,2}[/-]\d{1,2}|20\d{2}年\d{1,2}月\d{1,2}日?|"
     r"\d{1,2}月\d{1,2}日?|\d{1,2}/\d{1,2}|[午前午後]\d{1,2}時|\d{1,2}:\d{2})"
 )
+POSTER_IMAGE_HINT_RE = re.compile(r"(?:ポスター|チラシ|フライヤー|掲示|回覧|町会|自治会|お知らせ|告知|案内)")
 EVENT_NAME_RE = re.compile(
     r"([一-龥ぁ-んァ-ヶA-Za-z0-9・ーｰ（）()「」『』【】#\s]{2,40}"
     r"(?:盆踊り|盆おどり|ぼんおどり|民踊大会|納涼大会|夏祭り|まつり|BON-ODORI|Bon\s*Odori))",
@@ -91,6 +93,22 @@ def unique_names(rows):
         seen.add(key)
         out.append(name)
     return out
+
+
+def norm_handle(value):
+    return str(value or "").strip().lstrip("@").lower()
+
+
+def load_important_informant_profiles(path=IMPORTANT_INFORMANTS):
+    payload = load_json(path, {})
+    profiles = {}
+    for row in payload.get("accounts") or []:
+        if not isinstance(row, dict) or row.get("collection_enabled") is False:
+            continue
+        handle = norm_handle(row.get("handle"))
+        if handle:
+            profiles[handle] = row
+    return profiles
 
 
 def load_master_catalog(master_db=MASTER_DB):
@@ -311,6 +329,16 @@ def classify_information(event_names, venue_names, song_names, event_matches, ve
     return "noise_or_duplicate", "unclear", "イベント・曲・会場としての照合材料が不足"
 
 
+def is_poster_image_candidate(row, text, important_profiles):
+    media_urls = row.get("media_urls") or []
+    if not media_urls:
+        return False
+    handle = norm_handle(row.get("account") or row.get("author"))
+    if handle in important_profiles and BON_CONTEXT_RE.search(text):
+        return True
+    return bool(BON_CONTEXT_RE.search(text) and (POSTER_IMAGE_HINT_RE.search(text) or DATE_HINT_RE.search(text)))
+
+
 def machine_digest_summary(info_type, event_names, venue_names, song_names, event_matches, venue_matches, text):
     parts = []
     if event_names:
@@ -325,7 +353,9 @@ def machine_digest_summary(info_type, event_names, venue_names, song_names, even
         parts.append(f"既存会場「{venue_matches[0]['name']}」に関するX由来情報")
     else:
         parts.append("盆踊り関連のX由来情報")
-    if info_type == "event_update_candidate":
+    if info_type == "event_poster_ocr_candidate":
+        parts.append("画像内のポスター/チラシに開催日・時間・会場が含まれる可能性が高い")
+    elif info_type == "event_update_candidate":
         parts.append("開催日・開催有無・場所などの更新情報の可能性がある")
     elif info_type == "song_usage_candidate":
         parts.append("曲目または踊られた曲の証拠になる可能性がある")
@@ -347,8 +377,9 @@ def web_queries(event_names, venue_names, song_names, area):
     return queries
 
 
-def build_candidates(voices, catalog, limit=None, account_profiles=None):
+def build_candidates(voices, catalog, limit=None, account_profiles=None, important_profiles=None):
     account_profiles = account_profiles or {}
+    important_profiles = important_profiles or {}
     event_index = sorted_index(catalog["events"])
     venue_index = sorted_index(catalog["venues"])
     song_index = sorted_index(catalog["songs"])
@@ -382,6 +413,11 @@ def build_candidates(voices, catalog, limit=None, account_profiles=None):
             song_matches,
             has_date,
         )
+        poster_candidate = is_poster_image_candidate(row, text, important_profiles)
+        if info_type == "noise_or_duplicate" and poster_candidate:
+            info_type = "event_poster_ocr_candidate"
+            novelty = "review_needed"
+            reason = "画像付き投稿。ポスター/チラシOCRでイベント名・開催日・時間・会場を抽出すべき候補"
         if info_type == "noise_or_duplicate":
             continue
         if novelty == "known" and not song_matches:
@@ -400,6 +436,7 @@ def build_candidates(voices, catalog, limit=None, account_profiles=None):
             "source_urls": [url] if url else [],
             "source_authors": [source_author] if source_author else [],
             "source_text_excerpt": short_text(text),
+            "source_media_urls": row.get("media_urls") or [],
             "oto_review_status": "pending",
             "machine_digest_summary": summary,
             "oto_interpreted_summary": "",
@@ -422,10 +459,25 @@ def build_candidates(voices, catalog, limit=None, account_profiles=None):
             "promotion_target": promotion_target(info_type),
             "source_tags": row.get("tags") or [],
         }
+        if poster_candidate:
+            handle = norm_handle(source_author)
+            trusted_profile = important_profiles.get(handle, {})
+            candidate["confidence"] = "high"
+            candidate["poster_image_evidence"] = {
+                "status": "needs_ocr",
+                "priority": "critical" if trusted_profile else "high",
+                "evidence_type": "trusted_field_reporter_poster_image"
+                if trusted_profile
+                else "poster_or_flyer_image",
+                "assumed_source_confidence": "high" if trusted_profile else "medium",
+                "trusted_informant": bool(trusted_profile),
+                "trusted_informant_rank": trusted_profile.get("usefulness_rank") or "",
+                "ocr_target_fields": ["event_name", "date", "time", "venue", "organizer"],
+            }
         candidate["source_officiality"] = assess_source_officiality(
             candidate,
             voice=row,
-            account_profiles=account_profiles,
+            account_profiles={**account_profiles, **important_profiles},
         )
         candidates.append(candidate)
         if limit and len(candidates) >= limit:
@@ -441,6 +493,8 @@ def build_candidates(voices, catalog, limit=None, account_profiles=None):
 
 
 def confidence_label(info_type, novelty, event_matches, venue_matches, song_names, has_date):
+    if info_type == "event_poster_ocr_candidate":
+        return "high"
     if novelty == "new" and (event_matches or venue_matches or has_date):
         return "medium"
     if info_type == "event_update_candidate" and has_date:
@@ -453,22 +507,23 @@ def confidence_label(info_type, novelty, event_matches, venue_matches, song_name
 
 
 def confidence_sort(value):
-    return {"medium": 0, "low": 1, "hold": 2}.get(value, 9)
+    return {"high": 0, "medium": 1, "low": 2, "hold": 3}.get(value, 9)
 
 
 def information_type_sort(value):
     return {
         "event_update_candidate": 0,
-        "new_song_candidate": 1,
-        "song_usage_candidate": 2,
-        "new_venue_candidate": 3,
-        "new_event_candidate": 4,
-        "atmosphere_or_scale_evidence": 5,
+        "event_poster_ocr_candidate": 1,
+        "new_song_candidate": 2,
+        "song_usage_candidate": 3,
+        "new_venue_candidate": 4,
+        "new_event_candidate": 5,
+        "atmosphere_or_scale_evidence": 6,
     }.get(value, 9)
 
 
 def promotion_target(info_type):
-    if info_type in {"new_event_candidate", "event_update_candidate"}:
+    if info_type in {"new_event_candidate", "event_update_candidate", "event_poster_ocr_candidate"}:
         return "event"
     if info_type in {"new_song_candidate", "song_usage_candidate"}:
         return "song"
@@ -483,7 +538,14 @@ def build(voices_path=VOICES, master_db=MASTER_DB, limit=None):
     voices = load_json(voices_path, [])
     catalog = load_master_catalog(master_db)
     account_profiles = load_account_profiles(X_ACCOUNT_CANDIDATES)
-    candidates = build_candidates(voices, catalog, limit=limit, account_profiles=account_profiles)
+    important_profiles = load_important_informant_profiles()
+    candidates = build_candidates(
+        voices,
+        catalog,
+        limit=limit,
+        account_profiles=account_profiles,
+        important_profiles=important_profiles,
+    )
     counts = Counter(row["information_type"] for row in candidates)
     novelty_counts = Counter(row["novelty_assessment"] for row in candidates)
     officiality_counts = Counter(
