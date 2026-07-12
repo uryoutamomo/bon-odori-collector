@@ -1566,28 +1566,70 @@ const EVENTS = [
     ],
     "songs": [
       {
+        "name": "Let's ONDO Again（レッツ オンド アゲイン）",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
         "name": "きよしのズンドコ節",
-        "confidence": "hint"
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "これがお江戸の盆ダンス",
-        "confidence": "hint"
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ジャンボリミッキー",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ダンシングヒーロー",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "東京五輪音頭",
-        "confidence": "hint"
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "東京五輪音頭-2020-",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "東京音頭",
-        "confidence": "hint"
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "河内おとこ節",
-        "confidence": "hint"
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "炭坑節",
-        "confidence": "hint"
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "銀座カンカン娘",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
       }
     ],
     "public_status": "upcoming_confirmed",
