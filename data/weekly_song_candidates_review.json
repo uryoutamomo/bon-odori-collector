@@ -1,6 +1,28 @@
 {
   "generated_by": "triage_weekly_song_candidates.py",
   "source": "data/weekly_harvest_candidates.json",
-  "count": 0,
-  "rows": []
+  "count": 1,
+  "rows": [
+    {
+      "category": "曲候補",
+      "type": "曲名",
+      "term": "郡上おどり",
+      "interpretation": "郡上おどり",
+      "confidence": "要レビュー",
+      "reason": "曲名抽出器で検出: known_song_context, song_suffix_near_context",
+      "evidence_count": 1,
+      "evidence": [
+        {
+          "url": "https://x.com/M125M8qgyhWueHS/status/2076197022546403646",
+          "date": "2026-07-12T06:48:38+00:00",
+          "account": "@M125M8qgyhWueHS",
+          "text": "今年も作ります #郡上おどりトート #夢中で描いてたら踊りに行く時間でした #今日はここまで https://t.co/Fau774ocCK"
+        }
+      ],
+      "evidence_text": "今年も作ります #郡上おどりトート #夢中で描いてたら踊りに行く時間でした #今日はここまで https://t.co/Fau774ocCK",
+      "evidence_url": "https://x.com/M125M8qgyhWueHS/status/2076197022546403646",
+      "canonical_song_name": "郡上おどり",
+      "triage_reason": "多義語・イベント名・ジャンル名の可能性がある"
+    }
+  ]
 }

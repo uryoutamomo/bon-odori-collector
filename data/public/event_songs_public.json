@@ -194,168 +194,168 @@
     "name": "丸の内de盆踊り",
     "venue": "行幸通り",
     "area": "千代田区",
-    "date": "2026-07-24",
+    "date": "2025-07-25",
     "songs": [
       {
         "name": "お江戸日本橋",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "どんとこいブギ",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "にっぽんチャチャチャ",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "ゆかた音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "ドダレバチ",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "ドンパン節",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "丸の内音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "令和おどり",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "八木節",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "千代田踊り",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "大東京音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "東京音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "松の木小唄",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "民謡お国巡り音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "津軽甚句",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "炭坑節",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "甚句",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "相馬盆唄",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "花笠踊り",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "輝き音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "郡上節",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "銀座カンカン娘",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "龍馬おどり",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       }
     ]
   },
@@ -417,30 +417,6 @@
     ]
   },
   {
-    "name": "入船三丁目町会納涼盆踊り",
-    "venue": "入船三丁目町会周辺（会場未確認）",
-    "area": "中央区",
-    "date": null,
-    "songs": [
-      {
-        "name": "バハマ・ママ",
-        "confidence": "hint"
-      },
-      {
-        "name": "大東京音頭",
-        "confidence": "hint"
-      },
-      {
-        "name": "東京音頭",
-        "confidence": "hint"
-      },
-      {
-        "name": "炭坑節",
-        "confidence": "hint"
-      }
-    ]
-  },
-  {
     "name": "イベント名未確認（晴海ふ頭公園）",
     "venue": "晴海ふ頭公園",
     "area": "中央区",
@@ -487,38 +463,6 @@
         "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント"
-      }
-    ]
-  },
-  {
-    "name": "第2回 晴海ふ頭公園盆踊り大会",
-    "venue": "晴海ふ頭公園",
-    "area": "中央区",
-    "date": "2026-07-11",
-    "songs": [
-      {
-        "name": "きよしのズンドコ節",
-        "confidence": "hint"
-      },
-      {
-        "name": "これがお江戸の盆ダンス",
-        "confidence": "hint"
-      },
-      {
-        "name": "東京五輪音頭",
-        "confidence": "hint"
-      },
-      {
-        "name": "東京音頭",
-        "confidence": "hint"
-      },
-      {
-        "name": "河内おとこ節",
-        "confidence": "hint"
-      },
-      {
-        "name": "炭坑節",
-        "confidence": "hint"
       }
     ]
   },
@@ -1080,24 +1024,24 @@
     ]
   },
   {
-    "name": "第26回 四谷納涼踊り大会",
-    "venue": "四谷ひろばグランド（旧四谷第四小）",
+    "name": "第25回 四谷納涼踊り大会",
+    "venue": "四谷ひろばグラウンド（旧四谷第四小学校）",
     "area": "新宿区",
-    "date": "2026-07-18",
+    "date": "2025-07-19",
     "songs": [
       {
         "name": "四谷納涼踊り",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "ズンパ音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       }
     ]
   },
@@ -1513,95 +1457,59 @@
     ]
   },
   {
-    "name": "佐竹ゲバゲバ盆踊り",
-    "venue": "佐竹商店街アーケード下",
-    "area": "台東区",
-    "date": "2026-07-18",
-    "songs": [
-      {
-        "name": "佐竹音頭",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_announced",
-        "basis_label": "今年告知"
-      },
-      {
-        "name": "クックロビン音頭",
-        "confidence": "hint",
-        "probability": 85,
-        "basis": "current_announced",
-        "basis_label": "今年告知"
-      },
-      {
-        "name": "ダンシングヒーロー",
-        "confidence": "hint",
-        "probability": 85,
-        "basis": "current_announced",
-        "basis_label": "今年告知"
-      },
-      {
-        "name": "電線マン音頭",
-        "confidence": "hint",
-        "probability": 85,
-        "basis": "current_announced",
-        "basis_label": "今年告知"
-      }
-    ]
-  },
-  {
     "name": "東本願寺盆踊り",
     "venue": "東本願寺（浅草）",
     "area": "台東区",
-    "date": "2026-08-19",
+    "date": "2025-08-20",
     "songs": [
       {
         "name": "ONE LOVE",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "ふるさと音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "エブリブレスユーテイク",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "チャンチキおけさ",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "東京音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "炭坑節",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "終 ガット・トゥ・ビー・リアル",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       }
     ]
   },
@@ -2314,98 +2222,98 @@
     "name": "自由が丘納涼盆踊り大会",
     "venue": "自由が丘駅前ロータリー 特設会場",
     "area": "目黒区",
-    "date": "2026-07-18",
+    "date": "2025-07-19",
     "songs": [
       {
         "name": "RPG",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "やる気で音頭",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "ホイップるん音頭",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "北海盆唄",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "夜に駆ける",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "大東京音頭",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "希望の轍",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "東京音頭",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "炭坑節",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "自由が丘小唄",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "高嶺の花子さん",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "ダンシングヒーロー",
         "confidence": "confirmed",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "特設会場周辺で開かれる街なかの踊り",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       }
     ]
   },
@@ -2503,42 +2411,42 @@
     "name": "SHIBUYA MIYASHITA PARK BON DANCE",
     "venue": "宮下公園",
     "area": "渋谷区",
-    "date": "2026-09-26",
+    "date": "2025-09-27",
     "songs": [
       {
         "name": "ダンシングヒーロー",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "外国人も一緒になって阿波踊り",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "東京音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "激混み会場で外国人も踊り",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "阿波踊り",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       }
     ]
   },
@@ -2653,62 +2561,6 @@
         "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント"
-      }
-    ]
-  },
-  {
-    "name": "亀有銀座商店街納涼盆踊り大会",
-    "venue": "亀有ゆうろーど（亀有銀座商店街）",
-    "area": "葛飾区",
-    "date": "2025-08-31",
-    "songs": [
-      {
-        "name": "アンパンマン音頭",
-        "confidence": "hint"
-      },
-      {
-        "name": "亀有音頭",
-        "confidence": "hint"
-      },
-      {
-        "name": "南州おどり",
-        "confidence": "hint"
-      },
-      {
-        "name": "大東京音頭",
-        "confidence": "hint"
-      },
-      {
-        "name": "妖怪横丁ゲゲゲ節",
-        "confidence": "hint"
-      },
-      {
-        "name": "春駒",
-        "confidence": "hint"
-      },
-      {
-        "name": "春駒ばやし",
-        "confidence": "hint"
-      },
-      {
-        "name": "河内おとこ節",
-        "confidence": "hint"
-      },
-      {
-        "name": "葛飾ラプソディ音頭",
-        "confidence": "hint"
-      },
-      {
-        "name": "葛飾音頭",
-        "confidence": "hint"
-      },
-      {
-        "name": "野球拳おどり",
-        "confidence": "hint"
-      },
-      {
-        "name": "鹿児島小原節",
-        "confidence": "hint"
       }
     ]
   }

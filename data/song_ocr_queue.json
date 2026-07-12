@@ -1,6 +1,6 @@
 {
   "generated_by": "build_song_ocr_queue.py",
-  "count": 15,
+  "count": 16,
   "items": [
     {
       "id": "b21783a2a9785946",
@@ -230,6 +230,21 @@
         "https://pbs.twimg.com/amplify_video_thumb/2075879574265901056/img/J_9pZFxCxOmRvDvt.jpg"
       ],
       "text": "盆踊り第2部がスタートしました！！！\n\n「中夜　地域連携」をテーマに、これまで鴨台盆踊りと繋がり、関わりを持つ楽曲を中心に踊ります🐙\n\nぜひ曲目にも注目して踊ってみてください🕺\n\n#第16回鴨台盆踊り　#鴨台盆踊り　#大正大学　#盆踊り　＃盆オドラー https://t.co/AtJGyyERzs",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "98af0d5cfe6e92cd",
+      "status": "needs_ocr",
+      "account": "@tukishimanagaya",
+      "url": "https://x.com/tukishimanagaya/status/2075963197664931911",
+      "tweet_id": "2075963197664931911",
+      "date": "2026-07-11T15:19:30+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HM9Mg1gb0AAnr9e.jpg",
+        "https://t.co/RTXNoacfbC",
+        "pic.x.com/RTXNoacfbC"
+      ],
+      "text": "第２回晴海ふ頭公園盆踊り大会2026\n7/11(土)・12(日)\n16:00〜20:30\n\nパンフレット掲載の踊り曲目以外に「ジャンボリミッキー！」＆「おしりたんてい音頭」🎶\n\n「おしりたんてい音頭」を初めて踊りました。\n今から練習すれば２日目に間に合うと信じたい…\n（文字通り一夜漬け😂） https://t.co/RTXNoacfbC",
       "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
     }
   ]

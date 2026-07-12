@@ -1,8 +1,8 @@
 {
   "generated_by": "build_event_song_candidates.py",
-  "count": 845,
+  "count": 849,
   "public_event_count": 321,
-  "review_count": 524,
+  "review_count": 528,
   "candidates": [
     {
       "id": "9870f5a616f1a007",
@@ -144,6 +144,28 @@
       ],
       "already_public": false,
       "evidence_count": 10
+    },
+    {
+      "id": "580bad2482ac751f",
+      "song_name": "東京五輪音頭",
+      "event_name": "イベント名未確認（晴海ふ頭公園）",
+      "venue": "晴海ふ頭公園",
+      "area": "中央区",
+      "status": "未確認",
+      "confidence": "中",
+      "reasons": [
+        "known_song_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/natsutr_bon/status/2076149732486066250",
+          "date": "2026-07-12T03:40:43+00:00",
+          "text": "奈津大郎〘ナツタロ〙\n7/11 晴海ふ頭公園盆踊り\n\n東京湾岸夜景をバックに、この晴海の地で踊る東京五輪音頭2020は格別🏅\n\n第2回の今年は中央区ナンバーに加えて、自治会盆踊り倶楽部がリードするレッツオンドアゲインや河内おとこ節なども加わりバリエーション⤴️\nJM!は、KIDSや若い人がたくさん踊って熱気もスゴかった🤩 https://t.co/4hrw6TNlS4"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
     },
     {
       "id": "addaf74cfe28988f",
@@ -4513,6 +4535,35 @@
       ],
       "already_public": false,
       "evidence_count": 78
+    },
+    {
+      "id": "5660a9dc736fb49e",
+      "song_name": "東京五輪音頭",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "中",
+      "reasons": [
+        "known_song_context",
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=QLoHbUdrqEE",
+          "date": "2026-07-12T04:30:34+00:00",
+          "text": "祭のきせき 盆踊り\n東京五輪音頭2020 ②　晴海ふ頭公園盆踊り大会2026 ＠ 晴海フラッグ　加山雄三 石川さゆり 竹原ピストル\n晴海ふ頭公園盆踊り大会2026  ＠ 晴海フラッグ\n東京五輪音頭2020 ②\n\n東京湾の絶景を望む海辺の公園で繰り広げられる、開放感たっぷりの夏祭り！レインボーブリッジや夜景をバックに、中央区民踊連盟・太鼓連盟協力の本格盆踊り（全10曲）を楽しめます。48店舗の縁日・グルメ屋台も大集合♪ 潮風を感じながら、老若男女で踊る特別な2日間をお届けします！ \n2026年7月11日(土)・12日(土) 16:00〜21:00 晴海ふ頭公園（中央区晴海5丁目）\n\n#晴海ふ頭公園盆踊り #盆踊り #東京夏祭り"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=i4EquWJIYUw",
+          "date": "2026-07-12T01:04:48+00:00",
+          "text": "祭のきせき 盆踊り\n東京五輪音頭2020 ①　晴海ふ頭公園盆踊り大会2026 ＠ 晴海フラッグ　加山雄三 石川さゆり 竹原ピストル\n晴海ふ頭公園盆踊り大会2026  ＠ 晴海フラッグ\n東京五輪音頭2020 ①\n\n東京湾の絶景を望む海辺の公園で繰り広げられる、開放感たっぷりの夏祭り！レインボーブリッジや夜景をバックに、中央区民踊連盟・太鼓連盟協力の本格盆踊り（全10曲）を楽しめます。48店舗の縁日・グルメ屋台も大集合♪ 潮風を感じながら、老若男女で踊る特別な2日間をお届けします！ \n2026年7月11日(土)・12日(土) 16:00〜21:00 晴海ふ頭公園（中央区晴海5丁目）\n\n#晴海ふ頭公園盆踊り #盆踊り #東京夏祭り"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 2
     },
     {
       "id": "6f6ae53a2b665c75",
@@ -16467,7 +16518,7 @@
       "evidence_count": 1
     },
     {
-      "id": "9a487a08e99f12c9",
+      "id": "0d6c87e82f13392e",
       "song_name": "おしりたんてい音頭",
       "event_name": "盆踊り大会",
       "venue": "木場二丁目公園",
@@ -16475,9 +16526,16 @@
       "status": "未確認",
       "confidence": "低",
       "reasons": [
+        "song_suffix_in_context",
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/tukishimanagaya/status/2075963197664931911",
+          "date": "2026-07-11T15:19:30+00:00",
+          "text": "月島長屋\n第２回晴海ふ頭公園盆踊り大会2026\n7/11(土)・12(日)\n16:00〜20:30\n\nパンフレット掲載の踊り曲目以外に「ジャンボリミッキー！」＆「おしりたんてい音頭」🎶\n\n「おしりたんてい音頭」を初めて踊りました。\n今から練習すれば２日目に間に合うと信じたい…\n（文字通り一夜漬け😂） https://t.co/RTXNoacfbC"
+        },
         {
           "source": "x_voice",
           "url": "https://x.com/o_tantei/status/2071443542925320201",
@@ -16486,7 +16544,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 1
+      "evidence_count": 2
     },
     {
       "id": "c8611a709ed14597",
@@ -17221,6 +17279,28 @@
       "evidence_count": 1
     },
     {
+      "id": "9b76dc3251b44b81",
+      "song_name": "を初めて踊り",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/tukishimanagaya/status/2075963197664931911",
+          "date": "2026-07-11T15:19:30+00:00",
+          "text": "月島長屋\n第２回晴海ふ頭公園盆踊り大会2026\n7/11(土)・12(日)\n16:00〜20:30\n\nパンフレット掲載の踊り曲目以外に「ジャンボリミッキー！」＆「おしりたんてい音頭」🎶\n\n「おしりたんてい音頭」を初めて踊りました。\n今から練習すれば２日目に間に合うと信じたい…\n（文字通り一夜漬け😂） https://t.co/RTXNoacfbC"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
       "id": "abdd48462f9d9226",
       "song_name": "アラレちゃん音頭",
       "event_name": "盆踊り大会",
@@ -17507,6 +17587,28 @@
           "url": "https://x.com/rollingasahi/status/2068667166468329706",
           "date": "2026-06-21T12:07:41+00:00",
           "text": "ローリングあさひ\nこの土日は\nノー踊りでフィニッシュでしたが\n次の週末\n土日に楽しみな盆踊り大会が待っているので\nそれらを楽しむ前の下準備と虎えておこう😂 https://t.co/H3AXLv0py9"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "14bd471331dda729",
+      "song_name": "パンフレット掲載の踊り",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/tukishimanagaya/status/2075963197664931911",
+          "date": "2026-07-11T15:19:30+00:00",
+          "text": "月島長屋\n第２回晴海ふ頭公園盆踊り大会2026\n7/11(土)・12(日)\n16:00〜20:30\n\nパンフレット掲載の踊り曲目以外に「ジャンボリミッキー！」＆「おしりたんてい音頭」🎶\n\n「おしりたんてい音頭」を初めて踊りました。\n今から練習すれば２日目に間に合うと信じたい…\n（文字通り一夜漬け😂） https://t.co/RTXNoacfbC"
         }
       ],
       "already_public": false,
@@ -32921,16 +33023,10 @@
           "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNZDhtSWhXeFp3UWs5cVNBU2VGOFFwbTRXLTRGU0dZRGhiZXhyUHVzSnV0MXlYR3o5TklOOWh4aTlOYVJtYWVwanpuUk9yQmNGVFY0WFVLelJla3JmSEgzSlY2ZFNyaE44STIyZFhFWXJaTzFWVHJPWVk3ZkNicUFkOFc0UkluUWZDMy1J?oc=5",
           "date": "Mon, 06 Jul 2026 15:00:00 GMT",
           "text": "すみだ錦糸町河内音頭大盆踊り - Time Out Tokyo"
-        },
-        {
-          "source": "latest_news",
-          "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFAxNGxDU2tBbmRTNTFEUHRQYTZHZlJ0NmVvWXFhNDNUREVXN1pMNGxCUUNCdGxtVjNNQ2p1cVhMd3BEQnBibGlLSEJPNVR4VXlnLVk5RGtLTVpLR21rNmVVQ0c0QkVBcnhsUENTUlJubG5pV3lQRENoQ25ad3FOLUk?oc=5",
-          "date": "Wed, 08 Jul 2026 08:10:22 GMT",
-          "text": "全国の盆オドラー集結！「第４４回すみだ錦糸町河内音頭大盆踊り」７月２９日、３０日の２日間開催、昨年延べ約３万人の人気イベントＰＲで報知新聞社に主催者来社！（スポーツ報知） - Yahoo!ニュース"
         }
       ],
       "already_public": true,
-      "evidence_count": 25
+      "evidence_count": 24
     },
     {
       "id": "7a7fb49d90eeab18",
