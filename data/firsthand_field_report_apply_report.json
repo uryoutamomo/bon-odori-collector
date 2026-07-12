@@ -1,0 +1,165 @@
+{
+  "generated_by": "apply_firsthand_field_report.py",
+  "generated_at": "2026-07-12T15:01:26.301899+00:00",
+  "mode": "apply",
+  "sources": {
+    "master_db": "data/bon_odori_master.sqlite",
+    "report": "data/firsthand_reports/2026-07-12-harumi-futo-park-bonodori.json"
+  },
+  "outputs": {
+    "target_db": "data/bon_odori_master.sqlite",
+    "dry_run_db": "",
+    "backup_db": "data/backups/bon_odori_master.20260712T150126.301899+0000.sqlite.bak",
+    "json": "data/firsthand_field_report_apply_report.json",
+    "markdown": "data/firsthand_field_report_apply_report.md"
+  },
+  "options": {
+    "apply": true
+  },
+  "write_guard": {
+    "db_committed": true,
+    "rolled_back": false,
+    "rollback_reason": ""
+  },
+  "summary": {
+    "issues_count": 0,
+    "issues_by_severity": {},
+    "audit_issues_by_severity": {
+      "medium": 1
+    },
+    "table_counts": {
+      "event_investigation_tasks": 79,
+      "event_occurrences": 251,
+      "event_series": 240,
+      "evidence_items": 28427,
+      "external_record_links": 2654,
+      "historical_promotion_candidates": 16,
+      "master_meta": 0,
+      "notion_sync_jobs": 10,
+      "observed_occurrence_songs": 28105,
+      "observed_occurrences": 1856,
+      "occurrence_dates": 204,
+      "occurrence_evidence_links": 8,
+      "occurrence_song_evidence_links": 496,
+      "occurrence_songs": 323,
+      "predicted_occurrence_dates": 13,
+      "schema_migrations": 1,
+      "song_aliases": 141,
+      "songs": 150,
+      "venue_aliases": 287,
+      "venues": 238,
+      "write_batches": 0
+    }
+  },
+  "report": {
+    "report_type": "existing_event_songs",
+    "reported_at": "2026-07-12T23:49:00+09:00",
+    "raw_note": "内田さんが2026年7月12日、晴海ふ頭公園盆踊り大会（第2回、主催HARUMI FLAG自治会/東部地区公園グループ、共催HARUMI FLAG CLUB/晴海テラス自治会）に参加。現地で聞いた曲目: きよしのズンドコ節、これがお江戸の盆ダンス、東京五輪音頭、東京音頭、河内おとこ節、炭坑節、銀座カンカン娘、東京五輪音頭-2020-、Let's ONDO Again（レッツ オンド アゲイン）、ダンシングヒーロー、ジャンボリミッキー。",
+    "event_name_hint": "第2回 晴海ふ頭公園盆踊り大会",
+    "venue_name_hint": "晴海ふ頭公園",
+    "event_year": 2026,
+    "event_date": "2026-07-12",
+    "occurrence_id": "occ_46270bfba6367730",
+    "songs": [
+      {
+        "title": "きよしのズンドコ節"
+      },
+      {
+        "title": "これがお江戸の盆ダンス"
+      },
+      {
+        "title": "東京五輪音頭"
+      },
+      {
+        "title": "東京音頭"
+      },
+      {
+        "title": "河内おとこ節"
+      },
+      {
+        "title": "炭坑節"
+      },
+      {
+        "title": "銀座カンカン娘"
+      },
+      {
+        "title": "東京五輪音頭-2020-"
+      },
+      {
+        "title": "Let's ONDO Again（レッツ オンド アゲイン）"
+      },
+      {
+        "title": "ダンシングヒーロー"
+      },
+      {
+        "title": "ジャンボリミッキー"
+      }
+    ]
+  },
+  "applied": {
+    "resolved": true,
+    "report_type": "existing_event_songs",
+    "occurrence_id": "occ_46270bfba6367730",
+    "evidence_id": "ev_6d46838ea3311088",
+    "songs_applied": [
+      {
+        "song_id": "song_242d9e37e1176744",
+        "occurrence_song_id": "osong_7e15cd608096a1d6"
+      },
+      {
+        "song_id": "song_49b79df0f91492e1",
+        "occurrence_song_id": "osong_bbe0bab1914507e5"
+      },
+      {
+        "song_id": "song_4a0b4e35fdb1a42e",
+        "occurrence_song_id": "osong_3a24c29335de530c"
+      },
+      {
+        "song_id": "song_ba38e97046254d94",
+        "occurrence_song_id": "osong_a48f0a28bbd31a60"
+      },
+      {
+        "song_id": "song_2db09070cee96f09",
+        "occurrence_song_id": "osong_1fdeae725029d761"
+      },
+      {
+        "song_id": "song_8301ef2fd9b554f0",
+        "occurrence_song_id": "osong_8ca1fa3e0abc71fc"
+      },
+      {
+        "song_id": "song_ea8d6bc1b835a0f7",
+        "occurrence_song_id": "osong_063e91c0a6117f16"
+      },
+      {
+        "song_id": "song_4fe81fff18f14bf3",
+        "occurrence_song_id": "osong_bd629ec4886a6ae6"
+      },
+      {
+        "song_id": "song_e551e0c0c7fac377",
+        "occurrence_song_id": "osong_4d5aab5c3cb37da0"
+      },
+      {
+        "song_id": "song_91e0bb2ffff44fc0",
+        "occurrence_song_id": "osong_f6fb9d27baadd69e"
+      },
+      {
+        "song_id": "song_8ed0cbde87d92616",
+        "occurrence_song_id": "osong_41f6f0ecdf9f258f"
+      }
+    ]
+  },
+  "issues": [],
+  "audit": {
+    "issue_count": 1,
+    "issues_by_severity": {
+      "medium": 1
+    },
+    "issues_by_type": {
+      "source_snapshot_drift": 1
+    }
+  },
+  "public_json_write": {
+    "enabled": false,
+    "policy": "Run export_public_events.py and the site deploy separately, on Uchida-san's schedule."
+  }
+}
