@@ -608,6 +608,8 @@ def merge_song_occurrence_hints(existing_songs, occurrence):
         merged["evidence_count"] = song.get("evidence_count")
         merged["speaker_count"] = song.get("speaker_count")
         merged["setlist_complete"] = song.get("setlist_complete")
+        if song.get("confidence") == "confirmed":
+            merged["confidence"] = "confirmed"
         if song.get("evidence_urls"):
             merged["evidence_urls"] = song.get("evidence_urls")
         if song.get("probability", 0) >= 95:

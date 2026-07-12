@@ -12,6 +12,7 @@ from export_public_events import (
     extract_public_source_urls,
     fill_youtube_evidence_defaults,
     fixed_date_rule_from_props,
+    merge_song_occurrence_hints,
     parse_youtube_evidence,
     public_detail_text,
     sanitize_public_event_details,
@@ -158,6 +159,32 @@ class ExportPublicEventsTest(unittest.TestCase):
         }])
 
         self.assertNotIn("fixed_date_rule", rows[0])
+
+    def test_merge_song_occurrence_hints_preserves_confirmed_observed_songs(self):
+        songs = merge_song_occurrence_hints(
+            [{"name": "東京音頭", "confidence": "hint"}],
+            {
+                "songs": [
+                    {
+                        "name": "東京音頭",
+                        "confidence": "confirmed",
+                        "basis": "current_observed",
+                        "basis_label": "実測",
+                    },
+                    {
+                        "name": "銀座カンカン娘",
+                        "confidence": "confirmed",
+                        "basis": "current_observed",
+                        "basis_label": "実測",
+                    },
+                ]
+            },
+        )
+
+        self.assertEqual([song["name"] for song in songs], ["東京音頭", "銀座カンカン娘"])
+        self.assertEqual([song["confidence"] for song in songs], ["confirmed", "confirmed"])
+        self.assertEqual([song["basis"] for song in songs], ["current_observed", "current_observed"])
+        self.assertEqual([song["basis_label"] for song in songs], ["実測", "実測"])
 
 
     def test_extract_public_source_urls_keeps_official_urls_not_video_urls(self):
