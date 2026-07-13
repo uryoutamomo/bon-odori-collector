@@ -1,0 +1,53 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-07-12T23:49:00+09:00",
+  "source": {
+    "report_id": "kyobashi5_nouryou_map_2026_verify",
+    "title": "令和8年 納涼マップ 京橋五の部（新ツール疎似検証用）",
+    "account_key": "京橋五の部連合町会・京橋五の部地区委員会",
+    "raw_text": "令和8年 納涼マップ（京橋五の部連合町会・京橋五の部地区委員会）。apply_official_notice_report.pyの疎似検証のため、既に apply_kyobashi5_nouryou_map_2026.py で本番反映済みの内容を新スキーマで再現。",
+    "notice_kind": "official_current_year"
+  },
+  "events": [
+    {
+      "action": "confirm_existing",
+      "occurrence_id": "occ_225f239652267ed9",
+      "venue": {"name": "京橋公園", "area": "中央区"},
+      "date_start": "2026-07-17",
+      "date_end": "2026-07-18",
+      "detail_addendum": "新富町会「新富銀座納涼盆踊り大会」。19:00-21:00。屋台やきそば・わたあめ・ポップコーン・かき氷等、飲み物ソフトドリンク・生ビール、イベントゲームコーナー。（令和8年納涼マップ京橋五の部より）",
+      "songs": []
+    },
+    {
+      "action": "confirm_existing",
+      "occurrence_id": "occ_69eb62d9b1773ad9",
+      "detail_addendum": "5日(水)が中止の場合は6日(木)に順延。（令和8年納涼マップ京橋五の部より）",
+      "songs": []
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "明石町会 納涼盆踊り",
+      "series_name": "明石町会 納涼盆踊り",
+      "event_year": 2026,
+      "venue": {"name": "明石小学校", "area": "中央区"},
+      "date_start": "2026-08-06",
+      "date_end": "2026-08-07",
+      "detail_addendum": "18:00-21:00。屋台軽食類、飲み物生ビール・ジュース等、イベント子ども盆踊り大会(お菓子付)。（令和8年納涼マップ京橋五の部より）",
+      "songs": []
+    },
+    {
+      "action": "confirm_existing",
+      "occurrence_id": "occ_56e51b72ec7acc7e",
+      "venue": {"name": "入船三丁目交差点", "area": "中央区"},
+      "date_start": "2026-08-24",
+      "date_end": "2026-08-25",
+      "detail_addendum": "18:30-21:00。屋台やきそば・かき氷等、飲み物ビール・ラムネ等(さらに地域の飲食店からのメニューを提供)。（令和8年納涼マップ京橋五の部より）",
+      "songs": []
+    }
+  ],
+  "skipped_events": [
+    {"name": "湊三丁目町会 納涼子ども会", "reason": "盆踊り判定保留"},
+    {"name": "湊二丁目町会 湊二お楽しみ会", "reason": "盆踊り判定保留"},
+    {"name": "入船一・二丁目町会", "reason": "2027年3月開催予定、時期・内容とも対象外"}
+  ]
+}

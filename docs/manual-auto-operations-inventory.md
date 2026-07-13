@@ -59,6 +59,7 @@ flowchart TD
 | 手動維持 | Notion work-log / task-page maintenance scripts | append noteは手動ログとして維持。todo完了・既存block更新・ページ作成/リンク編集は `APPLY NOTION WORKLOG MAINTENANCE` 必須。方針は `docs/notion-worklog-maintenance-operations.md`。 |
 | 手動維持 | Google Calendar sync | 個人予定ミラーとして残す。`sync_gcal.py` はデフォルトdry-run、反映は手動 `--apply` のみ。 |
 | 手動維持（継続的入力ツール） | Firsthand field report apply | 内田さん本人の現地一次情報（曲目・新規イベント）をmaster RDBへ反映する対話ツール。`apply_firsthand_field_report.py` はデフォルトdry-run、実更新は `--apply --confirm 'APPLY FIRSTHAND FIELD REPORT'` 必須。曖昧な対象は自動生成せず候補提示のみで停止する。apply後は必ずS3 publishが必要。方針は `docs/firsthand-field-report-operations.md`。 |
+| 手動維持（継続的入力ツール） | Official notice field report apply | 町の掲示板・回覧板・公式チラシ等の画像（1枚に複数イベントを含みうる）をmaster RDBへ反映する対話ツール。`apply_official_notice_report.py` はデフォルトdry-run、実更新は `--apply --confirm 'APPLY OFFICIAL NOTICE FIELD REPORT'` 必須。曖昧なイベントはmedium issueで個別スキップし、確定できたイベントだけ適用する部分適用方針。apply後は必ずS3 publishが必要。方針は `docs/official-notice-field-report-operations.md`。 |
 | 停止維持済み | Mac `com.koto.*` LaunchAgents | 2026-06-26に内田さん確認済み: いま「こと」を起動しない。全plistを `~/Library/LaunchAgents/*.plist.disabled` へ退避済み。 |
 | 手動化済み | `ops/com.ryotauchida.bon-odori.glossary-weekly.plist` | 曲/用語収穫は日次 `collect.yml` へ統合済み。ローカル旧週次は手動fallbackのみ。plistは `Disabled=true`、scheduleなし、`run_weekly_glossary_review.py --manual` 必須。 |
 | 手動化済み | `com.ryotauchida.bon-odori.youtube-daily.plist` | `~/Library/LaunchAgents/*.plist.disabled` へ退避済み。repoテンプレートも手動fallback化済み。 |

@@ -1,0 +1,193 @@
+{
+  "generated_by": "apply_official_notice_report.py",
+  "generated_at": "2026-07-13T02:38:53.548040+00:00",
+  "mode": "dry_run",
+  "sources": {
+    "master_db": "data/bon_odori_master.sqlite",
+    "report": "data/official_notice_reports/kyobashi5_nouryou_map_2026_verify.json"
+  },
+  "outputs": {
+    "target_db": "data/official_notice_report_apply_dry_run.sqlite",
+    "dry_run_db": "data/official_notice_report_apply_dry_run.sqlite",
+    "backup_db": "",
+    "json": "data/official_notice_report_apply_report.json",
+    "markdown": "data/official_notice_report_apply_report.md"
+  },
+  "options": {
+    "apply": false
+  },
+  "write_guard": {
+    "db_committed": true,
+    "rolled_back": false,
+    "rollback_reason": ""
+  },
+  "summary": {
+    "issues_count": 0,
+    "issues_by_severity": {},
+    "audit_issues_by_severity": {
+      "medium": 1
+    },
+    "table_counts": {
+      "event_investigation_tasks": 79,
+      "event_occurrences": 252,
+      "event_series": 241,
+      "evidence_items": 28429,
+      "external_record_links": 2654,
+      "historical_promotion_candidates": 16,
+      "master_meta": 0,
+      "notion_sync_jobs": 10,
+      "observed_occurrence_songs": 28105,
+      "observed_occurrences": 1856,
+      "occurrence_dates": 207,
+      "occurrence_evidence_links": 16,
+      "occurrence_song_evidence_links": 496,
+      "occurrence_songs": 323,
+      "predicted_occurrence_dates": 13,
+      "schema_migrations": 1,
+      "song_aliases": 141,
+      "songs": 150,
+      "venue_aliases": 290,
+      "venues": 241,
+      "write_batches": 0
+    }
+  },
+  "report": {
+    "report_type": "official_notice",
+    "reported_at": "2026-07-12T23:49:00+09:00",
+    "source": {
+      "report_id": "kyobashi5_nouryou_map_2026_verify",
+      "title": "令和8年 納涼マップ 京橋五の部（新ツール疎似検証用）",
+      "account_key": "京橋五の部連合町会・京橋五の部地区委員会",
+      "raw_text": "令和8年 納涼マップ（京橋五の部連合町会・京橋五の部地区委員会）。apply_official_notice_report.pyの疎似検証のため、既に apply_kyobashi5_nouryou_map_2026.py で本番反映済みの内容を新スキーマで再現。",
+      "notice_kind": "official_current_year"
+    },
+    "events": [
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_225f239652267ed9",
+        "venue": {
+          "name": "京橋公園",
+          "area": "中央区"
+        },
+        "date_start": "2026-07-17",
+        "date_end": "2026-07-18",
+        "detail_addendum": "新富町会「新富銀座納涼盆踊り大会」。19:00-21:00。屋台やきそば・わたあめ・ポップコーン・かき氷等、飲み物ソフトドリンク・生ビール、イベントゲームコーナー。（令和8年納涼マップ京橋五の部より）",
+        "songs": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_69eb62d9b1773ad9",
+        "detail_addendum": "5日(水)が中止の場合は6日(木)に順延。（令和8年納涼マップ京橋五の部より）",
+        "songs": []
+      },
+      {
+        "action": "register_new",
+        "event_name_hint": "明石町会 納涼盆踊り",
+        "series_name": "明石町会 納涼盆踊り",
+        "event_year": 2026,
+        "venue": {
+          "name": "明石小学校",
+          "area": "中央区"
+        },
+        "date_start": "2026-08-06",
+        "date_end": "2026-08-07",
+        "detail_addendum": "18:00-21:00。屋台軽食類、飲み物生ビール・ジュース等、イベント子ども盆踊り大会(お菓子付)。（令和8年納涼マップ京橋五の部より）",
+        "songs": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_56e51b72ec7acc7e",
+        "venue": {
+          "name": "入船三丁目交差点",
+          "area": "中央区"
+        },
+        "date_start": "2026-08-24",
+        "date_end": "2026-08-25",
+        "detail_addendum": "18:30-21:00。屋台やきそば・かき氷等、飲み物ビール・ラムネ等(さらに地域の飲食店からのメニューを提供)。（令和8年納涼マップ京橋五の部より）",
+        "songs": []
+      }
+    ],
+    "skipped_events": [
+      {
+        "name": "湊三丁目町会 納涼子ども会",
+        "reason": "盆踊り判定保留"
+      },
+      {
+        "name": "湊二丁目町会 湊二お楽しみ会",
+        "reason": "盆踊り判定保留"
+      },
+      {
+        "name": "入船一・二丁目町会",
+        "reason": "2027年3月開催予定、時期・内容とも対象外"
+      }
+    ]
+  },
+  "applied": {
+    "resolved": true,
+    "evidence_id": "ev_0d7adba27171dbef",
+    "events_applied": [
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_225f239652267ed9",
+        "changed_fields": [
+          "venue_id",
+          "date_start"
+        ],
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_69eb62d9b1773ad9",
+        "changed_fields": [],
+        "songs_applied": []
+      },
+      {
+        "action": "register_new",
+        "occurrence_id": "occ_c97f48d221c7154f",
+        "venue_id": "venue_9dbf1d33b0d471a6",
+        "venue_status": "reused",
+        "occurrence_created": false,
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_56e51b72ec7acc7e",
+        "changed_fields": [
+          "venue_id",
+          "date_start",
+          "detail"
+        ],
+        "songs_applied": []
+      }
+    ],
+    "events_unresolved": [],
+    "skipped_events": [
+      {
+        "name": "湊三丁目町会 納涼子ども会",
+        "reason": "盆踊り判定保留"
+      },
+      {
+        "name": "湊二丁目町会 湊二お楽しみ会",
+        "reason": "盆踊り判定保留"
+      },
+      {
+        "name": "入船一・二丁目町会",
+        "reason": "2027年3月開催予定、時期・内容とも対象外"
+      }
+    ]
+  },
+  "issues": [],
+  "audit": {
+    "issue_count": 1,
+    "issues_by_severity": {
+      "medium": 1
+    },
+    "issues_by_type": {
+      "source_snapshot_drift": 1
+    }
+  },
+  "public_json_write": {
+    "enabled": false,
+    "policy": "Run export_public_events.py and the site deploy separately, on Uchida-san's schedule."
+  }
+}
