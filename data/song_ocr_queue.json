@@ -1,6 +1,6 @@
 {
   "generated_by": "build_song_ocr_queue.py",
-  "count": 16,
+  "count": 17,
   "items": [
     {
       "id": "b21783a2a9785946",
@@ -245,6 +245,22 @@
         "pic.x.com/RTXNoacfbC"
       ],
       "text": "第２回晴海ふ頭公園盆踊り大会2026\n7/11(土)・12(日)\n16:00〜20:30\n\nパンフレット掲載の踊り曲目以外に「ジャンボリミッキー！」＆「おしりたんてい音頭」🎶\n\n「おしりたんてい音頭」を初めて踊りました。\n今から練習すれば２日目に間に合うと信じたい…\n（文字通り一夜漬け😂） https://t.co/RTXNoacfbC",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "6fc9f0c4d84a0d1b",
+      "status": "needs_ocr",
+      "account": "@hoso_yukko",
+      "url": "https://x.com/hoso_yukko/status/2076256098248740899",
+      "tweet_id": "2076256098248740899",
+      "date": "2026-07-12T10:43:23+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HNBX6u4a4AAjXH0.jpg",
+        "https://t.co/fagACdX4Uj",
+        "pic.x.com/fagACdX4Uj",
+        "https://pbs.twimg.com/media/HNBX6tJbIAAXdZO.jpg"
+      ],
+      "text": "本日２箇所目は　\nこちらに🏮(行ってました)\n\n今日の曲目は…👀❗️\n私、踊れるのか⁉️\nヤバい感じ満載でしたが\nたぶん…頑張りました💦\n\n#盆踊り　　#尼崎 https://t.co/fagACdX4Uj",
       "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
     }
   ]

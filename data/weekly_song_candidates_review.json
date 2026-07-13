@@ -1,8 +1,29 @@
 {
   "generated_by": "triage_weekly_song_candidates.py",
   "source": "data/weekly_harvest_candidates.json",
-  "count": 1,
+  "count": 2,
   "rows": [
+    {
+      "category": "曲候補",
+      "type": "曲名",
+      "term": "盆ジョビ",
+      "interpretation": "盆ジョビ",
+      "confidence": "要レビュー",
+      "reason": "曲名抽出器で検出: known_song_context",
+      "evidence_count": 1,
+      "evidence": [
+        {
+          "url": "https://x.com/ytzrtn1219/status/2076602029620035819",
+          "date": "2026-07-13T09:37:59+00:00",
+          "account": "@ytzrtn1219",
+          "text": "盆踊りバージョンたまげた。中野の盆ジョビ踊りでも流れないかなあ？ USEN 推し活リクエストでJuice=Juiceの『盛れ!ミ・アモーレ』をリクエストしました！ https://t.co/EeAcIuUzaU #USEN推し活リクエスト #推しリク #JuiceJuice"
+        }
+      ],
+      "evidence_text": "盆踊りバージョンたまげた。中野の盆ジョビ踊りでも流れないかなあ？ USEN 推し活リクエストでJuice=Juiceの『盛れ!ミ・アモーレ』をリクエストしました！ https://t.co/EeAcIuUzaU #USEN推し活リクエスト #推しリク #JuiceJuice",
+      "evidence_url": "https://x.com/ytzrtn1219/status/2076602029620035819",
+      "canonical_song_name": "盆ジョビ",
+      "triage_reason": "多義語・イベント名・ジャンル名の可能性がある"
+    },
     {
       "category": "曲候補",
       "type": "曲名",

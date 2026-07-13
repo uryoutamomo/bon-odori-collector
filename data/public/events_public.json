@@ -3259,7 +3259,6 @@
       "2025-07-24",
       "2025-07-25"
     ],
-    "display_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -3301,6 +3300,7 @@
     "historical_reference_label": "2025-07-24〜2025-07-25実績・今年未確認",
     "historical_reference_confidence": "medium",
     "historical_reference_score": 0.59,
+    "display_tier": "historical_slide",
     "historical_slide": {
       "date": "2026-07-23",
       "date_end": "2026-07-24",
@@ -6553,9 +6553,9 @@
     "last_seen_dates": [
       "2025-07-12"
     ],
-    "display_tier": "historical_slide",
+    "display_tier": "historical_reference",
     "historical_reference": {
-      "display_tier": "historical_slide",
+      "display_tier": "historical_reference",
       "last_seen_year": 2025,
       "last_seen_dates": [
         "2025-07-12"
@@ -6577,41 +6577,16 @@
       "cautions": [],
       "edition_number": null,
       "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-07-11",
-        "date_end": "2026-07-11",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第2土曜を2026年へスライド",
-        "source_date": "2025-07-12",
-        "source_date_end": null,
-        "duration_days": 1
-      }
+      "slide": null
     },
-    "historical_display_tier": "historical_slide",
+    "historical_display_tier": "historical_reference",
     "historical_last_seen_year": 2025,
     "historical_last_seen_dates": [
       "2025-07-12"
     ],
     "historical_reference_label": "2025-07-12実績・今年未確認",
     "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.68,
-    "historical_slide": {
-      "date": "2026-07-11",
-      "date_end": "2026-07-11",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第2土曜を2026年へスライド",
-      "source_date": "2025-07-12",
-      "source_date_end": null,
-      "duration_days": 1
-    },
-    "historical_slide_date": "2026-07-11",
-    "historical_slide_date_end": "2026-07-11",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第2土曜を2026年へスライド",
-    "predicted_date": "2026-07-11",
-    "predicted_date_end": "2026-07-11",
-    "prediction_basis": "2025年実績の同月第2土曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "historical_reference_score": 0.68
   },
   {
     "name": "根津神社 盆踊り（文京区）",
@@ -15460,9 +15435,9 @@
     "last_seen_dates": [
       "2025-07-13"
     ],
-    "display_tier": "historical_slide",
+    "display_tier": "historical_reference",
     "historical_reference": {
-      "display_tier": "historical_slide",
+      "display_tier": "historical_reference",
       "last_seen_year": 2025,
       "last_seen_dates": [
         "2025-07-13"
@@ -15484,41 +15459,16 @@
       ],
       "edition_number": null,
       "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-07-12",
-        "date_end": "2026-07-12",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第2日曜を2026年へスライド",
-        "source_date": "2025-07-13",
-        "source_date_end": null,
-        "duration_days": 1
-      }
+      "slide": null
     },
-    "historical_display_tier": "historical_slide",
+    "historical_display_tier": "historical_reference",
     "historical_last_seen_year": 2025,
     "historical_last_seen_dates": [
       "2025-07-13"
     ],
     "historical_reference_label": "2025-07-13実績・今年未確認",
     "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.6,
-    "historical_slide": {
-      "date": "2026-07-12",
-      "date_end": "2026-07-12",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第2日曜を2026年へスライド",
-      "source_date": "2025-07-13",
-      "source_date_end": null,
-      "duration_days": 1
-    },
-    "historical_slide_date": "2026-07-12",
-    "historical_slide_date_end": "2026-07-12",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第2日曜を2026年へスライド",
-    "predicted_date": "2026-07-12",
-    "predicted_date_end": "2026-07-12",
-    "prediction_basis": "2025年実績の同月第2日曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "historical_reference_score": 0.6
   },
   {
     "name": "萩中町会・オーベルグランディオ萩中自治会・新宿東町会「盆踊り大会」",
@@ -15585,9 +15535,9 @@
     "last_seen_dates": [
       "2025-07-11"
     ],
-    "display_tier": "historical_slide",
+    "display_tier": "historical_reference",
     "historical_reference": {
-      "display_tier": "historical_slide",
+      "display_tier": "historical_reference",
       "last_seen_year": 2025,
       "last_seen_dates": [
         "2025-07-11"
@@ -15612,41 +15562,16 @@
       ],
       "edition_number": null,
       "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-07-10",
-        "date_end": "2026-07-10",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第2金曜を2026年へスライド",
-        "source_date": "2025-07-11",
-        "source_date_end": null,
-        "duration_days": 1
-      }
+      "slide": null
     },
-    "historical_display_tier": "historical_slide",
+    "historical_display_tier": "historical_reference",
     "historical_last_seen_year": 2025,
     "historical_last_seen_dates": [
       "2025-07-11"
     ],
     "historical_reference_label": "2025-07-11実績・今年未確認",
     "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.72,
-    "historical_slide": {
-      "date": "2026-07-10",
-      "date_end": "2026-07-10",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第2金曜を2026年へスライド",
-      "source_date": "2025-07-11",
-      "source_date_end": null,
-      "duration_days": 1
-    },
-    "historical_slide_date": "2026-07-10",
-    "historical_slide_date_end": "2026-07-10",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第2金曜を2026年へスライド",
-    "predicted_date": "2026-07-10",
-    "predicted_date_end": "2026-07-10",
-    "prediction_basis": "2025年実績の同月第2金曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "historical_reference_score": 0.72
   },
   {
     "name": "西糀谷四丁目町会 盆踊り大会",
@@ -17003,9 +16928,9 @@
     "last_seen_dates": [
       "2025-07-12"
     ],
-    "display_tier": "historical_slide",
+    "display_tier": "historical_reference",
     "historical_reference": {
-      "display_tier": "historical_slide",
+      "display_tier": "historical_reference",
       "last_seen_year": 2025,
       "last_seen_dates": [
         "2025-07-12"
@@ -17028,41 +16953,16 @@
       ],
       "edition_number": null,
       "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-07-11",
-        "date_end": "2026-07-11",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第2土曜を2026年へスライド",
-        "source_date": "2025-07-12",
-        "source_date_end": null,
-        "duration_days": 1
-      }
+      "slide": null
     },
-    "historical_display_tier": "historical_slide",
+    "historical_display_tier": "historical_reference",
     "historical_last_seen_year": 2025,
     "historical_last_seen_dates": [
       "2025-07-12"
     ],
     "historical_reference_label": "2025-07-12実績・今年未確認",
     "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.64,
-    "historical_slide": {
-      "date": "2026-07-11",
-      "date_end": "2026-07-11",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第2土曜を2026年へスライド",
-      "source_date": "2025-07-12",
-      "source_date_end": null,
-      "duration_days": 1
-    },
-    "historical_slide_date": "2026-07-11",
-    "historical_slide_date_end": "2026-07-11",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第2土曜を2026年へスライド",
-    "predicted_date": "2026-07-11",
-    "predicted_date_end": "2026-07-11",
-    "prediction_basis": "2025年実績の同月第2土曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "historical_reference_score": 0.64
   },
   {
     "name": "世田谷駅前商店街振興組合「納涼盆踊り大会」",
@@ -21291,9 +21191,9 @@
     "last_seen_dates": [
       "2025-07-05"
     ],
-    "display_tier": "historical_slide",
+    "display_tier": "historical_reference",
     "historical_reference": {
-      "display_tier": "historical_slide",
+      "display_tier": "historical_reference",
       "last_seen_year": 2025,
       "last_seen_dates": [
         "2025-07-05"
@@ -21312,41 +21212,16 @@
       "cautions": [],
       "edition_number": null,
       "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-07-04",
-        "date_end": "2026-07-04",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第1土曜を2026年へスライド",
-        "source_date": "2025-07-05",
-        "source_date_end": null,
-        "duration_days": 1
-      }
+      "slide": null
     },
-    "historical_display_tier": "historical_slide",
+    "historical_display_tier": "historical_reference",
     "historical_last_seen_year": 2025,
     "historical_last_seen_dates": [
       "2025-07-05"
     ],
     "historical_reference_label": "2025-07-05実績・今年未確認",
     "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.55,
-    "historical_slide": {
-      "date": "2026-07-04",
-      "date_end": "2026-07-04",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第1土曜を2026年へスライド",
-      "source_date": "2025-07-05",
-      "source_date_end": null,
-      "duration_days": 1
-    },
-    "historical_slide_date": "2026-07-04",
-    "historical_slide_date_end": "2026-07-04",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第1土曜を2026年へスライド",
-    "predicted_date": "2026-07-04",
-    "predicted_date_end": "2026-07-04",
-    "prediction_basis": "2025年実績の同月第1土曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "historical_reference_score": 0.55
   },
   {
     "name": "第11回 にっぽり炭坑節まつり",
@@ -21685,9 +21560,9 @@
     "last_seen_dates": [
       "2025-06-21"
     ],
-    "display_tier": "historical_slide",
+    "display_tier": "historical_reference",
     "historical_reference": {
-      "display_tier": "historical_slide",
+      "display_tier": "historical_reference",
       "last_seen_year": 2025,
       "last_seen_dates": [
         "2025-06-21"
@@ -21709,41 +21584,16 @@
       "cautions": [],
       "edition_number": null,
       "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-06-20",
-        "date_end": "2026-06-20",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第3土曜を2026年へスライド",
-        "source_date": "2025-06-21",
-        "source_date_end": null,
-        "duration_days": 1
-      }
+      "slide": null
     },
-    "historical_display_tier": "historical_slide",
+    "historical_display_tier": "historical_reference",
     "historical_last_seen_year": 2025,
     "historical_last_seen_dates": [
       "2025-06-21"
     ],
     "historical_reference_label": "2025-06-21実績・今年未確認",
     "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.67,
-    "historical_slide": {
-      "date": "2026-06-20",
-      "date_end": "2026-06-20",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第3土曜を2026年へスライド",
-      "source_date": "2025-06-21",
-      "source_date_end": null,
-      "duration_days": 1
-    },
-    "historical_slide_date": "2026-06-20",
-    "historical_slide_date_end": "2026-06-20",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第3土曜を2026年へスライド",
-    "predicted_date": "2026-06-20",
-    "predicted_date_end": "2026-06-20",
-    "prediction_basis": "2025年実績の同月第3土曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "historical_reference_score": 0.67
   },
   {
     "name": "新小岩北口盆踊りフェスタ",

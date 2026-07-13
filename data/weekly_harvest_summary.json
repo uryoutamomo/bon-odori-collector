@@ -1,21 +1,21 @@
 {
   "generated_by": "prepare_weekly_harvest_review.py",
-  "generated_at": "2026-07-12T08:33:59.637328+00:00",
+  "generated_at": "2026-07-13T09:50:44.550563+00:00",
   "source": "build_weekly_harvest_candidates.py",
-  "source_generated_at": "2026-07-12T08:33:52.124696+00:00",
+  "source_generated_at": "2026-07-13T09:50:36.888201+00:00",
   "days": 3,
-  "voice_count": 1008,
-  "candidate_count": 139,
+  "voice_count": 1192,
+  "candidate_count": 146,
   "category_counts": {
     "曲×会場共起": 17,
-    "曲候補": 114,
+    "曲候補": 121,
     "用語候補": 8
   },
   "non_song_review_count": 25,
-  "song_candidate_count": 114,
-  "song_direct_dry_run_count": 98,
-  "song_review_count": 1,
-  "song_rejected_noise_count": 15,
+  "song_candidate_count": 121,
+  "song_direct_dry_run_count": 97,
+  "song_review_count": 2,
+  "song_rejected_noise_count": 22,
   "review_files": {
     "non_song_json": "data/weekly_harvest_review_candidates.json",
     "non_song_ui": "data/weekly_harvest_review_ui.html",
@@ -33,15 +33,16 @@
       "万博音頭 × 大正大学",
       "あっぱれ音頭 × 大正大学",
       "おしりたんてい音頭 × 晴海ふ頭公園",
+      "とした踊り × 晴海ふ頭公園",
       "よさこいまた踊り × 大正大学",
       "を初めて踊り × 晴海ふ頭公園",
       "パンフレット掲載の踊り × 晴海ふ頭公園",
       "交野節 × 大正大学",
       "人と地域がつながる季節 × 大正大学",
-      "仏像音頭 × 大正大学",
-      "恵聖さん生唄の種物音頭 × 大正大学"
+      "仏像音頭 × 大正大学"
     ],
     "song_review": [
+      "盆ジョビ",
       "郡上おどり"
     ]
   }
