@@ -983,217 +983,122 @@ const EVENTS = [
   {
     "name": "銀座一丁目東町会・新富町会 納涼盆踊り大会",
     "name_confirmed": true,
-    "venue": "京橋プラザ区民館",
+    "venue": "京橋公園",
     "area": "中央区",
     "months": [
       7
     ],
     "scale": null,
-    "access": "東京メトロ有楽町線「新富町」駅徒歩2分、都営浅草線「宝町」駅徒歩5分",
-    "address": "東京都中央区銀座一丁目25番3号",
+    "access": null,
+    "address": null,
     "lat": null,
     "lng": null,
-    "date": "2025-07-19",
-    "date_end": null,
-    "status": "未確認",
+    "date": "2026-07-17",
+    "date_end": "2026-07-18",
+    "status": "確認済み",
     "date_confidence": {
-      "level": "unknown",
-      "label": "未確認",
-      "description": "2026年の開催日は未確認です"
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
     },
     "date_candidates": [],
     "hints": [
       [
         7,
-        19
+        17
+      ],
+      [
+        7,
+        18
       ]
     ],
     "jun": {
       "7": "中旬"
     },
-    "description": "京橋プラザ区民館・京橋公園周辺で行われる、銀座一丁目東町会・新富町会の納涼盆踊り大会。",
-    "detail": "2026年日程は未確認。過去実績として、2025年は7月19日（土）、2023年は7月28日（金）開催を過去情報から確認。近年は7月後半の週末開催と見なし、2026年は7月18日（土）を予想候補として扱う。",
-    "source_urls": [],
+    "description": null,
+    "detail": "新富町会「新富銀座納涼盆踊り大会」。19:00-21:00。屋台やきそば・わたあめ・ポップコーン・かき氷等、飲み物ソフトドリンク・生ビール、イベントゲームコーナー。（令和8年納涼マップ京橋五の部より）",
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://www.chuo-kanko.or.jp/pages/other_details/115655",
+        "kind": "official"
+      }
+    ],
     "songs": [],
-    "public_status": "expected_medium",
-    "public_category": "recurring_last_year",
-    "public_status_label": "昨年開催",
-    "public_note": "昨年開催: 2025-07-19。今年の日程は未確認です。",
-    "recurrence_label": "昨年開催・継続性 中",
-    "recurrence_score": 0.68,
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-07-17〜2026-07-18",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
     "recurrence_reasons": [
-      "held_2025",
-      "venue_present",
-      "tokyo_23ward",
-      "recurring_word:納涼",
-      "recurring_word:町会",
-      "recurring_word:盆踊り大会"
+      "2026年日付確認済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
-    "last_seen_year": 2025,
+    "last_seen_year": null,
     "last_seen_dates": [
-      "2025-07-19"
+      "2026-07-17",
+      "2026-07-18"
     ],
-    "display_tier": "historical_slide",
-    "historical_reference": {
-      "display_tier": "historical_slide",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-07-19"
-      ],
-      "label": "2025-07-19実績・今年未確認",
-      "confidence": "medium",
-      "score": 0.68,
-      "status": "expected_medium",
-      "status_label": "昨年開催",
-      "recurrence_label": "昨年開催・継続性 中",
-      "reasons": [
-        "held_2025",
-        "venue_present",
-        "tokyo_23ward",
-        "recurring_word:納涼",
-        "recurring_word:町会",
-        "recurring_word:盆踊り大会"
-      ],
-      "cautions": [],
-      "edition_number": null,
-      "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-07-18",
-        "date_end": "2026-07-18",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第3土曜を2026年へスライド",
-        "source_date": "2025-07-19",
-        "source_date_end": null,
-        "duration_days": 1
-      }
-    },
-    "historical_display_tier": "historical_slide",
-    "historical_last_seen_year": 2025,
-    "historical_last_seen_dates": [
-      "2025-07-19"
-    ],
-    "historical_reference_label": "2025-07-19実績・今年未確認",
-    "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.68,
-    "historical_slide": {
-      "date": "2026-07-18",
-      "date_end": "2026-07-18",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第3土曜を2026年へスライド",
-      "source_date": "2025-07-19",
-      "source_date_end": null,
-      "duration_days": 1
-    },
-    "historical_slide_date": "2026-07-18",
-    "historical_slide_date_end": "2026-07-18",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第3土曜を2026年へスライド",
-    "predicted_date": "2026-07-18",
-    "predicted_date_end": "2026-07-18",
-    "prediction_basis": "2025年実績の同月第3土曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "display_tier": "confirmed"
   },
   {
     "name": "入船三丁目町会納涼盆踊り",
     "name_confirmed": true,
-    "venue": "入船三丁目町会周辺（会場未確認）",
+    "venue": "入船三丁目交差点",
     "area": "中央区",
     "months": [
       8
     ],
     "scale": null,
-    "access": "東京メトロ有楽町線 新富町駅、JR・東京メトロ日比谷線 八丁堀駅から徒歩圏内",
-    "address": "東京都中央区入船三丁目付近",
+    "access": null,
+    "address": null,
     "lat": null,
     "lng": null,
-    "date": null,
-    "date_end": null,
-    "status": "未確認",
+    "date": "2026-08-24",
+    "date_end": "2026-08-25",
+    "status": "確認済み",
     "date_confidence": {
-      "level": "unknown",
-      "label": "未確認",
-      "description": "開催日はまだ確認できていません"
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
     },
     "date_candidates": [],
     "hints": [
       [
         8,
-        15
+        24
+      ],
+      [
+        8,
+        25
       ]
     ],
     "jun": {
-      "8": "中旬"
+      "8": "下旬"
     },
-    "description": "入船三丁目町会の納涼盆踊り。2024年の動画実績をもとに、今年未確認の候補として掲載しています。",
-    "detail": "2024年に入船三丁目町会納涼盆踊りの開催実績あり。和太鼓お祭りチャンネルのYouTube動画群で、東京音頭、バハマ・ママ、これがお江戸の盆ダンス、チャンチキおけさ、大東京音頭、少年八木節、ダンシング・ヒーロー、炭坑節、きよしの数え唄、ベイサイドブギ、銀座カンカン娘、きよしのズンドコ節、どだればちサンバを確認。ただし動画から具体開催日と会場名は確認できないため、2026年日程は未確認。",
+    "description": "入船三丁目町会の納涼盆踊り。2026年の開催日・会場が公式チラシで確認されました。",
+    "detail": "18:30-21:00。屋台やきそば・かき氷等、飲み物ビール・ラムネ等(さらに地域の飲食店からのメニューを提供)。（令和8年納涼マップ京橋五の部より。2024年の過去実績曲目は引き続き参照可）",
     "source_urls": [],
-    "songs": [
-      {
-        "name": "バハマ・ママ",
-        "confidence": "hint"
-      },
-      {
-        "name": "大東京音頭",
-        "confidence": "hint"
-      },
-      {
-        "name": "東京音頭",
-        "confidence": "hint"
-      },
-      {
-        "name": "炭坑節",
-        "confidence": "hint"
-      }
-    ],
-    "public_status": "date_unknown",
-    "public_category": "date_unknown",
-    "public_status_label": "日程未確認",
-    "public_note": "今年の日程は未確認です。",
-    "recurrence_label": "日程未確認",
-    "recurrence_score": 0.25,
+    "songs": [],
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-24〜2026-08-25",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
     "recurrence_reasons": [
-      "月ヒントあり",
-      "日付ヒントあり",
-      "未確認"
+      "2026年日付確認済み"
     ],
-    "recurrence_cautions": [
-      "2026年日程なし"
-    ],
+    "recurrence_cautions": [],
     "edition_number": null,
     "last_seen_year": null,
-    "last_seen_dates": [],
-    "display_tier": "season_hint",
-    "season_hint": {
-      "display_tier": "season_hint",
-      "target_year": 2026,
-      "months": [
-        8
-      ],
-      "jun": {
-        "8": "中旬"
-      },
-      "hints": [
-        [
-          8,
-          15
-        ]
-      ],
-      "label": "8月中旬",
-      "confidence": "lowest",
-      "basis": "例年の開催月・旬ヒント",
-      "has_jun_hint": true,
-      "has_sort_hint": true
-    },
-    "season_months": [
-      8
+    "last_seen_dates": [
+      "2026-08-24",
+      "2026-08-25"
     ],
-    "season_jun": {
-      "8": "中旬"
-    },
-    "season_hint_label": "8月中旬",
-    "season_confidence": "lowest"
+    "display_tier": "confirmed"
   },
   {
     "name": "小網神社の盆踊り（名称推定）",
@@ -1386,6 +1291,63 @@ const EVENTS = [
       "2026-02-21"
     ],
     "display_tier": "ended"
+  },
+  {
+    "name": "明石町会 納涼盆踊り",
+    "name_confirmed": true,
+    "venue": "明石小学校",
+    "area": "中央区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": null,
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-06",
+    "date_end": "2026-08-07",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        6
+      ],
+      [
+        8,
+        7
+      ]
+    ],
+    "jun": {
+      "8": "上旬"
+    },
+    "description": null,
+    "detail": "18:00-21:00。屋台軽食類、飲み物生ビール・ジュース等、イベント子ども盆踊り大会(お菓子付)。（令和8年納涼マップ京橋五の部より）",
+    "source_urls": [],
+    "songs": [],
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-06〜2026-08-07",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-06",
+      "2026-08-07"
+    ],
+    "display_tier": "confirmed"
   },
   {
     "name": "イベント名未確認（晴海ふ頭公園）",
@@ -2190,7 +2152,7 @@ const EVENTS = [
       "8": "上旬"
     },
     "description": "",
-    "detail": "入船二丁目町会の公式/町会広報X投稿で、2026年8月3日から8月5日、鉄砲洲公園、18:45-21:00の開催を確認。",
+    "detail": "入船二丁目町会の公式/町会広報X投稿で、2026年8月3日から8月5日、鉄砲洲公園、18:45-21:00の開催を確認。 5日(水)が中止の場合は6日(木)に順延。（令和8年納涼マップ京橋五の部より）",
     "source_urls": [
       {
         "label": "公式告知あり",
