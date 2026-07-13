@@ -1,0 +1,91 @@
+{
+  "generated_by": "apply_kyobashi5_nouryou_map_2026.py",
+  "generated_at": "2026-07-13T01:57:50.334110+00:00",
+  "mode": "apply",
+  "sources": {
+    "master_db": "data/bon_odori_master.sqlite",
+    "flyer_title": "令和8年 納涼マップ 京橋五の部"
+  },
+  "outputs": {
+    "target_db": "data/bon_odori_master.sqlite",
+    "dry_run_db": "",
+    "backup_db": "data/backups/bon_odori_master.20260713T015750.334110+0000.sqlite.bak",
+    "json": "data/kyobashi5_nouryou_map_2026_apply_report.json",
+    "markdown": "data/kyobashi5_nouryou_map_2026_apply_report.md"
+  },
+  "options": {
+    "apply": true
+  },
+  "write_guard": {
+    "db_committed": true,
+    "rolled_back": false,
+    "rollback_reason": ""
+  },
+  "summary": {
+    "issues_count": 0,
+    "issues_by_severity": {},
+    "audit_issues_by_severity": {
+      "medium": 1
+    },
+    "table_counts": {
+      "event_investigation_tasks": 79,
+      "event_occurrences": 252,
+      "event_series": 241,
+      "evidence_items": 28428,
+      "external_record_links": 2654,
+      "historical_promotion_candidates": 16,
+      "master_meta": 0,
+      "notion_sync_jobs": 10,
+      "observed_occurrence_songs": 28105,
+      "observed_occurrences": 1856,
+      "occurrence_dates": 207,
+      "occurrence_evidence_links": 12,
+      "occurrence_song_evidence_links": 496,
+      "occurrence_songs": 323,
+      "predicted_occurrence_dates": 13,
+      "schema_migrations": 1,
+      "song_aliases": 141,
+      "songs": 150,
+      "venue_aliases": 290,
+      "venues": 241,
+      "write_batches": 0
+    }
+  },
+  "applied": {
+    "resolved": true,
+    "updated": [
+      {
+        "occurrence_id": "occ_225f239652267ed9",
+        "venue_id": "venue_b1da1cf34c4d1f5b",
+        "venue_status": "created"
+      },
+      {
+        "occurrence_id": "occ_69eb62d9b1773ad9",
+        "venue_id": null,
+        "venue_status": "unchanged"
+      },
+      {
+        "occurrence_id": "occ_56e51b72ec7acc7e",
+        "venue_id": "venue_7eb82e608a5f39f4",
+        "venue_status": "created"
+      }
+    ],
+    "created": [
+      {
+        "occurrence_id": "occ_c97f48d221c7154f",
+        "venue_id": "venue_9dbf1d33b0d471a6",
+        "venue_status": "created"
+      }
+    ]
+  },
+  "issues": [],
+  "audit": {
+    "issue_count": 1,
+    "issues_by_severity": {
+      "medium": 1
+    },
+    "issues_by_type": {
+      "source_snapshot_drift": 1
+    }
+  }
+}
