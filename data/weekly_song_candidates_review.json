@@ -6,6 +6,33 @@
     {
       "category": "曲候補",
       "type": "曲名",
+      "term": "郡上おどり",
+      "interpretation": "郡上おどり",
+      "confidence": "要レビュー",
+      "reason": "曲名抽出器で検出: known_song_context, song_suffix_near_context",
+      "evidence_count": 2,
+      "evidence": [
+        {
+          "url": "https://x.com/tokai_newsone/status/2076941541214761227",
+          "date": "2026-07-14T08:07:05+00:00",
+          "account": "@tokai_newsone",
+          "text": "“郡上おどり”の街で生まれた盆踊りのための服「ODORIGI」暑い夏もゆったり＆快適 https://t.co/JenZjNbwHp"
+        },
+        {
+          "url": "https://x.com/M125M8qgyhWueHS/status/2076197022546403646",
+          "date": "2026-07-12T06:48:38+00:00",
+          "account": "@M125M8qgyhWueHS",
+          "text": "今年も作ります #郡上おどりトート #夢中で描いてたら踊りに行く時間でした #今日はここまで https://t.co/Fau774ocCK"
+        }
+      ],
+      "evidence_text": "“郡上おどり”の街で生まれた盆踊りのための服「ODORIGI」暑い夏もゆったり＆快適 https://t.co/JenZjNbwHp\n---\n今年も作ります #郡上おどりトート #夢中で描いてたら踊りに行く時間でした #今日はここまで https://t.co/Fau774ocCK",
+      "evidence_url": "https://x.com/tokai_newsone/status/2076941541214761227",
+      "canonical_song_name": "郡上おどり",
+      "triage_reason": "多義語・イベント名・ジャンル名の可能性がある"
+    },
+    {
+      "category": "曲候補",
+      "type": "曲名",
       "term": "盆ジョビ",
       "interpretation": "盆ジョビ",
       "confidence": "要レビュー",
@@ -22,27 +49,6 @@
       "evidence_text": "盆踊りバージョンたまげた。中野の盆ジョビ踊りでも流れないかなあ？ USEN 推し活リクエストでJuice=Juiceの『盛れ!ミ・アモーレ』をリクエストしました！ https://t.co/EeAcIuUzaU #USEN推し活リクエスト #推しリク #JuiceJuice",
       "evidence_url": "https://x.com/ytzrtn1219/status/2076602029620035819",
       "canonical_song_name": "盆ジョビ",
-      "triage_reason": "多義語・イベント名・ジャンル名の可能性がある"
-    },
-    {
-      "category": "曲候補",
-      "type": "曲名",
-      "term": "郡上おどり",
-      "interpretation": "郡上おどり",
-      "confidence": "要レビュー",
-      "reason": "曲名抽出器で検出: known_song_context, song_suffix_near_context",
-      "evidence_count": 1,
-      "evidence": [
-        {
-          "url": "https://x.com/M125M8qgyhWueHS/status/2076197022546403646",
-          "date": "2026-07-12T06:48:38+00:00",
-          "account": "@M125M8qgyhWueHS",
-          "text": "今年も作ります #郡上おどりトート #夢中で描いてたら踊りに行く時間でした #今日はここまで https://t.co/Fau774ocCK"
-        }
-      ],
-      "evidence_text": "今年も作ります #郡上おどりトート #夢中で描いてたら踊りに行く時間でした #今日はここまで https://t.co/Fau774ocCK",
-      "evidence_url": "https://x.com/M125M8qgyhWueHS/status/2076197022546403646",
-      "canonical_song_name": "郡上おどり",
       "triage_reason": "多義語・イベント名・ジャンル名の可能性がある"
     }
   ]

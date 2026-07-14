@@ -1,6 +1,6 @@
 {
   "generated_by": "build_song_ocr_queue.py",
-  "count": 17,
+  "count": 19,
   "items": [
     {
       "id": "b21783a2a9785946",
@@ -261,6 +261,36 @@
         "https://pbs.twimg.com/media/HNBX6tJbIAAXdZO.jpg"
       ],
       "text": "本日２箇所目は　\nこちらに🏮(行ってました)\n\n今日の曲目は…👀❗️\n私、踊れるのか⁉️\nヤバい感じ満載でしたが\nたぶん…頑張りました💦\n\n#盆踊り　　#尼崎 https://t.co/fagACdX4Uj",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "6efbd85f78a9ca55",
+      "status": "needs_ocr",
+      "account": "@mukaibunkaharu",
+      "url": "https://x.com/mukaibunkaharu/status/2076681060864369124",
+      "tweet_id": "2076681060864369124",
+      "date": "2026-07-13T14:52:02+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HNHaadua0AAPL41.jpg",
+        "https://t.co/zkl1PAo6XV",
+        "pic.x.com/zkl1PAo6XV"
+      ],
+      "text": "自由が丘盆踊り大会曲目です https://t.co/zkl1PAo6XV",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "2c93d8496a586da8",
+      "status": "needs_ocr",
+      "account": "@nobu_harapeko",
+      "url": "https://x.com/nobu_harapeko/status/2076878115188670943",
+      "tweet_id": "2076878115188670943",
+      "date": "2026-07-14T03:55:03+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HNKNo4PaMAAOVqB.jpg",
+        "https://t.co/gYzKerpxCX",
+        "pic.x.com/gYzKerpxCX"
+      ],
+      "text": "一応載せときます。\n川崎市多摩区の盆踊り🏮\n\n7/25-7/26\n錦ケ丘南公園（須賀神社隣）\n小田急線生田駅から徒歩10分前くらいかな？\n生田音頭（長沢諏訪神社や春秋苑とは別の振り。セミ捕る方。うちわ）かかる貴重な会場🌸\n川崎おどりとか押せ押せとかかかった記憶だけど曲目少いから梯子するのが良いかも https://t.co/gYzKerpxCX",
       "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
     }
   ]
