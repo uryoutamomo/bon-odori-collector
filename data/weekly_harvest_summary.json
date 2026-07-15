@@ -1,21 +1,21 @@
 {
   "generated_by": "prepare_weekly_harvest_review.py",
-  "generated_at": "2026-07-14T08:30:29.588704+00:00",
+  "generated_at": "2026-07-15T08:38:07.765511+00:00",
   "source": "build_weekly_harvest_candidates.py",
-  "source_generated_at": "2026-07-14T08:30:22.661697+00:00",
+  "source_generated_at": "2026-07-15T08:37:59.940156+00:00",
   "days": 3,
-  "voice_count": 1011,
-  "candidate_count": 139,
+  "voice_count": 774,
+  "candidate_count": 118,
   "category_counts": {
-    "曲×会場共起": 25,
-    "曲候補": 105,
-    "用語候補": 9
+    "曲×会場共起": 21,
+    "曲候補": 90,
+    "用語候補": 7
   },
-  "non_song_review_count": 34,
-  "song_candidate_count": 105,
-  "song_direct_dry_run_count": 84,
+  "non_song_review_count": 28,
+  "song_candidate_count": 90,
+  "song_direct_dry_run_count": 68,
   "song_review_count": 2,
-  "song_rejected_noise_count": 19,
+  "song_rejected_noise_count": 20,
   "review_files": {
     "non_song_json": "data/weekly_harvest_review_candidates.json",
     "non_song_ui": "data/weekly_harvest_review_ui.html",
@@ -28,22 +28,22 @@
   ],
   "samples": {
     "non_song_review": [
-      "東京五輪音頭 × 晴海ふ頭公園",
       "らんまん踊り × 靖国神社",
       "多くの踊り × 靖国神社",
       "大東京音頭 × 靖国神社",
       "東京音頭 × 靖国神社",
       "ダンシングヒーロー × 靖国神社",
-      "万博音頭 × 大正大学",
       "おしりたんてい音頭 × 晴海ふ頭公園",
       "その羽田節 × 羽田神社",
       "とした踊り × 晴海ふ頭公園",
-      "を初めて踊り × 晴海ふ頭公園",
-      "スッキリ音頭 × 羽田神社"
+      "みんなで楽しく踊り × 晴海ふ頭公園",
+      "を掛け声かけながら踊り × 靖国神社",
+      "スッキリ音頭 × 羽田神社",
+      "ダンシングヒーロー × 晴海ふ頭公園"
     ],
     "song_review": [
-      "郡上おどり",
-      "盆ジョビ"
+      "盆ジョビ",
+      "郡上おどり"
     ]
   }
 }

@@ -1,6 +1,6 @@
 {
   "generated_by": "build_song_ocr_queue.py",
-  "count": 19,
+  "count": 20,
   "items": [
     {
       "id": "b21783a2a9785946",
@@ -291,6 +291,21 @@
         "pic.x.com/gYzKerpxCX"
       ],
       "text": "一応載せときます。\n川崎市多摩区の盆踊り🏮\n\n7/25-7/26\n錦ケ丘南公園（須賀神社隣）\n小田急線生田駅から徒歩10分前くらいかな？\n生田音頭（長沢諏訪神社や春秋苑とは別の振り。セミ捕る方。うちわ）かかる貴重な会場🌸\n川崎おどりとか押せ押せとかかかった記憶だけど曲目少いから梯子するのが良いかも https://t.co/gYzKerpxCX",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "33b53747167e7044",
+      "status": "needs_ocr",
+      "account": "@iko_yo_trip",
+      "url": "https://x.com/iko_yo_trip/status/2077275720133316912",
+      "tweet_id": "2077275720133316912",
+      "date": "2026-07-15T06:15:00+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HNO-aVWa0AAih1x.jpg",
+        "https://t.co/68xa2uJfUi",
+        "pic.x.com/68xa2uJfUi"
+      ],
+      "text": "＼飛行機を間近に、夏の夜を踊ろう！✈️🎐／\n\n空港スカイデッキで浴衣を着て盆踊り！離着陸を眺めながら家族で夏の思い出を作れるセントレアの恒例イベントです。\n\nおすすめポイント\n✅【飛行機が目の前】第1ターミナル4Fスカイデッキで迫力の離発着を見ながら踊れる ✨\n✅【曲目いろいろ】セントレア音頭・常滑音頭・グランパス音頭から炭坑節や郡上おどりまで誰でも参加OK 🎶\n✅【夏の演出＆特典】7/17〜8/16は提灯ライトアップ、当日はセントレアオリジナルうちわ配布予定🎐\n\n🗓 2026年7月18日（土）・19日（日）\n📍 中部国際空港セントレア（第1ターミナル4F スカイデッキ）\n\n行きたい？浴衣で行く？コメントで教えてね！👘✨\n開催情報📝\nhttps://t.co/QCraj6NBS9",
       "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
     }
   ]
