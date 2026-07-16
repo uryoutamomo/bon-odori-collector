@@ -2,7 +2,7 @@
 
 作成日: 2026-07-16 JST
 署名: おと（Codex）
-ステータス: 第2段の分類dry-run後、append系52本とbuild系低リスク4本を実移動済み。
+ステータス: 第2段の分類dry-run後、append系52本とbuild系低リスク6本を実移動済み。
 
 ## 目的
 
@@ -31,13 +31,21 @@ append系実移動後:
 | root `append_*.py` | 0 | ルートから撤去完了 |
 | `legacy/notion-notes/append_*.py` | 52 | Notion単発メモ追記を集約 |
 
-build系低リスク群 実移動後:
+build系低リスク群 第1回実移動後:
 
 | pattern | count | 所見 |
 |---|---:|---|
 | root `*.py` | 261 | build系4本を追加移動 |
 | root `build_*.py` | 50 | workflow現役・RDB/レビュー基盤を温存 |
 | `legacy/build-reports/build_*.py` | 4 | 単発レポート・旧候補生成を集約 |
+
+build系低リスク群 第2回実移動後:
+
+| pattern | count | 所見 |
+|---|---:|---|
+| root `*.py` | 259 | retrospective補助2本を追加移動 |
+| root `build_*.py` | 48 | workflow現役・RDB/レビュー基盤を温存 |
+| `legacy/build-reports/build_*.py` | 6 | 単発レポート・旧候補生成を集約 |
 
 ## 第2段の移動候補A: Notionメモ追記 append系
 
@@ -137,7 +145,15 @@ build_july_official_url_gap_report.py
 build_ph2_ebara_fifth_public_preview.py
 ```
 
-`build_low_confidence_backfill_review.py`、Ph2 plan 系、retrospective 系は docs/test/別スクリプト参照があるため、
+同日追加で、workflow/docs/scriptsからの実行参照がなく、テストだけが import していた retrospective 補助2本を
+`legacy/build-reports/` へ移動済み。テストは移動先ファイルを明示ロードする形へ更新した。
+
+```text
+build_retrospective_occurrences.py
+build_retrospective_venue_song_associations.py
+```
+
+`build_low_confidence_backfill_review.py`、Ph2 plan 系、pre-cutover 系は docs/test/別スクリプト参照があるため、
 この小移動では温存した。次に動かす場合は参照更新を含む別コミットで扱う。
 
 推奨: build系はappend系と同じコミットで動かさない。append系移動後に、参照更新範囲を個別に見てから小さく移動する。

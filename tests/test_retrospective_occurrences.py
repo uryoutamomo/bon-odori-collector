@@ -1,6 +1,16 @@
 import unittest
+import importlib.util
+from pathlib import Path
 
-from build_retrospective_occurrences import build_dry_run, event_date
+
+ROOT = Path(__file__).resolve().parents[1]
+SCRIPT = ROOT / "legacy" / "build-reports" / "build_retrospective_occurrences.py"
+SPEC = importlib.util.spec_from_file_location("build_retrospective_occurrences", SCRIPT)
+MODULE = importlib.util.module_from_spec(SPEC)
+SPEC.loader.exec_module(MODULE)
+
+build_dry_run = MODULE.build_dry_run
+event_date = MODULE.event_date
 
 
 class RetrospectiveOccurrencesTest(unittest.TestCase):

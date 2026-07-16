@@ -1,6 +1,15 @@
 import unittest
+import importlib.util
+from pathlib import Path
 
-from build_retrospective_venue_song_associations import build_from_voices
+
+ROOT = Path(__file__).resolve().parents[1]
+SCRIPT = ROOT / "legacy" / "build-reports" / "build_retrospective_venue_song_associations.py"
+SPEC = importlib.util.spec_from_file_location("build_retrospective_venue_song_associations", SCRIPT)
+MODULE = importlib.util.module_from_spec(SPEC)
+SPEC.loader.exec_module(MODULE)
+
+build_from_voices = MODULE.build_from_voices
 
 
 class RetrospectiveVenueSongAssociationsTest(unittest.TestCase):

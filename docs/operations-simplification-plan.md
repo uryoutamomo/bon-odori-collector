@@ -180,6 +180,10 @@ Notion単発メモ追記の `append_*.py` 52本を `legacy/notion-notes/` へ移
 
 分類済みの `build_*.py` から、workflow/test/docsの実行参照がない4本だけを `legacy/build-reports/` へ移動した。root直下の `build_*.py` は50本になった。参照更新が必要な `build_low_confidence_backfill_review.py`、Ph2 plan 系、retrospective 系は温存し、別コミットで扱う。
 
+## E 第2段 build系 低リスク群 第2回実移動（2026-07-16 おと）
+
+workflow/docs/scriptsからの実行参照がなく、テストだけが import していた retrospective 補助2本を `legacy/build-reports/` へ追加移動した。テストは移動先ファイルを明示ロードする形へ更新済み。root直下の `build_*.py` は48本になった。
+
 ## A ステータス：内田さんGO済み・実運用開始（2026-07-16）
 
 - ことレビュー2巡（初回=Finding 1 historical重複・Finding 4 ダミーURL → おと修正 → 再検証全項目合格）を経て、
