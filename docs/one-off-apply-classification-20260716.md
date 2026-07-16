@@ -31,21 +31,23 @@ E「名残の撤去」では、済んだ one-off apply を `legacy/` へ移動�
 
 次はAの4種で今後は置き換える対象。移動時は `legacy/apply/` 配下へ置く想定。
 
-| file | 主な種別 | 備考 |
-|---|---|---|
-| `apply_gujo_series_merge.py` | series merge | v2以降の変更種別候補。済みone-offとして移動候補 |
-| `apply_irifune_third_historical_reference.py` | historical reference | A `add_historical_reference` 置換対象 |
-| `apply_july19_2026_public_events.py` | current-year confirmation / public event add | A `confirm_current_year_date` + venue系で置換対象 |
-| `apply_kameari_yuroad_historical_reference.py` | historical reference / songs | A `add_historical_reference` + `add_song_evidence` 置換対象 |
-| `apply_kyobashi5_nouryou_map_2026.py` | official notice one-off | 今後は `apply_official_notice_report.py` またはA |
-| `apply_marunouchi_2026_official_confirmation.py` | current-year confirmation | A `confirm_current_year_date` 置換対象 |
-| `apply_ph2_ebara_fifth_rdb.py` | old RDB phase apply | 済みone-offとして移動候補 |
-| `apply_ph2_shinagawa_second_venue_review.py` | venue update | A `update_venue` 置換対象 |
-| `apply_satake_geba_bon_odori.py` | current-year rare signal promotion | A `confirm_current_year_date` 置換対象 |
-| `apply_sumibon_2026_rare_signal.py` | current-year rare signal promotion | A `confirm_current_year_date` 置換対象 |
-| `apply_tokyofesta_2026_public_events_batch.py` | third-party current-year batch | A `confirm_current_year_date` 置換対象。batch2/harumiがimportするので移動順注意 |
-| `apply_tokyofesta_2026_public_events_batch2.py` | wrapper one-off | base移動時に同時移動 |
-| `apply_tokyofesta_harumi_2026_public_event.py` | wrapper one-off | base移動時に同時移動 |
+2026-07-16 のmain実移動では、mainに実在していた4本だけを移動した。下表のうち `main未収録` のものは、当時のローカル作業ツリーには未追跡で存在していたが、mainには載っていなかったため移動対象外。
+
+| file | 主な種別 | 備考 | 2026-07-16 main実移動 |
+|---|---|---|---|
+| `apply_gujo_series_merge.py` | series merge | v2以降の変更種別候補。済みone-offとして移動候補 | `legacy/apply/`へ移動 |
+| `apply_irifune_third_historical_reference.py` | historical reference | A `add_historical_reference` 置換対象 | main未収録 |
+| `apply_july19_2026_public_events.py` | current-year confirmation / public event add | A `confirm_current_year_date` + venue系で置換対象 | main未収録 |
+| `apply_kameari_yuroad_historical_reference.py` | historical reference / songs | A `add_historical_reference` + `add_song_evidence` 置換対象 | main未収録 |
+| `apply_kyobashi5_nouryou_map_2026.py` | official notice one-off | 今後は `apply_official_notice_report.py` またはA | `legacy/apply/`へ移動 |
+| `apply_marunouchi_2026_official_confirmation.py` | current-year confirmation | A `confirm_current_year_date` 置換対象 | main未収録 |
+| `apply_ph2_ebara_fifth_rdb.py` | old RDB phase apply | 済みone-offとして移動候補 | `legacy/apply/`へ移動 |
+| `apply_ph2_shinagawa_second_venue_review.py` | venue update | 専用テストがあるため第1段では保留 | 保留 |
+| `apply_satake_geba_bon_odori.py` | current-year rare signal promotion | A `confirm_current_year_date` 置換対象 | `legacy/apply/`へ移動 |
+| `apply_sumibon_2026_rare_signal.py` | current-year rare signal promotion | A `confirm_current_year_date` 置換対象 | main未収録 |
+| `apply_tokyofesta_2026_public_events_batch.py` | third-party current-year batch | A `confirm_current_year_date` 置換対象。batch2/harumiがimportするので移動順注意 | main未収録 |
+| `apply_tokyofesta_2026_public_events_batch2.py` | wrapper one-off | base移動時に同時移動 | main未収録 |
+| `apply_tokyofesta_harumi_2026_public_event.py` | wrapper one-off | base移動時に同時移動 | main未収録 |
 
 ## 保留: C完了まで残す公開JSONパッチ系
 

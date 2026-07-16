@@ -42,8 +42,8 @@ class MasterRdbPublicJsonOneOffPolicyTest(unittest.TestCase):
 
     def test_existing_master_rdb_one_off_scripts_keep_specific_confirmation(self):
         expectations = {
-            "apply_ph2_ebara_fifth_rdb.py": "APPLY PH2 EBARA FIFTH RDB",
-            "apply_gujo_series_merge.py": "APPLY GUJO SERIES MERGE",
+            "legacy/apply/apply_ph2_ebara_fifth_rdb.py": "APPLY PH2 EBARA FIFTH RDB",
+            "legacy/apply/apply_gujo_series_merge.py": "APPLY GUJO SERIES MERGE",
             "apply_notion_drift_public_intro.py": "APPLY NOTION DRIFT PUBLIC INTRO",
             "apply_notion_drift_source_url_resolutions.py": "APPLY NOTION DRIFT SOURCE URL RESOLUTIONS",
             "apply_pre_cutover_p0_historical_references.py": "APPLY PRE CUTOVER P0 HISTORICAL REFERENCES",

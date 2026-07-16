@@ -48,7 +48,7 @@ Keep them manual:
 | --- | --- |
 | `apply_pre_cutover_p0_historical_references.py` | `APPLY PRE CUTOVER P0 HISTORICAL REFERENCES` |
 | `apply_reviewed_historical_references.py` | `APPLY REVIEWED HISTORICAL REFERENCES` |
-| `apply_ph2_ebara_fifth_rdb.py` | `APPLY PH2 EBARA FIFTH RDB` |
+| `legacy/apply/apply_ph2_ebara_fifth_rdb.py` | `APPLY PH2 EBARA FIFTH RDB` |
 
 ## Flow
 

@@ -112,9 +112,9 @@ sqlite本体はcommitしない（`.gitignore`の`data/*.sqlite`対象）。commi
 
 ## 一回限りスクリプトからの移行方針
 
-`apply_kyobashi5_nouryou_map_2026.py`は、この機能が無かった時期に書いた一回限り
+`legacy/apply/apply_kyobashi5_nouryou_map_2026.py`は、この機能が無かった時期に書いた一回限り
 のスクリプト。今後、同様の掲示物・チラシ反映で新規スクリプトは作らず、この
-`apply_official_notice_report.py`を使う。`apply_kyobashi5_nouryou_map_2026.py`
+`apply_official_notice_report.py`を使う。`legacy/apply/apply_kyobashi5_nouryou_map_2026.py`
 自体は過去の実行記録として凍結保持する（削除しない）。
 
 ## スコープ外: 盆助サイトへの反映
