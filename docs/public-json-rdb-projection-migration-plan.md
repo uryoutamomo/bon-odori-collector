@@ -68,6 +68,29 @@ If the sidecar is missing, they fall back to the older `name + venue` matching. 
 5. 各段階で、現行経路と新経路のJSONを同一master DBで比較し、差分ゼロを確認する。
 6. 差分ゼロが維持できた段階で、旧3本は単体テストとロールバック保険として残すか、legacyへ移すかを別判断する。
 
+## Readiness Dry-Run
+
+Before applying historical-reference backfill candidates to the real Master RDB,
+run the integrated dry-run harness:
+
+```sh
+python3 scripts/run_public_projection_readiness.py --today 2026-07-16
+```
+
+For a clean worktree without `data/bon_odori_master.sqlite`, pass the local DB explicitly:
+
+```sh
+python3 scripts/run_public_projection_readiness.py \
+  --today 2026-07-16 \
+  --master-db /Users/ryotauchida/bon-odori-collector/data/bon_odori_master.sqlite
+```
+
+The harness writes fresh public JSON, `public_event_source_map.json`, before/after
+projection compare reports, generated `dry_run_only` historical-reference change
+requests, and the dry-run apply report under `data/public_projection_readiness/`
+by default. It does not deploy, does not edit `data/public/`, and does not apply
+to the real Master RDB.
+
 ## Non-Goals
 
 - site repo同期やWebデプロイはこの計画に含めない。

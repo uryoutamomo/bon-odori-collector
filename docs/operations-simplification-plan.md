@@ -245,6 +245,21 @@ season hint の順にRDB投影側へ移す。詳細は `docs/public-json-rdb-pro
 `occurrence_id` を優先し、なければ従来の name+venue fuzzy 突合にフォールバックする。これによりC本丸の
 RDB投影比較とhistorical戻し候補生成で、公開名ゆれによる weak_candidate を減らす。
 
+## C 第7段 公開投影readiness一括dry-run（2026-07-17 おと）
+
+`scripts/run_public_projection_readiness.py` を追加した。これは公開データや Master RDB を直接変更せず、
+一時出力先に fresh export と内部サイドカーを作り、次を一括で実行する。
+
+1. `compare_public_projection_sources.py` で現状のRDB投影blockingを確認
+2. `build_public_historical_reference_change_requests.py` で `dry_run_only: true` の historical戻し候補を生成
+3. `apply_change_requests.py` のdry-run DBへ適用
+4. dry-run DBで再度 `compare_public_projection_sources.py` を実行
+
+実データ確認では、サイドカーは209/209でヒットし、historical戻し候補83件はdry-run applyで
+未解決0・issueなし。適用後シミュレーションでは blocking が 88 → 10 まで下がった。
+この段階では本DBへは未反映。次は、ことレビュー後に承認分だけ reviewed JSON へ昇格し、
+Aの通常手順で apply する。
+
 ## A ステータス：内田さんGO済み・実運用開始（2026-07-16）
 
 - ことレビュー2巡（初回=Finding 1 historical重複・Finding 4 ダミーURL → おと修正 → 再検証全項目合格）を経て、
