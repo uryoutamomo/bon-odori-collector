@@ -53,6 +53,13 @@
 - このMacには本番S3/CloudFront用のAWS認証を置かない運用。`scripts/deploy_static_site.sh` は `AWS_PROFILE=bon-odori` 前提だが、ローカル直叩きは正規デプロイ経路ではない。
 - 本番デプロイの正規経路は、`bon-odori-collector/data/public/events_public.json` を `bon-odori-site/data/events_public.json` へ同期し、`bon-odori-site` を commit/push して GitHub Actions の `Deploy static site` workflow を実行すること。`/Users/ryotauchida/bon-odori-site-public-snapshot` を手で直しても、Actions 側のビルドで作り直されるため本番反映のソースにはならない。
 
+## RDB反映口の運用方針
+
+- イベント個別の `apply_*.py` スクリプトは新造しない。直近の開催日確定、過去実績追加、会場修正、曲実績追加は、原則として `apply_change_requests.py` と変更リクエストJSONで処理する。
+- 変更リクエストは自由記述パッチにしない。`confirm_current_year_date` / `add_historical_reference` / `update_venue` / `add_song_evidence` のような有限の変更種別を使い、種別ごとの必須根拠とバリデーションを通す。
+- 今年の開催日確定と過去実績追加は別種別として扱う。`confirm_current_year_date` は公式・主催者・信頼できる当年ソースURLを必須にし、YouTubeなどの過去実績だけで今年の開催確定へ昇格しない。
+- `apply_change_requests.py` は dry-run 既定で使う。実DBへ反映する場合は `--apply --confirm 'APPLY CHANGE REQUESTS'` を必要とし、従来どおり dry-run → ことレビュー → apply → 再検証 → 内田さんGO の順を守る。
+
 ## YouTubeデータ収集の運用方針
 
 - YouTube過去実績収集は、7月など直近の開催月から順に進める方針を維持する。

@@ -1,0 +1,84 @@
+{
+  "request_type": "rdb_change_requests",
+  "generated_at": "2026-07-16T00:00:00+09:00",
+  "generated_by": "おと（Codex）",
+  "purpose": "A 汎用apply一本化の受け入れ確認用。直近one-offの4類型を1本の入口でdry-runする。",
+  "requests": [
+    {
+      "request_id": "marunouchi_2026_confirm_date_example",
+      "dry_run_only": true,
+      "change_type": "confirm_current_year_date",
+      "occurrence_id": "occ_0feacbf90906637b",
+      "event_year": 2026,
+      "date_start": "2026-07-24",
+      "date_end": "2026-07-24",
+      "source": {
+        "url": "https://www.marunouchi.com/pickup/event/9833/",
+        "kind": "official_current_year",
+        "platform": "web",
+        "title": "丸の内盆踊り2026",
+        "text_excerpt": "2026年7月24日（金）開催。場所は行幸通り。"
+      },
+      "note": "[generic_change_request] 公式ページで2026年開催日・会場を確認。"
+    },
+    {
+      "request_id": "kameari_yuroad_historical_reference_example",
+      "dry_run_only": true,
+      "change_type": "add_historical_reference",
+      "occurrence_id": "occ_1df0a276422a54b5",
+      "event_year": 2026,
+      "historical_year": 2025,
+      "historical_date": "2025-08-31",
+      "source": {
+        "url": "https://www.youtube.com/watch?v=zYYG127xpVE",
+        "platform": "youtube",
+        "kind": "historical_occurrence_video",
+        "title": "ゆうろーど納涼盆踊り大会 亀有銀座商店街 2025年8月31日（日）",
+        "text_excerpt": "説明欄で2025年8月31日の開催実績を確認。2026年開催日の確定根拠にはしない。"
+      },
+      "note": "[generic_change_request] 2025年YouTube過去実績を historical_reference として追加。"
+    },
+    {
+      "request_id": "irifune_venue_update_example",
+      "dry_run_only": true,
+      "change_type": "update_venue",
+      "occurrence_id": "occ_56e51b72ec7acc7e",
+      "venue": {
+        "name": "入船三丁目交差点",
+        "area": "中央区",
+        "address": "東京都中央区入船3丁目周辺",
+        "access": "東京メトロ有楽町線 新富町駅から徒歩圏内"
+      },
+      "source": {
+        "url": "https://example.com/irifune-official-notice",
+        "kind": "official_current_year",
+        "platform": "web",
+        "title": "入船三丁目町会納涼盆踊り 公式確認メモ"
+      },
+      "note": "[generic_change_request] 会場表記を入船三丁目交差点へ確認。"
+    },
+    {
+      "request_id": "kameari_yuroad_song_evidence_example",
+      "dry_run_only": true,
+      "change_type": "add_song_evidence",
+      "occurrence_id": "occ_1df0a276422a54b5",
+      "evidence_mode": "historical_youtube",
+      "event_date": "2025-08-31",
+      "songs": [
+        {
+          "title": "葛飾音頭"
+        },
+        {
+          "title": "大東京音頭"
+        }
+      ],
+      "source": {
+        "url": "https://www.youtube.com/watch?v=zYYG127xpVE",
+        "platform": "youtube",
+        "kind": "historical_occurrence_video",
+        "title": "ゆうろーど納涼盆踊り大会 亀有銀座商店街 2025年8月31日（日）"
+      },
+      "note": "[generic_change_request] YouTube過去実績の曲目を追加。"
+    }
+  ]
+}
