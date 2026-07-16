@@ -1,6 +1,6 @@
 {
   "generated_by": "build_song_ocr_queue.py",
-  "count": 7,
+  "count": 20,
   "items": [
     {
       "id": "b21783a2a9785946",
@@ -108,6 +108,204 @@
         "https://pbs.twimg.com/media/HLe9HOCboAAnmaG.jpg"
       ],
       "text": "82件目 上赤塚町会盆踊り 練習会\n(6/22)月曜日は踊りがないと言ったアレは嘘、練習会ありましたw\n遅れて参加したので「成増音頭」は踊れなかったけどCD貰えました💿\n曲目にない「南の島のハメハメハ大王」も楽しく可愛く踊ってきました🌴🌺 https://t.co/oWLAUYE9IN",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "2ed28a380682b445",
+      "status": "needs_ocr",
+      "account": "@bonodori_tais",
+      "url": "https://x.com/bonodori_tais/status/2071598413871989091",
+      "tweet_id": "2071598413871989091",
+      "date": "2026-06-29T14:15:24+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HL_LxR8bEAAf737.jpg",
+        "https://t.co/T8LJwgc2UG",
+        "pic.x.com/T8LJwgc2UG",
+        "https://pbs.twimg.com/media/HL_LxSQaUAAoiWw.jpg"
+      ],
+      "text": "第16回鴨台盆踊り実行委員会です🏮\n\n📣【今年の曲目発表】📣\n\n第16回鴨台盆踊り当日の曲目を発表します！\n今年は曲目が増えたほか、あっぱれ音頭や正調よさこいなど新たな楽曲、試みもあります💖\nぜひ踊りに来てください🕺\n\n#第16回鴨台盆踊り　#鴨台盆踊り　#大正大学　#盆踊り　#盆オドラー https://t.co/T8LJwgc2UG",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "b34d23c3e9f6b99e",
+      "status": "needs_ocr",
+      "account": "@hii_twi",
+      "url": "https://x.com/hii_twi/status/2071852795725218233",
+      "tweet_id": "2071852795725218233",
+      "date": "2026-06-30T07:06:14+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2071852704859660288/img/YR3fWZn-veid88fE.jpg",
+        "https://t.co/e9Nw9Ra4PJ",
+        "pic.x.com/e9Nw9Ra4PJ"
+      ],
+      "text": "7/1お昼12:00頃\nBellicism Art Factory\n7月生まれ合同生誕祭\n🦖JULY-SIC SESSION🦖\n曲目発表🥳\n\n振り付け練習の様子をチラリ🫣\n(高速盆踊り)\n\n何の曲か予想してくださいね🌟⋆꙳ https://t.co/e9Nw9Ra4PJ",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "e78b12a2d1a7fe9b",
+      "status": "needs_ocr",
+      "account": "@natsumoude",
+      "url": "https://x.com/natsumoude/status/2072696055154766219",
+      "tweet_id": "2072696055154766219",
+      "date": "2026-07-02T14:57:03+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HMOyE4ybEAE-ux8.jpg",
+        "https://t.co/Vf1MacfoQd",
+        "pic.x.com/Vf1MacfoQd"
+      ],
+      "text": "＼曲目、発表します！／\n7/3(金)の浅草神社 #夏詣 盆をどり\n18:00〜19:30\n\n無くても大丈夫ですが、団扇・手ぬぐいがあれば楽しさ倍増です☺️\n\n#盆踊り https://t.co/Vf1MacfoQd",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "67e66c3d8c66d029",
+      "status": "needs_ocr",
+      "account": "@bonodori_tais",
+      "url": "https://x.com/bonodori_tais/status/2073376440058626207",
+      "tweet_id": "2073376440058626207",
+      "date": "2026-07-04T12:00:39+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HMYc4hfbIAAgpL0.jpg",
+        "https://t.co/7PPZ08XTrF",
+        "pic.x.com/7PPZ08XTrF"
+      ],
+      "text": "第16回鴨台盆踊り実行委員会です🏮\n\n📣【日中盆踊り曲目発表】📣\n\n今年初開催の日中盆踊りの曲目を発表します！\n日中盆踊りは、2日目の14時スタート💖\n明るい時間から盆踊りを楽しみましょう！\n\n熱中症対策もお忘れなく🥤\n\n#第16回鴨台盆踊り　#鴨台盆踊り　#大正大学　#盆踊り　#盆オドラー https://t.co/7PPZ08XTrF",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "51563af4fe1c6884",
+      "status": "needs_ocr",
+      "account": "@natsumoude",
+      "url": "https://x.com/natsumoude/status/2073421683122393144",
+      "tweet_id": "2073421683122393144",
+      "date": "2026-07-04T15:00:26+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HMZFiVXaIAA8EvO.jpg",
+        "https://t.co/tSR49Oyuft",
+        "pic.x.com/tSR49Oyuft"
+      ],
+      "text": "＼2日目の曲目、発表します！／ \n7/5(日)の浅草神社 #夏詣 盆をどり\n18:00〜19:30 \n\nまた🗼東京パラダイス🌆を踊りましょう！\n🌂少しお天気が心配ですが、開催の可否についてはSNSでご連絡します。\n\n#盆踊り https://t.co/tSR49Oyuft",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "89f18ecc1482ffe5",
+      "status": "needs_ocr",
+      "account": "@nobu_harapeko",
+      "url": "https://x.com/nobu_harapeko/status/2075742727296409913",
+      "tweet_id": "2075742727296409913",
+      "date": "2026-07-11T00:43:26+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HM6FArebsAAEwap.jpg",
+        "https://t.co/qdvxuaYQVw",
+        "pic.x.com/qdvxuaYQVw"
+      ],
+      "text": "川崎市多摩区の盆踊り情報🏮\n\n川崎市立稲田中学校\n7/25.7/26\n最寄りは南武線宿河原駅\n\n以前は多摩川音頭、宿河原音頭、郡上かわさきとか沢山の曲がかかってたんだけど、最近は曲目減っちゃったから、多分今年も行かないな……… https://t.co/qdvxuaYQVw",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "a5a45b01716a8bc1",
+      "status": "needs_ocr",
+      "account": "@bonodori_tais",
+      "url": "https://x.com/bonodori_tais/status/2075871014240809470",
+      "tweet_id": "2075871014240809470",
+      "date": "2026-07-11T09:13:12+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2075870914168913920/img/GqgZu8qcfcqiz1pX.jpg",
+        "https://t.co/9rXY1i43aV",
+        "pic.x.com/9rXY1i43aV"
+      ],
+      "text": "第16回鴨台盆踊り 2日目の盆踊りがいよいよスタートしました！！！\n\n3部構成になっていますので、ぜひ曲目にも注目して踊ってみてください🕺\n\nここから、さらに盛り上がっていきます🔥\n\n#第16回鴨台盆踊り　#鴨台盆踊り　#大正大学　#盆踊り　＃盆オドラー https://t.co/9rXY1i43aV",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "03bd67d91f59a19f",
+      "status": "needs_ocr",
+      "account": "@bonodori_tais",
+      "url": "https://x.com/bonodori_tais/status/2075880132565426520",
+      "tweet_id": "2075880132565426520",
+      "date": "2026-07-11T09:49:26+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2075879851773566976/img/clwRvjwi4Bp8vmfp.jpg",
+        "https://t.co/AtJGyyERzs",
+        "pic.x.com/AtJGyyERzs",
+        "https://pbs.twimg.com/amplify_video_thumb/2075879574265901056/img/J_9pZFxCxOmRvDvt.jpg"
+      ],
+      "text": "盆踊り第2部がスタートしました！！！\n\n「中夜　地域連携」をテーマに、これまで鴨台盆踊りと繋がり、関わりを持つ楽曲を中心に踊ります🐙\n\nぜひ曲目にも注目して踊ってみてください🕺\n\n#第16回鴨台盆踊り　#鴨台盆踊り　#大正大学　#盆踊り　＃盆オドラー https://t.co/AtJGyyERzs",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "98af0d5cfe6e92cd",
+      "status": "needs_ocr",
+      "account": "@tukishimanagaya",
+      "url": "https://x.com/tukishimanagaya/status/2075963197664931911",
+      "tweet_id": "2075963197664931911",
+      "date": "2026-07-11T15:19:30+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HM9Mg1gb0AAnr9e.jpg",
+        "https://t.co/RTXNoacfbC",
+        "pic.x.com/RTXNoacfbC"
+      ],
+      "text": "第２回晴海ふ頭公園盆踊り大会2026\n7/11(土)・12(日)\n16:00〜20:30\n\nパンフレット掲載の踊り曲目以外に「ジャンボリミッキー！」＆「おしりたんてい音頭」🎶\n\n「おしりたんてい音頭」を初めて踊りました。\n今から練習すれば２日目に間に合うと信じたい…\n（文字通り一夜漬け😂） https://t.co/RTXNoacfbC",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "6fc9f0c4d84a0d1b",
+      "status": "needs_ocr",
+      "account": "@hoso_yukko",
+      "url": "https://x.com/hoso_yukko/status/2076256098248740899",
+      "tweet_id": "2076256098248740899",
+      "date": "2026-07-12T10:43:23+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HNBX6u4a4AAjXH0.jpg",
+        "https://t.co/fagACdX4Uj",
+        "pic.x.com/fagACdX4Uj",
+        "https://pbs.twimg.com/media/HNBX6tJbIAAXdZO.jpg"
+      ],
+      "text": "本日２箇所目は　\nこちらに🏮(行ってました)\n\n今日の曲目は…👀❗️\n私、踊れるのか⁉️\nヤバい感じ満載でしたが\nたぶん…頑張りました💦\n\n#盆踊り　　#尼崎 https://t.co/fagACdX4Uj",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "6efbd85f78a9ca55",
+      "status": "needs_ocr",
+      "account": "@mukaibunkaharu",
+      "url": "https://x.com/mukaibunkaharu/status/2076681060864369124",
+      "tweet_id": "2076681060864369124",
+      "date": "2026-07-13T14:52:02+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HNHaadua0AAPL41.jpg",
+        "https://t.co/zkl1PAo6XV",
+        "pic.x.com/zkl1PAo6XV"
+      ],
+      "text": "自由が丘盆踊り大会曲目です https://t.co/zkl1PAo6XV",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "2c93d8496a586da8",
+      "status": "needs_ocr",
+      "account": "@nobu_harapeko",
+      "url": "https://x.com/nobu_harapeko/status/2076878115188670943",
+      "tweet_id": "2076878115188670943",
+      "date": "2026-07-14T03:55:03+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HNKNo4PaMAAOVqB.jpg",
+        "https://t.co/gYzKerpxCX",
+        "pic.x.com/gYzKerpxCX"
+      ],
+      "text": "一応載せときます。\n川崎市多摩区の盆踊り🏮\n\n7/25-7/26\n錦ケ丘南公園（須賀神社隣）\n小田急線生田駅から徒歩10分前くらいかな？\n生田音頭（長沢諏訪神社や春秋苑とは別の振り。セミ捕る方。うちわ）かかる貴重な会場🌸\n川崎おどりとか押せ押せとかかかった記憶だけど曲目少いから梯子するのが良いかも https://t.co/gYzKerpxCX",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "33b53747167e7044",
+      "status": "needs_ocr",
+      "account": "@iko_yo_trip",
+      "url": "https://x.com/iko_yo_trip/status/2077275720133316912",
+      "tweet_id": "2077275720133316912",
+      "date": "2026-07-15T06:15:00+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HNO-aVWa0AAih1x.jpg",
+        "https://t.co/68xa2uJfUi",
+        "pic.x.com/68xa2uJfUi"
+      ],
+      "text": "＼飛行機を間近に、夏の夜を踊ろう！✈️🎐／\n\n空港スカイデッキで浴衣を着て盆踊り！離着陸を眺めながら家族で夏の思い出を作れるセントレアの恒例イベントです。\n\nおすすめポイント\n✅【飛行機が目の前】第1ターミナル4Fスカイデッキで迫力の離発着を見ながら踊れる ✨\n✅【曲目いろいろ】セントレア音頭・常滑音頭・グランパス音頭から炭坑節や郡上おどりまで誰でも参加OK 🎶\n✅【夏の演出＆特典】7/17〜8/16は提灯ライトアップ、当日はセントレアオリジナルうちわ配布予定🎐\n\n🗓 2026年7月18日（土）・19日（日）\n📍 中部国際空港セントレア（第1ターミナル4F スカイデッキ）\n\n行きたい？浴衣で行く？コメントで教えてね！👘✨\n開催情報📝\nhttps://t.co/QCraj6NBS9",
       "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
     }
   ]

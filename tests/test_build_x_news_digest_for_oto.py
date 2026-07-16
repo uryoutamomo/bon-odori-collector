@@ -77,6 +77,39 @@ class BuildRareSignalCandidatesTest(unittest.TestCase):
         rows = build_candidates(voices, self.catalog())
         self.assertEqual([row["information_type"] for row in rows], ["new_song_candidate", "new_event_candidate"])
 
+    def test_trusted_informant_poster_image_becomes_high_confidence_event_candidate(self):
+        voices = [
+            {
+                "source": "x",
+                "url": "https://x.com/gPVEQeAD9U10257/status/poster",
+                "account": "@gPVEQeAD9U10257",
+                "name": "なつたろ",
+                "text": "盆踊りのポスターが出ていました",
+                "media_urls": ["https://pbs.twimg.com/media/poster.jpg"],
+            }
+        ]
+        rows = build_candidates(
+            voices,
+            self.catalog(),
+            important_profiles={
+                "gpveqead9u10257": {
+                    "handle": "@gPVEQeAD9U10257",
+                    "name": "なつたろ",
+                    "usefulness_rank": "S",
+                }
+            },
+        )
+
+        self.assertEqual(len(rows), 1)
+        row = rows[0]
+        self.assertEqual(row["information_type"], "event_poster_ocr_candidate")
+        self.assertEqual(row["confidence"], "high")
+        self.assertEqual(row["promotion_target"], "event")
+        self.assertEqual(row["poster_image_evidence"]["status"], "needs_ocr")
+        self.assertEqual(row["poster_image_evidence"]["priority"], "critical")
+        self.assertTrue(row["poster_image_evidence"]["trusted_informant"])
+        self.assertEqual(row["source_media_urls"], ["https://pbs.twimg.com/media/poster.jpg"])
+
 
 if __name__ == "__main__":
     unittest.main()

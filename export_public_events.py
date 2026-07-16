@@ -608,6 +608,8 @@ def merge_song_occurrence_hints(existing_songs, occurrence):
         merged["evidence_count"] = song.get("evidence_count")
         merged["speaker_count"] = song.get("speaker_count")
         merged["setlist_complete"] = song.get("setlist_complete")
+        if song.get("confidence") == "confirmed":
+            merged["confidence"] = "confirmed"
         if song.get("evidence_urls"):
             merged["evidence_urls"] = song.get("evidence_urls")
         if song.get("probability", 0) >= 95:
@@ -918,6 +920,24 @@ def build_public_events_from_master(db_path=MASTER_DB):
               o.source_url,
               o.public_intro_override,
               o.detail,
+              (
+                SELECT od.date_start
+                FROM occurrence_dates od
+                WHERE od.occurrence_id = o.occurrence_id
+                  AND od.date_type = 'historical_reference'
+                  AND od.date_start < '2026-01-01'
+                ORDER BY od.date_start DESC
+                LIMIT 1
+              ) AS historical_reference_date_start,
+              (
+                SELECT od.date_end
+                FROM occurrence_dates od
+                WHERE od.occurrence_id = o.occurrence_id
+                  AND od.date_type = 'historical_reference'
+                  AND od.date_start < '2026-01-01'
+                ORDER BY od.date_start DESC
+                LIMIT 1
+              ) AS historical_reference_date_end,
               s.canonical_name AS series_name,
               s.annual_months_json,
               s.public_intro AS series_intro,
@@ -945,8 +965,8 @@ def build_public_events_from_master(db_path=MASTER_DB):
         ).fetchall()
 
     for row in rows:
-        date = row["date_start"] or None
-        date_end = row["date_end"] or None
+        date = row["date_start"] or row["historical_reference_date_start"] or None
+        date_end = row["date_end"] or row["historical_reference_date_end"] or None
         annual_months = [
             int(month)
             for month in _json_list(row["annual_months_json"])

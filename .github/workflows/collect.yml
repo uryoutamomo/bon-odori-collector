@@ -118,6 +118,7 @@ jobs:
         else
           echo "[x-news-digest] no Oto review file; skip rare_signal promotion"
         fi
+        python build_event_poster_ocr_queue.py
         python build_song_ocr_queue.py
         if python master_rdb_freeze_policy.py is-frozen legacy_song_occurrence_generation; then
           echo "[master-rdb] legacy song occurrence generation frozen: skip calibrate_song_predictions.py"
@@ -164,17 +165,17 @@ jobs:
         [ -f data/venue_master.json ] && git add data/venue_master.json
         [ -f data/event_date_update_candidates.json ] && git add data/event_date_update_candidates.json
         [ -f data/event_song_candidates.json ] && git add data/event_song_candidates.json
-        [ -f data/x_news_digest_for_oto.json ] && git add data/x_news_digest_for_oto.json
-        [ -f data/x_news_digest_for_oto.md ] && git add data/x_news_digest_for_oto.md
-        [ -f data/x_news_digest_oto_reviews.json ] && git add data/x_news_digest_oto_reviews.json
-        [ -f data/rare_signal_candidates.json ] && git add data/rare_signal_candidates.json
-        [ -f data/rare_signal_candidates.md ] && git add data/rare_signal_candidates.md
-        [ -f data/rare_signal_backcheck_queue.json ] && git add data/rare_signal_backcheck_queue.json
-        [ -f data/rare_signal_backcheck_queue.md ] && git add data/rare_signal_backcheck_queue.md
-        [ -f data/rare_signal_backcheck_reviews.json ] && git add data/rare_signal_backcheck_reviews.json
-        [ -f data/rare_signal_backcheck_reviews.md ] && git add data/rare_signal_backcheck_reviews.md
-        [ -f data/rare_signal_registration_candidates.json ] && git add data/rare_signal_registration_candidates.json
-        [ -f data/rare_signal_registration_candidates.md ] && git add data/rare_signal_registration_candidates.md
+        [ -f data/x_news_digest_for_oto.json ] && git add -f data/x_news_digest_for_oto.json
+        [ -f data/x_news_digest_for_oto.md ] && git add -f data/x_news_digest_for_oto.md
+        [ -f data/x_news_digest_oto_reviews.json ] && git add -f data/x_news_digest_oto_reviews.json
+        [ -f data/rare_signal_candidates.json ] && git add -f data/rare_signal_candidates.json
+        [ -f data/rare_signal_candidates.md ] && git add -f data/rare_signal_candidates.md
+        [ -f data/rare_signal_backcheck_queue.json ] && git add -f data/rare_signal_backcheck_queue.json
+        [ -f data/rare_signal_backcheck_queue.md ] && git add -f data/rare_signal_backcheck_queue.md
+        [ -f data/rare_signal_backcheck_reviews.json ] && git add -f data/rare_signal_backcheck_reviews.json
+        [ -f data/rare_signal_backcheck_reviews.md ] && git add -f data/rare_signal_backcheck_reviews.md
+        [ -f data/rare_signal_registration_candidates.json ] && git add -f data/rare_signal_registration_candidates.json
+        [ -f data/rare_signal_registration_candidates.md ] && git add -f data/rare_signal_registration_candidates.md
         [ -f data/weekly_harvest_candidates.json ] && git add data/weekly_harvest_candidates.json
         [ -f data/weekly_harvest_review_candidates.json ] && git add data/weekly_harvest_review_candidates.json
         [ -f data/weekly_harvest_review_ui.html ] && git add data/weekly_harvest_review_ui.html
@@ -183,6 +184,7 @@ jobs:
         [ -f data/weekly_song_candidates_review.json ] && git add data/weekly_song_candidates_review.json
         [ -f data/weekly_song_candidates_review_ui.html ] && git add data/weekly_song_candidates_review_ui.html
         [ -f data/weekly_song_triage_result.json ] && git add data/weekly_song_triage_result.json
+        [ -f data/event_poster_ocr_queue.json ] && git add data/event_poster_ocr_queue.json
         [ -f data/glossary_runtime.json ] && git add data/glossary_runtime.json
         [ -f data/public/events_public.json ] && git add data/public/events_public.json
         if python master_rdb_freeze_policy.py is-frozen ph1_public_song_export_files; then

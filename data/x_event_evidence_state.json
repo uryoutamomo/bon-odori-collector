@@ -1,7 +1,7 @@
 {
   "status": "awaiting_review",
-  "window_start": "2026-06-23T00:00:00+00:00",
-  "window_end": "2026-07-07T00:00:00+00:00",
+  "window_start": "2026-10-13T00:00:00+00:00",
+  "window_end": "2026-10-27T00:00:00+00:00",
   "selected_handles": [
     "@2tsuo_g",
     "@5khfya5pjksggov",
@@ -55,19 +55,19 @@
     "@yurubon_off"
   ],
   "selection_id": "664d239cbfb21c903b90366b808d6e5ebcf0e7024980d3bd613f6d865df58cf9",
-  "batch_index": 2,
+  "batch_index": 0,
   "batch_cursors": {},
   "completed_batches": [
     0,
     1,
     2
   ],
-  "pages_completed": 69,
-  "tweets_scanned": 1284,
-  "evidence_detected": 145,
+  "pages_completed": 3,
+  "tweets_scanned": 0,
+  "evidence_detected": 0,
   "pending_evidence": [],
-  "started_at": "2026-06-29T11:28:31.561348+00:00",
-  "updated_at": "2026-06-29T11:32:28.066150+00:00",
+  "started_at": "2026-07-16T08:17:59.879015+00:00",
+  "updated_at": "2026-07-16T08:18:07.323987+00:00",
   "window_history": [
     {
       "window_start": "2025-06-10T00:00:00+00:00",
@@ -365,10 +365,97 @@
       "pages_completed": 61,
       "tweets_scanned": 1124,
       "evidence_detected": 163
+    },
+    {
+      "window_start": "2026-06-23T00:00:00+00:00",
+      "window_end": "2026-07-07T00:00:00+00:00",
+      "covered_until": "2026-07-07T00:00:00+00:00",
+      "completed_at": "2026-06-29T11:32:28.071878+00:00",
+      "reviewed_at": "2026-07-11T03:55:56.128773+00:00",
+      "review_note": "auto-advance continuous event evidence window",
+      "pages_completed": 69,
+      "tweets_scanned": 1284,
+      "evidence_detected": 145
+    },
+    {
+      "window_start": "2026-07-07T00:00:00+00:00",
+      "window_end": "2026-07-21T00:00:00+00:00",
+      "covered_until": "2026-07-21T00:00:00+00:00",
+      "completed_at": "2026-07-11T03:58:21.283892+00:00",
+      "reviewed_at": "2026-07-11T08:16:29.629583+00:00",
+      "review_note": "auto-advance continuous event evidence window",
+      "pages_completed": 43,
+      "tweets_scanned": 769,
+      "evidence_detected": 118
+    },
+    {
+      "window_start": "2026-07-21T00:00:00+00:00",
+      "window_end": "2026-08-04T00:00:00+00:00",
+      "covered_until": "2026-08-04T00:00:00+00:00",
+      "completed_at": "2026-07-11T08:16:36.107076+00:00",
+      "reviewed_at": "2026-07-11T13:32:23.918851+00:00",
+      "review_note": "auto-advance continuous event evidence window",
+      "pages_completed": 3,
+      "tweets_scanned": 0,
+      "evidence_detected": 0
+    },
+    {
+      "window_start": "2026-08-04T00:00:00+00:00",
+      "window_end": "2026-08-18T00:00:00+00:00",
+      "covered_until": "2026-08-18T00:00:00+00:00",
+      "completed_at": "2026-07-11T13:32:31.349516+00:00",
+      "reviewed_at": "2026-07-12T08:32:53.956521+00:00",
+      "review_note": "auto-advance continuous event evidence window",
+      "pages_completed": 3,
+      "tweets_scanned": 0,
+      "evidence_detected": 0
+    },
+    {
+      "window_start": "2026-08-18T00:00:00+00:00",
+      "window_end": "2026-09-01T00:00:00+00:00",
+      "covered_until": "2026-09-01T00:00:00+00:00",
+      "completed_at": "2026-07-12T08:33:00.368911+00:00",
+      "reviewed_at": "2026-07-13T09:49:29.174570+00:00",
+      "review_note": "auto-advance continuous event evidence window",
+      "pages_completed": 3,
+      "tweets_scanned": 0,
+      "evidence_detected": 0
+    },
+    {
+      "window_start": "2026-09-01T00:00:00+00:00",
+      "window_end": "2026-09-15T00:00:00+00:00",
+      "covered_until": "2026-09-15T00:00:00+00:00",
+      "completed_at": "2026-07-13T09:49:35.879950+00:00",
+      "reviewed_at": "2026-07-14T08:29:34.129930+00:00",
+      "review_note": "auto-advance continuous event evidence window",
+      "pages_completed": 3,
+      "tweets_scanned": 0,
+      "evidence_detected": 0
+    },
+    {
+      "window_start": "2026-09-15T00:00:00+00:00",
+      "window_end": "2026-09-29T00:00:00+00:00",
+      "covered_until": "2026-09-29T00:00:00+00:00",
+      "completed_at": "2026-07-14T08:29:41.480476+00:00",
+      "reviewed_at": "2026-07-15T08:36:53.527529+00:00",
+      "review_note": "auto-advance continuous event evidence window",
+      "pages_completed": 3,
+      "tweets_scanned": 0,
+      "evidence_detected": 0
+    },
+    {
+      "window_start": "2026-09-29T00:00:00+00:00",
+      "window_end": "2026-10-13T00:00:00+00:00",
+      "covered_until": "2026-10-13T00:00:00+00:00",
+      "completed_at": "2026-07-15T08:36:59.652030+00:00",
+      "reviewed_at": "2026-07-16T08:17:59.879015+00:00",
+      "review_note": "auto-advance continuous event evidence window",
+      "pages_completed": 3,
+      "tweets_scanned": 0,
+      "evidence_detected": 0
     }
   ],
-  "previous_covered_until": "2026-06-23T00:00:00+00:00",
-  "completed_at": "2026-06-29T11:32:28.071878+00:00",
-  "covered_until": "2026-07-07T00:00:00+00:00",
-  "pending_cleared_at": "2026-06-29T11:32:36.382569+00:00"
+  "previous_covered_until": "2026-10-13T00:00:00+00:00",
+  "completed_at": "2026-07-16T08:18:07.325121+00:00",
+  "covered_until": "2026-10-27T00:00:00+00:00"
 }

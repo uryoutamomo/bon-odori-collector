@@ -1,3 +1,4 @@
+import sqlite3
 import unittest
 from pathlib import Path
 from tempfile import TemporaryDirectory
@@ -6,10 +7,12 @@ from export_public_events import (
     apply_public_recurrence_metadata,
     apply_public_event_overrides,
     apply_public_event_name_cleanup,
+    build_public_events_from_master,
     clean_public_event_name,
     extract_public_source_urls,
     fill_youtube_evidence_defaults,
     fixed_date_rule_from_props,
+    merge_song_occurrence_hints,
     parse_youtube_evidence,
     public_detail_text,
     sanitize_public_event_details,
@@ -156,6 +159,32 @@ class ExportPublicEventsTest(unittest.TestCase):
         }])
 
         self.assertNotIn("fixed_date_rule", rows[0])
+
+    def test_merge_song_occurrence_hints_preserves_confirmed_observed_songs(self):
+        songs = merge_song_occurrence_hints(
+            [{"name": "東京音頭", "confidence": "hint"}],
+            {
+                "songs": [
+                    {
+                        "name": "東京音頭",
+                        "confidence": "confirmed",
+                        "basis": "current_observed",
+                        "basis_label": "実測",
+                    },
+                    {
+                        "name": "銀座カンカン娘",
+                        "confidence": "confirmed",
+                        "basis": "current_observed",
+                        "basis_label": "実測",
+                    },
+                ]
+            },
+        )
+
+        self.assertEqual([song["name"] for song in songs], ["東京音頭", "銀座カンカン娘"])
+        self.assertEqual([song["confidence"] for song in songs], ["confirmed", "confirmed"])
+        self.assertEqual([song["basis"] for song in songs], ["current_observed", "current_observed"])
+        self.assertEqual([song["basis_label"] for song in songs], ["実測", "実測"])
 
 
     def test_extract_public_source_urls_keeps_official_urls_not_video_urls(self):
@@ -433,6 +462,143 @@ class ExportPublicEventsTest(unittest.TestCase):
         )
 
         self.assertEqual([row["name"] for row in rows], ["鉄砲洲納涼盆踊り"])
+
+    def test_master_export_uses_historical_reference_date_for_unknown_2026_occurrence(self):
+        with TemporaryDirectory() as tmp:
+            db_path = Path(tmp) / "master.sqlite"
+            with sqlite3.connect(db_path) as conn:
+                conn.executescript(
+                    """
+                    CREATE TABLE venues (
+                      venue_id TEXT PRIMARY KEY,
+                      canonical_name TEXT,
+                      area TEXT,
+                      scale TEXT,
+                      access TEXT,
+                      address TEXT,
+                      past_memo TEXT,
+                      public_intro TEXT,
+                      latitude REAL,
+                      longitude REAL,
+                      review_status TEXT
+                    );
+                    CREATE TABLE event_series (
+                      series_id TEXT PRIMARY KEY,
+                      canonical_name TEXT,
+                      annual_months_json TEXT,
+                      public_intro TEXT,
+                      status TEXT
+                    );
+                    CREATE TABLE event_occurrences (
+                      occurrence_id TEXT PRIMARY KEY,
+                      origin TEXT,
+                      series_id TEXT,
+                      event_year INTEGER,
+                      display_name TEXT,
+                      venue_id TEXT,
+                      date_start TEXT,
+                      date_end TEXT,
+                      date_status TEXT,
+                      lifecycle_status TEXT,
+                      confidence TEXT,
+                      source_kind TEXT,
+                      source_url TEXT,
+                      public_intro_override TEXT,
+                      detail TEXT
+                    );
+                    CREATE TABLE occurrence_dates (
+                      occurrence_date_id TEXT PRIMARY KEY,
+                      occurrence_id TEXT,
+                      date_start TEXT,
+                      date_end TEXT,
+                      date_type TEXT,
+                      confidence TEXT,
+                      source_evidence_id TEXT,
+                      basis TEXT,
+                      created_at TEXT
+                    );
+                    CREATE TABLE occurrence_songs (
+                      occurrence_id TEXT,
+                      song_title_raw TEXT,
+                      evidence_status TEXT,
+                      probability REAL,
+                      confidence TEXT,
+                      source_count INTEGER,
+                      evidence_count INTEGER,
+                      inherited_from_year INTEGER
+                    );
+                    """
+                )
+                conn.execute(
+                    "INSERT INTO venues VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                    (
+                        "ven_test",
+                        "京橋プラザ区民館",
+                        "中央区",
+                        "中",
+                        "新富町駅徒歩2分",
+                        "東京都中央区銀座一丁目25番3号",
+                        "",
+                        "京橋プラザ区民館の地域イベント。",
+                        None,
+                        None,
+                        "active",
+                    ),
+                )
+                conn.execute(
+                    "INSERT INTO event_series VALUES (?, ?, ?, ?, ?)",
+                    (
+                        "ser_test",
+                        "銀座一丁目東町会・新富町会 納涼盆踊り大会",
+                        "[7]",
+                        "銀座一丁目東町会・新富町会の納涼盆踊り大会。",
+                        "active",
+                    ),
+                )
+                conn.execute(
+                    "INSERT INTO event_occurrences VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                    (
+                        "occ_test",
+                        "curated",
+                        "ser_test",
+                        2026,
+                        "銀座一丁目東町会・新富町会 納涼盆踊り大会",
+                        "ven_test",
+                        "",
+                        "",
+                        "unknown",
+                        "未確認",
+                        "unknown",
+                        "notion_events",
+                        "",
+                        "",
+                        "2026年日程は未確認。",
+                    ),
+                )
+                conn.execute(
+                    "INSERT INTO occurrence_dates VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                    (
+                        "odate_test",
+                        "occ_test",
+                        "2025-07-19",
+                        "",
+                        "historical_reference",
+                        "medium",
+                        "",
+                        "youtube evidence",
+                        "2026-07-01T00:00:00+00:00",
+                    ),
+                )
+
+            events, covered, fallback, skipped = build_public_events_from_master(db_path)
+
+        self.assertEqual(covered, 1)
+        self.assertEqual(fallback, 0)
+        self.assertEqual(skipped, 0)
+        self.assertEqual(len(events), 1)
+        self.assertEqual(events[0]["date"], "2025-07-19")
+        self.assertEqual(events[0]["date_confidence"]["level"], "unknown")
+        self.assertEqual(events[0]["hints"], [[7, 19]])
 
     def test_write_public_js(self):
         with TemporaryDirectory() as tmp:

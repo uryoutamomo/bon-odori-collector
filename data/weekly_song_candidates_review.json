@@ -6,51 +6,6 @@
     {
       "category": "曲候補",
       "type": "曲名",
-      "term": "郡上おどり",
-      "interpretation": "郡上おどり",
-      "confidence": "要レビュー",
-      "reason": "曲名抽出器で検出: known_song_context, song_suffix_near_context",
-      "evidence_count": 6,
-      "evidence": [
-        {
-          "url": "https://x.com/MatsuriNoKiseki/status/2070070744923718093",
-          "date": "2026-06-25T09:05:00+00:00",
-          "account": "@MatsuriNoKiseki",
-          "text": "【 郡上おどり in 青山 】 直前の予習に !!! https://t.co/50ZBxDWfcr ・春駒 ・やっちく ・さわぎ https://t.co/IXXGQVR9D3"
-        },
-        {
-          "url": "https://x.com/MatsuriNoKiseki/status/2070040186747257043",
-          "date": "2026-06-25T07:03:34+00:00",
-          "account": "@MatsuriNoKiseki",
-          "text": "【 郡上おどり in 青山 】 直前の予習に !!! https://t.co/50ZBxDWfcr 台風迫り来る中ですが明日は開催できそうですね。 ・古調かわさき ・かわさき ・三百 https://t.co/caTsPPqyYx"
-        },
-        {
-          "url": "https://x.com/BonOdoriJapan/status/2069582989735121115",
-          "date": "2026-06-24T00:46:50+00:00",
-          "account": "@BonOdoriJapan",
-          "text": "北青山で岐阜の盆踊り「郡上おどり」 第30回、特産品販売も(みんなの経済新聞ネットワーク) #Yahooニュース https://t.co/WECVxQUrm5"
-        },
-        {
-          "url": "https://x.com/bonDbonT/status/2069433720566923714",
-          "date": "2026-06-23T14:53:41+00:00",
-          "account": "@bonDbonT",
-          "text": "北青山で岐阜の盆踊り「郡上おどり」 第30回、特産品販売も（みんなの経済新聞ネットワーク） https://t.co/BN78QMOamu"
-        },
-        {
-          "url": "https://x.com/kasane_3khz/status/2069053731359096887",
-          "date": "2026-06-22T13:43:45+00:00",
-          "account": "@kasane_3khz",
-          "text": "今夜もありがとうございました✨ 郡上おどりの話題が出て、今年は行きたいなって思いました！日本三大盆踊り！"
-        }
-      ],
-      "evidence_text": "【 郡上おどり in 青山 】 直前の予習に !!! https://t.co/50ZBxDWfcr ・春駒 ・やっちく ・さわぎ https://t.co/IXXGQVR9D3\n---\n【 郡上おどり in 青山 】 直前の予習に !!! https://t.co/50ZBxDWfcr 台風迫り来る中ですが明日は開催できそうですね。 ・古調かわさき ・かわさき ・三百 https://t.co/caTsPPqyYx\n---\n北青山で岐阜の盆踊り「郡上おどり」 第30回、特産品販売も(みんなの経済新聞ネットワーク) #Yahooニュース https://t.co/WECVxQUrm5",
-      "evidence_url": "https://x.com/MatsuriNoKiseki/status/2070070744923718093",
-      "canonical_song_name": "郡上おどり",
-      "triage_reason": "多義語・イベント名・ジャンル名の可能性がある"
-    },
-    {
-      "category": "曲候補",
-      "type": "曲名",
       "term": "盆ジョビ",
       "interpretation": "盆ジョビ",
       "confidence": "要レビュー",
@@ -58,15 +13,36 @@
       "evidence_count": 1,
       "evidence": [
         {
-          "url": "https://x.com/inaichi115/status/2069911752805167272",
-          "date": "2026-06-24T22:33:13+00:00",
-          "account": "@inaichi115",
-          "text": "モーニングシュガー、今朝の1曲目はボン・ジョヴィの歌。 最近東京では盆ジョビとしてこの歌で盆踊り大会をするのが流行っているらしい。楽しそう。 #rberry #MorningSugar"
+          "url": "https://x.com/ytzrtn1219/status/2076602029620035819",
+          "date": "2026-07-13T09:37:59+00:00",
+          "account": "@ytzrtn1219",
+          "text": "盆踊りバージョンたまげた。中野の盆ジョビ踊りでも流れないかなあ？ USEN 推し活リクエストでJuice=Juiceの『盛れ!ミ・アモーレ』をリクエストしました！ https://t.co/EeAcIuUzaU #USEN推し活リクエスト #推しリク #JuiceJuice"
         }
       ],
-      "evidence_text": "モーニングシュガー、今朝の1曲目はボン・ジョヴィの歌。 最近東京では盆ジョビとしてこの歌で盆踊り大会をするのが流行っているらしい。楽しそう。 #rberry #MorningSugar",
-      "evidence_url": "https://x.com/inaichi115/status/2069911752805167272",
+      "evidence_text": "盆踊りバージョンたまげた。中野の盆ジョビ踊りでも流れないかなあ？ USEN 推し活リクエストでJuice=Juiceの『盛れ!ミ・アモーレ』をリクエストしました！ https://t.co/EeAcIuUzaU #USEN推し活リクエスト #推しリク #JuiceJuice",
+      "evidence_url": "https://x.com/ytzrtn1219/status/2076602029620035819",
       "canonical_song_name": "盆ジョビ",
+      "triage_reason": "多義語・イベント名・ジャンル名の可能性がある"
+    },
+    {
+      "category": "曲候補",
+      "type": "曲名",
+      "term": "郡上おどり",
+      "interpretation": "郡上おどり",
+      "confidence": "要レビュー",
+      "reason": "曲名抽出器で検出: known_song_context, song_suffix_near_context",
+      "evidence_count": 1,
+      "evidence": [
+        {
+          "url": "https://x.com/tokai_newsone/status/2076941541214761227",
+          "date": "2026-07-14T08:07:05+00:00",
+          "account": "@tokai_newsone",
+          "text": "“郡上おどり”の街で生まれた盆踊りのための服「ODORIGI」暑い夏もゆったり＆快適 https://t.co/JenZjNbwHp"
+        }
+      ],
+      "evidence_text": "“郡上おどり”の街で生まれた盆踊りのための服「ODORIGI」暑い夏もゆったり＆快適 https://t.co/JenZjNbwHp",
+      "evidence_url": "https://x.com/tokai_newsone/status/2076941541214761227",
+      "canonical_song_name": "郡上おどり",
       "triage_reason": "多義語・イベント名・ジャンル名の可能性がある"
     }
   ]
