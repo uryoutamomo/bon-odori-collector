@@ -167,6 +167,11 @@ C 以降の切替は**新旧出力の全件突合差分ゼロを絶対条件**�
 Aの設計固定後、one-off済み `apply_*.py` の分類リストを `docs/one-off-apply-classification-20260716.md` に作成した。
 この時点では移動は未実施。まず現役入口・C/B/Dまで温存するもの・イベント個別one-off移動候補を分けた。
 
+## E 第2段 分類（2026-07-16 おと）
+
+E第1段の実移動後、append系・build系の分類dry-runを `docs/cleanup-script-classification-20260716.md` に作成した。
+この時点では移動は未実施。第2段の推奨は、まずNotion単発メモ追記の `append_*.py` 52本を `legacy/notion-notes/` へ移動し、build系は現役workflow・RDB/レビュー基盤を避けて別コミットで小さく進める。
+
 ## A ステータス：内田さんGO済み・実運用開始（2026-07-16）
 
 - ことレビュー2巡（初回=Finding 1 historical重複・Finding 4 ダミーURL → おと修正 → 再検証全項目合格）を経て、
