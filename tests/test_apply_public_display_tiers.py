@@ -1,6 +1,11 @@
 import unittest
 
-from apply_public_display_tiers import apply_display_tiers, display_tier_for_event
+from apply_public_display_tiers import (
+    apply_display_tiers,
+    current_event_state_for_event,
+    date_certainty_tier_for_event,
+    display_tier_for_event,
+)
 
 
 class ApplyPublicDisplayTiersTest(unittest.TestCase):
@@ -35,6 +40,30 @@ class ApplyPublicDisplayTiersTest(unittest.TestCase):
         ])
 
         self.assertEqual([row["display_tier"] for row in rows], ["confirmed", "season_hint"])
+        self.assertEqual([row["current_event_state"] for row in rows], ["confirmed", "unconfirmed"])
+        self.assertEqual([row["date_certainty_tier"] for row in rows], ["confirmed", "season_hint"])
+
+    def test_state_axes_separate_current_state_from_certainty(self):
+        self.assertEqual(
+            current_event_state_for_event({"public_category": "recurring_last_year", "historical_reference": {}}),
+            "unconfirmed",
+        )
+        self.assertEqual(
+            date_certainty_tier_for_event({"public_category": "recurring_last_year", "historical_reference": {}}),
+            "historical_reference",
+        )
+        self.assertEqual(
+            current_event_state_for_event({"public_category": "recurring_last_year", "date_prediction": {"date": "2026-07-31"}}),
+            "predicted",
+        )
+        self.assertEqual(
+            date_certainty_tier_for_event({"public_category": "recurring_last_year", "date_prediction": {"date": "2026-07-31"}}),
+            "rule_predicted",
+        )
+        self.assertEqual(
+            current_event_state_for_event({"public_category": "upcoming"}),
+            "unconfirmed",
+        )
 
 
 if __name__ == "__main__":

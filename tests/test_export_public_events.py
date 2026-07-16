@@ -6,6 +6,7 @@ from unittest.mock import patch
 
 from export_public_events import (
     apply_public_recurrence_metadata,
+    apply_public_site_postprocessors,
     apply_public_event_overrides,
     apply_public_event_name_cleanup,
     build_public_events_from_master,
@@ -13,6 +14,8 @@ from export_public_events import (
     extract_public_source_urls,
     fill_youtube_evidence_defaults,
     fixed_date_rule_from_props,
+    load_rdb_public_date_predictions,
+    merge_prediction_payloads,
     merge_song_occurrence_hints,
     parse_youtube_evidence,
     public_export_today,
@@ -34,6 +37,259 @@ class ExportPublicEventsTest(unittest.TestCase):
         with patch.dict("os.environ", {"BON_ODORI_PUBLIC_TODAY": "not-a-date"}):
             with self.assertRaises(ValueError):
                 public_export_today()
+
+    def test_site_postprocessors_use_export_today_for_historical_slide_expiry(self):
+        events = [{
+            "name": "西綾瀬町会 夏祭り盆踊り大会",
+            "venue": "五反野コミュニティ公園",
+            "public_category": "recurring_last_year",
+            "public_status": "expected_medium",
+            "recurrence_score": 0.67,
+            "last_seen_year": 2025,
+            "last_seen_dates": ["2025-06-21"],
+            "date": "2025-06-21",
+        }]
+
+        result = apply_public_site_postprocessors(events, today="2026-06-26")
+
+        self.assertEqual(result[0]["historical_display_tier"], "historical_reference")
+        self.assertEqual(result[0]["display_tier"], "historical_reference")
+        self.assertNotIn("historical_slide", result[0])
+        self.assertNotIn("predicted_date", result[0])
+
+    def test_load_rdb_public_date_predictions_matches_public_prediction_shape(self):
+        with TemporaryDirectory() as tmp:
+            db = Path(tmp) / "master.sqlite"
+            conn = sqlite3.connect(db)
+            try:
+                conn.execute(
+                    """
+                    CREATE TABLE predicted_occurrence_dates (
+                      predicted_date_id TEXT PRIMARY KEY,
+                      historical_candidate_id TEXT,
+                      target_series_id TEXT,
+                      target_occurrence_id TEXT,
+                      target_event_name TEXT,
+                      predicted_year INTEGER,
+                      date_start TEXT,
+                      date_end TEXT,
+                      date_status TEXT,
+                      rule_type TEXT,
+                      basis TEXT,
+                      confidence TEXT,
+                      score REAL,
+                      application_status TEXT,
+                      source TEXT,
+                      source_payload_json TEXT
+                    )
+                    """
+                )
+                conn.execute(
+                    """
+                    INSERT INTO predicted_occurrence_dates VALUES (
+                      'preddate_1', 'cand_1', 'ser_1', 'occ_1',
+                      '丸の内de盆踊り', 2026, '2026-07-31', '2026-07-31',
+                      'predicted', 'weekday_last', '7月の最終金曜',
+                      'medium', 0.74, 'candidate_for_2026_occurrence',
+                      'event_date_predictions',
+                      '{"series_key":"s1","venue":"行幸通り","evidence_years":[2024,2025]}'
+                    )
+                    """
+                )
+                conn.commit()
+            finally:
+                conn.close()
+
+            payload = load_rdb_public_date_predictions(db, target_year=2026)
+
+        self.assertEqual(payload["source"], "master_rdb.predicted_occurrence_dates")
+        self.assertEqual(payload["summary"]["prediction_count"], 1)
+        row = payload["predictions"][0]
+        self.assertEqual(row["event_name"], "丸の内de盆踊り")
+        self.assertEqual(row["venue"], "行幸通り")
+        self.assertEqual(row["prediction"]["predicted_weekday_start"], "金")
+        self.assertEqual(row["prediction"]["evidence_count"], 2)
+
+    def test_merge_prediction_payloads_keeps_json_only_fallback_rows(self):
+        primary = {
+            "summary": {},
+            "predictions": [{
+                "event_name": "丸の内de盆踊り",
+                "venue": "行幸通り",
+                "prediction": {"predicted_date_start": "2026-07-31"},
+            }],
+        }
+        fallback = {
+            "predictions": [
+                {
+                    "event_name": "丸の内de盆踊り",
+                    "venue": "行幸通り",
+                    "prediction": {"predicted_date_start": "2026-07-31"},
+                },
+                {
+                    "event_name": "東本願寺盆踊り",
+                    "venue": "東本願寺（浅草）",
+                    "prediction": {"predicted_date_start": "2026-08-19"},
+                },
+            ]
+        }
+
+        merged = merge_prediction_payloads(primary, fallback)
+
+        self.assertEqual(len(merged["predictions"]), 2)
+        self.assertEqual(merged["summary"]["json_fallback_count"], 1)
+        self.assertEqual(merged["summary"]["json_fallback"][0]["event_name"], "東本願寺盆踊り")
+
+    def test_master_export_does_not_mix_current_start_with_historical_end(self):
+        with TemporaryDirectory() as tmp:
+            db = Path(tmp) / "master.sqlite"
+            conn = sqlite3.connect(db)
+            try:
+                self._create_minimal_master_export_schema(conn)
+                conn.execute(
+                    """
+                    INSERT INTO event_series VALUES (
+                      'ser_1', '森下二丁目納涼盆踊り大会', '[7]', NULL, 'active'
+                    )
+                    """
+                )
+                conn.execute(
+                    """
+                    INSERT INTO venues VALUES (
+                      'ven_1', '森下公園', '江東区', '中', '', '', '', '', NULL, NULL, 'active'
+                    )
+                    """
+                )
+                conn.execute(
+                    """
+                    INSERT INTO event_occurrences VALUES (
+                      'occ_1', 'ser_1', 'ven_1', '森下二丁目納涼盆踊り大会',
+                      2026, '2026-07-19', NULL, 'confirmed', 'published',
+                      'high', 'official_current_year', 'https://example.com', NULL, '',
+                      'curated'
+                    )
+                    """
+                )
+                conn.execute(
+                    """
+                    INSERT INTO occurrence_dates VALUES (
+                      'occ_1', 'historical_reference', '2025-07-19', '2025-07-20'
+                    )
+                    """
+                )
+                conn.commit()
+            finally:
+                conn.close()
+
+            events, _, _, _ = build_public_events_from_master(db)
+
+        self.assertEqual(events[0]["date"], "2026-07-19")
+        self.assertIsNone(events[0]["date_end"])
+
+    def test_master_export_ignores_historical_references_before_previous_year(self):
+        with TemporaryDirectory() as tmp:
+            db = Path(tmp) / "master.sqlite"
+            conn = sqlite3.connect(db)
+            try:
+                self._create_minimal_master_export_schema(conn)
+                conn.execute(
+                    """
+                    INSERT INTO event_series VALUES (
+                      'ser_1', '古い参考だけの盆踊り', '[8]', NULL, 'active'
+                    )
+                    """
+                )
+                conn.execute(
+                    """
+                    INSERT INTO venues VALUES (
+                      'ven_1', '古い公園', '江東区', '小', '', '', '', '', NULL, NULL, 'active'
+                    )
+                    """
+                )
+                conn.execute(
+                    """
+                    INSERT INTO event_occurrences VALUES (
+                      'occ_1', 'ser_1', 'ven_1', '古い参考だけの盆踊り',
+                      2026, NULL, NULL, 'unknown', 'published',
+                      'medium', '', '', NULL, '',
+                      'curated'
+                    )
+                    """
+                )
+                conn.execute(
+                    """
+                    INSERT INTO occurrence_dates VALUES (
+                      'occ_1', 'historical_reference', '2024-08-10', '2024-08-11'
+                    )
+                    """
+                )
+                conn.commit()
+            finally:
+                conn.close()
+
+            events, _, _, _ = build_public_events_from_master(db)
+
+        self.assertIsNone(events[0]["date"])
+        self.assertIsNone(events[0]["date_end"])
+
+    def _create_minimal_master_export_schema(self, conn):
+        conn.executescript(
+            """
+            CREATE TABLE event_series (
+              series_id TEXT PRIMARY KEY,
+              canonical_name TEXT,
+              annual_months_json TEXT,
+              public_intro TEXT,
+              status TEXT
+            );
+            CREATE TABLE venues (
+              venue_id TEXT PRIMARY KEY,
+              canonical_name TEXT,
+              area TEXT,
+              scale TEXT,
+              access TEXT,
+              address TEXT,
+              past_memo TEXT,
+              public_intro TEXT,
+              latitude REAL,
+              longitude REAL,
+              review_status TEXT
+            );
+            CREATE TABLE event_occurrences (
+              occurrence_id TEXT PRIMARY KEY,
+              series_id TEXT,
+              venue_id TEXT,
+              display_name TEXT,
+              event_year INTEGER,
+              date_start TEXT,
+              date_end TEXT,
+              date_status TEXT,
+              lifecycle_status TEXT,
+              confidence TEXT,
+              source_kind TEXT,
+              source_url TEXT,
+              public_intro_override TEXT,
+              detail TEXT,
+              origin TEXT DEFAULT 'curated'
+            );
+            CREATE TABLE occurrence_dates (
+              occurrence_id TEXT,
+              date_type TEXT,
+              date_start TEXT,
+              date_end TEXT
+            );
+            CREATE TABLE occurrence_songs (
+              occurrence_id TEXT,
+              song_title_raw TEXT,
+              evidence_status TEXT,
+              probability REAL,
+              confidence TEXT,
+              source_count INTEGER,
+              evidence_count INTEGER,
+              inherited_from_year INTEGER
+            );
+            """
+        )
 
     def test_fixed_date_rule_from_props_reads_machine_columns(self):
         rule = fixed_date_rule_from_props({

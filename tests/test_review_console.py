@@ -9,6 +9,41 @@ from review_console import data, server
 
 
 class ReviewConsoleTests(unittest.TestCase):
+    def test_review_inbox_source_is_visible_in_console_inventory(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "data").mkdir()
+            (root / "data/review_inbox.json").write_text(
+                json.dumps(
+                    {
+                        "items": [
+                            {
+                                "inbox_id": "inbox_1",
+                                "kind": "current_year_confirmation",
+                                "domain": "開催日",
+                                "priority_label": "P0",
+                                "priority_score": 100,
+                                "title": "A盆踊り 2026日程確認",
+                                "event_name": "A盆踊り",
+                                "venue": "A公園",
+                                "source_id": "official_monitor",
+                                "source_key": "a-2026",
+                                "recommended_action": "confirm_current_date",
+                            }
+                        ]
+                    },
+                    ensure_ascii=False,
+                ),
+                encoding="utf-8",
+            )
+
+            inventory = data.load_inventory(root=root, decisions_path=root / "data/review_console/decisions.json")
+            item = next(item for item in inventory["items"] if item["source_id"] == "review_inbox")
+
+        self.assertEqual(item["title"], "A盆踊り 2026日程確認")
+        self.assertEqual(item["domain"], "受信箱")
+        self.assertEqual(item["action_group"], "current_date")
+
     def test_inventory_counts_console_decisions(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
@@ -352,6 +387,21 @@ class ReviewConsoleTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
             (root / "data").mkdir()
+            (root / "data/youtube_song_master.json").write_text(
+                json.dumps(
+                    {
+                        "songs": [
+                            {
+                                "song_name": "ダンシングヒーロー",
+                                "aliases": ["ダンシング・ヒーロー"],
+                                "public_ready": True,
+                            }
+                        ]
+                    },
+                    ensure_ascii=False,
+                ),
+                encoding="utf-8",
+            )
             (root / "data/youtube_active_video_review.json").write_text(
                 json.dumps(
                     {
@@ -422,6 +472,18 @@ class ReviewConsoleTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
             (root / "data").mkdir()
+            (root / "data/youtube_song_master.json").write_text(
+                json.dumps(
+                    {
+                        "songs": [
+                            {"song_name": "おジャ魔女カーニバル", "aliases": [], "public_ready": True},
+                            {"song_name": "とっとこハム太郎", "aliases": [], "public_ready": True},
+                        ]
+                    },
+                    ensure_ascii=False,
+                ),
+                encoding="utf-8",
+            )
             (root / "data/youtube_active_video_review.json").write_text(
                 json.dumps(
                     {
@@ -464,6 +526,136 @@ class ReviewConsoleTests(unittest.TestCase):
             checks = {check["label"]: check for check in item["route_checks"]}
             self.assertEqual(checks["親イベント"]["value"], "ニコニコ超会議")
             self.assertEqual(checks["盆踊り企画"]["value"], "超ニコニコ盆踊り")
+
+    def test_youtube_target_event_prefers_aggregate_setlist_occurrence(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "data").mkdir()
+            (root / "data/youtube_active_video_review.json").write_text(
+                json.dumps(
+                    {
+                        "rows": [
+                            {
+                                "video_id": "akiba",
+                                "video_url": "https://www.youtube.com/watch?v=akiba",
+                                "title": "【浅草夜祭・アキバ盆踊り】１ DJ秋葉原ササキチ",
+                                "channel_title": "和太鼓お祭りチャンネル",
+                                "action": "bon_component_of_parent_event",
+                                "parent_event_name": "浅草夜祭",
+                                "component_label": "アキバ盆踊り / 盆踊り企画",
+                                "setlist_occurrences": [
+                                    {
+                                        "occurrence_key": "c10eef57e023cc8a",
+                                        "event_name": "【浅草夜祭・アキバ盆踊り】1 DJ秋葉原ササキチ",
+                                        "venue": "【浅草夜祭・アキバ盆踊り】1 DJ秋葉原ササキチ",
+                                        "event_date": "2025-11-22",
+                                        "song_count": 7,
+                                        "confidence": "high",
+                                    },
+                                    {
+                                        "occurrence_key": "ab5da725f0c96975",
+                                        "event_name": "浅草夜祭・アキバ盆踊り",
+                                        "venue": "浅草夜祭・アキバ盆踊り",
+                                        "event_date": "2025-11-22",
+                                        "song_count": 16,
+                                        "confidence": "high",
+                                        "matched_public_event": {
+                                            "id": "public-akiba",
+                                            "name": "浅草夜祭・アキバ盆踊り",
+                                            "venue": "浅草夜祭",
+                                            "date": "2025-11-22",
+                                            "score": "high",
+                                            "reasons": ["event_name_in_youtube"],
+                                        },
+                                    },
+                                ],
+                            }
+                        ]
+                    },
+                    ensure_ascii=False,
+                ),
+                encoding="utf-8",
+            )
+            decisions_path = root / "data/review_console/decisions.json"
+
+            item = data.load_item(
+                "youtube_active_video:akiba|https://www.youtube.com/watch?v=akiba",
+                root=root,
+                decisions_path=decisions_path,
+            )
+
+            self.assertEqual(item["target_event"]["name"], "浅草夜祭・アキバ盆踊り")
+            self.assertEqual(item["target_event"]["date"], "2025-11-22")
+            append = next(option for option in item["apply_options"] if option["value"] == "append_existing_event")
+            component = next(option for option in item["apply_options"] if option["value"] == "bon_component_of_parent_event")
+            self.assertFalse(append["disabled"])
+            self.assertTrue(component["disabled"])
+            self.assertIn("1を選んでください", component["disabled_reason"])
+
+            saved = data.save_decision(
+                item["id"],
+                "accept",
+                "",
+                "append_existing_event",
+                target_event_name="浅草夜祭・アキバ盆踊り",
+                target_song_names="アイドル",
+                decisions_path=decisions_path,
+                root=root,
+            )
+            self.assertEqual(saved["manual_target_event_name"], "浅草夜祭・アキバ盆踊り")
+            self.assertEqual(saved["manual_target_event_match"]["source"], "setlist_matched_public_event")
+            self.assertEqual(saved["manual_target_event_match"]["id"], "public-akiba")
+            self.assertEqual(saved["manual_song_names"], ["アイドル"])
+
+    def test_youtube_raw_setlist_occurrence_is_not_existing_event_target(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "data").mkdir()
+            (root / "data/youtube_active_video_review.json").write_text(
+                json.dumps(
+                    {
+                        "rows": [
+                            {
+                                "video_id": "yuroad",
+                                "video_url": "https://www.youtube.com/watch?v=yuroad",
+                                "title": "亀有ゆうろーど盆踊り2025",
+                                "channel_title": "祭しっぽ ch",
+                                "action": "review_video_evidence",
+                                "setlist_occurrences": [
+                                    {
+                                        "occurrence_key": "occ-yuroad",
+                                        "event_name": "亀有ゆうろーど盆踊り2025",
+                                        "venue": "亀有ゆうろーど",
+                                        "event_date": "2025-08-31",
+                                        "song_count": 12,
+                                        "confidence": "high",
+                                    },
+                                ],
+                            }
+                        ]
+                    },
+                    ensure_ascii=False,
+                ),
+                encoding="utf-8",
+            )
+            decisions_path = root / "data/review_console/decisions.json"
+
+            item = data.load_item(
+                "youtube_active_video:yuroad|https://www.youtube.com/watch?v=yuroad",
+                root=root,
+                decisions_path=decisions_path,
+            )
+
+            self.assertIsNone(item["target_event"])
+            with self.assertRaisesRegex(ValueError, "追加先イベント名を入力してください"):
+                data.save_decision(
+                    item["id"],
+                    "accept",
+                    "",
+                    "append_existing_event",
+                    decisions_path=decisions_path,
+                    root=root,
+                )
 
     def test_youtube_append_existing_event_label_is_video_evidence_not_event_creation(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -514,6 +706,21 @@ class ReviewConsoleTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
             (root / "data").mkdir()
+            (root / "data/youtube_song_master.json").write_text(
+                json.dumps(
+                    {
+                        "songs": [
+                            {
+                                "song_name": "ダンシングヒーロー",
+                                "aliases": ["ダンシング・ヒーロー"],
+                                "public_ready": True,
+                            }
+                        ]
+                    },
+                    ensure_ascii=False,
+                ),
+                encoding="utf-8",
+            )
             (root / "data/youtube_active_video_review.json").write_text(
                 json.dumps(
                     {
