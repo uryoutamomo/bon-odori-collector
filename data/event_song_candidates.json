@@ -1,8 +1,8 @@
 {
   "generated_by": "build_event_song_candidates.py",
-  "count": 989,
+  "count": 990,
   "public_event_count": 348,
-  "review_count": 641,
+  "review_count": 642,
   "candidates": [
     {
       "id": "9870f5a616f1a007",
@@ -22024,6 +22024,34 @@
       "evidence_count": 3
     },
     {
+      "id": "f3b853bd51c17d59",
+      "song_name": "土支田町会納涼踊り",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/nerikohouse/status/2077333346766737879",
+          "date": "2026-07-15T10:03:59+00:00",
+          "text": "ねりま観光センター\n【イベント情報】盆踊りの季節がやってきた🙌♬\nまずはこちらですね！\n土支田八幡宮の盆踊り大会☆２０２６年７月１７日（金）・１８日（土）\n時間：１８時３０分～２１時\n場所：土支田八幡宮境内\n#練馬区 #祭り\n土支田町会納涼踊り | 練馬区のイベント情報 | とっておきの練馬 https://t.co/2qRlPax2ky"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://x.com/nerikohouse/status/2076459028889444370",
+          "date": "2026-07-13T00:09:45+00:00",
+          "text": "ねりま観光センター\n2026年も夏の盆踊りシーズンが始まります！！\nとっておきの練馬では日々イベント情報更新中！\n是非、行き逃しのないようにご確認ください！🦢☀️\n\n🟡土支田町会納涼踊り\n2026年7月17日（金）・18日（土）\nhttps://t.co/2qRlPax2ky\n\n🟡納涼盆踊り大会　共栄商店会\n2026年7月24日（金）・25日（土）\nhttps://t.co/6kSNpKExzB\n\n🟡三原台町会納涼盆踊大会\n2026年7月25日（土）・26日（日）\nhttps://t.co/XvJvmEmtN1\n\n🟡春日町　盆おどり大会\n2026年8月1日(土)・2日(日)\nhttps://t.co/Xw0v7Jfhnt\n\nその他掲載しきれなかった情報も盛りだくさん\n下記URLからチェック\nhttps://t.co/bBJ7IMbZgv\n\n＃盆踊り\n＃練馬区イベント\n＃とっておきの練馬\n＃東京盆踊り2026\n#2026夏祭り\n＃"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 2
+    },
+    {
       "id": "f9f79a159370419d",
       "song_name": "夕方も暑さが続く季節",
       "event_name": "盆踊り大会",
@@ -28120,7 +28148,7 @@
       "evidence_count": 3
     },
     {
-      "id": "7656a23eb0d2c71a",
+      "id": "fb1fe896cdf65cca",
       "song_name": "巣鴨音頭",
       "event_name": "第15回 鴨台盆踊り",
       "venue": "大正大学",
@@ -28133,13 +28161,19 @@
       "evidence": [
         {
           "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=b6gcYPUhNew",
+          "date": "2026-07-16T08:30:18+00:00",
+          "text": "和太鼓お祭りCH\n巣鴨音頭　大正大学「第16回鴨台盆踊り」８　2026年7月10日\n2026年7月10日に開催された大正大学\n「第16回鴨台盆踊り」の様子をお届けします。\n\n#盆踊り #大正大学 #鴨台盆踊り\n\n\n\n大正大学盆踊り1日目\n１般若心経　https://youtu.be/gs7qctraEi4\n２六大響　https://youtu.be/mvwrRKZhMw4\n３千の海響　https://youtu.be/OnHqtlGO1sI\n４大正大学校歌　https://youtu.be/moOSQzDLgXw\n５東京音頭　https://youtu.be/sd-LWkEB2vA\n６恋するフォーチュンクッキー　https://youtu.be/850dNTOCQ6U\n７炭坑節　https://youtu.be/IaJyns2At2Y\n８巣鴨音頭　https://youtu.be/b6gcYPUhNew\n９アイドル　https:"
+        },
+        {
+          "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=0ZDUIo3VM3Y",
           "date": "2025-07-05T07:00:01Z",
           "text": "和太鼓お祭りチャンネル\n巣鴨音頭　2025年大正大学「第15回鴨台盆踊り」４　東京都豊島区\n2025年7月4日に行われました、\n「大正大学　第15回鴨台盆踊り」の様子です。\n\n\n大正大学盆踊り\n大正大学校歌　https://youtu.be/5j4qts5Tl8Q\n１東京音頭　https://youtu.be/j5LH8xdLRYE\n２恋するフォーチュンクッキー　https://youtu.be/LRQhnOL4BxA\n３炭坑節　https://youtu.be/N9tUPCi3vDs\n４巣鴨音頭　https://youtu.be/0ZDUIo3VM3Y\n５アイドル　https://youtu.be/PBkuLkvutgE\n６みなとヨイサ　https://youtu.be/Rn1S2DWxgTA\n７おジャ魔女カーニバル　https://youtu.be/qsacokB8VWE\n８飛島音頭　https://youtu.be/Ker"
         }
       ],
       "already_public": false,
-      "evidence_count": 1
+      "evidence_count": 2
     },
     {
       "id": "df8cc47ae8999b12",

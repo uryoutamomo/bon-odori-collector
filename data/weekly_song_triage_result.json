@@ -1,9 +1,9 @@
 {
   "dry_run": true,
   "source": "data/weekly_harvest_candidates.json",
-  "song_candidate_count": 90,
-  "direct_count": 71,
-  "created_count": 57,
+  "song_candidate_count": 92,
+  "direct_count": 73,
+  "created_count": 59,
   "updated_count": 14,
   "rejected_noise_count": 17,
   "review_count": 2,
@@ -241,6 +241,14 @@
       "dry_run": true
     },
     {
+      "song_name": "全道阿波踊り",
+      "source_term": "全道阿波踊り",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
       "song_name": "八木節や炭坑節",
       "source_term": "八木節や炭坑節",
       "target": "create",
@@ -259,6 +267,14 @@
     {
       "song_name": "土支田八幡宮氏子中納涼踊り",
       "source_term": "土支田八幡宮氏子中納涼踊り",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 1,
+      "dry_run": true
+    },
+    {
+      "song_name": "土支田町会納涼踊り",
+      "source_term": "土支田町会納涼踊り",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 1,
@@ -597,6 +613,10 @@
       "reason": "曲名としての形が弱い"
     },
     {
+      "term": "なぜ篠路で阿波踊り",
+      "reason": "曲名としての形が弱い"
+    },
+    {
       "term": "みんなでいろんな音頭",
       "reason": "曲名としての形が弱い"
     },
@@ -638,10 +658,6 @@
     },
     {
       "term": "気軽に踊り",
-      "reason": "曲名としての形が弱い"
-    },
-    {
-      "term": "特にお盆の徹夜踊り",
       "reason": "曲名としての形が弱い"
     },
     {

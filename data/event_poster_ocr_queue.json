@@ -1,9 +1,9 @@
 {
   "generated_by": "build_event_poster_ocr_queue.py",
-  "count": 1116,
+  "count": 1121,
   "summary": {
     "critical": 11,
-    "high": 224,
+    "high": 226,
     "trusted_informant": 13
   },
   "items": [
@@ -5108,6 +5108,51 @@
         "pic.x.com/Fmt0Y5vmUW"
       ],
       "text": "『笠間納涼盆踊り花火大会2026』\nご挨拶、チラシポスターまわり\nみなさま❣️ありがとうございました🌸✨\n\nともべ幼稚園✨\nくるす保育所✨\nこじか幼稚園✨\n笠間こども園✨\nきっずプラス✨\n日本ウェルネス高等学校\nバレーボール部✨\nいなだこども園✨\n\nみんなで作るお祭り🎆✨\nこれからの未来ある、\n子供達に幸あれ🌸✨✨✨✨",
+      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
+    },
+    {
+      "id": "xposter_b7fc6e80da82c9a3",
+      "status": "needs_ocr",
+      "priority": "high",
+      "evidence_type": "poster_or_flyer_image",
+      "assumed_source_confidence": "medium",
+      "account": "@yutoadachi",
+      "account_name": "安達勇人",
+      "trusted_informant": false,
+      "trusted_informant_rank": "",
+      "url": "https://x.com/yutoadachi/status/2077668985600970919",
+      "tweet_id": "2077668985600970919",
+      "date": "2026-07-16T08:17:42+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HNVc6eNaYAAz8bX.jpg",
+        "https://t.co/rZqpW6gyob",
+        "pic.x.com/rZqpW6gyob",
+        "https://pbs.twimg.com/media/HNVc6eTakAArfJ-.jpg",
+        "https://pbs.twimg.com/media/HNVc6eibcAAhVRp.jpg",
+        "https://pbs.twimg.com/media/HNVc6ePbUAA-wOU.jpg"
+      ],
+      "text": "笠間納涼盆踊り花火大会2026\nご挨拶やチラシポスターまわり中🚗💨\n\nきっずプラス✨\n日本ウェルネス高等学校\nバレーボール部✨\nいなだこども園✨\n\n無事本日のご挨拶やチラシポスターまわら\n終わりました‼️\n全部は回れなかったけど、少しでもまわれて嬉しかったです☺️✨\nなんだか、ADACHI HOUSEの夏が始まるのを実感しました✨\nものすごい夏になりそうだよ✨\n最高の夏にしましょう✨",
+      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
+    },
+    {
+      "id": "xposter_8bf3f60baa78933f",
+      "status": "needs_ocr",
+      "priority": "high",
+      "evidence_type": "poster_or_flyer_image",
+      "assumed_source_confidence": "medium",
+      "account": "@camp_kasuminome",
+      "account_name": "陸上自衛隊霞目駐屯地【公式】",
+      "trusted_informant": false,
+      "trusted_informant_rank": "",
+      "url": "https://x.com/camp_kasuminome/status/2077671138407350778",
+      "tweet_id": "2077671138407350778",
+      "date": "2026-07-16T08:26:15+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HNVeVPFbQAAUQ8a.jpg",
+        "https://t.co/b1A3KXdUax",
+        "pic.x.com/b1A3KXdUax"
+      ],
+      "text": "【霞目駐屯地 #夏祭り 告知⑤】\n7月２６日（日）１７：００～２０：００で霞目駐屯地 #夏祭り を行います😊\n当日のイベントスケジュールです❗\nアトラクションを鑑賞して、屋台で食べて、盆踊りを踊りましょう❗\n皆さんと会えるのを駐屯地一同楽しみにしております😊❗\n\n#自衛隊　#霞目　#盆踊り　#櫓 https://t.co/b1A3KXdUax",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
     },
     {
@@ -14739,6 +14784,27 @@
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
     },
     {
+      "id": "xposter_980466ff6ad57432",
+      "status": "needs_ocr",
+      "priority": "medium",
+      "evidence_type": "poster_or_flyer_image",
+      "assumed_source_confidence": "medium",
+      "account": "@gunsou_bouei64",
+      "account_name": "陸自調査団",
+      "trusted_informant": false,
+      "trusted_informant_rank": "",
+      "url": "https://x.com/gunsou_bouei64/status/2072714358984200500",
+      "tweet_id": "2072714358984200500",
+      "date": "2026-07-02T16:09:47+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HMPCYG3bcAEp74g.jpg",
+        "https://t.co/5GWoq753Xf",
+        "pic.x.com/5GWoq753Xf"
+      ],
+      "text": "■令和8年度 伊丹･川西駐屯地 合同納涼夏祭り\n\n・音楽演奏\n・盆踊りコンテスト\n・太鼓演奏\n・部外ダンスチーム\n・総踊り\n・野外売店\n　など\n\n日時：2026年8月5日(水)17:00～20:00\n場所：陸上自衛隊 伊丹駐屯地（兵庫県 伊丹市）\n\nhttps://t.co/BCfF5MaQJ2 https://t.co/5GWoq753Xf",
+      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
+    },
+    {
       "id": "xposter_2ebb1cd1ea86e757",
       "status": "needs_ocr",
       "priority": "medium",
@@ -24314,6 +24380,49 @@
         "pic.x.com/C9z7a2pcuB"
       ],
       "text": "上野地区盆踊り大会20268月7日(金)開催☺️練習会は今週末だよ。 https://t.co/C9z7a2pcuB",
+      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
+    },
+    {
+      "id": "xposter_aa70d425bb9f4fea",
+      "status": "needs_ocr",
+      "priority": "medium",
+      "evidence_type": "poster_or_flyer_image",
+      "assumed_source_confidence": "medium",
+      "account": "@nyantokonyan",
+      "account_name": "にゃんとこ",
+      "trusted_informant": false,
+      "trusted_informant_rank": "",
+      "url": "https://x.com/nyantokonyan/status/2077669248097570946",
+      "tweet_id": "2077669248097570946",
+      "date": "2026-07-16T08:18:44+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HNVdKvEaUAA3sdF.jpg",
+        "https://t.co/NnEvKV985m",
+        "pic.x.com/NnEvKV985m"
+      ],
+      "text": "憲法守れ！アクキーできました。\nNO WARアクキーと共に7.17からのポポタムミニ展示、7.18大盆踊り会にゃんとこ物販などで販売予定です。 https://t.co/NnEvKV985m",
+      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
+    },
+    {
+      "id": "xposter_4b6888dfe965123a",
+      "status": "needs_ocr",
+      "priority": "medium",
+      "evidence_type": "poster_or_flyer_image",
+      "assumed_source_confidence": "medium",
+      "account": "@nyantokonyan",
+      "account_name": "にゃんとこ",
+      "trusted_informant": false,
+      "trusted_informant_rank": "",
+      "url": "https://x.com/nyantokonyan/status/2077671167511671151",
+      "tweet_id": "2077671167511671151",
+      "date": "2026-07-16T08:26:22+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HNVe5cmbsAA4Xi4.jpg",
+        "https://t.co/fKGertZpbx",
+        "pic.x.com/fKGertZpbx",
+        "https://pbs.twimg.com/media/HNVe5ckaUAAgx18.jpg"
+      ],
+      "text": "明日7月17日から南阿佐ヶ谷ポポタム@popotame_shop の1階でミニ展示です🐈　設営も無事終わりました。キャンバスの絵は大小8点、全て新作です。人形も新作あります。テーマが盆踊りなので日月櫓作りました。昼夜問わず一日中踊らせる踊り助平歓喜の櫓です😹ぜひご覧くださいませ🏮 https://t.co/fKGertZpbx",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
     }
   ]
