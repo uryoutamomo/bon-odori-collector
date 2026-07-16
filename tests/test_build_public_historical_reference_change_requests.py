@@ -68,6 +68,8 @@ class BuildPublicHistoricalReferenceChangeRequestsTest(unittest.TestCase):
         return {
             "name": "中央公園盆踊り",
             "venue": "中央公園",
+            "date": "",
+            "date_end": "",
             "historical_reference_label": "2025-07-25実績・今年未確認",
             "historical_reference": {
                 "last_seen_year": 2025,
@@ -119,6 +121,24 @@ class BuildPublicHistoricalReferenceChangeRequestsTest(unittest.TestCase):
 
             self.assertEqual(report["request_count"], 1)
             self.assertEqual(report["summary"]["resolution:venue_exact_unique"], 1)
+            self.assertEqual(payload["requests"][0]["occurrence_id"], "occ1")
+
+    def test_uses_source_map_occurrence_id_before_name_matching(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            db_path = Path(tmp) / "master.sqlite"
+            self.make_db(db_path)
+            event = self.public_event()
+            event["name"] = "公開用に少し違う名前"
+            source_map = {
+                "公開用に少し違う名前|中央公園||": {
+                    "occurrence_id": "occ1",
+                }
+            }
+
+            payload, report = build_payload([event], db_path, source_map=source_map)
+
+            self.assertEqual(report["request_count"], 1)
+            self.assertEqual(report["summary"]["resolution:source_map"], 1)
             self.assertEqual(payload["requests"][0]["occurrence_id"], "occ1")
 
 

@@ -72,6 +72,7 @@ def export_env(base: dict[str, str], out_dir: Path, report_path: Path, today: st
     env = dict(base)
     env["BON_ODORI_PUBLIC_OUT_DIR"] = str(out_dir)
     env["BON_ODORI_PUBLIC_DATE_PREDICTION_REPORT"] = str(report_path)
+    env["BON_ODORI_PUBLIC_EVENT_SOURCE_MAP_JSON"] = str(out_dir / "public_event_source_map.json")
     env["BON_ODORI_PUBLIC_TODAY"] = today
     return env
 

@@ -16,8 +16,10 @@ from export_public_events import (
     merge_song_occurrence_hints,
     parse_youtube_evidence,
     public_export_today,
+    public_event_source_map,
     public_detail_text,
     sanitize_public_event_details,
+    strip_public_internal_event_fields,
     suppress_replaced_recurring_events,
     write_public_js,
 )
@@ -270,6 +272,31 @@ class ExportPublicEventsTest(unittest.TestCase):
 
         self.assertEqual(rows[0]["display_name"], "品川区民まつり 大崎第一地区（第一日野小学校）")
         self.assertEqual(rows[1]["display_name"], "品川区民まつり 大崎第一地区（第四日野小学校）")
+
+    def test_public_event_source_map_keeps_occurrence_id_out_of_public_json(self):
+        rows = [
+            {
+                "name": "中央公園盆踊り",
+                "venue": "中央公園",
+                "date": "2026-07-20",
+                "date_end": "",
+                "_source": "master_rdb",
+                "_occurrence_id": "occ1",
+                "_series_id": "series1",
+                "_event_year": 2026,
+                "_venue_id": "venue1",
+                "songs": [],
+            }
+        ]
+
+        sidecar = public_event_source_map(rows)
+        public_rows = strip_public_internal_event_fields(rows)
+
+        self.assertEqual(sidecar["mapped_count"], 1)
+        self.assertEqual(sidecar["rows"][0]["occurrence_id"], "occ1")
+        self.assertEqual(sidecar["rows"][0]["public_event_key"], "中央公園盆踊り|中央公園|2026-07-20|")
+        self.assertNotIn("_occurrence_id", public_rows[0])
+        self.assertNotIn("_series_id", public_rows[0])
 
     def test_apply_public_recurrence_metadata_adds_production_fields(self):
         rows = apply_public_recurrence_metadata([{

@@ -20,6 +20,7 @@ from master_db import MASTER_DB, require_existing_db
 
 DATA = Path("data")
 PUBLIC_EVENTS = DATA / "public" / "events_public.json"
+PUBLIC_EVENT_SOURCE_MAP = DATA / "public_event_source_map.json"
 OUT_JSON = DATA / "public_projection_source_compare.json"
 OUT_MD = DATA / "public_projection_source_compare.md"
 
@@ -49,6 +50,20 @@ def event_key(name, venue) -> str:
 
 def public_event_key(event: dict) -> str:
     return event_key(event.get("name"), event.get("venue"))
+
+
+def public_event_sidecar_key(event: dict) -> str:
+    return "|".join(str(event.get(key) or "") for key in ("name", "venue", "date", "date_end"))
+
+
+def load_source_map(path: Path) -> dict[str, dict]:
+    payload = load_json(path, {})
+    rows = payload.get("rows") or []
+    return {
+        row.get("public_event_key"): row
+        for row in rows
+        if row.get("public_event_key") and row.get("occurrence_id")
+    }
 
 
 def json_dict(value) -> dict:
@@ -107,6 +122,7 @@ def load_prediction_sources(db_path: Path, target_year: int) -> dict[str, list[d
           p.application_status,
           p.source,
           p.source_payload_json,
+          p.target_occurrence_id AS occurrence_id,
           COALESCE(o.display_name, p.target_event_name, s.canonical_name) AS event_name,
           COALESCE(v.canonical_name, uv.canonical_name, '') AS venue_name
         FROM predicted_occurrence_dates p
@@ -123,6 +139,7 @@ def load_prediction_sources(db_path: Path, target_year: int) -> dict[str, list[d
         payload = json_dict(row.get("source_payload_json"))
         source = {
             "predicted_date_id": row.get("predicted_date_id"),
+            "occurrence_id": row.get("occurrence_id"),
             "event_name": row.get("event_name"),
             "venue": row.get("venue_name"),
             "date": row.get("date_start"),
@@ -228,6 +245,28 @@ def first_match(index: dict[str, list[dict]], key: str) -> dict | None:
     return rows[0] if rows else None
 
 
+def index_by_occurrence_id(index: dict[str, list[dict]]) -> dict[str, list[dict]]:
+    out: dict[str, list[dict]] = defaultdict(list)
+    seen = set()
+    for rows in index.values():
+        for row in rows:
+            occurrence_id = row.get("occurrence_id")
+            row_key = (occurrence_id, row.get("predicted_date_id"), row.get("occurrence_date_id"))
+            if not occurrence_id or row_key in seen:
+                continue
+            seen.add(row_key)
+            out[occurrence_id].append(row)
+    return dict(out)
+
+
+def first_source(index: dict[str, list[dict]], by_occurrence: dict[str, list[dict]], key: str, occurrence_id: str | None) -> dict | None:
+    if occurrence_id:
+        rows = by_occurrence.get(occurrence_id) or []
+        if rows:
+            return rows[0]
+    return first_match(index, key)
+
+
 def compare_prediction(event: dict, source: dict | None) -> dict:
     prediction = event.get("date_prediction") or {}
     if not prediction:
@@ -290,18 +329,36 @@ def compare_season(event: dict, source: dict | None) -> dict:
     }
 
 
-def build_report(public_events: list[dict], master_db: Path, target_year: int = 2026) -> dict:
+def build_report(public_events: list[dict], master_db: Path, target_year: int = 2026, source_map: dict[str, dict] | None = None) -> dict:
     predictions = load_prediction_sources(master_db, target_year)
     historical = load_historical_sources(master_db, target_year)
     seasons = load_season_sources(master_db, target_year)
+    prediction_by_occurrence = index_by_occurrence_id(predictions)
+    historical_by_occurrence = index_by_occurrence_id(historical)
+    season_by_occurrence = index_by_occurrence_id(seasons)
+    source_map = source_map or {}
 
     rows = []
     counters = Counter()
+    sidecar_hits = 0
     for event in public_events:
         key = public_event_key(event)
-        prediction = compare_prediction(event, first_match(predictions, key))
-        historical_result = compare_historical(event, first_match(historical, key))
-        season = compare_season(event, first_match(seasons, key))
+        sidecar = source_map.get(public_event_sidecar_key(event)) or {}
+        occurrence_id = sidecar.get("occurrence_id")
+        if occurrence_id:
+            sidecar_hits += 1
+        prediction = compare_prediction(
+            event,
+            first_source(predictions, prediction_by_occurrence, key, occurrence_id),
+        )
+        historical_result = compare_historical(
+            event,
+            first_source(historical, historical_by_occurrence, key, occurrence_id),
+        )
+        season = compare_season(
+            event,
+            first_source(seasons, season_by_occurrence, key, occurrence_id),
+        )
         for family, result in (
             ("prediction", prediction),
             ("historical", historical_result),
@@ -315,6 +372,7 @@ def build_report(public_events: list[dict], master_db: Path, target_year: int = 
                     "venue": event.get("venue"),
                     "public_category": event.get("public_category"),
                     "display_tier": event.get("display_tier"),
+                    "occurrence_id": occurrence_id,
                     "prediction": prediction,
                     "historical_reference": historical_result,
                     "season_hint": season,
@@ -330,6 +388,8 @@ def build_report(public_events: list[dict], master_db: Path, target_year: int = 
             "prediction_keys": len(predictions),
             "historical_keys": len(historical),
             "season_keys": len(seasons),
+            "sidecar_keys": len(source_map),
+            "sidecar_hits": sidecar_hits,
         },
         "summary": dict(sorted(counters.items())),
         "blocking_row_count": len(rows),
@@ -375,13 +435,15 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--public-events", default=str(PUBLIC_EVENTS))
     parser.add_argument("--master-db", default=str(MASTER_DB))
+    parser.add_argument("--source-map", default=str(PUBLIC_EVENT_SOURCE_MAP))
     parser.add_argument("--target-year", type=int, default=2026)
     parser.add_argument("--out-json", default=str(OUT_JSON))
     parser.add_argument("--out-md", default=str(OUT_MD))
     args = parser.parse_args()
 
     public_events = load_json(Path(args.public_events), [])
-    report = build_report(public_events, Path(args.master_db), target_year=args.target_year)
+    source_map = load_source_map(Path(args.source_map))
+    report = build_report(public_events, Path(args.master_db), target_year=args.target_year, source_map=source_map)
     write_json(Path(args.out_json), report)
     Path(args.out_md).parent.mkdir(parents=True, exist_ok=True)
     Path(args.out_md).write_text(render_markdown(report), encoding="utf-8")

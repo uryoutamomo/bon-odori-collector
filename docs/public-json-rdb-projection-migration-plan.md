@@ -44,6 +44,21 @@ python3 scripts/compare_public_export_postprocessors.py \
 - `event_count_current == event_count_legacy_overlay`
 - `current_sha256 == legacy_overlay_sha256`
 
+## Internal ID Sidecar
+
+`export_public_events.py` writes `data/public_event_source_map.json` for internal collector use.
+It is intentionally outside `data/public/`, so it is not part of the web-delivered public data.
+
+The sidecar maps the final public event identity (`name`, `venue`, `date`, `date_end`) to Master RDB identifiers:
+
+- `occurrence_id`
+- `series_id`
+- `venue_id`
+- `event_year`
+
+`compare_public_projection_sources.py` and `build_public_historical_reference_change_requests.py` use this sidecar first.
+If the sidecar is missing, they fall back to the older `name + venue` matching. This keeps the migration tooling usable on older snapshots while reducing fuzzy-match false negatives on current exports.
+
 ## Migration Steps
 
 1. 差分ゼロゲートを毎回通す。

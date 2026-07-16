@@ -237,6 +237,14 @@ C本丸で公開JSON後処理をRDB由来の投影へ寄せる前に、現行経
 このゲートを `status=pass` / `deep_equal=true` に保ったまま、date prediction / historical reference /
 season hint の順にRDB投影側へ移す。詳細は `docs/public-json-rdb-projection-migration-plan.md`。
 
+## C 第6段 公開イベントIDサイドカー（2026-07-17 おと）
+
+`export_public_events.py` が、公開JSONには出さない内部用 `data/public_event_source_map.json` を生成するようにした。
+公開イベントの最終表示名・会場・日付と Master RDB の `occurrence_id` / `series_id` / `venue_id` を対応付ける。
+`compare_public_projection_sources.py` と `build_public_historical_reference_change_requests.py` は、このサイドカーがある場合
+`occurrence_id` を優先し、なければ従来の name+venue fuzzy 突合にフォールバックする。これによりC本丸の
+RDB投影比較とhistorical戻し候補生成で、公開名ゆれによる weak_candidate を減らす。
+
 ## A ステータス：内田さんGO済み・実運用開始（2026-07-16）
 
 - ことレビュー2巡（初回=Finding 1 historical重複・Finding 4 ダミーURL → おと修正 → 再検証全項目合格）を経て、

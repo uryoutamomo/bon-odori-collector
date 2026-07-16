@@ -198,6 +198,7 @@ jobs:
         [ -f data/weekly_harvest_apply_result.json ] && git add data/weekly_harvest_apply_result.json
         [ -f data/venue_master.json ] && git add data/venue_master.json
         [ -f data/public/events_public.json ] && git add data/public/events_public.json
+        [ -f data/public_event_source_map.json ] && git add data/public_event_source_map.json
         if python master_rdb_freeze_policy.py is-frozen ph1_public_song_export_files; then
           echo "[master-rdb] Ph1 public song export files frozen: do not stage migrated public song files"
         else

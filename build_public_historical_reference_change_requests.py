@@ -20,6 +20,7 @@ from master_db import MASTER_DB, normalize_text, require_existing_db, stable_id
 
 DATA = Path("data")
 PUBLIC_EVENTS = DATA / "public" / "events_public.json"
+PUBLIC_EVENT_SOURCE_MAP = DATA / "public_event_source_map.json"
 OUT_REQUESTS = DATA / "change_requests" / "public_historical_references_20260716.json"
 OUT_REPORT = DATA / "public_historical_reference_change_requests.md"
 TARGET_YEAR = 2026
@@ -37,6 +38,20 @@ def load_json(path: Path, default):
 def write_json(path: Path, payload) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+def public_event_sidecar_key(event: dict) -> str:
+    return "|".join(str(event.get(key) or "") for key in ("name", "venue", "date", "date_end"))
+
+
+def load_source_map(path: Path) -> dict[str, dict]:
+    payload = load_json(path, {})
+    rows = payload.get("rows") or []
+    return {
+        row.get("public_event_key"): row
+        for row in rows
+        if row.get("public_event_key") and row.get("occurrence_id")
+    }
 
 
 def candidate_source(event: dict) -> dict | None:
@@ -85,7 +100,19 @@ def existing_historical_date(conn, occurrence_id: str, date_start: str, date_end
     return bool(row)
 
 
-def resolve_occurrence(conn, event: dict) -> tuple[str | None, list[dict], str]:
+def occurrence_exists(conn, occurrence_id: str) -> bool:
+    row = conn.execute(
+        "SELECT 1 FROM event_occurrences WHERE occurrence_id = ? LIMIT 1",
+        (occurrence_id,),
+    ).fetchone()
+    return bool(row)
+
+
+def resolve_occurrence(conn, event: dict, source_map_occurrence_id: str | None = None) -> tuple[str | None, list[dict], str]:
+    if source_map_occurrence_id:
+        if occurrence_exists(conn, source_map_occurrence_id):
+            return source_map_occurrence_id, [], "source_map"
+        return None, [], "source_map_occurrence_missing"
     candidates = find_occurrence_candidates(
         conn,
         event.get("name"),
@@ -136,8 +163,9 @@ def build_request(event: dict, occurrence_id: str | None, source: dict, date_sta
     return request
 
 
-def build_payload(public_events: list[dict], master_db: Path) -> tuple[dict, dict]:
+def build_payload(public_events: list[dict], master_db: Path, source_map: dict[str, dict] | None = None) -> tuple[dict, dict]:
     require_existing_db(master_db)
+    source_map = source_map or {}
     requests = []
     issues = []
     counters = Counter()
@@ -161,7 +189,12 @@ def build_payload(public_events: list[dict], master_db: Path) -> tuple[dict, dic
                 counters["skipped:missing_source_url"] += 1
                 issues.append({"issue_type": "missing_source_url", "name": event.get("name"), "venue": event.get("venue")})
                 continue
-            occurrence_id, candidates, resolution = resolve_occurrence(conn, event)
+            sidecar = source_map.get(public_event_sidecar_key(event)) or {}
+            occurrence_id, candidates, resolution = resolve_occurrence(
+                conn,
+                event,
+                sidecar.get("occurrence_id"),
+            )
             counters[f"resolution:{resolution}"] += 1
             request = build_request(event, occurrence_id, source, date_start, date_end or "", historical_year)
             if occurrence_id and existing_historical_date(conn, occurrence_id, date_start, date_end or ""):
@@ -232,13 +265,15 @@ def render_markdown(report: dict) -> str:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--public-events", default=str(PUBLIC_EVENTS))
+    parser.add_argument("--source-map", default=str(PUBLIC_EVENT_SOURCE_MAP))
     parser.add_argument("--master-db", default=str(MASTER_DB))
     parser.add_argument("--out-requests", default=str(OUT_REQUESTS))
     parser.add_argument("--out-report", default=str(OUT_REPORT))
     args = parser.parse_args()
 
     events = load_json(Path(args.public_events), [])
-    payload, report = build_payload(events, Path(args.master_db))
+    source_map = load_source_map(Path(args.source_map))
+    payload, report = build_payload(events, Path(args.master_db), source_map=source_map)
     write_json(Path(args.out_requests), payload)
     Path(args.out_report).write_text(render_markdown(report), encoding="utf-8")
     print(

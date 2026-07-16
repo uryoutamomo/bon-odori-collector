@@ -58,6 +58,10 @@ OUT_SONG_OCCURRENCES_JSON = os.environ.get(
     "BON_ODORI_SONG_OCCURRENCES_JSON",
     os.path.join(OUT_DIR, "event_song_occurrences_public.json"),
 )
+PUBLIC_EVENT_SOURCE_MAP_JSON = os.environ.get(
+    "BON_ODORI_PUBLIC_EVENT_SOURCE_MAP_JSON",
+    os.path.join(os.path.dirname(__file__), "data", "public_event_source_map.json"),
+)
 DATE_PREDICTION_REPORT = os.environ.get(
     "BON_ODORI_PUBLIC_DATE_PREDICTION_REPORT",
     DATE_PREDICTION_REPORT,
@@ -915,6 +919,7 @@ def build_public_events_from_master(db_path=MASTER_DB):
             """
             SELECT
               o.occurrence_id,
+              s.series_id,
               o.display_name,
               o.event_year,
               o.date_start,
@@ -1005,6 +1010,11 @@ def build_public_events_from_master(db_path=MASTER_DB):
         date_candidates = [] if date else date_candidates_by_event.get(row["occurrence_id"], [])
         events.append({
             "name": public_name,
+            "_source": "master_rdb",
+            "_occurrence_id": row["occurrence_id"],
+            "_series_id": row["series_id"],
+            "_event_year": int(row["event_year"] or 2026),
+            "_venue_id": row["venue_id"],
             "name_confirmed": True,
             "venue": clean_public_text(row["venue"]),
             "area": row["area"],
@@ -1251,6 +1261,52 @@ def strip_internal_public_fields(value):
     return cleaned
 
 
+def public_event_identity_key(event):
+    return "|".join(
+        str(event.get(key) or "")
+        for key in ("name", "venue", "date", "date_end")
+    )
+
+
+def public_event_source_map(events):
+    rows = []
+    for event in events:
+        occurrence_id = event.get("_occurrence_id")
+        if not occurrence_id:
+            continue
+        rows.append(
+            {
+                "public_event_key": public_event_identity_key(event),
+                "name": event.get("name") or "",
+                "venue": event.get("venue") or "",
+                "date": event.get("date") or "",
+                "date_end": event.get("date_end") or "",
+                "source": event.get("_source") or "master_rdb",
+                "occurrence_id": occurrence_id,
+                "series_id": event.get("_series_id") or "",
+                "event_year": event.get("_event_year"),
+                "venue_id": event.get("_venue_id") or "",
+            }
+        )
+    return {
+        "generated_by": "export_public_events.py",
+        "scope": "internal_public_event_source_map",
+        "public_event_count": len(events),
+        "mapped_count": len(rows),
+        "rows": rows,
+    }
+
+
+def strip_public_internal_event_fields(events):
+    cleaned = []
+    for event in events:
+        item = strip_internal_public_fields(event)
+        for key in ("_source", "_occurrence_id", "_series_id", "_event_year", "_venue_id"):
+            item.pop(key, None)
+        cleaned.append(item)
+    return cleaned
+
+
 def _song_score(song):
     if isinstance(song, str):
         return (0, 0, 0)
@@ -1343,12 +1399,17 @@ def main():
     )
     events = apply_display_tiers(prediction_result["events"])
     events = apply_public_site_postprocessors(events)
+    source_map = public_event_source_map(events)
+    public_events = strip_public_internal_event_fields(events)
     write_public_date_prediction_json(DATE_PREDICTION_REPORT, prediction_result["report"])
 
     os.makedirs(OUT_DIR, exist_ok=True)
     with open(OUT_JSON, "w", encoding="utf-8") as f:
-        json.dump(events, f, ensure_ascii=False, indent=2)
-    write_public_js(OUT_JS, events)
+        json.dump(public_events, f, ensure_ascii=False, indent=2)
+    write_public_js(OUT_JS, public_events)
+    os.makedirs(os.path.dirname(PUBLIC_EVENT_SOURCE_MAP_JSON), exist_ok=True)
+    with open(PUBLIC_EVENT_SOURCE_MAP_JSON, "w", encoding="utf-8") as f:
+        json.dump(source_map, f, ensure_ascii=False, indent=2)
     song_rows = [
         {
             "name": e["name"],
@@ -1357,16 +1418,16 @@ def main():
             "date": e["date"],
             "songs": e["songs"],
         }
-        for e in events
+        for e in public_events
         if e.get("songs")
     ]
     with open(OUT_SONGS_JSON, "w", encoding="utf-8") as f:
         json.dump(song_rows, f, ensure_ascii=False, indent=2)
 
-    named = sum(1 for e in events if e["name_confirmed"])
-    no_month = sum(1 for e in events if not e["months"])
-    with_songs = sum(1 for e in events if e.get("songs"))
-    print(f"イベント公開エクスポート完了: {len(events)} 件 → {OUT_JSON}")
+    named = sum(1 for e in public_events if e["name_confirmed"])
+    no_month = sum(1 for e in public_events if not e["months"])
+    with_songs = sum(1 for e in public_events if e.get("songs"))
+    print(f"イベント公開エクスポート完了: {len(public_events)} 件 → {OUT_JSON}")
     print(f"  Claude Design貼り付け用JS: {OUT_JS}")
     print(f"  イベント名あり: {named} 件（{covered} 会場）/ 名称確認中フォールバック: {fallback} 件")
     print(f"  月情報なし: {no_month} 件 / 23区外・会場なしで除外したイベント: {skipped} 件")
