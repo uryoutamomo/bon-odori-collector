@@ -176,6 +176,10 @@ E第1段の実移動後、append系・build系の分類dry-runを `docs/cleanup-
 
 Notion単発メモ追記の `append_*.py` 52本を `legacy/notion-notes/` へ移動した。`append_youtube_task_list_to_notion.py` はテスト・runbook参照を移動先へ更新済み。
 
+## E 第2段 build系 低リスク群 実移動（2026-07-16 おと）
+
+分類済みの `build_*.py` から、workflow/test/docsの実行参照がない4本だけを `legacy/build-reports/` へ移動した。root直下の `build_*.py` は50本になった。参照更新が必要な `build_low_confidence_backfill_review.py`、Ph2 plan 系、retrospective 系は温存し、別コミットで扱う。
+
 ## A ステータス：内田さんGO済み・実運用開始（2026-07-16）
 
 - ことレビュー2巡（初回=Finding 1 historical重複・Finding 4 ダミーURL → おと修正 → 再検証全項目合格）を経て、
