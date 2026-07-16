@@ -2,10 +2,16 @@ import json
 import sqlite3
 import tempfile
 import unittest
+import importlib.util
 from argparse import Namespace
 from pathlib import Path
 
-import build_pre_cutover_p0_apply_plan as planner
+
+ROOT = Path(__file__).resolve().parents[1]
+SCRIPT = ROOT / "legacy" / "build-reports" / "build_pre_cutover_p0_apply_plan.py"
+SPEC = importlib.util.spec_from_file_location("build_pre_cutover_p0_apply_plan", SCRIPT)
+planner = importlib.util.module_from_spec(SPEC)
+SPEC.loader.exec_module(planner)
 
 
 class BuildPreCutoverP0ApplyPlanTest(unittest.TestCase):

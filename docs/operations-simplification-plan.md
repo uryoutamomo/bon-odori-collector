@@ -184,6 +184,10 @@ Notion単発メモ追記の `append_*.py` 52本を `legacy/notion-notes/` へ移
 
 workflow/docs/scriptsからの実行参照がなく、テストだけが import していた retrospective 補助2本を `legacy/build-reports/` へ追加移動した。テストは移動先ファイルを明示ロードする形へ更新済み。root直下の `build_*.py` は48本になった。
 
+## E 第2段 build系 Ph2/pre-cutover 移行補助クラスタ 実移動（2026-07-16 おと）
+
+workflowには入っていない Ph2/pre-cutover 移行補助5本を `legacy/build-reports/` へ追加移動した。runbookの直接実行コマンドは `PYTHONPATH=. python3 legacy/build-reports/...` に更新し、テストとレビュー補助内の参照パスも移動先へ更新済み。root直下の `build_*.py` は43本になった。`build_low_confidence_backfill_review.py` は `run_daily_youtube_backfill.py` から実行されるため温存する。
+
 ## A ステータス：内田さんGO済み・実運用開始（2026-07-16）
 
 - ことレビュー2巡（初回=Finding 1 historical重複・Finding 4 ダミーURL → おと修正 → 再検証全項目合格）を経て、

@@ -2,7 +2,7 @@
 
 作成日: 2026-07-16 JST
 署名: おと（Codex）
-ステータス: 第2段の分類dry-run後、append系52本とbuild系低リスク6本を実移動済み。
+ステータス: 第2段の分類dry-run後、append系52本とbuild系低リスク/移行補助11本を実移動済み。
 
 ## 目的
 
@@ -46,6 +46,14 @@ build系低リスク群 第2回実移動後:
 | root `*.py` | 259 | retrospective補助2本を追加移動 |
 | root `build_*.py` | 48 | workflow現役・RDB/レビュー基盤を温存 |
 | `legacy/build-reports/build_*.py` | 6 | 単発レポート・旧候補生成を集約 |
+
+build系 Ph2/pre-cutover 移行補助クラスタ 実移動後:
+
+| pattern | count | 所見 |
+|---|---:|---|
+| root `*.py` | 254 | Ph2/pre-cutover補助5本を追加移動 |
+| root `build_*.py` | 43 | workflow現役・RDB/レビュー基盤を温存 |
+| `legacy/build-reports/build_*.py` | 11 | 単発レポート・旧移行補助を集約 |
 
 ## 第2段の移動候補A: Notionメモ追記 append系
 
@@ -153,8 +161,19 @@ build_retrospective_occurrences.py
 build_retrospective_venue_song_associations.py
 ```
 
-`build_low_confidence_backfill_review.py`、Ph2 plan 系、pre-cutover 系は docs/test/別スクリプト参照があるため、
-この小移動では温存した。次に動かす場合は参照更新を含む別コミットで扱う。
+同日追加で、workflowには入っていない Ph2/pre-cutover 移行補助クラスタ5本を `legacy/build-reports/` へ移動済み。
+runbookの直接実行コマンドは `PYTHONPATH=. python3 legacy/build-reports/...` へ更新し、テストと
+レビュー補助内の参照パスも移動先へ更新した。
+
+```text
+build_ph2_cutover_readiness.py
+build_ph2_ebara_fifth_venue_plan.py
+build_ph2_event_occurrence_apply_plan.py
+build_ph2_review_packet.py
+build_pre_cutover_p0_apply_plan.py
+```
+
+`build_low_confidence_backfill_review.py` は `run_daily_youtube_backfill.py` から実行されるため、E第2段では温存する。
 
 推奨: build系はappend系と同じコミットで動かさない。append系移動後に、参照更新範囲を個別に見てから小さく移動する。
 

@@ -236,10 +236,10 @@ def git_status_summary(repo):
             "build_observed_promotion_candidates.py",
             "build_historical_promotion_candidates.py",
             "build_registered_event_investigation_queue.py",
-            "build_ph2_cutover_readiness.py",
-            "build_ph2_event_occurrence_apply_plan.py",
+            "legacy/build-reports/build_ph2_cutover_readiness.py",
+            "legacy/build-reports/build_ph2_event_occurrence_apply_plan.py",
             "build_predicted_occurrence_research_queue.py",
-            "build_pre_cutover_p0_apply_plan.py",
+            "legacy/build-reports/build_pre_cutover_p0_apply_plan.py",
         }:
             group = "review_commit_candidate_scripts"
         elif path == "docs/master-rdb-migration-ph0-design.md":

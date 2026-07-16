@@ -23,7 +23,7 @@ review and Uchida-san has explicitly approved the step.
 For the general Ph2 plan:
 
 ```sh
-python3 build_ph2_event_occurrence_apply_plan.py
+PYTHONPATH=. python3 legacy/build-reports/build_ph2_event_occurrence_apply_plan.py
 python3 dry_run_ph2_event_occurrence_apply.py
 python3 audit_master_rdb.py
 ```
@@ -32,7 +32,7 @@ For venue-change cases that need new curated venue rows, use a case-specific
 dry-run plan before writing the master DB. Example:
 
 ```sh
-python3 build_ph2_ebara_fifth_venue_plan.py
+PYTHONPATH=. python3 legacy/build-reports/build_ph2_ebara_fifth_venue_plan.py
 ```
 
 Expected current result after 荏原第一 and 品川第二 have already been applied:
