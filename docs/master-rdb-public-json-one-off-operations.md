@@ -34,9 +34,10 @@ These are not classified as manual one-offs:
 - `apply_public_season_hints.py`
 - `apply_public_display_tiers.py`
 
-They are deterministic public-export postprocessors and may be called by
-`run_daily_youtube_backfill.py` / `export_public_events.py` as part of the
-normal generated-output flow.
+They are deterministic public-export postprocessors and are called by
+`export_public_events.py` as part of the normal generated-output flow.
+Scheduled and local maintenance commands should call `export_public_events.py`
+instead of chaining these scripts after export.
 
 ## Flow
 

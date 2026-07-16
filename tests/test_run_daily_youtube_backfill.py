@@ -140,30 +140,26 @@ class RunDailyYoutubeBackfillTest(unittest.TestCase):
         self.assertEqual(result["remaining_rows_after"], 1)
         self.assertIn("quotaExceeded", result["error"])
 
-    def test_regenerate_outputs_passes_current_jst_day_to_historical_references(self):
+    def test_regenerate_outputs_uses_single_public_export_path(self):
         commands = []
         original_run_command = daily.run_command
-        original_today = daily.today_jst_iso
         try:
             daily.run_command = lambda command: commands.append(command) or {"returncode": 0}
-            daily.today_jst_iso = lambda: "2026-06-30"
 
             daily.regenerate_outputs(7)
         finally:
             daily.run_command = original_run_command
-            daily.today_jst_iso = original_today
 
-        historical_commands = [
+        public_export_commands = [
             command
             for command in commands
-            if command[:2] == ["python3", "apply_public_historical_references.py"]
+            if command[:2] == ["python3", "export_public_events.py"]
         ]
-        self.assertEqual(
-            historical_commands,
-            [
-                ["python3", "apply_public_historical_references.py", "--today", "2026-06-30"],
-                ["python3", "apply_public_historical_references.py", "--today", "2026-06-30"],
-            ],
+        self.assertEqual(public_export_commands, [["python3", "export_public_events.py"]])
+        self.assertNotIn(["python3", "apply_public_date_predictions.py"], commands)
+        self.assertNotIn(["python3", "apply_public_season_hints.py"], commands)
+        self.assertFalse(
+            any(command[:2] == ["python3", "apply_public_historical_references.py"] for command in commands)
         )
 
 

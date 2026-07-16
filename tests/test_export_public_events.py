@@ -2,6 +2,7 @@ import sqlite3
 import unittest
 from pathlib import Path
 from tempfile import TemporaryDirectory
+from unittest.mock import patch
 
 from export_public_events import (
     apply_public_recurrence_metadata,
@@ -14,6 +15,7 @@ from export_public_events import (
     fixed_date_rule_from_props,
     merge_song_occurrence_hints,
     parse_youtube_evidence,
+    public_export_today,
     public_detail_text,
     sanitize_public_event_details,
     suppress_replaced_recurring_events,
@@ -22,6 +24,15 @@ from export_public_events import (
 
 
 class ExportPublicEventsTest(unittest.TestCase):
+    def test_public_export_today_can_be_fixed_by_environment(self):
+        with patch.dict("os.environ", {"BON_ODORI_PUBLIC_TODAY": "2026-07-16"}):
+            self.assertEqual(public_export_today().isoformat(), "2026-07-16")
+
+    def test_public_export_today_rejects_invalid_environment_date(self):
+        with patch.dict("os.environ", {"BON_ODORI_PUBLIC_TODAY": "not-a-date"}):
+            with self.assertRaises(ValueError):
+                public_export_today()
+
     def test_fixed_date_rule_from_props_reads_machine_columns(self):
         rule = fixed_date_rule_from_props({
             "固定日開始月": {"type": "number", "number": 8},

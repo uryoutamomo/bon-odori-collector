@@ -188,6 +188,17 @@ workflow/docs/scriptsからの実行参照がなく、テストだけが import 
 
 workflowには入っていない Ph2/pre-cutover 移行補助5本を `legacy/build-reports/` へ追加移動した。runbookの直接実行コマンドは `PYTHONPATH=. python3 legacy/build-reports/...` に更新し、テストとレビュー補助内の参照パスも移動先へ更新済み。root直下の `build_*.py` は43本になった。`build_low_confidence_backfill_review.py` は `run_daily_youtube_backfill.py` から実行されるため温存する。
 
+## C 第1段 重複postprocessorチェーン除去（2026-07-16 おと）
+
+`export_public_events.py` はすでに `apply_public_date_predictions.py` / `apply_public_historical_references.py` /
+`apply_public_season_hints.py` の3処理を内部で呼んでいるため、workflowとローカルYouTube backfill再生成から
+同3本の後続実行を外し、公開JSON生成口を `export_public_events.py` に一本化する。外部実行時に渡していた
+`--today` 相当は `export_public_events.py` 側でJST当日を使うようにし、検証用に
+`BON_ODORI_PUBLIC_TODAY=YYYY-MM-DD` で固定できるようにした。
+
+この段階では3本のpostprocessorスクリプト自体は削除・移動しない。単体テストとロールバック保険として残し、
+次段でRDB側の予測/過去実績/旬ヒント投影へ寄せる。
+
 ## A ステータス：内田さんGO済み・実運用開始（2026-07-16）
 
 - ことレビュー2巡（初回=Finding 1 historical重複・Finding 4 ダミーURL → おと修正 → 再検証全項目合格）を経て、

@@ -91,7 +91,6 @@ jobs:
       env:
         NOTION_API_TOKEN: ${{ secrets.NOTION_API_TOKEN }}
       run: |
-        TODAY="$(TZ=Asia/Tokyo date +%F)"
         python export_public_events.py
         if python master_rdb_freeze_policy.py is-frozen legacy_song_occurrence_generation; then
           echo "[master-rdb] legacy song occurrence generation frozen: skip build_song_occurrences.py"
@@ -99,9 +98,6 @@ jobs:
           python build_song_occurrences.py
         fi
         python export_public_events.py
-        python apply_public_date_predictions.py
-        python apply_public_historical_references.py --today "$TODAY"
-        python apply_public_season_hints.py
         python build_event_song_candidates.py
         python build_x_news_digest_for_oto.py
         if [ -f data/x_news_digest_oto_reviews.json ]; then

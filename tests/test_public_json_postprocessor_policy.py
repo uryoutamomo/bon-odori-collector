@@ -26,12 +26,14 @@ class PublicJsonPostprocessorPolicyTest(unittest.TestCase):
         weekly = (ROOT / ".github" / "workflows" / "weekly_harvest.yml").read_text(
             encoding="utf-8"
         )
-        self.assertIn("python apply_public_date_predictions.py", collect)
-        self.assertIn("python apply_public_historical_references.py", collect)
-        self.assertIn("python apply_public_season_hints.py", collect)
-        self.assertIn("python apply_public_date_predictions.py", weekly)
-        self.assertIn("python apply_public_historical_references.py", weekly)
-        self.assertIn("python apply_public_season_hints.py", weekly)
+        self.assertIn("python export_public_events.py", collect)
+        self.assertNotIn("python apply_public_date_predictions.py", collect)
+        self.assertNotIn("python apply_public_historical_references.py", collect)
+        self.assertNotIn("python apply_public_season_hints.py", collect)
+        self.assertIn("python export_public_events.py", weekly)
+        self.assertNotIn("python apply_public_date_predictions.py", weekly)
+        self.assertNotIn("python apply_public_historical_references.py", weekly)
+        self.assertNotIn("python apply_public_season_hints.py", weekly)
 
     def test_manual_public_json_one_off_scripts_require_confirmation(self):
         scripts = [

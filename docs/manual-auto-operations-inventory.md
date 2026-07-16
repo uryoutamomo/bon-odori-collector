@@ -45,7 +45,7 @@ flowchart TD
 | 手動fallback（Notion書き込みも手動） | `weekly_harvest.yml` | 旧週次workflow。定期実行は廃止済みで、曲/用語候補抽出は日次 `collect.yml` に統合済み。週次コストのNotion反映は `sync_weekly_costs_to_notion=true` の手動実行時だけ。 |
 | 自動継続（要監視） | `bon-odori-site/.github/workflows/sync-public-data.yml` | 継続。同期由来の公開は同workflowが担当し、commitには `[skip deploy]` を付けてdeploy-static-siteの二重deployを止める。手動時は `deploy_after_sync=false` でsyncだけ確認できる。 |
 | 自動継続 | `bon-odori-site/.github/workflows/deploy-static-site.yml` | 継続。通常のsite変更をdeployする。`[skip deploy]` 付きcommitは無視する。 |
-| 自動継続 | Public JSON deterministic postprocessors | `apply_public_date_predictions.py` / `apply_public_historical_references.py` / `apply_public_season_hints.py` は公開JSON生成後処理として自動維持。方針は `docs/public-json-postprocessor-operations.md`。 |
+| 自動継続 | Public JSON deterministic postprocessors | `export_public_events.py` が `apply_public_date_predictions.py` / `apply_public_historical_references.py` / `apply_public_season_hints.py` を内部で呼び、公開JSON生成口を一本化する。方針は `docs/public-json-postprocessor-operations.md`。 |
 | 自動継続（一部手動確認） | Build / export / report scripts | `export_*`, `audit_*`, review queue builders, local RDB snapshotsは生成物として自動/手動利用可。Master RDB派生テーブルを直接書く2本は `APPLY MASTER RDB ONE-OFF` 必須。方針は `docs/build-export-report-operations.md`。 |
 | 手動維持 | X candidate / social graph workflows | 継続して手動。X API課金とNotion同期が絡むため、定期自動化しない。実行時は確認文字列必須。方針は `docs/x-candidate-workflows-operations.md`。 |
 | 手動維持 | Local review console | `run_review_console.py` で必要時だけ起動。`127.0.0.1` 専用。レビュー決定は `data/review_console/decisions.json` に保存し、ステージ適用も `data/review_console/staged/` まで。Master RDB/Notion/公開JSONは直接変更しない。方針は `docs/review-console-operations.md`。 |

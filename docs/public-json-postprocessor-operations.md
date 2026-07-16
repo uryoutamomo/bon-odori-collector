@@ -21,8 +21,9 @@ Keep these automatic:
 | `apply_public_historical_references.py` | attaches historical-reference display fields after export |
 | `apply_public_season_hints.py` | attaches low-confidence season hints after export |
 
-They are called from `collect.yml`, `weekly_harvest.yml`, and local YouTube
-backfill maintenance.
+They are called inside `export_public_events.py`. Scheduled workflows and local
+YouTube backfill maintenance call `export_public_events.py` as the single public
+JSON generation path, rather than running these scripts as a follow-up chain.
 
 They write repo-local public JSON/JS only. They do not write Notion, S3,
 CloudFront, or Master RDB. Public deploy remains guarded separately by the site
@@ -54,7 +55,7 @@ Keep them manual:
 
 ```mermaid
 flowchart TD
-  export[Public export] --> auto[Automatic deterministic postprocessors]
+  export[Public export\nexport_public_events.py] --> auto[Automatic deterministic postprocessors\ncalled in-process]
   auto --> repo[Repo public JSON/JS]
   repo --> guard[Public sync guard]
   guard --> site[Site sync/deploy policy]

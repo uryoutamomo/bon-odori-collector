@@ -17,6 +17,8 @@ import sqlite3
 import unicodedata
 import urllib.error
 import urllib.request
+from datetime import datetime, timedelta, timezone
+from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
 from bon_odori_songs import extract_song_hints
 from event_series_normalization import series_event_name
@@ -63,6 +65,10 @@ DATE_PREDICTION_REPORT = os.environ.get(
 DATE_CANDIDATES_JSON = os.path.join(os.path.dirname(__file__), "data", "event_date_update_candidates.json")
 PUBLIC_EVENT_OVERRIDES_JSON = os.path.join(os.path.dirname(__file__), "data", "public_event_overrides.json")
 PUBLIC_SOURCE = os.environ.get("BON_ODORI_PUBLIC_SOURCE", "master_rdb").strip().lower()
+try:
+    JST = ZoneInfo("Asia/Tokyo")
+except ZoneInfoNotFoundError:
+    JST = timezone(timedelta(hours=9))
 FALLBACK_SUPPRESSED_VENUES = {
     # 例大祭名の由来となる神社。実際の奉納踊り会場は青葉公園（港区立）なので、
     # 未整備会場フォールバックとして「青山熊野神社の盆踊り」を出さない。
@@ -1040,6 +1046,29 @@ def write_public_js(path, events):
         f.write(";\n")
 
 
+def public_export_today():
+    """Return the date used by date-sensitive public postprocessors."""
+    value = os.environ.get("BON_ODORI_PUBLIC_TODAY")
+    if value:
+        parsed = parse_iso_public_date(value)
+        if not parsed:
+            raise ValueError(f"invalid BON_ODORI_PUBLIC_TODAY: {value}")
+        return parsed
+    return datetime.now(timezone.utc).astimezone(JST).date()
+
+
+def parse_iso_public_date(value):
+    if not value:
+        return None
+    try:
+        year, month, day = [int(part) for part in str(value).split("-")]
+        from datetime import date
+
+        return date(year, month, day)
+    except Exception:
+        return None
+
+
 def apply_public_recurrence_metadata(events):
     """Attach public category and recurrence fields to the production export."""
     return enrich_public_events(events, build_rows(events))
@@ -1048,7 +1077,6 @@ def apply_public_recurrence_metadata(events):
 def apply_public_site_postprocessors(events):
     """Apply the public-site-only fields that used to be run as separate steps."""
     from apply_public_historical_references import (
-        DEFAULT_TODAY,
         apply_historical_references,
         load_fixed_date_rules,
     )
@@ -1057,7 +1085,7 @@ def apply_public_site_postprocessors(events):
     events = apply_historical_references(
         events,
         target_year=2026,
-        today=DEFAULT_TODAY,
+        today=public_export_today(),
         fixed_date_rules=load_fixed_date_rules(),
     )["events"]
     events = apply_display_tiers(events)
