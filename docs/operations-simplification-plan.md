@@ -225,8 +225,9 @@ site repo同期・デプロイは含めない。site差分ガードは `--with-g
 `data/public_historical_reference_change_requests.md`。このスクリプト自体は Master RDB を変更しない。
 
 生成されるリクエストは初期状態では `dry_run_only: true` とし、強い一意一致の `occurrence_id` が取れたものだけを
-実行候補にする。曖昧一致・ソースURL欠落・既に同じ `occurrence_id + date_start + date_end + historical_reference`
-が存在するものはレポート側で分ける。
+実行候補にする。補助的に、会場名が完全一致し、かつ候補が一意で一定スコア以上のものも実行候補に含める。
+曖昧一致・ソースURL欠落・既に同じ `occurrence_id + date_start + date_end + historical_reference` が存在するものは
+レポート側で分ける。
 
 ## A ステータス：内田さんGO済み・実運用開始（2026-07-16）
 

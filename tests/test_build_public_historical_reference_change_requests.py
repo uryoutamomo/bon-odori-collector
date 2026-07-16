@@ -108,6 +108,19 @@ class BuildPublicHistoricalReferenceChangeRequestsTest(unittest.TestCase):
             self.assertEqual(payload["requests"], [])
             self.assertEqual(report["summary"]["skipped:already_recorded"], 1)
 
+    def test_accepts_unique_exact_venue_match_when_event_name_differs(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            db_path = Path(tmp) / "master.sqlite"
+            self.make_db(db_path)
+            event = self.public_event()
+            event["name"] = "第10回 中央公園まつり 盆踊り"
+
+            payload, report = build_payload([event], db_path)
+
+            self.assertEqual(report["request_count"], 1)
+            self.assertEqual(report["summary"]["resolution:venue_exact_unique"], 1)
+            self.assertEqual(payload["requests"][0]["occurrence_id"], "occ1")
+
 
 if __name__ == "__main__":
     unittest.main()

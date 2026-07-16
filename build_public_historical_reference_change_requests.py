@@ -15,7 +15,7 @@ from collections import Counter
 from pathlib import Path
 
 from event_report_helpers import find_occurrence_candidates
-from master_db import MASTER_DB, require_existing_db, stable_id
+from master_db import MASTER_DB, normalize_text, require_existing_db, stable_id
 
 
 DATA = Path("data")
@@ -24,6 +24,7 @@ OUT_REQUESTS = DATA / "change_requests" / "public_historical_references_20260716
 OUT_REPORT = DATA / "public_historical_reference_change_requests.md"
 TARGET_YEAR = 2026
 STRONG_MATCH_SCORE = 0.92
+VENUE_EXACT_MATCH_SCORE = 0.75
 
 
 def load_json(path: Path, default):
@@ -94,6 +95,15 @@ def resolve_occurrence(conn, event: dict) -> tuple[str | None, list[dict], str]:
     strong = [candidate for candidate in candidates if candidate["match_score"] >= STRONG_MATCH_SCORE]
     if len(strong) == 1:
         return strong[0]["occurrence_id"], candidates, "strong_unique"
+    venue_key = normalize_text(event.get("venue"))
+    venue_exact = [
+        candidate
+        for candidate in candidates
+        if normalize_text(candidate.get("venue_name")) == venue_key
+        and candidate["match_score"] >= VENUE_EXACT_MATCH_SCORE
+    ]
+    if len(venue_exact) == 1:
+        return venue_exact[0]["occurrence_id"], candidates, "venue_exact_unique"
     if not candidates:
         return None, [], "no_candidate"
     if strong:
