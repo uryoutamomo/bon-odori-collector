@@ -1,6 +1,14 @@
+import importlib.util
 import unittest
+from pathlib import Path
 
-from append_youtube_task_list_to_notion import task_blocks
+
+ROOT = Path(__file__).resolve().parents[1]
+SCRIPT = ROOT / "legacy" / "notion-notes" / "append_youtube_task_list_to_notion.py"
+SPEC = importlib.util.spec_from_file_location("append_youtube_task_list_to_notion", SCRIPT)
+MODULE = importlib.util.module_from_spec(SPEC)
+SPEC.loader.exec_module(MODULE)
+task_blocks = MODULE.task_blocks
 
 
 class AppendYoutubeTaskListToNotionTest(unittest.TestCase):

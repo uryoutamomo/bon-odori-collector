@@ -13,7 +13,7 @@ E第1段で、mainに実在していた済みone-off `apply_*.py` 4本を `legac
 
 ## 現状
 
-main `ee9d02f` 時点:
+分類時点 main `ee9d02f`:
 
 | pattern | count | 所見 |
 |---|---:|---|
@@ -23,9 +23,19 @@ main `ee9d02f` 時点:
 | root `apply_*.py` | 50 | E第1段後の目標値に到達 |
 | `legacy/apply/*.py` | 4 | E第1段で移動済み |
 
+append系実移動後:
+
+| pattern | count | 所見 |
+|---|---:|---|
+| root `*.py` | 265 | append系52本を移動 |
+| root `append_*.py` | 0 | ルートから撤去完了 |
+| `legacy/notion-notes/append_*.py` | 52 | Notion単発メモ追記を集約 |
+
 ## 第2段の移動候補A: Notionメモ追記 append系
 
 原則として `legacy/notion-notes/` へ移動候補。これらは「過去にNotionへ方針や作業記録を追記するための一回きりスクリプト」で、現在の正本はローカルMDまたはdocs側へ寄せる方針と整合する。
+
+2026-07-16 の実移動で、下記52本はすべて `legacy/notion-notes/` へ移動済み。
 
 移動時の注意:
 
@@ -90,7 +100,7 @@ append_youtube_task_list_to_notion.py
 append_youtube_user_confirmation_note.py
 ```
 
-推奨: 第2段実移動では、上記52本を `legacy/notion-notes/` にまとめて移動し、`append_youtube_task_list_to_notion.py` の参照だけ更新する。
+実移動時の参照更新: `append_youtube_task_list_to_notion.py` は `tests/test_notion_worklog_maintenance_policy.py` と `docs/notion-worklog-maintenance-operations.md` の参照を `legacy/notion-notes/append_youtube_task_list_to_notion.py` へ更新済み。
 
 ## 第2段の移動候補B: 済みbuild/移行補助系
 

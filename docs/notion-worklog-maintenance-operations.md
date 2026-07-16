@@ -40,7 +40,7 @@ current-work navigation require:
 | `add_current_work_to_first_look_notion.py` | inserts current-work link into first-look section |
 | `rename_current_work_first_look_link_notion.py` | renames a fixed first-look block |
 | `create_current_location_notion.py` | renames/updates the current-location page and first-look link |
-| `append_youtube_task_list_to_notion.py` | creates a YouTube task-list page and may archive the old page |
+| `legacy/notion-notes/append_youtube_task_list_to_notion.py` | creates a YouTube task-list page and may archive the old page |
 
 ## Automation Boundary
 

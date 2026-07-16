@@ -17,7 +17,7 @@ class NotionWorklogMaintenancePolicyTest(unittest.TestCase):
             "add_current_work_to_first_look_notion.py",
             "rename_current_work_first_look_link_notion.py",
             "create_current_location_notion.py",
-            "append_youtube_task_list_to_notion.py",
+            "legacy/notion-notes/append_youtube_task_list_to_notion.py",
         ]
 
         for filename in scripts:

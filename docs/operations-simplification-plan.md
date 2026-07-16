@@ -172,6 +172,10 @@ Aの設計固定後、one-off済み `apply_*.py` の分類リストを `docs/one
 E第1段の実移動後、append系・build系の分類dry-runを `docs/cleanup-script-classification-20260716.md` に作成した。
 この時点では移動は未実施。第2段の推奨は、まずNotion単発メモ追記の `append_*.py` 52本を `legacy/notion-notes/` へ移動し、build系は現役workflow・RDB/レビュー基盤を避けて別コミットで小さく進める。
 
+## E 第2段 append系 実移動（2026-07-16 おと）
+
+Notion単発メモ追記の `append_*.py` 52本を `legacy/notion-notes/` へ移動した。`append_youtube_task_list_to_notion.py` はテスト・runbook参照を移動先へ更新済み。
+
 ## A ステータス：内田さんGO済み・実運用開始（2026-07-16）
 
 - ことレビュー2巡（初回=Finding 1 historical重複・Finding 4 ダミーURL → おと修正 → 再検証全項目合格）を経て、
