@@ -199,6 +199,14 @@ workflowには入っていない Ph2/pre-cutover 移行補助5本を `legacy/bui
 この段階では3本のpostprocessorスクリプト自体は削除・移動しない。単体テストとロールバック保険として残し、
 次段でRDB側の予測/過去実績/旬ヒント投影へ寄せる。
 
+## C 第2段 公開準備入口の足場（2026-07-16 おと）
+
+Collector側の公開データ準備入口として `scripts/publish_public_data_flow.py` を追加した。
+この入口は `export_public_events.py` → `build_publication_gap_review.py` →
+`review_missing_occurrence_venues.py` → `run_review_console.py --inventory` を順に実行し、
+site repo同期・デプロイは含めない。site差分ガードは `--with-guard` 明示時だけ
+`guard_public_events_sync.py --report-only` として実行する。
+
 ## A ステータス：内田さんGO済み・実運用開始（2026-07-16）
 
 - ことレビュー2巡（初回=Finding 1 historical重複・Finding 4 ダミーURL → おと修正 → 再検証全項目合格）を経て、

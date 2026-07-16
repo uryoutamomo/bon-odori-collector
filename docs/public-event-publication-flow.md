@@ -32,6 +32,17 @@
 
 ## Normal Flow
 
+Collector側の公開データ準備は、次の入口でまとめて実行できる。
+
+```sh
+python3 scripts/publish_public_data_flow.py
+```
+
+これは `export_public_events.py`、`build_publication_gap_review.py`、
+`review_missing_occurrence_venues.py`、`run_review_console.py --inventory` までを実行する。
+site repo同期とデプロイは含めない。site差分ガードまで同時に確認する場合だけ、site repoが読める環境で
+`--with-guard` を付ける。
+
 1. 根拠を収集する。
    - 公式HP、自治体/主催ページ、登録済み公式/主催SNS投稿を優先する。
    - 未登録SNSは `docs/official-social-source-discovery.md` のレビューを通す。
