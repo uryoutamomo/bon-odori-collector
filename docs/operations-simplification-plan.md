@@ -229,6 +229,14 @@ site repo同期・デプロイは含めない。site差分ガードは `--with-g
 曖昧一致・ソースURL欠落・既に同じ `occurrence_id + date_start + date_end + historical_reference` が存在するものは
 レポート側で分ける。
 
+## C 第5段 RDB投影統合の差分ゼロゲート（2026-07-16 おと）
+
+C本丸で公開JSON後処理をRDB由来の投影へ寄せる前に、現行経路の意味内容を固定する比較入口として
+`scripts/compare_public_export_postprocessors.py` を追加した。同一master DB入力で、
+`export_public_events.py` 単独出力と、旧3postprocessor重ねがけ相当の出力を一時ディレクトリ上で比較する。
+このゲートを `status=pass` / `deep_equal=true` に保ったまま、date prediction / historical reference /
+season hint の順にRDB投影側へ移す。詳細は `docs/public-json-rdb-projection-migration-plan.md`。
+
 ## A ステータス：内田さんGO済み・実運用開始（2026-07-16）
 
 - ことレビュー2巡（初回=Finding 1 historical重複・Finding 4 ダミーURL → おと修正 → 再検証全項目合格）を経て、

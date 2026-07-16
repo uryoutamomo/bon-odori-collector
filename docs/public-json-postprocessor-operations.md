@@ -29,6 +29,18 @@ They write repo-local public JSON/JS only. They do not write Notion, S3,
 CloudFront, or Master RDB. Public deploy remains guarded separately by the site
 sync/deploy workflows.
 
+Before changing this chain or moving these fields into the RDB-side public
+projection, run the diff-zero comparison:
+
+```sh
+python3 scripts/compare_public_export_postprocessors.py --today 2026-07-16
+```
+
+The comparison writes only to temporary directories and reports whether the
+current export and the legacy overlay produce identical public event JSON.
+In a temporary worktree without `data/bon_odori_master.sqlite`, pass
+`--master-db /path/to/bon_odori_master.sqlite`.
+
 ## Manual Public JSON One-Offs
 
 These are not scheduled. Public JSON writes require:
