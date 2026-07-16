@@ -217,6 +217,17 @@ site repo同期・デプロイは含めない。site差分ガードは `--with-g
 目的は、C本体の「RDB内予測→読み出し専用export」へ進む前に、欠けている投影元・フィールド差分・月ヒント差分を
 機械的に洗い出すこと。`blocking_row_count = 0` が次段切替検討の前提になる。
 
+## C 第4段 historical_reference のRDB戻し候補生成（2026-07-16 おと）
+
+`build_public_historical_reference_change_requests.py` を追加し、公開JSONに残っている
+`historical_reference` から A の `apply_change_requests.py` 用JSONを生成する。出力は
+`data/change_requests/public_historical_references_20260716.json` と
+`data/public_historical_reference_change_requests.md`。このスクリプト自体は Master RDB を変更しない。
+
+生成されるリクエストは初期状態では `dry_run_only: true` とし、強い一意一致の `occurrence_id` が取れたものだけを
+実行候補にする。曖昧一致・ソースURL欠落・既に同じ `occurrence_id + date_start + date_end + historical_reference`
+が存在するものはレポート側で分ける。
+
 ## A ステータス：内田さんGO済み・実運用開始（2026-07-16）
 
 - ことレビュー2巡（初回=Finding 1 historical重複・Finding 4 ダミーURL → おと修正 → 再検証全項目合格）を経て、

@@ -1,0 +1,242 @@
+#!/usr/bin/env python3
+"""Build dry-run change requests from public historical-reference fields.
+
+This is a C-phase bridge from legacy public JSON postprocessor output back to
+Master RDB. It only writes a JSON request file and a Markdown report; the
+Master RDB is changed later through apply_change_requests.py.
+"""
+
+from __future__ import annotations
+
+import argparse
+import json
+import sqlite3
+from collections import Counter
+from pathlib import Path
+
+from event_report_helpers import find_occurrence_candidates
+from master_db import MASTER_DB, require_existing_db, stable_id
+
+
+DATA = Path("data")
+PUBLIC_EVENTS = DATA / "public" / "events_public.json"
+OUT_REQUESTS = DATA / "change_requests" / "public_historical_references_20260716.json"
+OUT_REPORT = DATA / "public_historical_reference_change_requests.md"
+TARGET_YEAR = 2026
+STRONG_MATCH_SCORE = 0.92
+
+
+def load_json(path: Path, default):
+    path = Path(path)
+    if not path.exists():
+        return default
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def write_json(path: Path, payload) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+def candidate_source(event: dict) -> dict | None:
+    for source in event.get("source_urls") or []:
+        url = source.get("url")
+        if not url:
+            continue
+        return {
+            "platform": "web",
+            "kind": "historical_occurrence_source",
+            "url": url,
+            "title": source.get("label") or event.get("name") or url,
+            "source_key": url,
+        }
+    return None
+
+
+def historical_dates(event: dict) -> tuple[str | None, str | None, int | None]:
+    reference = event.get("historical_reference") or {}
+    dates = reference.get("last_seen_dates") or event.get("last_seen_dates") or []
+    dates = [value for value in dates if value]
+    if not dates:
+        return None, None, None
+    start = dates[0]
+    end = dates[-1] if dates[-1] != start else ""
+    year = reference.get("last_seen_year") or event.get("last_seen_year")
+    if not year and len(start) >= 4 and start[:4].isdigit():
+        year = int(start[:4])
+    return start, end, int(year) if year else None
+
+
+def existing_historical_date(conn, occurrence_id: str, date_start: str, date_end: str) -> bool:
+    normalized_end = date_end or date_start
+    row = conn.execute(
+        """
+        SELECT 1
+        FROM occurrence_dates
+        WHERE occurrence_id = ?
+          AND date_type = 'historical_reference'
+          AND date_start = ?
+          AND COALESCE(date_end, date_start) = ?
+        LIMIT 1
+        """,
+        (occurrence_id, date_start, normalized_end),
+    ).fetchone()
+    return bool(row)
+
+
+def resolve_occurrence(conn, event: dict) -> tuple[str | None, list[dict], str]:
+    candidates = find_occurrence_candidates(
+        conn,
+        event.get("name"),
+        event.get("venue"),
+        TARGET_YEAR,
+    )
+    strong = [candidate for candidate in candidates if candidate["match_score"] >= STRONG_MATCH_SCORE]
+    if len(strong) == 1:
+        return strong[0]["occurrence_id"], candidates, "strong_unique"
+    if not candidates:
+        return None, [], "no_candidate"
+    if strong:
+        return None, candidates, "ambiguous_strong"
+    return None, candidates, "weak_candidate"
+
+
+def build_request(event: dict, occurrence_id: str | None, source: dict, date_start: str, date_end: str, year: int) -> dict:
+    request = {
+        "request_id": stable_id("chrq", event.get("name"), event.get("venue"), date_start, date_end),
+        "change_type": "add_historical_reference",
+        "event_year": TARGET_YEAR,
+        "historical_year": year,
+        "historical_date": date_start,
+        "historical_date_end": date_end,
+        "confidence": (event.get("historical_reference") or {}).get("confidence") or "medium",
+        "source": source,
+        "basis": "公開JSONの historical_reference からRDB投影元へ戻す候補。現在年の開催確定には使わない。",
+        "note": f"public historical_reference import candidate: {event.get('historical_reference_label') or event.get('public_note') or ''}",
+        "dry_run_only": True,
+    }
+    if occurrence_id:
+        request["occurrence_id"] = occurrence_id
+    else:
+        request["match_hint"] = {
+            "event_name_hint": event.get("name"),
+            "venue_name_hint": event.get("venue"),
+            "event_year": TARGET_YEAR,
+        }
+    return request
+
+
+def build_payload(public_events: list[dict], master_db: Path) -> tuple[dict, dict]:
+    require_existing_db(master_db)
+    requests = []
+    issues = []
+    counters = Counter()
+    with sqlite3.connect(master_db) as conn:
+        conn.row_factory = sqlite3.Row
+        for event in public_events:
+            if not event.get("historical_reference"):
+                counters["skipped:no_historical_reference"] += 1
+                continue
+            date_start, date_end, historical_year = historical_dates(event)
+            if not date_start or not historical_year:
+                counters["skipped:missing_historical_date"] += 1
+                issues.append({"issue_type": "missing_historical_date", "name": event.get("name"), "venue": event.get("venue")})
+                continue
+            if historical_year >= TARGET_YEAR:
+                counters["skipped:not_historical_year"] += 1
+                issues.append({"issue_type": "not_historical_year", "name": event.get("name"), "venue": event.get("venue"), "historical_year": historical_year})
+                continue
+            source = candidate_source(event)
+            if not source:
+                counters["skipped:missing_source_url"] += 1
+                issues.append({"issue_type": "missing_source_url", "name": event.get("name"), "venue": event.get("venue")})
+                continue
+            occurrence_id, candidates, resolution = resolve_occurrence(conn, event)
+            counters[f"resolution:{resolution}"] += 1
+            request = build_request(event, occurrence_id, source, date_start, date_end or "", historical_year)
+            if occurrence_id and existing_historical_date(conn, occurrence_id, date_start, date_end or ""):
+                counters["skipped:already_recorded"] += 1
+                continue
+            if not occurrence_id:
+                issues.append(
+                    {
+                        "issue_type": resolution,
+                        "name": event.get("name"),
+                        "venue": event.get("venue"),
+                        "candidate_count": len(candidates),
+                        "candidates": candidates[:5],
+                        "request_id": request["request_id"],
+                    }
+                )
+                counters["skipped:unresolved_occurrence"] += 1
+                continue
+            requests.append(request)
+            counters["requests"] += 1
+
+    payload = {
+        "request_type": "rdb_change_requests",
+        "generated_by": "build_public_historical_reference_change_requests.py",
+        "scope": "public_historical_reference_backfill_candidates",
+        "target_year": TARGET_YEAR,
+        "requests": requests,
+    }
+    report = {
+        "generated_by": payload["generated_by"],
+        "target_year": TARGET_YEAR,
+        "public_event_count": len(public_events),
+        "request_count": len(requests),
+        "issue_count": len(issues),
+        "summary": dict(sorted(counters.items())),
+        "issues": issues[:200],
+    }
+    return payload, report
+
+
+def render_markdown(report: dict) -> str:
+    lines = [
+        "# Public Historical Reference Change Requests",
+        "",
+        f"- generated_by: {report['generated_by']}",
+        f"- target_year: {report['target_year']}",
+        f"- public_event_count: {report['public_event_count']}",
+        f"- request_count: {report['request_count']}",
+        f"- issue_count: {report['issue_count']}",
+        "",
+        "## Summary",
+        "",
+    ]
+    for key, value in report["summary"].items():
+        lines.append(f"- {key}: {value}")
+    lines.extend(["", "## Issues", ""])
+    if not report["issues"]:
+        lines.append("- none")
+    for issue in report["issues"][:50]:
+        lines.append(
+            f"- {issue['issue_type']}: {issue.get('name')} / {issue.get('venue')} "
+            f"(candidates={issue.get('candidate_count', '-')})"
+        )
+    lines.append("")
+    return "\n".join(lines)
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--public-events", default=str(PUBLIC_EVENTS))
+    parser.add_argument("--master-db", default=str(MASTER_DB))
+    parser.add_argument("--out-requests", default=str(OUT_REQUESTS))
+    parser.add_argument("--out-report", default=str(OUT_REPORT))
+    args = parser.parse_args()
+
+    events = load_json(Path(args.public_events), [])
+    payload, report = build_payload(events, Path(args.master_db))
+    write_json(Path(args.out_requests), payload)
+    Path(args.out_report).write_text(render_markdown(report), encoding="utf-8")
+    print(
+        "public historical reference change requests: "
+        f"requests={report['request_count']} issues={report['issue_count']} "
+        f"out={args.out_requests}"
+    )
+
+
+if __name__ == "__main__":
+    main()
