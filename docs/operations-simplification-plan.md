@@ -207,6 +207,16 @@ Collector側の公開データ準備入口として `scripts/publish_public_data
 site repo同期・デプロイは含めない。site差分ガードは `--with-guard` 明示時だけ
 `guard_public_events_sync.py --report-only` として実行する。
 
+## C 第3段 RDB投影元比較レポート（2026-07-16 おと）
+
+`compare_public_projection_sources.py` を追加し、公開JSONの `date_prediction` / `historical_reference` /
+`season_hint` が Master RDB 側の `predicted_occurrence_dates` / `occurrence_dates` /
+`event_series.annual_months_json` などから再現可能かを読み取り専用で比較する。出力は
+`data/public_projection_source_compare.json` と `.md`。この段階では公開JSON生成ロジックは切り替えない。
+
+目的は、C本体の「RDB内予測→読み出し専用export」へ進む前に、欠けている投影元・フィールド差分・月ヒント差分を
+機械的に洗い出すこと。`blocking_row_count = 0` が次段切替検討の前提になる。
+
 ## A ステータス：内田さんGO済み・実運用開始（2026-07-16）
 
 - ことレビュー2巡（初回=Finding 1 historical重複・Finding 4 ダミーURL → おと修正 → 再検証全項目合格）を経て、
