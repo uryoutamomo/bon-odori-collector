@@ -238,3 +238,21 @@ site repo同期・デプロイは含めない。site差分ガードは `--with-g
 - 初の実 apply は次に来る実案件（公式発表・チラシ等）で実施。当面は従来どおり
   dry-run → ことレビュー → apply → こと再検証 を踏み、数件の実績が溜まったらレビュー粒度の緩和を検討する。
 - 残作業: A成果物一式の main 反映（ブランチ足場整理と合わせ・おと）。次項目=E（one-off 分類→legacy/ 移動）。
+
+## C 進捗と切替前の作業量（2026-07-16 ことレビュー・こと追記）
+
+第1〜4段のことレビューはすべて合格。実データ差分ゼロ（第1段・209イベント全件一致）はこと側で実証済み。
+
+**C切替（export を RDB 読み出し専用投影にする）の前提 backlog＝compare の blocking 約88件**（日付境界で日々変動）：
+
+- `weak_candidate` 約38件：イベント名+会場名の fuzzy 突合が 0.92 未満。**根治策＝export がビルド時に
+  「公開イベント→occurrence_id」の内部専用サイドカー（`data/` 直下・`data/public/` には置かない＝非配信）を
+  出力し、compare/builder を ID join 化する**（C本丸設計に組み込む・ことレビュー時提案）
+- `no_candidate` 約12件：RDB に 2026 occurrence 自体が無い。occurrence 新設が必要＝A の v2 変更種別
+  `create_occurrence` 候補、または B 受信箱の案件
+- 残り：ソースURL欠落・historical日付欠落など＝個別レビュー
+
+**builder 出力の昇格手順（確定）**：builder は常に `dry_run_only: true` を吐く純粋生成器のまま固定
+（--allow-apply-output は足さない）。実 apply へは「ことレビュー → 承認分だけ `*_reviewed.json` に複製し
+フラグ除去（request_id 維持＝A 側 dedupe が冪等性を担保）→ 内田さんGO → apply」の人手ステップを挟む。
+件数が増えたら承認 request_id リストを受ける promote スクリプトを別途検討。
