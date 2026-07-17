@@ -121,6 +121,36 @@ class MasterDbS3ArtifactTest(unittest.TestCase):
             self.assertEqual(file_sha256(target_db), checksum)
             self.assertEqual(json.loads(target_manifest.read_text(encoding="utf-8"))["database_checksum"], checksum)
 
+    def test_status_returns_remote_manifest_summary(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            db = Path(tmp) / "master.sqlite"
+            make_db(db)
+            client = FakeS3()
+            client.objects[("bucket", "master-rdb/latest/bon_odori_master.sqlite")] = db.read_bytes()
+            client.objects[("bucket", "master-rdb/latest/bon_odori_master_manifest.json")] = json.dumps(
+                {
+                    "database_checksum": "remote-sha",
+                    "generated_by": "build_master_rdb.py",
+                    "table_counts": {"occurrence_dates": 290},
+                    "artifact": {
+                        "published_at": "2026-07-13T01:58:12+00:00",
+                        "snapshot_id": "20260713T015812Z",
+                    },
+                },
+                ensure_ascii=False,
+            ).encode("utf-8")
+
+            result = artifact.status(
+                Namespace(bucket="bucket", prefix="master-rdb", db=db),
+                client=client,
+            )
+
+            self.assertEqual(result["remote_checksum"], "remote-sha")
+            self.assertEqual(result["remote_published_at"], "2026-07-13T01:58:12+00:00")
+            self.assertEqual(result["remote_snapshot_id"], "20260713T015812Z")
+            self.assertEqual(result["remote_generated_by"], "build_master_rdb.py")
+            self.assertEqual(result["remote_table_counts"], {"occurrence_dates": 290})
+
 
 if __name__ == "__main__":
     unittest.main()
