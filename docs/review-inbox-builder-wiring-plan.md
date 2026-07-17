@@ -2,7 +2,7 @@
 
 作成日: 2026-07-17 JST  
 署名: おと（Codex）  
-ステータス: ことレビュー待ち（B本丸の実装前plan）
+ステータス: B0a完了、B0bを小PR単位で実装中
 
 ## 目的と境界
 
@@ -113,8 +113,15 @@ PR #36後に唯一残った「盆ダンスフェスティバル2023 / 白金児�
 2. schema v2、decision API、pending以外を再生成で戻さないテストを追加する。
 3. source adapterの共通interfaceを作る。adapterは既存JSONを入力して正規化itemを返す純粋変換とする。
 4. legacy↔inboxの件数・stable key・payload hashを比較するparity reportを追加する。
+   reportには曲・用語系を含む入力ファイルごとのSHA-256も記録し、出力差が入力系譜の差か実装差かを判別できるようにする。
 5. review consoleの決定をinboxへ戻し、route別staged JSONを作る。consoleから直接applyしない。
 6. `review_inbox.py` のexportを日次入口の最後で実行できるようにするが、legacy表示はまだ残す。
+
+B0aは2026-07-17に完了した。S3 latestとローカル正本をCAS publishで
+`75a3226bc86cf571201d43eb0ae2c56f61aff669a3cb8b82dd381f9f6b46a068`へ揃え、
+こと独立再検証まで合格した。B0bの最初の小PRはschema v2・明示migration関数・decision API・
+再生成後のdecision保持テストだけを対象にする。mergeだけでは既存正本DBを自動migrationせず、
+実DBへのmigration applyはbackup/audit/CASと内田さんGOが揃うまで実行しない。
 
 ### B1: 未来の開催判断
 
