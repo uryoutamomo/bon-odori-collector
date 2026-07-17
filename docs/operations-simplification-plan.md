@@ -278,6 +278,15 @@ JSON補完が残る間はexport時に警告し、C本丸とB配線の完了時�
 混在している。Cで推測の2026 occurrenceを新設せず、B本丸のreview inboxへ送る既知deferredとする。
 名称の年号サフィックスは `feedback_event-name-no-year-suffix` 系の既知課題としてDの語彙・名称整理材料にも含める。
 
+## B 本丸 builder配線plan（2026-07-17 おと）
+
+C系は blocking 88→1（白金deferredのみ）、historical 87行＋予測1行のRDB吸収、公開export不変まで確認して
+クローズした。Bでは `review_inbox_items` を新規判断待ちの唯一の発生先へ段階的に切り替える。
+
+ソース切替順、inbox lifecycle、白金deferredの扱い、旧キュー閉鎖条件、DynamoDBの境界、PR単位のゲートは
+`docs/review-inbox-builder-wiring-plan.md` を正本とする。実装は B0（基盤）→ B1（未来系）→ B2（rare signal）→
+B3（YouTube）→ B4（曲・用語）→ B5（writer停止・既定画面切替）の順で、1作業単位1PR直列に進める。
+
 ## A ステータス：内田さんGO済み・実運用開始（2026-07-16）
 
 - ことレビュー2巡（初回=Finding 1 historical重複・Finding 4 ダミーURL → おと修正 → 再検証全項目合格）を経て、
