@@ -182,6 +182,40 @@ class ApplyChangeRequestsTests(unittest.TestCase):
         self.assertEqual(dates[0][0], "legacy_date_id")
         self.assertTrue(dates[0][1])
 
+    def test_historical_reference_note_does_not_mutate_occurrence_detail(self):
+        self.conn.execute(
+            "UPDATE event_occurrences SET detail = '公開用の説明' WHERE occurrence_id = 'occ_1'"
+        )
+        self.conn.commit()
+        payload = {
+            "request_type": "rdb_change_requests",
+            "requests": [
+                {
+                    "request_id": "historical_with_internal_note",
+                    "change_type": "add_historical_reference",
+                    "occurrence_id": "occ_1",
+                    "event_year": 2026,
+                    "historical_year": 2025,
+                    "historical_date": "2025-07-21",
+                    "note": "public historical_reference import candidate: internal only",
+                    "source": {
+                        "url": "https://example.com/2025-result",
+                        "kind": "historical_occurrence_page",
+                    },
+                }
+            ],
+        }
+
+        applied, issues = apply_payload(self.conn, payload, "2026-07-17T00:00:00+00:00")
+        self.conn.commit()
+
+        self.assertEqual(issues, [])
+        self.assertEqual(applied["requests_applied"][0]["changed_fields"], [])
+        detail = self.conn.execute(
+            "SELECT detail FROM event_occurrences WHERE occurrence_id = 'occ_1'"
+        ).fetchone()[0]
+        self.assertEqual(detail, "公開用の説明")
+
     def test_apply_refuses_dry_run_only_requests(self):
         payload = {
             "request_type": "rdb_change_requests",

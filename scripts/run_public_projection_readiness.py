@@ -174,6 +174,39 @@ def promote_historical_requests(
     )
 
 
+def write_noop_historical_outputs(
+    requests: Path,
+    reviewed_json: Path,
+    reviewed_md: Path,
+    dry_run_json: Path,
+    dry_run_md: Path,
+) -> None:
+    payload = load_json(requests)
+    reviewed_payload = dict(payload)
+    reviewed_payload.update(
+        {
+            "reviewed_by": "not_applicable (no requests)",
+            "reviewed_at": None,
+            "review_note": "No historical-reference requests were generated; promote and dry-run were skipped.",
+        }
+    )
+    write_json(reviewed_json, reviewed_payload)
+    reviewed_md.write_text(
+        "# Reviewed historical-reference requests\n\n- request_count: 0\n- status: skipped_no_requests\n",
+        encoding="utf-8",
+    )
+    dry_run_payload = {
+        "mode": "skipped_no_requests",
+        "applied": {"requests_applied": [], "requests_unresolved": []},
+        "summary": {"issues_by_severity": {}, "audit_issues_by_severity": {}},
+    }
+    write_json(dry_run_json, dry_run_payload)
+    dry_run_md.write_text(
+        "# Historical-reference dry-run\n\n- request_count: 0\n- status: skipped_no_requests\n",
+        encoding="utf-8",
+    )
+
+
 def build_mismatch_review(
     python: str,
     compare_report: Path,
@@ -294,12 +327,23 @@ def run_readiness(args: argparse.Namespace) -> dict[str, Any]:
 
         reviewed_requests_json = out_dir / "public_historical_references_reviewed.json"
         reviewed_requests_md = out_dir / "public_historical_references_reviewed.md"
-        promote_historical_requests(args.python, requests_json, reviewed_requests_json, reviewed_requests_md, args.quiet)
-
         dry_run_db = out_dir / "historical_reference_dry_run.sqlite"
         dry_run_json = out_dir / "public_historical_references_dry_run_apply_report.json"
         dry_run_md = out_dir / "public_historical_references_dry_run_apply_report.md"
-        dry_run_historical_requests(args.python, requests_json, dry_run_db, dry_run_json, dry_run_md, args.quiet)
+        request_count = len((load_json(requests_json).get("requests") or []))
+        if request_count:
+            promote_historical_requests(args.python, requests_json, reviewed_requests_json, reviewed_requests_md, args.quiet)
+            dry_run_historical_requests(args.python, requests_json, dry_run_db, dry_run_json, dry_run_md, args.quiet)
+            after_master_db = dry_run_db
+        else:
+            write_noop_historical_outputs(
+                requests_json,
+                reviewed_requests_json,
+                reviewed_requests_md,
+                dry_run_json,
+                dry_run_md,
+            )
+            after_master_db = MASTER_DB
 
         after_json = out_dir / "public_projection_after_historical_dry_run.json"
         after_md = out_dir / "public_projection_after_historical_dry_run.md"
@@ -307,7 +351,7 @@ def run_readiness(args: argparse.Namespace) -> dict[str, Any]:
             args.python,
             public_events,
             source_map,
-            dry_run_db,
+            after_master_db,
             after_json,
             after_md,
             args.target_year,

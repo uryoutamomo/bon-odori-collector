@@ -279,6 +279,10 @@ def apply_confirm_current_year_date(conn, request, occurrence_id, now):
 
 
 def apply_add_historical_reference(conn, request, occurrence_id, now):
+    occurrence_before = conn.execute(
+        "SELECT * FROM event_occurrences WHERE occurrence_id = ?",
+        (occurrence_id,),
+    ).fetchone()
     evidence_id = _upsert_source_evidence(conn, request, now, detected_event_date=request.get("historical_date"))
     link_occurrence_evidence(
         conn,
@@ -288,7 +292,6 @@ def apply_add_historical_reference(conn, request, occurrence_id, now):
         confidence=float(request.get("link_confidence") or 0.85),
         notes=request.get("note") or "過去実績の参考根拠。未来開催日の確定根拠にはしない。",
     )
-    changed_fields = _append_detail(conn, occurrence_id, request.get("note"), now)
     date_inserted = False
     if request.get("historical_date"):
         date_end = request.get("historical_date_end") or request["historical_date"]
@@ -333,14 +336,28 @@ def apply_add_historical_reference(conn, request, occurrence_id, now):
             ),
         )
         date_inserted = True
+    occurrence_after = conn.execute(
+        "SELECT * FROM event_occurrences WHERE occurrence_id = ?",
+        (occurrence_id,),
+    ).fetchone()
+    issues = []
+    if occurrence_after != occurrence_before:
+        issues.append(
+            {
+                "severity": "high",
+                "issue_type": "historical_reference_mutated_occurrence",
+                "request_id": request["request_id"],
+                "occurrence_id": occurrence_id,
+            }
+        )
     return {
         "request_id": request["request_id"],
         "change_type": request["change_type"],
         "occurrence_id": occurrence_id,
         "evidence_id": evidence_id,
-        "changed_fields": changed_fields,
+        "changed_fields": [],
         "historical_date_inserted": date_inserted,
-    }, []
+    }, issues
 
 
 def apply_update_venue(conn, request, occurrence_id, now):
