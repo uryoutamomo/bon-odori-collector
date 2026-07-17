@@ -49,6 +49,34 @@ class RunPublicProjectionReadinessTest(unittest.TestCase):
         self.assertEqual(command[command.index("--reviewed-by") + 1], "readiness機械検査（人レビュー未了）")
         self.assertIn("実applyには使用しない", command[command.index("--review-note") + 1])
 
+    def test_write_noop_historical_outputs_supports_empty_requests(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp = Path(tmp)
+            requests = tmp / "requests.json"
+            reviewed_json = tmp / "reviewed.json"
+            reviewed_md = tmp / "reviewed.md"
+            dry_run_json = tmp / "dry_run.json"
+            dry_run_md = tmp / "dry_run.md"
+            requests.write_text(
+                json.dumps({"request_type": "rdb_change_requests", "requests": []}),
+                encoding="utf-8",
+            )
+
+            MODULE.write_noop_historical_outputs(
+                requests,
+                reviewed_json,
+                reviewed_md,
+                dry_run_json,
+                dry_run_md,
+            )
+
+            reviewed = json.loads(reviewed_json.read_text(encoding="utf-8"))
+            dry_run = json.loads(dry_run_json.read_text(encoding="utf-8"))
+        self.assertEqual(reviewed["requests"], [])
+        self.assertEqual(reviewed["reviewed_by"], "not_applicable (no requests)")
+        self.assertEqual(dry_run["mode"], "skipped_no_requests")
+        self.assertEqual(dry_run["applied"]["requests_applied"], [])
+
     def test_summarize_reports_before_and_after_counts(self):
         with tempfile.TemporaryDirectory() as tmp:
             tmp = Path(tmp)
