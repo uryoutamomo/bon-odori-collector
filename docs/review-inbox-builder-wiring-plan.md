@@ -61,6 +61,13 @@ B0の最初に、S3 latestを正本とする次の単一writer契約を入れる
 B0着手前にローカル正本とS3 latestのSHAを比較し、差があれば内田さんGOのもとでどちらを起点にするか決める。
 この整合が取れるまでは、workflowへRDB dual-writeを入れない。
 
+初回照合では、2026-07-17にローカル正本へ反映した3作業（historical 83件、東本願寺の予測1件、
+世田谷historical 4件）がS3 latestへ未publishの可能性を前提にする。ローカル正本SHA
+`75a3226bc86cf571201d43eb0ae2c56f61aff669a3cb8b82dd381f9f6b46a068` とS3 latestを比較し、
+差があれば内容差分を確認後、内田さんGOを受けて手動publishを1回だけ行い起点を揃える。
+本日夕方の定時collectが古いS3 DBを取得しても、3作業は公開export不変を実証済みなので公開内容は変わらない。
+ただしprojection compareやinbox移行baselineの件数は古い値になるため、B0aの照合前にそのrunの数値を採用しない。
+
 ## Inbox v2 契約
 
 既存の `inbox_id = stable_id(kind, source_id, source_key)` を維持する。builder再実行で同じ判断対象が
@@ -73,6 +80,10 @@ B0着手前にローカル正本とS3 latestのSHAを比較し、差があれば
 - `decided_by`, `decided_at`, `closed_at`
 - `decision_route`: `change_request` / `domain_stage` / `research_followup` / `no_apply`
 - `source_payload_hash`, `last_seen_at`
+
+`time_scope` の3値はBローカルの表示優先・キュー振り分け専用であり、開催状態を表す新しい正本語彙ではない。
+Dの語彙棚卸しで `current_event_state × date_certainty_tier` との整合を再確認し、公開状態の第3軸へ昇格させない。
+既存の状態語彙を減らす工程で6種類目を増やさないことをschema・export双方の受け入れ条件にする。
 
 未知の自由記述をactionにしない。初期kindと主なrouteは次に固定する。
 
