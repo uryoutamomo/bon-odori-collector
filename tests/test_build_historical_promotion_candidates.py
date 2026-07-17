@@ -97,6 +97,25 @@ class BuildHistoricalPromotionCandidatesTest(unittest.TestCase):
         )
         conn.close()
 
+    def test_candidate_less_manual_predictions_are_unconditionally_preserved(self):
+        candidate_ids = {"known_candidate"}
+
+        self.assertTrue(
+            builder.should_restore_manual_prediction(
+                {"historical_candidate_id": None}, candidate_ids
+            )
+        )
+        self.assertTrue(
+            builder.should_restore_manual_prediction(
+                {"historical_candidate_id": ""}, candidate_ids
+            )
+        )
+        self.assertFalse(
+            builder.should_restore_manual_prediction(
+                {"historical_candidate_id": "missing_candidate"}, candidate_ids
+            )
+        )
+
     def test_clear_predicted_date_sync_jobs_removes_legacy_jobs_only(self):
         conn = sqlite3.connect(":memory:")
         conn.executescript(

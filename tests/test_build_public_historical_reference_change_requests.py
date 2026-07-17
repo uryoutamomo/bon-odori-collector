@@ -21,7 +21,8 @@ class BuildPublicHistoricalReferenceChangeRequestsTest(unittest.TestCase):
                 CREATE TABLE event_series (
                   series_id TEXT PRIMARY KEY,
                   canonical_name TEXT,
-                  normalized_name TEXT
+                  normalized_name TEXT,
+                  source_url TEXT
                 );
                 CREATE TABLE event_occurrences (
                   occurrence_id TEXT PRIMARY KEY,
@@ -34,7 +35,8 @@ class BuildPublicHistoricalReferenceChangeRequestsTest(unittest.TestCase):
                   date_status TEXT,
                   lifecycle_status TEXT,
                   confidence TEXT,
-                  source_kind TEXT
+                  source_kind TEXT,
+                  source_url TEXT
                 );
                 CREATE TABLE occurrence_dates (
                   occurrence_date_id TEXT PRIMARY KEY,
@@ -43,6 +45,16 @@ class BuildPublicHistoricalReferenceChangeRequestsTest(unittest.TestCase):
                   date_end TEXT,
                   date_type TEXT
                 );
+                CREATE TABLE evidence_items (
+                  evidence_id TEXT PRIMARY KEY,
+                  title TEXT,
+                  url TEXT
+                );
+                CREATE TABLE occurrence_evidence_links (
+                  occurrence_id TEXT,
+                  evidence_id TEXT,
+                  confidence REAL
+                );
                 """
             )
             conn.execute(
@@ -50,12 +62,12 @@ class BuildPublicHistoricalReferenceChangeRequestsTest(unittest.TestCase):
                 ("ven1", "中央公園", normalize_text("中央公園"), "active"),
             )
             conn.execute(
-                "INSERT INTO event_series VALUES (?, ?, ?)",
-                ("ser1", "中央公園盆踊り", normalize_text("中央公園盆踊り")),
+                "INSERT INTO event_series VALUES (?, ?, ?, ?)",
+                ("ser1", "中央公園盆踊り", normalize_text("中央公園盆踊り"), None),
             )
             conn.execute(
-                "INSERT INTO event_occurrences VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
-                ("occ1", "ser1", 2026, "中央公園盆踊り", "ven1", None, None, "unknown", "draft", "medium", "public"),
+                "INSERT INTO event_occurrences VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                ("occ1", "ser1", 2026, "中央公園盆踊り", "ven1", None, None, "unknown", "draft", "medium", "public", None),
             )
             if existing_historical:
                 conn.execute(
@@ -140,6 +152,27 @@ class BuildPublicHistoricalReferenceChangeRequestsTest(unittest.TestCase):
             self.assertEqual(report["request_count"], 1)
             self.assertEqual(report["summary"]["resolution:source_map"], 1)
             self.assertEqual(payload["requests"][0]["occurrence_id"], "occ1")
+
+    def test_falls_back_to_rdb_occurrence_source_with_provenance(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            db_path = Path(tmp) / "master.sqlite"
+            self.make_db(db_path)
+            with sqlite3.connect(db_path) as conn:
+                conn.execute(
+                    "UPDATE event_occurrences SET source_url = ? WHERE occurrence_id = 'occ1'",
+                    ("https://example.test/rdb-occurrence",),
+                )
+            event = self.public_event()
+            event["source_urls"] = []
+
+            payload, report = build_payload([event], db_path)
+
+            self.assertEqual(report["request_count"], 1)
+            self.assertEqual(report["summary"]["source:rdb_occurrence"], 1)
+            source = payload["requests"][0]["source"]
+            self.assertEqual(source["url"], "https://example.test/rdb-occurrence")
+            self.assertEqual(source["kind"], "historical_occurrence_rdb_occurrence")
+            self.assertEqual(source["provenance"], "rdb_occurrence")
 
 
 if __name__ == "__main__":

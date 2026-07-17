@@ -69,6 +69,59 @@ def candidate_source(event: dict) -> dict | None:
     return None
 
 
+def candidate_source_from_rdb(conn, occurrence_id: str) -> dict | None:
+    row = conn.execute(
+        """
+        SELECT
+          occurrence.source_url AS occurrence_source_url,
+          series.source_url AS series_source_url,
+          occurrence.display_name AS occurrence_name,
+          series.canonical_name AS series_name
+        FROM event_occurrences AS occurrence
+        JOIN event_series AS series ON series.series_id = occurrence.series_id
+        WHERE occurrence.occurrence_id = ?
+        """,
+        (occurrence_id,),
+    ).fetchone()
+    if not row:
+        return None
+    for provenance, url, title in (
+        ("rdb_occurrence", row["occurrence_source_url"], row["occurrence_name"]),
+        ("rdb_series", row["series_source_url"], row["series_name"]),
+    ):
+        if url:
+            return {
+                "platform": "web",
+                "kind": f"historical_occurrence_{provenance}",
+                "url": url,
+                "title": title or url,
+                "source_key": url,
+                "provenance": provenance,
+            }
+    evidence = conn.execute(
+        """
+        SELECT evidence.url, evidence.title
+        FROM occurrence_evidence_links AS link
+        JOIN evidence_items AS evidence ON evidence.evidence_id = link.evidence_id
+        WHERE link.occurrence_id = ?
+          AND COALESCE(evidence.url, '') <> ''
+        ORDER BY link.confidence DESC, evidence.evidence_id
+        LIMIT 1
+        """,
+        (occurrence_id,),
+    ).fetchone()
+    if not evidence:
+        return None
+    return {
+        "platform": "web",
+        "kind": "historical_occurrence_rdb_evidence",
+        "url": evidence["url"],
+        "title": evidence["title"] or row["occurrence_name"] or evidence["url"],
+        "source_key": evidence["url"],
+        "provenance": "rdb_evidence",
+    }
+
+
 def historical_dates(event: dict) -> tuple[str | None, str | None, int | None]:
     reference = event.get("historical_reference") or {}
     dates = reference.get("last_seen_dates") or event.get("last_seen_dates") or []
@@ -183,11 +236,6 @@ def build_payload(public_events: list[dict], master_db: Path, source_map: dict[s
                 counters["skipped:not_historical_year"] += 1
                 issues.append({"issue_type": "not_historical_year", "name": event.get("name"), "venue": event.get("venue"), "historical_year": historical_year})
                 continue
-            source = candidate_source(event)
-            if not source:
-                counters["skipped:missing_source_url"] += 1
-                issues.append({"issue_type": "missing_source_url", "name": event.get("name"), "venue": event.get("venue")})
-                continue
             sidecar = source_map.get(public_event_sidecar_key(event)) or {}
             occurrence_id, candidates, resolution = resolve_occurrence(
                 conn,
@@ -195,10 +243,20 @@ def build_payload(public_events: list[dict], master_db: Path, source_map: dict[s
                 sidecar.get("occurrence_id"),
             )
             counters[f"resolution:{resolution}"] += 1
-            request = build_request(event, occurrence_id, source, date_start, date_end or "", historical_year)
             if occurrence_id and existing_historical_date(conn, occurrence_id, date_start, date_end or ""):
                 counters["skipped:already_recorded"] += 1
                 continue
+            source = candidate_source(event)
+            source_provenance = "public_source_urls"
+            if not source and occurrence_id:
+                source = candidate_source_from_rdb(conn, occurrence_id)
+                source_provenance = (source or {}).get("provenance") or "rdb_missing"
+            if not source:
+                counters["skipped:missing_source_url"] += 1
+                issues.append({"issue_type": "missing_source_url", "name": event.get("name"), "venue": event.get("venue")})
+                continue
+            counters[f"source:{source_provenance}"] += 1
+            request = build_request(event, occurrence_id, source, date_start, date_end or "", historical_year)
             if not occurrence_id:
                 issues.append(
                     {
