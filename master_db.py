@@ -355,6 +355,8 @@ CREATE TABLE review_inbox_items (
   inbox_id TEXT PRIMARY KEY,
   kind TEXT NOT NULL,
   domain TEXT NOT NULL,
+  time_scope TEXT NOT NULL DEFAULT 'reference'
+    CHECK (time_scope IN ('future', 'historical', 'reference')),
   priority_label TEXT,
   priority_score REAL,
   title TEXT NOT NULL,
@@ -366,6 +368,13 @@ CREATE TABLE review_inbox_items (
   source_url TEXT,
   recommended_action TEXT,
   status TEXT NOT NULL DEFAULT 'pending',
+  decision TEXT,
+  decided_by TEXT,
+  decided_at TEXT,
+  closed_at TEXT,
+  decision_route TEXT,
+  source_payload_hash TEXT NOT NULL DEFAULT '',
+  last_seen_at TEXT NOT NULL,
   payload_json TEXT NOT NULL DEFAULT '{}',
   created_at TEXT NOT NULL,
   updated_at TEXT NOT NULL
