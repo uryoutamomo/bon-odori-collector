@@ -260,6 +260,24 @@ RDB投影比較とhistorical戻し候補生成で、公開名ゆれによる wea
 この段階では本DBへは未反映。次は、ことレビュー後に承認分だけ reviewed JSON へ昇格し、
 Aの通常手順で apply する。
 
+## C 第8段 JSON日付予測補完のRDB吸収（2026-07-17 plan）
+
+東本願寺盆踊りは、2024・2025年実績から作った2026年8月19日の予測がJSON補完にだけ残っている。
+Master RDBには対応する履歴候補と、公式確認済みの2026年 occurrence（8月19〜20日）があるが、履歴候補の
+照合スコアが自動昇格閾値未満のため `predicted_occurrence_dates` が生成されていない。既存のderived-table
+builderを拡張し、「自動昇格可能」または「同seriesの2026年curated occurrenceが既に存在する」予測をRDBへ
+保持する。後者は新しい開催回や公開日付を作らず、確認済み日付に対する `matches_curated` /
+`superseded_by_curated` の監査行として扱う。
+
+公式確認済みイベントは `apply_public_date_predictions.should_attach()` が当年日付を検出して予測表示を外すため、
+東本願寺のRDB吸収後も確認済み日付と予測が二重表示されないことを公開export差分ゼロで確認する。
+JSON補完が残る間はexport時に警告し、C本丸とB配線の完了時には `json_fallback_count > 0` をhard failへ
+引き上げる。hard fail化をC/④の完了条件とし、警告のまま恒久運用しない。
+
+残るseason hint 1件「盆ダンスフェスティバル2023」は、2026 occurrenceがなく、2023 occurrenceへ2025根拠が
+混在している。Cで推測の2026 occurrenceを新設せず、B本丸のreview inboxへ送る既知deferredとする。
+名称の年号サフィックスは `feedback_event-name-no-year-suffix` 系の既知課題としてDの語彙・名称整理材料にも含める。
+
 ## A ステータス：内田さんGO済み・実運用開始（2026-07-16）
 
 - ことレビュー2巡（初回=Finding 1 historical重複・Finding 4 ダミーURL → おと修正 → 再検証全項目合格）を経て、

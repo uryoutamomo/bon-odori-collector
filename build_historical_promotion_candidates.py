@@ -35,6 +35,29 @@ OUT_MD = DATA / "historical_promotion_candidates.md"
 TARGET_YEAR = 2026
 MIN_AUTO_MATCH_SCORE = 3
 
+PREDICTED_DATE_COLUMNS = (
+    "predicted_date_id",
+    "historical_candidate_id",
+    "target_series_id",
+    "target_occurrence_id",
+    "target_event_name",
+    "predicted_year",
+    "date_start",
+    "date_end",
+    "date_status",
+    "basis_type",
+    "basis_type_label",
+    "rule_type",
+    "basis",
+    "confidence",
+    "score",
+    "application_status",
+    "source",
+    "source_payload_json",
+    "created_at",
+    "updated_at",
+)
+
 WEEKDAY_RULE_TYPES = {
     "weekday_last",
     "weekday_nth",
@@ -364,10 +387,10 @@ def application_status_for_prediction(target_occurrence, prediction):
 
 
 def predicted_dates_for_candidate(item, occurrence_lookup=None):
-    if not item.get("auto_promote_eligible"):
-        return []
     occurrence_lookup = occurrence_lookup or {}
     target_occurrence = occurrence_lookup.get((item["target_series_id"], TARGET_YEAR))
+    if not item.get("auto_promote_eligible") and not target_occurrence:
+        return []
     rows = []
     for prediction in item.get("prediction_summaries") or []:
         date_start = prediction.get("predicted_date_start") or ""
@@ -406,6 +429,61 @@ def predicted_dates_for_candidate(item, occurrence_lookup=None):
     return rows
 
 
+def manual_prediction_rows(conn):
+    conn.row_factory = sqlite3.Row
+    return [
+        dict(row)
+        for row in conn.execute(
+            "SELECT * FROM predicted_occurrence_dates WHERE source <> 'event_date_predictions'"
+        )
+    ]
+
+
+def manual_candidate_rows(conn, predictions):
+    candidate_ids = sorted(
+        {
+            prediction.get("historical_candidate_id")
+            for prediction in predictions
+            if prediction.get("historical_candidate_id")
+        }
+    )
+    if not candidate_ids:
+        return []
+    placeholders = ", ".join("?" for _ in candidate_ids)
+    return [
+        dict(row)
+        for row in conn.execute(
+            f"SELECT * FROM historical_promotion_candidates WHERE candidate_id IN ({placeholders})",
+            candidate_ids,
+        )
+    ]
+
+
+def restore_manual_candidate_rows(conn, candidates):
+    for candidate in candidates:
+        columns = tuple(candidate)
+        conn.execute(
+            f"INSERT OR IGNORE INTO historical_promotion_candidates ({', '.join(columns)}) "
+            f"VALUES ({', '.join('?' for _ in columns)})",
+            tuple(candidate[column] for column in columns),
+        )
+
+
+def restore_manual_prediction_rows(conn, predictions, candidate_ids):
+    placeholders = ", ".join("?" for _ in PREDICTED_DATE_COLUMNS)
+    columns = ", ".join(PREDICTED_DATE_COLUMNS)
+    restored = 0
+    for prediction in predictions:
+        if prediction.get("historical_candidate_id") not in candidate_ids:
+            continue
+        conn.execute(
+            f"INSERT OR REPLACE INTO predicted_occurrence_dates ({columns}) VALUES ({placeholders})",
+            tuple(prediction.get(column) for column in PREDICTED_DATE_COLUMNS),
+        )
+        restored += 1
+    return restored
+
+
 def clear_predicted_date_sync_jobs(conn):
     conn.execute(
         """
@@ -422,6 +500,8 @@ def write_candidates_to_master(db_path, candidates):
     occurrence_lookup = occurrence_by_series_year(db_path)
     with sqlite3.connect(db_path) as conn:
         conn.execute("PRAGMA foreign_keys = ON")
+        preserved_manual_predictions = manual_prediction_rows(conn)
+        preserved_manual_candidates = manual_candidate_rows(conn, preserved_manual_predictions)
         conn.execute("DELETE FROM predicted_occurrence_dates")
         conn.execute("DELETE FROM historical_promotion_candidates")
         for item in candidates:
@@ -492,6 +572,13 @@ def write_candidates_to_master(db_path, candidates):
                         now,
                     ),
                 )
+        restore_manual_candidate_rows(conn, preserved_manual_candidates)
+        restore_manual_prediction_rows(
+            conn,
+            preserved_manual_predictions,
+            {item["candidate_id"] for item in candidates}
+            | {item["candidate_id"] for item in preserved_manual_candidates},
+        )
         clear_predicted_date_sync_jobs(conn)
         conn.commit()
 
