@@ -469,12 +469,17 @@ def restore_manual_candidate_rows(conn, candidates):
         )
 
 
+def should_restore_manual_prediction(prediction, candidate_ids):
+    candidate_id = prediction.get("historical_candidate_id")
+    return not candidate_id or candidate_id in candidate_ids
+
+
 def restore_manual_prediction_rows(conn, predictions, candidate_ids):
     placeholders = ", ".join("?" for _ in PREDICTED_DATE_COLUMNS)
     columns = ", ".join(PREDICTED_DATE_COLUMNS)
     restored = 0
     for prediction in predictions:
-        if prediction.get("historical_candidate_id") not in candidate_ids:
+        if not should_restore_manual_prediction(prediction, candidate_ids):
             continue
         conn.execute(
             f"INSERT OR REPLACE INTO predicted_occurrence_dates ({columns}) VALUES ({placeholders})",
