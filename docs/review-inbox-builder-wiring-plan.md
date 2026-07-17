@@ -123,6 +123,11 @@ B0aは2026-07-17に完了した。S3 latestとローカル正本をCAS publish�
 再生成後のdecision保持テストだけを対象にする。mergeだけでは既存正本DBを自動migrationせず、
 実DBへのmigration applyはbackup/audit/CASと内田さんGOが揃うまで実行しない。
 
+B0bは同日、schema v2 lifecycle、source adapter共通IF、入力hash付きparity report、
+console decisionのroute別stagingまでを小PRでmainへ反映した。最初の実adapterは
+`official_source_review_candidates.json` を対象にし、legacy writerを維持したままadapter snapshotを
+生成する。正本migration、RDB dual-write、workflow gateはまだ有効化しない。
+
 ### B1: 未来の開催判断
 
 最初に次をdual-writeする。

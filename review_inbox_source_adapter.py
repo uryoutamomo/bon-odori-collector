@@ -12,6 +12,8 @@ from __future__ import annotations
 import copy
 import hashlib
 import json
+import os
+import tempfile
 from collections import Counter
 from pathlib import Path
 from typing import Any, Iterable, Mapping, Protocol
@@ -112,3 +114,20 @@ def load_adapted_source(
         "item_count": len(items),
         "items": items,
     }
+
+
+def write_adapted_snapshot(snapshot: dict[str, Any], output_path: Path) -> None:
+    output_path = Path(output_path)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    with tempfile.NamedTemporaryFile(
+        mode="w",
+        encoding="utf-8",
+        dir=output_path.parent,
+        prefix=f".{output_path.name}.",
+        suffix=".tmp",
+        delete=False,
+    ) as handle:
+        json.dump(snapshot, handle, ensure_ascii=False, indent=2)
+        handle.write("\n")
+        temp_path = Path(handle.name)
+    os.replace(temp_path, output_path)
