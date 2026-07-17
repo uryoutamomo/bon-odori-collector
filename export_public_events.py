@@ -15,6 +15,7 @@ import json
 import os
 import re
 import sqlite3
+import warnings
 import unicodedata
 import urllib.error
 import urllib.request
@@ -1265,10 +1266,26 @@ def merge_prediction_payloads(primary, fallback):
     return merged
 
 
+def warn_on_prediction_json_fallback(payload):
+    summary = payload.get("summary") or {}
+    fallback_count = int(summary.get("json_fallback_count") or 0)
+    if fallback_count:
+        fallback_names = ", ".join(
+            row.get("event_name") or "(unknown)"
+            for row in summary.get("json_fallback") or []
+        )
+        warnings.warn(
+            f"public date prediction JSON fallback is still active for {fallback_count} event(s): {fallback_names}",
+            RuntimeWarning,
+            stacklevel=2,
+        )
+    return payload
+
+
 def load_public_date_predictions_for_export(target_year=2026):
     rdb_payload = load_rdb_public_date_predictions(MASTER_DB, target_year=target_year)
     json_payload = load_public_date_prediction_json(DATE_PREDICTIONS, {})
-    return merge_prediction_payloads(rdb_payload, json_payload)
+    return warn_on_prediction_json_fallback(merge_prediction_payloads(rdb_payload, json_payload))
 
 
 def _override_matches(event, match):
