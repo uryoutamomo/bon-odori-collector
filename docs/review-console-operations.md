@@ -520,6 +520,10 @@ console.
 - Outputs:
   - `data/review_console/staged/*_decisions.json`
   - `data/review_console/staged/stage_apply_result.json`
+- `review_inbox` decisions are split into `change_request`, `domain_stage`,
+  `research_followup`, and `no_apply` packets. The same operation also writes
+  `review_inbox_decision_updates.json` for a future CAS writer; it does not
+  update the Master RDB itself.
 - Despite the label, this does not update Master RDB, Notion, public JSON,
   S3, CloudFront, DynamoDB, or Google Calendar.
 - Use when the reviewed decisions are ready to become an explicit apply packet.

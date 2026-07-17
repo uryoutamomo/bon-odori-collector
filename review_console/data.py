@@ -16,6 +16,7 @@ from pathlib import Path
 from typing import Any
 
 import collect_ops_metrics
+from review_inbox_decision_stage import UPDATES_FILE, build_decision_stage, write_decision_stage
 from youtube_title_parts import split_youtube_title
 
 
@@ -2912,14 +2913,20 @@ def write_inventory(root: Path = ROOT, decisions_path: Path = DECISIONS_PATH) ->
 
 def stage_apply(root: Path = ROOT, decisions_path: Path = DECISIONS_PATH, write: bool = False) -> dict[str, Any]:
     export = export_decisions(root, decisions_path) if write else build_export_payload(root, decisions_path)
+    inbox_stage = build_decision_stage(export)
     grouped: dict[str, list[dict[str, Any]]] = {}
     for row in export["rows"]:
+        if row["source_id"] == "review_inbox":
+            continue
         grouped.setdefault(row["source_id"], []).append(row)
     staged_dir = root / "data" / "review_console" / "staged"
     if write:
         staged_dir.mkdir(parents=True, exist_ok=True)
         for old_path in staged_dir.glob("*_decisions.json"):
             old_path.unlink()
+        updates_path = staged_dir / UPDATES_FILE
+        if updates_path.exists():
+            updates_path.unlink()
         ack_path = staged_dir / "stage_apply_ack.json"
         if ack_path.exists():
             ack_path.unlink()
@@ -2940,10 +2947,28 @@ def stage_apply(root: Path = ROOT, decisions_path: Path = DECISIONS_PATH, write:
         if write:
             write_json_atomic(path, payload)
         staged_files.append({"source_id": source_id, "path": rel_path(path, root), "decision_count": len(rows)})
+    if inbox_stage["decision_count"]:
+        if write:
+            inbox_files = write_decision_stage(inbox_stage, staged_dir)
+            for item in inbox_files:
+                item["path"] = rel_path(Path(item["path"]), root)
+        else:
+            inbox_files = [
+                {
+                    "source_id": f"review_inbox:{route}",
+                    "path": rel_path(staged_dir / f"review_inbox_{route}_decisions.json", root),
+                    "decision_count": count,
+                    "decision_route": route,
+                }
+                for route, count in inbox_stage["route_counts"].items()
+                if count
+            ]
+        staged_files.extend(inbox_files)
     result = {
         "generated_at": now_iso(),
         "write": write,
         "decision_count": export["decision_count"],
+        "review_inbox_decision_count": inbox_stage["decision_count"],
         "staged_files": staged_files,
         "note": "staged_only: operational RDB/Notion/public JSON were not modified",
     }
