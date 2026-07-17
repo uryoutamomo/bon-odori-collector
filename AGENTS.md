@@ -58,7 +58,9 @@
 - イベント個別の `apply_*.py` スクリプトは新造しない。直近の開催日確定、過去実績追加、会場修正、曲実績追加は、原則として `apply_change_requests.py` と変更リクエストJSONで処理する。
 - 変更リクエストは自由記述パッチにしない。`confirm_current_year_date` / `add_historical_reference` / `update_venue` / `add_song_evidence` のような有限の変更種別を使い、種別ごとの必須根拠とバリデーションを通す。
 - 今年の開催日確定と過去実績追加は別種別として扱う。`confirm_current_year_date` は公式・主催者・信頼できる当年ソースURLを必須にし、YouTubeなどの過去実績だけで今年の開催確定へ昇格しない。
-- `apply_change_requests.py` は dry-run 既定で使う。実DBへ反映する場合は `--apply --confirm 'APPLY CHANGE REQUESTS'` を必要とし、従来どおり dry-run → ことレビュー → apply → 再検証 → 内田さんGO の順を守る。
+- `apply_change_requests.py` は dry-run 既定で使う。実DBへ反映する場合は `--apply --confirm 'APPLY CHANGE REQUESTS'` を必要とし、dry-run → ことレビュー → 内田さん最終GO → apply → こと再検証の順を守る。
+- readiness が自動生成する reviewed JSON は機械検査専用で、人レビュー済みとは扱わず実 apply に使用しない。
+- 実 apply 用の reviewed JSON は、ことのサンプルレビューと内田さんの最終GO後に `scripts/promote_change_requests_for_review.py` を手動実行して生成し、レビュー担当者と承認経緯を記録する。
 
 ## YouTubeデータ収集の運用方針
 

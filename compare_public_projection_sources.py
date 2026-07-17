@@ -167,6 +167,9 @@ def load_historical_sources(db_path: Path, target_year: int) -> dict[str, list[d
           od.date_end,
           od.confidence,
           od.basis,
+          od.source_evidence_id,
+          ei.title AS source_title,
+          ei.url AS source_url,
           o.display_name AS event_name,
           o.event_year,
           s.canonical_name AS series_name,
@@ -175,6 +178,7 @@ def load_historical_sources(db_path: Path, target_year: int) -> dict[str, list[d
         JOIN event_occurrences o ON o.occurrence_id = od.occurrence_id
         JOIN event_series s ON s.series_id = o.series_id
         LEFT JOIN venues v ON v.venue_id = o.venue_id
+        LEFT JOIN evidence_items ei ON ei.evidence_id = od.source_evidence_id
         WHERE od.date_type = 'historical_reference'
           AND od.date_start < ?
         """,
@@ -192,6 +196,9 @@ def load_historical_sources(db_path: Path, target_year: int) -> dict[str, list[d
             "date_end": row.get("date_end"),
             "confidence": row.get("confidence"),
             "basis": basis,
+            "source_evidence_id": row.get("source_evidence_id"),
+            "source_title": row.get("source_title"),
+            "source_url": row.get("source_url"),
         }
         add_index_row(index, event_key(source["event_name"], source["venue"]), source)
     return dict(index)
@@ -267,6 +274,14 @@ def first_source(index: dict[str, list[dict]], by_occurrence: dict[str, list[dic
     return first_match(index, key)
 
 
+def matching_sources(index: dict[str, list[dict]], by_occurrence: dict[str, list[dict]], key: str, occurrence_id: str | None) -> list[dict]:
+    if occurrence_id:
+        rows = by_occurrence.get(occurrence_id) or []
+        if rows:
+            return rows
+    return index.get(key) or []
+
+
 def compare_prediction(event: dict, source: dict | None) -> dict:
     prediction = event.get("date_prediction") or {}
     if not prediction:
@@ -294,19 +309,46 @@ def compare_prediction(event: dict, source: dict | None) -> dict:
     }
 
 
-def compare_historical(event: dict, source: dict | None) -> dict:
+def historical_source_dates(source: dict) -> list[str]:
+    return [value for value in [source.get("date"), source.get("date_end")] if value]
+
+
+def compare_historical(event: dict, sources: list[dict] | dict | None) -> dict:
     reference = event.get("historical_reference") or {}
     if not reference:
         return {"status": "not_applicable"}
-    if not source:
+    if isinstance(sources, dict):
+        sources = [sources]
+    sources = sources or []
+    if not sources:
         return {"status": "missing_rdb_source"}
     public_dates = reference.get("last_seen_dates") or []
-    source_dates = [value for value in [source.get("date"), source.get("date_end")] if value]
+    public_date_set = set(public_dates)
+    rdb_sources = [
+        {
+            "source_id": source.get("occurrence_date_id"),
+            "dates": historical_source_dates(source),
+            "source_evidence_id": source.get("source_evidence_id"),
+            "source_title": source.get("source_title"),
+            "source_url": source.get("source_url"),
+        }
+        for source in sources
+    ]
+    for source, source_row in zip(sources, rdb_sources):
+        if public_date_set & set(source_row["dates"]):
+            return {
+                "status": "match",
+                "source_id": source.get("occurrence_date_id"),
+                "public_dates": public_dates,
+                "rdb_dates": source_row["dates"],
+                "rdb_source_count": len(sources),
+            }
     return {
-        "status": "match" if set(public_dates) & set(source_dates) else "date_mismatch",
-        "source_id": source.get("occurrence_date_id"),
+        "status": "date_mismatch",
+        "source_id": sources[0].get("occurrence_date_id"),
         "public_dates": public_dates,
-        "rdb_dates": source_dates,
+        "rdb_dates": [date for source in rdb_sources for date in source["dates"]],
+        "rdb_sources": rdb_sources,
     }
 
 
@@ -353,7 +395,7 @@ def build_report(public_events: list[dict], master_db: Path, target_year: int = 
         )
         historical_result = compare_historical(
             event,
-            first_source(historical, historical_by_occurrence, key, occurrence_id),
+            matching_sources(historical, historical_by_occurrence, key, occurrence_id),
         )
         season = compare_season(
             event,

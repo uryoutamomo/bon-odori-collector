@@ -67,6 +67,11 @@ class ComparePublicProjectionSourcesTest(unittest.TestCase):
                   basis TEXT,
                   created_at TEXT
                 );
+                CREATE TABLE evidence_items (
+                  evidence_id TEXT PRIMARY KEY,
+                  title TEXT,
+                  url TEXT
+                );
                 """
             )
             conn.execute("INSERT INTO venues VALUES (?, ?)", ("ven1", "中央公園"))
@@ -189,6 +194,42 @@ class ComparePublicProjectionSourcesTest(unittest.TestCase):
             self.assertEqual(report["summary"]["prediction:match"], 1)
             self.assertEqual(report["summary"]["historical:match"], 1)
             self.assertEqual(report["summary"]["season:match"], 1)
+
+    def test_historical_match_uses_any_source_for_same_occurrence(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            db_path = Path(tmp) / "master.sqlite"
+            self.make_db(db_path)
+            with sqlite3.connect(db_path) as conn:
+                conn.execute(
+                    """
+                    INSERT INTO occurrence_dates VALUES (
+                      'od_old', 'occ1', '2024-07-26', '', 'historical_reference',
+                      'medium', NULL, '{}', 'now'
+                    )
+                    """
+                )
+                conn.commit()
+            events = [
+                {
+                    "name": "公開用に少し違う名前",
+                    "venue": "中央公園",
+                    "date": "",
+                    "date_end": "",
+                    "historical_reference": {
+                        "last_seen_dates": ["2025-07-25"],
+                    },
+                }
+            ]
+            source_map = {
+                "公開用に少し違う名前|中央公園||": {
+                    "occurrence_id": "occ1",
+                }
+            }
+
+            report = build_report(events, db_path, source_map=source_map)
+
+            self.assertEqual(report["blocking_row_count"], 0)
+            self.assertEqual(report["summary"]["historical:match"], 1)
 
 
 if __name__ == "__main__":
