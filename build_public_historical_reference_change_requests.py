@@ -15,7 +15,7 @@ from collections import Counter
 from pathlib import Path
 
 from event_report_helpers import find_occurrence_candidates
-from master_db import MASTER_DB, normalize_text, require_existing_db, stable_id
+from master_db import MASTER_DB, connect_existing, normalize_text, stable_id
 
 
 DATA = Path("data")
@@ -164,12 +164,11 @@ def build_request(event: dict, occurrence_id: str | None, source: dict, date_sta
 
 
 def build_payload(public_events: list[dict], master_db: Path, source_map: dict[str, dict] | None = None) -> tuple[dict, dict]:
-    require_existing_db(master_db)
     source_map = source_map or {}
     requests = []
     issues = []
     counters = Counter()
-    with sqlite3.connect(master_db) as conn:
+    with connect_existing(master_db) as conn:
         conn.row_factory = sqlite3.Row
         for event in public_events:
             if not event.get("historical_reference"):
