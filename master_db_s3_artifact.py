@@ -252,11 +252,28 @@ def status(args, client=None):
     local_checksum = file_sha256(db_path)
     remote = remote_manifest(client, bucket, keys["latest_manifest_key"])
     remote_checksum = (remote or {}).get("database_checksum", "")
+    remote_artifact = (remote or {}).get("artifact") or {}
+    remote_published_at = remote_artifact.get("published_at") or ""
+    remote_snapshot_id = remote_artifact.get("snapshot_id") or ""
+    remote_generated_by = (remote or {}).get("generated_by") or ""
+    remote_table_counts = (remote or {}).get("table_counts") or {}
     remote_head = head_object(client, bucket, keys["latest_database_key"])
     print(f"local_db: {db_path} checksum={local_checksum or '(missing)'}")
     print(f"remote_db: s3://{bucket}/{keys['latest_database_key']}")
     print(f"remote_exists: {bool(remote_head)} checksum={remote_checksum or '(missing)'}")
-    return {"local_checksum": local_checksum, "remote_checksum": remote_checksum, "remote_exists": bool(remote_head)}
+    print(f"remote_published_at: {remote_published_at or '(missing)'}")
+    print(f"remote_snapshot_id: {remote_snapshot_id or '(missing)'}")
+    print(f"remote_generated_by: {remote_generated_by or '(missing)'}")
+    print(f"remote_table_counts: {json.dumps(remote_table_counts, sort_keys=True)}")
+    return {
+        "local_checksum": local_checksum,
+        "remote_checksum": remote_checksum,
+        "remote_exists": bool(remote_head),
+        "remote_published_at": remote_published_at,
+        "remote_snapshot_id": remote_snapshot_id,
+        "remote_generated_by": remote_generated_by,
+        "remote_table_counts": remote_table_counts,
+    }
 
 
 def build_parser():
