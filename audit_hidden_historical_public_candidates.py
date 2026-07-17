@@ -13,6 +13,7 @@ from typing import Any
 
 from event_series_normalization import series_event_name
 from export_public_events import clean_public_event_name
+from master_db import connect_existing
 
 
 ROOT = Path(__file__).resolve().parent
@@ -264,7 +265,7 @@ def recommendation(row: dict[str, Any], in_public: bool, skipped_by_override: bo
 def build_report(args: argparse.Namespace) -> dict[str, Any]:
     keys = public_keys(args.public_events)
     skip_keys = skip_override_keys(args.overrides)
-    with sqlite3.connect(args.db) as conn:
+    with connect_existing(args.db) as conn:
         hist_by_occ = historical_dates(conn)
         pred_by_occ = predicted_dates(conn)
         promo_by_occ = promotion_candidates(conn)
