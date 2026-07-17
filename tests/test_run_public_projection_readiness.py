@@ -40,8 +40,10 @@ class RunPublicProjectionReadinessTest(unittest.TestCase):
             tmp = Path(tmp)
             before = tmp / "before.json"
             requests = tmp / "requests.json"
+            reviewed = tmp / "reviewed.json"
             dry_run = tmp / "dry_run.json"
             after = tmp / "after.json"
+            mismatch = tmp / "mismatch.json"
             before.write_text(
                 json.dumps(
                     {
@@ -60,6 +62,19 @@ class RunPublicProjectionReadinessTest(unittest.TestCase):
                             {"request_id": "r1", "dry_run_only": True},
                             {"request_id": "r2", "dry_run_only": True},
                         ]
+                    }
+                ),
+                encoding="utf-8",
+            )
+            reviewed.write_text(
+                json.dumps(
+                    {
+                        "reviewed_by": "おと（Codex）",
+                        "reviewed_at": "2026-07-17T00:00:00+00:00",
+                        "requests": [
+                            {"request_id": "r1"},
+                            {"request_id": "r2"},
+                        ],
                     }
                 ),
                 encoding="utf-8",
@@ -85,6 +100,10 @@ class RunPublicProjectionReadinessTest(unittest.TestCase):
                 ),
                 encoding="utf-8",
             )
+            mismatch.write_text(
+                json.dumps({"row_count": 0, "statuses": ["date_mismatch"]}),
+                encoding="utf-8",
+            )
 
             summary = MODULE.summarize(
                 "2026-07-16",
@@ -93,15 +112,20 @@ class RunPublicProjectionReadinessTest(unittest.TestCase):
                 tmp / "source_map.json",
                 before,
                 requests,
+                reviewed,
                 dry_run,
                 after,
+                mismatch,
             )
 
         self.assertEqual(summary["before"]["blocking_row_count"], 8)
         self.assertEqual(summary["historical_requests"]["request_count"], 2)
         self.assertTrue(summary["historical_requests"]["all_dry_run_only"])
+        self.assertEqual(summary["reviewed_historical_requests"]["request_count"], 2)
+        self.assertEqual(summary["reviewed_historical_requests"]["dry_run_only_count"], 0)
         self.assertEqual(summary["dry_run_apply"]["requests_applied"], 2)
         self.assertEqual(summary["after_historical_dry_run"]["blocking_row_count"], 1)
+        self.assertEqual(summary["mismatch_review"]["row_count"], 0)
 
 
 if __name__ == "__main__":

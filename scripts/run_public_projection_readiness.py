@@ -147,6 +147,59 @@ def dry_run_historical_requests(
     )
 
 
+def promote_historical_requests(
+    python: str,
+    requests: Path,
+    out_json: Path,
+    out_md: Path,
+    quiet: bool,
+) -> None:
+    run(
+        [
+            python,
+            "scripts/promote_change_requests_for_review.py",
+            "--requests",
+            str(requests),
+            "--reviewed-by",
+            "おと（Codex）",
+            "--review-note",
+            "C第7 readiness機械検査合格。実applyは内田さんGO後に実行する。",
+            "--out-json",
+            str(out_json),
+            "--out-md",
+            str(out_md),
+        ],
+        env=None,
+        quiet=quiet,
+    )
+
+
+def build_mismatch_review(
+    python: str,
+    compare_report: Path,
+    public_events: Path,
+    out_json: Path,
+    out_md: Path,
+    quiet: bool,
+) -> None:
+    run(
+        [
+            python,
+            "scripts/build_public_projection_mismatch_review.py",
+            "--compare-report",
+            str(compare_report),
+            "--public-events",
+            str(public_events),
+            "--out-json",
+            str(out_json),
+            "--out-md",
+            str(out_md),
+        ],
+        env=None,
+        quiet=quiet,
+    )
+
+
 def summarize(
     today: str,
     out_dir: Path,
@@ -154,14 +207,19 @@ def summarize(
     source_map: Path,
     before_json: Path,
     requests_json: Path,
+    reviewed_requests_json: Path,
     dry_run_json: Path,
     after_json: Path,
+    mismatch_json: Path,
 ) -> dict[str, Any]:
     before = load_json(before_json)
     requests_payload = load_json(requests_json)
     requests = requests_payload.get("requests") or []
+    reviewed_payload = load_json(reviewed_requests_json)
+    reviewed_requests = reviewed_payload.get("requests") or []
     dry_run = load_json(dry_run_json)
     after = load_json(after_json)
+    mismatch_review = load_json(mismatch_json)
     return {
         "generated_by": "scripts/run_public_projection_readiness.py",
         "today": today,
@@ -171,8 +229,10 @@ def summarize(
             "source_map": str(source_map),
             "before_compare": str(before_json),
             "historical_requests": str(requests_json),
+            "reviewed_historical_requests": str(reviewed_requests_json),
             "dry_run_apply": str(dry_run_json),
             "after_historical_dry_run_compare": str(after_json),
+            "mismatch_review": str(mismatch_json),
         },
         "before": {
             "public_event_count": before.get("public_event_count"),
@@ -184,6 +244,12 @@ def summarize(
             "request_count": len(requests),
             "all_dry_run_only": all(request.get("dry_run_only") is True for request in requests),
         },
+        "reviewed_historical_requests": {
+            "request_count": len(reviewed_requests),
+            "dry_run_only_count": sum(1 for request in reviewed_requests if request.get("dry_run_only")),
+            "reviewed_by": reviewed_payload.get("reviewed_by"),
+            "reviewed_at": reviewed_payload.get("reviewed_at"),
+        },
         "dry_run_apply": {
             "requests_applied": dry_run.get("requests_applied"),
             "requests_unresolved": dry_run.get("requests_unresolved"),
@@ -194,6 +260,10 @@ def summarize(
             "source_counts": after.get("source_counts"),
             "summary": after.get("summary"),
             "blocking_row_count": after.get("blocking_row_count"),
+        },
+        "mismatch_review": {
+            "row_count": mismatch_review.get("row_count"),
+            "statuses": mismatch_review.get("statuses"),
         },
     }
 
@@ -220,6 +290,10 @@ def run_readiness(args: argparse.Namespace) -> dict[str, Any]:
         requests_md = out_dir / "public_historical_reference_change_requests.md"
         build_historical_requests(args.python, public_events, source_map, requests_json, requests_md, args.quiet)
 
+        reviewed_requests_json = out_dir / "public_historical_references_reviewed.json"
+        reviewed_requests_md = out_dir / "public_historical_references_reviewed.md"
+        promote_historical_requests(args.python, requests_json, reviewed_requests_json, reviewed_requests_md, args.quiet)
+
         dry_run_db = out_dir / "historical_reference_dry_run.sqlite"
         dry_run_json = out_dir / "public_historical_references_dry_run_apply_report.json"
         dry_run_md = out_dir / "public_historical_references_dry_run_apply_report.md"
@@ -238,7 +312,22 @@ def run_readiness(args: argparse.Namespace) -> dict[str, Any]:
             args.quiet,
         )
 
-        summary = summarize(args.today, out_dir, public_events, source_map, before_json, requests_json, dry_run_json, after_json)
+        mismatch_json = out_dir / "public_projection_mismatch_review.json"
+        mismatch_md = out_dir / "public_projection_mismatch_review.md"
+        build_mismatch_review(args.python, after_json, public_events, mismatch_json, mismatch_md, args.quiet)
+
+        summary = summarize(
+            args.today,
+            out_dir,
+            public_events,
+            source_map,
+            before_json,
+            requests_json,
+            reviewed_requests_json,
+            dry_run_json,
+            after_json,
+            mismatch_json,
+        )
         write_json(out_dir / "readiness_summary.json", summary)
         return summary
 
@@ -265,11 +354,14 @@ def main(argv: list[str] | None = None) -> int:
     before = summary["before"]["blocking_row_count"]
     after = summary["after_historical_dry_run"]["blocking_row_count"]
     requests = summary["historical_requests"]["request_count"]
+    reviewed = summary["reviewed_historical_requests"]["request_count"]
     print(
         "public projection readiness: "
         f"before_blocking={before} "
         f"historical_requests={requests} "
+        f"reviewed_historical_requests={reviewed} "
         f"after_historical_dry_run_blocking={after} "
+        f"mismatch_review_rows={summary['mismatch_review']['row_count']} "
         f"summary={summary['outputs']['out_dir']}/readiness_summary.json"
     )
     return 0
