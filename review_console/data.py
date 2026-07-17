@@ -31,10 +31,32 @@ INVENTORY_MD_PATH = CONSOLE_DIR / "source_inventory.md"
 STAGED_DIR = CONSOLE_DIR / "staged"
 STAGE_RESULT_PATH = STAGED_DIR / "stage_apply_result.json"
 STAGE_ACK_PATH = STAGED_DIR / "stage_apply_ack.json"
+SONG_MASTER_PATH = DATA_DIR / "youtube_song_master.json"
 
 _INVENTORY_CACHE: dict[tuple[str, str], dict[str, Any]] = {}
 _DECISION_LOCKS: dict[str, threading.RLock] = {}
 _DECISION_LOCKS_GUARD = threading.Lock()
+_SONG_TERM_CACHE: dict[str, tuple[tuple[str, int], dict[str, str]]] = {}
+
+GENERIC_SONG_TERMS = {
+    "盆踊り",
+    "bon dance",
+    "bon odori",
+    "音頭",
+    "民踊",
+    "おどり",
+    "踊り",
+    "まつり",
+    "祭り",
+    "さくら",
+    "春",
+    "夏",
+    "秋",
+    "冬",
+    "東京",
+    "浅草",
+    "青山",
+}
 
 DECISION_LABELS = {
     "accept": "レビュー採用",
@@ -170,6 +192,23 @@ class ReviewSource:
 
 
 SOURCES: tuple[ReviewSource, ...] = (
+    ReviewSource(
+        id="review_inbox",
+        title="統合レビュー受信箱",
+        path="data/review_inbox.json",
+        rows_path="items",
+        domain="受信箱",
+        key_fields=("inbox_id", "source_id", "source_key"),
+        title_fields=("title", "event_name"),
+        subtitle_fields=("kind", "event_year", "venue", "priority_label"),
+        priority_fields=("priority_label",),
+        score_fields=("priority_score",),
+        action_fields=("recommended_action", "kind"),
+        source_decision_fields=("status", "decision"),
+        description_fields=("summary", "reason", "note", "payload.summary", "payload.reason", "payload.note"),
+        urls_fields=("source_url", "payload.source_url", "payload.urls"),
+        option_values=("confirm_current_date", "promote_historical_reference", "fill_venue", "fill_source_url", "needs_research", "reject", "hold"),
+    ),
     ReviewSource(
         id="registered_event_investigation",
         title="登録済みイベント調査",
@@ -648,6 +687,92 @@ def normalize_event_lookup_text(value: str) -> str:
     return text
 
 
+def normalize_song_lookup_text(value: str) -> str:
+    text = normalize_event_lookup_text(value)
+    return re.sub(r"[\-ー–—!！?？]", "", text)
+
+
+def load_known_song_terms(root: Path = ROOT) -> dict[str, str]:
+    db_path = root / "data" / "bon_odori_master.sqlite"
+    json_path = root / "data" / "youtube_song_master.json"
+    stamp = tuple(
+        (str(path), path.stat().st_mtime_ns if path.exists() else -1)
+        for path in (db_path, json_path)
+    )
+    cache_key = str(root)
+    cached = _SONG_TERM_CACHE.get(cache_key)
+    if cached and cached[0] == stamp:
+        return cached[1]
+
+    terms: dict[str, str] = {}
+
+    def add(term: Any, canonical: Any) -> None:
+        label = as_text(term)
+        canonical_label = as_text(canonical)
+        norm = normalize_song_lookup_text(label)
+        if not label or not canonical_label or label.casefold() in GENERIC_SONG_TERMS:
+            return
+        if len(norm) < 3:
+            return
+        terms.setdefault(norm, canonical_label)
+
+    if db_path.exists():
+        try:
+            conn = sqlite3.connect(db_path)
+            conn.row_factory = sqlite3.Row
+            for row in conn.execute("select canonical_title from songs where coalesce(status, '') != '除外'"):
+                add(row["canonical_title"], row["canonical_title"])
+            for row in conn.execute(
+                """
+                select a.alias, s.canonical_title
+                from song_aliases a
+                join songs s on s.song_id = a.song_id
+                where coalesce(s.status, '') != '除外'
+                """
+            ):
+                add(row["alias"], row["canonical_title"])
+        except sqlite3.Error:
+            pass
+        finally:
+            try:
+                conn.close()
+            except UnboundLocalError:
+                pass
+
+    payload = read_json(json_path, {})
+    songs = payload.get("songs") if isinstance(payload, dict) else []
+    if isinstance(songs, list):
+        for song in songs:
+            if not isinstance(song, dict) or not song.get("public_ready", True):
+                continue
+            canonical = song.get("song_name")
+            add(canonical, canonical)
+            for alias in song.get("aliases") or []:
+                add(alias, canonical)
+
+    _SONG_TERM_CACHE[cache_key] = (stamp, terms)
+    return terms
+
+
+def known_song_matches(text: str, root: Path = ROOT) -> list[str]:
+    haystack = normalize_song_lookup_text(text)
+    matches: list[str] = []
+    matched_norms: list[str] = []
+    if not haystack:
+        return matches
+    for norm, canonical in sorted(load_known_song_terms(root).items(), key=lambda item: len(item[0]), reverse=True):
+        if canonical.casefold() in GENERIC_SONG_TERMS:
+            continue
+        if any(norm in matched_norm or matched_norm in norm for matched_norm in matched_norms):
+            continue
+        if norm and norm in haystack and canonical not in matches:
+            matches.append(canonical)
+            matched_norms.append(norm)
+        if len(matches) >= 12:
+            break
+    return matches
+
+
 def existing_event_name_rows(root: Path = ROOT) -> list[dict[str, str]]:
     db_path = root / "data" / "bon_odori_master.sqlite"
     rows: list[dict[str, str]] = []
@@ -1086,20 +1211,71 @@ def youtube_target_event(row: dict[str, Any]) -> dict[str, Any] | None:
         }
     occurrences = row.get("setlist_occurrences")
     if isinstance(occurrences, list):
-        for occurrence in occurrences:
-            if not isinstance(occurrence, dict) or not as_text(occurrence.get("event_name")):
-                continue
+        candidates = [
+            occurrence
+            for occurrence in occurrences
+            if isinstance(occurrence, dict)
+            and as_text(occurrence.get("event_name"))
+            and isinstance(occurrence.get("matched_public_event"), dict)
+            and as_text(occurrence["matched_public_event"].get("name"))
+        ]
+        candidates.sort(key=setlist_occurrence_rank, reverse=True)
+        for occurrence in candidates:
+            matched = occurrence["matched_public_event"]
             return {
-                "name": as_text(occurrence.get("event_name")),
-                "venue": as_text(occurrence.get("venue")),
-                "date": as_text(occurrence.get("event_date")),
-                "date_end": "",
-                "area": "",
-                "score": as_text(occurrence.get("confidence")),
-                "match_reasons": ["setlist_occurrence"],
-                "source": "setlist_occurrences",
+                "id": as_text(matched.get("id") or occurrence.get("occurrence_key")),
+                "name": as_text(matched.get("name")),
+                "venue": as_text(matched.get("venue") or occurrence.get("venue")),
+                "date": as_text(matched.get("date") or occurrence.get("event_date")),
+                "date_end": as_text(matched.get("date_end")),
+                "area": as_text(matched.get("area")),
+                "score": as_text(matched.get("score") or occurrence.get("confidence")),
+                "match_reasons": matched.get("reasons") if isinstance(matched.get("reasons"), list) else ["setlist_occurrence_public_match"],
+                "source": "setlist_matched_public_event",
             }
     return None
+
+
+def setlist_occurrence_rank(occurrence: dict[str, Any]) -> tuple[int, int, int]:
+    try:
+        song_count = int(occurrence.get("song_count") or 0)
+    except (TypeError, ValueError):
+        song_count = 0
+    confidence_score = {"high": 3, "medium": 2, "low": 1}.get(
+        as_text(occurrence.get("confidence")).casefold(),
+        0,
+    )
+    name = as_text(occurrence.get("event_name"))
+    branch_penalty = 0
+    if re.search(r"^\s*[【\[]", name) and re.search(r"[0-9０-９]\s", name):
+        branch_penalty += 1
+    if re.search(r"[0-9０-９]+終?\s*$", name):
+        branch_penalty += 1
+    return (song_count, confidence_score, -branch_penalty)
+
+
+def youtube_target_event_matches_name(target: dict[str, Any] | None, name: str) -> bool:
+    if not target:
+        return False
+    needle = normalize_event_lookup_text(name)
+    target_name = normalize_event_lookup_text(as_text(target.get("name")))
+    if not needle or not target_name:
+        return False
+    return needle == target_name or needle in target_name
+
+
+def youtube_target_event_match_payload(target: dict[str, Any]) -> dict[str, Any]:
+    return {
+        "id": as_text(target.get("id")),
+        "name": as_text(target.get("name")),
+        "series_name": as_text(target.get("name")),
+        "year": as_text(target.get("date"))[:4],
+        "date": as_text(target.get("date")),
+        "date_end": as_text(target.get("date_end")),
+        "venue": as_text(target.get("venue")),
+        "source": as_text(target.get("source")) or "youtube_target_event",
+        "match_type": "youtube_target_event",
+    }
 
 
 def youtube_parent_component(row: dict[str, Any]) -> dict[str, str] | None:
@@ -1121,10 +1297,10 @@ def youtube_parent_component(row: dict[str, Any]) -> dict[str, str] | None:
     }
 
 
-def youtube_auto_closed_parent_component(row: dict[str, Any]) -> bool:
+def youtube_auto_closed_parent_component(row: dict[str, Any], root: Path = ROOT) -> bool:
     if not youtube_parent_component(row):
         return False
-    if not youtube_song_candidates(row):
+    if not youtube_song_candidates(row, root=root):
         return False
     return as_text(row.get("action")) == "bon_component_of_parent_event" or as_text(row.get("auto_review_note")) == "parent_event_song_clip_fragment"
 
@@ -1145,7 +1321,7 @@ def manual_youtube_target_event(name: str) -> dict[str, Any] | None:
     }
 
 
-def youtube_song_candidates(row: dict[str, Any]) -> list[str]:
+def youtube_song_candidates(row: dict[str, Any], root: Path = ROOT) -> list[str]:
     candidates: list[str] = []
 
     def add(value: Any) -> None:
@@ -1170,12 +1346,15 @@ def youtube_song_candidates(row: dict[str, Any]) -> list[str]:
                     add(song.get("song_name") or song.get("name") or song.get("title"))
     title = as_text(row.get("title"))
     title_candidates = row.get("title_song_candidates")
+    title_texts = [title]
     if isinstance(title_candidates, list):
         for candidate in title_candidates:
-            add(candidate)
+            title_texts.append(as_text(candidate))
     else:
         for candidate in split_youtube_title(title).get("title_song_candidates", []):
-            add(candidate)
+            title_texts.append(as_text(candidate))
+    for song in known_song_matches(" ".join(title_texts), root=root):
+        add(song)
     return candidates[:12]
 
 
@@ -1586,6 +1765,10 @@ def option_disabled_reason(source: ReviewSource, row: dict[str, Any], value: str
         if youtube_parent_component(row) and not youtube_target_event(row):
             return "既存イベント未登録の親イベント内企画です。3「親イベント内の盆踊り企画」を選んでください"
         return ""
+    if source.id == "youtube_active_video" and value == "bon_component_of_parent_event":
+        if youtube_parent_component(row) and youtube_target_event(row):
+            return "追加先イベントが見つかっています。動画・曲を追加する場合は1を選んでください"
+        return ""
     return ""
 
 
@@ -1822,6 +2005,26 @@ def action_group_for(
             focus = registered_review_focus(row)
             group_id = focus["id"]
             reason = focus["reason"]
+    elif source.id == "review_inbox":
+        kind = str(row.get("kind") or "")
+        if kind in {"current_year_confirmation", "predicted_date", "date_research"}:
+            group_id = "current_date"
+            reason = "統合受信箱に入った今年の日付確認候補です。"
+        elif kind in {"historical_reference", "historical_date"}:
+            group_id = "historical_date"
+            reason = "統合受信箱に入った過去実績確認候補です。"
+        elif kind in {"venue", "venue_review"}:
+            group_id = "venue"
+            reason = "統合受信箱に入った会場確認候補です。"
+        elif kind in {"source_url", "official_source", "rare_signal"}:
+            group_id = "source_url"
+            reason = "統合受信箱に入った根拠URL確認候補です。"
+        elif kind in {"song", "song_research"}:
+            group_id = "song_research"
+            reason = "統合受信箱に入った曲候補確認です。"
+        else:
+            group_id = "other"
+            reason = "統合受信箱に入ったレビュー対象です。"
     elif source.id in source_groups:
         group_id, reason = source_groups[source.id]
     else:
@@ -2222,15 +2425,22 @@ def save_decision(
         target_event_name = as_text(target_event_name).strip()
         manual_target_event_match: dict[str, Any] | None = None
         if source_id == "youtube_active_video" and apply_value == "append_existing_event" and target_event_name:
-            resolved = resolve_existing_event_name(target_event_name, root)
-            if resolved["status"] == "ok":
-                manual_target_event_match = resolved["match"]
+            detail = load_item(item_id, root=root, decisions_path=decisions_path)
+            row = detail.get("raw", {}) if detail else {}
+            target_event = youtube_target_event(row)
+            if youtube_target_event_matches_name(target_event, target_event_name):
+                manual_target_event_match = youtube_target_event_match_payload(target_event or {})
                 target_event_name = as_text(manual_target_event_match.get("name"))
-            elif resolved["status"] == "ambiguous":
-                suggestions = " / ".join(format_event_match(row) for row in resolved.get("matches", [])[:5])
-                raise ValueError(f"追加先イベントが複数見つかりました。もう少し正確に入力してください: {suggestions}")
             else:
-                raise ValueError(f"既存イベントが見つかりません: {target_event_name}")
+                resolved = resolve_existing_event_name(target_event_name, root)
+                if resolved["status"] == "ok":
+                    manual_target_event_match = resolved["match"]
+                    target_event_name = as_text(manual_target_event_match.get("name"))
+                elif resolved["status"] == "ambiguous":
+                    suggestions = " / ".join(format_event_match(row) for row in resolved.get("matches", [])[:5])
+                    raise ValueError(f"追加先イベントが複数見つかりました。もう少し正確に入力してください: {suggestions}")
+                else:
+                    raise ValueError(f"既存イベントが見つかりません: {target_event_name}")
         if isinstance(target_song_names, list):
             song_names = [as_text(value).strip() for value in target_song_names if as_text(value).strip()]
         else:
@@ -2293,10 +2503,11 @@ def has_final_source_decision(
     source: ReviewSource,
     row: dict[str, Any],
     historical_refs: dict[str, list[dict[str, Any]]] | None = None,
+    root: Path = ROOT,
 ) -> bool:
     if auto_source_resolution(source, row, historical_refs):
         return True
-    if source.id == "youtube_active_video" and youtube_auto_closed_parent_component(row):
+    if source.id == "youtube_active_video" and youtube_auto_closed_parent_component(row, root=root):
         return True
     for field_name in source.final_decision_fields:
         value = get_path(row, field_name)
@@ -2319,10 +2530,11 @@ def infer_status(
     row: dict[str, Any],
     console_decision: dict[str, Any] | None,
     historical_refs: dict[str, list[dict[str, Any]]] | None = None,
+    root: Path = ROOT,
 ) -> str:
     if console_decision:
         return "reviewed"
-    if has_final_source_decision(source, row, historical_refs):
+    if has_final_source_decision(source, row, historical_refs, root=root):
         return "closed"
     text = action_text(source, row)
     if any(word in text for word in CLOSED_WORDS):
@@ -2339,11 +2551,12 @@ def normalize_item(
     decisions: dict[str, Any],
     include_raw: bool = False,
     historical_refs: dict[str, list[dict[str, Any]]] | None = None,
+    root: Path = ROOT,
 ) -> dict[str, Any]:
     key = item_key(source, row, index)
     item_id = f"{source.id}:{key}"
     console_decision = decisions.get(item_id)
-    status = infer_status(source, row, console_decision, historical_refs)
+    status = infer_status(source, row, console_decision, historical_refs, root=root)
     title = first_text(row, source.title_fields, default=f"{source.title} #{index}")
     subtitle = first_text(row, source.subtitle_fields)
     priority_label = first_text(row, source.priority_fields)
@@ -2393,7 +2606,7 @@ def normalize_item(
             as_text((console_decision or {}).get("manual_target_event_name"))
         )
         item["target_event"] = target_event
-        item["song_candidates"] = youtube_song_candidates(row)
+        item["song_candidates"] = youtube_song_candidates(row, root=root)
         title_event_candidate = as_text(row.get("title_event_name_candidate") or title_parts.get("title_event_name_candidate"))
         item["title_event_name_candidate"] = "" if youtube_parent_component(row) and not target_event else title_event_candidate
     if include_raw:
@@ -2457,6 +2670,7 @@ def build_inventory(root: Path = ROOT, decisions_path: Path = DECISIONS_PATH) ->
                 index,
                 decisions,
                 historical_refs=historical_refs,
+                root=root,
             )
             for index, row in enumerate(rows, 1)
         ]
@@ -2546,7 +2760,15 @@ def load_item(item_id: str, root: Path = ROOT, decisions_path: Path = DECISIONS_
     for index, row in enumerate(get_rows(payload, source.rows_path), 1):
         row_obj = row if isinstance(row, dict) else {"value": row}
         if item_key(source, row_obj, index) == key:
-            return normalize_item(source, row_obj, index, decisions, include_raw=True, historical_refs=historical_refs)
+            return normalize_item(
+                source,
+                row_obj,
+                index,
+                decisions,
+                include_raw=True,
+                historical_refs=historical_refs,
+                root=root,
+            )
     return None
 
 

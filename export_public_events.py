@@ -10,6 +10,7 @@ export_public_venues.py と同じ方針。出力は data/public/events_public.js
                                                     — こと（Claude Code）2026-06-10
 """
 
+import argparse
 import json
 import os
 import re
@@ -73,6 +74,7 @@ try:
     JST = ZoneInfo("Asia/Tokyo")
 except ZoneInfoNotFoundError:
     JST = timezone(timedelta(hours=9))
+PUBLIC_WEEKDAYS = ["月", "火", "水", "木", "金", "土", "日"]
 FALLBACK_SUPPRESSED_VENUES = {
     # 例大祭名の由来となる神社。実際の奉納踊り会場は青葉公園（港区立）なので、
     # 未整備会場フォールバックとして「青山熊野神社の盆踊り」を出さない。
@@ -936,6 +938,7 @@ def build_public_events_from_master(db_path=MASTER_DB):
                 FROM occurrence_dates od
                 WHERE od.occurrence_id = o.occurrence_id
                   AND od.date_type = 'historical_reference'
+                  AND od.date_start >= '2025-01-01'
                   AND od.date_start < '2026-01-01'
                 ORDER BY od.date_start DESC
                 LIMIT 1
@@ -945,6 +948,7 @@ def build_public_events_from_master(db_path=MASTER_DB):
                 FROM occurrence_dates od
                 WHERE od.occurrence_id = o.occurrence_id
                   AND od.date_type = 'historical_reference'
+                  AND od.date_start >= '2025-01-01'
                   AND od.date_start < '2026-01-01'
                 ORDER BY od.date_start DESC
                 LIMIT 1
@@ -976,8 +980,15 @@ def build_public_events_from_master(db_path=MASTER_DB):
         ).fetchall()
 
     for row in rows:
-        date = row["date_start"] or row["historical_reference_date_start"] or None
-        date_end = row["date_end"] or row["historical_reference_date_end"] or None
+        if row["date_start"]:
+            date = row["date_start"]
+            date_end = row["date_end"] or None
+        elif row["historical_reference_date_start"]:
+            date = row["historical_reference_date_start"]
+            date_end = row["historical_reference_date_end"] or None
+        else:
+            date = None
+            date_end = None
         annual_months = [
             int(month)
             for month in _json_list(row["annual_months_json"])
@@ -1056,13 +1067,13 @@ def write_public_js(path, events):
         f.write(";\n")
 
 
-def public_export_today():
+def public_export_today(value=None):
     """Return the date used by date-sensitive public postprocessors."""
-    value = os.environ.get("BON_ODORI_PUBLIC_TODAY")
+    value = value or os.environ.get("BON_ODORI_PUBLIC_TODAY")
     if value:
         parsed = parse_iso_public_date(value)
         if not parsed:
-            raise ValueError(f"invalid BON_ODORI_PUBLIC_TODAY: {value}")
+            raise ValueError(f"invalid public export today: {value}")
         return parsed
     return datetime.now(timezone.utc).astimezone(JST).date()
 
@@ -1084,7 +1095,7 @@ def apply_public_recurrence_metadata(events):
     return enrich_public_events(events, build_rows(events))
 
 
-def apply_public_site_postprocessors(events):
+def apply_public_site_postprocessors(events, *, today=None):
     """Apply the public-site-only fields that used to be run as separate steps."""
     from apply_public_historical_references import (
         apply_historical_references,
@@ -1095,7 +1106,7 @@ def apply_public_site_postprocessors(events):
     events = apply_historical_references(
         events,
         target_year=2026,
-        today=public_export_today(),
+        today=public_export_today(today),
         fixed_date_rules=load_fixed_date_rules(),
     )["events"]
     events = apply_display_tiers(events)
@@ -1128,6 +1139,136 @@ def _load_json_file(path, default):
         return default
     with open(path, encoding="utf-8") as handle:
         return json.load(handle)
+
+
+def _weekday_label(value):
+    parsed = parse_iso_public_date(value)
+    return PUBLIC_WEEKDAYS[parsed.weekday()] if parsed else ""
+
+
+def _rdb_prediction_payload(row):
+    try:
+        payload = json.loads(row.get("source_payload_json") or "{}")
+    except json.JSONDecodeError:
+        payload = {}
+    evidence_years = payload.get("evidence_years") or []
+    start = row.get("date_start") or payload.get("predicted_date_start") or ""
+    end = row.get("date_end") or payload.get("predicted_date_end") or start
+    prediction = {
+        "rule_type": row.get("rule_type") or payload.get("rule_type") or "",
+        "predicted_date_start": start,
+        "predicted_date_end": end,
+        "predicted_weekday_start": payload.get("predicted_weekday_start") or _weekday_label(start),
+        "predicted_weekday_end": payload.get("predicted_weekday_end") or _weekday_label(end),
+        "duration_days": payload.get("duration_days"),
+        "score": row.get("score") if row.get("score") is not None else payload.get("score"),
+        "confidence": row.get("confidence") or payload.get("confidence") or "unknown",
+        "basis": row.get("basis") or payload.get("basis") or "",
+        "evidence_years": evidence_years,
+        "evidence_count": payload.get("evidence_count") or len(evidence_years),
+        "evidence_rows": payload.get("evidence_rows") or [],
+    }
+    return {
+        "series_key": payload.get("series_key") or row.get("target_series_id") or "",
+        "event_name": payload.get("event_name") or row.get("target_event_name") or "",
+        "venue": payload.get("venue") or "",
+        "target_year": row.get("predicted_year"),
+        "prediction": prediction,
+        "candidate_rules": payload.get("candidate_rules") or [prediction],
+        "actual_observations": payload.get("actual_observations") or [],
+        "rdb_prediction": {
+            "predicted_date_id": row.get("predicted_date_id"),
+            "application_status": row.get("application_status"),
+            "source": row.get("source"),
+        },
+    }
+
+
+def _prediction_key(row):
+    return (str(row.get("event_name") or "").strip(), str(row.get("venue") or "").strip())
+
+
+def load_rdb_public_date_predictions(db_path=MASTER_DB, target_year=2026):
+    db_path = os.fspath(db_path)
+    if not os.path.exists(db_path):
+        return None
+    conn = connect_existing(db_path)
+    try:
+        conn.row_factory = sqlite3.Row
+        try:
+            rows = [
+                dict(row)
+                for row in conn.execute(
+                    """
+                    SELECT predicted_date_id, historical_candidate_id, target_series_id,
+                           target_occurrence_id, target_event_name, predicted_year,
+                           date_start, date_end, date_status, rule_type, basis,
+                           confidence, score, application_status, source,
+                           source_payload_json
+                    FROM predicted_occurrence_dates
+                    WHERE predicted_year = ?
+                      AND date_status = 'predicted'
+                    ORDER BY target_event_name, date_start, predicted_date_id
+                    """,
+                    (target_year,),
+                )
+            ]
+        except sqlite3.OperationalError as exc:
+            if "no such table" not in str(exc):
+                raise
+            rows = []
+    finally:
+        conn.close()
+    if not rows:
+        return None
+    predictions = [_rdb_prediction_payload(row) for row in rows]
+    predictions = [row for row in predictions if row.get("event_name") and row.get("venue")]
+    if not predictions:
+        return None
+    counts = {}
+    for row in predictions:
+        source = ((row.get("rdb_prediction") or {}).get("source") or "unknown")
+        counts[source] = counts.get(source, 0) + 1
+    return {
+        "generated_by": "export_public_events.py",
+        "source": "master_rdb.predicted_occurrence_dates",
+        "target_year": target_year,
+        "summary": {
+            "prediction_count": len(predictions),
+            "source_counts": counts,
+        },
+        "predictions": predictions,
+    }
+
+
+def merge_prediction_payloads(primary, fallback):
+    if not primary:
+        return fallback or {}
+    fallback = fallback or {}
+    merged = dict(primary)
+    predictions = list(primary.get("predictions") or [])
+    seen = {_prediction_key(row) for row in predictions}
+    fallback_used = []
+    for row in fallback.get("predictions") or []:
+        key = _prediction_key(row)
+        if key in seen:
+            continue
+        predictions.append(row)
+        fallback_used.append({"event_name": row.get("event_name"), "venue": row.get("venue")})
+        seen.add(key)
+    merged["predictions"] = predictions
+    summary = dict(merged.get("summary") or {})
+    summary["prediction_count"] = len(predictions)
+    summary["json_fallback_count"] = len(fallback_used)
+    summary["json_fallback"] = fallback_used
+    merged["summary"] = summary
+    return merged
+
+
+def load_public_date_predictions_for_export(target_year=2026):
+    rdb_payload = load_rdb_public_date_predictions(MASTER_DB, target_year=target_year)
+    json_payload = load_public_date_prediction_json(DATE_PREDICTIONS, {})
+    return merge_prediction_payloads(rdb_payload, json_payload)
 
 
 def _override_matches(event, match):
@@ -1382,7 +1523,14 @@ def suppress_replaced_recurring_events(events):
     ]
 
 
-def main():
+def main(argv=None):
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--today",
+        help="JST date used for public historical-reference expiry checks (YYYY-MM-DD).",
+    )
+    args = parser.parse_args(argv)
+
     if PUBLIC_SOURCE in {"notion", "legacy_notion"} and not os.environ.get("NOTION_API_TOKEN"):
         print("Notion未設定 (NOTION_API_TOKEN) のためイベント公開エクスポートをスキップ")
         return
@@ -1393,12 +1541,14 @@ def main():
         return
     events = apply_public_event_overrides(sanitize_public_event_details(events))
     events = suppress_replaced_recurring_events(apply_public_recurrence_metadata(events))
-    prediction_result = apply_public_date_predictions(
-        events,
-        load_public_date_prediction_json(DATE_PREDICTIONS, {}),
-    )
+    prediction_payload = load_public_date_predictions_for_export(target_year=2026)
+    prediction_result = apply_public_date_predictions(events, prediction_payload)
+    prediction_result["report"]["prediction_input"] = {
+        "source": prediction_payload.get("source") or str(DATE_PREDICTIONS),
+        "summary": prediction_payload.get("summary") or {},
+    }
     events = apply_display_tiers(prediction_result["events"])
-    events = apply_public_site_postprocessors(events)
+    events = apply_public_site_postprocessors(events, today=args.today)
     source_map = public_event_source_map(events)
     public_events = strip_public_internal_event_fields(events)
     write_public_date_prediction_json(DATE_PREDICTION_REPORT, prediction_result["report"])

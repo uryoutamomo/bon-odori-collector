@@ -351,6 +351,26 @@ CREATE TABLE predicted_occurrence_dates (
   FOREIGN KEY (target_occurrence_id) REFERENCES event_occurrences(occurrence_id)
 );
 
+CREATE TABLE review_inbox_items (
+  inbox_id TEXT PRIMARY KEY,
+  kind TEXT NOT NULL,
+  domain TEXT NOT NULL,
+  priority_label TEXT,
+  priority_score REAL,
+  title TEXT NOT NULL,
+  event_name TEXT,
+  venue TEXT,
+  event_year INTEGER,
+  source_id TEXT NOT NULL,
+  source_key TEXT NOT NULL,
+  source_url TEXT,
+  recommended_action TEXT,
+  status TEXT NOT NULL DEFAULT 'pending',
+  payload_json TEXT NOT NULL DEFAULT '{}',
+  created_at TEXT NOT NULL,
+  updated_at TEXT NOT NULL
+);
+
 CREATE TABLE notion_sync_jobs (
   job_id TEXT PRIMARY KEY,
   direction TEXT NOT NULL,
@@ -377,6 +397,7 @@ CREATE INDEX idx_observed_occurrence_songs_match ON observed_occurrence_songs(ma
 CREATE INDEX idx_event_investigation_tasks_priority ON event_investigation_tasks(priority_label, priority_score);
 CREATE INDEX idx_historical_promotion_candidates_target ON historical_promotion_candidates(target_occurrence_id);
 CREATE INDEX idx_predicted_occurrence_dates_target ON predicted_occurrence_dates(target_occurrence_id, predicted_year);
+CREATE INDEX idx_review_inbox_status ON review_inbox_items(status, kind, priority_score);
 """
 
 
