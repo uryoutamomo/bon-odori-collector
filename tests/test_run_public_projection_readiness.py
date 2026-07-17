@@ -35,6 +35,20 @@ class RunPublicProjectionReadinessTest(unittest.TestCase):
         )
         self.assertEqual(env["BON_ODORI_PUBLIC_TODAY"], "2026-07-16")
 
+    def test_promote_historical_requests_marks_output_as_machine_only(self):
+        with patch.object(MODULE, "run") as run:
+            MODULE.promote_historical_requests(
+                "python3",
+                Path("requests.json"),
+                Path("reviewed.json"),
+                Path("reviewed.md"),
+                quiet=True,
+            )
+
+        command = run.call_args.args[0]
+        self.assertEqual(command[command.index("--reviewed-by") + 1], "readiness機械検査（人レビュー未了）")
+        self.assertIn("実applyには使用しない", command[command.index("--review-note") + 1])
+
     def test_summarize_reports_before_and_after_counts(self):
         with tempfile.TemporaryDirectory() as tmp:
             tmp = Path(tmp)
@@ -82,10 +96,14 @@ class RunPublicProjectionReadinessTest(unittest.TestCase):
             dry_run.write_text(
                 json.dumps(
                     {
-                        "requests_applied": 2,
-                        "requests_unresolved": 0,
-                        "issues_by_severity": {},
-                        "audit_issues_by_severity": {},
+                        "applied": {
+                            "requests_applied": [{"request_id": "r1"}, {"request_id": "r2"}],
+                            "requests_unresolved": [],
+                        },
+                        "summary": {
+                            "issues_by_severity": {},
+                            "audit_issues_by_severity": {},
+                        },
                     }
                 ),
                 encoding="utf-8",
@@ -124,6 +142,9 @@ class RunPublicProjectionReadinessTest(unittest.TestCase):
         self.assertEqual(summary["reviewed_historical_requests"]["request_count"], 2)
         self.assertEqual(summary["reviewed_historical_requests"]["dry_run_only_count"], 0)
         self.assertEqual(summary["dry_run_apply"]["requests_applied"], 2)
+        self.assertEqual(summary["dry_run_apply"]["requests_unresolved"], 0)
+        self.assertEqual(summary["dry_run_apply"]["issues_by_severity"], {})
+        self.assertEqual(summary["dry_run_apply"]["audit_issues_by_severity"], {})
         self.assertEqual(summary["after_historical_dry_run"]["blocking_row_count"], 1)
         self.assertEqual(summary["mismatch_review"]["row_count"], 0)
 

@@ -60,6 +60,11 @@ class BuildPublicProjectionMismatchReviewTest(unittest.TestCase):
     def test_parse_statuses_accepts_prefixed_names(self):
         self.assertEqual(MODULE.parse_statuses(["historical:date_mismatch"]), {"date_mismatch"})
 
+    def test_explicit_status_does_not_include_default(self):
+        args = MODULE.parse_args(["--status", "missing_rdb_source"])
+
+        self.assertEqual(args.status, ["missing_rdb_source"])
+
 
 if __name__ == "__main__":
     unittest.main()

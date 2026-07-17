@@ -128,7 +128,7 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument(
         "--status",
         action="append",
-        default=["date_mismatch"],
+        default=[],
         help="historical status to include; repeatable. Default: date_mismatch",
     )
     parser.add_argument("--out-json", type=Path, default=OUT_JSON)
@@ -138,16 +138,17 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
 
 def main(argv: list[str] | None = None) -> int:
     args = parse_args(argv)
+    statuses = parse_statuses(args.status or ["date_mismatch"])
     compare_report = load_json(args.compare_report, {})
     public_events = load_json(args.public_events, [])
-    rows = build_rows(compare_report, public_events, parse_statuses(args.status))
+    rows = build_rows(compare_report, public_events, statuses)
     payload = {
         "generated_by": "scripts/build_public_projection_mismatch_review.py",
         "sources": {
             "compare_report": str(args.compare_report),
             "public_events": str(args.public_events),
         },
-        "statuses": sorted(parse_statuses(args.status)),
+        "statuses": sorted(statuses),
         "row_count": len(rows),
         "rows": rows,
     }

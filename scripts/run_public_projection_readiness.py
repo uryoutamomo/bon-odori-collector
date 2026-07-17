@@ -161,9 +161,9 @@ def promote_historical_requests(
             "--requests",
             str(requests),
             "--reviewed-by",
-            "おと（Codex）",
+            "readiness機械検査（人レビュー未了）",
             "--review-note",
-            "C第7 readiness機械検査合格。実applyは内田さんGO後に実行する。",
+            "readiness機械検査用に自動生成。人レビュー済みではなく、実applyには使用しない。",
             "--out-json",
             str(out_json),
             "--out-md",
@@ -218,6 +218,8 @@ def summarize(
     reviewed_payload = load_json(reviewed_requests_json)
     reviewed_requests = reviewed_payload.get("requests") or []
     dry_run = load_json(dry_run_json)
+    dry_run_applied = dry_run.get("applied") or {}
+    dry_run_summary = dry_run.get("summary") or {}
     after = load_json(after_json)
     mismatch_review = load_json(mismatch_json)
     return {
@@ -251,10 +253,10 @@ def summarize(
             "reviewed_at": reviewed_payload.get("reviewed_at"),
         },
         "dry_run_apply": {
-            "requests_applied": dry_run.get("requests_applied"),
-            "requests_unresolved": dry_run.get("requests_unresolved"),
-            "issues_by_severity": dry_run.get("issues_by_severity"),
-            "audit_issues_by_severity": dry_run.get("audit_issues_by_severity"),
+            "requests_applied": len(dry_run_applied.get("requests_applied") or []),
+            "requests_unresolved": len(dry_run_applied.get("requests_unresolved") or []),
+            "issues_by_severity": dry_run_summary.get("issues_by_severity"),
+            "audit_issues_by_severity": dry_run_summary.get("audit_issues_by_severity"),
         },
         "after_historical_dry_run": {
             "source_counts": after.get("source_counts"),
