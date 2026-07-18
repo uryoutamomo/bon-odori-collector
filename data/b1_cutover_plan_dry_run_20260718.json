@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "generated_by": "manual composition from read-only cutover audit commands",
+  "generated_at": "2026-07-18T14:05:00Z",
+  "mode": "plan_dry_run_only",
+  "production_change": false,
+  "reader_implementation_present": false,
+  "reader_mode_current_use": "writer safety gate only; non-legacy is rejected",
+  "cutover_scope": {
+    "consumer": "local review console B1 sources",
+    "public_export": false,
+    "workflow": false,
+    "decision_write": false,
+    "domain_write": false,
+    "s3_publish": false
+  },
+  "artifact": {
+    "database_sha256": "230205e1ad51d10eeb277a32e22e5a5436129a764079b7a7590de8b2593b34d7",
+    "snapshot_id": "20260718T133158Z",
+    "review_inbox_item_count": 170,
+    "integrity": "ok",
+    "foreign_key_violation_count": 0,
+    "decision_nonnull_count": 0,
+    "public_projection_sha256": "04f92aa2fa7aebc9daa266cc91ced18889784e1ceb408998452678bd328002c6"
+  },
+  "parity": {
+    "source_count": 7,
+    "expected_count": 170,
+    "inbox_count": 170,
+    "missing_count": 0,
+    "extra_count": 0,
+    "content_mismatch_count": 0,
+    "parity": true,
+    "sources": [
+      {
+        "source_id": "official_source",
+        "count": 52,
+        "input_sha256": "bf4011f232c7546913dc2718caa9546837c49f1ce9ba098e05db2afcc806d3c7"
+      },
+      {
+        "source_id": "registered_event_investigation",
+        "count": 79,
+        "input_sha256": "36c77360ae1afb43368f7512529f15ea28fee64674de933d19a53a2851d3fdd0"
+      },
+      {
+        "source_id": "predicted_occurrence_research",
+        "count": 8,
+        "input_sha256": "1705a3aabb4354e96a087f1f7c0b617583a28656f04e1da618c9ff97b3be85cb"
+      },
+      {
+        "source_id": "predicted_occurrence_date_review",
+        "count": 12,
+        "input_sha256": "fb4edcc14d84fb2aba215f4dc1f8dd805d2283ec4311bd5069998d95777d62b8"
+      },
+      {
+        "source_id": "missing_source_url",
+        "count": 0,
+        "input_sha256": "d4f11ada1d5d977b2c2bdce01b187fc2d0ed79426df46f4de1165ff4c27ef0e0"
+      },
+      {
+        "source_id": "missing_venue",
+        "count": 3,
+        "input_sha256": "7c6c483c1ee840702c0e32ac16d73e029b5340df9804799537af2971d7d9fca4"
+      },
+      {
+        "source_id": "historical_reference",
+        "count": 16,
+        "input_sha256": "160698aa048f557acd2dc039f738c081cc8042f175fe36700323a7e5eac7b0aa"
+      }
+    ]
+  },
+  "next": "B1-cutover-a implementation PR, then koto pre-review, then Uchida-san execution GO"
+}
