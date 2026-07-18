@@ -30,12 +30,17 @@ executorはactivate前に次をコードで再検証する。
 - integrity ok / FK 0 / decision系non-NULL 0
 - DBのpending 170件 = source別`52/79/8/12/0/3/16`
 - `review_inbox.json`全row = fetch DBのpending row
-- 7 legacy input SHA = 対応adapter snapshotの`input_sha256`
+- 7 legacy input SHAを独立記録
+- 7 adapter input実体 SHA = 対応adapter snapshotの`input_sha256`
 - 7 adapter snapshotとfetch DBのparityがmissing/extra/mismatch `0/0/0`
 - reader previewがcanary/full exact replacement、non-B1不変、新規重複0
 - public projection SHA = operator固定SHA
 
 いずれか1つでも不一致ならconsole serverを開始しない。
+
+canaryはcanary置換、非B1不変、cutover起因重複0を必須にするが、未実行のfull置換合格は
+起動条件にしない。fullの`inbox` modeだけが7 sourceすべてのexact replacementを必須にする。
+これにより後段fullの不一致を隠さず証跡へ残しながら、独立した3件canaryを検証できる。
 
 ## Explicit gates
 
