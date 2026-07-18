@@ -126,7 +126,13 @@ def _database_audit(database: Path) -> tuple[list[dict[str, Any]], dict[str, Any
     }
 
 
-def _prepared_inputs(root: Path, database_rows: list[dict[str, Any]], snapshot_paths: list[Path]) -> dict[str, Any]:
+def _prepared_inputs(
+    root: Path,
+    database_rows: list[dict[str, Any]],
+    snapshot_paths: list[Path],
+    *,
+    reader_mode: str,
+) -> dict[str, Any]:
     root = Path(root).resolve()
     inbox_path = root / "data/review_inbox.json"
     inbox_payload = _read_json(inbox_path)
@@ -144,21 +150,30 @@ def _prepared_inputs(root: Path, database_rows: list[dict[str, Any]], snapshot_p
 
     source_by_id = {source.id: source for source in data.SOURCES}
     legacy_hashes: dict[str, str] = {}
+    adapter_input_hashes: dict[str, str] = {}
     adapter_hashes: dict[str, str] = {}
     for legacy_source_id, inbox_source_id in data.B1_LEGACY_TO_INBOX_SOURCE_IDS.items():
         legacy_path = root / source_by_id[legacy_source_id].path
         if not legacy_path.is_file():
             raise SourceWriterError(f"prepared legacy input is missing: {legacy_path}")
-        actual_input_sha = input_sha256(legacy_path.read_bytes())
-        expected_input_sha = str(snapshot_by_source[inbox_source_id].get("input_sha256") or "").lower()
+        legacy_hashes[legacy_source_id] = input_sha256(legacy_path.read_bytes())
+
+        snapshot = snapshot_by_source[inbox_source_id]
+        adapter_input_path = Path(str(snapshot.get("input_path") or ""))
+        expected_input_sha = str(snapshot.get("input_sha256") or "").lower()
+        if not adapter_input_path.is_file():
+            raise SourceWriterError(
+                f"adapter input is missing for {inbox_source_id}: {adapter_input_path}"
+            )
+        actual_input_sha = input_sha256(adapter_input_path.read_bytes())
         if actual_input_sha != expected_input_sha:
             raise SourceWriterError(
-                f"legacy input lineage mismatch for {legacy_source_id}: "
-                f"actual={actual_input_sha} adapter={expected_input_sha or '(missing)'}"
+                f"adapter input lineage mismatch for {inbox_source_id}: "
+                f"actual={actual_input_sha} snapshot={expected_input_sha or '(missing)'}"
             )
-        legacy_hashes[legacy_source_id] = actual_input_sha
+        adapter_input_hashes[inbox_source_id] = actual_input_sha
         adapter_hashes[inbox_source_id] = file_sha256(
-            Path(snapshot_by_source[inbox_source_id]["adapter_snapshot_path"])
+            Path(snapshot["adapter_snapshot_path"])
         )
 
     parity = build_parity_report(snapshots, {**inbox_payload, "items": database_rows})
@@ -178,8 +193,23 @@ def _prepared_inputs(root: Path, database_rows: list[dict[str, Any]], snapshot_p
         root=root,
         decisions_path=root / "data/review_console/decisions.json",
     )
-    if not preview["ok"]:
-        raise SourceWriterError(f"B1 reader preview failed: {preview['checks']}")
+    required_check_names = [
+        "default_mode_is_legacy",
+        "canary_exact_replacement",
+        "non_b1_unchanged",
+        "cutover_introduced_duplicate_item_ids_zero",
+    ]
+    if reader_mode == "inbox":
+        required_check_names.extend(
+            ("full_legacy_b1_removed", "full_b1_exact_replacement")
+        )
+    reader_mode_checks = {
+        name: bool(preview["checks"].get(name)) for name in required_check_names
+    }
+    if not all(reader_mode_checks.values()):
+        raise SourceWriterError(
+            f"B1 {reader_mode} reader preview failed: {reader_mode_checks}"
+        )
     return {
         "review_inbox_export": {
             "path": str(inbox_path),
@@ -188,10 +218,17 @@ def _prepared_inputs(root: Path, database_rows: list[dict[str, Any]], snapshot_p
             "item_count": len(exported_rows),
         },
         "legacy_input_sha256": legacy_hashes,
+        "adapter_input_sha256": adapter_input_hashes,
         "adapter_snapshot_sha256": adapter_hashes,
         "parity": parity,
         "parity_sha256": _canonical_sha(parity),
         "reader_preview": preview,
+        "reader_mode_gate": {
+            "mode": reader_mode,
+            "required_checks": reader_mode_checks,
+            "ok": all(reader_mode_checks.values()),
+            "full_readiness": bool(preview["ok"]),
+        },
     }
 
 
@@ -240,6 +277,7 @@ def run_cutover(
         Path(args.input_root),
         database_rows,
         [Path(path) for path in args.adapted_snapshot],
+        reader_mode=mode,
     )
     public_sha = digest_function(database, today=public_today)
     expected_public_sha = validate_expected_rstart(args.expect_public_sha256)

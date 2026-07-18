@@ -88,6 +88,7 @@ def _prepared_fixture(tmp):
             snapshot_path,
             {
                 "source_id": inbox_source_id,
+                "input_path": str(legacy_path),
                 "input_sha256": input_sha256(legacy_path.read_bytes()),
                 "input_size_bytes": legacy_path.stat().st_size,
                 "item_count": len(source_rows),
@@ -200,7 +201,7 @@ class RunReviewConsoleCutoverTest(unittest.TestCase):
                     activate=lambda _mode: self.fail("must not activate"),
                 )
 
-    def test_rejects_legacy_input_sha_not_matching_adapter_snapshot(self):
+    def test_rejects_adapter_input_sha_not_matching_adapter_snapshot(self):
         with tempfile.TemporaryDirectory() as tmp:
             root, database, manifest, snapshots, checksum = _prepared_fixture(tmp)
             source_by_id = {source.id: source for source in data.SOURCES}
@@ -209,10 +210,64 @@ class RunReviewConsoleCutoverTest(unittest.TestCase):
             legacy_payload[source_by_id["official_source"].rows_path][0]["title"] = "tampered"
             _write_json(legacy_path, legacy_payload)
 
-            with self.assertRaisesRegex(SourceWriterError, "legacy input lineage mismatch"):
+            with self.assertRaisesRegex(SourceWriterError, "adapter input lineage mismatch"):
                 run_cutover(
                     _args(tmp, root, database, manifest, snapshots, checksum),
                     environ=ENABLED_ENV,
+                    now=datetime(2026, 7, 18, 12, tzinfo=JST),
+                    digest_function=lambda _database, *, today: PUBLIC_SHA,
+                    activate=lambda _mode: self.fail("must not activate"),
+                )
+
+    def test_canary_does_not_require_full_replacement_but_inbox_does(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root, database, manifest, snapshots, checksum = _prepared_fixture(tmp)
+            source_by_id = {source.id: source for source in data.SOURCES}
+            historical_legacy = root / source_by_id["historical_promotion_candidate"].path
+            historical_snapshot = next(
+                path
+                for path in snapshots
+                if json.loads(path.read_text(encoding="utf-8"))["source_id"]
+                == "historical_reference"
+            )
+
+            distinct_adapter_input = Path(tmp) / "historical-adapter-input.json"
+            distinct_adapter_input.write_bytes(historical_legacy.read_bytes())
+            snapshot_payload = json.loads(historical_snapshot.read_text(encoding="utf-8"))
+            snapshot_payload["input_path"] = str(distinct_adapter_input)
+            snapshot_payload["input_sha256"] = input_sha256(distinct_adapter_input.read_bytes())
+            _write_json(historical_snapshot, snapshot_payload)
+
+            legacy_payload = json.loads(historical_legacy.read_text(encoding="utf-8"))
+            legacy_payload[source_by_id["historical_promotion_candidate"].rows_path].pop()
+            _write_json(historical_legacy, legacy_payload)
+
+            activated = []
+            report = run_cutover(
+                _args(tmp, root, database, manifest, snapshots, checksum),
+                environ=ENABLED_ENV,
+                now=datetime(2026, 7, 18, 12, tzinfo=JST),
+                digest_function=lambda _database, *, today: PUBLIC_SHA,
+                activate=activated.append,
+            )
+            self.assertEqual(activated, ["canary"])
+            self.assertTrue(report["prepared_inputs"]["reader_mode_gate"]["ok"])
+            self.assertFalse(report["prepared_inputs"]["reader_mode_gate"]["full_readiness"])
+
+            with self.assertRaisesRegex(SourceWriterError, "B1 inbox reader preview failed"):
+                run_cutover(
+                    _args(
+                        tmp,
+                        root,
+                        database,
+                        manifest,
+                        snapshots,
+                        checksum,
+                        reader_mode="inbox",
+                        confirm=CONFIRM_BY_MODE["inbox"],
+                        evidence_out=Path(tmp) / "inbox-evidence.json",
+                    ),
+                    environ={**ENABLED_ENV, "REVIEW_CONSOLE_READER_MODE": "inbox"},
                     now=datetime(2026, 7, 18, 12, tzinfo=JST),
                     digest_function=lambda _database, *, today: PUBLIC_SHA,
                     activate=lambda _mode: self.fail("must not activate"),
