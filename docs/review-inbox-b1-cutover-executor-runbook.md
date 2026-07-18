@@ -1,6 +1,7 @@
 # B1 review console reader cutover executor runbook
 
-Updated: 2026-07-18 JST  
+Updated: 2026-07-18 JST
+
 署名: おと（Codex）
 
 ## Scope
