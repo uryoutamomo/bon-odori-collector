@@ -2,7 +2,7 @@
 
 作成日: 2026-07-17 JST  
 署名: おと（Codex）  
-ステータス: B0a完了、B0bを小PR単位で実装中
+ステータス: B0正本適用完了、B1 planレビュー合格・B1-1実装中
 
 ## 目的と境界
 
@@ -133,6 +133,10 @@ checksumをremote checksumと照合し、不一致なら上書きせず停止す
 日次cronの発火帯（17:20〜18:00 JST）を避け、dry-runレビュー後の内田さんの別途GOがある場合だけ行う。
 
 ### B1: 未来の開催判断
+
+B1のdual-write定義、白金canary、source配線順、入力hash系譜、旧キュー閉鎖、cutover、rollback、
+Dの2軸語彙との境界は `docs/review-inbox-b1-dual-write-plan.md` を具体planの正本とする。
+本節は全体順序の骨子として残す。
 
 最初に次をdual-writeする。
 

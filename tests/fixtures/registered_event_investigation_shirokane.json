@@ -1,0 +1,46 @@
+{
+  "generated_by": "test_fixture",
+  "generated_at": "2026-07-18T00:00:00+00:00",
+  "summary": {
+    "incomplete_event_count": 1
+  },
+  "tasks": [
+    {
+      "task_id": "evtinv_d7b5f534c8b3ddd8",
+      "scope": "primary_unconfirmed",
+      "occurrence_id": "occ_fbba78bb63034a2f",
+      "notion_page_id": "37b8be04-e762-816f-b0d2-ff8a8f1c1eee",
+      "event_name": "盆ダンスフェスティバル2023",
+      "event_year": 2023,
+      "status": "未確認",
+      "missing_date": true,
+      "missing_venue": false,
+      "known_venue_names": [
+        "白金児童遊園"
+      ],
+      "source_url": "https://www.city.minato.tokyo.jp/kouhou/kuse/koho/minato2025/202507/20250701top/01.html",
+      "annual_months": [
+        7
+      ],
+      "is_tokyo_23_hint": true,
+      "is_outside_tokyo_23_hint": false,
+      "needs_name_review": true,
+      "needs_occurrence_split": false,
+      "has_archival_source_url": false,
+      "observed_candidate_count": 0,
+      "observed_candidate_confidence": "",
+      "observed_candidate": {},
+      "priority_score": 7,
+      "priority_label": "P1",
+      "recommended_action": "queue_for_post_cutover_research",
+      "reason_codes": [
+        "status_unconfirmed",
+        "missing_date",
+        "has_source_url",
+        "tokyo_23_hint",
+        "needs_name_review",
+        "summer_month_hint"
+      ]
+    }
+  ]
+}
