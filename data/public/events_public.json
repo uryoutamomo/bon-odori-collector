@@ -15446,11 +15446,11 @@
     "last_seen_dates": [
       "2025-07-18"
     ],
-    "display_tier": "historical_slide",
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
+    "display_tier": "historical_reference",
+    "current_event_state": "unconfirmed",
+    "date_certainty_tier": "historical_reference",
     "historical_reference": {
-      "display_tier": "historical_slide",
+      "display_tier": "historical_reference",
       "last_seen_year": 2025,
       "last_seen_dates": [
         "2025-07-18"
@@ -15474,41 +15474,16 @@
       ],
       "edition_number": null,
       "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-07-17",
-        "date_end": "2026-07-17",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第3金曜を2026年へスライド",
-        "source_date": "2025-07-18",
-        "source_date_end": null,
-        "duration_days": 1
-      }
+      "slide": null
     },
-    "historical_display_tier": "historical_slide",
+    "historical_display_tier": "historical_reference",
     "historical_last_seen_year": 2025,
     "historical_last_seen_dates": [
       "2025-07-18"
     ],
     "historical_reference_label": "2025-07-18実績・今年未確認",
     "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.68,
-    "historical_slide": {
-      "date": "2026-07-17",
-      "date_end": "2026-07-17",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第3金曜を2026年へスライド",
-      "source_date": "2025-07-18",
-      "source_date_end": null,
-      "duration_days": 1
-    },
-    "historical_slide_date": "2026-07-17",
-    "historical_slide_date_end": "2026-07-17",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第3金曜を2026年へスライド",
-    "predicted_date": "2026-07-17",
-    "predicted_date_end": "2026-07-17",
-    "prediction_basis": "2025年実績の同月第3金曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "historical_reference_score": 0.68
   },
   {
     "name": "堤方東町会「盆踊り大会」",
@@ -19334,11 +19309,11 @@
     "last_seen_dates": [
       "2025-07-18"
     ],
-    "display_tier": "historical_slide",
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
+    "display_tier": "historical_reference",
+    "current_event_state": "unconfirmed",
+    "date_certainty_tier": "historical_reference",
     "historical_reference": {
-      "display_tier": "historical_slide",
+      "display_tier": "historical_reference",
       "last_seen_year": 2025,
       "last_seen_dates": [
         "2025-07-18"
@@ -19360,41 +19335,16 @@
       ],
       "edition_number": null,
       "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-07-17",
-        "date_end": "2026-07-17",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第3金曜を2026年へスライド",
-        "source_date": "2025-07-18",
-        "source_date_end": null,
-        "duration_days": 1
-      }
+      "slide": null
     },
-    "historical_display_tier": "historical_slide",
+    "historical_display_tier": "historical_reference",
     "historical_last_seen_year": 2025,
     "historical_last_seen_dates": [
       "2025-07-18"
     ],
     "historical_reference_label": "2025-07-18実績・今年未確認",
     "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.6,
-    "historical_slide": {
-      "date": "2026-07-17",
-      "date_end": "2026-07-17",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第3金曜を2026年へスライド",
-      "source_date": "2025-07-18",
-      "source_date_end": null,
-      "duration_days": 1
-    },
-    "historical_slide_date": "2026-07-17",
-    "historical_slide_date_end": "2026-07-17",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第3金曜を2026年へスライド",
-    "predicted_date": "2026-07-17",
-    "predicted_date_end": "2026-07-17",
-    "prediction_basis": "2025年実績の同月第3金曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "historical_reference_score": 0.6
   },
   {
     "name": "野毛町会 納涼盆踊り大会",

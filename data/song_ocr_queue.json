@@ -1,6 +1,6 @@
 {
   "generated_by": "build_song_ocr_queue.py",
-  "count": 21,
+  "count": 22,
   "items": [
     {
       "id": "b21783a2a9785946",
@@ -321,6 +321,22 @@
         "pic.x.com/mdcuoxHBVc"
       ],
       "text": "西糀谷3丁目町会の盆踊りに参加してきました！\n\n糀谷地区では今年最初の盆踊りということもあり、会場は大賑わい✨\n\n町会ごとに曲目が違うので踊れない曲もありましたが、知っている曲は皆さんと一緒に😊\n\n「ダンシング・ヒーロー」は疲れるけど踊ってて楽しい曲ですね！ https://t.co/mdcuoxHBVc",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "e9897a4ba931ba2f",
+      "status": "needs_ocr",
+      "account": "@hakubi435",
+      "url": "https://x.com/hakubi435/status/2078112033846051294",
+      "tweet_id": "2078112033846051294",
+      "date": "2026-07-17T13:38:12+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HNbv4EeaYAAfr-Y.jpg",
+        "https://t.co/5g2gsFMe78",
+        "pic.x.com/5g2gsFMe78",
+        "https://pbs.twimg.com/media/HNbv4EPakAAzVIH.jpg"
+      ],
+      "text": "2日続けて盆踊り🏮👘 🐙\n途中で曲目が変わったので2巡したら腰に結構なダメージ🕺🕺\n明日起き上がれないパターンか？(:3[_____] https://t.co/5g2gsFMe78",
       "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
     }
   ]

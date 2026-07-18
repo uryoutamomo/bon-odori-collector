@@ -1,21 +1,21 @@
 {
   "generated_by": "prepare_weekly_harvest_review.py",
-  "generated_at": "2026-07-17T08:30:43.220464+00:00",
+  "generated_at": "2026-07-18T08:11:09.715916+00:00",
   "source": "build_weekly_harvest_candidates.py",
-  "source_generated_at": "2026-07-17T08:30:36.406696+00:00",
+  "source_generated_at": "2026-07-18T08:11:02.701397+00:00",
   "days": 3,
-  "voice_count": 760,
-  "candidate_count": 109,
+  "voice_count": 814,
+  "candidate_count": 112,
   "category_counts": {
-    "曲×会場共起": 16,
-    "曲候補": 88,
-    "用語候補": 5
+    "曲×会場共起": 12,
+    "曲候補": 94,
+    "用語候補": 6
   },
-  "non_song_review_count": 21,
-  "song_candidate_count": 88,
-  "song_direct_dry_run_count": 70,
-  "song_review_count": 1,
-  "song_rejected_noise_count": 17,
+  "non_song_review_count": 18,
+  "song_candidate_count": 94,
+  "song_direct_dry_run_count": 79,
+  "song_review_count": 2,
+  "song_rejected_noise_count": 13,
   "review_files": {
     "non_song_json": "data/weekly_harvest_review_candidates.json",
     "non_song_ui": "data/weekly_harvest_review_ui.html",
@@ -33,15 +33,16 @@
       "東京音頭 × 靖国神社",
       "多くの踊り × 靖国神社",
       "おしりたんてい音頭 × 晴海ふ頭公園",
-      "みんなで楽しく踊り × 晴海ふ頭公園",
-      "を掛け声かけながら踊り × 靖国神社",
       "ドンパン節 × 靖国神社",
       "全国屈指の河内音頭 × 牛嶋神社",
       "千代田踊り × 靖国神社",
       "本場・大阪からも踊り × 牛嶋神社",
-      "河内音頭 × 牛嶋神社"
+      "河内音頭 × 牛嶋神社",
+      "炭坑節 × 靖国神社",
+      "阿波踊り × 靖国神社"
     ],
     "song_review": [
+      "盆ジョビ",
       "郡上おどり"
     ]
   }
