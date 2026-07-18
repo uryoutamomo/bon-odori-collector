@@ -180,6 +180,44 @@ class RunReviewConsoleCutoverTest(unittest.TestCase):
                     activate=lambda _mode: self.fail("must not activate"),
                 )
 
+    def test_rejects_operator_rstart_not_matching_fetched_database(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root, database, manifest, snapshots, checksum = _prepared_fixture(tmp)
+            self.assertNotEqual(checksum, "f" * 64)
+            with self.assertRaisesRegex(SourceWriterError, "S3 fetch lineage checksum mismatch"):
+                run_cutover(
+                    _args(
+                        tmp,
+                        root,
+                        database,
+                        manifest,
+                        snapshots,
+                        "f" * 64,
+                    ),
+                    environ=ENABLED_ENV,
+                    now=datetime(2026, 7, 18, 12, tzinfo=JST),
+                    digest_function=lambda _database, *, today: PUBLIC_SHA,
+                    activate=lambda _mode: self.fail("must not activate"),
+                )
+
+    def test_rejects_legacy_input_sha_not_matching_adapter_snapshot(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root, database, manifest, snapshots, checksum = _prepared_fixture(tmp)
+            source_by_id = {source.id: source for source in data.SOURCES}
+            legacy_path = root / source_by_id["official_source"].path
+            legacy_payload = json.loads(legacy_path.read_text(encoding="utf-8"))
+            legacy_payload[source_by_id["official_source"].rows_path][0]["title"] = "tampered"
+            _write_json(legacy_path, legacy_payload)
+
+            with self.assertRaisesRegex(SourceWriterError, "legacy input lineage mismatch"):
+                run_cutover(
+                    _args(tmp, root, database, manifest, snapshots, checksum),
+                    environ=ENABLED_ENV,
+                    now=datetime(2026, 7, 18, 12, tzinfo=JST),
+                    digest_function=lambda _database, *, today: PUBLIC_SHA,
+                    activate=lambda _mode: self.fail("must not activate"),
+                )
+
 
 if __name__ == "__main__":
     unittest.main()
