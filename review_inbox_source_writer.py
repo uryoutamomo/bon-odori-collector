@@ -329,6 +329,7 @@ def run_source_shadow(
     public_projection_digest: Callable[[Path], str],
     flags: SourceWriterFlags | None = None,
     work_dir: Path | None = None,
+    expected_rstart_checksum: str | None = None,
 ) -> dict[str, Any]:
     """Apply one frozen adapted snapshot to a temporary DB and CAS-publish it."""
 
@@ -344,6 +345,11 @@ def run_source_shadow(
         char not in string.hexdigits for char in rstart.checksum
     ):
         raise SourceWriterError("artifact status returned an invalid Rstart checksum")
+    if expected_rstart_checksum and rstart.checksum != expected_rstart_checksum:
+        raise SourceWriterError(
+            "Rstart checksum does not match the operator-fixed expectation: "
+            f"expected={expected_rstart_checksum} actual={rstart.checksum}"
+        )
 
     if work_dir is not None:
         Path(work_dir).mkdir(parents=True, exist_ok=True)
@@ -398,6 +404,7 @@ def run_source_shadow(
             "generated_by": "review_inbox_source_writer.py",
             "flags": asdict(flags),
             "rstart": asdict(rstart),
+            "operator_expected_rstart_checksum": expected_rstart_checksum or "",
             "observation_id": observation_id,
             "lineage": {
                 "source_id": adapted_snapshot["source_id"],

@@ -256,7 +256,8 @@ B adapter、inbox schema、consoleはこの2軸を書き換えず、`time_scope`
 |---|---|---|
 | B1-1 | registered investigation adapter、白金fixture、canary lineage/parity | なし、default off |
 | B1-2 | source-scoped writer、current/stale reconciliation、CAS/audit runner | なし、default off |
-| B1-3 | 白金canaryを1件dual-writeしdecision往復 | 要・内田さんGO |
+| B1-3a | 白金canaryのproduction配線コード・default-off CLI・FakeStore検証 | なし、実行はB1-3b別GO |
+| B1-3b | 白金canaryを1件dual-writeしdecision往復 | 要・内田さん最終GO |
 | B1-4 | official source bulk shadow | 要・内田さんGO |
 | B1-5 | registered investigation full shadow | 要・内田さんGO |
 | B1-6 | predicted research/date review shadow | 要・sourceごとのGO |
