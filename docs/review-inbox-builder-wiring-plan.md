@@ -128,6 +128,10 @@ console decisionのroute別stagingまでを小PRでmainへ反映した。最初�
 `official_source_review_candidates.json` を対象にし、legacy writerを維持したままadapter snapshotを
 生成する。正本migration、RDB dual-write、workflow gateはまだ有効化しない。
 
+正本migrationは専用runnerのdry-run証跡を先に作る。S3から`fetch --overwrite`する前に現local DBの
+checksumをremote checksumと照合し、不一致なら上書きせず停止する。production applyからCAS publishは
+日次cronの発火帯（17:20〜18:00 JST）を避け、dry-runレビュー後の内田さんの別途GOがある場合だけ行う。
+
 ### B1: 未来の開催判断
 
 最初に次をdual-writeする。
