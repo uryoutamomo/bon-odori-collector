@@ -99,6 +99,53 @@ class ReviewConsoleTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "REVIEW_CONSOLE_READER_MODE"):
             data.review_console_reader_mode("prefix-missing")
 
+    def test_reader_preview_ignores_baseline_duplicates_but_rejects_new_ones(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "data").mkdir()
+            source_by_id = {source.id: source for source in data.SOURCES}
+            for source_id in data.B1_LEGACY_SOURCE_IDS:
+                source = source_by_id[source_id]
+                (root / source.path).write_text(
+                    json.dumps({source.rows_path: [{"fixture_id": source_id}]}),
+                    encoding="utf-8",
+                )
+            duplicate_source = source_by_id["youtube_active_video"]
+            (root / duplicate_source.path).write_text(
+                json.dumps(
+                    {
+                        duplicate_source.rows_path: [
+                            {"video_id": "same"},
+                            {"video_id": "same"},
+                        ]
+                    }
+                ),
+                encoding="utf-8",
+            )
+            inbox_rows = [
+                {
+                    "inbox_id": f"inbox_{source_id}",
+                    "source_id": source_id,
+                    "source_key": f"key_{source_id}",
+                    "title": source_id,
+                }
+                for source_id in data.B1_INBOX_SOURCE_IDS
+            ]
+            inbox_path = root / "data/review_inbox.json"
+            inbox_path.write_text(json.dumps({"items": inbox_rows}), encoding="utf-8")
+            decisions_path = root / "data/review_console/decisions.json"
+
+            preview = data.build_reader_mode_preview(root, decisions_path)
+            self.assertTrue(preview["ok"])
+            self.assertGreater(preview["modes"]["legacy"]["duplicate_item_ids"], 0)
+            self.assertTrue(preview["checks"]["cutover_introduced_duplicate_item_ids_zero"])
+
+            inbox_rows.append(dict(inbox_rows[0]))
+            inbox_path.write_text(json.dumps({"items": inbox_rows}), encoding="utf-8")
+            preview = data.build_reader_mode_preview(root, decisions_path)
+            self.assertFalse(preview["ok"])
+            self.assertGreater(preview["modes"]["inbox"]["cutover_introduced_duplicate_item_ids"], 0)
+
     def test_review_inbox_source_is_visible_in_console_inventory(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

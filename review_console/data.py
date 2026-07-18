@@ -11,6 +11,7 @@ import sqlite3
 import subprocess
 import tempfile
 import threading
+from collections import Counter
 from dataclasses import dataclass, field
 from datetime import date, datetime, timezone
 from pathlib import Path
@@ -2862,6 +2863,7 @@ def build_reader_mode_preview(root: Path = ROOT, decisions_path: Path = DECISION
     for mode in REVIEW_CONSOLE_READER_MODES:
         inventory = build_inventory(root, decisions_path, reader_mode=mode)
         item_ids = [item["id"] for item in inventory["items"]]
+        item_id_counts = Counter(item_ids)
         non_b1_items = [
             item
             for item in inventory["items"]
@@ -2877,6 +2879,11 @@ def build_reader_mode_preview(root: Path = ROOT, decisions_path: Path = DECISION
         modes[mode] = {
             "total": inventory["totals"]["total"],
             "duplicate_item_ids": len(item_ids) - len(set(item_ids)),
+            "duplicate_item_id_counts": {
+                item_id: count
+                for item_id, count in sorted(item_id_counts.items())
+                if count > 1
+            },
             "legacy_b1_counts": {
                 source_id: sum(1 for item in inventory["items"] if item["source_id"] == source_id)
                 for source_id in B1_LEGACY_TO_INBOX_SOURCE_IDS
@@ -2889,6 +2896,12 @@ def build_reader_mode_preview(root: Path = ROOT, decisions_path: Path = DECISION
             "non_b1_identity_sha256": non_b1_sha,
         }
     baseline_sha = modes["legacy"]["non_b1_identity_sha256"]
+    baseline_duplicate_counts = modes["legacy"]["duplicate_item_id_counts"]
+    for value in modes.values():
+        value["cutover_introduced_duplicate_item_ids"] = sum(
+            max(0, count - baseline_duplicate_counts.get(item_id, 1))
+            for item_id, count in value["duplicate_item_id_counts"].items()
+        )
     checks = {
         "default_mode_is_legacy": DEFAULT_REVIEW_CONSOLE_READER_MODE == "legacy",
         "canary_exact_replacement": (
@@ -2903,7 +2916,13 @@ def build_reader_mode_preview(root: Path = ROOT, decisions_path: Path = DECISION
             for legacy_source_id, inbox_source_id in B1_LEGACY_TO_INBOX_SOURCE_IDS.items()
         ),
         "non_b1_unchanged": all(value["non_b1_identity_sha256"] == baseline_sha for value in modes.values()),
-        "duplicate_item_ids_zero": all(value["duplicate_item_ids"] == 0 for value in modes.values()),
+        # Existing non-B1 duplicates are a separate data-quality concern. The
+        # cutover fails only if canary/inbox adds duplicate identities relative
+        # to the unchanged legacy baseline.
+        "cutover_introduced_duplicate_item_ids_zero": all(
+            value["cutover_introduced_duplicate_item_ids"] == 0
+            for value in modes.values()
+        ),
     }
     return {"schema_version": 1, "read_only": True, "modes": modes, "checks": checks, "ok": all(checks.values())}
 
