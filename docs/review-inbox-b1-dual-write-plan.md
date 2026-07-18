@@ -260,7 +260,8 @@ B adapter、inbox schema、consoleはこの2軸を書き換えず、`time_scope`
 | B1-3b | 白金canaryを1件dual-writeしdecision往復 | 要・内田さん最終GO |
 | B1-4a | official source bulk shadow配線・default-off CLI・FakeStore検証 | なし、実行はB1-4b別GO |
 | B1-4b | official source全件の初回bulk shadow（2連続実runの1回目） | 要・内田さん最終GO |
-| B1-5 | registered investigation full shadow | 要・内田さんGO |
+| B1-5a | registered investigation full shadow配線・default-off CLI・FakeStore検証 | なし、実行はレビュー合格後 |
+| B1-5b | registered investigation全79件の初回bulk shadow | 要・内田さん連続実行GO済み |
 | B1-6 | predicted research/date review shadow | 要・sourceごとのGO |
 | B1-7 | missing source/venue shadow | 要・sourceごとのGO |
 | B1-8 | current-identity historical subset shadow | 要・内田さんGO |
