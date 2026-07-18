@@ -199,12 +199,16 @@ B1-cutover-bのexecutor/previewには次を要求する。
 
 - S3実体SHA、snapshot、Rstartの不一致
 - parityのmissing / extra / mismatchが1以上
-- legacy/v2重複表示が1以上
+- legacy baselineからcutoverによって増えた重複表示が1以上
 - source別件数不一致、unmappedが1以上
 - 非B1 source差分
 - decision/stage/domain write検出
 - public bytes差分
 - integrity/FK異常
+
+非B1の既存重複は別のデータ品質課題として記録するが、legacy/canary/inboxの全modeで同一なら
+B1-cutoverを誤停止させない。`build_reader_mode_preview`はlegacyの重複ID別件数をbaselineにし、
+canary/inboxで増えた分だけを`cutover_introduced_duplicate_item_ids`として停止判定する。
 
 ## 7. rollback
 
