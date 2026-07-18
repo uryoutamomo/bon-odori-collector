@@ -98,13 +98,16 @@ def ensure_inbox_schema(conn: sqlite3.Connection) -> None:
         )
 
 
-def inbox_columns(conn: sqlite3.Connection) -> set[str]:
-    ensure_inbox_schema(conn)
+def inbox_columns(conn: sqlite3.Connection, *, ensure_schema: bool = True) -> set[str]:
+    if ensure_schema:
+        ensure_inbox_schema(conn)
     return {row[1] for row in conn.execute("PRAGMA table_info(review_inbox_items)")}
 
 
-def inbox_schema_version(conn: sqlite3.Connection) -> int:
-    return INBOX_SCHEMA_VERSION if set(V2_COLUMNS).issubset(inbox_columns(conn)) else 1
+def inbox_schema_version(conn: sqlite3.Connection, *, ensure_schema: bool = True) -> int:
+    return INBOX_SCHEMA_VERSION if set(V2_COLUMNS).issubset(
+        inbox_columns(conn, ensure_schema=ensure_schema)
+    ) else 1
 
 
 def payload_hash(payload_json: str) -> str:
@@ -224,11 +227,18 @@ def normalized_item(item: dict[str, Any], now: str) -> dict[str, Any]:
     }
 
 
-def upsert_inbox_items(conn: sqlite3.Connection, items: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    ensure_inbox_schema(conn)
+def upsert_inbox_items(
+    conn: sqlite3.Connection,
+    items: list[dict[str, Any]],
+    *,
+    ensure_schema: bool = True,
+) -> list[dict[str, Any]]:
+    """Upsert items, optionally trusting a caller-owned schema/transaction boundary."""
+    if ensure_schema:
+        ensure_inbox_schema(conn)
     now = now_iso()
     normalized = [normalized_item(item, now) for item in items]
-    is_v2 = inbox_schema_version(conn) == INBOX_SCHEMA_VERSION
+    is_v2 = inbox_schema_version(conn, ensure_schema=False) == INBOX_SCHEMA_VERSION
     for item in normalized:
         if not is_v2:
             conn.execute(
@@ -306,10 +316,16 @@ def upsert_inbox_items(conn: sqlite3.Connection, items: list[dict[str, Any]]) ->
     return normalized
 
 
-def inbox_rows(conn: sqlite3.Connection, status: str | None = None) -> list[dict[str, Any]]:
-    ensure_inbox_schema(conn)
+def inbox_rows(
+    conn: sqlite3.Connection,
+    status: str | None = None,
+    *,
+    ensure_schema: bool = True,
+) -> list[dict[str, Any]]:
+    if ensure_schema:
+        ensure_inbox_schema(conn)
     conn.row_factory = sqlite3.Row
-    if inbox_schema_version(conn) == INBOX_SCHEMA_VERSION:
+    if inbox_schema_version(conn, ensure_schema=False) == INBOX_SCHEMA_VERSION:
         lifecycle_columns = """
                time_scope, decision, decided_by, decided_at, closed_at,
                decision_route, source_payload_hash, last_seen_at,

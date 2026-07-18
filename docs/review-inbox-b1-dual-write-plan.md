@@ -4,7 +4,7 @@
 
 署名: おと（Codex）
 
-ステータス: ことレビュー合格、B1-1 PRへ同梱（本番dual-writeは未着手）
+ステータス: ことレビュー合格、B1-2 default-off runner実装（本番dual-writeは未着手）
 
 ## 1. 目的と現在地
 
@@ -138,6 +138,12 @@ current sourceから消えたitemを単なるparity `extra`にし続けないた
 
 extraを無視するfilterは禁止する。current parity、decision履歴、stale理由の三つが合計してlegacy残高へ
 全件対応し、coverage reportの `unmapped_count=0` になることを閉鎖条件とする。
+
+B1-2では選択肢1を実装した。今回runの`observation_id + seen stable IDs`をcurrent projectionとし、
+追加・内容変更行は`last_seen_at=observation_id`へ更新する。同一内容の再runはDBを更新せず、run側の
+projectionでcurrentを証明するため、新snapshotを作らない。unseen行はpending stale候補または
+lifecycle保持へ全件分類し、未分類があればfail closedとする。詳細は
+`docs/review-inbox-source-writer.md`を参照する。
 
 ## 7. Parityと入力hash系譜
 
