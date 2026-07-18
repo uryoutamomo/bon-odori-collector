@@ -4,6 +4,8 @@
 from __future__ import annotations
 
 import argparse
+import json
+import os
 
 from review_console import data
 from review_console.server import serve
@@ -16,7 +18,28 @@ def main() -> None:
     parser.add_argument("--inventory", action="store_true", help="write source inventory files and exit")
     parser.add_argument("--export", action="store_true", help="export reviewed decisions and exit")
     parser.add_argument("--stage-apply", action="store_true", help="write staged decision files and exit")
+    parser.add_argument(
+        "--reader-mode",
+        choices=data.REVIEW_CONSOLE_READER_MODES,
+        help="select the local console B1 reader; default is REVIEW_CONSOLE_READER_MODE or legacy",
+    )
+    parser.add_argument(
+        "--preview-reader-modes",
+        action="store_true",
+        help="compare legacy/canary/inbox inventories read-only and exit without writing inventory files",
+    )
     args = parser.parse_args()
+
+    if args.reader_mode:
+        os.environ[data.REVIEW_CONSOLE_READER_MODE_ENV] = args.reader_mode
+    data.review_console_reader_mode()
+
+    if args.preview_reader_modes:
+        preview = data.build_reader_mode_preview()
+        print(json.dumps(preview, ensure_ascii=False, indent=2, sort_keys=True))
+        if not preview["ok"]:
+            raise SystemExit(1)
+        return
 
     if args.inventory:
         inventory = data.write_inventory()

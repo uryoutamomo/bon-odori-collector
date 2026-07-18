@@ -105,6 +105,19 @@ review console専用のpolicyを導入し、defaultは必ず`legacy`とする。
   他のB1 sourceはlegacyのまま。legacyとv2の同一対象を同時表示しない。
 - `inbox`: 上表7 legacy sourceを除外し、v2 B1 7 sourceだけを読む。その他sourceは維持する。
 
+実装上は既存のdecision/stage互換を守るため、consoleの`ReviewSource`は単一
+`review_inbox`のまま維持する。7 sourceへの分離はraw rowの`source_id`をexact allowlistで
+選ぶreader policyと、inventoryの`origin_source_id`別件数で表現する。これにより既存の
+`key_fields=(inbox_id, source_id, source_key)`、7種の`option_values`、decision source
+`review_inbox`、route別stageを変えずに入力だけを排他できる。
+
+prefix/部分一致は禁止する。特に次の近接名は別sourceとしてテストで固定する。
+
+- `missing_occurrence_venue`（legacy置換元）/ `missing_venue`（v2置換先）/
+  `accepted_venue_song_missing_venue`（維持）
+- `historical_promotion_candidate`（legacy置換元）/ `historical_reference`（v2置換先）/
+  `historical_reference_quality`（維持）
+
 modeはreview consoleプロセスに明示して与え、未知値は起動前に拒否する。writerで使う
 `REVIEW_INBOX_READER_MODE`との意味衝突を避けるため、実装PRではconsole専用CLI引数または
 `REVIEW_CONSOLE_READER_MODE`を第一候補とする。writer gateはB1-cutoverで緩めず、引き続き
@@ -131,6 +144,11 @@ reader切替は表示入力の選択だけである。
 - stage packetを生成しない。
 - promotion、change request、domain applyを実行しない。
 - acceptedにsafe routeがない場合の既存fail-closedを維持する。
+
+read-only比較は`python3 run_review_console.py --preview-reader-modes`で行う。このコマンドは
+3 modeのinventoryをメモリ上で比較してstdoutへ出すだけで、inventory、decision、stage、
+source fileを一切書かない。実console起動時だけ`--reader-mode`または
+`REVIEW_CONSOLE_READER_MODE`を明示し、未指定時は`legacy`とする。
 
 ## 5. 段階実行
 
