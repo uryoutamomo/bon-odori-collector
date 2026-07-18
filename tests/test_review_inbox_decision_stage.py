@@ -2,6 +2,7 @@ import json
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 from review_console import data
 from review_inbox_decision_stage import build_decision_stage, write_decision_stage
@@ -129,7 +130,8 @@ class ReviewInboxDecisionStageTest(unittest.TestCase):
                 encoding="utf-8",
             )
 
-            result = data.stage_apply(root=root, decisions_path=decisions_path, write=True)
+            with patch.dict("os.environ", {data.REVIEW_CONSOLE_READER_MODE_ENV: "inbox"}):
+                result = data.stage_apply(root=root, decisions_path=decisions_path, write=True)
             master_db_created = (root / "data/bon_odori_master.sqlite").exists()
 
         self.assertEqual(result["review_inbox_decision_count"], 1)

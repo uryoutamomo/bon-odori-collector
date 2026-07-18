@@ -4,11 +4,101 @@ import tempfile
 import unittest
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
+from unittest.mock import patch
 
 from review_console import data, server
 
 
 class ReviewConsoleTests(unittest.TestCase):
+    def test_b1_reader_modes_use_exact_source_ids_and_preserve_neighbors(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "data").mkdir()
+            source_by_id = {source.id: source for source in data.SOURCES}
+            for source_id in (
+                *data.B1_LEGACY_SOURCE_IDS,
+                "accepted_venue_song_missing_venue",
+                "historical_reference_quality",
+            ):
+                source = source_by_id[source_id]
+                (root / source.path).write_text(
+                    json.dumps({source.rows_path: [{"fixture_id": source_id}]}),
+                    encoding="utf-8",
+                )
+
+            inbox_rows = [
+                {
+                    "inbox_id": f"inbox_{source_id}",
+                    "source_id": source_id,
+                    "source_key": f"key_{source_id}",
+                    "title": source_id,
+                }
+                for source_id in (
+                    *data.B1_INBOX_SOURCE_IDS,
+                    "accepted_venue_song_missing_venue",
+                    "historical_reference_quality",
+                )
+            ]
+            (root / "data/review_inbox.json").write_text(
+                json.dumps({"items": inbox_rows}),
+                encoding="utf-8",
+            )
+            decisions_path = root / "data/review_console/decisions.json"
+
+            inventories = {
+                mode: data.build_inventory(root, decisions_path, reader_mode=mode)
+                for mode in data.REVIEW_CONSOLE_READER_MODES
+            }
+
+            for source_id in data.B1_LEGACY_SOURCE_IDS:
+                self.assertEqual(
+                    sum(item["source_id"] == source_id for item in inventories["legacy"]["items"]),
+                    1,
+                )
+            self.assertTrue(
+                data.review_inbox_row_enabled_for_reader_mode({"source_id": "missing_venue_extra"}, "inbox")
+            )
+            self.assertEqual(
+                sum(item["source_id"] == "missing_occurrence_venue" for item in inventories["canary"]["items"]),
+                0,
+            )
+            self.assertEqual(inventories["canary"]["review_inbox_source_group_counts"]["missing_venue"], 1)
+            self.assertNotIn("official_source", inventories["canary"]["review_inbox_source_group_counts"])
+
+            for mode, inventory in inventories.items():
+                source_ids = [item["source_id"] for item in inventory["items"]]
+                self.assertIn("accepted_venue_song_missing_venue", source_ids, mode)
+                self.assertIn("historical_reference_quality", source_ids, mode)
+                self.assertEqual(
+                    inventory["review_inbox_source_group_counts"]["accepted_venue_song_missing_venue"],
+                    1,
+                    mode,
+                )
+                self.assertEqual(
+                    inventory["review_inbox_source_group_counts"]["historical_reference_quality"],
+                    1,
+                    mode,
+                )
+
+            self.assertTrue(
+                all(
+                    sum(item["source_id"] == source_id for item in inventories["inbox"]["items"]) == 0
+                    for source_id in data.B1_LEGACY_SOURCE_IDS
+                )
+            )
+            self.assertEqual(
+                {key: inventories["inbox"]["review_inbox_source_group_counts"].get(key) for key in data.B1_INBOX_SOURCE_IDS},
+                {key: 1 for key in data.B1_INBOX_SOURCE_IDS},
+            )
+            preview = data.build_reader_mode_preview(root, decisions_path)
+            self.assertTrue(preview["ok"])
+
+    def test_reader_mode_defaults_legacy_and_rejects_unknown_value(self):
+        with patch.dict("os.environ", {}, clear=True):
+            self.assertEqual(data.review_console_reader_mode(), "legacy")
+        with self.assertRaisesRegex(ValueError, "REVIEW_CONSOLE_READER_MODE"):
+            data.review_console_reader_mode("prefix-missing")
+
     def test_review_inbox_source_is_visible_in_console_inventory(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

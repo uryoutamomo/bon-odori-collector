@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import json
+import hashlib
 import os
 import re
 import sqlite3
@@ -34,7 +35,7 @@ STAGE_RESULT_PATH = STAGED_DIR / "stage_apply_result.json"
 STAGE_ACK_PATH = STAGED_DIR / "stage_apply_ack.json"
 SONG_MASTER_PATH = DATA_DIR / "youtube_song_master.json"
 
-_INVENTORY_CACHE: dict[tuple[str, str], dict[str, Any]] = {}
+_INVENTORY_CACHE: dict[tuple[str, str, str], dict[str, Any]] = {}
 _DECISION_LOCKS: dict[str, threading.RLock] = {}
 _DECISION_LOCKS_GUARD = threading.Lock()
 _SONG_TERM_CACHE: dict[str, tuple[tuple[str, int], dict[str, str]]] = {}
@@ -150,6 +151,52 @@ X_REGISTRATION_DECISIONS = {
     "hold": "保留",
 }
 DIRECT_SOURCE_DECISION_IDS = {"x_candidate_post"}
+
+REVIEW_CONSOLE_READER_MODE_ENV = "REVIEW_CONSOLE_READER_MODE"
+REVIEW_CONSOLE_READER_MODES = ("legacy", "canary", "inbox")
+DEFAULT_REVIEW_CONSOLE_READER_MODE = "legacy"
+B1_LEGACY_TO_INBOX_SOURCE_IDS = {
+    "official_source": "official_source",
+    "registered_event_investigation": "registered_event_investigation",
+    "predicted_occurrence_research": "predicted_occurrence_research",
+    "predicted_occurrence_date_review": "predicted_occurrence_date_review",
+    "missing_source_url": "missing_source_url",
+    "missing_occurrence_venue": "missing_venue",
+    "historical_promotion_candidate": "historical_reference",
+}
+B1_LEGACY_SOURCE_IDS = frozenset(B1_LEGACY_TO_INBOX_SOURCE_IDS)
+B1_INBOX_SOURCE_IDS = frozenset(B1_LEGACY_TO_INBOX_SOURCE_IDS.values())
+
+
+def review_console_reader_mode(value: str | None = None) -> str:
+    mode = (
+        value
+        if value is not None
+        else os.environ.get(REVIEW_CONSOLE_READER_MODE_ENV, DEFAULT_REVIEW_CONSOLE_READER_MODE)
+    ).strip()
+    if mode not in REVIEW_CONSOLE_READER_MODES:
+        allowed = ", ".join(REVIEW_CONSOLE_READER_MODES)
+        raise ValueError(f"invalid {REVIEW_CONSOLE_READER_MODE_ENV}={mode!r}; expected one of: {allowed}")
+    return mode
+
+
+def source_enabled_for_reader_mode(source_id: str, mode: str) -> bool:
+    """Select console sources by exact id; neighboring names must remain untouched."""
+    if mode == "canary":
+        return source_id != "missing_occurrence_venue"
+    if mode == "inbox":
+        return source_id not in B1_LEGACY_SOURCE_IDS
+    return True
+
+
+def review_inbox_row_enabled_for_reader_mode(row: dict[str, Any], mode: str) -> bool:
+    """Keep non-B1 inbox rows in every mode and admit B1 rows by exact source id."""
+    origin_source_id = str(row.get("source_id") or "")
+    if origin_source_id not in B1_INBOX_SOURCE_IDS:
+        return True
+    if mode == "canary":
+        return origin_source_id == "missing_venue"
+    return mode == "inbox"
 
 
 @dataclass(frozen=True)
@@ -2571,6 +2618,7 @@ def normalize_item(
     item = {
         "id": item_id,
         "source_id": source.id,
+        "origin_source_id": as_text(row.get("source_id")) if source.id == "review_inbox" else source.id,
         "source_title": source.title,
         "source_path": source.path,
         "domain": source.domain,
@@ -2654,16 +2702,29 @@ def priority_rank(item: dict[str, Any]) -> tuple[int, int, float, str]:
     return (status_rank, label_rank, score, item.get("title") or "")
 
 
-def build_inventory(root: Path = ROOT, decisions_path: Path = DECISIONS_PATH) -> dict[str, Any]:
+def build_inventory(
+    root: Path = ROOT,
+    decisions_path: Path = DECISIONS_PATH,
+    reader_mode: str | None = None,
+) -> dict[str, Any]:
+    mode = review_console_reader_mode(reader_mode)
     decisions_payload = load_decisions(decisions_path)
     decisions = decisions_payload.get("decisions", {})
     historical_refs = load_historical_reference_index(root)
     items: list[dict[str, Any]] = []
     sources_summary: list[dict[str, Any]] = []
     for source in SOURCES:
+        if not source_enabled_for_reader_mode(source.id, mode):
+            continue
         path = root / source.path
         payload = read_json(path, {})
         rows = get_rows(payload, source.rows_path)
+        if source.id == "review_inbox":
+            rows = [
+                row
+                for row in rows
+                if not isinstance(row, dict) or review_inbox_row_enabled_for_reader_mode(row, mode)
+            ]
         source_items = [
             normalize_item(
                 source,
@@ -2701,6 +2762,7 @@ def build_inventory(root: Path = ROOT, decisions_path: Path = DECISIONS_PATH) ->
     totals = {"pending": 0, "reviewed": 0, "closed": 0}
     domain_counts: dict[str, dict[str, int]] = {}
     action_group_counts: dict[str, dict[str, Any]] = {}
+    inbox_source_group_counts: dict[str, int] = {}
     for item in items:
         totals[item["status"]] = totals.get(item["status"], 0) + 1
         domain = item["domain"]
@@ -2715,10 +2777,20 @@ def build_inventory(root: Path = ROOT, decisions_path: Path = DECISIONS_PATH) ->
         )
         action_group_counts[group][item["status"]] = action_group_counts[group].get(item["status"], 0) + 1
         action_group_counts[group]["total"] += 1
+        if item["source_id"] == "review_inbox":
+            origin_source_id = item.get("origin_source_id") or "unknown"
+            inbox_source_group_counts[origin_source_id] = inbox_source_group_counts.get(origin_source_id, 0) + 1
     return {
         "generated_at": now_iso(),
         "root": rel_path(root, root),
         "decisions_path": rel_path(decisions_path, root),
+        "reader_policy": {
+            "mode": mode,
+            "environment": REVIEW_CONSOLE_READER_MODE_ENV,
+            "decision_source_granularity": "single_review_inbox",
+            "row_group_field": "origin_source_id",
+            "b1_legacy_to_inbox": dict(B1_LEGACY_TO_INBOX_SOURCE_IDS),
+        },
         "sources": sources_summary,
         "items": items,
         "totals": {
@@ -2729,6 +2801,7 @@ def build_inventory(root: Path = ROOT, decisions_path: Path = DECISIONS_PATH) ->
         },
         "domain_counts": domain_counts,
         "action_group_counts": action_group_counts,
+        "review_inbox_source_group_counts": dict(sorted(inbox_source_group_counts.items())),
     }
 
 
@@ -2736,13 +2809,15 @@ def load_inventory(
     root: Path = ROOT,
     decisions_path: Path = DECISIONS_PATH,
     include_items: bool = True,
+    reader_mode: str | None = None,
 ) -> dict[str, Any]:
     root = effective_root(root, decisions_path)
-    key = (str(root.resolve()), str(decisions_path.resolve()))
+    mode = review_console_reader_mode(reader_mode)
+    key = (str(root.resolve()), str(decisions_path.resolve()), mode)
     stamp = inventory_cache_stamp(root, decisions_path)
     cached = _INVENTORY_CACHE.get(key)
     if not cached or cached.get("stamp") != stamp:
-        cached = {"stamp": stamp, "inventory": build_inventory(root, decisions_path)}
+        cached = {"stamp": stamp, "inventory": build_inventory(root, decisions_path, reader_mode=mode)}
         _INVENTORY_CACHE[key] = cached
     inventory = cached["inventory"]
     if include_items:
@@ -2750,16 +2825,24 @@ def load_inventory(
     return inventory_without_items(inventory)
 
 
-def load_item(item_id: str, root: Path = ROOT, decisions_path: Path = DECISIONS_PATH) -> dict[str, Any] | None:
+def load_item(
+    item_id: str,
+    root: Path = ROOT,
+    decisions_path: Path = DECISIONS_PATH,
+    reader_mode: str | None = None,
+) -> dict[str, Any] | None:
+    mode = review_console_reader_mode(reader_mode)
     decisions = load_decisions(decisions_path).get("decisions", {})
     historical_refs = load_historical_reference_index(root)
     source_id, _, key = item_id.partition(":")
     source = next((item for item in SOURCES if item.id == source_id), None)
-    if not source:
+    if not source or not source_enabled_for_reader_mode(source.id, mode):
         return None
     payload = read_json(root / source.path, {})
     for index, row in enumerate(get_rows(payload, source.rows_path), 1):
         row_obj = row if isinstance(row, dict) else {"value": row}
+        if source.id == "review_inbox" and not review_inbox_row_enabled_for_reader_mode(row_obj, mode):
+            continue
         if item_key(source, row_obj, index) == key:
             return normalize_item(
                 source,
@@ -2771,6 +2854,58 @@ def load_item(item_id: str, root: Path = ROOT, decisions_path: Path = DECISIONS_
                 root=root,
             )
     return None
+
+
+def build_reader_mode_preview(root: Path = ROOT, decisions_path: Path = DECISIONS_PATH) -> dict[str, Any]:
+    """Compare all reader modes without writing decisions, stages, inventories, or source data."""
+    modes: dict[str, Any] = {}
+    for mode in REVIEW_CONSOLE_READER_MODES:
+        inventory = build_inventory(root, decisions_path, reader_mode=mode)
+        item_ids = [item["id"] for item in inventory["items"]]
+        non_b1_items = [
+            item
+            for item in inventory["items"]
+            if item["source_id"] not in B1_LEGACY_SOURCE_IDS and item["source_id"] != "review_inbox"
+        ]
+        non_b1_identity = [
+            {"id": item["id"], "status": item["status"], "title": item["title"]}
+            for item in non_b1_items
+        ]
+        non_b1_sha = hashlib.sha256(
+            json.dumps(non_b1_identity, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")
+        ).hexdigest()
+        modes[mode] = {
+            "total": inventory["totals"]["total"],
+            "duplicate_item_ids": len(item_ids) - len(set(item_ids)),
+            "legacy_b1_counts": {
+                source_id: sum(1 for item in inventory["items"] if item["source_id"] == source_id)
+                for source_id in B1_LEGACY_TO_INBOX_SOURCE_IDS
+            },
+            "inbox_b1_counts": {
+                source_id: inventory["review_inbox_source_group_counts"].get(source_id, 0)
+                for source_id in B1_INBOX_SOURCE_IDS
+            },
+            "non_b1_count": len(non_b1_items),
+            "non_b1_identity_sha256": non_b1_sha,
+        }
+    baseline_sha = modes["legacy"]["non_b1_identity_sha256"]
+    checks = {
+        "default_mode_is_legacy": DEFAULT_REVIEW_CONSOLE_READER_MODE == "legacy",
+        "canary_exact_replacement": (
+            modes["canary"]["legacy_b1_counts"]["missing_occurrence_venue"] == 0
+            and modes["canary"]["inbox_b1_counts"]["missing_venue"]
+            == modes["legacy"]["legacy_b1_counts"]["missing_occurrence_venue"]
+        ),
+        "full_legacy_b1_removed": all(count == 0 for count in modes["inbox"]["legacy_b1_counts"].values()),
+        "full_b1_exact_replacement": all(
+            modes["inbox"]["inbox_b1_counts"][inbox_source_id]
+            == modes["legacy"]["legacy_b1_counts"][legacy_source_id]
+            for legacy_source_id, inbox_source_id in B1_LEGACY_TO_INBOX_SOURCE_IDS.items()
+        ),
+        "non_b1_unchanged": all(value["non_b1_identity_sha256"] == baseline_sha for value in modes.values()),
+        "duplicate_item_ids_zero": all(value["duplicate_item_ids"] == 0 for value in modes.values()),
+    }
+    return {"schema_version": 1, "read_only": True, "modes": modes, "checks": checks, "ok": all(checks.values())}
 
 
 def reviewed_items(root: Path = ROOT, decisions_path: Path = DECISIONS_PATH) -> list[dict[str, Any]]:
