@@ -1282,8 +1282,8 @@ def warn_on_prediction_json_fallback(payload):
     return payload
 
 
-def load_public_date_predictions_for_export(target_year=2026):
-    rdb_payload = load_rdb_public_date_predictions(MASTER_DB, target_year=target_year)
+def load_public_date_predictions_for_export(target_year=2026, db_path=MASTER_DB):
+    rdb_payload = load_rdb_public_date_predictions(db_path, target_year=target_year)
     json_payload = load_public_date_prediction_json(DATE_PREDICTIONS, {})
     return warn_on_prediction_json_fallback(merge_prediction_payloads(rdb_payload, json_payload))
 
@@ -1540,6 +1540,29 @@ def suppress_replaced_recurring_events(events):
     ]
 
 
+def project_public_events(events, *, db_path=MASTER_DB, today=None):
+    """Run the production public-event projection without writing output files."""
+    events = apply_public_event_overrides(sanitize_public_event_details(events))
+    events = suppress_replaced_recurring_events(apply_public_recurrence_metadata(events))
+    prediction_payload = load_public_date_predictions_for_export(
+        target_year=2026,
+        db_path=db_path,
+    )
+    prediction_result = apply_public_date_predictions(events, prediction_payload)
+    prediction_result["report"]["prediction_input"] = {
+        "source": prediction_payload.get("source") or str(DATE_PREDICTIONS),
+        "summary": prediction_payload.get("summary") or {},
+    }
+    events = apply_display_tiers(prediction_result["events"])
+    events = apply_public_site_postprocessors(events, today=today)
+    return {
+        "events": events,
+        "public_events": strip_public_internal_event_fields(events),
+        "source_map": public_event_source_map(events),
+        "prediction_report": prediction_result["report"],
+    }
+
+
 def main(argv=None):
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -1556,19 +1579,11 @@ def main(argv=None):
     except urllib.error.HTTPError as e:
         print(f"イベント公開エクスポート失敗 (HTTP {e.code})。スキップ")
         return
-    events = apply_public_event_overrides(sanitize_public_event_details(events))
-    events = suppress_replaced_recurring_events(apply_public_recurrence_metadata(events))
-    prediction_payload = load_public_date_predictions_for_export(target_year=2026)
-    prediction_result = apply_public_date_predictions(events, prediction_payload)
-    prediction_result["report"]["prediction_input"] = {
-        "source": prediction_payload.get("source") or str(DATE_PREDICTIONS),
-        "summary": prediction_payload.get("summary") or {},
-    }
-    events = apply_display_tiers(prediction_result["events"])
-    events = apply_public_site_postprocessors(events, today=args.today)
-    source_map = public_event_source_map(events)
-    public_events = strip_public_internal_event_fields(events)
-    write_public_date_prediction_json(DATE_PREDICTION_REPORT, prediction_result["report"])
+    projection = project_public_events(events, db_path=MASTER_DB, today=args.today)
+    events = projection["events"]
+    source_map = projection["source_map"]
+    public_events = projection["public_events"]
+    write_public_date_prediction_json(DATE_PREDICTION_REPORT, projection["prediction_report"])
 
     os.makedirs(OUT_DIR, exist_ok=True)
     with open(OUT_JSON, "w", encoding="utf-8") as f:
