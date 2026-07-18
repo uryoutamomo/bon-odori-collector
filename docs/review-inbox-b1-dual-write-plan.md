@@ -262,7 +262,8 @@ B adapter、inbox schema、consoleはこの2軸を書き換えず、`time_scope`
 | B1-4b | official source全件の初回bulk shadow（2連続実runの1回目） | 要・内田さん最終GO |
 | B1-5a | registered investigation full shadow配線・default-off CLI・FakeStore検証 | なし、実行はレビュー合格後 |
 | B1-5b | registered investigation全79件の初回bulk shadow | 要・内田さん連続実行GO済み |
-| B1-6 | predicted research/date review shadow | 要・sourceごとのGO |
+| B1-6a | predicted research/date reviewの別source adapter・default-off CLI | なし、実行はレビュー合格後 |
+| B1-6b | predicted research 8件→date review 12件の初回shadow | 要・内田さん連続実行GO済み |
 | B1-7 | missing source/venue shadow | 要・sourceごとのGO |
 | B1-8 | current-identity historical subset shadow | 要・内田さんGO |
 | B1-cutover | reader切替→1run監視→writer close | 要・こと再検証＋内田さんGO |
