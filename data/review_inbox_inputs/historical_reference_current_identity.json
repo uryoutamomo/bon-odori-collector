@@ -1,0 +1,1604 @@
+{
+  "generated_by": "build_historical_reference_shadow_input.py",
+  "generated_at": "2026-07-18T12:21:24.005668+00:00",
+  "source": {
+    "database_locator": "s3://bon-odori-master-rdb-169805602203/master-rdb/snapshots/20260718T051023Z/bon_odori_master.sqlite",
+    "database_sha256": "e8e6b1f69de0551bdc84ba52e161883889eccb0da3b454da6a8abf94a366a5ce",
+    "table": "historical_promotion_candidates"
+  },
+  "selection": {
+    "mode": "current_identity",
+    "total_candidate_count": 16,
+    "included_count": 16,
+    "excluded_count": 0,
+    "excluded_candidate_ids": [],
+    "criteria": "target_series_id and target_occurrence_id both resolve, and the occurrence belongs to target_series_id"
+  },
+  "candidates": [
+    {
+      "candidate_id": "histprom_0503c97793a6cd7d",
+      "target_series_id": "ser_b25e3d3ce5b22a32",
+      "target_occurrence_id": "occ_85b5772373d4e5df",
+      "target_event_name": "第28回新橋こいち祭 盆踊り",
+      "evidence_url_count": 480,
+      "song_title_count": 454,
+      "match_score": 5,
+      "promotion_confidence": "high",
+      "auto_promote_eligible": true,
+      "recommended_action": "auto_promote_historical_reference",
+      "notes": "Promote as historical evidence only; do not copy historical dates to 2026.",
+      "created_at": "2026-07-17T06:00:33.620539+00:00",
+      "updated_at": "2026-07-17T06:00:33.620539+00:00",
+      "occurrence_series_id": "ser_b25e3d3ce5b22a32",
+      "occurrence_event_name": "第28回新橋こいち祭 盆踊り",
+      "event_year": 2025,
+      "date_status": "ended",
+      "lifecycle_status": "published",
+      "origin": "curated",
+      "source_url": "http://www.shinbashi.net/top/koichi/2025/greeting/",
+      "venue": "桜田公園",
+      "source_types": [
+        "event_date_predictions",
+        "song_occurrences"
+      ],
+      "historical_years": [
+        2023,
+        2025
+      ],
+      "exact_dates": {
+        "2023": [
+          "2023-07-27"
+        ],
+        "2025": [
+          "2025-07-24"
+        ]
+      },
+      "year_only_evidence": {},
+      "prediction": [
+        {
+          "basis": "7月第4木曜",
+          "confidence": "medium",
+          "event_name": "第28回新橋こいち祭 盆踊り",
+          "evidence_rows": [
+            {
+              "confidence": "medium",
+              "date_end": "2023-07-27",
+              "date_start": "2023-07-27",
+              "duration_days": 1,
+              "source_video_count": 3,
+              "weekday_start": "木",
+              "year": 2023
+            },
+            {
+              "confidence": "high",
+              "date_end": "2025-07-24",
+              "date_start": "2025-07-24",
+              "duration_days": 1,
+              "source_video_count": 37,
+              "weekday_start": "木",
+              "year": 2025
+            }
+          ],
+          "evidence_years": [
+            2023,
+            2025
+          ],
+          "predicted_date_end": "2026-07-23",
+          "predicted_date_start": "2026-07-23",
+          "rule_type": "weekday_nth",
+          "score": 0.7,
+          "series_key": "30e9a87bdb27",
+          "source": "event_date_predictions",
+          "venue": "桜田公園"
+        }
+      ],
+      "source_occurrence_ids": [
+        "event_date_predictions:30e9a87bdb27",
+        "song_occurrences:095589df43181032",
+        "song_occurrences:0fcf7a35b3620bbb",
+        "song_occurrences:183c4e19160b9069",
+        "song_occurrences:22d10400dcc1de2f",
+        "song_occurrences:241a41d1c2b6f59c",
+        "song_occurrences:31260d20e61ef028",
+        "song_occurrences:32757a29738cb1eb",
+        "song_occurrences:36c3430127fde065",
+        "song_occurrences:487586484fe65047",
+        "song_occurrences:4a4214f8e6693336",
+        "song_occurrences:5d0950a716536737",
+        "song_occurrences:6731f83b7f3abc14",
+        "song_occurrences:6970c47d883447fc",
+        "song_occurrences:80ab316728f72765",
+        "song_occurrences:80ca6a33cbece532",
+        "song_occurrences:82c84f558b7b290c",
+        "song_occurrences:83951f0852d5d0d0",
+        "song_occurrences:8ce338872af05ee8",
+        "song_occurrences:9030074b47ce2fef",
+        "song_occurrences:9b4c4331d4540196",
+        "song_occurrences:9e0154ae315c3470",
+        "song_occurrences:a38f5c0908525dfe",
+        "song_occurrences:acbdce861b48aba6",
+        "song_occurrences:b396fbfb2bd27089",
+        "song_occurrences:bc2b0d793d6cbf03",
+        "song_occurrences:ccde36c83a6c022f",
+        "song_occurrences:d4815d83c955bf12",
+        "song_occurrences:d7ea33baa3c9fb4f",
+        "song_occurrences:d8412e3276d7dcf3",
+        "song_occurrences:e20a42d6c0e9a1db",
+        "song_occurrences:ec4e3927a52c0524",
+        "song_occurrences:f2b3c5a3f3249969",
+        "song_occurrences:f7b2efc17a90b5f0",
+        "song_occurrences:f7f9ecbd6e1a4d90"
+      ],
+      "current_identity": {
+        "series_resolved": true,
+        "occurrence_resolved": true,
+        "occurrence_series_matches": true
+      }
+    },
+    {
+      "candidate_id": "histprom_16f428d14ff34c85",
+      "target_series_id": "ser_a274dbfdb737ab56",
+      "target_occurrence_id": "occ_1df0a276422a54b5",
+      "target_event_name": "亀有銀座商店街納涼盆踊り大会",
+      "evidence_url_count": 3,
+      "song_title_count": 14,
+      "match_score": 6,
+      "promotion_confidence": "medium",
+      "auto_promote_eligible": false,
+      "recommended_action": "manual_predicted_date_review",
+      "notes": "2025年は日付確認済み。2024年は年次実績確認に留め、2026年は8月最終週末レンジで予測。",
+      "created_at": "2026-07-03T14:04:34.450815+00:00",
+      "updated_at": "2026-07-03T14:04:34.450815+00:00",
+      "occurrence_series_id": "ser_a274dbfdb737ab56",
+      "occurrence_event_name": "亀有銀座商店街納涼盆踊り大会",
+      "event_year": 2026,
+      "date_status": "unknown",
+      "lifecycle_status": "未確認",
+      "origin": "curated",
+      "source_url": "https://www.youtube.com/watch?v=zYYG127xpVE",
+      "venue": "亀有ゆうろーど（亀有銀座商店街）",
+      "source_types": [
+        "youtube_historical",
+        "manual_gap_review"
+      ],
+      "historical_years": [
+        2024,
+        2025
+      ],
+      "exact_dates": {
+        "2025": [
+          "2025-08-31"
+        ]
+      },
+      "year_only_evidence": {
+        "2024": [
+          "year_confirmed_by_youtube_title"
+        ]
+      },
+      "prediction": [
+        {
+          "basis": "2025年は8/31(日)確認。2024年も亀有銀座商店街納涼盆踊り大会の動画実績があり、8月最終週末開催の可能性が高い。2026年8/31は月曜のため直前週末を予測。",
+          "evidence_years": [
+            2024,
+            2025
+          ],
+          "predicted_date_start": "2026-08-29",
+          "predicted_date_end": "2026-08-30",
+          "rule_type": "weekday_last",
+          "source": "manual_yuroad_gap_review",
+          "confidence": "medium",
+          "score": 0.66
+        }
+      ],
+      "source_occurrence_ids": [
+        "youtube:zYYG127xpVE",
+        "youtube:jm-i-AZtmUE",
+        "youtube:E3qiFabHeVc"
+      ],
+      "current_identity": {
+        "series_resolved": true,
+        "occurrence_resolved": true,
+        "occurrence_series_matches": true
+      }
+    },
+    {
+      "candidate_id": "histprom_20a7b1e973433bce",
+      "target_series_id": "ser_761826bb4d0b4f84",
+      "target_occurrence_id": "occ_8e0883279b40b8d5",
+      "target_event_name": "謝恩納涼盆踊り大会（青山善光寺）",
+      "evidence_url_count": 23,
+      "song_title_count": 14,
+      "match_score": 6,
+      "promotion_confidence": "high",
+      "auto_promote_eligible": true,
+      "recommended_action": "auto_promote_historical_reference",
+      "notes": "Promote as historical evidence only; do not copy historical dates to 2026.",
+      "created_at": "2026-07-17T06:00:33.620539+00:00",
+      "updated_at": "2026-07-17T06:00:33.620539+00:00",
+      "occurrence_series_id": "ser_761826bb4d0b4f84",
+      "occurrence_event_name": "謝恩納涼盆踊り大会（青山善光寺）",
+      "event_year": 2025,
+      "date_status": "ended",
+      "lifecycle_status": "published",
+      "origin": "curated",
+      "source_url": "https://omoharareal.com/navi/news/detail/5157",
+      "venue": "青山善光寺",
+      "source_types": [
+        "event_date_predictions",
+        "song_occurrences"
+      ],
+      "historical_years": [
+        2023,
+        2024,
+        2025
+      ],
+      "exact_dates": {
+        "2023": [
+          "2023-07-31"
+        ],
+        "2025": [
+          "2025-07-28"
+        ]
+      },
+      "year_only_evidence": {
+        "2024": 92
+      },
+      "prediction": [
+        {
+          "basis": "7月の最終月曜",
+          "confidence": "medium",
+          "event_name": "謝恩納涼盆踊り大会（青山善光寺）",
+          "evidence_rows": [
+            {
+              "confidence": "manual_accept",
+              "date_end": "2023-07-31",
+              "date_start": "2023-07-31",
+              "duration_days": 1,
+              "source_video_count": 2,
+              "weekday_start": "月",
+              "year": 2023
+            },
+            {
+              "confidence": "medium",
+              "date_end": "2025-07-28",
+              "date_start": "2025-07-28",
+              "duration_days": 1,
+              "source_video_count": 12,
+              "weekday_start": "月",
+              "year": 2025
+            }
+          ],
+          "evidence_years": [
+            2023,
+            2025
+          ],
+          "predicted_date_end": "2026-07-27",
+          "predicted_date_start": "2026-07-27",
+          "rule_type": "weekday_last",
+          "score": 0.74,
+          "series_key": "0870cb15867a",
+          "source": "event_date_predictions",
+          "venue": "青山善光寺"
+        }
+      ],
+      "source_occurrence_ids": [
+        "event_date_predictions:0870cb15867a",
+        "song_occurrences:ec03f1a934e61d82"
+      ],
+      "current_identity": {
+        "series_resolved": true,
+        "occurrence_resolved": true,
+        "occurrence_series_matches": true
+      }
+    },
+    {
+      "candidate_id": "histprom_3a423c7c36628f83",
+      "target_series_id": "ser_d39870ddba633c11",
+      "target_occurrence_id": "occ_56d48c1deeded4ab",
+      "target_event_name": "郡上おどり in 青山",
+      "evidence_url_count": 519,
+      "song_title_count": 482,
+      "match_score": 4,
+      "promotion_confidence": "high",
+      "auto_promote_eligible": true,
+      "recommended_action": "auto_promote_historical_reference",
+      "notes": "Promote as historical evidence only; do not copy historical dates to 2026.",
+      "created_at": "2026-07-17T06:00:33.620539+00:00",
+      "updated_at": "2026-07-17T06:00:33.620539+00:00",
+      "occurrence_series_id": "ser_d39870ddba633c11",
+      "occurrence_event_name": "郡上おどり in 青山",
+      "event_year": 2025,
+      "date_status": "ended",
+      "lifecycle_status": "published",
+      "origin": "curated",
+      "source_url": "https://aoyama-gaienmae.or.jp/news/20250617/",
+      "venue": "秩父宮ラグビー場駐車場",
+      "source_types": [
+        "event_date_predictions",
+        "song_occurrences"
+      ],
+      "historical_years": [
+        2024,
+        2025
+      ],
+      "exact_dates": {
+        "2024": [
+          "2024-06-14"
+        ],
+        "2025": [
+          "2025-06-20"
+        ]
+      },
+      "year_only_evidence": {},
+      "prediction": [
+        {
+          "basis": "6月17日前後の金曜",
+          "confidence": "medium",
+          "event_name": "郡上おどり in 青山",
+          "evidence_rows": [
+            {
+              "confidence": "high",
+              "date_end": "2024-06-14",
+              "date_start": "2024-06-14",
+              "duration_days": 1,
+              "source_video_count": 11,
+              "weekday_start": "金",
+              "year": 2024
+            },
+            {
+              "confidence": "high",
+              "date_end": "2025-06-20",
+              "date_start": "2025-06-20",
+              "duration_days": 1,
+              "source_video_count": 40,
+              "weekday_start": "金",
+              "year": 2025
+            }
+          ],
+          "evidence_years": [
+            2024,
+            2025
+          ],
+          "predicted_date_end": "2026-06-19",
+          "predicted_date_start": "2026-06-19",
+          "rule_type": "weekday_near_day",
+          "score": 0.68,
+          "series_key": "f677ee46218e",
+          "source": "event_date_predictions",
+          "venue": "秩父宮ラグビー場駐車場"
+        }
+      ],
+      "source_occurrence_ids": [
+        "event_date_predictions:f677ee46218e",
+        "song_occurrences:0213f7f9bde4c9b1",
+        "song_occurrences:04807d3bdde2c69a",
+        "song_occurrences:0b0e776c32c538cb",
+        "song_occurrences:10fbc12dfb96c712",
+        "song_occurrences:23efeb3d5d36da26",
+        "song_occurrences:27a6f635e728199f",
+        "song_occurrences:34749e23e1e2d5c8",
+        "song_occurrences:350fc9b63411a0a2",
+        "song_occurrences:3ba56319c3d1c3e3",
+        "song_occurrences:3c9169a7002c95d7",
+        "song_occurrences:442c9e5f775ac6e5",
+        "song_occurrences:4db84ec347493133",
+        "song_occurrences:5568c2e464150035",
+        "song_occurrences:58dcb5614d0f039a",
+        "song_occurrences:591f2bce8de1092f",
+        "song_occurrences:5de59f6bfd7f8982",
+        "song_occurrences:63f727549e397519",
+        "song_occurrences:75a546bfd46eb98d",
+        "song_occurrences:81b858ce93ffe028",
+        "song_occurrences:84515702d63dee85",
+        "song_occurrences:902892a3b813a5f9",
+        "song_occurrences:9caba0c96cb10cc5",
+        "song_occurrences:afe6f755aca096fa",
+        "song_occurrences:b38152a0ac97633e",
+        "song_occurrences:b6d4ef519d776e73",
+        "song_occurrences:bf274cc96ac7930c",
+        "song_occurrences:cb3905bfb8eb779a",
+        "song_occurrences:ce17cd952548f874",
+        "song_occurrences:dba1ff0ff2ae9c82",
+        "song_occurrences:df782a39cdecd2a6",
+        "song_occurrences:f33711ca69eea048",
+        "song_occurrences:f76087b5cf31e2eb",
+        "song_occurrences:fa39e181b23ea406",
+        "song_occurrences:fcdaaf672494a90e"
+      ],
+      "current_identity": {
+        "series_resolved": true,
+        "occurrence_resolved": true,
+        "occurrence_series_matches": true
+      }
+    },
+    {
+      "candidate_id": "histprom_557fa293eae577ae",
+      "target_series_id": "ser_89245fcd08d4a60b",
+      "target_occurrence_id": "occ_8ff0a2c41a98d97b",
+      "target_event_name": "浄土寺盆踊り大会",
+      "evidence_url_count": 126,
+      "song_title_count": 124,
+      "match_score": 5,
+      "promotion_confidence": "high",
+      "auto_promote_eligible": true,
+      "recommended_action": "auto_promote_historical_reference",
+      "notes": "Promote as historical evidence only; do not copy historical dates to 2026.",
+      "created_at": "2026-07-17T06:00:33.620539+00:00",
+      "updated_at": "2026-07-17T06:00:33.620539+00:00",
+      "occurrence_series_id": "ser_89245fcd08d4a60b",
+      "occurrence_event_name": "赤坂浄土寺盆踊り大会",
+      "event_year": 2025,
+      "date_status": "ended",
+      "lifecycle_status": "published",
+      "origin": "curated",
+      "source_url": "https://x.com/nsPFhl5JW382058/status/1939266951391613148",
+      "venue": "浄土寺",
+      "source_types": [
+        "event_date_predictions",
+        "song_occurrences"
+      ],
+      "historical_years": [
+        2023,
+        2024,
+        2025
+      ],
+      "exact_dates": {
+        "2023": [
+          "2023-07-26"
+        ],
+        "2024": [
+          "2024-07-25",
+          "2024-07-26"
+        ],
+        "2025": [
+          "2025-07-24"
+        ]
+      },
+      "year_only_evidence": {},
+      "prediction": [
+        {
+          "basis": "7月26日前後",
+          "confidence": "low",
+          "event_name": "赤坂浄土寺盆踊り大会",
+          "evidence_rows": [
+            {
+              "confidence": "manual_accept",
+              "date_end": "2023-07-26",
+              "date_start": "2023-07-26",
+              "duration_days": 1,
+              "source_video_count": 2,
+              "weekday_start": "水",
+              "year": 2023
+            },
+            {
+              "confidence": "high",
+              "date_end": "2024-07-26",
+              "date_start": "2024-07-25",
+              "duration_days": 2,
+              "source_video_count": 7,
+              "weekday_start": "木",
+              "year": 2024
+            }
+          ],
+          "evidence_years": [
+            2023,
+            2024
+          ],
+          "predicted_date_end": "2026-07-27",
+          "predicted_date_start": "2026-07-26",
+          "rule_type": "date_near",
+          "score": 0.58,
+          "series_key": "cc7ce7868321",
+          "source": "event_date_predictions",
+          "venue": "浄土寺"
+        }
+      ],
+      "source_occurrence_ids": [
+        "event_date_predictions:cc7ce7868321",
+        "song_occurrences:00a65b47a4805435",
+        "song_occurrences:10d3b86d1d7b2091",
+        "song_occurrences:40c1cf450b3648b4",
+        "song_occurrences:47a11a8d8381220d",
+        "song_occurrences:51439b0bcfc6a7f8",
+        "song_occurrences:54d422cd61e2afea",
+        "song_occurrences:5b42aff76762ccb9",
+        "song_occurrences:5cde29be3921d6cf",
+        "song_occurrences:5db761ccbd5a869f",
+        "song_occurrences:7fcb7108a5253824",
+        "song_occurrences:96af97728eb61ab5",
+        "song_occurrences:cced5ec680dbc719",
+        "song_occurrences:d8ac525a76af3827"
+      ],
+      "current_identity": {
+        "series_resolved": true,
+        "occurrence_resolved": true,
+        "occurrence_series_matches": true
+      }
+    },
+    {
+      "candidate_id": "histprom_58ee10d9e0fc8f1f",
+      "target_series_id": "ser_cded9da0a611fd02",
+      "target_occurrence_id": "occ_48ddfc15fd4a2cb1",
+      "target_event_name": "歌舞伎町BON ODORI",
+      "evidence_url_count": 20,
+      "song_title_count": 2,
+      "match_score": 6,
+      "promotion_confidence": "high",
+      "auto_promote_eligible": true,
+      "recommended_action": "auto_promote_historical_reference",
+      "notes": "Promote as historical evidence only; do not copy historical dates to 2026.",
+      "created_at": "2026-07-17T06:00:33.620539+00:00",
+      "updated_at": "2026-07-17T06:00:33.620539+00:00",
+      "occurrence_series_id": "ser_cded9da0a611fd02",
+      "occurrence_event_name": "歌舞伎町BON ODORI",
+      "event_year": 2025,
+      "date_status": "ended",
+      "lifecycle_status": "published",
+      "origin": "curated",
+      "source_url": "https://www.kanko-shinjuku.jp/event/-/article_4606.html",
+      "venue": "歌舞伎町シネシティ広場",
+      "source_types": [
+        "event_date_predictions",
+        "song_occurrences"
+      ],
+      "historical_years": [
+        2024,
+        2025
+      ],
+      "exact_dates": {
+        "2024": [
+          "2024-08-17"
+        ],
+        "2025": [
+          "2025-08-16"
+        ]
+      },
+      "year_only_evidence": {},
+      "prediction": [
+        {
+          "basis": "8月第3土曜",
+          "confidence": "medium",
+          "event_name": "歌舞伎町BON ODORI",
+          "evidence_rows": [
+            {
+              "confidence": "manual_accept",
+              "date_end": "2024-08-17",
+              "date_start": "2024-08-17",
+              "duration_days": 1,
+              "source_video_count": 2,
+              "weekday_start": "土",
+              "year": 2024
+            },
+            {
+              "confidence": "high",
+              "date_end": "2025-08-16",
+              "date_start": "2025-08-16",
+              "duration_days": 1,
+              "source_video_count": 18,
+              "weekday_start": "土",
+              "year": 2025
+            }
+          ],
+          "evidence_years": [
+            2024,
+            2025
+          ],
+          "predicted_date_end": "2026-08-15",
+          "predicted_date_start": "2026-08-15",
+          "rule_type": "weekday_nth",
+          "score": 0.7,
+          "series_key": "ebf98ce37bb4",
+          "source": "event_date_predictions",
+          "venue": "歌舞伎町シネシティ広場"
+        }
+      ],
+      "source_occurrence_ids": [
+        "event_date_predictions:ebf98ce37bb4",
+        "song_occurrences:302ac9daa7f41450"
+      ],
+      "current_identity": {
+        "series_resolved": true,
+        "occurrence_resolved": true,
+        "occurrence_series_matches": true
+      }
+    },
+    {
+      "candidate_id": "histprom_8cd681bc18bd8173",
+      "target_series_id": "ser_086f247e4d12348e",
+      "target_occurrence_id": "occ_36b02291ca55eb02",
+      "target_event_name": "丸の内de盆踊り",
+      "evidence_url_count": 8,
+      "song_title_count": 23,
+      "match_score": 5,
+      "promotion_confidence": "high",
+      "auto_promote_eligible": true,
+      "recommended_action": "auto_promote_historical_reference",
+      "notes": "Promote as historical evidence only; do not copy historical dates to 2026.",
+      "created_at": "2026-07-17T06:00:33.620539+00:00",
+      "updated_at": "2026-07-17T06:00:33.620539+00:00",
+      "occurrence_series_id": "ser_086f247e4d12348e",
+      "occurrence_event_name": "丸の内de盆踊り",
+      "event_year": 2025,
+      "date_status": "ended",
+      "lifecycle_status": "published",
+      "origin": "curated",
+      "source_url": "https://www.marunouchi.com/pickup/event/6763/",
+      "venue": "行幸通り",
+      "source_types": [
+        "event_date_predictions",
+        "song_occurrences"
+      ],
+      "historical_years": [
+        2024,
+        2025
+      ],
+      "exact_dates": {
+        "2024": [
+          "2024-07-26"
+        ],
+        "2025": [
+          "2025-07-25",
+          "2025-07-26"
+        ]
+      },
+      "year_only_evidence": {},
+      "prediction": [
+        {
+          "basis": "7月の最終金曜",
+          "confidence": "medium",
+          "event_name": "丸の内de盆踊り",
+          "evidence_rows": [
+            {
+              "confidence": "medium",
+              "date_end": "2024-07-26",
+              "date_start": "2024-07-26",
+              "duration_days": 1,
+              "source_video_count": 2,
+              "weekday_start": "金",
+              "year": 2024
+            },
+            {
+              "confidence": "medium",
+              "date_end": "2025-07-25",
+              "date_start": "2025-07-25",
+              "duration_days": 1,
+              "source_video_count": 6,
+              "weekday_start": "金",
+              "year": 2025
+            }
+          ],
+          "evidence_years": [
+            2024,
+            2025
+          ],
+          "predicted_date_end": "2026-07-31",
+          "predicted_date_start": "2026-07-31",
+          "rule_type": "weekday_last",
+          "score": 0.74,
+          "series_key": "5be1649191ae",
+          "source": "event_date_predictions",
+          "venue": "行幸通り"
+        }
+      ],
+      "source_occurrence_ids": [
+        "event_date_predictions:5be1649191ae",
+        "song_occurrences:b8db82255dd0e1f0"
+      ],
+      "current_identity": {
+        "series_resolved": true,
+        "occurrence_resolved": true,
+        "occurrence_series_matches": true
+      }
+    },
+    {
+      "candidate_id": "histprom_933112071c656eaa",
+      "target_series_id": "ser_b48d0bc453f47b75",
+      "target_occurrence_id": "occ_b4a4108fce6a5711",
+      "target_event_name": "飛鳥山盆踊り",
+      "evidence_url_count": 6,
+      "song_title_count": 18,
+      "match_score": 1,
+      "promotion_confidence": "low",
+      "auto_promote_eligible": false,
+      "recommended_action": "manual_review_multi_year_history",
+      "notes": "Multiple historical years found, but match confidence is below automatic threshold.",
+      "created_at": "2026-07-17T06:00:33.620539+00:00",
+      "updated_at": "2026-07-17T06:00:33.620539+00:00",
+      "occurrence_series_id": "ser_b48d0bc453f47b75",
+      "occurrence_event_name": "飛鳥山盆踊り",
+      "event_year": 2025,
+      "date_status": "ended",
+      "lifecycle_status": "published",
+      "origin": "curated",
+      "source_url": "https://asukayamabonodori.tokyo/",
+      "venue": "飛鳥山公園",
+      "source_types": [
+        "song_occurrences"
+      ],
+      "historical_years": [
+        2024,
+        2025
+      ],
+      "exact_dates": {
+        "2025": [
+          "2025-07-05"
+        ]
+      },
+      "year_only_evidence": {
+        "2024": 59
+      },
+      "prediction": [],
+      "source_occurrence_ids": [
+        "song_occurrences:0891eea2c494de17",
+        "song_occurrences:141ec9eac7cde325"
+      ],
+      "current_identity": {
+        "series_resolved": true,
+        "occurrence_resolved": true,
+        "occurrence_series_matches": true
+      }
+    },
+    {
+      "candidate_id": "histprom_9e66d3b7a3aa4c6d",
+      "target_series_id": "ser_c7526cbcf3260dc3",
+      "target_occurrence_id": "occ_54ba9f31ac0f3844",
+      "target_event_name": "自由が丘納涼盆踊り大会",
+      "evidence_url_count": 37,
+      "song_title_count": 14,
+      "match_score": 5,
+      "promotion_confidence": "high",
+      "auto_promote_eligible": true,
+      "recommended_action": "auto_promote_historical_reference",
+      "notes": "Promote as historical evidence only; do not copy historical dates to 2026.",
+      "created_at": "2026-07-17T06:00:33.620539+00:00",
+      "updated_at": "2026-07-17T06:00:33.620539+00:00",
+      "occurrence_series_id": "ser_c7526cbcf3260dc3",
+      "occurrence_event_name": "自由が丘納涼盆踊り大会",
+      "event_year": 2025,
+      "date_status": "ended",
+      "lifecycle_status": "published",
+      "origin": "curated",
+      "source_url": "https://tokyofesta.com/23ku/23804/",
+      "venue": "自由が丘駅前ロータリー 特設会場",
+      "source_types": [
+        "event_date_predictions",
+        "song_occurrences"
+      ],
+      "historical_years": [
+        2024,
+        2025
+      ],
+      "exact_dates": {
+        "2024": [
+          "2024-07-13",
+          "2024-07-15"
+        ],
+        "2025": [
+          "2025-07-19",
+          "2025-07-21"
+        ]
+      },
+      "year_only_evidence": {},
+      "prediction": [
+        {
+          "basis": "7月16日前後の土曜",
+          "confidence": "medium",
+          "event_name": "自由が丘納涼盆踊り大会",
+          "evidence_rows": [
+            {
+              "confidence": "medium",
+              "date_end": "2024-07-15",
+              "date_start": "2024-07-13",
+              "duration_days": 3,
+              "source_video_count": 3,
+              "weekday_start": "土",
+              "year": 2024
+            },
+            {
+              "confidence": "high",
+              "date_end": "2025-07-21",
+              "date_start": "2025-07-19",
+              "duration_days": 3,
+              "source_video_count": 22,
+              "weekday_start": "土",
+              "year": 2025
+            }
+          ],
+          "evidence_years": [
+            2024,
+            2025
+          ],
+          "predicted_date_end": "2026-07-20",
+          "predicted_date_start": "2026-07-18",
+          "rule_type": "weekday_near_day",
+          "score": 0.68,
+          "series_key": "bcbfa4cac9e3",
+          "source": "event_date_predictions",
+          "venue": "自由が丘駅前ロータリー 特設会場"
+        }
+      ],
+      "source_occurrence_ids": [
+        "event_date_predictions:bcbfa4cac9e3",
+        "song_occurrences:24e0fbd90ad9ef80"
+      ],
+      "current_identity": {
+        "series_resolved": true,
+        "occurrence_resolved": true,
+        "occurrence_series_matches": true
+      }
+    },
+    {
+      "candidate_id": "histprom_ad7e7960834a3c2e",
+      "target_series_id": "ser_056dc17d1e61d432",
+      "target_occurrence_id": "occ_c2b890eb32b32469",
+      "target_event_name": "東本願寺盆踊り",
+      "evidence_url_count": 456,
+      "song_title_count": 423,
+      "match_score": 1,
+      "promotion_confidence": "low",
+      "auto_promote_eligible": false,
+      "recommended_action": "manual_review_multi_year_history",
+      "notes": "Multiple historical years found, but match confidence is below automatic threshold.",
+      "created_at": "2026-07-17T06:00:33.620539+00:00",
+      "updated_at": "2026-07-17T06:00:33.620539+00:00",
+      "occurrence_series_id": "ser_056dc17d1e61d432",
+      "occurrence_event_name": "東本願寺盆踊り",
+      "event_year": 2025,
+      "date_status": "ended",
+      "lifecycle_status": "published",
+      "origin": "curated",
+      "source_url": "https://www.asakusaevent.com/higashihonganji-bonodori-2025/",
+      "venue": "東本願寺（浅草）",
+      "source_types": [
+        "event_date_predictions",
+        "song_occurrences"
+      ],
+      "historical_years": [
+        2024,
+        2025
+      ],
+      "exact_dates": {
+        "2024": [
+          "2024-08-21"
+        ],
+        "2025": [
+          "2025-08-20"
+        ]
+      },
+      "year_only_evidence": {},
+      "prediction": [
+        {
+          "basis": "8月第3水曜",
+          "confidence": "medium",
+          "event_name": "東本願寺盆踊り",
+          "evidence_rows": [
+            {
+              "confidence": "medium",
+              "date_end": "2024-08-21",
+              "date_start": "2024-08-21",
+              "duration_days": 1,
+              "source_video_count": 4,
+              "weekday_start": "水",
+              "year": 2024
+            },
+            {
+              "confidence": "high",
+              "date_end": "2025-08-20",
+              "date_start": "2025-08-20",
+              "duration_days": 1,
+              "source_video_count": 36,
+              "weekday_start": "水",
+              "year": 2025
+            }
+          ],
+          "evidence_years": [
+            2024,
+            2025
+          ],
+          "predicted_date_end": "2026-08-19",
+          "predicted_date_start": "2026-08-19",
+          "rule_type": "weekday_nth",
+          "score": 0.7,
+          "series_key": "3152b3b0e9fd",
+          "source": "event_date_predictions",
+          "venue": "東本願寺（浅草）"
+        }
+      ],
+      "source_occurrence_ids": [
+        "event_date_predictions:3152b3b0e9fd",
+        "song_occurrences:04c6dbc188e99a1f",
+        "song_occurrences:19216598d0c22f56",
+        "song_occurrences:22f534f14c322c0d",
+        "song_occurrences:262a229800297f92",
+        "song_occurrences:37f22b399b8fda0b",
+        "song_occurrences:4a910df2640c0666",
+        "song_occurrences:4e7fac822ec1b484",
+        "song_occurrences:5835697f8887ef50",
+        "song_occurrences:6d31a955522c620a",
+        "song_occurrences:7d2b3c22019f38c7",
+        "song_occurrences:812c6c7cbf46da84",
+        "song_occurrences:8cf18b7e954d1d60",
+        "song_occurrences:95604debec7c4eb0",
+        "song_occurrences:958643ea47bdf512",
+        "song_occurrences:9e229a0fa58c5307",
+        "song_occurrences:a7998c3ff4865c0e",
+        "song_occurrences:bc35b5dda2de9181",
+        "song_occurrences:bc51801bcfdf4e6d",
+        "song_occurrences:be742ab80e93e365",
+        "song_occurrences:c34a88fed970794a",
+        "song_occurrences:c384dd5fe42be490",
+        "song_occurrences:ccbda128dbf9bbf0",
+        "song_occurrences:d059b55baf03e333",
+        "song_occurrences:d27680367f7c39a4",
+        "song_occurrences:d5a14c460da3befa",
+        "song_occurrences:e52ab89bcba0fadf",
+        "song_occurrences:e5754225b2fe6a01",
+        "song_occurrences:f1982a6d0811b663",
+        "song_occurrences:f9f4a59712867be1"
+      ],
+      "current_identity": {
+        "series_resolved": true,
+        "occurrence_resolved": true,
+        "occurrence_series_matches": true
+      }
+    },
+    {
+      "candidate_id": "histprom_c0642df840aea6b7",
+      "target_series_id": "ser_a3a6304574b4feb5",
+      "target_occurrence_id": "occ_eb5984603eeb0f18",
+      "target_event_name": "第15回 鴨台盆踊り",
+      "evidence_url_count": 209,
+      "song_title_count": 201,
+      "match_score": 5,
+      "promotion_confidence": "high",
+      "auto_promote_eligible": true,
+      "recommended_action": "auto_promote_historical_reference",
+      "notes": "Promote as historical evidence only; do not copy historical dates to 2026.",
+      "created_at": "2026-07-17T06:00:33.620539+00:00",
+      "updated_at": "2026-07-17T06:00:33.620539+00:00",
+      "occurrence_series_id": "ser_a3a6304574b4feb5",
+      "occurrence_event_name": "第15回 鴨台盆踊り",
+      "event_year": 2025,
+      "date_status": "ended",
+      "lifecycle_status": "published",
+      "origin": "curated",
+      "source_url": "https://www.tais.ac.jp/guide/latest_news/20250627/92922/",
+      "venue": "大正大学",
+      "source_types": [
+        "event_date_predictions",
+        "song_occurrences"
+      ],
+      "historical_years": [
+        2023,
+        2024,
+        2025
+      ],
+      "exact_dates": {
+        "2023": [
+          "2023-07-06",
+          "2023-07-08"
+        ],
+        "2024": [
+          "2024-07-05"
+        ],
+        "2025": [
+          "2025-07-04"
+        ]
+      },
+      "year_only_evidence": {},
+      "prediction": [
+        {
+          "basis": "7月6日前後の週末",
+          "confidence": "medium",
+          "event_name": "第15回 鴨台盆踊り",
+          "evidence_rows": [
+            {
+              "confidence": "medium",
+              "date_end": "2023-07-08",
+              "date_start": "2023-07-06",
+              "duration_days": 3,
+              "source_video_count": 2,
+              "weekday_start": "木",
+              "year": 2023
+            },
+            {
+              "confidence": "high",
+              "date_end": "2024-07-05",
+              "date_start": "2024-07-05",
+              "duration_days": 1,
+              "source_video_count": 6,
+              "weekday_start": "金",
+              "year": 2024
+            }
+          ],
+          "evidence_years": [
+            2023,
+            2024
+          ],
+          "predicted_date_end": "2026-07-05",
+          "predicted_date_start": "2026-07-04",
+          "rule_type": "weekend_near_day",
+          "score": 0.6,
+          "series_key": "734d7186ca67",
+          "source": "event_date_predictions",
+          "venue": "大正大学"
+        }
+      ],
+      "source_occurrence_ids": [
+        "event_date_predictions:734d7186ca67",
+        "song_occurrences:000bccaf8b7b1bca",
+        "song_occurrences:057297b9872f37b1",
+        "song_occurrences:087890b0cdec49b3",
+        "song_occurrences:0deee91859978d26",
+        "song_occurrences:2b360377dc700535",
+        "song_occurrences:332d79802b981d4e",
+        "song_occurrences:567e1bbdb4923a15",
+        "song_occurrences:57c52949f8ac1ec3",
+        "song_occurrences:62561128dda21cc0",
+        "song_occurrences:9771c0e38ad3c12d",
+        "song_occurrences:af49f787974023ff",
+        "song_occurrences:b35dfc4ef5d9167a",
+        "song_occurrences:c89f4b9ccda41e9d",
+        "song_occurrences:d2a315ae8fae7b83",
+        "song_occurrences:dba68111e35feaba",
+        "song_occurrences:ea2590c56b1a7788",
+        "song_occurrences:f613f8b245aa39d7",
+        "song_occurrences:ff8e9c283d852f37"
+      ],
+      "current_identity": {
+        "series_resolved": true,
+        "occurrence_resolved": true,
+        "occurrence_series_matches": true
+      }
+    },
+    {
+      "candidate_id": "histprom_e54f2816b8af6f41",
+      "target_series_id": "ser_e789605c6dd5bcf4",
+      "target_occurrence_id": "occ_0e26997fdac41f52",
+      "target_event_name": "西久保八幡神社 盆踊り",
+      "evidence_url_count": 890,
+      "song_title_count": 849,
+      "match_score": 5,
+      "promotion_confidence": "high",
+      "auto_promote_eligible": true,
+      "recommended_action": "auto_promote_historical_reference",
+      "notes": "Promote as historical evidence only; do not copy historical dates to 2026.",
+      "created_at": "2026-07-17T06:00:33.620539+00:00",
+      "updated_at": "2026-07-17T06:00:33.620539+00:00",
+      "occurrence_series_id": "ser_e789605c6dd5bcf4",
+      "occurrence_event_name": "西久保八幡神社 盆踊り",
+      "event_year": 2025,
+      "date_status": "ended",
+      "lifecycle_status": "published",
+      "origin": "curated",
+      "source_url": "http://www.hachimanjinja.or.jp/main/?p=5604",
+      "venue": "西久保八幡神社",
+      "source_types": [
+        "event_date_predictions",
+        "song_occurrences"
+      ],
+      "historical_years": [
+        2023,
+        2024,
+        2025
+      ],
+      "exact_dates": {
+        "2023": [
+          "2023-08-10",
+          "2023-08-12"
+        ],
+        "2024": [
+          "2024-08-09"
+        ],
+        "2025": [
+          "2025-08-09"
+        ]
+      },
+      "year_only_evidence": {},
+      "prediction": [
+        {
+          "basis": "8月9日前後の週末",
+          "confidence": "medium",
+          "event_name": "西久保八幡神社 盆踊り",
+          "evidence_rows": [
+            {
+              "confidence": "high",
+              "date_end": "2023-08-12",
+              "date_start": "2023-08-10",
+              "duration_days": 3,
+              "source_video_count": 9,
+              "weekday_start": "木",
+              "year": 2023
+            },
+            {
+              "confidence": "medium",
+              "date_end": "2024-08-09",
+              "date_start": "2024-08-09",
+              "duration_days": 1,
+              "source_video_count": 8,
+              "weekday_start": "金",
+              "year": 2024
+            },
+            {
+              "confidence": "medium",
+              "date_end": "2025-08-09",
+              "date_start": "2025-08-09",
+              "duration_days": 1,
+              "source_video_count": 37,
+              "weekday_start": "土",
+              "year": 2025
+            }
+          ],
+          "evidence_years": [
+            2023,
+            2024,
+            2025
+          ],
+          "predicted_date_end": "2026-08-08",
+          "predicted_date_start": "2026-08-08",
+          "rule_type": "weekend_near_day",
+          "score": 0.64,
+          "series_key": "aca270553085",
+          "source": "event_date_predictions",
+          "venue": "西久保八幡神社"
+        }
+      ],
+      "source_occurrence_ids": [
+        "event_date_predictions:aca270553085",
+        "song_occurrences:00df191684206aec",
+        "song_occurrences:0440f09ef110eb5d",
+        "song_occurrences:064b7a1f0ea261c7",
+        "song_occurrences:099e5cfda47f8809",
+        "song_occurrences:1a86fbf10a45ffa2",
+        "song_occurrences:2238c05f8d88122d",
+        "song_occurrences:271d8ffa5bc64aa3",
+        "song_occurrences:2d0d8b1a2da1ee9a",
+        "song_occurrences:3462d7df7b97c0ce",
+        "song_occurrences:3f49fe656611a0d6",
+        "song_occurrences:43e9be1c74f2ccde",
+        "song_occurrences:43fe06b06e09c295",
+        "song_occurrences:4faca1552534b4ae",
+        "song_occurrences:56ccf3ec8090e7b8",
+        "song_occurrences:58760b51519bbb3e",
+        "song_occurrences:5a53a382ed5c5d89",
+        "song_occurrences:62fcc575d733dac1",
+        "song_occurrences:71a6dfd3003b2e57",
+        "song_occurrences:9548df0f5325ab75",
+        "song_occurrences:9cc97855f17fc415",
+        "song_occurrences:a38dc91c0ca7edf6",
+        "song_occurrences:a7ff29065d4ff307",
+        "song_occurrences:ac55dada95c68424",
+        "song_occurrences:bc729e7a99c3d08b",
+        "song_occurrences:bccbceea56782224",
+        "song_occurrences:bf230f7ea01a2c32",
+        "song_occurrences:bfe90f839ee8f2c9",
+        "song_occurrences:c281f01d814fa7eb",
+        "song_occurrences:c9569afd873af9c8",
+        "song_occurrences:cba897013e6af0ef",
+        "song_occurrences:cca2ea72513ada17",
+        "song_occurrences:ce4dc0c3f89a3927",
+        "song_occurrences:d20f5ac27a2827dd",
+        "song_occurrences:d5ce61ce46e577d4",
+        "song_occurrences:e8d1bea263a4971a",
+        "song_occurrences:eb0bcdc681563150",
+        "song_occurrences:ebc8c1919e98f8a9",
+        "song_occurrences:fd2e85a28a5622f6"
+      ],
+      "current_identity": {
+        "series_resolved": true,
+        "occurrence_resolved": true,
+        "occurrence_series_matches": true
+      }
+    },
+    {
+      "candidate_id": "histprom_e7c9782790b391af",
+      "target_series_id": "ser_faecad4b52248585",
+      "target_occurrence_id": "occ_1218c84192b3927c",
+      "target_event_name": "シタマチ.ふるさと盆踊り大会",
+      "evidence_url_count": 1959,
+      "song_title_count": 1886,
+      "match_score": 5,
+      "promotion_confidence": "high",
+      "auto_promote_eligible": true,
+      "recommended_action": "auto_promote_historical_reference",
+      "notes": "Promote as historical evidence only; do not copy historical dates to 2026.",
+      "created_at": "2026-07-17T06:00:33.620539+00:00",
+      "updated_at": "2026-07-17T06:00:33.620539+00:00",
+      "occurrence_series_id": "ser_faecad4b52248585",
+      "occurrence_event_name": "シタマチ.ふるさと盆踊り大会",
+      "event_year": 2025,
+      "date_status": "ended",
+      "lifecycle_status": "published",
+      "origin": "curated",
+      "source_url": "https://tokyofesta.com/23ku/24373/",
+      "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+      "source_types": [
+        "event_date_predictions",
+        "song_occurrences"
+      ],
+      "historical_years": [
+        2024,
+        2025
+      ],
+      "exact_dates": {
+        "2024": [
+          "2024-08-17"
+        ],
+        "2025": [
+          "2025-08-16"
+        ]
+      },
+      "year_only_evidence": {},
+      "prediction": [
+        {
+          "basis": "8月第3土曜",
+          "confidence": "medium",
+          "event_name": "シタマチ.ふるさと盆踊り大会",
+          "evidence_rows": [
+            {
+              "confidence": "medium",
+              "date_end": "2024-08-17",
+              "date_start": "2024-08-17",
+              "duration_days": 1,
+              "source_video_count": 5,
+              "weekday_start": "土",
+              "year": 2024
+            },
+            {
+              "confidence": "high",
+              "date_end": "2025-08-16",
+              "date_start": "2025-08-16",
+              "duration_days": 1,
+              "source_video_count": 79,
+              "weekday_start": "土",
+              "year": 2025
+            }
+          ],
+          "evidence_years": [
+            2024,
+            2025
+          ],
+          "predicted_date_end": "2026-08-15",
+          "predicted_date_start": "2026-08-15",
+          "rule_type": "weekday_nth",
+          "score": 0.7,
+          "series_key": "c9953a983451",
+          "source": "event_date_predictions",
+          "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）"
+        }
+      ],
+      "source_occurrence_ids": [
+        "event_date_predictions:c9953a983451",
+        "song_occurrences:03f4bb6ce7e395b1",
+        "song_occurrences:0ce37ea499ab56a7",
+        "song_occurrences:0cee383fcfc69110",
+        "song_occurrences:0ed965be6c922e9c",
+        "song_occurrences:11eab9b47e0c6ac7",
+        "song_occurrences:1327e51fd82fe354",
+        "song_occurrences:1fde7e4d96ed06b8",
+        "song_occurrences:20ed14ff4afee5b1",
+        "song_occurrences:2e6f2a8ea9752b0e",
+        "song_occurrences:32f9124096114cf6",
+        "song_occurrences:33c0110e3aa51547",
+        "song_occurrences:342a9d816ebcea41",
+        "song_occurrences:34daa4617038e531",
+        "song_occurrences:3810d8b1963f21f9",
+        "song_occurrences:39ad407a5bb1604e",
+        "song_occurrences:448049ec8cc2c27c",
+        "song_occurrences:467559a6c93aa50a",
+        "song_occurrences:4cf2b3e9ff7aa93a",
+        "song_occurrences:4d5b51c2ebcc0c43",
+        "song_occurrences:4f6e894fb72a0f95",
+        "song_occurrences:544fd72aebe4219c",
+        "song_occurrences:54518c2461bc7020",
+        "song_occurrences:5582bfc4014012f6",
+        "song_occurrences:5c52150d89ea7e09",
+        "song_occurrences:5d06baa82fb655cc",
+        "song_occurrences:5e31739f03c1c9cb",
+        "song_occurrences:5ed2978cdad311d7",
+        "song_occurrences:63b39d8e1c406b20",
+        "song_occurrences:63cdbc19d34dbf2b",
+        "song_occurrences:6c8f190cf0c1439b",
+        "song_occurrences:73f97b50db108314",
+        "song_occurrences:792b3a3956957bc7",
+        "song_occurrences:7c90a288815990f2",
+        "song_occurrences:83fc46ff4b2c24e1",
+        "song_occurrences:84e23feed203b32c",
+        "song_occurrences:8998799845042e70",
+        "song_occurrences:8f630d358b8c4df9",
+        "song_occurrences:952fd9d3a5dd4651",
+        "song_occurrences:987a382cdb94287d",
+        "song_occurrences:9a63a1a4cb46d0d4",
+        "song_occurrences:9d2626710b9ffd55",
+        "song_occurrences:9f712f52199b44f4",
+        "song_occurrences:a21a95e39aa411a2",
+        "song_occurrences:a4d7328bdbb32162",
+        "song_occurrences:a9d04e698034210b",
+        "song_occurrences:ace722bf8f99a4bd",
+        "song_occurrences:ad7a00ecc96aa80d",
+        "song_occurrences:ae9df0329e1fefac",
+        "song_occurrences:b4da76636e03b57a",
+        "song_occurrences:bb8e7ae5aa0f4109",
+        "song_occurrences:bccdcdbb60680727",
+        "song_occurrences:c021a9f044880889",
+        "song_occurrences:c1ed81dfc75cacaa",
+        "song_occurrences:c233140cfcad1654",
+        "song_occurrences:c9f1bc87dd780cb9",
+        "song_occurrences:cc7150842879b50b",
+        "song_occurrences:cda8482fbace48a9",
+        "song_occurrences:cdbc8620b0dbef5d",
+        "song_occurrences:d3d3d91a439200af",
+        "song_occurrences:d3d796bbcfeea275",
+        "song_occurrences:d9cfec780f7fcb46",
+        "song_occurrences:da0acd74a4e86841",
+        "song_occurrences:dac6f175a26bdb60",
+        "song_occurrences:dbd64f549147f249",
+        "song_occurrences:ddf20e58236618d1",
+        "song_occurrences:e0511dd49cfb41bf",
+        "song_occurrences:ebe9b80c6f500d54",
+        "song_occurrences:edf4d3103970e8ff",
+        "song_occurrences:f4bbd5402de098fd",
+        "song_occurrences:f577f0487e7523da",
+        "song_occurrences:fc0d6fe7803d55a9",
+        "song_occurrences:fe2621ca5923c8e2"
+      ],
+      "current_identity": {
+        "series_resolved": true,
+        "occurrence_resolved": true,
+        "occurrence_series_matches": true
+      }
+    },
+    {
+      "candidate_id": "histprom_ecd6fc8cd1e68a2d",
+      "target_series_id": "ser_fcafc8f922526308",
+      "target_occurrence_id": "occ_2704892d424f61c1",
+      "target_event_name": "みたままつり 納涼民踊のつどい",
+      "evidence_url_count": 279,
+      "song_title_count": 271,
+      "match_score": 7,
+      "promotion_confidence": "high",
+      "auto_promote_eligible": true,
+      "recommended_action": "auto_promote_historical_reference",
+      "notes": "Promote as historical evidence only; do not copy historical dates to 2026.",
+      "created_at": "2026-07-17T06:00:33.620539+00:00",
+      "updated_at": "2026-07-17T06:00:33.620539+00:00",
+      "occurrence_series_id": "ser_fcafc8f922526308",
+      "occurrence_event_name": "みたままつり 納涼民踊のつどい",
+      "event_year": 2026,
+      "date_status": "confirmed",
+      "lifecycle_status": "published",
+      "origin": "curated",
+      "source_url": "https://www.yasukuni.or.jp/schedule/saiji.html#saiji03",
+      "venue": "靖国神社",
+      "source_types": [
+        "event_date_predictions",
+        "song_occurrences"
+      ],
+      "historical_years": [
+        2023,
+        2024,
+        2025
+      ],
+      "exact_dates": {
+        "2023": [
+          "2023-07-13",
+          "2023-07-15"
+        ],
+        "2024": [
+          "2024-07-15"
+        ],
+        "2025": [
+          "2025-07-14"
+        ]
+      },
+      "year_only_evidence": {},
+      "prediction": [
+        {
+          "basis": "7月14日前後",
+          "confidence": "low",
+          "event_name": "みたままつり 納涼民踊のつどい",
+          "evidence_rows": [
+            {
+              "confidence": "medium",
+              "date_end": "2023-07-15",
+              "date_start": "2023-07-13",
+              "duration_days": 3,
+              "source_video_count": 4,
+              "weekday_start": "木",
+              "year": 2023
+            },
+            {
+              "confidence": "medium",
+              "date_end": "2024-07-15",
+              "date_start": "2024-07-15",
+              "duration_days": 1,
+              "source_video_count": 4,
+              "weekday_start": "月",
+              "year": 2024
+            }
+          ],
+          "evidence_years": [
+            2023,
+            2024
+          ],
+          "predicted_date_end": "2026-07-16",
+          "predicted_date_start": "2026-07-14",
+          "rule_type": "date_near",
+          "score": 0.58,
+          "series_key": "b727adc26276",
+          "source": "event_date_predictions",
+          "venue": "靖国神社"
+        }
+      ],
+      "source_occurrence_ids": [
+        "event_date_predictions:b727adc26276",
+        "song_occurrences:0b39c7ad11208a3a",
+        "song_occurrences:1685430d11031119",
+        "song_occurrences:2649205a2479601a",
+        "song_occurrences:2696d624468ae44c",
+        "song_occurrences:2b659d2a1324aad4",
+        "song_occurrences:2cccffa46698d08a",
+        "song_occurrences:3bf5c7d80c41c416",
+        "song_occurrences:3ea872b66a7feb7e",
+        "song_occurrences:69a5c385a6f7e94f",
+        "song_occurrences:9e3bb559edcb5c34",
+        "song_occurrences:a69b5fbf5ec5f9c2",
+        "song_occurrences:ae599d53e790e9f7",
+        "song_occurrences:aee2d10a7ea4add1",
+        "song_occurrences:b967fa83fe1f82c0",
+        "song_occurrences:b9fc5ad574857dd7",
+        "song_occurrences:caeea3d1a8428b5a",
+        "song_occurrences:d7b3fe190b8f0219",
+        "song_occurrences:dfdc523e33ba2f46",
+        "song_occurrences:e8a4256d87b61521",
+        "song_occurrences:ffa81b5cbc62a3af"
+      ],
+      "current_identity": {
+        "series_resolved": true,
+        "occurrence_resolved": true,
+        "occurrence_series_matches": true
+      }
+    },
+    {
+      "candidate_id": "histprom_ff87fea4662efda4",
+      "target_series_id": "ser_89120beee0d531cf",
+      "target_occurrence_id": "occ_b5a16804f0be9815",
+      "target_event_name": "山王音頭と民踊大会",
+      "evidence_url_count": 57,
+      "song_title_count": 24,
+      "match_score": 5,
+      "promotion_confidence": "high",
+      "auto_promote_eligible": true,
+      "recommended_action": "auto_promote_historical_reference",
+      "notes": "Promote as historical evidence only; do not copy historical dates to 2026.",
+      "created_at": "2026-07-17T06:00:33.620539+00:00",
+      "updated_at": "2026-07-17T06:00:33.620539+00:00",
+      "occurrence_series_id": "ser_89120beee0d531cf",
+      "occurrence_event_name": "山王音頭と民踊大会",
+      "event_year": 2026,
+      "date_status": "ended",
+      "lifecycle_status": "published",
+      "origin": "curated",
+      "source_url": "https://www.tenkamatsuri.jp/minyo/",
+      "venue": "山王パークタワー公開空地",
+      "source_types": [
+        "event_date_predictions",
+        "song_occurrences"
+      ],
+      "historical_years": [
+        2023,
+        2024,
+        2025
+      ],
+      "exact_dates": {
+        "2023": [
+          "2023-06-13"
+        ],
+        "2024": [
+          "2024-06-13",
+          "2024-06-15"
+        ],
+        "2025": [
+          "2025-06-13",
+          "2025-06-15"
+        ]
+      },
+      "year_only_evidence": {},
+      "prediction": [
+        {
+          "basis": "毎年6/13開始",
+          "confidence": "medium",
+          "event_name": "山王音頭と民踊大会",
+          "evidence_rows": [
+            {
+              "confidence": "medium",
+              "date_end": "2023-06-13",
+              "date_start": "2023-06-13",
+              "duration_days": 1,
+              "source_video_count": 7,
+              "weekday_start": "火",
+              "year": 2023
+            },
+            {
+              "confidence": "high",
+              "date_end": "2024-06-15",
+              "date_start": "2024-06-13",
+              "duration_days": 3,
+              "source_video_count": 10,
+              "weekday_start": "木",
+              "year": 2024
+            }
+          ],
+          "evidence_years": [
+            2023,
+            2024
+          ],
+          "predicted_date_end": "2026-06-15",
+          "predicted_date_start": "2026-06-13",
+          "rule_type": "fixed_date",
+          "score": 0.72,
+          "series_key": "d17bb14b4079",
+          "source": "event_date_predictions",
+          "venue": "山王パークタワー公開空地"
+        }
+      ],
+      "source_occurrence_ids": [
+        "event_date_predictions:d17bb14b4079",
+        "song_occurrences:38c7d2ba4835f386"
+      ],
+      "current_identity": {
+        "series_resolved": true,
+        "occurrence_resolved": true,
+        "occurrence_series_matches": true
+      }
+    },
+    {
+      "candidate_id": "histprom_ff950733e63010ca",
+      "target_series_id": "ser_65e9579530960384",
+      "target_occurrence_id": "occ_c6080641c46d846a",
+      "target_event_name": "第10回白金台どんぐり児童遊園 納涼盆踊り大会",
+      "evidence_url_count": 4,
+      "song_title_count": 39,
+      "match_score": 5,
+      "promotion_confidence": "high",
+      "auto_promote_eligible": true,
+      "recommended_action": "auto_promote_historical_reference",
+      "notes": "Promote as historical evidence only; do not copy historical dates to 2026.",
+      "created_at": "2026-07-17T06:00:33.620539+00:00",
+      "updated_at": "2026-07-17T06:00:33.620539+00:00",
+      "occurrence_series_id": "ser_65e9579530960384",
+      "occurrence_event_name": "第10回白金台どんぐり児童遊園 納涼盆踊り大会",
+      "event_year": 2025,
+      "date_status": "ended",
+      "lifecycle_status": "published",
+      "origin": "curated",
+      "source_url": "https://sanko8.net/8996/",
+      "venue": "白金台どんぐり児童遊園",
+      "source_types": [
+        "song_occurrences"
+      ],
+      "historical_years": [
+        2024,
+        2025
+      ],
+      "exact_dates": {
+        "2025": [
+          "2025-09-07"
+        ]
+      },
+      "year_only_evidence": {
+        "2024": 68
+      },
+      "prediction": [],
+      "source_occurrence_ids": [
+        "song_occurrences:2d10009d47f8d755",
+        "song_occurrences:ef9948ba2b7b30ac"
+      ],
+      "current_identity": {
+        "series_resolved": true,
+        "occurrence_resolved": true,
+        "occurrence_series_matches": true
+      }
+    }
+  ]
+}
