@@ -1,15 +1,15 @@
 {
   "generated_by": "review_historical_promotion_candidates.py",
-  "generated_at": "2026-06-22T14:13:54.503603+00:00",
+  "generated_at": "2026-07-18T16:29:30.110036+00:00",
   "scope": "read_only_historical_reference_review",
   "sources": {
-    "master_db": "data/bon_odori_master.sqlite"
+    "master_db": "data/b1_cutover_canary_20260719/fetched.sqlite"
   },
   "summary": {
-    "candidate_count": 15,
+    "candidate_count": 16,
     "actions": {
-      "already_has_historical_reference": 10,
-      "manual_review_year_only_evidence": 2,
+      "already_has_historical_reference": 12,
+      "manual_review_year_only_evidence": 1,
       "series_or_venue_review": 1,
       "manual_review": 2
     }
@@ -86,7 +86,7 @@
         ]
       },
       "year_only_evidence": {},
-      "existing_historical_reference_dates": 1,
+      "existing_historical_reference_dates": 2,
       "evidence_url_count": 20,
       "song_title_count": 2,
       "review_action": "already_has_historical_reference",
@@ -125,11 +125,12 @@
       "year_only_evidence": {
         "2024": 92
       },
-      "existing_historical_reference_dates": 0,
+      "existing_historical_reference_dates": 1,
       "evidence_url_count": 23,
       "song_title_count": 14,
-      "review_action": "manual_review_year_only_evidence",
+      "review_action": "already_has_historical_reference",
       "review_reasons": [
+        "historical_reference_already_recorded",
         "has_year_only_evidence"
       ]
     },
@@ -161,7 +162,7 @@
         ]
       },
       "year_only_evidence": {},
-      "existing_historical_reference_dates": 1,
+      "existing_historical_reference_dates": 2,
       "evidence_url_count": 1959,
       "song_title_count": 1886,
       "review_action": "already_has_historical_reference",
@@ -251,6 +252,48 @@
       ]
     },
     {
+      "candidate_id": "histprom_557fa293eae577ae",
+      "event_name": "浄土寺盆踊り大会",
+      "target_occurrence_id": "occ_8ff0a2c41a98d97b",
+      "target_year": 2025,
+      "target_date_start": "2025-07-24",
+      "target_date_end": "2025-07-25",
+      "target_date_status": "ended",
+      "venue": "浄土寺",
+      "match_score": 5,
+      "promotion_confidence": "high",
+      "auto_promote_eligible": true,
+      "historical_years": [
+        2023,
+        2024,
+        2025
+      ],
+      "insertable_historical_years": [
+        2023,
+        2024
+      ],
+      "exact_dates": {
+        "2023": [
+          "2023-07-26"
+        ],
+        "2024": [
+          "2024-07-25",
+          "2024-07-26"
+        ],
+        "2025": [
+          "2025-07-24"
+        ]
+      },
+      "year_only_evidence": {},
+      "existing_historical_reference_dates": 3,
+      "evidence_url_count": 126,
+      "song_title_count": 124,
+      "review_action": "already_has_historical_reference",
+      "review_reasons": [
+        "historical_reference_already_recorded"
+      ]
+    },
+    {
       "candidate_id": "histprom_ff950733e63010ca",
       "event_name": "第10回白金台どんぐり児童遊園 納涼盆踊り大会",
       "target_occurrence_id": "occ_c6080641c46d846a",
@@ -275,7 +318,7 @@
       "year_only_evidence": {
         "2024": 68
       },
-      "existing_historical_reference_dates": 0,
+      "existing_historical_reference_dates": 1,
       "evidence_url_count": 4,
       "song_title_count": 39,
       "review_action": "manual_review_year_only_evidence",
@@ -317,7 +360,7 @@
         ]
       },
       "year_only_evidence": {},
-      "existing_historical_reference_dates": 2,
+      "existing_historical_reference_dates": 3,
       "evidence_url_count": 209,
       "song_title_count": 201,
       "review_action": "already_has_historical_reference",
@@ -433,51 +476,9 @@
         ]
       },
       "year_only_evidence": {},
-      "existing_historical_reference_dates": 2,
+      "existing_historical_reference_dates": 3,
       "evidence_url_count": 890,
       "song_title_count": 849,
-      "review_action": "already_has_historical_reference",
-      "review_reasons": [
-        "historical_reference_already_recorded"
-      ]
-    },
-    {
-      "candidate_id": "histprom_557fa293eae577ae",
-      "event_name": "赤坂浄土寺盆踊り大会",
-      "target_occurrence_id": "occ_8ff0a2c41a98d97b",
-      "target_year": 2025,
-      "target_date_start": "2025-07-24",
-      "target_date_end": "2025-07-25",
-      "target_date_status": "ended",
-      "venue": "浄土寺",
-      "match_score": 5,
-      "promotion_confidence": "high",
-      "auto_promote_eligible": true,
-      "historical_years": [
-        2023,
-        2024,
-        2025
-      ],
-      "insertable_historical_years": [
-        2023,
-        2024
-      ],
-      "exact_dates": {
-        "2023": [
-          "2023-07-26"
-        ],
-        "2024": [
-          "2024-07-25",
-          "2024-07-26"
-        ],
-        "2025": [
-          "2025-07-24"
-        ]
-      },
-      "year_only_evidence": {},
-      "existing_historical_reference_dates": 2,
-      "evidence_url_count": 126,
-      "song_title_count": 124,
       "review_action": "already_has_historical_reference",
       "review_reasons": [
         "historical_reference_already_recorded"
@@ -492,7 +493,7 @@
       "target_date_end": "2025-06-21",
       "target_date_status": "ended",
       "venue": "秩父宮ラグビー場駐車場",
-      "match_score": 5,
+      "match_score": 4,
       "promotion_confidence": "high",
       "auto_promote_eligible": true,
       "historical_years": [
@@ -507,21 +508,56 @@
           "2024-06-14"
         ],
         "2025": [
-          "2025-05-25",
-          "2025-06-20",
-          "2025-09-27",
-          "2025-10-11",
-          "2025-11-03"
+          "2025-06-20"
         ]
       },
       "year_only_evidence": {},
       "existing_historical_reference_dates": 0,
-      "evidence_url_count": 944,
-      "song_title_count": 907,
+      "evidence_url_count": 519,
+      "song_title_count": 482,
       "review_action": "series_or_venue_review",
       "review_reasons": [
-        "many_dates_in_single_year",
         "known_series_split_review"
+      ]
+    },
+    {
+      "candidate_id": "histprom_16f428d14ff34c85",
+      "event_name": "亀有銀座商店街納涼盆踊り大会",
+      "target_occurrence_id": "occ_1df0a276422a54b5",
+      "target_year": 2026,
+      "target_date_start": null,
+      "target_date_end": null,
+      "target_date_status": "unknown",
+      "venue": "亀有ゆうろーど（亀有銀座商店街）",
+      "match_score": 6,
+      "promotion_confidence": "medium",
+      "auto_promote_eligible": false,
+      "historical_years": [
+        2024,
+        2025
+      ],
+      "insertable_historical_years": [
+        2025
+      ],
+      "exact_dates": {
+        "2025": [
+          "2025-08-31"
+        ]
+      },
+      "year_only_evidence": {
+        "2024": [
+          "year_confirmed_by_youtube_title"
+        ]
+      },
+      "existing_historical_reference_dates": 1,
+      "evidence_url_count": 3,
+      "song_title_count": 14,
+      "review_action": "already_has_historical_reference",
+      "review_reasons": [
+        "historical_reference_already_recorded",
+        "not_auto_promote_eligible",
+        "low_promotion_confidence",
+        "has_year_only_evidence"
       ]
     },
     {
@@ -586,7 +622,7 @@
       "year_only_evidence": {
         "2024": 59
       },
-      "existing_historical_reference_dates": 0,
+      "existing_historical_reference_dates": 1,
       "evidence_url_count": 6,
       "song_title_count": 18,
       "review_action": "manual_review",
