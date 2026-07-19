@@ -28,7 +28,117 @@ def console_row(decision="accept", apply_value="confirm_current_date", **raw_ove
     }
 
 
+def rare_signal_row(decision="accept", apply_value="stage_registration_candidate", note=""):
+    return {
+        "source_id": "review_inbox",
+        "decision": decision,
+        "apply_value": apply_value,
+        "reviewer": "内田さん",
+        "reviewed_at": "2026-07-19T02:00:00+00:00",
+        "note": note,
+        "raw": {
+            "inbox_id": "inbox_rare",
+            "kind": "rare_signal",
+            "title": "佐竹ゲバゲバ盆踊り",
+            "event_name": "佐竹ゲバゲバ盆踊り",
+            "venue": "佐竹商店街",
+            "event_year": 2026,
+            "source_id": "rare_signal",
+            "source_key": "new_event_candidate|event|x-status:1",
+            "source_url": "https://x.com/example/status/1",
+            "payload": {
+                "candidate_id": "xoto_satake",
+                "promotion_target": "event",
+                "possible_event_name": "佐竹ゲバゲバ盆踊り",
+                "possible_venue": "佐竹商店街",
+            },
+        },
+    }
+
+
 class ReviewInboxDecisionStageTest(unittest.TestCase):
+    def test_rare_signal_inbox_ui_exposes_only_finite_b2_actions(self):
+        source = next(source for source in data.SOURCES if source.id == "review_inbox")
+        options = data.apply_options(source, {"kind": "rare_signal"})
+
+        self.assertEqual(
+            [option["value"] for option in options],
+            ["stage_registration_candidate", "needs_research", "reject", "hold"],
+        )
+        self.assertEqual(
+            [option["decision"] for option in options],
+            ["accept", "needs_research", "reject", "hold"],
+        )
+        self.assertIn("非X確認URL", data.route_note(source, {"kind": "rare_signal"}))
+
+    def test_rare_signal_accept_stages_finite_registration_candidate(self):
+        stage = build_decision_stage(
+            {"rows": [rare_signal_row(note="確認 https://example.jp/satake-bonodori")]}
+        )
+
+        self.assertEqual(stage["route_counts"]["domain_stage"], 1)
+        row = stage["by_route"]["domain_stage"][0]
+        self.assertEqual(row["domain_stage_type"], "rare_signal_registration_candidate")
+        self.assertEqual(
+            row["registration_candidate"]["confirmed_source_urls"],
+            ["https://example.jp/satake-bonodori"],
+        )
+        self.assertEqual(row["registration_candidate"]["write_mode"], "staged_only")
+
+    def test_rare_signal_x_only_accept_fails_closed_without_packet(self):
+        with self.assertRaisesRegex(ValueError, "requires a non-X confirmation URL"):
+            build_decision_stage(
+                {"rows": [rare_signal_row(note="確認 https://x.com/example/status/1")]}
+            )
+
+    def test_rare_signal_accept_rejects_unsafe_action(self):
+        with self.assertRaisesRegex(ValueError, "must stage a registration candidate"):
+            build_decision_stage(
+                {
+                    "rows": [
+                        rare_signal_row(
+                            apply_value="confirm_current_date",
+                            note="https://example.jp/event",
+                        )
+                    ]
+                }
+            )
+
+    def test_rare_signal_accept_rejects_invalid_source_and_target(self):
+        wrong_source = rare_signal_row(note="https://example.jp/event")
+        wrong_source["raw"]["source_id"] = "official_source"
+        with self.assertRaisesRegex(ValueError, "requires rare_signal source_id"):
+            build_decision_stage({"rows": [wrong_source]})
+
+        wrong_target = rare_signal_row(note="https://example.jp/event")
+        wrong_target["raw"]["payload"]["promotion_target"] = "public_apply"
+        with self.assertRaisesRegex(ValueError, "unsupported promotion target"):
+            build_decision_stage({"rows": [wrong_target]})
+
+    def test_rare_signal_accept_ignores_malformed_and_x_subdomain_urls(self):
+        row = rare_signal_row()
+        row["raw"]["payload"]["confirmed_source_urls"] = [
+            "not-a-url",
+            "https://mobile.twitter.com/example/status/1",
+            "https://x.com:443/example/status/1",
+        ]
+        with self.assertRaisesRegex(ValueError, "requires a non-X confirmation URL"):
+            build_decision_stage({"rows": [row]})
+
+    def test_rare_signal_non_accept_routes_never_emit_apply_packet(self):
+        research = rare_signal_row(decision="needs_research", apply_value="needs_research")
+        hold = rare_signal_row(decision="hold", apply_value="hold")
+        hold["raw"]["inbox_id"] = "inbox_rare_hold"
+        reject = rare_signal_row(decision="reject", apply_value="reject")
+        reject["raw"]["inbox_id"] = "inbox_rare_reject"
+        stage = build_decision_stage({"rows": [research, hold, reject]})
+
+        self.assertEqual(stage["route_counts"]["research_followup"], 1)
+        self.assertEqual(stage["route_counts"]["no_apply"], 2)
+        for route in ("research_followup", "no_apply"):
+            for row in stage["by_route"][route]:
+                self.assertNotIn("registration_candidate", row)
+
     def test_builds_change_request_and_inbox_update_packets(self):
         stage = build_decision_stage({"rows": [console_row()]})
 

@@ -121,7 +121,7 @@ def immutable_source_reference(value: str) -> str:
     if not text:
         return ""
     parsed = urlsplit(text)
-    host = parsed.netloc.lower()
+    host = (parsed.hostname or "").lower()
     if not parsed.scheme or not host:
         return ""
     if host in X_HOSTS:
@@ -130,7 +130,13 @@ def immutable_source_reference(value: str) -> str:
             return f"x-status:{match.group(1)}"
     query = urlencode(sorted(parse_qsl(parsed.query, keep_blank_values=True)))
     canonical = urlunsplit(
-        (parsed.scheme.lower(), host, parsed.path.rstrip("/") or "/", query, "")
+        (
+            parsed.scheme.lower(),
+            parsed.netloc.lower(),
+            parsed.path.rstrip("/") or "/",
+            query,
+            "",
+        )
     )
     return f"url:{canonical}"
 
@@ -142,12 +148,34 @@ def integer_or_none(value: Any) -> int | None:
         return None
 
 
-def build_snapshot(input_path: Path) -> dict[str, Any]:
+def build_snapshot(
+    input_path: Path,
+    *,
+    canary_source_key: str | None = None,
+) -> dict[str, Any]:
     snapshot = load_adapted_source(RareSignalAdapter(), input_path)
-    snapshot["selection"] = {
-        "mode": "all",
-        "source_keys": [item["source_key"] for item in snapshot["items"]],
-    }
+    if canary_source_key is not None:
+        source_key = str(canary_source_key).strip()
+        if not source_key:
+            raise ValueError("rare signal canary source key must not be empty")
+        selected = [
+            item for item in snapshot["items"] if item.get("source_key") == source_key
+        ]
+        if len(selected) != 1:
+            raise ValueError(
+                f"rare signal canary source key must select exactly one item: {source_key}"
+            )
+        snapshot["items"] = selected
+        snapshot["item_count"] = 1
+        snapshot["selection"] = {
+            "mode": "canary",
+            "source_keys": [source_key],
+        }
+    else:
+        snapshot["selection"] = {
+            "mode": "all",
+            "source_keys": [item["source_key"] for item in snapshot["items"]],
+        }
     snapshot["write_mode"] = "snapshot_only_default_off"
     snapshot["upstream_boundary"] = "oto_interpreted_backcheck_candidates_only"
     return snapshot
