@@ -4,7 +4,7 @@ Updated: 2026-07-19 JST
 
 署名: おと（Codex）
 
-Status: B2-0 contract fixed; B2-1 pure adapter; B2-2 finite decision staging
+Status: B2-0 contract fixed; B2-1 pure adapter; B2-2 finite decision staging; B2-3a canary wiring default off
 
 ## Scope
 
@@ -87,7 +87,8 @@ event/song/venue/existing evidenceのどのtargetでも、staging後のdomain ap
 
 1. **B2-1 pure adapter**: adapter、佐竹/鉄砲洲fixture、input hash、stable ID、payload hash、parity test。
 2. **B2-2 decision route**: finite decision packetと非X URL fail-closed。production変更なし。
-3. **B2-3 canary**: 別GO後に1件だけshadow upsertし、decision round-tripと再観測保持を検証。
+3. **B2-3 canary**: B2-3aでdefault-off配線、B2-3bの別GO後に1件だけshadow upsertし、
+   正本decision CAS writer整備後のB2-3cでdecision round-tripと再観測保持を検証。
 4. **B2-4 full shadow**: Oto-promoted対象だけを投入し、legacy残高をunmapped 0へ分類。
 5. **B2-5 scheduled dual-write**: 別workflow PR・別GOでlegacy JSON/DynamoDBを維持したまま2実run観測。
 6. **B2 cutover**: reader cutover後さらに1実runを監視し、10閉鎖条件後にlegacy UI writer停止を判断。

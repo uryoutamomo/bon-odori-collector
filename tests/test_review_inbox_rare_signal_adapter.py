@@ -19,6 +19,17 @@ FIXTURE = Path(__file__).parent / "fixtures" / "rare_signal_backcheck_two_exampl
 
 
 class ReviewInboxRareSignalAdapterTest(unittest.TestCase):
+    def test_canary_selection_requires_one_exact_stable_key(self):
+        source_key = "new_event_candidate|event|x-status:2000000000000000001"
+        snapshot = build_snapshot(FIXTURE, canary_source_key=source_key)
+
+        self.assertEqual(snapshot["item_count"], 1)
+        self.assertEqual(snapshot["selection"], {"mode": "canary", "source_keys": [source_key]})
+        self.assertEqual(snapshot["items"][0]["source_key"], source_key)
+
+        with self.assertRaisesRegex(ValueError, "exactly one item"):
+            build_snapshot(FIXTURE, canary_source_key="missing")
+
     def test_contract_examples_have_stable_lineage_and_zero_diff_parity(self):
         snapshot = build_snapshot(FIXTURE)
 
