@@ -121,7 +121,7 @@ def immutable_source_reference(value: str) -> str:
     if not text:
         return ""
     parsed = urlsplit(text)
-    host = parsed.netloc.lower()
+    host = (parsed.hostname or "").lower()
     if not parsed.scheme or not host:
         return ""
     if host in X_HOSTS:
@@ -130,7 +130,13 @@ def immutable_source_reference(value: str) -> str:
             return f"x-status:{match.group(1)}"
     query = urlencode(sorted(parse_qsl(parsed.query, keep_blank_values=True)))
     canonical = urlunsplit(
-        (parsed.scheme.lower(), host, parsed.path.rstrip("/") or "/", query, "")
+        (
+            parsed.scheme.lower(),
+            parsed.netloc.lower(),
+            parsed.path.rstrip("/") or "/",
+            query,
+            "",
+        )
     )
     return f"url:{canonical}"
 

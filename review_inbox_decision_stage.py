@@ -39,7 +39,7 @@ def clean_url(value: Any) -> str:
 
 def is_x_url(value: str) -> bool:
     try:
-        host = urlsplit(value).netloc.casefold()
+        host = (urlsplit(value).hostname or "").casefold()
         return any(host == domain or host.endswith("." + domain) for domain in X_HOSTS)
     except ValueError:
         return False

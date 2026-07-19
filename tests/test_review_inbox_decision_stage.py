@@ -120,6 +120,7 @@ class ReviewInboxDecisionStageTest(unittest.TestCase):
         row["raw"]["payload"]["confirmed_source_urls"] = [
             "not-a-url",
             "https://mobile.twitter.com/example/status/1",
+            "https://x.com:443/example/status/1",
         ]
         with self.assertRaisesRegex(ValueError, "requires a non-X confirmation URL"):
             build_decision_stage({"rows": [row]})

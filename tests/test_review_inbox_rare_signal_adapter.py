@@ -94,6 +94,12 @@ class ReviewInboxRareSignalAdapterTest(unittest.TestCase):
         second = immutable_source_reference("https://example.jp/event?a=1&b=2")
         self.assertEqual(first, second)
 
+    def test_x_status_identity_ignores_default_port(self):
+        self.assertEqual(
+            immutable_source_reference("https://x.com:443/example/status/1234567890"),
+            "x-status:1234567890",
+        )
+
     def test_unknown_action_target_and_duplicate_identity_fail_closed(self):
         base = {
             "candidate_id": "xoto_one",
