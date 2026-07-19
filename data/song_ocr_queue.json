@@ -1,6 +1,6 @@
 {
   "generated_by": "build_song_ocr_queue.py",
-  "count": 22,
+  "count": 26,
   "items": [
     {
       "id": "b21783a2a9785946",
@@ -337,6 +337,75 @@
         "https://pbs.twimg.com/media/HNbv4EPakAAzVIH.jpg"
       ],
       "text": "2日続けて盆踊り🏮👘 🐙\n途中で曲目が変わったので2巡したら腰に結構なダメージ🕺🕺\n明日起き上がれないパターンか？(:3[_____] https://t.co/5g2gsFMe78",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "ea22b83514235537",
+      "status": "needs_ocr",
+      "account": "@nijigame_taiko",
+      "url": "https://x.com/nijigame_taiko/status/2078459328600916009",
+      "tweet_id": "2078459328600916009",
+      "date": "2026-07-18T12:38:14+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HNgrst0aQAAbQlm.jpg",
+        "https://t.co/xpNNaxWxaK",
+        "pic.x.com/xpNNaxWxaK",
+        "https://pbs.twimg.com/media/HNgrtYpbMAAGFk2.jpg",
+        "https://pbs.twimg.com/media/HNgruKibMAAKGAL.jpg",
+        "https://pbs.twimg.com/media/HNgrvFKbQAAnqar.jpg"
+      ],
+      "text": "今夜の今季初の尼崎の1番早くの開催の築地の松島橋公園の盆踊りですが、曲目一巡りした頃に一瞬雨が強くなり、まあ直ぐに止みそうでしたが、今夜は9時少し前で中止になりましたです(T_T)\n\n夜店は10時迄開催してるようです。\n\n明日は昼間は大庄元気むらで練習して、夜は松島橋公園の築地盆踊りの2日目。 https://t.co/xpNNaxWxaK",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "4cc41a92a3af66e9",
+      "status": "needs_ocr",
+      "account": "@bonkyodora_",
+      "url": "https://x.com/bonkyodora_/status/2078464845587063202",
+      "tweet_id": "2078464845587063202",
+      "date": "2026-07-18T13:00:09+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/ext_tw_video_thumb/2078464627881787392/pu/img/pL8eu-A_y0r-mAtm.jpg",
+        "https://t.co/JjtC8KO8xf",
+        "pic.x.com/JjtC8KO8xf",
+        "https://pbs.twimg.com/ext_tw_video_thumb/2078464669367554048/pu/img/pmOw5gtcDw8iADlw.jpg",
+        "https://pbs.twimg.com/ext_tw_video_thumb/2078464803375616000/pu/img/zPmJviw3hCIfzckG.jpg",
+        "https://pbs.twimg.com/media/HNgwnbpbcAAMuEU.jpg"
+      ],
+      "text": "2026年7月18日(土)\n千葉県柏市／柏の葉T-SITE\n「柏の葉T-SITE 夏祭り2026」\n20:20～21:00 盆踊り\n\n今も強く心に残る、2021年7月🏮\n江橋様、晴盆様、魂舞会様が3日連続で来てくださった、柏の葉T-SITE盆踊りを回想しながら、盆踊りを楽しみました😌✨\n\n【曲目】\n柏おどり\nバハマ・ママ\n東京音頭 https://t.co/JjtC8KO8xf",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "60e86a378f2bc800",
+      "status": "needs_ocr",
+      "account": "@obakedaigaku",
+      "url": "https://x.com/obakedaigaku/status/2078467722602770915",
+      "tweet_id": "2078467722602770915",
+      "date": "2026-07-18T13:11:35+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HNgzXaTa4AABsJP.jpg",
+        "https://t.co/x71xWrnwXr",
+        "pic.x.com/x71xWrnwXr"
+      ],
+      "text": "7/19(日)さいたま市与野本町コミュニティセンターで、盆踊り練習会あります。7/25(土)川口駅前でのごちゃまつりでは17時から演奏予定のパピポンズ＋プリンス王子🎸(ミックスナッツハウス)の曲目\n①佐左エ門音頭川口よいとこ編\n②江州音頭\nの公開リハを生演奏でやりますので、ぜひ遊びに来てください。 https://t.co/x71xWrnwXr",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "892297f0a1bcc37b",
+      "status": "needs_ocr",
+      "account": "@lbsmusicyukiya",
+      "url": "https://x.com/lbsmusicyukiya/status/2078663023276032445",
+      "tweet_id": "2078663023276032445",
+      "date": "2026-07-19T02:07:39+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HNjlACfaYAALFoT.jpg",
+        "https://t.co/lP7VQaD28z",
+        "pic.x.com/lP7VQaD28z",
+        "https://pbs.twimg.com/media/HNjlACcakAA3JSc.jpg",
+        "https://pbs.twimg.com/media/HNjlACxaUAAuohN.jpg",
+        "https://pbs.twimg.com/media/HNjlACvbIAEK6HH.jpg"
+      ],
+      "text": "令和8年第36回\n「池袋の子供達にふるさとを」\n\n📅 2026年7月18日　その1\n\n毎年、みらい館大明にて、池袋御嶽町会が主催し、町会の皆様や地域団体の皆様のご協賛・ご協力のもと開催されている盆踊りに参加させていただきました⭐️\n\nお祭りのスタート時には、毎年、池袋警察署の皆様がピーポくんのお面や防犯グッズを配布されています🚓\n\nとしま防犯アイドル 宇崎真里愛（@maria_uzaki）と一緒に、子どもたちへの配布のお手伝いをさせていただきました😊\n\n年々、お祭りに参加される地域の皆様が増えており、会場にはピーポくんのお面をかぶった子どもたちの笑顔があふれています✨\n\n地域の皆様と池袋警察署の皆様が連携し、安全・安心な街づくりに取り組まれている姿は、本当に素敵なことですね⭐️\n\nそして現在、私たちは 防犯ソングアルバム（全8曲） の制作をスタートいたしました🎵\n\nボーカル：宇崎真里愛\n楽曲制作：カト吉\n\n現在は3曲目を制作中です⭐️\n\n子どもから大人まで、みんなで楽しく歌いながら、防犯への意識や注意喚起、犯罪抑止にもつながるような楽曲を目指して制作しています😊\n\n私たちも、微力ながら",
       "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
     }
   ]

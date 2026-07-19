@@ -1,7 +1,7 @@
 {
   "generated_by": "prepare_weekly_harvest_review.py",
   "source": "data/weekly_harvest_candidates.json",
-  "count": 18,
+  "count": 23,
   "rows": [
     {
       "category": "曲×会場共起",
@@ -13,99 +13,7 @@
       "interpretation": "靖国神社でらんまん踊りが言及された可能性",
       "confidence": "要レビュー",
       "reason": "同一voice内に曲名候補と既知会場名が共起。",
-      "evidence_count": 18,
-      "evidence": [
-        {
-          "url": "https://www.youtube.com/watch?v=rfZFMimXE0U",
-          "date": "2026-07-18T06:00:30+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年7月13日、靖国神社で開催された「みたままつり」 納涼民踊の集いより、盆踊りの様子をお届けします。 数千個の献灯（みあかし）が夜空を彩る幻想的な雰囲気の中、 多くの踊り手が一体となって踊る姿は圧巻です。 靖国神社の夏ならではの熱気と、伝 統ある盆踊りの魅力をぜひ映像でお楽しみください！ 【和太鼓お祭りチャンネルについて】 日本の伝統的なお祭りや盆踊り、 和太鼓の演奏を記録・発信しています。 祭りの文化をより多くの方に知っていただけるよう活動しています！ 動画が良かったら、高評価とチャンネル登録をぜひお願いします。 #盆踊り #東京音頭 #みたままつり #靖国神社 #夏祭り #和太鼓 #2026 靖國神社盆踊り １東京音頭 https://youtu.be/pfm7riFbYqo ２大東京音頭 https://youtu.be/JOTt86zUtdE ３千代田おどり https://youtu.be/nINjdX3khN8 ４炭坑節 https://youtu.be/WGppsi7rb88 ５ドンパン節 https://youtu.be/VWo4w1wkWeQ ６らんまん踊り "
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=X6DCVugVcdI",
-          "date": "2026-07-18T03:00:34+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年7月13日、靖国神社で開催された「みたままつり」 納涼民踊の集いより、盆踊りの様子をお届けします。 数千個の献灯（みあかし）が夜空を彩る幻想的な雰囲気の中、 多くの踊り手が一体となって踊る姿は圧巻です。 靖国神社の夏ならではの熱気と、伝 統ある盆踊りの魅力をぜひ映像でお楽しみください！ 【和太鼓お祭りチャンネルについて】 日本の伝統的なお祭りや盆踊り、 和太鼓の演奏を記録・発信しています。 祭りの文化をより多くの方に知っていただけるよう活動しています！ 動画が良かったら、高評価とチャンネル登録をぜひお願いします。 #盆踊り #東京音頭 #みたままつり #靖国神社 #夏祭り #和太鼓 #2026 靖國神社盆踊り １東京音頭 https://youtu.be/pfm7riFbYqo ２大東京音頭 https://youtu.be/JOTt86zUtdE ３千代田おどり https://youtu.be/nINjdX3khN8 ４炭坑節 https://youtu.be/WGppsi7rb88 ５ドンパン節 https://youtu.be/VWo4w1wkWeQ ６らんまん踊り "
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=xzlAxu8iUhg",
-          "date": "2026-07-17T13:00:35+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年7月13日、靖国神社で開催された「みたままつり」 納涼民踊の集いより、盆踊りの様子をお届けします。 数千個の献灯（みあかし）が夜空を彩る幻想的な雰囲気の中、 多くの踊り手が一体となって踊る姿は圧巻です。 靖国神社の夏ならではの熱気と、伝 統ある盆踊りの魅力をぜひ映像でお楽しみください！ 【和太鼓お祭りチャンネルについて】 日本の伝統的なお祭りや盆踊り、 和太鼓の演奏を記録・発信しています。 祭りの文化をより多くの方に知っていただけるよう活動しています！ 動画が良かったら、高評価とチャンネル登録をぜひお願いします。 #盆踊り #東京音頭 #みたままつり #靖国神社 #夏祭り #和太鼓 #2026 靖國神社盆踊り １東京音頭 https://youtu.be/pfm7riFbYqo ２大東京音頭 https://youtu.be/JOTt86zUtdE ３千代田おどり https://youtu.be/nINjdX3khN8 ４炭坑節 https://youtu.be/WGppsi7rb88 ５ドンパン節 https://youtu.be/VWo4w1wkWeQ ６らんまん踊り "
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=H_qMFUXteVw",
-          "date": "2026-07-17T12:30:05+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年7月13日、靖国神社で開催された「みたままつり」 納涼民踊の集いより、盆踊りの様子をお届けします。 数千個の献灯（みあかし）が夜空を彩る幻想的な雰囲気の中、 多くの踊り手が一体となって踊る姿は圧巻です。 靖国神社の夏ならではの熱気と、伝 統ある盆踊りの魅力をぜひ映像でお楽しみください！ 【和太鼓お祭りチャンネルについて】 日本の伝統的なお祭りや盆踊り、 和太鼓の演奏を記録・発信しています。 祭りの文化をより多くの方に知っていただけるよう活動しています！ 動画が良かったら、高評価とチャンネル登録をぜひお願いします。 #盆踊り #東京音頭 #みたままつり #靖国神社 #夏祭り #和太鼓 #2026 靖國神社盆踊り １東京音頭 https://youtu.be/pfm7riFbYqo ２大東京音頭 https://youtu.be/JOTt86zUtdE ３千代田おどり https://youtu.be/nINjdX3khN8 ４炭坑節 https://youtu.be/WGppsi7rb88 ５ドンパン節 https://youtu.be/VWo4w1wkWeQ ６らんまん踊り "
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=QzRsH_Fr5_0",
-          "date": "2026-07-17T12:00:11+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年7月13日、靖国神社で開催された「みたままつり」 納涼民踊の集いより、盆踊りの様子をお届けします。 数千個の献灯（みあかし）が夜空を彩る幻想的な雰囲気の中、 多くの踊り手が一体となって踊る姿は圧巻です。 靖国神社の夏ならではの熱気と、伝 統ある盆踊りの魅力をぜひ映像でお楽しみください！ 【和太鼓お祭りチャンネルについて】 日本の伝統的なお祭りや盆踊り、 和太鼓の演奏を記録・発信しています。 祭りの文化をより多くの方に知っていただけるよう活動しています！ 動画が良かったら、高評価とチャンネル登録をぜひお願いします。 #盆踊り #東京音頭 #みたままつり #靖国神社 #夏祭り #和太鼓 #2026 靖國神社盆踊り １東京音頭 https://youtu.be/pfm7riFbYqo ２大東京音頭 https://youtu.be/JOTt86zUtdE ３千代田おどり https://youtu.be/nINjdX3khN8 ４炭坑節 https://youtu.be/WGppsi7rb88 ５ドンパン節 https://youtu.be/VWo4w1wkWeQ ６らんまん踊り "
-        }
-      ],
-      "evidence_text": "2026年7月13日、靖国神社で開催された「みたままつり」 納涼民踊の集いより、盆踊りの様子をお届けします。 数千個の献灯（みあかし）が夜空を彩る幻想的な雰囲気の中、 多くの踊り手が一体となって踊る姿は圧巻です。 靖国神社の夏ならではの熱気と、伝 統ある盆踊りの魅力をぜひ映像でお楽しみください！ 【和太鼓お祭りチャンネルについて】 日本の伝統的なお祭りや盆踊り、 和太鼓の演奏を記録・発信しています。 祭りの文化をより多くの方に知っていただけるよう活動しています！ 動画が良かったら、高評価とチャンネル登録をぜひお願いします。 #盆踊り #東京音頭 #みたままつり #靖国神社 #夏祭り #和太鼓 #2026 靖國神社盆踊り １東京音頭 https://youtu.be/pfm7riFbYqo ２大東京音頭 https://youtu.be/JOTt86zUtdE ３千代田おどり https://youtu.be/nINjdX3khN8 ４炭坑節 https://youtu.be/WGppsi7rb88 ５ドンパン節 https://youtu.be/VWo4w1wkWeQ ６らんまん踊り \n---\n2026年7月13日、靖国神社で開催された「みたままつり」 納涼民踊の集いより、盆踊りの様子をお届けします。 数千個の献灯（みあかし）が夜空を彩る幻想的な雰囲気の中、 多くの踊り手が一体となって踊る姿は圧巻です。 靖国神社の夏ならではの熱気と、伝 統ある盆踊りの魅力をぜひ映像でお楽しみください！ 【和太鼓お祭りチャンネルについて】 日本の伝統的なお祭りや盆踊り、 和太鼓の演奏を記録・発信しています。 祭りの文化をより多くの方に知っていただけるよう活動しています！ 動画が良かったら、高評価とチャンネル登録をぜひお願いします。 #盆踊り #東京音頭 #みたままつり #靖国神社 #夏祭り #和太鼓 #2026 靖國神社盆踊り １東京音頭 https://youtu.be/pfm7riFbYqo ２大東京音頭 https://youtu.be/JOTt86zUtdE ３千代田おどり https://youtu.be/nINjdX3khN8 ４炭坑節 https://youtu.be/WGppsi7rb88 ５ドンパン節 https://youtu.be/VWo4w1wkWeQ ６らんまん踊り \n---\n2026年7月13日、靖国神社で開催された「みたままつり」 納涼民踊の集いより、盆踊りの様子をお届けします。 数千個の献灯（みあかし）が夜空を彩る幻想的な雰囲気の中、 多くの踊り手が一体となって踊る姿は圧巻です。 靖国神社の夏ならではの熱気と、伝 統ある盆踊りの魅力をぜひ映像でお楽しみください！ 【和太鼓お祭りチャンネルについて】 日本の伝統的なお祭りや盆踊り、 和太鼓の演奏を記録・発信しています。 祭りの文化をより多くの方に知っていただけるよう活動しています！ 動画が良かったら、高評価とチャンネル登録をぜひお願いします。 #盆踊り #東京音頭 #みたままつり #靖国神社 #夏祭り #和太鼓 #2026 靖國神社盆踊り １東京音頭 https://youtu.be/pfm7riFbYqo ２大東京音頭 https://youtu.be/JOTt86zUtdE ３千代田おどり https://youtu.be/nINjdX3khN8 ４炭坑節 https://youtu.be/WGppsi7rb88 ５ドンパン節 https://youtu.be/VWo4w1wkWeQ ６らんまん踊り ",
-      "evidence_url": "https://www.youtube.com/watch?v=rfZFMimXE0U"
-    },
-    {
-      "category": "曲×会場共起",
-      "type": "共起",
-      "term": "大東京音頭 × 靖国神社",
-      "song_name": "大東京音頭",
-      "venue": "靖国神社",
-      "event_candidates": [],
-      "interpretation": "靖国神社で大東京音頭が言及された可能性",
-      "confidence": "要レビュー",
-      "reason": "同一voice内に曲名候補と既知会場名が共起。",
-      "evidence_count": 18,
-      "evidence": [
-        {
-          "url": "https://www.youtube.com/watch?v=rfZFMimXE0U",
-          "date": "2026-07-18T06:00:30+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年7月13日、靖国神社で開催された「みたままつり」 納涼民踊の集いより、盆踊りの様子をお届けします。 数千個の献灯（みあかし）が夜空を彩る幻想的な雰囲気の中、 多くの踊り手が一体となって踊る姿は圧巻です。 靖国神社の夏ならではの熱気と、伝 統ある盆踊りの魅力をぜひ映像でお楽しみください！ 【和太鼓お祭りチャンネルについて】 日本の伝統的なお祭りや盆踊り、 和太鼓の演奏を記録・発信しています。 祭りの文化をより多くの方に知っていただけるよう活動しています！ 動画が良かったら、高評価とチャンネル登録をぜひお願いします。 #盆踊り #東京音頭 #みたままつり #靖国神社 #夏祭り #和太鼓 #2026 靖國神社盆踊り １東京音頭 https://youtu.be/pfm7riFbYqo ２大東京音頭 https://youtu.be/JOTt86zUtdE ３千代田おどり https://youtu.be/nINjdX3khN8 ４炭坑節 https://youtu.be/WGppsi7rb88 ５ドンパン節 https://youtu.be/VWo4w1wkWeQ ６らんまん踊り "
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=X6DCVugVcdI",
-          "date": "2026-07-18T03:00:34+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年7月13日、靖国神社で開催された「みたままつり」 納涼民踊の集いより、盆踊りの様子をお届けします。 数千個の献灯（みあかし）が夜空を彩る幻想的な雰囲気の中、 多くの踊り手が一体となって踊る姿は圧巻です。 靖国神社の夏ならではの熱気と、伝 統ある盆踊りの魅力をぜひ映像でお楽しみください！ 【和太鼓お祭りチャンネルについて】 日本の伝統的なお祭りや盆踊り、 和太鼓の演奏を記録・発信しています。 祭りの文化をより多くの方に知っていただけるよう活動しています！ 動画が良かったら、高評価とチャンネル登録をぜひお願いします。 #盆踊り #東京音頭 #みたままつり #靖国神社 #夏祭り #和太鼓 #2026 靖國神社盆踊り １東京音頭 https://youtu.be/pfm7riFbYqo ２大東京音頭 https://youtu.be/JOTt86zUtdE ３千代田おどり https://youtu.be/nINjdX3khN8 ４炭坑節 https://youtu.be/WGppsi7rb88 ５ドンパン節 https://youtu.be/VWo4w1wkWeQ ６らんまん踊り "
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=xzlAxu8iUhg",
-          "date": "2026-07-17T13:00:35+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年7月13日、靖国神社で開催された「みたままつり」 納涼民踊の集いより、盆踊りの様子をお届けします。 数千個の献灯（みあかし）が夜空を彩る幻想的な雰囲気の中、 多くの踊り手が一体となって踊る姿は圧巻です。 靖国神社の夏ならではの熱気と、伝 統ある盆踊りの魅力をぜひ映像でお楽しみください！ 【和太鼓お祭りチャンネルについて】 日本の伝統的なお祭りや盆踊り、 和太鼓の演奏を記録・発信しています。 祭りの文化をより多くの方に知っていただけるよう活動しています！ 動画が良かったら、高評価とチャンネル登録をぜひお願いします。 #盆踊り #東京音頭 #みたままつり #靖国神社 #夏祭り #和太鼓 #2026 靖國神社盆踊り １東京音頭 https://youtu.be/pfm7riFbYqo ２大東京音頭 https://youtu.be/JOTt86zUtdE ３千代田おどり https://youtu.be/nINjdX3khN8 ４炭坑節 https://youtu.be/WGppsi7rb88 ５ドンパン節 https://youtu.be/VWo4w1wkWeQ ６らんまん踊り "
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=H_qMFUXteVw",
-          "date": "2026-07-17T12:30:05+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年7月13日、靖国神社で開催された「みたままつり」 納涼民踊の集いより、盆踊りの様子をお届けします。 数千個の献灯（みあかし）が夜空を彩る幻想的な雰囲気の中、 多くの踊り手が一体となって踊る姿は圧巻です。 靖国神社の夏ならではの熱気と、伝 統ある盆踊りの魅力をぜひ映像でお楽しみください！ 【和太鼓お祭りチャンネルについて】 日本の伝統的なお祭りや盆踊り、 和太鼓の演奏を記録・発信しています。 祭りの文化をより多くの方に知っていただけるよう活動しています！ 動画が良かったら、高評価とチャンネル登録をぜひお願いします。 #盆踊り #東京音頭 #みたままつり #靖国神社 #夏祭り #和太鼓 #2026 靖國神社盆踊り １東京音頭 https://youtu.be/pfm7riFbYqo ２大東京音頭 https://youtu.be/JOTt86zUtdE ３千代田おどり https://youtu.be/nINjdX3khN8 ４炭坑節 https://youtu.be/WGppsi7rb88 ５ドンパン節 https://youtu.be/VWo4w1wkWeQ ６らんまん踊り "
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=QzRsH_Fr5_0",
-          "date": "2026-07-17T12:00:11+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年7月13日、靖国神社で開催された「みたままつり」 納涼民踊の集いより、盆踊りの様子をお届けします。 数千個の献灯（みあかし）が夜空を彩る幻想的な雰囲気の中、 多くの踊り手が一体となって踊る姿は圧巻です。 靖国神社の夏ならではの熱気と、伝 統ある盆踊りの魅力をぜひ映像でお楽しみください！ 【和太鼓お祭りチャンネルについて】 日本の伝統的なお祭りや盆踊り、 和太鼓の演奏を記録・発信しています。 祭りの文化をより多くの方に知っていただけるよう活動しています！ 動画が良かったら、高評価とチャンネル登録をぜひお願いします。 #盆踊り #東京音頭 #みたままつり #靖国神社 #夏祭り #和太鼓 #2026 靖國神社盆踊り １東京音頭 https://youtu.be/pfm7riFbYqo ２大東京音頭 https://youtu.be/JOTt86zUtdE ３千代田おどり https://youtu.be/nINjdX3khN8 ４炭坑節 https://youtu.be/WGppsi7rb88 ５ドンパン節 https://youtu.be/VWo4w1wkWeQ ６らんまん踊り "
-        }
-      ],
-      "evidence_text": "2026年7月13日、靖国神社で開催された「みたままつり」 納涼民踊の集いより、盆踊りの様子をお届けします。 数千個の献灯（みあかし）が夜空を彩る幻想的な雰囲気の中、 多くの踊り手が一体となって踊る姿は圧巻です。 靖国神社の夏ならではの熱気と、伝 統ある盆踊りの魅力をぜひ映像でお楽しみください！ 【和太鼓お祭りチャンネルについて】 日本の伝統的なお祭りや盆踊り、 和太鼓の演奏を記録・発信しています。 祭りの文化をより多くの方に知っていただけるよう活動しています！ 動画が良かったら、高評価とチャンネル登録をぜひお願いします。 #盆踊り #東京音頭 #みたままつり #靖国神社 #夏祭り #和太鼓 #2026 靖國神社盆踊り １東京音頭 https://youtu.be/pfm7riFbYqo ２大東京音頭 https://youtu.be/JOTt86zUtdE ３千代田おどり https://youtu.be/nINjdX3khN8 ４炭坑節 https://youtu.be/WGppsi7rb88 ５ドンパン節 https://youtu.be/VWo4w1wkWeQ ６らんまん踊り \n---\n2026年7月13日、靖国神社で開催された「みたままつり」 納涼民踊の集いより、盆踊りの様子をお届けします。 数千個の献灯（みあかし）が夜空を彩る幻想的な雰囲気の中、 多くの踊り手が一体となって踊る姿は圧巻です。 靖国神社の夏ならではの熱気と、伝 統ある盆踊りの魅力をぜひ映像でお楽しみください！ 【和太鼓お祭りチャンネルについて】 日本の伝統的なお祭りや盆踊り、 和太鼓の演奏を記録・発信しています。 祭りの文化をより多くの方に知っていただけるよう活動しています！ 動画が良かったら、高評価とチャンネル登録をぜひお願いします。 #盆踊り #東京音頭 #みたままつり #靖国神社 #夏祭り #和太鼓 #2026 靖國神社盆踊り １東京音頭 https://youtu.be/pfm7riFbYqo ２大東京音頭 https://youtu.be/JOTt86zUtdE ３千代田おどり https://youtu.be/nINjdX3khN8 ４炭坑節 https://youtu.be/WGppsi7rb88 ５ドンパン節 https://youtu.be/VWo4w1wkWeQ ６らんまん踊り \n---\n2026年7月13日、靖国神社で開催された「みたままつり」 納涼民踊の集いより、盆踊りの様子をお届けします。 数千個の献灯（みあかし）が夜空を彩る幻想的な雰囲気の中、 多くの踊り手が一体となって踊る姿は圧巻です。 靖国神社の夏ならではの熱気と、伝 統ある盆踊りの魅力をぜひ映像でお楽しみください！ 【和太鼓お祭りチャンネルについて】 日本の伝統的なお祭りや盆踊り、 和太鼓の演奏を記録・発信しています。 祭りの文化をより多くの方に知っていただけるよう活動しています！ 動画が良かったら、高評価とチャンネル登録をぜひお願いします。 #盆踊り #東京音頭 #みたままつり #靖国神社 #夏祭り #和太鼓 #2026 靖國神社盆踊り １東京音頭 https://youtu.be/pfm7riFbYqo ２大東京音頭 https://youtu.be/JOTt86zUtdE ３千代田おどり https://youtu.be/nINjdX3khN8 ４炭坑節 https://youtu.be/WGppsi7rb88 ５ドンパン節 https://youtu.be/VWo4w1wkWeQ ６らんまん踊り ",
-      "evidence_url": "https://www.youtube.com/watch?v=rfZFMimXE0U"
-    },
-    {
-      "category": "曲×会場共起",
-      "type": "共起",
-      "term": "東京音頭 × 靖国神社",
-      "song_name": "東京音頭",
-      "venue": "靖国神社",
-      "event_candidates": [],
-      "interpretation": "靖国神社で東京音頭が言及された可能性",
-      "confidence": "要レビュー",
-      "reason": "同一voice内に曲名候補と既知会場名が共起。",
-      "evidence_count": 18,
+      "evidence_count": 11,
       "evidence": [
         {
           "url": "https://www.youtube.com/watch?v=rfZFMimXE0U",
@@ -151,7 +59,99 @@
       "interpretation": "靖国神社で多くの踊りが言及された可能性",
       "confidence": "要レビュー",
       "reason": "同一voice内に曲名候補と既知会場名が共起。",
-      "evidence_count": 17,
+      "evidence_count": 11,
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=rfZFMimXE0U",
+          "date": "2026-07-18T06:00:30+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年7月13日、靖国神社で開催された「みたままつり」 納涼民踊の集いより、盆踊りの様子をお届けします。 数千個の献灯（みあかし）が夜空を彩る幻想的な雰囲気の中、 多くの踊り手が一体となって踊る姿は圧巻です。 靖国神社の夏ならではの熱気と、伝 統ある盆踊りの魅力をぜひ映像でお楽しみください！ 【和太鼓お祭りチャンネルについて】 日本の伝統的なお祭りや盆踊り、 和太鼓の演奏を記録・発信しています。 祭りの文化をより多くの方に知っていただけるよう活動しています！ 動画が良かったら、高評価とチャンネル登録をぜひお願いします。 #盆踊り #東京音頭 #みたままつり #靖国神社 #夏祭り #和太鼓 #2026 靖國神社盆踊り １東京音頭 https://youtu.be/pfm7riFbYqo ２大東京音頭 https://youtu.be/JOTt86zUtdE ３千代田おどり https://youtu.be/nINjdX3khN8 ４炭坑節 https://youtu.be/WGppsi7rb88 ５ドンパン節 https://youtu.be/VWo4w1wkWeQ ６らんまん踊り "
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=X6DCVugVcdI",
+          "date": "2026-07-18T03:00:34+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年7月13日、靖国神社で開催された「みたままつり」 納涼民踊の集いより、盆踊りの様子をお届けします。 数千個の献灯（みあかし）が夜空を彩る幻想的な雰囲気の中、 多くの踊り手が一体となって踊る姿は圧巻です。 靖国神社の夏ならではの熱気と、伝 統ある盆踊りの魅力をぜひ映像でお楽しみください！ 【和太鼓お祭りチャンネルについて】 日本の伝統的なお祭りや盆踊り、 和太鼓の演奏を記録・発信しています。 祭りの文化をより多くの方に知っていただけるよう活動しています！ 動画が良かったら、高評価とチャンネル登録をぜひお願いします。 #盆踊り #東京音頭 #みたままつり #靖国神社 #夏祭り #和太鼓 #2026 靖國神社盆踊り １東京音頭 https://youtu.be/pfm7riFbYqo ２大東京音頭 https://youtu.be/JOTt86zUtdE ３千代田おどり https://youtu.be/nINjdX3khN8 ４炭坑節 https://youtu.be/WGppsi7rb88 ５ドンパン節 https://youtu.be/VWo4w1wkWeQ ６らんまん踊り "
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=xzlAxu8iUhg",
+          "date": "2026-07-17T13:00:35+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年7月13日、靖国神社で開催された「みたままつり」 納涼民踊の集いより、盆踊りの様子をお届けします。 数千個の献灯（みあかし）が夜空を彩る幻想的な雰囲気の中、 多くの踊り手が一体となって踊る姿は圧巻です。 靖国神社の夏ならではの熱気と、伝 統ある盆踊りの魅力をぜひ映像でお楽しみください！ 【和太鼓お祭りチャンネルについて】 日本の伝統的なお祭りや盆踊り、 和太鼓の演奏を記録・発信しています。 祭りの文化をより多くの方に知っていただけるよう活動しています！ 動画が良かったら、高評価とチャンネル登録をぜひお願いします。 #盆踊り #東京音頭 #みたままつり #靖国神社 #夏祭り #和太鼓 #2026 靖國神社盆踊り １東京音頭 https://youtu.be/pfm7riFbYqo ２大東京音頭 https://youtu.be/JOTt86zUtdE ３千代田おどり https://youtu.be/nINjdX3khN8 ４炭坑節 https://youtu.be/WGppsi7rb88 ５ドンパン節 https://youtu.be/VWo4w1wkWeQ ６らんまん踊り "
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=H_qMFUXteVw",
+          "date": "2026-07-17T12:30:05+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年7月13日、靖国神社で開催された「みたままつり」 納涼民踊の集いより、盆踊りの様子をお届けします。 数千個の献灯（みあかし）が夜空を彩る幻想的な雰囲気の中、 多くの踊り手が一体となって踊る姿は圧巻です。 靖国神社の夏ならではの熱気と、伝 統ある盆踊りの魅力をぜひ映像でお楽しみください！ 【和太鼓お祭りチャンネルについて】 日本の伝統的なお祭りや盆踊り、 和太鼓の演奏を記録・発信しています。 祭りの文化をより多くの方に知っていただけるよう活動しています！ 動画が良かったら、高評価とチャンネル登録をぜひお願いします。 #盆踊り #東京音頭 #みたままつり #靖国神社 #夏祭り #和太鼓 #2026 靖國神社盆踊り １東京音頭 https://youtu.be/pfm7riFbYqo ２大東京音頭 https://youtu.be/JOTt86zUtdE ３千代田おどり https://youtu.be/nINjdX3khN8 ４炭坑節 https://youtu.be/WGppsi7rb88 ５ドンパン節 https://youtu.be/VWo4w1wkWeQ ６らんまん踊り "
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=QzRsH_Fr5_0",
+          "date": "2026-07-17T12:00:11+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年7月13日、靖国神社で開催された「みたままつり」 納涼民踊の集いより、盆踊りの様子をお届けします。 数千個の献灯（みあかし）が夜空を彩る幻想的な雰囲気の中、 多くの踊り手が一体となって踊る姿は圧巻です。 靖国神社の夏ならではの熱気と、伝 統ある盆踊りの魅力をぜひ映像でお楽しみください！ 【和太鼓お祭りチャンネルについて】 日本の伝統的なお祭りや盆踊り、 和太鼓の演奏を記録・発信しています。 祭りの文化をより多くの方に知っていただけるよう活動しています！ 動画が良かったら、高評価とチャンネル登録をぜひお願いします。 #盆踊り #東京音頭 #みたままつり #靖国神社 #夏祭り #和太鼓 #2026 靖國神社盆踊り １東京音頭 https://youtu.be/pfm7riFbYqo ２大東京音頭 https://youtu.be/JOTt86zUtdE ３千代田おどり https://youtu.be/nINjdX3khN8 ４炭坑節 https://youtu.be/WGppsi7rb88 ５ドンパン節 https://youtu.be/VWo4w1wkWeQ ６らんまん踊り "
+        }
+      ],
+      "evidence_text": "2026年7月13日、靖国神社で開催された「みたままつり」 納涼民踊の集いより、盆踊りの様子をお届けします。 数千個の献灯（みあかし）が夜空を彩る幻想的な雰囲気の中、 多くの踊り手が一体となって踊る姿は圧巻です。 靖国神社の夏ならではの熱気と、伝 統ある盆踊りの魅力をぜひ映像でお楽しみください！ 【和太鼓お祭りチャンネルについて】 日本の伝統的なお祭りや盆踊り、 和太鼓の演奏を記録・発信しています。 祭りの文化をより多くの方に知っていただけるよう活動しています！ 動画が良かったら、高評価とチャンネル登録をぜひお願いします。 #盆踊り #東京音頭 #みたままつり #靖国神社 #夏祭り #和太鼓 #2026 靖國神社盆踊り １東京音頭 https://youtu.be/pfm7riFbYqo ２大東京音頭 https://youtu.be/JOTt86zUtdE ３千代田おどり https://youtu.be/nINjdX3khN8 ４炭坑節 https://youtu.be/WGppsi7rb88 ５ドンパン節 https://youtu.be/VWo4w1wkWeQ ６らんまん踊り \n---\n2026年7月13日、靖国神社で開催された「みたままつり」 納涼民踊の集いより、盆踊りの様子をお届けします。 数千個の献灯（みあかし）が夜空を彩る幻想的な雰囲気の中、 多くの踊り手が一体となって踊る姿は圧巻です。 靖国神社の夏ならではの熱気と、伝 統ある盆踊りの魅力をぜひ映像でお楽しみください！ 【和太鼓お祭りチャンネルについて】 日本の伝統的なお祭りや盆踊り、 和太鼓の演奏を記録・発信しています。 祭りの文化をより多くの方に知っていただけるよう活動しています！ 動画が良かったら、高評価とチャンネル登録をぜひお願いします。 #盆踊り #東京音頭 #みたままつり #靖国神社 #夏祭り #和太鼓 #2026 靖國神社盆踊り １東京音頭 https://youtu.be/pfm7riFbYqo ２大東京音頭 https://youtu.be/JOTt86zUtdE ３千代田おどり https://youtu.be/nINjdX3khN8 ４炭坑節 https://youtu.be/WGppsi7rb88 ５ドンパン節 https://youtu.be/VWo4w1wkWeQ ６らんまん踊り \n---\n2026年7月13日、靖国神社で開催された「みたままつり」 納涼民踊の集いより、盆踊りの様子をお届けします。 数千個の献灯（みあかし）が夜空を彩る幻想的な雰囲気の中、 多くの踊り手が一体となって踊る姿は圧巻です。 靖国神社の夏ならではの熱気と、伝 統ある盆踊りの魅力をぜひ映像でお楽しみください！ 【和太鼓お祭りチャンネルについて】 日本の伝統的なお祭りや盆踊り、 和太鼓の演奏を記録・発信しています。 祭りの文化をより多くの方に知っていただけるよう活動しています！ 動画が良かったら、高評価とチャンネル登録をぜひお願いします。 #盆踊り #東京音頭 #みたままつり #靖国神社 #夏祭り #和太鼓 #2026 靖國神社盆踊り １東京音頭 https://youtu.be/pfm7riFbYqo ２大東京音頭 https://youtu.be/JOTt86zUtdE ３千代田おどり https://youtu.be/nINjdX3khN8 ４炭坑節 https://youtu.be/WGppsi7rb88 ５ドンパン節 https://youtu.be/VWo4w1wkWeQ ６らんまん踊り ",
+      "evidence_url": "https://www.youtube.com/watch?v=rfZFMimXE0U"
+    },
+    {
+      "category": "曲×会場共起",
+      "type": "共起",
+      "term": "大東京音頭 × 靖国神社",
+      "song_name": "大東京音頭",
+      "venue": "靖国神社",
+      "event_candidates": [],
+      "interpretation": "靖国神社で大東京音頭が言及された可能性",
+      "confidence": "要レビュー",
+      "reason": "同一voice内に曲名候補と既知会場名が共起。",
+      "evidence_count": 11,
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=rfZFMimXE0U",
+          "date": "2026-07-18T06:00:30+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年7月13日、靖国神社で開催された「みたままつり」 納涼民踊の集いより、盆踊りの様子をお届けします。 数千個の献灯（みあかし）が夜空を彩る幻想的な雰囲気の中、 多くの踊り手が一体となって踊る姿は圧巻です。 靖国神社の夏ならではの熱気と、伝 統ある盆踊りの魅力をぜひ映像でお楽しみください！ 【和太鼓お祭りチャンネルについて】 日本の伝統的なお祭りや盆踊り、 和太鼓の演奏を記録・発信しています。 祭りの文化をより多くの方に知っていただけるよう活動しています！ 動画が良かったら、高評価とチャンネル登録をぜひお願いします。 #盆踊り #東京音頭 #みたままつり #靖国神社 #夏祭り #和太鼓 #2026 靖國神社盆踊り １東京音頭 https://youtu.be/pfm7riFbYqo ２大東京音頭 https://youtu.be/JOTt86zUtdE ３千代田おどり https://youtu.be/nINjdX3khN8 ４炭坑節 https://youtu.be/WGppsi7rb88 ５ドンパン節 https://youtu.be/VWo4w1wkWeQ ６らんまん踊り "
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=X6DCVugVcdI",
+          "date": "2026-07-18T03:00:34+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年7月13日、靖国神社で開催された「みたままつり」 納涼民踊の集いより、盆踊りの様子をお届けします。 数千個の献灯（みあかし）が夜空を彩る幻想的な雰囲気の中、 多くの踊り手が一体となって踊る姿は圧巻です。 靖国神社の夏ならではの熱気と、伝 統ある盆踊りの魅力をぜひ映像でお楽しみください！ 【和太鼓お祭りチャンネルについて】 日本の伝統的なお祭りや盆踊り、 和太鼓の演奏を記録・発信しています。 祭りの文化をより多くの方に知っていただけるよう活動しています！ 動画が良かったら、高評価とチャンネル登録をぜひお願いします。 #盆踊り #東京音頭 #みたままつり #靖国神社 #夏祭り #和太鼓 #2026 靖國神社盆踊り １東京音頭 https://youtu.be/pfm7riFbYqo ２大東京音頭 https://youtu.be/JOTt86zUtdE ３千代田おどり https://youtu.be/nINjdX3khN8 ４炭坑節 https://youtu.be/WGppsi7rb88 ５ドンパン節 https://youtu.be/VWo4w1wkWeQ ６らんまん踊り "
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=xzlAxu8iUhg",
+          "date": "2026-07-17T13:00:35+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年7月13日、靖国神社で開催された「みたままつり」 納涼民踊の集いより、盆踊りの様子をお届けします。 数千個の献灯（みあかし）が夜空を彩る幻想的な雰囲気の中、 多くの踊り手が一体となって踊る姿は圧巻です。 靖国神社の夏ならではの熱気と、伝 統ある盆踊りの魅力をぜひ映像でお楽しみください！ 【和太鼓お祭りチャンネルについて】 日本の伝統的なお祭りや盆踊り、 和太鼓の演奏を記録・発信しています。 祭りの文化をより多くの方に知っていただけるよう活動しています！ 動画が良かったら、高評価とチャンネル登録をぜひお願いします。 #盆踊り #東京音頭 #みたままつり #靖国神社 #夏祭り #和太鼓 #2026 靖國神社盆踊り １東京音頭 https://youtu.be/pfm7riFbYqo ２大東京音頭 https://youtu.be/JOTt86zUtdE ３千代田おどり https://youtu.be/nINjdX3khN8 ４炭坑節 https://youtu.be/WGppsi7rb88 ５ドンパン節 https://youtu.be/VWo4w1wkWeQ ６らんまん踊り "
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=H_qMFUXteVw",
+          "date": "2026-07-17T12:30:05+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年7月13日、靖国神社で開催された「みたままつり」 納涼民踊の集いより、盆踊りの様子をお届けします。 数千個の献灯（みあかし）が夜空を彩る幻想的な雰囲気の中、 多くの踊り手が一体となって踊る姿は圧巻です。 靖国神社の夏ならではの熱気と、伝 統ある盆踊りの魅力をぜひ映像でお楽しみください！ 【和太鼓お祭りチャンネルについて】 日本の伝統的なお祭りや盆踊り、 和太鼓の演奏を記録・発信しています。 祭りの文化をより多くの方に知っていただけるよう活動しています！ 動画が良かったら、高評価とチャンネル登録をぜひお願いします。 #盆踊り #東京音頭 #みたままつり #靖国神社 #夏祭り #和太鼓 #2026 靖國神社盆踊り １東京音頭 https://youtu.be/pfm7riFbYqo ２大東京音頭 https://youtu.be/JOTt86zUtdE ３千代田おどり https://youtu.be/nINjdX3khN8 ４炭坑節 https://youtu.be/WGppsi7rb88 ５ドンパン節 https://youtu.be/VWo4w1wkWeQ ６らんまん踊り "
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=QzRsH_Fr5_0",
+          "date": "2026-07-17T12:00:11+00:00",
+          "account": "@wadaikoCH",
+          "text": "2026年7月13日、靖国神社で開催された「みたままつり」 納涼民踊の集いより、盆踊りの様子をお届けします。 数千個の献灯（みあかし）が夜空を彩る幻想的な雰囲気の中、 多くの踊り手が一体となって踊る姿は圧巻です。 靖国神社の夏ならではの熱気と、伝 統ある盆踊りの魅力をぜひ映像でお楽しみください！ 【和太鼓お祭りチャンネルについて】 日本の伝統的なお祭りや盆踊り、 和太鼓の演奏を記録・発信しています。 祭りの文化をより多くの方に知っていただけるよう活動しています！ 動画が良かったら、高評価とチャンネル登録をぜひお願いします。 #盆踊り #東京音頭 #みたままつり #靖国神社 #夏祭り #和太鼓 #2026 靖國神社盆踊り １東京音頭 https://youtu.be/pfm7riFbYqo ２大東京音頭 https://youtu.be/JOTt86zUtdE ３千代田おどり https://youtu.be/nINjdX3khN8 ４炭坑節 https://youtu.be/WGppsi7rb88 ５ドンパン節 https://youtu.be/VWo4w1wkWeQ ６らんまん踊り "
+        }
+      ],
+      "evidence_text": "2026年7月13日、靖国神社で開催された「みたままつり」 納涼民踊の集いより、盆踊りの様子をお届けします。 数千個の献灯（みあかし）が夜空を彩る幻想的な雰囲気の中、 多くの踊り手が一体となって踊る姿は圧巻です。 靖国神社の夏ならではの熱気と、伝 統ある盆踊りの魅力をぜひ映像でお楽しみください！ 【和太鼓お祭りチャンネルについて】 日本の伝統的なお祭りや盆踊り、 和太鼓の演奏を記録・発信しています。 祭りの文化をより多くの方に知っていただけるよう活動しています！ 動画が良かったら、高評価とチャンネル登録をぜひお願いします。 #盆踊り #東京音頭 #みたままつり #靖国神社 #夏祭り #和太鼓 #2026 靖國神社盆踊り １東京音頭 https://youtu.be/pfm7riFbYqo ２大東京音頭 https://youtu.be/JOTt86zUtdE ３千代田おどり https://youtu.be/nINjdX3khN8 ４炭坑節 https://youtu.be/WGppsi7rb88 ５ドンパン節 https://youtu.be/VWo4w1wkWeQ ６らんまん踊り \n---\n2026年7月13日、靖国神社で開催された「みたままつり」 納涼民踊の集いより、盆踊りの様子をお届けします。 数千個の献灯（みあかし）が夜空を彩る幻想的な雰囲気の中、 多くの踊り手が一体となって踊る姿は圧巻です。 靖国神社の夏ならではの熱気と、伝 統ある盆踊りの魅力をぜひ映像でお楽しみください！ 【和太鼓お祭りチャンネルについて】 日本の伝統的なお祭りや盆踊り、 和太鼓の演奏を記録・発信しています。 祭りの文化をより多くの方に知っていただけるよう活動しています！ 動画が良かったら、高評価とチャンネル登録をぜひお願いします。 #盆踊り #東京音頭 #みたままつり #靖国神社 #夏祭り #和太鼓 #2026 靖國神社盆踊り １東京音頭 https://youtu.be/pfm7riFbYqo ２大東京音頭 https://youtu.be/JOTt86zUtdE ３千代田おどり https://youtu.be/nINjdX3khN8 ４炭坑節 https://youtu.be/WGppsi7rb88 ５ドンパン節 https://youtu.be/VWo4w1wkWeQ ６らんまん踊り \n---\n2026年7月13日、靖国神社で開催された「みたままつり」 納涼民踊の集いより、盆踊りの様子をお届けします。 数千個の献灯（みあかし）が夜空を彩る幻想的な雰囲気の中、 多くの踊り手が一体となって踊る姿は圧巻です。 靖国神社の夏ならではの熱気と、伝 統ある盆踊りの魅力をぜひ映像でお楽しみください！ 【和太鼓お祭りチャンネルについて】 日本の伝統的なお祭りや盆踊り、 和太鼓の演奏を記録・発信しています。 祭りの文化をより多くの方に知っていただけるよう活動しています！ 動画が良かったら、高評価とチャンネル登録をぜひお願いします。 #盆踊り #東京音頭 #みたままつり #靖国神社 #夏祭り #和太鼓 #2026 靖國神社盆踊り １東京音頭 https://youtu.be/pfm7riFbYqo ２大東京音頭 https://youtu.be/JOTt86zUtdE ３千代田おどり https://youtu.be/nINjdX3khN8 ４炭坑節 https://youtu.be/WGppsi7rb88 ５ドンパン節 https://youtu.be/VWo4w1wkWeQ ６らんまん踊り ",
+      "evidence_url": "https://www.youtube.com/watch?v=rfZFMimXE0U"
+    },
+    {
+      "category": "曲×会場共起",
+      "type": "共起",
+      "term": "東京音頭 × 靖国神社",
+      "song_name": "東京音頭",
+      "venue": "靖国神社",
+      "event_candidates": [],
+      "interpretation": "靖国神社で東京音頭が言及された可能性",
+      "confidence": "要レビュー",
+      "reason": "同一voice内に曲名候補と既知会場名が共起。",
+      "evidence_count": 11,
       "evidence": [
         {
           "url": "https://www.youtube.com/watch?v=rfZFMimXE0U",
@@ -199,7 +199,7 @@
       "interpretation": "晴海ふ頭公園でおしりたんてい音頭が言及された可能性",
       "confidence": "要レビュー",
       "reason": "同一voice内に曲名候補と既知会場名が共起。",
-      "evidence_count": 3,
+      "evidence_count": 2,
       "evidence": [
         {
           "url": "https://www.youtube.com/watch?v=jTg6AaNuJDw",
@@ -212,38 +212,32 @@
           "date": "2026-07-16T12:00:09+00:00",
           "account": "@wadaikoCH",
           "text": "2026年7月12日に開催された「晴海ふ頭公園盆踊り大会」での盆踊りの様子をお届けします！ 晴海ふ頭公園の心地よい海風を感じながら、 会場の盛り上がりをぜひ映像でお楽しみください！ 晴海ふ頭公園盆踊り １おしりたんてい音頭 https://youtu.be/a14wHJTz11Y ２ジャンボリーミッキー https://youtu.be/qK_wAZd9sfY ３どんとこいブギ https://youtu.be/FwKDdeH2N7I ４河内おとこ節 https://youtu.be/jTg6AaNuJDw"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=qK_wAZd9sfY",
-          "date": "2026-07-15T12:00:21+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年7月12日に開催された「晴海ふ頭公園盆踊り大会」での盆踊りの様子をお届けします！ 晴海ふ頭公園の心地よい海風を感じながら、 会場の盛り上がりをぜひ映像でお楽しみください！ 晴海ふ頭公園盆踊り １おしりたんてい音頭 https://youtu.be/a14wHJTz11Y ２ジャンボリーミッキー https://youtu.be/qK_wAZd9sfY ３どんとこいブギ https://youtu.be/FwKDdeH2N7I ４河内おとこ節 https://youtu.be/jTg6AaNuJDw"
         }
       ],
-      "evidence_text": "2026年7月12日に開催された「晴海ふ頭公園盆踊り大会」での盆踊りの様子をお届けします！ 晴海ふ頭公園の心地よい海風を感じながら、 会場の盛り上がりをぜひ映像でお楽しみください！ 晴海ふ頭公園盆踊り １おしりたんてい音頭 https://youtu.be/a14wHJTz11Y ２ジャンボリーミッキー https://youtu.be/qK_wAZd9sfY ３どんとこいブギ https://youtu.be/FwKDdeH2N7I ４河内おとこ節 https://youtu.be/jTg6AaNuJDw\n---\n2026年7月12日に開催された「晴海ふ頭公園盆踊り大会」での盆踊りの様子をお届けします！ 晴海ふ頭公園の心地よい海風を感じながら、 会場の盛り上がりをぜひ映像でお楽しみください！ 晴海ふ頭公園盆踊り １おしりたんてい音頭 https://youtu.be/a14wHJTz11Y ２ジャンボリーミッキー https://youtu.be/qK_wAZd9sfY ３どんとこいブギ https://youtu.be/FwKDdeH2N7I ４河内おとこ節 https://youtu.be/jTg6AaNuJDw\n---\n2026年7月12日に開催された「晴海ふ頭公園盆踊り大会」での盆踊りの様子をお届けします！ 晴海ふ頭公園の心地よい海風を感じながら、 会場の盛り上がりをぜひ映像でお楽しみください！ 晴海ふ頭公園盆踊り １おしりたんてい音頭 https://youtu.be/a14wHJTz11Y ２ジャンボリーミッキー https://youtu.be/qK_wAZd9sfY ３どんとこいブギ https://youtu.be/FwKDdeH2N7I ４河内おとこ節 https://youtu.be/jTg6AaNuJDw",
+      "evidence_text": "2026年7月12日に開催された「晴海ふ頭公園盆踊り大会」での盆踊りの様子をお届けします！ 晴海ふ頭公園の心地よい海風を感じながら、 会場の盛り上がりをぜひ映像でお楽しみください！ 晴海ふ頭公園盆踊り １おしりたんてい音頭 https://youtu.be/a14wHJTz11Y ２ジャンボリーミッキー https://youtu.be/qK_wAZd9sfY ３どんとこいブギ https://youtu.be/FwKDdeH2N7I ４河内おとこ節 https://youtu.be/jTg6AaNuJDw\n---\n2026年7月12日に開催された「晴海ふ頭公園盆踊り大会」での盆踊りの様子をお届けします！ 晴海ふ頭公園の心地よい海風を感じながら、 会場の盛り上がりをぜひ映像でお楽しみください！ 晴海ふ頭公園盆踊り １おしりたんてい音頭 https://youtu.be/a14wHJTz11Y ２ジャンボリーミッキー https://youtu.be/qK_wAZd9sfY ３どんとこいブギ https://youtu.be/FwKDdeH2N7I ４河内おとこ節 https://youtu.be/jTg6AaNuJDw",
       "evidence_url": "https://www.youtube.com/watch?v=jTg6AaNuJDw"
     },
     {
       "category": "曲×会場共起",
       "type": "共起",
-      "term": "ドンパン節 × 靖国神社",
-      "song_name": "ドンパン節",
-      "venue": "靖国神社",
+      "term": "つるまき音頭 × 鶴巻小学校",
+      "song_name": "つるまき音頭",
+      "venue": "鶴巻小学校",
       "event_candidates": [],
-      "interpretation": "靖国神社でドンパン節が言及された可能性",
+      "interpretation": "鶴巻小学校でつるまき音頭が言及された可能性",
       "confidence": "要レビュー",
       "reason": "同一voice内に曲名候補と既知会場名が共起。",
       "evidence_count": 1,
       "evidence": [
         {
-          "url": "https://www.youtube.com/watch?v=DYsJWphzcEY",
-          "date": "2026-07-15T09:00:04+00:00",
-          "account": "UCKCspf_NrY16rUnODmBqOWA",
-          "text": "東京千代田区の靖国神社で「第78回 みたままつり」が開催されました。前夜祭のこの日、大村益次郎像前では「納涼民踊の集い（盆踊り）」が行われ大いに盛り上がりました！ 気温もありカメラが度々停止するなどしたため、飛び飛びの箇所や未収録の楽曲もございます。 The “Mitama Festival” was held at Yasukuni Shrine in Tokyo. On this day, the eve of the festival, a Bon dance was held and the atmosphere was electric! Due to the temperature, the camera stopped working from time to time, so there are some gaps in the footage and some songs that weren't recorded. 2026.7.13 Mon 4K60fps virtual walking tour Osmo Pocket 4P ーーー ▽Please Subscr"
+          "url": "https://x.com/SachieDaimon/status/2078758523702497363",
+          "date": "2026-07-19T08:27:08+00:00",
+          "account": "@SachieDaimon",
+          "text": "2026.7.19 盆踊りin神楽坂 もうすぐ始まります！ 【子ども盆踊り17:30-18:00】 津久戸小学校 津久戸子ども音頭 江戸川小学校 江戸川おどり 鶴巻小学校 つるまき音頭 その後は、20:30まで盆踊りが開催されます。 https://t.co/nmDasadp5c"
         }
       ],
-      "evidence_text": "東京千代田区の靖国神社で「第78回 みたままつり」が開催されました。前夜祭のこの日、大村益次郎像前では「納涼民踊の集い（盆踊り）」が行われ大いに盛り上がりました！ 気温もありカメラが度々停止するなどしたため、飛び飛びの箇所や未収録の楽曲もございます。 The “Mitama Festival” was held at Yasukuni Shrine in Tokyo. On this day, the eve of the festival, a Bon dance was held and the atmosphere was electric! Due to the temperature, the camera stopped working from time to time, so there are some gaps in the footage and some songs that weren't recorded. 2026.7.13 Mon 4K60fps virtual walking tour Osmo Pocket 4P ーーー ▽Please Subscr",
-      "evidence_url": "https://www.youtube.com/watch?v=DYsJWphzcEY"
+      "evidence_text": "2026.7.19 盆踊りin神楽坂 もうすぐ始まります！ 【子ども盆踊り17:30-18:00】 津久戸小学校 津久戸子ども音頭 江戸川小学校 江戸川おどり 鶴巻小学校 つるまき音頭 その後は、20:30まで盆踊りが開催されます。 https://t.co/nmDasadp5c",
+      "evidence_url": "https://x.com/SachieDaimon/status/2078758523702497363"
     },
     {
       "category": "曲×会場共起",
@@ -272,28 +266,6 @@
     {
       "category": "曲×会場共起",
       "type": "共起",
-      "term": "千代田踊り × 靖国神社",
-      "song_name": "千代田踊り",
-      "venue": "靖国神社",
-      "event_candidates": [],
-      "interpretation": "靖国神社で千代田踊りが言及された可能性",
-      "confidence": "要レビュー",
-      "reason": "同一voice内に曲名候補と既知会場名が共起。",
-      "evidence_count": 1,
-      "evidence": [
-        {
-          "url": "https://www.youtube.com/watch?v=DYsJWphzcEY",
-          "date": "2026-07-15T09:00:04+00:00",
-          "account": "UCKCspf_NrY16rUnODmBqOWA",
-          "text": "東京千代田区の靖国神社で「第78回 みたままつり」が開催されました。前夜祭のこの日、大村益次郎像前では「納涼民踊の集い（盆踊り）」が行われ大いに盛り上がりました！ 気温もありカメラが度々停止するなどしたため、飛び飛びの箇所や未収録の楽曲もございます。 The “Mitama Festival” was held at Yasukuni Shrine in Tokyo. On this day, the eve of the festival, a Bon dance was held and the atmosphere was electric! Due to the temperature, the camera stopped working from time to time, so there are some gaps in the footage and some songs that weren't recorded. 2026.7.13 Mon 4K60fps virtual walking tour Osmo Pocket 4P ーーー ▽Please Subscr"
-        }
-      ],
-      "evidence_text": "東京千代田区の靖国神社で「第78回 みたままつり」が開催されました。前夜祭のこの日、大村益次郎像前では「納涼民踊の集い（盆踊り）」が行われ大いに盛り上がりました！ 気温もありカメラが度々停止するなどしたため、飛び飛びの箇所や未収録の楽曲もございます。 The “Mitama Festival” was held at Yasukuni Shrine in Tokyo. On this day, the eve of the festival, a Bon dance was held and the atmosphere was electric! Due to the temperature, the camera stopped working from time to time, so there are some gaps in the footage and some songs that weren't recorded. 2026.7.13 Mon 4K60fps virtual walking tour Osmo Pocket 4P ーーー ▽Please Subscr",
-      "evidence_url": "https://www.youtube.com/watch?v=DYsJWphzcEY"
-    },
-    {
-      "category": "曲×会場共起",
-      "type": "共起",
       "term": "本場・大阪からも踊り × 牛嶋神社",
       "song_name": "本場・大阪からも踊り",
       "venue": "牛嶋神社",
@@ -314,6 +286,28 @@
       ],
       "evidence_text": "🏮 坂井ユカコの「墨田区盆踊り探訪」 墨田区は、都内でも屈指の「盆踊りのまち」です。 東京のお盆にあたる7月中旬から、区内各地で盆踊りが始まり、地域の皆さんが世代を超えて交流する、かけがえのない時間が生まれます。 そして9月の牛嶋神社祭礼では、氏子五十数町会のうち30を超える町会が同じ夜に一斉に盆踊りを開催。その櫓を次々と巡る盆踊りファンの間では、その過密さから「牛島心中」と呼ばれるほど、全国的にも珍しい光景が広がります。 さらに、錦糸町では44年にわたり「錦糸町河内音頭大盆踊り」が開催され、本場・大阪からも踊り手や演者が集う、全国屈指の河内音頭の祭典として親しまれています。 これほど身近に、これほど多彩な盆踊りを楽しめる環境は、他の地域から見れば本当に恵まれた、誇るべき地域文化ではないでしょうか。 このシリーズでは、一つひとつの盆踊り大会を訪ねながら、その地域ならではの魅力や、人と人とのつながり、そして墨田区が大切に育んできた盆踊り文化を皆さんと一緒に記録し、未来へつないでいきたいと思います。 それでは、今日の盆踊り探訪へ。 墨田区盆踊り探訪 その1 押上西和町会",
       "evidence_url": "https://x.com/sakaiyukako/status/2077926148793893006"
+    },
+    {
+      "category": "曲×会場共起",
+      "type": "共起",
+      "term": "江戸川おどり × 鶴巻小学校",
+      "song_name": "江戸川おどり",
+      "venue": "鶴巻小学校",
+      "event_candidates": [],
+      "interpretation": "鶴巻小学校で江戸川おどりが言及された可能性",
+      "confidence": "要レビュー",
+      "reason": "同一voice内に曲名候補と既知会場名が共起。",
+      "evidence_count": 1,
+      "evidence": [
+        {
+          "url": "https://x.com/SachieDaimon/status/2078758523702497363",
+          "date": "2026-07-19T08:27:08+00:00",
+          "account": "@SachieDaimon",
+          "text": "2026.7.19 盆踊りin神楽坂 もうすぐ始まります！ 【子ども盆踊り17:30-18:00】 津久戸小学校 津久戸子ども音頭 江戸川小学校 江戸川おどり 鶴巻小学校 つるまき音頭 その後は、20:30まで盆踊りが開催されます。 https://t.co/nmDasadp5c"
+        }
+      ],
+      "evidence_text": "2026.7.19 盆踊りin神楽坂 もうすぐ始まります！ 【子ども盆踊り17:30-18:00】 津久戸小学校 津久戸子ども音頭 江戸川小学校 江戸川おどり 鶴巻小学校 つるまき音頭 その後は、20:30まで盆踊りが開催されます。 https://t.co/nmDasadp5c",
+      "evidence_url": "https://x.com/SachieDaimon/status/2078758523702497363"
     },
     {
       "category": "曲×会場共起",
@@ -342,46 +336,156 @@
     {
       "category": "曲×会場共起",
       "type": "共起",
-      "term": "炭坑節 × 靖国神社",
-      "song_name": "炭坑節",
-      "venue": "靖国神社",
+      "term": "津久戸子ども音頭 × 鶴巻小学校",
+      "song_name": "津久戸子ども音頭",
+      "venue": "鶴巻小学校",
       "event_candidates": [],
-      "interpretation": "靖国神社で炭坑節が言及された可能性",
+      "interpretation": "鶴巻小学校で津久戸子ども音頭が言及された可能性",
       "confidence": "要レビュー",
       "reason": "同一voice内に曲名候補と既知会場名が共起。",
       "evidence_count": 1,
       "evidence": [
         {
-          "url": "https://www.youtube.com/watch?v=DYsJWphzcEY",
-          "date": "2026-07-15T09:00:04+00:00",
-          "account": "UCKCspf_NrY16rUnODmBqOWA",
-          "text": "東京千代田区の靖国神社で「第78回 みたままつり」が開催されました。前夜祭のこの日、大村益次郎像前では「納涼民踊の集い（盆踊り）」が行われ大いに盛り上がりました！ 気温もありカメラが度々停止するなどしたため、飛び飛びの箇所や未収録の楽曲もございます。 The “Mitama Festival” was held at Yasukuni Shrine in Tokyo. On this day, the eve of the festival, a Bon dance was held and the atmosphere was electric! Due to the temperature, the camera stopped working from time to time, so there are some gaps in the footage and some songs that weren't recorded. 2026.7.13 Mon 4K60fps virtual walking tour Osmo Pocket 4P ーーー ▽Please Subscr"
+          "url": "https://x.com/SachieDaimon/status/2078758523702497363",
+          "date": "2026-07-19T08:27:08+00:00",
+          "account": "@SachieDaimon",
+          "text": "2026.7.19 盆踊りin神楽坂 もうすぐ始まります！ 【子ども盆踊り17:30-18:00】 津久戸小学校 津久戸子ども音頭 江戸川小学校 江戸川おどり 鶴巻小学校 つるまき音頭 その後は、20:30まで盆踊りが開催されます。 https://t.co/nmDasadp5c"
         }
       ],
-      "evidence_text": "東京千代田区の靖国神社で「第78回 みたままつり」が開催されました。前夜祭のこの日、大村益次郎像前では「納涼民踊の集い（盆踊り）」が行われ大いに盛り上がりました！ 気温もありカメラが度々停止するなどしたため、飛び飛びの箇所や未収録の楽曲もございます。 The “Mitama Festival” was held at Yasukuni Shrine in Tokyo. On this day, the eve of the festival, a Bon dance was held and the atmosphere was electric! Due to the temperature, the camera stopped working from time to time, so there are some gaps in the footage and some songs that weren't recorded. 2026.7.13 Mon 4K60fps virtual walking tour Osmo Pocket 4P ーーー ▽Please Subscr",
-      "evidence_url": "https://www.youtube.com/watch?v=DYsJWphzcEY"
+      "evidence_text": "2026.7.19 盆踊りin神楽坂 もうすぐ始まります！ 【子ども盆踊り17:30-18:00】 津久戸小学校 津久戸子ども音頭 江戸川小学校 江戸川おどり 鶴巻小学校 つるまき音頭 その後は、20:30まで盆踊りが開催されます。 https://t.co/nmDasadp5c",
+      "evidence_url": "https://x.com/SachieDaimon/status/2078758523702497363"
     },
     {
       "category": "曲×会場共起",
       "type": "共起",
-      "term": "阿波踊り × 靖国神社",
-      "song_name": "阿波踊り",
-      "venue": "靖国神社",
+      "term": "真室川音頭 × 浄土寺",
+      "song_name": "真室川音頭",
+      "venue": "浄土寺",
       "event_candidates": [],
-      "interpretation": "靖国神社で阿波踊りが言及された可能性",
+      "interpretation": "浄土寺で真室川音頭が言及された可能性",
       "confidence": "要レビュー",
       "reason": "同一voice内に曲名候補と既知会場名が共起。",
       "evidence_count": 1,
       "evidence": [
         {
-          "url": "https://www.youtube.com/watch?v=DYsJWphzcEY",
-          "date": "2026-07-15T09:00:04+00:00",
-          "account": "UCKCspf_NrY16rUnODmBqOWA",
-          "text": "東京千代田区の靖国神社で「第78回 みたままつり」が開催されました。前夜祭のこの日、大村益次郎像前では「納涼民踊の集い（盆踊り）」が行われ大いに盛り上がりました！ 気温もありカメラが度々停止するなどしたため、飛び飛びの箇所や未収録の楽曲もございます。 The “Mitama Festival” was held at Yasukuni Shrine in Tokyo. On this day, the eve of the festival, a Bon dance was held and the atmosphere was electric! Due to the temperature, the camera stopped working from time to time, so there are some gaps in the footage and some songs that weren't recorded. 2026.7.13 Mon 4K60fps virtual walking tour Osmo Pocket 4P ーーー ▽Please Subscr"
+          "url": "https://x.com/tanoshiki_kana/status/2078446377517174845",
+          "date": "2026-07-18T11:46:46+00:00",
+          "account": "@tanoshiki_kana",
+          "text": "7/17（金） #浄土寺 #盆踊り 練習会へ。団扇ワークが美しい #赤坂小唄 #真室川音頭 踊れて嬉しい 来週の #浄土寺盆踊り 楽しみ😌#赤坂音頭 #赤坂豊川音頭 #赤坂あかね音頭 赤坂は素敵な踊りがいっぱい💕#赤坂あかね会 さま、お世話になりました🙏 https://t.co/CWlQNk5MDa"
         }
       ],
-      "evidence_text": "東京千代田区の靖国神社で「第78回 みたままつり」が開催されました。前夜祭のこの日、大村益次郎像前では「納涼民踊の集い（盆踊り）」が行われ大いに盛り上がりました！ 気温もありカメラが度々停止するなどしたため、飛び飛びの箇所や未収録の楽曲もございます。 The “Mitama Festival” was held at Yasukuni Shrine in Tokyo. On this day, the eve of the festival, a Bon dance was held and the atmosphere was electric! Due to the temperature, the camera stopped working from time to time, so there are some gaps in the footage and some songs that weren't recorded. 2026.7.13 Mon 4K60fps virtual walking tour Osmo Pocket 4P ーーー ▽Please Subscr",
-      "evidence_url": "https://www.youtube.com/watch?v=DYsJWphzcEY"
+      "evidence_text": "7/17（金） #浄土寺 #盆踊り 練習会へ。団扇ワークが美しい #赤坂小唄 #真室川音頭 踊れて嬉しい 来週の #浄土寺盆踊り 楽しみ😌#赤坂音頭 #赤坂豊川音頭 #赤坂あかね音頭 赤坂は素敵な踊りがいっぱい💕#赤坂あかね会 さま、お世話になりました🙏 https://t.co/CWlQNk5MDa",
+      "evidence_url": "https://x.com/tanoshiki_kana/status/2078446377517174845"
+    },
+    {
+      "category": "曲×会場共起",
+      "type": "共起",
+      "term": "赤坂あかね音頭 × 浄土寺",
+      "song_name": "赤坂あかね音頭",
+      "venue": "浄土寺",
+      "event_candidates": [],
+      "interpretation": "浄土寺で赤坂あかね音頭が言及された可能性",
+      "confidence": "要レビュー",
+      "reason": "同一voice内に曲名候補と既知会場名が共起。",
+      "evidence_count": 1,
+      "evidence": [
+        {
+          "url": "https://x.com/tanoshiki_kana/status/2078446377517174845",
+          "date": "2026-07-18T11:46:46+00:00",
+          "account": "@tanoshiki_kana",
+          "text": "7/17（金） #浄土寺 #盆踊り 練習会へ。団扇ワークが美しい #赤坂小唄 #真室川音頭 踊れて嬉しい 来週の #浄土寺盆踊り 楽しみ😌#赤坂音頭 #赤坂豊川音頭 #赤坂あかね音頭 赤坂は素敵な踊りがいっぱい💕#赤坂あかね会 さま、お世話になりました🙏 https://t.co/CWlQNk5MDa"
+        }
+      ],
+      "evidence_text": "7/17（金） #浄土寺 #盆踊り 練習会へ。団扇ワークが美しい #赤坂小唄 #真室川音頭 踊れて嬉しい 来週の #浄土寺盆踊り 楽しみ😌#赤坂音頭 #赤坂豊川音頭 #赤坂あかね音頭 赤坂は素敵な踊りがいっぱい💕#赤坂あかね会 さま、お世話になりました🙏 https://t.co/CWlQNk5MDa",
+      "evidence_url": "https://x.com/tanoshiki_kana/status/2078446377517174845"
+    },
+    {
+      "category": "曲×会場共起",
+      "type": "共起",
+      "term": "赤坂は素敵な踊り × 浄土寺",
+      "song_name": "赤坂は素敵な踊り",
+      "venue": "浄土寺",
+      "event_candidates": [],
+      "interpretation": "浄土寺で赤坂は素敵な踊りが言及された可能性",
+      "confidence": "要レビュー",
+      "reason": "同一voice内に曲名候補と既知会場名が共起。",
+      "evidence_count": 1,
+      "evidence": [
+        {
+          "url": "https://x.com/tanoshiki_kana/status/2078446377517174845",
+          "date": "2026-07-18T11:46:46+00:00",
+          "account": "@tanoshiki_kana",
+          "text": "7/17（金） #浄土寺 #盆踊り 練習会へ。団扇ワークが美しい #赤坂小唄 #真室川音頭 踊れて嬉しい 来週の #浄土寺盆踊り 楽しみ😌#赤坂音頭 #赤坂豊川音頭 #赤坂あかね音頭 赤坂は素敵な踊りがいっぱい💕#赤坂あかね会 さま、お世話になりました🙏 https://t.co/CWlQNk5MDa"
+        }
+      ],
+      "evidence_text": "7/17（金） #浄土寺 #盆踊り 練習会へ。団扇ワークが美しい #赤坂小唄 #真室川音頭 踊れて嬉しい 来週の #浄土寺盆踊り 楽しみ😌#赤坂音頭 #赤坂豊川音頭 #赤坂あかね音頭 赤坂は素敵な踊りがいっぱい💕#赤坂あかね会 さま、お世話になりました🙏 https://t.co/CWlQNk5MDa",
+      "evidence_url": "https://x.com/tanoshiki_kana/status/2078446377517174845"
+    },
+    {
+      "category": "曲×会場共起",
+      "type": "共起",
+      "term": "赤坂小唄 × 浄土寺",
+      "song_name": "赤坂小唄",
+      "venue": "浄土寺",
+      "event_candidates": [],
+      "interpretation": "浄土寺で赤坂小唄が言及された可能性",
+      "confidence": "要レビュー",
+      "reason": "同一voice内に曲名候補と既知会場名が共起。",
+      "evidence_count": 1,
+      "evidence": [
+        {
+          "url": "https://x.com/tanoshiki_kana/status/2078446377517174845",
+          "date": "2026-07-18T11:46:46+00:00",
+          "account": "@tanoshiki_kana",
+          "text": "7/17（金） #浄土寺 #盆踊り 練習会へ。団扇ワークが美しい #赤坂小唄 #真室川音頭 踊れて嬉しい 来週の #浄土寺盆踊り 楽しみ😌#赤坂音頭 #赤坂豊川音頭 #赤坂あかね音頭 赤坂は素敵な踊りがいっぱい💕#赤坂あかね会 さま、お世話になりました🙏 https://t.co/CWlQNk5MDa"
+        }
+      ],
+      "evidence_text": "7/17（金） #浄土寺 #盆踊り 練習会へ。団扇ワークが美しい #赤坂小唄 #真室川音頭 踊れて嬉しい 来週の #浄土寺盆踊り 楽しみ😌#赤坂音頭 #赤坂豊川音頭 #赤坂あかね音頭 赤坂は素敵な踊りがいっぱい💕#赤坂あかね会 さま、お世話になりました🙏 https://t.co/CWlQNk5MDa",
+      "evidence_url": "https://x.com/tanoshiki_kana/status/2078446377517174845"
+    },
+    {
+      "category": "曲×会場共起",
+      "type": "共起",
+      "term": "赤坂豊川音頭 × 浄土寺",
+      "song_name": "赤坂豊川音頭",
+      "venue": "浄土寺",
+      "event_candidates": [],
+      "interpretation": "浄土寺で赤坂豊川音頭が言及された可能性",
+      "confidence": "要レビュー",
+      "reason": "同一voice内に曲名候補と既知会場名が共起。",
+      "evidence_count": 1,
+      "evidence": [
+        {
+          "url": "https://x.com/tanoshiki_kana/status/2078446377517174845",
+          "date": "2026-07-18T11:46:46+00:00",
+          "account": "@tanoshiki_kana",
+          "text": "7/17（金） #浄土寺 #盆踊り 練習会へ。団扇ワークが美しい #赤坂小唄 #真室川音頭 踊れて嬉しい 来週の #浄土寺盆踊り 楽しみ😌#赤坂音頭 #赤坂豊川音頭 #赤坂あかね音頭 赤坂は素敵な踊りがいっぱい💕#赤坂あかね会 さま、お世話になりました🙏 https://t.co/CWlQNk5MDa"
+        }
+      ],
+      "evidence_text": "7/17（金） #浄土寺 #盆踊り 練習会へ。団扇ワークが美しい #赤坂小唄 #真室川音頭 踊れて嬉しい 来週の #浄土寺盆踊り 楽しみ😌#赤坂音頭 #赤坂豊川音頭 #赤坂あかね音頭 赤坂は素敵な踊りがいっぱい💕#赤坂あかね会 さま、お世話になりました🙏 https://t.co/CWlQNk5MDa",
+      "evidence_url": "https://x.com/tanoshiki_kana/status/2078446377517174845"
+    },
+    {
+      "category": "曲×会場共起",
+      "type": "共起",
+      "term": "赤坂音頭 × 浄土寺",
+      "song_name": "赤坂音頭",
+      "venue": "浄土寺",
+      "event_candidates": [],
+      "interpretation": "浄土寺で赤坂音頭が言及された可能性",
+      "confidence": "要レビュー",
+      "reason": "同一voice内に曲名候補と既知会場名が共起。",
+      "evidence_count": 1,
+      "evidence": [
+        {
+          "url": "https://x.com/tanoshiki_kana/status/2078446377517174845",
+          "date": "2026-07-18T11:46:46+00:00",
+          "account": "@tanoshiki_kana",
+          "text": "7/17（金） #浄土寺 #盆踊り 練習会へ。団扇ワークが美しい #赤坂小唄 #真室川音頭 踊れて嬉しい 来週の #浄土寺盆踊り 楽しみ😌#赤坂音頭 #赤坂豊川音頭 #赤坂あかね音頭 赤坂は素敵な踊りがいっぱい💕#赤坂あかね会 さま、お世話になりました🙏 https://t.co/CWlQNk5MDa"
+        }
+      ],
+      "evidence_text": "7/17（金） #浄土寺 #盆踊り 練習会へ。団扇ワークが美しい #赤坂小唄 #真室川音頭 踊れて嬉しい 来週の #浄土寺盆踊り 楽しみ😌#赤坂音頭 #赤坂豊川音頭 #赤坂あかね音頭 赤坂は素敵な踊りがいっぱい💕#赤坂あかね会 さま、お世話になりました🙏 https://t.co/CWlQNk5MDa",
+      "evidence_url": "https://x.com/tanoshiki_kana/status/2078446377517174845"
     },
     {
       "category": "用語候補",
@@ -390,41 +494,41 @@
       "interpretation": "盆踊りの曲や振りを練習する会",
       "confidence": "要レビュー",
       "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
-      "evidence_count": 41,
+      "evidence_count": 44,
       "evidence": [
         {
-          "url": "https://x.com/Lia621vrc/status/2078324391881138671",
-          "date": "2026-07-18T03:42:03+00:00",
-          "account": "@Lia621vrc",
-          "text": "あ！しろくまさんの盆踊り練習会昨日だったのか！！ すっかり忘れてた！！"
+          "url": "https://x.com/waterdragon1110/status/2078727939169161389",
+          "date": "2026-07-19T06:25:36+00:00",
+          "account": "@waterdragon1110",
+          "text": "日泰寺でラジオ体操したあと盆踊りの練習会に参加しました #盆踊り https://t.co/GYFWkj22M4"
         },
         {
-          "url": "https://x.com/hiroshimacenter/status/2078322329692836313",
-          "date": "2026-07-18T03:33:51+00:00",
-          "account": "@hiroshimacenter",
-          "text": "「刈田音頭を伝え隊」メンバー募集！ 8/8に開催される「ひろしま盆ダンス」の前身でもある1946年に開催された「戦災供養盆踊り大会」の優勝チームである「苅田音頭」。80年ぶりに同じ場所で踊るその歴史の一員になってみませんか？ 練習会：8/5（水）19：00-場所：青少年センター 対象：15－30歳 https://t.co/VOZtdu6dZN"
+          "url": "https://x.com/minowacho/status/2078703708192588052",
+          "date": "2026-07-19T04:49:19+00:00",
+          "account": "@minowacho",
+          "text": "14:00〜箕輪集会所2階(箕輪町諏訪神社)で【盆踊りの合同練習会】をやりますよ🤗スリッパが動きにくいようでしたら、上靴をご持参くださいね👍RIKO https://t.co/R5TOYK83YV"
         },
         {
-          "url": "https://x.com/no____la_r/status/2078321274758328525",
-          "date": "2026-07-18T03:29:39+00:00",
-          "account": "@no____la_r",
-          "text": "本日と明日はこちら︎🌟 盆踊り練習会やってます〜！ 8月の7、8、9日に上野で本番があります🥳 気になる方はぜひ〜！👀"
+          "url": "https://x.com/hatohuruoosone8/status/2078678903087050947",
+          "date": "2026-07-19T03:10:45+00:00",
+          "account": "@hatohuruoosone8",
+          "text": "盆踊り練習会を行いました 大曽根盆踊り大会は8/1（土）2（日）18時30分～大曽根小学校校庭にて開催。夜店は17時から。会場への入場も17時からです。遊びに、踊りに来てください！！＃盆踊り大会 ＃横浜市港北区大曽根 ＃夏祭り https://t.co/775je5CUrp"
         },
         {
-          "url": "https://x.com/hakusenmagari/status/2078315332809507151",
-          "date": "2026-07-18T03:06:03+00:00",
-          "account": "@hakusenmagari",
-          "text": "＼ 明日の夕方はさいたまで盆踊り練習会もあるよー ／ #ごちゃまつり"
+          "url": "https://x.com/minowacho/status/2078668437967302956",
+          "date": "2026-07-19T02:29:10+00:00",
+          "account": "@minowacho",
+          "text": "本日14:00〜16:00まで箕輪集会所(諏訪神社)にて、【盆踊りの合同練習会7/19】をします。是非お集まりください。一緒に踊りましょう♪RIKO※写真は去年の！ https://t.co/ZiplHLvvB9"
         },
         {
-          "url": "https://x.com/TakahiroShojima/status/2078281510256300422",
-          "date": "2026-07-18T00:51:39+00:00",
-          "account": "@TakahiroShojima",
-          "text": "7/17（金） 大田文化の森夏祭り盆踊り練習会 実行委員として盆踊り担当 今年はアンパンマン音頭も 本番は7/25（土）18:30-20:00＠大田文化の森多目的室 日本一涼しい盆踊り｜庄嶋たかひろ 大田区議会議員 @TakahiroShojima https://t.co/qvAwznh9ae"
+          "url": "https://x.com/bonDsuzuki/status/2078649500554645669",
+          "date": "2026-07-19T01:13:55+00:00",
+          "account": "@bonDsuzuki",
+          "text": "本日は千葉商科大学にて盆踊りの練習会が13時からです！ 学生団体おりがみの学生メンバーと一緒に盆踊りを練習しますので、若手への激励などもいただきつつ、ぜひぜひご一緒できますと嬉しく思います☺️✨ ちなみに学食ユニークらしくて、（続く）"
         }
       ],
-      "evidence_text": "あ！しろくまさんの盆踊り練習会昨日だったのか！！ すっかり忘れてた！！\n---\n「刈田音頭を伝え隊」メンバー募集！ 8/8に開催される「ひろしま盆ダンス」の前身でもある1946年に開催された「戦災供養盆踊り大会」の優勝チームである「苅田音頭」。80年ぶりに同じ場所で踊るその歴史の一員になってみませんか？ 練習会：8/5（水）19：00-場所：青少年センター 対象：15－30歳 https://t.co/VOZtdu6dZN\n---\n本日と明日はこちら︎🌟 盆踊り練習会やってます〜！ 8月の7、8、9日に上野で本番があります🥳 気になる方はぜひ〜！👀",
-      "evidence_url": "https://x.com/Lia621vrc/status/2078324391881138671"
+      "evidence_text": "日泰寺でラジオ体操したあと盆踊りの練習会に参加しました #盆踊り https://t.co/GYFWkj22M4\n---\n14:00〜箕輪集会所2階(箕輪町諏訪神社)で【盆踊りの合同練習会】をやりますよ🤗スリッパが動きにくいようでしたら、上靴をご持参くださいね👍RIKO https://t.co/R5TOYK83YV\n---\n盆踊り練習会を行いました 大曽根盆踊り大会は8/1（土）2（日）18時30分～大曽根小学校校庭にて開催。夜店は17時から。会場への入場も17時からです。遊びに、踊りに来てください！！＃盆踊り大会 ＃横浜市港北区大曽根 ＃夏祭り https://t.co/775je5CUrp",
+      "evidence_url": "https://x.com/waterdragon1110/status/2078727939169161389"
     },
     {
       "category": "用語候補",
@@ -433,41 +537,41 @@
       "interpretation": "盆踊りや輪踊りの会",
       "confidence": "要レビュー",
       "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
-      "evidence_count": 18,
+      "evidence_count": 20,
       "evidence": [
         {
-          "url": "https://x.com/wadaikoCH/status/2078366344417095808",
-          "date": "2026-07-18T06:28:45+00:00",
-          "account": "@wadaikoCH",
-          "text": "今日の盆踊りは、 大和町八幡神社大盆踊り会 「ダイボン（daibon）」❣️ #盆踊り #大和町八幡神社 #ダイボン https://t.co/2cLDYu2yDy"
+          "url": "https://x.com/nyantokonyan/status/2078759626653442086",
+          "date": "2026-07-19T08:31:31+00:00",
+          "account": "@nyantokonyan",
+          "text": "大盆踊り会はまだ終わらないっ！ https://t.co/jvxVyKYUHb"
         },
         {
-          "url": "https://x.com/giantpanda99/status/2078390927396356373",
-          "date": "2026-07-18T08:06:26+00:00",
-          "account": "@giantpanda99",
-          "text": "【メガヒッツ盆踊り】 ❹ 人生変えちゃう夏かもね / 西田ひかる #大盆踊り会 #DAIBON #2026 #since2016 #10周年 #中野区 #大和町 #八幡神社 #例大祭 https://t.co/WihCVvgVXj"
+          "url": "https://x.com/levi47797479/status/2078759285098795459",
+          "date": "2026-07-19T08:30:09+00:00",
+          "account": "@levi47797479",
+          "text": "@EUYLXCigCGgsGIh wwww😂 大和町八幡神社大盆踊り会だそう㌥🤭"
         },
         {
-          "url": "https://x.com/giantpanda99/status/2078389844267704633",
-          "date": "2026-07-18T08:02:08+00:00",
-          "account": "@giantpanda99",
-          "text": "【メガヒッツ盆踊り】 ❸渚にまつわるエトセトラ / PUFFY #大盆踊り会 #DAIBON #2026 #since2016 #10周年 #中野区 #大和町 #八幡神社 #例大祭 https://t.co/UYkkw54UED"
+          "url": "https://x.com/LiNimbus/status/2078750070623916061",
+          "date": "2026-07-19T07:53:32+00:00",
+          "account": "@LiNimbus",
+          "text": "（@opan_bakery ）土曜日に 大盆踊り会を覗きに行った際に、そちらのサバサンド🐟️を購入した者です。 笹塚のお店では、こちら、レギュラーメニューで販売していますか？ とても美味しかったので😊 https://t.co/O8dRiXkHnl"
         },
         {
-          "url": "https://x.com/popotame_shop/status/2078388899047673975",
-          "date": "2026-07-18T07:58:22+00:00",
-          "account": "@popotame_shop",
-          "text": "中野大和町八幡神社の大盆踊り会DAIBON、ポポタム献灯しています💚参道の彫刻もおもしろい。「無気力な男」「スルメを嗅ぐ女」よく見たら知ってる作家さんの作品でびっくり https://t.co/NqJPoCGJGt"
+          "url": "https://x.com/yuki_bee/status/2078648006111588713",
+          "date": "2026-07-19T01:07:58+00:00",
+          "account": "@yuki_bee",
+          "text": "月一の街のイベントだったのだけどストリート結婚式ってのがプログラムにあってなんぞ？と思ってたらたまに飲みに行くお店の看板娘の結婚式を盆踊り会場でやったらしい。何度も思ったが本当にいい街だ。いいもん見れた https://t.co/Lso4VYZzk1"
         },
         {
-          "url": "https://x.com/djtatsunoya/status/2078388639135121877",
-          "date": "2026-07-18T07:57:20+00:00",
-          "account": "@djtatsunoya",
-          "text": "本日のオススメはコチラ！ 今日は近所の八幡神社の大盆踊り会！今年もカヤのつくねを納品してきました！お帰りの際に是非カヤまで！と言いたいところなのですが、本日予約を多数いただいております！ご入店出来ない場合もあるかと思われます。ご了承の程よろしくお願いします🙇 https://t.co/Swtf8BDTJZ"
+          "url": "https://x.com/m2tokyo3p/status/2078728349506326910",
+          "date": "2026-07-19T06:27:14+00:00",
+          "account": "@m2tokyo3p",
+          "text": "祐天寺 みたま祭り子ども盆踊り大会がことしも開催。伝統と現代が融合、若者や外国人で賑わう祐天寺の盆踊りが今年も盛大におこなわれました。盆だいことは、お祭りの盆踊り会場の櫓のうえで、民謡や音頭のリズムに合わせて叩く和太鼓のことです。 https://t.co/WG2VRDm8nZ https://t.co/OHreO9ykzp"
         }
       ],
-      "evidence_text": "今日の盆踊りは、 大和町八幡神社大盆踊り会 「ダイボン（daibon）」❣️ #盆踊り #大和町八幡神社 #ダイボン https://t.co/2cLDYu2yDy\n---\n【メガヒッツ盆踊り】 ❹ 人生変えちゃう夏かもね / 西田ひかる #大盆踊り会 #DAIBON #2026 #since2016 #10周年 #中野区 #大和町 #八幡神社 #例大祭 https://t.co/WihCVvgVXj\n---\n【メガヒッツ盆踊り】 ❸渚にまつわるエトセトラ / PUFFY #大盆踊り会 #DAIBON #2026 #since2016 #10周年 #中野区 #大和町 #八幡神社 #例大祭 https://t.co/UYkkw54UED",
-      "evidence_url": "https://x.com/wadaikoCH/status/2078366344417095808"
+      "evidence_text": "大盆踊り会はまだ終わらないっ！ https://t.co/jvxVyKYUHb\n---\n@EUYLXCigCGgsGIh wwww😂 大和町八幡神社大盆踊り会だそう㌥🤭\n---\n（@opan_bakery ）土曜日に 大盆踊り会を覗きに行った際に、そちらのサバサンド🐟️を購入した者です。 笹塚のお店では、こちら、レギュラーメニューで販売していますか？ とても美味しかったので😊 https://t.co/O8dRiXkHnl",
+      "evidence_url": "https://x.com/nyantokonyan/status/2078759626653442086"
     },
     {
       "category": "用語候補",
@@ -476,7 +580,7 @@
       "interpretation": "複数会場を同日または連続して巡る行動",
       "confidence": "要レビュー",
       "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
-      "evidence_count": 4,
+      "evidence_count": 3,
       "evidence": [
         {
           "url": "https://x.com/tanakatakeshi/status/2078097057718673621",
@@ -495,16 +599,35 @@
           "date": "2026-07-17T04:48:17+00:00",
           "account": "@takasho06130613",
           "text": "明日はハシゴできそう🙌"
-        },
-        {
-          "url": "https://x.com/as1tks_/status/2077603973683720201",
-          "date": "2026-07-16T03:59:21+00:00",
-          "account": "@as1tks_",
-          "text": "盆踊りの現場がかぶりすぎてて、ハシゴせざるを得ない日が何日かあって行く前からしんどい"
         }
       ],
       "evidence_text": "【盆踊り練習①】 今宵も盆踊り練習のハシゴです…。 前半は、昭和地区知立団地自治会の盆踊り練習です。 先週のおさらいから始まって、先生のご指導で新曲もバッチリ👍🏻。 知立団地自治会の夏まつりは、8月9日(日)です！ #質実剛健 #田中健 #知立市 #未来共創 #地域密着 #盆踊り https://t.co/y3H19RWmLc\n---\n【盆踊り練習②】 盆踊り練習会のハシゴ、後半は山屋敷町さんです。 いよいよ、明日の本番に向けて、練習の締めくくりです。子どもたちの太鼓も上達してきました。 踊りの先生のご指導は、本当にわかりやすいです！いつもありがとうございます。 #質実剛健 #田中健 #知立市 #未来共創 #地域密着 #盆踊り\n---\n明日はハシゴできそう🙌",
       "evidence_url": "https://x.com/tanakatakeshi/status/2078097057718673621"
+    },
+    {
+      "category": "用語候補",
+      "type": "参加スタイル語",
+      "term": "参戦",
+      "interpretation": "盆踊りイベントへ参加すること",
+      "confidence": "要レビュー",
+      "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
+      "evidence_count": 2,
+      "evidence": [
+        {
+          "url": "https://x.com/siina0747/status/2078742995290165467",
+          "date": "2026-07-19T07:25:25+00:00",
+          "account": "@siina0747",
+          "text": "明日リアフレと祭り行く事が決まったから、今日のクソデカ公園の祭りと近所の盆踊りは参戦やめよう！！ なんてったって暑過ぎる！！！！ 明日も暑いよ(無慈悲) 何なら昨日や今日より暑いよ……。 近所の盆踊りは徒歩で行ける範囲何だから行けば？？ ん～～～、出るのがシンプル面倒～～。"
+        },
+        {
+          "url": "https://x.com/shin_kingsnet/status/2077974147016315027",
+          "date": "2026-07-17T04:30:18+00:00",
+          "account": "@shin_kingsnet",
+          "text": "18日は町会の盆踊り会場の準備のため オープンが遅れます。 ご来店の際、お手数ですがご確認ください。 19日はPERFECT札幌大会。 名越プロ、和家プロが参戦します。 応援よろしくお願いします 26日（日）スティールハウスあります。 エントリーお待ちしております。 https://t.co/ZQrC4GjtTu"
+        }
+      ],
+      "evidence_text": "明日リアフレと祭り行く事が決まったから、今日のクソデカ公園の祭りと近所の盆踊りは参戦やめよう！！ なんてったって暑過ぎる！！！！ 明日も暑いよ(無慈悲) 何なら昨日や今日より暑いよ……。 近所の盆踊りは徒歩で行ける範囲何だから行けば？？ ん～～～、出るのがシンプル面倒～～。\n---\n18日は町会の盆踊り会場の準備のため オープンが遅れます。 ご来店の際、お手数ですがご確認ください。 19日はPERFECT札幌大会。 名越プロ、和家プロが参戦します。 応援よろしくお願いします 26日（日）スティールハウスあります。 エントリーお待ちしております。 https://t.co/ZQrC4GjtTu",
+      "evidence_url": "https://x.com/siina0747/status/2078742995290165467"
     },
     {
       "category": "用語候補",
@@ -524,25 +647,6 @@
       ],
       "evidence_text": "7/17(金) 今日はみみとゆゆはバラバラ😂 みみは大好きな赤坂系を踊りにばぁばとこちらにお邪魔します。 ゆゆは友達に「絶対来て！」と言われたらしく地元をはしご予定w 母の体は1つ。ばぁばにも感謝🙏🏻✨",
       "evidence_url": "https://x.com/mimi33yuyu26na/status/2078024778380902472"
-    },
-    {
-      "category": "用語候補",
-      "type": "参加スタイル語",
-      "term": "参戦",
-      "interpretation": "盆踊りイベントへ参加すること",
-      "confidence": "要レビュー",
-      "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
-      "evidence_count": 1,
-      "evidence": [
-        {
-          "url": "https://x.com/shin_kingsnet/status/2077974147016315027",
-          "date": "2026-07-17T04:30:18+00:00",
-          "account": "@shin_kingsnet",
-          "text": "18日は町会の盆踊り会場の準備のため オープンが遅れます。 ご来店の際、お手数ですがご確認ください。 19日はPERFECT札幌大会。 名越プロ、和家プロが参戦します。 応援よろしくお願いします 26日（日）スティールハウスあります。 エントリーお待ちしております。 https://t.co/ZQrC4GjtTu"
-        }
-      ],
-      "evidence_text": "18日は町会の盆踊り会場の準備のため オープンが遅れます。 ご来店の際、お手数ですがご確認ください。 19日はPERFECT札幌大会。 名越プロ、和家プロが参戦します。 応援よろしくお願いします 26日（日）スティールハウスあります。 エントリーお待ちしております。 https://t.co/ZQrC4GjtTu",
-      "evidence_url": "https://x.com/shin_kingsnet/status/2077974147016315027"
     },
     {
       "category": "用語候補",
