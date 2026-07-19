@@ -4,7 +4,7 @@ Updated: 2026-07-19 JST
 
 署名: おと（Codex）
 
-Status: B2-0 contract fixed; B2-1 pure adapter; B2-2 finite decision staging; B2-3a canary wiring default off
+Status: B2-3b canary shadow upsert verified; B2-3c decision CAS writer implemented default off
 
 ## Scope
 

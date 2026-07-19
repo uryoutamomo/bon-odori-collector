@@ -368,8 +368,9 @@ def record_inbox_decision(
     decided_by: str,
     decision_route: str,
     decided_at: str | None = None,
+    ensure_schema: bool = True,
 ) -> dict[str, Any]:
-    if inbox_schema_version(conn) != INBOX_SCHEMA_VERSION:
+    if inbox_schema_version(conn, ensure_schema=ensure_schema) != INBOX_SCHEMA_VERSION:
         raise RuntimeError("review inbox schema v2 migration is required before recording decisions")
     if decision not in DECISIONS:
         raise ValueError(f"unsupported review inbox decision: {decision}")
@@ -390,7 +391,11 @@ def record_inbox_decision(
     )
     if cursor.rowcount != 1:
         raise KeyError(f"review inbox item not found: {inbox_id}")
-    return next(row for row in inbox_rows(conn, status=None) if row["inbox_id"] == inbox_id)
+    return next(
+        row
+        for row in inbox_rows(conn, status=None, ensure_schema=ensure_schema)
+        if row["inbox_id"] == inbox_id
+    )
 
 
 def clear_inbox_decision(conn: sqlite3.Connection, inbox_id: str) -> dict[str, Any]:
