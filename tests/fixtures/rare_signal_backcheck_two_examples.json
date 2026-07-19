@@ -1,0 +1,48 @@
+{
+  "generated_by": "B2 rare signal contract fixture",
+  "queue": [
+    {
+      "candidate_id": "xoto_satake_fixture",
+      "information_type": "new_event_candidate",
+      "promotion_target": "event",
+      "primary_name": "佐竹ゲバゲバ盆踊り",
+      "possible_event_name": "佐竹ゲバゲバ盆踊り",
+      "possible_venue": "佐竹商店街",
+      "possible_area": "台東区",
+      "possible_date_text": "7月",
+      "oto_interpreted_summary": "佐竹商店街で開催される盆踊り候補として非X根拠を確認する。",
+      "novelty_assessment": "new",
+      "next_action": "find_non_x_confirmation",
+      "internal_discovery_urls": [
+        "https://x.com/satake_example/status/2000000000000000001"
+      ],
+      "source_officiality": {
+        "classification": "unknown_or_personal_social"
+      },
+      "decision": "pending"
+    },
+    {
+      "candidate_id": "xoto_teppozu_fixture",
+      "information_type": "event_update_candidate",
+      "promotion_target": "event",
+      "primary_name": "鉄砲洲納涼盆踊り",
+      "possible_event_name": "鉄砲洲納涼盆踊り",
+      "possible_venue": "鉄砲洲公園",
+      "possible_area": "中央区",
+      "possible_date_text": "2026年8月3日〜5日",
+      "oto_interpreted_summary": "町会公式Xによる告知内容を確認する。",
+      "novelty_assessment": "update",
+      "next_action": "review_official_social_post",
+      "internal_discovery_urls": [
+        "https://x.com/iri2choukai/status/2069959259895496872"
+      ],
+      "confirmed_source_urls": [
+        "https://x.com/iri2choukai/status/2069959259895496872"
+      ],
+      "source_officiality": {
+        "classification": "registered_official_social"
+      },
+      "decision": "pending"
+    }
+  ]
+}
