@@ -4,7 +4,7 @@ Updated: 2026-07-19 JST
 
 署名: おと（Codex）
 
-Status: B2-0 contract fixed; B2-1 pure adapter only
+Status: B2-0 contract fixed; B2-1 pure adapter; B2-2 finite decision staging
 
 ## Scope
 
@@ -68,12 +68,18 @@ B2-1 adapterが出せるrecommended actionは次に限定する。
 adapterはstatus、decision、reviewer、route、timestampsを生成しない。legacy payload内のdecision-like
 fieldをinbox lifecycleへ昇格しない。
 
-B2-2では次のdecision routeを別PRで実装する。
+B2-2では次のdecision routeを実装する。
 
 - `needs_research` → `research_followup`
 - `hold` / `reject` → `no_apply`
 - `accept` → 非X URLを必須にしたregistration candidate staging
 - X URLしかないaccept → fail closed（apply packet 0）
+
+acceptは共通の `domain_stage` route内で
+`domain_stage_type=rare_signal_registration_candidate` の有限packetへ変換する。
+確認URLはレビューのメモまたはsource payloadの `confirmed_source_urls` から取り、
+X/Twitter/t.coを除いたURLが1件もなければstage全体を失敗させる。
+このpacketはMaster RDB、domain table、DynamoDB、公開JSONを更新しない。
 
 event/song/venue/existing evidenceのどのtargetでも、staging後のdomain applyは別レビューとGOを必要とする。
 

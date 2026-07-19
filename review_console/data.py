@@ -1822,6 +1822,13 @@ def option_disabled_reason(source: ReviewSource, row: dict[str, Any], value: str
 
 
 def option_help_for(source: ReviewSource, row: dict[str, Any], value: str) -> str:
+    if source.id == "review_inbox" and as_text(row.get("kind")) == "rare_signal":
+        return {
+            "stage_registration_candidate": "メモにX/Twitter以外の確認URLを書き、登録候補packetだけを作ります。DBや公開データには反映しません。",
+            "needs_research": "非Xの公式・主催・自治体・会場・地域媒体URLを追加で探します。",
+            "reject": "ノイズ、重複、または登録対象外として終了します。",
+            "hold": "判断材料を残したまま、適用せず保留します。",
+        }.get(value, "")
     if source.id == "x_candidate_post":
         return {
             "promote": "このアカウントを今後の盆踊り情報源にします。候補JSONへ registration_decision=登録 を直接保存します。",
@@ -1948,7 +1955,10 @@ def research_advice(source: ReviewSource, row: dict[str, Any]) -> dict[str, str]
 
 def apply_options(source: ReviewSource, row: dict[str, Any]) -> list[dict[str, Any]]:
     options = []
-    for value in source.option_values:
+    option_values = source.option_values
+    if source.id == "review_inbox" and as_text(row.get("kind")) == "rare_signal":
+        option_values = ("stage_registration_candidate", "needs_research", "reject", "hold")
+    for value in option_values:
         disabled_reason = option_disabled_reason(source, row, value)
         options.append(
             {
@@ -1970,6 +1980,8 @@ def route_note(
     row: dict[str, Any],
     historical_refs: dict[str, list[dict[str, Any]]] | None = None,
 ) -> str:
+    if source.id == "review_inbox" and as_text(row.get("kind")) == "rare_signal":
+        return "X由来の発見候補です。採用時も登録候補packetを作るだけで、非X確認URLがなければ安全側に停止します。"
     if source.id == "x_candidate_post":
         return "X/RSSの情報源候補です。ここは2段式ではありません。押した判断を候補JSONの registration_decision に直接保存します。"
     if source.id == "rare_signal_backcheck":
