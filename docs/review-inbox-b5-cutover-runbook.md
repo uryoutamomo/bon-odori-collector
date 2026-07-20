@@ -52,8 +52,27 @@ observations for this cutover exception.
   checksum continuity.
 - Independent production artifact review: こと（Claude Code）, Findingなし.
 
-The post-cutover production run must provide the second low-priority observation
-and prove that no legacy queue/UI commit occurs.
+Post-cutover production run `29718631223` completed successfully:
+
+- the public export passed with the new hard-fail code active, directly proving
+  `json_fallback_count == 0` against the fetched production RDB;
+- YouTube remained 172/172 parity, changed 0, unchanged 172, unmapped 0,
+  Rstart=Rend
+  `8360a5fbb555d677312d5a64fab1267c0c7d612a2307754b1110d0bd49b99788`;
+- the second low-priority observation remained 257/257 parity and unmapped 0.
+  Song changed 1 of 3 and term changed 2 of 21 from fresh collection input;
+  venue 5, historical quality 69, and publication gap 159 were no-ops;
+- all six source reports recorded `reader_mode=inbox` and
+  `legacy_writer_retained=false`, SQLite integrity `ok`, foreign-key violations
+  0, and unchanged public/domain projections;
+- the low-priority CAS chain ended at
+  `13658895c753ca38905dca464dc7915a1ef03e69dbc773ad489cc4b1fa29bfb9`;
+- the run created only normal data commit `e998942` and inbox projection commits
+  `daebed3` / `3815cdc`.  No legacy queue/UI file or legacy queue commit was
+  produced.
+- こと（Claude Code） independently downloaded both post-cutover artifacts,
+  checked the six reports, CAS chain, Actions step status, and all three commit
+  file lists, and returned Findingなし.
 
 ## JSON fallback hard failure
 
