@@ -58,6 +58,24 @@
       "priority": "normal"
     },
     {
+      "video_id": "closed-structured-setlist",
+      "video_url": "https://www.youtube.com/watch?v=closed-structured-setlist",
+      "title": "未知の親イベント企画",
+      "published_at": "2025-04-20T13:00:09Z",
+      "detected_event_date": "2025-04-20",
+      "title_song_candidates": [],
+      "setlist_occurrences": [
+        {"setlist": [{"song_name": "未登録でも構造化済みの曲"}]}
+      ],
+      "matched_public_event": null,
+      "parent_event_component": {
+        "parent_event_name": "未知の親イベント",
+        "component_label": "盆踊り企画"
+      },
+      "action": "bon_component_of_parent_event",
+      "priority": "normal"
+    },
+    {
       "video_id": "already-routed",
       "video_url": "https://www.youtube.com/watch?v=already-routed",
       "title": "既存イベント動画",

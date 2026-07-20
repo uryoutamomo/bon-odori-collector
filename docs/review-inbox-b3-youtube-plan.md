@@ -26,7 +26,7 @@ legacy consoleと同じく次だけをpendingにする。
 - `review_video_evidence`
 - `bon_component_of_parent_event` のうち既知曲証拠で自動解決されていないもの
 
-既知曲判定はadapterへ語彙を注入し、adapter本体は副作用なしに保つ。snapshotにはprimary JSONのSHA-256に加えて、使用した曲語彙ファイルのSHA-256とsizeを記録する。現行実データでは86件（`add_song_evidence` 84件、`needs_research` 2件）となる。
+曲証拠判定はlegacyと同じく、行の `songs`、`setlist_occurrences[].setlist` にある構造化済み曲名、またはtitleの既知曲一致を使う。title照合用の既知曲語彙はadapterへ注入し、adapter本体は副作用なしに保つ。snapshotにはprimary JSONのSHA-256に加えて、使用した曲語彙ファイルのSHA-256とsizeを記録する。現行実データでは86件（`add_song_evidence` 84件、`needs_research` 2件）となる。
 
 ## decision境界
 

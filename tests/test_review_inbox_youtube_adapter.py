@@ -7,6 +7,7 @@ from review_inbox_source_adapter import LIFECYCLE_FIELDS, adapt_source_payload, 
 from review_inbox_youtube_adapter import (
     YouTubeActiveVideoAdapter,
     build_snapshot,
+    has_structured_song_evidence,
     normalize_song_text,
 )
 
@@ -90,6 +91,19 @@ class ReviewInboxYouTubeAdapterTest(unittest.TestCase):
 
         self.assertNotEqual(by_year["inbox_id"], by_occurrence["inbox_id"])
         self.assertNotEqual(by_year["inbox_id"], next_year["inbox_id"])
+
+    def test_structured_song_or_setlist_matches_legacy_auto_close_boundary(self):
+        self.assertTrue(has_structured_song_evidence({"songs": ["未登録曲"]}))
+        self.assertTrue(
+            has_structured_song_evidence(
+                {"setlist_occurrences": [{"setlist": [{"song_name": "未登録曲"}]}]}
+            )
+        )
+        self.assertFalse(
+            has_structured_song_evidence(
+                {"setlist_occurrences": [{"song_count": 1, "setlist": []}]}
+            )
+        )
 
     def test_closed_action_is_skipped_but_unknown_action_and_invalid_rows_fail_closed(self):
         closed = {

@@ -117,6 +117,8 @@ def normalize_song_text(value: Any) -> str:
 
 
 def has_known_song_evidence(row: Mapping[str, Any], known_song_terms: Mapping[str, str]) -> bool:
+    if has_structured_song_evidence(row):
+        return True
     values = [str(row.get("title") or "")]
     title_candidates = row.get("title_song_candidates")
     if isinstance(title_candidates, list):
@@ -129,6 +131,36 @@ def has_known_song_evidence(row: Mapping[str, Any], known_song_terms: Mapping[st
             continue
         if norm and norm in haystack:
             return True
+    return False
+
+
+def has_structured_song_evidence(row: Mapping[str, Any]) -> bool:
+    songs = row.get("songs")
+    if isinstance(songs, list):
+        for song in songs:
+            value = (
+                song.get("name") or song.get("song_name") or song.get("title")
+                if isinstance(song, dict)
+                else song
+            )
+            if str(value or "").strip():
+                return True
+    occurrences = row.get("setlist_occurrences")
+    if isinstance(occurrences, list):
+        for occurrence in occurrences:
+            if not isinstance(occurrence, dict):
+                continue
+            setlist = occurrence.get("setlist")
+            if not isinstance(setlist, list):
+                continue
+            for song in setlist:
+                value = (
+                    song.get("song_name") or song.get("name") or song.get("title")
+                    if isinstance(song, dict)
+                    else song
+                )
+                if str(value or "").strip():
+                    return True
     return False
 
 
