@@ -32,6 +32,8 @@ year backfillは既決定groupを出力せず、未判断group内の動画を1�
 
 共通 `source_id=youtube_evidence` のparityは3キュー全体の集合で評価する。year backfillやuser confirmationのsnapshotを単独でsource writerへ渡した場合、既存active行はwriter内で `stale_candidates` に分類され、書き込み自体は成功し得る。一方、3キュー全体の外部parityは不一致になる。3adapter完成後に重複IDを解決したaggregate snapshotを作り、scheduled production入口はaggregate以外を明示的に拒否する。
 
+user confirmationも既決定itemを出力せず、未判断かつ動画URL・対象年・有限optionsが揃うitemだけを同じvideo/year identityへ変換する。部分的な決定状態、未知option/recommendation、動画URLや年の欠落はfail closedする。2026-07-20時点の4件は全て既決定で出力0件。動画URLを持たないgroup型itemが将来pendingへ戻る場合は、元動画URLを補完してから移行する。
+
 ## decision境界
 
 YouTube inboxの選択肢は次の4つだけに固定する。
