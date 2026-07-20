@@ -82,7 +82,67 @@ def youtube_evidence_row(decision="accept", apply_value="add_song_evidence"):
     }
 
 
+def b4_row(kind, source_id, apply_value, payload, decision="accept"):
+    return {
+        "source_id":"review_inbox", "decision":decision, "apply_value":apply_value,
+        "reviewer":"内田さん", "reviewed_at":"2026-07-20T04:00:00+00:00", "note":"確認",
+        "raw":{"inbox_id":f"inbox_{kind}","kind":kind,"title":kind,"source_id":source_id,"source_key":f"key:{kind}","payload":payload},
+    }
+
+
 class ReviewInboxDecisionStageTest(unittest.TestCase):
+    def test_b4_inbox_ui_exposes_kind_specific_finite_actions(self):
+        source = next(source for source in data.SOURCES if source.id == "review_inbox")
+        expected = {
+            "song":"stage_song_candidate", "term":"stage_term_candidate",
+            "song_research":"stage_song_venue_evidence", "venue_candidate":"stage_venue_candidate",
+        }
+        for kind, first in expected.items():
+            options = data.apply_options(source, {"kind":kind})
+            self.assertEqual([option["value"] for option in options], [first,"needs_research","reject","hold"])
+
+    def test_b4_accepts_stage_only_finite_domain_packets(self):
+        rows = [
+            b4_row("song","daily_song_candidate","stage_song_candidate",{"canonical_song_name":"盆ジョビ"}),
+            b4_row("term","daily_term_candidate","stage_term_candidate",{"term":"やぐら"}),
+            b4_row("song_research","daily_term_candidate","stage_song_venue_evidence",{"song_name":"東京音頭","venue":"靖国神社"}),
+            b4_row("venue_candidate","accepted_venue_song_missing_venue","stage_venue_candidate",{"suggested_venue":"日枝神社"}),
+        ]
+        for index, row in enumerate(rows): row["raw"]["inbox_id"] += str(index)
+        stage = build_decision_stage({"rows":rows})
+        self.assertEqual(stage["route_counts"]["domain_stage"], 4)
+        self.assertEqual(
+            [row["domain_stage_type"] for row in stage["by_route"]["domain_stage"]],
+            ["song_candidate","term_candidate","song_venue_evidence","venue_candidate"],
+        )
+        self.assertTrue(all(row["domain_candidate"]["write_mode"] == "staged_only" for row in stage["by_route"]["domain_stage"]))
+
+    def test_b4_accept_fails_closed_on_wrong_action_source_or_identity(self):
+        unsafe = b4_row("song","daily_song_candidate","confirm_current_date",{"canonical_song_name":"曲"})
+        with self.assertRaisesRegex(ValueError,"must use stage_song_candidate"):
+            build_decision_stage({"rows":[unsafe]})
+        wrong_source = b4_row("term","other","stage_term_candidate",{"term":"用語"})
+        with self.assertRaisesRegex(ValueError,"invalid action or source"):
+            build_decision_stage({"rows":[wrong_source]})
+        incomplete = b4_row("song_research","daily_term_candidate","stage_song_venue_evidence",{"song_name":"曲"})
+        with self.assertRaisesRegex(ValueError,"missing required identity"):
+            build_decision_stage({"rows":[incomplete]})
+        no_key = b4_row("term","daily_term_candidate","stage_term_candidate",{"term":"用語"})
+        no_key["raw"]["source_key"] = ""
+        with self.assertRaisesRegex(ValueError,"requires source_key"):
+            build_decision_stage({"rows":[no_key]})
+
+    def test_b4_quality_and_gap_never_emit_domain_packets(self):
+        source = next(source for source in data.SOURCES if source.id == "review_inbox")
+        self.assertEqual([o["value"] for o in data.apply_options(source,{"kind":"publication_gap"})],["needs_research","reject","hold"])
+        quality_options = data.apply_options(source,{"kind":"historical_quality","payload":{"issue_codes":["historical_songs_missing"]}})
+        self.assertTrue(next(o for o in quality_options if o["value"] == "needs_date_research")["disabled"])
+        self.assertFalse(next(o for o in quality_options if o["value"] == "needs_song_research")["disabled"])
+        keep = b4_row("historical_quality","historical_reference_quality","keep_historical_reference",{},decision="accept")
+        stage = build_decision_stage({"rows":[keep]})
+        self.assertEqual(stage["route_counts"]["no_apply"],1)
+        self.assertNotIn("domain_candidate",stage["by_route"]["no_apply"][0])
+
     def test_youtube_inbox_ui_exposes_only_finite_b3_actions(self):
         source = next(source for source in data.SOURCES if source.id == "review_inbox")
         options = data.apply_options(source, {"kind": "youtube_evidence"})
@@ -226,9 +286,11 @@ class ReviewInboxDecisionStageTest(unittest.TestCase):
                     console_row(decision="needs_research", apply_value="needs_research"),
                     console_row(decision="hold", apply_value="hold", inbox_id="inbox_hold"),
                     console_row(
-                        apply_value="publish_song",
+                        apply_value="stage_song_candidate",
                         inbox_id="inbox_song",
                         kind="song",
+                        source_id="daily_song_candidate",
+                        payload={"canonical_song_name": "盆ジョビ"},
                     ),
                 ]
             }

@@ -23,13 +23,18 @@ CHANGE_REQUEST_TYPES = {
     "promote_historical_reference": "add_historical_reference",
     "fill_venue": "update_venue",
 }
-DOMAIN_STAGE_KINDS = {"song", "term", "youtube_evidence", "song_research"}
 ROUTES = ("change_request", "domain_stage", "research_followup", "no_apply")
 UPDATES_FILE = "review_inbox_decision_updates.json"
 RARE_SIGNAL_ACCEPT_ACTION = "stage_registration_candidate"
 RARE_SIGNAL_DOMAIN_STAGE_TYPE = "rare_signal_registration_candidate"
 YOUTUBE_ACCEPT_ACTION = "add_song_evidence"
 YOUTUBE_DOMAIN_STAGE_TYPE = "youtube_song_evidence"
+B4_ACCEPT_ACTIONS = {
+    "song": ("stage_song_candidate", "song_candidate", "daily_song_candidate"),
+    "term": ("stage_term_candidate", "term_candidate", "daily_term_candidate"),
+    "song_research": ("stage_song_venue_evidence", "song_venue_evidence", "daily_term_candidate"),
+    "venue_candidate": ("stage_venue_candidate", "venue_candidate", "accepted_venue_song_missing_venue"),
+}
 URL_RE = re.compile(r"https?://[^\s、，。)）\]}＞>\"']+")
 X_HOSTS = {"x.com", "www.x.com", "twitter.com", "www.twitter.com", "t.co"}
 YOUTUBE_HOSTS = {"youtube.com", "www.youtube.com", "m.youtube.com", "youtu.be"}
@@ -115,10 +120,16 @@ def canonical_route(decision: str, apply_value: str, raw: dict[str, Any]) -> str
         raise ValueError(
             "accepted YouTube evidence decision must stage add_song_evidence"
         )
+    kind = str(raw.get("kind") or "")
+    if kind in B4_ACCEPT_ACTIONS:
+        expected_action, _, _ = B4_ACCEPT_ACTIONS[kind]
+        if apply_value == expected_action:
+            return "domain_stage"
+        raise ValueError(f"accepted {kind} decision must use {expected_action}")
+    if kind == "historical_quality" and apply_value == "keep_historical_reference":
+        return "no_apply"
     if apply_value in CHANGE_REQUEST_TYPES:
         return "change_request"
-    if str(raw.get("kind") or "") in DOMAIN_STAGE_KINDS:
-        return "domain_stage"
     if apply_value in {"fill_source_url", "needs_research"}:
         return "research_followup"
     raise ValueError(
@@ -202,6 +213,34 @@ def stage_row(row: dict[str, Any]) -> dict[str, Any]:
             "event_year": raw.get("event_year"),
             "legacy_action": str(payload.get("action") or ""),
             "title_song_candidates": payload.get("title_song_candidates") or [],
+            "write_mode": "staged_only",
+        }
+    kind = str(raw.get("kind") or "")
+    if kind in B4_ACCEPT_ACTIONS and decision == "accepted":
+        expected_action, stage_type, expected_source = B4_ACCEPT_ACTIONS[kind]
+        if apply_value != expected_action or str(raw.get("source_id") or "") != expected_source:
+            raise ValueError(f"accepted {kind} decision has invalid action or source")
+        payload = raw.get("payload") if isinstance(raw.get("payload"), dict) else {}
+        if not str(raw.get("source_key") or "").strip():
+            raise ValueError(f"accepted {kind} candidate requires source_key")
+        required = {
+            "song": ("canonical_song_name", "term"),
+            "term": ("term",),
+            "song_research": ("song_name", "venue"),
+            "venue_candidate": ("suggested_venue",),
+        }[kind]
+        if kind == "song":
+            if not any(str(payload.get(field) or "").strip() for field in required):
+                raise ValueError("accepted song candidate requires a song name")
+        elif any(not str(payload.get(field) or "").strip() for field in required):
+            raise ValueError(f"accepted {kind} candidate is missing required identity")
+        staged["domain_stage_type"] = stage_type
+        staged["domain_candidate"] = {
+            "source_inbox_id": inbox_id,
+            "source_id": expected_source,
+            "source_key": str(raw.get("source_key") or ""),
+            "kind": kind,
+            "payload": payload,
             "write_mode": "staged_only",
         }
     change_type = CHANGE_REQUEST_TYPES.get(apply_value)
