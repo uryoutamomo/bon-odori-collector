@@ -26,4 +26,6 @@ evidence URL、件数、説明、抽出日時はidentityに含めない。同じ
 
 adapter合格後にconsoleのkind別選択肢とstaging packetを別PRで追加し、その後default-off CAS dual-writeを配線する。legacy writer/readerは連続2回の実スケジュールparityまで維持する。
 
+scheduled dual-writeではsong/termを日次収集のfresh commitから読み、venueとhistorical qualityを同runで再生成してcommitする。publication gapはprivateなsite repositoryとの比較が必要でcollect Actionsから正しく再生成できないため、2026-07-20の確認済み159件snapshotを固定入力として移す。site入力が無い状態でbuilderを動かして偽陽性を増やさない。publication gapの再生成入口は既存ローカルbuilderのまま保持し、site比較を安全に自動化するまでは固定snapshotのparityを監視する。
+
 おと（Codex）

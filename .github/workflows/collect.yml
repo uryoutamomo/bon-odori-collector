@@ -329,3 +329,63 @@ jobs:
           ${{ runner.temp }}/youtube-aggregate-inbox-report.json
         if-no-files-found: warn
         retention-days: 30
+
+    - name: Build and commit low-priority legacy review queues
+      id: low_priority_legacy
+      if: ${{ vars.REVIEW_INBOX_LOW_PRIORITY_DUAL_WRITE_ENABLED == 'true' && vars.MASTER_DB_S3_BUCKET != '' }}
+      run: |
+        python build_missing_venue_review_from_song_associations.py
+        python build_historical_reference_quality_review.py
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add -f data/accepted_venue_song_missing_venue_review.json data/accepted_venue_song_missing_venue_review.md
+        git add -f data/historical_reference_quality_review.json data/historical_reference_quality_review.md
+        python guard_git_large_files.py
+        git diff --cached --quiet || (git commit -m "Update low-priority legacy review queues" && git push)
+        echo "built=true" >> "$GITHUB_OUTPUT"
+
+    - name: Dual-write low-priority queues to review inbox
+      id: low_priority_inbox
+      if: ${{ steps.low_priority_legacy.outputs.built == 'true' }}
+      env:
+        MASTER_DB_S3_BUCKET: ${{ vars.MASTER_DB_S3_BUCKET }}
+        MASTER_DB_S3_PREFIX: ${{ vars.MASTER_DB_S3_PREFIX || 'master-rdb' }}
+        AWS_REGION: ap-northeast-1
+        REVIEW_INBOX_LOW_PRIORITY_SCHEDULED_ENABLED: 'true'
+        REVIEW_INBOX_DUAL_WRITE_MODE: bulk
+        REVIEW_INBOX_CAS_PUBLISH_ENABLED: 'true'
+        REVIEW_INBOX_READER_MODE: legacy
+        REVIEW_INBOX_LEGACY_WRITER_ENABLED: 'true'
+      run: |
+        TODAY="$(TZ=Asia/Tokyo date +%F)"
+        python run_review_inbox_low_priority_scheduled.py \
+          --execute --confirm 'RUN SCHEDULED LOW PRIORITY DUAL WRITE' \
+          --source daily_song_candidate=data/weekly_song_candidates_review.json \
+          --source daily_term_candidate=data/weekly_harvest_review_candidates.json \
+          --source accepted_venue_song_missing_venue=data/accepted_venue_song_missing_venue_review.json \
+          --source historical_reference_quality=data/historical_reference_quality_review.json \
+          --source publication_gap=data/publication_gap_review.json \
+          --evidence-dir "$RUNNER_TEMP/low-priority-inbox" \
+          --observation-id "github-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}" \
+          --public-today "$TODAY"
+        python master_db_s3_artifact.py fetch --overwrite
+        python review_inbox.py --out-json data/review_inbox.json --status pending
+        echo "ran=true" >> "$GITHUB_OUTPUT"
+
+    - name: Commit low-priority inbox projection
+      if: ${{ steps.low_priority_inbox.outputs.ran == 'true' }}
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add -f data/review_inbox.json
+        python guard_git_large_files.py
+        git diff --cached --quiet || (git commit -m "Update low-priority review inbox" && git push)
+
+    - name: Upload low-priority inbox evidence
+      if: ${{ always() && vars.REVIEW_INBOX_LOW_PRIORITY_DUAL_WRITE_ENABLED == 'true' && vars.MASTER_DB_S3_BUCKET != '' }}
+      uses: actions/upload-artifact@v4
+      with:
+        name: low-priority-inbox-${{ github.run_id }}-${{ github.run_attempt }}
+        path: ${{ runner.temp }}/low-priority-inbox
+        if-no-files-found: warn
+        retention-days: 30
