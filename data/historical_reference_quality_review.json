@@ -1,0 +1,2095 @@
+{
+  "generated_by": "build_historical_reference_quality_review.py",
+  "generated_at": "2026-07-20T04:46:56.811110+00:00",
+  "source": "data/public/events_public.json",
+  "summary": {
+    "historical_reference_count": 95,
+    "review_count": 69,
+    "issue_counts": {
+      "historical_songs_missing": 69
+    }
+  },
+  "review": [
+    {
+      "quality_review_id": "hrq_67396907203e86fd",
+      "event_name": "-両国- 江戸NOREN 妖怪BON DANCE",
+      "name": "-両国- 江戸NOREN 妖怪BON DANCE",
+      "venue": "-両国-江戸NOREN",
+      "area": "墨田区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_low",
+      "display_tier": "historical_reference",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-07-13"
+      ],
+      "historical_dates_label": "2025-07-13（日）",
+      "historical_weekdays_label": "日",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-07-13実績・今年未確認",
+      "historical_reference_confidence": "low",
+      "historical_reference_score": 0.46,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_3cf4fcfb99bee7c3",
+      "event_name": "GMOシブヤエンタメ祭 × JAME盆踊り",
+      "name": "GMOシブヤエンタメ祭 × JAME盆踊り",
+      "venue": "宮下公園",
+      "area": "渋谷区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_low",
+      "display_tier": "historical_reference",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-05-31",
+        "2025-06-01"
+      ],
+      "historical_dates_label": "2025-05-31（土）〜2025-06-01（日）",
+      "historical_weekdays_label": "土〜日",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-05-31〜2025-06-01実績・今年未確認",
+      "historical_reference_confidence": "low",
+      "historical_reference_score": 0.46,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_5d6e07fbf674dc36",
+      "event_name": "ゐの市盆踊り～不忍夢～",
+      "name": "ゐの市盆踊り～不忍夢～",
+      "venue": "上野恩賜公園",
+      "area": "台東区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_low",
+      "display_tier": "historical_reference",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-08-09",
+        "2025-08-11"
+      ],
+      "historical_dates_label": "2025-08-09（土）〜2025-08-11（月）",
+      "historical_weekdays_label": "土〜月",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-08-09〜2025-08-11実績・今年未確認",
+      "historical_reference_confidence": "low",
+      "historical_reference_score": 0.51,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_8ee678c4f6ef3c4f",
+      "event_name": "アースデイ東京2025 イマジン盆踊り部",
+      "name": "アースデイ東京2025 イマジン盆踊り部",
+      "venue": "代々木公園野外ステージ",
+      "area": "渋谷区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_low",
+      "display_tier": "historical_reference",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-04-19"
+      ],
+      "historical_dates_label": "2025-04-19（土）",
+      "historical_weekdays_label": "土",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-04-19実績・今年未確認",
+      "historical_reference_confidence": "low",
+      "historical_reference_score": 0.46,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_7d1af9bedb58222c",
+      "event_name": "上北沢盆踊り実行委員会 「上北沢の納涼盆踊り」",
+      "name": "上北沢盆踊り実行委員会 「上北沢の納涼盆踊り」",
+      "venue": "上北沢小学校",
+      "area": "世田谷区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-08-23"
+      ],
+      "historical_dates_label": "2025-08-23（土）",
+      "historical_weekdays_label": "土",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-08-23実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.64,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_4bfa1433f7742d14",
+      "event_name": "下代田東町会 「下代田東子供祭り・納涼祭り」",
+      "name": "下代田東町会 「下代田東子供祭り・納涼祭り」",
+      "venue": "下代田児童遊園",
+      "area": "世田谷区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_reference",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-07-19"
+      ],
+      "historical_dates_label": "2025-07-19（土）",
+      "historical_weekdays_label": "土",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-07-19実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.64,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_762915b0b86aac07",
+      "event_name": "下落合四丁目町会 盆踊り大会",
+      "name": "下落合四丁目町会 盆踊り大会",
+      "venue": "下落合公園",
+      "area": "新宿区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_reference",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-07-19"
+      ],
+      "historical_dates_label": "2025-07-19（土）",
+      "historical_weekdays_label": "土",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-07-19実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.64,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_fa69702ed70fe9c2",
+      "event_name": "下落合町会知久会 第9回盆踊り",
+      "name": "下落合町会知久会 第9回盆踊り",
+      "venue": "清水川橋公園",
+      "area": "新宿区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_reference",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-07-19"
+      ],
+      "historical_dates_label": "2025-07-19（土）",
+      "historical_weekdays_label": "土",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-07-19実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.7,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_161867f684a6c3c0",
+      "event_name": "中目黒盆踊り大会",
+      "name": "中目黒盆踊り大会",
+      "venue": "フナイリバ（目黒川船入場広場）",
+      "area": "目黒区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-08-30"
+      ],
+      "historical_dates_label": "2025-08-30（土）",
+      "historical_weekdays_label": "土",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-08-30実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.6,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_28193c7b0a0f4875",
+      "event_name": "京橋盆踊り",
+      "name": "京橋盆踊り",
+      "venue": "京橋エドグラン 京橋中央ひろば",
+      "area": "中央区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-08-29",
+        "2025-08-30"
+      ],
+      "historical_dates_label": "2025-08-29（金）〜2025-08-30（土）",
+      "historical_weekdays_label": "金〜土",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-08-29〜2025-08-30実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.63,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_c32eec682da51e02",
+      "event_name": "北新宿四丁目 盆踊り大会",
+      "name": "北新宿四丁目 盆踊り大会",
+      "venue": "北柏木公園",
+      "area": "新宿区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-07-25"
+      ],
+      "historical_dates_label": "2025-07-25（金）",
+      "historical_weekdays_label": "金",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-07-25実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.6,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_51223108e64c0353",
+      "event_name": "北糀谷町会 「納涼踊り大会」",
+      "name": "北糀谷町会 「納涼踊り大会」",
+      "venue": "子安八幡神社",
+      "area": "大田区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-07-24"
+      ],
+      "historical_dates_label": "2025-07-24（木）",
+      "historical_weekdays_label": "木",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-07-24実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.68,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_193c5e53c304b0a0",
+      "event_name": "千歳台廻沢地区盆踊り",
+      "name": "千歳台廻沢地区盆踊り",
+      "venue": "廻沢稲荷神社",
+      "area": "世田谷区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_reference",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-07-19"
+      ],
+      "historical_dates_label": "2025-07-19（土）",
+      "historical_weekdays_label": "土",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-07-19実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.6,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_2732d0aca688aeb8",
+      "event_name": "原町一丁目町会 天祖神社例大祭 盆踊り",
+      "name": "原町一丁目町会 天祖神社例大祭 盆踊り",
+      "venue": "原町天祖神社",
+      "area": "新宿区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-09-15"
+      ],
+      "historical_dates_label": "2025-09-15（月）",
+      "historical_weekdays_label": "月",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-09-15実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.68,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_dde0cf58147e76d5",
+      "event_name": "向島一丁目 牛嶋神社 ミニ奉納踊り",
+      "name": "向島一丁目 牛嶋神社 ミニ奉納踊り",
+      "venue": "向島1丁目旧町会会館前",
+      "area": "墨田区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-09-13"
+      ],
+      "historical_dates_label": "2025-09-13（土）",
+      "historical_weekdays_label": "土",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-09-13実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.64,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_17fa1cb32101bd00",
+      "event_name": "品川区民まつり 西大井広場公園 盆踊り",
+      "name": "品川区民まつり 西大井広場公園 盆踊り",
+      "venue": "西大井広場公園",
+      "area": "品川区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-09-27"
+      ],
+      "historical_dates_label": "2025-09-27（土）",
+      "historical_weekdays_label": "土",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-09-27実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.6,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_edfc570930a6cbbb",
+      "event_name": "地域のふれあい第37回盆踊り大会",
+      "name": "地域のふれあい第37回盆踊り大会",
+      "venue": "JR目黒駅西口前",
+      "area": "目黒区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_high",
+      "display_tier": "historical_slide",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-07-27"
+      ],
+      "historical_dates_label": "2025-07-27（日）",
+      "historical_weekdays_label": "日",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-07-27実績・今年未確認",
+      "historical_reference_confidence": "high",
+      "historical_reference_score": 0.78,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_81decddf7591ffc5",
+      "event_name": "坂本町会 納涼祭",
+      "name": "坂本町会 納涼祭",
+      "venue": "さかもと朝顔広場（旧坂本小学校跡地）",
+      "area": "台東区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-08-23"
+      ],
+      "historical_dates_label": "2025-08-23（土）",
+      "historical_weekdays_label": "土",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-08-23実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.64,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_072af5b23fdffb5c",
+      "event_name": "堤方東町会「盆踊り大会」",
+      "name": "堤方東町会「盆踊り大会」",
+      "venue": "池上第二小学校",
+      "area": "大田区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-07-26"
+      ],
+      "historical_dates_label": "2025-07-26（土）",
+      "historical_weekdays_label": "土",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-07-26実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.68,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_ceaf10961241205c",
+      "event_name": "大森南一丁目自治会「納涼盆踊り大会」",
+      "name": "大森南一丁目自治会「納涼盆踊り大会」",
+      "venue": "大森南一丁目公園",
+      "area": "大田区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-07-21"
+      ],
+      "historical_dates_label": "2025-07-21（月）",
+      "historical_weekdays_label": "月",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-07-21実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.68,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_cabd427639c87a82",
+      "event_name": "大蔵本村睦会 「盆踊り大会」",
+      "name": "大蔵本村睦会 「盆踊り大会」",
+      "venue": "大蔵氷川神社",
+      "area": "世田谷区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_reference",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-07-20"
+      ],
+      "historical_dates_label": "2025-07-20（日）",
+      "historical_weekdays_label": "日",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-07-20実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.64,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_f9d6aa4192df816d",
+      "event_name": "大蔵東部町会「親子納涼盆踊り大会」",
+      "name": "大蔵東部町会「親子納涼盆踊り大会」",
+      "venue": "横根稲荷神社",
+      "area": "世田谷区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-07-26"
+      ],
+      "historical_dates_label": "2025-07-26（土）",
+      "historical_weekdays_label": "土",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-07-26実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.72,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_cb90264ae7c094a8",
+      "event_name": "太平一丁目 牛嶋神社 奉納踊り",
+      "name": "太平一丁目 牛嶋神社 奉納踊り",
+      "venue": "報恩寺境内",
+      "area": "墨田区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-09-12"
+      ],
+      "historical_dates_label": "2025-09-12（金）",
+      "historical_weekdays_label": "金",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-09-12実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.64,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_0dfd7d9ef68e4135",
+      "event_name": "奥沢交和会",
+      "name": "奥沢交和会",
+      "venue": "奥沢小学校",
+      "area": "世田谷区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-07-26"
+      ],
+      "historical_dates_label": "2025-07-26（土）",
+      "historical_weekdays_label": "土",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-07-26実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.6,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_f2d96c99ee125ac7",
+      "event_name": "宇奈根町会 盆踊り大会",
+      "name": "宇奈根町会 盆踊り大会",
+      "venue": "宇奈根氷川神社",
+      "area": "世田谷区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_reference",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-07-19"
+      ],
+      "historical_dates_label": "2025-07-19（土）",
+      "historical_weekdays_label": "土",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-07-19実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.68,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_21b8700f94515f1c",
+      "event_name": "岡本自治会「盆踊り大会」",
+      "name": "岡本自治会「盆踊り大会」",
+      "venue": "長円寺",
+      "area": "世田谷区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-08-02"
+      ],
+      "historical_dates_label": "2025-08-02（土）",
+      "historical_weekdays_label": "土",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-08-02実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.68,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_deac566530d45633",
+      "event_name": "市野倉南町会 盆踊り",
+      "name": "市野倉南町会 盆踊り",
+      "venue": "市野倉南児童公園",
+      "area": "大田区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-08-02"
+      ],
+      "historical_dates_label": "2025-08-02（土）",
+      "historical_weekdays_label": "土",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-08-02実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.6,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_2618ab851e2a0906",
+      "event_name": "希望ヶ丘団地夏まつり",
+      "name": "希望ヶ丘団地夏まつり",
+      "venue": "希望ヶ丘団地 テニスコート",
+      "area": "世田谷区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_reference",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-07-19"
+      ],
+      "historical_dates_label": "2025-07-19（土）",
+      "historical_weekdays_label": "土",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-07-19実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.6,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_93d7ead4096f3804",
+      "event_name": "成城学園 盆踊り大会",
+      "name": "成城学園 盆踊り大会",
+      "venue": "成城大学9号館前広場",
+      "area": "世田谷区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-07-26"
+      ],
+      "historical_dates_label": "2025-07-26（土）",
+      "historical_weekdays_label": "土",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-07-26実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.6,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_9239d26b4a5d640f",
+      "event_name": "戸越八幡神社例大祭 奉納盆踊り大会",
+      "name": "戸越八幡神社例大祭 奉納盆踊り大会",
+      "venue": "豊町一丁目会館前",
+      "area": "品川区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-09-13"
+      ],
+      "historical_dates_label": "2025-09-13（土）",
+      "historical_weekdays_label": "土",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-09-13実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.68,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_adad9816124a1ab0",
+      "event_name": "新宿中央公園夏祭り 納涼盆踊り大会",
+      "name": "新宿中央公園夏祭り 納涼盆踊り大会",
+      "venue": "新宿中央公園 ファンモアタイム広場",
+      "area": "新宿区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-08-23",
+        "2025-08-24"
+      ],
+      "historical_dates_label": "2025-08-23（土）〜2025-08-24（日）",
+      "historical_weekdays_label": "土〜日",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-08-23〜2025-08-24実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.72,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_6bd932fc5188850d",
+      "event_name": "新町公民会 盆踊り大会",
+      "name": "新町公民会 盆踊り大会",
+      "venue": "久富稲荷神社",
+      "area": "世田谷区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-08-17"
+      ],
+      "historical_dates_label": "2025-08-17（日）",
+      "historical_weekdays_label": "日",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-08-17実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.64,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_0700d78078951f84",
+      "event_name": "東糀谷四・五・六町会 納涼盆踊り大会",
+      "name": "東糀谷四・五・六町会 納涼盆踊り大会",
+      "venue": "旭児童遊園",
+      "area": "大田区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_reference",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-07-18"
+      ],
+      "historical_dates_label": "2025-07-18（金）",
+      "historical_weekdays_label": "金",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-07-18実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.68,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_04476552c2aa8015",
+      "event_name": "柏木地区6町会盆踊り大会",
+      "name": "柏木地区6町会盆踊り大会",
+      "venue": "北新宿公園",
+      "area": "新宿区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-08-02"
+      ],
+      "historical_dates_label": "2025-08-02（土）",
+      "historical_weekdays_label": "土",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-08-02実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.64,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_68546e5aa76c7350",
+      "event_name": "森ヶ崎自治会",
+      "name": "森ヶ崎自治会",
+      "venue": "大森南4丁目公園",
+      "area": "大田区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-07-29"
+      ],
+      "historical_dates_label": "2025-07-29（火）",
+      "historical_weekdays_label": "火",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-07-29実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.6,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_2e06f3bc497f7062",
+      "event_name": "森下二丁目盆踊り",
+      "name": "森下二丁目盆踊り",
+      "venue": "森下公園",
+      "area": "江東区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_reference",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-07-19",
+        "2025-07-20"
+      ],
+      "historical_dates_label": "2025-07-19（土）〜2025-07-20（日）",
+      "historical_weekdays_label": "土〜日",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-07-19〜2025-07-20実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.6,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_fa4115be65482b4f",
+      "event_name": "法人格砧町自治会「納涼盆踊り大会」",
+      "name": "法人格砧町自治会「納涼盆踊り大会」",
+      "venue": "砧八丁目児童遊園",
+      "area": "世田谷区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-08-01"
+      ],
+      "historical_dates_label": "2025-08-01（金）",
+      "historical_weekdays_label": "金",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-08-01実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.68,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_8f28bc79e0ffc786",
+      "event_name": "瀬田商店会 瀬田納涼盆踊り",
+      "name": "瀬田商店会 瀬田納涼盆踊り",
+      "venue": "瀬田中学校",
+      "area": "世田谷区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-08-16"
+      ],
+      "historical_dates_label": "2025-08-16（土）",
+      "historical_weekdays_label": "土",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-08-16実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.64,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_64d5d28f6b4a29b0",
+      "event_name": "玉川町会盆おどり大会",
+      "name": "玉川町会盆おどり大会",
+      "venue": "二子玉川西地区ふれあい広場(246高架下)",
+      "area": "世田谷区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-07-25"
+      ],
+      "historical_dates_label": "2025-07-25（金）",
+      "historical_weekdays_label": "金",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-07-25実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.6,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_d08d84ed53156612",
+      "event_name": "盆踊り in 駒場東大",
+      "name": "盆踊り in 駒場東大",
+      "venue": "東京大学駒場キャンパス 学生会館東",
+      "area": "目黒区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-11-23"
+      ],
+      "historical_dates_label": "2025-11-23（日）",
+      "historical_weekdays_label": "日",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-11-23実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.56,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_2acdfb42fc2c98e9",
+      "event_name": "盆踊り(池尻地区)",
+      "name": "盆踊り(池尻地区)",
+      "venue": "池尻稲荷神社",
+      "area": "世田谷区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-08-01"
+      ],
+      "historical_dates_label": "2025-08-01（金）",
+      "historical_weekdays_label": "金",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-08-01実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.6,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_6c98f213c4c6c419",
+      "event_name": "石原一丁目 牛嶋神社 奉納踊り",
+      "name": "石原一丁目 牛嶋神社 奉納踊り",
+      "venue": "石一町会会館前",
+      "area": "墨田区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-09-13"
+      ],
+      "historical_dates_label": "2025-09-13（土）",
+      "historical_weekdays_label": "土",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-09-13実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.64,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_cec70d8dc3b2267d",
+      "event_name": "砧小学校「第38回砧っ子夏祭り」",
+      "name": "砧小学校「第38回砧っ子夏祭り」",
+      "venue": "砧小学校",
+      "area": "世田谷区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_high",
+      "display_tier": "historical_reference",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-07-19"
+      ],
+      "historical_dates_label": "2025-07-19（土）",
+      "historical_weekdays_label": "土",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-07-19実績・今年未確認",
+      "historical_reference_confidence": "high",
+      "historical_reference_score": 0.78,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_92a928c1735d5c4a",
+      "event_name": "砧町町会「納涼夏祭り大会」",
+      "name": "砧町町会「納涼夏祭り大会」",
+      "venue": "三峰公園",
+      "area": "世田谷区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_reference",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-07-19"
+      ],
+      "historical_dates_label": "2025-07-19（土）",
+      "historical_weekdays_label": "土",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-07-19実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.68,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_6ccef99d766b9f4e",
+      "event_name": "祖師谷商店街振興組合",
+      "name": "祖師谷商店街振興組合",
+      "venue": "小田急線祖師ヶ谷大蔵駅前広場",
+      "area": "世田谷区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-07-26"
+      ],
+      "historical_dates_label": "2025-07-26（土）",
+      "historical_weekdays_label": "土",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-07-26実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.6,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_b2c016fbd4bac331",
+      "event_name": "第15回 鴨台盆踊り",
+      "name": "第15回 鴨台盆踊り",
+      "venue": "大正大学",
+      "area": "豊島区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "rule_predicted",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-07-04",
+        "2025-07-05"
+      ],
+      "historical_dates_label": "2025-07-04（金）〜2025-07-05（土）",
+      "historical_weekdays_label": "金〜土",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-07-04〜2025-07-05実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.65,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_fd2e31ea4047f390",
+      "event_name": "第51回 神楽坂まつり 盆踊り",
+      "name": "第51回 神楽坂まつり 盆踊り",
+      "venue": "りそな銀行神楽坂支店前",
+      "area": "新宿区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-07-23",
+        "2025-07-24"
+      ],
+      "historical_dates_label": "2025-07-23（水）〜2025-07-24（木）",
+      "historical_weekdays_label": "水〜木",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-07-23〜2025-07-24実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.73,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_5eaa5187e2a1ca15",
+      "event_name": "第6回 渋谷盆踊り",
+      "name": "第6回 渋谷盆踊り",
+      "venue": "SHIBUYA109前〜道玄坂・文化村通り一帯",
+      "area": "渋谷区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-08-02"
+      ],
+      "historical_dates_label": "2025-08-02（土）",
+      "historical_weekdays_label": "土",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-08-02実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.61,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_4e45713f4895bed5",
+      "event_name": "第90回 祐天寺み魂まつり こども盆踊り大会",
+      "name": "第90回 祐天寺み魂まつり こども盆踊り大会",
+      "venue": "祐天寺境内",
+      "area": "目黒区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_high",
+      "display_tier": "historical_reference",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-07-16"
+      ],
+      "historical_dates_label": "2025-07-16（水）",
+      "historical_weekdays_label": "水",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-07-16実績・今年未確認",
+      "historical_reference_confidence": "high",
+      "historical_reference_score": 0.86,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_ade99e60ade9871a",
+      "event_name": "納涼盆踊り大会",
+      "name": "納涼盆踊り大会",
+      "venue": "玉川中町公園",
+      "area": "世田谷区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_reference",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-07-19"
+      ],
+      "historical_dates_label": "2025-07-19（土）",
+      "historical_weekdays_label": "土",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-07-19実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.64,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_de679ea374461a9d",
+      "event_name": "納涼盆踊り大会",
+      "name": "納涼盆踊り大会",
+      "venue": "駒沢緑泉公園",
+      "area": "世田谷区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-08-03"
+      ],
+      "historical_dates_label": "2025-08-03（日）",
+      "historical_weekdays_label": "日",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-08-03実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.64,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_881ba4845fe69112",
+      "event_name": "羽田青年連合会",
+      "name": "羽田青年連合会",
+      "venue": "羽田神社",
+      "area": "大田区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_reference",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-07-13"
+      ],
+      "historical_dates_label": "2025-07-13（日）",
+      "historical_weekdays_label": "日",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-07-13実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.6,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_5e5e2c0901710a71",
+      "event_name": "花園神社 盆踊り",
+      "name": "花園神社 盆踊り",
+      "venue": "花園神社",
+      "area": "新宿区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-08-01",
+        "2025-08-02"
+      ],
+      "historical_dates_label": "2025-08-01（金）〜2025-08-02（土）",
+      "historical_weekdays_label": "金〜土",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-08-01〜2025-08-02実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.55,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_fe3acf1898dd47f5",
+      "event_name": "菊川一丁目町会 菊一お祭り広場・盆踊り大会",
+      "name": "菊川一丁目町会 菊一お祭り広場・盆踊り大会",
+      "venue": "中和小学校",
+      "area": "墨田区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-09-27"
+      ],
+      "historical_dates_label": "2025-09-27（土）",
+      "historical_weekdays_label": "土",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-09-27実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.72,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_fe24ff7347d2ee28",
+      "event_name": "萩中町会・オーベルグランディオ萩中自治会・新宿東町会「盆踊り大会」",
+      "name": "萩中町会・オーベルグランディオ萩中自治会・新宿東町会「盆踊り大会」",
+      "venue": "萩中神社",
+      "area": "大田区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_reference",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-07-11"
+      ],
+      "historical_dates_label": "2025-07-11（金）",
+      "historical_weekdays_label": "金",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-07-11実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.72,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_dce5a5d97a62600f",
+      "event_name": "蒲田魅力向上委員会(蒲田西口商店街振興組合、蒲田西地区自治会連合会) 「蒲田国際フェスティバル2025 -世界が出会う下町フェス」",
+      "name": "蒲田魅力向上委員会(蒲田西口商店街振興組合、蒲田西地区自治会連合会) 「蒲田国際フェスティバル2025 -世界が出会う下町フェス」",
+      "venue": "JR蒲田駅西口駅前広場(駅前会場)",
+      "area": "大田区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_low",
+      "display_tier": "historical_reference",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-09-06"
+      ],
+      "historical_dates_label": "2025-09-06（土）",
+      "historical_weekdays_label": "土",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-09-06実績・今年未確認",
+      "historical_reference_confidence": "low",
+      "historical_reference_score": 0.54,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_1aefd75d83c60108",
+      "event_name": "西糀谷三丁目町会「納涼盆踊り大会」",
+      "name": "西糀谷三丁目町会「納涼盆踊り大会」",
+      "venue": "西糀谷さざんか公園",
+      "area": "大田区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-07-28"
+      ],
+      "historical_dates_label": "2025-07-28（月）",
+      "historical_weekdays_label": "月",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-07-28実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.68,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_3ec32a50e0d6b71e",
+      "event_name": "西糀谷四丁目町会 盆踊り大会",
+      "name": "西糀谷四丁目町会 盆踊り大会",
+      "venue": "西仲天祖神社",
+      "area": "大田区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-07-21"
+      ],
+      "historical_dates_label": "2025-07-21（月）",
+      "historical_weekdays_label": "月",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-07-21実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.68,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_bd79f78bb6260e9c",
+      "event_name": "西綾瀬町会 夏祭り盆踊り大会",
+      "name": "西綾瀬町会 夏祭り盆踊り大会",
+      "venue": "五反野コミュニティ公園",
+      "area": "足立区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_reference",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-06-21"
+      ],
+      "historical_dates_label": "2025-06-21（土）",
+      "historical_weekdays_label": "土",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-06-21実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.67,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_a9d09a1936dbd270",
+      "event_name": "親子盆踊り大会",
+      "name": "親子盆踊り大会",
+      "venue": "八幡小学校",
+      "area": "世田谷区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_reference",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-07-12"
+      ],
+      "historical_dates_label": "2025-07-12（土）",
+      "historical_weekdays_label": "土",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-07-12実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.64,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_5c49065d39b8f66d",
+      "event_name": "謝恩納涼盆踊り大会（青山善光寺）",
+      "name": "謝恩納涼盆踊り大会（青山善光寺）",
+      "venue": "青山善光寺",
+      "area": "港区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "rule_predicted",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-07-27",
+        "2025-07-28"
+      ],
+      "historical_dates_label": "2025-07-27（日）〜2025-07-28（月）",
+      "historical_weekdays_label": "日〜月",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-07-27〜2025-07-28実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.67,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_cff8e39aceef95ad",
+      "event_name": "赤坂浄土寺盆踊り大会",
+      "name": "赤坂浄土寺盆踊り大会",
+      "venue": "浄土寺",
+      "area": "港区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-07-24",
+        "2025-07-25"
+      ],
+      "historical_dates_label": "2025-07-24（木）〜2025-07-25（金）",
+      "historical_weekdays_label": "木〜金",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-07-24〜2025-07-25実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.59,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_1c73ebb6355b8036",
+      "event_name": "都の辰巳深川 臨海ぼんおどり",
+      "name": "都の辰巳深川 臨海ぼんおどり",
+      "venue": "臨海小学校",
+      "area": "江東区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_reference",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-07-19"
+      ],
+      "historical_dates_label": "2025-07-19（土）",
+      "historical_weekdays_label": "土",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-07-19実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.56,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_df56507b46bb05c8",
+      "event_name": "野毛町会 納涼盆踊り大会",
+      "name": "野毛町会 納涼盆踊り大会",
+      "venue": "野毛六所神社",
+      "area": "世田谷区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-07-26"
+      ],
+      "historical_dates_label": "2025-07-26（土）",
+      "historical_weekdays_label": "土",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-07-26実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.72,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_62f90685172b6daf",
+      "event_name": "鎌田協和会 鎌田納涼盆踊り",
+      "name": "鎌田協和会 鎌田納涼盆踊り",
+      "venue": "鎌田天神社",
+      "area": "世田谷区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-07-26"
+      ],
+      "historical_dates_label": "2025-07-26（土）",
+      "historical_weekdays_label": "土",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-07-26実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.64,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_9c8f3e5c5831bc1a",
+      "event_name": "青山熊野神社例大祭 奉納踊り",
+      "name": "青山熊野神社例大祭 奉納踊り",
+      "venue": "青葉公園（港区立）",
+      "area": "港区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-09-26",
+        "2025-09-27"
+      ],
+      "historical_dates_label": "2025-09-26（金）〜2025-09-27（土）",
+      "historical_weekdays_label": "金〜土",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-09-26〜2025-09-27実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.67,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_2f89cd0279931e2e",
+      "event_name": "馬込地区自治会連合会、馬籠商店会連合睦会",
+      "name": "馬込地区自治会連合会、馬籠商店会連合睦会",
+      "venue": "馬込桜並木公園、馬込桜並木通り",
+      "area": "大田区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_reference",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-04-06"
+      ],
+      "historical_dates_label": "2025-04-06（日）",
+      "historical_weekdays_label": "日",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-04-06実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.6,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_e61710a04fd30425",
+      "event_name": "駒澤大学同窓会東京都支部・営友会",
+      "name": "駒澤大学同窓会東京都支部・営友会",
+      "venue": "駒澤大学 駒沢キャンパス",
+      "area": "世田谷区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_slide",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-08-10"
+      ],
+      "historical_dates_label": "2025-08-10（日）",
+      "historical_weekdays_label": "日",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-08-10実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.56,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    },
+    {
+      "quality_review_id": "hrq_b72a91ea7fd9c95d",
+      "event_name": "鶴巻小学校 納涼盆踊り大会＆子ども祭り",
+      "name": "鶴巻小学校 納涼盆踊り大会＆子ども祭り",
+      "venue": "鶴巻小学校",
+      "area": "新宿区",
+      "public_category": "recurring_last_year",
+      "public_status": "expected_medium",
+      "display_tier": "historical_reference",
+      "historical_last_seen_year": 2025,
+      "historical_dates": [
+        "2025-07-12"
+      ],
+      "historical_dates_label": "2025-07-12（土）",
+      "historical_weekdays_label": "土",
+      "song_count": 0,
+      "songs_sample": [],
+      "source_url": "",
+      "historical_reference_label": "2025-07-12実績・今年未確認",
+      "historical_reference_confidence": "medium",
+      "historical_reference_score": 0.68,
+      "issue_codes": [
+        "historical_songs_missing"
+      ],
+      "issue_summary": "曲なし",
+      "next_step": "過去実績の曲候補がないため、YouTube/曲実績側の収集対象に回す。",
+      "priority_score": 6,
+      "priority_label": "P1",
+      "recommended_action": "review_missing_historical_songs"
+    }
+  ]
+}
