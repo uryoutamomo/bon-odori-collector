@@ -28,8 +28,11 @@ ROUTES = ("change_request", "domain_stage", "research_followup", "no_apply")
 UPDATES_FILE = "review_inbox_decision_updates.json"
 RARE_SIGNAL_ACCEPT_ACTION = "stage_registration_candidate"
 RARE_SIGNAL_DOMAIN_STAGE_TYPE = "rare_signal_registration_candidate"
+YOUTUBE_ACCEPT_ACTION = "add_song_evidence"
+YOUTUBE_DOMAIN_STAGE_TYPE = "youtube_song_evidence"
 URL_RE = re.compile(r"https?://[^\s、，。)）\]}＞>\"']+")
 X_HOSTS = {"x.com", "www.x.com", "twitter.com", "www.twitter.com", "t.co"}
+YOUTUBE_HOSTS = {"youtube.com", "www.youtube.com", "m.youtube.com", "youtu.be"}
 RARE_SIGNAL_PROMOTION_TARGETS = {"event", "song", "venue", "existing_evidence"}
 
 
@@ -51,6 +54,25 @@ def is_http_url(value: str) -> bool:
         return parsed.scheme.casefold() in {"http", "https"} and bool(parsed.netloc)
     except ValueError:
         return False
+
+
+def youtube_video_id(value: str) -> str:
+    try:
+        parsed = urlsplit(value)
+    except ValueError:
+        return ""
+    host = (parsed.hostname or "").casefold()
+    if host not in YOUTUBE_HOSTS:
+        return ""
+    if host == "youtu.be":
+        return parsed.path.strip("/").split("/", 1)[0]
+    if parsed.path.startswith("/shorts/"):
+        return parsed.path.split("/shorts/", 1)[1].split("/", 1)[0]
+    for part in parsed.query.split("&"):
+        key, _, value = part.partition("=")
+        if key == "v":
+            return value
+    return ""
 
 
 def nested_values(value: Any, key: str) -> list[Any]:
@@ -86,6 +108,12 @@ def canonical_route(decision: str, apply_value: str, raw: dict[str, Any]) -> str
             return "domain_stage"
         raise ValueError(
             "accepted rare signal decision must stage a registration candidate"
+        )
+    if str(raw.get("kind") or "") == "youtube_evidence":
+        if apply_value == YOUTUBE_ACCEPT_ACTION:
+            return "domain_stage"
+        raise ValueError(
+            "accepted YouTube evidence decision must stage add_song_evidence"
         )
     if apply_value in CHANGE_REQUEST_TYPES:
         return "change_request"
@@ -152,6 +180,28 @@ def stage_row(row: dict[str, Any]) -> dict[str, Any]:
             "venue": str(raw.get("venue") or payload.get("possible_venue") or ""),
             "event_year": raw.get("event_year"),
             "confirmed_source_urls": confirmed_source_urls,
+            "write_mode": "staged_only",
+        }
+    if str(raw.get("kind") or "") == "youtube_evidence" and decision == "accepted":
+        if str(raw.get("source_id") or "") != "youtube_evidence":
+            raise ValueError("accepted YouTube evidence requires youtube_evidence source_id")
+        payload = raw.get("payload") if isinstance(raw.get("payload"), dict) else {}
+        video_id = str(payload.get("video_id") or "").strip()
+        source_url = str(raw.get("source_url") or payload.get("video_url") or "").strip()
+        if not video_id or youtube_video_id(source_url) != video_id:
+            raise ValueError("accepted YouTube evidence requires video_id and source URL")
+        staged["domain_stage_type"] = YOUTUBE_DOMAIN_STAGE_TYPE
+        staged["youtube_evidence"] = {
+            "source_inbox_id": inbox_id,
+            "source_id": str(raw.get("source_id") or ""),
+            "source_key": str(raw.get("source_key") or ""),
+            "video_id": video_id,
+            "video_url": source_url,
+            "event_name": str(raw.get("event_name") or ""),
+            "venue": str(raw.get("venue") or ""),
+            "event_year": raw.get("event_year"),
+            "legacy_action": str(payload.get("action") or ""),
+            "title_song_candidates": payload.get("title_song_candidates") or [],
             "write_mode": "staged_only",
         }
     change_type = CHANGE_REQUEST_TYPES.get(apply_value)
