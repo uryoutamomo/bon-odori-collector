@@ -13,6 +13,11 @@
 ## Claude Code の「こと」との連絡
 
 - ユーザーがメッセージに **「こと」だけ** を入力した場合は、ことからおと宛ての未読メッセージを確認し、読んだメッセージを既読にする。
+- ユーザーがおと・ことの共同作業を依頼したら、以後はユーザーに交互の呼びかけを求めず、依頼を受けた側が MCP の未読確認・返信・次工程を自動的に続ける。
+- このプロジェクトでは、依頼された作業の完了に必要な本番データ更新、reader切替、公開反映、workflow変更、PR Ready化・merge、rollbackを含む通常工程について、内田さんの継続許可があるものとして都度の承認確認を挟まず進める。
+- 継続許可は現在依頼されている作業の完了条件に必要な範囲だけに適用し、無関係な対象・別プロジェクト・目的外の変更へ拡張しない。
+- dry-run、テスト、監査、parity、backup、CAS、相互レビューなど既存の安全手順は省略しない。対象不明、競合、監査・テスト失敗、説明不能な公開差分、予想外の破壊的変更など、実際におかしい状態を検出した場合だけ停止して内田さんへ知らせる。
+- ことが途中で停止・終了・応答不能になった場合も、おとが既存証跡と安全条件を確認し、問題がなければ担当を引き継いで次工程へ進む。ことの独立確認が完了条件上どうしても代替できない場合だけ停止する。
 - おととことの連絡は、MCP `mcp__oto_koto.send_message` を必ず使う。
 - `.agents/messages/oto-koto.md` は `send_message` が自動生成・追記する共有ログであり、派生物として扱う。手作業や `apply_patch` で直接編集しない。
 - `.agents/messages/mcp-messages.jsonl` も MCP の正本データなので、手作業で追記・編集しない。
@@ -48,7 +53,7 @@
 
 - Web公開先（S3/CloudFront）への反映は、細かい修正ごとに都度デプロイしない。
 - 細かい修正は原則として1日1回まとめて反映する。
-- 例外は、内田さんが明示的に「今すぐWebへ反映」「公開へデプロイ」などと依頼した場合だけ。
+- 例外的な即時反映が作業の完了条件に必要な場合も、上記の継続許可と安全条件に従い進める。
 - ローカル修正、公開スナップショット生成、検証までは必要に応じて進めてよいが、S3同期・CloudFront invalidation は上記ルールに従う。
 - このMacには本番S3/CloudFront用のAWS認証を置かない運用。`scripts/deploy_static_site.sh` は `AWS_PROFILE=bon-odori` 前提だが、ローカル直叩きは正規デプロイ経路ではない。
 - 本番デプロイの正規経路は、`bon-odori-collector/data/public/events_public.json` を `bon-odori-site/data/events_public.json` へ同期し、`bon-odori-site` を commit/push して GitHub Actions の `Deploy static site` workflow を実行すること。`/Users/ryotauchida/bon-odori-site-public-snapshot` を手で直しても、Actions 側のビルドで作り直されるため本番反映のソースにはならない。
@@ -58,9 +63,9 @@
 - イベント個別の `apply_*.py` スクリプトは新造しない。直近の開催日確定、過去実績追加、会場修正、曲実績追加は、原則として `apply_change_requests.py` と変更リクエストJSONで処理する。
 - 変更リクエストは自由記述パッチにしない。`confirm_current_year_date` / `add_historical_reference` / `update_venue` / `add_song_evidence` のような有限の変更種別を使い、種別ごとの必須根拠とバリデーションを通す。
 - 今年の開催日確定と過去実績追加は別種別として扱う。`confirm_current_year_date` は公式・主催者・信頼できる当年ソースURLを必須にし、YouTubeなどの過去実績だけで今年の開催確定へ昇格しない。
-- `apply_change_requests.py` は dry-run 既定で使う。実DBへ反映する場合は `--apply --confirm 'APPLY CHANGE REQUESTS'` を必要とし、dry-run → ことレビュー → 内田さん最終GO → apply → こと再検証の順を守る。
+- `apply_change_requests.py` は dry-run 既定で使う。実DBへ反映する場合は `--apply --confirm 'APPLY CHANGE REQUESTS'` を必要とし、dry-run → ことレビュー（または、おとによる代替確認）→ apply → 再検証の順を守る。内田さんへの都度GO確認は不要とする。
 - readiness が自動生成する reviewed JSON は機械検査専用で、人レビュー済みとは扱わず実 apply に使用しない。
-- 実 apply 用の reviewed JSON は、ことのサンプルレビューと内田さんの最終GO後に `scripts/promote_change_requests_for_review.py` を手動実行して生成し、レビュー担当者と承認経緯を記録する。
+- 実 apply 用の reviewed JSON は、ことのサンプルレビュー（または、おとによる代替確認）後に `scripts/promote_change_requests_for_review.py` を手動実行して生成し、レビュー担当者と確認経緯を記録する。
 
 ## YouTubeデータ収集の運用方針
 
