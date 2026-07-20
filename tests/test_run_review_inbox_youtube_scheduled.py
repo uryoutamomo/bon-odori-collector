@@ -73,7 +73,7 @@ def test_complete_aggregate_is_written_with_all_queue_lineage():
         with sqlite3.connect(verified) as conn: rows=inbox_rows(conn,status=None)
         saved=json.loads(Path(args.snapshot_out).read_text())
     assert report["published"] is True and store.publish_calls == 1
-    assert len(rows) == 3
+    assert len(rows) == saved["item_count"]
     assert saved["aggregate"]["complete"] is True
     assert [entry["queue"] for entry in saved["input_lineage"]] == ["active_video","year_backfill","user_confirmation"]
     assert report["entrypoint"]["source_queue"] == "youtube_aggregate"

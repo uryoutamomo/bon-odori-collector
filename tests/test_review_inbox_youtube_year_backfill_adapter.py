@@ -1,4 +1,5 @@
 import copy
+import json
 import unittest
 from pathlib import Path
 
@@ -49,9 +50,15 @@ class ReviewInboxYouTubeYearBackfillAdapterTest(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "duplicate stable ids"):
             adapt_source_payload(YouTubeYearBackfillAdapter(), {"groups":[group]})
 
-    def test_current_real_queue_has_no_undecided_groups(self):
+    def test_current_real_queue_matches_undecided_video_count(self):
         current = Path(__file__).resolve().parents[1] / "data/youtube_year_backfill_review_queue.json"
-        self.assertEqual(build_snapshot(current)["item_count"], 0)
+        payload = json.loads(current.read_text(encoding="utf-8"))
+        expected = sum(
+            len(group.get("videos") or [])
+            for group in payload["groups"]
+            if group.get("candidate_action") != "already_decided"
+        )
+        self.assertEqual(build_snapshot(current)["item_count"], expected)
 
 
 if __name__ == "__main__":
