@@ -4,7 +4,7 @@ Updated: 2026-07-19 JST
 
 署名: おと（Codex）
 
-Status: B2-3b canary shadow upsert verified; B2-3c decision CAS writer implemented default off
+Status: B2-3b canary shadow upsert verified; B2-3c decision CAS writer verified; B2-5 scheduled dual-write wiring default off
 
 ## Scope
 
@@ -94,6 +94,25 @@ event/song/venue/existing evidenceのどのtargetでも、staging後のdomain ap
 6. **B2 cutover**: reader cutover後さらに1実runを監視し、10閉鎖条件後にlegacy UI writer停止を判断。
 
 DynamoDBを収集bufferとして残すかRDBへ寄せるかはB2 cutoverとは別PRで決定し、B2では削除しない。
+
+## B2-5 default-off workflow wiring（2026-07-20）
+
+`collect.yml` は、同じrunで `rare_signal_backcheck_queue.json` を生成できた場合に限り、
+`run_review_inbox_rare_signal_scheduled.py` を呼べる配線を持つ。実行にはrepository variable
+`REVIEW_INBOX_RARE_SIGNAL_DUAL_WRITE_ENABLED=true` が必要で、未設定時はstep自体がskipされる。
+
+有効時もlegacy JSON writer、DynamoDB、reader modeは変更しない。runnerはbulk snapshotを固定し、
+schema v2、source parity、unmapped 0、lifecycle保持、integrity/FK、domain table count、public projectionを
+検査してからCAS publishする。成功後はRendを別fetchし、pendingだけの `data/review_inbox.json` を再投影する。
+証跡snapshot/reportはworkflow artifactとして30日保持する。
+
+通常collect成果のcommit/pushをdual-writeより先に完了させる。これによりCAS conflictやS3一時障害で
+dual-writeがfail closedしても、news・voices・公開JSONなど同日の収集成果を道連れにしない。
+dual-write成功時だけRend由来の `review_inbox.json` を2つ目の限定commitで保存し、失敗はworkflowを赤く保つ。
+
+本PRは配線コードとテストまでで、repository variable設定、workflow実行、merge、本番DB更新、
+reader切替、legacy writer停止、domain/public applyを含まない。最初の2 scheduled observationsは、
+本PRのmerge後に別GOでvariableを有効化して取得する。
 
 ## B2-1 acceptance
 
