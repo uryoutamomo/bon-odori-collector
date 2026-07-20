@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Shared fail-closed gates for manually approved review inbox shadow runs."""
+"""Shared fail-closed gates for review-inbox shadow and cutover runs."""
 
 from __future__ import annotations
 
@@ -56,10 +56,6 @@ def require_explicit_environment(
             f"{run_label} dual-write mode must be explicitly set to {dual_write_mode}"
         )
     flags.require_shadow_run(selection_mode)
-    if flags.reader_mode != "legacy":
-        raise SourceWriterError(f"{run_label} reader must be explicitly set to legacy")
-    if not legacy_writer_enabled:
-        raise SourceWriterError("legacy writer must be explicitly enabled")
     return flags
 
 

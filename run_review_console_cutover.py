@@ -196,12 +196,18 @@ def _prepared_inputs(
     required_check_names = [
         "default_mode_is_legacy",
         "canary_exact_replacement",
-        "non_b1_unchanged",
+        "legacy_reader_excludes_inbox",
         "cutover_introduced_duplicate_item_ids_zero",
     ]
     if reader_mode == "inbox":
         required_check_names.extend(
-            ("full_legacy_b1_removed", "full_b1_exact_replacement")
+            (
+                "full_legacy_b1_removed",
+                "full_b1_exact_replacement",
+                "inbox_reader_excludes_legacy",
+                "inbox_reader_is_single_source",
+                "inbox_reader_includes_complete_export",
+            )
         )
     reader_mode_checks = {
         name: bool(preview["checks"].get(name)) for name in required_check_names

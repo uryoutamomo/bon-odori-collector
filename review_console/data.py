@@ -166,6 +166,7 @@ DIRECT_SOURCE_DECISION_IDS = {"x_candidate_post"}
 REVIEW_CONSOLE_READER_MODE_ENV = "REVIEW_CONSOLE_READER_MODE"
 REVIEW_CONSOLE_READER_MODES = ("legacy", "canary", "inbox")
 DEFAULT_REVIEW_CONSOLE_READER_MODE = "legacy"
+DEFAULT_REVIEW_CONSOLE_CLI_READER_MODE = "inbox"
 B1_LEGACY_TO_INBOX_SOURCE_IDS = {
     "official_source": "official_source",
     "registered_event_investigation": "registered_event_investigation",
@@ -192,19 +193,19 @@ def review_console_reader_mode(value: str | None = None) -> str:
 
 
 def source_enabled_for_reader_mode(source_id: str, mode: str) -> bool:
-    """Select console sources by exact id; neighboring names must remain untouched."""
+    """Route the console to one reader without mixing legacy and inbox rows."""
+    if mode == "legacy":
+        return source_id != "review_inbox"
     if mode == "canary":
         return source_id != "missing_occurrence_venue"
     if mode == "inbox":
-        return source_id not in B1_LEGACY_SOURCE_IDS
-    return True
+        return source_id == "review_inbox"
+    return False
 
 
 def review_inbox_row_enabled_for_reader_mode(row: dict[str, Any], mode: str) -> bool:
-    """Keep non-B1 inbox rows in every mode and admit B1 rows by exact source id."""
+    """Keep rollback, B1 canary, and consolidated readers mutually exclusive."""
     origin_source_id = str(row.get("source_id") or "")
-    if origin_source_id not in B1_INBOX_SOURCE_IDS:
-        return True
     if mode == "canary":
         return origin_source_id == "missing_venue"
     return mode == "inbox"
@@ -2932,6 +2933,13 @@ def build_reader_mode_preview(root: Path = ROOT, decisions_path: Path = DECISION
         ).hexdigest()
         modes[mode] = {
             "total": inventory["totals"]["total"],
+            "active_source_ids": [source["id"] for source in inventory["sources"]],
+            "legacy_item_count": sum(
+                1 for item in inventory["items"] if item["source_id"] != "review_inbox"
+            ),
+            "review_inbox_item_count": sum(
+                1 for item in inventory["items"] if item["source_id"] == "review_inbox"
+            ),
             "duplicate_item_ids": len(item_ids) - len(set(item_ids)),
             "duplicate_item_id_counts": {
                 item_id: count
@@ -2946,6 +2954,7 @@ def build_reader_mode_preview(root: Path = ROOT, decisions_path: Path = DECISION
                 source_id: inventory["review_inbox_source_group_counts"].get(source_id, 0)
                 for source_id in B1_INBOX_SOURCE_IDS
             },
+            "inbox_source_counts": dict(inventory["review_inbox_source_group_counts"]),
             "non_b1_count": len(non_b1_items),
             "non_b1_identity_sha256": non_b1_sha,
         }
@@ -2958,6 +2967,7 @@ def build_reader_mode_preview(root: Path = ROOT, decisions_path: Path = DECISION
         )
     checks = {
         "default_mode_is_legacy": DEFAULT_REVIEW_CONSOLE_READER_MODE == "legacy",
+        "default_cli_mode_is_inbox": DEFAULT_REVIEW_CONSOLE_CLI_READER_MODE == "inbox",
         "canary_exact_replacement": (
             modes["canary"]["legacy_b1_counts"]["missing_occurrence_venue"] == 0
             and modes["canary"]["inbox_b1_counts"]["missing_venue"]
@@ -2969,7 +2979,13 @@ def build_reader_mode_preview(root: Path = ROOT, decisions_path: Path = DECISION
             == modes["legacy"]["legacy_b1_counts"][legacy_source_id]
             for legacy_source_id, inbox_source_id in B1_LEGACY_TO_INBOX_SOURCE_IDS.items()
         ),
-        "non_b1_unchanged": all(value["non_b1_identity_sha256"] == baseline_sha for value in modes.values()),
+        "legacy_reader_excludes_inbox": modes["legacy"]["review_inbox_item_count"] == 0,
+        "inbox_reader_excludes_legacy": modes["inbox"]["legacy_item_count"] == 0,
+        "inbox_reader_is_single_source": modes["inbox"]["active_source_ids"] == ["review_inbox"],
+        "inbox_reader_includes_complete_export": (
+            modes["inbox"]["review_inbox_item_count"]
+            == sum(modes["inbox"]["inbox_source_counts"].values())
+        ),
         # Existing non-B1 duplicates are a separate data-quality concern. The
         # cutover fails only if canary/inbox adds duplicate identities relative
         # to the unchanged legacy baseline.

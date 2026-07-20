@@ -121,6 +121,38 @@ class ReviewInboxSourceWriterTest(unittest.TestCase):
     def enabled_flags(self, mode="canary"):
         return SourceWriterFlags(dual_write_mode=mode, cas_publish_enabled=True)
 
+    def test_bulk_accepts_only_atomic_reader_writer_pairs(self):
+        SourceWriterFlags(
+            dual_write_mode="bulk",
+            cas_publish_enabled=True,
+            reader_mode="legacy",
+            legacy_writer_enabled=True,
+        ).require_shadow_run("all")
+        SourceWriterFlags(
+            dual_write_mode="bulk",
+            cas_publish_enabled=True,
+            reader_mode="inbox",
+            legacy_writer_enabled=False,
+        ).require_shadow_run("all")
+        for reader_mode, legacy_writer_enabled in (("legacy", False), ("inbox", True)):
+            with self.subTest(reader_mode=reader_mode, legacy_writer_enabled=legacy_writer_enabled):
+                with self.assertRaisesRegex(SourceWriterError, "must be paired"):
+                    SourceWriterFlags(
+                        dual_write_mode="bulk",
+                        cas_publish_enabled=True,
+                        reader_mode=reader_mode,
+                        legacy_writer_enabled=legacy_writer_enabled,
+                    ).require_shadow_run("all")
+
+    def test_canary_rejects_cutover_reader_writer_pair(self):
+        with self.assertRaisesRegex(SourceWriterError, "canary writes require"):
+            SourceWriterFlags(
+                dual_write_mode="canary",
+                cas_publish_enabled=True,
+                reader_mode="inbox",
+                legacy_writer_enabled=False,
+            ).require_shadow_run("canary")
+
     def test_default_off_refuses_before_touching_artifact_store(self):
         with tempfile.TemporaryDirectory() as tmp:
             db = Path(tmp) / "master.sqlite"

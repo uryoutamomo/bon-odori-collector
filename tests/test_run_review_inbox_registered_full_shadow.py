@@ -150,7 +150,7 @@ class RunReviewInboxRegisteredFullShadowTest(unittest.TestCase):
                 (
                     {},
                     {**ENABLED_ENV, "REVIEW_INBOX_LEGACY_WRITER_ENABLED": "false"},
-                    "legacy writer",
+                    "reader/writer flags",
                 ),
             )
             for overrides, environ, message in cases:

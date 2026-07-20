@@ -21,7 +21,7 @@ def main() -> None:
     parser.add_argument(
         "--reader-mode",
         choices=data.REVIEW_CONSOLE_READER_MODES,
-        help="select the local console B1 reader; default is REVIEW_CONSOLE_READER_MODE or legacy",
+        help="select the console reader; default is REVIEW_CONSOLE_READER_MODE or inbox",
     )
     parser.add_argument(
         "--preview-reader-modes",
@@ -32,6 +32,8 @@ def main() -> None:
 
     if args.reader_mode:
         os.environ[data.REVIEW_CONSOLE_READER_MODE_ENV] = args.reader_mode
+    elif data.REVIEW_CONSOLE_READER_MODE_ENV not in os.environ:
+        os.environ[data.REVIEW_CONSOLE_READER_MODE_ENV] = data.DEFAULT_REVIEW_CONSOLE_CLI_READER_MODE
     data.review_console_reader_mode()
 
     if args.preview_reader_modes:

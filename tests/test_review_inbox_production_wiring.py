@@ -149,19 +149,20 @@ class ReviewInboxProductionWiringTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             db = Path(tmp) / "master.sqlite"
             make_master(db)
-            before = wiring.public_projection_digest(db, today="2026-07-18")
-            with closing(sqlite3.connect(db)) as conn:
-                upsert_inbox_items(
-                    conn,
-                    [{
-                        "kind": "occurrence_creation",
-                        "title": "canary",
-                        "source_id": "fixture",
-                        "source_key": "one",
-                    }],
-                )
-                conn.commit()
-            after = wiring.public_projection_digest(db, today="2026-07-18")
+            with mock.patch("export_public_events.load_public_date_predictions_for_export", return_value={}):
+                before = wiring.public_projection_digest(db, today="2026-07-18")
+                with closing(sqlite3.connect(db)) as conn:
+                    upsert_inbox_items(
+                        conn,
+                        [{
+                            "kind": "occurrence_creation",
+                            "title": "canary",
+                            "source_id": "fixture",
+                            "source_key": "one",
+                        }],
+                    )
+                    conn.commit()
+                after = wiring.public_projection_digest(db, today="2026-07-18")
 
         self.assertEqual(before, after)
         self.assertEqual(len(before), 64)

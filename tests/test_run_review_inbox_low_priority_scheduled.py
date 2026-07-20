@@ -11,6 +11,7 @@ from run_review_inbox_low_priority_scheduled import CONFIRM, run_scheduled
 
 JST=ZoneInfo("Asia/Tokyo")
 ENV={"REVIEW_INBOX_LOW_PRIORITY_SCHEDULED_ENABLED":"true","REVIEW_INBOX_DUAL_WRITE_MODE":"bulk","REVIEW_INBOX_CAS_PUBLISH_ENABLED":"true","REVIEW_INBOX_READER_MODE":"legacy","REVIEW_INBOX_LEGACY_WRITER_ENABLED":"true"}
+CUTOVER_ENV={**ENV,"REVIEW_INBOX_READER_MODE":"inbox","REVIEW_INBOX_LEGACY_WRITER_ENABLED":"false"}
 
 class Store:
     def __init__(self,path): self.data=Path(path).read_bytes(); self.snapshot_id="R1"; self.calls=0
@@ -50,6 +51,15 @@ def test_default_off_and_incomplete_source_set_stop_before_store():
         args=setup(tmp)
         with pytest.raises(SourceWriterError,match="execution is off"): run_scheduled(Namespace(**{**vars(args),"execute":False,"confirm":""}),environ={},store_factory=lambda _:pytest.fail("store"))
         with pytest.raises(SourceWriterError,match="requires all B4 sources"): run_scheduled(Namespace(**{**vars(args),"source":args.source[:-1]}),environ=ENV,store_factory=lambda _:pytest.fail("store"))
+
+def test_cutover_pair_is_recorded_in_every_source_report():
+    with tempfile.TemporaryDirectory() as tmp:
+        args=setup(tmp); db=Path(tmp)/"db.sqlite"; conn=init_db(db); conn.commit(); conn.close(); store=Store(db)
+        run_scheduled(args,environ=CUTOVER_ENV,now=datetime(2026,7,20,15,13,tzinfo=JST),store_factory=lambda _:store,digest_function=digest)
+        entrypoints=[json.loads(path.read_text())["entrypoint"] for path in Path(args.evidence_dir).glob("*-report.json")]
+    assert len(entrypoints) == 5
+    assert all(value["reader_mode"] == "inbox" for value in entrypoints)
+    assert all(value["legacy_writer_retained"] is False for value in entrypoints)
 
 def test_malformed_later_source_stops_before_remote_artifact_access():
     with tempfile.TemporaryDirectory() as tmp:

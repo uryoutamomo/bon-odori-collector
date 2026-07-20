@@ -15,7 +15,6 @@ import json
 import os
 import re
 import sqlite3
-import warnings
 import unicodedata
 import urllib.error
 import urllib.request
@@ -1243,8 +1242,7 @@ def load_rdb_public_date_predictions(db_path=MASTER_DB, target_year=2026):
 
 
 def merge_prediction_payloads(primary, fallback):
-    if not primary:
-        return fallback or {}
+    primary = primary or {}
     fallback = fallback or {}
     merged = dict(primary)
     predictions = list(primary.get("predictions") or [])
@@ -1266,7 +1264,7 @@ def merge_prediction_payloads(primary, fallback):
     return merged
 
 
-def warn_on_prediction_json_fallback(payload):
+def require_no_prediction_json_fallback(payload):
     summary = payload.get("summary") or {}
     fallback_count = int(summary.get("json_fallback_count") or 0)
     if fallback_count:
@@ -1274,10 +1272,8 @@ def warn_on_prediction_json_fallback(payload):
             row.get("event_name") or "(unknown)"
             for row in summary.get("json_fallback") or []
         )
-        warnings.warn(
-            f"public date prediction JSON fallback is still active for {fallback_count} event(s): {fallback_names}",
-            RuntimeWarning,
-            stacklevel=2,
+        raise RuntimeError(
+            f"public date prediction JSON fallback is forbidden for {fallback_count} event(s): {fallback_names}"
         )
     return payload
 
@@ -1285,7 +1281,7 @@ def warn_on_prediction_json_fallback(payload):
 def load_public_date_predictions_for_export(target_year=2026, db_path=MASTER_DB):
     rdb_payload = load_rdb_public_date_predictions(db_path, target_year=target_year)
     json_payload = load_public_date_prediction_json(DATE_PREDICTIONS, {})
-    return warn_on_prediction_json_fallback(merge_prediction_payloads(rdb_payload, json_payload))
+    return require_no_prediction_json_fallback(merge_prediction_payloads(rdb_payload, json_payload))
 
 
 def _override_matches(event, match):

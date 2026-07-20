@@ -10,7 +10,7 @@ from review_console import data, server
 
 
 class ReviewConsoleTests(unittest.TestCase):
-    def test_b1_reader_modes_use_exact_source_ids_and_preserve_neighbors(self):
+    def test_reader_modes_do_not_mix_legacy_and_inbox_sources(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
             (root / "data").mkdir()
@@ -65,20 +65,30 @@ class ReviewConsoleTests(unittest.TestCase):
             self.assertEqual(inventories["canary"]["review_inbox_source_group_counts"]["missing_venue"], 1)
             self.assertNotIn("official_source", inventories["canary"]["review_inbox_source_group_counts"])
 
-            for mode, inventory in inventories.items():
-                source_ids = [item["source_id"] for item in inventory["items"]]
+            for mode in ("legacy", "canary"):
+                source_ids = [item["source_id"] for item in inventories[mode]["items"]]
                 self.assertIn("accepted_venue_song_missing_venue", source_ids, mode)
                 self.assertIn("historical_reference_quality", source_ids, mode)
-                self.assertEqual(
-                    inventory["review_inbox_source_group_counts"]["accepted_venue_song_missing_venue"],
-                    1,
-                    mode,
+                self.assertNotIn(
+                    "accepted_venue_song_missing_venue",
+                    inventories[mode]["review_inbox_source_group_counts"],
                 )
-                self.assertEqual(
-                    inventory["review_inbox_source_group_counts"]["historical_reference_quality"],
-                    1,
-                    mode,
-                )
+
+            inbox_source_ids = [item["source_id"] for item in inventories["inbox"]["items"]]
+            self.assertNotIn("accepted_venue_song_missing_venue", inbox_source_ids)
+            self.assertNotIn("historical_reference_quality", inbox_source_ids)
+            self.assertEqual(
+                inventories["inbox"]["review_inbox_source_group_counts"][
+                    "accepted_venue_song_missing_venue"
+                ],
+                1,
+            )
+            self.assertEqual(
+                inventories["inbox"]["review_inbox_source_group_counts"][
+                    "historical_reference_quality"
+                ],
+                1,
+            )
 
             self.assertTrue(
                 all(
@@ -174,7 +184,11 @@ class ReviewConsoleTests(unittest.TestCase):
                 encoding="utf-8",
             )
 
-            inventory = data.load_inventory(root=root, decisions_path=root / "data/review_console/decisions.json")
+            inventory = data.load_inventory(
+                root=root,
+                decisions_path=root / "data/review_console/decisions.json",
+                reader_mode="inbox",
+            )
             item = next(item for item in inventory["items"] if item["source_id"] == "review_inbox")
 
         self.assertEqual(item["title"], "A盆踊り 2026日程確認")
