@@ -1,8 +1,8 @@
 {
   "generated_by": "build_event_song_candidates.py",
-  "count": 1027,
+  "count": 1029,
   "public_event_count": 348,
-  "review_count": 679,
+  "review_count": 681,
   "candidates": [
     {
       "id": "9870f5a616f1a007",
@@ -4962,7 +4962,7 @@
       "evidence_count": 2
     },
     {
-      "id": "16224652a19d9498",
+      "id": "2d264187ce15f9f5",
       "song_name": "ダンシングヒーロー",
       "event_name": "盆踊り大会",
       "venue": "木場二丁目公園",
@@ -4973,6 +4973,18 @@
         "known_song_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/luckynosu/status/2078875180311687171",
+          "date": "2026-07-19T16:10:41+00:00",
+          "text": "Nosu （らきのす）\n【晴海ふ頭公園盆踊り大会 2026】「ダンシングヒーロー」荻野目洋子で盆踊り #盆踊り 晴海フラッグ https://t.co/nmxVKu7ewL @YouTubeより"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://x.com/SiVps4J3XrbQi2P/status/2078851548646686723",
+          "date": "2026-07-19T14:36:47+00:00",
+          "text": "たん🪩\nこんな楽しそうなことしてるんだ草\n\n【晴海ふ頭公園盆踊り大会 2026】「ダンシングヒーロー」#荻野目洋子 で盆踊り #盆踊り 晴海フラッグ https://t.co/S7clsS7dYU"
+        },
         {
           "source": "x_voice",
           "url": "https://x.com/MashiWangan/status/2076655471247921262",
@@ -5173,10 +5185,10 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 33
+      "evidence_count": 35
     },
     {
-      "id": "fadbe9c7c0167371",
+      "id": "6f209e9a45da7de9",
       "song_name": "ドラえもん音頭",
       "event_name": "盆踊り大会",
       "venue": "木場二丁目公園",
@@ -5188,6 +5200,12 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=kC-Gkb7SuP4",
+          "date": "2026-07-19T09:00:01+00:00",
+          "text": "和太鼓お祭りCH\nドラえもん音頭　「第46回巣鴨盆踊り大会」14　2026年7月18日　巣鴨駅前南口ロータリー盆踊り　巣一商店会\n2026年7月18日、豊島区の巣鴨駅前南口ロータリーにて開催された「第46回巣鴨盆踊り大会」の様子です。\n\n巣一商店会主催のもと、\n駅前の活気ある雰囲気の中で踊られる盆踊りをお届けします。\n地元の方々や観光客が一体となって盛り上がる、\n夏の巣鴨ならではの熱気をお楽しみください！\n\n和太鼓の響きとともに、日本の夏の情緒を感じていただければ幸いです。\n\n#巣鴨 #盆踊り #巣鴨花咲き音頭 #巣一商店会 #夏祭り #和太鼓 #東京の祭り #巣鴨駅前\n\n\n巣鴨駅前盆踊り\n１巣鴨花咲音頭　https://youtu.be/9dqKwAudGS4\n２きよしのドドンパ　https://youtu.be/wq9yyUc_IXY\n３バハマママ　https://youtu.be/TArlwnMgoPM\n４恋するフォーチュ"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=MubC1gFS8NQ",
@@ -5304,7 +5322,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 19
+      "evidence_count": 20
     },
     {
       "id": "4aa77b71f7f8fe47",
@@ -5329,7 +5347,30 @@
       "evidence_count": 1
     },
     {
-      "id": "8e21a0ec59714923",
+      "id": "d775068dcc796157",
+      "song_name": "一緒に踊り",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "中",
+      "reasons": [
+        "song_suffix_in_context",
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/ALLOUT_smile/status/2078830954832175459",
+          "date": "2026-07-19T13:14:57+00:00",
+          "text": "筋肉紳士集団ALLOUT\n【筋肉盆踊り】  \n8/2(日)中野セントラルパークにて開催される、中野駅前盆踊り大会に今年も「筋肉盆踊り」で出演します！『盆踊り』と『エクササイズ』が融合した老若男女誰でも踊れる演目ですので、一緒に踊りましょう💪\n\n#筋肉盆踊り \n#ナカボン2026 https://t.co/ZMV4K5HJ6o"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "6048db12150917dd",
       "song_name": "大東京音頭",
       "event_name": "盆踊り大会",
       "venue": "木場二丁目公園",
@@ -5341,6 +5382,18 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=4RfCTQS0pmU",
+          "date": "2026-07-19T10:30:14+00:00",
+          "text": "和太鼓お祭りCH\n【純烈魂】（純烈）　大國魂神社「府中納涼大盆踊り大会」34　2026年7月4日\n2026年7月4日に大國魂神社で開催された「府中納涼大盆踊り大会」の様子です。\n 歴史ある大國魂神社の境内に響き渡る太鼓の音と、情緒あふれる盆踊りの活気をお楽しみください。\n\n\n今後も各地のお祭りや盆踊りの動画をアップロードしていきます。\n よろしければチャンネル登録・高評価をお願いします！\n\n#盆踊り #大國魂神社 #府中納涼大盆踊り大会 #府中小唄 #夏祭り #和太鼓\n\n\n大國魂神社盆踊り\n１府中小唄　https://youtu.be/t6BoX9FFcGQ\n２大東京音頭　https://youtu.be/R67NzDj5t2w\n３純烈魂　https://youtu.be/hBhXa-EhPvw\n４バハマ・ママ　https://youtu.be/VfkV8713uHQ\n５アンパンマン音頭　https://youtu.be/t6B"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=qHZrIiCNs4Q",
+          "date": "2026-07-19T10:00:18+00:00",
+          "text": "和太鼓お祭りCH\n【大東京音頭】（金沢明子橋幸夫）　大國魂神社「府中納涼大盆踊り大会」33　2026年7月4日\n2026年7月4日に大國魂神社で開催された「府中納涼大盆踊り大会」の様子です。\n 歴史ある大國魂神社の境内に響き渡る太鼓の音と、情緒あふれる盆踊りの活気をお楽しみください。\n\n\n今後も各地のお祭りや盆踊りの動画をアップロードしていきます。\n よろしければチャンネル登録・高評価をお願いします！\n\n#盆踊り #大國魂神社 #府中納涼大盆踊り大会 #府中小唄 #夏祭り #和太鼓\n\n\n大國魂神社盆踊り\n１府中小唄　https://youtu.be/t6BoX9FFcGQ\n２大東京音頭　https://youtu.be/R67NzDj5t2w\n３純烈魂　https://youtu.be/hBhXa-EhPvw\n４バハマ・ママ　https://youtu.be/VfkV8713uHQ\n５アンパンマン音頭　https://youtu"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=gtTCpFxntDc",
@@ -5907,7 +5960,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 94
+      "evidence_count": 96
     },
     {
       "id": "28c482a477ffc561",
@@ -5951,7 +6004,7 @@
       "evidence_count": 4
     },
     {
-      "id": "02768a181f98fac6",
+      "id": "efc2a327d03513ab",
       "song_name": "東京音頭",
       "event_name": "盆踊り大会",
       "venue": "木場二丁目公園",
@@ -5963,6 +6016,18 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=rhXPFP67n8I",
+          "date": "2026-07-20T00:00:10+00:00",
+          "text": "和太鼓お祭りCH\n東京音頭　「第46回巣鴨盆踊り大会」18　2026年7月18日　巣鴨駅前南口ロータリー盆踊り　巣一商店会\n2026年7月18日、豊島区の巣鴨駅前南口ロータリーにて開催された「第46回巣鴨盆踊り大会」の様子です。\n\n巣一商店会主催のもと、\n駅前の活気ある雰囲気の中で踊られる盆踊りをお届けします。\n地元の方々や観光客が一体となって盛り上がる、\n夏の巣鴨ならではの熱気をお楽しみください！\n\n和太鼓の響きとともに、日本の夏の情緒を感じていただければ幸いです。\n\n#巣鴨 #盆踊り #巣鴨花咲き音頭 #巣一商店会 #夏祭り #和太鼓 #東京の祭り #巣鴨駅前\n\n\n巣鴨駅前盆踊り\n１巣鴨花咲音頭　https://youtu.be/9dqKwAudGS4\n２きよしのドドンパ　https://youtu.be/wq9yyUc_IXY\n３バハマママ　https://youtu.be/TArlwnMgoPM\n４恋するフォーチュンクッ"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://x.com/oson_kimono/status/2078869883195109433",
+          "date": "2026-07-19T15:49:38+00:00",
+          "text": "おそん\n巣鴨盆踊り大会🏮3日目\n練習会で声をかけて頂き、初めて櫓で踊りました💕\n大江戸東京音頭と押せ押せ音頭🎶\nとっっっっても楽しかったです！\n\nすごく良い思い出になりました✨✨\n動画は妹が撮ってくれました♡ https://t.co/VFrnQ4dWTg"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=pTBzwPrLGiU",
@@ -7039,7 +7104,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 179
+      "evidence_count": 181
     },
     {
       "id": "e6ad694b32fea9d3",
@@ -23040,6 +23105,28 @@
       "evidence_count": 1
     },
     {
+      "id": "b622ecc18da2e201",
+      "song_name": "大江戸ふるさと亀有音頭",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/FFleurs/status/2078841488554004764",
+          "date": "2026-07-19T13:56:48+00:00",
+          "text": "Fleur de Fleurs\n亀有中央町会・亀有三和町会納涼盆踊り大会、@ゆうろーど\n3日目は中央町さんの仕切り\nお隣のゆうろーどでも盆踊りが開催中なので初日に比べると空いていて踊りやすかった！\n大江戸ふるさと亀有音頭の時に先生のすぐそばのポジションを確保できてラッキー♪ https://t.co/7MWNDXdjHT"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
       "id": "0adc1f3788b6abd9",
       "song_name": "大江戸東京音頭",
       "event_name": "盆踊り大会",
@@ -23208,7 +23295,7 @@
       "evidence_count": 7
     },
     {
-      "id": "53cab0e0aa06767c",
+      "id": "ac94c4c77d1e0c9f",
       "song_name": "少年八木節",
       "event_name": "盆踊り大会",
       "venue": "木場二丁目公園",
@@ -23219,6 +23306,12 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=A_tgE826lyY",
+          "date": "2026-07-19T11:30:23+00:00",
+          "text": "和太鼓お祭りCH\n【少年八木節】　「第46回巣鴨盆踊り大会」17　2026年7月18日　巣鴨駅前南口ロータリー盆踊り　巣一商店会\n2026年7月18日、豊島区の巣鴨駅前南口ロータリーにて開催された「第46回巣鴨盆踊り大会」の様子です。\n\n巣一商店会主催のもと、\n駅前の活気ある雰囲気の中で踊られる盆踊りをお届けします。\n地元の方々や観光客が一体となって盛り上がる、\n夏の巣鴨ならではの熱気をお楽しみください！\n\n和太鼓の響きとともに、日本の夏の情緒を感じていただければ幸いです。\n\n#巣鴨 #盆踊り #巣鴨花咲き音頭 #巣一商店会 #夏祭り #和太鼓 #東京の祭り #巣鴨駅前\n\n\n巣鴨駅前盆踊り\n１巣鴨花咲音頭　https://youtu.be/9dqKwAudGS4\n２きよしのドドンパ　https://youtu.be/wq9yyUc_IXY\n３バハマママ　https://youtu.be/TArlwnMgoPM\n４恋するフォーチュ"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=Uu5-AaTnToc",
@@ -23335,7 +23428,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 19
+      "evidence_count": 20
     },
     {
       "id": "776d383b8186bcff",
@@ -23388,7 +23481,7 @@
       "evidence_count": 1
     },
     {
-      "id": "090c5b789b5b2342",
+      "id": "db2c9c8c63c2d5e2",
       "song_name": "巣鴨花咲き音頭",
       "event_name": "盆踊り大会",
       "venue": "木場二丁目公園",
@@ -23399,6 +23492,36 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=rhXPFP67n8I",
+          "date": "2026-07-20T00:00:10+00:00",
+          "text": "和太鼓お祭りCH\n東京音頭　「第46回巣鴨盆踊り大会」18　2026年7月18日　巣鴨駅前南口ロータリー盆踊り　巣一商店会\n2026年7月18日、豊島区の巣鴨駅前南口ロータリーにて開催された「第46回巣鴨盆踊り大会」の様子です。\n\n巣一商店会主催のもと、\n駅前の活気ある雰囲気の中で踊られる盆踊りをお届けします。\n地元の方々や観光客が一体となって盛り上がる、\n夏の巣鴨ならではの熱気をお楽しみください！\n\n和太鼓の響きとともに、日本の夏の情緒を感じていただければ幸いです。\n\n#巣鴨 #盆踊り #巣鴨花咲き音頭 #巣一商店会 #夏祭り #和太鼓 #東京の祭り #巣鴨駅前\n\n\n巣鴨駅前盆踊り\n１巣鴨花咲音頭　https://youtu.be/9dqKwAudGS4\n２きよしのドドンパ　https://youtu.be/wq9yyUc_IXY\n３バハマママ　https://youtu.be/TArlwnMgoPM\n４恋するフォーチュンクッ"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=A_tgE826lyY",
+          "date": "2026-07-19T11:30:23+00:00",
+          "text": "和太鼓お祭りCH\n【少年八木節】　「第46回巣鴨盆踊り大会」17　2026年7月18日　巣鴨駅前南口ロータリー盆踊り　巣一商店会\n2026年7月18日、豊島区の巣鴨駅前南口ロータリーにて開催された「第46回巣鴨盆踊り大会」の様子です。\n\n巣一商店会主催のもと、\n駅前の活気ある雰囲気の中で踊られる盆踊りをお届けします。\n地元の方々や観光客が一体となって盛り上がる、\n夏の巣鴨ならではの熱気をお楽しみください！\n\n和太鼓の響きとともに、日本の夏の情緒を感じていただければ幸いです。\n\n#巣鴨 #盆踊り #巣鴨花咲き音頭 #巣一商店会 #夏祭り #和太鼓 #東京の祭り #巣鴨駅前\n\n\n巣鴨駅前盆踊り\n１巣鴨花咲音頭　https://youtu.be/9dqKwAudGS4\n２きよしのドドンパ　https://youtu.be/wq9yyUc_IXY\n３バハマママ　https://youtu.be/TArlwnMgoPM\n４恋するフォーチュ"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=DhY0dubHIXk",
+          "date": "2026-07-19T11:00:15+00:00",
+          "text": "和太鼓お祭りCH\n炭坑節　「第46回巣鴨盆踊り大会」16　2026年7月18日　巣鴨駅前南口ロータリー盆踊り　巣一商店会\n2026年7月18日、豊島区の巣鴨駅前南口ロータリーにて開催された「第46回巣鴨盆踊り大会」の様子です。\n\n巣一商店会主催のもと、\n駅前の活気ある雰囲気の中で踊られる盆踊りをお届けします。\n地元の方々や観光客が一体となって盛り上がる、\n夏の巣鴨ならではの熱気をお楽しみください！\n\n和太鼓の響きとともに、日本の夏の情緒を感じていただければ幸いです。\n\n#巣鴨 #盆踊り #巣鴨花咲き音頭 #巣一商店会 #夏祭り #和太鼓 #東京の祭り #巣鴨駅前\n\n\n巣鴨駅前盆踊り\n１巣鴨花咲音頭　https://youtu.be/9dqKwAudGS4\n２きよしのドドンパ　https://youtu.be/wq9yyUc_IXY\n３バハマママ　https://youtu.be/TArlwnMgoPM\n４恋するフォーチュンクッキ"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=KxcKYnoe3SY",
+          "date": "2026-07-19T09:30:23+00:00",
+          "text": "和太鼓お祭りCH\n押せ押せ音頭　「第46回巣鴨盆踊り大会」15　2026年7月18日　巣鴨駅前南口ロータリー盆踊り　巣一商店会\n2026年7月18日、豊島区の巣鴨駅前南口ロータリーにて開催された「第46回巣鴨盆踊り大会」の様子です。\n\n巣一商店会主催のもと、\n駅前の活気ある雰囲気の中で踊られる盆踊りをお届けします。\n地元の方々や観光客が一体となって盛り上がる、\n夏の巣鴨ならではの熱気をお楽しみください！\n\n和太鼓の響きとともに、日本の夏の情緒を感じていただければ幸いです。\n\n#巣鴨 #盆踊り #巣鴨花咲き音頭 #巣一商店会 #夏祭り #和太鼓 #東京の祭り #巣鴨駅前\n\n\n巣鴨駅前盆踊り\n１巣鴨花咲音頭　https://youtu.be/9dqKwAudGS4\n２きよしのドドンパ　https://youtu.be/wq9yyUc_IXY\n３バハマママ　https://youtu.be/TArlwnMgoPM\n４恋するフォーチュン"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=kC-Gkb7SuP4",
+          "date": "2026-07-19T09:00:01+00:00",
+          "text": "和太鼓お祭りCH\nドラえもん音頭　「第46回巣鴨盆踊り大会」14　2026年7月18日　巣鴨駅前南口ロータリー盆踊り　巣一商店会\n2026年7月18日、豊島区の巣鴨駅前南口ロータリーにて開催された「第46回巣鴨盆踊り大会」の様子です。\n\n巣一商店会主催のもと、\n駅前の活気ある雰囲気の中で踊られる盆踊りをお届けします。\n地元の方々や観光客が一体となって盛り上がる、\n夏の巣鴨ならではの熱気をお楽しみください！\n\n和太鼓の響きとともに、日本の夏の情緒を感じていただければ幸いです。\n\n#巣鴨 #盆踊り #巣鴨花咲き音頭 #巣一商店会 #夏祭り #和太鼓 #東京の祭り #巣鴨駅前\n\n\n巣鴨駅前盆踊り\n１巣鴨花咲音頭　https://youtu.be/9dqKwAudGS4\n２きよしのドドンパ　https://youtu.be/wq9yyUc_IXY\n３バハマママ　https://youtu.be/TArlwnMgoPM\n４恋するフォーチュ"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=Uu5-AaTnToc",
@@ -23557,10 +23680,10 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 26
+      "evidence_count": 31
     },
     {
-      "id": "4d30d52961009a70",
+      "id": "35d3318a23760e67",
       "song_name": "巣鴨花咲音頭",
       "event_name": "盆踊り大会",
       "venue": "木場二丁目公園",
@@ -23571,6 +23694,36 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=rhXPFP67n8I",
+          "date": "2026-07-20T00:00:10+00:00",
+          "text": "和太鼓お祭りCH\n東京音頭　「第46回巣鴨盆踊り大会」18　2026年7月18日　巣鴨駅前南口ロータリー盆踊り　巣一商店会\n2026年7月18日、豊島区の巣鴨駅前南口ロータリーにて開催された「第46回巣鴨盆踊り大会」の様子です。\n\n巣一商店会主催のもと、\n駅前の活気ある雰囲気の中で踊られる盆踊りをお届けします。\n地元の方々や観光客が一体となって盛り上がる、\n夏の巣鴨ならではの熱気をお楽しみください！\n\n和太鼓の響きとともに、日本の夏の情緒を感じていただければ幸いです。\n\n#巣鴨 #盆踊り #巣鴨花咲き音頭 #巣一商店会 #夏祭り #和太鼓 #東京の祭り #巣鴨駅前\n\n\n巣鴨駅前盆踊り\n１巣鴨花咲音頭　https://youtu.be/9dqKwAudGS4\n２きよしのドドンパ　https://youtu.be/wq9yyUc_IXY\n３バハマママ　https://youtu.be/TArlwnMgoPM\n４恋するフォーチュンクッ"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=A_tgE826lyY",
+          "date": "2026-07-19T11:30:23+00:00",
+          "text": "和太鼓お祭りCH\n【少年八木節】　「第46回巣鴨盆踊り大会」17　2026年7月18日　巣鴨駅前南口ロータリー盆踊り　巣一商店会\n2026年7月18日、豊島区の巣鴨駅前南口ロータリーにて開催された「第46回巣鴨盆踊り大会」の様子です。\n\n巣一商店会主催のもと、\n駅前の活気ある雰囲気の中で踊られる盆踊りをお届けします。\n地元の方々や観光客が一体となって盛り上がる、\n夏の巣鴨ならではの熱気をお楽しみください！\n\n和太鼓の響きとともに、日本の夏の情緒を感じていただければ幸いです。\n\n#巣鴨 #盆踊り #巣鴨花咲き音頭 #巣一商店会 #夏祭り #和太鼓 #東京の祭り #巣鴨駅前\n\n\n巣鴨駅前盆踊り\n１巣鴨花咲音頭　https://youtu.be/9dqKwAudGS4\n２きよしのドドンパ　https://youtu.be/wq9yyUc_IXY\n３バハマママ　https://youtu.be/TArlwnMgoPM\n４恋するフォーチュ"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=DhY0dubHIXk",
+          "date": "2026-07-19T11:00:15+00:00",
+          "text": "和太鼓お祭りCH\n炭坑節　「第46回巣鴨盆踊り大会」16　2026年7月18日　巣鴨駅前南口ロータリー盆踊り　巣一商店会\n2026年7月18日、豊島区の巣鴨駅前南口ロータリーにて開催された「第46回巣鴨盆踊り大会」の様子です。\n\n巣一商店会主催のもと、\n駅前の活気ある雰囲気の中で踊られる盆踊りをお届けします。\n地元の方々や観光客が一体となって盛り上がる、\n夏の巣鴨ならではの熱気をお楽しみください！\n\n和太鼓の響きとともに、日本の夏の情緒を感じていただければ幸いです。\n\n#巣鴨 #盆踊り #巣鴨花咲き音頭 #巣一商店会 #夏祭り #和太鼓 #東京の祭り #巣鴨駅前\n\n\n巣鴨駅前盆踊り\n１巣鴨花咲音頭　https://youtu.be/9dqKwAudGS4\n２きよしのドドンパ　https://youtu.be/wq9yyUc_IXY\n３バハマママ　https://youtu.be/TArlwnMgoPM\n４恋するフォーチュンクッキ"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=KxcKYnoe3SY",
+          "date": "2026-07-19T09:30:23+00:00",
+          "text": "和太鼓お祭りCH\n押せ押せ音頭　「第46回巣鴨盆踊り大会」15　2026年7月18日　巣鴨駅前南口ロータリー盆踊り　巣一商店会\n2026年7月18日、豊島区の巣鴨駅前南口ロータリーにて開催された「第46回巣鴨盆踊り大会」の様子です。\n\n巣一商店会主催のもと、\n駅前の活気ある雰囲気の中で踊られる盆踊りをお届けします。\n地元の方々や観光客が一体となって盛り上がる、\n夏の巣鴨ならではの熱気をお楽しみください！\n\n和太鼓の響きとともに、日本の夏の情緒を感じていただければ幸いです。\n\n#巣鴨 #盆踊り #巣鴨花咲き音頭 #巣一商店会 #夏祭り #和太鼓 #東京の祭り #巣鴨駅前\n\n\n巣鴨駅前盆踊り\n１巣鴨花咲音頭　https://youtu.be/9dqKwAudGS4\n２きよしのドドンパ　https://youtu.be/wq9yyUc_IXY\n３バハマママ　https://youtu.be/TArlwnMgoPM\n４恋するフォーチュン"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=kC-Gkb7SuP4",
+          "date": "2026-07-19T09:00:01+00:00",
+          "text": "和太鼓お祭りCH\nドラえもん音頭　「第46回巣鴨盆踊り大会」14　2026年7月18日　巣鴨駅前南口ロータリー盆踊り　巣一商店会\n2026年7月18日、豊島区の巣鴨駅前南口ロータリーにて開催された「第46回巣鴨盆踊り大会」の様子です。\n\n巣一商店会主催のもと、\n駅前の活気ある雰囲気の中で踊られる盆踊りをお届けします。\n地元の方々や観光客が一体となって盛り上がる、\n夏の巣鴨ならではの熱気をお楽しみください！\n\n和太鼓の響きとともに、日本の夏の情緒を感じていただければ幸いです。\n\n#巣鴨 #盆踊り #巣鴨花咲き音頭 #巣一商店会 #夏祭り #和太鼓 #東京の祭り #巣鴨駅前\n\n\n巣鴨駅前盆踊り\n１巣鴨花咲音頭　https://youtu.be/9dqKwAudGS4\n２きよしのドドンパ　https://youtu.be/wq9yyUc_IXY\n３バハマママ　https://youtu.be/TArlwnMgoPM\n４恋するフォーチュ"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=Uu5-AaTnToc",
@@ -23651,7 +23804,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 13
+      "evidence_count": 18
     },
     {
       "id": "17bac97093cdee84",
@@ -23704,7 +23857,7 @@
       "evidence_count": 2
     },
     {
-      "id": "924bf5b86221aacb",
+      "id": "2fc8f653a1f23bd2",
       "song_name": "府中小唄",
       "event_name": "盆踊り大会",
       "venue": "木場二丁目公園",
@@ -23715,6 +23868,18 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=4RfCTQS0pmU",
+          "date": "2026-07-19T10:30:14+00:00",
+          "text": "和太鼓お祭りCH\n【純烈魂】（純烈）　大國魂神社「府中納涼大盆踊り大会」34　2026年7月4日\n2026年7月4日に大國魂神社で開催された「府中納涼大盆踊り大会」の様子です。\n 歴史ある大國魂神社の境内に響き渡る太鼓の音と、情緒あふれる盆踊りの活気をお楽しみください。\n\n\n今後も各地のお祭りや盆踊りの動画をアップロードしていきます。\n よろしければチャンネル登録・高評価をお願いします！\n\n#盆踊り #大國魂神社 #府中納涼大盆踊り大会 #府中小唄 #夏祭り #和太鼓\n\n\n大國魂神社盆踊り\n１府中小唄　https://youtu.be/t6BoX9FFcGQ\n２大東京音頭　https://youtu.be/R67NzDj5t2w\n３純烈魂　https://youtu.be/hBhXa-EhPvw\n４バハマ・ママ　https://youtu.be/VfkV8713uHQ\n５アンパンマン音頭　https://youtu.be/t6B"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=qHZrIiCNs4Q",
+          "date": "2026-07-19T10:00:18+00:00",
+          "text": "和太鼓お祭りCH\n【大東京音頭】（金沢明子橋幸夫）　大國魂神社「府中納涼大盆踊り大会」33　2026年7月4日\n2026年7月4日に大國魂神社で開催された「府中納涼大盆踊り大会」の様子です。\n 歴史ある大國魂神社の境内に響き渡る太鼓の音と、情緒あふれる盆踊りの活気をお楽しみください。\n\n\n今後も各地のお祭りや盆踊りの動画をアップロードしていきます。\n よろしければチャンネル登録・高評価をお願いします！\n\n#盆踊り #大國魂神社 #府中納涼大盆踊り大会 #府中小唄 #夏祭り #和太鼓\n\n\n大國魂神社盆踊り\n１府中小唄　https://youtu.be/t6BoX9FFcGQ\n２大東京音頭　https://youtu.be/R67NzDj5t2w\n３純烈魂　https://youtu.be/hBhXa-EhPvw\n４バハマ・ママ　https://youtu.be/VfkV8713uHQ\n５アンパンマン音頭　https://youtu"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=dXocUJKCI48",
@@ -23825,7 +23990,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 18
+      "evidence_count": 20
     },
     {
       "id": "80191fada657c709",
@@ -23894,7 +24059,7 @@
       "evidence_count": 1
     },
     {
-      "id": "8b15f8977dd0f4da",
+      "id": "ade0e5c3325639ba",
       "song_name": "押せ押せ音頭",
       "event_name": "盆踊り大会",
       "venue": "木場二丁目公園",
@@ -23905,6 +24070,12 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=KxcKYnoe3SY",
+          "date": "2026-07-19T09:30:23+00:00",
+          "text": "和太鼓お祭りCH\n押せ押せ音頭　「第46回巣鴨盆踊り大会」15　2026年7月18日　巣鴨駅前南口ロータリー盆踊り　巣一商店会\n2026年7月18日、豊島区の巣鴨駅前南口ロータリーにて開催された「第46回巣鴨盆踊り大会」の様子です。\n\n巣一商店会主催のもと、\n駅前の活気ある雰囲気の中で踊られる盆踊りをお届けします。\n地元の方々や観光客が一体となって盛り上がる、\n夏の巣鴨ならではの熱気をお楽しみください！\n\n和太鼓の響きとともに、日本の夏の情緒を感じていただければ幸いです。\n\n#巣鴨 #盆踊り #巣鴨花咲き音頭 #巣一商店会 #夏祭り #和太鼓 #東京の祭り #巣鴨駅前\n\n\n巣鴨駅前盆踊り\n１巣鴨花咲音頭　https://youtu.be/9dqKwAudGS4\n２きよしのドドンパ　https://youtu.be/wq9yyUc_IXY\n３バハマママ　https://youtu.be/TArlwnMgoPM\n４恋するフォーチュン"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=6ICTN9o19Is",
@@ -23925,7 +24096,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 3
+      "evidence_count": 4
     },
     {
       "id": "c14acffd0efaab3e",
@@ -25230,7 +25401,7 @@
       "evidence_count": 15
     },
     {
-      "id": "7e3aa019ecaaad59",
+      "id": "6727f9cc6329e9ab",
       "song_name": "炭坑節",
       "event_name": "盆踊り大会",
       "venue": "木場二丁目公園",
@@ -25242,6 +25413,12 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=DhY0dubHIXk",
+          "date": "2026-07-19T11:00:15+00:00",
+          "text": "和太鼓お祭りCH\n炭坑節　「第46回巣鴨盆踊り大会」16　2026年7月18日　巣鴨駅前南口ロータリー盆踊り　巣一商店会\n2026年7月18日、豊島区の巣鴨駅前南口ロータリーにて開催された「第46回巣鴨盆踊り大会」の様子です。\n\n巣一商店会主催のもと、\n駅前の活気ある雰囲気の中で踊られる盆踊りをお届けします。\n地元の方々や観光客が一体となって盛り上がる、\n夏の巣鴨ならではの熱気をお楽しみください！\n\n和太鼓の響きとともに、日本の夏の情緒を感じていただければ幸いです。\n\n#巣鴨 #盆踊り #巣鴨花咲き音頭 #巣一商店会 #夏祭り #和太鼓 #東京の祭り #巣鴨駅前\n\n\n巣鴨駅前盆踊り\n１巣鴨花咲音頭　https://youtu.be/9dqKwAudGS4\n２きよしのドドンパ　https://youtu.be/wq9yyUc_IXY\n３バハマママ　https://youtu.be/TArlwnMgoPM\n４恋するフォーチュンクッキ"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=3CYlQBxIMts",
@@ -25754,7 +25931,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 85
+      "evidence_count": 86
     },
     {
       "id": "3b25404c500fa6fd",
@@ -38764,7 +38941,7 @@
         {
           "source": "latest_news",
           "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5saWw4NVZNM1AybHZ2c0NZNkNOa2xzSlFMOXFJQTNXdDFEZmRKTk5ENHpyWTcxcTJOWFNhakxVWTFqQVFJcTlMSWdRYXVWc291T3lpcQ?oc=5",
-          "date": "Sun, 19 Jul 2026 08:17:09 GMT",
+          "date": "Sun, 19 Jul 2026 12:54:25 GMT",
           "text": "7月29日、30日に開催される「すみだ錦糸町河内音頭大盆踊り大会」 - すみだ経済新聞"
         }
       ],

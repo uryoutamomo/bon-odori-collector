@@ -1,6 +1,6 @@
 {
   "generated_by": "build_song_ocr_queue.py",
-  "count": 26,
+  "count": 29,
   "items": [
     {
       "id": "b21783a2a9785946",
@@ -406,6 +406,54 @@
         "https://pbs.twimg.com/media/HNjlACvbIAEK6HH.jpg"
       ],
       "text": "令和8年第36回\n「池袋の子供達にふるさとを」\n\n📅 2026年7月18日　その1\n\n毎年、みらい館大明にて、池袋御嶽町会が主催し、町会の皆様や地域団体の皆様のご協賛・ご協力のもと開催されている盆踊りに参加させていただきました⭐️\n\nお祭りのスタート時には、毎年、池袋警察署の皆様がピーポくんのお面や防犯グッズを配布されています🚓\n\nとしま防犯アイドル 宇崎真里愛（@maria_uzaki）と一緒に、子どもたちへの配布のお手伝いをさせていただきました😊\n\n年々、お祭りに参加される地域の皆様が増えており、会場にはピーポくんのお面をかぶった子どもたちの笑顔があふれています✨\n\n地域の皆様と池袋警察署の皆様が連携し、安全・安心な街づくりに取り組まれている姿は、本当に素敵なことですね⭐️\n\nそして現在、私たちは 防犯ソングアルバム（全8曲） の制作をスタートいたしました🎵\n\nボーカル：宇崎真里愛\n楽曲制作：カト吉\n\n現在は3曲目を制作中です⭐️\n\n子どもから大人まで、みんなで楽しく歌いながら、防犯への意識や注意喚起、犯罪抑止にもつながるような楽曲を目指して制作しています😊\n\n私たちも、微力ながら",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "bffe8c7997f6f3e5",
+      "status": "needs_ocr",
+      "account": "@bonkyodora_",
+      "url": "https://x.com/bonkyodora_/status/2078813415318134937",
+      "tweet_id": "2078813415318134937",
+      "date": "2026-07-19T12:05:15+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2078812634682658816/img/-x5v-8pfNFZ7p_ns.jpg",
+        "https://t.co/c65ptwCivY",
+        "pic.x.com/c65ptwCivY",
+        "https://pbs.twimg.com/amplify_video_thumb/2078812803549511680/img/n-2u7CJjcXrESMrY.jpg",
+        "https://pbs.twimg.com/amplify_video_thumb/2078813137663660032/img/XeXMPGTzVtLdhkZv.jpg",
+        "https://pbs.twimg.com/amplify_video_thumb/2078813300129976321/img/G9tyWvk2OnkbNAUc.jpg"
+      ],
+      "text": "2026年7月19日(日)\n千葉県市川市／堀之内公園\n「北国分駅前 夏祭り」\n\n「前を失礼します」\n「盆踊り上手ですね😊私は後ろを失礼します」\n私を挟む形で、ご丁寧に輪に入った方がまさかの市川市長様とお付の方でした😆\n\n【曲目】\n炭坑節\n東京音頭\nきよしのズンドコ節\nバハマ・ママ\n月夜のポンチャラリン https://t.co/c65ptwCivY",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "c9f9434edd20b7d8",
+      "status": "needs_ocr",
+      "account": "@lucasuke",
+      "url": "https://x.com/lucasuke/status/2078850721504739705",
+      "tweet_id": "2078850721504739705",
+      "date": "2026-07-19T14:33:29+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HNmO42Ya4AE2nCQ.jpg",
+        "https://t.co/i3q6NduEjz",
+        "pic.x.com/i3q6NduEjz"
+      ],
+      "text": "また、夜には盆踊りしてきました！２会場！知らない曲たくさん踊れて楽しかったです！盆踊りって地域の伝統曲からアニソン、J-POPまで曲目が無限にあるから奥深いです！\n\n今日はTHE浴衣な、しじら織りを着てました！洋服でいうとシアサッカー？凸凹した生地で肌に密着せず、サラッと着れて快適でした！ https://t.co/i3q6NduEjz",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "a967cef02b6258da",
+      "status": "needs_ocr",
+      "account": "@yasun_o2",
+      "url": "https://x.com/yasun_o2/status/2079007151797026856",
+      "tweet_id": "2079007151797026856",
+      "date": "2026-07-20T00:55:05+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HNod-zrbMAACPQq.jpg",
+        "https://t.co/Li0cPrPNWY",
+        "pic.x.com/Li0cPrPNWY"
+      ],
+      "text": "昨日25年ぶりくらいに私が子どもの頃に行ってた盆踊り大会に行ったけど、無料だったうちわは1枚10円以上の募金、ﾀﾞﾝｼﾝｸﾞﾋｰﾛ-、RPG、希望の轍、夜に駆けるが盆踊りの曲目になってて、いろいろ衝撃だったけど盆踊りって楽しいと思いました https://t.co/Li0cPrPNWY",
       "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
     }
   ]
