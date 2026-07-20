@@ -34,6 +34,8 @@ year backfillは既決定groupを出力せず、未判断group内の動画を1�
 
 user confirmationも既決定itemを出力せず、未判断かつ動画URL・対象年・有限optionsが揃うitemだけを同じvideo/year identityへ変換する。部分的な決定状態、未知option/recommendation、動画URLや年の欠落はfail closedする。2026-07-20時点の4件は全て既決定で出力0件。動画URLを持たないgroup型itemが将来pendingへ戻る場合は、元動画URLを補完してから移行する。
 
+production入口はactive video・year backfill・user confirmationの3入力lineageを持つschema version 1のcomplete aggregateだけを受理する。重複stable IDはuser confirmation、year backfill、active videoの順で優先し、選択・除外したqueueとpayload hashをsnapshotへ記録する。単独adapter snapshotはproduction runnerへ渡せない。
+
 ## decision境界
 
 YouTube inboxの選択肢は次の4つだけに固定する。
