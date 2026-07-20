@@ -12,6 +12,7 @@ import argparse
 import hashlib
 import json
 from pathlib import Path
+import subprocess
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -35,6 +36,25 @@ SOURCES = (
     ("legacy_missing_source_url", "data/missing_source_url_review.json", "rollback_snapshot", "B1 legacy reader snapshot; retained only for rollback."),
     ("legacy_missing_venue", "data/missing_occurrence_venue_review.json", "rollback_snapshot", "B1 legacy reader snapshot; retained only for rollback."),
     ("legacy_historical_promotion", "data/historical_promotion_candidate_review.json", "rollback_snapshot", "B1 legacy reader snapshot; retained only for rollback."),
+)
+
+ALTERNATE_LIVE_WRITERS = {
+    "daily_song": [{
+        "workflow": ".github/workflows/weekly_harvest.yml",
+        "mode": "workflow_dispatch",
+        "effect": "regenerates legacy keyboard-review UI and commits the parity input; apply_reviewed can invoke a direct Notion apply path",
+    }],
+    "daily_term": [{
+        "workflow": ".github/workflows/weekly_harvest.yml",
+        "mode": "workflow_dispatch",
+        "effect": "regenerates legacy keyboard-review UI and commits the parity input; apply_reviewed can invoke a direct Notion apply path",
+    }],
+}
+
+OUT_OF_SCOPE = (
+    ("x_news_digest_for_oto / rare_signal_candidates", "machine discovery pipeline inputs, not review-inbox reader snapshots"),
+    ("weekly_harvest_candidates", "upstream collection material; the review-inbox input is weekly_harvest_review_candidates"),
+    ("x_candidate_post_review", "separate X account/member-list workflow"),
 )
 
 
@@ -63,6 +83,21 @@ def references(root: Path, relative_path: str) -> list[str]:
     return found
 
 
+def git_provenance(root: Path, relative_path: str) -> dict | None:
+    """Return the last committed snapshot identity when git metadata is available."""
+    result = subprocess.run(
+        ["git", "-C", str(root), "log", "-1", "--format=%H%x00%cI", "--", relative_path],
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    value = result.stdout.strip()
+    if not value or "\x00" not in value:
+        return None
+    commit, committed_at = value.split("\x00", 1)
+    return {"commit": commit, "committed_at": committed_at}
+
+
 def build_inventory(root: Path) -> dict:
     rows = []
     for source_id, relative_path, category, rationale in SOURCES:
@@ -76,6 +111,8 @@ def build_inventory(root: Path) -> dict:
             "exists": path.exists(),
             "sha256": sha256(path) if is_file else None,
             "workflow_or_adapter_references": references(root, relative_path),
+            "alternate_live_writers": ALTERNATE_LIVE_WRITERS.get(source_id, []),
+            "snapshot_provenance": git_provenance(root, relative_path) if category == "rollback_snapshot" else None,
         })
     return {
         "schema_version": 1,
@@ -86,6 +123,11 @@ def build_inventory(root: Path) -> dict:
             category: sum(row["category"] == category for row in rows)
             for category in sorted({row["category"] for row in rows})
         },
+        "alternate_live_writer_count": sum(bool(row["alternate_live_writers"]) for row in rows),
+        "out_of_scope": [
+            {"name": name, "reason": reason}
+            for name, reason in OUT_OF_SCOPE
+        ],
     }
 
 
@@ -95,12 +137,15 @@ def render_markdown(report: dict) -> str:
         "",
         "この棚卸しはread-onlyであり、削除・移動・workflow変更を行わない。",
         "",
-        "| source | path | category | exists | references |",
-        "| --- | --- | --- | --- | ---: |",
+        "| source | path | category | exists | references | alternate writer |",
+        "| --- | --- | --- | --- | ---: | --- |",
     ]
     for row in report["rows"]:
-        lines.append(f"| {row['source_id']} | `{row['path']}` | {row['category']} | {str(row['exists']).lower()} | {len(row['workflow_or_adapter_references'])} |")
-    lines.extend(["", "## Rules", "", "- `parity_input` は対応するscheduled adapterとparity検証が残る間、削除・移動しない。", "- `rollback_snapshot` はconsoleの既定入力に戻さず、rollback手順に従ってのみ参照する。", "- manifest外のlegacy候補は、このinventoryへ追加してから別レビューで扱う。", ""])
+        writers = ", ".join(writer["workflow"] for writer in row["alternate_live_writers"]) or "—"
+        lines.append(f"| {row['source_id']} | `{row['path']}` | {row['category']} | {str(row['exists']).lower()} | {len(row['workflow_or_adapter_references'])} | {writers} |")
+    lines.extend(["", "## Rules", "", "- `parity_input` は対応するscheduled adapterとparity検証が残る間、削除・移動しない。", "- `alternate_live_writer` がある入力は、手動workflowがlegacy UI再生成・commit・直接applyを行える。writerを退役・縮小・維持のいずれにするか、別レビューで明示決定するまで削除候補にしない。", "- `rollback_snapshot` はconsoleの既定入力に戻さず、rollback手順に従ってのみ参照する。JSONの `snapshot_provenance` は最終commitと時刻を記録する。", "- manifest外のlegacy候補は、このinventoryへ追加してから別レビューで扱う。", "", "## Out of scope", ""])
+    lines.extend(f"- `{item['name']}`: {item['reason']}" for item in report.get("out_of_scope", []))
+    lines.append("")
     return "\n".join(lines)
 
 

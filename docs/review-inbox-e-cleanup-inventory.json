@@ -14,7 +14,9 @@
         ".github/workflows/collect.yml",
         "review_inbox_rare_signal_adapter.py",
         "review_console/data.py"
-      ]
+      ],
+      "alternate_live_writers": [],
+      "snapshot_provenance": null
     },
     {
       "source_id": "youtube_active",
@@ -27,7 +29,9 @@
         ".github/workflows/collect.yml",
         "review_inbox_youtube_adapter.py",
         "review_console/data.py"
-      ]
+      ],
+      "alternate_live_writers": [],
+      "snapshot_provenance": null
     },
     {
       "source_id": "youtube_year_backfill",
@@ -40,7 +44,9 @@
         ".github/workflows/collect.yml",
         "review_inbox_youtube_year_backfill_adapter.py",
         "review_console/data.py"
-      ]
+      ],
+      "alternate_live_writers": [],
+      "snapshot_provenance": null
     },
     {
       "source_id": "youtube_user_confirmation",
@@ -53,7 +59,9 @@
         ".github/workflows/collect.yml",
         "review_inbox_youtube_user_confirmation_adapter.py",
         "review_console/data.py"
-      ]
+      ],
+      "alternate_live_writers": [],
+      "snapshot_provenance": null
     },
     {
       "source_id": "daily_song",
@@ -67,7 +75,15 @@
         ".github/workflows/weekly_harvest.yml",
         "review_inbox_low_priority_adapters.py",
         "review_console/data.py"
-      ]
+      ],
+      "alternate_live_writers": [
+        {
+          "workflow": ".github/workflows/weekly_harvest.yml",
+          "mode": "workflow_dispatch",
+          "effect": "regenerates legacy keyboard-review UI and commits the parity input; apply_reviewed can invoke a direct Notion apply path"
+        }
+      ],
+      "snapshot_provenance": null
     },
     {
       "source_id": "daily_term",
@@ -81,7 +97,15 @@
         ".github/workflows/weekly_harvest.yml",
         "review_inbox_low_priority_adapters.py",
         "review_console/data.py"
-      ]
+      ],
+      "alternate_live_writers": [
+        {
+          "workflow": ".github/workflows/weekly_harvest.yml",
+          "mode": "workflow_dispatch",
+          "effect": "regenerates legacy keyboard-review UI and commits the parity input; apply_reviewed can invoke a direct Notion apply path"
+        }
+      ],
+      "snapshot_provenance": null
     },
     {
       "source_id": "accepted_venue_song_missing_venue",
@@ -94,7 +118,9 @@
         ".github/workflows/collect.yml",
         "review_inbox_low_priority_adapters.py",
         "review_console/data.py"
-      ]
+      ],
+      "alternate_live_writers": [],
+      "snapshot_provenance": null
     },
     {
       "source_id": "historical_reference_quality",
@@ -107,7 +133,9 @@
         ".github/workflows/collect.yml",
         "review_inbox_low_priority_adapters.py",
         "review_console/data.py"
-      ]
+      ],
+      "alternate_live_writers": [],
+      "snapshot_provenance": null
     },
     {
       "source_id": "publication_gap",
@@ -120,7 +148,9 @@
         ".github/workflows/collect.yml",
         "review_inbox_low_priority_adapters.py",
         "review_console/data.py"
-      ]
+      ],
+      "alternate_live_writers": [],
+      "snapshot_provenance": null
     },
     {
       "source_id": "legacy_official_source",
@@ -132,7 +162,12 @@
       "workflow_or_adapter_references": [
         "review_inbox_official_source_adapter.py",
         "review_console/data.py"
-      ]
+      ],
+      "alternate_live_writers": [],
+      "snapshot_provenance": {
+        "commit": "baeda33b2910e6db266a31d6f507c8db93314d85",
+        "committed_at": "2026-06-30T16:26:13+09:00"
+      }
     },
     {
       "source_id": "legacy_registered_investigation",
@@ -144,7 +179,12 @@
       "workflow_or_adapter_references": [
         "review_inbox_registered_event_investigation_adapter.py",
         "review_console/data.py"
-      ]
+      ],
+      "alternate_live_writers": [],
+      "snapshot_provenance": {
+        "commit": "4e7b26fb1fbaa03e13a177336ae827b0bd369398",
+        "committed_at": "2026-06-22T23:05:35+09:00"
+      }
     },
     {
       "source_id": "legacy_predicted_research",
@@ -156,7 +196,12 @@
       "workflow_or_adapter_references": [
         "review_inbox_predicted_occurrence_research_adapter.py",
         "review_console/data.py"
-      ]
+      ],
+      "alternate_live_writers": [],
+      "snapshot_provenance": {
+        "commit": "530220b2e82d8fd553d4276f4ad5d773d901828f",
+        "committed_at": "2026-06-22T22:55:23+09:00"
+      }
     },
     {
       "source_id": "legacy_predicted_date_review",
@@ -168,7 +213,12 @@
       "workflow_or_adapter_references": [
         "review_inbox_predicted_occurrence_date_review_adapter.py",
         "review_console/data.py"
-      ]
+      ],
+      "alternate_live_writers": [],
+      "snapshot_provenance": {
+        "commit": "c07a11df7e5b01c50743c01be188b8d12b2101ec",
+        "committed_at": "2026-06-22T22:43:09+09:00"
+      }
     },
     {
       "source_id": "legacy_missing_source_url",
@@ -180,7 +230,12 @@
       "workflow_or_adapter_references": [
         "review_inbox_missing_source_url_adapter.py",
         "review_console/data.py"
-      ]
+      ],
+      "alternate_live_writers": [],
+      "snapshot_provenance": {
+        "commit": "baeda33b2910e6db266a31d6f507c8db93314d85",
+        "committed_at": "2026-06-30T16:26:13+09:00"
+      }
     },
     {
       "source_id": "legacy_missing_venue",
@@ -192,7 +247,12 @@
       "workflow_or_adapter_references": [
         "review_inbox_missing_venue_adapter.py",
         "review_console/data.py"
-      ]
+      ],
+      "alternate_live_writers": [],
+      "snapshot_provenance": {
+        "commit": "37c67a1ccc6681a7e4c7fca965a528619a0cb1be",
+        "committed_at": "2026-07-01T00:27:47+09:00"
+      }
     },
     {
       "source_id": "legacy_historical_promotion",
@@ -203,11 +263,31 @@
       "sha256": "0d9a8a310f2ff0c3065b3e76bf5cda75a72f329d52d4be234f6a902f4ed14688",
       "workflow_or_adapter_references": [
         "review_console/data.py"
-      ]
+      ],
+      "alternate_live_writers": [],
+      "snapshot_provenance": {
+        "commit": "f486dd57633033cb91f4b6036d96d7693a284d9d",
+        "committed_at": "2026-07-19T09:14:17+09:00"
+      }
     }
   ],
   "category_counts": {
     "parity_input": 9,
     "rollback_snapshot": 7
-  }
+  },
+  "alternate_live_writer_count": 2,
+  "out_of_scope": [
+    {
+      "name": "x_news_digest_for_oto / rare_signal_candidates",
+      "reason": "machine discovery pipeline inputs, not review-inbox reader snapshots"
+    },
+    {
+      "name": "weekly_harvest_candidates",
+      "reason": "upstream collection material; the review-inbox input is weekly_harvest_review_candidates"
+    },
+    {
+      "name": "x_candidate_post_review",
+      "reason": "separate X account/member-list workflow"
+    }
+  ]
 }

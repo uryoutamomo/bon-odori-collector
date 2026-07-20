@@ -189,6 +189,9 @@ low-priority 257件のparity / unmapped 0、RDB integrity、公開投影不変�
 workflow変更は、この棚卸しを独立レビューした後の別作業とする。
 最初のread-only inventoryは `docs/review-inbox-e-cleanup-inventory.md` に保存し、再生成は
 `python3 scripts/build_review_inbox_legacy_cleanup_inventory.py --out-json ... --out-md ...` で行う。
+この棚卸しで `weekly_harvest.yml` が日次曲・用語入力のalternate live writer（legacy UI再生成、
+commit、手動時の直接Notion apply）だと判明した。E cleanupではこのworkflowを退役・縮小・
+escape hatchとして維持するいずれかを独立に決めるまで、対象入力を削除候補にしない。
 
 ## 旧キューの閉鎖条件
 
