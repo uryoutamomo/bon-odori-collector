@@ -1,9 +1,9 @@
 {
   "dry_run": true,
   "source": "data/weekly_harvest_candidates.json",
-  "song_candidate_count": 132,
-  "direct_count": 112,
-  "created_count": 96,
+  "song_candidate_count": 131,
+  "direct_count": 111,
+  "created_count": 95,
   "updated_count": 16,
   "rejected_noise_count": 17,
   "review_count": 3,
@@ -729,14 +729,6 @@
       "dry_run": true
     },
     {
-      "song_name": "過日の朝顔音頭",
-      "source_term": "過日の朝顔音頭",
-      "target": "create",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
-    },
-    {
       "song_name": "阿波おどり",
       "source_term": "阿波おどり",
       "target": "create",
@@ -979,12 +971,6 @@
   ],
   "review": [
     {
-      "term": "郡上おどり",
-      "evidence_count": 2,
-      "reason": "多義語・イベント名・ジャンル名の可能性がある",
-      "evidence_url": "https://x.com/biscuitchiannel/status/2079040638176387142"
-    },
-    {
       "term": "徳島市阿波おどり",
       "evidence_count": 1,
       "reason": "多義語・イベント名・ジャンル名の可能性がある",
@@ -995,6 +981,12 @@
       "evidence_count": 1,
       "reason": "多義語・イベント名・ジャンル名の可能性がある",
       "evidence_url": "https://x.com/natsuzora_boken/status/2078062446754103683"
+    },
+    {
+      "term": "郡上おどり",
+      "evidence_count": 1,
+      "reason": "多義語・イベント名・ジャンル名の可能性がある",
+      "evidence_url": "https://x.com/biscuitchiannel/status/2079040638176387142"
     }
   ]
 }
