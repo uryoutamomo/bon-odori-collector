@@ -1,9 +1,9 @@
 {
   "generated_by": "build_event_poster_ocr_queue.py",
-  "count": 1447,
+  "count": 1458,
   "summary": {
     "critical": 13,
-    "high": 327,
+    "high": 328,
     "trusted_informant": 15
   },
   "items": [
@@ -7417,6 +7417,27 @@
         "pic.x.com/MFDtk97QRk"
       ],
       "text": "7/19 立川市羽衣町本町会\nハシゴ２件目\n19時半にみんなでゾロゾロ移動した先！\n毎年の流れです。\n狭くて踊りにくいところもあるけど、お祭りは大盛況！！\n今年もありがとうございました！\n#盆踊り #立川市 #春夏秋冬 https://t.co/MFDtk97QRk",
+      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
+    },
+    {
+      "id": "xposter_50fec1e8f55f4425",
+      "status": "needs_ocr",
+      "priority": "high",
+      "evidence_type": "poster_or_flyer_image",
+      "assumed_source_confidence": "medium",
+      "account": "@Santama_Genjin",
+      "account_name": "三鷹原人@井の頭恩賜公園のほとんどは三鷹",
+      "trusted_informant": false,
+      "trusted_informant_rank": "",
+      "url": "https://x.com/Santama_Genjin/status/2079049638066434475",
+      "tweet_id": "2079049638066434475",
+      "date": "2026-07-20T03:43:55+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HNpEne3aEAA2rbF.jpg",
+        "https://t.co/GfH7ap9ACu",
+        "pic.x.com/GfH7ap9ACu"
+      ],
+      "text": "京王井の頭線・三鷹台駅前広場🏮🕺\n\n三鷹台盆踊り大会を8/1(土)・2(日)に開催。\n\n2(日)に踊ってくれた小学生以下のみんなにお菓子プレゼント❗️(先着400名)\n\nポスターのデザイン一新やね☺️ https://t.co/GfH7ap9ACu",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
     },
     {
@@ -29480,6 +29501,30 @@
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
     },
     {
+      "id": "xposter_142884c1396e1291",
+      "status": "needs_ocr",
+      "priority": "medium",
+      "evidence_type": "poster_or_flyer_image",
+      "assumed_source_confidence": "medium",
+      "account": "@yamaguchiube",
+      "account_name": "山口宇部経済新聞",
+      "trusted_informant": false,
+      "trusted_informant_rank": "",
+      "url": "https://x.com/yamaguchiube/status/2078646002861359369",
+      "tweet_id": "2078646002861359369",
+      "date": "2026-07-19T01:00:01+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HNauCSnbEAAH-hA.jpg",
+        "https://t.co/hCFQg7UPXB",
+        "pic.x.com/hCFQg7UPXB",
+        "https://pbs.twimg.com/media/HNauCSobUAAgbbH.jpg",
+        "https://pbs.twimg.com/media/HNauCSmbkAArmq9.jpg",
+        "https://pbs.twimg.com/media/HNauCSnawAAihGM.jpg"
+      ],
+      "text": "【イベント情報：PR】\n\n＼夏の夜の楽しみが満載♪／\n60年ぶりに復活した宇部・琴崎八幡宮の「夏まつり」が今年も開催されます！🏮\n\n📅 開催日時\n8月1日（土）18時～21時\n\n👘3部構成の盆踊り\n懐かしい「昭和編」、アップテンポの「令和編」、可愛らしい「園児編」で盛り上がりましょう！\n\n🍧ワクワク企画\nハイハイレース（要申込）、ビンゴゲーム、手持ち花火、360°お菓子まき、射的やヨーヨー釣りなどの縁日、焼きそばやかき氷など屋台グルメも大集合！\n\n🪘豪華なステージ\n民謡・津軽三味線・舞踊の各界で日本一に輝いた4名によるLIVEパフォーマンスなど♪\n\n好評開催中の「風鈴まつり」（9/6まで）のライトアップも実施します🎐\n\n7月26日は、親子で楽しむワークショップ「行燈（あんどん）作り」や、ダンススクール「AIRY77」による令和編の盆踊りレッスンも🕺\n\nイベント詳細・申し込み↓\nhttps://t.co/YQ3xvDnt7i",
+      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
+    },
+    {
       "id": "xposter_e7b928af53528dc9",
       "status": "needs_ocr",
       "priority": "medium",
@@ -30278,6 +30323,27 @@
         "https://pbs.twimg.com/media/HNk-CsSbwAEDoMo.jpg"
       ],
       "text": "やっとこさ、ブログを再開できます・・・★きょうの夕方6時半ごろから1時間、尼崎の松島橋公園で築地盆踊りに参加します　★久しぶりに独立講演会でみなさんと写真を撮れました　★『皇』の新版が出ます　★移民をめぐる原稿が月刊Hanadaの9月号に載ります｜#青山繁晴の道す… https://t.co/vqaB6ypIAT https://t.co/hxxglFBa0Y",
+      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
+    },
+    {
+      "id": "xposter_6c433dfad4469810",
+      "status": "needs_ocr",
+      "priority": "medium",
+      "evidence_type": "poster_or_flyer_image",
+      "assumed_source_confidence": "medium",
+      "account": "@kino_chu1965",
+      "account_name": "富士見ヶ丘跨線橋 ",
+      "trusted_informant": false,
+      "trusted_informant_rank": "",
+      "url": "https://x.com/kino_chu1965/status/2078772888698769474",
+      "tweet_id": "2078772888698769474",
+      "date": "2026-07-19T09:24:13+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HNlI7EFawAA5xRb.jpg",
+        "https://t.co/iZ3ACvCrjt",
+        "pic.x.com/iZ3ACvCrjt"
+      ],
+      "text": "芦花公園駅前\n納涼　盆踊り大会\n芦花公園駅前南口ロータリー\nhttps://t.co/sZv6FD5E7O\n2026/07/19 https://t.co/iZ3ACvCrjt",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
     },
     {
@@ -31597,6 +31663,177 @@
         "https://pbs.twimg.com/media/HNo5ILOboAAlQ4d.jpg"
       ],
       "text": "梅雨が明け、本格的な暑い夏が始まりますね😭\n昨日は綾瀬５・６町会の盆踊りへ。\nよく見るとお子さんが太鼓を叩いています（しかも上手です）👏\n町会の皆様、踊り手の皆さん本当に有り難うございました。\n今日もうだるような暑さです！\n熱中症にお気を付け下さい。\n#綾瀬 #盆踊り \n#岡安たかし https://t.co/HvMDMq4CP3",
+      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
+    },
+    {
+      "id": "xposter_be51e15934760bb8",
+      "status": "needs_ocr",
+      "priority": "medium",
+      "evidence_type": "poster_or_flyer_image",
+      "assumed_source_confidence": "medium",
+      "account": "@jp501st",
+      "account_name": "Japanese Garrison",
+      "trusted_informant": false,
+      "trusted_informant_rank": "",
+      "url": "https://x.com/jp501st/status/2079038801876521183",
+      "tweet_id": "2079038801876521183",
+      "date": "2026-07-20T03:00:51+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HNo6xXdasAAxFzY.jpg",
+        "https://t.co/Faht639Esj",
+        "pic.x.com/Faht639Esj"
+      ],
+      "text": "【出撃情報】7月25日(土)16時~21時、神戸市で開催の「第12回トア公園盆踊り大会」に出撃します！\nWebサイト https://t.co/BvjH8srXdI\n場所 : 中央区下山手通3丁目トア公園周辺\n※イベントは雨天時に順延となりますが、501stは順延日の出撃はありません。\n\n#501st #501stlegion #501stjapanesegarrison https://t.co/Faht639Esj",
+      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
+    },
+    {
+      "id": "xposter_6f8a59206b38c251",
+      "status": "needs_ocr",
+      "priority": "medium",
+      "evidence_type": "poster_or_flyer_image",
+      "assumed_source_confidence": "medium",
+      "account": "@osaka_orion",
+      "account_name": "オリオンツアー 大阪営業所🐯旅行会社【公式】",
+      "trusted_informant": false,
+      "trusted_informant_rank": "",
+      "url": "https://x.com/osaka_orion/status/2079041102603018510",
+      "tweet_id": "2079041102603018510",
+      "date": "2026-07-20T03:10:00+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HNU_sbDaYAAKRcG.png",
+        "https://t.co/Qu1zAgwucs",
+        "pic.x.com/Qu1zAgwucs"
+      ],
+      "text": "【12,980円～13,980円（税込）】\n新大阪発🚍8月14・15日出発✨\n一生に一度は観たい！日本最大の盆踊り「徳島市阿波おどり」を有料観覧席”S席”から鑑賞！日帰りバスツアー💖\n\nURL：https://t.co/JyfXvTMa0f\n\n#旅行会社\n#オリオンツアー https://t.co/Qu1zAgwucs",
+      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
+    },
+    {
+      "id": "xposter_92caa8572393f822",
+      "status": "needs_ocr",
+      "priority": "medium",
+      "evidence_type": "poster_or_flyer_image",
+      "assumed_source_confidence": "medium",
+      "account": "@taketoukikaku",
+      "account_name": "表町キュレーションズ",
+      "trusted_informant": false,
+      "trusted_informant_rank": "",
+      "url": "https://x.com/taketoukikaku/status/2079042615539089721",
+      "tweet_id": "2079042615539089721",
+      "date": "2026-07-20T03:16:00+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HNo-OShawAAi7Hf.jpg",
+        "https://t.co/KPF1NHbnUi",
+        "pic.x.com/KPF1NHbnUi"
+      ],
+      "text": "はるにゃん МC ＆ 歌ステージ出演情報\nぼっけぇ盆踊り\n8月9日(日)10時〜21時\n\n場所■問屋町エリア(櫓特設ステージ)\n\nスキトオルアオ\n11:00〜11:20\n\nsis♪ラビッツ＆もえか\n11:30〜11:50\n\nはるにゃん\n16:00〜16:20\n\nDJダイノジ\n17:00〜18:00\n\nDJダイノジ大盆踊り\n19:00〜20:00\n\n他時間帯もステージあり https://t.co/KPF1NHbnUi",
+      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
+    },
+    {
+      "id": "xposter_6d8fc6b940446fc6",
+      "status": "needs_ocr",
+      "priority": "medium",
+      "evidence_type": "poster_or_flyer_image",
+      "assumed_source_confidence": "medium",
+      "account": "@TOKIHARU2020",
+      "account_name": "YAHIMONときはる🧢 Planner･作訳詞家･写真家",
+      "trusted_informant": false,
+      "trusted_informant_rank": "",
+      "url": "https://x.com/TOKIHARU2020/status/2079042867818082413",
+      "tweet_id": "2079042867818082413",
+      "date": "2026-07-20T03:17:01+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HNo-RBEaUAAABXz.jpg",
+        "https://t.co/OSal1oihQd",
+        "pic.x.com/OSal1oihQd",
+        "https://pbs.twimg.com/media/HNo-RAgboAAntQs.jpg"
+      ],
+      "text": "医師が週一回、看護師が週三回訪問\nしてくれる日以外には、病床の旧友の足の複数個所の傷口の処置を自分が\nやらなければならず他にかせられた\nケアラー案件もある為、毎年7月に\n行っていたダンシング・ヒーローで\n盆踊りする場所へジャケ写のユッコちゃんをお連れする事が今年は無理で涙 https://t.co/OSal1oihQd",
+      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
+    },
+    {
+      "id": "xposter_98506954d5616534",
+      "status": "needs_ocr",
+      "priority": "medium",
+      "evidence_type": "poster_or_flyer_image",
+      "assumed_source_confidence": "medium",
+      "account": "@hotelsubaru1",
+      "account_name": "奈良十津川温泉ホテル昴",
+      "trusted_informant": false,
+      "trusted_informant_rank": "",
+      "url": "https://x.com/hotelsubaru1/status/2079044632940597302",
+      "tweet_id": "2079044632940597302",
+      "date": "2026-07-20T03:24:01+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HNpAEc8bcAAm7p4.jpg",
+        "https://t.co/o3LTY2jqD3",
+        "pic.x.com/o3LTY2jqD3",
+        "https://pbs.twimg.com/media/HNpAEc4b0AAUWpk.jpg"
+      ],
+      "text": "7月20日十津川村は晴天です。十津川飛香さん浴衣盆踊りverの缶バッジ再入荷しました！この季節ぴったりの浴衣姿の十津川飛香さんです。ホテル昴スタッフの絵師さんが描いてくれた「ゴメンね飛香」は1日半でお役目終了となりました。#十津川村#温泉むすめ#十津川飛香 https://t.co/o3LTY2jqD3",
+      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
+    },
+    {
+      "id": "xposter_58acf836c1350d05",
+      "status": "needs_ocr",
+      "priority": "medium",
+      "evidence_type": "poster_or_flyer_image",
+      "assumed_source_confidence": "medium",
+      "account": "@FSR5v7j11g66874",
+      "account_name": "ユア@GPTアカ",
+      "trusted_informant": false,
+      "trusted_informant_rank": "",
+      "url": "https://x.com/FSR5v7j11g66874/status/2079049496231850103",
+      "tweet_id": "2079049496231850103",
+      "date": "2026-07-20T03:43:21+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HNpBHVtbgAAiZPi.jpg",
+        "https://t.co/cNBk4KzPWl",
+        "pic.x.com/cNBk4KzPWl"
+      ],
+      "text": "夏祭り🎆開催お疲れ様です！シュガさん&amp;るる子さん、関係者様がた、タグ/画像使わせていただきます。飛び入り太鼓でお邪魔いたしました！\n#AI集う詠逢公園花火大会\n#AI集う詠逢公園花火大会_利用可画像\n#AIパ界隈盆踊り部\n\n珍しくリアルフォト。人すごい（笑）\n\n『行くぞぉーー！！踊れ踊れーー！』 https://t.co/cNBk4KzPWl",
+      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
+    },
+    {
+      "id": "xposter_1ed52290ac2bbf8d",
+      "status": "needs_ocr",
+      "priority": "medium",
+      "evidence_type": "poster_or_flyer_image",
+      "assumed_source_confidence": "medium",
+      "account": "@YMotokazz",
+      "account_name": "金沢発信☆山田元一",
+      "trusted_informant": false,
+      "trusted_informant_rank": "",
+      "url": "https://x.com/YMotokazz/status/2079049571964166152",
+      "tweet_id": "2079049571964166152",
+      "date": "2026-07-20T03:43:39+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HNpEhZlbEAADMCb.jpg",
+        "https://t.co/lgalroHhHD",
+        "pic.x.com/lgalroHhHD"
+      ],
+      "text": "金沢市石引『石引下馬地蔵広場』で\n「石引ゲバゲバ盆踊り」\n8月1日開催\nかなり面白くなってきた石引商店街の夏祭り\nDJが入っての盆踊り https://t.co/lgalroHhHD",
+      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
+    },
+    {
+      "id": "xposter_7c22f91b9befe534",
+      "status": "needs_ocr",
+      "priority": "medium",
+      "evidence_type": "poster_or_flyer_image",
+      "assumed_source_confidence": "medium",
+      "account": "@honda_mosamosa",
+      "account_name": "本多真梨子",
+      "trusted_informant": false,
+      "trusted_informant_rank": "",
+      "url": "https://x.com/honda_mosamosa/status/2079049832518566376",
+      "tweet_id": "2079049832518566376",
+      "date": "2026-07-20T03:44:41+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HNpEyw4a0AAX3Uj.jpg",
+        "https://t.co/llsRrCZBit",
+        "pic.x.com/llsRrCZBit",
+        "https://pbs.twimg.com/media/HNpEyw8bAAEkdpN.jpg"
+      ],
+      "text": "昨日の伊勢崎アニソン盆踊りに、なんと…サンドローネとイヌたんがいました…！！私がCV担当したキャラが会場にいてくれてめちゃくちゃ嬉しかったです！お写真いただきましたー！他にも色んなコスプレの方がいて見つけるの楽しかった！ありがとうございます…！ https://t.co/llsRrCZBit",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
     }
   ]

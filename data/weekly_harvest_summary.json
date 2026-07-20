@@ -1,21 +1,21 @@
 {
   "generated_by": "prepare_weekly_harvest_review.py",
-  "generated_at": "2026-07-20T02:56:54.301045+00:00",
+  "generated_at": "2026-07-20T03:48:08.099018+00:00",
   "source": "build_weekly_harvest_candidates.py",
-  "source_generated_at": "2026-07-20T02:56:46.483389+00:00",
+  "source_generated_at": "2026-07-20T03:48:01.622730+00:00",
   "days": 3,
-  "voice_count": 1061,
-  "candidate_count": 141,
+  "voice_count": 1119,
+  "candidate_count": 148,
   "category_counts": {
     "曲×会場共起": 15,
-    "曲候補": 120,
+    "曲候補": 127,
     "用語候補": 6
   },
   "non_song_review_count": 21,
-  "song_candidate_count": 120,
-  "song_direct_dry_run_count": 105,
-  "song_review_count": 2,
-  "song_rejected_noise_count": 13,
+  "song_candidate_count": 127,
+  "song_direct_dry_run_count": 109,
+  "song_review_count": 3,
+  "song_rejected_noise_count": 15,
   "review_files": {
     "non_song_json": "data/weekly_harvest_review_candidates.json",
     "non_song_ui": "data/weekly_harvest_review_ui.html",
@@ -42,8 +42,9 @@
       "赤坂は素敵な踊り × 浄土寺"
     ],
     "song_review": [
-      "盆ジョビ",
-      "郡上おどり"
+      "郡上おどり",
+      "徳島市阿波おどり",
+      "盆ジョビ"
     ]
   }
 }

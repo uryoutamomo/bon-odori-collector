@@ -1,8 +1,56 @@
 {
   "generated_by": "triage_weekly_song_candidates.py",
   "source": "data/weekly_harvest_candidates.json",
-  "count": 2,
+  "count": 3,
   "rows": [
+    {
+      "category": "曲候補",
+      "type": "曲名",
+      "term": "郡上おどり",
+      "interpretation": "郡上おどり",
+      "confidence": "要レビュー",
+      "reason": "曲名抽出器で検出: known_song_context, song_suffix_near_context",
+      "evidence_count": 2,
+      "evidence": [
+        {
+          "url": "https://x.com/biscuitchiannel/status/2079040638176387142",
+          "date": "2026-07-20T03:08:09+00:00",
+          "account": "@biscuitchiannel",
+          "text": "第106回びすちゃみーてぃんぐ【夏企画！盆踊りを踊りたい！郡上おどりin青山へ行こう。前編/練習編】 https://t.co/4X76ZoPzU6 @YouTubeより"
+        },
+        {
+          "url": "https://x.com/iko_yo_trip/status/2077981625367908774",
+          "date": "2026-07-17T05:00:01+00:00",
+          "account": "@iko_yo_trip",
+          "text": "＼夏は徹夜で踊ろう！郡上おどりの熱気を体感／ 浴衣と下駄でひと晩中踊る伝統の盆踊り🌙 親子で楽しめる日本三大盆踊りの一つ！ おすすめポイント ✅ 400年以上の伝統・ユネスコ無形文化遺産 🌍 ✅ 浴衣で参加OK・子ども向け体験も多数 👘👶 ✅ 徹夜おどりは8/13〜16の圧巻の熱気🔥（公式情報を事前確認してね） 🗓 例年7月中旬〜9月上旬（徹夜：8/13〜16） 📍 岐阜県郡上市・郡上八幡（八幡町市街地） 行ってみたい？行ったことある人は思い出を教えて！フォローで子連れおでかけ情報をチェック✔️ 開催情報📝 https://t.co/8ADYYIeNeK"
+        }
+      ],
+      "evidence_text": "第106回びすちゃみーてぃんぐ【夏企画！盆踊りを踊りたい！郡上おどりin青山へ行こう。前編/練習編】 https://t.co/4X76ZoPzU6 @YouTubeより\n---\n＼夏は徹夜で踊ろう！郡上おどりの熱気を体感／ 浴衣と下駄でひと晩中踊る伝統の盆踊り🌙 親子で楽しめる日本三大盆踊りの一つ！ おすすめポイント ✅ 400年以上の伝統・ユネスコ無形文化遺産 🌍 ✅ 浴衣で参加OK・子ども向け体験も多数 👘👶 ✅ 徹夜おどりは8/13〜16の圧巻の熱気🔥（公式情報を事前確認してね） 🗓 例年7月中旬〜9月上旬（徹夜：8/13〜16） 📍 岐阜県郡上市・郡上八幡（八幡町市街地） 行ってみたい？行ったことある人は思い出を教えて！フォローで子連れおでかけ情報をチェック✔️ 開催情報📝 https://t.co/8ADYYIeNeK",
+      "evidence_url": "https://x.com/biscuitchiannel/status/2079040638176387142",
+      "canonical_song_name": "郡上おどり",
+      "triage_reason": "多義語・イベント名・ジャンル名の可能性がある"
+    },
+    {
+      "category": "曲候補",
+      "type": "曲名",
+      "term": "徳島市阿波おどり",
+      "interpretation": "徳島市阿波おどり",
+      "confidence": "要レビュー",
+      "reason": "曲名抽出器で検出: song_suffix_near_context",
+      "evidence_count": 1,
+      "evidence": [
+        {
+          "url": "https://x.com/osaka_orion/status/2079041102603018510",
+          "date": "2026-07-20T03:10:00+00:00",
+          "account": "@osaka_orion",
+          "text": "【12,980円～13,980円（税込）】 新大阪発🚍8月14・15日出発✨ 一生に一度は観たい！日本最大の盆踊り「徳島市阿波おどり」を有料観覧席”S席”から鑑賞！日帰りバスツアー💖 URL：https://t.co/JyfXvTMa0f #旅行会社 #オリオンツアー https://t.co/Qu1zAgwucs"
+        }
+      ],
+      "evidence_text": "【12,980円～13,980円（税込）】 新大阪発🚍8月14・15日出発✨ 一生に一度は観たい！日本最大の盆踊り「徳島市阿波おどり」を有料観覧席”S席”から鑑賞！日帰りバスツアー💖 URL：https://t.co/JyfXvTMa0f #旅行会社 #オリオンツアー https://t.co/Qu1zAgwucs",
+      "evidence_url": "https://x.com/osaka_orion/status/2079041102603018510",
+      "canonical_song_name": "徳島市阿波おどり",
+      "triage_reason": "多義語・イベント名・ジャンル名の可能性がある"
+    },
     {
       "category": "曲候補",
       "type": "曲名",
@@ -22,27 +70,6 @@
       "evidence_text": "ねぇ おぼえてる？ 夏の夜といえば盆踊り！ 蝉の声にまじって聞こえてくる音頭。 町会自治会のテントでかき氷食べたり、焼きそばとかたこ焼き食べたり、友達と夜に遊べたり、オトナのまねして踊ってみたり。 特別な思い出だよね。 都会とか田舎とか、やってる場所とかにちがいはあるけど、地域のオトナたちとコドモたちがみんな楽しみにしているんだ。 いまだにドラえもん音頭やアラレちゃん音頭が現役だったりするところもあるみたいだけど、新しいアニメ音頭、そろそろ欲しいよね。 鬼滅音頭とかいいと思うな！ え？ 盆ジョビ？ それは中野駅前大盆踊りでやるみたいだよ。",
       "evidence_url": "https://x.com/natsuzora_boken/status/2078062446754103683",
       "canonical_song_name": "盆ジョビ",
-      "triage_reason": "多義語・イベント名・ジャンル名の可能性がある"
-    },
-    {
-      "category": "曲候補",
-      "type": "曲名",
-      "term": "郡上おどり",
-      "interpretation": "郡上おどり",
-      "confidence": "要レビュー",
-      "reason": "曲名抽出器で検出: known_song_context, song_suffix_near_context",
-      "evidence_count": 1,
-      "evidence": [
-        {
-          "url": "https://x.com/iko_yo_trip/status/2077981625367908774",
-          "date": "2026-07-17T05:00:01+00:00",
-          "account": "@iko_yo_trip",
-          "text": "＼夏は徹夜で踊ろう！郡上おどりの熱気を体感／ 浴衣と下駄でひと晩中踊る伝統の盆踊り🌙 親子で楽しめる日本三大盆踊りの一つ！ おすすめポイント ✅ 400年以上の伝統・ユネスコ無形文化遺産 🌍 ✅ 浴衣で参加OK・子ども向け体験も多数 👘👶 ✅ 徹夜おどりは8/13〜16の圧巻の熱気🔥（公式情報を事前確認してね） 🗓 例年7月中旬〜9月上旬（徹夜：8/13〜16） 📍 岐阜県郡上市・郡上八幡（八幡町市街地） 行ってみたい？行ったことある人は思い出を教えて！フォローで子連れおでかけ情報をチェック✔️ 開催情報📝 https://t.co/8ADYYIeNeK"
-        }
-      ],
-      "evidence_text": "＼夏は徹夜で踊ろう！郡上おどりの熱気を体感／ 浴衣と下駄でひと晩中踊る伝統の盆踊り🌙 親子で楽しめる日本三大盆踊りの一つ！ おすすめポイント ✅ 400年以上の伝統・ユネスコ無形文化遺産 🌍 ✅ 浴衣で参加OK・子ども向け体験も多数 👘👶 ✅ 徹夜おどりは8/13〜16の圧巻の熱気🔥（公式情報を事前確認してね） 🗓 例年7月中旬〜9月上旬（徹夜：8/13〜16） 📍 岐阜県郡上市・郡上八幡（八幡町市街地） 行ってみたい？行ったことある人は思い出を教えて！フォローで子連れおでかけ情報をチェック✔️ 開催情報📝 https://t.co/8ADYYIeNeK",
-      "evidence_url": "https://x.com/iko_yo_trip/status/2077981625367908774",
-      "canonical_song_name": "郡上おどり",
       "triage_reason": "多義語・イベント名・ジャンル名の可能性がある"
     }
   ]

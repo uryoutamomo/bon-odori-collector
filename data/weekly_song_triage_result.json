@@ -1,12 +1,12 @@
 {
   "dry_run": true,
   "source": "data/weekly_harvest_candidates.json",
-  "song_candidate_count": 120,
-  "direct_count": 105,
-  "created_count": 90,
-  "updated_count": 15,
-  "rejected_noise_count": 13,
-  "review_count": 2,
+  "song_candidate_count": 127,
+  "direct_count": 109,
+  "created_count": 93,
+  "updated_count": 16,
+  "rejected_noise_count": 15,
+  "review_count": 3,
   "created": [
     {
       "song_name": "巣鴨花咲き音頭",
@@ -139,6 +139,22 @@
     {
       "song_name": "きよしのズンドコ節",
       "source_term": "きよしのズンドコ節",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "この夏マリン音頭",
+      "source_term": "この夏マリン音頭",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 1,
+      "dry_run": true
+    },
+    {
+      "song_name": "この季節",
+      "source_term": "この季節",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
@@ -473,6 +489,14 @@
       "dry_run": true
     },
     {
+      "song_name": "最も踊り",
+      "source_term": "最も踊り",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
       "song_name": "月島音頭",
       "source_term": "月島音頭",
       "target": "create",
@@ -734,7 +758,7 @@
       "song_name": "ダンシングヒーロー",
       "source_term": "ダンシングヒーロー",
       "target": "update",
-      "venue_relations": 1,
+      "venue_relations": 0,
       "event_relations": 1,
       "dry_run": true
     },
@@ -827,6 +851,14 @@
       "dry_run": true
     },
     {
+      "song_name": "炭坑節",
+      "source_term": "炭鉱節",
+      "target": "update",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
       "song_name": "白鳥おどり",
       "source_term": "白鳥おどり",
       "target": "update",
@@ -885,6 +917,10 @@
       "reason": "曲名としての形が弱い"
     },
     {
+      "term": "昨日の追加踊り",
+      "reason": "曲名としての形が弱い"
+    },
+    {
       "term": "昼間から各チーム踊り",
       "reason": "曲名としての形が弱い"
     },
@@ -901,22 +937,32 @@
       "reason": "曲名としての形が弱い"
     },
     {
+      "term": "自分を死へ導いた踊り",
+      "reason": "曲名としての形が弱い"
+    },
+    {
       "term": "花火の前に踊り",
       "reason": "曲名としての形が弱い"
     }
   ],
   "review": [
     {
+      "term": "郡上おどり",
+      "evidence_count": 2,
+      "reason": "多義語・イベント名・ジャンル名の可能性がある",
+      "evidence_url": "https://x.com/biscuitchiannel/status/2079040638176387142"
+    },
+    {
+      "term": "徳島市阿波おどり",
+      "evidence_count": 1,
+      "reason": "多義語・イベント名・ジャンル名の可能性がある",
+      "evidence_url": "https://x.com/osaka_orion/status/2079041102603018510"
+    },
+    {
       "term": "盆ジョビ",
       "evidence_count": 1,
       "reason": "多義語・イベント名・ジャンル名の可能性がある",
       "evidence_url": "https://x.com/natsuzora_boken/status/2078062446754103683"
-    },
-    {
-      "term": "郡上おどり",
-      "evidence_count": 1,
-      "reason": "多義語・イベント名・ジャンル名の可能性がある",
-      "evidence_url": "https://x.com/iko_yo_trip/status/2077981625367908774"
     }
   ]
 }

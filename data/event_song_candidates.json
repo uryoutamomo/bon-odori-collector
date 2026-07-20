@@ -1,8 +1,8 @@
 {
   "generated_by": "build_event_song_candidates.py",
-  "count": 1029,
+  "count": 1031,
   "public_event_count": 348,
-  "review_count": 681,
+  "review_count": 683,
   "candidates": [
     {
       "id": "9870f5a616f1a007",
@@ -4962,7 +4962,7 @@
       "evidence_count": 2
     },
     {
-      "id": "2d264187ce15f9f5",
+      "id": "f13d8613b8635093",
       "song_name": "ダンシングヒーロー",
       "event_name": "盆踊り大会",
       "venue": "木場二丁目公園",
@@ -4973,6 +4973,12 @@
         "known_song_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/Shiina_Pa/status/2079048744386109833",
+          "date": "2026-07-20T03:40:22+00:00",
+          "text": "志稲\n近隣の盆踊り大会のラスト「好きになった人」をみんなで踊りまくる文化好き。昨日の追加踊りは「ダンシングヒーロー」だった。"
+        },
         {
           "source": "x_voice",
           "url": "https://x.com/luckynosu/status/2078875180311687171",
@@ -5185,7 +5191,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 35
+      "evidence_count": 36
     },
     {
       "id": "6f209e9a45da7de9",
@@ -7610,7 +7616,7 @@
       "evidence_count": 2
     },
     {
-      "id": "98de09b2dd48f2ae",
+      "id": "30c001d258ca7975",
       "song_name": "郡上おどり",
       "event_name": "郡上おどり in 青山",
       "venue": "秩父宮ラグビー場駐車場",
@@ -7622,6 +7628,12 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/biscuitchiannel/status/2079040638176387142",
+          "date": "2026-07-20T03:08:09+00:00",
+          "text": "びすけっと（あおいまこ）\n第106回びすちゃみーてぃんぐ【夏企画！盆踊りを踊りたい！郡上おどりin青山へ行こう。前編/練習編】 https://t.co/4X76ZoPzU6 @YouTubeより"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=uIC45DrpSb0",
@@ -7996,7 +8008,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 62
+      "evidence_count": 63
     },
     {
       "id": "cd28c4cce97924e0",
@@ -21151,6 +21163,28 @@
       "evidence_count": 13
     },
     {
+      "id": "237674421a0e4d53",
+      "song_name": "この夏マリン音頭",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/AhoyBananamilk/status/2079046531685224764",
+          "date": "2026-07-20T03:31:34+00:00",
+          "text": "バナナミルク🏴‍☠️🐚‎\n@Ilovehololive_ とみーさんおはあり！☀🏴‍☠️\n乗り移っても毛根はあげないんだからねっ！ｷｯ(　`ᾥ´　)✨✨\n昭和の女宝鐘マリン✨次なるターゲットは盆踊り会場ってワケぺこな😎✨\n一味法被も大活躍✨\n宝鐘海賊団盆踊り大会で花火もできて踊れてパーペキ✨\n証明完了QED💪✨この夏マリン音頭が熱い！🦆( '-' 🦆)ｶﾓ✨"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
       "id": "9fc4d98560554cbc",
       "song_name": "ご祝儀音頭",
       "event_name": "盆踊り大会",
@@ -23481,7 +23515,7 @@
       "evidence_count": 1
     },
     {
-      "id": "db2c9c8c63c2d5e2",
+      "id": "cd68d6e969b2caeb",
       "song_name": "巣鴨花咲き音頭",
       "event_name": "盆踊り大会",
       "venue": "木場二丁目公園",
@@ -23492,6 +23526,12 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=SmzgDG9SOrg",
+          "date": "2026-07-20T03:00:40+00:00",
+          "text": "和太鼓お祭りCH\nバハマ・ママ　「第46回巣鴨盆踊り大会」19　2026年7月18日　巣鴨駅前南口ロータリー盆踊り　巣一商店会\n2026年7月18日、豊島区の巣鴨駅前南口ロータリーにて開催された「第46回巣鴨盆踊り大会」の様子です。\n\n巣一商店会主催のもと、\n駅前の活気ある雰囲気の中で踊られる盆踊りをお届けします。\n地元の方々や観光客が一体となって盛り上がる、\n夏の巣鴨ならではの熱気をお楽しみください！\n\n和太鼓の響きとともに、日本の夏の情緒を感じていただければ幸いです。\n\n#巣鴨 #盆踊り #巣鴨花咲き音頭 #巣一商店会 #夏祭り #和太鼓 #東京の祭り #巣鴨駅前\n\n\n巣鴨駅前盆踊り\n１巣鴨花咲音頭　https://youtu.be/9dqKwAudGS4\n２きよしのドドンパ　https://youtu.be/wq9yyUc_IXY\n３バハマママ　https://youtu.be/TArlwnMgoPM\n４恋するフォーチュン"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=rhXPFP67n8I",
@@ -23680,10 +23720,10 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 31
+      "evidence_count": 32
     },
     {
-      "id": "35d3318a23760e67",
+      "id": "f463729f7915690b",
       "song_name": "巣鴨花咲音頭",
       "event_name": "盆踊り大会",
       "venue": "木場二丁目公園",
@@ -23694,6 +23734,12 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=SmzgDG9SOrg",
+          "date": "2026-07-20T03:00:40+00:00",
+          "text": "和太鼓お祭りCH\nバハマ・ママ　「第46回巣鴨盆踊り大会」19　2026年7月18日　巣鴨駅前南口ロータリー盆踊り　巣一商店会\n2026年7月18日、豊島区の巣鴨駅前南口ロータリーにて開催された「第46回巣鴨盆踊り大会」の様子です。\n\n巣一商店会主催のもと、\n駅前の活気ある雰囲気の中で踊られる盆踊りをお届けします。\n地元の方々や観光客が一体となって盛り上がる、\n夏の巣鴨ならではの熱気をお楽しみください！\n\n和太鼓の響きとともに、日本の夏の情緒を感じていただければ幸いです。\n\n#巣鴨 #盆踊り #巣鴨花咲き音頭 #巣一商店会 #夏祭り #和太鼓 #東京の祭り #巣鴨駅前\n\n\n巣鴨駅前盆踊り\n１巣鴨花咲音頭　https://youtu.be/9dqKwAudGS4\n２きよしのドドンパ　https://youtu.be/wq9yyUc_IXY\n３バハマママ　https://youtu.be/TArlwnMgoPM\n４恋するフォーチュン"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=rhXPFP67n8I",
@@ -23804,7 +23850,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 18
+      "evidence_count": 19
     },
     {
       "id": "17bac97093cdee84",
@@ -24613,6 +24659,28 @@
           "url": "https://www.youtube.com/watch?v=erYzQsWowvA",
           "date": "2026-07-14T12:00:06+00:00",
           "text": "和太鼓お祭りCH\n台東区の歌（旧台東音頭）　「入谷朝顔音頭踊り大会」盆踊り18　2026年7月6日　台東区入谷南公園　（Insta360　Luna Ultra）\n2026年7月6日、東京都台東区の入谷南公園で開催された「入谷朝顔音頭踊り大会」1日目の様子です。\n\n下町の夏の風物詩である\n「朝顔まつり（入谷朝顔市）」に合わせて行われるこの盆踊り大会。\n地元の方々や、\n朝顔市を訪れた多くの人々が輪になり、軽やかに踊る姿をぜひご覧ください。\n\n入谷の夏ならではの活気ある雰囲気をお楽しみいただければ幸いです！\n\n\n#盆踊り #朝顔音頭 #入谷朝顔音頭踊り大会 #入谷朝顔市 #台東区 #入谷 #夏祭り #和太鼓お祭りチャンネル\n\n\n\n入谷朝顔盆踊り1日目\n１朝顔音頭　https://youtu.be/1m7tU-I8rsA\n２東京音頭　https://youtu.be/pmNaC6_nFrk\n３炭坑節　https://youtu.be/p"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "6601d2828abdb65e",
+      "song_name": "昨日の追加踊り",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/Shiina_Pa/status/2079048744386109833",
+          "date": "2026-07-20T03:40:22+00:00",
+          "text": "志稲\n近隣の盆踊り大会のラスト「好きになった人」をみんなで踊りまくる文化好き。昨日の追加踊りは「ダンシングヒーロー」だった。"
         }
       ],
       "already_public": false,
