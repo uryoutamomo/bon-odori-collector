@@ -24,6 +24,7 @@ class ReviewInboxYouTubeAdapterTest(unittest.TestCase):
         self.assertEqual(snapshot["item_count"], 3)
         self.assertEqual(snapshot["input_sha256"], input_sha256(FIXTURE.read_bytes()))
         self.assertEqual(snapshot["write_mode"], "snapshot_only_default_off")
+        self.assertEqual(snapshot["selection"]["mode"], "all")
         self.assertEqual({item["kind"] for item in snapshot["items"]}, {"youtube_evidence"})
         self.assertEqual({item["time_scope"] for item in snapshot["items"]}, {"historical"})
         self.assertEqual(

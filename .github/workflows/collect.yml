@@ -265,3 +265,62 @@ jobs:
           ${{ runner.temp }}/rare-signal-inbox-report.json
         if-no-files-found: warn
         retention-days: 30
+
+    - name: Build and commit YouTube active legacy review
+      id: youtube_active_legacy
+      if: ${{ vars.REVIEW_INBOX_YOUTUBE_ACTIVE_DUAL_WRITE_ENABLED == 'true' && vars.MASTER_DB_S3_BUCKET != '' }}
+      run: |
+        python build_youtube_active_video_review.py --max-per-channel 10000
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add -f data/youtube_active_video_review.json
+        git add -f data/youtube_active_video_review.md
+        python guard_git_large_files.py
+        git diff --cached --quiet || (git commit -m "Update YouTube active video review" && git push)
+        echo "built=true" >> "$GITHUB_OUTPUT"
+
+    - name: Dual-write YouTube active review to review inbox
+      id: youtube_active_inbox
+      if: ${{ steps.youtube_active_legacy.outputs.built == 'true' }}
+      env:
+        MASTER_DB_S3_BUCKET: ${{ vars.MASTER_DB_S3_BUCKET }}
+        MASTER_DB_S3_PREFIX: ${{ vars.MASTER_DB_S3_PREFIX || 'master-rdb' }}
+        AWS_REGION: ap-northeast-1
+        REVIEW_INBOX_YOUTUBE_ACTIVE_SCHEDULED_ENABLED: 'true'
+        REVIEW_INBOX_DUAL_WRITE_MODE: bulk
+        REVIEW_INBOX_CAS_PUBLISH_ENABLED: 'true'
+        REVIEW_INBOX_READER_MODE: legacy
+        REVIEW_INBOX_LEGACY_WRITER_ENABLED: 'true'
+      run: |
+        TODAY="$(TZ=Asia/Tokyo date +%F)"
+        python run_review_inbox_youtube_active_scheduled.py \
+          --execute \
+          --confirm 'RUN SCHEDULED YOUTUBE ACTIVE DUAL WRITE' \
+          --input data/youtube_active_video_review.json \
+          --snapshot-out "$RUNNER_TEMP/youtube-active-inbox-snapshot.json" \
+          --report-out "$RUNNER_TEMP/youtube-active-inbox-report.json" \
+          --observation-id "github-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}" \
+          --public-today "$TODAY"
+        python master_db_s3_artifact.py fetch --overwrite
+        python review_inbox.py --out-json data/review_inbox.json --status pending
+        echo "ran=true" >> "$GITHUB_OUTPUT"
+
+    - name: Commit YouTube active inbox projection
+      if: ${{ steps.youtube_active_inbox.outputs.ran == 'true' }}
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add -f data/review_inbox.json
+        python guard_git_large_files.py
+        git diff --cached --quiet || (git commit -m "Update YouTube active review inbox" && git push)
+
+    - name: Upload YouTube active inbox evidence
+      if: ${{ always() && vars.REVIEW_INBOX_YOUTUBE_ACTIVE_DUAL_WRITE_ENABLED == 'true' && vars.MASTER_DB_S3_BUCKET != '' }}
+      uses: actions/upload-artifact@v4
+      with:
+        name: youtube-active-inbox-${{ github.run_id }}-${{ github.run_attempt }}
+        path: |
+          ${{ runner.temp }}/youtube-active-inbox-snapshot.json
+          ${{ runner.temp }}/youtube-active-inbox-report.json
+        if-no-files-found: warn
+        retention-days: 30
