@@ -1,4 +1,4 @@
-# Local Song/Glossary Harvest Fallback Operations
+# Manual Song/Glossary Harvest Fallback Operations
 
 Updated: 2026-06-27 JST
 署名: おと（Codex）
@@ -17,7 +17,7 @@ Automatic:
 Manual only:
 
 - GitHub Actions `weekly_harvest.yml`, now workflow_dispatch only.
-- Local `run_weekly_glossary_review.py`.
+- Local `run_manual_glossary_review.py`.
 - Human review of generated song/glossary queues, whenever Uchida-san chooses.
 - Applying reviewed song/glossary decisions.
 - Writing weekly cost rows to Notion.
@@ -27,7 +27,7 @@ Manual only:
 The local runner now requires an explicit manual flag:
 
 ```bash
-python3 run_weekly_glossary_review.py --manual --days 3
+python3 run_manual_glossary_review.py --manual --days 3
 ```
 
 Without `--manual`, it exits before running the generation commands.
@@ -41,7 +41,7 @@ can create unreviewed local diffs that GitHub Actions cannot see.
 The repo keeps a plist template for emergency local use:
 
 ```text
-ops/com.ryotauchida.bon-odori.glossary-weekly.plist
+ops/com.ryotauchida.bon-odori.glossary-manual.plist
 ```
 
 It is deliberately not a schedule:
@@ -60,13 +60,13 @@ local review UI immediately.
 Normal manual check:
 
 ```bash
-python3 run_weekly_glossary_review.py --manual --days 3
+python3 run_manual_glossary_review.py --manual --days 3
 ```
 
 Outputs:
 
-- `data/weekly_glossary_review_run.json`
-- `data/weekly_glossary_review_run.md`
+- `data/manual_glossary_review_run.json`
+- `data/manual_glossary_review_run.md`
 - `data/weekly_harvest_candidates.json`
 - `data/weekly_harvest_review_candidates.json`
 - `data/weekly_harvest_review_ui.html`
@@ -80,11 +80,10 @@ It must not be extended to apply reviewed decisions automatically.
 Review timing is intentionally manual and opportunistic; a generated queue can
 wait until Uchida-san chooses to review it.
 
-Use the manual fallback workflow inputs or local apply commands for apply flows:
-
-- `apply_reviewed=true` for reviewed song/glossary decisions.
-- `apply_dry_run=false` only after reviewing the generated apply result.
-- `sync_weekly_costs_to_notion=true` only when intentionally writing cost rows.
+Use the dedicated `apply_*.py` commands directly for reviewed song/glossary decisions.
+They remain separate from this local artifact generator and retain their own
+dry-run and confirmation safeguards. `sync_weekly_costs_to_notion=true` remains
+the only write option in the manual GitHub workflow.
 
 ## Re-enabling Rule
 

@@ -61,7 +61,7 @@ flowchart TD
 | 手動維持（継続的入力ツール） | Firsthand field report apply | 内田さん本人の現地一次情報（曲目・新規イベント）をmaster RDBへ反映する対話ツール。`apply_firsthand_field_report.py` はデフォルトdry-run、実更新は `--apply --confirm 'APPLY FIRSTHAND FIELD REPORT'` 必須。曖昧な対象は自動生成せず候補提示のみで停止する。apply後は必ずS3 publishが必要。方針は `docs/firsthand-field-report-operations.md`。 |
 | 手動維持（継続的入力ツール） | Official notice field report apply | 町の掲示板・回覧板・公式チラシ等の画像（1枚に複数イベントを含みうる）をmaster RDBへ反映する対話ツール。`apply_official_notice_report.py` はデフォルトdry-run、実更新は `--apply --confirm 'APPLY OFFICIAL NOTICE FIELD REPORT'` 必須。曖昧なイベントはmedium issueで個別スキップし、確定できたイベントだけ適用する部分適用方針。apply後は必ずS3 publishが必要。方針は `docs/official-notice-field-report-operations.md`。 |
 | 停止維持済み | Mac `com.koto.*` LaunchAgents | 2026-06-26に内田さん確認済み: いま「こと」を起動しない。全plistを `~/Library/LaunchAgents/*.plist.disabled` へ退避済み。 |
-| 手動化済み | `ops/com.ryotauchida.bon-odori.glossary-weekly.plist` | 曲/用語収穫は日次 `collect.yml` へ統合済み。ローカル旧週次は手動fallbackのみ。plistは `Disabled=true`、scheduleなし、`run_weekly_glossary_review.py --manual` 必須。 |
+| 手動化済み | `ops/com.ryotauchida.bon-odori.glossary-manual.plist` | 曲/用語収穫は日次 `collect.yml` へ統合済み。ローカル手動fallbackのみ。plistは `Disabled=true`、scheduleなし、`run_manual_glossary_review.py --manual` 必須。 |
 | 手動化済み | `com.ryotauchida.bon-odori.youtube-daily.plist` | `~/Library/LaunchAgents/*.plist.disabled` へ退避済み。repoテンプレートも手動fallback化済み。 |
 | 手動化済み | `com.oto.bon-odori-site.plist.disabled` | `~/Library/LaunchAgents/*.plist.disabled` へ退避済み。必要時は `127.0.0.1` bindで手動起動する。 |
 | 自動化候補 | `verify_master_rdb_s3.yml` の read-only audit | 通常workflow内に組み込み済み。単独workflowは手動検証として残す。 |
@@ -116,7 +116,7 @@ flowchart TD
 | `com.koto.bon-odori-calendar-sync.plist.disabled` | disabled | `sync_gcal.py` | medium | 手動維持。`sync_gcal.py` はデフォルトdry-run、実反映は `python3 sync_gcal.py --apply` の明示実行だけ。 |
 | `com.koto.bon-odori-watchdog.plist.disabled` | disabled | `gh workflow run send_mail.yml` if pending mail remains | low-medium | 停止維持。GitHub側watchdogがあるため起動しない。 |
 | `com.oto.bon-odori-site.plist.disabled` | disabled | local `python3 -m http.server 8642 --bind 127.0.0.1` | low | 手動維持。公開deployとは無関係。旧plistの `0.0.0.0` bindは使わない。 |
-| `ops/com.ryotauchida.bon-odori.glossary-weekly.plist` | disabled template | `run_weekly_glossary_review.py --manual --days 3` | low-medium | 手動fallbackのみ。定期実行元は日次 `collect.yml`。 |
+| `ops/com.ryotauchida.bon-odori.glossary-manual.plist` | disabled template | `run_manual_glossary_review.py --manual --days 3` | low-medium | 手動fallbackのみ。定期実行元は日次 `collect.yml`。 |
 
 ## Deep Dive Queue
 
