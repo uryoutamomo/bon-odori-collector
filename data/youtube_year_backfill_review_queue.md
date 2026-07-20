@@ -1,16 +1,17 @@
 # YouTube年バックフィル review キュー
 
-- generated_at: 2026-06-20T10:07:10.254158+00:00
-- groups: 20
-- undecided_groups: 0
-- videos: 47
-- action_counts: {'already_decided': 20}
+- generated_at: 2026-07-20T04:16:08.629846+00:00
+- groups: 21
+- undecided_groups: 1
+- videos: 48
+- action_counts: {'already_decided': 20, 'single_video_hold': 1}
 
 | action | existing | year | videos | songs | score | event | venue | sample |
 | --- | --- | ---: | ---: | ---: | ---: | --- | --- | --- |
 | already_decided | merge_to_existing | 2023 | 2 | 0 | 58 | みたままつり 納涼民踊のつどい | 靖国神社 | 4K 🏮＃鹿児島おはら節🎎＃靖国神社＃みたままつり盆踊り大会2023🏮＃日本の夏祭り＃KagoshimaOharaBushi https://www.youtube.com/watch?v=Jb59NHC19h4 |
 | already_decided | hold | 2023 | 1 | 0 | 50 | 奥沢交和会 | 奥沢小学校 | 奉優会ケアマネ福太郎の夏の思い出 https://www.youtube.com/watch?v=IPsxSKCDUwc |
 | already_decided | merge_to_existing | 2023 | 1 | 0 | 65 | 奥浅草盆踊り | 隅田公園 | 第１回 奥浅草盆踊り大会 https://www.youtube.com/watch?v=dAN64AvV95s |
+| single_video_hold |  | 2023 | 1 | 1 | 68 | 神田明神納涼祭り アニソン盆踊り | 神田明神境内 | 8/11/2023 Kandamyoujin Festival 神田明神納涼祭り（アニソン盆踊り） https://www.youtube.com/watch?v=lnNRMFZtwDw |
 | already_decided | duplicate_year_drop | 2023 | 2 | 56 | 55 | 第10回白金台どんぐり児童遊園 納涼盆踊り大会 | 白金台どんぐり児童遊園 | 東北音頭　2024年白金台どんぐり児童遊園納涼盆踊り大会24　東京都港区 https://www.youtube.com/watch?v=t9jxIJN6Spo |
 | already_decided | merge_to_existing | 2023 | 2 | 0 | 58 | 第15回 鴨台盆踊り | 大正大学 | 4K 🏮＃チャンチキおけさ～🎎＃大正大学＃鴨台盆踊り大会2023🏮＃日本の夏祭り＃CyantikiOkesa https://www.youtube.com/watch?v=z6Q9xIfQt60 |
 | already_decided | reject | 2023 | 2 | 0 | 50 | 納涼盆踊り大会 | 玉川中町公園 | #104 納涼！盆踊り大会 https://www.youtube.com/watch?v=Uk5Q2EptOg0 |

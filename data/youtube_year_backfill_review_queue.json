@@ -1,18 +1,19 @@
 {
   "generated_by": "build_youtube_year_backfill_review_queue.py",
-  "generated_at": "2026-06-20T10:07:10.254158+00:00",
+  "generated_at": "2026-07-20T04:16:08.629846+00:00",
   "source": "data/youtube_year_backfill_candidates.json",
   "decision_sources": [
     "data/youtube_year_backfill_review_decisions_koto_2026-06-20.json",
     "data/youtube_year_backfill_review_decisions_oto_2026-06-20.json"
   ],
   "summary": {
-    "group_count": 20,
-    "video_count": 47,
-    "undecided_group_count": 0,
-    "undecided_video_count": 0,
+    "group_count": 21,
+    "video_count": 48,
+    "undecided_group_count": 1,
+    "undecided_video_count": 1,
     "action_counts": {
-      "already_decided": 20
+      "already_decided": 20,
+      "single_video_hold": 1
     }
   },
   "groups": [
@@ -106,6 +107,30 @@
           "setlist_count": 0,
           "published_at": "2023-07-31T01:32:42Z",
           "query": "奥浅草盆踊り 隅田公園 台東区 2023 盆踊り"
+        }
+      ]
+    },
+    {
+      "event_name": "神田明神納涼祭り アニソン盆踊り",
+      "venue": "神田明神境内",
+      "target_year": 2023,
+      "video_count": 1,
+      "song_candidate_count": 1,
+      "max_score": 68,
+      "channels": [
+        "everwalk"
+      ],
+      "detected_dates": [],
+      "candidate_action": "single_video_hold",
+      "existing_decision": null,
+      "videos": [
+        {
+          "title": "8/11/2023 Kandamyoujin Festival 神田明神納涼祭り（アニソン盆踊り）",
+          "url": "https://www.youtube.com/watch?v=lnNRMFZtwDw",
+          "score": 68,
+          "setlist_count": 1,
+          "published_at": "2023-08-13T01:00:19Z",
+          "query": "神田明神納涼祭り アニソン盆踊り 2023 YouTube 盆踊り"
         }
       ]
     },
