@@ -61,7 +61,12 @@ def legacy_public_fields_from_axes(current_event_state, date_certainty_tier):
 
 
 def axes_from_legacy_public_event(event):
-    """Derive canonical axes from the pre-D public projection for shadow migration."""
+    """One-way shadow-migration adapter from the lossy pre-D projection.
+
+    The old fields conflate current state and display, so this is intentionally not
+    the inverse of ``legacy_public_fields_from_axes``.  Use it only to backfill and
+    shadow-compare legacy rows; canonical axes are authoritative after migration.
+    """
     lifecycle = str(event.get("lifecycle_status") or "").lower()
     category = event.get("public_category")
     date_value = str(event.get("date") or "")

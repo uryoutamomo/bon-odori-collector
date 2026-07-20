@@ -45,6 +45,22 @@ class EventStateAxesTest(unittest.TestCase):
         self.assertEqual(legacy["public_category"], "date_unknown")
         self.assertEqual(legacy["display_tier"], "season_hint")
 
+    def test_legacy_backfill_is_intentionally_lossy_for_non_target_year_upcoming(self):
+        axes = axes_from_legacy_public_event({
+            "public_category": "upcoming",
+            "date": "2025-08-01",
+        })
+        self.assertEqual(axes, {
+            "current_event_state": "announced",
+            "date_certainty_tier": "season_hint",
+        })
+        self.assertEqual(
+            legacy_public_fields_from_axes(
+                axes["current_event_state"], axes["date_certainty_tier"]
+            ),
+            {"public_category": "date_unknown", "display_tier": "season_hint"},
+        )
+
 
 if __name__ == "__main__":
     unittest.main()
