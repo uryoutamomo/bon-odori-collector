@@ -2,7 +2,7 @@
 
 作成日: 2026-07-17 JST  
 署名: おと（Codex）  
-ステータス: B0正本適用完了、B1 planレビュー合格・B1-1実装中
+ステータス: B0〜B5完了。統合review inboxを既定readerとして本番運用中
 
 ## 目的と境界
 
@@ -177,6 +177,21 @@ daily/weekly song、term/co-occurrence、accepted venue-song、historical qualit
 3. `collect.yml` / weekly / YouTube workflowから、閉鎖条件を満たしたlegacy UI・queue生成とgit addを外す。
 4. legacy builder本体は削除せず、まず `legacy/` または手動rollback入口へ移す。
 5. Cで導入した `json_fallback_count` は0件を確認したうえで、B完了PRでwarningからhard failへ上げる。
+
+2026-07-20にB5 cutoverを完了した。review consoleの既定readerは統合inbox、legacy readerは
+明示指定時だけのrollback入口である。cutover後のproduction runでも、YouTube 172件と
+low-priority 257件のparity / unmapped 0、RDB integrity、公開投影不変、
+`json_fallback_count == 0` のhard failを確認した。詳細証跡は
+`docs/review-inbox-b5-cutover-runbook.md` を正本とする。
+
+次のE cleanupでは、legacy snapshotとrollback入口を削除せず、まず「通常workflowから参照される
+もの」「parity入力として必要なもの」「読み取り専用で保持するもの」を棚卸しする。削除・移動・
+workflow変更は、この棚卸しを独立レビューした後の別作業とする。
+最初のread-only inventoryは `docs/review-inbox-e-cleanup-inventory.md` に保存し、再生成は
+`python3 scripts/build_review_inbox_legacy_cleanup_inventory.py --out-json ... --out-md ...` で行う。
+この棚卸しで `weekly_harvest.yml` が日次曲・用語入力のalternate live writer（legacy UI再生成、
+commit、手動時の直接Notion apply）だと判明した。内田さんのGOにより、2026-07-20に方針2（縮小）を
+実施し、これら3経路だけを外した。公開更新・OCR・遡及収集などの手動fallbackは残している。
 
 ## 旧キューの閉鎖条件
 

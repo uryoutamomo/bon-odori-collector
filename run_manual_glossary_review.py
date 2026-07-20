@@ -11,8 +11,8 @@ from pathlib import Path
 
 
 DATA = Path("data")
-REPORT_JSON = DATA / "weekly_glossary_review_run.json"
-REPORT_MD = DATA / "weekly_glossary_review_run.md"
+REPORT_JSON = DATA / "manual_glossary_review_run.json"
+REPORT_MD = DATA / "manual_glossary_review_run.md"
 
 
 def run_command(args: list[str]) -> dict:
@@ -66,8 +66,8 @@ def main() -> None:
 
     if not args.manual:
         raise SystemExit(
-            "run_weekly_glossary_review.py is a manual local fallback. "
-            "Use `python3 run_weekly_glossary_review.py --manual --days 7`."
+            "run_manual_glossary_review.py is a manual local fallback. "
+            "Use `python3 run_manual_glossary_review.py --manual --days 7`."
         )
 
     commands = [
@@ -147,7 +147,7 @@ def main() -> None:
         "data/weekly_song_candidates_review_ui.html",
     ]
     report = {
-        "generated_by": "run_weekly_glossary_review.py",
+        "generated_by": "run_manual_glossary_review.py",
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "status": status,
         "days": args.days,

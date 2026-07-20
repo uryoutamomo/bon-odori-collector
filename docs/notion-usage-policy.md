@@ -68,7 +68,7 @@ Daily harvest review boundary:
 - Scheduled song/glossary review queue generation belongs to GitHub Actions `collect.yml`.
 - Uchida-san reviews generated queues only when they choose to; queue generation must not imply automatic apply.
 - GitHub Actions `weekly_harvest.yml` is a manual fallback only.
-- Local `run_weekly_glossary_review.py` is a fallback only and requires `--manual`.
+- Local `run_manual_glossary_review.py` is a fallback only and requires `--manual`.
 - The local glossary weekly plist template is disabled and has no schedule.
 
 Local LaunchAgent boundary:
