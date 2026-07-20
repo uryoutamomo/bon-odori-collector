@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-07-20T05:15:58.717322+00:00",
+  "generated_at": "2026-07-20T05:18:13.846536+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -11355,6 +11355,191 @@
       }
     },
     {
+      "inbox_id": "inbox_32c49053b858d501",
+      "kind": "term",
+      "domain": "曲・用語・低緊急度",
+      "priority_label": "P3",
+      "priority_score": null,
+      "title": "ハシゴ",
+      "event_name": "",
+      "venue": "",
+      "event_year": null,
+      "source_id": "daily_term_candidate",
+      "source_key": "term:用語候補|type:行動語|value:ハシゴ",
+      "source_url": "https://x.com/hisbow2/status/2078975481765146912",
+      "recommended_action": "stage_term_candidate",
+      "status": "pending",
+      "time_scope": "reference",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "66ad9b3ad975cb7512c6383f4096d79ce1056c2f288aa0ccd9ce6a24f9b8898a",
+      "last_seen_at": "github-29718631223-1-daily_term_candidate",
+      "created_at": "2026-07-20T04:47:46.068708+00:00",
+      "updated_at": "2026-07-20T05:16:50.555377+00:00",
+      "payload": {
+        "category": "用語候補",
+        "confidence": "要レビュー",
+        "evidence": [
+          {
+            "account": "@hisbow2",
+            "date": "2026-07-19T22:49:15+00:00",
+            "text": "お初のエリアをハシゴ🪜 時間違いにリード不在、まさかの別会場💦でも行く先々で素敵な出会いに恵まれて、美濃屋マチコさんにお会いできるサプライズも！予定調和じゃないのもたまには良いかな🏮 https://t.co/izRJgsRBxU",
+            "url": "https://x.com/hisbow2/status/2078975481765146912"
+          },
+          {
+            "account": "@bon_hnaf",
+            "date": "2026-07-20T02:40:00+00:00",
+            "text": "7/19 立川市羽衣町本町会 ハシゴ２件目 19時半にみんなでゾロゾロ移動した先！ 毎年の流れです。 狭くて踊りにくいところもあるけど、お祭りは大盛況！！ 今年もありがとうございました！ #盆踊り #立川市 #春夏秋冬 https://t.co/MFDtk97QRk",
+            "url": "https://x.com/bon_hnaf/status/2079033552860262818"
+          },
+          {
+            "account": "@bon_hnaf",
+            "date": "2026-07-20T02:20:53+00:00",
+            "text": "7/19 立川市羽衣町東町会 ハシゴ１件目 踊り仲間の応援へ！ 近所で盆踊り多発の関係か19時半までで、みんなでゾロゾロ移動する楽しさ笑 広い会場で、低い櫓が特徴！！ 今年は踊りの輪がしっかり出来ていたなぁ( ´ ▽ ` ) #盆踊り #立川市 #春夏秋冬 https://t.co/cdvJJyLLHe",
+            "url": "https://x.com/bon_hnaf/status/2079028743314817079"
+          },
+          {
+            "account": "@mackn_mackn",
+            "date": "2026-07-20T01:27:27+00:00",
+            "text": "【盆踊り】2026年7月18日｜日本橋小学校・トルナーレ 日本橋浜町・佃一丁目、夢のハシゴ参加 | macknのファッショントーク https://t.co/9DBbylDSBG #Amebaブログ #アメブロ",
+            "url": "https://x.com/mackn_mackn/status/2079015297789677768"
+          },
+          {
+            "account": "@tanakatakeshi",
+            "date": "2026-07-17T12:38:42+00:00",
+            "text": "【盆踊り練習①】 今宵も盆踊り練習のハシゴです…。 前半は、昭和地区知立団地自治会の盆踊り練習です。 先週のおさらいから始まって、先生のご指導で新曲もバッチリ👍🏻。 知立団地自治会の夏まつりは、8月9日(日)です！ #質実剛健 #田中健 #知立市 #未来共創 #地域密着 #盆踊り https://t.co/y3H19RWmLc",
+            "url": "https://x.com/tanakatakeshi/status/2078097057718673621"
+          }
+        ],
+        "evidence_count": 6,
+        "evidence_text": "お初のエリアをハシゴ🪜 時間違いにリード不在、まさかの別会場💦でも行く先々で素敵な出会いに恵まれて、美濃屋マチコさんにお会いできるサプライズも！予定調和じゃないのもたまには良いかな🏮 https://t.co/izRJgsRBxU\n---\n7/19 立川市羽衣町本町会 ハシゴ２件目 19時半にみんなでゾロゾロ移動した先！ 毎年の流れです。 狭くて踊りにくいところもあるけど、お祭りは大盛況！！ 今年もありがとうございました！ #盆踊り #立川市 #春夏秋冬 https://t.co/MFDtk97QRk\n---\n7/19 立川市羽衣町東町会 ハシゴ１件目 踊り仲間の応援へ！ 近所で盆踊り多発の関係か19時半までで、みんなでゾロゾロ移動する楽しさ笑 広い会場で、低い櫓が特徴！！ 今年は踊りの輪がしっかり出来ていたなぁ( ´ ▽ ` ) #盆踊り #立川市 #春夏秋冬 https://t.co/cdvJJyLLHe",
+        "evidence_url": "https://x.com/hisbow2/status/2078975481765146912",
+        "interpretation": "複数会場を同日または連続して巡る行動",
+        "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
+        "term": "ハシゴ",
+        "type": "行動語"
+      }
+    },
+    {
+      "inbox_id": "inbox_9e8813a0631729c3",
+      "kind": "term",
+      "domain": "曲・用語・低緊急度",
+      "priority_label": "P3",
+      "priority_score": null,
+      "title": "踊り会",
+      "event_name": "",
+      "venue": "",
+      "event_year": null,
+      "source_id": "daily_term_candidate",
+      "source_key": "term:用語候補|type:準公式用語|value:踊り会",
+      "source_url": "https://www.youtube.com/watch?v=WEwuLy4YLeM",
+      "recommended_action": "stage_term_candidate",
+      "status": "pending",
+      "time_scope": "reference",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "c874129cfb6938bf27a8f7aa6dd1a3bac263167f4f9e42de57c4d4af1a6f786d",
+      "last_seen_at": "github-29718631223-1-daily_term_candidate",
+      "created_at": "2026-07-20T04:47:46.068708+00:00",
+      "updated_at": "2026-07-20T05:16:50.555377+00:00",
+      "payload": {
+        "category": "用語候補",
+        "confidence": "要レビュー",
+        "evidence": [
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-07-20T05:00:25+00:00",
+            "text": "2026年7月18日に開催された、大和町八幡神社大盆踊り会（通称：ダイボン）の様子をお届けします！ 夏の夜を彩る、熱気あふれる盆踊りの風景をお楽しみください。 会場の盛り上がりや、櫓（やぐら）を囲む輪の一体感をそのままに記録しています。 #盆踊り #DAIBON #大和町八幡神社 #夏祭り #日本の風景 大和町八幡神社大盆踊り会 １メガ盆 https://youtu.be/oF7QnJysGZM ２ケケノコ族１ジンギスカン https://youtu.be/1C1ySMMhnfY ３ケケノコ族２Shangri-La https://youtu.be/sII4Ix4VXPY ４ケケノコ族３Singapore https://youtu.be/cG-VBGCY9W8 ５ケケノコ族４YOUNG MAN https://youtu.be/WEwuLy4YLeM",
+            "url": "https://www.youtube.com/watch?v=WEwuLy4YLeM"
+          },
+          {
+            "account": "@AhoyBananamilk",
+            "date": "2026-07-20T03:31:34+00:00",
+            "text": "@Ilovehololive_ とみーさんおはあり！☀🏴‍☠️ 乗り移っても毛根はあげないんだからねっ！ｷｯ( `ᾥ´ )✨✨ 昭和の女宝鐘マリン✨次なるターゲットは盆踊り会場ってワケぺこな😎✨ 一味法被も大活躍✨ 宝鐘海賊団盆踊り大会で花火もできて踊れてパーペキ✨ 証明完了QED💪✨この夏マリン音頭が熱い！🦆( '-' 🦆)ｶﾓ✨",
+            "url": "https://x.com/AhoyBananamilk/status/2079046531685224764"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-07-20T02:00:37+00:00",
+            "text": "2026年7月18日に開催された、大和町八幡神社大盆踊り会（通称：ダイボン）の様子をお届けします！ 夏の夜を彩る、熱気あふれる盆踊りの風景をお楽しみください。 会場の盛り上がりや、櫓（やぐら）を囲む輪の一体感をそのままに記録しています。 #盆踊り #DAIBON #大和町八幡神社 #夏祭り #日本の風景 大和町八幡神社大盆踊り会 １メガ盆 https://youtu.be/oF7QnJysGZM ２ケケノコ族１ジンギスカン https://youtu.be/1C1ySMMhnfY ３ケケノコ族２Shangri-La https://youtu.be/sII4Ix4VXPY ４ケケノコ族３Singapore https://youtu.be/cG-VBGCY9W8 ５ケケノコ族４YOUNG MAN https://youtu.be/WEwuLy4YLeM",
+            "url": "https://www.youtube.com/watch?v=cG-VBGCY9W8"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-07-19T13:00:17+00:00",
+            "text": "2026年7月18日に開催された、大和町八幡神社大盆踊り会（通称：ダイボン）の様子をお届けします！ 夏の夜を彩る、熱気あふれる盆踊りの風景をお楽しみください。 会場の盛り上がりや、櫓（やぐら）を囲む輪の一体感をそのままに記録しています。 #盆踊り #DAIBON #大和町八幡神社 #夏祭り #日本の風景 大和町八幡神社大盆踊り会 １メガ盆 https://youtu.be/oF7QnJysGZM ２ケケノコ族１ジンギスカン https://youtu.be/1C1ySMMhnfY ３ケケノコ族２Shangri-La https://youtu.be/sII4Ix4VXPY ４ケケノコ族３Singapore https://youtu.be/cG-VBGCY9W8 ５ケケノコ族４YOUNG MAN https://youtu.be/WEwuLy4YLeM",
+            "url": "https://www.youtube.com/watch?v=sII4Ix4VXPY"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-07-19T12:30:31+00:00",
+            "text": "2026年7月18日に開催された、大和町八幡神社大盆踊り会（通称：ダイボン）の様子をお届けします！ 夏の夜を彩る、熱気あふれる盆踊りの風景をお楽しみください。 会場の盛り上がりや、櫓（やぐら）を囲む輪の一体感をそのままに記録しています。 #盆踊り #DAIBON #大和町八幡神社 #夏祭り #日本の風景 大和町八幡神社大盆踊り会 １メガ盆 https://youtu.be/oF7QnJysGZM ２ケケノコ族１ジンギスカン https://youtu.be/1C1ySMMhnfY ３ケケノコ族２Shangri-La https://youtu.be/sII4Ix4VXPY ４ケケノコ族３Singapore https://youtu.be/cG-VBGCY9W8 ５ケケノコ族４YOUNG MAN https://youtu.be/WEwuLy4YLeM",
+            "url": "https://www.youtube.com/watch?v=1C1ySMMhnfY"
+          }
+        ],
+        "evidence_count": 29,
+        "evidence_text": "2026年7月18日に開催された、大和町八幡神社大盆踊り会（通称：ダイボン）の様子をお届けします！ 夏の夜を彩る、熱気あふれる盆踊りの風景をお楽しみください。 会場の盛り上がりや、櫓（やぐら）を囲む輪の一体感をそのままに記録しています。 #盆踊り #DAIBON #大和町八幡神社 #夏祭り #日本の風景 大和町八幡神社大盆踊り会 １メガ盆 https://youtu.be/oF7QnJysGZM ２ケケノコ族１ジンギスカン https://youtu.be/1C1ySMMhnfY ３ケケノコ族２Shangri-La https://youtu.be/sII4Ix4VXPY ４ケケノコ族３Singapore https://youtu.be/cG-VBGCY9W8 ５ケケノコ族４YOUNG MAN https://youtu.be/WEwuLy4YLeM\n---\n@Ilovehololive_ とみーさんおはあり！☀🏴‍☠️ 乗り移っても毛根はあげないんだからねっ！ｷｯ( `ᾥ´ )✨✨ 昭和の女宝鐘マリン✨次なるターゲットは盆踊り会場ってワケぺこな😎✨ 一味法被も大活躍✨ 宝鐘海賊団盆踊り大会で花火もできて踊れてパーペキ✨ 証明完了QED💪✨この夏マリン音頭が熱い！🦆( '-' 🦆)ｶﾓ✨\n---\n2026年7月18日に開催された、大和町八幡神社大盆踊り会（通称：ダイボン）の様子をお届けします！ 夏の夜を彩る、熱気あふれる盆踊りの風景をお楽しみください。 会場の盛り上がりや、櫓（やぐら）を囲む輪の一体感をそのままに記録しています。 #盆踊り #DAIBON #大和町八幡神社 #夏祭り #日本の風景 大和町八幡神社大盆踊り会 １メガ盆 https://youtu.be/oF7QnJysGZM ２ケケノコ族１ジンギスカン https://youtu.be/1C1ySMMhnfY ３ケケノコ族２Shangri-La https://youtu.be/sII4Ix4VXPY ４ケケノコ族３Singapore https://youtu.be/cG-VBGCY9W8 ５ケケノコ族４YOUNG MAN https://youtu.be/WEwuLy4YLeM",
+        "evidence_url": "https://www.youtube.com/watch?v=WEwuLy4YLeM",
+        "interpretation": "盆踊りや輪踊りの会",
+        "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
+        "term": "踊り会",
+        "type": "準公式用語"
+      }
+    },
+    {
+      "inbox_id": "inbox_01bb7cc038021f36",
+      "kind": "song",
+      "domain": "曲・用語・低緊急度",
+      "priority_label": "P3",
+      "priority_score": null,
+      "title": "郡上おどり",
+      "event_name": "",
+      "venue": "",
+      "event_year": null,
+      "source_id": "daily_song_candidate",
+      "source_key": "song:郡上おどり",
+      "source_url": "https://x.com/biscuitchiannel/status/2079040638176387142",
+      "recommended_action": "stage_song_candidate",
+      "status": "pending",
+      "time_scope": "reference",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "26c4870bfb0a93efb507f5f529cf6390f10f84e9103dfca1f07c41de44c6c887",
+      "last_seen_at": "github-29718631223-1-daily_song_candidate",
+      "created_at": "2026-07-20T04:47:09.608384+00:00",
+      "updated_at": "2026-07-20T05:16:14.219750+00:00",
+      "payload": {
+        "canonical_song_name": "郡上おどり",
+        "category": "曲候補",
+        "confidence": "要レビュー",
+        "evidence": [
+          {
+            "account": "@biscuitchiannel",
+            "date": "2026-07-20T03:08:09+00:00",
+            "text": "第106回びすちゃみーてぃんぐ【夏企画！盆踊りを踊りたい！郡上おどりin青山へ行こう。前編/練習編】 https://t.co/4X76ZoPzU6 @YouTubeより",
+            "url": "https://x.com/biscuitchiannel/status/2079040638176387142"
+          }
+        ],
+        "evidence_count": 1,
+        "evidence_text": "第106回びすちゃみーてぃんぐ【夏企画！盆踊りを踊りたい！郡上おどりin青山へ行こう。前編/練習編】 https://t.co/4X76ZoPzU6 @YouTubeより",
+        "evidence_url": "https://x.com/biscuitchiannel/status/2079040638176387142",
+        "interpretation": "郡上おどり",
+        "reason": "曲名抽出器で検出: known_song_context, song_suffix_near_context",
+        "term": "郡上おどり",
+        "triage_reason": "多義語・イベント名・ジャンル名の可能性がある",
+        "type": "曲名"
+      }
+    },
+    {
       "inbox_id": "inbox_0025eb7e977099ed",
       "kind": "publication_gap",
       "domain": "曲・用語・低緊急度",
@@ -22104,75 +22289,6 @@
       }
     },
     {
-      "inbox_id": "inbox_32c49053b858d501",
-      "kind": "term",
-      "domain": "曲・用語・低緊急度",
-      "priority_label": "P3",
-      "priority_score": null,
-      "title": "ハシゴ",
-      "event_name": "",
-      "venue": "",
-      "event_year": null,
-      "source_id": "daily_term_candidate",
-      "source_key": "term:用語候補|type:行動語|value:ハシゴ",
-      "source_url": "https://x.com/hisbow2/status/2078975481765146912",
-      "recommended_action": "stage_term_candidate",
-      "status": "pending",
-      "time_scope": "reference",
-      "decision": null,
-      "decided_by": null,
-      "decided_at": null,
-      "closed_at": null,
-      "decision_route": null,
-      "source_payload_hash": "3e0df40aae713d369e8b65d50683c368584ab06e49b931930c46e907d4bef99c",
-      "last_seen_at": "github-29717567678-1-daily_term_candidate",
-      "created_at": "2026-07-20T04:47:46.068708+00:00",
-      "updated_at": "2026-07-20T04:47:46.068708+00:00",
-      "payload": {
-        "category": "用語候補",
-        "confidence": "要レビュー",
-        "evidence": [
-          {
-            "account": "@hisbow2",
-            "date": "2026-07-19T22:49:15+00:00",
-            "text": "お初のエリアをハシゴ🪜 時間違いにリード不在、まさかの別会場💦でも行く先々で素敵な出会いに恵まれて、美濃屋マチコさんにお会いできるサプライズも！予定調和じゃないのもたまには良いかな🏮 https://t.co/izRJgsRBxU",
-            "url": "https://x.com/hisbow2/status/2078975481765146912"
-          },
-          {
-            "account": "@bon_hnaf",
-            "date": "2026-07-20T02:40:00+00:00",
-            "text": "7/19 立川市羽衣町本町会 ハシゴ２件目 19時半にみんなでゾロゾロ移動した先！ 毎年の流れです。 狭くて踊りにくいところもあるけど、お祭りは大盛況！！ 今年もありがとうございました！ #盆踊り #立川市 #春夏秋冬 https://t.co/MFDtk97QRk",
-            "url": "https://x.com/bon_hnaf/status/2079033552860262818"
-          },
-          {
-            "account": "@bon_hnaf",
-            "date": "2026-07-20T02:20:53+00:00",
-            "text": "7/19 立川市羽衣町東町会 ハシゴ１件目 踊り仲間の応援へ！ 近所で盆踊り多発の関係か19時半までで、みんなでゾロゾロ移動する楽しさ笑 広い会場で、低い櫓が特徴！！ 今年は踊りの輪がしっかり出来ていたなぁ( ´ ▽ ` ) #盆踊り #立川市 #春夏秋冬 https://t.co/cdvJJyLLHe",
-            "url": "https://x.com/bon_hnaf/status/2079028743314817079"
-          },
-          {
-            "account": "@mackn_mackn",
-            "date": "2026-07-20T01:27:27+00:00",
-            "text": "【盆踊り】2026年7月18日｜日本橋小学校・トルナーレ 日本橋浜町・佃一丁目、夢のハシゴ参加 | macknのファッショントーク https://t.co/9DBbylDSBG #Amebaブログ #アメブロ",
-            "url": "https://x.com/mackn_mackn/status/2079015297789677768"
-          },
-          {
-            "account": "@tanakatakeshi",
-            "date": "2026-07-17T12:38:42+00:00",
-            "text": "【盆踊り練習①】 今宵も盆踊り練習のハシゴです…。 前半は、昭和地区知立団地自治会の盆踊り練習です。 先週のおさらいから始まって、先生のご指導で新曲もバッチリ👍🏻。 知立団地自治会の夏まつりは、8月9日(日)です！ #質実剛健 #田中健 #知立市 #未来共創 #地域密着 #盆踊り https://t.co/y3H19RWmLc",
-            "url": "https://x.com/tanakatakeshi/status/2078097057718673621"
-          }
-        ],
-        "evidence_count": 7,
-        "evidence_text": "お初のエリアをハシゴ🪜 時間違いにリード不在、まさかの別会場💦でも行く先々で素敵な出会いに恵まれて、美濃屋マチコさんにお会いできるサプライズも！予定調和じゃないのもたまには良いかな🏮 https://t.co/izRJgsRBxU\n---\n7/19 立川市羽衣町本町会 ハシゴ２件目 19時半にみんなでゾロゾロ移動した先！ 毎年の流れです。 狭くて踊りにくいところもあるけど、お祭りは大盛況！！ 今年もありがとうございました！ #盆踊り #立川市 #春夏秋冬 https://t.co/MFDtk97QRk\n---\n7/19 立川市羽衣町東町会 ハシゴ１件目 踊り仲間の応援へ！ 近所で盆踊り多発の関係か19時半までで、みんなでゾロゾロ移動する楽しさ笑 広い会場で、低い櫓が特徴！！ 今年は踊りの輪がしっかり出来ていたなぁ( ´ ▽ ` ) #盆踊り #立川市 #春夏秋冬 https://t.co/cdvJJyLLHe",
-        "evidence_url": "https://x.com/hisbow2/status/2078975481765146912",
-        "interpretation": "複数会場を同日または連続して巡る行動",
-        "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
-        "term": "ハシゴ",
-        "type": "行動語"
-      }
-    },
-    {
       "inbox_id": "inbox_45e4fcaf7f300543",
       "kind": "song_research",
       "domain": "曲・用語・低緊急度",
@@ -22570,75 +22686,6 @@
         "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
         "term": "はしご",
         "type": "行動語"
-      }
-    },
-    {
-      "inbox_id": "inbox_9e8813a0631729c3",
-      "kind": "term",
-      "domain": "曲・用語・低緊急度",
-      "priority_label": "P3",
-      "priority_score": null,
-      "title": "踊り会",
-      "event_name": "",
-      "venue": "",
-      "event_year": null,
-      "source_id": "daily_term_candidate",
-      "source_key": "term:用語候補|type:準公式用語|value:踊り会",
-      "source_url": "https://x.com/AhoyBananamilk/status/2079046531685224764",
-      "recommended_action": "stage_term_candidate",
-      "status": "pending",
-      "time_scope": "reference",
-      "decision": null,
-      "decided_by": null,
-      "decided_at": null,
-      "closed_at": null,
-      "decision_route": null,
-      "source_payload_hash": "607168f4b62f741087fb2fd9b6f5ec6c065a2d64a95cab5c18080398eedc7a33",
-      "last_seen_at": "github-29717567678-1-daily_term_candidate",
-      "created_at": "2026-07-20T04:47:46.068708+00:00",
-      "updated_at": "2026-07-20T04:47:46.068708+00:00",
-      "payload": {
-        "category": "用語候補",
-        "confidence": "要レビュー",
-        "evidence": [
-          {
-            "account": "@AhoyBananamilk",
-            "date": "2026-07-20T03:31:34+00:00",
-            "text": "@Ilovehololive_ とみーさんおはあり！☀🏴‍☠️ 乗り移っても毛根はあげないんだからねっ！ｷｯ( `ᾥ´ )✨✨ 昭和の女宝鐘マリン✨次なるターゲットは盆踊り会場ってワケぺこな😎✨ 一味法被も大活躍✨ 宝鐘海賊団盆踊り大会で花火もできて踊れてパーペキ✨ 証明完了QED💪✨この夏マリン音頭が熱い！🦆( '-' 🦆)ｶﾓ✨",
-            "url": "https://x.com/AhoyBananamilk/status/2079046531685224764"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-07-20T02:00:37+00:00",
-            "text": "2026年7月18日に開催された、大和町八幡神社大盆踊り会（通称：ダイボン）の様子をお届けします！ 夏の夜を彩る、熱気あふれる盆踊りの風景をお楽しみください。 会場の盛り上がりや、櫓（やぐら）を囲む輪の一体感をそのままに記録しています。 #盆踊り #DAIBON #大和町八幡神社 #夏祭り #日本の風景 大和町八幡神社大盆踊り会 １メガ盆 https://youtu.be/oF7QnJysGZM ２ケケノコ族１ジンギスカン https://youtu.be/1C1ySMMhnfY ３ケケノコ族２Shangri-La https://youtu.be/sII4Ix4VXPY ４ケケノコ族３Singapore https://youtu.be/cG-VBGCY9W8 ５ケケノコ族４YOUNG MAN https://youtu.be/WEwuLy4YLeM",
-            "url": "https://www.youtube.com/watch?v=cG-VBGCY9W8"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-07-19T13:00:17+00:00",
-            "text": "2026年7月18日に開催された、大和町八幡神社大盆踊り会（通称：ダイボン）の様子をお届けします！ 夏の夜を彩る、熱気あふれる盆踊りの風景をお楽しみください。 会場の盛り上がりや、櫓（やぐら）を囲む輪の一体感をそのままに記録しています。 #盆踊り #DAIBON #大和町八幡神社 #夏祭り #日本の風景 大和町八幡神社大盆踊り会 １メガ盆 https://youtu.be/oF7QnJysGZM ２ケケノコ族１ジンギスカン https://youtu.be/1C1ySMMhnfY ３ケケノコ族２Shangri-La https://youtu.be/sII4Ix4VXPY ４ケケノコ族３Singapore https://youtu.be/cG-VBGCY9W8 ５ケケノコ族４YOUNG MAN https://youtu.be/WEwuLy4YLeM",
-            "url": "https://www.youtube.com/watch?v=sII4Ix4VXPY"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-07-19T12:30:31+00:00",
-            "text": "2026年7月18日に開催された、大和町八幡神社大盆踊り会（通称：ダイボン）の様子をお届けします！ 夏の夜を彩る、熱気あふれる盆踊りの風景をお楽しみください。 会場の盛り上がりや、櫓（やぐら）を囲む輪の一体感をそのままに記録しています。 #盆踊り #DAIBON #大和町八幡神社 #夏祭り #日本の風景 大和町八幡神社大盆踊り会 １メガ盆 https://youtu.be/oF7QnJysGZM ２ケケノコ族１ジンギスカン https://youtu.be/1C1ySMMhnfY ３ケケノコ族２Shangri-La https://youtu.be/sII4Ix4VXPY ４ケケノコ族３Singapore https://youtu.be/cG-VBGCY9W8 ５ケケノコ族４YOUNG MAN https://youtu.be/WEwuLy4YLeM",
-            "url": "https://www.youtube.com/watch?v=1C1ySMMhnfY"
-          },
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-07-19T12:00:12+00:00",
-            "text": "2026年7月18日に開催された、大和町八幡神社大盆踊り会（通称：ダイボン）の様子をお届けします！ 夏の夜を彩る、熱気あふれる盆踊りの風景をお楽しみください。 会場の盛り上がりや、櫓（やぐら）を囲む輪の一体感をそのままに記録しています。 #盆踊り #DAIBON #大和町八幡神社 #夏祭り #日本の風景 大和町八幡神社大盆踊り会 １メガ盆 https://youtu.be/oF7QnJysGZM ２ケケノコ族１ジンギスカン https://youtu.be/1C1ySMMhnfY ３ケケノコ族２Shangri-La https://youtu.be/sII4Ix4VXPY ４ケケノコ族３Singapore https://youtu.be/cG-VBGCY9W8 ５ケケノコ族４YOUNG MAN https://youtu.be/WEwuLy4YLeM",
-            "url": "https://www.youtube.com/watch?v=oF7QnJysGZM"
-          }
-        ],
-        "evidence_count": 28,
-        "evidence_text": "@Ilovehololive_ とみーさんおはあり！☀🏴‍☠️ 乗り移っても毛根はあげないんだからねっ！ｷｯ( `ᾥ´ )✨✨ 昭和の女宝鐘マリン✨次なるターゲットは盆踊り会場ってワケぺこな😎✨ 一味法被も大活躍✨ 宝鐘海賊団盆踊り大会で花火もできて踊れてパーペキ✨ 証明完了QED💪✨この夏マリン音頭が熱い！🦆( '-' 🦆)ｶﾓ✨\n---\n2026年7月18日に開催された、大和町八幡神社大盆踊り会（通称：ダイボン）の様子をお届けします！ 夏の夜を彩る、熱気あふれる盆踊りの風景をお楽しみください。 会場の盛り上がりや、櫓（やぐら）を囲む輪の一体感をそのままに記録しています。 #盆踊り #DAIBON #大和町八幡神社 #夏祭り #日本の風景 大和町八幡神社大盆踊り会 １メガ盆 https://youtu.be/oF7QnJysGZM ２ケケノコ族１ジンギスカン https://youtu.be/1C1ySMMhnfY ３ケケノコ族２Shangri-La https://youtu.be/sII4Ix4VXPY ４ケケノコ族３Singapore https://youtu.be/cG-VBGCY9W8 ５ケケノコ族４YOUNG MAN https://youtu.be/WEwuLy4YLeM\n---\n2026年7月18日に開催された、大和町八幡神社大盆踊り会（通称：ダイボン）の様子をお届けします！ 夏の夜を彩る、熱気あふれる盆踊りの風景をお楽しみください。 会場の盛り上がりや、櫓（やぐら）を囲む輪の一体感をそのままに記録しています。 #盆踊り #DAIBON #大和町八幡神社 #夏祭り #日本の風景 大和町八幡神社大盆踊り会 １メガ盆 https://youtu.be/oF7QnJysGZM ２ケケノコ族１ジンギスカン https://youtu.be/1C1ySMMhnfY ３ケケノコ族２Shangri-La https://youtu.be/sII4Ix4VXPY ４ケケノコ族３Singapore https://youtu.be/cG-VBGCY9W8 ５ケケノコ族４YOUNG MAN https://youtu.be/WEwuLy4YLeM",
-        "evidence_url": "https://x.com/AhoyBananamilk/status/2079046531685224764",
-        "interpretation": "盆踊りや輪踊りの会",
-        "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
-        "term": "踊り会",
-        "type": "準公式用語"
       }
     },
     {
@@ -23041,59 +23088,6 @@
         "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
         "term": "参戦",
         "type": "参加スタイル語"
-      }
-    },
-    {
-      "inbox_id": "inbox_01bb7cc038021f36",
-      "kind": "song",
-      "domain": "曲・用語・低緊急度",
-      "priority_label": "P3",
-      "priority_score": null,
-      "title": "郡上おどり",
-      "event_name": "",
-      "venue": "",
-      "event_year": null,
-      "source_id": "daily_song_candidate",
-      "source_key": "song:郡上おどり",
-      "source_url": "https://x.com/biscuitchiannel/status/2079040638176387142",
-      "recommended_action": "stage_song_candidate",
-      "status": "pending",
-      "time_scope": "reference",
-      "decision": null,
-      "decided_by": null,
-      "decided_at": null,
-      "closed_at": null,
-      "decision_route": null,
-      "source_payload_hash": "e54cbd7806c2bbd050fb9725b8e4797137d1a1b65e8ba319b5bda51d903ff1be",
-      "last_seen_at": "github-29717567678-1-daily_song_candidate",
-      "created_at": "2026-07-20T04:47:09.608384+00:00",
-      "updated_at": "2026-07-20T04:47:09.608384+00:00",
-      "payload": {
-        "canonical_song_name": "郡上おどり",
-        "category": "曲候補",
-        "confidence": "要レビュー",
-        "evidence": [
-          {
-            "account": "@biscuitchiannel",
-            "date": "2026-07-20T03:08:09+00:00",
-            "text": "第106回びすちゃみーてぃんぐ【夏企画！盆踊りを踊りたい！郡上おどりin青山へ行こう。前編/練習編】 https://t.co/4X76ZoPzU6 @YouTubeより",
-            "url": "https://x.com/biscuitchiannel/status/2079040638176387142"
-          },
-          {
-            "account": "@iko_yo_trip",
-            "date": "2026-07-17T05:00:01+00:00",
-            "text": "＼夏は徹夜で踊ろう！郡上おどりの熱気を体感／ 浴衣と下駄でひと晩中踊る伝統の盆踊り🌙 親子で楽しめる日本三大盆踊りの一つ！ おすすめポイント ✅ 400年以上の伝統・ユネスコ無形文化遺産 🌍 ✅ 浴衣で参加OK・子ども向け体験も多数 👘👶 ✅ 徹夜おどりは8/13〜16の圧巻の熱気🔥（公式情報を事前確認してね） 🗓 例年7月中旬〜9月上旬（徹夜：8/13〜16） 📍 岐阜県郡上市・郡上八幡（八幡町市街地） 行ってみたい？行ったことある人は思い出を教えて！フォローで子連れおでかけ情報をチェック✔️ 開催情報📝 https://t.co/8ADYYIeNeK",
-            "url": "https://x.com/iko_yo_trip/status/2077981625367908774"
-          }
-        ],
-        "evidence_count": 2,
-        "evidence_text": "第106回びすちゃみーてぃんぐ【夏企画！盆踊りを踊りたい！郡上おどりin青山へ行こう。前編/練習編】 https://t.co/4X76ZoPzU6 @YouTubeより\n---\n＼夏は徹夜で踊ろう！郡上おどりの熱気を体感／ 浴衣と下駄でひと晩中踊る伝統の盆踊り🌙 親子で楽しめる日本三大盆踊りの一つ！ おすすめポイント ✅ 400年以上の伝統・ユネスコ無形文化遺産 🌍 ✅ 浴衣で参加OK・子ども向け体験も多数 👘👶 ✅ 徹夜おどりは8/13〜16の圧巻の熱気🔥（公式情報を事前確認してね） 🗓 例年7月中旬〜9月上旬（徹夜：8/13〜16） 📍 岐阜県郡上市・郡上八幡（八幡町市街地） 行ってみたい？行ったことある人は思い出を教えて！フォローで子連れおでかけ情報をチェック✔️ 開催情報📝 https://t.co/8ADYYIeNeK",
-        "evidence_url": "https://x.com/biscuitchiannel/status/2079040638176387142",
-        "interpretation": "郡上おどり",
-        "reason": "曲名抽出器で検出: known_song_context, song_suffix_near_context",
-        "term": "郡上おどり",
-        "triage_reason": "多義語・イベント名・ジャンル名の可能性がある",
-        "type": "曲名"
       }
     },
     {
