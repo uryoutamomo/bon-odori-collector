@@ -110,6 +110,10 @@ APPLY_VALUE_LABELS = {
     "needs_non_x_backcheck": "非X根拠を追加調査",
     "stage_registration_candidate": "登録候補へ送る",
     "add_song_evidence": "動画・曲証拠を追加候補へ送る",
+    "stage_song_candidate": "曲候補stagingへ送る",
+    "stage_term_candidate": "用語候補stagingへ送る",
+    "stage_song_venue_evidence": "曲×会場証拠stagingへ送る",
+    "stage_venue_candidate": "会場候補stagingへ送る",
 }
 
 APPLY_VALUE_HELP = {
@@ -125,6 +129,10 @@ APPLY_VALUE_HELP = {
     "remove_historical_reference": "公開価値が低い過去実績として外す判断に回します。",
     "append_existing_event": "イベントを新規作成せず、YouTube動画URLと曲名を既存イベントの証拠として残します。",
     "add_song_evidence": "動画URL・曲候補・対象年をdomain stagingへ送り、この操作だけではMaster RDBや公開データを変更しません。",
+    "stage_song_candidate": "曲候補packetを作るだけで、曲マスタへ直接登録しません。",
+    "stage_term_candidate": "用語候補packetを作るだけで、用語集へ直接登録しません。",
+    "stage_song_venue_evidence": "曲と会場の共起証拠packetを作るだけで、関連を直接登録しません。",
+    "stage_venue_candidate": "会場候補packetを作るだけで、会場マスタへ直接登録しません。",
 }
 
 APPLY_VALUE_DECISIONS = {
@@ -1798,6 +1806,15 @@ def comparison_summary(source: ReviewSource, row: dict[str, Any]) -> dict[str, A
 
 
 def option_disabled_reason(source: ReviewSource, row: dict[str, Any], value: str) -> str:
+    if source.id == "review_inbox" and as_text(row.get("kind")) == "historical_quality":
+        payload = row.get("payload") if isinstance(row.get("payload"), dict) else {}
+        issues = payload.get("issue_codes") if isinstance(payload.get("issue_codes"), list) else []
+        has_date_issue = "historical_date_missing" in issues or "historical_date_invalid" in issues
+        has_song_issue = "historical_songs_missing" in issues
+        if value == "needs_date_research" and not has_date_issue:
+            return "この行には過去実績日・曜日の問題がありません"
+        if value == "needs_song_research" and not has_song_issue:
+            return "この行には曲候補不足の問題がありません"
     if source.id == "historical_reference_quality":
         issues = get_path(row, "issue_codes") if isinstance(get_path(row, "issue_codes"), list) else []
         has_date_issue = "historical_date_missing" in issues or "historical_date_invalid" in issues
@@ -1969,6 +1986,15 @@ def apply_options(source: ReviewSource, row: dict[str, Any]) -> list[dict[str, A
         option_values = ("stage_registration_candidate", "needs_research", "reject", "hold")
     elif source.id == "review_inbox" and as_text(row.get("kind")) == "youtube_evidence":
         option_values = ("add_song_evidence", "needs_research", "reject", "hold")
+    elif source.id == "review_inbox":
+        option_values = {
+            "song": ("stage_song_candidate", "needs_research", "reject", "hold"),
+            "term": ("stage_term_candidate", "needs_research", "reject", "hold"),
+            "song_research": ("stage_song_venue_evidence", "needs_research", "reject", "hold"),
+            "venue_candidate": ("stage_venue_candidate", "needs_research", "reject", "hold"),
+            "historical_quality": ("needs_date_research", "needs_song_research", "keep_historical_reference", "remove_historical_reference", "hold"),
+            "publication_gap": ("needs_research", "reject", "hold"),
+        }.get(as_text(row.get("kind")), option_values)
     for value in option_values:
         disabled_reason = option_disabled_reason(source, row, value)
         options.append(
@@ -2087,13 +2113,13 @@ def action_group_for(
         elif kind in {"historical_reference", "historical_date"}:
             group_id = "historical_date"
             reason = "統合受信箱に入った過去実績確認候補です。"
-        elif kind in {"venue", "venue_review"}:
+        elif kind in {"venue", "venue_review", "venue_candidate"}:
             group_id = "venue"
             reason = "統合受信箱に入った会場確認候補です。"
         elif kind in {"source_url", "official_source", "rare_signal"}:
             group_id = "source_url"
             reason = "統合受信箱に入った根拠URL確認候補です。"
-        elif kind in {"song", "song_research"}:
+        elif kind in {"song", "song_research", "term"}:
             group_id = "song_research"
             reason = "統合受信箱に入った曲候補確認です。"
         elif kind == "youtube_evidence":
