@@ -103,6 +103,7 @@ jobs:
         if [ -f data/x_news_digest_oto_reviews.json ]; then
           python promote_x_news_digest_reviews.py
           python build_rare_signal_backcheck_queue.py
+          touch "$RUNNER_TEMP/rare-signal-backcheck-built"
           if [ -f data/review_console/staged/rare_signal_backcheck_decisions.json ]; then
             python export_rare_signal_backcheck_reviews.py
           fi
@@ -213,3 +214,54 @@ jobs:
         [ -f data/x_event_evidence_cohort.json ] && git add data/x_event_evidence_cohort.json
         python guard_git_large_files.py
         git diff --cached --quiet || (git commit -m "Update bon-odori data (news + voices + event dates)" && git push)
+
+    - name: Dual-write rare signal queue to review inbox
+      id: rare_signal_inbox
+      if: ${{ vars.REVIEW_INBOX_RARE_SIGNAL_DUAL_WRITE_ENABLED == 'true' && vars.MASTER_DB_S3_BUCKET != '' }}
+      env:
+        MASTER_DB_S3_BUCKET: ${{ vars.MASTER_DB_S3_BUCKET }}
+        MASTER_DB_S3_PREFIX: ${{ vars.MASTER_DB_S3_PREFIX || 'master-rdb' }}
+        AWS_REGION: ap-northeast-1
+        REVIEW_INBOX_RARE_SIGNAL_SCHEDULED_ENABLED: 'true'
+        REVIEW_INBOX_DUAL_WRITE_MODE: bulk
+        REVIEW_INBOX_CAS_PUBLISH_ENABLED: 'true'
+        REVIEW_INBOX_READER_MODE: legacy
+        REVIEW_INBOX_LEGACY_WRITER_ENABLED: 'true'
+      run: |
+        if [ ! -f "$RUNNER_TEMP/rare-signal-backcheck-built" ]; then
+          echo "[review-inbox] current run did not build a rare signal queue; skip dual-write"
+          echo "ran=false" >> "$GITHUB_OUTPUT"
+          exit 0
+        fi
+        TODAY="$(TZ=Asia/Tokyo date +%F)"
+        python run_review_inbox_rare_signal_scheduled.py \
+          --execute \
+          --confirm 'RUN SCHEDULED RARE SIGNAL DUAL WRITE' \
+          --input data/rare_signal_backcheck_queue.json \
+          --snapshot-out "$RUNNER_TEMP/rare-signal-inbox-snapshot.json" \
+          --report-out "$RUNNER_TEMP/rare-signal-inbox-report.json" \
+          --observation-id "github-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}" \
+          --public-today "$TODAY"
+        python master_db_s3_artifact.py fetch --overwrite
+        python review_inbox.py --out-json data/review_inbox.json --status pending
+        echo "ran=true" >> "$GITHUB_OUTPUT"
+
+    - name: Commit rare signal inbox projection
+      if: ${{ steps.rare_signal_inbox.outputs.ran == 'true' }}
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add -f data/review_inbox.json
+        python guard_git_large_files.py
+        git diff --cached --quiet || (git commit -m "Update rare signal review inbox" && git push)
+
+    - name: Upload rare signal inbox evidence
+      if: ${{ always() && vars.REVIEW_INBOX_RARE_SIGNAL_DUAL_WRITE_ENABLED == 'true' && vars.MASTER_DB_S3_BUCKET != '' }}
+      uses: actions/upload-artifact@v4
+      with:
+        name: rare-signal-inbox-${{ github.run_id }}-${{ github.run_attempt }}
+        path: |
+          ${{ runner.temp }}/rare-signal-inbox-snapshot.json
+          ${{ runner.temp }}/rare-signal-inbox-report.json
+        if-no-files-found: warn
+        retention-days: 30
