@@ -1,5 +1,5 @@
 {
-  "status": "in_progress",
+  "status": "awaiting_review",
   "window_start": "2027-01-19T00:00:00+00:00",
   "window_end": "2027-02-02T00:00:00+00:00",
   "selected_handles": [
@@ -57,13 +57,17 @@
   "selection_id": "664d239cbfb21c903b90366b808d6e5ebcf0e7024980d3bd613f6d865df58cf9",
   "batch_index": 0,
   "batch_cursors": {},
-  "completed_batches": [],
-  "pages_completed": 0,
+  "completed_batches": [
+    0,
+    1,
+    2
+  ],
+  "pages_completed": 3,
   "tweets_scanned": 0,
   "evidence_detected": 0,
   "pending_evidence": [],
   "started_at": "2026-07-20T04:14:36.959474+00:00",
-  "updated_at": "2026-07-20T05:14:15.848046+00:00",
+  "updated_at": "2026-07-20T08:27:35.321435+00:00",
   "window_history": [
     {
       "window_start": "2025-06-10T00:00:00+00:00",
@@ -529,5 +533,7 @@
     }
   ],
   "previous_covered_until": "2027-01-19T00:00:00+00:00",
-  "last_error": "HTTP Error 402: Payment Required"
+  "last_error": "HTTP Error 402: Payment Required",
+  "completed_at": "2026-07-20T08:27:35.322433+00:00",
+  "covered_until": "2027-02-02T00:00:00+00:00"
 }

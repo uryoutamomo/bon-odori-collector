@@ -1,21 +1,21 @@
 {
   "generated_by": "prepare_weekly_harvest_review.py",
-  "generated_at": "2026-07-20T05:15:12.907530+00:00",
+  "generated_at": "2026-07-20T08:28:39.331442+00:00",
   "source": "build_weekly_harvest_candidates.py",
-  "source_generated_at": "2026-07-20T05:15:05.590778+00:00",
+  "source_generated_at": "2026-07-20T08:28:32.274735+00:00",
   "days": 3,
-  "voice_count": 1126,
-  "candidate_count": 152,
+  "voice_count": 1160,
+  "candidate_count": 153,
   "category_counts": {
     "曲×会場共起": 15,
     "曲候補": 131,
-    "用語候補": 6
+    "用語候補": 7
   },
-  "non_song_review_count": 21,
+  "non_song_review_count": 22,
   "song_candidate_count": 131,
-  "song_direct_dry_run_count": 111,
+  "song_direct_dry_run_count": 110,
   "song_review_count": 3,
-  "song_rejected_noise_count": 17,
+  "song_rejected_noise_count": 18,
   "review_files": {
     "non_song_json": "data/weekly_harvest_review_candidates.json",
     "non_song_ui": "data/weekly_harvest_review_ui.html",

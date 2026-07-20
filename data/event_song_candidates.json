@@ -1,8 +1,8 @@
 {
   "generated_by": "build_event_song_candidates.py",
-  "count": 1031,
+  "count": 1035,
   "public_event_count": 348,
-  "review_count": 683,
+  "review_count": 687,
   "candidates": [
     {
       "id": "9870f5a616f1a007",
@@ -4962,7 +4962,7 @@
       "evidence_count": 2
     },
     {
-      "id": "f13d8613b8635093",
+      "id": "79e97ca8c84517fa",
       "song_name": "ダンシングヒーロー",
       "event_name": "盆踊り大会",
       "venue": "木場二丁目公園",
@@ -4973,6 +4973,12 @@
         "known_song_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/kumidaisuki/status/2079071529690956036",
+          "date": "2026-07-20T05:10:54+00:00",
+          "text": "米山こうじ\n会場の立地からして盆踊りやってるってわかったら\nこんくらいの人数になる気がする　\n撮影班？　腕の見せ所\n\n【晴海ふ頭公園盆踊り大会 2026】「ダンシングヒーロー」荻野目洋子で盆踊り #盆踊り 晴海フラッグ https://t.co/m2vvCEdglT @YouTubeより"
+        },
         {
           "source": "x_voice",
           "url": "https://x.com/Shiina_Pa/status/2079048744386109833",
@@ -5191,7 +5197,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 36
+      "evidence_count": 37
     },
     {
       "id": "6f209e9a45da7de9",
@@ -10398,6 +10404,28 @@
       "evidence_count": 1
     },
     {
+      "id": "4e88f0a4b5cfd4a8",
+      "song_name": "阿波踊り",
+      "event_name": "大和町八幡神社大盆踊り会",
+      "venue": "中野大和町八幡神社",
+      "area": "中野区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/koretsuto/status/2079075864688611695",
+          "date": "2026-07-20T05:28:08+00:00",
+          "text": "是（コレ／珍盤亭一門）\n改めまして2026年中野区大和町八幡神社大盆踊り会「ダイボン」#daibon お疲れ様でございました。\n\n今年はスペシャルゲストとして高円寺の阿波踊り集団「灯連（あかしれん）」が参加してくれました。\n\n思い返せば去年のダイボンの楽屋で、師匠が「阿波踊りのすごい曲があるから来年はかけてえな」と→ https://t.co/uKK176J4xW"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
       "id": "409279b7e394699a",
       "song_name": "あさがお踊り",
       "event_name": "飛鳥山公園盆踊り会（有志サークル）",
@@ -12714,6 +12742,28 @@
       "evidence_count": 4
     },
     {
+      "id": "188778a4ca2c0ca0",
+      "song_name": "京北音頭",
+      "event_name": "みたままつり 納涼民踊のつどい",
+      "venue": "靖国神社",
+      "area": "千代田区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/Pw9SKrdCfYJfxfv/status/2079080014176460809",
+          "date": "2026-07-20T05:44:37+00:00",
+          "text": "み\n曲目\n\nエビカニクス\nJM\nアンパンマン(柏)\n京北音頭\nDH\nバハマママ\n柏踊り\n夏祭り(柏踊りアレンジ)\nマツケンサンバⅡ(魂舞会)\n上記メイン4セット\n\n牛ちゃんマンボ\nおジャ魔女\n勇気音頭\n南中ソーラン\n柏踊り\n\n夏祭り、ちょっとだけ振り付けしましたが踊って貰えるの嬉しいです🥹"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
       "id": "90fd703c40265be0",
       "song_name": "八木節",
       "event_name": "みたままつり 納涼民踊のつどい",
@@ -12746,6 +12796,28 @@
       ],
       "already_public": false,
       "evidence_count": 3
+    },
+    {
+      "id": "b806de46c90cf87d",
+      "song_name": "勇気音頭",
+      "event_name": "みたままつり 納涼民踊のつどい",
+      "venue": "靖国神社",
+      "area": "千代田区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/Pw9SKrdCfYJfxfv/status/2079080014176460809",
+          "date": "2026-07-20T05:44:37+00:00",
+          "text": "み\n曲目\n\nエビカニクス\nJM\nアンパンマン(柏)\n京北音頭\nDH\nバハマママ\n柏踊り\n夏祭り(柏踊りアレンジ)\nマツケンサンバⅡ(魂舞会)\n上記メイン4セット\n\n牛ちゃんマンボ\nおジャ魔女\n勇気音頭\n南中ソーラン\n柏踊り\n\n夏祭り、ちょっとだけ振り付けしましたが踊って貰えるの嬉しいです🥹"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
     },
     {
       "id": "ff4a1ada82b40b5e",
@@ -12798,6 +12870,28 @@
           "url": "https://www.youtube.com/watch?v=DYsJWphzcEY",
           "date": "2026-07-15T09:00:04+00:00",
           "text": "Tokyo Lonely Walker\n靖國神社 盆踊り みたままつり 納涼民踊の集い 2026 前夜祭  / Traditional Japanese Bon dance in Yasukuni Shrine,Tokyo. [4K]🇯🇵\n東京千代田区の靖国神社で「第78回 みたままつり」が開催されました。前夜祭のこの日、大村益次郎像前では「納涼民踊の集い（盆踊り）」が行われ大いに盛り上がりました！\n気温もありカメラが度々停止するなどしたため、飛び飛びの箇所や未収録の楽曲もございます。\n\nThe “Mitama Festival” was held at Yasukuni Shrine in Tokyo. On this day, the eve of the festival, a Bon dance was held and the atmosphere was electric! Due to the temperatur"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "a9a14ceec2020e46",
+      "song_name": "南中ソーラン",
+      "event_name": "みたままつり 納涼民踊のつどい",
+      "venue": "靖国神社",
+      "area": "千代田区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/Pw9SKrdCfYJfxfv/status/2079080014176460809",
+          "date": "2026-07-20T05:44:37+00:00",
+          "text": "み\n曲目\n\nエビカニクス\nJM\nアンパンマン(柏)\n京北音頭\nDH\nバハマママ\n柏踊り\n夏祭り(柏踊りアレンジ)\nマツケンサンバⅡ(魂舞会)\n上記メイン4セット\n\n牛ちゃんマンボ\nおジャ魔女\n勇気音頭\n南中ソーラン\n柏踊り\n\n夏祭り、ちょっとだけ振り付けしましたが踊って貰えるの嬉しいです🥹"
         }
       ],
       "already_public": false,
@@ -20866,7 +20960,7 @@
       "evidence_count": 1
     },
     {
-      "id": "1e727164141f517a",
+      "id": "33fa2c03ecfab944",
       "song_name": "おしりたんてい音頭",
       "event_name": "盆踊り大会",
       "venue": "木場二丁目公園",
@@ -20878,6 +20972,12 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=1hoUlCxoGBU",
+          "date": "2026-07-20T08:00:20+00:00",
+          "text": "和太鼓お祭りCH\n【Let's ONDO Again】（細川たかし）　晴海ふ頭公園盆踊り大会５　2026年7月12日\n2026年7月12日に開催された「晴海ふ頭公園盆踊り大会」での盆踊りの様子をお届けします！\n \n晴海ふ頭公園の心地よい海風を感じながら、\n会場の盛り上がりをぜひ映像でお楽しみください！\n\n\n晴海ふ頭公園盆踊り\n１おしりたんてい音頭　https://youtu.be/a14wHJTz11Y\n２ジャンボリーミッキー　https://youtu.be/qK_wAZd9sfY\n３どんとこいブギ　https://youtu.be/FwKDdeH2N7I\n４河内おとこ節　https://youtu.be/jTg6AaNuJDw\n５Let'sONDOAgain　https://youtu.be/1hoUlCxoGBU\n６東京五輪2020　https://youtu.be/8NRTaNXw95Y\n７これがお江戸の盆ダンス　htt"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=jTg6AaNuJDw",
@@ -20922,7 +21022,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 7
+      "evidence_count": 8
     },
     {
       "id": "c8611a709ed14597",
@@ -23515,7 +23615,7 @@
       "evidence_count": 1
     },
     {
-      "id": "cd68d6e969b2caeb",
+      "id": "3f60aa65b30a264f",
       "song_name": "巣鴨花咲き音頭",
       "event_name": "盆踊り大会",
       "venue": "木場二丁目公園",
@@ -23526,6 +23626,12 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=A5Lgrg9cbAA",
+          "date": "2026-07-20T06:00:01+00:00",
+          "text": "和太鼓お祭りCH\n河内おとこ節　「第46回巣鴨盆踊り大会」20　2026年7月18日　巣鴨駅前南口ロータリー盆踊り　巣一商店会\n2026年7月18日、豊島区の巣鴨駅前南口ロータリーにて開催された「第46回巣鴨盆踊り大会」の様子です。\n\n巣一商店会主催のもと、\n駅前の活気ある雰囲気の中で踊られる盆踊りをお届けします。\n地元の方々や観光客が一体となって盛り上がる、\n夏の巣鴨ならではの熱気をお楽しみください！\n\n和太鼓の響きとともに、日本の夏の情緒を感じていただければ幸いです。\n\n#巣鴨 #盆踊り #巣鴨花咲き音頭 #巣一商店会 #夏祭り #和太鼓 #東京の祭り #巣鴨駅前\n\n\n巣鴨駅前盆踊り\n１巣鴨花咲音頭　https://youtu.be/9dqKwAudGS4\n２きよしのドドンパ　https://youtu.be/wq9yyUc_IXY\n３バハマママ　https://youtu.be/TArlwnMgoPM\n４恋するフォーチュン"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=SmzgDG9SOrg",
@@ -23720,10 +23826,10 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 32
+      "evidence_count": 33
     },
     {
-      "id": "f463729f7915690b",
+      "id": "c621aaed4eed2e63",
       "song_name": "巣鴨花咲音頭",
       "event_name": "盆踊り大会",
       "venue": "木場二丁目公園",
@@ -23734,6 +23840,12 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=A5Lgrg9cbAA",
+          "date": "2026-07-20T06:00:01+00:00",
+          "text": "和太鼓お祭りCH\n河内おとこ節　「第46回巣鴨盆踊り大会」20　2026年7月18日　巣鴨駅前南口ロータリー盆踊り　巣一商店会\n2026年7月18日、豊島区の巣鴨駅前南口ロータリーにて開催された「第46回巣鴨盆踊り大会」の様子です。\n\n巣一商店会主催のもと、\n駅前の活気ある雰囲気の中で踊られる盆踊りをお届けします。\n地元の方々や観光客が一体となって盛り上がる、\n夏の巣鴨ならではの熱気をお楽しみください！\n\n和太鼓の響きとともに、日本の夏の情緒を感じていただければ幸いです。\n\n#巣鴨 #盆踊り #巣鴨花咲き音頭 #巣一商店会 #夏祭り #和太鼓 #東京の祭り #巣鴨駅前\n\n\n巣鴨駅前盆踊り\n１巣鴨花咲音頭　https://youtu.be/9dqKwAudGS4\n２きよしのドドンパ　https://youtu.be/wq9yyUc_IXY\n３バハマママ　https://youtu.be/TArlwnMgoPM\n４恋するフォーチュン"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=SmzgDG9SOrg",
@@ -23850,7 +23962,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 19
+      "evidence_count": 20
     },
     {
       "id": "17bac97093cdee84",
@@ -25175,7 +25287,7 @@
       "evidence_count": 1
     },
     {
-      "id": "985a86b3d58f9247",
+      "id": "0e88d3f96c322205",
       "song_name": "河内おとこ節",
       "event_name": "盆踊り大会",
       "venue": "木場二丁目公園",
@@ -25186,6 +25298,12 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=A5Lgrg9cbAA",
+          "date": "2026-07-20T06:00:01+00:00",
+          "text": "和太鼓お祭りCH\n河内おとこ節　「第46回巣鴨盆踊り大会」20　2026年7月18日　巣鴨駅前南口ロータリー盆踊り　巣一商店会\n2026年7月18日、豊島区の巣鴨駅前南口ロータリーにて開催された「第46回巣鴨盆踊り大会」の様子です。\n\n巣一商店会主催のもと、\n駅前の活気ある雰囲気の中で踊られる盆踊りをお届けします。\n地元の方々や観光客が一体となって盛り上がる、\n夏の巣鴨ならではの熱気をお楽しみください！\n\n和太鼓の響きとともに、日本の夏の情緒を感じていただければ幸いです。\n\n#巣鴨 #盆踊り #巣鴨花咲き音頭 #巣一商店会 #夏祭り #和太鼓 #東京の祭り #巣鴨駅前\n\n\n巣鴨駅前盆踊り\n１巣鴨花咲音頭　https://youtu.be/9dqKwAudGS4\n２きよしのドドンパ　https://youtu.be/wq9yyUc_IXY\n３バハマママ　https://youtu.be/TArlwnMgoPM\n４恋するフォーチュン"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=QMKUAZQyIk0",
@@ -25218,7 +25336,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 5
+      "evidence_count": 6
     },
     {
       "id": "49d01cff1b22f32c",
