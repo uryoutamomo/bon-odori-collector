@@ -56,7 +56,77 @@ def rare_signal_row(decision="accept", apply_value="stage_registration_candidate
     }
 
 
+def youtube_evidence_row(decision="accept", apply_value="add_song_evidence"):
+    return {
+        "source_id": "review_inbox",
+        "decision": decision,
+        "apply_value": apply_value,
+        "reviewer": "内田さん",
+        "reviewed_at": "2026-07-20T02:00:00+00:00",
+        "note": "動画と曲を確認",
+        "raw": {
+            "inbox_id": "inbox_youtube",
+            "kind": "youtube_evidence",
+            "title": "みたままつり 東京音頭",
+            "event_name": "みたままつり",
+            "event_year": 2025,
+            "source_id": "youtube_evidence",
+            "source_key": "video:abc123|year:2025",
+            "source_url": "https://www.youtube.com/watch?v=abc123",
+            "payload": {
+                "video_id": "abc123",
+                "action": "review_video_evidence",
+                "title_song_candidates": ["東京音頭"],
+            },
+        },
+    }
+
+
 class ReviewInboxDecisionStageTest(unittest.TestCase):
+    def test_youtube_inbox_ui_exposes_only_finite_b3_actions(self):
+        source = next(source for source in data.SOURCES if source.id == "review_inbox")
+        options = data.apply_options(source, {"kind": "youtube_evidence"})
+
+        self.assertEqual(
+            [option["value"] for option in options],
+            ["add_song_evidence", "needs_research", "reject", "hold"],
+        )
+        self.assertEqual(
+            [option["decision"] for option in options],
+            ["accept", "needs_research", "reject", "hold"],
+        )
+        self.assertIn("直接反映しません", data.route_note(source, {"kind": "youtube_evidence"}))
+        self.assertEqual(
+            data.action_group_for(source, {"kind": "youtube_evidence"})["id"],
+            "youtube",
+        )
+
+    def test_youtube_accept_stages_finite_song_evidence_packet(self):
+        stage = build_decision_stage({"rows": [youtube_evidence_row()]})
+
+        self.assertEqual(stage["route_counts"]["domain_stage"], 1)
+        row = stage["by_route"]["domain_stage"][0]
+        self.assertEqual(row["domain_stage_type"], "youtube_song_evidence")
+        self.assertEqual(row["youtube_evidence"]["video_id"], "abc123")
+        self.assertEqual(row["youtube_evidence"]["title_song_candidates"], ["東京音頭"])
+        self.assertEqual(row["youtube_evidence"]["write_mode"], "staged_only")
+
+    def test_youtube_accept_rejects_unsafe_action_and_incomplete_evidence(self):
+        with self.assertRaisesRegex(ValueError, "must stage add_song_evidence"):
+            build_decision_stage(
+                {"rows": [youtube_evidence_row(apply_value="confirm_current_date")]}
+            )
+
+        incomplete = youtube_evidence_row()
+        incomplete["raw"]["payload"].pop("video_id")
+        with self.assertRaisesRegex(ValueError, "requires video_id"):
+            build_decision_stage({"rows": [incomplete]})
+
+        non_youtube = youtube_evidence_row()
+        non_youtube["raw"]["source_url"] = "https://example.com/watch?v=abc123"
+        with self.assertRaisesRegex(ValueError, "requires video_id"):
+            build_decision_stage({"rows": [non_youtube]})
+
     def test_rare_signal_inbox_ui_exposes_only_finite_b2_actions(self):
         source = next(source for source in data.SOURCES if source.id == "review_inbox")
         options = data.apply_options(source, {"kind": "rare_signal"})

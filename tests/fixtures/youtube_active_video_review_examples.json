@@ -1,0 +1,88 @@
+{
+  "generated_at": "2026-07-20T00:00:00Z",
+  "rows": [
+    {
+      "video_id": "pending-official",
+      "video_url": "https://www.youtube.com/watch?v=pending-official",
+      "title": "自由が丘盆踊り 2025",
+      "published_at": "2025-07-21T10:50:02Z",
+      "detected_event_date": "2025-07-20",
+      "title_event_name_candidate": "自由が丘盆踊り",
+      "title_song_candidates": [],
+      "matched_public_event": null,
+      "parent_event_component": null,
+      "action": "needs_official_confirmation",
+      "priority": "high"
+    },
+    {
+      "video_id": "pending-evidence",
+      "video_url": "https://youtu.be/pending-evidence",
+      "title": "みたままつり ダンシングヒーロー",
+      "published_at": "2025-07-14T14:01:52Z",
+      "detected_event_date": "",
+      "title_event_name_candidate": "みたままつり",
+      "title_song_candidates": ["ダンシングヒーロー"],
+      "matched_public_event": null,
+      "parent_event_component": null,
+      "action": "review_video_evidence",
+      "priority": "normal"
+    },
+    {
+      "video_id": "pending-component",
+      "video_url": "https://www.youtube.com/shorts/pending-component",
+      "title": "アースデイ東京 イマジン盆踊り部",
+      "published_at": "2025-04-19T13:00:09Z",
+      "detected_event_date": "2025-04-19",
+      "title_song_candidates": ["イマジン盆踊り部"],
+      "matched_public_event": null,
+      "parent_event_component": {
+        "parent_event_name": "アースデイ東京",
+        "component_label": "イマジン盆踊り部"
+      },
+      "action": "bon_component_of_parent_event",
+      "priority": "normal"
+    },
+    {
+      "video_id": "closed-component",
+      "video_url": "https://www.youtube.com/watch?v=closed-component",
+      "title": "アースデイ東京 東京音頭",
+      "published_at": "2025-04-19T13:00:09Z",
+      "detected_event_date": "2025-04-19",
+      "title_song_candidates": ["東京音頭"],
+      "matched_public_event": null,
+      "parent_event_component": {
+        "parent_event_name": "アースデイ東京",
+        "component_label": "イマジン盆踊り部"
+      },
+      "action": "bon_component_of_parent_event",
+      "priority": "normal"
+    },
+    {
+      "video_id": "closed-structured-setlist",
+      "video_url": "https://www.youtube.com/watch?v=closed-structured-setlist",
+      "title": "未知の親イベント企画",
+      "published_at": "2025-04-20T13:00:09Z",
+      "detected_event_date": "2025-04-20",
+      "title_song_candidates": [],
+      "setlist_occurrences": [
+        {"setlist": [{"song_name": "未登録でも構造化済みの曲"}]}
+      ],
+      "matched_public_event": null,
+      "parent_event_component": {
+        "parent_event_name": "未知の親イベント",
+        "component_label": "盆踊り企画"
+      },
+      "action": "bon_component_of_parent_event",
+      "priority": "normal"
+    },
+    {
+      "video_id": "already-routed",
+      "video_url": "https://www.youtube.com/watch?v=already-routed",
+      "title": "既存イベント動画",
+      "detected_event_date": "2025-08-01",
+      "matched_public_event": {"id": "occ-1", "name": "既存イベント"},
+      "action": "append_existing_event",
+      "priority": "normal"
+    }
+  ]
+}

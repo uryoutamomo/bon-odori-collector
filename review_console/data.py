@@ -109,6 +109,7 @@ APPLY_VALUE_LABELS = {
     "confirm_non_x_source": "非X根拠で確認済み",
     "needs_non_x_backcheck": "非X根拠を追加調査",
     "stage_registration_candidate": "登録候補へ送る",
+    "add_song_evidence": "動画・曲証拠を追加候補へ送る",
 }
 
 APPLY_VALUE_HELP = {
@@ -123,6 +124,7 @@ APPLY_VALUE_HELP = {
     "keep_historical_reference": "不足を把握したうえで過去実績表示を維持します。",
     "remove_historical_reference": "公開価値が低い過去実績として外す判断に回します。",
     "append_existing_event": "イベントを新規作成せず、YouTube動画URLと曲名を既存イベントの証拠として残します。",
+    "add_song_evidence": "動画URL・曲候補・対象年をdomain stagingへ送り、この操作だけではMaster RDBや公開データを変更しません。",
 }
 
 APPLY_VALUE_DECISIONS = {
@@ -1829,6 +1831,13 @@ def option_help_for(source: ReviewSource, row: dict[str, Any], value: str) -> st
             "reject": "ノイズ、重複、または登録対象外として終了します。",
             "hold": "判断材料を残したまま、適用せず保留します。",
         }.get(value, "")
+    if source.id == "review_inbox" and as_text(row.get("kind")) == "youtube_evidence":
+        return {
+            "add_song_evidence": "動画URL・曲候補・対象年を適用前のdomain stagingへ送ります。",
+            "needs_research": "追加先イベント、公式根拠、または曲名の確認へ戻します。",
+            "reject": "この動画をイベント・曲の根拠として使いません。",
+            "hold": "判断材料を残したまま、適用せず保留します。",
+        }.get(value, "")
     if source.id == "x_candidate_post":
         return {
             "promote": "このアカウントを今後の盆踊り情報源にします。候補JSONへ registration_decision=登録 を直接保存します。",
@@ -1958,6 +1967,8 @@ def apply_options(source: ReviewSource, row: dict[str, Any]) -> list[dict[str, A
     option_values = source.option_values
     if source.id == "review_inbox" and as_text(row.get("kind")) == "rare_signal":
         option_values = ("stage_registration_candidate", "needs_research", "reject", "hold")
+    elif source.id == "review_inbox" and as_text(row.get("kind")) == "youtube_evidence":
+        option_values = ("add_song_evidence", "needs_research", "reject", "hold")
     for value in option_values:
         disabled_reason = option_disabled_reason(source, row, value)
         options.append(
@@ -1982,6 +1993,8 @@ def route_note(
 ) -> str:
     if source.id == "review_inbox" and as_text(row.get("kind")) == "rare_signal":
         return "X由来の発見候補です。採用時も登録候補packetを作るだけで、非X確認URLがなければ安全側に停止します。"
+    if source.id == "review_inbox" and as_text(row.get("kind")) == "youtube_evidence":
+        return "過去年のYouTube証拠候補です。採用時もdomain stagingへ送るだけで、Master RDBや公開データには直接反映しません。"
     if source.id == "x_candidate_post":
         return "X/RSSの情報源候補です。ここは2段式ではありません。押した判断を候補JSONの registration_decision に直接保存します。"
     if source.id == "rare_signal_backcheck":
@@ -2083,6 +2096,9 @@ def action_group_for(
         elif kind in {"song", "song_research"}:
             group_id = "song_research"
             reason = "統合受信箱に入った曲候補確認です。"
+        elif kind == "youtube_evidence":
+            group_id = "youtube"
+            reason = "統合受信箱に入ったYouTube動画・曲証拠候補です。"
         else:
             group_id = "other"
             reason = "統合受信箱に入ったレビュー対象です。"
