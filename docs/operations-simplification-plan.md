@@ -1,5 +1,22 @@
 # 業務フロー簡素化計画（正本1・受信箱1・反映口1・公開口1）
 
+## 完了状況（2026-07-20）
+
+実装上の一本道化は、A・E・C・Bまで本番運用へ入り、Dもcollector/siteのコード切替までmainへ反映済み。
+
+- **A 反映口**: `apply_change_requests.py` に有限な変更種別を集約。dry-run既定、確認文字列、backup、audit、冪等性を維持する。
+- **E 名残の撤去**: one-off群を `legacy/` へ移し、review inboxを迂回していたweeklyの旧UI生成・直接apply経路を停止した。rollback snapshotとparity入力は削除せず保持する。
+- **C 公開口**: `export_public_events.py` を唯一の生成入口にし、JSON-only fallbackは0件をhard failする。公開準備は `scripts/publish_public_data_flow.py` に集約した。
+- **B 受信箱**: review consoleの既定readerを統合inboxへ切替済み。旧readerは明示的なrollback専用。production runでYouTube 172件、低優先度257件がparity/unmapped 0、CAS連続性・公開投影不変を確認済み。
+- **D 2軸**: `current_event_state × date_certainty_tier` を正規入力とするschema、migration、writer、export、site表示をmainへ反映した。`public_category` / `display_tier` は互換投影であり、新規判断の正本ではない。
+
+残る保護工程は、Dの本番Master RDB migrationと、その後の定時run確認である。これはコード上の未実装ではなく、
+本番RDBのbackup・audit・checksum CASを伴う切替作業なので、対象を明示したGOを受けて別工程で行う。
+現時点で公開サイトの表示切替は済んでおり、旧JSON fallbackも保持しているため、migration前でも表示は後方互換で動く。
+
+検証・切替証跡は `docs/review-inbox-b5-cutover-runbook.md`、Dの手順は
+`docs/event-state-axes-migration-plan.md` を正本とする。
+
 作成日: 2026-07-16 JST
 署名: こと（Claude Code）
 ステータス: **内田さんGO済み（2026-07-16）。着手順 A→E→C→B→D で即時着手。**

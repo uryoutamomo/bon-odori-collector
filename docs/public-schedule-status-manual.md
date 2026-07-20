@@ -1,6 +1,6 @@
 # 公開日程ステータス運用マニュアル
 
-更新: 2026-06-19
+更新: 2026-07-20
 署名: おと（Codex）
 
 ## 目的
@@ -16,34 +16,46 @@
 - 今年の公式HP、自治体/主催発表、信頼できる今年X投稿は、今年の開催日・開催確定の直接証拠にできる。
 - `last_year` や `recurring_last_year` を新しい正規概念にしない。過去年実績は `historical_reference` として扱う。
 
-## 公開カテゴリ
+## 正本となる2軸
 
-正規カテゴリは以下を使う。
+現在の正規入力は `current_event_state × date_certainty_tier` の2軸である。
 
-| カテゴリ | 意味 | 公開表示 |
+| 軸 | 有限値 | 意味 |
 | --- | --- | --- |
-| `current_confirmed_upcoming` | 今年の日付が確定し、これから開催 | 開催確定 |
-| `current_confirmed_ended` | 今年の日付が確定し、すでに終了 | 今年は終了 |
-| `historical_reference` | 過去年の具体的な開催実績があるが、今年の日付は未確認 | 過去実績あり・今年未確認 |
-| `schedule_hint_only` | 月・旬・会場メモなどの時期ヒントはあるが、具体的な過去年開催日はない | 7月予定 / 8月中旬予定 |
-| `date_unknown` | 日程情報がほぼない | 日程未定 |
+| `current_event_state` | `predicted` / `announced` / `confirmed` / `ended` / `cancelled` | 今年の開催状態 |
+| `date_certainty_tier` | `confirmed` / `rule_predicted` / `historical_slide` / `season_hint` / `historical_reference` | 日付・時期情報の確度と根拠 |
 
-既存実装の暫定名との対応:
+`confirmed` と `ended` は `date_certainty_tier=confirmed` を必須とする。
+`predicted` / `announced` に `confirmed` tierは使わない。過去実績があっても、今年の直接証拠がなければ
+`confirmed` に昇格させない。
 
-| 既存名 | 正規名 | 備考 |
-| --- | --- | --- |
-| `upcoming` | `current_confirmed_upcoming` | 今年の開催確定 |
-| `ended` | `current_confirmed_ended` | デフォルトでは非表示 |
-| `recurring_last_year` | `historical_reference` | 「昨年」固定ではなく過去実績として扱う |
-| `date_unknown` | `schedule_hint_only` または `date_unknown` | 月/旬ヒントの有無で分ける |
+`public_category`、`display_tier`、画面上のラベルは、この2軸から生成する互換・表示フィールドである。
+新しいwriterや判断ロジックで、これら旧フィールドを独立更新してはならない。
+
+## 互換公開カテゴリ
+
+以下は2軸から機械生成する旧JSONとの対応であり、正本ではない。
+
+| `current_event_state` | `date_certainty_tier` | `public_category` | `display_tier` |
+| --- | --- | --- | --- |
+| `confirmed` | `confirmed` | `upcoming` | `confirmed` |
+| `ended` | `confirmed` | `ended` | `ended` |
+| `cancelled` | 任意 | `cancelled` | `cancelled` |
+| `predicted` / `announced` | `rule_predicted` | `recurring_last_year` | `rule_predicted` |
+| `predicted` / `announced` | `historical_slide` | `recurring_last_year` | `historical_slide` |
+| `predicted` / `announced` | `historical_reference` | `recurring_last_year` | `historical_reference` |
+| `predicted` / `announced` | `season_hint` | `date_unknown` | `season_hint` |
 
 ## 推奨データ構造
 
-公開JSONや中間JSONでは、将来的に以下の構造へ寄せる。
+公開JSONは2軸を必須とし、表示互換のため旧フィールドも派生出力する。
 
 ```json
 {
-  "public_category": "historical_reference",
+  "current_event_state": "predicted",
+  "date_certainty_tier": "historical_reference",
+  "public_category": "recurring_last_year",
+  "display_tier": "historical_reference",
   "current_year": 2026,
   "current_date_status": "unconfirmed",
   "historical_occurrences": [
@@ -69,7 +81,8 @@
 
 運用上の意味:
 
-- `public_category` は公開表示の大分類。
+- `current_event_state` と `date_certainty_tier` が判断の正本。
+- `public_category` は公開表示互換の派生値。
 - `current_date_status` は今年情報の確定状態。`confirmed` / `candidate` / `unconfirmed` / `ended` を使う。
 - `historical_occurrences` は過去年の実績証拠。2025年だけに固定しない。
 - `latest_seen_year` は表示文言に使う直近の根拠年。
@@ -90,27 +103,27 @@
 
 ## 昇格ルール
 
-### `current_confirmed_upcoming` へ昇格できる条件
+### `confirmed × confirmed` へ昇格できる条件
 
 - 今年の開催年が明示されている。
 - イベント名または会場が対象イベントと対応している。
 - 開催日が確認できる。
 - 根拠が公式HP、自治体/主催発表、信頼済みXなど、今年の直接証拠である。
 
-### `historical_reference` に留める条件
+### `predicted × historical_reference` に留める条件
 
 - 2025年、2024年、2023年などの具体的な開催日がある。
 - ただし今年の開催日は未確認。
 - YouTube、過去公式アーカイブ、過去X、過去ブログなどが根拠。
 - 複数年の証拠があっても、今年の直接証拠がなければ開催確定にはしない。
 
-### `schedule_hint_only` に留める条件
+### `predicted × season_hint` に留める条件
 
 - 「例年7月」「8月中旬」「町会夏祭り」などの時期ヒントがある。
 - 具体的な過去年開催日までは確認できていない。
 - 会場メモや公開紹介文から月だけ分かる。
 
-### `date_unknown` にする条件
+### 日程情報がほぼない場合
 
 - 開催日、開催月、過去実績、時期ヒントがほぼない。
 - 会場やイベント名だけの未整備情報。
@@ -137,20 +150,19 @@
 
 通常表示:
 
-- `current_confirmed_upcoming`
-- `historical_reference`
-- `schedule_hint_only`
-- `date_unknown`
+- `current_event_state` が `predicted` / `announced` / `confirmed` のもの。
+- `date_certainty_tier` に応じて、確定・予測・過去実績・時期ヒントの表示を分ける。
 
 通常表示から除外:
 
-- `current_confirmed_ended`
+- `current_event_state=ended`（「過去の開催を含む」で表示可能）。
+- `current_event_state=cancelled`（中止表示の明示的な導線だけで扱う）。
 
 「開催確定情報のみ」:
 
-- `current_confirmed_upcoming`
-- 「過去の開催を含む」がオンなら `current_confirmed_ended` も含む。
-- `historical_reference`、`schedule_hint_only`、`date_unknown` は含めない。
+- `confirmed × confirmed`。
+- 「過去の開催を含む」がオンなら `ended × confirmed` も含む。
+- `predicted` / `announced` は含めない。
 
 地図表示:
 
@@ -161,11 +173,11 @@
 ## 日々の作業手順
 
 1. 今年の公式/主催/自治体情報を優先して確認する。
-2. 今年の直接証拠があれば、開催日・会場・根拠URLを入れて `current_confirmed_upcoming` に昇格する。
+2. 今年の直接証拠があれば、開催日・会場・根拠URLを入れて `confirmed × confirmed` に昇格する。
 3. 今年の直接証拠がなければ、過去年YouTube/公式アーカイブ/Xを `historical_occurrences` に積む。
-4. 過去年実績があるものは `historical_reference` とし、`continuity_score` と `evidence_years` を更新する。
-5. 月や旬しか分からないものは `schedule_hint_only` に置く。
-6. ヒントも薄いものは `date_unknown` に置く。
+4. 過去年実績があるものは `predicted × historical_reference` とし、`continuity_score` と `evidence_years` を更新する。
+5. 月や旬しか分からないものは `predicted × season_hint` に置く。
+6. ヒントも薄いものも有限語彙外へ逃がさず、根拠を要レビューとして受信箱へ戻す。
 7. Web公開前に、カテゴリ別件数と「開催確定情報のみ」の件数を確認する。
 
 ## 禁止事項

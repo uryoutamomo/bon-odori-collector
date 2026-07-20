@@ -1,27 +1,30 @@
 # Review Console Operations
 
-Updated: 2026-06-26 JST
+Updated: 2026-07-20 JST
 署名: おと（Codex）
 
 ## Position
 
 The review console is a local-only operations surface for Uchida-san and oto.
+The normal CLI entrypoint reads the consolidated `data/review_inbox.json` only.
+Legacy JSON sources are retained as read-only rollback snapshots and are loaded
+only when `--reader-mode legacy` is explicitly selected.
 
 It is for:
 
 - checking whether review queues are piling up,
-- reviewing candidates across existing JSON review/queue files,
+- reviewing normalized candidates from the consolidated inbox,
 - saving Uchida-san's decisions,
 - exporting event/source/venue decisions,
 - staging per-source decision files for deliberate downstream application.
 
-X/RSS account candidates are a direct-decision path. Their buttons write
+In explicit legacy mode, X/RSS account candidates remain a direct-decision path. Their buttons write
 `registration_decision` back to `data/x_candidate_post_review.json`; they do
 not need export or staging.
 
 It is not for:
 
-- direct Master RDB mutation,
+- direct Master RDB mutation from a button press,
 - direct Notion writes,
 - direct public JSON/S3/CloudFront deployment,
 - background scheduling or login-time launch.
@@ -62,7 +65,7 @@ The page has four areas.
 4. Decision panel
    - source-specific decision buttons such as `過去実績として採用`,
      `曲候補を再調査`, `不採用`, `保留`
-   - X/RSS account buttons: `情報源にする`, `様子を見る`, `対象外`, `後で見る`
+   - legacy X/RSS account buttons: `情報源にする`, `様子を見る`, `対象外`, `後で見る`
    - `メモ (n)`
    - `元に戻す z`
    - `解除 c`
@@ -94,7 +97,12 @@ If the browser is already open and code was changed, reload the page.
 
 ## Files
 
-Inputs are existing review and queue files under `data/`, currently including:
+The normal input is:
+
+- `data/review_inbox.json`
+
+The following files are retained legacy/parity inputs. They are not mixed into
+the normal inbox view:
 
 - `data/registered_event_investigation_queue.json`
 - `data/predicted_occurrence_research_queue.json`
@@ -123,10 +131,14 @@ Console outputs:
 - `data/review_console/exported_decisions.md`
 - `data/review_console/staged/*_decisions.json`
 
-Rare signalの裏どり判断は `rare_signal_backcheck` としてステージされる。
+Inbox decisions are first saved locally, then exported as route-specific staged
+files by `反映準備 g`. A separate, audited writer may persist lifecycle decisions
+to the Master RDB with checksum CAS. Domain changes remain staged-only until the
+corresponding apply flow is run; the console itself never publishes the site or
+writes Notion.
+
+Rare signalの裏どり判断は `domain_stage` routeへステージされる。
 `非X根拠で確認済み` を選ぶ場合は、メモ欄に確認URLを貼る。
-後続の `export_rare_signal_backcheck_reviews.py` が、そのURLを
-`data/rare_signal_backcheck_reviews.json` に変換する。
 
 ## Daily Review Flow
 
@@ -147,13 +159,18 @@ Rare signalの裏どり判断は `rare_signal_backcheck` としてステージ�
 12. For event/source/venue decisions, press `e` to export decisions.
 13. For event/source/venue decisions, press `g` to stage decisions.
 14. Oto or a domain-specific apply script checks the staged file before any
-    operational data is changed.
+    operational data is changed. Inbox lifecycle persistence and domain apply
+    are separate operations.
 
-For X/RSS account candidates, stop after the decision button. The decision is
-already saved to the source review JSON.
+In explicit legacy mode, stop after the decision button for X/RSS account
+candidates. The decision is already saved to the source review JSON.
 
 Do not use `ステージ適用` as a production deployment action. It only creates
 local apply packets under `data/review_console/staged/`.
+
+To inspect the rollback view, use `python3 run_review_console.py --reader-mode legacy`.
+Do not use this mode for normal daily review and do not regenerate its snapshots
+unless following the rollback runbook.
 
 ## Review Card Fields
 

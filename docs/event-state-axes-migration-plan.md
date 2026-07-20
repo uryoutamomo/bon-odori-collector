@@ -3,6 +3,18 @@
 作成日: 2026-07-20 JST  
 署名: おと（Codex）
 
+## 実装状況（2026-07-20）
+
+collector側の有限語彙・組み合わせ検証・明示migration・writer更新・export互換投影・workflow監査は
+PR #75でmainへ反映済み。site側も2軸優先、旧JSON fallback、snapshot allowlist、契約テストを
+PR #3でmainへ反映済み。メール経路は状態語彙を直接参照せず、本文配送だけを担う。
+
+したがってDのコード実装は完了している。未完了なのは本番Master RDBへの明示migrationと、
+その後の定時runで欠損0・公開投影不変を確認する保護工程だけである。migration前はexportの
+legacy-derived fallback、siteの旧JSON fallbackが働くため、公開表示を止めずに段階移行できる。
+
+本番migrationはbackup、audit、checksum CAS、再fetch検証を伴うため、対象を明示したGOなしには実行しない。
+
 ## 目的と完了条件
 
 イベントの公開状態を、次の2軸だけを正本として扱う。
