@@ -145,7 +145,21 @@ def render_markdown(report: dict) -> str:
         lines.append(f"| {row['source_id']} | `{row['path']}` | {row['category']} | {str(row['exists']).lower()} | {len(row['workflow_or_adapter_references'])} | {writers} |")
     lines.extend(["", "## Rules", "", "- `parity_input` は対応するscheduled adapterとparity検証が残る間、削除・移動しない。", "- `alternate_live_writer` がある入力は、手動workflowがlegacy UI再生成・commit・直接applyを行える。writerを退役・縮小・維持のいずれにするか、別レビューで明示決定するまで削除候補にしない。", "- `rollback_snapshot` はconsoleの既定入力に戻さず、rollback手順に従ってのみ参照する。JSONの `snapshot_provenance` は最終commitと時刻を記録する。", "- manifest外のlegacy候補は、このinventoryへ追加してから別レビューで扱う。", "", "## Out of scope", ""])
     lines.extend(f"- `{item['name']}`: {item['reason']}" for item in report.get("out_of_scope", []))
-    lines.append("")
+    lines.extend([
+        "",
+        "## Decision required before workflow cleanup",
+        "",
+        "`daily_song` と `daily_term` は `weekly_harvest.yml` の手動fallbackから、legacy keyboard-review HTMLの再生成、parity input JSONのcommit、`apply_reviewed=true` 時のNotion直接applyを行える。これはB5の統合inbox経路とは別のlive writerである。",
+        "",
+        "workflow変更対象を明示した内田さんのGO後に、次のいずれかを選ぶ。",
+        "",
+        "1. 退役: legacy UI生成と直接applyを削除し、workflow自体を停止または削除する。",
+        "2. 縮小: parity inputを読むだけの手動fallbackにし、legacy UI・commit・直接applyを外す。",
+        "3. 維持: 明示的なescape hatchとして残し、B5の通常経路外であることと実行条件をrunbookへ固定する。",
+        "",
+        "rollback snapshot 7件の最終更新は2026-06-22〜2026-07-19であり、reader切替時点の最新状態を保証しない。このためrollbackは「古いlegacy snapshotを読む入口」であって、最新状態への復帰手段とはみなさない。",
+        "",
+    ])
     return "\n".join(lines)
 
 

@@ -32,6 +32,7 @@ class LegacyCleanupInventoryTest(unittest.TestCase):
         self.assertIn("削除・移動・workflow変更を行わない", markdown)
         self.assertIn("parity_input", markdown)
         self.assertIn("alternate_live_writer", markdown)
+        self.assertIn("Decision required before workflow cleanup", markdown)
 
 
 if __name__ == "__main__":

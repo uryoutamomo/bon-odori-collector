@@ -33,3 +33,15 @@
 - `x_news_digest_for_oto / rare_signal_candidates`: machine discovery pipeline inputs, not review-inbox reader snapshots
 - `weekly_harvest_candidates`: upstream collection material; the review-inbox input is weekly_harvest_review_candidates
 - `x_candidate_post_review`: separate X account/member-list workflow
+
+## Decision required before workflow cleanup
+
+`daily_song` と `daily_term` は `weekly_harvest.yml` の手動fallbackから、legacy keyboard-review HTMLの再生成、parity input JSONのcommit、`apply_reviewed=true` 時のNotion直接applyを行える。これはB5の統合inbox経路とは別のlive writerである。
+
+workflow変更対象を明示した内田さんのGO後に、次のいずれかを選ぶ。
+
+1. 退役: legacy UI生成と直接applyを削除し、workflow自体を停止または削除する。
+2. 縮小: parity inputを読むだけの手動fallbackにし、legacy UI・commit・直接applyを外す。
+3. 維持: 明示的なescape hatchとして残し、B5の通常経路外であることと実行条件をrunbookへ固定する。
+
+rollback snapshot 7件の最終更新は2026-06-22〜2026-07-19であり、reader切替時点の最新状態を保証しない。このためrollbackは「古いlegacy snapshotを読む入口」であって、最新状態への復帰手段とはみなさない。
