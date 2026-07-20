@@ -917,8 +917,21 @@ def build_public_events_from_master(db_path=MASTER_DB):
     with connect_existing(db_path) as conn:
         conn.row_factory = sqlite3.Row
         rdb_songs = load_rdb_occurrence_songs(conn)
+        occurrence_columns = {
+            row[1] for row in conn.execute("PRAGMA table_info(event_occurrences)")
+        }
+        has_canonical_axes = {
+            "current_event_state",
+            "date_certainty_tier",
+        }.issubset(occurrence_columns)
+        axis_select = (
+            "o.current_event_state, o.date_certainty_tier,"
+            if has_canonical_axes
+            else "NULL AS current_event_state, NULL AS date_certainty_tier,"
+        )
+        ward_placeholders = ",".join("?" for _ in WARD_ORDER)
         rows = conn.execute(
-            """
+            f"""
             SELECT
               o.occurrence_id,
               s.series_id,
@@ -928,6 +941,7 @@ def build_public_events_from_master(db_path=MASTER_DB):
               o.date_end,
               o.date_status,
               o.lifecycle_status,
+              {axis_select}
               o.confidence,
               o.source_kind,
               o.source_url,
@@ -975,7 +989,7 @@ def build_public_events_from_master(db_path=MASTER_DB):
               AND s.status = 'active'
               AND o.lifecycle_status NOT IN ('merged', 'duplicate', 'rejected', 'superseded_by_curated')
             ORDER BY v.area, v.canonical_name, o.display_name, o.event_year
-            """.format(ward_placeholders=",".join("?" for _ in WARD_ORDER)),
+            """,
             list(WARD_ORDER),
         ).fetchall()
 
@@ -1026,6 +1040,7 @@ def build_public_events_from_master(db_path=MASTER_DB):
             "_series_id": row["series_id"],
             "_event_year": int(row["event_year"] or 2026),
             "_venue_id": row["venue_id"],
+            "_canonical_state_axes": has_canonical_axes,
             "name_confirmed": True,
             "venue": clean_public_text(row["venue"]),
             "area": row["area"],
@@ -1047,6 +1062,9 @@ def build_public_events_from_master(db_path=MASTER_DB):
             "source_urls": _rdb_source_urls(raw_detail, row["source_url"], row["source_kind"]),
             "songs": songs,
         })
+        if has_canonical_axes:
+            events[-1]["current_event_state"] = row["current_event_state"]
+            events[-1]["date_certainty_tier"] = row["date_certainty_tier"]
         covered.add(row["venue_id"])
 
     events.sort(key=lambda e: (WARD_ORDER[e["area"]], e["venue"], e["name"]))
@@ -1095,7 +1113,7 @@ def apply_public_recurrence_metadata(events):
     return enrich_public_events(events, build_rows(events))
 
 
-def apply_public_site_postprocessors(events, *, today=None):
+def apply_public_site_postprocessors(events, *, today=None, prefer_existing_axes=False):
     """Apply the public-site-only fields that used to be run as separate steps."""
     from apply_public_historical_references import (
         apply_historical_references,
@@ -1109,9 +1127,9 @@ def apply_public_site_postprocessors(events, *, today=None):
         today=public_export_today(today),
         fixed_date_rules=load_fixed_date_rules(),
     )["events"]
-    events = apply_display_tiers(events)
+    events = apply_display_tiers(events, prefer_existing_axes=prefer_existing_axes)
     events = apply_season_hints(events, target_year=2026)["events"]
-    return apply_display_tiers(events)
+    return apply_display_tiers(events, prefer_existing_axes=prefer_existing_axes)
 
 
 def sanitize_public_event_details(events):
@@ -1455,7 +1473,14 @@ def strip_public_internal_event_fields(events):
     cleaned = []
     for event in events:
         item = strip_internal_public_fields(event)
-        for key in ("_source", "_occurrence_id", "_series_id", "_event_year", "_venue_id"):
+        for key in (
+            "_source",
+            "_occurrence_id",
+            "_series_id",
+            "_event_year",
+            "_venue_id",
+            "_canonical_state_axes",
+        ):
             item.pop(key, None)
         cleaned.append(item)
     return cleaned
@@ -1549,8 +1574,18 @@ def project_public_events(events, *, db_path=MASTER_DB, today=None):
         "source": prediction_payload.get("source") or str(DATE_PREDICTIONS),
         "summary": prediction_payload.get("summary") or {},
     }
-    events = apply_display_tiers(prediction_result["events"])
-    events = apply_public_site_postprocessors(events, today=today)
+    prefer_existing_axes = bool(events) and all(
+        event.get("_canonical_state_axes")
+        and event.get("current_event_state")
+        and event.get("date_certainty_tier")
+        for event in prediction_result["events"]
+    )
+    events = apply_display_tiers(
+        prediction_result["events"], prefer_existing_axes=prefer_existing_axes
+    )
+    events = apply_public_site_postprocessors(
+        events, today=today, prefer_existing_axes=prefer_existing_axes
+    )
     return {
         "events": events,
         "public_events": strip_public_internal_event_fields(events),

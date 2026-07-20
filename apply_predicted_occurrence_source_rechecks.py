@@ -14,6 +14,7 @@ from pathlib import Path
 from types import SimpleNamespace
 
 import audit_master_rdb
+from event_state_axes import update_occurrence_state_axes
 from master_db import MASTER_DB, connect_existing, refresh_manifest_database_state, stable_id, table_counts
 
 
@@ -238,6 +239,9 @@ def apply_plan(conn, planned, now):
                 now,
                 item["target_occurrence_id"],
             ),
+        )
+        update_occurrence_state_axes(
+            conn, item["target_occurrence_id"], "confirmed", "confirmed"
         )
         occurrence_date_id = upsert_occurrence_date(conn, item, now)
         conn.execute(

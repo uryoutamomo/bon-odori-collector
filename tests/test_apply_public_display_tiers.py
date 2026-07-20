@@ -2,6 +2,7 @@ import unittest
 
 from apply_public_display_tiers import (
     apply_display_tiers,
+    apply_legacy_public_fields_from_axes,
     current_event_state_for_event,
     date_certainty_tier_for_event,
     display_tier_for_event,
@@ -40,13 +41,13 @@ class ApplyPublicDisplayTiersTest(unittest.TestCase):
         ])
 
         self.assertEqual([row["display_tier"] for row in rows], ["confirmed", "season_hint"])
-        self.assertEqual([row["current_event_state"] for row in rows], ["confirmed", "unconfirmed"])
+        self.assertEqual([row["current_event_state"] for row in rows], ["confirmed", "predicted"])
         self.assertEqual([row["date_certainty_tier"] for row in rows], ["confirmed", "season_hint"])
 
     def test_state_axes_separate_current_state_from_certainty(self):
         self.assertEqual(
             current_event_state_for_event({"public_category": "recurring_last_year", "historical_reference": {}}),
-            "unconfirmed",
+            "predicted",
         )
         self.assertEqual(
             date_certainty_tier_for_event({"public_category": "recurring_last_year", "historical_reference": {}}),
@@ -62,8 +63,38 @@ class ApplyPublicDisplayTiersTest(unittest.TestCase):
         )
         self.assertEqual(
             current_event_state_for_event({"public_category": "upcoming"}),
-            "unconfirmed",
+            "announced",
         )
+
+    def test_legacy_fields_are_projected_from_axes(self):
+        rows = apply_legacy_public_fields_from_axes([
+            {"current_event_state": "confirmed", "date_certainty_tier": "confirmed"},
+            {"current_event_state": "ended", "date_certainty_tier": "confirmed"},
+            {"current_event_state": "predicted", "date_certainty_tier": "historical_slide"},
+            {"current_event_state": "announced", "date_certainty_tier": "season_hint"},
+        ])
+
+        self.assertEqual(
+            [(row["public_category"], row["display_tier"]) for row in rows],
+            [
+                ("upcoming", "confirmed"),
+                ("ended", "ended"),
+                ("recurring_last_year", "historical_slide"),
+                ("date_unknown", "season_hint"),
+            ],
+        )
+
+    def test_prefer_existing_axes_does_not_reverse_derive_from_legacy_fields(self):
+        rows = apply_display_tiers([
+            {
+                "current_event_state": "ended",
+                "date_certainty_tier": "confirmed",
+                "public_category": "upcoming",
+                "display_tier": "confirmed",
+            }
+        ], prefer_existing_axes=True)
+        self.assertEqual(rows[0]["public_category"], "ended")
+        self.assertEqual(rows[0]["display_tier"], "ended")
 
 
 if __name__ == "__main__":

@@ -12,6 +12,7 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
+from event_state_axes import update_occurrence_state_axes
 from master_db import MASTER_DB, connect_existing, refresh_manifest_database_state, stable_id, table_counts
 
 
@@ -175,6 +176,7 @@ def apply_plan(conn, planned, now):
                 item["occurrence_id"],
             ),
         )
+        update_occurrence_state_axes(conn, item["occurrence_id"], "confirmed", "confirmed")
         occurrence_date_id = upsert_occurrence_date(conn, item, now)
         after = occurrence(conn, item["occurrence_id"])
         applied.append({**item, "occurrence_date_id": occurrence_date_id, "after": after})
