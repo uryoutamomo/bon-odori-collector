@@ -9,11 +9,19 @@ collector側の有限語彙・組み合わせ検証・明示migration・writer�
 PR #75でmainへ反映済み。site側も2軸優先、旧JSON fallback、snapshot allowlist、契約テストを
 PR #3でmainへ反映済み。メール経路は状態語彙を直接参照せず、本文配送だけを担う。
 
-したがってDのコード実装は完了している。未完了なのは本番Master RDBへの明示migrationと、
-その後の定時runで欠損0・公開投影不変を確認する保護工程だけである。migration前はexportの
-legacy-derived fallback、siteの旧JSON fallbackが働くため、公開表示を止めずに段階移行できる。
+本番Master RDBへの明示migrationと次回定時run確認まで完了した。
 
-本番migrationはbackup、audit、checksum CAS、再fetch検証を伴うため、対象を明示したGOなしには実行しない。
+- workflow_dispatch run [29727773884](https://github.com/uryoutamomo/bon-odori-collector/actions/runs/29727773884):
+  `current_event_state` / `date_certainty_tier` の2列を追加し、252 occurrence中197行を更新。
+  公開209件のshadow mismatch 0、invalid 0、integrity `ok`、foreign key issue 0、audit issue 0。
+  checksum CASでsnapshot `event-state-axes-29727773884-1` をpublishし、Rend再fetch後は変更0を確認した。
+  run全体のfailureは後段YouTube inbox処理であり、D工程は成功している。
+- 定時run [29731848146](https://github.com/uryoutamomo/bon-odori-collector/actions/runs/29731848146):
+  workflow全体がsuccess。D同期は列追加0・変更0・invalid 0・shadow mismatch 0、integrity `ok`、
+  foreign key issue 0、audit issue 0で、S3 publishはno-opだった。
+
+これにより本書のD1〜D5と完了条件1〜7は充足した。workflowの同期処理とsiteの旧JSON fallbackは、
+今後の状態遷移とrollback安全性のため維持する。
 
 ## 目的と完了条件
 
