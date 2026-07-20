@@ -187,6 +187,8 @@ low-priority 257件のparity / unmapped 0、RDB integrity、公開投影不変�
 次のE cleanupでは、legacy snapshotとrollback入口を削除せず、まず「通常workflowから参照される
 もの」「parity入力として必要なもの」「読み取り専用で保持するもの」を棚卸しする。削除・移動・
 workflow変更は、この棚卸しを独立レビューした後の別作業とする。
+最初のread-only inventoryは `docs/review-inbox-e-cleanup-inventory.md` に保存し、再生成は
+`python3 scripts/build_review_inbox_legacy_cleanup_inventory.py --out-json ... --out-md ...` で行う。
 
 ## 旧キューの閉鎖条件
 
