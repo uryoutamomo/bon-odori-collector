@@ -63,7 +63,7 @@ def run_scheduled(args: argparse.Namespace, *, environ: Mapping[str,str] | None=
     store=factory(args); reports=[]
     for source_id in SOURCE_IDS:
         report=run_source_shadow(store=store,adapted_snapshot=snapshots[source_id],observation_id=f"{observation}-{source_id}",public_projection_digest=lambda db: digest_function(db,today=args.public_today),flags=flags,work_dir=(Path(args.work_dir)/source_id if args.work_dir else None))
-        report["entrypoint"]={"name":"run_review_inbox_low_priority_scheduled.py","source_queue":source_id,"reader_mode":"legacy","legacy_writer_retained":True,"public_today":args.public_today}
+        report["entrypoint"]={"name":"run_review_inbox_low_priority_scheduled.py","source_queue":source_id,"reader_mode":flags.reader_mode,"legacy_writer_retained":flags.legacy_writer_enabled,"public_today":args.public_today}
         write_report(evidence_dir/f"{source_id}-report.json",report); reports.append(report)
     summary={"source_ids":list(SOURCE_IDS),"source_count":len(reports),"published_count":sum(bool(r["published"]) for r in reports),"unmapped_count":sum(r["reconciliation"]["summary"]["unmapped_count"] for r in reports),"rend":reports[-1]["rend"]["checksum"]}
     (evidence_dir/"summary.json").write_text(json.dumps(summary,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")

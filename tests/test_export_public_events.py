@@ -24,7 +24,7 @@ from export_public_events import (
     sanitize_public_event_details,
     strip_public_internal_event_fields,
     suppress_replaced_recurring_events,
-    warn_on_prediction_json_fallback,
+    require_no_prediction_json_fallback,
     write_public_js,
 )
 
@@ -141,7 +141,7 @@ class ExportPublicEventsTest(unittest.TestCase):
         self.assertEqual(merged["summary"]["json_fallback_count"], 1)
         self.assertEqual(merged["summary"]["json_fallback"][0]["event_name"], "東本願寺盆踊り")
 
-    def test_json_prediction_fallback_emits_migration_warning(self):
+    def test_json_prediction_fallback_is_a_hard_failure(self):
         payload = {
             "summary": {
                 "json_fallback_count": 1,
@@ -149,8 +149,12 @@ class ExportPublicEventsTest(unittest.TestCase):
             }
         }
 
-        with self.assertWarnsRegex(RuntimeWarning, "東本願寺盆踊り"):
-            self.assertIs(warn_on_prediction_json_fallback(payload), payload)
+        with self.assertRaisesRegex(RuntimeError, "東本願寺盆踊り"):
+            require_no_prediction_json_fallback(payload)
+
+    def test_zero_json_prediction_fallback_is_accepted(self):
+        payload = {"summary": {"json_fallback_count": 0, "json_fallback": []}}
+        self.assertIs(require_no_prediction_json_fallback(payload), payload)
 
     def test_master_export_does_not_mix_current_start_with_historical_end(self):
         with TemporaryDirectory() as tmp:

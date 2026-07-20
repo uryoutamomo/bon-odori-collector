@@ -98,8 +98,8 @@ def run_scheduled(
         "confirm": "matched",
         "public_today": args.public_today,
         "cron_window_checked": True,
-        "legacy_writer_retained": True,
-        "reader_mode": "legacy",
+        "legacy_writer_retained": flags.legacy_writer_enabled,
+        "reader_mode": flags.reader_mode,
         "source_queue": "youtube_aggregate",
         "required_queues": snapshot["aggregate"]["required_queues"],
     }

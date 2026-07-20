@@ -126,33 +126,6 @@ jobs:
         python build_weekly_harvest_candidates.py --days 3
         python triage_weekly_song_candidates.py --dry-run
         python prepare_weekly_harvest_review.py
-        python build_keyboard_review_ui.py \
-          --input data/weekly_harvest_review_candidates.json \
-          --rows-key rows \
-          --out data/weekly_harvest_review_ui.html \
-          --title '日次X収穫レビュー（用語・共起）' \
-          --term-field term \
-          --category-field category \
-          --summary-fields interpretation,type,confidence,evidence_count \
-          --detail-fields reason,evidence_text,evidence_url \
-          --source-field evidence \
-          --key-fields term,category,type,evidence_url \
-          --download-name weekly_harvest_review_decisions.json \
-          --storage-key daily-x-harvest-review
-        python build_keyboard_review_ui.py \
-          --input data/weekly_song_candidates_review.json \
-          --rows-key rows \
-          --out data/weekly_song_candidates_review_ui.html \
-          --title '日次X収穫レビュー（曲候補）' \
-          --term-field term \
-          --category-field category \
-          --summary-fields canonical_song_name,triage_reason,evidence_count \
-          --detail-fields reason,evidence_text,evidence_url \
-          --source-field evidence \
-          --key-fields term,category,type,evidence_url \
-          --decisions-labels '曲として採用,曲ではない,分割,用語集へ,保留' \
-          --download-name weekly_song_review_decisions.json \
-          --storage-key daily-x-song-review
 
     - name: Commit and Push changes
       run: |
@@ -167,19 +140,13 @@ jobs:
         [ -f data/x_news_digest_oto_reviews.json ] && git add -f data/x_news_digest_oto_reviews.json
         [ -f data/rare_signal_candidates.json ] && git add -f data/rare_signal_candidates.json
         [ -f data/rare_signal_candidates.md ] && git add -f data/rare_signal_candidates.md
-        [ -f data/rare_signal_backcheck_queue.json ] && git add -f data/rare_signal_backcheck_queue.json
-        [ -f data/rare_signal_backcheck_queue.md ] && git add -f data/rare_signal_backcheck_queue.md
         [ -f data/rare_signal_backcheck_reviews.json ] && git add -f data/rare_signal_backcheck_reviews.json
         [ -f data/rare_signal_backcheck_reviews.md ] && git add -f data/rare_signal_backcheck_reviews.md
         [ -f data/rare_signal_registration_candidates.json ] && git add -f data/rare_signal_registration_candidates.json
         [ -f data/rare_signal_registration_candidates.md ] && git add -f data/rare_signal_registration_candidates.md
         [ -f data/weekly_harvest_candidates.json ] && git add data/weekly_harvest_candidates.json
-        [ -f data/weekly_harvest_review_candidates.json ] && git add data/weekly_harvest_review_candidates.json
-        [ -f data/weekly_harvest_review_ui.html ] && git add data/weekly_harvest_review_ui.html
         [ -f data/weekly_harvest_summary.json ] && git add data/weekly_harvest_summary.json
         [ -f data/weekly_harvest_summary.md ] && git add data/weekly_harvest_summary.md
-        [ -f data/weekly_song_candidates_review.json ] && git add data/weekly_song_candidates_review.json
-        [ -f data/weekly_song_candidates_review_ui.html ] && git add data/weekly_song_candidates_review_ui.html
         [ -f data/weekly_song_triage_result.json ] && git add data/weekly_song_triage_result.json
         [ -f data/event_poster_ocr_queue.json ] && git add data/event_poster_ocr_queue.json
         [ -f data/glossary_runtime.json ] && git add data/glossary_runtime.json
@@ -225,8 +192,8 @@ jobs:
         REVIEW_INBOX_RARE_SIGNAL_SCHEDULED_ENABLED: 'true'
         REVIEW_INBOX_DUAL_WRITE_MODE: bulk
         REVIEW_INBOX_CAS_PUBLISH_ENABLED: 'true'
-        REVIEW_INBOX_READER_MODE: legacy
-        REVIEW_INBOX_LEGACY_WRITER_ENABLED: 'true'
+        REVIEW_INBOX_READER_MODE: inbox
+        REVIEW_INBOX_LEGACY_WRITER_ENABLED: 'false'
       run: |
         if [ ! -f "$RUNNER_TEMP/rare-signal-backcheck-built" ]; then
           echo "[review-inbox] current run did not build a rare signal queue; skip dual-write"
@@ -266,25 +233,17 @@ jobs:
         if-no-files-found: warn
         retention-days: 30
 
-    - name: Build and commit YouTube legacy review queues
-      id: youtube_legacy
+    - name: Build YouTube review-inbox adapter inputs
+      id: youtube_inputs
       if: ${{ vars.REVIEW_INBOX_YOUTUBE_AGGREGATE_DUAL_WRITE_ENABLED == 'true' && vars.MASTER_DB_S3_BUCKET != '' }}
       run: |
         python build_youtube_active_video_review.py --max-per-channel 10000
         python build_youtube_year_backfill_review_queue.py
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add -f data/youtube_active_video_review.json
-        git add -f data/youtube_active_video_review.md
-        git add -f data/youtube_year_backfill_review_queue.json
-        git add -f data/youtube_year_backfill_review_queue.md
-        python guard_git_large_files.py
-        git diff --cached --quiet || (git commit -m "Update YouTube legacy review queues" && git push)
         echo "built=true" >> "$GITHUB_OUTPUT"
 
     - name: Dual-write complete YouTube aggregate to review inbox
       id: youtube_aggregate_inbox
-      if: ${{ steps.youtube_legacy.outputs.built == 'true' }}
+      if: ${{ steps.youtube_inputs.outputs.built == 'true' }}
       env:
         MASTER_DB_S3_BUCKET: ${{ vars.MASTER_DB_S3_BUCKET }}
         MASTER_DB_S3_PREFIX: ${{ vars.MASTER_DB_S3_PREFIX || 'master-rdb' }}
@@ -292,8 +251,8 @@ jobs:
         REVIEW_INBOX_YOUTUBE_AGGREGATE_SCHEDULED_ENABLED: 'true'
         REVIEW_INBOX_DUAL_WRITE_MODE: bulk
         REVIEW_INBOX_CAS_PUBLISH_ENABLED: 'true'
-        REVIEW_INBOX_READER_MODE: legacy
-        REVIEW_INBOX_LEGACY_WRITER_ENABLED: 'true'
+        REVIEW_INBOX_READER_MODE: inbox
+        REVIEW_INBOX_LEGACY_WRITER_ENABLED: 'false'
       run: |
         TODAY="$(TZ=Asia/Tokyo date +%F)"
         python run_review_inbox_youtube_scheduled.py \
@@ -330,23 +289,17 @@ jobs:
         if-no-files-found: warn
         retention-days: 30
 
-    - name: Build and commit low-priority legacy review queues
-      id: low_priority_legacy
+    - name: Build low-priority review-inbox adapter inputs
+      id: low_priority_inputs
       if: ${{ vars.REVIEW_INBOX_LOW_PRIORITY_DUAL_WRITE_ENABLED == 'true' && vars.MASTER_DB_S3_BUCKET != '' }}
       run: |
         python build_missing_venue_review_from_song_associations.py
         python build_historical_reference_quality_review.py
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add -f data/accepted_venue_song_missing_venue_review.json data/accepted_venue_song_missing_venue_review.md
-        git add -f data/historical_reference_quality_review.json data/historical_reference_quality_review.md
-        python guard_git_large_files.py
-        git diff --cached --quiet || (git commit -m "Update low-priority legacy review queues" && git push)
         echo "built=true" >> "$GITHUB_OUTPUT"
 
     - name: Dual-write low-priority queues to review inbox
       id: low_priority_inbox
-      if: ${{ steps.low_priority_legacy.outputs.built == 'true' }}
+      if: ${{ steps.low_priority_inputs.outputs.built == 'true' }}
       env:
         MASTER_DB_S3_BUCKET: ${{ vars.MASTER_DB_S3_BUCKET }}
         MASTER_DB_S3_PREFIX: ${{ vars.MASTER_DB_S3_PREFIX || 'master-rdb' }}
@@ -354,8 +307,8 @@ jobs:
         REVIEW_INBOX_LOW_PRIORITY_SCHEDULED_ENABLED: 'true'
         REVIEW_INBOX_DUAL_WRITE_MODE: bulk
         REVIEW_INBOX_CAS_PUBLISH_ENABLED: 'true'
-        REVIEW_INBOX_READER_MODE: legacy
-        REVIEW_INBOX_LEGACY_WRITER_ENABLED: 'true'
+        REVIEW_INBOX_READER_MODE: inbox
+        REVIEW_INBOX_LEGACY_WRITER_ENABLED: 'false'
       run: |
         TODAY="$(TZ=Asia/Tokyo date +%F)"
         python run_review_inbox_low_priority_scheduled.py \

@@ -14,12 +14,24 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def test_current_song_term_and_venue_pending_parity():
-    assert build_snapshot("daily_song_candidate")["item_count"] == 3
-    assert build_snapshot("daily_term_candidate")["item_count"] == 21
-    venue = build_snapshot("accepted_venue_song_missing_venue")
-    assert venue["item_count"] == 13
-    hieda = next(item for item in venue["items"] if item["title"] == "日枝神社")
-    assert len(hieda["payload"]["source_rows"]) == 2
+    for source_id in (
+        "daily_song_candidate",
+        "daily_term_candidate",
+        "accepted_venue_song_missing_venue",
+    ):
+        snapshot = build_snapshot(source_id)
+        assert snapshot["item_count"] == len(snapshot["items"]) > 0
+        assert len({item["inbox_id"] for item in snapshot["items"]}) == snapshot["item_count"]
+
+
+def test_venue_rows_with_the_same_semantic_identity_are_merged():
+    rows = [
+        {"term": "曲A", "suggested_venue": "日枝神社", "evidence_url": "https://example.com/a"},
+        {"term": "曲B", "suggested_venue": "日枝神社", "evidence_url": "https://example.com/b"},
+    ]
+    items = adapt_source_payload(AcceptedVenueSongAdapter(), {"rows": rows})
+    assert len(items) == 1
+    assert len(items[0]["payload"]["source_rows"]) == 2
 
 
 def test_semantic_identity_ignores_mutable_evidence_url():

@@ -106,10 +106,15 @@ class SourceWriterFlags:
             )
         if not self.cas_publish_enabled:
             raise SourceWriterError("review inbox CAS publication is off")
-        if self.reader_mode != "legacy":
-            raise SourceWriterError("B1-2 cannot change the review inbox reader")
-        if not self.legacy_writer_enabled:
-            raise SourceWriterError("B1-2 cannot stop the legacy writer")
+        reader_writer_pair = (self.reader_mode, self.legacy_writer_enabled)
+        allowed_pairs = {("legacy", True), ("inbox", False)}
+        if reader_writer_pair not in allowed_pairs:
+            raise SourceWriterError(
+                "review inbox reader/writer flags must be paired as "
+                "legacy+enabled or inbox+disabled"
+            )
+        if self.dual_write_mode == "canary" and reader_writer_pair != ("legacy", True):
+            raise SourceWriterError("canary writes require the legacy reader and writer")
 
 
 def _env_bool(name: str, default: bool) -> bool:

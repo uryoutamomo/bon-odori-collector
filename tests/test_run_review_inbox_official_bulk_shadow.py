@@ -127,7 +127,7 @@ class RunReviewInboxOfficialBulkShadowTest(unittest.TestCase):
                 ("REVIEW_INBOX_DUAL_WRITE_MODE", "canary", "must be explicitly set to bulk"),
                 ("REVIEW_INBOX_CAS_PUBLISH_ENABLED", "false", "CAS publication is off"),
                 ("REVIEW_INBOX_READER_MODE", "inbox", "reader"),
-                ("REVIEW_INBOX_LEGACY_WRITER_ENABLED", "false", "legacy writer"),
+                ("REVIEW_INBOX_LEGACY_WRITER_ENABLED", "false", "reader/writer flags"),
             ):
                 environ = dict(ENABLED_ENV)
                 environ[name] = value
