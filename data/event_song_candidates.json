@@ -1,8 +1,8 @@
 {
   "generated_by": "build_event_song_candidates.py",
-  "count": 1035,
+  "count": 1036,
   "public_event_count": 348,
-  "review_count": 687,
+  "review_count": 688,
   "candidates": [
     {
       "id": "9870f5a616f1a007",
@@ -21569,6 +21569,28 @@
       "evidence_count": 1
     },
     {
+      "id": "6e9273f7a2e2419c",
+      "song_name": "の出演や万博音頭",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/stardustkawachi/status/2079132061366104071",
+          "date": "2026-07-20T09:11:26+00:00",
+          "text": "スターダスト河内　7/18 伴林氏神社　19 春日小夏祭り　20 慧灯大師 盆踊り大会\n【blogアップ】\n7/11は大正大学第16回鴨台盆踊り2日目です‼️\n後発隊も合流しパワーアップ😆\n「日中盆踊り」の出演や万博音頭大正大学100周年記念ver.を、お祝いの気持ちで全力で唄い、踊らせていただきました✨\n本編は下記画像リンクから！\n#鴨台盆踊り\n#大正大学\n#盆踊り https://t.co/tzCNZuxw2f"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
       "id": "c2d75c5aa8c58bce",
       "song_name": "はセプテントリ音頭",
       "event_name": "盆踊り大会",
@@ -23615,7 +23637,7 @@
       "evidence_count": 1
     },
     {
-      "id": "3f60aa65b30a264f",
+      "id": "af9c8fac64822c25",
       "song_name": "巣鴨花咲き音頭",
       "event_name": "盆踊り大会",
       "venue": "木場二丁目公園",
@@ -23626,6 +23648,12 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=MnJ_jOzYMSE",
+          "date": "2026-07-20T09:00:11+00:00",
+          "text": "和太鼓お祭りCH\n「恋するフォーチュンクッキー」　「第46回巣鴨盆踊り大会」21　2026年7月18日　巣鴨駅前南口ロータリー盆踊り　巣一商店会\n2026年7月18日、豊島区の巣鴨駅前南口ロータリーにて開催された「第46回巣鴨盆踊り大会」の様子です。\n\n巣一商店会主催のもと、\n駅前の活気ある雰囲気の中で踊られる盆踊りをお届けします。\n地元の方々や観光客が一体となって盛り上がる、\n夏の巣鴨ならではの熱気をお楽しみください！\n\n和太鼓の響きとともに、日本の夏の情緒を感じていただければ幸いです。\n\n#巣鴨 #盆踊り #巣鴨花咲き音頭 #巣一商店会 #夏祭り #和太鼓 #東京の祭り #巣鴨駅前\n\n\n巣鴨駅前盆踊り\n１巣鴨花咲音頭　https://youtu.be/9dqKwAudGS4\n２きよしのドドンパ　https://youtu.be/wq9yyUc_IXY\n３バハマママ　https://youtu.be/TArlwnMgoPM\n４"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=A5Lgrg9cbAA",
@@ -23826,10 +23854,10 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 33
+      "evidence_count": 34
     },
     {
-      "id": "c621aaed4eed2e63",
+      "id": "3fd302609f074338",
       "song_name": "巣鴨花咲音頭",
       "event_name": "盆踊り大会",
       "venue": "木場二丁目公園",
@@ -23840,6 +23868,12 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=MnJ_jOzYMSE",
+          "date": "2026-07-20T09:00:11+00:00",
+          "text": "和太鼓お祭りCH\n「恋するフォーチュンクッキー」　「第46回巣鴨盆踊り大会」21　2026年7月18日　巣鴨駅前南口ロータリー盆踊り　巣一商店会\n2026年7月18日、豊島区の巣鴨駅前南口ロータリーにて開催された「第46回巣鴨盆踊り大会」の様子です。\n\n巣一商店会主催のもと、\n駅前の活気ある雰囲気の中で踊られる盆踊りをお届けします。\n地元の方々や観光客が一体となって盛り上がる、\n夏の巣鴨ならではの熱気をお楽しみください！\n\n和太鼓の響きとともに、日本の夏の情緒を感じていただければ幸いです。\n\n#巣鴨 #盆踊り #巣鴨花咲き音頭 #巣一商店会 #夏祭り #和太鼓 #東京の祭り #巣鴨駅前\n\n\n巣鴨駅前盆踊り\n１巣鴨花咲音頭　https://youtu.be/9dqKwAudGS4\n２きよしのドドンパ　https://youtu.be/wq9yyUc_IXY\n３バハマママ　https://youtu.be/TArlwnMgoPM\n４"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=A5Lgrg9cbAA",
@@ -23962,7 +23996,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 20
+      "evidence_count": 21
     },
     {
       "id": "17bac97093cdee84",

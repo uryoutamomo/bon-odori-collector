@@ -1,10 +1,10 @@
 {
   "dry_run": true,
   "source": "data/weekly_harvest_candidates.json",
-  "song_candidate_count": 131,
-  "direct_count": 110,
-  "created_count": 93,
-  "updated_count": 17,
+  "song_candidate_count": 136,
+  "direct_count": 115,
+  "created_count": 97,
+  "updated_count": 18,
   "rejected_noise_count": 18,
   "review_count": 3,
   "created": [
@@ -177,6 +177,14 @@
       "dry_run": true
     },
     {
+      "song_name": "その他の踊り",
+      "source_term": "その他の踊り",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
       "song_name": "そもそも輪踊り",
       "source_term": "そもそも輪踊り",
       "target": "create",
@@ -197,6 +205,14 @@
       "source_term": "と南越谷阿波おどり",
       "target": "create",
       "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "の出演や万博音頭",
+      "source_term": "の出演や万博音頭",
+      "target": "create",
+      "venue_relations": 1,
       "event_relations": 0,
       "dry_run": true
     },
@@ -441,8 +457,24 @@
       "dry_run": true
     },
     {
+      "song_name": "平成音頭",
+      "source_term": "平成音頭",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
       "song_name": "徹夜踊り",
       "source_term": "徹夜踊り",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "押せ押せ音頭",
+      "source_term": "押せ押せ音頭",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
@@ -755,19 +787,19 @@
   ],
   "updated": [
     {
-      "song_name": "ダンシングヒーロー",
-      "source_term": "ダンシングヒーロー",
-      "target": "update",
-      "venue_relations": 1,
-      "event_relations": 1,
-      "dry_run": true
-    },
-    {
       "song_name": "東京音頭",
       "source_term": "東京音頭",
       "target": "update",
       "venue_relations": 0,
       "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "ダンシングヒーロー",
+      "source_term": "ダンシングヒーロー",
+      "target": "update",
+      "venue_relations": 1,
+      "event_relations": 1,
       "dry_run": true
     },
     {
@@ -845,6 +877,14 @@
     {
       "song_name": "大江戸東京音頭",
       "source_term": "大江戸東京音頭",
+      "target": "update",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "少年八木節",
+      "source_term": "少年八木節",
       "target": "update",
       "venue_relations": 0,
       "event_relations": 0,
