@@ -244,7 +244,7 @@ def build_snapshot(
     snapshot["write_mode"] = "snapshot_only_default_off"
     snapshot["upstream_boundary"] = "pending_active_video_reviews_only"
     snapshot["selection"] = {
-        "mode": "pending_only",
+        "mode": "all",
         "source_keys": [item["source_key"] for item in snapshot["items"]],
     }
     snapshot["supporting_input_lineage"] = (
