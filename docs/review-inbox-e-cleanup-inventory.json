@@ -1,0 +1,213 @@
+{
+  "schema_version": 1,
+  "generated_by": "scripts/build_review_inbox_legacy_cleanup_inventory.py",
+  "write_boundary": "read_only",
+  "rows": [
+    {
+      "source_id": "rare_signal_backcheck",
+      "path": "data/rare_signal_backcheck_queue.json",
+      "category": "parity_input",
+      "rationale": "B2 adapter input; do not remove while scheduled dual-write remains enabled.",
+      "exists": false,
+      "sha256": null,
+      "workflow_or_adapter_references": [
+        ".github/workflows/collect.yml",
+        "review_inbox_rare_signal_adapter.py",
+        "review_console/data.py"
+      ]
+    },
+    {
+      "source_id": "youtube_active",
+      "path": "data/youtube_active_video_review.json",
+      "category": "parity_input",
+      "rationale": "B3 aggregate adapter input.",
+      "exists": true,
+      "sha256": "88d290dca55cfd36f6d10e863a1374a10abd6e9ae8bc9aa0aa46946312c38f13",
+      "workflow_or_adapter_references": [
+        ".github/workflows/collect.yml",
+        "review_inbox_youtube_adapter.py",
+        "review_console/data.py"
+      ]
+    },
+    {
+      "source_id": "youtube_year_backfill",
+      "path": "data/youtube_year_backfill_review_queue.json",
+      "category": "parity_input",
+      "rationale": "B3 aggregate adapter input.",
+      "exists": true,
+      "sha256": "3922d0ed983d739e29dd11fe6f078be94ac0965171665c99200db6de32cd538b",
+      "workflow_or_adapter_references": [
+        ".github/workflows/collect.yml",
+        "review_inbox_youtube_year_backfill_adapter.py",
+        "review_console/data.py"
+      ]
+    },
+    {
+      "source_id": "youtube_user_confirmation",
+      "path": "data/youtube_user_confirmation_queue.json",
+      "category": "parity_input",
+      "rationale": "B3 aggregate adapter input.",
+      "exists": true,
+      "sha256": "bc8b19df25611346c6ca7f660309bd8984dfc3a6420e4cc1ad90ba5f2afd97b8",
+      "workflow_or_adapter_references": [
+        ".github/workflows/collect.yml",
+        "review_inbox_youtube_user_confirmation_adapter.py",
+        "review_console/data.py"
+      ]
+    },
+    {
+      "source_id": "daily_song",
+      "path": "data/weekly_song_candidates_review.json",
+      "category": "parity_input",
+      "rationale": "B4 adapter input.",
+      "exists": true,
+      "sha256": "f9f60ec898e690c658e44c978dfe76119ed2f5761262cbe022bd6cea936e3167",
+      "workflow_or_adapter_references": [
+        ".github/workflows/collect.yml",
+        ".github/workflows/weekly_harvest.yml",
+        "review_inbox_low_priority_adapters.py",
+        "review_console/data.py"
+      ]
+    },
+    {
+      "source_id": "daily_term",
+      "path": "data/weekly_harvest_review_candidates.json",
+      "category": "parity_input",
+      "rationale": "B4 adapter input.",
+      "exists": true,
+      "sha256": "f18c184ed07d223825441db8ed051e79da10051b243e8da0b20af6127d80f334",
+      "workflow_or_adapter_references": [
+        ".github/workflows/collect.yml",
+        ".github/workflows/weekly_harvest.yml",
+        "review_inbox_low_priority_adapters.py",
+        "review_console/data.py"
+      ]
+    },
+    {
+      "source_id": "accepted_venue_song_missing_venue",
+      "path": "data/accepted_venue_song_missing_venue_review.json",
+      "category": "parity_input",
+      "rationale": "B4 adapter input.",
+      "exists": true,
+      "sha256": "58f80ebfe8b5295e6b78fc5d85f6af4f8aa4a4b9cbf9af496cce7b277a6bb0e8",
+      "workflow_or_adapter_references": [
+        ".github/workflows/collect.yml",
+        "review_inbox_low_priority_adapters.py",
+        "review_console/data.py"
+      ]
+    },
+    {
+      "source_id": "historical_reference_quality",
+      "path": "data/historical_reference_quality_review.json",
+      "category": "parity_input",
+      "rationale": "B4 adapter input.",
+      "exists": true,
+      "sha256": "bb8956b0151a9406a6ffb388b51048eaa97dd5b96e6031fa2ee538edd918eb3f",
+      "workflow_or_adapter_references": [
+        ".github/workflows/collect.yml",
+        "review_inbox_low_priority_adapters.py",
+        "review_console/data.py"
+      ]
+    },
+    {
+      "source_id": "publication_gap",
+      "path": "data/publication_gap_review.json",
+      "category": "parity_input",
+      "rationale": "B4 adapter input.",
+      "exists": true,
+      "sha256": "3f0038718133ccb8889ceb92343e341d6f0cfeba34376a012f8ae70daac10380",
+      "workflow_or_adapter_references": [
+        ".github/workflows/collect.yml",
+        "review_inbox_low_priority_adapters.py",
+        "review_console/data.py"
+      ]
+    },
+    {
+      "source_id": "legacy_official_source",
+      "path": "data/official_source_review_candidates.json",
+      "category": "rollback_snapshot",
+      "rationale": "B1 legacy reader snapshot; retained only for rollback.",
+      "exists": true,
+      "sha256": "bf4011f232c7546913dc2718caa9546837c49f1ce9ba098e05db2afcc806d3c7",
+      "workflow_or_adapter_references": [
+        "review_inbox_official_source_adapter.py",
+        "review_console/data.py"
+      ]
+    },
+    {
+      "source_id": "legacy_registered_investigation",
+      "path": "data/registered_event_investigation_queue.json",
+      "category": "rollback_snapshot",
+      "rationale": "B1 legacy reader snapshot; retained only for rollback.",
+      "exists": true,
+      "sha256": "36c77360ae1afb43368f7512529f15ea28fee64674de933d19a53a2851d3fdd0",
+      "workflow_or_adapter_references": [
+        "review_inbox_registered_event_investigation_adapter.py",
+        "review_console/data.py"
+      ]
+    },
+    {
+      "source_id": "legacy_predicted_research",
+      "path": "data/predicted_occurrence_research_queue.json",
+      "category": "rollback_snapshot",
+      "rationale": "B1 legacy reader snapshot; retained only for rollback.",
+      "exists": true,
+      "sha256": "1705a3aabb4354e96a087f1f7c0b617583a28656f04e1da618c9ff97b3be85cb",
+      "workflow_or_adapter_references": [
+        "review_inbox_predicted_occurrence_research_adapter.py",
+        "review_console/data.py"
+      ]
+    },
+    {
+      "source_id": "legacy_predicted_date_review",
+      "path": "data/predicted_occurrence_date_review.json",
+      "category": "rollback_snapshot",
+      "rationale": "B1 legacy reader snapshot; retained only for rollback.",
+      "exists": true,
+      "sha256": "fb4edcc14d84fb2aba215f4dc1f8dd805d2283ec4311bd5069998d95777d62b8",
+      "workflow_or_adapter_references": [
+        "review_inbox_predicted_occurrence_date_review_adapter.py",
+        "review_console/data.py"
+      ]
+    },
+    {
+      "source_id": "legacy_missing_source_url",
+      "path": "data/missing_source_url_review.json",
+      "category": "rollback_snapshot",
+      "rationale": "B1 legacy reader snapshot; retained only for rollback.",
+      "exists": true,
+      "sha256": "d4f11ada1d5d977b2c2bdce01b187fc2d0ed79426df46f4de1165ff4c27ef0e0",
+      "workflow_or_adapter_references": [
+        "review_inbox_missing_source_url_adapter.py",
+        "review_console/data.py"
+      ]
+    },
+    {
+      "source_id": "legacy_missing_venue",
+      "path": "data/missing_occurrence_venue_review.json",
+      "category": "rollback_snapshot",
+      "rationale": "B1 legacy reader snapshot; retained only for rollback.",
+      "exists": true,
+      "sha256": "7c6c483c1ee840702c0e32ac16d73e029b5340df9804799537af2971d7d9fca4",
+      "workflow_or_adapter_references": [
+        "review_inbox_missing_venue_adapter.py",
+        "review_console/data.py"
+      ]
+    },
+    {
+      "source_id": "legacy_historical_promotion",
+      "path": "data/historical_promotion_candidate_review.json",
+      "category": "rollback_snapshot",
+      "rationale": "B1 legacy reader snapshot; retained only for rollback.",
+      "exists": true,
+      "sha256": "0d9a8a310f2ff0c3065b3e76bf5cda75a72f329d52d4be234f6a902f4ed14688",
+      "workflow_or_adapter_references": [
+        "review_console/data.py"
+      ]
+    }
+  ],
+  "category_counts": {
+    "parity_input": 9,
+    "rollback_snapshot": 7
+  }
+}
