@@ -72,17 +72,10 @@
       "sha256": "f9f60ec898e690c658e44c978dfe76119ed2f5761262cbe022bd6cea936e3167",
       "workflow_or_adapter_references": [
         ".github/workflows/collect.yml",
-        ".github/workflows/weekly_harvest.yml",
         "review_inbox_low_priority_adapters.py",
         "review_console/data.py"
       ],
-      "alternate_live_writers": [
-        {
-          "workflow": ".github/workflows/weekly_harvest.yml",
-          "mode": "workflow_dispatch",
-          "effect": "regenerates legacy keyboard-review UI and commits the parity input; apply_reviewed can invoke a direct Notion apply path"
-        }
-      ],
+      "alternate_live_writers": [],
       "snapshot_provenance": null
     },
     {
@@ -94,17 +87,10 @@
       "sha256": "f18c184ed07d223825441db8ed051e79da10051b243e8da0b20af6127d80f334",
       "workflow_or_adapter_references": [
         ".github/workflows/collect.yml",
-        ".github/workflows/weekly_harvest.yml",
         "review_inbox_low_priority_adapters.py",
         "review_console/data.py"
       ],
-      "alternate_live_writers": [
-        {
-          "workflow": ".github/workflows/weekly_harvest.yml",
-          "mode": "workflow_dispatch",
-          "effect": "regenerates legacy keyboard-review UI and commits the parity input; apply_reviewed can invoke a direct Notion apply path"
-        }
-      ],
+      "alternate_live_writers": [],
       "snapshot_provenance": null
     },
     {
@@ -275,7 +261,7 @@
     "parity_input": 9,
     "rollback_snapshot": 7
   },
-  "alternate_live_writer_count": 2,
+  "alternate_live_writer_count": 0,
   "out_of_scope": [
     {
       "name": "x_news_digest_for_oto / rare_signal_candidates",

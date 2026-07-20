@@ -38,18 +38,7 @@ SOURCES = (
     ("legacy_historical_promotion", "data/historical_promotion_candidate_review.json", "rollback_snapshot", "B1 legacy reader snapshot; retained only for rollback."),
 )
 
-ALTERNATE_LIVE_WRITERS = {
-    "daily_song": [{
-        "workflow": ".github/workflows/weekly_harvest.yml",
-        "mode": "workflow_dispatch",
-        "effect": "regenerates legacy keyboard-review UI and commits the parity input; apply_reviewed can invoke a direct Notion apply path",
-    }],
-    "daily_term": [{
-        "workflow": ".github/workflows/weekly_harvest.yml",
-        "mode": "workflow_dispatch",
-        "effect": "regenerates legacy keyboard-review UI and commits the parity input; apply_reviewed can invoke a direct Notion apply path",
-    }],
-}
+ALTERNATE_LIVE_WRITERS: dict[str, list[dict]] = {}
 
 OUT_OF_SCOPE = (
     ("x_news_digest_for_oto / rare_signal_candidates", "machine discovery pipeline inputs, not review-inbox reader snapshots"),
@@ -149,13 +138,9 @@ def render_markdown(report: dict) -> str:
         "",
         "## Decision required before workflow cleanup",
         "",
-        "`daily_song` と `daily_term` は `weekly_harvest.yml` の手動fallbackから、legacy keyboard-review HTMLの再生成、parity input JSONのcommit、`apply_reviewed=true` 時のNotion直接applyを行える。これはB5の統合inbox経路とは別のlive writerである。",
+        "2026-07-20に内田さんのGOで `weekly_harvest.yml` を縮小し、legacy keyboard-review HTMLの再生成、parity input JSONのcommit、`apply_reviewed` のNotion直接applyを外した。現在このinventory内にalternate live writerはない。",
         "",
-        "workflow変更対象を明示した内田さんのGO後に、次のいずれかを選ぶ。",
-        "",
-        "1. 退役: legacy UI生成と直接applyを削除し、workflow自体を停止または削除する。",
-        "2. 縮小: parity inputを読むだけの手動fallbackにし、legacy UI・commit・直接applyを外す。",
-        "3. 維持: 明示的なescape hatchとして残し、B5の通常経路外であることと実行条件をrunbookへ固定する。",
+        "選択した方針は2（縮小）である。workflowは公開更新・OCR・遡及収集などの手動fallbackを維持し、review inboxを迂回する人間レビュー・直接apply経路だけを持たない。",
         "",
         "rollback snapshot 7件の最終更新は2026-06-22〜2026-07-19であり、reader切替時点の最新状態を保証しない。このためrollbackは「古いlegacy snapshotを読む入口」であって、最新状態への復帰手段とはみなさない。",
         "",

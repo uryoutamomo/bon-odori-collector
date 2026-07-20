@@ -1,4 +1,4 @@
-name: manual-song-glossary-harvest-fallback
+name: manual-harvest-fallback
 
 on:
   workflow_dispatch:
@@ -7,16 +7,6 @@ on:
         description: '手動フォールバック時の候補収穫対象日数'
         required: false
         default: '3'
-      apply_reviewed:
-        description: 'レビュー済みJSONを legacy Notion-backed song/glossary flow へ反映する（手動時のみ）'
-        required: false
-        type: boolean
-        default: false
-      apply_dry_run:
-        description: '反映時もdry-runにする'
-        required: false
-        type: boolean
-        default: true
       sync_weekly_costs_to_notion:
         description: '週次コストをNotionへ書き込む。手動fallback実行でも通常はfalseのままにする'
         required: false
@@ -116,67 +106,6 @@ jobs:
         fi
         python sync_weekly_costs.py $FLAGS
 
-    - name: Build term/co-occurrence review UI
-      run: |
-        python build_keyboard_review_ui.py \
-          --input data/weekly_harvest_review_candidates.json \
-          --rows-key rows \
-          --out data/weekly_harvest_review_ui.html \
-          --title '日次X収穫レビュー（用語・共起）' \
-          --term-field term \
-          --category-field category \
-          --summary-fields interpretation,type,confidence,evidence_count \
-          --detail-fields reason,evidence_text,evidence_url \
-          --source-field evidence \
-          --key-fields term,category,type,evidence_url \
-          --download-name weekly_harvest_review_decisions.json \
-          --storage-key weekly-harvest-review
-
-    - name: Build song review UI
-      run: |
-        python build_keyboard_review_ui.py \
-          --input data/weekly_song_candidates_review.json \
-          --rows-key rows \
-          --out data/weekly_song_candidates_review_ui.html \
-          --title '日次X収穫レビュー（曲候補）' \
-          --term-field term \
-          --category-field category \
-          --summary-fields canonical_song_name,triage_reason,evidence_count \
-          --detail-fields reason,evidence_text,evidence_url \
-          --source-field evidence \
-          --key-fields term,category,type,evidence_url \
-          --decisions-labels '曲として採用,曲ではない,分割,用語集へ,保留' \
-          --download-name weekly_song_review_decisions.json \
-          --storage-key weekly-song-review
-
-    - name: Apply reviewed decisions when explicitly requested
-      if: ${{ inputs.apply_reviewed == true }}
-      env:
-        NOTION_API_TOKEN: ${{ secrets.NOTION_API_TOKEN }}
-      run: |
-        APPLY_FLAGS=""
-        if [ "${{ inputs.apply_dry_run }}" != "false" ]; then
-          APPLY_FLAGS="--dry-run"
-        fi
-        if [ -f data/weekly_song_review_decisions.json ]; then
-          python apply_weekly_song_review_decisions.py \
-            --source data/weekly_song_candidates_review.json \
-            --decisions data/weekly_song_review_decisions.json \
-            --out data/weekly_song_review_apply_result.json \
-            $APPLY_FLAGS
-        else
-          echo "data/weekly_song_review_decisions.json not found; skip song apply"
-        fi
-        if [ -f data/weekly_harvest_review_decisions.json ]; then
-          python apply_weekly_harvest_human13_decisions.py \
-            --candidates data/weekly_harvest_review_candidates.json \
-            --decisions data/weekly_harvest_review_decisions.json \
-            --out data/weekly_harvest_apply_result.json \
-            $APPLY_FLAGS
-        else
-          echo "data/weekly_harvest_review_decisions.json not found; skip term/co-occurrence apply"
-        fi
-
     - name: Append GitHub summary
       run: cat data/weekly_harvest_summary.md >> "$GITHUB_STEP_SUMMARY"
 
@@ -185,17 +114,11 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add data/weekly_harvest_candidates.json
-        git add data/weekly_harvest_review_candidates.json
-        git add data/weekly_harvest_review_ui.html
         git add data/weekly_harvest_summary.json
         git add data/weekly_harvest_summary.md
         git add data/weekly_cost_sync_result.json
         git add data/weekly_cost_sync_result.md
-        git add data/weekly_song_candidates_review.json
-        git add data/weekly_song_candidates_review_ui.html
         git add data/weekly_song_triage_result.json
-        [ -f data/weekly_song_review_apply_result.json ] && git add data/weekly_song_review_apply_result.json
-        [ -f data/weekly_harvest_apply_result.json ] && git add data/weekly_harvest_apply_result.json
         [ -f data/venue_master.json ] && git add data/venue_master.json
         [ -f data/public/events_public.json ] && git add data/public/events_public.json
         [ -f data/public_event_source_map.json ] && git add data/public_event_source_map.json

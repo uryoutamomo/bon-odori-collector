@@ -25,13 +25,13 @@ class LegacyCleanupInventoryTest(unittest.TestCase):
         self.assertTrue(rows["rare_signal_backcheck"]["exists"])
         self.assertEqual(rows["rare_signal_backcheck"]["workflow_or_adapter_references"], [".github/workflows/collect.yml"])
         self.assertEqual(rows["legacy_official_source"]["category"], "rollback_snapshot")
-        self.assertEqual(rows["daily_song"]["alternate_live_writers"][0]["workflow"], ".github/workflows/weekly_harvest.yml")
+        self.assertEqual(rows["daily_song"]["alternate_live_writers"], [])
 
     def test_markdown_keeps_no_delete_boundary(self):
         markdown = MODULE.render_markdown({"rows": [], "category_counts": {}})
         self.assertIn("削除・移動・workflow変更を行わない", markdown)
         self.assertIn("parity_input", markdown)
-        self.assertIn("alternate_live_writer", markdown)
+        self.assertIn("alternate live writer", markdown)
         self.assertIn("Decision required before workflow cleanup", markdown)
 
 

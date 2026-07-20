@@ -190,8 +190,8 @@ workflow変更は、この棚卸しを独立レビューした後の別作業と
 最初のread-only inventoryは `docs/review-inbox-e-cleanup-inventory.md` に保存し、再生成は
 `python3 scripts/build_review_inbox_legacy_cleanup_inventory.py --out-json ... --out-md ...` で行う。
 この棚卸しで `weekly_harvest.yml` が日次曲・用語入力のalternate live writer（legacy UI再生成、
-commit、手動時の直接Notion apply）だと判明した。E cleanupではこのworkflowを退役・縮小・
-escape hatchとして維持するいずれかを独立に決めるまで、対象入力を削除候補にしない。
+commit、手動時の直接Notion apply）だと判明した。内田さんのGOにより、2026-07-20に方針2（縮小）を
+実施し、これら3経路だけを外した。公開更新・OCR・遡及収集などの手動fallbackは残している。
 
 ## 旧キューの閉鎖条件
 
