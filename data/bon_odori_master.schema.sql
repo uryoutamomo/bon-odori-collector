@@ -55,6 +55,8 @@ CREATE TABLE event_occurrences (
   date_end TEXT,
   date_status TEXT NOT NULL DEFAULT 'unknown',
   lifecycle_status TEXT NOT NULL DEFAULT 'draft',
+  current_event_state TEXT NOT NULL DEFAULT 'predicted',
+  date_certainty_tier TEXT NOT NULL DEFAULT 'historical_reference',
   confidence TEXT NOT NULL DEFAULT 'unknown',
   source_kind TEXT,
   source_url TEXT,
@@ -368,3 +370,23 @@ CREATE TABLE write_batches (
   status TEXT NOT NULL,
   summary_json TEXT NOT NULL DEFAULT '{}'
 )
+
+CREATE TRIGGER validate_event_state_axes_insert
+BEFORE INSERT ON event_occurrences
+WHEN NEW.current_event_state NOT IN ('predicted', 'announced', 'confirmed', 'ended', 'cancelled')
+  OR NEW.date_certainty_tier NOT IN ('confirmed', 'rule_predicted', 'historical_slide', 'season_hint', 'historical_reference')
+  OR (NEW.current_event_state IN ('confirmed', 'ended') AND NEW.date_certainty_tier != 'confirmed')
+  OR (NEW.current_event_state IN ('predicted', 'announced') AND NEW.date_certainty_tier = 'confirmed')
+BEGIN
+  SELECT RAISE(ABORT, 'invalid event state axes');
+END
+
+CREATE TRIGGER validate_event_state_axes_update
+BEFORE UPDATE OF current_event_state, date_certainty_tier ON event_occurrences
+WHEN NEW.current_event_state NOT IN ('predicted', 'announced', 'confirmed', 'ended', 'cancelled')
+  OR NEW.date_certainty_tier NOT IN ('confirmed', 'rule_predicted', 'historical_slide', 'season_hint', 'historical_reference')
+  OR (NEW.current_event_state IN ('confirmed', 'ended') AND NEW.date_certainty_tier != 'confirmed')
+  OR (NEW.current_event_state IN ('predicted', 'announced') AND NEW.date_certainty_tier = 'confirmed')
+BEGIN
+  SELECT RAISE(ABORT, 'invalid event state axes');
+END

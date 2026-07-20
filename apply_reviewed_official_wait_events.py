@@ -16,6 +16,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from event_state_axes import update_occurrence_state_axes
 from master_db import MASTER_DB, normalize_text, refresh_manifest_database_state, stable_id, table_counts
 
 
@@ -362,6 +363,9 @@ def apply_plan(conn: sqlite3.Connection, planned: list[dict[str, Any]], now: str
                 now,
                 item["occurrence_id"],
             ),
+        )
+        update_occurrence_state_axes(
+            conn, item["occurrence_id"], "confirmed", "confirmed"
         )
 
         conn.execute(

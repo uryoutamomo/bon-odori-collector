@@ -9,6 +9,7 @@ from datetime import date
 from pathlib import Path
 
 from event_series_normalization import series_event_name
+from event_state_axes import axes_from_legacy_occurrence
 from master_db import (
     MASTER_DB,
     MASTER_MANIFEST,
@@ -276,13 +277,25 @@ class MasterBuilder:
             sequence = self.occurrence_sequence[key]
             occurrence_id = stable_id("occ", series_id, event_year, sequence)
             dstatus = date_status(status, date_start)
+            legacy_lifecycle = lifecycle_status(status)
+            axes = axes_from_legacy_occurrence(
+                {
+                    "event_year": int(event_year),
+                    "date_start": date_start or "",
+                    "date_status": dstatus,
+                    "lifecycle_status": legacy_lifecycle,
+                    "source_kind": source_kind or "",
+                    "source_url": source_url or "",
+                }
+            )
             self.conn.execute(
                 """
                 INSERT INTO event_occurrences(
                   occurrence_id, origin, series_id, event_year, occurrence_sequence, display_name,
-                  venue_id, date_start, date_end, date_status, lifecycle_status, confidence,
+                  venue_id, date_start, date_end, date_status, lifecycle_status,
+                  current_event_state, date_certainty_tier, confidence,
                   source_kind, source_url, public_intro_override, detail, created_at, updated_at
-                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 """,
                 (
                     occurrence_id,
@@ -295,7 +308,9 @@ class MasterBuilder:
                     date_start or "",
                     date_end or "",
                     dstatus,
-                    lifecycle_status(status),
+                    legacy_lifecycle,
+                    axes["current_event_state"],
+                    axes["date_certainty_tier"],
                     "confirmed" if dstatus in {"confirmed", "ended"} else "unknown",
                     source_kind or "",
                     source_url or "",

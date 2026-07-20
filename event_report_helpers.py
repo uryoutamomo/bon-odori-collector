@@ -10,6 +10,7 @@ those, keeping the domain-specific vocabulary out of this module.
 import sqlite3
 from difflib import SequenceMatcher
 
+from event_state_axes import axes_from_legacy_occurrence, update_occurrence_state_axes
 from master_db import json_text, normalize_text, now_utc, stable_id
 
 
@@ -245,6 +246,7 @@ def ensure_series_and_occurrence(
             now,
         ),
     )
+    update_occurrence_state_axes(conn, occurrence_id, "confirmed", "confirmed")
     date_id = stable_id("date", occurrence_id, date_start, date_end or date_start)
     conn.execute(
         """
@@ -317,6 +319,22 @@ def confirm_occurrence_schedule_venue(
             WHERE occurrence_id = ?
             """,
             (venue_id, date_start, effective_date_end, date_status, lifecycle_status, confidence, source_kind, new_detail, now, occurrence_id),
+        )
+        axes = axes_from_legacy_occurrence(
+            {
+                "event_year": str(date_start or "")[:4],
+                "date_start": date_start,
+                "date_status": date_status,
+                "lifecycle_status": lifecycle_status,
+                "source_kind": source_kind,
+                "source_url": "",
+            }
+        )
+        update_occurrence_state_axes(
+            conn,
+            occurrence_id,
+            axes["current_event_state"],
+            axes["date_certainty_tier"],
         )
         if venue_id is not None:
             changed_fields.append("venue_id")

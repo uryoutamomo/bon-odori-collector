@@ -68,6 +68,57 @@ jobs:
         NOTION_API_TOKEN: ${{ secrets.NOTION_API_TOKEN }}
       run: python build_glossary_runtime.py
 
+    - name: Sync canonical event-state axes to master RDB
+      id: event_state_axes
+      if: ${{ vars.EVENT_STATE_AXES_ENABLED == 'true' && vars.MASTER_DB_S3_BUCKET != '' }}
+      env:
+        MASTER_DB_S3_BUCKET: ${{ vars.MASTER_DB_S3_BUCKET }}
+        MASTER_DB_S3_PREFIX: ${{ vars.MASTER_DB_S3_PREFIX || 'master-rdb' }}
+        AWS_REGION: ap-northeast-1
+      run: |
+        TODAY="$(TZ=Asia/Tokyo date +%F)"
+        RSTART="$(python -c 'import json; print(json.load(open("data/bon_odori_master_manifest.json"))["database_checksum"])')"
+        python run_event_state_axes_migration.py \
+          --db data/bon_odori_master.sqlite \
+          --derive-from-db \
+          --today "$TODAY" \
+          --execute \
+          --confirm 'MIGRATE EVENT STATE AXES' \
+          --report-out "$RUNNER_TEMP/event-state-axes-migration.json"
+        python audit_master_rdb.py \
+          --out-json "$RUNNER_TEMP/event-state-axes-audit.json" \
+          --out-md "$RUNNER_TEMP/event-state-axes-audit.md"
+        LOCAL_SHA="$(python -c 'from master_db import file_sha256; print(file_sha256("data/bon_odori_master.sqlite"))')"
+        if [ "$LOCAL_SHA" != "$RSTART" ]; then
+          python master_db_s3_artifact.py publish \
+            --expect-remote-checksum "$RSTART" \
+            --snapshot-id "event-state-axes-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          echo "published=true" >> "$GITHUB_OUTPUT"
+        else
+          echo "[event-state-axes] canonical axes already current; skip S3 publish"
+          echo "published=false" >> "$GITHUB_OUTPUT"
+        fi
+        python master_db_s3_artifact.py fetch --overwrite
+        python run_event_state_axes_migration.py \
+          --db data/bon_odori_master.sqlite \
+          --derive-from-db \
+          --today "$TODAY" \
+          --report-out "$RUNNER_TEMP/event-state-axes-rend.json"
+        echo "ran=true" >> "$GITHUB_OUTPUT"
+
+    - name: Upload event-state axes evidence
+      if: ${{ always() && vars.EVENT_STATE_AXES_ENABLED == 'true' && vars.MASTER_DB_S3_BUCKET != '' }}
+      uses: actions/upload-artifact@v4
+      with:
+        name: event-state-axes-${{ github.run_id }}-${{ github.run_attempt }}
+        path: |
+          ${{ runner.temp }}/event-state-axes-migration.json
+          ${{ runner.temp }}/event-state-axes-audit.json
+          ${{ runner.temp }}/event-state-axes-audit.md
+          ${{ runner.temp }}/event-state-axes-rend.json
+        if-no-files-found: error
+        retention-days: 30
+
     - name: Run collector
       env:
         NOTION_API_TOKEN: ${{ secrets.NOTION_API_TOKEN }}
