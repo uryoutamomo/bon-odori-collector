@@ -28,6 +28,10 @@ legacy consoleと同じく次だけをpendingにする。
 
 曲証拠判定はlegacyと同じく、行の `songs`、`setlist_occurrences[].setlist` にある構造化済み曲名、またはtitleの既知曲一致を使う。title照合用の既知曲語彙はadapterへ注入し、adapter本体は副作用なしに保つ。snapshotにはprimary JSONのSHA-256に加えて、使用した曲語彙ファイルのSHA-256とsizeを記録する。現行実データでは86件（`add_song_evidence` 84件、`needs_research` 2件）となる。
 
+year backfillは既決定groupを出力せず、未判断group内の動画を1動画1itemへ展開する。active videoと同じ `source_id` と `video:<id>|year:<year>` を使うため、同じ動画・対象年が両JSONに現れてもinbox IDは同一になり、二重表示されない。groupの候補actionは有限の `add_song_evidence` / `needs_research` / `hold` へ写像し、未知actionやdecision矛盾はfail closedする。2026-07-20時点の実キューは20groupすべて既決定のため出力0件。
+
+共通 `source_id=youtube_evidence` のparityは3キュー全体の集合で評価する。year backfillやuser confirmationのsnapshotを単独でsource writerへ渡した場合、既存active行はwriter内で `stale_candidates` に分類され、書き込み自体は成功し得る。一方、3キュー全体の外部parityは不一致になる。3adapter完成後に重複IDを解決したaggregate snapshotを作り、scheduled production入口はaggregate以外を明示的に拒否する。
+
 ## decision境界
 
 YouTube inboxの選択肢は次の4つだけに固定する。
