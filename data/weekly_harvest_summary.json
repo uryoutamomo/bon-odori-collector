@@ -1,19 +1,19 @@
 {
   "generated_by": "prepare_weekly_harvest_review.py",
-  "generated_at": "2026-07-20T08:28:39.331442+00:00",
+  "generated_at": "2026-07-20T09:37:09.254123+00:00",
   "source": "build_weekly_harvest_candidates.py",
-  "source_generated_at": "2026-07-20T08:28:32.274735+00:00",
+  "source_generated_at": "2026-07-20T09:37:00.347448+00:00",
   "days": 3,
-  "voice_count": 1160,
-  "candidate_count": 153,
+  "voice_count": 1244,
+  "candidate_count": 159,
   "category_counts": {
-    "曲×会場共起": 15,
-    "曲候補": 131,
+    "曲×会場共起": 16,
+    "曲候補": 136,
     "用語候補": 7
   },
-  "non_song_review_count": 22,
-  "song_candidate_count": 131,
-  "song_direct_dry_run_count": 110,
+  "non_song_review_count": 23,
+  "song_candidate_count": 136,
+  "song_direct_dry_run_count": 115,
   "song_review_count": 3,
   "song_rejected_noise_count": 18,
   "review_files": {
@@ -35,11 +35,11 @@
       "ダンシングヒーロー × 晴海ふ頭公園",
       "おしりたんてい音頭 × 晴海ふ頭公園",
       "つるまき音頭 × 鶴巻小学校",
+      "の出演や万博音頭 × 大正大学",
       "江戸川おどり × 鶴巻小学校",
       "津久戸子ども音頭 × 鶴巻小学校",
       "真室川音頭 × 浄土寺",
-      "赤坂あかね音頭 × 浄土寺",
-      "赤坂は素敵な踊り × 浄土寺"
+      "赤坂あかね音頭 × 浄土寺"
     ],
     "song_review": [
       "徳島市阿波おどり",

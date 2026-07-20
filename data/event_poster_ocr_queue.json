@@ -1,9 +1,9 @@
 {
   "generated_by": "build_event_poster_ocr_queue.py",
-  "count": 1512,
+  "count": 1521,
   "summary": {
     "critical": 13,
-    "high": 340,
+    "high": 344,
     "trusted_informant": 15
   },
   "items": [
@@ -7702,6 +7702,94 @@
         "pic.x.com/h4VMRIcJIW"
       ],
       "text": "再び、八幡南口町会の駅前盆踊り会場です。「一緒に写真撮ってください」と言われると、つい笑顔になってこんな写真です。どの地域も皆さんに喜ばれる市川市を作っていきたいと思います。 https://t.co/h4VMRIcJIW",
+      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
+    },
+    {
+      "id": "xposter_84d862089bd5ff31",
+      "status": "needs_ocr",
+      "priority": "high",
+      "evidence_type": "poster_or_flyer_image",
+      "assumed_source_confidence": "medium",
+      "account": "@eitaexpress",
+      "account_name": "いとう英一",
+      "trusted_informant": false,
+      "trusted_informant_rank": "",
+      "url": "https://x.com/eitaexpress/status/2079121650772324363",
+      "tweet_id": "2079121650772324363",
+      "date": "2026-07-20T08:30:04+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HNqGHJVaIAAoqy9.jpg",
+        "https://t.co/VF6o6lhuLQ",
+        "pic.x.com/VF6o6lhuLQ"
+      ],
+      "text": "昨日の午前中、7月25・26日に行われる地元町会の盆踊りで事前準備のお手伝いをしてきました。\nテント立てなど、多くの方と息を合わせての対応です。テントは風に飛ばされる事がないよう、ピンで留めたあと、更に杭を打ち付け、紐で強固に結びます。この作業が以外に重労働で、若い方にお任せしました。 https://t.co/VF6o6lhuLQ",
+      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
+    },
+    {
+      "id": "xposter_3fa673aab0e0e47c",
+      "status": "needs_ocr",
+      "priority": "high",
+      "evidence_type": "poster_or_flyer_image",
+      "assumed_source_confidence": "medium",
+      "account": "@rap_wanyu",
+      "account_name": "輪入道",
+      "trusted_informant": false,
+      "trusted_informant_rank": "",
+      "url": "https://x.com/rap_wanyu/status/2079132368380789017",
+      "tweet_id": "2079132368380789017",
+      "date": "2026-07-20T09:12:39+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2079132346830540800/img/hjrIg5xLWqwvIryi.jpg",
+        "https://t.co/pZ5SVJHdvP",
+        "pic.x.com/pZ5SVJHdvP",
+        "https://pbs.twimg.com/media/HNqP2ozbAAA9m1o.jpg",
+        "https://pbs.twimg.com/media/HNqP2oyaEAAUoBQ.jpg",
+        "https://pbs.twimg.com/media/HNqP2ozbQAA9vQd.jpg"
+      ],
+      "text": "東京・葛飾\n西水元圦谷町会盆踊り大会🏮\n本当に素晴らしいお祭りでした。\n\nあの場でLIVE出来た事にも感謝だし、見事地元の盆踊りを大復活させた松崎建設様にはRespectしかありません。\n\n夢のような楽しい時間はあっという間に過ぎ去り、活力と自信が漲る夏が始まる。\n心よりありがとうございました！！ https://t.co/pZ5SVJHdvP",
+      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
+    },
+    {
+      "id": "xposter_58b4f7f2dd736a15",
+      "status": "needs_ocr",
+      "priority": "high",
+      "evidence_type": "poster_or_flyer_image",
+      "assumed_source_confidence": "medium",
+      "account": "@Ma_umojh",
+      "account_name": "Ma-",
+      "trusted_informant": false,
+      "trusted_informant_rank": "",
+      "url": "https://x.com/Ma_umojh/status/2079132949631664508",
+      "tweet_id": "2079132949631664508",
+      "date": "2026-07-20T09:14:58+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HNqQZFAbMAAI7X8.jpg",
+        "https://t.co/fG84JnxZdM",
+        "pic.x.com/fG84JnxZdM"
+      ],
+      "text": "🏮31 本八幡南口町会盆踊り\n\n本来覗くだけの予定でしたが、音出しで八幡音頭・新市川音頭が流れいても経ってもいられず参加させていただきました！\nちなみに参加中は流れませんでした😭\n\n40分迄しか参加できず後半は流れたのかな？だとしたら悔やまれます。\n来年は予定調整しフルで参加しようかな https://t.co/fG84JnxZdM",
+      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
+    },
+    {
+      "id": "xposter_19ab69c35fdb99de",
+      "status": "needs_ocr",
+      "priority": "high",
+      "evidence_type": "poster_or_flyer_image",
+      "assumed_source_confidence": "medium",
+      "account": "@Ma_umojh",
+      "account_name": "Ma-",
+      "trusted_informant": false,
+      "trusted_informant_rank": "",
+      "url": "https://x.com/Ma_umojh/status/2079133664777306304",
+      "tweet_id": "2079133664777306304",
+      "date": "2026-07-20T09:17:48+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HNqRCmEbAAAGkfx.jpg",
+        "https://t.co/7uSLcCAjsy",
+        "pic.x.com/7uSLcCAjsy",
+        "https://pbs.twimg.com/media/HNqRCmOacAAgREj.jpg"
+      ],
+      "text": "🏮32 亀有中央町会盆踊り\n\n一昨日とは町会が異なる盆踊りです。\n30分の参加でしたが、秋田さくら音頭河内おとこ節が踊れたので自分は満足です🙆‍♂️\nケセラセラは亀有？オリジナルVrで良い振りが付いてました。覚えるのに必死であんまり覚えていません😨\nまた別会場で踊れないかな〜 https://t.co/7uSLcCAjsy",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
     },
     {
@@ -33024,6 +33112,115 @@
         "pic.x.com/kLmAnjttwO"
       ],
       "text": "ヤクルトスワローズグッズ交換譲渡\nつば九郎　あ〜夏休み　缶バッジ\n\n【譲】\n盆踊り×2\n\n【求】\nビアガーデン、スイカの種飛ばし、釣り&amp;虫取り、流しそうめん、かき氷\n\n本日もしくは7/24,25現地でのお取引希望です。お気軽にお声がけください。\n\n#スワローズグッズ交換譲渡\n#スワローズグッズ交換希望 https://t.co/kLmAnjttwO",
+      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
+    },
+    {
+      "id": "xposter_0fc965336c8adc51",
+      "status": "needs_ocr",
+      "priority": "medium",
+      "evidence_type": "poster_or_flyer_image",
+      "assumed_source_confidence": "medium",
+      "account": "@Very_JAPAN",
+      "account_name": "VeryJAPAN",
+      "trusted_informant": false,
+      "trusted_informant_rank": "",
+      "url": "https://x.com/Very_JAPAN/status/2079130441605681471",
+      "tweet_id": "2079130441605681471",
+      "date": "2026-07-20T09:05:00+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2078719246218256384/img/vqq6S5nPNJDHkGEk.jpg",
+        "https://t.co/cgP3xcvLf7",
+        "pic.x.com/cgP3xcvLf7"
+      ],
+      "text": "小野照崎神社 納涼踊り大会！狭い境内で盆踊り！入谷 浅草 上野  Tokyo,Asakusa Iriya Bon Dance. Bon Odori 2026 DJI Osmo Pocket 4P\nhttps://t.co/R7nHf4wpPx\n\nたいとう音頭、平成音頭、押せ押せ音頭など\n少年八木節の太鼓がかっこいい\n#盆踊り https://t.co/cgP3xcvLf7",
+      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
+    },
+    {
+      "id": "xposter_c096b074dedd7208",
+      "status": "needs_ocr",
+      "priority": "medium",
+      "evidence_type": "poster_or_flyer_image",
+      "assumed_source_confidence": "medium",
+      "account": "@Ma_umojh",
+      "account_name": "Ma-",
+      "trusted_informant": false,
+      "trusted_informant_rank": "",
+      "url": "https://x.com/Ma_umojh/status/2079131793043992825",
+      "tweet_id": "2079131793043992825",
+      "date": "2026-07-20T09:10:22+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HNqPWHFaMAEF6yZ.jpg",
+        "https://t.co/FVSTlKsHJA",
+        "pic.x.com/FVSTlKsHJA",
+        "https://pbs.twimg.com/media/HNqPWIGacAAsAAO.jpg",
+        "https://pbs.twimg.com/media/HNqPWG9bQAAwq5w.jpg"
+      ],
+      "text": "🏮31 樋野口町会盆踊り\n\n日頃お世話になってる方々におすすめ、お誘いいただき参加させていただきました。\n後半かなり盛り上がってましたが、例年より控えめだそうです😆\n現地でゆうき音頭を踊れたり、バハマの謎のウルトラソウルコールも体験できました！ https://t.co/FVSTlKsHJA",
+      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
+    },
+    {
+      "id": "xposter_3d2f27ddd1030ee7",
+      "status": "needs_ocr",
+      "priority": "medium",
+      "evidence_type": "poster_or_flyer_image",
+      "assumed_source_confidence": "medium",
+      "account": "@ozorakoki",
+      "account_name": "大空こうき / 衆議院議員(江東区-東京15区), OZORA Koki",
+      "trusted_informant": false,
+      "trusted_informant_rank": "",
+      "url": "https://x.com/ozorakoki/status/2079132194237563328",
+      "tweet_id": "2079132194237563328",
+      "date": "2026-07-20T09:11:58+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HNqPtVVaUAEKh6X.jpg",
+        "https://t.co/4Rs05AE3zM",
+        "pic.x.com/4Rs05AE3zM",
+        "https://pbs.twimg.com/media/HNqPtVbaEAAqnOo.jpg"
+      ],
+      "text": "この週末は、区内の盆踊りや夏祭りを15か所近く訪問しました。地域の祭りは、町会・自治会の皆さんによる事前の準備と運営に支えられています。単なる催しではなく、顔の見える関係を育む大切な機会です。転入される方も多い江東区だからこそ、祭りや町会活動をきっかけに、下町らしい地域のつながりづくりに加わっていただきたいと思います。",
+      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
+    },
+    {
+      "id": "xposter_e8d83b9a0b9eab8e",
+      "status": "needs_ocr",
+      "priority": "medium",
+      "evidence_type": "poster_or_flyer_image",
+      "assumed_source_confidence": "medium",
+      "account": "@ishitejitemple",
+      "account_name": "石手寺｜四国霊場51番",
+      "trusted_informant": false,
+      "trusted_informant_rank": "",
+      "url": "https://x.com/ishitejitemple/status/2079133153332228439",
+      "tweet_id": "2079133153332228439",
+      "date": "2026-07-20T09:15:46+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HNqQkmDbYAAR4Me.jpg",
+        "https://t.co/WBtiUxOgem",
+        "pic.x.com/WBtiUxOgem",
+        "https://pbs.twimg.com/media/HNqQkrwacAAhtZo.jpg"
+      ],
+      "text": "【2026年8月の予定】\n蝉の声に包まれる石手寺から、8月の予定表をお届けします。\n\n■ 合同先祖供養（※檀家対象）\n8月12日（水）〜15日（土）10:00／11:00／14:00／15:00〜\nお盆のこの期間、ご先祖さまへの祈りをともに。\n\n■ 大施餓鬼会\n8月20日（木）18:00〜\n蚤の市・屋台・盆踊りも開かれ、灯りに照らされた境内で夏の宵をお過ごしいただけます。\n\nご先祖供養のお申込みは随時受付中です。\n納経所までお気軽にお問い合わせください。\n\n■ お浄め会\n毎週土曜日 8:30〜\nどなたでも、いつからでもご参加いただけます。\n\n■ どうぞありがとうの会\n8月23日（日）13:30〜\n石手こどもクラブの活動は @ishite.kodomo でも発信しています。\n\n■ 護摩祈祷（厄除け・開運）11:00〜／14:00〜\n開催日はカレンダーをご覧ください。\n各種ご祈祷・ご供養も承っております。\n\nどうぞご家族おそろいでお参りください。\n合掌\n\n#石手寺 #四国遍路 #第51番札所 #大施餓鬼会 #お盆",
+      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
+    },
+    {
+      "id": "xposter_f47ebe0569505227",
+      "status": "needs_ocr",
+      "priority": "medium",
+      "evidence_type": "poster_or_flyer_image",
+      "assumed_source_confidence": "medium",
+      "account": "@mayuwarai11",
+      "account_name": "市川市民Ｕ",
+      "trusted_informant": false,
+      "trusted_informant_rank": "",
+      "url": "https://x.com/mayuwarai11/status/2079134264185201119",
+      "tweet_id": "2079134264185201119",
+      "date": "2026-07-20T09:20:11+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HNqPjwubkAEDgRg.jpg",
+        "https://t.co/skjuI6S43Z",
+        "pic.x.com/skjuI6S43Z"
+      ],
+      "text": "外国人には、盆踊りが差別的な行事に思えるそうなのです。\n\n市長は市川市内の外国人に配慮した市川市政に努め、すべての盆踊りを中止して「差別のない市川市」にすべきかもしれませんね。 https://t.co/skjuI6S43Z",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
     }
   ]
