@@ -1,11 +1,11 @@
 {
   "dry_run": true,
   "source": "data/weekly_harvest_candidates.json",
-  "song_candidate_count": 127,
-  "direct_count": 109,
-  "created_count": 93,
+  "song_candidate_count": 132,
+  "direct_count": 112,
+  "created_count": 96,
   "updated_count": 16,
-  "rejected_noise_count": 15,
+  "rejected_noise_count": 17,
   "review_count": 3,
   "created": [
     {
@@ -113,6 +113,14 @@
       "dry_run": true
     },
     {
+      "song_name": "あともう一つは民謡踊り",
+      "source_term": "あともう一つは民謡踊り",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
       "song_name": "あれは踊り",
       "source_term": "あれは踊り",
       "target": "create",
@@ -214,6 +222,14 @@
       "target": "create",
       "venue_relations": 0,
       "event_relations": 1,
+      "dry_run": true
+    },
+    {
+      "song_name": "アカペラ音頭",
+      "source_term": "アカペラ音頭",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
       "dry_run": true
     },
     {
@@ -745,6 +761,14 @@
       "dry_run": true
     },
     {
+      "song_name": "黒田節",
+      "source_term": "黒田節",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
       "song_name": "龍馬おどり",
       "source_term": "龍馬おどり",
       "target": "create",
@@ -934,6 +958,14 @@
     },
     {
       "term": "楽しみながら踊り",
+      "reason": "曲名としての形が弱い"
+    },
+    {
+      "term": "筋肉少女帯が八木節",
+      "reason": "曲名としての形が弱い"
+    },
+    {
+      "term": "自分にとって民謡踊り",
       "reason": "曲名としての形が弱い"
     },
     {

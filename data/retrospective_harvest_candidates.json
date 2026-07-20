@@ -1,20 +1,20 @@
 {
   "generated_by": "build_retrospective_harvest.py",
-  "generated_at": "2026-07-20T03:47:53.319382+00:00",
+  "generated_at": "2026-07-20T04:15:29.453256+00:00",
   "source": "data/voices.json",
-  "voice_count": 12722,
-  "classified_event_evidence_count": 2805,
-  "candidate_count": 2845,
+  "voice_count": 12769,
+  "classified_event_evidence_count": 2814,
+  "candidate_count": 2852,
   "counts": {
     "by_kind": {
-      "event": 1327,
-      "song": 1138,
+      "event": 1330,
+      "song": 1142,
       "venue": 380
     },
     "by_tier": {
       "hold": 620,
       "promote": 406,
-      "review": 1819
+      "review": 1826
     },
     "suppressed_event_hint_count": 305,
     "venue_month_grouped_count": 412
@@ -12055,10 +12055,44 @@
       ],
       "score": 40,
       "tier": "review",
-      "evidence_count": 11,
+      "evidence_count": 12,
       "speaker_count": 1,
       "suppressed_event_hints": [],
       "evidence": [
+        {
+          "identity": "evidence:2079056202491674907",
+          "tweet_id": "2079056202491674907",
+          "url": "https://x.com/shumatsu_y/status/2079056202491674907",
+          "text": "＼✨📣盆踊り爆音ソング大募集📣✨／\n\n応募はこちら👇\nhttps://t.co/DJySyKis8v\n\n盆踊りの時に爆音で流してほしい曲を大募集します！\n皆様も会場で一緒に踊りましょう💃\n全組ネタもございます🎆\n\n「爆音！エクストリーム夏祭り2026」\n8/7(金)18:00開演（配信なし）\n📍COOL JAPAN PARK OSAKA TTホール\nhttps://t.co/C6z0vt0yXy\n\n藤崎マーケット、ジェラードン、今井らいぱち、9番街レトロ、フースーヤ、ヨネダ2000、盛り上げ隊\nDJ：SNOBつね\n\n#ラフフェス #エクストリーム夏祭り\n\n真夏のラフフェスin森ノ宮2026🏮\nhttps://t.co/cQsxaRz5dk",
+          "account": "@shumatsu_y",
+          "dancer_key": "@shumatsu_y",
+          "spoken_at": "2026-07-20T04:10:00+00:00",
+          "observed_at": "2026-07-20T04:10:00+00:00",
+          "patterns": [
+            "D"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "夏祭り"
+          ],
+          "source_score": 14,
+          "score_reasons": [
+            "date_or_time:+3",
+            "event_name:+4",
+            "song_or_group:+2",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "エクストリーム夏祭り",
+          "normalized_event": "エクストリーム",
+          "estimated_venue": "",
+          "time_hints": [
+            "8/7"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
         {
           "identity": "evidence:2076157099160060203",
           "tweet_id": "2076157099160060203",
@@ -39450,6 +39484,56 @@
     },
     {
       "kind": "event",
+      "candidate_key": "event:42844134a164b92fb2c82c6d696cf95cd25c82eb9c67a6b7a5a110d94e1ff022",
+      "display_name": "私は今日も盆踊り",
+      "normalized_event": "私は今日も",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "今日",
+      "year": 2026,
+      "hashtags": [],
+      "score": 33,
+      "tier": "review",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:2079053423065108578",
+          "tweet_id": "2079053423065108578",
+          "url": "https://x.com/sonyop/status/2079053423065108578",
+          "text": "私は今日も盆踊りなので、有明に行く皆さんとは違うダンシングヒーローを踊ってきますね\nみんな楽しんできて〜！（有明行きたかったぜ…）",
+          "account": "@sonyop",
+          "dancer_key": "@sonyop",
+          "spoken_at": "2026-07-20T03:58:57+00:00",
+          "observed_at": "2026-07-20T03:58:57+00:00",
+          "patterns": [
+            "A"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊"
+          ],
+          "source_score": 10,
+          "score_reasons": [
+            "date_or_time:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3"
+          ],
+          "estimated_event": "私は今日も盆踊り",
+          "normalized_event": "私は今日も",
+          "estimated_venue": "",
+          "time_hints": [
+            "今日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
       "candidate_key": "event:0411b1eb16828119f9ccc294dd8343c4cb5fca88a9652c6fbcb28d16f56f623b",
       "display_name": "立川音頭を現地で踊ったのが盆踊り",
       "normalized_event": "立川音頭を現地で踊ったのが",
@@ -40376,6 +40460,81 @@
           "time_hints": [
             "2026/7/19"
           ],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "candidate_key": "event:7bfe2faa90565641ff04430b55df6925dff05e24023af2e0debc4e918670cabd",
+      "display_name": "自由が丘の盆踊り",
+      "normalized_event": "自由が丘",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 33,
+      "tier": "review",
+      "evidence_count": 2,
+      "speaker_count": 2,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:2079050067764551885",
+          "tweet_id": "2079050067764551885",
+          "url": "https://x.com/nana20090623/status/2079050067764551885",
+          "text": "今宵\n自由が丘の盆踊り\n行く人〜？！\n現地で会いまショー！",
+          "account": "@nana20090623",
+          "dancer_key": "@nana20090623",
+          "spoken_at": "2026-07-20T03:45:37+00:00",
+          "observed_at": "2026-07-20T03:45:37+00:00",
+          "patterns": [
+            "A"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊"
+          ],
+          "source_score": 7,
+          "score_reasons": [
+            "event_name:+4",
+            "plan_or_announcement:+3"
+          ],
+          "estimated_event": "自由が丘の盆踊り",
+          "normalized_event": "自由が丘",
+          "estimated_venue": "",
+          "time_hints": [],
+          "year_signals": [],
+          "year": 2026
+        },
+        {
+          "identity": "evidence:2078756834656268613",
+          "tweet_id": "2078756834656268613",
+          "url": "https://x.com/ichtus_project/status/2078756834656268613",
+          "text": "自由が丘納涼盆踊りに行く方へ。駅のホームから写真や動画を撮影する際、【黄色い線より前に出ないようにしましょう】。\n\n昨日、引き込まれるように前に出てしまい、駅員さんに二度「お下がりください」のアナウンスをさせてしまいました。安全のため。そして、自由が丘の「自由」は、みんなで守ろう。",
+          "account": "@ichtus_project",
+          "dancer_key": "@ichtus_project",
+          "spoken_at": "2026-07-19T08:20:25+00:00",
+          "observed_at": "2026-07-19T08:20:25+00:00",
+          "patterns": [
+            "A"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊"
+          ],
+          "source_score": 7,
+          "score_reasons": [
+            "event_name:+4",
+            "plan_or_announcement:+3"
+          ],
+          "estimated_event": "自由が丘納涼盆踊り",
+          "normalized_event": "自由が丘",
+          "estimated_venue": "",
+          "time_hints": [],
           "year_signals": [],
           "year": 2026
         }
@@ -43013,6 +43172,56 @@
           "time_hints": [],
           "year_signals": [
             "今年も"
+          ],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "candidate_key": "event:3982425707009f776ff40cd2ab1a774fb0abacc221b2710174cf297e5558fd5d",
+      "display_name": "また来年も盆踊り",
+      "normalized_event": "また来年も",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 28,
+      "tier": "review",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:2079050988653298031",
+          "tweet_id": "2079050988653298031",
+          "url": "https://x.com/ruruko_gb/status/2079050988653298031",
+          "text": "@Hiyoyaoz 盛り上がったよなー!!\n楽しかった！\nまた来年も盆踊りしたい笑！",
+          "account": "@ruruko_gb",
+          "dancer_key": "@ruruko_gb",
+          "spoken_at": "2026-07-20T03:49:17+00:00",
+          "observed_at": "2026-07-20T03:49:17+00:00",
+          "patterns": [
+            "E"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊"
+          ],
+          "source_score": 9,
+          "score_reasons": [
+            "event_name:+4",
+            "past_participation:+2",
+            "year_continuity:+3"
+          ],
+          "estimated_event": "また来年も盆踊り",
+          "normalized_event": "また来年も",
+          "estimated_venue": "",
+          "time_hints": [],
+          "year_signals": [
+            "来年"
           ],
           "year": 2026
         }
@@ -78603,6 +78812,53 @@
     },
     {
       "kind": "event",
+      "candidate_key": "event:4a4aa3f877a106c077c2860ce9bb8e837ccffc245d2b3cb61da1a80ab12d2661",
+      "display_name": "浴衣着て天神の盆踊り",
+      "normalized_event": "浴衣着て天神",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 18,
+      "tier": "hold",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:2079044342032003225",
+          "tweet_id": "2079044342032003225",
+          "url": "https://x.com/larc_vamps/status/2079044342032003225",
+          "text": "浴衣着て天神の盆踊り行きたい🥹\n浴衣着たいって子いるけど盆踊りは踊ってくれんから、浴衣着て盆踊り一緒に踊り狂ってくれる人大募集中🥹",
+          "account": "@larc_vamps",
+          "dancer_key": "@larc_vamps",
+          "spoken_at": "2026-07-20T03:22:52+00:00",
+          "observed_at": "2026-07-20T03:22:52+00:00",
+          "patterns": [
+            "D"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊"
+          ],
+          "source_score": 6,
+          "score_reasons": [
+            "event_name:+4",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "浴衣着て天神の盆踊り",
+          "normalized_event": "浴衣着て天神",
+          "estimated_venue": "",
+          "time_hints": [],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
       "candidate_key": "event:0947d9ab0d1797d50150e3fa836cd6e915b85f9f730b0b9b94d271cbdb830295",
       "display_name": "深川十五夜まつり",
       "normalized_event": "深川十五夜",
@@ -81074,53 +81330,6 @@
           ],
           "estimated_event": "自治会会員として地域の祭りの裏方をやるから他の地区の盆踊り",
           "normalized_event": "自治会会員として地域の祭りの裏方をやるから他の地区",
-          "estimated_venue": "",
-          "time_hints": [],
-          "year_signals": [],
-          "year": 2026
-        }
-      ]
-    },
-    {
-      "kind": "event",
-      "candidate_key": "event:7bfe2faa90565641ff04430b55df6925dff05e24023af2e0debc4e918670cabd",
-      "display_name": "自由が丘納涼盆踊り",
-      "normalized_event": "自由が丘",
-      "venue": "",
-      "venue_key": "",
-      "month": "",
-      "estimated_date": "",
-      "year": 2026,
-      "hashtags": [],
-      "score": 18,
-      "tier": "hold",
-      "evidence_count": 1,
-      "speaker_count": 1,
-      "suppressed_event_hints": [],
-      "evidence": [
-        {
-          "identity": "evidence:2078756834656268613",
-          "tweet_id": "2078756834656268613",
-          "url": "https://x.com/ichtus_project/status/2078756834656268613",
-          "text": "自由が丘納涼盆踊りに行く方へ。駅のホームから写真や動画を撮影する際、【黄色い線より前に出ないようにしましょう】。\n\n昨日、引き込まれるように前に出てしまい、駅員さんに二度「お下がりください」のアナウンスをさせてしまいました。安全のため。そして、自由が丘の「自由」は、みんなで守ろう。",
-          "account": "@ichtus_project",
-          "dancer_key": "@ichtus_project",
-          "spoken_at": "2026-07-19T08:20:25+00:00",
-          "observed_at": "2026-07-19T08:20:25+00:00",
-          "patterns": [
-            "A"
-          ],
-          "bon_context_hits": [
-            "盆踊り",
-            "盆踊"
-          ],
-          "source_score": 7,
-          "score_reasons": [
-            "event_name:+4",
-            "plan_or_announcement:+3"
-          ],
-          "estimated_event": "自由が丘納涼盆踊り",
-          "normalized_event": "自由が丘",
           "estimated_venue": "",
           "time_hints": [],
           "year_signals": [],
@@ -92113,6 +92322,23 @@
       "evidence": [
         {
           "identity": "",
+          "tweet_id": "2079056783382139055",
+          "url": "https://x.com/md4luv_luv/status/2079056783382139055",
+          "text": "NIGHT DANCERで 盆踊り♪ 来年は、 アカペラ音頭♪ いれていただけないでしょうか笑",
+          "account": "@md4luv_luv",
+          "dancer_key": "@md4luv_luv",
+          "observed_at": "2026-07-20T04:12:18+00:00",
+          "score": 0,
+          "song_name": "アカペラ音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        },
+        {
+          "identity": "",
           "tweet_id": "2070077937332933114",
           "url": "https://x.com/S_R95/status/2070077937332933114",
           "text": "#アカペラ音頭視聴完了 今年から全国の盆踊りの音頭これでいきましょ！ https://t.co/bI3d3HVroQ",
@@ -92167,8 +92393,8 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 3,
-      "speaker_count": 3
+      "evidence_count": 4,
+      "speaker_count": 4
     },
     {
       "kind": "song",
@@ -93765,16 +93991,35 @@
       "kind": "song",
       "candidate_key": "song:80e8e542d345e2ae3c02d55b7ba2f043ffa8e12ff42ba00ed520ef28b098a0a2",
       "display_name": "ダンシングヒーロー",
-      "normalized_event": "",
+      "normalized_event": "私は今日も",
       "venue": "",
       "venue_key": "",
       "month": "",
       "estimated_date": "",
-      "year": "",
+      "year": 2026,
       "hashtags": [],
       "score": 65,
       "tier": "promote",
       "evidence": [
+        {
+          "identity": "evidence:2079053423065108578",
+          "tweet_id": "2079053423065108578",
+          "url": "https://x.com/sonyop/status/2079053423065108578",
+          "text": "私は今日も盆踊りなので、有明に行く皆さんとは違うダンシングヒーローを踊ってきますね みんな楽しんできて〜！（有明行きたかったぜ…）",
+          "account": "@sonyop",
+          "dancer_key": "@sonyop",
+          "observed_at": "2026-07-20T03:58:57+00:00",
+          "score": 10,
+          "song_name": "ダンシングヒーロー",
+          "reasons": [
+            "known_song_context"
+          ],
+          "estimated_event": "私は今日も盆踊り",
+          "estimated_venue": "",
+          "time_hints": [
+            "今日"
+          ]
+        },
         {
           "identity": "",
           "tweet_id": "2079048744386109833",
@@ -96236,8 +96481,8 @@
         "known_song_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 144,
-      "speaker_count": 48
+      "evidence_count": 145,
+      "speaker_count": 49
     },
     {
       "kind": "song",
@@ -205339,6 +205584,45 @@
     },
     {
       "kind": "song",
+      "candidate_key": "song:9fffc6c030704ce5987f7687b75817edb05404f5f0124b9a8e3515e448eb94bf",
+      "display_name": "あともう一つは民謡踊り",
+      "normalized_event": "",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": "",
+      "hashtags": [],
+      "score": 30,
+      "tier": "review",
+      "evidence": [
+        {
+          "identity": "",
+          "tweet_id": "2079056142370767329",
+          "url": "https://x.com/kuma_bot999/status/2079056142370767329",
+          "text": "盆踊りと比べて純粋に楽しめている自分がいる。盆踊りが楽しくないとはもちろん言ってないw 盆踊りにおいて楽しい瞬間はそれこそたくさんある。が,そこに至るまでに苦行もある。苦行もあるから楽しい瞬間はより楽しい。 あともう一つは民謡踊りは待っててもこないけど?ということ 何度もいってるけど",
+          "account": "@kuma_bot999",
+          "dancer_key": "@kuma_bot999",
+          "observed_at": "2026-07-20T04:09:45+00:00",
+          "score": 0,
+          "song_name": "あともう一つは民謡踊り",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        }
+      ],
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 1,
+      "speaker_count": 1
+    },
+    {
+      "kind": "song",
       "candidate_key": "song:6fe03bb8caadfd5bbe8173a4703383008973cf9a5f3f3d04648fe9c92ddb6179",
       "display_name": "あと甚句",
       "normalized_event": "",
@@ -225857,6 +226141,45 @@
     },
     {
       "kind": "song",
+      "candidate_key": "song:a54a16415f2cfd5979ebe28cec6c72b4bf6d02c72d985f32ff01d56b8e043d0e",
+      "display_name": "筋肉少女帯が八木節",
+      "normalized_event": "",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": "",
+      "hashtags": [],
+      "score": 30,
+      "tier": "review",
+      "evidence": [
+        {
+          "identity": "",
+          "tweet_id": "2079051018126672023",
+          "url": "https://x.com/bed_sitter/status/2079051018126672023",
+          "text": "@HtJbS0wwBD70771 羊歯明神では色々な盆踊りアレンジが聴けますよ！ 陣内さんの黒田節は知らなかったでした。筋肉少女帯が八木節を歌うとこーなります😅 https://t.co/druWNL06wE",
+          "account": "@bed_sitter",
+          "dancer_key": "@bed_sitter",
+          "observed_at": "2026-07-20T03:49:24+00:00",
+          "score": 0,
+          "song_name": "筋肉少女帯が八木節",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        }
+      ],
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 1,
+      "speaker_count": 1
+    },
+    {
+      "kind": "song",
       "candidate_key": "song:18fed20ea8ec547c14384fec945aefc82944864c7ebd9dab7520c574e66972e0",
       "display_name": "粟津音頭",
       "normalized_event": "",
@@ -226513,6 +226836,45 @@
           "observed_at": "2026-07-11T00:56:55+00:00",
           "score": 0,
           "song_name": "腕光らせて踊り",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        }
+      ],
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 1,
+      "speaker_count": 1
+    },
+    {
+      "kind": "song",
+      "candidate_key": "song:3873c39312da1447cfa33304e1997e78239cf622a1ab334d301df54294e9b526",
+      "display_name": "自分にとって民謡踊り",
+      "normalized_event": "",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 30,
+      "tier": "review",
+      "evidence": [
+        {
+          "identity": "evidence:2079055675607650390",
+          "tweet_id": "2079055675607650390",
+          "url": "https://x.com/kuma_bot999/status/2079055675607650390",
+          "text": "昨日の #民謡ピクニック 本当に楽しかったのだけれど帰り道にはたとわかったことがあって 自分にとって民謡踊りは\"趣味\"なんだなと だから楽しめる 盆踊りはゆうに趣味を超えたものでありそこには”苦行”も若干含まれるしw(真夏の昼盆は本当に苦しい…とか) 独りよがりの(自覚有)義務感使命感もあり",
+          "account": "@kuma_bot999",
+          "dancer_key": "@kuma_bot999",
+          "observed_at": "2026-07-20T04:07:54+00:00",
+          "score": 5,
+          "song_name": "自分にとって民謡踊り",
           "reasons": [
             "song_suffix_near_context"
           ],
@@ -229223,6 +229585,45 @@
           "observed_at": "2026-06-15T15:47:09+00:00",
           "score": 0,
           "song_name": "黄門おどり",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        }
+      ],
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 1,
+      "speaker_count": 1
+    },
+    {
+      "kind": "song",
+      "candidate_key": "song:97ee8da7a5452623719fe8ad74bbae37e2fc1bb046194c214d17f18c4a006ae8",
+      "display_name": "黒田節",
+      "normalized_event": "",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": "",
+      "hashtags": [],
+      "score": 30,
+      "tier": "review",
+      "evidence": [
+        {
+          "identity": "",
+          "tweet_id": "2079051018126672023",
+          "url": "https://x.com/bed_sitter/status/2079051018126672023",
+          "text": "@HtJbS0wwBD70771 羊歯明神では色々な盆踊りアレンジが聴けますよ！ 陣内さんの黒田節は知らなかったでした。筋肉少女帯が八木節を歌うとこーなります😅 https://t.co/druWNL06wE",
+          "account": "@bed_sitter",
+          "dancer_key": "@bed_sitter",
+          "observed_at": "2026-07-20T03:49:24+00:00",
+          "score": 0,
+          "song_name": "黒田節",
           "reasons": [
             "song_suffix_near_context"
           ],

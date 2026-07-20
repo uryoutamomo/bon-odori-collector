@@ -1,9 +1,9 @@
 {
   "generated_by": "build_event_poster_ocr_queue.py",
-  "count": 1458,
+  "count": 1465,
   "summary": {
     "critical": 13,
-    "high": 328,
+    "high": 331,
     "trusted_informant": 15
   },
   "items": [
@@ -7438,6 +7438,72 @@
         "pic.x.com/GfH7ap9ACu"
       ],
       "text": "京王井の頭線・三鷹台駅前広場🏮🕺\n\n三鷹台盆踊り大会を8/1(土)・2(日)に開催。\n\n2(日)に踊ってくれた小学生以下のみんなにお菓子プレゼント❗️(先着400名)\n\nポスターのデザイン一新やね☺️ https://t.co/GfH7ap9ACu",
+      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
+    },
+    {
+      "id": "xposter_20a44d3534c6dfe2",
+      "status": "needs_ocr",
+      "priority": "high",
+      "evidence_type": "poster_or_flyer_image",
+      "assumed_source_confidence": "medium",
+      "account": "@mayor_watanabe",
+      "account_name": "わたなべ たかし",
+      "trusted_informant": false,
+      "trusted_informant_rank": "",
+      "url": "https://x.com/mayor_watanabe/status/2079055252842770803",
+      "tweet_id": "2079055252842770803",
+      "date": "2026-07-20T04:06:13+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HNpJu0RbEAAsskX.jpg",
+        "https://t.co/n8Bdbc3B2n",
+        "pic.x.com/n8Bdbc3B2n"
+      ],
+      "text": "19日、栄町町会の #盆踊り が開催され、家族連れで賑わいました。\n中には栄町に住んでいる南アジア系と思われるご家族も複数参加していて、子ども達は見よう見まねで踊っていました。\n国籍を問わず地域の子ども達の思い出に残るよう、これからも盆踊りを続けていただければと思います。\n#東村山市長 https://t.co/n8Bdbc3B2n",
+      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
+    },
+    {
+      "id": "xposter_9d93fef8dd635641",
+      "status": "needs_ocr",
+      "priority": "high",
+      "evidence_type": "poster_or_flyer_image",
+      "assumed_source_confidence": "medium",
+      "account": "@lbsmusicyukiya",
+      "account_name": "加藤　貴行",
+      "trusted_informant": false,
+      "trusted_informant_rank": "",
+      "url": "https://x.com/lbsmusicyukiya/status/2079055368341319830",
+      "tweet_id": "2079055368341319830",
+      "date": "2026-07-20T04:06:41+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HNpJ1kDakAA8_HX.jpg",
+        "https://t.co/ALp0vBdPC4",
+        "pic.x.com/ALp0vBdPC4",
+        "https://pbs.twimg.com/media/HNpJ1kSbgAE2TKs.jpg",
+        "https://pbs.twimg.com/media/HNpJ1kFboAEsP78.jpg",
+        "https://pbs.twimg.com/media/HNpJ1kCbEAAuOBp.jpg"
+      ],
+      "text": "令和8年第36回\n「池袋の子供達にふるさとを」\n\n📅 2026年7月19日　２日目　\n\n毎年、みらい館大明にて、池袋御嶽町会が主催し、町会の皆様や地域団体の皆様のご協賛・ご協力のもと開催されている盆踊りに参加させていただきました⭐️\n\n本日は２日目です☆\n\n桜衣杏奈(@annasakurai_2)\n春風光(@hikarun_0309)\nとスタッフ2名で参加いたしました！\n\n始めは皆さんに挨拶回りと、出展されているお店でホットドック、焼きそば、アイス、こんにゃく、ジュースなどたくさん買い物をいたしました☆\n\n盆踊りの練習もして、踊りにチャレンジいたします☆\n\n次の投稿で\n\n宇崎真里愛、桜衣杏奈、春風光とそれぞれ盆踊りの様子をアップしていきます☆",
+      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
+    },
+    {
+      "id": "xposter_a9785311f65a9e17",
+      "status": "needs_ocr",
+      "priority": "high",
+      "evidence_type": "poster_or_flyer_image",
+      "assumed_source_confidence": "medium",
+      "account": "@jujonakahara1",
+      "account_name": "十条仲原一丁目町会青少年部",
+      "trusted_informant": false,
+      "trusted_informant_rank": "",
+      "url": "https://x.com/jujonakahara1/status/2079056517698072830",
+      "tweet_id": "2079056517698072830",
+      "date": "2026-07-20T04:11:15+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HNpK4jxbMAE18sQ.jpg",
+        "https://t.co/VLsGjAjLai",
+        "pic.x.com/VLsGjAjLai"
+      ],
+      "text": "8/7〜9十条駅前盆踊りでは\n上二町会青少年部、仲一町会青少年部共同で生ビール屋さんやります！\n注ぎたてサッポロ黒ラベルと賑やかな夏の夜をお楽しみください\n\n売上は祭礼費用に活用させていただきます\n長くこの街に、子どもたちの夏休みに、祭と街の元気を残していけるように！ https://t.co/VLsGjAjLai",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
     },
     {
@@ -31834,6 +31900,93 @@
         "https://pbs.twimg.com/media/HNpEyw8bAAEkdpN.jpg"
       ],
       "text": "昨日の伊勢崎アニソン盆踊りに、なんと…サンドローネとイヌたんがいました…！！私がCV担当したキャラが会場にいてくれてめちゃくちゃ嬉しかったです！お写真いただきましたー！他にも色んなコスプレの方がいて見つけるの楽しかった！ありがとうございます…！ https://t.co/llsRrCZBit",
+      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
+    },
+    {
+      "id": "xposter_f2fc297a0c973284",
+      "status": "needs_ocr",
+      "priority": "medium",
+      "evidence_type": "poster_or_flyer_image",
+      "assumed_source_confidence": "medium",
+      "account": "@mitsuefujikawa",
+      "account_name": "🪻藤川みつえ調布市議会議員🌾RICE",
+      "trusted_informant": false,
+      "trusted_informant_rank": "",
+      "url": "https://x.com/mitsuefujikawa/status/2079052694304784706",
+      "tweet_id": "2079052694304784706",
+      "date": "2026-07-20T03:56:03+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HNpHZ8zb0AIacob.jpg",
+        "https://t.co/aXmbWMgN2V",
+        "pic.x.com/aXmbWMgN2V"
+      ],
+      "text": "7/18・19日はサマーフェスティバルIN国領へ🏮\n\n特に盆踊り参加者数がこれまでで一番多かったとのことで🎵\n\n子ども達や来場者の皆さまも多くの方が輪になって大盛り上がり✨\n曲が終わる度にハイタッチ🤚\n\n地域の皆さまとの繋がりに感謝感謝でした🙏\n\nこれからも全世代の皆さまの笑顔あふれる調布市へ全力で働いてまいります🙋‍♀️\n\n🪻藤川みつえ",
+      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
+    },
+    {
+      "id": "xposter_c6a8cc075fdeaac0",
+      "status": "needs_ocr",
+      "priority": "medium",
+      "evidence_type": "poster_or_flyer_image",
+      "assumed_source_confidence": "medium",
+      "account": "@0024youhei",
+      "account_name": "大西洋平　自民党　衆議院議員(東京16区)：外務大臣政務官",
+      "trusted_informant": false,
+      "trusted_informant_rank": "",
+      "url": "https://x.com/0024youhei/status/2079052971648983350",
+      "tweet_id": "2079052971648983350",
+      "date": "2026-07-20T03:57:10+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HNpHqIcaYAASXCy.jpg",
+        "https://t.co/MrKFXUgc3I",
+        "pic.x.com/MrKFXUgc3I",
+        "https://pbs.twimg.com/media/HNpHqIca4AAdELD.jpg",
+        "https://pbs.twimg.com/media/HNpHqIkbIAE547R.jpg",
+        "https://pbs.twimg.com/media/HNpHqIebMAAuyij.jpg"
+      ],
+      "text": "土日は夏のイベント盛りだくさんとなりました。\n\n出身リーダーでもある、Jrセントラルリーグ新人戦＆スイカ割大会開始式に伺い、始球式を担当しました。\nスイカ割りは私も様々思い出があります。\n\n    年に一度の真誓会納涼祭が、江戸川区で開催され地元国会議員としてご挨拶をさせて頂きました。\n\n相互扶助、助け合いを大切にされる真誓会の理念のもと、中心企業活性化等に加え、地域にも多大なご貢献を頂いています。会場も熱気に溢れて居ました。\n\n    道徳の教科書にも掲載されている、篠崎本郷獅子もみ行事式典では、一日の安全を祈願しました。\n\n炎天下をものともせず、街の安全等の為、各所を練り歩く、地域が一つになって盛り上がるかけがえのない行事です。\n\n式典途中、後ろ髪を引かれつつ、江戸川区学童少年軟式野球連盟新人戦開会式に伺い、ご挨拶をさせて頂きました。\n\n5年生中心の新人戦経験が、最終学年の活躍に直結する選手も多く、白熱したトーナメント戦が展開されます。\n\n    葛西海浜公園海開きセレモニーに伺い、ご挨拶をさせて頂きました。\n\n外務大臣政務官として、日本、江戸川区のシティプロモーションをする上で、",
+      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
+    },
+    {
+      "id": "xposter_3f2050bdd06d1ba6",
+      "status": "needs_ocr",
+      "priority": "medium",
+      "evidence_type": "poster_or_flyer_image",
+      "assumed_source_confidence": "medium",
+      "account": "@Tsukimoto_Info",
+      "account_name": "月本琢也(つきもと・たくや)川崎市議会議員(麻生区)",
+      "trusted_informant": false,
+      "trusted_informant_rank": "",
+      "url": "https://x.com/Tsukimoto_Info/status/2079054376262607263",
+      "tweet_id": "2079054376262607263",
+      "date": "2026-07-20T04:02:44+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HNpI7wuakAAvGH1.jpg",
+        "https://t.co/KXwZOOMRc7",
+        "pic.x.com/KXwZOOMRc7"
+      ],
+      "text": "今朝は麻生区ボッチャ大会の開会式へ。ここ2年、ボッチャ大会に出場できず、、、\nその後、今週末開催の五力田町内会盆踊りの実行委員会に出席。今年も焼き鳥を担当します。\n午後は勉強会。\n#麻生区 https://t.co/KXwZOOMRc7",
+      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
+    },
+    {
+      "id": "xposter_72443afc8e639b70",
+      "status": "needs_ocr",
+      "priority": "medium",
+      "evidence_type": "poster_or_flyer_image",
+      "assumed_source_confidence": "medium",
+      "account": "@shumatsu_y",
+      "account_name": "よしもとライブ",
+      "trusted_informant": false,
+      "trusted_informant_rank": "",
+      "url": "https://x.com/shumatsu_y/status/2079056202491674907",
+      "tweet_id": "2079056202491674907",
+      "date": "2026-07-20T04:10:00+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HNb3VWVaIAAQOOU.jpg",
+        "https://t.co/WTF2fB5mHK",
+        "pic.x.com/WTF2fB5mHK"
+      ],
+      "text": "＼✨📣盆踊り爆音ソング大募集📣✨／\n\n応募はこちら👇\nhttps://t.co/DJySyKis8v\n\n盆踊りの時に爆音で流してほしい曲を大募集します！\n皆様も会場で一緒に踊りましょう💃\n全組ネタもございます🎆\n\n「爆音！エクストリーム夏祭り2026」\n8/7(金)18:00開演（配信なし）\n📍COOL JAPAN PARK OSAKA TTホール\nhttps://t.co/C6z0vt0yXy\n\n藤崎マーケット、ジェラードン、今井らいぱち、9番街レトロ、フースーヤ、ヨネダ2000、盛り上げ隊\nDJ：SNOBつね\n\n#ラフフェス #エクストリーム夏祭り\n\n真夏のラフフェスin森ノ宮2026🏮\nhttps://t.co/cQsxaRz5dk",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
     }
   ]
