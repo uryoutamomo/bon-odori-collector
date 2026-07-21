@@ -33,7 +33,7 @@ B1-cutoverで切り替えるのは、まず**ローカルreview consoleのB1系�
 
 ### 切り替えないconsumer
 
-- `export_public_events.py`と`review_inbox_production_wiring.public_projection_digest`
+- `export_public_events.py`と`review_inbox_adapters.production_wiring.public_projection_digest`
 - `.github/workflows/collect.yml`
 - site同期、S3/CloudFront deploy
 - source adapter / source-scoped writer / CAS publisher
