@@ -11,7 +11,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from backfill_youtube_descriptions import load_env_value
-import harvest_youtube_year_backfill as harvest_mod
+from youtube_backfill import harvest_youtube_year_backfill as harvest_mod
 from master_rdb_freeze_policy import is_group_frozen, load_policy
 
 
@@ -270,16 +270,17 @@ def next_rows_for_args(queue, candidates, args, attempted_queue_ids=None):
 
 def regenerate_outputs(month):
     commands = [
-        ["python3", "build_event_occurrence_backfill_plan.py"],
+        ["python3", "-m", "youtube_backfill.build_event_occurrence_backfill_plan"],
         ["python3", "build_low_confidence_backfill_review.py"],
-        ["python3", "apply_event_occurrence_backfill_plan.py"],
-        ["python3", "build_event_schedule_rules.py", "--target-year", "2026"],
+        ["python3", "-m", "youtube_backfill.apply_event_occurrence_backfill_plan"],
+        ["python3", "-m", "youtube_backfill.build_event_schedule_rules", "--target-year", "2026"],
         ["python3", "build_event_date_predictions.py", "--target-year", "2026"],
         ["python3", "build_song_occurrences.py"],
         ["python3", "export_public_events.py"],
         [
             "python3",
-            "build_month_youtube_backfill_queue.py",
+            "-m",
+            "youtube_backfill.build_month_youtube_backfill_queue",
             "--month",
             str(month),
             "--out-json",

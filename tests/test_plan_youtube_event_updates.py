@@ -1,6 +1,6 @@
 import unittest
 
-from plan_youtube_event_updates import build_plan, clean_song_title
+from youtube_backfill.plan_youtube_event_updates import build_plan, clean_song_title
 
 
 class PlanYoutubeEventUpdatesTest(unittest.TestCase):

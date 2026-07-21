@@ -1,6 +1,6 @@
 import unittest
 
-from build_month_youtube_backfill_queue import build_month_queue
+from youtube_backfill.build_month_youtube_backfill_queue import build_month_queue
 
 
 class BuildMonthYoutubeBackfillQueueTest(unittest.TestCase):

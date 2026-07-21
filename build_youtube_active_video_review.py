@@ -10,8 +10,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from extract_youtube_setlists import compact_url, parse_youtube_event_date, primary_description_text
-from plan_youtube_event_updates import is_out_of_scope, match_public_event
-from youtube_title_parts import split_youtube_title
+from youtube_backfill.plan_youtube_event_updates import is_out_of_scope, match_public_event
+from youtube_backfill.youtube_title_parts import split_youtube_title
 
 
 DATA = Path("data")

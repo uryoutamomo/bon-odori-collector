@@ -202,9 +202,9 @@ build_x_news_digest_for_oto.py
 build_all_rdb.py
 build_bon_odori_rdb.py
 build_event_date_predictions.py
-build_event_occurrence_backfill_plan.py
+youtube_backfill/build_event_occurrence_backfill_plan.py
 build_event_occurrence_observations.py
-build_event_schedule_rules.py
+youtube_backfill/build_event_schedule_rules.py
 build_evidence_rdb.py
 build_glossary_review_ui.py
 build_glossary_v2_seed_candidates.py
@@ -212,7 +212,7 @@ build_historical_promotion_candidates.py
 build_historical_reference_quality_review.py
 build_master_rdb.py
 build_missing_venue_review_from_song_associations.py
-build_month_youtube_backfill_queue.py
+youtube_backfill/build_month_youtube_backfill_queue.py
 build_notion_rdb.py
 build_notion_snapshot_drift_decisions.py
 build_observed_promotion_candidates.py
@@ -224,7 +224,7 @@ build_registered_event_investigation_queue.py
 build_youtube_active_video_review.py
 build_youtube_channel_review.py
 build_youtube_channels.py
-build_youtube_event_review.py
+youtube_backfill/build_youtube_event_review.py
 build_youtube_event_song_candidates.py
 build_youtube_nationwide_hold.py
 build_youtube_rdb.py

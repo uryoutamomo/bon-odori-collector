@@ -1,6 +1,6 @@
 import unittest
 
-from build_event_occurrence_backfill_plan import build_plan, song_hints_from_candidate
+from youtube_backfill.build_event_occurrence_backfill_plan import build_plan, song_hints_from_candidate
 
 
 class BuildEventOccurrenceBackfillPlanTest(unittest.TestCase):

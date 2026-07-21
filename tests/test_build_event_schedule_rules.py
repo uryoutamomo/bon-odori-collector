@@ -1,6 +1,6 @@
 import unittest
 
-from build_event_schedule_rules import build_rules
+from youtube_backfill.build_event_schedule_rules import build_rules
 from tests.test_build_event_date_predictions import observation, payload
 
 

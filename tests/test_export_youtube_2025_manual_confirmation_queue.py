@@ -1,6 +1,6 @@
 import unittest
 
-from export_youtube_2025_manual_confirmation_queue import official_confirmation_rows
+from youtube_backfill.export_youtube_2025_manual_confirmation_queue import official_confirmation_rows
 
 
 class ExportYoutube2025ManualConfirmationQueueTest(unittest.TestCase):

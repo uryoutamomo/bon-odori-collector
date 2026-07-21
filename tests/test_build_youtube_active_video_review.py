@@ -5,7 +5,7 @@ from build_youtube_active_video_review import (
     build_review,
     video_id_from_url,
 )
-from youtube_title_parts import split_youtube_title
+from youtube_backfill.youtube_title_parts import split_youtube_title
 
 
 class BuildYoutubeActiveVideoReviewTest(unittest.TestCase):

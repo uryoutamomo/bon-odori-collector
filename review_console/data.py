@@ -19,7 +19,7 @@ from typing import Any
 
 import collect_ops_metrics
 from review_inbox_adapters.decision_stage import UPDATES_FILE, build_decision_stage, write_decision_stage
-from youtube_title_parts import split_youtube_title
+from youtube_backfill.youtube_title_parts import split_youtube_title
 
 
 ROOT = Path(__file__).resolve().parents[1]
