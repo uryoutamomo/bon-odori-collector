@@ -2,6 +2,7 @@ import sqlite3
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 from apply_change_requests import apply_payload, validate_apply_allowed, validate_payload
 from master_db import SCHEMA
@@ -61,6 +62,291 @@ class ApplyChangeRequestsTests(unittest.TestCase):
 
         with self.assertRaisesRegex(ValueError, "confirm_current_year_date requires kind"):
             validate_payload(payload)
+
+    def test_validates_create_current_year_occurrence_contract(self):
+        payload = {
+            "request_type": "rdb_change_requests",
+            "requests": [
+                {
+                    "request_id": "create_bad",
+                    "change_type": "create_current_year_occurrence",
+                    "series_id": "series_1",
+                    "display_name": "第2回 サンプル盆踊り",
+                    "event_year": 2026,
+                    "date_start": "2025-07-20",
+                    "venue": {},
+                    "source": {
+                        "url": "https://example.com/history",
+                        "kind": "historical_occurrence_page",
+                    },
+                }
+            ],
+        }
+
+        with self.assertRaisesRegex(
+            ValueError,
+            "missing required field: name.*requires kind.*date_start must be in event_year",
+        ):
+            validate_payload(payload)
+
+    def test_creates_current_year_occurrence_for_existing_series_idempotently(self):
+        self.conn.execute("DELETE FROM event_occurrences WHERE occurrence_id = 'occ_1'")
+        self.conn.commit()
+        payload = {
+            "request_type": "rdb_change_requests",
+            "requests": [
+                {
+                    "request_id": "create_2026",
+                    "change_type": "create_current_year_occurrence",
+                    "series_id": "series_1",
+                    "display_name": "第2回 サンプル盆踊り",
+                    "event_year": 2026,
+                    "date_start": "2026-07-20",
+                    "date_end": "2026-07-21",
+                    "venue": {
+                        "name": "新会場",
+                        "area": "中央区",
+                        "address": "東京都中央区2-2",
+                    },
+                    "source": {
+                        "url": "https://example.com/official-2026",
+                        "kind": "official_current_year",
+                        "title": "2026年公式発表",
+                    },
+                    "note": "2026年の公式開催情報を確認。",
+                }
+            ],
+        }
+        validate_payload(payload)
+
+        first, first_issues = apply_payload(self.conn, payload, "2026-07-21T00:00:00+00:00")
+        self.conn.commit()
+        second, second_issues = apply_payload(self.conn, payload, "2026-07-21T00:01:00+00:00")
+        self.conn.commit()
+
+        self.assertEqual(first_issues, [])
+        self.assertEqual(second_issues, [])
+        self.assertTrue(first["requests_applied"][0]["occurrence_created"])
+        self.assertFalse(second["requests_applied"][0]["occurrence_created"])
+        occurrence = self.conn.execute(
+            """
+            SELECT display_name, date_start, date_end, date_status, lifecycle_status, source_url
+            FROM event_occurrences
+            WHERE series_id = 'series_1' AND event_year = 2026
+            """
+        ).fetchone()
+        self.assertEqual(
+            tuple(occurrence),
+            (
+                "第2回 サンプル盆踊り",
+                "2026-07-20",
+                "2026-07-21",
+                "confirmed",
+                "published",
+                "https://example.com/official-2026",
+            ),
+        )
+        self.assertEqual(
+            self.conn.execute(
+                "SELECT COUNT(*) FROM event_occurrences WHERE series_id = 'series_1' AND event_year = 2026"
+            ).fetchone()[0],
+            1,
+        )
+        self.assertEqual(
+            self.conn.execute(
+                "SELECT COUNT(*) FROM occurrence_evidence_links WHERE occurrence_id = ?",
+                (first["requests_applied"][0]["occurrence_id"],),
+            ).fetchone()[0],
+            1,
+        )
+
+    def test_create_current_year_occurrence_skips_unknown_series(self):
+        payload = {
+            "request_type": "rdb_change_requests",
+            "requests": [
+                {
+                    "request_id": "create_unknown",
+                    "change_type": "create_current_year_occurrence",
+                    "series_id": "series_missing",
+                    "display_name": "未知の盆踊り",
+                    "event_year": 2026,
+                    "date_start": "2026-07-20",
+                    "venue": {"name": "会場"},
+                    "source": {
+                        "url": "https://example.com/official",
+                        "kind": "official_current_year",
+                    },
+                }
+            ],
+        }
+        validate_payload(payload)
+
+        applied, issues = apply_payload(self.conn, payload, "2026-07-21T00:00:00+00:00")
+
+        self.assertEqual(applied["requests_applied"], [])
+        self.assertEqual(applied["requests_unresolved"], ["create_unknown"])
+        self.assertEqual(issues[0]["issue_type"], "series_id_not_found")
+
+    def test_create_current_year_occurrence_rolls_back_when_venue_is_ambiguous(self):
+        self.conn.execute("DELETE FROM event_occurrences WHERE occurrence_id = 'occ_1'")
+        self.conn.commit()
+        payload = {
+            "request_type": "rdb_change_requests",
+            "requests": [
+                {
+                    "request_id": "create_ambiguous_venue",
+                    "change_type": "create_current_year_occurrence",
+                    "series_id": "series_1",
+                    "display_name": "第2回 サンプル盆踊り",
+                    "event_year": 2026,
+                    "date_start": "2026-07-20",
+                    "venue": {"name": "候補が複数ある会場"},
+                    "source": {
+                        "url": "https://example.com/official",
+                        "kind": "official_current_year",
+                    },
+                }
+            ],
+        }
+        validate_payload(payload)
+
+        with patch(
+            "apply_change_requests.ensure_venue",
+            return_value={
+                "status": "ambiguous",
+                "venue_id": None,
+                "candidates": [{"venue_id": "venue_a"}, {"venue_id": "venue_b"}],
+            },
+        ):
+            applied, issues = apply_payload(
+                self.conn,
+                payload,
+                "2026-07-21T00:00:00+00:00",
+            )
+
+        self.assertEqual(applied["requests_applied"], [])
+        self.assertEqual(applied["requests_unresolved"], ["create_ambiguous_venue"])
+        self.assertEqual(issues[0]["issue_type"], "ambiguous_venue")
+        self.assertEqual(
+            self.conn.execute(
+                "SELECT COUNT(*) FROM event_occurrences WHERE series_id = 'series_1' AND event_year = 2026"
+            ).fetchone()[0],
+            0,
+        )
+
+    def test_create_current_year_occurrence_marks_past_event_ended(self):
+        self.conn.execute("DELETE FROM event_occurrences WHERE occurrence_id = 'occ_1'")
+        self.conn.commit()
+        payload = {
+            "request_type": "rdb_change_requests",
+            "requests": [
+                {
+                    "request_id": "create_ended_2026",
+                    "change_type": "create_current_year_occurrence",
+                    "series_id": "series_1",
+                    "display_name": "終了済み盆踊り",
+                    "event_year": 2026,
+                    "date_start": "2026-07-10",
+                    "date_end": "2026-07-11",
+                    "venue": {"name": "終了済み会場"},
+                    "source": {
+                        "url": "https://example.com/official-ended",
+                        "kind": "official_current_year",
+                    },
+                }
+            ],
+        }
+        validate_payload(payload)
+
+        on_final_day, first_issues = apply_payload(
+            self.conn,
+            payload,
+            "2026-07-11T00:00:00+00:00",
+        )
+        applied, issues = apply_payload(
+            self.conn,
+            payload,
+            "2026-07-21T00:00:00+00:00",
+        )
+
+        self.assertEqual(first_issues, [])
+        self.assertEqual(on_final_day["requests_applied"][0]["date_status"], "confirmed")
+        self.assertEqual(issues, [])
+        self.assertEqual(applied["requests_applied"][0]["date_status"], "ended")
+        occurrence = self.conn.execute(
+            """
+            SELECT date_status, current_event_state, date_certainty_tier
+            FROM event_occurrences
+            WHERE series_id = 'series_1' AND event_year = 2026
+            """
+        ).fetchone()
+        self.assertEqual(tuple(occurrence), ("ended", "ended", "confirmed"))
+        occurrence_date = self.conn.execute(
+            """
+            SELECT date_type
+            FROM occurrence_dates
+            WHERE occurrence_id = ?
+            """,
+            (applied["requests_applied"][0]["occurrence_id"],),
+        ).fetchone()
+        self.assertEqual(occurrence_date[0], "ended")
+
+    def test_confirm_current_year_date_reuses_existing_exact_date_row(self):
+        self.conn.execute(
+            """
+            INSERT INTO occurrence_dates (
+              occurrence_date_id, occurrence_id, date_start, date_end,
+              date_type, confidence, basis, created_at
+            ) VALUES (
+              'legacy_date_id', 'occ_1', '2026-07-20', '2026-07-21',
+              'confirmed', 'confirmed', 'legacy import', 'now'
+            )
+            """
+        )
+        payload = {
+            "request_type": "rdb_change_requests",
+            "requests": [
+                {
+                    "request_id": "confirm_existing_date",
+                    "change_type": "confirm_current_year_date",
+                    "occurrence_id": "occ_1",
+                    "event_year": 2026,
+                    "date_start": "2026-07-20",
+                    "date_end": "2026-07-21",
+                    "source": {
+                        "url": "https://example.com/current-year",
+                        "kind": "official_current_year",
+                    },
+                }
+            ],
+        }
+        validate_payload(payload)
+
+        applied, issues = apply_payload(
+            self.conn,
+            payload,
+            "2026-07-22T00:00:00+00:00",
+        )
+
+        self.assertEqual(issues, [])
+        self.assertEqual(applied["requests_applied"][0]["date_status"], "ended")
+        dates = self.conn.execute(
+            """
+            SELECT occurrence_date_id, date_type, basis
+            FROM occurrence_dates
+            WHERE occurrence_id = 'occ_1'
+            """
+        ).fetchall()
+        self.assertEqual(
+            [tuple(row) for row in dates],
+            [
+                (
+                    "legacy_date_id",
+                    "ended",
+                    "current-year source: https://example.com/current-year",
+                )
+            ],
+        )
 
     def test_applies_four_finite_change_types(self):
         payload = {

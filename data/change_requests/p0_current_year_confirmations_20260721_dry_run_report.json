@@ -1,0 +1,196 @@
+{
+  "generated_by": "apply_change_requests.py",
+  "generated_at": "2026-07-21T03:08:47.069530+00:00",
+  "mode": "dry_run",
+  "sources": {
+    "master_db": "data/bon_odori_master.sqlite",
+    "requests": "data/change_requests/p0_current_year_confirmations_20260721.json"
+  },
+  "outputs": {
+    "target_db": "data/change_requests_apply_dry_run.sqlite",
+    "dry_run_db": "data/change_requests_apply_dry_run.sqlite",
+    "backup_db": "",
+    "json": "data/change_requests/p0_current_year_confirmations_20260721_dry_run_report.json",
+    "markdown": "data/change_requests/p0_current_year_confirmations_20260721_dry_run_report.md"
+  },
+  "options": {
+    "apply": false
+  },
+  "write_guard": {
+    "db_committed": true,
+    "rolled_back": false,
+    "rollback_reason": ""
+  },
+  "summary": {
+    "issues_count": 0,
+    "issues_by_severity": {},
+    "audit_issues_by_severity": {},
+    "table_counts": {
+      "event_investigation_tasks": 79,
+      "event_occurrences": 253,
+      "event_series": 241,
+      "evidence_items": 28518,
+      "external_record_links": 2654,
+      "historical_promotion_candidates": 16,
+      "master_meta": 0,
+      "notion_sync_jobs": 0,
+      "observed_occurrence_songs": 28105,
+      "observed_occurrences": 1856,
+      "occurrence_dates": 296,
+      "occurrence_evidence_links": 102,
+      "occurrence_song_evidence_links": 496,
+      "occurrence_songs": 323,
+      "predicted_occurrence_dates": 14,
+      "review_inbox_items": 0,
+      "schema_migrations": 2,
+      "song_aliases": 141,
+      "songs": 150,
+      "venue_aliases": 291,
+      "venues": 242,
+      "write_batches": 0
+    }
+  },
+  "request_payload": {
+    "request_type": "rdb_change_requests",
+    "generated_at": "2026-07-21T12:00:00+09:00",
+    "generated_by": "おと（Codex）",
+    "scope": "p0_current_year_confirmations_20260721",
+    "purpose": "統合受信箱のP0 20件を再調査し、2026年一次情報で安全に反映できる3件だけを変更リクエスト化する。",
+    "requests": [
+      {
+        "request_id": "ohdai_2026_create_current_occurrence",
+        "dry_run_only": true,
+        "change_type": "create_current_year_occurrence",
+        "series_id": "ser_a3a6304574b4feb5",
+        "display_name": "第16回 鴨台盆踊り",
+        "event_year": 2026,
+        "date_start": "2026-07-10",
+        "date_end": "2026-07-11",
+        "venue": {
+          "name": "大正大学3号館前広場",
+          "area": "豊島区",
+          "address": "東京都豊島区西巣鴨3-20-1",
+          "access": "都営三田線 西巣鴨駅から徒歩圏内"
+        },
+        "source": {
+          "url": "https://www.tais.ac.jp/region_international/contribution_society/ohdai_bonodori/",
+          "kind": "official_current_year",
+          "platform": "web",
+          "title": "第16回 鴨台盆踊り",
+          "text_excerpt": "2026年7月10日・11日、大正大学3号館前広場で開催。"
+        },
+        "predicted_date_id": "preddate_131b2204d5f23eae",
+        "prediction_resolution": "superseded_by_current_year_confirmation",
+        "note": "[p0_review_20260721] 大正大学公式ページで2026年開催日・会場を確認。既存系列に2026年開催回を新設する。"
+      },
+      {
+        "request_id": "shinjuku_chuo_2026_confirm_date",
+        "dry_run_only": true,
+        "change_type": "confirm_current_year_date",
+        "occurrence_id": "occ_99e2dd44bce470e3",
+        "event_year": 2026,
+        "date_start": "2026-08-22",
+        "date_end": "2026-08-23",
+        "venue": {
+          "name": "新宿中央公園 ファンモアタイムひろば",
+          "area": "新宿区",
+          "address": "東京都新宿区西新宿2-11",
+          "access": "新宿中央公園内（旧水の広場）"
+        },
+        "source": {
+          "url": "https://shinjukuchuo-park.jp/events/event/2026/07/03/%E6%96%B0%E5%AE%BF%E4%B8%AD%E5%A4%AE%E5%85%AC%E5%9C%92%E3%80%80%E5%A4%8F%E3%81%BE%E3%81%A4%E3%82%8A%EF%BD%9E%E7%9B%86%E8%B8%8A%E3%82%8A%E3%81%A8%E5%90%8C%E6%99%82%E9%96%8B%E5%82%AC%EF%BD%9E-2/",
+          "kind": "official_current_year",
+          "platform": "web",
+          "title": "新宿中央公園 夏まつり～盆踊りと同時開催～",
+          "text_excerpt": "2026年8月22日・23日、ファンモアタイムひろばで開催。納涼盆踊り主催は新宿区角筈地区青少年育成委員会。"
+        },
+        "note": "[p0_review_20260721] 新宿中央公園公式ページで2026年開催日・会場・盆踊り主催者を確認。"
+      },
+      {
+        "request_id": "jiyugaoka_2026_add_official_confirmation",
+        "dry_run_only": true,
+        "change_type": "confirm_current_year_date",
+        "occurrence_id": "occ_0240108c92fd793b",
+        "event_year": 2026,
+        "date_start": "2026-07-18",
+        "date_end": "2026-07-20",
+        "venue": {
+          "name": "自由が丘駅前ロータリー 特設会場",
+          "area": "目黒区",
+          "address": "東京都目黒区自由が丘1丁目付近",
+          "access": "自由が丘駅正面口前"
+        },
+        "source": {
+          "url": "https://www.jiyugaoka-abc.com/special/bonodori/",
+          "kind": "organizer_current_year",
+          "platform": "web",
+          "title": "自由が丘納涼盆踊り大会",
+          "text_excerpt": "自由が丘商店街振興組合の特設ページで、2026年7月18日から20日の開催を確認。"
+        },
+        "predicted_date_id": "preddate_4176bccdcae25ce9",
+        "prediction_resolution": "superseded_by_current_year_confirmation",
+        "note": "[p0_review_20260721] 公開データは確認済みだが第三者URLだったため、主催者公式の当年根拠を追加する。"
+      }
+    ]
+  },
+  "applied": {
+    "resolved": true,
+    "requests_applied": [
+      {
+        "request_id": "ohdai_2026_create_current_occurrence",
+        "change_type": "create_current_year_occurrence",
+        "occurrence_id": "occ_63ae1b3a246f34f0",
+        "evidence_id": "evid_68f4a529eec88862",
+        "changed_fields": [
+          "venue_id",
+          "date_start",
+          "detail",
+          "source_url"
+        ],
+        "venue_status": "reused",
+        "date_status": "ended",
+        "series_id": "ser_a3a6304574b4feb5",
+        "occurrence_created": true
+      },
+      {
+        "request_id": "shinjuku_chuo_2026_confirm_date",
+        "change_type": "confirm_current_year_date",
+        "occurrence_id": "occ_99e2dd44bce470e3",
+        "evidence_id": "evid_4a57b8994dd1e3d6",
+        "changed_fields": [
+          "venue_id",
+          "date_start",
+          "detail",
+          "source_url"
+        ],
+        "venue_status": "created",
+        "date_status": "confirmed"
+      },
+      {
+        "request_id": "jiyugaoka_2026_add_official_confirmation",
+        "change_type": "confirm_current_year_date",
+        "occurrence_id": "occ_0240108c92fd793b",
+        "evidence_id": "evid_0d774aac238335de",
+        "changed_fields": [
+          "venue_id",
+          "date_start",
+          "detail",
+          "source_url"
+        ],
+        "venue_status": "reused",
+        "date_status": "ended"
+      }
+    ],
+    "requests_unresolved": []
+  },
+  "issues": [],
+  "audit": {
+    "issue_count": 0,
+    "issues_by_severity": {},
+    "issues_by_type": {}
+  },
+  "public_json_write": {
+    "enabled": false,
+    "policy": "Run export_public_events.py and the site deploy separately, on Uchida-san's schedule."
+  }
+}

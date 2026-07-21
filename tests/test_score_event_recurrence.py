@@ -1,4 +1,5 @@
 import unittest
+from datetime import date
 
 from score_event_recurrence import build_rows, enrich_public_events, parse_edition_number, public_status_for_event
 
@@ -30,6 +31,22 @@ class ScoreEventRecurrenceTest(unittest.TestCase):
         self.assertEqual(result["public_status"], "ended_2026")
         self.assertEqual(result["public_category"], "ended")
         self.assertEqual(result["public_status_label"], "開催終了")
+
+    def test_uses_supplied_today_and_keeps_multi_day_event_upcoming_through_end_date(self):
+        event = {
+            "name": "二日間盆踊り",
+            "venue": "中央公園",
+            "area": "中央区",
+            "date": "2026-07-20",
+            "date_end": "2026-07-21",
+            "status": "確認済み",
+        }
+
+        on_final_day = public_status_for_event(event, today=date(2026, 7, 21))
+        after_final_day = public_status_for_event(event, today=date(2026, 7, 22))
+
+        self.assertEqual(on_final_day["public_category"], "upcoming")
+        self.assertEqual(after_final_day["public_category"], "ended")
 
     def test_2025_recurring_event_gets_expected_label(self):
         event = {

@@ -1108,9 +1108,12 @@ def parse_iso_public_date(value):
         return None
 
 
-def apply_public_recurrence_metadata(events):
+def apply_public_recurrence_metadata(events, *, today=None):
     """Attach public category and recurrence fields to the production export."""
-    return enrich_public_events(events, build_rows(events))
+    return enrich_public_events(
+        events,
+        build_rows(events, today=public_export_today(today)),
+    )
 
 
 def apply_public_site_postprocessors(events, *, today=None, prefer_existing_axes=False):
@@ -1563,8 +1566,11 @@ def suppress_replaced_recurring_events(events):
 
 def project_public_events(events, *, db_path=MASTER_DB, today=None):
     """Run the production public-event projection without writing output files."""
+    projection_today = public_export_today(today)
     events = apply_public_event_overrides(sanitize_public_event_details(events))
-    events = suppress_replaced_recurring_events(apply_public_recurrence_metadata(events))
+    events = suppress_replaced_recurring_events(
+        apply_public_recurrence_metadata(events, today=projection_today)
+    )
     prediction_payload = load_public_date_predictions_for_export(
         target_year=2026,
         db_path=db_path,
@@ -1584,7 +1590,9 @@ def project_public_events(events, *, db_path=MASTER_DB, today=None):
         prediction_result["events"], prefer_existing_axes=prefer_existing_axes
     )
     events = apply_public_site_postprocessors(
-        events, today=today, prefer_existing_axes=prefer_existing_axes
+        events,
+        today=projection_today,
+        prefer_existing_axes=prefer_existing_axes,
     )
     return {
         "events": events,
