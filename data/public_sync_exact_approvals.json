@@ -1,0 +1,159 @@
+{
+  "schema": "public_sync_exact_approvals_v1",
+  "reviewed_at": "2026-07-21",
+  "reviewed_by": "内田さん",
+  "source": "docs/p0-review-20260721.md and explicit publish approval",
+  "site_base_commit": "7dd4ba7bb8654797b4b33204014db0aaf407fb90",
+  "collector_data_commit": "fbd4a04dfe9a549c261fd4956c35471f830b474c",
+  "approvals": [
+    {
+      "id": "reviewed-update-14f4341a66b1",
+      "kind": "same_key_update",
+      "event_key": "TOKYO盆ダンス×STEAM FESTIVAL2026||上野恩賜公園",
+      "site_sha256": "7cbc5ab604bcd486afa461dbaa2ff65e0ae47546c151c5c6fc4d60db4b4cc6bb",
+      "collector_sha256": "e1d42e05d8d866d42e1e8c7fef127aa3234951f67dd256c2f245c548ef5dde63"
+    },
+    {
+      "id": "reviewed-update-eb1141d16b17",
+      "kind": "same_key_update",
+      "event_key": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026||上野恩賜公園",
+      "site_sha256": "d1f63bf5ac5e7e0b045ed085003929e92d0e793aaf9d3925d9185effafd27259",
+      "collector_sha256": "e33e70d3fd99da219ba096ad2ccef592636ded6e22a60e8a72254d3435f81461"
+    },
+    {
+      "id": "reviewed-update-6e4fd4f9f30b",
+      "kind": "same_key_update",
+      "event_key": "みたままつり 納涼民踊のつどい||靖国神社",
+      "site_sha256": "34ed0f68cd84208e9e565bd8df6eb171bcd147a0f9c036120a9e86f4c540373e",
+      "collector_sha256": "83ed2d29d16b3c65ccd9cda3b1518649663645927fffae98bba064e96ea12abd"
+    },
+    {
+      "id": "reviewed-update-5c70a1e22d92",
+      "kind": "same_key_update",
+      "event_key": "三角広場まつり「居酒屋盆踊り」||新宿住友ビル三角広場",
+      "site_sha256": "3ddda8038d77d91936d22713c8a9b297e701a8cede7033edd5296a804a180884",
+      "collector_sha256": "916325eb5c31cea9753421484f46cd31d5c7bfe92962762b4bf2c43069951d90"
+    },
+    {
+      "id": "reviewed-update-4eb250b36de2",
+      "kind": "same_key_update",
+      "event_key": "佐竹ゲバゲバ盆踊り||佐竹商店街アーケード下",
+      "site_sha256": "7a70a5d15b63e4273430944cbaf2eb320c8dc691853b61c09631c39b0690e102",
+      "collector_sha256": "d4fd2fde738c530804387fd6e3981d80172655259c234b72206a67504f8dc10d"
+    },
+    {
+      "id": "reviewed-update-4849afe322db",
+      "kind": "same_key_update",
+      "event_key": "品川区民まつり 荏原第五地区||杜松ホーム",
+      "site_sha256": "3da90b860f4034aec7893df133f45eda323eac8955bd5303a3ce4f909c483eff",
+      "collector_sha256": "5f1f108016ae3a9b1ce0f4cf798f115558654b5ae03d59df796f4eddc7ed1fd3"
+    },
+    {
+      "id": "reviewed-update-4fd47f524562",
+      "kind": "same_key_update",
+      "event_key": "大和町八幡神社大盆踊り会||中野大和町八幡神社",
+      "site_sha256": "722b2a09bfda6d17bd5dcf51d6b9c9c1bcf97403ef30b05dc5a3a6cb6dd85cd9",
+      "collector_sha256": "b99a8a4c9ccd5659f4a01258db364b00ed1981b424f2f6e4acda2f5f9432ed0c"
+    },
+    {
+      "id": "reviewed-update-cf454e6e13d3",
+      "kind": "same_key_update",
+      "event_key": "奥浅草盆踊り||隅田公園",
+      "site_sha256": "683172fafbba2ebb5bf4bbbbeaa3203cb427230740f15389c16d27813e746008",
+      "collector_sha256": "c32d3cfb72408157679079c8447ff0bb8e84e63d27280666a838d558f00b7684"
+    },
+    {
+      "id": "reviewed-update-465013db6552",
+      "kind": "same_key_update",
+      "event_key": "新宿二丁目太宗寺盆踊り大会||太宗寺",
+      "site_sha256": "dbc814851ae67d9e163aab19afc8589d60395c0b53aae0df8e26277c3dd898e9",
+      "collector_sha256": "f444da2ff5ee4fe84dec3c8c8e042efb6868ca605d47aa0bf46ad3da7dc49c23"
+    },
+    {
+      "id": "reviewed-update-ad56e014fcd9",
+      "kind": "same_key_update",
+      "event_key": "木場一・六町会 盆踊り大会||深川ギャザリアセンタープラザ",
+      "site_sha256": "c012d4b4b9c01dee979e367a84a4b39ea1b3b51739a12827b95f655b6fc4231f",
+      "collector_sha256": "ddd983b0993c76a286aaac244b35eb5866336db9cfea148a979c3f21988d7fbc"
+    },
+    {
+      "id": "reviewed-update-c30598087340",
+      "kind": "same_key_update",
+      "event_key": "木場二丁目 盆踊り大会||木場二丁目公園",
+      "site_sha256": "ca27f44deffcab8a5e014584c2f9a284506c753baf97ed78eb25bfbf365f81ff",
+      "collector_sha256": "1ca8c0bb1a235ac7b757df92aabc91b226d7523ec763eaf1f3081490ab6719a3"
+    },
+    {
+      "id": "reviewed-update-515679e44cb3",
+      "kind": "same_key_update",
+      "event_key": "柳ばし納涼盆おどり||柳橋中央通り",
+      "site_sha256": "07378389c79c6a37e1f5d17b4a531ad07ccd8f41004924a65e767344741bbb4b",
+      "collector_sha256": "09709a54a0f8cf1657c2daafd034154a508e854651c6b5b4b2c97a6aae9ca41d"
+    },
+    {
+      "id": "reviewed-update-72801cbff56b",
+      "kind": "same_key_update",
+      "event_key": "神楽坂夏まつり 盆踊り in 神楽坂||りそな銀行神楽坂支店前",
+      "site_sha256": "43964f9510278f5eecd54e85e268e6826ff5c557310aee1b49c802b6bb31bf02",
+      "collector_sha256": "eb71997c5911d63018b1654ce26b0df44d5bf8b64a71de60f9c66b48b16c2954"
+    },
+    {
+      "id": "reviewed-update-3a49318b4a1c",
+      "kind": "same_key_update",
+      "event_key": "第26回 四谷納涼踊り大会||四谷ひろばグランド（旧四谷第四小）",
+      "site_sha256": "e63f57a1e553aa95691048eec1dddb4aa0fb84df1cd3b41660612167a56aa279",
+      "collector_sha256": "5408ae624efd8089641e7d12a42a8e7d42aa2dc0f96618a3c3359b8a8e92b33c"
+    },
+    {
+      "id": "reviewed-update-38266616512f",
+      "kind": "same_key_update",
+      "event_key": "第2回 晴海ふ頭公園盆踊り大会||晴海ふ頭公園",
+      "site_sha256": "36acb288a6d649ff9e1622fc30df623bfaf671e08e7761a54c556c5aedbf075c",
+      "collector_sha256": "165e2b04dd616f42aa4e9cd9bb896bf20a2d10a1284e9dd170d84822c620a298"
+    },
+    {
+      "id": "reviewed-update-6dac6b0b219d",
+      "kind": "same_key_update",
+      "event_key": "第46回 巣鴨盆踊り大会||巣鴨駅南口ロータリー",
+      "site_sha256": "2edad167412ad0f26cc192df5d20b2d8d13ccd472f2d8dd1d21b4b007b0595a2",
+      "collector_sha256": "1c54ebce95f562db01f4a255c8b279be830e0ef0583c04322fafc96fb644c4eb"
+    },
+    {
+      "id": "reviewed-update-f1504006a292",
+      "kind": "same_key_update",
+      "event_key": "自由が丘納涼盆踊り大会||自由が丘駅前ロータリー 特設会場",
+      "site_sha256": "397e04dcc23ac3a46a565ab9b9582309d8b4f1de193ec8390e4b9b2b50b90360",
+      "collector_sha256": "974780b1e3c34fefb6e009914f5ab56c80786180bd12a32a6c4f89392769a67f"
+    },
+    {
+      "id": "reviewed-update-ecf2e0771f2e",
+      "kind": "same_key_update",
+      "event_key": "郡上おどり in 青山||秩父宮ラグビー場駐車場",
+      "site_sha256": "cc263ef876bb13af14d9df5399f9ab4bd171fba02e155f12ae77c808d647c6ff",
+      "collector_sha256": "1faecd4cbda1565b7181c6ca3fe3efb794409ae34acd7b6dec74b7e4c09132f7"
+    },
+    {
+      "id": "reviewed-update-2e2ec5a1924a",
+      "kind": "same_key_update",
+      "event_key": "銀座一丁目東町会・新富町会 納涼盆踊り大会||京橋公園",
+      "site_sha256": "90d10bb6f4bec5b82242fe52f97234e1f25f65c76fb6dfafa8010eb409ad983a",
+      "collector_sha256": "3daa08ebe96304879ff0928d6294e3b456cfb3a18fcd35275c4b1c58c5e46b3d"
+    },
+    {
+      "id": "reviewed-replacement-63cd939a9b48",
+      "kind": "key_replacement",
+      "site_event_key": "第15回 鴨台盆踊り||大正大学",
+      "collector_event_key": "第16回 鴨台盆踊り||大正大学",
+      "site_sha256": "7870510db2dc3baca17a3ec4b20215000664f42f63463b4e793560e2127941ec",
+      "collector_sha256": "6e3474435cb15172aef26b2893c2d439176c6e16ce018e3acdcb95390b2fff04"
+    },
+    {
+      "id": "reviewed-replacement-509551ee0266",
+      "kind": "key_replacement",
+      "site_event_key": "新宿中央公園夏祭り 納涼盆踊り大会||新宿中央公園 ファンモアタイム広場",
+      "collector_event_key": "新宿中央公園夏祭り 納涼盆踊り大会||新宿中央公園 ファンモアタイムひろば",
+      "site_sha256": "4fa768b936a0dfef01e72516f9f783ab621f2b6de9eb84c1d82fa4ee6e8d0d42",
+      "collector_sha256": "39826b71f786708c3f8432f63597634ebfe49b7df0a3fb9187bf287896b9460c"
+    }
+  ]
+}

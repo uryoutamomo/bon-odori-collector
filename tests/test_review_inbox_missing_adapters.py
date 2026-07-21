@@ -54,13 +54,13 @@ class ReviewInboxMissingAdaptersTest(unittest.TestCase):
             self.assertFalse(LIFECYCLE_FIELDS.intersection(item))
             self.assertNotIn(item["recommended_action"], {"fill_source_url", "confirm_current_year_date"})
 
-    def test_real_venue_input_has_three_separate_future_research_items(self):
+    def test_real_venue_input_has_two_separate_future_research_items(self):
         snapshot = build_venue_snapshot(VENUE_INPUT)
 
         self.assertEqual(snapshot["source_id"], "missing_venue")
-        self.assertEqual(snapshot["item_count"], 3)
+        self.assertEqual(snapshot["item_count"], 2)
         self.assertEqual(snapshot["selection"]["mode"], "all")
-        self.assertEqual(len(set(snapshot["selection"]["source_keys"])), 3)
+        self.assertEqual(len(set(snapshot["selection"]["source_keys"])), 2)
         self.assertEqual({item["kind"] for item in snapshot["items"]}, {"venue_review"})
         self.assertEqual({item["time_scope"] for item in snapshot["items"]}, {"future"})
         self.assertEqual({item["event_year"] for item in snapshot["items"]}, {2026})
@@ -69,7 +69,6 @@ class ReviewInboxMissingAdaptersTest(unittest.TestCase):
             {
                 "research_event_name_and_venue": 1,
                 "research_missing_venue": 1,
-                "research_new_venue_source": 1,
             },
         )
         for item in snapshot["items"]:
