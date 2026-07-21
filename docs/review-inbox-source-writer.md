@@ -8,7 +8,7 @@
 
 ## 境界
 
-`review_inbox_source_writer.py` は、凍結済みadapter snapshotを一時Master RDBへ適用し、
+`review_inbox_adapters/source_writer.py` は、凍結済みadapter snapshotを一時Master RDBへ適用し、
 source単位のparity・stale・lifecycle・DB・公開不変を監査してから、注入されたartifact storeへ
 CAS publishするライブラリである。
 

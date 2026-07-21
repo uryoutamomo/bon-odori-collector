@@ -18,7 +18,7 @@ from export_public_events import (
     build_public_events_from_master,
     project_public_events,
 )
-from review_inbox_source_writer import ArtifactState, SourceWriterError
+from review_inbox_adapters.source_writer import ArtifactState, SourceWriterError
 
 
 class MasterDbS3ArtifactStore:

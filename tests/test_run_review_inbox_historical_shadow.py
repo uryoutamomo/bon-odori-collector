@@ -10,8 +10,8 @@ from zoneinfo import ZoneInfo
 
 from build_historical_reference_shadow_input import build_input
 from master_db import init_db
-from review_inbox_source_adapter import write_adapted_snapshot
-from review_inbox_source_writer import ArtifactState, CasConflictError, SourceWriterError
+from review_inbox_adapters.source_adapter import write_adapted_snapshot
+from review_inbox_adapters.source_writer import ArtifactState, CasConflictError, SourceWriterError
 from run_review_inbox_historical_shadow import CONFIRM, run_historical_shadow
 
 

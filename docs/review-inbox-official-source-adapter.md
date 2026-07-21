@@ -3,7 +3,7 @@
 作成日: 2026-07-17 JST
 署名: おと（Codex）
 
-`review_inbox_official_source_adapter.py` は、
+`review_inbox_adapters/official_source_adapter.py` は、
 `data/official_source_review_candidates.json` を統合受信箱のadapter snapshotへ変換する。
 
 - legacy rowの `id` をstable `source_key`に使う。
@@ -12,7 +12,7 @@
 - 元JSONの生bytes SHA-256とbyte数をsnapshotへ記録する。
 
 ```bash
-python3 review_inbox_official_source_adapter.py \
+python3 -m review_inbox_adapters.official_source_adapter \
   --output /tmp/official-source-adapted.json
 ```
 

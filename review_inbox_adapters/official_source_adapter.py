@@ -8,10 +8,10 @@ import re
 from pathlib import Path
 from typing import Any, Iterable, Mapping
 
-from review_inbox_source_adapter import load_adapted_source, write_adapted_snapshot
+from review_inbox_adapters.source_adapter import load_adapted_source, write_adapted_snapshot
 
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_INPUT = ROOT / "data" / "official_source_review_candidates.json"
 DEFAULT_OUTPUT = ROOT / "data" / "review_inbox_adapted" / "official_source.json"
 YEAR_RE = re.compile(r"(?<!\d)(20\d{2})(?!\d)")

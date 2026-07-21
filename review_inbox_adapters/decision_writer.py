@@ -23,7 +23,7 @@ from review_inbox import (
     inbox_schema_version,
     record_inbox_decision,
 )
-from review_inbox_source_writer import (
+from review_inbox_adapters.source_writer import (
     ArtifactStore,
     CasConflictError,
     SourceWriterError,

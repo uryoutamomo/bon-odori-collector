@@ -4,7 +4,7 @@ import unittest
 from pathlib import Path
 
 from review_inbox import payload_hash
-from review_inbox_parity import (
+from review_inbox_adapters.parity import (
     build_parity_report,
     load_adapted_snapshot,
     markdown_report,

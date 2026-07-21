@@ -3,7 +3,7 @@
 作成日: 2026-07-17 JST
 署名: おと（Codex）
 
-`review_inbox_source_adapter.py` は、既存のreview JSONを統合受信箱へ移す際の共通境界である。
+`review_inbox_adapters/source_adapter.py` は、既存のreview JSONを統合受信箱へ移す際の共通境界である。
 各adapterはdecoded JSONを受け取り、安定した `source_key` を持つpending itemを返す純粋変換として実装する。
 
 ## Adapterが行うこと

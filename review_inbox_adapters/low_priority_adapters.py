@@ -9,10 +9,10 @@ import unicodedata
 from pathlib import Path
 from typing import Any, Iterable, Mapping
 
-from review_inbox_source_adapter import load_adapted_source, write_adapted_snapshot
+from review_inbox_adapters.source_adapter import load_adapted_source, write_adapted_snapshot
 
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent
 SOURCE_CONFIG = {
     "daily_song_candidate": (ROOT / "data/weekly_song_candidates_review.json", "song"),
     "daily_term_candidate": (ROOT / "data/weekly_harvest_review_candidates.json", "term"),

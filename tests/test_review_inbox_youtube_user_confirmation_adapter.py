@@ -2,9 +2,9 @@ import copy
 import unittest
 from pathlib import Path
 
-from review_inbox_parity import build_parity_report, item_payload_hash
-from review_inbox_source_adapter import LIFECYCLE_FIELDS, adapt_source_payload, input_sha256
-from review_inbox_youtube_user_confirmation_adapter import YouTubeUserConfirmationAdapter, build_snapshot
+from review_inbox_adapters.parity import build_parity_report, item_payload_hash
+from review_inbox_adapters.source_adapter import LIFECYCLE_FIELDS, adapt_source_payload, input_sha256
+from review_inbox_adapters.youtube_user_confirmation_adapter import YouTubeUserConfirmationAdapter, build_snapshot
 
 
 FIXTURE = Path(__file__).parent / "fixtures" / "youtube_user_confirmation_examples.json"

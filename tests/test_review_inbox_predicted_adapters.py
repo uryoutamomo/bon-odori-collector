@@ -3,17 +3,17 @@ import unittest
 from collections import Counter
 from pathlib import Path
 
-from review_inbox_predicted_occurrence_date_review_adapter import (
+from review_inbox_adapters.predicted_occurrence_date_review_adapter import (
     DEFAULT_INPUT as DATE_REVIEW_INPUT,
     PredictedOccurrenceDateReviewAdapter,
     build_snapshot as build_date_review_snapshot,
 )
-from review_inbox_predicted_occurrence_research_adapter import (
+from review_inbox_adapters.predicted_occurrence_research_adapter import (
     DEFAULT_INPUT as RESEARCH_INPUT,
     PredictedOccurrenceResearchAdapter,
     build_snapshot as build_research_snapshot,
 )
-from review_inbox_source_adapter import adapt_source_payload
+from review_inbox_adapters.source_adapter import adapt_source_payload
 
 
 LIFECYCLE_FIELDS = {

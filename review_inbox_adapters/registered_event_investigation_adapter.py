@@ -12,10 +12,10 @@ import argparse
 from pathlib import Path
 from typing import Any, Iterable, Mapping
 
-from review_inbox_source_adapter import load_adapted_source, write_adapted_snapshot
+from review_inbox_adapters.source_adapter import load_adapted_source, write_adapted_snapshot
 
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_INPUT = ROOT / "data" / "registered_event_investigation_queue.json"
 DEFAULT_OUTPUT = ROOT / "data" / "review_inbox_adapted" / "registered_event_investigation.json"
 SHIROKANE_CANARY_SOURCE_KEY = "evtinv_d7b5f534c8b3ddd8"

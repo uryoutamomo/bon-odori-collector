@@ -12,7 +12,7 @@ from pathlib import Path
 from typing import Any, Mapping
 from zoneinfo import ZoneInfo
 
-from review_inbox_source_writer import SourceWriterError, SourceWriterFlags
+from review_inbox_adapters.source_writer import SourceWriterError, SourceWriterFlags
 
 
 CRON_WINDOW_START = time(17, 20)

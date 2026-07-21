@@ -2,13 +2,13 @@ import copy
 import unittest
 from pathlib import Path
 
-from review_inbox_parity import build_parity_report, item_payload_hash
-from review_inbox_rare_signal_adapter import (
+from review_inbox_adapters.parity import build_parity_report, item_payload_hash
+from review_inbox_adapters.rare_signal_adapter import (
     RareSignalAdapter,
     build_snapshot,
     immutable_source_reference,
 )
-from review_inbox_source_adapter import (
+from review_inbox_adapters.source_adapter import (
     LIFECYCLE_FIELDS,
     adapt_source_payload,
     input_sha256,

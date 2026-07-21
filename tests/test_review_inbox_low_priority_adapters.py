@@ -3,8 +3,8 @@ from pathlib import Path
 
 import pytest
 
-from review_inbox_source_adapter import adapt_source_payload
-from review_inbox_low_priority_adapters import (
+from review_inbox_adapters.source_adapter import adapt_source_payload
+from review_inbox_adapters.low_priority_adapters import (
     AcceptedVenueSongAdapter, DailySongAdapter, DailyTermAdapter,
     HistoricalQualityAdapter, PublicationGapAdapter, build_snapshot,
 )

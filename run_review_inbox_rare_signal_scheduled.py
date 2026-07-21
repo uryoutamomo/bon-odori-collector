@@ -14,21 +14,21 @@ from datetime import datetime
 from pathlib import Path
 from typing import Callable, Mapping
 
-from review_inbox_parity import load_adapted_snapshot
-from review_inbox_production_wiring import (
+from review_inbox_adapters.parity import load_adapted_snapshot
+from review_inbox_adapters.production_wiring import (
     MasterDbS3ArtifactStore,
     public_projection_digest,
 )
-from review_inbox_rare_signal_adapter import DEFAULT_INPUT, build_snapshot
-from review_inbox_shadow_execution_gate import (
+from review_inbox_adapters.rare_signal_adapter import DEFAULT_INPUT, build_snapshot
+from review_inbox_adapters.shadow_execution_gate import (
     prepare_evidence_paths,
     require_explicit_environment as require_shadow_environment,
     require_outside_cron_window,
     validate_public_today,
     write_report,
 )
-from review_inbox_source_adapter import write_adapted_snapshot
-from review_inbox_source_writer import (
+from review_inbox_adapters.source_adapter import write_adapted_snapshot
+from review_inbox_adapters.source_writer import (
     ArtifactStore,
     SourceWriterError,
     SourceWriterFlags,

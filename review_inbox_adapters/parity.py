@@ -10,10 +10,10 @@ from pathlib import Path
 from typing import Any
 
 from review_inbox import payload_hash
-from review_inbox_source_adapter import input_sha256
+from review_inbox_adapters.source_adapter import input_sha256
 
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 DEFAULT_INBOX = DATA / "review_inbox.json"
 DEFAULT_JSON = DATA / "review_inbox_parity.json"

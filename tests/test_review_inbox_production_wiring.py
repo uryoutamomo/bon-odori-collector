@@ -8,10 +8,10 @@ from io import BytesIO
 from pathlib import Path
 from unittest import mock
 
-import review_inbox_production_wiring as wiring
+from review_inbox_adapters import production_wiring as wiring
 from master_db import file_sha256, init_db
 from review_inbox import upsert_inbox_items
-from review_inbox_source_writer import ArtifactState, SourceWriterError
+from review_inbox_adapters.source_writer import ArtifactState, SourceWriterError
 
 
 class FakeClientError(Exception):

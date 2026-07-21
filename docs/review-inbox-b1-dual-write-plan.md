@@ -36,7 +36,7 @@ cutoverまではlegacy側が読み先・判断・applyの正規経路である�
 - inboxのacceptを「今年の開催確定」へ自動昇格しない。
 - inbox書き込みを理由に公開JSON、site、CloudFrontへ反映しない。
 
-inbox decisionは `review_inbox_decision_stage.py` のroute別packetまでとする。実反映は既存の
+inbox decisionは `review_inbox_adapters/decision_stage.py` のroute別packetまでとする。実反映は既存の
 change requestまたはdomain stagingのレビュー・GOを改めて通す。
 
 ## 3. 最初の標本: 白金deferred
@@ -109,7 +109,7 @@ canary snapshotはfull queue closureの証拠には数えない。snapshotには
 5. legacy writerはそのbytesを従来経路へ書く。
 6. adapterも**同じbytes**を読み、input SHA・byte数・adapter snapshot SHAを記録する。
 7. 一時DBの1 transaction内でsource itemをupsertする。domain tableには触れない。
-8. source観測集合をexportし、`review_inbox_parity.py --require-parity`を実行する。
+8. source観測集合をexportし、`review_inbox_adapters/parity.py --require-parity`を実行する。
 9. integrity、FK、table counts、decision保持、public export byte一致を監査する。
 10. publish直前にremote checksumがまだ `Rstart` であることを再確認する。
 11. 差分がinbox観測だけなら `publish --expect-remote-checksum Rstart` でCAS publishする。
@@ -131,7 +131,7 @@ current sourceから消えたitemを単なるparity `extra`にし続けないた
 - stale化と削除は同じ操作にしない。旧残高対応表が確定するまで行を物理削除しない。
 - parityの「actual current set」は今回の `seen` 集合とし、lifecycle履歴はcoverage reportで別に照合する。
 
-既存 `review_inbox_parity.py` はsource_id全行を比較するため、実装PRでは次のどちらかを明示実装する。
+既存 `review_inbox_adapters/parity.py` はsource_id全行を比較するため、実装PRでは次のどちらかを明示実装する。
 
 1. `last_seen_at` / run IDでcurrent observationを絞るsource-scoped projection、または
 2. current / decided / staleを分けたreconciliation snapshot。
@@ -147,7 +147,7 @@ lifecycle保持へ全件分類し、未分類があればfail closedとする。
 
 ## 7. Parityと入力hash系譜
 
-PR #42の `review_inbox_parity.py` と共通adapter契約をそのまま基礎にする。
+PR #42の `review_inbox_adapters/parity.py` と共通adapter契約をそのまま基礎にする。
 
 各reportは最低限次を持つ。
 

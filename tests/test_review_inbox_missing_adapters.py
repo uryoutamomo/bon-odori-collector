@@ -4,17 +4,17 @@ import unittest
 from collections import Counter
 from pathlib import Path
 
-from review_inbox_missing_source_url_adapter import (
+from review_inbox_adapters.missing_source_url_adapter import (
     DEFAULT_INPUT as SOURCE_URL_INPUT,
     MissingSourceUrlAdapter,
     build_snapshot as build_source_url_snapshot,
 )
-from review_inbox_missing_venue_adapter import (
+from review_inbox_adapters.missing_venue_adapter import (
     DEFAULT_INPUT as VENUE_INPUT,
     MissingVenueAdapter,
     build_snapshot as build_venue_snapshot,
 )
-from review_inbox_source_adapter import LIFECYCLE_FIELDS, adapt_source_payload
+from review_inbox_adapters.source_adapter import LIFECYCLE_FIELDS, adapt_source_payload
 
 
 class ReviewInboxMissingAdaptersTest(unittest.TestCase):

@@ -5,17 +5,17 @@ from pathlib import Path
 
 import pytest
 
-from review_inbox_source_adapter import adapt_source_payload
-from review_inbox_youtube_adapter import YouTubeActiveVideoAdapter
-from review_inbox_youtube_aggregate import (
+from review_inbox_adapters.source_adapter import adapt_source_payload
+from review_inbox_adapters.youtube_adapter import YouTubeActiveVideoAdapter
+from review_inbox_adapters.youtube_aggregate import (
     PRECEDENCE,
     QUEUE_ORDER,
     build_aggregate_snapshot,
     composite_sha256,
     require_complete_aggregate,
 )
-from review_inbox_youtube_user_confirmation_adapter import YouTubeUserConfirmationAdapter
-from review_inbox_youtube_year_backfill_adapter import YouTubeYearBackfillAdapter
+from review_inbox_adapters.youtube_user_confirmation_adapter import YouTubeUserConfirmationAdapter
+from review_inbox_adapters.youtube_year_backfill_adapter import YouTubeYearBackfillAdapter
 
 
 def snapshot(adapter, payload, path):

@@ -10,17 +10,17 @@ import string
 from pathlib import Path
 from typing import Any, Callable
 
-from review_inbox_parity import item_payload_hash
-from review_inbox_source_adapter import write_adapted_snapshot
-from review_inbox_youtube_adapter import DEFAULT_INPUT as ACTIVE_INPUT
-from review_inbox_youtube_adapter import build_snapshot as build_active_snapshot
-from review_inbox_youtube_user_confirmation_adapter import DEFAULT_INPUT as USER_INPUT
-from review_inbox_youtube_user_confirmation_adapter import build_snapshot as build_user_snapshot
-from review_inbox_youtube_year_backfill_adapter import DEFAULT_INPUT as YEAR_INPUT
-from review_inbox_youtube_year_backfill_adapter import build_snapshot as build_year_snapshot
+from review_inbox_adapters.parity import item_payload_hash
+from review_inbox_adapters.source_adapter import write_adapted_snapshot
+from review_inbox_adapters.youtube_adapter import DEFAULT_INPUT as ACTIVE_INPUT
+from review_inbox_adapters.youtube_adapter import build_snapshot as build_active_snapshot
+from review_inbox_adapters.youtube_user_confirmation_adapter import DEFAULT_INPUT as USER_INPUT
+from review_inbox_adapters.youtube_user_confirmation_adapter import build_snapshot as build_user_snapshot
+from review_inbox_adapters.youtube_year_backfill_adapter import DEFAULT_INPUT as YEAR_INPUT
+from review_inbox_adapters.youtube_year_backfill_adapter import build_snapshot as build_year_snapshot
 
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_OUTPUT = ROOT / "data" / "review_inbox_adapted" / "youtube_aggregate.json"
 QUEUE_ORDER = ("active_video", "year_backfill", "user_confirmation")
 PRECEDENCE = tuple(reversed(QUEUE_ORDER))

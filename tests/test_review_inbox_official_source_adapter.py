@@ -3,8 +3,8 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from review_inbox_official_source_adapter import OfficialSourceAdapter, row_event_year
-from review_inbox_source_adapter import load_adapted_source, write_adapted_snapshot
+from review_inbox_adapters.official_source_adapter import OfficialSourceAdapter, row_event_year
+from review_inbox_adapters.source_adapter import load_adapted_source, write_adapted_snapshot
 
 
 def row(**overrides):
