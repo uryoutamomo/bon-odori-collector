@@ -1,6 +1,6 @@
 {
   "generated_by": "review_missing_occurrence_venues.py",
-  "generated_at": "2026-06-30T14:45:55.297804+00:00",
+  "generated_at": "2026-07-21T05:20:39.148511+00:00",
   "scope": "read_only_missing_occurrence_venue_review",
   "sources": {
     "master_db": "data/bon_odori_master.sqlite",
@@ -8,14 +8,13 @@
     "decisions_json": "data/ph2_event_occurrence_review_decisions.json"
   },
   "summary": {
-    "missing_venue_occurrence_count": 3,
+    "missing_venue_occurrence_count": 2,
     "actions": {
       "manual_name_or_venue_research_required": 1,
-      "manual_venue_research_required": 1,
-      "new_venue_candidate_needs_source": 1
+      "manual_venue_research_required": 1
     },
     "candidate_existing_venue_count": 0,
-    "new_or_unregistered_venue_candidate_count": 1,
+    "new_or_unregistered_venue_candidate_count": 0,
     "auto_resolved_count": 0
   },
   "review": [
@@ -26,7 +25,7 @@
       "date_start": "",
       "date_end": "",
       "date_status": "unknown",
-      "lifecycle_status": "未確認",
+      "lifecycle_status": "merged",
       "source_url": "https://www.edogrand.tokyo/event/6924",
       "series_id": "ser_b3604da8bab18695",
       "series_usual_venue_id": "",
@@ -83,43 +82,6 @@
       "queue_reason_codes": [
         "status_unconfirmed",
         "missing_venue",
-        "has_source_url"
-      ],
-      "observed_candidate": {
-        "proposed_date_start": "",
-        "proposed_venue": "",
-        "promotion_confidence": "",
-        "evidence_url_count": 0
-      },
-      "prior_review_decision": null,
-      "existing_venue_name_matches": []
-    },
-    {
-      "occurrence_id": "occ_90f1aef84c0ad6f7",
-      "event_name": "雷門盆踊り（浅草）",
-      "event_year": 2026,
-      "date_start": "",
-      "date_end": "",
-      "date_status": "unknown",
-      "lifecycle_status": "未確認",
-      "source_url": "https://x.com/STBA_Bonodori/status/2059220925862883623",
-      "series_id": "ser_57b12dce4d688793",
-      "series_usual_venue_id": "",
-      "review_action": "new_venue_candidate_needs_source",
-      "candidate_action": "",
-      "current_decision": "",
-      "decided_by": "",
-      "candidate_venue_name": "雷門付近",
-      "candidate_venue_id": "",
-      "candidate_venue": null,
-      "candidate_venue_data": {},
-      "confidence": "low",
-      "reason": "name gives an area hint, not a precise venue; no source_url on the occurrence",
-      "next_step": "find official/current source before creating or linking a venue",
-      "queue_priority": "P1",
-      "queue_reason_codes": [
-        "status_unconfirmed",
-        "missing_date_and_venue",
         "has_source_url"
       ],
       "observed_candidate": {

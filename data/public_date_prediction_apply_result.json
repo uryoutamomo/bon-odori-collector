@@ -2,82 +2,10 @@
   "generated_by": "apply_public_date_predictions.py",
   "source": "data/event_date_predictions.json",
   "public_events": "data/public/events_public.json",
-  "applied_count": 8,
-  "skipped_count": 4,
-  "unmatched_count": 1,
+  "applied_count": 4,
+  "skipped_count": 7,
+  "unmatched_count": 2,
   "applied": [
-    {
-      "event_name": "丸の内de盆踊り",
-      "venue": "行幸通り",
-      "before": {
-        "date": "2025-07-25",
-        "date_end": "2025-07-26",
-        "display_tier": null,
-        "predicted_date": null,
-        "predicted_date_end": null
-      },
-      "after": {
-        "date": "2025-07-25",
-        "date_end": "2025-07-26",
-        "display_tier": "rule_predicted",
-        "predicted_date": "2026-07-31",
-        "predicted_date_end": "2026-07-31"
-      },
-      "date_prediction": {
-        "display_tier": "rule_predicted",
-        "target_year": 2026,
-        "date": "2026-07-31",
-        "date_end": "2026-07-31",
-        "weekday_start": "金",
-        "weekday_end": "金",
-        "confidence": "medium",
-        "score": 0.74,
-        "rule_type": "weekday_last",
-        "basis": "7月の最終金曜",
-        "evidence_years": [
-          2024,
-          2025
-        ],
-        "evidence_count": 2,
-        "has_actual_observation": false
-      }
-    },
-    {
-      "event_name": "謝恩納涼盆踊り大会（青山善光寺）",
-      "venue": "青山善光寺",
-      "before": {
-        "date": "2025-07-27",
-        "date_end": "2025-07-28",
-        "display_tier": null,
-        "predicted_date": null,
-        "predicted_date_end": null
-      },
-      "after": {
-        "date": "2025-07-27",
-        "date_end": "2025-07-28",
-        "display_tier": "rule_predicted",
-        "predicted_date": "2026-07-27",
-        "predicted_date_end": "2026-07-27"
-      },
-      "date_prediction": {
-        "display_tier": "rule_predicted",
-        "target_year": 2026,
-        "date": "2026-07-27",
-        "date_end": "2026-07-27",
-        "weekday_start": "月",
-        "weekday_end": "月",
-        "confidence": "medium",
-        "score": 0.74,
-        "rule_type": "weekday_last",
-        "basis": "7月の最終月曜",
-        "evidence_years": [
-          2023,
-          2025
-        ],
-        "evidence_count": 2,
-        "has_actual_observation": false
-      }
-    },
     {
       "event_name": "シタマチ.ふるさと盆踊り大会",
       "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
@@ -115,42 +43,6 @@
       }
     },
     {
-      "event_name": "東本願寺盆踊り",
-      "venue": "東本願寺（浅草）",
-      "before": {
-        "date": "2025-08-20",
-        "date_end": null,
-        "display_tier": null,
-        "predicted_date": null,
-        "predicted_date_end": null
-      },
-      "after": {
-        "date": "2025-08-20",
-        "date_end": null,
-        "display_tier": "rule_predicted",
-        "predicted_date": "2026-08-19",
-        "predicted_date_end": "2026-08-19"
-      },
-      "date_prediction": {
-        "display_tier": "rule_predicted",
-        "target_year": 2026,
-        "date": "2026-08-19",
-        "date_end": "2026-08-19",
-        "weekday_start": "水",
-        "weekday_end": "水",
-        "confidence": "medium",
-        "score": 0.7,
-        "rule_type": "weekday_nth",
-        "basis": "8月第3水曜",
-        "evidence_years": [
-          2024,
-          2025
-        ],
-        "evidence_count": 2,
-        "has_actual_observation": false
-      }
-    },
-    {
       "event_name": "歌舞伎町BON ODORI",
       "venue": "歌舞伎町シネシティ広場",
       "before": {
@@ -178,42 +70,6 @@
         "score": 0.7,
         "rule_type": "weekday_nth",
         "basis": "8月第3土曜",
-        "evidence_years": [
-          2024,
-          2025
-        ],
-        "evidence_count": 2,
-        "has_actual_observation": false
-      }
-    },
-    {
-      "event_name": "自由が丘納涼盆踊り大会",
-      "venue": "自由が丘駅前ロータリー 特設会場",
-      "before": {
-        "date": "2025-07-19",
-        "date_end": "2025-07-21",
-        "display_tier": null,
-        "predicted_date": null,
-        "predicted_date_end": null
-      },
-      "after": {
-        "date": "2025-07-19",
-        "date_end": "2025-07-21",
-        "display_tier": "rule_predicted",
-        "predicted_date": "2026-07-18",
-        "predicted_date_end": "2026-07-20"
-      },
-      "date_prediction": {
-        "display_tier": "rule_predicted",
-        "target_year": 2026,
-        "date": "2026-07-18",
-        "date_end": "2026-07-20",
-        "weekday_start": "土",
-        "weekday_end": "月",
-        "confidence": "medium",
-        "score": 0.68,
-        "rule_type": "weekday_near_day",
-        "basis": "7月16日前後の土曜",
         "evidence_years": [
           2024,
           2025
@@ -260,36 +116,36 @@
       }
     },
     {
-      "event_name": "第15回 鴨台盆踊り",
-      "venue": "大正大学",
+      "event_name": "謝恩納涼盆踊り大会（青山善光寺）",
+      "venue": "青山善光寺",
       "before": {
-        "date": "2025-07-04",
-        "date_end": "2025-07-05",
+        "date": "2025-07-27",
+        "date_end": "2025-07-28",
         "display_tier": null,
         "predicted_date": null,
         "predicted_date_end": null
       },
       "after": {
-        "date": "2025-07-04",
-        "date_end": "2025-07-05",
+        "date": "2025-07-27",
+        "date_end": "2025-07-28",
         "display_tier": "rule_predicted",
-        "predicted_date": "2026-07-04",
-        "predicted_date_end": "2026-07-05"
+        "predicted_date": "2026-07-27",
+        "predicted_date_end": "2026-07-27"
       },
       "date_prediction": {
         "display_tier": "rule_predicted",
         "target_year": 2026,
-        "date": "2026-07-04",
-        "date_end": "2026-07-05",
-        "weekday_start": "土",
-        "weekday_end": "日",
+        "date": "2026-07-27",
+        "date_end": "2026-07-27",
+        "weekday_start": "月",
+        "weekday_end": "月",
         "confidence": "medium",
-        "score": 0.6,
-        "rule_type": "weekend_near_day",
-        "basis": "7月6日前後の週末",
+        "score": 0.74,
+        "rule_type": "weekday_last",
+        "basis": "7月の最終月曜",
         "evidence_years": [
           2023,
-          2024
+          2025
         ],
         "evidence_count": 2,
         "has_actual_observation": false
@@ -297,6 +153,54 @@
     }
   ],
   "skipped": [
+    {
+      "event_name": "みたままつり 納涼民踊のつどい",
+      "venue": "靖国神社",
+      "reason": "target_year_date_already_present",
+      "date": "2026-07-13",
+      "date_prediction": {
+        "display_tier": "rule_predicted",
+        "target_year": 2026,
+        "date": "2026-07-14",
+        "date_end": "2026-07-16",
+        "weekday_start": "火",
+        "weekday_end": "木",
+        "confidence": "low",
+        "score": 0.58,
+        "rule_type": "date_near",
+        "basis": "7月14日前後",
+        "evidence_years": [
+          2023,
+          2024
+        ],
+        "evidence_count": 2,
+        "has_actual_observation": false
+      }
+    },
+    {
+      "event_name": "丸の内de盆踊り",
+      "venue": "行幸通り",
+      "reason": "target_year_date_already_present",
+      "date": "2026-07-24",
+      "date_prediction": {
+        "display_tier": "rule_predicted",
+        "target_year": 2026,
+        "date": "2026-07-31",
+        "date_end": "2026-07-31",
+        "weekday_start": "金",
+        "weekday_end": "金",
+        "confidence": "medium",
+        "score": 0.74,
+        "rule_type": "weekday_last",
+        "basis": "7月の最終金曜",
+        "evidence_years": [
+          2024,
+          2025
+        ],
+        "evidence_count": 2,
+        "has_actual_observation": false
+      }
+    },
     {
       "event_name": "山王音頭と民踊大会",
       "venue": "山王パークタワー公開空地",
@@ -318,52 +222,28 @@
           2024
         ],
         "evidence_count": 2,
-        "has_actual_observation": true
-      }
-    },
-    {
-      "event_name": "郡上おどり in 青山",
-      "venue": "秩父宮ラグビー場駐車場",
-      "reason": "target_year_date_already_present",
-      "date": "2026-06-26",
-      "date_prediction": {
-        "display_tier": "rule_predicted",
-        "target_year": 2026,
-        "date": "2026-06-19",
-        "date_end": "2026-06-19",
-        "weekday_start": "金",
-        "weekday_end": "金",
-        "confidence": "medium",
-        "score": 0.68,
-        "rule_type": "weekday_near_day",
-        "basis": "6月17日前後の金曜",
-        "evidence_years": [
-          2024,
-          2025
-        ],
-        "evidence_count": 2,
         "has_actual_observation": false
       }
     },
     {
-      "event_name": "みたままつり 納涼民踊のつどい",
-      "venue": "靖国神社",
+      "event_name": "東本願寺盆踊り",
+      "venue": "東本願寺（浅草）",
       "reason": "target_year_date_already_present",
-      "date": "2026-07-13",
+      "date": "2026-08-19",
       "date_prediction": {
         "display_tier": "rule_predicted",
         "target_year": 2026,
-        "date": "2026-07-14",
-        "date_end": "2026-07-16",
-        "weekday_start": "火",
-        "weekday_end": "木",
-        "confidence": "low",
-        "score": 0.58,
-        "rule_type": "date_near",
-        "basis": "7月14日前後",
+        "date": "2026-08-19",
+        "date_end": "2026-08-19",
+        "weekday_start": "水",
+        "weekday_end": "水",
+        "confidence": "medium",
+        "score": 0.7,
+        "rule_type": "weekday_nth",
+        "basis": "8月第3水曜",
         "evidence_years": [
-          2023,
-          2024
+          2024,
+          2025
         ],
         "evidence_count": 2,
         "has_actual_observation": false
@@ -392,9 +272,79 @@
         "evidence_count": 2,
         "has_actual_observation": false
       }
+    },
+    {
+      "event_name": "自由が丘納涼盆踊り大会",
+      "venue": "自由が丘駅前ロータリー 特設会場",
+      "reason": "target_year_date_already_present",
+      "date": "2026-07-18",
+      "date_prediction": {
+        "display_tier": "rule_predicted",
+        "target_year": 2026,
+        "date": "2026-07-18",
+        "date_end": "2026-07-20",
+        "weekday_start": "土",
+        "weekday_end": "月",
+        "confidence": "medium",
+        "score": 0.68,
+        "rule_type": "weekday_near_day",
+        "basis": "7月16日前後の土曜",
+        "evidence_years": [
+          2024,
+          2025
+        ],
+        "evidence_count": 2,
+        "has_actual_observation": false
+      }
+    },
+    {
+      "event_name": "郡上おどり in 青山",
+      "venue": "秩父宮ラグビー場駐車場",
+      "reason": "target_year_date_already_present",
+      "date": "2026-06-26",
+      "date_prediction": {
+        "display_tier": "rule_predicted",
+        "target_year": 2026,
+        "date": "2026-06-19",
+        "date_end": "2026-06-19",
+        "weekday_start": "金",
+        "weekday_end": "金",
+        "confidence": "medium",
+        "score": 0.68,
+        "rule_type": "weekday_near_day",
+        "basis": "6月17日前後の金曜",
+        "evidence_years": [
+          2024,
+          2025
+        ],
+        "evidence_count": 2,
+        "has_actual_observation": false
+      }
     }
   ],
   "unmatched": [
+    {
+      "event_name": "第15回 鴨台盆踊り",
+      "venue": "大正大学",
+      "date_prediction": {
+        "display_tier": "rule_predicted",
+        "target_year": 2026,
+        "date": "2026-07-04",
+        "date_end": "2026-07-05",
+        "weekday_start": "土",
+        "weekday_end": "日",
+        "confidence": "medium",
+        "score": 0.6,
+        "rule_type": "weekend_near_day",
+        "basis": "7月6日前後の週末",
+        "evidence_years": [
+          2023,
+          2024
+        ],
+        "evidence_count": 2,
+        "has_actual_observation": false
+      }
+    },
     {
       "event_name": "第28回新橋こいち祭 盆踊り",
       "venue": "桜田公園",
@@ -417,5 +367,16 @@
         "has_actual_observation": false
       }
     }
-  ]
+  ],
+  "prediction_input": {
+    "source": "master_rdb.predicted_occurrence_dates",
+    "summary": {
+      "prediction_count": 13,
+      "source_counts": {
+        "event_date_predictions": 13
+      },
+      "json_fallback_count": 0,
+      "json_fallback": []
+    }
+  }
 }

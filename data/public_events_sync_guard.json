@@ -1,53 +1,463 @@
 {
   "generated_by": "guard_public_events_sync.py",
-  "generated_at": "2026-07-12T02:42:48.650871+00:00",
+  "generated_at": "2026-07-21T05:26:09.863206+00:00",
   "scope": "read_only_public_sync_guard_no_writes",
   "sources": {
     "collector_events": "data/public/events_public.json",
-    "site_events": "/Users/ryotauchida/bon-odori-site/data/events_public.json",
+    "site_events": "/private/tmp/bon-odori-site-origin-main-reference-20260721/data/events_public.json",
     "fixed_date_rules": "data/public_fixed_date_rules.json",
     "master_db": "data/bon_odori_master.sqlite",
     "publication_gap_review": "data/publication_gap_review.json"
   },
   "parameters": {
     "target_year": 2026,
-    "today": "2026-06-20",
+    "today": "2026-07-21",
     "allow_individual_review": false
   },
   "decision": {
-    "status": "pass",
-    "failures": [],
-    "warnings": [
-      "missing_master_rdb"
+    "status": "block",
+    "failures": [
+      "event_key_mismatch",
+      "individual_review_diffs_remain"
     ],
-    "safe_to_wholesale_sync": true,
+    "warnings": [],
+    "safe_to_wholesale_sync": false,
     "public_deploy_requires_separate_approval": true,
     "deploy_approval_note": "Guard pass only means no blocking public sync diffs remain. Public deploy still requires separate operator approval."
   },
-  "procedure_warnings": [
-    "missing_master_rdb"
-  ],
+  "procedure_warnings": [],
   "raw_classification": {
-    "collector_event_count": 208,
-    "site_event_count": 208,
-    "collector_only_count": 0,
-    "site_only_count": 0,
-    "high_risk_diff_record_count": 0,
-    "high_risk_event_count": 0,
-    "records_by_family": {},
-    "records_by_action": {},
-    "events_by_action": {}
+    "collector_event_count": 209,
+    "site_event_count": 209,
+    "collector_only_count": 2,
+    "site_only_count": 2,
+    "high_risk_diff_record_count": 81,
+    "high_risk_event_count": 21,
+    "records_by_family": {
+      "historical_slide": 37,
+      "date_prediction": 38,
+      "historical_reference": 4,
+      "detail": 1,
+      "source": 1
+    },
+    "records_by_action": {
+      "individual_review": 27,
+      "low_priority_or_unclassified": 38,
+      "restore_collector_from_site_or_reenable_export_postprocess": 16
+    },
+    "events_by_action": {
+      "individual_review": 19,
+      "expired_historical_slide_downgrade": 2
+    }
   },
   "postprocessed_classification": {
-    "collector_event_count": 208,
-    "site_event_count": 208,
-    "collector_only_count": 0,
-    "site_only_count": 0,
-    "high_risk_diff_record_count": 0,
-    "high_risk_event_count": 0,
-    "records_by_family": {},
-    "records_by_action": {},
-    "events_by_action": {}
+    "collector_event_count": 209,
+    "site_event_count": 209,
+    "collector_only_count": 2,
+    "site_only_count": 2,
+    "high_risk_diff_record_count": 81,
+    "high_risk_event_count": 21,
+    "records_by_family": {
+      "historical_slide": 37,
+      "date_prediction": 38,
+      "historical_reference": 4,
+      "detail": 1,
+      "source": 1
+    },
+    "records_by_action": {
+      "individual_review": 27,
+      "low_priority_or_unclassified": 38,
+      "restore_collector_from_site_or_reenable_export_postprocess": 16
+    },
+    "events_by_action": {
+      "individual_review": 19,
+      "expired_historical_slide_downgrade": 2
+    }
   },
-  "blocking_examples": []
+  "blocking_examples": [
+    {
+      "event_key": "TOKYO盆ダンス×STEAM FESTIVAL2026||上野恩賜公園",
+      "event_name": "TOKYO盆ダンス×STEAM FESTIVAL2026",
+      "venue": "上野恩賜公園",
+      "recommended_action": "individual_review",
+      "families": [
+        "date_prediction",
+        "historical_slide"
+      ],
+      "field_count": 3,
+      "fields": [
+        "display_tier",
+        "recurrence_reasons",
+        "recurrence_score"
+      ],
+      "actions": {
+        "individual_review": 1,
+        "low_priority_or_unclassified": 2
+      }
+    },
+    {
+      "event_key": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026||上野恩賜公園",
+      "event_name": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026",
+      "venue": "上野恩賜公園",
+      "recommended_action": "individual_review",
+      "families": [
+        "date_prediction",
+        "historical_slide"
+      ],
+      "field_count": 3,
+      "fields": [
+        "display_tier",
+        "recurrence_reasons",
+        "recurrence_score"
+      ],
+      "actions": {
+        "individual_review": 1,
+        "low_priority_or_unclassified": 2
+      }
+    },
+    {
+      "event_key": "みたままつり 納涼民踊のつどい||靖国神社",
+      "event_name": "みたままつり 納涼民踊のつどい",
+      "venue": "靖国神社",
+      "recommended_action": "individual_review",
+      "families": [
+        "date_prediction",
+        "historical_slide"
+      ],
+      "field_count": 3,
+      "fields": [
+        "display_tier",
+        "recurrence_reasons",
+        "recurrence_score"
+      ],
+      "actions": {
+        "individual_review": 1,
+        "low_priority_or_unclassified": 2
+      }
+    },
+    {
+      "event_key": "三角広場まつり「居酒屋盆踊り」||新宿住友ビル三角広場",
+      "event_name": "三角広場まつり「居酒屋盆踊り」",
+      "venue": "新宿住友ビル三角広場",
+      "recommended_action": "individual_review",
+      "families": [
+        "date_prediction",
+        "historical_slide"
+      ],
+      "field_count": 3,
+      "fields": [
+        "display_tier",
+        "recurrence_reasons",
+        "recurrence_score"
+      ],
+      "actions": {
+        "individual_review": 1,
+        "low_priority_or_unclassified": 2
+      }
+    },
+    {
+      "event_key": "佐竹ゲバゲバ盆踊り||佐竹商店街アーケード下",
+      "event_name": "佐竹ゲバゲバ盆踊り",
+      "venue": "佐竹商店街アーケード下",
+      "recommended_action": "individual_review",
+      "families": [
+        "date_prediction",
+        "historical_slide"
+      ],
+      "field_count": 3,
+      "fields": [
+        "display_tier",
+        "recurrence_reasons",
+        "recurrence_score"
+      ],
+      "actions": {
+        "individual_review": 1,
+        "low_priority_or_unclassified": 2
+      }
+    },
+    {
+      "event_key": "品川区民まつり 荏原第五地区||杜松ホーム",
+      "event_name": "品川区民まつり 荏原第五地区",
+      "venue": "杜松ホーム",
+      "recommended_action": "individual_review",
+      "families": [
+        "date_prediction",
+        "historical_slide"
+      ],
+      "field_count": 3,
+      "fields": [
+        "display_tier",
+        "recurrence_reasons",
+        "recurrence_score"
+      ],
+      "actions": {
+        "individual_review": 1,
+        "low_priority_or_unclassified": 2
+      }
+    },
+    {
+      "event_key": "大和町八幡神社大盆踊り会||中野大和町八幡神社",
+      "event_name": "大和町八幡神社大盆踊り会",
+      "venue": "中野大和町八幡神社",
+      "recommended_action": "individual_review",
+      "families": [
+        "date_prediction",
+        "historical_slide"
+      ],
+      "field_count": 3,
+      "fields": [
+        "display_tier",
+        "recurrence_reasons",
+        "recurrence_score"
+      ],
+      "actions": {
+        "individual_review": 1,
+        "low_priority_or_unclassified": 2
+      }
+    },
+    {
+      "event_key": "奥浅草盆踊り||隅田公園",
+      "event_name": "奥浅草盆踊り",
+      "venue": "隅田公園",
+      "recommended_action": "individual_review",
+      "families": [
+        "date_prediction",
+        "historical_slide"
+      ],
+      "field_count": 3,
+      "fields": [
+        "display_tier",
+        "recurrence_reasons",
+        "recurrence_score"
+      ],
+      "actions": {
+        "individual_review": 1,
+        "low_priority_or_unclassified": 2
+      }
+    },
+    {
+      "event_key": "新宿二丁目太宗寺盆踊り大会||太宗寺",
+      "event_name": "新宿二丁目太宗寺盆踊り大会",
+      "venue": "太宗寺",
+      "recommended_action": "individual_review",
+      "families": [
+        "date_prediction",
+        "historical_slide"
+      ],
+      "field_count": 3,
+      "fields": [
+        "display_tier",
+        "recurrence_reasons",
+        "recurrence_score"
+      ],
+      "actions": {
+        "individual_review": 1,
+        "low_priority_or_unclassified": 2
+      }
+    },
+    {
+      "event_key": "木場一・六町会 盆踊り大会||深川ギャザリアセンタープラザ",
+      "event_name": "木場一・六町会 盆踊り大会",
+      "venue": "深川ギャザリアセンタープラザ",
+      "recommended_action": "individual_review",
+      "families": [
+        "date_prediction",
+        "historical_slide"
+      ],
+      "field_count": 3,
+      "fields": [
+        "display_tier",
+        "recurrence_reasons",
+        "recurrence_score"
+      ],
+      "actions": {
+        "individual_review": 1,
+        "low_priority_or_unclassified": 2
+      }
+    },
+    {
+      "event_key": "木場二丁目 盆踊り大会||木場二丁目公園",
+      "event_name": "木場二丁目 盆踊り大会",
+      "venue": "木場二丁目公園",
+      "recommended_action": "individual_review",
+      "families": [
+        "date_prediction",
+        "historical_slide"
+      ],
+      "field_count": 3,
+      "fields": [
+        "display_tier",
+        "recurrence_reasons",
+        "recurrence_score"
+      ],
+      "actions": {
+        "individual_review": 1,
+        "low_priority_or_unclassified": 2
+      }
+    },
+    {
+      "event_key": "柳ばし納涼盆おどり||柳橋中央通り",
+      "event_name": "柳ばし納涼盆おどり",
+      "venue": "柳橋中央通り",
+      "recommended_action": "individual_review",
+      "families": [
+        "date_prediction",
+        "historical_slide"
+      ],
+      "field_count": 3,
+      "fields": [
+        "display_tier",
+        "recurrence_reasons",
+        "recurrence_score"
+      ],
+      "actions": {
+        "individual_review": 1,
+        "low_priority_or_unclassified": 2
+      }
+    },
+    {
+      "event_key": "神楽坂夏まつり 盆踊り in 神楽坂||りそな銀行神楽坂支店前",
+      "event_name": "神楽坂夏まつり 盆踊り in 神楽坂",
+      "venue": "りそな銀行神楽坂支店前",
+      "recommended_action": "individual_review",
+      "families": [
+        "date_prediction",
+        "historical_slide"
+      ],
+      "field_count": 3,
+      "fields": [
+        "display_tier",
+        "recurrence_reasons",
+        "recurrence_score"
+      ],
+      "actions": {
+        "individual_review": 1,
+        "low_priority_or_unclassified": 2
+      }
+    },
+    {
+      "event_key": "第26回 四谷納涼踊り大会||四谷ひろばグランド（旧四谷第四小）",
+      "event_name": "第26回 四谷納涼踊り大会",
+      "venue": "四谷ひろばグランド（旧四谷第四小）",
+      "recommended_action": "individual_review",
+      "families": [
+        "date_prediction",
+        "historical_slide"
+      ],
+      "field_count": 3,
+      "fields": [
+        "display_tier",
+        "recurrence_reasons",
+        "recurrence_score"
+      ],
+      "actions": {
+        "individual_review": 1,
+        "low_priority_or_unclassified": 2
+      }
+    },
+    {
+      "event_key": "第2回 晴海ふ頭公園盆踊り大会||晴海ふ頭公園",
+      "event_name": "第2回 晴海ふ頭公園盆踊り大会",
+      "venue": "晴海ふ頭公園",
+      "recommended_action": "individual_review",
+      "families": [
+        "date_prediction",
+        "historical_slide"
+      ],
+      "field_count": 3,
+      "fields": [
+        "display_tier",
+        "recurrence_reasons",
+        "recurrence_score"
+      ],
+      "actions": {
+        "individual_review": 1,
+        "low_priority_or_unclassified": 2
+      }
+    },
+    {
+      "event_key": "第46回 巣鴨盆踊り大会||巣鴨駅南口ロータリー",
+      "event_name": "第46回 巣鴨盆踊り大会",
+      "venue": "巣鴨駅南口ロータリー",
+      "recommended_action": "individual_review",
+      "families": [
+        "date_prediction",
+        "historical_slide"
+      ],
+      "field_count": 3,
+      "fields": [
+        "display_tier",
+        "recurrence_reasons",
+        "recurrence_score"
+      ],
+      "actions": {
+        "individual_review": 1,
+        "low_priority_or_unclassified": 2
+      }
+    },
+    {
+      "event_key": "自由が丘納涼盆踊り大会||自由が丘駅前ロータリー 特設会場",
+      "event_name": "自由が丘納涼盆踊り大会",
+      "venue": "自由が丘駅前ロータリー 特設会場",
+      "recommended_action": "individual_review",
+      "families": [
+        "date_prediction",
+        "detail",
+        "historical_slide",
+        "source"
+      ],
+      "field_count": 5,
+      "fields": [
+        "detail",
+        "display_tier",
+        "recurrence_reasons",
+        "recurrence_score",
+        "source_urls"
+      ],
+      "actions": {
+        "individual_review": 3,
+        "low_priority_or_unclassified": 2
+      }
+    },
+    {
+      "event_key": "郡上おどり in 青山||秩父宮ラグビー場駐車場",
+      "event_name": "郡上おどり in 青山",
+      "venue": "秩父宮ラグビー場駐車場",
+      "recommended_action": "individual_review",
+      "families": [
+        "date_prediction",
+        "historical_slide"
+      ],
+      "field_count": 3,
+      "fields": [
+        "display_tier",
+        "recurrence_reasons",
+        "recurrence_score"
+      ],
+      "actions": {
+        "individual_review": 1,
+        "low_priority_or_unclassified": 2
+      }
+    },
+    {
+      "event_key": "銀座一丁目東町会・新富町会 納涼盆踊り大会||京橋公園",
+      "event_name": "銀座一丁目東町会・新富町会 納涼盆踊り大会",
+      "venue": "京橋公園",
+      "recommended_action": "individual_review",
+      "families": [
+        "date_prediction",
+        "historical_slide"
+      ],
+      "field_count": 3,
+      "fields": [
+        "display_tier",
+        "recurrence_reasons",
+        "recurrence_score"
+      ],
+      "actions": {
+        "individual_review": 1,
+        "low_priority_or_unclassified": 2
+      }
+    }
+  ]
 }
