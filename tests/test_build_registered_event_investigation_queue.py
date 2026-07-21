@@ -4,9 +4,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-import build_registered_event_investigation_queue as queue_builder
-
-
+from promotion_candidates import build_registered_event_investigation_queue as queue_builder
 class BuildRegisteredEventInvestigationQueueTest(unittest.TestCase):
     def make_notion_db(self, path):
         conn = sqlite3.connect(path)

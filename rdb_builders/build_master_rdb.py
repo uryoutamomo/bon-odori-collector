@@ -734,9 +734,9 @@ def build(args):
             "historical_promotion_candidates": str(HISTORICAL_PROMOTION_CANDIDATES),
         },
         "post_build_steps": [
-            "build_observed_promotion_candidates.py",
-            "build_registered_event_investigation_queue.py",
-            "build_historical_promotion_candidates.py",
+            "promotion_candidates/build_observed_promotion_candidates.py",
+            "promotion_candidates/build_registered_event_investigation_queue.py",
+            "promotion_candidates/build_historical_promotion_candidates.py",
         ],
     }
     write_json(args.manifest, manifest)
