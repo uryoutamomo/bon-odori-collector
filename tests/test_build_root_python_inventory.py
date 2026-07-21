@@ -20,20 +20,13 @@ class BuildRootPythonInventoryTest(unittest.TestCase):
             self.by_path["apply_retrospective_ready_venue_events.py"]["classification"],
         )
 
-    def test_review_candidates_have_no_safety_reference(self):
+    def test_all_root_files_have_a_safety_classification(self):
         candidates = [
             item
             for item in self.inventory["items"]
             if item["classification"] == "review_candidate"
         ]
-        self.assertTrue(candidates)
-        for item in candidates:
-            with self.subTest(path=item["path"]):
-                refs = item["references"]
-                self.assertFalse(refs["workflow"])
-                self.assertFalse(refs["source"])
-                self.assertFalse(refs["test"])
-                self.assertFalse(refs["docs"])
+        self.assertEqual([], candidates)
 
 
 if __name__ == "__main__":

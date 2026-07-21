@@ -2,12 +2,11 @@
   "schema_version": 1,
   "as_of": "2026-07-21",
   "summary": {
-    "root_python_count": 231,
-    "legacy_python_count": 147,
+    "root_python_count": 211,
+    "legacy_python_count": 153,
     "classification_counts": {
       "documented_manual": 10,
       "retained_legacy_dependency": 6,
-      "review_candidate": 20,
       "source_dependency": 87,
       "test_supported_manual": 66,
       "workflow_entrypoint": 42
@@ -40,18 +39,6 @@
         "data": [
           "data/notion_current_work_first_look_link.json"
         ],
-        "legacy": []
-      }
-    },
-    {
-      "path": "advance_event_evidence_window.py",
-      "classification": "review_candidate",
-      "references": {
-        "workflow": [],
-        "source": [],
-        "test": [],
-        "docs": [],
-        "data": [],
         "legacy": []
       }
     },
@@ -800,20 +787,6 @@
       }
     },
     {
-      "path": "audit_hidden_historical_public_candidates.py",
-      "classification": "review_candidate",
-      "references": {
-        "workflow": [],
-        "source": [],
-        "test": [],
-        "docs": [],
-        "data": [
-          "data/hidden_historical_public_candidates.json"
-        ],
-        "legacy": []
-      }
-    },
-    {
       "path": "audit_master_rdb.py",
       "classification": "workflow_entrypoint",
       "references": {
@@ -887,18 +860,6 @@
           "data/oto_task_roundup_status_2026-06-19.md",
           "data/unified_model_v2_audit.json"
         ],
-        "legacy": []
-      }
-    },
-    {
-      "path": "audit_youtube_song_clip_fragments.py",
-      "classification": "review_candidate",
-      "references": {
-        "workflow": [],
-        "source": [],
-        "test": [],
-        "docs": [],
-        "data": [],
         "legacy": []
       }
     },
@@ -2057,10 +2018,10 @@
           "collect_venue_sites.py",
           "export_public_venues.py",
           "extract_venues.py",
-          "rank_x_bonodori_accounts.py",
           "refresh_youtube_voices.py",
           "review_x_candidate_posts.py",
           "scripts/compare_x_whitelist_voices.py",
+          "scripts/manual/rank_x_bonodori_accounts.py",
           "sync_venue_master.py",
           "sync_x_account_scores.py",
           "sync_x_promoted_members.py"
@@ -2409,7 +2370,6 @@
         "workflow": [],
         "source": [
           "apply_youtube_year_backfill_review_decisions.py",
-          "audit_hidden_historical_public_candidates.py",
           "build_event_occurrence_observations.py",
           "build_master_rdb.py",
           "build_youtube_year_backfill_queue.py",
@@ -2417,6 +2377,7 @@
           "compare_public_projection_sources.py",
           "export_public_events.py",
           "harvest_youtube_year_backfill.py",
+          "scripts/manual/audit_hidden_historical_public_candidates.py",
           "song_occurrences.py"
         ],
         "test": [],
@@ -2508,11 +2469,11 @@
           "apply_public_historical_references.py",
           "apply_public_official_source_urls.py",
           "apply_public_season_hints.py",
-          "audit_hidden_historical_public_candidates.py",
           "review_inbox_production_wiring.py",
           "run_daily_youtube_backfill.py",
           "run_event_state_axes_migration.py",
           "scripts/compare_public_export_postprocessors.py",
+          "scripts/manual/audit_hidden_historical_public_candidates.py",
           "scripts/publish_public_data_flow.py",
           "scripts/run_public_projection_readiness.py"
         ],
@@ -2582,7 +2543,7 @@
         "workflow": [],
         "source": [
           "export_public_events.py",
-          "geocode_venues.py"
+          "scripts/manual/geocode_venues.py"
         ],
         "test": [],
         "docs": [
@@ -2721,18 +2682,6 @@
       }
     },
     {
-      "path": "extract_blog_venue_rows.py",
-      "classification": "review_candidate",
-      "references": {
-        "workflow": [],
-        "source": [],
-        "test": [],
-        "docs": [],
-        "data": [],
-        "legacy": []
-      }
-    },
-    {
       "path": "extract_venues.py",
       "classification": "source_dependency",
       "references": {
@@ -2740,18 +2689,6 @@
         "source": [
           "export_public_venues.py"
         ],
-        "test": [],
-        "docs": [],
-        "data": [],
-        "legacy": []
-      }
-    },
-    {
-      "path": "extract_venues_blog.py",
-      "classification": "review_candidate",
-      "references": {
-        "workflow": [],
-        "source": [],
         "test": [],
         "docs": [],
         "data": [],
@@ -2803,30 +2740,6 @@
       }
     },
     {
-      "path": "fill_glossary_readings.py",
-      "classification": "review_candidate",
-      "references": {
-        "workflow": [],
-        "source": [],
-        "test": [],
-        "docs": [],
-        "data": [],
-        "legacy": []
-      }
-    },
-    {
-      "path": "find_notion_pages.py",
-      "classification": "review_candidate",
-      "references": {
-        "workflow": [],
-        "source": [],
-        "test": [],
-        "docs": [],
-        "data": [],
-        "legacy": []
-      }
-    },
-    {
       "path": "firsthand_report_helpers.py",
       "classification": "source_dependency",
       "references": {
@@ -2844,18 +2757,6 @@
         "legacy": [
           "legacy/apply/apply_kyobashi5_nouryou_map_2026.py"
         ]
-      }
-    },
-    {
-      "path": "geocode_venues.py",
-      "classification": "review_candidate",
-      "references": {
-        "workflow": [],
-        "source": [],
-        "test": [],
-        "docs": [],
-        "data": [],
-        "legacy": []
       }
     },
     {
@@ -2977,18 +2878,6 @@
       }
     },
     {
-      "path": "inspect_notion_page.py",
-      "classification": "review_candidate",
-      "references": {
-        "workflow": [],
-        "source": [],
-        "test": [],
-        "docs": [],
-        "data": [],
-        "legacy": []
-      }
-    },
-    {
       "path": "manual_apply_guards.py",
       "classification": "source_dependency",
       "references": {
@@ -3072,18 +2961,6 @@
       }
     },
     {
-      "path": "map_blog_source_urls.py",
-      "classification": "review_candidate",
-      "references": {
-        "workflow": [],
-        "source": [],
-        "test": [],
-        "docs": [],
-        "data": [],
-        "legacy": []
-      }
-    },
-    {
       "path": "master_db.py",
       "classification": "source_dependency",
       "references": {
@@ -3104,7 +2981,6 @@
           "apply_reviewed_shinagawa_date_fills.py",
           "apply_reviewed_venue_field_fixes.py",
           "apply_series_source_url_inheritance.py",
-          "audit_hidden_historical_public_candidates.py",
           "audit_master_rdb.py",
           "build_historical_promotion_candidates.py",
           "build_historical_reference_shadow_input.py",
@@ -3131,9 +3007,10 @@
           "review_missing_occurrence_venues.py",
           "review_missing_source_urls.py",
           "review_predicted_occurrence_dates.py",
-          "review_public_event_override_absorption.py",
           "run_event_state_axes_migration.py",
-          "run_review_console_cutover.py"
+          "run_review_console_cutover.py",
+          "scripts/manual/audit_hidden_historical_public_candidates.py",
+          "scripts/manual/review_public_event_override_absorption.py"
         ],
         "test": [
           "tests/test_apply_change_requests.py",
@@ -3306,9 +3183,8 @@
           "dry_run_youtube_active_existing_event_updates.py",
           "dry_run_youtube_existing_event_updates.py",
           "event_audit.py",
-          "inspect_notion_page.py",
-          "sync_gcal.py",
-          "venue_research_batch.py"
+          "scripts/manual/inspect_notion_page.py",
+          "sync_gcal.py"
         ],
         "test": [
           "tests/test_notion_api.py"
@@ -3339,7 +3215,8 @@
           "legacy/notion_writes/register_blog_venue_candidates.py",
           "legacy/notion_writes/register_fallback_event_candidates.py",
           "legacy/notion_writes/sync_fixed_date_rules_to_notion.py",
-          "legacy/notion_writes/sync_master_to_notion.py"
+          "legacy/notion_writes/sync_master_to_notion.py",
+          "legacy/venue_research/venue_research_batch.py"
         ]
       }
     },
@@ -3365,20 +3242,19 @@
           "export_public_events.py",
           "export_public_glossary.py",
           "export_public_venues.py",
-          "fill_glossary_readings.py",
-          "find_notion_pages.py",
           "inspect_notion_blocks.py",
-          "inspect_notion_page.py",
           "notion_api.py",
           "register_song_master_initial.py",
           "rename_current_work_first_look_link_notion.py",
+          "scripts/manual/fill_glossary_readings.py",
+          "scripts/manual/find_notion_pages.py",
+          "scripts/manual/inspect_notion_page.py",
           "sync_gcal.py",
           "sync_venue_master.py",
           "sync_weekly_costs.py",
           "triage_weekly_song_candidates.py",
           "update_youtube_followup_progress.py",
-          "update_youtube_notion_progress.py",
-          "venue_research_batch.py"
+          "update_youtube_notion_progress.py"
         ],
         "test": [
           "tests/test_sync_gcal.py"
@@ -3472,7 +3348,8 @@
           "legacy/notion_writes/update_current_work_page_latest.py",
           "legacy/notion_writes/update_glossary_v2_schema.py",
           "legacy/notion_writes/update_rdb_roadmap_status.py",
-          "legacy/notion_writes/update_youtube_2025_task_status.py"
+          "legacy/notion_writes/update_youtube_2025_task_status.py",
+          "legacy/venue_research/venue_research_batch.py"
         ]
       }
     },
@@ -3629,18 +3506,6 @@
       }
     },
     {
-      "path": "rank_x_bonodori_accounts.py",
-      "classification": "review_candidate",
-      "references": {
-        "workflow": [],
-        "source": [],
-        "test": [],
-        "docs": [],
-        "data": [],
-        "legacy": []
-      }
-    },
-    {
       "path": "rdb_apply_support.py",
       "classification": "source_dependency",
       "references": {
@@ -3726,42 +3591,6 @@
         "docs": [
           "docs/notion-worklog-maintenance-operations.md"
         ],
-        "data": [],
-        "legacy": []
-      }
-    },
-    {
-      "path": "render_song_calibration_report.py",
-      "classification": "review_candidate",
-      "references": {
-        "workflow": [],
-        "source": [],
-        "test": [],
-        "docs": [],
-        "data": [],
-        "legacy": []
-      }
-    },
-    {
-      "path": "render_youtube_candidate_report.py",
-      "classification": "review_candidate",
-      "references": {
-        "workflow": [],
-        "source": [],
-        "test": [],
-        "docs": [],
-        "data": [],
-        "legacy": []
-      }
-    },
-    {
-      "path": "review_current_date_batch.py",
-      "classification": "review_candidate",
-      "references": {
-        "workflow": [],
-        "source": [],
-        "test": [],
-        "docs": [],
         "data": [],
         "legacy": []
       }
@@ -4421,54 +4250,6 @@
       }
     },
     {
-      "path": "review_public_event_override_absorption.py",
-      "classification": "review_candidate",
-      "references": {
-        "workflow": [],
-        "source": [],
-        "test": [],
-        "docs": [],
-        "data": [
-          "data/ph2_cutover_readiness_post_gujo_merge.json",
-          "data/ph2_cutover_readiness_post_historical_refs.json",
-          "data/ph2_cutover_readiness_post_missing_venue.json",
-          "data/ph2_cutover_readiness_post_p0_historical_refs.json",
-          "data/ph2_cutover_readiness_post_rdb_state_queue.json",
-          "data/ph2_cutover_readiness_post_review.json",
-          "data/ph2_cutover_readiness_post_shinagawa_date_fills.json",
-          "data/ph2_cutover_readiness_post_shinagawa_date_fills_queue.json",
-          "data/ph2_cutover_readiness_post_source_urls.json",
-          "data/ph2_cutover_readiness_post_venue_fixes.json",
-          "data/public_event_override_absorption_review.json"
-        ],
-        "legacy": []
-      }
-    },
-    {
-      "path": "review_source_url_batch.py",
-      "classification": "review_candidate",
-      "references": {
-        "workflow": [],
-        "source": [],
-        "test": [],
-        "docs": [],
-        "data": [],
-        "legacy": []
-      }
-    },
-    {
-      "path": "review_venue_batch.py",
-      "classification": "review_candidate",
-      "references": {
-        "workflow": [],
-        "source": [],
-        "test": [],
-        "docs": [],
-        "data": [],
-        "legacy": []
-      }
-    },
-    {
       "path": "review_x_candidate_posts.py",
       "classification": "workflow_entrypoint",
       "references": {
@@ -4479,18 +4260,6 @@
         "test": [
           "tests/test_x_candidate_workflows_policy.py"
         ],
-        "docs": [],
-        "data": [],
-        "legacy": []
-      }
-    },
-    {
-      "path": "review_x_rank_validation.py",
-      "classification": "review_candidate",
-      "references": {
-        "workflow": [],
-        "source": [],
-        "test": [],
         "docs": [],
         "data": [],
         "legacy": []
@@ -5092,21 +4861,6 @@
       }
     },
     {
-      "path": "triage_blog_venue_candidates.py",
-      "classification": "review_candidate",
-      "references": {
-        "workflow": [],
-        "source": [],
-        "test": [],
-        "docs": [],
-        "data": [],
-        "legacy": [
-          "legacy/build-reports/build_blog_registration_candidates.py",
-          "legacy/build-reports/build_fallback_event_candidates.py"
-        ]
-      }
-    },
-    {
       "path": "triage_weekly_song_candidates.py",
       "classification": "workflow_entrypoint",
       "references": {
@@ -5169,21 +4923,6 @@
           "docs/notion-worklog-maintenance-operations.md"
         ],
         "data": [],
-        "legacy": []
-      }
-    },
-    {
-      "path": "venue_research_batch.py",
-      "classification": "review_candidate",
-      "references": {
-        "workflow": [],
-        "source": [],
-        "test": [],
-        "docs": [],
-        "data": [
-          "data/oto_task_roundup_status_2026-06-19.md",
-          "data/youtube_setlist_evidence_dry_run_2026-06-19.md"
-        ],
         "legacy": []
       }
     },
