@@ -4,6 +4,8 @@ import os
 from pathlib import Path
 
 from guard_public_events_sync import (
+    DATA,
+    REVIEWED_APPROVALS,
     apply_reviewed_exact_approvals,
     append_github_summary,
     canonical_event_sha256,
@@ -14,6 +16,12 @@ from guard_public_events_sync import (
 
 
 class PublicEventsSyncGuardTest(unittest.TestCase):
+    def test_default_data_paths_are_relative_to_the_guard_script(self):
+        expected_data = Path(__file__).resolve().parents[1] / "data"
+
+        self.assertEqual(DATA, expected_data)
+        self.assertEqual(REVIEWED_APPROVALS, expected_data / "public_sync_exact_approvals.json")
+
     def test_exact_same_key_approval_only_applies_to_pinned_values(self):
         site = {"name": "テスト盆踊り", "venue": "公園", "display_tier": "confirmed"}
         collector = {"name": "テスト盆踊り", "venue": "公園", "display_tier": "ended"}

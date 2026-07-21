@@ -36,7 +36,8 @@ from classify_public_events_diff import (
 )
 
 
-DATA = Path("data")
+ROOT = Path(__file__).resolve().parent
+DATA = ROOT / "data"
 COLLECTOR_EVENTS = DATA / "public" / "events_public.json"
 SITE_EVENTS = Path("/Users/ryotauchida/bon-odori-site/data/events_public.json")
 FIXED_DATE_RULES = DATA / "public_fixed_date_rules.json"
