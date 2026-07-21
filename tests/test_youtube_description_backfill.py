@@ -1,6 +1,6 @@
 import unittest
 
-from backfill_youtube_descriptions import apply_snippets, plan_backfill, video_id_from_url
+from youtube_channels.backfill_youtube_descriptions import apply_snippets, plan_backfill, video_id_from_url
 
 
 class YoutubeDescriptionBackfillTest(unittest.TestCase):

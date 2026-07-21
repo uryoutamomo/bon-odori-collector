@@ -1,6 +1,6 @@
 import unittest
 
-from extract_youtube_setlists import (
+from youtube_channels.extract_youtube_setlists import (
     attach_public_event_matches,
     extract_occurrences,
     extract_setlist,
