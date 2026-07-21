@@ -5,7 +5,7 @@ from pathlib import Path
 from unittest.mock import patch
 
 from review_console import data
-from review_inbox_decision_stage import build_decision_stage, write_decision_stage
+from review_inbox_adapters.decision_stage import build_decision_stage, write_decision_stage
 
 
 def console_row(decision="accept", apply_value="confirm_current_date", **raw_overrides):

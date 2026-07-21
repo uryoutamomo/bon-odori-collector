@@ -9,8 +9,8 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from master_db import init_db
-from review_inbox_registered_event_investigation_adapter import build_snapshot
-from review_inbox_source_writer import (
+from review_inbox_adapters.registered_event_investigation_adapter import build_snapshot
+from review_inbox_adapters.source_writer import (
     ArtifactState,
     CasConflictError,
     SourceWriterError,

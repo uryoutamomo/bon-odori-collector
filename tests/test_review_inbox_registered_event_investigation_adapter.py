@@ -4,13 +4,13 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from review_inbox_parity import build_parity_report, load_adapted_snapshot
-from review_inbox_registered_event_investigation_adapter import (
+from review_inbox_adapters.parity import build_parity_report, load_adapted_snapshot
+from review_inbox_adapters.registered_event_investigation_adapter import (
     SHIROKANE_CANARY_SOURCE_KEY,
     RegisteredEventInvestigationAdapter,
     build_snapshot,
 )
-from review_inbox_source_adapter import adapt_source_payload, write_adapted_snapshot
+from review_inbox_adapters.source_adapter import adapt_source_payload, write_adapted_snapshot
 
 
 FIXTURE = Path(__file__).parent / "fixtures" / "registered_event_investigation_shirokane.json"

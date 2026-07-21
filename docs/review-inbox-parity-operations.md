@@ -3,7 +3,7 @@
 作成日: 2026-07-17 JST
 署名: おと（Codex）
 
-`review_inbox_parity.py` は、legacy JSONをsource adapterで変換したsnapshotと、
+`review_inbox_adapters/parity.py` は、legacy JSONをsource adapterで変換したsnapshotと、
 `review_inbox.json` の同一 `source_id` 部分を比較するread-onlyの検証入口である。
 
 比較するもの:
@@ -18,7 +18,7 @@ decision、reviewer、statusなどのlifecycleは内容parityから除外する�
 一致を検証できるようにするためである。
 
 ```bash
-python3 review_inbox_parity.py \
+python3 -m review_inbox_adapters.parity \
   --adapted-snapshot /tmp/official-source-adapted.json \
   --inbox data/review_inbox.json \
   --out-json /tmp/review-inbox-parity.json \

@@ -23,17 +23,17 @@ from master_db import file_sha256
 from review_console import data
 from review_console.server import serve
 from review_inbox import inbox_rows
-from review_inbox_parity import build_parity_report, load_adapted_snapshot
-from review_inbox_production_wiring import public_projection_digest
-from review_inbox_shadow_execution_gate import (
+from review_inbox_adapters.parity import build_parity_report, load_adapted_snapshot
+from review_inbox_adapters.production_wiring import public_projection_digest
+from review_inbox_adapters.shadow_execution_gate import (
     require_explicit_environment,
     require_outside_cron_window,
     validate_expected_rstart,
     validate_public_today,
     write_report,
 )
-from review_inbox_source_adapter import input_sha256
-from review_inbox_source_writer import SourceWriterError
+from review_inbox_adapters.source_adapter import input_sha256
+from review_inbox_adapters.source_writer import SourceWriterError
 
 
 RUN_LABEL = "B1 review console reader cutover"

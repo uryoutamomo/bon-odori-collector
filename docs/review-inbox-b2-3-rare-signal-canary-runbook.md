@@ -83,7 +83,7 @@ python3 run_review_inbox_rare_signal_canary.py \
 
 ## B2-3c decision CAS writer（default off）
 
-`review_inbox_decision_writer.py` は `review_inbox_decision_stage.py` が生成した
+`review_inbox_adapters/decision_writer.py` は `review_inbox_adapters/decision_stage.py` が生成した
 `review_inbox_decision_updates.json` だけを受け付ける。手作業JSONや未知のdecision/route、
 timezoneなしtimestamp、重複ID、件数不一致はfail closedする。
 

@@ -33,7 +33,7 @@ B1-cutoverで切り替えるのは、まず**ローカルreview consoleのB1系�
 
 ### 切り替えないconsumer
 
-- `export_public_events.py`と`review_inbox_production_wiring.public_projection_digest`
+- `export_public_events.py`と`review_inbox_adapters.production_wiring.public_projection_digest`
 - `.github/workflows/collect.yml`
 - site同期、S3/CloudFront deploy
 - source adapter / source-scoped writer / CAS publisher
@@ -77,7 +77,7 @@ cutover previewの前後で次を必須にする。
 
 Rend7 `230205e1ad51d10eeb277a32e22e5a5436129a764079b7a7590de8b2593b34d7`
 をS3から別fetchし、各本番runで凍結したadapter snapshot 7つと
-`review_inbox_parity.py --require-parity`で再比較した。
+`review_inbox_adapters/parity.py --require-parity`で再比較した。
 
 - expected / inbox: `170 / 170`
 - missing / extra / content mismatch: `0 / 0 / 0`

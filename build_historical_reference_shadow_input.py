@@ -11,7 +11,7 @@ from pathlib import Path
 from typing import Any
 
 from master_db import MASTER_DB, file_sha256
-from review_inbox_source_adapter import write_adapted_snapshot
+from review_inbox_adapters.source_adapter import write_adapted_snapshot
 
 
 ROOT = Path(__file__).resolve().parent

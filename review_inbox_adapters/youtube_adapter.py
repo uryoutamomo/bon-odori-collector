@@ -16,10 +16,10 @@ from typing import Any, Iterable, Mapping
 from urllib.parse import parse_qs, urlsplit
 
 from review_console.data import load_known_song_terms
-from review_inbox_source_adapter import load_adapted_source, write_adapted_snapshot
+from review_inbox_adapters.source_adapter import load_adapted_source, write_adapted_snapshot
 
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_INPUT = ROOT / "data" / "youtube_active_video_review.json"
 DEFAULT_OUTPUT = ROOT / "data" / "review_inbox_adapted" / "youtube_active_video.json"
 SONG_VOCABULARY_PATHS = (

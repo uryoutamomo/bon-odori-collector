@@ -5,7 +5,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from review_inbox_source_adapter import adapt_source_payload, load_adapted_source
+from review_inbox_adapters.source_adapter import adapt_source_payload, load_adapted_source
 
 
 class FutureSourceAdapter:

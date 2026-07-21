@@ -9,21 +9,21 @@ from datetime import datetime
 from pathlib import Path
 from typing import Callable, Mapping
 
-from review_inbox_parity import load_adapted_snapshot
-from review_inbox_production_wiring import MasterDbS3ArtifactStore, public_projection_digest
-from review_inbox_shadow_execution_gate import (
+from review_inbox_adapters.parity import load_adapted_snapshot
+from review_inbox_adapters.production_wiring import MasterDbS3ArtifactStore, public_projection_digest
+from review_inbox_adapters.shadow_execution_gate import (
     prepare_evidence_paths,
     require_explicit_environment as require_shadow_environment,
     require_outside_cron_window,
     validate_public_today,
     write_report,
 )
-from review_inbox_source_adapter import write_adapted_snapshot
-from review_inbox_source_writer import ArtifactStore, SourceWriterError, SourceWriterFlags, run_source_shadow
-from review_inbox_youtube_adapter import DEFAULT_INPUT as ACTIVE_INPUT
-from review_inbox_youtube_aggregate import build_aggregate_snapshot, require_complete_aggregate
-from review_inbox_youtube_user_confirmation_adapter import DEFAULT_INPUT as USER_INPUT
-from review_inbox_youtube_year_backfill_adapter import DEFAULT_INPUT as YEAR_INPUT
+from review_inbox_adapters.source_adapter import write_adapted_snapshot
+from review_inbox_adapters.source_writer import ArtifactStore, SourceWriterError, SourceWriterFlags, run_source_shadow
+from review_inbox_adapters.youtube_adapter import DEFAULT_INPUT as ACTIVE_INPUT
+from review_inbox_adapters.youtube_aggregate import build_aggregate_snapshot, require_complete_aggregate
+from review_inbox_adapters.youtube_user_confirmation_adapter import DEFAULT_INPUT as USER_INPUT
+from review_inbox_adapters.youtube_year_backfill_adapter import DEFAULT_INPUT as YEAR_INPUT
 
 
 CONFIRM = "RUN SCHEDULED YOUTUBE AGGREGATE DUAL WRITE"

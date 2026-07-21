@@ -4,7 +4,7 @@
 
 署名: おと（Codex）
 
-`review_inbox_registered_event_investigation_adapter.py` は、
+`review_inbox_adapters/registered_event_investigation_adapter.py` は、
 `data/registered_event_investigation_queue.json` をreview inbox adapter snapshotへ変換する。
 
 - `task_id`をstable `source_key`に使う。
@@ -18,7 +18,7 @@
 通常snapshotは次で生成する。
 
 ```bash
-python3 review_inbox_registered_event_investigation_adapter.py \
+python3 -m review_inbox_adapters.registered_event_investigation_adapter \
   --output /tmp/registered-investigation-adapted.json
 ```
 
@@ -26,7 +26,7 @@ python3 review_inbox_registered_event_investigation_adapter.py \
 固定source key `evtinv_d7b5f534c8b3ddd8` の1件だけをsnapshotへ含める。
 
 ```bash
-python3 review_inbox_registered_event_investigation_adapter.py \
+python3 -m review_inbox_adapters.registered_event_investigation_adapter \
   --canary \
   --output /tmp/shirokane-canary.json
 ```

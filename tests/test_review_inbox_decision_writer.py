@@ -7,12 +7,12 @@ import pytest
 
 from master_db import init_db
 from review_inbox import inbox_rows, upsert_inbox_items
-from review_inbox_decision_writer import (
+from review_inbox_adapters.decision_writer import (
     DecisionWriterFlags,
     run_decision_write,
     validate_decision_payload,
 )
-from review_inbox_source_writer import ArtifactState, CasConflictError, SourceWriterError
+from review_inbox_adapters.source_writer import ArtifactState, CasConflictError, SourceWriterError
 
 
 INBOX_ID = "inbox_rare_one"

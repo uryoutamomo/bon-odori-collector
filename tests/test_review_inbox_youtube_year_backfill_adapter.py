@@ -3,9 +3,9 @@ import json
 import unittest
 from pathlib import Path
 
-from review_inbox_parity import build_parity_report, item_payload_hash
-from review_inbox_source_adapter import LIFECYCLE_FIELDS, adapt_source_payload, input_sha256
-from review_inbox_youtube_year_backfill_adapter import YouTubeYearBackfillAdapter, build_snapshot
+from review_inbox_adapters.parity import build_parity_report, item_payload_hash
+from review_inbox_adapters.source_adapter import LIFECYCLE_FIELDS, adapt_source_payload, input_sha256
+from review_inbox_adapters.youtube_year_backfill_adapter import YouTubeYearBackfillAdapter, build_snapshot
 
 
 FIXTURE = Path(__file__).parent / "fixtures" / "youtube_year_backfill_review_examples.json"

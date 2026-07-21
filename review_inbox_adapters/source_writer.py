@@ -24,7 +24,7 @@ from review_inbox import (
     normalized_item,
     upsert_inbox_items,
 )
-from review_inbox_parity import build_parity_report, item_payload_hash
+from review_inbox_adapters.parity import build_parity_report, item_payload_hash
 
 
 INBOX_TABLE = "review_inbox_items"

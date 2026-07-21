@@ -2,9 +2,9 @@ import copy
 import unittest
 from pathlib import Path
 
-from review_inbox_parity import build_parity_report, item_payload_hash
-from review_inbox_source_adapter import LIFECYCLE_FIELDS, adapt_source_payload, input_sha256
-from review_inbox_youtube_adapter import (
+from review_inbox_adapters.parity import build_parity_report, item_payload_hash
+from review_inbox_adapters.source_adapter import LIFECYCLE_FIELDS, adapt_source_payload, input_sha256
+from review_inbox_adapters.youtube_adapter import (
     YouTubeActiveVideoAdapter,
     build_snapshot,
     has_structured_song_evidence,

@@ -9,7 +9,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from master_db import init_db
-from review_inbox_source_writer import ArtifactState, CasConflictError, SourceWriterError
+from review_inbox_adapters.source_writer import ArtifactState, CasConflictError, SourceWriterError
 from run_review_inbox_official_bulk_shadow import (
     CONFIRM,
     run_official_bulk_shadow,

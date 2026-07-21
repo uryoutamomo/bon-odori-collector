@@ -15,20 +15,20 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any, Callable, Mapping
 
-from review_inbox_parity import load_adapted_snapshot
-from review_inbox_predicted_occurrence_date_review_adapter import (
+from review_inbox_adapters.parity import load_adapted_snapshot
+from review_inbox_adapters.predicted_occurrence_date_review_adapter import (
     DEFAULT_INPUT as DATE_REVIEW_INPUT,
     build_snapshot as build_date_review_snapshot,
 )
-from review_inbox_predicted_occurrence_research_adapter import (
+from review_inbox_adapters.predicted_occurrence_research_adapter import (
     DEFAULT_INPUT as RESEARCH_INPUT,
     build_snapshot as build_research_snapshot,
 )
-from review_inbox_production_wiring import (
+from review_inbox_adapters.production_wiring import (
     MasterDbS3ArtifactStore,
     public_projection_digest,
 )
-from review_inbox_shadow_execution_gate import (
+from review_inbox_adapters.shadow_execution_gate import (
     prepare_evidence_paths,
     require_explicit_environment,
     require_outside_cron_window,
@@ -36,8 +36,8 @@ from review_inbox_shadow_execution_gate import (
     validate_public_today,
     write_report,
 )
-from review_inbox_source_adapter import write_adapted_snapshot
-from review_inbox_source_writer import ArtifactStore, SourceWriterError, run_source_shadow
+from review_inbox_adapters.source_adapter import write_adapted_snapshot
+from review_inbox_adapters.source_writer import ArtifactStore, SourceWriterError, run_source_shadow
 
 
 SOURCE_CONFIGS = {

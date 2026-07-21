@@ -7,10 +7,10 @@ import argparse
 from pathlib import Path
 from typing import Any, Iterable, Mapping
 
-from review_inbox_source_adapter import load_adapted_source, write_adapted_snapshot
+from review_inbox_adapters.source_adapter import load_adapted_source, write_adapted_snapshot
 
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_INPUT = ROOT / "data" / "predicted_occurrence_research_queue.json"
 DEFAULT_OUTPUT = ROOT / "data" / "review_inbox_adapted" / "predicted_occurrence_research.json"
 ALLOWED_ACTIONS = {

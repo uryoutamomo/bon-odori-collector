@@ -10,13 +10,13 @@ from datetime import datetime
 from pathlib import Path
 from typing import Callable, Mapping
 
-from review_inbox_low_priority_adapters import ADAPTERS, SOURCE_CONFIG, build_snapshot
-from review_inbox_parity import load_adapted_snapshot
-from review_inbox_production_wiring import MasterDbS3ArtifactStore, public_projection_digest
-from review_inbox_shadow_execution_gate import require_explicit_environment as common_gates
-from review_inbox_shadow_execution_gate import require_outside_cron_window, validate_public_today, write_report
-from review_inbox_source_adapter import write_adapted_snapshot
-from review_inbox_source_writer import ArtifactStore, SourceWriterError, run_source_shadow
+from review_inbox_adapters.low_priority_adapters import ADAPTERS, SOURCE_CONFIG, build_snapshot
+from review_inbox_adapters.parity import load_adapted_snapshot
+from review_inbox_adapters.production_wiring import MasterDbS3ArtifactStore, public_projection_digest
+from review_inbox_adapters.shadow_execution_gate import require_explicit_environment as common_gates
+from review_inbox_adapters.shadow_execution_gate import require_outside_cron_window, validate_public_today, write_report
+from review_inbox_adapters.source_adapter import write_adapted_snapshot
+from review_inbox_adapters.source_writer import ArtifactStore, SourceWriterError, run_source_shadow
 
 
 CONFIRM = "RUN SCHEDULED LOW PRIORITY DUAL WRITE"

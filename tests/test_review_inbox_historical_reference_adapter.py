@@ -3,12 +3,12 @@ import json
 import unittest
 from collections import Counter
 
-from review_inbox_historical_reference_adapter import (
+from review_inbox_adapters.historical_reference_adapter import (
     DEFAULT_INPUT,
     HistoricalReferenceAdapter,
     build_snapshot,
 )
-from review_inbox_source_adapter import LIFECYCLE_FIELDS, adapt_source_payload
+from review_inbox_adapters.source_adapter import LIFECYCLE_FIELDS, adapt_source_payload
 
 
 class ReviewInboxHistoricalReferenceAdapterTest(unittest.TestCase):

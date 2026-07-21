@@ -17,7 +17,7 @@ B1-3は次の二段階に分ける。
 
 ## Production配線
 
-`review_inbox_production_wiring.py` は次を提供する。
+`review_inbox_adapters/production_wiring.py` は次を提供する。
 
 - `MasterDbS3ArtifactStore`: `master_db_s3_artifact.py` の`status` / `fetch` / `publish`をB1-2の`ArtifactStore` Protocolへ適合する。
 - publishは`force=False`固定で、空でない`expected_remote_checksum`を必須にする。publish後はstatusを再取得し、返却checksumと照合する。

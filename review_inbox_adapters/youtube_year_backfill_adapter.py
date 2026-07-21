@@ -7,11 +7,11 @@ import argparse
 from pathlib import Path
 from typing import Any, Iterable, Mapping
 
-from review_inbox_source_adapter import load_adapted_source, write_adapted_snapshot
-from review_inbox_youtube_adapter import video_id_from_url
+from review_inbox_adapters.source_adapter import load_adapted_source, write_adapted_snapshot
+from review_inbox_adapters.youtube_adapter import video_id_from_url
 
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_INPUT = ROOT / "data" / "youtube_year_backfill_review_queue.json"
 DEFAULT_OUTPUT = ROOT / "data" / "review_inbox_adapted" / "youtube_year_backfill.json"
 ACTION_CONFIG = {

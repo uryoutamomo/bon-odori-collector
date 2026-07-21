@@ -9,20 +9,20 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any, Callable, Mapping
 
-from review_inbox_decision_writer import (
+from review_inbox_adapters.decision_writer import (
     DecisionWriterFlags,
     load_decision_payload,
     run_decision_write,
     validate_decision_payload,
 )
-from review_inbox_production_wiring import MasterDbS3ArtifactStore, public_projection_digest
-from review_inbox_shadow_execution_gate import (
+from review_inbox_adapters.production_wiring import MasterDbS3ArtifactStore, public_projection_digest
+from review_inbox_adapters.shadow_execution_gate import (
     require_outside_cron_window,
     validate_expected_rstart,
     validate_public_today,
     write_report,
 )
-from review_inbox_source_writer import ArtifactStore, SourceWriterError
+from review_inbox_adapters.source_writer import ArtifactStore, SourceWriterError
 
 
 CONFIRM = "WRITE RARE SIGNAL CANARY DECISION"
