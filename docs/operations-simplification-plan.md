@@ -247,7 +247,7 @@ Ph0–Ph2レポート3本、YouTube 2025補助3本、Notion one-off 7本、実�
 ## C 第2段 公開準備入口の足場（2026-07-16 おと）
 
 Collector側の公開データ準備入口として `scripts/publish_public_data_flow.py` を追加した。
-この入口は `export_public_events.py` → `build_publication_gap_review.py` →
+この入口は `export_public_events.py` → `public_export_support/build_publication_gap_review.py` →
 `public_json_postprocessors/review_missing_occurrence_venues.py` → `python3 -m review_console_ops.run_review_console --inventory` を順に実行し、
 site repo同期・デプロイは含めない。site差分ガードは `--with-guard` 明示時だけ
 `public_json_postprocessors/guard_public_events_sync.py --report-only` として実行する。
@@ -264,7 +264,7 @@ site repo同期・デプロイは含めない。site差分ガードは `--with-g
 
 ## C 第4段 historical_reference のRDB戻し候補生成（2026-07-16 おと）
 
-`build_public_historical_reference_change_requests.py` を追加し、公開JSONに残っている
+`public_export_support/build_public_historical_reference_change_requests.py` を追加し、公開JSONに残っている
 `historical_reference` から A の `report_apply/apply_change_requests.py` 用JSONを生成する。出力は
 `data/change_requests/public_historical_references_20260716.json` と
 `data/public_historical_reference_change_requests.md`。このスクリプト自体は Master RDB を変更しない。
@@ -286,7 +286,7 @@ season hint の順にRDB投影側へ移す。詳細は `docs/public-json-rdb-pro
 
 `export_public_events.py` が、公開JSONには出さない内部用 `data/public_event_source_map.json` を生成するようにした。
 公開イベントの最終表示名・会場・日付と Master RDB の `occurrence_id` / `series_id` / `venue_id` を対応付ける。
-`public_json_postprocessors/compare_public_projection_sources.py` と `build_public_historical_reference_change_requests.py` は、このサイドカーがある場合
+`public_json_postprocessors/compare_public_projection_sources.py` と `public_export_support/build_public_historical_reference_change_requests.py` は、このサイドカーがある場合
 `occurrence_id` を優先し、なければ従来の name+venue fuzzy 突合にフォールバックする。これによりC本丸の
 RDB投影比較とhistorical戻し候補生成で、公開名ゆれによる weak_candidate を減らす。
 
@@ -296,7 +296,7 @@ RDB投影比較とhistorical戻し候補生成で、公開名ゆれによる wea
 一時出力先に fresh export と内部サイドカーを作り、次を一括で実行する。
 
 1. `public_json_postprocessors/compare_public_projection_sources.py` で現状のRDB投影blockingを確認
-2. `build_public_historical_reference_change_requests.py` で `dry_run_only: true` の historical戻し候補を生成
+2. `public_export_support/build_public_historical_reference_change_requests.py` で `dry_run_only: true` の historical戻し候補を生成
 3. `report_apply/apply_change_requests.py` のdry-run DBへ適用
 4. dry-run DBで再度 `public_json_postprocessors/compare_public_projection_sources.py` を実行
 

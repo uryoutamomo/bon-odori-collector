@@ -11,7 +11,7 @@ from pathlib import Path
 from typing import Any
 
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent
 SITE_ROOT = ROOT.parent / "bon-odori-site"
 OUT_PATH = ROOT / "data" / "publication_gap_review.json"
 MASTER_DB_PATH = ROOT / "data" / "bon_odori_master.sqlite"

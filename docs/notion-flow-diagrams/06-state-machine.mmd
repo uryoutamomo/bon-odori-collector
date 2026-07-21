@@ -21,7 +21,7 @@ stateDiagram-v2
   RdbDryRunReady --> RdbReviewed: dry-run/report確認
   RdbReviewed --> RdbApplied: 明示承認 + 確認文字列
 
-  RdbApplied --> PublicationGapCheck: build_publication_gap_review.py
+  RdbApplied --> PublicationGapCheck: public_export_support/build_publication_gap_review.py
   PublicationGapCheck --> RdbDryRunReady: blockerあり
   PublicationGapCheck --> PublicExported: blockerなし
 

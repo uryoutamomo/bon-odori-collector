@@ -10,7 +10,7 @@ from datetime import date
 from pathlib import Path
 
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent
 EVENTS_PATH = ROOT / "data/public/events_public.json"
 OUT_JSON = ROOT / "data/event_recurrence_candidates.json"
 OUT_MD = ROOT / "data/event_recurrence_candidates.md"

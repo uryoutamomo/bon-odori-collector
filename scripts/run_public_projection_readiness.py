@@ -103,7 +103,8 @@ def build_historical_requests(
     run(
         [
             python,
-            "build_public_historical_reference_change_requests.py",
+            "-m",
+            "public_export_support.build_public_historical_reference_change_requests",
             "--public-events",
             str(public_events),
             "--source-map",

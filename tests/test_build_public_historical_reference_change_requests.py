@@ -3,7 +3,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from build_public_historical_reference_change_requests import build_payload
+from public_export_support.build_public_historical_reference_change_requests import build_payload
 from master_db import normalize_text
 
 
