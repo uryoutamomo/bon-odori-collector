@@ -1,6 +1,6 @@
 import unittest
 
-from apply_youtube_existing_event_updates import build_updates
+from legacy.notion_writes.apply_youtube_existing_event_updates import build_updates
 
 
 class FakeApi:

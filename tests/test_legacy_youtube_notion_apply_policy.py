@@ -5,11 +5,12 @@ from manual_apply_guards import LEGACY_YOUTUBE_NOTION_CONFIRMATION
 
 
 ROOT = Path(__file__).resolve().parents[1]
+LEGACY_NOTION_WRITES = ROOT / "legacy" / "notion_writes"
 
 
 class LegacyYoutubeNotionApplyPolicyTest(unittest.TestCase):
     def test_scripts_require_shared_confirmation_for_apply(self):
-        scripts = [
+        archived_scripts = [
             "apply_youtube_existing_event_updates.py",
             "apply_youtube_active_existing_event_updates.py",
             "apply_youtube_2025_official_candidate_existing_updates.py",
@@ -18,19 +19,23 @@ class LegacyYoutubeNotionApplyPolicyTest(unittest.TestCase):
             "apply_youtube_2025_date_backfill.py",
             "apply_youtube_2025_curated_official_candidates.py",
             "apply_youtube_2025_koto_ready_events.py",
-            "apply_retrospective_ready_venue_events.py",
             "apply_retrospective_existing_event_updates.py",
             "apply_youtube_blocked_new_events.py",
             "apply_youtube_reviewed_new_events.py",
         ]
 
-        for filename in scripts:
+        for filename in archived_scripts:
             with self.subTest(filename=filename):
-                script = (ROOT / filename).read_text(encoding="utf-8")
+                script = (LEGACY_NOTION_WRITES / filename).read_text(encoding="utf-8")
                 self.assertIn("--apply", script)
                 self.assertIn('parser.add_argument("--confirm"', script)
                 self.assertIn("require_confirmation", script)
                 self.assertIn("LEGACY_YOUTUBE_NOTION_CONFIRMATION", script)
+
+        active_dependency = (ROOT / "apply_retrospective_ready_venue_events.py").read_text(
+            encoding="utf-8"
+        )
+        self.assertIn("LEGACY_YOUTUBE_NOTION_CONFIRMATION", active_dependency)
 
     def test_runbook_inventory_and_policy_document_boundary(self):
         runbook = (

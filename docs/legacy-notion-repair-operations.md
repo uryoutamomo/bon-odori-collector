@@ -15,6 +15,12 @@ or casual local commands.
 
 Keep them manual.
 
+2026-07-21 のcloseout整理で、workflow・現役rootコードから参照されない21本は
+`legacy/notion_writes/` へ移動した。実行する場合はrepo rootから
+`python3 -m legacy.notion_writes.<module>` を使う。現役処理からimportされる
+`register_song_master_initial.py`、週次apply 3本、`sync_x_account_scores.py` は
+guardを維持したままrootに残す。
+
 Any path that changes Notion requires:
 
 `APPLY LEGACY NOTION REPAIR`
@@ -54,14 +60,14 @@ Use the narrowest script and keep the confirmation phrase visible in shell
 history.
 
 ```bash
-python3 fill_missing_venue_addresses.py \
+python3 -m legacy.notion_writes.fill_missing_venue_addresses \
   --confirm "APPLY LEGACY NOTION REPAIR"
 ```
 
 For scripts that already expose `--apply`:
 
 ```bash
-python3 apply_missing_venue_review_decisions.py \
+python3 -m legacy.notion_writes.apply_missing_venue_review_decisions \
   --apply \
   --confirm "APPLY LEGACY NOTION REPAIR"
 ```

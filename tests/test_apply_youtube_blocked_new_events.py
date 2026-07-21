@@ -1,6 +1,10 @@
 import unittest
 
-from apply_youtube_blocked_new_events import build_results, event_status, text_prop
+from legacy.notion_writes.apply_youtube_blocked_new_events import (
+    build_results,
+    event_status,
+    text_prop,
+)
 
 
 class FakeApi:

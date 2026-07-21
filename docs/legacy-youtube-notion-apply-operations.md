@@ -15,6 +15,12 @@ YouTube証拠やretrospective候補をNotionへ直接反映する古い
 
 Do not automate these direct Notion apply scripts.
 
+2026-07-21 のcloseout整理で、現役コードから参照されない11本は
+`legacy/notion_writes/` へ移動した。実行する場合はrepo rootから
+`python3 -m legacy.notion_writes.<module>` を使う。現役の
+`review_missing_source_urls.py` が参照する
+`apply_retrospective_ready_venue_events.py` だけはrootに残す。
+
 Dry-run/report generation may be used for inspection. Actual Notion writes
 require all of the following:
 
@@ -28,7 +34,7 @@ require all of the following:
 All scripts below use the shared confirmation phrase:
 `APPLY LEGACY YOUTUBE NOTION UPDATES`.
 
-| Script | Main use | Default |
+| Script (basename) | Main use | Default |
 | --- | --- | --- |
 | `apply_youtube_existing_event_updates.py` | YouTube evidence notes onto existing events | dry-run |
 | `apply_youtube_active_existing_event_updates.py` | active YouTube evidence onto existing events | dry-run |

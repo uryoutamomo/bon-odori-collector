@@ -1,6 +1,6 @@
 import unittest
 
-from apply_youtube_2025_curated_official_candidates import evidence_note
+from legacy.notion_writes.apply_youtube_2025_curated_official_candidates import evidence_note
 
 
 class ApplyYoutube2025CuratedOfficialCandidatesTest(unittest.TestCase):

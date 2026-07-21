@@ -15,7 +15,7 @@ updates require explicit confirmation.
 
 Do not automate Master RDB -> Notion write-back.
 
-`sync_master_to_notion.py` is frozen by default:
+`legacy/notion_writes/sync_master_to_notion.py` is frozen by default:
 
 - dry-run writes JSON/Markdown review material only;
 - `--apply` is blocked unless `--allow-frozen-notion-write` is also present;
@@ -24,12 +24,16 @@ Do not automate Master RDB -> Notion write-back.
 
 Additional legacy Notion apply scripts now require confirmation too:
 
+2026-07-21 のcloseout整理で、この節の5本はすべて
+`legacy/notion_writes/` へ移動した。repo rootから
+`python3 -m legacy.notion_writes.<module>` として手動実行する。
+
 | Script | Writes | Confirmation |
 | --- | --- | --- |
-| `sync_fixed_date_rules_to_notion.py` | fixed-date columns/details on Notion event pages | `APPLY FIXED DATE RULES TO NOTION` |
-| `promote_event_dates.py` | event date/status/detail fields on Notion event pages | `APPLY EVENT DATES TO NOTION` |
-| `classify_x_members.py` | X member account type/tags | `APPLY X MEMBER CLASSIFICATION TO NOTION` |
-| `sync_x_display_names.py` | X member display names | `APPLY X DISPLAY NAMES TO NOTION` |
+| `legacy/notion_writes/sync_fixed_date_rules_to_notion.py` | fixed-date columns/details on Notion event pages | `APPLY FIXED DATE RULES TO NOTION` |
+| `legacy/notion_writes/promote_event_dates.py` | event date/status/detail fields on Notion event pages | `APPLY EVENT DATES TO NOTION` |
+| `legacy/notion_writes/classify_x_members.py` | X member account type/tags | `APPLY X MEMBER CLASSIFICATION TO NOTION` |
+| `legacy/notion_writes/sync_x_display_names.py` | X member display names | `APPLY X DISPLAY NAMES TO NOTION` |
 
 ## Flow
 

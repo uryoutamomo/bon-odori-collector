@@ -1,6 +1,8 @@
 import unittest
 
-from apply_youtube_2025_official_candidate_existing_updates import has_existing_summary
+from legacy.notion_writes.apply_youtube_2025_official_candidate_existing_updates import (
+    has_existing_summary,
+)
 
 
 class ApplyYoutube2025OfficialCandidateExistingUpdatesTest(unittest.TestCase):
