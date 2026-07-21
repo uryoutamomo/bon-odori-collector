@@ -21,7 +21,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 import manual_apply_guards
-from firsthand_report_helpers import (
+from report_apply.firsthand_report_helpers import (
     add_firsthand_evidence,
     ensure_series_and_occurrence,
     ensure_venue,
@@ -29,7 +29,7 @@ from firsthand_report_helpers import (
     upsert_occurrence_song,
 )
 from master_db import MASTER_DB, connect_existing, normalize_text, refresh_manifest_database_state, table_counts
-from rdb_apply_support import audit_db, backup_db, copy_db, has_high_issue, issue_summary, rows, scalar, write_json
+from report_apply.rdb_apply_support import audit_db, backup_db, copy_db, has_high_issue, issue_summary, rows, scalar, write_json
 
 
 DATA = Path("data")

@@ -8,9 +8,7 @@ from unittest import mock
 
 import audit_master_rdb
 import master_db
-import apply_official_notice_report as script
-
-
+from report_apply import apply_official_notice_report as script
 class ApplyOfficialNoticeReportTest(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory()

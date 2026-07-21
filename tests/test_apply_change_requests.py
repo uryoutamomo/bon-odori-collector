@@ -4,7 +4,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
-from apply_change_requests import apply_payload, validate_apply_allowed, validate_payload
+from report_apply.apply_change_requests import apply_payload, validate_apply_allowed, validate_payload
 from master_db import SCHEMA
 
 
@@ -211,7 +211,7 @@ class ApplyChangeRequestsTests(unittest.TestCase):
         validate_payload(payload)
 
         with patch(
-            "apply_change_requests.ensure_venue",
+            "report_apply.apply_change_requests.ensure_venue",
             return_value={
                 "status": "ambiguous",
                 "venue_id": None,

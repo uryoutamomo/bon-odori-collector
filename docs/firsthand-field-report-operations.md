@@ -63,7 +63,7 @@ S3が正本なので、作業前に必ずローカルDBを最新化する。
 ## Step 1: dry-run review
 
 ```sh
-python3 apply_firsthand_field_report.py --report data/firsthand_reports/<slug>.json
+python3 -m report_apply.apply_firsthand_field_report --report data/firsthand_reports/<slug>.json
 ```
 
 - `data/firsthand_field_report_apply_report.json` / `.md` を生成する。
@@ -75,7 +75,7 @@ python3 apply_firsthand_field_report.py --report data/firsthand_reports/<slug>.j
 ## Step 2: 本番apply
 
 ```sh
-python3 apply_firsthand_field_report.py \
+python3 -m report_apply.apply_firsthand_field_report \
   --report data/firsthand_reports/<slug>.json \
   --apply \
   --confirm 'APPLY FIRSTHAND FIELD REPORT'

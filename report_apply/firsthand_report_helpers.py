@@ -11,7 +11,7 @@ from before this module was split out -- apply_firsthand_field_report.py and
 its tests do not need to change.
 """
 
-from event_report_helpers import (
+from report_apply.event_report_helpers import (
     confirm_occurrence_schedule_venue,  # noqa: F401 (re-exported for callers that want it)
     ensure_series_and_occurrence as _ensure_series_and_occurrence,
     ensure_venue,  # noqa: F401
