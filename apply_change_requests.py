@@ -38,6 +38,7 @@ PREFLIGHT_DB = DATA / "change_requests_apply_preflight.sqlite"
 SCRIPT_NAME = "apply_change_requests.py"
 
 CHANGE_TYPES = {
+    "create_current_year_occurrence",
     "confirm_current_year_date",
     "add_historical_reference",
     "update_venue",
@@ -97,10 +98,31 @@ def validate_payload(payload):
         if change_type not in CHANGE_TYPES:
             errors.append(f"{prefix}: invalid change_type: {change_type!r}")
             continue
-        if not request.get("occurrence_id") and not request.get("match_hint"):
+        if (
+            change_type != "create_current_year_occurrence"
+            and not request.get("occurrence_id")
+            and not request.get("match_hint")
+        ):
             errors.append(f"{prefix}: requires occurrence_id or match_hint")
         source = request.get("source") or {}
-        if change_type == "confirm_current_year_date":
+        if change_type == "create_current_year_occurrence":
+            _required(request, "series_id", errors, prefix)
+            _required(request, "display_name", errors, prefix)
+            _required(request, "date_start", errors, prefix)
+            _required(request, "event_year", errors, prefix)
+            _required(request.get("venue") or {}, "name", errors, f"{prefix}.venue")
+            _required(source, "url", errors, f"{prefix}.source")
+            if source.get("kind") not in CURRENT_YEAR_SOURCE_KINDS:
+                errors.append(
+                    f"{prefix}.source: create_current_year_occurrence requires kind in {sorted(CURRENT_YEAR_SOURCE_KINDS)}"
+                )
+            if request.get("date_start") and request.get("event_year"):
+                if not str(request["date_start"]).startswith(str(request["event_year"])):
+                    errors.append(f"{prefix}: date_start must be in event_year")
+            sequence = request.get("occurrence_sequence", 1)
+            if sequence != 1:
+                errors.append(f"{prefix}: occurrence_sequence must be 1")
+        elif change_type == "confirm_current_year_date":
             _required(request, "date_start", errors, prefix)
             _required(request, "event_year", errors, prefix)
             _required(source, "url", errors, f"{prefix}.source")
@@ -212,6 +234,10 @@ def _append_detail(conn, occurrence_id, addendum, now):
 
 
 def apply_confirm_current_year_date(conn, request, occurrence_id, now):
+    occurrence_before = conn.execute(
+        "SELECT source_url FROM event_occurrences WHERE occurrence_id = ?",
+        (occurrence_id,),
+    ).fetchone()
     venue_id = None
     venue_result = None
     if request.get("venue"):
@@ -244,6 +270,13 @@ def apply_confirm_current_year_date(conn, request, occurrence_id, now):
         date_basis_note=f"current-year source: {request['source']['url']}",
         now=now,
     )
+    source_url = request["source"]["url"]
+    conn.execute(
+        "UPDATE event_occurrences SET source_url = ?, updated_at = ? WHERE occurrence_id = ?",
+        (source_url, now, occurrence_id),
+    )
+    if occurrence_before is None or occurrence_before[0] != source_url:
+        result["changed_fields"].append("source_url")
     link_occurrence_evidence(
         conn,
         occurrence_id,
@@ -276,6 +309,94 @@ def apply_confirm_current_year_date(conn, request, occurrence_id, now):
         "changed_fields": result["changed_fields"],
         "venue_status": (venue_result or {}).get("status"),
     }, []
+
+
+def apply_create_current_year_occurrence(conn, request, index, now):
+    series_id = request["series_id"]
+    series = rows(
+        conn,
+        "SELECT series_id, status FROM event_series WHERE series_id = ?",
+        (series_id,),
+    )
+    if not series:
+        return None, [
+            {
+                "severity": "medium",
+                "issue_type": "series_id_not_found",
+                "request_index": index,
+                "request_id": request.get("request_id"),
+                "series_id": series_id,
+            }
+        ]
+    if series[0]["status"] != "active":
+        return None, [
+            {
+                "severity": "medium",
+                "issue_type": "series_not_active",
+                "request_index": index,
+                "request_id": request.get("request_id"),
+                "series_id": series_id,
+                "series_status": series[0]["status"],
+            }
+        ]
+
+    event_year = int(request["event_year"])
+    sequence = 1
+    existing = rows(
+        conn,
+        """
+        SELECT occurrence_id
+        FROM event_occurrences
+        WHERE series_id = ? AND event_year = ? AND occurrence_sequence = ?
+        """,
+        (series_id, event_year, sequence),
+    )
+    occurrence_created = not existing
+    occurrence_id = (
+        existing[0]["occurrence_id"]
+        if existing
+        else stable_id("occ", series_id, event_year, sequence)
+    )
+    savepoint = f"create_current_year_occurrence_{index}"
+    conn.execute(f"SAVEPOINT {savepoint}")
+    if occurrence_created:
+        conn.execute(
+            """
+            INSERT INTO event_occurrences (
+              occurrence_id, origin, series_id, event_year, occurrence_sequence,
+              display_name, venue_id, date_start, date_end, date_status,
+              lifecycle_status, confidence, source_kind, source_url, detail,
+              created_at, updated_at
+            ) VALUES (?, 'curated', ?, ?, ?, ?, NULL, NULL, NULL, 'unknown',
+                      'draft', 'unknown', NULL, NULL, NULL, ?, ?)
+            """,
+            (
+                occurrence_id,
+                series_id,
+                event_year,
+                sequence,
+                request["display_name"],
+                now,
+                now,
+            ),
+        )
+
+    applied, issues = apply_confirm_current_year_date(
+        conn,
+        request,
+        occurrence_id,
+        now,
+    )
+    if applied is None:
+        conn.execute(f"ROLLBACK TO {savepoint}")
+        conn.execute(f"RELEASE {savepoint}")
+        return None, issues
+    conn.execute(f"RELEASE {savepoint}")
+    if applied is not None:
+        applied["change_type"] = request["change_type"]
+        applied["series_id"] = series_id
+        applied["occurrence_created"] = occurrence_created
+    return applied, issues
 
 
 def apply_add_historical_reference(conn, request, occurrence_id, now):
@@ -449,6 +570,8 @@ APPLIERS = {
 
 
 def apply_one_request(conn, request, index, now):
+    if request["change_type"] == "create_current_year_occurrence":
+        return apply_create_current_year_occurrence(conn, request, index, now)
     occurrence_id, issues = _resolve_occurrence(conn, request, index)
     if occurrence_id is None:
         return None, issues

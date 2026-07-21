@@ -319,6 +319,9 @@ B3（YouTube）→ B4（曲・用語）→ B5（writer停止・既定画面切�
   **内田さんGO（2026-07-16）＝Aは実運用へ**。
 - 以後のイベント確定・日付昇格・historical追加・会場修正・曲実績追加は、one-off スクリプト新造ではなく
   変更リクエストJSON → `apply_change_requests.py` で行う（AGENTS.md 明文化済み）。
+- 2026-07-21、既存系列に当年開催回がまだ無いP0案件を安全に扱うため、
+  `create_current_year_occurrence` を有限種別として追加した。activeな既存`series_id`、当年日付、
+  当年一次情報、会場、`occurrence_sequence=1`を必須とし、同系列・同年への再実行は既存開催回を再利用する。
 - 初の実 apply は次に来る実案件（公式発表・チラシ等）で実施。当面は従来どおり
   dry-run → ことレビュー → apply → こと再検証 を踏み、数件の実績が溜まったらレビュー粒度の緩和を検討する。
 - 残作業: A成果物一式の main 反映（ブランチ足場整理と合わせ・おと）。次項目=E（one-off 分類→legacy/ 移動）。
