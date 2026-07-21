@@ -175,7 +175,7 @@ def main():
 
     events = load_json(args.public_events, [])
     result = apply_season_hints(events, target_year=args.target_year)
-    from apply_public_display_tiers import apply_display_tiers
+    from public_json_postprocessors.apply_public_display_tiers import apply_display_tiers
 
     result["events"] = apply_display_tiers(result["events"])
     result["report"]["dry_run"] = bool(args.dry_run)

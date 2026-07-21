@@ -1,7 +1,7 @@
 import unittest
 from datetime import date
 
-from apply_public_historical_references import apply_historical_references
+from public_json_postprocessors.apply_public_historical_references import apply_historical_references
 
 
 class ApplyPublicHistoricalReferencesTest(unittest.TestCase):

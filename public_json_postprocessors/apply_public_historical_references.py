@@ -382,7 +382,7 @@ def main():
         today=today,
         fixed_date_rules=load_fixed_date_rules(args.fixed_date_rules),
     )
-    from apply_public_display_tiers import apply_display_tiers
+    from public_json_postprocessors.apply_public_display_tiers import apply_display_tiers
 
     result["events"] = apply_display_tiers(result["events"])
     result["report"]["dry_run"] = bool(args.dry_run)

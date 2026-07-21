@@ -3,7 +3,7 @@ import unittest
 import os
 from pathlib import Path
 
-from guard_public_events_sync import (
+from public_json_postprocessors.guard_public_events_sync import (
     DATA,
     REVIEWED_APPROVALS,
     apply_reviewed_exact_approvals,

@@ -10,9 +10,9 @@ ROOT = Path(__file__).resolve().parents[1]
 class PublicJsonPostprocessorPolicyTest(unittest.TestCase):
     def test_scheduled_postprocessors_remain_automatic(self):
         scripts = [
-            "apply_public_date_predictions.py",
-            "apply_public_historical_references.py",
-            "apply_public_season_hints.py",
+            "public_json_postprocessors/apply_public_date_predictions.py",
+            "public_json_postprocessors/apply_public_historical_references.py",
+            "public_json_postprocessors/apply_public_season_hints.py",
         ]
 
         for filename in scripts:

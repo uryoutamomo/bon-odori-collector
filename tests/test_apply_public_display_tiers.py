@@ -1,6 +1,6 @@
 import unittest
 
-from apply_public_display_tiers import (
+from public_json_postprocessors.apply_public_display_tiers import (
     apply_display_tiers,
     apply_legacy_public_fields_from_axes,
     current_event_state_for_event,

@@ -46,8 +46,8 @@ foreign key issue 0、audit issue 0となった。これによりDの本番切�
    YouTube backfill decision ファイル群。「今日どこを見ればレビューが溜まっているか」が一目で分からない。
 
 3. **公開JSONが後付けパッチの連鎖で作られる**
-   `export_public_events.py` 出力後に `apply_public_date_predictions.py` →
-   `apply_public_historical_references.py` → `apply_public_season_hints.py` が順に上書き。
+   `export_public_events.py` 出力後に `public_json_postprocessors/apply_public_date_predictions.py` →
+   `public_json_postprocessors/apply_public_historical_references.py` → `public_json_postprocessors/apply_public_season_hints.py` が順に上書き。
    順序依存で由来追跡が困難。freeze ガード空振り・collector↔site 乖離・巻き戻り事故の温床。
 
 4. **状態語彙の重複**
@@ -235,8 +235,8 @@ Ph0–Ph2レポート3本、YouTube 2025補助3本、Notion one-off 7本、実�
 
 ## C 第1段 重複postprocessorチェーン除去（2026-07-16 おと）
 
-`export_public_events.py` はすでに `apply_public_date_predictions.py` / `apply_public_historical_references.py` /
-`apply_public_season_hints.py` の3処理を内部で呼んでいるため、workflowとローカルYouTube backfill再生成から
+`export_public_events.py` はすでに `public_json_postprocessors/apply_public_date_predictions.py` / `public_json_postprocessors/apply_public_historical_references.py` /
+`public_json_postprocessors/apply_public_season_hints.py` の3処理を内部で呼んでいるため、workflowとローカルYouTube backfill再生成から
 同3本の後続実行を外し、公開JSON生成口を `export_public_events.py` に一本化する。外部実行時に渡していた
 `--today` 相当は `export_public_events.py` 側でJST当日を使うようにし、検証用に
 `BON_ODORI_PUBLIC_TODAY=YYYY-MM-DD` で固定できるようにした。
@@ -248,13 +248,13 @@ Ph0–Ph2レポート3本、YouTube 2025補助3本、Notion one-off 7本、実�
 
 Collector側の公開データ準備入口として `scripts/publish_public_data_flow.py` を追加した。
 この入口は `export_public_events.py` → `build_publication_gap_review.py` →
-`review_missing_occurrence_venues.py` → `run_review_console.py --inventory` を順に実行し、
+`public_json_postprocessors/review_missing_occurrence_venues.py` → `run_review_console.py --inventory` を順に実行し、
 site repo同期・デプロイは含めない。site差分ガードは `--with-guard` 明示時だけ
-`guard_public_events_sync.py --report-only` として実行する。
+`public_json_postprocessors/guard_public_events_sync.py --report-only` として実行する。
 
 ## C 第3段 RDB投影元比較レポート（2026-07-16 おと）
 
-`compare_public_projection_sources.py` を追加し、公開JSONの `date_prediction` / `historical_reference` /
+`public_json_postprocessors/compare_public_projection_sources.py` を追加し、公開JSONの `date_prediction` / `historical_reference` /
 `season_hint` が Master RDB 側の `predicted_occurrence_dates` / `occurrence_dates` /
 `event_series.annual_months_json` などから再現可能かを読み取り専用で比較する。出力は
 `data/public_projection_source_compare.json` と `.md`。この段階では公開JSON生成ロジックは切り替えない。
@@ -286,7 +286,7 @@ season hint の順にRDB投影側へ移す。詳細は `docs/public-json-rdb-pro
 
 `export_public_events.py` が、公開JSONには出さない内部用 `data/public_event_source_map.json` を生成するようにした。
 公開イベントの最終表示名・会場・日付と Master RDB の `occurrence_id` / `series_id` / `venue_id` を対応付ける。
-`compare_public_projection_sources.py` と `build_public_historical_reference_change_requests.py` は、このサイドカーがある場合
+`public_json_postprocessors/compare_public_projection_sources.py` と `build_public_historical_reference_change_requests.py` は、このサイドカーがある場合
 `occurrence_id` を優先し、なければ従来の name+venue fuzzy 突合にフォールバックする。これによりC本丸の
 RDB投影比較とhistorical戻し候補生成で、公開名ゆれによる weak_candidate を減らす。
 
@@ -295,10 +295,10 @@ RDB投影比較とhistorical戻し候補生成で、公開名ゆれによる wea
 `scripts/run_public_projection_readiness.py` を追加した。これは公開データや Master RDB を直接変更せず、
 一時出力先に fresh export と内部サイドカーを作り、次を一括で実行する。
 
-1. `compare_public_projection_sources.py` で現状のRDB投影blockingを確認
+1. `public_json_postprocessors/compare_public_projection_sources.py` で現状のRDB投影blockingを確認
 2. `build_public_historical_reference_change_requests.py` で `dry_run_only: true` の historical戻し候補を生成
 3. `apply_change_requests.py` のdry-run DBへ適用
-4. dry-run DBで再度 `compare_public_projection_sources.py` を実行
+4. dry-run DBで再度 `public_json_postprocessors/compare_public_projection_sources.py` を実行
 
 実データ確認では、サイドカーは209/209でヒットし、historical戻し候補83件はdry-run applyで
 未解決0・issueなし。適用後シミュレーションでは blocking が 88 → 10 まで下がった。

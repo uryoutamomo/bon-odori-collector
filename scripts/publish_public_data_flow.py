@@ -20,11 +20,11 @@ def build_commands(python: str, with_guard: bool) -> list[list[str]]:
     commands = [
         [python, "export_public_events.py"],
         [python, "build_publication_gap_review.py"],
-        [python, "review_missing_occurrence_venues.py"],
+        [python, "-m", "public_json_postprocessors.review_missing_occurrence_venues"],
         [python, "run_review_console.py", "--inventory"],
     ]
     if with_guard:
-        commands.append([python, "guard_public_events_sync.py", "--report-only"])
+        commands.append([python, "-m", "public_json_postprocessors.guard_public_events_sync", "--report-only"])
     return commands
 
 
@@ -43,7 +43,7 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument(
         "--with-guard",
         action="store_true",
-        help="also run guard_public_events_sync.py --report-only after regeneration",
+        help="also run public_json_postprocessors.guard_public_events_sync --report-only after regeneration",
     )
     parser.add_argument(
         "--dry-run",

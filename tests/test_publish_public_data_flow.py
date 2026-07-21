@@ -20,19 +20,22 @@ class PublishPublicDataFlowTest(unittest.TestCase):
             [
                 ["python3", "export_public_events.py"],
                 ["python3", "build_publication_gap_review.py"],
-                ["python3", "review_missing_occurrence_venues.py"],
+                ["python3", "-m", "public_json_postprocessors.review_missing_occurrence_venues"],
                 ["python3", "run_review_console.py", "--inventory"],
             ],
         )
         flattened = "\n".join(" ".join(command) for command in commands)
-        self.assertNotIn("guard_public_events_sync.py", flattened)
+        self.assertNotIn("guard_public_events_sync", flattened)
         self.assertNotIn("sync_public_event_additions_to_site.py", flattened)
         self.assertNotIn("deploy", flattened)
 
     def test_guard_is_explicit_report_only_step(self):
         commands = MODULE.build_commands("python3", with_guard=True)
 
-        self.assertEqual(commands[-1], ["python3", "guard_public_events_sync.py", "--report-only"])
+        self.assertEqual(
+            commands[-1],
+            ["python3", "-m", "public_json_postprocessors.guard_public_events_sync", "--report-only"],
+        )
 
     def test_dry_run_does_not_execute_commands(self):
         with patch.object(MODULE.subprocess, "run") as run:

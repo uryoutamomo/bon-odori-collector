@@ -90,7 +90,8 @@ def apply_legacy_overlay(python: str, events_path: Path, today: str, quiet: bool
     run(
         [
             python,
-            "apply_public_date_predictions.py",
+            "-m",
+            "public_json_postprocessors.apply_public_date_predictions",
             "--public-events",
             str(events_path),
             "--out-json",
@@ -107,7 +108,8 @@ def apply_legacy_overlay(python: str, events_path: Path, today: str, quiet: bool
     run(
         [
             python,
-            "apply_public_historical_references.py",
+            "-m",
+            "public_json_postprocessors.apply_public_historical_references",
             "--public-events",
             str(events_path),
             "--out-json",
@@ -126,7 +128,8 @@ def apply_legacy_overlay(python: str, events_path: Path, today: str, quiet: bool
     run(
         [
             python,
-            "apply_public_season_hints.py",
+            "-m",
+            "public_json_postprocessors.apply_public_season_hints",
             "--public-events",
             str(events_path),
             "--out-json",

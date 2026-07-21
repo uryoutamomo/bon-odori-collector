@@ -220,12 +220,12 @@ X由来では投稿日と開催日がズレやすいため、本文や画像か�
 7. `date_near`: 同じ月で、日付差が7日以内。
 8. `seasonal_hint`: 月または旬だけ分かる。
 
-`seasonal_hint` は、既存の `apply_public_season_hints.py` と役割が重複しやすい。
+`seasonal_hint` は、既存の `public_json_postprocessors/apply_public_season_hints.py` と役割が重複しやすい。
 最初の実装では `event_schedule_rules` 側は `seasonal_hint` を正規ルールとして生成しない。
-月・旬だけの公開ヒントは、既存どおり `apply_public_season_hints.py` を正本とする。
+月・旬だけの公開ヒントは、既存どおり `public_json_postprocessors/apply_public_season_hints.py` を正本とする。
 
 `event_schedule_rules` 側が扱うのは、原則として日付または曜日を含む観測がある系列だけにする。
-どうしても統合する場合は、後続フェーズで `apply_public_season_hints.py` の責務を `event_schedule_rules` に移す。
+どうしても統合する場合は、後続フェーズで `public_json_postprocessors/apply_public_season_hints.py` の責務を `event_schedule_rules` に移す。
 
 ### 基本スコア
 
@@ -322,9 +322,9 @@ X由来では投稿日と開催日がズレやすいため、本文や画像か�
 
 - `build_event_date_predictions.py`
   - 現在の `rule_type` 推定と予測日生成を活かす。
-- `apply_public_date_predictions.py`
+- `public_json_postprocessors/apply_public_date_predictions.py`
   - 確定日があるイベントには予測を付けない挙動を維持する。
-- `apply_public_historical_references.py`
+- `public_json_postprocessors/apply_public_historical_references.py`
   - 過去実績カードへの目安日付付与を維持する。
 
 ### 追加するもの
@@ -410,8 +410,8 @@ YouTube APIが使えない日は、以下だけ進める。
 2. `youtube_backfill/build_event_occurrence_backfill_plan.py` で開催回観測候補を作る。
 3. `youtube_backfill/apply_event_occurrence_backfill_plan.py` でレビュー済み観測を `event_occurrence_observations.json` へ反映する。
 4. `build_event_date_predictions.py --target-year 2026` で日付予測を作る。
-5. `apply_public_date_predictions.py` で公開JSONへ予測を付ける。
-6. `apply_public_historical_references.py`、`apply_public_season_hints.py`、`export_public_events.py` で公開成果物を再生成する。
+5. `public_json_postprocessors/apply_public_date_predictions.py` で公開JSONへ予測を付ける。
+6. `public_json_postprocessors/apply_public_historical_references.py`、`public_json_postprocessors/apply_public_season_hints.py`、`export_public_events.py` で公開成果物を再生成する。
 
 今回の開催パターン分類は、この4番の前に入れる。
 
@@ -435,14 +435,14 @@ python3 build_low_confidence_backfill_review.py
 python3 -m youtube_backfill.apply_event_occurrence_backfill_plan
 python3 -m youtube_backfill.build_event_schedule_rules --target-year 2026
 python3 build_event_date_predictions.py --target-year 2026
-python3 apply_public_date_predictions.py
-python3 apply_public_historical_references.py
-python3 apply_public_season_hints.py
+python3 -m public_json_postprocessors.apply_public_date_predictions
+python3 -m public_json_postprocessors.apply_public_historical_references
+python3 -m public_json_postprocessors.apply_public_season_hints
 python3 build_song_occurrences.py
 python3 export_public_events.py
-python3 apply_public_date_predictions.py
-python3 apply_public_historical_references.py
-python3 apply_public_season_hints.py
+python3 -m public_json_postprocessors.apply_public_date_predictions
+python3 -m public_json_postprocessors.apply_public_historical_references
+python3 -m public_json_postprocessors.apply_public_season_hints
 python3 -m youtube_backfill.build_month_youtube_backfill_queue --month N
 ```
 

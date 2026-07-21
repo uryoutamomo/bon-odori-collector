@@ -15,15 +15,15 @@ from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
-from apply_public_display_tiers import apply_display_tiers
-from apply_public_historical_references import (
+from public_json_postprocessors.apply_public_display_tiers import apply_display_tiers
+from public_json_postprocessors.apply_public_historical_references import (
     DEFAULT_TODAY,
     apply_historical_references,
     load_fixed_date_rules,
     parse_iso_date,
 )
-from apply_public_season_hints import apply_season_hints
-from classify_public_events_diff import (
+from public_json_postprocessors.apply_public_season_hints import apply_season_hints
+from public_json_postprocessors.classify_public_events_diff import (
     HIGH_RISK_FIELDS,
     changed_fields,
     classify_diff,
@@ -36,7 +36,7 @@ from classify_public_events_diff import (
 )
 
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 COLLECTOR_EVENTS = DATA / "public" / "events_public.json"
 SITE_EVENTS = Path("/Users/ryotauchida/bon-odori-site/data/events_public.json")

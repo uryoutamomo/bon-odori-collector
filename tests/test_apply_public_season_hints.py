@@ -1,6 +1,6 @@
 import unittest
 
-from apply_public_season_hints import apply_season_hints
+from public_json_postprocessors.apply_public_season_hints import apply_season_hints
 
 
 class ApplyPublicSeasonHintsTest(unittest.TestCase):
