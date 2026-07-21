@@ -13,7 +13,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from master_db import MASTER_DB, connect_existing
-from tokyo23_scope import is_outside_tokyo_23_scope
+from collection_support.tokyo23_scope import is_outside_tokyo_23_scope
 
 
 DATA = Path("data")

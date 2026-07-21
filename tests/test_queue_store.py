@@ -1,6 +1,6 @@
 import unittest
 
-from queue_store import (
+from collection_support.queue_store import (
     DynamoQueueStore,
     EventCandidateQueueStore,
     normalize_candidate_key,

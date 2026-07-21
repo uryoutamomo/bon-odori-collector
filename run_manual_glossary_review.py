@@ -76,7 +76,7 @@ def main() -> None:
         ["python3", "prepare_weekly_harvest_review.py"],
         [
             "python3",
-            "build_keyboard_review_ui.py",
+            "-m", "collection_support.build_keyboard_review_ui",
             "--input",
             "data/weekly_harvest_review_candidates.json",
             "--rows-key",
@@ -100,7 +100,7 @@ def main() -> None:
         ],
         [
             "python3",
-            "build_keyboard_review_ui.py",
+            "-m", "collection_support.build_keyboard_review_ui",
             "--input",
             "data/weekly_song_candidates_review.json",
             "--rows-key",

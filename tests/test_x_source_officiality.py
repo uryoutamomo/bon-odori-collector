@@ -1,6 +1,6 @@
 import unittest
 
-from x_source_officiality import assess_source_officiality
+from collection_support.x_source_officiality import assess_source_officiality
 
 
 class XSourceOfficialityTest(unittest.TestCase):

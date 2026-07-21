@@ -19,7 +19,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Callable
 
-from x_official_source_accounts import official_account_for_url
+from collection_support.x_official_source_accounts import official_account_for_url
 
 
 DATA = Path("data")

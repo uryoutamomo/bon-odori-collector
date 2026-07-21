@@ -5,7 +5,7 @@ import argparse
 import os
 from datetime import date, datetime, timedelta
 
-from event_audit import (
+from collection_support.event_audit import (
     EVENT_SCHEMA,
     blocking_duplicate_count,
     duplicate_groups,

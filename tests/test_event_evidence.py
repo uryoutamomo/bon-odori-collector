@@ -6,7 +6,7 @@ from datetime import datetime, timezone
 from unittest.mock import patch
 
 import collect
-from event_evidence import (
+from collection_support.event_evidence import (
     aggregate_event_candidates,
     build_event_candidate_key,
     build_event_candidate_match_key,

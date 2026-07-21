@@ -5,7 +5,7 @@ import re
 from functools import lru_cache
 from pathlib import Path
 
-from suppression_rules import blocked_cultural_match, is_generic_song_name
+from collection_support.suppression_rules import blocked_cultural_match, is_generic_song_name
 
 DATA_DIR = Path(__file__).resolve().parent / "data"
 SONG_MASTER_REGISTRATION = DATA_DIR / "song_master_initial_registration.json"

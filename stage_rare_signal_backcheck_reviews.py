@@ -15,7 +15,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlparse
 
-from x_official_source_accounts import is_official_social_url
+from collection_support.x_official_source_accounts import is_official_social_url
 
 
 DATA = Path("data")

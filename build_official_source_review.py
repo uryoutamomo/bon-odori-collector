@@ -12,7 +12,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlparse
 
-from tokyo23_scope import is_outside_tokyo_23_scope
+from collection_support.tokyo23_scope import is_outside_tokyo_23_scope
 
 
 ROOT = Path(__file__).resolve().parent

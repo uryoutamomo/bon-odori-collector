@@ -185,7 +185,7 @@ build_pre_cutover_p0_apply_plan.py
 build_event_poster_ocr_queue.py
 build_event_song_candidates.py
 build_glossary_runtime.py
-build_keyboard_review_ui.py
+collection_support/build_keyboard_review_ui.py
 build_rare_signal_backcheck_queue.py
 build_retrospective_harvest.py
 build_song_occurrences.py

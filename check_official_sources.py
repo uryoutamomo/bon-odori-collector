@@ -8,7 +8,7 @@ import json
 from datetime import datetime, timezone
 from pathlib import Path
 
-from proactive_search import (
+from collection_support.proactive_search import (
     DEFAULT_CONFIG,
     DEFAULT_OFFICIAL_CANDIDATES,
     load_targets,

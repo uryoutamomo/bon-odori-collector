@@ -3,7 +3,7 @@ import re
 import unicodedata
 from datetime import datetime, timedelta, timezone
 
-from suppression_rules import blocked_cultural_match, is_event_sentence_fragment
+from collection_support.suppression_rules import blocked_cultural_match, is_event_sentence_fragment
 
 
 PATTERN_KEYWORDS = {

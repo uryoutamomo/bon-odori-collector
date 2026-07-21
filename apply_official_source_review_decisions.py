@@ -9,7 +9,7 @@ import re
 from datetime import datetime, timezone
 from pathlib import Path
 
-from proactive_search import parse_months
+from collection_support.proactive_search import parse_months
 
 
 ROOT = Path(__file__).resolve().parent

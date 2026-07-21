@@ -37,7 +37,7 @@ current-work navigation require:
 | `update_youtube_notion_progress.py` | checks todos and updates progress blocks |
 | `update_youtube_followup_progress.py` | checks todos and updates follow-up blocks |
 | `create_current_work_index_notion.py` | creates the current-work index page |
-| `add_current_work_to_first_look_notion.py` | inserts current-work link into first-look section |
+| `collection_support/add_current_work_to_first_look_notion.py` | inserts current-work link into first-look section |
 | `rename_current_work_first_look_link_notion.py` | renames a fixed first-look block |
 | `create_current_location_notion.py` | renames/updates the current-location page and first-look link |
 | `legacy/notion-notes/append_youtube_task_list_to_notion.py` | creates a YouTube task-list page and may archive the old page |

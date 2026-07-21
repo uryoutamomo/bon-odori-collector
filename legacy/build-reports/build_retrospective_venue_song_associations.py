@@ -10,7 +10,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from bon_odori_songs import extract_song_candidates
-from event_evidence import VENUE_RE, _clean_venue_hint, classify_event_evidence, dancer_key
+from collection_support.event_evidence import VENUE_RE, _clean_venue_hint, classify_event_evidence, dancer_key
 
 
 DATA = Path("data")

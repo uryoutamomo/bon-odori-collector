@@ -94,7 +94,7 @@ def fetch_event_months():
     """イベントDBから venue_page_id -> 例年開催月（"7月,8月" 形式）の対応を作る。
 
     2026-06-06 のDB分割で「例年開催月」は会場マスタからイベントDBへ移った。
-    会場 relation 経由で join し、proactive_search.py が読める文字列にして返す。
+    会場 relation 経由で join し、collection_support/proactive_search.py が読める文字列にして返す。
     """
     months_by_venue = {}
     cursor = None
