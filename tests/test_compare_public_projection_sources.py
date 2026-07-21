@@ -3,7 +3,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from compare_public_projection_sources import build_report
+from public_json_postprocessors.compare_public_projection_sources import build_report
 
 
 class ComparePublicProjectionSourcesTest(unittest.TestCase):

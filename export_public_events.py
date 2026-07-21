@@ -24,14 +24,14 @@ from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 from bon_odori_songs import extract_song_hints
 from event_series_normalization import series_event_name
 from master_db import MASTER_DB, connect_existing
-from apply_public_date_predictions import (
+from public_json_postprocessors.apply_public_date_predictions import (
     OUT_REPORT as DATE_PREDICTION_REPORT,
     PREDICTIONS as DATE_PREDICTIONS,
     apply_predictions as apply_public_date_predictions,
     load_json as load_public_date_prediction_json,
     write_json as write_public_date_prediction_json,
 )
-from apply_public_display_tiers import apply_display_tiers
+from public_json_postprocessors.apply_public_display_tiers import apply_display_tiers
 import notion_config
 from score_event_recurrence import build_rows, enrich_public_events
 from export_public_venues import (
@@ -1118,11 +1118,11 @@ def apply_public_recurrence_metadata(events, *, today=None):
 
 def apply_public_site_postprocessors(events, *, today=None, prefer_existing_axes=False):
     """Apply the public-site-only fields that used to be run as separate steps."""
-    from apply_public_historical_references import (
+    from public_json_postprocessors.apply_public_historical_references import (
         apply_historical_references,
         load_fixed_date_rules,
     )
-    from apply_public_season_hints import apply_season_hints
+    from public_json_postprocessors.apply_public_season_hints import apply_season_hints
 
     events = apply_historical_references(
         events,

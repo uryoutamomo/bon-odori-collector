@@ -1,6 +1,6 @@
 import unittest
 
-from compare_event_state_axes import compare_events
+from public_json_postprocessors.compare_event_state_axes import compare_events
 
 
 class CompareEventStateAxesTest(unittest.TestCase):

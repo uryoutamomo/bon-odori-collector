@@ -7,7 +7,7 @@ import sqlite3
 import tempfile
 from pathlib import Path
 
-from compare_event_state_axes import compare_events
+from public_json_postprocessors.compare_event_state_axes import compare_events
 from event_state_axes_migration import migrate_event_state_axes
 from master_db import MASTER_DB, connect_existing, table_counts
 

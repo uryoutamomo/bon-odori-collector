@@ -17,9 +17,9 @@ Keep these automatic:
 
 | Script | Why automatic |
 | --- | --- |
-| `apply_public_date_predictions.py` | attaches reviewed rule predictions to public JSON after export |
-| `apply_public_historical_references.py` | attaches historical-reference display fields after export |
-| `apply_public_season_hints.py` | attaches low-confidence season hints after export |
+| `public_json_postprocessors/apply_public_date_predictions.py` | attaches reviewed rule predictions to public JSON after export |
+| `public_json_postprocessors/apply_public_historical_references.py` | attaches historical-reference display fields after export |
+| `public_json_postprocessors/apply_public_season_hints.py` | attaches low-confidence season hints after export |
 
 They are called inside `export_public_events.py`. Scheduled workflows and local
 YouTube backfill maintenance call `export_public_events.py` as the single public

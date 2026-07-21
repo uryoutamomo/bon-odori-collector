@@ -2,7 +2,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from classify_public_events_diff import (
+from public_json_postprocessors.classify_public_events_diff import (
     build_classification,
     classify_diff,
     field_family,

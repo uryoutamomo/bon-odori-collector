@@ -39,11 +39,11 @@ class ComparePublicExportPostprocessorsTest(unittest.TestCase):
             )
 
         commands = [call.args[0] for call in run.call_args_list]
-        self.assertEqual(commands[0][1], "apply_public_date_predictions.py")
-        self.assertEqual(commands[1][1], "apply_public_historical_references.py")
+        self.assertEqual(commands[0][1:3], ["-m", "public_json_postprocessors.apply_public_date_predictions"])
+        self.assertEqual(commands[1][1:3], ["-m", "public_json_postprocessors.apply_public_historical_references"])
         self.assertIn("--today", commands[1])
         self.assertIn("2026-07-16", commands[1])
-        self.assertEqual(commands[2][1], "apply_public_season_hints.py")
+        self.assertEqual(commands[2][1:3], ["-m", "public_json_postprocessors.apply_public_season_hints"])
         flattened = "\n".join(" ".join(command) for command in commands)
         self.assertNotIn("deploy", flattened)
         self.assertNotIn("sync_public_event_additions_to_site.py", flattened)

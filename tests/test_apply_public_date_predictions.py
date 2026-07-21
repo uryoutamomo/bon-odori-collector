@@ -1,6 +1,6 @@
 import unittest
 
-from apply_public_date_predictions import apply_predictions
+from public_json_postprocessors.apply_public_date_predictions import apply_predictions
 
 
 def prediction_row(name="丸の内de盆踊り", venue="行幸通り"):

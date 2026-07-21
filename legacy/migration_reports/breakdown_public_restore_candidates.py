@@ -12,14 +12,14 @@ from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
-from apply_public_display_tiers import apply_display_tiers
-from apply_public_historical_references import (
+from public_json_postprocessors.apply_public_display_tiers import apply_display_tiers
+from public_json_postprocessors.apply_public_historical_references import (
     DEFAULT_TODAY,
     apply_historical_references,
     load_fixed_date_rules,
     parse_iso_date,
 )
-from apply_public_season_hints import apply_season_hints
+from public_json_postprocessors.apply_public_season_hints import apply_season_hints
 
 
 DATA = Path("data")

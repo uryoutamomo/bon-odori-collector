@@ -39,7 +39,7 @@ python3 scripts/publish_public_data_flow.py
 ```
 
 これは `export_public_events.py`、`build_publication_gap_review.py`、
-`review_missing_occurrence_venues.py`、`run_review_console.py --inventory` までを実行する。
+`public_json_postprocessors/review_missing_occurrence_venues.py`、`run_review_console.py --inventory` までを実行する。
 site repo同期とデプロイは含めない。site差分ガードまで同時に確認する場合だけ、site repoが読める環境で
 `--with-guard` を付ける。
 
@@ -84,10 +84,10 @@ python3 export_public_events.py
 5. 公開同期前ガードを通す。
 
 ```sh
-python3 guard_public_events_sync.py
+python3 -m public_json_postprocessors.guard_public_events_sync
 ```
 
-`guard_public_events_sync.py` の pass は「同期差分にブロッカーがない」という意味であり、デプロイ承認ではない。
+`public_json_postprocessors/guard_public_events_sync.py` の pass は「同期差分にブロッカーがない」という意味であり、デプロイ承認ではない。
 `procedure_warnings` が出た場合は、RDB更新後の `build_publication_gap_review.py` または `export_public_events.py` が未実行の可能性があるため、公開同期・デプロイ前に解消または明示レビューする。
 
 6. site repo へ同期して差分確認する。
@@ -125,7 +125,7 @@ python3 apply_reviewed_missing_occurrence_venues.py --occurrence-id <occurrence_
 ```sh
 python3 export_public_events.py
 python3 build_publication_gap_review.py
-python3 review_missing_occurrence_venues.py
+python3 -m public_json_postprocessors.review_missing_occurrence_venues
 python3 run_review_console.py --inventory
 ```
 
@@ -145,14 +145,14 @@ python3 sync_public_event_additions_to_site.py \
 5. 同期後ガードを通す。
 
 ```sh
-python3 guard_public_events_sync.py --report-only
+python3 -m public_json_postprocessors.guard_public_events_sync --report-only
 
 python3 guard_site_public_event_additions.py \
   --expected-event-name "鉄砲洲納涼盆踊り" \
   --expected-event-name "すみだ河内音頭 小盆踊り"
 ```
 
-`guard_public_events_sync.py` は collector と site の整合を見る。
+`public_json_postprocessors/guard_public_events_sync.py` は collector と site の整合を見る。
 `guard_site_public_event_additions.py` は site repo の作業差分が追加だけかを見る。
 両方が pass してもデプロイ承認ではない。デプロイは内田さんの明示承認後に行う。
 
@@ -284,7 +284,7 @@ flowchart LR
   subgraph export[7. Public Export And Site Sync]
     export_step[python3 export_public_events.py]
     postprocessors[public postprocessors]
-    sync_guard[python3 guard_public_events_sync.py]
+    sync_guard[python3 -m public_json_postprocessors.guard_public_events_sync]
     guard_gate{guard status pass?}
     site_sync[collector -> bon-odori-site sync]
     site_diff[site diff review]
@@ -339,7 +339,7 @@ stateDiagram-v2
   PublicationGapCheck --> RdbDryRunReady: blockerあり
   PublicationGapCheck --> PublicExported: blockerなし
 
-  PublicExported --> SyncGuarded: guard_public_events_sync.py
+  PublicExported --> SyncGuarded: public_json_postprocessors/guard_public_events_sync.py
   SyncGuarded --> RdbDryRunReady: guard block
   SyncGuarded --> SiteSynced: guard pass + site差分確認
 
@@ -496,7 +496,7 @@ flowchart LR
 - source_url だけを入れて、会場・日程・status を更新したつもりにする。
 - `event_investigation_tasks` の古い `missing_date` / `missing_venue` を見ずに公開済み扱いにする。
 - `candidate_official_social` のまま、X投稿を確認済み根拠として公開する。
-- `guard_public_events_sync.py` の pass をデプロイ承認として扱う。
+- `public_json_postprocessors/guard_public_events_sync.py` の pass をデプロイ承認として扱う。
 
 ## Teppozu Reference Case
 
@@ -516,5 +516,5 @@ flowchart LR
 1. `@iri2choukai` 投稿本文と公式/主催SNS台帳を確認する。
 2. `鉄砲洲公園` の会場行をレビューして作成/接続する。
 3. `date_start=2026-08-03`, `date_end=2026-08-05`, `date_status=confirmed` を occurrence に反映する。
-4. `export_public_events.py` と `guard_public_events_sync.py` を通す。
+4. `export_public_events.py` と `public_json_postprocessors/guard_public_events_sync.py` を通す。
 5. site repo に同期し、公開デプロイは別承認で進める。
