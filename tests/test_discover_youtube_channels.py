@@ -1,6 +1,6 @@
 import unittest
 
-from discover_youtube_channels import (
+from youtube_channels.discover_youtube_channels import (
     build_candidates,
     enrich_video_candidate,
     event_name_is_noise,

@@ -13,8 +13,8 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
-from backfill_youtube_descriptions import best_thumbnail_url, load_env_value
-from extract_youtube_setlists import compact_url
+from youtube_channels.backfill_youtube_descriptions import best_thumbnail_url, load_env_value
+from youtube_channels.extract_youtube_setlists import compact_url
 
 
 DATA = Path("data")

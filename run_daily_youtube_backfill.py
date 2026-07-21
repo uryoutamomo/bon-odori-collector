@@ -10,7 +10,7 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
-from backfill_youtube_descriptions import load_env_value
+from youtube_channels.backfill_youtube_descriptions import load_env_value
 from youtube_backfill import harvest_youtube_year_backfill as harvest_mod
 from master_rdb_freeze_policy import is_group_frozen, load_policy
 

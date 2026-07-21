@@ -10,7 +10,7 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 from build_youtube_active_video_review import video_id_from_url
-from extract_youtube_setlists import compact_url
+from youtube_channels.extract_youtube_setlists import compact_url
 
 
 DATA = Path("data")

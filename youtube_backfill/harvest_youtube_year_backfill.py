@@ -9,10 +9,10 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
-from backfill_youtube_descriptions import best_thumbnail_url, load_env_value
-from discover_youtube_channels import VIDEOS_API_URL, SEARCH_API_URL, enrich_video_candidate, youtube_get
+from youtube_channels.backfill_youtube_descriptions import best_thumbnail_url, load_env_value
+from youtube_channels.discover_youtube_channels import VIDEOS_API_URL, SEARCH_API_URL, enrich_video_candidate, youtube_get
 from event_series_normalization import series_event_name
-from extract_youtube_setlists import BON_CONTEXT_RE, parse_youtube_event_date
+from youtube_channels.extract_youtube_setlists import BON_CONTEXT_RE, parse_youtube_event_date
 
 
 DATA = Path("data")
