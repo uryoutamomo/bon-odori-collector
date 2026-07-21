@@ -67,7 +67,7 @@ python3 master_db_s3_artifact.py fetch --overwrite
 ## Step 1: dry-run review
 
 ```sh
-python3 apply_official_notice_report.py --report data/official_notice_reports/<report_id>.json
+python3 -m report_apply.apply_official_notice_report --report data/official_notice_reports/<report_id>.json
 ```
 
 - `data/official_notice_report_apply_report.json` / `.md` を生成する。
@@ -80,13 +80,13 @@ python3 apply_official_notice_report.py --report data/official_notice_reports/<r
 ## Step 2: 本番apply
 
 ```sh
-python3 apply_official_notice_report.py \
+python3 -m report_apply.apply_official_notice_report \
   --report data/official_notice_reports/<report_id>.json \
   --apply \
   --confirm 'APPLY OFFICIAL NOTICE FIELD REPORT'
 ```
 
-- `apply_firsthand_field_report.py`と同じ安全機構（preflight→backup→本番トランザ
+- `report_apply/apply_firsthand_field_report.py`と同じ安全機構（preflight→backup→本番トランザ
   クション→post-audit）を通る。
 
 ## 一部イベントが曖昧なままだった場合の再実行
@@ -114,7 +114,7 @@ sqlite本体はcommitしない（`.gitignore`の`data/*.sqlite`対象）。commi
 
 `legacy/apply/apply_kyobashi5_nouryou_map_2026.py`は、この機能が無かった時期に書いた一回限り
 のスクリプト。今後、同様の掲示物・チラシ反映で新規スクリプトは作らず、この
-`apply_official_notice_report.py`を使う。`legacy/apply/apply_kyobashi5_nouryou_map_2026.py`
+`report_apply/apply_official_notice_report.py`を使う。`legacy/apply/apply_kyobashi5_nouryou_map_2026.py`
 自体は過去の実行記録として凍結保持する（削除しない）。
 
 ## スコープ外: 盆助サイトへの反映

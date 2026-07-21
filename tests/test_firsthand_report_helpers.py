@@ -4,7 +4,7 @@ import unittest
 from pathlib import Path
 
 import master_db
-from firsthand_report_helpers import (
+from report_apply.firsthand_report_helpers import (
     add_firsthand_evidence,
     ensure_series_and_occurrence,
     ensure_venue,

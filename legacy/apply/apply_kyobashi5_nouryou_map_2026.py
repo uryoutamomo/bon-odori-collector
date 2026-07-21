@@ -18,7 +18,7 @@ import json
 from datetime import datetime, timezone
 from pathlib import Path
 
-from firsthand_report_helpers import ensure_venue
+from report_apply.firsthand_report_helpers import ensure_venue
 from master_db import (
     MASTER_DB,
     connect_existing,
@@ -28,7 +28,7 @@ from master_db import (
     stable_id,
     table_counts,
 )
-from rdb_apply_support import audit_db, backup_db, copy_db, has_high_issue, issue_summary, rows, scalar, write_json
+from report_apply.rdb_apply_support import audit_db, backup_db, copy_db, has_high_issue, issue_summary, rows, scalar, write_json
 
 
 DATA = Path("data")

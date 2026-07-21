@@ -131,7 +131,8 @@ def dry_run_historical_requests(
     run(
         [
             python,
-            "apply_change_requests.py",
+            "-m",
+            "report_apply.apply_change_requests",
             "--requests",
             str(requests),
             "--master-db",

@@ -9,7 +9,7 @@ Notice songs are announced setlists, not Uchida-san's own observation, so they
 use role="setlist" / evidence_status="announced" (vs firsthand's "result"/"observed").
 """
 
-from event_report_helpers import (
+from report_apply.event_report_helpers import (
     confirm_occurrence_schedule_venue,  # noqa: F401 (re-exported, source_kind passed through by callers)
     ensure_series_and_occurrence as _ensure_series_and_occurrence,
     ensure_venue,  # noqa: F401

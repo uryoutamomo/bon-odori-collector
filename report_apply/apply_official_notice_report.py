@@ -30,7 +30,7 @@ from pathlib import Path
 
 import manual_apply_guards
 from master_db import MASTER_DB, connect_existing, normalize_text, refresh_manifest_database_state, stable_id, table_counts
-from official_notice_report_helpers import (
+from report_apply.official_notice_report_helpers import (
     SOURCE_KIND_OFFICIAL_CURRENT_YEAR,
     confirm_occurrence_schedule_venue,
     ensure_series_and_occurrence,
@@ -40,7 +40,7 @@ from official_notice_report_helpers import (
     upsert_announced_song,
     upsert_notice_evidence,
 )
-from rdb_apply_support import audit_db, backup_db, copy_db, has_high_issue, issue_summary, rows, scalar, write_json
+from report_apply.rdb_apply_support import audit_db, backup_db, copy_db, has_high_issue, issue_summary, rows, scalar, write_json
 
 
 DATA = Path("data")

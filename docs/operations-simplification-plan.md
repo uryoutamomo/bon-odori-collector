@@ -4,7 +4,7 @@
 
 実装上の一本道化は、A・E・C・Bまで本番運用へ入り、Dもcollector/siteのコード切替までmainへ反映済み。
 
-- **A 反映口**: `apply_change_requests.py` に有限な変更種別を集約。dry-run既定、確認文字列、backup、audit、冪等性を維持する。
+- **A 反映口**: `report_apply/apply_change_requests.py` に有限な変更種別を集約。dry-run既定、確認文字列、backup、audit、冪等性を維持する。
 - **E 名残の撤去**: one-off群を `legacy/` へ移し、review inboxを迂回していたweeklyの旧UI生成・直接apply経路を停止した。rollback snapshotとparity入力は削除せず保持する。
 - **C 公開口**: `export_public_events.py` を唯一の生成入口にし、JSON-only fallbackは0件をhard failする。公開準備は `scripts/publish_public_data_flow.py` に集約した。
 - **B 受信箱**: review consoleの既定readerを統合inboxへ切替済み。旧readerは明示的なrollback専用。production runでYouTube 172件、低優先度257件がparity/unmapped 0、CAS連続性・公開投影不変を確認済み。
@@ -97,7 +97,7 @@ foreign key issue 0、audit issue 0となった。これによりDの本番切�
 
 | # | 統合 | 内容 | 消えるもの |
 |---|---|---|---|
-| A | 反映口の一本化 | `apply_official_notice_report.py`（複数イベント・部分適用・曖昧はスキップ）の設計を汎用化し、イベント確定・日付昇格・historical追加を「変更リクエストJSON」入力で処理する汎用applyを1本つくる | 今後の one-off apply 新造 |
+| A | 反映口の一本化 | `report_apply/apply_official_notice_report.py`（複数イベント・部分適用・曖昧はスキップ）の設計を汎用化し、イベント確定・日付昇格・historical追加を「変更リクエストJSON」入力で処理する汎用applyを1本つくる | 今後の one-off apply 新造 |
 | E | 名残の撤去（第1段=アーカイブのみ） | one-off済みスクリプトを legacy/ ディレクトリへ移動（削除しない）。data/ の完了済みレビュー残骸・レポートをアーカイブ整理 | ルート340本の視認性問題 |
 | C | 公開JSONパッチ連鎖の解体 | 日付予測3種（規則・スライド・旬）を RDB 側（predicted_occurrence_dates 系）へ統合し、export_public_events.py を読み出し専用投影に。切替は新旧出力の全件突合で差分ゼロ確認後 | 後付けパッチ3本・順序依存事故 |
 | B | 受信箱の一本化 | 判断待ちを RDB の inbox テーブルへ集約、レビューコンソールを唯一の画面に昇格 | キーボードレビューUI×2 の日次生成、rare_signal 多段リレー、decision ファイル乱立 |
@@ -164,7 +164,7 @@ D本丸のschema migration、互換写像、writer更新、site切替、本番CA
 
 ## A 詳細設計（2026-07-16 おと plan/dry-run）
 
-`apply_change_requests.py` を新設し、イベントごとの one-off apply 新造を止める入口にする。入力は `request_type=rdb_change_requests` のJSONで、自由記述パッチではなく、以下の有限な `change_type` だけを許可する。
+`report_apply/apply_change_requests.py` を新設し、イベントごとの one-off apply 新造を止める入口にする。入力は `request_type=rdb_change_requests` のJSONで、自由記述パッチではなく、以下の有限な `change_type` だけを許可する。
 
 | change_type | 用途 | 主な必須根拠・制約 |
 |---|---|---|
@@ -185,7 +185,7 @@ D本丸のschema migration、互換写像、writer更新、site切替、本番CA
 受け入れ確認：
 
 - サンプル: `data/change_requests/a_acceptance_examples_20260716.json`
-- 実行: `python3 apply_change_requests.py --requests data/change_requests/a_acceptance_examples_20260716.json`
+- 実行: `python3 -m report_apply.apply_change_requests --requests data/change_requests/a_acceptance_examples_20260716.json`
 - 結果: dry-run で4件適用、未解決0、変更処理由来の issue なし。RDB監査は既存系の `source_snapshot_drift` medium 1件のみ。
 
 ## E 第1段 分類（2026-07-16 おと）
@@ -265,7 +265,7 @@ site repo同期・デプロイは含めない。site差分ガードは `--with-g
 ## C 第4段 historical_reference のRDB戻し候補生成（2026-07-16 おと）
 
 `build_public_historical_reference_change_requests.py` を追加し、公開JSONに残っている
-`historical_reference` から A の `apply_change_requests.py` 用JSONを生成する。出力は
+`historical_reference` から A の `report_apply/apply_change_requests.py` 用JSONを生成する。出力は
 `data/change_requests/public_historical_references_20260716.json` と
 `data/public_historical_reference_change_requests.md`。このスクリプト自体は Master RDB を変更しない。
 
@@ -297,7 +297,7 @@ RDB投影比較とhistorical戻し候補生成で、公開名ゆれによる wea
 
 1. `public_json_postprocessors/compare_public_projection_sources.py` で現状のRDB投影blockingを確認
 2. `build_public_historical_reference_change_requests.py` で `dry_run_only: true` の historical戻し候補を生成
-3. `apply_change_requests.py` のdry-run DBへ適用
+3. `report_apply/apply_change_requests.py` のdry-run DBへ適用
 4. dry-run DBで再度 `public_json_postprocessors/compare_public_projection_sources.py` を実行
 
 実データ確認では、サイドカーは209/209でヒットし、historical戻し候補83件はdry-run applyで
@@ -337,7 +337,7 @@ B3（YouTube）→ B4（曲・用語）→ B5（writer停止・既定画面切�
 - ことレビュー2巡（初回=Finding 1 historical重複・Finding 4 ダミーURL → おと修正 → 再検証全項目合格）を経て、
   **内田さんGO（2026-07-16）＝Aは実運用へ**。
 - 以後のイベント確定・日付昇格・historical追加・会場修正・曲実績追加は、one-off スクリプト新造ではなく
-  変更リクエストJSON → `apply_change_requests.py` で行う（AGENTS.md 明文化済み）。
+  変更リクエストJSON → `report_apply/apply_change_requests.py` で行う（AGENTS.md 明文化済み）。
 - 2026-07-21、既存系列に当年開催回がまだ無いP0案件を安全に扱うため、
   `create_current_year_occurrence` を有限種別として追加した。activeな既存`series_id`、当年日付、
   当年一次情報、会場、`occurrence_sequence=1`を必須とし、同系列・同年への再実行は既存開催回を再利用する。
