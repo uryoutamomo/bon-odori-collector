@@ -3,6 +3,26 @@
 作成日: 2026-07-20 JST  
 署名: おと（Codex）
 
+## 実装状況（2026-07-20）
+
+collector側の有限語彙・組み合わせ検証・明示migration・writer更新・export互換投影・workflow監査は
+PR #75でmainへ反映済み。site側も2軸優先、旧JSON fallback、snapshot allowlist、契約テストを
+PR #3でmainへ反映済み。メール経路は状態語彙を直接参照せず、本文配送だけを担う。
+
+本番Master RDBへの明示migrationと次回定時run確認まで完了した。
+
+- workflow_dispatch run [29727773884](https://github.com/uryoutamomo/bon-odori-collector/actions/runs/29727773884):
+  `current_event_state` / `date_certainty_tier` の2列を追加し、252 occurrence中197行を更新。
+  公開209件のshadow mismatch 0、invalid 0、integrity `ok`、foreign key issue 0、audit issue 0。
+  checksum CASでsnapshot `event-state-axes-29727773884-1` をpublishし、Rend再fetch後は変更0を確認した。
+  run全体のfailureは後段YouTube inbox処理であり、D工程は成功している。
+- 定時run [29731848146](https://github.com/uryoutamomo/bon-odori-collector/actions/runs/29731848146):
+  workflow全体がsuccess。D同期は列追加0・変更0・invalid 0・shadow mismatch 0、integrity `ok`、
+  foreign key issue 0、audit issue 0で、S3 publishはno-opだった。
+
+これにより本書のD1〜D5と完了条件1〜7は充足した。workflowの同期処理とsiteの旧JSON fallbackは、
+今後の状態遷移とrollback安全性のため維持する。
+
 ## 目的と完了条件
 
 イベントの公開状態を、次の2軸だけを正本として扱う。
