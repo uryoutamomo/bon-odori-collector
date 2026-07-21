@@ -6,7 +6,7 @@
 出力:
   data/public/venues_geo.json
 
-国土地理院の住所検索APIを使い、export_public_venues.py とは分離しておく。
+国土地理院の住所検索APIを使い、venues/export_public_venues.py とは分離しておく。
 """
 
 import json

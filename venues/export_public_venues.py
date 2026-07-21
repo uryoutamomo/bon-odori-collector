@@ -24,7 +24,7 @@ NOTION_TOKEN = os.environ.get("NOTION_API_TOKEN")
 API = notion_config.NOTION_API_BASE
 API_VERSION = notion_config.NOTION_API_VERSION
 
-OUT_DIR = os.path.join(os.path.dirname(__file__), "data", "public")
+OUT_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "public")
 OUT_JSON = os.path.join(OUT_DIR, "venues_public.json")
 OUT_JS = os.path.join(OUT_DIR, "venues_public.js")
 GEO_JSON = os.path.join(OUT_DIR, "venues_geo.json")
@@ -115,7 +115,7 @@ def normalize_ward(region):
 
     会場マスタの実データには「東京都」抜きの区名・他県の市区町村・地区名が
     混在しているため、「○○区」が23区名と一致するものだけを東京とみなす
-    （extract_venues.py の TOKYO_WARDS と同じ考え方）。
+    （venues/extract_venues.py の TOKYO_WARDS と同じ考え方）。
     「神戸市東灘区」のような政令市の区を誤って拾わないよう、区名の前に
     市・郡・県名が付くものは除外する。
     """
