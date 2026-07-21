@@ -10,8 +10,8 @@ ROOT = Path(__file__).resolve().parents[1]
 class BuildExportReportOperationsPolicyTest(unittest.TestCase):
     def test_derived_table_rebuilders_require_confirmation(self):
         scripts = [
-            "build_historical_promotion_candidates.py",
-            "build_registered_event_investigation_queue.py",
+            "promotion_candidates/build_historical_promotion_candidates.py",
+            "promotion_candidates/build_registered_event_investigation_queue.py",
         ]
 
         for filename in scripts:

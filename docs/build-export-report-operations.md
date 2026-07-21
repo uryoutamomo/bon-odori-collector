@@ -37,8 +37,8 @@ These are build scripts, but they write into Master RDB derived tables:
 
 | Script | Writes | Confirmation |
 | --- | --- | --- |
-| `build_historical_promotion_candidates.py` | `historical_promotion_candidates`, `predicted_occurrence_dates`, manifest post-build metadata | `APPLY MASTER RDB ONE-OFF` |
-| `build_registered_event_investigation_queue.py` | `event_investigation_tasks`, manifest post-build metadata | `APPLY MASTER RDB ONE-OFF` |
+| `promotion_candidates/build_historical_promotion_candidates.py` | `historical_promotion_candidates`, `predicted_occurrence_dates`, manifest post-build metadata | `APPLY MASTER RDB ONE-OFF` |
+| `promotion_candidates/build_registered_event_investigation_queue.py` | `event_investigation_tasks`, manifest post-build metadata | `APPLY MASTER RDB ONE-OFF` |
 
 They do not confirm public event dates and do not write Notion, but they still
 mutate the Master RDB file. Keep them manual unless they are wrapped in a

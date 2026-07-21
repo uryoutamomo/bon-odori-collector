@@ -26,8 +26,8 @@ class MasterRdbPublicJsonOneOffPolicyTest(unittest.TestCase):
     def test_new_one_off_apply_scripts_require_shared_confirmation(self):
         expectations = {
             "apply_ph2_shinagawa_second_venue_review.py": MASTER_RDB_ONE_OFF_CONFIRMATION,
-            "build_historical_promotion_candidates.py": MASTER_RDB_ONE_OFF_CONFIRMATION,
-            "build_registered_event_investigation_queue.py": MASTER_RDB_ONE_OFF_CONFIRMATION,
+            "promotion_candidates/build_historical_promotion_candidates.py": MASTER_RDB_ONE_OFF_CONFIRMATION,
+            "promotion_candidates/build_registered_event_investigation_queue.py": MASTER_RDB_ONE_OFF_CONFIRMATION,
             "apply_public_event_name_cleanup.py": PUBLIC_JSON_ONE_OFF_CONFIRMATION,
             "apply_public_official_source_urls.py": PUBLIC_JSON_ONE_OFF_CONFIRMATION,
             "apply_youtube_year_backfill_review_decisions.py": LOCAL_EVIDENCE_ONE_OFF_CONFIRMATION,

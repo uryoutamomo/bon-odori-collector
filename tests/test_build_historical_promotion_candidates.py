@@ -1,7 +1,7 @@
 import sqlite3
 import unittest
 
-import build_historical_promotion_candidates as builder
+from promotion_candidates import build_historical_promotion_candidates as builder
 from master_db import SCHEMA
 
 

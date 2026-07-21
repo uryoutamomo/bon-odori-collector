@@ -14,7 +14,7 @@ from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
-from build_observed_promotion_candidates import (
+from promotion_candidates.build_observed_promotion_candidates import (
     all_dates,
     best_curated_match,
     extract_event_name,
