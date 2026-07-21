@@ -72,7 +72,8 @@ def compare_projection(
     run(
         [
             python,
-            "compare_public_projection_sources.py",
+            "-m",
+            "public_json_postprocessors.compare_public_projection_sources",
             "--public-events",
             str(public_events),
             "--source-map",

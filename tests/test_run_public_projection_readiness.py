@@ -35,6 +35,26 @@ class RunPublicProjectionReadinessTest(unittest.TestCase):
         )
         self.assertEqual(env["BON_ODORI_PUBLIC_TODAY"], "2026-07-16")
 
+    def test_compare_projection_uses_public_json_postprocessors_module(self):
+        with patch.object(MODULE, "run") as run:
+            MODULE.compare_projection(
+                "python3",
+                Path("/tmp/readiness/fresh_public/events_public.json"),
+                Path("/tmp/readiness/fresh_public/public_event_source_map.json"),
+                Path("/tmp/master.sqlite"),
+                Path("/tmp/readiness/compare.json"),
+                Path("/tmp/readiness/compare.md"),
+                2026,
+                quiet=True,
+            )
+
+        command = run.call_args.args[0]
+        self.assertEqual(
+            command[:3],
+            ["python3", "-m", "public_json_postprocessors.compare_public_projection_sources"],
+        )
+        self.assertNotIn("compare_public_projection_sources.py", command)
+
     def test_promote_historical_requests_marks_output_as_machine_only(self):
         with patch.object(MODULE, "run") as run:
             MODULE.promote_historical_requests(
