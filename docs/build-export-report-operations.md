@@ -22,7 +22,7 @@ These can remain in scheduled or local generation flows:
 
 | Group | Examples | Writes |
 | --- | --- | --- |
-| Public export | `export_public_events.py`, `export_public_venues.py`, `export_public_glossary.py` | repo-local public JSON/JS |
+| Public export | `export_public_events.py`, `venues/export_public_venues.py`, `export_public_glossary.py` | repo-local public JSON/JS |
 | Public export postprocessors | `export_public_events.py` calls `public_json_postprocessors/apply_public_date_predictions.py`, `public_json_postprocessors/apply_public_historical_references.py`, `public_json_postprocessors/apply_public_season_hints.py` in-process | repo-local public JSON/JS |
 | Audit/report | `audit_master_rdb.py`, `compare_notion_snapshot_to_master.py`, `rdb_builders/export_rdb_review_report.py`, `run_post_batch_maintenance.py` | report JSON/Markdown |
 | Review queue builders | `build_weekly_harvest_candidates.py`, `collection_support/build_keyboard_review_ui.py`, `build_youtube_*_queue.py`, `export_youtube_*_plan.py` | review JSON/Markdown/HTML |

@@ -732,7 +732,7 @@ SQLite 正本は Git にコミットする。
 python3 audit_master_rdb.py
 python3 build_all_rdb.py
 python3 export_public_events.py
-python3 export_public_venues.py
+python3 -m venues.export_public_venues
 ```
 
 公開デプロイは既存方針どおり、明示依頼がない限り行わない。

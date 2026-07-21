@@ -6,7 +6,7 @@
 - Notion経路は `BON_ODORI_PUBLIC_SOURCE=notion` の明示指定時だけ使う
 
 23区判定・区名正規化・文字化け置換・内部フィールド除去は
-export_public_venues.py と同じ方針。出力は data/public/events_public.json。
+venues/export_public_venues.py と同じ方針。出力は data/public/events_public.json。
                                                     — こと（Claude Code）2026-06-10
 """
 
@@ -34,7 +34,7 @@ from public_json_postprocessors.apply_public_date_predictions import (
 from public_json_postprocessors.apply_public_display_tiers import apply_display_tiers
 import notion_config
 from score_event_recurrence import build_rows, enrich_public_events
-from export_public_venues import (
+from venues.export_public_venues import (
     MONTH_DAY_RE,
     MONTH_RE,
     clean_public_text,

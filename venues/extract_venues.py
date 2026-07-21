@@ -13,7 +13,7 @@ import json
 import os
 import re
 
-DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
+DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
 LATEST = os.path.join(DATA_DIR, "latest.json")
 VOICES = os.path.join(DATA_DIR, "voices.json")
 OUT = os.path.join(DATA_DIR, "venues_seed.json")
