@@ -3,7 +3,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from build_evidence_rdb import build_evidence_rdb
+from rdb_builders.build_evidence_rdb import build_evidence_rdb
 
 
 class BuildEvidenceRdbTest(unittest.TestCase):

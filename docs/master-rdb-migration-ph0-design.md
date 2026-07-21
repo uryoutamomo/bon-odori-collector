@@ -111,7 +111,7 @@ Notion と JSON に分散している盆踊りマスタの正本を、ローカ�
   - DB 作成用 schema dump。レビューと再生成確認用。
 - `data/bon_odori_master_manifest.json`
   - DB の論理バージョン、最終ビルド元、各テーブル件数、チェックサム。
-- `build_master_rdb.py`
+- `rdb_builders/build_master_rdb.py`
   - Notion/JSON/RDB スナップショットから master DB を dry-run 生成する。
 - `audit_master_rdb.py`
   - 主キー、外部キー、件数差分、公開エクスポート差分を監査する。
@@ -1041,7 +1041,7 @@ Ph0/Ph1 dry-run では以下を必須にする。
 ### 2026-06-20: Ph0設計dry-run
 
 - 本書をことレビューへ提出。
-- `build_master_rdb.py` の実装範囲を確定。
+- `rdb_builders/build_master_rdb.py` の実装範囲を確定。
 - Notion に追加する同期プロパティを確認。
 - ことレビュー指摘A/Bを反映し、Actions単一writerと移行中の担当ファイル凍結を明記。
 
@@ -1125,7 +1125,7 @@ Ph0/Ph1 dry-run では以下を必須にする。
 推奨順:
 
 1. `master_db.py` と schema。
-2. `build_master_rdb.py --dry-run`。
+2. `rdb_builders/build_master_rdb.py --dry-run`。
 3. `audit_master_rdb.py`。
 4. `occurrence_songs` 取り込み。
 5. `event_song_occurrences_public.json` の SQLite 由来生成。

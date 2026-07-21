@@ -1,6 +1,6 @@
 import unittest
 
-from build_bon_odori_rdb import build_unified_rows
+from rdb_builders.build_bon_odori_rdb import build_unified_rows
 
 
 class BuildBonOdoriRdbTest(unittest.TestCase):

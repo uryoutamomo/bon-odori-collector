@@ -3,7 +3,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from build_notion_rdb import build_rows, create_db, prop_plain
+from rdb_builders.build_notion_rdb import build_rows, create_db, prop_plain
 
 
 def title_prop(value):

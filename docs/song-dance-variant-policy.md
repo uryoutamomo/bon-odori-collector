@@ -89,7 +89,7 @@ event_song.dance_variant_id
 
 ## 2026-06-16 実装メモ
 
-`build_bon_odori_rdb.py` の統合RDBに、振りバリエーションの受け皿を追加した。
+`rdb_builders/build_bon_odori_rdb.py` の統合RDBに、振りバリエーションの受け皿を追加した。
 
 追加テーブル:
 

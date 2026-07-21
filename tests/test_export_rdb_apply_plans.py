@@ -3,7 +3,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from export_rdb_apply_plans import build_plans, write_plans
+from rdb_builders.export_rdb_apply_plans import build_plans, write_plans
 
 
 class ExportRdbApplyPlansTest(unittest.TestCase):

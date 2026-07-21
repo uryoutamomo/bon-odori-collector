@@ -4,7 +4,7 @@
 
 ## 位置づけ
 
-`build_notion_rdb.py` は、主要Notion DBをローカルSQLiteへ読み取り専用スナップショットとして保存する。
+`rdb_builders/build_notion_rdb.py` は、主要Notion DBをローカルSQLiteへ読み取り専用スナップショットとして保存する。
 YouTube 2025バックフィルやX/YouTube横断分析で、移行前データを確認するためのレガシーミラー。
 
 2026-06-23以降、公開イベント・イベント正本・キュー運用の正本はNotionではない。
