@@ -7,6 +7,7 @@ historical/season fields are regenerated before sync.
 
 import argparse
 import copy
+import hashlib
 import json
 import os
 import sys
@@ -43,6 +44,8 @@ OUT_JSON = DATA / "public_events_sync_guard.json"
 OUT_MD = DATA / "public_events_sync_guard.md"
 MASTER_DB = DATA / "bon_odori_master.sqlite"
 PUBLICATION_GAP_REVIEW = DATA / "publication_gap_review.json"
+REVIEWED_APPROVALS = DATA / "public_sync_exact_approvals.json"
+REVIEWED_APPROVALS_SCHEMA = "public_sync_exact_approvals_v1"
 
 
 def load_json(path, default):
@@ -57,6 +60,147 @@ def write_json(path, data):
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+def canonical_event_sha256(event):
+    payload = json.dumps(
+        event,
+        ensure_ascii=False,
+        sort_keys=True,
+        separators=(",", ":"),
+    ).encode("utf-8")
+    return hashlib.sha256(payload).hexdigest()
+
+
+def apply_reviewed_exact_approvals(collector_rows, site_rows, payload):
+    """Apply value-pinned review approvals to a comparison-only site copy."""
+    approved_site_rows = copy.deepcopy(site_rows)
+    results = []
+    seen_ids = set()
+
+    schema = payload.get("schema") if isinstance(payload, dict) else None
+    approvals = payload.get("approvals") if isinstance(payload, dict) else None
+    if schema != REVIEWED_APPROVALS_SCHEMA or not isinstance(approvals, list):
+        return {
+            "site_rows": approved_site_rows,
+            "summary": {
+                "schema": schema,
+                "status": "block",
+                "approval_count": 0,
+                "status_counts": {"invalid_manifest": 1},
+                "failure_count": 1,
+                "results": [
+                    {
+                        "id": "manifest",
+                        "kind": "manifest",
+                        "status": "invalid_manifest",
+                    }
+                ],
+            },
+        }
+
+    collector = index_events(collector_rows)
+
+    def site_positions():
+        return {event_key(row): index for index, row in enumerate(approved_site_rows)}
+
+    for approval in approvals:
+        approval_id = str(approval.get("id") or "") if isinstance(approval, dict) else ""
+        kind = approval.get("kind") if isinstance(approval, dict) else None
+        result = {"id": approval_id, "kind": kind}
+        if not approval_id or approval_id in seen_ids or kind not in {"same_key_update", "key_replacement"}:
+            result["status"] = "invalid_approval"
+            results.append(result)
+            continue
+        seen_ids.add(approval_id)
+
+        positions = site_positions()
+        if kind == "same_key_update":
+            key = str(approval.get("event_key") or "")
+            collector_event = collector.get(key)
+            site_index = positions.get(key)
+            site_event = approved_site_rows[site_index] if site_index is not None else None
+            result["event_key"] = key
+            if collector_event is None and site_event is None:
+                result["status"] = "inactive"
+                results.append(result)
+                continue
+            if collector_event is not None and site_event is not None:
+                collector_hash = canonical_event_sha256(collector_event)
+                site_hash = canonical_event_sha256(site_event)
+                result.update({"actual_site_sha256": site_hash, "actual_collector_sha256": collector_hash})
+                if collector_hash == site_hash:
+                    result["status"] = "already_synced"
+                    results.append(result)
+                    continue
+                if (
+                    site_hash == approval.get("site_sha256")
+                    and collector_hash == approval.get("collector_sha256")
+                ):
+                    approved_site_rows[site_index] = copy.deepcopy(collector_event)
+                    result["status"] = "applied"
+                    results.append(result)
+                    continue
+            result["status"] = "hash_mismatch"
+            results.append(result)
+            continue
+
+        site_key = str(approval.get("site_event_key") or "")
+        collector_key = str(approval.get("collector_event_key") or "")
+        collector_event = collector.get(collector_key)
+        old_site_index = positions.get(site_key)
+        new_site_index = positions.get(collector_key)
+        old_site_event = approved_site_rows[old_site_index] if old_site_index is not None else None
+        new_site_event = approved_site_rows[new_site_index] if new_site_index is not None else None
+        result.update({"site_event_key": site_key, "collector_event_key": collector_key})
+        if collector_event is None and old_site_event is None and new_site_event is None:
+            result["status"] = "inactive"
+            results.append(result)
+            continue
+        if collector_event is not None and old_site_event is None and new_site_event is not None:
+            collector_hash = canonical_event_sha256(collector_event)
+            new_site_hash = canonical_event_sha256(new_site_event)
+            result.update(
+                {"actual_site_sha256": new_site_hash, "actual_collector_sha256": collector_hash}
+            )
+            if collector_hash == new_site_hash:
+                result["status"] = "already_synced"
+                results.append(result)
+                continue
+        if collector_event is not None and old_site_event is not None and new_site_event is None:
+            collector_hash = canonical_event_sha256(collector_event)
+            old_site_hash = canonical_event_sha256(old_site_event)
+            result.update(
+                {"actual_site_sha256": old_site_hash, "actual_collector_sha256": collector_hash}
+            )
+            if (
+                old_site_hash == approval.get("site_sha256")
+                and collector_hash == approval.get("collector_sha256")
+            ):
+                approved_site_rows[old_site_index] = copy.deepcopy(collector_event)
+                result["status"] = "applied"
+                results.append(result)
+                continue
+        result["status"] = "hash_mismatch"
+        results.append(result)
+
+    status_counts = dict(Counter(result["status"] for result in results))
+    failure_count = sum(
+        count
+        for status, count in status_counts.items()
+        if status in {"invalid_approval", "hash_mismatch"}
+    )
+    return {
+        "site_rows": approved_site_rows,
+        "summary": {
+            "schema": schema,
+            "status": "pass" if failure_count == 0 else "block",
+            "approval_count": len(approvals),
+            "status_counts": status_counts,
+            "failure_count": failure_count,
+            "results": results,
+        },
+    }
 
 
 def file_mtime(path):
@@ -172,7 +316,7 @@ def apply_required_postprocessors(events, target_year, today, fixed_date_rules_p
     return apply_display_tiers(processed)
 
 
-def guard_decision(raw, postprocessed, allow_individual_review):
+def guard_decision(raw, postprocessed, allow_individual_review, approval_summary=None):
     failures = []
     warnings = []
     post_summary = postprocessed["summary"]
@@ -191,6 +335,8 @@ def guard_decision(raw, postprocessed, allow_individual_review):
         failures.append("individual_review_diffs_remain")
     if site_update_count and not allow_individual_review:
         failures.append("site_update_candidates_remain")
+    if approval_summary and approval_summary.get("failure_count"):
+        failures.append("reviewed_exact_approval_mismatch")
 
     raw_actions = raw["summary"].get("events_by_action") or {}
     if raw_actions.get("restore_collector_from_site_or_reenable_export_postprocess", 0) and not restore_count:
@@ -226,7 +372,19 @@ def build(args):
         args.fixed_date_rules,
     )
     postprocessed = classify_rows(postprocessed_events, site_events)
-    decision = guard_decision(raw, postprocessed, args.allow_individual_review)
+    reviewed_approvals_payload = load_json(args.reviewed_approvals, {})
+    reviewed = apply_reviewed_exact_approvals(
+        postprocessed_events,
+        site_events,
+        reviewed_approvals_payload,
+    )
+    approved = classify_rows(postprocessed_events, reviewed["site_rows"])
+    decision = guard_decision(
+        raw,
+        approved,
+        args.allow_individual_review,
+        approval_summary=reviewed["summary"],
+    )
     procedure_warnings = flow_artifact_warnings(
         args.master_db,
         args.publication_gap_review,
@@ -244,6 +402,7 @@ def build(args):
             "fixed_date_rules": str(args.fixed_date_rules),
             "master_db": str(args.master_db),
             "publication_gap_review": str(args.publication_gap_review),
+            "reviewed_approvals": str(args.reviewed_approvals),
         },
         "parameters": {
             "target_year": args.target_year,
@@ -254,9 +413,11 @@ def build(args):
         "procedure_warnings": procedure_warnings,
         "raw_classification": raw["summary"],
         "postprocessed_classification": postprocessed["summary"],
+        "reviewed_exact_approvals": reviewed["summary"],
+        "approved_classification": approved["summary"],
         "blocking_examples": [
             row
-            for row in postprocessed["event_rows"]
+            for row in approved["event_rows"]
             if row["recommended_action"]
             in {
                 "individual_review",
@@ -308,6 +469,13 @@ def render_markdown(data):
     lines.extend(["", "## After Required Public Postprocessors", ""])
     for key, value in data["postprocessed_classification"].items():
         lines.append(f"- {key}: {value}")
+    lines.extend(["", "## Reviewed Exact Approvals", ""])
+    approval_summary = data["reviewed_exact_approvals"]
+    for key in ["schema", "status", "approval_count", "status_counts", "failure_count"]:
+        lines.append(f"- {key}: {approval_summary.get(key)}")
+    lines.extend(["", "## After Reviewed Exact Approvals", ""])
+    for key, value in data["approved_classification"].items():
+        lines.append(f"- {key}: {value}")
     lines.extend(
         [
             "",
@@ -348,6 +516,7 @@ def main():
     parser.add_argument("--fixed-date-rules", default=str(FIXED_DATE_RULES))
     parser.add_argument("--master-db", default=str(MASTER_DB))
     parser.add_argument("--publication-gap-review", default=str(PUBLICATION_GAP_REVIEW))
+    parser.add_argument("--reviewed-approvals", default=str(REVIEWED_APPROVALS))
     parser.add_argument("--target-year", type=int, default=2026)
     parser.add_argument("--today", default=DEFAULT_TODAY.isoformat())
     parser.add_argument("--allow-individual-review", action="store_true")
@@ -366,7 +535,7 @@ def main():
         f"status={data['decision']['status']} "
         f"failures={data['decision']['failures']} "
         f"warnings={data['decision']['warnings']} "
-        f"postprocessed_actions={data['postprocessed_classification']['events_by_action']}"
+        f"approved_actions={data['approved_classification']['events_by_action']}"
     )
     if summary_path:
         print(f"github_summary={summary_path}")
