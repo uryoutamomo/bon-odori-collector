@@ -3,7 +3,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from build_youtube_rdb import build_youtube_rdb
+from rdb_builders.build_youtube_rdb import build_youtube_rdb
 
 
 class BuildYoutubeRdbTest(unittest.TestCase):

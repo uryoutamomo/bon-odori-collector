@@ -11,10 +11,10 @@ python3 build_all_rdb.py
 個別再生成:
 
 ```bash
-python3 build_notion_rdb.py
-python3 build_evidence_rdb.py
-python3 build_youtube_rdb.py
-python3 build_bon_odori_rdb.py
+python3 -m rdb_builders.build_notion_rdb
+python3 -m rdb_builders.build_evidence_rdb
+python3 -m rdb_builders.build_youtube_rdb
+python3 -m rdb_builders.build_bon_odori_rdb
 ```
 
 ## 現在のDB

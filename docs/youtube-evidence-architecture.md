@@ -50,7 +50,7 @@ YouTube証拠DBの最小フィールド:
 
 ## RDBスナップショット
 
-`build_youtube_rdb.py` で、既存JSONからローカルSQLite `data/youtube_evidence.sqlite` を生成する。
+`rdb_builders/build_youtube_rdb.py` で、既存JSONからローカルSQLite `data/youtube_evidence.sqlite` を生成する。
 これは本番DB移行ではなく、YouTube証拠をリレーショナルに扱うための検証用スナップショット。
 
 主なテーブル:
@@ -68,7 +68,7 @@ YouTube証拠DBの最小フィールド:
 
 ## X/YouTube共通スナップショット
 
-`build_evidence_rdb.py` で、X と YouTube の投稿証拠を同じ SQLite `data/evidence.sqlite` にまとめる。
+`rdb_builders/build_evidence_rdb.py` で、X と YouTube の投稿証拠を同じ SQLite `data/evidence.sqlite` にまとめる。
 こちらは横断検索・アカウント評価・候補レビュー用の作業台。
 
 主なテーブル:
