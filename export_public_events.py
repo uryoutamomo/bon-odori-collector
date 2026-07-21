@@ -33,7 +33,7 @@ from public_json_postprocessors.apply_public_date_predictions import (
 )
 from public_json_postprocessors.apply_public_display_tiers import apply_display_tiers
 import notion_config
-from score_event_recurrence import build_rows, enrich_public_events
+from public_export_support.score_event_recurrence import build_rows, enrich_public_events
 from venues.export_public_venues import (
     MONTH_DAY_RE,
     MONTH_RE,

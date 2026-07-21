@@ -94,7 +94,7 @@ flowchart LR
   apply_gate -- yes --> rdb_apply --> backup
 
   subgraph gap[6. Publication Gap Review]
-    gap_build[python3 build_publication_gap_review.py]
+    gap_build[python3 -m public_export_support.build_publication_gap_review]
     gap_json[data/publication_gap_review.json]
     blocker_gate{イベントblockerが残るか}
     p0_gate{P0: missing_venue_id など}

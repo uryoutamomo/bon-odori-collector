@@ -1,7 +1,7 @@
 import unittest
 from datetime import date
 
-from score_event_recurrence import build_rows, enrich_public_events, parse_edition_number, public_status_for_event
+from public_export_support.score_event_recurrence import build_rows, enrich_public_events, parse_edition_number, public_status_for_event
 
 
 class ScoreEventRecurrenceTest(unittest.TestCase):

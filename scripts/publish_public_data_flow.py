@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parents[1]
 def build_commands(python: str, with_guard: bool) -> list[list[str]]:
     commands = [
         [python, "export_public_events.py"],
-        [python, "build_publication_gap_review.py"],
+        [python, "-m", "public_export_support.build_publication_gap_review"],
         [python, "-m", "public_json_postprocessors.review_missing_occurrence_venues"],
         [python, "-m", "review_console_ops.run_review_console", "--inventory"],
     ]

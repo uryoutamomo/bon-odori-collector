@@ -19,7 +19,7 @@ class PublishPublicDataFlowTest(unittest.TestCase):
             commands,
             [
                 ["python3", "export_public_events.py"],
-                ["python3", "build_publication_gap_review.py"],
+                ["python3", "-m", "public_export_support.build_publication_gap_review"],
                 ["python3", "-m", "public_json_postprocessors.review_missing_occurrence_venues"],
                 ["python3", "-m", "review_console_ops.run_review_console", "--inventory"],
             ],

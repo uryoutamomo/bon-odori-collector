@@ -1,7 +1,7 @@
 import json
 import sqlite3
 
-import build_publication_gap_review as mod
+from public_export_support import build_publication_gap_review as mod
 
 
 def write_json(path, payload):

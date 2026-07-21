@@ -38,7 +38,7 @@ Collector側の公開データ準備は、次の入口でまとめて実行で�
 python3 scripts/publish_public_data_flow.py
 ```
 
-これは `export_public_events.py`、`build_publication_gap_review.py`、
+これは `export_public_events.py`、`public_export_support/build_publication_gap_review.py`、
 `public_json_postprocessors/review_missing_occurrence_venues.py`、`python3 -m review_console_ops.run_review_console --inventory` までを実行する。
 site repo同期とデプロイは含めない。site差分ガードまで同時に確認する場合だけ、site repoが読める環境で
 `--with-guard` を付ける。
@@ -50,7 +50,7 @@ site repo同期とデプロイは含めない。site差分ガードまで同時�
 2. 公開ブロッカーを可視化する。
 
 ```sh
-python3 build_publication_gap_review.py
+python3 -m public_export_support.build_publication_gap_review
 ```
 
 確認先:
@@ -88,7 +88,7 @@ python3 -m public_json_postprocessors.guard_public_events_sync
 ```
 
 `public_json_postprocessors/guard_public_events_sync.py` の pass は「同期差分にブロッカーがない」という意味であり、デプロイ承認ではない。
-`procedure_warnings` が出た場合は、RDB更新後の `build_publication_gap_review.py` または `export_public_events.py` が未実行の可能性があるため、公開同期・デプロイ前に解消または明示レビューする。
+`procedure_warnings` が出た場合は、RDB更新後の `public_export_support/build_publication_gap_review.py` または `export_public_events.py` が未実行の可能性があるため、公開同期・デプロイ前に解消または明示レビューする。
 
 6. site repo へ同期して差分確認する。
    - 追加バッチでは、`bon-odori-collector/data/public/events_public.json` を丸ごとコピーしない。
@@ -107,7 +107,7 @@ python3 -m public_json_postprocessors.guard_public_events_sync
 1. 公開ブロッカーを更新する。
 
 ```sh
-python3 build_publication_gap_review.py
+python3 -m public_export_support.build_publication_gap_review
 ```
 
 2. master RDB へ、レビュー済みの小バッチだけを反映する。
@@ -124,7 +124,7 @@ python3 apply_reviewed_missing_occurrence_venues.py --occurrence-id <occurrence_
 
 ```sh
 python3 export_public_events.py
-python3 build_publication_gap_review.py
+python3 -m public_export_support.build_publication_gap_review
 python3 -m public_json_postprocessors.review_missing_occurrence_venues
 python3 -m review_console_ops.run_review_console --inventory
 ```
@@ -267,7 +267,7 @@ flowchart LR
   apply_gate -- yes --> rdb_apply --> backup
 
   subgraph gap[6. Publication Gap Review]
-    gap_build[python3 build_publication_gap_review.py]
+    gap_build[python3 -m public_export_support.build_publication_gap_review]
     gap_json[data/publication_gap_review.json]
     blocker_gate{イベントblockerが残るか}
     p0_gate{P0: missing_venue_id など}
@@ -335,7 +335,7 @@ stateDiagram-v2
   RdbDryRunReady --> RdbReviewed: dry-run/report確認
   RdbReviewed --> RdbApplied: 明示承認 + 確認文字列
 
-  RdbApplied --> PublicationGapCheck: build_publication_gap_review.py
+  RdbApplied --> PublicationGapCheck: public_export_support/build_publication_gap_review.py
   PublicationGapCheck --> RdbDryRunReady: blockerあり
   PublicationGapCheck --> PublicExported: blockerなし
 

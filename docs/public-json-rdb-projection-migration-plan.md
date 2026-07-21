@@ -56,7 +56,7 @@ The sidecar maps the final public event identity (`name`, `venue`, `date`, `date
 - `venue_id`
 - `event_year`
 
-`compare_public_projection_sources.py` and `build_public_historical_reference_change_requests.py` use this sidecar first.
+`compare_public_projection_sources.py` and `public_export_support/build_public_historical_reference_change_requests.py` use this sidecar first.
 If the sidecar is missing, they fall back to the older `name + venue` matching. This keeps the migration tooling usable on older snapshots while reducing fuzzy-match false negatives on current exports.
 
 ## Migration Steps
