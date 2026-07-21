@@ -214,7 +214,7 @@ Master RDB、Notion、公開JSONへは書かず、後続の登録レビュー/�
 - `却下`: 重複、ノイズ、載せる粒度ではない場合。
 - `保留`: 判断材料が足りない場合。
 
-`apply_review_console_decisions.py --write` で
+`python3 -m review_console_ops.apply_review_console_decisions --write` で
 `data/review_console/staged/rare_signal_backcheck_decisions.json` が出たら、
 `export_rare_signal_backcheck_reviews.py` が `data/rare_signal_backcheck_reviews.json`
 へ変換する。メモ欄のURLから非X URLだけを抽出し、X URLだけの場合は `confirm` ではなく

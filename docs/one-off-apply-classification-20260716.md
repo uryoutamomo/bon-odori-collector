@@ -25,7 +25,7 @@ E「名残の撤去」では、済んだ one-off apply を `legacy/` へ移動�
 | `apply_change_requests.py` | Aの新しい汎用RDB反映口 |
 | `apply_firsthand_field_report.py` | 現地レポート用の専用入口。Aとは入力の性質が違う |
 | `apply_official_notice_report.py` | 掲示物・チラシの複数イベント報告入口。Aとは入力の性質が違う |
-| `apply_review_console_decisions.py` | B完了までレビューコンソール判断のステージング入口 |
+| `review_console_ops/apply_review_console_decisions.py` | B完了までレビューコンソール判断のステージング入口 |
 
 ## 移動候補: 実行済みイベント個別 one-off
 

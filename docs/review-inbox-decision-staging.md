@@ -19,7 +19,7 @@ acceptedでも安全な有限routeへ変換できない値は失敗させ、自�
 既存どおり次で生成する。
 
 ```bash
-python3 apply_review_console_decisions.py --write
+python3 -m review_console_ops.apply_review_console_decisions --write
 ```
 
 出力先は `data/review_console/staged/`。正本decisionへの反映は、schema v2 migrationと

@@ -17,7 +17,7 @@ from datetime import date, datetime, timezone
 from pathlib import Path
 from typing import Any
 
-import collect_ops_metrics
+from review_console_ops import collect_ops_metrics
 from review_inbox_adapters.decision_stage import UPDATES_FILE, build_decision_stage, write_decision_stage
 from youtube_backfill.youtube_title_parts import split_youtube_title
 
@@ -3653,7 +3653,7 @@ LOCAL_OPERATIONS: dict[str, dict[str, Any]] = {
     },
     "ops_metrics": {
         "label": "運用メトリクス保存",
-        "command": ["python3", "collect_ops_metrics.py"],
+        "command": ["python3", "-m", "review_console_ops.collect_ops_metrics"],
         "note": "現在の運用メトリクスをhistory/latest/dashboardへ保存します。",
     },
 }

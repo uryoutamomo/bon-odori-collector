@@ -23,7 +23,7 @@ domain別stagingへ渡す。
 
 ## 現在地
 
-2026-07-17の `run_review_console.py --inventory` では、18ソース、pending 284件。
+2026-07-17の `python3 -m review_console_ops.run_review_console --inventory` では、18ソース、pending 284件。
 `review_inbox_items` は0件で、schema・JSON export・console表示だけが先に存在し、各builderからの
 書き込みと決定の戻し先は未配線。
 

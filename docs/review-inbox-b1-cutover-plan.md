@@ -26,8 +26,8 @@ B1-cutoverで切り替えるのは、まず**ローカルreview consoleのB1系�
 ### 切り替わるconsumer
 
 - `review_console/data.py::build_inventory`
-- `run_review_console.py`のlocal server / `--inventory`
-- `scripts/publish_public_data_flow.py`内の`run_review_console.py --inventory`
+- `review_console_ops/run_review_console.py`のlocal server / `--inventory`
+- `scripts/publish_public_data_flow.py`内の`python3 -m review_console_ops.run_review_console --inventory`
   - inventoryの入力選択だけが変わる。
   - このflowで先に実行される`export_public_events.py`の出力には影響しない。
 
@@ -145,7 +145,7 @@ reader切替は表示入力の選択だけである。
 - promotion、change request、domain applyを実行しない。
 - acceptedにsafe routeがない場合の既存fail-closedを維持する。
 
-read-only比較は`python3 run_review_console.py --preview-reader-modes`で行う。このコマンドは
+read-only比較は`python3 -m review_console_ops.run_review_console --preview-reader-modes`で行う。このコマンドは
 3 modeのinventoryをメモリ上で比較してstdoutへ出すだけで、inventory、decision、stage、
 source fileを一切書かない。実console起動時だけ`--reader-mode`または
 `REVIEW_CONSOLE_READER_MODE`を明示し、未指定時は`legacy`とする。

@@ -39,7 +39,7 @@ python3 scripts/publish_public_data_flow.py
 ```
 
 これは `export_public_events.py`、`build_publication_gap_review.py`、
-`public_json_postprocessors/review_missing_occurrence_venues.py`、`run_review_console.py --inventory` までを実行する。
+`public_json_postprocessors/review_missing_occurrence_venues.py`、`python3 -m review_console_ops.run_review_console --inventory` までを実行する。
 site repo同期とデプロイは含めない。site差分ガードまで同時に確認する場合だけ、site repoが読める環境で
 `--with-guard` を付ける。
 
@@ -126,7 +126,7 @@ python3 apply_reviewed_missing_occurrence_venues.py --occurrence-id <occurrence_
 python3 export_public_events.py
 python3 build_publication_gap_review.py
 python3 -m public_json_postprocessors.review_missing_occurrence_venues
-python3 run_review_console.py --inventory
+python3 -m review_console_ops.run_review_console --inventory
 ```
 
 4. site repo へ、追加対象イベントだけを同期する。

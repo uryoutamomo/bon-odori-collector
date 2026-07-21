@@ -21,7 +21,7 @@ def build_commands(python: str, with_guard: bool) -> list[list[str]]:
         [python, "export_public_events.py"],
         [python, "build_publication_gap_review.py"],
         [python, "-m", "public_json_postprocessors.review_missing_occurrence_venues"],
-        [python, "run_review_console.py", "--inventory"],
+        [python, "-m", "review_console_ops.run_review_console", "--inventory"],
     ]
     if with_guard:
         commands.append([python, "-m", "public_json_postprocessors.guard_public_events_sync", "--report-only"])

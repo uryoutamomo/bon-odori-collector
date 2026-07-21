@@ -293,7 +293,7 @@ def regenerate_outputs(month):
 
 
 def collect_ops_metrics():
-    return run_command(["python3", "collect_ops_metrics.py"])
+    return run_command(["python3", "-m", "review_console_ops.collect_ops_metrics"])
 
 
 def open_ops_metrics_dashboard():
