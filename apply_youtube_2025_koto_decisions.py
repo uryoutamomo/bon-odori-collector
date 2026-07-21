@@ -6,7 +6,7 @@ import tempfile
 from datetime import date
 from pathlib import Path
 
-from export_youtube_2025_manual_confirmation_queue import decision_key
+from youtube_backfill.export_youtube_2025_manual_confirmation_queue import decision_key
 
 
 QUEUE = Path("data/youtube_2025_manual_confirmation_queue.json")

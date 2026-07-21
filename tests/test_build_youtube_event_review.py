@@ -1,6 +1,6 @@
 import unittest
 
-from build_youtube_event_review import build_rows, infer_event_name, infer_venue
+from youtube_backfill.build_youtube_event_review import build_rows, infer_event_name, infer_venue
 
 
 class BuildYoutubeEventReviewTest(unittest.TestCase):

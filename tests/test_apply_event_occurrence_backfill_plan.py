@@ -1,6 +1,6 @@
 import unittest
 
-from apply_event_occurrence_backfill_plan import apply_plan
+from youtube_backfill.apply_event_occurrence_backfill_plan import apply_plan
 
 
 class ApplyEventOccurrenceBackfillPlanTest(unittest.TestCase):

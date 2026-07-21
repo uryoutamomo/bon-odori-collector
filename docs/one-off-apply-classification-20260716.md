@@ -77,7 +77,7 @@ E「名残の撤去」では、済んだ one-off apply を `legacy/` へ移動�
 
 | file | 理由 |
 |---|---|
-| `apply_event_occurrence_backfill_plan.py` | YouTube backfill判断系。Bの受信箱統合まで残す |
+| `youtube_backfill/apply_event_occurrence_backfill_plan.py` | YouTube backfill判断系。Bの受信箱統合まで残す |
 | `apply_missing_venue_review_decisions.py` | レビュー判断系。Bまで残す |
 | `apply_notion_drift_public_intro.py` | Notion drift整理系。別移行範囲 |
 | `apply_notion_drift_source_url_resolutions.py` | Notion drift整理系。別移行範囲 |

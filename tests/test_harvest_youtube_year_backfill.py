@@ -1,6 +1,6 @@
 import unittest
 
-from harvest_youtube_year_backfill import evidence_score, merge_harvests, queue_rows
+from youtube_backfill.harvest_youtube_year_backfill import evidence_score, merge_harvests, queue_rows
 
 
 class HarvestYoutubeYearBackfillTest(unittest.TestCase):

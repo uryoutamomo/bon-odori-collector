@@ -329,7 +329,7 @@ X由来では投稿日と開催日がズレやすいため、本文や画像か�
 
 ### 追加するもの
 
-1. `build_event_schedule_rules.py`
+1. `youtube_backfill/build_event_schedule_rules.py`
    - `event_occurrence_observations.json` から系列ルールを生成する。
    - `event_date_predictions.json` より上位の「分類結果」を出す。
 2. `data/event_schedule_rules.json`
@@ -407,8 +407,8 @@ YouTube APIが使えない日は、以下だけ進める。
 既存の日次処理 `run_daily_youtube_backfill.py` には、すでに以下が入っている。
 
 1. YouTube過去年候補を少量取得する。
-2. `build_event_occurrence_backfill_plan.py` で開催回観測候補を作る。
-3. `apply_event_occurrence_backfill_plan.py` でレビュー済み観測を `event_occurrence_observations.json` へ反映する。
+2. `youtube_backfill/build_event_occurrence_backfill_plan.py` で開催回観測候補を作る。
+3. `youtube_backfill/apply_event_occurrence_backfill_plan.py` でレビュー済み観測を `event_occurrence_observations.json` へ反映する。
 4. `build_event_date_predictions.py --target-year 2026` で日付予測を作る。
 5. `apply_public_date_predictions.py` で公開JSONへ予測を付ける。
 6. `apply_public_historical_references.py`、`apply_public_season_hints.py`、`export_public_events.py` で公開成果物を再生成する。
@@ -430,10 +430,10 @@ YouTube/公式/X/ブログ候補
 具体的には `run_daily_youtube_backfill.py` の `regenerate_outputs()` を次の順序にする。
 
 ```text
-python3 build_event_occurrence_backfill_plan.py
+python3 -m youtube_backfill.build_event_occurrence_backfill_plan
 python3 build_low_confidence_backfill_review.py
-python3 apply_event_occurrence_backfill_plan.py
-python3 build_event_schedule_rules.py --target-year 2026
+python3 -m youtube_backfill.apply_event_occurrence_backfill_plan
+python3 -m youtube_backfill.build_event_schedule_rules --target-year 2026
 python3 build_event_date_predictions.py --target-year 2026
 python3 apply_public_date_predictions.py
 python3 apply_public_historical_references.py
@@ -443,7 +443,7 @@ python3 export_public_events.py
 python3 apply_public_date_predictions.py
 python3 apply_public_historical_references.py
 python3 apply_public_season_hints.py
-python3 build_month_youtube_backfill_queue.py --month N
+python3 -m youtube_backfill.build_month_youtube_backfill_queue --month N
 ```
 
 ただし、毎日フル再生成を重くしすぎない。
@@ -533,7 +533,7 @@ X:
 ## 実装順序
 
 1. `series_key` 品質チェックを先に入れ、名寄せ警告を `event_schedule_rules.md` に出せるようにする。
-2. 既存 `build_event_date_predictions.py` の候補生成を `build_event_schedule_rules.py` 側へ共通化する。
+2. 既存 `build_event_date_predictions.py` の候補生成を `youtube_backfill/build_event_schedule_rules.py` 側へ共通化する。
 3. 固定日と曜日固定のタイブレーク方針を実装する。
 4. `data/event_schedule_rules.json/md` を生成する。
 5. `build_event_date_predictions.py` は `event_schedule_rules.json` を読んで予測日に変換する形へ寄せる。
