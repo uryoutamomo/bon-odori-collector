@@ -1,13 +1,13 @@
 {
   "generated_by": "build_event_song_candidates.py",
-  "count": 1036,
+  "count": 1042,
   "public_event_count": 348,
-  "review_count": 688,
+  "review_count": 694,
   "candidates": [
     {
-      "id": "9870f5a616f1a007",
+      "id": "81bb763b6f00de69",
       "song_name": "あっぱれ音頭",
-      "event_name": "第15回 鴨台盆踊り",
+      "event_name": "第16回 鴨台盆踊り",
       "venue": "大正大学",
       "area": "豊島区",
       "status": "未確認",
@@ -705,6 +705,29 @@
       ],
       "already_public": false,
       "evidence_count": 14
+    },
+    {
+      "id": "122e0bf1ed0e834f",
+      "song_name": "郡上おどり",
+      "event_name": "大和町八幡神社大盆踊り会",
+      "venue": "中野大和町八幡神社",
+      "area": "中野区",
+      "status": "未確認",
+      "confidence": "中",
+      "reasons": [
+        "known_song_context",
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/wadaikoCH/status/2079202036013486085",
+          "date": "2026-07-20T13:49:29+00:00",
+          "text": "和太鼓お祭りCH\n先日行われました、\n「大和町八幡神社大盆踊り会」❣️\n\n順番が前後してしまいましたが、\n郡上おどり、\n吉村建治さん（ゴンタさん）の\n『古調かわさき』を\n\nhttps://t.co/g4UIMeNZTN\n\n公開しました✨"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
     },
     {
       "id": "54dfdc26c823ce30",
@@ -3433,7 +3456,7 @@
       "evidence_count": 1
     },
     {
-      "id": "4ad1c402f380abf1",
+      "id": "f81bbe2344993620",
       "song_name": "東京音頭",
       "event_name": "新宿二丁目太宗寺盆踊り大会",
       "venue": "太宗寺",
@@ -3445,6 +3468,12 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/bakushin339711/status/2079453131692548519",
+          "date": "2026-07-21T06:27:15+00:00",
+          "text": "バクシン\n7/15(水)\n新宿太宗寺盆踊り最終日来ました💃\n最終日の魂舞会タイムは\n大江戸東京音頭(舞台ver？)\n大江戸喧嘩花\n青春ハイヤ\n渋すぎて良い〜🥰大江戸はほぼ見てただけですがしっかりできたら滅茶苦茶格好いい😍\n休憩タイムJMノンストップで踊ってる人達もいて凄い😆💦\n楽しかった♪また来年も楽しみ(^^) https://t.co/qdorS5tWvS"
+        },
         {
           "source": "x_voice",
           "url": "https://x.com/kanko_shinjuku/status/2076909923091579276",
@@ -3459,7 +3488,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 2
+      "evidence_count": 3
     },
     {
       "id": "4e67604da19aebfd",
@@ -5382,7 +5411,7 @@
       "evidence_count": 1
     },
     {
-      "id": "6048db12150917dd",
+      "id": "ff0ac27e4072316e",
       "song_name": "大東京音頭",
       "event_name": "盆踊り大会",
       "venue": "木場二丁目公園",
@@ -5394,6 +5423,18 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=wT9-A5KlN2A",
+          "date": "2026-07-20T10:30:19+00:00",
+          "text": "和太鼓お祭りCH\nおしりたんてい音頭　大國魂神社「府中納涼大盆踊り大会」36　2026年7月4日\n2026年7月4日に大國魂神社で開催された「府中納涼大盆踊り大会」の様子です。\n 歴史ある大國魂神社の境内に響き渡る太鼓の音と、情緒あふれる盆踊りの活気をお楽しみください。\n\n\n今後も各地のお祭りや盆踊りの動画をアップロードしていきます。\n よろしければチャンネル登録・高評価をお願いします！\n\n#盆踊り #大國魂神社 #府中納涼大盆踊り大会 #府中小唄 #夏祭り #和太鼓\n\n\n大國魂神社盆踊り\n１府中小唄　https://youtu.be/t6BoX9FFcGQ\n２大東京音頭　https://youtu.be/R67NzDj5t2w\n３純烈魂　https://youtu.be/hBhXa-EhPvw\n４バハマ・ママ　https://youtu.be/VfkV8713uHQ\n５アンパンマン音頭　https://youtu.be/t6B"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=srWHD74Wwzs",
+          "date": "2026-07-20T10:00:25+00:00",
+          "text": "和太鼓お祭りCH\n【おどるポンポコリン】（Ado）　大國魂神社「府中納涼大盆踊り大会」35　2026年7月4日\n2026年7月4日に大國魂神社で開催された「府中納涼大盆踊り大会」の様子です。\n 歴史ある大國魂神社の境内に響き渡る太鼓の音と、情緒あふれる盆踊りの活気をお楽しみください。\n\n\n今後も各地のお祭りや盆踊りの動画をアップロードしていきます。\n よろしければチャンネル登録・高評価をお願いします！\n\n#盆踊り #大國魂神社 #府中納涼大盆踊り大会 #府中小唄 #夏祭り #和太鼓\n\n\n大國魂神社盆踊り\n１府中小唄　https://youtu.be/t6BoX9FFcGQ\n２大東京音頭　https://youtu.be/R67NzDj5t2w\n３純烈魂　https://youtu.be/hBhXa-EhPvw\n４バハマ・ママ　https://youtu.be/VfkV8713uHQ\n５アンパンマン音頭　https://youtu"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=4RfCTQS0pmU",
@@ -5972,10 +6013,10 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 96
+      "evidence_count": 98
     },
     {
-      "id": "28c482a477ffc561",
+      "id": "6b81cb1fc07d5667",
       "song_name": "東京五輪音頭",
       "event_name": "盆踊り大会",
       "venue": "木場二丁目公園",
@@ -5987,6 +6028,12 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=8NRTaNXw95Y",
+          "date": "2026-07-21T08:00:11+00:00",
+          "text": "和太鼓お祭りCH\n「東京五輪音頭2020」　晴海ふ頭公園盆踊り大会６　2026年7月12日\n2026年7月12日に開催された「晴海ふ頭公園盆踊り大会」での盆踊りの様子をお届けします！\n \n晴海ふ頭公園の心地よい海風を感じながら、\n会場の盛り上がりをぜひ映像でお楽しみください！\n\n\n晴海ふ頭公園盆踊り\n１おしりたんてい音頭　https://youtu.be/a14wHJTz11Y\n２ジャンボリーミッキー　https://youtu.be/qK_wAZd9sfY\n３どんとこいブギ　https://youtu.be/FwKDdeH2N7I\n４河内おとこ節　https://youtu.be/jTg6AaNuJDw\n５Let'sONDOAgain　https://youtu.be/1hoUlCxoGBU\n６東京五輪2020　https://youtu.be/8NRTaNXw95Y\n７これがお江戸の盆ダンス　https://youtu.be"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=F78SMr0SPxY",
@@ -6013,7 +6060,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 4
+      "evidence_count": 5
     },
     {
       "id": "efc2a327d03513ab",
@@ -7142,7 +7189,7 @@
       "evidence_count": 1
     },
     {
-      "id": "03b2d0299f5e1cd9",
+      "id": "0d5f1b2118274990",
       "song_name": "河内音頭",
       "event_name": "盆踊り大会",
       "venue": "木場二丁目公園",
@@ -7154,6 +7201,12 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/NOVA4652/status/2079466890934788301",
+          "date": "2026-07-21T07:21:56+00:00",
+          "text": "NOVA\n行ったことなかったけれど、東京錦糸町での河内音頭盆踊り大会が有名ですよね\n#長野智子アップデート"
+        },
         {
           "source": "x_voice",
           "url": "https://x.com/sakaiyukako/status/2077926148793893006",
@@ -7186,7 +7239,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 5
+      "evidence_count": 6
     },
     {
       "id": "d4f5c190f046d597",
@@ -7560,7 +7613,7 @@
       "evidence_count": 1
     },
     {
-      "id": "453a51683b4b2640",
+      "id": "cd309e2b4afde2a5",
       "song_name": "ダンシングヒーロー",
       "event_name": "郡上おどり in 青山",
       "venue": "秩父宮ラグビー場駐車場",
@@ -7571,6 +7624,12 @@
         "known_song_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=9IOGiOQ1JQ0",
+          "date": "2025-07-05T09:00:26Z",
+          "text": "Tokyo Lonely Walker\n[4K]🇯🇵 鴨台盆踊り ダンシングヒーロー｜おジャ魔女カーニバル!!｜アイドル 他 大正大学 / Japanese Bon dance in Taisho University, Tokyo.\n大正大学で『第15回 鴨台盆踊り「一期ノ縁ル（いちごのよる）」』が開催されました。\n授業の一環として大学生が主催をし、昨年度も来場者が1万人を超えるなど「巣鴨三大盆踊りの一つ」とも呼ばれる人気の盆踊りです。学生の皆さま素敵な空間をありがとうございました！\n\nA bon dance event planned mainly by students was held at Taisho University in Tokyo. This popular Bon Odori event usually attracts more than 10,000 people every year!\n\n2025."
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=_Oc3jeWJLAo",
@@ -7591,7 +7650,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 3
+      "evidence_count": 4
     },
     {
       "id": "35dc98ec57a58282",
@@ -7858,6 +7917,18 @@
         },
         {
           "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=ktKbqi99bFI",
+          "date": "2025-07-08T09:01:13Z",
+          "text": "Tokyo Lonely Walker\n[4K]🇯🇵 盆踊り ダンシング・ヒーロー 鴨台盆踊り 3回分マルチ編集 / Traditional Japanese Bon dance to the tune of Eat You Up.\n大正大学で『第15回 鴨台盆踊り「一期ノ縁ル（いちごのよる）」』が開催されました。\nこの動画では大いに盛り上がった初日の中から3回踊られたダンシング・ヒーローを1つにまとめてみました。どの回も漏れなく盛り上がっている様子が体感できると思います！\n\nA bon dance event planned mainly by students was held at Taisho University in Tokyo. This popular Bon Odori event usually attracts more than 10,000 people every year! In this vide"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=9IOGiOQ1JQ0",
+          "date": "2025-07-05T09:00:26Z",
+          "text": "Tokyo Lonely Walker\n[4K]🇯🇵 鴨台盆踊り ダンシングヒーロー｜おジャ魔女カーニバル!!｜アイドル 他 大正大学 / Japanese Bon dance in Taisho University, Tokyo.\n大正大学で『第15回 鴨台盆踊り「一期ノ縁ル（いちごのよる）」』が開催されました。\n授業の一環として大学生が主催をし、昨年度も来場者が1万人を超えるなど「巣鴨三大盆踊りの一つ」とも呼ばれる人気の盆踊りです。学生の皆さま素敵な空間をありがとうございました！\n\nA bon dance event planned mainly by students was held at Taisho University in Tokyo. This popular Bon Odori event usually attracts more than 10,000 people every year!\n\n2025."
+        },
+        {
+          "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=_Oc3jeWJLAo",
           "date": "2025-07-04T09:00:37Z",
           "text": "Tokyo Lonely Walker\n[4K]🇯🇵 民謡ユニット こでらんに～ w NOURAH/エキゾ盆踊り「星と太陽のマーケット」東京ナイトマーケット / Japanese Bon dance in Shibuya, Tokyo.\n渋谷の代々木公園で「星と太陽のマーケット」が開催中！\nこの日は、民謡ユニット こでらんに～とNOURAH/エキゾ盆踊りのコラボレーション！\n素晴らしい時間でした！！素敵な演奏にあわせて、みんなで踊る素晴らしい時間でした！！\n7日にもNOURAHさんのエキゾ盆踊りがあるので、興味のある方はぜひ！！\n\n【民謡ユニット こでらんに～】\nミカド香奈子：篠笛、唄、お囃子…他、\n小山慶宗(よしむね)：津軽三味線、\nちゃんゆか：太鼓、唄、お囃子…他、\nフレディ塚本：唄\n\nA folk song performance was held in Shibuya, Tokyo. A Bon Odori dan"
@@ -8014,7 +8085,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 63
+      "evidence_count": 65
     },
     {
       "id": "cd28c4cce97924e0",
@@ -8287,9 +8358,9 @@
       "evidence_count": 1
     },
     {
-      "id": "e7bd6612134c279d",
+      "id": "1dd4e6415e713552",
       "song_name": "ダンシングヒーロー",
-      "event_name": "第15回 鴨台盆踊り",
+      "event_name": "第16回 鴨台盆踊り",
       "venue": "大正大学",
       "area": "豊島区",
       "status": "未確認",
@@ -8321,21 +8392,15 @@
           "url": "https://www.youtube.com/watch?v=JJEL3EUhL9o",
           "date": "2025-07-05T14:18:02Z",
           "text": "Urban Walk\n【鴨台盆踊り2025】「ダンシングヒーロー」 楽しすぎて今年もアンコール!! 大正大学盆踊り / 大学生主催盆踊り #盆踊り\n#ダンシングヒーロー #鴨台盆踊り #大正大学 #盆踊り #巣鴨 #jpop \n\n【鴨台盆踊り(大正大学盆踊り)2025】巣鴨三大盆踊り\n開催日時：2025年7月4日(金)　16:00～20:00\n　　　　　2025年7月5日(土)　15:00～20:00\n開催場所 ：大正大学\nhttps://www.google.com/maps/place/%E5%A4%A7%E6%AD%A3%E5%A4%A7%E5%AD%A6/@35.7430019,139.7245915,17z/data=!3m1!4b1!4m6!3m5!1s0x60188d7e646e82a5:0x6cac2c6aa6cc85fd!8m2!3d35.7430019!4d139.7271664!16s%2Fm%2F04cx"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=9IOGiOQ1JQ0",
-          "date": "2025-07-05T09:00:26Z",
-          "text": "Tokyo Lonely Walker\n[4K]🇯🇵 鴨台盆踊り ダンシングヒーロー｜おジャ魔女カーニバル!!｜アイドル 他 大正大学 / Japanese Bon dance in Taisho University, Tokyo.\n大正大学で『第15回 鴨台盆踊り「一期ノ縁ル（いちごのよる）」』が開催されました。\n授業の一環として大学生が主催をし、昨年度も来場者が1万人を超えるなど「巣鴨三大盆踊りの一つ」とも呼ばれる人気の盆踊りです。学生の皆さま素敵な空間をありがとうございました！\n\nA bon dance event planned mainly by students was held at Taisho University in Tokyo. This popular Bon Odori event usually attracts more than 10,000 people every year!\n\n2025."
         }
       ],
       "already_public": false,
-      "evidence_count": 5
+      "evidence_count": 4
     },
     {
-      "id": "a34ca3829d7d1c33",
+      "id": "2021287ee74ec1a1",
       "song_name": "東京音頭",
-      "event_name": "第15回 鴨台盆踊り",
+      "event_name": "第16回 鴨台盆踊り",
       "venue": "大正大学",
       "area": "豊島区",
       "status": "未確認",
@@ -8494,9 +8559,9 @@
       "evidence_count": 24
     },
     {
-      "id": "f22ccad73f17e69d",
+      "id": "82db4c3ea20d5d89",
       "song_name": "河内音頭",
-      "event_name": "第15回 鴨台盆踊り",
+      "event_name": "第16回 鴨台盆踊り",
       "venue": "大正大学",
       "area": "豊島区",
       "status": "未確認",
@@ -8553,9 +8618,9 @@
       "evidence_count": 7
     },
     {
-      "id": "a86b05587307ea25",
+      "id": "b0f59e98a2d2a765",
       "song_name": "炭坑節",
-      "event_name": "第15回 鴨台盆踊り",
+      "event_name": "第16回 鴨台盆踊り",
       "venue": "大正大学",
       "area": "豊島区",
       "status": "未確認",
@@ -8586,35 +8651,6 @@
       ],
       "already_public": false,
       "evidence_count": 3
-    },
-    {
-      "id": "b2b12c59056d50b5",
-      "song_name": "郡上おどり",
-      "event_name": "第15回 鴨台盆踊り",
-      "venue": "大正大学",
-      "area": "豊島区",
-      "status": "未確認",
-      "confidence": "中",
-      "reasons": [
-        "known_song_context",
-        "song_suffix_near_context"
-      ],
-      "evidence": [
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=ktKbqi99bFI",
-          "date": "2025-07-08T09:01:13Z",
-          "text": "Tokyo Lonely Walker\n[4K]🇯🇵 盆踊り ダンシング・ヒーロー 鴨台盆踊り 3回分マルチ編集 / Traditional Japanese Bon dance to the tune of Eat You Up.\n大正大学で『第15回 鴨台盆踊り「一期ノ縁ル（いちごのよる）」』が開催されました。\nこの動画では大いに盛り上がった初日の中から3回踊られたダンシング・ヒーローを1つにまとめてみました。どの回も漏れなく盛り上がっている様子が体感できると思います！\n\nA bon dance event planned mainly by students was held at Taisho University in Tokyo. This popular Bon Odori event usually attracts more than 10,000 people every year! In this vide"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=9IOGiOQ1JQ0",
-          "date": "2025-07-05T09:00:26Z",
-          "text": "Tokyo Lonely Walker\n[4K]🇯🇵 鴨台盆踊り ダンシングヒーロー｜おジャ魔女カーニバル!!｜アイドル 他 大正大学 / Japanese Bon dance in Taisho University, Tokyo.\n大正大学で『第15回 鴨台盆踊り「一期ノ縁ル（いちごのよる）」』が開催されました。\n授業の一環として大学生が主催をし、昨年度も来場者が1万人を超えるなど「巣鴨三大盆踊りの一つ」とも呼ばれる人気の盆踊りです。学生の皆さま素敵な空間をありがとうございました！\n\nA bon dance event planned mainly by students was held at Taisho University in Tokyo. This popular Bon Odori event usually attracts more than 10,000 people every year!\n\n2025."
-        }
-      ],
-      "already_public": false,
-      "evidence_count": 2
     },
     {
       "id": "ab81ff050cc6cfbc",
@@ -19215,6 +19251,28 @@
       "evidence_count": 7
     },
     {
+      "id": "4fb6c7445ad4b94d",
+      "song_name": "大江戸東京音頭",
+      "event_name": "新宿二丁目太宗寺盆踊り大会",
+      "venue": "太宗寺",
+      "area": "新宿区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/bakushin339711/status/2079453131692548519",
+          "date": "2026-07-21T06:27:15+00:00",
+          "text": "バクシン\n7/15(水)\n新宿太宗寺盆踊り最終日来ました💃\n最終日の魂舞会タイムは\n大江戸東京音頭(舞台ver？)\n大江戸喧嘩花\n青春ハイヤ\n渋すぎて良い〜🥰大江戸はほぼ見てただけですがしっかりできたら滅茶苦茶格好いい😍\n休憩タイムJMノンストップで踊ってる人達もいて凄い😆💦\n楽しかった♪また来年も楽しみ(^^) https://t.co/qdorS5tWvS"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
       "id": "406cc81433801b2c",
       "song_name": "新宿音頭",
       "event_name": "新宿二丁目太宗寺盆踊り大会",
@@ -20798,6 +20856,34 @@
       "evidence_count": 1
     },
     {
+      "id": "7331a323de321175",
+      "song_name": "3万人の踊り",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/FINDERS_media/status/2079379968015077885",
+          "date": "2026-07-21T01:36:32+00:00",
+          "text": "FINDERS（ファインダーズ）｜あなたのシゴトに、新たな視点を。\n中目黒の夏、1.3万人の踊りの輪が再び。生歌で楽しむ盆踊り大会が開催｜昨年約1.3万人が来場した夏祭りが8月29日・30日に開催｜子ども屋台やキッチンカー、事前練習会も実施\nhttps://t.co/lJfGLokh3x"
+        },
+        {
+          "source": "latest_news",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBHWlplZEN2UnJIS2RDdW9oM3BHRi1pWDlxX2N5VVBQU0puVV8xUmZuUTRMS0VlZ2ZkcHU2M0tlMjJQSndlb0c2dFZvZnFsdw?oc=5",
+          "date": "Sun, 19 Jul 2026 23:54:53 GMT",
+          "text": "中目黒の夏、1.3万人の踊りの輪が再び。生歌で楽しむ盆踊り大会が開催 - finders.me"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 2
+    },
+    {
       "id": "cd85266357a93924",
       "song_name": "3年前は東京音頭",
       "event_name": "盆踊り大会",
@@ -20814,6 +20900,28 @@
           "url": "https://x.com/bon__juu/status/2077993662198559001",
           "date": "2026-07-17T05:47:50+00:00",
           "text": "盆獣 ・Bonjū\n7/16 祐天寺みたま祭り 子ども盆踊り大会\n\n地元の会場🏮\n相変わらず子どもの部が素敵で難しい❣今回は練習用の動画撮影がメイン\n3年前は東京音頭も踊れない見物人だった私、今年はついに櫓に潜入!（愛妻は今も見守り役）\n足場がちょっと不安定で狭いので、後ろ足のかかと上げは安全のため封印😅 https://t.co/JcxG0HtMae"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "3a5046fd86b00e09",
+      "song_name": "4種類くらいの踊り",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/FFleurs/status/2079186009099809045",
+          "date": "2026-07-20T12:45:48+00:00",
+          "text": "Fleur de Fleurs\n亀有中央町会・亀有三和町会納涼盆踊り大会、@ゆうろーど\n最終日。近隣の色んな町会から続々と揃い浴衣の踊り手さんが現れて、120メートルくらいの踊りの楕円に\nダンシング・ヒーローは 4種類くらいの踊り方が混在してちょっとしたカオスだった。でもそれも楽しい♪ https://t.co/7cFelpucVO"
         }
       ],
       "already_public": false,
@@ -20960,7 +21068,7 @@
       "evidence_count": 1
     },
     {
-      "id": "33fa2c03ecfab944",
+      "id": "081ceecc4261bf73",
       "song_name": "おしりたんてい音頭",
       "event_name": "盆踊り大会",
       "venue": "木場二丁目公園",
@@ -20972,6 +21080,18 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=8NRTaNXw95Y",
+          "date": "2026-07-21T08:00:11+00:00",
+          "text": "和太鼓お祭りCH\n「東京五輪音頭2020」　晴海ふ頭公園盆踊り大会６　2026年7月12日\n2026年7月12日に開催された「晴海ふ頭公園盆踊り大会」での盆踊りの様子をお届けします！\n \n晴海ふ頭公園の心地よい海風を感じながら、\n会場の盛り上がりをぜひ映像でお楽しみください！\n\n\n晴海ふ頭公園盆踊り\n１おしりたんてい音頭　https://youtu.be/a14wHJTz11Y\n２ジャンボリーミッキー　https://youtu.be/qK_wAZd9sfY\n３どんとこいブギ　https://youtu.be/FwKDdeH2N7I\n４河内おとこ節　https://youtu.be/jTg6AaNuJDw\n５Let'sONDOAgain　https://youtu.be/1hoUlCxoGBU\n６東京五輪2020　https://youtu.be/8NRTaNXw95Y\n７これがお江戸の盆ダンス　https://youtu.be"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=wT9-A5KlN2A",
+          "date": "2026-07-20T10:30:19+00:00",
+          "text": "和太鼓お祭りCH\nおしりたんてい音頭　大國魂神社「府中納涼大盆踊り大会」36　2026年7月4日\n2026年7月4日に大國魂神社で開催された「府中納涼大盆踊り大会」の様子です。\n 歴史ある大國魂神社の境内に響き渡る太鼓の音と、情緒あふれる盆踊りの活気をお楽しみください。\n\n\n今後も各地のお祭りや盆踊りの動画をアップロードしていきます。\n よろしければチャンネル登録・高評価をお願いします！\n\n#盆踊り #大國魂神社 #府中納涼大盆踊り大会 #府中小唄 #夏祭り #和太鼓\n\n\n大國魂神社盆踊り\n１府中小唄　https://youtu.be/t6BoX9FFcGQ\n２大東京音頭　https://youtu.be/R67NzDj5t2w\n３純烈魂　https://youtu.be/hBhXa-EhPvw\n４バハマ・ママ　https://youtu.be/VfkV8713uHQ\n５アンパンマン音頭　https://youtu.be/t6B"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=1hoUlCxoGBU",
@@ -21022,7 +21142,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 8
+      "evidence_count": 10
     },
     {
       "id": "c8611a709ed14597",
@@ -21525,6 +21645,28 @@
       "evidence_count": 1
     },
     {
+      "id": "e96a92b4cc5976ce",
+      "song_name": "と揃い浴衣の踊り",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/FFleurs/status/2079186009099809045",
+          "date": "2026-07-20T12:45:48+00:00",
+          "text": "Fleur de Fleurs\n亀有中央町会・亀有三和町会納涼盆踊り大会、@ゆうろーど\n最終日。近隣の色んな町会から続々と揃い浴衣の踊り手さんが現れて、120メートルくらいの踊りの楕円に\nダンシング・ヒーローは 4種類くらいの踊り方が混在してちょっとしたカオスだった。でもそれも楽しい♪ https://t.co/7cFelpucVO"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
       "id": "17353b1b6fd3d94d",
       "song_name": "な季節",
       "event_name": "盆踊り大会",
@@ -21563,28 +21705,6 @@
           "url": "https://www.youtube.com/watch?v=1ClPc7T1bxM",
           "date": "2025-10-04T10:00:03Z",
           "text": "和太鼓お祭りチャンネル\nにっぽん花咲か音頭　杉大門通り盆踊り大会38　2025年9月21日\n2025年9月21日に行われました、\n「杉大門通り商店街盆踊り大会」の様子です。\n\n\n杉大門盆踊り\n１東京音頭　https://youtu.be/HwJzkUH_hO0\n２大東京音頭　https://youtu.be/txpcR7qq74g\n３炭坑節　https://youtu.be/-RXW7ZL9X44\n４八木節　https://youtu.be/0FTC8TLY0kk\n５新宿音頭　https://youtu.be/MUuEGc5PPd4\n６平成新宿音頭　https://youtu.be/T8JtRAmT7sc\n７荒木町小唄　https://youtu.be/oZIq8yHjdKo\n８いもがらぼくと　https://youtu.be/FCm8Kx38O3M\n９きよしのズンドコ節　https://youtu.be/8Ydfa8Su81c"
-        }
-      ],
-      "already_public": false,
-      "evidence_count": 1
-    },
-    {
-      "id": "6e9273f7a2e2419c",
-      "song_name": "の出演や万博音頭",
-      "event_name": "盆踊り大会",
-      "venue": "木場二丁目公園",
-      "area": "江東区",
-      "status": "未確認",
-      "confidence": "低",
-      "reasons": [
-        "song_suffix_near_context"
-      ],
-      "evidence": [
-        {
-          "source": "x_voice",
-          "url": "https://x.com/stardustkawachi/status/2079132061366104071",
-          "date": "2026-07-20T09:11:26+00:00",
-          "text": "スターダスト河内　7/18 伴林氏神社　19 春日小夏祭り　20 慧灯大師 盆踊り大会\n【blogアップ】\n7/11は大正大学第16回鴨台盆踊り2日目です‼️\n後発隊も合流しパワーアップ😆\n「日中盆踊り」の出演や万博音頭大正大学100周年記念ver.を、お祝いの気持ちで全力で唄い、踊らせていただきました✨\n本編は下記画像リンクから！\n#鴨台盆踊り\n#大正大学\n#盆踊り https://t.co/tzCNZuxw2f"
         }
       ],
       "already_public": false,
@@ -21673,6 +21793,28 @@
           "url": "https://www.youtube.com/watch?v=XklbDTjXDMo",
           "date": "2025-09-30T09:01:01Z",
           "text": "和太鼓お祭りチャンネル\n【まんまる音頭】（都はるみ）　杉大門通り盆踊り大会28　2025年9月21日\n2025年9月21日に行われました、\n「杉大門通り商店街盆踊り大会」の様子です。\n\n\n杉大門盆踊り\n１東京音頭　https://youtu.be/HwJzkUH_hO0\n２大東京音頭　https://youtu.be/txpcR7qq74g\n３炭坑節　https://youtu.be/-RXW7ZL9X44\n４八木節　https://youtu.be/0FTC8TLY0kk\n５新宿音頭　https://youtu.be/MUuEGc5PPd4\n６平成新宿音頭　https://youtu.be/T8JtRAmT7sc\n７荒木町小唄　https://youtu.be/oZIq8yHjdKo\n８いもがらぼくと　https://youtu.be/FCm8Kx38O3M\n９きよしのズンドコ節　https://youtu.be/8Ydfa8"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "78f457be8c4117c3",
+      "song_name": "みんなでスリラー踊り",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/BEAMkinu/status/2079483228407382150",
+          "date": "2026-07-21T08:26:51+00:00",
+          "text": "絹彦\n8/15の盆踊り大会、イベントが被り過ぎててとても不安で、安心したいし、みんなでスリラー踊りたいから、来てくれる人は教えてください🙇‍♂️🙇‍♂️"
         }
       ],
       "already_public": false,
@@ -23637,7 +23779,7 @@
       "evidence_count": 1
     },
     {
-      "id": "af9c8fac64822c25",
+      "id": "bd01570b087546eb",
       "song_name": "巣鴨花咲き音頭",
       "event_name": "盆踊り大会",
       "venue": "木場二丁目公園",
@@ -23648,6 +23790,18 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=hZaj-BGFcOg",
+          "date": "2026-07-20T11:30:26+00:00",
+          "text": "和太鼓お祭りCH\n巣鴨花咲き音頭　「第46回巣鴨盆踊り大会」23　2026年7月18日　巣鴨駅前南口ロータリー盆踊り　巣一商店会\n2026年7月18日、豊島区の巣鴨駅前南口ロータリーにて開催された「第46回巣鴨盆踊り大会」の様子です。\n\n巣一商店会主催のもと、\n駅前の活気ある雰囲気の中で踊られる盆踊りをお届けします。\n地元の方々や観光客が一体となって盛り上がる、\n夏の巣鴨ならではの熱気をお楽しみください！\n\n和太鼓の響きとともに、日本の夏の情緒を感じていただければ幸いです。\n\n#巣鴨 #盆踊り #巣鴨花咲き音頭 #巣一商店会 #夏祭り #和太鼓 #東京の祭り #巣鴨駅前\n\n\n巣鴨駅前盆踊り\n１巣鴨花咲音頭　https://youtu.be/9dqKwAudGS4\n２きよしのドドンパ　https://youtu.be/wq9yyUc_IXY\n３バハマママ　https://youtu.be/TArlwnMgoPM\n４恋するフォーチュ"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=GDEbnE94QBo",
+          "date": "2026-07-20T11:00:11+00:00",
+          "text": "和太鼓お祭りCH\n「ダンシング・ヒーロー」（荻野目洋子）　「第46回巣鴨盆踊り大会」22　2026年7月18日　巣鴨駅前南口ロータリー盆踊り　巣一商店会\n2026年7月18日、豊島区の巣鴨駅前南口ロータリーにて開催された「第46回巣鴨盆踊り大会」の様子です。\n\n巣一商店会主催のもと、\n駅前の活気ある雰囲気の中で踊られる盆踊りをお届けします。\n地元の方々や観光客が一体となって盛り上がる、\n夏の巣鴨ならではの熱気をお楽しみください！\n\n和太鼓の響きとともに、日本の夏の情緒を感じていただければ幸いです。\n\n#巣鴨 #盆踊り #巣鴨花咲き音頭 #巣一商店会 #夏祭り #和太鼓 #東京の祭り #巣鴨駅前\n\n\n巣鴨駅前盆踊り\n１巣鴨花咲音頭　https://youtu.be/9dqKwAudGS4\n２きよしのドドンパ　https://youtu.be/wq9yyUc_IXY\n３バハマママ　https://youtu.be/TArlwnMgo"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=MnJ_jOzYMSE",
@@ -23854,10 +24008,10 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 34
+      "evidence_count": 36
     },
     {
-      "id": "3fd302609f074338",
+      "id": "22778a25bb6ccd23",
       "song_name": "巣鴨花咲音頭",
       "event_name": "盆踊り大会",
       "venue": "木場二丁目公園",
@@ -23868,6 +24022,18 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=hZaj-BGFcOg",
+          "date": "2026-07-20T11:30:26+00:00",
+          "text": "和太鼓お祭りCH\n巣鴨花咲き音頭　「第46回巣鴨盆踊り大会」23　2026年7月18日　巣鴨駅前南口ロータリー盆踊り　巣一商店会\n2026年7月18日、豊島区の巣鴨駅前南口ロータリーにて開催された「第46回巣鴨盆踊り大会」の様子です。\n\n巣一商店会主催のもと、\n駅前の活気ある雰囲気の中で踊られる盆踊りをお届けします。\n地元の方々や観光客が一体となって盛り上がる、\n夏の巣鴨ならではの熱気をお楽しみください！\n\n和太鼓の響きとともに、日本の夏の情緒を感じていただければ幸いです。\n\n#巣鴨 #盆踊り #巣鴨花咲き音頭 #巣一商店会 #夏祭り #和太鼓 #東京の祭り #巣鴨駅前\n\n\n巣鴨駅前盆踊り\n１巣鴨花咲音頭　https://youtu.be/9dqKwAudGS4\n２きよしのドドンパ　https://youtu.be/wq9yyUc_IXY\n３バハマママ　https://youtu.be/TArlwnMgoPM\n４恋するフォーチュ"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=GDEbnE94QBo",
+          "date": "2026-07-20T11:00:11+00:00",
+          "text": "和太鼓お祭りCH\n「ダンシング・ヒーロー」（荻野目洋子）　「第46回巣鴨盆踊り大会」22　2026年7月18日　巣鴨駅前南口ロータリー盆踊り　巣一商店会\n2026年7月18日、豊島区の巣鴨駅前南口ロータリーにて開催された「第46回巣鴨盆踊り大会」の様子です。\n\n巣一商店会主催のもと、\n駅前の活気ある雰囲気の中で踊られる盆踊りをお届けします。\n地元の方々や観光客が一体となって盛り上がる、\n夏の巣鴨ならではの熱気をお楽しみください！\n\n和太鼓の響きとともに、日本の夏の情緒を感じていただければ幸いです。\n\n#巣鴨 #盆踊り #巣鴨花咲き音頭 #巣一商店会 #夏祭り #和太鼓 #東京の祭り #巣鴨駅前\n\n\n巣鴨駅前盆踊り\n１巣鴨花咲音頭　https://youtu.be/9dqKwAudGS4\n２きよしのドドンパ　https://youtu.be/wq9yyUc_IXY\n３バハマママ　https://youtu.be/TArlwnMgo"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=MnJ_jOzYMSE",
@@ -23996,7 +24162,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 21
+      "evidence_count": 23
     },
     {
       "id": "17bac97093cdee84",
@@ -24049,7 +24215,7 @@
       "evidence_count": 2
     },
     {
-      "id": "2fc8f653a1f23bd2",
+      "id": "8c072a91456c0fe5",
       "song_name": "府中小唄",
       "event_name": "盆踊り大会",
       "venue": "木場二丁目公園",
@@ -24060,6 +24226,18 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=wT9-A5KlN2A",
+          "date": "2026-07-20T10:30:19+00:00",
+          "text": "和太鼓お祭りCH\nおしりたんてい音頭　大國魂神社「府中納涼大盆踊り大会」36　2026年7月4日\n2026年7月4日に大國魂神社で開催された「府中納涼大盆踊り大会」の様子です。\n 歴史ある大國魂神社の境内に響き渡る太鼓の音と、情緒あふれる盆踊りの活気をお楽しみください。\n\n\n今後も各地のお祭りや盆踊りの動画をアップロードしていきます。\n よろしければチャンネル登録・高評価をお願いします！\n\n#盆踊り #大國魂神社 #府中納涼大盆踊り大会 #府中小唄 #夏祭り #和太鼓\n\n\n大國魂神社盆踊り\n１府中小唄　https://youtu.be/t6BoX9FFcGQ\n２大東京音頭　https://youtu.be/R67NzDj5t2w\n３純烈魂　https://youtu.be/hBhXa-EhPvw\n４バハマ・ママ　https://youtu.be/VfkV8713uHQ\n５アンパンマン音頭　https://youtu.be/t6B"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=srWHD74Wwzs",
+          "date": "2026-07-20T10:00:25+00:00",
+          "text": "和太鼓お祭りCH\n【おどるポンポコリン】（Ado）　大國魂神社「府中納涼大盆踊り大会」35　2026年7月4日\n2026年7月4日に大國魂神社で開催された「府中納涼大盆踊り大会」の様子です。\n 歴史ある大國魂神社の境内に響き渡る太鼓の音と、情緒あふれる盆踊りの活気をお楽しみください。\n\n\n今後も各地のお祭りや盆踊りの動画をアップロードしていきます。\n よろしければチャンネル登録・高評価をお願いします！\n\n#盆踊り #大國魂神社 #府中納涼大盆踊り大会 #府中小唄 #夏祭り #和太鼓\n\n\n大國魂神社盆踊り\n１府中小唄　https://youtu.be/t6BoX9FFcGQ\n２大東京音頭　https://youtu.be/R67NzDj5t2w\n３純烈魂　https://youtu.be/hBhXa-EhPvw\n４バハマ・ママ　https://youtu.be/VfkV8713uHQ\n５アンパンマン音頭　https://youtu"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=4RfCTQS0pmU",
@@ -24182,7 +24360,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 20
+      "evidence_count": 22
     },
     {
       "id": "80191fada657c709",
@@ -27491,7 +27669,7 @@
       "evidence_count": 2
     },
     {
-      "id": "8989a33882117fcf",
+      "id": "052b7436ea4cfbe4",
       "song_name": "真室川音頭",
       "event_name": "第51回 浄土寺盆踊り大会",
       "venue": "浄土寺",
@@ -27504,13 +27682,19 @@
       "evidence": [
         {
           "source": "x_voice",
+          "url": "https://x.com/bakushin339711/status/2079452144005152844",
+          "date": "2026-07-21T06:23:20+00:00",
+          "text": "バクシン\n7/8(水)\n赤坂浄土寺盆踊りの練習会へ行って来ました。あかね会様リードのもと\n赤坂小唄、真室川音頭(団扇)等難易度高い赤坂ナンバーを練習！全体の所作はある程度分かったがやはり難しい💦\n練習あるのみ！！\n本番もまたよろしくお願い致します🙇 https://t.co/bFW28eseYm"
+        },
+        {
+          "source": "x_voice",
           "url": "https://x.com/tanoshiki_kana/status/2078446377517174845",
           "date": "2026-07-18T11:46:46+00:00",
           "text": "楽しき哉。\n7/17（金） #浄土寺 #盆踊り 練習会へ。団扇ワークが美しい #赤坂小唄 #真室川音頭 踊れて嬉しい 来週の #浄土寺盆踊り 楽しみ😌#赤坂音頭 #赤坂豊川音頭 #赤坂あかね音頭 赤坂は素敵な踊りがいっぱい💕#赤坂あかね会 さま、お世話になりました🙏 https://t.co/CWlQNk5MDa"
         }
       ],
       "already_public": false,
-      "evidence_count": 1
+      "evidence_count": 2
     },
     {
       "id": "41770f203bab720a",
@@ -27557,7 +27741,7 @@
       "evidence_count": 1
     },
     {
-      "id": "066a0fdcaa09b750",
+      "id": "d3d1cb035ad81e20",
       "song_name": "赤坂小唄",
       "event_name": "第51回 浄土寺盆踊り大会",
       "venue": "浄土寺",
@@ -27570,13 +27754,19 @@
       "evidence": [
         {
           "source": "x_voice",
+          "url": "https://x.com/bakushin339711/status/2079452144005152844",
+          "date": "2026-07-21T06:23:20+00:00",
+          "text": "バクシン\n7/8(水)\n赤坂浄土寺盆踊りの練習会へ行って来ました。あかね会様リードのもと\n赤坂小唄、真室川音頭(団扇)等難易度高い赤坂ナンバーを練習！全体の所作はある程度分かったがやはり難しい💦\n練習あるのみ！！\n本番もまたよろしくお願い致します🙇 https://t.co/bFW28eseYm"
+        },
+        {
+          "source": "x_voice",
           "url": "https://x.com/tanoshiki_kana/status/2078446377517174845",
           "date": "2026-07-18T11:46:46+00:00",
           "text": "楽しき哉。\n7/17（金） #浄土寺 #盆踊り 練習会へ。団扇ワークが美しい #赤坂小唄 #真室川音頭 踊れて嬉しい 来週の #浄土寺盆踊り 楽しみ😌#赤坂音頭 #赤坂豊川音頭 #赤坂あかね音頭 赤坂は素敵な踊りがいっぱい💕#赤坂あかね会 さま、お世話になりました🙏 https://t.co/CWlQNk5MDa"
         }
       ],
       "already_public": false,
-      "evidence_count": 1
+      "evidence_count": 2
     },
     {
       "id": "f2dc4b31a0b59a2a",
@@ -29013,6 +29203,28 @@
       "evidence_count": 45
     },
     {
+      "id": "dfce92ea31f16c98",
+      "song_name": "根津藍染通り音頭",
+      "event_name": "赤坂氷川祭 盆踊り大会",
+      "venue": "赤坂氷川神社",
+      "area": "港区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/mu4324/status/2079394341139947660",
+          "date": "2026-07-21T02:33:38+00:00",
+          "text": "宇佐美\n今年の杉大門盆踊りは9月13日だから、今年の赤坂氷川神社盆踊り最終日と同じだね、去年も赤坂氷川神社盆踊り最終日同じだった、去年は杉大門盆踊り最初の休憩が終わってから、根津藍染通り音頭会に行って踊って、途中土砂降りで中止になった。"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
       "id": "f36d5914ddc61fa0",
       "song_name": "おこさ節",
       "event_name": "謝恩納涼盆踊り大会（青山善光寺）",
@@ -29825,9 +30037,9 @@
       "evidence_count": 1
     },
     {
-      "id": "fec66bdf476d40ae",
+      "id": "de8eafa2960d91a8",
       "song_name": "おしりたんてい音頭",
-      "event_name": "第15回 鴨台盆踊り",
+      "event_name": "第16回 鴨台盆踊り",
       "venue": "大正大学",
       "area": "豊島区",
       "status": "未確認",
@@ -29847,9 +30059,9 @@
       "evidence_count": 1
     },
     {
-      "id": "bf23f4db4e19fe19",
+      "id": "4297171d6016df5d",
       "song_name": "ぜひ踊り",
-      "event_name": "第15回 鴨台盆踊り",
+      "event_name": "第16回 鴨台盆踊り",
       "venue": "大正大学",
       "area": "豊島区",
       "status": "未確認",
@@ -29869,9 +30081,31 @@
       "evidence_count": 1
     },
     {
-      "id": "1c3aeb61ec0c6105",
+      "id": "be3beb98fbf8b41a",
+      "song_name": "の出演や万博音頭",
+      "event_name": "第16回 鴨台盆踊り",
+      "venue": "大正大学",
+      "area": "豊島区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/stardustkawachi/status/2079132061366104071",
+          "date": "2026-07-20T09:11:26+00:00",
+          "text": "スターダスト河内　7/18 伴林氏神社　19 春日小夏祭り　20 慧灯大師 盆踊り大会\n【blogアップ】\n7/11は大正大学第16回鴨台盆踊り2日目です‼️\n後発隊も合流しパワーアップ😆\n「日中盆踊り」の出演や万博音頭大正大学100周年記念ver.を、お祝いの気持ちで全力で唄い、踊らせていただきました✨\n本編は下記画像リンクから！\n#鴨台盆踊り\n#大正大学\n#盆踊り https://t.co/tzCNZuxw2f"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "00e1c2c20b913763",
       "song_name": "よさこいまた踊り",
-      "event_name": "第15回 鴨台盆踊り",
+      "event_name": "第16回 鴨台盆踊り",
       "venue": "大正大学",
       "area": "豊島区",
       "status": "未確認",
@@ -29891,9 +30125,9 @@
       "evidence_count": 1
     },
     {
-      "id": "ef5f0d66e649b3c1",
+      "id": "086269b3f6d9b00b",
       "song_name": "万博音頭",
-      "event_name": "第15回 鴨台盆踊り",
+      "event_name": "第16回 鴨台盆踊り",
       "venue": "大正大学",
       "area": "豊島区",
       "status": "未確認",
@@ -29919,9 +30153,9 @@
       "evidence_count": 2
     },
     {
-      "id": "0f9967da86d28df9",
+      "id": "8ffd01794bc6c746",
       "song_name": "交野節",
-      "event_name": "第15回 鴨台盆踊り",
+      "event_name": "第16回 鴨台盆踊り",
       "venue": "大正大学",
       "area": "豊島区",
       "status": "未確認",
@@ -29947,9 +30181,9 @@
       "evidence_count": 2
     },
     {
-      "id": "7fb04fea4a075fa0",
+      "id": "a191d8d1dbff565b",
       "song_name": "人と地域がつながる季節",
-      "event_name": "第15回 鴨台盆踊り",
+      "event_name": "第16回 鴨台盆踊り",
       "venue": "大正大学",
       "area": "豊島区",
       "status": "未確認",
@@ -29969,9 +30203,9 @@
       "evidence_count": 1
     },
     {
-      "id": "db7f93e682b0004d",
+      "id": "470eacd5f428f7e5",
       "song_name": "仏像音頭",
-      "event_name": "第15回 鴨台盆踊り",
+      "event_name": "第16回 鴨台盆踊り",
       "venue": "大正大学",
       "area": "豊島区",
       "status": "未確認",
@@ -29991,9 +30225,9 @@
       "evidence_count": 1
     },
     {
-      "id": "d70262412943bec8",
+      "id": "efc7f1d10a137ff2",
       "song_name": "大江戸東京音頭",
-      "event_name": "第15回 鴨台盆踊り",
+      "event_name": "第16回 鴨台盆踊り",
       "venue": "大正大学",
       "area": "豊島区",
       "status": "未確認",
@@ -30025,9 +30259,9 @@
       "evidence_count": 3
     },
     {
-      "id": "fb1fe896cdf65cca",
+      "id": "ec4133e3e9b23e6b",
       "song_name": "巣鴨音頭",
-      "event_name": "第15回 鴨台盆踊り",
+      "event_name": "第16回 鴨台盆踊り",
       "venue": "大正大学",
       "area": "豊島区",
       "status": "未確認",
@@ -30053,9 +30287,9 @@
       "evidence_count": 2
     },
     {
-      "id": "df8cc47ae8999b12",
+      "id": "351ed0015a395bc4",
       "song_name": "恵聖さん生唄の種物音頭",
-      "event_name": "第15回 鴨台盆踊り",
+      "event_name": "第16回 鴨台盆踊り",
       "venue": "大正大学",
       "area": "豊島区",
       "status": "未確認",
@@ -30075,9 +30309,9 @@
       "evidence_count": 1
     },
     {
-      "id": "6880159ebd92f18e",
+      "id": "6aec9b50ed8c181d",
       "song_name": "本番前最後の踊り",
-      "event_name": "第15回 鴨台盆踊り",
+      "event_name": "第16回 鴨台盆踊り",
       "venue": "大正大学",
       "area": "豊島区",
       "status": "未確認",
@@ -30097,9 +30331,9 @@
       "evidence_count": 1
     },
     {
-      "id": "53162083cde26bbb",
+      "id": "ea68d1a9fe8ec6b6",
       "song_name": "歴史を辿る河内音頭",
-      "event_name": "第15回 鴨台盆踊り",
+      "event_name": "第16回 鴨台盆踊り",
       "venue": "大正大学",
       "area": "豊島区",
       "status": "未確認",
@@ -30149,9 +30383,9 @@
       "evidence_count": 6
     },
     {
-      "id": "808b54f0d2afa249",
+      "id": "3e125417d32efd2c",
       "song_name": "沢山踊り",
-      "event_name": "第15回 鴨台盆踊り",
+      "event_name": "第16回 鴨台盆踊り",
       "venue": "大正大学",
       "area": "豊島区",
       "status": "未確認",
@@ -30171,9 +30405,9 @@
       "evidence_count": 1
     },
     {
-      "id": "31ef8039da8c5892",
+      "id": "d9e77c82e0358d57",
       "song_name": "河内おとこ節",
-      "event_name": "第15回 鴨台盆踊り",
+      "event_name": "第16回 鴨台盆踊り",
       "venue": "大正大学",
       "area": "豊島区",
       "status": "未確認",
@@ -30193,9 +30427,9 @@
       "evidence_count": 1
     },
     {
-      "id": "9628e391421d483e",
+      "id": "8e0e01d35aa1e24f",
       "song_name": "種物音頭",
-      "event_name": "第15回 鴨台盆踊り",
+      "event_name": "第16回 鴨台盆踊り",
       "venue": "大正大学",
       "area": "豊島区",
       "status": "未確認",
@@ -30215,9 +30449,9 @@
       "evidence_count": 1
     },
     {
-      "id": "dceb3fed5a8bea48",
+      "id": "d52f001d6ac1865f",
       "song_name": "飛島音頭",
-      "event_name": "第15回 鴨台盆踊り",
+      "event_name": "第16回 鴨台盆踊り",
       "venue": "大正大学",
       "area": "豊島区",
       "status": "未確認",
@@ -39157,16 +39391,10 @@
           "url": "https://www.youtube.com/watch?v=Rag_--g3Y9Q",
           "date": "2025-05-25T11:41:48Z",
           "text": "Tokyo Lonely Walker\n[4K]🇯🇵 【生演奏盆踊り】民謡ガールズバンド｜第5回 千住・人情芸術祭 1DAYパフォーマンス表現街 / Japanese Bon dance in Senjyu, Tokyo.\n東京の千住ほんちょう商店街で「第5回 千住・人情芸術祭 1DAYパフォーマンス表現街」が開催され、民謡ガールズバンドさんの生演奏盆踊りに行ってきました！\n民謡ガールズバンドさんの生唄・生演奏はとても素晴らしく、1時間のパフォーマンスはあっという間に過ぎていきました！\n多くの踊り手さんも参加され、大いに盛り上がりました！\nありがとうございました！！\n\nA Bon Odori dance with live music and singing was held in Kitasenju, Tokyo. The performance was performed by a Minyo Girls' Band was"
-        },
-        {
-          "source": "latest_news",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5saWw4NVZNM1AybHZ2c0NZNkNOa2xzSlFMOXFJQTNXdDFEZmRKTk5ENHpyWTcxcTJOWFNhakxVWTFqQVFJcTlMSWdRYXVWc291T3lpcQ?oc=5",
-          "date": "Sun, 19 Jul 2026 12:54:25 GMT",
-          "text": "7月29日、30日に開催される「すみだ錦糸町河内音頭大盆踊り大会」 - すみだ経済新聞"
         }
       ],
       "already_public": true,
-      "evidence_count": 25
+      "evidence_count": 24
     },
     {
       "id": "7a7fb49d90eeab18",

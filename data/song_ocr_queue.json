@@ -1,6 +1,6 @@
 {
   "generated_by": "build_song_ocr_queue.py",
-  "count": 29,
+  "count": 30,
   "items": [
     {
       "id": "b21783a2a9785946",
@@ -454,6 +454,24 @@
         "pic.x.com/Li0cPrPNWY"
       ],
       "text": "昨日25年ぶりくらいに私が子どもの頃に行ってた盆踊り大会に行ったけど、無料だったうちわは1枚10円以上の募金、ﾀﾞﾝｼﾝｸﾞﾋｰﾛ-、RPG、希望の轍、夜に駆けるが盆踊りの曲目になってて、いろいろ衝撃だったけど盆踊りって楽しいと思いました https://t.co/Li0cPrPNWY",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "85b25891821f830e",
+      "status": "needs_ocr",
+      "account": "@sakaiyukako",
+      "url": "https://x.com/sakaiyukako/status/2079472103699665187",
+      "tweet_id": "2079472103699665187",
+      "date": "2026-07-21T07:42:38+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HNvE2yzawAAsIfe.jpg",
+        "https://t.co/VYDjaGubru",
+        "pic.x.com/VYDjaGubru",
+        "https://pbs.twimg.com/media/HNvE2y5acAAltSy.jpg",
+        "https://pbs.twimg.com/media/HNvE2yua8AAWf9c.jpg",
+        "https://pbs.twimg.com/media/HNvE2yva8AAAmNz.jpg"
+      ],
+      "text": "🏮坂井ユカコの墨田区盆踊り探訪　その2・その3\n外手小学校地区連合盆踊り大会／緑小学校地区連合盆踊り大会\n\n夏休みに入ると、墨田区では学校単位の連合子ども会などが主催する盆踊り大会が区内各地で開催されます。\n今回は、同じ日にお邪魔した二つの「学校地区連合盆踊り大会」をご紹介します。\n\nまずは、地元・外手小学校地区連合盆踊り大会。\n\n昨年、外手小学校の校庭は人工芝にリニューアルされました。校庭の環境が変わったこともあり、現在は道路を挟んだ若宮公園を会場に開催されています。\n\nこの盆踊り大会の大きな特徴は、各町会の太鼓連の子どもたちの発表の場でもあることです。\n外手小学校地区を構成する6町会には、それぞれ太鼓連があり、秋祭りへ向けて日頃から練習を重ねています。この日は各町会が6曲ずつ披露し、その演奏に合わせて会場の皆さんが踊ります。\n\n来賓席に座っていると、演奏前と演奏後に子どもたち全員が元気いっぱいに挨拶をしてくれます。これがまた、本当に可愛らしい。\n「次は〇〇町会、曲目は△△！」とめくりで紹介されるたびに、太鼓の音が響き渡り、町会の皆さんも一緒に輪に加わります。\n\nオバQ音頭、八木節、",
       "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
     }
   ]
