@@ -4,7 +4,7 @@ import unittest
 from argparse import Namespace
 from pathlib import Path
 
-import sync_master_to_notion as syncer
+from legacy.notion_writes import sync_master_to_notion as syncer
 
 
 class SyncMasterToNotionTest(unittest.TestCase):

@@ -5,6 +5,7 @@ from manual_apply_guards import require_confirmation
 
 
 ROOT = Path(__file__).resolve().parents[1]
+LEGACY_NOTION_WRITES = ROOT / "legacy" / "notion_writes"
 
 
 class LegacyNotionWritebackPolicyTest(unittest.TestCase):
@@ -17,7 +18,9 @@ class LegacyNotionWritebackPolicyTest(unittest.TestCase):
         require_confirmation(True, "PHRASE", "PHRASE", "demo")
 
     def test_sync_master_to_notion_is_frozen_break_glass_only(self):
-        script = (ROOT / "sync_master_to_notion.py").read_text(encoding="utf-8")
+        script = (LEGACY_NOTION_WRITES / "sync_master_to_notion.py").read_text(
+            encoding="utf-8"
+        )
 
         self.assertIn("FROZEN_WRITEBACK_MESSAGE", script)
         self.assertIn("allow_frozen_notion_write", script)
@@ -34,7 +37,7 @@ class LegacyNotionWritebackPolicyTest(unittest.TestCase):
 
         for filename, phrase in expectations.items():
             with self.subTest(filename=filename):
-                script = (ROOT / filename).read_text(encoding="utf-8")
+                script = (LEGACY_NOTION_WRITES / filename).read_text(encoding="utf-8")
                 self.assertIn("require_confirmation", script)
                 self.assertIn('parser.add_argument("--confirm"', script)
                 self.assertIn(phrase, script)

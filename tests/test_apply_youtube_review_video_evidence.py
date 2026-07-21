@@ -1,6 +1,10 @@
 import unittest
 
-from apply_youtube_review_video_evidence import build_updates, classify_row, grouped_ready
+from legacy.notion_writes.apply_youtube_review_video_evidence import (
+    build_updates,
+    classify_row,
+    grouped_ready,
+)
 
 
 class FakeApi:

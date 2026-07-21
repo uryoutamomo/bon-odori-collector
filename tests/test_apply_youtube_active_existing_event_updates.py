@@ -1,6 +1,6 @@
 import unittest
 
-from apply_youtube_active_existing_event_updates import (
+from legacy.notion_writes.apply_youtube_active_existing_event_updates import (
     build_updates,
     event_summary_note,
     has_existing_youtube_summary,

@@ -1,4 +1,8 @@
-from promote_event_dates import build_candidates, filter_candidates, parse_dates
+from legacy.notion_writes.promote_event_dates import (
+    build_candidates,
+    filter_candidates,
+    parse_dates,
+)
 
 
 def test_parse_explicit_year_range():

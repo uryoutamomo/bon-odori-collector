@@ -8,7 +8,7 @@ import urllib.request
 
 from manual_apply_guards import LEGACY_NOTION_REPAIR_CONFIRMATION, require_confirmation
 from notion_config import EVENT_DATABASE_ID, GLOSSARY_V2_DATABASE_ID, load_local_env
-from register_glossary_v2_seed_candidates import selected_candidates
+from legacy.notion_writes.register_glossary_v2_seed_candidates import selected_candidates
 
 
 load_local_env()

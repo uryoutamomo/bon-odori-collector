@@ -214,6 +214,21 @@ workflow/docs/scriptsからの実行参照がなく、テストだけが import 
 
 workflowには入っていない Ph2/pre-cutover 移行補助5本を `legacy/build-reports/` へ追加移動した。runbookの直接実行コマンドは `PYTHONPATH=. python3 legacy/build-reports/...` に更新し、テストとレビュー補助内の参照パスも移動先へ更新済み。root直下の `build_*.py` は43本になった。`build_low_confidence_backfill_review.py` は `run_daily_youtube_backfill.py` から実行されるため温存する。
 
+## E 第3段 legacy Notion writer 実移動（2026-07-21 おと）
+
+既存runbookですでにmanual-only legacyと定義され、workflow・現役rootコードから参照されない37本を
+`legacy/notion_writes/` へ移動した。さらに参照ゼロ候補のうち、完了済みのretrospective移行補助8本、
+Ph0–Ph2レポート3本、YouTube 2025補助3本、Notion one-off 7本、実験1本、日付固定site sync 1本を
+用途別の `legacy/` 配下へ移動した。削除はせず、repo rootから
+`python3 -m legacy.notion_writes.<module>` でdry-run/rollback用途に実行できる。
+現役コードから参照される6本はrootに残した。第一陣時点でroot直下の `*.py` は
+291本から254本になった。
+
+第二陣を含むroot直下の `*.py` は291本から231本になった。
+
+次段は単純なファイル名規則ではなく、workflow・Python import・tests・runbook参照を再計算した
+`docs/root-python-inventory-20260721.{json,md}` を基準に、小さいクラスタ単位で移動する。
+
 ## C 第1段 重複postprocessorチェーン除去（2026-07-16 おと）
 
 `export_public_events.py` はすでに `apply_public_date_predictions.py` / `apply_public_historical_references.py` /
