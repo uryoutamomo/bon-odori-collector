@@ -9,7 +9,7 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
-from x_source_officiality import assess_source_officiality, load_account_profiles
+from collection_support.x_source_officiality import assess_source_officiality, load_account_profiles
 
 
 DATA = Path("data")

@@ -9,7 +9,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from event_series_normalization import series_event_name
-from event_evidence import dancer_key
+from collection_support.event_evidence import dancer_key
 
 
 DATA = Path("data")

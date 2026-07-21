@@ -14,8 +14,8 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
-from tokyo23_scope import is_outside_tokyo_23_scope
-from x_official_source_accounts import official_account_for_url
+from collection_support.tokyo23_scope import is_outside_tokyo_23_scope
+from collection_support.x_official_source_accounts import official_account_for_url
 
 
 DATA = Path("data")

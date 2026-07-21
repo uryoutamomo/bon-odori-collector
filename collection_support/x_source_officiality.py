@@ -6,14 +6,14 @@ import json
 import re
 from pathlib import Path
 
-from x_official_source_accounts import (
+from collection_support.x_official_source_accounts import (
     load_official_source_accounts,
     norm_handle,
     official_account_for_url,
 )
 
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_ACCOUNT_CANDIDATES = ROOT / "data/x_candidate_accounts.json"
 DEFAULT_OFFICIAL_ACCOUNTS = ROOT / "data/x_official_source_accounts.json"
 

@@ -1,6 +1,6 @@
 import unittest
 
-from event_audit import (
+from collection_support.event_audit import (
     blocking_duplicate_count,
     duplicate_groups,
     normalize_event_name,

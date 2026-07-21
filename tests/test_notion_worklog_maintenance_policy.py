@@ -14,7 +14,7 @@ class NotionWorklogMaintenancePolicyTest(unittest.TestCase):
             "update_youtube_notion_progress.py",
             "update_youtube_followup_progress.py",
             "create_current_work_index_notion.py",
-            "add_current_work_to_first_look_notion.py",
+            "collection_support/add_current_work_to_first_look_notion.py",
             "rename_current_work_first_look_link_notion.py",
             "create_current_location_notion.py",
             "legacy/notion-notes/append_youtube_task_list_to_notion.py",

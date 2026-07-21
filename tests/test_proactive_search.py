@@ -4,7 +4,7 @@ import tempfile
 import unittest
 from datetime import datetime, timezone
 
-from proactive_search import (
+from collection_support.proactive_search import (
     build_queries,
     build_report,
     extract_dates,

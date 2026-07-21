@@ -7,7 +7,7 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_REGISTRY = ROOT / "data/x_official_source_accounts.json"
 SOCIAL_HOSTS = {"x.com", "twitter.com", "www.x.com", "www.twitter.com"}
 

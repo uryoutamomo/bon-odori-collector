@@ -6,7 +6,7 @@ import json
 import re
 from pathlib import Path
 
-from event_evidence import normalize_event_name
+from collection_support.event_evidence import normalize_event_name
 
 
 DEFAULT_PLAN = Path("data/retrospective_event_apply_plan.json")

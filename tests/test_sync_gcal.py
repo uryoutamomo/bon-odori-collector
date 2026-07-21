@@ -93,7 +93,7 @@ class FakeApi:
         self.updates = []
 
     def retrieve_data_source(self, data_source_id):
-        from event_audit import EVENT_SCHEMA
+        from collection_support.event_audit import EVENT_SCHEMA
         from notion_config import (
             EVENT_DATA_SOURCE_ID,
             PLAN_DATA_SOURCE_ID,

@@ -10,13 +10,13 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from bon_odori_songs import extract_song_candidates
-from event_evidence import (
+from collection_support.event_evidence import (
     aggregate_event_candidates,
     build_event_candidate_match_key,
     classify_event_evidence,
     dancer_key,
 )
-from queue_store import normalize_candidate_key
+from collection_support.queue_store import normalize_candidate_key
 
 
 DATA = Path("data")

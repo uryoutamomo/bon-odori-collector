@@ -5,7 +5,7 @@ from pathlib import Path
 from unittest.mock import patch
 
 import collect
-from x_official_source_accounts import (
+from collection_support.x_official_source_accounts import (
     handle_from_social_url,
     is_official_social_url,
     load_official_source_accounts,

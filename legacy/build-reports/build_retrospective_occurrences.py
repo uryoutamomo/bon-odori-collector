@@ -9,9 +9,9 @@ from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
-from event_evidence import dancer_key, normalize_event_name
+from collection_support.event_evidence import dancer_key, normalize_event_name
 from song_occurrences import occurrence_id
-from suppression_rules import is_event_sentence_fragment
+from collection_support.suppression_rules import is_event_sentence_fragment
 
 
 DATA = Path("data")

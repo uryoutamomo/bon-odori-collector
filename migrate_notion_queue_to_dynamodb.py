@@ -14,7 +14,7 @@ import os
 import urllib.request
 from datetime import datetime, timezone
 
-from queue_store import DynamoQueueStore
+from collection_support.queue_store import DynamoQueueStore
 
 
 NOTION_API_BASE = "https://api.notion.com/v1"

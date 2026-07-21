@@ -1,6 +1,6 @@
 import unittest
 
-from add_current_work_to_first_look_notion import first_look_insert_after_id, first_look_link_block
+from collection_support.add_current_work_to_first_look_notion import first_look_insert_after_id, first_look_link_block
 
 
 class AddCurrentWorkToFirstLookNotionTest(unittest.TestCase):

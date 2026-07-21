@@ -6,7 +6,7 @@ import html
 import json
 from pathlib import Path
 
-from merge_glossary_v2_oto_reports import FIRST_REVIEW_TERMS, load_rows
+from collection_support.merge_glossary_v2_oto_reports import FIRST_REVIEW_TERMS, load_rows
 
 
 OUT = Path("data/glossary_v2_oto123_review_ui.html")

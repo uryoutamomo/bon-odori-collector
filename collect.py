@@ -10,7 +10,7 @@ import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-from proactive_search import (
+from collection_support.proactive_search import (
     build_queries,
     build_report,
     check_official_sources,
@@ -22,14 +22,14 @@ from proactive_search import (
     select_targets_for_run,
     update_state_from_report,
 )
-from queue_store import DynamoQueueStore, EventCandidateQueueStore
-from event_evidence import (
+from collection_support.queue_store import DynamoQueueStore, EventCandidateQueueStore
+from collection_support.event_evidence import (
     aggregate_event_candidates,
     build_history_query,
     build_initial_window,
     classify_event_evidence,
 )
-from x_official_source_accounts import load_official_source_accounts
+from collection_support.x_official_source_accounts import load_official_source_accounts
 
 try:
     import feedparser
