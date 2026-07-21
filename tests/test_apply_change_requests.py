@@ -234,6 +234,120 @@ class ApplyChangeRequestsTests(unittest.TestCase):
             0,
         )
 
+    def test_create_current_year_occurrence_marks_past_event_ended(self):
+        self.conn.execute("DELETE FROM event_occurrences WHERE occurrence_id = 'occ_1'")
+        self.conn.commit()
+        payload = {
+            "request_type": "rdb_change_requests",
+            "requests": [
+                {
+                    "request_id": "create_ended_2026",
+                    "change_type": "create_current_year_occurrence",
+                    "series_id": "series_1",
+                    "display_name": "終了済み盆踊り",
+                    "event_year": 2026,
+                    "date_start": "2026-07-10",
+                    "date_end": "2026-07-11",
+                    "venue": {"name": "終了済み会場"},
+                    "source": {
+                        "url": "https://example.com/official-ended",
+                        "kind": "official_current_year",
+                    },
+                }
+            ],
+        }
+        validate_payload(payload)
+
+        on_final_day, first_issues = apply_payload(
+            self.conn,
+            payload,
+            "2026-07-11T00:00:00+00:00",
+        )
+        applied, issues = apply_payload(
+            self.conn,
+            payload,
+            "2026-07-21T00:00:00+00:00",
+        )
+
+        self.assertEqual(first_issues, [])
+        self.assertEqual(on_final_day["requests_applied"][0]["date_status"], "confirmed")
+        self.assertEqual(issues, [])
+        self.assertEqual(applied["requests_applied"][0]["date_status"], "ended")
+        occurrence = self.conn.execute(
+            """
+            SELECT date_status, current_event_state, date_certainty_tier
+            FROM event_occurrences
+            WHERE series_id = 'series_1' AND event_year = 2026
+            """
+        ).fetchone()
+        self.assertEqual(tuple(occurrence), ("ended", "ended", "confirmed"))
+        occurrence_date = self.conn.execute(
+            """
+            SELECT date_type
+            FROM occurrence_dates
+            WHERE occurrence_id = ?
+            """,
+            (applied["requests_applied"][0]["occurrence_id"],),
+        ).fetchone()
+        self.assertEqual(occurrence_date[0], "ended")
+
+    def test_confirm_current_year_date_reuses_existing_exact_date_row(self):
+        self.conn.execute(
+            """
+            INSERT INTO occurrence_dates (
+              occurrence_date_id, occurrence_id, date_start, date_end,
+              date_type, confidence, basis, created_at
+            ) VALUES (
+              'legacy_date_id', 'occ_1', '2026-07-20', '2026-07-21',
+              'confirmed', 'confirmed', 'legacy import', 'now'
+            )
+            """
+        )
+        payload = {
+            "request_type": "rdb_change_requests",
+            "requests": [
+                {
+                    "request_id": "confirm_existing_date",
+                    "change_type": "confirm_current_year_date",
+                    "occurrence_id": "occ_1",
+                    "event_year": 2026,
+                    "date_start": "2026-07-20",
+                    "date_end": "2026-07-21",
+                    "source": {
+                        "url": "https://example.com/current-year",
+                        "kind": "official_current_year",
+                    },
+                }
+            ],
+        }
+        validate_payload(payload)
+
+        applied, issues = apply_payload(
+            self.conn,
+            payload,
+            "2026-07-22T00:00:00+00:00",
+        )
+
+        self.assertEqual(issues, [])
+        self.assertEqual(applied["requests_applied"][0]["date_status"], "ended")
+        dates = self.conn.execute(
+            """
+            SELECT occurrence_date_id, date_type, basis
+            FROM occurrence_dates
+            WHERE occurrence_id = 'occ_1'
+            """
+        ).fetchall()
+        self.assertEqual(
+            [tuple(row) for row in dates],
+            [
+                (
+                    "legacy_date_id",
+                    "ended",
+                    "current-year source: https://example.com/current-year",
+                )
+            ],
+        )
+
     def test_applies_four_finite_change_types(self):
         payload = {
             "request_type": "rdb_change_requests",

@@ -340,7 +340,24 @@ def confirm_occurrence_schedule_venue(
             changed_fields.append("venue_id")
         if date_start is not None:
             changed_fields.append("date_start")
-            date_id = stable_id("date", occurrence_id, date_start, date_end or date_start)
+            effective_date_end = date_end or date_start
+            existing_date = conn.execute(
+                """
+                SELECT occurrence_date_id
+                FROM occurrence_dates
+                WHERE occurrence_id = ?
+                  AND date_start = ?
+                  AND date_end = ?
+                ORDER BY occurrence_date_id
+                LIMIT 1
+                """,
+                (occurrence_id, date_start, effective_date_end),
+            ).fetchone()
+            date_id = (
+                existing_date[0]
+                if existing_date
+                else stable_id("date", occurrence_id, date_start, effective_date_end)
+            )
             conn.execute(
                 """
                 INSERT INTO occurrence_dates (
@@ -349,9 +366,12 @@ def confirm_occurrence_schedule_venue(
                 ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
                 ON CONFLICT(occurrence_date_id) DO UPDATE SET
                   date_start=excluded.date_start,
-                  date_end=excluded.date_end
+                  date_end=excluded.date_end,
+                  date_type=excluded.date_type,
+                  confidence=excluded.confidence,
+                  basis=excluded.basis
                 """,
-                (date_id, occurrence_id, date_start, date_end or date_start, date_status, confidence, date_basis_note or "", now),
+                (date_id, occurrence_id, date_start, effective_date_end, date_status, confidence, date_basis_note or "", now),
             )
         if new_detail != prior_detail:
             changed_fields.append("detail")

@@ -1,6 +1,6 @@
 {
   "generated_by": "apply_change_requests.py",
-  "generated_at": "2026-07-21T02:53:56.948565+00:00",
+  "generated_at": "2026-07-21T03:08:47.069530+00:00",
   "mode": "dry_run",
   "sources": {
     "master_db": "data/bon_odori_master.sqlite",
@@ -36,7 +36,7 @@
       "notion_sync_jobs": 0,
       "observed_occurrence_songs": 28105,
       "observed_occurrences": 1856,
-      "occurrence_dates": 297,
+      "occurrence_dates": 296,
       "occurrence_evidence_links": 102,
       "occurrence_song_evidence_links": 496,
       "occurrence_songs": 323,
@@ -148,6 +148,7 @@
           "source_url"
         ],
         "venue_status": "reused",
+        "date_status": "ended",
         "series_id": "ser_a3a6304574b4feb5",
         "occurrence_created": true
       },
@@ -162,7 +163,8 @@
           "detail",
           "source_url"
         ],
-        "venue_status": "created"
+        "venue_status": "created",
+        "date_status": "confirmed"
       },
       {
         "request_id": "jiyugaoka_2026_add_official_confirmation",
@@ -175,7 +177,8 @@
           "detail",
           "source_url"
         ],
-        "venue_status": "reused"
+        "venue_status": "reused",
+        "date_status": "ended"
       }
     ],
     "requests_unresolved": []

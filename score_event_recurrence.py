@@ -169,12 +169,13 @@ def score_2025_candidate(event: dict) -> tuple[float, list[str], list[str], int 
     return round(score, 2), reasons, cautions, edition_number
 
 
-def public_status_for_event(event: dict) -> dict:
+def public_status_for_event(event: dict, *, today: date = TODAY) -> dict:
     start = parse_iso_date(event.get("date"))
+    end = parse_iso_date(event.get("date_end")) or start
     status = event.get("status")
     year = start.year if start else None
 
-    if year == 2026 and start and start >= TODAY:
+    if year == 2026 and end and end >= today:
         return {
             "public_status": "upcoming_confirmed",
             "public_category": "upcoming",
@@ -258,10 +259,10 @@ def public_note(row: dict) -> str:
     return "今年の日程は未確認です。"
 
 
-def build_rows(events: list[dict]) -> list[dict]:
+def build_rows(events: list[dict], *, today: date = TODAY) -> list[dict]:
     rows = []
     for event in events:
-        scored = public_status_for_event(event)
+        scored = public_status_for_event(event, today=today)
         start = parse_iso_date(event.get("date"))
         row = {
             "event_key": event_key(event),

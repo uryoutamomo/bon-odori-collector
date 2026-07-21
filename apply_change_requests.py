@@ -13,8 +13,9 @@ free-form patch language.
 
 import argparse
 import json
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 import manual_apply_guards
 from event_report_helpers import (
@@ -36,6 +37,7 @@ OUT_MD = DATA / "change_requests_apply_report.md"
 BACKUP_DIR = DATA / "backups"
 PREFLIGHT_DB = DATA / "change_requests_apply_preflight.sqlite"
 SCRIPT_NAME = "apply_change_requests.py"
+JST = ZoneInfo("Asia/Tokyo")
 
 CHANGE_TYPES = {
     "create_current_year_occurrence",
@@ -233,6 +235,16 @@ def _append_detail(conn, occurrence_id, addendum, now):
     return result["changed_fields"]
 
 
+def _current_year_date_status(request, now):
+    """Return ended only after the event's final JST calendar day."""
+    event_end = date.fromisoformat(request.get("date_end") or request["date_start"])
+    applied_at = datetime.fromisoformat(str(now).replace("Z", "+00:00"))
+    if applied_at.tzinfo is None:
+        applied_at = applied_at.replace(tzinfo=timezone.utc)
+    today_jst = applied_at.astimezone(JST).date()
+    return "ended" if event_end < today_jst else "confirmed"
+
+
 def apply_confirm_current_year_date(conn, request, occurrence_id, now):
     occurrence_before = conn.execute(
         "SELECT source_url FROM event_occurrences WHERE occurrence_id = ?",
@@ -256,13 +268,14 @@ def apply_confirm_current_year_date(conn, request, occurrence_id, now):
         venue_id = venue_result["venue_id"]
 
     evidence_id = _upsert_source_evidence(conn, request, now, detected_event_date=request["date_start"])
+    date_status = _current_year_date_status(request, now)
     result = confirm_occurrence_schedule_venue(
         conn,
         occurrence_id,
         venue_id=venue_id,
         date_start=request["date_start"],
         date_end=request.get("date_end"),
-        date_status="confirmed",
+        date_status=date_status,
         lifecycle_status="published",
         confidence=request.get("confidence") or "high",
         source_kind=request["source"]["kind"],
@@ -308,6 +321,7 @@ def apply_confirm_current_year_date(conn, request, occurrence_id, now):
         "evidence_id": evidence_id,
         "changed_fields": result["changed_fields"],
         "venue_status": (venue_result or {}).get("status"),
+        "date_status": date_status,
     }, []
 
 
