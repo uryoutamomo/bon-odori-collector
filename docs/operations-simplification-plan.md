@@ -226,6 +226,10 @@ Ph0–Ph2レポート3本、YouTube 2025補助3本、Notion one-off 7本、実�
 
 第二陣を含むroot直下の `*.py` は291本から231本になった。
 
+第三陣では残る参照ゼロ20本を個別確認し、完了済みblog会場調査5本を
+`legacy/venue_research/`、再利用可能な手動調査・レビュー15本を `scripts/manual/` へ移動した。
+これにより参照ゼロ候補は0本、root直下の `*.py` は211本になった。
+
 次段は単純なファイル名規則ではなく、workflow・Python import・tests・runbook参照を再計算した
 `docs/root-python-inventory-20260721.{json,md}` を基準に、小さいクラスタ単位で移動する。
 

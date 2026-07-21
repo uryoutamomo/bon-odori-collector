@@ -190,7 +190,10 @@ def render_markdown(inventory: dict) -> str:
             "",
         ]
     )
-    lines.extend(f"- `{path}`" for path in candidates)
+    if candidates:
+        lines.extend(f"- `{path}`" for path in candidates)
+    else:
+        lines.append("- なし")
     lines.extend(
         [
             "",

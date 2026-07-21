@@ -20,6 +20,7 @@ python3 -m legacy.notion_writes.<module> --help
 | `youtube_2025/` | 完了済みYouTube 2025移行補助 |
 | `site_sync/` | 日付固定の旧site同期 |
 | `experiments/` | 完了済み使い捨て実験 |
+| `venue_research/` | 完了済みblog会場抽出・登録調査 |
 
 削除・再利用・通常経路への復帰は、対応runbookと最新の
 `docs/root-python-inventory-20260721.md` を確認してから行う。
