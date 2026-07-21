@@ -48,7 +48,7 @@ flowchart TD
 | 自動継続 | Public JSON deterministic postprocessors | `export_public_events.py` が `public_json_postprocessors/apply_public_date_predictions.py` / `public_json_postprocessors/apply_public_historical_references.py` / `public_json_postprocessors/apply_public_season_hints.py` を内部で呼び、公開JSON生成口を一本化する。方針は `docs/public-json-postprocessor-operations.md`。 |
 | 自動継続（一部手動確認） | Build / export / report scripts | `export_*`, `audit_*`, review queue builders, local RDB snapshotsは生成物として自動/手動利用可。Master RDB派生テーブルを直接書く2本は `APPLY MASTER RDB ONE-OFF` 必須。方針は `docs/build-export-report-operations.md`。 |
 | 手動維持 | X candidate / social graph workflows | 継続して手動。X API課金とNotion同期が絡むため、定期自動化しない。実行時は確認文字列必須。方針は `docs/x-candidate-workflows-operations.md`。 |
-| 手動維持 | Local review console | `run_review_console.py` で必要時だけ起動。`127.0.0.1` 専用。レビュー決定は `data/review_console/decisions.json` に保存し、ステージ適用も `data/review_console/staged/` まで。Master RDB/Notion/公開JSONは直接変更しない。方針は `docs/review-console-operations.md`。 |
+| 手動維持 | Local review console | `review_console_ops/run_review_console.py` で必要時だけ起動。`127.0.0.1` 専用。レビュー決定は `data/review_console/decisions.json` に保存し、ステージ適用も `data/review_console/staged/` まで。Master RDB/Notion/公開JSONは直接変更しない。方針は `docs/review-console-operations.md`。 |
 | 手動維持 | AWS / S3 / DynamoDB verify workflows | 継続して手動。検証系なので必要時に叩く。方針は `docs/manual-infra-workflows.md`。 |
 | 手動維持 | domain / WAF / contact-form configure workflows | 継続して手動。`apply=false` defaultを維持し、`apply=true` は確認文字列必須。方針は `docs/manual-infra-workflows.md`。 |
 | 手動維持 | Notion queue migration | legacy one-off。通常運用では実行しない。`apply=false` dry-runのみ軽く実行可能、`apply=true` は確認文字列必須。方針は `docs/notion-queue-migration-operations.md`。 |
@@ -88,7 +88,7 @@ flowchart TD
 | Public JSON deterministic postprocessors | scheduled/local pipeline | `data/public/events_public.json`, `.js` | medium | 自動継続。repo-local生成物のみで、本番deployは別guard。 |
 | Public JSON one-off cleanup scripts | manual script only | `data/public/events_public.json`, `.js` | medium | 手動維持。`APPLY PUBLIC JSON ONE-OFF` 必須。 |
 | Master RDB one-off apply scripts | manual script only | `data/bon_odori_master.sqlite` when `--apply` | high | 手動維持。個別確認文字列、バックアップ、dry-run DBを維持。 |
-| `run_review_console.py` / `apply_review_console_decisions.py` | manual script only | `data/review_console/*` | low-medium | 手動維持。ローカルレビュー用。`apply_review_console_decisions.py --write` もステージファイルだけを書き、運用DBや公開データは変更しない。 |
+| `review_console_ops/run_review_console.py` / `review_console_ops/apply_review_console_decisions.py` | manual script only | `data/review_console/*` | low-medium | 手動維持。ローカルレビュー用。`python3 -m review_console_ops.apply_review_console_decisions --write` もステージファイルだけを書き、運用DBや公開データは変更しない。 |
 
 ## GitHub Actions: site
 

@@ -10,7 +10,7 @@ Updated: 2026-06-26 JST
 ただし、内部の責務は混ぜない。
 
 - レビュー判断: `review_console/` が担う
-- 運用メトリクス収集: `collect_ops_metrics.py` が担う
+- 運用メトリクス収集: `review_console_ops/collect_ops_metrics.py` が担う
 - 実データ反映: 既存の個別 apply スクリプトが担う
 - Notion / Master RDB / 公開 JSON / デプロイ: 管理コンソールから直接変更しない
 
@@ -39,11 +39,11 @@ Updated: 2026-06-26 JST
 
 現状は、次の2つが分かれている。
 
-- `run_review_console.py`
+- `review_console_ops/run_review_console.py`
   - JSON review/queue ファイルを横断して、採用・却下・保留・要調査を保存する
   - 出力は `data/review_console/decisions.json`、export、staged decision file
   - 実データは変更しない
-- `collect_ops_metrics.py`
+- `review_console_ops/collect_ops_metrics.py`
   - 日次収集、YouTube候補、公開補助情報、未整備件数などを集計する
   - 出力は `data/ops_metrics_latest.md`、`data/ops_metrics_history.jsonl`、`data/ops_metrics_dashboard.html`
   - 静的HTMLなので、レビュー操作とは分断されている
@@ -56,9 +56,9 @@ Updated: 2026-06-26 JST
 
 作業名は `盆踊り管理コンソール` とする。
 
-実行コマンドは当面 `python3 run_review_console.py` のままでよい。既存の起動手順を壊さず、画面タイトルと内部APIを広げる。
+実行コマンドは当面 `python3 -m review_console_ops.run_review_console` のままでよい。既存の起動手順を壊さず、画面タイトルと内部APIを広げる。
 
-将来的にファイル名を変えるなら、互換ラッパーとして `run_review_console.py` は残す。
+将来的にファイル名を変えるなら、互換ラッパーとして `review_console_ops/run_review_console.py` は残す。
 
 ## 管理者の主要な問い
 
@@ -279,7 +279,7 @@ MVPでは「読むだけ」を優先する。
 
 - `review_console/data.py` に admin summary 生成関数を追加
 - `review_console/server.py` に `GET /api/admin-summary` を追加
-- `collect_ops_metrics.py` の既存関数を再利用
+- `review_console_ops/collect_ops_metrics.py` の既存関数を再利用
 - テストで `attention` と主要メトリクスが返ることを確認
 
 この段階ではUIを変えない。

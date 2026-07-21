@@ -21,7 +21,7 @@ class PublishPublicDataFlowTest(unittest.TestCase):
                 ["python3", "export_public_events.py"],
                 ["python3", "build_publication_gap_review.py"],
                 ["python3", "-m", "public_json_postprocessors.review_missing_occurrence_venues"],
-                ["python3", "run_review_console.py", "--inventory"],
+                ["python3", "-m", "review_console_ops.run_review_console", "--inventory"],
             ],
         )
         flattened = "\n".join(" ".join(command) for command in commands)

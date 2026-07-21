@@ -80,7 +80,7 @@ Start the console:
 
 ```bash
 cd /Users/ryotauchida/bon-odori-collector
-python3 run_review_console.py
+python3 -m review_console_ops.run_review_console
 ```
 
 Open:
@@ -168,7 +168,7 @@ candidates. The decision is already saved to the source review JSON.
 Do not use `ステージ適用` as a production deployment action. It only creates
 local apply packets under `data/review_console/staged/`.
 
-To inspect the rollback view, use `python3 run_review_console.py --reader-mode legacy`.
+To inspect the rollback view, use `python3 -m review_console_ops.run_review_console --reader-mode legacy`.
 Do not use this mode for normal daily review and do not regenerate its snapshots
 unless following the rollback runbook.
 
@@ -606,28 +606,28 @@ Recommended use:
 Write a current source inventory:
 
 ```bash
-python3 run_review_console.py --inventory
+python3 -m review_console_ops.run_review_console --inventory
 ```
 
 Export saved decisions:
 
 ```bash
-python3 run_review_console.py --export
+python3 -m review_console_ops.run_review_console --export
 ```
 
 Dry-run staged application:
 
 ```bash
-python3 apply_review_console_decisions.py
+python3 -m review_console_ops.apply_review_console_decisions
 ```
 
 Write staged per-source decision files:
 
 ```bash
-python3 apply_review_console_decisions.py --write
+python3 -m review_console_ops.apply_review_console_decisions --write
 ```
 
-`apply_review_console_decisions.py --write` writes only under
+`python3 -m review_console_ops.apply_review_console_decisions --write` writes only under
 `data/review_console/staged/`. It does not write Master RDB, Notion, public
 JSON, S3, CloudFront, DynamoDB, or Google Calendar.
 
@@ -636,8 +636,8 @@ JSON, S3, CloudFront, DynamoDB, or Google Calendar.
 Before applying anything outside the console, check:
 
 ```bash
-python3 run_review_console.py --export
-python3 apply_review_console_decisions.py --write
+python3 -m review_console_ops.run_review_console --export
+python3 -m review_console_ops.apply_review_console_decisions --write
 ```
 
 Then inspect:
@@ -660,7 +660,7 @@ If a source has no saved decisions, no staged source file is created for it.
 The latest local inventory can be regenerated at any time:
 
 ```bash
-python3 run_review_console.py --inventory
+python3 -m review_console_ops.run_review_console --inventory
 ```
 
 As of the latest local inventory, the console found 13 sources and 846
@@ -698,7 +698,7 @@ Prefer stable IDs such as occurrence IDs, candidate IDs, or video IDs for
 
 After adding a source:
 
-1. Run `python3 run_review_console.py --inventory`.
+1. Run `python3 -m review_console_ops.run_review_console --inventory`.
 2. Confirm the source appears in `data/review_console/source_inventory.md`.
 3. Open the console and confirm cards render with stable titles and URLs.
 4. Add or update tests if the source needs special normalization.
@@ -716,7 +716,7 @@ confirmation, and backup behavior.
 Page does not load:
 
 - Confirm the server is running.
-- Start it again with `python3 run_review_console.py`.
+- Start it again with `python3 -m review_console_ops.run_review_console`.
 - Check that the URL is `http://127.0.0.1:8751/`.
 
 Shortcut does not work:
@@ -763,6 +763,6 @@ For code changes to the console, run:
 
 ```bash
 python3 -m pytest tests/test_review_console.py
-python3 -m py_compile review_console/data.py review_console/server.py run_review_console.py apply_review_console_decisions.py
+python3 -m py_compile review_console/data.py review_console/server.py review_console_ops/run_review_console.py review_console_ops/apply_review_console_decisions.py
 node --check review_console/static/app.js
 ```

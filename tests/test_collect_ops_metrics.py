@@ -4,7 +4,7 @@ import unittest
 from datetime import datetime, timezone
 from pathlib import Path
 
-import collect_ops_metrics as metrics
+from review_console_ops import collect_ops_metrics as metrics
 
 
 def write_json(path, payload):

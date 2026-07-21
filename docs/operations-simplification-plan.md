@@ -248,7 +248,7 @@ Ph0–Ph2レポート3本、YouTube 2025補助3本、Notion one-off 7本、実�
 
 Collector側の公開データ準備入口として `scripts/publish_public_data_flow.py` を追加した。
 この入口は `export_public_events.py` → `build_publication_gap_review.py` →
-`public_json_postprocessors/review_missing_occurrence_venues.py` → `run_review_console.py --inventory` を順に実行し、
+`public_json_postprocessors/review_missing_occurrence_venues.py` → `python3 -m review_console_ops.run_review_console --inventory` を順に実行し、
 site repo同期・デプロイは含めない。site差分ガードは `--with-guard` 明示時だけ
 `public_json_postprocessors/guard_public_events_sync.py --report-only` として実行する。
 
