@@ -10,7 +10,7 @@ from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
-from song_occurrences import parse_event_date
+from song_processing.song_occurrences import parse_event_date
 
 
 DATA = Path("data")

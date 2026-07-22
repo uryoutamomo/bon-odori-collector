@@ -1,6 +1,6 @@
 import unittest
 
-from song_occurrences import (
+from song_processing.song_occurrences import (
     build_occurrences,
     evidence_role,
     evidence_kind,

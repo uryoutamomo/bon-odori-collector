@@ -10,7 +10,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from collection_support.event_evidence import dancer_key, normalize_event_name
-from song_occurrences import occurrence_id
+from song_processing.song_occurrences import occurrence_id
 from collection_support.suppression_rules import is_event_sentence_fragment
 
 
