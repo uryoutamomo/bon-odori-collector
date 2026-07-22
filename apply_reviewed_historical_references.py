@@ -13,7 +13,7 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
-from master_db import MASTER_DB, connect_existing, refresh_manifest_database_state, stable_id, table_counts
+from master_rdb.master_db import MASTER_DB, connect_existing, refresh_manifest_database_state, stable_id, table_counts
 
 
 DATA = Path("data")

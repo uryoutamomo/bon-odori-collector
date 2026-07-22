@@ -9,7 +9,7 @@ import json
 import shutil
 from pathlib import Path
 
-from master_db import (
+from master_rdb.master_db import (
     MASTER_DB,
     connect_existing,
     json_text,

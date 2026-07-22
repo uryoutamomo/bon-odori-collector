@@ -5,7 +5,7 @@ from contextlib import closing
 from pathlib import Path
 from unittest.mock import patch
 
-from master_db import file_sha256
+from master_rdb.master_db import file_sha256
 from review_inbox import inbox_schema_version
 from review_inbox_migration_runner import guard_fetch, run_migration
 

@@ -4,7 +4,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from master_db import file_sha256, refresh_manifest_database_state
+from master_rdb.master_db import file_sha256, refresh_manifest_database_state
 
 
 class MasterDbManifestTest(unittest.TestCase):

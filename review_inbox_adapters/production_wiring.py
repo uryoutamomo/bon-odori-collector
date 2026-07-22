@@ -13,7 +13,7 @@ from argparse import Namespace
 from pathlib import Path
 from typing import Any
 
-import master_db_s3_artifact as s3_artifact
+import master_rdb.master_db as master_db
 from export_public_events import (
     build_public_events_from_master,
     project_public_events,

@@ -13,7 +13,7 @@ from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
-from master_db import MASTER_DB, MASTER_MANIFEST, connect_existing, normalize_text
+from master_rdb.master_db import MASTER_DB, MASTER_MANIFEST, connect_existing, normalize_text
 
 
 DATA = Path("data")

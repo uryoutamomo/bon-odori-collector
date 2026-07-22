@@ -6,7 +6,7 @@ from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
-from master_db import normalize_text
+from master_rdb.master_db import normalize_text
 
 
 DATA = Path("data")

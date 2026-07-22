@@ -5,7 +5,7 @@ import unittest
 from pathlib import Path
 
 import run_post_batch_maintenance as maintenance
-from master_db import init_db
+from master_rdb.master_db import init_db
 
 
 NOW = "2026-01-01T00:00:00+00:00"

@@ -162,7 +162,7 @@ def migrate_event_state_axes(conn, *, events, source_map, target_year=2026):
     if "schema_migrations" in {
         row[0] for row in conn.execute("SELECT name FROM sqlite_master WHERE type='table'")
     }:
-        from master_db import now_utc
+        from master_rdb.master_db import now_utc
 
         conn.execute(
             """

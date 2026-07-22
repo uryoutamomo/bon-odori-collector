@@ -18,7 +18,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from song_processing.bon_odori_songs import extract_song_candidates
-from master_db import MASTER_DB, normalize_text
+from master_rdb.master_db import MASTER_DB, normalize_text
 from collection_support.x_source_officiality import assess_source_officiality, load_account_profiles
 
 

@@ -8,7 +8,7 @@ from zoneinfo import ZoneInfo
 
 import pytest
 
-from master_db import init_db
+from master_rdb.master_db import init_db
 from review_inbox import upsert_inbox_items
 from review_inbox_adapters.source_writer import ArtifactState, SourceWriterError
 from run_review_inbox_rare_signal_decision_canary import CONFIRM, run_canary

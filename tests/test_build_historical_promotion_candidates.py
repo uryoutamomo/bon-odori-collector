@@ -2,7 +2,7 @@ import sqlite3
 import unittest
 
 from promotion_candidates import build_historical_promotion_candidates as builder
-from master_db import SCHEMA
+from master_rdb.master_db import SCHEMA
 
 
 class BuildHistoricalPromotionCandidatesTest(unittest.TestCase):

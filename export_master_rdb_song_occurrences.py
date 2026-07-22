@@ -8,7 +8,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from rdb_builders.build_master_rdb import song_role
-from master_db import MASTER_DB, connect_existing, json_text, normalize_text, stable_id
+from master_rdb.master_db import MASTER_DB, connect_existing, json_text, normalize_text, stable_id
 
 
 DATA = Path("data")

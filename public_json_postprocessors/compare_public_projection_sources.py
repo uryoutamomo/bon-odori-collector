@@ -15,7 +15,7 @@ from collections import Counter, defaultdict
 from pathlib import Path
 
 from event_series_normalization import series_event_name
-from master_db import MASTER_DB, require_existing_db
+from master_rdb.master_db import MASTER_DB, require_existing_db
 
 
 DATA = Path("data")

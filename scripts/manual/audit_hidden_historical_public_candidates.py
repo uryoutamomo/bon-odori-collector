@@ -13,7 +13,7 @@ from typing import Any
 
 from event_series_normalization import series_event_name
 from export_public_events import clean_public_event_name
-from master_db import connect_existing
+from master_rdb.master_db import connect_existing
 
 
 ROOT = Path(__file__).resolve().parent

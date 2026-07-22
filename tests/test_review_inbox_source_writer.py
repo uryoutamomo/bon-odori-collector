@@ -6,7 +6,7 @@ import unittest
 from contextlib import closing
 from pathlib import Path
 
-from master_db import file_sha256, init_db
+from master_rdb.master_db import file_sha256, init_db
 from review_inbox import inbox_id_for, inbox_rows, upsert_inbox_items
 from review_inbox_adapters.source_writer import (
     ArtifactState,

@@ -14,7 +14,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-from master_db import MASTER_DB, file_sha256
+from master_rdb.master_db import MASTER_DB, file_sha256
 from review_inbox import INBOX_SCHEMA_VERSION, V2_COLUMNS, migrate_inbox_schema_v2
 
 

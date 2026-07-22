@@ -3,7 +3,7 @@ import unittest
 from pathlib import Path
 
 from apply_reviewed_missing_occurrence_venues import apply_plan, build_plan, occurrence
-from master_db import init_db, normalize_text
+from master_rdb.master_db import init_db, normalize_text
 
 
 NOW = "2026-01-01T00:00:00+00:00"

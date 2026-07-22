@@ -13,7 +13,7 @@ from datetime import datetime, timezone
 from difflib import SequenceMatcher
 from pathlib import Path
 
-from master_db import MASTER_DB, connect_existing, normalize_text
+from master_rdb.master_db import MASTER_DB, connect_existing, normalize_text
 
 
 DATA = Path("data")

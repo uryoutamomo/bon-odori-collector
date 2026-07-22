@@ -8,7 +8,7 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
-from master_db import MASTER_DB, MASTER_MANIFEST, connect_existing, file_sha256, table_counts
+from master_rdb.master_db import MASTER_DB, MASTER_MANIFEST, connect_existing, file_sha256, table_counts
 
 
 DATA = Path("data")

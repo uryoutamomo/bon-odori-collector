@@ -3,7 +3,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-import master_db
+import master_rdb.master_db as master_db
 from report_apply.official_notice_report_helpers import (
     ensure_series_and_occurrence,
     link_notice_evidence,

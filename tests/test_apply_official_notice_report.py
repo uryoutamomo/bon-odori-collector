@@ -7,7 +7,7 @@ from pathlib import Path
 from unittest import mock
 
 import audit_master_rdb
-import master_db
+import master_rdb.master_db as master_db
 from report_apply import apply_official_notice_report as script
 class ApplyOfficialNoticeReportTest(unittest.TestCase):
     def setUp(self):

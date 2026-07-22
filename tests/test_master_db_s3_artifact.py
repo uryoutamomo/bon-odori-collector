@@ -6,8 +6,8 @@ from argparse import Namespace
 from io import BytesIO
 from pathlib import Path
 
-import master_db_s3_artifact as artifact
-from master_db import connect_existing, file_sha256
+import master_rdb.master_db as master_db
+from master_rdb.master_db import connect_existing, file_sha256
 
 
 class FakeClientError(Exception):

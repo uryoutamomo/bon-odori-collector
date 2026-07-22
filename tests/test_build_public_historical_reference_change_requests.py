@@ -4,7 +4,7 @@ import unittest
 from pathlib import Path
 
 from public_export_support.build_public_historical_reference_change_requests import build_payload
-from master_db import normalize_text
+from master_rdb.master_db import normalize_text
 
 
 class BuildPublicHistoricalReferenceChangeRequestsTest(unittest.TestCase):

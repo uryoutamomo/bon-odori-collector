@@ -24,7 +24,7 @@ from promotion_candidates.build_observed_promotion_candidates import (
     write_json,
 )
 from operation_safety.manual_apply_guards import MASTER_RDB_ONE_OFF_CONFIRMATION, require_confirmation
-from master_db import MASTER_DB, MASTER_MANIFEST, connect_existing, file_sha256, stable_id, table_counts
+from master_rdb.master_db import MASTER_DB, MASTER_MANIFEST, connect_existing, file_sha256, stable_id, table_counts
 
 
 DATA = Path("data")

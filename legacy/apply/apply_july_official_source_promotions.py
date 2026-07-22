@@ -10,7 +10,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from operation_safety.manual_apply_guards import MASTER_RDB_ONE_OFF_CONFIRMATION, require_confirmation
-from master_db import MASTER_DB, MASTER_MANIFEST, connect_existing, refresh_manifest_database_state
+from master_rdb.master_db import MASTER_DB, MASTER_MANIFEST, connect_existing, refresh_manifest_database_state
 
 
 DATA = Path("data")

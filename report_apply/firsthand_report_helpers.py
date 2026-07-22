@@ -21,7 +21,7 @@ from report_apply.event_report_helpers import (
     upsert_evidence_item as _upsert_evidence_item,
     upsert_occurrence_song as _upsert_occurrence_song,
 )
-from master_db import now_utc, stable_id
+from master_rdb.master_db import now_utc, stable_id
 
 
 PLATFORM_PERSONAL_FIRSTHAND = "personal_firsthand"

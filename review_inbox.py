@@ -16,7 +16,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-from master_db import MASTER_DB, connect_existing, stable_id
+from master_rdb.master_db import MASTER_DB, connect_existing, stable_id
 
 
 ROOT = Path(__file__).resolve().parent

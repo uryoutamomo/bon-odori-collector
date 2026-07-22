@@ -4,7 +4,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from master_db import init_db
+from master_rdb.master_db import init_db
 from review_inbox import (
     clear_inbox_decision,
     export_inbox_json,

@@ -5,7 +5,7 @@ from pathlib import Path
 
 import pytest
 
-from master_db import init_db
+from master_rdb.master_db import init_db
 from review_inbox import inbox_rows, upsert_inbox_items
 from review_inbox_adapters.decision_writer import (
     DecisionWriterFlags,

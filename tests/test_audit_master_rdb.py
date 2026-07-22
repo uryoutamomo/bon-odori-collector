@@ -4,7 +4,7 @@ from argparse import Namespace
 from pathlib import Path
 
 import audit_master_rdb
-from master_db import init_db
+from master_rdb.master_db import init_db
 
 
 class AuditMasterRdbTest(unittest.TestCase):

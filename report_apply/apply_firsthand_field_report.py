@@ -28,7 +28,7 @@ from report_apply.firsthand_report_helpers import (
     find_occurrence_candidates,
     upsert_occurrence_song,
 )
-from master_db import MASTER_DB, connect_existing, normalize_text, refresh_manifest_database_state, table_counts
+from master_rdb.master_db import MASTER_DB, connect_existing, normalize_text, refresh_manifest_database_state, table_counts
 from report_apply.rdb_apply_support import audit_db, backup_db, copy_db, has_high_issue, issue_summary, rows, scalar, write_json
 
 

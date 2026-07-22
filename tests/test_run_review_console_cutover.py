@@ -6,7 +6,7 @@ from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from master_db import file_sha256, init_db
+from master_rdb.master_db import file_sha256, init_db
 from review_console import data
 from review_inbox import export_inbox_json, inbox_rows, upsert_inbox_items
 from review_inbox_adapters.source_adapter import input_sha256

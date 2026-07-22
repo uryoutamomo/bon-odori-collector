@@ -14,7 +14,7 @@ import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
 
-from master_db import (
+from master_rdb.master_db import (
     MASTER_DB,
     MASTER_MANIFEST,
     connect_existing,

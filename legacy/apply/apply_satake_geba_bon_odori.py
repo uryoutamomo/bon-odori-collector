@@ -6,7 +6,7 @@ appears in the public 23-ku information export.
 
 import json
 
-from master_db import connect_existing, json_text, normalize_text, now_utc, refresh_manifest_database_state, stable_id
+from master_rdb.master_db import connect_existing, json_text, normalize_text, now_utc, refresh_manifest_database_state, stable_id
 
 
 EVENT_NAME = "佐竹ゲバゲバ盆踊り"

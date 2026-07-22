@@ -23,7 +23,7 @@ from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
 from song_processing.bon_odori_songs import extract_song_hints
 from event_series_normalization import series_event_name
-from master_db import MASTER_DB, connect_existing
+from master_rdb.master_db import MASTER_DB, connect_existing
 from public_json_postprocessors.apply_public_date_predictions import (
     OUT_REPORT as DATE_PREDICTION_REPORT,
     PREDICTIONS as DATE_PREDICTIONS,
