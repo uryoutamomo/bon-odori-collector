@@ -1,7 +1,7 @@
 import json
 import urllib.request
 
-from notion_config import NOTION_API_BASE, NOTION_API_VERSION
+from notion_support.notion_config import NOTION_API_BASE, NOTION_API_VERSION
 
 
 class NotionApi:

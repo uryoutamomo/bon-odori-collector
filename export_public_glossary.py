@@ -12,7 +12,7 @@ import urllib.error
 import urllib.request
 from pathlib import Path
 
-from notion_config import (
+from notion_support.notion_config import (
     GLOSSARY_V2_DATABASE_ID,
     NOTION_API_BASE,
     SONG_MASTER_DATABASE_ID,

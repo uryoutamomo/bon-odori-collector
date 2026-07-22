@@ -6,7 +6,7 @@ import os
 import urllib.parse
 import urllib.request
 
-from notion_config import load_local_env
+from notion_support.notion_config import load_local_env
 
 
 load_local_env()

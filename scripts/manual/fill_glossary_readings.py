@@ -9,7 +9,7 @@ import unicodedata
 import urllib.error
 import urllib.request
 
-from notion_config import GLOSSARY_V2_DATABASE_ID, NOTION_API_BASE, load_local_env
+from notion_support.notion_config import GLOSSARY_V2_DATABASE_ID, NOTION_API_BASE, load_local_env
 
 
 load_local_env()

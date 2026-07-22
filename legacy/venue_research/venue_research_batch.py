@@ -3,7 +3,7 @@ import os
 from pathlib import Path
 
 from notion_support.notion_api import NotionApi, plain_text
-from notion_config import EVENT_DATA_SOURCE_ID, VENUE_DATA_SOURCE_ID
+from notion_support.notion_config import EVENT_DATA_SOURCE_ID, VENUE_DATA_SOURCE_ID
 
 
 STATE_PATH = Path(__file__).parent / "data" / "venue_review_state.json"
