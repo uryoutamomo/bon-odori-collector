@@ -6,7 +6,7 @@ import json
 import os
 import urllib.request
 
-from manual_apply_guards import LEGACY_NOTION_REPAIR_CONFIRMATION, require_confirmation
+from operation_safety.manual_apply_guards import LEGACY_NOTION_REPAIR_CONFIRMATION, require_confirmation
 from notion_config import (
     EVENT_DATABASE_ID,
     VENUE_DATABASE_ID,

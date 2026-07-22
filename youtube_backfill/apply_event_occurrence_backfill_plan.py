@@ -6,7 +6,7 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
-from build_event_occurrence_observations import build_series, render_markdown, write_json
+from youtube_backfill.build_event_occurrence_observations import build_series, render_markdown, write_json
 
 
 DATA = Path("data")

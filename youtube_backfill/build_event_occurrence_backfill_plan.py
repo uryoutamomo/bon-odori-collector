@@ -8,7 +8,7 @@ from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
-from build_event_occurrence_observations import (
+from youtube_backfill.build_event_occurrence_observations import (
     confidence_for,
     date_clusters,
     series_key,

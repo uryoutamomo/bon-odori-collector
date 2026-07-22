@@ -21,7 +21,7 @@ import urllib.request
 from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
-from bon_odori_songs import extract_song_hints
+from song_processing.bon_odori_songs import extract_song_hints
 from event_series_normalization import series_event_name
 from master_db import MASTER_DB, connect_existing
 from public_json_postprocessors.apply_public_date_predictions import (

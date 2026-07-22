@@ -6,7 +6,7 @@ import os
 import urllib.request
 from datetime import datetime, timezone
 
-from manual_apply_guards import NOTION_WORKLOG_MAINTENANCE_CONFIRMATION, require_confirmation
+from operation_safety.manual_apply_guards import NOTION_WORKLOG_MAINTENANCE_CONFIRMATION, require_confirmation
 from notion_config import load_local_env
 
 

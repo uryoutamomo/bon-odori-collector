@@ -271,10 +271,10 @@ def next_rows_for_args(queue, candidates, args, attempted_queue_ids=None):
 def regenerate_outputs(month):
     commands = [
         ["python3", "-m", "youtube_backfill.build_event_occurrence_backfill_plan"],
-        ["python3", "build_low_confidence_backfill_review.py"],
+        ["python3", "-m", "youtube_backfill.build_low_confidence_backfill_review"],
         ["python3", "-m", "youtube_backfill.apply_event_occurrence_backfill_plan"],
         ["python3", "-m", "youtube_backfill.build_event_schedule_rules", "--target-year", "2026"],
-        ["python3", "build_event_date_predictions.py", "--target-year", "2026"],
+        ["python3", "-m", "youtube_backfill.build_event_date_predictions", "--target-year", "2026"],
         ["python3", "build_song_occurrences.py"],
         ["python3", "export_public_events.py"],
         [

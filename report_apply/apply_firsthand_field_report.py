@@ -20,7 +20,7 @@ import json
 from datetime import datetime, timezone
 from pathlib import Path
 
-import manual_apply_guards
+import operation_safety.manual_apply_guards as manual_apply_guards
 from report_apply.firsthand_report_helpers import (
     add_firsthand_evidence,
     ensure_series_and_occurrence,

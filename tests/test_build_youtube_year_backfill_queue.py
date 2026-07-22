@@ -1,7 +1,7 @@
 import unittest
 
 from build_youtube_year_backfill_queue import build_queue, event_name_for_target_year
-from build_event_occurrence_observations import series_key
+from youtube_backfill.build_event_occurrence_observations import series_key
 
 
 class BuildYoutubeYearBackfillQueueTest(unittest.TestCase):

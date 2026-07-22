@@ -5,7 +5,7 @@ import json
 from collections import Counter
 from pathlib import Path
 
-from event_state_axes import (
+from event_model.event_state_axes import (
     EventStateAxesError,
     axes_from_legacy_public_event,
     canonicalize_legacy_current_event_state,
@@ -134,4 +134,3 @@ def main(argv=None):
 
 if __name__ == "__main__":
     raise SystemExit(main())
-
