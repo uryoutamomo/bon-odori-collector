@@ -15,7 +15,7 @@ from collections import Counter
 from pathlib import Path
 
 from report_apply.event_report_helpers import find_occurrence_candidates
-from master_db import MASTER_DB, connect_existing, normalize_text, stable_id
+from master_rdb.master_db import MASTER_DB, connect_existing, normalize_text, stable_id
 
 
 DATA = Path("data")

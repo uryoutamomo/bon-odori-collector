@@ -94,7 +94,7 @@ class FakeApi:
 
     def retrieve_data_source(self, data_source_id):
         from collection_support.event_audit import EVENT_SCHEMA
-        from notion_config import (
+        from notion_support.notion_config import (
             EVENT_DATA_SOURCE_ID,
             PLAN_DATA_SOURCE_ID,
             VENUE_DATA_SOURCE_ID,
@@ -117,7 +117,7 @@ class FakeApi:
         return {"properties": properties}
 
     def query_data_source(self, data_source_id):
-        from notion_config import EVENT_DATA_SOURCE_ID
+        from notion_support.notion_config import EVENT_DATA_SOURCE_ID
 
         return self.events if data_source_id == EVENT_DATA_SOURCE_ID else self.plans
 

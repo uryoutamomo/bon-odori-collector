@@ -5,7 +5,7 @@ import urllib.error
 import urllib.request
 from datetime import date, datetime, timedelta, timezone
 
-from notion_config import COST_DATABASE_ID, load_local_env
+from notion_support.notion_config import COST_DATABASE_ID, load_local_env
 
 
 NOTION_API = "https://api.notion.com/v1"

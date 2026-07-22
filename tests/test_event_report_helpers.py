@@ -3,7 +3,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-import master_db
+import master_rdb.master_db as master_db
 from report_apply.event_report_helpers import (
     confirm_occurrence_schedule_venue,
     ensure_series_and_occurrence,

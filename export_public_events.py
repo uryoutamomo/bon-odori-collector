@@ -21,9 +21,9 @@ import urllib.request
 from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
-from bon_odori_songs import extract_song_hints
-from event_series_normalization import series_event_name
-from master_db import MASTER_DB, connect_existing
+from song_processing.bon_odori_songs import extract_song_hints
+from event_model.event_series_normalization import series_event_name
+from master_rdb.master_db import MASTER_DB, connect_existing
 from public_json_postprocessors.apply_public_date_predictions import (
     OUT_REPORT as DATE_PREDICTION_REPORT,
     PREDICTIONS as DATE_PREDICTIONS,
@@ -32,7 +32,7 @@ from public_json_postprocessors.apply_public_date_predictions import (
     write_json as write_public_date_prediction_json,
 )
 from public_json_postprocessors.apply_public_display_tiers import apply_display_tiers
-import notion_config
+import notion_support.notion_config as notion_config
 from public_export_support.score_event_recurrence import build_rows, enrich_public_events
 from venues.export_public_venues import (
     MONTH_DAY_RE,

@@ -4,7 +4,7 @@ import unittest
 from pathlib import Path
 
 from build_historical_reference_shadow_input import build_input
-from master_db import init_db
+from master_rdb.master_db import init_db
 
 
 def insert_series(conn, series_id):

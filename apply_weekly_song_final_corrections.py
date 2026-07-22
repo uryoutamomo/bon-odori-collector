@@ -6,14 +6,14 @@ import json
 import os
 from pathlib import Path
 
-from manual_apply_guards import LEGACY_NOTION_REPAIR_CONFIRMATION, require_confirmation
-from notion_config import (
+from operation_safety.manual_apply_guards import LEGACY_NOTION_REPAIR_CONFIRMATION, require_confirmation
+from notion_support.notion_config import (
     GLOSSARY_V2_DATABASE_ID,
     SONG_MASTER_DATABASE_ID,
     load_local_env,
 )
-from register_song_master_initial import rich_text
-from triage_weekly_song_candidates import norm, notion_request, title_index
+from song_processing.song_master_registration import rich_text
+from song_processing.weekly_song_triage import norm, notion_request, title_index
 
 
 load_local_env()

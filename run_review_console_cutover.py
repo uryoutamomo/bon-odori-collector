@@ -19,7 +19,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any, Callable, Mapping
 
-from master_db import file_sha256
+from master_rdb.master_db import file_sha256
 from review_console import data
 from review_console.server import serve
 from review_inbox import inbox_rows

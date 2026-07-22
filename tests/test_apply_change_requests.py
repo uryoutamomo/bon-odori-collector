@@ -5,7 +5,7 @@ from pathlib import Path
 from unittest.mock import patch
 
 from report_apply.apply_change_requests import apply_payload, validate_apply_allowed, validate_payload
-from master_db import SCHEMA
+from master_rdb.master_db import SCHEMA
 
 
 class ApplyChangeRequestsTests(unittest.TestCase):

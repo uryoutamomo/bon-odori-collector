@@ -13,7 +13,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 import audit_master_rdb
-from master_db import MASTER_DB, refresh_manifest_database_state, stable_id, table_counts
+from master_rdb.master_db import MASTER_DB, refresh_manifest_database_state, stable_id, table_counts
 
 
 DATA = Path("data")

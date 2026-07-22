@@ -1,4 +1,4 @@
-"""Audit the staging event-occurrence model and cross-source RDB snapshot.
+"""Audit the unified event-occurrence model and cross-source RDB snapshot.
 
 This is a read-only contract check for the unified model v2 work. It does not
 write to Notion, public exports, or source datasets; only JSON/Markdown audit
@@ -13,8 +13,8 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
-from build_event_occurrence_observations import series_key as expected_series_key
-from build_event_occurrence_observations import stable_id, year_of
+from youtube_backfill.build_event_occurrence_observations import series_key as expected_series_key
+from youtube_backfill.build_event_occurrence_observations import stable_id, year_of
 
 
 DATA = Path("data")

@@ -11,7 +11,7 @@ import sqlite3
 from datetime import datetime, timezone
 from pathlib import Path
 
-from master_db import MASTER_DB, connect_existing, refresh_manifest_database_state
+from master_rdb.master_db import MASTER_DB, connect_existing, refresh_manifest_database_state
 
 
 DATA = Path("data")

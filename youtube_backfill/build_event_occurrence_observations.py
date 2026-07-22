@@ -12,10 +12,10 @@ from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
-from event_series_normalization import series_event_name
+from event_model.event_series_normalization import series_event_name
 
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 DEFAULT_ACTIVE_REVIEW = DATA / "youtube_active_video_review.json"
 DEFAULT_SETLIST_OCCURRENCES = DATA / "youtube_setlist_occurrences.json"

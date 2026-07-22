@@ -6,8 +6,8 @@ import json
 import os
 from pathlib import Path
 
-from manual_apply_guards import LEGACY_NOTION_REPAIR_CONFIRMATION, require_confirmation
-from notion_config import VENUE_DATABASE_ID, load_local_env
+from operation_safety.manual_apply_guards import LEGACY_NOTION_REPAIR_CONFIRMATION, require_confirmation
+from notion_support.notion_config import VENUE_DATABASE_ID, load_local_env
 from triage_weekly_song_candidates import notion_request, title_index, norm, rich_text
 
 

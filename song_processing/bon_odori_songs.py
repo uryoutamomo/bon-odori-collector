@@ -7,7 +7,7 @@ from pathlib import Path
 
 from collection_support.suppression_rules import blocked_cultural_match, is_generic_song_name
 
-DATA_DIR = Path(__file__).resolve().parent / "data"
+DATA_DIR = Path(__file__).resolve().parents[1] / "data"
 SONG_MASTER_REGISTRATION = DATA_DIR / "song_master_initial_registration.json"
 RDB_SONG_REVIEW_SOURCE = DATA_DIR / "rdb_song_review_source.json"
 

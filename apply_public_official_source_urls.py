@@ -5,7 +5,7 @@ import json
 import re
 from pathlib import Path
 
-from manual_apply_guards import PUBLIC_JSON_ONE_OFF_CONFIRMATION, require_confirmation
+from operation_safety.manual_apply_guards import PUBLIC_JSON_ONE_OFF_CONFIRMATION, require_confirmation
 
 
 ROOT = Path(__file__).resolve().parent

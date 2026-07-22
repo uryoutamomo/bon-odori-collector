@@ -7,7 +7,7 @@ from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from master_db import init_db
+from master_rdb.master_db import init_db
 from review_inbox_adapters.source_writer import ArtifactState, CasConflictError, SourceWriterError
 from run_review_inbox_shirokane_canary import CONFIRM, run_canary
 

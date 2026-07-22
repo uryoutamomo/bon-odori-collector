@@ -1,6 +1,6 @@
 import unittest
 
-from bon_odori_songs import extract_song_candidates, extract_song_hints
+from song_processing.bon_odori_songs import extract_song_candidates, extract_song_hints
 
 
 def names(rows):

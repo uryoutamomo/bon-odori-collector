@@ -6,8 +6,8 @@ from argparse import Namespace
 from pathlib import Path
 from unittest import mock
 
-import audit_master_rdb
-import master_db
+from master_rdb import audit as audit_master_rdb
+import master_rdb.master_db as master_db
 from report_apply import apply_firsthand_field_report as script
 class ApplyFirsthandFieldReportTest(unittest.TestCase):
     def setUp(self):

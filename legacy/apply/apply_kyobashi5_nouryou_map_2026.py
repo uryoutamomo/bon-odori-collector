@@ -19,7 +19,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from report_apply.firsthand_report_helpers import ensure_venue
-from master_db import (
+from master_rdb.master_db import (
     MASTER_DB,
     connect_existing,
     json_text,

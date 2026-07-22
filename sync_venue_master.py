@@ -20,7 +20,7 @@ import re
 import urllib.request
 import urllib.error
 
-import notion_config
+import notion_support.notion_config as notion_config
 
 NOTION_TOKEN = os.environ.get("NOTION_API_TOKEN")
 NOTION_VERSION = "2022-06-28"

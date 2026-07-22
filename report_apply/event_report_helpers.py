@@ -10,8 +10,8 @@ those, keeping the domain-specific vocabulary out of this module.
 import sqlite3
 from difflib import SequenceMatcher
 
-from event_state_axes import axes_from_legacy_occurrence, update_occurrence_state_axes
-from master_db import json_text, normalize_text, now_utc, stable_id
+from event_model.event_state_axes import axes_from_legacy_occurrence, update_occurrence_state_axes
+from master_rdb.master_db import json_text, normalize_text, now_utc, stable_id
 
 
 FUZZY_MATCH_MIN_SCORE = 0.45

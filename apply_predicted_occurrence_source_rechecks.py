@@ -13,9 +13,9 @@ from datetime import datetime, timezone
 from pathlib import Path
 from types import SimpleNamespace
 
-import audit_master_rdb
-from event_state_axes import update_occurrence_state_axes
-from master_db import MASTER_DB, connect_existing, refresh_manifest_database_state, stable_id, table_counts
+from master_rdb import audit as audit_master_rdb
+from event_model.event_state_axes import update_occurrence_state_axes
+from master_rdb.master_db import MASTER_DB, connect_existing, refresh_manifest_database_state, stable_id, table_counts
 
 
 DATA = Path("data")

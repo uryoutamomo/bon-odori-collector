@@ -5,7 +5,7 @@ import argparse
 import json
 from pathlib import Path
 
-from song_occurrences import (
+from song_processing.song_occurrences import (
     OUT_OCCURRENCES,
     OUT_PUBLIC,
     OUT_SNAPSHOT,

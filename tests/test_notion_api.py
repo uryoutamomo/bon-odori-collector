@@ -1,6 +1,6 @@
 import unittest
 
-from notion_api import validate_data_source
+from notion_support.notion_api import validate_data_source
 
 
 class FakeApi:

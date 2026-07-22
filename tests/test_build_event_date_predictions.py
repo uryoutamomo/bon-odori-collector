@@ -1,6 +1,6 @@
 import unittest
 
-from build_event_date_predictions import build_predictions
+from youtube_backfill.build_event_date_predictions import build_predictions
 
 
 def observation(series_key, event_name, venue, year, start, end=None):

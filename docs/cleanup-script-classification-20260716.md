@@ -135,7 +135,7 @@ append_youtube_user_confirmation_note.py
 | `build_blog_registration_candidates.py` | 移動候補 | 参照なし。過去のブログ登録候補作成 |
 | `build_fallback_event_candidates.py` | 移動候補 | 参照なし。fallback候補の一回きり補助 |
 | `build_july_official_url_gap_report.py` | 移動候補 | 自己参照のみ。7月公式URL gapレポート |
-| `build_low_confidence_backfill_review.py` | 移動候補 | `run_daily_youtube_backfill.py` / docs参照あり。移動時は参照確認必須 |
+| `youtube_backfill/build_low_confidence_backfill_review.py` | package化済み | `run_daily_youtube_backfill.py` / docs参照を更新済み |
 | `build_ph2_ebara_fifth_public_preview.py` | 移動候補 | 自己参照のみ。Ph2荏原第五の一回きりpreview |
 | `build_ph2_ebara_fifth_venue_plan.py` | 移動候補 | docs参照あり。Ph2荏原第五の一回きりplan |
 | `build_ph2_event_occurrence_apply_plan.py` | 移動候補 | Ph2移行補助。docs/他build参照あり |
@@ -173,7 +173,7 @@ build_ph2_review_packet.py
 build_pre_cutover_p0_apply_plan.py
 ```
 
-`build_low_confidence_backfill_review.py` は `run_daily_youtube_backfill.py` から実行されるため、E第2段では温存する。
+`youtube_backfill/build_low_confidence_backfill_review.py` は `run_daily_youtube_backfill.py` からモジュール実行する。
 
 推奨: build系はappend系と同じコミットで動かさない。append系移動後に、参照更新範囲を個別に見てから小さく移動する。
 
@@ -201,9 +201,9 @@ build_x_news_digest_for_oto.py
 ```text
 build_all_rdb.py
 rdb_builders/build_bon_odori_rdb.py
-build_event_date_predictions.py
+youtube_backfill/build_event_date_predictions.py
 youtube_backfill/build_event_occurrence_backfill_plan.py
-build_event_occurrence_observations.py
+youtube_backfill/build_event_occurrence_observations.py
 youtube_backfill/build_event_schedule_rules.py
 rdb_builders/build_evidence_rdb.py
 build_glossary_review_ui.py

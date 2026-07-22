@@ -14,7 +14,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any, Callable, Mapping
 
-from master_db import connect_existing, file_sha256
+from master_rdb.master_db import connect_existing, file_sha256
 from review_inbox import (
     DECISIONS,
     DECISION_ROUTES,

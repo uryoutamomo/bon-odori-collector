@@ -17,7 +17,7 @@ from datetime import date, datetime, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-import manual_apply_guards
+import operation_safety.manual_apply_guards as manual_apply_guards
 from report_apply.event_report_helpers import (
     confirm_occurrence_schedule_venue,
     ensure_venue,
@@ -26,7 +26,7 @@ from report_apply.event_report_helpers import (
     upsert_evidence_item,
     upsert_occurrence_song,
 )
-from master_db import MASTER_DB, refresh_manifest_database_state, stable_id, table_counts
+from master_rdb.master_db import MASTER_DB, refresh_manifest_database_state, stable_id, table_counts
 from report_apply.rdb_apply_support import audit_db, backup_db, copy_db, has_high_issue, issue_summary, rows, scalar, write_json
 
 

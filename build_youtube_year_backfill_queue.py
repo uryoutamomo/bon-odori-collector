@@ -12,8 +12,8 @@ from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
-from build_event_occurrence_observations import norm, series_key
-from event_series_normalization import series_event_name
+from youtube_backfill.build_event_occurrence_observations import norm, series_key
+from event_model.event_series_normalization import series_event_name
 
 
 ROOT = Path(__file__).resolve().parent

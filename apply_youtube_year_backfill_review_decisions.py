@@ -17,9 +17,9 @@ from youtube_channels.discover_youtube_channels import (
     fetch_video_snippets,
     merge_setlist_candidates,
 )
-from event_series_normalization import series_event_name
+from event_model.event_series_normalization import series_event_name
 from youtube_channels.extract_youtube_setlists import extract_setlist, parse_youtube_event_date
-from manual_apply_guards import LOCAL_EVIDENCE_ONE_OFF_CONFIRMATION, require_confirmation
+from operation_safety.manual_apply_guards import LOCAL_EVIDENCE_ONE_OFF_CONFIRMATION, require_confirmation
 
 
 DATA = Path("data")

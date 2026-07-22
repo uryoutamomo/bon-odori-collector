@@ -7,8 +7,8 @@ import os
 import urllib.request
 from pathlib import Path
 
-from manual_apply_guards import LEGACY_NOTION_REPAIR_CONFIRMATION, require_confirmation
-from notion_config import load_local_env
+from operation_safety.manual_apply_guards import LEGACY_NOTION_REPAIR_CONFIRMATION, require_confirmation
+from notion_support.notion_config import load_local_env
 
 
 load_local_env()

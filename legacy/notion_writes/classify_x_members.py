@@ -18,7 +18,7 @@ from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
-from manual_apply_guards import require_confirmation
+from operation_safety.manual_apply_guards import require_confirmation
 
 
 OUTPUT_FILE = Path("data/x_member_classification_proposal.json")

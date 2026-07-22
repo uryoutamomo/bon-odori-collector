@@ -8,8 +8,8 @@ import tempfile
 from pathlib import Path
 
 from public_json_postprocessors.compare_event_state_axes import compare_events
-from event_state_axes_migration import migrate_event_state_axes
-from master_db import MASTER_DB, connect_existing, table_counts
+from event_model.state_axes_migration import migrate_event_state_axes
+from master_rdb.master_db import MASTER_DB, connect_existing, table_counts
 
 
 CONFIRM_TEXT = "MIGRATE EVENT STATE AXES"

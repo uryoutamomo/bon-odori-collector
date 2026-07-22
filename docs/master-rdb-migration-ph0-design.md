@@ -115,7 +115,7 @@ Notion と JSON に分散している盆踊りマスタの正本を、ローカ�
   - Notion/JSON/RDB スナップショットから master DB を dry-run 生成する。
 - `audit_master_rdb.py`
   - 主キー、外部キー、件数差分、公開エクスポート差分を監査する。
-- `master_db.py`
+- `master_rdb/master_db.py`
   - SQLite 接続、トランザクション、write batch、lock、checksum の共通処理。
 - `sync_master_to_notion.py`
   - SQLite 正本から Notion 表示フィールドへ同期する。
@@ -743,7 +743,7 @@ SQLite はバイナリなので、短期の6月末移行では通常コミット
 
 ### 単一writer
 
-SQLite 正本への書き込みは必ず `master_db.py` の write transaction を通す。
+SQLite 正本への書き込みは必ず `master_rdb/master_db.py` の write transaction を通す。
 同一プロセス/同一runner内の同時書き込みはファイルロックで防ぐ。
 
 方針:
@@ -1124,7 +1124,7 @@ Ph0/Ph1 dry-run では以下を必須にする。
 
 推奨順:
 
-1. `master_db.py` と schema。
+1. `master_rdb/master_db.py` と schema。
 2. `rdb_builders/build_master_rdb.py --dry-run`。
 3. `audit_master_rdb.py`。
 4. `occurrence_songs` 取り込み。

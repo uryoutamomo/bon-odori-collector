@@ -2,7 +2,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from master_db import init_db
+from master_rdb.master_db import init_db
 
 
 class MasterRdbRebuildSafetyTest(unittest.TestCase):

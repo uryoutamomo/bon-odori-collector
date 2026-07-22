@@ -14,8 +14,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from rdb_builders.build_master_rdb import date_status, lifecycle_status, parse_months, parse_year
-from event_series_normalization import series_event_name
-from master_db import MASTER_DB, connect_existing
+from event_model.event_series_normalization import series_event_name
+from master_rdb.master_db import MASTER_DB, connect_existing
 
 
 DATA = Path("data")

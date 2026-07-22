@@ -13,8 +13,8 @@ import sqlite3
 from datetime import datetime, timezone
 from pathlib import Path
 
-from manual_apply_guards import MASTER_RDB_ONE_OFF_CONFIRMATION, require_confirmation
-from master_db import (
+from operation_safety.manual_apply_guards import MASTER_RDB_ONE_OFF_CONFIRMATION, require_confirmation
+from master_rdb.master_db import (
     MASTER_DB,
     MASTER_MANIFEST,
     connect_existing,

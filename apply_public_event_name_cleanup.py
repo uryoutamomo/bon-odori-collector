@@ -8,7 +8,7 @@ import json
 from pathlib import Path
 
 from export_public_events import apply_public_event_name_cleanup, clean_public_event_name, write_public_js
-from manual_apply_guards import PUBLIC_JSON_ONE_OFF_CONFIRMATION, require_confirmation
+from operation_safety.manual_apply_guards import PUBLIC_JSON_ONE_OFF_CONFIRMATION, require_confirmation
 
 
 ROOT = Path(__file__).resolve().parent

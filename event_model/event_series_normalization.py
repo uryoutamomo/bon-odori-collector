@@ -1,4 +1,4 @@
-"""Helpers for yearly occurrence names that belong to the same event series."""
+"""Normalize yearly occurrence names that belong to one event series."""
 
 import re
 

@@ -6,10 +6,10 @@ import json
 import os
 from pathlib import Path
 
-from manual_apply_guards import LEGACY_NOTION_REPAIR_CONFIRMATION, require_confirmation
-from notion_config import SONG_MASTER_DATABASE_ID, load_local_env
-from register_song_master_initial import classify_song
-from triage_weekly_song_candidates import (
+from operation_safety.manual_apply_guards import LEGACY_NOTION_REPAIR_CONFIRMATION, require_confirmation
+from notion_support.notion_config import SONG_MASTER_DATABASE_ID, load_local_env
+from song_processing.song_master_registration import classify_song
+from song_processing.weekly_song_triage import (
     rich_text,
     norm,
     notion_request,

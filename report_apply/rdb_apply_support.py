@@ -13,7 +13,7 @@ from collections import Counter
 from pathlib import Path
 from types import SimpleNamespace
 
-import audit_master_rdb
+from master_rdb import audit as audit_master_rdb
 
 
 def rows(conn, query, params=()):

@@ -8,7 +8,7 @@ from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
-from build_event_date_predictions import (
+from youtube_backfill.build_event_date_predictions import (
     OBSERVATIONS,
     date_rule_candidates,
     row_features,

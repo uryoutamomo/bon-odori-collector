@@ -7,7 +7,7 @@ import re
 from collections import defaultdict
 from pathlib import Path
 
-from bon_odori_songs import extract_song_candidates
+from song_processing.bon_odori_songs import extract_song_candidates
 
 
 DATA = Path("data")

@@ -1,6 +1,6 @@
 import unittest
 
-from triage_weekly_song_candidates import classify_candidate, is_song_like
+from song_processing.weekly_song_triage import classify_candidate, is_song_like
 
 
 class WeeklySongTriageTest(unittest.TestCase):

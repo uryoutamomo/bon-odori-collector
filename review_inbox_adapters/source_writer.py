@@ -16,7 +16,7 @@ from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Any, Callable, Protocol
 
-from master_db import connect_existing, file_sha256, table_counts
+from master_rdb.master_db import connect_existing, file_sha256, table_counts
 from review_inbox import (
     INBOX_SCHEMA_VERSION,
     inbox_rows,

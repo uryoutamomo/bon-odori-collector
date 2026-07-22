@@ -1,7 +1,7 @@
 import unittest
 from pathlib import Path
 
-from manual_apply_guards import (
+from operation_safety.manual_apply_guards import (
     LOCAL_EVIDENCE_ONE_OFF_CONFIRMATION,
     MASTER_RDB_ONE_OFF_CONFIRMATION,
     PUBLIC_JSON_ONE_OFF_CONFIRMATION,

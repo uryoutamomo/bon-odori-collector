@@ -8,7 +8,7 @@ from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
-from triage_weekly_song_candidates import CANONICAL_MAP, NOISE_EXACT
+from song_processing.weekly_song_triage import CANONICAL_MAP, NOISE_EXACT
 
 
 DATA = Path("data")

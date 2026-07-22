@@ -1,7 +1,7 @@
 import sqlite3
 import unittest
 
-from event_state_axes_migration import migrate_event_state_axes
+from event_model.state_axes_migration import migrate_event_state_axes
 
 
 class EventStateAxesMigrationTest(unittest.TestCase):

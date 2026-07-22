@@ -1,6 +1,6 @@
 import unittest
 
-from build_event_occurrence_observations import attach_songs, build_active_observations, date_clusters
+from youtube_backfill.build_event_occurrence_observations import attach_songs, build_active_observations, date_clusters
 
 
 class BuildEventOccurrenceObservationsTest(unittest.TestCase):
