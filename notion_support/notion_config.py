@@ -2,7 +2,7 @@ import os
 
 
 def load_local_env(path=None):
-    path = path or os.path.join(os.path.dirname(__file__), ".env")
+    path = path or os.path.join(os.path.dirname(os.path.dirname(__file__)), ".env")
     if not os.path.exists(path):
         return
     with open(path, "r", encoding="utf-8") as f:

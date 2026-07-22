@@ -10,7 +10,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from notion_support.notion_api import NotionApi, plain_text
-from notion_config import EVENT_DATA_SOURCE_ID
+from notion_support.notion_config import EVENT_DATA_SOURCE_ID
 
 
 REVIEW = Path("data/youtube_active_video_review.json")

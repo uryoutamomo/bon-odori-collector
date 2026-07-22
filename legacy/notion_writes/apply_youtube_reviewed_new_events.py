@@ -9,7 +9,7 @@ from pathlib import Path
 
 from manual_apply_guards import LEGACY_YOUTUBE_NOTION_CONFIRMATION, require_confirmation
 from notion_support.notion_api import NotionApi
-from notion_config import EVENT_DATA_SOURCE_ID, VENUE_DATA_SOURCE_ID
+from notion_support.notion_config import EVENT_DATA_SOURCE_ID, VENUE_DATA_SOURCE_ID
 
 
 OUT = Path("data/youtube_reviewed_new_event_apply_result.json")

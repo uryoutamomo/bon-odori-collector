@@ -18,7 +18,7 @@ import re
 import urllib.error
 import urllib.request
 
-import notion_config
+import notion_support.notion_config as notion_config
 
 NOTION_TOKEN = os.environ.get("NOTION_API_TOKEN")
 API = notion_config.NOTION_API_BASE

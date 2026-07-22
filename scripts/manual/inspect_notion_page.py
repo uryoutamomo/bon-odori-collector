@@ -6,7 +6,7 @@ import json
 import os
 
 from notion_support.notion_api import NotionApi, plain_text
-from notion_config import load_local_env
+from notion_support.notion_config import load_local_env
 
 
 def compact_prop(prop):

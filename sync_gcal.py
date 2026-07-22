@@ -16,7 +16,7 @@ from notion_support.notion_api import (
     plain_text,
     validate_data_source,
 )
-from notion_config import (
+from notion_support.notion_config import (
     EVENT_DATA_SOURCE_ID,
     PLAN_DATA_SOURCE_ID,
     VENUE_DATA_SOURCE_ID,
