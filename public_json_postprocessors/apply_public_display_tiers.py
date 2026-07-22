@@ -1,6 +1,6 @@
 """Normalize top-level display_tier for public event cards."""
 
-from event_state_axes import (
+from event_model.event_state_axes import (
     axes_from_legacy_public_event,
     canonicalize_legacy_current_event_state,
     legacy_public_fields_from_axes,

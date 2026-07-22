@@ -9,7 +9,7 @@ from datetime import date
 from pathlib import Path
 
 from event_series_normalization import series_event_name
-from event_state_axes import axes_from_legacy_occurrence
+from event_model.event_state_axes import axes_from_legacy_occurrence
 from master_db import (
     MASTER_DB,
     MASTER_MANIFEST,

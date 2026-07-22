@@ -2,7 +2,7 @@
 
 from collections import Counter
 
-from event_state_axes import (
+from event_model.event_state_axes import (
     CURRENT_EVENT_STATES,
     DATE_CERTAINTY_TIERS,
     axes_from_legacy_occurrence,
@@ -203,4 +203,3 @@ def migrate_event_state_axes(conn, *, events, source_map, target_year=2026):
             for (state, tier), count in sorted(pair_counts.items())
         ],
     }
-

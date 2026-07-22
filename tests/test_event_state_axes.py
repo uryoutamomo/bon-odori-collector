@@ -1,6 +1,6 @@
 import unittest
 
-from event_state_axes import (
+from event_model.event_state_axes import (
     EventStateAxesError,
     axes_from_legacy_public_event,
     legacy_public_fields_from_axes,
