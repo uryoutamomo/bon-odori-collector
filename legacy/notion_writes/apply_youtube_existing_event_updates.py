@@ -7,10 +7,8 @@ import os
 from datetime import datetime, timezone
 from pathlib import Path
 
-from manual_apply_guards import LEGACY_YOUTUBE_NOTION_CONFIRMATION, require_confirmation
 from notion_support.notion_api import NotionApi, plain_text
 from operation_safety.manual_apply_guards import LEGACY_YOUTUBE_NOTION_CONFIRMATION, require_confirmation
-from notion_api import NotionApi, plain_text
 
 
 PLAN = Path("data/youtube_existing_event_update_dry_run.json")

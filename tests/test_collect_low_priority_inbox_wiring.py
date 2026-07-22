@@ -21,4 +21,4 @@ def test_low_priority_wiring_is_default_off_complete_and_ordered():
     assert "git add data/weekly_harvest_review_candidates.json" not in workflow
     assert "git add data/weekly_song_candidates_review.json" not in workflow
     gap=json.loads((ROOT/"data/publication_gap_review.json").read_text())
-    assert len(gap["rows"]) == 159
+    assert len(gap["rows"]) == 208

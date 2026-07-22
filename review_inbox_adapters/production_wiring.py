@@ -14,6 +14,7 @@ from pathlib import Path
 from typing import Any
 
 import master_rdb.master_db as master_db
+from master_rdb import s3_artifact
 from export_public_events import (
     build_public_events_from_master,
     project_public_events,
