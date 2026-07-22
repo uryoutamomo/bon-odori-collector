@@ -7,7 +7,7 @@ import os
 import urllib.request
 
 from operation_safety.manual_apply_guards import LEGACY_NOTION_REPAIR_CONFIRMATION, require_confirmation
-from notion_config import GLOSSARY_V2_DATABASE_ID, load_local_env
+from notion_support.notion_config import GLOSSARY_V2_DATABASE_ID, load_local_env
 
 
 load_local_env()

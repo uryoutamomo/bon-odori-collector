@@ -4,7 +4,7 @@ import os
 
 from notion_support.notion_api import NotionApi
 from operation_safety.manual_apply_guards import LEGACY_NOTION_REPAIR_CONFIRMATION, require_confirmation
-from notion_config import EVENT_DATA_SOURCE_ID
+from notion_support.notion_config import EVENT_DATA_SOURCE_ID
 
 
 MERGES = [

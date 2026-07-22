@@ -9,7 +9,7 @@ from pathlib import Path
 
 from notion_support.notion_api import NotionApi, plain_text
 from operation_safety.manual_apply_guards import LEGACY_YOUTUBE_NOTION_CONFIRMATION, require_confirmation
-from notion_config import EVENT_DATA_SOURCE_ID
+from notion_support.notion_config import EVENT_DATA_SOURCE_ID
 
 
 PLAN = Path("data/retrospective_existing_event_update_plan.json")

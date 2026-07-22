@@ -10,7 +10,7 @@ from pathlib import Path
 
 from notion_support.notion_api import NotionApi
 from operation_safety.manual_apply_guards import LEGACY_YOUTUBE_NOTION_CONFIRMATION, require_confirmation
-from notion_config import EVENT_DATA_SOURCE_ID, VENUE_DATA_SOURCE_ID, load_local_env
+from notion_support.notion_config import EVENT_DATA_SOURCE_ID, VENUE_DATA_SOURCE_ID, load_local_env
 
 
 OUT = Path("data/youtube_blocked_new_event_apply_result.json")

@@ -4,7 +4,7 @@ import os
 import urllib.request
 import json
 
-from notion_config import load_local_env
+from notion_support.notion_config import load_local_env
 
 
 load_local_env()

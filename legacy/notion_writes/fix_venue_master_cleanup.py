@@ -4,7 +4,7 @@ import os
 
 from notion_support.notion_api import NotionApi, plain_text
 from operation_safety.manual_apply_guards import LEGACY_NOTION_REPAIR_CONFIRMATION, require_confirmation
-from notion_config import EVENT_DATA_SOURCE_ID, VENUE_DATA_SOURCE_ID
+from notion_support.notion_config import EVENT_DATA_SOURCE_ID, VENUE_DATA_SOURCE_ID
 
 
 OLD_SAKAMOTO_ID = "3718be04-e762-8194-9bfb-dabd7fc79f20"

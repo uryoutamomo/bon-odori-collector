@@ -9,7 +9,7 @@ import unicodedata
 from pathlib import Path
 
 from operation_safety.manual_apply_guards import LEGACY_NOTION_REPAIR_CONFIRMATION, require_confirmation
-from notion_config import SONG_MASTER_DATABASE_ID, VENUE_DATABASE_ID, load_local_env
+from notion_support.notion_config import SONG_MASTER_DATABASE_ID, VENUE_DATABASE_ID, load_local_env
 from register_song_master_initial import classify_song
 from triage_weekly_song_candidates import notion_request, rich_text, title_index
 

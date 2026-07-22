@@ -7,7 +7,7 @@ import os
 from pathlib import Path
 
 from operation_safety.manual_apply_guards import LEGACY_NOTION_REPAIR_CONFIRMATION, require_confirmation
-from notion_config import (
+from notion_support.notion_config import (
     EVENT_DATABASE_ID,
     SONG_MASTER_DATABASE_ID,
     VENUE_DATABASE_ID,

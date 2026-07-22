@@ -16,7 +16,7 @@ import zlib
 from dataclasses import dataclass, field
 from pathlib import Path
 
-from notion_config import load_local_env
+from notion_support.notion_config import load_local_env
 
 
 NOTION_API = "https://api.notion.com/v1"

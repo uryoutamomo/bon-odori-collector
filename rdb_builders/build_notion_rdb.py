@@ -9,8 +9,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 import urllib.request
 
-import notion_config
-from notion_config import load_local_env
+import notion_support.notion_config as notion_config
+from notion_support.notion_config import load_local_env
 
 
 load_local_env()

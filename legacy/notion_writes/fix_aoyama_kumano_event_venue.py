@@ -6,7 +6,7 @@ import os
 
 from notion_support.notion_api import NotionApi
 from operation_safety.manual_apply_guards import LEGACY_NOTION_REPAIR_CONFIRMATION, require_confirmation
-from notion_config import load_local_env
+from notion_support.notion_config import load_local_env
 
 
 EVENT_PAGE_ID = "37b8be04-e762-814a-a9af-c9d8490a0a55"

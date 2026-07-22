@@ -6,7 +6,7 @@ import os
 import urllib.request
 
 from operation_safety.manual_apply_guards import NOTION_WORKLOG_MAINTENANCE_CONFIRMATION, require_confirmation
-from notion_config import load_local_env
+from notion_support.notion_config import load_local_env
 from collection_support.add_current_work_to_first_look_notion import rich_text
 
 

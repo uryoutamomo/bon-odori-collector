@@ -8,7 +8,7 @@ import re
 import urllib.request
 from pathlib import Path
 
-from notion_config import (
+from notion_support.notion_config import (
     EVENT_DATABASE_ID,
     SONG_MASTER_DATABASE_ID,
     VENUE_DATABASE_ID,
