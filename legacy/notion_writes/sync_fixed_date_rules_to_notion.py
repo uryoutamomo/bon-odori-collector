@@ -12,7 +12,7 @@ import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
 
-from notion_api import NotionApi, plain_text
+from notion_support.notion_api import NotionApi, plain_text
 from notion_config import EVENT_DATA_SOURCE_ID, load_local_env
 from manual_apply_guards import require_confirmation
 

@@ -7,7 +7,7 @@ import re
 import unicodedata
 from urllib.parse import urlsplit, urlunsplit
 
-from notion_api import NotionApi, date_value, plain_text, validate_data_source
+from notion_support.notion_api import NotionApi, date_value, plain_text, validate_data_source
 from notion_config import (
     EVENT_DATA_SOURCE_ID,
     VENUE_DATA_SOURCE_ID,

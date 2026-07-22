@@ -10,7 +10,7 @@ from collection_support.event_audit import (
     blocking_duplicate_count,
     duplicate_groups,
 )
-from notion_api import (
+from notion_support.notion_api import (
     NotionApi,
     date_value,
     plain_text,

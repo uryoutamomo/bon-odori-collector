@@ -17,7 +17,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from master_db import MASTER_DB, connect_existing
-from notion_api import NotionApi
+from notion_support.notion_api import NotionApi
 from notion_config import load_local_env
 
 

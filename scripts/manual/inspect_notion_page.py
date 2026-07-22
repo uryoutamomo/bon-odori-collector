@@ -5,7 +5,7 @@ import argparse
 import json
 import os
 
-from notion_api import NotionApi, plain_text
+from notion_support.notion_api import NotionApi, plain_text
 from notion_config import load_local_env
 
 
