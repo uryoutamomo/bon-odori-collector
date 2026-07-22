@@ -200,7 +200,7 @@ def render_markdown(inventory: dict) -> str:
             "## Regenerate",
             "",
             "```bash",
-            "python3 scripts/build_root_python_inventory.py --as-of 2026-07-21",
+            f"python3 scripts/build_root_python_inventory.py --as-of {inventory['as_of']}",
             "```",
             "",
             "署名: おと（Codex）",
