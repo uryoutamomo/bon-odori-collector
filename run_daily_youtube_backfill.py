@@ -12,7 +12,7 @@ from pathlib import Path
 
 from youtube_channels.backfill_youtube_descriptions import load_env_value
 from youtube_backfill import harvest_youtube_year_backfill as harvest_mod
-from master_rdb_freeze_policy import is_group_frozen, load_policy
+from master_rdb.freeze_policy import is_group_frozen, load_policy
 
 
 DATA = Path("data")
