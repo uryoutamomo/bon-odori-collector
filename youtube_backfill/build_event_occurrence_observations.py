@@ -12,7 +12,7 @@ from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
-from event_series_normalization import series_event_name
+from event_series.normalization import series_event_name
 
 
 ROOT = Path(__file__).resolve().parents[1]
