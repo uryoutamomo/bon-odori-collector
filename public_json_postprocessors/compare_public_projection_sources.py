@@ -14,7 +14,7 @@ import sqlite3
 from collections import Counter, defaultdict
 from pathlib import Path
 
-from event_series_normalization import series_event_name
+from event_model.event_series_normalization import series_event_name
 from master_rdb.master_db import MASTER_DB, require_existing_db
 
 

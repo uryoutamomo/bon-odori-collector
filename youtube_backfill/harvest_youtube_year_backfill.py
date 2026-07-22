@@ -11,7 +11,7 @@ from pathlib import Path
 
 from youtube_channels.backfill_youtube_descriptions import best_thumbnail_url, load_env_value
 from youtube_channels.discover_youtube_channels import VIDEOS_API_URL, SEARCH_API_URL, enrich_video_candidate, youtube_get
-from event_series_normalization import series_event_name
+from event_model.event_series_normalization import series_event_name
 from youtube_channels.extract_youtube_setlists import BON_CONTEXT_RE, parse_youtube_event_date
 
 

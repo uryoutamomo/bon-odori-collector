@@ -8,7 +8,7 @@ from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
-from event_series_normalization import series_event_name
+from event_model.event_series_normalization import series_event_name
 from collection_support.event_evidence import dancer_key
 
 
