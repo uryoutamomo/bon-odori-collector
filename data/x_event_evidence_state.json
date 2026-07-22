@@ -1,7 +1,7 @@
 {
   "status": "awaiting_review",
-  "window_start": "2027-02-16T00:00:00+00:00",
-  "window_end": "2027-03-02T00:00:00+00:00",
+  "window_start": "2027-03-02T00:00:00+00:00",
+  "window_end": "2027-03-16T00:00:00+00:00",
   "selected_handles": [
     "@2tsuo_g",
     "@5khfya5pjksggov",
@@ -66,8 +66,8 @@
   "tweets_scanned": 0,
   "evidence_detected": 0,
   "pending_evidence": [],
-  "started_at": "2026-07-21T08:46:09.278866+00:00",
-  "updated_at": "2026-07-21T08:46:15.828691+00:00",
+  "started_at": "2026-07-22T08:46:03.551290+00:00",
+  "updated_at": "2026-07-22T08:46:10.464589+00:00",
   "window_history": [
     {
       "window_start": "2025-06-10T00:00:00+00:00",
@@ -552,9 +552,20 @@
       "pages_completed": 3,
       "tweets_scanned": 0,
       "evidence_detected": 0
+    },
+    {
+      "window_start": "2027-02-16T00:00:00+00:00",
+      "window_end": "2027-03-02T00:00:00+00:00",
+      "covered_until": "2027-03-02T00:00:00+00:00",
+      "completed_at": "2026-07-21T08:46:15.829676+00:00",
+      "reviewed_at": "2026-07-22T08:46:03.551290+00:00",
+      "review_note": "auto-advance continuous event evidence window",
+      "pages_completed": 3,
+      "tweets_scanned": 0,
+      "evidence_detected": 0
     }
   ],
-  "previous_covered_until": "2027-02-16T00:00:00+00:00",
-  "completed_at": "2026-07-21T08:46:15.829676+00:00",
-  "covered_until": "2027-03-02T00:00:00+00:00"
+  "previous_covered_until": "2027-03-02T00:00:00+00:00",
+  "completed_at": "2026-07-22T08:46:10.465550+00:00",
+  "covered_until": "2027-03-16T00:00:00+00:00"
 }

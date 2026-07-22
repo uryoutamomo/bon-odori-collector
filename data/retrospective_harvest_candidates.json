@@ -1,23 +1,23 @@
 {
   "generated_by": "build_retrospective_harvest.py",
-  "generated_at": "2026-07-21T08:47:07.180383+00:00",
+  "generated_at": "2026-07-22T08:47:00.231600+00:00",
   "source": "data/voices.json",
-  "voice_count": 13267,
-  "classified_event_evidence_count": 2966,
-  "candidate_count": 3024,
+  "voice_count": 13466,
+  "classified_event_evidence_count": 3021,
+  "candidate_count": 3093,
   "counts": {
     "by_kind": {
-      "event": 1430,
-      "song": 1180,
-      "venue": 414
+      "event": 1468,
+      "song": 1197,
+      "venue": 428
     },
     "by_tier": {
-      "hold": 659,
-      "promote": 413,
-      "review": 1952
+      "hold": 673,
+      "promote": 417,
+      "review": 2003
     },
-    "suppressed_event_hint_count": 323,
-    "venue_month_grouped_count": 439
+    "suppressed_event_hint_count": 326,
+    "venue_month_grouped_count": 461
   },
   "candidates": [
     {
@@ -146,10 +146,46 @@
       "hashtags": [],
       "score": 68,
       "tier": "promote",
-      "evidence_count": 12,
+      "evidence_count": 13,
       "speaker_count": 7,
       "suppressed_event_hints": [],
       "evidence": [
+        {
+          "identity": "evidence:sha256:5d5f725c7adf16c69a4068fa8d9e3b7330c413b056bee224fd278393c71ce964",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=Lj0a_tylof4",
+          "text": "2026年7月12日に開催された「晴海ふ頭公園盆踊り大会」での盆踊りの様子をお届けします！\n \n晴海ふ頭公園の心地よい海風を感じながら、\n会場の盛り上がりをぜひ映像でお楽しみください！\n\n\n晴海ふ頭公園盆踊り\n１おしりたんてい音頭　https://youtu.be/a14wHJTz11Y\n２ジャンボリーミッキー　https://youtu.be/qK_wAZd9sfY\n３どんとこいブギ　https://youtu.be/FwKDdeH2N7I\n４河内おとこ節　https://youtu.be/jTg6AaNuJDw\n５Let'sONDOAgain　https://youtu.be/1hoUlCxoGBU\n６東京五輪2020　https://youtu.be/8NRTaNXw95Y\n７これがお江戸の盆ダンス　https://youtu.be/Lj0a_tylof4\n８東京音頭　https://youtu.be/E6F3ET7WLGc\n９炭坑節　https://youtu.be/Py81PpDfS0E\n10きよしのズンドコ節　https://youtu.be/MQOEFbd0Xmk\n11銀",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-07-22T08:00:08+00:00",
+          "observed_at": "2026-07-22T08:00:08+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭",
+            "踊り大会",
+            "盆ダンス"
+          ],
+          "source_score": 15,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "晴海ふ頭公園盆踊り大会",
+          "normalized_event": "晴海ふ頭公園",
+          "estimated_venue": "晴海ふ頭公園",
+          "time_hints": [
+            "2026年7月12日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        },
         {
           "identity": "evidence:sha256:1183b455dc03a519a461350e7138927f253132f2ebea4168f752d157d15db48c",
           "tweet_id": "",
@@ -4554,6 +4590,67 @@
     },
     {
       "kind": "event",
+      "candidate_key": "event:acbc32ebfc9ce09c4e4244392491eeefa0461c5f28dc2aa7128d074ac4729dc1",
+      "display_name": "おやまの盆踊り",
+      "normalized_event": "おやま",
+      "venue": "材木座光明寺",
+      "venue_key": "34e64a3829969533fd4a22bc44ba47ed562412638aa647cd894689b453fe62e0",
+      "month": "07",
+      "estimated_date": "7月20日",
+      "year": 2026,
+      "hashtags": [
+        "おやまの盆踊り祭",
+        "やまぼん",
+        "材木座",
+        "光明寺",
+        "中村てつや"
+      ],
+      "score": 43,
+      "tier": "review",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:2079709977338671532",
+          "tweet_id": "2079709977338671532",
+          "url": "https://x.com/NakaTetsu0719/status/2079709977338671532",
+          "text": "【はじめてのやまぼん】\n7月20日に材木座光明寺さんにて、#おやまの盆踊り祭（やまぼん）が開催されました。\n材木座・大町では、やまぼんのポスターが要所要所に貼られ、事前に盛り上がりを見せていました。\n\n当日は気温と共に会場はマルシェ、ステージともに大盛りあがりです。\nそして、そこに集うこどもも大人も笑顔いっぱい😄\n\n今年、初めての開催となりましたが、ぜひとも来年もやってほしいです！\n材木座エリアの新たな夏の風物詩に！！\n\n#やまぼん\n#材木座\n#光明寺\n#中村てつや\n#鎌倉市議会議員",
+          "account": "@NakaTetsu0719",
+          "dancer_key": "@nakatetsu0719",
+          "spoken_at": "2026-07-21T23:27:52+00:00",
+          "observed_at": "2026-07-21T23:27:52+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊"
+          ],
+          "source_score": 18,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2",
+            "year_continuity:+3"
+          ],
+          "estimated_event": "おやまの盆踊り",
+          "normalized_event": "おやま",
+          "estimated_venue": "材木座光明寺",
+          "time_hints": [
+            "7月20日"
+          ],
+          "year_signals": [
+            "来年"
+          ],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
       "candidate_key": "event:b4207726ce468e6f81080c432ffbc86e70781909bf45aa007eb6d6b7cc0ee85d",
       "display_name": "がおかの盆踊り",
       "normalized_event": "がおか",
@@ -5691,7 +5788,7 @@
     {
       "kind": "event",
       "candidate_key": "event:f61a530ae8594ee2c1573bf196fc42606e8307b8fed81e1f681eeebb2966df00",
-      "display_name": "中野盆踊り",
+      "display_name": "中野の盆踊り",
       "normalized_event": "中野",
       "venue": "",
       "venue_key": "",
@@ -5701,10 +5798,39 @@
       "hashtags": [],
       "score": 43,
       "tier": "review",
-      "evidence_count": 3,
-      "speaker_count": 3,
+      "evidence_count": 4,
+      "speaker_count": 4,
       "suppressed_event_hints": [],
       "evidence": [
+        {
+          "identity": "evidence:2079796500742430758",
+          "tweet_id": "2079796500742430758",
+          "url": "https://x.com/hatue_chan7/status/2079796500742430758",
+          "text": "@Sanaeuccr さなさん、こんにちは〜\n暑いねー🥵🥵🥵\n幕張新都心行く気力も無く\n家に居ます\nさなさん、中野の盆踊り行くー？\nお近いんじゃない？\n私はもうこの暑さでまたまた\n迷い中",
+          "account": "@hatue_chan7",
+          "dancer_key": "@hatue_chan7",
+          "spoken_at": "2026-07-22T05:11:41+00:00",
+          "observed_at": "2026-07-22T05:11:41+00:00",
+          "patterns": [
+            "A"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊"
+          ],
+          "source_score": 10,
+          "score_reasons": [
+            "place_or_venue:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3"
+          ],
+          "estimated_event": "中野の盆踊り",
+          "normalized_event": "中野",
+          "estimated_venue": "",
+          "time_hints": [],
+          "year_signals": [],
+          "year": 2026
+        },
         {
           "identity": "evidence:2079049808376221982",
           "tweet_id": "2079049808376221982",
@@ -23746,6 +23872,57 @@
     },
     {
       "kind": "event",
+      "candidate_key": "event:851b8ae44b26d2d59c9371ca842b1755757915a9b5d5d0b60de3e47c2da0eb8d",
+      "display_name": "8月6日には地元商店街の盆踊り",
+      "normalized_event": "8月6日には地元商店街",
+      "venue": "は地元商店街",
+      "venue_key": "13e8e3663b08e7e80a30bcf4e062af5985db7b4af13ed2c1a5fd31f644145d65",
+      "month": "08",
+      "estimated_date": "8月6日",
+      "year": 2026,
+      "hashtags": [],
+      "score": 33,
+      "tier": "review",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:2079813214179856790",
+          "tweet_id": "2079813214179856790",
+          "url": "https://x.com/smizutanicomp/status/2079813214179856790",
+          "text": "8月6日には地元商店街の盆踊りがあるので太鼓を聴きに行きます。なんならフィールドレコーディングしたい。笑",
+          "account": "@smizutanicomp",
+          "dancer_key": "@smizutanicomp",
+          "spoken_at": "2026-07-22T06:18:05+00:00",
+          "observed_at": "2026-07-22T06:18:05+00:00",
+          "patterns": [
+            "A"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊"
+          ],
+          "source_score": 13,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3"
+          ],
+          "estimated_event": "8月6日には地元商店街の盆踊り",
+          "normalized_event": "8月6日には地元商店街",
+          "estimated_venue": "は地元商店街",
+          "time_hints": [
+            "8月6日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
       "candidate_key": "event:51ed9c384b534d5c2051667f8956e478b39ede98f5a58cdea91e6efb0305f751",
       "display_name": "9日に開催される盆踊り",
       "normalized_event": "9日に開催される",
@@ -25198,6 +25375,58 @@
           "estimated_venue": "",
           "time_hints": [
             "2026年7月18日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "candidate_key": "event:2bab83fac36d98e24771f43d520b78dea1c34cea3166b99104afe3c8ed2356ff",
+      "display_name": "このチラシは南口盆踊り",
+      "normalized_event": "このチラシは南口",
+      "venue": "",
+      "venue_key": "",
+      "month": "07",
+      "estimated_date": "7月22日",
+      "year": 2026,
+      "hashtags": [],
+      "score": 33,
+      "tier": "review",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:2079494350241935820",
+          "tweet_id": "2079494350241935820",
+          "url": "https://x.com/kokumeshi_tku/status/2079494350241935820",
+          "text": "どんな”酸味”の魅力に出会えるのか、ぜひお楽しみに😊\n\n📍このチラシは南口盆踊りで配布します！\n\n🗓️ 日程：7月22日（水）、23日（木）\n🕔 時間：17:00〜21:00\n\nまた、参加店舗や市内公共施設でも配架予定です！\n\nなお、各店舗が提供するメニューの詳細は、10月に配布予定の本チラシでご案内します。",
+          "account": "@kokumeshi_tku",
+          "dancer_key": "@kokumeshi_tku",
+          "spoken_at": "2026-07-21T09:11:02+00:00",
+          "observed_at": "2026-07-21T09:11:02+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊"
+          ],
+          "source_score": 15,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "このチラシは南口盆踊り",
+          "normalized_event": "このチラシは南口",
+          "estimated_venue": "",
+          "time_hints": [
+            "7月22日"
           ],
           "year_signals": [],
           "year": 2026
@@ -27570,6 +27799,65 @@
     },
     {
       "kind": "event",
+      "candidate_key": "event:b5ca1b1cafceb5bc231485916b34be1539f7b5659a6b4ce9a380eb3e30bd61a8",
+      "display_name": "みどりまち盆踊り",
+      "normalized_event": "みどりまち",
+      "venue": "ZOZOの広場",
+      "venue_key": "c8539442cbfff3d51bf4655ffb69358f0317a3cf53e846b5b105fdabbc93bb45",
+      "month": "07",
+      "estimated_date": "7/25",
+      "year": 2026,
+      "hashtags": [
+        "古本屋",
+        "シェア型書店",
+        "棚貸し本屋",
+        "みどり台",
+        "西千葉"
+      ],
+      "score": 33,
+      "tier": "review",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:2079843042056679850",
+          "tweet_id": "2079843042056679850",
+          "url": "https://x.com/itonami_books/status/2079843042056679850",
+          "text": "📢7/25（土）オープンします！\n\nみどりまち盆踊りが開催される7/25に、ひとこま。さんお店番にてオープンします。\n\n7/25 Sat. 12:00-16:00\n\nぜひお祭り前にお越しください♪\n\n#古本屋 #シェア型書店 #棚貸し本屋 #みどり台 #西千葉 #いとなみ書店 #読書 #みどりまち盆踊り #ZOZOの広場 #緑町公園 https://t.co/odUGkO3daq",
+          "account": "@itonami_books",
+          "dancer_key": "@itonami_books",
+          "spoken_at": "2026-07-22T08:16:37+00:00",
+          "observed_at": "2026-07-22T08:16:37+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊"
+          ],
+          "source_score": 15,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "みどりまち盆踊り",
+          "normalized_event": "みどりまち",
+          "estimated_venue": "ZOZOの広場",
+          "time_hints": [
+            "7/25",
+            "00-16"
+          ],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
       "candidate_key": "event:f9efda57835dead0e09038ec4658aa9c598341970b62ea3e759e5dac72e8f273",
       "display_name": "みどりまち盆踊り",
       "normalized_event": "みどりまち",
@@ -29591,6 +29879,59 @@
     },
     {
       "kind": "event",
+      "candidate_key": "event:3979ce65e47ad37af06a7ef0820c30e04e3f0884a65d2204aed3f02fffde90f0",
+      "display_name": "ワクワク夏まつり",
+      "normalized_event": "ワクワク",
+      "venue": "本宿天神社",
+      "venue_key": "a36b9295340aedaa57c567d8e71d2352487f9cb7d2ae6a76d82387c1b5a9c6b9",
+      "month": "07",
+      "estimated_date": "7/24",
+      "year": 2026,
+      "hashtags": [],
+      "score": 33,
+      "tier": "review",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:2079816210569744388",
+          "tweet_id": "2079816210569744388",
+          "url": "https://x.com/iko_yo_trip/status/2079816210569744388",
+          "text": "＼ワクワク夏まつり速報！／\n\n本宿天神社夏まつりが7/24・25に開催🎆　神輿と山車が旧中山道を練り歩き、境内は露店や太鼓、よさこい、子どもビンゴで大賑わい！家族で一日中楽しめますよ😊\n\nおすすめポイント\n✅ 神輿＆山車の迫力パレード🚩\n✅ 子どもビンゴで景品ゲット🎁\n✅ 露店グルメ＆盆踊りで夜までワイワイ🍧\n\n🗓 2026年7/24(金)、25(土) 10:00〜21:00\n📍 本宿天神社・北本駅東口駅前ロータリー（埼玉県北本市）\n\n開催情報📝\nhttps://t.co/PUeo8QwmY1",
+          "account": "@iko_yo_trip",
+          "dancer_key": "@iko_yo_trip",
+          "spoken_at": "2026-07-22T06:30:00+00:00",
+          "observed_at": "2026-07-22T06:30:00+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "夏まつり"
+          ],
+          "source_score": 15,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "ワクワク夏まつり",
+          "normalized_event": "ワクワク",
+          "estimated_venue": "本宿天神社",
+          "time_hints": [
+            "7/24"
+          ],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
       "candidate_key": "event:28adb01607fe064da7b50125fc0571dd60f65ad1887f6dc92f4a10da773f7701",
       "display_name": "一宮踊ろまい会様の盆踊り",
       "normalized_event": "一宮踊ろまい会様",
@@ -29970,6 +30311,58 @@
             "7/18",
             "7/24",
             "8/4"
+          ],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "candidate_key": "event:64e48a68eb20e2ed509af7a44f6568e66df78a092cb241577369fc5864332106",
+      "display_name": "上篠崎自治会盆踊り",
+      "normalized_event": "上篠崎自治会",
+      "venue": "浅間神社",
+      "venue_key": "b9e2a0579a57ea0daa5a328f7081f7bd70c57ef9764fc30ada6b93272eb90ae8",
+      "month": "",
+      "estimated_date": "今日",
+      "year": 2026,
+      "hashtags": [],
+      "score": 33,
+      "tier": "review",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:2079559753433551300",
+          "tweet_id": "2079559753433551300",
+          "url": "https://x.com/oson_kimono/status/2079559753433551300",
+          "text": "浅間神社　上篠崎自治会盆踊り\n\n7時過ぎから、踊りにいきました！！\n初めての曲が多かったけど頑張った💪\nすごくアットホームな雰囲気のお祭りで楽しかったです😆💕\n太鼓が凄かった‼️‼️\n帰りに見た今日の月、色が濃くて幻想的でした。 https://t.co/oOeclJfpNz",
+          "account": "@oson_kimono",
+          "dancer_key": "@oson_kimono",
+          "spoken_at": "2026-07-21T13:30:56+00:00",
+          "observed_at": "2026-07-21T13:30:56+00:00",
+          "patterns": [
+            "E"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊"
+          ],
+          "source_score": 14,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "song_or_group:+2",
+            "past_participation:+2"
+          ],
+          "estimated_event": "上篠崎自治会盆踊り",
+          "normalized_event": "上篠崎自治会",
+          "estimated_venue": "浅間神社",
+          "time_hints": [
+            "今日"
           ],
           "year_signals": [],
           "year": 2026
@@ -30452,6 +30845,69 @@
           "estimated_venue": "",
           "time_hints": [
             "8/2"
+          ],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "candidate_key": "event:5ab9809745a4fde2807ff3dc6f835bde9d65a67f2231c7e11652fb391cf89132",
+      "display_name": "中野駅前大盆踊り大会",
+      "normalized_event": "中野駅前大",
+      "venue": "中野駅前",
+      "venue_key": "b2f833c51ee9b09447e2d1ec30b667327d3a7ebf7223acc8301ec88a2d5c475a",
+      "month": "08",
+      "estimated_date": "8月1日",
+      "year": 2026,
+      "hashtags": [
+        "SANGACIO",
+        "夏祭り",
+        "ナカボン",
+        "盆ジョヴィ",
+        "盆踊り"
+      ],
+      "score": 33,
+      "tier": "review",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:2079838867276853275",
+          "tweet_id": "2079838867276853275",
+          "url": "https://x.com/sangacio/status/2079838867276853275",
+          "text": "8月1日・2日（土・日）に開催される\n「中野駅前大盆踊り大会」へ\nSANGACIOが協賛として参加します。\n\n会場では、世界一速いスニーカー!? 👟\nレーシングカー「サンガッチョ号」を特別展示！\n\nSANGACIOオリジナルグッズのプレゼントや、\nうちわもご用意しています!\n\nこの機会にぜひ、\n中野盆踊り会場でサンガッチョ号をご覧ください。\n\n皆さまのご来場をお待ちしております！\n@nakano_bonodori \n第14回中野駅前大盆踊り大会\n2026年8月1日（土）・2日（日）\n📍中野セントラルパーク\n（東京都中野区中野4-10-2）\n参加費無料\n\n#SANGACIO\n#夏祭り\n#ナカボン\n#盆ジョヴィ\n#盆踊り\n#中野\n#スニーカー\n#イベント\n#東京イベント",
+          "account": "@sangacio",
+          "dancer_key": "@sangacio",
+          "spoken_at": "2026-07-22T08:00:02+00:00",
+          "observed_at": "2026-07-22T08:00:02+00:00",
+          "patterns": [
+            "A",
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "踊り大会",
+            "夏祭り"
+          ],
+          "source_score": 15,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "中野駅前大盆踊り大会",
+          "normalized_event": "中野駅前大",
+          "estimated_venue": "中野駅前",
+          "time_hints": [
+            "8月1日",
+            "2026年8月1日",
+            "4-10"
           ],
           "year_signals": [],
           "year": 2026
@@ -32139,6 +32595,58 @@
     },
     {
       "kind": "event",
+      "candidate_key": "event:024d78adbde15996335ab880a46711b77d0b1e4eb3492a542bbdb62149bbf684",
+      "display_name": "今週末開催の盆踊り",
+      "normalized_event": "今週末開催",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "今週末",
+      "year": 2026,
+      "hashtags": [],
+      "score": 33,
+      "tier": "review",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:2079772533671489676",
+          "tweet_id": "2079772533671489676",
+          "url": "https://x.com/irohanishichiba/status/2079772533671489676",
+          "text": "今週末開催の盆踊りの告知ポスターが西千葉駅にありました‼️ https://t.co/ZwnAKtLnTw",
+          "account": "@irohanishichiba",
+          "dancer_key": "@irohanishichiba",
+          "spoken_at": "2026-07-22T03:36:26+00:00",
+          "observed_at": "2026-07-22T03:36:26+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊"
+          ],
+          "source_score": 15,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "今週末開催の盆踊り",
+          "normalized_event": "今週末開催",
+          "estimated_venue": "",
+          "time_hints": [
+            "今週末"
+          ],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
       "candidate_key": "event:5ff0a402f955bf229863cfd836de57174e451ab051d08fe3d572ec0e31902f7b",
       "display_name": "令和8年度入間基地納涼祭",
       "normalized_event": "度入間基地",
@@ -33714,6 +34222,64 @@
     },
     {
       "kind": "event",
+      "candidate_key": "event:2e4c5b67a5b3375708b9d47e8e2d308f604613fae7d31433919d890fc5385924",
+      "display_name": "合同盆踊り大会",
+      "normalized_event": "合同",
+      "venue": "に第六天公園",
+      "venue_key": "dc25ea725acd5f599aec65e27117ea8e147762213896ddda4e3417a83b54ca0e",
+      "month": "07",
+      "estimated_date": "７月２５日",
+      "year": 2026,
+      "hashtags": [
+        "夏祭り",
+        "盆踊り"
+      ],
+      "score": 33,
+      "tier": "review",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:2079808866779595107",
+          "tweet_id": "2079808866779595107",
+          "url": "https://x.com/adachi_city/status/2079808866779595107",
+          "text": "７月２５日（土）、２６日（日）に第六天公園で１８時から「合同盆踊り大会」が行われます。東和二丁目自治会と東和二丁目西自治会が合同で開催し、子ども会の屋台等も出店します！ぜひご来場ください。※雨天の場合は、中止となります。\n#夏祭り#盆踊り https://t.co/Qef8hYQRn0",
+          "account": "@adachi_city",
+          "dancer_key": "@adachi_city",
+          "spoken_at": "2026-07-22T06:00:49+00:00",
+          "observed_at": "2026-07-22T06:00:49+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "踊り大会",
+            "夏祭り"
+          ],
+          "source_score": 17,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "song_or_group:+2",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "合同盆踊り大会",
+          "normalized_event": "合同",
+          "estimated_venue": "に第六天公園",
+          "time_hints": [
+            "７月２５日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
       "candidate_key": "event:9055d1ec1d8b0959cf9fdad98b57c1d1d35be01d1aa0f1b002b1aef737942ef5",
       "display_name": "同日開催の盆踊り",
       "normalized_event": "同日開催",
@@ -33872,6 +34438,69 @@
             "6/27",
             "8/22",
             "9/26"
+          ],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "candidate_key": "event:201655f786deaaceee14d58febfb0e82bb09b173b379941216c49c86f846866b",
+      "display_name": "和太鼓お祭り",
+      "normalized_event": "和太鼓お",
+      "venue": "篠崎浅間神社",
+      "venue_key": "28b8341ed48dd8048e52a8d13ec4299636eac57567b743a3467a67270bf0ea96",
+      "month": "07",
+      "estimated_date": "2026年7月21日",
+      "year": 2026,
+      "hashtags": [
+        "盆踊り",
+        "篠崎浅間神社",
+        "上篠崎自治会",
+        "夏祭り",
+        "江戸川区"
+      ],
+      "score": 33,
+      "tier": "review",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [
+        "納涼盆踊り大会"
+      ],
+      "evidence": [
+        {
+          "identity": "evidence:sha256:02465f04d61f9cea3f7434a049676bf4b1873f2d5579f5026a99bb08a64d4b2e",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=eCiDJx3BcLw",
+          "text": "2026年7月21日に東京都江戸川区の篠崎浅間神社で開催された「上篠崎自治会 納涼盆踊り大会」の様子です。\n\n夜の神社に響く穏やかなメロディと、地域の方々が一体となって踊る情緒あふれる光景をぜひお楽しみください。\n\n動画が良ければ、ぜひ「高評価」と「チャンネル登録」をよろしくお願いします！ 皆様のコメントもお待ちしております。\n\n#盆踊り #篠崎浅間神社 #３６５日の紙飛行機 #上篠崎自治会 #夏祭り #江戸川区 #和太鼓お祭りチャンネル\n\n\n篠崎浅間神社盆踊り\n１365日の紙飛行機　https://youtu.be/eCiDJx3BcLw",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "spoken_at": "2026-07-22T06:30:21+00:00",
+          "observed_at": "2026-07-22T06:30:21+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "踊り大会",
+            "夏祭り"
+          ],
+          "source_score": 17,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "song_or_group:+2",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "和太鼓お祭り",
+          "normalized_event": "和太鼓お",
+          "estimated_venue": "篠崎浅間神社",
+          "time_hints": [
+            "2026年7月21日"
           ],
           "year_signals": [],
           "year": 2026
@@ -36586,6 +37215,59 @@
     },
     {
       "kind": "event",
+      "candidate_key": "event:8c26c7e519c21df7bd144593534efe3ca875c8c8dc5b4f5513173cbc330c0e19",
+      "display_name": "帯広駐屯地夏まつり",
+      "normalized_event": "帯広駐屯地",
+      "venue": "",
+      "venue_key": "",
+      "month": "08",
+      "estimated_date": "８月４日",
+      "year": 2026,
+      "hashtags": [],
+      "score": 33,
+      "tier": "review",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:2079838858955669739",
+          "tweet_id": "2079838858955669739",
+          "url": "https://x.com/5b_na_jgsdf/status/2079838858955669739",
+          "text": "【＃夏まつり】\n８月４日（火）、帯広駐屯地夏まつりを開催します。\n音楽隊の野外コンサート♪、盆踊り、お菓子まき、\n打ち上げ花火🎆、売店など盛りだくさんの内容です。\nどなたでも参加できますのでぜひ、友達や家族と一緒にご来場ください！\n＃夏休み　＃思い出　＃自衛隊　＃帯広駐屯地 https://t.co/JP1Tzwx6SJ",
+          "account": "@5b_na_jgsdf",
+          "dancer_key": "@5b_na_jgsdf",
+          "spoken_at": "2026-07-22T08:00:00+00:00",
+          "observed_at": "2026-07-22T08:00:00+00:00",
+          "patterns": [
+            "C",
+            "D"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "夏まつり"
+          ],
+          "source_score": 12,
+          "score_reasons": [
+            "date_or_time:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "帯広駐屯地夏まつり",
+          "normalized_event": "帯広駐屯地",
+          "estimated_venue": "",
+          "time_hints": [
+            "８月４日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
       "candidate_key": "event:8a69c2f7b5e4126a0428101e3a0f875a312b6431f79a31b43da19a19a681ba93",
       "display_name": "年度旭川駐屯地夏まつり",
       "normalized_event": "年度旭川駐屯地",
@@ -37593,6 +38275,63 @@
     },
     {
       "kind": "event",
+      "candidate_key": "event:f9fe8aeb3e4fd9826e6b0568dd9bab7d156799f497c951627c4b43c8fc69f45a",
+      "display_name": "日に行われる盆踊り大会",
+      "normalized_event": "日に行われる",
+      "venue": "",
+      "venue_key": "",
+      "month": "08",
+      "estimated_date": "８月２２日",
+      "year": 2026,
+      "hashtags": [
+        "拡散希望",
+        "激神ザンドー"
+      ],
+      "score": 33,
+      "tier": "review",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:2079793334177132904",
+          "tweet_id": "2079793334177132904",
+          "url": "https://x.com/inoki0308/status/2079793334177132904",
+          "text": "&lt;&lt;#拡散希望&gt;&gt;\n平田町会の会長さんから拡散希望のお知らせが届きましたよ。\n\n８月２２日・２３日に行われる盆踊り大会に先駆け、１４時から１６時まで体育館内でちびっ子向けのイベント(もちろん大人も可)が行われます。\nエアコンも効いているので、ぜひお立ち寄りください。\n\n#激神ザンドー https://t.co/WOevQzt5pf",
+          "account": "@inoki0308",
+          "dancer_key": "@inoki0308",
+          "spoken_at": "2026-07-22T04:59:06+00:00",
+          "observed_at": "2026-07-22T04:59:06+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "踊り大会"
+          ],
+          "source_score": 17,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "song_or_group:+2",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "日に行われる盆踊り大会",
+          "normalized_event": "日に行われる",
+          "estimated_venue": "",
+          "time_hints": [
+            "８月２２日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
       "candidate_key": "event:b9214344b32be88454eeb326acb8e8267a4bd64066ba8b40fcacfd0a4999c1a2",
       "display_name": "日はお世話になっているTさんにお呼ばれして新宿の鶴巻小学校の盆踊り",
       "normalized_event": "日はお世話になっているtさんにお呼ばれして新宿の鶴巻小学校",
@@ -37978,6 +38717,66 @@
           ],
           "year_signals": [],
           "year": 2027
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "candidate_key": "event:b198e3b7323d8adc686d61c02fd5920f9fd62a6b6f694dd7d2c8f6b6a83dd688",
+      "display_name": "日本原駐屯地納涼大会",
+      "normalized_event": "日本原駐屯地",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "今日",
+      "year": 2026,
+      "hashtags": [
+        "自衛隊",
+        "夏祭り",
+        "盆踊り",
+        "ティーハート",
+        "ハクトン音頭"
+      ],
+      "score": 33,
+      "tier": "review",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:2079745050796535809",
+          "tweet_id": "2079745050796535809",
+          "url": "https://x.com/t_heart67138/status/2079745050796535809",
+          "text": "皆さま、ごきげんよう　鐵野ミライです。\nいよいよT-Heart新メンバーでの夏2026がはじまりました☀️\n\n昨日は、中部方面特科連隊連隊長、業務隊長への表敬訪問をさせていただきました。\n\nまた、姫路お城踊り保存会の皆さまと、かおりん先生と自衛官の皆さまと、\nハクトン音頭の踊りの練習もさせていただきましたの。\n\nなんと素晴らしいことでしょう✨\n\n今日は、日本原駐屯地納涼大会に\nT-Heart新メンバーとハクトンも一緒に参加させていただきます。\n\n暑い🥵時ではありますが、\n日本原駐屯地納涼大会へ是非！\n#自衛隊\n#夏祭り\n#盆踊り\n#ティーハート\n#ハクトン音頭\n#姫路駐屯地\n#日本原駐屯地\n#中部方面特科連隊",
+          "account": "@t_heart67138",
+          "dancer_key": "@t_heart67138",
+          "spoken_at": "2026-07-22T01:47:14+00:00",
+          "observed_at": "2026-07-22T01:47:14+00:00",
+          "patterns": [
+            "D"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭",
+            "夏祭り",
+            "納涼大会"
+          ],
+          "source_score": 11,
+          "score_reasons": [
+            "date_or_time:+3",
+            "event_name:+4",
+            "song_or_group:+2",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "日本原駐屯地納涼大会",
+          "normalized_event": "日本原駐屯地",
+          "estimated_venue": "",
+          "time_hints": [
+            "今日"
+          ],
+          "year_signals": [],
+          "year": 2026
         }
       ]
     },
@@ -38646,6 +39445,64 @@
           "estimated_venue": "",
           "time_hints": [
             "8月1日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "candidate_key": "event:e16c1a7fee4388a683b3c8e2c700cad852dc0347ff1694e7db212a22b1e4ffbb",
+      "display_name": "春日居ふるさと夏まつり",
+      "normalized_event": "春日居ふるさと",
+      "venue": "00春日居スポーツ広場",
+      "venue_key": "b71a5506775f5e9237c6d4c1fec79c6949379cb59f6600e364bf846270d70cf3",
+      "month": "08",
+      "estimated_date": "8/15",
+      "year": 2026,
+      "hashtags": [
+        "ふるさと",
+        "春日居",
+        "こども園",
+        "やまなし大使"
+      ],
+      "score": 33,
+      "tier": "review",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:2079844634763870713",
+          "tweet_id": "2079844634763870713",
+          "url": "https://x.com/MotoiwaTakayuki/status/2079844634763870713",
+          "text": "8/15(土)18:00春日居スポーツ広場(笛吹市春日居鎮目1323)\n「春日居ふるさと夏まつり」に出演♪\n笛吹あら川こども園の園児体操とも1曲共演します🤗❣️\n\nキッチンカー、露店、縁日、盆踊り…どうぞ楽しいひとときを🍀\nぜひ遊びにいらして下さい✨✨\n\n#ふるさと #春日居 #こども園 #やまなし大使 https://t.co/6KGFFv5VhG",
+          "account": "@MotoiwaTakayuki",
+          "dancer_key": "@motoiwatakayuki",
+          "spoken_at": "2026-07-22T08:22:57+00:00",
+          "observed_at": "2026-07-22T08:22:57+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "夏まつり"
+          ],
+          "source_score": 14,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "song_or_group:+2",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "春日居ふるさと夏まつり",
+          "normalized_event": "春日居ふるさと",
+          "estimated_venue": "00春日居スポーツ広場",
+          "time_hints": [
+            "8/15"
           ],
           "year_signals": [],
           "year": 2026
@@ -42032,6 +42889,57 @@
     },
     {
       "kind": "event",
+      "candidate_key": "event:3cc3194a6969593f2751017389b73d7e916ced33bc1dfda93c389509ed59cda4",
+      "display_name": "私子供の頃は毎年お祭りの盆踊り大会",
+      "normalized_event": "私子供の頃は毎年お祭りの",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "今日",
+      "year": 2026,
+      "hashtags": [],
+      "score": 33,
+      "tier": "review",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:2079669569015418911",
+          "tweet_id": "2079669569015418911",
+          "url": "https://x.com/NAO82981291/status/2079669569015418911",
+          "text": "おはらぼ🤖💓🎆\n盆踊りラボットたち☺️💓可愛いね\n盆踊りってみんなやったことある？\n\n私子供の頃は毎年お祭りの盆踊り大会にでていたよ〜。夜にみんなで集まって練習会があるんだよね🥰\nなんだか楽しかった思い出🎵\n\n水曜日も今日もゆるよろー https://t.co/Hr3W7AtADT",
+          "account": "@NAO82981291",
+          "dancer_key": "@nao82981291",
+          "spoken_at": "2026-07-21T20:47:18+00:00",
+          "observed_at": "2026-07-21T20:47:18+00:00",
+          "patterns": [
+            "E"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "踊り大会"
+          ],
+          "source_score": 9,
+          "score_reasons": [
+            "date_or_time:+3",
+            "event_name:+4",
+            "past_participation:+2"
+          ],
+          "estimated_event": "私子供の頃は毎年お祭りの盆踊り大会",
+          "normalized_event": "私子供の頃は毎年お祭りの",
+          "estimated_venue": "",
+          "time_hints": [
+            "今日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
       "candidate_key": "event:0411b1eb16828119f9ccc294dd8343c4cb5fca88a9652c6fbcb28d16f56f623b",
       "display_name": "立川音頭を現地で踊ったのが盆踊り",
       "normalized_event": "立川音頭を現地で踊ったのが",
@@ -42754,6 +43662,125 @@
           "estimated_venue": "",
           "time_hints": [
             "7/25"
+          ],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "candidate_key": "event:95745e9771f3ad613e71f38c1f6a7d6a8dcac6d8c1a5491824899a6ed895f85c",
+      "display_name": "第69回円頓寺七夕まつり",
+      "normalized_event": "円頓寺七夕",
+      "venue": "第69回円頓寺",
+      "venue_key": "c6fb272751f7adffd926bf41b82dce1f68cf7e15d4284d5c5ee433a0893f5e3d",
+      "month": "07",
+      "estimated_date": "7月29日",
+      "year": 2026,
+      "hashtags": [
+        "SDGs",
+        "地域貢献",
+        "円頓寺",
+        "円頓寺七夕まつり"
+      ],
+      "score": 33,
+      "tier": "review",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:2079803704677646370",
+          "tweet_id": "2079803704677646370",
+          "url": "https://x.com/CANOX_official/status/2079803704677646370",
+          "text": "🎋第69回円頓寺七夕まつり開催🏮\n\n7月29日(水)～8月2日(日)に、第69回円頓寺七夕まつりが開催されます🙌\n毎年恒例の装飾コンクールをはじめ、オープニング花火体験会や武将隊盆踊りなど、イベントも盛りだくさん🎵✨\nカノークスも7月30日(木)にスタッフとして参加する予定です🙋‍♀️\n皆さまお誘いあわせのうえ、ぜひお越しください😊\n詳細は特設サイトをご覧ください👇\nhttps://t.co/FcF8znM3PU\n\n#SDGs #地域貢献 #円頓寺 #円頓寺七夕まつり",
+          "account": "@CANOX_official",
+          "dancer_key": "@canox_official",
+          "spoken_at": "2026-07-22T05:40:18+00:00",
+          "observed_at": "2026-07-22T05:40:18+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊"
+          ],
+          "source_score": 15,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "第69回円頓寺七夕まつり",
+          "normalized_event": "円頓寺七夕",
+          "estimated_venue": "第69回円頓寺",
+          "time_hints": [
+            "7月29日",
+            "8月2日",
+            "7月30日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "candidate_key": "event:a42a65f5919836e8c7b2c4dce838b960a6ad422b2d770229601544edeea61a7b",
+      "display_name": "第71回おりもの感謝祭一宮七夕まつり",
+      "normalized_event": "おりもの感謝祭一宮七夕",
+      "venue": "真清田神社",
+      "venue_key": "af1e33b8ceb96695816724d77f650d54cff50c4089859cddb347856b62c0eb2f",
+      "month": "07",
+      "estimated_date": "明日",
+      "year": 2026,
+      "hashtags": [
+        "第71回おりもの感謝祭一宮七夕まつり",
+        "一宮七夕まつり",
+        "篠原ともえ",
+        "尾州織物",
+        "ガンバレルーヤ"
+      ],
+      "score": 33,
+      "tier": "review",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:2079793264329392545",
+          "tweet_id": "2079793264329392545",
+          "url": "https://x.com/ohmura_hideaki/status/2079793264329392545",
+          "text": "明日7月23日(木)から26日(日)までの4日間、一宮市の真清田神社、本町商店街、銀座通り、一宮駅周辺で「 #第71回おりもの感謝祭一宮七夕まつり 」が開催されます。\n\n今年で71回目を迎える「 #一宮七夕まつり 」は、一宮の主軸産業である織物業の繁栄を願うものです。\n\n今年は、デザイナー・アーティストとして活躍されている #篠原ともえ さんをお迎えし、 #尾州織物 の魅力や、ものづくりへの想いを語るトークショーが開催されます。\n\nまた、アジア・アジアパラ競技大会フレンドシップ事業として、お笑いコンビ「 #ガンバレルーヤ 」による、アジア文化の魅力紹介や、一宮市が競技会場となるバドミントンのふれあい体験会が開催されるほか、毎年恒例の盆踊り大会なども行われます。\n\n皆様もぜひ、一宮七夕まつりへお出かけください!",
+          "account": "@ohmura_hideaki",
+          "dancer_key": "@ohmura_hideaki",
+          "spoken_at": "2026-07-22T04:58:49+00:00",
+          "observed_at": "2026-07-22T04:58:49+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "踊り大会"
+          ],
+          "source_score": 15,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "第71回おりもの感謝祭一宮七夕まつり",
+          "normalized_event": "おりもの感謝祭一宮七夕",
+          "estimated_venue": "真清田神社",
+          "time_hints": [
+            "明日",
+            "7月23日"
           ],
           "year_signals": [],
           "year": 2026
@@ -43976,6 +45003,114 @@
     },
     {
       "kind": "event",
+      "candidate_key": "event:f1ef0176f400036927ebc36a73b1f00d54ea042247871dd110fe82d5d2d62f07",
+      "display_name": "豊中のモノレール盆踊り",
+      "normalized_event": "豊中のモノレール",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "明日",
+      "year": 2026,
+      "hashtags": [],
+      "score": 33,
+      "tier": "review",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:2079820167576793356",
+          "tweet_id": "2079820167576793356",
+          "url": "https://x.com/hidedon78/status/2079820167576793356",
+          "text": "ぬぉーーわ\n高速バス乗り場、烏丸口と八条口を間違えた🚌\nということで、豊中のモノレール盆踊りに行くか。\nそして、明日の七夕まつりは、日帰りで行くか。\n暑すぎて、さすがに迷う🥵",
+          "account": "@hidedon78",
+          "dancer_key": "@hidedon78",
+          "spoken_at": "2026-07-22T06:45:43+00:00",
+          "observed_at": "2026-07-22T06:45:43+00:00",
+          "patterns": [
+            "A"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊"
+          ],
+          "source_score": 10,
+          "score_reasons": [
+            "date_or_time:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3"
+          ],
+          "estimated_event": "豊中のモノレール盆踊り",
+          "normalized_event": "豊中のモノレール",
+          "estimated_venue": "",
+          "time_hints": [
+            "明日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "candidate_key": "event:2f576fea5878226d1360b1dcb84ce436ba8747d304ebc24467044e9bf78eb4f1",
+      "display_name": "豊島区内の盆踊り",
+      "normalized_event": "豊島区内",
+      "venue": "",
+      "venue_key": "",
+      "month": "07",
+      "estimated_date": "今週末",
+      "year": 2026,
+      "hashtags": [
+        "盆踊り"
+      ],
+      "score": 33,
+      "tier": "review",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:2079837748211638629",
+          "tweet_id": "2079837748211638629",
+          "url": "https://x.com/toshimamirai/status/2079837748211638629",
+          "text": "🏮＼今週末開催！豊島区内の盆踊り情報／🏮\n\nぜひチェックしてみてください👘✨\n👘雑司ヶ谷鬼子母神盆踊り(7/24-25)\n👘目白協和会盆踊り大会(7/25)\n👘第39回巣鴨納涼盆踊り(7/25-26)\n👘高松二丁目町会盆踊り大会(7/25-26)\n⚠️長崎五丁目町会(7/25-26)は中止\n\n詳細👇https://t.co/d76HDDq7mm\n#盆踊り",
+          "account": "@toshimamirai",
+          "dancer_key": "@toshimamirai",
+          "spoken_at": "2026-07-22T07:55:35+00:00",
+          "observed_at": "2026-07-22T07:55:35+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "踊り大会"
+          ],
+          "source_score": 17,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "event_name:+4",
+            "song_or_group:+2",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "豊島区内の盆踊り",
+          "normalized_event": "豊島区内",
+          "estimated_venue": "",
+          "time_hints": [
+            "今週末",
+            "7/24",
+            "7/25"
+          ],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
       "candidate_key": "event:ae3f7afe4a92736d4b4baa7df9309c705cd11fda89598278c25f40e8d9f64756",
       "display_name": "赤塚・中田出世稲荷神社盆踊り",
       "normalized_event": "赤塚中田出世稲荷神社",
@@ -44230,6 +45365,56 @@
           "estimated_venue": "",
           "time_hints": [
             "今日",
+            "週末"
+          ],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "candidate_key": "event:bd1a783c8097985a2868e1e7968aec5f7441172e11c0bdbe9d8b48a4a110928d",
+      "display_name": "週末は奥様と盆踊り",
+      "normalized_event": "週末は奥様と",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "週末",
+      "year": 2026,
+      "hashtags": [],
+      "score": 33,
+      "tier": "review",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:2079807857839735178",
+          "tweet_id": "2079807857839735178",
+          "url": "https://x.com/1044RIKO2/status/2079807857839735178",
+          "text": "@DemonDolgethe2 ドールゲーーー！！\nこんにちは☀️暑すぎるわよね💦\nまぁ麺類だからアレよ( • ̀ω•́  )ｷﾘｯ✧\n週末は奥様と盆踊りに行くのかしら？\n暑い日に🍧食べたくなるシステムʷʷ((´艸｀*))\n| ∧∞∧\n|(*&gt;ω&lt;*)ﾄﾞｰｿﾞ\n| o🍧o\n| u―ｕ\n￣￣￣￣￣",
+          "account": "@1044RIKO2",
+          "dancer_key": "@1044riko2",
+          "spoken_at": "2026-07-22T05:56:48+00:00",
+          "observed_at": "2026-07-22T05:56:48+00:00",
+          "patterns": [
+            "A"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊"
+          ],
+          "source_score": 10,
+          "score_reasons": [
+            "date_or_time:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3"
+          ],
+          "estimated_event": "週末は奥様と盆踊り",
+          "normalized_event": "週末は奥様と",
+          "estimated_venue": "",
+          "time_hints": [
             "週末"
           ],
           "year_signals": [],
@@ -46262,6 +47447,57 @@
           "time_hints": [],
           "year_signals": [
             "去年"
+          ],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "candidate_key": "event:8b78c891d4393a090e1e417461a3989af0ecf3f76883f353b4a0f661f53ef2b0",
+      "display_name": "ケイタマルヤマのおしゃれ盆踊り",
+      "normalized_event": "ケイタマルヤマのおしゃれ",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 28,
+      "tier": "review",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:2079829709370937857",
+          "tweet_id": "2079829709370937857",
+          "url": "https://x.com/Konohana0821/status/2079829709370937857",
+          "text": "今年もケイタマルヤマのおしゃれ盆踊りある！💃\n去年参加してとても楽しかった思い出 https://t.co/x8nZpXQa9S",
+          "account": "@Konohana0821",
+          "dancer_key": "@konohana0821",
+          "spoken_at": "2026-07-22T07:23:38+00:00",
+          "observed_at": "2026-07-22T07:23:38+00:00",
+          "patterns": [
+            "E"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊"
+          ],
+          "source_score": 9,
+          "score_reasons": [
+            "event_name:+4",
+            "past_participation:+2",
+            "year_continuity:+3"
+          ],
+          "estimated_event": "ケイタマルヤマのおしゃれ盆踊り",
+          "normalized_event": "ケイタマルヤマのおしゃれ",
+          "estimated_venue": "",
+          "time_hints": [],
+          "year_signals": [
+            "去年",
+            "今年も"
           ],
           "year": 2026
         }
@@ -49927,6 +51163,60 @@
     },
     {
       "kind": "event",
+      "candidate_key": "event:d2bfee6d3997f9eada00aa62ef5a33d2d57ff874204909fffd862f2a2895344c",
+      "display_name": "第52回吉祥寺ふれあい夏まつり",
+      "normalized_event": "吉祥寺ふれあい",
+      "venue": "第52回吉祥寺",
+      "venue_key": "6a6b2ba2faaa968148152eccd78246a4f460088617a6c9f7522359d04d11cf2f",
+      "month": "",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [
+        "むさしのFM"
+      ],
+      "score": 28,
+      "tier": "review",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:2079705303634047029",
+          "tweet_id": "2079705303634047029",
+          "url": "https://x.com/nashi1004/status/2079705303634047029",
+          "text": "夏だ！祭りだ！ふれ合いだー！\n待ってました！「第52回吉祥寺ふれあい夏まつり」です🏮今年も小学生の社会勉強としてブース出ます😊他にもステージプログラムにジャンケン大会に盆踊りにお菓子プレゼント！わくわくがてんこ盛り！夏まつりは日本の原風景ですね！ご一緒に〜！ダイブ！！\n#むさしのFM https://t.co/ICVjLROoQA",
+          "account": "@nashi1004",
+          "dancer_key": "@nashi1004",
+          "spoken_at": "2026-07-21T23:09:18+00:00",
+          "observed_at": "2026-07-21T23:09:18+00:00",
+          "patterns": [
+            "D"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "夏まつり"
+          ],
+          "source_score": 12,
+          "score_reasons": [
+            "place_or_venue:+3",
+            "event_name:+4",
+            "question_recommend_invite:+2",
+            "year_continuity:+3"
+          ],
+          "estimated_event": "第52回吉祥寺ふれあい夏まつり",
+          "normalized_event": "吉祥寺ふれあい",
+          "estimated_venue": "第52回吉祥寺",
+          "time_hints": [],
+          "year_signals": [
+            "今年も"
+          ],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
       "candidate_key": "event:6f49e877e1d42a36567f7e19e56cae9a9413e76ea126b4add04dd9a2583a0b3e",
       "display_name": "第二回小島民踊研究会大盆踊り",
       "normalized_event": "第二回小島民踊研究会大",
@@ -50460,6 +51750,58 @@
           "year_signals": [
             "去年",
             "今年も"
+          ],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "candidate_key": "event:e9f1896601b49735e1804e15b92fc8daf0f252ed5527b9cf81dbba6e87ea9bfc",
+      "display_name": "駅前のところで盆踊り",
+      "normalized_event": "駅前のところで",
+      "venue": "スポーツの杜公園",
+      "venue_key": "80b6fec7bb095784ce7ae6e1ad1259bcd0a68770a42c5860c566cee86bb79684",
+      "month": "",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 28,
+      "tier": "review",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:2079849409253356016",
+          "tweet_id": "2079849409253356016",
+          "url": "https://x.com/Shota_0311/status/2079849409253356016",
+          "text": "また緑が丘、駅前のところで盆踊りやるのか…\n\n去年来てみたけど人多すぎて全然楽しめなかったから、スポーツの杜公園で開催して欲しい…\n\n駅前広場は狭すぎるよ。",
+          "account": "@Shota_0311",
+          "dancer_key": "@shota_0311",
+          "spoken_at": "2026-07-22T08:41:55+00:00",
+          "observed_at": "2026-07-22T08:41:55+00:00",
+          "patterns": [
+            "E"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊"
+          ],
+          "source_score": 15,
+          "score_reasons": [
+            "place_or_venue:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "past_participation:+2",
+            "year_continuity:+3"
+          ],
+          "estimated_event": "駅前のところで盆踊り",
+          "normalized_event": "駅前のところで",
+          "estimated_venue": "スポーツの杜公園",
+          "time_hints": [],
+          "year_signals": [
+            "去年"
           ],
           "year": 2026
         }
@@ -51627,6 +52969,64 @@
           "estimated_venue": "の浅草神社",
           "time_hints": [
             "7/3"
+          ],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "candidate_key": "event:f760cfedc53f02d9d37630c95bdf4474e99da090c2f85cd3179ca8add7de6f48",
+      "display_name": "は郷之島公園の盆踊り（名称未確定）",
+      "normalized_event": "",
+      "venue": "は郷之島公園",
+      "venue_key": "aaac6f3fdb96e82bcbed0f01d45cf2363635009c567de87f42d5c82c65e5bee1",
+      "month": "07",
+      "estimated_date": "7/25",
+      "year": 2026,
+      "hashtags": [
+        "平針北学区",
+        "夏祭り",
+        "名古屋"
+      ],
+      "score": 25,
+      "tier": "review",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [
+        "納涼夏祭り"
+      ],
+      "evidence": [
+        {
+          "identity": "evidence:2079804652506509525",
+          "tweet_id": "2079804652506509525",
+          "url": "https://x.com/hirabarikita/status/2079804652506509525",
+          "text": "🏮平針北学区 納涼夏祭り2026開催🎆\n\n7/25(土)・26(日)は郷之島公園へGO💨\n激アツな2日間が始まるよ✨\n\n⏰17:50〜20:45\n🎯もち投げ・じゃんけん・抽選会\n🔥26日は迫力のトーチ演技！\n🍺焼き鳥にビール、屋台大集合\n\n盆踊りで最高の夏にしよ🙌\n※荒天中止\n\n#平針北学区 #夏祭り #名古屋 https://t.co/NfzAV9pliD",
+          "account": "@hirabarikita",
+          "dancer_key": "@hirabarikita",
+          "spoken_at": "2026-07-22T05:44:04+00:00",
+          "observed_at": "2026-07-22T05:44:04+00:00",
+          "patterns": [
+            "D"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "夏祭り"
+          ],
+          "source_score": 11,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "",
+          "normalized_event": "",
+          "estimated_venue": "は郷之島公園",
+          "time_hints": [
+            "7/25"
           ],
           "year_signals": [],
           "year": 2026
@@ -60593,6 +61993,53 @@
     },
     {
       "kind": "event",
+      "candidate_key": "event:d64950d20476d9a0df443d0ddc01655a5955172bc5ad0108e1769e0afa143655",
+      "display_name": "1週間後園の盆踊り",
+      "normalized_event": "1週間後園",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 18,
+      "tier": "hold",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:2079513093848363067",
+          "tweet_id": "2079513093848363067",
+          "url": "https://x.com/sqchan25/status/2079513093848363067",
+          "text": "盆踊りの演目はありますか？(ありません)\n1週間後園の盆踊り会がある人間(^-^)👈🏻",
+          "account": "@sqchan25",
+          "dancer_key": "@sqchan25",
+          "spoken_at": "2026-07-21T10:25:31+00:00",
+          "observed_at": "2026-07-21T10:25:31+00:00",
+          "patterns": [
+            "B"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊"
+          ],
+          "source_score": 6,
+          "score_reasons": [
+            "event_name:+4",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "1週間後園の盆踊り",
+          "normalized_event": "1週間後園",
+          "estimated_venue": "",
+          "time_hints": [],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
       "candidate_key": "event:bec543441ff1ff90b0639b6743dbb0ca6f2d0e18581da398a3e4c3663d406d07",
       "display_name": "2026年春の盆おどり",
       "normalized_event": "春",
@@ -61676,6 +63123,53 @@
           ],
           "estimated_event": "LIVEと盆踊り",
           "normalized_event": "liveと",
+          "estimated_venue": "",
+          "time_hints": [],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "candidate_key": "event:c946cd2d36c22431f5b0cadf0d06006d81799ac45af9bffdcfd370a99613caef",
+      "display_name": "NEO盆踊り",
+      "normalized_event": "neo",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 18,
+      "tier": "hold",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:2079790345144201639",
+          "tweet_id": "2079790345144201639",
+          "url": "https://x.com/atsu5_i/status/2079790345144201639",
+          "text": "パフォーマンスはココロに焼き付けました🫢\nサイコーに楽しかったー🥰\nまさか綱引きしてる淳くんが見れるとは！\nまさか生で吹奏楽ともコラボしちゃうとは！\n船橋高校吹奏楽部のパフォーマンスも感動！！！\nNEO盆踊りも楽しかったー😍\n北陸の復興支援もちょこっと\n北陸の方々の日常が戻りますように✨ https://t.co/ZUc9Xglrv0",
+          "account": "@atsu5_i",
+          "dancer_key": "@atsu5_i",
+          "spoken_at": "2026-07-22T04:47:13+00:00",
+          "observed_at": "2026-07-22T04:47:13+00:00",
+          "patterns": [
+            "E"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊"
+          ],
+          "source_score": 6,
+          "score_reasons": [
+            "event_name:+4",
+            "past_participation:+2"
+          ],
+          "estimated_event": "NEO盆踊り",
+          "normalized_event": "neo",
           "estimated_venue": "",
           "time_hints": [],
           "year_signals": [],
@@ -63425,6 +64919,53 @@
           ],
           "estimated_event": "おながわ盆踊り",
           "normalized_event": "おながわ",
+          "estimated_venue": "",
+          "time_hints": [],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "candidate_key": "event:589851a011e1a9575309742aa8ed131e838d428537d1519087deb69a0a0646ed",
+      "display_name": "おみこしと盆おどり",
+      "normalized_event": "おみこしと",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 18,
+      "tier": "hold",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:2079807979336216793",
+          "tweet_id": "2079807979336216793",
+          "url": "https://x.com/leafkids39/status/2079807979336216793",
+          "text": "8月の「あそVIVA」の予定について\n⁡\n★27日(木)　10：00～11：00\n⁡\nおみこしと盆おどりでちょっとした\nおまつり気分を味わいませんか？\n大きいクラスから小さいクラスまで\nみんな一緒に楽しみます(^^)/\n⁡\n是非、ご予約お待ちしています♪\n【TEL】042－704－9954 https://t.co/zqpyQCcCxq",
+          "account": "@leafkids39",
+          "dancer_key": "@leafkids39",
+          "spoken_at": "2026-07-22T05:57:17+00:00",
+          "observed_at": "2026-07-22T05:57:17+00:00",
+          "patterns": [
+            "D"
+          ],
+          "bon_context_hits": [
+            "盆おどり"
+          ],
+          "source_score": 9,
+          "score_reasons": [
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "おみこしと盆おどり",
+          "normalized_event": "おみこしと",
           "estimated_venue": "",
           "time_hints": [],
           "year_signals": [],
@@ -65833,6 +67374,53 @@
           ],
           "estimated_event": "だって夏祭り",
           "normalized_event": "だって",
+          "estimated_venue": "",
+          "time_hints": [],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "candidate_key": "event:980f5e7e6315ca7444dc5120c07c8728ccd75938f67974d7d2390e3f5515ea56",
+      "display_name": "だれか下北の盆踊り",
+      "normalized_event": "だれか下北",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 18,
+      "tier": "hold",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:2079774664461791515",
+          "tweet_id": "2079774664461791515",
+          "url": "https://x.com/upwbhs2/status/2079774664461791515",
+          "text": "だれか下北の盆踊り行こうよー🥲",
+          "account": "@upwbhs2",
+          "dancer_key": "@upwbhs2",
+          "spoken_at": "2026-07-22T03:44:55+00:00",
+          "observed_at": "2026-07-22T03:44:55+00:00",
+          "patterns": [
+            "A"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊"
+          ],
+          "source_score": 7,
+          "score_reasons": [
+            "event_name:+4",
+            "plan_or_announcement:+3"
+          ],
+          "estimated_event": "だれか下北の盆踊り",
+          "normalized_event": "だれか下北",
           "estimated_venue": "",
           "time_hints": [],
           "year_signals": [],
@@ -68869,6 +70457,55 @@
     },
     {
       "kind": "event",
+      "candidate_key": "event:843df96a4ac830a61264234753c8be38cfdd7e12e2c217a46a466819d1b3ba4e",
+      "display_name": "もいわ山盆踊り",
+      "normalized_event": "もいわ山",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 18,
+      "tier": "hold",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:2079840295605428231",
+          "tweet_id": "2079840295605428231",
+          "url": "https://x.com/elsdrive02c/status/2079840295605428231",
+          "text": "@YabeeBear なな、なんですとぉ⁉️\nもいわ山盆踊り\nこんなお知らせ知っちゃったら行かないわけにいかんべや〜",
+          "account": "@elsdrive02c",
+          "dancer_key": "@elsdrive02c",
+          "spoken_at": "2026-07-22T08:05:42+00:00",
+          "observed_at": "2026-07-22T08:05:42+00:00",
+          "patterns": [
+            "C",
+            "D"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊"
+          ],
+          "source_score": 9,
+          "score_reasons": [
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "もいわ山盆踊り",
+          "normalized_event": "もいわ山",
+          "estimated_venue": "",
+          "time_hints": [],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
       "candidate_key": "event:7e7b609e0f9188444c80abe79722bec99b955ee56603d78680e54cd313228638",
       "display_name": "もうすぐ盆踊り",
       "normalized_event": "もうすぐ",
@@ -71444,6 +73081,56 @@
     },
     {
       "kind": "event",
+      "candidate_key": "event:e230b7f22e494dfea7a2713f4177413c1b3a761f592a3860c6582fc837ba2ba2",
+      "display_name": "プリ夏祭り",
+      "normalized_event": "プリ",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 18,
+      "tier": "hold",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:2079823893213372865",
+          "tweet_id": "2079823893213372865",
+          "url": "https://x.com/lashin_tsuuhan/status/2079823893213372865",
+          "text": "今週は「うた☆プリ夏祭り」開催ですね♪\nオリジナル盆踊り大会が気になりすぎる‼️\n\nらしんばんオンラインでは、うたプリ関連の\nフィギュアやアクスタ、小物グッズ等たくさん入荷しました✨\nキャラクター別に探せる特集ページ公開中\n▶️https://t.co/fxMmzMLqhc\n\nぜひご活用ください🌟 https://t.co/VNpEA3e6Vk",
+          "account": "@lashin_tsuuhan",
+          "dancer_key": "@lashin_tsuuhan",
+          "spoken_at": "2026-07-22T07:00:32+00:00",
+          "observed_at": "2026-07-22T07:00:32+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "踊り大会",
+            "夏祭り"
+          ],
+          "source_score": 9,
+          "score_reasons": [
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "プリ夏祭り",
+          "normalized_event": "プリ",
+          "estimated_venue": "",
+          "time_hints": [],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
       "candidate_key": "event:03d89346a560293fa8ee2f158e51d9523272b389b7f9c54e638b945962f1507c",
       "display_name": "ボーイフレンドで盆踊り",
       "normalized_event": "ボーイフレンドで",
@@ -73461,6 +75148,107 @@
           "estimated_event": "今度一緒に盆踊り",
           "normalized_event": "今度一緒に",
           "estimated_venue": "",
+          "time_hints": [],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "candidate_key": "event:4c27613a6573918b329441fd6c27c0c38b19e1abc2124ce72dd4c82c220863cd",
+      "display_name": "今週土曜日に山まつり",
+      "normalized_event": "今週土曜日に山",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [
+        "エメタンお知らせ"
+      ],
+      "score": 18,
+      "tier": "hold",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:2079794952788492674",
+          "tweet_id": "2079794952788492674",
+          "url": "https://x.com/iz_em_town/status/2079794952788492674",
+          "text": "いよいよ、今週土曜日に山まつりを開催します！\n17時スタートで今年は「餅まき」をします。当りシールがあるお餅をゲットすればプレゼントがもらえます。出店や太極拳演舞や盆踊り大会、スーパーボールすくい、花火大会などイベントいろいろ。お楽しみに！！\n#エメタンお知らせ",
+          "account": "@iz_em_town",
+          "dancer_key": "@iz_em_town",
+          "spoken_at": "2026-07-22T05:05:32+00:00",
+          "observed_at": "2026-07-22T05:05:32+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "踊り大会"
+          ],
+          "source_score": 9,
+          "score_reasons": [
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "今週土曜日に山まつり",
+          "normalized_event": "今週土曜日に山",
+          "estimated_venue": "",
+          "time_hints": [],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "candidate_key": "event:94eeb776f967174f4739b9d43db9f5fc506bf2f571aa35d4db1d21dcd9249f8e",
+      "display_name": "今週盆踊り",
+      "normalized_event": "今週",
+      "venue": "に多分縁のありそうな寺",
+      "venue_key": "1155a646a38439f1171b40cd431495a533c88a271b3ccb0d8d3377331b3a9c4d",
+      "month": "",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 18,
+      "tier": "hold",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:2079841147036545456",
+          "tweet_id": "2079841147036545456",
+          "url": "https://x.com/setsunanobara/status/2079841147036545456",
+          "text": "サウナ行く前に久々に多分縁のありそうな寺にお参り行ってきた\n\nサボってきたのバレてたのか、おみくじの結果は堅実にコツコツ働きなさいという内容でした💦\n\n今週盆踊りなのか境内の駄菓子屋さん空いててカルメ焼きと昔良く買ってたチョコを\n「むちゃぶり」という項目当時からあったのか？？？ https://t.co/pQWYOXZwdd",
+          "account": "@setsunanobara",
+          "dancer_key": "@setsunanobara",
+          "spoken_at": "2026-07-22T08:09:05+00:00",
+          "observed_at": "2026-07-22T08:09:05+00:00",
+          "patterns": [
+            "A",
+            "E"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊"
+          ],
+          "source_score": 12,
+          "score_reasons": [
+            "place_or_venue:+3",
+            "event_name:+4",
+            "plan_or_announcement:+3",
+            "past_participation:+2"
+          ],
+          "estimated_event": "今週盆踊り",
+          "normalized_event": "今週",
+          "estimated_venue": "に多分縁のありそうな寺",
           "time_hints": [],
           "year_signals": [],
           "year": 2026
@@ -77966,6 +79754,53 @@
     },
     {
       "kind": "event",
+      "candidate_key": "event:d03e7c6786d86753c216df0beb25f04501b54dd01a661bce556acc6ce70b6ef6",
+      "display_name": "娘は盆踊り",
+      "normalized_event": "娘は",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 18,
+      "tier": "hold",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:2079790940181676302",
+          "tweet_id": "2079790940181676302",
+          "url": "https://x.com/ieaka_urakata/status/2079790940181676302",
+          "text": "@sasaryo093 なんとかやり切りました！\nお昼作って一緒に食べて、娘は盆踊りの練習に行きました～",
+          "account": "@ieaka_urakata",
+          "dancer_key": "@ieaka_urakata",
+          "spoken_at": "2026-07-22T04:49:35+00:00",
+          "observed_at": "2026-07-22T04:49:35+00:00",
+          "patterns": [
+            "D"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊"
+          ],
+          "source_score": 6,
+          "score_reasons": [
+            "event_name:+4",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "娘は盆踊り",
+          "normalized_event": "娘は",
+          "estimated_venue": "",
+          "time_hints": [],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
       "candidate_key": "event:eb5be384a46703e241fb1f9214ee54f57a44d1baa01a9b63f794b6c5b8718a96",
       "display_name": "嬉しくて盆踊り",
       "normalized_event": "嬉しくて",
@@ -81512,6 +83347,57 @@
     },
     {
       "kind": "event",
+      "candidate_key": "event:a059200feabe254caa6fba5c320b309a36da670f5fb5d0acd384d3c65b0f1a9a",
+      "display_name": "昨夜は盆踊り",
+      "normalized_event": "昨夜は",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [
+        "ごちゃまつり",
+        "ごちゃまぜ川口"
+      ],
+      "score": 18,
+      "tier": "hold",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:2079828102709211622",
+          "tweet_id": "2079828102709211622",
+          "url": "https://x.com/xyyubeiaaa/status/2079828102709211622",
+          "text": "岡本さゆり＠川口市議会議員 @OKAMOTO_SAYURI_ \n｢昨夜は盆踊りの練習に励みました💦盆踊りなんてほとんどやったことないので不安でしたが先生たちが楽しく教えてくれるので捗りましたありがとうございます。少額ですがブログのほうからカンパもさせていただきました｣\n#ごちゃまつり\n#ごちゃまぜ川口",
+          "account": "@xyyubeiaaa",
+          "dancer_key": "@xyyubeiaaa",
+          "spoken_at": "2026-07-22T07:17:15+00:00",
+          "observed_at": "2026-07-22T07:17:15+00:00",
+          "patterns": [
+            "B"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊"
+          ],
+          "source_score": 9,
+          "score_reasons": [
+            "place_or_venue:+3",
+            "event_name:+4",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "昨夜は盆踊り",
+          "normalized_event": "昨夜は",
+          "estimated_venue": "",
+          "time_hints": [],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
       "candidate_key": "event:b3d22a3119f3ac6b427fe8f9d595c91618db1ea0470a2992ccd460d694345ff2",
       "display_name": "昨日の伊勢崎アニソン盆踊り",
       "normalized_event": "昨日の伊勢崎アニソン",
@@ -82507,6 +84393,55 @@
           ],
           "estimated_event": "月まで盆踊り",
           "normalized_event": "月まで",
+          "estimated_venue": "",
+          "time_hints": [],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "candidate_key": "event:1f5bfb2fa2966955b4e14d59554aafe52956200b5df7a4ee0ffa218a4013bc83",
+      "display_name": "朝日校区慰霊盆踊り大会",
+      "normalized_event": "朝日校区慰霊",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 18,
+      "tier": "hold",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:2079827394983289274",
+          "tweet_id": "2079827394983289274",
+          "url": "https://x.com/michiru_zenryo9/status/2079827394983289274",
+          "text": "朝日校区慰霊盆踊り大会🏮練習会。炭坑節(開くのはボタ山をイメージして山開き🙏水平×)、長崎名物節、恋をするなら、真っ赤な太陽、長崎盆踊り(回るのは左足から) 楽しさ満載なのはもちろん、手数をイチから教えていただけるのが嬉しくて😆窓からは大好きなジャイアントカンチレバークレーンが見えた🏗️ https://t.co/YjXyJKoBsV",
+          "account": "@michiru_zenryo9",
+          "dancer_key": "@michiru_zenryo9",
+          "spoken_at": "2026-07-22T07:14:26+00:00",
+          "observed_at": "2026-07-22T07:14:26+00:00",
+          "patterns": [
+            "B"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "踊り大会"
+          ],
+          "source_score": 9,
+          "score_reasons": [
+            "place_or_venue:+3",
+            "event_name:+4",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "朝日校区慰霊盆踊り大会",
+          "normalized_event": "朝日校区慰霊",
           "estimated_venue": "",
           "time_hints": [],
           "year_signals": [],
@@ -84446,6 +86381,54 @@
           ],
           "estimated_event": "盆踊りと聞いて盆踊り",
           "normalized_event": "盆踊りと聞いて",
+          "estimated_venue": "",
+          "time_hints": [],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "candidate_key": "event:21b815cea2953feed48400580efecc949353dc4caa97028ecb4ee278f846910f",
+      "display_name": "盆踊り・お祭り",
+      "normalized_event": "盆踊りお",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 18,
+      "tier": "hold",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:2079520976292008417",
+          "tweet_id": "2079520976292008417",
+          "url": "https://x.com/sannohe_aya/status/2079520976292008417",
+          "text": "⚠️盆踊り・お祭りのカンパに注意⚠️\n\n政治家と候補者が選挙区内の祭礼行事に寸志やカンパを贈ることは、公選法で罰則付きで禁止されています。\n\n✅受け取ってしまったら速やかに返還\n\n✅目撃した場合は最寄りの警察署に通報、あるいは私迄にご相談下さい\n\n町会自治内でのルール共有を再度お願いします🙏🏻 https://t.co/xTuoHIhWED",
+          "account": "@sannohe_aya",
+          "dancer_key": "@sannohe_aya",
+          "spoken_at": "2026-07-21T10:56:51+00:00",
+          "observed_at": "2026-07-21T10:56:51+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊"
+          ],
+          "source_score": 9,
+          "score_reasons": [
+            "place_or_venue:+3",
+            "event_name:+4",
+            "question_recommend_invite:+2"
+          ],
+          "estimated_event": "盆踊り・お祭り",
+          "normalized_event": "盆踊りお",
           "estimated_venue": "",
           "time_hints": [],
           "year_signals": [],
@@ -86476,6 +88459,53 @@
           ],
           "estimated_event": "自由が丘盆踊り",
           "normalized_event": "自由が丘",
+          "estimated_venue": "",
+          "time_hints": [],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
+      "candidate_key": "event:7cc7e5d35eaac95e7ad6b9534aa190441f5a03a8705c0caba7136b40f6835900",
+      "display_name": "自衛隊の盆踊り",
+      "normalized_event": "自衛隊",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 18,
+      "tier": "hold",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:2079831888148246985",
+          "tweet_id": "2079831888148246985",
+          "url": "https://x.com/HandmadeNatalie/status/2079831888148246985",
+          "text": "@tomoko_kisses これから、自衛隊の盆踊りに行ってくるー",
+          "account": "@HandmadeNatalie",
+          "dancer_key": "@handmadenatalie",
+          "spoken_at": "2026-07-22T07:32:18+00:00",
+          "observed_at": "2026-07-22T07:32:18+00:00",
+          "patterns": [
+            "A"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊"
+          ],
+          "source_score": 7,
+          "score_reasons": [
+            "event_name:+4",
+            "plan_or_announcement:+3"
+          ],
+          "estimated_event": "自衛隊の盆踊り",
+          "normalized_event": "自衛隊",
           "estimated_venue": "",
           "time_hints": [],
           "year_signals": [],
@@ -91150,6 +93180,62 @@
     },
     {
       "kind": "event",
+      "candidate_key": "event:101750142b35a81a746ec91643b85f358e3a22e026ae9f506b19605320e1263e",
+      "display_name": "京橋築地小学校の盆踊り（名称未確定）",
+      "normalized_event": "",
+      "venue": "京橋築地小学校",
+      "venue_key": "bf231abda93f5aecd7b164842b541cf9001a203e22d51d42da6589c18a13a006",
+      "month": "09",
+      "estimated_date": "本日",
+      "year": 2026,
+      "hashtags": [
+        "京橋築地小学校防災拠点運営委員会",
+        "大規模震災",
+        "築地",
+        "中央区",
+        "防災"
+      ],
+      "score": 5,
+      "tier": "hold",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:2079530521554722870",
+          "tweet_id": "2079530521554722870",
+          "url": "https://x.com/tadashi_isono/status/2079530521554722870",
+          "text": "本日　最後の会議\n\n#京橋築地小学校防災拠点運営委員会 \n\n9月27日(日)開催\n準備が進められております‼️\n\n#大規模震災 に備え\n様々な事案を想定し\n実践的な訓練となる様検討中👍\n\n多くの住民にお知らせし\n参加戴くかが課題です‼️\n\n公助の前にまず自助・共助\n是非ご参加ください🤗\n#築地 #中央区 #防災 https://t.co/CN6tYoh66G",
+          "account": "@tadashi_isono",
+          "dancer_key": "@tadashi_isono",
+          "spoken_at": "2026-07-21T11:34:46+00:00",
+          "observed_at": "2026-07-21T11:34:46+00:00",
+          "patterns": [
+            "C"
+          ],
+          "bon_context_hits": [],
+          "source_score": 8,
+          "score_reasons": [
+            "date_or_time:+3",
+            "place_or_venue:+3",
+            "plan_or_announcement:+3",
+            "question_recommend_invite:+2",
+            "weak_bon_context:-3"
+          ],
+          "estimated_event": "",
+          "normalized_event": "",
+          "estimated_venue": "京橋築地小学校",
+          "time_hints": [
+            "本日",
+            "9月27日"
+          ],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
       "candidate_key": "event:b566331615e370f57a81cc988f8d1512fb36c4f80d431b18887632d43c3b29c0",
       "display_name": "今年は武蔵野市民文化会館の盆踊り（名称未確定）",
       "normalized_event": "",
@@ -93900,6 +95986,25 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:sha256:5d5f725c7adf16c69a4068fa8d9e3b7330c413b056bee224fd278393c71ce964",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=Lj0a_tylof4",
+          "text": "2026年7月12日に開催された「晴海ふ頭公園盆踊り大会」での盆踊りの様子をお届けします！ 晴海ふ頭公園の心地よい海風を感じながら、 会場の盛り上がりをぜひ映像でお楽しみください！ 晴海ふ頭公園盆踊り １おしりたんてい音頭 https://youtu.be/a14wHJTz11Y ２ジャンボリーミッキー https://youtu.be/qK_wAZd9sfY ３どんとこいブギ https://youtu.be/FwKDdeH2N7I ４河内おとこ節 https://youtu.be/jTg6AaNuJDw ５Let'sONDOAgain https://youtu.be/1hoUlCxoGBU ６東京五輪2020 https://youtu.be/8NRTaNXw95Y ７これがお江戸の盆ダンス https://youtu.be/Lj0a_tylof4 ８東京音頭 https://youtu.be/E6F3ET7WLGc ９炭坑節 https://youtu.be/Py81PpDfS0E 10きよしのズンドコ節 https://youtu.be/MQOEFbd0Xmk 11銀座カンカ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-07-22T08:00:08+00:00",
+          "score": 15,
+          "song_name": "おしりたんてい音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "晴海ふ頭公園盆踊り大会",
+          "estimated_venue": "晴海ふ頭公園",
+          "time_hints": [
+            "2026年7月12日"
+          ]
+        },
+        {
           "identity": "evidence:sha256:1183b455dc03a519a461350e7138927f253132f2ebea4168f752d157d15db48c",
           "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=8NRTaNXw95Y",
@@ -94018,7 +96123,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 6,
+      "evidence_count": 7,
       "speaker_count": 1
     },
     {
@@ -96892,6 +98997,23 @@
       "evidence": [
         {
           "identity": "",
+          "tweet_id": "2079775475682177471",
+          "url": "https://x.com/piyoko_mame/status/2079775475682177471",
+          "text": "🏮yama bon🏮 鎌倉市材木座 光明寺 7/20 '盆神'さんの盆踊りへ〜 ソウルフル♪な'八木節'、'世栄'(オリジナルかな??)、'材木座音頭'(画像)、ナニャドヤラ... \"踊れ材木座\" 曲も踊り(難しいケド)も最高に楽しい〜🎶 また踊りたい！！ https://t.co/FUVli9AnFl",
+          "account": "@piyoko_mame",
+          "dancer_key": "@piyoko_mame",
+          "observed_at": "2026-07-22T03:48:08+00:00",
+          "score": 0,
+          "song_name": "また踊り",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        },
+        {
+          "identity": "",
           "tweet_id": "2078749144362123509",
           "url": "https://x.com/magnesiumoxideA/status/2078749144362123509",
           "text": "乙姫会さんの盆踊りで踊らせてもらったよ！民謡沢山でたのし～！リストを見ると北海道からはじまってたみたい！別府湯けむりとすいた盆唄面白かったな～！また踊りたいな😄とっても上手なお母さんに聞いたら武庫地区のお母さんたちだった👏8月22日地区の盆踊りあるから来てね！と言ってくれたよ🤭",
@@ -97014,8 +99136,8 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 7,
-      "speaker_count": 7
+      "evidence_count": 8,
+      "speaker_count": 8
     },
     {
       "kind": "song",
@@ -98605,16 +100727,33 @@
       "kind": "song",
       "candidate_key": "song:3e4d8dfb6bc119aa899a1e3b08cf87f59c2956ef43545a019b54c80b1c8d75e2",
       "display_name": "シモキタ音頭",
-      "normalized_event": "パッパから下北沢",
+      "normalized_event": "",
       "venue": "",
       "venue_key": "",
       "month": "",
       "estimated_date": "",
-      "year": 2026,
+      "year": "",
       "hashtags": [],
       "score": 65,
       "tier": "promote",
       "evidence": [
+        {
+          "identity": "",
+          "tweet_id": "2079812762163912798",
+          "url": "https://x.com/setamin/status/2079812762163912798",
+          "text": "下北沢 7/25、7/26開催「下北沢盆踊り2026」シモキタ音頭で踊りゃんせ！ | 世田谷くみん手帖 https://t.co/YON3BEDQXg @setaminより",
+          "account": "@setamin",
+          "dancer_key": "@setamin",
+          "observed_at": "2026-07-22T06:16:18+00:00",
+          "score": 0,
+          "song_name": "シモキタ音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        },
         {
           "identity": "evidence:2070762511906087315",
           "tweet_id": "2070762511906087315",
@@ -98709,8 +100848,8 @@
         "split_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 5,
-      "speaker_count": 3
+      "evidence_count": 6,
+      "speaker_count": 4
     },
     {
       "kind": "song",
@@ -99674,6 +101813,40 @@
       "score": 65,
       "tier": "promote",
       "evidence": [
+        {
+          "identity": "",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=DPqriRZRH8s",
+          "text": "#マリーゴールド #あいみょん #神楽坂まつり #盆踊り #神楽坂 【神楽坂まつり 盆踊り2025】 「ダンシングヒーロー」 https://youtu.be/qM1kuwk0J04 生歌「真赤な太陽」 https://youtu.be/1lZOsNefqPI AKB48「365日の紙飛行機」 https://youtu.be/yXN-dj_9S0E TUBE「湘南盆踊り」 https://youtu.be/zoKLWo-EvJo 【神楽坂まつり 盆踊り】 「盆ギリ恋歌」 https://youtu.be/JZb8PbwerRE 「涙がキラリ☆」- スピッツ https://youtu.be/ZjIRJcD9w0E 「郡上おどり かわさき」「炭坑節」「東京音頭」 https://youtu.be/iHmb_kiV4dE 「ダンシングヒーロー」 https://youtu.be/-8lNsCJEDG4 【神楽坂まつり 2025】 開催日時：2025年7月23日(水)～26日(土) 開催場所 ：神楽坂 https://www.google.com/maps?sca_esv=aa2fa3c7",
+          "account": "UCWz2tM7PAFGT7xSL5OAEllg",
+          "dancer_key": "@ucwz2tm7pafgt7xsl5oaellg",
+          "observed_at": "2026-07-21T12:33:46+00:00",
+          "score": 0,
+          "song_name": "ダンシングヒーロー",
+          "reasons": [
+            "known_song_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        },
+        {
+          "identity": "",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=X9wVUq0xMkY",
+          "text": "#自由が丘納涼盆踊り大会 #ダンシングヒーロー #夜に駆ける #YOASOBI #盆踊り #自由が丘 00:00 ハイライト 05:28 自由が丘小唄① 08:47 自由が丘小唄② 12:07 ダンシングヒーロー / 荻野目洋子 15:59 やる気で音頭① / 北島三郎 19:26 やる気で音頭② / 北島三郎 22:58 炭坑節 25:36 夜に駆ける① / YOASOBI 30:28 夜に駆ける② / YOASOBI 35:06 RPG① / SEKAI NO OWARI 40:33 RPG② / SEKAI NO OWARI 開催日時：2026年7月18日(土)～20日(月・祝) 18:00～21:00 開催場所：自由が丘駅前ロータリー https://www.google.com/maps/place/%E8%87%AA%E7%94%B1%E3%81%8C%E4%B8%98%E9%A7%85/@35.6072728,139.6660912,17z/data=!3m1!4b1!4m6!3m5!1s0x6018f51f0e7b7329:0xc0f96ebbd79be0a3!8m2!",
+          "account": "UCWz2tM7PAFGT7xSL5OAEllg",
+          "dancer_key": "@ucwz2tm7pafgt7xsl5oaellg",
+          "observed_at": "2026-07-21T11:57:54+00:00",
+          "score": 0,
+          "song_name": "ダンシングヒーロー",
+          "reasons": [
+            "known_song_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        },
         {
           "identity": "",
           "tweet_id": "",
@@ -102205,7 +104378,7 @@
         "known_song_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 148,
+      "evidence_count": 150,
       "speaker_count": 51
     },
     {
@@ -102808,6 +104981,23 @@
       "score": 65,
       "tier": "promote",
       "evidence": [
+        {
+          "identity": "",
+          "tweet_id": "2079809563881283845",
+          "url": "https://x.com/Panorama_Jima/status/2079809563881283845",
+          "text": "@KitazeCrocus いるいる、自由に踊ってる人🤣🤣🤣 今回の盆踊りにもいましたよ😂 邪魔にならなければいいのかなって感じですな🤭 ドンパン節久々に聴きましたw 最近盆踊りでは聞かないような🤔",
+          "account": "@Panorama_Jima",
+          "dancer_key": "@panorama_jima",
+          "observed_at": "2026-07-22T06:03:35+00:00",
+          "score": 0,
+          "song_name": "ドンパン節",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        },
         {
           "identity": "",
           "tweet_id": "",
@@ -103442,8 +105632,8 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 37,
-      "speaker_count": 8
+      "evidence_count": 38,
+      "speaker_count": 9
     },
     {
       "kind": "song",
@@ -105708,6 +107898,23 @@
       "evidence": [
         {
           "identity": "",
+          "tweet_id": "2079775475682177471",
+          "url": "https://x.com/piyoko_mame/status/2079775475682177471",
+          "text": "🏮yama bon🏮 鎌倉市材木座 光明寺 7/20 '盆神'さんの盆踊りへ〜 ソウルフル♪な'八木節'、'世栄'(オリジナルかな??)、'材木座音頭'(画像)、ナニャドヤラ... \"踊れ材木座\" 曲も踊り(難しいケド)も最高に楽しい〜🎶 また踊りたい！！ https://t.co/FUVli9AnFl",
+          "account": "@piyoko_mame",
+          "dancer_key": "@piyoko_mame",
+          "observed_at": "2026-07-22T03:48:08+00:00",
+          "score": 0,
+          "song_name": "八木節",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        },
+        {
+          "identity": "",
           "tweet_id": "2074711320184967433",
           "url": "https://x.com/fried_wakame/status/2074711320184967433",
           "text": "月曜日は姫路で舞台の後移動して 入谷朝顔音頭踊り大会へ🏮 地元は大雨でしたが現地に着くとあがっていて嬉しい🙌 朝顔音頭やご当地台東3曲も🏵️ 河内おとこ節の手が特徴的、八木節は✊で終わっていて面白かったです！ 帰りは屋台を通り抜けてみんなでワイワイしたのも楽しでした🥰 https://t.co/EEKRtf5B2g",
@@ -106698,8 +108905,8 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 58,
-      "speaker_count": 17
+      "evidence_count": 59,
+      "speaker_count": 18
     },
     {
       "kind": "song",
@@ -108348,6 +110555,23 @@
       "score": 65,
       "tier": "promote",
       "evidence": [
+        {
+          "identity": "",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=NIwDVq1vwuE",
+          "text": "2026年7月4日に大國魂神社で開催された「府中納涼大盆踊り大会」の様子です。 歴史ある大國魂神社の境内に響き渡る太鼓の音と、情緒あふれる盆踊りの活気をお楽しみください。 今後も各地のお祭りや盆踊りの動画をアップロードしていきます。 よろしければチャンネル登録・高評価をお願いします！ #盆踊り #大國魂神社 #府中納涼大盆踊り大会 #府中小唄 #夏祭り #和太鼓 大國魂神社盆踊り １府中小唄 https://youtu.be/t6BoX9FFcGQ ２大東京音頭 https://youtu.be/R67NzDj5t2w ３純烈魂 https://youtu.be/hBhXa-EhPvw ４バハマ・ママ https://youtu.be/VfkV8713uHQ ５アンパンマン音頭 https://youtu.be/t6BoX9FFcGQ ６おどるポンポコリン https://youtu.be/Ri9gZDUmeMc ７ギザギザハートの子守唄 https://youtu.be/6TC88vgu64w ８恋をするなら https://youtu.be/pC2u0WVAFAM ９ダンシングヒー",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-07-21T10:00:08+00:00",
+          "score": 0,
+          "song_name": "大東京音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        },
         {
           "identity": "",
           "tweet_id": "",
@@ -111499,7 +113723,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 181,
+      "evidence_count": 182,
       "speaker_count": 8
     },
     {
@@ -116737,6 +118961,40 @@
         {
           "identity": "",
           "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=uuD1rWQxPrQ",
+          "text": "2026年7月18日、豊島区の巣鴨駅前南口ロータリーにて開催された「第46回巣鴨盆踊り大会」の様子です。 巣一商店会主催のもと、 駅前の活気ある雰囲気の中で踊られる盆踊りをお届けします。 地元の方々や観光客が一体となって盛り上がる、 夏の巣鴨ならではの熱気をお楽しみください！ 和太鼓の響きとともに、日本の夏の情緒を感じていただければ幸いです。 #巣鴨 #盆踊り #巣鴨花咲き音頭 #巣一商店会 #夏祭り #和太鼓 #東京の祭り #巣鴨駅前 巣鴨駅前盆踊り １巣鴨花咲音頭 https://youtu.be/9dqKwAudGS4 ２きよしのドドンパ https://youtu.be/wq9yyUc_IXY ３バハマママ https://youtu.be/TArlwnMgoPM ４恋するフォーチュンクッキー https://youtu.be/X-PkKNmjPe4 ５さわやか音頭 https://youtu.be/rTRTi60jqVc ６東京音頭 https://youtu.be/lsNiUZl1EJE ７河内おとこ節 https://youtu.be/QMKUAZQyIk0 ８押せ押せ音",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-07-21T11:00:21+00:00",
+          "score": 0,
+          "song_name": "巣鴨花咲き音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        },
+        {
+          "identity": "",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=-QXRcqUh6-I",
+          "text": "2026年7月18日、豊島区の巣鴨駅前南口ロータリーにて開催された「第46回巣鴨盆踊り大会」の様子です。 巣一商店会主催のもと、 駅前の活気ある雰囲気の中で踊られる盆踊りをお届けします。 地元の方々や観光客が一体となって盛り上がる、 夏の巣鴨ならではの熱気をお楽しみください！ 和太鼓の響きとともに、日本の夏の情緒を感じていただければ幸いです。 #巣鴨 #盆踊り #巣鴨花咲き音頭 #巣一商店会 #夏祭り #和太鼓 #東京の祭り #巣鴨駅前 巣鴨駅前盆踊り １巣鴨花咲音頭 https://youtu.be/9dqKwAudGS4 ２きよしのドドンパ https://youtu.be/wq9yyUc_IXY ３バハマママ https://youtu.be/TArlwnMgoPM ４恋するフォーチュンクッキー https://youtu.be/X-PkKNmjPe4 ５さわやか音頭 https://youtu.be/rTRTi60jqVc ６東京音頭 https://youtu.be/lsNiUZl1EJE ７河内おとこ節 https://youtu.be/QMKUAZQyIk0 ８押せ押せ音",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-07-21T10:30:40+00:00",
+          "score": 0,
+          "song_name": "巣鴨花咲き音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        },
+        {
+          "identity": "",
+          "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=hZaj-BGFcOg",
           "text": "2026年7月18日、豊島区の巣鴨駅前南口ロータリーにて開催された「第46回巣鴨盆踊り大会」の様子です。 巣一商店会主催のもと、 駅前の活気ある雰囲気の中で踊られる盆踊りをお届けします。 地元の方々や観光客が一体となって盛り上がる、 夏の巣鴨ならではの熱気をお楽しみください！ 和太鼓の響きとともに、日本の夏の情緒を感じていただければ幸いです。 #巣鴨 #盆踊り #巣鴨花咲き音頭 #巣一商店会 #夏祭り #和太鼓 #東京の祭り #巣鴨駅前 巣鴨駅前盆踊り １巣鴨花咲音頭 https://youtu.be/9dqKwAudGS4 ２きよしのドドンパ https://youtu.be/wq9yyUc_IXY ３バハマママ https://youtu.be/TArlwnMgoPM ４恋するフォーチュンクッキー https://youtu.be/X-PkKNmjPe4 ５さわやか音頭 https://youtu.be/rTRTi60jqVc ６東京音頭 https://youtu.be/lsNiUZl1EJE ７河内おとこ節 https://youtu.be/QMKUAZQyIk0 ８押せ押せ音",
           "account": "@wadaikoCH",
@@ -117351,7 +119609,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 36,
+      "evidence_count": 38,
       "speaker_count": 3
     },
     {
@@ -143303,7 +145561,7 @@
       "kind": "song",
       "candidate_key": "song:171c2ba5d50d30fb395ffa86ac5d906d68ee4c086efdb124c9eedc373345229b",
       "display_name": "炭坑節",
-      "normalized_event": "",
+      "normalized_event": "朝日校区慰霊",
       "venue": "",
       "venue_key": "",
       "month": "",
@@ -143313,6 +145571,59 @@
       "score": 65,
       "tier": "promote",
       "evidence": [
+        {
+          "identity": "evidence:2079827394983289274",
+          "tweet_id": "2079827394983289274",
+          "url": "https://x.com/michiru_zenryo9/status/2079827394983289274",
+          "text": "朝日校区慰霊盆踊り大会🏮練習会。炭坑節(開くのはボタ山をイメージして山開き🙏水平×)、長崎名物節、恋をするなら、真っ赤な太陽、長崎盆踊り(回るのは左足から) 楽しさ満載なのはもちろん、手数をイチから教えていただけるのが嬉しくて😆窓からは大好きなジャイアントカンチレバークレーンが見えた🏗️ https://t.co/YjXyJKoBsV",
+          "account": "@michiru_zenryo9",
+          "dancer_key": "@michiru_zenryo9",
+          "observed_at": "2026-07-22T07:14:26+00:00",
+          "score": 9,
+          "song_name": "炭坑節",
+          "reasons": [
+            "known_song_context",
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "朝日校区慰霊盆踊り大会",
+          "estimated_venue": "",
+          "time_hints": []
+        },
+        {
+          "identity": "",
+          "tweet_id": "2079796664420966690",
+          "url": "https://x.com/natsumelan24/status/2079796664420966690",
+          "text": "ことし近所の盆踊りに突然現れて炭坑節だけ踊って帰る謎のおばさんと化してみようかなw",
+          "account": "@natsumelan24",
+          "dancer_key": "@natsumelan24",
+          "observed_at": "2026-07-22T05:12:20+00:00",
+          "score": 0,
+          "song_name": "炭坑節",
+          "reasons": [
+            "known_song_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        },
+        {
+          "identity": "",
+          "tweet_id": "2079739274711519396",
+          "url": "https://x.com/_masakari/status/2079739274711519396",
+          "text": "7/22水 夏休みラジオ体操盆踊り練習会 山下町公園 ラジオ体操15分 盆踊り練習15分 山下町音頭 炭坑節 ハワイ音頭 (オリジナルバージョン) 森のくまさん 朝7時から7時30分迄 小学校は昨日から夏休み https://t.co/mbZYvtpnmS",
+          "account": "@_masakari",
+          "dancer_key": "@_masakari",
+          "observed_at": "2026-07-22T01:24:17+00:00",
+          "score": 0,
+          "song_name": "炭坑節",
+          "reasons": [
+            "known_song_context",
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        },
         {
           "identity": "evidence:2079395372577980922",
           "tweet_id": "2079395372577980922",
@@ -150262,11 +152573,9 @@
         "song_suffix_in_context",
         "song_suffix_near_context"
       ],
-      "suppressed_event_hints": [
-        "ドアラトレインで移動してセントレア盆おどり"
-      ],
-      "evidence_count": 399,
-      "speaker_count": 49
+      "suppressed_event_hints": [],
+      "evidence_count": 402,
+      "speaker_count": 51
     },
     {
       "kind": "song",
@@ -193714,6 +196023,40 @@
         {
           "identity": "",
           "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=uuD1rWQxPrQ",
+          "text": "2026年7月18日、豊島区の巣鴨駅前南口ロータリーにて開催された「第46回巣鴨盆踊り大会」の様子です。 巣一商店会主催のもと、 駅前の活気ある雰囲気の中で踊られる盆踊りをお届けします。 地元の方々や観光客が一体となって盛り上がる、 夏の巣鴨ならではの熱気をお楽しみください！ 和太鼓の響きとともに、日本の夏の情緒を感じていただければ幸いです。 #巣鴨 #盆踊り #巣鴨花咲き音頭 #巣一商店会 #夏祭り #和太鼓 #東京の祭り #巣鴨駅前 巣鴨駅前盆踊り １巣鴨花咲音頭 https://youtu.be/9dqKwAudGS4 ２きよしのドドンパ https://youtu.be/wq9yyUc_IXY ３バハマママ https://youtu.be/TArlwnMgoPM ４恋するフォーチュンクッキー https://youtu.be/X-PkKNmjPe4 ５さわやか音頭 https://youtu.be/rTRTi60jqVc ６東京音頭 https://youtu.be/lsNiUZl1EJE ７河内おとこ節 https://youtu.be/QMKUAZQyIk0 ８押せ押せ音",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-07-21T11:00:21+00:00",
+          "score": 0,
+          "song_name": "巣鴨花咲音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        },
+        {
+          "identity": "",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=-QXRcqUh6-I",
+          "text": "2026年7月18日、豊島区の巣鴨駅前南口ロータリーにて開催された「第46回巣鴨盆踊り大会」の様子です。 巣一商店会主催のもと、 駅前の活気ある雰囲気の中で踊られる盆踊りをお届けします。 地元の方々や観光客が一体となって盛り上がる、 夏の巣鴨ならではの熱気をお楽しみください！ 和太鼓の響きとともに、日本の夏の情緒を感じていただければ幸いです。 #巣鴨 #盆踊り #巣鴨花咲き音頭 #巣一商店会 #夏祭り #和太鼓 #東京の祭り #巣鴨駅前 巣鴨駅前盆踊り １巣鴨花咲音頭 https://youtu.be/9dqKwAudGS4 ２きよしのドドンパ https://youtu.be/wq9yyUc_IXY ３バハマママ https://youtu.be/TArlwnMgoPM ４恋するフォーチュンクッキー https://youtu.be/X-PkKNmjPe4 ５さわやか音頭 https://youtu.be/rTRTi60jqVc ６東京音頭 https://youtu.be/lsNiUZl1EJE ７河内おとこ節 https://youtu.be/QMKUAZQyIk0 ８押せ押せ音",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-07-21T10:30:40+00:00",
+          "score": 0,
+          "song_name": "巣鴨花咲音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        },
+        {
+          "identity": "",
+          "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=hZaj-BGFcOg",
           "text": "2026年7月18日、豊島区の巣鴨駅前南口ロータリーにて開催された「第46回巣鴨盆踊り大会」の様子です。 巣一商店会主催のもと、 駅前の活気ある雰囲気の中で踊られる盆踊りをお届けします。 地元の方々や観光客が一体となって盛り上がる、 夏の巣鴨ならではの熱気をお楽しみください！ 和太鼓の響きとともに、日本の夏の情緒を感じていただければ幸いです。 #巣鴨 #盆踊り #巣鴨花咲き音頭 #巣一商店会 #夏祭り #和太鼓 #東京の祭り #巣鴨駅前 巣鴨駅前盆踊り １巣鴨花咲音頭 https://youtu.be/9dqKwAudGS4 ２きよしのドドンパ https://youtu.be/wq9yyUc_IXY ３バハマママ https://youtu.be/TArlwnMgoPM ４恋するフォーチュンクッキー https://youtu.be/X-PkKNmjPe4 ５さわやか音頭 https://youtu.be/rTRTi60jqVc ６東京音頭 https://youtu.be/lsNiUZl1EJE ７河内おとこ節 https://youtu.be/QMKUAZQyIk0 ８押せ押せ音",
           "account": "@wadaikoCH",
@@ -194107,7 +196450,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 23,
+      "evidence_count": 25,
       "speaker_count": 1
     },
     {
@@ -194949,6 +197292,23 @@
         {
           "identity": "",
           "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=NIwDVq1vwuE",
+          "text": "2026年7月4日に大國魂神社で開催された「府中納涼大盆踊り大会」の様子です。 歴史ある大國魂神社の境内に響き渡る太鼓の音と、情緒あふれる盆踊りの活気をお楽しみください。 今後も各地のお祭りや盆踊りの動画をアップロードしていきます。 よろしければチャンネル登録・高評価をお願いします！ #盆踊り #大國魂神社 #府中納涼大盆踊り大会 #府中小唄 #夏祭り #和太鼓 大國魂神社盆踊り １府中小唄 https://youtu.be/t6BoX9FFcGQ ２大東京音頭 https://youtu.be/R67NzDj5t2w ３純烈魂 https://youtu.be/hBhXa-EhPvw ４バハマ・ママ https://youtu.be/VfkV8713uHQ ５アンパンマン音頭 https://youtu.be/t6BoX9FFcGQ ６おどるポンポコリン https://youtu.be/Ri9gZDUmeMc ７ギザギザハートの子守唄 https://youtu.be/6TC88vgu64w ８恋をするなら https://youtu.be/pC2u0WVAFAM ９ダンシングヒー",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-07-21T10:00:08+00:00",
+          "score": 0,
+          "song_name": "府中小唄",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        },
+        {
+          "identity": "",
+          "tweet_id": "",
           "url": "https://www.youtube.com/watch?v=wT9-A5KlN2A",
           "text": "2026年7月4日に大國魂神社で開催された「府中納涼大盆踊り大会」の様子です。 歴史ある大國魂神社の境内に響き渡る太鼓の音と、情緒あふれる盆踊りの活気をお楽しみください。 今後も各地のお祭りや盆踊りの動画をアップロードしていきます。 よろしければチャンネル登録・高評価をお願いします！ #盆踊り #大國魂神社 #府中納涼大盆踊り大会 #府中小唄 #夏祭り #和太鼓 大國魂神社盆踊り １府中小唄 https://youtu.be/t6BoX9FFcGQ ２大東京音頭 https://youtu.be/R67NzDj5t2w ３純烈魂 https://youtu.be/hBhXa-EhPvw ４バハマ・ママ https://youtu.be/VfkV8713uHQ ５アンパンマン音頭 https://youtu.be/t6BoX9FFcGQ ６おどるポンポコリン https://youtu.be/Ri9gZDUmeMc ７ギザギザハートの子守唄 https://youtu.be/6TC88vgu64w ８恋をするなら https://youtu.be/pC2u0WVAFAM ９ダンシングヒー",
           "account": "@wadaikoCH",
@@ -195325,7 +197685,7 @@
         "song_suffix_near_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 22,
+      "evidence_count": 23,
       "speaker_count": 1
     },
     {
@@ -197354,6 +199714,118 @@
       "suppressed_event_hints": [],
       "evidence_count": 6,
       "speaker_count": 1
+    },
+    {
+      "kind": "song",
+      "candidate_key": "song:c4828a8cac7576300c97150d1d9019372f2fe21d555f06bbbbdbf72f616e5031",
+      "display_name": "泉州音頭",
+      "normalized_event": "",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": "",
+      "hashtags": [],
+      "score": 50,
+      "tier": "promote",
+      "evidence": [
+        {
+          "identity": "",
+          "tweet_id": "2079774589761241293",
+          "url": "https://x.com/kaz0045/status/2079774589761241293",
+          "text": "泉州音頭、櫓の数だけ踊りがあると言われるほど多様な踊りなこともあり、時計回り、反時計回り両方あるから厄介。毎回混在してただでさえ知らない踊りなのに困惑する人多数😅",
+          "account": "@kaz0045",
+          "dancer_key": "@kaz0045",
+          "observed_at": "2026-07-22T03:44:37+00:00",
+          "score": 0,
+          "song_name": "泉州音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        },
+        {
+          "identity": "",
+          "tweet_id": "2054143265524621751",
+          "url": "https://x.com/sasurai_3/status/2054143265524621751",
+          "text": "@ayu132ayu132 レス感謝です。 県内で郡上から離れてても、小学校の運動会や地元の盆踊り大会で一部の演目がかかるのですね。 確かに、泉州音頭は白鳥くらいの感覚かもです。 東大阪や八尾など河内のど真ん中だと難しいですが、河内音頭・江州音頭のかかる大阪市内の櫓だと、泉州音頭もかかる可能性あります。",
+          "account": "@sasurai_3",
+          "dancer_key": "@sasurai_3",
+          "observed_at": "2026-05-12T10:14:53+00:00",
+          "score": 0,
+          "song_name": "泉州音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        }
+      ],
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 2,
+      "speaker_count": 2
+    },
+    {
+      "kind": "song",
+      "candidate_key": "song:42a05dbd7de769dbc6e0a2303480dacfbf560ae459673bf3c4ce4805d0ae9a03",
+      "display_name": "津軽じょんがら節",
+      "normalized_event": "",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": "",
+      "hashtags": [],
+      "score": 50,
+      "tier": "promote",
+      "evidence": [
+        {
+          "identity": "",
+          "tweet_id": "2079835254089826393",
+          "url": "https://x.com/shamimaster/status/2079835254089826393",
+          "text": "生まれの愛媛県西条市の 交流フェスティバルで 音楽家であった祖父の作品を演奏します。 8月23日（日）13時〜 西条総合文化会館大ホール 演奏予定 津軽じょんがら節 天正陣の懐古 玉津音頭 ひうち踊り 西条史跡めぐりの歌 校歌メドレー 西条小学校～飯岡小学校～玉津小学校～(大保木中学校)～丹原小学校 瀬戸大橋の歌 西条ボーイスカウトの歌 地元で既に定番の盆おどり歌、既に絶えてしまった 盆踊り唄などの 復活にも関わりました。",
+          "account": "@shamimaster",
+          "dancer_key": "@shamimaster",
+          "observed_at": "2026-07-22T07:45:40+00:00",
+          "score": 0,
+          "song_name": "津軽じょんがら節",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        },
+        {
+          "identity": "",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=KULCSMozfSM",
+          "text": "開催日時：2025年11月8日(土)～9日(日) 10時～17時 開催場所：上野公園 噴水広場 https://www.google.com/maps/place/%E4%B8%8A%E9%87%8E%E6%81%A9%E8%B3%9C%E5%85%AC%E5%9C%92+%E7%AB%B9%E3%81%AE%E5%8F%B0%E5%BA%83%E5%A0%B4/@35.7169935,139.7733286,17.8z/data=!3m1!5s0x60188e9ee7ed7ea7:0x3257cebc08ffd60!4m6!3m5!1s0x60188e9d6ac69933:0xa52c6521e2e73186!8m2!3d35.7163325!4d139.7746761!16s%2Fg%2F11c3n_b9vt?entry=ttu&g_ep=EgoyMDI0MTEwNi4wIKXMDSoASAFQAw%3D%3D 00:00 津軽じょんがら節 03:29 津軽じょんがら節 独演 07:10 オリジナル曲 15:17 津軽甚句 17:06 津軽じょんがら節 19:19 津軽あいや節 ＃",
+          "account": "UCWz2tM7PAFGT7xSL5OAEllg",
+          "dancer_key": "@ucwz2tm7pafgt7xsl5oaellg",
+          "observed_at": "2025-11-08T05:58:06Z",
+          "score": 0,
+          "song_name": "津軽じょんがら節",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        }
+      ],
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 2,
+      "speaker_count": 2
     },
     {
       "kind": "song",
@@ -199922,6 +202394,62 @@
       "suppressed_event_hints": [],
       "evidence_count": 12,
       "speaker_count": 1
+    },
+    {
+      "kind": "song",
+      "candidate_key": "song:f1d5550b36a303e3a7477aab0fde9840d546b417f33fa375e98cf2384f2732e7",
+      "display_name": "自由が丘小唄",
+      "normalized_event": "",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": "",
+      "hashtags": [],
+      "score": 50,
+      "tier": "promote",
+      "evidence": [
+        {
+          "identity": "",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=X9wVUq0xMkY",
+          "text": "#自由が丘納涼盆踊り大会 #ダンシングヒーロー #夜に駆ける #YOASOBI #盆踊り #自由が丘 00:00 ハイライト 05:28 自由が丘小唄① 08:47 自由が丘小唄② 12:07 ダンシングヒーロー / 荻野目洋子 15:59 やる気で音頭① / 北島三郎 19:26 やる気で音頭② / 北島三郎 22:58 炭坑節 25:36 夜に駆ける① / YOASOBI 30:28 夜に駆ける② / YOASOBI 35:06 RPG① / SEKAI NO OWARI 40:33 RPG② / SEKAI NO OWARI 開催日時：2026年7月18日(土)～20日(月・祝) 18:00～21:00 開催場所：自由が丘駅前ロータリー https://www.google.com/maps/place/%E8%87%AA%E7%94%B1%E3%81%8C%E4%B8%98%E9%A7%85/@35.6072728,139.6660912,17z/data=!3m1!4b1!4m6!3m5!1s0x6018f51f0e7b7329:0xc0f96ebbd79be0a3!8m2!",
+          "account": "UCWz2tM7PAFGT7xSL5OAEllg",
+          "dancer_key": "@ucwz2tm7pafgt7xsl5oaellg",
+          "observed_at": "2026-07-21T11:57:54+00:00",
+          "score": 0,
+          "song_name": "自由が丘小唄",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        },
+        {
+          "identity": "",
+          "tweet_id": "2070035390611038433",
+          "url": "https://x.com/natsutr_bon/status/2070035390611038433",
+          "text": "【自由が丘納涼盆踊り大会】 🏮7/18(土)-20(月祝)📍自由が丘駅前ロータリー(目黒区) 自由が丘の夏の象徴的盆踊り大会で、例年JPOPコラボ曲を取り入れることでも話題♪ ご当地曲「ホイップるん音頭」「自由が丘小唄」も公式You Tubeで公開＜ https://t.co/tDSTygE0z5 ＞ https://t.co/e9LaN6E1js",
+          "account": "@natsutr_bon",
+          "dancer_key": "@natsutr_bon",
+          "observed_at": "2026-06-25T06:44:31+00:00",
+          "score": 0,
+          "song_name": "自由が丘小唄",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        }
+      ],
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 2,
+      "speaker_count": 2
     },
     {
       "kind": "song",
@@ -216726,6 +219254,45 @@
     },
     {
       "kind": "song",
+      "candidate_key": "song:d69baa8cdbe439c97dc5b6dc6cf8416e5151df43296a6aaac248e1a3ace23516",
+      "display_name": "にあわせて馬鹿踊り",
+      "normalized_event": "",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": "",
+      "hashtags": [],
+      "score": 30,
+      "tier": "review",
+      "evidence": [
+        {
+          "identity": "",
+          "tweet_id": "2079841822755701033",
+          "url": "https://x.com/kirie_folklore/status/2079841822755701033",
+          "text": "(9/9) その際に「〇〇の霊を追善して、〇〇踊りを踊ります」というように報告してから、若い衆を中心に踊る これが終わると、老若男女が入り乱れて口説き(物語性のある盆踊りの歌)にあわせて馬鹿踊りをしたという",
+          "account": "@kirie_folklore",
+          "dancer_key": "@kirie_folklore",
+          "observed_at": "2026-07-22T08:11:46+00:00",
+          "score": 0,
+          "song_name": "にあわせて馬鹿踊り",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        }
+      ],
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 1,
+      "speaker_count": 1
+    },
+    {
+      "kind": "song",
       "candidate_key": "song:d9787f1287a9116f4f63b66341aa9ce3501d5b621f27cd9d7c0ecf7cc8907b8f",
       "display_name": "にっぽり炭坑節",
       "normalized_event": "",
@@ -217187,6 +219754,45 @@
           "time_hints": [
             "7/9"
           ]
+        }
+      ],
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 1,
+      "speaker_count": 1
+    },
+    {
+      "kind": "song",
+      "candidate_key": "song:f8ec2247466be70657ff50e0b5116e711e126f1036f3c30c7e7db2181a6f6d42",
+      "display_name": "ひうち踊り",
+      "normalized_event": "",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": "",
+      "hashtags": [],
+      "score": 30,
+      "tier": "review",
+      "evidence": [
+        {
+          "identity": "",
+          "tweet_id": "2079835254089826393",
+          "url": "https://x.com/shamimaster/status/2079835254089826393",
+          "text": "生まれの愛媛県西条市の 交流フェスティバルで 音楽家であった祖父の作品を演奏します。 8月23日（日）13時〜 西条総合文化会館大ホール 演奏予定 津軽じょんがら節 天正陣の懐古 玉津音頭 ひうち踊り 西条史跡めぐりの歌 校歌メドレー 西条小学校～飯岡小学校～玉津小学校～(大保木中学校)～丹原小学校 瀬戸大橋の歌 西条ボーイスカウトの歌 地元で既に定番の盆おどり歌、既に絶えてしまった 盆踊り唄などの 復活にも関わりました。",
+          "account": "@shamimaster",
+          "dancer_key": "@shamimaster",
+          "observed_at": "2026-07-22T07:45:40+00:00",
+          "score": 0,
+          "song_name": "ひうち踊り",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
         }
       ],
       "reasons": [
@@ -217801,6 +220407,45 @@
     },
     {
       "kind": "song",
+      "candidate_key": "song:18d9b80ebccc933a8121c62d1934ceeda80837808585a0b855c9e88150334e78",
+      "display_name": "やぐらを囲む大きな踊り",
+      "normalized_event": "",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": "",
+      "hashtags": [],
+      "score": 30,
+      "tier": "review",
+      "evidence": [
+        {
+          "identity": "",
+          "tweet_id": "2079808660453413316",
+          "url": "https://x.com/c_kankokyokai/status/2079808660453413316",
+          "text": "第79回 #築地本願寺納涼盆踊り大会 開催✨ やぐらを囲む大きな踊りの輪と、 築地場外市場の名店が集う屋台グルメが 夏の夜を華やかに彩ります🏮 📅2026/7/29（水）～8/1（土） 🕖19:00～21:00（最終日のみ18:00～20:30） 📍築地本願寺 公式HP🔽 https://t.co/fMZuli3wOD https://t.co/nXx0x5qrCf",
+          "account": "@c_kankokyokai",
+          "dancer_key": "@c_kankokyokai",
+          "observed_at": "2026-07-22T06:00:00+00:00",
+          "score": 0,
+          "song_name": "やぐらを囲む大きな踊り",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        }
+      ],
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 1,
+      "speaker_count": 1
+    },
+    {
+      "kind": "song",
       "candidate_key": "song:327872823d05a156de3363b460808a8f44b5cd1ba14d5558da1f813b6830f7a2",
       "display_name": "やっペ踊り",
       "normalized_event": "",
@@ -217985,6 +220630,45 @@
           "observed_at": "2026-06-10T11:58:11+00:00",
           "score": 0,
           "song_name": "よさこいや阿波踊り",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        }
+      ],
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 1,
+      "speaker_count": 1
+    },
+    {
+      "kind": "song",
+      "candidate_key": "song:6ce9bdac6de9f5edfe9cca1554d59ed42bb5b3bb17b405683d2fe236fcf7ae33",
+      "display_name": "よさこい総踊り",
+      "normalized_event": "",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": "",
+      "hashtags": [],
+      "score": 30,
+      "tier": "review",
+      "evidence": [
+        {
+          "identity": "",
+          "tweet_id": "2079782532237963537",
+          "url": "https://x.com/pikapika_pro/status/2079782532237963537",
+          "text": "@imafuku1029 今福さんおはリプロ🐥 よさこい総踊りもとってもかっこいいですよ😆 ろぼあひるもお祭りで盆踊りや伝統的な踊りを踊ってみたいです😍😍😍 本日もよろしゅうです🐥",
+          "account": "@pikapika_pro",
+          "dancer_key": "@pikapika_pro",
+          "observed_at": "2026-07-22T04:16:10+00:00",
+          "score": 0,
+          "song_name": "よさこい総踊り",
           "reasons": [
             "song_suffix_near_context"
           ],
@@ -219909,6 +222593,88 @@
     },
     {
       "kind": "song",
+      "candidate_key": "song:67d53716b9c1f5495d637b5ffc001ef607cf4afc759ee192abb40839ead85c5b",
+      "display_name": "ハクトン音頭",
+      "normalized_event": "日本原駐屯地",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 30,
+      "tier": "review",
+      "evidence": [
+        {
+          "identity": "evidence:2079745050796535809",
+          "tweet_id": "2079745050796535809",
+          "url": "https://x.com/t_heart67138/status/2079745050796535809",
+          "text": "皆さま、ごきげんよう 鐵野ミライです。 いよいよT-Heart新メンバーでの夏2026がはじまりました☀️ 昨日は、中部方面特科連隊連隊長、業務隊長への表敬訪問をさせていただきました。 また、姫路お城踊り保存会の皆さまと、かおりん先生と自衛官の皆さまと、 ハクトン音頭の踊りの練習もさせていただきましたの。 なんと素晴らしいことでしょう✨ 今日は、日本原駐屯地納涼大会に T-Heart新メンバーとハクトンも一緒に参加させていただきます。 暑い🥵時ではありますが、 日本原駐屯地納涼大会へ是非！ #自衛隊 #夏祭り #盆踊り #ティーハート #ハクトン音頭 #姫路駐屯地 #日本原駐屯地 #中部方面特科連隊",
+          "account": "@t_heart67138",
+          "dancer_key": "@t_heart67138",
+          "observed_at": "2026-07-22T01:47:14+00:00",
+          "score": 11,
+          "song_name": "ハクトン音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "日本原駐屯地納涼大会",
+          "estimated_venue": "",
+          "time_hints": [
+            "今日"
+          ]
+        }
+      ],
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 1,
+      "speaker_count": 1
+    },
+    {
+      "kind": "song",
+      "candidate_key": "song:593cd0c627e6d1b155968edbc12b5181d18a68fead00ef3c54c07f1c04ffa876",
+      "display_name": "ハクトン音頭の踊り",
+      "normalized_event": "日本原駐屯地",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 30,
+      "tier": "review",
+      "evidence": [
+        {
+          "identity": "evidence:2079745050796535809",
+          "tweet_id": "2079745050796535809",
+          "url": "https://x.com/t_heart67138/status/2079745050796535809",
+          "text": "皆さま、ごきげんよう 鐵野ミライです。 いよいよT-Heart新メンバーでの夏2026がはじまりました☀️ 昨日は、中部方面特科連隊連隊長、業務隊長への表敬訪問をさせていただきました。 また、姫路お城踊り保存会の皆さまと、かおりん先生と自衛官の皆さまと、 ハクトン音頭の踊りの練習もさせていただきましたの。 なんと素晴らしいことでしょう✨ 今日は、日本原駐屯地納涼大会に T-Heart新メンバーとハクトンも一緒に参加させていただきます。 暑い🥵時ではありますが、 日本原駐屯地納涼大会へ是非！ #自衛隊 #夏祭り #盆踊り #ティーハート #ハクトン音頭 #姫路駐屯地 #日本原駐屯地 #中部方面特科連隊",
+          "account": "@t_heart67138",
+          "dancer_key": "@t_heart67138",
+          "observed_at": "2026-07-22T01:47:14+00:00",
+          "score": 11,
+          "song_name": "ハクトン音頭の踊り",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "日本原駐屯地納涼大会",
+          "estimated_venue": "",
+          "time_hints": [
+            "今日"
+          ]
+        }
+      ],
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 1,
+      "speaker_count": 1
+    },
+    {
+      "kind": "song",
       "candidate_key": "song:af7c8f23ad80d9c87e019b9fe5916e33e39a10f204c1eaf48a0146a7b6dbe8f1",
       "display_name": "ハミル音頭",
       "normalized_event": "",
@@ -219970,6 +222736,45 @@
           "observed_at": "2026-06-11T14:16:41+00:00",
           "score": 0,
           "song_name": "ハルマ音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        }
+      ],
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 1,
+      "speaker_count": 1
+    },
+    {
+      "kind": "song",
+      "candidate_key": "song:693aa7771b1258fc3a9bc8c48df2aa9e31eb764715faa1cfbea5097b27e45491",
+      "display_name": "ハワイ音頭",
+      "normalized_event": "",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": "",
+      "hashtags": [],
+      "score": 30,
+      "tier": "review",
+      "evidence": [
+        {
+          "identity": "",
+          "tweet_id": "2079739274711519396",
+          "url": "https://x.com/_masakari/status/2079739274711519396",
+          "text": "7/22水 夏休みラジオ体操盆踊り練習会 山下町公園 ラジオ体操15分 盆踊り練習15分 山下町音頭 炭坑節 ハワイ音頭 (オリジナルバージョン) 森のくまさん 朝7時から7時30分迄 小学校は昨日から夏休み https://t.co/mbZYvtpnmS",
+          "account": "@_masakari",
+          "dancer_key": "@_masakari",
+          "observed_at": "2026-07-22T01:24:17+00:00",
+          "score": 0,
+          "song_name": "ハワイ音頭",
           "reasons": [
             "song_suffix_near_context"
           ],
@@ -220843,6 +223648,45 @@
           "time_hints": [
             "5月9日"
           ]
+        }
+      ],
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 1,
+      "speaker_count": 1
+    },
+    {
+      "kind": "song",
+      "candidate_key": "song:32c702a7e9429bc7c14fff42814304cc6e0849c62666950b8649e9357044e3bd",
+      "display_name": "一生踊り",
+      "normalized_event": "",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": "",
+      "hashtags": [],
+      "score": 30,
+      "tier": "review",
+      "evidence": [
+        {
+          "identity": "",
+          "tweet_id": "2079817693314912261",
+          "url": "https://x.com/Ltorolica/status/2079817693314912261",
+          "text": "一度盆踊りの輪に入ったら 一生踊り続けなければならず、踊りをやめたら死ぬ呪いの盆踊り？",
+          "account": "@Ltorolica",
+          "dancer_key": "@ltorolica",
+          "observed_at": "2026-07-22T06:35:53+00:00",
+          "score": 0,
+          "song_name": "一生踊り",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
         }
       ],
       "reasons": [
@@ -223056,6 +225900,45 @@
           "observed_at": "2026-07-20T02:28:00+00:00",
           "score": 0,
           "song_name": "何か音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        }
+      ],
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 1,
+      "speaker_count": 1
+    },
+    {
+      "kind": "song",
+      "candidate_key": "song:b82ef641f781cdefa68cb52a0baece56b38f7344d0e072469883cd6e7f6af624",
+      "display_name": "作って踊り",
+      "normalized_event": "",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": "",
+      "hashtags": [],
+      "score": 30,
+      "tier": "review",
+      "evidence": [
+        {
+          "identity": "",
+          "tweet_id": "2079839556984295529",
+          "url": "https://x.com/TANAKA_Kei/status/2079839556984295529",
+          "text": "@hoppou_erika 着メロといえば、今からシーズンの盆踊りに北方領土音頭ってないんですか？作って踊り狂おう。",
+          "account": "@TANAKA_Kei",
+          "dancer_key": "@tanaka_kei",
+          "observed_at": "2026-07-22T08:02:46+00:00",
+          "score": 0,
+          "song_name": "作って踊り",
           "reasons": [
             "song_suffix_near_context"
           ],
@@ -225640,6 +228523,47 @@
     },
     {
       "kind": "song",
+      "candidate_key": "song:d2e45ac65cd79be16e01645a8ee3e92192d36e15756c27a186e81d91d889a6ec",
+      "display_name": "姫路お城踊り",
+      "normalized_event": "日本原駐屯地",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 30,
+      "tier": "review",
+      "evidence": [
+        {
+          "identity": "evidence:2079745050796535809",
+          "tweet_id": "2079745050796535809",
+          "url": "https://x.com/t_heart67138/status/2079745050796535809",
+          "text": "皆さま、ごきげんよう 鐵野ミライです。 いよいよT-Heart新メンバーでの夏2026がはじまりました☀️ 昨日は、中部方面特科連隊連隊長、業務隊長への表敬訪問をさせていただきました。 また、姫路お城踊り保存会の皆さまと、かおりん先生と自衛官の皆さまと、 ハクトン音頭の踊りの練習もさせていただきましたの。 なんと素晴らしいことでしょう✨ 今日は、日本原駐屯地納涼大会に T-Heart新メンバーとハクトンも一緒に参加させていただきます。 暑い🥵時ではありますが、 日本原駐屯地納涼大会へ是非！ #自衛隊 #夏祭り #盆踊り #ティーハート #ハクトン音頭 #姫路駐屯地 #日本原駐屯地 #中部方面特科連隊",
+          "account": "@t_heart67138",
+          "dancer_key": "@t_heart67138",
+          "observed_at": "2026-07-22T01:47:14+00:00",
+          "score": 11,
+          "song_name": "姫路お城踊り",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "日本原駐屯地納涼大会",
+          "estimated_venue": "",
+          "time_hints": [
+            "今日"
+          ]
+        }
+      ],
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 1,
+      "speaker_count": 1
+    },
+    {
+      "kind": "song",
       "candidate_key": "song:bfd8e9e790f052d1dbb10c050b43df9a1c9663d2575b872315e2337009c9ff52",
       "display_name": "娘が夜の踊り",
       "normalized_event": "",
@@ -226091,6 +229015,45 @@
           "observed_at": "2026-05-29T00:51:26+00:00",
           "score": 0,
           "song_name": "小町の台東音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        }
+      ],
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 1,
+      "speaker_count": 1
+    },
+    {
+      "kind": "song",
+      "candidate_key": "song:14c70dae7ec7ab3f0f53945acd57b4954b125e99e8d6f588d021c14b1ccf62df",
+      "display_name": "山下町音頭",
+      "normalized_event": "",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": "",
+      "hashtags": [],
+      "score": 30,
+      "tier": "review",
+      "evidence": [
+        {
+          "identity": "",
+          "tweet_id": "2079739274711519396",
+          "url": "https://x.com/_masakari/status/2079739274711519396",
+          "text": "7/22水 夏休みラジオ体操盆踊り練習会 山下町公園 ラジオ体操15分 盆踊り練習15分 山下町音頭 炭坑節 ハワイ音頭 (オリジナルバージョン) 森のくまさん 朝7時から7時30分迄 小学校は昨日から夏休み https://t.co/mbZYvtpnmS",
+          "account": "@_masakari",
+          "dancer_key": "@_masakari",
+          "observed_at": "2026-07-22T01:24:17+00:00",
+          "score": 0,
+          "song_name": "山下町音頭",
           "reasons": [
             "song_suffix_near_context"
           ],
@@ -227409,6 +230372,45 @@
       "suppressed_event_hints": [
         "納涼盆踊り大会"
       ],
+      "evidence_count": 1,
+      "speaker_count": 1
+    },
+    {
+      "kind": "song",
+      "candidate_key": "song:e83c13ffe676adbb2bf33c634c2c532910da61244af6791206dc650f9e427951",
+      "display_name": "急に踊り",
+      "normalized_event": "",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": "",
+      "hashtags": [],
+      "score": 30,
+      "tier": "review",
+      "evidence": [
+        {
+          "identity": "",
+          "tweet_id": "2079816858837119266",
+          "url": "https://x.com/hanasakisuirei/status/2079816858837119266",
+          "text": "- 7月22日(水) 酔い子のオアシ酒 はな咲 今日も17:30からやってま～酒🍺✨️ ⁡ 今日は店内の片隅で盆踊りの練習をしている人たちがいますよ。一休さんや荻野目チャンや、ジン･ジン･ジンギスカァァンなどを聴きながらキンキンに冷えたビールでもいかが🍺✨️急に踊り出す人大歓迎💃🏻🕺 #盆踊り練習会 https://t.co/GoqOPl91jC",
+          "account": "@hanasakisuirei",
+          "dancer_key": "@hanasakisuirei",
+          "observed_at": "2026-07-22T06:32:34+00:00",
+          "score": 0,
+          "song_name": "急に踊り",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        }
+      ],
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "suppressed_event_hints": [],
       "evidence_count": 1,
       "speaker_count": 1
     },
@@ -228913,6 +231915,45 @@
     },
     {
       "kind": "song",
+      "candidate_key": "song:522c2bcd213cb6d7a7f279757249c254d6b30efdbd3c46c4527f53319aa4766e",
+      "display_name": "曲も踊り",
+      "normalized_event": "",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": "",
+      "hashtags": [],
+      "score": 30,
+      "tier": "review",
+      "evidence": [
+        {
+          "identity": "",
+          "tweet_id": "2079775475682177471",
+          "url": "https://x.com/piyoko_mame/status/2079775475682177471",
+          "text": "🏮yama bon🏮 鎌倉市材木座 光明寺 7/20 '盆神'さんの盆踊りへ〜 ソウルフル♪な'八木節'、'世栄'(オリジナルかな??)、'材木座音頭'(画像)、ナニャドヤラ... \"踊れ材木座\" 曲も踊り(難しいケド)も最高に楽しい〜🎶 また踊りたい！！ https://t.co/FUVli9AnFl",
+          "account": "@piyoko_mame",
+          "dancer_key": "@piyoko_mame",
+          "observed_at": "2026-07-22T03:48:08+00:00",
+          "score": 0,
+          "song_name": "曲も踊り",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        }
+      ],
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 1,
+      "speaker_count": 1
+    },
+    {
+      "kind": "song",
       "candidate_key": "song:a14207d97e4267e341d65a23d7dc9208102ad258d72a48476591eea434ba7303",
       "display_name": "曲数と踊り",
       "normalized_event": "",
@@ -229341,6 +232382,45 @@
           "observed_at": "2026-07-19T07:27:28+00:00",
           "score": 0,
           "song_name": "札幌音頭・三味線ブギウギ・白浜音頭・驟雨・江州音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        }
+      ],
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 1,
+      "speaker_count": 1
+    },
+    {
+      "kind": "song",
+      "candidate_key": "song:34a79679851061672ab703476e86de390904235234c7417f95419a9d91fa178a",
+      "display_name": "材木座音頭",
+      "normalized_event": "",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": "",
+      "hashtags": [],
+      "score": 30,
+      "tier": "review",
+      "evidence": [
+        {
+          "identity": "",
+          "tweet_id": "2079775475682177471",
+          "url": "https://x.com/piyoko_mame/status/2079775475682177471",
+          "text": "🏮yama bon🏮 鎌倉市材木座 光明寺 7/20 '盆神'さんの盆踊りへ〜 ソウルフル♪な'八木節'、'世栄'(オリジナルかな??)、'材木座音頭'(画像)、ナニャドヤラ... \"踊れ材木座\" 曲も踊り(難しいケド)も最高に楽しい〜🎶 また踊りたい！！ https://t.co/FUVli9AnFl",
+          "account": "@piyoko_mame",
+          "dancer_key": "@piyoko_mame",
+          "observed_at": "2026-07-22T03:48:08+00:00",
+          "score": 0,
+          "song_name": "材木座音頭",
           "reasons": [
             "song_suffix_near_context"
           ],
@@ -231065,45 +234145,6 @@
     },
     {
       "kind": "song",
-      "candidate_key": "song:c4828a8cac7576300c97150d1d9019372f2fe21d555f06bbbbdbf72f616e5031",
-      "display_name": "泉州音頭",
-      "normalized_event": "",
-      "venue": "",
-      "venue_key": "",
-      "month": "",
-      "estimated_date": "",
-      "year": "",
-      "hashtags": [],
-      "score": 30,
-      "tier": "review",
-      "evidence": [
-        {
-          "identity": "",
-          "tweet_id": "2054143265524621751",
-          "url": "https://x.com/sasurai_3/status/2054143265524621751",
-          "text": "@ayu132ayu132 レス感謝です。 県内で郡上から離れてても、小学校の運動会や地元の盆踊り大会で一部の演目がかかるのですね。 確かに、泉州音頭は白鳥くらいの感覚かもです。 東大阪や八尾など河内のど真ん中だと難しいですが、河内音頭・江州音頭のかかる大阪市内の櫓だと、泉州音頭もかかる可能性あります。",
-          "account": "@sasurai_3",
-          "dancer_key": "@sasurai_3",
-          "observed_at": "2026-05-12T10:14:53+00:00",
-          "score": 0,
-          "song_name": "泉州音頭",
-          "reasons": [
-            "song_suffix_near_context"
-          ],
-          "estimated_event": "",
-          "estimated_venue": "",
-          "time_hints": []
-        }
-      ],
-      "reasons": [
-        "song_suffix_near_context"
-      ],
-      "suppressed_event_hints": [],
-      "evidence_count": 1,
-      "speaker_count": 1
-    },
-    {
-      "kind": "song",
       "candidate_key": "song:9ab531cdfd270398e22a011821a7bb0a790c4435ad37b4d08f068c3ec911f681",
       "display_name": "法輪音頭",
       "normalized_event": "",
@@ -231323,45 +234364,6 @@
           "observed_at": "2025-09-16T07:00:22Z",
           "score": 0,
           "song_name": "津軽じょんから節",
-          "reasons": [
-            "song_suffix_near_context"
-          ],
-          "estimated_event": "",
-          "estimated_venue": "",
-          "time_hints": []
-        }
-      ],
-      "reasons": [
-        "song_suffix_near_context"
-      ],
-      "suppressed_event_hints": [],
-      "evidence_count": 1,
-      "speaker_count": 1
-    },
-    {
-      "kind": "song",
-      "candidate_key": "song:42a05dbd7de769dbc6e0a2303480dacfbf560ae459673bf3c4ce4805d0ae9a03",
-      "display_name": "津軽じょんがら節",
-      "normalized_event": "",
-      "venue": "",
-      "venue_key": "",
-      "month": "",
-      "estimated_date": "",
-      "year": "",
-      "hashtags": [],
-      "score": 30,
-      "tier": "review",
-      "evidence": [
-        {
-          "identity": "",
-          "tweet_id": "",
-          "url": "https://www.youtube.com/watch?v=KULCSMozfSM",
-          "text": "開催日時：2025年11月8日(土)～9日(日) 10時～17時 開催場所：上野公園 噴水広場 https://www.google.com/maps/place/%E4%B8%8A%E9%87%8E%E6%81%A9%E8%B3%9C%E5%85%AC%E5%9C%92+%E7%AB%B9%E3%81%AE%E5%8F%B0%E5%BA%83%E5%A0%B4/@35.7169935,139.7733286,17.8z/data=!3m1!5s0x60188e9ee7ed7ea7:0x3257cebc08ffd60!4m6!3m5!1s0x60188e9d6ac69933:0xa52c6521e2e73186!8m2!3d35.7163325!4d139.7746761!16s%2Fg%2F11c3n_b9vt?entry=ttu&g_ep=EgoyMDI0MTEwNi4wIKXMDSoASAFQAw%3D%3D 00:00 津軽じょんがら節 03:29 津軽じょんがら節 独演 07:10 オリジナル曲 15:17 津軽甚句 17:06 津軽じょんがら節 19:19 津軽あいや節 ＃",
-          "account": "UCWz2tM7PAFGT7xSL5OAEllg",
-          "dancer_key": "@ucwz2tm7pafgt7xsl5oaellg",
-          "observed_at": "2025-11-08T05:58:06Z",
-          "score": 0,
-          "song_name": "津軽じょんがら節",
           "reasons": [
             "song_suffix_near_context"
           ],
@@ -232327,6 +235329,45 @@
     },
     {
       "kind": "song",
+      "candidate_key": "song:65f5799b3cf2fb18b43c6a4a72d537e37ddde6c6e11d8f9a7d9c56187e6212d2",
+      "display_name": "玉津音頭",
+      "normalized_event": "",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": "",
+      "hashtags": [],
+      "score": 30,
+      "tier": "review",
+      "evidence": [
+        {
+          "identity": "",
+          "tweet_id": "2079835254089826393",
+          "url": "https://x.com/shamimaster/status/2079835254089826393",
+          "text": "生まれの愛媛県西条市の 交流フェスティバルで 音楽家であった祖父の作品を演奏します。 8月23日（日）13時〜 西条総合文化会館大ホール 演奏予定 津軽じょんがら節 天正陣の懐古 玉津音頭 ひうち踊り 西条史跡めぐりの歌 校歌メドレー 西条小学校～飯岡小学校～玉津小学校～(大保木中学校)～丹原小学校 瀬戸大橋の歌 西条ボーイスカウトの歌 地元で既に定番の盆おどり歌、既に絶えてしまった 盆踊り唄などの 復活にも関わりました。",
+          "account": "@shamimaster",
+          "dancer_key": "@shamimaster",
+          "observed_at": "2026-07-22T07:45:40+00:00",
+          "score": 0,
+          "song_name": "玉津音頭",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        }
+      ],
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 1,
+      "speaker_count": 1
+    },
+    {
+      "kind": "song",
       "candidate_key": "song:d340ecf61975a565a42f0562fe011eb2df6870904ffebcd3d500f66fb229d75d",
       "display_name": "現地で一緒に踊り",
       "normalized_event": "",
@@ -232944,6 +235985,45 @@
             "song_suffix_near_context"
           ],
           "estimated_event": "突然盆踊り",
+          "estimated_venue": "",
+          "time_hints": []
+        }
+      ],
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 1,
+      "speaker_count": 1
+    },
+    {
+      "kind": "song",
+      "candidate_key": "song:76d50097ba4ade054fee3d693e137c90e8af02991fa7396d8f1f0e4b807eef0d",
+      "display_name": "皆さん踊り",
+      "normalized_event": "",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": "",
+      "hashtags": [],
+      "score": 30,
+      "tier": "review",
+      "evidence": [
+        {
+          "identity": "",
+          "tweet_id": "2079509508028813362",
+          "url": "https://x.com/2KfS2vtSVRLR4d9/status/2079509508028813362",
+          "text": "上篠崎自治会納涼盆踊り大会2日目最終日🏮 始まってます👘🏮 皆さん踊りに来てください！ https://t.co/eEM15fyxcZ",
+          "account": "@2KfS2vtSVRLR4d9",
+          "dancer_key": "@2kfs2vtsvrlr4d9",
+          "observed_at": "2026-07-21T10:11:16+00:00",
+          "score": 0,
+          "song_name": "皆さん踊り",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "",
           "estimated_venue": "",
           "time_hints": []
         }
@@ -234841,45 +237921,6 @@
     },
     {
       "kind": "song",
-      "candidate_key": "song:f1d5550b36a303e3a7477aab0fde9840d546b417f33fa375e98cf2384f2732e7",
-      "display_name": "自由が丘小唄",
-      "normalized_event": "",
-      "venue": "",
-      "venue_key": "",
-      "month": "",
-      "estimated_date": "",
-      "year": "",
-      "hashtags": [],
-      "score": 30,
-      "tier": "review",
-      "evidence": [
-        {
-          "identity": "",
-          "tweet_id": "2070035390611038433",
-          "url": "https://x.com/natsutr_bon/status/2070035390611038433",
-          "text": "【自由が丘納涼盆踊り大会】 🏮7/18(土)-20(月祝)📍自由が丘駅前ロータリー(目黒区) 自由が丘の夏の象徴的盆踊り大会で、例年JPOPコラボ曲を取り入れることでも話題♪ ご当地曲「ホイップるん音頭」「自由が丘小唄」も公式You Tubeで公開＜ https://t.co/tDSTygE0z5 ＞ https://t.co/e9LaN6E1js",
-          "account": "@natsutr_bon",
-          "dancer_key": "@natsutr_bon",
-          "observed_at": "2026-06-25T06:44:31+00:00",
-          "score": 0,
-          "song_name": "自由が丘小唄",
-          "reasons": [
-            "song_suffix_near_context"
-          ],
-          "estimated_event": "",
-          "estimated_venue": "",
-          "time_hints": []
-        }
-      ],
-      "reasons": [
-        "song_suffix_near_context"
-      ],
-      "suppressed_event_hints": [],
-      "evidence_count": 1,
-      "speaker_count": 1
-    },
-    {
-      "kind": "song",
       "candidate_key": "song:50d3b7d3d3cc69340d27a778a33318ab461dade314e16cc027afeaac6a53a3b1",
       "display_name": "船橋音頭",
       "normalized_event": "",
@@ -236688,6 +239729,45 @@
     },
     {
       "kind": "song",
+      "candidate_key": "song:7fc8a51dcd53c0484f5be19e95de0e1e33fc78a9e9ebdc85c4394a2bec1d60c6",
+      "display_name": "長崎名物節",
+      "normalized_event": "朝日校区慰霊",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 30,
+      "tier": "review",
+      "evidence": [
+        {
+          "identity": "evidence:2079827394983289274",
+          "tweet_id": "2079827394983289274",
+          "url": "https://x.com/michiru_zenryo9/status/2079827394983289274",
+          "text": "朝日校区慰霊盆踊り大会🏮練習会。炭坑節(開くのはボタ山をイメージして山開き🙏水平×)、長崎名物節、恋をするなら、真っ赤な太陽、長崎盆踊り(回るのは左足から) 楽しさ満載なのはもちろん、手数をイチから教えていただけるのが嬉しくて😆窓からは大好きなジャイアントカンチレバークレーンが見えた🏗️ https://t.co/YjXyJKoBsV",
+          "account": "@michiru_zenryo9",
+          "dancer_key": "@michiru_zenryo9",
+          "observed_at": "2026-07-22T07:14:26+00:00",
+          "score": 9,
+          "song_name": "長崎名物節",
+          "reasons": [
+            "song_suffix_near_context"
+          ],
+          "estimated_event": "朝日校区慰霊盆踊り大会",
+          "estimated_venue": "",
+          "time_hints": []
+        }
+      ],
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 1,
+      "speaker_count": 1
+    },
+    {
+      "kind": "song",
       "candidate_key": "song:457799781f1b8b49ab96150cd4d738b2a6f26f7aaf37df95dae7302824db7e16",
       "display_name": "阿久根ハンヤ節",
       "normalized_event": "",
@@ -237649,6 +240729,23 @@
       "tier": "promote",
       "evidence": [
         {
+          "identity": "evidence:2079838867276853275",
+          "tweet_id": "2079838867276853275",
+          "url": "https://x.com/sangacio/status/2079838867276853275",
+          "text": "8月1日・2日（土・日）に開催される 「中野駅前大盆踊り大会」へ SANGACIOが協賛として参加します。 会場では、世界一速いスニーカー!? 👟 レーシングカー「サンガッチョ号」を特別展示！ SANGACIOオリジナルグッズのプレゼントや、 うちわもご用意しています! この機会にぜひ、 中野盆踊り会場でサンガッチョ号をご覧ください。 皆さまのご来場をお待ちしております！ @nakano_bonodori 第14回中野駅前大盆踊り大会 2026年8月1日（土）・2日（日） 📍中野セントラルパーク （東京都中野区中野4-10-2） 参加費無料 #SANGACIO #夏祭り #ナカボン #盆ジョヴィ #盆踊り #中野 #スニーカー #イベント #東京イベント",
+          "account": "@sangacio",
+          "dancer_key": "@sangacio",
+          "observed_at": "2026-07-22T08:00:02+00:00",
+          "score": 15,
+          "estimated_event": "中野駅前大盆踊り大会",
+          "estimated_venue": "中野駅前",
+          "time_hints": [
+            "8月1日",
+            "2026年8月1日",
+            "4-10"
+          ]
+        },
+        {
           "identity": "evidence:2078830954832175459",
           "tweet_id": "2078830954832175459",
           "url": "https://x.com/ALLOUT_smile/status/2078830954832175459",
@@ -237711,8 +240808,8 @@
         }
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 4,
-      "speaker_count": 4
+      "evidence_count": 5,
+      "speaker_count": 5
     },
     {
       "kind": "venue",
@@ -237793,6 +240890,21 @@
       "score": 70,
       "tier": "promote",
       "evidence": [
+        {
+          "identity": "evidence:sha256:5d5f725c7adf16c69a4068fa8d9e3b7330c413b056bee224fd278393c71ce964",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=Lj0a_tylof4",
+          "text": "2026年7月12日に開催された「晴海ふ頭公園盆踊り大会」での盆踊りの様子をお届けします！ 晴海ふ頭公園の心地よい海風を感じながら、 会場の盛り上がりをぜひ映像でお楽しみください！ 晴海ふ頭公園盆踊り １おしりたんてい音頭 https://youtu.be/a14wHJTz11Y ２ジャンボリーミッキー https://youtu.be/qK_wAZd9sfY ３どんとこいブギ https://youtu.be/FwKDdeH2N7I ４河内おとこ節 https://youtu.be/jTg6AaNuJDw ５Let'sONDOAgain https://youtu.be/1hoUlCxoGBU ６東京五輪2020 https://youtu.be/8NRTaNXw95Y ７これがお江戸の盆ダンス https://youtu.be/Lj0a_tylof4 ８東京音頭 https://youtu.be/E6F3ET7WLGc ９炭坑節 https://youtu.be/Py81PpDfS0E 10きよしのズンドコ節 https://youtu.be/MQOEFbd0Xmk 11銀座カンカ",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-07-22T08:00:08+00:00",
+          "score": 15,
+          "estimated_event": "晴海ふ頭公園盆踊り大会",
+          "estimated_venue": "晴海ふ頭公園",
+          "time_hints": [
+            "2026年7月12日"
+          ]
+        },
         {
           "identity": "evidence:sha256:1183b455dc03a519a461350e7138927f253132f2ebea4168f752d157d15db48c",
           "tweet_id": "",
@@ -238039,7 +241151,7 @@
         }
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 16,
+      "evidence_count": 17,
       "speaker_count": 10
     },
     {
@@ -243541,6 +246653,57 @@
     },
     {
       "kind": "venue",
+      "candidate_key": "venue:493670b9770abd04b6313c4c6295f3444900102b86f29b2417f79cbd9e0e3bd4",
+      "display_name": "篠崎浅間神社",
+      "normalized_event": "",
+      "venue": "篠崎浅間神社",
+      "venue_key": "28b8341ed48dd8048e52a8d13ec4299636eac57567b743a3467a67270bf0ea96",
+      "month": "07",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 55,
+      "tier": "promote",
+      "evidence": [
+        {
+          "identity": "evidence:sha256:02465f04d61f9cea3f7434a049676bf4b1873f2d5579f5026a99bb08a64d4b2e",
+          "tweet_id": "",
+          "url": "https://www.youtube.com/watch?v=eCiDJx3BcLw",
+          "text": "2026年7月21日に東京都江戸川区の篠崎浅間神社で開催された「上篠崎自治会 納涼盆踊り大会」の様子です。 夜の神社に響く穏やかなメロディと、地域の方々が一体となって踊る情緒あふれる光景をぜひお楽しみください。 動画が良ければ、ぜひ「高評価」と「チャンネル登録」をよろしくお願いします！ 皆様のコメントもお待ちしております。 #盆踊り #篠崎浅間神社 #３６５日の紙飛行機 #上篠崎自治会 #夏祭り #江戸川区 #和太鼓お祭りチャンネル 篠崎浅間神社盆踊り １365日の紙飛行機 https://youtu.be/eCiDJx3BcLw",
+          "account": "@wadaikoCH",
+          "dancer_key": "@wadaikoch",
+          "observed_at": "2026-07-22T06:30:21+00:00",
+          "score": 17,
+          "estimated_event": "和太鼓お祭り",
+          "estimated_venue": "篠崎浅間神社",
+          "time_hints": [
+            "2026年7月21日"
+          ]
+        },
+        {
+          "identity": "evidence:2079420373976944742",
+          "tweet_id": "2079420373976944742",
+          "url": "https://x.com/kaz0045/status/2079420373976944742",
+          "text": "7/20(祝)#17 #篠崎浅間神社 #上篠崎自治会 #盆踊り 昨年は仕事帰りに数曲だけの参加でしたが今年はスタートから参加✌🏻 江戸川区ご当地曲、初見の曲、元気曲とバランスの良い選曲で飽きずに楽しく踊ることができました。 宮下先生、盆みやさん、ありがとうございました😊 https://t.co/nfVe6yqirn",
+          "account": "@kaz0045",
+          "dancer_key": "@kaz0045",
+          "observed_at": "2026-07-21T04:17:05+00:00",
+          "score": 13,
+          "estimated_event": "",
+          "estimated_venue": "篠崎浅間神社",
+          "time_hints": [
+            "7/20"
+          ]
+        }
+      ],
+      "suppressed_event_hints": [
+        "納涼盆踊り大会"
+      ],
+      "evidence_count": 2,
+      "speaker_count": 2
+    },
+    {
+      "kind": "venue",
       "candidate_key": "venue:d0ce5450d38ae3665a1234dc15763c8c6bda42557d7a197116dfc479ed5da0df",
       "display_name": "翌週末には恵比寿駅前",
       "normalized_event": "",
@@ -246409,6 +249572,40 @@
     },
     {
       "kind": "venue",
+      "candidate_key": "venue:4766f23fe5e086cd3bb5fc800eafbacea5e90b036de68aa3fd78aec4512eace9",
+      "display_name": "00春日居スポーツ広場",
+      "normalized_event": "",
+      "venue": "00春日居スポーツ広場",
+      "venue_key": "b71a5506775f5e9237c6d4c1fec79c6949379cb59f6600e364bf846270d70cf3",
+      "month": "08",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 35,
+      "tier": "review",
+      "evidence": [
+        {
+          "identity": "evidence:2079844634763870713",
+          "tweet_id": "2079844634763870713",
+          "url": "https://x.com/MotoiwaTakayuki/status/2079844634763870713",
+          "text": "8/15(土)18:00春日居スポーツ広場(笛吹市春日居鎮目1323) 「春日居ふるさと夏まつり」に出演♪ 笛吹あら川こども園の園児体操とも1曲共演します🤗❣️ キッチンカー、露店、縁日、盆踊り…どうぞ楽しいひとときを🍀 ぜひ遊びにいらして下さい✨✨ #ふるさと #春日居 #こども園 #やまなし大使 https://t.co/6KGFFv5VhG",
+          "account": "@MotoiwaTakayuki",
+          "dancer_key": "@motoiwatakayuki",
+          "observed_at": "2026-07-22T08:22:57+00:00",
+          "score": 14,
+          "estimated_event": "春日居ふるさと夏まつり",
+          "estimated_venue": "00春日居スポーツ広場",
+          "time_hints": [
+            "8/15"
+          ]
+        }
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 1,
+      "speaker_count": 1
+    },
+    {
+      "kind": "venue",
       "candidate_key": "venue:a25919bbca73cb0c209c4ae3a4215e901e0b600745d8bd2cb024006e9e566bff",
       "display_name": "13土曜日は日枝神社",
       "normalized_event": "",
@@ -246721,6 +249918,41 @@
       "suppressed_event_hints": [
         "9開催の竹駒神社の盆踊り"
       ],
+      "evidence_count": 1,
+      "speaker_count": 1
+    },
+    {
+      "kind": "venue",
+      "candidate_key": "venue:cba93f744b689d7525380b72f4b3706e2c4d28a69957c553d7046580f52658e7",
+      "display_name": "ZOZOの広場",
+      "normalized_event": "",
+      "venue": "ZOZOの広場",
+      "venue_key": "c8539442cbfff3d51bf4655ffb69358f0317a3cf53e846b5b105fdabbc93bb45",
+      "month": "07",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 35,
+      "tier": "review",
+      "evidence": [
+        {
+          "identity": "evidence:2079843042056679850",
+          "tweet_id": "2079843042056679850",
+          "url": "https://x.com/itonami_books/status/2079843042056679850",
+          "text": "📢7/25（土）オープンします！ みどりまち盆踊りが開催される7/25に、ひとこま。さんお店番にてオープンします。 7/25 Sat. 12:00-16:00 ぜひお祭り前にお越しください♪ #古本屋 #シェア型書店 #棚貸し本屋 #みどり台 #西千葉 #いとなみ書店 #読書 #みどりまち盆踊り #ZOZOの広場 #緑町公園 https://t.co/odUGkO3daq",
+          "account": "@itonami_books",
+          "dancer_key": "@itonami_books",
+          "observed_at": "2026-07-22T08:16:37+00:00",
+          "score": 15,
+          "estimated_event": "みどりまち盆踊り",
+          "estimated_venue": "ZOZOの広場",
+          "time_hints": [
+            "7/25",
+            "00-16"
+          ]
+        }
+      ],
+      "suppressed_event_hints": [],
       "evidence_count": 1,
       "speaker_count": 1
     },
@@ -247109,6 +250341,40 @@
     },
     {
       "kind": "venue",
+      "candidate_key": "venue:d17f7c5b9785c9c0c0a32063e0437e6f5827fcdbc34934e03b17986d426ce60d",
+      "display_name": "に第六天公園",
+      "normalized_event": "",
+      "venue": "に第六天公園",
+      "venue_key": "dc25ea725acd5f599aec65e27117ea8e147762213896ddda4e3417a83b54ca0e",
+      "month": "07",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 35,
+      "tier": "review",
+      "evidence": [
+        {
+          "identity": "evidence:2079808866779595107",
+          "tweet_id": "2079808866779595107",
+          "url": "https://x.com/adachi_city/status/2079808866779595107",
+          "text": "７月２５日（土）、２６日（日）に第六天公園で１８時から「合同盆踊り大会」が行われます。東和二丁目自治会と東和二丁目西自治会が合同で開催し、子ども会の屋台等も出店します！ぜひご来場ください。※雨天の場合は、中止となります。 #夏祭り#盆踊り https://t.co/Qef8hYQRn0",
+          "account": "@adachi_city",
+          "dancer_key": "@adachi_city",
+          "observed_at": "2026-07-22T06:00:49+00:00",
+          "score": 17,
+          "estimated_event": "合同盆踊り大会",
+          "estimated_venue": "に第六天公園",
+          "time_hints": [
+            "７月２５日"
+          ]
+        }
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 1,
+      "speaker_count": 1
+    },
+    {
+      "kind": "venue",
       "candidate_key": "venue:02a1d6eb8e8af96f7d94395ac9905777dfadb4c6f79a1495cb8b95d653ea9c7b",
       "display_name": "の中心商店街",
       "normalized_event": "",
@@ -247212,6 +250478,40 @@
     },
     {
       "kind": "venue",
+      "candidate_key": "venue:ffc06fac1d02fe59527b957966d2bd41f6f56d98007b69be0ef714a1ac9d0dda",
+      "display_name": "は地元商店街",
+      "normalized_event": "",
+      "venue": "は地元商店街",
+      "venue_key": "13e8e3663b08e7e80a30bcf4e062af5985db7b4af13ed2c1a5fd31f644145d65",
+      "month": "08",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 35,
+      "tier": "review",
+      "evidence": [
+        {
+          "identity": "evidence:2079813214179856790",
+          "tweet_id": "2079813214179856790",
+          "url": "https://x.com/smizutanicomp/status/2079813214179856790",
+          "text": "8月6日には地元商店街の盆踊りがあるので太鼓を聴きに行きます。なんならフィールドレコーディングしたい。笑",
+          "account": "@smizutanicomp",
+          "dancer_key": "@smizutanicomp",
+          "observed_at": "2026-07-22T06:18:05+00:00",
+          "score": 13,
+          "estimated_event": "8月6日には地元商店街の盆踊り",
+          "estimated_venue": "は地元商店街",
+          "time_hints": [
+            "8月6日"
+          ]
+        }
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 1,
+      "speaker_count": 1
+    },
+    {
+      "kind": "venue",
       "candidate_key": "venue:423ccccc0f203b072d54ca36aab944325ee5dc67692502d7888d97b206b47a90",
       "display_name": "は庄下川側の中の島公園",
       "normalized_event": "",
@@ -247242,6 +250542,42 @@
       ],
       "suppressed_event_hints": [
         "は庄下川側の中の島公園の盆踊り"
+      ],
+      "evidence_count": 1,
+      "speaker_count": 1
+    },
+    {
+      "kind": "venue",
+      "candidate_key": "venue:6e03a77ee1501ad1571f81eafa14a5335bb82a61cd3278a6cf41d60d318e4637",
+      "display_name": "は郷之島公園",
+      "normalized_event": "",
+      "venue": "は郷之島公園",
+      "venue_key": "aaac6f3fdb96e82bcbed0f01d45cf2363635009c567de87f42d5c82c65e5bee1",
+      "month": "07",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 35,
+      "tier": "review",
+      "evidence": [
+        {
+          "identity": "evidence:2079804652506509525",
+          "tweet_id": "2079804652506509525",
+          "url": "https://x.com/hirabarikita/status/2079804652506509525",
+          "text": "🏮平針北学区 納涼夏祭り2026開催🎆 7/25(土)・26(日)は郷之島公園へGO💨 激アツな2日間が始まるよ✨ ⏰17:50〜20:45 🎯もち投げ・じゃんけん・抽選会 🔥26日は迫力のトーチ演技！ 🍺焼き鳥にビール、屋台大集合 盆踊りで最高の夏にしよ🙌 ※荒天中止 #平針北学区 #夏祭り #名古屋 https://t.co/NfzAV9pliD",
+          "account": "@hirabarikita",
+          "dancer_key": "@hirabarikita",
+          "observed_at": "2026-07-22T05:44:04+00:00",
+          "score": 11,
+          "estimated_event": "",
+          "estimated_venue": "は郷之島公園",
+          "time_hints": [
+            "7/25"
+          ]
+        }
+      ],
+      "suppressed_event_hints": [
+        "納涼夏祭り"
       ],
       "evidence_count": 1,
       "speaker_count": 1
@@ -247937,6 +251273,41 @@
           "estimated_venue": "五反野コミュニティセンター横の公園",
           "time_hints": [
             "6月20日"
+          ]
+        }
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 1,
+      "speaker_count": 1
+    },
+    {
+      "kind": "venue",
+      "candidate_key": "venue:53d6c3429488fc398a594c061b174a2252aa311b5e85e821bc3cee88561f87dd",
+      "display_name": "京橋築地小学校",
+      "normalized_event": "",
+      "venue": "京橋築地小学校",
+      "venue_key": "bf231abda93f5aecd7b164842b541cf9001a203e22d51d42da6589c18a13a006",
+      "month": "09",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 35,
+      "tier": "review",
+      "evidence": [
+        {
+          "identity": "evidence:2079530521554722870",
+          "tweet_id": "2079530521554722870",
+          "url": "https://x.com/tadashi_isono/status/2079530521554722870",
+          "text": "本日 最後の会議 #京橋築地小学校防災拠点運営委員会 9月27日(日)開催 準備が進められております‼️ #大規模震災 に備え 様々な事案を想定し 実践的な訓練となる様検討中👍 多くの住民にお知らせし 参加戴くかが課題です‼️ 公助の前にまず自助・共助 是非ご参加ください🤗 #築地 #中央区 #防災 https://t.co/CN6tYoh66G",
+          "account": "@tadashi_isono",
+          "dancer_key": "@tadashi_isono",
+          "observed_at": "2026-07-21T11:34:46+00:00",
+          "score": 8,
+          "estimated_event": "",
+          "estimated_venue": "京橋築地小学校",
+          "time_hints": [
+            "本日",
+            "9月27日"
           ]
         }
       ],
@@ -249684,6 +253055,74 @@
     },
     {
       "kind": "venue",
+      "candidate_key": "venue:017aea14deb5a968921ad6306b212bd1fc8ef2b37ab2b1186662519bc795f406",
+      "display_name": "本宿天神社",
+      "normalized_event": "",
+      "venue": "本宿天神社",
+      "venue_key": "a36b9295340aedaa57c567d8e71d2352487f9cb7d2ae6a76d82387c1b5a9c6b9",
+      "month": "07",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 35,
+      "tier": "review",
+      "evidence": [
+        {
+          "identity": "evidence:2079816210569744388",
+          "tweet_id": "2079816210569744388",
+          "url": "https://x.com/iko_yo_trip/status/2079816210569744388",
+          "text": "＼ワクワク夏まつり速報！／ 本宿天神社夏まつりが7/24・25に開催🎆 神輿と山車が旧中山道を練り歩き、境内は露店や太鼓、よさこい、子どもビンゴで大賑わい！家族で一日中楽しめますよ😊 おすすめポイント ✅ 神輿＆山車の迫力パレード🚩 ✅ 子どもビンゴで景品ゲット🎁 ✅ 露店グルメ＆盆踊りで夜までワイワイ🍧 🗓 2026年7/24(金)、25(土) 10:00〜21:00 📍 本宿天神社・北本駅東口駅前ロータリー（埼玉県北本市） 開催情報📝 https://t.co/PUeo8QwmY1",
+          "account": "@iko_yo_trip",
+          "dancer_key": "@iko_yo_trip",
+          "observed_at": "2026-07-22T06:30:00+00:00",
+          "score": 15,
+          "estimated_event": "ワクワク夏まつり",
+          "estimated_venue": "本宿天神社",
+          "time_hints": [
+            "7/24"
+          ]
+        }
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 1,
+      "speaker_count": 1
+    },
+    {
+      "kind": "venue",
+      "candidate_key": "venue:be01d605be2892103210d3c340e28811c31cba5d62666f7553c09a45c61f3655",
+      "display_name": "材木座光明寺",
+      "normalized_event": "",
+      "venue": "材木座光明寺",
+      "venue_key": "34e64a3829969533fd4a22bc44ba47ed562412638aa647cd894689b453fe62e0",
+      "month": "07",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 35,
+      "tier": "review",
+      "evidence": [
+        {
+          "identity": "evidence:2079709977338671532",
+          "tweet_id": "2079709977338671532",
+          "url": "https://x.com/NakaTetsu0719/status/2079709977338671532",
+          "text": "【はじめてのやまぼん】 7月20日に材木座光明寺さんにて、#おやまの盆踊り祭（やまぼん）が開催されました。 材木座・大町では、やまぼんのポスターが要所要所に貼られ、事前に盛り上がりを見せていました。 当日は気温と共に会場はマルシェ、ステージともに大盛りあがりです。 そして、そこに集うこどもも大人も笑顔いっぱい😄 今年、初めての開催となりましたが、ぜひとも来年もやってほしいです！ 材木座エリアの新たな夏の風物詩に！！ #やまぼん #材木座 #光明寺 #中村てつや #鎌倉市議会議員",
+          "account": "@NakaTetsu0719",
+          "dancer_key": "@nakatetsu0719",
+          "observed_at": "2026-07-21T23:27:52+00:00",
+          "score": 18,
+          "estimated_event": "おやまの盆踊り",
+          "estimated_venue": "材木座光明寺",
+          "time_hints": [
+            "7月20日"
+          ]
+        }
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 1,
+      "speaker_count": 1
+    },
+    {
+      "kind": "venue",
       "candidate_key": "venue:6b604386b554d4bcd81d390ec53369b8db9185bccb20f95e0f1dc50259cd37f9",
       "display_name": "東京の千住ほんちょう商店街",
       "normalized_event": "",
@@ -250552,6 +253991,41 @@
     },
     {
       "kind": "venue",
+      "candidate_key": "venue:e3c67cc9493ce4c82beeafce83a49d1827209d0375e1df8eabae04ec1d7e357a",
+      "display_name": "真清田神社",
+      "normalized_event": "",
+      "venue": "真清田神社",
+      "venue_key": "af1e33b8ceb96695816724d77f650d54cff50c4089859cddb347856b62c0eb2f",
+      "month": "07",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 35,
+      "tier": "review",
+      "evidence": [
+        {
+          "identity": "evidence:2079793264329392545",
+          "tweet_id": "2079793264329392545",
+          "url": "https://x.com/ohmura_hideaki/status/2079793264329392545",
+          "text": "明日7月23日(木)から26日(日)までの4日間、一宮市の真清田神社、本町商店街、銀座通り、一宮駅周辺で「 #第71回おりもの感謝祭一宮七夕まつり 」が開催されます。 今年で71回目を迎える「 #一宮七夕まつり 」は、一宮の主軸産業である織物業の繁栄を願うものです。 今年は、デザイナー・アーティストとして活躍されている #篠原ともえ さんをお迎えし、 #尾州織物 の魅力や、ものづくりへの想いを語るトークショーが開催されます。 また、アジア・アジアパラ競技大会フレンドシップ事業として、お笑いコンビ「 #ガンバレルーヤ 」による、アジア文化の魅力紹介や、一宮市が競技会場となるバドミントンのふれあい体験会が開催されるほか、毎年恒例の盆踊り大会なども行われます。 皆様もぜひ、一宮七夕まつりへお出かけください!",
+          "account": "@ohmura_hideaki",
+          "dancer_key": "@ohmura_hideaki",
+          "observed_at": "2026-07-22T04:58:49+00:00",
+          "score": 15,
+          "estimated_event": "第71回おりもの感謝祭一宮七夕まつり",
+          "estimated_venue": "真清田神社",
+          "time_hints": [
+            "明日",
+            "7月23日"
+          ]
+        }
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 1,
+      "speaker_count": 1
+    },
+    {
+      "kind": "venue",
       "candidate_key": "venue:daef7f0ec54d054417f5e4aff1721a0e1b82b71e680f6cb5cd90d52df3655f4f",
       "display_name": "真證寺",
       "normalized_event": "",
@@ -250831,6 +254305,42 @@
     },
     {
       "kind": "venue",
+      "candidate_key": "venue:a20ff8f3a3fc2f13e237f985f59390f9290e2cc29c9b098796ced3b99a6b1f4c",
+      "display_name": "第69回円頓寺",
+      "normalized_event": "",
+      "venue": "第69回円頓寺",
+      "venue_key": "c6fb272751f7adffd926bf41b82dce1f68cf7e15d4284d5c5ee433a0893f5e3d",
+      "month": "07",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 35,
+      "tier": "review",
+      "evidence": [
+        {
+          "identity": "evidence:2079803704677646370",
+          "tweet_id": "2079803704677646370",
+          "url": "https://x.com/CANOX_official/status/2079803704677646370",
+          "text": "🎋第69回円頓寺七夕まつり開催🏮 7月29日(水)～8月2日(日)に、第69回円頓寺七夕まつりが開催されます🙌 毎年恒例の装飾コンクールをはじめ、オープニング花火体験会や武将隊盆踊りなど、イベントも盛りだくさん🎵✨ カノークスも7月30日(木)にスタッフとして参加する予定です🙋‍♀️ 皆さまお誘いあわせのうえ、ぜひお越しください😊 詳細は特設サイトをご覧ください👇 https://t.co/FcF8znM3PU #SDGs #地域貢献 #円頓寺 #円頓寺七夕まつり",
+          "account": "@CANOX_official",
+          "dancer_key": "@canox_official",
+          "observed_at": "2026-07-22T05:40:18+00:00",
+          "score": 15,
+          "estimated_event": "第69回円頓寺七夕まつり",
+          "estimated_venue": "第69回円頓寺",
+          "time_hints": [
+            "7月29日",
+            "8月2日",
+            "7月30日"
+          ]
+        }
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 1,
+      "speaker_count": 1
+    },
+    {
+      "kind": "venue",
       "candidate_key": "venue:89b1bd8571f49ea20fb12034acbe424d8108406dabb76e15105dfa0135303ac6",
       "display_name": "第78回築地本願寺",
       "normalized_event": "",
@@ -250931,40 +254441,6 @@
       "suppressed_event_hints": [
         "納涼盆踊り大会"
       ],
-      "evidence_count": 1,
-      "speaker_count": 1
-    },
-    {
-      "kind": "venue",
-      "candidate_key": "venue:493670b9770abd04b6313c4c6295f3444900102b86f29b2417f79cbd9e0e3bd4",
-      "display_name": "篠崎浅間神社",
-      "normalized_event": "",
-      "venue": "篠崎浅間神社",
-      "venue_key": "28b8341ed48dd8048e52a8d13ec4299636eac57567b743a3467a67270bf0ea96",
-      "month": "07",
-      "estimated_date": "",
-      "year": 2026,
-      "hashtags": [],
-      "score": 35,
-      "tier": "review",
-      "evidence": [
-        {
-          "identity": "evidence:2079420373976944742",
-          "tweet_id": "2079420373976944742",
-          "url": "https://x.com/kaz0045/status/2079420373976944742",
-          "text": "7/20(祝)#17 #篠崎浅間神社 #上篠崎自治会 #盆踊り 昨年は仕事帰りに数曲だけの参加でしたが今年はスタートから参加✌🏻 江戸川区ご当地曲、初見の曲、元気曲とバランスの良い選曲で飽きずに楽しく踊ることができました。 宮下先生、盆みやさん、ありがとうございました😊 https://t.co/nfVe6yqirn",
-          "account": "@kaz0045",
-          "dancer_key": "@kaz0045",
-          "observed_at": "2026-07-21T04:17:05+00:00",
-          "score": 13,
-          "estimated_event": "",
-          "estimated_venue": "篠崎浅間神社",
-          "time_hints": [
-            "7/20"
-          ]
-        }
-      ],
-      "suppressed_event_hints": [],
       "evidence_count": 1,
       "speaker_count": 1
     },
@@ -253139,6 +256615,38 @@
     },
     {
       "kind": "venue",
+      "candidate_key": "venue:efd2b1cd653a944f7bb8a575cfad2c7130c25a00edb65318ac22a6b9fd054aa4",
+      "display_name": "に多分縁のありそうな寺",
+      "normalized_event": "",
+      "venue": "に多分縁のありそうな寺",
+      "venue_key": "1155a646a38439f1171b40cd431495a533c88a271b3ccb0d8d3377331b3a9c4d",
+      "month": "",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 28,
+      "tier": "review",
+      "evidence": [
+        {
+          "identity": "evidence:2079841147036545456",
+          "tweet_id": "2079841147036545456",
+          "url": "https://x.com/setsunanobara/status/2079841147036545456",
+          "text": "サウナ行く前に久々に多分縁のありそうな寺にお参り行ってきた サボってきたのバレてたのか、おみくじの結果は堅実にコツコツ働きなさいという内容でした💦 今週盆踊りなのか境内の駄菓子屋さん空いててカルメ焼きと昔良く買ってたチョコを 「むちゃぶり」という項目当時からあったのか？？？ https://t.co/pQWYOXZwdd",
+          "account": "@setsunanobara",
+          "dancer_key": "@setsunanobara",
+          "observed_at": "2026-07-22T08:09:05+00:00",
+          "score": 12,
+          "estimated_event": "今週盆踊り",
+          "estimated_venue": "に多分縁のありそうな寺",
+          "time_hints": []
+        }
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 1,
+      "speaker_count": 1
+    },
+    {
+      "kind": "venue",
       "candidate_key": "venue:f778e5396e34afe7fa2b6c20fc384978f5377baad114664bc8f5b6cce833f117",
       "display_name": "は昨日行けなかった妻と一緒に晴海ふ頭公園",
       "normalized_event": "",
@@ -253324,6 +256832,38 @@
           "score": 14,
           "estimated_event": "川崎区で各町会の盆おどり・納涼祭",
           "estimated_venue": "ゴルフをする公園",
+          "time_hints": []
+        }
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 1,
+      "speaker_count": 1
+    },
+    {
+      "kind": "venue",
+      "candidate_key": "venue:225faf5e5f289dbd31cee598f53b8394ef93d11e4f01a5a7197ea6cba08a4b6d",
+      "display_name": "スポーツの杜公園",
+      "normalized_event": "",
+      "venue": "スポーツの杜公園",
+      "venue_key": "80b6fec7bb095784ce7ae6e1ad1259bcd0a68770a42c5860c566cee86bb79684",
+      "month": "",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 28,
+      "tier": "review",
+      "evidence": [
+        {
+          "identity": "evidence:2079849409253356016",
+          "tweet_id": "2079849409253356016",
+          "url": "https://x.com/Shota_0311/status/2079849409253356016",
+          "text": "また緑が丘、駅前のところで盆踊りやるのか… 去年来てみたけど人多すぎて全然楽しめなかったから、スポーツの杜公園で開催して欲しい… 駅前広場は狭すぎるよ。",
+          "account": "@Shota_0311",
+          "dancer_key": "@shota_0311",
+          "observed_at": "2026-07-22T08:41:55+00:00",
+          "score": 15,
+          "estimated_event": "駅前のところで盆踊り",
+          "estimated_venue": "スポーツの杜公園",
           "time_hints": []
         }
       ],
@@ -256608,6 +260148,40 @@
     },
     {
       "kind": "venue",
+      "candidate_key": "venue:f16f0294181baa3a87e67926b27447cf5ae4efffb41f645675e43d772519f423",
+      "display_name": "浅間神社",
+      "normalized_event": "",
+      "venue": "浅間神社",
+      "venue_key": "b9e2a0579a57ea0daa5a328f7081f7bd70c57ef9764fc30ada6b93272eb90ae8",
+      "month": "",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 28,
+      "tier": "review",
+      "evidence": [
+        {
+          "identity": "evidence:2079559753433551300",
+          "tweet_id": "2079559753433551300",
+          "url": "https://x.com/oson_kimono/status/2079559753433551300",
+          "text": "浅間神社 上篠崎自治会盆踊り 7時過ぎから、踊りにいきました！！ 初めての曲が多かったけど頑張った💪 すごくアットホームな雰囲気のお祭りで楽しかったです😆💕 太鼓が凄かった‼️‼️ 帰りに見た今日の月、色が濃くて幻想的でした。 https://t.co/oOeclJfpNz",
+          "account": "@oson_kimono",
+          "dancer_key": "@oson_kimono",
+          "observed_at": "2026-07-21T13:30:56+00:00",
+          "score": 14,
+          "estimated_event": "上篠崎自治会盆踊り",
+          "estimated_venue": "浅間神社",
+          "time_hints": [
+            "今日"
+          ]
+        }
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 1,
+      "speaker_count": 1
+    },
+    {
+      "kind": "venue",
       "candidate_key": "venue:4a69e0cc19390c05d04aa3794c7620c9624fea2fbe18d7bcfe3f51ad20cc96ed",
       "display_name": "浅間神社例大祭に合わせて駅前",
       "normalized_event": "",
@@ -256992,6 +260566,38 @@
           "score": 17,
           "estimated_event": "大晦日のうちに2025年盆踊り",
           "estimated_venue": "第1回晴海埠頭公園",
+          "time_hints": []
+        }
+      ],
+      "suppressed_event_hints": [],
+      "evidence_count": 1,
+      "speaker_count": 1
+    },
+    {
+      "kind": "venue",
+      "candidate_key": "venue:8087faf5683b0756bf4c090f1d18a5e3bdd6539f299ffc0396343b18fa0cb93a",
+      "display_name": "第52回吉祥寺",
+      "normalized_event": "",
+      "venue": "第52回吉祥寺",
+      "venue_key": "6a6b2ba2faaa968148152eccd78246a4f460088617a6c9f7522359d04d11cf2f",
+      "month": "",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [],
+      "score": 28,
+      "tier": "review",
+      "evidence": [
+        {
+          "identity": "evidence:2079705303634047029",
+          "tweet_id": "2079705303634047029",
+          "url": "https://x.com/nashi1004/status/2079705303634047029",
+          "text": "夏だ！祭りだ！ふれ合いだー！ 待ってました！「第52回吉祥寺ふれあい夏まつり」です🏮今年も小学生の社会勉強としてブース出ます😊他にもステージプログラムにジャンケン大会に盆踊りにお菓子プレゼント！わくわくがてんこ盛り！夏まつりは日本の原風景ですね！ご一緒に〜！ダイブ！！ #むさしのFM https://t.co/ICVjLROoQA",
+          "account": "@nashi1004",
+          "dancer_key": "@nashi1004",
+          "observed_at": "2026-07-21T23:09:18+00:00",
+          "score": 12,
+          "estimated_event": "第52回吉祥寺ふれあい夏まつり",
+          "estimated_venue": "第52回吉祥寺",
           "time_hints": []
         }
       ],
