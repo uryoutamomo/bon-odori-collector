@@ -4,7 +4,7 @@ import unittest
 from pathlib import Path
 
 from audit_unified_model_v2 import audit_observations, audit_rdb
-from build_event_occurrence_observations import series_key, stable_id
+from youtube_backfill.build_event_occurrence_observations import series_key, stable_id
 
 
 class AuditUnifiedModelV2Test(unittest.TestCase):

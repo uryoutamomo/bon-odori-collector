@@ -158,7 +158,7 @@ X由来では投稿日と開催日がズレやすいため、本文や画像か�
 
 ## 分類体系
 
-`rule_type` は既存の `build_event_date_predictions.py` と互換にする。
+`rule_type` は既存の `youtube_backfill.build_event_date_predictions` と互換にする。
 
 | rule_type | primary_axis | 意味 | 例 |
 | --- | --- | --- | --- |
@@ -264,14 +264,14 @@ X由来では投稿日と開催日がズレやすいため、本文や画像か�
 | `low` | 1年のみ、または近傍一致だが別ルール候補と競合 |
 | `manual_verified` | 人間レビューで系列ルールとして固定 |
 
-既存の `build_event_date_predictions.py` では、スコアから機械的に `high` / `medium` / `low` を返している。
+既存の `youtube_backfill.build_event_date_predictions` では、スコアから機械的に `high` / `medium` / `low` を返している。
 新設する `event_schedule_rules` では、年数ベースの定義を正本にする。
 
 実装時の扱い:
 
 - `rule_confidence`: 上記の年数・根拠種別ベースの分類。
 - `score`: ソートや競合解決に使う連続値。
-- `legacy_prediction_confidence`: 既存 `build_event_date_predictions.py` 互換が必要な場合だけ残す。
+- `legacy_prediction_confidence`: 既存 `youtube_backfill.build_event_date_predictions` 互換が必要な場合だけ残す。
 
 `confidence` の意味が年数ベースとスコア閾値ベースでズレないよう、公開JSONへ出す場合は `rule_confidence` を使う。
 
@@ -320,7 +320,7 @@ X由来では投稿日と開催日がズレやすいため、本文や画像か�
 
 ### 既存のまま使うもの
 
-- `build_event_date_predictions.py`
+- `youtube_backfill.build_event_date_predictions`
   - 現在の `rule_type` 推定と予測日生成を活かす。
 - `public_json_postprocessors/apply_public_date_predictions.py`
   - 確定日があるイベントには予測を付けない挙動を維持する。
@@ -409,7 +409,7 @@ YouTube APIが使えない日は、以下だけ進める。
 1. YouTube過去年候補を少量取得する。
 2. `youtube_backfill/build_event_occurrence_backfill_plan.py` で開催回観測候補を作る。
 3. `youtube_backfill/apply_event_occurrence_backfill_plan.py` でレビュー済み観測を `event_occurrence_observations.json` へ反映する。
-4. `build_event_date_predictions.py --target-year 2026` で日付予測を作る。
+4. `python3 -m youtube_backfill.build_event_date_predictions --target-year 2026` で日付予測を作る。
 5. `public_json_postprocessors/apply_public_date_predictions.py` で公開JSONへ予測を付ける。
 6. `public_json_postprocessors/apply_public_historical_references.py`、`public_json_postprocessors/apply_public_season_hints.py`、`export_public_events.py` で公開成果物を再生成する。
 
@@ -431,10 +431,10 @@ YouTube/公式/X/ブログ候補
 
 ```text
 python3 -m youtube_backfill.build_event_occurrence_backfill_plan
-python3 build_low_confidence_backfill_review.py
+python3 -m youtube_backfill.build_low_confidence_backfill_review
 python3 -m youtube_backfill.apply_event_occurrence_backfill_plan
 python3 -m youtube_backfill.build_event_schedule_rules --target-year 2026
-python3 build_event_date_predictions.py --target-year 2026
+python3 -m youtube_backfill.build_event_date_predictions --target-year 2026
 python3 -m public_json_postprocessors.apply_public_date_predictions
 python3 -m public_json_postprocessors.apply_public_historical_references
 python3 -m public_json_postprocessors.apply_public_season_hints
@@ -533,10 +533,10 @@ X:
 ## 実装順序
 
 1. `series_key` 品質チェックを先に入れ、名寄せ警告を `event_schedule_rules.md` に出せるようにする。
-2. 既存 `build_event_date_predictions.py` の候補生成を `youtube_backfill/build_event_schedule_rules.py` 側へ共通化する。
+2. 既存 `youtube_backfill.build_event_date_predictions` の候補生成を `youtube_backfill/build_event_schedule_rules.py` 側へ共通化する。
 3. 固定日と曜日固定のタイブレーク方針を実装する。
 4. `data/event_schedule_rules.json/md` を生成する。
-5. `build_event_date_predictions.py` は `event_schedule_rules.json` を読んで予測日に変換する形へ寄せる。
+5. `youtube_backfill.build_event_date_predictions` は `event_schedule_rules.json` を読んで予測日に変換する形へ寄せる。
 6. 6月下旬・7月対象だけでdry-runする。
 7. `medium` 以上のルールをレビューし、問題なければ公開JSONへ `schedule_rule` として添付する。
 8. 高信頼・固定日だけ Notion へ反映する。

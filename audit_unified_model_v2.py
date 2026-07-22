@@ -13,8 +13,8 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
-from build_event_occurrence_observations import series_key as expected_series_key
-from build_event_occurrence_observations import stable_id, year_of
+from youtube_backfill.build_event_occurrence_observations import series_key as expected_series_key
+from youtube_backfill.build_event_occurrence_observations import stable_id, year_of
 
 
 DATA = Path("data")
