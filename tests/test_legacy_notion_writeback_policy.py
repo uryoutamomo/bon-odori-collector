@@ -1,7 +1,7 @@
 import unittest
 from pathlib import Path
 
-from manual_apply_guards import require_confirmation
+from operation_safety.manual_apply_guards import require_confirmation
 
 
 ROOT = Path(__file__).resolve().parents[1]

@@ -1,7 +1,7 @@
 import unittest
 from pathlib import Path
 
-from manual_apply_guards import NOTION_WORKLOG_MAINTENANCE_CONFIRMATION
+from operation_safety.manual_apply_guards import NOTION_WORKLOG_MAINTENANCE_CONFIRMATION
 
 
 ROOT = Path(__file__).resolve().parents[1]

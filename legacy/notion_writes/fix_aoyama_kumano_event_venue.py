@@ -4,7 +4,7 @@
 import argparse
 import os
 
-from manual_apply_guards import LEGACY_NOTION_REPAIR_CONFIRMATION, require_confirmation
+from operation_safety.manual_apply_guards import LEGACY_NOTION_REPAIR_CONFIRMATION, require_confirmation
 from notion_api import NotionApi
 from notion_config import load_local_env
 

@@ -1,7 +1,7 @@
 import unittest
 from pathlib import Path
 
-from manual_apply_guards import LEGACY_NOTION_REPAIR_CONFIRMATION
+from operation_safety.manual_apply_guards import LEGACY_NOTION_REPAIR_CONFIRMATION
 
 
 ROOT = Path(__file__).resolve().parents[1]

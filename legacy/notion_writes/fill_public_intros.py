@@ -9,7 +9,7 @@ import argparse
 import os
 import re
 
-from manual_apply_guards import LEGACY_NOTION_REPAIR_CONFIRMATION, require_confirmation
+from operation_safety.manual_apply_guards import LEGACY_NOTION_REPAIR_CONFIRMATION, require_confirmation
 from notion_api import NotionApi, plain_text
 import notion_config
 from venues.export_public_venues import (
