@@ -9,11 +9,11 @@
 
 | metric | count |
 | --- | ---: |
-| root `*.py` | 211 |
+| root `*.py` | 134 |
 | `legacy/**/*.py` | 153 |
 | `documented_manual` | 10 |
 | `retained_legacy_dependency` | 6 |
-| `source_dependency` | 87 |
+| `source_dependency` | 10 |
 | `test_supported_manual` | 66 |
 | `workflow_entrypoint` | 42 |
 

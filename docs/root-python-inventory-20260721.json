@@ -2,12 +2,12 @@
   "schema_version": 1,
   "as_of": "2026-07-21",
   "summary": {
-    "root_python_count": 211,
+    "root_python_count": 134,
     "legacy_python_count": 153,
     "classification_counts": {
       "documented_manual": 10,
       "retained_legacy_dependency": 6,
-      "source_dependency": 87,
+      "source_dependency": 10,
       "test_supported_manual": 66,
       "workflow_entrypoint": 42
     }
@@ -21,98 +21,6 @@
     "review_candidate": "No workflow, live-code, test, or docs reference; review before moving."
   },
   "items": [
-    {
-      "path": "add_current_work_to_first_look_notion.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "rename_current_work_first_look_link_notion.py"
-        ],
-        "test": [
-          "tests/test_add_current_work_to_first_look_notion.py",
-          "tests/test_notion_worklog_maintenance_policy.py"
-        ],
-        "docs": [
-          "docs/notion-worklog-maintenance-operations.md"
-        ],
-        "data": [
-          "data/notion_current_work_first_look_link.json"
-        ],
-        "legacy": []
-      }
-    },
-    {
-      "path": "apply_change_requests.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "build_public_historical_reference_change_requests.py",
-          "scripts/promote_change_requests_for_review.py",
-          "scripts/run_public_projection_readiness.py"
-        ],
-        "test": [
-          "tests/test_apply_change_requests.py"
-        ],
-        "docs": [
-          "docs/event-state-axes-migration-plan.md",
-          "docs/one-off-apply-classification-20260716.md",
-          "docs/operations-simplification-plan.md",
-          "docs/p0-review-20260721.md"
-        ],
-        "data": [
-          "data/change_requests/p0_current_year_confirmations_20260721_dry_run_report.json"
-        ],
-        "legacy": []
-      }
-    },
-    {
-      "path": "apply_event_occurrence_backfill_plan.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "run_daily_youtube_backfill.py"
-        ],
-        "test": [
-          "tests/test_apply_event_occurrence_backfill_plan.py"
-        ],
-        "docs": [
-          "docs/one-off-apply-classification-20260716.md",
-          "docs/schedule-rule-classification-design.md"
-        ],
-        "data": [
-          "data/oto_task_roundup_status_2026-06-19.md",
-          "data/youtube_next_session_handoff.md"
-        ],
-        "legacy": []
-      }
-    },
-    {
-      "path": "apply_firsthand_field_report.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "firsthand_report_helpers.py",
-          "rdb_apply_support.py"
-        ],
-        "test": [
-          "tests/test_apply_firsthand_field_report.py"
-        ],
-        "docs": [
-          "docs/firsthand-field-report-operations.md",
-          "docs/manual-auto-operations-inventory.md",
-          "docs/official-notice-field-report-operations.md",
-          "docs/one-off-apply-classification-20260716.md"
-        ],
-        "data": [
-          "data/firsthand_field_report_apply_report.json"
-        ],
-        "legacy": []
-      }
-    },
     {
       "path": "apply_notion_drift_public_intro.py",
       "classification": "test_supported_manual",
@@ -149,30 +57,6 @@
         ],
         "data": [
           "data/notion_drift_source_url_resolutions_apply_report.json"
-        ],
-        "legacy": []
-      }
-    },
-    {
-      "path": "apply_official_notice_report.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "official_notice_report_helpers.py"
-        ],
-        "test": [
-          "tests/test_apply_official_notice_report.py"
-        ],
-        "docs": [
-          "docs/manual-auto-operations-inventory.md",
-          "docs/official-notice-field-report-operations.md",
-          "docs/one-off-apply-classification-20260716.md",
-          "docs/operations-simplification-plan.md"
-        ],
-        "data": [
-          "data/official_notice_report_apply_report.json",
-          "data/official_notice_reports/kyobashi5_nouryou_map_2026_verify.json"
         ],
         "legacy": []
       }
@@ -267,71 +151,6 @@
       }
     },
     {
-      "path": "apply_public_date_predictions.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "export_public_events.py",
-          "scripts/compare_public_export_postprocessors.py"
-        ],
-        "test": [
-          "tests/test_apply_public_date_predictions.py",
-          "tests/test_compare_public_export_postprocessors.py",
-          "tests/test_master_rdb_public_json_one_off_policy.py",
-          "tests/test_public_json_postprocessor_policy.py",
-          "tests/test_run_daily_youtube_backfill.py"
-        ],
-        "docs": [
-          "docs/build-export-report-operations.md",
-          "docs/manual-auto-operations-inventory.md",
-          "docs/master-rdb-public-json-one-off-operations.md",
-          "docs/one-off-apply-classification-20260716.md",
-          "docs/operations-simplification-plan.md",
-          "docs/public-json-postprocessor-operations.md",
-          "docs/public-json-rdb-projection-migration-plan.md",
-          "docs/schedule-rule-classification-design.md"
-        ],
-        "data": [
-          "data/current_public_dry_run/public_date_prediction_apply_result.json",
-          "data/master_rdb_public_dry_run/public_date_prediction_apply_result.json",
-          "data/master_rdb_public_production_preview/public_date_prediction_apply_result.json",
-          "data/public_date_prediction_apply_result.json",
-          "data/public_date_prediction_dry_run.json",
-          "data/youtube_next_session_handoff.md"
-        ],
-        "legacy": [
-          "legacy/notion-notes/append_manual_auto_public_json_note.py"
-        ]
-      }
-    },
-    {
-      "path": "apply_public_display_tiers.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "apply_public_date_predictions.py",
-          "apply_public_historical_references.py",
-          "apply_public_season_hints.py",
-          "export_public_events.py",
-          "guard_public_events_sync.py"
-        ],
-        "test": [
-          "tests/test_apply_public_display_tiers.py"
-        ],
-        "docs": [
-          "docs/event-state-axes-migration-plan.md",
-          "docs/master-rdb-public-json-one-off-operations.md",
-          "docs/one-off-apply-classification-20260716.md"
-        ],
-        "data": [],
-        "legacy": [
-          "legacy/migration_reports/breakdown_public_restore_candidates.py"
-        ]
-      }
-    },
-    {
       "path": "apply_public_event_name_cleanup.py",
       "classification": "test_supported_manual",
       "references": {
@@ -351,42 +170,6 @@
           "data/worktree_cleanup_inventory_20260629.md"
         ],
         "legacy": [
-          "legacy/notion-notes/append_manual_auto_public_json_note.py"
-        ]
-      }
-    },
-    {
-      "path": "apply_public_historical_references.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "export_public_events.py",
-          "guard_public_events_sync.py",
-          "scripts/compare_public_export_postprocessors.py"
-        ],
-        "test": [
-          "tests/test_apply_public_historical_references.py",
-          "tests/test_compare_public_export_postprocessors.py",
-          "tests/test_master_rdb_public_json_one_off_policy.py",
-          "tests/test_public_json_postprocessor_policy.py",
-          "tests/test_run_daily_youtube_backfill.py"
-        ],
-        "docs": [
-          "docs/build-export-report-operations.md",
-          "docs/manual-auto-operations-inventory.md",
-          "docs/master-rdb-public-json-one-off-operations.md",
-          "docs/one-off-apply-classification-20260716.md",
-          "docs/operations-simplification-plan.md",
-          "docs/public-json-postprocessor-operations.md",
-          "docs/public-json-rdb-projection-migration-plan.md",
-          "docs/schedule-rule-classification-design.md"
-        ],
-        "data": [
-          "data/public_historical_reference_dry_run.json"
-        ],
-        "legacy": [
-          "legacy/migration_reports/breakdown_public_restore_candidates.py",
           "legacy/notion-notes/append_manual_auto_public_json_note.py"
         ]
       }
@@ -417,42 +200,6 @@
       }
     },
     {
-      "path": "apply_public_season_hints.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "export_public_events.py",
-          "guard_public_events_sync.py",
-          "scripts/compare_public_export_postprocessors.py"
-        ],
-        "test": [
-          "tests/test_apply_public_season_hints.py",
-          "tests/test_compare_public_export_postprocessors.py",
-          "tests/test_master_rdb_public_json_one_off_policy.py",
-          "tests/test_public_json_postprocessor_policy.py",
-          "tests/test_run_daily_youtube_backfill.py"
-        ],
-        "docs": [
-          "docs/build-export-report-operations.md",
-          "docs/manual-auto-operations-inventory.md",
-          "docs/master-rdb-public-json-one-off-operations.md",
-          "docs/one-off-apply-classification-20260716.md",
-          "docs/operations-simplification-plan.md",
-          "docs/public-json-postprocessor-operations.md",
-          "docs/public-json-rdb-projection-migration-plan.md",
-          "docs/schedule-rule-classification-design.md"
-        ],
-        "data": [
-          "data/public_season_hint_dry_run.json"
-        ],
-        "legacy": [
-          "legacy/migration_reports/breakdown_public_restore_candidates.py",
-          "legacy/notion-notes/append_manual_auto_public_json_note.py"
-        ]
-      }
-    },
-    {
       "path": "apply_retrospective_ready_venue_events.py",
       "classification": "retained_legacy_dependency",
       "references": {
@@ -471,30 +218,6 @@
         ],
         "data": [],
         "legacy": []
-      }
-    },
-    {
-      "path": "apply_review_console_decisions.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "review_console/data.py"
-        ],
-        "test": [],
-        "docs": [
-          "docs/manual-auto-operations-inventory.md",
-          "docs/one-off-apply-classification-20260716.md",
-          "docs/rare-signal-discovery-design.md",
-          "docs/review-console-operations.md",
-          "docs/review-inbox-decision-staging.md"
-        ],
-        "data": [
-          "data/worktree_cleanup_inventory_20260629.md"
-        ],
-        "legacy": [
-          "legacy/notion-notes/append_review_console_operations_manual_to_notion.py"
-        ]
       }
     },
     {
@@ -798,7 +521,7 @@
         ],
         "source": [
           "apply_predicted_occurrence_source_rechecks.py",
-          "rdb_apply_support.py"
+          "report_apply/rdb_apply_support.py"
         ],
         "test": [
           "tests/test_apply_firsthand_field_report.py",
@@ -864,29 +587,6 @@
       }
     },
     {
-      "path": "backfill_youtube_descriptions.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "apply_youtube_year_backfill_review_decisions.py",
-          "build_youtube_channels.py",
-          "discover_youtube_channels.py",
-          "fetch_youtube_2025_backfill.py",
-          "harvest_youtube_year_backfill.py",
-          "run_daily_youtube_backfill.py"
-        ],
-        "test": [
-          "tests/test_youtube_description_backfill.py"
-        ],
-        "docs": [],
-        "data": [
-          "data/youtube_description_backfill_report.json"
-        ],
-        "legacy": []
-      }
-    },
-    {
       "path": "bon_odori_songs.py",
       "classification": "source_dependency",
       "references": {
@@ -934,37 +634,13 @@
       }
     },
     {
-      "path": "build_bon_odori_rdb.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "build_all_rdb.py"
-        ],
-        "test": [
-          "tests/test_build_bon_odori_rdb.py"
-        ],
-        "docs": [
-          "docs/build-export-report-operations.md",
-          "docs/cleanup-script-classification-20260716.md",
-          "docs/rdb-review-queries.md",
-          "docs/song-dance-variant-policy.md"
-        ],
-        "data": [
-          "data/bon_odori_rdb_summary.json",
-          "data/oto_task_roundup_status_2026-06-19.md"
-        ],
-        "legacy": []
-      }
-    },
-    {
       "path": "build_event_date_predictions.py",
       "classification": "source_dependency",
       "references": {
         "workflow": [],
         "source": [
-          "build_event_schedule_rules.py",
-          "run_daily_youtube_backfill.py"
+          "run_daily_youtube_backfill.py",
+          "youtube_backfill/build_event_schedule_rules.py"
         ],
         "test": [
           "tests/test_build_event_date_predictions.py"
@@ -981,38 +657,15 @@
       }
     },
     {
-      "path": "build_event_occurrence_backfill_plan.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "run_daily_youtube_backfill.py"
-        ],
-        "test": [
-          "tests/test_build_event_occurrence_backfill_plan.py"
-        ],
-        "docs": [
-          "docs/cleanup-script-classification-20260716.md",
-          "docs/schedule-rule-classification-design.md"
-        ],
-        "data": [
-          "data/event_occurrence_backfill_plan.json",
-          "data/oto_task_roundup_status_2026-06-19.md",
-          "data/youtube_next_session_handoff.md"
-        ],
-        "legacy": []
-      }
-    },
-    {
       "path": "build_event_occurrence_observations.py",
       "classification": "source_dependency",
       "references": {
         "workflow": [],
         "source": [
-          "apply_event_occurrence_backfill_plan.py",
           "audit_unified_model_v2.py",
-          "build_event_occurrence_backfill_plan.py",
-          "build_youtube_year_backfill_queue.py"
+          "build_youtube_year_backfill_queue.py",
+          "youtube_backfill/apply_event_occurrence_backfill_plan.py",
+          "youtube_backfill/build_event_occurrence_backfill_plan.py"
         ],
         "test": [
           "tests/test_apply_event_occurrence_backfill_plan.py",
@@ -1051,27 +704,6 @@
       }
     },
     {
-      "path": "build_event_schedule_rules.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "run_daily_youtube_backfill.py"
-        ],
-        "test": [
-          "tests/test_build_event_schedule_rules.py"
-        ],
-        "docs": [
-          "docs/cleanup-script-classification-20260716.md",
-          "docs/schedule-rule-classification-design.md"
-        ],
-        "data": [
-          "data/event_schedule_rules.json"
-        ],
-        "legacy": []
-      }
-    },
-    {
       "path": "build_event_song_candidates.py",
       "classification": "workflow_entrypoint",
       "references": {
@@ -1087,31 +719,6 @@
           "data/event_song_candidates.json"
         ],
         "legacy": []
-      }
-    },
-    {
-      "path": "build_evidence_rdb.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "build_all_rdb.py"
-        ],
-        "test": [
-          "tests/test_build_evidence_rdb.py"
-        ],
-        "docs": [
-          "docs/build-export-report-operations.md",
-          "docs/cleanup-script-classification-20260716.md",
-          "docs/rdb-review-queries.md",
-          "docs/youtube-evidence-architecture.md"
-        ],
-        "data": [
-          "data/evidence_rdb_summary.json"
-        ],
-        "legacy": [
-          "legacy/notion-notes/append_rdb_roadmap_to_current_work.py"
-        ]
       }
     },
     {
@@ -1165,41 +772,6 @@
       }
     },
     {
-      "path": "build_historical_promotion_candidates.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "audit_master_rdb.py",
-          "build_master_rdb.py"
-        ],
-        "test": [
-          "tests/test_build_export_report_operations_policy.py",
-          "tests/test_build_historical_promotion_candidates.py",
-          "tests/test_master_rdb_public_json_one_off_policy.py"
-        ],
-        "docs": [
-          "docs/build-export-report-operations.md",
-          "docs/cleanup-script-classification-20260716.md",
-          "docs/master-rdb-migration-ph0-design.md",
-          "docs/master-rdb-public-json-one-off-operations.md"
-        ],
-        "data": [
-          "data/bon_odori_master_manifest.json",
-          "data/historical_promotion_candidates.json",
-          "data/oto2_review_after_rebuild.md",
-          "data/oto2_reviewer_codex_result.md",
-          "data/oto_impl_handoff.md",
-          "data/predicted_date_notion_sync_dry_run.json"
-        ],
-        "legacy": [
-          "legacy/build-reports/build_ph2_cutover_readiness.py",
-          "legacy/build-reports/build_ph2_review_packet.py",
-          "legacy/notion-notes/append_manual_auto_build_export_note.py"
-        ]
-      }
-    },
-    {
       "path": "build_historical_reference_quality_review.py",
       "classification": "workflow_entrypoint",
       "references": {
@@ -1241,33 +813,6 @@
       }
     },
     {
-      "path": "build_keyboard_review_ui.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "run_manual_glossary_review.py"
-        ],
-        "test": [
-          "tests/test_collect_low_priority_inbox_wiring.py",
-          "tests/test_weekly_harvest_legacy_cleanup.py"
-        ],
-        "docs": [
-          "docs/build-export-report-operations.md",
-          "docs/cleanup-script-classification-20260716.md",
-          "docs/work-logs/2026-06-11-keyboard-review-ui.md"
-        ],
-        "data": [
-          "data/oto_task_roundup_status_2026-06-19.md",
-          "data/weekly_glossary_review_run.json",
-          "data/weekly_glossary_review_run.md"
-        ],
-        "legacy": [
-          "legacy/notion-notes/append_keyboard_review_ui_note_to_notion.py"
-        ]
-      }
-    },
-    {
       "path": "build_low_confidence_backfill_review.py",
       "classification": "source_dependency",
       "references": {
@@ -1286,37 +831,6 @@
           "data/youtube_next_session_handoff.md"
         ],
         "legacy": []
-      }
-    },
-    {
-      "path": "build_master_rdb.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "compare_notion_snapshot_to_master.py",
-          "export_master_rdb_song_occurrences.py"
-        ],
-        "test": [
-          "tests/test_master_db_s3_artifact.py"
-        ],
-        "docs": [
-          "docs/cleanup-script-classification-20260716.md",
-          "docs/master-rdb-migration-ph0-design.md"
-        ],
-        "data": [
-          "data/bon_odori_master_manifest.json",
-          "data/master_rdb_next_phase_preflight.md",
-          "data/master_rdb_ph0_dry_run_report.json",
-          "data/oto2_impl_codex_result.md",
-          "data/oto2_review_after_rebuild.md",
-          "data/oto2_reviewer_codex_result.md",
-          "data/oto_impl_handoff.md"
-        ],
-        "legacy": [
-          "legacy/build-reports/build_ph2_cutover_readiness.py",
-          "legacy/build-reports/build_ph2_review_packet.py"
-        ]
       }
     },
     {
@@ -1340,64 +854,6 @@
       }
     },
     {
-      "path": "build_month_youtube_backfill_queue.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "run_daily_youtube_backfill.py"
-        ],
-        "test": [
-          "tests/test_build_month_youtube_backfill_queue.py"
-        ],
-        "docs": [
-          "docs/cleanup-script-classification-20260716.md",
-          "docs/schedule-rule-classification-design.md"
-        ],
-        "data": [
-          "data/june_youtube_backfill_queue.json",
-          "data/month_06_youtube_backfill_queue.json",
-          "data/month_07_youtube_backfill_queue.json",
-          "data/month_08_youtube_backfill_queue.json"
-        ],
-        "legacy": []
-      }
-    },
-    {
-      "path": "build_notion_rdb.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "build_all_rdb.py"
-        ],
-        "test": [
-          "tests/test_build_notion_rdb.py"
-        ],
-        "docs": [
-          "docs/build-export-report-operations.md",
-          "docs/cleanup-script-classification-20260716.md",
-          "docs/notion-rdb-snapshot.md",
-          "docs/rdb-review-queries.md"
-        ],
-        "data": [
-          "data/master_rdb_next_phase_preflight.json",
-          "data/master_rdb_next_phase_preflight.md",
-          "data/notion_rdb_summary.json",
-          "data/ph2_master_to_notion_sync_tmp_apply_db_dry_run.md",
-          "data/ph2_shinagawa_second_notion_sync_apply.md",
-          "data/ph2_shinagawa_second_notion_sync_dry_run.md",
-          "data/ph2_shinagawa_second_notion_sync_pre_apply.md",
-          "data/ph2_shinagawa_second_venue_notion_sync_apply.md",
-          "data/ph2_shinagawa_second_venue_notion_sync_pre_apply.md",
-          "data/predicted_date_notion_sync_dry_run.md"
-        ],
-        "legacy": [
-          "legacy/notion-notes/append_rdb_roadmap_to_current_work.py"
-        ]
-      }
-    },
-    {
       "path": "build_notion_snapshot_drift_decisions.py",
       "classification": "documented_manual",
       "references": {
@@ -1413,32 +869,6 @@
           "data/notion_snapshot_master_drift_decisions.json"
         ],
         "legacy": []
-      }
-    },
-    {
-      "path": "build_observed_promotion_candidates.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "build_historical_promotion_candidates.py",
-          "build_master_rdb.py"
-        ],
-        "test": [],
-        "docs": [
-          "docs/cleanup-script-classification-20260716.md"
-        ],
-        "data": [
-          "data/bon_odori_master_manifest.json",
-          "data/observed_promotion_candidates.json",
-          "data/oto2_review_after_rebuild.md",
-          "data/oto2_reviewer_codex_result.md",
-          "data/oto_impl_handoff.md"
-        ],
-        "legacy": [
-          "legacy/build-reports/build_ph2_cutover_readiness.py",
-          "legacy/build-reports/build_ph2_review_packet.py"
-        ]
       }
     },
     {
@@ -1500,49 +930,6 @@
       }
     },
     {
-      "path": "build_public_historical_reference_change_requests.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "scripts/run_public_projection_readiness.py"
-        ],
-        "test": [
-          "tests/test_build_public_historical_reference_change_requests.py"
-        ],
-        "docs": [
-          "docs/operations-simplification-plan.md",
-          "docs/public-json-rdb-projection-migration-plan.md"
-        ],
-        "data": [],
-        "legacy": []
-      }
-    },
-    {
-      "path": "build_publication_gap_review.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "scripts/publish_public_data_flow.py"
-        ],
-        "test": [
-          "tests/test_build_publication_gap_review.py",
-          "tests/test_collect_low_priority_inbox_wiring.py",
-          "tests/test_publish_public_data_flow.py"
-        ],
-        "docs": [
-          "docs/cleanup-script-classification-20260716.md",
-          "docs/operations-simplification-plan.md",
-          "docs/public-event-publication-flow.md"
-        ],
-        "data": [
-          "data/publication_gap_review.json"
-        ],
-        "legacy": []
-      }
-    },
-    {
       "path": "build_rare_signal_backcheck_queue.py",
       "classification": "workflow_entrypoint",
       "references": {
@@ -1564,44 +951,6 @@
         ],
         "data": [],
         "legacy": []
-      }
-    },
-    {
-      "path": "build_registered_event_investigation_queue.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "build_master_rdb.py"
-        ],
-        "test": [
-          "tests/test_build_export_report_operations_policy.py",
-          "tests/test_build_registered_event_investigation_queue.py",
-          "tests/test_master_db_manifest.py",
-          "tests/test_master_rdb_public_json_one_off_policy.py"
-        ],
-        "docs": [
-          "docs/build-export-report-operations.md",
-          "docs/cleanup-script-classification-20260716.md",
-          "docs/master-rdb-migration-ph0-design.md",
-          "docs/master-rdb-public-json-one-off-operations.md"
-        ],
-        "data": [
-          "data/bon_odori_master_manifest.json",
-          "data/oto2_review_after_rebuild.md",
-          "data/oto2_reviewer_codex_result.md",
-          "data/oto_impl_handoff.md",
-          "data/ph2_cutover_readiness_post_p0_historical_refs.json",
-          "data/ph2_cutover_readiness_post_rdb_state_queue.json",
-          "data/registered_event_investigation_queue.json",
-          "data/registered_event_investigation_queue_post_rdb_state.json",
-          "data/registered_event_investigation_queue_post_shinagawa_date_fills.json"
-        ],
-        "legacy": [
-          "legacy/build-reports/build_ph2_cutover_readiness.py",
-          "legacy/build-reports/build_ph2_review_packet.py",
-          "legacy/notion-notes/append_manual_auto_build_export_note.py"
-        ]
       }
     },
     {
@@ -1736,8 +1085,8 @@
           ".github/workflows/collect.yml"
         ],
         "source": [
-          "build_evidence_rdb.py",
-          "build_youtube_rdb.py"
+          "rdb_builders/build_evidence_rdb.py",
+          "rdb_builders/build_youtube_rdb.py"
         ],
         "test": [
           "tests/test_build_youtube_active_video_review.py",
@@ -1792,26 +1141,6 @@
       }
     },
     {
-      "path": "build_youtube_event_review.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "review_missing_source_urls.py"
-        ],
-        "test": [
-          "tests/test_build_youtube_event_review.py"
-        ],
-        "docs": [
-          "docs/cleanup-script-classification-20260716.md"
-        ],
-        "data": [
-          "data/missing_source_url_review_post_apply.json"
-        ],
-        "legacy": []
-      }
-    },
-    {
       "path": "build_youtube_event_song_candidates.py",
       "classification": "test_supported_manual",
       "references": {
@@ -1846,31 +1175,6 @@
           "data/youtube_next_session_handoff.md"
         ],
         "legacy": []
-      }
-    },
-    {
-      "path": "build_youtube_rdb.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "build_all_rdb.py"
-        ],
-        "test": [
-          "tests/test_build_youtube_rdb.py"
-        ],
-        "docs": [
-          "docs/build-export-report-operations.md",
-          "docs/cleanup-script-classification-20260716.md",
-          "docs/rdb-review-queries.md",
-          "docs/youtube-evidence-architecture.md"
-        ],
-        "data": [
-          "data/youtube_rdb_summary.json"
-        ],
-        "legacy": [
-          "legacy/notion-notes/append_rdb_roadmap_to_current_work.py"
-        ]
       }
     },
     {
@@ -1968,27 +1272,6 @@
       }
     },
     {
-      "path": "classify_public_events_diff.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "guard_public_events_sync.py"
-        ],
-        "test": [
-          "tests/test_classify_public_events_diff.py"
-        ],
-        "docs": [],
-        "data": [
-          "data/oto2_reviewer_codex_result.md",
-          "data/public_events_diff_classification.json"
-        ],
-        "legacy": [
-          "legacy/build-reports/build_ph2_review_packet.py"
-        ]
-      }
-    },
-    {
       "path": "close_youtube_notion_task_checkboxes.py",
       "classification": "test_supported_manual",
       "references": {
@@ -2016,15 +1299,15 @@
         "source": [
           "build_glossary_runtime.py",
           "collect_venue_sites.py",
-          "export_public_venues.py",
-          "extract_venues.py",
           "refresh_youtube_voices.py",
           "review_x_candidate_posts.py",
           "scripts/compare_x_whitelist_voices.py",
           "scripts/manual/rank_x_bonodori_accounts.py",
           "sync_venue_master.py",
           "sync_x_account_scores.py",
-          "sync_x_promoted_members.py"
+          "sync_x_promoted_members.py",
+          "venues/export_public_venues.py",
+          "venues/extract_venues.py"
         ],
         "test": [
           "tests/test_build_root_python_inventory.py",
@@ -2054,25 +1337,6 @@
       }
     },
     {
-      "path": "collect_ops_metrics.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "review_console/data.py",
-          "run_daily_youtube_backfill.py"
-        ],
-        "test": [
-          "tests/test_collect_ops_metrics.py"
-        ],
-        "docs": [
-          "docs/admin-console-design.md"
-        ],
-        "data": [],
-        "legacy": []
-      }
-    },
-    {
       "path": "collect_venue_sites.py",
       "classification": "workflow_entrypoint",
       "references": {
@@ -2081,22 +1345,6 @@
         ],
         "source": [],
         "test": [],
-        "docs": [],
-        "data": [],
-        "legacy": []
-      }
-    },
-    {
-      "path": "compare_event_state_axes.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "run_event_state_axes_migration.py"
-        ],
-        "test": [
-          "tests/test_compare_event_state_axes.py"
-        ],
         "docs": [],
         "data": [],
         "legacy": []
@@ -2120,25 +1368,6 @@
           "data/notion_snapshot_master_drift.json",
           "data/notion_snapshot_master_drift_decisions.json"
         ],
-        "legacy": []
-      }
-    },
-    {
-      "path": "compare_public_projection_sources.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "scripts/run_public_projection_readiness.py"
-        ],
-        "test": [
-          "tests/test_compare_public_projection_sources.py"
-        ],
-        "docs": [
-          "docs/operations-simplification-plan.md",
-          "docs/public-json-rdb-projection-migration-plan.md"
-        ],
-        "data": [],
         "legacy": []
       }
     },
@@ -2195,28 +1424,6 @@
         "docs": [],
         "data": [],
         "legacy": []
-      }
-    },
-    {
-      "path": "discover_youtube_channels.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "apply_youtube_year_backfill_review_decisions.py",
-          "harvest_youtube_year_backfill.py"
-        ],
-        "test": [
-          "tests/test_discover_youtube_channels.py"
-        ],
-        "docs": [],
-        "data": [
-          "data/youtube_channel_candidates.json",
-          "data/youtube_event_candidates.json"
-        ],
-        "legacy": [
-          "legacy/notion-notes/append_youtube_channel_strategy_note_to_notion.py"
-        ]
       }
     },
     {
@@ -2300,70 +1507,6 @@
       }
     },
     {
-      "path": "event_audit.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "sync_gcal.py"
-        ],
-        "test": [
-          "tests/test_event_audit.py",
-          "tests/test_sync_gcal.py"
-        ],
-        "docs": [
-          "docs/work-logs/2026-06-07-notion-safety-batch.md"
-        ],
-        "data": [],
-        "legacy": [
-          "legacy/notion-notes/append_youtube_2025_koto_decision_note.py"
-        ]
-      }
-    },
-    {
-      "path": "event_evidence.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "build_retrospective_harvest.py",
-          "collect.py",
-          "song_occurrences.py"
-        ],
-        "test": [
-          "tests/test_event_evidence.py"
-        ],
-        "docs": [],
-        "data": [],
-        "legacy": [
-          "legacy/build-reports/build_retrospective_occurrences.py",
-          "legacy/build-reports/build_retrospective_venue_song_associations.py",
-          "legacy/retrospective_tools/audit_retrospective_event_apply_plan.py"
-        ]
-      }
-    },
-    {
-      "path": "event_report_helpers.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "apply_change_requests.py",
-          "build_public_historical_reference_change_requests.py",
-          "firsthand_report_helpers.py",
-          "official_notice_report_helpers.py"
-        ],
-        "test": [
-          "tests/test_event_report_helpers.py"
-        ],
-        "docs": [
-          "docs/event-state-axes-migration-plan.md"
-        ],
-        "data": [],
-        "legacy": []
-      }
-    },
-    {
       "path": "event_series_normalization.py",
       "classification": "source_dependency",
       "references": {
@@ -2371,14 +1514,14 @@
         "source": [
           "apply_youtube_year_backfill_review_decisions.py",
           "build_event_occurrence_observations.py",
-          "build_master_rdb.py",
           "build_youtube_year_backfill_queue.py",
           "compare_notion_snapshot_to_master.py",
-          "compare_public_projection_sources.py",
           "export_public_events.py",
-          "harvest_youtube_year_backfill.py",
+          "public_json_postprocessors/compare_public_projection_sources.py",
+          "rdb_builders/build_master_rdb.py",
           "scripts/manual/audit_hidden_historical_public_candidates.py",
-          "song_occurrences.py"
+          "song_occurrences.py",
+          "youtube_backfill/harvest_youtube_year_backfill.py"
         ],
         "test": [],
         "docs": [],
@@ -2393,13 +1536,13 @@
         "workflow": [],
         "source": [
           "apply_predicted_occurrence_source_rechecks.py",
-          "apply_public_display_tiers.py",
           "apply_reviewed_official_wait_events.py",
           "apply_reviewed_shinagawa_date_fills.py",
-          "build_master_rdb.py",
-          "compare_event_state_axes.py",
-          "event_report_helpers.py",
-          "event_state_axes_migration.py"
+          "event_state_axes_migration.py",
+          "public_json_postprocessors/apply_public_display_tiers.py",
+          "public_json_postprocessors/compare_event_state_axes.py",
+          "rdb_builders/build_master_rdb.py",
+          "report_apply/event_report_helpers.py"
         ],
         "test": [
           "tests/test_event_state_axes.py"
@@ -2461,15 +1604,15 @@
           ".github/workflows/weekly_harvest.yml"
         ],
         "source": [
-          "apply_change_requests.py",
-          "apply_firsthand_field_report.py",
-          "apply_official_notice_report.py",
-          "apply_public_date_predictions.py",
           "apply_public_event_name_cleanup.py",
-          "apply_public_historical_references.py",
           "apply_public_official_source_urls.py",
-          "apply_public_season_hints.py",
-          "review_inbox_production_wiring.py",
+          "public_json_postprocessors/apply_public_date_predictions.py",
+          "public_json_postprocessors/apply_public_historical_references.py",
+          "public_json_postprocessors/apply_public_season_hints.py",
+          "report_apply/apply_change_requests.py",
+          "report_apply/apply_firsthand_field_report.py",
+          "report_apply/apply_official_notice_report.py",
+          "review_inbox_adapters/production_wiring.py",
           "run_daily_youtube_backfill.py",
           "run_event_state_axes_migration.py",
           "scripts/compare_public_export_postprocessors.py",
@@ -2537,27 +1680,6 @@
       }
     },
     {
-      "path": "export_public_venues.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "export_public_events.py",
-          "scripts/manual/geocode_venues.py"
-        ],
-        "test": [],
-        "docs": [
-          "docs/build-export-report-operations.md",
-          "docs/master-rdb-migration-ph0-design.md"
-        ],
-        "data": [],
-        "legacy": [
-          "legacy/notion-notes/append_youtube_2025_koto_decision_note.py",
-          "legacy/notion_writes/fill_public_intros.py"
-        ]
-      }
-    },
-    {
       "path": "export_rare_signal_backcheck_reviews.py",
       "classification": "workflow_entrypoint",
       "references": {
@@ -2576,44 +1698,6 @@
       }
     },
     {
-      "path": "export_rdb_apply_plans.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "build_all_rdb.py"
-        ],
-        "test": [
-          "tests/test_export_rdb_apply_plans.py"
-        ],
-        "docs": [],
-        "data": [
-          "data/rdb_apply_plan_summary.json",
-          "data/rdb_event_apply_plan.json",
-          "data/rdb_song_review_source.json"
-        ],
-        "legacy": []
-      }
-    },
-    {
-      "path": "export_rdb_review_report.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "build_all_rdb.py"
-        ],
-        "test": [],
-        "docs": [
-          "docs/build-export-report-operations.md"
-        ],
-        "data": [
-          "data/rdb_review_queue.json"
-        ],
-        "legacy": []
-      }
-    },
-    {
       "path": "export_youtube_2025_date_backfill_plan.py",
       "classification": "test_supported_manual",
       "references": {
@@ -2627,26 +1711,6 @@
           "data/youtube_2025_date_backfill_plan.json"
         ],
         "legacy": []
-      }
-    },
-    {
-      "path": "export_youtube_2025_manual_confirmation_queue.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "apply_youtube_2025_koto_decisions.py"
-        ],
-        "test": [
-          "tests/test_export_youtube_2025_manual_confirmation_queue.py"
-        ],
-        "docs": [],
-        "data": [
-          "data/youtube_2025_manual_confirmation_queue.json"
-        ],
-        "legacy": [
-          "legacy/notion-notes/append_youtube_2025_koto_decision_note.py"
-        ]
       }
     },
     {
@@ -2682,47 +1746,6 @@
       }
     },
     {
-      "path": "extract_venues.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "export_public_venues.py"
-        ],
-        "test": [],
-        "docs": [],
-        "data": [],
-        "legacy": []
-      }
-    },
-    {
-      "path": "extract_youtube_setlists.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "apply_youtube_year_backfill_review_decisions.py",
-          "backfill_youtube_descriptions.py",
-          "build_evidence_rdb.py",
-          "build_youtube_active_video_review.py",
-          "build_youtube_channels.py",
-          "build_youtube_rdb.py",
-          "discover_youtube_channels.py",
-          "fetch_youtube_2025_backfill.py",
-          "harvest_youtube_year_backfill.py"
-        ],
-        "test": [
-          "tests/test_extract_youtube_setlists.py"
-        ],
-        "docs": [],
-        "data": [
-          "data/youtube_setlist_evidence_dry_run_2026-06-19.md",
-          "data/youtube_setlist_occurrences.json"
-        ],
-        "legacy": []
-      }
-    },
-    {
       "path": "fetch_youtube_2025_backfill.py",
       "classification": "test_supported_manual",
       "references": {
@@ -2737,26 +1760,6 @@
           "data/youtube_2025_backfill_fetch_report.json"
         ],
         "legacy": []
-      }
-    },
-    {
-      "path": "firsthand_report_helpers.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "apply_firsthand_field_report.py",
-          "event_report_helpers.py",
-          "official_notice_report_helpers.py"
-        ],
-        "test": [
-          "tests/test_firsthand_report_helpers.py"
-        ],
-        "docs": [],
-        "data": [],
-        "legacy": [
-          "legacy/apply/apply_kyobashi5_nouryou_map_2026.py"
-        ]
       }
     },
     {
@@ -2782,49 +1785,6 @@
       }
     },
     {
-      "path": "guard_public_events_sync.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "scripts/publish_public_data_flow.py"
-        ],
-        "test": [
-          "tests/test_guard_public_events_sync.py",
-          "tests/test_publish_public_data_flow.py"
-        ],
-        "docs": [
-          "docs/operations-simplification-plan.md",
-          "docs/public-event-publication-flow.md",
-          "docs/public-json-rdb-projection-migration-plan.md"
-        ],
-        "data": [
-          "data/master_rdb_next_phase_preflight.json",
-          "data/master_rdb_next_phase_preflight.md",
-          "data/oto2_review_after_rebuild.md",
-          "data/oto2_reviewer_codex_result.md",
-          "data/oto_impl_handoff.md",
-          "data/ph2_ebara_fifth_public_preview_guard.json",
-          "data/public_events_sync_guard.json",
-          "data/public_events_sync_guard_post_gujo_merge.json",
-          "data/public_events_sync_guard_post_historical_refs.json",
-          "data/public_events_sync_guard_post_missing_venue.json",
-          "data/public_events_sync_guard_post_p0_historical_refs.json",
-          "data/public_events_sync_guard_post_rdb_state_queue.json",
-          "data/public_events_sync_guard_post_review.json",
-          "data/public_events_sync_guard_post_shinagawa_date_fills.json",
-          "data/public_events_sync_guard_post_source_urls.json",
-          "data/public_events_sync_guard_post_venue_fixes.json",
-          "data/public_json_diff_review_20260629.md",
-          "data/worktree_cleanup_inventory_20260629.md"
-        ],
-        "legacy": [
-          "legacy/build-reports/build_ph2_review_packet.py",
-          "legacy/notion-notes/append_public_event_publication_flow_to_notion.py"
-        ]
-      }
-    },
-    {
       "path": "guard_site_public_event_additions.py",
       "classification": "test_supported_manual",
       "references": {
@@ -2838,25 +1798,6 @@
         ],
         "data": [
           "data/site_public_event_additions_guard.json"
-        ],
-        "legacy": []
-      }
-    },
-    {
-      "path": "harvest_youtube_year_backfill.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "run_daily_youtube_backfill.py"
-        ],
-        "test": [
-          "tests/test_harvest_youtube_year_backfill.py"
-        ],
-        "docs": [],
-        "data": [
-          "data/youtube_next_session_handoff.md",
-          "data/youtube_year_backfill_candidates.json"
         ],
         "legacy": []
       }
@@ -2883,10 +1824,6 @@
       "references": {
         "workflow": [],
         "source": [
-          "add_current_work_to_first_look_notion.py",
-          "apply_change_requests.py",
-          "apply_firsthand_field_report.py",
-          "apply_official_notice_report.py",
           "apply_ph2_shinagawa_second_venue_review.py",
           "apply_public_event_name_cleanup.py",
           "apply_public_official_source_urls.py",
@@ -2895,13 +1832,17 @@
           "apply_weekly_song_final_corrections.py",
           "apply_weekly_song_review_decisions.py",
           "apply_youtube_year_backfill_review_decisions.py",
-          "build_historical_promotion_candidates.py",
-          "build_registered_event_investigation_queue.py",
           "close_youtube_notion_task_checkboxes.py",
+          "collection_support/add_current_work_to_first_look_notion.py",
           "create_current_location_notion.py",
           "create_current_work_index_notion.py",
+          "promotion_candidates/build_historical_promotion_candidates.py",
+          "promotion_candidates/build_registered_event_investigation_queue.py",
           "register_song_master_initial.py",
           "rename_current_work_first_look_link_notion.py",
+          "report_apply/apply_change_requests.py",
+          "report_apply/apply_firsthand_field_report.py",
+          "report_apply/apply_official_notice_report.py",
           "sync_x_account_scores.py",
           "update_youtube_followup_progress.py",
           "update_youtube_notion_progress.py"
@@ -2966,11 +1907,8 @@
       "references": {
         "workflow": [],
         "source": [
-          "apply_change_requests.py",
-          "apply_firsthand_field_report.py",
           "apply_notion_drift_public_intro.py",
           "apply_notion_drift_source_url_resolutions.py",
-          "apply_official_notice_report.py",
           "apply_ph2_shinagawa_second_venue_review.py",
           "apply_pre_cutover_p0_historical_references.py",
           "apply_predicted_occurrence_source_rechecks.py",
@@ -2982,29 +1920,32 @@
           "apply_reviewed_venue_field_fixes.py",
           "apply_series_source_url_inheritance.py",
           "audit_master_rdb.py",
-          "build_historical_promotion_candidates.py",
           "build_historical_reference_shadow_input.py",
-          "build_master_rdb.py",
-          "build_observed_promotion_candidates.py",
           "build_predicted_occurrence_research_queue.py",
-          "build_public_historical_reference_change_requests.py",
-          "build_registered_event_investigation_queue.py",
           "build_x_news_digest_for_oto.py",
           "compare_notion_snapshot_to_master.py",
-          "compare_public_projection_sources.py",
           "dry_run_ph2_event_occurrence_apply.py",
-          "event_report_helpers.py",
           "event_state_axes_migration.py",
           "export_master_rdb_song_occurrences.py",
           "export_public_events.py",
-          "firsthand_report_helpers.py",
           "master_db_s3_artifact.py",
+          "promotion_candidates/build_historical_promotion_candidates.py",
+          "promotion_candidates/build_observed_promotion_candidates.py",
+          "promotion_candidates/build_registered_event_investigation_queue.py",
+          "public_export_support/build_public_historical_reference_change_requests.py",
+          "public_json_postprocessors/compare_public_projection_sources.py",
+          "public_json_postprocessors/review_missing_occurrence_venues.py",
+          "rdb_builders/build_master_rdb.py",
+          "report_apply/apply_change_requests.py",
+          "report_apply/apply_firsthand_field_report.py",
+          "report_apply/apply_official_notice_report.py",
+          "report_apply/event_report_helpers.py",
+          "report_apply/firsthand_report_helpers.py",
           "review_historical_promotion_candidates.py",
           "review_inbox.py",
-          "review_inbox_decision_writer.py",
+          "review_inbox_adapters/decision_writer.py",
+          "review_inbox_adapters/source_writer.py",
           "review_inbox_migration_runner.py",
-          "review_inbox_source_writer.py",
-          "review_missing_occurrence_venues.py",
           "review_missing_source_urls.py",
           "review_predicted_occurrence_dates.py",
           "run_event_state_axes_migration.py",
@@ -3093,10 +2034,10 @@
           ".github/workflows/youtube_daily_backfill.yml"
         ],
         "source": [
-          "apply_firsthand_field_report.py",
-          "apply_official_notice_report.py",
           "master_db.py",
-          "review_inbox_production_wiring.py"
+          "report_apply/apply_firsthand_field_report.py",
+          "report_apply/apply_official_notice_report.py",
+          "review_inbox_adapters/production_wiring.py"
         ],
         "test": [
           "tests/test_collect_event_state_axes_wiring.py",
@@ -3142,20 +2083,6 @@
       }
     },
     {
-      "path": "merge_glossary_v2_oto_reports.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "build_glossary_review_ui.py"
-        ],
-        "test": [],
-        "docs": [],
-        "data": [],
-        "legacy": []
-      }
-    },
-    {
       "path": "migrate_notion_queue_to_dynamodb.py",
       "classification": "workflow_entrypoint",
       "references": {
@@ -3180,9 +2107,9 @@
         "workflow": [],
         "source": [
           "apply_retrospective_ready_venue_events.py",
+          "collection_support/event_audit.py",
           "dry_run_youtube_active_existing_event_updates.py",
           "dry_run_youtube_existing_event_updates.py",
-          "event_audit.py",
           "scripts/manual/inspect_notion_page.py",
           "sync_gcal.py"
         ],
@@ -3226,24 +2153,23 @@
       "references": {
         "workflow": [],
         "source": [
-          "add_current_work_to_first_look_notion.py",
           "apply_retrospective_ready_venue_events.py",
           "apply_weekly_harvest_human13_decisions.py",
           "apply_weekly_song_final_corrections.py",
           "apply_weekly_song_review_decisions.py",
           "build_glossary_runtime.py",
-          "build_notion_rdb.py",
           "close_youtube_notion_task_checkboxes.py",
+          "collection_support/add_current_work_to_first_look_notion.py",
+          "collection_support/event_audit.py",
           "create_current_location_notion.py",
           "create_current_work_index_notion.py",
           "dry_run_youtube_active_existing_event_updates.py",
           "dry_run_youtube_existing_event_updates.py",
-          "event_audit.py",
           "export_public_events.py",
           "export_public_glossary.py",
-          "export_public_venues.py",
           "inspect_notion_blocks.py",
           "notion_api.py",
+          "rdb_builders/build_notion_rdb.py",
           "register_song_master_initial.py",
           "rename_current_work_first_look_link_notion.py",
           "scripts/manual/fill_glossary_readings.py",
@@ -3254,7 +2180,8 @@
           "sync_weekly_costs.py",
           "triage_weekly_song_candidates.py",
           "update_youtube_followup_progress.py",
-          "update_youtube_notion_progress.py"
+          "update_youtube_notion_progress.py",
+          "venues/export_public_venues.py"
         ],
         "test": [
           "tests/test_sync_gcal.py"
@@ -3354,23 +2281,6 @@
       }
     },
     {
-      "path": "official_notice_report_helpers.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "apply_official_notice_report.py",
-          "event_report_helpers.py"
-        ],
-        "test": [
-          "tests/test_official_notice_report_helpers.py"
-        ],
-        "docs": [],
-        "data": [],
-        "legacy": []
-      }
-    },
-    {
       "path": "plan_retrospective_event_review.py",
       "classification": "test_supported_manual",
       "references": {
@@ -3383,24 +2293,6 @@
         "data": [
           "data/retrospective_event_apply_plan.json",
           "data/retrospective_event_apply_plan_suggested.json"
-        ],
-        "legacy": []
-      }
-    },
-    {
-      "path": "plan_youtube_event_updates.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "build_youtube_active_video_review.py"
-        ],
-        "test": [
-          "tests/test_plan_youtube_event_updates.py"
-        ],
-        "docs": [],
-        "data": [
-          "data/youtube_event_update_plan.json"
         ],
         "legacy": []
       }
@@ -3428,25 +2320,6 @@
           "data/weekly_harvest_review_candidates.json",
           "data/weekly_harvest_summary.json"
         ],
-        "legacy": []
-      }
-    },
-    {
-      "path": "proactive_search.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "apply_official_source_review_decisions.py",
-          "check_official_sources.py",
-          "collect.py",
-          "sync_venue_master.py"
-        ],
-        "test": [
-          "tests/test_proactive_search.py"
-        ],
-        "docs": [],
-        "data": [],
         "legacy": []
       }
     },
@@ -3483,44 +2356,6 @@
           "data/youtube_channel_registry.json"
         ],
         "legacy": []
-      }
-    },
-    {
-      "path": "queue_store.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "build_retrospective_harvest.py",
-          "collect.py",
-          "migrate_notion_queue_to_dynamodb.py"
-        ],
-        "test": [
-          "tests/test_queue_store.py"
-        ],
-        "docs": [
-          "docs/work-logs/2026-06-07-dynamodb-migration.md"
-        ],
-        "data": [],
-        "legacy": []
-      }
-    },
-    {
-      "path": "rdb_apply_support.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "apply_change_requests.py",
-          "apply_firsthand_field_report.py",
-          "apply_official_notice_report.py"
-        ],
-        "test": [],
-        "docs": [],
-        "data": [],
-        "legacy": [
-          "legacy/apply/apply_kyobashi5_nouryou_map_2026.py"
-        ]
       }
     },
     {
@@ -3629,11 +2464,11 @@
           ".github/workflows/collect.yml"
         ],
         "source": [
-          "review_inbox_decision_writer.py",
+          "review_inbox_adapters/decision_writer.py",
+          "review_inbox_adapters/parity.py",
+          "review_inbox_adapters/source_adapter.py",
+          "review_inbox_adapters/source_writer.py",
           "review_inbox_migration_runner.py",
-          "review_inbox_parity.py",
-          "review_inbox_source_adapter.py",
-          "review_inbox_source_writer.py",
           "run_review_console_cutover.py"
         ],
         "test": [
@@ -3664,80 +2499,6 @@
       }
     },
     {
-      "path": "review_inbox_decision_stage.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "review_console/data.py",
-          "review_inbox_decision_writer.py"
-        ],
-        "test": [
-          "tests/test_review_inbox_decision_stage.py",
-          "tests/test_review_inbox_decision_writer.py",
-          "tests/test_run_review_inbox_rare_signal_decision_canary.py"
-        ],
-        "docs": [
-          "docs/review-inbox-b1-dual-write-plan.md",
-          "docs/review-inbox-b2-3-rare-signal-canary-runbook.md"
-        ],
-        "data": [],
-        "legacy": []
-      }
-    },
-    {
-      "path": "review_inbox_decision_writer.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "run_review_inbox_rare_signal_decision_canary.py"
-        ],
-        "test": [
-          "tests/test_review_inbox_decision_writer.py"
-        ],
-        "docs": [
-          "docs/review-inbox-b2-3-rare-signal-canary-runbook.md"
-        ],
-        "data": [],
-        "legacy": []
-      }
-    },
-    {
-      "path": "review_inbox_historical_reference_adapter.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "run_review_inbox_historical_shadow.py"
-        ],
-        "test": [
-          "tests/test_review_inbox_historical_reference_adapter.py"
-        ],
-        "docs": [],
-        "data": [],
-        "legacy": []
-      }
-    },
-    {
-      "path": "review_inbox_low_priority_adapters.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "run_review_inbox_low_priority_scheduled.py"
-        ],
-        "test": [
-          "tests/test_review_inbox_low_priority_adapters.py"
-        ],
-        "docs": [
-          "docs/review-inbox-e-cleanup-inventory.json"
-        ],
-        "data": [],
-        "legacy": []
-      }
-    },
-    {
       "path": "review_inbox_migration_runner.py",
       "classification": "test_supported_manual",
       "references": {
@@ -3750,450 +2511,6 @@
           "docs/review-inbox-v2-migration-runbook.md"
         ],
         "data": [],
-        "legacy": []
-      }
-    },
-    {
-      "path": "review_inbox_missing_source_url_adapter.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "run_review_inbox_missing_shadow.py"
-        ],
-        "test": [
-          "tests/test_review_inbox_missing_adapters.py"
-        ],
-        "docs": [
-          "docs/review-inbox-e-cleanup-inventory.json"
-        ],
-        "data": [],
-        "legacy": []
-      }
-    },
-    {
-      "path": "review_inbox_missing_venue_adapter.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "run_review_inbox_missing_shadow.py"
-        ],
-        "test": [
-          "tests/test_review_inbox_missing_adapters.py"
-        ],
-        "docs": [
-          "docs/review-inbox-e-cleanup-inventory.json"
-        ],
-        "data": [],
-        "legacy": []
-      }
-    },
-    {
-      "path": "review_inbox_official_source_adapter.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "run_review_inbox_official_bulk_shadow.py"
-        ],
-        "test": [
-          "tests/test_review_inbox_official_source_adapter.py"
-        ],
-        "docs": [
-          "docs/review-inbox-e-cleanup-inventory.json",
-          "docs/review-inbox-official-source-adapter.md"
-        ],
-        "data": [],
-        "legacy": []
-      }
-    },
-    {
-      "path": "review_inbox_parity.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "review_inbox_source_writer.py",
-          "review_inbox_youtube_aggregate.py",
-          "run_review_console_cutover.py",
-          "run_review_inbox_historical_shadow.py",
-          "run_review_inbox_low_priority_scheduled.py",
-          "run_review_inbox_missing_shadow.py",
-          "run_review_inbox_official_bulk_shadow.py",
-          "run_review_inbox_predicted_shadow.py",
-          "run_review_inbox_rare_signal_canary.py",
-          "run_review_inbox_rare_signal_scheduled.py",
-          "run_review_inbox_registered_full_shadow.py",
-          "run_review_inbox_shirokane_canary.py",
-          "run_review_inbox_youtube_active_scheduled.py",
-          "run_review_inbox_youtube_scheduled.py"
-        ],
-        "test": [
-          "tests/test_review_inbox_parity.py",
-          "tests/test_review_inbox_rare_signal_adapter.py",
-          "tests/test_review_inbox_registered_event_investigation_adapter.py",
-          "tests/test_review_inbox_youtube_adapter.py",
-          "tests/test_review_inbox_youtube_user_confirmation_adapter.py",
-          "tests/test_review_inbox_youtube_year_backfill_adapter.py"
-        ],
-        "docs": [
-          "docs/review-inbox-b1-cutover-plan.md",
-          "docs/review-inbox-b1-dual-write-plan.md",
-          "docs/review-inbox-parity-operations.md"
-        ],
-        "data": [],
-        "legacy": []
-      }
-    },
-    {
-      "path": "review_inbox_predicted_occurrence_date_review_adapter.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "run_review_inbox_predicted_shadow.py"
-        ],
-        "test": [
-          "tests/test_review_inbox_predicted_adapters.py"
-        ],
-        "docs": [
-          "docs/review-inbox-e-cleanup-inventory.json"
-        ],
-        "data": [],
-        "legacy": []
-      }
-    },
-    {
-      "path": "review_inbox_predicted_occurrence_research_adapter.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "run_review_inbox_predicted_shadow.py"
-        ],
-        "test": [
-          "tests/test_review_inbox_predicted_adapters.py"
-        ],
-        "docs": [
-          "docs/review-inbox-e-cleanup-inventory.json"
-        ],
-        "data": [],
-        "legacy": []
-      }
-    },
-    {
-      "path": "review_inbox_production_wiring.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "run_review_console_cutover.py",
-          "run_review_inbox_historical_shadow.py",
-          "run_review_inbox_low_priority_scheduled.py",
-          "run_review_inbox_missing_shadow.py",
-          "run_review_inbox_official_bulk_shadow.py",
-          "run_review_inbox_predicted_shadow.py",
-          "run_review_inbox_rare_signal_canary.py",
-          "run_review_inbox_rare_signal_decision_canary.py",
-          "run_review_inbox_rare_signal_scheduled.py",
-          "run_review_inbox_registered_full_shadow.py",
-          "run_review_inbox_shirokane_canary.py",
-          "run_review_inbox_youtube_active_scheduled.py",
-          "run_review_inbox_youtube_scheduled.py"
-        ],
-        "test": [
-          "tests/test_review_inbox_production_wiring.py"
-        ],
-        "docs": [
-          "docs/review-inbox-b1-3-canary-runbook.md"
-        ],
-        "data": [],
-        "legacy": []
-      }
-    },
-    {
-      "path": "review_inbox_rare_signal_adapter.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "run_review_inbox_rare_signal_canary.py",
-          "run_review_inbox_rare_signal_scheduled.py"
-        ],
-        "test": [
-          "tests/test_review_inbox_rare_signal_adapter.py"
-        ],
-        "docs": [
-          "docs/review-inbox-e-cleanup-inventory.json"
-        ],
-        "data": [],
-        "legacy": []
-      }
-    },
-    {
-      "path": "review_inbox_registered_event_investigation_adapter.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "run_review_inbox_registered_full_shadow.py",
-          "run_review_inbox_shirokane_canary.py"
-        ],
-        "test": [
-          "tests/test_review_inbox_registered_event_investigation_adapter.py",
-          "tests/test_run_review_inbox_registered_full_shadow.py"
-        ],
-        "docs": [
-          "docs/review-inbox-e-cleanup-inventory.json",
-          "docs/review-inbox-registered-event-investigation-adapter.md"
-        ],
-        "data": [],
-        "legacy": []
-      }
-    },
-    {
-      "path": "review_inbox_shadow_execution_gate.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "run_review_console_cutover.py",
-          "run_review_inbox_historical_shadow.py",
-          "run_review_inbox_low_priority_scheduled.py",
-          "run_review_inbox_missing_shadow.py",
-          "run_review_inbox_official_bulk_shadow.py",
-          "run_review_inbox_predicted_shadow.py",
-          "run_review_inbox_rare_signal_canary.py",
-          "run_review_inbox_rare_signal_decision_canary.py",
-          "run_review_inbox_rare_signal_scheduled.py",
-          "run_review_inbox_registered_full_shadow.py",
-          "run_review_inbox_shirokane_canary.py",
-          "run_review_inbox_youtube_active_scheduled.py",
-          "run_review_inbox_youtube_scheduled.py"
-        ],
-        "test": [],
-        "docs": [],
-        "data": [],
-        "legacy": []
-      }
-    },
-    {
-      "path": "review_inbox_source_adapter.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "build_historical_reference_shadow_input.py",
-          "review_inbox_historical_reference_adapter.py",
-          "review_inbox_low_priority_adapters.py",
-          "review_inbox_missing_source_url_adapter.py",
-          "review_inbox_missing_venue_adapter.py",
-          "review_inbox_official_source_adapter.py",
-          "review_inbox_parity.py",
-          "review_inbox_predicted_occurrence_date_review_adapter.py",
-          "review_inbox_predicted_occurrence_research_adapter.py",
-          "review_inbox_rare_signal_adapter.py",
-          "review_inbox_registered_event_investigation_adapter.py",
-          "review_inbox_youtube_adapter.py",
-          "review_inbox_youtube_aggregate.py",
-          "review_inbox_youtube_user_confirmation_adapter.py",
-          "review_inbox_youtube_year_backfill_adapter.py",
-          "run_review_console_cutover.py",
-          "run_review_inbox_historical_shadow.py",
-          "run_review_inbox_low_priority_scheduled.py",
-          "run_review_inbox_missing_shadow.py",
-          "run_review_inbox_official_bulk_shadow.py",
-          "run_review_inbox_predicted_shadow.py",
-          "run_review_inbox_rare_signal_canary.py",
-          "run_review_inbox_rare_signal_scheduled.py",
-          "run_review_inbox_registered_full_shadow.py",
-          "run_review_inbox_shirokane_canary.py",
-          "run_review_inbox_youtube_active_scheduled.py",
-          "run_review_inbox_youtube_scheduled.py"
-        ],
-        "test": [
-          "tests/test_review_inbox_historical_reference_adapter.py",
-          "tests/test_review_inbox_low_priority_adapters.py",
-          "tests/test_review_inbox_missing_adapters.py",
-          "tests/test_review_inbox_official_source_adapter.py",
-          "tests/test_review_inbox_predicted_adapters.py",
-          "tests/test_review_inbox_rare_signal_adapter.py",
-          "tests/test_review_inbox_registered_event_investigation_adapter.py",
-          "tests/test_review_inbox_source_adapter.py",
-          "tests/test_review_inbox_youtube_adapter.py",
-          "tests/test_review_inbox_youtube_aggregate.py",
-          "tests/test_review_inbox_youtube_user_confirmation_adapter.py",
-          "tests/test_review_inbox_youtube_year_backfill_adapter.py",
-          "tests/test_run_review_console_cutover.py",
-          "tests/test_run_review_inbox_historical_shadow.py"
-        ],
-        "docs": [
-          "docs/review-inbox-source-adapter-contract.md"
-        ],
-        "data": [],
-        "legacy": []
-      }
-    },
-    {
-      "path": "review_inbox_source_writer.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "review_inbox_decision_writer.py",
-          "review_inbox_production_wiring.py",
-          "review_inbox_shadow_execution_gate.py",
-          "run_review_console_cutover.py",
-          "run_review_inbox_historical_shadow.py",
-          "run_review_inbox_low_priority_scheduled.py",
-          "run_review_inbox_missing_shadow.py",
-          "run_review_inbox_official_bulk_shadow.py",
-          "run_review_inbox_predicted_shadow.py",
-          "run_review_inbox_rare_signal_canary.py",
-          "run_review_inbox_rare_signal_decision_canary.py",
-          "run_review_inbox_rare_signal_scheduled.py",
-          "run_review_inbox_registered_full_shadow.py",
-          "run_review_inbox_shirokane_canary.py",
-          "run_review_inbox_youtube_active_scheduled.py",
-          "run_review_inbox_youtube_scheduled.py"
-        ],
-        "test": [
-          "tests/test_review_inbox_decision_writer.py",
-          "tests/test_review_inbox_production_wiring.py",
-          "tests/test_review_inbox_source_writer.py",
-          "tests/test_run_review_console_cutover.py",
-          "tests/test_run_review_inbox_historical_shadow.py",
-          "tests/test_run_review_inbox_low_priority_scheduled.py",
-          "tests/test_run_review_inbox_missing_shadow.py",
-          "tests/test_run_review_inbox_official_bulk_shadow.py",
-          "tests/test_run_review_inbox_predicted_shadow.py",
-          "tests/test_run_review_inbox_rare_signal_canary.py",
-          "tests/test_run_review_inbox_rare_signal_decision_canary.py",
-          "tests/test_run_review_inbox_rare_signal_scheduled.py",
-          "tests/test_run_review_inbox_registered_full_shadow.py",
-          "tests/test_run_review_inbox_shirokane_canary.py",
-          "tests/test_run_review_inbox_youtube_active_scheduled.py",
-          "tests/test_run_review_inbox_youtube_scheduled.py"
-        ],
-        "docs": [
-          "docs/review-inbox-source-writer.md"
-        ],
-        "data": [],
-        "legacy": []
-      }
-    },
-    {
-      "path": "review_inbox_youtube_adapter.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "review_inbox_youtube_aggregate.py",
-          "review_inbox_youtube_user_confirmation_adapter.py",
-          "review_inbox_youtube_year_backfill_adapter.py",
-          "run_review_inbox_youtube_active_scheduled.py",
-          "run_review_inbox_youtube_scheduled.py"
-        ],
-        "test": [
-          "tests/test_review_inbox_youtube_adapter.py",
-          "tests/test_review_inbox_youtube_aggregate.py"
-        ],
-        "docs": [
-          "docs/review-inbox-e-cleanup-inventory.json"
-        ],
-        "data": [],
-        "legacy": []
-      }
-    },
-    {
-      "path": "review_inbox_youtube_aggregate.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "run_review_inbox_youtube_scheduled.py"
-        ],
-        "test": [
-          "tests/test_review_inbox_youtube_aggregate.py"
-        ],
-        "docs": [],
-        "data": [],
-        "legacy": []
-      }
-    },
-    {
-      "path": "review_inbox_youtube_user_confirmation_adapter.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "review_inbox_youtube_aggregate.py",
-          "run_review_inbox_youtube_scheduled.py"
-        ],
-        "test": [
-          "tests/test_review_inbox_youtube_aggregate.py",
-          "tests/test_review_inbox_youtube_user_confirmation_adapter.py"
-        ],
-        "docs": [
-          "docs/review-inbox-e-cleanup-inventory.json"
-        ],
-        "data": [],
-        "legacy": []
-      }
-    },
-    {
-      "path": "review_inbox_youtube_year_backfill_adapter.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "review_inbox_youtube_aggregate.py",
-          "run_review_inbox_youtube_scheduled.py"
-        ],
-        "test": [
-          "tests/test_review_inbox_youtube_aggregate.py",
-          "tests/test_review_inbox_youtube_year_backfill_adapter.py"
-        ],
-        "docs": [
-          "docs/review-inbox-e-cleanup-inventory.json"
-        ],
-        "data": [],
-        "legacy": []
-      }
-    },
-    {
-      "path": "review_missing_occurrence_venues.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "scripts/publish_public_data_flow.py"
-        ],
-        "test": [
-          "tests/test_publish_public_data_flow.py"
-        ],
-        "docs": [
-          "docs/operations-simplification-plan.md",
-          "docs/public-event-publication-flow.md"
-        ],
-        "data": [
-          "data/missing_occurrence_venue_review.json",
-          "data/missing_occurrence_venue_review_post_apply.json",
-          "data/missing_occurrence_venue_review_post_gujo_merge.json",
-          "data/missing_occurrence_venue_review_post_source_urls.json",
-          "data/missing_occurrence_venue_review_post_venue_fixes.json",
-          "data/ph2_cutover_readiness_post_gujo_merge.json",
-          "data/ph2_cutover_readiness_post_historical_refs.json",
-          "data/ph2_cutover_readiness_post_missing_venue.json",
-          "data/ph2_cutover_readiness_post_p0_historical_refs.json",
-          "data/ph2_cutover_readiness_post_rdb_state_queue.json",
-          "data/ph2_cutover_readiness_post_review.json",
-          "data/ph2_cutover_readiness_post_shinagawa_date_fills.json",
-          "data/ph2_cutover_readiness_post_shinagawa_date_fills_queue.json",
-          "data/ph2_cutover_readiness_post_source_urls.json",
-          "data/ph2_cutover_readiness_post_venue_fixes.json"
-        ],
         "legacy": []
       }
     },
@@ -4346,34 +2663,6 @@
         ],
         "data": [],
         "legacy": []
-      }
-    },
-    {
-      "path": "run_review_console.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "scripts/publish_public_data_flow.py"
-        ],
-        "test": [
-          "tests/test_publish_public_data_flow.py"
-        ],
-        "docs": [
-          "docs/admin-console-design.md",
-          "docs/manual-auto-operations-inventory.md",
-          "docs/operations-simplification-plan.md",
-          "docs/public-event-publication-flow.md",
-          "docs/review-console-operations.md",
-          "docs/review-inbox-b1-cutover-plan.md",
-          "docs/review-inbox-builder-wiring-plan.md"
-        ],
-        "data": [
-          "data/worktree_cleanup_inventory_20260629.md"
-        ],
-        "legacy": [
-          "legacy/notion-notes/append_review_console_operations_manual_to_notion.py"
-        ]
       }
     },
     {
@@ -4585,24 +2874,6 @@
       }
     },
     {
-      "path": "score_event_recurrence.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "export_public_events.py"
-        ],
-        "test": [
-          "tests/test_score_event_recurrence.py"
-        ],
-        "docs": [],
-        "data": [],
-        "legacy": [
-          "legacy/notion-notes/append_public_recurrence_scoring_note.py"
-        ]
-      }
-    },
-    {
       "path": "search_rare_signal_backcheck_sources.py",
       "classification": "test_supported_manual",
       "references": {
@@ -4646,8 +2917,8 @@
           "build_song_occurrences.py",
           "build_youtube_event_song_candidates.py",
           "export_master_rdb_song_occurrences.py",
-          "extract_youtube_setlists.py",
-          "run_daily_youtube_backfill.py"
+          "run_daily_youtube_backfill.py",
+          "youtube_channels/extract_youtube_setlists.py"
         ],
         "test": [
           "tests/test_song_occurrences.py"
@@ -4694,23 +2965,6 @@
         ],
         "data": [],
         "legacy": []
-      }
-    },
-    {
-      "path": "suppression_rules.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "bon_odori_songs.py",
-          "event_evidence.py"
-        ],
-        "test": [],
-        "docs": [],
-        "data": [],
-        "legacy": [
-          "legacy/build-reports/build_retrospective_occurrences.py"
-        ]
       }
     },
     {
@@ -4845,22 +3099,6 @@
       }
     },
     {
-      "path": "tokyo23_scope.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "build_official_source_review.py",
-          "build_rare_signal_backcheck_queue.py",
-          "review_missing_source_urls.py"
-        ],
-        "test": [],
-        "docs": [],
-        "data": [],
-        "legacy": []
-      }
-    },
-    {
       "path": "triage_weekly_song_candidates.py",
       "classification": "workflow_entrypoint",
       "references": {
@@ -4936,61 +3174,6 @@
         "source": [],
         "test": [
           "tests/test_manual_infra_workflows_policy.py"
-        ],
-        "docs": [],
-        "data": [],
-        "legacy": []
-      }
-    },
-    {
-      "path": "x_official_source_accounts.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "build_rare_signal_backcheck_queue.py",
-          "collect.py",
-          "export_rare_signal_backcheck_reviews.py",
-          "search_rare_signal_backcheck_sources.py",
-          "stage_rare_signal_backcheck_reviews.py",
-          "x_source_officiality.py"
-        ],
-        "test": [
-          "tests/test_x_official_source_accounts.py"
-        ],
-        "docs": [],
-        "data": [],
-        "legacy": []
-      }
-    },
-    {
-      "path": "x_source_officiality.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "build_official_social_source_review.py",
-          "build_x_news_digest_for_oto.py"
-        ],
-        "test": [
-          "tests/test_x_source_officiality.py"
-        ],
-        "docs": [],
-        "data": [],
-        "legacy": []
-      }
-    },
-    {
-      "path": "youtube_title_parts.py",
-      "classification": "source_dependency",
-      "references": {
-        "workflow": [],
-        "source": [
-          "build_youtube_active_video_review.py",
-          "review_console/data.py"
-        ],
-        "test": [
-          "tests/test_build_youtube_active_video_review.py"
         ],
         "docs": [],
         "data": [],
