@@ -11,7 +11,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-from event_series_normalization import series_event_name
+from event_series.normalization import series_event_name
 from export_public_events import clean_public_event_name
 from master_db import connect_existing
 
