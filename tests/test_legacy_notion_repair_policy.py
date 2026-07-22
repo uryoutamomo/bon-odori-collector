@@ -42,7 +42,7 @@ class LegacyNotionRepairPolicyTest(unittest.TestCase):
                 self.assertIn("LEGACY_NOTION_REPAIR_CONFIRMATION", script)
 
         active_dependencies = [
-            "register_song_master_initial.py",
+            "song_processing/song_master_registration.py",
             "apply_weekly_harvest_human13_decisions.py",
             "apply_weekly_song_review_decisions.py",
             "apply_weekly_song_final_corrections.py",
