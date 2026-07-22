@@ -1,6 +1,6 @@
 import unittest
 
-from build_youtube_active_video_review import (
+from youtube_channels.active_video_review import (
     DEFAULT_EXPORT_MAX_PER_CHANNEL,
     build_review,
     video_id_from_url,
