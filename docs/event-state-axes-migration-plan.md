@@ -84,7 +84,7 @@ Dの完了条件は次のすべて。
 
 ### D1 契約とshadow比較
 
-- `event_state_axes.py` に有限語彙、組み合わせ検証、旧公開フィールドへの写像を集約する。
+- `event_model/event_state_axes.py` に有限語彙、組み合わせ検証、旧公開フィールドへの写像を集約する。
 - 現行投影から2軸を作る `legacy_derived` と、RDBの2軸を読む `canonical` を同一入力で比較する。
 - 比較対象は件数、イベントidentity、カード分類、display tier、日付範囲、表示ラベル、並び順。
 
