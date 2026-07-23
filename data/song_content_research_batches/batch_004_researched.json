@@ -1,0 +1,39 @@
+{
+  "generated_by": "おと（Codex）",
+  "source_queue": "data/song_content_research_batches/batch_004_queue.json",
+  "rows": [
+    {
+      "term": "ドダレバチ",
+      "content_note": "青森県黒石市の盆踊り「黒石よされ」で扱われる津軽甚句系の曲目。黒石観光協会の資料では「津軽甚句（ドダレバチ）」として紹介され、黒石よされの流し踊りやおどりはだりの場面で使われます。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://kuroishi.or.jp/event/summer/kuroishiyosare",
+        "https://kuroishi.or.jp/event/summer/kuroishiyosare/kuroishiyosare_gogen",
+        "https://kuroishi.or.jp/event/summer/kuroishiyosare/kyosare_kashi_gakufu",
+        "https://www.youtube.com/watch?v=UVxIJ2YouyA"
+      ],
+      "research_memo": "黒石観光協会で黒石よされの日程、流し踊り・おどりはだり、由来、黒石よされ唄ページ内の「津軽甚句（ドダレバチ）」見出しを確認。YouTube根拠で黒石よされ会場での利用も確認。"
+    },
+    {
+      "term": "少年八木節",
+      "application_status": "superseded_by_canonical_term",
+      "content_note": "北関東の盆踊り唄「八木節」をもとにした、子どもや初参加者にも入りやすい八木節系の曲目として扱っています。八木節らしい軽快な拍子を生かし、会場では明るい民謡アレンジ枠として使われます。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E5%85%AB%E6%9C%A8%E7%AF%80",
+        "https://www.youtube.com/watch?v=FqQ31RJb1TE"
+      ],
+      "research_memo": "八木節が群馬・栃木にまたがる盆踊り唄であること、軽快な拍子と音頭としての性格を確認。個別曲の制作情報は未確認のため、八木節系の利用文脈に限定して記述。"
+    },
+    {
+      "term": "あわてんぼうのサンタクロース",
+      "content_note": "吉岡治作詞・小林亜星作曲のクリスマス童謡。鈴や太鼓の擬音が多く、明るく踊りやすい曲調のため、盆踊りでは季節をずらした遊び心のあるファミリー向け曲として使われます。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://www.uta-net.com/song/13961/",
+        "https://www.youtube.com/watch?v=QQw3agbKwFQ"
+      ],
+      "research_memo": "歌ネットで作詞・作曲・編曲情報とクリスマスソングであることを確認。YouTube根拠で赤坂冬おどり等での利用を確認。歌詞引用は避け、曲調と利用文脈だけに整理。"
+    }
+  ]
+}

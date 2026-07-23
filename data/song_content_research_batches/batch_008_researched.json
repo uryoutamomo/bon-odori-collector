@@ -1,0 +1,47 @@
+{
+  "generated_by": "おと（Codex）",
+  "source_queue": "data/song_content_research_queue.json",
+  "rows": [
+    {
+      "term": "いもがらぼくと",
+      "content_note": "宮崎市の新民謡。宮崎弁で宮崎の男性像を表す言葉を題名にし、市制30周年を機に公募された元歌から整えられました。盆踊りでは南九州らしい明るい地方民謡枠です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E3%81%84%E3%82%82%E3%81%8C%E3%82%89%E3%81%BC%E3%81%8F%E3%81%A8",
+        "https://www.youtube.com/watch?v=FCm8Kx38O3M"
+      ],
+      "research_memo": "曲ページで宮崎市の新民謡、1954年の宮崎市制30周年公募を発端とする経緯、初代鈴木正夫・野崎整子の歌唱での発表を確認。YouTube根拠で盆踊り利用を確認。"
+    },
+    {
+      "term": "相川音頭",
+      "content_note": "新潟県佐渡市相川地方に伝わる盆踊り唄。佐渡おけさと並ぶ佐渡の代表的な唄で、相川金山奉行の前で披露されたことから御前踊りとも呼ばれました。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E7%9B%B8%E5%B7%9D%E9%9F%B3%E9%A0%AD",
+        "https://www.youtube.com/watch?v=PVfRZ_lrZZo"
+      ],
+      "research_memo": "曲ページで佐渡市相川地方の盆踊り・盆踊り唄、佐渡おけさと並ぶ代表性、御前踊りの別称と歴史を確認。YouTube根拠で盆踊り利用を確認。"
+    },
+    {
+      "term": "大漁唄い込み",
+      "content_note": "宮城県民謡の斎太郎節を中心に知られる大漁唄。牡鹿半島沿岸部の漁労唄をもとに、後藤桃水がまとめて全国的に広まりました。盆踊りでは海の景気と祝祭感を出す民謡曲です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E6%96%8E%E5%A4%AA%E9%83%8E%E7%AF%80",
+        "https://www.youtube.com/watch?v=rzWCS5kT-JA"
+      ],
+      "research_memo": "斎太郎節ページで宮城県民謡、牡鹿半島沿岸部の大漁唄、後藤桃水が他の唄とともに『大漁唄い込み』としてまとめ全国的に有名になった経緯を確認。YouTube根拠で盆踊り利用を確認。"
+    },
+    {
+      "term": "おこさ節",
+      "content_note": "秋田民謡系の節として流通する曲。レコードや企画盤では三橋美智也の民謡録音、ザ・ドリフターズによる替え歌版なども確認できます。盆踊りでは軽快な民謡・歌謡民謡枠です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E4%B8%89%E6%A9%8B%E7%BE%8E%E6%99%BA%E4%B9%9F",
+        "https://ja.wikipedia.org/wiki/%E3%82%B6%E3%83%BB%E3%83%89%E3%83%AA%E3%83%95%E3%82%BF%E3%83%BC%E3%82%BA_%E3%83%92%E3%83%83%E3%83%88%E3%82%B3%E3%83%AC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3%E3%80%9C%E3%83%89%E3%83%AA%E3%83%95%E3%81%A0%E3%83%A7!%E3%81%AA%E3%81%8B%E3%81%AB%E3%81%97%E7%A4%BC%E3%81%A0%E3%83%A7!%E5%85%A8%E5%93%A1%E9%9B%86%E5%90%88%E3%80%9C",
+        "https://www.youtube.com/watch?v=FQ-j1WCzExw"
+      ],
+      "research_memo": "三橋美智也ページのディスコグラフィで『真室川音頭/おこさ節』を確認。ドリフターズ企画盤ページで『ドリフのおこさ節』が日本民謡（秋田）由来として収録されていることを確認。YouTube根拠で盆踊り利用を確認。"
+    }
+  ]
+}

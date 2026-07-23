@@ -1,0 +1,43 @@
+{
+  "generated_by": "おと（Codex）",
+  "source_queue": "data/song_content_research_batches/batch_002_queue.json",
+  "rows": [
+    {
+      "term": "かわいいだけじゃだめですか?",
+      "content_note": "CUTIE STREETが2024年に発表したJ-POP・アイドル曲。SNSで広まった手振りや自己肯定感のある明るい曲調が特徴で、盆踊りでは若い参加者にも届きやすい現代ダンス曲枠として使われます。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://asobisystem.com/talent/cutiestreet/",
+        "https://ja.wikipedia.org/wiki/CUTIE_STREET"
+      ],
+      "research_memo": "公式プロフィールでCUTIE STREETの所属・コンセプトを確認。日本語版Wikipediaで2024年リリース、SNSでの広がり、振付文脈を確認。"
+    },
+    {
+      "term": "お富さん",
+      "content_note": "春日八郎が1954年に発売した歌謡曲。歌舞伎『与話情浮名横櫛』の世界を下敷きに、軽快なリズムと替え歌のしやすさで大ヒットしました。盆踊りでは昭和歌謡のにぎやかな曲目として扱われます。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E3%81%8A%E5%AF%8C%E3%81%95%E3%82%93"
+      ],
+      "research_memo": "曲ページで春日八郎の1954年発売曲、歌舞伎由来、リズムやヒットの背景を確認。"
+    },
+    {
+      "term": "好きになった人",
+      "content_note": "都はるみが1968年に発売した代表的な演歌シングル。別れの場面を明るく力強く歌う曲で、ミリオンセラーとなりました。盆踊りでは歌謡曲・演歌枠の親しみやすい定番として使われます。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E5%A5%BD%E3%81%8D%E3%81%AB%E3%81%AA%E3%81%A3%E3%81%9F%E4%BA%BA_%28%E6%9B%B2%29"
+      ],
+      "research_memo": "曲ページで都はるみの1968年シングル、作詞作曲、ミリオンセラー、紅白歌唱の文脈を確認。"
+    },
+    {
+      "term": "さくらんぼ",
+      "content_note": "大塚愛が2003年に発売した2枚目のシングル。明るいJ-POPの勢いと恋愛ソングの親しみやすさで広く知られ、高校野球応援などにも使われます。盆踊りでは現代ポップス枠の盛り上げ曲です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E3%81%95%E3%81%8F%E3%82%89%E3%82%93%E3%81%BC_%28%E6%9B%B2%29"
+      ],
+      "research_memo": "曲ページで2003年発売、J-POP、ヒット実績、応援曲としての利用文脈を確認。"
+    }
+  ]
+}

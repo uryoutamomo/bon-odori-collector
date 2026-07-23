@@ -1,0 +1,86 @@
+{
+  "generated_by": "おと（Codex）",
+  "source_queue": "data/song_content_research_batches/batch_006_queue.json",
+  "rows": [
+    {
+      "term": "かわさき",
+      "content_note": "岐阜県郡上市の郡上おどりで踊られる代表的な曲目。ゆったりした節回しで輪の流れを作り、郡上おどりの入口として親しまれます。盆踊りでは郡上系の民謡曲として扱われます。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E9%83%A1%E4%B8%8A%E3%81%8A%E3%81%A9%E3%82%8A",
+        "https://www.youtube.com/watch?v=aKrEkXz6qlo"
+      ],
+      "research_memo": "郡上おどりページで曲目としての「かわさき」を確認。YouTube根拠で郡上おどり in 青山での利用を確認。"
+    },
+    {
+      "term": "郡上春駒",
+      "content_note": "郡上おどりの曲目「春駒」を指す表記。馬を思わせる軽快な調子があり、郡上おどりの中でも勢いを出しやすい曲です。盆踊りでは郡上民謡の明るい踊り曲として使われます。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E9%83%A1%E4%B8%8A%E3%81%8A%E3%81%A9%E3%82%8A",
+        "https://www.youtube.com/watch?v=yZmDQoKqWCI"
+      ],
+      "research_memo": "郡上おどりページで曲目としての春駒を確認。個別表記は郡上春駒として扱い、YouTube根拠で盆踊り利用を確認。"
+    },
+    {
+      "term": "郡上節春駒",
+      "content_note": "郡上おどりの曲目「春駒」を郡上節として呼ぶ表記。軽快で跳ねるような雰囲気があり、会場に活気を出す曲目です。盆踊りでは郡上系民謡の定番枠として扱われます。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E9%83%A1%E4%B8%8A%E3%81%8A%E3%81%A9%E3%82%8A",
+        "https://www.youtube.com/watch?v=z_DP003UYnc"
+      ],
+      "research_memo": "郡上おどりページで曲目としての春駒を確認。表記ゆれのため、由来を断定しすぎず郡上系利用文脈で記述。"
+    },
+    {
+      "term": "古調かわさき",
+      "content_note": "郡上おどりの代表曲「かわさき」の古い調子を意識した表記。落ち着いた節回しで郡上らしい輪踊りの味わいを出します。盆踊りでは伝統寄りの郡上おどり曲として扱われます。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E9%83%A1%E4%B8%8A%E3%81%8A%E3%81%A9%E3%82%8A",
+        "https://www.youtube.com/watch?v=e5Fq9sOzAW8"
+      ],
+      "research_memo": "郡上おどりページで「かわさき」を確認。古調の個別制作情報は未確認のため、表記と利用文脈中心に記述。"
+    },
+    {
+      "term": "サザエさん",
+      "content_note": "長谷川町子原作の国民的テレビアニメ『サザエさん』の主題歌として知られる曲。家族向けの明るく親しみやすい雰囲気があり、盆踊りでは子どもも参加しやすいアニメ曲枠です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E3%82%B5%E3%82%B6%E3%82%A8%E3%81%95%E3%82%93_%28%E6%9B%B2%29",
+        "https://www.youtube.com/watch?v=AIyJwR8D7xU"
+      ],
+      "research_memo": "サザエさんのテレビアニメページで放送開始、作品・音楽情報を確認。YouTube根拠で盆踊り利用を確認。"
+    },
+    {
+      "term": "夜に駆ける",
+      "content_note": "YOASOBIが2019年に公開した代表曲。小説をもとにした楽曲として知られ、配信を中心に大きく広まりました。盆踊りでは現代J-POPを取り入れた、若い参加者にも届きやすい曲目です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E5%A4%9C%E3%81%AB%E9%A7%86%E3%81%91%E3%82%8B",
+        "https://www.youtube.com/watch?v=uv-9f_ldlBE"
+      ],
+      "research_memo": "曲ページでYOASOBIの2019年公開曲、小説由来、配信ヒットの文脈を確認。YouTube根拠で盆踊り利用を確認。"
+    },
+    {
+      "term": "U.S.A.",
+      "content_note": "DA PUMPが2018年に発表したダンス曲。ユーロビート調の原曲を日本語カバーし、振付とともに大きな話題になりました。盆踊りでは現代ダンス曲の盛り上げ枠として使われます。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/U.S.A._%28%E6%9B%B2%29",
+        "https://www.youtube.com/watch?v=FQZjXewDhV4"
+      ],
+      "research_memo": "曲ページでDA PUMP版、2018年発売、原曲カバー、ダンス・ヒット文脈を確認。YouTube根拠で盆踊り利用を確認。"
+    },
+    {
+      "term": "気分上々↑↑",
+      "content_note": "mihimaru GTが2006年に発売したJ-POP曲。ラップとポップなサビを組み合わせた明るい曲で、パーティー感のある定番曲として親しまれます。盆踊りでは会場を軽く盛り上げるポップス枠です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E6%B0%97%E5%88%86%E4%B8%8A%E3%80%85%E2%86%91%E2%86%91",
+        "https://www.youtube.com/watch?v=8EldYRLI_So"
+      ],
+      "research_memo": "曲ページでmihimaru GTの2006年シングル、J-POP曲としての基本情報を確認。YouTube根拠で盆踊り利用を確認。"
+    }
+  ]
+}

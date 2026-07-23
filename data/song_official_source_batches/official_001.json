@@ -1,0 +1,134 @@
+{
+  "generated_by": "おと（Codex）",
+  "purpose": "曲内容メモの根拠URLに、実在確認済みの公式・自治体・レーベルページを追加する。",
+  "rows": [
+    {
+      "term": "アイドル",
+      "official_source_urls": [
+        "https://www.yoasobi-music.jp/songs/idol"
+      ],
+      "official_source_memo": "YOASOBI公式サイトの楽曲ページで確認。"
+    },
+    {
+      "term": "Bling-Bang-Bang-Born",
+      "official_source_urls": [
+        "https://www.sonymusic.co.jp/artist/creepynuts/discography/AIXX02492B00Z"
+      ],
+      "official_source_memo": "Sony Music公式ディスコグラフィでCreepy Nutsの楽曲ページを確認。"
+    },
+    {
+      "term": "シンデレラガール",
+      "official_source_urls": [
+        "https://www.universal-music.co.jp/king-and-prince/products/upcj-5001/"
+      ],
+      "official_source_memo": "UNIVERSAL MUSIC JAPAN公式の商品ページで確認。"
+    },
+    {
+      "term": "Happiness",
+      "official_source_urls": [
+        "https://web.storm-labels.co.jp/s/js/discography/JACA-5070"
+      ],
+      "official_source_memo": "Storm Labels公式ディスコグラフィで嵐の楽曲ページを確認。"
+    },
+    {
+      "term": "GUTS!",
+      "official_source_urls": [
+        "https://web.storm-labels.co.jp/s/js/discography/JACA-5402"
+      ],
+      "official_source_memo": "Storm Labels公式ディスコグラフィで嵐の楽曲ページを確認。"
+    },
+    {
+      "term": "恋するフォーチュンクッキー",
+      "official_source_urls": [
+        "https://www.kingrecords.co.jp/cs/g/gKIZM-225/"
+      ],
+      "official_source_memo": "キングレコード公式の商品ページで確認。"
+    },
+    {
+      "term": "かわいいだけじゃだめですか?",
+      "official_source_urls": [
+        "https://asobisystem.com/talent/cutiestreet/"
+      ],
+      "official_source_memo": "ASOBISYSTEM公式プロフィールでCUTIE STREETを確認。"
+    },
+    {
+      "term": "西馬音内盆踊り",
+      "official_source_urls": [
+        "https://www.town.ugo.lg.jp/sightseeing/detail.html?id=340"
+      ],
+      "official_source_memo": "羽後町公式サイトで西馬音内盆踊りの文化・歴史ページを確認。"
+    },
+    {
+      "term": "花笠音頭",
+      "official_source_urls": [
+        "https://www.hanagasa.jp/"
+      ],
+      "official_source_memo": "山形花笠まつり公式サイトで花笠まつり・花笠音頭文脈を確認。"
+    },
+    {
+      "term": "郡上かわさき",
+      "official_source_urls": [
+        "https://www.gujohachiman.com/kanko/odori.html"
+      ],
+      "official_source_memo": "郡上八幡観光協会系の郡上おどり公式案内で確認。"
+    },
+    {
+      "term": "かわさき",
+      "official_source_urls": [
+        "https://www.gujohachiman.com/kanko/odori.html"
+      ],
+      "official_source_memo": "郡上八幡観光協会系の郡上おどり公式案内で確認。"
+    },
+    {
+      "term": "春駒",
+      "official_source_urls": [
+        "https://www.gujohachiman.com/kanko/odori.html"
+      ],
+      "official_source_memo": "郡上八幡観光協会系の郡上おどり公式案内で確認。"
+    },
+    {
+      "term": "郡上春駒",
+      "official_source_urls": [
+        "https://www.gujohachiman.com/kanko/odori.html"
+      ],
+      "official_source_memo": "郡上八幡観光協会系の郡上おどり公式案内で確認。"
+    },
+    {
+      "term": "郡上節春駒",
+      "official_source_urls": [
+        "https://www.gujohachiman.com/kanko/odori.html"
+      ],
+      "official_source_memo": "郡上八幡観光協会系の郡上おどり公式案内で確認。"
+    },
+    {
+      "term": "古調かわさき",
+      "official_source_urls": [
+        "https://www.gujohachiman.com/kanko/odori.html"
+      ],
+      "official_source_memo": "郡上八幡観光協会系の郡上おどり公式案内で確認。"
+    },
+    {
+      "term": "ドダレバチ",
+      "official_source_urls": [
+        "https://kuroishi.or.jp/event/summer/kuroishiyosare",
+        "https://kuroishi.or.jp/event/summer/kuroishiyosare/kyosare_kashi_gakufu"
+      ],
+      "official_source_memo": "黒石観光協会公式の黒石よされ案内と唄ページで確認。"
+    },
+    {
+      "term": "黒石よされ節",
+      "official_source_urls": [
+        "https://kuroishi.or.jp/event/summer/kuroishiyosare",
+        "https://kuroishi.or.jp/event/summer/kuroishiyosare/kyosare_kashi_gakufu"
+      ],
+      "official_source_memo": "黒石観光協会公式の黒石よされ案内と唄ページで確認。"
+    },
+    {
+      "term": "黒石甚句",
+      "official_source_urls": [
+        "https://kuroishi.or.jp/event/summer/kuroishiyosare/kyosare_kashi_gakufu"
+      ],
+      "official_source_memo": "黒石観光協会公式の黒石よされ唄ページで確認。"
+    }
+  ]
+}

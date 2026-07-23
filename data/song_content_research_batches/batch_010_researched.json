@@ -1,0 +1,96 @@
+{
+  "generated_by": "おと（Codex）",
+  "source_queue": "data/song_content_research_queue.json",
+  "rows": [
+    {
+      "term": "波乗りジョニー",
+      "content_note": "桑田佳祐が2001年に発表したソロシングル。夏の海辺を思わせる明るいロック調の曲で、コカ・コーラCMでも知られます。盆踊りでは夏祭りらしいポップス枠です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E6%B3%A2%E4%B9%97%E3%82%8A%E3%82%B8%E3%83%A7%E3%83%8B%E3%83%BC",
+        "https://www.youtube.com/watch?v=5K8ZUnBNX5Y"
+      ],
+      "research_memo": "曲ページで桑田佳祐の2001年ソロシングル、CM使用、夏のポップスとしての位置づけを確認。YouTube根拠で盆踊り利用を確認。"
+    },
+    {
+      "term": "千本桜",
+      "content_note": "黒うさPが2011年に発表した初音ミク楽曲。和風・大正浪漫調の世界観を持つVOCALOID代表曲で、舞台化やカバーでも広まりました。盆踊りでは和風ポップス枠です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Senbonzakura_(song)",
+        "https://www.youtube.com/watch?v=r2g8q_BOLgc"
+      ],
+      "research_memo": "曲ページで黒うさPの初音ミク曲、2011年公開、和風・大正浪漫調の人気曲としての展開を確認。YouTube根拠で盆踊り利用を確認。"
+    },
+    {
+      "term": "Ultra Soul",
+      "content_note": "B'zが2001年に発表した31作目のシングル。世界水泳のテーマ曲としても知られる力強いロック曲で、掛け声と一体感が出やすい定番です。盆踊りでは盛り上げ系ポップス枠です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Ultra_Soul",
+        "https://www.youtube.com/watch?v=DHfKejSr5_U"
+      ],
+      "research_memo": "曲ページでB'zの2001年シングル、世界水泳関連、ロック曲としての位置づけを確認。YouTube根拠で盆踊り利用を確認。"
+    },
+    {
+      "term": "アイドル",
+      "content_note": "YOASOBIが2023年に発表したアニメ『【推しの子】』オープニング曲。原作小説をもとに、アイドルの光と影を描いた大ヒット曲です。盆踊りでは現代アニメ・J-POP枠です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Idol_(Yoasobi_song)",
+        "https://www.youtube.com/watch?v=PBkuLkvutgE"
+      ],
+      "research_memo": "曲ページでYOASOBIの2023年曲、アニメ主題歌、原作小説にもとづく内容、ヒット実績を確認。YouTube根拠で盆踊り利用を確認。"
+    },
+    {
+      "term": "エロティカセブン",
+      "content_note": "サザンオールスターズが1993年に発表したシングル。ドラマ主題歌として広まり、ラテン風の熱気と歌謡曲らしさが混ざる代表曲です。盆踊りでは大人向けの歌謡ポップス枠です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E3%82%A8%E3%83%AD%E3%83%86%E3%82%A3%E3%82%AB%E3%83%BB%E3%82%BB%E3%83%96%E3%83%B3",
+        "https://www.youtube.com/watch?v=A9u0UrbG1e8"
+      ],
+      "research_memo": "曲ページでサザンオールスターズの1993年シングル、ドラマ主題歌、ラテン風の曲調を確認。YouTube根拠で盆踊り利用を確認。"
+    },
+    {
+      "term": "西馬音内盆踊り",
+      "content_note": "秋田県羽後町に伝わる日本三大盆踊りの一つ。編み笠や端縫い衣装をまとい、幻想的な所作で踊られる伝統芸能です。盆踊りでは地域色の強い古典的な踊り枠です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E8%A5%BF%E9%A6%AC%E9%9F%B3%E5%86%85%E3%81%AE%E7%9B%86%E8%B8%8A",
+        "https://www.youtube.com/watch?v=H--pb7rMQpg"
+      ],
+      "research_memo": "曲・踊りページで秋田県羽後町の盆踊り、日本三大盆踊り、衣装や伝統芸能としての位置づけを確認。YouTube根拠で盆踊り利用を確認。"
+    },
+    {
+      "term": "Bling-Bang-Bang-Born",
+      "content_note": "Creepy Nutsが2024年に発表したヒップホップ曲。アニメ『マッシュル』第2期オープニングとして使われ、BBBBダンスで国内外に広まりました。盆踊りでは最新アニメ・ダンス曲枠です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Bling-Bang-Bang-Born",
+        "https://www.youtube.com/watch?v=aLHEiTrkQTk"
+      ],
+      "research_memo": "曲ページでCreepy Nutsの2024年曲、アニメ主題歌、BBBBダンスでの拡散、チャート実績を確認。YouTube根拠で盆踊り利用を確認。"
+    },
+    {
+      "term": "ナイアガラ音頭",
+      "content_note": "大瀧詠一プロデュースで1976年に発表された布谷文夫のシングル。ナイアガラ流のポップス感覚と音頭を組み合わせた企画性の強い曲です。盆踊りでは音楽ファン向けの変化球音頭枠です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E3%83%8A%E3%82%A4%E3%82%A2%E3%82%AC%E3%83%A9%E9%9F%B3%E9%A0%AD",
+        "https://www.youtube.com/watch?v=H7LQDY-tnX4"
+      ],
+      "research_memo": "曲ページで1976年発売、大瀧詠一プロデュース、布谷文夫 with ナイアガラ社中名義、音頭・ポップス・ファンク要素を確認。YouTube根拠で盆踊り利用を確認。"
+    },
+    {
+      "term": "ちびまる子音頭",
+      "content_note": "アニメ『ちびまる子ちゃん』第2期のエンディング曲。さくらももこ作詞、佐橋俊彦作曲で、夏休み期間にも起用された子ども向けの音頭です。盆踊りでは家族向けアニメ音頭枠です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E3%81%A1%E3%81%B3%E3%81%BE%E3%82%8B%E5%AD%90%E3%81%A1%E3%82%83%E3%82%93",
+        "https://www.youtube.com/watch?v=HmHer4pgtPE"
+      ],
+      "research_memo": "作品ページの主題歌欄で『ちびまる子音頭』、さくらももこ作詞、佐橋俊彦作曲、第2期EDと夏休み期間の起用を確認。YouTube根拠で盆踊り利用を確認。"
+    }
+  ]
+}

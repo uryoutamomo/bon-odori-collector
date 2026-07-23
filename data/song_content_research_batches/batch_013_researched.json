@@ -1,0 +1,86 @@
+{
+  "generated_by": "おと（Codex）",
+  "source_queue": "data/song_content_research_queue.json",
+  "rows": [
+    {
+      "term": "東村山音頭",
+      "content_note": "1963年に東村山町の市制施行を記念して作られたご当地音頭。三橋美智也・下谷二三子版のほか、志村けんのリメイクで全国的にも知られました。盆踊りでは東京多摩地域色の強い音頭枠です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E6%9D%B1%E6%9D%91%E5%B1%B1%E9%9F%B3%E9%A0%AD",
+        "https://www.youtube.com/watch?v=CRKjb6p_2Eo"
+      ],
+      "research_memo": "曲ページで1963年発表、東村山町の市制施行記念、三橋美智也・下谷二三子版、志村けん版を確認。YouTube根拠で盆踊り利用を確認。"
+    },
+    {
+      "term": "きよしのソーラン節",
+      "content_note": "氷川きよしが2007年に発表した演歌シングル。ソーラン節の威勢を取り込んだ歌謡演歌で、紅白歌合戦やレコード大賞金賞でも知られます。盆踊りでは民謡調の盛り上げ演歌枠です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E3%81%8D%E3%82%88%E3%81%97%E3%81%AE%E3%82%BD%E3%83%BC%E3%83%A9%E3%83%B3%E7%AF%80",
+        "https://www.youtube.com/watch?v=eCas2cdhgjo"
+      ],
+      "research_memo": "曲ページで氷川きよしの2007年シングル、作詞作曲、紅白歌唱、日本レコード大賞金賞を確認。YouTube根拠で盆踊り利用を確認。"
+    },
+    {
+      "term": "最高到達点",
+      "content_note": "SEKAI NO OWARIが2023年に発表した『The Peak』の日本語タイトル。アニメ『ONE PIECE』の主題歌として使われた高揚感のあるポップ曲です。盆踊りでは現代アニメ・J-POP枠です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E6%9C%80%E9%AB%98%E5%88%B0%E9%81%94%E7%82%B9",
+        "https://www.youtube.com/watch?v=5ZHgl5OPglE"
+      ],
+      "research_memo": "曲ページでSEKAI NO OWARIの曲、英題The Peak、2023年配信、アニメONE PIECE主題歌を確認。YouTube根拠で盆踊り利用を確認。"
+    },
+    {
+      "term": "金毘羅船々",
+      "content_note": "香川県琴平町の金刀比羅宮信仰に関わる民謡。江戸時代後期に成立したとされ、金毘羅参りや船のイメージを持つ古い唄です。盆踊りでは昔ながらの民謡・お座敷唄枠です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E9%87%91%E6%AF%98%E7%BE%85%E8%88%B9%E3%80%85",
+        "https://www.youtube.com/watch?v=0gMpfXl8IxQ"
+      ],
+      "research_memo": "曲ページで金刀比羅宮信仰に関わる民謡、江戸時代後期の成立、表記を確認。YouTube根拠で盆踊り利用を確認。"
+    },
+    {
+      "term": "まりと殿様",
+      "content_note": "西條八十作詞・中山晋平作曲で知られる童謡『鞠と殿様』の表記ゆれとして扱います。童話的な情景を持つ古い子ども向け歌曲で、盆踊りではやさしい童謡・懐かし曲枠です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%B1%B1%E6%99%8B%E5%B9%B3",
+        "https://www.youtube.com/watch?v=PGI_6xMdNBg"
+      ],
+      "research_memo": "中山晋平の主要作品一覧で『鞠と殿様』『鞠と殿さま』を確認。YouTube根拠で盆踊り利用を確認。"
+    },
+    {
+      "term": "鞠と殿様",
+      "content_note": "西條八十作詞・中山晋平作曲で知られる童謡。鞠と殿様を題材にした童話的な情景の曲で、盆踊りでは子どもにも伝わりやすい懐かし童謡枠です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%B1%B1%E6%99%8B%E5%B9%B3",
+        "https://www.youtube.com/watch?v=MhUHcJRusUc"
+      ],
+      "research_memo": "中山晋平の主要作品一覧で『鞠と殿様』『鞠と殿さま』を確認。YouTube根拠で盆踊り利用を確認。"
+    },
+    {
+      "term": "葛飾ラプソディーONDO",
+      "content_note": "堂島孝平の『葛飾ラプソディー』を盆踊り向けにONDO表記で扱う曲目。原曲はアニメ『こちら葛飾区亀有公園前派出所』のオープニングで、葛飾の地名や下町感が親しまれています。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E8%91%9B%E9%A3%BE%E3%83%A9%E3%83%97%E3%82%BD%E3%83%87%E3%82%A3%E3%83%BC",
+        "https://www.youtube.com/watch?v=3KvzKVyR2Bo"
+      ],
+      "research_memo": "原曲ページで堂島孝平の1997年シングル、こち亀OP、葛飾区の地名を歌い込む内容を確認。YouTube根拠でONDO表記の盆踊り利用を確認。"
+    },
+    {
+      "term": "葛飾ラプソディー音頭",
+      "content_note": "堂島孝平の『葛飾ラプソディー』を盆踊り向けに音頭表記で扱う曲目。原曲はアニメ『こち亀』のオープニングで、葛飾の下町イメージと相性がよい地域ポップス枠です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E8%91%9B%E9%A3%BE%E3%83%A9%E3%83%97%E3%82%BD%E3%83%87%E3%82%A3%E3%83%BC",
+        "https://www.youtube.com/watch?v=14wBbZUrDkw"
+      ],
+      "research_memo": "原曲ページで堂島孝平の1997年シングル、こち亀OP、葛飾区の地名を歌い込む内容を確認。YouTube根拠で音頭表記の盆踊り利用を確認。"
+    }
+  ]
+}

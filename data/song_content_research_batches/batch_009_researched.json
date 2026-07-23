@@ -1,0 +1,108 @@
+{
+  "generated_by": "おと（Codex）",
+  "source_queue": "data/song_content_research_queue.json",
+  "rows": [
+    {
+      "term": "Let It Snow!",
+      "content_note": "1945年にSammy CahnとJule Styneが作った冬の定番曲。雪の夜を明るく描く内容で、クリスマス曲として広く親しまれています。盆踊りでは冬おどり向けの洋楽枠です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Let_It_Snow!_Let_It_Snow!_Let_It_Snow!",
+        "https://www.youtube.com/watch?v=KtE5ClVasFE"
+      ],
+      "research_memo": "曲ページで1945年の楽曲、作詞作曲、冬・クリスマス定番としての位置づけを確認。YouTube根拠で盆踊り利用を確認。"
+    },
+    {
+      "term": "Rockin' Around the Christmas Tree",
+      "content_note": "Brenda Leeが1958年に録音したクリスマス定番曲。Johnny Marks作のロカビリー調の明るい曲で、長くホリデーシーズンに親しまれています。盆踊りでは冬おどりの軽快な洋楽枠です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Rockin%27_Around_the_Christmas_Tree",
+        "https://www.youtube.com/watch?v=RnTJYGHxy6A"
+      ],
+      "research_memo": "曲ページでBrenda Leeの1958年録音、Johnny Marks作、クリスマスソングとしての定着とロカビリー調を確認。YouTube根拠で盆踊り利用を確認。"
+    },
+    {
+      "term": "Run Rudolph Run",
+      "content_note": "Chuck Berryが1958年に録音したロックンロール系クリスマス曲。ルドルフを題材にした勢いのある曲で、多くのアーティストにカバーされています。盆踊りでは冬おどりの洋楽ロック枠です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Run_Rudolph_Run",
+        "https://www.youtube.com/watch?v=5P_FvSIBmiw"
+      ],
+      "research_memo": "曲ページでChuck Berryの1958年録音、Rudolphを題材にしたクリスマス曲、多数のカバーを確認。YouTube根拠で盆踊り利用を確認。"
+    },
+    {
+      "term": "Silver Bells",
+      "content_note": "Jay LivingstonとRay Evansが作ったクリスマスソング。映画『The Lemon Drop Kid』で使われ、Bing Crosbyらの録音で広まりました。盆踊りでは冬おどりの落ち着いた洋楽クリスマス枠です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Silver_Bells",
+        "https://www.youtube.com/watch?v=-oQ5lxNpZug"
+      ],
+      "research_memo": "曲ページで作曲者、映画での初出、Bing Crosbyらの録音を確認。YouTube根拠で盆踊り利用を確認。"
+    },
+    {
+      "term": "Underneath The Tree",
+      "content_note": "Kelly Clarksonが2013年に発表したクリスマス・ポップ。Greg Kurstinと共作した明るいアップテンポ曲で、現代の定番候補として評価されています。盆踊りでは冬おどりの現代洋楽枠です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Underneath_the_Tree",
+        "https://www.youtube.com/watch?v=GtM1fYIBTKE"
+      ],
+      "research_memo": "曲ページでKelly Clarksonの2013年クリスマス曲、Greg Kurstinとの共作、アップテンポなクリスマス・ポップとしての評価を確認。YouTube根拠で盆踊り利用を確認。"
+    },
+    {
+      "term": "恋人がサンタクロース",
+      "content_note": "松任谷由実の1980年アルバム『SURF&SNOW』収録曲。映画挿入歌としても知られ、日本のJ-POPクリスマス定番曲になりました。盆踊りでは冬おどりの日本語ポップス枠です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E6%81%8B%E4%BA%BA%E3%81%8C%E3%82%B5%E3%83%B3%E3%82%BF%E3%82%AF%E3%83%AD%E3%83%BC%E3%82%B9",
+        "https://www.youtube.com/watch?v=_IoIbiAvciw"
+      ],
+      "research_memo": "曲ページで松任谷由実の1980年アルバム収録曲、映画挿入歌、J-POPクリスマス定番としての位置づけを確認。YouTube根拠で盆踊り利用を確認。"
+    },
+    {
+      "term": "Y.M.C.A",
+      "content_note": "Village Peopleが1978年に発表したディスコ曲。腕で文字を作る振り付けが世界的に広まり、日本では西城秀樹の『YOUNG MAN』でも親しまれました。盆踊りでは参加型の洋楽ダンス枠です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Y.M.C.A._(song)",
+        "https://www.youtube.com/watch?v=PiIiTSmFHnk"
+      ],
+      "research_memo": "曲ページでVillage Peopleの1978年曲、世界的ヒット、YMCAの手振りダンス、西城秀樹カバーを確認。YouTube根拠で盆踊り利用を確認。"
+    },
+    {
+      "term": "お江戸日本橋",
+      "content_note": "東京・日本橋を起点に東海道五十三次の宿場名を歌い込んだ俗歌。作詞作曲者は不詳で、江戸から旅立つ情景を明るく描きます。盆踊りでは江戸情緒を出す古い民謡・俗歌枠です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E3%81%8A%E6%B1%9F%E6%88%B8%E6%97%A5%E6%9C%AC%E6%A9%8B",
+        "https://www.youtube.com/watch?v=K0y5FU9Mi4g"
+      ],
+      "research_memo": "曲ページで東京日本橋の民謡・俗歌、東海道五十三次の宿場名を歌い込む内容、作詞作曲者不詳を確認。YouTube根拠で盆踊り利用を確認。"
+    },
+    {
+      "term": "黒石よされ節",
+      "content_note": "青森県黒石市の代表的な民謡・踊り唄。黒石よされは盆踊りの恋の掛け合い唄に由来するとされ、現在も流し踊りで親しまれています。盆踊りでは津軽らしい節回しを持つ民謡枠です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://kuroishi.or.jp/event/summer/kuroishiyosare",
+        "https://kuroishi.or.jp/event/summer/kuroishiyosare/kuroishiyosare_gogen",
+        "https://kuroishi.or.jp/event/summer/kuroishiyosare/kyosare_kashi_gakufu",
+        "https://www.youtube.com/watch?v=Y55PQVTh0O8"
+      ],
+      "research_memo": "黒石観光協会ページで黒石よされ、由来・語源、黒石よされ節の唄を確認。YouTube根拠で盆踊り利用を確認。"
+    },
+    {
+      "term": "黒石甚句",
+      "content_note": "黒石よされの唄として黒石観光協会が紹介している黒石の民謡。温湯・板留など地元の地名や湯の町の情景を歌い込みます。盆踊りでは黒石・津軽色を出す地域民謡枠です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://kuroishi.or.jp/event/summer/kuroishiyosare/kyosare_kashi_gakufu",
+        "https://www.youtube.com/watch?v=DuMjd0xGeiE"
+      ],
+      "research_memo": "黒石観光協会の黒石よされ唄ページで『黒石甚句』の掲載を確認。YouTube根拠で盆踊り利用を確認。"
+    }
+  ]
+}
