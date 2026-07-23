@@ -18,10 +18,10 @@ DISPLAY_TIER_ORDER = (
 )
 
 
-def display_tier_for_event(event):
+def display_tier_for_event(event, *, target_year=2026):
     if event.get("public_category") == "ended":
         return "ended"
-    if str(event.get("date") or "").startswith("2026-") and event.get("public_category") == "upcoming":
+    if str(event.get("date") or "").startswith(f"{target_year}-") and event.get("public_category") == "upcoming":
         return "confirmed"
     if event.get("date_prediction"):
         return "rule_predicted"
@@ -36,17 +36,17 @@ def display_tier_for_event(event):
     return "season_hint"
 
 
-def current_event_state_for_event(event):
-    return axes_from_legacy_public_event(event)["current_event_state"]
+def current_event_state_for_event(event, *, target_year=2026):
+    return axes_from_legacy_public_event(event, target_year=target_year)["current_event_state"]
 
 
-def date_certainty_tier_for_event(event):
-    return axes_from_legacy_public_event(event)["date_certainty_tier"]
+def date_certainty_tier_for_event(event, *, target_year=2026):
+    return axes_from_legacy_public_event(event, target_year=target_year)["date_certainty_tier"]
 
 
-def apply_public_state_axes(events):
+def apply_public_state_axes(events, *, target_year=2026):
     for event in events:
-        event.update(axes_from_legacy_public_event(event))
+        event.update(axes_from_legacy_public_event(event, target_year=target_year))
     return events
 
 
@@ -61,10 +61,10 @@ def apply_legacy_public_fields_from_axes(events):
     return events
 
 
-def apply_display_tiers(events, *, prefer_existing_axes=False):
+def apply_display_tiers(events, *, prefer_existing_axes=False, target_year=2026):
     if prefer_existing_axes:
         return apply_legacy_public_fields_from_axes(events)
     for event in events:
-        event["display_tier"] = display_tier_for_event(event)
-    apply_public_state_axes(events)
+        event["display_tier"] = display_tier_for_event(event, target_year=target_year)
+    apply_public_state_axes(events, target_year=target_year)
     return events

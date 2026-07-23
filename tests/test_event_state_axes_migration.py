@@ -79,6 +79,29 @@ class EventStateAxesMigrationTest(unittest.TestCase):
                 """
             )
 
+    def test_fallback_mapping_uses_explicit_target_year(self):
+        self.conn.execute(
+            """
+            INSERT INTO event_occurrences VALUES
+              ('occ_2027', 2027, NULL, 'unknown', 'published',
+               'official_current_year', 'https://example.com/2027')
+            """
+        )
+        report = migrate_event_state_axes(
+            self.conn,
+            events=self.events,
+            source_map=self.source_map,
+            target_year=2027,
+        )
+        row = self.conn.execute(
+            """
+            SELECT current_event_state, date_certainty_tier
+            FROM event_occurrences WHERE occurrence_id='occ_2027'
+            """
+        ).fetchone()
+        self.assertEqual(row, ("announced", "season_hint"))
+        self.assertEqual(report["target_year"], 2027)
+
 
 if __name__ == "__main__":
     unittest.main()

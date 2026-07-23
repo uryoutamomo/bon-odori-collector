@@ -61,6 +61,24 @@ class EventStateAxesTest(unittest.TestCase):
             {"public_category": "date_unknown", "display_tier": "season_hint"},
         )
 
+    def test_legacy_public_mapping_uses_explicit_target_year(self):
+        current = axes_from_legacy_public_event(
+            {"public_category": "upcoming", "date": "2027-08-01"},
+            target_year=2027,
+        )
+        previous = axes_from_legacy_public_event(
+            {"public_category": "upcoming", "date": "2026-08-01"},
+            target_year=2027,
+        )
+        self.assertEqual(current, {
+            "current_event_state": "confirmed",
+            "date_certainty_tier": "confirmed",
+        })
+        self.assertEqual(previous, {
+            "current_event_state": "announced",
+            "date_certainty_tier": "season_hint",
+        })
+
 
 if __name__ == "__main__":
     unittest.main()

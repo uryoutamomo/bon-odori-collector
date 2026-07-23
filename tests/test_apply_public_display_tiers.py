@@ -96,6 +96,23 @@ class ApplyPublicDisplayTiersTest(unittest.TestCase):
         self.assertEqual(rows[0]["public_category"], "ended")
         self.assertEqual(rows[0]["display_tier"], "ended")
 
+    def test_target_year_is_not_fixed_to_2026(self):
+        rows = apply_display_tiers(
+            [
+                {"public_category": "upcoming", "date": "2027-07-01"},
+                {"public_category": "upcoming", "date": "2026-07-01"},
+            ],
+            target_year=2027,
+        )
+        self.assertEqual(
+            [row["current_event_state"] for row in rows],
+            ["confirmed", "announced"],
+        )
+        self.assertEqual(
+            [row["date_certainty_tier"] for row in rows],
+            ["confirmed", "season_hint"],
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

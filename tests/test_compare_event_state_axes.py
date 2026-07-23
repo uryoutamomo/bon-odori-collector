@@ -34,6 +34,21 @@ class CompareEventStateAxesTest(unittest.TestCase):
         self.assertEqual(report["status"], "fail")
         self.assertEqual(report["mismatch_count"], 1)
 
+    def test_explicit_target_year_drives_legacy_axis_comparison(self):
+        report = compare_events(
+            [{
+                "name": "例",
+                "venue": "会場",
+                "public_category": "upcoming",
+                "display_tier": "confirmed",
+                "current_event_state": "confirmed",
+                "date_certainty_tier": "confirmed",
+                "date": "2027-08-01",
+            }],
+            target_year=2027,
+        )
+        self.assertEqual(report["status"], "pass")
+
 
 if __name__ == "__main__":
     unittest.main()

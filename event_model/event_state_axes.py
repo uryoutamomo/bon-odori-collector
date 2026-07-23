@@ -1,5 +1,7 @@
 """Canonical event-state axes and legacy public compatibility mappings."""
 
+from event_model.year_context import normalize_target_year
+
 CURRENT_EVENT_STATES = (
     "predicted",
     "announced",
@@ -60,13 +62,14 @@ def legacy_public_fields_from_axes(current_event_state, date_certainty_tier):
     }
 
 
-def axes_from_legacy_public_event(event):
+def axes_from_legacy_public_event(event, *, target_year=2026):
     """One-way shadow-migration adapter from the lossy pre-D projection.
 
     The old fields conflate current state and display, so this is intentionally not
     the inverse of ``legacy_public_fields_from_axes``.  Use it only to backfill and
     shadow-compare legacy rows; canonical axes are authoritative after migration.
     """
+    target_year = normalize_target_year(target_year)
     lifecycle = str(event.get("lifecycle_status") or "").lower()
     category = event.get("public_category")
     date_value = str(event.get("date") or "")
@@ -75,7 +78,7 @@ def axes_from_legacy_public_event(event):
         state = "cancelled"
     elif category == "ended":
         state = "ended"
-    elif date_value.startswith("2026-") and category == "upcoming":
+    elif date_value.startswith(f"{target_year}-") and category == "upcoming":
         state = "confirmed"
     elif category == "upcoming":
         state = "announced"
@@ -104,6 +107,7 @@ def axes_from_legacy_public_event(event):
 
 def axes_from_legacy_occurrence(row, *, target_year=2026):
     """Finite fallback mapping for RDB rows not present in the public projection."""
+    target_year = normalize_target_year(target_year)
     date_status = str(row.get("date_status") or "unknown").lower()
     lifecycle = str(row.get("lifecycle_status") or "").lower()
     source_kind = str(row.get("source_kind") or "").lower()
