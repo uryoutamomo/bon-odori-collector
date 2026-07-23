@@ -155,7 +155,10 @@ def validate_payload(payload):
                 errors.append(f"{prefix}: songs must be a non-empty list")
             elif any(not isinstance(song, dict) or not song.get("title") for song in songs):
                 errors.append(f"{prefix}: songs must be a list of {title: str, uncertain?: bool}")
-            _required(source, "url", errors, f"{prefix}.source")
+            if mode == "firsthand_observed":
+                _required(source, "source_key", errors, f"{prefix}.source")
+            else:
+                _required(source, "url", errors, f"{prefix}.source")
     if errors:
         raise ValueError("invalid change request payload: " + "; ".join(errors))
 

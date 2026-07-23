@@ -424,6 +424,60 @@ class ApplyChangeRequestsTests(unittest.TestCase):
         song_count = self.conn.execute("SELECT COUNT(*) FROM occurrence_songs WHERE occurrence_id = 'occ_1'").fetchone()[0]
         self.assertEqual(song_count, 2)
 
+    def test_firsthand_song_evidence_accepts_source_key_without_url(self):
+        payload = {
+            "request_type": "rdb_change_requests",
+            "requests": [
+                {
+                    "request_id": "firsthand_songs",
+                    "change_type": "add_song_evidence",
+                    "occurrence_id": "occ_1",
+                    "evidence_mode": "firsthand_observed",
+                    "songs": [{"title": "東京音頭"}],
+                    "source": {
+                        "source_key": "uchida_firsthand",
+                        "platform": "personal_firsthand",
+                        "kind": "firsthand_attendance",
+                    },
+                }
+            ],
+        }
+
+        validate_payload(payload)
+        applied, issues = apply_payload(self.conn, payload, "2026-07-21T00:00:00+00:00")
+        self.conn.commit()
+
+        self.assertEqual(issues, [])
+        self.assertEqual(len(applied["requests_applied"]), 1)
+        evidence = self.conn.execute(
+            "SELECT platform, evidence_type, source_key, url FROM evidence_items WHERE source_key = 'uchida_firsthand'"
+        ).fetchone()
+        self.assertEqual(
+            tuple(evidence),
+            ("personal_firsthand", "firsthand_attendance", "uchida_firsthand", None),
+        )
+
+    def test_non_firsthand_song_evidence_still_requires_url(self):
+        payload = {
+            "request_type": "rdb_change_requests",
+            "requests": [
+                {
+                    "request_id": "youtube_without_url",
+                    "change_type": "add_song_evidence",
+                    "occurrence_id": "occ_1",
+                    "evidence_mode": "historical_youtube",
+                    "songs": [{"title": "東京音頭"}],
+                    "source": {
+                        "platform": "youtube",
+                        "kind": "historical_occurrence_video",
+                    },
+                }
+            ],
+        }
+
+        with self.assertRaisesRegex(ValueError, "missing required field: url"):
+            validate_payload(payload)
+
     def test_historical_reference_date_reuses_existing_natural_key(self):
         self.conn.execute(
             """
