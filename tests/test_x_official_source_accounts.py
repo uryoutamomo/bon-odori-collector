@@ -50,11 +50,27 @@ class XOfficialSourceAccountsTest(unittest.TestCase):
             )
             with patch.object(collect, "NOTION_TOKEN", None), patch.object(
                 collect, "X_OFFICIAL_SOURCE_ACCOUNTS_FILE", str(registry)
+            ), patch.object(
+                collect, "X_IMPORTANT_INFORMANTS_FILE", str(Path(tmpdir) / "missing-informants.json")
             ):
                 accounts = collect.load_whitelist_accounts()
 
         self.assertEqual(accounts[0]["handle"], "@localofficial")
         self.assertEqual(accounts[0]["manual_status"], "優先")
+
+    def test_collect_loads_current_important_informants_without_notion_token(self):
+        with patch.object(collect, "NOTION_TOKEN", None), patch.object(
+            collect, "X_OFFICIAL_SOURCE_ACCOUNTS_FILE", "missing-official-accounts.json"
+        ):
+            accounts = collect.load_whitelist_accounts()
+
+        by_handle = {row["handle"]: row for row in accounts}
+        self.assertEqual(
+            set(by_handle),
+            {"@natsutr_bon", "@gpveqead9u10257"},
+        )
+        self.assertEqual(by_handle["@natsutr_bon"]["manual_status"], "優先")
+        self.assertEqual(by_handle["@gpveqead9u10257"]["source_type"], "important_informant")
 
 
 if __name__ == "__main__":

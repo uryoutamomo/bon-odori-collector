@@ -889,6 +889,7 @@ VENUE_MASTER_FILE = "data/venue_master.json"
 X_WHITELIST_STATE_FILE = "data/x_whitelist_state.json"
 X_ACCOUNT_SCORES_FILE = "data/x_account_scores.json"
 X_OFFICIAL_SOURCE_ACCOUNTS_FILE = "data/x_official_source_accounts.json"
+X_IMPORTANT_INFORMANTS_FILE = "data/x_important_informants.json"
 X_MEMBER_OBSOLETE_SCORE_PROPS = (
     "自動スコア",
     "手動重み",
@@ -1684,13 +1685,16 @@ def add_promoted_x_members(review_results):
 
 
 def load_whitelist_accounts():
-    """「X メンバーリスト」DB とローカル公式X台帳から収集対象を返す。
+    """「X メンバーリスト」DB とローカル台帳から収集対象を返す。
 
     任意プロパティ:
     - 収集ステータス: 優先 / 通常 / 休止
     既存DBに無ければ無視する。
     """
-    local_accounts = load_official_source_accounts(Path(X_OFFICIAL_SOURCE_ACCOUNTS_FILE))
+    local_accounts = [
+        *load_official_source_accounts(Path(X_OFFICIAL_SOURCE_ACCOUNTS_FILE)),
+        *_load_important_informants(),
+    ]
     if not NOTION_TOKEN:
         print("[whitelist] NOTION_API_TOKEN 未設定のためメンバーリスト読込スキップ")
         return _dedupe_whitelist_accounts(local_accounts)
@@ -1718,8 +1722,34 @@ def load_whitelist_accounts():
         print(f"[whitelist] メンバーリスト読込エラー（スキップ）: {e}")
         return _dedupe_whitelist_accounts(local_accounts)
     out = _dedupe_whitelist_accounts(accounts)
-    print(f"[whitelist] メンバーリスト+公式X台帳 {len(out)} アカウント取得")
+    print(f"[whitelist] メンバーリスト+ローカル台帳 {len(out)} アカウント取得")
     return out
+
+
+def _load_important_informants(path=None):
+    path = Path(path or X_IMPORTANT_INFORMANTS_FILE)
+    try:
+        with path.open(encoding="utf-8") as handle:
+            payload = json.load(handle)
+    except FileNotFoundError:
+        return []
+    except Exception as exc:
+        print(f"[whitelist] 重要情報提供者台帳読込エラー（スキップ）: {exc}")
+        return []
+
+    accounts = []
+    for row in payload.get("accounts") or []:
+        if not isinstance(row, dict) or row.get("collection_enabled") is False:
+            continue
+        handle = _norm_handle(row.get("handle"))
+        if not handle:
+            continue
+        account = dict(row)
+        account["handle"] = f"@{handle}"
+        account["manual_status"] = account.get("manual_status") or "優先"
+        account["source_type"] = account.get("source_type") or "important_informant"
+        accounts.append(account)
+    return accounts
 
 
 def _dedupe_whitelist_accounts(accounts):
