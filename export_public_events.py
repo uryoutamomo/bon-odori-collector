@@ -18,11 +18,10 @@ import sqlite3
 import unicodedata
 import urllib.error
 import urllib.request
-from datetime import datetime, timedelta, timezone
-from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
 from song_processing.bon_odori_songs import extract_song_hints
 from event_model.event_series_normalization import series_event_name
+from event_model.year_context import normalize_target_year
 from master_rdb.master_db import MASTER_DB, connect_existing
 from public_json_postprocessors.apply_public_date_predictions import (
     OUT_REPORT as DATE_PREDICTION_REPORT,
@@ -70,10 +69,6 @@ DATE_PREDICTION_REPORT = os.environ.get(
 DATE_CANDIDATES_JSON = os.path.join(os.path.dirname(__file__), "data", "event_date_update_candidates.json")
 PUBLIC_EVENT_OVERRIDES_JSON = os.path.join(os.path.dirname(__file__), "data", "public_event_overrides.json")
 PUBLIC_SOURCE = os.environ.get("BON_ODORI_PUBLIC_SOURCE", "master_rdb").strip().lower()
-try:
-    JST = ZoneInfo("Asia/Tokyo")
-except ZoneInfoNotFoundError:
-    JST = timezone(timedelta(hours=9))
 PUBLIC_WEEKDAYS = ["月", "火", "水", "木", "金", "土", "日"]
 FALLBACK_SUPPRESSED_VENUES = {
     # 例大祭名の由来となる神社。実際の奉納踊り会場は青葉公園（港区立）なので、
@@ -781,7 +776,8 @@ def fetch_public_venues():
     return venues
 
 
-def build_public_events_from_notion():
+def build_public_events_from_notion(*, target_year):
+    target_year = normalize_target_year(target_year)
     venues = fetch_public_venues()
     date_candidates_by_event = load_date_candidates()
     song_occurrences = load_song_occurrences()
@@ -831,7 +827,7 @@ def build_public_events_from_notion():
             detail = public_detail_text(raw_detail)
             source_urls = extract_public_source_urls(raw_detail)
             songs = extract_song_hints(description, raw_detail)
-            occurrence_year = int(date[:4]) if date else 2026
+            occurrence_year = int(date[:4]) if date else target_year
             occurrence = song_occurrences.get(
                 _song_occurrence_key(public_name, v["venue"], occurrence_year)
             )
@@ -910,7 +906,9 @@ def build_public_events_from_notion():
     return events, len(covered), fallback, skipped
 
 
-def build_public_events_from_master(db_path=MASTER_DB):
+def build_public_events_from_master(db_path=MASTER_DB, *, target_year):
+    target_year = normalize_target_year(target_year)
+    previous_year = target_year - 1
     song_occurrences = load_song_occurrences()
     date_candidates_by_event = load_date_candidates()
     events, covered = [], set()
@@ -952,8 +950,8 @@ def build_public_events_from_master(db_path=MASTER_DB):
                 FROM occurrence_dates od
                 WHERE od.occurrence_id = o.occurrence_id
                   AND od.date_type = 'historical_reference'
-                  AND od.date_start >= '2025-01-01'
-                  AND od.date_start < '2026-01-01'
+                  AND od.date_start >= ?
+                  AND od.date_start < ?
                 ORDER BY od.date_start DESC
                 LIMIT 1
               ) AS historical_reference_date_start,
@@ -962,8 +960,8 @@ def build_public_events_from_master(db_path=MASTER_DB):
                 FROM occurrence_dates od
                 WHERE od.occurrence_id = o.occurrence_id
                   AND od.date_type = 'historical_reference'
-                  AND od.date_start >= '2025-01-01'
-                  AND od.date_start < '2026-01-01'
+                  AND od.date_start >= ?
+                  AND od.date_start < ?
                 ORDER BY od.date_start DESC
                 LIMIT 1
               ) AS historical_reference_date_end,
@@ -990,7 +988,13 @@ def build_public_events_from_master(db_path=MASTER_DB):
               AND o.lifecycle_status NOT IN ('merged', 'duplicate', 'rejected', 'superseded_by_curated')
             ORDER BY v.area, v.canonical_name, o.display_name, o.event_year
             """,
-            list(WARD_ORDER),
+            [
+                f"{previous_year:04d}-01-01",
+                f"{target_year:04d}-01-01",
+                f"{previous_year:04d}-01-01",
+                f"{target_year:04d}-01-01",
+                *WARD_ORDER,
+            ],
         ).fetchall()
 
     for row in rows:
@@ -1028,7 +1032,7 @@ def build_public_events_from_master(db_path=MASTER_DB):
         if rdb_songs.get(row["occurrence_id"]):
             songs = merge_song_occurrence_hints(songs, {"songs": rdb_songs[row["occurrence_id"]]})
         occurrence = song_occurrences.get(
-            _song_occurrence_key(public_name, row["venue"], int(row["event_year"] or 2026))
+            _song_occurrence_key(public_name, row["venue"], int(row["event_year"] or target_year))
         )
         songs = merge_song_occurrence_hints(songs, occurrence)
         songs = strip_song_internal_fields(songs)
@@ -1038,7 +1042,7 @@ def build_public_events_from_master(db_path=MASTER_DB):
             "_source": "master_rdb",
             "_occurrence_id": row["occurrence_id"],
             "_series_id": row["series_id"],
-            "_event_year": int(row["event_year"] or 2026),
+            "_event_year": int(row["event_year"] or target_year),
             "_venue_id": row["venue_id"],
             "_canonical_state_axes": has_canonical_axes,
             "name_confirmed": True,
@@ -1071,10 +1075,10 @@ def build_public_events_from_master(db_path=MASTER_DB):
     return events, len(covered), 0, 0
 
 
-def build_public_events():
+def build_public_events(*, target_year):
     if PUBLIC_SOURCE in {"notion", "legacy_notion"}:
-        return build_public_events_from_notion()
-    return build_public_events_from_master()
+        return build_public_events_from_notion(target_year=target_year)
+    return build_public_events_from_master(target_year=target_year)
 
 
 def write_public_js(path, events):
@@ -1088,12 +1092,12 @@ def write_public_js(path, events):
 def public_export_today(value=None):
     """Return the date used by date-sensitive public postprocessors."""
     value = value or os.environ.get("BON_ODORI_PUBLIC_TODAY")
-    if value:
-        parsed = parse_iso_public_date(value)
-        if not parsed:
-            raise ValueError(f"invalid public export today: {value}")
-        return parsed
-    return datetime.now(timezone.utc).astimezone(JST).date()
+    if not value:
+        raise ValueError("public export today is required")
+    parsed = parse_iso_public_date(value)
+    if not parsed:
+        raise ValueError(f"invalid public export today: {value}")
+    return parsed
 
 
 def parse_iso_public_date(value):
@@ -1108,15 +1112,21 @@ def parse_iso_public_date(value):
         return None
 
 
-def apply_public_recurrence_metadata(events, *, today=None):
+def apply_public_recurrence_metadata(events, *, target_year, today):
     """Attach public category and recurrence fields to the production export."""
     return enrich_public_events(
         events,
-        build_rows(events, today=public_export_today(today)),
+        build_rows(
+            events,
+            target_year=target_year,
+            today=public_export_today(today),
+        ),
     )
 
 
-def apply_public_site_postprocessors(events, *, today=None, prefer_existing_axes=False):
+def apply_public_site_postprocessors(
+    events, *, target_year, today, prefer_existing_axes=False
+):
     """Apply the public-site-only fields that used to be run as separate steps."""
     from public_json_postprocessors.apply_public_historical_references import (
         apply_historical_references,
@@ -1126,13 +1136,17 @@ def apply_public_site_postprocessors(events, *, today=None, prefer_existing_axes
 
     events = apply_historical_references(
         events,
-        target_year=2026,
+        target_year=target_year,
         today=public_export_today(today),
         fixed_date_rules=load_fixed_date_rules(),
     )["events"]
-    events = apply_display_tiers(events, prefer_existing_axes=prefer_existing_axes)
-    events = apply_season_hints(events, target_year=2026)["events"]
-    return apply_display_tiers(events, prefer_existing_axes=prefer_existing_axes)
+    events = apply_display_tiers(
+        events, prefer_existing_axes=prefer_existing_axes, target_year=target_year
+    )
+    events = apply_season_hints(events, target_year=target_year)["events"]
+    return apply_display_tiers(
+        events, prefer_existing_axes=prefer_existing_axes, target_year=target_year
+    )
 
 
 def sanitize_public_event_details(events):
@@ -1209,7 +1223,7 @@ def _prediction_key(row):
     return (str(row.get("event_name") or "").strip(), str(row.get("venue") or "").strip())
 
 
-def load_rdb_public_date_predictions(db_path=MASTER_DB, target_year=2026):
+def load_rdb_public_date_predictions(db_path=MASTER_DB, *, target_year):
     db_path = os.fspath(db_path)
     if not os.path.exists(db_path):
         return None
@@ -1299,9 +1313,30 @@ def require_no_prediction_json_fallback(payload):
     return payload
 
 
-def load_public_date_predictions_for_export(target_year=2026, db_path=MASTER_DB):
+def prediction_payload_for_target_year(payload, *, target_year):
+    """Discard stale JSON predictions from a different projection year."""
+    target_year = normalize_target_year(target_year)
+    payload = payload or {}
+    predictions = [
+        row
+        for row in payload.get("predictions") or []
+        if row.get("target_year") == target_year
+    ]
+    filtered = dict(payload)
+    filtered["target_year"] = target_year
+    filtered["predictions"] = predictions
+    summary = dict(filtered.get("summary") or {})
+    summary["prediction_count"] = len(predictions)
+    filtered["summary"] = summary
+    return filtered
+
+
+def load_public_date_predictions_for_export(*, target_year, db_path=MASTER_DB):
     rdb_payload = load_rdb_public_date_predictions(db_path, target_year=target_year)
-    json_payload = load_public_date_prediction_json(DATE_PREDICTIONS, {})
+    json_payload = prediction_payload_for_target_year(
+        load_public_date_prediction_json(DATE_PREDICTIONS, {}),
+        target_year=target_year,
+    )
     return require_no_prediction_json_fallback(merge_prediction_payloads(rdb_payload, json_payload))
 
 
@@ -1511,7 +1546,7 @@ def _is_weak_ambiguous_song(song):
     )
 
 
-def merge_replacement_songs(current, recurring):
+def merge_replacement_songs(current, recurring, *, previous_year):
     """Move useful last-year song evidence onto the current-year replacement card."""
     merged = {}
     for source in [current, recurring]:
@@ -1522,9 +1557,11 @@ def merge_replacement_songs(current, recurring):
             if source is recurring and _is_weak_ambiguous_song(raw_song):
                 continue
             song = {"name": name, "confidence": "hint", "source_count": 0} if isinstance(raw_song, str) else dict(raw_song)
-            if source is recurring and str(recurring.get("date") or "").startswith("2025-"):
+            if source is recurring and str(recurring.get("date") or "").startswith(
+                f"{previous_year}-"
+            ):
                 song["basis"] = "past_evidence"
-                song["basis_label"] = "2025年ヒント"
+                song["basis_label"] = f"{previous_year}年ヒント"
                 if song.get("probability") is None:
                     song["probability"] = 80
             key = _song_dedupe_key(name)
@@ -1537,14 +1574,15 @@ def merge_replacement_songs(current, recurring):
     )
 
 
-def suppress_replaced_recurring_events(events):
-    """Hide 2025 recurrence cards when the same venue/series has a 2026 card."""
+def suppress_replaced_recurring_events(events, *, target_year):
+    """Hide previous-year cards when the same venue/series has a target-year card."""
+    target_year = normalize_target_year(target_year)
     for event in events:
         event["name"] = series_event_name(event.get("name"))
     current_by_key = {
         public_series_key(event): event
         for event in events
-        if str(event.get("date") or "").startswith("2026-")
+        if str(event.get("date") or "").startswith(f"{target_year}-")
         and event.get("public_category") in {"upcoming", "ended"}
     }
     if not current_by_key:
@@ -1554,7 +1592,7 @@ def suppress_replaced_recurring_events(events):
             continue
         current = current_by_key.get(public_series_key(event))
         if current:
-            merge_replacement_songs(current, event)
+            merge_replacement_songs(current, event, previous_year=target_year - 1)
     return [
         event for event in events
         if not (
@@ -1564,15 +1602,18 @@ def suppress_replaced_recurring_events(events):
     ]
 
 
-def project_public_events(events, *, db_path=MASTER_DB, today=None):
+def project_public_events(events, *, target_year, db_path=MASTER_DB, today):
     """Run the production public-event projection without writing output files."""
     projection_today = public_export_today(today)
     events = apply_public_event_overrides(sanitize_public_event_details(events))
     events = suppress_replaced_recurring_events(
-        apply_public_recurrence_metadata(events, today=projection_today)
+        apply_public_recurrence_metadata(
+            events, target_year=target_year, today=projection_today
+        ),
+        target_year=target_year,
     )
     prediction_payload = load_public_date_predictions_for_export(
-        target_year=2026,
+        target_year=target_year,
         db_path=db_path,
     )
     prediction_result = apply_public_date_predictions(events, prediction_payload)
@@ -1587,10 +1628,13 @@ def project_public_events(events, *, db_path=MASTER_DB, today=None):
         for event in prediction_result["events"]
     )
     events = apply_display_tiers(
-        prediction_result["events"], prefer_existing_axes=prefer_existing_axes
+        prediction_result["events"],
+        prefer_existing_axes=prefer_existing_axes,
+        target_year=target_year,
     )
     events = apply_public_site_postprocessors(
         events,
+        target_year=target_year,
         today=projection_today,
         prefer_existing_axes=prefer_existing_axes,
     )
@@ -1606,19 +1650,28 @@ def main(argv=None):
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--today",
+        required=True,
         help="JST date used for public historical-reference expiry checks (YYYY-MM-DD).",
     )
+    parser.add_argument("--target-year", type=int, required=True)
     args = parser.parse_args(argv)
 
     if PUBLIC_SOURCE in {"notion", "legacy_notion"} and not os.environ.get("NOTION_API_TOKEN"):
         print("Notion未設定 (NOTION_API_TOKEN) のためイベント公開エクスポートをスキップ")
         return
     try:
-        events, covered, fallback, skipped = build_public_events()
+        events, covered, fallback, skipped = build_public_events(
+            target_year=args.target_year
+        )
     except urllib.error.HTTPError as e:
         print(f"イベント公開エクスポート失敗 (HTTP {e.code})。スキップ")
         return
-    projection = project_public_events(events, db_path=MASTER_DB, today=args.today)
+    projection = project_public_events(
+        events,
+        target_year=args.target_year,
+        db_path=MASTER_DB,
+        today=args.today,
+    )
     events = projection["events"]
     source_map = projection["source_map"]
     public_events = projection["public_events"]

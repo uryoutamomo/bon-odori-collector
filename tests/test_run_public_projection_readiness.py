@@ -19,6 +19,7 @@ class RunPublicProjectionReadinessTest(unittest.TestCase):
             public_events, source_map = MODULE.export_public_json(
                 "python3",
                 Path("/tmp/readiness"),
+                target_year=2026,
                 today="2026-07-16",
                 quiet=True,
             )
@@ -27,7 +28,17 @@ class RunPublicProjectionReadinessTest(unittest.TestCase):
         self.assertEqual(source_map, Path("/tmp/readiness/fresh_public/public_event_source_map.json"))
         command = run.call_args.args[0]
         env = run.call_args.kwargs["env"]
-        self.assertEqual(command, ["python3", "export_public_events.py"])
+        self.assertEqual(
+            command,
+            [
+                "python3",
+                "export_public_events.py",
+                "--target-year",
+                "2026",
+                "--today",
+                "2026-07-16",
+            ],
+        )
         self.assertEqual(env["BON_ODORI_PUBLIC_OUT_DIR"], "/tmp/readiness/fresh_public")
         self.assertEqual(
             env["BON_ODORI_PUBLIC_EVENT_SOURCE_MAP_JSON"],

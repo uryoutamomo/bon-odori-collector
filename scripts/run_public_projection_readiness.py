@@ -47,7 +47,13 @@ def run(command: list[str], env: dict[str, str] | None, quiet: bool) -> None:
     subprocess.run(command, cwd=ROOT, env=env, check=True)
 
 
-def export_public_json(python: str, out_dir: Path, today: str, quiet: bool) -> tuple[Path, Path]:
+def export_public_json(
+    python: str,
+    out_dir: Path,
+    target_year: int,
+    today: str,
+    quiet: bool,
+) -> tuple[Path, Path]:
     public_dir = out_dir / "fresh_public"
     source_map = public_dir / "public_event_source_map.json"
     env = dict(os.environ)
@@ -55,7 +61,18 @@ def export_public_json(python: str, out_dir: Path, today: str, quiet: bool) -> t
     env["BON_ODORI_PUBLIC_EVENT_SOURCE_MAP_JSON"] = str(source_map)
     env["BON_ODORI_PUBLIC_DATE_PREDICTION_REPORT"] = str(public_dir / "public_date_prediction_apply_result.json")
     env["BON_ODORI_PUBLIC_TODAY"] = today
-    run([python, "export_public_events.py"], env=env, quiet=quiet)
+    run(
+        [
+            python,
+            "export_public_events.py",
+            "--target-year",
+            str(target_year),
+            "--today",
+            today,
+        ],
+        env=env,
+        quiet=quiet,
+    )
     return public_dir / "events_public.json", source_map
 
 
@@ -310,7 +327,9 @@ def run_readiness(args: argparse.Namespace) -> dict[str, Any]:
     out_dir = root_path(args.out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
     with prepared_master_db(args.master_db):
-        public_events, source_map = export_public_json(args.python, out_dir, args.today, args.quiet)
+        public_events, source_map = export_public_json(
+            args.python, out_dir, args.target_year, args.today, args.quiet
+        )
         before_json = out_dir / "public_projection_source_compare.json"
         before_md = out_dir / "public_projection_source_compare.md"
         compare_projection(
@@ -386,7 +405,7 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         description="Run public projection readiness checks with a fresh internal source-map export."
     )
     parser.add_argument("--today", required=True, help="YYYY-MM-DD used by date-sensitive public export logic")
-    parser.add_argument("--target-year", type=int, default=2026)
+    parser.add_argument("--target-year", type=int, required=True)
     parser.add_argument("--python", default=sys.executable)
     parser.add_argument(
         "--master-db",

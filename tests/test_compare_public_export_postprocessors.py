@@ -34,6 +34,7 @@ class ComparePublicExportPostprocessorsTest(unittest.TestCase):
             MODULE.apply_legacy_overlay(
                 "python3",
                 Path("/tmp/events_public.json"),
+                target_year=2026,
                 today="2026-07-16",
                 quiet=True,
             )
@@ -43,6 +44,7 @@ class ComparePublicExportPostprocessorsTest(unittest.TestCase):
         self.assertEqual(commands[1][1:3], ["-m", "public_json_postprocessors.apply_public_historical_references"])
         self.assertIn("--today", commands[1])
         self.assertIn("2026-07-16", commands[1])
+        self.assertIn("--target-year", commands[1])
         self.assertEqual(commands[2][1:3], ["-m", "public_json_postprocessors.apply_public_season_hints"])
         flattened = "\n".join(" ".join(command) for command in commands)
         self.assertNotIn("deploy", flattened)

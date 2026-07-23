@@ -89,7 +89,9 @@ def run_scheduled(
         store=factory(args),
         adapted_snapshot=frozen_snapshot,
         observation_id=observation_id,
-        public_projection_digest=lambda db: digest_function(db, today=args.public_today),
+        public_projection_digest=lambda db: digest_function(
+            db, target_year=args.public_target_year, today=args.public_today
+        ),
         flags=flags,
         work_dir=Path(args.work_dir) if args.work_dir else None,
     )
@@ -115,6 +117,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--snapshot-out", type=Path, required=True)
     parser.add_argument("--report-out", type=Path, required=True)
     parser.add_argument("--observation-id", required=True)
+    parser.add_argument("--public-target-year", type=int, required=True)
     parser.add_argument("--public-today", required=True)
     parser.add_argument("--bucket", default="")
     parser.add_argument("--prefix", default="")

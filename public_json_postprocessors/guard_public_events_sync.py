@@ -17,7 +17,6 @@ from pathlib import Path
 
 from public_json_postprocessors.apply_public_display_tiers import apply_display_tiers
 from public_json_postprocessors.apply_public_historical_references import (
-    DEFAULT_TODAY,
     apply_historical_references,
     load_fixed_date_rules,
     parse_iso_date,
@@ -312,9 +311,9 @@ def apply_required_postprocessors(events, target_year, today, fixed_date_rules_p
         today=today,
         fixed_date_rules=load_fixed_date_rules(fixed_date_rules_path),
     )["events"]
-    processed = apply_display_tiers(processed)
+    processed = apply_display_tiers(processed, target_year=target_year)
     processed = apply_season_hints(processed, target_year=target_year)["events"]
-    return apply_display_tiers(processed)
+    return apply_display_tiers(processed, target_year=target_year)
 
 
 def guard_decision(raw, postprocessed, allow_individual_review, approval_summary=None):
@@ -518,8 +517,8 @@ def main():
     parser.add_argument("--master-db", default=str(MASTER_DB))
     parser.add_argument("--publication-gap-review", default=str(PUBLICATION_GAP_REVIEW))
     parser.add_argument("--reviewed-approvals", default=str(REVIEWED_APPROVALS))
-    parser.add_argument("--target-year", type=int, default=2026)
-    parser.add_argument("--today", default=DEFAULT_TODAY.isoformat())
+    parser.add_argument("--target-year", type=int, required=True)
+    parser.add_argument("--today", required=True)
     parser.add_argument("--allow-individual-review", action="store_true")
     parser.add_argument("--report-only", action="store_true")
     parser.add_argument("--out-json", default=str(OUT_JSON))

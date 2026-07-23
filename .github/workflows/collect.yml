@@ -77,11 +77,13 @@ jobs:
         AWS_REGION: ap-northeast-1
       run: |
         TODAY="$(TZ=Asia/Tokyo date +%F)"
+        TARGET_YEAR="${TODAY%%-*}"
         RSTART="$(python -c 'import json; print(json.load(open("data/bon_odori_master_manifest.json"))["database_checksum"])')"
         python run_event_state_axes_migration.py \
           --db data/bon_odori_master.sqlite \
           --derive-from-db \
           --today "$TODAY" \
+          --target-year "$TARGET_YEAR" \
           --execute \
           --confirm 'MIGRATE EVENT STATE AXES' \
           --report-out "$RUNNER_TEMP/event-state-axes-migration.json"
@@ -103,6 +105,7 @@ jobs:
           --db data/bon_odori_master.sqlite \
           --derive-from-db \
           --today "$TODAY" \
+          --target-year "$TARGET_YEAR" \
           --report-out "$RUNNER_TEMP/event-state-axes-rend.json"
         echo "ran=true" >> "$GITHUB_OUTPUT"
 
@@ -142,13 +145,15 @@ jobs:
       env:
         NOTION_API_TOKEN: ${{ secrets.NOTION_API_TOKEN }}
       run: |
-        python export_public_events.py
+        TODAY="$(TZ=Asia/Tokyo date +%F)"
+        TARGET_YEAR="${TODAY%%-*}"
+        python export_public_events.py --target-year "$TARGET_YEAR" --today "$TODAY"
         if python master_rdb_freeze_policy.py is-frozen legacy_song_occurrence_generation; then
           echo "[master-rdb] legacy song occurrence generation frozen: skip build_song_occurrences.py"
         else
           python build_song_occurrences.py
         fi
-        python export_public_events.py
+        python export_public_events.py --target-year "$TARGET_YEAR" --today "$TODAY"
         python build_event_song_candidates.py
         python build_x_news_digest_for_oto.py
         if [ -f data/x_news_digest_oto_reviews.json ]; then
@@ -252,6 +257,7 @@ jobs:
           exit 0
         fi
         TODAY="$(TZ=Asia/Tokyo date +%F)"
+        TARGET_YEAR="${TODAY%%-*}"
         python run_review_inbox_rare_signal_scheduled.py \
           --execute \
           --confirm 'RUN SCHEDULED RARE SIGNAL DUAL WRITE' \
@@ -259,6 +265,7 @@ jobs:
           --snapshot-out "$RUNNER_TEMP/rare-signal-inbox-snapshot.json" \
           --report-out "$RUNNER_TEMP/rare-signal-inbox-report.json" \
           --observation-id "github-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}" \
+          --public-target-year "$TARGET_YEAR" \
           --public-today "$TODAY"
         python master_db_s3_artifact.py fetch --overwrite
         python review_inbox.py --out-json data/review_inbox.json --status pending
@@ -306,6 +313,7 @@ jobs:
         REVIEW_INBOX_LEGACY_WRITER_ENABLED: 'false'
       run: |
         TODAY="$(TZ=Asia/Tokyo date +%F)"
+        TARGET_YEAR="${TODAY%%-*}"
         python run_review_inbox_youtube_scheduled.py \
           --execute \
           --confirm 'RUN SCHEDULED YOUTUBE AGGREGATE DUAL WRITE' \
@@ -315,6 +323,7 @@ jobs:
           --snapshot-out "$RUNNER_TEMP/youtube-aggregate-inbox-snapshot.json" \
           --report-out "$RUNNER_TEMP/youtube-aggregate-inbox-report.json" \
           --observation-id "github-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}" \
+          --public-target-year "$TARGET_YEAR" \
           --public-today "$TODAY"
         python master_db_s3_artifact.py fetch --overwrite
         python review_inbox.py --out-json data/review_inbox.json --status pending
@@ -362,6 +371,7 @@ jobs:
         REVIEW_INBOX_LEGACY_WRITER_ENABLED: 'false'
       run: |
         TODAY="$(TZ=Asia/Tokyo date +%F)"
+        TARGET_YEAR="${TODAY%%-*}"
         python run_review_inbox_low_priority_scheduled.py \
           --execute --confirm 'RUN SCHEDULED LOW PRIORITY DUAL WRITE' \
           --source daily_song_candidate=data/weekly_song_candidates_review.json \
@@ -371,6 +381,7 @@ jobs:
           --source publication_gap=data/publication_gap_review.json \
           --evidence-dir "$RUNNER_TEMP/low-priority-inbox" \
           --observation-id "github-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}" \
+          --public-target-year "$TARGET_YEAR" \
           --public-today "$TODAY"
         python master_db_s3_artifact.py fetch --overwrite
         python review_inbox.py --out-json data/review_inbox.json --status pending

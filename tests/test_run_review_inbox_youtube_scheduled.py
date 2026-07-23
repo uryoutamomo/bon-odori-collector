@@ -37,11 +37,11 @@ class FakeStore:
 
 
 def args_for(tmp, **overrides):
-    values = {"active_input":ROOT/"tests/fixtures/youtube_active_video_review_examples.json","year_input":ROOT/"data/youtube_year_backfill_review_queue.json","user_input":ROOT/"data/youtube_user_confirmation_queue.json","snapshot_out":Path(tmp)/"snapshot.json","report_out":Path(tmp)/"report.json","observation_id":"youtube-aggregate-123-1","public_today":"2026-07-20","bucket":"unused","prefix":"master-rdb","work_dir":Path(tmp)/"work","execute":True,"confirm":CONFIRM}
+    values = {"active_input":ROOT/"tests/fixtures/youtube_active_video_review_examples.json","year_input":ROOT/"data/youtube_year_backfill_review_queue.json","user_input":ROOT/"data/youtube_user_confirmation_queue.json","snapshot_out":Path(tmp)/"snapshot.json","report_out":Path(tmp)/"report.json","observation_id":"youtube-aggregate-123-1","public_target_year":2026,"public_today":"2026-07-20","bucket":"unused","prefix":"master-rdb","work_dir":Path(tmp)/"work","execute":True,"confirm":CONFIRM}
     values.update(overrides); return Namespace(**values)
 
 
-def fixed_digest(_database, *, today): return hashlib.sha256(today.encode()).hexdigest()
+def fixed_digest(_database, *, target_year, today): return hashlib.sha256(f"{target_year}:{today}".encode()).hexdigest()
 
 
 def test_default_off_stops_before_artifact_access():

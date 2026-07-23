@@ -146,7 +146,7 @@ class RunDailyYoutubeBackfillTest(unittest.TestCase):
         try:
             daily.run_command = lambda command: commands.append(command) or {"returncode": 0}
 
-            daily.regenerate_outputs(7, 2027)
+            daily.regenerate_outputs(7, 2027, "2027-06-17")
         finally:
             daily.run_command = original_run_command
 
@@ -155,7 +155,17 @@ class RunDailyYoutubeBackfillTest(unittest.TestCase):
             for command in commands
             if command[:2] == ["python3", "export_public_events.py"]
         ]
-        self.assertEqual(public_export_commands, [["python3", "export_public_events.py"]])
+        self.assertEqual(
+            public_export_commands,
+            [[
+                "python3",
+                "export_public_events.py",
+                "--target-year",
+                "2027",
+                "--today",
+                "2027-06-17",
+            ]],
+        )
         self.assertIn(
             [
                 "python3",

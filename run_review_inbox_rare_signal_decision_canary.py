@@ -104,7 +104,9 @@ def run_canary(
         expected_targets={
             args.inbox_id: {"source_id": "rare_signal", "source_key": args.source_key}
         },
-        public_projection_digest=lambda db: digest_function(db, today=args.public_today),
+        public_projection_digest=lambda db: digest_function(
+            db, target_year=args.public_target_year, today=args.public_today
+        ),
         expected_rstart_checksum=expected_rstart,
         flags=flags,
         work_dir=Path(args.work_dir) if args.work_dir else None,
@@ -131,6 +133,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--inbox-id", required=True)
     parser.add_argument("--source-key", required=True)
     parser.add_argument("--expect-rstart-checksum", required=True)
+    parser.add_argument("--public-target-year", type=int, required=True)
     parser.add_argument("--public-today", required=True, help="fixed JST date, YYYY-MM-DD")
     parser.add_argument("--bucket", default="")
     parser.add_argument("--prefix", default="")

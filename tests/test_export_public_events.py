@@ -19,6 +19,7 @@ from export_public_events import (
     merge_prediction_payloads,
     merge_song_occurrence_hints,
     parse_youtube_evidence,
+    prediction_payload_for_target_year,
     public_export_today,
     public_event_source_map,
     public_detail_text,
@@ -40,6 +41,11 @@ class ExportPublicEventsTest(unittest.TestCase):
             with self.assertRaises(ValueError):
                 public_export_today()
 
+    def test_public_export_today_rejects_missing_context(self):
+        with patch.dict("os.environ", {}, clear=True):
+            with self.assertRaisesRegex(ValueError, "required"):
+                public_export_today()
+
     def test_site_postprocessors_use_export_today_for_historical_slide_expiry(self):
         events = [{
             "name": "西綾瀬町会 夏祭り盆踊り大会",
@@ -52,7 +58,9 @@ class ExportPublicEventsTest(unittest.TestCase):
             "date": "2025-06-21",
         }]
 
-        result = apply_public_site_postprocessors(events, today="2026-06-26")
+        result = apply_public_site_postprocessors(
+            events, target_year=2026, today="2026-06-26"
+        )
 
         self.assertEqual(result[0]["historical_display_tier"], "historical_reference")
         self.assertEqual(result[0]["display_tier"], "historical_reference")
@@ -157,6 +165,19 @@ class ExportPublicEventsTest(unittest.TestCase):
         payload = {"summary": {"json_fallback_count": 0, "json_fallback": []}}
         self.assertIs(require_no_prediction_json_fallback(payload), payload)
 
+    def test_stale_json_predictions_are_excluded_from_2027_projection(self):
+        payload = {
+            "target_year": 2026,
+            "summary": {"prediction_count": 1},
+            "predictions": [{"target_year": 2026, "event_name": "旧予測"}],
+        }
+
+        filtered = prediction_payload_for_target_year(payload, target_year=2027)
+
+        self.assertEqual(filtered["target_year"], 2027)
+        self.assertEqual(filtered["predictions"], [])
+        self.assertEqual(filtered["summary"]["prediction_count"], 0)
+
     def test_master_export_does_not_mix_current_start_with_historical_end(self):
         with TemporaryDirectory() as tmp:
             db = Path(tmp) / "master.sqlite"
@@ -198,7 +219,7 @@ class ExportPublicEventsTest(unittest.TestCase):
             finally:
                 conn.close()
 
-            events, _, _, _ = build_public_events_from_master(db)
+            events, _, _, _ = build_public_events_from_master(db, target_year=2026)
 
         self.assertEqual(events[0]["date"], "2026-07-19")
         self.assertIsNone(events[0]["date_end"])
@@ -244,7 +265,7 @@ class ExportPublicEventsTest(unittest.TestCase):
             finally:
                 conn.close()
 
-            events, _, _, _ = build_public_events_from_master(db)
+            events, _, _, _ = build_public_events_from_master(db, target_year=2026)
 
         self.assertIsNone(events[0]["date"])
         self.assertIsNone(events[0]["date_end"])
@@ -579,7 +600,7 @@ class ExportPublicEventsTest(unittest.TestCase):
             "date": "2025-07-25",
             "date_end": "2025-07-26",
             "status": "開催終了",
-        }])
+        }], target_year=2026, today="2026-06-17")
 
         self.assertEqual(rows[0]["public_category"], "recurring_last_year")
         self.assertGreaterEqual(rows[0]["recurrence_score"], 0.55)
@@ -632,9 +653,9 @@ class ExportPublicEventsTest(unittest.TestCase):
                     {"name": "春駒", "confidence": "hint", "source_count": 1, "probability": 80},
                 ],
             },
-        ])
+        ], target_year=2026, today="2026-06-17")
 
-        filtered = suppress_replaced_recurring_events(rows)
+        filtered = suppress_replaced_recurring_events(rows, target_year=2026)
 
         self.assertEqual([row["name"] for row in filtered], [
             "西綾瀬町会 夏祭り盆踊り大会",
@@ -666,9 +687,9 @@ class ExportPublicEventsTest(unittest.TestCase):
                     {"name": "新橋音頭", "confidence": "hint", "source_count": 2, "probability": 80},
                 ],
             },
-        ])
+        ], target_year=2026, today="2026-06-17")
 
-        filtered = suppress_replaced_recurring_events(rows)
+        filtered = suppress_replaced_recurring_events(rows, target_year=2026)
 
         self.assertEqual([row["name"] for row in filtered], ["新橋こいち祭"])
         self.assertEqual([song["name"] for song in filtered[0]["songs"]], ["新橋音頭", "東京音頭"])
@@ -902,7 +923,9 @@ class ExportPublicEventsTest(unittest.TestCase):
                 )
                 conn.commit()
 
-            events, covered, fallback, skipped = build_public_events_from_master(db_path)
+            events, covered, fallback, skipped = build_public_events_from_master(
+                db_path, target_year=2026
+            )
 
         self.assertEqual(covered, 1)
         self.assertEqual(fallback, 0)

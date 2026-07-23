@@ -77,6 +77,7 @@ def args_for(tmp, checksum, **overrides):
         "inbox_id": INBOX_ID,
         "source_key": SOURCE_KEY,
         "expect_rstart_checksum": checksum,
+        "public_target_year": 2026,
         "public_today": "2026-07-20",
         "bucket": "unused",
         "prefix": "master-rdb",

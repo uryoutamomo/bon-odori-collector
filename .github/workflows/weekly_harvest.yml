@@ -68,13 +68,15 @@ jobs:
 
     - name: Refresh public events from master RDB
       run: |
-        python export_public_events.py
+        TODAY="$(TZ=Asia/Tokyo date +%F)"
+        TARGET_YEAR="${TODAY%%-*}"
+        python export_public_events.py --target-year "$TARGET_YEAR" --today "$TODAY"
         if python master_rdb_freeze_policy.py is-frozen legacy_song_occurrence_generation; then
           echo "[master-rdb] legacy song occurrence generation frozen: skip build_song_occurrences.py"
         else
           python build_song_occurrences.py
         fi
-        python export_public_events.py
+        python export_public_events.py --target-year "$TARGET_YEAR" --today "$TODAY"
         python build_song_ocr_queue.py
         if python master_rdb_freeze_policy.py is-frozen legacy_song_occurrence_generation; then
           echo "[master-rdb] legacy song occurrence generation frozen: skip calibrate_song_predictions.py"

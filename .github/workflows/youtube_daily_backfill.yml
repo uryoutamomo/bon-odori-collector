@@ -90,6 +90,8 @@ jobs:
 
     - name: Run YouTube daily backfill
       run: |
+        TODAY="$(TZ=Asia/Tokyo date +%F)"
+        TARGET_YEAR="${TODAY%%-*}"
         FLAGS=""
         if [ "$DRY_RUN" = "true" ]; then
           FLAGS="$FLAGS --dry-run"
@@ -98,6 +100,8 @@ jobs:
           FLAGS="$FLAGS --max-batches $MAX_BATCHES"
         fi
         python run_daily_youtube_backfill.py \
+          --target-year "$TARGET_YEAR" \
+          --as-of "$TODAY" \
           --month 6 \
           --auto-next-month \
           --focus-month 6 \

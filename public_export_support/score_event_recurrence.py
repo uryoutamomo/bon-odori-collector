@@ -5,9 +5,12 @@ from __future__ import annotations
 
 import json
 import re
+import argparse
 from collections import Counter
 from datetime import date
 from pathlib import Path
+
+from event_model.year_context import EventYearContext
 
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -15,7 +18,6 @@ EVENTS_PATH = ROOT / "data/public/events_public.json"
 OUT_JSON = ROOT / "data/event_recurrence_candidates.json"
 OUT_MD = ROOT / "data/event_recurrence_candidates.md"
 OUT_PUBLIC_PREVIEW = ROOT / "data/public/events_public_with_recurrence.json"
-TODAY = date(2026, 6, 17)
 
 
 RECURRING_KEYWORDS = [
@@ -111,20 +113,22 @@ def label_for_score(score: float) -> tuple[str, str]:
     return "日程未確認", "date_unknown"
 
 
-def score_2025_candidate(event: dict) -> tuple[float, list[str], list[str], int | None]:
+def score_previous_year_candidate(
+    event: dict, *, previous_year: int
+) -> tuple[float, list[str], list[str], int | None]:
     text = event_text(event)
     reasons: list[str] = []
     cautions: list[str] = []
     edition_number = parse_edition_number(event.get("name"))
     score = 0.45
 
-    if "2025" in text:
+    if str(previous_year) in text:
         score += 0.05
-        reasons.append("held_2025")
+        reasons.append(f"held_{previous_year}")
     if "公式確認URL" in text or "公式" in text:
         score += 0.08
         reasons.append("official_or_semi_official_evidence")
-    if "youtube_evidence" in text or "YouTube 2025" in text:
+    if "youtube_evidence" in text or f"YouTube {previous_year}" in text:
         score += 0.04
         reasons.append("video_evidence")
     if event.get("venue"):
@@ -161,48 +165,51 @@ def score_2025_candidate(event: dict) -> tuple[float, list[str], list[str], int 
         score -= min(0.20, 0.05 * len(one_shot_hits))
         cautions.extend(f"単発/企画色:{word}" for word in one_shot_hits[:4])
 
-    if re.search(r"2025\b|2025年", str(event.get("name") or "")):
+    if re.search(rf"{previous_year}\b|{previous_year}年", str(event.get("name") or "")):
         score -= 0.05
-        cautions.append("イベント名に2025明記")
+        cautions.append(f"イベント名に{previous_year}明記")
 
     score = max(0.05, min(0.90, score))
     return round(score, 2), reasons, cautions, edition_number
 
 
-def public_status_for_event(event: dict, *, today: date = TODAY) -> dict:
+def public_status_for_event(event: dict, *, target_year: int, today: date) -> dict:
+    context = EventYearContext(target_year=target_year, as_of=today)
     start = parse_iso_date(event.get("date"))
     end = parse_iso_date(event.get("date_end")) or start
     status = event.get("status")
     year = start.year if start else None
 
-    if year == 2026 and end and end >= today:
+    if year == context.target_year and end and end >= context.as_of:
         return {
             "public_status": "upcoming_confirmed",
             "public_category": "upcoming",
             "public_status_label": "今後開催",
-            "recurrence_label": "2026年確認済み",
+            "recurrence_label": f"{context.target_year}年確認済み",
             "recurrence_score": 0.95,
-            "reasons": ["2026年日付確認済み"],
+            "reasons": [f"{context.target_year}年日付確認済み"],
             "cautions": [],
             "edition_number": parse_edition_number(event.get("name")),
             "last_seen_year": None,
         }
 
-    if year == 2026:
+    if year == context.target_year:
         return {
-            "public_status": "ended_2026",
+            "public_status": f"ended_{context.target_year}",
             "public_category": "ended",
             "public_status_label": "開催終了",
-            "recurrence_label": "2026年開催終了",
+            "recurrence_label": f"{context.target_year}年開催終了",
             "recurrence_score": 0.98,
-            "reasons": ["2026年開催済み"],
+            "reasons": [f"{context.target_year}年開催済み"],
             "cautions": [],
             "edition_number": parse_edition_number(event.get("name")),
             "last_seen_year": None,
         }
 
-    if year == 2025:
-        score, reasons, cautions, edition_number = score_2025_candidate(event)
+    if year == context.previous_year:
+        score, reasons, cautions, edition_number = score_previous_year_candidate(
+            event, previous_year=context.previous_year
+        )
         label, public_status = label_for_score(score)
         return {
             "public_status": public_status,
@@ -213,7 +220,7 @@ def public_status_for_event(event: dict, *, today: date = TODAY) -> dict:
             "reasons": reasons,
             "cautions": cautions,
             "edition_number": edition_number,
-            "last_seen_year": 2025,
+            "last_seen_year": context.previous_year,
         }
 
     score = 0.25 if event.get("months") or event.get("hints") else 0.15
@@ -231,7 +238,7 @@ def public_status_for_event(event: dict, *, today: date = TODAY) -> dict:
         "recurrence_label": "日程未確認",
         "recurrence_score": score,
         "reasons": reasons,
-        "cautions": ["2026年日程なし"],
+        "cautions": [f"{context.target_year}年日程なし"],
         "edition_number": parse_edition_number(event.get("name")),
         "last_seen_year": None,
     }
@@ -245,13 +252,13 @@ def summarize_date(event: dict) -> str:
     return start or "日程未確認"
 
 
-def public_note(row: dict) -> str:
+def public_note(row: dict, *, target_year: int) -> str:
     status = row.get("public_status")
     date_text = summarize_date(row)
     if status == "upcoming_confirmed":
-        return f"2026年日程確認済み: {date_text}"
-    if status == "ended_2026":
-        return f"2026年開催終了: {date_text}"
+        return f"{target_year}年日程確認済み: {date_text}"
+    if status == f"ended_{target_year}":
+        return f"{target_year}年開催終了: {date_text}"
     if status in {"expected_high", "expected_medium", "expected_low"}:
         if row.get("edition_number"):
             return f"第{row['edition_number']}回・昨年開催: {date_text}。今年の日程は未確認です。"
@@ -259,10 +266,13 @@ def public_note(row: dict) -> str:
     return "今年の日程は未確認です。"
 
 
-def build_rows(events: list[dict], *, today: date = TODAY) -> list[dict]:
+def build_rows(events: list[dict], *, target_year: int, today: date) -> list[dict]:
+    context = EventYearContext(target_year=target_year, as_of=today)
     rows = []
     for event in events:
-        scored = public_status_for_event(event, today=today)
+        scored = public_status_for_event(
+            event, target_year=context.target_year, today=context.as_of
+        )
         start = parse_iso_date(event.get("date"))
         row = {
             "event_key": event_key(event),
@@ -286,7 +296,7 @@ def build_rows(events: list[dict], *, today: date = TODAY) -> list[dict]:
             "last_seen_dates": [value for value in [event.get("date"), event.get("date_end")] if value],
             "needs_review": scored["public_status"] in {"expected_high", "expected_medium"},
         }
-        row["public_note"] = public_note(row)
+        row["public_note"] = public_note(row, target_year=context.target_year)
         rows.append(row)
     return rows
 
@@ -316,14 +326,14 @@ def enrich_public_events(events: list[dict], rows: list[dict]) -> list[dict]:
     return enriched
 
 
-def sort_rows(rows: list[dict]) -> list[dict]:
+def sort_rows(rows: list[dict], *, target_year: int) -> list[dict]:
     status_order = {
         "upcoming_confirmed": 0,
         "expected_high": 1,
         "expected_medium": 2,
         "expected_low": 3,
         "date_unknown": 4,
-        "ended_2026": 5,
+        f"ended_{target_year}": 5,
     }
     return sorted(
         rows,
@@ -337,7 +347,7 @@ def sort_rows(rows: list[dict]) -> list[dict]:
     )
 
 
-def render_md(rows: list[dict]) -> str:
+def render_md(rows: list[dict], *, target_year: int) -> str:
     counts = Counter(row["public_status"] for row in rows)
     labels = {
         "upcoming_confirmed": "今後開催",
@@ -345,7 +355,7 @@ def render_md(rows: list[dict]) -> str:
         "expected_medium": "昨年開催・継続性 中",
         "expected_low": "昨年開催・継続性 低",
         "date_unknown": "日程未確認",
-        "ended_2026": "開催終了",
+        f"ended_{target_year}": "開催終了",
     }
     lines = [
         "# 再開催見込みスコア 初版",
@@ -355,13 +365,20 @@ def render_md(rows: list[dict]) -> str:
         "## 件数",
         "",
     ]
-    for key in ["upcoming_confirmed", "expected_high", "expected_medium", "expected_low", "date_unknown", "ended_2026"]:
+    for key in [
+        "upcoming_confirmed",
+        "expected_high",
+        "expected_medium",
+        "expected_low",
+        "date_unknown",
+        f"ended_{target_year}",
+    ]:
         lines.append(f"- {labels[key]}: {counts.get(key, 0)}")
 
     lines.extend(
         [
             "",
-            "## 要レビュー（中〜高、2026日付なし）",
+            f"## 要レビュー（中〜高、{target_year}日付なし）",
             "",
             "| score | label | 日付/実績 | 区 | イベント | 会場 | 理由 | 注意 |",
             "|---:|---|---|---|---|---|---|---|",
@@ -401,18 +418,27 @@ def render_md(rows: list[dict]) -> str:
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--target-year", type=int, required=True)
+    parser.add_argument("--as-of", required=True, help="YYYY-MM-DD")
+    args = parser.parse_args()
+    context = EventYearContext(target_year=args.target_year, as_of=args.as_of)
     events = read_json(EVENTS_PATH)
-    rows = sort_rows(build_rows(events))
+    rows = sort_rows(
+        build_rows(events, target_year=context.target_year, today=context.as_of),
+        target_year=context.target_year,
+    )
     output = {
-        "generated_at": "2026-06-17",
+        "generated_at": context.as_of.isoformat(),
         "source": str(EVENTS_PATH.relative_to(ROOT)),
-        "today": TODAY.isoformat(),
+        "target_year": context.target_year,
+        "today": context.as_of.isoformat(),
         "count": len(rows),
         "status_counts": dict(Counter(row["public_status"] for row in rows)),
         "rows": rows,
     }
     write_json(OUT_JSON, output)
-    OUT_MD.write_text(render_md(rows), encoding="utf-8")
+    OUT_MD.write_text(render_md(rows, target_year=context.target_year), encoding="utf-8")
     write_json(OUT_PUBLIC_PREVIEW, enrich_public_events(events, rows))
     print(f"wrote {OUT_JSON}")
     print(f"wrote {OUT_MD}")

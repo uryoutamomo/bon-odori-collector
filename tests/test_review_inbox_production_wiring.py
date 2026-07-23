@@ -150,7 +150,9 @@ class ReviewInboxProductionWiringTest(unittest.TestCase):
             db = Path(tmp) / "master.sqlite"
             make_master(db)
             with mock.patch("export_public_events.load_public_date_predictions_for_export", return_value={}):
-                before = wiring.public_projection_digest(db, today="2026-07-18")
+                before = wiring.public_projection_digest(
+                    db, target_year=2026, today="2026-07-18"
+                )
                 with closing(sqlite3.connect(db)) as conn:
                     upsert_inbox_items(
                         conn,
@@ -162,7 +164,9 @@ class ReviewInboxProductionWiringTest(unittest.TestCase):
                         }],
                     )
                     conn.commit()
-                after = wiring.public_projection_digest(db, today="2026-07-18")
+                after = wiring.public_projection_digest(
+                    db, target_year=2026, today="2026-07-18"
+                )
 
         self.assertEqual(before, after)
         self.assertEqual(len(before), 64)

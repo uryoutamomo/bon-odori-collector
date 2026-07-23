@@ -13,12 +13,21 @@ SPEC.loader.exec_module(MODULE)
 
 class PublishPublicDataFlowTest(unittest.TestCase):
     def test_default_commands_stop_before_guard_and_deploy(self):
-        commands = MODULE.build_commands("python3", with_guard=False)
+        commands = MODULE.build_commands(
+            "python3", target_year=2026, today="2026-07-16", with_guard=False
+        )
 
         self.assertEqual(
             commands,
             [
-                ["python3", "export_public_events.py"],
+                [
+                    "python3",
+                    "export_public_events.py",
+                    "--target-year",
+                    "2026",
+                    "--today",
+                    "2026-07-16",
+                ],
                 ["python3", "-m", "public_export_support.build_publication_gap_review"],
                 ["python3", "-m", "public_json_postprocessors.review_missing_occurrence_venues"],
                 ["python3", "-m", "review_console_ops.run_review_console", "--inventory"],
@@ -30,16 +39,37 @@ class PublishPublicDataFlowTest(unittest.TestCase):
         self.assertNotIn("deploy", flattened)
 
     def test_guard_is_explicit_report_only_step(self):
-        commands = MODULE.build_commands("python3", with_guard=True)
+        commands = MODULE.build_commands(
+            "python3", target_year=2026, today="2026-07-16", with_guard=True
+        )
 
         self.assertEqual(
             commands[-1],
-            ["python3", "-m", "public_json_postprocessors.guard_public_events_sync", "--report-only"],
+            [
+                "python3",
+                "-m",
+                "public_json_postprocessors.guard_public_events_sync",
+                "--target-year",
+                "2026",
+                "--today",
+                "2026-07-16",
+                "--report-only",
+            ],
         )
 
     def test_dry_run_does_not_execute_commands(self):
         with patch.object(MODULE.subprocess, "run") as run:
-            MODULE.main(["--dry-run", "--python", "python3"])
+            MODULE.main(
+                [
+                    "--dry-run",
+                    "--python",
+                    "python3",
+                    "--target-year",
+                    "2026",
+                    "--today",
+                    "2026-07-16",
+                ]
+            )
 
         run.assert_not_called()
 

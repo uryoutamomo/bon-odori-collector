@@ -14,7 +14,7 @@ class ApplyPublicSeasonHintsTest(unittest.TestCase):
             "hints": [[8, 27]],
         }]
 
-        result = apply_season_hints(events)
+        result = apply_season_hints(events, target_year=2026)
 
         self.assertEqual(result["report"]["target_count"], 1)
         self.assertEqual(result["report"]["applied_count"], 1)
@@ -34,7 +34,7 @@ class ApplyPublicSeasonHintsTest(unittest.TestCase):
             "hints": [],
         }]
 
-        result = apply_season_hints(events)
+        result = apply_season_hints(events, target_year=2026)
 
         self.assertEqual(result["report"]["target_count"], 1)
         self.assertEqual(result["report"]["applied_count"], 0)
@@ -50,11 +50,24 @@ class ApplyPublicSeasonHintsTest(unittest.TestCase):
             "season_months": [7],
         }]
 
-        result = apply_season_hints(events)
+        result = apply_season_hints(events, target_year=2026)
 
         self.assertEqual(result["report"]["target_count"], 0)
         self.assertNotIn("season_hint", result["events"][0])
         self.assertNotIn("season_months", result["events"][0])
+
+    def test_2027_context_is_recorded_in_season_hint(self):
+        events = [{
+            "name": "翌年シーズンヒント",
+            "venue": "中央公園",
+            "public_category": "date_unknown",
+            "months": [8],
+        }]
+
+        result = apply_season_hints(events, target_year=2027)
+
+        self.assertEqual(result["report"]["target_year"], 2027)
+        self.assertEqual(result["events"][0]["season_hint"]["target_year"], 2027)
 
 
 if __name__ == "__main__":

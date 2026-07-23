@@ -77,14 +77,30 @@ def export_env(base: dict[str, str], out_dir: Path, report_path: Path, today: st
     return env
 
 
-def export_once(python: str, out_dir: Path, today: str, quiet: bool) -> Path:
+def export_once(
+    python: str, out_dir: Path, target_year: int, today: str, quiet: bool
+) -> Path:
     report_path = out_dir / "public_date_prediction_apply_result.json"
     env = export_env(os.environ, out_dir, report_path, today)
-    run([python, "export_public_events.py"], env=env, cwd=ROOT, quiet=quiet)
+    run(
+        [
+            python,
+            "export_public_events.py",
+            "--target-year",
+            str(target_year),
+            "--today",
+            today,
+        ],
+        env=env,
+        cwd=ROOT,
+        quiet=quiet,
+    )
     return out_dir / "events_public.json"
 
 
-def apply_legacy_overlay(python: str, events_path: Path, today: str, quiet: bool) -> None:
+def apply_legacy_overlay(
+    python: str, events_path: Path, target_year: int, today: str, quiet: bool
+) -> None:
     events_js = events_path.with_suffix(".js")
     report_dir = events_path.parent
     run(
@@ -100,6 +116,8 @@ def apply_legacy_overlay(python: str, events_path: Path, today: str, quiet: bool
             str(events_js),
             "--report",
             str(report_dir / "legacy_date_prediction_report.json"),
+            "--target-year",
+            str(target_year),
         ],
         env=dict(os.environ),
         cwd=ROOT,
@@ -118,6 +136,8 @@ def apply_legacy_overlay(python: str, events_path: Path, today: str, quiet: bool
             str(events_js),
             "--today",
             today,
+            "--target-year",
+            str(target_year),
             "--report",
             str(report_dir / "legacy_historical_reference_report.json"),
         ],
@@ -138,6 +158,8 @@ def apply_legacy_overlay(python: str, events_path: Path, today: str, quiet: bool
             str(events_js),
             "--report",
             str(report_dir / "legacy_season_hint_report.json"),
+            "--target-year",
+            str(target_year),
         ],
         env=dict(os.environ),
         cwd=ROOT,
@@ -176,25 +198,40 @@ def first_diff(left: Any, right: Any, path: str = "$") -> dict[str, Any] | None:
     return None
 
 
-def compare(today: str, python: str, quiet: bool, master_db: str | None = None) -> dict[str, Any]:
+def compare(
+    target_year: int,
+    today: str,
+    python: str,
+    quiet: bool,
+    master_db: str | None = None,
+) -> dict[str, Any]:
     with prepared_master_db(master_db):
-        return _compare_prepared(today=today, python=python, quiet=quiet)
+        return _compare_prepared(
+            target_year=target_year, today=today, python=python, quiet=quiet
+        )
 
 
-def _compare_prepared(today: str, python: str, quiet: bool) -> dict[str, Any]:
+def _compare_prepared(
+    target_year: int, today: str, python: str, quiet: bool
+) -> dict[str, Any]:
     if not MASTER_DB.exists():
         raise SystemExit(f"Master DB is missing: {MASTER_DB}")
     with tempfile.TemporaryDirectory(prefix="public-export-compare-") as tmp:
         tmp_dir = Path(tmp)
-        current_path = export_once(python, tmp_dir / "current", today, quiet)
-        legacy_path = export_once(python, tmp_dir / "legacy", today, quiet)
-        apply_legacy_overlay(python, legacy_path, today, quiet)
+        current_path = export_once(
+            python, tmp_dir / "current", target_year, today, quiet
+        )
+        legacy_path = export_once(
+            python, tmp_dir / "legacy", target_year, today, quiet
+        )
+        apply_legacy_overlay(python, legacy_path, target_year, today, quiet)
 
         current = load_json(current_path)
         legacy = load_json(legacy_path)
         equal = current == legacy
         return {
             "status": "pass" if equal else "fail",
+            "target_year": target_year,
             "today": today,
             "event_count_current": len(current),
             "event_count_legacy_overlay": len(legacy),
@@ -210,6 +247,7 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         description="Compare export_public_events.py with export plus legacy postprocessor overlay."
     )
     parser.add_argument("--today", required=True, help="YYYY-MM-DD date used by date-sensitive postprocessors")
+    parser.add_argument("--target-year", type=int, required=True)
     parser.add_argument("--python", default=sys.executable, help="Python executable used for child commands")
     parser.add_argument(
         "--master-db",
@@ -222,7 +260,13 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
 
 def main(argv: list[str] | None = None) -> int:
     args = parse_args(argv)
-    report = compare(today=args.today, python=args.python, quiet=args.quiet, master_db=args.master_db)
+    report = compare(
+        target_year=args.target_year,
+        today=args.today,
+        python=args.python,
+        quiet=args.quiet,
+        master_db=args.master_db,
+    )
     out_json = ROOT / args.out_json
     out_json.parent.mkdir(parents=True, exist_ok=True)
     out_json.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
