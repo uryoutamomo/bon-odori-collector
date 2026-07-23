@@ -1,6 +1,7 @@
 import sqlite3
 import tempfile
 import unittest
+from contextlib import closing
 from argparse import Namespace
 from pathlib import Path
 from unittest import mock
@@ -10,7 +11,7 @@ import apply_ph2_shinagawa_second_venue_review as script
 
 class ApplyPh2ShinagawaSecondVenueReviewTest(unittest.TestCase):
     def make_db(self, path):
-        with sqlite3.connect(path) as conn:
+        with closing(sqlite3.connect(path)) as conn:
             conn.executescript(
                 """
                 CREATE TABLE venues (
@@ -77,7 +78,7 @@ class ApplyPh2ShinagawaSecondVenueReviewTest(unittest.TestCase):
             self.assertIn(script.ALIAS, result["after"]["aliases"])
             self.assertEqual(result["foreign_key_issues"], [])
 
-            with sqlite3.connect(db) as conn:
+            with closing(sqlite3.connect(db)) as conn:
                 jobs = conn.execute("SELECT COUNT(*) FROM notion_sync_jobs").fetchone()[0]
             self.assertEqual(jobs, 0)
 

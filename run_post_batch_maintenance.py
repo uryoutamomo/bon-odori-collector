@@ -9,6 +9,7 @@ import json
 import os
 import sqlite3
 from collections import Counter
+from contextlib import closing
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -202,7 +203,7 @@ def master_rdb_report(db_path, target_year):
         return info
 
     uri = f"file:{db_path.as_posix()}?mode=ro"
-    with sqlite3.connect(uri, uri=True) as conn:
+    with closing(sqlite3.connect(uri, uri=True)) as conn:
         counts = table_counts(conn)
         target = {
             "year": target_year,

@@ -2,6 +2,7 @@ import json
 import sqlite3
 import tempfile
 import unittest
+from contextlib import closing
 from argparse import Namespace
 from io import BytesIO
 from pathlib import Path
@@ -41,7 +42,7 @@ class FakeS3:
 
 
 def make_db(path):
-    with sqlite3.connect(path) as conn:
+    with closing(sqlite3.connect(path)) as conn:
         conn.execute("CREATE TABLE sample(id INTEGER PRIMARY KEY, name TEXT)")
         conn.execute("INSERT INTO sample(name) VALUES ('bon')")
         conn.commit()
@@ -56,6 +57,17 @@ class MasterDbS3ArtifactTest(unittest.TestCase):
                 connect_existing(missing)
 
             self.assertFalse(missing.exists())
+
+    def test_connect_existing_closes_connection_after_context_block(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            db = Path(tmp) / "master.sqlite"
+            make_db(db)
+
+            with connect_existing(db) as conn:
+                self.assertEqual(conn.execute("SELECT COUNT(*) FROM sample").fetchone()[0], 1)
+
+            with self.assertRaises(sqlite3.ProgrammingError):
+                conn.execute("SELECT 1")
 
     def test_artifact_keys_use_latest_and_snapshot_paths(self):
         keys = artifact.artifact_keys("prefix/", snapshot_id="snap1")

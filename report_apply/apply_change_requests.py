@@ -775,10 +775,11 @@ def run(args):
 
 def sqlite_connect(path):
     import sqlite3
+    from contextlib import closing
 
     conn = sqlite3.connect(path)
     conn.execute("PRAGMA foreign_keys = ON")
-    return conn
+    return closing(conn)
 
 
 def main():

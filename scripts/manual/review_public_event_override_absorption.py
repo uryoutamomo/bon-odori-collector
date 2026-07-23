@@ -10,6 +10,7 @@ import argparse
 import json
 import sqlite3
 from collections import Counter
+from contextlib import closing
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -81,7 +82,7 @@ def rdb_occurrence(conn, name):
 def notion_event(snapshot_db, name):
     if not Path(snapshot_db).exists():
         return {}
-    with sqlite3.connect(snapshot_db) as conn:
+    with closing(sqlite3.connect(snapshot_db)) as conn:
         result = rows(
             conn,
             """

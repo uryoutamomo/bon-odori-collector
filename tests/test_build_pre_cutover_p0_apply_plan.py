@@ -4,6 +4,7 @@ import tempfile
 import unittest
 import importlib.util
 from argparse import Namespace
+from contextlib import closing
 from pathlib import Path
 
 
@@ -46,7 +47,7 @@ class BuildPreCutoverP0ApplyPlanTest(unittest.TestCase):
                 ),
                 encoding="utf-8",
             )
-            with sqlite3.connect(master_db) as conn:
+            with closing(sqlite3.connect(master_db)) as conn:
                 conn.execute(
                     """
                     CREATE TABLE occurrence_dates(

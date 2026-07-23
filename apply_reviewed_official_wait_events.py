@@ -12,6 +12,7 @@ import json
 import shutil
 import sqlite3
 from collections import Counter
+from contextlib import closing
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -515,7 +516,7 @@ def main() -> None:
         copy_db(target_db, dry_run_db)
         working_db = dry_run_db
 
-    with sqlite3.connect(working_db) as conn:
+    with closing(sqlite3.connect(working_db)) as conn:
         conn.execute("PRAGMA foreign_keys = ON")
         before_counts = table_counts(conn)
         planned, skipped, plan_issues = build_plan(conn)

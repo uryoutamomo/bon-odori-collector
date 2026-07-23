@@ -2,6 +2,7 @@ import json
 import sqlite3
 import tempfile
 import unittest
+from contextlib import closing
 from argparse import Namespace
 from pathlib import Path
 from unittest import mock
@@ -11,7 +12,7 @@ import apply_notion_drift_public_intro as script
 
 class ApplyNotionDriftPublicIntroTest(unittest.TestCase):
     def make_db(self, path):
-        with sqlite3.connect(path) as conn:
+        with closing(sqlite3.connect(path)) as conn:
             conn.executescript(
                 """
                 CREATE TABLE event_series (
@@ -71,9 +72,9 @@ class ApplyNotionDriftPublicIntroTest(unittest.TestCase):
 
             self.assertFalse(result["applied"])
             self.assertEqual(result["summary"]["applied_count"], 1)
-            with sqlite3.connect(tmp / "master.sqlite") as conn:
+            with closing(sqlite3.connect(tmp / "master.sqlite")) as conn:
                 original = conn.execute("SELECT public_intro FROM event_series").fetchone()[0]
-            with sqlite3.connect(tmp / "dry.sqlite") as conn:
+            with closing(sqlite3.connect(tmp / "dry.sqlite")) as conn:
                 copied = conn.execute("SELECT public_intro FROM event_series").fetchone()[0]
             self.assertEqual(original, "")
             self.assertEqual(copied, "渋谷・宮下公園の芝生の上で開かれる現代型の盆踊り。")
@@ -90,7 +91,7 @@ class ApplyNotionDriftPublicIntroTest(unittest.TestCase):
 
             self.assertTrue(result["applied"])
             self.assertEqual(result["summary"]["applied_count"], 1)
-            with sqlite3.connect(tmp / "master.sqlite") as conn:
+            with closing(sqlite3.connect(tmp / "master.sqlite")) as conn:
                 intro = conn.execute("SELECT public_intro FROM event_series").fetchone()[0]
                 jobs = conn.execute("SELECT COUNT(*) FROM notion_sync_jobs").fetchone()[0]
             self.assertEqual(intro, "渋谷・宮下公園の芝生の上で開かれる現代型の盆踊り。")

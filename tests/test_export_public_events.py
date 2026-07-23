@@ -1,4 +1,5 @@
 import sqlite3
+from contextlib import closing
 import unittest
 from pathlib import Path
 from tempfile import TemporaryDirectory
@@ -776,7 +777,7 @@ class ExportPublicEventsTest(unittest.TestCase):
     def test_master_export_uses_historical_reference_date_for_unknown_2026_occurrence(self):
         with TemporaryDirectory() as tmp:
             db_path = Path(tmp) / "master.sqlite"
-            with sqlite3.connect(db_path) as conn:
+            with closing(sqlite3.connect(db_path)) as conn:
                 conn.executescript(
                     """
                     CREATE TABLE venues (
@@ -899,6 +900,7 @@ class ExportPublicEventsTest(unittest.TestCase):
                         "2026-07-01T00:00:00+00:00",
                     ),
                 )
+                conn.commit()
 
             events, covered, fallback, skipped = build_public_events_from_master(db_path)
 

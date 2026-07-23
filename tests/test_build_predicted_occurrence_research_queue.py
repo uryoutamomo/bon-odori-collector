@@ -1,6 +1,7 @@
 import sqlite3
 import tempfile
 import unittest
+from contextlib import closing
 from datetime import date
 from pathlib import Path
 
@@ -9,7 +10,7 @@ import build_predicted_occurrence_research_queue as queue_builder
 
 class BuildPredictedOccurrenceResearchQueueTest(unittest.TestCase):
     def make_db(self, path):
-        with sqlite3.connect(path) as conn:
+        with closing(sqlite3.connect(path)) as conn:
             conn.executescript(
                 """
                 CREATE TABLE venues (

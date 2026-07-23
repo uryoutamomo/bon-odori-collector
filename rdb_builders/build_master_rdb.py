@@ -5,6 +5,7 @@ import json
 import re
 import sqlite3
 from collections import Counter, defaultdict
+from contextlib import closing
 from datetime import date
 from pathlib import Path
 
@@ -56,7 +57,7 @@ def write_json(path, data):
 
 
 def rows(db_path, table):
-    with sqlite3.connect(db_path) as conn:
+    with closing(sqlite3.connect(db_path)) as conn:
         conn.row_factory = sqlite3.Row
         return [dict(row) for row in conn.execute(f"SELECT * FROM {table}")]
 

@@ -10,6 +10,7 @@ import json
 import re
 import sqlite3
 from collections import Counter
+from contextlib import closing
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -222,7 +223,7 @@ def audit_rdb(path):
         }, [compact_issue("rdb_missing", "high", "RDB sqlite snapshot is missing.", {"database": str(path)})]
 
     issues = []
-    with sqlite3.connect(path) as conn:
+    with closing(sqlite3.connect(path)) as conn:
         counts = {
             table: table_count(conn, table)
             for table in [

@@ -53,6 +53,7 @@ class ReviewPredictedOccurrenceDatesTest(unittest.TestCase):
             )
             """
         )
+        self.addCleanup(conn.close)
         return conn
 
     def test_linked_confirmed_occurrence_can_supersede_different_series_prediction(self):

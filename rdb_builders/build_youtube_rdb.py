@@ -4,6 +4,7 @@ import argparse
 import json
 import sqlite3
 import tempfile
+from contextlib import closing
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -328,7 +329,7 @@ def create_db(path, channels, videos, official_urls, event_matches, occurrences,
     with tempfile.NamedTemporaryFile(dir=path.parent, prefix=".tmp-youtube-rdb-", suffix=".sqlite", delete=False) as handle:
         tmp_path = Path(handle.name)
     try:
-        with sqlite3.connect(tmp_path) as conn:
+        with closing(sqlite3.connect(tmp_path)) as conn:
             conn.executescript(SCHEMA)
             conn.executemany(
                 """
@@ -401,7 +402,7 @@ def create_db(path, channels, videos, official_urls, event_matches, occurrences,
 
 
 def table_counts(path):
-    with sqlite3.connect(path) as conn:
+    with closing(sqlite3.connect(path)) as conn:
         return {
             name: conn.execute(f"SELECT COUNT(*) FROM {name}").fetchone()[0]
             for name in [

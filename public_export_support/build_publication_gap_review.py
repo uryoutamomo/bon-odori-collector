@@ -6,6 +6,7 @@ from __future__ import annotations
 import json
 import sqlite3
 from collections import Counter
+from contextlib import closing
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -108,7 +109,7 @@ def event_publication_blockers(public_events: list[Any]) -> tuple[list[dict[str,
     rows: list[dict[str, Any]] = []
     reason_counts: Counter[str] = Counter()
 
-    with sqlite3.connect(MASTER_DB_PATH) as conn:
+    with closing(sqlite3.connect(MASTER_DB_PATH)) as conn:
         conn.row_factory = sqlite3.Row
         series_status_filter = "AND s.status = 'active'" if has_table_column(conn, "event_series", "status") else ""
         query = f"""

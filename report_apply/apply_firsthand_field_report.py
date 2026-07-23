@@ -17,6 +17,7 @@ dry-run report lists the candidates so koto can ask Uchida-san to disambiguate a
 
 import argparse
 import json
+from contextlib import closing
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -302,7 +303,7 @@ def run(args):
 
     if args.apply:
         copy_db(args.master_db, PREFLIGHT_DB)
-        with connect_existing(PREFLIGHT_DB) as conn:
+        with closing(connect_existing(PREFLIGHT_DB)) as conn:
             conn.execute("PRAGMA foreign_keys = ON")
             preflight_applied, preflight_change_issues = apply_change(conn, report, now)
             preflight_issues = preflight_change_issues + consistency_checks(conn, preflight_applied)
@@ -322,7 +323,7 @@ def run(args):
 
     committed = False
     rolled_back = False
-    with connect_existing(target_db) as conn:
+    with closing(connect_existing(target_db)) as conn:
         conn.execute("PRAGMA foreign_keys = ON")
         applied, change_issues = apply_change(conn, report, now)
         issues = change_issues + consistency_checks(conn, applied)

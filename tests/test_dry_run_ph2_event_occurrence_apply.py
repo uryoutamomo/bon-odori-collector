@@ -59,6 +59,7 @@ class DryRunPh2EventOccurrenceApplyTest(unittest.TestCase):
             """
         )
         conn.commit()
+        self.addCleanup(conn.close)
         return conn
 
     def test_current_official_apply_does_not_queue_notion_sync_job(self):

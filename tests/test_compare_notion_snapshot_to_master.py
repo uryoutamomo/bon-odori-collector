@@ -1,6 +1,7 @@
 import sqlite3
 import tempfile
 import unittest
+from contextlib import closing
 from pathlib import Path
 
 import compare_notion_snapshot_to_master as compare
@@ -11,7 +12,7 @@ class CompareNotionSnapshotToMasterTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as name:
             tmp = Path(name)
             notion_db = tmp / "notion.sqlite"
-            with sqlite3.connect(notion_db) as conn:
+            with closing(sqlite3.connect(notion_db)) as conn:
                 conn.executescript(
                     """
                     CREATE TABLE notion_events (
@@ -41,7 +42,7 @@ class CompareNotionSnapshotToMasterTest(unittest.TestCase):
                     ("page_2026", "Sample Bon Dance", "", "", "", "", "", "紹介文", "https://example.com"),
                 )
 
-            with sqlite3.connect(":memory:") as conn:
+            with closing(sqlite3.connect(":memory:")) as conn:
                 conn.executescript(
                     """
                     CREATE TABLE external_record_links (

@@ -5,6 +5,7 @@ import json
 import re
 import sqlite3
 import tempfile
+from contextlib import closing
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlparse, parse_qs
@@ -178,7 +179,7 @@ def youtube_video_id(url):
 
 
 def table_rows(db_path, table):
-    with sqlite3.connect(db_path) as conn:
+    with closing(sqlite3.connect(db_path)) as conn:
         conn.row_factory = sqlite3.Row
         return [dict(row) for row in conn.execute(f"SELECT * FROM {table}")]
 
@@ -609,7 +610,7 @@ def create_db(path, rows):
     with tempfile.NamedTemporaryFile(dir=path.parent, prefix=".tmp-bon-odori-rdb-", suffix=".sqlite", delete=False) as handle:
         tmp_path = Path(handle.name)
     try:
-        with sqlite3.connect(tmp_path) as conn:
+        with closing(sqlite3.connect(tmp_path)) as conn:
             conn.executescript(SCHEMA)
             conn.executemany("INSERT INTO events VALUES (:event_id, :event_name, :start_date, :end_date, :status, :detail, :source_url)", rows["events"])
             conn.executemany("INSERT INTO venues VALUES (:venue_id, :venue_name, :area, :address, :access, :scale)", rows["venues"])
@@ -677,7 +678,7 @@ def create_db(path, rows):
 
 
 def table_counts(path):
-    with sqlite3.connect(path) as conn:
+    with closing(sqlite3.connect(path)) as conn:
         return {
             name: conn.execute(f"SELECT COUNT(*) FROM {name}").fetchone()[0]
             for name in [

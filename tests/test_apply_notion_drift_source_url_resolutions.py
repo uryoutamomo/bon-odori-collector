@@ -1,6 +1,7 @@
 import sqlite3
 import tempfile
 import unittest
+from contextlib import closing
 from argparse import Namespace
 from pathlib import Path
 from unittest import mock
@@ -10,7 +11,7 @@ import apply_notion_drift_source_url_resolutions as script
 
 class ApplyNotionDriftSourceUrlResolutionsTest(unittest.TestCase):
     def make_db(self, path):
-        with sqlite3.connect(path) as conn:
+        with closing(sqlite3.connect(path)) as conn:
             conn.executescript(
                 """
                 CREATE TABLE event_series (
@@ -48,9 +49,9 @@ class ApplyNotionDriftSourceUrlResolutionsTest(unittest.TestCase):
             self.assertFalse(result["applied"])
             self.assertEqual(result["summary"]["applied_count"], 1)
             item = script.SERIES_SOURCE_URL_UPDATES[0]
-            with sqlite3.connect(tmp / "master.sqlite") as conn:
+            with closing(sqlite3.connect(tmp / "master.sqlite")) as conn:
                 original = conn.execute("SELECT source_url FROM event_series").fetchone()[0]
-            with sqlite3.connect(tmp / "dry.sqlite") as conn:
+            with closing(sqlite3.connect(tmp / "dry.sqlite")) as conn:
                 copied = conn.execute("SELECT source_url FROM event_series").fetchone()[0]
             self.assertEqual(original, item["old_source_url"])
             self.assertEqual(copied, item["new_source_url"])
@@ -66,7 +67,7 @@ class ApplyNotionDriftSourceUrlResolutionsTest(unittest.TestCase):
 
             self.assertTrue(result["applied"])
             self.assertEqual(result["summary"]["applied_count"], 1)
-            with sqlite3.connect(tmp / "master.sqlite") as conn:
+            with closing(sqlite3.connect(tmp / "master.sqlite")) as conn:
                 value = conn.execute("SELECT source_url FROM event_series").fetchone()[0]
             self.assertEqual(value, script.SERIES_SOURCE_URL_UPDATES[0]["new_source_url"])
 

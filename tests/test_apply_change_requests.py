@@ -1,9 +1,12 @@
+import argparse
+import json
 import sqlite3
 import tempfile
 import unittest
 from pathlib import Path
 from unittest.mock import patch
 
+import report_apply.apply_change_requests as apply_change_requests
 from report_apply.apply_change_requests import apply_payload, validate_apply_allowed, validate_payload
 from master_rdb.master_db import SCHEMA
 
@@ -520,6 +523,125 @@ class ApplyChangeRequestsTests(unittest.TestCase):
 
         with self.assertRaisesRegex(ValueError, "dry_run_only"):
             validate_apply_allowed(payload)
+
+
+class SqliteConnectHelperTests(unittest.TestCase):
+    def test_closes_connection_after_with_block(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            db_path = Path(tmp) / "helper.sqlite"
+            setup_conn = sqlite3.connect(db_path)
+            setup_conn.execute("CREATE TABLE t (x INTEGER)")
+            setup_conn.commit()
+            setup_conn.close()
+
+            with apply_change_requests.sqlite_connect(db_path) as conn:
+                conn.execute("SELECT 1")
+
+            with self.assertRaises(sqlite3.ProgrammingError):
+                conn.execute("SELECT 1")
+
+
+class RunConnectionLifecycleTests(unittest.TestCase):
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.tmp.cleanup)
+        self.tmp_path = Path(self.tmp.name)
+
+        self.master_db = self.tmp_path / "master.sqlite"
+        conn = sqlite3.connect(self.master_db)
+        conn.executescript(SCHEMA)
+        conn.execute(
+            """
+            INSERT INTO venues(
+              venue_id, canonical_name, normalized_name, area, address,
+              review_status, created_at, updated_at
+            ) VALUES ('venue_old', '旧会場', '旧会場', '中央区', '東京都中央区1-1', 'active', 'now', 'now')
+            """
+        )
+        conn.execute(
+            """
+            INSERT INTO event_series(
+              series_id, series_key, canonical_name, normalized_name,
+              annual_months_json, status, created_at, updated_at
+            ) VALUES ('series_1', 'sample', 'サンプル盆踊り', 'サンプル盆踊り', '[]', 'active', 'now', 'now')
+            """
+        )
+        conn.execute(
+            """
+            INSERT INTO event_occurrences(
+              occurrence_id, series_id, event_year, occurrence_sequence,
+              display_name, venue_id, date_status, lifecycle_status,
+              confidence, created_at, updated_at
+            ) VALUES ('occ_1', 'series_1', 2026, 1, 'サンプル盆踊り', 'venue_old', 'unknown', 'draft', 'unknown', 'now', 'now')
+            """
+        )
+        conn.commit()
+        conn.close()
+
+        self.requests_path = self.tmp_path / "requests.json"
+        self.requests_path.write_text(
+            json.dumps(
+                {
+                    "request_type": "rdb_change_requests",
+                    "requests": [
+                        {
+                            "request_id": "confirm_date",
+                            "change_type": "confirm_current_year_date",
+                            "occurrence_id": "occ_1",
+                            "event_year": 2026,
+                            "date_start": "2026-07-20",
+                            "source": {"url": "https://example.com/official", "kind": "official_current_year"},
+                        }
+                    ],
+                }
+            ),
+            encoding="utf-8",
+        )
+
+    def _make_args(self, apply=False, confirm=""):
+        return argparse.Namespace(
+            requests=self.requests_path,
+            master_db=self.master_db,
+            out_db=self.tmp_path / "out.sqlite",
+            out_json=self.tmp_path / "out.json",
+            out_md=self.tmp_path / "out.md",
+            apply=apply,
+            confirm=confirm,
+        )
+
+    def _wrap_sqlite_connect(self, opened):
+        real_sqlite_connect = apply_change_requests.sqlite_connect
+
+        def wrapper(path):
+            ctx = real_sqlite_connect(path)
+            opened.append(ctx.thing)
+            return ctx
+
+        return wrapper
+
+    def test_dry_run_closes_target_connection(self):
+        opened = []
+        with patch.object(apply_change_requests, "sqlite_connect", side_effect=self._wrap_sqlite_connect(opened)):
+            apply_change_requests.run(self._make_args(apply=False))
+
+        self.assertEqual(len(opened), 1)
+        with self.assertRaises(sqlite3.ProgrammingError):
+            opened[0].execute("SELECT 1")
+
+    def test_apply_closes_preflight_and_target_connections(self):
+        opened = []
+        preflight_db = self.tmp_path / "preflight.sqlite"
+        backup_dir = self.tmp_path / "backups"
+        with patch.object(apply_change_requests, "sqlite_connect", side_effect=self._wrap_sqlite_connect(opened)), \
+                patch.object(apply_change_requests, "PREFLIGHT_DB", preflight_db), \
+                patch.object(apply_change_requests, "BACKUP_DIR", backup_dir), \
+                patch.object(apply_change_requests, "refresh_manifest_database_state"):
+            apply_change_requests.run(self._make_args(apply=True, confirm="APPLY CHANGE REQUESTS"))
+
+        self.assertEqual(len(opened), 2)
+        for conn in opened:
+            with self.assertRaises(sqlite3.ProgrammingError):
+                conn.execute("SELECT 1")
 
 
 if __name__ == "__main__":

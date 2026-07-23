@@ -5,6 +5,7 @@ import json
 import os
 import sqlite3
 from collections import Counter
+from contextlib import closing
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -50,7 +51,7 @@ def count_table(path, table):
     if not path.exists():
         return None
     uri = f"file:{path.as_posix()}?mode=ro"
-    with sqlite3.connect(uri, uri=True) as conn:
+    with closing(sqlite3.connect(uri, uri=True)) as conn:
         exists = conn.execute(
             "SELECT 1 FROM sqlite_master WHERE type='table' AND name = ?",
             (table,),
@@ -95,7 +96,7 @@ def audit(args):
         issues.append(issue("high", "master_db_missing", "Master DB is missing.", {"path": str(db_path)}))
         return build_result(args, {}, issues)
 
-    with connect_existing(db_path) as conn:
+    with closing(connect_existing(db_path)) as conn:
         conn.execute("PRAGMA foreign_keys = ON")
         counts = table_counts(conn)
         fk_rows = conn.execute("PRAGMA foreign_key_check").fetchall()

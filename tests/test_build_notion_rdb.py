@@ -1,9 +1,12 @@
 import sqlite3
 import tempfile
 import unittest
+from contextlib import closing
 from pathlib import Path
+from unittest.mock import patch
 
-from rdb_builders.build_notion_rdb import build_rows, create_db, prop_plain
+import rdb_builders.build_notion_rdb as build_notion_rdb_module
+from rdb_builders.build_notion_rdb import build_rows, create_db, prop_plain, table_counts
 
 
 def title_prop(value):
@@ -79,7 +82,7 @@ class BuildNotionRdbTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             db_path = Path(tmp) / "notion.sqlite"
             create_db(db_path, rows)
-            with sqlite3.connect(db_path) as conn:
+            with closing(sqlite3.connect(db_path)) as conn:
                 page_count = conn.execute("SELECT COUNT(*) FROM notion_pages").fetchone()[0]
                 event = conn.execute(
                     "SELECT event_name, start_date, end_date FROM notion_events"
@@ -91,6 +94,38 @@ class BuildNotionRdbTest(unittest.TestCase):
             self.assertEqual(page_count, 2)
             self.assertEqual(event, ("山王音頭と民踊大会", "2026-06-13", "2026-06-15"))
             self.assertEqual(relation, ("event1", "会場", "venue1"))
+
+    def test_create_db_and_table_counts_close_their_connections(self):
+        empty_rows = {
+            "sources": [],
+            "pages": [],
+            "properties": [],
+            "relations": [],
+            "events": [],
+            "venues": [],
+            "songs": [],
+            "plans": [],
+            "glossary": [],
+        }
+        with tempfile.TemporaryDirectory() as tmp:
+            db_path = Path(tmp) / "notion.sqlite"
+
+            opened_connections = []
+            real_connect = sqlite3.connect
+
+            def _tracking_connect(*args, **kwargs):
+                conn = real_connect(*args, **kwargs)
+                opened_connections.append(conn)
+                return conn
+
+            with patch.object(build_notion_rdb_module.sqlite3, "connect", side_effect=_tracking_connect):
+                create_db(db_path, empty_rows)
+                table_counts(db_path)
+
+            self.assertGreaterEqual(len(opened_connections), 2)
+            for conn in opened_connections:
+                with self.assertRaises(sqlite3.ProgrammingError):
+                    conn.execute("SELECT 1")
 
 
 if __name__ == "__main__":
