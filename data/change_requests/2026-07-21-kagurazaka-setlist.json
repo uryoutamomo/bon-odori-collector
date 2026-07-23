@@ -1,0 +1,36 @@
+{
+  "request_type": "rdb_change_requests",
+  "requests": [
+    {
+      "request_id": "kagurazaka_2026_firsthand_setlist_20260721",
+      "change_type": "add_song_evidence",
+      "occurrence_id": "occ_a73c7ed17c227fad",
+      "evidence_mode": "firsthand_observed",
+      "songs": [
+        {"title": "東京音頭"},
+        {"title": "大東京音頭"},
+        {"title": "炭坑節"},
+        {"title": "八木節"},
+        {"title": "ゆかた音頭"},
+        {"title": "ドンパン節", "note": "現地掲示では『どんぱん節』表記。既存曲マスターへ正規化。"},
+        {"title": "オバQ音頭"},
+        {"title": "バハマ・ママ"},
+        {"title": "真っ赤な太陽"},
+        {"title": "どうでもいいよ"},
+        {"title": "マリーゴールド"},
+        {"title": "真夏の果実"},
+        {"title": "湘南盆踊り"},
+        {"title": "ダンシングヒーロー"},
+        {"title": "365日の紙飛行機"}
+      ],
+      "source": {
+        "source_key": "uchida_firsthand",
+        "platform": "personal_firsthand",
+        "kind": "firsthand_attendance",
+        "title": "神楽坂盆踊り2026 現地曲目掲示と内田さん補足",
+        "text_excerpt": "現地写真の曲目掲示14曲に加え、内田さんから『365日の紙飛行機』も追加されたとの補足あり。"
+      },
+      "note": "[firsthand] 神楽坂夏まつり 盆踊り in 神楽坂（2026年7月19日〜20日）の現地曲目。写真掲示14曲と、現地補足の『365日の紙飛行機』を実測曲として追加。具体の参加日は未特定のため、開催回全体へ紐付け。"
+    }
+  ]
+}
