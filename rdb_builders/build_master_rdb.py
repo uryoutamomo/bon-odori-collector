@@ -6,11 +6,11 @@ import re
 import sqlite3
 from collections import Counter, defaultdict
 from contextlib import closing
-from datetime import date
 from pathlib import Path
 
 from event_model.event_series_normalization import series_event_name
 from event_model.event_state_axes import axes_from_legacy_occurrence
+from event_model.year_context import EventYearContext
 from master_rdb.master_db import (
     MASTER_DB,
     MASTER_MANIFEST,
@@ -34,7 +34,6 @@ OUT_REPORT_MD = DATA / "master_rdb_ph0_dry_run_report.md"
 OBSERVED_PROMOTION_CANDIDATES = DATA / "observed_promotion_candidates.json"
 REGISTERED_EVENT_INVESTIGATION_QUEUE = DATA / "registered_event_investigation_queue.json"
 HISTORICAL_PROMOTION_CANDIDATES = DATA / "historical_promotion_candidates.json"
-TODAY = date(2026, 6, 20)
 TOKYO_23_AREAS = {
     "千代田区", "中央区", "港区", "新宿区", "文京区", "台東区", "墨田区", "江東区",
     "品川区", "目黒区", "大田区", "世田谷区", "渋谷区", "中野区", "杉並区", "豊島区",
@@ -62,7 +61,7 @@ def rows(db_path, table):
         return [dict(row) for row in conn.execute(f"SELECT * FROM {table}")]
 
 
-def parse_year(*values, default=2026):
+def parse_year(*values, default):
     for value in values:
         match = re.search(r"(20\d{2})", str(value or ""))
         if match:
@@ -79,13 +78,13 @@ def parse_months(value):
     return months
 
 
-def date_status(status, start_date):
+def date_status(status, start_date, *, as_of):
     status = status or ""
     if "中止" in status:
         return "cancelled"
     if not start_date:
         return "unknown"
-    if start_date < TODAY.isoformat():
+    if start_date < as_of.isoformat():
         return "ended"
     if status in {"確認済み", "終了"}:
         return "confirmed"
@@ -101,8 +100,9 @@ def lifecycle_status(status):
 
 
 class MasterBuilder:
-    def __init__(self, conn):
+    def __init__(self, conn, *, year_context):
         self.conn = conn
+        self.year_context = year_context
         self.now = now_utc()
         self.venue_by_page = {}
         self.venue_by_norm = {}
@@ -277,7 +277,9 @@ class MasterBuilder:
             self.occurrence_sequence[key] += 1
             sequence = self.occurrence_sequence[key]
             occurrence_id = stable_id("occ", series_id, event_year, sequence)
-            dstatus = date_status(status, date_start)
+            dstatus = date_status(
+                status, date_start, as_of=self.year_context.as_of
+            )
             legacy_lifecycle = lifecycle_status(status)
             axes = axes_from_legacy_occurrence(
                 {
@@ -287,7 +289,8 @@ class MasterBuilder:
                     "lifecycle_status": legacy_lifecycle,
                     "source_kind": source_kind or "",
                     "source_url": source_url or "",
-                }
+                },
+                target_year=self.year_context.target_year,
             )
             self.conn.execute(
                 """
@@ -416,7 +419,11 @@ def build_from_notion(builder, notion_db):
     for row in events:
         venue_ids = [builder.venue_by_page.get(page_id) for page_id in event_venues.get(row["page_id"], [])]
         venue_id = next((item for item in venue_ids if item), None)
-        year = parse_year(row.get("start_date"), row.get("event_name"), default=2026)
+        year = parse_year(
+            row.get("start_date"),
+            row.get("event_name"),
+            default=builder.year_context.target_year,
+        )
         series_id = builder.add_series(
             row.get("event_name"),
             venue_id=venue_id,
@@ -493,7 +500,10 @@ def build_from_song_occurrences(builder, path):
     for occurrence in data.get("occurrences") or []:
         event_name = occurrence.get("event_name") or ""
         venue_name = occurrence.get("venue") or ""
-        year = int(occurrence.get("year") or parse_year(event_name))
+        year = int(
+            occurrence.get("year")
+            or parse_year(event_name, default=builder.year_context.target_year)
+        )
         venue_id = builder.venue_for_name(venue_name)
         flags = quality_flags(event_name, venue_name)
         if "venue_looks_like_text_fragment" in flags:
@@ -692,8 +702,12 @@ def render_markdown(report):
 
 
 def build(args):
+    year_context = EventYearContext(
+        target_year=args.target_year,
+        as_of=args.as_of,
+    )
     conn = init_db(args.out_db, force_rebuild_from_snapshot=args.force_rebuild_from_snapshot)
-    builder = MasterBuilder(conn)
+    builder = MasterBuilder(conn, year_context=year_context)
     source_counts = {}
     source_counts.update(build_from_notion(builder, Path(args.notion_db)))
     source_counts.update(build_from_song_occurrences(builder, Path(args.song_occurrences)))
@@ -704,6 +718,8 @@ def build(args):
         "generated_by": "build_master_rdb.py",
         "generated_at": now_utc(),
         "dry_run": True,
+        "target_year": year_context.target_year,
+        "as_of": year_context.as_of.isoformat(),
         "database": str(args.out_db),
         "schema": str(args.out_schema),
         "sources": {
@@ -720,6 +736,8 @@ def build(args):
         "generated_by": "build_master_rdb.py",
         "generated_at": report["generated_at"],
         "dry_run": True,
+        "target_year": year_context.target_year,
+        "as_of": year_context.as_of.isoformat(),
         "database": str(args.out_db),
         "schema": str(args.out_schema),
         "table_counts": counts,
@@ -754,6 +772,8 @@ def main():
     parser.add_argument("--manifest", default=str(MASTER_MANIFEST))
     parser.add_argument("--report", default=str(OUT_REPORT))
     parser.add_argument("--report-md", default=str(OUT_REPORT_MD))
+    parser.add_argument("--target-year", type=int, required=True)
+    parser.add_argument("--as-of", required=True)
     parser.add_argument("--force-rebuild-from-snapshot", action="store_true",
                         help="Force rebuild from snapshot even if applied manual changes exist")
     args = parser.parse_args()

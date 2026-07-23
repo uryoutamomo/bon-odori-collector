@@ -8,6 +8,8 @@ from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
+from event_model.year_context import normalize_target_year
+
 from youtube_backfill.build_event_date_predictions import (
     OBSERVATIONS,
     date_rule_candidates,
@@ -174,7 +176,8 @@ def observation_warnings(series_key, observations):
     return warnings
 
 
-def build_rules(payload, target_year=2026):
+def build_rules(payload, target_year):
+    target_year = normalize_target_year(target_year)
     grouped = defaultdict(list)
     actual_by_series = defaultdict(list)
     for row in payload.get("observations") or []:
@@ -298,7 +301,7 @@ def render_markdown(data):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--observations", default=str(OBSERVATIONS))
-    parser.add_argument("--target-year", type=int, default=2026)
+    parser.add_argument("--target-year", type=int, required=True)
     parser.add_argument("--out", default=str(OUT))
     parser.add_argument("--md-out", default=str(MD_OUT))
     args = parser.parse_args()

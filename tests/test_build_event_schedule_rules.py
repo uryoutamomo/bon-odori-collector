@@ -47,6 +47,17 @@ class BuildEventScheduleRulesTest(unittest.TestCase):
         self.assertIn("fixed_date", {candidate["rule_type"] for candidate in row["candidate_rules"]})
         self.assertEqual(row["rule"]["rule_confidence"], "high")
 
+    def test_rule_payload_records_explicit_2027_target(self):
+        rows = [
+            observation("s1", "丸の内de盆踊り", "行幸通り", 2025, "2025-07-25"),
+            observation("s1", "丸の内de盆踊り", "行幸通り", 2026, "2026-07-31"),
+        ]
+
+        data = build_rules(payload(rows), target_year=2027)
+
+        self.assertEqual(data["target_year"], 2027)
+        self.assertEqual(data["rules"][0]["rule"]["predicted_date_start"], "2027-07-30")
+
 
 if __name__ == "__main__":
     unittest.main()
