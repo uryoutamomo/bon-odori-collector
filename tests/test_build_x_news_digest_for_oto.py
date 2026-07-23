@@ -1,6 +1,12 @@
+import sqlite3
+import tempfile
 import unittest
+from pathlib import Path
+from unittest.mock import patch
 
-from build_x_news_digest_for_oto import build_candidates
+import build_x_news_digest_for_oto as digest_module
+from build_x_news_digest_for_oto import build_candidates, load_master_catalog
+from master_rdb.master_db import init_db
 
 
 class BuildRareSignalCandidatesTest(unittest.TestCase):
@@ -109,6 +115,29 @@ class BuildRareSignalCandidatesTest(unittest.TestCase):
         self.assertEqual(row["poster_image_evidence"]["priority"], "critical")
         self.assertTrue(row["poster_image_evidence"]["trusted_informant"])
         self.assertEqual(row["source_media_urls"], ["https://pbs.twimg.com/media/poster.jpg"])
+
+    def test_load_master_catalog_closes_its_connection(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            db_path = Path(tmp) / "master.sqlite"
+            conn = init_db(db_path)
+            conn.commit()
+            conn.close()
+
+            opened_connections = []
+            real_connect = sqlite3.connect
+
+            def _tracking_connect(*args, **kwargs):
+                conn = real_connect(*args, **kwargs)
+                opened_connections.append(conn)
+                return conn
+
+            with patch.object(digest_module.sqlite3, "connect", side_effect=_tracking_connect):
+                load_master_catalog(db_path)
+
+        self.assertTrue(opened_connections)
+        for conn in opened_connections:
+            with self.assertRaises(sqlite3.ProgrammingError):
+                conn.execute("SELECT 1")
 
 
 if __name__ == "__main__":

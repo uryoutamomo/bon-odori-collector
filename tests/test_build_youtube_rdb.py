@@ -1,8 +1,11 @@
 import sqlite3
 import tempfile
 import unittest
+from contextlib import closing
 from pathlib import Path
+from unittest.mock import patch
 
+import rdb_builders.build_youtube_rdb as build_youtube_rdb_module
 from rdb_builders.build_youtube_rdb import build_youtube_rdb
 
 
@@ -97,7 +100,7 @@ class BuildYoutubeRdbTest(unittest.TestCase):
             self.assertEqual(summary["table_counts"]["video_event_matches"], 1)
             self.assertEqual(summary["table_counts"]["setlist_songs"], 1)
 
-            with sqlite3.connect(out_db) as conn:
+            with closing(sqlite3.connect(out_db)) as conn:
                 video = conn.execute(
                     "SELECT video_url, action, detected_event_date, thumbnail_url FROM videos"
                 ).fetchone()
@@ -114,6 +117,34 @@ class BuildYoutubeRdbTest(unittest.TestCase):
                     "SELECT COUNT(*) FROM video_official_urls"
                 ).fetchone()[0]
                 self.assertEqual(official_url_count, 1)
+
+    def test_create_db_and_table_counts_close_their_connections(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            out_db = Path(tmp) / "youtube.sqlite"
+            out_summary = Path(tmp) / "summary.json"
+
+            opened_connections = []
+            real_connect = sqlite3.connect
+
+            def _tracking_connect(*args, **kwargs):
+                conn = real_connect(*args, **kwargs)
+                opened_connections.append(conn)
+                return conn
+
+            with patch.object(build_youtube_rdb_module.sqlite3, "connect", side_effect=_tracking_connect):
+                build_youtube_rdb(
+                    voices=[],
+                    registry={"channels": []},
+                    active_review={"rows": []},
+                    setlists={"occurrences": []},
+                    out_db=out_db,
+                    out_summary=out_summary,
+                )
+
+            self.assertGreaterEqual(len(opened_connections), 2)
+            for conn in opened_connections:
+                with self.assertRaises(sqlite3.ProgrammingError):
+                    conn.execute("SELECT 1")
 
 
 if __name__ == "__main__":

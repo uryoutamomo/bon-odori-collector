@@ -5,6 +5,7 @@ import json
 import os
 import sqlite3
 import tempfile
+from contextlib import closing
 from datetime import datetime, timezone
 from pathlib import Path
 import urllib.request
@@ -427,7 +428,7 @@ def create_db(path, rows):
     with tempfile.NamedTemporaryFile(dir=path.parent, prefix=".tmp-notion-rdb-", suffix=".sqlite", delete=False) as handle:
         tmp_path = Path(handle.name)
     try:
-        with sqlite3.connect(tmp_path) as conn:
+        with closing(sqlite3.connect(tmp_path)) as conn:
             conn.executescript(SCHEMA)
             conn.executemany(
                 "INSERT INTO notion_sources VALUES (:source_key, :source_name, :api_kind, :notion_id, :fetched_at, :row_count)",
@@ -502,7 +503,7 @@ def create_db(path, rows):
 
 
 def table_counts(path):
-    with sqlite3.connect(path) as conn:
+    with closing(sqlite3.connect(path)) as conn:
         return {
             name: conn.execute(f"SELECT COUNT(*) FROM {name}").fetchone()[0]
             for name in [

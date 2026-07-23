@@ -4,6 +4,7 @@ import hashlib
 import json
 import re
 import sqlite3
+from contextlib import closing
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -448,10 +449,21 @@ def require_existing_db(path=MASTER_DB):
     )
 
 
+class _ClosingConnection(sqlite3.Connection):
+    """A SQLite connection whose ``with`` block also releases its file handle."""
+
+    def __exit__(self, exc_type, exc_value, traceback):
+        try:
+            return super().__exit__(exc_type, exc_value, traceback)
+        finally:
+            self.close()
+
+
 def connect_existing(path=MASTER_DB, **kwargs):
-    """Open an existing SQLite DB without allowing implicit file creation."""
+    """Open an existing SQLite DB without implicit creation or leaked ``with`` handles."""
     path = require_existing_db(path)
     uri = f"file:{path.as_posix()}?mode=rw"
+    kwargs.setdefault("factory", _ClosingConnection)
     return sqlite3.connect(uri, uri=True, **kwargs)
 
 
@@ -542,7 +554,7 @@ def refresh_manifest_database_state(
         with manifest_path.open(encoding="utf-8") as handle:
             manifest = json.load(handle)
 
-    with sqlite3.connect(db_path) as conn:
+    with closing(sqlite3.connect(db_path)) as conn:
         counts = table_counts(conn)
 
     manifest["database"] = str(db_path)

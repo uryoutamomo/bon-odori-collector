@@ -2,7 +2,9 @@ import sqlite3
 import tempfile
 import unittest
 from argparse import Namespace
+from contextlib import closing
 from pathlib import Path
+from unittest.mock import patch
 
 from legacy.notion_writes import sync_master_to_notion as syncer
 
@@ -10,6 +12,7 @@ from legacy.notion_writes import sync_master_to_notion as syncer
 class SyncMasterToNotionTest(unittest.TestCase):
     def make_conn(self):
         conn = sqlite3.connect(":memory:")
+        self.addCleanup(conn.close)
         conn.executescript(
             """
             CREATE TABLE venues (
@@ -318,6 +321,79 @@ class SyncMasterToNotionTest(unittest.TestCase):
             self.assertEqual(result["summary"]["skipped_jobs"], 1)
             self.assertEqual(result["issues"][0]["issue_type"], "notion_page_changed_after_job_requested")
             self.assertTrue(result["updates"][0]["field_diffs"])
+
+    def make_snapshot_db(self, path):
+        with closing(sqlite3.connect(path)) as conn:
+            conn.executescript(
+                """
+                CREATE TABLE notion_pages (
+                  page_id TEXT PRIMARY KEY,
+                  last_edited_time TEXT
+                );
+                CREATE TABLE notion_events (
+                  page_id TEXT PRIMARY KEY,
+                  event_name TEXT,
+                  venue_ids_json TEXT,
+                  start_date TEXT,
+                  end_date TEXT,
+                  status TEXT,
+                  source_url TEXT
+                );
+                CREATE TABLE notion_venues (
+                  page_id TEXT PRIMARY KEY,
+                  venue_name TEXT,
+                  area TEXT,
+                  address TEXT,
+                  access TEXT,
+                  scale TEXT,
+                  public_intro TEXT
+                );
+                """
+            )
+            conn.execute(
+                "INSERT INTO notion_pages VALUES (?, ?)",
+                ("event_page", "2026-06-01T00:00:00Z"),
+            )
+            conn.execute(
+                "INSERT INTO notion_events VALUES (?, ?, ?, ?, ?, ?, ?)",
+                ("event_page", "テスト盆踊り", '["venue_page"]', "2026-07-01", "", "確認済み", ""),
+            )
+            conn.execute(
+                "INSERT INTO notion_pages VALUES (?, ?)",
+                ("venue_page", "2026-06-01T00:00:00Z"),
+            )
+            conn.execute(
+                "INSERT INTO notion_venues VALUES (?, ?, ?, ?, ?, ?, ?)",
+                ("venue_page", "テスト公園", "テスト区", "", "", "", ""),
+            )
+            conn.commit()
+
+    def test_notion_snapshot_readers_close_their_connections(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            db_path = Path(tmp) / "notion_snapshot.sqlite"
+            self.make_snapshot_db(db_path)
+
+            opened_connections = []
+            real_connect = sqlite3.connect
+
+            def _tracking_connect(*args, **kwargs):
+                conn = real_connect(*args, **kwargs)
+                opened_connections.append(conn)
+                return conn
+
+            with patch.object(syncer.sqlite3, "connect", side_effect=_tracking_connect):
+                event = syncer.notion_snapshot_event(db_path, "event_page")
+                venue = syncer.notion_snapshot_venue(db_path, "venue_page")
+                names = syncer.notion_venue_names(db_path, ["venue_page"])
+
+        self.assertEqual(event["event_name"], "テスト盆踊り")
+        self.assertEqual(venue["venue_name"], "テスト公園")
+        self.assertEqual(names, ["テスト公園"])
+
+        self.assertGreaterEqual(len(opened_connections), 3)
+        for conn in opened_connections:
+            with self.assertRaises(sqlite3.ProgrammingError):
+                conn.execute("SELECT 1")
 
 
 if __name__ == "__main__":

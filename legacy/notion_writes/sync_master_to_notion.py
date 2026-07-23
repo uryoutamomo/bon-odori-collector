@@ -13,6 +13,7 @@ import os
 import sqlite3
 import tempfile
 from collections import Counter
+from contextlib import closing
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -149,7 +150,7 @@ def notion_page_for(conn, source_key, master_table, master_id):
 def notion_snapshot_event(snapshot_db, page_id):
     if not snapshot_db or not Path(snapshot_db).exists() or not page_id:
         return {}
-    with sqlite3.connect(snapshot_db) as conn:
+    with closing(sqlite3.connect(snapshot_db)) as conn:
         result = rows(
             conn,
             """
@@ -172,7 +173,7 @@ def notion_snapshot_event(snapshot_db, page_id):
 def notion_snapshot_venue(snapshot_db, page_id):
     if not snapshot_db or not Path(snapshot_db).exists() or not page_id:
         return {}
-    with sqlite3.connect(snapshot_db) as conn:
+    with closing(sqlite3.connect(snapshot_db)) as conn:
         result = rows(
             conn,
             """
@@ -191,7 +192,7 @@ def notion_venue_names(snapshot_db, venue_ids):
     if not venue_ids:
         return []
     placeholders = ",".join("?" for _ in venue_ids)
-    with sqlite3.connect(snapshot_db) as conn:
+    with closing(sqlite3.connect(snapshot_db)) as conn:
         result = rows(
             conn,
             f"""

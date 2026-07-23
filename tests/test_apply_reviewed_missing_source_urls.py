@@ -2,6 +2,7 @@ import json
 import sqlite3
 import tempfile
 import unittest
+from contextlib import closing
 from argparse import Namespace
 from pathlib import Path
 
@@ -90,9 +91,9 @@ class ApplyReviewedMissingSourceUrlsTest(unittest.TestCase):
             )
 
             self.assertEqual(result["summary"]["applied_count"], 1)
-            with sqlite3.connect(master_db) as conn:
+            with closing(sqlite3.connect(master_db)) as conn:
                 original = conn.execute("SELECT source_url FROM event_occurrences").fetchone()[0]
-            with sqlite3.connect(out_db) as conn:
+            with closing(sqlite3.connect(out_db)) as conn:
                 copied = conn.execute(
                     "SELECT source_kind, source_url FROM event_occurrences"
                 ).fetchone()

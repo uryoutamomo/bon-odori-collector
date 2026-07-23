@@ -2,6 +2,7 @@
 
 import json
 import sqlite3
+from contextlib import closing
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -32,7 +33,7 @@ def md_escape(value):
 
 def build_report(db_path=DB, youtube_db_path=YOUTUBE_DB):
     fetch_report = load_json(FETCH_REPORT, {})
-    with sqlite3.connect(db_path) as conn:
+    with closing(sqlite3.connect(db_path)) as conn:
         status_counts = rows(
             conn,
             """
@@ -99,7 +100,7 @@ def build_report(db_path=DB, youtube_db_path=YOUTUBE_DB):
             LIMIT 100
             """,
         )
-    with sqlite3.connect(youtube_db_path) as conn:
+    with closing(sqlite3.connect(youtube_db_path)) as conn:
         channel_counts = rows(
             conn,
             """

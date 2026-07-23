@@ -14,6 +14,7 @@ import json
 import re
 import sqlite3
 from collections import Counter
+from contextlib import closing
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -117,7 +118,7 @@ def load_master_catalog(master_db=MASTER_DB):
     if path.exists():
         uri = f"file:{path.as_posix()}?mode=ro"
         try:
-            with sqlite3.connect(uri, uri=True) as conn:
+            with closing(sqlite3.connect(uri, uri=True)) as conn:
                 conn.row_factory = sqlite3.Row
                 for row in conn.execute(
                     """

@@ -1,8 +1,11 @@
 import sqlite3
 import tempfile
 import unittest
+from contextlib import closing
 from pathlib import Path
+from unittest.mock import patch
 
+import master_rdb.unified_model_audit as audit_unified_model_v2_module
 from master_rdb.unified_model_audit import audit_observations, audit_rdb
 from youtube_backfill.build_event_occurrence_observations import series_key, stable_id
 
@@ -41,7 +44,7 @@ class AuditUnifiedModelV2Test(unittest.TestCase):
     def test_rdb_audit_flags_missing_link_targets(self):
         with tempfile.TemporaryDirectory() as tmpdir:
             db_path = Path(tmpdir) / "sample.sqlite"
-            with sqlite3.connect(db_path) as conn:
+            with closing(sqlite3.connect(db_path)) as conn:
                 conn.executescript(
                     """
                     CREATE TABLE events (event_id TEXT, event_name TEXT);
@@ -68,6 +71,42 @@ class AuditUnifiedModelV2Test(unittest.TestCase):
             {issue["issue_type"] for issue in issues},
             {"event_venues_missing_event", "song_evidence_missing_evidence"},
         )
+
+    def test_audit_rdb_closes_its_connection(self):
+        with tempfile.TemporaryDirectory() as tmpdir:
+            db_path = Path(tmpdir) / "sample.sqlite"
+            with closing(sqlite3.connect(db_path)) as conn:
+                conn.executescript(
+                    """
+                    CREATE TABLE events (event_id TEXT, event_name TEXT);
+                    CREATE TABLE venues (venue_id TEXT, venue_name TEXT);
+                    CREATE TABLE event_venues (event_id TEXT, venue_id TEXT);
+                    CREATE TABLE songs (song_id TEXT, song_name TEXT);
+                    CREATE TABLE dance_variants (dance_variant_id TEXT);
+                    CREATE TABLE event_song_links (event_id TEXT, song_id TEXT, song_title TEXT, occurrence_key TEXT, evidence_id TEXT, link_status TEXT, link_source TEXT, dance_variant_id TEXT, notes TEXT);
+                    CREATE TABLE evidence_items (evidence_id TEXT);
+                    CREATE TABLE event_evidence_links (event_id TEXT, evidence_id TEXT, link_status TEXT);
+                    CREATE TABLE song_evidence_links (song_id TEXT, song_title TEXT, evidence_id TEXT, occurrence_key TEXT, link_status TEXT, link_source TEXT, notes TEXT);
+                    CREATE TABLE review_queue (review_status TEXT);
+                    CREATE TABLE rdb_issues (issue_key TEXT);
+                    """
+                )
+
+            opened_connections = []
+            real_connect = sqlite3.connect
+
+            def _tracking_connect(*args, **kwargs):
+                conn = real_connect(*args, **kwargs)
+                opened_connections.append(conn)
+                return conn
+
+            with patch.object(audit_unified_model_v2_module.sqlite3, "connect", side_effect=_tracking_connect):
+                audit_rdb(db_path)
+
+        self.assertTrue(opened_connections)
+        for conn in opened_connections:
+            with self.assertRaises(sqlite3.ProgrammingError):
+                conn.execute("SELECT 1")
 
 
 if __name__ == "__main__":

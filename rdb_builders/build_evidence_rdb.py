@@ -5,6 +5,7 @@ import json
 import re
 import sqlite3
 import tempfile
+from contextlib import closing
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlparse
@@ -367,7 +368,7 @@ def create_db(path, accounts, posts, post_urls, x_scores, x_candidates, x_review
     with tempfile.NamedTemporaryFile(dir=path.parent, prefix=".tmp-evidence-rdb-", suffix=".sqlite", delete=False) as handle:
         tmp_path = Path(handle.name)
     try:
-        with sqlite3.connect(tmp_path) as conn:
+        with closing(sqlite3.connect(tmp_path)) as conn:
             conn.executescript(SCHEMA)
             conn.executemany(
                 """
@@ -437,7 +438,7 @@ def create_db(path, accounts, posts, post_urls, x_scores, x_candidates, x_review
 
 
 def table_counts(path):
-    with sqlite3.connect(path) as conn:
+    with closing(sqlite3.connect(path)) as conn:
         return {
             name: conn.execute(f"SELECT COUNT(*) FROM {name}").fetchone()[0]
             for name in [

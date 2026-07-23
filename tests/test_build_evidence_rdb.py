@@ -1,8 +1,11 @@
 import sqlite3
 import tempfile
 import unittest
+from contextlib import closing
 from pathlib import Path
+from unittest.mock import patch
 
+import rdb_builders.build_evidence_rdb as build_evidence_rdb_module
 from rdb_builders.build_evidence_rdb import build_evidence_rdb
 
 
@@ -92,7 +95,7 @@ class BuildEvidenceRdbTest(unittest.TestCase):
             self.assertEqual(summary["table_counts"]["x_candidate_accounts"], 1)
             self.assertEqual(summary["table_counts"]["x_candidate_review_sample_posts"], 1)
 
-            with sqlite3.connect(out_db) as conn:
+            with closing(sqlite3.connect(out_db)) as conn:
                 x_post = conn.execute(
                     "SELECT post_key, platform, account_key FROM source_posts WHERE platform = 'x'"
                 ).fetchone()
@@ -110,6 +113,34 @@ class BuildEvidenceRdbTest(unittest.TestCase):
                     "SELECT COUNT(*) FROM post_urls WHERE url_kind = 'external'"
                 ).fetchone()[0]
                 self.assertEqual(external_url_count, 1)
+
+    def test_create_db_and_table_counts_close_their_connections(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            out_db = Path(tmp) / "evidence.sqlite"
+            out_summary = Path(tmp) / "summary.json"
+
+            opened_connections = []
+            real_connect = sqlite3.connect
+
+            def _tracking_connect(*args, **kwargs):
+                conn = real_connect(*args, **kwargs)
+                opened_connections.append(conn)
+                return conn
+
+            with patch.object(build_evidence_rdb_module.sqlite3, "connect", side_effect=_tracking_connect):
+                build_evidence_rdb(
+                    voices=[],
+                    x_account_scores={"accounts": {}},
+                    x_candidates={"candidates": []},
+                    x_candidate_reviews={"results": []},
+                    out_db=out_db,
+                    out_summary=out_summary,
+                )
+
+            self.assertGreaterEqual(len(opened_connections), 2)
+            for conn in opened_connections:
+                with self.assertRaises(sqlite3.ProgrammingError):
+                    conn.execute("SELECT 1")
 
 
 if __name__ == "__main__":

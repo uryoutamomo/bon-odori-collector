@@ -11,6 +11,7 @@ import json
 import re
 import sqlite3
 from collections import Counter, defaultdict
+from contextlib import closing
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -503,7 +504,7 @@ def clear_predicted_date_sync_jobs(conn):
 def write_candidates_to_master(db_path, candidates):
     now = datetime.now(timezone.utc).isoformat()
     occurrence_lookup = occurrence_by_series_year(db_path)
-    with sqlite3.connect(db_path) as conn:
+    with closing(sqlite3.connect(db_path)) as conn:
         conn.execute("PRAGMA foreign_keys = ON")
         preserved_manual_predictions = manual_prediction_rows(conn)
         preserved_manual_candidates = manual_candidate_rows(conn, preserved_manual_predictions)
