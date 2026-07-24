@@ -72,6 +72,67 @@ class XOfficialSourceAccountsTest(unittest.TestCase):
         self.assertEqual(by_handle["@natsutr_bon"]["manual_status"], "優先")
         self.assertEqual(by_handle["@gpveqead9u10257"]["source_type"], "important_informant")
 
+    def test_important_informants_are_annotated_without_inflating_observed_score(self):
+        with tempfile.TemporaryDirectory() as tmpdir:
+            informants = Path(tmpdir) / "x_important_informants.json"
+            informants.write_text(
+                json.dumps(
+                    {
+                        "accounts": [
+                            {
+                                "handle": "@thin_history",
+                                "manual_status": "優先",
+                                "source_type": "important_informant",
+                                "collection_enabled": True,
+                            }
+                        ]
+                    },
+                    ensure_ascii=False,
+                ),
+                encoding="utf-8",
+            )
+            with patch.object(collect, "X_IMPORTANT_INFORMANTS_FILE", str(informants)):
+                scores = collect._build_x_account_scores(
+                    [
+                        {
+                            "source": "x_whitelist",
+                            "account": "@thin_history",
+                            "text": "盆踊りに行ってきた。写真も楽しかった。",
+                            "date": collect.datetime.now(collect.timezone.utc).isoformat(),
+                        }
+                    ],
+                    {},
+                )
+
+        row = scores["accounts"]["thin_history"]
+        self.assertEqual(row["manual_status"], "優先")
+        self.assertEqual(row["source_type"], "important_informant")
+        # A single ordinary post must not be pushed into "trusted"/"S" by the
+        # manual annotation: the observed score/status/rank stay honest so
+        # they remain trustworthy once persisted into the evidence RDB.
+        # trusted_min_values defaults to 3, so one post can't cross it.
+        self.assertNotEqual(row["status"], "trusted")
+        self.assertNotEqual(row["usefulness_rank"], "S")
+
+    def test_annotate_important_informants_ignores_accounts_with_no_observed_posts(self):
+        with tempfile.TemporaryDirectory() as tmpdir:
+            informants = Path(tmpdir) / "x_important_informants.json"
+            informants.write_text(
+                json.dumps(
+                    {
+                        "accounts": [
+                            {"handle": "@never_posted", "collection_enabled": True}
+                        ]
+                    },
+                    ensure_ascii=False,
+                ),
+                encoding="utf-8",
+            )
+            with patch.object(collect, "X_IMPORTANT_INFORMANTS_FILE", str(informants)):
+                scores = collect._build_x_account_scores([], {})
+
+        self.assertNotIn("never_posted", scores["accounts"])
+
 
 if __name__ == "__main__":
     unittest.main()
