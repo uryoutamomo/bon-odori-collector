@@ -1,0 +1,1075 @@
+{
+  "generated_by": "inherit_song_probabilities_rdb.py",
+  "generated_at": "2026-07-24T08:54:08.459699+00:00",
+  "mode": "apply",
+  "sources": {
+    "master_db": "data/bon_odori_master.sqlite"
+  },
+  "outputs": {
+    "target_db": "data/bon_odori_master.sqlite",
+    "dry_run_db": "",
+    "backup_db": "data/backups/bon_odori_master.20260724T085408.459699+0000.sqlite.bak",
+    "json": "data/song_probability_inheritance_report.json",
+    "markdown": "data/song_probability_inheritance_report.md"
+  },
+  "options": {
+    "apply": true,
+    "target_year": 2026
+  },
+  "write_guard": {
+    "db_committed": true,
+    "rolled_back": false,
+    "rollback_reason": ""
+  },
+  "summary": {
+    "candidates_considered": 100,
+    "rows_created": 100,
+    "rows_skipped_no_evidence": 0,
+    "probability_min": 48,
+    "probability_max": 71,
+    "issues_by_severity": {},
+    "audit_issues_by_severity": {
+      "medium": 1
+    },
+    "table_counts": {
+      "event_investigation_tasks": 79,
+      "event_occurrences": 252,
+      "event_series": 241,
+      "evidence_items": 31183,
+      "external_record_links": 2654,
+      "historical_promotion_candidates": 16,
+      "master_meta": 0,
+      "notion_sync_jobs": 0,
+      "observed_occurrence_songs": 30772,
+      "observed_occurrences": 2164,
+      "occurrence_dates": 294,
+      "occurrence_evidence_links": 100,
+      "occurrence_song_evidence_links": 863,
+      "occurrence_songs": 705,
+      "predicted_occurrence_dates": 14,
+      "review_inbox_items": 0,
+      "schema_migrations": 1,
+      "song_aliases": 141,
+      "songs": 339,
+      "venue_aliases": 290,
+      "venues": 241,
+      "write_batches": 0
+    }
+  },
+  "inheritance": {
+    "candidates_considered": 100,
+    "created": [
+      {
+        "occurrence_song_id": "ocs_inherit_2e2ace6024f6e4f7",
+        "series_id": "ser_89245fcd08d4a60b",
+        "target_year": 2026,
+        "song_title_raw": "盆ギリ恋歌",
+        "source_year": 2025,
+        "probability": 70,
+        "basis_label": "2025年実測",
+        "speaker_count": 2
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_65296b2e52f146a9",
+        "series_id": "ser_89245fcd08d4a60b",
+        "target_year": 2026,
+        "song_title_raw": "赤坂音頭",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_aab88dcdb63cb156",
+        "series_id": "ser_89245fcd08d4a60b",
+        "target_year": 2026,
+        "song_title_raw": "赤坂豊川音頭",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_274333f31104ea3e",
+        "series_id": "ser_89245fcd08d4a60b",
+        "target_year": 2026,
+        "song_title_raw": "かがやき音頭",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_ddad69aad1ffac83",
+        "series_id": "ser_89245fcd08d4a60b",
+        "target_year": 2026,
+        "song_title_raw": "ドダレバチ",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_042c8016e5f79314",
+        "series_id": "ser_89245fcd08d4a60b",
+        "target_year": 2026,
+        "song_title_raw": "白浜音頭",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_b3a08fb2c6e87cb2",
+        "series_id": "ser_89245fcd08d4a60b",
+        "target_year": 2026,
+        "song_title_raw": "佐渡おけさ",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_011eb47a9d8ee609",
+        "series_id": "ser_89245fcd08d4a60b",
+        "target_year": 2026,
+        "song_title_raw": "郡上節かわさき",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_65cd8d23ae550ad0",
+        "series_id": "ser_89245fcd08d4a60b",
+        "target_year": 2026,
+        "song_title_raw": "炭坑節",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_2686b15e07d28d1f",
+        "series_id": "ser_89245fcd08d4a60b",
+        "target_year": 2026,
+        "song_title_raw": "ステテコシャンシャン",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_d735bb64feb80c98",
+        "series_id": "ser_89245fcd08d4a60b",
+        "target_year": 2026,
+        "song_title_raw": "ニッポンワッショイ",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_92d0ec75b199eb74",
+        "series_id": "ser_89245fcd08d4a60b",
+        "target_year": 2026,
+        "song_title_raw": "東京音頭",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_71ab0f0b2261204f",
+        "series_id": "ser_854b5ca4993265fa",
+        "target_year": 2026,
+        "song_title_raw": "Hey Mr 恵比寿",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_50c26637190b58bb",
+        "series_id": "ser_854b5ca4993265fa",
+        "target_year": 2026,
+        "song_title_raw": "YES YES EBISU",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_03887fc87aa55edb",
+        "series_id": "ser_854b5ca4993265fa",
+        "target_year": 2026,
+        "song_title_raw": "YES YES YBISU",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_6dbdbd6aa5a7b0b2",
+        "series_id": "ser_854b5ca4993265fa",
+        "target_year": 2026,
+        "song_title_raw": "おてもやん",
+        "source_year": 2025,
+        "probability": 60,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_28d5648134bc7350",
+        "series_id": "ser_854b5ca4993265fa",
+        "target_year": 2026,
+        "song_title_raw": "八木節",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_bcc4bbffedc57214",
+        "series_id": "ser_854b5ca4993265fa",
+        "target_year": 2026,
+        "song_title_raw": "大東京音頭",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_b5812d238960282d",
+        "series_id": "ser_854b5ca4993265fa",
+        "target_year": 2026,
+        "song_title_raw": "能登島さし音頭",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_016aa984d1a0465e",
+        "series_id": "ser_d0140daa64d7a876",
+        "target_year": 2026,
+        "song_title_raw": "渋谷で盆ジョヴィ 2025 ダンシングヒーロー",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_c60830075c970ec7",
+        "series_id": "ser_d0140daa64d7a876",
+        "target_year": 2026,
+        "song_title_raw": "ダンシングヒーロー",
+        "source_year": 2025,
+        "probability": 48,
+        "basis_label": "2025年ヒント",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_3d19227979069a80",
+        "series_id": "ser_d0140daa64d7a876",
+        "target_year": 2026,
+        "song_title_raw": "外国人も一緒になって阿波踊り",
+        "source_year": 2025,
+        "probability": 48,
+        "basis_label": "2025年ヒント",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_9a9249e6022ddbb4",
+        "series_id": "ser_d0140daa64d7a876",
+        "target_year": 2026,
+        "song_title_raw": "東京音頭",
+        "source_year": 2025,
+        "probability": 48,
+        "basis_label": "2025年ヒント",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_d8663ff52044f6e2",
+        "series_id": "ser_d0140daa64d7a876",
+        "target_year": 2026,
+        "song_title_raw": "激混み会場で外国人も踊り",
+        "source_year": 2025,
+        "probability": 48,
+        "basis_label": "2025年ヒント",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_830c72718b2e3b04",
+        "series_id": "ser_d0140daa64d7a876",
+        "target_year": 2026,
+        "song_title_raw": "阿波踊り",
+        "source_year": 2025,
+        "probability": 48,
+        "basis_label": "2025年ヒント",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_2300a353994f7ab0",
+        "series_id": "ser_3873b1682d366b8f",
+        "target_year": 2026,
+        "song_title_raw": "ダンシングヒーロー",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_42442fef134dd83d",
+        "series_id": "ser_3873b1682d366b8f",
+        "target_year": 2026,
+        "song_title_raw": "大東京音頭",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_6f2e56a589c2ff60",
+        "series_id": "ser_3873b1682d366b8f",
+        "target_year": 2026,
+        "song_title_raw": "東京音頭",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_2da79f87353779c5",
+        "series_id": "ser_3873b1682d366b8f",
+        "target_year": 2026,
+        "song_title_raw": "河内おとこ節",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_f796ff4963a17f8a",
+        "series_id": "ser_3873b1682d366b8f",
+        "target_year": 2026,
+        "song_title_raw": "渋谷音頭",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_b74b83a506272c63",
+        "series_id": "ser_782827501f1bd188",
+        "target_year": 2026,
+        "song_title_raw": "おジャ魔女カーニバル",
+        "source_year": 2025,
+        "probability": 48,
+        "basis_label": "2025年ヒント",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_de02e25809b0557a",
+        "series_id": "ser_782827501f1bd188",
+        "target_year": 2026,
+        "song_title_raw": "ほっぺちゃん音頭",
+        "source_year": 2025,
+        "probability": 48,
+        "basis_label": "2025年ヒント",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_d8aedfcdaf54bc69",
+        "series_id": "ser_782827501f1bd188",
+        "target_year": 2026,
+        "song_title_raw": "元気ハツラツ音頭",
+        "source_year": 2025,
+        "probability": 48,
+        "basis_label": "2025年ヒント",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_c55189b1486271b5",
+        "series_id": "ser_086f247e4d12348e",
+        "target_year": 2026,
+        "song_title_raw": "お江戸日本橋",
+        "source_year": 2025,
+        "probability": 48,
+        "basis_label": "2025年ヒント",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_9265c47b6da96c9d",
+        "series_id": "ser_086f247e4d12348e",
+        "target_year": 2026,
+        "song_title_raw": "どんとこいブギ",
+        "source_year": 2025,
+        "probability": 48,
+        "basis_label": "2025年ヒント",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_00fec34706f0bad5",
+        "series_id": "ser_086f247e4d12348e",
+        "target_year": 2026,
+        "song_title_raw": "にっぽんチャチャチャ",
+        "source_year": 2025,
+        "probability": 48,
+        "basis_label": "2025年ヒント",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_60dcba872b1f3293",
+        "series_id": "ser_086f247e4d12348e",
+        "target_year": 2026,
+        "song_title_raw": "ゆかた音頭",
+        "source_year": 2025,
+        "probability": 48,
+        "basis_label": "2025年ヒント",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_2cdd90dad2877f16",
+        "series_id": "ser_086f247e4d12348e",
+        "target_year": 2026,
+        "song_title_raw": "ドダレバチ",
+        "source_year": 2025,
+        "probability": 48,
+        "basis_label": "2025年ヒント",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_15056b15dcdebe8a",
+        "series_id": "ser_086f247e4d12348e",
+        "target_year": 2026,
+        "song_title_raw": "ドンパン節",
+        "source_year": 2025,
+        "probability": 48,
+        "basis_label": "2025年ヒント",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_3d8c080d3874af39",
+        "series_id": "ser_086f247e4d12348e",
+        "target_year": 2026,
+        "song_title_raw": "丸の内音頭",
+        "source_year": 2025,
+        "probability": 48,
+        "basis_label": "2025年ヒント",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_147f3f1d3d3a1f80",
+        "series_id": "ser_086f247e4d12348e",
+        "target_year": 2026,
+        "song_title_raw": "令和おどり",
+        "source_year": 2025,
+        "probability": 48,
+        "basis_label": "2025年ヒント",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_88df0e01ee36c861",
+        "series_id": "ser_086f247e4d12348e",
+        "target_year": 2026,
+        "song_title_raw": "八木節",
+        "source_year": 2025,
+        "probability": 48,
+        "basis_label": "2025年ヒント",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_53432c7cbc248062",
+        "series_id": "ser_086f247e4d12348e",
+        "target_year": 2026,
+        "song_title_raw": "千代田踊り",
+        "source_year": 2025,
+        "probability": 48,
+        "basis_label": "2025年ヒント",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_3f106f6a369c034b",
+        "series_id": "ser_086f247e4d12348e",
+        "target_year": 2026,
+        "song_title_raw": "大東京音頭",
+        "source_year": 2025,
+        "probability": 48,
+        "basis_label": "2025年ヒント",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_f77891b6c5cc0064",
+        "series_id": "ser_086f247e4d12348e",
+        "target_year": 2026,
+        "song_title_raw": "東京音頭",
+        "source_year": 2025,
+        "probability": 48,
+        "basis_label": "2025年ヒント",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_7b43084671c3afa1",
+        "series_id": "ser_086f247e4d12348e",
+        "target_year": 2026,
+        "song_title_raw": "松の木小唄",
+        "source_year": 2025,
+        "probability": 48,
+        "basis_label": "2025年ヒント",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_6492d79a858572f2",
+        "series_id": "ser_086f247e4d12348e",
+        "target_year": 2026,
+        "song_title_raw": "民謡お国巡り音頭",
+        "source_year": 2025,
+        "probability": 48,
+        "basis_label": "2025年ヒント",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_b54dda635adabf73",
+        "series_id": "ser_086f247e4d12348e",
+        "target_year": 2026,
+        "song_title_raw": "津軽甚句",
+        "source_year": 2025,
+        "probability": 48,
+        "basis_label": "2025年ヒント",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_e7a568f98bac7319",
+        "series_id": "ser_086f247e4d12348e",
+        "target_year": 2026,
+        "song_title_raw": "炭坑節",
+        "source_year": 2025,
+        "probability": 48,
+        "basis_label": "2025年ヒント",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_d3044c907e91190c",
+        "series_id": "ser_086f247e4d12348e",
+        "target_year": 2026,
+        "song_title_raw": "甚句",
+        "source_year": 2025,
+        "probability": 48,
+        "basis_label": "2025年ヒント",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_79c1ad088eb831a4",
+        "series_id": "ser_086f247e4d12348e",
+        "target_year": 2026,
+        "song_title_raw": "相馬盆唄",
+        "source_year": 2025,
+        "probability": 48,
+        "basis_label": "2025年ヒント",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_541893a8cb69f743",
+        "series_id": "ser_086f247e4d12348e",
+        "target_year": 2026,
+        "song_title_raw": "花笠踊り",
+        "source_year": 2025,
+        "probability": 48,
+        "basis_label": "2025年ヒント",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_a079d175c8d8b966",
+        "series_id": "ser_086f247e4d12348e",
+        "target_year": 2026,
+        "song_title_raw": "輝き音頭",
+        "source_year": 2025,
+        "probability": 48,
+        "basis_label": "2025年ヒント",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_92ce813722dad644",
+        "series_id": "ser_086f247e4d12348e",
+        "target_year": 2026,
+        "song_title_raw": "郡上節",
+        "source_year": 2025,
+        "probability": 48,
+        "basis_label": "2025年ヒント",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_f295ff080ad9b34b",
+        "series_id": "ser_086f247e4d12348e",
+        "target_year": 2026,
+        "song_title_raw": "銀座カンカン娘",
+        "source_year": 2025,
+        "probability": 48,
+        "basis_label": "2025年ヒント",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_e2f24dcf837b2f78",
+        "series_id": "ser_086f247e4d12348e",
+        "target_year": 2026,
+        "song_title_raw": "龍馬おどり",
+        "source_year": 2025,
+        "probability": 48,
+        "basis_label": "2025年ヒント",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_d194756bf05ffc45",
+        "series_id": "ser_3cd68d5b41d0b1ff",
+        "target_year": 2026,
+        "song_title_raw": "お嫁サンバ",
+        "source_year": 2025,
+        "probability": 48,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_2af90f3c63bba277",
+        "series_id": "ser_3cd68d5b41d0b1ff",
+        "target_year": 2026,
+        "song_title_raw": "シモキタ音頭",
+        "source_year": 2025,
+        "probability": 48,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_84088d742377f903",
+        "series_id": "ser_c7526cbcf3260dc3",
+        "target_year": 2026,
+        "song_title_raw": "RPG",
+        "source_year": 2025,
+        "probability": 71,
+        "basis_label": "2025年実測",
+        "speaker_count": 2
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_8eb7b4cd65a4fd7d",
+        "series_id": "ser_c7526cbcf3260dc3",
+        "target_year": 2026,
+        "song_title_raw": "やる気で音頭",
+        "source_year": 2025,
+        "probability": 71,
+        "basis_label": "2025年実測",
+        "speaker_count": 2
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_be53a653aa67cbb0",
+        "series_id": "ser_c7526cbcf3260dc3",
+        "target_year": 2026,
+        "song_title_raw": "ダンシング・ヒーロー",
+        "source_year": 2025,
+        "probability": 71,
+        "basis_label": "2025年実測",
+        "speaker_count": 2
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_548c77f4dba55526",
+        "series_id": "ser_c7526cbcf3260dc3",
+        "target_year": 2026,
+        "song_title_raw": "ホイップるん音頭",
+        "source_year": 2025,
+        "probability": 71,
+        "basis_label": "2025年実測",
+        "speaker_count": 2
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_e042b84c3273debf",
+        "series_id": "ser_c7526cbcf3260dc3",
+        "target_year": 2026,
+        "song_title_raw": "北海盆唄",
+        "source_year": 2025,
+        "probability": 71,
+        "basis_label": "2025年実測",
+        "speaker_count": 2
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_4e855735e1f336ed",
+        "series_id": "ser_c7526cbcf3260dc3",
+        "target_year": 2026,
+        "song_title_raw": "夜に駆ける",
+        "source_year": 2025,
+        "probability": 71,
+        "basis_label": "2025年実測",
+        "speaker_count": 2
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_9fa6095fb4dfbb69",
+        "series_id": "ser_c7526cbcf3260dc3",
+        "target_year": 2026,
+        "song_title_raw": "大東京音頭",
+        "source_year": 2025,
+        "probability": 71,
+        "basis_label": "2025年実測",
+        "speaker_count": 2
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_ee44008e3364f97a",
+        "series_id": "ser_c7526cbcf3260dc3",
+        "target_year": 2026,
+        "song_title_raw": "希望の轍",
+        "source_year": 2025,
+        "probability": 71,
+        "basis_label": "2025年実測",
+        "speaker_count": 2
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_3fa85be427d5ef4b",
+        "series_id": "ser_c7526cbcf3260dc3",
+        "target_year": 2026,
+        "song_title_raw": "東京音頭",
+        "source_year": 2025,
+        "probability": 71,
+        "basis_label": "2025年実測",
+        "speaker_count": 2
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_5c15e3d2e3837e06",
+        "series_id": "ser_c7526cbcf3260dc3",
+        "target_year": 2026,
+        "song_title_raw": "炭坑節",
+        "source_year": 2025,
+        "probability": 71,
+        "basis_label": "2025年実測",
+        "speaker_count": 2
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_2523d131d51a135c",
+        "series_id": "ser_c7526cbcf3260dc3",
+        "target_year": 2026,
+        "song_title_raw": "自由が丘小唄",
+        "source_year": 2025,
+        "probability": 71,
+        "basis_label": "2025年実測",
+        "speaker_count": 2
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_a5f7c41b0abc9f42",
+        "series_id": "ser_c7526cbcf3260dc3",
+        "target_year": 2026,
+        "song_title_raw": "高嶺の花子さん",
+        "source_year": 2025,
+        "probability": 71,
+        "basis_label": "2025年実測",
+        "speaker_count": 2
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_44670bf6718d0c68",
+        "series_id": "ser_c7526cbcf3260dc3",
+        "target_year": 2026,
+        "song_title_raw": "特設会場周辺で開かれる街なかの踊り",
+        "source_year": 2025,
+        "probability": 48,
+        "basis_label": "2025年ヒント",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_ec2edf5050686c85",
+        "series_id": "ser_7450bc9f827dfbb8",
+        "target_year": 2026,
+        "song_title_raw": "四谷納涼踊り",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年ヒント",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_5c4a6c50ad6ad120",
+        "series_id": "ser_7450bc9f827dfbb8",
+        "target_year": 2026,
+        "song_title_raw": "ズンパ音頭",
+        "source_year": 2025,
+        "probability": 48,
+        "basis_label": "2025年ヒント",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_037418aa53f98263",
+        "series_id": "ser_056dc17d1e61d432",
+        "target_year": 2026,
+        "song_title_raw": "One Love",
+        "source_year": 2025,
+        "probability": 71,
+        "basis_label": "2025年実測",
+        "speaker_count": 2
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_2cf8aed3ba8f2a69",
+        "series_id": "ser_056dc17d1e61d432",
+        "target_year": 2026,
+        "song_title_raw": "パワー・オブ・ラヴ",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_2eea30cced7e845f",
+        "series_id": "ser_056dc17d1e61d432",
+        "target_year": 2026,
+        "song_title_raw": "ライク・ア・ヴァージン",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_02f9c6cde629a6d6",
+        "series_id": "ser_056dc17d1e61d432",
+        "target_year": 2026,
+        "song_title_raw": "東京音頭",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_478071b985e659c1",
+        "series_id": "ser_056dc17d1e61d432",
+        "target_year": 2026,
+        "song_title_raw": "波乗りジョニー",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_c2b698b0a3da9e2e",
+        "series_id": "ser_056dc17d1e61d432",
+        "target_year": 2026,
+        "song_title_raw": "炭坑節",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_b69ab170c29a5215",
+        "series_id": "ser_056dc17d1e61d432",
+        "target_year": 2026,
+        "song_title_raw": "蓮如音頭",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_6c989bfc2427f185",
+        "series_id": "ser_056dc17d1e61d432",
+        "target_year": 2026,
+        "song_title_raw": "親鸞音頭",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_54a56d046cae0a5f",
+        "series_id": "ser_056dc17d1e61d432",
+        "target_year": 2026,
+        "song_title_raw": "親鸞おどり",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_00f36f2892c21a6f",
+        "series_id": "ser_056dc17d1e61d432",
+        "target_year": 2026,
+        "song_title_raw": "東京本願寺音頭",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_8a6b53fd929b1774",
+        "series_id": "ser_056dc17d1e61d432",
+        "target_year": 2026,
+        "song_title_raw": "北海盆唄",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_e97e8cc57f37dbfe",
+        "series_id": "ser_056dc17d1e61d432",
+        "target_year": 2026,
+        "song_title_raw": "ふるさと音頭",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_9d1111262421c021",
+        "series_id": "ser_056dc17d1e61d432",
+        "target_year": 2026,
+        "song_title_raw": "チャンチキおけさ",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_a09fc73e46a13152",
+        "series_id": "ser_056dc17d1e61d432",
+        "target_year": 2026,
+        "song_title_raw": "あなたの出番",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_fb038d78157f3f6f",
+        "series_id": "ser_056dc17d1e61d432",
+        "target_year": 2026,
+        "song_title_raw": "燃えろ日本の夏祭り",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_aca6dbbe67e09cf7",
+        "series_id": "ser_056dc17d1e61d432",
+        "target_year": 2026,
+        "song_title_raw": "七福神音頭",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_df3e48cc4c8fd857",
+        "series_id": "ser_056dc17d1e61d432",
+        "target_year": 2026,
+        "song_title_raw": "DJタイム",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_2883c9066119adbd",
+        "series_id": "ser_056dc17d1e61d432",
+        "target_year": 2026,
+        "song_title_raw": "ガールズ・ジャスト・ワナ・ハブ・ファン",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_207e4abfe528bf30",
+        "series_id": "ser_056dc17d1e61d432",
+        "target_year": 2026,
+        "song_title_raw": "パワー・オブ・ラブ",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_483c5ff13c46ecc5",
+        "series_id": "ser_056dc17d1e61d432",
+        "target_year": 2026,
+        "song_title_raw": "ホールド・ミー・ナウ",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_ffc10b320791d36a",
+        "series_id": "ser_056dc17d1e61d432",
+        "target_year": 2026,
+        "song_title_raw": "テレフォン・オペレーター",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_44a0eff4215fc4df",
+        "series_id": "ser_056dc17d1e61d432",
+        "target_year": 2026,
+        "song_title_raw": "エブリブレスユーテイク",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_f256d24541c585eb",
+        "series_id": "ser_056dc17d1e61d432",
+        "target_year": 2026,
+        "song_title_raw": "レッツ・グルーヴ",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_2aa087420682d91f",
+        "series_id": "ser_056dc17d1e61d432",
+        "target_year": 2026,
+        "song_title_raw": "ガット・トゥ・ビー・リアル",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_addf0c3cc9d2dc46",
+        "series_id": "ser_056dc17d1e61d432",
+        "target_year": 2026,
+        "song_title_raw": "終 ガット・トゥ・ビー・リアル",
+        "source_year": 2025,
+        "probability": 48,
+        "basis_label": "2025年ヒント",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_36e5972014eacb77",
+        "series_id": "ser_bb6ca998e227da40",
+        "target_year": 2026,
+        "song_title_raw": "バハマ・ママ",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      },
+      {
+        "occurrence_song_id": "ocs_inherit_472b37834a6c0b82",
+        "series_id": "ser_bb6ca998e227da40",
+        "target_year": 2026,
+        "song_title_raw": "令和音頭",
+        "source_year": 2025,
+        "probability": 57,
+        "basis_label": "2025年実測",
+        "speaker_count": 1
+      }
+    ],
+    "skipped_no_evidence": []
+  },
+  "issues": [],
+  "audit": {
+    "issue_count": 1,
+    "issues_by_severity": {
+      "medium": 1
+    },
+    "issues_by_type": {
+      "source_snapshot_drift": 1
+    }
+  }
+}

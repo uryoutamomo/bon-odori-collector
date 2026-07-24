@@ -561,7 +561,20 @@ def _song_from_rdb(row):
         basis = "current_hint"
         basis_label = "今年ヒント"
     elif row["inherited_from_year"]:
-        basis_label = f"{row['inherited_from_year']}年ヒント"
+        # inherit_song_probabilities_rdb.py が notes.source_kind に継承元の証拠種別
+        # (告知/実測/ヒント)を記録している。ここを見ずに「年ヒント」固定にすると、
+        # 前年に実測された曲まで「ヒント」表示になり信頼度の印象を下げてしまう。
+        source_kind_label = "ヒント"
+        try:
+            notes = json.loads(row["notes"] or "{}")
+        except (TypeError, ValueError):
+            notes = {}
+        source_kind = notes.get("source_kind")
+        if source_kind == "announced":
+            source_kind_label = "告知"
+        elif source_kind == "observed":
+            source_kind_label = "実測"
+        basis_label = f"{row['inherited_from_year']}年{source_kind_label}"
     song = {
         "name": row["song_title_raw"],
         "confidence": "confirmed" if (probability or 0) >= 95 or row["confidence"] == "high" else "hint",
@@ -586,7 +599,8 @@ def load_rdb_occurrence_songs(conn):
           confidence,
           source_count,
           evidence_count,
-          inherited_from_year
+          inherited_from_year,
+          notes
         FROM occurrence_songs
         ORDER BY occurrence_id, probability DESC, song_title_raw
         """
@@ -1561,27 +1575,42 @@ def _is_weak_ambiguous_song(song):
 
 
 def merge_replacement_songs(current, recurring, *, previous_year):
-    """Move useful last-year song evidence onto the current-year replacement card."""
+    """Move useful last-year song evidence onto the current-year replacement card.
+
+    current always wins over recurring for the same song name, rather than the
+    higher _song_score() winning: current's songs already reflect RDB-native
+    year-over-year inheritance (inherit_song_probabilities_rdb.py) when it applies,
+    with an accurate basis_label (e.g. "2025年実測"). Letting recurring's raw
+    probability outscore that and win just to have its basis flattened to
+    "past_evidence"/"○○年ヒント" below regressed a correctly-labeled inherited
+    row back to a less accurate one (found 2026-07-24 auditing 第71回恵比寿駅前盆踊り大会:
+    RDB inheritance said "おてもやん 60% 2025年実測", this function's old score-wins
+    logic replaced it with "おてもやん 99% 2025年ヒント" from the recurring card).
+    recurring only fills in songs current doesn't have at all.
+    """
     merged = {}
-    for source in [current, recurring]:
-        for raw_song in source.get("songs") or []:
-            name = _song_name(raw_song).strip()
-            if not name or name in NON_SONG_LABELS:
-                continue
-            if source is recurring and _is_weak_ambiguous_song(raw_song):
-                continue
-            song = {"name": name, "confidence": "hint", "source_count": 0} if isinstance(raw_song, str) else dict(raw_song)
-            if source is recurring and str(recurring.get("date") or "").startswith(
-                f"{previous_year}-"
-            ):
-                song["basis"] = "past_evidence"
-                song["basis_label"] = f"{previous_year}年ヒント"
-                if song.get("probability") is None:
-                    song["probability"] = 80
-            key = _song_dedupe_key(name)
-            existing = merged.get(key)
-            if existing is None or _song_score(song) > _song_score(existing):
-                merged[key] = song
+    for raw_song in current.get("songs") or []:
+        name = _song_name(raw_song).strip()
+        if not name or name in NON_SONG_LABELS:
+            continue
+        song = {"name": name, "confidence": "hint", "source_count": 0} if isinstance(raw_song, str) else dict(raw_song)
+        merged[_song_dedupe_key(name)] = song
+    for raw_song in recurring.get("songs") or []:
+        name = _song_name(raw_song).strip()
+        if not name or name in NON_SONG_LABELS:
+            continue
+        if _is_weak_ambiguous_song(raw_song):
+            continue
+        key = _song_dedupe_key(name)
+        if key in merged:
+            continue
+        song = {"name": name, "confidence": "hint", "source_count": 0} if isinstance(raw_song, str) else dict(raw_song)
+        if str(recurring.get("date") or "").startswith(f"{previous_year}-"):
+            song["basis"] = "past_evidence"
+            song["basis_label"] = f"{previous_year}年ヒント"
+            if song.get("probability") is None:
+                song["probability"] = 80
+        merged[key] = song
     current["songs"] = sorted(
         strip_song_internal_fields(merged.values()),
         key=lambda song: (-_song_score(song)[0], _song_name(song)),
