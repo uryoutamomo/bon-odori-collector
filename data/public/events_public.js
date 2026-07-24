@@ -2980,99 +2980,99 @@ const EVENTS = [
         "name": "ご祝儀音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "ふるさと音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "チャンチキおけさ",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "ハワイ音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "八木節",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "北海盆唄",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "大東京音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "好きになった人",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "新橋音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "新芝音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "東京音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "炭坑節",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "燃えろ日本の夏祭り",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       },
       {
         "name": "防災音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
+        "basis": "current_hint",
+        "basis_label": "今年ヒント"
       }
     ],
     "public_status": "ended_2026",
@@ -6070,7 +6070,15 @@ const EVENTS = [
         "count": 1
       }
     ],
-    "songs": [],
+    "songs": [
+      {
+        "name": "ジンギスカン / ズンパ音頭 / ダンシングヒーロ- / ultra soul / マツケンサンバ...",
+        "confidence": "hint",
+        "probability": 70,
+        "basis": "current_observed",
+        "basis_label": "今年実測"
+      }
+    ],
     "public_status": "ended_2026",
     "public_category": "ended",
     "public_status_label": "開催終了",
