@@ -6509,7 +6509,7 @@
   {
     "name": "新宿中央公園夏祭り 納涼盆踊り大会",
     "name_confirmed": true,
-    "venue": "新宿中央公園 ファンモアタイム広場",
+    "venue": "新宿中央公園 ファンモアタイムひろば",
     "area": "新宿区",
     "months": [
       2,
@@ -6520,125 +6520,57 @@
     "address": "新宿区西新宿2-11",
     "lat": null,
     "lng": null,
-    "date": "2025-08-23",
-    "date_end": "2025-08-24",
-    "status": "未確認",
+    "date": "2026-08-22",
+    "date_end": "2026-08-23",
+    "status": "確認済み",
     "date_confidence": {
-      "level": "unknown",
-      "label": "未確認",
-      "description": "開催日はまだ確認できていません"
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
     },
     "date_candidates": [],
     "hints": [
       [
         8,
-        23
+        22
       ],
       [
         8,
-        24
+        23
       ]
     ],
     "jun": {
       "8": "下旬"
     },
     "description": "新宿中央公園夏祭り 納涼盆踊り大会は、新宿中央公園 ファンモアタイム広場で開かれる屋外型の盆踊り・夏の地域イベント。8月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025年は8/23-24。主催：盆踊り＝角筈地区青少年育成委員会／夏まつり＝パークアップ共同体。2026年日程は未発表",
+    "detail": "2025年は8/23-24。主催：盆踊り＝角筈地区青少年育成委員会／夏まつり＝パークアップ共同体。2026年日程は未発表 - 開催日: 2026-08-22〜2026-08-23 - 会場: 新宿中央公園 ファンモアタイム広場（旧水の広場） - 根拠URL: - 判断: 新宿中央公園公式サイトのイベント一覧ページで2026年日程を確認。旧source_urlは2025年開催を紹介する記事だったため差し替え。",
     "source_urls": [
       {
-        "label": "告知HPあり",
-        "url": "https://tokyofesta.com/23ku/24845/",
-        "kind": "web",
-        "count": 1
+        "label": "公式告知あり",
+        "url": "https://shinjukuchuo-park.jp/events/",
+        "kind": "official"
       }
     ],
     "songs": [],
-    "public_status": "expected_medium",
-    "public_category": "recurring_last_year",
-    "public_status_label": "昨年開催",
-    "public_note": "昨年開催: 2025-08-23〜2025-08-24。今年の日程は未確認です。",
-    "recurrence_label": "昨年開催・継続性 中",
-    "recurrence_score": 0.72,
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-22〜2026-08-23",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
     "recurrence_reasons": [
-      "held_2025",
-      "venue_present",
-      "tokyo_23ward",
-      "recurring_word:納涼",
-      "recurring_word:盆踊り大会",
-      "recurring_word:夏祭り",
-      "recurring_word:まつり"
+      "2026年日付確認済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
-    "last_seen_year": 2025,
+    "last_seen_year": null,
     "last_seen_dates": [
-      "2025-08-23",
-      "2025-08-24"
+      "2026-08-22",
+      "2026-08-23"
     ],
-    "display_tier": "historical_slide",
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
-    "historical_reference": {
-      "display_tier": "historical_slide",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-08-23",
-        "2025-08-24"
-      ],
-      "label": "2025-08-23〜2025-08-24実績・今年未確認",
-      "confidence": "medium",
-      "score": 0.72,
-      "status": "expected_medium",
-      "status_label": "昨年開催",
-      "recurrence_label": "昨年開催・継続性 中",
-      "reasons": [
-        "held_2025",
-        "venue_present",
-        "tokyo_23ward",
-        "recurring_word:納涼",
-        "recurring_word:盆踊り大会",
-        "recurring_word:夏祭り",
-        "recurring_word:まつり"
-      ],
-      "cautions": [],
-      "edition_number": null,
-      "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-08-22",
-        "date_end": "2026-08-23",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第4土曜を2026年へスライド",
-        "source_date": "2025-08-23",
-        "source_date_end": "2025-08-24",
-        "duration_days": 2
-      }
-    },
-    "historical_display_tier": "historical_slide",
-    "historical_last_seen_year": 2025,
-    "historical_last_seen_dates": [
-      "2025-08-23",
-      "2025-08-24"
-    ],
-    "historical_reference_label": "2025-08-23〜2025-08-24実績・今年未確認",
-    "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.72,
-    "historical_slide": {
-      "date": "2026-08-22",
-      "date_end": "2026-08-23",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第4土曜を2026年へスライド",
-      "source_date": "2025-08-23",
-      "source_date_end": "2025-08-24",
-      "duration_days": 2
-    },
-    "historical_slide_date": "2026-08-22",
-    "historical_slide_date_end": "2026-08-23",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第4土曜を2026年へスライド",
-    "predicted_date": "2026-08-22",
-    "predicted_date_end": "2026-08-23",
-    "prediction_basis": "2025年実績の同月第4土曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "display_tier": "confirmed",
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "三角広場まつり「居酒屋盆踊り」",
@@ -22058,7 +21990,7 @@
     "date_certainty_tier": "confirmed"
   },
   {
-    "name": "第15回 鴨台盆踊り",
+    "name": "第16回 鴨台盆踊り",
     "name_confirmed": true,
     "venue": "大正大学",
     "area": "豊島区",
@@ -22070,8 +22002,8 @@
     "address": "東京都豊島区西巣鴨3-20-1",
     "lat": null,
     "lng": null,
-    "date": "2025-07-04",
-    "date_end": "2025-07-05",
+    "date": "2026-07-10",
+    "date_end": "2026-07-11",
     "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
@@ -22082,108 +22014,50 @@
     "hints": [
       [
         7,
-        4
+        10
       ],
       [
         7,
-        5
+        11
       ]
     ],
     "jun": {
-      "7": "上旬"
+      "7": "中旬"
     },
     "description": "",
-    "detail": "",
+    "detail": "- 対象イベント: 第16回 鴨台盆踊り - 開催日: 2026-07-10〜2026-07-11 - 会場: 大正大学 - 根拠URL: - 判断: 大正大学公式プレスリリースで確認。創立100周年記念で「大正大学音頭」新曲披露予定。",
     "source_urls": [
       {
-        "label": "告知HPあり",
-        "url": "https://www.tais.ac.jp/guide/latest_news/20250627/92922/",
-        "kind": "web",
-        "count": 1
+        "label": "公式告知あり",
+        "url": "https://www.tais.ac.jp/guide/latest_news/20260703/96605/",
+        "kind": "official"
       }
     ],
-    "songs": [],
-    "public_status": "expected_medium",
-    "public_category": "recurring_last_year",
-    "public_status_label": "昨年開催",
-    "public_note": "第15回・昨年開催: 2025-07-04〜2025-07-05。今年の日程は未確認です。",
-    "recurrence_label": "昨年開催・継続性 中",
-    "recurrence_score": 0.65,
+    "songs": [
+      {
+        "name": "大正大学音頭",
+        "confidence": "hint"
+      }
+    ],
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-07-10〜2026-07-11",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "venue_present",
-      "tokyo_23ward",
-      "edition_number:15",
-      "edition_10plus"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
-    "edition_number": 15,
-    "last_seen_year": 2025,
+    "edition_number": 16,
+    "last_seen_year": null,
     "last_seen_dates": [
-      "2025-07-04",
-      "2025-07-05"
+      "2026-07-10",
+      "2026-07-11"
     ],
-    "date_prediction": {
-      "display_tier": "rule_predicted",
-      "target_year": 2026,
-      "date": "2026-07-04",
-      "date_end": "2026-07-05",
-      "weekday_start": "土",
-      "weekday_end": "日",
-      "confidence": "medium",
-      "score": 0.6,
-      "rule_type": "weekend_near_day",
-      "basis": "7月6日前後の週末",
-      "evidence_years": [
-        2023,
-        2024
-      ],
-      "evidence_count": 2,
-      "has_actual_observation": false
-    },
-    "display_tier": "rule_predicted",
-    "predicted_date": "2026-07-04",
-    "predicted_date_end": "2026-07-05",
-    "prediction_basis": "7月6日前後の週末",
-    "prediction_confidence": "medium",
-    "prediction_evidence_years": [
-      2023,
-      2024
-    ],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "rule_predicted",
-    "historical_reference": {
-      "display_tier": "historical_reference",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-07-04",
-        "2025-07-05"
-      ],
-      "label": "2025-07-04〜2025-07-05実績・今年未確認",
-      "confidence": "medium",
-      "score": 0.65,
-      "status": "expected_medium",
-      "status_label": "昨年開催",
-      "recurrence_label": "昨年開催・継続性 中",
-      "reasons": [
-        "venue_present",
-        "tokyo_23ward",
-        "edition_number:15",
-        "edition_10plus"
-      ],
-      "cautions": [],
-      "edition_number": 15,
-      "has_rule_prediction": true,
-      "slide": null
-    },
-    "historical_display_tier": "historical_reference",
-    "historical_last_seen_year": 2025,
-    "historical_last_seen_dates": [
-      "2025-07-04",
-      "2025-07-05"
-    ],
-    "historical_reference_label": "2025-07-04〜2025-07-05実績・今年未確認",
-    "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.65
+    "display_tier": "ended",
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "第46回 巣鴨盆踊り大会",

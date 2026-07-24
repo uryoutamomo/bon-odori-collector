@@ -5,10 +5,10 @@
     "latest_manifest_key": "master-rdb/latest/bon_odori_master_manifest.json",
     "local_database_path": "data/bon_odori_master.sqlite",
     "prefix": "master-rdb",
-    "published_at": "2026-07-21T04:52:20.069205+00:00",
-    "snapshot_database_key": "master-rdb/snapshots/20260721T045220Z/bon_odori_master.sqlite",
-    "snapshot_id": "20260721T045220Z",
-    "snapshot_manifest_key": "master-rdb/snapshots/20260721T045220Z/bon_odori_master_manifest.json",
+    "published_at": "2026-07-24T11:24:36.114902+00:00",
+    "snapshot_database_key": "master-rdb/snapshots/20260724T112435Z/bon_odori_master.sqlite",
+    "snapshot_id": "20260724T112435Z",
+    "snapshot_manifest_key": "master-rdb/snapshots/20260724T112435Z/bon_odori_master_manifest.json",
     "storage": "s3"
   },
   "artifact_fetch": {
@@ -17,8 +17,8 @@
     "source": "s3://bon-odori-master-rdb-169805602203/master-rdb/latest/bon_odori_master.sqlite"
   },
   "database": "data/bon_odori_master.sqlite",
-  "database_checksum": "dc48b67036c848ac909aa13b38307cc01031c97aecfee18649cd0447da2ede77",
-  "database_updated_at": "2026-07-24T08:54:08.459699+00:00",
+  "database_checksum": "264b06819b931fef7561e0342b375d67ff9e358a982782f04152712ba6a8d325",
+  "database_updated_at": "2026-07-24T11:24:36.114902+00:00",
   "dry_run": true,
   "generated_at": "2026-06-22T01:21:35.342436+00:00",
   "generated_by": "build_master_rdb.py",
@@ -40,7 +40,7 @@
   },
   "table_counts": {
     "event_investigation_tasks": 79,
-    "event_occurrences": 252,
+    "event_occurrences": 253,
     "event_series": 241,
     "evidence_items": 31183,
     "external_record_links": 2654,
@@ -49,7 +49,7 @@
     "notion_sync_jobs": 0,
     "observed_occurrence_songs": 30772,
     "observed_occurrences": 2164,
-    "occurrence_dates": 294,
+    "occurrence_dates": 296,
     "occurrence_evidence_links": 100,
     "occurrence_song_evidence_links": 863,
     "occurrence_songs": 705,

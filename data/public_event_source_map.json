@@ -653,11 +653,11 @@
       "venue_id": "ven_535559d7e721de1e"
     },
     {
-      "public_event_key": "新宿中央公園夏祭り 納涼盆踊り大会|新宿中央公園 ファンモアタイム広場|2025-08-23|2025-08-24",
+      "public_event_key": "新宿中央公園夏祭り 納涼盆踊り大会|新宿中央公園 ファンモアタイムひろば|2026-08-22|2026-08-23",
       "name": "新宿中央公園夏祭り 納涼盆踊り大会",
-      "venue": "新宿中央公園 ファンモアタイム広場",
-      "date": "2025-08-23",
-      "date_end": "2025-08-24",
+      "venue": "新宿中央公園 ファンモアタイムひろば",
+      "date": "2026-08-22",
+      "date_end": "2026-08-23",
       "source": "master_rdb",
       "occurrence_id": "occ_99e2dd44bce470e3",
       "series_id": "ser_097893ea5628e504",
@@ -2333,15 +2333,15 @@
       "venue_id": "ven_9710fad80f1a2853"
     },
     {
-      "public_event_key": "第15回 鴨台盆踊り|大正大学|2025-07-04|2025-07-05",
-      "name": "第15回 鴨台盆踊り",
+      "public_event_key": "第16回 鴨台盆踊り|大正大学|2026-07-10|2026-07-11",
+      "name": "第16回 鴨台盆踊り",
       "venue": "大正大学",
-      "date": "2025-07-04",
-      "date_end": "2025-07-05",
+      "date": "2026-07-10",
+      "date_end": "2026-07-11",
       "source": "master_rdb",
-      "occurrence_id": "occ_eb5984603eeb0f18",
+      "occurrence_id": "occ_63ae1b3a246f34f0",
       "series_id": "ser_a3a6304574b4feb5",
-      "event_year": 2025,
+      "event_year": 2026,
       "venue_id": "ven_d89cf9a462f6ab48"
     },
     {
