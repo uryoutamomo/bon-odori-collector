@@ -1,0 +1,252 @@
+{
+  "generated_by": "apply_youtube_setlist_occurrences_rdb.py",
+  "generated_at": "2026-07-24T07:08:26.792649+00:00",
+  "mode": "apply",
+  "sources": {
+    "master_db": "data/bon_odori_master.sqlite",
+    "source_json": "data/youtube_setlist_occurrences.json"
+  },
+  "outputs": {
+    "target_db": "data/bon_odori_master.sqlite",
+    "dry_run_db": "",
+    "backup_db": "data/backups/bon_odori_master.20260724T070826.792649+0000.sqlite.bak",
+    "json": "data/youtube_setlist_occurrences_apply_report.json",
+    "markdown": "data/youtube_setlist_occurrences_apply_report.md"
+  },
+  "options": {
+    "apply": true,
+    "match_score_threshold": 0.7
+  },
+  "write_guard": {
+    "db_committed": true,
+    "rolled_back": false,
+    "rollback_reason": ""
+  },
+  "summary": {
+    "occurrences_processed": 324,
+    "occurrences_matched": 46,
+    "occurrences_unmatched": 278,
+    "song_relations_written": 2667,
+    "evidence_items_written": 2667,
+    "issues_by_severity": {},
+    "audit_issues_by_severity": {
+      "medium": 1
+    },
+    "table_counts": {
+      "event_investigation_tasks": 79,
+      "event_occurrences": 252,
+      "event_series": 241,
+      "evidence_items": 31183,
+      "external_record_links": 2654,
+      "historical_promotion_candidates": 16,
+      "master_meta": 0,
+      "notion_sync_jobs": 0,
+      "observed_occurrence_songs": 30772,
+      "observed_occurrences": 2180,
+      "occurrence_dates": 294,
+      "occurrence_evidence_links": 100,
+      "occurrence_song_evidence_links": 875,
+      "occurrence_songs": 619,
+      "predicted_occurrence_dates": 14,
+      "review_inbox_items": 0,
+      "schema_migrations": 1,
+      "song_aliases": 141,
+      "songs": 158,
+      "venue_aliases": 290,
+      "venues": 241,
+      "write_batches": 0
+    }
+  },
+  "matched_sample": [
+    {
+      "observed_occurrence_id": "obsocc_7af2da1f3a8b5bd8",
+      "occurrence_key": "721afe75b2ce4637",
+      "matched_occurrence_id": "occ_18d94637d5211a90",
+      "match_score": 0.96,
+      "quality_status": "matched_curated",
+      "song_relation_count": 13,
+      "evidence_count": 13
+    },
+    {
+      "observed_occurrence_id": "obsocc_dec4137537146e6d",
+      "occurrence_key": "2fd234622c224e14",
+      "matched_occurrence_id": "occ_b4a4108fce6a5711",
+      "match_score": 0.773,
+      "quality_status": "matched_curated",
+      "song_relation_count": 4,
+      "evidence_count": 4
+    },
+    {
+      "observed_occurrence_id": "obsocc_c11b2fed5b0cc87a",
+      "occurrence_key": "4f30aff581c2938a",
+      "matched_occurrence_id": "occ_9361ed2bc00b0a71",
+      "match_score": 0.92,
+      "quality_status": "matched_curated",
+      "song_relation_count": 8,
+      "evidence_count": 8
+    },
+    {
+      "observed_occurrence_id": "obsocc_79cbbe026546a02b",
+      "occurrence_key": "ba092c7229d4c427",
+      "matched_occurrence_id": "occ_9361ed2bc00b0a71",
+      "match_score": 0.96,
+      "quality_status": "matched_curated",
+      "song_relation_count": 1,
+      "evidence_count": 1
+    },
+    {
+      "observed_occurrence_id": "obsocc_9d2f973d54db36f2",
+      "occurrence_key": "b966ec0d89fff517",
+      "matched_occurrence_id": "occ_8ff0a2c41a98d97b",
+      "match_score": 0.92,
+      "quality_status": "discard_candidate",
+      "song_relation_count": 1,
+      "evidence_count": 1
+    },
+    {
+      "observed_occurrence_id": "obsocc_4e91a13b886f7bf5",
+      "occurrence_key": "7632807ead10883f",
+      "matched_occurrence_id": "occ_8ff0a2c41a98d97b",
+      "match_score": 0.92,
+      "quality_status": "matched_curated",
+      "song_relation_count": 1,
+      "evidence_count": 1
+    },
+    {
+      "observed_occurrence_id": "obsocc_a7d90cb1db95ccbf",
+      "occurrence_key": "1ff89c7aeced9840",
+      "matched_occurrence_id": "occ_8ff0a2c41a98d97b",
+      "match_score": 0.92,
+      "quality_status": "matched_curated",
+      "song_relation_count": 1,
+      "evidence_count": 1
+    },
+    {
+      "observed_occurrence_id": "obsocc_37c7687b12a37645",
+      "occurrence_key": "bc5212c7e1a2e8c6",
+      "matched_occurrence_id": "occ_8ff0a2c41a98d97b",
+      "match_score": 0.92,
+      "quality_status": "matched_curated",
+      "song_relation_count": 12,
+      "evidence_count": 12
+    },
+    {
+      "observed_occurrence_id": "obsocc_cfdaddbd46479c58",
+      "occurrence_key": "786c8bd9ed1132bc",
+      "matched_occurrence_id": "occ_ec5e648358bf8afc",
+      "match_score": 0.7,
+      "quality_status": "matched_curated",
+      "song_relation_count": 10,
+      "evidence_count": 10
+    },
+    {
+      "observed_occurrence_id": "obsocc_ca52b52d52cc7a19",
+      "occurrence_key": "904f3354e121b21c",
+      "matched_occurrence_id": "occ_59180208dc287804",
+      "match_score": 0.92,
+      "quality_status": "matched_curated",
+      "song_relation_count": 4,
+      "evidence_count": 4
+    },
+    {
+      "observed_occurrence_id": "obsocc_923a8d411faa510b",
+      "occurrence_key": "41b26f5f03ce6ac5",
+      "matched_occurrence_id": "occ_67c8a6fd85776a8f",
+      "match_score": 0.7,
+      "quality_status": "matched_curated",
+      "song_relation_count": 5,
+      "evidence_count": 5
+    },
+    {
+      "observed_occurrence_id": "obsocc_887c1d71fa4fffe9",
+      "occurrence_key": "942089dc38581f0a",
+      "matched_occurrence_id": "occ_59180208dc287804",
+      "match_score": 0.92,
+      "quality_status": "matched_curated",
+      "song_relation_count": 1,
+      "evidence_count": 1
+    },
+    {
+      "observed_occurrence_id": "obsocc_dc1c870e976c1878",
+      "occurrence_key": "960922ee94f18bad",
+      "matched_occurrence_id": "occ_59180208dc287804",
+      "match_score": 0.92,
+      "quality_status": "matched_curated",
+      "song_relation_count": 1,
+      "evidence_count": 1
+    },
+    {
+      "observed_occurrence_id": "obsocc_3a01c4a70a274bc9",
+      "occurrence_key": "a47be5dfe7f2cc6d",
+      "matched_occurrence_id": "occ_59180208dc287804",
+      "match_score": 0.92,
+      "quality_status": "matched_curated",
+      "song_relation_count": 1,
+      "evidence_count": 1
+    },
+    {
+      "observed_occurrence_id": "obsocc_3128ab24ea3ac1cd",
+      "occurrence_key": "06faffec2e48720d",
+      "matched_occurrence_id": "occ_59180208dc287804",
+      "match_score": 0.92,
+      "quality_status": "matched_curated",
+      "song_relation_count": 1,
+      "evidence_count": 1
+    },
+    {
+      "observed_occurrence_id": "obsocc_eab38e4317731378",
+      "occurrence_key": "005895282c84cd6d",
+      "matched_occurrence_id": "occ_59180208dc287804",
+      "match_score": 0.92,
+      "quality_status": "matched_curated",
+      "song_relation_count": 1,
+      "evidence_count": 1
+    },
+    {
+      "observed_occurrence_id": "obsocc_bb648b1cc598adca",
+      "occurrence_key": "a98f1496e03af7c9",
+      "matched_occurrence_id": "occ_59180208dc287804",
+      "match_score": 0.92,
+      "quality_status": "matched_curated",
+      "song_relation_count": 1,
+      "evidence_count": 1
+    },
+    {
+      "observed_occurrence_id": "obsocc_99f34a8bc5d9cdf5",
+      "occurrence_key": "9464f9a7cb7d35bc",
+      "matched_occurrence_id": "occ_59180208dc287804",
+      "match_score": 0.92,
+      "quality_status": "matched_curated",
+      "song_relation_count": 1,
+      "evidence_count": 1
+    },
+    {
+      "observed_occurrence_id": "obsocc_d9922ff9bfaff963",
+      "occurrence_key": "ddd737a24f5dbe56",
+      "matched_occurrence_id": "occ_59180208dc287804",
+      "match_score": 0.92,
+      "quality_status": "matched_curated",
+      "song_relation_count": 1,
+      "evidence_count": 1
+    },
+    {
+      "observed_occurrence_id": "obsocc_f4276aa9ef352625",
+      "occurrence_key": "83abf788489f749f",
+      "matched_occurrence_id": "occ_59180208dc287804",
+      "match_score": 0.92,
+      "quality_status": "matched_curated",
+      "song_relation_count": 1,
+      "evidence_count": 1
+    }
+  ],
+  "issues": [],
+  "audit": {
+    "issue_count": 1,
+    "issues_by_severity": {
+      "medium": 1
+    },
+    "issues_by_type": {
+      "source_snapshot_drift": 1
+    }
+  }
+}
