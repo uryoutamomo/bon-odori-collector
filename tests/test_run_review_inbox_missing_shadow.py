@@ -55,6 +55,7 @@ def args_for(tmp, *, source="source-url", rstart="a" * 64, suffix="first", **ove
         "report_out": Path(tmp) / f"{source}-report-{suffix}.json",
         "observation_id": f"b1-7-{source}-{suffix}",
         "expect_rstart_checksum": rstart,
+        "public_target_year": 2026,
         "public_today": "2026-07-18",
         "target_year": 2026,
         "bucket": "unused-in-test",
@@ -73,7 +74,7 @@ def make_master(path):
     conn.close()
 
 
-def fixed_public_digest(_database, *, today):
+def fixed_public_digest(_database, *, target_year, today):
     return hashlib.sha256(today.encode("utf-8")).hexdigest()
 
 

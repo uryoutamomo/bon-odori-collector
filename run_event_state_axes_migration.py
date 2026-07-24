@@ -24,17 +24,19 @@ def run(
     db_path,
     events_path,
     source_map_path,
+    target_year,
     execute=False,
     confirm=None,
     derive_from_db=False,
     today=None,
-    target_year=2026,
 ):
     db_path = Path(db_path)
     if derive_from_db:
         from export_public_events import build_public_events_from_master, project_public_events
 
-        raw_events, *_ = build_public_events_from_master(db_path)
+        raw_events, *_ = build_public_events_from_master(
+            db_path, target_year=target_year
+        )
         # Recompute the desired axes from current RDB facts and the legacy
         # projection.  Dropping stored axes here avoids a circular no-op and
         # lets the scheduled sync advance confirmed -> ended when the source
@@ -43,7 +45,12 @@ def run(
             event.pop("current_event_state", None)
             event.pop("date_certainty_tier", None)
             event["_canonical_state_axes"] = False
-        projection = project_public_events(raw_events, db_path=db_path, today=today)
+        projection = project_public_events(
+            raw_events,
+            target_year=target_year,
+            db_path=db_path,
+            today=today,
+        )
         events = projection["public_events"]
         source_map = projection["source_map"]
     else:
@@ -116,7 +123,7 @@ def main(argv=None):
     parser.add_argument("--confirm")
     parser.add_argument("--derive-from-db", action="store_true")
     parser.add_argument("--today")
-    parser.add_argument("--target-year", type=int, default=2026)
+    parser.add_argument("--target-year", type=int, required=True)
     parser.add_argument("--report-out", type=Path)
     args = parser.parse_args(argv)
     report = run(

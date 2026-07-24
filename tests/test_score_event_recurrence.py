@@ -4,6 +4,10 @@ from datetime import date
 from public_export_support.score_event_recurrence import build_rows, enrich_public_events, parse_edition_number, public_status_for_event
 
 
+TARGET_YEAR = 2026
+TODAY = date(2026, 6, 17)
+
+
 class ScoreEventRecurrenceTest(unittest.TestCase):
     def test_future_2026_confirmed_is_upcoming(self):
         event = {
@@ -13,7 +17,7 @@ class ScoreEventRecurrenceTest(unittest.TestCase):
             "date": "2026-06-20",
             "status": "確認済み",
         }
-        result = public_status_for_event(event)
+        result = public_status_for_event(event, target_year=TARGET_YEAR, today=TODAY)
         self.assertEqual(result["public_status"], "upcoming_confirmed")
         self.assertEqual(result["public_category"], "upcoming")
         self.assertEqual(result["public_status_label"], "今後開催")
@@ -27,7 +31,7 @@ class ScoreEventRecurrenceTest(unittest.TestCase):
             "date": "2026-06-13",
             "status": "終了",
         }
-        result = public_status_for_event(event)
+        result = public_status_for_event(event, target_year=TARGET_YEAR, today=TODAY)
         self.assertEqual(result["public_status"], "ended_2026")
         self.assertEqual(result["public_category"], "ended")
         self.assertEqual(result["public_status_label"], "開催終了")
@@ -42,8 +46,12 @@ class ScoreEventRecurrenceTest(unittest.TestCase):
             "status": "確認済み",
         }
 
-        on_final_day = public_status_for_event(event, today=date(2026, 7, 21))
-        after_final_day = public_status_for_event(event, today=date(2026, 7, 22))
+        on_final_day = public_status_for_event(
+            event, target_year=TARGET_YEAR, today=date(2026, 7, 21)
+        )
+        after_final_day = public_status_for_event(
+            event, target_year=TARGET_YEAR, today=date(2026, 7, 22)
+        )
 
         self.assertEqual(on_final_day["public_category"], "upcoming")
         self.assertEqual(after_final_day["public_category"], "ended")
@@ -58,7 +66,7 @@ class ScoreEventRecurrenceTest(unittest.TestCase):
             "status": "終了",
             "detail": "公式確認URLあり。第70回、2025-07-25〜2025-07-26、納涼盆踊り大会。",
         }
-        result = public_status_for_event(event)
+        result = public_status_for_event(event, target_year=TARGET_YEAR, today=TODAY)
         self.assertEqual(result["public_status"], "expected_high")
         self.assertEqual(result["public_category"], "recurring_last_year")
         self.assertEqual(result["public_status_label"], "昨年開催")
@@ -76,7 +84,7 @@ class ScoreEventRecurrenceTest(unittest.TestCase):
             "status": "終了",
             "detail": "公式確認URLあり。Festival / BON DANCE / シブヤエンタメ祭系の2025企画。",
         }
-        result = public_status_for_event(event)
+        result = public_status_for_event(event, target_year=TARGET_YEAR, today=TODAY)
         self.assertEqual(result["public_status"], "expected_low")
         self.assertEqual(result["public_category"], "recurring_last_year")
         self.assertIn("イベント名に2025明記", result["cautions"])
@@ -89,7 +97,7 @@ class ScoreEventRecurrenceTest(unittest.TestCase):
             "months": [7],
             "status": "未確認",
         }
-        result = public_status_for_event(event)
+        result = public_status_for_event(event, target_year=TARGET_YEAR, today=TODAY)
         self.assertEqual(result["public_status"], "date_unknown")
         self.assertEqual(result["public_category"], "date_unknown")
         self.assertEqual(result["public_status_label"], "日程未確認")
@@ -104,11 +112,29 @@ class ScoreEventRecurrenceTest(unittest.TestCase):
                 "status": "確認済み",
             }
         ]
-        rows = build_rows(events)
+        rows = build_rows(events, target_year=TARGET_YEAR, today=TODAY)
         enriched = enrich_public_events(events, rows)
         self.assertEqual(enriched[0]["public_status"], "upcoming_confirmed")
         self.assertEqual(enriched[0]["public_category"], "upcoming")
         self.assertIn("public_note", enriched[0])
+
+    def test_2027_context_uses_2026_as_previous_year(self):
+        event = {
+            "name": "第71回 恵比寿駅前盆踊り大会",
+            "venue": "JR恵比寿駅西口広場",
+            "area": "渋谷区",
+            "date": "2026-07-24",
+            "status": "終了",
+            "detail": "2026年に公式開催。恒例の盆踊り大会。",
+        }
+
+        result = public_status_for_event(
+            event, target_year=2027, today=date(2027, 6, 17)
+        )
+
+        self.assertEqual(result["public_category"], "recurring_last_year")
+        self.assertEqual(result["last_seen_year"], 2026)
+        self.assertIn("held_2026", result["reasons"])
 
     def test_parse_edition_number_handles_fullwidth_digits_and_ordinal(self):
         self.assertEqual(parse_edition_number("第３４回ふるさと千川まつり"), 34)

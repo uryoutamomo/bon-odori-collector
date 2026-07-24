@@ -4,6 +4,7 @@ import argparse
 import json
 from pathlib import Path
 
+from event_model.year_context import normalize_target_year
 from export_public_events import write_public_js
 
 
@@ -58,7 +59,8 @@ def build_label(months, jun):
     return "・".join(parts) if parts else None
 
 
-def public_season_hint(event, target_year=2026):
+def public_season_hint(event, *, target_year):
+    target_year = normalize_target_year(target_year)
     months = [
         int(month)
         for month in event.get("months") or []
@@ -106,7 +108,8 @@ def attach_season_hint_fields(event, hint):
     event["display_tier"] = "season_hint"
 
 
-def apply_season_hints(events, target_year=2026):
+def apply_season_hints(events, *, target_year):
+    target_year = normalize_target_year(target_year)
     applied = []
     skipped = []
     target_count = 0
@@ -169,7 +172,7 @@ def main():
     parser.add_argument("--out-json", default=str(PUBLIC_EVENTS))
     parser.add_argument("--out-js", default=str(PUBLIC_EVENTS_JS))
     parser.add_argument("--report", default=str(OUT_REPORT))
-    parser.add_argument("--target-year", type=int, default=2026)
+    parser.add_argument("--target-year", type=int, required=True)
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
 
@@ -177,7 +180,7 @@ def main():
     result = apply_season_hints(events, target_year=args.target_year)
     from public_json_postprocessors.apply_public_display_tiers import apply_display_tiers
 
-    result["events"] = apply_display_tiers(result["events"])
+    result["events"] = apply_display_tiers(result["events"], target_year=args.target_year)
     result["report"]["dry_run"] = bool(args.dry_run)
     if not args.dry_run:
         write_json(args.out_json, result["events"])

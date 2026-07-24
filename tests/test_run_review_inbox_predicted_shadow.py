@@ -55,6 +55,7 @@ def args_for(tmp, *, source="research", rstart="a" * 64, suffix="first", **overr
         "report_out": Path(tmp) / f"{source}-report-{suffix}.json",
         "observation_id": f"b1-6-{source}-{suffix}",
         "expect_rstart_checksum": rstart,
+        "public_target_year": 2026,
         "public_today": "2026-07-18",
         "bucket": "unused-in-test",
         "prefix": "master-rdb",
@@ -72,7 +73,7 @@ def make_master(path):
     conn.close()
 
 
-def fixed_public_digest(_database, *, today):
+def fixed_public_digest(_database, *, target_year, today):
     return hashlib.sha256(today.encode("utf-8")).hexdigest()
 
 

@@ -59,6 +59,7 @@ def args_for(tmp: str, **overrides) -> Namespace:
         "snapshot_out": Path(tmp) / "snapshot.json",
         "report_out": Path(tmp) / "report.json",
         "observation_id": "youtube-scheduled-123-1",
+        "public_target_year": 2026,
         "public_today": "2026-07-20",
         "bucket": "unused",
         "prefix": "master-rdb",
@@ -70,7 +71,7 @@ def args_for(tmp: str, **overrides) -> Namespace:
     return Namespace(**values)
 
 
-def fixed_public_digest(_database, *, today):
+def fixed_public_digest(_database, *, target_year, today):
     return hashlib.sha256(today.encode("utf-8")).hexdigest()
 
 

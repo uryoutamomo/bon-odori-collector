@@ -269,7 +269,7 @@ def next_rows_for_args(queue, candidates, args, attempted_queue_ids=None):
     return args.month, [], []
 
 
-def regenerate_outputs(month, target_year):
+def regenerate_outputs(month, target_year, as_of):
     commands = [
         ["python3", "-m", "youtube_backfill.build_event_occurrence_backfill_plan"],
         ["python3", "-m", "youtube_backfill.build_low_confidence_backfill_review"],
@@ -277,7 +277,14 @@ def regenerate_outputs(month, target_year):
         ["python3", "-m", "youtube_backfill.build_event_schedule_rules", "--target-year", str(target_year)],
         ["python3", "-m", "youtube_backfill.build_event_date_predictions", "--target-year", str(target_year)],
         ["python3", "build_song_occurrences.py"],
-        ["python3", "export_public_events.py"],
+        [
+            "python3",
+            "export_public_events.py",
+            "--target-year",
+            str(target_year),
+            "--today",
+            as_of,
+        ],
         [
             "python3",
             "-m",
@@ -535,6 +542,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--month", type=int, default=7)
     parser.add_argument("--target-year", type=int, required=True)
+    parser.add_argument("--as-of", required=True, help="YYYY-MM-DD")
     parser.add_argument("--auto-next-month", action="store_true", help="Use the next month with unprocessed rows, starting at --month.")
     parser.add_argument("--focus-month", action="append", type=int, dest="focus_months", help="Limit automatic selection to this month. Repeatable.")
     parser.add_argument("--limit", type=int, default=10)
@@ -603,7 +611,9 @@ def main():
     if result["error"]:
         report["error"] = result["error"]
     if report["status"] not in {"no_rows", "dry_run"}:
-        report["regenerated"] = regenerate_outputs(args.month, args.target_year)
+        report["regenerated"] = regenerate_outputs(
+            args.month, args.target_year, args.as_of
+        )
 
     if "candidates_after" not in report:
         current = load_json(CANDIDATES, {})

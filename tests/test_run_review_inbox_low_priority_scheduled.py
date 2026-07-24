@@ -32,9 +32,9 @@ def setup(tmp):
     sources=[]
     for source,payload in payloads.items():
         path=root/f"{source}.json"; path.write_text(json.dumps(payload),encoding="utf-8"); sources.append(f"{source}={path}")
-    return Namespace(source=sources,evidence_dir=root/"evidence",observation_id="obs",public_today="2026-07-20",bucket="",prefix="",work_dir=root/"work",execute=True,confirm=CONFIRM)
+    return Namespace(source=sources,evidence_dir=root/"evidence",observation_id="obs",public_target_year=2026,public_today="2026-07-20",bucket="",prefix="",work_dir=root/"work",execute=True,confirm=CONFIRM)
 
-def digest(_db,*,today): return hashlib.sha256(today.encode()).hexdigest()
+def digest(_db,*,target_year,today): return hashlib.sha256(f"{target_year}:{today}".encode()).hexdigest()
 
 def test_all_five_sources_publish_with_audited_evidence():
     with tempfile.TemporaryDirectory() as tmp:

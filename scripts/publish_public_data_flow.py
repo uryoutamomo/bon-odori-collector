@@ -16,15 +16,35 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def build_commands(python: str, with_guard: bool) -> list[list[str]]:
+def build_commands(
+    python: str, *, target_year: int, today: str, with_guard: bool
+) -> list[list[str]]:
     commands = [
-        [python, "export_public_events.py"],
+        [
+            python,
+            "export_public_events.py",
+            "--target-year",
+            str(target_year),
+            "--today",
+            today,
+        ],
         [python, "-m", "public_export_support.build_publication_gap_review"],
         [python, "-m", "public_json_postprocessors.review_missing_occurrence_venues"],
         [python, "-m", "review_console_ops.run_review_console", "--inventory"],
     ]
     if with_guard:
-        commands.append([python, "-m", "public_json_postprocessors.guard_public_events_sync", "--report-only"])
+        commands.append(
+            [
+                python,
+                "-m",
+                "public_json_postprocessors.guard_public_events_sync",
+                "--target-year",
+                str(target_year),
+                "--today",
+                today,
+                "--report-only",
+            ]
+        )
     return commands
 
 
@@ -55,12 +75,23 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         default=sys.executable,
         help="Python executable used for child commands",
     )
+    parser.add_argument("--target-year", type=int, required=True)
+    parser.add_argument("--today", required=True, help="YYYY-MM-DD")
     return parser.parse_args(argv)
 
 
 def main(argv: list[str] | None = None) -> int:
     args = parse_args(argv)
-    run_commands(build_commands(args.python, args.with_guard), ROOT, args.dry_run)
+    run_commands(
+        build_commands(
+            args.python,
+            target_year=args.target_year,
+            today=args.today,
+            with_guard=args.with_guard,
+        ),
+        ROOT,
+        args.dry_run,
+    )
     return 0
 
 

@@ -62,7 +62,7 @@ def run_scheduled(args: argparse.Namespace, *, environ: Mapping[str,str] | None=
     factory=store_factory or (lambda value: MasterDbS3ArtifactStore(bucket=value.bucket,prefix=value.prefix))
     store=factory(args); reports=[]
     for source_id in SOURCE_IDS:
-        report=run_source_shadow(store=store,adapted_snapshot=snapshots[source_id],observation_id=f"{observation}-{source_id}",public_projection_digest=lambda db: digest_function(db,today=args.public_today),flags=flags,work_dir=(Path(args.work_dir)/source_id if args.work_dir else None))
+        report=run_source_shadow(store=store,adapted_snapshot=snapshots[source_id],observation_id=f"{observation}-{source_id}",public_projection_digest=lambda db: digest_function(db,target_year=args.public_target_year,today=args.public_today),flags=flags,work_dir=(Path(args.work_dir)/source_id if args.work_dir else None))
         report["entrypoint"]={"name":"run_review_inbox_low_priority_scheduled.py","source_queue":source_id,"reader_mode":flags.reader_mode,"legacy_writer_retained":flags.legacy_writer_enabled,"public_today":args.public_today}
         write_report(evidence_dir/f"{source_id}-report.json",report); reports.append(report)
     summary={"source_ids":list(SOURCE_IDS),"source_count":len(reports),"published_count":sum(bool(r["published"]) for r in reports),"unmapped_count":sum(r["reconciliation"]["summary"]["unmapped_count"] for r in reports),"rend":reports[-1]["rend"]["checksum"]}
@@ -73,7 +73,7 @@ def run_scheduled(args: argparse.Namespace, *, environ: Mapping[str,str] | None=
 def build_parser() -> argparse.ArgumentParser:
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--source",action="append",default=[])
-    parser.add_argument("--evidence-dir",type=Path,required=True); parser.add_argument("--observation-id",required=True); parser.add_argument("--public-today",required=True)
+    parser.add_argument("--evidence-dir",type=Path,required=True); parser.add_argument("--observation-id",required=True); parser.add_argument("--public-target-year",type=int,required=True); parser.add_argument("--public-today",required=True)
     parser.add_argument("--bucket",default=""); parser.add_argument("--prefix",default=""); parser.add_argument("--work-dir",type=Path); parser.add_argument("--execute",action="store_true"); parser.add_argument("--confirm",default="")
     return parser
 

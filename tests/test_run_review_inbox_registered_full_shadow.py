@@ -68,6 +68,7 @@ def args_for(tmp, *, rstart="a" * 64, suffix="first", **overrides):
         "report_out": Path(tmp) / f"report-{suffix}.json",
         "observation_id": f"b1-5-test-{suffix}",
         "expect_rstart_checksum": rstart,
+        "public_target_year": 2026,
         "public_today": "2026-07-18",
         "bucket": "unused-in-test",
         "prefix": "master-rdb",
@@ -85,7 +86,7 @@ def make_master(path):
     conn.close()
 
 
-def fixed_public_digest(_database, *, today):
+def fixed_public_digest(_database, *, target_year, today):
     return hashlib.sha256(today.encode("utf-8")).hexdigest()
 
 
@@ -94,7 +95,9 @@ def seed_shirokane_canary(store, work_dir):
         store=store,
         adapted_snapshot=build_snapshot(REGISTERED_INPUT, canary=True),
         observation_id="b1-3b-shirokane-canary-test",
-        public_projection_digest=lambda db: fixed_public_digest(db, today="2026-07-18"),
+        public_projection_digest=lambda db: fixed_public_digest(
+            db, target_year=2026, today="2026-07-18"
+        ),
         flags=SourceWriterFlags(
             dual_write_mode="canary",
             cas_publish_enabled=True,

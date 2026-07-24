@@ -7,13 +7,14 @@ import re
 from datetime import date, timedelta
 from pathlib import Path
 
+from event_model.year_context import EventYearContext, normalize_target_year
+
 
 DATA = Path("data")
 PUBLIC_EVENTS = DATA / "public" / "events_public.json"
 PUBLIC_EVENTS_JS = DATA / "public" / "events_public.js"
 OUT_REPORT = DATA / "public_historical_reference_dry_run.json"
 FIXED_DATE_RULES = DATA / "public_fixed_date_rules.json"
-DEFAULT_TODAY = date(2026, 6, 20)
 WEEKDAY_LABELS = ["月", "火", "水", "木", "金", "土", "日"]
 
 
@@ -138,7 +139,8 @@ def same_nth_weekday(target_year, source):
     return matches[min(nth, len(matches)) - 1]
 
 
-def slide_date_range_to_target_year(start_value, end_value=None, target_year=2026):
+def slide_date_range_to_target_year(start_value, end_value=None, *, target_year):
+    target_year = normalize_target_year(target_year)
     start = parse_iso_date(start_value)
     if not start:
         return None
@@ -162,7 +164,8 @@ def slide_date_range_to_target_year(start_value, end_value=None, target_year=202
     }
 
 
-def fixed_date_range_to_target_year(rule, target_year=2026):
+def fixed_date_range_to_target_year(rule, *, target_year):
+    target_year = normalize_target_year(target_year)
     try:
         start = date(target_year, int(rule["month"]), int(rule["day"]))
         end_month = int(rule.get("end_month") or rule["month"])
@@ -207,7 +210,8 @@ def historical_label(event):
     return f"{dates[0]}実績・今年未確認"
 
 
-def public_historical_reference(event, target_year=2026, today=DEFAULT_TODAY, fixed_date_rules=None):
+def public_historical_reference(event, *, target_year, today, fixed_date_rules=None):
+    context = EventYearContext(target_year=target_year, as_of=today)
     if event.get("public_category") != "recurring_last_year":
         return None
     score = float(event.get("recurrence_score") or 0)
@@ -216,11 +220,13 @@ def public_historical_reference(event, target_year=2026, today=DEFAULT_TODAY, fi
     slide = None
     fixed_rule = fixed_date_rule_for_event(event, fixed_date_rules)
     if fixed_rule and not event.get("date_prediction"):
-        slide = fixed_date_range_to_target_year(fixed_rule, target_year=target_year)
+        slide = fixed_date_range_to_target_year(fixed_rule, target_year=context.target_year)
     elif should_slide:
-        slide = slide_date_range_to_target_year(event.get("date"), event.get("date_end"), target_year=target_year)
+        slide = slide_date_range_to_target_year(
+            event.get("date"), event.get("date_end"), target_year=context.target_year
+        )
     if slide:
-        if slide and parse_iso_date(slide.get("date")) < today:
+        if slide and parse_iso_date(slide.get("date")) < context.as_of:
             slide["downgrade_reason"] = "slide_date_before_today"
             slide = None
     return {
@@ -268,7 +274,8 @@ def attach_historical_reference_fields(event, reference):
         event["display_tier"] = "historical_reference"
 
 
-def apply_historical_references(events, target_year=2026, today=DEFAULT_TODAY, fixed_date_rules=None):
+def apply_historical_references(events, *, target_year, today, fixed_date_rules=None):
+    context = EventYearContext(target_year=target_year, as_of=today)
     applied = []
     skipped = []
     target_count = 0
@@ -279,8 +286,8 @@ def apply_historical_references(events, target_year=2026, today=DEFAULT_TODAY, f
         target_count += 1
         reference = public_historical_reference(
             event,
-            target_year=target_year,
-            today=today,
+            target_year=context.target_year,
+            today=context.as_of,
             fixed_date_rules=fixed_date_rules,
         )
         if not reference:
@@ -316,8 +323,8 @@ def apply_historical_references(events, target_year=2026, today=DEFAULT_TODAY, f
         "report": {
             "generated_by": "apply_public_historical_references.py",
             "source": str(PUBLIC_EVENTS),
-            "target_year": target_year,
-            "today": fmt(today),
+            "target_year": context.target_year,
+            "today": fmt(context.as_of),
             "target_category": "recurring_last_year",
             "target_count": target_count,
             "applied_count": len(applied),
@@ -367,8 +374,8 @@ def main():
     parser.add_argument("--out-js", default=str(PUBLIC_EVENTS_JS))
     parser.add_argument("--report", default=str(OUT_REPORT))
     parser.add_argument("--fixed-date-rules", default=str(FIXED_DATE_RULES))
-    parser.add_argument("--target-year", type=int, default=2026)
-    parser.add_argument("--today", default=fmt(DEFAULT_TODAY))
+    parser.add_argument("--target-year", type=int, required=True)
+    parser.add_argument("--today", required=True)
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
 
@@ -384,7 +391,7 @@ def main():
     )
     from public_json_postprocessors.apply_public_display_tiers import apply_display_tiers
 
-    result["events"] = apply_display_tiers(result["events"])
+    result["events"] = apply_display_tiers(result["events"], target_year=args.target_year)
     result["report"]["dry_run"] = bool(args.dry_run)
     if not args.dry_run:
         from export_public_events import write_public_js

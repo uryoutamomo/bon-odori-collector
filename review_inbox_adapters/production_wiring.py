@@ -98,16 +98,24 @@ class MasterDbS3ArtifactStore:
         return state
 
 
-def build_public_projection(db_path: Path, *, today: str) -> list[dict[str, Any]]:
+def build_public_projection(
+    db_path: Path, *, target_year: int, today: str
+) -> list[dict[str, Any]]:
     """Build the production events_public.json content without writing files."""
 
-    events, _covered, _fallback, _skipped = build_public_events_from_master(db_path)
-    return project_public_events(events, db_path=db_path, today=today)["public_events"]
+    events, _covered, _fallback, _skipped = build_public_events_from_master(
+        db_path, target_year=target_year
+    )
+    return project_public_events(
+        events, target_year=target_year, db_path=db_path, today=today
+    )["public_events"]
 
 
-def public_projection_digest(db_path: Path, *, today: str) -> str:
+def public_projection_digest(db_path: Path, *, target_year: int, today: str) -> str:
     """Return the SHA-256 of the exact events_public.json content bytes."""
 
-    projection = build_public_projection(Path(db_path), today=today)
+    projection = build_public_projection(
+        Path(db_path), target_year=target_year, today=today
+    )
     output_bytes = json.dumps(projection, ensure_ascii=False, indent=2).encode("utf-8")
     return hashlib.sha256(output_bytes).hexdigest()

@@ -4,6 +4,10 @@ from datetime import date
 from public_json_postprocessors.apply_public_historical_references import apply_historical_references
 
 
+TARGET_YEAR = 2026
+TODAY = date(2026, 6, 20)
+
+
 class ApplyPublicHistoricalReferencesTest(unittest.TestCase):
     def test_applies_historical_reference_to_recurring_event(self):
         events = [{
@@ -21,7 +25,7 @@ class ApplyPublicHistoricalReferencesTest(unittest.TestCase):
             "date": "2025-08-08",
         }]
 
-        result = apply_historical_references(events)
+        result = apply_historical_references(events, target_year=TARGET_YEAR, today=TODAY)
 
         self.assertEqual(result["report"]["target_count"], 1)
         self.assertEqual(result["report"]["applied_count"], 1)
@@ -46,7 +50,7 @@ class ApplyPublicHistoricalReferencesTest(unittest.TestCase):
             "predicted_date": "2026-07-31",
         }]
 
-        result = apply_historical_references(events)
+        result = apply_historical_references(events, target_year=TARGET_YEAR, today=TODAY)
 
         self.assertEqual(result["report"]["with_rule_prediction_count"], 1)
         self.assertEqual(result["events"][0]["display_tier"], "rule_predicted")
@@ -75,7 +79,9 @@ class ApplyPublicHistoricalReferencesTest(unittest.TestCase):
             }
         }
 
-        result = apply_historical_references(events, fixed_date_rules=fixed_rules)
+        result = apply_historical_references(
+            events, target_year=TARGET_YEAR, today=TODAY, fixed_date_rules=fixed_rules
+        )
 
         self.assertEqual(result["events"][0]["predicted_date"], "2026-08-01")
         self.assertEqual(result["events"][0]["predicted_date_end"], "2026-08-02")
@@ -112,6 +118,7 @@ class ApplyPublicHistoricalReferencesTest(unittest.TestCase):
 
         result = apply_historical_references(
             events,
+            target_year=TARGET_YEAR,
             today=date(2026, 1, 1),
             fixed_date_rules=stale_external_rules,
         )
@@ -132,7 +139,7 @@ class ApplyPublicHistoricalReferencesTest(unittest.TestCase):
             "date": "2025-08-02",
         }]
 
-        result = apply_historical_references(events)
+        result = apply_historical_references(events, target_year=TARGET_YEAR, today=TODAY)
 
         self.assertEqual(result["report"]["slide_count"], 0)
         self.assertEqual(result["report"]["reference_only_count"], 1)
@@ -156,7 +163,9 @@ class ApplyPublicHistoricalReferencesTest(unittest.TestCase):
             "display_tier": "historical_slide",
         }]
 
-        result = apply_historical_references(events, today=date(2026, 6, 26))
+        result = apply_historical_references(
+            events, target_year=TARGET_YEAR, today=date(2026, 6, 26)
+        )
 
         self.assertEqual(result["events"][0]["historical_display_tier"], "historical_reference")
         self.assertEqual(result["events"][0]["display_tier"], "historical_reference")
@@ -173,11 +182,30 @@ class ApplyPublicHistoricalReferencesTest(unittest.TestCase):
             "historical_last_seen_year": 2025,
         }]
 
-        result = apply_historical_references(events)
+        result = apply_historical_references(events, target_year=TARGET_YEAR, today=TODAY)
 
         self.assertEqual(result["report"]["target_count"], 0)
         self.assertNotIn("historical_reference", result["events"][0])
         self.assertNotIn("historical_last_seen_year", result["events"][0])
+
+    def test_2027_context_slides_a_2026_historical_reference(self):
+        events = [{
+            "name": "翌年投影テスト盆踊り",
+            "venue": "中央公園",
+            "public_category": "recurring_last_year",
+            "public_status": "expected_medium",
+            "recurrence_score": 0.6,
+            "last_seen_year": 2026,
+            "last_seen_dates": ["2026-08-07"],
+            "date": "2026-08-07",
+        }]
+
+        result = apply_historical_references(
+            events, target_year=2027, today=date(2027, 6, 17)
+        )
+
+        self.assertEqual(result["report"]["target_year"], 2027)
+        self.assertTrue(result["events"][0]["predicted_date"].startswith("2027-"))
 
 
 if __name__ == "__main__":

@@ -4,6 +4,8 @@ import argparse
 import json
 from pathlib import Path
 
+from event_model.year_context import normalize_target_year
+
 
 DATA = Path("data")
 PUBLIC_EVENTS = DATA / "public" / "events_public.json"
@@ -161,6 +163,18 @@ def apply_predictions(events, predictions):
     }
 
 
+def predictions_for_target_year(payload, *, target_year):
+    target_year = normalize_target_year(target_year)
+    filtered = dict(payload or {})
+    filtered["target_year"] = target_year
+    filtered["predictions"] = [
+        row
+        for row in filtered.get("predictions") or []
+        if row.get("target_year") == target_year
+    ]
+    return filtered
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--public-events", default=str(PUBLIC_EVENTS))
@@ -168,15 +182,20 @@ def main():
     parser.add_argument("--out-json", default=str(PUBLIC_EVENTS))
     parser.add_argument("--out-js", default=str(PUBLIC_EVENTS_JS))
     parser.add_argument("--report", default=str(OUT_REPORT))
+    parser.add_argument("--target-year", type=int, required=True)
     parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
 
     events = load_json(args.public_events, [])
-    predictions = load_json(args.predictions, {})
+    predictions = predictions_for_target_year(
+        load_json(args.predictions, {}), target_year=args.target_year
+    )
     result = apply_predictions(events, predictions)
     from public_json_postprocessors.apply_public_display_tiers import apply_display_tiers
 
-    result["events"] = apply_display_tiers(result["events"])
+    result["events"] = apply_display_tiers(
+        result["events"], target_year=args.target_year
+    )
     result["report"]["dry_run"] = bool(args.dry_run)
     if not args.dry_run:
         from export_public_events import write_public_js
