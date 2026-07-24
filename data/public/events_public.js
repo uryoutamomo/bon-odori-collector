@@ -364,13 +364,6 @@ const EVENTS = [
     ],
     "songs": [
       {
-        "name": "おジャ魔女カーニバル",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
-      },
-      {
         "name": "ほっぺちゃん音頭",
         "confidence": "hint",
         "probability": 80,
@@ -383,6 +376,78 @@ const EVENTS = [
         "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント"
+      },
+      {
+        "name": "おそ松くん音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "おジャ魔女カーニバル",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "オロナミンC 元気ハツラツ音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "クックロビン音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "クックロビン音頭 Cock Robin Ondo",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "サンシャインぴっかぴか音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ダンシングヒーロー",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ドラえもん音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ベイサイド・ブギ",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "メリーアン音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
       }
     ],
     "public_status": "expected_medium",
@@ -2812,6 +2877,36 @@ const EVENTS = [
         "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント"
+      },
+      {
+        "name": "ドラえもん音頭 Doraemon ondo",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "六本人音頭~花火音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "六本木音頭~炭坑節",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "日本の芸能:『加賀万歳",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "東京音頭~炭坑節",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
       }
     ],
     "public_status": "expected_low",
@@ -3204,7 +3299,21 @@ const EVENTS = [
         "basis_label": "2025年ヒント"
       },
       {
+        "name": "ふるさと音頭~東京音頭~新橋音頭",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
         "name": "チャンチキおけさ",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "チャンチキおけさ~好きになった人",
         "confidence": "hint",
         "probability": 80,
         "basis": "past_evidence",
@@ -3261,6 +3370,20 @@ const EVENTS = [
       },
       {
         "name": "東京音頭",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "東京音頭~新橋音頭〜ハワイ音頭~炭坑節",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "火の国太鼓~チャンチキおけさ〜八木節",
         "confidence": "hint",
         "probability": 80,
         "basis": "past_evidence",
@@ -4017,6 +4140,13 @@ const EVENTS = [
         "basis_label": "実測"
       },
       {
+        "name": "まつさか",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
         "name": "やっちく",
         "confidence": "confirmed",
         "probability": 80,
@@ -4045,11 +4175,39 @@ const EVENTS = [
         "basis_label": "実測"
       },
       {
+        "name": "流しおどり",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
         "name": "甚句",
         "confidence": "hint",
         "probability": 80,
         "basis": "current_observed",
         "basis_label": "実測"
+      },
+      {
+        "name": "西馬音内盆踊り",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "遊行おどり",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "阿波踊り",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       }
     ],
     "public_status": "ended_2026",
@@ -5119,7 +5277,80 @@ const EVENTS = [
         "count": 1
       }
     ],
-    "songs": [],
+    "songs": [
+      {
+        "name": "MY HOME TOWN",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "おこさ節",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "チャンチキおけさ",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ハワイ音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "八木節",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "大東京音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "日本チャチャチャ",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "東京みなと音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "河内音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "相馬盆唄",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      }
+    ],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -5836,7 +6067,44 @@ const EVENTS = [
         "count": 1
       }
     ],
-    "songs": [],
+    "songs": [
+      {
+        "name": "365日の紙飛行機",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "オバQ音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ダンシングヒーロー",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "マリーゴールド",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "真夏の果実",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "真赤な太陽",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      }
+    ],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -6620,12 +6888,134 @@ const EVENTS = [
     ],
     "songs": [
       {
+        "name": "APT.",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "EZ DO DANCE",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "LOVE AFFAIR",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
         "name": "LOVEマシーン",
-        "confidence": "hint"
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "Runner",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "そんなヒロシに騙されて",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "オトナノススメ",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "カリスマックス",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "キューティーハニー",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ジャンボリミッキー",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ダンシングヒーロー",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "マツケンサンバII",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "世界でいちばん熱い夏",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "八木節",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "勇気100%",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "勝手にシンドバッド",
         "confidence": "hint"
+      },
+      {
+        "name": "大東京音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "恋愛レボリューション21",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "東京Victory",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "盆ギリ恋歌",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
       }
     ],
     "public_status": "ended_2026",
@@ -8603,7 +8993,20 @@ const EVENTS = [
         "kind": "official"
       }
     ],
-    "songs": [],
+    "songs": [
+      {
+        "name": "ダンシングヒーロー",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "勇気100%",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      }
+    ],
     "public_status": "ended_2026",
     "public_category": "ended",
     "public_status_label": "開催終了",
@@ -21239,7 +21642,50 @@ const EVENTS = [
         "count": 1
       }
     ],
-    "songs": [],
+    "songs": [
+      {
+        "name": "JAME盆踊り BOY MEETS GIRL",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "JAME盆踊り EZ DO DANCE",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "JAME盆踊り GET WILD",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "JAME盆踊り Y.M.C.A.",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "JAME盆踊り survival dAnce",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "JAME盆踊り とっとこハム太郎",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ダンシングヒーロー",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      }
+    ],
     "public_status": "expected_low",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -22036,8 +22482,85 @@ const EVENTS = [
     ],
     "songs": [
       {
+        "name": "365日の紙飛行機",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "ultra soul",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "大江戸東京音頭",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "CANDY TUNE - 倍倍FIGHT!",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "U.S.A.",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "おジャ魔女カーニバル!!",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "アイドル",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ダンシングヒーロー",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "倍倍FIGHT!",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
         "name": "大正大学音頭",
         "confidence": "hint"
+      },
+      {
+        "name": "恋するフォーチュンクッキー",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
       }
     ],
     "public_status": "ended_2026",
@@ -22797,9 +23320,8 @@ const EVENTS = [
       {
         "name": "炭坑節",
         "confidence": "hint",
-        "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       }
     ],
     "public_status": "expected_medium",

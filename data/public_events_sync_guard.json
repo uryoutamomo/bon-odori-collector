@@ -1,6 +1,6 @@
 {
   "generated_by": "guard_public_events_sync.py",
-  "generated_at": "2026-07-24T11:00:46.143881+00:00",
+  "generated_at": "2026-07-24T11:29:26.198499+00:00",
   "scope": "read_only_public_sync_guard_no_writes",
   "sources": {
     "collector_events": "/Users/ryotauchida/bon-odori-collector/data/public/events_public.json",
@@ -80,10 +80,10 @@
     "status": "block",
     "approval_count": 21,
     "status_counts": {
-      "already_synced": 17,
-      "hash_mismatch": 4
+      "already_synced": 14,
+      "hash_mismatch": 7
     },
-    "failure_count": 4,
+    "failure_count": 7,
     "results": [
       {
         "id": "reviewed-update-14f4341a66b1",
@@ -98,8 +98,8 @@
         "kind": "same_key_update",
         "event_key": "ふるさと東京応援祭 第三回ビールと浴衣de盆踊り in上野2026||上野恩賜公園",
         "actual_site_sha256": "e33e70d3fd99da219ba096ad2ccef592636ded6e22a60e8a72254d3435f81461",
-        "actual_collector_sha256": "e33e70d3fd99da219ba096ad2ccef592636ded6e22a60e8a72254d3435f81461",
-        "status": "already_synced"
+        "actual_collector_sha256": "570a3bd08720df6daae6d767ba77c9554bd45dfa69c585dcd8b8529866979151",
+        "status": "hash_mismatch"
       },
       {
         "id": "reviewed-update-6e4fd4f9f30b",
@@ -114,8 +114,8 @@
         "kind": "same_key_update",
         "event_key": "三角広場まつり「居酒屋盆踊り」||新宿住友ビル三角広場",
         "actual_site_sha256": "916325eb5c31cea9753421484f46cd31d5c7bfe92962762b4bf2c43069951d90",
-        "actual_collector_sha256": "916325eb5c31cea9753421484f46cd31d5c7bfe92962762b4bf2c43069951d90",
-        "status": "already_synced"
+        "actual_collector_sha256": "a944cff2fca557821bf42a6cf011855cd6b6e259b43792e890e23cdf10d05872",
+        "status": "hash_mismatch"
       },
       {
         "id": "reviewed-update-4eb250b36de2",
@@ -226,8 +226,8 @@
         "kind": "same_key_update",
         "event_key": "郡上おどり in 青山||秩父宮ラグビー場駐車場",
         "actual_site_sha256": "960176ad76e0012f8e712f674a03f798bdc54f16858af3553a9190483ff2c63b",
-        "actual_collector_sha256": "960176ad76e0012f8e712f674a03f798bdc54f16858af3553a9190483ff2c63b",
-        "status": "already_synced"
+        "actual_collector_sha256": "7b844471979dbbb38e8fa1a6fa1b28ca596dd9c3229f0c28dca96946699fb37b",
+        "status": "hash_mismatch"
       },
       {
         "id": "reviewed-update-2e2ec5a1924a",
@@ -243,7 +243,7 @@
         "site_event_key": "第15回 鴨台盆踊り||大正大学",
         "collector_event_key": "第16回 鴨台盆踊り||大正大学",
         "actual_site_sha256": "6e3474435cb15172aef26b2893c2d439176c6e16ce018e3acdcb95390b2fff04",
-        "actual_collector_sha256": "61ca2148eb6b7e197b925bb25936ba24cc934ffa26502ac53a99139f06095357",
+        "actual_collector_sha256": "97b3b0c697ae06c3bf9a7b388f6a72fffdb54949610a4f072bb959554d481e0a",
         "status": "hash_mismatch"
       },
       {

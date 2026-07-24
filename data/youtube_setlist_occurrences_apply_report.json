@@ -1,6 +1,6 @@
 {
   "generated_by": "apply_youtube_setlist_occurrences_rdb.py",
-  "generated_at": "2026-07-24T08:33:44.890179+00:00",
+  "generated_at": "2026-07-24T11:29:08.625541+00:00",
   "mode": "apply",
   "sources": {
     "master_db": "data/bon_odori_master.sqlite",
@@ -9,7 +9,7 @@
   "outputs": {
     "target_db": "data/bon_odori_master.sqlite",
     "dry_run_db": "",
-    "backup_db": "data/backups/bon_odori_master.20260724T083344.890179+0000.sqlite.bak",
+    "backup_db": "data/backups/bon_odori_master.20260724T112908.625541+0000.sqlite.bak",
     "json": "data/youtube_setlist_occurrences_apply_report.json",
     "markdown": "data/youtube_setlist_occurrences_apply_report.md"
   },
@@ -24,19 +24,19 @@
   },
   "summary": {
     "occurrences_processed": 308,
-    "occurrences_matched": 32,
-    "occurrences_unmatched": 276,
+    "occurrences_matched": 54,
+    "occurrences_unmatched": 254,
     "song_relations_written": 2667,
     "evidence_items_written": 2667,
-    "song_titles_rejected": 12,
-    "candidate_songs_registered": 181,
+    "song_titles_rejected": 28,
+    "candidate_songs_registered": 51,
     "issues_by_severity": {},
     "audit_issues_by_severity": {
       "medium": 1
     },
     "table_counts": {
       "event_investigation_tasks": 79,
-      "event_occurrences": 252,
+      "event_occurrences": 253,
       "event_series": 241,
       "evidence_items": 31183,
       "external_record_links": 2654,
@@ -45,15 +45,15 @@
       "notion_sync_jobs": 0,
       "observed_occurrence_songs": 30772,
       "observed_occurrences": 2164,
-      "occurrence_dates": 294,
+      "occurrence_dates": 296,
       "occurrence_evidence_links": 100,
-      "occurrence_song_evidence_links": 863,
-      "occurrence_songs": 605,
+      "occurrence_song_evidence_links": 974,
+      "occurrence_songs": 805,
       "predicted_occurrence_dates": 14,
       "review_inbox_items": 0,
       "schema_migrations": 1,
       "song_aliases": 141,
-      "songs": 339,
+      "songs": 390,
       "venue_aliases": 290,
       "venues": 241,
       "write_batches": 0
@@ -69,7 +69,62 @@
       "song_relation_count": 13,
       "evidence_count": 13,
       "rejected_title_count": 0,
-      "candidate_song_count": 12
+      "candidate_song_count": 0
+    },
+    {
+      "observed_occurrence_id": "obsocc_e00c90eb39451937",
+      "occurrence_key": "357fb1eef78e0f45",
+      "matched_occurrence_id": "occ_5d45c1530c27585f",
+      "match_score": null,
+      "quality_status": "matched_curated",
+      "song_relation_count": 2,
+      "evidence_count": 2,
+      "rejected_title_count": 1,
+      "candidate_song_count": 0
+    },
+    {
+      "observed_occurrence_id": "obsocc_97458a9f5ffee614",
+      "occurrence_key": "c26c985165101664",
+      "matched_occurrence_id": "occ_5d45c1530c27585f",
+      "match_score": null,
+      "quality_status": "matched_curated",
+      "song_relation_count": 9,
+      "evidence_count": 9,
+      "rejected_title_count": 3,
+      "candidate_song_count": 6
+    },
+    {
+      "observed_occurrence_id": "obsocc_d6a67f194bfd7d42",
+      "occurrence_key": "00b59e1aaaf4d301",
+      "matched_occurrence_id": "occ_56d48c1deeded4ab",
+      "match_score": null,
+      "quality_status": "matched_curated",
+      "song_relation_count": 1,
+      "evidence_count": 1,
+      "rejected_title_count": 1,
+      "candidate_song_count": 0
+    },
+    {
+      "observed_occurrence_id": "obsocc_2cb6d574ec2a244b",
+      "occurrence_key": "ab1e6c8b8b8a12da",
+      "matched_occurrence_id": "occ_56d48c1deeded4ab",
+      "match_score": null,
+      "quality_status": "matched_curated",
+      "song_relation_count": 15,
+      "evidence_count": 15,
+      "rejected_title_count": 0,
+      "candidate_song_count": 6
+    },
+    {
+      "observed_occurrence_id": "obsocc_117952f59aaab2f8",
+      "occurrence_key": "16b010c1c8a53cc4",
+      "matched_occurrence_id": "occ_eb5984603eeb0f18",
+      "match_score": null,
+      "quality_status": "matched_curated",
+      "song_relation_count": 9,
+      "evidence_count": 9,
+      "rejected_title_count": 1,
+      "candidate_song_count": 2
     },
     {
       "observed_occurrence_id": "obsocc_dec4137537146e6d",
@@ -80,7 +135,7 @@
       "song_relation_count": 4,
       "evidence_count": 4,
       "rejected_title_count": 0,
-      "candidate_song_count": 3
+      "candidate_song_count": 0
     },
     {
       "observed_occurrence_id": "obsocc_c11b2fed5b0cc87a",
@@ -91,7 +146,7 @@
       "song_relation_count": 8,
       "evidence_count": 8,
       "rejected_title_count": 0,
-      "candidate_song_count": 1
+      "candidate_song_count": 0
     },
     {
       "observed_occurrence_id": "obsocc_79cbbe026546a02b",
@@ -105,6 +160,39 @@
       "candidate_song_count": 0
     },
     {
+      "observed_occurrence_id": "obsocc_2f78470f49adce2b",
+      "occurrence_key": "eafab5ecc7b3c7c5",
+      "matched_occurrence_id": "occ_54ba9f31ac0f3844",
+      "match_score": null,
+      "quality_status": "matched_curated",
+      "song_relation_count": 2,
+      "evidence_count": 2,
+      "rejected_title_count": 0,
+      "candidate_song_count": 1
+    },
+    {
+      "observed_occurrence_id": "obsocc_2dc071ecddecd7ca",
+      "occurrence_key": "e55e46fe4a7f01d2",
+      "matched_occurrence_id": "occ_54ba9f31ac0f3844",
+      "match_score": null,
+      "quality_status": "matched_curated",
+      "song_relation_count": 4,
+      "evidence_count": 4,
+      "rejected_title_count": 0,
+      "candidate_song_count": 1
+    },
+    {
+      "observed_occurrence_id": "obsocc_0b0b0cea47abfd01",
+      "occurrence_key": "e7e3dbe98b0fbb15",
+      "matched_occurrence_id": "occ_bc8483c70338a8e1",
+      "match_score": null,
+      "quality_status": "matched_curated",
+      "song_relation_count": 8,
+      "evidence_count": 8,
+      "rejected_title_count": 2,
+      "candidate_song_count": 1
+    },
+    {
       "observed_occurrence_id": "obsocc_9d2f973d54db36f2",
       "occurrence_key": "b966ec0d89fff517",
       "matched_occurrence_id": "occ_8ff0a2c41a98d97b",
@@ -114,6 +202,17 @@
       "evidence_count": 1,
       "rejected_title_count": 0,
       "candidate_song_count": 0
+    },
+    {
+      "observed_occurrence_id": "obsocc_9d3410b00f5a390e",
+      "occurrence_key": "a3a3d01cb7d70444",
+      "matched_occurrence_id": "occ_85b5772373d4e5df",
+      "match_score": null,
+      "quality_status": "matched_curated",
+      "song_relation_count": 4,
+      "evidence_count": 4,
+      "rejected_title_count": 0,
+      "candidate_song_count": 4
     },
     {
       "observed_occurrence_id": "obsocc_4e91a13b886f7bf5",
@@ -146,7 +245,7 @@
       "song_relation_count": 12,
       "evidence_count": 12,
       "rejected_title_count": 0,
-      "candidate_song_count": 9
+      "candidate_song_count": 0
     },
     {
       "observed_occurrence_id": "obsocc_cfdaddbd46479c58",
@@ -157,128 +256,29 @@
       "song_relation_count": 10,
       "evidence_count": 10,
       "rejected_title_count": 2,
-      "candidate_song_count": 5
+      "candidate_song_count": 0
     },
     {
-      "observed_occurrence_id": "obsocc_923a8d411faa510b",
-      "occurrence_key": "41b26f5f03ce6ac5",
-      "matched_occurrence_id": "occ_67c8a6fd85776a8f",
-      "match_score": 0.7,
+      "observed_occurrence_id": "obsocc_ca1bcfa86f755d9f",
+      "occurrence_key": "27fbabb50bb4686e",
+      "matched_occurrence_id": "occ_8e0883279b40b8d5",
+      "match_score": null,
       "quality_status": "matched_curated",
-      "song_relation_count": 5,
-      "evidence_count": 5,
+      "song_relation_count": 12,
+      "evidence_count": 12,
       "rejected_title_count": 0,
-      "candidate_song_count": 1
-    },
-    {
-      "observed_occurrence_id": "obsocc_45740ef2552d79c0",
-      "occurrence_key": "400fb792f32d02b8",
-      "matched_occurrence_id": "occ_59180208dc287804",
-      "match_score": 1.0,
-      "quality_status": "matched_curated",
-      "song_relation_count": 4,
-      "evidence_count": 4,
-      "rejected_title_count": 1,
-      "candidate_song_count": 1
-    },
-    {
-      "observed_occurrence_id": "obsocc_ba1a77cabb8d77d0",
-      "occurrence_key": "8415d46ec8089859",
-      "matched_occurrence_id": "occ_59180208dc287804",
-      "match_score": 1.0,
-      "quality_status": "matched_curated",
-      "song_relation_count": 15,
-      "evidence_count": 15,
-      "rejected_title_count": 0,
-      "candidate_song_count": 7
-    },
-    {
-      "observed_occurrence_id": "obsocc_036a0d93e03b756f",
-      "occurrence_key": "f52e00e029b04d69",
-      "matched_occurrence_id": "occ_87782a9d9bb73cfc",
-      "match_score": 0.75,
-      "quality_status": "matched_curated",
-      "song_relation_count": 2,
-      "evidence_count": 2,
-      "rejected_title_count": 0,
-      "candidate_song_count": 1
-    },
-    {
-      "observed_occurrence_id": "obsocc_c2edb6c422157498",
-      "occurrence_key": "9f47e2210974b8ca",
-      "matched_occurrence_id": "occ_0e26997fdac41f52",
-      "match_score": 0.96,
-      "quality_status": "matched_curated",
-      "song_relation_count": 35,
-      "evidence_count": 35,
-      "rejected_title_count": 0,
-      "candidate_song_count": 16
-    },
-    {
-      "observed_occurrence_id": "obsocc_b564f5eccc2d1a97",
-      "occurrence_key": "5017c4ba7a45d845",
-      "matched_occurrence_id": "occ_48ddfc15fd4a2cb1",
-      "match_score": 0.7,
-      "quality_status": "matched_curated",
-      "song_relation_count": 13,
-      "evidence_count": 13,
-      "rejected_title_count": 1,
-      "candidate_song_count": 10
-    },
-    {
-      "observed_occurrence_id": "obsocc_c22c621922a20842",
-      "occurrence_key": "32ee3fe1e1e1c602",
-      "matched_occurrence_id": "occ_48ddfc15fd4a2cb1",
-      "match_score": 0.7,
-      "quality_status": "matched_curated",
-      "song_relation_count": 1,
-      "evidence_count": 1,
-      "rejected_title_count": 0,
-      "candidate_song_count": 1
-    },
-    {
-      "observed_occurrence_id": "obsocc_a0da3335a0c84a27",
-      "occurrence_key": "a2197d3c1b8117ca",
-      "matched_occurrence_id": "occ_c2b890eb32b32469",
-      "match_score": 0.808,
-      "quality_status": "matched_curated",
-      "song_relation_count": 4,
-      "evidence_count": 4,
-      "rejected_title_count": 1,
       "candidate_song_count": 3
     },
     {
-      "observed_occurrence_id": "obsocc_7e25504b4be0b62b",
-      "occurrence_key": "75efb8264ff49f16",
-      "matched_occurrence_id": "occ_c2b890eb32b32469",
-      "match_score": 0.727,
-      "quality_status": "matched_curated",
-      "song_relation_count": 23,
-      "evidence_count": 23,
-      "rejected_title_count": 1,
-      "candidate_song_count": 18
-    },
-    {
-      "observed_occurrence_id": "obsocc_4e35bc62bdaf0d84",
-      "occurrence_key": "a307ade96f577070",
-      "matched_occurrence_id": "occ_f50ea02c13ee9d07",
-      "match_score": 0.816,
-      "quality_status": "matched_curated",
-      "song_relation_count": 7,
-      "evidence_count": 7,
-      "rejected_title_count": 0,
-      "candidate_song_count": 4
-    },
-    {
-      "observed_occurrence_id": "obsocc_f42b6269246837ac",
-      "occurrence_key": "4f61dccc87ca4b55",
-      "matched_occurrence_id": "occ_4ccbc7b0f0c890db",
-      "match_score": 0.7,
+      "observed_occurrence_id": "obsocc_e1747d3b5e6e8120",
+      "occurrence_key": "e81a973a438f23ba",
+      "matched_occurrence_id": "occ_4788691d8f385e40",
+      "match_score": null,
       "quality_status": "matched_curated",
       "song_relation_count": 3,
       "evidence_count": 3,
-      "rejected_title_count": 2,
-      "candidate_song_count": 1
+      "rejected_title_count": 3,
+      "candidate_song_count": 0
     }
   ],
   "issues": [],

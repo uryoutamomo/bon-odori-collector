@@ -70,6 +70,39 @@ SCRIPT_NAME = "apply_youtube_setlist_occurrences_rdb.py"
 MATCH_SCORE_THRESHOLD = 0.7
 RELIABILITY_BY_CONFIDENCE = {"high": 0.95, "medium": 0.80, "low": 0.55}
 
+# Manual overrides for occurrences that scored 0.6-0.7 (below MATCH_SCORE_THRESHOLD) in a
+# 2026-07-24 spot-check but were individually verified correct -- unlike the false positive
+# in that band noted above (飛鳥山公園盆踊り会 -> 鳥山町町内会), each of these has the target
+# venue's name spelled out directly in the raw event name (e.g. "神田明神アニソン盆踊り" names
+# 神田明神 itself), or was confirmed against the event's own listing page (神楽坂夏まつり,
+# 新橋こいち祭). Generic names with no venue signal in this same score band (bare "盆踊り",
+# "Bon Dance", "🇯🇵 アニソン盆踊り") were deliberately left out -- low score AND no identifying
+# text is not enough evidence, per this script's precision-over-recall policy.
+MANUAL_MATCH_OVERRIDES = {
+    "27fbabb50bb4686e": "occ_8e0883279b40b8d5",  # 青山善光寺盆踊り -> 青山善光寺
+    "e08bf844d75187f8": "occ_e3b28f80971f144f",  # 神田明神納涼盆踊り -> 神田明神境内
+    "6b5a1e3b6ff379b8": "occ_1a303dadd13493de",  # 住友ビル三角広場盆踊り -> 新宿住友ビル三角広場
+    "8328af495806e0c4": "occ_e3b28f80971f144f",  # 神田明神アニソン盆踊り -> 神田明神境内
+    "c26c985165101664": "occ_5d45c1530c27585f",  # GMOシブヤエンタメ祭 -> 宮下公園
+    "00b59e1aaaf4d301": "occ_56d48c1deeded4ab",  # 郡上おどり in 青山(最終日) -> 秩父宮ラグビー場駐車場
+    "ab1e6c8b8b8a12da": "occ_56d48c1deeded4ab",  # 郡上おどりin青山1日目 -> 秩父宮ラグビー場駐車場
+    "16b010c1c8a53cc4": "occ_eb5984603eeb0f18",  # 鴨台盆踊り(2025) -> 大正大学
+    "eafab5ecc7b3c7c5": "occ_54ba9f31ac0f3844",  # 自由が丘納涼盆踊り -> 自由が丘駅前ロータリー特設会場
+    "e55e46fe4a7f01d2": "occ_54ba9f31ac0f3844",  # 自由が丘納涼盆踊り -> 同上
+    "e7e3dbe98b0fbb15": "occ_bc8483c70338a8e1",  # 神楽坂まつり盆踊り -> りそな銀行神楽坂支店前（tokyofesta.com/23ku/31347/で確認）
+    "a3a3d01cb7d70444": "occ_85b5772373d4e5df",  # 新橋こいち祭(盆踊り) -> 桜田公園（summer.walkerplus.com等で確認）
+    "e81a973a438f23ba": "occ_4788691d8f385e40",  # 大銀座盆踊り -> 中央通り（銀座1丁目〜8丁目）
+    "d4912039e5a8f6d6": "occ_e3b28f80971f144f",  # 神田明神納涼祭り2025アニソン盆踊り -> 神田明神境内
+    "3ea563d2dc5087c9": "occ_c2b890eb32b32469",  # 東本願寺盆踊り2025第二部 -> 東本願寺（浅草）
+    "b925071dc7b07871": "occ_f50ea02c13ee9d07",  # 六本木ヒルズ盆踊り2025(DAY1) -> 六本木ヒルズアリーナ
+    "c0ae3b6f30fe2789": "occ_f50ea02c13ee9d07",  # 六本木ヒルズ盆踊り2025(DAY2) -> 同上
+    "6373c67bc69269c6": "occ_f50ea02c13ee9d07",  # 六本木ヒルズ盆踊り2025(DAY2) -> 同上
+    "85b48ad9ca88a07c": "occ_090e320504061682",  # 【にっぽり炭坑節まつり】 -> JR日暮里駅前広場
+    "76f7438bd0d1ffb7": "occ_e3afc61ae62aa5f3",  # ビールと浴衣de盆踊り -> 上野恩賜公園（public_sync_exact_approvals.jsonの既承認名と同一venue）
+    "cc9f00c24644bca1": "occ_63ae1b3a246f34f0",  # 鴨台盆踊り(2026) -> 大正大学（2026-07-24に本スクリプトの外でRDB追加した新occurrence）
+    "357fb1eef78e0f45": "occ_5d45c1530c27585f",  # GMOシブヤエンタメ祭 盆踊り -> 宮下公園
+}
+
 # --- Song title quality gate (2026-07-24 follow-up) ---------------------------------
 #
 # extract_youtube_setlists.py's setlist items are per-video title parses, not always
@@ -273,6 +306,9 @@ def occurrence_year(occurrence):
 
 
 def best_match(conn, occurrence, year):
+    override_occurrence_id = MANUAL_MATCH_OVERRIDES.get(occurrence.get("occurrence_key") or "")
+    if override_occurrence_id:
+        return {"occurrence_id": override_occurrence_id, "match_score": None}
     if year is None:
         return None
     candidates = find_occurrence_candidates(
@@ -537,7 +573,7 @@ def apply_all(conn, occurrences, now):
     return results
 
 
-def consistency_checks(conn, results):
+def consistency_checks(conn, results, now):
     issues = []
     fk_rows = conn.execute("PRAGMA foreign_key_check").fetchall()
     if fk_rows:
@@ -564,12 +600,21 @@ def consistency_checks(conn, results):
     )
     if orphan_links:
         issues.append({"severity": "high", "issue_type": "orphan_evidence_link", "count": orphan_links})
+    # Scoped to rows created_at == this run's `now`, not the whole origin: this script
+    # itself never writes a probability value (always None on INSERT, and its UPDATE path
+    # for pre-existing rows never touches the column) -- see docstring. But
+    # calibrate_song_probabilities_rdb.py (2026-07-24 follow-up) legitimately computes and
+    # writes probability for origin='observed_youtube_setlist' rows created by earlier runs
+    # of this script, so checking the whole origin unconditionally started flaging that
+    # expected state as a false positive once calibration existed. Only a row this exact
+    # run inserted with a non-null probability would be a real fabrication.
     fabricated_probability = scalar(
         conn,
         """
         SELECT COUNT(*) FROM occurrence_songs
-        WHERE origin = 'observed_youtube_setlist' AND probability IS NOT NULL
+        WHERE origin = 'observed_youtube_setlist' AND probability IS NOT NULL AND created_at = ?
         """,
+        (now,),
     )
     if fabricated_probability:
         issues.append(
@@ -649,7 +694,7 @@ def run(args):
         with connect_existing(preflight_db) as conn:
             conn.execute("PRAGMA foreign_keys = ON")
             preflight_results = apply_all(conn, occurrences, now)
-            preflight_issues = consistency_checks(conn, preflight_results)
+            preflight_issues = consistency_checks(conn, preflight_results, now)
             conn.commit()
         preflight_audit = audit_db(preflight_db)
         if any(row.get("severity") == "high" for row in preflight_issues + preflight_audit["issues"]):
@@ -667,7 +712,7 @@ def run(args):
     with connect_existing(target_db) as conn:
         conn.execute("PRAGMA foreign_keys = ON")
         results = apply_all(conn, occurrences, now)
-        issues = consistency_checks(conn, results)
+        issues = consistency_checks(conn, results, now)
         has_high_issue = any(row.get("severity") == "high" for row in issues)
         if has_high_issue:
             conn.rollback()
