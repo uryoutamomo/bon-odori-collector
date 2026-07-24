@@ -66,6 +66,12 @@ DATE_PREDICTION_REPORT = os.environ.get(
     "BON_ODORI_PUBLIC_DATE_PREDICTION_REPORT",
     DATE_PREDICTION_REPORT,
 )
+SERIES_SPLIT_REVIEW_JSON = os.path.join(
+    os.path.dirname(__file__), "data", "public_event_series_split_review.json"
+)
+SERIES_SPLIT_REVIEW_MD = os.path.join(
+    os.path.dirname(__file__), "data", "public_event_series_split_review.md"
+)
 DATE_CANDIDATES_JSON = os.path.join(os.path.dirname(__file__), "data", "event_date_update_candidates.json")
 PUBLIC_EVENT_OVERRIDES_JSON = os.path.join(os.path.dirname(__file__), "data", "public_event_overrides.json")
 PUBLIC_SOURCE = os.environ.get("BON_ODORI_PUBLIC_SOURCE", "master_rdb").strip().lower()
@@ -1425,21 +1431,18 @@ def is_public_event_complete_enough(event):
 
 
 def public_series_key(event):
-    """Return a loose same-series key for suppressing replaced last-year cards."""
-    name = public_series_name_for_replacement(event.get("name"))
-    return "|".join([
-        str(event.get("area") or ""),
-        str(event.get("venue") or ""),
-        name,
-    ])
+    """Return the RDB series identity used to suppress replaced last-year cards.
 
-
-def public_series_name_for_replacement(name):
-    """Normalize display variants that should replace the same prior-year card."""
-    text = series_event_name(name)
-    text = re.sub(r"^第[0-9０-９]+回\s*", "", text)
-    text = re.sub(r"\s*盆踊り$", "", text)
-    return text.strip()
+    This intentionally has no text/venue-based fallback. Matching on
+    normalized name and venue strings is fragile against edition-number
+    prefixes, sub-event suffixes, venue name drift, and placeholder names
+    (all seen in production), and a coincidental text match could merge two
+    unrelated events and silently drop one. Without a trustworthy
+    `_series_id`, an event is simply left unsuppressed (both cards shown)
+    rather than risk a wrong merge.
+    """
+    series_id = event.get("_series_id")
+    return f"series:{series_id}" if series_id else None
 
 
 def _song_name(song):
@@ -1618,31 +1621,135 @@ def merge_replacement_songs(current, recurring, *, previous_year):
 
 
 def suppress_replaced_recurring_events(events, *, target_year):
-    """Hide previous-year cards when the same venue/series has a target-year card."""
+    """Hide previous-year cards when the same RDB series has a target-year card."""
     target_year = normalize_target_year(target_year)
     for event in events:
         event["name"] = series_event_name(event.get("name"))
-    current_by_key = {
-        public_series_key(event): event
-        for event in events
-        if str(event.get("date") or "").startswith(f"{target_year}-")
-        and event.get("public_category") in {"upcoming", "ended"}
-    }
+    current_by_key = {}
+    for event in events:
+        if not str(event.get("date") or "").startswith(f"{target_year}-"):
+            continue
+        if event.get("public_category") not in {"upcoming", "ended"}:
+            continue
+        key = public_series_key(event)
+        if key is not None:
+            current_by_key[key] = event
     if not current_by_key:
         return events
     for event in events:
         if event.get("public_category") != "recurring_last_year":
             continue
-        current = current_by_key.get(public_series_key(event))
+        key = public_series_key(event)
+        current = current_by_key.get(key) if key is not None else None
         if current:
             merge_replacement_songs(current, event, previous_year=target_year - 1)
     return [
         event for event in events
         if not (
             event.get("public_category") == "recurring_last_year"
+            and public_series_key(event) is not None
             and public_series_key(event) in current_by_key
         )
     ]
+
+
+def _name_trigram_similarity(name_a, name_b):
+    """Rough same-name signal for review sorting only (not a match decision)."""
+    def trigrams(text):
+        compact = re.sub(r"\s+", "", str(text or ""))
+        if len(compact) < 3:
+            return {compact} if compact else set()
+        return {compact[i:i + 3] for i in range(len(compact) - 2)}
+
+    a, b = trigrams(name_a), trigrams(name_b)
+    if not a or not b:
+        return 0.0
+    return len(a & b) / len(a | b)
+
+
+def _same_or_adjacent_month(date_a, date_b):
+    a, b = parse_iso_public_date(date_a), parse_iso_public_date(date_b)
+    if not a or not b:
+        return False
+    diff = abs(a.month - b.month)
+    return diff <= 1 or diff >= 11
+
+
+def find_series_split_review_candidates(events, *, target_year):
+    """Flag same-venue occurrence pairs that look like one series split across
+    two RDB series_id values (an earlier-year card and a target-year card
+    that suppress_replaced_recurring_events can't merge because their
+    series_id differs).
+
+    This only ever reports candidates for a human to review and fix in the
+    RDB; it must never merge events on its own. A coincidental venue+month
+    match between two genuinely different events is a cheap false positive
+    to dismiss by eye, but a wrong automatic merge could silently drop a
+    real event from the public site.
+    """
+    target_year = normalize_target_year(target_year)
+    past = [
+        e for e in events
+        if e.get("_venue_id")
+        and e.get("_series_id")
+        and isinstance(e.get("_event_year"), int)
+        and e["_event_year"] < target_year
+        and e.get("public_category") in {"recurring_last_year", "ended"}
+    ]
+    current = [
+        e for e in events
+        if e.get("_venue_id")
+        and e.get("_series_id")
+        and e.get("_event_year") == target_year
+        and e.get("public_category") in {"upcoming", "ended"}
+    ]
+    candidates = []
+    for p in past:
+        for c in current:
+            if p["_venue_id"] != c["_venue_id"] or p["_series_id"] == c["_series_id"]:
+                continue
+            if not _same_or_adjacent_month(p.get("date"), c.get("date")):
+                continue
+            candidates.append({
+                "area": p.get("area"),
+                "venue": p.get("venue"),
+                "name_similarity": round(_name_trigram_similarity(p.get("name"), c.get("name")), 3),
+                "past_occurrence_id": p.get("_occurrence_id"),
+                "past_series_id": p["_series_id"],
+                "past_name": p.get("name"),
+                "past_date": p.get("date"),
+                "past_date_end": p.get("date_end"),
+                "current_occurrence_id": c.get("_occurrence_id"),
+                "current_series_id": c["_series_id"],
+                "current_name": c.get("name"),
+                "current_date": c.get("date"),
+                "current_date_end": c.get("date_end"),
+            })
+    candidates.sort(key=lambda item: -item["name_similarity"])
+    return candidates
+
+
+def write_series_split_review(candidates, *, json_path, md_path):
+    os.makedirs(os.path.dirname(json_path), exist_ok=True)
+    with open(json_path, "w", encoding="utf-8") as f:
+        json.dump({"candidates": candidates}, f, ensure_ascii=False, indent=2)
+    lines = [
+        "# 系列分裂レビュー候補",
+        "",
+        "同じ会場・近い時期だが RDB 上で series_id が別々になっている過去年×今年ペア。",
+        "本当に同一系列なら series_id を統合してください。無関係な別イベントなら無視してください。",
+        "",
+    ]
+    if not candidates:
+        lines.append("候補なし。")
+    for item in candidates:
+        lines.append(
+            f"- [{item['name_similarity']}] {item['area']} / {item['venue']}: "
+            f"「{item['past_name']}」({item['past_date']}, {item['past_series_id']}) ⇔ "
+            f"「{item['current_name']}」({item['current_date']}, {item['current_series_id']})"
+        )
+    with open(md_path, "w", encoding="utf-8") as f:
+        f.write("\n".join(lines) + "\n")
 
 
 def project_public_events(events, *, target_year, db_path=MASTER_DB, today):
@@ -1719,6 +1826,20 @@ def main(argv=None):
     source_map = projection["source_map"]
     public_events = projection["public_events"]
     write_public_date_prediction_json(DATE_PREDICTION_REPORT, projection["prediction_report"])
+
+    series_split_candidates = find_series_split_review_candidates(
+        events, target_year=args.target_year
+    )
+    write_series_split_review(
+        series_split_candidates,
+        json_path=SERIES_SPLIT_REVIEW_JSON,
+        md_path=SERIES_SPLIT_REVIEW_MD,
+    )
+    if series_split_candidates:
+        print(
+            f"  系列分裂レビュー候補: {len(series_split_candidates)} 件 "
+            f"→ {SERIES_SPLIT_REVIEW_MD}（要目視レビュー）"
+        )
 
     os.makedirs(OUT_DIR, exist_ok=True)
     with open(OUT_JSON, "w", encoding="utf-8") as f:

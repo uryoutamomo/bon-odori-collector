@@ -14,6 +14,7 @@ from export_public_events import (
     clean_public_event_name,
     extract_public_source_urls,
     fill_youtube_evidence_defaults,
+    find_series_split_review_candidates,
     fixed_date_rule_from_props,
     load_rdb_public_date_predictions,
     merge_prediction_payloads,
@@ -615,6 +616,7 @@ class ExportPublicEventsTest(unittest.TestCase):
                 "area": "足立区",
                 "date": "2026-06-20",
                 "status": "確認済み",
+                "_series_id": "ser_nishiayase",
             },
             {
                 "name": "西綾瀬町会 夏祭り盆踊り大会",
@@ -622,6 +624,7 @@ class ExportPublicEventsTest(unittest.TestCase):
                 "area": "足立区",
                 "date": "2025-06-21",
                 "status": "終了",
+                "_series_id": "ser_nishiayase",
                 "songs": [
                     {
                         "name": "まつり",
@@ -639,6 +642,7 @@ class ExportPublicEventsTest(unittest.TestCase):
                 "area": "港区",
                 "date": "2026-06-26",
                 "status": "確認済み",
+                "_series_id": "ser_gujo_aoyama",
                 "songs": [{"name": "郡上おどり", "confidence": "confirmed", "source_count": 2, "probability": 95}],
             },
             {
@@ -647,6 +651,7 @@ class ExportPublicEventsTest(unittest.TestCase):
                 "area": "港区",
                 "date": "2025-06-20",
                 "status": "終了",
+                "_series_id": "ser_gujo_aoyama",
                 "songs": [
                     {"name": "郡上おどり", "confidence": "confirmed", "source_count": 2, "probability": 95},
                     {"name": "かわさき", "confidence": "hint", "source_count": 1, "probability": 80},
@@ -667,6 +672,8 @@ class ExportPublicEventsTest(unittest.TestCase):
         self.assertNotIn("source_count", filtered[1]["songs"][0])
 
     def test_suppress_replaced_recurring_events_matches_numbered_bon_odori_variant(self):
+        # Name text differs across years ("第28回...盆踊り" vs the base name), so
+        # this relies on _series_id matching rather than any text normalization.
         rows = apply_public_recurrence_metadata([
             {
                 "name": "新橋こいち祭",
@@ -675,6 +682,7 @@ class ExportPublicEventsTest(unittest.TestCase):
                 "date": "2026-07-23",
                 "date_end": "2026-07-24",
                 "status": "確認済み",
+                "_series_id": "ser_shinbashi_koichi",
             },
             {
                 "name": "第28回新橋こいち祭 盆踊り",
@@ -682,6 +690,7 @@ class ExportPublicEventsTest(unittest.TestCase):
                 "area": "港区",
                 "date": "2025-07-24",
                 "status": "終了",
+                "_series_id": "ser_shinbashi_koichi",
                 "songs": [
                     {"name": "東京音頭", "confidence": "hint", "source_count": 2, "probability": 80},
                     {"name": "新橋音頭", "confidence": "hint", "source_count": 2, "probability": 80},
@@ -694,6 +703,150 @@ class ExportPublicEventsTest(unittest.TestCase):
         self.assertEqual([row["name"] for row in filtered], ["新橋こいち祭"])
         self.assertEqual([song["name"] for song in filtered[0]["songs"]], ["新橋音頭", "東京音頭"])
         self.assertEqual(filtered[0]["songs"][0]["basis_label"], "2025年ヒント")
+
+    def test_suppress_replaced_recurring_events_keeps_both_without_series_id(self):
+        # No _series_id on either row: even though name/venue/area coincidentally
+        # match, suppression must not fall back to text matching (a coincidental
+        # match could wrongly merge two unrelated events and drop one).
+        rows = apply_public_recurrence_metadata([
+            {
+                "name": "あるまつり盆踊り",
+                "venue": "どこかの公園",
+                "area": "港区",
+                "date": "2026-07-10",
+                "status": "確認済み",
+            },
+            {
+                "name": "あるまつり盆踊り",
+                "venue": "どこかの公園",
+                "area": "港区",
+                "date": "2025-07-11",
+                "status": "終了",
+            },
+        ], target_year=2026, today="2026-06-17")
+
+        filtered = suppress_replaced_recurring_events(rows, target_year=2026)
+
+        self.assertEqual(len(filtered), 2)
+
+    def test_suppress_replaced_recurring_events_keeps_unrelated_series(self):
+        # Different _series_id values must never be merged, even with identical
+        # name/venue/area text.
+        rows = apply_public_recurrence_metadata([
+            {
+                "name": "とある盆踊り",
+                "venue": "共通会場",
+                "area": "港区",
+                "date": "2026-07-10",
+                "status": "確認済み",
+                "_series_id": "ser_a",
+            },
+            {
+                "name": "とある盆踊り",
+                "venue": "共通会場",
+                "area": "港区",
+                "date": "2025-07-11",
+                "status": "終了",
+                "_series_id": "ser_b",
+            },
+        ], target_year=2026, today="2026-06-17")
+
+        filtered = suppress_replaced_recurring_events(rows, target_year=2026)
+
+        self.assertEqual(len(filtered), 2)
+
+    def test_find_series_split_review_candidates_flags_same_venue_near_month_split(self):
+        events = [
+            {
+                "name": "第51回 神楽坂まつり 盆踊り",
+                "area": "新宿区",
+                "venue": "りそな銀行神楽坂支店前",
+                "date": "2025-07-23",
+                "date_end": "2025-07-24",
+                "public_category": "recurring_last_year",
+                "_venue_id": "ven_kagurazaka",
+                "_series_id": "ser_old_kagurazaka",
+                "_event_year": 2025,
+                "_occurrence_id": "occ_old_kagurazaka",
+            },
+            {
+                "name": "神楽坂夏まつり 盆踊り in 神楽坂",
+                "area": "新宿区",
+                "venue": "りそな銀行神楽坂支店前",
+                "date": "2026-07-19",
+                "date_end": "2026-07-20",
+                "public_category": "ended",
+                "_venue_id": "ven_kagurazaka",
+                "_series_id": "ser_new_kagurazaka",
+                "_event_year": 2026,
+                "_occurrence_id": "occ_new_kagurazaka",
+            },
+        ]
+        candidates = find_series_split_review_candidates(events, target_year=2026)
+        self.assertEqual(len(candidates), 1)
+        self.assertEqual(candidates[0]["past_series_id"], "ser_old_kagurazaka")
+        self.assertEqual(candidates[0]["current_series_id"], "ser_new_kagurazaka")
+        self.assertGreater(candidates[0]["name_similarity"], 0)
+
+    def test_find_series_split_review_candidates_ignores_far_apart_months(self):
+        events = [
+            {
+                "name": "GMOシブヤエンタメ祭 × JAME盆踊り",
+                "area": "渋谷区",
+                "venue": "宮下パーク",
+                "date": "2025-05-31",
+                "date_end": "2025-06-01",
+                "public_category": "recurring_last_year",
+                "_venue_id": "ven_miyashita",
+                "_series_id": "ser_old_gmo",
+                "_event_year": 2025,
+                "_occurrence_id": "occ_old_gmo",
+            },
+            {
+                "name": "SHIBUYA MIYASHITA PARK BON DANCE",
+                "area": "渋谷区",
+                "venue": "宮下パーク",
+                "date": "2026-09-26",
+                "date_end": "2026-09-27",
+                "public_category": "upcoming",
+                "_venue_id": "ven_miyashita",
+                "_series_id": "ser_new_miyashita",
+                "_event_year": 2026,
+                "_occurrence_id": "occ_new_miyashita",
+            },
+        ]
+        candidates = find_series_split_review_candidates(events, target_year=2026)
+        self.assertEqual(candidates, [])
+
+    def test_find_series_split_review_candidates_ignores_matching_series_id(self):
+        events = [
+            {
+                "name": "同じ盆踊り",
+                "area": "港区",
+                "venue": "共通会場",
+                "date": "2025-07-10",
+                "date_end": "2025-07-10",
+                "public_category": "recurring_last_year",
+                "_venue_id": "ven_x",
+                "_series_id": "ser_same",
+                "_event_year": 2025,
+                "_occurrence_id": "occ_old_x",
+            },
+            {
+                "name": "同じ盆踊り",
+                "area": "港区",
+                "venue": "共通会場",
+                "date": "2026-07-11",
+                "date_end": "2026-07-11",
+                "public_category": "upcoming",
+                "_venue_id": "ven_x",
+                "_series_id": "ser_same",
+                "_event_year": 2026,
+                "_occurrence_id": "occ_new_x",
+            },
+        ]
+        candidates = find_series_split_review_candidates(events, target_year=2026)
+        self.assertEqual(candidates, [])
 
     def test_sanitize_public_event_details_drops_empty_fallbacks(self):
         rows = sanitize_public_event_details([

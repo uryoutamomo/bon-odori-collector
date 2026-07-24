@@ -5,10 +5,10 @@
     "latest_manifest_key": "master-rdb/latest/bon_odori_master_manifest.json",
     "local_database_path": "data/bon_odori_master.sqlite",
     "prefix": "master-rdb",
-    "published_at": "2026-07-24T11:46:59.954143+00:00",
-    "snapshot_database_key": "master-rdb/snapshots/20260724T114659Z/bon_odori_master.sqlite",
-    "snapshot_id": "20260724T114659Z",
-    "snapshot_manifest_key": "master-rdb/snapshots/20260724T114659Z/bon_odori_master_manifest.json",
+    "published_at": "2026-07-24T18:19:56.513922+00:00",
+    "snapshot_database_key": "master-rdb/snapshots/20260724T181956Z/bon_odori_master.sqlite",
+    "snapshot_id": "20260724T181956Z",
+    "snapshot_manifest_key": "master-rdb/snapshots/20260724T181956Z/bon_odori_master_manifest.json",
     "storage": "s3"
   },
   "artifact_fetch": {
@@ -17,8 +17,8 @@
     "source": "s3://bon-odori-master-rdb-169805602203/master-rdb/latest/bon_odori_master.sqlite"
   },
   "database": "data/bon_odori_master.sqlite",
-  "database_checksum": "2c4ed898a9a654fce520089c815302df0e2a2c445e8cf4c67c3e63a5cd7a415f",
-  "database_updated_at": "2026-07-24T12:01:46.957305+00:00",
+  "database_checksum": "a7ac9883e368b73575924963b18f9b3c2343e18c6e8060219b660af0aaeba389",
+  "database_updated_at": "2026-07-24T18:19:56.513922+00:00",
   "dry_run": true,
   "generated_at": "2026-06-22T01:21:35.342436+00:00",
   "generated_by": "build_master_rdb.py",
