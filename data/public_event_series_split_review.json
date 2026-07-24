@@ -1,0 +1,19 @@
+{
+  "candidates": [
+    {
+      "area": "渋谷区",
+      "venue": "代々木公園野外ステージ",
+      "name_similarity": 0.025,
+      "past_occurrence_id": "occ_c5072ca423698d5e",
+      "past_series_id": "ser_65d9a438a2e7ef08",
+      "past_name": "アースデイ東京2025 イマジン盆踊り部",
+      "past_date": "2025-04-19",
+      "past_date_end": "2025-04-19",
+      "current_occurrence_id": "occ_dcabdf54d0d1abb2",
+      "current_series_id": "ser_c93af96db127c611",
+      "current_name": "グリーン アイルランド フェスティバル アイリッシュ盆踊り",
+      "current_date": "2026-03-15",
+      "current_date_end": null
+    }
+  ]
+}

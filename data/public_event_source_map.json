@@ -1,8 +1,8 @@
 {
   "generated_by": "export_public_events.py",
   "scope": "internal_public_event_source_map",
-  "public_event_count": 209,
-  "mapped_count": 209,
+  "public_event_count": 203,
+  "mapped_count": 203,
   "rows": [
     {
       "public_event_key": "山王音頭と民踊大会|山王パークタワー公開空地|2026-06-13|2026-06-15",
@@ -26,18 +26,6 @@
       "occurrence_id": "occ_35179c5efe3db323",
       "series_id": "ser_782827501f1bd188",
       "event_year": 2026,
-      "venue_id": "ven_19635dbca9225ae5"
-    },
-    {
-      "public_event_key": "神田明神納涼祭り アニソン盆踊り|神田明神境内|2025-08-08|2025-08-08",
-      "name": "神田明神納涼祭り アニソン盆踊り",
-      "venue": "神田明神境内",
-      "date": "2025-08-08",
-      "date_end": "2025-08-08",
-      "source": "master_rdb",
-      "occurrence_id": "occ_e3b28f80971f144f",
-      "series_id": "ser_782827501f1bd188",
-      "event_year": 2025,
       "venue_id": "ven_19635dbca9225ae5"
     },
     {
@@ -159,18 +147,6 @@
       "series_id": "series_6857e38b745c5b25",
       "event_year": 2026,
       "venue_id": "venue_9dbf1d33b0d471a6"
-    },
-    {
-      "public_event_key": "イベント名未確認（晴海ふ頭公園）|晴海ふ頭公園|2025-07-12|",
-      "name": "イベント名未確認（晴海ふ頭公園）",
-      "venue": "晴海ふ頭公園",
-      "date": "2025-07-12",
-      "date_end": "",
-      "source": "master_rdb",
-      "occurrence_id": "occ_9361ed2bc00b0a71",
-      "series_id": "ser_bb6ca998e227da40",
-      "event_year": 2025,
-      "venue_id": "ven_81bb363c51d52347"
     },
     {
       "public_event_key": "第2回 晴海ふ頭公園盆踊り大会|晴海ふ頭公園|2026-07-11|2026-07-12",
@@ -377,18 +353,6 @@
       "venue_id": "ven_b0c985dbb1fc06fe"
     },
     {
-      "public_event_key": "赤坂浄土寺盆踊り大会|浄土寺|2025-07-24|2025-07-25",
-      "name": "赤坂浄土寺盆踊り大会",
-      "venue": "浄土寺",
-      "date": "2025-07-24",
-      "date_end": "2025-07-25",
-      "source": "master_rdb",
-      "occurrence_id": "occ_8ff0a2c41a98d97b",
-      "series_id": "ser_89245fcd08d4a60b",
-      "event_year": 2025,
-      "venue_id": "ven_b0c985dbb1fc06fe"
-    },
-    {
       "public_event_key": "盆ダンスフェスティバル2023|白金児童遊園||",
       "name": "盆ダンスフェスティバル2023",
       "venue": "白金児童遊園",
@@ -566,18 +530,6 @@
       "occurrence_id": "occ_a73c7ed17c227fad",
       "series_id": "ser_f7a0b21ef9031aa9",
       "event_year": 2026,
-      "venue_id": "ven_1dc2306906cc0b89"
-    },
-    {
-      "public_event_key": "第51回 神楽坂まつり 盆踊り|りそな銀行神楽坂支店前|2025-07-23|2025-07-24",
-      "name": "第51回 神楽坂まつり 盆踊り",
-      "venue": "りそな銀行神楽坂支店前",
-      "date": "2025-07-23",
-      "date_end": "2025-07-24",
-      "source": "master_rdb",
-      "occurrence_id": "occ_bc8483c70338a8e1",
-      "series_id": "ser_1ab93540c9d8028a",
-      "event_year": 2025,
       "venue_id": "ven_1dc2306906cc0b89"
     },
     {
@@ -1841,18 +1793,6 @@
       "venue_id": "ven_0c54304e194c641c"
     },
     {
-      "public_event_key": "あずま通り商店街「下北沢盆踊り2025」|下北沢駅東口|2025-08-09|",
-      "name": "あずま通り商店街「下北沢盆踊り2025」",
-      "venue": "下北沢駅東口",
-      "date": "2025-08-09",
-      "date_end": "",
-      "source": "master_rdb",
-      "occurrence_id": "occ_87782a9d9bb73cfc",
-      "series_id": "ser_3cd68d5b41d0b1ff",
-      "event_year": 2025,
-      "venue_id": "ven_c4237862262b2ee1"
-    },
-    {
       "public_event_key": "下北沢盆踊り|下北沢駅東口|2026-07-25|2026-07-26",
       "name": "下北沢盆踊り",
       "venue": "下北沢駅東口",
@@ -2187,18 +2127,6 @@
       "series_id": "ser_854b5ca4993265fa",
       "event_year": 2026,
       "venue_id": "ven_ce357f30c5fa6ef0"
-    },
-    {
-      "public_event_key": "第6回 渋谷盆踊り|SHIBUYA109前〜道玄坂・文化村通り一帯|2025-08-02|2025-08-02",
-      "name": "第6回 渋谷盆踊り",
-      "venue": "SHIBUYA109前〜道玄坂・文化村通り一帯",
-      "date": "2025-08-02",
-      "date_end": "2025-08-02",
-      "source": "master_rdb",
-      "occurrence_id": "occ_67c8a6fd85776a8f",
-      "series_id": "ser_3873b1682d366b8f",
-      "event_year": 2025,
-      "venue_id": "ven_3a9ac8a5304aeabc"
     },
     {
       "public_event_key": "アースデイ東京2025 イマジン盆踊り部|代々木公園野外ステージ|2025-04-19|2025-04-19",
