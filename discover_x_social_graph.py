@@ -59,7 +59,20 @@ def choose_seeds(scores, cfg):
             key=lambda a: (-a.get("score", 0), -a.get("valuable_posts", 0), a.get("handle", "")),
         )
 
-    seeds = ranked(seed_statuses)
+    # Manually curated important informants are always worth a seed slot,
+    # regardless of their observed score/status: thin post history should not
+    # exclude someone Uchida-san has personally vetted. This checks the
+    # manual_status flag directly instead of inflating the observed score, so
+    # the score/status persisted to the evidence RDB keeps reflecting genuine
+    # engagement (see collect.py's _annotate_important_informants).
+    priority_seeds = sorted(
+        [a for a in accounts if a.get("manual_status") == "優先"],
+        key=lambda a: (-a.get("score", 0), a.get("handle", "")),
+    )
+
+    seeds = list(priority_seeds)
+    seen = {norm_handle(s.get("handle")) for s in seeds}
+    seeds.extend([a for a in ranked(seed_statuses) if norm_handle(a.get("handle")) not in seen])
     if len(seeds) < max_seeds:
         seen = {norm_handle(s.get("handle")) for s in seeds}
         seeds.extend([a for a in ranked(fallback_statuses) if norm_handle(a.get("handle")) not in seen])

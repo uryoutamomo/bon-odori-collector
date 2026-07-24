@@ -1259,6 +1259,8 @@ def _build_x_account_scores(voices, cfg=None):
         row["usefulness_score"] = _x_account_usefulness_score(row)
         row["role_tags"] = _x_account_role_tags(row.get("top_reasons", {}))
 
+    _annotate_important_informants(accounts)
+
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "accounts": dict(sorted(
@@ -1266,6 +1268,38 @@ def _build_x_account_scores(voices, cfg=None):
             key=lambda kv: (-kv[1].get("usefulness_score", 0), kv[0])
         )),
     }
+
+
+def _important_informants_by_handle(path=None):
+    return {
+        _norm_handle(row.get("handle")): row
+        for row in _load_important_informants(path)
+        if _norm_handle(row.get("handle"))
+    }
+
+
+def _annotate_important_informants(accounts, path=None):
+    """Mark manually curated important informants without touching observed scores.
+
+    This intentionally does not modify score/quality_score/lifetime_score/
+    recent_score/usefulness_score/usefulness_rank/status: those numbers are
+    persisted into the evidence RDB (rdb_builders/build_evidence_rdb.py) and
+    must keep reflecting genuinely observed engagement. Consumers that want to
+    treat an account as high-priority regardless of observed volume (e.g.
+    discover_x_social_graph.py's seed selection) should check
+    manual_status/source_type explicitly instead of relying on an inflated
+    score.
+    """
+    informants = _important_informants_by_handle(path)
+    if not informants:
+        return accounts
+    for handle, manual in informants.items():
+        row = accounts.get(handle)
+        if not row:
+            continue
+        row["manual_status"] = manual.get("manual_status") or "優先"
+        row["source_type"] = manual.get("source_type") or "important_informant"
+    return accounts
 
 
 def _load_x_account_scores(cfg=None):
