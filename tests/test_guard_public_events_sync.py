@@ -76,6 +76,88 @@ class PublicEventsSyncGuardTest(unittest.TestCase):
         self.assertEqual(classified["summary"]["collector_only_count"], 0)
         self.assertEqual(classified["summary"]["site_only_count"], 0)
 
+    def test_exact_removal_approval_drops_site_only_event_at_pinned_hash(self):
+        site_event = {"name": "旧イベント", "venue": "公園", "public_status": "expected_medium"}
+        other_site_event = {"name": "残るイベント", "venue": "別会場"}
+        payload = {
+            "schema": "public_sync_exact_approvals_v1",
+            "approvals": [
+                {
+                    "id": "removal-1",
+                    "kind": "removal",
+                    "event_key": "旧イベント||公園",
+                    "site_sha256": canonical_event_sha256(site_event),
+                }
+            ],
+        }
+
+        reviewed = apply_reviewed_exact_approvals([], [site_event, other_site_event], payload)
+        classified = classify_rows([], reviewed["site_rows"])
+
+        self.assertEqual(reviewed["summary"]["status_counts"], {"applied": 1})
+        self.assertEqual(reviewed["site_rows"], [other_site_event])
+        self.assertEqual(classified["summary"]["site_only_count"], 1)
+
+    def test_exact_removal_approval_rejects_drifted_site_value(self):
+        site_event = {"name": "旧イベント", "venue": "公園", "public_status": "expected_medium"}
+        drifted_site_event = {**site_event, "public_status": "unexpected drift"}
+        payload = {
+            "schema": "public_sync_exact_approvals_v1",
+            "approvals": [
+                {
+                    "id": "removal-1",
+                    "kind": "removal",
+                    "event_key": "旧イベント||公園",
+                    "site_sha256": canonical_event_sha256(site_event),
+                }
+            ],
+        }
+
+        reviewed = apply_reviewed_exact_approvals([], [drifted_site_event], payload)
+
+        self.assertEqual(reviewed["summary"]["status"], "block")
+        self.assertEqual(reviewed["summary"]["status_counts"], {"hash_mismatch": 1})
+        self.assertEqual(reviewed["site_rows"], [drifted_site_event])
+
+    def test_exact_removal_approval_rejects_if_collector_resurrected_key(self):
+        site_event = {"name": "旧イベント", "venue": "公園", "public_status": "expected_medium"}
+        resurrected_collector_event = {"name": "旧イベント", "venue": "公園", "public_status": "upcoming_confirmed"}
+        payload = {
+            "schema": "public_sync_exact_approvals_v1",
+            "approvals": [
+                {
+                    "id": "removal-1",
+                    "kind": "removal",
+                    "event_key": "旧イベント||公園",
+                    "site_sha256": canonical_event_sha256(site_event),
+                }
+            ],
+        }
+
+        reviewed = apply_reviewed_exact_approvals([resurrected_collector_event], [site_event], payload)
+
+        self.assertEqual(reviewed["summary"]["status"], "block")
+        self.assertEqual(reviewed["summary"]["status_counts"], {"hash_mismatch": 1})
+        self.assertEqual(reviewed["site_rows"], [site_event])
+
+    def test_exact_removal_approval_is_inactive_if_already_gone(self):
+        payload = {
+            "schema": "public_sync_exact_approvals_v1",
+            "approvals": [
+                {
+                    "id": "removal-1",
+                    "kind": "removal",
+                    "event_key": "既に消えたイベント||公園",
+                    "site_sha256": "whatever",
+                }
+            ],
+        }
+
+        reviewed = apply_reviewed_exact_approvals([], [], payload)
+
+        self.assertEqual(reviewed["summary"]["status"], "pass")
+        self.assertEqual(reviewed["summary"]["status_counts"], {"inactive": 1})
+
     def test_exact_approval_is_already_synced_after_site_catches_up(self):
         event = {"name": "テスト盆踊り", "venue": "公園", "display_tier": "ended"}
         payload = {

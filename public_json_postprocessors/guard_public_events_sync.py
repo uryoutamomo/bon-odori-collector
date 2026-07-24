@@ -108,13 +108,47 @@ def apply_reviewed_exact_approvals(collector_rows, site_rows, payload):
         approval_id = str(approval.get("id") or "") if isinstance(approval, dict) else ""
         kind = approval.get("kind") if isinstance(approval, dict) else None
         result = {"id": approval_id, "kind": kind}
-        if not approval_id or approval_id in seen_ids or kind not in {"same_key_update", "key_replacement"}:
+        if not approval_id or approval_id in seen_ids or kind not in {
+            "same_key_update",
+            "key_replacement",
+            "removal",
+        }:
             result["status"] = "invalid_approval"
             results.append(result)
             continue
         seen_ids.add(approval_id)
 
         positions = site_positions()
+        if kind == "removal":
+            # Approves an event that exists only on the site side (collector
+            # dropped it, e.g. a duplicate-suppression fix) being removed from
+            # the comparison-only site copy. Value-pinned like same_key_update:
+            # if the collector side has since resurrected the key, or the site
+            # side no longer matches the approved snapshot, this refuses to
+            # apply rather than silently drop something unexpected.
+            key = str(approval.get("event_key") or "")
+            collector_event = collector.get(key)
+            site_index = positions.get(key)
+            site_event = approved_site_rows[site_index] if site_index is not None else None
+            result["event_key"] = key
+            if collector_event is not None:
+                result["status"] = "hash_mismatch"
+                results.append(result)
+                continue
+            if site_event is None:
+                result["status"] = "inactive"
+                results.append(result)
+                continue
+            site_hash = canonical_event_sha256(site_event)
+            result["actual_site_sha256"] = site_hash
+            if site_hash == approval.get("site_sha256"):
+                del approved_site_rows[site_index]
+                result["status"] = "applied"
+                results.append(result)
+                continue
+            result["status"] = "hash_mismatch"
+            results.append(result)
+            continue
         if kind == "same_key_update":
             key = str(approval.get("event_key") or "")
             collector_event = collector.get(key)

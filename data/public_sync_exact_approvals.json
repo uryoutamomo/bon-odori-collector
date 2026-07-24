@@ -1,8 +1,8 @@
 {
   "schema": "public_sync_exact_approvals_v1",
-  "reviewed_at": "2026-07-21",
-  "reviewed_by": "内田さん",
-  "source": "docs/p0-review-20260721.md and explicit publish approval",
+  "reviewed_at": "2026-07-24",
+  "reviewed_by": "内田さん（2026-07-21分）／こと（Claude Code）2026-07-24分・内田さんGOで実施",
+  "source": "docs/p0-review-20260721.md and explicit publish approval; 2026-07-24: series_id-based dedup fix (神田明神/渋谷盆踊り/浄土寺盆踊り/晴海ふ頭公園/下北沢盆踊り/新橋こいち祭/神楽坂まつり dupes resolved) plus same-day date-passed status transitions and expired historical-slide downgrades, reviewed field-by-field by こと",
   "site_base_commit": "7dd4ba7bb8654797b4b33204014db0aaf407fb90",
   "collector_data_commit": "fbd4a04dfe9a549c261fd4956c35471f830b474c",
   "approvals": [
@@ -91,11 +91,11 @@
       "collector_sha256": "09709a54a0f8cf1657c2daafd034154a508e854651c6b5b4b2c97a6aae9ca41d"
     },
     {
-      "id": "reviewed-update-72801cbff56b",
+      "id": "reviewed-update-72801cbff56b-20260724",
       "kind": "same_key_update",
       "event_key": "神楽坂夏まつり 盆踊り in 神楽坂||りそな銀行神楽坂支店前",
-      "site_sha256": "43964f9510278f5eecd54e85e268e6826ff5c557310aee1b49c802b6bb31bf02",
-      "collector_sha256": "eb71997c5911d63018b1654ce26b0df44d5bf8b64a71de60f9c66b48b16c2954"
+      "site_sha256": "fb4506ac948ca7e5c5415dfaa3b926d86ffa363d434e204004306dbbeae1371b",
+      "collector_sha256": "af2cd81cef0e7e4db33409660ac5b5f152d0bb3af1f4a890fa6e61d1740058a2"
     },
     {
       "id": "reviewed-update-3a49318b4a1c",
@@ -146,6 +146,104 @@
       "collector_event_key": "第16回 鴨台盆踊り||大正大学",
       "site_sha256": "7870510db2dc3baca17a3ec4b20215000664f42f63463b4e793560e2127941ec",
       "collector_sha256": "6e3474435cb15172aef26b2893c2d439176c6e16ce018e3acdcb95390b2fff04"
+    },
+    {
+      "id": "reviewed-removal-20260724-01",
+      "kind": "removal",
+      "event_key": "あずま通り商店街「下北沢盆踊り2025」||下北沢駅東口",
+      "site_sha256": "ad96471d1adbcf4ad5327c66f91eb7a08c60ee9ee6dd5a34c43c2a66b2e63495",
+      "reason": "series_id-based dedup fix: 下北沢盆踊り(2026確定版)と同一series。旧年版を除去"
+    },
+    {
+      "id": "reviewed-removal-20260724-02",
+      "kind": "removal",
+      "event_key": "イベント名未確認（晴海ふ頭公園）||晴海ふ頭公園",
+      "site_sha256": "d0fd6ca69e29aa56e53a4b745052108efe989b20a5c29836d81afb6496ca2ddd",
+      "reason": "series_id-based dedup fix: 第2回 晴海ふ頭公園盆踊り大会(2026確定版)と同一series。旧年版を除去"
+    },
+    {
+      "id": "reviewed-removal-20260724-03",
+      "kind": "removal",
+      "event_key": "神田明神納涼祭り アニソン盆踊り||神田明神境内",
+      "site_sha256": "944b4d9229ea01c9c68e63405956402774620f2a6c02c7f4e53b3462ddb684ee",
+      "reason": "series_id-based dedup fix: 神田明神納涼祭り(2026確定版)と同一series。旧年版を除去"
+    },
+    {
+      "id": "reviewed-removal-20260724-04",
+      "kind": "removal",
+      "event_key": "第51回 神楽坂まつり 盆踊り||りそな銀行神楽坂支店前",
+      "site_sha256": "83e28b8b54e2fc7fa10132c409c70de48e06bd0447521485c488657ac814f414",
+      "reason": "RDB series split merge: 神楽坂夏まつり 盆踊り in 神楽坂(2026確定版)と統合。旧series_idを除去"
+    },
+    {
+      "id": "reviewed-removal-20260724-05",
+      "kind": "removal",
+      "event_key": "第6回 渋谷盆踊り||SHIBUYA109前〜道玄坂・文化村通り一帯",
+      "site_sha256": "da9ae2f8d16cd5255054c60180f9e4f70448adb1068a1cdf515ec79d738e2f49",
+      "reason": "series_id-based dedup fix: 第7回 渋谷盆踊り(2026確定版)と同一series。旧年版を除去"
+    },
+    {
+      "id": "reviewed-removal-20260724-06",
+      "kind": "removal",
+      "event_key": "赤坂浄土寺盆踊り大会||浄土寺",
+      "site_sha256": "ea7a44b8e35d8a9b49ad585ee24993726b30093df0db326082012ae3671b60c4",
+      "reason": "RDB series split merge: 第51回 浄土寺盆踊り大会(2026確定版)と統合。旧series_idを除去"
+    },
+    {
+      "id": "reviewed-update-20260724-01",
+      "kind": "same_key_update",
+      "event_key": "丸の内de盆踊り||行幸通り",
+      "site_sha256": "a3f8e1011801fec6c25c1f394568794e986c729268f2ecbe171cb2cbb929559d",
+      "collector_sha256": "768a6b70a31e9fbdfbf792bd9d866b1385e6be705fb03dd964d92f701da385f1",
+      "reason": "開催日(2026-07-24)経過による自然な状態遷移: upcoming_confirmed→ended_2026"
+    },
+    {
+      "id": "reviewed-update-20260724-02",
+      "kind": "same_key_update",
+      "event_key": "新橋こいち祭||桜田公園",
+      "site_sha256": "4fb293a22928655c2a4d97b2daa62af06218f6c050bf14365524fb29bf3afe4a",
+      "collector_sha256": "c6c0784b5a9c3bdb6f896fcbc12ecf356302cdbfe977201031c9f7af8dcdd2f6",
+      "reason": "開催日(2026-07-23〜24)経過による自然な状態遷移: upcoming_confirmed→ended_2026"
+    },
+    {
+      "id": "reviewed-update-20260724-03",
+      "kind": "same_key_update",
+      "event_key": "第51回 浄土寺盆踊り大会||浄土寺",
+      "site_sha256": "fe049df7d4992a9d79ce7c7e8a575c71014032e32b7544d9bca0d4910ccd7af1",
+      "collector_sha256": "5a71762bba8b6750bdaac1e0c6e896acb1a66ab81c4ab4ff20220b134e547743",
+      "reason": "開催日(2026-07-23〜24)経過による自然な状態遷移: upcoming_confirmed→ended_2026"
+    },
+    {
+      "id": "reviewed-update-20260724-04",
+      "kind": "same_key_update",
+      "event_key": "北新宿四丁目 盆踊り大会||北柏木公園",
+      "site_sha256": "4673d4d4af52aed78ad19d88ce0f767bcbdc099f39688b3dc9957f66fb4c3438",
+      "collector_sha256": "2c0d9f4c215eb64e926457b0933ce4c677fdb1c12ea3ec6d9467b191c65c64ba",
+      "reason": "推測日付(predicted_date)が経過し期限切れダウングレード。実績日は不変"
+    },
+    {
+      "id": "reviewed-update-20260724-05",
+      "kind": "same_key_update",
+      "event_key": "北糀谷町会 「納涼踊り大会」||子安八幡神社",
+      "site_sha256": "d6c5c8b58196b2eac01068a7e9d5b5187aaf434cd054427e0505ea395c707048",
+      "collector_sha256": "d8b5a980dc7bf2ce518336d9a925327a0f60c5883b98e35a6bea292119f698f1",
+      "reason": "推測日付(predicted_date)が経過し期限切れダウングレード。実績日は不変"
+    },
+    {
+      "id": "reviewed-update-20260724-06",
+      "kind": "same_key_update",
+      "event_key": "玉川町会盆おどり大会||二子玉川西地区ふれあい広場(246高架下)",
+      "site_sha256": "2a02f510994e43dd26a9b101fd2bf3a5e753d56dd7b0031091003fad5dcaef17",
+      "collector_sha256": "787015ba244c1924dcec6f54a71f73ec039d9a065a366b8129237c961fd6f98e",
+      "reason": "推測日付(predicted_date)が経過し期限切れダウングレード。実績日は不変"
+    },
+    {
+      "id": "reviewed-update-20260724-07",
+      "kind": "same_key_update",
+      "event_key": "芦花公園商店街振興組合 「芦花公園駅前盆踊り大会」||京王線芦花公園駅前ロータリー(南口)",
+      "site_sha256": "5294799fb2f948e64fdd51aa5d6194bd42587919b2d25c6ac343e3d5405630c2",
+      "collector_sha256": "ec70a266f5a74dddeb04315464111e7d39fce9cb0a278f3e5abf9de2c4f9ad19",
+      "reason": "推測日付(predicted_date)が経過し期限切れダウングレード。実績日は不変"
     }
   ]
 }
