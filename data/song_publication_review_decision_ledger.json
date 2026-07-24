@@ -1,0 +1,5196 @@
+{
+  "schema": "song_publication_review_decision_ledger_v1",
+  "exported_at": "2026-07-13T07:01:51.874Z",
+  "generated_by": "song_publication_review.html",
+  "source_artifact": "data/song_publication_review_decisions.json",
+  "source_sha256": "e7f2f453de7fb6f370dbbca4fb997d8ba9fad459204020abeece20c56957caf0",
+  "candidate_count": 544,
+  "decision_count": 544,
+  "rows": [
+    {
+      "term": "東京おどり",
+      "decision": "publish",
+      "note": "",
+      "description": "複数の盆踊り会場でよく使われる曲として確認されています。 曲のジャンルはまだ要調査です。 確認根拠は 94 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=6luimQRCvhw",
+        "https://www.youtube.com/watch?v=1GvNsCuwszk",
+        "https://www.youtube.com/watch?v=uZYot5GC8Ho",
+        "https://www.youtube.com/watch?v=nIsXNK5cxzU",
+        "https://www.youtube.com/watch?v=yV0Azm7rnyQ"
+      ]
+    },
+    {
+      "term": "すみだ音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "複数の盆踊り会場でよく使われる曲として確認されています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 64 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=dxN6dQOy1fo",
+        "https://www.youtube.com/watch?v=11h3ezWdtMk",
+        "https://www.youtube.com/watch?v=8NXQtKmVm3g",
+        "https://www.youtube.com/watch?v=ybKE1uLph7Q",
+        "https://www.youtube.com/watch?v=-7u1Kb4X-Jc"
+      ]
+    },
+    {
+      "term": "三百",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 曲のジャンルはまだ要調査です。 確認根拠は 73 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=den5GRWupok",
+        "https://www.youtube.com/watch?v=HrH5Hjv2WbI",
+        "https://www.youtube.com/watch?v=bR-uGWWz_JA",
+        "https://www.youtube.com/watch?v=5Bqjq5Vfxog"
+      ]
+    },
+    {
+      "term": "ニッポンワッショイ",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 曲のジャンルはまだ要調査です。 確認根拠は 62 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=JI2PvYJRF_s",
+        "https://www.youtube.com/watch?v=AXTDFrUVJtI",
+        "https://www.youtube.com/watch?v=R981_eXHy_0",
+        "https://www.youtube.com/watch?v=AN-r0O7il-E",
+        "https://www.youtube.com/watch?v=453cskhVI5k"
+      ]
+    },
+    {
+      "term": "さわぎ",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 曲のジャンルはまだ要調査です。 確認根拠は 52 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=3SFBGg03Rqw",
+        "https://www.youtube.com/watch?v=QLTJu-cs89Q"
+      ]
+    },
+    {
+      "term": "やっちく",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 曲のジャンルはまだ要調査です。 確認根拠は 52 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=zUZEDY4rbSc",
+        "https://www.youtube.com/watch?v=Lz2NT8n77zA"
+      ]
+    },
+    {
+      "term": "鹿島一声浮立",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 68 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=LYccfAfyABQ",
+        "https://www.youtube.com/watch?v=iwPGPVD-WDE",
+        "https://www.youtube.com/watch?v=LuKtxSzNpDE"
+      ]
+    },
+    {
+      "term": "りんご節",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系。 確認根拠は 67 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=qZbsDFvH8zc",
+        "https://www.youtube.com/watch?v=vMiHAkNwEX0",
+        "https://www.youtube.com/watch?v=3WDSTaX0-cw"
+      ]
+    },
+    {
+      "term": "甚句",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 26 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=RGFEpC-x3YI",
+        "https://www.youtube.com/watch?v=63lHrefTHQ4"
+      ]
+    },
+    {
+      "term": "日本晴れだよ",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 曲のジャンルはまだ要調査です。 確認根拠は 79 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=8m3X9qIMvaE",
+        "https://www.youtube.com/watch?v=fCOTWUjyles",
+        "https://www.youtube.com/watch?v=cujDbtgP6hM",
+        "https://www.youtube.com/watch?v=CevVRysR7Bs"
+      ]
+    },
+    {
+      "term": "防災音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 73 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=mT-PYMb65U0",
+        "https://www.youtube.com/watch?v=3UGlRoxJnKA",
+        "https://www.youtube.com/watch?v=sSZfShcGtEE",
+        "https://www.youtube.com/watch?v=t9jxIJN6Spo"
+      ]
+    },
+    {
+      "term": "新浅草橋音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 21 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=45wyaev3VHg",
+        "https://www.youtube.com/watch?v=8STIBlaK850",
+        "https://www.youtube.com/watch?v=sSZfShcGtEE",
+        "https://www.youtube.com/watch?v=t9jxIJN6Spo",
+        "https://www.youtube.com/watch?v=lSNz4AkGNe4"
+      ]
+    },
+    {
+      "term": "千代田おどり",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 曲のジャンルはまだ要調査です。 確認根拠は 54 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=ks2mACizrIo",
+        "https://www.youtube.com/watch?v=ALBf1pJeB5g",
+        "https://www.youtube.com/watch?v=tZXSqhSf2Xg",
+        "https://www.youtube.com/watch?v=zAvGRrePVT0",
+        "https://www.youtube.com/watch?v=neHAFbHZ0X4"
+      ]
+    },
+    {
+      "term": "品川音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 47 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=iDXbIisHerw",
+        "https://www.youtube.com/watch?v=gkguLs9fVgY",
+        "https://www.youtube.com/watch?v=3zeYLnOOgx4",
+        "https://www.youtube.com/watch?v=MOdYioLsWrM",
+        "https://www.youtube.com/watch?v=ajlQG-sah80"
+      ]
+    },
+    {
+      "term": "日本よいとこ",
+      "decision": "publish",
+      "note": "",
+      "description": "複数の盆踊り会場でよく使われる曲として確認されています。 曲のジャンルはまだ要調査です。 確認根拠は 30 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=4zEw_Ev9XJI",
+        "https://www.youtube.com/watch?v=50gRoBH_aSo",
+        "https://www.youtube.com/watch?v=2jqAe2cuGcY",
+        "https://www.youtube.com/watch?v=VPR1iNPV_yU"
+      ]
+    },
+    {
+      "term": "水戸黄門おどり",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 22 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=eEB2xFu3vDk",
+        "https://www.youtube.com/watch?v=H37Dkh_oyWI",
+        "https://www.youtube.com/watch?v=5aArHw7VisU",
+        "https://www.youtube.com/watch?v=7EnO0iYnIYs"
+      ]
+    },
+    {
+      "term": "四季の花踊り",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 曲のジャンルはまだ要調査です。 確認根拠は 48 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=JZZh12P9hZs",
+        "https://www.youtube.com/watch?v=Df2MZ5ejCM0",
+        "https://www.youtube.com/watch?v=c3D-qy0_iSI",
+        "https://www.youtube.com/watch?v=lJmVDqwa0ZU",
+        "https://www.youtube.com/watch?v=788BK5t6Ee0"
+      ]
+    },
+    {
+      "term": "まんまる音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 44 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=XklbDTjXDMo",
+        "https://www.youtube.com/watch?v=1Iu1U38P5ZQ",
+        "https://www.youtube.com/watch?v=2XojAInjkNs",
+        "https://www.youtube.com/watch?v=GhgoK0y-hfA",
+        "https://www.youtube.com/watch?v=TiplDr6GtRg"
+      ]
+    },
+    {
+      "term": "神代",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 曲のジャンルはまだ要調査です。 確認根拠は 41 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=QLO5Bc0TYks",
+        "https://www.youtube.com/watch?v=xrPVI6A369o",
+        "https://www.youtube.com/watch?v=PfVSbEplhXA"
+      ]
+    },
+    {
+      "term": "老坂",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 曲のジャンルはまだ要調査です。 確認根拠は 41 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=-4CgT9n4QVs",
+        "https://www.youtube.com/watch?v=jku0i8eJ1xw",
+        "https://www.youtube.com/watch?v=SCS4NBMj8bA"
+      ]
+    },
+    {
+      "term": "東京タワー音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 東京名所を冠した音頭。 確認根拠は 87 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=8-PmiKZh4Tg",
+        "https://www.youtube.com/watch?v=WRgHB2Op-2k",
+        "https://www.youtube.com/watch?v=sSZfShcGtEE",
+        "https://www.youtube.com/watch?v=t9jxIJN6Spo"
+      ]
+    },
+    {
+      "term": "東京ばやし",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 このサイトでは「昭和歌謡・歌謡曲」系として仮分類しています。 分類メモ: 歌謡曲らしい語を含む。 確認根拠は 70 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=_UohVT6rUVE",
+        "https://www.youtube.com/watch?v=zmPWDWwin-c",
+        "https://www.youtube.com/watch?v=788BK5t6Ee0",
+        "https://www.youtube.com/watch?v=S9cOD3tz1Nc"
+      ]
+    },
+    {
+      "term": "百年桜",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 曲のジャンルはまだ要調査です。 確認根拠は 69 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=riXUfr3R2qw",
+        "https://www.youtube.com/watch?v=dyeWUMYu1tI",
+        "https://www.youtube.com/watch?v=1gG7ASCCAZA",
+        "https://www.youtube.com/watch?v=qGkD4wnnHy0",
+        "https://www.youtube.com/watch?v=GlH-A-KOE4o"
+      ]
+    },
+    {
+      "term": "日本一だよ",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 曲のジャンルはまだ要調査です。 確認根拠は 68 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=bdFDUWzECO4",
+        "https://www.youtube.com/watch?v=G25-xDNoijs",
+        "https://www.youtube.com/watch?v=4QtZ5d3ynZk"
+      ]
+    },
+    {
+      "term": "日本晴ればれ音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 65 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=V4SfoaLujlQ",
+        "https://www.youtube.com/watch?v=90f4dz2UTG4",
+        "https://www.youtube.com/watch?v=plKoQJCN4sA",
+        "https://www.youtube.com/watch?v=sSZfShcGtEE",
+        "https://www.youtube.com/watch?v=t9jxIJN6Spo"
+      ]
+    },
+    {
+      "term": "文京音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 63 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Tw0OfSbgAi4",
+        "https://www.youtube.com/watch?v=VTDcr1HPN2s",
+        "https://www.youtube.com/watch?v=lEt68hsMb4A"
+      ]
+    },
+    {
+      "term": "民謡お国巡り音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 99 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=1Ih7uKWx-zw",
+        "https://www.youtube.com/watch?v=lXc3k3CQQy8",
+        "https://www.youtube.com/watch?v=uQMbYx53cJg"
+      ]
+    },
+    {
+      "term": "げんき音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 68 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=JlxNSL-3HaY",
+        "https://www.youtube.com/watch?v=PNpRjNSpxEM"
+      ]
+    },
+    {
+      "term": "竹芝絵巻",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 100 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=x6L2kZZi1Q8",
+        "https://www.youtube.com/watch?v=MLI5Td_FZoU"
+      ]
+    },
+    {
+      "term": "高輪Gateway夢拍子",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 93 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=_l3K63RLtDM",
+        "https://www.youtube.com/watch?v=yJ5V_XWv080",
+        "https://www.youtube.com/watch?v=g1nPrDkeHbE",
+        "https://www.youtube.com/watch?v=MVHkZZ-SMlQ"
+      ]
+    },
+    {
+      "term": "GO!でおじゃる",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 89 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=mOdtZ9peuXc",
+        "https://www.youtube.com/watch?v=t7wfmMs1-co"
+      ]
+    },
+    {
+      "term": "ステテコシャンシャン",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 81 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=9aPwN9pWYCY",
+        "https://www.youtube.com/watch?v=kcx9CcspZJc",
+        "https://www.youtube.com/watch?v=Hh3hogPYz_o"
+      ]
+    },
+    {
+      "term": "平成新宿音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名を冠した音頭。 確認根拠は 80 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=T8JtRAmT7sc",
+        "https://www.youtube.com/watch?v=37pbtjd_5hA",
+        "https://www.youtube.com/watch?v=O6ZERoi8bDI"
+      ]
+    },
+    {
+      "term": "旧台東音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 77 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=hDRIkI9QQDU",
+        "https://www.youtube.com/watch?v=d41U3NEm8Vk",
+        "https://www.youtube.com/watch?v=nCGspzO2rBc",
+        "https://www.youtube.com/watch?v=GUvULOcUEA8"
+      ]
+    },
+    {
+      "term": "新宿音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名を冠した音頭。 確認根拠は 73 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=MUuEGc5PPd4",
+        "https://www.youtube.com/watch?v=3U0cGZTFNFw",
+        "https://www.youtube.com/watch?v=9FPxJwmfuXU"
+      ]
+    },
+    {
+      "term": "ふるさと祭り音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 71 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=00Zw8TC5l0c",
+        "https://www.youtube.com/watch?v=IhgzZh8GU08"
+      ]
+    },
+    {
+      "term": "日本一音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 71 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=rNzoXHEHp4E",
+        "https://www.youtube.com/watch?v=EjYCxwlH6_M"
+      ]
+    },
+    {
+      "term": "げんげんばらばら",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 70 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=b27DxV1kAWM",
+        "https://www.youtube.com/watch?v=ZwNHJhTjuvk",
+        "https://www.youtube.com/watch?v=v0qlz6yUXXE",
+        "https://www.youtube.com/watch?v=IA8DC6PTJ20"
+      ]
+    },
+    {
+      "term": "涼みおどり",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 67 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=FJWzRFgu3uM",
+        "https://www.youtube.com/watch?v=tq4WyRyUjQ0"
+      ]
+    },
+    {
+      "term": "日本全国おはやし音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 66 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=kx3pIUX6Qm0",
+        "https://www.youtube.com/watch?v=6Oj-SSaNeMw"
+      ]
+    },
+    {
+      "term": "荒木町小唄",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「昭和歌謡・歌謡曲」系として仮分類しています。 分類メモ: 歌謡曲らしい語を含む。 確認根拠は 66 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=oZIq8yHjdKo",
+        "https://www.youtube.com/watch?v=SGANpna-KD4"
+      ]
+    },
+    {
+      "term": "今、地球がめざめる",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 65 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Tia0NzKb1z0"
+      ]
+    },
+    {
+      "term": "日本橋音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 62 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=vXqFKu6ReU4",
+        "https://www.youtube.com/watch?v=8IihPuR74SM"
+      ]
+    },
+    {
+      "term": "おみこし音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 60 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=JQM_rqgzGXs",
+        "https://www.youtube.com/watch?v=-JqX-HDO9As",
+        "https://www.youtube.com/watch?v=APaQwgEqANc"
+      ]
+    },
+    {
+      "term": "青春ハイヤ",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 60 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=56aUqewOkQ0",
+        "https://www.youtube.com/watch?v=zPWGbc18y9A"
+      ]
+    },
+    {
+      "term": "常磐ディスコ港町",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 84 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=6P57wmVr_Ng",
+        "https://www.youtube.com/watch?v=vRRokUp6uXQ"
+      ]
+    },
+    {
+      "term": "僕の生まれは郡山",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 72 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=CXMrvP_p1iU",
+        "https://www.youtube.com/watch?v=nRBlPnCqkK8"
+      ]
+    },
+    {
+      "term": "板橋音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 38 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=fZqlNpi9D_k",
+        "https://www.youtube.com/watch?v=3vA0VL7zu2c",
+        "https://www.youtube.com/watch?v=788BK5t6Ee0",
+        "https://www.youtube.com/watch?v=BhYvUCNb7m8",
+        "https://www.youtube.com/watch?v=WoPKLse9Z6E"
+      ]
+    },
+    {
+      "term": "ええじゃないか音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 42 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=nZTPVaWieI8",
+        "https://www.youtube.com/watch?v=eC_nwyxZwLM"
+      ]
+    },
+    {
+      "term": "大森甚句",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 38 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=F6WMpPVaOw4",
+        "https://www.youtube.com/watch?v=3p-lsyMNgqI",
+        "https://www.youtube.com/watch?v=hbkWu3WYpxY",
+        "https://www.youtube.com/watch?v=YAvtypDu9YA",
+        "https://www.youtube.com/watch?v=kDLvMlBtTxM"
+      ]
+    },
+    {
+      "term": "とらじょさま",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 曲のジャンルはまだ要調査です。 確認根拠は 41 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=mCjyoEsywl0",
+        "https://www.youtube.com/watch?v=i8YTLgJbX-M",
+        "https://www.youtube.com/watch?v=rwg9UrCDy3A",
+        "https://www.youtube.com/watch?v=XNkOTLjq2Z4"
+      ]
+    },
+    {
+      "term": "メガヒッツ盆踊り",
+      "decision": "reject",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 曲のジャンルはまだ要調査です。 確認根拠は 40 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=anlT2VIHrmw",
+        "https://www.youtube.com/watch?v=8A51yJ2hNZQ",
+        "https://www.youtube.com/watch?v=-46emh0_BSA"
+      ]
+    },
+    {
+      "term": "品川甚句",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 29 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=ZlZ5vO5xR5Q",
+        "https://www.youtube.com/watch?v=Deu4gXj7fDk",
+        "https://www.youtube.com/watch?v=3UGkjEGLzsQ",
+        "https://www.youtube.com/watch?v=EjwSS3dAJ2w",
+        "https://www.youtube.com/watch?v=XXP6N_Zfh7w"
+      ]
+    },
+    {
+      "term": "山王音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 5 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Lu3C0ELsApY",
+        "https://www.youtube.com/watch?v=E4b4oxe1g0E",
+        "https://www.youtube.com/watch?v=OhhRnGn9PGw"
+      ]
+    },
+    {
+      "term": "相馬甚句",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 5 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=_BTrEIPMvb4",
+        "https://www.youtube.com/watch?v=cLYiVBBFJaU",
+        "https://www.youtube.com/watch?v=2gfhUtwHOKA"
+      ]
+    },
+    {
+      "term": "江戸っ子囃子",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 曲のジャンルはまだ要調査です。 確認根拠は 30 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Ew0jR-Cslrw",
+        "https://www.youtube.com/watch?v=PQyBp2RFBl0",
+        "https://www.youtube.com/watch?v=uPzI94oKTK4"
+      ]
+    },
+    {
+      "term": "シッチョイ",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 曲のジャンルはまだ要調査です。 確認根拠は 25 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=70xvJC_2H08",
+        "https://www.youtube.com/watch?v=lw9vaonH1uc"
+      ]
+    },
+    {
+      "term": "黒潮太鼓",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 5 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=NTAUnpDg7IM",
+        "https://www.youtube.com/watch?v=wpDxoYtMtCc",
+        "https://www.youtube.com/watch?v=JrGlofeenWE",
+        "https://www.youtube.com/watch?v=fxhLS--zqwQ"
+      ]
+    },
+    {
+      "term": "黒石よされ",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 曲のジャンルはまだ要調査です。 確認根拠は 22 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=cgz7pHWnv0o",
+        "https://www.youtube.com/watch?v=_IiX92I0G5A",
+        "https://www.youtube.com/watch?v=8Oh7p-WRq-0",
+        "https://www.youtube.com/watch?v=82dnjO2HmWc",
+        "https://www.youtube.com/watch?v=jcQC0DFIiAc"
+      ]
+    },
+    {
+      "term": "祭りだ!和っしょい",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 このサイトでは「企画曲・イベント曲」系として仮分類しています。 分類メモ: 祭り・盆踊り向け企画曲らしい語を含む。 確認根拠は 21 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=eIOfBT05ga8",
+        "https://www.youtube.com/watch?v=nl-zdUyKDPw",
+        "https://www.youtube.com/watch?v=bMLITemDrww"
+      ]
+    },
+    {
+      "term": "春駒ばやし",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 17 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=giFfIY18rXc",
+        "https://www.youtube.com/watch?v=qusQyHabZHQ",
+        "https://www.youtube.com/watch?v=Ktumfp9gkBg"
+      ]
+    },
+    {
+      "term": "えびすくい音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 21 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=28AIROUV1r4",
+        "https://www.youtube.com/watch?v=3el7fMzGgso"
+      ]
+    },
+    {
+      "term": "じゃこっぺ踊り",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 曲のジャンルはまだ要調査です。 確認根拠は 21 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=GaPoE21BWXA",
+        "https://www.youtube.com/watch?v=dJQ4a5RSsCc"
+      ]
+    },
+    {
+      "term": "美子の三味線ドンパン",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 曲のジャンルはまだ要調査です。 確認根拠は 47 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=9nMM4VuwHaM",
+        "https://www.youtube.com/watch?v=WuRUOb6vLE4",
+        "https://www.youtube.com/watch?v=eijzADh-Aig",
+        "https://www.youtube.com/watch?v=12_m0E9kv3Y"
+      ]
+    },
+    {
+      "term": "新橋音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 54 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=arquGXJLUJU",
+        "https://www.youtube.com/watch?v=9VTuXcJmWHA",
+        "https://www.youtube.com/watch?v=1x9DlLoXDyY"
+      ]
+    },
+    {
+      "term": "希望の轍",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 13 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=m3Xs9QBny2M",
+        "https://www.youtube.com/watch?v=egHWBNeGDVU",
+        "https://www.youtube.com/watch?v=BFJxknJzfDc",
+        "https://www.youtube.com/watch?v=iVkvjn_qYsQ"
+      ]
+    },
+    {
+      "term": "EZ DO DANCE",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 16 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=YH0LS83526Q",
+        "https://www.youtube.com/watch?v=6eyUBQmTSM0",
+        "https://www.youtube.com/watch?v=9guti4r23aI"
+      ]
+    },
+    {
+      "term": "柳北音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 12 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=FR3krV7kJic",
+        "https://www.youtube.com/watch?v=guIVp9dp31s",
+        "https://www.youtube.com/watch?v=NiLxtWAe4wA"
+      ]
+    },
+    {
+      "term": "また逢う日まで",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 10 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=JXnb0Y67BzQ",
+        "https://www.youtube.com/watch?v=vhV0I-j5JdE",
+        "https://www.youtube.com/watch?v=G7p5vBash6M"
+      ]
+    },
+    {
+      "term": "新しい風",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 曲のジャンルはまだ要調査です。 確認根拠は 41 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=AASkTHAMI2I",
+        "https://www.youtube.com/watch?v=1_kucKulOVo",
+        "https://www.youtube.com/watch?v=xPfRkZRO5xE"
+      ]
+    },
+    {
+      "term": "ソーラン北海",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 9 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=3vA0VL7zu2c",
+        "https://www.youtube.com/watch?v=788BK5t6Ee0",
+        "https://www.youtube.com/watch?v=BhYvUCNb7m8",
+        "https://www.youtube.com/watch?v=WoPKLse9Z6E",
+        "https://www.youtube.com/watch?v=dIlvJ0aEaSY"
+      ]
+    },
+    {
+      "term": "黒石じょんがら",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 9 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=5K9f-Hp84qo",
+        "https://www.youtube.com/watch?v=YkLMCoVkPrE"
+      ]
+    },
+    {
+      "term": "法輪音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 32 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=w1I_qlLEf68"
+      ]
+    },
+    {
+      "term": "ウルトラソウル",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 4 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=MGHqhHVwawk",
+        "https://www.youtube.com/watch?v=SX9nrOxDcZQ"
+      ]
+    },
+    {
+      "term": "赤坂豊川音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 38 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=ILJMD2upujY",
+        "https://www.youtube.com/watch?v=b_zYZPnba1U",
+        "https://www.youtube.com/watch?v=EjY6OOWT4qE",
+        "https://www.youtube.com/watch?v=nf8nNtIFn5A"
+      ]
+    },
+    {
+      "term": "よこはまアラメヤ音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 5 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=ilwpJ5yW1YE",
+        "https://www.youtube.com/watch?v=kgD-p76ps1o",
+        "https://www.youtube.com/watch?v=AIOyAa-qq2Q",
+        "https://www.youtube.com/watch?v=oxZtUYXg06w"
+      ]
+    },
+    {
+      "term": "やなぎブギ",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 曲のジャンルはまだ要調査です。 確認根拠は 3 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=kbcWp9iNp3Y",
+        "https://www.youtube.com/watch?v=cvYnWzMoRlg"
+      ]
+    },
+    {
+      "term": "ボンゴ天国",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 曲のジャンルはまだ要調査です。 確認根拠は 3 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=fWCTn2RXrys",
+        "https://www.youtube.com/watch?v=dJAb8mtqBb0"
+      ]
+    },
+    {
+      "term": "ワイド節",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 3 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=JhqWGM8YFgk",
+        "https://www.youtube.com/watch?v=BfxIbU1zPn8"
+      ]
+    },
+    {
+      "term": "伊勢えび囃子",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 曲のジャンルはまだ要調査です。 確認根拠は 3 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=a_UZc5BSXDQ",
+        "https://www.youtube.com/watch?v=5QWJCIH6qVo"
+      ]
+    },
+    {
+      "term": "島人ぬ宝",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 曲のジャンルはまだ要調査です。 確認根拠は 3 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=q4OKkcyCwLY",
+        "https://www.youtube.com/watch?v=xY1o8tSJhWg"
+      ]
+    },
+    {
+      "term": "御宿・曳き舟",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 曲のジャンルはまだ要調査です。 確認根拠は 3 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Rr2pXTw4-2g",
+        "https://www.youtube.com/watch?v=OREdBqPOxKY"
+      ]
+    },
+    {
+      "term": "河内酒",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 曲のジャンルはまだ要調査です。 確認根拠は 3 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=amhW4uzal9U",
+        "https://www.youtube.com/watch?v=i2d4_AVPxsA"
+      ]
+    },
+    {
+      "term": "涙そうそう",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 曲のジャンルはまだ要調査です。 確認根拠は 3 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=H_ma-wq4miM",
+        "https://www.youtube.com/watch?v=ppBXAYiQa9A"
+      ]
+    },
+    {
+      "term": "荒川音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 8 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=3vA0VL7zu2c",
+        "https://www.youtube.com/watch?v=788BK5t6Ee0",
+        "https://www.youtube.com/watch?v=BhYvUCNb7m8",
+        "https://www.youtube.com/watch?v=WoPKLse9Z6E",
+        "https://www.youtube.com/watch?v=dIlvJ0aEaSY"
+      ]
+    },
+    {
+      "term": "千代田踊り",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 曲のジャンルはまだ要調査です。 確認根拠は 3 件あります。",
+      "youtube_urls": []
+    },
+    {
+      "term": "夏祭り",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「企画曲・イベント曲」系として仮分類しています。 分類メモ: 祭り・盆踊り向け企画曲らしい語を含む。 確認根拠は 4 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=XVM-HC8ZqNI",
+        "https://www.youtube.com/watch?v=UhE2JkuRqD0"
+      ]
+    },
+    {
+      "term": "かわいいだけじゃだめですか",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 曲のジャンルはまだ要調査です。 確認根拠は 39 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=ciADgiy-C7o"
+      ]
+    },
+    {
+      "term": "龍馬おどり",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 曲のジャンルはまだ要調査です。 確認根拠は 39 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=cpz81HL9mp8",
+        "https://www.youtube.com/watch?v=_cQ1tHKU4pQ"
+      ]
+    },
+    {
+      "term": "ひろしのさくら音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 38 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=OUEjbribJmU"
+      ]
+    },
+    {
+      "term": "らんまん踊り",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 4 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=FKYS1i-mdOg",
+        "https://www.youtube.com/watch?v=NxTvnbZME0M"
+      ]
+    },
+    {
+      "term": "恋をするなら",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 4 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=XvfSZWDjoK8",
+        "https://www.youtube.com/watch?v=NYWWFBYXeCE"
+      ]
+    },
+    {
+      "term": "新芝音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 36 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=2YaFM2zk9Ms"
+      ]
+    },
+    {
+      "term": "七福神音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 26 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=pDo8Mb3OR0I",
+        "https://www.youtube.com/watch?v=sSZfShcGtEE",
+        "https://www.youtube.com/watch?v=t9jxIJN6Spo"
+      ]
+    },
+    {
+      "term": "新二十一世紀音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 58 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=WMFsCBtauH4",
+        "https://www.youtube.com/watch?v=D-ixo3Bbedk"
+      ]
+    },
+    {
+      "term": "葛飾音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 58 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=uKz4hBk1E8A",
+        "https://www.youtube.com/watch?v=nvJdVNWxzWY"
+      ]
+    },
+    {
+      "term": "ごちそう讃",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 57 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=XLtGzWkXc0Y"
+      ]
+    },
+    {
+      "term": "東京ドドンパ音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 57 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=TuppDfyBbKs"
+      ]
+    },
+    {
+      "term": "MY HOME TOWN",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 56 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=DYqiq377d1I",
+        "https://www.youtube.com/watch?v=sP0aGtLMZRY"
+      ]
+    },
+    {
+      "term": "上野音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 56 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=tvjgQ1fn54k"
+      ]
+    },
+    {
+      "term": "大山ばやし",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 56 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=c638hFcJBWk",
+        "https://www.youtube.com/watch?v=JFmDvwy3a9U"
+      ]
+    },
+    {
+      "term": "猫の子",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 55 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=VSZmGwTKtEk",
+        "https://www.youtube.com/watch?v=4Lep5SsDYHk"
+      ]
+    },
+    {
+      "term": "あかね音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 20 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=yp6H9_4Ue58",
+        "https://www.youtube.com/watch?v=EjY6OOWT4qE",
+        "https://www.youtube.com/watch?v=Fa5pDigMTiw",
+        "https://www.youtube.com/watch?v=nf8nNtIFn5A"
+      ]
+    },
+    {
+      "term": "どんとこいブギ",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 曲のジャンルはまだ要調査です。 確認根拠は 25 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=SBFhs5_f93U"
+      ]
+    },
+    {
+      "term": "子供盆踊り唄",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 曲のジャンルはまだ要調査です。 確認根拠は 4 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=ZqjY80dzBcU",
+        "https://www.youtube.com/watch?v=K_ShDtWkpuc"
+      ]
+    },
+    {
+      "term": "銀座ときめき音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 23 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Ygyh36iDROU",
+        "https://www.youtube.com/watch?v=336LpSrB4p8"
+      ]
+    },
+    {
+      "term": "銀座音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 23 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=IC2jfSl-A54",
+        "https://www.youtube.com/watch?v=saKkZP5rGjI"
+      ]
+    },
+    {
+      "term": "大昭和音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 50 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=HvyIZhL3bFg",
+        "https://www.youtube.com/watch?v=AE7s4_z1-0k"
+      ]
+    },
+    {
+      "term": "押せ押せ音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 50 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=8ELrW904yfY",
+        "https://www.youtube.com/watch?v=6n9zooN3cmw",
+        "https://www.youtube.com/watch?v=1Af0iQcAcT8",
+        "https://www.youtube.com/watch?v=wtXvYz_Yr8A"
+      ]
+    },
+    {
+      "term": "赤坂音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 50 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=mx-ZdAbwNQg",
+        "https://www.youtube.com/watch?v=qrJ0todXv8U"
+      ]
+    },
+    {
+      "term": "種物音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 18 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=EP-aHV5gnps",
+        "https://www.youtube.com/watch?v=3vA0VL7zu2c",
+        "https://www.youtube.com/watch?v=788BK5t6Ee0",
+        "https://www.youtube.com/watch?v=BhYvUCNb7m8",
+        "https://www.youtube.com/watch?v=WoPKLse9Z6E"
+      ]
+    },
+    {
+      "term": "がんばれ音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 49 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Mp5MFaU9SRU"
+      ]
+    },
+    {
+      "term": "よろこび音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 49 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=MlWBPVMJaSQ"
+      ]
+    },
+    {
+      "term": "今宵音頭で",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 49 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=AUPOZ9kRq1I"
+      ]
+    },
+    {
+      "term": "東京タワーをやぐらに代えて",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 49 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=S-9Aab-F9Mk"
+      ]
+    },
+    {
+      "term": "音頭おどりの輪",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 49 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=A9InWPCoQ-8"
+      ]
+    },
+    {
+      "term": "東京名物・人混み",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 48 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=BFO4WT_iF_g"
+      ]
+    },
+    {
+      "term": "おジャ魔女カーニバル",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 曲のジャンルはまだ要調査です。 確認根拠は 20 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=qsacokB8VWE"
+      ]
+    },
+    {
+      "term": "オブ・ラ・ディ、オブ・ラ・ダ",
+      "decision": "publish",
+      "note": "",
+      "description": "会場によって曲目に入ることがある曲です。 曲のジャンルはまだ要調査です。 確認根拠は 19 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=_lqOf2ToPuE"
+      ]
+    },
+    {
+      "term": "六本木音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 19 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=XshqviXdnEk",
+        "https://www.youtube.com/watch?v=4gq-U6O_Otg"
+      ]
+    },
+    {
+      "term": "鹿児島おはら節",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 11 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=RAXAMcA_sqU",
+        "https://www.youtube.com/watch?v=_n5THWO5IuU",
+        "https://www.youtube.com/watch?v=_MBdUYBxsak"
+      ]
+    },
+    {
+      "term": "まつの木小唄",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「昭和歌謡・歌謡曲」系として仮分類しています。 分類メモ: 歌謡曲らしい語を含む。 確認根拠は 18 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=ghoqeSGrZHc"
+      ]
+    },
+    {
+      "term": "Isn't She Lovely",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 このサイトでは「洋楽・海外曲」系として仮分類しています。 分類メモ: 英語曲名・海外曲らしい語を含む。 確認根拠は 3 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=3renuAXwTpE"
+      ]
+    },
+    {
+      "term": "にんにん忍たま音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 3 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=VH1DaLKNJ9A"
+      ]
+    },
+    {
+      "term": "二十一世紀音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 3 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=9LTwaw6cr9E"
+      ]
+    },
+    {
+      "term": "池袋盆BAND",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 曲のジャンルはまだ要調査です。 確認根拠は 3 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=mmPpyGYwFa0"
+      ]
+    },
+    {
+      "term": "池袋西口音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 3 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=ta2U2nUvAK8"
+      ]
+    },
+    {
+      "term": "花まつり",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 このサイトでは「企画曲・イベント曲」系として仮分類しています。 分類メモ: 祭り・盆踊り向け企画曲らしい語を含む。 確認根拠は 3 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=8Dm52V9vTU0"
+      ]
+    },
+    {
+      "term": "ヘドウィグノテーマ",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 44 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=epiM5HPmXSs"
+      ]
+    },
+    {
+      "term": "朝顔音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 42 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=YlxzJt4ljpI",
+        "https://www.youtube.com/watch?v=vjXKc7y9yg0",
+        "https://www.youtube.com/watch?v=9iOSn4GPqB0"
+      ]
+    },
+    {
+      "term": "いわきやっちき",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 42 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=h58pAa51gaE",
+        "https://www.youtube.com/watch?v=7LraKgj8cio"
+      ]
+    },
+    {
+      "term": "みちのく盆唄",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 42 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=mkZtY4ObqqI"
+      ]
+    },
+    {
+      "term": "ハッピーロック",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 42 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Y5gb5x6YX-g"
+      ]
+    },
+    {
+      "term": "ばんば踊り",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 41 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=2O8_mAaqIsM",
+        "https://www.youtube.com/watch?v=7pzPFSe9I3E"
+      ]
+    },
+    {
+      "term": "アンパンマン音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「アニメ・子ども向け」系として仮分類しています。 分類メモ: アニメ・子ども向け語を含む。 確認根拠は 40 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=gApn3Ac6_hY",
+        "https://www.youtube.com/watch?v=f3MYkZ13VYE"
+      ]
+    },
+    {
+      "term": "京北音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 40 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=pJM2iJM8ZDw",
+        "https://www.youtube.com/watch?v=TjWIocmQBb0"
+      ]
+    },
+    {
+      "term": "お祭りばやし",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「企画曲・イベント曲」系として仮分類しています。 分類メモ: 祭り・盆踊り向け企画曲らしい語を含む。 確認根拠は 39 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=90abI7YS7EE"
+      ]
+    },
+    {
+      "term": "すみだ川音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 39 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=cZRoBh9mBRg"
+      ]
+    },
+    {
+      "term": "つめたく冷やして",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 39 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=DaZEcZQ4S1k"
+      ]
+    },
+    {
+      "term": "サブマリン",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 39 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=GQ1a7BQx4Jc"
+      ]
+    },
+    {
+      "term": "ブラジル音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 39 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Vtsg2bv_R6I"
+      ]
+    },
+    {
+      "term": "地蔵盆唄",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 39 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=WVpNx2tK33k"
+      ]
+    },
+    {
+      "term": "寺島茄子乃介音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 39 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Ub4ubasi21o"
+      ]
+    },
+    {
+      "term": "昭和音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 39 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=IbNFEZNo00w"
+      ]
+    },
+    {
+      "term": "浜おけさ",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 39 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=tDOX6EOOnLQ"
+      ]
+    },
+    {
+      "term": "関の鯛つり唄",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 39 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=5jB2YHxGF38"
+      ]
+    },
+    {
+      "term": "Rudolph The Red",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 38 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=nzzNBAunKIM"
+      ]
+    },
+    {
+      "term": "江東水彩音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 38 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=hqjreu87_pc"
+      ]
+    },
+    {
+      "term": "赤坂小唄",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「昭和歌謡・歌謡曲」系として仮分類しています。 分類メモ: 歌謡曲らしい語を含む。 確認根拠は 38 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=d5JI5ZOHCbU"
+      ]
+    },
+    {
+      "term": "信濃町ふるさと音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 37 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=hrRjeRTD0lc"
+      ]
+    },
+    {
+      "term": "板橋の棒うち歌",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 37 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=bkAHw38OxM8",
+        "https://www.youtube.com/watch?v=Wkpt27OGlyQ"
+      ]
+    },
+    {
+      "term": "生きなっせ",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 37 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=3dAmcCqjC1k",
+        "https://www.youtube.com/watch?v=4OxchG_4R4Y"
+      ]
+    },
+    {
+      "term": "まつさか",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 36 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=42wycNTML1g",
+        "https://www.youtube.com/watch?v=RtsFO60-rs8"
+      ]
+    },
+    {
+      "term": "柏おどり",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 36 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=B1jVeT3vgVg",
+        "https://www.youtube.com/watch?v=7-shdUf5TRM"
+      ]
+    },
+    {
+      "term": "炭坑節 〆太鼓",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 36 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=RIwo2gFQUQc"
+      ]
+    },
+    {
+      "term": "紅花摘み唄",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 36 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=w5QUjxsR9w8"
+      ]
+    },
+    {
+      "term": "音頭福よ来い",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 36 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=hUm6rEwO5lY"
+      ]
+    },
+    {
+      "term": "黒潮ヤッサ",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 36 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=mCZD2Pkhgg8"
+      ]
+    },
+    {
+      "term": "お祭り音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 35 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=vX3D16-YKOk"
+      ]
+    },
+    {
+      "term": "ハラハラ音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 35 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=WAKBrjK64BY",
+        "https://www.youtube.com/watch?v=cF2pqlsOiTc"
+      ]
+    },
+    {
+      "term": "外山節",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 35 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=GMEGNcTOMPk"
+      ]
+    },
+    {
+      "term": "平成音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 35 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=1GNTdPt-zKk"
+      ]
+    },
+    {
+      "term": "東京踊り",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 35 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=zSXC3_UsHoA"
+      ]
+    },
+    {
+      "term": "浅草たいこばん・ミカド香奈子・開会式",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 35 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=yTO_vvV1eXc"
+      ]
+    },
+    {
+      "term": "深川音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 35 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=vSgLONRwql4"
+      ]
+    },
+    {
+      "term": "花笠太鼓",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 35 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=kyAq06Nuogo",
+        "https://www.youtube.com/watch?v=2QtQqqbRwS0"
+      ]
+    },
+    {
+      "term": "長生きサンバ",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「J-POP・ダンス」系として仮分類しています。 分類メモ: J-POP・ダンス曲らしい語を含む。 確認根拠は 35 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=uQQ2pxsqEz4"
+      ]
+    },
+    {
+      "term": "黒石じょんがら節",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 35 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=q7EuyWLcKgw",
+        "https://www.youtube.com/watch?v=-sIFXKmDhl8"
+      ]
+    },
+    {
+      "term": "のらぼん",
+      "decision": "reject",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 34 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=iu3PJZLVR58"
+      ]
+    },
+    {
+      "term": "三原ヤッサ節",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 34 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=mK6XlYSeVKA"
+      ]
+    },
+    {
+      "term": "どだればちサンバ",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「J-POP・ダンス」系として仮分類しています。 分類メモ: J-POP・ダンス曲らしい語を含む。 確認根拠は 33 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=kKb8JA1c6vY",
+        "https://www.youtube.com/watch?v=L0UfWIPJ6Ec"
+      ]
+    },
+    {
+      "term": "跳べ!2020",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 33 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=wU1eoseTO7Q"
+      ]
+    },
+    {
+      "term": "流しおどり",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 32 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Y7HlZnNWJDs"
+      ]
+    },
+    {
+      "term": "遊行おどり",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 32 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=f1BrpuFVvXM"
+      ]
+    },
+    {
+      "term": "べったら音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 31 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=3GwMKG0oqRY"
+      ]
+    },
+    {
+      "term": "全国よさこい音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 31 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=bG7mvmd6r0g"
+      ]
+    },
+    {
+      "term": "台東区の唄",
+      "decision": "reject",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 31 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=iwmP45pfOYA"
+      ]
+    },
+    {
+      "term": "小伝馬町音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 31 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=O0xguzWHm3U"
+      ]
+    },
+    {
+      "term": "東京おけさ",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 31 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=_ppedxJiYEQ"
+      ]
+    },
+    {
+      "term": "100歳音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 30 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=RjTGzljOLPw"
+      ]
+    },
+    {
+      "term": "恋のブギウギナイト",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「昭和歌謡・歌謡曲」系として仮分類しています。 分類メモ: 歌謡曲らしい語を含む。 確認根拠は 30 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=ADX9hY4LvX8"
+      ]
+    },
+    {
+      "term": "新宿新都心音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 30 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=0Lbm9EXYNIs"
+      ]
+    },
+    {
+      "term": "月夜のポンチャラリン",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 30 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=GEDOIlmTb1g",
+        "https://www.youtube.com/watch?v=-sfKoDJurOA"
+      ]
+    },
+    {
+      "term": "江差餅つきばやし",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 30 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=ocHbXfY2Mh8"
+      ]
+    },
+    {
+      "term": "お茶つみ音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 29 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=4xR3BLNcuiI",
+        "https://www.youtube.com/watch?v=y1x3abkCFuI"
+      ]
+    },
+    {
+      "term": "すっきり音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 29 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=KJbFe1n9Irs"
+      ]
+    },
+    {
+      "term": "東京鳴子おどり",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 29 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=QlKRBVp3Hvw"
+      ]
+    },
+    {
+      "term": "いろは音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 28 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Gj1kGqvCuN8"
+      ]
+    },
+    {
+      "term": "みんなで音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 28 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=3KEBPInHj1c"
+      ]
+    },
+    {
+      "term": "ドダレバチ(津軽甚句",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 28 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=bGrLFhVG_5c"
+      ]
+    },
+    {
+      "term": "下町甚句",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 28 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=4PDWLgTn3_I"
+      ]
+    },
+    {
+      "term": "夢おんど",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 28 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=mPElP3xdWgw"
+      ]
+    },
+    {
+      "term": "忍術音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 28 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=kPpcYfCn5Ug"
+      ]
+    },
+    {
+      "term": "蓮如音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 28 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=cPWJhqFq7Gw"
+      ]
+    },
+    {
+      "term": "親鸞おどり",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 28 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=_bBJYIwqCf0"
+      ]
+    },
+    {
+      "term": "親鸞音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 28 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=VzetRN5EtW0"
+      ]
+    },
+    {
+      "term": "讃岐うどん音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 28 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=BBMb4MXvVHc"
+      ]
+    },
+    {
+      "term": "阿波小松島小唄",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「昭和歌謡・歌謡曲」系として仮分類しています。 分類メモ: 歌謡曲らしい語を含む。 確認根拠は 28 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=6QgFbLLRhgQ"
+      ]
+    },
+    {
+      "term": "Start Over",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 27 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=N4PT1PO84rE"
+      ]
+    },
+    {
+      "term": "おとぼけ音頭どどんがどん",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 27 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=ia0csimdw0A"
+      ]
+    },
+    {
+      "term": "ベイサイドブギ",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 27 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=13fJxN9cTV0",
+        "https://www.youtube.com/watch?v=d4-0d9Z2d4U"
+      ]
+    },
+    {
+      "term": "富士山音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 27 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=7xQvWcNfsnc"
+      ]
+    },
+    {
+      "term": "恋の屋形船",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 27 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=sYjxkdmLXfI"
+      ]
+    },
+    {
+      "term": "東京百年おどり",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 27 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=DlZ6eJwI0zg"
+      ]
+    },
+    {
+      "term": "泰明音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 27 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=UDarUgOHKTg"
+      ]
+    },
+    {
+      "term": "百年ばやし",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 27 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=hE9dvcYB7zA"
+      ]
+    },
+    {
+      "term": "百年音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 27 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=ewh9XUR0o8c"
+      ]
+    },
+    {
+      "term": "葛飾小唄",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「昭和歌謡・歌謡曲」系として仮分類しています。 分類メモ: 歌謡曲らしい語を含む。 確認根拠は 27 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=81ielFe-I6U"
+      ]
+    },
+    {
+      "term": "赤倉音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 27 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=-oms0rE4qp4"
+      ]
+    },
+    {
+      "term": "加賀音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 26 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=3WiVoaoZd8Y"
+      ]
+    },
+    {
+      "term": "台湾輪おどり",
+      "decision": "reject",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 26 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=f7qUqhu0c5c"
+      ]
+    },
+    {
+      "term": "旗の台音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 25 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=h14hSmNuMDo",
+        "https://www.youtube.com/watch?v=dESU8p6Qqww",
+        "https://www.youtube.com/watch?v=L8Xhdl5Ks7s"
+      ]
+    },
+    {
+      "term": "Christmas Sweater",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「洋楽・海外曲」系として仮分類しています。 分類メモ: 英語曲名・海外曲らしい語を含む。 確認根拠は 24 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Wgvw877u1Bo"
+      ]
+    },
+    {
+      "term": "あなたの出番",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 24 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=mXiWkb_H9E4"
+      ]
+    },
+    {
+      "term": "心は360度",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 24 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=6aIKezKeGtc",
+        "https://www.youtube.com/watch?v=XpvPt-Wj4Pk"
+      ]
+    },
+    {
+      "term": "東京名物人混み",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 24 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=OwFLNDis7to"
+      ]
+    },
+    {
+      "term": "東京本願寺音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 24 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=lix_uMxIilc"
+      ]
+    },
+    {
+      "term": "南中ソーラン",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 23 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=vWAMZxuXSFo"
+      ]
+    },
+    {
+      "term": "源助さん",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 23 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Mt17X8pjzUk",
+        "https://www.youtube.com/watch?v=Vh1Y99nzP4o"
+      ]
+    },
+    {
+      "term": "おめでた音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 23 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=l4Drlqjp12s"
+      ]
+    },
+    {
+      "term": "八ッ坂",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 23 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=wVlHxS8FgTg"
+      ]
+    },
+    {
+      "term": "平成ゆかた踊り",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 23 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=fhQQ5ZBEV18"
+      ]
+    },
+    {
+      "term": "東京盆唄",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 23 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Xt5IsTta10s"
+      ]
+    },
+    {
+      "term": "江州音頭1",
+      "decision": "reject",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 23 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=YbxGtmKs2CU",
+        "https://www.youtube.com/watch?v=ZkSDEX4vGtk"
+      ]
+    },
+    {
+      "term": "江州音頭2",
+      "decision": "reject",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 23 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=1ovTmiCJ-nY",
+        "https://www.youtube.com/watch?v=bn0a18Sn0_8"
+      ]
+    },
+    {
+      "term": "津軽の花",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 23 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=3oCZm2gnPhE"
+      ]
+    },
+    {
+      "term": "美味しいお酒 飲めりゃいい",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 23 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=YaKc6zUETQM"
+      ]
+    },
+    {
+      "term": "芝浦音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 23 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=55RssZVldlc"
+      ]
+    },
+    {
+      "term": "萩中音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 23 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=t3lafDhQCxo"
+      ]
+    },
+    {
+      "term": "お久しぶりね",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 22 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=OdZE64NIKe0"
+      ]
+    },
+    {
+      "term": "ヨッ!太鼓持ち",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 22 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=VKNv40gVmfQ"
+      ]
+    },
+    {
+      "term": "中津川音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 22 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=iDfFzaR8u3Y"
+      ]
+    },
+    {
+      "term": "千葉みなと音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 22 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Dd6mHs8V9mE"
+      ]
+    },
+    {
+      "term": "吉田良いとこ音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 22 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=ZHOlDVO-q_I"
+      ]
+    },
+    {
+      "term": "沼田の天狗ばやし",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 22 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=hxYM1xUvCAY"
+      ]
+    },
+    {
+      "term": "牛深ハイヤ節",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 22 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=OA2ikKaTvjk",
+        "https://www.youtube.com/watch?v=DG-7sGtXXvQ"
+      ]
+    },
+    {
+      "term": "福よ来い",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 22 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Ut8IfqOFJGM"
+      ]
+    },
+    {
+      "term": "千恵っ子よされ",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 21 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=qscrWD9-92I",
+        "https://www.youtube.com/watch?v=T1_o4jYUnr8",
+        "https://www.youtube.com/watch?v=MZ3hxRI5XjA"
+      ]
+    },
+    {
+      "term": "きよしの数え歌",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 20 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=8naMPr71X-o"
+      ]
+    },
+    {
+      "term": "まつり",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「企画曲・イベント曲」系として仮分類しています。 分類メモ: 祭り・盆踊り向け企画曲らしい語を含む。 確認根拠は 20 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=zujdIGSACJo"
+      ]
+    },
+    {
+      "term": "北酒場",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 20 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=ZM4cmjyAZ2o"
+      ]
+    },
+    {
+      "term": "星物語",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 20 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=bZdOrVeoCfc"
+      ]
+    },
+    {
+      "term": "川口小唄",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「昭和歌謡・歌謡曲」系として仮分類しています。 分類メモ: 歌謡曲らしい語を含む。 確認根拠は 10 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=7QomtyjbDGM",
+        "https://www.youtube.com/watch?v=788BK5t6Ee0",
+        "https://www.youtube.com/watch?v=BhYvUCNb7m8",
+        "https://www.youtube.com/watch?v=WoPKLse9Z6E",
+        "https://www.youtube.com/watch?v=dIlvJ0aEaSY"
+      ]
+    },
+    {
+      "term": "エビカニクス音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 5 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Oz6cIW3RCtM",
+        "https://www.youtube.com/watch?v=tmABp7thEbw",
+        "https://www.youtube.com/watch?v=rTxHtZwVoJ8",
+        "https://www.youtube.com/watch?v=at-_NErCkS8",
+        "https://www.youtube.com/watch?v=RDwPvX5MTKQ"
+      ]
+    },
+    {
+      "term": "SEPTEMBER",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 4 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=4RB6zVWao6A",
+        "https://www.youtube.com/watch?v=cn-J6lcHzoY"
+      ]
+    },
+    {
+      "term": "俺ら炭鉱夫",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 3 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=ix0D6sTCm7A",
+        "https://www.youtube.com/watch?v=0Cn9lvJ7lA0",
+        "https://www.youtube.com/watch?v=lrEeotdmhTM"
+      ]
+    },
+    {
+      "term": "東西南北音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 3 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=vTpNDxDGlfw",
+        "https://www.youtube.com/watch?v=a_XwgJfAPVg",
+        "https://www.youtube.com/watch?v=yBZ1rXA6LRo"
+      ]
+    },
+    {
+      "term": "浜っ娘音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 3 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Fp777jstCxY",
+        "https://www.youtube.com/watch?v=msg5mtmdZFQ",
+        "https://www.youtube.com/watch?v=zyaDbEFcPq4"
+      ]
+    },
+    {
+      "term": "蟹工船",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 3 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=wCD1DBqMymU",
+        "https://www.youtube.com/watch?v=LsrWRUfFiDY",
+        "https://www.youtube.com/watch?v=B7quQ6JV8cs"
+      ]
+    },
+    {
+      "term": "Fun! Fun! Fun!",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 10 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=OFls-bWJzyQ"
+      ]
+    },
+    {
+      "term": "勝手にシンドバッド",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 10 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=AKhltn_Q5_8",
+        "https://www.youtube.com/watch?v=JwFv6U0y9PQ"
+      ]
+    },
+    {
+      "term": "くにたち囃子",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 曲のジャンルはまだ要調査です。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Ue8LCZambOg",
+        "https://www.youtube.com/watch?v=yUEKyvLlvO0"
+      ]
+    },
+    {
+      "term": "ふるさと北区",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 曲のジャンルはまだ要調査です。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=asH_HVBJoN4",
+        "https://www.youtube.com/watch?v=UBGvAcTE6_E"
+      ]
+    },
+    {
+      "term": "佐渡の恋唄",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 曲のジャンルはまだ要調査です。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=O728rT5DMYE",
+        "https://www.youtube.com/watch?v=PL7Fgs0ifSU"
+      ]
+    },
+    {
+      "term": "国立音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=CRWQn4yut6o",
+        "https://www.youtube.com/watch?v=O3YCMn5xfv4"
+      ]
+    },
+    {
+      "term": "東京北都音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=788BK5t6Ee0",
+        "https://www.youtube.com/watch?v=Nd1ADi6TxuM"
+      ]
+    },
+    {
+      "term": "LOVEマシーン",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「J-POP・ダンス」系として仮分類しています。 分類メモ: J-POP・ダンス曲らしい語を含む。 確認根拠は 9 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Qj2TBacilvI"
+      ]
+    },
+    {
+      "term": "ジョニー・B、グッド",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 9 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=jrbrjKdzLDI"
+      ]
+    },
+    {
+      "term": "バスケット・ケース",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 9 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=9AJqbnmASyE"
+      ]
+    },
+    {
+      "term": "ONE LOVE",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「J-POP・ダンス」系として仮分類しています。 分類メモ: J-POP・ダンス曲らしい語を含む。 確認根拠は 8 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Zez3AszAAos"
+      ]
+    },
+    {
+      "term": "エブリブレスユーテイク",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 8 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=ReyecfWdqFI"
+      ]
+    },
+    {
+      "term": "ガット・トゥ・ビー・リアル",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 8 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=SyJ8vBe8iv8"
+      ]
+    },
+    {
+      "term": "大井どんたく音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 8 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=YvCQzHGPzgw"
+      ]
+    },
+    {
+      "term": "Beat It盆踊り",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 このサイトでは「洋楽・海外曲」系として仮分類しています。 分類メモ: 英語曲名・海外曲らしい語を含む。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=-USPVIqmUKQ"
+      ]
+    },
+    {
+      "term": "RPG",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 このサイトでは「J-POP・ダンス」系として仮分類しています。 分類メモ: J-POP・ダンス曲らしい語を含む。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=-4rG0Idq1hM"
+      ]
+    },
+    {
+      "term": "おけさ唄えば",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Tv841KIFT2w"
+      ]
+    },
+    {
+      "term": "おしまこ輪踊り",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 曲のジャンルはまだ要調査です。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=6ZCsHqoCz8Y"
+      ]
+    },
+    {
+      "term": "こまづくり唄",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 曲のジャンルはまだ要調査です。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Ae8CYjM-y2Y"
+      ]
+    },
+    {
+      "term": "すみだ輪おどり",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 曲のジャンルはまだ要調査です。 確認根拠は 2 件あります。",
+      "youtube_urls": []
+    },
+    {
+      "term": "たいとう音頭 ダンシング・バージョン",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 このサイトでは「J-POP・ダンス」系として仮分類しています。 分類メモ: J-POP・ダンス曲らしい語を含む。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=yKWvbeLf36c"
+      ]
+    },
+    {
+      "term": "でかんしょ節",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=0cz4BgmIJC4"
+      ]
+    },
+    {
+      "term": "とらじょ様",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 曲のジャンルはまだ要調査です。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=bbKV6EYNny8"
+      ]
+    },
+    {
+      "term": "やる気で音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=vCXqCiHJLrA"
+      ]
+    },
+    {
+      "term": "ホイップるん音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=7rAwNEaBU7Y"
+      ]
+    },
+    {
+      "term": "下北小唄",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 このサイトでは「昭和歌謡・歌謡曲」系として仮分類しています。 分類メモ: 歌謡曲らしい語を含む。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=UmULl-H4adI"
+      ]
+    },
+    {
+      "term": "八戸小唄",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 このサイトでは「昭和歌謡・歌謡曲」系として仮分類しています。 分類メモ: 歌謡曲らしい語を含む。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=eUdaKOAjGEo"
+      ]
+    },
+    {
+      "term": "北上おでんせ",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 曲のジャンルはまだ要調査です。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=jhNfVejczXk"
+      ]
+    },
+    {
+      "term": "南州おどり",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 曲のジャンルはまだ要調査です。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=tf79FS8AQXE"
+      ]
+    },
+    {
+      "term": "堀江盆歌",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 曲のジャンルはまだ要調査です。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=vhUEHrUbadI"
+      ]
+    },
+    {
+      "term": "天竜下れば",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 曲のジャンルはまだ要調査です。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=2yxXvYk1y3o"
+      ]
+    },
+    {
+      "term": "宇宙太鼓",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 曲のジャンルはまだ要調査です。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=KXprFpoe6t4"
+      ]
+    },
+    {
+      "term": "常磐炭坑節",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=ykkxgB_79PU"
+      ]
+    },
+    {
+      "term": "平和音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Ay26e53P9-E"
+      ]
+    },
+    {
+      "term": "日本はればれ音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=LcY8fBoEpfA"
+      ]
+    },
+    {
+      "term": "村崎野音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=yOPU_J0TRdk"
+      ]
+    },
+    {
+      "term": "浅草ばし音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=3VWIIqZ2cMA"
+      ]
+    },
+    {
+      "term": "牛深ハイヤ",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=CAFh6Bp5YaI"
+      ]
+    },
+    {
+      "term": "白鳥おどり 世栄",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 曲のジャンルはまだ要調査です。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=ApUiu9aGfKs"
+      ]
+    },
+    {
+      "term": "相馬壁塗り甚句",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=LMyYDB4-4fw"
+      ]
+    },
+    {
+      "term": "祭り華〜神田明神",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 このサイトでは「企画曲・イベント曲」系として仮分類しています。 分類メモ: 祭り・盆踊り向け企画曲らしい語を含む。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=cjXn62ErNvE"
+      ]
+    },
+    {
+      "term": "紀州白浜音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=tlWdGx5rLFA"
+      ]
+    },
+    {
+      "term": "締め太鼓",
+      "decision": "reject",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 曲のジャンルはまだ要調査です。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=bKGzyQHWWcI"
+      ]
+    },
+    {
+      "term": "繁昌ぶし",
+      "decision": "reject",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 曲のジャンルはまだ要調査です。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=9lkufMdYu2c"
+      ]
+    },
+    {
+      "term": "自由が丘小唄",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 このサイトでは「昭和歌謡・歌謡曲」系として仮分類しています。 分類メモ: 歌謡曲らしい語を含む。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=BY_GmnNAtFU"
+      ]
+    },
+    {
+      "term": "花笠踊り",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 曲のジャンルはまだ要調査です。 確認根拠は 2 件あります。",
+      "youtube_urls": []
+    },
+    {
+      "term": "郡上節三百",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=rrPjw5lwGDU"
+      ]
+    },
+    {
+      "term": "隠岐のしげさ節",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=TIHzTtK9a1c"
+      ]
+    },
+    {
+      "term": "雨の御堂筋",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 曲のジャンルはまだ要調査です。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=-Hge85DeCGs"
+      ]
+    },
+    {
+      "term": "高嶺の花子さん",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 曲のジャンルはまだ要調査です。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=AMlgxeN1yE0"
+      ]
+    },
+    {
+      "term": "鯵ヶ沢甚句",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=4FeWN7pbr3w"
+      ]
+    },
+    {
+      "term": "麦わら音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=I9_Fcsn5aJ0"
+      ]
+    },
+    {
+      "term": "さくら",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 4 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Gf-NLGK8oXM"
+      ]
+    },
+    {
+      "term": "六本人音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=eM1WGT5MQ5Y"
+      ]
+    },
+    {
+      "term": "言ちゃん音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 6 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=xu3YkUG54e0",
+        "https://www.youtube.com/watch?v=NRgv6IUobgI"
+      ]
+    },
+    {
+      "term": "DJササキチ",
+      "decision": "reject",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 19 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=uOiAhR6bmbI",
+        "https://www.youtube.com/watch?v=dL2wTMUY0Lc"
+      ]
+    },
+    {
+      "term": "5,6,7,8",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 19 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=WMEr8_l2-sk"
+      ]
+    },
+    {
+      "term": "Shake It Off",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 19 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=xJhWovVy8Sk"
+      ]
+    },
+    {
+      "term": "うっせぇわ",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 19 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=mFfa3puvopk"
+      ]
+    },
+    {
+      "term": "うらじゃ音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 19 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=OTb-XkCq0ug"
+      ]
+    },
+    {
+      "term": "お江戸チョイチョイ節",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 19 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=DmwC4boaM4I"
+      ]
+    },
+    {
+      "term": "みなとヨイサ",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 19 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Rn1S2DWxgTA"
+      ]
+    },
+    {
+      "term": "プレイバックPart2",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 19 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=tn5hpNB_xWA"
+      ]
+    },
+    {
+      "term": "七夕おどり",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 19 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=hpz74gLrfH4"
+      ]
+    },
+    {
+      "term": "巣鴨音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 19 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=0ZDUIo3VM3Y"
+      ]
+    },
+    {
+      "term": "貝殻節",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 19 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=WluMOWAtW0A"
+      ]
+    },
+    {
+      "term": "飛島音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 19 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=KerwfhoHAzg"
+      ]
+    },
+    {
+      "term": "Azonto",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 18 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=-Ao3uNGFHBc",
+        "https://www.youtube.com/watch?v=s06bAdEZ3vU",
+        "https://www.youtube.com/watch?v=IGjFkLQh-BI"
+      ]
+    },
+    {
+      "term": "エッサッサ",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 18 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=MiCgLmKAe1c"
+      ]
+    },
+    {
+      "term": "ネオン音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 18 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=A1aj9KCrLgw"
+      ]
+    },
+    {
+      "term": "マイ・シャローナ",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 18 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=d_J8HsZlZvc"
+      ]
+    },
+    {
+      "term": "上三坂ヤッチキ踊り",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 18 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=wyeO8zZduFQ"
+      ]
+    },
+    {
+      "term": "土佐はち拳音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 18 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=rGOCNYv1uBc"
+      ]
+    },
+    {
+      "term": "夏詣盆をどり",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 18 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=2Tt92xUNVSg"
+      ]
+    },
+    {
+      "term": "夢ヤッサ",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 18 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=unzYEp_a8bU"
+      ]
+    },
+    {
+      "term": "寒水輪島",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 18 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=AFrDpf8B4uM"
+      ]
+    },
+    {
+      "term": "柳ブギ",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 18 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=-ZReM2k3yoM"
+      ]
+    },
+    {
+      "term": "津具「チョイナ節",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 18 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=LSkW19CoChk"
+      ]
+    },
+    {
+      "term": "祭になればいい",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 18 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=nEWLXyPwxKg"
+      ]
+    },
+    {
+      "term": "紅蓮華",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 18 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=z91SWSUUJOk"
+      ]
+    },
+    {
+      "term": "道後ばやし",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 18 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=VyE3NfbY0Q0"
+      ]
+    },
+    {
+      "term": "音頭「福よ来い",
+      "decision": "research",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 18 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=c-kNXmHO9Rc"
+      ]
+    },
+    {
+      "term": "麹町靖國講神輿渡御",
+      "decision": "reject",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 18 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=VEWVMbZi_OY"
+      ]
+    },
+    {
+      "term": "世栄",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 17 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=KQnA9MFxYvI",
+        "https://www.youtube.com/watch?v=Ytffkr-8D4Y"
+      ]
+    },
+    {
+      "term": "おまんた囃子",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 17 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=wREb_vJjTqs",
+        "https://www.youtube.com/watch?v=ernHS6WjDMg"
+      ]
+    },
+    {
+      "term": "さのさ",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 17 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=TOnVuqs7-Zk"
+      ]
+    },
+    {
+      "term": "ちゅ、多様性",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 17 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=H3j2hqPE0g0"
+      ]
+    },
+    {
+      "term": "チャンチキ恋唄",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 17 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=zTPZiuFjdPM"
+      ]
+    },
+    {
+      "term": "丸亀小唄",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「昭和歌謡・歌謡曲」系として仮分類しています。 分類メモ: 歌謡曲らしい語を含む。 確認根拠は 17 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=NEci0yEeEXo"
+      ]
+    },
+    {
+      "term": "今地球がめざめる",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 17 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=usFtZX4IFyw"
+      ]
+    },
+    {
+      "term": "大江東音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 17 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=SnccuuDIqpo"
+      ]
+    },
+    {
+      "term": "富岡八幡音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 17 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=D0sPlvzyVa8"
+      ]
+    },
+    {
+      "term": "岩手わんこそば音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 17 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=0ZeyREA0820"
+      ]
+    },
+    {
+      "term": "憧れのハワイ航路",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 17 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=t1NUy9mnWHo"
+      ]
+    },
+    {
+      "term": "戸越銀座音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 17 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Pn-VglJ8N_U",
+        "https://www.youtube.com/watch?v=jeV90dCUSug"
+      ]
+    },
+    {
+      "term": "東京五輪2020",
+      "decision": "research",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 17 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=kUl6JGGpjyY"
+      ]
+    },
+    {
+      "term": "江戸川ふるさと音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 17 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=8De4oLwG7kw"
+      ]
+    },
+    {
+      "term": "田の神音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 17 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=KSYmDXCC8JE"
+      ]
+    },
+    {
+      "term": "篠崎音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 17 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=X1wrA9SwUFA"
+      ]
+    },
+    {
+      "term": "跳べ2020",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 17 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=NixBwkoTHNE"
+      ]
+    },
+    {
+      "term": "輝け日本富士山おどり",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 17 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=waeSS-3LkBw"
+      ]
+    },
+    {
+      "term": "関東やまと太鼓〆太鼓",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 17 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=AO2zea4Vu4g"
+      ]
+    },
+    {
+      "term": "霞町音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 17 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=vBEYNLg5Sr0"
+      ]
+    },
+    {
+      "term": "どだればち",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 16 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Ym1yo3dD9Xk"
+      ]
+    },
+    {
+      "term": "ガールズ・ジャスト・ワナ・ハブ・ファン",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 16 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=yBphM4GIpq4"
+      ]
+    },
+    {
+      "term": "タイムマシンにお願い",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 16 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=I0_lYt5t7tc"
+      ]
+    },
+    {
+      "term": "ツイストアンドシャウト",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 16 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=WBsRUETxKqc"
+      ]
+    },
+    {
+      "term": "テレフォン・オペレーター",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 16 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=HQdw5q0smow"
+      ]
+    },
+    {
+      "term": "ドント・ルック・バック・イン・アンガー",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 16 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=VYFJZP9ioM8"
+      ]
+    },
+    {
+      "term": "パワー・オブ・ラブ",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 16 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=x5OasHJEHoo"
+      ]
+    },
+    {
+      "term": "ホールド・ミー・ナウ",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 16 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=cJuuUTrTqtw"
+      ]
+    },
+    {
+      "term": "ルージュの伝言",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 16 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=PYZALYBBlmU"
+      ]
+    },
+    {
+      "term": "レッツゴー!陰陽師",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 16 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=yw1qK_CHgt0"
+      ]
+    },
+    {
+      "term": "今夜はビートイット",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 16 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=fUsD7MGPQW0"
+      ]
+    },
+    {
+      "term": "創聖のアクエリオン",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 16 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Y4cAKkbX85s"
+      ]
+    },
+    {
+      "term": "咲かせや咲かせ",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 16 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=y92rQtl0ziQ"
+      ]
+    },
+    {
+      "term": "孝藤まり桜パフォーマンス",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 16 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=d8voMiRZQL4"
+      ]
+    },
+    {
+      "term": "流山市民音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 16 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=BtHmQQS-SSM"
+      ]
+    },
+    {
+      "term": "牛ちゃんマンボ",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 16 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=ch9PzotdWA8",
+        "https://www.youtube.com/watch?v=NMSZ78wALFw"
+      ]
+    },
+    {
+      "term": "猫の子(白鳥",
+      "decision": "reject",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 16 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=MHQh6PX8ZoE"
+      ]
+    },
+    {
+      "term": "猫の子(郡上",
+      "decision": "reject",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 16 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=9HnoyBG_ado"
+      ]
+    },
+    {
+      "term": "虎じょ様",
+      "decision": "reject",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 16 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=gMoZa5pc0cc"
+      ]
+    },
+    {
+      "term": "郡上三百",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 16 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=JWQQ3th5tkk",
+        "https://www.youtube.com/watch?v=8byfwm5HopE"
+      ]
+    },
+    {
+      "term": "銀座カンカン娘・チャンチキおけさ",
+      "decision": "reject",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「昭和歌謡・歌謡曲」系として仮分類しています。 分類メモ: 歌謡曲らしい語を含む。 確認根拠は 16 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=KJCFwhCjghI"
+      ]
+    },
+    {
+      "term": "LOVE AFFAIR",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「J-POP・ダンス」系として仮分類しています。 分類メモ: J-POP・ダンス曲らしい語を含む。 確認根拠は 15 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=h1OI-Wlo_Yg"
+      ]
+    },
+    {
+      "term": "坂井ユカコ",
+      "decision": "reject",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 15 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=d7KRWYPuPDs"
+      ]
+    },
+    {
+      "term": "宇宙軒梅ぼし",
+      "decision": "reject",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 15 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=DNbfYWLH6kU"
+      ]
+    },
+    {
+      "term": "御祝儀音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 15 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=z2Q7ehSHrPw"
+      ]
+    },
+    {
+      "term": "松戸こども音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 15 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=zCZ1FxKpjZ0"
+      ]
+    },
+    {
+      "term": "河内おとこ節・〆太鼓",
+      "decision": "reject",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 15 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=PPfITJoSe1w"
+      ]
+    },
+    {
+      "term": "炎上寺ルイコ",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 15 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=VAUt4toIWNA"
+      ]
+    },
+    {
+      "term": "さんさん音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 14 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=caR7_TtgXMw"
+      ]
+    },
+    {
+      "term": "どらえもん音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 14 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=dplItVK4-wM"
+      ]
+    },
+    {
+      "term": "三茶連",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 14 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Ao6i7_AnT94"
+      ]
+    },
+    {
+      "term": "串本育ち",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 14 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Yh6H_fStoxA"
+      ]
+    },
+    {
+      "term": "勇気音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 14 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=0x8O6i8PLvg"
+      ]
+    },
+    {
+      "term": "南洲踊り",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 14 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=jTaOft56HPI"
+      ]
+    },
+    {
+      "term": "堀切あやめ連",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 14 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=bQrDYy5BUZs"
+      ]
+    },
+    {
+      "term": "大江戸亀有ふるさと音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 14 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=zvm6WcVgIig"
+      ]
+    },
+    {
+      "term": "小金井さくら連",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 14 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=4slI1cwnZTY"
+      ]
+    },
+    {
+      "term": "新粋連",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 14 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=3Tb2pWXgBP4"
+      ]
+    },
+    {
+      "term": "木更津甚句",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 14 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=nO2Ij2JsQHs"
+      ]
+    },
+    {
+      "term": "木曽節",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 14 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=AztIOaPjUPc"
+      ]
+    },
+    {
+      "term": "松戸ばやし",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 14 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=W_Qdpm8rWeQ"
+      ]
+    },
+    {
+      "term": "河童音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 14 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=7VZ9mhtpb04"
+      ]
+    },
+    {
+      "term": "沼南音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 14 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=oHx7TDdPhlw"
+      ]
+    },
+    {
+      "term": "波奴連",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 14 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=kDbrG_DrAtE"
+      ]
+    },
+    {
+      "term": "浅草雷連",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 14 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=SMvyt4sNEhc"
+      ]
+    },
+    {
+      "term": "真夏の果実",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 14 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=olWd5wwwbbg"
+      ]
+    },
+    {
+      "term": "華純連",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 14 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=IabD2haEL9g"
+      ]
+    },
+    {
+      "term": "葛飾ラプソディー",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 14 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=6QJmLTvqSLk"
+      ]
+    },
+    {
+      "term": "Livin’OnAPrayer",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 13 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Ajb__XZF9LY",
+        "https://www.youtube.com/watch?v=k0Nva7YRAqM"
+      ]
+    },
+    {
+      "term": "夢巳橋",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 13 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=QJaGqqUTUgs"
+      ]
+    },
+    {
+      "term": "山中一若丸",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 13 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=KHU8xRPy7gE"
+      ]
+    },
+    {
+      "term": "虹友美",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 13 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=JEK6AUuqP9g"
+      ]
+    },
+    {
+      "term": "おしなりくんあい愛音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 12 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=EgoHia6bx74"
+      ]
+    },
+    {
+      "term": "どんぱん節",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 12 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=EWdyCi_IIxY"
+      ]
+    },
+    {
+      "term": "万博音頭交野節編",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 12 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=EHSB2YnDWNA"
+      ]
+    },
+    {
+      "term": "桜橋踊り",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 12 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Wtm1GlAhFgk"
+      ]
+    },
+    {
+      "term": "育英なかよし音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 12 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=EVQJKZeNenM"
+      ]
+    },
+    {
+      "term": "高輪ゲートウェイ",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 12 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=5wRxuhhxQCA"
+      ]
+    },
+    {
+      "term": "月乃家小菊(江州音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 11 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=boLLl53s0po"
+      ]
+    },
+    {
+      "term": "松原光司(河内音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 11 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=s9C7biCpqLs"
+      ]
+    },
+    {
+      "term": "たたら踊り",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 11 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=NzIyxmeVJho",
+        "https://www.youtube.com/watch?v=zCKJ2OnK3ds"
+      ]
+    },
+    {
+      "term": "みんなの願い",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 11 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=IHauyjam8Rc",
+        "https://www.youtube.com/watch?v=TJPrU8eIdL4"
+      ]
+    },
+    {
+      "term": "ファミリー博希",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 11 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=IKbQRcmK5Aw"
+      ]
+    },
+    {
+      "term": "川口音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 11 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=JI7liT8jolo",
+        "https://www.youtube.com/watch?v=qF3VOrmrNQw"
+      ]
+    },
+    {
+      "term": "月乃家寿子(河内音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 11 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=AxV3A0Ssc5I"
+      ]
+    },
+    {
+      "term": "瀧野家秀月(泉州音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 11 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=tl8lmrSClEE"
+      ]
+    },
+    {
+      "term": "生駒一久 河内音頭(一部",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 11 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=4RvlUsgm6Yo"
+      ]
+    },
+    {
+      "term": "音頭「七福神",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 11 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Jn_xMnYuu0E"
+      ]
+    },
+    {
+      "term": "きよしのドドンパ",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 10 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=xIsQdGNmX2I"
+      ]
+    },
+    {
+      "term": "巣鴨花咲き音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 10 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=JZ1BZM_GbDQ"
+      ]
+    },
+    {
+      "term": "GetWild",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 10 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=KSFfswL8jFI"
+      ]
+    },
+    {
+      "term": "WON'T BE LONG",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 10 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=IHzTWk2W2io"
+      ]
+    },
+    {
+      "term": "おジャ魔女カーニバル!!",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 10 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=oHMzbjcFowA"
+      ]
+    },
+    {
+      "term": "イエローサブマリン音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 10 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=POwAgdjGooU"
+      ]
+    },
+    {
+      "term": "ポリフォニー江州音頭",
+      "decision": "reject",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 10 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=6z8uS5L7yZQ"
+      ]
+    },
+    {
+      "term": "ヤレコレエンヤカ式根島",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 10 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=iLUXn4EL8hA"
+      ]
+    },
+    {
+      "term": "ライオン",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 10 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=S8Ekk9ticu4"
+      ]
+    },
+    {
+      "term": "ライラック",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 10 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=NdxyY3SaXC8"
+      ]
+    },
+    {
+      "term": "新川古代神",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 10 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=TjAmU6QlKiw"
+      ]
+    },
+    {
+      "term": "木遣り・纏振り",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 10 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=MHUj7QDSlyM"
+      ]
+    },
+    {
+      "term": "松原里佳",
+      "decision": "reject",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 10 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=FRBFz88Hq9Y"
+      ]
+    },
+    {
+      "term": "松山野球拳踊り",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 10 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=reguQjGwwAM"
+      ]
+    },
+    {
+      "term": "篠笛&三味線披露",
+      "decision": "reject",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 10 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=K4pQIO5efNE"
+      ]
+    },
+    {
+      "term": "紅蓮の弓矢",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 10 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=GKBEm_SyusM"
+      ]
+    },
+    {
+      "term": "花魁道中",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 10 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=oaVDS5KlIv4"
+      ]
+    },
+    {
+      "term": "郡上おどりまつさか",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 10 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=HWVJgngnKg8"
+      ]
+    },
+    {
+      "term": "魂のルフラン",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 10 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=984f_X9rTQw"
+      ]
+    },
+    {
+      "term": "杉戸音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 9 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Bw08OTylfMk"
+      ]
+    },
+    {
+      "term": "餅つき・練り歩き",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 9 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=7ttV9Hjhit4"
+      ]
+    },
+    {
+      "term": "1+1の音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 9 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=7nQtT8jKxgs"
+      ]
+    },
+    {
+      "term": "Feliz Navidad",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 9 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=po6GB5jHw-M"
+      ]
+    },
+    {
+      "term": "すずめのティアーズ",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 9 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=j0ruUHgA4Jo"
+      ]
+    },
+    {
+      "term": "オトノナルホウヘ",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 9 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=7NiX9O7a8bw"
+      ]
+    },
+    {
+      "term": "夏色",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 9 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=giCmpcie82w"
+      ]
+    },
+    {
+      "term": "大角会和太鼓演奏",
+      "decision": "reject",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 9 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=11su-8dytLQ"
+      ]
+    },
+    {
+      "term": "宮代音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 9 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=TEBXRpg3bCY"
+      ]
+    },
+    {
+      "term": "寺島茄子之介音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 9 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=6HcjRhuqQrU"
+      ]
+    },
+    {
+      "term": "生駒竜也",
+      "decision": "reject",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 9 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=V6IhRbCZPcQ"
+      ]
+    },
+    {
+      "term": "関東やまと太鼓",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 9 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=EckL8cYl6u8"
+      ]
+    },
+    {
+      "term": "雑司ヶ谷鬼子母神音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 9 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Y4iNrVRywos"
+      ]
+    },
+    {
+      "term": "黒石じょんから",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 9 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Qwu-WLl273U"
+      ]
+    },
+    {
+      "term": "10連合同総踊り",
+      "decision": "reject",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 8 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=D0s2clE03RQ"
+      ]
+    },
+    {
+      "term": "いなせ連",
+      "decision": "reject",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 8 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=krDr1VOlkpY"
+      ]
+    },
+    {
+      "term": "えんぶり",
+      "decision": "reject",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 8 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=xcMMXVJQNEI"
+      ]
+    },
+    {
+      "term": "七夕踊り",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 8 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=SruxnkV-4Zc"
+      ]
+    },
+    {
+      "term": "別府湯けむり",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 8 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=FLB_1knM-G8"
+      ]
+    },
+    {
+      "term": "大井町音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 8 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=izVNl3PhNmA",
+        "https://www.youtube.com/watch?v=BKZPaVPOzk8"
+      ]
+    },
+    {
+      "term": "天水連関東支部",
+      "decision": "reject",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 8 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=0Ud8G6TeLhs"
+      ]
+    },
+    {
+      "term": "恋する街角",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 8 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=5iwdsr3JG-M"
+      ]
+    },
+    {
+      "term": "日本神輿協会",
+      "decision": "reject",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 8 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Yl6AOLktCGo"
+      ]
+    },
+    {
+      "term": "江戸消防記念会",
+      "decision": "reject",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 8 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=JCDpTx2ZAY8"
+      ]
+    },
+    {
+      "term": "点睛連",
+      "decision": "reject",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 8 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=J8N2C1l1iFo"
+      ]
+    },
+    {
+      "term": "生駒みづき (河内音頭",
+      "decision": "reject",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 8 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=88f6KvDDiEw"
+      ]
+    },
+    {
+      "term": "生駒尚子(星屑の御堂筋",
+      "decision": "reject",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 8 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=_RtW3aDANTE"
+      ]
+    },
+    {
+      "term": "生駒尚子(河内音頭",
+      "decision": "reject",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 8 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=aU7hXc1GJqo"
+      ]
+    },
+    {
+      "term": "雲竜未衣",
+      "decision": "reject",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 8 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=8J-2HOrFcp8"
+      ]
+    },
+    {
+      "term": "〆太鼓",
+      "decision": "reject",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 7 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=4JfctgE8OOo"
+      ]
+    },
+    {
+      "term": "ねぶた囃子、跳人",
+      "decision": "reject",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 7 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=sKWlB7aLt0w"
+      ]
+    },
+    {
+      "term": "オー・シャンゼリゼ",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 7 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=70VGauCKGho"
+      ]
+    },
+    {
+      "term": "キューティーハニー",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 7 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Ys1pFqTJJS8"
+      ]
+    },
+    {
+      "term": "スカイツリー音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 7 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=s2cChP6l8mg"
+      ]
+    },
+    {
+      "term": "トラック音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 7 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=LMwdp9fQNM8"
+      ]
+    },
+    {
+      "term": "ナニャドヤラ",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 7 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=kmRpuMkneTE"
+      ]
+    },
+    {
+      "term": "レッツ・グルーヴ",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 7 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=kuXU1DrhiG8"
+      ]
+    },
+    {
+      "term": "増尾音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 7 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=nn_5bvqqmjk"
+      ]
+    },
+    {
+      "term": "日本チャチャチャ",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 7 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=2dIOwRVGJY8"
+      ]
+    },
+    {
+      "term": "発酵盆唄",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 7 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=pyh5L2CVRRg"
+      ]
+    },
+    {
+      "term": "盛岡さんさ踊り",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 7 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=ryrD4uIHoTA"
+      ]
+    },
+    {
+      "term": "砂取節",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 7 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=nAKryyOM1UA"
+      ]
+    },
+    {
+      "term": "馬市まつり",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「企画曲・イベント曲」系として仮分類しています。 分類メモ: 祭り・盆踊り向け企画曲らしい語を含む。 確認根拠は 7 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=phN6mCm7kWQ"
+      ]
+    },
+    {
+      "term": "黒石よされニューバージョン",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 7 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=CTYaE4s82ZA"
+      ]
+    },
+    {
+      "term": "黒石よされ節~黒石甚句",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 7 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=-A41_XrYFpU"
+      ]
+    },
+    {
+      "term": "黒石よされ節ニューバージョン",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 7 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=OuHJb7-yvnM"
+      ]
+    },
+    {
+      "term": "スーダラ節",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 6 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=cziz8Qdhkkc",
+        "https://www.youtube.com/watch?v=CMhdbhF9lI4"
+      ]
+    },
+    {
+      "term": "中西レモン",
+      "decision": "reject",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 6 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=O6K2PANRrAQ"
+      ]
+    },
+    {
+      "term": "秋田大黒舞",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 6 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=yKBxrBTqhGI"
+      ]
+    },
+    {
+      "term": "妖怪道中",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「アニメ・子ども向け」系として仮分類しています。 分類メモ: アニメ・子ども向け語を含む。 確認根拠は 5 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=p-VbiQN0grg"
+      ]
+    },
+    {
+      "term": "演舞披露",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 5 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=sdHg6A5UPUM"
+      ]
+    },
+    {
+      "term": "Ob-La-Di, Ob-La-Da",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 5 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=8RqbACYn_N4"
+      ]
+    },
+    {
+      "term": "おしなりくん愛あい音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 5 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=nsnaLV1Z4os"
+      ]
+    },
+    {
+      "term": "さかサイ君音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 5 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=JxVCsVAmU84"
+      ]
+    },
+    {
+      "term": "にっぽん花咲か音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 5 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=1ClPc7T1bxM"
+      ]
+    },
+    {
+      "term": "ジャンボリーミッキー",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「アニメ・子ども向け」系として仮分類しています。 分類メモ: アニメ・子ども向け語を含む。 確認根拠は 5 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=597ZZRMSfKk"
+      ]
+    },
+    {
+      "term": "チャラヘッチャラ",
+      "decision": "reject",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 5 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=An0ev_q6GRA"
+      ]
+    },
+    {
+      "term": "印西音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 5 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=x5grdcrkOGQ"
+      ]
+    },
+    {
+      "term": "堺家小利貴丸",
+      "decision": "reject",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 5 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=X18bVNeR3h8"
+      ]
+    },
+    {
+      "term": "大大和会(江州音頭",
+      "decision": "reject",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 5 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=1ciE7BMboas"
+      ]
+    },
+    {
+      "term": "大大和稔龍(江州音頭",
+      "decision": "reject",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 5 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=wjFcYKN-5m0"
+      ]
+    },
+    {
+      "term": "東京スカイツリー音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 5 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=OqfIQzfK6tA"
+      ]
+    },
+    {
+      "term": "東京五輪音頭2020",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 5 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Nm-S4ltuCcI"
+      ]
+    },
+    {
+      "term": "松原慎之介(河内音頭",
+      "decision": "reject",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 5 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=eplGBIDrGoM"
+      ]
+    },
+    {
+      "term": "桜橋おどり",
+      "decision": "reject",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 5 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=coZn0xsjTTM"
+      ]
+    },
+    {
+      "term": "浅草雷連組踊り",
+      "decision": "reject",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 5 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=I8uF5EV-0Fc"
+      ]
+    },
+    {
+      "term": "生駒竜也(河内音頭",
+      "decision": "reject",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 5 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=XgAj7EUb8og"
+      ]
+    },
+    {
+      "term": "花の盆踊り",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 5 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Nh6f5StxjRg"
+      ]
+    },
+    {
+      "term": "豊島音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 5 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=tj4hf3NUUCU"
+      ]
+    },
+    {
+      "term": "郡上甚句",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 5 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=U0ZB9qyCRJE"
+      ]
+    },
+    {
+      "term": "サンシャインぴっかぴか音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 4 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=6Dp8ZZ109_k"
+      ]
+    },
+    {
+      "term": "おそ松くん音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 4 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=Uu1fQ9JYIjI"
+      ]
+    },
+    {
+      "term": "ふるさと芝音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 4 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=S82lcLlQ3H0"
+      ]
+    },
+    {
+      "term": "カオリーニョ藤原",
+      "decision": "reject",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 4 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=CzKSOxn999A"
+      ]
+    },
+    {
+      "term": "中一幸せ音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 4 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=_HyD0Rkedac"
+      ]
+    },
+    {
+      "term": "妖怪人間ベム",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「アニメ・子ども向け」系として仮分類しています。 分類メモ: アニメ・子ども向け語を含む。 確認根拠は 4 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=BSTwd5xaVrI"
+      ]
+    },
+    {
+      "term": "日本晴れ晴れ音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 4 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=hxu2o6xy6sQ"
+      ]
+    },
+    {
+      "term": "炎と森のカーニバル",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 4 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=eMAcr9wDqfc",
+        "https://www.youtube.com/watch?v=lOMjxN7Cq_I"
+      ]
+    },
+    {
+      "term": "瑞姫",
+      "decision": "reject",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 4 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=MBG7V38RMlY"
+      ]
+    },
+    {
+      "term": "男節",
+      "decision": "reject",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 4 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=7zA3eYAPOCg"
+      ]
+    },
+    {
+      "term": "秩父音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 4 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=F5MCFF2FnV4"
+      ]
+    },
+    {
+      "term": "カラーポワント",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 3 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=iPBiy2vj-8Y"
+      ]
+    },
+    {
+      "term": "Can't Take My Eyes Off You",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 3 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=m5EYcT07JZM"
+      ]
+    },
+    {
+      "term": "It’sMy Life",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 3 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=lPOM99pz4yc"
+      ]
+    },
+    {
+      "term": "YMCA",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「洋楽・海外曲」系として仮分類しています。 分類メモ: 英語曲名・海外曲らしい語を含む。 確認根拠は 3 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=QGpMhhAv-n4"
+      ]
+    },
+    {
+      "term": "おさんぽいんザイ君",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 3 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=-Y19hcajXX8"
+      ]
+    },
+    {
+      "term": "ダンシングクィーン",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「J-POP・ダンス」系として仮分類しています。 分類メモ: J-POP・ダンス曲らしい語を含む。 確認根拠は 3 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=JvCF-2RqraU"
+      ]
+    },
+    {
+      "term": "中野音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 3 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=S_yAs2FmGKU"
+      ]
+    },
+    {
+      "term": "妖怪盆踊り",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「アニメ・子ども向け」系として仮分類しています。 分類メモ: アニメ・子ども向け語を含む。 確認根拠は 3 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=gf-fdYMce7k"
+      ]
+    },
+    {
+      "term": "珍芸漫芸",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 3 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=b7UM5diEhKY"
+      ]
+    },
+    {
+      "term": "番外編",
+      "decision": "reject",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 3 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=sx_nPjETtFM"
+      ]
+    },
+    {
+      "term": "美しく燃える森",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 曲のジャンルはまだ要調査です。 確認根拠は 3 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=idWr8ksc7H8"
+      ]
+    },
+    {
+      "term": "電電音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "特定の地域や会場で使われることが多い曲として扱っています。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 3 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=8baZZolIbwM"
+      ]
+    },
+    {
+      "term": "よこはまあらめや音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=CQ6-A1x0ryM"
+      ]
+    },
+    {
+      "term": "わわわしながわ社協音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=bBSD9PVCzE8",
+        "https://www.youtube.com/watch?v=US8Yd9rn14M"
+      ]
+    },
+    {
+      "term": "キャッツアイ",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 曲のジャンルはまだ要調査です。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=iq1MRq2UR-k"
+      ]
+    },
+    {
+      "term": "ココロオドル",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 曲のジャンルはまだ要調査です。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=XOIx2vzwLSk",
+        "https://www.youtube.com/watch?v=ZW07BsSvBh0"
+      ]
+    },
+    {
+      "term": "パレード",
+      "decision": "reject",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 曲のジャンルはまだ要調査です。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=OyawXMtG-64"
+      ]
+    },
+    {
+      "term": "山中一平",
+      "decision": "reject",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 曲のジャンルはまだ要調査です。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=pgfhHRTUZz0"
+      ]
+    },
+    {
+      "term": "沖縄よいとこ",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 曲のジャンルはまだ要調査です。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=8JK-vkklDLU",
+        "https://www.youtube.com/watch?v=eIv7W_eM-XI"
+      ]
+    },
+    {
+      "term": "男おけさ",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 このサイトでは「民謡・新民謡」系として仮分類しています。 分類メモ: 民謡系の接尾辞・語を含む。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=E1wqSssyJ8Y",
+        "https://www.youtube.com/watch?v=DyM6ACUb1rc"
+      ]
+    },
+    {
+      "term": "こいこい音頭",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 このサイトでは「ご当地音頭」系として仮分類しています。 分類メモ: 地域名・場所名を冠した音頭らしい。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=sSZfShcGtEE",
+        "https://www.youtube.com/watch?v=t9jxIJN6Spo"
+      ]
+    },
+    {
+      "term": "紅花摘唄",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 曲のジャンルはまだ要調査です。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=sSZfShcGtEE",
+        "https://www.youtube.com/watch?v=t9jxIJN6Spo"
+      ]
+    },
+    {
+      "term": "花笠おどり",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 曲のジャンルはまだ要調査です。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=S24bEjfXUHs",
+        "https://www.youtube.com/watch?v=ZOcOzsDG75Q"
+      ]
+    },
+    {
+      "term": "音頭あなたの出番",
+      "decision": "publish",
+      "note": "",
+      "description": "盆踊り曲目として確認されていますが、利用頻度はまだ確認中です。 曲のジャンルはまだ要調査です。 確認根拠は 2 件あります。",
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=sSZfShcGtEE",
+        "https://www.youtube.com/watch?v=t9jxIJN6Spo"
+      ]
+    }
+  ],
+  "orphaned_state": {
+    "51": {
+      "decision": "reject"
+    },
+    "56": {
+      "decision": "reject"
+    }
+  }
+}

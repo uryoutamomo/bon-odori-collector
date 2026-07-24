@@ -83,9 +83,8 @@ KNOWN_GENRES = {
     "串本節": ("folk", "民謡系", "高"),
     "そうらん節": ("folk", "民謡系", "高"),
     "りんご節": ("folk", "民謡系", "中"),
-    "郡上かわさき": ("folk", "郡上おどりの曲目", "高"),
-    "郡上節かわさき": ("folk", "郡上おどりの曲目", "高"),
-    "かわさき": ("folk", "郡上おどりの曲目", "中"),
+    "かわさき": ("folk", "郡上おどりの曲目", "高"),
+    "古調かわさき": ("folk", "郡上おどりの曲目", "高"),
     "春駒": ("folk", "郡上おどり等の曲目", "中"),
     "ダンシングヒーロー": ("jpop_dance", "J-POP・ダンス系の盆踊り定番", "高"),
     "きよしのズンドコ節": ("enka", "演歌・歌謡曲系", "高"),
@@ -148,18 +147,30 @@ MANUAL_REJECT_SONG_NAMES = {
     "浅草右近屋",
     "浅草右近屋パフォーマンス",
     "大人の部",
+    "川崎おどり",
+    "川崎踊り",
 }
 
 CANONICAL_FIXES = {
     **CANONICAL_MAP,
+    "郡上かわさき": "かわさき",
+    "郡上節かわさき": "かわさき",
+    "古調かわさき・かわさき": "かわさき",
+    "少年八木節": "八木節",
     "ダンシング・ヒーロー": "ダンシングヒーロー",
     "バハマ・ママ": "バハマママ",
     "炭鉱節": "炭坑節",
+    "000年音頭": "2000年音頭",
+    "２０００年音頭": "2000年音頭",
     "65日の紙飛行機": "365日の紙飛行機",
     "鰺ヶ沢甚句": "鯵ヶ沢甚句",
     "旧 台東音頭": "旧台東音頭",
     "U.S.A": "U.S.A.",
     "USA": "U.S.A.",
+}
+
+SUPPRESSED_ALIASES = {
+    "000年音頭",
 }
 
 HARD_NOISE_RE = re.compile(
@@ -398,7 +409,7 @@ def aggregate_occurrences(payload):
                     "source_counts": Counter(),
                 },
             )
-            if raw_name and raw_name != name:
+            if raw_name and raw_name != name and raw_name not in SUPPRESSED_ALIASES:
                 row["aliases"].add(raw_name)
             row["occurrence_ids"].add(occurrence_id)
             if event_name:

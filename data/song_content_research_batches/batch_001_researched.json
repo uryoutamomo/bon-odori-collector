@@ -1,0 +1,80 @@
+{
+  "generated_by": "おと（Codex）",
+  "source_queue": "data/song_content_research_batches/batch_001_queue.json",
+  "rows": [
+    {
+      "term": "さくら音頭",
+      "content_note": "1934年に各レコード会社が競作で発売した、桜を題材にした音頭・流行歌。ビクター、テイチク、コロムビア、ポリドールで別作品として作られ、盆踊りでは昭和の音頭ものらしい華やかな曲目として扱われます。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E3%81%95%E3%81%8F%E3%82%89%E9%9F%B3%E9%A0%AD",
+        "https://ja.wikipedia.org/wiki/%E7%9B%86%E8%B8%8A%E3%82%8A"
+      ],
+      "research_memo": "Wikipediaの曲ページで1934年の各社競作を確認。盆踊りページの曲目例にも掲載あり。"
+    },
+    {
+      "term": "ハワイ音頭",
+      "content_note": "殿さまキングスなどが歌った、海外イメージを音頭に取り込んだ歌謡音頭。民謡というより、ハワイの明るい南国感を盆踊り会場に持ち込む歌謡曲枠として使われる曲です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E6%AE%BF%E3%81%95%E3%81%BE%E3%82%AD%E3%83%B3%E3%82%B0%E3%82%B9",
+        "https://ja.wikipedia.org/wiki/%E7%9B%86%E8%B8%8A%E3%82%8A"
+      ],
+      "research_memo": "殿さまキングスの楽曲文脈でワールドものとして確認。盆踊り曲目例にも掲載あり。"
+    },
+    {
+      "term": "盆ギリ恋歌",
+      "content_note": "サザンオールスターズが2023年に配信したシングル。茅ヶ崎・湘南の夏祭り感とエキゾチックなロック歌謡を合わせた曲で、盆踊りでは現代ポップスを取り入れた盛り上げ曲として使われます。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E7%9B%86%E3%82%AE%E3%83%AA%E6%81%8B%E6%AD%8C"
+      ],
+      "research_memo": "曲ページで2023年配信シングル、作風、MV・振付文脈を確認。歌詞引用は避けた。"
+    },
+    {
+      "term": "ゆかた音頭",
+      "content_note": "浴衣や夏祭りの情景と結びつく音頭系の曲目。盆踊り曲目例にも見られ、会場では夏らしい装い・手ぬぐい・輪踊りの雰囲気を出す、穏やかで参加しやすい枠として扱われます。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E7%9B%86%E8%B8%8A%E3%82%8A"
+      ],
+      "research_memo": "盆踊り曲目例で確認。固有の発売情報は弱いため、由来断定は避けて利用文脈中心に記述。"
+    },
+    {
+      "term": "東北音頭",
+      "content_note": "河北新報社が東北振興を目的に歌詞を公募し、サトウハチロー補作詞・吉田正作曲で1966年に発売された音頭。東北の祭りや復興への思いと結びつき、盆踊りでは地域色の強いご当地音頭として使われます。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E6%9D%B1%E5%8C%97%E9%9F%B3%E9%A0%AD"
+      ],
+      "research_memo": "曲ページで制作経緯、作詞作曲、発売年、夏祭り・復興文脈を確認。"
+    },
+    {
+      "term": "花火音頭",
+      "content_note": "橋幸夫が2006年に発表したシングル。花火大会には歌がないという発想から企画され、花火・祭り・踊りのにぎわいを音頭にした曲で、盆踊りでは夏祭りらしさを強く出す曲目です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E8%8A%B1%E7%81%AB%E9%9F%B3%E9%A0%AD"
+      ],
+      "research_memo": "曲ページで発売年、橋幸夫のシングル、制作意図を確認。"
+    },
+    {
+      "term": "燃えろ日本の夏祭り",
+      "content_note": "橋幸夫の「花火音頭」カップリングとして収録された夏祭り歌謡。「燃えろ水戸の夏まつり」を全国向けに手直しした曲で、盆踊りでは祭り感を強める歌謡音頭枠として扱われます。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E8%8A%B1%E7%81%AB%E9%9F%B3%E9%A0%AD"
+      ],
+      "research_memo": "花火音頭ページでカップリング曲、元曲からの改作を確認。"
+    },
+    {
+      "term": "南国土佐を後にして",
+      "content_note": "高知連隊区の部隊歌を武政英策が整理・改編した歌謡曲。戦後に復員兵から郷里へ広まり、ペギー葉山版のヒットで全国に知られた高知ゆかりの曲で、盆踊りではご当地歌謡枠として使われます。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E5%8D%97%E5%9B%BD%E5%9C%9F%E4%BD%90%E3%82%92%E5%BE%8C%E3%81%AB%E3%81%97%E3%81%A6"
+      ],
+      "research_memo": "曲ページで由来、武政英策による整理・改編、復員兵からの広まり、ペギー葉山版のヒットを確認。"
+    }
+  ]
+}

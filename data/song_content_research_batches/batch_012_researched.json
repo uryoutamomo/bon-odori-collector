@@ -1,0 +1,76 @@
+{
+  "generated_by": "おと（Codex）",
+  "source_queue": "data/song_content_research_queue.json",
+  "rows": [
+    {
+      "term": "GUTS!",
+      "content_note": "嵐が2014年に発表した43作目のシングル。二宮和也主演ドラマ『弱くても勝てます』の主題歌で、前向きな勢いを持つポップ曲です。盆踊りでは明るいJ-POP盛り上げ枠です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Guts%21",
+        "https://www.youtube.com/watch?v=0MnXL5w1Eg8"
+      ],
+      "research_memo": "曲ページで嵐の2014年シングル、ドラマ主題歌、年間ヒット曲としての位置づけを確認。YouTube根拠で盆踊り利用を確認。"
+    },
+    {
+      "term": "ヤングマン",
+      "content_note": "西城秀樹が1979年に発表した『YOUNG MAN (Y.M.C.A.)』。Village Peopleの『Y.M.C.A.』を青春応援歌として日本語化し、全身で文字を作る振り付けでも大流行しました。盆踊りでは参加型歌謡ディスコ枠です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/YOUNG_MAN_(Y.M.C.A.)",
+        "https://www.youtube.com/watch?v=cqlXIrsYeJk"
+      ],
+      "research_memo": "曲ページで西城秀樹の1979年シングル、Y.M.C.A.カバー、日本語詞、参加型の振り付けを確認。YouTube根拠で盆踊り利用を確認。"
+    },
+    {
+      "term": "All I Want For Christmas Is You",
+      "content_note": "Mariah Careyが1994年に発表したクリスマス・ポップの代表曲。明るい恋愛感と高揚感で、現代のホリデー定番として世界的に親しまれています。盆踊りでは冬おどりの洋楽ポップス枠です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/All_I_Want_for_Christmas_Is_You",
+        "https://www.youtube.com/watch?v=TAcjm6C1vTc"
+      ],
+      "research_memo": "曲ページでMariah Careyの1994年クリスマス曲、現代ホリデー定番としての位置づけを確認。YouTube根拠で盆踊り利用を確認。"
+    },
+    {
+      "term": "Santa Claus Is Coming To Town",
+      "content_note": "1934年に発表されたアメリカのクリスマス定番曲。サンタクロースの訪れを明るく歌う内容で、数多くの歌手にカバーされています。盆踊りでは冬おどりの親しみやすい洋楽枠です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Santa_Claus_Is_Comin%27_to_Town",
+        "https://www.youtube.com/watch?v=_2OGTaqA_bc"
+      ],
+      "research_memo": "曲ページで1934年発表のクリスマス曲、サンタクロース題材、多数のカバーを確認。YouTube根拠で盆踊り利用を確認。"
+    },
+    {
+      "term": "5.6.7.8",
+      "content_note": "英国グループStepsが1997年に発表したデビューシングル『5,6,7,8』。カントリー風味とテクノポップを合わせ、ラインダンス調の楽しさで知られます。盆踊りでは洋楽ダンス枠です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/5%2C6%2C7%2C8",
+        "https://www.youtube.com/watch?v=0rKM63SqbJY"
+      ],
+      "research_memo": "曲ページでStepsの1997年デビュー曲、テクノポップとカントリーポップ、ラインダンス調の人気を確認。YouTube根拠で盆踊り利用を確認。"
+    },
+    {
+      "term": "Bunny Girl",
+      "content_note": "シンガーソングライターAKASAKIの代表曲。TikTokなどで注目を集めた現代J-POPで、軽いグルーヴと若い感覚のポップさが特徴です。盆踊りでは新しい世代向けの流行曲枠です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://zh.wikipedia.org/wiki/AKASAKI",
+        "https://www.youtube.com/watch?v=JAAJf3P5P00"
+      ],
+      "research_memo": "AKASAKIページで代表作『Bunny Girl』、2024年以降の活動とTikTok発の注目を確認。YouTube根拠で盆踊り利用を確認。"
+    },
+    {
+      "term": "ROCK AND ROLL HERO",
+      "content_note": "桑田佳祐が2002年に発表したソロアルバム表題曲。ロック色の強い作品群の中心曲として、社会性と勢いのある桑田ソロの一面を伝えます。盆踊りでは大人向けロック歌謡枠です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://zh.wikipedia.org/wiki/ROCK_AND_ROLL_HERO",
+        "https://www.youtube.com/watch?v=iTjNWmEraY0"
+      ],
+      "research_memo": "アルバムページで桑田佳祐の2002年ソロアルバム、ロック・J-POP作品としての位置づけを確認。YouTube根拠で盆踊り利用を確認。"
+    }
+  ]
+}

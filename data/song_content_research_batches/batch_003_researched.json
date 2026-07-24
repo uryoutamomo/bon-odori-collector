@@ -1,0 +1,99 @@
+{
+  "generated_by": "おと（Codex）",
+  "source_queue": "data/song_content_research_batches/batch_003_queue.json",
+  "rows": [
+    {
+      "term": "マツケンサンバII",
+      "content_note": "松平健が歌う「マツケンサンバ」シリーズの代表曲。1994年に舞台用として作られ、2004年の一般発売後に派手な衣装と振付で大ブームになりました。盆踊りでは現代歌謡の盛り上げ曲として使われます。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E3%83%9E%E3%83%84%E3%82%B1%E3%83%B3%E3%82%B5%E3%83%B3%E3%83%90"
+      ],
+      "research_memo": "マツケンサンバIIの制作年、作詞作曲、一般発売、ブーム、振付文脈を確認。"
+    },
+    {
+      "term": "APT",
+      "content_note": "BLACKPINKのROSÉとBruno Marsが2024年に発表したポップ曲。韓国の飲み会ゲーム「アパート」をもとにした掛け声感のある曲で、盆踊りでは海外ヒット曲を取り入れた明るいダンス曲枠です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/APT._%28song%29",
+        "https://www.vogue.com/article/rose-bruno-mars-single-apt"
+      ],
+      "research_memo": "英語版曲ページとVogue記事で2024年リリース、ROSÉとBruno Marsのコラボ、韓国の飲み会ゲーム由来を確認。"
+    },
+    {
+      "term": "オバQ音頭",
+      "content_note": "アニメ『オバケのQ太郎』第1作の後期主題歌として1966年に発売された音頭。石川進・曽我町子が歌い、アニメソング音頭の先駆けとして大ヒットしました。子どもも参加しやすい盆踊り曲です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E3%82%AA%E3%83%90Q%E9%9F%B3%E9%A0%AD"
+      ],
+      "research_memo": "曲ページで1966年発売、アニメ主題歌、音頭・アニメソングとしての位置づけを確認。"
+    },
+    {
+      "term": "江州音頭",
+      "content_note": "滋賀県を中心に近畿各地の盆踊りで使われる音頭。近江国の別称「江州」を名に持ち、祭文語りや念仏踊りの流れをくむ口説き調の芸能として発展しました。語りと踊りが結びつく曲目です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E6%B1%9F%E5%B7%9E%E9%9F%B3%E9%A0%AD"
+      ],
+      "research_memo": "江州音頭ページで滋賀・近畿の盆踊り利用、祭文音頭からの発展、口説き芸能としての性格を確認。"
+    },
+    {
+      "term": "郡上節かわさき",
+      "content_note": "岐阜県郡上市八幡町の郡上おどりを代表する郡上節の曲目。古くから録音され、保存会の音盤や正調郡上おどりの収録曲にも入る中心的な演目です。徹夜踊りの本場感を伝える曲です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E9%83%A1%E4%B8%8A%E3%81%8A%E3%81%A9%E3%82%8A"
+      ],
+      "research_memo": "郡上おどりページで郡上節、かわさきの録音・収録実績、郡上おどりの伝統的盆踊り文脈を確認。"
+    },
+    {
+      "term": "春駒",
+      "content_note": "郡上おどりの曲目として親しまれる郡上節のひとつ。正調郡上おどりの音盤にも収録され、かわさきなどと並んで本場の踊りを構成する曲です。軽快な節で徹夜踊りの流れを作ります。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E9%83%A1%E4%B8%8A%E3%81%8A%E3%81%A9%E3%82%8A"
+      ],
+      "research_memo": "郡上おどりページで春駒が正調郡上おどりの収録曲・郡上節曲目として扱われることを確認。"
+    },
+    {
+      "term": "にんげんっていいな",
+      "content_note": "テレビアニメ『まんが日本昔ばなし』のエンディングテーマとして広く知られる曲。山口あかり作詞、小林亜星作曲、久石譲編曲で、子どもにも親しみやすい明るさがあり、盆踊りではファミリー向け曲として使われます。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E3%81%BE%E3%82%93%E3%81%8C%E6%97%A5%E6%9C%AC%E6%98%94%E3%81%B0%E3%81%AA%E3%81%97"
+      ],
+      "research_memo": "まんが日本昔ばなしページでエンディングテーマ、作詞作曲編曲、歌唱者を確認。"
+    },
+    {
+      "term": "デカンショ節",
+      "content_note": "兵庫県丹波篠山市を中心に歌われる盆踊り民謡。篠山節とも呼ばれ、学生歌としても全国に広まりました。丹波篠山の風物を歌い継ぐ曲で、日本遺産の物語にも位置づけられています。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E3%83%87%E3%82%AB%E3%83%B3%E3%82%B7%E3%83%A7%E7%AF%80"
+      ],
+      "research_memo": "デカンショ節ページで丹波篠山市の盆踊り民謡、日本遺産、学生歌としての広がりを確認。"
+    },
+    {
+      "term": "白浜音頭",
+      "content_note": "千葉県南房総市白浜地区にゆかりのあるご当地音頭。白浜音頭発祥の地公園や全国大会の記録があり、房総の海辺の地域色を持つ曲として盆踊りで使われます。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E7%99%BD%E6%B5%9C%E7%94%BA_%28%E5%8D%83%E8%91%89%E7%9C%8C%29",
+        "https://ja.wikipedia.org/wiki/%E5%8D%97%E6%88%BF%E7%B7%8F%E5%B8%82",
+        "https://ja.wikipedia.org/wiki/%E7%9B%86%E8%B8%8A%E3%82%8A"
+      ],
+      "research_memo": "白浜町・南房総市ページで発祥の地公園や全国大会、盆踊りページで千葉県の曲目例として確認。"
+    },
+    {
+      "term": "ズンパ音頭",
+      "content_note": "盆踊り曲目例に見られる、軽い掛け声感のある音頭曲。固有の制作経緯は確認中ですが、定番民謡とは別に、会場を明るく動かす歌謡音頭・企画音頭枠として扱います。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E7%9B%86%E8%B8%8A%E3%82%8A"
+      ],
+      "research_memo": "盆踊りページの曲目例で確認。制作由来は弱いため、由来断定は避けて公開文を利用文脈中心にした。"
+    }
+  ]
+}

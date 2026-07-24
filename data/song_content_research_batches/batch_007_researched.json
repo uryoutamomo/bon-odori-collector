@@ -1,0 +1,76 @@
+{
+  "generated_by": "おと（Codex）",
+  "source_queue": "data/song_content_research_batches/batch_007_queue.json",
+  "rows": [
+    {
+      "term": "ソーラン節",
+      "content_note": "北海道の漁労歌に由来する民謡。ニシン漁の作業歌として知られ、力強い掛け声と動きのある節回しが特徴です。盆踊りでは威勢のよい民謡曲として会場に勢いを出します。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E3%82%BD%E3%83%BC%E3%83%A9%E3%83%B3%E7%AF%80",
+        "https://www.youtube.com/watch?v=_eFfyMqLFOA"
+      ],
+      "research_memo": "表記違いの「そうらん節」と同内容。ソーラン節ページで北海道の民謡、漁労歌としての背景を確認。YouTube根拠で盆踊り利用を確認。"
+    },
+    {
+      "term": "恋するフォーチュンクッキー",
+      "content_note": "AKB48が2013年に発売したダンス系J-POP。パパイヤ鈴木の振付と親しみやすいディスコ調で広く踊られました。盆踊りでは参加者が振りを合わせやすい現代アイドル曲枠です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E6%81%8B%E3%81%99%E3%82%8B%E3%83%95%E3%82%A9%E3%83%BC%E3%83%81%E3%83%A5%E3%83%B3%E3%82%AF%E3%83%83%E3%82%AD%E3%83%BC",
+        "https://www.youtube.com/watch?v=LRQhnOL4BxA"
+      ],
+      "research_memo": "曲ページでAKB48の2013年シングル、作詞作曲、振付、ディスコ・ダンス/J-POP分類とヒット文脈を確認。YouTube根拠で盆踊り利用を確認。"
+    },
+    {
+      "term": "ラスト・クリスマス",
+      "content_note": "Wham!が1984年に発表した世界的なクリスマスソング。George Michaelが作詞作曲とプロデュースを手がけ、切ない内容と明るいシンセポップ調で長く親しまれています。盆踊りでは冬おどり向けの洋楽枠です。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Last_Christmas",
+        "https://www.youtube.com/watch?v=XclOMvohXwg"
+      ],
+      "research_memo": "英語版曲ページでWham!の1984年曲、George Michael作詞作曲・プロデュース、クリスマスソングとしての定着を確認。YouTube根拠で盆踊り利用を確認。"
+    },
+    {
+      "term": "Jingle Bell Rock",
+      "content_note": "1957年にBobby Helmsが発表したクリスマス定番曲。ロックンロール調の軽いノリで、世界中のクリスマス場面で親しまれています。盆踊りでは冬おどりの明るい洋楽クリスマス曲として使われます。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Jingle_Bell_Rock",
+        "https://www.youtube.com/watch?v=ZRLOD2Ld3wA"
+      ],
+      "research_memo": "英語版曲ページでBobby Helmsの1957年曲、クリスマス・ロックンロール曲としての位置づけを確認。YouTube根拠で盆踊り利用を確認。"
+    },
+    {
+      "term": "東京五輪音頭",
+      "content_note": "1964年東京オリンピックに合わせて作られた音頭。三波春夫らの歌唱で広まり、東京大会の祝祭感を盆踊りの形に乗せた曲です。盆踊りでは昭和の大会記念音頭として親しまれます。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E6%9D%B1%E4%BA%AC%E4%BA%94%E8%BC%AA%E9%9F%B3%E9%A0%AD",
+        "https://www.youtube.com/watch?v=b-4bztmRRgg"
+      ],
+      "research_memo": "曲ページで1964年東京オリンピック向けの音頭、歌唱者、普及文脈を確認。YouTube根拠で盆踊り利用を確認。"
+    },
+    {
+      "term": "佐渡おけさ",
+      "content_note": "新潟県佐渡を代表する民謡。おけさ系の節回しを持ち、佐渡の風土や酒席・踊りの文化と結びついて親しまれてきました。盆踊りでは日本海側の民謡曲として落ち着いた味わいを出します。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E4%BD%90%E6%B8%A1%E3%81%8A%E3%81%91%E3%81%95",
+        "https://www.youtube.com/watch?v=-Vz7fAL5xzY"
+      ],
+      "research_memo": "佐渡おけさページで佐渡を代表する民謡としての位置づけを確認。YouTube根拠で盆踊り利用を確認。"
+    },
+    {
+      "term": "松の木小唄",
+      "content_note": "1960年代に流行した小唄系の歌謡曲。二宮ゆき子版などが知られ、『お座敷小唄』後の小唄ブームの流れで広まりました。盆踊りでは昭和歌謡の軽い手拍子感を持つ曲として使われます。",
+      "content_note_status": "公開可",
+      "source_urls": [
+        "https://ja.wikipedia.org/wiki/%E3%81%8A%E5%BA%A7%E6%95%B7%E5%B0%8F%E5%94%84",
+        "https://www.youtube.com/watch?v=tqFujxnStA4"
+      ],
+      "research_memo": "お座敷小唄ページ内で1965年の便乗小唄として二宮ゆき子・三島敏夫の競作『まつのき小唄』がヒットした文脈を確認。YouTube根拠で盆踊り利用を確認。"
+    }
+  ]
+}
