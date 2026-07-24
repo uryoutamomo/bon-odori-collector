@@ -2,7 +2,7 @@
 
 **Note**: This guard checks for blocking diffs only. Guard status `pass` means no blocking issues remain, but is NOT a deploy approval. Deploy decisions require explicit confirmation from the operator.
 
-- generated_at: 2026-07-24T11:29:26.198499+00:00
+- generated_at: 2026-07-24T11:46:44.637913+00:00
 - scope: read_only_public_sync_guard_no_writes
 - status: block
 - safe_to_wholesale_sync: False
@@ -47,8 +47,8 @@ These warnings mean the public-event publication flow may have skipped a review 
 - schema: public_sync_exact_approvals_v1
 - status: block
 - approval_count: 21
-- status_counts: {'already_synced': 14, 'hash_mismatch': 7}
-- failure_count: 7
+- status_counts: {'already_synced': 17, 'hash_mismatch': 4}
+- failure_count: 4
 
 ## After Reviewed Exact Approvals
 

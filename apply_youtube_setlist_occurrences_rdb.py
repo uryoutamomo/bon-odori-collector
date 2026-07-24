@@ -190,9 +190,21 @@ def song_title_passes_shape_check(title):
         return False
     if "/" in title:
         return False
+    # "~"/"〜"-joined titles are the same multi-song jam problem "/" already guards
+    # against, just from a different video-title convention (2026-07-24 spot-check found
+    # e.g. "六本人音頭~花火音頭", "東京音頭~新橋音頭〜ハワイ音頭~炭坑節" reaching
+    # occurrence_songs as single fabricated "song" entries).
+    if "~" in title or "〜" in title:
+        return False
     if "(" in title or "（" in title:
         return False
     if UNBALANCED_CLOSE_BRACKET_RE.search(title) and not OPEN_BRACKET_RE.search(title):
+        return False
+    # The converse of the check above: an opening bracket with no matching closer is
+    # also a leftover fragment from splitting a video title mid-phrase (2026-07-24
+    # spot-check: "日本の芸能:『加賀万歳" -- the 』 that should close 『 stayed in a
+    # different fragment), not a real song name.
+    if OPEN_BRACKET_RE.search(title) and not UNBALANCED_CLOSE_BRACKET_RE.search(title):
         return False
     return bool(re.search(r"[A-Za-z一-龥ぁ-んァ-ヶー]", title))
 

@@ -2883,30 +2883,6 @@ const EVENTS = [
         "confidence": "hint",
         "basis": "current_observed",
         "basis_label": "実測"
-      },
-      {
-        "name": "六本人音頭~花火音頭",
-        "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
-      },
-      {
-        "name": "六本木音頭~炭坑節",
-        "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
-      },
-      {
-        "name": "日本の芸能:『加賀万歳",
-        "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
-      },
-      {
-        "name": "東京音頭~炭坑節",
-        "confidence": "hint",
-        "basis": "current_observed",
-        "basis_label": "実測"
       }
     ],
     "public_status": "expected_low",
@@ -3299,21 +3275,7 @@ const EVENTS = [
         "basis_label": "2025年ヒント"
       },
       {
-        "name": "ふるさと音頭~東京音頭~新橋音頭",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
-      },
-      {
         "name": "チャンチキおけさ",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
-      },
-      {
-        "name": "チャンチキおけさ~好きになった人",
         "confidence": "hint",
         "probability": 80,
         "basis": "past_evidence",
@@ -3370,20 +3332,6 @@ const EVENTS = [
       },
       {
         "name": "東京音頭",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
-      },
-      {
-        "name": "東京音頭~新橋音頭〜ハワイ音頭~炭坑節",
-        "confidence": "hint",
-        "probability": 80,
-        "basis": "past_evidence",
-        "basis_label": "2025年ヒント"
-      },
-      {
-        "name": "火の国太鼓~チャンチキおけさ〜八木節",
         "confidence": "hint",
         "probability": 80,
         "basis": "past_evidence",
@@ -8373,13 +8321,6 @@ const EVENTS = [
         "basis_label": "実測"
       },
       {
-        "name": "祭り華〜神田明神",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
-      },
-      {
         "name": "締め太鼓",
         "confidence": "confirmed",
         "probability": 95,
@@ -8716,13 +8657,6 @@ const EVENTS = [
       },
       {
         "name": "祭りだ!和っしょい",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
-      },
-      {
-        "name": "祭り華〜神田明神",
         "confidence": "confirmed",
         "probability": 95,
         "basis": "current_observed",
@@ -21644,37 +21578,37 @@ const EVENTS = [
     ],
     "songs": [
       {
-        "name": "JAME盆踊り BOY MEETS GIRL",
+        "name": "BOY MEETS GIRL",
         "confidence": "hint",
         "basis": "current_observed",
         "basis_label": "実測"
       },
       {
-        "name": "JAME盆踊り EZ DO DANCE",
+        "name": "EZ DO DANCE",
         "confidence": "hint",
         "basis": "current_observed",
         "basis_label": "実測"
       },
       {
-        "name": "JAME盆踊り GET WILD",
+        "name": "GET WILD",
         "confidence": "hint",
         "basis": "current_observed",
         "basis_label": "実測"
       },
       {
-        "name": "JAME盆踊り Y.M.C.A.",
+        "name": "Y.M.C.A.",
         "confidence": "hint",
         "basis": "current_observed",
         "basis_label": "実測"
       },
       {
-        "name": "JAME盆踊り survival dAnce",
+        "name": "survival dAnce",
         "confidence": "hint",
         "basis": "current_observed",
         "basis_label": "実測"
       },
       {
-        "name": "JAME盆踊り とっとこハム太郎",
+        "name": "とっとこハム太郎",
         "confidence": "hint",
         "basis": "current_observed",
         "basis_label": "実測"
