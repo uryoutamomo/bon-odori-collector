@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-24T10:12:18.108944+00:00",
+  "generated_at": "2026-07-24T12:03:50.882598+00:00",
   "generated_by": "build_publication_gap_review.py",
   "summary": {
     "accepted_glossary_v2_count": 88,
@@ -17,9 +17,9 @@
     "weekly_updated_songs_missing_public": 4,
     "public_occurrence_songs_not_in_master": 147,
     "song_priors_not_public_ready": 14,
-    "event_publication_blocked_count": 50,
+    "event_publication_blocked_count": 49,
     "event_publication_blocked_by_reason": {
-      "missing_date_start": 49,
+      "missing_date_start": 48,
       "missing_venue_id": 1
     }
   },
@@ -2700,34 +2700,6 @@
       "confidence": "unknown",
       "source_kind": "notion_events",
       "source_url": "https://drive.google.com/file/d/18ZOGXRlC6C-G8Wqu5wa2wGc1ZYeVOCbj/view?usp=drive_link",
-      "public_name_present": true,
-      "reason_codes": [
-        "missing_date_start"
-      ],
-      "recommended_action": "review_and_apply_event_occurrence_to_master_rdb",
-      "priority_label": "P1",
-      "reason": "master RDBに根拠URLはありますが、公開エクスポートに必要な会場または日程が未整備です。レビュー済み根拠として扱うなら、会場行・occurrenceの日程/会場/statusをRDBへ反映してから公開JSONを再生成します。",
-      "source_file": "data/bon_odori_master.sqlite",
-      "public_file": "bon-odori-site/data/events_public.json"
-    },
-    {
-      "gap_id": "event_publication_blocked:occ_99e2dd44bce470e3",
-      "gap_type": "根拠ありイベントが公開整備待ち",
-      "domain": "イベント",
-      "term": "新宿中央公園夏祭り 納涼盆踊り大会",
-      "event_name": "新宿中央公園夏祭り 納涼盆踊り大会",
-      "series_name": "新宿中央公園夏祭り 納涼盆踊り大会",
-      "occurrence_id": "occ_99e2dd44bce470e3",
-      "event_year": 2026,
-      "venue": "新宿中央公園 ファンモアタイム広場",
-      "area": "新宿区",
-      "date_start": "",
-      "date_end": "",
-      "date_status": "unknown",
-      "lifecycle_status": "未確認",
-      "confidence": "unknown",
-      "source_kind": "notion_events",
-      "source_url": "https://tokyofesta.com/23ku/24845/",
       "public_name_present": true,
       "reason_codes": [
         "missing_date_start"

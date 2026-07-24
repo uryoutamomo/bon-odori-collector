@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-07-24T12:01:46.957305+00:00",
+  "generated_by": "apply_reviewed_detail_source_reconciliation_20260724.py",
+  "mode": "apply",
+  "outputs": {
+    "target_db": "data/bon_odori_master.sqlite",
+    "backup_db": "data/backups/bon_odori_master.20260724T120146.957305+0000.sqlite.bak"
+  },
+  "write_guard": {
+    "db_committed": true,
+    "rolled_back": false
+  },
+  "summary": {
+    "planned_count": 2,
+    "applied_count": 2,
+    "skipped_count": 0,
+    "issues_by_severity": {},
+    "before_counts": {
+      "event_investigation_tasks": 79,
+      "event_occurrences": 253,
+      "event_series": 241,
+      "evidence_items": 31183,
+      "external_record_links": 2654,
+      "historical_promotion_candidates": 16,
+      "master_meta": 0,
+      "notion_sync_jobs": 0,
+      "observed_occurrence_songs": 30772,
+      "observed_occurrences": 2164,
+      "occurrence_dates": 296,
+      "occurrence_evidence_links": 100,
+      "occurrence_song_evidence_links": 963,
+      "occurrence_songs": 795,
+      "predicted_occurrence_dates": 14,
+      "review_inbox_items": 0,
+      "schema_migrations": 1,
+      "song_aliases": 141,
+      "songs": 379,
+      "venue_aliases": 290,
+      "venues": 241,
+      "write_batches": 0
+    },
+    "after_counts": {
+      "event_investigation_tasks": 79,
+      "event_occurrences": 253,
+      "event_series": 241,
+      "evidence_items": 31183,
+      "external_record_links": 2654,
+      "historical_promotion_candidates": 16,
+      "master_meta": 0,
+      "notion_sync_jobs": 0,
+      "observed_occurrence_songs": 30772,
+      "observed_occurrences": 2164,
+      "occurrence_dates": 296,
+      "occurrence_evidence_links": 100,
+      "occurrence_song_evidence_links": 963,
+      "occurrence_songs": 795,
+      "predicted_occurrence_dates": 14,
+      "review_inbox_items": 0,
+      "schema_migrations": 1,
+      "song_aliases": 141,
+      "songs": 379,
+      "venue_aliases": 290,
+      "venues": 241,
+      "write_batches": 0
+    }
+  },
+  "applied": [
+    {
+      "occurrence_id": "occ_99e2dd44bce470e3",
+      "expected_event_year": 2026,
+      "new_detail": "2025年は8/23-24。主催：盆踊り＝角筈地区青少年育成委員会／夏まつり＝パークアップ共同体。[p0_review_20260721] 新宿中央公園公式ページで2026年開催日・会場・盆踊り主催者を確認。",
+      "new_source_url": "https://shinjukuchuo-park.jp/events/event/2026/07/03/%E6%96%B0%E5%AE%BF%E4%B8%AD%E5%A4%AE%E5%85%AC%E5%9C%92%E3%80%80%E5%A4%8F%E3%81%BE%E3%81%A4%E3%82%8A%EF%BD%9E%E7%9B%86%E8%B8%8A%E3%82%8A%E3%81%A8%E5%90%8C%E6%99%82%E9%96%8B%E5%82%AC%EF%BD%9E-2/",
+      "reason": "RDBのsource_urlは汎用イベント一覧ページ(/events/)、detailには古い「2026年日程は未発表」が残ったままだった(今日の2026-08-22/23確定適用より前の文言)。siteは2026-07-21レビューで個別イベントページの具体URLへ既に更新済み。siteの方を正としてRDBへ反映する。",
+      "before": {
+        "occurrence_id": "occ_99e2dd44bce470e3",
+        "event_year": 2026,
+        "display_name": "新宿中央公園夏祭り 納涼盆踊り大会",
+        "detail": "2025年は8/23-24。主催：盆踊り＝角筈地区青少年育成委員会／夏まつり＝パークアップ共同体。新宿中央公園公式ページで2026年開催日・会場・盆踊り主催者を確認。",
+        "source_url": "https://shinjukuchuo-park.jp/events/event/2026/07/03/%E6%96%B0%E5%AE%BF%E4%B8%AD%E5%A4%AE%E5%85%AC%E5%9C%92%E3%80%80%E5%A4%8F%E3%81%BE%E3%81%A4%E3%82%8A%EF%BD%9E%E7%9B%86%E8%B8%8A%E3%82%8A%E3%81%A8%E5%90%8C%E6%99%82%E9%96%8B%E5%82%AC%EF%BD%9E-2/"
+      },
+      "after": {
+        "occurrence_id": "occ_99e2dd44bce470e3",
+        "event_year": 2026,
+        "display_name": "新宿中央公園夏祭り 納涼盆踊り大会",
+        "detail": "2025年は8/23-24。主催：盆踊り＝角筈地区青少年育成委員会／夏まつり＝パークアップ共同体。[p0_review_20260721] 新宿中央公園公式ページで2026年開催日・会場・盆踊り主催者を確認。",
+        "source_url": "https://shinjukuchuo-park.jp/events/event/2026/07/03/%E6%96%B0%E5%AE%BF%E4%B8%AD%E5%A4%AE%E5%85%AC%E5%9C%92%E3%80%80%E5%A4%8F%E3%81%BE%E3%81%A4%E3%82%8A%EF%BD%9E%E7%9B%86%E8%B8%8A%E3%82%8A%E3%81%A8%E5%90%8C%E6%99%82%E9%96%8B%E5%82%AC%EF%BD%9E-2/"
+      }
+    },
+    {
+      "occurrence_id": "occ_0240108c92fd793b",
+      "expected_event_year": 2026,
+      "new_detail": "2026年イベント掲載で、2026年7月18日(土)〜20日(月祝)18:00〜21:00、会場: 自由が丘駅前ロータリー 特設会場、主催: 自由が丘商店街振興組合、共催: 自由が丘住区青少年委員会を確認。関連URL: [p0_review_20260721] 公開データは確認済みだが第三者URLだったため、主催者公式の当年根拠を追加する。",
+      "new_source_url": "https://www.jiyugaoka-abc.com/special/bonodori/",
+      "reason": "RDBのsource_urlはtokyofesta.com(第三者まとめサイト)のままだった。siteは2026-07-21レビューで主催者(自由が丘商店街振興組合)公式ページの当年特設ページへ既に更新済み。siteの方を正としてRDBへ反映する。",
+      "before": {
+        "occurrence_id": "occ_0240108c92fd793b",
+        "event_year": 2026,
+        "display_name": "自由が丘納涼盆踊り大会",
+        "detail": "2026年イベント掲載で、2026年7月18日(土)〜20日(月祝)18:00〜21:00、会場: 自由が丘駅前ロータリー 特設会場、主催: 自由が丘商店街振興組合、共催: 自由が丘住区青少年委員会を確認。関連URL: 公開データは確認済みだが第三者URLだったため、主催者公式の当年根拠を追加する。",
+        "source_url": "https://www.jiyugaoka-abc.com/special/bonodori/"
+      },
+      "after": {
+        "occurrence_id": "occ_0240108c92fd793b",
+        "event_year": 2026,
+        "display_name": "自由が丘納涼盆踊り大会",
+        "detail": "2026年イベント掲載で、2026年7月18日(土)〜20日(月祝)18:00〜21:00、会場: 自由が丘駅前ロータリー 特設会場、主催: 自由が丘商店街振興組合、共催: 自由が丘住区青少年委員会を確認。関連URL: [p0_review_20260721] 公開データは確認済みだが第三者URLだったため、主催者公式の当年根拠を追加する。",
+        "source_url": "https://www.jiyugaoka-abc.com/special/bonodori/"
+      }
+    }
+  ],
+  "skipped": [],
+  "issues": []
+}

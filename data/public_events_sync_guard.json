@@ -1,6 +1,6 @@
 {
   "generated_by": "guard_public_events_sync.py",
-  "generated_at": "2026-07-24T11:46:44.637913+00:00",
+  "generated_at": "2026-07-24T12:03:51.018137+00:00",
   "scope": "read_only_public_sync_guard_no_writes",
   "sources": {
     "collector_events": "/Users/ryotauchida/bon-odori-collector/data/public/events_public.json",
@@ -16,41 +16,31 @@
     "allow_individual_review": false
   },
   "decision": {
-    "status": "block",
-    "failures": [
-      "individual_review_diffs_remain",
-      "reviewed_exact_approval_mismatch"
-    ],
-    "warnings": [
-      "master_rdb_newer_than_publication_gap_review"
-    ],
-    "safe_to_wholesale_sync": false,
+    "status": "pass",
+    "failures": [],
+    "warnings": [],
+    "safe_to_wholesale_sync": true,
     "public_deploy_requires_separate_approval": true,
     "deploy_approval_note": "Guard pass only means no blocking public sync diffs remain. Public deploy still requires separate operator approval."
   },
-  "procedure_warnings": [
-    "master_rdb_newer_than_publication_gap_review"
-  ],
+  "procedure_warnings": [],
   "raw_classification": {
     "collector_event_count": 209,
     "site_event_count": 209,
     "collector_only_count": 0,
     "site_only_count": 0,
-    "high_risk_diff_record_count": 40,
-    "high_risk_event_count": 7,
+    "high_risk_diff_record_count": 33,
+    "high_risk_event_count": 3,
     "records_by_family": {
       "historical_slide": 27,
-      "historical_reference": 6,
-      "detail": 4,
-      "source": 3
+      "historical_reference": 6
     },
     "records_by_action": {
-      "individual_review": 16,
+      "individual_review": 9,
       "restore_collector_from_site_or_reenable_export_postprocess": 24
     },
     "events_by_action": {
-      "expired_historical_slide_downgrade": 3,
-      "individual_review": 4
+      "expired_historical_slide_downgrade": 3
     }
   },
   "postprocessed_classification": {
@@ -58,32 +48,28 @@
     "site_event_count": 209,
     "collector_only_count": 0,
     "site_only_count": 0,
-    "high_risk_diff_record_count": 40,
-    "high_risk_event_count": 7,
+    "high_risk_diff_record_count": 33,
+    "high_risk_event_count": 3,
     "records_by_family": {
       "historical_slide": 27,
-      "historical_reference": 6,
-      "detail": 4,
-      "source": 3
+      "historical_reference": 6
     },
     "records_by_action": {
-      "individual_review": 16,
+      "individual_review": 9,
       "restore_collector_from_site_or_reenable_export_postprocess": 24
     },
     "events_by_action": {
-      "expired_historical_slide_downgrade": 3,
-      "individual_review": 4
+      "expired_historical_slide_downgrade": 3
     }
   },
   "reviewed_exact_approvals": {
     "schema": "public_sync_exact_approvals_v1",
-    "status": "block",
-    "approval_count": 21,
+    "status": "pass",
+    "approval_count": 20,
     "status_counts": {
-      "already_synced": 17,
-      "hash_mismatch": 4
+      "already_synced": 20
     },
-    "failure_count": 4,
+    "failure_count": 0,
     "results": [
       {
         "id": "reviewed-update-14f4341a66b1",
@@ -185,9 +171,9 @@
         "id": "reviewed-update-72801cbff56b",
         "kind": "same_key_update",
         "event_key": "神楽坂夏まつり 盆踊り in 神楽坂||りそな銀行神楽坂支店前",
-        "actual_site_sha256": "b5188d3571fe1e855c256514c7c50aff2ee2b004e049b13eb28fed25b37c647f",
+        "actual_site_sha256": "fb4506ac948ca7e5c5415dfaa3b926d86ffa363d434e204004306dbbeae1371b",
         "actual_collector_sha256": "fb4506ac948ca7e5c5415dfaa3b926d86ffa363d434e204004306dbbeae1371b",
-        "status": "hash_mismatch"
+        "status": "already_synced"
       },
       {
         "id": "reviewed-update-3a49318b4a1c",
@@ -218,8 +204,8 @@
         "kind": "same_key_update",
         "event_key": "自由が丘納涼盆踊り大会||自由が丘駅前ロータリー 特設会場",
         "actual_site_sha256": "8ec4d724f11f6686a0b29c977d8920e9e669d7548dc9db1659c82a44e18eb736",
-        "actual_collector_sha256": "85a6d762ec736fa27150e4af2e50d9fe1955162ea896af760b97bc1bc6bfba8d",
-        "status": "hash_mismatch"
+        "actual_collector_sha256": "8ec4d724f11f6686a0b29c977d8920e9e669d7548dc9db1659c82a44e18eb736",
+        "status": "already_synced"
       },
       {
         "id": "reviewed-update-ecf2e0771f2e",
@@ -242,18 +228,9 @@
         "kind": "key_replacement",
         "site_event_key": "第15回 鴨台盆踊り||大正大学",
         "collector_event_key": "第16回 鴨台盆踊り||大正大学",
-        "actual_site_sha256": "6ef57e998bc6cd2d6cc597a4ba85ccf1810730325b6405338a8601ae982be2fd",
+        "actual_site_sha256": "97b3b0c697ae06c3bf9a7b388f6a72fffdb54949610a4f072bb959554d481e0a",
         "actual_collector_sha256": "97b3b0c697ae06c3bf9a7b388f6a72fffdb54949610a4f072bb959554d481e0a",
-        "status": "hash_mismatch"
-      },
-      {
-        "id": "reviewed-replacement-509551ee0266",
-        "kind": "key_replacement",
-        "site_event_key": "新宿中央公園夏祭り 納涼盆踊り大会||新宿中央公園 ファンモアタイム広場",
-        "collector_event_key": "新宿中央公園夏祭り 納涼盆踊り大会||新宿中央公園 ファンモアタイムひろば",
-        "actual_site_sha256": "39826b71f786708c3f8432f63597634ebfe49b7df0a3fb9187bf287896b9460c",
-        "actual_collector_sha256": "86103f7d88aab0cf8d7229f30a12559b06b80a2157e1459238b4dd8f36a0bc53",
-        "status": "hash_mismatch"
+        "status": "already_synced"
       }
     ]
   },
@@ -262,93 +239,19 @@
     "site_event_count": 209,
     "collector_only_count": 0,
     "site_only_count": 0,
-    "high_risk_diff_record_count": 40,
-    "high_risk_event_count": 7,
+    "high_risk_diff_record_count": 33,
+    "high_risk_event_count": 3,
     "records_by_family": {
       "historical_slide": 27,
-      "historical_reference": 6,
-      "detail": 4,
-      "source": 3
+      "historical_reference": 6
     },
     "records_by_action": {
-      "individual_review": 16,
+      "individual_review": 9,
       "restore_collector_from_site_or_reenable_export_postprocess": 24
     },
     "events_by_action": {
-      "expired_historical_slide_downgrade": 3,
-      "individual_review": 4
+      "expired_historical_slide_downgrade": 3
     }
   },
-  "blocking_examples": [
-    {
-      "event_key": "新宿中央公園夏祭り 納涼盆踊り大会||新宿中央公園 ファンモアタイムひろば",
-      "event_name": "新宿中央公園夏祭り 納涼盆踊り大会",
-      "venue": "新宿中央公園 ファンモアタイムひろば",
-      "recommended_action": "individual_review",
-      "families": [
-        "detail",
-        "source"
-      ],
-      "field_count": 2,
-      "fields": [
-        "detail",
-        "source_urls"
-      ],
-      "actions": {
-        "individual_review": 2
-      }
-    },
-    {
-      "event_key": "神楽坂夏まつり 盆踊り in 神楽坂||りそな銀行神楽坂支店前",
-      "event_name": "神楽坂夏まつり 盆踊り in 神楽坂",
-      "venue": "りそな銀行神楽坂支店前",
-      "recommended_action": "individual_review",
-      "families": [
-        "detail"
-      ],
-      "field_count": 1,
-      "fields": [
-        "detail"
-      ],
-      "actions": {
-        "individual_review": 1
-      }
-    },
-    {
-      "event_key": "第16回 鴨台盆踊り||大正大学",
-      "event_name": "第16回 鴨台盆踊り",
-      "venue": "大正大学",
-      "recommended_action": "individual_review",
-      "families": [
-        "detail",
-        "source"
-      ],
-      "field_count": 2,
-      "fields": [
-        "detail",
-        "source_urls"
-      ],
-      "actions": {
-        "individual_review": 2
-      }
-    },
-    {
-      "event_key": "自由が丘納涼盆踊り大会||自由が丘駅前ロータリー 特設会場",
-      "event_name": "自由が丘納涼盆踊り大会",
-      "venue": "自由が丘駅前ロータリー 特設会場",
-      "recommended_action": "individual_review",
-      "families": [
-        "detail",
-        "source"
-      ],
-      "field_count": 2,
-      "fields": [
-        "detail",
-        "source_urls"
-      ],
-      "actions": {
-        "individual_review": 2
-      }
-    }
-  ]
+  "blocking_examples": []
 }

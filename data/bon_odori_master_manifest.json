@@ -17,8 +17,8 @@
     "source": "s3://bon-odori-master-rdb-169805602203/master-rdb/latest/bon_odori_master.sqlite"
   },
   "database": "data/bon_odori_master.sqlite",
-  "database_checksum": "e250396c9e2943ad27b5ce70af81d012c705e4902597fd40eb6419f1bef33005",
-  "database_updated_at": "2026-07-24T11:46:59.954143+00:00",
+  "database_checksum": "2c4ed898a9a654fce520089c815302df0e2a2c445e8cf4c67c3e63a5cd7a415f",
+  "database_updated_at": "2026-07-24T12:01:46.957305+00:00",
   "dry_run": true,
   "generated_at": "2026-06-22T01:21:35.342436+00:00",
   "generated_by": "build_master_rdb.py",

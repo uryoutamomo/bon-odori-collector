@@ -1,0 +1,19 @@
+# Public event detail/source_urls site sync
+
+- generated_at: 2026-07-24T12:02:34.542024+00:00
+- mode: write
+- write_performed: True
+- allowed_event_keys: ['神楽坂夏まつり 盆踊り in 神楽坂␟りそな銀行神楽坂支店前', '第16回 鴨台盆踊り␟大正大学']
+- updated_event_count: 2
+
+## 神楽坂夏まつり 盆踊り in 神楽坂 / りそな銀行神楽坂支店前
+- old detail: '2026年イベント掲載で、開催日時: 2026年7月19日(日)〜20日(月祝)17:30〜20:30、会場: りそな銀行神楽坂支店前を確認。 主催: 神楽坂商店街振興組合。後援: 新宿区。小雨決行。'
+- new detail: '2026年イベント掲載で、開催日時: 2026年7月19日(日)〜20日(月祝)17:30〜20:30、会場: りそな銀行神楽坂支店前を確認。 主催: 神楽坂商店街振興組合。後援: 新宿区。小雨決行。 神楽坂夏まつり 盆踊り in 神楽坂（2026年7月19日〜20日）の現地曲目。写真掲示14曲と、現地補足の『365日の紙飛行機』を実測曲として追加。具体の参加日は未特定のため、開催回全体へ紐付け。'
+- old source_urls: [{'label': '告知HPあり', 'url': 'https://tokyofesta.com/23ku/31347/', 'kind': 'web', 'count': 1}]
+- new source_urls: [{'label': '告知HPあり', 'url': 'https://tokyofesta.com/23ku/31347/', 'kind': 'web', 'count': 1}]
+
+## 第16回 鴨台盆踊り / 大正大学
+- old detail: '[p0_review_20260721] 大正大学公式ページで2026年開催日・会場を確認。既存系列に2026年開催回を新設する。'
+- new detail: '- 対象イベント: 第16回 鴨台盆踊り - 開催日: 2026-07-10〜2026-07-11 - 会場: 大正大学 - 根拠URL: - 判断: 大正大学公式プレスリリースで確認。創立100周年記念で「大正大学音頭」新曲披露予定。'
+- old source_urls: [{'label': '公式告知あり', 'url': 'https://www.tais.ac.jp/region_international/contribution_society/ohdai_bonodori/', 'kind': 'official'}]
+- new source_urls: [{'label': '公式告知あり', 'url': 'https://www.tais.ac.jp/guide/latest_news/20260703/96605/', 'kind': 'official'}]

@@ -146,14 +146,6 @@
       "collector_event_key": "第16回 鴨台盆踊り||大正大学",
       "site_sha256": "7870510db2dc3baca17a3ec4b20215000664f42f63463b4e793560e2127941ec",
       "collector_sha256": "6e3474435cb15172aef26b2893c2d439176c6e16ce018e3acdcb95390b2fff04"
-    },
-    {
-      "id": "reviewed-replacement-509551ee0266",
-      "kind": "key_replacement",
-      "site_event_key": "新宿中央公園夏祭り 納涼盆踊り大会||新宿中央公園 ファンモアタイム広場",
-      "collector_event_key": "新宿中央公園夏祭り 納涼盆踊り大会||新宿中央公園 ファンモアタイムひろば",
-      "site_sha256": "4fa768b936a0dfef01e72516f9f783ab621f2b6de9eb84c1d82fa4ee6e8d0d42",
-      "collector_sha256": "39826b71f786708c3f8432f63597634ebfe49b7df0a3fb9187bf287896b9460c"
     }
   ]
 }
