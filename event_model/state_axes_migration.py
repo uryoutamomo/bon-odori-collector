@@ -9,6 +9,7 @@ from event_model.event_state_axes import (
     canonicalize_legacy_current_event_state,
     validate_event_state_axes,
 )
+from event_model.year_context import normalize_target_year
 
 
 MIGRATION_VERSION = 3
@@ -94,6 +95,7 @@ def _install_validation_triggers(conn):
 
 
 def migrate_event_state_axes(conn, *, events, source_map, target_year=2026):
+    target_year = normalize_target_year(target_year)
     before_columns = table_columns(conn, "event_occurrences")
     for name, declaration in AXIS_COLUMNS.items():
         if name not in before_columns:
@@ -189,6 +191,7 @@ def migrate_event_state_axes(conn, *, events, source_map, target_year=2026):
         "schema": "event_state_axes_migration_v1",
         "migration_version": MIGRATION_VERSION,
         "migration_name": MIGRATION_NAME,
+        "target_year": target_year,
         "columns_added": sorted(set(AXIS_COLUMNS) - before_columns),
         "occurrence_count": len(rows),
         "public_mapped_count": len(mapped),

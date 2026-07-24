@@ -21,12 +21,12 @@ def event_identity(event):
     return "|".join(str(event.get(key) or "") for key in ("name", "venue", "date", "date_end"))
 
 
-def compare_events(events):
+def compare_events(events, *, target_year=2026):
     rows = []
     pairs = Counter()
     for event in events:
         identity = event_identity(event)
-        legacy_axes = axes_from_legacy_public_event(event)
+        legacy_axes = axes_from_legacy_public_event(event, target_year=target_year)
         state = canonicalize_legacy_current_event_state(
             event.get("current_event_state") or legacy_axes["current_event_state"]
         )
@@ -116,10 +116,11 @@ def main(argv=None):
     parser.add_argument("--events", type=Path, default=DEFAULT_EVENTS)
     parser.add_argument("--out-json", type=Path)
     parser.add_argument("--out-md", type=Path)
+    parser.add_argument("--target-year", type=int, default=2026)
     args = parser.parse_args(argv)
 
     events = json.loads(args.events.read_text(encoding="utf-8"))
-    report = compare_events(events)
+    report = compare_events(events, target_year=args.target_year)
     if args.out_json:
         args.out_json.parent.mkdir(parents=True, exist_ok=True)
         args.out_json.write_text(

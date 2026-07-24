@@ -28,6 +28,7 @@ def run(
     confirm=None,
     derive_from_db=False,
     today=None,
+    target_year=2026,
 ):
     db_path = Path(db_path)
     if derive_from_db:
@@ -48,7 +49,7 @@ def run(
     else:
         events = _load(events_path)
         source_map = _load(source_map_path)
-    shadow = compare_events(events)
+    shadow = compare_events(events, target_year=target_year)
     if shadow["status"] != "pass":
         raise ValueError(
             f"legacy/axes shadow comparison failed: {shadow['mismatch_count']} mismatches"
@@ -68,7 +69,7 @@ def run(
             before_counts = table_counts(conn)
             conn.execute("BEGIN IMMEDIATE")
             migration = migrate_event_state_axes(
-                conn, events=events, source_map=source_map
+                conn, events=events, source_map=source_map, target_year=target_year
             )
             integrity = conn.execute("PRAGMA integrity_check").fetchone()[0]
             foreign_keys = conn.execute("PRAGMA foreign_key_check").fetchall()
@@ -115,6 +116,7 @@ def main(argv=None):
     parser.add_argument("--confirm")
     parser.add_argument("--derive-from-db", action="store_true")
     parser.add_argument("--today")
+    parser.add_argument("--target-year", type=int, default=2026)
     parser.add_argument("--report-out", type=Path)
     args = parser.parse_args(argv)
     report = run(
@@ -125,6 +127,7 @@ def main(argv=None):
         confirm=args.confirm,
         derive_from_db=args.derive_from_db,
         today=args.today,
+        target_year=args.target_year,
     )
     if args.report_out:
         args.report_out.parent.mkdir(parents=True, exist_ok=True)
