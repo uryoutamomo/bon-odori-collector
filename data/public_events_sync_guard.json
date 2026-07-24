@@ -1,25 +1,28 @@
 {
   "generated_by": "guard_public_events_sync.py",
-  "generated_at": "2026-07-21T07:08:33.459066+00:00",
+  "generated_at": "2026-07-24T10:12:18.433869+00:00",
   "scope": "read_only_public_sync_guard_no_writes",
   "sources": {
-    "collector_events": "data/public/events_public.json",
+    "collector_events": "/Users/ryotauchida/bon-odori-collector/data/public/events_public.json",
     "site_events": "/Users/ryotauchida/bon-odori-site/data/events_public.json",
-    "fixed_date_rules": "data/public_fixed_date_rules.json",
-    "master_db": "data/bon_odori_master.sqlite",
-    "publication_gap_review": "data/publication_gap_review.json",
-    "reviewed_approvals": "data/public_sync_exact_approvals.json"
+    "fixed_date_rules": "/Users/ryotauchida/bon-odori-collector/data/public_fixed_date_rules.json",
+    "master_db": "/Users/ryotauchida/bon-odori-collector/data/bon_odori_master.sqlite",
+    "publication_gap_review": "/Users/ryotauchida/bon-odori-collector/data/publication_gap_review.json",
+    "reviewed_approvals": "/Users/ryotauchida/bon-odori-collector/data/public_sync_exact_approvals.json"
   },
   "parameters": {
     "target_year": 2026,
-    "today": "2026-07-21",
+    "today": "2026-07-24",
     "allow_individual_review": false
   },
   "decision": {
-    "status": "pass",
-    "failures": [],
+    "status": "block",
+    "failures": [
+      "individual_review_diffs_remain",
+      "reviewed_exact_approval_mismatch"
+    ],
     "warnings": [],
-    "safe_to_wholesale_sync": true,
+    "safe_to_wholesale_sync": false,
     "public_deploy_requires_separate_approval": true,
     "deploy_approval_note": "Guard pass only means no blocking public sync diffs remain. Public deploy still requires separate operator approval."
   },
@@ -27,59 +30,58 @@
   "raw_classification": {
     "collector_event_count": 209,
     "site_event_count": 209,
-    "collector_only_count": 2,
-    "site_only_count": 2,
-    "high_risk_diff_record_count": 81,
-    "high_risk_event_count": 21,
+    "collector_only_count": 0,
+    "site_only_count": 0,
+    "high_risk_diff_record_count": 113,
+    "high_risk_event_count": 24,
     "records_by_family": {
-      "historical_slide": 37,
+      "historical_slide": 64,
       "date_prediction": 38,
-      "historical_reference": 4,
-      "detail": 1,
-      "source": 1
+      "historical_reference": 10,
+      "detail": 1
     },
     "records_by_action": {
-      "individual_review": 27,
+      "individual_review": 35,
       "low_priority_or_unclassified": 38,
-      "restore_collector_from_site_or_reenable_export_postprocess": 16
+      "restore_collector_from_site_or_reenable_export_postprocess": 40
     },
     "events_by_action": {
       "individual_review": 19,
-      "expired_historical_slide_downgrade": 2
+      "expired_historical_slide_downgrade": 5
     }
   },
   "postprocessed_classification": {
     "collector_event_count": 209,
     "site_event_count": 209,
-    "collector_only_count": 2,
-    "site_only_count": 2,
-    "high_risk_diff_record_count": 81,
-    "high_risk_event_count": 21,
+    "collector_only_count": 0,
+    "site_only_count": 0,
+    "high_risk_diff_record_count": 113,
+    "high_risk_event_count": 24,
     "records_by_family": {
-      "historical_slide": 37,
+      "historical_slide": 64,
       "date_prediction": 38,
-      "historical_reference": 4,
-      "detail": 1,
-      "source": 1
+      "historical_reference": 10,
+      "detail": 1
     },
     "records_by_action": {
-      "individual_review": 27,
+      "individual_review": 35,
       "low_priority_or_unclassified": 38,
-      "restore_collector_from_site_or_reenable_export_postprocess": 16
+      "restore_collector_from_site_or_reenable_export_postprocess": 40
     },
     "events_by_action": {
       "individual_review": 19,
-      "expired_historical_slide_downgrade": 2
+      "expired_historical_slide_downgrade": 5
     }
   },
   "reviewed_exact_approvals": {
     "schema": "public_sync_exact_approvals_v1",
-    "status": "pass",
+    "status": "block",
     "approval_count": 21,
     "status_counts": {
-      "applied": 21
+      "applied": 13,
+      "hash_mismatch": 8
     },
-    "failure_count": 0,
+    "failure_count": 8,
     "results": [
       {
         "id": "reviewed-update-14f4341a66b1",
@@ -134,8 +136,8 @@
         "kind": "same_key_update",
         "event_key": "大和町八幡神社大盆踊り会||中野大和町八幡神社",
         "actual_site_sha256": "722b2a09bfda6d17bd5dcf51d6b9c9c1bcf97403ef30b05dc5a3a6cb6dd85cd9",
-        "actual_collector_sha256": "b99a8a4c9ccd5659f4a01258db364b00ed1981b424f2f6e4acda2f5f9432ed0c",
-        "status": "applied"
+        "actual_collector_sha256": "b1a6cb1cf7ae31586ec223d6b01498ebf27f6bce88f889fe1d6453b7a9a265c3",
+        "status": "hash_mismatch"
       },
       {
         "id": "reviewed-update-cf454e6e13d3",
@@ -182,24 +184,24 @@
         "kind": "same_key_update",
         "event_key": "神楽坂夏まつり 盆踊り in 神楽坂||りそな銀行神楽坂支店前",
         "actual_site_sha256": "43964f9510278f5eecd54e85e268e6826ff5c557310aee1b49c802b6bb31bf02",
-        "actual_collector_sha256": "eb71997c5911d63018b1654ce26b0df44d5bf8b64a71de60f9c66b48b16c2954",
-        "status": "applied"
+        "actual_collector_sha256": "fb4506ac948ca7e5c5415dfaa3b926d86ffa363d434e204004306dbbeae1371b",
+        "status": "hash_mismatch"
       },
       {
         "id": "reviewed-update-3a49318b4a1c",
         "kind": "same_key_update",
         "event_key": "第26回 四谷納涼踊り大会||四谷ひろばグランド（旧四谷第四小）",
         "actual_site_sha256": "e63f57a1e553aa95691048eec1dddb4aa0fb84df1cd3b41660612167a56aa279",
-        "actual_collector_sha256": "5408ae624efd8089641e7d12a42a8e7d42aa2dc0f96618a3c3359b8a8e92b33c",
-        "status": "applied"
+        "actual_collector_sha256": "ec1c2bfbe984b74a20b1b1ff6fdf3ffea3c48bd7464477b24881aea0574f2217",
+        "status": "hash_mismatch"
       },
       {
         "id": "reviewed-update-38266616512f",
         "kind": "same_key_update",
         "event_key": "第2回 晴海ふ頭公園盆踊り大会||晴海ふ頭公園",
         "actual_site_sha256": "36acb288a6d649ff9e1622fc30df623bfaf671e08e7761a54c556c5aedbf075c",
-        "actual_collector_sha256": "165e2b04dd616f42aa4e9cd9bb896bf20a2d10a1284e9dd170d84822c620a298",
-        "status": "applied"
+        "actual_collector_sha256": "56e8ef7e5a4429bac0bbb908053f7b02d8fcf37522349a96e1d3daeec55c41ea",
+        "status": "hash_mismatch"
       },
       {
         "id": "reviewed-update-6dac6b0b219d",
@@ -214,16 +216,16 @@
         "kind": "same_key_update",
         "event_key": "自由が丘納涼盆踊り大会||自由が丘駅前ロータリー 特設会場",
         "actual_site_sha256": "397e04dcc23ac3a46a565ab9b9582309d8b4f1de193ec8390e4b9b2b50b90360",
-        "actual_collector_sha256": "974780b1e3c34fefb6e009914f5ab56c80786180bd12a32a6c4f89392769a67f",
-        "status": "applied"
+        "actual_collector_sha256": "85a6d762ec736fa27150e4af2e50d9fe1955162ea896af760b97bc1bc6bfba8d",
+        "status": "hash_mismatch"
       },
       {
         "id": "reviewed-update-ecf2e0771f2e",
         "kind": "same_key_update",
         "event_key": "郡上おどり in 青山||秩父宮ラグビー場駐車場",
         "actual_site_sha256": "cc263ef876bb13af14d9df5399f9ab4bd171fba02e155f12ae77c808d647c6ff",
-        "actual_collector_sha256": "1faecd4cbda1565b7181c6ca3fe3efb794409ae34acd7b6dec74b7e4c09132f7",
-        "status": "applied"
+        "actual_collector_sha256": "960176ad76e0012f8e712f674a03f798bdc54f16858af3553a9190483ff2c63b",
+        "status": "hash_mismatch"
       },
       {
         "id": "reviewed-update-2e2ec5a1924a",
@@ -238,18 +240,14 @@
         "kind": "key_replacement",
         "site_event_key": "第15回 鴨台盆踊り||大正大学",
         "collector_event_key": "第16回 鴨台盆踊り||大正大学",
-        "actual_site_sha256": "7870510db2dc3baca17a3ec4b20215000664f42f63463b4e793560e2127941ec",
-        "actual_collector_sha256": "6e3474435cb15172aef26b2893c2d439176c6e16ce018e3acdcb95390b2fff04",
-        "status": "applied"
+        "status": "hash_mismatch"
       },
       {
         "id": "reviewed-replacement-509551ee0266",
         "kind": "key_replacement",
         "site_event_key": "新宿中央公園夏祭り 納涼盆踊り大会||新宿中央公園 ファンモアタイム広場",
         "collector_event_key": "新宿中央公園夏祭り 納涼盆踊り大会||新宿中央公園 ファンモアタイムひろば",
-        "actual_site_sha256": "4fa768b936a0dfef01e72516f9f783ab621f2b6de9eb84c1d82fa4ee6e8d0d42",
-        "actual_collector_sha256": "39826b71f786708c3f8432f63597634ebfe49b7df0a3fb9187bf287896b9460c",
-        "status": "applied"
+        "status": "hash_mismatch"
       }
     ]
   },
@@ -258,19 +256,146 @@
     "site_event_count": 209,
     "collector_only_count": 0,
     "site_only_count": 0,
-    "high_risk_diff_record_count": 22,
-    "high_risk_event_count": 2,
+    "high_risk_diff_record_count": 74,
+    "high_risk_event_count": 11,
     "records_by_family": {
-      "historical_slide": 18,
-      "historical_reference": 4
+      "historical_slide": 51,
+      "historical_reference": 10,
+      "date_prediction": 12,
+      "detail": 1
     },
     "records_by_action": {
-      "individual_review": 6,
-      "restore_collector_from_site_or_reenable_export_postprocess": 16
+      "individual_review": 22,
+      "restore_collector_from_site_or_reenable_export_postprocess": 40,
+      "low_priority_or_unclassified": 12
     },
     "events_by_action": {
-      "expired_historical_slide_downgrade": 2
+      "expired_historical_slide_downgrade": 5,
+      "individual_review": 6
     }
   },
-  "blocking_examples": []
+  "blocking_examples": [
+    {
+      "event_key": "大和町八幡神社大盆踊り会||中野大和町八幡神社",
+      "event_name": "大和町八幡神社大盆踊り会",
+      "venue": "中野大和町八幡神社",
+      "recommended_action": "individual_review",
+      "families": [
+        "date_prediction",
+        "historical_slide"
+      ],
+      "field_count": 3,
+      "fields": [
+        "display_tier",
+        "recurrence_reasons",
+        "recurrence_score"
+      ],
+      "actions": {
+        "individual_review": 1,
+        "low_priority_or_unclassified": 2
+      }
+    },
+    {
+      "event_key": "神楽坂夏まつり 盆踊り in 神楽坂||りそな銀行神楽坂支店前",
+      "event_name": "神楽坂夏まつり 盆踊り in 神楽坂",
+      "venue": "りそな銀行神楽坂支店前",
+      "recommended_action": "individual_review",
+      "families": [
+        "date_prediction",
+        "detail",
+        "historical_slide"
+      ],
+      "field_count": 4,
+      "fields": [
+        "detail",
+        "display_tier",
+        "recurrence_reasons",
+        "recurrence_score"
+      ],
+      "actions": {
+        "individual_review": 2,
+        "low_priority_or_unclassified": 2
+      }
+    },
+    {
+      "event_key": "第26回 四谷納涼踊り大会||四谷ひろばグランド（旧四谷第四小）",
+      "event_name": "第26回 四谷納涼踊り大会",
+      "venue": "四谷ひろばグランド（旧四谷第四小）",
+      "recommended_action": "individual_review",
+      "families": [
+        "date_prediction",
+        "historical_slide"
+      ],
+      "field_count": 3,
+      "fields": [
+        "display_tier",
+        "recurrence_reasons",
+        "recurrence_score"
+      ],
+      "actions": {
+        "individual_review": 1,
+        "low_priority_or_unclassified": 2
+      }
+    },
+    {
+      "event_key": "第2回 晴海ふ頭公園盆踊り大会||晴海ふ頭公園",
+      "event_name": "第2回 晴海ふ頭公園盆踊り大会",
+      "venue": "晴海ふ頭公園",
+      "recommended_action": "individual_review",
+      "families": [
+        "date_prediction",
+        "historical_slide"
+      ],
+      "field_count": 3,
+      "fields": [
+        "display_tier",
+        "recurrence_reasons",
+        "recurrence_score"
+      ],
+      "actions": {
+        "individual_review": 1,
+        "low_priority_or_unclassified": 2
+      }
+    },
+    {
+      "event_key": "自由が丘納涼盆踊り大会||自由が丘駅前ロータリー 特設会場",
+      "event_name": "自由が丘納涼盆踊り大会",
+      "venue": "自由が丘駅前ロータリー 特設会場",
+      "recommended_action": "individual_review",
+      "families": [
+        "date_prediction",
+        "historical_slide"
+      ],
+      "field_count": 3,
+      "fields": [
+        "display_tier",
+        "recurrence_reasons",
+        "recurrence_score"
+      ],
+      "actions": {
+        "individual_review": 1,
+        "low_priority_or_unclassified": 2
+      }
+    },
+    {
+      "event_key": "郡上おどり in 青山||秩父宮ラグビー場駐車場",
+      "event_name": "郡上おどり in 青山",
+      "venue": "秩父宮ラグビー場駐車場",
+      "recommended_action": "individual_review",
+      "families": [
+        "date_prediction",
+        "historical_slide"
+      ],
+      "field_count": 3,
+      "fields": [
+        "display_tier",
+        "recurrence_reasons",
+        "recurrence_score"
+      ],
+      "actions": {
+        "individual_review": 1,
+        "low_priority_or_unclassified": 2
+      }
+    }
+  ]
 }
