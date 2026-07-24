@@ -24,7 +24,7 @@ SETLIST_ITEM_RE = re.compile(
     r"(?:^|\n|\s)([0-9０-９]{1,2})\s*([^\n\r]+?)\s+"
     r"(https?://(?:youtu\.be|www\.youtube\.com)[^\s、。，)）]+)"
 )
-EVENT_LINE_STOP_RE = re.compile(r"^[0-9０-９]{1,2}\s*")
+EVENT_LINE_STOP_RE = re.compile(r"^[0-9０-９]{1,2}\s*\S.*https?://")
 PARENS_RE = re.compile(r"[「」『』【】\[\]（）()]")
 SPACE_RE = re.compile(r"\s+")
 COMPACT_DATE_RE = re.compile(r"(20\d{2})(\d{2})(\d{2})")
@@ -64,7 +64,8 @@ KNOWN_TITLE_EVENT_PATTERNS = (
     r"千住・人情芸術祭",
 )
 TRAILING_NOISE_HEADING_RE = re.compile(
-    r"^\s*(?:▽?\s*)?(?:Related Videos?\b|関連動画\b|backgrou?d music\b|BGM\b|Opening Music\b|Ending Music\b|【(?:AI songs|4K [^】]+)】)",
+    r"^\s*(?:▽?\s*)?(?:Related Videos?\b|関連動画\b|backgrou?d music\b|BGM\b|Opening Music\b|Ending Music\b"
+    r"|【(?:AI songs|4K [^】]+)】|その他おすすめ動画|おすすめ動画)",
     re.I,
 )
 
