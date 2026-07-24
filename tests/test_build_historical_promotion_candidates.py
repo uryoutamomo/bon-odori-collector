@@ -31,11 +31,36 @@ class BuildHistoricalPromotionCandidatesTest(unittest.TestCase):
             }
         }
 
-        rows = builder.predicted_dates_for_candidate(item, occurrence_lookup)
+        rows = builder.predicted_dates_for_candidate(
+            item, occurrence_lookup, target_year=2026
+        )
 
         self.assertEqual(len(rows), 1)
         self.assertEqual(rows[0]["target_occurrence_id"], "occurrence_2026")
         self.assertEqual(rows[0]["application_status"], "superseded_by_curated")
+
+    def test_prediction_target_and_status_are_year_neutral(self):
+        item = {
+            "candidate_id": "candidate_1",
+            "target_series_id": "series_1",
+            "target_event_name": "例祭",
+            "auto_promote_eligible": True,
+            "prediction_summaries": [{
+                "rule_type": "weekday_nth",
+                "predicted_date_start": "2027-08-18",
+                "predicted_date_end": "2027-08-18",
+            }],
+        }
+
+        rows = builder.predicted_dates_for_candidate(
+            item, {}, target_year=2027
+        )
+
+        self.assertEqual(rows[0]["predicted_year"], 2027)
+        self.assertEqual(
+            rows[0]["application_status"], "candidate_for_target_occurrence"
+        )
+        self.assertNotIn("2026", rows[0]["application_status"])
 
     def test_manual_predictions_survive_derived_table_rebuild(self):
         conn = sqlite3.connect(":memory:")

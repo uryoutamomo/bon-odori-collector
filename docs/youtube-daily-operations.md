@@ -53,6 +53,7 @@ First inspect the selected row without using YouTube API quota:
 
 ```bash
 python3 run_daily_youtube_backfill.py \
+  --target-year 2026 \
   --month 6 \
   --auto-next-month \
   --focus-month 6 \
@@ -70,6 +71,7 @@ If the dry-run looks correct, run one real batch:
 
 ```bash
 python3 run_daily_youtube_backfill.py \
+  --target-year 2026 \
   --month 6 \
   --auto-next-month \
   --focus-month 6 \

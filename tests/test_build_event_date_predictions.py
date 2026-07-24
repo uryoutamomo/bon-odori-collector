@@ -108,6 +108,18 @@ class BuildEventDatePredictionsTest(unittest.TestCase):
         self.assertEqual(pred["predicted_date_start"], "2026-08-08")
         self.assertEqual(pred["predicted_weekday_start"], "土")
 
+    def test_builds_the_next_year_without_a_2026_default(self):
+        rows = [
+            observation("s1", "丸の内de盆踊り", "行幸通り", 2025, "2025-07-25"),
+            observation("s1", "丸の内de盆踊り", "行幸通り", 2026, "2026-07-31"),
+        ]
+
+        data = build_predictions(payload(rows), target_year=2027)
+        pred = data["predictions"][0]["prediction"]
+
+        self.assertEqual(data["target_year"], 2027)
+        self.assertEqual(pred["predicted_date_start"], "2027-07-30")
+
 
 if __name__ == "__main__":
     unittest.main()

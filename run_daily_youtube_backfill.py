@@ -10,6 +10,7 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
+from event_model.year_context import normalize_target_year
 from youtube_channels.backfill_youtube_descriptions import load_env_value
 from youtube_backfill import harvest_youtube_year_backfill as harvest_mod
 from master_rdb.freeze_policy import is_group_frozen, load_policy
@@ -268,13 +269,13 @@ def next_rows_for_args(queue, candidates, args, attempted_queue_ids=None):
     return args.month, [], []
 
 
-def regenerate_outputs(month):
+def regenerate_outputs(month, target_year):
     commands = [
         ["python3", "-m", "youtube_backfill.build_event_occurrence_backfill_plan"],
         ["python3", "-m", "youtube_backfill.build_low_confidence_backfill_review"],
         ["python3", "-m", "youtube_backfill.apply_event_occurrence_backfill_plan"],
-        ["python3", "-m", "youtube_backfill.build_event_schedule_rules", "--target-year", "2026"],
-        ["python3", "-m", "youtube_backfill.build_event_date_predictions", "--target-year", "2026"],
+        ["python3", "-m", "youtube_backfill.build_event_schedule_rules", "--target-year", str(target_year)],
+        ["python3", "-m", "youtube_backfill.build_event_date_predictions", "--target-year", str(target_year)],
         ["python3", "build_song_occurrences.py"],
         ["python3", "export_public_events.py"],
         [
@@ -533,6 +534,7 @@ def run_harvest_batches(queue, existing, args, api_key):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--month", type=int, default=7)
+    parser.add_argument("--target-year", type=int, required=True)
     parser.add_argument("--auto-next-month", action="store_true", help="Use the next month with unprocessed rows, starting at --month.")
     parser.add_argument("--focus-month", action="append", type=int, dest="focus_months", help="Limit automatic selection to this month. Repeatable.")
     parser.add_argument("--limit", type=int, default=10)
@@ -548,6 +550,7 @@ def main():
     parser.add_argument("--open-dashboard", action="store_true")
     parser.add_argument("--ignore-migration-freeze", action="store_true")
     args = parser.parse_args()
+    args.target_year = normalize_target_year(args.target_year)
     guard_master_rdb_freeze(args)
 
     queue = load_json(QUEUE, {})
@@ -568,6 +571,7 @@ def main():
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "status": "started",
         "month": args.month,
+        "target_year": args.target_year,
         "selected_rows": 0,
         "remaining_rows_before": 0,
         "remaining_rows_after": 0,
@@ -599,7 +603,7 @@ def main():
     if result["error"]:
         report["error"] = result["error"]
     if report["status"] not in {"no_rows", "dry_run"}:
-        report["regenerated"] = regenerate_outputs(args.month)
+        report["regenerated"] = regenerate_outputs(args.month, args.target_year)
 
     if "candidates_after" not in report:
         current = load_json(CANDIDATES, {})

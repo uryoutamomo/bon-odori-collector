@@ -15,6 +15,8 @@ from contextlib import closing
 from datetime import datetime, timezone
 from pathlib import Path
 
+from event_model.year_context import normalize_target_year
+
 from promotion_candidates.build_observed_promotion_candidates import (
     all_dates,
     best_curated_match,
@@ -33,7 +35,6 @@ SONG_OCCURRENCES = DATA / "song_occurrences.json"
 EVENT_DATE_PREDICTIONS = DATA / "event_date_predictions.json"
 OUT_JSON = DATA / "historical_promotion_candidates.json"
 OUT_MD = DATA / "historical_promotion_candidates.md"
-TARGET_YEAR = 2026
 MIN_AUTO_MATCH_SCORE = 3
 
 PREDICTED_DATE_COLUMNS = (
@@ -117,7 +118,7 @@ def is_year_only_placeholder(ev, date_value):
     return source == "youtube_year_backfill_review" or "年ズレ" in text or "year backfill" in text
 
 
-def evidence_dates_by_year(occurrence):
+def evidence_dates_by_year(occurrence, *, target_year):
     exact_dates = defaultdict(set)
     year_only = defaultdict(int)
     evidence_urls = set()
@@ -129,7 +130,7 @@ def evidence_dates_by_year(occurrence):
             song_titles.add(song["song_name"])
         for ev in song.get("evidence") or []:
             year = evidence_year(ev)
-            if not year or year >= TARGET_YEAR:
+            if not year or year >= target_year:
                 continue
             evidence_counts[year] += 1
             if ev.get("url"):
@@ -203,12 +204,14 @@ def merge_item(grouped, match):
     )
 
 
-def add_song_occurrence_candidates(grouped, skipped, db_path, song_occurrences_path, curated_events):
+def add_song_occurrence_candidates(
+    grouped, skipped, db_path, song_occurrences_path, curated_events, *, target_year
+):
     song_by_id = occurrence_by_id(song_occurrences_path)
 
     for row in observed_rows(db_path):
         source = song_by_id.get(row["source_occurrence_id"]) or {}
-        evidence = evidence_dates_by_year(source)
+        evidence = evidence_dates_by_year(source, target_year=target_year)
         if not evidence["years"]:
             skipped["song_occurrences_no_historical_evidence"] += 1
             continue
@@ -249,11 +252,17 @@ def prediction_rows(path):
     return data.get("predictions") or []
 
 
-def add_event_date_prediction_candidates(grouped, skipped, path, curated_events):
+def add_event_date_prediction_candidates(
+    grouped, skipped, path, curated_events, *, target_year
+):
     for row in prediction_rows(path):
         prediction = row.get("prediction") or {}
         evidence_rows = prediction.get("evidence_rows") or []
-        years = {item.get("year") for item in evidence_rows if isinstance(item.get("year"), int) and item.get("year") < TARGET_YEAR}
+        years = {
+            item.get("year")
+            for item in evidence_rows
+            if isinstance(item.get("year"), int) and item.get("year") < target_year
+        }
         if len(years) < 2:
             skipped["event_date_predictions_less_than_two_years"] += 1
             continue
@@ -267,7 +276,7 @@ def add_event_date_prediction_candidates(grouped, skipped, path, curated_events)
         item["historical_years"].update(years)
         for ev in evidence_rows:
             year = ev.get("year")
-            if not isinstance(year, int) or year >= TARGET_YEAR:
+            if not isinstance(year, int) or year >= target_year:
                 continue
             for key in ("date_start", "date_end"):
                 value = ev.get(key)
@@ -302,12 +311,28 @@ def add_event_date_prediction_candidates(grouped, skipped, path, curated_events)
         )
 
 
-def build_candidates(db_path, song_occurrences_path, event_date_predictions_path):
+def build_candidates(
+    db_path, song_occurrences_path, event_date_predictions_path, *, target_year
+):
+    target_year = normalize_target_year(target_year)
     curated_events = load_curated_events(db_path)
     grouped = {}
     skipped = Counter()
-    add_song_occurrence_candidates(grouped, skipped, db_path, song_occurrences_path, curated_events)
-    add_event_date_prediction_candidates(grouped, skipped, event_date_predictions_path, curated_events)
+    add_song_occurrence_candidates(
+        grouped,
+        skipped,
+        db_path,
+        song_occurrences_path,
+        curated_events,
+        target_year=target_year,
+    )
+    add_event_date_prediction_candidates(
+        grouped,
+        skipped,
+        event_date_predictions_path,
+        curated_events,
+        target_year=target_year,
+    )
 
     candidates = []
     for item in grouped.values():
@@ -323,9 +348,14 @@ def build_candidates(db_path, song_occurrences_path, event_date_predictions_path
         urls = sorted(item.pop("evidence_urls_sample"))
         songs = sorted(item.pop("song_titles_sample"))
         high_match = item["match_score"] >= MIN_AUTO_MATCH_SCORE
-        has_recent = 2025 in years or "event_date_predictions" in source_types
+        previous_year = target_year - 1
+        has_recent = previous_year in years or "event_date_predictions" in source_types
         auto_eligible = bool(high_match and has_recent)
-        confidence = "high" if auto_eligible and 2025 in years else "medium" if auto_eligible else "low"
+        confidence = (
+            "high"
+            if auto_eligible and previous_year in years
+            else "medium" if auto_eligible else "low"
+        )
         item.update(
             {
                 "source_types": source_types,
@@ -346,7 +376,7 @@ def build_candidates(db_path, song_occurrences_path, event_date_predictions_path
                     else "manual_review_multi_year_history"
                 ),
                 "notes": (
-                    "Promote as historical evidence only; do not copy historical dates to 2026."
+                    f"Promote as historical evidence only; do not copy historical dates to {target_year}."
                     if auto_eligible
                     else "Multiple historical years found, but match confidence is below automatic threshold."
                 ),
@@ -375,7 +405,7 @@ def prediction_basis_type(rule_type):
 
 def application_status_for_prediction(target_occurrence, prediction):
     if not target_occurrence:
-        return "candidate_for_2026_occurrence"
+        return "candidate_for_target_occurrence"
     occurrence_date = target_occurrence.get("date_start") or ""
     occurrence_end = target_occurrence.get("date_end") or ""
     predicted_start = prediction.get("date_start") or ""
@@ -384,18 +414,19 @@ def application_status_for_prediction(target_occurrence, prediction):
         return "matches_curated"
     if occurrence_date:
         return "superseded_by_curated"
-    return "candidate_for_existing_2026_occurrence"
+    return "candidate_for_existing_target_occurrence"
 
 
-def predicted_dates_for_candidate(item, occurrence_lookup=None):
+def predicted_dates_for_candidate(item, occurrence_lookup=None, *, target_year):
+    target_year = normalize_target_year(target_year)
     occurrence_lookup = occurrence_lookup or {}
-    target_occurrence = occurrence_lookup.get((item["target_series_id"], TARGET_YEAR))
+    target_occurrence = occurrence_lookup.get((item["target_series_id"], target_year))
     if not item.get("auto_promote_eligible") and not target_occurrence:
         return []
     rows = []
     for prediction in item.get("prediction_summaries") or []:
         date_start = prediction.get("predicted_date_start") or ""
-        if not date_start.startswith(f"{TARGET_YEAR}-"):
+        if not date_start.startswith(f"{target_year}-"):
             continue
         rule_type = prediction.get("rule_type") or ""
         basis_type, basis_label = prediction_basis_type(rule_type)
@@ -406,7 +437,7 @@ def predicted_dates_for_candidate(item, occurrence_lookup=None):
                 "target_series_id": item["target_series_id"],
                 "target_occurrence_id": (target_occurrence or {}).get("occurrence_id"),
                 "target_event_name": item["target_event_name"],
-                "predicted_year": TARGET_YEAR,
+                "predicted_year": target_year,
                 "date_start": date_start,
                 "date_end": prediction.get("predicted_date_end") or "",
                 "date_status": "predicted",
@@ -501,7 +532,8 @@ def clear_predicted_date_sync_jobs(conn):
     )
 
 
-def write_candidates_to_master(db_path, candidates):
+def write_candidates_to_master(db_path, candidates, *, target_year):
+    target_year = normalize_target_year(target_year)
     now = datetime.now(timezone.utc).isoformat()
     occurrence_lookup = occurrence_by_series_year(db_path)
     with closing(sqlite3.connect(db_path)) as conn:
@@ -544,7 +576,9 @@ def write_candidates_to_master(db_path, candidates):
                     now,
                 ),
             )
-            predictions = predicted_dates_for_candidate(item, occurrence_lookup)
+            predictions = predicted_dates_for_candidate(
+                item, occurrence_lookup, target_year=target_year
+            )
             for prediction in predictions:
                 conn.execute(
                     """
@@ -630,7 +664,7 @@ def render_markdown(data):
     lines.extend(
         [
             "",
-            "## 2026 predicted dates",
+            f"## {data['target_year']} predicted dates",
             "",
             "| target | predicted date | basis type | rule | basis | confidence | status |",
             "| --- | --- | --- | --- | --- | --- | --- |",
@@ -656,6 +690,7 @@ def main():
     parser.add_argument("--out-json", default=str(OUT_JSON))
     parser.add_argument("--out-md", default=str(OUT_MD))
     parser.add_argument("--manifest", default=str(MASTER_MANIFEST))
+    parser.add_argument("--target-year", type=int, required=True)
     parser.add_argument("--confirm", default="")
     args = parser.parse_args()
     try:
@@ -672,16 +707,24 @@ def main():
         Path(args.db),
         Path(args.song_occurrences),
         Path(args.event_date_predictions),
+        target_year=args.target_year,
     )
-    write_candidates_to_master(Path(args.db), candidates)
+    write_candidates_to_master(
+        Path(args.db), candidates, target_year=args.target_year
+    )
     predicted_dates = [
         prediction
         for candidate in candidates
-            for prediction in predicted_dates_for_candidate(candidate, occurrence_by_series_year(Path(args.db)))
+            for prediction in predicted_dates_for_candidate(
+                candidate,
+                occurrence_by_series_year(Path(args.db)),
+                target_year=args.target_year,
+            )
     ]
     data = {
         "generated_by": "build_historical_promotion_candidates.py",
         "generated_at": datetime.now(timezone.utc).isoformat(),
+        "target_year": args.target_year,
         "sources": {
             "db": args.db,
             "song_occurrences": args.song_occurrences,
