@@ -50,43 +50,29 @@ const EVENTS = [
         "name": "おこさ節",
         "confidence": "confirmed",
         "probability": 99,
-        "basis": "current_announced",
-        "basis_label": "今年告知"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "らんまん踊り",
         "confidence": "confirmed",
         "probability": 99,
-        "basis": "current_announced",
-        "basis_label": "今年告知"
-      },
-      {
-        "name": "ダンシングヒーロー",
-        "confidence": "confirmed",
-        "probability": 99,
-        "basis": "current_announced",
-        "basis_label": "今年告知"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "ドンパン節",
         "confidence": "confirmed",
         "probability": 99,
-        "basis": "current_announced",
-        "basis_label": "今年告知"
-      },
-      {
-        "name": "ニッポンワッショイ",
-        "confidence": "confirmed",
-        "probability": 99,
-        "basis": "current_announced",
-        "basis_label": "今年告知"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "八木節",
         "confidence": "confirmed",
         "probability": 99,
-        "basis": "current_announced",
-        "basis_label": "今年告知"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "千代田踊り",
@@ -99,92 +85,113 @@ const EVENTS = [
         "name": "大東京音頭",
         "confidence": "confirmed",
         "probability": 99,
-        "basis": "current_announced",
-        "basis_label": "今年告知"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "山王音頭",
         "confidence": "confirmed",
         "probability": 99,
-        "basis": "current_announced",
-        "basis_label": "今年告知"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "恋をするなら",
         "confidence": "confirmed",
         "probability": 99,
-        "basis": "current_announced",
-        "basis_label": "今年告知"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "東京おどり",
         "confidence": "confirmed",
         "probability": 99,
-        "basis": "current_announced",
-        "basis_label": "今年告知"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "東京音頭",
         "confidence": "confirmed",
         "probability": 99,
-        "basis": "current_announced",
-        "basis_label": "今年告知"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "水戸黄門おどり",
         "confidence": "confirmed",
         "probability": 99,
-        "basis": "current_announced",
-        "basis_label": "今年告知"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "炭坑節",
         "confidence": "confirmed",
         "probability": 99,
-        "basis": "current_announced",
-        "basis_label": "今年告知"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "白浜音頭",
         "confidence": "confirmed",
         "probability": 99,
-        "basis": "current_announced",
-        "basis_label": "今年告知"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "盆ギリ恋歌",
         "confidence": "confirmed",
         "probability": 99,
-        "basis": "current_announced",
-        "basis_label": "今年告知"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "相馬甚句",
         "confidence": "confirmed",
         "probability": 99,
-        "basis": "current_announced",
-        "basis_label": "今年告知"
-      },
-      {
-        "name": "相馬盆唄",
-        "confidence": "confirmed",
-        "probability": 99,
-        "basis": "current_announced",
-        "basis_label": "今年告知"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "花笠音頭",
         "confidence": "confirmed",
         "probability": 99,
-        "basis": "current_announced",
-        "basis_label": "今年告知"
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "サザン",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ダンシングヒーロー",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ニッポンワッショイ",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "千代田おどり",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "相馬盆唄",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "甚句",
@@ -195,14 +202,12 @@ const EVENTS = [
       },
       {
         "name": "花笠踊り",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント"
       }
     ],
-    "current_event_state": "ended",
-    "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
     "public_category": "ended",
     "public_status_label": "開催終了",
@@ -219,7 +224,9 @@ const EVENTS = [
       "2026-06-13",
       "2026-06-15"
     ],
-    "display_tier": "ended"
+    "display_tier": "ended",
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "神田明神納涼祭り",
@@ -267,8 +274,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
-    "date_certainty_tier": "confirmed",
     "public_status": "upcoming_confirmed",
     "public_category": "upcoming",
     "public_status_label": "今後開催",
@@ -285,7 +290,9 @@ const EVENTS = [
       "2026-08-07",
       "2026-08-09"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "confirmed",
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "神田明神納涼祭り アニソン盆踊り",
@@ -356,8 +363,6 @@ const EVENTS = [
         "basis_label": "今年ヒント"
       }
     ],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -377,6 +382,8 @@ const EVENTS = [
       "2025-08-08"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -638,8 +645,6 @@ const EVENTS = [
         "basis_label": "2025年ヒント"
       }
     ],
-    "current_event_state": "confirmed",
-    "date_certainty_tier": "confirmed",
     "public_status": "upcoming_confirmed",
     "public_category": "upcoming",
     "public_status_label": "今後開催",
@@ -656,7 +661,9 @@ const EVENTS = [
       "2026-07-24",
       "2026-07-24"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "confirmed",
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "みたままつり 納涼民踊のつどい",
@@ -703,8 +710,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "ended",
-    "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
     "public_category": "ended",
     "public_status_label": "開催終了",
@@ -721,7 +726,9 @@ const EVENTS = [
       "2026-07-13",
       "2026-07-16"
     ],
-    "display_tier": "ended"
+    "display_tier": "ended",
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "大銀座盆踊り",
@@ -815,8 +822,6 @@ const EVENTS = [
         "basis_label": "今年ヒント"
       }
     ],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_reference",
     "public_status": "expected_low",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -835,6 +840,8 @@ const EVENTS = [
       "2025-08-02"
     ],
     "display_tier": "historical_reference",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_reference",
     "historical_reference": {
       "display_tier": "historical_reference",
       "last_seen_year": 2025,
@@ -913,8 +920,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -935,6 +940,8 @@ const EVENTS = [
       "2025-08-30"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -1039,8 +1046,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "ended",
-    "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
     "public_category": "ended",
     "public_status_label": "開催終了",
@@ -1057,7 +1062,9 @@ const EVENTS = [
       "2026-07-17",
       "2026-07-18"
     ],
-    "display_tier": "ended"
+    "display_tier": "ended",
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "入船三丁目町会納涼盆踊り",
@@ -1098,8 +1105,6 @@ const EVENTS = [
     "detail": "18:30-21:00。屋台やきそば・かき氷等、飲み物ビール・ラムネ等(さらに地域の飲食店からのメニューを提供)。（令和8年納涼マップ京橋五の部より。2024年の過去実績曲目は引き続き参照可）",
     "source_urls": [],
     "songs": [],
-    "current_event_state": "confirmed",
-    "date_certainty_tier": "confirmed",
     "public_status": "upcoming_confirmed",
     "public_category": "upcoming",
     "public_status_label": "今後開催",
@@ -1116,7 +1121,9 @@ const EVENTS = [
       "2026-08-24",
       "2026-08-25"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "confirmed",
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "小網神社の盆踊り（名称推定）",
@@ -1153,8 +1160,6 @@ const EVENTS = [
     "detail": "名称推定。開催日程は未確認。",
     "source_urls": [],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "season_hint",
     "public_status": "date_unknown",
     "public_category": "date_unknown",
     "public_status_label": "日程未確認",
@@ -1173,6 +1178,8 @@ const EVENTS = [
     "last_seen_year": null,
     "last_seen_dates": [],
     "display_tier": "season_hint",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "season_hint",
     "season_hint": {
       "display_tier": "season_hint",
       "target_year": 2026,
@@ -1236,8 +1243,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "season_hint",
     "public_status": "date_unknown",
     "public_category": "date_unknown",
     "public_status_label": "日程未確認",
@@ -1253,7 +1258,9 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "season_hint"
   },
   {
     "name": "第2回 大盆踊り祭 with 坂崎守寛",
@@ -1297,8 +1304,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "ended",
-    "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
     "public_category": "ended",
     "public_status_label": "開催終了",
@@ -1314,7 +1319,9 @@ const EVENTS = [
     "last_seen_dates": [
       "2026-02-21"
     ],
-    "display_tier": "ended"
+    "display_tier": "ended",
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "明石町会 納涼盆踊り",
@@ -1355,8 +1362,6 @@ const EVENTS = [
     "detail": "18:00-21:00。屋台軽食類、飲み物生ビール・ジュース等、イベント子ども盆踊り大会(お菓子付)。（令和8年納涼マップ京橋五の部より）",
     "source_urls": [],
     "songs": [],
-    "current_event_state": "confirmed",
-    "date_certainty_tier": "confirmed",
     "public_status": "upcoming_confirmed",
     "public_category": "upcoming",
     "public_status_label": "今後開催",
@@ -1373,7 +1378,9 @@ const EVENTS = [
       "2026-08-06",
       "2026-08-07"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "confirmed",
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "イベント名未確認（晴海ふ頭公園）",
@@ -1418,50 +1425,62 @@ const EVENTS = [
     ],
     "songs": [
       {
+        "name": "ジャンボリミッキー",
+        "confidence": "confirmed",
+        "probability": 98,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "これがお江戸の盆ダンス",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
         "name": "きよしのズンドコ節",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント"
       },
       {
         "name": "ダンシングヒーロー",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント"
       },
       {
         "name": "バハマ・ママ",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント"
       },
       {
         "name": "令和音頭",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント"
       },
       {
         "name": "東京音頭",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント"
       },
       {
         "name": "炭坑節",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント"
       }
     ],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_reference",
     "public_status": "expected_low",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -1479,6 +1498,8 @@ const EVENTS = [
       "2025-07-12"
     ],
     "display_tier": "historical_reference",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_reference",
     "historical_reference": {
       "display_tier": "historical_reference",
       "last_seen_year": 2025,
@@ -1556,74 +1577,118 @@ const EVENTS = [
     ],
     "songs": [
       {
-        "name": "Let's ONDO Again（レッツ オンド アゲイン）",
-        "confidence": "confirmed",
-        "basis": "current_observed",
-        "basis_label": "実測"
-      },
-      {
         "name": "きよしのズンドコ節",
         "confidence": "confirmed",
+        "probability": 99,
         "basis": "current_observed",
         "basis_label": "実測"
       },
       {
         "name": "これがお江戸の盆ダンス",
         "confidence": "confirmed",
-        "basis": "current_observed",
-        "basis_label": "実測"
-      },
-      {
-        "name": "ジャンボリミッキー",
-        "confidence": "confirmed",
+        "probability": 99,
         "basis": "current_observed",
         "basis_label": "実測"
       },
       {
         "name": "ダンシングヒーロー",
         "confidence": "confirmed",
-        "basis": "current_observed",
-        "basis_label": "実測"
-      },
-      {
-        "name": "東京五輪音頭",
-        "confidence": "confirmed",
-        "basis": "current_observed",
-        "basis_label": "実測"
-      },
-      {
-        "name": "東京五輪音頭-2020-",
-        "confidence": "confirmed",
+        "probability": 99,
         "basis": "current_observed",
         "basis_label": "実測"
       },
       {
         "name": "東京音頭",
         "confidence": "confirmed",
+        "probability": 99,
         "basis": "current_observed",
         "basis_label": "実測"
       },
       {
         "name": "河内おとこ節",
         "confidence": "confirmed",
+        "probability": 99,
         "basis": "current_observed",
         "basis_label": "実測"
       },
       {
         "name": "炭坑節",
         "confidence": "confirmed",
+        "probability": 99,
         "basis": "current_observed",
         "basis_label": "実測"
       },
       {
         "name": "銀座カンカン娘",
         "confidence": "confirmed",
+        "probability": 99,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "Let's ONDO Again（レッツ オンド アゲイン）",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "Let'sONDOAgain",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "おしりたんてい音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "どんとこいブギ",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ジャンボリミッキー",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ジャンボリーミッキー",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "東京五輪2020",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "東京五輪音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "東京五輪音頭-2020-",
+        "confidence": "confirmed",
+        "probability": 95,
         "basis": "current_observed",
         "basis_label": "実測"
       }
     ],
-    "current_event_state": "ended",
-    "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
     "public_category": "ended",
     "public_status_label": "開催終了",
@@ -1640,7 +1705,9 @@ const EVENTS = [
       "2026-07-11",
       "2026-07-12"
     ],
-    "display_tier": "ended"
+    "display_tier": "ended",
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "中央区大江戸まつり盆おどり大会",
@@ -1697,8 +1764,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
-    "date_certainty_tier": "confirmed",
     "public_status": "upcoming_confirmed",
     "public_category": "upcoming",
     "public_status_label": "今後開催",
@@ -1715,7 +1780,9 @@ const EVENTS = [
       "2026-08-21",
       "2026-08-22"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "confirmed",
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "浜二納涼盆踊り大会",
@@ -1764,8 +1831,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "season_hint",
     "public_status": "date_unknown",
     "public_category": "date_unknown",
     "public_status_label": "日程未確認",
@@ -1784,6 +1849,8 @@ const EVENTS = [
     "last_seen_year": null,
     "last_seen_dates": [],
     "display_tier": "season_hint",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "season_hint",
     "season_hint": {
       "display_tier": "season_hint",
       "target_year": 2026,
@@ -1861,8 +1928,6 @@ const EVENTS = [
         "confidence": "hint"
       }
     ],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -1881,6 +1946,8 @@ const EVENTS = [
       "2025-09-27"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -2076,8 +2143,6 @@ const EVENTS = [
         "basis_label": "今年ヒント"
       }
     ],
-    "current_event_state": "confirmed",
-    "date_certainty_tier": "confirmed",
     "public_status": "upcoming_confirmed",
     "public_category": "upcoming",
     "public_status_label": "今後開催",
@@ -2094,7 +2159,9 @@ const EVENTS = [
       "2026-07-29",
       "2026-08-01"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "confirmed",
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "イベント名未確認（築地社会教育会館）",
@@ -2136,8 +2203,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "season_hint",
     "public_status": "date_unknown",
     "public_category": "date_unknown",
     "public_status_label": "日程未確認",
@@ -2154,7 +2219,9 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "season_hint"
   },
   {
     "name": "鉄砲洲納涼盆踊り",
@@ -2201,8 +2268,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
-    "date_certainty_tier": "confirmed",
     "public_status": "upcoming_confirmed",
     "public_category": "upcoming",
     "public_status_label": "今後開催",
@@ -2219,7 +2284,9 @@ const EVENTS = [
       "2026-08-03",
       "2026-08-05"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "confirmed",
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "大銀座盆踊り（ゆかたで銀ぶら）",
@@ -2263,8 +2330,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
-    "date_certainty_tier": "confirmed",
     "public_status": "upcoming_confirmed",
     "public_category": "upcoming",
     "public_status_label": "今後開催",
@@ -2281,7 +2346,9 @@ const EVENTS = [
       "2026-08-01",
       "2026-08-01"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "confirmed",
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "アークヒルズ秋祭り 盆踊り",
@@ -2325,8 +2392,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "season_hint",
     "public_status": "date_unknown",
     "public_category": "date_unknown",
     "public_status_label": "日程未確認",
@@ -2345,6 +2410,8 @@ const EVENTS = [
     "last_seen_year": null,
     "last_seen_dates": [],
     "display_tier": "season_hint",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "season_hint",
     "season_hint": {
       "display_tier": "season_hint",
       "target_year": 2026,
@@ -2425,8 +2492,6 @@ const EVENTS = [
         "basis_label": "今年ヒント"
       }
     ],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_high",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -2449,6 +2514,8 @@ const EVENTS = [
       "2025-08-22"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -2551,8 +2618,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "season_hint",
     "public_status": "date_unknown",
     "public_category": "date_unknown",
     "public_status_label": "日程未確認",
@@ -2571,6 +2636,8 @@ const EVENTS = [
     "last_seen_year": null,
     "last_seen_dates": [],
     "display_tier": "season_hint",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "season_hint",
     "season_hint": {
       "display_tier": "season_hint",
       "target_year": 2026,
@@ -2648,6 +2715,20 @@ const EVENTS = [
     ],
     "songs": [
       {
+        "name": "夏祭り",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "踊れ・どれ・ドラ ドラえもん音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
         "name": "ドラえもん音頭",
         "confidence": "hint",
         "probability": 80,
@@ -2656,35 +2737,35 @@ const EVENTS = [
       },
       {
         "name": "六本人音頭",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント"
       },
       {
         "name": "六本木音頭",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント"
       },
       {
         "name": "東京音頭",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント"
       },
       {
         "name": "河内おとこ節",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント"
       },
       {
         "name": "炭坑節",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント"
@@ -2697,8 +2778,6 @@ const EVENTS = [
         "basis_label": "今年ヒント"
       }
     ],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_reference",
     "public_status": "expected_low",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -2717,6 +2796,8 @@ const EVENTS = [
       "2025-08-24"
     ],
     "display_tier": "historical_reference",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_reference",
     "historical_reference": {
       "display_tier": "historical_reference",
       "last_seen_year": 2025,
@@ -2803,8 +2884,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "season_hint",
     "public_status": "date_unknown",
     "public_category": "date_unknown",
     "public_status_label": "日程未確認",
@@ -2823,6 +2902,8 @@ const EVENTS = [
     "last_seen_year": null,
     "last_seen_dates": [],
     "display_tier": "season_hint",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "season_hint",
     "season_hint": {
       "display_tier": "season_hint",
       "target_year": 2026,
@@ -2911,8 +2992,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "season_hint",
     "public_status": "date_unknown",
     "public_category": "date_unknown",
     "public_status_label": "日程未確認",
@@ -2931,6 +3010,8 @@ const EVENTS = [
     "last_seen_year": null,
     "last_seen_dates": [],
     "display_tier": "season_hint",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "season_hint",
     "season_hint": {
       "display_tier": "season_hint",
       "target_year": 2026,
@@ -3007,8 +3088,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
-    "date_certainty_tier": "confirmed",
     "public_status": "upcoming_confirmed",
     "public_category": "upcoming",
     "public_status_label": "今後開催",
@@ -3025,7 +3104,9 @@ const EVENTS = [
       "2026-07-24",
       "2026-07-25"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "confirmed",
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "新橋こいち祭",
@@ -3171,8 +3252,6 @@ const EVENTS = [
         "basis_label": "2025年ヒント"
       }
     ],
-    "current_event_state": "confirmed",
-    "date_certainty_tier": "confirmed",
     "public_status": "upcoming_confirmed",
     "public_category": "upcoming",
     "public_status_label": "今後開催",
@@ -3189,7 +3268,9 @@ const EVENTS = [
       "2026-07-23",
       "2026-07-24"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "confirmed",
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "第51回 浄土寺盆踊り大会",
@@ -3237,8 +3318,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
-    "date_certainty_tier": "confirmed",
     "public_status": "upcoming_confirmed",
     "public_category": "upcoming",
     "public_status_label": "今後開催",
@@ -3255,7 +3334,9 @@ const EVENTS = [
       "2026-07-23",
       "2026-07-24"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "confirmed",
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "赤坂浄土寺盆踊り大会",
@@ -3302,9 +3383,92 @@ const EVENTS = [
         "count": 1
       }
     ],
-    "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
+    "songs": [
+      {
+        "name": "盆ギリ恋歌",
+        "confidence": "confirmed",
+        "probability": 98,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "かがやき音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ステテコシャンシャン",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ドダレバチ",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ニッポンワッショイ",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "佐渡おけさ",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "白浜音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "赤坂豊川音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "赤坂音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "郡上節かわさき",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      }
+    ],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -3324,9 +3488,11 @@ const EVENTS = [
       "2025-07-24",
       "2025-07-25"
     ],
-    "display_tier": "historical_slide",
+    "display_tier": "historical_reference",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_reference",
     "historical_reference": {
-      "display_tier": "historical_slide",
+      "display_tier": "historical_reference",
       "last_seen_year": 2025,
       "last_seen_dates": [
         "2025-07-24",
@@ -3347,17 +3513,9 @@ const EVENTS = [
       "cautions": [],
       "edition_number": null,
       "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-07-23",
-        "date_end": "2026-07-24",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第4木曜を2026年へスライド",
-        "source_date": "2025-07-24",
-        "source_date_end": "2025-07-25",
-        "duration_days": 2
-      }
+      "slide": null
     },
-    "historical_display_tier": "historical_slide",
+    "historical_display_tier": "historical_reference",
     "historical_last_seen_year": 2025,
     "historical_last_seen_dates": [
       "2025-07-24",
@@ -3365,24 +3523,7 @@ const EVENTS = [
     ],
     "historical_reference_label": "2025-07-24〜2025-07-25実績・今年未確認",
     "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.59,
-    "historical_slide": {
-      "date": "2026-07-23",
-      "date_end": "2026-07-24",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第4木曜を2026年へスライド",
-      "source_date": "2025-07-24",
-      "source_date_end": "2025-07-25",
-      "duration_days": 2
-    },
-    "historical_slide_date": "2026-07-23",
-    "historical_slide_date_end": "2026-07-24",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第4木曜を2026年へスライド",
-    "predicted_date": "2026-07-23",
-    "predicted_date_end": "2026-07-24",
-    "prediction_basis": "2025年実績の同月第4木曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "historical_reference_score": 0.59
   },
   {
     "name": "盆ダンスフェスティバル2023",
@@ -3426,8 +3567,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "season_hint",
     "public_status": "date_unknown",
     "public_category": "date_unknown",
     "public_status_label": "日程未確認",
@@ -3446,6 +3585,8 @@ const EVENTS = [
     "last_seen_year": null,
     "last_seen_dates": [],
     "display_tier": "season_hint",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "season_hint",
     "season_hint": {
       "display_tier": "season_hint",
       "target_year": 2026,
@@ -3557,47 +3698,45 @@ const EVENTS = [
         "name": "大東京音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "東京五輪音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "東京音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "炭坑節",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "花火音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "花笠音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       }
     ],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_high",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -3620,6 +3759,8 @@ const EVENTS = [
       "2025-09-07"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -3727,57 +3868,69 @@ const EVENTS = [
     ],
     "songs": [
       {
+        "name": "げんげんばらばら",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "猫の子",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
         "name": "かわさき",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "さわぎ",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "やっちく",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "三百",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "古調かわさき",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "春駒",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "甚句",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       }
     ],
-    "current_event_state": "ended",
-    "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
     "public_category": "ended",
     "public_status_label": "開催終了",
@@ -3794,7 +3947,9 @@ const EVENTS = [
       "2026-06-26",
       "2026-06-27"
     ],
-    "display_tier": "ended"
+    "display_tier": "ended",
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "麻布十番納涼盆踊り大会",
@@ -3838,8 +3993,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "season_hint",
     "public_status": "date_unknown",
     "public_category": "date_unknown",
     "public_status_label": "日程未確認",
@@ -3858,6 +4011,8 @@ const EVENTS = [
     "last_seen_year": null,
     "last_seen_dates": [],
     "display_tier": "season_hint",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "season_hint",
     "season_hint": {
       "display_tier": "season_hint",
       "target_year": 2026,
@@ -3934,8 +4089,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
-    "date_certainty_tier": "confirmed",
     "public_status": "upcoming_confirmed",
     "public_category": "upcoming",
     "public_status_label": "今後開催",
@@ -3952,7 +4105,9 @@ const EVENTS = [
       "2026-10-10",
       "2026-10-12"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "confirmed",
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "芝大神宮 大祭 奉納輪踊り",
@@ -4001,8 +4156,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "season_hint",
     "public_status": "date_unknown",
     "public_category": "date_unknown",
     "public_status_label": "日程未確認",
@@ -4021,6 +4174,8 @@ const EVENTS = [
     "last_seen_year": null,
     "last_seen_dates": [],
     "display_tier": "season_hint",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "season_hint",
     "season_hint": {
       "display_tier": "season_hint",
       "target_year": 2026,
@@ -4094,8 +4249,169 @@ const EVENTS = [
     ],
     "songs": [
       {
+        "name": "1+1の音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "サザエさん",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ステテコシャンシャン",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ダンシングヒーロー",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "チャンチキおけさ",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ニッポンワッショイ",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "バハマ・ママ",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ヨッ!太鼓持ち",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "夜に駆ける",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "大江戸東京音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "大角会和太鼓演奏",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "好きになった人",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "恋のブギウギナイト",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "新二十一世紀音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "日本の夏ごよみ",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "日本よいとこ",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "東京ばやし",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "東京タワー音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "火の国太鼓",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "百年桜",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "盆ギリ恋歌",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "福よ来い",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "銀座カンカン娘",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
         "name": "お富さん",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント"
@@ -4109,84 +4425,82 @@ const EVENTS = [
       },
       {
         "name": "さくら音頭",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント"
       },
       {
         "name": "ひろしのさくら音頭",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント"
       },
       {
         "name": "まつの木小唄",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント"
       },
       {
         "name": "ドラえもん音頭",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント"
       },
       {
         "name": "ドンパン節",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント"
       },
       {
         "name": "ハワイ音頭",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント"
       },
       {
         "name": "八木節",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント"
       },
       {
         "name": "大東京音頭",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント"
       },
       {
         "name": "東京音頭",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント"
       },
       {
         "name": "炭坑節",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント"
       },
       {
         "name": "花笠音頭",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント"
       }
     ],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "rule_predicted",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -4234,6 +4548,8 @@ const EVENTS = [
       2024,
       2025
     ],
+    "current_event_state": "predicted",
+    "date_certainty_tier": "rule_predicted",
     "historical_reference": {
       "display_tier": "historical_reference",
       "last_seen_year": 2025,
@@ -4318,8 +4634,6 @@ const EVENTS = [
         "confidence": "hint"
       }
     ],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -4339,6 +4653,8 @@ const EVENTS = [
       "2025-08-30"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -4457,8 +4773,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "season_hint",
     "public_status": "date_unknown",
     "public_category": "date_unknown",
     "public_status_label": "日程未確認",
@@ -4477,6 +4791,8 @@ const EVENTS = [
     "last_seen_year": null,
     "last_seen_dates": [],
     "display_tier": "season_hint",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "season_hint",
     "season_hint": {
       "display_tier": "season_hint",
       "target_year": 2026,
@@ -4579,8 +4895,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "season_hint",
     "public_status": "date_unknown",
     "public_category": "date_unknown",
     "public_status_label": "日程未確認",
@@ -4599,6 +4913,8 @@ const EVENTS = [
     "last_seen_year": null,
     "last_seen_dates": [],
     "display_tier": "season_hint",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "season_hint",
     "season_hint": {
       "display_tier": "season_hint",
       "target_year": 2026,
@@ -4683,8 +4999,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "rule_predicted",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -4733,6 +5047,8 @@ const EVENTS = [
       2023,
       2025
     ],
+    "current_event_state": "predicted",
+    "date_certainty_tier": "rule_predicted",
     "historical_reference": {
       "display_tier": "historical_reference",
       "last_seen_year": 2025,
@@ -4815,8 +5131,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -4839,6 +5153,8 @@ const EVENTS = [
       "2025-09-27"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -4966,8 +5282,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "season_hint",
     "public_status": "date_unknown",
     "public_category": "date_unknown",
     "public_status_label": "日程未確認",
@@ -4986,6 +5300,8 @@ const EVENTS = [
     "last_seen_year": null,
     "last_seen_dates": [],
     "display_tier": "season_hint",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "season_hint",
     "season_hint": {
       "display_tier": "season_hint",
       "target_year": 2026,
@@ -5098,8 +5414,6 @@ const EVENTS = [
         "basis_label": "今年ヒント"
       }
     ],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_high",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -5122,6 +5436,8 @@ const EVENTS = [
       "2025-10-13"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -5218,7 +5534,7 @@ const EVENTS = [
       "7": "中旬"
     },
     "description": "神楽坂通りのりそな銀行神楽坂支店前で開かれる、神楽坂エリアの夏まつり盆踊り。",
-    "detail": "2026年イベント掲載で、開催日時: 2026年7月19日(日)〜20日(月祝)17:30〜20:30、会場: りそな銀行神楽坂支店前を確認。 主催: 神楽坂商店街振興組合。後援: 新宿区。小雨決行。",
+    "detail": "2026年イベント掲載で、開催日時: 2026年7月19日(日)〜20日(月祝)17:30〜20:30、会場: りそな銀行神楽坂支店前を確認。 主催: 神楽坂商店街振興組合。後援: 新宿区。小雨決行。 神楽坂夏まつり 盆踊り in 神楽坂（2026年7月19日〜20日）の現地曲目。写真掲示14曲と、現地補足の『365日の紙飛行機』を実測曲として追加。具体の参加日は未特定のため、開催回全体へ紐付け。",
     "source_urls": [
       {
         "label": "告知HPあり",
@@ -5227,9 +5543,113 @@ const EVENTS = [
         "count": 1
       }
     ],
-    "songs": [],
-    "current_event_state": "ended",
-    "date_certainty_tier": "confirmed",
+    "songs": [
+      {
+        "name": "365日の紙飛行機",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "どうでもいいよ",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ゆかた音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "オバQ音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ダンシングヒーロー",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ドンパン節",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "バハマ・ママ",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "マリーゴールド",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "八木節",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "大東京音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "湘南盆踊り",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "真っ赤な太陽",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "真夏の果実",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      }
+    ],
     "public_status": "ended_2026",
     "public_category": "ended",
     "public_status_label": "開催終了",
@@ -5246,7 +5666,9 @@ const EVENTS = [
       "2026-07-19",
       "2026-07-20"
     ],
-    "display_tier": "ended"
+    "display_tier": "ended",
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "第51回 神楽坂まつり 盆踊り",
@@ -5294,8 +5716,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -5317,9 +5737,11 @@ const EVENTS = [
       "2025-07-23",
       "2025-07-24"
     ],
-    "display_tier": "historical_slide",
+    "display_tier": "historical_reference",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_reference",
     "historical_reference": {
-      "display_tier": "historical_slide",
+      "display_tier": "historical_reference",
       "last_seen_year": 2025,
       "last_seen_dates": [
         "2025-07-23",
@@ -5342,17 +5764,9 @@ const EVENTS = [
       "cautions": [],
       "edition_number": 51,
       "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-07-22",
-        "date_end": "2026-07-23",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第4水曜を2026年へスライド",
-        "source_date": "2025-07-23",
-        "source_date_end": "2025-07-24",
-        "duration_days": 2
-      }
+      "slide": null
     },
-    "historical_display_tier": "historical_slide",
+    "historical_display_tier": "historical_reference",
     "historical_last_seen_year": 2025,
     "historical_last_seen_dates": [
       "2025-07-23",
@@ -5360,24 +5774,7 @@ const EVENTS = [
     ],
     "historical_reference_label": "2025-07-23〜2025-07-24実績・今年未確認",
     "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.73,
-    "historical_slide": {
-      "date": "2026-07-22",
-      "date_end": "2026-07-23",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第4水曜を2026年へスライド",
-      "source_date": "2025-07-23",
-      "source_date_end": "2025-07-24",
-      "duration_days": 2
-    },
-    "historical_slide_date": "2026-07-22",
-    "historical_slide_date_end": "2026-07-23",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第4水曜を2026年へスライド",
-    "predicted_date": "2026-07-22",
-    "predicted_date_end": "2026-07-23",
-    "prediction_basis": "2025年実績の同月第4水曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "historical_reference_score": 0.73
   },
   {
     "name": "下落合四丁目町会 盆踊り大会",
@@ -5421,8 +5818,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -5443,6 +5838,8 @@ const EVENTS = [
       "2025-07-19"
     ],
     "display_tier": "historical_reference",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_reference",
     "historical_reference": {
       "display_tier": "historical_reference",
       "last_seen_year": 2025,
@@ -5518,8 +5915,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -5540,6 +5935,8 @@ const EVENTS = [
       "2025-08-02"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -5640,8 +6037,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -5661,6 +6056,8 @@ const EVENTS = [
       "2025-07-25"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -5760,8 +6157,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -5783,6 +6178,8 @@ const EVENTS = [
       "2025-09-15"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -5903,8 +6300,6 @@ const EVENTS = [
         "basis_label": "2025年ヒント"
       }
     ],
-    "current_event_state": "ended",
-    "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
     "public_category": "ended",
     "public_status_label": "開催終了",
@@ -5921,7 +6316,9 @@ const EVENTS = [
       "2026-07-18",
       "2026-07-19"
     ],
-    "display_tier": "ended"
+    "display_tier": "ended",
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "新宿二丁目太宗寺盆踊り大会",
@@ -5969,8 +6366,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "ended",
-    "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
     "public_category": "ended",
     "public_status_label": "開催終了",
@@ -5987,73 +6382,143 @@ const EVENTS = [
       "2026-07-13",
       "2026-07-15"
     ],
-    "display_tier": "ended"
+    "display_tier": "ended",
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "新宿中央公園夏祭り 納涼盆踊り大会",
     "name_confirmed": true,
-    "venue": "新宿中央公園 ファンモアタイムひろば",
+    "venue": "新宿中央公園 ファンモアタイム広場",
     "area": "新宿区",
     "months": [
       2,
       8
     ],
-    "scale": null,
-    "access": "新宿中央公園内（旧水の広場）",
-    "address": "東京都新宿区西新宿2-11",
+    "scale": "中",
+    "access": "都営大江戸線 都庁前駅すぐ",
+    "address": "新宿区西新宿2-11",
     "lat": null,
     "lng": null,
-    "date": "2026-08-22",
-    "date_end": "2026-08-23",
-    "status": "確認済み",
+    "date": "2025-08-23",
+    "date_end": "2025-08-24",
+    "status": "未確認",
     "date_confidence": {
-      "level": "confirmed",
-      "label": "確認済み",
-      "description": "開催日として確認済みです"
+      "level": "unknown",
+      "label": "未確認",
+      "description": "開催日はまだ確認できていません"
     },
     "date_candidates": [],
     "hints": [
       [
         8,
-        22
+        23
       ],
       [
         8,
-        23
+        24
       ]
     ],
     "jun": {
       "8": "下旬"
     },
     "description": "新宿中央公園夏祭り 納涼盆踊り大会は、新宿中央公園 ファンモアタイム広場で開かれる屋外型の盆踊り・夏の地域イベント。8月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2025年は8/23-24。主催：盆踊り＝角筈地区青少年育成委員会／夏まつり＝パークアップ共同体。[p0_review_20260721] 新宿中央公園公式ページで2026年開催日・会場・盆踊り主催者を確認。",
+    "detail": "2025年は8/23-24。主催：盆踊り＝角筈地区青少年育成委員会／夏まつり＝パークアップ共同体。2026年日程は未発表",
     "source_urls": [
       {
-        "label": "公式告知あり",
-        "url": "https://shinjukuchuo-park.jp/events/event/2026/07/03/%E6%96%B0%E5%AE%BF%E4%B8%AD%E5%A4%AE%E5%85%AC%E5%9C%92%E3%80%80%E5%A4%8F%E3%81%BE%E3%81%A4%E3%82%8A%EF%BD%9E%E7%9B%86%E8%B8%8A%E3%82%8A%E3%81%A8%E5%90%8C%E6%99%82%E9%96%8B%E5%82%AC%EF%BD%9E-2/",
-        "kind": "official"
+        "label": "告知HPあり",
+        "url": "https://tokyofesta.com/23ku/24845/",
+        "kind": "web",
+        "count": 1
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
-    "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-08-22〜2026-08-23",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "昨年開催: 2025-08-23〜2025-08-24。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.72,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "held_2025",
+      "venue_present",
+      "tokyo_23ward",
+      "recurring_word:納涼",
+      "recurring_word:盆踊り大会",
+      "recurring_word:夏祭り",
+      "recurring_word:まつり"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
-    "last_seen_year": null,
+    "last_seen_year": 2025,
     "last_seen_dates": [
-      "2026-08-22",
-      "2026-08-23"
+      "2025-08-23",
+      "2025-08-24"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
+    "historical_reference": {
+      "display_tier": "historical_slide",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-08-23",
+        "2025-08-24"
+      ],
+      "label": "2025-08-23〜2025-08-24実績・今年未確認",
+      "confidence": "medium",
+      "score": 0.72,
+      "status": "expected_medium",
+      "status_label": "昨年開催",
+      "recurrence_label": "昨年開催・継続性 中",
+      "reasons": [
+        "held_2025",
+        "venue_present",
+        "tokyo_23ward",
+        "recurring_word:納涼",
+        "recurring_word:盆踊り大会",
+        "recurring_word:夏祭り",
+        "recurring_word:まつり"
+      ],
+      "cautions": [],
+      "edition_number": null,
+      "has_rule_prediction": false,
+      "slide": {
+        "date": "2026-08-22",
+        "date_end": "2026-08-23",
+        "method": "same_weekday",
+        "basis": "2025年実績の同月第4土曜を2026年へスライド",
+        "source_date": "2025-08-23",
+        "source_date_end": "2025-08-24",
+        "duration_days": 2
+      }
+    },
+    "historical_display_tier": "historical_slide",
+    "historical_last_seen_year": 2025,
+    "historical_last_seen_dates": [
+      "2025-08-23",
+      "2025-08-24"
+    ],
+    "historical_reference_label": "2025-08-23〜2025-08-24実績・今年未確認",
+    "historical_reference_confidence": "medium",
+    "historical_reference_score": 0.72,
+    "historical_slide": {
+      "date": "2026-08-22",
+      "date_end": "2026-08-23",
+      "method": "same_weekday",
+      "basis": "2025年実績の同月第4土曜を2026年へスライド",
+      "source_date": "2025-08-23",
+      "source_date_end": "2025-08-24",
+      "duration_days": 2
+    },
+    "historical_slide_date": "2026-08-22",
+    "historical_slide_date_end": "2026-08-23",
+    "historical_slide_method": "same_weekday",
+    "historical_slide_basis": "2025年実績の同月第4土曜を2026年へスライド",
+    "predicted_date": "2026-08-22",
+    "predicted_date_end": "2026-08-23",
+    "prediction_basis": "2025年実績の同月第4土曜を2026年へスライド",
+    "prediction_confidence": "medium"
   },
   {
     "name": "三角広場まつり「居酒屋盆踊り」",
@@ -6110,8 +6575,6 @@ const EVENTS = [
         "confidence": "hint"
       }
     ],
-    "current_event_state": "ended",
-    "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
     "public_category": "ended",
     "public_status_label": "開催終了",
@@ -6128,7 +6591,9 @@ const EVENTS = [
       "2026-06-24",
       "2026-06-25"
     ],
-    "display_tier": "ended"
+    "display_tier": "ended",
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "歌舞伎町BON ODORI",
@@ -6173,8 +6638,85 @@ const EVENTS = [
     ],
     "songs": [
       {
+        "name": "Crazy Train",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "Dancing Queen",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "I Was Born To Love You",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "Livin' On A Prayer",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "September",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "YMCA",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ultra soul",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ダンシングヒーロー",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ライラック",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "歌舞伎町の女王",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
         "name": "EZ DO DANCE",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント"
@@ -6185,10 +6727,15 @@ const EVENTS = [
         "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント"
+      },
+      {
+        "name": "HOT LIMIT",
+        "confidence": "hint",
+        "probability": 55,
+        "basis": "current_observed",
+        "basis_label": "実測"
       }
     ],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "rule_predicted",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -6234,6 +6781,8 @@ const EVENTS = [
       2024,
       2025
     ],
+    "current_event_state": "predicted",
+    "date_certainty_tier": "rule_predicted",
     "historical_reference": {
       "display_tier": "historical_reference",
       "last_seen_year": 2025,
@@ -6308,8 +6857,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -6330,6 +6877,8 @@ const EVENTS = [
       "2025-07-19"
     ],
     "display_tier": "historical_reference",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_reference",
     "historical_reference": {
       "display_tier": "historical_reference",
       "last_seen_year": 2025,
@@ -6408,9 +6957,127 @@ const EVENTS = [
         "count": 1
       }
     ],
-    "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
+    "songs": [
+      {
+        "name": "八木節",
+        "confidence": "confirmed",
+        "probability": 99,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "DESIRE -情熱",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "きよしのズンドコ節",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "りんご節",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ズンパ音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ダンシングヒーロー",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "チャンチキおけさ",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ドンパン節",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "大東京音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "宝っこ音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "新宿音頭1",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "新宿音頭2",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "新宿音頭コンクール 予選決勝",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "浪花節だよ人生は",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "花笠音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      }
+    ],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -6430,6 +7097,8 @@ const EVENTS = [
       "2025-08-02"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -6534,8 +7203,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -6557,6 +7224,8 @@ const EVENTS = [
       "2025-07-12"
     ],
     "display_tier": "historical_reference",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_reference",
     "historical_reference": {
       "display_tier": "historical_reference",
       "last_seen_year": 2025,
@@ -6631,8 +7300,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "season_hint",
     "public_status": "date_unknown",
     "public_category": "date_unknown",
     "public_status_label": "日程未確認",
@@ -6649,7 +7316,9 @@ const EVENTS = [
     "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "display_tier": "season_hint",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "season_hint"
   },
   {
     "name": "シタマチ.ふるさと盆踊り大会",
@@ -6765,8 +7434,6 @@ const EVENTS = [
         "basis_label": "今年ヒント"
       }
     ],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "rule_predicted",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -6812,6 +7479,8 @@ const EVENTS = [
       2024,
       2025
     ],
+    "current_event_state": "predicted",
+    "date_certainty_tier": "rule_predicted",
     "historical_reference": {
       "display_tier": "historical_reference",
       "last_seen_year": 2025,
@@ -6886,8 +7555,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -6908,6 +7575,8 @@ const EVENTS = [
       "2025-08-23"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -7007,9 +7676,295 @@ const EVENTS = [
         "count": 1
       }
     ],
-    "songs": [],
-    "current_event_state": "ended",
-    "date_certainty_tier": "confirmed",
+    "songs": [
+      {
+        "name": "U.S.A.",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "おけさ唄えば",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "さくら音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "たいとう音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "たいとう音頭 ダンシング・バージョン",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "また逢う日まで",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "まんまる音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "やなぎブギ",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ダンシングヒーロー",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ボンゴ天国",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ワイド節",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "三味線ブギウギ",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "伊勢えび囃子",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "八木節",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "南州おどり",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "大東京音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "天竜下れば",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "宇宙太鼓",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "島人ぬ宝",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "常磐炭坑節",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "御宿・曳き舟",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "新浅草橋音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "日本はればれ音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "日本よいとこ",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "春駒ばやし",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "東京五輪音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "柳北音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "江戸っ子囃子",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "河内酒",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "浅草ばし音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "涙そうそう",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "白鳥おどり 世栄",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "相馬壁塗り甚句",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "祭りだ!和っしょい",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "祭り華〜神田明神",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "締め太鼓",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "耐久!炭坑節で踊ろうメドレー",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "雨の御堂筋",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "黒潮太鼓",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      }
+    ],
     "public_status": "ended_2026",
     "public_category": "ended",
     "public_status_label": "開催終了",
@@ -7025,7 +7980,9 @@ const EVENTS = [
     "last_seen_dates": [
       "2026-05-09"
     ],
-    "display_tier": "ended"
+    "display_tier": "ended",
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "浅草橋マロニエまつり盆踊り",
@@ -7073,292 +8030,290 @@ const EVENTS = [
         "name": "U.S.A.",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "おけさ唄えば",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "さくら音頭",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "たいとう音頭",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "たいとう音頭 ダンシング・バージョン",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "また逢う日まで",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "まんまる音頭",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "やなぎブギ",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "ダンシングヒーロー",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "ボンゴ天国",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "ワイド節",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "三味線ブギウギ",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "伊勢えび囃子",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "八木節",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "南州おどり",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "大東京音頭",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "天竜下れば",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "宇宙太鼓",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "島人ぬ宝",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "常磐炭坑節",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "御宿・曳き舟",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "新浅草橋音頭",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "日本はればれ音頭",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "日本よいとこ",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "春駒ばやし",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "東京五輪音頭",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "東京音頭",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "柳北音頭",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "江戸っ子囃子",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "河内酒",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "浅草ばし音頭",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "涙そうそう",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "炭坑節",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "白鳥おどり 世栄",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "相馬壁塗り甚句",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "祭りだ!和っしょい",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "祭り華〜神田明神",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "締め太鼓",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "耐久!炭坑節で踊ろうメドレー",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "雨の御堂筋",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "黒潮太鼓",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       }
     ],
-    "current_event_state": "ended",
-    "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
     "public_category": "ended",
     "public_status_label": "開催終了",
@@ -7374,7 +8329,9 @@ const EVENTS = [
     "last_seen_dates": [
       "2026-05-09"
     ],
-    "display_tier": "ended"
+    "display_tier": "ended",
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "TOKYO盆ダンス×STEAM FESTIVAL2026",
@@ -7422,8 +8379,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "ended",
-    "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
     "public_category": "ended",
     "public_status_label": "開催終了",
@@ -7440,7 +8395,9 @@ const EVENTS = [
       "2026-06-26",
       "2026-06-27"
     ],
-    "display_tier": "ended"
+    "display_tier": "ended",
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
@@ -7499,8 +8456,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "season_hint",
     "public_status": "date_unknown",
     "public_category": "date_unknown",
     "public_status_label": "日程未確認",
@@ -7519,6 +8474,8 @@ const EVENTS = [
     "last_seen_year": null,
     "last_seen_dates": [],
     "display_tier": "season_hint",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "season_hint",
     "season_hint": {
       "display_tier": "season_hint",
       "target_year": 2026,
@@ -7594,8 +8551,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "ended",
-    "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
     "public_category": "ended",
     "public_status_label": "開催終了",
@@ -7612,7 +8567,9 @@ const EVENTS = [
       "2026-07-03",
       "2026-07-05"
     ],
-    "display_tier": "ended"
+    "display_tier": "ended",
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "ゐの市盆踊り～不忍夢～",
@@ -7660,8 +8617,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_reference",
     "public_status": "expected_low",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -7680,6 +8635,8 @@ const EVENTS = [
       "2025-08-11"
     ],
     "display_tier": "historical_reference",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_reference",
     "historical_reference": {
       "display_tier": "historical_reference",
       "last_seen_year": 2025,
@@ -7774,8 +8731,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "season_hint",
     "public_status": "date_unknown",
     "public_category": "date_unknown",
     "public_status_label": "日程未確認",
@@ -7794,6 +8749,8 @@ const EVENTS = [
     "last_seen_year": null,
     "last_seen_dates": [],
     "display_tier": "season_hint",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "season_hint",
     "season_hint": {
       "display_tier": "season_hint",
       "target_year": 2026,
@@ -7900,8 +8857,6 @@ const EVENTS = [
         "basis_label": "今年告知"
       }
     ],
-    "current_event_state": "ended",
-    "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
     "public_category": "ended",
     "public_status_label": "開催終了",
@@ -7918,7 +8873,9 @@ const EVENTS = [
       "2026-07-18",
       "2026-07-18"
     ],
-    "display_tier": "ended"
+    "display_tier": "ended",
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "東本願寺盆踊り",
@@ -7967,43 +8924,169 @@ const EVENTS = [
     ],
     "songs": [
       {
+        "name": "DJタイム",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "あなたの出番",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "ガット・トゥ・ビー・リアル",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "ガールズ・ジャスト・ワナ・ハブ・ファン",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "テレフォン・オペレーター",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "パワー・オブ・ラブ",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "パワー・オブ・ラヴ",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "ホールド・ミー・ナウ",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "ライク・ア・ヴァージン",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "レッツ・グルーヴ",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "七福神音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "北海盆唄",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "東京本願寺音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "波乗りジョニー",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "燃えろ日本の夏祭り",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "蓮如音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "親鸞おどり",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "親鸞音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
         "name": "ONE LOVE",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "probability": 80,
         "basis": "past_evidence",
         "basis_label": "2025年ヒント"
       },
       {
         "name": "ふるさと音頭",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "probability": 80,
         "basis": "past_evidence",
         "basis_label": "2025年ヒント"
       },
       {
         "name": "エブリブレスユーテイク",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "probability": 80,
         "basis": "past_evidence",
         "basis_label": "2025年ヒント"
       },
       {
         "name": "チャンチキおけさ",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "probability": 80,
         "basis": "past_evidence",
         "basis_label": "2025年ヒント"
       },
       {
         "name": "東京音頭",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "probability": 80,
         "basis": "past_evidence",
         "basis_label": "2025年ヒント"
       },
       {
         "name": "炭坑節",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "probability": 80,
         "basis": "past_evidence",
         "basis_label": "2025年ヒント"
@@ -8016,8 +9099,6 @@ const EVENTS = [
         "basis_label": "2025年ヒント"
       }
     ],
-    "current_event_state": "confirmed",
-    "date_certainty_tier": "confirmed",
     "public_status": "upcoming_confirmed",
     "public_category": "upcoming",
     "public_status_label": "今後開催",
@@ -8034,7 +9115,9 @@ const EVENTS = [
       "2026-08-19",
       "2026-08-20"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "confirmed",
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "柳ばし納涼盆おどり",
@@ -8078,8 +9161,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "ended",
-    "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
     "public_category": "ended",
     "public_status_label": "開催終了",
@@ -8096,7 +9177,9 @@ const EVENTS = [
       "2026-07-18",
       "2026-07-18"
     ],
-    "display_tier": "ended"
+    "display_tier": "ended",
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "雷門盆踊り",
@@ -8146,8 +9229,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
-    "date_certainty_tier": "confirmed",
     "public_status": "upcoming_confirmed",
     "public_category": "upcoming",
     "public_status_label": "今後開催",
@@ -8164,7 +9245,9 @@ const EVENTS = [
       "2026-09-05",
       "2026-09-05"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "confirmed",
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "第2回田原de盆踊り",
@@ -8221,8 +9304,6 @@ const EVENTS = [
         "confidence": "hint"
       }
     ],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "season_hint",
     "public_status": "date_unknown",
     "public_category": "date_unknown",
     "public_status_label": "日程未確認",
@@ -8241,6 +9322,8 @@ const EVENTS = [
     "last_seen_year": null,
     "last_seen_dates": [],
     "display_tier": "season_hint",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "season_hint",
     "season_hint": {
       "display_tier": "season_hint",
       "target_year": 2026,
@@ -8313,8 +9396,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "ended",
-    "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
     "public_category": "ended",
     "public_status_label": "開催終了",
@@ -8330,7 +9411,9 @@ const EVENTS = [
     "last_seen_dates": [
       "2026-06-27"
     ],
-    "display_tier": "ended"
+    "display_tier": "ended",
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "-両国- 江戸NOREN 妖怪BON DANCE",
@@ -8373,9 +9456,50 @@ const EVENTS = [
         "count": 1
       }
     ],
-    "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_reference",
+    "songs": [
+      {
+        "name": "妖怪人間ベム",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "妖怪盆踊り",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "妖怪道中",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "演舞披露",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "炭坑節",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      }
+    ],
     "public_status": "expected_low",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -8396,6 +9520,8 @@ const EVENTS = [
       "2025-07-13"
     ],
     "display_tier": "historical_reference",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_reference",
     "historical_reference": {
       "display_tier": "historical_reference",
       "last_seen_year": 2025,
@@ -8472,8 +9598,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "season_hint",
     "public_status": "date_unknown",
     "public_category": "date_unknown",
     "public_status_label": "日程未確認",
@@ -8492,6 +9616,8 @@ const EVENTS = [
     "last_seen_year": null,
     "last_seen_dates": [],
     "display_tier": "season_hint",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "season_hint",
     "season_hint": {
       "display_tier": "season_hint",
       "target_year": 2026,
@@ -8572,8 +9698,6 @@ const EVENTS = [
         "basis_label": "今年ヒント"
       }
     ],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -8594,6 +9718,8 @@ const EVENTS = [
       "2025-01-11"
     ],
     "display_tier": "historical_reference",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_reference",
     "historical_reference": {
       "display_tier": "historical_reference",
       "last_seen_year": 2025,
@@ -8669,8 +9795,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "season_hint",
     "public_status": "date_unknown",
     "public_category": "date_unknown",
     "public_status_label": "日程未確認",
@@ -8689,6 +9813,8 @@ const EVENTS = [
     "last_seen_year": null,
     "last_seen_dates": [],
     "display_tier": "season_hint",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "season_hint",
     "season_hint": {
       "display_tier": "season_hint",
       "target_year": 2026,
@@ -8761,8 +9887,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -8785,6 +9909,8 @@ const EVENTS = [
       "2025-09-27"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -8895,8 +10021,6 @@ const EVENTS = [
         "basis_label": "今年ヒント"
       }
     ],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -8918,6 +10042,8 @@ const EVENTS = [
       "2025-09-13"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -9019,8 +10145,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -9041,6 +10165,8 @@ const EVENTS = [
       "2025-09-13"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -9163,8 +10289,6 @@ const EVENTS = [
         "basis_label": "今年ヒント"
       }
     ],
-    "current_event_state": "ended",
-    "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
     "public_category": "ended",
     "public_status_label": "開催終了",
@@ -9180,7 +10304,9 @@ const EVENTS = [
     "last_seen_dates": [
       "2026-03-01"
     ],
-    "display_tier": "ended"
+    "display_tier": "ended",
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "太平一丁目 牛嶋神社 奉納踊り",
@@ -9224,8 +10350,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -9246,6 +10370,8 @@ const EVENTS = [
       "2025-09-12"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -9351,8 +10477,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "season_hint",
     "public_status": "date_unknown",
     "public_category": "date_unknown",
     "public_status_label": "日程未確認",
@@ -9371,6 +10495,8 @@ const EVENTS = [
     "last_seen_year": null,
     "last_seen_dates": [],
     "display_tier": "season_hint",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "season_hint",
     "season_hint": {
       "display_tier": "season_hint",
       "target_year": 2026,
@@ -9443,8 +10569,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "season_hint",
     "public_status": "date_unknown",
     "public_category": "date_unknown",
     "public_status_label": "日程未確認",
@@ -9463,6 +10587,8 @@ const EVENTS = [
     "last_seen_year": null,
     "last_seen_dates": [],
     "display_tier": "season_hint",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "season_hint",
     "season_hint": {
       "display_tier": "season_hint",
       "target_year": 2026,
@@ -9535,8 +10661,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "season_hint",
     "public_status": "date_unknown",
     "public_category": "date_unknown",
     "public_status_label": "日程未確認",
@@ -9555,6 +10679,8 @@ const EVENTS = [
     "last_seen_year": null,
     "last_seen_dates": [],
     "display_tier": "season_hint",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "season_hint",
     "season_hint": {
       "display_tier": "season_hint",
       "target_year": 2026,
@@ -9627,8 +10753,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "season_hint",
     "public_status": "date_unknown",
     "public_category": "date_unknown",
     "public_status_label": "日程未確認",
@@ -9647,6 +10771,8 @@ const EVENTS = [
     "last_seen_year": null,
     "last_seen_dates": [],
     "display_tier": "season_hint",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "season_hint",
     "season_hint": {
       "display_tier": "season_hint",
       "target_year": 2026,
@@ -9718,8 +10844,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "ended",
-    "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
     "public_category": "ended",
     "public_status_label": "開催終了",
@@ -9735,7 +10859,9 @@ const EVENTS = [
     "last_seen_dates": [
       "2026-05-16"
     ],
-    "display_tier": "ended"
+    "display_tier": "ended",
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "東京ソラマチ夏まつり・墨田区民納涼民踊大会",
@@ -9783,8 +10909,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
-    "date_certainty_tier": "confirmed",
     "public_status": "upcoming_confirmed",
     "public_category": "upcoming",
     "public_status_label": "今後開催",
@@ -9801,7 +10925,9 @@ const EVENTS = [
       "2026-08-01",
       "2026-08-03"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "confirmed",
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "盆☆Dance 夏休み最後の土曜は校庭で踊ろう！",
@@ -9845,8 +10971,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "season_hint",
     "public_status": "date_unknown",
     "public_category": "date_unknown",
     "public_status_label": "日程未確認",
@@ -9865,6 +10989,8 @@ const EVENTS = [
     "last_seen_year": null,
     "last_seen_dates": [],
     "display_tier": "season_hint",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "season_hint",
     "season_hint": {
       "display_tier": "season_hint",
       "target_year": 2026,
@@ -9948,8 +11074,6 @@ const EVENTS = [
         "basis_label": "今年ヒント"
       }
     ],
-    "current_event_state": "confirmed",
-    "date_certainty_tier": "confirmed",
     "public_status": "upcoming_confirmed",
     "public_category": "upcoming",
     "public_status_label": "今後開催",
@@ -9966,7 +11090,9 @@ const EVENTS = [
       "2026-07-29",
       "2026-07-30"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "confirmed",
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "牛嶋神社祭礼 奉納踊り",
@@ -10028,8 +11154,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "season_hint",
     "public_status": "date_unknown",
     "public_category": "date_unknown",
     "public_status_label": "日程未確認",
@@ -10048,6 +11172,8 @@ const EVENTS = [
     "last_seen_year": null,
     "last_seen_dates": [],
     "display_tier": "season_hint",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "season_hint",
     "season_hint": {
       "display_tier": "season_hint",
       "target_year": 2026,
@@ -10144,8 +11270,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -10166,6 +11290,8 @@ const EVENTS = [
       "2025-09-13"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -10266,8 +11392,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "season_hint",
     "public_status": "date_unknown",
     "public_category": "date_unknown",
     "public_status_label": "日程未確認",
@@ -10286,6 +11410,8 @@ const EVENTS = [
     "last_seen_year": null,
     "last_seen_dates": [],
     "display_tier": "season_hint",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "season_hint",
     "season_hint": {
       "display_tier": "season_hint",
       "target_year": 2026,
@@ -10358,8 +11484,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "season_hint",
     "public_status": "date_unknown",
     "public_category": "date_unknown",
     "public_status_label": "日程未確認",
@@ -10378,6 +11502,8 @@ const EVENTS = [
     "last_seen_year": null,
     "last_seen_dates": [],
     "display_tier": "season_hint",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "season_hint",
     "season_hint": {
       "display_tier": "season_hint",
       "target_year": 2026,
@@ -10462,8 +11588,6 @@ const EVENTS = [
         "basis_label": "今年ヒント"
       }
     ],
-    "current_event_state": "ended",
-    "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
     "public_category": "ended",
     "public_status_label": "開催終了",
@@ -10480,7 +11604,9 @@ const EVENTS = [
       "2026-05-09",
       "2026-05-10"
     ],
-    "display_tier": "ended"
+    "display_tier": "ended",
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "すみゆめ踊行列：SUMIBON",
@@ -10523,8 +11649,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
-    "date_certainty_tier": "confirmed",
     "public_status": "upcoming_confirmed",
     "public_category": "upcoming",
     "public_status_label": "今後開催",
@@ -10541,7 +11665,9 @@ const EVENTS = [
       "2026-10-25",
       "2026-10-25"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "confirmed",
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "押上二町目町会 飛木稲荷神社神幸大祭 奉納おどり",
@@ -10585,8 +11711,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "season_hint",
     "public_status": "date_unknown",
     "public_category": "date_unknown",
     "public_status_label": "日程未確認",
@@ -10605,6 +11729,8 @@ const EVENTS = [
     "last_seen_year": null,
     "last_seen_dates": [],
     "display_tier": "season_hint",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "season_hint",
     "season_hint": {
       "display_tier": "season_hint",
       "target_year": 2026,
@@ -10677,8 +11803,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "season_hint",
     "public_status": "date_unknown",
     "public_category": "date_unknown",
     "public_status_label": "日程未確認",
@@ -10697,6 +11821,8 @@ const EVENTS = [
     "last_seen_year": null,
     "last_seen_dates": [],
     "display_tier": "season_hint",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "season_hint",
     "season_hint": {
       "display_tier": "season_hint",
       "target_year": 2026,
@@ -10772,8 +11898,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
-    "date_certainty_tier": "confirmed",
     "public_status": "upcoming_confirmed",
     "public_category": "upcoming",
     "public_status_label": "今後開催",
@@ -10790,7 +11914,9 @@ const EVENTS = [
       "2026-07-25",
       "2026-07-26"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "confirmed",
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "有明まつり",
@@ -10834,8 +11960,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
-    "date_certainty_tier": "confirmed",
     "public_status": "upcoming_confirmed",
     "public_category": "upcoming",
     "public_status_label": "今後開催",
@@ -10852,7 +11976,9 @@ const EVENTS = [
       "2026-09-12",
       "2026-09-12"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "confirmed",
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "木場二丁目 盆踊り大会",
@@ -10900,8 +12026,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "ended",
-    "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
     "public_category": "ended",
     "public_status_label": "開催終了",
@@ -10918,7 +12042,9 @@ const EVENTS = [
       "2026-07-17",
       "2026-07-18"
     ],
-    "display_tier": "ended"
+    "display_tier": "ended",
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "盆踊り大会",
@@ -10962,8 +12088,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "season_hint",
     "public_status": "date_unknown",
     "public_category": "date_unknown",
     "public_status_label": "日程未確認",
@@ -10982,6 +12106,8 @@ const EVENTS = [
     "last_seen_year": null,
     "last_seen_dates": [],
     "display_tier": "season_hint",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "season_hint",
     "season_hint": {
       "display_tier": "season_hint",
       "target_year": 2026,
@@ -11058,8 +12184,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -11080,6 +12204,8 @@ const EVENTS = [
       "2025-07-20"
     ],
     "display_tier": "historical_reference",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_reference",
     "historical_reference": {
       "display_tier": "historical_reference",
       "last_seen_year": 2025,
@@ -11156,8 +12282,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "season_hint",
     "public_status": "date_unknown",
     "public_category": "date_unknown",
     "public_status_label": "日程未確認",
@@ -11176,6 +12300,8 @@ const EVENTS = [
     "last_seen_year": null,
     "last_seen_dates": [],
     "display_tier": "season_hint",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "season_hint",
     "season_hint": {
       "display_tier": "season_hint",
       "target_year": 2026,
@@ -11252,8 +12378,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "ended",
-    "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
     "public_category": "ended",
     "public_status_label": "開催終了",
@@ -11270,7 +12394,9 @@ const EVENTS = [
       "2026-07-18",
       "2026-07-19"
     ],
-    "display_tier": "ended"
+    "display_tier": "ended",
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "都の辰巳深川 臨海ぼんおどり",
@@ -11314,8 +12440,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -11334,6 +12458,8 @@ const EVENTS = [
       "2025-07-19"
     ],
     "display_tier": "historical_reference",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_reference",
     "historical_reference": {
       "display_tier": "historical_reference",
       "last_seen_year": 2025,
@@ -11406,8 +12532,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "ended",
-    "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
     "public_category": "ended",
     "public_status_label": "開催終了",
@@ -11423,7 +12547,9 @@ const EVENTS = [
     "last_seen_dates": [
       "2026-05-23"
     ],
-    "display_tier": "ended"
+    "display_tier": "ended",
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "天王洲夏夜祭 with OKINAWA",
@@ -11471,8 +12597,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
-    "date_certainty_tier": "confirmed",
     "public_status": "upcoming_confirmed",
     "public_category": "upcoming",
     "public_status_label": "今後開催",
@@ -11489,7 +12613,9 @@ const EVENTS = [
       "2026-07-24",
       "2026-07-25"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "confirmed",
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "品川区民まつり 荏原第四地区",
@@ -11533,8 +12659,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
-    "date_certainty_tier": "confirmed",
     "public_status": "upcoming_confirmed",
     "public_category": "upcoming",
     "public_status_label": "今後開催",
@@ -11550,7 +12674,9 @@ const EVENTS = [
     "last_seen_dates": [
       "2026-10-11"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "confirmed",
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "品川区民まつり 荏原第三地区",
@@ -11593,8 +12719,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
-    "date_certainty_tier": "confirmed",
     "public_status": "upcoming_confirmed",
     "public_category": "upcoming",
     "public_status_label": "今後開催",
@@ -11610,7 +12734,9 @@ const EVENTS = [
     "last_seen_dates": [
       "2026-10-18"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "confirmed",
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "品川区民まつり 八潮地区",
@@ -11653,8 +12779,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
-    "date_certainty_tier": "confirmed",
     "public_status": "upcoming_confirmed",
     "public_category": "upcoming",
     "public_status_label": "今後開催",
@@ -11670,7 +12794,9 @@ const EVENTS = [
     "last_seen_dates": [
       "2026-09-20"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "confirmed",
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "第71回大井どんたく夏まつり 初日 盆踊り",
@@ -11757,8 +12883,6 @@ const EVENTS = [
         "basis_label": "今年ヒント"
       }
     ],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_high",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -11781,6 +12905,8 @@ const EVENTS = [
       "2025-08-23"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -11883,8 +13009,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "season_hint",
     "public_status": "date_unknown",
     "public_category": "date_unknown",
     "public_status_label": "日程未確認",
@@ -11903,6 +13027,8 @@ const EVENTS = [
     "last_seen_year": null,
     "last_seen_dates": [],
     "display_tier": "season_hint",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "season_hint",
     "season_hint": {
       "display_tier": "season_hint",
       "target_year": 2026,
@@ -11978,8 +13104,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
-    "date_certainty_tier": "confirmed",
     "public_status": "upcoming_confirmed",
     "public_category": "upcoming",
     "public_status_label": "今後開催",
@@ -11996,7 +13120,9 @@ const EVENTS = [
       "2026-07-25",
       "2026-07-26"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "confirmed",
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "戸越宮前盆踊り",
@@ -12040,8 +13166,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "ended",
-    "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
     "public_category": "ended",
     "public_status_label": "開催終了",
@@ -12057,7 +13181,9 @@ const EVENTS = [
     "last_seen_dates": [
       "2026-06-07"
     ],
-    "display_tier": "ended"
+    "display_tier": "ended",
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "小山台二丁目町会 戸越八幡神社例大祭 盆踊り",
@@ -12106,8 +13232,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "season_hint",
     "public_status": "date_unknown",
     "public_category": "date_unknown",
     "public_status_label": "日程未確認",
@@ -12126,6 +13250,8 @@ const EVENTS = [
     "last_seen_year": null,
     "last_seen_dates": [],
     "display_tier": "season_hint",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "season_hint",
     "season_hint": {
       "display_tier": "season_hint",
       "target_year": 2026,
@@ -12199,8 +13325,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
-    "date_certainty_tier": "confirmed",
     "public_status": "upcoming_confirmed",
     "public_category": "upcoming",
     "public_status_label": "今後開催",
@@ -12216,7 +13340,9 @@ const EVENTS = [
     "last_seen_dates": [
       "2026-10-10"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "confirmed",
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "中原共和町会 戸越八幡神社祭礼 盆踊り",
@@ -12260,8 +13386,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "season_hint",
     "public_status": "date_unknown",
     "public_category": "date_unknown",
     "public_status_label": "日程未確認",
@@ -12280,6 +13404,8 @@ const EVENTS = [
     "last_seen_year": null,
     "last_seen_dates": [],
     "display_tier": "season_hint",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "season_hint",
     "season_hint": {
       "display_tier": "season_hint",
       "target_year": 2026,
@@ -12370,8 +13496,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "season_hint",
     "public_status": "date_unknown",
     "public_category": "date_unknown",
     "public_status_label": "日程未確認",
@@ -12390,6 +13514,8 @@ const EVENTS = [
     "last_seen_year": null,
     "last_seen_dates": [],
     "display_tier": "season_hint",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "season_hint",
     "season_hint": {
       "display_tier": "season_hint",
       "target_year": 2026,
@@ -12550,8 +13676,6 @@ const EVENTS = [
         "basis_label": "今年ヒント"
       }
     ],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -12571,6 +13695,8 @@ const EVENTS = [
       "2025-10-18"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -12682,8 +13808,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "season_hint",
     "public_status": "date_unknown",
     "public_category": "date_unknown",
     "public_status_label": "日程未確認",
@@ -12702,6 +13826,8 @@ const EVENTS = [
     "last_seen_year": null,
     "last_seen_dates": [],
     "display_tier": "season_hint",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "season_hint",
     "season_hint": {
       "display_tier": "season_hint",
       "target_year": 2026,
@@ -12787,460 +13913,465 @@ const EVENTS = [
         "name": "Beat It盆踊り",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "おしまこ輪踊り",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "おてもやん",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "こまづくり唄",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "さくら音頭",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "でかんしょ節",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "とらじょ様",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "にっぽんチャチャチャ",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "よこはまアラメヤ音頭",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "りんご節",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "シッチョイ",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "ドンパン節",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "下北小唄",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "佐渡おけさ",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "八戸小唄",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "北上おでんせ",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "堀江盆歌",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "大森甚句",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "子供盆踊り唄",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "平和音頭",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "村崎野音頭",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "東京音頭",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "江州音頭",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "河内音頭",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "津軽甚句",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "炭坑節",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "牛深ハイヤ",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "真室川音頭",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "神代",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "秋田音頭",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "紀州白浜音頭",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "終 繁昌ぶし",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "繁昌ぶし",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "老坂",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "花笠音頭",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "郡上節かわさき",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "郡上節三百",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "郡上節春駒",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "隠岐のしげさ節",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "鯵ヶ沢甚句",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "鹿島一声浮立",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "麦わら音頭",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "黒石じょんがら",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "黒石よされ",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "黒石甚句",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "Isn't She Lovely",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "ええじゃないか音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "えびすくい音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "じゃこっぺ踊り",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "すみだ音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "とらじょさま",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "にんにん忍たま音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "オバQ音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "マツケンサンバII",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "二十一世紀音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "八木節",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "春駒",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "池袋西口音頭",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "相馬盆唄",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "終 メガヒッツ盆踊り",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "終 夏祭り",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "終 池袋盆BAND",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "終 津軽甚句",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "終 炭坑節",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "花まつり",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       },
       {
         "name": "黒石よされ節",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "current_observed",
+        "basis_label": "実測"
       }
     ],
-    "current_event_state": "ended",
-    "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
     "public_category": "ended",
     "public_status_label": "開催終了",
@@ -13256,7 +14387,9 @@ const EVENTS = [
     "last_seen_dates": [
       "2026-05-31"
     ],
-    "display_tier": "ended"
+    "display_tier": "ended",
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "品川区民まつり 荏原第五地区",
@@ -13304,8 +14437,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "ended",
-    "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
     "public_category": "ended",
     "public_status_label": "開催終了",
@@ -13322,7 +14453,9 @@ const EVENTS = [
       "2026-07-18",
       "2026-07-19"
     ],
-    "display_tier": "ended"
+    "display_tier": "ended",
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "しながわ運河まつり ステージプログラム",
@@ -13371,8 +14504,6 @@ const EVENTS = [
         "confidence": "hint"
       }
     ],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "season_hint",
     "public_status": "date_unknown",
     "public_category": "date_unknown",
     "public_status_label": "日程未確認",
@@ -13391,6 +14522,8 @@ const EVENTS = [
     "last_seen_year": null,
     "last_seen_dates": [],
     "display_tier": "season_hint",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "season_hint",
     "season_hint": {
       "display_tier": "season_hint",
       "target_year": 2026,
@@ -13463,8 +14596,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "season_hint",
     "public_status": "date_unknown",
     "public_category": "date_unknown",
     "public_status_label": "日程未確認",
@@ -13483,6 +14614,8 @@ const EVENTS = [
     "last_seen_year": null,
     "last_seen_dates": [],
     "display_tier": "season_hint",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "season_hint",
     "season_hint": {
       "display_tier": "season_hint",
       "target_year": 2026,
@@ -13555,8 +14688,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "season_hint",
     "public_status": "date_unknown",
     "public_category": "date_unknown",
     "public_status_label": "日程未確認",
@@ -13575,6 +14706,8 @@ const EVENTS = [
     "last_seen_year": null,
     "last_seen_dates": [],
     "display_tier": "season_hint",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "season_hint",
     "season_hint": {
       "display_tier": "season_hint",
       "target_year": 2026,
@@ -13647,8 +14780,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -13668,6 +14799,8 @@ const EVENTS = [
       "2025-09-27"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -13767,8 +14900,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -13790,6 +14921,8 @@ const EVENTS = [
       "2025-09-13"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -13891,8 +15024,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "ended",
-    "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
     "public_category": "ended",
     "public_status_label": "開催終了",
@@ -13908,7 +15039,9 @@ const EVENTS = [
     "last_seen_dates": [
       "2026-06-06"
     ],
-    "display_tier": "ended"
+    "display_tier": "ended",
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "地域のふれあい第37回盆踊り大会",
@@ -13952,8 +15085,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_high",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -13976,6 +15107,8 @@ const EVENTS = [
       "2025-07-27"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -14078,8 +15211,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -14099,6 +15230,8 @@ const EVENTS = [
       "2025-08-30"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -14198,8 +15331,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -14218,6 +15349,8 @@ const EVENTS = [
       "2025-11-23"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -14316,8 +15449,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_reference",
     "public_status": "expected_high",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -14342,6 +15473,8 @@ const EVENTS = [
       "2025-07-16"
     ],
     "display_tier": "historical_reference",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_reference",
     "historical_reference": {
       "display_tier": "historical_reference",
       "last_seen_year": 2025,
@@ -14415,11 +15548,11 @@ const EVENTS = [
       "7": "中旬"
     },
     "description": "自由が丘駅前ロータリー特設会場で開かれる、商店街主催の納涼盆踊り大会。",
-    "detail": "2026年イベント掲載で、2026年7月18日(土)〜20日(月祝)18:00〜21:00、会場: 自由が丘駅前ロータリー 特設会場、主催: 自由が丘商店街振興組合、共催: 自由が丘住区青少年委員会を確認。関連URL: [p0_review_20260721] 公開データは確認済みだが第三者URLだったため、主催者公式の当年根拠を追加する。",
+    "detail": "2026年イベント掲載で、2026年7月18日(土)〜20日(月祝)18:00〜21:00、会場: 自由が丘駅前ロータリー 特設会場、主催: 自由が丘商店街振興組合、共催: 自由が丘住区青少年委員会を確認。関連URL:",
     "source_urls": [
       {
         "label": "告知HPあり",
-        "url": "https://www.jiyugaoka-abc.com/special/bonodori/",
+        "url": "https://tokyofesta.com/23ku/31825/",
         "kind": "web",
         "count": 1
       }
@@ -14517,8 +15650,6 @@ const EVENTS = [
         "basis_label": "2025年ヒント"
       }
     ],
-    "current_event_state": "ended",
-    "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
     "public_category": "ended",
     "public_status_label": "開催終了",
@@ -14535,7 +15666,9 @@ const EVENTS = [
       "2026-07-18",
       "2026-07-20"
     ],
-    "display_tier": "ended"
+    "display_tier": "ended",
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "桜フェスタ商店街 みんなで盆踊り",
@@ -14587,8 +15720,6 @@ const EVENTS = [
         "basis_label": "今年ヒント"
       }
     ],
-    "current_event_state": "ended",
-    "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
     "public_category": "ended",
     "public_status_label": "開催終了",
@@ -14604,7 +15735,9 @@ const EVENTS = [
     "last_seen_dates": [
       "2026-03-29"
     ],
-    "display_tier": "ended"
+    "display_tier": "ended",
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "蒲田魅力向上委員会(蒲田西口商店街振興組合、蒲田西地区自治会連合会) 「蒲田国際フェスティバル2025 -世界が出会う下町フェス」",
@@ -14648,8 +15781,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_reference",
     "public_status": "expected_low",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -14674,6 +15805,8 @@ const EVENTS = [
       "2025-09-06"
     ],
     "display_tier": "historical_reference",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_reference",
     "historical_reference": {
       "display_tier": "historical_reference",
       "last_seen_year": 2025,
@@ -14753,8 +15886,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -14776,6 +15907,8 @@ const EVENTS = [
       "2025-07-29"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -14877,8 +16010,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -14902,6 +16033,8 @@ const EVENTS = [
       "2025-07-21"
     ],
     "display_tier": "historical_reference",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_reference",
     "historical_reference": {
       "display_tier": "historical_reference",
       "last_seen_year": 2025,
@@ -14980,8 +16113,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -15004,9 +16135,11 @@ const EVENTS = [
     "last_seen_dates": [
       "2025-07-24"
     ],
-    "display_tier": "historical_slide",
+    "display_tier": "historical_reference",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_reference",
     "historical_reference": {
-      "display_tier": "historical_slide",
+      "display_tier": "historical_reference",
       "last_seen_year": 2025,
       "last_seen_dates": [
         "2025-07-24"
@@ -15030,41 +16163,16 @@ const EVENTS = [
       ],
       "edition_number": null,
       "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-07-23",
-        "date_end": "2026-07-23",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第4木曜を2026年へスライド",
-        "source_date": "2025-07-24",
-        "source_date_end": null,
-        "duration_days": 1
-      }
+      "slide": null
     },
-    "historical_display_tier": "historical_slide",
+    "historical_display_tier": "historical_reference",
     "historical_last_seen_year": 2025,
     "historical_last_seen_dates": [
       "2025-07-24"
     ],
     "historical_reference_label": "2025-07-24実績・今年未確認",
     "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.68,
-    "historical_slide": {
-      "date": "2026-07-23",
-      "date_end": "2026-07-23",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第4木曜を2026年へスライド",
-      "source_date": "2025-07-24",
-      "source_date_end": null,
-      "duration_days": 1
-    },
-    "historical_slide_date": "2026-07-23",
-    "historical_slide_date_end": "2026-07-23",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第4木曜を2026年へスライド",
-    "predicted_date": "2026-07-23",
-    "predicted_date_end": "2026-07-23",
-    "prediction_basis": "2025年実績の同月第4木曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "historical_reference_score": 0.68
   },
   {
     "name": "市野倉南町会 盆踊り",
@@ -15108,8 +16216,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -15131,6 +16237,8 @@ const EVENTS = [
       "2025-08-02"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -15232,8 +16340,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -15257,6 +16363,8 @@ const EVENTS = [
       "2025-07-18"
     ],
     "display_tier": "historical_reference",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_reference",
     "historical_reference": {
       "display_tier": "historical_reference",
       "last_seen_year": 2025,
@@ -15335,8 +16443,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -15360,6 +16466,8 @@ const EVENTS = [
       "2025-07-26"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -15463,8 +16571,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -15486,6 +16592,8 @@ const EVENTS = [
       "2025-07-13"
     ],
     "display_tier": "historical_reference",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_reference",
     "historical_reference": {
       "display_tier": "historical_reference",
       "last_seen_year": 2025,
@@ -15562,8 +16670,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -15588,6 +16694,8 @@ const EVENTS = [
       "2025-07-11"
     ],
     "display_tier": "historical_reference",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_reference",
     "historical_reference": {
       "display_tier": "historical_reference",
       "last_seen_year": 2025,
@@ -15667,8 +16775,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -15692,6 +16798,8 @@ const EVENTS = [
       "2025-07-21"
     ],
     "display_tier": "historical_reference",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_reference",
     "historical_reference": {
       "display_tier": "historical_reference",
       "last_seen_year": 2025,
@@ -15770,8 +16878,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -15795,6 +16901,8 @@ const EVENTS = [
       "2025-07-28"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -15898,8 +17006,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -15921,6 +17027,8 @@ const EVENTS = [
       "2025-04-06"
     ],
     "display_tier": "historical_reference",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_reference",
     "historical_reference": {
       "display_tier": "historical_reference",
       "last_seen_year": 2025,
@@ -15997,8 +17105,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -16022,6 +17128,8 @@ const EVENTS = [
       "2025-07-19"
     ],
     "display_tier": "historical_reference",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_reference",
     "historical_reference": {
       "display_tier": "historical_reference",
       "last_seen_year": 2025,
@@ -16100,8 +17208,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -16124,6 +17230,8 @@ const EVENTS = [
       "2025-08-23"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -16226,8 +17334,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -16250,6 +17356,8 @@ const EVENTS = [
       "2025-07-19"
     ],
     "display_tier": "historical_reference",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_reference",
     "historical_reference": {
       "display_tier": "historical_reference",
       "last_seen_year": 2025,
@@ -16329,12 +17437,24 @@ const EVENTS = [
     ],
     "songs": [
       {
+        "name": "お嫁サンバ",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "シモキタ音頭",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
         "name": "下北沢駅東口周辺で開かれる街なかの踊り",
         "confidence": "hint"
       }
     ],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -16357,6 +17477,8 @@ const EVENTS = [
       "2025-08-09"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -16463,8 +17585,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
-    "date_certainty_tier": "confirmed",
     "public_status": "upcoming_confirmed",
     "public_category": "upcoming",
     "public_status_label": "今後開催",
@@ -16481,7 +17601,9 @@ const EVENTS = [
       "2026-07-25",
       "2026-07-26"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "confirmed",
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "新町公民会 盆踊り大会",
@@ -16525,8 +17647,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -16549,6 +17669,8 @@ const EVENTS = [
       "2025-08-17"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -16651,8 +17773,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -16674,6 +17794,8 @@ const EVENTS = [
       "2025-07-25"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -16780,8 +17902,6 @@ const EVENTS = [
         "confidence": "hint"
       }
     ],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -16804,6 +17924,8 @@ const EVENTS = [
       "2025-07-25"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -16906,8 +18028,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -16930,6 +18050,8 @@ const EVENTS = [
       "2025-07-12"
     ],
     "display_tier": "historical_reference",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_reference",
     "historical_reference": {
       "display_tier": "historical_reference",
       "last_seen_year": 2025,
@@ -17015,8 +18137,6 @@ const EVENTS = [
         "basis_label": "今年ヒント"
       }
     ],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -17040,6 +18160,8 @@ const EVENTS = [
       "2025-07-26"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -17148,8 +18270,6 @@ const EVENTS = [
         "confidence": "hint"
       }
     ],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -17170,6 +18290,8 @@ const EVENTS = [
       "2025-08-17"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -17270,8 +18392,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -17294,6 +18414,8 @@ const EVENTS = [
       "2025-07-20"
     ],
     "display_tier": "historical_reference",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_reference",
     "historical_reference": {
       "display_tier": "historical_reference",
       "last_seen_year": 2025,
@@ -17371,8 +18493,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -17394,6 +18514,8 @@ const EVENTS = [
       "2025-07-26"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -17495,8 +18617,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -17520,6 +18640,8 @@ const EVENTS = [
       "2025-07-19"
     ],
     "display_tier": "historical_reference",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_reference",
     "historical_reference": {
       "display_tier": "historical_reference",
       "last_seen_year": 2025,
@@ -17603,8 +18725,6 @@ const EVENTS = [
         "confidence": "hint"
       }
     ],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -17626,6 +18746,8 @@ const EVENTS = [
       "2025-07-26"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -17727,8 +18849,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -17750,6 +18870,8 @@ const EVENTS = [
       "2025-07-26"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -17851,8 +18973,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -17874,6 +18994,8 @@ const EVENTS = [
       "2025-07-19"
     ],
     "display_tier": "historical_reference",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_reference",
     "historical_reference": {
       "display_tier": "historical_reference",
       "last_seen_year": 2025,
@@ -17950,8 +19072,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -17973,6 +19093,8 @@ const EVENTS = [
       "2025-07-19"
     ],
     "display_tier": "historical_reference",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_reference",
     "historical_reference": {
       "display_tier": "historical_reference",
       "last_seen_year": 2025,
@@ -18049,8 +19171,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -18072,6 +19192,8 @@ const EVENTS = [
       "2025-07-26"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -18166,8 +19288,6 @@ const EVENTS = [
     "detail": "2025 7/26。次回日程は未確認。",
     "source_urls": [],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -18192,6 +19312,8 @@ const EVENTS = [
       "2025-07-26"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -18296,8 +19418,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -18319,6 +19439,8 @@ const EVENTS = [
       "2025-08-01"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -18420,8 +19542,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -18444,6 +19564,8 @@ const EVENTS = [
       "2025-08-16"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -18546,8 +19668,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_reference",
     "display_name": "納涼盆踊り大会（玉川中町公園）",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -18571,6 +19691,8 @@ const EVENTS = [
       "2025-07-19"
     ],
     "display_tier": "historical_reference",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_reference",
     "historical_reference": {
       "display_tier": "historical_reference",
       "last_seen_year": 2025,
@@ -18641,8 +19763,6 @@ const EVENTS = [
     "detail": "2025 8/1 - 2。次回日程は未確認。",
     "source_urls": [],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -18666,6 +19786,8 @@ const EVENTS = [
       "2025-08-01"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -18762,8 +19884,6 @@ const EVENTS = [
     "detail": "2025 7/19。次回日程は未確認。",
     "source_urls": [],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_reference",
     "public_status": "expected_high",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -18788,6 +19908,8 @@ const EVENTS = [
       "2025-07-19"
     ],
     "display_tier": "historical_reference",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_reference",
     "historical_reference": {
       "display_tier": "historical_reference",
       "last_seen_year": 2025,
@@ -18872,8 +19994,6 @@ const EVENTS = [
         "confidence": "hint"
       }
     ],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -18895,6 +20015,8 @@ const EVENTS = [
       "2025-07-18"
     ],
     "display_tier": "historical_reference",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_reference",
     "historical_reference": {
       "display_tier": "historical_reference",
       "last_seen_year": 2025,
@@ -18971,8 +20093,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -18997,6 +20117,8 @@ const EVENTS = [
       "2025-07-26"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -19101,8 +20223,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -19125,6 +20245,8 @@ const EVENTS = [
       "2025-07-26"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -19220,8 +20342,6 @@ const EVENTS = [
     "detail": "2025 8/2 - 3。次回日程は未確認。",
     "source_urls": [],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -19245,6 +20365,8 @@ const EVENTS = [
       "2025-08-02"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -19348,8 +20470,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "display_name": "納涼盆踊り大会（駒沢緑泉公園）",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
@@ -19373,6 +20493,8 @@ const EVENTS = [
       "2025-08-03"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -19475,8 +20597,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -19497,6 +20617,8 @@ const EVENTS = [
       "2025-08-10"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -19601,9 +20723,57 @@ const EVENTS = [
         "count": 1
       }
     ],
-    "songs": [],
-    "current_event_state": "confirmed",
-    "date_certainty_tier": "confirmed",
+    "songs": [
+      {
+        "name": "おてもやん",
+        "confidence": "confirmed",
+        "probability": 99,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "Hey Mr 恵比寿",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "YES YES EBISU",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "YES YES YBISU",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "八木節",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "大東京音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "能登島さし音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      }
+    ],
     "public_status": "upcoming_confirmed",
     "public_category": "upcoming",
     "public_status_label": "今後開催",
@@ -19620,7 +20790,9 @@ const EVENTS = [
       "2026-07-31",
       "2026-08-01"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "confirmed",
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "第6回 渋谷盆踊り",
@@ -19668,9 +20840,43 @@ const EVENTS = [
         "count": 2
       }
     ],
-    "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
+    "songs": [
+      {
+        "name": "ダンシングヒーロー",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "大東京音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "東京音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "河内おとこ節",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "渋谷音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      }
+    ],
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -19690,6 +20896,8 @@ const EVENTS = [
       "2025-08-02"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -19795,8 +21003,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_reference",
     "public_status": "expected_low",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -19819,6 +21025,8 @@ const EVENTS = [
       "2025-04-19"
     ],
     "display_tier": "historical_reference",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_reference",
     "historical_reference": {
       "display_tier": "historical_reference",
       "last_seen_year": 2025,
@@ -19897,8 +21105,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "ended",
-    "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
     "public_category": "ended",
     "public_status_label": "開催終了",
@@ -19914,7 +21120,9 @@ const EVENTS = [
     "last_seen_dates": [
       "2026-03-15"
     ],
-    "display_tier": "ended"
+    "display_tier": "ended",
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "GMOシブヤエンタメ祭 × JAME盆踊り",
@@ -19964,8 +21172,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_reference",
     "public_status": "expected_low",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -19986,6 +21192,8 @@ const EVENTS = [
       "2025-06-01"
     ],
     "display_tier": "historical_reference",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_reference",
     "historical_reference": {
       "display_tier": "historical_reference",
       "last_seen_year": 2025,
@@ -20066,6 +21274,13 @@ const EVENTS = [
     ],
     "songs": [
       {
+        "name": "渋谷で盆ジョヴィ 2025 ダンシングヒーロー",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
         "name": "ダンシングヒーロー",
         "confidence": "hint",
         "probability": 80,
@@ -20101,8 +21316,6 @@ const EVENTS = [
         "basis_label": "2025年ヒント"
       }
     ],
-    "current_event_state": "confirmed",
-    "date_certainty_tier": "confirmed",
     "public_status": "upcoming_confirmed",
     "public_category": "upcoming",
     "public_status_label": "今後開催",
@@ -20119,7 +21332,9 @@ const EVENTS = [
       "2026-09-26",
       "2026-09-27"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "confirmed",
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "第7回 渋谷盆踊り",
@@ -20163,8 +21378,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
-    "date_certainty_tier": "confirmed",
     "public_status": "upcoming_confirmed",
     "public_category": "upcoming",
     "public_status_label": "今後開催",
@@ -20181,7 +21394,9 @@ const EVENTS = [
       "2026-08-08",
       "2026-08-08"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "confirmed",
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "道盆 DOUBON III",
@@ -20225,8 +21440,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
-    "date_certainty_tier": "confirmed",
     "public_status": "upcoming_confirmed",
     "public_category": "upcoming",
     "public_status_label": "今後開催",
@@ -20243,7 +21456,9 @@ const EVENTS = [
       "2026-08-08",
       "2026-08-08"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "confirmed",
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "中野駅前大盆踊り大会",
@@ -20290,8 +21505,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
-    "date_certainty_tier": "confirmed",
     "public_status": "upcoming_confirmed",
     "public_category": "upcoming",
     "public_status_label": "今後開催",
@@ -20308,7 +21521,9 @@ const EVENTS = [
       "2026-08-01",
       "2026-08-02"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "confirmed",
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "大和町八幡神社大盆踊り会",
@@ -20351,9 +21566,113 @@ const EVENTS = [
         "count": 1
       }
     ],
-    "songs": [],
-    "current_event_state": "ended",
-    "date_certainty_tier": "confirmed",
+    "songs": [
+      {
+        "name": "DJ「俚謡山脈」",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "DJ「珍盤亭娯楽師匠」",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "かわさき",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "げんげんばらばら",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "やっちく",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ケケノコ族1ジンギスカン",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ケケノコ族2Shangri-La",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ケケノコ族3Singapore",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ケケノコ族4YOUNG MAN",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "メガ盆",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "三百",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "古調かわさき",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "春駒",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "猫の子",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "生盆",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      }
+    ],
     "public_status": "ended_2026",
     "public_category": "ended",
     "public_status_label": "開催終了",
@@ -20370,7 +21689,9 @@ const EVENTS = [
       "2026-07-18",
       "2026-07-18"
     ],
-    "display_tier": "ended"
+    "display_tier": "ended",
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "新井町会連合会・中野通り桜まつり実行委員会「中野通り桜まつり」",
@@ -20414,8 +21735,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "ended",
-    "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
     "public_category": "ended",
     "public_status_label": "開催終了",
@@ -20431,7 +21750,9 @@ const EVENTS = [
     "last_seen_dates": [
       "2026-03-28"
     ],
-    "display_tier": "ended"
+    "display_tier": "ended",
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "第34回ふるさと千川 まつり",
@@ -20479,8 +21800,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "ended",
-    "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
     "public_category": "ended",
     "public_status_label": "開催終了",
@@ -20497,7 +21816,9 @@ const EVENTS = [
       "2026-06-05",
       "2026-06-06"
     ],
-    "display_tier": "ended"
+    "display_tier": "ended",
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "白鳥おどりin池袋",
@@ -20546,8 +21867,6 @@ const EVENTS = [
         "confidence": "hint"
       }
     ],
-    "current_event_state": "ended",
-    "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
     "public_category": "ended",
     "public_status_label": "開催終了",
@@ -20563,10 +21882,12 @@ const EVENTS = [
     "last_seen_dates": [
       "2026-04-25"
     ],
-    "display_tier": "ended"
+    "display_tier": "ended",
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed"
   },
   {
-    "name": "第16回 鴨台盆踊り",
+    "name": "第15回 鴨台盆踊り",
     "name_confirmed": true,
     "venue": "大正大学",
     "area": "豊島区",
@@ -20578,8 +21899,8 @@ const EVENTS = [
     "address": "東京都豊島区西巣鴨3-20-1",
     "lat": null,
     "lng": null,
-    "date": "2026-07-10",
-    "date_end": "2026-07-11",
+    "date": "2025-07-04",
+    "date_end": "2025-07-05",
     "status": "確認済み",
     "date_confidence": {
       "level": "confirmed",
@@ -20590,45 +21911,108 @@ const EVENTS = [
     "hints": [
       [
         7,
-        10
+        4
       ],
       [
         7,
-        11
+        5
       ]
     ],
     "jun": {
-      "7": "中旬"
+      "7": "上旬"
     },
     "description": "",
-    "detail": "[p0_review_20260721] 大正大学公式ページで2026年開催日・会場を確認。既存系列に2026年開催回を新設する。",
+    "detail": "",
     "source_urls": [
       {
-        "label": "公式告知あり",
-        "url": "https://www.tais.ac.jp/region_international/contribution_society/ohdai_bonodori/",
-        "kind": "official"
+        "label": "告知HPあり",
+        "url": "https://www.tais.ac.jp/guide/latest_news/20250627/92922/",
+        "kind": "web",
+        "count": 1
       }
     ],
     "songs": [],
-    "current_event_state": "ended",
-    "date_certainty_tier": "confirmed",
-    "public_status": "ended_2026",
-    "public_category": "ended",
-    "public_status_label": "開催終了",
-    "public_note": "2026年開催終了: 2026-07-10〜2026-07-11",
-    "recurrence_label": "2026年開催終了",
-    "recurrence_score": 0.98,
+    "public_status": "expected_medium",
+    "public_category": "recurring_last_year",
+    "public_status_label": "昨年開催",
+    "public_note": "第15回・昨年開催: 2025-07-04〜2025-07-05。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.65,
     "recurrence_reasons": [
-      "2026年開催済み"
+      "venue_present",
+      "tokyo_23ward",
+      "edition_number:15",
+      "edition_10plus"
     ],
     "recurrence_cautions": [],
-    "edition_number": 16,
-    "last_seen_year": null,
+    "edition_number": 15,
+    "last_seen_year": 2025,
     "last_seen_dates": [
-      "2026-07-10",
-      "2026-07-11"
+      "2025-07-04",
+      "2025-07-05"
     ],
-    "display_tier": "ended"
+    "date_prediction": {
+      "display_tier": "rule_predicted",
+      "target_year": 2026,
+      "date": "2026-07-04",
+      "date_end": "2026-07-05",
+      "weekday_start": "土",
+      "weekday_end": "日",
+      "confidence": "medium",
+      "score": 0.6,
+      "rule_type": "weekend_near_day",
+      "basis": "7月6日前後の週末",
+      "evidence_years": [
+        2023,
+        2024
+      ],
+      "evidence_count": 2,
+      "has_actual_observation": false
+    },
+    "display_tier": "rule_predicted",
+    "predicted_date": "2026-07-04",
+    "predicted_date_end": "2026-07-05",
+    "prediction_basis": "7月6日前後の週末",
+    "prediction_confidence": "medium",
+    "prediction_evidence_years": [
+      2023,
+      2024
+    ],
+    "current_event_state": "predicted",
+    "date_certainty_tier": "rule_predicted",
+    "historical_reference": {
+      "display_tier": "historical_reference",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-04",
+        "2025-07-05"
+      ],
+      "label": "2025-07-04〜2025-07-05実績・今年未確認",
+      "confidence": "medium",
+      "score": 0.65,
+      "status": "expected_medium",
+      "status_label": "昨年開催",
+      "recurrence_label": "昨年開催・継続性 中",
+      "reasons": [
+        "venue_present",
+        "tokyo_23ward",
+        "edition_number:15",
+        "edition_10plus"
+      ],
+      "cautions": [],
+      "edition_number": 15,
+      "has_rule_prediction": true,
+      "slide": null
+    },
+    "historical_display_tier": "historical_reference",
+    "historical_last_seen_year": 2025,
+    "historical_last_seen_dates": [
+      "2025-07-04",
+      "2025-07-05"
+    ],
+    "historical_reference_label": "2025-07-04〜2025-07-05実績・今年未確認",
+    "historical_reference_confidence": "medium",
+    "historical_reference_score": 0.65
   },
   {
     "name": "第46回 巣鴨盆踊り大会",
@@ -20681,8 +22065,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "ended",
-    "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
     "public_category": "ended",
     "public_status_label": "開催終了",
@@ -20699,7 +22081,9 @@ const EVENTS = [
       "2026-07-17",
       "2026-07-19"
     ],
-    "display_tier": "ended"
+    "display_tier": "ended",
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "飛鳥山公園盆踊り会（有志サークル）",
@@ -20749,6 +22133,97 @@ const EVENTS = [
     ],
     "songs": [
       {
+        "name": "おんなの気持ち",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "さくら音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "にっぽんチャチャチャ",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ソーラン北海",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "俺ら炭鉱夫",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "川口小唄",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "東西南北音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "沖縄よいとこ",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "火の国太鼓",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "男おけさ",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "百年桜",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "相馬盆唄",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "蟹工船",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
         "name": "好きの有志が季節",
         "confidence": "hint",
         "probability": 80,
@@ -20763,8 +22238,6 @@ const EVENTS = [
         "basis_label": "今年ヒント"
       }
     ],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_reference",
     "public_status": "expected_low",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -20783,6 +22256,8 @@ const EVENTS = [
       "2025-04-19"
     ],
     "display_tier": "historical_reference",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_reference",
     "historical_reference": {
       "display_tier": "historical_reference",
       "last_seen_year": 2025,
@@ -20874,8 +22349,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "season_hint",
     "public_status": "date_unknown",
     "public_category": "date_unknown",
     "public_status_label": "日程未確認",
@@ -20894,6 +22367,8 @@ const EVENTS = [
     "last_seen_year": null,
     "last_seen_dates": [],
     "display_tier": "season_hint",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "season_hint",
     "season_hint": {
       "display_tier": "season_hint",
       "target_year": 2026,
@@ -20987,36 +22462,195 @@ const EVENTS = [
     ],
     "songs": [
       {
+        "name": "いいもんだな故郷は",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "さくら音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ふるさと北区",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ゆかた音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "スーダラ節",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ソーラン北海",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "佐渡の恋唄",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "俺ら炭鉱夫",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "千恵っ子よされ",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "大東京音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "大江戸東京音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "少年八木節",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "東西南北音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "松島の斉太郎さん",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "沖縄よいとこ",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "牛ちゃんマンボ",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "男おけさ",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "百年桜",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "相馬盆唄",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "美子の三味線ドンパン",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "蟹工船",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "言ちゃん音頭",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "黒潮太鼓",
+        "confidence": "confirmed",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
         "name": "ジャンボリミッキー",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント"
       },
       {
         "name": "ジンギスカン",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント"
       },
       {
         "name": "好きになった人",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント"
       },
       {
         "name": "盆ギリ恋歌",
-        "confidence": "hint",
+        "confidence": "confirmed",
         "probability": 80,
         "basis": "current_hint",
         "basis_label": "今年ヒント"
       }
     ],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -21035,6 +22669,8 @@ const EVENTS = [
       "2025-07-05"
     ],
     "display_tier": "historical_reference",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_reference",
     "historical_reference": {
       "display_tier": "historical_reference",
       "last_seen_year": 2025,
@@ -21120,8 +22756,6 @@ const EVENTS = [
         "basis_label": "今年ヒント"
       }
     ],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -21143,6 +22777,8 @@ const EVENTS = [
       "2025-09-15"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -21267,8 +22903,6 @@ const EVENTS = [
         "basis_label": "今年ヒント"
       }
     ],
-    "current_event_state": "ended",
-    "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
     "public_category": "ended",
     "public_status_label": "開催終了",
@@ -21284,7 +22918,9 @@ const EVENTS = [
     "last_seen_dates": [
       "2026-03-15"
     ],
-    "display_tier": "ended"
+    "display_tier": "ended",
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "荒川盆踊り会 初踊り",
@@ -21328,8 +22964,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "ended",
-    "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
     "public_category": "ended",
     "public_status_label": "開催終了",
@@ -21345,7 +22979,9 @@ const EVENTS = [
     "last_seen_dates": [
       "2026-02-22"
     ],
-    "display_tier": "ended"
+    "display_tier": "ended",
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "西綾瀬町会 夏祭り盆踊り大会",
@@ -21389,8 +23025,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -21412,6 +23046,8 @@ const EVENTS = [
       "2025-06-21"
     ],
     "display_tier": "historical_reference",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_reference",
     "historical_reference": {
       "display_tier": "historical_reference",
       "last_seen_year": 2025,
@@ -21492,8 +23128,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
-    "date_certainty_tier": "confirmed",
     "public_status": "upcoming_confirmed",
     "public_category": "upcoming",
     "public_status_label": "今後開催",
@@ -21510,7 +23144,9 @@ const EVENTS = [
       "2026-09-12",
       "2026-09-13"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "confirmed",
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "亀有銀座商店街納涼盆踊り大会",
@@ -21596,8 +23232,6 @@ const EVENTS = [
         "confidence": "hint"
       }
     ],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -21620,6 +23254,8 @@ const EVENTS = [
       "2025-08-31"
     ],
     "display_tier": "historical_slide",
+    "current_event_state": "predicted",
+    "date_certainty_tier": "historical_slide",
     "historical_reference": {
       "display_tier": "historical_slide",
       "last_seen_year": 2025,
@@ -21723,8 +23359,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "ended",
-    "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
     "public_category": "ended",
     "public_status_label": "開催終了",
@@ -21740,7 +23374,9 @@ const EVENTS = [
     "last_seen_dates": [
       "2026-05-31"
     ],
-    "display_tier": "ended"
+    "display_tier": "ended",
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "新小岩納涼盆踊り大会",
@@ -21788,8 +23424,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
-    "date_certainty_tier": "confirmed",
     "public_status": "upcoming_confirmed",
     "public_category": "upcoming",
     "public_status_label": "今後開催",
@@ -21806,7 +23440,9 @@ const EVENTS = [
       "2026-07-25",
       "2026-07-26"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "confirmed",
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "倉雀会(くらすずめかい)",
@@ -21850,8 +23486,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "ended",
-    "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
     "public_category": "ended",
     "public_status_label": "開催終了",
@@ -21867,7 +23501,9 @@ const EVENTS = [
     "last_seen_dates": [
       "2026-02-08"
     ],
-    "display_tier": "ended"
+    "display_tier": "ended",
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed"
   },
   {
     "name": "好踊会「第4回 好踊会フェア」",
@@ -21911,8 +23547,6 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "ended",
-    "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
     "public_category": "ended",
     "public_status_label": "開催終了",
@@ -21928,6 +23562,8 @@ const EVENTS = [
     "last_seen_dates": [
       "2026-03-29"
     ],
-    "display_tier": "ended"
+    "display_tier": "ended",
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed"
   }
 ];

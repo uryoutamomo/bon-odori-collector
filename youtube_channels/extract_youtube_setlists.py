@@ -363,6 +363,17 @@ def infer_event_and_venue(voice, review_map):
         venue = "ヒューリック浅草橋前"
     elif "晴盆" in event_name or "おおさきHappy Olive Festival" in event_name:
         venue = "大崎駅周辺"
+    elif "花園神社" in title:
+        # Without this, per-song video titles like "きよしのズンドコ節 新宿 花園神社"
+        # fall through to venue = event_name below, so each video's song title
+        # ends up embedded in its own occurrence's venue field (16 occurrences
+        # observed 2026-07-24, matched into the master RDB's curated 花園神社
+        # occurrence via fuzzy venue matching -- see occ_59180208dc287804).
+        venue = "花園神社"
+        event_name = "花園神社 盆踊り"
+    elif "下町盆踊りフェス" in title:
+        venue = "上野恩賜公園"
+        event_name = "Tokyo江戸ウィーク～下町盆踊りフェス～"
 
     if not venue:
         venue = event_name

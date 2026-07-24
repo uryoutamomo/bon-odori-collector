@@ -7,11 +7,21 @@ observed_occurrences / observed_occurrence_songs / evidence_items /
 occurrence_song_evidence_links rows sourced from cleaned YouTube setlist data
 (see commit 5944839 fixing extract_youtube_setlists.py's input-bloat bugs).
 
-Deliberately does NOT populate probability: song_processing/song_occurrences.py's
-prediction_probability()/evidence_view_for_year() have not been rewritten to be
-RDB-native yet (that is a separate follow-up). This script only raises real
-observed-setlist evidence into the RDB so that rewrite has something to compute
-against; it must not fabricate a probability value ahead of that logic existing.
+Deliberately does NOT populate probability itself: song_processing/song_occurrences.py's
+prediction_probability()/evidence_view_for_year() are not RDB-native, so this script only
+raises real observed-setlist evidence into the RDB. calibrate_song_probabilities_rdb.py
+(2026-07-24 follow-up) computes probability from what lands here on a separate pass; it
+must not fabricate a probability value itself.
+
+Every setlist item's title goes through a song-title quality gate (resolve_song(), see
+its docstring) before being written to occurrence_songs: matched against the curated
+songs master after noise stripping, registered as a new songs.status='候補' row if
+it looks like a plausible but previously unseen song name, or left out of
+occurrence_songs entirely (staying visible only in observed_occurrence_songs.raw_song_title)
+if it doesn't. This exists because extract_youtube_setlists.py's per-video title parsing
+sometimes yields non-song fragments (event names, sponsor annotations, bare "第70回") or
+bakes a venue name into every song from that venue (see extract_youtube_setlists.py's
+2026-07-24 花園神社/下町盆踊りフェス venue-detection fix for a case that produced it).
 
 Default mode writes only to a copied SQLite DB. Production writes require
 --apply and the confirmation phrase.
@@ -19,8 +29,10 @@ Default mode writes only to a copied SQLite DB. Production writes require
 
 import argparse
 import json
+import re
 import shutil
 import sqlite3
+import unicodedata
 from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
@@ -57,6 +69,151 @@ SCRIPT_NAME = "apply_youtube_setlist_occurrences_rdb.py"
 # still stored as raw evidence); a wrong match is not, so this errs toward precision.
 MATCH_SCORE_THRESHOLD = 0.7
 RELIABILITY_BY_CONFIDENCE = {"high": 0.95, "medium": 0.80, "low": 0.55}
+
+# --- Song title quality gate (2026-07-24 follow-up) ---------------------------------
+#
+# extract_youtube_setlists.py's setlist items are per-video title parses, not always
+# clean song names -- some are annotation-laden fragments like "Hey Mr 恵比寿(地元企業:
+# サッポロ)第70回" or bare noise like "第70回" / "25】". The extractor's own
+# title_looks_like_song()/clean_song_from_title() are built to split a *whole video
+# title* into event+song, not to re-validate an already-extracted title, so they don't
+# catch these. This gate runs on the already-extracted setlist item title instead:
+#   1. strip known noise (回数 suffix, operator/sponsor annotations, a leading venue-name
+#      suffix such as "新宿 花園神社" tacked onto every song from that venue's videos)
+#   2. try an exact match against the curated songs master (authoritative; a hit means
+#      trust the master's canonical spelling over the raw YouTube text)
+#   3. if no match, apply a conservative shape check; titles that fail it (multi-song
+#      "/" jams, leftover parenthetical annotations, bracket-only fragments, >24 chars)
+#      are not written to occurrence_songs at all -- they stay visible only in
+#      observed_occurrence_songs.raw_song_title (the raw-evidence layer) instead of
+#      reaching the public-facing occurrence_songs layer
+#   4. titles that pass the shape check but aren't in the master become new
+#      songs.status='候補' rows (deduped by normalized_title) rather than being
+#      silently dropped -- a real song the master hasn't seen before is exactly what
+#      "first sighting" data collection is supposed to surface, per 内田さん 2026-07-24:
+#      "曲名データベースに照合して一致しないのは表記揺れか、曲名ではないと推察できる…
+#      未知の曲と推定して、曲データベースで曲候補として持っても良い"
+#
+# Deliberately NOT using difflib-style fuzzy string matching against the master: a
+# 2026-07-24 spot-check found Japanese song names sharing the common "○○音頭"/"○○おどり"
+# suffix score deceptively high on pure string similarity despite being different songs
+# (e.g. "東西南北音頭" vs "東京北都音頭" = 0.67, "ソーラン北海" vs "ソーラン節" = 0.73,
+# "ハワイ音頭" vs "イデ音頭" = 0.67) -- fuzzy-matching those would silently merge distinct
+# songs. Only exact match (after noise stripping) is trusted to identify a known song.
+NOISE_SUFFIX_RE = re.compile(
+    r"\s*(?:第[0-9０-９]{1,3}回|20\d{2}年\s*(?:初日|二日目|三日目|最終日)?)\s*$"
+)
+ANNOTATION_PAREN_RE = re.compile(r"[(（][^)）]*[)）]")
+LEADING_STRIP_RE = re.compile(r"^(?:終|ラスト|最後)\s*")
+BRACKET_ONLY_RE = re.compile(r"^[0-9０-９]{0,3}[】\)\.]+$")
+# A closing bracket with no matching opener is a leftover fragment from splitting a
+# video title mid-phrase (e.g. "日枝神社 山王祭 】後半" -- the "【" that opened this
+# stayed in a different fragment), not a real song name.
+UNBALANCED_CLOSE_BRACKET_RE = re.compile(r"[】』」\)］]")
+OPEN_BRACKET_RE = re.compile(r"[【『「\(［]")
+SONG_TITLE_MAX_LEN = 24
+
+
+def strip_venue_suffix(title, venue):
+    """Strip a trailing "<at most one token> <venue>" tail, e.g. "きよしのズンドコ節
+    新宿 花園神社" with venue="花園神社" -> "きよしのズンドコ節". Per-song YouTube
+    videos from a venue whose known-event pattern was missing in
+    extract_youtube_setlists.py end up with the venue name (and often a preceding
+    place qualifier like "新宿") baked into every song's title (see that module's
+    2026-07-24 花園神社/下町盆踊りフェス venue-detection fix).
+
+    Must run on a space-preserving title, before normalize_text() collapses all
+    whitespace -- once whitespace is gone the token boundary is gone too, and a
+    lookback pattern here over-matches (2026-07-24 bug: on the pre-collapsed
+    "りんご節新宿花園神社" a \\S{0,10} lookback from "花園神社" swallowed the whole
+    "りんご節新宿" prefix instead of just "新宿", erasing the song name)."""
+    if not venue or venue not in title:
+        return title
+    pattern = re.compile(r"(?:\s+\S{1,10})?\s*" + re.escape(venue) + r"\s*$")
+    stripped = pattern.sub("", title).strip()
+    return stripped or title
+
+
+def clean_song_candidate_title(raw_title, venue=""):
+    """Produce a display-quality song title: light cleanup only (NFKC width
+    normalization, drop known noise), NOT the aggressive symbol/whitespace/case
+    folding normalize_text() does for matching keys -- this value is stored as
+    occurrence_songs.song_title_raw and shown to the public, so it must keep
+    real punctuation and casing (e.g. "Let's ONDO Again")."""
+    title = unicodedata.normalize("NFKC", str(raw_title or "")).strip()
+    title = ANNOTATION_PAREN_RE.sub("", title)
+    title = NOISE_SUFFIX_RE.sub("", title)
+    title = LEADING_STRIP_RE.sub("", title)
+    title = strip_venue_suffix(title, venue)
+    return re.sub(r"\s+", " ", title).strip()
+
+
+def song_title_passes_shape_check(title):
+    if not title or len(title) > SONG_TITLE_MAX_LEN:
+        return False
+    if BRACKET_ONLY_RE.match(title):
+        return False
+    if re.fullmatch(r"第[0-9０-９]{1,3}回", title):
+        return False
+    if "/" in title:
+        return False
+    if "(" in title or "（" in title:
+        return False
+    if UNBALANCED_CLOSE_BRACKET_RE.search(title) and not OPEN_BRACKET_RE.search(title):
+        return False
+    return bool(re.search(r"[A-Za-z一-龥ぁ-んァ-ヶー]", title))
+
+
+SONG_CANDIDATE_STATUS = "候補"  # matches the existing convention (e.g. build_event_song_candidates.py
+# / glossary_v2 initial registration), NOT the English "candidate" -- songs.status
+# already mixes 有効/無効/候補 (Japanese) with active (English, from a different
+# writer); introducing a second "candidate" spelling would just add another
+# inconsistent status value instead of joining the existing one.
+
+
+def resolve_song(conn, raw_title, venue, now, register_candidate=True):
+    """Return (song_id, display_title, verdict). verdict is one of
+    'matched' (exact hit in the curated songs master), 'candidate_new'
+    (new songs.status='候補' row created), 'candidate_existing'
+    (matched an existing 候補 row), 'rejected' (fails the shape
+    check; caller should not write an occurrence_songs row for it), or
+    'unmatched_no_register' (no master hit and register_candidate=False,
+    so nothing was written to songs -- used for occurrences that never
+    matched a curated event and therefore can't reach occurrence_songs
+    anyway; registering a candidate there would just be master pollution
+    with no occurrence_songs row ever consuming it, as happened for the
+    276/308 unmatched occurrences in this fix's initial dry-run)."""
+    cleaned = clean_song_candidate_title(raw_title, venue)
+    normalized = normalize_text(cleaned)
+    existing = conn.execute(
+        "SELECT song_id, canonical_title, status FROM songs WHERE normalized_title = ?",
+        (normalized,),
+    ).fetchone()
+    if existing:
+        verdict = "matched" if existing[2] != SONG_CANDIDATE_STATUS else "candidate_existing"
+        return existing[0], existing[1], verdict
+    if not register_candidate:
+        return None, None, "unmatched_no_register"
+    if not song_title_passes_shape_check(cleaned):
+        return None, None, "rejected"
+    song_id = stable_id("song_cand", normalized)
+    conn.execute(
+        """
+        INSERT INTO songs(
+          song_id, canonical_title, normalized_title, status, memo, created_at, updated_at
+        ) VALUES (?, ?, ?, ?, ?, ?, ?)
+        """,
+        (
+            song_id,
+            cleaned,
+            normalized,
+            SONG_CANDIDATE_STATUS,
+            "auto-registered from YouTube setlist extraction (apply_youtube_setlist_occurrences_rdb.py)",
+            now,
+            now,
+        ),
+    )
+    return song_id, cleaned, "candidate_new"
 
 
 def rows(conn, query, params=()):
@@ -113,14 +270,6 @@ def occurrence_year(occurrence):
             except ValueError:
                 continue
     return None
-
-
-def song_id_for_title(conn, title):
-    row = conn.execute(
-        "SELECT song_id FROM songs WHERE normalized_title = ?",
-        (normalize_text(title),),
-    ).fetchone()
-    return row[0] if row else None
 
 
 def best_match(conn, occurrence, year):
@@ -209,15 +358,22 @@ def apply_occurrence(conn, occurrence, now):
 
     song_relation_count = 0
     evidence_count = 0
+    rejected_title_count = 0
+    candidate_song_count = 0
     for song in occurrence.get("setlist") or []:
         title = song.get("title") or ""
         if not title:
             continue
         normalized = normalize_text(title)
         role = "result"
-        song_id = song_id_for_title(conn, title)
+        song_id, display_title, verdict = resolve_song(
+            conn, title, venue_name, now, register_candidate=bool(matched_occurrence_id)
+        )
+        if verdict == "candidate_new":
+            candidate_song_count += 1
         occurrence_song_id = None
-        if matched_occurrence_id:
+        if matched_occurrence_id and verdict != "rejected":
+            clean_normalized = normalize_text(display_title)
             # occurrence_songs.occurrence_song_id is not a stable function of its own unique key
             # across every writer (e.g. the firsthand field-report pipeline uses an "osong_" prefix
             # instead of this script's "ocs_"). The real identity is the UNIQUE(occurrence_id,
@@ -230,7 +386,7 @@ def apply_occurrence(conn, occurrence, now):
                 SELECT occurrence_song_id FROM occurrence_songs
                 WHERE occurrence_id = ? AND normalized_title = ? AND role = ?
                 """,
-                (matched_occurrence_id, normalized, role),
+                (matched_occurrence_id, clean_normalized, role),
             ).fetchone()
             if existing:
                 occurrence_song_id = existing[0]
@@ -246,7 +402,7 @@ def apply_occurrence(conn, occurrence, now):
                     (first_video.get("published_at") or "", now, occurrence_song_id),
                 )
             else:
-                occurrence_song_id = stable_id("ocs", matched_occurrence_id, normalized, role)
+                occurrence_song_id = stable_id("ocs", matched_occurrence_id, clean_normalized, role)
                 conn.execute(
                     """
                     INSERT INTO occurrence_songs(
@@ -260,8 +416,8 @@ def apply_occurrence(conn, occurrence, now):
                         "observed_youtube_setlist",
                         matched_occurrence_id,
                         song_id,
-                        title,
-                        normalized,
+                        display_title,
+                        clean_normalized,
                         role,
                         "observed",
                         None,
@@ -271,11 +427,20 @@ def apply_occurrence(conn, occurrence, now):
                         None,
                         first_video.get("published_at") or "",
                         first_video.get("published_at") or "",
-                        json_text({"basis": "youtube_observed_setlist", "extraction_confidence": confidence}),
+                        json_text(
+                            {
+                                "basis": "youtube_observed_setlist",
+                                "extraction_confidence": confidence,
+                                "title_quality_verdict": verdict,
+                                "raw_title": title,
+                            }
+                        ),
                         now,
                         now,
                     ),
                 )
+        elif verdict == "rejected":
+            rejected_title_count += 1
 
         observed_occurrence_song_id = stable_id("obsocs", observed_occurrence_id, normalized, role)
         conn.execute(
@@ -362,6 +527,8 @@ def apply_occurrence(conn, occurrence, now):
         "quality_status": quality_status,
         "song_relation_count": song_relation_count,
         "evidence_count": evidence_count,
+        "rejected_title_count": rejected_title_count,
+        "candidate_song_count": candidate_song_count,
     }
 
 
@@ -545,6 +712,8 @@ def run(args):
             "occurrences_unmatched": len(results) - len(matched_results),
             "song_relations_written": sum(r["song_relation_count"] for r in results),
             "evidence_items_written": sum(r["evidence_count"] for r in results),
+            "song_titles_rejected": sum(r["rejected_title_count"] for r in results),
+            "candidate_songs_registered": sum(r["candidate_song_count"] for r in results),
             "issues_by_severity": issue_summary(issues),
             "audit_issues_by_severity": audit_result["issues_by_severity"],
             "table_counts": counts,

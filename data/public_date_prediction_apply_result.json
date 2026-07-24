@@ -2,9 +2,9 @@
   "generated_by": "apply_public_date_predictions.py",
   "source": "data/event_date_predictions.json",
   "public_events": "data/public/events_public.json",
-  "applied_count": 4,
+  "applied_count": 5,
   "skipped_count": 7,
-  "unmatched_count": 2,
+  "unmatched_count": 1,
   "applied": [
     {
       "event_name": "シタマチ.ふるさと盆踊り大会",
@@ -73,6 +73,42 @@
         "evidence_years": [
           2024,
           2025
+        ],
+        "evidence_count": 2,
+        "has_actual_observation": false
+      }
+    },
+    {
+      "event_name": "第15回 鴨台盆踊り",
+      "venue": "大正大学",
+      "before": {
+        "date": "2025-07-04",
+        "date_end": "2025-07-05",
+        "display_tier": null,
+        "predicted_date": null,
+        "predicted_date_end": null
+      },
+      "after": {
+        "date": "2025-07-04",
+        "date_end": "2025-07-05",
+        "display_tier": "rule_predicted",
+        "predicted_date": "2026-07-04",
+        "predicted_date_end": "2026-07-05"
+      },
+      "date_prediction": {
+        "display_tier": "rule_predicted",
+        "target_year": 2026,
+        "date": "2026-07-04",
+        "date_end": "2026-07-05",
+        "weekday_start": "土",
+        "weekday_end": "日",
+        "confidence": "medium",
+        "score": 0.6,
+        "rule_type": "weekend_near_day",
+        "basis": "7月6日前後の週末",
+        "evidence_years": [
+          2023,
+          2024
         ],
         "evidence_count": 2,
         "has_actual_observation": false
@@ -323,28 +359,6 @@
     }
   ],
   "unmatched": [
-    {
-      "event_name": "第15回 鴨台盆踊り",
-      "venue": "大正大学",
-      "date_prediction": {
-        "display_tier": "rule_predicted",
-        "target_year": 2026,
-        "date": "2026-07-04",
-        "date_end": "2026-07-05",
-        "weekday_start": "土",
-        "weekday_end": "日",
-        "confidence": "medium",
-        "score": 0.6,
-        "rule_type": "weekend_near_day",
-        "basis": "7月6日前後の週末",
-        "evidence_years": [
-          2023,
-          2024
-        ],
-        "evidence_count": 2,
-        "has_actual_observation": false
-      }
-    },
     {
       "event_name": "第28回新橋こいち祭 盆踊り",
       "venue": "桜田公園",

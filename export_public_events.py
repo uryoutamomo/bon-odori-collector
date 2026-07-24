@@ -552,6 +552,14 @@ def _song_from_rdb(row):
     elif row["evidence_status"] == "observed":
         basis = "current_observed"
         basis_label = "実測"
+    elif row["evidence_status"] == "predicted" and not row["inherited_from_year"]:
+        # predicted は observed/announced 以外の証拠(hint等)しかないケース。
+        # inherited_from_year が無ければ過去年からの継承ではなく今年ヒント
+        # (legacy JSON時代のbasis="current_hint"に相当。RDB移行時に
+        # evidence_status='predicted'の行だけこの分岐が抜けており、直下の
+        # inherited_from_yearチェックにも掛からず「過去実績」に誤表示していた)。
+        basis = "current_hint"
+        basis_label = "今年ヒント"
     elif row["inherited_from_year"]:
         basis_label = f"{row['inherited_from_year']}年ヒント"
     song = {
@@ -1029,12 +1037,18 @@ def build_public_events_from_master(db_path=MASTER_DB, *, target_year):
             )
             jun = merge_jun_labels(jun_labels(raw_detail), jun_labels(row["past_memo"]), jun_labels_from_hints(hints))
         songs = extract_song_hints(description, raw_detail)
-        if rdb_songs.get(row["occurrence_id"]):
-            songs = merge_song_occurrence_hints(songs, {"songs": rdb_songs[row["occurrence_id"]]})
-        occurrence = song_occurrences.get(
-            _song_occurrence_key(public_name, row["venue"], int(row["event_year"] or target_year))
-        )
-        songs = merge_song_occurrence_hints(songs, occurrence)
+        rdb_song_hints = rdb_songs.get(row["occurrence_id"])
+        if rdb_song_hints:
+            # RDB is authoritative once it has song data for this occurrence: the
+            # legacy song_occurrences.json snapshot is frozen (2026-06-20) and would
+            # otherwise unconditionally overwrite RDB-computed probabilities with
+            # stale values (see calibrate_song_probabilities_rdb.py).
+            songs = merge_song_occurrence_hints(songs, {"songs": rdb_song_hints})
+        else:
+            occurrence = song_occurrences.get(
+                _song_occurrence_key(public_name, row["venue"], int(row["event_year"] or target_year))
+            )
+            songs = merge_song_occurrence_hints(songs, occurrence)
         songs = strip_song_internal_fields(songs)
         date_candidates = [] if date else date_candidates_by_event.get(row["occurrence_id"], [])
         events.append({

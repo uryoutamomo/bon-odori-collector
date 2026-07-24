@@ -1,11 +1,11 @@
 {
   "generated_by": "extract_youtube_setlists.py",
-  "generated_at": "2026-07-24T06:22:10.232707+00:00",
+  "generated_at": "2026-07-24T08:11:13.544331+00:00",
   "source": "data/voices.json",
   "review_hint_source": "data/youtube_song_candidates_review.json",
   "public_event_match_source": "data/public/events_public.json",
   "youtube_voice_count": 4650,
-  "occurrence_count": 324,
+  "occurrence_count": 308,
   "matched_public_event_count": 31,
   "setlist_song_count": 2667,
   "occurrences": [
@@ -13395,7 +13395,19 @@
       "role": "result",
       "act": "observe",
       "reliability_key": "complete_numbered_video",
-      "matched_public_event": null
+      "matched_public_event": {
+        "name": "第15回 鴨台盆踊り",
+        "venue": "大正大学",
+        "date": "2025-07-04",
+        "date_end": "2025-07-05",
+        "score": 80,
+        "reasons": [
+          "date",
+          "event_name_partial"
+        ]
+      },
+      "canonical_event_name": "第15回 鴨台盆踊り",
+      "canonical_venue": "大正大学"
     },
     {
       "occurrence_key": "02655e2be1f07abb",
@@ -21265,108 +21277,6 @@
       "canonical_venue": "中央通り（銀座1丁目〜8丁目）"
     },
     {
-      "occurrence_key": "904f3354e121b21c",
-      "event_key_hint": "新宿花園神社盆踊り",
-      "event_name_hint": "新宿 花園神社 盆踊り",
-      "venue": "新宿 花園神社 盆踊り",
-      "event_date": "2025-08-02",
-      "accounts": [
-        "UCWz2tM7PAFGT7xSL5OAEllg"
-      ],
-      "setlist": [
-        {
-          "number": 1,
-          "title": "DESIRE -情熱",
-          "url": "https://www.youtube.com/watch?v=h8VT6jme1aI",
-          "evidence_type": "title_song_fragment",
-          "event_name_hint": "新宿 花園神社 盆踊り",
-          "title_parse_method": "bracket_event_and_quote"
-        },
-        {
-          "number": 1,
-          "title": "ダンシングヒーロー",
-          "url": "https://www.youtube.com/watch?v=NAT8zVY-_Uw",
-          "evidence_type": "title_song_fragment",
-          "event_name_hint": "新宿 花園神社 盆踊り",
-          "title_parse_method": "bracket_event_and_quote"
-        },
-        {
-          "number": 1,
-          "title": "八木節",
-          "url": "https://www.youtube.com/watch?v=miRpwhuGNjo",
-          "evidence_type": "title_song_fragment",
-          "event_name_hint": "新宿 花園神社 盆踊り",
-          "title_parse_method": "bracket_event_and_quote"
-        },
-        {
-          "number": 1,
-          "title": "炭坑節 /東京音頭 / 新宿音頭 / 八木節",
-          "url": "https://www.youtube.com/watch?v=-fRgnyO96jw",
-          "evidence_type": "title_song_fragment",
-          "event_name_hint": "新宿 花園神社 盆踊り",
-          "title_parse_method": "bracket_event_and_quote"
-        }
-      ],
-      "source_videos": [
-        {
-          "url": "https://www.youtube.com/watch?v=miRpwhuGNjo",
-          "account": "UCWz2tM7PAFGT7xSL5OAEllg",
-          "title": "生歌「八木節」!! 粋な歌声は今年も健在!!【新宿 花園神社 盆踊り 2025】 盆踊り Hanazono  Shrine Bon Dance Festival",
-          "published_at": "2025-08-02T15:37:37Z",
-          "thumbnail_url": "https://i.ytimg.com/vi/miRpwhuGNjo/maxresdefault.jpg",
-          "text_length": 307,
-          "media_url_count": 1
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=NAT8zVY-_Uw",
-          "account": "UCWz2tM7PAFGT7xSL5OAEllg",
-          "title": "【新宿 花園神社 盆踊り 2025】「ダンシングヒーロー」- 荻野目洋子 / 盆踊り Hanazono Shrine Bon Dance Festival",
-          "published_at": "2025-08-04T12:00:43Z",
-          "thumbnail_url": "https://i.ytimg.com/vi/NAT8zVY-_Uw/maxresdefault.jpg",
-          "text_length": 312,
-          "media_url_count": 1
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=h8VT6jme1aI",
-          "account": "UCWz2tM7PAFGT7xSL5OAEllg",
-          "title": "【新宿 花園神社 盆踊り 2025】「DESIRE -情熱-」中森明菜 で盆踊り / Hanazono  Shrine Bon Dance Festival",
-          "published_at": "2025-08-04T13:01:16Z",
-          "thumbnail_url": "https://i.ytimg.com/vi/h8VT6jme1aI/maxresdefault.jpg",
-          "text_length": 304,
-          "media_url_count": 1
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=-fRgnyO96jw",
-          "account": "UCWz2tM7PAFGT7xSL5OAEllg",
-          "title": "新宿に別世界!! 生唄生演奏で盆踊り 【新宿 花園神社 盆踊り 2025】「炭坑節 /東京音頭 / 新宿音頭 / 八木節」/ Hanazono  Shrine Bon Dance Festival",
-          "published_at": "2025-08-05T08:00:01Z",
-          "thumbnail_url": "https://i.ytimg.com/vi/-fRgnyO96jw/maxresdefault.jpg",
-          "text_length": 355,
-          "media_url_count": 1
-        }
-      ],
-      "source_video_count": 4,
-      "song_count": 4,
-      "confidence": "high",
-      "role": "result",
-      "act": "observe",
-      "reliability_key": "complete_numbered_video",
-      "matched_public_event": {
-        "name": "花園神社 盆踊り",
-        "venue": "花園神社",
-        "date": "2025-08-01",
-        "date_end": "2025-08-02",
-        "score": 98,
-        "reasons": [
-          "date",
-          "event_name_partial",
-          "venue_partial"
-        ]
-      },
-      "canonical_event_name": "花園神社 盆踊り",
-      "canonical_venue": "花園神社"
-    },
-    {
       "occurrence_key": "41b26f5f03ce6ac5",
       "event_key_hint": "渋谷盆踊り",
       "event_name_hint": "渋谷盆踊り",
@@ -21483,6 +21393,109 @@
       },
       "canonical_event_name": "第6回 渋谷盆踊り",
       "canonical_venue": "SHIBUYA109前〜道玄坂・文化村通り一帯"
+    },
+    {
+      "occurrence_key": "400fb792f32d02b8",
+      "event_key_hint": "花園神社盆踊り",
+      "event_name_hint": "花園神社 盆踊り",
+      "venue": "花園神社",
+      "event_date": "2025-08-02",
+      "accounts": [
+        "UCWz2tM7PAFGT7xSL5OAEllg"
+      ],
+      "setlist": [
+        {
+          "number": 1,
+          "title": "DESIRE -情熱",
+          "url": "https://www.youtube.com/watch?v=h8VT6jme1aI",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "新宿 花園神社 盆踊り",
+          "title_parse_method": "bracket_event_and_quote"
+        },
+        {
+          "number": 1,
+          "title": "ダンシングヒーロー",
+          "url": "https://www.youtube.com/watch?v=NAT8zVY-_Uw",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "新宿 花園神社 盆踊り",
+          "title_parse_method": "bracket_event_and_quote"
+        },
+        {
+          "number": 1,
+          "title": "八木節",
+          "url": "https://www.youtube.com/watch?v=miRpwhuGNjo",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "新宿 花園神社 盆踊り",
+          "title_parse_method": "bracket_event_and_quote"
+        },
+        {
+          "number": 1,
+          "title": "炭坑節 /東京音頭 / 新宿音頭 / 八木節",
+          "url": "https://www.youtube.com/watch?v=-fRgnyO96jw",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "新宿 花園神社 盆踊り",
+          "title_parse_method": "bracket_event_and_quote"
+        }
+      ],
+      "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=miRpwhuGNjo",
+          "account": "UCWz2tM7PAFGT7xSL5OAEllg",
+          "title": "生歌「八木節」!! 粋な歌声は今年も健在!!【新宿 花園神社 盆踊り 2025】 盆踊り Hanazono  Shrine Bon Dance Festival",
+          "published_at": "2025-08-02T15:37:37Z",
+          "thumbnail_url": "https://i.ytimg.com/vi/miRpwhuGNjo/maxresdefault.jpg",
+          "text_length": 307,
+          "media_url_count": 1
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=NAT8zVY-_Uw",
+          "account": "UCWz2tM7PAFGT7xSL5OAEllg",
+          "title": "【新宿 花園神社 盆踊り 2025】「ダンシングヒーロー」- 荻野目洋子 / 盆踊り Hanazono Shrine Bon Dance Festival",
+          "published_at": "2025-08-04T12:00:43Z",
+          "thumbnail_url": "https://i.ytimg.com/vi/NAT8zVY-_Uw/maxresdefault.jpg",
+          "text_length": 312,
+          "media_url_count": 1
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=h8VT6jme1aI",
+          "account": "UCWz2tM7PAFGT7xSL5OAEllg",
+          "title": "【新宿 花園神社 盆踊り 2025】「DESIRE -情熱-」中森明菜 で盆踊り / Hanazono  Shrine Bon Dance Festival",
+          "published_at": "2025-08-04T13:01:16Z",
+          "thumbnail_url": "https://i.ytimg.com/vi/h8VT6jme1aI/maxresdefault.jpg",
+          "text_length": 304,
+          "media_url_count": 1
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=-fRgnyO96jw",
+          "account": "UCWz2tM7PAFGT7xSL5OAEllg",
+          "title": "新宿に別世界!! 生唄生演奏で盆踊り 【新宿 花園神社 盆踊り 2025】「炭坑節 /東京音頭 / 新宿音頭 / 八木節」/ Hanazono  Shrine Bon Dance Festival",
+          "published_at": "2025-08-05T08:00:01Z",
+          "thumbnail_url": "https://i.ytimg.com/vi/-fRgnyO96jw/maxresdefault.jpg",
+          "text_length": 355,
+          "media_url_count": 1
+        }
+      ],
+      "source_video_count": 4,
+      "song_count": 4,
+      "confidence": "high",
+      "role": "result",
+      "act": "observe",
+      "reliability_key": "complete_numbered_video",
+      "matched_public_event": {
+        "name": "花園神社 盆踊り",
+        "venue": "花園神社",
+        "date": "2025-08-01",
+        "date_end": "2025-08-02",
+        "score": 140,
+        "reasons": [
+          "date",
+          "event_name_exact",
+          "venue_exact",
+          "event_key_hint"
+        ]
+      },
+      "canonical_event_name": "花園神社 盆踊り",
+      "canonical_venue": "花園神社"
     },
     {
       "occurrence_key": "c39cf15bbd89239a",
@@ -21984,196 +21997,6 @@
       "matched_public_event": null
     },
     {
-      "occurrence_key": "942089dc38581f0a",
-      "event_key_hint": "きよしのズンドコ節新宿花園神社盆踊り",
-      "event_name_hint": "きよしのズンドコ節 新宿 花園神社 盆踊り",
-      "venue": "きよしのズンドコ節 新宿 花園神社 盆踊り",
-      "event_date": "2025-08-03",
-      "accounts": [
-        "UCLSZK_q5ma6aeIrVRUEpkNw"
-      ],
-      "setlist": [
-        {
-          "number": 1,
-          "title": "きよしのズンドコ節 新宿 花園神社",
-          "url": "https://www.youtube.com/watch?v=NKFXa922JFA",
-          "evidence_type": "title_song_fragment",
-          "event_name_hint": "きよしのズンドコ節 新宿 花園神社 盆踊り",
-          "title_parse_method": "slash_parts"
-        }
-      ],
-      "source_videos": [
-        {
-          "url": "https://www.youtube.com/watch?v=NKFXa922JFA",
-          "account": "UCLSZK_q5ma6aeIrVRUEpkNw",
-          "title": "きよしのズンドコ節 　新宿 花園神社　盆踊り 　20250803",
-          "published_at": "2025-08-05T11:00:39Z",
-          "thumbnail_url": "https://i.ytimg.com/vi/NKFXa922JFA/maxresdefault.jpg",
-          "text_length": 481,
-          "media_url_count": 15
-        }
-      ],
-      "source_video_count": 1,
-      "song_count": 1,
-      "confidence": "low",
-      "role": "result",
-      "act": "observe",
-      "reliability_key": "complete_numbered_video",
-      "matched_public_event": null
-    },
-    {
-      "occurrence_key": "960922ee94f18bad",
-      "event_key_hint": "りんご節新宿花園神社盆踊り",
-      "event_name_hint": "りんご節 新宿 花園神社 盆踊り",
-      "venue": "りんご節 新宿 花園神社 盆踊り",
-      "event_date": "2025-08-03",
-      "accounts": [
-        "UCLSZK_q5ma6aeIrVRUEpkNw"
-      ],
-      "setlist": [
-        {
-          "number": 1,
-          "title": "りんご節 新宿 花園神社",
-          "url": "https://www.youtube.com/watch?v=CBERUJvgnoM",
-          "evidence_type": "title_song_fragment",
-          "event_name_hint": "りんご節 新宿 花園神社 盆踊り",
-          "title_parse_method": "slash_parts"
-        }
-      ],
-      "source_videos": [
-        {
-          "url": "https://www.youtube.com/watch?v=CBERUJvgnoM",
-          "account": "UCLSZK_q5ma6aeIrVRUEpkNw",
-          "title": "りんご節 　新宿 花園神社　盆踊り 　20250803",
-          "published_at": "2025-08-05T09:00:27Z",
-          "thumbnail_url": "https://i.ytimg.com/vi/CBERUJvgnoM/maxresdefault.jpg",
-          "text_length": 481,
-          "media_url_count": 15
-        }
-      ],
-      "source_video_count": 1,
-      "song_count": 1,
-      "confidence": "low",
-      "role": "result",
-      "act": "observe",
-      "reliability_key": "complete_numbered_video",
-      "matched_public_event": null
-    },
-    {
-      "occurrence_key": "a47be5dfe7f2cc6d",
-      "event_key_hint": "ズンパ音頭新宿花園神社盆踊り",
-      "event_name_hint": "ズンパ音頭 新宿 花園神社 盆踊り",
-      "venue": "ズンパ音頭 新宿 花園神社 盆踊り",
-      "event_date": "2025-08-03",
-      "accounts": [
-        "UCLSZK_q5ma6aeIrVRUEpkNw"
-      ],
-      "setlist": [
-        {
-          "number": 1,
-          "title": "ズンパ音頭 新宿 花園神社",
-          "url": "https://www.youtube.com/watch?v=AsULmIH2Ky0",
-          "evidence_type": "title_song_fragment",
-          "event_name_hint": "ズンパ音頭 新宿 花園神社 盆踊り",
-          "title_parse_method": "slash_parts"
-        }
-      ],
-      "source_videos": [
-        {
-          "url": "https://www.youtube.com/watch?v=AsULmIH2Ky0",
-          "account": "UCLSZK_q5ma6aeIrVRUEpkNw",
-          "title": "ズンパ音頭 　新宿 花園神社　盆踊り 　20250803",
-          "published_at": "2025-08-05T08:45:01Z",
-          "thumbnail_url": "https://i.ytimg.com/vi/AsULmIH2Ky0/maxresdefault.jpg",
-          "text_length": 481,
-          "media_url_count": 15
-        }
-      ],
-      "source_video_count": 1,
-      "song_count": 1,
-      "confidence": "low",
-      "role": "result",
-      "act": "observe",
-      "reliability_key": "complete_numbered_video",
-      "matched_public_event": null
-    },
-    {
-      "occurrence_key": "06faffec2e48720d",
-      "event_key_hint": "チャンチキおけさ新宿花園神社盆踊り",
-      "event_name_hint": "チャンチキおけさ 新宿 花園神社 盆踊り",
-      "venue": "チャンチキおけさ 新宿 花園神社 盆踊り",
-      "event_date": "2025-08-03",
-      "accounts": [
-        "UCLSZK_q5ma6aeIrVRUEpkNw"
-      ],
-      "setlist": [
-        {
-          "number": 1,
-          "title": "チャンチキおけさ 新宿 花園神社",
-          "url": "https://www.youtube.com/watch?v=VswlhiCN_kA",
-          "evidence_type": "title_song_fragment",
-          "event_name_hint": "チャンチキおけさ 新宿 花園神社 盆踊り",
-          "title_parse_method": "slash_parts"
-        }
-      ],
-      "source_videos": [
-        {
-          "url": "https://www.youtube.com/watch?v=VswlhiCN_kA",
-          "account": "UCLSZK_q5ma6aeIrVRUEpkNw",
-          "title": "チャンチキおけさ 　新宿 花園神社　盆踊り 　20250803",
-          "published_at": "2025-08-05T11:30:33Z",
-          "thumbnail_url": "https://i.ytimg.com/vi/VswlhiCN_kA/maxresdefault.jpg",
-          "text_length": 481,
-          "media_url_count": 15
-        }
-      ],
-      "source_video_count": 1,
-      "song_count": 1,
-      "confidence": "low",
-      "role": "result",
-      "act": "observe",
-      "reliability_key": "complete_numbered_video",
-      "matched_public_event": null
-    },
-    {
-      "occurrence_key": "005895282c84cd6d",
-      "event_key_hint": "ドンパン節新宿花園神社盆踊り",
-      "event_name_hint": "ドンパン節 新宿 花園神社 盆踊り",
-      "venue": "ドンパン節 新宿 花園神社 盆踊り",
-      "event_date": "2025-08-03",
-      "accounts": [
-        "UCLSZK_q5ma6aeIrVRUEpkNw"
-      ],
-      "setlist": [
-        {
-          "number": 1,
-          "title": "ドンパン節 新宿 花園神社",
-          "url": "https://www.youtube.com/watch?v=UJ7pthA6lPQ",
-          "evidence_type": "title_song_fragment",
-          "event_name_hint": "ドンパン節 新宿 花園神社 盆踊り",
-          "title_parse_method": "slash_parts"
-        }
-      ],
-      "source_videos": [
-        {
-          "url": "https://www.youtube.com/watch?v=UJ7pthA6lPQ",
-          "account": "UCLSZK_q5ma6aeIrVRUEpkNw",
-          "title": "ドンパン節 　新宿 花園神社　盆踊り 　20250803",
-          "published_at": "2025-08-05T10:00:51Z",
-          "thumbnail_url": "https://i.ytimg.com/vi/UJ7pthA6lPQ/maxresdefault.jpg",
-          "text_length": 481,
-          "media_url_count": 15
-        }
-      ],
-      "source_video_count": 1,
-      "song_count": 1,
-      "confidence": "low",
-      "role": "result",
-      "act": "observe",
-      "reliability_key": "complete_numbered_video",
-      "matched_public_event": null
-    },
-    {
       "occurrence_key": "55575b5b4fa38a00",
       "event_key_hint": "亀有リリオパーク盆踊り",
       "event_name_hint": "亀有リリオパーク盆踊り",
@@ -22513,15 +22336,55 @@
       "matched_public_event": null
     },
     {
-      "occurrence_key": "a98f1496e03af7c9",
-      "event_key_hint": "八木節高速新宿花園神社盆踊り",
-      "event_name_hint": "八木節(高速) 新宿 花園神社 盆踊り",
-      "venue": "八木節(高速) 新宿 花園神社 盆踊り",
+      "occurrence_key": "8415d46ec8089859",
+      "event_key_hint": "花園神社盆踊り",
+      "event_name_hint": "花園神社 盆踊り",
+      "venue": "花園神社",
       "event_date": "2025-08-03",
       "accounts": [
         "UCLSZK_q5ma6aeIrVRUEpkNw"
       ],
       "setlist": [
+        {
+          "number": 1,
+          "title": "きよしのズンドコ節 新宿 花園神社",
+          "url": "https://www.youtube.com/watch?v=NKFXa922JFA",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "きよしのズンドコ節 新宿 花園神社 盆踊り",
+          "title_parse_method": "slash_parts"
+        },
+        {
+          "number": 1,
+          "title": "りんご節 新宿 花園神社",
+          "url": "https://www.youtube.com/watch?v=CBERUJvgnoM",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "りんご節 新宿 花園神社 盆踊り",
+          "title_parse_method": "slash_parts"
+        },
+        {
+          "number": 1,
+          "title": "ズンパ音頭 新宿 花園神社",
+          "url": "https://www.youtube.com/watch?v=AsULmIH2Ky0",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "ズンパ音頭 新宿 花園神社 盆踊り",
+          "title_parse_method": "slash_parts"
+        },
+        {
+          "number": 1,
+          "title": "チャンチキおけさ 新宿 花園神社",
+          "url": "https://www.youtube.com/watch?v=VswlhiCN_kA",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "チャンチキおけさ 新宿 花園神社 盆踊り",
+          "title_parse_method": "slash_parts"
+        },
+        {
+          "number": 1,
+          "title": "ドンパン節 新宿 花園神社",
+          "url": "https://www.youtube.com/watch?v=UJ7pthA6lPQ",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "ドンパン節 新宿 花園神社 盆踊り",
+          "title_parse_method": "slash_parts"
+        },
         {
           "number": 1,
           "title": "八木節(高速) 新宿 花園神社",
@@ -22529,37 +22392,7 @@
           "evidence_type": "title_song_fragment",
           "event_name_hint": "八木節(高速) 新宿 花園神社 盆踊り",
           "title_parse_method": "slash_parts"
-        }
-      ],
-      "source_videos": [
-        {
-          "url": "https://www.youtube.com/watch?v=OPpomvedZok",
-          "account": "UCLSZK_q5ma6aeIrVRUEpkNw",
-          "title": "八木節（高速）　新宿 花園神社　盆踊り 　20250803",
-          "published_at": "2025-08-05T10:15:02Z",
-          "thumbnail_url": "https://i.ytimg.com/vi/OPpomvedZok/maxresdefault.jpg",
-          "text_length": 481,
-          "media_url_count": 15
-        }
-      ],
-      "source_video_count": 1,
-      "song_count": 1,
-      "confidence": "low",
-      "role": "result",
-      "act": "observe",
-      "reliability_key": "complete_numbered_video",
-      "matched_public_event": null
-    },
-    {
-      "occurrence_key": "9464f9a7cb7d35bc",
-      "event_key_hint": "大東京音頭新宿花園神社盆踊り",
-      "event_name_hint": "大東京音頭 新宿 花園神社 盆踊り",
-      "venue": "大東京音頭 新宿 花園神社 盆踊り",
-      "event_date": "2025-08-03",
-      "accounts": [
-        "UCLSZK_q5ma6aeIrVRUEpkNw"
-      ],
-      "setlist": [
+        },
         {
           "number": 1,
           "title": "大東京音頭 新宿 花園神社",
@@ -22567,37 +22400,7 @@
           "evidence_type": "title_song_fragment",
           "event_name_hint": "大東京音頭 新宿 花園神社 盆踊り",
           "title_parse_method": "slash_parts"
-        }
-      ],
-      "source_videos": [
-        {
-          "url": "https://www.youtube.com/watch?v=35zMWf5RROc",
-          "account": "UCLSZK_q5ma6aeIrVRUEpkNw",
-          "title": "大東京音頭 　新宿 花園神社　盆踊り 　20250803",
-          "published_at": "2025-08-05T09:45:00Z",
-          "thumbnail_url": "https://i.ytimg.com/vi/35zMWf5RROc/maxresdefault.jpg",
-          "text_length": 481,
-          "media_url_count": 15
-        }
-      ],
-      "source_video_count": 1,
-      "song_count": 1,
-      "confidence": "low",
-      "role": "result",
-      "act": "observe",
-      "reliability_key": "complete_numbered_video",
-      "matched_public_event": null
-    },
-    {
-      "occurrence_key": "ddd737a24f5dbe56",
-      "event_key_hint": "宝っこ音頭新宿花園神社盆踊り",
-      "event_name_hint": "宝っこ音頭 新宿 花園神社 盆踊り",
-      "venue": "宝っこ音頭 新宿 花園神社 盆踊り",
-      "event_date": "2025-08-03",
-      "accounts": [
-        "UCLSZK_q5ma6aeIrVRUEpkNw"
-      ],
-      "setlist": [
+        },
         {
           "number": 1,
           "title": "宝っこ音頭 新宿 花園神社",
@@ -22605,37 +22408,7 @@
           "evidence_type": "title_song_fragment",
           "event_name_hint": "宝っこ音頭 新宿 花園神社 盆踊り",
           "title_parse_method": "slash_parts"
-        }
-      ],
-      "source_videos": [
-        {
-          "url": "https://www.youtube.com/watch?v=JbSm8mZusfE",
-          "account": "UCLSZK_q5ma6aeIrVRUEpkNw",
-          "title": "宝っこ音頭 　新宿 花園神社　盆踊り 　20250803",
-          "published_at": "2025-08-05T11:45:01Z",
-          "thumbnail_url": "https://i.ytimg.com/vi/JbSm8mZusfE/maxresdefault.jpg",
-          "text_length": 481,
-          "media_url_count": 15
-        }
-      ],
-      "source_video_count": 1,
-      "song_count": 1,
-      "confidence": "low",
-      "role": "result",
-      "act": "observe",
-      "reliability_key": "complete_numbered_video",
-      "matched_public_event": null
-    },
-    {
-      "occurrence_key": "83abf788489f749f",
-      "event_key_hint": "新宿音頭1新宿花園神社盆踊り",
-      "event_name_hint": "新宿音頭1 新宿 花園神社 盆踊り",
-      "venue": "新宿音頭1 新宿 花園神社 盆踊り",
-      "event_date": "2025-08-03",
-      "accounts": [
-        "UCLSZK_q5ma6aeIrVRUEpkNw"
-      ],
-      "setlist": [
+        },
         {
           "number": 1,
           "title": "新宿音頭1 新宿 花園神社",
@@ -22643,37 +22416,7 @@
           "evidence_type": "title_song_fragment",
           "event_name_hint": "新宿音頭1 新宿 花園神社 盆踊り",
           "title_parse_method": "slash_parts"
-        }
-      ],
-      "source_videos": [
-        {
-          "url": "https://www.youtube.com/watch?v=7CKKXbyYRRU",
-          "account": "UCLSZK_q5ma6aeIrVRUEpkNw",
-          "title": "新宿音頭① 　新宿 花園神社　盆踊り 　20250803",
-          "published_at": "2025-08-05T09:30:04Z",
-          "thumbnail_url": "https://i.ytimg.com/vi/7CKKXbyYRRU/maxresdefault.jpg",
-          "text_length": 481,
-          "media_url_count": 15
-        }
-      ],
-      "source_video_count": 1,
-      "song_count": 1,
-      "confidence": "low",
-      "role": "result",
-      "act": "observe",
-      "reliability_key": "complete_numbered_video",
-      "matched_public_event": null
-    },
-    {
-      "occurrence_key": "5d796fed0782ec49",
-      "event_key_hint": "新宿音頭2新宿花園神社盆踊り",
-      "event_name_hint": "新宿音頭2 新宿 花園神社 盆踊り",
-      "venue": "新宿音頭2 新宿 花園神社 盆踊り",
-      "event_date": "2025-08-03",
-      "accounts": [
-        "UCLSZK_q5ma6aeIrVRUEpkNw"
-      ],
-      "setlist": [
+        },
         {
           "number": 1,
           "title": "新宿音頭2 新宿 花園神社",
@@ -22681,37 +22424,7 @@
           "evidence_type": "title_song_fragment",
           "event_name_hint": "新宿音頭2 新宿 花園神社 盆踊り",
           "title_parse_method": "slash_parts"
-        }
-      ],
-      "source_videos": [
-        {
-          "url": "https://www.youtube.com/watch?v=t4P3X1vBVI0",
-          "account": "UCLSZK_q5ma6aeIrVRUEpkNw",
-          "title": "新宿音頭② 　新宿 花園神社　盆踊り 　20250803",
-          "published_at": "2025-08-05T10:01:21Z",
-          "thumbnail_url": "https://i.ytimg.com/vi/t4P3X1vBVI0/maxresdefault.jpg",
-          "text_length": 481,
-          "media_url_count": 15
-        }
-      ],
-      "source_video_count": 1,
-      "song_count": 1,
-      "confidence": "low",
-      "role": "result",
-      "act": "observe",
-      "reliability_key": "complete_numbered_video",
-      "matched_public_event": null
-    },
-    {
-      "occurrence_key": "8f5f81dc5def11ff",
-      "event_key_hint": "新宿音頭コンクール予選決勝新宿花園神社盆踊り",
-      "event_name_hint": "新宿音頭コンクール 予選決勝 新宿 花園神社 盆踊り",
-      "venue": "新宿音頭コンクール 予選決勝 新宿 花園神社 盆踊り",
-      "event_date": "2025-08-03",
-      "accounts": [
-        "UCLSZK_q5ma6aeIrVRUEpkNw"
-      ],
-      "setlist": [
+        },
         {
           "number": 1,
           "title": "新宿音頭コンクール 予選決勝 新宿 花園神社",
@@ -22719,43 +22432,37 @@
           "evidence_type": "title_song_fragment",
           "event_name_hint": "新宿音頭コンクール 予選決勝 新宿 花園神社 盆踊り",
           "title_parse_method": "slash_parts"
-        }
-      ],
-      "source_videos": [
-        {
-          "url": "https://www.youtube.com/watch?v=saQWTdgycRA",
-          "account": "UCLSZK_q5ma6aeIrVRUEpkNw",
-          "title": "新宿音頭コンクール 予選決勝 　新宿 花園神社　盆踊り 　20250803",
-          "published_at": "2025-08-05T10:45:32Z",
-          "thumbnail_url": "https://i.ytimg.com/vi/saQWTdgycRA/maxresdefault.jpg",
-          "text_length": 481,
-          "media_url_count": 15
-        }
-      ],
-      "source_video_count": 1,
-      "song_count": 1,
-      "confidence": "low",
-      "role": "result",
-      "act": "observe",
-      "reliability_key": "complete_numbered_video",
-      "matched_public_event": null
-    },
-    {
-      "occurrence_key": "8b88974f6ae7d1db",
-      "event_key_hint": "東京音頭新宿花園神社盆踊り",
-      "event_name_hint": "東京音頭 新宿 花園神社 盆踊り",
-      "venue": "東京音頭 新宿 花園神社 盆踊り",
-      "event_date": "2025-08-03",
-      "accounts": [
-        "UCLSZK_q5ma6aeIrVRUEpkNw"
-      ],
-      "setlist": [
+        },
         {
           "number": 1,
           "title": "東京音頭 新宿 花園神社",
           "url": "https://www.youtube.com/watch?v=PXZ97B0BKdw",
           "evidence_type": "title_song_fragment",
           "event_name_hint": "東京音頭 新宿 花園神社 盆踊り",
+          "title_parse_method": "slash_parts"
+        },
+        {
+          "number": 1,
+          "title": "浪花節だよ人生は 新宿 花園神社",
+          "url": "https://www.youtube.com/watch?v=npibEFUL31g",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "浪花節だよ人生は 新宿 花園神社 盆踊り",
+          "title_parse_method": "slash_parts"
+        },
+        {
+          "number": 1,
+          "title": "炭坑節 新宿 花園神社",
+          "url": "https://www.youtube.com/watch?v=Wfa0G7EhOdg",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "炭坑節 新宿 花園神社 盆踊り",
+          "title_parse_method": "slash_parts"
+        },
+        {
+          "number": 1,
+          "title": "花笠音頭 新宿 花園神社",
+          "url": "https://www.youtube.com/watch?v=-OCtAId5Zdo",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "花笠音頭 新宿 花園神社 盆踊り",
           "title_parse_method": "slash_parts"
         }
       ],
@@ -22768,112 +22475,25 @@
           "thumbnail_url": "https://i.ytimg.com/vi/PXZ97B0BKdw/maxresdefault.jpg",
           "text_length": 481,
           "media_url_count": 15
-        }
-      ],
-      "source_video_count": 1,
-      "song_count": 1,
-      "confidence": "low",
-      "role": "result",
-      "act": "observe",
-      "reliability_key": "complete_numbered_video",
-      "matched_public_event": null
-    },
-    {
-      "occurrence_key": "9e3f7d05a5fb1244",
-      "event_key_hint": "浪花節だよ人生は新宿花園神社盆踊り",
-      "event_name_hint": "浪花節だよ人生は 新宿 花園神社 盆踊り",
-      "venue": "浪花節だよ人生は 新宿 花園神社 盆踊り",
-      "event_date": "2025-08-03",
-      "accounts": [
-        "UCLSZK_q5ma6aeIrVRUEpkNw"
-      ],
-      "setlist": [
+        },
         {
-          "number": 1,
-          "title": "浪花節だよ人生は 新宿 花園神社",
-          "url": "https://www.youtube.com/watch?v=npibEFUL31g",
-          "evidence_type": "title_song_fragment",
-          "event_name_hint": "浪花節だよ人生は 新宿 花園神社 盆踊り",
-          "title_parse_method": "slash_parts"
-        }
-      ],
-      "source_videos": [
-        {
-          "url": "https://www.youtube.com/watch?v=npibEFUL31g",
+          "url": "https://www.youtube.com/watch?v=AsULmIH2Ky0",
           "account": "UCLSZK_q5ma6aeIrVRUEpkNw",
-          "title": "浪花節だよ人生は 　新宿 花園神社　盆踊り 　20250803",
-          "published_at": "2025-08-05T10:30:34Z",
-          "thumbnail_url": "https://i.ytimg.com/vi/npibEFUL31g/maxresdefault.jpg",
+          "title": "ズンパ音頭 　新宿 花園神社　盆踊り 　20250803",
+          "published_at": "2025-08-05T08:45:01Z",
+          "thumbnail_url": "https://i.ytimg.com/vi/AsULmIH2Ky0/maxresdefault.jpg",
           "text_length": 481,
           "media_url_count": 15
-        }
-      ],
-      "source_video_count": 1,
-      "song_count": 1,
-      "confidence": "low",
-      "role": "result",
-      "act": "observe",
-      "reliability_key": "complete_numbered_video",
-      "matched_public_event": null
-    },
-    {
-      "occurrence_key": "97fe5e4546d8e35a",
-      "event_key_hint": "炭坑節新宿花園神社盆踊り",
-      "event_name_hint": "炭坑節 新宿 花園神社 盆踊り",
-      "venue": "炭坑節 新宿 花園神社 盆踊り",
-      "event_date": "2025-08-03",
-      "accounts": [
-        "UCLSZK_q5ma6aeIrVRUEpkNw"
-      ],
-      "setlist": [
+        },
         {
-          "number": 1,
-          "title": "炭坑節 新宿 花園神社",
-          "url": "https://www.youtube.com/watch?v=Wfa0G7EhOdg",
-          "evidence_type": "title_song_fragment",
-          "event_name_hint": "炭坑節 新宿 花園神社 盆踊り",
-          "title_parse_method": "slash_parts"
-        }
-      ],
-      "source_videos": [
-        {
-          "url": "https://www.youtube.com/watch?v=Wfa0G7EhOdg",
+          "url": "https://www.youtube.com/watch?v=CBERUJvgnoM",
           "account": "UCLSZK_q5ma6aeIrVRUEpkNw",
-          "title": "炭坑節 　新宿 花園神社　盆踊り 　20250803",
-          "published_at": "2025-08-05T11:15:04Z",
-          "thumbnail_url": "https://i.ytimg.com/vi/Wfa0G7EhOdg/maxresdefault.jpg",
+          "title": "りんご節 　新宿 花園神社　盆踊り 　20250803",
+          "published_at": "2025-08-05T09:00:27Z",
+          "thumbnail_url": "https://i.ytimg.com/vi/CBERUJvgnoM/maxresdefault.jpg",
           "text_length": 481,
           "media_url_count": 15
-        }
-      ],
-      "source_video_count": 1,
-      "song_count": 1,
-      "confidence": "low",
-      "role": "result",
-      "act": "observe",
-      "reliability_key": "complete_numbered_video",
-      "matched_public_event": null
-    },
-    {
-      "occurrence_key": "0e6b961433ee2363",
-      "event_key_hint": "花笠音頭新宿花園神社盆踊り",
-      "event_name_hint": "花笠音頭 新宿 花園神社 盆踊り",
-      "venue": "花笠音頭 新宿 花園神社 盆踊り",
-      "event_date": "2025-08-03",
-      "accounts": [
-        "UCLSZK_q5ma6aeIrVRUEpkNw"
-      ],
-      "setlist": [
-        {
-          "number": 1,
-          "title": "花笠音頭 新宿 花園神社",
-          "url": "https://www.youtube.com/watch?v=-OCtAId5Zdo",
-          "evidence_type": "title_song_fragment",
-          "event_name_hint": "花笠音頭 新宿 花園神社 盆踊り",
-          "title_parse_method": "slash_parts"
-        }
-      ],
-      "source_videos": [
+        },
         {
           "url": "https://www.youtube.com/watch?v=-OCtAId5Zdo",
           "account": "UCLSZK_q5ma6aeIrVRUEpkNw",
@@ -22882,11 +22502,110 @@
           "thumbnail_url": "https://i.ytimg.com/vi/-OCtAId5Zdo/maxresdefault.jpg",
           "text_length": 481,
           "media_url_count": 15
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=7CKKXbyYRRU",
+          "account": "UCLSZK_q5ma6aeIrVRUEpkNw",
+          "title": "新宿音頭① 　新宿 花園神社　盆踊り 　20250803",
+          "published_at": "2025-08-05T09:30:04Z",
+          "thumbnail_url": "https://i.ytimg.com/vi/7CKKXbyYRRU/maxresdefault.jpg",
+          "text_length": 481,
+          "media_url_count": 15
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=35zMWf5RROc",
+          "account": "UCLSZK_q5ma6aeIrVRUEpkNw",
+          "title": "大東京音頭 　新宿 花園神社　盆踊り 　20250803",
+          "published_at": "2025-08-05T09:45:00Z",
+          "thumbnail_url": "https://i.ytimg.com/vi/35zMWf5RROc/maxresdefault.jpg",
+          "text_length": 481,
+          "media_url_count": 15
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=UJ7pthA6lPQ",
+          "account": "UCLSZK_q5ma6aeIrVRUEpkNw",
+          "title": "ドンパン節 　新宿 花園神社　盆踊り 　20250803",
+          "published_at": "2025-08-05T10:00:51Z",
+          "thumbnail_url": "https://i.ytimg.com/vi/UJ7pthA6lPQ/maxresdefault.jpg",
+          "text_length": 481,
+          "media_url_count": 15
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=t4P3X1vBVI0",
+          "account": "UCLSZK_q5ma6aeIrVRUEpkNw",
+          "title": "新宿音頭② 　新宿 花園神社　盆踊り 　20250803",
+          "published_at": "2025-08-05T10:01:21Z",
+          "thumbnail_url": "https://i.ytimg.com/vi/t4P3X1vBVI0/maxresdefault.jpg",
+          "text_length": 481,
+          "media_url_count": 15
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=OPpomvedZok",
+          "account": "UCLSZK_q5ma6aeIrVRUEpkNw",
+          "title": "八木節（高速）　新宿 花園神社　盆踊り 　20250803",
+          "published_at": "2025-08-05T10:15:02Z",
+          "thumbnail_url": "https://i.ytimg.com/vi/OPpomvedZok/maxresdefault.jpg",
+          "text_length": 481,
+          "media_url_count": 15
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=npibEFUL31g",
+          "account": "UCLSZK_q5ma6aeIrVRUEpkNw",
+          "title": "浪花節だよ人生は 　新宿 花園神社　盆踊り 　20250803",
+          "published_at": "2025-08-05T10:30:34Z",
+          "thumbnail_url": "https://i.ytimg.com/vi/npibEFUL31g/maxresdefault.jpg",
+          "text_length": 481,
+          "media_url_count": 15
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=saQWTdgycRA",
+          "account": "UCLSZK_q5ma6aeIrVRUEpkNw",
+          "title": "新宿音頭コンクール 予選決勝 　新宿 花園神社　盆踊り 　20250803",
+          "published_at": "2025-08-05T10:45:32Z",
+          "thumbnail_url": "https://i.ytimg.com/vi/saQWTdgycRA/maxresdefault.jpg",
+          "text_length": 481,
+          "media_url_count": 15
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=NKFXa922JFA",
+          "account": "UCLSZK_q5ma6aeIrVRUEpkNw",
+          "title": "きよしのズンドコ節 　新宿 花園神社　盆踊り 　20250803",
+          "published_at": "2025-08-05T11:00:39Z",
+          "thumbnail_url": "https://i.ytimg.com/vi/NKFXa922JFA/maxresdefault.jpg",
+          "text_length": 481,
+          "media_url_count": 15
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Wfa0G7EhOdg",
+          "account": "UCLSZK_q5ma6aeIrVRUEpkNw",
+          "title": "炭坑節 　新宿 花園神社　盆踊り 　20250803",
+          "published_at": "2025-08-05T11:15:04Z",
+          "thumbnail_url": "https://i.ytimg.com/vi/Wfa0G7EhOdg/maxresdefault.jpg",
+          "text_length": 481,
+          "media_url_count": 15
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=VswlhiCN_kA",
+          "account": "UCLSZK_q5ma6aeIrVRUEpkNw",
+          "title": "チャンチキおけさ 　新宿 花園神社　盆踊り 　20250803",
+          "published_at": "2025-08-05T11:30:33Z",
+          "thumbnail_url": "https://i.ytimg.com/vi/VswlhiCN_kA/maxresdefault.jpg",
+          "text_length": 481,
+          "media_url_count": 15
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=JbSm8mZusfE",
+          "account": "UCLSZK_q5ma6aeIrVRUEpkNw",
+          "title": "宝っこ音頭 　新宿 花園神社　盆踊り 　20250803",
+          "published_at": "2025-08-05T11:45:01Z",
+          "thumbnail_url": "https://i.ytimg.com/vi/JbSm8mZusfE/maxresdefault.jpg",
+          "text_length": 481,
+          "media_url_count": 15
         }
       ],
-      "source_video_count": 1,
-      "song_count": 1,
-      "confidence": "low",
+      "source_video_count": 15,
+      "song_count": 15,
+      "confidence": "high",
       "role": "result",
       "act": "observe",
       "reliability_key": "complete_numbered_video",
@@ -35024,48 +34743,10 @@
       "matched_public_event": null
     },
     {
-      "occurrence_key": "b1a9d9512903d276",
-      "event_key_hint": "下町盆踊りフェス上野公園噴水広場",
-      "event_name_hint": "~下町盆踊りフェス~ 上野公園 噴水広場",
-      "venue": "~下町盆踊りフェス~ 上野公園 噴水広場",
-      "event_date": "2025-10-10",
-      "accounts": [
-        "UCWz2tM7PAFGT7xSL5OAEllg"
-      ],
-      "setlist": [
-        {
-          "number": 1,
-          "title": "ジャンボリミッキー",
-          "url": "https://www.youtube.com/watch?v=btTyavM_rso",
-          "evidence_type": "title_song_fragment",
-          "event_name_hint": "~下町盆踊りフェス~ 上野公園 噴水広場",
-          "title_parse_method": "quoted_song"
-        }
-      ],
-      "source_videos": [
-        {
-          "url": "https://www.youtube.com/watch?v=btTyavM_rso",
-          "account": "UCWz2tM7PAFGT7xSL5OAEllg",
-          "title": "【Tokyo江戸ウィーク2025】子供からサラリーマンまでみんなで「ジャンボリミッキー」 /  ～下町盆踊りフェス～ 上野公園 噴水広場",
-          "published_at": "2025-10-10T13:52:33Z",
-          "thumbnail_url": "https://i.ytimg.com/vi/btTyavM_rso/maxresdefault.jpg",
-          "text_length": 844,
-          "media_url_count": 13
-        }
-      ],
-      "source_video_count": 1,
-      "song_count": 1,
-      "confidence": "low",
-      "role": "result",
-      "act": "observe",
-      "reliability_key": "complete_numbered_video",
-      "matched_public_event": null
-    },
-    {
-      "occurrence_key": "4a476c34a0367d6a",
-      "event_key_hint": "盆踊り下町盆踊りフェス上野公園噴水広場",
-      "event_name_hint": "盆踊り / ~下町盆踊りフェス~ 上野公園 噴水広場",
-      "venue": "盆踊り / ~下町盆踊りフェス~ 上野公園 噴水広場",
+      "occurrence_key": "b9a24fabbeb40249",
+      "event_key_hint": "tokyo江戸ウィーク下町盆踊りフェス",
+      "event_name_hint": "Tokyo江戸ウィーク～下町盆踊りフェス～",
+      "venue": "上野恩賜公園",
       "event_date": "2025-10-10",
       "accounts": [
         "UCWz2tM7PAFGT7xSL5OAEllg"
@@ -35086,9 +34767,43 @@
           "evidence_type": "title_song_fragment",
           "event_name_hint": "盆踊り / ~下町盆踊りフェス~ 上野公園 噴水広場",
           "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 1,
+          "title": "ジャンボリミッキー",
+          "url": "https://www.youtube.com/watch?v=btTyavM_rso",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "~下町盆踊りフェス~ 上野公園 噴水広場",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 1,
+          "title": "ダンシングヒーロー",
+          "url": "https://www.youtube.com/watch?v=IJfr35Gq6Qo",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "荻野目洋子/ ~下町盆踊りフェス~ 上野公園 噴水広場",
+          "title_parse_method": "quoted_song"
         }
       ],
       "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=IJfr35Gq6Qo",
+          "account": "UCWz2tM7PAFGT7xSL5OAEllg",
+          "title": "【Tokyo江戸ウィーク2025】平日でも大盛況盆踊り!!「ダンシングヒーロー」荻野目洋子/  ～下町盆踊りフェス～ 上野公園 噴水広場",
+          "published_at": "2025-10-10T12:54:08Z",
+          "thumbnail_url": "https://i.ytimg.com/vi/IJfr35Gq6Qo/maxresdefault.jpg",
+          "text_length": 851,
+          "media_url_count": 13
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=btTyavM_rso",
+          "account": "UCWz2tM7PAFGT7xSL5OAEllg",
+          "title": "【Tokyo江戸ウィーク2025】子供からサラリーマンまでみんなで「ジャンボリミッキー」 /  ～下町盆踊りフェス～ 上野公園 噴水広場",
+          "published_at": "2025-10-10T13:52:33Z",
+          "thumbnail_url": "https://i.ytimg.com/vi/btTyavM_rso/maxresdefault.jpg",
+          "text_length": 844,
+          "media_url_count": 13
+        },
         {
           "url": "https://www.youtube.com/watch?v=u5wVUMt7nOc",
           "account": "UCWz2tM7PAFGT7xSL5OAEllg",
@@ -35108,9 +34823,9 @@
           "media_url_count": 13
         }
       ],
-      "source_video_count": 2,
-      "song_count": 2,
-      "confidence": "medium",
+      "source_video_count": 4,
+      "song_count": 4,
+      "confidence": "high",
       "role": "result",
       "act": "observe",
       "reliability_key": "complete_numbered_video",
@@ -35631,44 +35346,6 @@
       "source_video_count": 36,
       "song_count": 35,
       "confidence": "high",
-      "role": "result",
-      "act": "observe",
-      "reliability_key": "complete_numbered_video",
-      "matched_public_event": null
-    },
-    {
-      "occurrence_key": "c6384dcbc7c92fe6",
-      "event_key_hint": "荻野目洋子下町盆踊りフェス上野公園噴水広場",
-      "event_name_hint": "荻野目洋子/ ~下町盆踊りフェス~ 上野公園 噴水広場",
-      "venue": "荻野目洋子/ ~下町盆踊りフェス~ 上野公園 噴水広場",
-      "event_date": "2025-10-10",
-      "accounts": [
-        "UCWz2tM7PAFGT7xSL5OAEllg"
-      ],
-      "setlist": [
-        {
-          "number": 1,
-          "title": "ダンシングヒーロー",
-          "url": "https://www.youtube.com/watch?v=IJfr35Gq6Qo",
-          "evidence_type": "title_song_fragment",
-          "event_name_hint": "荻野目洋子/ ~下町盆踊りフェス~ 上野公園 噴水広場",
-          "title_parse_method": "quoted_song"
-        }
-      ],
-      "source_videos": [
-        {
-          "url": "https://www.youtube.com/watch?v=IJfr35Gq6Qo",
-          "account": "UCWz2tM7PAFGT7xSL5OAEllg",
-          "title": "【Tokyo江戸ウィーク2025】平日でも大盛況盆踊り!!「ダンシングヒーロー」荻野目洋子/  ～下町盆踊りフェス～ 上野公園 噴水広場",
-          "published_at": "2025-10-10T12:54:08Z",
-          "thumbnail_url": "https://i.ytimg.com/vi/IJfr35Gq6Qo/maxresdefault.jpg",
-          "text_length": 851,
-          "media_url_count": 13
-        }
-      ],
-      "source_video_count": 1,
-      "song_count": 1,
-      "confidence": "low",
       "role": "result",
       "act": "observe",
       "reliability_key": "complete_numbered_video",
@@ -46471,19 +46148,7 @@
       "role": "result",
       "act": "observe",
       "reliability_key": "complete_numbered_video",
-      "matched_public_event": {
-        "name": "第16回 鴨台盆踊り",
-        "venue": "大正大学",
-        "date": "2026-07-10",
-        "date_end": "2026-07-11",
-        "score": 80,
-        "reasons": [
-          "date",
-          "event_name_partial"
-        ]
-      },
-      "canonical_event_name": "第16回 鴨台盆踊り",
-      "canonical_venue": "大正大学"
+      "matched_public_event": null
     },
     {
       "occurrence_key": "fcda348af0f4f7c3",

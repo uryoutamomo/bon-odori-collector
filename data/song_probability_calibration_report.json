@@ -1,0 +1,3007 @@
+{
+  "generated_by": "calibrate_song_probabilities_rdb.py",
+  "generated_at": "2026-07-24T08:33:52.694724+00:00",
+  "mode": "apply",
+  "sources": {
+    "master_db": "data/bon_odori_master.sqlite"
+  },
+  "outputs": {
+    "target_db": "data/bon_odori_master.sqlite",
+    "dry_run_db": "",
+    "backup_db": "data/backups/bon_odori_master.20260724T083352.694724+0000.sqlite.bak",
+    "json": "data/song_probability_calibration_report.json",
+    "markdown": "data/song_probability_calibration_report.md"
+  },
+  "options": {
+    "apply": true
+  },
+  "write_guard": {
+    "db_committed": true,
+    "rolled_back": false,
+    "rollback_reason": ""
+  },
+  "summary": {
+    "targets_considered": 293,
+    "rows_updated": 293,
+    "rows_skipped_no_current_evidence": 0,
+    "probability_min": 55,
+    "probability_max": 99,
+    "basis_distribution": {
+      "current_observed": 293
+    },
+    "issues_by_severity": {},
+    "audit_issues_by_severity": {
+      "medium": 1
+    },
+    "table_counts": {
+      "event_investigation_tasks": 79,
+      "event_occurrences": 252,
+      "event_series": 241,
+      "evidence_items": 31183,
+      "external_record_links": 2654,
+      "historical_promotion_candidates": 16,
+      "master_meta": 0,
+      "notion_sync_jobs": 0,
+      "observed_occurrence_songs": 30772,
+      "observed_occurrences": 2164,
+      "occurrence_dates": 294,
+      "occurrence_evidence_links": 100,
+      "occurrence_song_evidence_links": 863,
+      "occurrence_songs": 605,
+      "predicted_occurrence_dates": 14,
+      "review_inbox_items": 0,
+      "schema_migrations": 1,
+      "song_aliases": 141,
+      "songs": 339,
+      "venue_aliases": 290,
+      "venues": 241,
+      "write_batches": 0
+    }
+  },
+  "calibration": {
+    "targets_considered": 293,
+    "updated": [
+      {
+        "occurrence_song_id": "osong_7e15cd608096a1d6",
+        "normalized_title": "きよしのズンドコ節",
+        "origin": "curated",
+        "probability": 99,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 2,
+        "evidence_used": 2
+      },
+      {
+        "occurrence_song_id": "osong_bbe0bab1914507e5",
+        "normalized_title": "これがお江戸の盆ダンス",
+        "origin": "curated",
+        "probability": 99,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 2,
+        "evidence_used": 2
+      },
+      {
+        "occurrence_song_id": "osong_3a24c29335de530c",
+        "normalized_title": "東京五輪音頭",
+        "origin": "curated",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "osong_a48f0a28bbd31a60",
+        "normalized_title": "東京音頭",
+        "origin": "curated",
+        "probability": 99,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 2,
+        "evidence_used": 2
+      },
+      {
+        "occurrence_song_id": "osong_1fdeae725029d761",
+        "normalized_title": "河内おとこ節",
+        "origin": "curated",
+        "probability": 99,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 2,
+        "evidence_used": 2
+      },
+      {
+        "occurrence_song_id": "osong_8ca1fa3e0abc71fc",
+        "normalized_title": "炭坑節",
+        "origin": "curated",
+        "probability": 99,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 2,
+        "evidence_used": 2
+      },
+      {
+        "occurrence_song_id": "osong_063e91c0a6117f16",
+        "normalized_title": "銀座カンカン娘",
+        "origin": "curated",
+        "probability": 99,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 2,
+        "evidence_used": 2
+      },
+      {
+        "occurrence_song_id": "osong_bd629ec4886a6ae6",
+        "normalized_title": "東京五輪音頭2020",
+        "origin": "curated",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "osong_4d5aab5c3cb37da0",
+        "normalized_title": "letsondoagainレッツオンドアゲイン",
+        "origin": "curated",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "osong_f6fb9d27baadd69e",
+        "normalized_title": "ダンシングヒーロー",
+        "origin": "curated",
+        "probability": 99,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 2,
+        "evidence_used": 2
+      },
+      {
+        "occurrence_song_id": "osong_41f6f0ecdf9f258f",
+        "normalized_title": "ジャンボリミッキー",
+        "origin": "curated",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "osong_ea4ba8f74af618c2",
+        "normalized_title": "東京音頭",
+        "origin": "curated",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "osong_89dd5d5a805f1269",
+        "normalized_title": "大東京音頭",
+        "origin": "curated",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "osong_85310dfc3b9a8072",
+        "normalized_title": "炭坑節",
+        "origin": "curated",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "osong_b35291d4fa9cb943",
+        "normalized_title": "八木節",
+        "origin": "curated",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "osong_83a35af43dd0dfd7",
+        "normalized_title": "ゆかた音頭",
+        "origin": "curated",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "osong_ae4c9ebedce83095",
+        "normalized_title": "ドンパン節",
+        "origin": "curated",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "osong_d8e7dc5be6f8ce86",
+        "normalized_title": "オバq音頭",
+        "origin": "curated",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "osong_bf7592079d2df3c8",
+        "normalized_title": "バハマママ",
+        "origin": "curated",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "osong_0c0dfa5000323997",
+        "normalized_title": "真っ赤な太陽",
+        "origin": "curated",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "osong_7ea801ee036f4939",
+        "normalized_title": "どうでもいいよ",
+        "origin": "curated",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "osong_1ec96b6ed8881f25",
+        "normalized_title": "マリーゴールド",
+        "origin": "curated",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "osong_911b2d64a79cceac",
+        "normalized_title": "真夏の果実",
+        "origin": "curated",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "osong_4f821002389991f4",
+        "normalized_title": "湘南盆踊り",
+        "origin": "curated",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "osong_8af1f6434e33341c",
+        "normalized_title": "ダンシングヒーロー",
+        "origin": "curated",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "osong_c4afdde6e2fd8f5a",
+        "normalized_title": "365日の紙飛行機",
+        "origin": "curated",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_454078eae0fcf9af",
+        "normalized_title": "相馬盆唄",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_495c6409e90e2bce",
+        "normalized_title": "沖縄よいとこ",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_6a17fffb6ea4bae7",
+        "normalized_title": "川口小唄",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_fb1c0d6de9e054ca",
+        "normalized_title": "百年桜",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_0577e9112af66e51",
+        "normalized_title": "蟹工船",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_d0fc6b9d76e2edb5",
+        "normalized_title": "おんなの気持ち",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_67caab913dc465a0",
+        "normalized_title": "にっぽんチャチャチャ",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_6358fd80003de894",
+        "normalized_title": "東西南北音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_21bcff88d6578b0f",
+        "normalized_title": "さくら音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_f7a3aee53c435266",
+        "normalized_title": "火の国太鼓",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_2b5ba6c4a549f513",
+        "normalized_title": "ソーラン北海",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_4b9180093a282583",
+        "normalized_title": "男おけさ",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_694876bcae13d598",
+        "normalized_title": "俺ら炭鉱夫",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_4f98b057753055a7",
+        "normalized_title": "ジャンボリミッキー",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_3174ba7a7f87cae3",
+        "normalized_title": "ジンギスカン",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_9bc6ddb6185b426f",
+        "normalized_title": "好きになった人",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_08cbf1fa39ccb646",
+        "normalized_title": "盆ギリ恋歌",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_0b86e64a89cd985b",
+        "normalized_title": "東京音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_6009789755745667",
+        "normalized_title": "これがお江戸の盆ダンス",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_3b2f96d00b60e211",
+        "normalized_title": "炭坑節",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_7069508a98959903",
+        "normalized_title": "ダンシングヒーロー",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_f4666079be0b7bd7",
+        "normalized_title": "バハマママ",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_5bae6b88209b8142",
+        "normalized_title": "きよしのズンドコ節",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_6799078059986efa",
+        "normalized_title": "令和音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_3d9d1b9ceab1175f",
+        "normalized_title": "ジャンボリミッキー",
+        "origin": "observed_youtube_setlist",
+        "probability": 98,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 2,
+        "evidence_used": 2
+      },
+      {
+        "occurrence_song_id": "ocs_fde516304a3f1ceb",
+        "normalized_title": "盆ギリ恋歌",
+        "origin": "observed_youtube_setlist",
+        "probability": 98,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 2,
+        "evidence_used": 2
+      },
+      {
+        "occurrence_song_id": "ocs_867f5d3b477f9f84",
+        "normalized_title": "赤坂音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_a69b54b26b38b41b",
+        "normalized_title": "赤坂豊川音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_2c48f02a98653f4e",
+        "normalized_title": "かがやき音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_5643d57a15148a51",
+        "normalized_title": "ドダレバチ",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_36c828167b48a669",
+        "normalized_title": "白浜音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_7631c674ed03bbe6",
+        "normalized_title": "佐渡おけさ",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_e5245c884ace4eff",
+        "normalized_title": "郡上節かわさき",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_5a6444d532e9057e",
+        "normalized_title": "炭坑節",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_b8c385fec4eb6100",
+        "normalized_title": "ステテコシャンシャン",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_c721134b8ad560fc",
+        "normalized_title": "ニッポンワッショイ",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_26e7327966b00b66",
+        "normalized_title": "東京音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_638f4a91d79a675b",
+        "normalized_title": "heymr恵比寿",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_51f96fa978d0b5b1",
+        "normalized_title": "yesyesebisu",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_ca62f65e02896aac",
+        "normalized_title": "yesyesybisu",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_124cbd51386d7e98",
+        "normalized_title": "おてもやん",
+        "origin": "observed_youtube_setlist",
+        "probability": 99,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 2
+      },
+      {
+        "occurrence_song_id": "ocs_b1b09cdeff04c89c",
+        "normalized_title": "八木節",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_6b5edb2c22ccd2ab",
+        "normalized_title": "大東京音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_c3acbb3f4f074224",
+        "normalized_title": "能登島さし音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_754351ade98dd9f8",
+        "normalized_title": "ダンシングヒーロー",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_3e528a120ac7e5c5",
+        "normalized_title": "大東京音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_da5e62e44c1d35c4",
+        "normalized_title": "東京音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_958d8dd65e923d27",
+        "normalized_title": "河内おとこ節",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_7395c6af14294946",
+        "normalized_title": "渋谷音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_e5c08764ae54a50c",
+        "normalized_title": "desire情熱",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_7e416a0f7b129c06",
+        "normalized_title": "ダンシングヒーロー",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_2c2d69000f959370",
+        "normalized_title": "八木節",
+        "origin": "observed_youtube_setlist",
+        "probability": 99,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 2,
+        "evidence_used": 2
+      },
+      {
+        "occurrence_song_id": "ocs_3f378ab5a501cf4a",
+        "normalized_title": "きよしのズンドコ節",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_16ba3b18f2eb7d78",
+        "normalized_title": "りんご節",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_394070785cc5f967",
+        "normalized_title": "ズンパ音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_aa64b0068be93b2a",
+        "normalized_title": "チャンチキおけさ",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_3d6610ab25c57c30",
+        "normalized_title": "ドンパン節",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_0a573fde0de88d73",
+        "normalized_title": "大東京音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_61ac4c0c6967cb93",
+        "normalized_title": "宝っこ音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_6bb2de20ce114da0",
+        "normalized_title": "新宿音頭1",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_f308cd8533837546",
+        "normalized_title": "新宿音頭2",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_78c0cef9956b7a36",
+        "normalized_title": "新宿音頭コンクール予選決勝",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_2c66732be14ed8b3",
+        "normalized_title": "東京音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_6ae4492776424481",
+        "normalized_title": "浪花節だよ人生は",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_3892f1d368939b5b",
+        "normalized_title": "炭坑節",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_20426beeb0aa901f",
+        "normalized_title": "花笠音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_d417a4e39829676c",
+        "normalized_title": "お嫁サンバ",
+        "origin": "observed_youtube_setlist",
+        "probability": 80,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_61146639e13ed0c5",
+        "normalized_title": "シモキタ音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 80,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_ead2ba83f7aee294",
+        "normalized_title": "東京音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_a2201f8979e67e48",
+        "normalized_title": "火の国太鼓",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_eccd76de05b62f75",
+        "normalized_title": "大東京音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_879f34e6c5cbdc05",
+        "normalized_title": "ひろしのさくら音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_8521264088c84c54",
+        "normalized_title": "ハワイ音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_616a7e571704510e",
+        "normalized_title": "東京タワー音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_fa0a6761d9a1e0f3",
+        "normalized_title": "ドンパン節",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_876721fcc1c8e68b",
+        "normalized_title": "炭坑節",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_f9121546e4b11d18",
+        "normalized_title": "花笠音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_d79a6906f3ffeb5b",
+        "normalized_title": "ドラえもん音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_696f58f6c82ecaa0",
+        "normalized_title": "お富さん",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_638a697c6628e610",
+        "normalized_title": "東京ばやし",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_0fc8d3a03c4ec835",
+        "normalized_title": "サザエさん",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_199bc5da319d5447",
+        "normalized_title": "恋のブギウギナイト",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_9893b7b7b5d55250",
+        "normalized_title": "八木節",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_2e5ef10c5c8ac152",
+        "normalized_title": "チャンチキおけさ",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_98a2a4f34bd7b453",
+        "normalized_title": "新二十一世紀音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_d5fe48157c7a3598",
+        "normalized_title": "ダンシングヒーロー",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_b1bcf2229e841d05",
+        "normalized_title": "ヨッ太鼓持ち",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_401a3329a6676d0c",
+        "normalized_title": "銀座カンカン娘",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_f28f2fbecca2bf2d",
+        "normalized_title": "福よ来い",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_47637bc136d83874",
+        "normalized_title": "日本の夏ごよみ",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_a697452e2631fecf",
+        "normalized_title": "百年桜",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_61abf10a21da1616",
+        "normalized_title": "好きになった人",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_e8f24d892bbb1516",
+        "normalized_title": "ステテコシャンシャン",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_a85dcdd6b7ee6b59",
+        "normalized_title": "ニッポンワッショイ",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_e605b10dab3eea33",
+        "normalized_title": "まつの木小唄",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_bb26e638e25de61b",
+        "normalized_title": "日本よいとこ",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_b115313d2ab24466",
+        "normalized_title": "さくら音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_4d18ceedff43e09d",
+        "normalized_title": "11の音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_713c2d4f4e1a8f25",
+        "normalized_title": "バハマママ",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_c07b9912a5677972",
+        "normalized_title": "盆ギリ恋歌",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_c32f8eef3318463a",
+        "normalized_title": "大江戸東京音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_ab26d6d994932cce",
+        "normalized_title": "夜に駆ける",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_053dca552ac3da52",
+        "normalized_title": "大角会和太鼓演奏",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_9b809ff665d62bf5",
+        "normalized_title": "crazytrain",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_ca7893194771754c",
+        "normalized_title": "dancingqueen",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_39d65894a1bf7924",
+        "normalized_title": "ezdodance",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_0286d7b1fcfc7529",
+        "normalized_title": "iwasborntoloveyou",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_f0680548c2b740e7",
+        "normalized_title": "livinonaprayer",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_b059c2382ef4cd23",
+        "normalized_title": "september",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_d1025f05f08ce7e4",
+        "normalized_title": "ymca",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_75a16e28da92ccfc",
+        "normalized_title": "ultrasoul",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_793d0e4b37fa0a2b",
+        "normalized_title": "ダンシングヒーロー",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_ff2095e15457ad43",
+        "normalized_title": "ライラック",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_4bab306ddf5e0974",
+        "normalized_title": "東京音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_592f060ac34d0a49",
+        "normalized_title": "歌舞伎町の女王",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_db2fb9642d68fbdd",
+        "normalized_title": "hotlimit",
+        "origin": "observed_youtube_setlist",
+        "probability": 55,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_8b321ad95a5f5510",
+        "normalized_title": "onelove",
+        "origin": "observed_youtube_setlist",
+        "probability": 99,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 2,
+        "evidence_used": 2
+      },
+      {
+        "occurrence_song_id": "ocs_8dbd901a66048adc",
+        "normalized_title": "パワーオブラヴ",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_0efe858e9d0a21bc",
+        "normalized_title": "ライクアヴァージン",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_6d7027a46770d2e2",
+        "normalized_title": "東京音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_00b88449b0ad92bc",
+        "normalized_title": "波乗りジョニー",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_9b34f6f9c1bcea25",
+        "normalized_title": "炭坑節",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_10b29f50c82f79e4",
+        "normalized_title": "蓮如音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_df8f55905aee0a74",
+        "normalized_title": "親鸞音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_88498a0ce9679b76",
+        "normalized_title": "親鸞おどり",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_876de0931e8183b1",
+        "normalized_title": "東京本願寺音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_c6ad80a14ccbfd97",
+        "normalized_title": "北海盆唄",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_86745db3323c730a",
+        "normalized_title": "ふるさと音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_89dd432bfd2d88de",
+        "normalized_title": "チャンチキおけさ",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_4cb883419b465314",
+        "normalized_title": "あなたの出番",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_c955ef0ab0db2d55",
+        "normalized_title": "燃えろ日本の夏祭り",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_ded90a1762dbd810",
+        "normalized_title": "七福神音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_eaf526d40354bb24",
+        "normalized_title": "djタイム",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_53bbd36199874171",
+        "normalized_title": "ガールズジャストワナハブファン",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_ff657e11a9e54618",
+        "normalized_title": "パワーオブラブ",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_27d85350cd653ae0",
+        "normalized_title": "ホールドミーナウ",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_4c1163de00863937",
+        "normalized_title": "テレフォンオペレーター",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_98822b5e37bdcc61",
+        "normalized_title": "エブリブレスユーテイク",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_a5e22f9253a96049",
+        "normalized_title": "レッツグルーヴ",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_97c6b9fb9e6fc82d",
+        "normalized_title": "ガットトゥビーリアル",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_17bab97444d6ae0e",
+        "normalized_title": "六本木音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_9a986eb4fb3f2d4e",
+        "normalized_title": "炭坑節",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_d4126db055d10d4b",
+        "normalized_title": "東京音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_67faa5f41e50a20e",
+        "normalized_title": "六本人音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_576986ead0ff0353",
+        "normalized_title": "河内おとこ節",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_1b1a16ed17de94a2",
+        "normalized_title": "夏祭り",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_0b5e3d82d2a5b094",
+        "normalized_title": "踊れどれドラドラえもん音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_b1c0db5078c67716",
+        "normalized_title": "渋谷で盆ジョヴィ2025ダンシングヒーロー",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_28fea1d6567e1928",
+        "normalized_title": "妖怪道中",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_7761355cbb44c8fe",
+        "normalized_title": "演舞披露",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_42c68dc2179054bd",
+        "normalized_title": "東京音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_6979d3ce7bd619fc",
+        "normalized_title": "妖怪人間ベム",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_d13af2a9dbade828",
+        "normalized_title": "炭坑節",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_f8981fd9be60431e",
+        "normalized_title": "妖怪盆踊り",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_841210ed3f259e91",
+        "normalized_title": "ふるさと北区",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_9f17706225561c6a",
+        "normalized_title": "佐渡の恋唄",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_2a5ef9386ee8edd1",
+        "normalized_title": "松島の斉太郎さん",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_19e2996f055cc24f",
+        "normalized_title": "ゆかた音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_90d9094ec1ed0c2e",
+        "normalized_title": "美子の三味線ドンパン",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_22f9b7d86cb3de21",
+        "normalized_title": "俺ら炭鉱夫",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_95c895dbc91e3ecf",
+        "normalized_title": "いいもんだな故郷は",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_637c9871123abe3f",
+        "normalized_title": "大東京音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_855aecbf95f8867e",
+        "normalized_title": "大江戸東京音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_f5dceaa56002a2b0",
+        "normalized_title": "少年八木節",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_a174ec9ee54035b8",
+        "normalized_title": "百年桜",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_06062f17e49aba76",
+        "normalized_title": "蟹工船",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_a00d57e0b0ddf376",
+        "normalized_title": "スーダラ節",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_12b98e0636dd08e5",
+        "normalized_title": "相馬盆唄",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_df51d0fa1708c944",
+        "normalized_title": "黒潮太鼓",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_0fa5af24942b1626",
+        "normalized_title": "沖縄よいとこ",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_b98b57dd95574c74",
+        "normalized_title": "東西南北音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_8dd64a8722eb8063",
+        "normalized_title": "言ちゃん音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_d0477312d8c3ba50",
+        "normalized_title": "牛ちゃんマンボ",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_f54fac58db8557c1",
+        "normalized_title": "さくら音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_def0c69673f75c84",
+        "normalized_title": "千恵っ子よされ",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_2d08013dd5238aa3",
+        "normalized_title": "ソーラン北海",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_56448e64f8a1a021",
+        "normalized_title": "男おけさ",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_8594487ae1832e30",
+        "normalized_title": "東京音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_e61054b20e117274",
+        "normalized_title": "大東京音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_8720918a3b3c55cd",
+        "normalized_title": "おけさ唄えば",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_67855713d7403c3d",
+        "normalized_title": "炭坑節",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_37d729803a98fe85",
+        "normalized_title": "八木節",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_da8f05d5b2d2884a",
+        "normalized_title": "日本よいとこ",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_4a9796d7efc57f03",
+        "normalized_title": "東京五輪音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_a9b8a13c37f165b5",
+        "normalized_title": "柳北音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_bd1302525ba97923",
+        "normalized_title": "まんまる音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_dce0b7af0bf81628",
+        "normalized_title": "やなぎブギ",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_2b540fd391032334",
+        "normalized_title": "三味線ブギウギ",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_6b73e309c22bdfd7",
+        "normalized_title": "浅草ばし音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_dba1f51c5b3656dd",
+        "normalized_title": "天竜下れば",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_677e510a99371718",
+        "normalized_title": "新浅草橋音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_e5c3b5840a9da43d",
+        "normalized_title": "たいとう音頭ダンシングバージョン",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_85c5acebf87d276b",
+        "normalized_title": "相馬壁塗り甚句",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_975fb5cd8c14baf4",
+        "normalized_title": "さくら音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_b97d8fc998948b39",
+        "normalized_title": "常磐炭坑節",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_be6f87220ade8867",
+        "normalized_title": "ワイド節",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_423c0d43d98e7781",
+        "normalized_title": "祭りだ和っしょい",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_d99414741dd1ad55",
+        "normalized_title": "御宿曳き舟",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_0e6a0d318212256b",
+        "normalized_title": "春駒ばやし",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_995772e38fc56383",
+        "normalized_title": "伊勢えび囃子",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_7f951b0076c6a2c2",
+        "normalized_title": "南州おどり",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_ff06519f2ee4fb5d",
+        "normalized_title": "江戸っ子囃子",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_1d879e8712fb5164",
+        "normalized_title": "耐久炭坑節で踊ろうメドレー",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_8bfd48796d9266d7",
+        "normalized_title": "たいとう音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_2f92ec0f9d216d37",
+        "normalized_title": "涙そうそう",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_4ff8e4f81bd0a82f",
+        "normalized_title": "河内酒",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_5a7e47ceec61b33e",
+        "normalized_title": "祭り華神田明神",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_6dd966479fd5bb44",
+        "normalized_title": "島人ぬ宝",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_71aabc03276588a1",
+        "normalized_title": "黒潮太鼓",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_a148a8d2135f41e3",
+        "normalized_title": "宇宙太鼓",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_fca372a1421792ff",
+        "normalized_title": "日本はればれ音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_999e5f183be0ea3b",
+        "normalized_title": "雨の御堂筋",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_b271ad7f6bb9d77b",
+        "normalized_title": "ダンシングヒーロー",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_0c707249f32081cf",
+        "normalized_title": "白鳥おどり世栄",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_bb11edd1e6340568",
+        "normalized_title": "また逢う日まで",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_260d4806a41ab416",
+        "normalized_title": "usa",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_90367730659dd86c",
+        "normalized_title": "ボンゴ天国",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_05768a06827cb5eb",
+        "normalized_title": "締め太鼓",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_3d70110eebb5de1c",
+        "normalized_title": "繁昌ぶし",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_8208fb5cef600519",
+        "normalized_title": "炭坑節",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_5be1d74d368a0a88",
+        "normalized_title": "国立音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_51d230d54c7eb448",
+        "normalized_title": "くにたち囃子",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_766fb01a7aed88a6",
+        "normalized_title": "四季の花踊り",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_1b67a006685e5f05",
+        "normalized_title": "新しい風",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_91343cb039aff56d",
+        "normalized_title": "少年八木節",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_9a76b9ba4c5b079d",
+        "normalized_title": "さくら音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_7b577111f0f0cce1",
+        "normalized_title": "東京音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_92ba593a7ba89291",
+        "normalized_title": "恋をするなら",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_68d148e28e91070c",
+        "normalized_title": "らんまん踊り",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_c9d3508b4d82813a",
+        "normalized_title": "バハマママ",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_8b5b820f1b406432",
+        "normalized_title": "tokio",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_f55a2655edf1de0d",
+        "normalized_title": "サザン",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_952fb414509af591",
+        "normalized_title": "らんまん踊り",
+        "origin": "observed_youtube_setlist",
+        "probability": 99,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 2,
+        "evidence_used": 2
+      },
+      {
+        "occurrence_song_id": "ocs_bcc6a77f5165fd2a",
+        "normalized_title": "恋をするなら",
+        "origin": "observed_youtube_setlist",
+        "probability": 99,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 2,
+        "evidence_used": 2
+      },
+      {
+        "occurrence_song_id": "ocs_874a63438b641697",
+        "normalized_title": "盆ギリ恋歌",
+        "origin": "observed_youtube_setlist",
+        "probability": 99,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 2,
+        "evidence_used": 2
+      },
+      {
+        "occurrence_song_id": "ocs_f8233c666b67857d",
+        "normalized_title": "相馬盆唄",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_60473a8821a35896",
+        "normalized_title": "花笠踊り",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_90ff864bb771cac3",
+        "normalized_title": "ニッポンワッショイ",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_7828a18138adfb93",
+        "normalized_title": "ダンシングヒーロー",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_32e026a3d4c22e4a",
+        "normalized_title": "古調かわさき",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_f69902c2c647206e",
+        "normalized_title": "かわさき",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_659de590c6acb1b5",
+        "normalized_title": "三百",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_15838e0b8dae69d6",
+        "normalized_title": "春駒",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_fe937acc7a0e65dd",
+        "normalized_title": "やっちく",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_513eaa12142537fb",
+        "normalized_title": "げんげんばらばら",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_ec44fd2b711077cc",
+        "normalized_title": "さわぎ",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_35882b0b97003f89",
+        "normalized_title": "猫の子",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_4a51ca08a6a2e58f",
+        "normalized_title": "おしりたんてい音頭",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_e5f8fdce363d8f7f",
+        "normalized_title": "ジャンボリーミッキー",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_fe55a7950f610a1b",
+        "normalized_title": "どんとこいブギ",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_64c9fea12f1c4ac4",
+        "normalized_title": "letsondoagain",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_2fe73cd6aad73b7b",
+        "normalized_title": "東京五輪2020",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_00459a71431350db",
+        "normalized_title": "メガ盆",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_21b53c26b646d50a",
+        "normalized_title": "ケケノコ族1ジンギスカン",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_656cde2339b3160a",
+        "normalized_title": "ケケノコ族2shangrila",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_b8192c13216b8ade",
+        "normalized_title": "ケケノコ族3singapore",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_4cf7b2a1e86e966f",
+        "normalized_title": "ケケノコ族4youngman",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_4c630a84238e7ec4",
+        "normalized_title": "dj俚謡山脈",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_10e9dfc0fdc8d877",
+        "normalized_title": "dj珍盤亭娯楽師匠",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_08dafff0a3a7ad1d",
+        "normalized_title": "古調かわさき",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_5b5b6047567c60b2",
+        "normalized_title": "かわさき",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_c30a76dcedebec1e",
+        "normalized_title": "三百",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_eb6ae33b8347217c",
+        "normalized_title": "やっちく",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_c9c06aa811dccc6c",
+        "normalized_title": "げんげんばらばら",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_5ac9062e5c2fc9db",
+        "normalized_title": "猫の子",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_0ed41fbad0d63ffc",
+        "normalized_title": "春駒",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      },
+      {
+        "occurrence_song_id": "ocs_ab4261f4107b3f30",
+        "normalized_title": "生盆",
+        "origin": "observed_youtube_setlist",
+        "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "今年実測",
+        "speaker_count": 1,
+        "evidence_used": 1
+      }
+    ],
+    "skipped_no_current_evidence": []
+  },
+  "issues": [],
+  "audit": {
+    "issue_count": 1,
+    "issues_by_severity": {
+      "medium": 1
+    },
+    "issues_by_type": {
+      "source_snapshot_drift": 1
+    }
+  }
+}
