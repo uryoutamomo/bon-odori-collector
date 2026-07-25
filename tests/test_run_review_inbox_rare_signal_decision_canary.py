@@ -110,7 +110,7 @@ def test_enabled_runner_writes_frozen_stage_and_audited_report():
             environ=ENABLED_ENV,
             now=datetime(2026, 7, 20, 12, 0, tzinfo=JST),
             store_factory=lambda _args: store,
-            digest_function=lambda _db, *, today: f"public:{today}",
+            digest_function=lambda _db, *, target_year, today: f"public:{target_year}:{today}",
         )
         saved = json.loads(Path(args.report_out).read_text(encoding="utf-8"))
         frozen_matches = Path(args.frozen_stage_out).read_bytes() == Path(args.staged_decisions).read_bytes()

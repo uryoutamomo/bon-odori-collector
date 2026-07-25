@@ -285,7 +285,9 @@ def run_cutover(
         [Path(path) for path in args.adapted_snapshot],
         reader_mode=mode,
     )
-    public_sha = digest_function(database, today=public_today)
+    public_sha = digest_function(
+        database, target_year=args.public_target_year, today=public_today
+    )
     expected_public_sha = validate_expected_rstart(args.expect_public_sha256)
     if public_sha != expected_public_sha:
         raise SourceWriterError(
@@ -328,6 +330,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--expect-rstart-checksum", required=True)
     parser.add_argument("--expect-snapshot-id", required=True)
     parser.add_argument("--expect-public-sha256", required=True)
+    parser.add_argument("--public-target-year", type=int, required=True)
     parser.add_argument("--public-today", required=True)
     parser.add_argument("--reader-mode", choices=tuple(CONFIRM_BY_MODE), required=True)
     parser.add_argument("--evidence-out", type=Path, required=True)

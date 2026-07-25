@@ -118,6 +118,7 @@ def _args(tmp, root, database, manifest, snapshots, checksum, **overrides):
         "expect_rstart_checksum": checksum,
         "expect_snapshot_id": "Rstart-snapshot",
         "expect_public_sha256": PUBLIC_SHA,
+        "public_target_year": 2026,
         "public_today": "2026-07-18",
         "reader_mode": "canary",
         "evidence_out": Path(tmp) / "evidence.json",
@@ -152,7 +153,7 @@ class RunReviewConsoleCutoverTest(unittest.TestCase):
                 _args(tmp, root, database, manifest, snapshots, checksum),
                 environ=ENABLED_ENV,
                 now=datetime(2026, 7, 18, 12, tzinfo=JST),
-                digest_function=lambda _database, *, today: PUBLIC_SHA,
+                digest_function=lambda _database, *, target_year, today: PUBLIC_SHA,
                 activate=activated.append,
             )
 
@@ -177,7 +178,7 @@ class RunReviewConsoleCutoverTest(unittest.TestCase):
                     _args(tmp, root, database, manifest, snapshots, checksum),
                     environ=ENABLED_ENV,
                     now=datetime(2026, 7, 18, 12, tzinfo=JST),
-                    digest_function=lambda _database, *, today: PUBLIC_SHA,
+                    digest_function=lambda _database, *, target_year, today: PUBLIC_SHA,
                     activate=lambda _mode: self.fail("must not activate"),
                 )
 
@@ -197,7 +198,7 @@ class RunReviewConsoleCutoverTest(unittest.TestCase):
                     ),
                     environ=ENABLED_ENV,
                     now=datetime(2026, 7, 18, 12, tzinfo=JST),
-                    digest_function=lambda _database, *, today: PUBLIC_SHA,
+                    digest_function=lambda _database, *, target_year, today: PUBLIC_SHA,
                     activate=lambda _mode: self.fail("must not activate"),
                 )
 
@@ -215,7 +216,7 @@ class RunReviewConsoleCutoverTest(unittest.TestCase):
                     _args(tmp, root, database, manifest, snapshots, checksum),
                     environ=ENABLED_ENV,
                     now=datetime(2026, 7, 18, 12, tzinfo=JST),
-                    digest_function=lambda _database, *, today: PUBLIC_SHA,
+                    digest_function=lambda _database, *, target_year, today: PUBLIC_SHA,
                     activate=lambda _mode: self.fail("must not activate"),
                 )
 
@@ -247,7 +248,7 @@ class RunReviewConsoleCutoverTest(unittest.TestCase):
                 _args(tmp, root, database, manifest, snapshots, checksum),
                 environ=ENABLED_ENV,
                 now=datetime(2026, 7, 18, 12, tzinfo=JST),
-                digest_function=lambda _database, *, today: PUBLIC_SHA,
+                digest_function=lambda _database, *, target_year, today: PUBLIC_SHA,
                 activate=activated.append,
             )
             self.assertEqual(activated, ["canary"])
@@ -269,7 +270,7 @@ class RunReviewConsoleCutoverTest(unittest.TestCase):
                     ),
                     environ={**ENABLED_ENV, "REVIEW_CONSOLE_READER_MODE": "inbox"},
                     now=datetime(2026, 7, 18, 12, tzinfo=JST),
-                    digest_function=lambda _database, *, today: PUBLIC_SHA,
+                    digest_function=lambda _database, *, target_year, today: PUBLIC_SHA,
                     activate=lambda _mode: self.fail("must not activate"),
                 )
 
