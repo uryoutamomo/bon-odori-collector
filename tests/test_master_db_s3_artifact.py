@@ -10,6 +10,7 @@ from pathlib import Path
 import master_rdb.master_db as master_db
 import master_rdb.s3_artifact as artifact
 from master_rdb.master_db import connect_existing, file_sha256
+from review_inbox import INBOX_SCHEMA
 
 
 class FakeClientError(Exception):
@@ -46,6 +47,62 @@ def make_db(path):
         conn.execute("CREATE TABLE sample(id INTEGER PRIMARY KEY, name TEXT)")
         conn.execute("INSERT INTO sample(name) VALUES ('bon')")
         conn.commit()
+
+
+# 2026-07-24 に本番を上書きした v1 系統の inbox を再現する。
+# v2 の8列 (time_scope / decision / decided_by / decided_at / closed_at /
+# decision_route / source_payload_hash / last_seen_at) だけが無い17列。
+INBOX_SCHEMA_V1 = """
+CREATE TABLE review_inbox_items (
+  inbox_id TEXT PRIMARY KEY,
+  kind TEXT NOT NULL,
+  domain TEXT NOT NULL,
+  priority_label TEXT,
+  priority_score REAL,
+  title TEXT NOT NULL,
+  event_name TEXT,
+  venue TEXT,
+  event_year INTEGER,
+  source_id TEXT NOT NULL,
+  source_key TEXT NOT NULL,
+  source_url TEXT,
+  recommended_action TEXT,
+  status TEXT NOT NULL DEFAULT 'pending',
+  payload_json TEXT NOT NULL DEFAULT '{}',
+  created_at TEXT NOT NULL,
+  updated_at TEXT NOT NULL
+);
+"""
+
+
+def make_db_with_inbox(path, schema_version):
+    make_db(path)
+    with closing(sqlite3.connect(path)) as conn:
+        conn.executescript(INBOX_SCHEMA if schema_version == 2 else INBOX_SCHEMA_V1)
+        conn.commit()
+
+
+def publish_args(db, manifest, **overrides):
+    args = {
+        "bucket": "bucket",
+        "prefix": "master-rdb",
+        "db": db,
+        "manifest": manifest,
+        "snapshot_id": "snap1",
+        "expect_remote_checksum": "",
+        "force": False,
+    }
+    args.update(overrides)
+    return Namespace(**args)
+
+
+def seed_remote(client, checksum, inbox_schema_version=None):
+    payload = {"database_checksum": checksum}
+    if inbox_schema_version is not None:
+        payload["review_inbox_schema_version"] = inbox_schema_version
+    client.objects[("bucket", "master-rdb/latest/bon_odori_master_manifest.json")] = json.dumps(
+        payload, ensure_ascii=False
+    ).encode("utf-8")
 
 
 class MasterDbS3ArtifactTest(unittest.TestCase):
@@ -163,6 +220,132 @@ class MasterDbS3ArtifactTest(unittest.TestCase):
             self.assertEqual(result["remote_snapshot_id"], "20260713T015812Z")
             self.assertEqual(result["remote_generated_by"], "build_master_rdb.py")
             self.assertEqual(result["remote_table_counts"], {"occurrence_dates": 290})
+
+
+class PublishInboxSchemaGuardTest(unittest.TestCase):
+    def test_publish_records_inbox_schema_version_in_manifest(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp = Path(tmp)
+            db = tmp / "master.sqlite"
+            manifest = tmp / "manifest.json"
+            make_db_with_inbox(db, 2)
+            manifest.write_text("{}", encoding="utf-8")
+            client = FakeS3()
+
+            artifact.publish(publish_args(db, manifest), client=client)
+
+            for key in (
+                "master-rdb/latest/bon_odori_master_manifest.json",
+                "master-rdb/snapshots/snap1/bon_odori_master_manifest.json",
+            ):
+                uploaded = json.loads(client.objects[("bucket", key)])
+                self.assertEqual(uploaded["review_inbox_schema_version"], 2)
+
+    def test_publish_records_version_one_for_downgraded_inbox(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp = Path(tmp)
+            db = tmp / "master.sqlite"
+            manifest = tmp / "manifest.json"
+            make_db_with_inbox(db, 1)
+            manifest.write_text("{}", encoding="utf-8")
+            client = FakeS3()
+
+            artifact.publish(publish_args(db, manifest), client=client)
+
+            uploaded = json.loads(client.objects[("bucket", "master-rdb/latest/bon_odori_master_manifest.json")])
+            self.assertEqual(uploaded["review_inbox_schema_version"], 1)
+
+    def test_publish_blocks_inbox_schema_downgrade(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp = Path(tmp)
+            db = tmp / "master.sqlite"
+            manifest = tmp / "manifest.json"
+            make_db_with_inbox(db, 1)
+            manifest.write_text("{}", encoding="utf-8")
+            client = FakeS3()
+            seed_remote(client, "remote-sha", inbox_schema_version=2)
+
+            # チェックサムは合わせておく。止めたのが CAS ではなく退行ガードだと確かめるため。
+            with self.assertRaises(SystemExit) as caught:
+                artifact.publish(
+                    publish_args(db, manifest, expect_remote_checksum="remote-sha"),
+                    client=client,
+                )
+
+            self.assertIn("review inbox schema downgrade blocked", str(caught.exception))
+            self.assertIn("local=1 remote=2", str(caught.exception))
+            self.assertNotIn(
+                ("bucket", "master-rdb/latest/bon_odori_master.sqlite"), client.objects
+            )
+
+    def test_force_allows_intentional_inbox_schema_downgrade(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp = Path(tmp)
+            db = tmp / "master.sqlite"
+            manifest = tmp / "manifest.json"
+            make_db_with_inbox(db, 1)
+            manifest.write_text("{}", encoding="utf-8")
+            client = FakeS3()
+            seed_remote(client, "remote-sha", inbox_schema_version=2)
+
+            artifact.publish(publish_args(db, manifest, force=True), client=client)
+
+            self.assertIn(("bucket", "master-rdb/latest/bon_odori_master.sqlite"), client.objects)
+
+    def test_publish_allows_inbox_schema_upgrade(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp = Path(tmp)
+            db = tmp / "master.sqlite"
+            manifest = tmp / "manifest.json"
+            make_db_with_inbox(db, 2)
+            manifest.write_text("{}", encoding="utf-8")
+            client = FakeS3()
+            seed_remote(client, "remote-sha", inbox_schema_version=1)
+
+            artifact.publish(
+                publish_args(db, manifest, expect_remote_checksum="remote-sha"),
+                client=client,
+            )
+
+            uploaded = json.loads(client.objects[("bucket", "master-rdb/latest/bon_odori_master_manifest.json")])
+            self.assertEqual(uploaded["review_inbox_schema_version"], 2)
+
+    def test_publish_allows_when_remote_manifest_predates_the_guard(self):
+        # このガードより前に publish された manifest にはキーが無い。
+        # 比較できない一回目を止めると定時 publish が落ちるので通す。
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp = Path(tmp)
+            db = tmp / "master.sqlite"
+            manifest = tmp / "manifest.json"
+            make_db_with_inbox(db, 1)
+            manifest.write_text("{}", encoding="utf-8")
+            client = FakeS3()
+            seed_remote(client, "remote-sha")
+
+            artifact.publish(
+                publish_args(db, manifest, expect_remote_checksum="remote-sha"),
+                client=client,
+            )
+
+            self.assertIn(("bucket", "master-rdb/latest/bon_odori_master.sqlite"), client.objects)
+
+    def test_local_inbox_schema_version_does_not_create_the_table(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            db = Path(tmp) / "master.sqlite"
+            make_db(db)
+
+            self.assertEqual(artifact.local_inbox_schema_version(db), 1)
+
+            with closing(sqlite3.connect(db)) as conn:
+                tables = {
+                    row[0]
+                    for row in conn.execute("SELECT name FROM sqlite_master WHERE type='table'")
+                }
+            self.assertNotIn("review_inbox_items", tables)
+
+    def test_local_inbox_schema_version_is_none_for_missing_database(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            self.assertIsNone(artifact.local_inbox_schema_version(Path(tmp) / "missing.sqlite"))
 
 
 if __name__ == "__main__":

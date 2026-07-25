@@ -14,6 +14,8 @@ import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
 
+from review_inbox import inbox_schema_version
+
 from .master_db import (
     MASTER_DB,
     MASTER_MANIFEST,
@@ -27,6 +29,7 @@ from .master_db import (
 DEFAULT_PREFIX = "master-rdb"
 DB_NAME = "bon_odori_master.sqlite"
 MANIFEST_NAME = "bon_odori_master_manifest.json"
+INBOX_SCHEMA_MANIFEST_KEY = "review_inbox_schema_version"
 
 
 def now_stamp():
@@ -145,8 +148,58 @@ def database_summary(db_path):
         return table_counts(conn)
 
 
+def local_inbox_schema_version(db_path):
+    """review_inbox_items のスキーマ版を読むだけ。作成も移行も一切しない。
+
+    テーブルが無い場合は監査(master_rdb/audit.py)と同じく 1 を返す。
+    v2 前提の dual-write から見れば「使えない」ことに違いはなく、
+    退行ガードとしても安全側（新しいリモートを上書きさせない）に倒れる。
+    """
+    if not Path(db_path).exists():
+        return None
+    with connect_existing(db_path) as conn:
+        return inbox_schema_version(conn, ensure_schema=False)
+
+
+def enforce_inbox_schema_not_downgraded(local_version, remote, force):
+    """スキーマ退行したDBが latest を上書きするのを止める。
+
+    publish の既存ガードは「新しい成果を上書きしない」ためのチェックサム照合
+    (CAS)だけで、スキーマの中身を見ていない。そのため 2026-07-24 に v1 系統の
+    DB が本番を上書きし、v2 を要求する dual-write が 5 日間毎日失敗した。
+    監査では翌日に気づけるようになったので、ここで publish 自体を止める。
+    """
+    remote_version = (remote or {}).get(INBOX_SCHEMA_MANIFEST_KEY)
+    if remote_version is None:
+        # このガードより前に publish された manifest にはキーが無い。
+        # 比較できないので通すが、黙って通したことは残す。
+        # 次の publish 以降は必ずキーが載るので、これは移行期間だけの分岐。
+        print(
+            f"notice: remote manifest has no {INBOX_SCHEMA_MANIFEST_KEY}; "
+            f"skipping downgrade check (local={local_version})"
+        )
+        return
+    if local_version is None or local_version >= remote_version:
+        return
+    message = (
+        "review inbox schema downgrade blocked: "
+        f"local={local_version} remote={remote_version}. "
+        "Publishing this database would break the scheduled dual-write "
+        '("review inbox schema v2 is required"). '
+        "Run the migrate-review-inbox-v2 workflow on this database first, "
+        "or pass --force if the downgrade is intended."
+    )
+    if force:
+        print(f"warning: {message}")
+        return
+    raise SystemExit(message)
+
+
 def manifest_with_artifact(db_path, manifest_path, bucket, prefix, keys, snapshot_id, published_at):
     manifest = refresh_manifest_database_state(db_path, manifest_path, updated_at=published_at)
+    # refresh_manifest_database_state 側では書けない。master_db が review_inbox を
+    # import すると循環参照になるため、publish 経路のここで載せる。
+    manifest[INBOX_SCHEMA_MANIFEST_KEY] = local_inbox_schema_version(db_path)
     manifest["artifact"] = {
         "storage": "s3",
         "bucket": bucket,
@@ -213,6 +266,10 @@ def publish(args, client=None):
     keys = artifact_keys(prefix, snapshot_id=snapshot_id)
 
     remote = remote_manifest(client, bucket, keys["latest_manifest_key"])
+    if remote:
+        enforce_inbox_schema_not_downgraded(
+            local_inbox_schema_version(db_path), remote, args.force
+        )
     if remote and not args.force:
         remote_checksum = remote.get("database_checksum")
         if not args.expect_remote_checksum:
@@ -258,6 +315,8 @@ def status(args, client=None):
     remote_generated_by = (remote or {}).get("generated_by") or ""
     remote_table_counts = (remote or {}).get("table_counts") or {}
     remote_head = head_object(client, bucket, keys["latest_database_key"])
+    local_inbox_version = local_inbox_schema_version(db_path)
+    remote_inbox_version = (remote or {}).get(INBOX_SCHEMA_MANIFEST_KEY)
     print(f"local_db: {db_path} checksum={local_checksum or '(missing)'}")
     print(f"remote_db: s3://{bucket}/{keys['latest_database_key']}")
     print(f"remote_exists: {bool(remote_head)} checksum={remote_checksum or '(missing)'}")
@@ -265,6 +324,8 @@ def status(args, client=None):
     print(f"remote_snapshot_id: {remote_snapshot_id or '(missing)'}")
     print(f"remote_generated_by: {remote_generated_by or '(missing)'}")
     print(f"remote_table_counts: {json.dumps(remote_table_counts, sort_keys=True)}")
+    print(f"local_review_inbox_schema_version: {local_inbox_version if local_inbox_version is not None else '(missing)'}")
+    print(f"remote_review_inbox_schema_version: {remote_inbox_version if remote_inbox_version is not None else '(missing)'}")
     return {
         "local_checksum": local_checksum,
         "remote_checksum": remote_checksum,
@@ -273,6 +334,8 @@ def status(args, client=None):
         "remote_snapshot_id": remote_snapshot_id,
         "remote_generated_by": remote_generated_by,
         "remote_table_counts": remote_table_counts,
+        "local_review_inbox_schema_version": local_inbox_version,
+        "remote_review_inbox_schema_version": remote_inbox_version,
     }
 
 

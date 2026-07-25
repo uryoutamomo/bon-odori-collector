@@ -91,4 +91,27 @@ inbox projection のコミットまで到達した。
 - GitHub のスケジュール遅延は今後も起きる。cron 時刻を早める案もあるが、
   遅延幅は日によって変わるため、ガード側を正しくした方が筋が良い。
 - **RDB を手元で触って publish する運用**が今回の3番の遠因。
-  監査で検知はできるようになったが、publish 時点で止める仕組みは無い。
+
+## publish 時点で止める（2026-07-26 追加）
+
+3番は監査で翌日に気づけるようになっただけで、publish 自体は退行を通していた。
+そこを塞いだ。
+
+`master_db_s3_artifact.py publish` が manifest に
+`review_inbox_schema_version` を載せ、publish 前にリモートの値と比較する。
+ローカルがリモートより古ければ `review inbox schema downgrade blocked` で
+中断し、S3 には何もアップロードしない。意図的な退行は `--force` で通せるが、
+その場合も警告を出す。`status` は両側の版を並べて表示する。
+
+判定は監査(`master_rdb/audit.py`)と同じ `inbox_schema_version` を使い、
+テーブルが無い場合も v1 扱いにする。v2 前提の dual-write から見れば
+使えないことに違いはなく、退行ガードとしても安全側に倒れる。
+
+移行期間の穴が一つある。このガードより前に publish された manifest には
+キーが無く比較できない。そこで止めると次の定時 publish が落ちてしまうので、
+キーが無い場合は notice を出して通す。一度 publish されれば以後は必ず載る。
+
+実地で効くことも確認できた。この作業時点のローカル
+`data/bon_odori_master.sqlite`（git追跡外・7/25 03:16 の fetch）は
+**17列の v1 のまま**で、移行前の状態だった。手元から publish していれば
+本番を v1 に戻して同じ停止を再発させていた。
