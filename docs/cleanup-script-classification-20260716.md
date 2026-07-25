@@ -165,6 +165,18 @@ build_retrospective_venue_song_associations.py
 runbookの直接実行コマンドは `PYTHONPATH=. python3 legacy/build-reports/...` へ更新し、テストと
 レビュー補助内の参照パスも移動先へ更新した。
 
+## 2026-07-25 復帰: 東京盆踊りマップ取り込み4本
+
+上記「参照なし」判定は当時は正しかったが、`build_blog_registration_candidates.py`（および
+`legacy/venue_research/` へ同時に移動していた `extract_venues_blog.py` / `extract_blog_venue_rows.py` /
+`triage_blog_venue_candidates.py`）は、盆助イシューリストP1「official_source 52件中43件がMaster RDB
+にマッチせず新規登録候補の可能性」の調査で、実行済みone-offではなく本来は定期的に再実行すべき情報源
+更新ツールだったことが判明した。移動時に潜んでいた2件のバグ（`extract_venues_blog.py`の出力先が
+`os.path.dirname(__file__)`基準になっており移動後に誤ったディレクトリへ書いていた／
+`build_blog_registration_candidates.py`の`triage_blog_venue_candidates`importが移動後に壊れていた）
+も合わせて修正し、4本ともroot直下へ復帰。`.github/workflows/refresh_official_source_review.yml`
+（毎週木曜15:30 JST）で自動実行する。
+
 ```text
 build_ph2_cutover_readiness.py
 build_ph2_ebara_fifth_venue_plan.py

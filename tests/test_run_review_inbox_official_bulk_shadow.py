@@ -199,7 +199,7 @@ class RunReviewInboxOfficialBulkShadowTest(unittest.TestCase):
             self.assertEqual(store.fetch_calls, 0)
             self.assertEqual(store.publish_calls, 0)
 
-    def test_real_official_input_bulk_writes_52_with_zero_diff_parity(self):
+    def test_real_official_input_bulk_writes_95_with_zero_diff_parity(self):
         with tempfile.TemporaryDirectory() as tmp:
             db = Path(tmp) / "master.sqlite"
             make_master(db)
@@ -234,18 +234,18 @@ class RunReviewInboxOfficialBulkShadowTest(unittest.TestCase):
         self.assertFalse(report["no_op"])
         self.assertEqual(store.publish_calls, 1)
         self.assertEqual(store.fetch_calls, 2)
-        self.assertEqual(frozen["item_count"], 52)
+        self.assertEqual(frozen["item_count"], 95)
         self.assertEqual(frozen["selection"]["mode"], "all")
-        self.assertEqual(len(frozen["selection"]["source_keys"]), 52)
-        self.assertEqual(frozen["scope_counts"], {"future": 5, "historical": 47})
-        self.assertEqual(report["parity"]["summary"]["expected_count"], 52)
+        self.assertEqual(len(frozen["selection"]["source_keys"]), 95)
+        self.assertEqual(frozen["scope_counts"], {"future": 88, "historical": 7})
+        self.assertEqual(report["parity"]["summary"]["expected_count"], 95)
         self.assertTrue(report["parity"]["summary"]["parity"])
         self.assertEqual(report["reconciliation"]["summary"]["unmapped_count"], 0)
         self.assertEqual(report["reconciliation"]["summary"]["stale_candidate_count"], 0)
         self.assertTrue(report["audit"]["domain_table_counts_unchanged"])
         self.assertTrue(report["audit"]["public_projection_unchanged"])
-        self.assertEqual(saved_report["entrypoint"]["item_count"], 52)
-        self.assertEqual(row_count, 52)
+        self.assertEqual(saved_report["entrypoint"]["item_count"], 95)
+        self.assertEqual(row_count, 95)
         self.assertEqual(decided_count, 0)
 
     def test_missing_pending_item_is_reported_stale_without_delete_or_publish(self):
@@ -295,11 +295,11 @@ class RunReviewInboxOfficialBulkShadowTest(unittest.TestCase):
         self.assertTrue(report["no_op"])
         self.assertFalse(report["published"])
         self.assertEqual(store.publish_calls, 1)
-        self.assertEqual(report["reconciliation"]["summary"]["seen_count"], 51)
+        self.assertEqual(report["reconciliation"]["summary"]["seen_count"], 94)
         self.assertEqual(report["reconciliation"]["summary"]["stale_candidate_count"], 1)
         self.assertEqual(report["reconciliation"]["summary"]["unmapped_count"], 0)
         self.assertTrue(report["parity"]["summary"]["parity"])
-        self.assertEqual(row_count, 52)
+        self.assertEqual(row_count, 95)
 
 
 if __name__ == "__main__":

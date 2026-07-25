@@ -18,7 +18,7 @@ import urllib.request
 import xml.etree.ElementTree as ET
 
 FEED_URL = "http://minato-bon-odori.blogspot.com/feeds/posts/default?max-results=50"
-OUT = os.path.join(os.path.dirname(__file__), "data", "venues_seed_blog.json")
+OUT = os.path.join("data", "venues_seed_blog.json")
 ATOM = {"a": "http://www.w3.org/2005/Atom"}
 
 # 築地（中央区）起点・自転車30分圏内とみなす区（in_tsukiji_30min_guess の推定用）

@@ -1,0 +1,60 @@
+name: refresh-official-source-review
+
+on:
+  schedule:
+    # 毎週木曜 約15:30 JST (UTC 06:30) に実行。collect.yml (15:13 JST) と
+    # 混雑を避けるため時刻をずらしている。
+    - cron: '30 6 * * 4'
+  workflow_dispatch: {}
+
+concurrency:
+  group: bon-odori-master-rdb
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # 実行結果をリポジトリに書き込むために必要
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v6
+
+    - name: Fast-forward main
+      run: git pull --ff-only origin main
+
+    - name: Set up Python
+      uses: actions/setup-python@v6
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: pip install -r requirements.txt
+
+    - name: Extract candidate venues from 東京盆踊りマップ
+      run: python extract_venues_blog.py
+
+    - name: Extract structured venue/date rows from 東京盆踊りマップ
+      run: python extract_blog_venue_rows.py
+
+    - name: Triage blog venue candidates against venue master
+      run: python triage_blog_venue_candidates.py
+
+    - name: Build blog registration candidates
+      run: python build_blog_registration_candidates.py
+
+    - name: Build official source review queue
+      run: python build_official_source_review.py
+
+    - name: Commit and Push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add data/venues_seed_blog.json
+        git add data/blog_venue_rows.json
+        git add data/venue_candidate_triage.json
+        git add data/blog_registration_candidates.json
+        git add data/official_source_review_candidates.json
+        git add data/official_source_review_candidates.md
+        git diff --cached --quiet || (git commit -m "Refresh official source review queue from 東京盆踊りマップ" && git push)
