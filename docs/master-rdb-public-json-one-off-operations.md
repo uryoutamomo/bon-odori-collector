@@ -24,6 +24,7 @@ RDBや公開JSONを直接書く手動one-offは、dry-run/reportを確認して�
 | Master RDB derived-table rebuilds | `promotion_candidates/build_historical_promotion_candidates.py`, `promotion_candidates/build_registered_event_investigation_queue.py` | write mode requires `APPLY MASTER RDB ONE-OFF` |
 | Public JSON one-offs | `apply_public_event_name_cleanup.py`, `apply_public_official_source_urls.py` | write mode requires `APPLY PUBLIC JSON ONE-OFF` |
 | Local evidence one-offs | `apply_youtube_year_backfill_review_decisions.py` | `--apply` requires `APPLY LOCAL EVIDENCE ONE-OFF` |
+| Site data scoped sync one-offs | `sync_public_event_songs_to_site.py`, `sync_public_event_detail_source_to_site.py` | `--write` requires each script's own `CONFIRM` phrase (`SYNC PUBLIC EVENT SONGS` / `SYNC PUBLIC EVENT DETAIL SOURCE`); writes into the sibling `bon-odori-site` repo's `data/events_public.json`, scoped to one field group only |
 
 ## Automated Public Postprocessors
 

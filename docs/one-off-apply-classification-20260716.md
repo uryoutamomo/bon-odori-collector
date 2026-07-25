@@ -62,6 +62,15 @@ E「名残の撤去」では、済んだ one-off apply を `legacy/` へ移動�
 | `legacy/apply/apply_reviewed_missing_date_start_promotions.py` | 固定PROMOTIONSの済みone-off |
 | `legacy/apply/apply_reviewed_public_event_candidates_20260701.py` | reviewed current-year batch の済みone-off |
 
+## 追加移動済み: RDB個別修正 one-off（2026-07-25）
+
+`scripts/build_root_python_inventory.py` のテストが `review_candidate`（workflow / source / test / docs いずれの参照もない）として検出した2本。どちらも特定2件のイベントを直した済みone-offで、docstringに「Apply mode updates only the two reviewed items in this file」と明記されている。`legacy/apply/` へ移動した。
+
+| moved path | 理由 |
+|---|---|
+| `legacy/apply/apply_2026_kamodai_shinjuku_chuo_park_dates.py` | 鴨台盆踊り・新宿中央公園夏祭りのRDB日付/会場フィールドを個別修正した済みone-off |
+| `legacy/apply/apply_reviewed_detail_source_reconciliation_20260724.py` | detail/source_urlのRDB↔site乖離2件を個別修正した済みone-off |
+
 ## 保留: C完了まで残す公開JSONパッチ系
 
 | file | 理由 |
