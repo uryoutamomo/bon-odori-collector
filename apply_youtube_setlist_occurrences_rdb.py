@@ -167,6 +167,61 @@ def strip_venue_suffix(title, venue):
     return stripped or title
 
 
+SHARED_LABEL_MIN_TITLES = 3
+
+
+def shared_setlist_label(titles, known_song_normalized):
+    """Return a leading label that every title in one setlist shares, or "".
+
+    strip_venue_suffix() handles the venue name baked into the *end* of each
+    title. This is the same defect from the other side: some channels prefix
+    every video title with a sub-brand naming the event, not the song. Real
+    case (2026-07-24, GMOシブヤエンタメ祭): all 9 titles read
+    "JAME盆踊り BOY MEETS GIRL (TRF)" etc., and "JAME盆踊り" is part of the
+    matched event name "GMOシブヤエンタメ祭 × JAME盆踊り".
+
+    That round was corrected by hand in the RDB, which does not survive
+    re-ingestion: the extraction still emits the prefixed titles, so a re-apply
+    would re-register "JAME盆踊り <song>" as fabricated 候補 songs. Worse, the
+    hand-repair left songs.song_id derived from the old dirty title while
+    normalized_title held the clean one, so a re-apply crashed with
+    "UNIQUE constraint failed: songs.song_id". Stripping the label here fixes
+    the data and the crash at once, since the clean titles already match.
+
+    A label is only trusted when the whole setlist agrees on it, which is what
+    separates "the channel stamped this on every video" from "these songs
+    happen to start alike". Titles that *are* a known song after stripping the
+    first token would be destroyed by this, so a shared first token that is
+    itself a song in the master (e.g. a setlist of "東京音頭 一番" / "東京音頭
+    二番") is left alone.
+    """
+    candidates = [str(title or "").strip() for title in titles]
+    candidates = [title for title in candidates if title]
+    if len(candidates) < SHARED_LABEL_MIN_TITLES:
+        return ""
+    heads = set()
+    for title in candidates:
+        head, _, rest = title.partition(" ")
+        if not rest.strip():
+            return ""
+        heads.add(head)
+    if len(heads) != 1:
+        return ""
+    label = heads.pop()
+    if normalize_text(label) in known_song_normalized:
+        return ""
+    return label
+
+
+def strip_shared_label(title, label):
+    if not label:
+        return title
+    head, _, rest = str(title or "").partition(" ")
+    if head != label or not rest.strip():
+        return title
+    return rest.strip()
+
+
 def clean_song_candidate_title(raw_title, venue=""):
     """Produce a display-quality song title: light cleanup only (NFKC width
     normalization, drop known noise), NOT the aggressive symbol/whitespace/case
@@ -242,6 +297,18 @@ def resolve_song(conn, raw_title, venue, now, register_candidate=True):
     if not song_title_passes_shape_check(cleaned):
         return None, None, "rejected"
     song_id = stable_id("song_cand", normalized)
+    # song_id は normalized の純関数なので、同じ id を持つ行があるなら同じ曲名の系譜。
+    # それでも normalized_title 検索が外れることがある。songs の行を手作業で整形し直すと
+    # canonical/normalized だけが新しくなり、song_id は古い表記由来のまま残るため
+    # （2026-07-24 の「JAME盆踊り」6曲の手修正が実例）、その後の再取り込みが
+    # IntegrityError で落ちた。落とさず既存行へ寄せる。取り違えではなく同一系譜なので、
+    # 新しい行を作るより既存行に証拠を足す方が正しい。
+    occupied = conn.execute(
+        "SELECT song_id, canonical_title FROM songs WHERE song_id = ?",
+        (song_id,),
+    ).fetchone()
+    if occupied:
+        return occupied[0], occupied[1], "candidate_existing"
     conn.execute(
         """
         INSERT INTO songs(
@@ -408,14 +475,28 @@ def apply_occurrence(conn, occurrence, now):
     evidence_count = 0
     rejected_title_count = 0
     candidate_song_count = 0
-    for song in occurrence.get("setlist") or []:
+    setlist = occurrence.get("setlist") or []
+    known_song_normalized = {
+        row[0] for row in conn.execute("SELECT normalized_title FROM songs")
+    }
+    shared_label = shared_setlist_label(
+        [song.get("title") or "" for song in setlist], known_song_normalized
+    )
+    for song in setlist:
         title = song.get("title") or ""
         if not title:
             continue
         normalized = normalize_text(title)
         role = "result"
+        # ラベル除去は曲名の解決にだけ使う。observed 層は生の証拠を保つ設計で、
+        # observed_occurrence_song_id も生タイトル由来なので、ここを書き換えると
+        # 既存行と重複した行が増えて冪等性が崩れる。
         song_id, display_title, verdict = resolve_song(
-            conn, title, venue_name, now, register_candidate=bool(matched_occurrence_id)
+            conn,
+            strip_shared_label(title, shared_label),
+            venue_name,
+            now,
+            register_candidate=bool(matched_occurrence_id),
         )
         if verdict == "candidate_new":
             candidate_song_count += 1
