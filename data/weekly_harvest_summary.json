@@ -1,19 +1,19 @@
 {
   "generated_by": "prepare_weekly_harvest_review.py",
-  "generated_at": "2026-07-25T14:57:24.363556+00:00",
+  "generated_at": "2026-07-25T15:21:19.546608+00:00",
   "source": "build_weekly_harvest_candidates.py",
-  "source_generated_at": "2026-07-25T14:57:17.823011+00:00",
+  "source_generated_at": "2026-07-25T15:21:12.931932+00:00",
   "days": 3,
-  "voice_count": 343,
-  "candidate_count": 67,
+  "voice_count": 414,
+  "candidate_count": 70,
   "category_counts": {
     "曲×会場共起": 5,
-    "曲候補": 57,
-    "用語候補": 5
+    "曲候補": 58,
+    "用語候補": 7
   },
-  "non_song_review_count": 10,
-  "song_candidate_count": 57,
-  "song_direct_dry_run_count": 44,
+  "non_song_review_count": 12,
+  "song_candidate_count": 58,
+  "song_direct_dry_run_count": 45,
   "song_review_count": 2,
   "song_rejected_noise_count": 11,
   "review_files": {
@@ -36,8 +36,10 @@
       "練習会",
       "ハシゴ",
       "踊り会",
+      "参戦",
       "踊り始め",
-      "梯子"
+      "梯子",
+      "盆活"
     ],
     "song_review": [
       "盆ジョビ",

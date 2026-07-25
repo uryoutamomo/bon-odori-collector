@@ -2910,16 +2910,16 @@
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-07-24〜2026-07-25",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-07-24〜2026-07-25",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -2928,7 +2928,7 @@
       "2026-07-24",
       "2026-07-25"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "新橋こいち祭",
@@ -12354,16 +12354,16 @@
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-07-24〜2026-07-25",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-07-24〜2026-07-25",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -12372,7 +12372,7 @@
       "2026-07-24",
       "2026-07-25"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "品川区民まつり 荏原第四地区",
@@ -16201,7 +16201,7 @@
     ],
     "songs": [],
     "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
+    "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -16224,9 +16224,9 @@
     "last_seen_dates": [
       "2025-07-26"
     ],
-    "display_tier": "historical_slide",
+    "display_tier": "historical_reference",
     "historical_reference": {
-      "display_tier": "historical_slide",
+      "display_tier": "historical_reference",
       "last_seen_year": 2025,
       "last_seen_dates": [
         "2025-07-26"
@@ -16250,41 +16250,16 @@
       ],
       "edition_number": null,
       "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-07-25",
-        "date_end": "2026-07-25",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第4土曜を2026年へスライド",
-        "source_date": "2025-07-26",
-        "source_date_end": null,
-        "duration_days": 1
-      }
+      "slide": null
     },
-    "historical_display_tier": "historical_slide",
+    "historical_display_tier": "historical_reference",
     "historical_last_seen_year": 2025,
     "historical_last_seen_dates": [
       "2025-07-26"
     ],
     "historical_reference_label": "2025-07-26実績・今年未確認",
     "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.68,
-    "historical_slide": {
-      "date": "2026-07-25",
-      "date_end": "2026-07-25",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第4土曜を2026年へスライド",
-      "source_date": "2025-07-26",
-      "source_date_end": null,
-      "duration_days": 1
-    },
-    "historical_slide_date": "2026-07-25",
-    "historical_slide_date_end": "2026-07-25",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第4土曜を2026年へスライド",
-    "predicted_date": "2026-07-25",
-    "predicted_date_end": "2026-07-25",
-    "prediction_basis": "2025年実績の同月第4土曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "historical_reference_score": 0.68
   },
   {
     "name": "羽田青年連合会",
@@ -17721,7 +17696,7 @@
       }
     ],
     "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
+    "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -17744,9 +17719,9 @@
     "last_seen_dates": [
       "2025-07-26"
     ],
-    "display_tier": "historical_slide",
+    "display_tier": "historical_reference",
     "historical_reference": {
-      "display_tier": "historical_slide",
+      "display_tier": "historical_reference",
       "last_seen_year": 2025,
       "last_seen_dates": [
         "2025-07-26"
@@ -17770,41 +17745,16 @@
       ],
       "edition_number": null,
       "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-07-25",
-        "date_end": "2026-07-25",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第4土曜を2026年へスライド",
-        "source_date": "2025-07-26",
-        "source_date_end": null,
-        "duration_days": 1
-      }
+      "slide": null
     },
-    "historical_display_tier": "historical_slide",
+    "historical_display_tier": "historical_reference",
     "historical_last_seen_year": 2025,
     "historical_last_seen_dates": [
       "2025-07-26"
     ],
     "historical_reference_label": "2025-07-26実績・今年未確認",
     "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.68,
-    "historical_slide": {
-      "date": "2026-07-25",
-      "date_end": "2026-07-25",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第4土曜を2026年へスライド",
-      "source_date": "2025-07-26",
-      "source_date_end": null,
-      "duration_days": 1
-    },
-    "historical_slide_date": "2026-07-25",
-    "historical_slide_date_end": "2026-07-25",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第4土曜を2026年へスライド",
-    "predicted_date": "2026-07-25",
-    "predicted_date_end": "2026-07-25",
-    "prediction_basis": "2025年実績の同月第4土曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "historical_reference_score": 0.68
   },
   {
     "name": "船橋会 盆踊り",
@@ -18077,7 +18027,7 @@
     ],
     "songs": [],
     "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
+    "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -18098,9 +18048,9 @@
     "last_seen_dates": [
       "2025-07-26"
     ],
-    "display_tier": "historical_slide",
+    "display_tier": "historical_reference",
     "historical_reference": {
-      "display_tier": "historical_slide",
+      "display_tier": "historical_reference",
       "last_seen_year": 2025,
       "last_seen_dates": [
         "2025-07-26"
@@ -18122,41 +18072,16 @@
       ],
       "edition_number": null,
       "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-07-25",
-        "date_end": "2026-07-25",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第4土曜を2026年へスライド",
-        "source_date": "2025-07-26",
-        "source_date_end": null,
-        "duration_days": 1
-      }
+      "slide": null
     },
-    "historical_display_tier": "historical_slide",
+    "historical_display_tier": "historical_reference",
     "historical_last_seen_year": 2025,
     "historical_last_seen_dates": [
       "2025-07-26"
     ],
     "historical_reference_label": "2025-07-26実績・今年未確認",
     "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.6,
-    "historical_slide": {
-      "date": "2026-07-25",
-      "date_end": "2026-07-25",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第4土曜を2026年へスライド",
-      "source_date": "2025-07-26",
-      "source_date_end": null,
-      "duration_days": 1
-    },
-    "historical_slide_date": "2026-07-25",
-    "historical_slide_date_end": "2026-07-25",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第4土曜を2026年へスライド",
-    "predicted_date": "2026-07-25",
-    "predicted_date_end": "2026-07-25",
-    "prediction_basis": "2025年実績の同月第4土曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "historical_reference_score": 0.6
   },
   {
     "name": "宇奈根町会 盆踊り大会",
@@ -18309,7 +18234,7 @@
       }
     ],
     "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
+    "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -18330,9 +18255,9 @@
     "last_seen_dates": [
       "2025-07-26"
     ],
-    "display_tier": "historical_slide",
+    "display_tier": "historical_reference",
     "historical_reference": {
-      "display_tier": "historical_slide",
+      "display_tier": "historical_reference",
       "last_seen_year": 2025,
       "last_seen_dates": [
         "2025-07-26"
@@ -18354,41 +18279,16 @@
       ],
       "edition_number": null,
       "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-07-25",
-        "date_end": "2026-07-25",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第4土曜を2026年へスライド",
-        "source_date": "2025-07-26",
-        "source_date_end": null,
-        "duration_days": 1
-      }
+      "slide": null
     },
-    "historical_display_tier": "historical_slide",
+    "historical_display_tier": "historical_reference",
     "historical_last_seen_year": 2025,
     "historical_last_seen_dates": [
       "2025-07-26"
     ],
     "historical_reference_label": "2025-07-26実績・今年未確認",
     "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.6,
-    "historical_slide": {
-      "date": "2026-07-25",
-      "date_end": "2026-07-25",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第4土曜を2026年へスライド",
-      "source_date": "2025-07-26",
-      "source_date_end": null,
-      "duration_days": 1
-    },
-    "historical_slide_date": "2026-07-25",
-    "historical_slide_date_end": "2026-07-25",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第4土曜を2026年へスライド",
-    "predicted_date": "2026-07-25",
-    "predicted_date_end": "2026-07-25",
-    "prediction_basis": "2025年実績の同月第4土曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "historical_reference_score": 0.6
   },
   {
     "name": "祖師谷商店街振興組合",
@@ -18433,7 +18333,7 @@
     ],
     "songs": [],
     "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
+    "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -18454,9 +18354,9 @@
     "last_seen_dates": [
       "2025-07-26"
     ],
-    "display_tier": "historical_slide",
+    "display_tier": "historical_reference",
     "historical_reference": {
-      "display_tier": "historical_slide",
+      "display_tier": "historical_reference",
       "last_seen_year": 2025,
       "last_seen_dates": [
         "2025-07-26"
@@ -18478,41 +18378,16 @@
       ],
       "edition_number": null,
       "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-07-25",
-        "date_end": "2026-07-25",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第4土曜を2026年へスライド",
-        "source_date": "2025-07-26",
-        "source_date_end": null,
-        "duration_days": 1
-      }
+      "slide": null
     },
-    "historical_display_tier": "historical_slide",
+    "historical_display_tier": "historical_reference",
     "historical_last_seen_year": 2025,
     "historical_last_seen_dates": [
       "2025-07-26"
     ],
     "historical_reference_label": "2025-07-26実績・今年未確認",
     "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.6,
-    "historical_slide": {
-      "date": "2026-07-25",
-      "date_end": "2026-07-25",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第4土曜を2026年へスライド",
-      "source_date": "2025-07-26",
-      "source_date_end": null,
-      "duration_days": 1
-    },
-    "historical_slide_date": "2026-07-25",
-    "historical_slide_date_end": "2026-07-25",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第4土曜を2026年へスライド",
-    "predicted_date": "2026-07-25",
-    "predicted_date_end": "2026-07-25",
-    "prediction_basis": "2025年実績の同月第4土曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "historical_reference_score": 0.6
   },
   {
     "name": "希望ヶ丘団地夏まつり",
@@ -18755,7 +18630,7 @@
     ],
     "songs": [],
     "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
+    "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -18776,9 +18651,9 @@
     "last_seen_dates": [
       "2025-07-26"
     ],
-    "display_tier": "historical_slide",
+    "display_tier": "historical_reference",
     "historical_reference": {
-      "display_tier": "historical_slide",
+      "display_tier": "historical_reference",
       "last_seen_year": 2025,
       "last_seen_dates": [
         "2025-07-26"
@@ -18800,41 +18675,16 @@
       ],
       "edition_number": null,
       "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-07-25",
-        "date_end": "2026-07-25",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第4土曜を2026年へスライド",
-        "source_date": "2025-07-26",
-        "source_date_end": null,
-        "duration_days": 1
-      }
+      "slide": null
     },
-    "historical_display_tier": "historical_slide",
+    "historical_display_tier": "historical_reference",
     "historical_last_seen_year": 2025,
     "historical_last_seen_dates": [
       "2025-07-26"
     ],
     "historical_reference_label": "2025-07-26実績・今年未確認",
     "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.6,
-    "historical_slide": {
-      "date": "2026-07-25",
-      "date_end": "2026-07-25",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第4土曜を2026年へスライド",
-      "source_date": "2025-07-26",
-      "source_date_end": null,
-      "duration_days": 1
-    },
-    "historical_slide_date": "2026-07-25",
-    "historical_slide_date_end": "2026-07-25",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第4土曜を2026年へスライド",
-    "predicted_date": "2026-07-25",
-    "predicted_date_end": "2026-07-25",
-    "prediction_basis": "2025年実績の同月第4土曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "historical_reference_score": 0.6
   },
   {
     "name": "大蔵東部町会「親子納涼盆踊り大会」",
@@ -18872,7 +18722,7 @@
     "source_urls": [],
     "songs": [],
     "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
+    "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -18896,9 +18746,9 @@
     "last_seen_dates": [
       "2025-07-26"
     ],
-    "display_tier": "historical_slide",
+    "display_tier": "historical_reference",
     "historical_reference": {
-      "display_tier": "historical_slide",
+      "display_tier": "historical_reference",
       "last_seen_year": 2025,
       "last_seen_dates": [
         "2025-07-26"
@@ -18923,41 +18773,16 @@
       ],
       "edition_number": null,
       "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-07-25",
-        "date_end": "2026-07-25",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第4土曜を2026年へスライド",
-        "source_date": "2025-07-26",
-        "source_date_end": null,
-        "duration_days": 1
-      }
+      "slide": null
     },
-    "historical_display_tier": "historical_slide",
+    "historical_display_tier": "historical_reference",
     "historical_last_seen_year": 2025,
     "historical_last_seen_dates": [
       "2025-07-26"
     ],
     "historical_reference_label": "2025-07-26実績・今年未確認",
     "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.72,
-    "historical_slide": {
-      "date": "2026-07-25",
-      "date_end": "2026-07-25",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第4土曜を2026年へスライド",
-      "source_date": "2025-07-26",
-      "source_date_end": null,
-      "duration_days": 1
-    },
-    "historical_slide_date": "2026-07-25",
-    "historical_slide_date_end": "2026-07-25",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第4土曜を2026年へスライド",
-    "predicted_date": "2026-07-25",
-    "predicted_date_end": "2026-07-25",
-    "prediction_basis": "2025年実績の同月第4土曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "historical_reference_score": 0.72
   },
   {
     "name": "盆踊り(池尻地区)",
@@ -19677,7 +19502,7 @@
     ],
     "songs": [],
     "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
+    "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -19701,9 +19526,9 @@
     "last_seen_dates": [
       "2025-07-26"
     ],
-    "display_tier": "historical_slide",
+    "display_tier": "historical_reference",
     "historical_reference": {
-      "display_tier": "historical_slide",
+      "display_tier": "historical_reference",
       "last_seen_year": 2025,
       "last_seen_dates": [
         "2025-07-26"
@@ -19728,41 +19553,16 @@
       ],
       "edition_number": null,
       "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-07-25",
-        "date_end": "2026-07-25",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第4土曜を2026年へスライド",
-        "source_date": "2025-07-26",
-        "source_date_end": null,
-        "duration_days": 1
-      }
+      "slide": null
     },
-    "historical_display_tier": "historical_slide",
+    "historical_display_tier": "historical_reference",
     "historical_last_seen_year": 2025,
     "historical_last_seen_dates": [
       "2025-07-26"
     ],
     "historical_reference_label": "2025-07-26実績・今年未確認",
     "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.72,
-    "historical_slide": {
-      "date": "2026-07-25",
-      "date_end": "2026-07-25",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第4土曜を2026年へスライド",
-      "source_date": "2025-07-26",
-      "source_date_end": null,
-      "duration_days": 1
-    },
-    "historical_slide_date": "2026-07-25",
-    "historical_slide_date_end": "2026-07-25",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第4土曜を2026年へスライド",
-    "predicted_date": "2026-07-25",
-    "predicted_date_end": "2026-07-25",
-    "prediction_basis": "2025年実績の同月第4土曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "historical_reference_score": 0.72
   },
   {
     "name": "鎌田協和会 鎌田納涼盆踊り",
@@ -19807,7 +19607,7 @@
     ],
     "songs": [],
     "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
+    "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -19829,9 +19629,9 @@
     "last_seen_dates": [
       "2025-07-26"
     ],
-    "display_tier": "historical_slide",
+    "display_tier": "historical_reference",
     "historical_reference": {
-      "display_tier": "historical_slide",
+      "display_tier": "historical_reference",
       "last_seen_year": 2025,
       "last_seen_dates": [
         "2025-07-26"
@@ -19854,41 +19654,16 @@
       ],
       "edition_number": null,
       "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-07-25",
-        "date_end": "2026-07-25",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第4土曜を2026年へスライド",
-        "source_date": "2025-07-26",
-        "source_date_end": null,
-        "duration_days": 1
-      }
+      "slide": null
     },
-    "historical_display_tier": "historical_slide",
+    "historical_display_tier": "historical_reference",
     "historical_last_seen_year": 2025,
     "historical_last_seen_dates": [
       "2025-07-26"
     ],
     "historical_reference_label": "2025-07-26実績・今年未確認",
     "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.64,
-    "historical_slide": {
-      "date": "2026-07-25",
-      "date_end": "2026-07-25",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第4土曜を2026年へスライド",
-      "source_date": "2025-07-26",
-      "source_date_end": null,
-      "duration_days": 1
-    },
-    "historical_slide_date": "2026-07-25",
-    "historical_slide_date_end": "2026-07-25",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第4土曜を2026年へスライド",
-    "predicted_date": "2026-07-25",
-    "predicted_date_end": "2026-07-25",
-    "prediction_basis": "2025年実績の同月第4土曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "historical_reference_score": 0.64
   },
   {
     "name": "岡本自治会「盆踊り大会」",

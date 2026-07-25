@@ -1,9 +1,9 @@
 {
   "dry_run": true,
   "source": "data/weekly_harvest_candidates.json",
-  "song_candidate_count": 57,
-  "direct_count": 44,
-  "created_count": 31,
+  "song_candidate_count": 58,
+  "direct_count": 45,
+  "created_count": 32,
   "updated_count": 13,
   "rejected_noise_count": 11,
   "review_count": 2,
@@ -131,6 +131,14 @@
     {
       "song_name": "たたら踊り",
       "source_term": "たたら踊り",
+      "target": "create",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
+      "song_name": "ちょいと東京音頭",
+      "source_term": "ちょいと東京音頭",
       "target": "create",
       "venue_relations": 0,
       "event_relations": 0,
@@ -267,19 +275,19 @@
       "dry_run": true
     },
     {
-      "song_name": "大東京音頭",
-      "source_term": "大東京音頭",
+      "song_name": "炭坑節",
+      "source_term": "炭坑節",
       "target": "update",
       "venue_relations": 0,
       "event_relations": 0,
       "dry_run": true
     },
     {
-      "song_name": "炭坑節",
-      "source_term": "炭坑節",
+      "song_name": "大東京音頭",
+      "source_term": "大東京音頭",
       "target": "update",
       "venue_relations": 0,
-      "event_relations": 1,
+      "event_relations": 0,
       "dry_run": true
     },
     {
@@ -315,6 +323,14 @@
       "dry_run": true
     },
     {
+      "song_name": "ドラえもん音頭",
+      "source_term": "ドラえもん音頭",
+      "target": "update",
+      "venue_relations": 0,
+      "event_relations": 0,
+      "dry_run": true
+    },
+    {
       "song_name": "河内おとこ節",
       "source_term": "河内おとこ節",
       "target": "update",
@@ -333,14 +349,6 @@
     {
       "song_name": "ソーラン節",
       "source_term": "ソーラン節",
-      "target": "update",
-      "venue_relations": 0,
-      "event_relations": 0,
-      "dry_run": true
-    },
-    {
-      "song_name": "ドラえもん音頭",
-      "source_term": "ドラえもん音頭",
       "target": "update",
       "venue_relations": 0,
       "event_relations": 0,

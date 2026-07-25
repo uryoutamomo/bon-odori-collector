@@ -1,9 +1,9 @@
 {
   "generated_by": "build_event_poster_ocr_queue.py",
-  "count": 1775,
+  "count": 1787,
   "summary": {
     "critical": 15,
-    "high": 417,
+    "high": 418,
     "trusted_informant": 17
   },
   "items": [
@@ -9450,6 +9450,27 @@
         "pic.x.com/5OVBzDpEzE"
       ],
       "text": "★夜は地元地域のお祭りを２件ハシゴしました🩷\n初めに地元町会の須賀連合町会の盆踊りへ🍀　到着と同時にヤグラの上からご挨拶をさせていただきました🩷　\n二軒目は、伏山夏祭り😊\nこの時間になるとぐっと気温も下がり、多くの町会の方とお話しを😊　いつも温かく迎えて下さる皆さまに感謝です✨ https://t.co/5OVBzDpEzE",
+      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
+    },
+    {
+      "id": "xposter_c760e47274b863d3",
+      "status": "needs_ocr",
+      "priority": "high",
+      "evidence_type": "poster_or_flyer_image",
+      "assumed_source_confidence": "medium",
+      "account": "@w__kazumi",
+      "account_name": "わたなべ一美/板橋区議会議員",
+      "trusted_informant": false,
+      "trusted_informant_rank": "",
+      "url": "https://x.com/w__kazumi/status/2081030405210468787",
+      "tweet_id": "2081030405210468787",
+      "date": "2026-07-25T14:54:46+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HOFOHyGa8AAMSbA.jpg",
+        "https://t.co/mBJyTTPj0l",
+        "pic.x.com/mBJyTTPj0l"
+      ],
+      "text": "#舟渡町会 の #盆踊り へ🏮\n\n雨予報で開催が心配されましたが、無事にスタート。\n\nこの日を待ちに待った町会の踊り子の皆さん😊\n私も輪の中へ加わり、\n今や趣味!?となった盆踊り🎶\n一年ぶりでも体が覚えているもので、皆さんと楽しい時間を過ごしました。\n\n…と思ったのも束の間、終盤にはついに雨が☔️ https://t.co/mBJyTTPj0l",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
     },
     {
@@ -37049,6 +37070,27 @@
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
     },
     {
+      "id": "xposter_8b3bf5c003d0b161",
+      "status": "needs_ocr",
+      "priority": "medium",
+      "evidence_type": "poster_or_flyer_image",
+      "assumed_source_confidence": "medium",
+      "account": "@Shop_MiSHKeT",
+      "account_name": "雑貨屋 MiSHKeT",
+      "trusted_informant": false,
+      "trusted_informant_rank": "",
+      "url": "https://x.com/Shop_MiSHKeT/status/2080523035984224414",
+      "tweet_id": "2080523035984224414",
+      "date": "2026-07-24T05:18:40+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2080523000420745216/img/GJXEUwolMGvME3I_.jpg",
+        "https://t.co/mvfp4v5r3P",
+        "pic.x.com/mvfp4v5r3P"
+      ],
+      "text": "⳹ いよいよ明日から！⳼\n みどりまち盆踊り2026\n\n7/25(土)-26(日) 16-21時 緑町公園周辺にて開催！\n当店ブースは【HELLO GARDEN】エリア内🙌\n\nᝰ✍︎꙳⋆\n\n本日7/24(金)は、13-18時まで営業です。\nイベント出店と休業日が続くので、次の営業日は7/29(水)です。\n\n皆さまのご来店をお待ちしております🤗 https://t.co/mvfp4v5r3P",
+      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
+    },
+    {
       "id": "xposter_2cb608ebeaa4771e",
       "status": "needs_ocr",
       "priority": "medium",
@@ -37067,6 +37109,29 @@
         "pic.x.com/P52xqmilnB"
       ],
       "text": "東灘・茶屋地区「夏まつり・盆おどり」が2026年8月8日（土）に本住吉神社 境内にて開催予定だよ \n\n#東灘区 #夏祭り #盆おどり #イベント #茶屋地区 \n\nhttps://t.co/kmLbztHSST https://t.co/P52xqmilnB",
+      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
+    },
+    {
+      "id": "xposter_43d22590c9ca539a",
+      "status": "needs_ocr",
+      "priority": "medium",
+      "evidence_type": "poster_or_flyer_image",
+      "assumed_source_confidence": "medium",
+      "account": "@ushinohiroba",
+      "account_name": "千葉ウシノヒロバ｜牛が暮らすキャンプ場",
+      "trusted_informant": false,
+      "trusted_informant_rank": "",
+      "url": "https://x.com/ushinohiroba/status/2080593842412343373",
+      "tweet_id": "2080593842412343373",
+      "date": "2026-07-24T10:00:02+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HNvQPI1acAAMTVE.png",
+        "https://t.co/DOgp62EjMf",
+        "pic.x.com/DOgp62EjMf",
+        "https://pbs.twimg.com/media/HNvQx7HacAACcJS.jpg",
+        "https://pbs.twimg.com/media/HNvQx7ZaIAAFNTI.jpg"
+      ],
+      "text": "7/25(土)・26(日)に開催される「みどりまち盆踊り2026」に、千葉ウシノヒロバ ミルクバースタンドが出店いたします🐄🍹🍦\n\n日時：2026年7月25日(土)・26日(日) 16:00-21:00\n場所：緑町公園・ZOZOの広場・HELLO GARDEN・学園通り\n\n▼詳しくはこちら\nhttps://t.co/dVFehj3TV7 https://t.co/DOgp62EjMf",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
     },
     {
@@ -38818,6 +38883,207 @@
         "https://pbs.twimg.com/media/HOFNWpTa8AAUBHq.jpg"
       ],
       "text": "夏祭り真っ盛りです。\n早朝より地元三原台町会の盆踊り設営のお手伝いへ。⁡\n⁡町会長を先頭に皆さんの汗と労力で夜には子どもたちの歓声がこだまします。⁡\n⁡別の町会の縁日では地元の中学生が売り子のお手伝い。\n地域の賑わいには必ず陰の労力があります。\n感謝。⁡\n⁡⁡\n⁡#祭り #子ども #感謝 https://t.co/xM52MPhFyn",
+      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
+    },
+    {
+      "id": "xposter_0b596b6e0e20f88c",
+      "status": "needs_ocr",
+      "priority": "medium",
+      "evidence_type": "poster_or_flyer_image",
+      "assumed_source_confidence": "medium",
+      "account": "@4nb_ex_d",
+      "account_name": "shin◯bu",
+      "trusted_informant": false,
+      "trusted_informant_rank": "",
+      "url": "https://x.com/4nb_ex_d/status/2081030610567803134",
+      "tweet_id": "2081030610567803134",
+      "date": "2026-07-25T14:55:35+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2081030461976100864/img/Zt1fLTpDbkvl6knI.jpg",
+        "https://t.co/2aKmYFrO9H",
+        "pic.x.com/2aKmYFrO9H"
+      ],
+      "text": "下北以上原宿未満 / 上戸彩\n\nこれがなんと下北沢駅前で流れてた!!\nそれも盆踊りでですよ…\n\n#下北沢盆踊り2026 https://t.co/2aKmYFrO9H",
+      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
+    },
+    {
+      "id": "xposter_4cb2537d1816b107",
+      "status": "needs_ocr",
+      "priority": "medium",
+      "evidence_type": "poster_or_flyer_image",
+      "assumed_source_confidence": "medium",
+      "account": "@04JM110729",
+      "account_name": "Max World08/Jamidatipati04",
+      "trusted_informant": false,
+      "trusted_informant_rank": "",
+      "url": "https://x.com/04JM110729/status/2081031268268113961",
+      "tweet_id": "2081031268268113961",
+      "date": "2026-07-25T14:58:12+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HOFOztVaMAADs8g.jpg",
+        "https://t.co/sHoxemJ5P7",
+        "pic.x.com/sHoxemJ5P7",
+        "https://pbs.twimg.com/media/HOFO0n_asAA1z3R.jpg",
+        "https://pbs.twimg.com/media/HOFO1bAbcAAL6VE.jpg"
+      ],
+      "text": "今日は花火大会行く予定だったが雨と雷が予報されていたので行くのは辞めて瑞江の盆踊りを見に行った。\n同日に下鎌田小学校校庭、瑞江公園、江戸川中央公園の3つの会場で盆踊りが行われてた。\n明日は雨だがそれ以降は大丈夫そうなので花火大会に行きたいな。 https://t.co/sHoxemJ5P7",
+      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
+    },
+    {
+      "id": "xposter_62d3a50667bf8ac9",
+      "status": "needs_ocr",
+      "priority": "medium",
+      "evidence_type": "poster_or_flyer_image",
+      "assumed_source_confidence": "medium",
+      "account": "@KuboKiyomi",
+      "account_name": "kiyomi",
+      "trusted_informant": false,
+      "trusted_informant_rank": "",
+      "url": "https://x.com/KuboKiyomi/status/2081031600989749283",
+      "tweet_id": "2081031600989749283",
+      "date": "2026-07-25T14:59:32+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HOFPNS2acAAPmBH.jpg",
+        "https://t.co/3t9bL3HI86",
+        "pic.x.com/3t9bL3HI86",
+        "https://pbs.twimg.com/media/HOFPNS2bAAABC_m.jpg",
+        "https://pbs.twimg.com/media/HOFPNS8bIAE_Xod.jpg"
+      ],
+      "text": "自分で作る発酵フルーツソーダ🥤\n下北沢盆踊り2026の期間だけ特別メニューらしい！ https://t.co/3t9bL3HI86",
+      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
+    },
+    {
+      "id": "xposter_16902c4d673e52f8",
+      "status": "needs_ocr",
+      "priority": "medium",
+      "evidence_type": "poster_or_flyer_image",
+      "assumed_source_confidence": "medium",
+      "account": "@15yuyupp15",
+      "account_name": "yuyuyu",
+      "trusted_informant": false,
+      "trusted_informant_rank": "",
+      "url": "https://x.com/15yuyupp15/status/2081032531768705093",
+      "tweet_id": "2081032531768705093",
+      "date": "2026-07-25T15:03:13+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HOFQDfpbMAABcbL.jpg",
+        "https://t.co/it7oBieVQo",
+        "pic.x.com/it7oBieVQo"
+      ],
+      "text": "2026.07.25\n納涼盆踊り大会\n/陸上自衛隊八戸駐屯地\nゆうみちゃん💚\n\n#pacchi \n#日本一朝早く会えるアイドル\n#双葉ゆうみ https://t.co/it7oBieVQo",
+      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
+    },
+    {
+      "id": "xposter_0cb4415eb6a29518",
+      "status": "needs_ocr",
+      "priority": "medium",
+      "evidence_type": "poster_or_flyer_image",
+      "assumed_source_confidence": "medium",
+      "account": "@bekoizer_red",
+      "account_name": "ベコイザーR（レッド）【本人】",
+      "trusted_informant": false,
+      "trusted_informant_rank": "",
+      "url": "https://x.com/bekoizer_red/status/2081032970287378756",
+      "tweet_id": "2081032970287378756",
+      "date": "2026-07-25T15:04:58+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HOFQbP3aAAAxWYS.jpg",
+        "https://t.co/MD3lrICw6o",
+        "pic.x.com/MD3lrICw6o",
+        "https://pbs.twimg.com/media/HOFQcdna0AEvH1X.jpg"
+      ],
+      "text": "改めて！\n7月31日は東山盆踊りに参戦だ！\n福島民報の夕べであり、福島美少女図鑑の参加もあるぞ！\n盛り上がろうぜ！！\n#東山温泉盆踊り \n#福島美少女図鑑 \n#私は美少女ではない https://t.co/MD3lrICw6o",
+      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
+    },
+    {
+      "id": "xposter_f6002591b4cc778d",
+      "status": "needs_ocr",
+      "priority": "medium",
+      "evidence_type": "poster_or_flyer_image",
+      "assumed_source_confidence": "medium",
+      "account": "@inokashira_life",
+      "account_name": "おっけー@井の頭線",
+      "trusted_informant": false,
+      "trusted_informant_rank": "",
+      "url": "https://x.com/inokashira_life/status/2081033236793446749",
+      "tweet_id": "2081033236793446749",
+      "date": "2026-07-25T15:06:02+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2081033156975898624/img/dS2972hZiKFq-buM.jpg",
+        "https://t.co/GZx1iy1i1N",
+        "pic.x.com/GZx1iy1i1N",
+        "https://pbs.twimg.com/media/HOFQoWjasAA_rjK.jpg",
+        "https://pbs.twimg.com/media/HOFQoWlbQAArl7e.jpg"
+      ],
+      "text": "夜の盆踊りは圧巻だった！👘\n天気がもって本当によかったし、むしろ夜は若干涼しくて助かった🌥️\n\n尚、日中は暑すぎてくら寿司に避難🍣\n中途半端な時間帯だったからか、待ちなく入れました！\n\n明日も天気もつといいですね☀️\n\n#下北沢盆踊り2026 #下北沢 #お祭り #井の頭線沿いの暮らし https://t.co/GZx1iy1i1N",
+      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
+    },
+    {
+      "id": "xposter_dcc020fa11acd740",
+      "status": "needs_ocr",
+      "priority": "medium",
+      "evidence_type": "poster_or_flyer_image",
+      "assumed_source_confidence": "medium",
+      "account": "@ZattaMomoyama",
+      "account_name": "桃陣@擬人化&散歩垢",
+      "trusted_informant": false,
+      "trusted_informant_rank": "",
+      "url": "https://x.com/ZattaMomoyama/status/2081034655445487891",
+      "tweet_id": "2081034655445487891",
+      "date": "2026-07-25T15:11:40+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HOFR_NwbUAARhyc.jpg",
+        "https://t.co/9R72WRo5cb",
+        "pic.x.com/9R72WRo5cb"
+      ],
+      "text": "盆踊りやらだんじりやら観に行く予定が暑すぎて溶けそうやったので大人しく家でらくがきしていた https://t.co/9R72WRo5cb",
+      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
+    },
+    {
+      "id": "xposter_dae7720684ba173d",
+      "status": "needs_ocr",
+      "priority": "medium",
+      "evidence_type": "poster_or_flyer_image",
+      "assumed_source_confidence": "medium",
+      "account": "@kawajimatsuribo",
+      "account_name": "川島釣り堀/K'cafe(カフェは土日祝のみ)",
+      "trusted_informant": false,
+      "trusted_informant_rank": "",
+      "url": "https://x.com/kawajimatsuribo/status/2081034833753772387",
+      "tweet_id": "2081034833753772387",
+      "date": "2026-07-25T15:12:22+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HOFSJL4agAAPvN1.jpg",
+        "https://t.co/iRtbOVEDpX",
+        "pic.x.com/iRtbOVEDpX",
+        "https://pbs.twimg.com/media/HOFSJdtb0AEEDcL.jpg",
+        "https://pbs.twimg.com/media/HOFSJt6awAAIOiR.jpg"
+      ],
+      "text": "坂戸にっさい夏祭りへ！！\nここは、花火があがると。。。\n\nこの地域に住むスタッフが、率先して参りましたwww\n\n8月9日に行われる\n【竹灯のゆうべ】の広報もかねて！！\n\nちなみに！！\n盆踊りではティラノ出動www\n\n#川島釣り堀\n#出張縁日\n#盆踊り\n#坂戸市 https://t.co/iRtbOVEDpX",
+      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
+    },
+    {
+      "id": "xposter_2cdd7d55370eab4d",
+      "status": "needs_ocr",
+      "priority": "medium",
+      "evidence_type": "poster_or_flyer_image",
+      "assumed_source_confidence": "medium",
+      "account": "@BagPacker2023",
+      "account_name": "山登り大好き",
+      "trusted_informant": false,
+      "trusted_informant_rank": "",
+      "url": "https://x.com/BagPacker2023/status/2081035200172380402",
+      "tweet_id": "2081035200172380402",
+      "date": "2026-07-25T15:13:50+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2081035147240181760/img/U4ADevLUPKyX0oRH.jpg",
+        "https://t.co/839ybdEYKQ",
+        "pic.x.com/839ybdEYKQ",
+        "https://pbs.twimg.com/amplify_video_thumb/2081035164206116864/img/HFGCiWRbQnL8K-Tk.jpg",
+        "https://pbs.twimg.com/media/HOFSeDWaEAEkPnE.jpg",
+        "https://pbs.twimg.com/amplify_video_thumb/2081035185290977280/img/okC4zRmqvNDHF_F8.jpg"
+      ],
+      "text": "板橋week\n第三弾、舟渡小学校\n\n板橋のご当地曲が殆ど\nその中でも\n舞い上がれ板橋等\n盛り上がりました。\n\n20時30分迄の会場で\n20時25分に雨が振り始め中止に！\n\n実質最後迄踊れた感が強い\n\n#盆踊り https://t.co/839ybdEYKQ",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
     }
   ]
