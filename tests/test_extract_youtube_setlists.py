@@ -5,6 +5,8 @@ from youtube_channels.extract_youtube_setlists import (
     extract_occurrences,
     extract_setlist,
     parse_youtube_event_date,
+    setlist_from_title,
+    split_song_list,
     split_title_event_song,
 )
 
@@ -50,6 +52,45 @@ class ExtractYoutubeSetlistsTest(unittest.TestCase):
 
         self.assertEqual(parsed["event_name"], "鴨台盆踊り")
         self.assertEqual(parsed["song_title"], "東京音頭")
+
+    def test_splits_quoted_song_list_in_title_into_each_song(self):
+        # 動画タイトルの引用部分に複数曲が並んでいるとき、まるごと1曲名として
+        # 取り込むと実在しない曲名になる(公開JSONの曲目欄にもそのまま出た)。
+        # 末尾の "..." は「以下略」なので曲名から落とす。
+        setlist = setlist_from_title(
+            {
+                "title": (
+                    "【新宿二丁目太宗寺盆踊り大会 2026】J-POP＆洋楽セレクション 全10曲 / "
+                    "「ジンギスカン / ズンパ音頭 / ダンシングヒーロ- / ultra soul / マツケンサンバ...」#盆踊り"
+                ),
+                "url": "https://www.youtube.com/watch?v=C1kwmSecDt8",
+            }
+        )
+
+        self.assertEqual(
+            [item["title"] for item in setlist],
+            ["ジンギスカン", "ズンパ音頭", "ダンシングヒーロー", "ultra soul", "マツケンサンバ"],
+        )
+        self.assertEqual([item["number"] for item in setlist], [1, 2, 3, 4, 5])
+        for item in setlist:
+            self.assertEqual(item["event_name_hint"], "新宿二丁目太宗寺盆踊り大会")
+            self.assertEqual(item["evidence_type"], "title_song_fragment")
+
+    def test_keeps_single_song_title_as_one_entry(self):
+        setlist = setlist_from_title(
+            {
+                "title": "【鴨台盆踊り2025】「東京音頭」 大正大学盆踊り / 大学生主催盆踊り #盆踊り",
+                "url": "https://www.youtube.com/watch?v=aaa",
+            }
+        )
+
+        self.assertEqual([item["title"] for item in setlist], ["東京音頭"])
+
+    def test_split_song_list_keeps_titles_that_are_not_lists(self):
+        # 曲名自体に含まれるハイフンやアーティスト名は分解対象にしない。
+        self.assertEqual(split_song_list("B'z - ultra soul"), ["B'z - ultra soul"])
+        self.assertEqual(split_song_list("東京音頭"), ["東京音頭"])
+        self.assertEqual(split_song_list(""), [])
 
     def test_splits_english_song_at_event_title(self):
         parsed = split_title_event_song(

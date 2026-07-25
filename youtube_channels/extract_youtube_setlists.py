@@ -41,6 +41,11 @@ TITLE_DATE_RE = re.compile(
 )
 TITLE_TRAILING_PLACE_RE = re.compile(r"\s+(?:in|at)\s+(?:Tokyo|Japan|Tokyo Japan|Shinjuku,?\s*Tokyo).*$", re.I)
 TITLE_SONG_QUOTES_RE = re.compile(r"[「『\"“]([^」』\"”]{1,80})[」』\"”]")
+SONG_LIST_SEPARATOR_RE = re.compile(r"\s*[/／|｜]\s*")
+TRUNCATION_SUFFIX_RE = re.compile(r"\s*(?:\.{2,}|[.．。]?…+)\s*$")
+SONG_LIST_STRAY_QUOTE_RE = re.compile(r"^[「『\"“]+|[」』\"”]+$")
+SONG_LIST_STRAY_BRACKET_RE = re.compile(r"[【】\[\]]")
+KATAKANA_TRAILING_HYPHEN_RE = re.compile(r"([ァ-ヶ])[-‐‑–—ｰ]+\s*$")
 TITLE_NUMBER_RE = re.compile(r"(?:^|\s)(?:part|pt\.?|第)?\s*[0-9０-９]{1,2}(?:部|曲目?|終)?(?:\s|[:：])", re.I)
 KNOWN_TITLE_EVENT_PATTERNS = (
     r"GMOシブヤエンタメ祭",
@@ -233,6 +238,39 @@ def title_looks_like_song(value):
     if TITLE_NUMBER_RE.search(value):
         return False
     return bool(re.search(r"[A-Za-z一-龥ぁ-んァ-ヶー]", value))
+
+
+def split_song_list(value):
+    """1曲分として切り出された文字列が複数曲の羅列なら分解する。
+
+    YouTube動画のタイトルには
+    「ジンギスカン / ズンパ音頭 / ダンシングヒーロ- / ultra soul / マツケンサンバ...」
+    のように、その回で流れた曲を並べた引用が入ることがある。
+    これを1曲名のまま取り込むと、実在しない曲名が観測データに生まれ、
+    公開JSONの曲目欄にもそのまま出てしまう。
+    末尾の "..." / "…" は「以下略」であって曲名の一部ではないので落とす。
+    """
+    value = normalize_text(value)
+    if not value:
+        return []
+    titles = []
+    for part in SONG_LIST_SEPARATOR_RE.split(value):
+        part = TRUNCATION_SUFFIX_RE.sub("", part)
+        part = SONG_LIST_STRAY_QUOTE_RE.sub("", part)
+        # 「ダンシングヒーロ-」のように長音を半角ハイフンで書いた表記は、
+        # clean_title_piece が末尾の区切り文字として落とすため
+        # 「ダンシングヒーロ」になってしまう。先に長音へ寄せる。
+        part = KATAKANA_TRAILING_HYPHEN_RE.sub(r"\1ー", part)
+        part = clean_song_from_title(part)
+        if not part or not title_looks_like_song(part):
+            continue
+        # 「2025】ご当地曲 …」のように括弧の片割れが残る断片は、
+        # 曲名ではなくタイトル構造の解析漏れなので採らない。
+        if SONG_LIST_STRAY_BRACKET_RE.search(part):
+            continue
+        if part not in titles:
+            titles.append(part)
+    return titles
 
 
 def known_event_match(title):
@@ -430,17 +468,23 @@ def setlist_from_title(voice):
     parsed = split_title_event_song(voice.get("title") or "")
     if not parsed:
         return []
-    song_title = clean_song_from_title(parsed.get("song_title") or "")
-    if not title_looks_like_song(song_title):
+    song_titles = split_song_list(parsed.get("song_title") or "")
+    if not song_titles:
         return []
-    return [{
-        "number": 1,
-        "title": song_title,
-        "url": compact_url(voice.get("url")),
-        "evidence_type": "title_song_fragment",
-        "event_name_hint": parsed.get("event_name") or "",
-        "title_parse_method": parsed.get("method") or "",
-    }]
+    url = compact_url(voice.get("url"))
+    event_name_hint = parsed.get("event_name") or ""
+    method = parsed.get("method") or ""
+    return [
+        {
+            "number": number,
+            "title": song_title,
+            "url": url,
+            "evidence_type": "title_song_fragment",
+            "event_name_hint": event_name_hint,
+            "title_parse_method": method,
+        }
+        for number, song_title in enumerate(song_titles, start=1)
+    ]
 
 
 def event_hint_is_better(current, candidate, current_key="", candidate_key=""):

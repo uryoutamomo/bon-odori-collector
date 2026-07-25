@@ -1,13 +1,13 @@
 {
   "generated_by": "extract_youtube_setlists.py",
-  "generated_at": "2026-07-24T08:11:13.544331+00:00",
+  "generated_at": "2026-07-25T14:07:48.404393+00:00",
   "source": "data/voices.json",
   "review_hint_source": "data/youtube_song_candidates_review.json",
   "public_event_match_source": "data/public/events_public.json",
   "youtube_voice_count": 4650,
-  "occurrence_count": 308,
-  "matched_public_event_count": 31,
-  "setlist_song_count": 2667,
+  "occurrence_count": 307,
+  "matched_public_event_count": 23,
+  "setlist_song_count": 2745,
   "occurrences": [
     {
       "occurrence_key": "df0d382594481f56",
@@ -4497,7 +4497,23 @@
       "setlist": [
         {
           "number": 1,
-          "title": "ダンシングヒーロー / 希望の轍 / 夜に駆ける...",
+          "title": "ダンシングヒーロー",
+          "url": "https://www.youtube.com/watch?v=RcNlIqFtV20",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "Jiyugaoka Bon Dance Festival 2025.",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 2,
+          "title": "希望の轍",
+          "url": "https://www.youtube.com/watch?v=RcNlIqFtV20",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "Jiyugaoka Bon Dance Festival 2025.",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 3,
+          "title": "夜に駆ける",
           "url": "https://www.youtube.com/watch?v=RcNlIqFtV20",
           "evidence_type": "title_song_fragment",
           "event_name_hint": "Jiyugaoka Bon Dance Festival 2025.",
@@ -4516,8 +4532,8 @@
         }
       ],
       "source_video_count": 1,
-      "song_count": 1,
-      "confidence": "low",
+      "song_count": 3,
+      "confidence": "high",
       "role": "result",
       "act": "observe",
       "reliability_key": "complete_numbered_video",
@@ -8507,7 +8523,15 @@
         },
         {
           "number": 1,
-          "title": "愛♡スクリ~ム!/ わたしの一番かわいいところ",
+          "title": "愛♡スクリ~ム!",
+          "url": "https://www.youtube.com/watch?v=XehJce12asQ",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "GMOシブヤエンタメ祭 盆踊り",
+          "title_parse_method": "bracket_event_and_quote"
+        },
+        {
+          "number": 2,
+          "title": "わたしの一番かわいいところ",
           "url": "https://www.youtube.com/watch?v=XehJce12asQ",
           "evidence_type": "title_song_fragment",
           "event_name_hint": "GMOシブヤエンタメ祭 盆踊り",
@@ -8544,8 +8568,8 @@
         }
       ],
       "source_video_count": 3,
-      "song_count": 2,
-      "confidence": "medium",
+      "song_count": 3,
+      "confidence": "high",
       "role": "result",
       "act": "observe",
       "reliability_key": "complete_numbered_video",
@@ -10014,15 +10038,7 @@
       "setlist": [
         {
           "number": 1,
-          "title": "ダンシングヒーロー",
-          "url": "https://www.youtube.com/watch?v=2esM3dikEAE",
-          "evidence_type": "title_song_fragment",
-          "event_name_hint": "赤坂山王日枝神社盆踊り",
-          "title_parse_method": "bracket_event_and_quote"
-        },
-        {
-          "number": 1,
-          "title": "山王音頭 / ダンシングヒーロー / ニッポンワッショイ / 盆ギリ恋歌 / ドダレバチ ...",
+          "title": "山王音頭",
           "url": "https://www.youtube.com/watch?v=E3JcbxiuuXI",
           "evidence_type": "title_song_fragment",
           "event_name_hint": "赤坂山王日枝神社盆踊り 2025 最終日 第一部 BON DANCE",
@@ -10035,14 +10051,6 @@
         },
         {
           "number": 1,
-          "title": "盆ギリ恋歌",
-          "url": "https://www.youtube.com/watch?v=E-o_3RCbWmQ",
-          "evidence_type": "title_song_fragment",
-          "event_name_hint": "赤坂山王日枝神社盆踊り",
-          "title_parse_method": "bracket_event_and_quote"
-        },
-        {
-          "number": 1,
           "title": "赤坂日枝神社 納涼大会 初日",
           "url": "https://www.youtube.com/watch?v=PKLKjk32iVw",
           "evidence_type": "title_song_fragment",
@@ -10051,8 +10059,24 @@
         },
         {
           "number": 2,
+          "title": "ダンシングヒーロー",
+          "url": "https://www.youtube.com/watch?v=E3JcbxiuuXI",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "赤坂山王日枝神社盆踊り 2025 最終日 第一部 BON DANCE",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 2,
           "title": "東京音頭",
           "url": "https://www.youtube.com/watch?v=NvAu8Rla6xQ"
+        },
+        {
+          "number": 3,
+          "title": "ニッポンワッショイ",
+          "url": "https://www.youtube.com/watch?v=E3JcbxiuuXI",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "赤坂山王日枝神社盆踊り 2025 最終日 第一部 BON DANCE",
+          "title_parse_method": "quoted_song"
         },
         {
           "number": 3,
@@ -10063,6 +10087,22 @@
           "number": 4,
           "title": "大東京音頭",
           "url": "https://www.youtube.com/watch?v=-dzEWeRwRMo"
+        },
+        {
+          "number": 4,
+          "title": "盆ギリ恋歌",
+          "url": "https://www.youtube.com/watch?v=E3JcbxiuuXI",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "赤坂山王日枝神社盆踊り 2025 最終日 第一部 BON DANCE",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 5,
+          "title": "ドダレバチ",
+          "url": "https://www.youtube.com/watch?v=E3JcbxiuuXI",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "赤坂山王日枝神社盆踊り 2025 最終日 第一部 BON DANCE",
+          "title_parse_method": "quoted_song"
         },
         {
           "number": 5,
@@ -10100,11 +10140,6 @@
           "url": "https://www.youtube.com/watch?v=nIsXNK5cxzU"
         },
         {
-          "number": 12,
-          "title": "山王音頭",
-          "url": "https://www.youtube.com/watch?v=Lu3C0ELsApY"
-        },
-        {
           "number": 13,
           "title": "千代田おどり",
           "url": "https://www.youtube.com/watch?v=zAvGRrePVT0"
@@ -10115,19 +10150,9 @@
           "url": "https://www.youtube.com/watch?v=H37Dkh_oyWI"
         },
         {
-          "number": 16,
-          "title": "ニッポンワッショイ",
-          "url": "https://www.youtube.com/watch?v=453cskhVI5k"
-        },
-        {
           "number": 17,
           "title": "かがやき音頭",
           "url": "https://www.youtube.com/watch?v=C60DHDYKVNg"
-        },
-        {
-          "number": 18,
-          "title": "ドダレバチ",
-          "url": "https://www.youtube.com/watch?v=3eGgc_vlr90"
         },
         {
           "number": 20,
@@ -10345,7 +10370,7 @@
         }
       ],
       "source_video_count": 23,
-      "song_count": 22,
+      "song_count": 21,
       "confidence": "high",
       "role": "result",
       "act": "observe",
@@ -11371,7 +11396,39 @@
       "setlist": [
         {
           "number": 1,
-          "title": "かわさき / 三百 / 春駒 / 甚句 / まつさか",
+          "title": "かわさき",
+          "url": "https://www.youtube.com/watch?v=-zbuEpc9mL8",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "郡上おどり in 青山 ”最終日フィナーレは万雷の拍手とともに終了” / 盆踊り",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 2,
+          "title": "三百",
+          "url": "https://www.youtube.com/watch?v=-zbuEpc9mL8",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "郡上おどり in 青山 ”最終日フィナーレは万雷の拍手とともに終了” / 盆踊り",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 3,
+          "title": "春駒",
+          "url": "https://www.youtube.com/watch?v=-zbuEpc9mL8",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "郡上おどり in 青山 ”最終日フィナーレは万雷の拍手とともに終了” / 盆踊り",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 4,
+          "title": "甚句",
+          "url": "https://www.youtube.com/watch?v=-zbuEpc9mL8",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "郡上おどり in 青山 ”最終日フィナーレは万雷の拍手とともに終了” / 盆踊り",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 5,
+          "title": "まつさか",
           "url": "https://www.youtube.com/watch?v=-zbuEpc9mL8",
           "evidence_type": "title_song_fragment",
           "event_name_hint": "郡上おどり in 青山 ”最終日フィナーレは万雷の拍手とともに終了” / 盆踊り",
@@ -11390,8 +11447,8 @@
         }
       ],
       "source_video_count": 1,
-      "song_count": 1,
-      "confidence": "low",
+      "song_count": 5,
+      "confidence": "high",
       "role": "result",
       "act": "observe",
       "reliability_key": "complete_numbered_video",
@@ -11409,7 +11466,39 @@
       "setlist": [
         {
           "number": 1,
-          "title": "春駒 / やっちく / かわさき / さわぎ / 猫の手",
+          "title": "春駒",
+          "url": "https://www.youtube.com/watch?v=hQ0UFL9bwnM",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "郡上おどり in 青山 ”生歌 × 生演奏は控えめに言って最高!!” / 盆踊り",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 2,
+          "title": "やっちく",
+          "url": "https://www.youtube.com/watch?v=hQ0UFL9bwnM",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "郡上おどり in 青山 ”生歌 × 生演奏は控えめに言って最高!!” / 盆踊り",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 3,
+          "title": "かわさき",
+          "url": "https://www.youtube.com/watch?v=hQ0UFL9bwnM",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "郡上おどり in 青山 ”生歌 × 生演奏は控えめに言って最高!!” / 盆踊り",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 4,
+          "title": "さわぎ",
+          "url": "https://www.youtube.com/watch?v=hQ0UFL9bwnM",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "郡上おどり in 青山 ”生歌 × 生演奏は控えめに言って最高!!” / 盆踊り",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 5,
+          "title": "猫の手",
           "url": "https://www.youtube.com/watch?v=hQ0UFL9bwnM",
           "evidence_type": "title_song_fragment",
           "event_name_hint": "郡上おどり in 青山 ”生歌 × 生演奏は控えめに言って最高!!” / 盆踊り",
@@ -11428,8 +11517,8 @@
         }
       ],
       "source_video_count": 1,
-      "song_count": 1,
-      "confidence": "low",
+      "song_count": 5,
+      "confidence": "high",
       "role": "result",
       "act": "observe",
       "reliability_key": "complete_numbered_video",
@@ -12934,7 +13023,23 @@
       "setlist": [
         {
           "number": 1,
-          "title": "LOVEマシーン / ダンシングヒーロー / ジャンボリミッキー",
+          "title": "LOVEマシーン",
+          "url": "https://www.youtube.com/watch?v=Cccofzb24TU",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "上野公園 Bon Dance",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 2,
+          "title": "ダンシングヒーロー",
+          "url": "https://www.youtube.com/watch?v=Cccofzb24TU",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "上野公園 Bon Dance",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 3,
+          "title": "ジャンボリミッキー",
           "url": "https://www.youtube.com/watch?v=Cccofzb24TU",
           "evidence_type": "title_song_fragment",
           "event_name_hint": "上野公園 Bon Dance",
@@ -12953,8 +13058,8 @@
         }
       ],
       "source_video_count": 1,
-      "song_count": 1,
-      "confidence": "low",
+      "song_count": 3,
+      "confidence": "high",
       "role": "result",
       "act": "observe",
       "reliability_key": "complete_numbered_video",
@@ -13243,7 +13348,7 @@
         },
         {
           "number": 1,
-          "title": "3回分マルチ編集 / Traditional Japanese",
+          "title": "3回分マルチ編集",
           "url": "https://www.youtube.com/watch?v=ktKbqi99bFI",
           "evidence_type": "title_song_fragment",
           "event_name_hint": "鴨台盆踊り",
@@ -13304,6 +13409,14 @@
           "evidence_type": "title_song_fragment",
           "event_name_hint": "鴨台盆踊り",
           "title_parse_method": "bracket_event_and_quote"
+        },
+        {
+          "number": 2,
+          "title": "Traditional Japanese",
+          "url": "https://www.youtube.com/watch?v=ktKbqi99bFI",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "鴨台盆踊り",
+          "title_parse_method": "known_event"
         }
       ],
       "source_videos": [
@@ -13390,24 +13503,12 @@
         }
       ],
       "source_video_count": 9,
-      "song_count": 9,
+      "song_count": 10,
       "confidence": "high",
       "role": "result",
       "act": "observe",
       "reliability_key": "complete_numbered_video",
-      "matched_public_event": {
-        "name": "第15回 鴨台盆踊り",
-        "venue": "大正大学",
-        "date": "2025-07-04",
-        "date_end": "2025-07-05",
-        "score": 80,
-        "reasons": [
-          "date",
-          "event_name_partial"
-        ]
-      },
-      "canonical_event_name": "第15回 鴨台盆踊り",
-      "canonical_venue": "大正大学"
+      "matched_public_event": null
     },
     {
       "occurrence_key": "02655e2be1f07abb",
@@ -14341,7 +14442,31 @@
       "setlist": [
         {
           "number": 1,
-          "title": "大東京音頭 / 朝顔音頭 / たいとう音頭 /台東区の歌",
+          "title": "大東京音頭",
+          "url": "https://www.youtube.com/watch?v=lF1X0wiVX-4",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "Iriya Asagao Ondo Dance Festival Dance",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 2,
+          "title": "朝顔音頭",
+          "url": "https://www.youtube.com/watch?v=lF1X0wiVX-4",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "Iriya Asagao Ondo Dance Festival Dance",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 3,
+          "title": "たいとう音頭",
+          "url": "https://www.youtube.com/watch?v=lF1X0wiVX-4",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "Iriya Asagao Ondo Dance Festival Dance",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 4,
+          "title": "台東区の歌",
           "url": "https://www.youtube.com/watch?v=lF1X0wiVX-4",
           "evidence_type": "title_song_fragment",
           "event_name_hint": "Iriya Asagao Ondo Dance Festival Dance",
@@ -14360,8 +14485,8 @@
         }
       ],
       "source_video_count": 1,
-      "song_count": 1,
-      "confidence": "low",
+      "song_count": 4,
+      "confidence": "high",
       "role": "result",
       "act": "observe",
       "reliability_key": "complete_numbered_video",
@@ -16108,7 +16233,7 @@
       "setlist": [
         {
           "number": 1,
-          "title": "「大東京音頭 /ソーラン節...",
+          "title": "大東京音頭",
           "url": "https://www.youtube.com/watch?v=53rD5_n_45s",
           "evidence_type": "title_song_fragment",
           "event_name_hint": "祐天寺み霊まつり盆踊り",
@@ -16118,6 +16243,14 @@
           "number": 1,
           "title": "東京音頭",
           "url": "https://www.youtube.com/watch?v=PIpOngCTulg",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "祐天寺み霊まつり盆踊り",
+          "title_parse_method": "bracket_event_and_quote"
+        },
+        {
+          "number": 2,
+          "title": "ソーラン節",
+          "url": "https://www.youtube.com/watch?v=53rD5_n_45s",
           "evidence_type": "title_song_fragment",
           "event_name_hint": "祐天寺み霊まつり盆踊り",
           "title_parse_method": "bracket_event_and_quote"
@@ -16144,8 +16277,8 @@
         }
       ],
       "source_video_count": 2,
-      "song_count": 2,
-      "confidence": "medium",
+      "song_count": 3,
+      "confidence": "high",
       "role": "result",
       "act": "observe",
       "reliability_key": "complete_numbered_video",
@@ -18480,7 +18613,7 @@
         },
         {
           "number": 1,
-          "title": "大東京音頭 / 八木節 / ドンパン節",
+          "title": "大東京音頭",
           "url": "https://www.youtube.com/watch?v=7HDyNtiFVUk",
           "evidence_type": "title_song_fragment",
           "event_name_hint": "神楽坂まつり盆踊り",
@@ -18488,7 +18621,7 @@
         },
         {
           "number": 1,
-          "title": "東京音頭 / 炭坑節 / 新宿音頭",
+          "title": "東京音頭",
           "url": "https://www.youtube.com/watch?v=4aSfgOCm8Sc",
           "evidence_type": "title_song_fragment",
           "event_name_hint": "神楽坂まつり盆踊り",
@@ -18508,6 +18641,38 @@
           "url": "https://www.youtube.com/watch?v=1lZOsNefqPI",
           "evidence_type": "title_song_fragment",
           "event_name_hint": "神楽坂まつり 盆踊り",
+          "title_parse_method": "bracket_event_and_quote"
+        },
+        {
+          "number": 2,
+          "title": "八木節",
+          "url": "https://www.youtube.com/watch?v=7HDyNtiFVUk",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "神楽坂まつり盆踊り",
+          "title_parse_method": "bracket_event_and_quote"
+        },
+        {
+          "number": 2,
+          "title": "炭坑節",
+          "url": "https://www.youtube.com/watch?v=4aSfgOCm8Sc",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "神楽坂まつり盆踊り",
+          "title_parse_method": "bracket_event_and_quote"
+        },
+        {
+          "number": 3,
+          "title": "ドンパン節",
+          "url": "https://www.youtube.com/watch?v=7HDyNtiFVUk",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "神楽坂まつり盆踊り",
+          "title_parse_method": "bracket_event_and_quote"
+        },
+        {
+          "number": 3,
+          "title": "新宿音頭",
+          "url": "https://www.youtube.com/watch?v=4aSfgOCm8Sc",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "神楽坂まつり盆踊り",
           "title_parse_method": "bracket_event_and_quote"
         }
       ],
@@ -18595,24 +18760,12 @@
         }
       ],
       "source_video_count": 9,
-      "song_count": 8,
+      "song_count": 12,
       "confidence": "high",
       "role": "result",
       "act": "observe",
       "reliability_key": "complete_numbered_video",
-      "matched_public_event": {
-        "name": "第51回 神楽坂まつり 盆踊り",
-        "venue": "りそな銀行神楽坂支店前",
-        "date": "2025-07-23",
-        "date_end": "2025-07-24",
-        "score": 80,
-        "reasons": [
-          "date",
-          "event_name_partial"
-        ]
-      },
-      "canonical_event_name": "第51回 神楽坂まつり 盆踊り",
-      "canonical_venue": "りそな銀行神楽坂支店前"
+      "matched_public_event": null
     },
     {
       "occurrence_key": "b966ec0d89fff517",
@@ -18650,20 +18803,7 @@
       "role": "result",
       "act": "observe",
       "reliability_key": "complete_numbered_video",
-      "matched_public_event": {
-        "name": "赤坂浄土寺盆踊り大会",
-        "venue": "浄土寺",
-        "date": "2025-07-24",
-        "date_end": "2025-07-25",
-        "score": 98,
-        "reasons": [
-          "date",
-          "event_name_partial",
-          "venue_partial"
-        ]
-      },
-      "canonical_event_name": "赤坂浄土寺盆踊り大会",
-      "canonical_venue": "浄土寺"
+      "matched_public_event": null
     },
     {
       "occurrence_key": "54e5cc85d4435ffa",
@@ -19182,7 +19322,55 @@
       "setlist": [
         {
           "number": 1,
-          "title": "会津磐梯山 / 白浜音頭 / 大東京音頭 / 盆ギリ恋歌 / 赤坂豊川音頭 / 赤坂小唄 / 赤坂音頭",
+          "title": "会津磐梯山",
+          "url": "https://www.youtube.com/watch?v=6gpBlyeZXoc",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "赤坂 浄土寺盆踊り大会 2025 前編 / 盆踊り",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 2,
+          "title": "白浜音頭",
+          "url": "https://www.youtube.com/watch?v=6gpBlyeZXoc",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "赤坂 浄土寺盆踊り大会 2025 前編 / 盆踊り",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 3,
+          "title": "大東京音頭",
+          "url": "https://www.youtube.com/watch?v=6gpBlyeZXoc",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "赤坂 浄土寺盆踊り大会 2025 前編 / 盆踊り",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 4,
+          "title": "盆ギリ恋歌",
+          "url": "https://www.youtube.com/watch?v=6gpBlyeZXoc",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "赤坂 浄土寺盆踊り大会 2025 前編 / 盆踊り",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 5,
+          "title": "赤坂豊川音頭",
+          "url": "https://www.youtube.com/watch?v=6gpBlyeZXoc",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "赤坂 浄土寺盆踊り大会 2025 前編 / 盆踊り",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 6,
+          "title": "赤坂小唄",
+          "url": "https://www.youtube.com/watch?v=6gpBlyeZXoc",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "赤坂 浄土寺盆踊り大会 2025 前編 / 盆踊り",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 7,
+          "title": "赤坂音頭",
           "url": "https://www.youtube.com/watch?v=6gpBlyeZXoc",
           "evidence_type": "title_song_fragment",
           "event_name_hint": "赤坂 浄土寺盆踊り大会 2025 前編 / 盆踊り",
@@ -19201,25 +19389,12 @@
         }
       ],
       "source_video_count": 1,
-      "song_count": 1,
-      "confidence": "low",
+      "song_count": 7,
+      "confidence": "high",
       "role": "result",
       "act": "observe",
       "reliability_key": "complete_numbered_video",
-      "matched_public_event": {
-        "name": "赤坂浄土寺盆踊り大会",
-        "venue": "浄土寺",
-        "date": "2025-07-24",
-        "date_end": "2025-07-25",
-        "score": 98,
-        "reasons": [
-          "date",
-          "event_name_partial",
-          "venue_partial"
-        ]
-      },
-      "canonical_event_name": "赤坂浄土寺盆踊り大会",
-      "canonical_venue": "浄土寺"
+      "matched_public_event": null
     },
     {
       "occurrence_key": "1ff89c7aeced9840",
@@ -19233,7 +19408,55 @@
       "setlist": [
         {
           "number": 1,
-          "title": "東京音頭 / カワサキ / ドダレバチ / 盆ギリ恋歌 / 赤坂豊川音頭 / 赤坂小唄 / 赤坂音頭",
+          "title": "東京音頭",
+          "url": "https://www.youtube.com/watch?v=oW8T6lHEPc8",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "赤坂 浄土寺盆踊り大会 2025 後編 / 盆踊り",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 2,
+          "title": "カワサキ",
+          "url": "https://www.youtube.com/watch?v=oW8T6lHEPc8",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "赤坂 浄土寺盆踊り大会 2025 後編 / 盆踊り",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 3,
+          "title": "ドダレバチ",
+          "url": "https://www.youtube.com/watch?v=oW8T6lHEPc8",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "赤坂 浄土寺盆踊り大会 2025 後編 / 盆踊り",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 4,
+          "title": "盆ギリ恋歌",
+          "url": "https://www.youtube.com/watch?v=oW8T6lHEPc8",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "赤坂 浄土寺盆踊り大会 2025 後編 / 盆踊り",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 5,
+          "title": "赤坂豊川音頭",
+          "url": "https://www.youtube.com/watch?v=oW8T6lHEPc8",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "赤坂 浄土寺盆踊り大会 2025 後編 / 盆踊り",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 6,
+          "title": "赤坂小唄",
+          "url": "https://www.youtube.com/watch?v=oW8T6lHEPc8",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "赤坂 浄土寺盆踊り大会 2025 後編 / 盆踊り",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 7,
+          "title": "赤坂音頭",
           "url": "https://www.youtube.com/watch?v=oW8T6lHEPc8",
           "evidence_type": "title_song_fragment",
           "event_name_hint": "赤坂 浄土寺盆踊り大会 2025 後編 / 盆踊り",
@@ -19252,25 +19475,12 @@
         }
       ],
       "source_video_count": 1,
-      "song_count": 1,
-      "confidence": "low",
+      "song_count": 7,
+      "confidence": "high",
       "role": "result",
       "act": "observe",
       "reliability_key": "complete_numbered_video",
-      "matched_public_event": {
-        "name": "赤坂浄土寺盆踊り大会",
-        "venue": "浄土寺",
-        "date": "2025-07-24",
-        "date_end": "2025-07-25",
-        "score": 98,
-        "reasons": [
-          "date",
-          "event_name_partial",
-          "venue_partial"
-        ]
-      },
-      "canonical_event_name": "赤坂浄土寺盆踊り大会",
-      "canonical_venue": "浄土寺"
+      "matched_public_event": null
     },
     {
       "occurrence_key": "bc5212c7e1a2e8c6",
@@ -19459,20 +19669,7 @@
       "role": "result",
       "act": "observe",
       "reliability_key": "complete_numbered_video",
-      "matched_public_event": {
-        "name": "赤坂浄土寺盆踊り大会",
-        "venue": "浄土寺",
-        "date": "2025-07-24",
-        "date_end": "2025-07-25",
-        "score": 98,
-        "reasons": [
-          "date",
-          "event_name_partial",
-          "venue_partial"
-        ]
-      },
-      "canonical_event_name": "赤坂浄土寺盆踊り大会",
-      "canonical_venue": "浄土寺"
+      "matched_public_event": null
     },
     {
       "occurrence_key": "786c8bd9ed1132bc",
@@ -19488,16 +19685,16 @@
       "setlist": [
         {
           "number": 1,
-          "title": "2025】ご当地曲 第70回大会記念メドレー / Hey Mr恵比寿 恵比寿音頭 能登島さし音頭 恵比寿ラビアンローズ YES YES EBISU",
-          "url": "https://www.youtube.com/watch?v=OfEQCbPzrT4",
+          "title": "Hey Mr 恵比寿(地元企業:サッポロ)第70回",
+          "url": "https://www.youtube.com/watch?v=mNjTtT-9U5Q",
           "evidence_type": "title_song_fragment",
           "event_name_hint": "恵比寿駅前盆踊り大会",
           "title_parse_method": "known_event"
         },
         {
           "number": 1,
-          "title": "Hey Mr 恵比寿(地元企業:サッポロ)第70回",
-          "url": "https://www.youtube.com/watch?v=mNjTtT-9U5Q",
+          "title": "Hey Mr恵比寿 恵比寿音頭 能登島さし音頭 恵比寿ラビアンローズ YES YES EBISU",
+          "url": "https://www.youtube.com/watch?v=OfEQCbPzrT4",
           "evidence_type": "title_song_fragment",
           "event_name_hint": "恵比寿駅前盆踊り大会",
           "title_parse_method": "known_event"
@@ -20321,7 +20518,47 @@
       "setlist": [
         {
           "number": 1,
-          "title": "ホームラン音頭 / あさりときりみのおだいどこ音頭 / あやめ踊り / 大江戸助六太鼓奉納演奏 / 日本晴れだよ / これがお江戸の盆ダンス",
+          "title": "ホームラン音頭",
+          "url": "https://www.youtube.com/watch?v=Q5_sNzd_5OE",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "盆踊り",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 2,
+          "title": "あさりときりみのおだいどこ音頭",
+          "url": "https://www.youtube.com/watch?v=Q5_sNzd_5OE",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "盆踊り",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 3,
+          "title": "あやめ踊り",
+          "url": "https://www.youtube.com/watch?v=Q5_sNzd_5OE",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "盆踊り",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 4,
+          "title": "大江戸助六太鼓奉納演奏",
+          "url": "https://www.youtube.com/watch?v=Q5_sNzd_5OE",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "盆踊り",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 5,
+          "title": "日本晴れだよ",
+          "url": "https://www.youtube.com/watch?v=Q5_sNzd_5OE",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "盆踊り",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 6,
+          "title": "これがお江戸の盆ダンス",
           "url": "https://www.youtube.com/watch?v=Q5_sNzd_5OE",
           "evidence_type": "title_song_fragment",
           "event_name_hint": "盆踊り",
@@ -20340,8 +20577,8 @@
         }
       ],
       "source_video_count": 1,
-      "song_count": 1,
-      "confidence": "low",
+      "song_count": 6,
+      "confidence": "high",
       "role": "result",
       "act": "observe",
       "reliability_key": "complete_numbered_video",
@@ -20359,7 +20596,23 @@
       "setlist": [
         {
           "number": 1,
-          "title": "炭坑節 / 築地音頭 / 東京音頭",
+          "title": "炭坑節",
+          "url": "https://www.youtube.com/watch?v=k-B9WTi88bI",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "盆踊り Tukijihongwanji Bon Dance Festival",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 2,
+          "title": "築地音頭",
+          "url": "https://www.youtube.com/watch?v=k-B9WTi88bI",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "盆踊り Tukijihongwanji Bon Dance Festival",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 3,
+          "title": "東京音頭",
           "url": "https://www.youtube.com/watch?v=k-B9WTi88bI",
           "evidence_type": "title_song_fragment",
           "event_name_hint": "盆踊り Tukijihongwanji Bon Dance Festival",
@@ -20378,8 +20631,8 @@
         }
       ],
       "source_video_count": 1,
-      "song_count": 1,
-      "confidence": "low",
+      "song_count": 3,
+      "confidence": "high",
       "role": "result",
       "act": "observe",
       "reliability_key": "complete_numbered_video",
@@ -20397,7 +20650,39 @@
       "setlist": [
         {
           "number": 1,
-          "title": "江戸助六太音頭 / 斎太郎節 / あやめ踊り / 法輪音頭 / ゆかた音頭",
+          "title": "江戸助六太音頭",
+          "url": "https://www.youtube.com/watch?v=B4pfGzxtu9I",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "盆踊り 屋台",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 2,
+          "title": "斎太郎節",
+          "url": "https://www.youtube.com/watch?v=B4pfGzxtu9I",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "盆踊り 屋台",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 3,
+          "title": "あやめ踊り",
+          "url": "https://www.youtube.com/watch?v=B4pfGzxtu9I",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "盆踊り 屋台",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 4,
+          "title": "法輪音頭",
+          "url": "https://www.youtube.com/watch?v=B4pfGzxtu9I",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "盆踊り 屋台",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 5,
+          "title": "ゆかた音頭",
           "url": "https://www.youtube.com/watch?v=B4pfGzxtu9I",
           "evidence_type": "title_song_fragment",
           "event_name_hint": "盆踊り 屋台",
@@ -20416,8 +20701,8 @@
         }
       ],
       "source_video_count": 1,
-      "song_count": 1,
-      "confidence": "low",
+      "song_count": 5,
+      "confidence": "high",
       "role": "result",
       "act": "observe",
       "reliability_key": "complete_numbered_video",
@@ -21086,7 +21371,7 @@
         },
         {
           "number": 1,
-          "title": "ドダレバチ / 黒石じょんがら ...",
+          "title": "ドダレバチ",
           "url": "https://www.youtube.com/watch?v=oVvXdXAY2gQ",
           "evidence_type": "title_song_fragment",
           "event_name_hint": "中野駅前大盆踊り大会",
@@ -21096,6 +21381,14 @@
           "number": 1,
           "title": "第ゼロ感",
           "url": "https://www.youtube.com/watch?v=Cw3YYcWQrGA",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "中野駅前大盆踊り大会",
+          "title_parse_method": "bracket_event_and_quote"
+        },
+        {
+          "number": 2,
+          "title": "黒石じょんがら",
+          "url": "https://www.youtube.com/watch?v=oVvXdXAY2gQ",
           "evidence_type": "title_song_fragment",
           "event_name_hint": "中野駅前大盆踊り大会",
           "title_parse_method": "bracket_event_and_quote"
@@ -21176,7 +21469,7 @@
         }
       ],
       "source_video_count": 8,
-      "song_count": 8,
+      "song_count": 9,
       "confidence": "high",
       "role": "result",
       "act": "observe",
@@ -21380,19 +21673,7 @@
       "role": "result",
       "act": "observe",
       "reliability_key": "complete_numbered_video",
-      "matched_public_event": {
-        "name": "第6回 渋谷盆踊り",
-        "venue": "SHIBUYA109前〜道玄坂・文化村通り一帯",
-        "date": "2025-08-02",
-        "date_end": "2025-08-02",
-        "score": 80,
-        "reasons": [
-          "date",
-          "event_name_partial"
-        ]
-      },
-      "canonical_event_name": "第6回 渋谷盆踊り",
-      "canonical_venue": "SHIBUYA109前〜道玄坂・文化村通り一帯"
+      "matched_public_event": null
     },
     {
       "occurrence_key": "400fb792f32d02b8",
@@ -21422,15 +21703,31 @@
         },
         {
           "number": 1,
-          "title": "八木節",
-          "url": "https://www.youtube.com/watch?v=miRpwhuGNjo",
+          "title": "炭坑節",
+          "url": "https://www.youtube.com/watch?v=-fRgnyO96jw",
           "evidence_type": "title_song_fragment",
           "event_name_hint": "新宿 花園神社 盆踊り",
           "title_parse_method": "bracket_event_and_quote"
         },
         {
-          "number": 1,
-          "title": "炭坑節 /東京音頭 / 新宿音頭 / 八木節",
+          "number": 2,
+          "title": "東京音頭",
+          "url": "https://www.youtube.com/watch?v=-fRgnyO96jw",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "新宿 花園神社 盆踊り",
+          "title_parse_method": "bracket_event_and_quote"
+        },
+        {
+          "number": 3,
+          "title": "新宿音頭",
+          "url": "https://www.youtube.com/watch?v=-fRgnyO96jw",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "新宿 花園神社 盆踊り",
+          "title_parse_method": "bracket_event_and_quote"
+        },
+        {
+          "number": 4,
+          "title": "八木節",
           "url": "https://www.youtube.com/watch?v=-fRgnyO96jw",
           "evidence_type": "title_song_fragment",
           "event_name_hint": "新宿 花園神社 盆踊り",
@@ -21476,7 +21773,7 @@
         }
       ],
       "source_video_count": 4,
-      "song_count": 4,
+      "song_count": 6,
       "confidence": "high",
       "role": "result",
       "act": "observe",
@@ -23058,7 +23355,31 @@
       "setlist": [
         {
           "number": 1,
-          "title": "ほっぺちゃん音頭 / 邪神ちゃん音頭 / オロナミンC元気ハツラツ音頭 / 神田明神音頭",
+          "title": "ほっぺちゃん音頭",
+          "url": "https://www.youtube.com/watch?v=ElBu0237mMc",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "Kanda Myojin Bon Dance 盆踊り",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 2,
+          "title": "邪神ちゃん音頭",
+          "url": "https://www.youtube.com/watch?v=ElBu0237mMc",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "Kanda Myojin Bon Dance 盆踊り",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 3,
+          "title": "オロナミンC元気ハツラツ音頭",
+          "url": "https://www.youtube.com/watch?v=ElBu0237mMc",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "Kanda Myojin Bon Dance 盆踊り",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 4,
+          "title": "神田明神音頭",
           "url": "https://www.youtube.com/watch?v=ElBu0237mMc",
           "evidence_type": "title_song_fragment",
           "event_name_hint": "Kanda Myojin Bon Dance 盆踊り",
@@ -23101,7 +23422,7 @@
         }
       ],
       "source_video_count": 2,
-      "song_count": 4,
+      "song_count": 7,
       "confidence": "high",
       "role": "result",
       "act": "observe",
@@ -23120,7 +23441,39 @@
       "setlist": [
         {
           "number": 1,
-          "title": "おジャ魔女カーニバル / ダンシングヒーロー / クックロビン音頭 / おそ松くん音頭 / 神田明神音頭",
+          "title": "おジャ魔女カーニバル",
+          "url": "https://www.youtube.com/watch?v=RncJ5GHZD5s",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "Kanda Myojin 盆踊り",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 2,
+          "title": "ダンシングヒーロー",
+          "url": "https://www.youtube.com/watch?v=RncJ5GHZD5s",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "Kanda Myojin 盆踊り",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 3,
+          "title": "クックロビン音頭",
+          "url": "https://www.youtube.com/watch?v=RncJ5GHZD5s",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "Kanda Myojin 盆踊り",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 4,
+          "title": "おそ松くん音頭",
+          "url": "https://www.youtube.com/watch?v=RncJ5GHZD5s",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "Kanda Myojin 盆踊り",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 5,
+          "title": "神田明神音頭",
           "url": "https://www.youtube.com/watch?v=RncJ5GHZD5s",
           "evidence_type": "title_song_fragment",
           "event_name_hint": "Kanda Myojin 盆踊り",
@@ -23163,7 +23516,7 @@
         }
       ],
       "source_video_count": 2,
-      "song_count": 4,
+      "song_count": 8,
       "confidence": "high",
       "role": "result",
       "act": "observe",
@@ -23369,7 +23722,7 @@
         },
         {
           "number": 1,
-          "title": "ほっぺちゃん音頭/小見川千明",
+          "title": "ほっぺちゃん音頭",
           "url": "https://www.youtube.com/watch?v=W6i6sxSXQ88",
           "evidence_type": "title_song_fragment",
           "event_name_hint": "神田明神納涼祭り2025🏮アニソン盆踊り",
@@ -23393,7 +23746,7 @@
         },
         {
           "number": 1,
-          "title": "神田明神音頭 /小坂井祐莉絵",
+          "title": "神田明神音頭",
           "url": "https://www.youtube.com/watch?v=TOjT2fBLq64",
           "evidence_type": "title_song_fragment",
           "event_name_hint": "神田明神納涼祭り2025🏮アニソン盆踊り",
@@ -23401,8 +23754,32 @@
         },
         {
           "number": 1,
-          "title": "邪神ちゃん音頭/大森日雅",
+          "title": "邪神ちゃん音頭",
           "url": "https://www.youtube.com/watch?v=Om01Om3MTUU",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "神田明神納涼祭り2025🏮アニソン盆踊り",
+          "title_parse_method": "bracket_event_and_quote"
+        },
+        {
+          "number": 2,
+          "title": "大森日雅",
+          "url": "https://www.youtube.com/watch?v=Om01Om3MTUU",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "神田明神納涼祭り2025🏮アニソン盆踊り",
+          "title_parse_method": "bracket_event_and_quote"
+        },
+        {
+          "number": 2,
+          "title": "小坂井祐莉絵",
+          "url": "https://www.youtube.com/watch?v=TOjT2fBLq64",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "神田明神納涼祭り2025🏮アニソン盆踊り",
+          "title_parse_method": "bracket_event_and_quote"
+        },
+        {
+          "number": 2,
+          "title": "小見川千明",
+          "url": "https://www.youtube.com/watch?v=W6i6sxSXQ88",
           "evidence_type": "title_song_fragment",
           "event_name_hint": "神田明神納涼祭り2025🏮アニソン盆踊り",
           "title_parse_method": "bracket_event_and_quote"
@@ -23465,7 +23842,7 @@
         }
       ],
       "source_video_count": 6,
-      "song_count": 6,
+      "song_count": 9,
       "confidence": "high",
       "role": "result",
       "act": "observe",
@@ -23563,19 +23940,7 @@
       "role": "result",
       "act": "observe",
       "reliability_key": "complete_numbered_video",
-      "matched_public_event": {
-        "name": "あずま通り商店街「下北沢盆踊り2025」",
-        "venue": "下北沢駅東口",
-        "date": "2025-08-09",
-        "date_end": "",
-        "score": 80,
-        "reasons": [
-          "date",
-          "event_name_partial"
-        ]
-      },
-      "canonical_event_name": "あずま通り商店街「下北沢盆踊り2025」",
-      "canonical_venue": "下北沢駅東口"
+      "matched_public_event": null
     },
     {
       "occurrence_key": "9f47e2210974b8ca",
@@ -24156,7 +24521,31 @@
         },
         {
           "number": 1,
-          "title": "東京音頭 / 花笠音頭 / 大東京音頭 / ゆかた音頭...",
+          "title": "東京音頭",
+          "url": "https://www.youtube.com/watch?v=5PEqiYBRdTk",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "神田明神納涼 盆踊り",
+          "title_parse_method": "bracket_event_and_quote"
+        },
+        {
+          "number": 2,
+          "title": "花笠音頭",
+          "url": "https://www.youtube.com/watch?v=5PEqiYBRdTk",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "神田明神納涼 盆踊り",
+          "title_parse_method": "bracket_event_and_quote"
+        },
+        {
+          "number": 3,
+          "title": "大東京音頭",
+          "url": "https://www.youtube.com/watch?v=5PEqiYBRdTk",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "神田明神納涼 盆踊り",
+          "title_parse_method": "bracket_event_and_quote"
+        },
+        {
+          "number": 4,
+          "title": "ゆかた音頭",
           "url": "https://www.youtube.com/watch?v=5PEqiYBRdTk",
           "evidence_type": "title_song_fragment",
           "event_name_hint": "神田明神納涼 盆踊り",
@@ -24202,7 +24591,7 @@
         }
       ],
       "source_video_count": 4,
-      "song_count": 4,
+      "song_count": 7,
       "confidence": "high",
       "role": "result",
       "act": "observe",
@@ -26143,7 +26532,39 @@
       "setlist": [
         {
           "number": 1,
-          "title": "Let's Grove / Hold Me Now / The Power of Love / The Police / 嵐 ...",
+          "title": "Let's Grove",
+          "url": "https://www.youtube.com/watch?v=oni2EpEVhEA",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "東本願寺盆踊り 2025 第二部 / 洋楽盆踊り",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 2,
+          "title": "Hold Me Now",
+          "url": "https://www.youtube.com/watch?v=oni2EpEVhEA",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "東本願寺盆踊り 2025 第二部 / 洋楽盆踊り",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 3,
+          "title": "The Power of Love",
+          "url": "https://www.youtube.com/watch?v=oni2EpEVhEA",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "東本願寺盆踊り 2025 第二部 / 洋楽盆踊り",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 4,
+          "title": "The Police",
+          "url": "https://www.youtube.com/watch?v=oni2EpEVhEA",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "東本願寺盆踊り 2025 第二部 / 洋楽盆踊り",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 5,
+          "title": "嵐",
           "url": "https://www.youtube.com/watch?v=oni2EpEVhEA",
           "evidence_type": "title_song_fragment",
           "event_name_hint": "東本願寺盆踊り 2025 第二部 / 洋楽盆踊り",
@@ -26162,8 +26583,8 @@
         }
       ],
       "source_video_count": 1,
-      "song_count": 1,
-      "confidence": "low",
+      "song_count": 5,
+      "confidence": "high",
       "role": "result",
       "act": "observe",
       "reliability_key": "complete_numbered_video",
@@ -26195,7 +26616,15 @@
         },
         {
           "number": 1,
-          "title": "青い珊瑚礁 / タッチ / 2億4千万の瞳..",
+          "title": "青い珊瑚礁",
+          "url": "https://www.youtube.com/watch?v=gNJJym4U8CI",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "浅草 東本願寺盆踊り",
+          "title_parse_method": "bracket_event_and_quote"
+        },
+        {
+          "number": 2,
+          "title": "タッチ",
           "url": "https://www.youtube.com/watch?v=gNJJym4U8CI",
           "evidence_type": "title_song_fragment",
           "event_name_hint": "浅草 東本願寺盆踊り",
@@ -26205,6 +26634,14 @@
           "number": 2,
           "title": "炭坑節",
           "url": "https://www.youtube.com/watch?v=B4ovTOF8Jtk"
+        },
+        {
+          "number": 3,
+          "title": "2億4千万の瞳",
+          "url": "https://www.youtube.com/watch?v=gNJJym4U8CI",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "浅草 東本願寺盆踊り",
+          "title_parse_method": "bracket_event_and_quote"
         },
         {
           "number": 3,
@@ -26575,7 +27012,7 @@
         }
       ],
       "source_video_count": 30,
-      "song_count": 23,
+      "song_count": 25,
       "confidence": "high",
       "role": "result",
       "act": "observe",
@@ -26594,7 +27031,23 @@
       "setlist": [
         {
           "number": 1,
-          "title": "中央区大江戸まつり盆おどり大会 2025 ダンシングヒーロー|これがお江戸の盆ダンス 他 / Japanese",
+          "title": "中央区大江戸まつり盆おどり大会 2025 ダンシングヒーロー",
+          "url": "https://www.youtube.com/watch?v=j0tAIB1dOig",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "Chuo-ku, Tokyo.",
+          "title_parse_method": "at_event"
+        },
+        {
+          "number": 2,
+          "title": "これがお江戸の盆ダンス 他",
+          "url": "https://www.youtube.com/watch?v=j0tAIB1dOig",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "Chuo-ku, Tokyo.",
+          "title_parse_method": "at_event"
+        },
+        {
+          "number": 3,
+          "title": "Japanese",
           "url": "https://www.youtube.com/watch?v=j0tAIB1dOig",
           "evidence_type": "title_song_fragment",
           "event_name_hint": "Chuo-ku, Tokyo.",
@@ -26613,8 +27066,8 @@
         }
       ],
       "source_video_count": 1,
-      "song_count": 1,
-      "confidence": "low",
+      "song_count": 3,
+      "confidence": "high",
       "role": "result",
       "act": "observe",
       "reliability_key": "complete_numbered_video",
@@ -27040,9 +27493,26 @@
           "evidence_type": "title_song_fragment",
           "event_name_hint": "六本木ヒルズ盆踊り 2025(DAY2)",
           "title_parse_method": "bracket_event_and_quote"
+        },
+        {
+          "number": 1,
+          "title": "半浦青年団(石川県七尾市能登島半浦町)",
+          "url": "https://www.youtube.com/watch?v=xu4VXlbfrJU",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "六本木ヒルズ盆踊り 2025(DAY2)",
+          "title_parse_method": "bracket_event_and_quote"
         }
       ],
       "source_videos": [
+        {
+          "url": "https://www.youtube.com/watch?v=xu4VXlbfrJU",
+          "account": "UCEYq2_O_Sai0j9chJOmcKtQ",
+          "title": "【六本木ヒルズ盆踊り 2025（DAY2）】日本の芸能：「半浦の秋祭り／半浦青年団（石川県七尾市能登島半浦町）」 2025.8.24 @六本木ヒルズアリーナ",
+          "published_at": "2025-08-24T15:15:42Z",
+          "thumbnail_url": "https://i.ytimg.com/vi/xu4VXlbfrJU/maxresdefault.jpg",
+          "text_length": 422,
+          "media_url_count": 1
+        },
         {
           "url": "https://www.youtube.com/watch?v=AViOtdpRo7w",
           "account": "UCEYq2_O_Sai0j9chJOmcKtQ",
@@ -27053,9 +27523,9 @@
           "media_url_count": 1
         }
       ],
-      "source_video_count": 1,
-      "song_count": 1,
-      "confidence": "low",
+      "source_video_count": 2,
+      "song_count": 2,
+      "confidence": "medium",
       "role": "result",
       "act": "observe",
       "reliability_key": "complete_numbered_video",
@@ -32646,7 +33116,7 @@
       "setlist": [
         {
           "number": 1,
-          "title": "ダンシングヒーロー 川崎踊り ライラック WON'T BE LONG...",
+          "title": "ダンシングヒーロー 川崎踊り ライラック WON'T BE LONG",
           "url": "https://www.youtube.com/watch?v=Tf_0JNhT2Dw",
           "evidence_type": "title_song_fragment",
           "event_name_hint": "Bon Dance",
@@ -32693,7 +33163,15 @@
         },
         {
           "number": 1,
-          "title": "渋谷で阿波踊り!飛鳥連が素晴らしい演舞を披露!外国人も一緒になって阿波踊り!2025 / Awaodori",
+          "title": "渋谷で阿波踊り!飛鳥連が素晴らしい演舞を披露!外国人も一緒になって阿波踊り!2025",
+          "url": "https://www.youtube.com/watch?v=6tYsIFg2Pc8",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "SHIBUYA MIYASHITA PARK BON DANCE",
+          "title_parse_method": "at_event"
+        },
+        {
+          "number": 2,
+          "title": "Awaodori",
           "url": "https://www.youtube.com/watch?v=6tYsIFg2Pc8",
           "evidence_type": "title_song_fragment",
           "event_name_hint": "SHIBUYA MIYASHITA PARK BON DANCE",
@@ -32735,7 +33213,7 @@
         }
       ],
       "source_video_count": 3,
-      "song_count": 3,
+      "song_count": 4,
       "confidence": "high",
       "role": "result",
       "act": "observe",
@@ -33959,7 +34437,15 @@
       "setlist": [
         {
           "number": 1,
-          "title": "ダンシングヒーロー / 恋するフォーチュンクッキー",
+          "title": "ダンシングヒーロー",
+          "url": "https://www.youtube.com/watch?v=7QL5kVu806o",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "メドレー 盆踊り/ 新宿トー横 盆踊り Kabukicho Matsuri Bon Dance",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 2,
+          "title": "恋するフォーチュンクッキー",
           "url": "https://www.youtube.com/watch?v=7QL5kVu806o",
           "evidence_type": "title_song_fragment",
           "event_name_hint": "メドレー 盆踊り/ 新宿トー横 盆踊り Kabukicho Matsuri Bon Dance",
@@ -33978,8 +34464,8 @@
         }
       ],
       "source_video_count": 1,
-      "song_count": 1,
-      "confidence": "low",
+      "song_count": 2,
+      "confidence": "medium",
       "role": "result",
       "act": "observe",
       "reliability_key": "complete_numbered_video",
@@ -43292,57 +43778,6 @@
       "matched_public_event": null
     },
     {
-      "occurrence_key": "de4b6e72944390ec",
-      "event_key_hint": "山王音頭と民踊大会",
-      "event_name_hint": "山王音頭と民踊大会",
-      "venue": "山王音頭と民踊大会",
-      "event_date": "2026-06-14",
-      "accounts": [
-        "@matsuribonodori"
-      ],
-      "setlist": [
-        {
-          "number": 1,
-          "title": "日枝神社 山王祭 】後半",
-          "url": "https://www.youtube.com/watch?v=VmouD0eIXsg",
-          "evidence_type": "title_song_fragment",
-          "event_name_hint": "山王音頭と民踊大会",
-          "title_parse_method": "known_event"
-        }
-      ],
-      "source_videos": [
-        {
-          "url": "https://www.youtube.com/watch?v=VmouD0eIXsg",
-          "account": "@matsuribonodori",
-          "title": "盆踊りシーズン開幕！山王音頭と民踊大会 【 日枝神社 山王祭 】後半",
-          "published_at": "2026-06-13T09:50:00+00:00",
-          "thumbnail_url": "",
-          "text_length": 335,
-          "media_url_count": 1
-        }
-      ],
-      "source_video_count": 1,
-      "song_count": 1,
-      "confidence": "low",
-      "role": "result",
-      "act": "observe",
-      "reliability_key": "complete_numbered_video",
-      "matched_public_event": {
-        "name": "山王音頭と民踊大会",
-        "venue": "山王パークタワー公開空地",
-        "date": "2026-06-13",
-        "date_end": "2026-06-15",
-        "score": 105,
-        "reasons": [
-          "date",
-          "event_name_exact",
-          "event_key_hint"
-        ]
-      },
-      "canonical_event_name": "山王音頭と民踊大会",
-      "canonical_venue": "山王パークタワー公開空地"
-    },
-    {
       "occurrence_key": "f44e67060f751906",
       "event_key_hint": "山王音頭と民踊大会",
       "event_name_hint": "山王音頭と民踊大会",
@@ -46148,7 +46583,19 @@
       "role": "result",
       "act": "observe",
       "reliability_key": "complete_numbered_video",
-      "matched_public_event": null
+      "matched_public_event": {
+        "name": "第16回 鴨台盆踊り",
+        "venue": "大正大学",
+        "date": "2026-07-10",
+        "date_end": "2026-07-11",
+        "score": 80,
+        "reasons": [
+          "date",
+          "event_name_partial"
+        ]
+      },
+      "canonical_event_name": "第16回 鴨台盆踊り",
+      "canonical_venue": "大正大学"
     },
     {
       "occurrence_key": "fcda348af0f4f7c3",
@@ -46467,7 +46914,39 @@
       "setlist": [
         {
           "number": 1,
-          "title": "ジンギスカン / ズンパ音頭 / ダンシングヒーロ- / ultra soul / マツケンサンバ...",
+          "title": "ジンギスカン",
+          "url": "https://www.youtube.com/watch?v=C1kwmSecDt8",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "新宿二丁目太宗寺盆踊り大会",
+          "title_parse_method": "bracket_event_and_quote"
+        },
+        {
+          "number": 2,
+          "title": "ズンパ音頭",
+          "url": "https://www.youtube.com/watch?v=C1kwmSecDt8",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "新宿二丁目太宗寺盆踊り大会",
+          "title_parse_method": "bracket_event_and_quote"
+        },
+        {
+          "number": 3,
+          "title": "ダンシングヒーロー",
+          "url": "https://www.youtube.com/watch?v=C1kwmSecDt8",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "新宿二丁目太宗寺盆踊り大会",
+          "title_parse_method": "bracket_event_and_quote"
+        },
+        {
+          "number": 4,
+          "title": "ultra soul",
+          "url": "https://www.youtube.com/watch?v=C1kwmSecDt8",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "新宿二丁目太宗寺盆踊り大会",
+          "title_parse_method": "bracket_event_and_quote"
+        },
+        {
+          "number": 5,
+          "title": "マツケンサンバ",
           "url": "https://www.youtube.com/watch?v=C1kwmSecDt8",
           "evidence_type": "title_song_fragment",
           "event_name_hint": "新宿二丁目太宗寺盆踊り大会",
@@ -46486,8 +46965,8 @@
         }
       ],
       "source_video_count": 1,
-      "song_count": 1,
-      "confidence": "low",
+      "song_count": 5,
+      "confidence": "high",
       "role": "result",
       "act": "observe",
       "reliability_key": "complete_numbered_video",
@@ -46879,7 +47358,39 @@
       "setlist": [
         {
           "number": 1,
-          "title": "一休さん / ひょっこりひょうたん島 / どうぶつおんど / 1+1の音頭 / オバQ音頭",
+          "title": "一休さん",
+          "url": "https://www.youtube.com/watch?v=GfsbT-hx12k",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "盆踊り 神奈川 鶴見 総持寺",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 2,
+          "title": "ひょっこりひょうたん島",
+          "url": "https://www.youtube.com/watch?v=GfsbT-hx12k",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "盆踊り 神奈川 鶴見 総持寺",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 3,
+          "title": "どうぶつおんど",
+          "url": "https://www.youtube.com/watch?v=GfsbT-hx12k",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "盆踊り 神奈川 鶴見 総持寺",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 4,
+          "title": "1+1の音頭",
+          "url": "https://www.youtube.com/watch?v=GfsbT-hx12k",
+          "evidence_type": "title_song_fragment",
+          "event_name_hint": "盆踊り 神奈川 鶴見 総持寺",
+          "title_parse_method": "quoted_song"
+        },
+        {
+          "number": 5,
+          "title": "オバQ音頭",
           "url": "https://www.youtube.com/watch?v=GfsbT-hx12k",
           "evidence_type": "title_song_fragment",
           "event_name_hint": "盆踊り 神奈川 鶴見 総持寺",
@@ -46898,8 +47409,8 @@
         }
       ],
       "source_video_count": 1,
-      "song_count": 1,
-      "confidence": "low",
+      "song_count": 5,
+      "confidence": "high",
       "role": "result",
       "act": "observe",
       "reliability_key": "complete_numbered_video",
