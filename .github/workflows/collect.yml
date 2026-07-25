@@ -90,7 +90,7 @@ jobs:
         python audit_master_rdb.py \
           --out-json "$RUNNER_TEMP/event-state-axes-audit.json" \
           --out-md "$RUNNER_TEMP/event-state-axes-audit.md"
-        LOCAL_SHA="$(python -c 'from master_db import file_sha256; print(file_sha256("data/bon_odori_master.sqlite"))')"
+        LOCAL_SHA="$(python -c 'from master_rdb.master_db import file_sha256; print(file_sha256("data/bon_odori_master.sqlite"))')"
         if [ "$LOCAL_SHA" != "$RSTART" ]; then
           python master_db_s3_artifact.py publish \
             --expect-remote-checksum "$RSTART" \
@@ -250,6 +250,10 @@ jobs:
         REVIEW_INBOX_CAS_PUBLISH_ENABLED: 'true'
         REVIEW_INBOX_READER_MODE: inbox
         REVIEW_INBOX_LEGACY_WRITER_ENABLED: 'false'
+        # 日次cronのジョブ内での実行であることを明示する。
+        # GitHubのスケジュール遅延で起動が17:20-18:00 JSTに入ると、
+        # cronを守るためのガードにcron自身が弾かれるため。
+        REVIEW_INBOX_CRON_SERIALIZED_RUN: 'true'
       run: |
         if [ ! -f "$RUNNER_TEMP/rare-signal-backcheck-built" ]; then
           echo "[review-inbox] current run did not build a rare signal queue; skip dual-write"
@@ -311,6 +315,10 @@ jobs:
         REVIEW_INBOX_CAS_PUBLISH_ENABLED: 'true'
         REVIEW_INBOX_READER_MODE: inbox
         REVIEW_INBOX_LEGACY_WRITER_ENABLED: 'false'
+        # 日次cronのジョブ内での実行であることを明示する。
+        # GitHubのスケジュール遅延で起動が17:20-18:00 JSTに入ると、
+        # cronを守るためのガードにcron自身が弾かれるため。
+        REVIEW_INBOX_CRON_SERIALIZED_RUN: 'true'
       run: |
         TODAY="$(TZ=Asia/Tokyo date +%F)"
         TARGET_YEAR="${TODAY%%-*}"
@@ -369,6 +377,10 @@ jobs:
         REVIEW_INBOX_CAS_PUBLISH_ENABLED: 'true'
         REVIEW_INBOX_READER_MODE: inbox
         REVIEW_INBOX_LEGACY_WRITER_ENABLED: 'false'
+        # 日次cronのジョブ内での実行であることを明示する。
+        # GitHubのスケジュール遅延で起動が17:20-18:00 JSTに入ると、
+        # cronを守るためのガードにcron自身が弾かれるため。
+        REVIEW_INBOX_CRON_SERIALIZED_RUN: 'true'
       run: |
         TODAY="$(TZ=Asia/Tokyo date +%F)"
         TARGET_YEAR="${TODAY%%-*}"

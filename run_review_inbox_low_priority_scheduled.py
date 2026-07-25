@@ -44,7 +44,7 @@ def run_scheduled(args: argparse.Namespace, *, environ: Mapping[str,str] | None=
     if args.confirm != CONFIRM: raise SourceWriterError(f"--confirm must be exactly: {CONFIRM}")
     if environ.get(ENABLE_ENV,"").strip().lower() != "true": raise SourceWriterError("scheduled low-priority dual-write is off")
     flags = common_gates(environ,dual_write_mode="bulk",selection_mode="all",run_label="scheduled low-priority dual-write")
-    require_outside_cron_window(now,run_label="scheduled low-priority dual-write")
+    require_outside_cron_window(now,run_label="scheduled low-priority dual-write",environ=environ)
     validate_public_today(args.public_today)
     observation = str(args.observation_id).strip()
     if not observation: raise SourceWriterError("--observation-id is required")

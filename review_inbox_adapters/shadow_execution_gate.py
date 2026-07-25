@@ -25,6 +25,9 @@ ENVIRONMENT_GATE_NAMES = (
     "REVIEW_INBOX_LEGACY_WRITER_ENABLED",
 )
 TRUE_VALUES = {"1", "true", "yes", "on"}
+# 日次cronのジョブ内から実行されていることを示す明示フラグ。
+# collect.yml の dual-write ステップだけが設定する。
+CRON_SERIALIZED_ENV = "REVIEW_INBOX_CRON_SERIALIZED_RUN"
 
 
 def require_explicit_environment(
@@ -63,7 +66,23 @@ def require_outside_cron_window(
     now: datetime | None = None,
     *,
     run_label: str,
+    environ: Mapping[str, str] | None = None,
 ) -> None:
+    """日次cronとぶつかる時間帯の実行を止める。
+
+    この窓は「日次cronが master RDB を触っている間に、別プロセスが割り込まない」
+    ことを守るためのもの。日次cron自身は Actions の concurrency group
+    (bon-odori-master-rdb) で直列化されており、窓の"主"なので避ける必要がない。
+
+    GitHub Actions のスケジュール起動は定刻から数時間ずれることがある。
+    collect.yml の cron は 15:13 JST だが、2026-07-21〜25 は毎日
+    17:22〜17:43 JST に起動してこの窓に着地し、cron が自分自身のガードに
+    弾かれて5日連続で失敗した。cron 側は CRON_SERIALIZED_ENV を明示して
+    除外する。手動・canary 実行は環境変数を持たないのでガードが残る。
+    """
+    environ = os.environ if environ is None else environ
+    if str(environ.get(CRON_SERIALIZED_ENV, "")).strip().lower() in TRUE_VALUES:
+        return
     current = now or datetime.now(JST)
     if current.tzinfo is None:
         current = current.replace(tzinfo=JST)

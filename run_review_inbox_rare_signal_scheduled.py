@@ -65,7 +65,9 @@ def run_scheduled(
     if args.confirm != CONFIRM:
         raise SourceWriterError(f"--confirm must be exactly: {CONFIRM}")
     flags = require_explicit_environment(environ)
-    require_outside_cron_window(now, run_label="scheduled rare signal dual-write")
+    require_outside_cron_window(
+        now, run_label="scheduled rare signal dual-write", environ=environ
+    )
 
     observation_id = str(args.observation_id).strip()
     if not observation_id:
