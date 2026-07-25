@@ -1,17 +1,17 @@
 {
   "generated_by": "harvest_youtube_year_backfill.py",
-  "generated_at": "2026-07-24T21:02:54.831476+00:00",
+  "generated_at": "2026-07-25T20:52:11.640220+00:00",
   "source": "data/youtube_year_backfill_queue.json",
   "selected_queue_count": 169,
   "queue_offset": 0,
   "max_results_per_query": 5,
-  "api_request_count_estimate": 2,
+  "api_request_count_estimate": 3,
   "summary": {
-    "candidate_count": 571,
+    "candidate_count": 573,
     "status_counts": {
       "review": 48,
       "strong": 183,
-      "weak": 340
+      "weak": 342
     },
     "strong_count": 183,
     "review_count": 48
@@ -1350,7 +1350,7 @@
       "recurrence_label": "昨年開催・継続性 高",
       "recurrence_score": 0.78,
       "source_url_count": 0,
-      "song_count": 6,
+      "song_count": 2,
       "priority_reasons": [
         "youtube_observed_series",
         "recent_youtube_observation",
@@ -22092,6 +22092,32 @@
       "event_name": "西綾瀬町会 夏祭り盆踊り大会",
       "venue": "五反野コミュニティ公園",
       "area": "足立区",
+      "detected_event_date": "2023-08-25",
+      "video_id": "LM-FQB0DGMw",
+      "video_url": "https://www.youtube.com/watch?v=LM-FQB0DGMw",
+      "title": "河内おとこ節 ① 　東綾瀬公園ハト広場 納涼盆踊り大会 20230825",
+      "channel_id": "UC8djZNe8ynSlUmop8Jjt45A",
+      "channel_title": "祭のきせき　MatsuriNoKiseki",
+      "published_at": "2023-08-25T13:57:26Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/LM-FQB0DGMw/sddefault.jpg",
+      "query": "西綾瀬町会 夏祭り盆踊り大会 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "当チャンネル地元の盆踊りです。 https://youtu.be/rj-WN1DUnmo https://youtu.be/Z84CRSmbdXI https://youtu.be/4InftQ_y_KM https://youtu.be/ANbB3DlGOhc https://youtu.be/QrQ8vjW-j_Q https://youtu.be/nPswMYL5rD0 https://youtu.be/l6U2BDPOLy0 https://youtu.be/YvaaGitE-p0 https://youtu.be/LM-FQB0DGMw https://youtu.be/ztC2R_Y5qNs https://youtu.be/3CAZf-iXal8 https://youtu.be/9-o3lMXCRPo https://youtu.be/TFVMAZcmDbw https://youtu.be/saKRxJFeMO4 https://youtu.be/N3X6GrT9ZZ8 https://youtu.be/AKlS0QQ2viU https://youtu.be/mm…"
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:128813fba0e30596",
+      "target_year": 2023,
+      "event_name": "西綾瀬町会 夏祭り盆踊り大会",
+      "venue": "五反野コミュニティ公園",
+      "area": "足立区",
       "detected_event_date": "2023-07-02",
       "video_id": "TSfF5BkywLY",
       "video_url": "https://www.youtube.com/watch?v=TSfF5BkywLY",
@@ -28768,7 +28794,29 @@
       "setlist_count": 0,
       "setlist_sample": [],
       "description_excerpt": ""
+    },
+    {
+      "status": "weak",
+      "score": 3,
+      "reasons": [],
+      "queue_id": "youtube-year-backfill:eb454613e3fc893f",
+      "target_year": 2024,
+      "event_name": "鶴巻小学校 納涼盆踊り大会＆子ども祭り",
+      "venue": "鶴巻小学校",
+      "area": "新宿区",
+      "detected_event_date": "",
+      "video_id": "DQWd98ThVC0",
+      "video_url": "https://www.youtube.com/watch?v=DQWd98ThVC0",
+      "title": "㊗️100万再生!!制服が可愛すぎる小学校TOP18 #制服 #可愛い #小学校 #ランキング",
+      "channel_id": "UCA3F-FW88QNJvzEmhbIogYA",
+      "channel_title": "御体リョウ, Ryo Okarada",
+      "published_at": "2025-06-13T12:00:20Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/DQWd98ThVC0/maxresdefault.jpg",
+      "query": "鶴巻小学校 納涼盆踊り大会＆子ども祭り 鶴巻小学校 新宿区 2024 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": ""
     }
   ],
-  "merged_from": "2026-07-24T21:02:54.366581+00:00"
+  "merged_from": "2026-07-25T20:52:10.961886+00:00"
 }
