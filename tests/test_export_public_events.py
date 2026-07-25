@@ -325,7 +325,8 @@ class ExportPublicEventsTest(unittest.TestCase):
               confidence TEXT,
               source_count INTEGER,
               evidence_count INTEGER,
-              inherited_from_year INTEGER
+              inherited_from_year INTEGER,
+              notes TEXT
             );
             """
         )
@@ -1010,7 +1011,8 @@ class ExportPublicEventsTest(unittest.TestCase):
                       confidence TEXT,
                       source_count INTEGER,
                       evidence_count INTEGER,
-                      inherited_from_year INTEGER
+                      inherited_from_year INTEGER,
+                      notes TEXT
                     );
                     """
                 )
