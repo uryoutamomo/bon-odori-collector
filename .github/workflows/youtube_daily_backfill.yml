@@ -27,7 +27,6 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      pull-requests: write
       id-token: write
 
     env:
@@ -43,15 +42,6 @@ jobs:
 
     - name: Fast-forward main
       run: git pull --ff-only origin main
-
-    - name: Restore ops metrics history
-      run: |
-        git fetch origin automation/youtube-daily-backfill:refs/remotes/origin/automation/youtube-daily-backfill || true
-        if git show origin/automation/youtube-daily-backfill:data/ops_metrics_history.jsonl > data/ops_metrics_history.jsonl 2>/dev/null; then
-          echo "Restored previous ops metrics history"
-        else
-          echo "No previous ops metrics history"
-        fi
 
     - name: Set up Python
       uses: actions/setup-python@v6
@@ -128,13 +118,19 @@ jobs:
     - name: Run post-batch maintenance report
       run: python run_post_batch_maintenance.py --append-github-summary
 
-    - name: Commit result branch
+    # 結果は main へ直接コミットする(collect.yml と同じ作法)。
+    # 以前は automation/youtube-daily-backfill ブランチ + 自動PR方式だったが、
+    # PR #3 が 2026-06-30 に close された後も `gh pr view <branch>` が closed PR に
+    # ヒットするため「閉じたPRの本文を書き換えるだけ」を約1か月繰り返し、
+    # 毎日の成果が main へ一度も届かないまま捨てられていた。
+    # ブランチは毎回 main から作り直されるため、日々の出力はレビュー価値のある
+    # 差分ではなく単なるデータ更新であり、PR を挟む意味も薄い。
+    - name: Commit results to main
       id: commit
       if: ${{ env.DRY_RUN != 'true' }}
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git checkout -B automation/youtube-daily-backfill
         git add data/youtube_daily_backfill_report.json
         git add data/youtube_daily_backfill_report.md
         git add data/youtube_year_backfill_candidates.json
@@ -148,8 +144,11 @@ jobs:
         git add data/event_schedule_rules.md
         git add data/event_date_predictions.json
         git add data/event_date_predictions.md
-        git add data/public/events_public.json
-        git add data/public/events_public.js
+        # data/public/events_public.json / .js はここでは staging しない。
+        # このジョブの export は observed 層の unmatched 行(YouTube動画タイトルの
+        # 引用部分をまるごと1曲名として取り込んだもの等)を公開JSONへ流し込むため、
+        # main へ入れると sync-public-data の定時実行がそのまま本番公開してしまう。
+        # 公開JSONは collect.yml が RDB(curated層)から日次生成するものを正本とする。
         git add data/public_date_prediction_apply_result.json
         git add data/public_historical_reference_dry_run.json
         git add data/public_season_hint_dry_run.json
@@ -168,59 +167,19 @@ jobs:
           git add data/public/event_song_occurrences_public.json
           git add data/public/event_songs_public.json
         fi
+        python guard_git_large_files.py
         if git diff --cached --quiet; then
           echo "changed=false" >> "$GITHUB_OUTPUT"
           exit 0
         fi
         git commit -m "Run YouTube daily backfill"
-        git push --force-with-lease origin automation/youtube-daily-backfill
+        git push origin HEAD:main
         echo "changed=true" >> "$GITHUB_OUTPUT"
 
-    - name: Open or update pull request
-      if: ${{ steps.commit.outputs.changed == 'true' }}
-      env:
-        GH_TOKEN: ${{ github.token }}
+    - name: Report commit outcome
       run: |
-        REPORT_SUMMARY=""
-        if [ -f data/youtube_daily_backfill_report.md ]; then
-          REPORT_SUMMARY=$(sed -n '1,120p' data/youtube_daily_backfill_report.md)
-        fi
-        OPS_SUMMARY=""
-        if [ -f data/ops_metrics_latest.md ]; then
-          OPS_SUMMARY=$(sed -n '1,80p' data/ops_metrics_latest.md)
-        fi
-        BODY=$(cat <<EOF
-        Automated YouTube daily backfill result.
-
-        Actions run:
-        ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}
-
-        ## Latest run summary
-
-        ${REPORT_SUMMARY}
-
-        ## Latest operations metrics
-
-        ${OPS_SUMMARY}
-
-        Scope:
-        - Focus months: June and July
-        - Target years: 2024 first, then 2023
-        - Thin previously selected rows can be retried
-        - Stops when YouTube quota is limited
-
-        See data/youtube_daily_backfill_report.md for the run summary.
-        See this Actions run summary for the read-only post-batch maintenance check.
-        EOF
-        )
-        if gh pr view automation/youtube-daily-backfill --json number >/dev/null 2>&1; then
-          gh pr edit automation/youtube-daily-backfill \
-            --title "Run YouTube daily backfill" \
-            --body "$BODY"
+        if [ "${{ steps.commit.outputs.changed }}" = "true" ]; then
+          echo "Committed YouTube daily backfill results to main." >> "$GITHUB_STEP_SUMMARY"
         else
-          gh pr create \
-            --base main \
-            --head automation/youtube-daily-backfill \
-            --title "Run YouTube daily backfill" \
-            --body "$BODY"
+          echo "No data change from this YouTube daily backfill run." >> "$GITHUB_STEP_SUMMARY"
         fi
