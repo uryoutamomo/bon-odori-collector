@@ -276,7 +276,7 @@ class ReviewConsoleTests(unittest.TestCase):
             item = next(item for item in inventory["items"] if item["source_id"] == "historical_reference_quality")
 
             self.assertEqual(item["action_group"], "song_research")
-            self.assertEqual(item["action_group_label"], "曲候補待ち")
+            self.assertEqual(item["action_group_label"], "曲・用語候補確認")
             self.assertIn("曲候補", item["action_group_reason"])
             self.assertEqual(inventory["action_group_counts"]["song_research"]["pending"], 1)
 
@@ -316,7 +316,7 @@ class ReviewConsoleTests(unittest.TestCase):
             item = next(item for item in inventory["items"] if item["source_id"] == "daily_song_candidate")
 
             self.assertEqual(item["action_group"], "song_research")
-            self.assertEqual(item["action_group_label"], "曲候補待ち")
+            self.assertEqual(item["action_group_label"], "曲・用語候補確認")
             self.assertEqual(inventory["action_group_counts"]["song_research"]["pending"], 1)
             self.assertEqual(item["title"], "盆ジョビ")
 
