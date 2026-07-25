@@ -1,8 +1,8 @@
 # YouTube 過去年バックフィル候補
 
-- 生成: 2026-06-26T20:02:53.689531+00:00
+- 生成: 2026-07-24T21:02:54.831476+00:00
 - selected_queue_count: 169
-- candidate_count: 558
+- candidate_count: 571
 - strong: 183
 - review: 48
 

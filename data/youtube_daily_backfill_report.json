@@ -1,13 +1,14 @@
 {
   "generated_by": "run_daily_youtube_backfill.py",
-  "generated_at": "2026-06-26T20:02:27.321465+00:00",
+  "generated_at": "2026-07-24T21:02:28.217103+00:00",
   "status": "harvested_until_quota_limited",
   "month": 6,
-  "selected_rows": 49,
+  "target_year": 2026,
+  "selected_rows": 50,
   "remaining_rows_before": 94,
-  "remaining_rows_after": 46,
-  "estimated_search_calls": 98,
-  "candidates_before": 557,
+  "remaining_rows_after": 45,
+  "estimated_search_calls": 100,
+  "candidates_before": 558,
   "selected": [
     {
       "queue_id": "youtube-year-backfill:2bb32005a3f74bc3",
@@ -1125,37 +1126,6 @@
       "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
     },
     {
-      "queue_id": "youtube-year-backfill:443b767f4ded8171",
-      "target_year": 2023,
-      "priority_score": 8,
-      "priority": "low",
-      "event_name": "砧小学校「第38回砧っ子夏祭り」",
-      "venue": "砧小学校",
-      "area": "世田谷区",
-      "series_key": "57ff49b7e077",
-      "observed_years": [],
-      "observed_source_video_count": 0,
-      "public_date": "2025-07-19",
-      "public_date_end": "",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-07-19"
-      ],
-      "recurrence_label": "昨年開催・継続性 高",
-      "recurrence_score": 0.78,
-      "source_url_count": 0,
-      "song_count": 0,
-      "priority_reasons": [
-        "medium_recurrence_score"
-      ],
-      "search_queries": [
-        "砧小学校「第38回砧っ子夏祭り」 砧小学校 世田谷区 2023 盆踊り",
-        "砧小学校「第38回砧っ子夏祭り」 2023 YouTube 盆踊り",
-        "砧小学校 2023 盆踊り"
-      ],
-      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
-    },
-    {
       "queue_id": "youtube-year-backfill:e47cd88add8859ea",
       "target_year": 2024,
       "priority_score": 8,
@@ -1557,9 +1527,71 @@
         "横根稲荷神社 2023 盆踊り"
       ],
       "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:eb16c21fc5993901",
+      "target_year": 2023,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "鎌田協和会 鎌田納涼盆踊り",
+      "venue": "鎌田天神社",
+      "area": "世田谷区",
+      "series_key": "9b74ac04c2ca",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-07-26",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-26"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.64,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "鎌田協和会 鎌田納涼盆踊り 鎌田天神社 世田谷区 2023 盆踊り",
+        "鎌田協和会 鎌田納涼盆踊り 2023 YouTube 盆踊り",
+        "鎌田天神社 2023 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:8540ac5926ca11f0",
+      "target_year": 2024,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "西糀谷三丁目町会「納涼盆踊り大会」",
+      "venue": "西糀谷さざんか公園",
+      "area": "大田区",
+      "series_key": "e9e9a31b74f3",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-07-28",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-28"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.68,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "西糀谷三丁目町会「納涼盆踊り大会」 西糀谷さざんか公園 大田区 2024 盆踊り",
+        "西糀谷三丁目町会「納涼盆踊り大会」 2024 YouTube 盆踊り",
+        "西糀谷さざんか公園 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
     }
   ],
-  "completed_batches": 48,
+  "completed_batches": 49,
   "batches": [
     {
       "batch": 1,
@@ -1574,7 +1606,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 557,
+      "candidate_count": 558,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1591,7 +1623,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 557,
+      "candidate_count": 558,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1608,7 +1640,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 557,
+      "candidate_count": 558,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1625,7 +1657,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 557,
+      "candidate_count": 558,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1642,7 +1674,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 557,
+      "candidate_count": 558,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1659,7 +1691,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 557,
+      "candidate_count": 558,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1676,7 +1708,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 557,
+      "candidate_count": 558,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1688,12 +1720,14 @@
         "youtube-year-backfill:ce6e8b57634e97ed"
       ],
       "fresh_summary": {
-        "candidate_count": 0,
-        "status_counts": {},
+        "candidate_count": 1,
+        "status_counts": {
+          "weak": 1
+        },
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 557,
+      "candidate_count": 558,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1712,7 +1746,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 557,
+      "candidate_count": 558,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1724,14 +1758,14 @@
         "youtube-year-backfill:804cab8073565d95"
       ],
       "fresh_summary": {
-        "candidate_count": 4,
+        "candidate_count": 5,
         "status_counts": {
-          "weak": 4
+          "weak": 5
         },
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 557,
+      "candidate_count": 560,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1750,7 +1784,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 557,
+      "candidate_count": 562,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1762,14 +1796,14 @@
         "youtube-year-backfill:3d5a8517fb197ecb"
       ],
       "fresh_summary": {
-        "candidate_count": 5,
+        "candidate_count": 4,
         "status_counts": {
-          "weak": 5
+          "weak": 4
         },
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 557,
+      "candidate_count": 563,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1788,7 +1822,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 557,
+      "candidate_count": 565,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1805,7 +1839,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 557,
+      "candidate_count": 565,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1822,7 +1856,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 557,
+      "candidate_count": 565,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1839,7 +1873,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 557,
+      "candidate_count": 565,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1856,7 +1890,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 557,
+      "candidate_count": 565,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1873,7 +1907,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 557,
+      "candidate_count": 565,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1890,7 +1924,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 557,
+      "candidate_count": 565,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1907,7 +1941,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 557,
+      "candidate_count": 565,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1924,7 +1958,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 557,
+      "candidate_count": 565,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1941,7 +1975,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 557,
+      "candidate_count": 565,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1958,7 +1992,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 557,
+      "candidate_count": 565,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1975,7 +2009,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 557,
+      "candidate_count": 565,
       "strong_count": 183,
       "review_count": 48
     },
@@ -1992,7 +2026,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 557,
+      "candidate_count": 565,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2004,12 +2038,14 @@
         "youtube-year-backfill:2ab649320f07944c"
       ],
       "fresh_summary": {
-        "candidate_count": 0,
-        "status_counts": {},
+        "candidate_count": 1,
+        "status_counts": {
+          "weak": 1
+        },
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 557,
+      "candidate_count": 566,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2026,7 +2062,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 557,
+      "candidate_count": 566,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2038,12 +2074,14 @@
         "youtube-year-backfill:f5f2d06d4bbfaeeb"
       ],
       "fresh_summary": {
-        "candidate_count": 0,
-        "status_counts": {},
+        "candidate_count": 1,
+        "status_counts": {
+          "weak": 1
+        },
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 557,
+      "candidate_count": 567,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2055,12 +2093,14 @@
         "youtube-year-backfill:e074329eacdbdc5e"
       ],
       "fresh_summary": {
-        "candidate_count": 0,
-        "status_counts": {},
+        "candidate_count": 1,
+        "status_counts": {
+          "weak": 1
+        },
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 557,
+      "candidate_count": 568,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2077,7 +2117,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 557,
+      "candidate_count": 568,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2094,7 +2134,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 557,
+      "candidate_count": 568,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2111,7 +2151,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 557,
+      "candidate_count": 568,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2128,7 +2168,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 557,
+      "candidate_count": 568,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2140,12 +2180,14 @@
         "youtube-year-backfill:3e266855f01bbc54"
       ],
       "fresh_summary": {
-        "candidate_count": 0,
-        "status_counts": {},
+        "candidate_count": 1,
+        "status_counts": {
+          "weak": 1
+        },
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 557,
+      "candidate_count": 569,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2162,31 +2204,12 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 557,
+      "candidate_count": 569,
       "strong_count": 183,
       "review_count": 48
     },
     {
       "batch": 36,
-      "month": 7,
-      "selected_rows": 1,
-      "queue_ids": [
-        "youtube-year-backfill:443b767f4ded8171"
-      ],
-      "fresh_summary": {
-        "candidate_count": 1,
-        "status_counts": {
-          "weak": 1
-        },
-        "strong_count": 0,
-        "review_count": 0
-      },
-      "candidate_count": 558,
-      "strong_count": 183,
-      "review_count": 48
-    },
-    {
-      "batch": 37,
       "month": 7,
       "selected_rows": 1,
       "queue_ids": [
@@ -2198,12 +2221,12 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 558,
+      "candidate_count": 569,
       "strong_count": 183,
       "review_count": 48
     },
     {
-      "batch": 38,
+      "batch": 37,
       "month": 7,
       "selected_rows": 1,
       "queue_ids": [
@@ -2215,12 +2238,12 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 558,
+      "candidate_count": 569,
       "strong_count": 183,
       "review_count": 48
     },
     {
-      "batch": 39,
+      "batch": 38,
       "month": 7,
       "selected_rows": 1,
       "queue_ids": [
@@ -2232,29 +2255,31 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 558,
+      "candidate_count": 569,
       "strong_count": 183,
       "review_count": 48
     },
     {
-      "batch": 40,
+      "batch": 39,
       "month": 7,
       "selected_rows": 1,
       "queue_ids": [
         "youtube-year-backfill:5bb0e328527d5408"
       ],
       "fresh_summary": {
-        "candidate_count": 0,
-        "status_counts": {},
+        "candidate_count": 1,
+        "status_counts": {
+          "weak": 1
+        },
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 558,
+      "candidate_count": 570,
       "strong_count": 183,
       "review_count": 48
     },
     {
-      "batch": 41,
+      "batch": 40,
       "month": 7,
       "selected_rows": 1,
       "queue_ids": [
@@ -2266,12 +2291,12 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 558,
+      "candidate_count": 570,
       "strong_count": 183,
       "review_count": 48
     },
     {
-      "batch": 42,
+      "batch": 41,
       "month": 7,
       "selected_rows": 1,
       "queue_ids": [
@@ -2283,12 +2308,12 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 558,
+      "candidate_count": 570,
       "strong_count": 183,
       "review_count": 48
     },
     {
-      "batch": 43,
+      "batch": 42,
       "month": 7,
       "selected_rows": 1,
       "queue_ids": [
@@ -2300,12 +2325,12 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 558,
+      "candidate_count": 570,
       "strong_count": 183,
       "review_count": 48
     },
     {
-      "batch": 44,
+      "batch": 43,
       "month": 7,
       "selected_rows": 1,
       "queue_ids": [
@@ -2317,12 +2342,12 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 558,
+      "candidate_count": 570,
       "strong_count": 183,
       "review_count": 48
     },
     {
-      "batch": 45,
+      "batch": 44,
       "month": 7,
       "selected_rows": 1,
       "queue_ids": [
@@ -2334,29 +2359,31 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 558,
+      "candidate_count": 570,
       "strong_count": 183,
       "review_count": 48
     },
     {
-      "batch": 46,
+      "batch": 45,
       "month": 7,
       "selected_rows": 1,
       "queue_ids": [
         "youtube-year-backfill:595b91e72f1262b1"
       ],
       "fresh_summary": {
-        "candidate_count": 0,
-        "status_counts": {},
+        "candidate_count": 1,
+        "status_counts": {
+          "weak": 1
+        },
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 558,
+      "candidate_count": 571,
       "strong_count": 183,
       "review_count": 48
     },
     {
-      "batch": 47,
+      "batch": 46,
       "month": 7,
       "selected_rows": 1,
       "queue_ids": [
@@ -2368,12 +2395,12 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 558,
+      "candidate_count": 571,
       "strong_count": 183,
       "review_count": 48
     },
     {
-      "batch": 48,
+      "batch": 47,
       "month": 7,
       "selected_rows": 1,
       "queue_ids": [
@@ -2385,7 +2412,41 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 558,
+      "candidate_count": 571,
+      "strong_count": 183,
+      "review_count": 48
+    },
+    {
+      "batch": 48,
+      "month": 7,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:4c59be850639eae5"
+      ],
+      "fresh_summary": {
+        "candidate_count": 0,
+        "status_counts": {},
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "candidate_count": 571,
+      "strong_count": 183,
+      "review_count": 48
+    },
+    {
+      "batch": 49,
+      "month": 7,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:eb16c21fc5993901"
+      ],
+      "fresh_summary": {
+        "candidate_count": 0,
+        "status_counts": {},
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "candidate_count": 571,
       "strong_count": 183,
       "review_count": 48
     }
@@ -2397,17 +2458,11 @@
     "event occurrence backfill applied: added=0 updated=29 observations=53 series_3year=4",
     "event schedule rules: target_year=2026 rules=13 axes={'date': 1, 'near_date': 2, 'weekday': 6, 'weekday_near_date': 2, 'weekend_near_date': 2}",
     "event date predictions: target_year=2026 predictions=13 rules={'date_near': 2, 'fixed_date': 1, 'weekday_last': 2, 'weekday_near_day': 2, 'weekday_nth': 4, 'weekend_near_day': 2}",
-    "public date predictions: applied=8 skipped=4 unmatched=1",
-    "public historical references: applied=93 skipped=0",
-    "public season hints: applied=49 skipped=3",
-    "曲 occurrence 生成完了: occurrences=1864 relations=28106 -> data/song_occurrences.json",
-    "イベント公開エクスポート完了: 182 件 → /Users/ryotauchida/bon-odori-collector/data/public/events_public.json\n  Claude Design貼り付け用JS: /Users/ryotauchida/bon-odori-collector/data/public/events_public.js\n  イベント名あり: 182 件（169 会場）/ 名称確認中フォールバック: 0 件\n  月情報なし: 3 件 / 23区外・会場なしで除外したイベント: 0 件\n  曲目ヒントあり: 45 件 → /Users/ryotauchida/bon-odori-collector/data/public/event_songs_public.json",
-    "public date predictions: applied=8 skipped=4 unmatched=1",
-    "public historical references: applied=93 skipped=0",
-    "public season hints: applied=49 skipped=3",
+    "曲 occurrence 生成完了: occurrences=413 relations=2819 -> data/song_occurrences.json",
+    "系列分裂レビュー候補: 1 件 → /home/runner/work/bon-odori-collector/bon-odori-collector/data/public_event_series_split_review.md（要目視レビュー）\nイベント公開エクスポート完了: 203 件 → /home/runner/work/bon-odori-collector/bon-odori-collector/data/public/events_public.json\n  Claude Design貼り付け用JS: /home/runner/work/bon-odori-collector/bon-odori-collector/data/public/events_public.js\n  イベント名あり: 203 件（193 会場）/ 名称確認中フォールバック: 0 件\n  月情報なし: 3 件 / 23区外・会場なしで除外したイベント: 0 件\n  曲目ヒントあり: 60 件 → /home/runner/work/bon-odori-collector/bon-odori-collector/data/public/event_songs_public.json",
     "month youtube backfill queue: month=6 items=0 search_calls=0"
   ],
-  "candidates_after": 558,
+  "candidates_after": 571,
   "strong_after": 183,
   "review_after": 48,
   "schedule_rule_count": 13,
@@ -2423,6 +2478,5 @@
     "weekend_near_date": 2
   },
   "schedule_rule_warning_counts": {},
-  "ops_metrics": "ops metrics: date=2026-06-27 youtube_candidates=558 review=48 history_rows=3",
-  "ops_metrics_dashboard": "opened:-a Google Chrome"
+  "ops_metrics": "ops metrics: date=2026-07-25 youtube_candidates=571 review=48 history_rows=30"
 }

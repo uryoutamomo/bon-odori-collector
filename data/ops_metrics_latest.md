@@ -1,28 +1,32 @@
 # 運用メトリクス最新
 
-- snapshot_date: 2026-06-25
-- collected_at: 2026-06-25T12:30:41.476543+00:00
-- youtube_run_status: quota_limited
-- youtube_run_generated_at: 2026-06-20T10:11:32.538872+00:00
+- snapshot_date: 2026-07-25
+- collected_at: 2026-07-24T21:03:04.532553+00:00
+- youtube_run_status: harvested_until_quota_limited
+- youtube_run_generated_at: 2026-07-24T21:02:28.217103+00:00
 
 | 指標 | 現在 | 前回差分 |
 | --- | ---: | ---: |
-| YouTube候補 | 541 |  |
-| strong | 181 |  |
-| review | 47 |  |
-| weak | 313 |  |
-| 月別キュー合計 | 0 |  |
-| 低信頼未判断 | 0 |  |
-| 日付予測適用 | 9 |  |
-| 過去実績表示 | 94 |  |
-| 季節ヒント | 57 |  |
-| 登録済み不完全 | 79 |  |
-| missing venue | 7 |  |
-| missing source URL | 4 |  |
-| missing date_start | 77 |  |
+| 今回選択 | 50 | -8 |
+| 完了バッチ | 49 | -8 |
+| 実行前の残り | 94 | 0 |
+| 今回対象の残り | 45 | +8 |
+| 推定検索数 | 100 | -16 |
+| YouTube候補 | 571 | -1 |
+| strong | 183 | 0 |
+| review | 48 | 0 |
+| weak | 340 | -1 |
+| 低信頼未判断 | 0 | 0 |
+| 日付予測適用 | 4 | 0 |
+| 過去実績表示 | 93 | 0 |
+| 季節ヒント | 49 | 0 |
+| 登録済み不完全 | 79 | 0 |
+| missing venue | 7 | 0 |
+| missing source URL | 4 | 0 |
+| missing date_start | 77 | 0 |
 
 ## 月別YouTubeキュー
 
 - 6月: 0
 - 7月: 0
-- 8月: 42
+- 8月: 41
