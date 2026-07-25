@@ -1,0 +1,145 @@
+name: migrate-review-inbox-v2
+
+# master RDB の review_inbox_items を schema v2 へ移行する。
+#
+# 背景: 2026-07-25 時点で本番アーティファクトの review_inbox_items は
+# 17列(v1)で、v2 の8列(time_scope/decision/decided_by/decided_at/closed_at/
+# decision_route/source_payload_hash/last_seen_at)が欠けている。
+# dual-write 側は "does not migrate schema" 設計なので、
+# collect.yml の "Dual-write complete YouTube aggregate to review inbox" が
+# "review inbox schema v2 is required" で失敗し続ける。
+#
+# ローカルの aws login は対話が必要で切れやすいため、OIDC が使える Actions 側で
+# 実行できるようにする。既定は dry-run のみ。apply は confirm 入力が要る。
+
+on:
+  workflow_dispatch:
+    inputs:
+      apply:
+        description: '実際に適用してS3へpublishする。falseならdry-runのみ'
+        required: false
+        type: boolean
+        default: false
+      confirm:
+        description: "apply時のみ: APPLY REVIEW INBOX V2 と入力する"
+        required: false
+        type: string
+        default: ''
+
+concurrency:
+  group: bon-odori-master-rdb
+  cancel-in-progress: false
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+
+    env:
+      MASTER_DB_S3_BUCKET: ${{ vars.MASTER_DB_S3_BUCKET }}
+      MASTER_DB_S3_PREFIX: ${{ vars.MASTER_DB_S3_PREFIX || 'master-rdb' }}
+      AWS_REGION: ap-northeast-1
+      APPLY: ${{ inputs.apply }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v6
+        with:
+          role-to-assume: ${{ vars.AWS_ROLE_ARN }}
+          aws-region: ap-northeast-1
+
+      - name: Validate apply confirmation
+        if: ${{ inputs.apply }}
+        env:
+          CONFIRMATION: ${{ inputs.confirm }}
+        run: |
+          set -euo pipefail
+          expected="APPLY REVIEW INBOX V2"
+          if [ "$CONFIRMATION" != "$expected" ]; then
+            echo "apply=true には confirm='$expected' が必要です。" >&2
+            exit 1
+          fi
+
+      - name: Fetch master RDB artifact
+        run: python master_db_s3_artifact.py fetch --overwrite
+
+      - name: Record fetched state
+        id: fetched
+        run: |
+          set -euo pipefail
+          LOCAL_SHA="$(python -c 'from master_rdb.master_db import file_sha256; print(file_sha256("data/bon_odori_master.sqlite"))')"
+          echo "sha=$LOCAL_SHA" >> "$GITHUB_OUTPUT"
+          python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import sqlite3
+          from review_inbox import INBOX_SCHEMA_VERSION, V2_COLUMNS
+          conn = sqlite3.connect("file:data/bon_odori_master.sqlite?mode=ro", uri=True)
+          cols = {row[1] for row in conn.execute("PRAGMA table_info(review_inbox_items)")}
+          rows = conn.execute("select count(*) from review_inbox_items").fetchone()[0]
+          missing = sorted(set(V2_COLUMNS) - cols)
+          print("## review inbox schema (fetched)")
+          print(f"- expected version: {INBOX_SCHEMA_VERSION}")
+          print(f"- columns: {len(cols)} / rows: {rows}")
+          print(f"- missing v2 columns: {missing or 'none'}")
+          PY
+
+      - name: Dry-run migration
+        run: |
+          python review_inbox_migration_runner.py dry-run \
+            --expect-local-checksum "${{ steps.fetched.outputs.sha }}"
+
+      - name: Append dry-run report
+        run: |
+          if [ -f data/review_inbox_v2_migration_report.md ]; then
+            echo "## review inbox v2 migration dry-run" >> "$GITHUB_STEP_SUMMARY"
+            cat data/review_inbox_v2_migration_report.md >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Upload migration evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: review-inbox-v2-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            data/review_inbox_v2_migration_report.json
+            data/review_inbox_v2_migration_report.md
+          if-no-files-found: warn
+          retention-days: 30
+
+      - name: Apply migration
+        if: ${{ inputs.apply }}
+        run: |
+          python review_inbox_migration_runner.py apply \
+            --expect-local-checksum "${{ steps.fetched.outputs.sha }}" \
+            --confirm 'APPLY REVIEW INBOX V2'
+
+      - name: Verify migrated schema
+        if: ${{ inputs.apply }}
+        run: |
+          python - <<'PY'
+          import sqlite3
+          from review_inbox import INBOX_SCHEMA_VERSION, inbox_schema_version
+          conn = sqlite3.connect("file:data/bon_odori_master.sqlite?mode=ro", uri=True)
+          version = inbox_schema_version(conn, ensure_schema=False)
+          print(f"review inbox schema version after apply: {version}")
+          if version != INBOX_SCHEMA_VERSION:
+              raise SystemExit(f"expected v{INBOX_SCHEMA_VERSION}, got v{version}")
+          PY
+
+      - name: Publish migrated master RDB
+        if: ${{ inputs.apply }}
+        run: |
+          python master_db_s3_artifact.py publish \
+            --expect-remote-checksum "${{ steps.fetched.outputs.sha }}" \
+            --snapshot-id "review-inbox-v2-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
