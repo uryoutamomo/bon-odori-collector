@@ -132,3 +132,39 @@ def test_cron_conflict_window_stops_before_artifact_access():
                 now=datetime(2026, 7, 20, 17, 30, tzinfo=JST),
                 store_factory=lambda _args: pytest.fail("no store"),
             )
+
+
+def test_cron_serialized_run_passes_the_window_from_the_real_entrypoint():
+    """environ がエントリポイントから cron窓ガードまで届いているか。
+
+    2026-07-21〜25 のスケジュール遅延で collect の起動が 17:20-18:00 JST に
+    入り、cron を守るためのガードが cron 自身を弾いていた事故の再発防止。
+    """
+    from review_inbox_adapters.shadow_execution_gate import CRON_SERIALIZED_ENV
+
+    serialized_env = dict(ENABLED_ENV) | {CRON_SERIALIZED_ENV: "true"}
+    with tempfile.TemporaryDirectory() as tmp:
+        db = Path(tmp) / "master.sqlite"
+        make_db(db)
+        store = FakeStore(db)
+        report = run_scheduled(
+            args_for(tmp),
+            environ=serialized_env,
+            now=datetime(2026, 7, 26, 17, 43, tzinfo=JST),
+            store_factory=lambda _args: store,
+            digest_function=fixed_public_digest,
+        )
+
+    assert report["published"] is True
+
+
+def test_ad_hoc_run_is_still_blocked_inside_the_window():
+    with tempfile.TemporaryDirectory() as tmp:
+        with pytest.raises(SourceWriterError, match="forbidden during 17:20-18:00 JST"):
+            run_scheduled(
+                args_for(tmp),
+                environ=ENABLED_ENV,
+                now=datetime(2026, 7, 26, 17, 43, tzinfo=JST),
+                store_factory=lambda _args: pytest.fail("store must not be reached"),
+                digest_function=fixed_public_digest,
+            )

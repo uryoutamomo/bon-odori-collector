@@ -72,3 +72,15 @@ def test_malformed_later_source_stops_before_remote_artifact_access():
 def test_cron_window_stops_before_store():
     with tempfile.TemporaryDirectory() as tmp:
         with pytest.raises(SourceWriterError,match="17:20-18:00"): run_scheduled(setup(tmp),environ=ENV,now=datetime(2026,7,20,17,30,tzinfo=JST),store_factory=lambda _:pytest.fail("store"))
+
+def test_cron_serialized_run_passes_the_window_from_the_real_entrypoint():
+    """environ がエントリポイントから cron窓ガードまで届いているか。
+
+    2026-07-21〜25 のスケジュール遅延で collect の起動が 17:20-18:00 JST に
+    入り、cron を守るためのガードが cron 自身を弾いていた事故の再発防止。
+    """
+    from review_inbox_adapters.shadow_execution_gate import CRON_SERIALIZED_ENV
+    with tempfile.TemporaryDirectory() as tmp:
+        args=setup(tmp); db=Path(tmp)/"db.sqlite"; conn=init_db(db); conn.commit(); conn.close(); store=Store(db)
+        summary=run_scheduled(args,environ={**ENV,CRON_SERIALIZED_ENV:"true"},now=datetime(2026,7,26,17,43,tzinfo=JST),store_factory=lambda _:store,digest_function=digest)
+    assert summary["source_count"] == summary["published_count"] == 5
