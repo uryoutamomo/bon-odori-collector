@@ -1,6 +1,6 @@
 {
   "generated_by": "build_event_poster_ocr_queue.py",
-  "count": 1787,
+  "count": 1789,
   "summary": {
     "critical": 15,
     "high": 418,
@@ -39084,6 +39084,51 @@
         "https://pbs.twimg.com/amplify_video_thumb/2081035185290977280/img/okC4zRmqvNDHF_F8.jpg"
       ],
       "text": "板橋week\n第三弾、舟渡小学校\n\n板橋のご当地曲が殆ど\nその中でも\n舞い上がれ板橋等\n盛り上がりました。\n\n20時30分迄の会場で\n20時25分に雨が振り始め中止に！\n\n実質最後迄踊れた感が強い\n\n#盆踊り https://t.co/839ybdEYKQ",
+      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
+    },
+    {
+      "id": "xposter_47dc74d1df346557",
+      "status": "needs_ocr",
+      "priority": "medium",
+      "evidence_type": "poster_or_flyer_image",
+      "assumed_source_confidence": "medium",
+      "account": "@shibahashi_m",
+      "account_name": "柴橋正直 岐阜市長",
+      "trusted_informant": false,
+      "trusted_informant_rank": "",
+      "url": "https://x.com/shibahashi_m/status/2081037065127657650",
+      "tweet_id": "2081037065127657650",
+      "date": "2026-07-25T15:21:14+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HOFULWSaIAACBBb.jpg",
+        "https://t.co/t009Jpnm8C",
+        "pic.x.com/t009Jpnm8C",
+        "https://pbs.twimg.com/media/HOFULWQbgAAmj9E.jpg",
+        "https://pbs.twimg.com/media/HOFULWWbYAAluBl.jpg",
+        "https://pbs.twimg.com/media/HOFULWUbgAA1iwN.jpg"
+      ],
+      "text": "今宵は、木之本地域夏まつり、うずら夏まつり、市橋夏祭り、岐阜公園盆踊り大会へ。主催や協力してくださる自治会やまちづくり協議会、各種団体の皆さん、子ども達の夏休みの思い出を作っていただき、本当にありがとうございます。地域コミュニティの大切な横の繋がりに。 https://t.co/t009Jpnm8C",
+      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
+    },
+    {
+      "id": "xposter_4163c592d6d51965",
+      "status": "needs_ocr",
+      "priority": "medium",
+      "evidence_type": "poster_or_flyer_image",
+      "assumed_source_confidence": "medium",
+      "account": "@Roe_Camui",
+      "account_name": "Roe(職業ままにゃん😺)",
+      "trusted_informant": false,
+      "trusted_informant_rank": "",
+      "url": "https://x.com/Roe_Camui/status/2081038465157021760",
+      "tweet_id": "2081038465157021760",
+      "date": "2026-07-25T15:26:48+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HOFVc18aAAAnUDT.jpg",
+        "https://t.co/kK39rFocmq",
+        "pic.x.com/kK39rFocmq"
+      ],
+      "text": "今日は高校見学二本立て予定が……\n\n午前は部活保護者会に変更。\n\n午後から学校説明会。\n\n終わって自動販売機に面白いシステム発見🤣\n\n200円で二本何がでるかお楽しみ！\n\n結果⇒130円ジュース＋150円ブラックコーヒー🥤\n\nしかも好みバッチリ！\n\n好みカメラついてる？\n\nで、一度帰宅して盆踊りの準備！ https://t.co/kK39rFocmq",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
     }
   ]

@@ -1,9 +1,9 @@
 {
   "generated_by": "build_weekly_harvest_candidates.py",
-  "generated_at": "2026-07-25T15:21:12.931932+00:00",
-  "since": "2026-07-22T15:21:12.931932+00:00",
+  "generated_at": "2026-07-25T15:30:57.419115+00:00",
+  "since": "2026-07-22T15:30:57.419115+00:00",
   "days": 3,
-  "voice_count": 414,
+  "voice_count": 436,
   "candidate_count": 70,
   "rows": [
     {
@@ -254,6 +254,49 @@
     {
       "category": "曲候補",
       "type": "曲名",
+      "term": "ダンシングヒーロー",
+      "interpretation": "ダンシングヒーロー",
+      "confidence": "要レビュー",
+      "reason": "曲名抽出器で検出: known_song_context",
+      "evidence_count": 5,
+      "evidence": [
+        {
+          "url": "https://x.com/usapet/status/2081037605433725065",
+          "date": "2026-07-25T15:23:23+00:00",
+          "account": "@usapet",
+          "text": "盆踊りの最新ナンバーといえばダンシングヒーローだったのに2010年代の曲が出てきたか…"
+        },
+        {
+          "url": "https://x.com/taka31336695/status/2081031704098243008",
+          "date": "2026-07-25T14:59:56+00:00",
+          "account": "@taka31336695",
+          "text": "盆踊りも様変わりをしてますね。 サザンの盆ギリ恋歌は初めて♪ ダンシングヒーローは41年前の曲♪ #盆踊り https://t.co/9YjJoncrzI"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=3Gek9Fbhhk4",
+          "date": "2026-07-22T22:00:30+00:00",
+          "account": "UCWz2tM7PAFGT7xSL5OAEllg",
+          "text": "#マリーゴールド #あいみょん #神楽坂まつり #盆踊り #神楽坂 00:00 ハイライト 04:02 東京音頭 【神楽坂まつり 盆踊り2025】 「ダンシングヒーロー」 https://youtu.be/qM1kuwk0J04 生歌「真赤な太陽」 https://youtu.be/1lZOsNefqPI AKB48「365日の紙飛行機」 https://youtu.be/yXN-dj_9S0E TUBE「湘南盆踊り」 https://youtu.be/zoKLWo-EvJo 【神楽坂まつり 盆踊り】 「盆ギリ恋歌」 https://youtu.be/JZb8PbwerRE 「涙がキラリ☆」- スピッツ https://youtu.be/ZjIRJcD9w0E 「郡上おどり かわさき」「炭坑節」「東京音頭」 https://youtu.be/iHmb_kiV4dE 「ダンシングヒーロー」 https://youtu.be/-8lNsCJEDG4 【神楽坂まつり 2026】 開催日時：2026年7月19日(日)～20日(月) 開催場所 ：神楽坂 https://www.google.co"
+        },
+        {
+          "url": "https://x.com/yuzukover01/status/2081025167715864852",
+          "date": "2026-07-25T14:33:58+00:00",
+          "account": "@yuzukover01",
+          "text": "今日の粉会は バンズを焼き、ビーフ100%のパティと野菜を挟んだハンバーガー めるさんお手製ローストビーフ(エアフライヤー使用) 崩壊クッキー改良版2種類 かき氷6種類？かな？を食べつつ 盆踊りでダンシングヒーロー等を踊り汗を流しました。 満腹満足！ https://t.co/juu8VmnOY3"
+        },
+        {
+          "url": "https://x.com/C3zw5cUr7dXkMgS/status/2081002659025420711",
+          "date": "2026-07-25T13:04:31+00:00",
+          "account": "@C3zw5cUr7dXkMgS",
+          "text": "共和駅にて今日と明日開催の第51回共長夏祭りに行きました 仕事の関係もあり終盤での参加になりましたが駅近という事で賑わってて楽しかったです 盆踊りといえば東京音頭のイメージですが、こちらではダンシングヒーローが流れてて最初マジか！と思いましたが盆踊りに合っててアリだなと感じました https://t.co/QSKVyjCasp"
+        }
+      ],
+      "evidence_text": "盆踊りの最新ナンバーといえばダンシングヒーローだったのに2010年代の曲が出てきたか…\n---\n盆踊りも様変わりをしてますね。 サザンの盆ギリ恋歌は初めて♪ ダンシングヒーローは41年前の曲♪ #盆踊り https://t.co/9YjJoncrzI\n---\n#マリーゴールド #あいみょん #神楽坂まつり #盆踊り #神楽坂 00:00 ハイライト 04:02 東京音頭 【神楽坂まつり 盆踊り2025】 「ダンシングヒーロー」 https://youtu.be/qM1kuwk0J04 生歌「真赤な太陽」 https://youtu.be/1lZOsNefqPI AKB48「365日の紙飛行機」 https://youtu.be/yXN-dj_9S0E TUBE「湘南盆踊り」 https://youtu.be/zoKLWo-EvJo 【神楽坂まつり 盆踊り】 「盆ギリ恋歌」 https://youtu.be/JZb8PbwerRE 「涙がキラリ☆」- スピッツ https://youtu.be/ZjIRJcD9w0E 「郡上おどり かわさき」「炭坑節」「東京音頭」 https://youtu.be/iHmb_kiV4dE 「ダンシングヒーロー」 https://youtu.be/-8lNsCJEDG4 【神楽坂まつり 2026】 開催日時：2026年7月19日(日)～20日(月) 開催場所 ：神楽坂 https://www.google.co",
+      "evidence_url": "https://x.com/usapet/status/2081037605433725065"
+    },
+    {
+      "category": "曲候補",
+      "type": "曲名",
       "term": "巣鴨花咲き音頭",
       "interpretation": "巣鴨花咲き音頭",
       "confidence": "要レビュー",
@@ -293,43 +336,6 @@
       ],
       "evidence_text": "2026年7月18日、豊島区の巣鴨駅前南口ロータリーにて開催された「第46回巣鴨盆踊り大会」の様子です。 巣一商店会主催のもと、 駅前の活気ある雰囲気の中で踊られる盆踊りをお届けします。 地元の方々や観光客が一体となって盛り上がる、 夏の巣鴨ならではの熱気をお楽しみください！ 和太鼓の響きとともに、日本の夏の情緒を感じていただければ幸いです。 #巣鴨 #盆踊り #巣鴨花咲き音頭 #巣一商店会 #夏祭り #和太鼓 #東京の祭り #巣鴨駅前 巣鴨駅前盆踊り １巣鴨花咲音頭 https://youtu.be/9dqKwAudGS4 ２きよしのドドンパ https://youtu.be/wq9yyUc_IXY ３バハマママ https://youtu.be/TArlwnMgoPM ４恋するフォーチュンクッキー https://youtu.be/X-PkKNmjPe4 ５さわやか音頭 https://youtu.be/rTRTi60jqVc ６東京音頭 https://youtu.be/lsNiUZl1EJE ７河内おとこ節 https://youtu.be/QMKUAZQyIk0 ８押せ押せ音\n---\n2026年7月18日、豊島区の巣鴨駅前南口ロータリーにて開催された「第46回巣鴨盆踊り大会」の様子です。 巣一商店会主催のもと、 駅前の活気ある雰囲気の中で踊られる盆踊りをお届けします。 地元の方々や観光客が一体となって盛り上がる、 夏の巣鴨ならではの熱気をお楽しみください！ 和太鼓の響きとともに、日本の夏の情緒を感じていただければ幸いです。 #巣鴨 #盆踊り #巣鴨花咲き音頭 #巣一商店会 #夏祭り #和太鼓 #東京の祭り #巣鴨駅前 巣鴨駅前盆踊り １巣鴨花咲音頭 https://youtu.be/9dqKwAudGS4 ２きよしのドドンパ https://youtu.be/wq9yyUc_IXY ３バハマママ https://youtu.be/TArlwnMgoPM ４恋するフォーチュンクッキー https://youtu.be/X-PkKNmjPe4 ５さわやか音頭 https://youtu.be/rTRTi60jqVc ６東京音頭 https://youtu.be/lsNiUZl1EJE ７河内おとこ節 https://youtu.be/QMKUAZQyIk0 ８押せ押せ音\n---\n2026年7月18日、豊島区の巣鴨駅前南口ロータリーにて開催された「第46回巣鴨盆踊り大会」の様子です。 巣一商店会主催のもと、 駅前の活気ある雰囲気の中で踊られる盆踊りをお届けします。 地元の方々や観光客が一体となって盛り上がる、 夏の巣鴨ならではの熱気をお楽しみください！ 和太鼓の響きとともに、日本の夏の情緒を感じていただければ幸いです。 #巣鴨 #盆踊り #巣鴨花咲き音頭 #巣一商店会 #夏祭り #和太鼓 #東京の祭り #巣鴨駅前 巣鴨駅前盆踊り １巣鴨花咲音頭 https://youtu.be/9dqKwAudGS4 ２きよしのドドンパ https://youtu.be/wq9yyUc_IXY ３バハマママ https://youtu.be/TArlwnMgoPM ４恋するフォーチュンクッキー https://youtu.be/X-PkKNmjPe4 ５さわやか音頭 https://youtu.be/rTRTi60jqVc ６東京音頭 https://youtu.be/lsNiUZl1EJE ７河内おとこ節 https://youtu.be/QMKUAZQyIk0 ８押せ押せ音",
       "evidence_url": "https://www.youtube.com/watch?v=APwMDcUw3r4"
-    },
-    {
-      "category": "曲候補",
-      "type": "曲名",
-      "term": "ダンシングヒーロー",
-      "interpretation": "ダンシングヒーロー",
-      "confidence": "要レビュー",
-      "reason": "曲名抽出器で検出: known_song_context",
-      "evidence_count": 4,
-      "evidence": [
-        {
-          "url": "https://x.com/taka31336695/status/2081031704098243008",
-          "date": "2026-07-25T14:59:56+00:00",
-          "account": "@taka31336695",
-          "text": "盆踊りも様変わりをしてますね。 サザンの盆ギリ恋歌は初めて♪ ダンシングヒーローは41年前の曲♪ #盆踊り https://t.co/9YjJoncrzI"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=3Gek9Fbhhk4",
-          "date": "2026-07-22T22:00:30+00:00",
-          "account": "UCWz2tM7PAFGT7xSL5OAEllg",
-          "text": "#マリーゴールド #あいみょん #神楽坂まつり #盆踊り #神楽坂 00:00 ハイライト 04:02 東京音頭 【神楽坂まつり 盆踊り2025】 「ダンシングヒーロー」 https://youtu.be/qM1kuwk0J04 生歌「真赤な太陽」 https://youtu.be/1lZOsNefqPI AKB48「365日の紙飛行機」 https://youtu.be/yXN-dj_9S0E TUBE「湘南盆踊り」 https://youtu.be/zoKLWo-EvJo 【神楽坂まつり 盆踊り】 「盆ギリ恋歌」 https://youtu.be/JZb8PbwerRE 「涙がキラリ☆」- スピッツ https://youtu.be/ZjIRJcD9w0E 「郡上おどり かわさき」「炭坑節」「東京音頭」 https://youtu.be/iHmb_kiV4dE 「ダンシングヒーロー」 https://youtu.be/-8lNsCJEDG4 【神楽坂まつり 2026】 開催日時：2026年7月19日(日)～20日(月) 開催場所 ：神楽坂 https://www.google.co"
-        },
-        {
-          "url": "https://x.com/yuzukover01/status/2081025167715864852",
-          "date": "2026-07-25T14:33:58+00:00",
-          "account": "@yuzukover01",
-          "text": "今日の粉会は バンズを焼き、ビーフ100%のパティと野菜を挟んだハンバーガー めるさんお手製ローストビーフ(エアフライヤー使用) 崩壊クッキー改良版2種類 かき氷6種類？かな？を食べつつ 盆踊りでダンシングヒーロー等を踊り汗を流しました。 満腹満足！ https://t.co/juu8VmnOY3"
-        },
-        {
-          "url": "https://x.com/C3zw5cUr7dXkMgS/status/2081002659025420711",
-          "date": "2026-07-25T13:04:31+00:00",
-          "account": "@C3zw5cUr7dXkMgS",
-          "text": "共和駅にて今日と明日開催の第51回共長夏祭りに行きました 仕事の関係もあり終盤での参加になりましたが駅近という事で賑わってて楽しかったです 盆踊りといえば東京音頭のイメージですが、こちらではダンシングヒーローが流れてて最初マジか！と思いましたが盆踊りに合っててアリだなと感じました https://t.co/QSKVyjCasp"
-        }
-      ],
-      "evidence_text": "盆踊りも様変わりをしてますね。 サザンの盆ギリ恋歌は初めて♪ ダンシングヒーローは41年前の曲♪ #盆踊り https://t.co/9YjJoncrzI\n---\n#マリーゴールド #あいみょん #神楽坂まつり #盆踊り #神楽坂 00:00 ハイライト 04:02 東京音頭 【神楽坂まつり 盆踊り2025】 「ダンシングヒーロー」 https://youtu.be/qM1kuwk0J04 生歌「真赤な太陽」 https://youtu.be/1lZOsNefqPI AKB48「365日の紙飛行機」 https://youtu.be/yXN-dj_9S0E TUBE「湘南盆踊り」 https://youtu.be/zoKLWo-EvJo 【神楽坂まつり 盆踊り】 「盆ギリ恋歌」 https://youtu.be/JZb8PbwerRE 「涙がキラリ☆」- スピッツ https://youtu.be/ZjIRJcD9w0E 「郡上おどり かわさき」「炭坑節」「東京音頭」 https://youtu.be/iHmb_kiV4dE 「ダンシングヒーロー」 https://youtu.be/-8lNsCJEDG4 【神楽坂まつり 2026】 開催日時：2026年7月19日(日)～20日(月) 開催場所 ：神楽坂 https://www.google.co\n---\n今日の粉会は バンズを焼き、ビーフ100%のパティと野菜を挟んだハンバーガー めるさんお手製ローストビーフ(エアフライヤー使用) 崩壊クッキー改良版2種類 かき氷6種類？かな？を食べつつ 盆踊りでダンシングヒーロー等を踊り汗を流しました。 満腹満足！ https://t.co/juu8VmnOY3",
-      "evidence_url": "https://x.com/taka31336695/status/2081031704098243008"
     },
     {
       "category": "曲候補",

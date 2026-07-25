@@ -1,18 +1,18 @@
 {
   "generated_by": "build_retrospective_harvest.py",
-  "generated_at": "2026-07-25T15:21:04.080521+00:00",
+  "generated_at": "2026-07-25T15:30:51.272798+00:00",
   "source": "data/voices.json",
-  "voice_count": 13891,
-  "classified_event_evidence_count": 3161,
-  "candidate_count": 3248,
+  "voice_count": 13913,
+  "classified_event_evidence_count": 3164,
+  "candidate_count": 3250,
   "counts": {
     "by_kind": {
-      "event": 1558,
+      "event": 1560,
       "song": 1240,
       "venue": 450
     },
     "by_tier": {
-      "hold": 715,
+      "hold": 717,
       "promote": 422,
       "review": 2111
     },
@@ -74055,6 +74055,53 @@
     },
     {
       "kind": "event",
+      "candidate_key": "event:b8f18c0d79c124cf7006554ba65fb439b383e36728ac1553f00de731be39844d",
+      "display_name": "もひもひ盆踊り",
+      "normalized_event": "もひもひ",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": 2020,
+      "hashtags": [],
+      "score": 18,
+      "tier": "hold",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:2081037364219228414",
+          "tweet_id": "2081037364219228414",
+          "url": "https://x.com/hinaluna01/status/2081037364219228414",
+          "text": "@mohimohi2020 もひもひ盆踊りとか行くんやね",
+          "account": "@hinaluna01",
+          "dancer_key": "@hinaluna01",
+          "spoken_at": "2026-07-25T15:22:26+00:00",
+          "observed_at": "2026-07-25T15:22:26+00:00",
+          "patterns": [
+            "A"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊"
+          ],
+          "source_score": 7,
+          "score_reasons": [
+            "event_name:+4",
+            "plan_or_announcement:+3"
+          ],
+          "estimated_event": "もひもひ盆踊り",
+          "normalized_event": "もひもひ",
+          "estimated_venue": "",
+          "time_hints": [],
+          "year_signals": [],
+          "year": 2020
+        }
+      ]
+    },
+    {
+      "kind": "event",
       "candidate_key": "event:7cbc2e872d8e86b8cdbfed8f6ce35e8ef1733856db70afd76953451f2c4390c2",
       "display_name": "もマリン船長法被を来て集合し一味盆踊り大会",
       "normalized_event": "もマリン船長法被を来て集合し一味",
@@ -93719,6 +93766,59 @@
     },
     {
       "kind": "event",
+      "candidate_key": "event:1349fb9c01c183bde4410b278307565ac61870af5fc374db6377116749def4a7",
+      "display_name": "苅田南盆踊り",
+      "normalized_event": "苅田南",
+      "venue": "",
+      "venue_key": "",
+      "month": "",
+      "estimated_date": "",
+      "year": 2026,
+      "hashtags": [
+        "苅田南盆踊り",
+        "盆踊り"
+      ],
+      "score": 18,
+      "tier": "hold",
+      "evidence_count": 1,
+      "speaker_count": 1,
+      "suppressed_event_hints": [],
+      "evidence": [
+        {
+          "identity": "evidence:2081036972072780082",
+          "tweet_id": "2081036972072780082",
+          "url": "https://x.com/undinereika/status/2081036972072780082",
+          "text": "第二の故郷の櫓へ\n\n子供が小さい頃に住んでて良く河川敷で遊んでました\n\n小鉄師匠の音頭は久々で最高\n\n小利貴丸さんの途中のフリートークの様なお話が楽しかった\n\n外国人実習生の方が来てて踊りを教えたりして楽しかった\n\n街並みは変わったけど大好きな街です(˘ω˘)✨\n\n#苅田南盆踊り\n#盆踊り https://t.co/6bLhDs09WP",
+          "account": "@undinereika",
+          "dancer_key": "@undinereika",
+          "spoken_at": "2026-07-25T15:20:52+00:00",
+          "observed_at": "2026-07-25T15:20:52+00:00",
+          "patterns": [
+            "E"
+          ],
+          "bon_context_hits": [
+            "盆踊り",
+            "盆踊",
+            "音頭",
+            "櫓"
+          ],
+          "source_score": 8,
+          "score_reasons": [
+            "event_name:+4",
+            "song_or_group:+2",
+            "past_participation:+2"
+          ],
+          "estimated_event": "苅田南盆踊り",
+          "normalized_event": "苅田南",
+          "estimated_venue": "",
+          "time_hints": [],
+          "year_signals": [],
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "kind": "event",
       "candidate_key": "event:a2f3f1e3dd5c45e9aca157c810f2214b6aff7f703ccc37f8a5b4c4f8ddbd0499",
       "display_name": "若い力あふれる盆踊り",
       "normalized_event": "若い力あふれる",
@@ -107107,6 +107207,23 @@
       "evidence": [
         {
           "identity": "",
+          "tweet_id": "2081037605433725065",
+          "url": "https://x.com/usapet/status/2081037605433725065",
+          "text": "盆踊りの最新ナンバーといえばダンシングヒーローだったのに2010年代の曲が出てきたか…",
+          "account": "@usapet",
+          "dancer_key": "@usapet",
+          "observed_at": "2026-07-25T15:23:23+00:00",
+          "score": 0,
+          "song_name": "ダンシングヒーロー",
+          "reasons": [
+            "known_song_context"
+          ],
+          "estimated_event": "",
+          "estimated_venue": "",
+          "time_hints": []
+        },
+        {
+          "identity": "",
           "tweet_id": "2081031704098243008",
           "url": "https://x.com/taka31336695/status/2081031704098243008",
           "text": "盆踊りも様変わりをしてますね。 サザンの盆ギリ恋歌は初めて♪ ダンシングヒーローは41年前の曲♪ #盆踊り https://t.co/9YjJoncrzI",
@@ -109741,8 +109858,8 @@
         "known_song_context"
       ],
       "suppressed_event_hints": [],
-      "evidence_count": 154,
-      "speaker_count": 54
+      "evidence_count": 155,
+      "speaker_count": 55
     },
     {
       "kind": "song",

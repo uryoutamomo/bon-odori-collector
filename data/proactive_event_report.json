@@ -1,10 +1,28 @@
 {
-  "generated_at": "2026-07-25T15:20:30.486417+00:00",
+  "generated_at": "2026-07-25T15:30:28.558629+00:00",
   "year": 2026,
   "items": [
     {
-      "venue": "四谷ひろばグラウンド（旧四谷第四小学校）",
-      "event_name": "第25回 四谷納涼踊り大会",
+      "venue": "千歳船橋駅前広場",
+      "event_name": "船橋会 盆踊り",
+      "months": [
+        8
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "原町天祖神社",
+      "event_name": "原町一丁目町会 天祖神社例大祭 盆踊り",
+      "months": [
+        9
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "大口公園",
+      "event_name": "大口公園",
       "months": [
         7
       ],
@@ -12,17 +30,8 @@
       "evidence": []
     },
     {
-      "venue": "埠頭公園（港区芝浦港南）",
-      "event_name": "埠頭公園（港区芝浦港南）",
-      "months": [
-        8
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "増上寺（大殿前広場）",
-      "event_name": "増上寺（大殿前広場）",
+      "venue": "奥沢小学校",
+      "event_name": "奥沢交和会",
       "months": [
         7
       ],
@@ -30,17 +39,8 @@
       "evidence": []
     },
     {
-      "venue": "大豆戸八杉神社",
-      "event_name": "大豆戸八杉神社",
-      "months": [
-        8
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "大阪・関西万博 ポップアップステージ北",
-      "event_name": "大阪・関西万博 ポップアップステージ北",
+      "venue": "宇奈根氷川神社",
+      "event_name": "宇奈根町会 盆踊り大会",
       "months": [
         7
       ],
@@ -48,8 +48,8 @@
       "evidence": []
     },
     {
-      "venue": "横川小学校",
-      "event_name": "横川小学校",
+      "venue": "岸根貴雲寺",
+      "event_name": "岸根貴雲寺",
       "months": [
         8
       ],
@@ -57,176 +57,8 @@
       "evidence": []
     },
     {
-      "venue": "横根稲荷神社",
-      "event_name": "親子納涼盆踊り大会",
-      "months": [
-        7
-      ],
-      "status": "confirmed",
-      "evidence": [
-        {
-          "source": "x",
-          "title": "【事務所より】\n本日は、八幡山サマーフェスティバル、喜多見商店街駅前盆踊り大会、石井戸会納涼親睦盆踊り大会、鎌田協和会盆踊り、大蔵東部町会親子納涼盆踊り大会、砧",
-          "text": "【事務所より】\n本日は、八幡山サマーフェスティバル、喜多見商店街駅前盆踊り大会、石井戸会納涼親睦盆踊り大会、鎌田協和会盆踊り、大蔵東部町会親子納涼盆踊り大会、砧町自治会納涼盆踊り大会、下北沢盆踊り、宇山昭和会納涼盆踊り大会へ伺いました。\n\n子どもたちの弾ける笑顔、やぐらの上に響く力強い太鼓の音、そして地域の皆さまの活気あふれる姿に、たくさんの元気をいただきました。\n\nお祭りを支えてくださっている地域の皆さま、ありがとうございます。\n\n引き続き、地域の皆さまの声に耳を傾け、その思いを国政へ届けられるよう、全力で取り組んでまいります。",
-          "url": "https://x.com/ochiaitakayuki/status/2081021054093586878"
-        }
-      ]
-    },
-    {
-      "venue": "歌舞伎町シネシティ広場",
-      "event_name": "歌舞伎町シネシティ広場",
-      "months": [
-        8
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "江東天祖神社（亀戸天祖神社）",
-      "event_name": "江東天祖神社（亀戸天祖神社）",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "池尻稲荷神社",
-      "event_name": "盆踊り(池尻地区)",
-      "months": [
-        8
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "清水川橋公園",
-      "event_name": "下落合町会知久会 第9回盆踊り",
-      "months": [
-        7
-      ],
-      "status": "confirmed",
-      "evidence": [
-        {
-          "source": "x",
-          "title": "こんにちは☀️\n早稲田大学POSTです📮\n\n7月18日(土)に、清水川橋公園にて行われた下落合町会盆踊り祭りの会場設営ボランティアに行ってきました！\n\n提灯を運",
-          "text": "こんにちは☀️\n早稲田大学POSTです📮\n\n7月18日(土)に、清水川橋公園にて行われた下落合町会盆踊り祭りの会場設営ボランティアに行ってきました！\n\n提灯を運んだり、テントを組み立てたり、たくさん働きました💪✨\n7月ながら外はものすごく暑くて汗をかきながら頑張りました！🫠 https://t.co/Vek5mDCNw2",
-          "url": "https://x.com/plannerpost/status/2079735648723050669"
-        }
-      ]
-    },
-    {
-      "venue": "瀬田中学校",
-      "event_name": "瀬田商店会 瀬田納涼盆踊り",
-      "months": [
-        8
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "田原小学校",
-      "event_name": "田原小学校",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "白金台どんぐり児童遊園",
-      "event_name": "白金台どんぐり児童遊園",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "石一町会会館前",
-      "event_name": "石原一丁目 牛嶋神社 奉納踊り",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "網代公園",
-      "event_name": "網代公園",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "緑町公園",
-      "event_name": "緑町公園",
-      "months": [
-        9
-      ],
-      "status": "confirmed",
-      "evidence": [
-        {
-          "source": "x_proactive",
-          "title": "7/25(土)・26(日)に開催される「みどりまち盆踊り2026」に、千葉ウシノヒロバ ミルクバースタンドが出店いたします🐄🍹🍦\n\n日時：2026年7月25日(",
-          "text": "7/25(土)・26(日)に開催される「みどりまち盆踊り2026」に、千葉ウシノヒロバ ミルクバースタンドが出店いたします🐄🍹🍦\n\n日時：2026年7月25日(土)・26日(日) 16:00-21:00\n場所：緑町公園・ZOZOの広場・HELLO GARDEN・学園通り\n\n▼詳しくはこちら\nhttps://t.co/dVFehj3TV7 https://t.co/DOgp62EjMf",
-          "url": "https://x.com/ushinohiroba/status/2080593842412343373"
-        },
-        {
-          "source": "x_proactive",
-          "title": "⳹ いよいよ明日から！⳼\n みどりまち盆踊り2026\n\n7/25(土)-26(日) 16-21時 緑町公園周辺にて開催！\n当店ブースは【HELLO GARDEN",
-          "text": "⳹ いよいよ明日から！⳼\n みどりまち盆踊り2026\n\n7/25(土)-26(日) 16-21時 緑町公園周辺にて開催！\n当店ブースは【HELLO GARDEN】エリア内🙌\n\nᝰ✍︎꙳⋆\n\n本日7/24(金)は、13-18時まで営業です。\nイベント出店と休業日が続くので、次の営業日は7/29(水)です。\n\n皆さまのご来店をお待ちしております🤗 https://t.co/mvfp4v5r3P",
-          "url": "https://x.com/Shop_MiSHKeT/status/2080523035984224414"
-        },
-        {
-          "source": "x",
-          "title": "📢7/25（土）オープンします！\n\nみどりまち盆踊りが開催される7/25に、ひとこま。さんお店番にてオープンします。\n\n7/25 Sat. 12:00-16:0",
-          "text": "📢7/25（土）オープンします！\n\nみどりまち盆踊りが開催される7/25に、ひとこま。さんお店番にてオープンします。\n\n7/25 Sat. 12:00-16:00\n\nぜひお祭り前にお越しください♪\n\n#古本屋 #シェア型書店 #棚貸し本屋 #みどり台 #西千葉 #いとなみ書店 #読書 #みどりまち盆踊り #ZOZOの広場 #緑町公園 https://t.co/odUGkO3daq",
-          "url": "https://x.com/itonami_books/status/2079843042056679850"
-        }
-      ]
-    },
-    {
-      "venue": "芝新堀町児童遊園",
-      "event_name": "芝新堀町児童遊園",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "豊町一丁目会館前",
-      "event_name": "戸越八幡神社例大祭 奉納盆踊り大会",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "長谷寺（西麻布・麻布大観音）",
-      "event_name": "長谷寺（西麻布・麻布大観音）",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "青葉公園（港区立）",
-      "event_name": "青葉公園（港区立）",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "-両国-江戸NOREN",
-      "event_name": "-両国-江戸NOREN",
+      "venue": "田井西公園",
+      "event_name": "田井西公園",
       "months": [
         7
       ],
@@ -234,8 +66,8 @@
       "evidence": []
     },
     {
-      "venue": "JR恵比寿駅西口広場",
-      "event_name": "JR恵比寿駅西口広場",
+      "venue": "白金児童遊園",
+      "event_name": "白金児童遊園",
       "months": [
         7
       ],
@@ -243,128 +75,256 @@
       "evidence": []
     },
     {
-      "venue": "JR日暮里駅前広場",
-      "event_name": "JR日暮里駅前広場",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "JR苅田駅前広場",
-      "event_name": "JR苅田駅前広場",
-      "months": [
-        8
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "JR蒲田駅西口駅前広場(駅前会場)",
-      "event_name": "蒲田国際フェスティバル2025 -世界が出会う下町フェス",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "フナイリバ（目黒川船入場広場）",
-      "event_name": "中目黒盆踊り大会 2025",
-      "months": [
-        8
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "上北沢小学校",
-      "event_name": "上北沢の納涼盆踊り",
-      "months": [
-        8
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "上野原市役所センタープラザ（もみじホール）",
-      "event_name": "上野原市役所センタープラザ（もみじホール）",
-      "months": [
-        8
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "中之郷公園（中之郷児童遊園）",
-      "event_name": "中之郷公園（中之郷児童遊園）",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "中和小学校",
-      "event_name": "菊川一丁目町会 菊一お祭り広場・盆踊り大会",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "伸成町会会館前 路上",
-      "event_name": "押上三丁目伸成町会 飛木稲荷神社神幸大祭 祭礼踊り",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "八潮公園",
-      "event_name": "八潮公園",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "六本木天祖神社",
-      "event_name": "六本木天祖神社",
-      "months": [
-        9
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "北新宿公園",
-      "event_name": "柏木地区6町会盆踊り大会",
-      "months": [
-        8
-      ],
-      "status": "unconfirmed",
-      "evidence": []
-    },
-    {
-      "venue": "北柏木公園",
-      "event_name": "北新宿四丁目 盆踊り大会",
+      "venue": "砧小学校",
+      "event_name": "第38回砧っ子夏祭り",
       "months": [
         7
       ],
-      "status": "confirmed",
-      "evidence": [
-        {
-          "source": "x",
-          "title": "122件目 北新宿4丁目町会 盆おどり大会(北柏木公園)\n下北沢から梯子🪜1部の途中から2部の中止まで！土砂降りの中、「東京音頭」「大東京音頭」をかけてくれて踊",
-          "text": "122件目 北新宿4丁目町会 盆おどり大会(北柏木公園)\n下北沢から梯子🪜1部の途中から2部の中止まで！土砂降りの中、「東京音頭」「大東京音頭」をかけてくれて踊った🤣\n「マツケンサンバ」はここオリジナル？の振付で\"マツケン棒\"なるもの振ってお手本が踊ってました！ https://t.co/0wgTtGywRT",
-          "url": "https://x.com/2tsuo_g/status/2080992024740958711"
-        }
-      ]
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "祐天寺境内",
+      "event_name": "第90回 祐天寺み魂まつり こども盆踊り大会",
+      "months": [
+        7
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "第一日野小学校",
+      "event_name": "第一日野小学校",
+      "months": [
+        7
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "臨海小学校",
+      "event_name": "臨海小学校",
+      "months": [
+        7
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "西糀谷さざんか公園",
+      "event_name": "西糀谷さざんか公園",
+      "months": [
+        7
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "足寄町民センター前グラウンド・駐車場",
+      "event_name": "足寄町民センター前グラウンド・駐車場",
+      "months": [
+        8
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "野毛六所神社",
+      "event_name": "野毛町会 納涼盆踊り大会",
+      "months": [
+        7
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "鎌田天神社",
+      "event_name": "鎌田協和会 鎌田納涼盆踊り",
+      "months": [
+        7
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "長円寺",
+      "event_name": "長円寺",
+      "months": [
+        8
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "飛木稲荷神社",
+      "event_name": "飛木稲荷神社",
+      "months": [
+        9
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "麻布氷川神社",
+      "event_name": "麻布氷川神社例大祭 盆踊り",
+      "months": [
+        9
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "JR目黒駅西口前",
+      "event_name": "地域のふれあい第37回盆踊り大会",
+      "months": [
+        7
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "SHIBUYA109前〜道玄坂・文化村通り一帯",
+      "event_name": "SHIBUYA109前〜道玄坂・文化村通り一帯",
+      "months": [
+        8
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+      "event_name": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
+      "months": [
+        8
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "さかもと朝顔広場（旧坂本小学校跡地）",
+      "event_name": "坂本町会 納涼祭",
+      "months": [
+        8
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "すみだ公園（隅田公園・墨田区側）",
+      "event_name": "すみだ公園（隅田公園・墨田区側）",
+      "months": [
+        9
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "アーク・カラヤン広場（アークヒルズ）",
+      "event_name": "アーク・カラヤン広場（アークヒルズ）",
+      "months": [
+        9
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "ハマサイト前広場・汐留ビルディング外構",
+      "event_name": "第16回ハマサイトの夏祭り",
+      "months": [
+        8
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "中央通り（銀座1丁目〜8丁目）",
+      "event_name": "中央通り（銀座1丁目〜8丁目）",
+      "months": [
+        8
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "久富稲荷神社",
+      "event_name": "新町公民会 盆踊り大会",
+      "months": [
+        8
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "二子玉川西地区ふれあい広場(246高架下)",
+      "event_name": "玉川町会盆おどり大会",
+      "months": [
+        7
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "京橋エドグラン 京橋中央ひろば",
+      "event_name": "京橋エドグラン 京橋中央ひろば",
+      "months": [
+        8
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "京王線芦花公園駅前ロータリー(南口)",
+      "event_name": "芦花公園駅前盆踊り大会",
+      "months": [
+        7
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "向島1丁目旧町会会館前",
+      "event_name": "向島一丁目 牛嶋神社 ミニ奉納踊り",
+      "months": [
+        9
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "報恩寺境内",
+      "event_name": "太平一丁目 牛嶋神社 奉納踊り",
+      "months": [
+        9
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "小山台公園",
+      "event_name": "小山台公園",
+      "months": [
+        9
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "小梅児童遊園",
+      "event_name": "小梅児童遊園",
+      "months": [
+        9
+      ],
+      "status": "unconfirmed",
+      "evidence": []
+    },
+    {
+      "venue": "市野倉南児童公園",
+      "event_name": "市野倉南町会 盆踊り",
+      "months": [
+        8
+      ],
+      "status": "unconfirmed",
+      "evidence": []
     }
   ]
 }
