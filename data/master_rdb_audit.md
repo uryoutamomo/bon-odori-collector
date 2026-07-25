@@ -1,32 +1,33 @@
 # Master RDB audit
 
-- generated_at: 2026-06-22T15:18:06.443446+00:00
-- database: data/bon_odori_master.sqlite
+- generated_at: 2026-07-25T15:24:42.893332+00:00
+- database: /private/tmp/claude-501/-Users-ryotauchida/8cc5ead5-40c7-485a-801e-1e0f43049b7f/scratchpad/inbox_v2_dry.sqlite
 - issue_count: 1
 - issues_by_severity: {'medium': 1}
 
 ## Table counts
 
 - event_investigation_tasks: 79
-- event_occurrences: 222
-- event_series: 221
-- evidence_items: 28419
+- event_occurrences: 253
+- event_series: 241
+- evidence_items: 31183
 - external_record_links: 2654
-- historical_promotion_candidates: 15
+- historical_promotion_candidates: 16
 - master_meta: 0
-- notion_sync_jobs: 10
-- observed_occurrence_songs: 28105
-- observed_occurrences: 1856
-- occurrence_dates: 171
-- occurrence_evidence_links: 0
-- occurrence_song_evidence_links: 485
-- occurrence_songs: 308
-- predicted_occurrence_dates: 12
-- schema_migrations: 1
+- notion_sync_jobs: 0
+- observed_occurrence_songs: 30772
+- observed_occurrences: 2164
+- occurrence_dates: 296
+- occurrence_evidence_links: 100
+- occurrence_song_evidence_links: 963
+- occurrence_songs: 795
+- predicted_occurrence_dates: 14
+- review_inbox_items: 0
+- schema_migrations: 2
 - song_aliases: 141
-- songs: 141
-- venue_aliases: 215
-- venues: 215
+- songs: 379
+- venue_aliases: 290
+- venues: 241
 - write_batches: 0
 
 ## Check counts
@@ -40,23 +41,25 @@
 - non_curated_series: 0
 - non_curated_occurrences: 0
 - date_cache_mismatch: 0
-- historical_reference_dates: 25
-- unresolved_occurrence_songs: 179
-- observed_unmatched_occurrences: 1774
-- observed_discard_candidate_occurrences: 115
-- observed_out_of_scope_occurrences: 55
-- observed_unmatched_songs: 20541
-- historical_promotion_candidates: 15
+- historical_reference_dates: 113
+- unresolved_occurrence_songs: 210
+- observed_unmatched_occurrences: 2050
+- observed_discard_candidate_occurrences: 126
+- observed_out_of_scope_occurrences: 61
+- observed_unmatched_songs: 21964
+- historical_promotion_candidates: 16
 - historical_auto_promote_eligible: 13
-- predicted_occurrence_dates: 12
+- predicted_occurrence_dates: 14
 - predicted_occurrence_dates_date_based: 3
-- predicted_occurrence_dates_weekday_based: 9
+- predicted_occurrence_dates_weekday_based: 11
 - predicted_occurrence_dates_year_mismatch: 0
-- predicted_occurrence_dates_detached_series_only: 8
-- predicted_occurrence_dates_superseded_by_curated: 3
-- predicted_occurrence_dates_matches_curated: 1
-- predicted_occurrence_date_sync_jobs: 10
+- predicted_occurrence_dates_detached_series_only: 6
+- predicted_occurrence_dates_superseded_by_curated: 5
+- predicted_occurrence_dates_matches_curated: 2
+- predicted_occurrence_date_sync_jobs: 0
+- review_inbox_schema_version: 2
+- review_inbox_missing_v2_columns: 0
 
 ## Issues
 
-- medium source_snapshot_drift: Current source snapshot differs from the master DB build manifest. {'manifest_source_checksums': {'notion_db': '20e460fa51a838cfc4e8c3e1a34e51d60707870eb39534d98d8673d1e1d67002', 'song_occurrences': '2f129469c58dce45b8671dc964b0e62b882c999a06f181172a237ac04bf6e609'}, 'current_source_checksums': {'notion_db': '7780d3c462796e6f28c8fa336ac1ad363742eedf3e044cc6525456eb76ba494e', 'song_occurrences': '2f129469c58dce45b8671dc964b0e62b882c999a06f181172a237ac04bf6e609'}, 'source_drift': {'notion_db': True, 'song_occurrences': False}, 'resolution': 'Refresh the master DB from current source snapshots with a state-preserving process during Ph2 cutover; do not force-rebuild after DB-only review state exists.'}
+- medium source_snapshot_drift: Current source snapshot differs from the master DB build manifest. {'manifest_source_checksums': {'notion_db': '20e460fa51a838cfc4e8c3e1a34e51d60707870eb39534d98d8673d1e1d67002', 'song_occurrences': '2f129469c58dce45b8671dc964b0e62b882c999a06f181172a237ac04bf6e609'}, 'current_source_checksums': {'notion_db': 'd7f45902c9c235298c4cce58531cf79c46f353dfda1dc66e78b15c11abbe2622', 'song_occurrences': '2f129469c58dce45b8671dc964b0e62b882c999a06f181172a237ac04bf6e609'}, 'source_drift': {'notion_db': True, 'song_occurrences': False}, 'resolution': 'Refresh the master DB from current source snapshots with a state-preserving process during Ph2 cutover; do not force-rebuild after DB-only review state exists.'}

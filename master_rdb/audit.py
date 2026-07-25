@@ -10,6 +10,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from master_rdb.master_db import MASTER_DB, MASTER_MANIFEST, connect_existing, file_sha256, table_counts
+from review_inbox import INBOX_SCHEMA_VERSION, V2_COLUMNS
 
 
 DATA = Path("data")
@@ -265,6 +266,29 @@ def audit(args):
         check_counts["predicted_occurrence_date_sync_jobs"] = predicted_sync_jobs
         if predicted_year_mismatch:
             issues.append(issue("high", "predicted_date_year_mismatch", "Predicted date is linked to a different occurrence year.", {"count": predicted_year_mismatch}))
+
+        # review inbox のスキーマ退行検知。
+        # dual-write 側は "does not migrate schema" 設計なので、v2 でない
+        # アーティファクトが publish されると collect.yml の dual-write が
+        # 毎日失敗する。publish 側のガードは「新しい成果を上書きしない」ための
+        # チェックサム照合だけでスキーマ退行を見ないため、ここで気づけるようにする。
+        # 実例: 2026-07-20 は v2 で動いていたが、その後 v1 系統のDBに上書きされ
+        # "review inbox schema v2 is required" で dual-write が止まった。
+        inbox_columns = {row[1] for row in conn.execute("PRAGMA table_info(review_inbox_items)")}
+        inbox_missing = sorted(set(V2_COLUMNS) - inbox_columns) if inbox_columns else []
+        check_counts["review_inbox_schema_version"] = (
+            INBOX_SCHEMA_VERSION if inbox_columns and not inbox_missing else 1
+        )
+        check_counts["review_inbox_missing_v2_columns"] = len(inbox_missing)
+        if inbox_missing:
+            issues.append(
+                issue(
+                    "high",
+                    "review_inbox_schema_downgraded",
+                    "review_inbox_items is not schema v2; scheduled dual-write will fail.",
+                    {"missing_columns": inbox_missing},
+                )
+            )
 
     return build_result(
         args,

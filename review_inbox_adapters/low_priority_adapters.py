@@ -133,6 +133,14 @@ class HistoricalQualityAdapter:
             yield common_item(row, kind="historical_quality", source_key=f"quality:{review_id}", title=title, action=action, time_scope="historical")
 
 
+PUBLICATION_GAP_ACTIONS = {
+    "needs_research",
+    "hold",
+    "reject",
+    "review_and_apply_event_occurrence_to_master_rdb",
+}
+
+
 class PublicationGapAdapter:
     source_id = "publication_gap"
     def adapt(self, payload: Any) -> Iterable[Mapping[str, Any]]:
@@ -140,7 +148,12 @@ class PublicationGapAdapter:
             if decided(row, {"needs_research","hold","reject"}): continue
             gap_id = str(row.get("gap_id") or "").strip()
             action = str(row.get("recommended_action") or "").strip()
-            if action not in {"needs_research", "hold", "reject"}:
+            # review_and_apply_event_occurrence_to_master_rdb は
+            # build_publication_gap_review.py が出す正規の action
+            # (根拠URLはあるが会場/日程が未整備で公開できない行)。
+            # 許可リストから漏れており、2026-07-25 の collect で
+            # "unsupported publication gap action" として dual-write を止めていた。
+            if action not in PUBLICATION_GAP_ACTIONS:
                 raise ValueError(f"unsupported publication gap action: {action or 'missing'}")
             title = str(row.get("term") or row.get("song_name") or gap_id).strip()
             yield common_item(row, kind="publication_gap", source_key=f"gap:{gap_id}", title=title, action=action)

@@ -67,3 +67,36 @@ def test_partial_decisions_unknown_quality_and_gap_fail_closed():
         adapt_source_payload(HistoricalQualityAdapter(),{"review":[{"quality_review_id":"q","issue_codes":["mystery"]}]})
     with pytest.raises(ValueError,match="unsupported publication gap action"):
         adapt_source_payload(PublicationGapAdapter(),{"rows":[{"gap_id":"g","recommended_action":"publish"}]})
+
+
+def test_publication_gap_accepts_every_action_the_builder_emits():
+    """許可リストが生成側の語彙から遅れると dual-write が止まる。
+
+    2026-07-25 の collect は build_publication_gap_review.py が出す
+    review_and_apply_event_occurrence_to_master_rdb を
+    PublicationGapAdapter が知らず、
+    "unsupported publication gap action" で失敗していた。
+    """
+    import re
+    from pathlib import Path
+
+    from review_inbox_adapters.low_priority_adapters import PUBLICATION_GAP_ACTIONS
+
+    builder = Path(__file__).resolve().parents[1] / "public_export_support" / "build_publication_gap_review.py"
+    emitted = set(re.findall(r'"recommended_action":\s*"([^"]+)"', builder.read_text(encoding="utf-8")))
+
+    assert emitted, "builder から recommended_action を読み取れていない"
+    assert emitted <= PUBLICATION_GAP_ACTIONS, sorted(emitted - PUBLICATION_GAP_ACTIONS)
+
+
+def test_publication_gap_adapts_rdb_apply_action():
+    items = list(
+        adapt_source_payload(
+            PublicationGapAdapter(),
+            {"rows": [{"gap_id": "g1", "term": "テスト", "recommended_action": "review_and_apply_event_occurrence_to_master_rdb"}]},
+        )
+    )
+
+    assert [item["recommended_action"] for item in items] == [
+        "review_and_apply_event_occurrence_to_master_rdb"
+    ]
