@@ -1,6 +1,6 @@
 {
   "generated_by": "build_song_ocr_queue.py",
-  "count": 30,
+  "count": 37,
   "items": [
     {
       "id": "b21783a2a9785946",
@@ -472,6 +472,123 @@
         "https://pbs.twimg.com/media/HNvE2yva8AAAmNz.jpg"
       ],
       "text": "🏮坂井ユカコの墨田区盆踊り探訪　その2・その3\n外手小学校地区連合盆踊り大会／緑小学校地区連合盆踊り大会\n\n夏休みに入ると、墨田区では学校単位の連合子ども会などが主催する盆踊り大会が区内各地で開催されます。\n今回は、同じ日にお邪魔した二つの「学校地区連合盆踊り大会」をご紹介します。\n\nまずは、地元・外手小学校地区連合盆踊り大会。\n\n昨年、外手小学校の校庭は人工芝にリニューアルされました。校庭の環境が変わったこともあり、現在は道路を挟んだ若宮公園を会場に開催されています。\n\nこの盆踊り大会の大きな特徴は、各町会の太鼓連の子どもたちの発表の場でもあることです。\n外手小学校地区を構成する6町会には、それぞれ太鼓連があり、秋祭りへ向けて日頃から練習を重ねています。この日は各町会が6曲ずつ披露し、その演奏に合わせて会場の皆さんが踊ります。\n\n来賓席に座っていると、演奏前と演奏後に子どもたち全員が元気いっぱいに挨拶をしてくれます。これがまた、本当に可愛らしい。\n「次は〇〇町会、曲目は△△！」とめくりで紹介されるたびに、太鼓の音が響き渡り、町会の皆さんも一緒に輪に加わります。\n\nオバQ音頭、八木節、",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "5dc80156f18f9c6e",
+      "status": "needs_ocr",
+      "account": "@FunatsuKatvlt",
+      "url": "https://x.com/FunatsuKatvlt/status/2080273700432289903",
+      "tweet_id": "2080273700432289903",
+      "date": "2026-07-23T12:47:54+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HN6d4k-bEAA4FXf.jpg",
+        "https://t.co/oeDAFZGqBC",
+        "pic.x.com/oeDAFZGqBC",
+        "https://pbs.twimg.com/media/HN6d4k3bsAASd22.jpg"
+      ],
+      "text": "川口市弥平一丁目公園盆踊り\nNo.1\n\n埼玉高速鉄道・川口元郷駅から徒歩20分\n帰りはバスに乗ろうと思いましたが、バスの待ち時間が20分くらいだったので結局帰りも駅まで歩きました\n\n盆友の江橋さんが太鼓を叩いてました\nお世辞抜きで､力強くて見事なバチ捌きでした。\n\n曲目は､No.2へ https://t.co/oeDAFZGqBC",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "69f11c0e73c78a32",
+      "status": "needs_ocr",
+      "account": "@FunatsuKatvlt",
+      "url": "https://x.com/FunatsuKatvlt/status/2080274512076329304",
+      "tweet_id": "2080274512076329304",
+      "date": "2026-07-23T12:51:07+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HN6eoiVbwAEzd9s.jpg",
+        "https://t.co/6Ju0StJ8Ye",
+        "pic.x.com/6Ju0StJ8Ye",
+        "https://pbs.twimg.com/media/HN6eoiRaAAA6dG4.jpg"
+      ],
+      "text": "川口市弥平一丁目公園盆踊り\nN o.2\n\n曲目\n彩の国小唄（ここver）\n川口小唄（丸は円心向き）\nたたら踊り､\n津軽の花（4）手繋ぎver\n大東京音頭､\n東京スカイツリー音頭\n火の国太鼓（バチ2本）､\n花笠音頭（花笠）､\n河内音頭（ここver）\n八木節､\n\nとても楽しかったです\nありがとうございました https://t.co/6Ju0StJ8Ye",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "474fdd383259870e",
+      "status": "needs_ocr",
+      "account": "@sasaduka_odori",
+      "url": "https://x.com/sasaduka_odori/status/2080857434994946514",
+      "tweet_id": "2080857434994946514",
+      "date": "2026-07-25T03:27:27+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HOCwweQaQAA4BiA.jpg",
+        "https://t.co/uIuC4QzXZc",
+        "pic.x.com/uIuC4QzXZc",
+        "https://pbs.twimg.com/media/HOCwwgDbMAAnqUy.jpg"
+      ],
+      "text": "昨日7/24の笹塚サマーフェスティバル。\n奇跡的にゲリラ豪雨はなく、\n無事に終えることができました。\n\n参考までに昨日の盆踊り曲目表を\nご紹介します。\n\n本日も数々のプログラム・模擬店\n縁日などを準備してお待ちしております！\n\n#笹塚サマーフェスティバル2026\n#笹塚\n#渋谷区 https://t.co/uIuC4QzXZc",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "ff6437ffc2479520",
+      "status": "needs_ocr",
+      "account": "@mosukenostalgia",
+      "url": "https://x.com/mosukenostalgia/status/2080978750158917807",
+      "tweet_id": "2080978750158917807",
+      "date": "2026-07-25T11:29:31+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HOEfI5caIAA6fFO.jpg",
+        "https://t.co/BrxFQGlanc",
+        "pic.x.com/BrxFQGlanc",
+        "https://pbs.twimg.com/media/HOEfI-uawAA_0GG.jpg"
+      ],
+      "text": "本年２軒目の盆踊り「東陽一丁目」。曲目、大分変わりました。\n\n「マツケンサンバⅡ」は、魂舞会さんのを少し簡略化した感じの。\n\nTYCのお二人とも逢えました✨🕺\n\n今日はあんまり体が動かんかった、トシですね🤗    体がきつい…… https://t.co/BrxFQGlanc",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "259cc7b2de87c2aa",
+      "status": "needs_ocr",
+      "account": "@lucasuke",
+      "url": "https://x.com/lucasuke/status/2080987238620639423",
+      "tweet_id": "2080987238620639423",
+      "date": "2026-07-25T12:03:15+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HOEmjlUbgAALp7w.jpg",
+        "https://t.co/4vhKRLnyRe",
+        "pic.x.com/4vhKRLnyRe",
+        "https://pbs.twimg.com/media/HOEmnv4bYAAjH5P.jpg",
+        "https://pbs.twimg.com/media/HOEmnv5bwAAv6ZU.jpg"
+      ],
+      "text": "堀留公園盆踊り大会に行ってきました！\n\n堀留であるよと教えていただき、場所を調べたら東京キモノショーでも訪れた人形町の公園！ウキウキと参加しました！🕺\n\nがっつりと盆踊りが楽しめるお祭りで、曲目も個人的に好きな踊りが多く、めっちゃくちゃ楽しかったです・・！来年も参加したいです！！✨ https://t.co/4vhKRLnyRe",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "349ab2366342ef7e",
+      "status": "needs_ocr",
+      "account": "@bonkyodora_",
+      "url": "https://x.com/bonkyodora_/status/2080999779182805486",
+      "tweet_id": "2080999779182805486",
+      "date": "2026-07-25T12:53:05+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2080998850828087297/img/UhKuZR12ZvEN_teg.jpg",
+        "https://t.co/m4j4tCse88",
+        "pic.x.com/m4j4tCse88",
+        "https://pbs.twimg.com/amplify_video_thumb/2080999072186712064/img/_8RhIlvqsDnlK4Q8.jpg",
+        "https://pbs.twimg.com/amplify_video_thumb/2080999318782439424/img/71z61KfZM4e6iGRA.jpg",
+        "https://pbs.twimg.com/amplify_video_thumb/2080999639793451008/img/HB3BzoHfD2ESL7jx.jpg"
+      ],
+      "text": "2026年7月25日(土)\n千葉県松戸市／高塚八幡神社\n「高塚新田自治会 盆踊り大会」\n盆踊りはゆったりと進行😌\n18:00～18:30\n(休憩)\n19:30～20:40\n進行役の方が明るい方でした🤗✨\n【曲目】\n炭坑節\n白浜音頭\nきよしのズンドコ節\nチャンチキおけさ\n東京音頭\nバハマ・ママ\n東京スカイツリー音頭(相原ひろ子) https://t.co/m4j4tCse88",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "96d23a5671ac145d",
+      "status": "needs_ocr",
+      "account": "@bon_odoroo",
+      "url": "https://x.com/bon_odoroo/status/2081016938415923425",
+      "tweet_id": "2081016938415923425",
+      "date": "2026-07-25T14:01:16+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HOFB1MJasAAbGR-.jpg",
+        "https://t.co/bvXTZMFMtE",
+        "pic.x.com/bvXTZMFMtE",
+        "https://pbs.twimg.com/media/HOFB1yTacAAbZgv.jpg",
+        "https://pbs.twimg.com/amplify_video_thumb/2081016908116357120/img/LNlnfSYZgf7w9JjJ.jpg",
+        "https://pbs.twimg.com/media/HOFB3sva8AA7p3H.jpg"
+      ],
+      "text": "太宰府天満宮の夏越おどりを訪ねました。夏の天神まつりの盆踊り。\nお手本の先生の踊りが綺麗で格好いい。振り付けも洒落てるし、さすが令和発祥の都・太宰府⛩️\n\n曲目は夏越でピラッパー、天神様のうた、お月見おどり、新宝島、Beat It\n\nいい曲ばかりで楽しく踊ったよ。みんな暑い中お疲れさま🎐 https://t.co/bvXTZMFMtE",
       "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
     }
   ]

@@ -1,21 +1,21 @@
 {
   "generated_by": "prepare_weekly_harvest_review.py",
-  "generated_at": "2026-07-22T08:47:16.319022+00:00",
+  "generated_at": "2026-07-25T14:57:24.363556+00:00",
   "source": "build_weekly_harvest_candidates.py",
-  "source_generated_at": "2026-07-22T08:47:07.856667+00:00",
+  "source_generated_at": "2026-07-25T14:57:17.823011+00:00",
   "days": 3,
-  "voice_count": 1084,
-  "candidate_count": 126,
+  "voice_count": 343,
+  "candidate_count": 67,
   "category_counts": {
-    "曲×会場共起": 7,
-    "曲候補": 113,
-    "用語候補": 6
+    "曲×会場共起": 5,
+    "曲候補": 57,
+    "用語候補": 5
   },
-  "non_song_review_count": 13,
-  "song_candidate_count": 113,
-  "song_direct_dry_run_count": 91,
+  "non_song_review_count": 10,
+  "song_candidate_count": 57,
+  "song_direct_dry_run_count": 44,
   "song_review_count": 2,
-  "song_rejected_noise_count": 20,
+  "song_rejected_noise_count": 11,
   "review_files": {
     "non_song_json": "data/weekly_harvest_review_candidates.json",
     "non_song_ui": "data/weekly_harvest_review_ui.html",
@@ -29,21 +29,19 @@
   "samples": {
     "non_song_review": [
       "おしりたんてい音頭 × 晴海ふ頭公園",
-      "ダンシングヒーロー × 晴海ふ頭公園",
-      "の出演や万博音頭 × 大正大学",
-      "やぐらを囲む大きな踊り × 築地本願寺",
-      "根津藍染通り音頭 × 赤坂氷川神社",
-      "真室川音頭 × 浄土寺",
-      "赤坂小唄 × 浄土寺",
+      "こいち祭はご当地新橋音頭 × 浄土寺",
+      "大東京音頭 × 北柏木公園",
+      "新橋音頭 × 桜田公園",
+      "東京音頭 × 北柏木公園",
       "練習会",
-      "踊り会",
       "ハシゴ",
-      "はしご",
+      "踊り会",
+      "踊り始め",
       "梯子"
     ],
     "song_review": [
-      "郡上おどり",
-      "徳島市阿波おどり"
+      "盆ジョビ",
+      "郡上おどり"
     ]
   }
 }
