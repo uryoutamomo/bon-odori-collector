@@ -1161,7 +1161,7 @@ function showTargetEvent(item) {
 
 function link(url, shortcut = "") {
   const shortcutHtml = shortcut ? `<kbd>${escapeHtml(shortcut)}</kbd>` : "";
-  return `<a href="${escapeAttr(url)}" target="_blank" rel="noreferrer">${escapeHtml(shortUrl(url))}${shortcutHtml}</a>`;
+  return `<a href="${escapeAttr(url)}" target="_blank" rel="noreferrer"><span class="url-text">${escapeHtml(shortUrl(url))}</span>${shortcutHtml}</a>`;
 }
 
 function shortUrl(url) {

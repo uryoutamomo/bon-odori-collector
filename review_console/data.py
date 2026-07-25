@@ -65,7 +65,7 @@ DECISION_LABELS = {
     "accept": "レビュー採用",
     "reject": "却下",
     "hold": "保留",
-    "needs_research": "要調査",
+    "needs_research": "保留（追加情報待ち）",
 }
 
 STATUS_LABELS = {
@@ -76,15 +76,15 @@ STATUS_LABELS = {
 
 APPLY_VALUE_LABELS = {
     "promote_historical_reference": "過去実績として採用",
-    "confirm_current_date": "2026年日程確認済みにする",
+    "confirm_current_date": "2026年日程を確定する（開催済みも含む）",
     "reject": "不採用",
     "reject_candidate": "候補を不採用",
     "reject_prediction": "予測を不採用",
     "hold": "保留",
-    "needs_research": "要調査",
-    "source_research_required": "根拠URLを追加調査",
-    "needs_date_research": "日付・曜日を再調査",
-    "needs_song_research": "曲候補を再調査",
+    "needs_research": "保留（追加情報待ち）",
+    "source_research_required": "保留（根拠URL待ち）",
+    "needs_date_research": "保留（日付・曜日情報待ち）",
+    "needs_song_research": "保留（曲候補情報待ち）",
     "keep_historical_reference": "過去実績として維持",
     "remove_historical_reference": "過去実績から外す",
     "accept_confirmed_source": "確認済み根拠として採用",
@@ -107,7 +107,7 @@ APPLY_VALUE_LABELS = {
     "promote": "情報源にする",
     "watch": "様子を見る",
     "confirm_non_x_source": "非X根拠で確認済み",
-    "needs_non_x_backcheck": "非X根拠を追加調査",
+    "needs_non_x_backcheck": "保留（非X根拠待ち）",
     "stage_registration_candidate": "登録候補へ送る",
     "add_song_evidence": "動画・曲証拠を追加候補へ送る",
     "stage_song_candidate": "曲候補stagingへ送る",
@@ -118,13 +118,13 @@ APPLY_VALUE_LABELS = {
 
 APPLY_VALUE_HELP = {
     "promote_historical_reference": "過去年の実績として扱い、2026年日程は未確認のまま残します。",
-    "confirm_current_date": "今年の直接証拠で2026年日程が確認できた場合だけ使います。",
+    "confirm_current_date": "今年の直接証拠で日程が確定できた場合に使います。開催日が既に過ぎていても、自動的に「終了済み」として扱われるのでこのまま選んでください。",
     "reject": "この候補を反映対象にしません。",
     "hold": "今は反映せず、文脈だけ残します。",
-    "needs_research": "公式確認や同一性確認など追加調査に回します。",
-    "source_research_required": "公開判断に使える根拠URLを追加で探します。",
-    "needs_date_research": "採用済み過去実績の日付と曜日を確認します。",
-    "needs_song_research": "採用済み過去実績の曲候補をYouTube/曲実績側で探します。",
+    "needs_research": "受信箱から一旦外します。追加調査を自動で行う仕組みは無いため、追加情報が集まった時点であらためて起票してください。",
+    "source_research_required": "受信箱から一旦外します。公開判断に使える根拠URLが見つかった時点であらためて起票してください。",
+    "needs_date_research": "受信箱から一旦外します。採用済み過去実績の日付・曜日が確認できた時点であらためて起票してください。",
+    "needs_song_research": "受信箱から一旦外します。採用済み過去実績の曲候補が見つかった時点であらためて起票してください。",
     "keep_historical_reference": "不足を把握したうえで過去実績表示を維持します。",
     "remove_historical_reference": "公開価値が低い過去実績として外す判断に回します。",
     "append_existing_event": "イベントを新規作成せず、YouTube動画URLと曲名を既存イベントの証拠として残します。",
@@ -519,12 +519,15 @@ CLOSED_WORDS = (
 ACTION_GROUP_LABELS = {
     "current_date": "日付確認待ち",
     "historical_date": "過去実績日付再調査",
-    "song_research": "曲候補待ち",
-    "source_url": "根拠URL不足",
+    "song_research": "曲・用語候補確認",
+    "source_url": "公式ソース採用確認",
     "venue": "会場確認待ち",
     "identity": "同一イベント確認",
-    "youtube": "YouTube候補確認",
+    "youtube": "YouTube曲追加確認",
     "social": "X/RSS確認",
+    "historical_quality": "過去実績・曲調査待ち",
+    "publication_gap": "公開データ差分確認",
+    "occurrence_creation": "新規開催回・移行キュー",
     "other": "その他",
 }
 
@@ -1874,7 +1877,7 @@ def option_help_for(source: ReviewSource, row: dict[str, Any], value: str) -> st
         if value == "confirm_non_x_source":
             return "公式/主催/自治体/会場/地域媒体など、X以外の確認URLが見つかった場合に使います。メモに確認URLと補足を書いてください。"
         if value == "needs_non_x_backcheck":
-            return "X由来の発見として価値はあるが、確認URLがまだ無い場合に追加調査へ回します。"
+            return "X由来の発見として価値はあるが、確認URLがまだ無い場合に使います。受信箱から一旦外し、確認URLが見つかった時点であらためて起票してください。"
         if value == "reject":
             return "別イベントではない、ノイズ、重複、または盆助に載せる粒度ではない場合に使います。"
         if value == "hold":
@@ -2126,6 +2129,15 @@ def action_group_for(
         elif kind == "youtube_evidence":
             group_id = "youtube"
             reason = "統合受信箱に入ったYouTube動画・曲証拠候補です。"
+        elif kind == "historical_quality":
+            group_id = "historical_quality"
+            reason = "統合受信箱に入った採用済み過去実績の曲調査待ちです。"
+        elif kind == "publication_gap":
+            group_id = "publication_gap"
+            reason = "統合受信箱に入った採用済みデータと公開JSONの差分確認です。"
+        elif kind == "occurrence_creation":
+            group_id = "occurrence_creation"
+            reason = "統合受信箱に入った新規開催回作成・移行キューです。"
         else:
             group_id = "other"
             reason = "統合受信箱に入ったレビュー対象です。"
@@ -2175,6 +2187,14 @@ def urls_for(source: ReviewSource, row: dict[str, Any]) -> list[str]:
     return urls[:12]
 
 
+SONG_FIELD_LABELS = {
+    "payload.title_song_candidates": "曲名候補（動画タイトル由来）",
+    "payload.canonical_song_name": "曲名候補",
+    "payload.songs": "曲名候補",
+    "payload.term": "用語候補",
+}
+
+
 def scalar_details(row: dict[str, Any], limit: int = 18) -> list[dict[str, str]]:
     preferred = (
         "event_name",
@@ -2182,6 +2202,10 @@ def scalar_details(row: dict[str, Any], limit: int = 18) -> list[dict[str, str]]
         "event_year",
         "date_start",
         "date_end",
+        "payload.title_song_candidates",
+        "payload.canonical_song_name",
+        "payload.songs",
+        "payload.term",
         "status",
         "priority_label",
         "priority_score",
@@ -2201,7 +2225,7 @@ def scalar_details(row: dict[str, Any], limit: int = 18) -> list[dict[str, str]]
     for key in preferred:
         text = as_text(get_path(row, key))
         if text:
-            details.append({"label": key, "value": text})
+            details.append({"label": SONG_FIELD_LABELS.get(key, key), "value": text})
             seen.add(key)
     for key, value in row.items():
         if len(details) >= limit:

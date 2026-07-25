@@ -1282,6 +1282,9 @@ kbd {
   color: var(--blue);
   background: var(--blue-weak);
   text-decoration: none;
+}
+
+.urls a .url-text {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -1289,9 +1292,13 @@ kbd {
 
 .urls a kbd {
   flex: 0 0 auto;
-  min-width: 20px;
-  height: 20px;
-  font-size: 11px;
+  min-width: 22px;
+  height: 22px;
+  font-size: 12px;
+  font-weight: 700;
+  background: var(--blue);
+  border-color: var(--blue);
+  color: #fff;
 }
 
 .details {
