@@ -95,9 +95,9 @@
       "id": "reviewed-update-72801cbff56b-20260724",
       "kind": "same_key_update",
       "event_key": "神楽坂夏まつり 盆踊り in 神楽坂||りそな銀行神楽坂支店前",
-      "site_sha256": "fb4506ac948ca7e5c5415dfaa3b926d86ffa363d434e204004306dbbeae1371b",
+      "site_sha256": "af2cd81cef0e7e4db33409660ac5b5f152d0bb3af1f4a890fa6e61d1740058a2",
       "collector_sha256": "688dd857b5edaf3bb99c7904ad5809324a1178a877aba3b1aa225195201d93f6",
-      "reason": "YouTubeセットリスト由来の曲目追加（2026-07-26 こと検証・内田さんGO）"
+      "reason": "YouTubeセットリスト由来の曲目追加（新宿音頭・2026-07-26 こと検証・内田さんGO）"
     },
     {
       "id": "reviewed-update-3a49318b4a1c",
@@ -211,9 +211,9 @@
       "id": "reviewed-update-20260724-03",
       "kind": "same_key_update",
       "event_key": "第51回 浄土寺盆踊り大会||浄土寺",
-      "site_sha256": "fe049df7d4992a9d79ce7c7e8a575c71014032e32b7544d9bca0d4910ccd7af1",
+      "site_sha256": "5a71762bba8b6750bdaac1e0c6e896acb1a66ab81c4ab4ff20220b134e547743",
       "collector_sha256": "8900203ab8cededcfda4a5040ef6929c1bbe83d9571fb150c61180e9b5de5b58",
-      "reason": "開催日経過による自然な状態遷移: upcoming_confirmed→ended_2026（2026-07-26 こと確認） ＋ YouTubeセットリスト由来の曲目追加（2026-07-26 こと検証・内田さんGO）"
+      "reason": "YouTubeセットリスト由来の曲目追加（会津磐梯山・大東京音頭・赤坂小唄・2026-07-26 こと検証・内田さんGO）"
     },
     {
       "id": "reviewed-update-20260724-04",
