@@ -13,6 +13,12 @@ on:
         required: false
         type: string
         default: ""
+  # 2026-07-26追加: 手動実行専用だったため 2026-06-09 を最後に47日間動かず、
+  # 発見した候補が誰もレビューされないまま滞留していた。毎週火曜 6:30 JST に
+  # 候補レビューだけ自動実行する（Notionメンバーリストへの昇格同期は、内田さんの
+  # 承認済みだけを対象にする運用なので自動化しない）。
+  schedule:
+    - cron: '30 21 * * 1'
 
 concurrency:
   group: bon-odori-master-rdb
@@ -34,6 +40,7 @@ jobs:
         python-version: '3.x'
 
     - name: Validate manual X workflow confirmation
+      if: ${{ github.event_name != 'schedule' }}
       env:
         SYNC_ONLY: ${{ inputs.sync_only }}
         CONFIRMATION: ${{ inputs.confirm }}

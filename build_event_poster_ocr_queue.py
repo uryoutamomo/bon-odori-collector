@@ -3,9 +3,13 @@
 
 import hashlib
 import json
+import os
 import re
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+
+from collection_support.poster_gap_matching import annotate, load_date_gap_events
+from collection_support.poster_ocr_ledger import processed_status
 
 
 DATA = Path("data")
@@ -112,10 +116,29 @@ def is_recent_enough(row, now=None, max_age_days=None):
     return parsed >= now - timedelta(days=max_age_days)
 
 
-def build(rows, informants=None, max_age_days=None, now=None):
+def build(
+    rows,
+    informants=None,
+    max_age_days=None,
+    now=None,
+    processed=None,
+    date_gap_events=None,
+):
+    """Build the queue of unread poster images.
+
+    `processed` は {queue_id: status} の読み取り済み台帳
+    (`collection_support.poster_ocr_ledger`)。既に読んだ投稿はキューから外す。
+    渡さない場合は台帳を参照しない（テスト・単体利用のため）。
+
+    `date_gap_events` は開催日が未確定のイベント一覧
+    (`collection_support.poster_gap_matching.load_date_gap_events`)。触れている
+    投稿を先頭に並べ替える。
+    """
     informants = informants if informants is not None else important_informants()
+    processed = processed or {}
     queued = []
     seen = set()
+    skipped_processed = 0
     for row in rows:
         if not isinstance(row, dict) or not should_queue(row, informants):
             continue
@@ -125,6 +148,9 @@ def build(rows, informants=None, max_age_days=None, now=None):
         if qid in seen:
             continue
         seen.add(qid)
+        if qid in processed:
+            skipped_processed += 1
+            continue
         handle = norm_handle(row.get("account") or row.get("author"))
         informant = informants.get(handle, {})
         queued.append({
@@ -147,8 +173,19 @@ def build(rows, informants=None, max_age_days=None, now=None):
                 "高確度の開催候補として昇格する"
             ),
         })
+    if date_gap_events:
+        annotate(queued, date_gap_events)
     priority_order = {"critical": 0, "high": 1, "medium": 2}
-    queued.sort(key=lambda row: (priority_order.get(row["priority"], 9), row["date"], row["url"]))
+    # 日付未確定イベントに触れている投稿を最優先で読む。公開サイトで地図に出せて
+    # いないのはこの「開催日が分からない」イベントなので、読めば直接埋まる。
+    queued.sort(
+        key=lambda row: (
+            0 if row.get("matched_date_gap_events") else 1,
+            priority_order.get(row["priority"], 9),
+            row["date"],
+            row["url"],
+        )
+    )
     return {
         "generated_by": "build_event_poster_ocr_queue.py",
         "count": len(queued),
@@ -156,17 +193,43 @@ def build(rows, informants=None, max_age_days=None, now=None):
             "critical": sum(1 for row in queued if row["priority"] == "critical"),
             "high": sum(1 for row in queued if row["priority"] == "high"),
             "trusted_informant": sum(1 for row in queued if row["trusted_informant"]),
+            "already_read": skipped_processed,
+            "date_gap_matched": sum(
+                1 for row in queued if row.get("matched_date_gap_events")
+            ),
         },
         "items": queued,
     }
 
 
+def load_date_gaps(event_year):
+    """Read date-unknown events from the master RDB. Missing DB is not an error."""
+    try:
+        from master_rdb.master_db import connect_existing
+    except ImportError:
+        return []
+    try:
+        with connect_existing() as conn:
+            return load_date_gap_events(conn, event_year)
+    except Exception as exc:  # RDB未取得・スキーマ差異でもキュー生成自体は止めない
+        print(f"[poster-ocr] 日付未確定イベントの読込をスキップ: {exc}")
+        return []
+
+
 def main():
-    output = build(load_json(VOICES, []), max_age_days=90)
+    event_year = int(os.environ.get("TARGET_YEAR") or datetime.now(timezone.utc).year)
+    output = build(
+        load_json(VOICES, []),
+        max_age_days=90,
+        processed=processed_status(),
+        date_gap_events=load_date_gaps(event_year),
+    )
     OUT.write_text(json.dumps(output, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(
         "イベントポスター画像OCRキュー生成: "
-        f"{output['count']}件 critical={output['summary']['critical']} -> {OUT}"
+        f"未読 {output['count']}件 critical={output['summary']['critical']} "
+        f"日付未確定イベントに一致 {output['summary']['date_gap_matched']}件 "
+        f"読取済み {output['summary']['already_read']}件 -> {OUT}"
     )
 
 

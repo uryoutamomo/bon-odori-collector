@@ -7,6 +7,10 @@ on:
         description: 'X API follow graph exploration. Type DISCOVER X SOCIAL GRAPH'
         required: true
         type: string
+  # 2026-07-26追加: 手動実行専用だったため 2026-06-06 を最後に50日間動かず、
+  # 収集名簿が固定されていた。毎週火曜 6:00 JST に自動探索する。
+  schedule:
+    - cron: '0 21 * * 1'
 
 concurrency:
   group: bon-odori-master-rdb
@@ -28,6 +32,7 @@ jobs:
         python-version: '3.x'
 
     - name: Validate manual X graph confirmation
+      if: ${{ github.event_name != 'schedule' }}
       env:
         CONFIRMATION: ${{ inputs.confirm }}
       run: |

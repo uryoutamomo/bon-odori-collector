@@ -145,6 +145,9 @@ flowchart TD
 - 2026-06-26: Build / export / report scripts を分類。`export_*`, `audit_*`, review queue builders, local RDB snapshotsは生成系として維持し、Master RDB派生テーブルを直接再生成する2本は `APPLY MASTER RDB ONE-OFF` 必須にした。
 - 2026-06-26: Notion work-log / task-page maintenance scripts を分類。append noteは手動ログとして維持し、todo完了・既存block更新・ページ作成/リンク編集は `APPLY NOTION WORKLOG MAINTENANCE` 必須にした。
 - 2026-06-26: Local review console を追加。12種類のレビュー/キューJSONを横断し、未レビュー件数、個別判断、決定保存、エクスポート、ステージ適用までをローカルで扱う。本番データへの直接反映はしない。
+- 2026-07-26: X candidate / social graph workflows を週次スケジュールへ移行（2026-06-26 の手動維持を更新）。手動維持のままでは誰も起動せず、discover は 06-06、review は 06-09 を最後に停止して収集名簿が69アカウントで固定されていたため。実行元=GitHub Actions、起動条件=cron（火曜 6:00/6:30 JST）+ workflow_dispatch、書き込み先=repo のレビューJSONのみ、外部cost=X API（`collection_support/x_budget_guard.py` で日次$3.0/月次$25.0の共有帳簿に従い停止・記録）、推奨区分=自動継続。Notionメンバーリストへの昇格同期は `sync_only` 指定の手動実行のみで、スケジュールでは動かない。
+- 2026-07-26: X情報源の収集名簿をローカル正本化。`data/x_collection_roster.json` + スコア台帳の trusted 自動編入（`auto_trusted_roster`、上限250件）。Notion「Xメンバーリスト」は任意フォールバックへ降格。実行元=collect.yml 内、書き込み先=repo、推奨区分=自動継続。
+- 2026-07-26: ポスター画像OCRキューに読み取り済み台帳（`data/poster_ocr_processed.json`）と、開催日未確定イベントとの突き合わせを追加。画像の読み取り自体はこと（Claude Code）の手動作業で、master RDB への反映は掲示物レポート経路（内田さん承認必須）を通す。推奨区分=手動維持。
 
 ## Immediate Rule
 

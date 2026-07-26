@@ -79,9 +79,17 @@ GitHub ActionsのAWS認証は長期アクセスキーではなくOIDCロール�
 
 ### Xメンバーリスト
 
-- `data/x_account_scores.json` はアカウント価値のローカル/Actions成果物として扱う。
-- Notion「X メンバーリスト」への追加・同期は、内田さんが保存済みレビュー結果に `user_approved: true` または `registration_decision: approved/登録/追加` を付けた候補だけに限定する。
+- 収集対象アカウントの正本はローカル。`data/x_collection_roster.json`（Notionからの移行分）＋ `data/x_important_informants.json`（手動の重要情報提供者）＋ `data/x_official_source_accounts.json`（公式）＋ スコア台帳の `trusted` 自動編入。Notion「Xメンバーリスト」は任意フォールバックで、読めなくても収集は成立する。
+- `data/x_account_scores.json` はアカウント価値のローカル/Actions成果物として扱う。自動編入の条件は `x_queries.json` の `auto_trusted_roster`。
+- Notion「X メンバーリスト」への追加・同期は、内田さんが保存済みレビュー結果に `user_approved: true` または `registration_decision: approved/登録/追加` を付けた候補だけに限定する。`apply_x_roster_decisions.py` はNotionへ書き込まない。
 - 保存済み結果だけ再同期する場合は `.github/workflows/review_x_candidate_posts.yml` の `sync_only=true` を使う（X API課金なし）。
+- 誰を読んでいるかはレビューコンソールの「X情報源アカウント一覧」で確認・変更する。運用の詳細は `docs/x-collection-operations.md`。
+
+### ポスター画像の読み取り
+
+- `build_event_poster_ocr_queue.py` が作るキューは、開催日が未確定のイベントに触れている投稿を先頭に並べる。
+- 画像の取得は `fetch_poster_images.py`、読み取りはこと（Claude Code）が Read で行う。読んだ内容の master RDB 反映は掲示物レポート経路（`docs/official-notice-field-report-operations.md`）を使う。
+- 読み取り済みの記録は `data/poster_ocr_processed.json`。キューは毎日作り直されるため、この台帳が「読んだかどうか」の正本。
 
 ## この仕組みの思想
 
