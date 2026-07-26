@@ -80,6 +80,39 @@ class SharedSetlistLabelTest(unittest.TestCase):
         self.assertEqual(apply_setlists.strip_shared_label("東京音頭", ""), "東京音頭")
 
 
+class NonSongShapeCheckTest(unittest.TestCase):
+    # occurrence_songs は公開層なので、ここを抜けたものは公開サイトに曲として出る。
+    def test_rejects_titles_that_are_not_song_names(self):
+        for title in (
+            "花園直道 with JPN dancers",  # 出演者クレジット
+            "半浦青年団",  # 団体名
+            "3回分マルチ編集",  # 動画側のメモ
+            "DJタイム",  # 進行の見出し
+            "DJ「俚謡山脈」",
+            "大森日雅",  # アニソン盆踊りの出演者（声優）
+            "The Police",  # バンド名
+            "Traditional Japanese",  # 英語のジャンル表記
+        ):
+            with self.subTest(title=title):
+                self.assertFalse(apply_setlists.song_title_passes_shape_check(title))
+
+    def test_keeps_real_song_titles(self):
+        for title in (
+            "東京音頭",
+            "邪神ちゃん音頭",
+            "マツケンサンバ",
+            "ダンシングヒーロー",
+            "会津磐梯山",
+            "Let's ONDO Again",
+            # 曲名の可能性を否定できないので弾かないと決めたもの
+            "嵐",
+            "カワサキ",
+            "Awaodori",
+        ):
+            with self.subTest(title=title):
+                self.assertTrue(apply_setlists.song_title_passes_shape_check(title))
+
+
 class ResolveSongTest(unittest.TestCase):
     def test_label_stripped_title_matches_the_curated_master(self):
         with closing(

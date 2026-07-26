@@ -236,8 +236,48 @@ def clean_song_candidate_title(raw_title, venue=""):
     return re.sub(r"\s+", " ", title).strip()
 
 
+# occurrence_songs は公開層で、export_public_events.py の load_rdb_occurrence_songs() が
+# songs.status で絞らず全行を events_public.json へ流す。つまり曲名でない行がここに入ると
+# そのまま「その会場で踊られた曲」として公開サイトに出る。以下は曲名の形をしていないと
+# 機械的に言い切れる種類だけを弾く（2026-07-26 の dry-run で実際に混入していたもの）。
+NON_SONG_SHAPE_RE = re.compile(
+    "|".join(
+        (
+            # 出演者クレジット。"花園直道 with JPN dancers"
+            r"\swith\s",
+            r"\bfeat\.?\s",
+            # 団体名。"半浦青年団(石川県七尾市能登島半浦町)"
+            r"(?:青年団|保存会|同好会|愛好会|振興会|町内会|自治会|婦人会)$",
+            # 動画側のメモ。"3回分マルチ編集"
+            r"(?:編集|ダイジェスト|ノーカット|マルチアングル)",
+            # 進行の見出し。既に本番へ入っている "DJタイム" "DJ「俚謡山脈」" と同種
+            r"^DJ[「\s]",
+            r"DJタイム",
+        )
+    ),
+    re.IGNORECASE,
+)
+
+# 形では判別できないが、2026-07-26 に実データを見て曲名でないと確認したもの。
+# 声優名は神田明神アニソン盆踊りの出演者、The Police はバンド名、
+# Traditional Japanese は英語のジャンル表記。曲名と同じ形をしているので
+# 正規表現では区別できず、見た結果を明示的に持つしかない。
+# 「嵐」「Awaodori」「カワサキ」は曲名の可能性を否定できないので入れていない。
+REVIEWED_NON_SONG_TITLES = {
+    "大森日雅",
+    "小坂井祐莉絵",
+    "小見川千明",
+    "The Police",
+    "Traditional Japanese",
+}
+
+
 def song_title_passes_shape_check(title):
     if not title or len(title) > SONG_TITLE_MAX_LEN:
+        return False
+    if title in REVIEWED_NON_SONG_TITLES:
+        return False
+    if NON_SONG_SHAPE_RE.search(title):
         return False
     if BRACKET_ONLY_RE.match(title):
         return False
