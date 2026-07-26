@@ -66,8 +66,9 @@
       "id": "reviewed-update-465013db6552",
       "kind": "same_key_update",
       "event_key": "新宿二丁目太宗寺盆踊り大会||太宗寺",
-      "site_sha256": "dbc814851ae67d9e163aab19afc8589d60395c0b53aae0df8e26277c3dd898e9",
-      "collector_sha256": "f444da2ff5ee4fe84dec3c8c8e042efb6868ca605d47aa0bf46ad3da7dc49c23"
+      "site_sha256": "f444da2ff5ee4fe84dec3c8c8e042efb6868ca605d47aa0bf46ad3da7dc49c23",
+      "collector_sha256": "077fc80eae1044ebb70112692eb34d6f0c3496755f5b818ae1d5511746c4b7f0",
+      "reason": "YouTubeセットリスト由来の曲目追加（2026-07-26 こと検証・内田さんGO）"
     },
     {
       "id": "reviewed-update-ad56e014fcd9",
@@ -95,7 +96,8 @@
       "kind": "same_key_update",
       "event_key": "神楽坂夏まつり 盆踊り in 神楽坂||りそな銀行神楽坂支店前",
       "site_sha256": "fb4506ac948ca7e5c5415dfaa3b926d86ffa363d434e204004306dbbeae1371b",
-      "collector_sha256": "af2cd81cef0e7e4db33409660ac5b5f152d0bb3af1f4a890fa6e61d1740058a2"
+      "collector_sha256": "688dd857b5edaf3bb99c7904ad5809324a1178a877aba3b1aa225195201d93f6",
+      "reason": "YouTubeセットリスト由来の曲目追加（2026-07-26 こと検証・内田さんGO）"
     },
     {
       "id": "reviewed-update-3a49318b4a1c",
@@ -210,8 +212,8 @@
       "kind": "same_key_update",
       "event_key": "第51回 浄土寺盆踊り大会||浄土寺",
       "site_sha256": "fe049df7d4992a9d79ce7c7e8a575c71014032e32b7544d9bca0d4910ccd7af1",
-      "collector_sha256": "5a71762bba8b6750bdaac1e0c6e896acb1a66ab81c4ab4ff20220b134e547743",
-      "reason": "開催日(2026-07-23〜24)経過による自然な状態遷移: upcoming_confirmed→ended_2026"
+      "collector_sha256": "8900203ab8cededcfda4a5040ef6929c1bbe83d9571fb150c61180e9b5de5b58",
+      "reason": "開催日経過による自然な状態遷移: upcoming_confirmed→ended_2026（2026-07-26 こと確認） ＋ YouTubeセットリスト由来の曲目追加（2026-07-26 こと検証・内田さんGO）"
     },
     {
       "id": "reviewed-update-20260724-04",
@@ -244,6 +246,22 @@
       "site_sha256": "5294799fb2f948e64fdd51aa5d6194bd42587919b2d25c6ac343e3d5405630c2",
       "collector_sha256": "ec70a266f5a74dddeb04315464111e7d39fce9cb0a278f3e5abf9de2c4f9ad19",
       "reason": "推測日付(predicted_date)が経過し期限切れダウングレード。実績日は不変"
+    },
+    {
+      "id": "reviewed-update-20260726-01",
+      "kind": "same_key_update",
+      "event_key": "増上寺 地蔵尊盆踊り大会||増上寺（大殿前広場）",
+      "site_sha256": "74b6ee1a35222d7fb0867228ec7f7197f320764547c852f10e6493d6a7e903c5",
+      "collector_sha256": "4a1e9b574c9376a39dbfd1ad3e017c685aa69cba7bccf5468fe5f6fe63e2c600",
+      "reason": "開催日経過による自然な状態遷移: upcoming_confirmed→ended_2026（2026-07-26 こと確認）"
+    },
+    {
+      "id": "reviewed-update-20260726-02",
+      "kind": "same_key_update",
+      "event_key": "天王洲夏夜祭 with OKINAWA||アイルしながわ",
+      "site_sha256": "3bc6e39e735ab55035a37c0b67b71757afad44e6cc6758bfa9829f1a6a7d5249",
+      "collector_sha256": "9b4122f1272b2496ee24b08265b2b337bddc7bf966c0195ddcfc9b7c7d900fb7",
+      "reason": "開催日経過による自然な状態遷移: upcoming_confirmed→ended_2026（2026-07-26 こと確認）"
     }
   ]
 }
