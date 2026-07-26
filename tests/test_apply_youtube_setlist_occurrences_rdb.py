@@ -92,6 +92,8 @@ class NonSongShapeCheckTest(unittest.TestCase):
             "大森日雅",  # アニソン盆踊りの出演者（声優）
             "The Police",  # バンド名
             "Traditional Japanese",  # 英語のジャンル表記
+            "Awaodori",  # 2026-07-26 内田さん判定
+            "カワサキ",  # 同上
         ):
             with self.subTest(title=title):
                 self.assertFalse(apply_setlists.song_title_passes_shape_check(title))
@@ -104,10 +106,7 @@ class NonSongShapeCheckTest(unittest.TestCase):
             "ダンシングヒーロー",
             "会津磐梯山",
             "Let's ONDO Again",
-            # 曲名の可能性を否定できないので弾かないと決めたもの
-            "嵐",
-            "カワサキ",
-            "Awaodori",
+            "嵐",  # 2026-07-26 内田さん判定「嵐だけ曲」
         ):
             with self.subTest(title=title):
                 self.assertTrue(apply_setlists.song_title_passes_shape_check(title))

@@ -281,6 +281,13 @@
         "basis_label": "2025年ヒント"
       },
       {
+        "name": "ゆかた音頭",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
         "name": "オロナミンC 元気ハツラツ音頭",
         "confidence": "hint",
         "probability": 80,
@@ -337,6 +344,13 @@
         "basis_label": "2025年ヒント"
       },
       {
+        "name": "大東京音頭",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
         "name": "東京音頭",
         "confidence": "hint",
         "probability": 80,
@@ -345,6 +359,27 @@
       },
       {
         "name": "炭坑節",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "神田明神音頭",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "花笠音頭",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "邪神ちゃん音頭",
         "confidence": "hint",
         "probability": 80,
         "basis": "past_evidence",
@@ -3141,6 +3176,27 @@
     ],
     "songs": [
       {
+        "name": "会津磐梯山",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "大東京音頭",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "赤坂小唄",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
         "name": "盆ギリ恋歌",
         "confidence": "hint",
         "probability": 70,
@@ -5478,6 +5534,13 @@
         "basis_label": "実測"
       },
       {
+        "name": "新宿音頭",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
         "name": "真赤な太陽",
         "confidence": "hint",
         "probability": 80,
@@ -6069,7 +6132,38 @@
         "count": 1
       }
     ],
-    "songs": [],
+    "songs": [
+      {
+        "name": "ultra soul",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ジンギスカン",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ズンパ音頭",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "ダンシングヒーロー",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "マツケンサンバ",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      }
+    ],
     "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
     "public_status": "ended_2026",
@@ -6832,6 +6926,12 @@
         "name": "花笠音頭",
         "confidence": "confirmed",
         "probability": 95,
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "新宿音頭",
+        "confidence": "hint",
         "basis": "current_observed",
         "basis_label": "実測"
       }
@@ -8680,6 +8780,55 @@
       }
     ],
     "songs": [
+      {
+        "name": "2億4千万の瞳",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "Hold Me Now",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "Let's Grove",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "The Power of Love",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "タッチ",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "嵐",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
+      {
+        "name": "青い珊瑚礁",
+        "confidence": "hint",
+        "probability": 80,
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
+      },
       {
         "name": "One Love",
         "confidence": "hint",
@@ -20400,6 +20549,12 @@
       },
       {
         "name": "とっとこハム太郎",
+        "confidence": "hint",
+        "basis": "current_observed",
+        "basis_label": "実測"
+      },
+      {
+        "name": "わたしの一番かわいいところ",
         "confidence": "hint",
         "basis": "current_observed",
         "basis_label": "実測"
