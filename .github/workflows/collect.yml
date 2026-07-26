@@ -172,6 +172,7 @@ jobs:
           echo "[x-news-digest] no Oto review file; skip rare_signal promotion"
         fi
         python build_event_poster_ocr_queue.py
+        python build_x_account_console.py
         python build_song_ocr_queue.py
         if python master_rdb_freeze_policy.py is-frozen legacy_song_occurrence_generation; then
           echo "[master-rdb] legacy song occurrence generation frozen: skip calibrate_song_predictions.py"
@@ -205,6 +206,9 @@ jobs:
         [ -f data/weekly_harvest_summary.md ] && git add data/weekly_harvest_summary.md
         [ -f data/weekly_song_triage_result.json ] && git add data/weekly_song_triage_result.json
         [ -f data/event_poster_ocr_queue.json ] && git add data/event_poster_ocr_queue.json
+        [ -f data/poster_ocr_processed.json ] && git add data/poster_ocr_processed.json
+        [ -f data/x_account_console.json ] && git add data/x_account_console.json
+        [ -f data/x_collection_roster.json ] && git add data/x_collection_roster.json
         [ -f data/glossary_runtime.json ] && git add data/glossary_runtime.json
         [ -f data/public/events_public.json ] && git add data/public/events_public.json
         [ -f data/public_event_source_map.json ] && git add data/public_event_source_map.json

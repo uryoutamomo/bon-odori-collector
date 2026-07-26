@@ -1,0 +1,409 @@
+{
+  "_comment": "X収集で直接タイムラインを読むアカウント名簿のローカル正本。Notion「Xメンバーリスト」からの移行元データ。manual_status: 優先 / 通常 / 休止。",
+  "updated_at": "2026-07-26T13:43:39.688303+00:00",
+  "count": 67,
+  "accounts": [
+    {
+      "handle": "@2tsuo_g",
+      "manual_status": "",
+      "notion_page_id": "36c8be04-e762-8144-acd4-ca09b369cb11",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@5khfya5pjksggov",
+      "manual_status": "通常",
+      "notion_page_id": "3778be04-e762-810a-94f0-f39392de2042",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@abydos_i_nonomi",
+      "manual_status": "優先",
+      "notion_page_id": "3788be04-e762-8150-9c74-fe59823cdbb4",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@adfshunsuke2112",
+      "manual_status": "",
+      "notion_page_id": "36c8be04-e762-8134-a558-e34faf2362e3",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@agehabijo",
+      "manual_status": "",
+      "notion_page_id": "36c8be04-e762-8141-a8f2-f2fad0b8d085",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@asadalechan",
+      "manual_status": "",
+      "notion_page_id": "36c8be04-e762-816d-a91a-d72cb24aae9a",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@bababajintou",
+      "manual_status": "通常",
+      "notion_page_id": "3778be04-e762-81a6-99ef-f12ccc1dd7e9",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@blue_sky_blue_j",
+      "manual_status": "",
+      "notion_page_id": "36c8be04-e762-81ec-b7bf-e79a25d5cd95",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@bon__juu",
+      "manual_status": "通常",
+      "notion_page_id": "3778be04-e762-8136-b4a0-e4db2bed20b0",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@bon_odorer",
+      "manual_status": "",
+      "notion_page_id": "36c8be04-e762-81d4-98fa-f6cad9a2b771",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@bon_odoriko",
+      "manual_status": "",
+      "notion_page_id": "36c8be04-e762-815c-909c-e0c23de0cee6",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@bon_odoroo",
+      "manual_status": "",
+      "notion_page_id": "36c8be04-e762-814c-b399-f2fc1142a7e9",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@bondbont",
+      "manual_status": "",
+      "notion_page_id": "36c8be04-e762-81be-b094-c85f0bdfa0d5",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@bonodorijapan",
+      "manual_status": "",
+      "notion_page_id": "36c8be04-e762-818b-94b2-f95ac3926bb8",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@bonusagi123",
+      "manual_status": "通常",
+      "notion_page_id": "3778be04-e762-8150-9990-c31bd408c689",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@bremen_ohshima",
+      "manual_status": "通常",
+      "notion_page_id": "3788be04-e762-816a-8d3c-e06706e8130e",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@chiaki_h96",
+      "manual_status": "",
+      "notion_page_id": "36c8be04-e762-818f-9804-f31e7d53cc59",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@dakafo10",
+      "manual_status": "優先",
+      "notion_page_id": "3788be04-e762-8190-8ecf-fba0ab15cd48",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@event_finderjp",
+      "manual_status": "優先",
+      "notion_page_id": "3788be04-e762-81e0-8164-d5cec6a319c8",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@fried_wakame",
+      "manual_status": "休止",
+      "notion_page_id": "36c8be04-e762-81e3-aa26-ce49e3008e1c",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@gokuraku_15",
+      "manual_status": "通常",
+      "notion_page_id": "37a8be04-e762-8158-9342-c7b859ea09b7",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@harebon_odori",
+      "manual_status": "",
+      "notion_page_id": "36c8be04-e762-812a-98c0-c5fed870b671",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@hideshanbonbon",
+      "manual_status": "通常",
+      "notion_page_id": "3778be04-e762-8179-9e2d-e5143d183430",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@hisbow2",
+      "manual_status": "",
+      "notion_page_id": "36c8be04-e762-81d5-aa40-ef3e45a84c6b",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@iid_psv",
+      "manual_status": "",
+      "notion_page_id": "36c8be04-e762-81a5-aa6b-fde7bd06ca5c",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@iwzpxdcccp30jb4",
+      "manual_status": "",
+      "notion_page_id": "36c8be04-e762-8135-8561-d321762fc5e4",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@jim6900",
+      "manual_status": "",
+      "notion_page_id": "36c8be04-e762-81dd-a4de-f8f21010df39",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@kajix_japan",
+      "manual_status": "",
+      "notion_page_id": "36c8be04-e762-81b4-91bd-d7a53577514a",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@karinchanchanko",
+      "manual_status": "",
+      "notion_page_id": "36c8be04-e762-8109-a180-c48d5d84a91b",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@kasui21",
+      "manual_status": "通常",
+      "notion_page_id": "37a8be04-e762-8161-8a16-c2c57665ab14",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@kasumi_1030_",
+      "manual_status": "休止",
+      "notion_page_id": "3778be04-e762-818a-a72b-fd8be2a25047",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@kaz0045",
+      "manual_status": "通常",
+      "notion_page_id": "37a8be04-e762-81d7-ab94-dcbbd733531b",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@komaikai",
+      "manual_status": "",
+      "notion_page_id": "36c8be04-e762-8176-a08b-d22be2c98ab5",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@kuzunavi",
+      "manual_status": "通常",
+      "notion_page_id": "3778be04-e762-81a4-bd75-e0842df6bb86",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@kyeong27",
+      "manual_status": "通常",
+      "notion_page_id": "3778be04-e762-81ea-aaba-f42430a685fd",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@m125m8qgyhwuehs",
+      "manual_status": "通常",
+      "notion_page_id": "3778be04-e762-816c-920f-cd71d3029d5b",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@mariya_ukonya",
+      "manual_status": "",
+      "notion_page_id": "36c8be04-e762-8104-96e1-fc3b7245515b",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@matsurinokiseki",
+      "manual_status": "",
+      "notion_page_id": "36c8be04-e762-81a3-88b0-d78bbf102e1a",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@middonaitogaru",
+      "manual_status": "優先",
+      "notion_page_id": "3788be04-e762-8116-b2b0-da88c927e3b4",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@mimi33yuyu26na",
+      "manual_status": "",
+      "notion_page_id": "36c8be04-e762-811d-92d7-fb3c791043cc",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@mrapple_bycandy",
+      "manual_status": "休止",
+      "notion_page_id": "36c8be04-e762-8107-bee5-eeb02d57087a",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@mu4324",
+      "manual_status": "",
+      "notion_page_id": "36c8be04-e762-8102-a24f-f947b5f64cb0",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@nakano_bonodori",
+      "manual_status": "休止",
+      "notion_page_id": "36c8be04-e762-8176-8c58-f97a3985d84f",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@natsutr_bon",
+      "manual_status": "優先",
+      "notion_page_id": "3788be04-e762-81ef-8180-d47f11e4be7c",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@niinobon_uta",
+      "manual_status": "優先",
+      "notion_page_id": "3788be04-e762-81bf-b582-c5b0038a42f9",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@nyoritael",
+      "manual_status": "",
+      "notion_page_id": "36c8be04-e762-81ff-af0e-c13ebf9fb674",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@ocha_bon",
+      "manual_status": "通常",
+      "notion_page_id": "3778be04-e762-81d5-92cc-e0c6f53d29bd",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@odori2024minato",
+      "manual_status": "優先",
+      "notion_page_id": "3788be04-e762-815a-b622-eec41fdbc8f5",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@okeeboho",
+      "manual_status": "通常",
+      "notion_page_id": "3778be04-e762-8198-8cd6-df37219f3666",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@p_peanuts",
+      "manual_status": "通常",
+      "notion_page_id": "3778be04-e762-8112-a5ce-fe049856a134",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@peromaru20",
+      "manual_status": "通常",
+      "notion_page_id": "37a8be04-e762-8138-a38a-e3433e60d1a1",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@pink_daiamond_",
+      "manual_status": "",
+      "notion_page_id": "36c8be04-e762-8138-8dad-ec3862edd852",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@pw9skrdcfyjfxfv",
+      "manual_status": "通常",
+      "notion_page_id": "3778be04-e762-8171-86fb-c84194127565",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@qtjittan",
+      "manual_status": "通常",
+      "notion_page_id": "37a8be04-e762-81be-910e-ca0994594076",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@rollingasahi",
+      "manual_status": "優先",
+      "notion_page_id": "3788be04-e762-813e-8ca3-e2868521fe6d",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@sasakichi_akiba",
+      "manual_status": "優先",
+      "notion_page_id": "3788be04-e762-8189-b815-ecdb3657714b",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@shakuo_fujikawa",
+      "manual_status": "",
+      "notion_page_id": "36c8be04-e762-81d2-a207-c0ccf375dbdd",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@siroian333",
+      "manual_status": "通常",
+      "notion_page_id": "3778be04-e762-81e2-a3a1-dc910a346d3a",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@stba_bonodori",
+      "manual_status": "",
+      "notion_page_id": "36c8be04-e762-8149-b766-e80e43c6a86a",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@tadashi_isono",
+      "manual_status": "通常",
+      "notion_page_id": "37a8be04-e762-813e-ab01-dbbb7d89b965",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@takasho06130613",
+      "manual_status": "優先",
+      "notion_page_id": "3788be04-e762-8156-b004-daf2766b8af2",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@tarokoba55",
+      "manual_status": "休止",
+      "notion_page_id": "36c8be04-e762-8176-bed2-f395690e2a6d",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@teruhi__rio",
+      "manual_status": "",
+      "notion_page_id": "36c8be04-e762-81ea-a101-ef219161f9f4",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@tomohikos",
+      "manual_status": "",
+      "notion_page_id": "36c8be04-e762-8146-81b2-e1d55ce53776",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@wadaikoch",
+      "manual_status": "",
+      "notion_page_id": "36c8be04-e762-81c5-a81b-e1aee1ce5a06",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@yumiya_pon",
+      "manual_status": "優先",
+      "notion_page_id": "3788be04-e762-810c-8780-c3c62fedec21",
+      "origin": "notion_x_member_list"
+    },
+    {
+      "handle": "@yurubon_off",
+      "manual_status": "通常",
+      "notion_page_id": "3778be04-e762-8141-a93a-fe06ba87af64",
+      "origin": "notion_x_member_list"
+    }
+  ]
+}

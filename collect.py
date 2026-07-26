@@ -890,6 +890,8 @@ X_WHITELIST_STATE_FILE = "data/x_whitelist_state.json"
 X_ACCOUNT_SCORES_FILE = "data/x_account_scores.json"
 X_OFFICIAL_SOURCE_ACCOUNTS_FILE = "data/x_official_source_accounts.json"
 X_IMPORTANT_INFORMANTS_FILE = "data/x_important_informants.json"
+# Notion「Xメンバーリスト」から移行した収集名簿のローカル正本
+X_COLLECTION_ROSTER_FILE = "data/x_collection_roster.json"
 X_MEMBER_OBSOLETE_SCORE_PROPS = (
     "自動スコア",
     "手動重み",
@@ -1718,21 +1720,42 @@ def add_promoted_x_members(review_results):
     return summary
 
 
-def load_whitelist_accounts():
-    """「X メンバーリスト」DB とローカル台帳から収集対象を返す。
+def _load_collection_roster(path=None):
+    """ローカルの収集名簿（Notion「Xメンバーリスト」からの移行正本）を読む。"""
+    path = Path(path or X_COLLECTION_ROSTER_FILE)
+    try:
+        with path.open(encoding="utf-8") as handle:
+            payload = json.load(handle)
+    except FileNotFoundError:
+        return []
+    except Exception as exc:
+        print(f"[whitelist] 収集名簿読込エラー（スキップ）: {exc}")
+        return []
+    accounts = []
+    for row in payload.get("accounts") or []:
+        if not isinstance(row, dict):
+            continue
+        handle = _norm_handle(row.get("handle"))
+        if not handle:
+            continue
+        accounts.append({
+            "handle": f"@{handle}",
+            "page_id": row.get("notion_page_id", ""),
+            "manual_status": row.get("manual_status") or "",
+            "source_type": "collection_roster",
+        })
+    return accounts
 
-    任意プロパティ:
-    - 収集ステータス: 優先 / 通常 / 休止
-    既存DBに無ければ無視する。
+
+def _load_notion_member_list():
+    """Notion「Xメンバーリスト」を任意のフォールバックとして読む。
+
+    正本はローカル名簿（`data/x_collection_roster.json`）。Notionが読めなくても
+    収集は止めない。
     """
-    local_accounts = [
-        *load_official_source_accounts(Path(X_OFFICIAL_SOURCE_ACCOUNTS_FILE)),
-        *_load_important_informants(),
-    ]
     if not NOTION_TOKEN:
-        print("[whitelist] NOTION_API_TOKEN 未設定のためメンバーリスト読込スキップ")
-        return _dedupe_whitelist_accounts(local_accounts)
-    accounts = list(local_accounts)
+        return []
+    accounts = []
     try:
         cursor = None
         while True:
@@ -1748,15 +1771,72 @@ def load_whitelist_accounts():
                         "handle": h,
                         "page_id": row.get("id", ""),
                         "manual_status": _prop_select(props.get("収集ステータス", {})),
+                        "source_type": "notion_member_list",
                     })
             if not data.get("has_more"):
                 break
             cursor = data.get("next_cursor")
     except Exception as e:
-        print(f"[whitelist] メンバーリスト読込エラー（スキップ）: {e}")
-        return _dedupe_whitelist_accounts(local_accounts)
+        print(f"[whitelist] Notionメンバーリスト読込エラー（スキップ）: {e}")
+        return []
+    return accounts
+
+
+def _load_trusted_score_accounts(cfg=None):
+    """スコア台帳で trusted 判定されたアカウントを収集対象に自動編入する。
+
+    これが無いと、投稿の質から「良い情報源」と判定済みのアカウントでも、Notion
+    メンバーリストに手で登録されるまで一度もタイムラインを読みに行かなかった。
+    2026-07-26時点で trusted 383件に対し実際の収集名簿は69件だった。
+    """
+    cfg = cfg or _load_x_config() or {}
+    roster_cfg = cfg.get("auto_trusted_roster", {}) or {}
+    if not roster_cfg.get("enabled", True):
+        return []
+    scores = _load_x_account_scores(cfg).get("accounts", {})
+    if not scores:
+        return []
+    min_score = roster_cfg.get("min_score", 6.0)
+    min_posts = roster_cfg.get("min_posts_seen", 3)
+    max_accounts = roster_cfg.get("max_accounts", 250)
+    candidates = []
+    for key, row in scores.items():
+        if row.get("status") != "trusted":
+            continue
+        if (row.get("posts_seen") or 0) < min_posts:
+            continue
+        score = row.get("usefulness_score", row.get("score", 0)) or 0
+        if score < min_score:
+            continue
+        candidates.append((score, row.get("handle") or f"@{key}"))
+    candidates.sort(key=lambda item: (-item[0], item[1].lower()))
+    selected = [
+        {"handle": handle, "page_id": "", "manual_status": "", "source_type": "auto_trusted"}
+        for _, handle in candidates[:max_accounts]
+    ]
+    if selected:
+        print(f"[whitelist] スコアtrustedから自動編入: {len(selected)} アカウント")
+    return selected
+
+
+def load_whitelist_accounts(cfg=None):
+    """収集対象アカウントを返す。
+
+    正本はローカル（収集名簿 + 公式アカウント台帳 + 重要情報提供者台帳）で、
+    さらにスコア台帳の trusted を自動編入する。Notion「Xメンバーリスト」は
+    移行期間の任意フォールバックとして読むだけで、無くても収集は成立する。
+
+    manual_status: 優先 / 通常 / 休止
+    """
+    accounts = [
+        *load_official_source_accounts(Path(X_OFFICIAL_SOURCE_ACCOUNTS_FILE)),
+        *_load_important_informants(),
+        *_load_collection_roster(),
+    ]
+    accounts.extend(_load_notion_member_list())
+    accounts.extend(_load_trusted_score_accounts(cfg))
     out = _dedupe_whitelist_accounts(accounts)
-    print(f"[whitelist] メンバーリスト+ローカル台帳 {len(out)} アカウント取得")
+    print(f"[whitelist] 収集対象 {len(out)} アカウント（ローカル名簿＋自動編入＋Notion）")
     return out
 
 
@@ -1821,12 +1901,12 @@ def collect_x_whitelist(seen_urls):
     if not TWITTERAPI_IO_KEY:
         print("[whitelist] TWITTERAPI_IO_KEY 未設定のためスキップ")
         return [], list(seen_urls)
-    accounts = load_whitelist_accounts()
+    cfg = _load_x_config() or {}
+    accounts = load_whitelist_accounts(cfg)
     if not accounts:
         print("[whitelist] ホワイトリストが空のためスキップ")
         return [], list(seen_urls)
 
-    cfg = _load_x_config() or {}
     budget = cfg.get("budget", {})
     cost_per_tweet = budget.get("cost_per_tweet_usd", 0.00015)
     daily_cap = budget.get("daily_usd", 0.3)
@@ -1872,48 +1952,61 @@ def collect_x_whitelist(seen_urls):
         for item in batch_items:
             reason_counts[item["reason"]] = reason_counts.get(item["reason"], 0) + 1
         print(f"[whitelist] バッチ{batch_index}: {reason_counts} since_time:{since_ts}")
-        try:
-            data = _x_search(query)
-        except urllib.error.HTTPError as e:
-            if e.code == 429:
-                print("[whitelist] 429。5秒待って1回だけ再試行")
-                _time.sleep(5)
-                try:
-                    data = _x_search(query)
-                except Exception as e2:
-                    print(f"[whitelist] 再試行も失敗、このバッチを飛ばす: {e2}")
-                    continue
-            else:
-                print(f"[whitelist] HTTPエラー {e.code}、このバッチを飛ばす")
-                continue
-        except Exception as e:
-            print(f"[whitelist] 取得エラー、このバッチを飛ばす: {e}")
-            continue
-
-        tweets = data.get("tweets") or data.get("data") or []
-        run_cost += max(len(tweets), 1) * cost_per_tweet  # 空振りも1件課金
+        # 1バッチ＝20アカウント分の新着を1ページ(最大20件)だけ読んでいたため、
+        # 活発な日は上限で切れて取りこぼしていた。カーソルで続きも読む。
+        max_pages = cfg.get("whitelist_max_pages_per_batch", 3)
+        cursor = ""
         count = 0
-        for tw in tweets:
-            v = _x_map_to_voice(tw)
-            v["source"] = "x_whitelist"
-            if not v["url"] or v["url"] in seen_urls or v["url"] in new_seen:
-                continue
-            judgement = _score_voice(v["text"], cfg) if cfg else "🟡関心"
-            value_score, value_reasons = _x_post_value_score(v, cfg, known_venues)
-            tags = ["⭐盆踊ラー", judgement]
-            if "future_schedule" in value_reasons:
-                tags.insert(1, "📅未来予定")
-            elif "schedule_like" in value_reasons:
-                tags.insert(1, "📌予定候補")
-            v["tags"] = tags
-            v["value_score"] = round(value_score, 3)
-            _append_x_log_row(v, "q-whitelist", judgement, cost_per_tweet)
-            # ホワイトリストでも、盆踊り文脈がほぼ無い日常投稿はログDBだけに残す。
-            # 未来予定は強く加点するが、感想・写真・参加レポも配信価値があるので残す。
-            if value_score >= cfg.get("account_ranking", {}).get("min_keep_post_score", 0.0):
-                new_items.append(v)
-            new_seen.append(v["url"])
-            count += 1
+        for page in range(1, max_pages + 1):
+            try:
+                data = _x_search(query, cursor)
+            except urllib.error.HTTPError as e:
+                if e.code == 429:
+                    print("[whitelist] 429。5秒待って1回だけ再試行")
+                    _time.sleep(5)
+                    try:
+                        data = _x_search(query, cursor)
+                    except Exception as e2:
+                        print(f"[whitelist] 再試行も失敗、このバッチを飛ばす: {e2}")
+                        break
+                else:
+                    print(f"[whitelist] HTTPエラー {e.code}、このバッチを飛ばす")
+                    break
+            except Exception as e:
+                print(f"[whitelist] 取得エラー、このバッチを飛ばす: {e}")
+                break
+
+            tweets = data.get("tweets") or data.get("data") or []
+            run_cost += max(len(tweets), 1) * cost_per_tweet  # 空振りも1件課金
+            for tw in tweets:
+                v = _x_map_to_voice(tw)
+                v["source"] = "x_whitelist"
+                if not v["url"] or v["url"] in seen_urls or v["url"] in new_seen:
+                    continue
+                judgement = _score_voice(v["text"], cfg) if cfg else "🟡関心"
+                value_score, value_reasons = _x_post_value_score(v, cfg, known_venues)
+                tags = ["⭐盆踊ラー", judgement]
+                if "future_schedule" in value_reasons:
+                    tags.insert(1, "📅未来予定")
+                elif "schedule_like" in value_reasons:
+                    tags.insert(1, "📌予定候補")
+                v["tags"] = tags
+                v["value_score"] = round(value_score, 3)
+                _append_x_log_row(v, "q-whitelist", judgement, cost_per_tweet)
+                # ホワイトリストでも、盆踊り文脈がほぼ無い日常投稿はログDBだけに残す。
+                # 未来予定は強く加点するが、感想・写真・参加レポも配信価値があるので残す。
+                if value_score >= cfg.get("account_ranking", {}).get("min_keep_post_score", 0.0):
+                    new_items.append(v)
+                new_seen.append(v["url"])
+                count += 1
+
+            cursor = data.get("next_cursor") or data.get("cursor") or ""
+            if not tweets or not (data.get("has_next_page", bool(cursor)) and cursor):
+                break
+            if daily_spent + run_cost >= daily_cap or monthly_spent + run_cost >= monthly_cap:
+                print("[whitelist] ページ取得中に予算上限到達。このバッチを打ち切り")
+                break
+            _time.sleep(cfg.get("page_sleep_sec", 2))
         print(f"[whitelist] バッチ{batch_index}: {count} 件処理")
         _time.sleep(cfg.get("page_sleep_sec", 2))
 

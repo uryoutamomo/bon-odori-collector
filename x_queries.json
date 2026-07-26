@@ -2,14 +2,24 @@
   "_comment": "X(twitterapi.io)収集の設定。コードを触らず実験するための外出し設定。クエリ・除外語の追加修正はこのファイルだけで完結する。設計: 盆踊り情報開発>『X収集 改善ループ 設計アイデア』",
   "enabled": true,
   "budget": {
-    "_comment": "有料(プリペイド)のため安全装置。超えたら収集スキップ=fail-safe。cost_per_tweet_usd は twitterapi.io の $0.15/1000件 = 1件 $0.00015。",
+    "_comment": "有料(プリペイド)のため安全装置。超えたら収集スキップ=fail-safe。cost_per_tweet_usd は twitterapi.io の $0.15/1000件 = 1件 $0.00015。月次上限は 2026-07-26 に 15->25 へ引き上げ: 探索深度と クエリ本数を増やした結果、月内に上限へ当たって収集が全停止する事故を避けるため。実効的な安全弁は daily_usd=3.0 の方（据え置き）。",
     "daily_usd": 3.0,
-    "monthly_usd": 15.0,
+    "monthly_usd": 25.0,
     "cost_per_tweet_usd": 0.00015
   },
-  "max_pages_per_query": 3,
+  "_max_pages_comment": "2026-07-26 に 3->8 へ引き上げ。3の頃は主要クエリが毎回3ページとも満杯で打ち切られており（=その先に未取得の投稿が残っていた）、1日216件・$0.063（日次予算の2%）しか使えていなかった。",
+  "max_pages_per_query": 8,
   "page_sleep_sec": 2,
   "whitelist_batch_size": 20,
+  "_whitelist_max_pages_comment": "2026-07-26追加。1バッチ(20アカウント)あたり1ページ(20件)しか読まず、活発な日は上限で切れて取りこぼしていた。",
+  "whitelist_max_pages_per_batch": 3,
+  "auto_trusted_roster": {
+    "_comment": "スコア台帳で trusted と判定されたアカウントを収集対象へ自動編入する（2026-07-26追加）。これが無い間は、Notionメンバーリストに手で登録された69件しか読んでおらず、trusted 383件のうち300件以上を一度も読みに行っていなかった。誰が対象かはレビューコンソールのXアカウント一覧で確認できる。",
+    "enabled": true,
+    "max_accounts": 250,
+    "min_score": 6.0,
+    "min_posts_seen": 3
+  },
   "account_ranking": {
     "_comment": "Xメンバーリストの全員を同じ重みで読まず、過去投稿から情報価値を推定する。未来予定は感想/写真/参加レポより2-3倍重く見るが、盆踊り文脈のある投稿は基本的に残す。",
     "enabled": true,
@@ -108,6 +118,26 @@
       "id": "q-program-songs-wide",
       "aim": "曲確率改善用の曲目・演目・練習会情報を広めに捕捉",
       "query": "(盆踊り OR 盆おどり OR 民踊) (曲目 OR 曲順 OR 演目 OR 練習会 OR 講習会) lang:ja -filter:retweets"
+    },
+    {
+      "id": "q-poster-images",
+      "aim": "画像付き投稿だけを直接狙う。ポスター・チラシ現物は本文が短く既存の語句クエリから漏れやすいため（2026-07-26追加）",
+      "query": "(盆踊り OR 盆おどり OR 納涼大会) filter:images lang:ja -filter:retweets"
+    },
+    {
+      "id": "q-cancel-change",
+      "aim": "中止・順延・延期の告知を捕捉し、登録済みイベントの開催状態を更新する（2026-07-26追加）",
+      "query": "(盆踊り OR 盆おどり OR 納涼祭) (中止 OR 順延 OR 延期 OR 雨天決行 OR 中止です) lang:ja -filter:retweets"
+    },
+    {
+      "id": "q-imminent",
+      "aim": "直前・当日の開催告知を捕捉。日付未確定イベントの確定に効く（2026-07-26追加）",
+      "query": "(盆踊り OR 盆おどり) (本日 OR 今日 OR 明日 OR 今週末 OR 開催中 OR いよいよ) lang:ja -filter:retweets"
+    },
+    {
+      "id": "q-venue-tokyo-wards",
+      "aim": "23区名での先読み。既存 q-venue は築地30分圏の地名のみで、盆助が扱う23区全域をカバーできていなかった（2026-07-26追加）",
+      "query": "(墨田区 OR 江東区 OR 台東区 OR 江戸川区 OR 葛飾区 OR 足立区 OR 世田谷区 OR 杉並区 OR 練馬区 OR 板橋区 OR 大田区 OR 品川区) 盆踊り lang:ja -filter:retweets"
     }
   ]
 }

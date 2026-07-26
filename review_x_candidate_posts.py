@@ -19,6 +19,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 import collect
+from collection_support import x_budget_guard as budget_guard
 
 
 TWITTERAPI_IO_KEY = os.environ.get("TWITTERAPI_IO_KEY")
@@ -157,6 +158,13 @@ def main():
         print("[review] candidate_post_review disabled")
         return 0
 
+    # 日次収集と同じ予算帳簿を見る。これが無い間は使った分を自己申告するだけで
+    # 上限に当たっても止まらず、そのため手動実行専用に留められていた。
+    allowed, budget_message = budget_guard.check(cfg)
+    print(f"[review] {budget_message}")
+    if not allowed:
+        return 0
+
     candidate_data = load_json(CANDIDATES_FILE, {"candidates": []})
     candidates = candidate_data.get("candidates", [])[:review_cfg.get("max_candidates", 30)]
     if not candidates:
@@ -228,6 +236,7 @@ def main():
     print(f"[review] reviewed: {len(results)}")
     print(f"[review] recommendations: {output['recommendation_counts']}")
     print(f"[review] estimated cost: {total_credits} credits / ${output['cost_estimate']['usd']:.6f}")
+    budget_guard.record_spend(output["cost_estimate"]["usd"])
     print(f"[review] notion member sync skipped: {output['notion_member_sync']}")
     for r in results[:10]:
         print(

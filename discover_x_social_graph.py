@@ -20,6 +20,8 @@ import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
+from collection_support import x_budget_guard as budget_guard
+
 
 TWITTERAPI_IO_KEY = os.environ.get("TWITTERAPI_IO_KEY")
 TWITTERAPI_IO_BASE = "https://api.twitterapi.io/twitter/user/followings"
@@ -153,6 +155,13 @@ def main():
         print("[social] social_graph_discovery disabled")
         return 0
 
+    # 日次収集と同じ予算帳簿を見る。これが無い間は使った分を自己申告するだけで
+    # 上限に当たっても止まらず、そのため手動実行専用に留められていた。
+    allowed, budget_message = budget_guard.check(cfg)
+    print(f"[social] {budget_message}")
+    if not allowed:
+        return 0
+
     scores = load_json(SCORES_FILE, {"accounts": {}})
     seeds = choose_seeds(scores, cfg)
     if not seeds:
@@ -263,6 +272,7 @@ def main():
     print(f"[social] returned users: {graph['cost_estimate']['returned_users']}")
     print(f"[social] candidates: {len(out_candidates)}")
     print(f"[social] estimated cost: {graph['cost_estimate']['credits']} credits / ${graph['cost_estimate']['usd']:.6f}")
+    budget_guard.record_spend(graph["cost_estimate"]["usd"])
     for cand in out_candidates[:10]:
         print(f"[social] candidate {cand['handle']} score={cand['candidate_score']} by={len(cand['discovered_by'])} {cand['reasons'][:2]}")
     return 0

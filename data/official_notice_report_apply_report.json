@@ -1,10 +1,10 @@
 {
   "generated_by": "apply_official_notice_report.py",
-  "generated_at": "2026-07-13T02:38:53.548040+00:00",
+  "generated_at": "2026-07-26T13:40:47.850781+00:00",
   "mode": "dry_run",
   "sources": {
     "master_db": "data/bon_odori_master.sqlite",
-    "report": "data/official_notice_reports/kyobashi5_nouryou_map_2026_verify.json"
+    "report": "data/official_notice_reports/x_poster_kameari_anatsuyasumi_2026.json"
   },
   "outputs": {
     "target_db": "data/official_notice_report_apply_dry_run.sqlite",
@@ -29,23 +29,24 @@
     },
     "table_counts": {
       "event_investigation_tasks": 79,
-      "event_occurrences": 252,
-      "event_series": 241,
-      "evidence_items": 28429,
+      "event_occurrences": 254,
+      "event_series": 242,
+      "evidence_items": 31301,
       "external_record_links": 2654,
       "historical_promotion_candidates": 16,
       "master_meta": 0,
-      "notion_sync_jobs": 10,
-      "observed_occurrence_songs": 28105,
-      "observed_occurrences": 1856,
-      "occurrence_dates": 207,
-      "occurrence_evidence_links": 16,
-      "occurrence_song_evidence_links": 496,
-      "occurrence_songs": 323,
-      "predicted_occurrence_dates": 13,
-      "schema_migrations": 1,
+      "notion_sync_jobs": 0,
+      "observed_occurrence_songs": 30883,
+      "observed_occurrences": 2164,
+      "occurrence_dates": 297,
+      "occurrence_evidence_links": 101,
+      "occurrence_song_evidence_links": 1008,
+      "occurrence_songs": 820,
+      "predicted_occurrence_dates": 14,
+      "review_inbox_items": 386,
+      "schema_migrations": 3,
       "song_aliases": 141,
-      "songs": 150,
+      "songs": 394,
       "venue_aliases": 290,
       "venues": 241,
       "write_batches": 0
@@ -53,126 +54,56 @@
   },
   "report": {
     "report_type": "official_notice",
-    "reported_at": "2026-07-12T23:49:00+09:00",
+    "reported_at": "2026-07-26T21:30:00+09:00",
     "source": {
-      "report_id": "kyobashi5_nouryou_map_2026_verify",
-      "title": "令和8年 納涼マップ 京橋五の部（新ツール疎似検証用）",
-      "account_key": "京橋五の部連合町会・京橋五の部地区委員会",
-      "raw_text": "令和8年 納涼マップ（京橋五の部連合町会・京橋五の部地区委員会）。apply_official_notice_report.pyの疎似検証のため、既に apply_kyobashi5_nouryou_map_2026.py で本番反映済みの内容を新スキーマで再現。",
+      "report_id": "x_poster_kameari_anatsuyasumi_2026",
+      "title": "あ〜夏休み！納涼盆踊り大会（亀有ゆうろーど）公式ポスター（X投稿画像）",
+      "account_key": "あ〜夏休み実行委員会（亀有中央町会・亀有三和町会）",
+      "raw_text": "あ〜夏休み！2026 納涼盆踊り大会 / 7月17日(金)〜20日(月) / 17日・18日と19日・20日では踊りの曲目が異なります！ / 会場：ゆうろーど（亀有銀座商店街）/ 開始時間 子供の部：6時〜6時50分、大人の部：7時〜9時 / 模擬店が多数出店 / 7月20日(月)イベント 打ち水エコ作戦「水かけまつり」集合時間11:45 開始時間12:00 集合：三菱UFJ銀行横 ゆうろーど入口 / 主催：あ〜夏休み実行委員会（亀有中央町会・亀有三和町会）。ポスター画像をことがOCRして書き起こし。投稿者 @MONJAMEGUMI の本文にも「亀有ゆうろーど商店街では7月17日18日19日20日 4日連続で盆踊りが行われます。亀有三和町会 亀有中央町会 合同開催。20日11時45分から水かけまつりが行われます」と記載あり。",
+      "url": "https://x.com/MONJAMEGUMI/status/2078379893424959731",
       "notice_kind": "official_current_year"
     },
     "events": [
       {
-        "action": "confirm_existing",
-        "occurrence_id": "occ_225f239652267ed9",
-        "venue": {
-          "name": "京橋公園",
-          "area": "中央区"
-        },
-        "date_start": "2026-07-17",
-        "date_end": "2026-07-18",
-        "detail_addendum": "新富町会「新富銀座納涼盆踊り大会」。19:00-21:00。屋台やきそば・わたあめ・ポップコーン・かき氷等、飲み物ソフトドリンク・生ビール、イベントゲームコーナー。（令和8年納涼マップ京橋五の部より）",
-        "songs": []
-      },
-      {
-        "action": "confirm_existing",
-        "occurrence_id": "occ_69eb62d9b1773ad9",
-        "detail_addendum": "5日(水)が中止の場合は6日(木)に順延。（令和8年納涼マップ京橋五の部より）",
-        "songs": []
-      },
-      {
         "action": "register_new",
-        "event_name_hint": "明石町会 納涼盆踊り",
-        "series_name": "明石町会 納涼盆踊り",
+        "event_name_hint": "あ〜夏休み！納涼盆踊り大会",
+        "series_name": "あ〜夏休み！納涼盆踊り大会",
         "event_year": 2026,
         "venue": {
-          "name": "明石小学校",
-          "area": "中央区"
+          "name": "亀有ゆうろーど（亀有銀座商店街）",
+          "area": "葛飾区"
         },
-        "date_start": "2026-08-06",
-        "date_end": "2026-08-07",
-        "detail_addendum": "18:00-21:00。屋台軽食類、飲み物生ビール・ジュース等、イベント子ども盆踊り大会(お菓子付)。（令和8年納涼マップ京橋五の部より）",
-        "songs": []
-      },
-      {
-        "action": "confirm_existing",
-        "occurrence_id": "occ_56e51b72ec7acc7e",
-        "venue": {
-          "name": "入船三丁目交差点",
-          "area": "中央区"
-        },
-        "date_start": "2026-08-24",
-        "date_end": "2026-08-25",
-        "detail_addendum": "18:30-21:00。屋台やきそば・かき氷等、飲み物ビール・ラムネ等(さらに地域の飲食店からのメニューを提供)。（令和8年納涼マップ京橋五の部より）",
+        "date_start": "2026-07-17",
+        "date_end": "2026-07-20",
+        "detail_addendum": "2026年7月17日(金)〜20日(月)の4日連続開催。子供の部18:00-18:50、大人の部19:00-21:00。17日・18日と19日・20日で踊りの曲目が異なる。模擬店多数。7月20日(月)は打ち水エコ作戦「水かけまつり」（11:45集合・12:00開始、三菱UFJ銀行横ゆうろーど入口）。主催はあ〜夏休み実行委員会（亀有中央町会・亀有三和町会）。同じ亀有ゆうろーどで8月下旬に開催される「亀有銀座商店街納涼盆踊り大会」とは主催町会が異なる別イベント。（公式ポスター画像より）",
         "songs": []
       }
     ],
     "skipped_events": [
       {
-        "name": "湊三丁目町会 納涼子ども会",
-        "reason": "盆踊り判定保留"
-      },
-      {
-        "name": "湊二丁目町会 湊二お楽しみ会",
-        "reason": "盆踊り判定保留"
-      },
-      {
-        "name": "入船一・二丁目町会",
-        "reason": "2027年3月開催予定、時期・内容とも対象外"
+        "name": "亀有銀座商店街納涼盆踊り大会（occ_1df0a276422a54b5）",
+        "reason": "同一会場だが主催町会が異なる別イベント。既存レコードは2025年実績が8月31日で8月下旬開催のもの。今回のポスター（7月17-20日・亀有中央町会/亀有三和町会主催）を既存レコードの日付として書き込まない"
       }
     ]
   },
   "applied": {
     "resolved": true,
-    "evidence_id": "ev_0d7adba27171dbef",
+    "evidence_id": "ev_1af061c5c205e1d7",
     "events_applied": [
       {
-        "action": "confirm_existing",
-        "occurrence_id": "occ_225f239652267ed9",
-        "changed_fields": [
-          "venue_id",
-          "date_start"
-        ],
-        "songs_applied": []
-      },
-      {
-        "action": "confirm_existing",
-        "occurrence_id": "occ_69eb62d9b1773ad9",
-        "changed_fields": [],
-        "songs_applied": []
-      },
-      {
         "action": "register_new",
-        "occurrence_id": "occ_c97f48d221c7154f",
-        "venue_id": "venue_9dbf1d33b0d471a6",
+        "occurrence_id": "occ_267608981c4ee9bd",
+        "venue_id": "ven_6aaa47161ea61da7",
         "venue_status": "reused",
-        "occurrence_created": false,
-        "songs_applied": []
-      },
-      {
-        "action": "confirm_existing",
-        "occurrence_id": "occ_56e51b72ec7acc7e",
-        "changed_fields": [
-          "venue_id",
-          "date_start",
-          "detail"
-        ],
+        "occurrence_created": true,
         "songs_applied": []
       }
     ],
     "events_unresolved": [],
     "skipped_events": [
       {
-        "name": "湊三丁目町会 納涼子ども会",
-        "reason": "盆踊り判定保留"
-      },
-      {
-        "name": "湊二丁目町会 湊二お楽しみ会",
-        "reason": "盆踊り判定保留"
-      },
-      {
-        "name": "入船一・二丁目町会",
-        "reason": "2027年3月開催予定、時期・内容とも対象外"
+        "name": "亀有銀座商店街納涼盆踊り大会（occ_1df0a276422a54b5）",
+        "reason": "同一会場だが主催町会が異なる別イベント。既存レコードは2025年実績が8月31日で8月下旬開催のもの。今回のポスター（7月17-20日・亀有中央町会/亀有三和町会主催）を既存レコードの日付として書き込まない"
       }
     ]
   },

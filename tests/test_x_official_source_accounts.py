@@ -52,17 +52,25 @@ class XOfficialSourceAccountsTest(unittest.TestCase):
                 collect, "X_OFFICIAL_SOURCE_ACCOUNTS_FILE", str(registry)
             ), patch.object(
                 collect, "X_IMPORTANT_INFORMANTS_FILE", str(Path(tmpdir) / "missing-informants.json")
+            ), patch.object(
+                collect, "X_COLLECTION_ROSTER_FILE", str(Path(tmpdir) / "missing-roster.json")
             ):
-                accounts = collect.load_whitelist_accounts()
+                accounts = collect.load_whitelist_accounts(
+                    {"auto_trusted_roster": {"enabled": False}}
+                )
 
         self.assertEqual(accounts[0]["handle"], "@localofficial")
         self.assertEqual(accounts[0]["manual_status"], "優先")
 
     def test_collect_loads_current_important_informants_without_notion_token(self):
+        # 他の供給源（収集名簿・スコア自動編入）を切り、重要情報提供者台帳だけが
+        # Notionトークン無しでも読めることを確認する。
         with patch.object(collect, "NOTION_TOKEN", None), patch.object(
             collect, "X_OFFICIAL_SOURCE_ACCOUNTS_FILE", "missing-official-accounts.json"
+        ), patch.object(
+            collect, "X_COLLECTION_ROSTER_FILE", "missing-collection-roster.json"
         ):
-            accounts = collect.load_whitelist_accounts()
+            accounts = collect.load_whitelist_accounts({"auto_trusted_roster": {"enabled": False}})
 
         by_handle = {row["handle"]: row for row in accounts}
         self.assertEqual(

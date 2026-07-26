@@ -18,9 +18,9 @@ approved accounts into the legacy Notion X member list.
 | `review_x_candidate_posts.yml` | recent post review | `data/x_candidate_post_review.json` | X API | `REVIEW X CANDIDATES` |
 | `review_x_candidate_posts.yml` with `sync_only=true` | approved member sync | Notion X member list, `data/x_candidate_post_review.json` sync summary | no X API | `SYNC APPROVED X MEMBERS` |
 
-## Decision
+## Decision (2026-06-26, superseded 2026-07-26)
 
-Keep these workflows manual.
+元の判断: Keep these workflows manual.
 
 Reasons:
 
@@ -32,6 +32,34 @@ Reasons:
   operator-approved.
 - Daily `collect.yml` already covers bounded X/RSS collection with budget
   controls.
+
+## Decision (2026-07-26)
+
+週次スケジュールを追加する。手動 `workflow_dispatch` は確認文字列つきのまま残す。
+
+理由と経緯:
+
+- 手動専用のまま誰も起動せず、`discover_x_social_graph` は 2026-06-06、
+  `review_x_candidate_posts` は 2026-06-09 を最後に止まっていた。その結果、収集対象の
+  名簿が6月上旬の69アカウントで固定され、新しい盆踊ラーを発見できなくなっていた
+  （2026-07-26 内田さん指摘「そもそもXでの重要盆オドラーが把握できていない」）。
+- 上の「Automation Boundary」が定めた昇格条件を満たしたうえで移行する:
+  - 予算上限: `collection_support/x_budget_guard.py` を両スクリプトに追加。日次収集と
+    同じ `data/x_budget.json` を見て上限で停止し、使った分も同じ帳簿へ記録する。
+    「日次収集と違って止まらない」という手動維持の主因を解消した。
+  - Notion書き込みは既定オフ: sync ステップは `inputs.sync_only` が真のときだけ動く。
+    `inputs` の無いスケジュール実行では動かない。
+  - レビュー専用の成果物のみ生成する（この点は元から変わらない）。
+  - `docs/manual-auto-operations-inventory.md` を更新。
+  - `tests/test_x_candidate_workflows_policy.py` に予算ガードとNotion非同期のテストを追加。
+- 昇格（Notionメンバーリストへの登録）は引き続き内田さんの承認が要る。スケジュール実行が
+  増やすのは「候補と評価」だけで、収集対象そのものは
+  `x_queries.json` の `auto_trusted_roster`（スコア基準・上限つき）が決める。
+
+| Workflow | Schedule |
+| --- | --- |
+| `discover_x_social_graph.yml` | 毎週火曜 6:00 JST (`0 21 * * 1`) |
+| `review_x_candidate_posts.yml` | 毎週火曜 6:30 JST (`30 21 * * 1`) |
 
 ## Flow
 
@@ -73,11 +101,12 @@ X/RSS account decisions do not use the console export/stage path.
 
 ## Automation Boundary
 
-Do not add `schedule` or `push` triggers to these workflows.
+Do not add `push` triggers to these workflows.
 
-If a future change wants a scheduled X candidate discovery path, it must first:
+`schedule` は 2026-07-26 に、下の条件を全て満たしたうえで追加した（上の Decision 参照）。
+条件は今後も維持する。スケジュール実行の内容を広げるときは、同じ条件を再確認すること:
 
-- add a separate budget cap,
+- a separate budget cap（`collection_support/x_budget_guard.py`）,
 - keep Notion writes off by default,
 - produce review-only artifacts,
 - update `docs/manual-auto-operations-inventory.md`,

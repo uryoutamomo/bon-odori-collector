@@ -19,6 +19,9 @@ __pycache__/
 *.pyc
 .venv/
 
+# ポスターOCRの作業用に落としたX画像（読み取り結果はレポートJSONと台帳に残す）
+data/poster_images/
+
 # ローカル運用状態・一時成果物
 data/review_console/
 data/automation/
