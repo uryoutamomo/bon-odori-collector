@@ -1,10 +1,10 @@
 {
   "generated_by": "guard_public_events_sync.py",
-  "generated_at": "2026-07-26T02:45:47.411467+00:00",
+  "generated_at": "2026-07-26T05:55:51.172795+00:00",
   "scope": "read_only_public_sync_guard_no_writes",
   "sources": {
     "collector_events": "/Users/ryotauchida/bon-odori-collector/data/public/events_public.json",
-    "site_events": "/Users/ryotauchida/bon-odori-site/data/events_public.json",
+    "site_events": "/private/tmp/claude-501/-Users-ryotauchida/75f5fbc4-f9f3-4fc7-95bd-a0caf045c3c0/scratchpad/site_origin_main_events.json",
     "fixed_date_rules": "/Users/ryotauchida/bon-odori-collector/data/public_fixed_date_rules.json",
     "master_db": "/Users/ryotauchida/bon-odori-collector/data/bon_odori_master.sqlite",
     "publication_gap_review": "/Users/ryotauchida/bon-odori-collector/data/publication_gap_review.json",
@@ -16,71 +16,46 @@
     "allow_individual_review": false
   },
   "decision": {
-    "status": "block",
-    "failures": [
-      "individual_review_diffs_remain",
-      "reviewed_exact_approval_mismatch"
-    ],
+    "status": "pass",
+    "failures": [],
     "warnings": [],
-    "safe_to_wholesale_sync": false,
+    "safe_to_wholesale_sync": true,
     "public_deploy_requires_separate_approval": true,
     "deploy_approval_note": "Guard pass only means no blocking public sync diffs remain. Public deploy still requires separate operator approval."
   },
   "procedure_warnings": [],
   "raw_classification": {
     "collector_event_count": 203,
-    "site_event_count": 209,
+    "site_event_count": 203,
     "collector_only_count": 0,
-    "site_only_count": 6,
-    "high_risk_diff_record_count": 158,
-    "high_risk_event_count": 18,
-    "records_by_family": {
-      "historical_slide": 122,
-      "historical_reference": 26,
-      "date_prediction": 10
-    },
-    "records_by_action": {
-      "individual_review": 44,
-      "restore_collector_from_site_or_reenable_export_postprocess": 104,
-      "low_priority_or_unclassified": 10
-    },
-    "events_by_action": {
-      "expired_historical_slide_downgrade": 13,
-      "individual_review": 5
-    }
+    "site_only_count": 0,
+    "high_risk_diff_record_count": 0,
+    "high_risk_event_count": 0,
+    "records_by_family": {},
+    "records_by_action": {},
+    "events_by_action": {}
   },
   "postprocessed_classification": {
     "collector_event_count": 203,
-    "site_event_count": 209,
+    "site_event_count": 203,
     "collector_only_count": 0,
-    "site_only_count": 6,
-    "high_risk_diff_record_count": 158,
-    "high_risk_event_count": 18,
-    "records_by_family": {
-      "historical_slide": 122,
-      "historical_reference": 26,
-      "date_prediction": 10
-    },
-    "records_by_action": {
-      "individual_review": 44,
-      "restore_collector_from_site_or_reenable_export_postprocess": 104,
-      "low_priority_or_unclassified": 10
-    },
-    "events_by_action": {
-      "expired_historical_slide_downgrade": 13,
-      "individual_review": 5
-    }
+    "site_only_count": 0,
+    "high_risk_diff_record_count": 0,
+    "high_risk_event_count": 0,
+    "records_by_family": {},
+    "records_by_action": {},
+    "events_by_action": {}
   },
   "reviewed_exact_approvals": {
     "schema": "public_sync_exact_approvals_v1",
-    "status": "block",
+    "status": "pass",
     "approval_count": 35,
     "status_counts": {
-      "already_synced": 17,
-      "hash_mismatch": 3,
-      "applied": 15
+      "already_synced": 28,
+      "applied": 1,
+      "inactive": 6
     },
-    "failure_count": 3,
+    "failure_count": 0,
     "results": [
       {
         "id": "reviewed-update-14f4341a66b1",
@@ -136,7 +111,7 @@
         "event_key": "大和町八幡神社大盆踊り会||中野大和町八幡神社",
         "actual_site_sha256": "b1a6cb1cf7ae31586ec223d6b01498ebf27f6bce88f889fe1d6453b7a9a265c3",
         "actual_collector_sha256": "e1ceba61dbabf14069f080aed8ca807490244d0dc69b11d9f601669705db9560",
-        "status": "hash_mismatch"
+        "status": "applied"
       },
       {
         "id": "reviewed-update-cf454e6e13d3",
@@ -150,9 +125,9 @@
         "id": "reviewed-update-465013db6552",
         "kind": "same_key_update",
         "event_key": "新宿二丁目太宗寺盆踊り大会||太宗寺",
-        "actual_site_sha256": "f444da2ff5ee4fe84dec3c8c8e042efb6868ca605d47aa0bf46ad3da7dc49c23",
+        "actual_site_sha256": "077fc80eae1044ebb70112692eb34d6f0c3496755f5b818ae1d5511746c4b7f0",
         "actual_collector_sha256": "077fc80eae1044ebb70112692eb34d6f0c3496755f5b818ae1d5511746c4b7f0",
-        "status": "applied"
+        "status": "already_synced"
       },
       {
         "id": "reviewed-update-ad56e014fcd9",
@@ -182,9 +157,9 @@
         "id": "reviewed-update-72801cbff56b-20260724",
         "kind": "same_key_update",
         "event_key": "神楽坂夏まつり 盆踊り in 神楽坂||りそな銀行神楽坂支店前",
-        "actual_site_sha256": "fb4506ac948ca7e5c5415dfaa3b926d86ffa363d434e204004306dbbeae1371b",
+        "actual_site_sha256": "688dd857b5edaf3bb99c7904ad5809324a1178a877aba3b1aa225195201d93f6",
         "actual_collector_sha256": "688dd857b5edaf3bb99c7904ad5809324a1178a877aba3b1aa225195201d93f6",
-        "status": "hash_mismatch"
+        "status": "already_synced"
       },
       {
         "id": "reviewed-update-3a49318b4a1c",
@@ -247,115 +222,109 @@
         "id": "reviewed-removal-20260724-01",
         "kind": "removal",
         "event_key": "あずま通り商店街「下北沢盆踊り2025」||下北沢駅東口",
-        "actual_site_sha256": "ad96471d1adbcf4ad5327c66f91eb7a08c60ee9ee6dd5a34c43c2a66b2e63495",
-        "status": "applied"
+        "status": "inactive"
       },
       {
         "id": "reviewed-removal-20260724-02",
         "kind": "removal",
         "event_key": "イベント名未確認（晴海ふ頭公園）||晴海ふ頭公園",
-        "actual_site_sha256": "d0fd6ca69e29aa56e53a4b745052108efe989b20a5c29836d81afb6496ca2ddd",
-        "status": "applied"
+        "status": "inactive"
       },
       {
         "id": "reviewed-removal-20260724-03",
         "kind": "removal",
         "event_key": "神田明神納涼祭り アニソン盆踊り||神田明神境内",
-        "actual_site_sha256": "944b4d9229ea01c9c68e63405956402774620f2a6c02c7f4e53b3462ddb684ee",
-        "status": "applied"
+        "status": "inactive"
       },
       {
         "id": "reviewed-removal-20260724-04",
         "kind": "removal",
         "event_key": "第51回 神楽坂まつり 盆踊り||りそな銀行神楽坂支店前",
-        "actual_site_sha256": "83e28b8b54e2fc7fa10132c409c70de48e06bd0447521485c488657ac814f414",
-        "status": "applied"
+        "status": "inactive"
       },
       {
         "id": "reviewed-removal-20260724-05",
         "kind": "removal",
         "event_key": "第6回 渋谷盆踊り||SHIBUYA109前〜道玄坂・文化村通り一帯",
-        "actual_site_sha256": "da9ae2f8d16cd5255054c60180f9e4f70448adb1068a1cdf515ec79d738e2f49",
-        "status": "applied"
+        "status": "inactive"
       },
       {
         "id": "reviewed-removal-20260724-06",
         "kind": "removal",
         "event_key": "赤坂浄土寺盆踊り大会||浄土寺",
-        "actual_site_sha256": "ea7a44b8e35d8a9b49ad585ee24993726b30093df0db326082012ae3671b60c4",
-        "status": "applied"
+        "status": "inactive"
       },
       {
         "id": "reviewed-update-20260724-01",
         "kind": "same_key_update",
         "event_key": "丸の内de盆踊り||行幸通り",
-        "actual_site_sha256": "a3f8e1011801fec6c25c1f394568794e986c729268f2ecbe171cb2cbb929559d",
+        "actual_site_sha256": "768a6b70a31e9fbdfbf792bd9d866b1385e6be705fb03dd964d92f701da385f1",
         "actual_collector_sha256": "768a6b70a31e9fbdfbf792bd9d866b1385e6be705fb03dd964d92f701da385f1",
-        "status": "applied"
+        "status": "already_synced"
       },
       {
         "id": "reviewed-update-20260724-02",
         "kind": "same_key_update",
         "event_key": "新橋こいち祭||桜田公園",
-        "actual_site_sha256": "4fb293a22928655c2a4d97b2daa62af06218f6c050bf14365524fb29bf3afe4a",
+        "actual_site_sha256": "c6c0784b5a9c3bdb6f896fcbc12ecf356302cdbfe977201031c9f7af8dcdd2f6",
         "actual_collector_sha256": "c6c0784b5a9c3bdb6f896fcbc12ecf356302cdbfe977201031c9f7af8dcdd2f6",
-        "status": "applied"
+        "status": "already_synced"
       },
       {
         "id": "reviewed-update-20260724-03",
         "kind": "same_key_update",
         "event_key": "第51回 浄土寺盆踊り大会||浄土寺",
-        "actual_site_sha256": "fe049df7d4992a9d79ce7c7e8a575c71014032e32b7544d9bca0d4910ccd7af1",
+        "actual_site_sha256": "8900203ab8cededcfda4a5040ef6929c1bbe83d9571fb150c61180e9b5de5b58",
         "actual_collector_sha256": "8900203ab8cededcfda4a5040ef6929c1bbe83d9571fb150c61180e9b5de5b58",
-        "status": "hash_mismatch"
+        "status": "already_synced"
       },
       {
         "id": "reviewed-update-20260724-04",
         "kind": "same_key_update",
         "event_key": "北新宿四丁目 盆踊り大会||北柏木公園",
-        "actual_site_sha256": "4673d4d4af52aed78ad19d88ce0f767bcbdc099f39688b3dc9957f66fb4c3438",
+        "actual_site_sha256": "2c0d9f4c215eb64e926457b0933ce4c677fdb1c12ea3ec6d9467b191c65c64ba",
         "actual_collector_sha256": "2c0d9f4c215eb64e926457b0933ce4c677fdb1c12ea3ec6d9467b191c65c64ba",
-        "status": "applied"
+        "status": "already_synced"
       },
       {
         "id": "reviewed-update-20260724-05",
         "kind": "same_key_update",
         "event_key": "北糀谷町会 「納涼踊り大会」||子安八幡神社",
-        "actual_site_sha256": "d6c5c8b58196b2eac01068a7e9d5b5187aaf434cd054427e0505ea395c707048",
+        "actual_site_sha256": "d8b5a980dc7bf2ce518336d9a925327a0f60c5883b98e35a6bea292119f698f1",
         "actual_collector_sha256": "d8b5a980dc7bf2ce518336d9a925327a0f60c5883b98e35a6bea292119f698f1",
-        "status": "applied"
+        "status": "already_synced"
       },
       {
         "id": "reviewed-update-20260724-06",
         "kind": "same_key_update",
         "event_key": "玉川町会盆おどり大会||二子玉川西地区ふれあい広場(246高架下)",
-        "actual_site_sha256": "2a02f510994e43dd26a9b101fd2bf3a5e753d56dd7b0031091003fad5dcaef17",
+        "actual_site_sha256": "787015ba244c1924dcec6f54a71f73ec039d9a065a366b8129237c961fd6f98e",
         "actual_collector_sha256": "787015ba244c1924dcec6f54a71f73ec039d9a065a366b8129237c961fd6f98e",
-        "status": "applied"
+        "status": "already_synced"
       },
       {
         "id": "reviewed-update-20260724-07",
         "kind": "same_key_update",
         "event_key": "芦花公園商店街振興組合 「芦花公園駅前盆踊り大会」||京王線芦花公園駅前ロータリー(南口)",
-        "actual_site_sha256": "5294799fb2f948e64fdd51aa5d6194bd42587919b2d25c6ac343e3d5405630c2",
+        "actual_site_sha256": "ec70a266f5a74dddeb04315464111e7d39fce9cb0a278f3e5abf9de2c4f9ad19",
         "actual_collector_sha256": "ec70a266f5a74dddeb04315464111e7d39fce9cb0a278f3e5abf9de2c4f9ad19",
-        "status": "applied"
+        "status": "already_synced"
       },
       {
         "id": "reviewed-update-20260726-01",
         "kind": "same_key_update",
         "event_key": "増上寺 地蔵尊盆踊り大会||増上寺（大殿前広場）",
-        "actual_site_sha256": "74b6ee1a35222d7fb0867228ec7f7197f320764547c852f10e6493d6a7e903c5",
+        "actual_site_sha256": "4a1e9b574c9376a39dbfd1ad3e017c685aa69cba7bccf5468fe5f6fe63e2c600",
         "actual_collector_sha256": "4a1e9b574c9376a39dbfd1ad3e017c685aa69cba7bccf5468fe5f6fe63e2c600",
-        "status": "applied"
+        "status": "already_synced"
       },
       {
         "id": "reviewed-update-20260726-02",
         "kind": "same_key_update",
         "event_key": "天王洲夏夜祭 with OKINAWA||アイルしながわ",
-        "actual_site_sha256": "3bc6e39e735ab55035a37c0b67b71757afad44e6cc6758bfa9829f1a6a7d5249",
+        "actual_site_sha256": "9b4122f1272b2496ee24b08265b2b337bddc7bf966c0195ddcfc9b7c7d900fb7",
         "actual_collector_sha256": "9b4122f1272b2496ee24b08265b2b337bddc7bf966c0195ddcfc9b7c7d900fb7",
-        "status": "applied"
+        "status": "already_synced"
       }
     ]
   },
@@ -364,43 +333,11 @@
     "site_event_count": 203,
     "collector_only_count": 0,
     "site_only_count": 0,
-    "high_risk_diff_record_count": 102,
-    "high_risk_event_count": 10,
-    "records_by_family": {
-      "historical_slide": 82,
-      "historical_reference": 18,
-      "date_prediction": 2
-    },
-    "records_by_action": {
-      "individual_review": 28,
-      "restore_collector_from_site_or_reenable_export_postprocess": 72,
-      "low_priority_or_unclassified": 2
-    },
-    "events_by_action": {
-      "expired_historical_slide_downgrade": 9,
-      "individual_review": 1
-    }
+    "high_risk_diff_record_count": 0,
+    "high_risk_event_count": 0,
+    "records_by_family": {},
+    "records_by_action": {},
+    "events_by_action": {}
   },
-  "blocking_examples": [
-    {
-      "event_key": "第51回 浄土寺盆踊り大会||浄土寺",
-      "event_name": "第51回 浄土寺盆踊り大会",
-      "venue": "浄土寺",
-      "recommended_action": "individual_review",
-      "families": [
-        "date_prediction",
-        "historical_slide"
-      ],
-      "field_count": 3,
-      "fields": [
-        "display_tier",
-        "recurrence_reasons",
-        "recurrence_score"
-      ],
-      "actions": {
-        "individual_review": 1,
-        "low_priority_or_unclassified": 2
-      }
-    }
-  ]
+  "blocking_examples": []
 }

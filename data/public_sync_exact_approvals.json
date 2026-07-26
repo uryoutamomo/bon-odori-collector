@@ -52,8 +52,9 @@
       "id": "reviewed-update-4fd47f524562",
       "kind": "same_key_update",
       "event_key": "大和町八幡神社大盆踊り会||中野大和町八幡神社",
-      "site_sha256": "722b2a09bfda6d17bd5dcf51d6b9c9c1bcf97403ef30b05dc5a3a6cb6dd85cd9",
-      "collector_sha256": "b99a8a4c9ccd5659f4a01258db364b00ed1981b424f2f6e4acda2f5f9432ed0c"
+      "site_sha256": "b1a6cb1cf7ae31586ec223d6b01498ebf27f6bce88f889fe1d6453b7a9a265c3",
+      "collector_sha256": "e1ceba61dbabf14069f080aed8ca807490244d0dc69b11d9f601669705db9560",
+      "reason": "2026-07-24承認分はsiteへ同期済み。今回の差分はDJ進行見出し2件（DJ「俚謡山脈」・DJ「珍盤亭娯楽師匠」）を曲目から外しただけで、残る13曲は属性まで含めて不変（2026-07-26 こと検証・内田さんGO）"
     },
     {
       "id": "reviewed-update-cf454e6e13d3",
