@@ -1,7 +1,7 @@
 # Master RDB audit
 
-- generated_at: 2026-07-25T15:24:42.893332+00:00
-- database: /private/tmp/claude-501/-Users-ryotauchida/8cc5ead5-40c7-485a-801e-1e0f43049b7f/scratchpad/inbox_v2_dry.sqlite
+- generated_at: 2026-07-26T02:32:49.090278+00:00
+- database: data/bon_odori_master.sqlite
 - issue_count: 1
 - issues_by_severity: {'medium': 1}
 
@@ -10,22 +10,22 @@
 - event_investigation_tasks: 79
 - event_occurrences: 253
 - event_series: 241
-- evidence_items: 31183
+- evidence_items: 31300
 - external_record_links: 2654
 - historical_promotion_candidates: 16
 - master_meta: 0
 - notion_sync_jobs: 0
-- observed_occurrence_songs: 30772
+- observed_occurrence_songs: 30883
 - observed_occurrences: 2164
 - occurrence_dates: 296
 - occurrence_evidence_links: 100
-- occurrence_song_evidence_links: 963
-- occurrence_songs: 795
+- occurrence_song_evidence_links: 1008
+- occurrence_songs: 820
 - predicted_occurrence_dates: 14
-- review_inbox_items: 0
-- schema_migrations: 2
+- review_inbox_items: 386
+- schema_migrations: 3
 - song_aliases: 141
-- songs: 379
+- songs: 394
 - venue_aliases: 290
 - venues: 241
 - write_batches: 0
@@ -46,7 +46,7 @@
 - observed_unmatched_occurrences: 2050
 - observed_discard_candidate_occurrences: 126
 - observed_out_of_scope_occurrences: 61
-- observed_unmatched_songs: 21964
+- observed_unmatched_songs: 21998
 - historical_promotion_candidates: 16
 - historical_auto_promote_eligible: 13
 - predicted_occurrence_dates: 14

@@ -8838,13 +8838,6 @@ const EVENTS = [
         "basis_label": "2025年実測"
       },
       {
-        "name": "DJタイム",
-        "confidence": "hint",
-        "probability": 57,
-        "basis": "past_evidence",
-        "basis_label": "2025年実測"
-      },
-      {
         "name": "あなたの出番",
         "confidence": "hint",
         "probability": 57,
@@ -20998,20 +20991,6 @@ const EVENTS = [
       }
     ],
     "songs": [
-      {
-        "name": "DJ「俚謡山脈」",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
-      },
-      {
-        "name": "DJ「珍盤亭娯楽師匠」",
-        "confidence": "confirmed",
-        "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
-      },
       {
         "name": "かわさき",
         "confidence": "confirmed",

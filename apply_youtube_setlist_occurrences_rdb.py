@@ -313,6 +313,8 @@ SONG_CANDIDATE_STATUS = "候補"  # matches the existing convention (e.g. build_
 # writer); introducing a second "candidate" spelling would just add another
 # inconsistent status value instead of joining the existing one.
 
+SONG_INACTIVE_STATUS = "無効"  # 曲マスタ整理で「曲ではない」「表記ゆれ」と人が判定した行の状態。
+
 
 def resolve_song(conn, raw_title, venue, now, register_candidate=True):
     """Return (song_id, display_title, verdict). verdict is one of
@@ -333,6 +335,12 @@ def resolve_song(conn, raw_title, venue, now, register_candidate=True):
         (normalized,),
     ).fetchone()
     if existing:
+        if existing[2] == SONG_INACTIVE_STATUS:
+            # 「無効」は曲マスタ整理で人が「曲名ではない」と判定した記録なので、
+            # 形の検査より強い。既存行にヒットした時点で shape check は走らないため、
+            # ここで拾わないと無効化した行が再取り込みで occurrence_songs へ戻る
+            # （2026-07-26 に DJ 進行見出しを無効化した時に見つかった経路）。
+            return None, None, "rejected"
         verdict = "matched" if existing[2] != SONG_CANDIDATE_STATUS else "candidate_existing"
         return existing[0], existing[1], verdict
     if not register_candidate:

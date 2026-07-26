@@ -1,0 +1,243 @@
+{
+  "generated_at": "2026-07-26T02:32:37.183612+00:00",
+  "generated_by": "apply_dj_segment_song_removal_20260726.py",
+  "mode": "apply",
+  "outputs": {
+    "target_db": "data/bon_odori_master.sqlite",
+    "backup_db": "data/backups/bon_odori_master.20260726T023237.183612+0000.sqlite.bak"
+  },
+  "write_guard": {
+    "db_committed": true,
+    "rolled_back": false
+  },
+  "summary": {
+    "occurrence_songs_removed": 4,
+    "songs_deactivated": 3,
+    "evidence_links_removed": 3,
+    "observed_rows_detached": 3,
+    "skipped_count": 0,
+    "issues_by_severity": {},
+    "before_counts": {
+      "event_investigation_tasks": 79,
+      "event_occurrences": 253,
+      "event_series": 241,
+      "evidence_items": 31300,
+      "external_record_links": 2654,
+      "historical_promotion_candidates": 16,
+      "master_meta": 0,
+      "notion_sync_jobs": 0,
+      "observed_occurrence_songs": 30883,
+      "observed_occurrences": 2164,
+      "occurrence_dates": 296,
+      "occurrence_evidence_links": 100,
+      "occurrence_song_evidence_links": 1011,
+      "occurrence_songs": 824,
+      "predicted_occurrence_dates": 14,
+      "review_inbox_items": 386,
+      "schema_migrations": 3,
+      "song_aliases": 141,
+      "songs": 394,
+      "venue_aliases": 290,
+      "venues": 241,
+      "write_batches": 0
+    },
+    "after_counts": {
+      "event_investigation_tasks": 79,
+      "event_occurrences": 253,
+      "event_series": 241,
+      "evidence_items": 31300,
+      "external_record_links": 2654,
+      "historical_promotion_candidates": 16,
+      "master_meta": 0,
+      "notion_sync_jobs": 0,
+      "observed_occurrence_songs": 30883,
+      "observed_occurrences": 2164,
+      "occurrence_dates": 296,
+      "occurrence_evidence_links": 100,
+      "occurrence_song_evidence_links": 1008,
+      "occurrence_songs": 820,
+      "predicted_occurrence_dates": 14,
+      "review_inbox_items": 386,
+      "schema_migrations": 3,
+      "song_aliases": 141,
+      "songs": 394,
+      "venue_aliases": 290,
+      "venues": 241,
+      "write_batches": 0
+    }
+  },
+  "removed_occurrence_songs": [
+    {
+      "occurrence_song_id": "ocs_inherit_df3e48cc4c8fd857",
+      "expected_song_title_raw": "DJタイム",
+      "expected_occurrence_id": "occ_22c38bfed7ff79db",
+      "occurrence_label": "東本願寺盆踊り 2026 (inherited prediction, 57%)",
+      "before": {
+        "occurrence_song_id": "ocs_inherit_df3e48cc4c8fd857",
+        "occurrence_id": "occ_22c38bfed7ff79db",
+        "song_id": "song_cand_2595c2aa125ee6a0",
+        "song_title_raw": "DJタイム",
+        "origin": "inherited_prediction",
+        "role": "prediction",
+        "evidence_status": "predicted",
+        "probability": 57.0
+      },
+      "after": null
+    },
+    {
+      "occurrence_song_id": "ocs_eaf526d40354bb24",
+      "expected_song_title_raw": "DJタイム",
+      "expected_occurrence_id": "occ_c2b890eb32b32469",
+      "occurrence_label": "東本願寺盆踊り 2025 (observed, the prediction's source)",
+      "before": {
+        "occurrence_song_id": "ocs_eaf526d40354bb24",
+        "occurrence_id": "occ_c2b890eb32b32469",
+        "song_id": "song_cand_2595c2aa125ee6a0",
+        "song_title_raw": "DJタイム",
+        "origin": "observed_youtube_setlist",
+        "role": "result",
+        "evidence_status": "observed",
+        "probability": 95.0
+      },
+      "after": null
+    },
+    {
+      "occurrence_song_id": "ocs_4c630a84238e7ec4",
+      "expected_song_title_raw": "DJ「俚謡山脈」",
+      "expected_occurrence_id": "occ_332b7b4f03829f7e",
+      "occurrence_label": "大和町八幡神社大盆踊り会 2026 (observed, 95%)",
+      "before": {
+        "occurrence_song_id": "ocs_4c630a84238e7ec4",
+        "occurrence_id": "occ_332b7b4f03829f7e",
+        "song_id": "song_cand_0c8fa3c0245811c2",
+        "song_title_raw": "DJ「俚謡山脈」",
+        "origin": "observed_youtube_setlist",
+        "role": "result",
+        "evidence_status": "observed",
+        "probability": 95.0
+      },
+      "after": null
+    },
+    {
+      "occurrence_song_id": "ocs_10e9dfc0fdc8d877",
+      "expected_song_title_raw": "DJ「珍盤亭娯楽師匠」",
+      "expected_occurrence_id": "occ_332b7b4f03829f7e",
+      "occurrence_label": "大和町八幡神社大盆踊り会 2026 (observed, 95%)",
+      "before": {
+        "occurrence_song_id": "ocs_10e9dfc0fdc8d877",
+        "occurrence_id": "occ_332b7b4f03829f7e",
+        "song_id": "song_cand_62cc39e3c2fb8f0b",
+        "song_title_raw": "DJ「珍盤亭娯楽師匠」",
+        "origin": "observed_youtube_setlist",
+        "role": "result",
+        "evidence_status": "observed",
+        "probability": 95.0
+      },
+      "after": null
+    }
+  ],
+  "deactivated_songs": [
+    {
+      "song_id": "song_cand_2595c2aa125ee6a0",
+      "expected_canonical_title": "DJタイム",
+      "before": {
+        "song_id": "song_cand_2595c2aa125ee6a0",
+        "canonical_title": "DJタイム",
+        "status": "候補",
+        "evidence_count": null,
+        "source_url": null,
+        "memo": "auto-registered from YouTube setlist extraction (apply_youtube_setlist_occurrences_rdb.py)"
+      },
+      "after": {
+        "song_id": "song_cand_2595c2aa125ee6a0",
+        "canonical_title": "DJタイム",
+        "status": "無効",
+        "evidence_count": 0.0,
+        "source_url": "",
+        "memo": "auto-registered from YouTube setlist extraction (apply_youtube_setlist_occurrences_rdb.py)\n\n曲マスタ整理: 無効化。\n理由: YouTubeセットリストのDJ進行見出しで、曲名ではない。"
+      }
+    },
+    {
+      "song_id": "song_cand_0c8fa3c0245811c2",
+      "expected_canonical_title": "DJ「俚謡山脈」",
+      "before": {
+        "song_id": "song_cand_0c8fa3c0245811c2",
+        "canonical_title": "DJ「俚謡山脈」",
+        "status": "候補",
+        "evidence_count": null,
+        "source_url": null,
+        "memo": "auto-registered from YouTube setlist extraction (apply_youtube_setlist_occurrences_rdb.py)"
+      },
+      "after": {
+        "song_id": "song_cand_0c8fa3c0245811c2",
+        "canonical_title": "DJ「俚謡山脈」",
+        "status": "無効",
+        "evidence_count": 0.0,
+        "source_url": "",
+        "memo": "auto-registered from YouTube setlist extraction (apply_youtube_setlist_occurrences_rdb.py)\n\n曲マスタ整理: 無効化。\n理由: YouTubeセットリストのDJ進行見出しで、曲名ではない。"
+      }
+    },
+    {
+      "song_id": "song_cand_62cc39e3c2fb8f0b",
+      "expected_canonical_title": "DJ「珍盤亭娯楽師匠」",
+      "before": {
+        "song_id": "song_cand_62cc39e3c2fb8f0b",
+        "canonical_title": "DJ「珍盤亭娯楽師匠」",
+        "status": "候補",
+        "evidence_count": null,
+        "source_url": null,
+        "memo": "auto-registered from YouTube setlist extraction (apply_youtube_setlist_occurrences_rdb.py)"
+      },
+      "after": {
+        "song_id": "song_cand_62cc39e3c2fb8f0b",
+        "canonical_title": "DJ「珍盤亭娯楽師匠」",
+        "status": "無効",
+        "evidence_count": 0.0,
+        "source_url": "",
+        "memo": "auto-registered from YouTube setlist extraction (apply_youtube_setlist_occurrences_rdb.py)\n\n曲マスタ整理: 無効化。\n理由: YouTubeセットリストのDJ進行見出しで、曲名ではない。"
+      }
+    }
+  ],
+  "removed_evidence_links": [
+    {
+      "occurrence_song_id": "ocs_10e9dfc0fdc8d877",
+      "evidence_id": "ev_812454cedfc5e924",
+      "link_status": "linked"
+    },
+    {
+      "occurrence_song_id": "ocs_4c630a84238e7ec4",
+      "evidence_id": "ev_e7a76b82427d1bfe",
+      "link_status": "linked"
+    },
+    {
+      "occurrence_song_id": "ocs_eaf526d40354bb24",
+      "evidence_id": "ev_63a6796dcdf4e032",
+      "link_status": "linked"
+    }
+  ],
+  "detached_observed_rows": [
+    {
+      "observed_occurrence_song_id": "obsocs_15d36b77509d47e1",
+      "occurrence_song_id": "ocs_eaf526d40354bb24",
+      "raw_song_title": "DJタイム",
+      "matched_song_id": "song_cand_2595c2aa125ee6a0",
+      "match_status": "matched_song"
+    },
+    {
+      "observed_occurrence_song_id": "obsocs_0360a8441332b151",
+      "occurrence_song_id": "ocs_4c630a84238e7ec4",
+      "raw_song_title": "DJ「俚謡山脈」",
+      "matched_song_id": "song_cand_0c8fa3c0245811c2",
+      "match_status": "matched_song"
+    },
+    {
+      "observed_occurrence_song_id": "obsocs_8ac6b141b8629692",
+      "occurrence_song_id": "ocs_10e9dfc0fdc8d877",
+      "raw_song_title": "DJ「珍盤亭娯楽師匠」",
+      "matched_song_id": "song_cand_62cc39e3c2fb8f0b",
+      "match_status": "matched_song"
+    }
+  ],
+  "skipped": [],
+  "issues": []
+}

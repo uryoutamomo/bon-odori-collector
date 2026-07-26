@@ -146,6 +146,32 @@ class ResolveSongTest(unittest.TestCase):
             self.assertEqual(verdict, "candidate_existing")
             self.assertEqual(conn.execute("SELECT COUNT(*) FROM songs").fetchone()[0], 1)
 
+    def test_rejects_a_title_whose_master_row_was_deactivated(self):
+        # 2026-07-26 に無効化した DJ 進行見出し。既存行にヒットすると shape check は
+        # 走らないので、無効を見ないと再取り込みで occurrence_songs へ戻ってしまう。
+        with closing(
+            songs_db([("DJタイム", normalize_text("DJタイム"), "無効", "song_cand_2595c2aa125ee6a0")])
+        ) as conn:
+            song_id, display_title, verdict = apply_setlists.resolve_song(
+                conn, "DJタイム", "東本願寺", NOW
+            )
+
+            self.assertEqual((song_id, display_title, verdict), (None, None, "rejected"))
+            self.assertEqual(conn.execute("SELECT COUNT(*) FROM songs").fetchone()[0], 1)
+
+    def test_rejects_a_deactivated_title_that_still_looks_like_a_song(self):
+        # 「馬鹿おどり」は形の検査では弾けない。内田さんが曲ではないと判定した
+        # 結果は無効の状態にしか残っていないので、そこを見る必要がある。
+        with closing(
+            songs_db([("馬鹿おどり", normalize_text("馬鹿おどり"), "無効", "song_e9b4200a773c6792")])
+        ) as conn:
+            self.assertTrue(apply_setlists.song_title_passes_shape_check("馬鹿おどり"))
+
+            self.assertEqual(
+                apply_setlists.resolve_song(conn, "馬鹿おどり", "", NOW),
+                (None, None, "rejected"),
+            )
+
     def test_registers_an_unseen_plausible_title_as_a_candidate(self):
         with closing(songs_db()) as conn:
             song_id, display_title, verdict = apply_setlists.resolve_song(

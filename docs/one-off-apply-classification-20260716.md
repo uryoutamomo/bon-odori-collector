@@ -71,6 +71,14 @@ E「名残の撤去」では、済んだ one-off apply を `legacy/` へ移動�
 | `legacy/apply/apply_2026_kamodai_shinjuku_chuo_park_dates.py` | 鴨台盆踊り・新宿中央公園夏祭りのRDB日付/会場フィールドを個別修正した済みone-off |
 | `legacy/apply/apply_reviewed_detail_source_reconciliation_20260724.py` | detail/source_urlのRDB↔site乖離2件を個別修正した済みone-off |
 
+## 追加移動済み: DJ進行見出しの公開層除去（2026-07-26）
+
+内田さん判断で、公開層に「曲」として出ていたDJの進行見出し（東本願寺の「DJタイム」2行と大和町八幡神社の「DJ「俚謡山脈」」「DJ「珍盤亭娯楽師匠」」）を削除した済みone-off。対象4行を定数で持つだけの単発なので、実行後すぐ `legacy/apply/` へ置いた。
+
+| moved path | 理由 |
+|---|---|
+| `legacy/apply/apply_dj_segment_song_removal_20260726.py` | occurrence_songs 4行の削除と songs 3件の無効化を行った済みone-off。songsは既存の曲マスタ整理と同じく削除せず `status='無効'` にしている |
+
 ## 保留: C完了まで残す公開JSONパッチ系
 
 | file | 理由 |
