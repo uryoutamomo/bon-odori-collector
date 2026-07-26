@@ -219,6 +219,54 @@ class PlanYoutubeEventUpdatesTest(unittest.TestCase):
                 self.assertEqual(match["name"], public_name)
                 self.assertIn("event_alias_in_youtube", match["reasons"])
 
+    def test_prefers_event_named_in_title_over_same_score_description_link(self):
+        row = {
+            "event_name": "【ハマサイトの夏祭り 2025】盆踊り",
+            "venue": "",
+            "source_video_title": "【ハマサイトの夏祭り 2025】盆踊り",
+            "description_excerpt": "関連動画: 中野駅前大盆踊り大会 2025",
+        }
+        public_events = [
+            {"name": "中野駅前大盆踊り大会", "venue": "", "area": "中野区"},
+            {"name": "第16回ハマサイトの夏祭り", "venue": "", "area": "港区"},
+        ]
+
+        match = match_public_event(row, public_events)
+
+        self.assertEqual(match["name"], "第16回ハマサイトの夏祭り")
+        self.assertEqual(match["score"], 75)
+
+    def test_title_tie_breaker_survives_hamasite_public_name_rename(self):
+        row = {
+            "event_name": "【ハマサイトの夏祭り 2025】盆踊り",
+            "venue": "",
+            "source_video_title": "【ハマサイトの夏祭り 2025】盆踊り",
+            "description_excerpt": "関連動画: 中野駅前大盆踊り大会 2025",
+        }
+        public_events = [
+            {"name": "ハマサイトの夏祭り", "venue": "", "area": "港区"},
+            {"name": "中野駅前大盆踊り大会", "venue": "", "area": "中野区"},
+        ]
+
+        match = match_public_event(row, public_events)
+
+        self.assertEqual(match["name"], "ハマサイトの夏祭り")
+        self.assertEqual(match["score"], 75)
+
+    def test_title_tie_breaker_does_not_promote_broad_event_name(self):
+        row = {
+            "source_video_title": "京橋公園納涼盆踊り大会 2025",
+            "description_excerpt": "関連動画: 第10回白金台どんぐり児童遊園 納涼盆踊り大会",
+        }
+        public_events = [
+            {"name": "納涼盆踊り大会", "venue": "", "area": "世田谷区"},
+            {"name": "第10回白金台どんぐり児童遊園 納涼盆踊り大会", "venue": "", "area": "港区"},
+        ]
+
+        match = match_public_event(row, public_events)
+
+        self.assertEqual(match["name"], "第10回白金台どんぐり児童遊園 納涼盆踊り大会")
+
     def test_clean_song_title(self):
         self.assertEqual(clean_song_title("東京音頭 / Tokyo Ondo"), "東京音頭")
         self.assertEqual(clean_song_title("ダンシングヒーロー盆踊り"), "ダンシングヒーロー")

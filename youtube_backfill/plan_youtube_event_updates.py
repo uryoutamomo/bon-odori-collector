@@ -26,6 +26,9 @@ TOKYO_23_AREAS = {
 }
 OUT_OF_SCOPE_RE = re.compile(r"(博多|福岡|ラゾーナ川崎|川崎|横浜|鶴見|總持寺|総持寺)")
 GENERIC_EVENT_NAMES = {"盆踊り大会", "盆踊り", "納涼盆踊り", "夏祭り"}
+# These broad labels can occur inside an unrelated event title (for example,
+# 京橋公園納涼盆踊り大会); do not let that alone outrank a specific candidate.
+TITLE_TIE_BREAK_EXCLUDED_EVENT_NAMES = GENERIC_EVENT_NAMES | {"桜まつり", "納涼盆踊り大会"}
 POST_EVENT_CONTEXT_RE = re.compile(
     r"\b(?:right\s+)?after\s+(?:the\s+)?[^\n]{0,80}\bbon\s*(?:odori|dance)\b",
     re.I,
@@ -101,7 +104,9 @@ def match_public_event(row, public_events):
     if is_post_event_context_only(row):
         return None
     blob = norm(text_blob(row))
+    title = norm(row.get("source_video_title") or row.get("event_name") or "")
     best = None
+    best_rank = None
     for event in public_events:
         score = 0
         reasons = []
@@ -109,6 +114,11 @@ def match_public_event(row, public_events):
         event_name = norm(event.get("name"))
         venue = norm(event.get("venue"))
         event_alias = find_event_alias(raw_event_name, blob, norm)
+        title_event_alias = find_event_alias(raw_event_name, title, norm)
+        title_event_match = bool(
+            raw_event_name not in TITLE_TIE_BREAK_EXCLUDED_EVENT_NAMES
+            and (title_event_alias or (event_name and event_name in title))
+        )
         if event_alias:
             score += 70
             reasons.append("event_alias_in_youtube")
@@ -141,15 +151,14 @@ def match_public_event(row, public_events):
             "score": score,
             "reasons": reasons,
         }
-        if (
-            best is None
-            or candidate["score"] > best["score"]
-            or (
-                candidate["score"] == best["score"]
-                and len(candidate["name"]) > len(best.get("name") or "")
-            )
-        ):
+        # Descriptions often contain related-video links.  At the same score,
+        # an event explicitly named in the video title is stronger evidence
+        # than an event mentioned only in that descriptive noise.  Name length
+        # remains a deterministic final tie-breaker when title evidence agrees.
+        rank = (candidate["score"], int(title_event_match), len(candidate["name"]))
+        if best is None or rank > best_rank:
             best = candidate
+            best_rank = rank
     return best if best and best["score"] >= 70 else None
 
 
