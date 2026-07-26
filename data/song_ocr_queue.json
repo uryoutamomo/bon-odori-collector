@@ -1,6 +1,6 @@
 {
   "generated_by": "build_song_ocr_queue.py",
-  "count": 37,
+  "count": 39,
   "items": [
     {
       "id": "b21783a2a9785946",
@@ -589,6 +589,36 @@
         "https://pbs.twimg.com/media/HOFB3sva8AA7p3H.jpg"
       ],
       "text": "太宰府天満宮の夏越おどりを訪ねました。夏の天神まつりの盆踊り。\nお手本の先生の踊りが綺麗で格好いい。振り付けも洒落てるし、さすが令和発祥の都・太宰府⛩️\n\n曲目は夏越でピラッパー、天神様のうた、お月見おどり、新宝島、Beat It\n\nいい曲ばかりで楽しく踊ったよ。みんな暑い中お疲れさま🎐 https://t.co/bvXTZMFMtE",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "fce983e534fd1096",
+      "status": "needs_ocr",
+      "account": "@moha101moha101",
+      "url": "https://x.com/moha101moha101/status/2081107148692738429",
+      "tweet_id": "2081107148692738429",
+      "date": "2026-07-25T19:59:44+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HOGT69nagAAkZTh.jpg",
+        "https://t.co/uQbbB99p5N",
+        "pic.x.com/uQbbB99p5N"
+      ],
+      "text": "2人で公園の木を櫓にして練習した\n\n今日の曲目\n#大金平祭 #盆踊り https://t.co/uQbbB99p5N",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "53211e40583c7212",
+      "status": "needs_ocr",
+      "account": "@yakenohara_taro",
+      "url": "https://x.com/yakenohara_taro/status/2081166243856531907",
+      "tweet_id": "2081166243856531907",
+      "date": "2026-07-25T23:54:33+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2081165706805321728/img/3EOv9ITiqMsIFE2b.jpg",
+        "https://t.co/zdlWAxiryT",
+        "pic.x.com/zdlWAxiryT"
+      ],
+      "text": "「アジアン・ヒップホップ・メガ・ヒッツ盆踊り」ミックスをサンクラにアップしました！\nhttps://t.co/3BMH2HfT3Q\nサクッと短い20分のミックスなのでサクッと是非！\n\n「多文化盆踊り」「アジアのヒップホップで盆踊りをしよう」というコンセプトのオファーを頂き、アジア各国、タイ、フィリピン、中国、韓国、ベトナム、ネパール等のヒップホップをかけた模様です！\n曲目↓です！\n\n01.千葉雄喜 - チーム友達 (Japan)\n02.F.HERO Ft. P-Hot, YOUNGOHM, FYMME - เสือสิ้นลาย (Thailand)\n03.Ez Mil - Panalo (Trap Cariñosa) (Philippines)\n04.GAI周延 - 華夏 (Hua Xia) (China)\n05.PSY - HANGOVER (feat. Snoop Dogg) (South Korea)\n06.Hoàng Thùy Linh - Để Mị Nói Cho Mà Nghe (Vietnam)\n07.BALEN - NEPAL HASEKO (Nepal)\n08.D",
       "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
     }
   ]

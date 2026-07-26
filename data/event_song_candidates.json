@@ -1,8 +1,8 @@
 {
   "generated_by": "build_event_song_candidates.py",
-  "count": 1268,
-  "public_event_count": 635,
-  "review_count": 633,
+  "count": 1286,
+  "public_event_count": 655,
+  "review_count": 631,
   "candidates": [
     {
       "id": "81bb763b6f00de69",
@@ -3243,28 +3243,6 @@
       "evidence_count": 1
     },
     {
-      "id": "d99216b6811983a0",
-      "song_name": "ダンシングヒーロー",
-      "event_name": "新宿二丁目太宗寺盆踊り大会",
-      "venue": "太宗寺",
-      "area": "新宿区",
-      "status": "未確認",
-      "confidence": "中",
-      "reasons": [
-        "known_song_context"
-      ],
-      "evidence": [
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=1SkA2QDGlbA",
-          "date": "2025-07-14T06:30:00Z",
-          "text": "和太鼓お祭りチャンネル\nダンシング・ヒーロー（荻野目洋子）　2025年新宿太宗寺盆踊り６　新宿二丁目町会　東京都新宿区\n2025年7月13日に行われました、\n新宿2丁目町会\n「新宿太宗寺盆踊り」終了20分前の会場の様子です。\n\n#ダンシングヒーロー\n#太宗寺\n#盆踊り\n\n\n新宿太宗寺盆踊り\n１ジンギスカン　https://youtu.be/60fxU8jL-wQ\n２盆ギリ恋歌　https://youtu.be/FYZPLDnlmKY\n３浪花節だよ人生は　https://youtu.be/2q0Cn2e5fuU\n４マツケンサンバⅡ　https://youtu.be/dDV5AXwU5_s\n５Start Over　https://youtu.be/N4PT1PO84rE\n６ダンシングヒーロー　https://youtu.be/1SkA2QDGlbA\n７炭坑節　https://youtu.be/fyOaMSVWiUM\n８終　八木節　h"
-        }
-      ],
-      "already_public": false,
-      "evidence_count": 1
-    },
-    {
       "id": "f81bbe2344993620",
       "song_name": "東京音頭",
       "event_name": "新宿二丁目太宗寺盆踊り大会",
@@ -4000,7 +3978,7 @@
       "evidence_count": 2
     },
     {
-      "id": "08f29c30551c3485",
+      "id": "1cc62b643906747e",
       "song_name": "ダンシングヒーロー",
       "event_name": "盆踊り大会",
       "venue": "木場二丁目公園",
@@ -4011,6 +3989,18 @@
         "known_song_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/HirohitoKondo/status/2081298222711198203",
+          "date": "2026-07-26T08:38:59+00:00",
+          "text": "近藤裕人(ひろひと)\n昨日の盆踊り、三本木夏祭りから東郷町の御岳フェスティバルと兵庫・清水・三ツ池合同盆踊り大会とハシゴで、それぞれ東郷音頭、東郷小唄や炭坑節、ダンシングヒーロー、しんちゃん音頭を汗だくで踊りました。 https://t.co/aohHblJsSM"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://x.com/katsu373minami/status/2081172157506433380",
+          "date": "2026-07-26T00:18:03+00:00",
+          "text": "南かつひこ | 中野区議会議員\n昨夜、中野区立江原公園で開催された江原町会盆踊り大会に参加して来ました。東京音頭や炭坑節、若者向けのダンシングヒーローの曲に合わせて汗だくになりながら踊って来ました。皆さんのように、なかなか上手く踊れないですね。振り付けが難しい。皆さんも良い汗をかかれたのだと思います。午後8時前から雨がポツリと降り始めました。この後、私は別会場へ。途中本降りになりました。大気の不安定が数日続きそうですね。"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=cG6ggApsOgI",
@@ -4247,7 +4237,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 39
+      "evidence_count": 41
     },
     {
       "id": "6f209e9a45da7de9",
@@ -5108,7 +5098,7 @@
       "evidence_count": 5
     },
     {
-      "id": "4f4aca6ec90a1819",
+      "id": "162a6d6eb7447d1d",
       "song_name": "東京音頭",
       "event_name": "盆踊り大会",
       "venue": "木場二丁目公園",
@@ -5120,6 +5110,12 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/katsu373minami/status/2081172157506433380",
+          "date": "2026-07-26T00:18:03+00:00",
+          "text": "南かつひこ | 中野区議会議員\n昨夜、中野区立江原公園で開催された江原町会盆踊り大会に参加して来ました。東京音頭や炭坑節、若者向けのダンシングヒーローの曲に合わせて汗だくになりながら踊って来ました。皆さんのように、なかなか上手く踊れないですね。振り付けが難しい。皆さんも良い汗をかかれたのだと思います。午後8時前から雨がポツリと降り始めました。この後、私は別会場へ。途中本降りになりました。大気の不安定が数日続きそうですね。"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=A3souuD6VI4",
@@ -6238,7 +6234,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 186
+      "evidence_count": 187
     },
     {
       "id": "e6ad694b32fea9d3",
@@ -10508,56 +10504,6 @@
       ],
       "already_public": false,
       "evidence_count": 2
-    },
-    {
-      "id": "fee5288871f349e7",
-      "song_name": "神田明神音頭",
-      "event_name": "神田明神納涼祭り",
-      "venue": "神田明神境内",
-      "area": "千代田区",
-      "status": "未確認",
-      "confidence": "低",
-      "reasons": [
-        "song_suffix_near_context"
-      ],
-      "evidence": [
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=TOjT2fBLq64",
-          "date": "2025-08-09T07:19:53Z",
-          "text": "shu channel\n『神田明神音頭 ／小坂井祐莉絵』【神田明神納涼祭り2025🏮アニソン盆踊り】🏮Tokyo Bon Dance👘2025.8.8 @神田明神 Kanda Myojin Shrine\n【神田明神納涼祭り アニソン盆踊り】『神田明神音頭 ／歌唱：小坂井祐莉絵（声優）』\n■開催期間：2025年8月8日（金）\n■開催時間：16時30分～20時30分\n■場所：神田明神境内\n■メインMC：孝藤右近（日本舞踊家／東京大学盆踊り講師）\n■盆踊り協力：東京大学盆踊りサークル\n■太鼓演奏：千代田区民踊連盟\n■ゲスト出演：小坂井祐莉絵、小見川千明、倉持京子 (あみゅどる)、尾崎明日香、佐藤妃星\n■神田明神納涼祭り \nhttps://www.nouryo-matsuri.com/pages/6314608/page_202208061239\n\n#神田明神納涼祭り\n#アニソン盆踊り\n#神田明神音頭\n#小坂井祐莉絵"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=4pQDvVwQd3g",
-          "date": "2025-08-08T16:50:01Z",
-          "text": "shu channel\n【神田明神⛩アニソン盆踊り🏮納涼祭り2025】（第2部 - 3）👘Tokyo Bon Dance🏮2025.8.8 @神田明神 Kanda Myojin Shrine\n00:00:00 Introduction\n00:00:46 クックロビン音頭 \n00:03:13 おジャ魔女カーニバル \n00:07:04 ダンシングヒーロー \n00:12:00 神田明神音頭\n00:17:25 一丁締め\n00:21:34 閉め太鼓\n【神田明神納涼祭り アニソン盆踊り】（第２部－３）\n■開催期間：2025年8月8日（金）\n■開催時間：16時30分～20時30分\n■場所：神田明神境内\n■メインMC：孝藤右近（日本舞踊家／東京大学盆踊り講師）\n■盆踊り協力：東京大学盆踊りサークル\n■太鼓演奏：千代田区民踊連盟\n■ゲスト出演：小坂井祐莉絵、小見川千明、倉持京子 (あみゅどる)、尾崎明日香、佐藤妃星\n■神田明神納涼祭り \nhttp"
-        }
-      ],
-      "already_public": false,
-      "evidence_count": 2
-    },
-    {
-      "id": "49b1433666165365",
-      "song_name": "邪神ちゃん音頭",
-      "event_name": "神田明神納涼祭り",
-      "venue": "神田明神境内",
-      "area": "千代田区",
-      "status": "未確認",
-      "confidence": "低",
-      "reasons": [
-        "song_suffix_near_context"
-      ],
-      "evidence": [
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=Om01Om3MTUU",
-          "date": "2025-08-08T19:19:32Z",
-          "text": "shu channel\n『邪神ちゃん音頭／大森日雅』【神田明神納涼祭り2025🏮アニソン盆踊り】🏮Tokyo Bon Dance👘2025.8.8 @神田明神 Kanda Myojin Shrine\n【神田明神納涼祭り アニソン盆踊り】『邪神ちゃん音頭／大森日雅』\n■開催期間：2025年8月8日（金）\n■開催時間：16時30分～20時30分\n■場所：神田明神境内\n■メインMC：孝藤右近（日本舞踊家／東京大学盆踊り講師）\n■盆踊り協力：東京大学盆踊りサークル\n■太鼓演奏：千代田区民踊連盟\n■ゲスト出演：小坂井祐莉絵、小見川千明、倉持京子 (あみゅどる)、尾崎明日香、佐藤妃星、大森日雅\n■神田明神納涼祭り \nhttps://www.nouryo-matsuri.com/pages/6314608/page_202208061239\n\n#神田明神納涼祭り\n#アニソン盆踊り\n#邪神ちゃん音頭"
-        }
-      ],
-      "already_public": false,
-      "evidence_count": 1
     },
     {
       "id": "e0dd6fcbb45a29de",
@@ -16993,34 +16939,6 @@
       "evidence_count": 1
     },
     {
-      "id": "615b3411fc0cab5c",
-      "song_name": "ズンパ音頭",
-      "event_name": "新宿二丁目太宗寺盆踊り大会",
-      "venue": "太宗寺",
-      "area": "新宿区",
-      "status": "未確認",
-      "confidence": "低",
-      "reasons": [
-        "song_suffix_near_context"
-      ],
-      "evidence": [
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=C1kwmSecDt8",
-          "date": "2026-07-15T08:23:56+00:00",
-          "text": "Urban Walk\n【新宿二丁目太宗寺盆踊り大会 2026】J-POP＆洋楽セレクション 全10曲 / 「ジンギスカン / ズンパ音頭 / ダンシングヒーロ－ / ultra soul / マツケンサンバ...」#盆踊り\n#ジンギスカン #ultrasoul #ダンシングヒーロ－ #太宗寺 #盆踊り #新宿二丁目 #jpop \n\n00:00　ハイライト\n04:46　マツケンサンバⅡ\n08:54　ジンギスカン\n12:00　ダンシングヒーロー\n15:49　Start Over(六本木クラス)\n18:59　ultra soul\n22:20　バハマママ\n25:38　ズンパ音頭\n29:27　盆ギリ恋歌\n33:45　牛ちゃんマンボ\n37:26　恋をするなら\n\n\n【新宿二丁目太宗寺盆踊り大会 2026】\n開催日時：2026年7月13日(月)　～ 2026年7月15日(水)　～20:00\n開催場所 ：太宗寺\nhhttps://www.goog"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=Q72kxSZBwFc",
-          "date": "2025-07-18T13:01:00Z",
-          "text": "和太鼓お祭りチャンネル\nズンパ音頭　2025年新宿2丁目町会盆踊り2日目15　新宿太宗寺境内　東京都新宿区\n2025年7月14日に行われました、\n新宿2丁目町会\n「新宿太宗寺盆踊り」盆踊り会場の様子です。\n\n\n#太宗寺\n#盆踊り\n\n\n新宿太宗寺盆踊り\n2日目\n１炭坑節　https://youtu.be/Jov3un16cs0\n２八木節　https://youtu.be/YXIqnPQgpAE\n３東京音頭　https://youtu.be/3GIEjOp6EqE\n４炭坑節　https://youtu.be/SZBTfbANO6Y\n５八木節　https://youtu.be/okZrjGhI0fU\n６牛ちゃんマンボ　https://youtu.be/ch9PzotdWA8\n７夜に駆ける　https://youtu.be/01dd0n45sF0\n８ニッポンワッショイ　https://youtu.be/R981_eXHy_0\n９新宿音頭"
-        }
-      ],
-      "already_public": false,
-      "evidence_count": 2
-    },
-    {
       "id": "fec988e08e82135d",
       "song_name": "今回はアルコール我慢して踊り",
       "event_name": "新宿二丁目太宗寺盆踊り大会",
@@ -17759,124 +17677,6 @@
       ],
       "already_public": false,
       "evidence_count": 2
-    },
-    {
-      "id": "8d474a176612065d",
-      "song_name": "新宿音頭",
-      "event_name": "花園神社 盆踊り",
-      "venue": "花園神社",
-      "area": "新宿区",
-      "status": "未確認",
-      "confidence": "低",
-      "reasons": [
-        "song_suffix_near_context"
-      ],
-      "evidence": [
-        {
-          "source": "x_voice",
-          "url": "https://x.com/dokodemodojo/status/1686753761660682240",
-          "date": "2023-08-02T15:00:09+00:00",
-          "text": "DOKODEMODOJO\n花園神社⛩令和五年盆踊り🐯\nとらら！🐯二日目\n\n盆踊り詰め合わせ🐯🐧🐯\n#ドンパン節 #新宿音頭 #八木節\n\n#新宿とらおの天気予報\n#とらお #てんぺんちー #とらぺんたーず\n#みにとら #みにとらお散歩 https://t.co/C7B7wqA9k8"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=JbSm8mZusfE",
-          "date": "2025-08-05T11:45:01Z",
-          "text": "祭のきせき　盆踊り\n宝っこ音頭 　新宿 花園神社　盆踊り 　20250803\n新宿 花園神社 盆踊り　2025年8月3日（日）\n\n前半\n大人コンクール　課題曲：新宿音頭\n\nhttps://youtu.be/PXZ97B0BKdw\nhttps://youtu.be/AsULmIH2Ky0\nhttps://youtu.be/CBERUJvgnoM\nhttps://youtu.be/-OCtAId5Zdo\nhttps://youtu.be/7CKKXbyYRRU\nhttps://youtu.be/35zMWf5RROc\nhttps://youtu.be/UJ7pthA6lPQ\nhttps://youtu.be/t4P3X1vBVI0\nhttps://youtu.be/OPpomvedZok\nhttps://youtu.be/npibEFUL31g\nhttps://youtu.be/saQWTdgycRA\nhttps://youtu.b"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=VswlhiCN_kA",
-          "date": "2025-08-05T11:30:33Z",
-          "text": "祭のきせき　盆踊り\nチャンチキおけさ 　新宿 花園神社　盆踊り 　20250803\n新宿 花園神社 盆踊り　2025年8月3日（日）\n\n前半\n大人コンクール　課題曲：新宿音頭\n\nhttps://youtu.be/PXZ97B0BKdw\nhttps://youtu.be/AsULmIH2Ky0\nhttps://youtu.be/CBERUJvgnoM\nhttps://youtu.be/-OCtAId5Zdo\nhttps://youtu.be/7CKKXbyYRRU\nhttps://youtu.be/35zMWf5RROc\nhttps://youtu.be/UJ7pthA6lPQ\nhttps://youtu.be/t4P3X1vBVI0\nhttps://youtu.be/OPpomvedZok\nhttps://youtu.be/npibEFUL31g\nhttps://youtu.be/saQWTdgycRA\nhttps://yout"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=Wfa0G7EhOdg",
-          "date": "2025-08-05T11:15:04Z",
-          "text": "祭のきせき　盆踊り\n炭坑節 　新宿 花園神社　盆踊り 　20250803\n新宿 花園神社 盆踊り　2025年8月3日（日）\n\n前半\n大人コンクール　課題曲：新宿音頭\n\nhttps://youtu.be/PXZ97B0BKdw\nhttps://youtu.be/AsULmIH2Ky0\nhttps://youtu.be/CBERUJvgnoM\nhttps://youtu.be/-OCtAId5Zdo\nhttps://youtu.be/7CKKXbyYRRU\nhttps://youtu.be/35zMWf5RROc\nhttps://youtu.be/UJ7pthA6lPQ\nhttps://youtu.be/t4P3X1vBVI0\nhttps://youtu.be/OPpomvedZok\nhttps://youtu.be/npibEFUL31g\nhttps://youtu.be/saQWTdgycRA\nhttps://youtu.be/"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=NKFXa922JFA",
-          "date": "2025-08-05T11:00:39Z",
-          "text": "祭のきせき　盆踊り\nきよしのズンドコ節 　新宿 花園神社　盆踊り 　20250803\n新宿 花園神社 盆踊り　2025年8月3日（日）\n\n前半\n大人コンクール　課題曲：新宿音頭\n\nhttps://youtu.be/PXZ97B0BKdw\nhttps://youtu.be/AsULmIH2Ky0\nhttps://youtu.be/CBERUJvgnoM\nhttps://youtu.be/-OCtAId5Zdo\nhttps://youtu.be/7CKKXbyYRRU\nhttps://youtu.be/35zMWf5RROc\nhttps://youtu.be/UJ7pthA6lPQ\nhttps://youtu.be/t4P3X1vBVI0\nhttps://youtu.be/OPpomvedZok\nhttps://youtu.be/npibEFUL31g\nhttps://youtu.be/saQWTdgycRA\nhttps://y"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=saQWTdgycRA",
-          "date": "2025-08-05T10:45:32Z",
-          "text": "祭のきせき　盆踊り\n新宿音頭コンクール 予選決勝 　新宿 花園神社　盆踊り 　20250803\n新宿 花園神社 盆踊り　2025年8月3日（日）\n\n前半\n大人コンクール　課題曲：新宿音頭\n\nhttps://youtu.be/PXZ97B0BKdw\nhttps://youtu.be/AsULmIH2Ky0\nhttps://youtu.be/CBERUJvgnoM\nhttps://youtu.be/-OCtAId5Zdo\nhttps://youtu.be/7CKKXbyYRRU\nhttps://youtu.be/35zMWf5RROc\nhttps://youtu.be/UJ7pthA6lPQ\nhttps://youtu.be/t4P3X1vBVI0\nhttps://youtu.be/OPpomvedZok\nhttps://youtu.be/npibEFUL31g\nhttps://youtu.be/saQWTdgycRA\nhttps:"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=npibEFUL31g",
-          "date": "2025-08-05T10:30:34Z",
-          "text": "祭のきせき　盆踊り\n浪花節だよ人生は 　新宿 花園神社　盆踊り 　20250803\n新宿 花園神社 盆踊り　2025年8月3日（日）\n\n前半\n大人コンクール　課題曲：新宿音頭\n\nhttps://youtu.be/PXZ97B0BKdw\nhttps://youtu.be/AsULmIH2Ky0\nhttps://youtu.be/CBERUJvgnoM\nhttps://youtu.be/-OCtAId5Zdo\nhttps://youtu.be/7CKKXbyYRRU\nhttps://youtu.be/35zMWf5RROc\nhttps://youtu.be/UJ7pthA6lPQ\nhttps://youtu.be/t4P3X1vBVI0\nhttps://youtu.be/OPpomvedZok\nhttps://youtu.be/npibEFUL31g\nhttps://youtu.be/saQWTdgycRA\nhttps://you"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=OPpomvedZok",
-          "date": "2025-08-05T10:15:02Z",
-          "text": "祭のきせき　盆踊り\n八木節（高速）　新宿 花園神社　盆踊り 　20250803\n新宿 花園神社 盆踊り　2025年8月3日（日）\n\n前半\n大人コンクール　課題曲：新宿音頭\n\nhttps://youtu.be/PXZ97B0BKdw\nhttps://youtu.be/AsULmIH2Ky0\nhttps://youtu.be/CBERUJvgnoM\nhttps://youtu.be/-OCtAId5Zdo\nhttps://youtu.be/7CKKXbyYRRU\nhttps://youtu.be/35zMWf5RROc\nhttps://youtu.be/UJ7pthA6lPQ\nhttps://youtu.be/t4P3X1vBVI0\nhttps://youtu.be/OPpomvedZok\nhttps://youtu.be/npibEFUL31g\nhttps://youtu.be/saQWTdgycRA\nhttps://youtu."
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=t4P3X1vBVI0",
-          "date": "2025-08-05T10:01:21Z",
-          "text": "祭のきせき　盆踊り\n新宿音頭② 　新宿 花園神社　盆踊り 　20250803\n新宿 花園神社 盆踊り　2025年8月3日（日）\n\n前半\n大人コンクール　課題曲：新宿音頭\n\nhttps://youtu.be/PXZ97B0BKdw\nhttps://youtu.be/AsULmIH2Ky0\nhttps://youtu.be/CBERUJvgnoM\nhttps://youtu.be/-OCtAId5Zdo\nhttps://youtu.be/7CKKXbyYRRU\nhttps://youtu.be/35zMWf5RROc\nhttps://youtu.be/UJ7pthA6lPQ\nhttps://youtu.be/t4P3X1vBVI0\nhttps://youtu.be/OPpomvedZok\nhttps://youtu.be/npibEFUL31g\nhttps://youtu.be/saQWTdgycRA\nhttps://youtu.b"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=UJ7pthA6lPQ",
-          "date": "2025-08-05T10:00:51Z",
-          "text": "祭のきせき　盆踊り\nドンパン節 　新宿 花園神社　盆踊り 　20250803\n新宿 花園神社 盆踊り　2025年8月3日（日）\n\n前半\n大人コンクール　課題曲：新宿音頭\n\nhttps://youtu.be/PXZ97B0BKdw\nhttps://youtu.be/AsULmIH2Ky0\nhttps://youtu.be/CBERUJvgnoM\nhttps://youtu.be/-OCtAId5Zdo\nhttps://youtu.be/7CKKXbyYRRU\nhttps://youtu.be/35zMWf5RROc\nhttps://youtu.be/UJ7pthA6lPQ\nhttps://youtu.be/t4P3X1vBVI0\nhttps://youtu.be/OPpomvedZok\nhttps://youtu.be/npibEFUL31g\nhttps://youtu.be/saQWTdgycRA\nhttps://youtu"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=35zMWf5RROc",
-          "date": "2025-08-05T09:45:00Z",
-          "text": "祭のきせき　盆踊り\n大東京音頭 　新宿 花園神社　盆踊り 　20250803\n新宿 花園神社 盆踊り　2025年8月3日（日）\n\n前半\n大人コンクール　課題曲：新宿音頭\n\nhttps://youtu.be/PXZ97B0BKdw\nhttps://youtu.be/AsULmIH2Ky0\nhttps://youtu.be/CBERUJvgnoM\nhttps://youtu.be/-OCtAId5Zdo\nhttps://youtu.be/7CKKXbyYRRU\nhttps://youtu.be/35zMWf5RROc\nhttps://youtu.be/UJ7pthA6lPQ\nhttps://youtu.be/t4P3X1vBVI0\nhttps://youtu.be/OPpomvedZok\nhttps://youtu.be/npibEFUL31g\nhttps://youtu.be/saQWTdgycRA\nhttps://youtu.b"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=7CKKXbyYRRU",
-          "date": "2025-08-05T09:30:04Z",
-          "text": "祭のきせき　盆踊り\n新宿音頭① 　新宿 花園神社　盆踊り 　20250803\n新宿 花園神社 盆踊り　2025年8月3日（日）\n\n前半\n大人コンクール　課題曲：新宿音頭\n\nhttps://youtu.be/PXZ97B0BKdw\nhttps://youtu.be/AsULmIH2Ky0\nhttps://youtu.be/CBERUJvgnoM\nhttps://youtu.be/-OCtAId5Zdo\nhttps://youtu.be/7CKKXbyYRRU\nhttps://youtu.be/35zMWf5RROc\nhttps://youtu.be/UJ7pthA6lPQ\nhttps://youtu.be/t4P3X1vBVI0\nhttps://youtu.be/OPpomvedZok\nhttps://youtu.be/npibEFUL31g\nhttps://youtu.be/saQWTdgycRA\nhttps://youtu.b"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=-OCtAId5Zdo",
-          "date": "2025-08-05T09:15:00Z",
-          "text": "祭のきせき　盆踊り\n花笠音頭 　新宿 花園神社　盆踊り 　20250803\n新宿 花園神社 盆踊り　2025年8月3日（日）\n\n前半\n大人コンクール　課題曲：新宿音頭\n\nhttps://youtu.be/PXZ97B0BKdw\nhttps://youtu.be/AsULmIH2Ky0\nhttps://youtu.be/CBERUJvgnoM\nhttps://youtu.be/-OCtAId5Zdo\nhttps://youtu.be/7CKKXbyYRRU\nhttps://youtu.be/35zMWf5RROc\nhttps://youtu.be/UJ7pthA6lPQ\nhttps://youtu.be/t4P3X1vBVI0\nhttps://youtu.be/OPpomvedZok\nhttps://youtu.be/npibEFUL31g\nhttps://youtu.be/saQWTdgycRA\nhttps://youtu.be"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=CBERUJvgnoM",
-          "date": "2025-08-05T09:00:27Z",
-          "text": "祭のきせき　盆踊り\nりんご節 　新宿 花園神社　盆踊り 　20250803\n新宿 花園神社 盆踊り　2025年8月3日（日）\n\n前半\n大人コンクール　課題曲：新宿音頭\n\nhttps://youtu.be/PXZ97B0BKdw\nhttps://youtu.be/AsULmIH2Ky0\nhttps://youtu.be/CBERUJvgnoM\nhttps://youtu.be/-OCtAId5Zdo\nhttps://youtu.be/7CKKXbyYRRU\nhttps://youtu.be/35zMWf5RROc\nhttps://youtu.be/UJ7pthA6lPQ\nhttps://youtu.be/t4P3X1vBVI0\nhttps://youtu.be/OPpomvedZok\nhttps://youtu.be/npibEFUL31g\nhttps://youtu.be/saQWTdgycRA\nhttps://youtu.b"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=AsULmIH2Ky0",
-          "date": "2025-08-05T08:45:01Z",
-          "text": "祭のきせき　盆踊り\nズンパ音頭 　新宿 花園神社　盆踊り 　20250803\n新宿 花園神社 盆踊り　2025年8月3日（日）\n\n前半\n大人コンクール　課題曲：新宿音頭\n\nhttps://youtu.be/PXZ97B0BKdw\nhttps://youtu.be/AsULmIH2Ky0\nhttps://youtu.be/CBERUJvgnoM\nhttps://youtu.be/-OCtAId5Zdo\nhttps://youtu.be/7CKKXbyYRRU\nhttps://youtu.be/35zMWf5RROc\nhttps://youtu.be/UJ7pthA6lPQ\nhttps://youtu.be/t4P3X1vBVI0\nhttps://youtu.be/OPpomvedZok\nhttps://youtu.be/npibEFUL31g\nhttps://youtu.be/saQWTdgycRA\nhttps://youtu"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=PXZ97B0BKdw",
-          "date": "2025-08-05T08:30:11Z",
-          "text": "祭のきせき　盆踊り\n東京音頭 　新宿 花園神社　盆踊り 　20250803\n新宿 花園神社 盆踊り　2025年8月3日（日）\n\n前半\n大人コンクール　課題曲：新宿音頭\n\nhttps://youtu.be/PXZ97B0BKdw\nhttps://youtu.be/AsULmIH2Ky0\nhttps://youtu.be/CBERUJvgnoM\nhttps://youtu.be/-OCtAId5Zdo\nhttps://youtu.be/7CKKXbyYRRU\nhttps://youtu.be/35zMWf5RROc\nhttps://youtu.be/UJ7pthA6lPQ\nhttps://youtu.be/t4P3X1vBVI0\nhttps://youtu.be/OPpomvedZok\nhttps://youtu.be/npibEFUL31g\nhttps://youtu.be/saQWTdgycRA\nhttps://youtu.be"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://www.youtube.com/watch?v=-fRgnyO96jw",
-          "date": "2025-08-05T08:00:01Z",
-          "text": "Urban Walk\n新宿に別世界!! 生唄生演奏で盆踊り 【新宿 花園神社 盆踊り 2025】「炭坑節 /東京音頭 / 新宿音頭 / 八木節」/ Hanazono  Shrine Bon Dance Festival\n#花園神社 #八木節 #東京音頭 #新宿音頭 #炭坑節 #新宿 #盆踊り\n\n00:00　炭坑節\n05:42　東京音頭\n10:24　新宿音頭\n15:03　八木節\n\n【新宿 花園神社 盆踊り】\n開催日時：2025年8月2日(土)～3日(日)雨天順延\n開催場所 ：新宿 花園神社\nhttps://www.google.com/maps/place/%E8%8A%B1%E5%9C%92%E7%A5%9E%E7%A4%BE/@35.6935311,139.702753,17z/data=!3m1!4b1!4m6!3m5!1s0x60188cdbe07cde2b:0x3b4028968ed9a754!8m2!3d35.6935"
-        }
-      ],
-      "already_public": false,
-      "evidence_count": 17
     },
     {
       "id": "e85e3513db26f5bc",
@@ -18882,7 +18682,7 @@
       "evidence_count": 1
     },
     {
-      "id": "d9354b22beca1432",
+      "id": "35e9bf96f4962b44",
       "song_name": "おしりたんてい音頭",
       "event_name": "盆踊り大会",
       "venue": "木場二丁目公園",
@@ -18894,6 +18694,12 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=GpfVwOduxVA",
+          "date": "2026-07-26T08:00:07+00:00",
+          "text": "和太鼓お祭りCH\n「銀座カンカン娘」　晴海ふ頭公園盆踊り大会11　2026年7月12日\n2026年7月12日に開催された「晴海ふ頭公園盆踊り大会」での盆踊りの様子をお届けします！\n \n晴海ふ頭公園の心地よい海風を感じながら、\n会場の盛り上がりをぜひ映像でお楽しみください！\n\n\n晴海ふ頭公園盆踊り\n１おしりたんてい音頭　https://youtu.be/a14wHJTz11Y\n２ジャンボリーミッキー　https://youtu.be/qK_wAZd9sfY\n３どんとこいブギ　https://youtu.be/FwKDdeH2N7I\n４河内おとこ節　https://youtu.be/jTg6AaNuJDw\n５Let'sONDOAgain　https://youtu.be/1hoUlCxoGBU\n６東京五輪2020　https://youtu.be/8NRTaNXw95Y\n７これがお江戸の盆ダンス　https://youtu.be/L"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=MQOEFbd0Xmk",
@@ -18968,7 +18774,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 12
+      "evidence_count": 13
     },
     {
       "id": "c8611a709ed14597",
@@ -19047,6 +18853,28 @@
       ],
       "already_public": false,
       "evidence_count": 2
+    },
+    {
+      "id": "99aa0894e28c3364",
+      "song_name": "お座敷おどり",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/tukishimanagaya/status/2081192348118319171",
+          "date": "2026-07-26T01:38:17+00:00",
+          "text": "月島長屋\n🏮第49回堀留公園納涼盆踊り大会🏮\nうちわを使った新曲は「お座敷おどり」だそうです。\nhttps://t.co/dTIPP6AffI"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
     },
     {
       "id": "9891e67833e2293e",
@@ -19425,6 +19253,28 @@
           "url": "https://x.com/nakano_bonodori/status/2069261113552773393",
           "date": "2026-06-23T03:27:49+00:00",
           "text": "中野駅前大盆踊り大会【公式】\n⟡ 🎼🪕 新民謡・歌詞募集 🪈🎼 ⟡\n┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈\n\n昨年度は約9万人にご来場いただいた、#ナカボン こと「中野駅前大盆踊り大会」。\n\n今年、ナカボンでは新たな民謡づくりに挑戦します🏮✨\n\nその第一歩として、皆さまから歌詞を募集いたします。\n\n目指すのは、中野の風景や人々の想いを織り込みながら、100年後も歌い継がれる民謡。\n\nそして毎年少しずつ歌詞を増やし、地域のみんなで育てていく唄です。\n\n今回募集するのは、民謡でよく用いられる「七・七・七・五」の形式による一節。\n\n〽︎\nめでためでたの（7）\n若松様よ（7）\n枝も栄える（7）\n葉も茂る（5）\n\nこのような形で、\n\n・中野の風景\n・街の魅力や思い出\n・好きな場所やお店\n・人とのつながり\n・未来への願い\n\nなどを自由に表現してください😊\n\n踊りが好きな方は、自分の歌詞で踊る楽しみを。\n\n歌が好きな方は、自分の歌詞を歌う喜びを。\n"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "bc33a3102b0c4c4c",
+      "song_name": "それぞれ東郷音頭",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/HirohitoKondo/status/2081298222711198203",
+          "date": "2026-07-26T08:38:59+00:00",
+          "text": "近藤裕人(ひろひと)\n昨日の盆踊り、三本木夏祭りから東郷町の御岳フェスティバルと兵庫・清水・三ツ池合同盆踊り大会とハシゴで、それぞれ東郷音頭、東郷小唄や炭坑節、ダンシングヒーロー、しんちゃん音頭を汗だくで踊りました。 https://t.co/aohHblJsSM"
         }
       ],
       "already_public": false,
@@ -23263,6 +23113,28 @@
       "evidence_count": 1
     },
     {
+      "id": "f5396d6b4f3c7f94",
+      "song_name": "東京音頭や炭坑節",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/katsu373minami/status/2081172157506433380",
+          "date": "2026-07-26T00:18:03+00:00",
+          "text": "南かつひこ | 中野区議会議員\n昨夜、中野区立江原公園で開催された江原町会盆踊り大会に参加して来ました。東京音頭や炭坑節、若者向けのダンシングヒーローの曲に合わせて汗だくになりながら踊って来ました。皆さんのように、なかなか上手く踊れないですね。振り付けが難しい。皆さんも良い汗をかかれたのだと思います。午後8時前から雨がポツリと降り始めました。この後、私は別会場へ。途中本降りになりました。大気の不安定が数日続きそうですね。"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
       "id": "22e6363577c9f94c",
       "song_name": "東京音頭・炭坑節",
       "event_name": "盆踊り大会",
@@ -23279,6 +23151,28 @@
           "url": "https://www.youtube.com/watch?v=dEQoJfTywtQ",
           "date": "2025-03-07T10:30:18Z",
           "text": "和太鼓お祭りチャンネル\n浜町音頭（披露）　2024年浜町音頭保存会盆踊り大会１　東京都中央区\n2024年東京都中央区にあります浜町公園で行われました、\n「濱町音頭保存会盆踊り大会」の様子です。\n\n\n浜町音頭保存会盆踊り\n１浜町音頭　https://youtu.be/dEQoJfTywtQ\n２新浜町音頭　https://youtu.be/XVy11Yvjxms\n\n\n\nその他おすすめ動画\n矢口氷川神社盆踊り\n１チャンチキおけさ　https://youtu.be/Qryv0bqh9M4\n２日光和楽踊り　https://youtu.be/Gyk6pxx9ox0\n３ズンパ音頭　https://youtu.be/b0uRAbPwqdc\n４東京音頭　https://youtu.be/tM-gNwl6Lzc\n５すっきり音頭　https://youtu.be/QyOiCiwWjhs\n６終　きよしのズンドコ節　https://youtu.be/KY"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "ead4e704f67e594e",
+      "song_name": "東郷小唄や炭坑節",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/HirohitoKondo/status/2081298222711198203",
+          "date": "2026-07-26T08:38:59+00:00",
+          "text": "近藤裕人(ひろひと)\n昨日の盆踊り、三本木夏祭りから東郷町の御岳フェスティバルと兵庫・清水・三ツ池合同盆踊り大会とハシゴで、それぞれ東郷音頭、東郷小唄や炭坑節、ダンシングヒーロー、しんちゃん音頭を汗だくで踊りました。 https://t.co/aohHblJsSM"
         }
       ],
       "already_public": false,
@@ -23891,7 +23785,7 @@
       "evidence_count": 15
     },
     {
-      "id": "17f2a7a1a6217b98",
+      "id": "a75943d357ea8f4b",
       "song_name": "炭坑節",
       "event_name": "盆踊り大会",
       "venue": "木場二丁目公園",
@@ -23903,6 +23797,18 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/HirohitoKondo/status/2081298222711198203",
+          "date": "2026-07-26T08:38:59+00:00",
+          "text": "近藤裕人(ひろひと)\n昨日の盆踊り、三本木夏祭りから東郷町の御岳フェスティバルと兵庫・清水・三ツ池合同盆踊り大会とハシゴで、それぞれ東郷音頭、東郷小唄や炭坑節、ダンシングヒーロー、しんちゃん音頭を汗だくで踊りました。 https://t.co/aohHblJsSM"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://x.com/katsu373minami/status/2081172157506433380",
+          "date": "2026-07-26T00:18:03+00:00",
+          "text": "南かつひこ | 中野区議会議員\n昨夜、中野区立江原公園で開催された江原町会盆踊り大会に参加して来ました。東京音頭や炭坑節、若者向けのダンシングヒーローの曲に合わせて汗だくになりながら踊って来ました。皆さんのように、なかなか上手く踊れないですね。振り付けが難しい。皆さんも良い汗をかかれたのだと思います。午後8時前から雨がポツリと降り始めました。この後、私は別会場へ。途中本降りになりました。大気の不安定が数日続きそうですね。"
+        },
         {
           "source": "x_voice",
           "url": "https://x.com/bonkyodora_/status/2080999779182805486",
@@ -24445,7 +24351,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 90
+      "evidence_count": 92
     },
     {
       "id": "3b25404c500fa6fd",
@@ -26035,34 +25941,6 @@
       ],
       "already_public": false,
       "evidence_count": 1
-    },
-    {
-      "id": "d3d1cb035ad81e20",
-      "song_name": "赤坂小唄",
-      "event_name": "第51回 浄土寺盆踊り大会",
-      "venue": "浄土寺",
-      "area": "港区",
-      "status": "未確認",
-      "confidence": "低",
-      "reasons": [
-        "song_suffix_near_context"
-      ],
-      "evidence": [
-        {
-          "source": "x_voice",
-          "url": "https://x.com/bakushin339711/status/2079452144005152844",
-          "date": "2026-07-21T06:23:20+00:00",
-          "text": "バクシン\n7/8(水)\n赤坂浄土寺盆踊りの練習会へ行って来ました。あかね会様リードのもと\n赤坂小唄、真室川音頭(団扇)等難易度高い赤坂ナンバーを練習！全体の所作はある程度分かったがやはり難しい💦\n練習あるのみ！！\n本番もまたよろしくお願い致します🙇 https://t.co/bFW28eseYm"
-        },
-        {
-          "source": "x_voice",
-          "url": "https://x.com/tanoshiki_kana/status/2078446377517174845",
-          "date": "2026-07-18T11:46:46+00:00",
-          "text": "楽しき哉。\n7/17（金） #浄土寺 #盆踊り 練習会へ。団扇ワークが美しい #赤坂小唄 #真室川音頭 踊れて嬉しい 来週の #浄土寺盆踊り 楽しみ😌#赤坂音頭 #赤坂豊川音頭 #赤坂あかね音頭 赤坂は素敵な踊りがいっぱい💕#赤坂あかね会 さま、お世話になりました🙏 https://t.co/CWlQNk5MDa"
-        }
-      ],
-      "already_public": false,
-      "evidence_count": 2
     },
     {
       "id": "ce6ba57b0379334c",
@@ -28194,6 +28072,12 @@
       "evidence": [
         {
           "source": "x_voice",
+          "url": "https://x.com/4nb_ex_d/status/2081289365884633175",
+          "date": "2026-07-26T08:03:47+00:00",
+          "text": "shin◯bu\n2026.07.26\n下北沢盆踊り2026\nシモキタ音頭 / 馬浪マラカス団\n\n#下北沢盆踊り2026 https://t.co/wNkycfl1OL"
+        },
+        {
+          "source": "x_voice",
           "url": "https://x.com/ZnafG/status/2081028101040144707",
           "date": "2026-07-25T14:45:37+00:00",
           "text": "ザナフ\n今日は下北沢盆踊りへ。\n雨雲が避けてくれたようで最後まで雨は降らず、たっぷり盆踊りを堪能できた！\nシモキタ音頭や、サンバ系の盆踊りが楽しい🕺\n来年もタイミングがあえば来たいぞ。\n\nそして小田急線が信号事故？の影響で動かず、車内に閉じ込められてる…終電間に合うやろか…？ https://t.co/wu2tAZ1zr4"
@@ -28236,7 +28120,7 @@
         }
       ],
       "already_public": true,
-      "evidence_count": 7
+      "evidence_count": 8
     },
     {
       "id": "e53e1e29069937e2",
@@ -29165,36 +29049,6 @@
       ],
       "already_public": true,
       "evidence_count": 5
-    },
-    {
-      "id": "0d9f9d24e47cd691",
-      "song_name": "DJ「俚謡山脈」",
-      "event_name": "大和町八幡神社大盆踊り会",
-      "venue": "中野大和町八幡神社",
-      "area": "中野区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
-    },
-    {
-      "id": "10671a86c941b913",
-      "song_name": "DJ「珍盤亭娯楽師匠」",
-      "event_name": "大和町八幡神社大盆踊り会",
-      "venue": "中野大和町八幡神社",
-      "area": "中野区",
-      "status": "公開済み",
-      "confidence": "公開済み",
-      "reasons": [
-        "already_public"
-      ],
-      "evidence": [],
-      "already_public": true,
-      "evidence_count": 0
     },
     {
       "id": "08d83afda82e988e",
@@ -33563,6 +33417,21 @@
       "evidence_count": 1
     },
     {
+      "id": "3bf19505ab379e9f",
+      "song_name": "ゆかた音頭",
+      "event_name": "神田明神納涼祭り",
+      "venue": "神田明神境内",
+      "area": "千代田区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
       "id": "dc01c12787d27027",
       "song_name": "オロナミンC 元気ハツラツ音頭",
       "event_name": "神田明神納涼祭り",
@@ -33791,6 +33660,21 @@
       "evidence_count": 2
     },
     {
+      "id": "3dda49038e79f5a5",
+      "song_name": "大東京音頭",
+      "event_name": "神田明神納涼祭り",
+      "venue": "神田明神境内",
+      "area": "千代田区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
       "id": "24697d0c4ef1e87e",
       "song_name": "東京音頭",
       "event_name": "神田明神納涼祭り",
@@ -33861,6 +33745,73 @@
       ],
       "already_public": true,
       "evidence_count": 2
+    },
+    {
+      "id": "8aaae7d673ad5791",
+      "song_name": "神田明神音頭",
+      "event_name": "神田明神納涼祭り",
+      "venue": "神田明神境内",
+      "area": "千代田区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public",
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=TOjT2fBLq64",
+          "date": "2025-08-09T07:19:53Z",
+          "text": "shu channel\n『神田明神音頭 ／小坂井祐莉絵』【神田明神納涼祭り2025🏮アニソン盆踊り】🏮Tokyo Bon Dance👘2025.8.8 @神田明神 Kanda Myojin Shrine\n【神田明神納涼祭り アニソン盆踊り】『神田明神音頭 ／歌唱：小坂井祐莉絵（声優）』\n■開催期間：2025年8月8日（金）\n■開催時間：16時30分～20時30分\n■場所：神田明神境内\n■メインMC：孝藤右近（日本舞踊家／東京大学盆踊り講師）\n■盆踊り協力：東京大学盆踊りサークル\n■太鼓演奏：千代田区民踊連盟\n■ゲスト出演：小坂井祐莉絵、小見川千明、倉持京子 (あみゅどる)、尾崎明日香、佐藤妃星\n■神田明神納涼祭り \nhttps://www.nouryo-matsuri.com/pages/6314608/page_202208061239\n\n#神田明神納涼祭り\n#アニソン盆踊り\n#神田明神音頭\n#小坂井祐莉絵"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=4pQDvVwQd3g",
+          "date": "2025-08-08T16:50:01Z",
+          "text": "shu channel\n【神田明神⛩アニソン盆踊り🏮納涼祭り2025】（第2部 - 3）👘Tokyo Bon Dance🏮2025.8.8 @神田明神 Kanda Myojin Shrine\n00:00:00 Introduction\n00:00:46 クックロビン音頭 \n00:03:13 おジャ魔女カーニバル \n00:07:04 ダンシングヒーロー \n00:12:00 神田明神音頭\n00:17:25 一丁締め\n00:21:34 閉め太鼓\n【神田明神納涼祭り アニソン盆踊り】（第２部－３）\n■開催期間：2025年8月8日（金）\n■開催時間：16時30分～20時30分\n■場所：神田明神境内\n■メインMC：孝藤右近（日本舞踊家／東京大学盆踊り講師）\n■盆踊り協力：東京大学盆踊りサークル\n■太鼓演奏：千代田区民踊連盟\n■ゲスト出演：小坂井祐莉絵、小見川千明、倉持京子 (あみゅどる)、尾崎明日香、佐藤妃星\n■神田明神納涼祭り \nhttp"
+        }
+      ],
+      "already_public": true,
+      "evidence_count": 2
+    },
+    {
+      "id": "61415f92d986885d",
+      "song_name": "花笠音頭",
+      "event_name": "神田明神納涼祭り",
+      "venue": "神田明神境内",
+      "area": "千代田区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "e3c611c31ec33e26",
+      "song_name": "邪神ちゃん音頭",
+      "event_name": "神田明神納涼祭り",
+      "venue": "神田明神境内",
+      "area": "千代田区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public",
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=Om01Om3MTUU",
+          "date": "2025-08-08T19:19:32Z",
+          "text": "shu channel\n『邪神ちゃん音頭／大森日雅』【神田明神納涼祭り2025🏮アニソン盆踊り】🏮Tokyo Bon Dance👘2025.8.8 @神田明神 Kanda Myojin Shrine\n【神田明神納涼祭り アニソン盆踊り】『邪神ちゃん音頭／大森日雅』\n■開催期間：2025年8月8日（金）\n■開催時間：16時30分～20時30分\n■場所：神田明神境内\n■メインMC：孝藤右近（日本舞踊家／東京大学盆踊り講師）\n■盆踊り協力：東京大学盆踊りサークル\n■太鼓演奏：千代田区民踊連盟\n■ゲスト出演：小坂井祐莉絵、小見川千明、倉持京子 (あみゅどる)、尾崎明日香、佐藤妃星、大森日雅\n■神田明神納涼祭り \nhttps://www.nouryo-matsuri.com/pages/6314608/page_202208061239\n\n#神田明神納涼祭り\n#アニソン盆踊り\n#邪神ちゃん音頭"
+        }
+      ],
+      "already_public": true,
+      "evidence_count": 1
     },
     {
       "id": "1abbdfaf6cf77e75",
@@ -36141,8 +36092,38 @@
       "evidence_count": 0
     },
     {
-      "id": "529485cf0fc6de08",
-      "song_name": "DJタイム",
+      "id": "9b88a1ef4260d0d6",
+      "song_name": "2億4千万の瞳",
+      "event_name": "東本願寺盆踊り",
+      "venue": "東本願寺（浅草）",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "c0d764f530fea7e0",
+      "song_name": "Hold Me Now",
+      "event_name": "東本願寺盆踊り",
+      "venue": "東本願寺（浅草）",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "8a475ff09c9c0853",
+      "song_name": "Let's Grove",
       "event_name": "東本願寺盆踊り",
       "venue": "東本願寺（浅草）",
       "area": "台東区",
@@ -36158,6 +36139,21 @@
     {
       "id": "592a75b1897acf78",
       "song_name": "One Love",
+      "event_name": "東本願寺盆踊り",
+      "venue": "東本願寺（浅草）",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "278266e698989b23",
+      "song_name": "The Power of Love",
       "event_name": "東本願寺盆踊り",
       "venue": "東本願寺（浅草）",
       "area": "台東区",
@@ -36241,6 +36237,21 @@
     {
       "id": "fa2257e646024ce4",
       "song_name": "ガールズ・ジャスト・ワナ・ハブ・ファン",
+      "event_name": "東本願寺盆踊り",
+      "venue": "東本願寺（浅草）",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "569758f82db40bf6",
+      "song_name": "タッチ",
       "event_name": "東本願寺盆踊り",
       "venue": "東本願寺（浅草）",
       "area": "台東区",
@@ -36384,6 +36395,21 @@
     {
       "id": "54d6211266b9d822",
       "song_name": "北海盆唄",
+      "event_name": "東本願寺盆踊り",
+      "venue": "東本願寺（浅草）",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "a3c4c37a9175f535",
+      "song_name": "嵐",
       "event_name": "東本願寺盆踊り",
       "venue": "東本願寺（浅草）",
       "area": "台東区",
@@ -36928,6 +36954,21 @@
       ],
       "already_public": true,
       "evidence_count": 2
+    },
+    {
+      "id": "f71177128fd486a9",
+      "song_name": "青い珊瑚礁",
+      "event_name": "東本願寺盆踊り",
+      "venue": "東本願寺（浅草）",
+      "area": "台東区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
     },
     {
       "id": "1c1785b3b30bfa65",
@@ -39724,6 +39765,21 @@
       "evidence_count": 0
     },
     {
+      "id": "ad10d7431aceeeea",
+      "song_name": "新宿音頭",
+      "event_name": "神楽坂夏まつり 盆踊り in 神楽坂",
+      "venue": "りそな銀行神楽坂支店前",
+      "area": "新宿区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
       "id": "44f46252a7323ccc",
       "song_name": "東京音頭",
       "event_name": "神楽坂夏まつり 盆踊り in 神楽坂",
@@ -39833,6 +39889,103 @@
       "song_name": "四谷納涼踊り",
       "event_name": "第26回 四谷納涼踊り大会",
       "venue": "四谷ひろばグランド（旧四谷第四小）",
+      "area": "新宿区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "e692cabdea7d53d7",
+      "song_name": "ultra soul",
+      "event_name": "新宿二丁目太宗寺盆踊り大会",
+      "venue": "太宗寺",
+      "area": "新宿区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "42efacaece41fb5a",
+      "song_name": "ジンギスカン",
+      "event_name": "新宿二丁目太宗寺盆踊り大会",
+      "venue": "太宗寺",
+      "area": "新宿区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "e7522ef708dc9961",
+      "song_name": "ズンパ音頭",
+      "event_name": "新宿二丁目太宗寺盆踊り大会",
+      "venue": "太宗寺",
+      "area": "新宿区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public",
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=C1kwmSecDt8",
+          "date": "2026-07-15T08:23:56+00:00",
+          "text": "Urban Walk\n【新宿二丁目太宗寺盆踊り大会 2026】J-POP＆洋楽セレクション 全10曲 / 「ジンギスカン / ズンパ音頭 / ダンシングヒーロ－ / ultra soul / マツケンサンバ...」#盆踊り\n#ジンギスカン #ultrasoul #ダンシングヒーロ－ #太宗寺 #盆踊り #新宿二丁目 #jpop \n\n00:00　ハイライト\n04:46　マツケンサンバⅡ\n08:54　ジンギスカン\n12:00　ダンシングヒーロー\n15:49　Start Over(六本木クラス)\n18:59　ultra soul\n22:20　バハマママ\n25:38　ズンパ音頭\n29:27　盆ギリ恋歌\n33:45　牛ちゃんマンボ\n37:26　恋をするなら\n\n\n【新宿二丁目太宗寺盆踊り大会 2026】\n開催日時：2026年7月13日(月)　～ 2026年7月15日(水)　～20:00\n開催場所 ：太宗寺\nhhttps://www.goog"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=Q72kxSZBwFc",
+          "date": "2025-07-18T13:01:00Z",
+          "text": "和太鼓お祭りチャンネル\nズンパ音頭　2025年新宿2丁目町会盆踊り2日目15　新宿太宗寺境内　東京都新宿区\n2025年7月14日に行われました、\n新宿2丁目町会\n「新宿太宗寺盆踊り」盆踊り会場の様子です。\n\n\n#太宗寺\n#盆踊り\n\n\n新宿太宗寺盆踊り\n2日目\n１炭坑節　https://youtu.be/Jov3un16cs0\n２八木節　https://youtu.be/YXIqnPQgpAE\n３東京音頭　https://youtu.be/3GIEjOp6EqE\n４炭坑節　https://youtu.be/SZBTfbANO6Y\n５八木節　https://youtu.be/okZrjGhI0fU\n６牛ちゃんマンボ　https://youtu.be/ch9PzotdWA8\n７夜に駆ける　https://youtu.be/01dd0n45sF0\n８ニッポンワッショイ　https://youtu.be/R981_eXHy_0\n９新宿音頭"
+        }
+      ],
+      "already_public": true,
+      "evidence_count": 2
+    },
+    {
+      "id": "5c39dd1cd04ad6f2",
+      "song_name": "ダンシングヒーロー",
+      "event_name": "新宿二丁目太宗寺盆踊り大会",
+      "venue": "太宗寺",
+      "area": "新宿区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public",
+        "known_song_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=1SkA2QDGlbA",
+          "date": "2025-07-14T06:30:00Z",
+          "text": "和太鼓お祭りチャンネル\nダンシング・ヒーロー（荻野目洋子）　2025年新宿太宗寺盆踊り６　新宿二丁目町会　東京都新宿区\n2025年7月13日に行われました、\n新宿2丁目町会\n「新宿太宗寺盆踊り」終了20分前の会場の様子です。\n\n#ダンシングヒーロー\n#太宗寺\n#盆踊り\n\n\n新宿太宗寺盆踊り\n１ジンギスカン　https://youtu.be/60fxU8jL-wQ\n２盆ギリ恋歌　https://youtu.be/FYZPLDnlmKY\n３浪花節だよ人生は　https://youtu.be/2q0Cn2e5fuU\n４マツケンサンバⅡ　https://youtu.be/dDV5AXwU5_s\n５Start Over　https://youtu.be/N4PT1PO84rE\n６ダンシングヒーロー　https://youtu.be/1SkA2QDGlbA\n７炭坑節　https://youtu.be/fyOaMSVWiUM\n８終　八木節　h"
+        }
+      ],
+      "already_public": true,
+      "evidence_count": 1
+    },
+    {
+      "id": "38194502c1bca725",
+      "song_name": "マツケンサンバ",
+      "event_name": "新宿二丁目太宗寺盆踊り大会",
+      "venue": "太宗寺",
       "area": "新宿区",
       "status": "公開済み",
       "confidence": "公開済み",
@@ -41240,6 +41393,125 @@
       "evidence_count": 1
     },
     {
+      "id": "48b5cdc8213ae885",
+      "song_name": "新宿音頭",
+      "event_name": "花園神社 盆踊り",
+      "venue": "花園神社",
+      "area": "新宿区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public",
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/dokodemodojo/status/1686753761660682240",
+          "date": "2023-08-02T15:00:09+00:00",
+          "text": "DOKODEMODOJO\n花園神社⛩令和五年盆踊り🐯\nとらら！🐯二日目\n\n盆踊り詰め合わせ🐯🐧🐯\n#ドンパン節 #新宿音頭 #八木節\n\n#新宿とらおの天気予報\n#とらお #てんぺんちー #とらぺんたーず\n#みにとら #みにとらお散歩 https://t.co/C7B7wqA9k8"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=JbSm8mZusfE",
+          "date": "2025-08-05T11:45:01Z",
+          "text": "祭のきせき　盆踊り\n宝っこ音頭 　新宿 花園神社　盆踊り 　20250803\n新宿 花園神社 盆踊り　2025年8月3日（日）\n\n前半\n大人コンクール　課題曲：新宿音頭\n\nhttps://youtu.be/PXZ97B0BKdw\nhttps://youtu.be/AsULmIH2Ky0\nhttps://youtu.be/CBERUJvgnoM\nhttps://youtu.be/-OCtAId5Zdo\nhttps://youtu.be/7CKKXbyYRRU\nhttps://youtu.be/35zMWf5RROc\nhttps://youtu.be/UJ7pthA6lPQ\nhttps://youtu.be/t4P3X1vBVI0\nhttps://youtu.be/OPpomvedZok\nhttps://youtu.be/npibEFUL31g\nhttps://youtu.be/saQWTdgycRA\nhttps://youtu.b"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=VswlhiCN_kA",
+          "date": "2025-08-05T11:30:33Z",
+          "text": "祭のきせき　盆踊り\nチャンチキおけさ 　新宿 花園神社　盆踊り 　20250803\n新宿 花園神社 盆踊り　2025年8月3日（日）\n\n前半\n大人コンクール　課題曲：新宿音頭\n\nhttps://youtu.be/PXZ97B0BKdw\nhttps://youtu.be/AsULmIH2Ky0\nhttps://youtu.be/CBERUJvgnoM\nhttps://youtu.be/-OCtAId5Zdo\nhttps://youtu.be/7CKKXbyYRRU\nhttps://youtu.be/35zMWf5RROc\nhttps://youtu.be/UJ7pthA6lPQ\nhttps://youtu.be/t4P3X1vBVI0\nhttps://youtu.be/OPpomvedZok\nhttps://youtu.be/npibEFUL31g\nhttps://youtu.be/saQWTdgycRA\nhttps://yout"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=Wfa0G7EhOdg",
+          "date": "2025-08-05T11:15:04Z",
+          "text": "祭のきせき　盆踊り\n炭坑節 　新宿 花園神社　盆踊り 　20250803\n新宿 花園神社 盆踊り　2025年8月3日（日）\n\n前半\n大人コンクール　課題曲：新宿音頭\n\nhttps://youtu.be/PXZ97B0BKdw\nhttps://youtu.be/AsULmIH2Ky0\nhttps://youtu.be/CBERUJvgnoM\nhttps://youtu.be/-OCtAId5Zdo\nhttps://youtu.be/7CKKXbyYRRU\nhttps://youtu.be/35zMWf5RROc\nhttps://youtu.be/UJ7pthA6lPQ\nhttps://youtu.be/t4P3X1vBVI0\nhttps://youtu.be/OPpomvedZok\nhttps://youtu.be/npibEFUL31g\nhttps://youtu.be/saQWTdgycRA\nhttps://youtu.be/"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=NKFXa922JFA",
+          "date": "2025-08-05T11:00:39Z",
+          "text": "祭のきせき　盆踊り\nきよしのズンドコ節 　新宿 花園神社　盆踊り 　20250803\n新宿 花園神社 盆踊り　2025年8月3日（日）\n\n前半\n大人コンクール　課題曲：新宿音頭\n\nhttps://youtu.be/PXZ97B0BKdw\nhttps://youtu.be/AsULmIH2Ky0\nhttps://youtu.be/CBERUJvgnoM\nhttps://youtu.be/-OCtAId5Zdo\nhttps://youtu.be/7CKKXbyYRRU\nhttps://youtu.be/35zMWf5RROc\nhttps://youtu.be/UJ7pthA6lPQ\nhttps://youtu.be/t4P3X1vBVI0\nhttps://youtu.be/OPpomvedZok\nhttps://youtu.be/npibEFUL31g\nhttps://youtu.be/saQWTdgycRA\nhttps://y"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=saQWTdgycRA",
+          "date": "2025-08-05T10:45:32Z",
+          "text": "祭のきせき　盆踊り\n新宿音頭コンクール 予選決勝 　新宿 花園神社　盆踊り 　20250803\n新宿 花園神社 盆踊り　2025年8月3日（日）\n\n前半\n大人コンクール　課題曲：新宿音頭\n\nhttps://youtu.be/PXZ97B0BKdw\nhttps://youtu.be/AsULmIH2Ky0\nhttps://youtu.be/CBERUJvgnoM\nhttps://youtu.be/-OCtAId5Zdo\nhttps://youtu.be/7CKKXbyYRRU\nhttps://youtu.be/35zMWf5RROc\nhttps://youtu.be/UJ7pthA6lPQ\nhttps://youtu.be/t4P3X1vBVI0\nhttps://youtu.be/OPpomvedZok\nhttps://youtu.be/npibEFUL31g\nhttps://youtu.be/saQWTdgycRA\nhttps:"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=npibEFUL31g",
+          "date": "2025-08-05T10:30:34Z",
+          "text": "祭のきせき　盆踊り\n浪花節だよ人生は 　新宿 花園神社　盆踊り 　20250803\n新宿 花園神社 盆踊り　2025年8月3日（日）\n\n前半\n大人コンクール　課題曲：新宿音頭\n\nhttps://youtu.be/PXZ97B0BKdw\nhttps://youtu.be/AsULmIH2Ky0\nhttps://youtu.be/CBERUJvgnoM\nhttps://youtu.be/-OCtAId5Zdo\nhttps://youtu.be/7CKKXbyYRRU\nhttps://youtu.be/35zMWf5RROc\nhttps://youtu.be/UJ7pthA6lPQ\nhttps://youtu.be/t4P3X1vBVI0\nhttps://youtu.be/OPpomvedZok\nhttps://youtu.be/npibEFUL31g\nhttps://youtu.be/saQWTdgycRA\nhttps://you"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=OPpomvedZok",
+          "date": "2025-08-05T10:15:02Z",
+          "text": "祭のきせき　盆踊り\n八木節（高速）　新宿 花園神社　盆踊り 　20250803\n新宿 花園神社 盆踊り　2025年8月3日（日）\n\n前半\n大人コンクール　課題曲：新宿音頭\n\nhttps://youtu.be/PXZ97B0BKdw\nhttps://youtu.be/AsULmIH2Ky0\nhttps://youtu.be/CBERUJvgnoM\nhttps://youtu.be/-OCtAId5Zdo\nhttps://youtu.be/7CKKXbyYRRU\nhttps://youtu.be/35zMWf5RROc\nhttps://youtu.be/UJ7pthA6lPQ\nhttps://youtu.be/t4P3X1vBVI0\nhttps://youtu.be/OPpomvedZok\nhttps://youtu.be/npibEFUL31g\nhttps://youtu.be/saQWTdgycRA\nhttps://youtu."
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=t4P3X1vBVI0",
+          "date": "2025-08-05T10:01:21Z",
+          "text": "祭のきせき　盆踊り\n新宿音頭② 　新宿 花園神社　盆踊り 　20250803\n新宿 花園神社 盆踊り　2025年8月3日（日）\n\n前半\n大人コンクール　課題曲：新宿音頭\n\nhttps://youtu.be/PXZ97B0BKdw\nhttps://youtu.be/AsULmIH2Ky0\nhttps://youtu.be/CBERUJvgnoM\nhttps://youtu.be/-OCtAId5Zdo\nhttps://youtu.be/7CKKXbyYRRU\nhttps://youtu.be/35zMWf5RROc\nhttps://youtu.be/UJ7pthA6lPQ\nhttps://youtu.be/t4P3X1vBVI0\nhttps://youtu.be/OPpomvedZok\nhttps://youtu.be/npibEFUL31g\nhttps://youtu.be/saQWTdgycRA\nhttps://youtu.b"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=UJ7pthA6lPQ",
+          "date": "2025-08-05T10:00:51Z",
+          "text": "祭のきせき　盆踊り\nドンパン節 　新宿 花園神社　盆踊り 　20250803\n新宿 花園神社 盆踊り　2025年8月3日（日）\n\n前半\n大人コンクール　課題曲：新宿音頭\n\nhttps://youtu.be/PXZ97B0BKdw\nhttps://youtu.be/AsULmIH2Ky0\nhttps://youtu.be/CBERUJvgnoM\nhttps://youtu.be/-OCtAId5Zdo\nhttps://youtu.be/7CKKXbyYRRU\nhttps://youtu.be/35zMWf5RROc\nhttps://youtu.be/UJ7pthA6lPQ\nhttps://youtu.be/t4P3X1vBVI0\nhttps://youtu.be/OPpomvedZok\nhttps://youtu.be/npibEFUL31g\nhttps://youtu.be/saQWTdgycRA\nhttps://youtu"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=35zMWf5RROc",
+          "date": "2025-08-05T09:45:00Z",
+          "text": "祭のきせき　盆踊り\n大東京音頭 　新宿 花園神社　盆踊り 　20250803\n新宿 花園神社 盆踊り　2025年8月3日（日）\n\n前半\n大人コンクール　課題曲：新宿音頭\n\nhttps://youtu.be/PXZ97B0BKdw\nhttps://youtu.be/AsULmIH2Ky0\nhttps://youtu.be/CBERUJvgnoM\nhttps://youtu.be/-OCtAId5Zdo\nhttps://youtu.be/7CKKXbyYRRU\nhttps://youtu.be/35zMWf5RROc\nhttps://youtu.be/UJ7pthA6lPQ\nhttps://youtu.be/t4P3X1vBVI0\nhttps://youtu.be/OPpomvedZok\nhttps://youtu.be/npibEFUL31g\nhttps://youtu.be/saQWTdgycRA\nhttps://youtu.b"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=7CKKXbyYRRU",
+          "date": "2025-08-05T09:30:04Z",
+          "text": "祭のきせき　盆踊り\n新宿音頭① 　新宿 花園神社　盆踊り 　20250803\n新宿 花園神社 盆踊り　2025年8月3日（日）\n\n前半\n大人コンクール　課題曲：新宿音頭\n\nhttps://youtu.be/PXZ97B0BKdw\nhttps://youtu.be/AsULmIH2Ky0\nhttps://youtu.be/CBERUJvgnoM\nhttps://youtu.be/-OCtAId5Zdo\nhttps://youtu.be/7CKKXbyYRRU\nhttps://youtu.be/35zMWf5RROc\nhttps://youtu.be/UJ7pthA6lPQ\nhttps://youtu.be/t4P3X1vBVI0\nhttps://youtu.be/OPpomvedZok\nhttps://youtu.be/npibEFUL31g\nhttps://youtu.be/saQWTdgycRA\nhttps://youtu.b"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=-OCtAId5Zdo",
+          "date": "2025-08-05T09:15:00Z",
+          "text": "祭のきせき　盆踊り\n花笠音頭 　新宿 花園神社　盆踊り 　20250803\n新宿 花園神社 盆踊り　2025年8月3日（日）\n\n前半\n大人コンクール　課題曲：新宿音頭\n\nhttps://youtu.be/PXZ97B0BKdw\nhttps://youtu.be/AsULmIH2Ky0\nhttps://youtu.be/CBERUJvgnoM\nhttps://youtu.be/-OCtAId5Zdo\nhttps://youtu.be/7CKKXbyYRRU\nhttps://youtu.be/35zMWf5RROc\nhttps://youtu.be/UJ7pthA6lPQ\nhttps://youtu.be/t4P3X1vBVI0\nhttps://youtu.be/OPpomvedZok\nhttps://youtu.be/npibEFUL31g\nhttps://youtu.be/saQWTdgycRA\nhttps://youtu.be"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=CBERUJvgnoM",
+          "date": "2025-08-05T09:00:27Z",
+          "text": "祭のきせき　盆踊り\nりんご節 　新宿 花園神社　盆踊り 　20250803\n新宿 花園神社 盆踊り　2025年8月3日（日）\n\n前半\n大人コンクール　課題曲：新宿音頭\n\nhttps://youtu.be/PXZ97B0BKdw\nhttps://youtu.be/AsULmIH2Ky0\nhttps://youtu.be/CBERUJvgnoM\nhttps://youtu.be/-OCtAId5Zdo\nhttps://youtu.be/7CKKXbyYRRU\nhttps://youtu.be/35zMWf5RROc\nhttps://youtu.be/UJ7pthA6lPQ\nhttps://youtu.be/t4P3X1vBVI0\nhttps://youtu.be/OPpomvedZok\nhttps://youtu.be/npibEFUL31g\nhttps://youtu.be/saQWTdgycRA\nhttps://youtu.b"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=AsULmIH2Ky0",
+          "date": "2025-08-05T08:45:01Z",
+          "text": "祭のきせき　盆踊り\nズンパ音頭 　新宿 花園神社　盆踊り 　20250803\n新宿 花園神社 盆踊り　2025年8月3日（日）\n\n前半\n大人コンクール　課題曲：新宿音頭\n\nhttps://youtu.be/PXZ97B0BKdw\nhttps://youtu.be/AsULmIH2Ky0\nhttps://youtu.be/CBERUJvgnoM\nhttps://youtu.be/-OCtAId5Zdo\nhttps://youtu.be/7CKKXbyYRRU\nhttps://youtu.be/35zMWf5RROc\nhttps://youtu.be/UJ7pthA6lPQ\nhttps://youtu.be/t4P3X1vBVI0\nhttps://youtu.be/OPpomvedZok\nhttps://youtu.be/npibEFUL31g\nhttps://youtu.be/saQWTdgycRA\nhttps://youtu"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=PXZ97B0BKdw",
+          "date": "2025-08-05T08:30:11Z",
+          "text": "祭のきせき　盆踊り\n東京音頭 　新宿 花園神社　盆踊り 　20250803\n新宿 花園神社 盆踊り　2025年8月3日（日）\n\n前半\n大人コンクール　課題曲：新宿音頭\n\nhttps://youtu.be/PXZ97B0BKdw\nhttps://youtu.be/AsULmIH2Ky0\nhttps://youtu.be/CBERUJvgnoM\nhttps://youtu.be/-OCtAId5Zdo\nhttps://youtu.be/7CKKXbyYRRU\nhttps://youtu.be/35zMWf5RROc\nhttps://youtu.be/UJ7pthA6lPQ\nhttps://youtu.be/t4P3X1vBVI0\nhttps://youtu.be/OPpomvedZok\nhttps://youtu.be/npibEFUL31g\nhttps://youtu.be/saQWTdgycRA\nhttps://youtu.be"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=-fRgnyO96jw",
+          "date": "2025-08-05T08:00:01Z",
+          "text": "Urban Walk\n新宿に別世界!! 生唄生演奏で盆踊り 【新宿 花園神社 盆踊り 2025】「炭坑節 /東京音頭 / 新宿音頭 / 八木節」/ Hanazono  Shrine Bon Dance Festival\n#花園神社 #八木節 #東京音頭 #新宿音頭 #炭坑節 #新宿 #盆踊り\n\n00:00　炭坑節\n05:42　東京音頭\n10:24　新宿音頭\n15:03　八木節\n\n【新宿 花園神社 盆踊り】\n開催日時：2025年8月2日(土)～3日(日)雨天順延\n開催場所 ：新宿 花園神社\nhttps://www.google.com/maps/place/%E8%8A%B1%E5%9C%92%E7%A5%9E%E7%A4%BE/@35.6935311,139.702753,17z/data=!3m1!4b1!4m6!3m5!1s0x60188cdbe07cde2b:0x3b4028968ed9a754!8m2!3d35.6935"
+        }
+      ],
+      "already_public": true,
+      "evidence_count": 17
+    },
+    {
       "id": "6b2c39996a266eaa",
       "song_name": "新宿音頭1",
       "event_name": "花園神社 盆踊り",
@@ -41572,6 +41844,21 @@
     {
       "id": "3c5d27b855cc9c68",
       "song_name": "とっとこハム太郎",
+      "event_name": "GMOシブヤエンタメ祭 × JAME盆踊り",
+      "venue": "宮下公園",
+      "area": "渋谷区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "8eacce60d36f94dc",
+      "song_name": "わたしの一番かわいいところ",
       "event_name": "GMOシブヤエンタメ祭 × JAME盆踊り",
       "venue": "宮下公園",
       "area": "渋谷区",
@@ -42921,8 +43208,38 @@
       "evidence_count": 0
     },
     {
+      "id": "2a76cc38937c9416",
+      "song_name": "会津磐梯山",
+      "event_name": "第51回 浄土寺盆踊り大会",
+      "venue": "浄土寺",
+      "area": "港区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
       "id": "ba9f6120c1e99c36",
       "song_name": "佐渡おけさ",
+      "event_name": "第51回 浄土寺盆踊り大会",
+      "venue": "浄土寺",
+      "area": "港区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public"
+      ],
+      "evidence": [],
+      "already_public": true,
+      "evidence_count": 0
+    },
+    {
+      "id": "e366403cc874a703",
+      "song_name": "大東京音頭",
       "event_name": "第51回 浄土寺盆踊り大会",
       "venue": "浄土寺",
       "area": "港区",
@@ -42994,6 +43311,35 @@
       "evidence": [],
       "already_public": true,
       "evidence_count": 0
+    },
+    {
+      "id": "da63758f0c74a297",
+      "song_name": "赤坂小唄",
+      "event_name": "第51回 浄土寺盆踊り大会",
+      "venue": "浄土寺",
+      "area": "港区",
+      "status": "公開済み",
+      "confidence": "公開済み",
+      "reasons": [
+        "already_public",
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/bakushin339711/status/2079452144005152844",
+          "date": "2026-07-21T06:23:20+00:00",
+          "text": "バクシン\n7/8(水)\n赤坂浄土寺盆踊りの練習会へ行って来ました。あかね会様リードのもと\n赤坂小唄、真室川音頭(団扇)等難易度高い赤坂ナンバーを練習！全体の所作はある程度分かったがやはり難しい💦\n練習あるのみ！！\n本番もまたよろしくお願い致します🙇 https://t.co/bFW28eseYm"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://x.com/tanoshiki_kana/status/2078446377517174845",
+          "date": "2026-07-18T11:46:46+00:00",
+          "text": "楽しき哉。\n7/17（金） #浄土寺 #盆踊り 練習会へ。団扇ワークが美しい #赤坂小唄 #真室川音頭 踊れて嬉しい 来週の #浄土寺盆踊り 楽しみ😌#赤坂音頭 #赤坂豊川音頭 #赤坂あかね音頭 赤坂は素敵な踊りがいっぱい💕#赤坂あかね会 さま、お世話になりました🙏 https://t.co/CWlQNk5MDa"
+        }
+      ],
+      "already_public": true,
+      "evidence_count": 2
     },
     {
       "id": "242dd177f9a78dd4",
