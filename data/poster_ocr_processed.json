@@ -1,0 +1,23 @@
+{
+  "processed": {
+    "xposter_db9950ba50528f04": {
+      "note": "第7回ゐの市盆踊り〜不忍夢〜 8/7-9 上野恩賜公園（袴越広場）としてRDB反映済み",
+      "processed_at": "2026-07-26T14:48:32.991759+00:00",
+      "report_id": "x_poster_inoichi_shinobazumu_2026",
+      "status": "ocr_done"
+    },
+    "xposter_f0bcfa702885fd88": {
+      "note": "あ〜夏休み！納涼盆踊り大会 7/17-20 亀有ゆうろーどを新規登録済み",
+      "processed_at": "2026-07-26T14:48:32.991914+00:00",
+      "report_id": "x_poster_kameari_anatsuyasumi_2026",
+      "status": "ocr_done"
+    },
+    "xposter_fdf3c616b0bed8c0": {
+      "note": "四町会・合同 納涼盆踊り大会 7/18 日本橋小学校としてRDB反映済み",
+      "processed_at": "2026-07-26T14:48:32.991910+00:00",
+      "report_id": "x_poster_nihonbashi_4chokai_2026",
+      "status": "ocr_done"
+    }
+  },
+  "updated_at": "2026-07-26T14:48:32.991915+00:00"
+}

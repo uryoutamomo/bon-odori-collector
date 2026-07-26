@@ -1,13 +1,13 @@
 # Official notice report apply result
 
-- generated_at: 2026-07-26T13:40:47.850781+00:00
-- mode: dry_run
+- generated_at: 2026-07-26T14:44:13.734872+00:00
+- mode: apply
 - resolved: True
 - events_applied: 1
 - events_unresolved: 0
-- target_db: `data/official_notice_report_apply_dry_run.sqlite`
-- dry_run_db: `data/official_notice_report_apply_dry_run.sqlite`
-- backup_db: ``
+- target_db: `data/bon_odori_master.sqlite`
+- dry_run_db: ``
+- backup_db: `data/backups/bon_odori_master.20260726T144413.734872+0000.sqlite.bak`
 - db_committed: True
 - rolled_back: False
 - issues_by_severity: {}

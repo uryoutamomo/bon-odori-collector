@@ -1,12 +1,12 @@
 {
   "generated_by": "build_event_poster_ocr_queue.py",
-  "count": 1872,
+  "count": 1869,
   "summary": {
     "critical": 17,
-    "high": 453,
+    "high": 451,
     "trusted_informant": 19,
-    "already_read": 0,
-    "date_gap_matched": 39
+    "already_read": 3,
+    "date_gap_matched": 35
   },
   "items": [
     {
@@ -34,12 +34,6 @@
         {
           "occurrence_id": "occ_2eb9d3179e731fbe",
           "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
-        {
-          "occurrence_id": "occ_0ee14ffbf15fd0cf",
-          "event_name": "ゐの市盆踊り～不忍夢～",
           "venue_name": "上野恩賜公園",
           "matched_keyword": "上野恩賜公園"
         },
@@ -75,12 +69,6 @@
         {
           "occurrence_id": "occ_2eb9d3179e731fbe",
           "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
-        {
-          "occurrence_id": "occ_0ee14ffbf15fd0cf",
-          "event_name": "ゐの市盆踊り～不忍夢～",
           "venue_name": "上野恩賜公園",
           "matched_keyword": "上野恩賜公園"
         },
@@ -121,35 +109,6 @@
           "event_name": "牛嶋神社御祭礼 奉納踊り",
           "venue_name": "日進公園",
           "matched_keyword": "日進公園"
-        }
-      ]
-    },
-    {
-      "id": "xposter_f0bcfa702885fd88",
-      "status": "needs_ocr",
-      "priority": "high",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@MONJAMEGUMI",
-      "account_name": "MEGUMI",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/MONJAMEGUMI/status/2076487515532587228",
-      "tweet_id": "2076487515532587228",
-      "date": "2026-07-13T02:02:57+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HNEqZA9aYAAkULB.jpg",
-        "https://t.co/YpNBzHSBJl",
-        "pic.x.com/YpNBzHSBJl"
-      ],
-      "text": "#亀有ゆうろーど商店街　では\n#7月17日18日19日20日\n４日連続で　#盆踊り　が行われます\n商店街の　#模擬店　もたくさん出ます\n亀有三和町会　亀有中央町会　合同開催\n20日11時45分から水かけまつりが行われます\n濡れてもいい格好で子どもたち集まれー\n商店街を暑さから守ろう！ https://t.co/YpNBzHSBJl",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
-      "matched_date_gap_events": [
-        {
-          "occurrence_id": "occ_1df0a276422a54b5",
-          "event_name": "亀有銀座商店街納涼盆踊り大会",
-          "venue_name": "亀有ゆうろーど（亀有銀座商店街）",
-          "matched_keyword": "亀有ゆうろーど"
         }
       ]
     },
@@ -213,35 +172,6 @@
           "event_name": "牛嶋神社祭礼 奉納踊り",
           "venue_name": "牛嶋神社",
           "matched_keyword": "牛嶋神社"
-        }
-      ]
-    },
-    {
-      "id": "xposter_fdf3c616b0bed8c0",
-      "status": "needs_ocr",
-      "priority": "high",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@ishijimahideki",
-      "account_name": "石島ひでき 前 東京都議会議員（中央区）",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/ishijimahideki/status/2078336751110943214",
-      "tweet_id": "2078336751110943214",
-      "date": "2026-07-18T04:31:09+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HNe8QjmbIAAteVD.jpg",
-        "https://t.co/gg0I4rrfbf",
-        "pic.x.com/gg0I4rrfbf"
-      ],
-      "text": "四町会合同納涼盆踊り大会\n本日7月18日(土) 15:30〜\n日本橋小学校\n\nどうぞ、皆さんお出かけください！\nこどもゲーム（無料）を担当しています。\n\n#小網町町会 #人形町一丁目町会 #人形町一丁目芳人町会\n#蛎一北部町会 https://t.co/gg0I4rrfbf",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
-      "matched_date_gap_events": [
-        {
-          "occurrence_id": "occ_abb418f2c5aa2158",
-          "event_name": "日本橋小学校の盆踊り（名称推定）",
-          "venue_name": "日本橋小学校",
-          "matched_keyword": "日本橋小学校"
         }
       ]
     },
@@ -368,12 +298,6 @@
           "matched_keyword": "上野恩賜公園"
         },
         {
-          "occurrence_id": "occ_0ee14ffbf15fd0cf",
-          "event_name": "ゐの市盆踊り～不忍夢～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
-        {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
           "venue_name": "上野恩賜公園",
@@ -406,12 +330,6 @@
         {
           "occurrence_id": "occ_2eb9d3179e731fbe",
           "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
-        {
-          "occurrence_id": "occ_0ee14ffbf15fd0cf",
-          "event_name": "ゐの市盆踊り～不忍夢～",
           "venue_name": "上野恩賜公園",
           "matched_keyword": "上野恩賜公園"
         },
@@ -454,12 +372,6 @@
           "matched_keyword": "上野恩賜公園"
         },
         {
-          "occurrence_id": "occ_0ee14ffbf15fd0cf",
-          "event_name": "ゐの市盆踊り～不忍夢～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
-        {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
           "venue_name": "上野恩賜公園",
@@ -494,12 +406,6 @@
         {
           "occurrence_id": "occ_2eb9d3179e731fbe",
           "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
-        {
-          "occurrence_id": "occ_0ee14ffbf15fd0cf",
-          "event_name": "ゐの市盆踊り～不忍夢～",
           "venue_name": "上野恩賜公園",
           "matched_keyword": "上野恩賜公園"
         },
@@ -571,12 +477,6 @@
           "matched_keyword": "上野恩賜公園"
         },
         {
-          "occurrence_id": "occ_0ee14ffbf15fd0cf",
-          "event_name": "ゐの市盆踊り～不忍夢～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
-        {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
           "venue_name": "上野恩賜公園",
@@ -608,12 +508,6 @@
         {
           "occurrence_id": "occ_2eb9d3179e731fbe",
           "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
-        {
-          "occurrence_id": "occ_0ee14ffbf15fd0cf",
-          "event_name": "ゐの市盆踊り～不忍夢～",
           "venue_name": "上野恩賜公園",
           "matched_keyword": "上野恩賜公園"
         },
@@ -651,12 +545,6 @@
         {
           "occurrence_id": "occ_2eb9d3179e731fbe",
           "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
-        {
-          "occurrence_id": "occ_0ee14ffbf15fd0cf",
-          "event_name": "ゐの市盆踊り～不忍夢～",
           "venue_name": "上野恩賜公園",
           "matched_keyword": "上野恩賜公園"
         },
@@ -728,12 +616,6 @@
           "matched_keyword": "上野恩賜公園"
         },
         {
-          "occurrence_id": "occ_0ee14ffbf15fd0cf",
-          "event_name": "ゐの市盆踊り～不忍夢～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
-        {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
           "venue_name": "上野恩賜公園",
@@ -765,12 +647,6 @@
         {
           "occurrence_id": "occ_2eb9d3179e731fbe",
           "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
-        {
-          "occurrence_id": "occ_0ee14ffbf15fd0cf",
-          "event_name": "ゐの市盆踊り～不忍夢～",
           "venue_name": "上野恩賜公園",
           "matched_keyword": "上野恩賜公園"
         },
@@ -811,12 +687,6 @@
           "matched_keyword": "上野恩賜公園"
         },
         {
-          "occurrence_id": "occ_0ee14ffbf15fd0cf",
-          "event_name": "ゐの市盆踊り～不忍夢～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
-        {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
           "venue_name": "上野恩賜公園",
@@ -853,12 +723,6 @@
           "matched_keyword": "上野恩賜公園"
         },
         {
-          "occurrence_id": "occ_0ee14ffbf15fd0cf",
-          "event_name": "ゐの市盆踊り～不忍夢～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
-        {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
           "venue_name": "上野恩賜公園",
@@ -890,12 +754,6 @@
         {
           "occurrence_id": "occ_2eb9d3179e731fbe",
           "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
-        {
-          "occurrence_id": "occ_0ee14ffbf15fd0cf",
-          "event_name": "ゐの市盆踊り～不忍夢～",
           "venue_name": "上野恩賜公園",
           "matched_keyword": "上野恩賜公園"
         },
@@ -1003,47 +861,6 @@
       ]
     },
     {
-      "id": "xposter_db9950ba50528f04",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@ueno_club",
-      "account_name": "上野倶楽部",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/ueno_club/status/2075900963446251935",
-      "tweet_id": "2075900963446251935",
-      "date": "2026-07-11T11:12:12+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/media/HM8U6_na4AAPhGt.jpg",
-        "https://t.co/Vq8jdB2uTa",
-        "pic.x.com/Vq8jdB2uTa"
-      ],
-      "text": "【ゐの市盆踊り〜不忍夢〜2026の日程が決定しました！】\n\n日時 2026年8月7（金）.8（土）.9（日）日\n場所 上野恩賜公園（袴越広場）\n\n学生によって2019年から復活し、3万人以上が来場して注目を浴びた盆踊りが今年も開催されます！\n\n#上野#夏祭り#学生団体おりがみ#ゐの市盆踊り〜不忍夢〜 https://t.co/Vq8jdB2uTa",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
-      "matched_date_gap_events": [
-        {
-          "occurrence_id": "occ_2eb9d3179e731fbe",
-          "event_name": "Tokyo江戸ウィーク～下町盆踊りフェス～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
-        {
-          "occurrence_id": "occ_0ee14ffbf15fd0cf",
-          "event_name": "ゐの市盆踊り～不忍夢～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        },
-        {
-          "occurrence_id": "occ_3056f95dcb2e5bef",
-          "event_name": "上野盆踊り会（厚澄会）",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "上野恩賜公園"
-        }
-      ]
-    },
-    {
       "id": "xposter_60e3c195711c5a84",
       "status": "needs_ocr",
       "priority": "medium",
@@ -1135,12 +952,6 @@
           "matched_keyword": "上野恩賜公園"
         },
         {
-          "occurrence_id": "occ_0ee14ffbf15fd0cf",
-          "event_name": "ゐの市盆踊り～不忍夢～",
-          "venue_name": "上野恩賜公園",
-          "matched_keyword": "ゐの市盆踊り～不忍夢～"
-        },
-        {
           "occurrence_id": "occ_3056f95dcb2e5bef",
           "event_name": "上野盆踊り会（厚澄会）",
           "venue_name": "上野恩賜公園",
@@ -1174,38 +985,6 @@
           "event_name": "札幌中島公園大盆踊り大会",
           "venue_name": "中島公園",
           "matched_keyword": "中島公園"
-        }
-      ]
-    },
-    {
-      "id": "xposter_014cade721818ff7",
-      "status": "needs_ocr",
-      "priority": "medium",
-      "evidence_type": "poster_or_flyer_image",
-      "assumed_source_confidence": "medium",
-      "account": "@ishijimahideki",
-      "account_name": "石島ひでき 前 東京都議会議員（中央区）",
-      "trusted_informant": false,
-      "trusted_informant_rank": "",
-      "url": "https://x.com/ishijimahideki/status/2078631706903671085",
-      "tweet_id": "2078631706903671085",
-      "date": "2026-07-19T00:03:12+00:00",
-      "media_urls": [
-        "https://pbs.twimg.com/amplify_video_thumb/2078631607813193728/img/2lzVyi6FbmD1qitY.jpg",
-        "https://t.co/bvWEcYAHCY",
-        "pic.x.com/bvWEcYAHCY",
-        "https://pbs.twimg.com/media/HNjIbysaYAEZ_bq.jpg",
-        "https://pbs.twimg.com/media/HNjIbywacAAajDn.jpg",
-        "https://pbs.twimg.com/media/HNjIbywbYAAbpTj.jpg"
-      ],
-      "text": "四町会合同納涼盆踊り大会。\n多くの皆さんにご来場いただき、ありがとうございました。\n\nわが人形町一丁目町会は、こどもゲームコーナーを担当。\n各ゲームの運営は、日本橋小学校5・6年生の皆さんが    地域活動の体験として、毎年お手伝いをしてくれています。\n今年も手際よく大活躍！\n子どもたちの頑張りに感謝、ありがとうございました！\n\n#小網町町会\n#人形町一丁目町会\n#人形町一丁目芳人町会\n#蛎一北部町会\n#日本橋小学校",
-      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する",
-      "matched_date_gap_events": [
-        {
-          "occurrence_id": "occ_abb418f2c5aa2158",
-          "event_name": "日本橋小学校の盆踊り（名称推定）",
-          "venue_name": "日本橋小学校",
-          "matched_keyword": "日本橋小学校"
         }
       ]
     },
@@ -32977,6 +32756,30 @@
         "pic.x.com/lBLYgZbI8t"
       ],
       "text": "🌞昨日は朝の羽沢町会ラジオ体操に始まり、豊玉二小のお祭りではパパたちとひたすら鉄板で焼きそばを焼き続け、夜は豊玉第一町会の北新井公園盆踊り大会へ！\n最高のスタートダッシュが切れました。いよいよ始まった暑い夏休み、全力で動いてまいります😄✨＃練馬区\nこまめな水分補給で熱中症対策を🙇 https://t.co/lBLYgZbI8t",
+      "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
+    },
+    {
+      "id": "xposter_014cade721818ff7",
+      "status": "needs_ocr",
+      "priority": "medium",
+      "evidence_type": "poster_or_flyer_image",
+      "assumed_source_confidence": "medium",
+      "account": "@ishijimahideki",
+      "account_name": "石島ひでき 前 東京都議会議員（中央区）",
+      "trusted_informant": false,
+      "trusted_informant_rank": "",
+      "url": "https://x.com/ishijimahideki/status/2078631706903671085",
+      "tweet_id": "2078631706903671085",
+      "date": "2026-07-19T00:03:12+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/amplify_video_thumb/2078631607813193728/img/2lzVyi6FbmD1qitY.jpg",
+        "https://t.co/bvWEcYAHCY",
+        "pic.x.com/bvWEcYAHCY",
+        "https://pbs.twimg.com/media/HNjIbysaYAEZ_bq.jpg",
+        "https://pbs.twimg.com/media/HNjIbywacAAajDn.jpg",
+        "https://pbs.twimg.com/media/HNjIbywbYAAbpTj.jpg"
+      ],
+      "text": "四町会合同納涼盆踊り大会。\n多くの皆さんにご来場いただき、ありがとうございました。\n\nわが人形町一丁目町会は、こどもゲームコーナーを担当。\n各ゲームの運営は、日本橋小学校5・6年生の皆さんが    地域活動の体験として、毎年お手伝いをしてくれています。\n今年も手際よく大活躍！\n子どもたちの頑張りに感謝、ありがとうございました！\n\n#小網町町会\n#人形町一丁目町会\n#人形町一丁目芳人町会\n#蛎一北部町会\n#日本橋小学校",
       "review_hint": "ポスター/チラシ画像をOCRし、イベント名・開催日・時間・会場・主催者を読めたら高確度の開催候補として昇格する"
     },
     {
