@@ -1,6 +1,6 @@
 {
   "generated_by": "review_inbox.py",
-  "generated_at": "2026-07-26T08:43:32.495878+00:00",
+  "generated_at": "2026-07-26T08:45:21.659053+00:00",
   "source": "master_rdb.review_inbox_items",
   "status_filter": "pending",
   "items": [
@@ -65,6 +65,320 @@
           "url": "https://www.youtube.com/watch?v=lnNRMFZtwDw"
         },
         "video_id": "lnNRMFZtwDw"
+      }
+    },
+    {
+      "inbox_id": "inbox_14efcf9da4c1fe34",
+      "kind": "term",
+      "domain": "曲・用語・低緊急度",
+      "priority_label": "P3",
+      "priority_score": null,
+      "title": "盆活",
+      "event_name": "",
+      "venue": "",
+      "event_year": null,
+      "source_id": "daily_term_candidate",
+      "source_key": "term:用語候補|type:行動語|value:盆活",
+      "source_url": "https://x.com/natsutr_bon/status/2081269975030149202",
+      "recommended_action": "stage_term_candidate",
+      "status": "pending",
+      "time_scope": "reference",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "d54cba20f7b47b12d0383eba6bdbe6ba2e588ada0dcbee8485c1d41ca71e6766",
+      "last_seen_at": "github-30194978446-1-daily_term_candidate",
+      "created_at": "2026-07-25T15:32:21.267614+00:00",
+      "updated_at": "2026-07-26T08:44:03.426354+00:00",
+      "payload": {
+        "category": "用語候補",
+        "confidence": "要レビュー",
+        "evidence": [
+          {
+            "account": "@natsutr_bon",
+            "date": "2026-07-26T06:46:44+00:00",
+            "text": "7/25①大島六丁目団地まつり ㊗️開幕！地元江東盆活🏮 お世話になっている江東区N先生の会場で、THE団地盆踊り🤩 江東区でお馴染みの福よ来い、アラレちゃん、そして踊りたかった新曲BENBEN音頭〜🎶ウチワを使った振りが楽しい！ 団地の子どもたちもたくさん踊ってて、夏の盆踊りの始まりを実感🏖️ https://t.co/jGMplQowL7",
+            "url": "https://x.com/natsutr_bon/status/2081269975030149202"
+          },
+          {
+            "account": "@772no15",
+            "date": "2026-07-25T15:17:59+00:00",
+            "text": "新横が雨だから急遽下北沢の盆踊りに移動！！たのしかったー！ なんか、無心に踊ってたら知らない人がコレをつけなされって、くれたんだが…（要らなかったから？邪魔だったから？？） よくわかんないけど今年も独りぼっちの盆活だからちょっと人と会話？して嬉しかったwww https://t.co/D5BkNRqKnE",
+            "url": "https://x.com/772no15/status/2081036247947260288"
+          }
+        ],
+        "evidence_count": 2,
+        "evidence_text": "7/25①大島六丁目団地まつり ㊗️開幕！地元江東盆活🏮 お世話になっている江東区N先生の会場で、THE団地盆踊り🤩 江東区でお馴染みの福よ来い、アラレちゃん、そして踊りたかった新曲BENBEN音頭〜🎶ウチワを使った振りが楽しい！ 団地の子どもたちもたくさん踊ってて、夏の盆踊りの始まりを実感🏖️ https://t.co/jGMplQowL7\n---\n新横が雨だから急遽下北沢の盆踊りに移動！！たのしかったー！ なんか、無心に踊ってたら知らない人がコレをつけなされって、くれたんだが…（要らなかったから？邪魔だったから？？） よくわかんないけど今年も独りぼっちの盆活だからちょっと人と会話？して嬉しかったwww https://t.co/D5BkNRqKnE",
+        "evidence_url": "https://x.com/natsutr_bon/status/2081269975030149202",
+        "interpretation": "盆踊り関連の参加・調査・練習などの活動",
+        "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
+        "term": "盆活",
+        "type": "行動語"
+      }
+    },
+    {
+      "inbox_id": "inbox_32c49053b858d501",
+      "kind": "term",
+      "domain": "曲・用語・低緊急度",
+      "priority_label": "P3",
+      "priority_score": null,
+      "title": "ハシゴ",
+      "event_name": "",
+      "venue": "",
+      "event_year": null,
+      "source_id": "daily_term_candidate",
+      "source_key": "term:用語候補|type:行動語|value:ハシゴ",
+      "source_url": "https://x.com/HirohitoKondo/status/2081298222711198203",
+      "recommended_action": "stage_term_candidate",
+      "status": "pending",
+      "time_scope": "reference",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "ba4c9f0818396c3e562f8fbb6a9aa8c9703f0e061394fb0d9b96b99479c9cef5",
+      "last_seen_at": "github-30194978446-1-daily_term_candidate",
+      "created_at": "2026-07-25T15:32:21.267614+00:00",
+      "updated_at": "2026-07-26T08:44:03.426354+00:00",
+      "payload": {
+        "category": "用語候補",
+        "confidence": "要レビュー",
+        "evidence": [
+          {
+            "account": "@HirohitoKondo",
+            "date": "2026-07-26T08:38:59+00:00",
+            "text": "昨日の盆踊り、三本木夏祭りから東郷町の御岳フェスティバルと兵庫・清水・三ツ池合同盆踊り大会とハシゴで、それぞれ東郷音頭、東郷小唄や炭坑節、ダンシングヒーロー、しんちゃん音頭を汗だくで踊りました。 https://t.co/aohHblJsSM",
+            "url": "https://x.com/HirohitoKondo/status/2081298222711198203"
+          },
+          {
+            "account": "@rie_murayama",
+            "date": "2026-07-25T14:48:26+00:00",
+            "text": "★夜は地元地域のお祭りを２件ハシゴしました🩷 初めに地元町会の須賀連合町会の盆踊りへ🍀 到着と同時にヤグラの上からご挨拶をさせていただきました🩷 二軒目は、伏山夏祭り😊 この時間になるとぐっと気温も下がり、多くの町会の方とお話しを😊 いつも温かく迎えて下さる皆さまに感謝です✨ https://t.co/5OVBzDpEzE",
+            "url": "https://x.com/rie_murayama/status/2081028809793720730"
+          },
+          {
+            "account": "@gPVEQeAD9U10257",
+            "date": "2026-07-23T12:43:00+00:00",
+            "text": "７月２３日 その１ 新橋こいち祭り ①桜田公園→②柳通りの順に 踊り場の繰り返し 新しい曲も有り楽しく１時間半 踊って赤坂浄土寺へハシゴ🚃 #盆踊り #新橋こいち祭り #港区 https://t.co/zx3cYrriqS",
+            "url": "https://x.com/gPVEQeAD9U10257/status/2080272465817965021"
+          },
+          {
+            "account": "@gPVEQeAD9U10257",
+            "date": "2026-07-25T13:58:58+00:00",
+            "text": "7月２５日 増上寺から堀留公園へハシゴ✨ 増上寺２年振りに開催✨ 🌟オリジナルの風車やお地蔵さん 🌟独特の振り付けの三味線ブギ や花笠音頭がユニーク👍 🌟リビオさん見ーつけた ⭐この後堀留公園へハシゴ⭐ ✨ここも三味線ブギや 花笠音頭の振り付けに特長が✨ #盆踊り #増上寺 #堀留公園 https://t.co/Q0EG1duNX3",
+            "url": "https://x.com/gPVEQeAD9U10257/status/2081016360679932055"
+          },
+          {
+            "account": "@kuku_6",
+            "date": "2026-07-25T13:00:33+00:00",
+            "text": "今日は三町会ハシゴして、それぞれで、櫓にあげさせてもらったり、踊りたそうな人スカウトしてきたり、子どもたちにレクチャーしながら踊ったりしてきた！ もうすっかり立派な盆踊りBBAになった！！ https://t.co/9UX2fJJeLu",
+            "url": "https://x.com/kuku_6/status/2081001659904467391"
+          }
+        ],
+        "evidence_count": 6,
+        "evidence_text": "昨日の盆踊り、三本木夏祭りから東郷町の御岳フェスティバルと兵庫・清水・三ツ池合同盆踊り大会とハシゴで、それぞれ東郷音頭、東郷小唄や炭坑節、ダンシングヒーロー、しんちゃん音頭を汗だくで踊りました。 https://t.co/aohHblJsSM\n---\n★夜は地元地域のお祭りを２件ハシゴしました🩷 初めに地元町会の須賀連合町会の盆踊りへ🍀 到着と同時にヤグラの上からご挨拶をさせていただきました🩷 二軒目は、伏山夏祭り😊 この時間になるとぐっと気温も下がり、多くの町会の方とお話しを😊 いつも温かく迎えて下さる皆さまに感謝です✨ https://t.co/5OVBzDpEzE\n---\n７月２３日 その１ 新橋こいち祭り ①桜田公園→②柳通りの順に 踊り場の繰り返し 新しい曲も有り楽しく１時間半 踊って赤坂浄土寺へハシゴ🚃 #盆踊り #新橋こいち祭り #港区 https://t.co/zx3cYrriqS",
+        "evidence_url": "https://x.com/HirohitoKondo/status/2081298222711198203",
+        "interpretation": "複数会場を同日または連続して巡る行動",
+        "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
+        "term": "ハシゴ",
+        "type": "行動語"
+      }
+    },
+    {
+      "inbox_id": "inbox_7058b1986df6334c",
+      "kind": "song_research",
+      "domain": "曲・用語・低緊急度",
+      "priority_label": "P3",
+      "priority_score": null,
+      "title": "おしりたんてい音頭 × 晴海ふ頭公園",
+      "event_name": "",
+      "venue": "晴海ふ頭公園",
+      "event_year": null,
+      "source_id": "daily_term_candidate",
+      "source_key": "cooccurrence:おしりたんてい音頭|venue:晴海ふ頭公園",
+      "source_url": "https://www.youtube.com/watch?v=GpfVwOduxVA",
+      "recommended_action": "stage_song_venue_evidence",
+      "status": "pending",
+      "time_scope": "reference",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "a3b37a7105c2908bfdba483f3014774ac0b1023aa15ea0de49692890a0d7d690",
+      "last_seen_at": "github-30194978446-1-daily_term_candidate",
+      "created_at": "2026-07-25T15:32:21.267614+00:00",
+      "updated_at": "2026-07-26T08:44:03.426354+00:00",
+      "payload": {
+        "category": "曲×会場共起",
+        "confidence": "要レビュー",
+        "event_candidates": [
+          "盆踊り大会"
+        ],
+        "evidence": [
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-07-26T08:00:07+00:00",
+            "text": "2026年7月12日に開催された「晴海ふ頭公園盆踊り大会」での盆踊りの様子をお届けします！ 晴海ふ頭公園の心地よい海風を感じながら、 会場の盛り上がりをぜひ映像でお楽しみください！ 晴海ふ頭公園盆踊り １おしりたんてい音頭 https://youtu.be/a14wHJTz11Y ２ジャンボリーミッキー https://youtu.be/qK_wAZd9sfY ３どんとこいブギ https://youtu.be/FwKDdeH2N7I ４河内おとこ節 https://youtu.be/jTg6AaNuJDw ５Let'sONDOAgain https://youtu.be/1hoUlCxoGBU ６東京五輪2020 https://youtu.be/8NRTaNXw95Y ７これがお江戸の盆ダンス https://youtu.be/Lj0a_tylof4 ８東京音頭 https://youtu.be/E6F3ET7WLGc ９炭坑節 https://youtu.be/Py81PpDfS0E 10きよしのズンドコ節 https://youtu.be/MQOEFbd0Xmk 11銀座カンカ",
+            "url": "https://www.youtube.com/watch?v=GpfVwOduxVA"
+          },
+          {
+            "account": "@wadaikoCH",
+            "date": "2026-07-25T08:00:37+00:00",
+            "text": "2026年7月12日に開催された「晴海ふ頭公園盆踊り大会」での盆踊りの様子をお届けします！ 晴海ふ頭公園の心地よい海風を感じながら、 会場の盛り上がりをぜひ映像でお楽しみください！ 晴海ふ頭公園盆踊り １おしりたんてい音頭 https://youtu.be/a14wHJTz11Y ２ジャンボリーミッキー https://youtu.be/qK_wAZd9sfY ３どんとこいブギ https://youtu.be/FwKDdeH2N7I ４河内おとこ節 https://youtu.be/jTg6AaNuJDw ５Let'sONDOAgain https://youtu.be/1hoUlCxoGBU ６東京五輪2020 https://youtu.be/8NRTaNXw95Y ７これがお江戸の盆ダンス https://youtu.be/Lj0a_tylof4 ８東京音頭 https://youtu.be/E6F3ET7WLGc ９炭坑節 https://youtu.be/Py81PpDfS0E 10きよしのズンドコ節 https://youtu.be/MQOEFbd0Xmk 11銀座カンカ",
+            "url": "https://www.youtube.com/watch?v=MQOEFbd0Xmk"
+          }
+        ],
+        "evidence_count": 2,
+        "evidence_text": "2026年7月12日に開催された「晴海ふ頭公園盆踊り大会」での盆踊りの様子をお届けします！ 晴海ふ頭公園の心地よい海風を感じながら、 会場の盛り上がりをぜひ映像でお楽しみください！ 晴海ふ頭公園盆踊り １おしりたんてい音頭 https://youtu.be/a14wHJTz11Y ２ジャンボリーミッキー https://youtu.be/qK_wAZd9sfY ３どんとこいブギ https://youtu.be/FwKDdeH2N7I ４河内おとこ節 https://youtu.be/jTg6AaNuJDw ５Let'sONDOAgain https://youtu.be/1hoUlCxoGBU ６東京五輪2020 https://youtu.be/8NRTaNXw95Y ７これがお江戸の盆ダンス https://youtu.be/Lj0a_tylof4 ８東京音頭 https://youtu.be/E6F3ET7WLGc ９炭坑節 https://youtu.be/Py81PpDfS0E 10きよしのズンドコ節 https://youtu.be/MQOEFbd0Xmk 11銀座カンカ\n---\n2026年7月12日に開催された「晴海ふ頭公園盆踊り大会」での盆踊りの様子をお届けします！ 晴海ふ頭公園の心地よい海風を感じながら、 会場の盛り上がりをぜひ映像でお楽しみください！ 晴海ふ頭公園盆踊り １おしりたんてい音頭 https://youtu.be/a14wHJTz11Y ２ジャンボリーミッキー https://youtu.be/qK_wAZd9sfY ３どんとこいブギ https://youtu.be/FwKDdeH2N7I ４河内おとこ節 https://youtu.be/jTg6AaNuJDw ５Let'sONDOAgain https://youtu.be/1hoUlCxoGBU ６東京五輪2020 https://youtu.be/8NRTaNXw95Y ７これがお江戸の盆ダンス https://youtu.be/Lj0a_tylof4 ８東京音頭 https://youtu.be/E6F3ET7WLGc ９炭坑節 https://youtu.be/Py81PpDfS0E 10きよしのズンドコ節 https://youtu.be/MQOEFbd0Xmk 11銀座カンカ",
+        "evidence_url": "https://www.youtube.com/watch?v=GpfVwOduxVA",
+        "interpretation": "晴海ふ頭公園でおしりたんてい音頭が言及された可能性",
+        "reason": "同一voice内に曲名候補と既知会場名が共起。",
+        "song_name": "おしりたんてい音頭",
+        "term": "おしりたんてい音頭 × 晴海ふ頭公園",
+        "type": "共起",
+        "venue": "晴海ふ頭公園"
+      }
+    },
+    {
+      "inbox_id": "inbox_9e8813a0631729c3",
+      "kind": "term",
+      "domain": "曲・用語・低緊急度",
+      "priority_label": "P3",
+      "priority_score": null,
+      "title": "踊り会",
+      "event_name": "",
+      "venue": "",
+      "event_year": null,
+      "source_id": "daily_term_candidate",
+      "source_key": "term:用語候補|type:準公式用語|value:踊り会",
+      "source_url": "https://x.com/harebon_odori/status/2081295647475650875",
+      "recommended_action": "stage_term_candidate",
+      "status": "pending",
+      "time_scope": "reference",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "d08d9959a141c1c76c48e22c09832f64b4374be62cf5fa80d21410a8d0c845f3",
+      "last_seen_at": "github-30194978446-1-daily_term_candidate",
+      "created_at": "2026-07-25T15:32:21.267614+00:00",
+      "updated_at": "2026-07-26T08:44:03.426354+00:00",
+      "payload": {
+        "category": "用語候補",
+        "confidence": "要レビュー",
+        "evidence": [
+          {
+            "account": "@harebon_odori",
+            "date": "2026-07-26T08:28:45+00:00",
+            "text": "いろんなの踊れたー‼️ 太鼓のみなさんが率先して盛り上げている盆踊り会場でした💃 休憩後の2部までの時間にやるらしい滅が気になりつつ移動。 品川区に戻りまする～🚃",
+            "url": "https://x.com/harebon_odori/status/2081295647475650875"
+          },
+          {
+            "account": "@y_kana620",
+            "date": "2026-07-25T23:45:39+00:00",
+            "text": "🏮東田端納涼盆踊り大会へ🏮 昨夜のやぐらを囲み、校庭いっぱいに広がる子どもから大人まで多くの皆さんで東田端地区納涼盆踊り会場は熱気と笑顔に包まれていました✨ 特に、東田端地区の各町会の女性の皆さんによる踊りは、とても華やでした✨ 会場では 🔸射的など子どもたちに人気の縁日コーナー 🔸町会やPTA、消防団の皆さんによる警備・運営 など、たくさんの方々のご協力によって素晴らしい盆踊り大会が開催されていました🤝 準備・運営いただいた東田端地区各町会を はじめ、関係者の皆さま、本当にありがとうございました😄 #北区 #北区長 #きたいを超える東京北区 #やまだ加奈子",
+            "url": "https://x.com/y_kana620/status/2081164005884997891"
+          },
+          {
+            "account": "@bon_odorer",
+            "date": "2026-07-25T14:25:38+00:00",
+            "text": "堀留児童公園盆踊り 地元応援！ 三味線ブギウギ一本狙いで飛び込みも ついに新曲出たぁ お座敷おどり（京極加津恵） これ確かレア曲だったような。。 CDポチるも 某盆踊り会場で幻として消えた一曲 この曲好きだったので 振付していただき大変うれしい 来年もこの曲アンコールでご当地曲に願う https://t.co/fx9be3aiWg",
+            "url": "https://x.com/bon_odorer/status/2081023073705398474"
+          },
+          {
+            "account": "@kamiya_chuo",
+            "date": "2026-07-25T14:36:33+00:00",
+            "text": "▶︎納涼盆踊り会 納涼会のお手伝い後、あやめ第二公園や有馬小で開催されていた近隣町会さんの盆踊り大会にお邪魔しました。 終盤に伺う形となってしまいましたが、地域の方々とお話できるありがたい時間をいただきました。 https://t.co/azYdGuURyE",
+            "url": "https://x.com/kamiya_chuo/status/2081025818067951698"
+          },
+          {
+            "account": "@morichan55net",
+            "date": "2026-07-25T12:40:28+00:00",
+            "text": "#四條畷市 #市議会議員 #森本勉 #盆踊り 今日は市内盆踊り会場のうち３箇所（北出町・江瀬美町・滝木間）を訪問しました。他にも開催されている所もありましたが、驚くほど多くの方々と握手や会話が出来ました。市内には同級生も親戚も一人もいません。モリもっちゃんと呼んで下さる方々が親戚です！ https://t.co/LtZAwoOaBx",
+            "url": "https://x.com/morichan55net/status/2080996606611259860"
+          }
+        ],
+        "evidence_count": 6,
+        "evidence_text": "いろんなの踊れたー‼️ 太鼓のみなさんが率先して盛り上げている盆踊り会場でした💃 休憩後の2部までの時間にやるらしい滅が気になりつつ移動。 品川区に戻りまする～🚃\n---\n🏮東田端納涼盆踊り大会へ🏮 昨夜のやぐらを囲み、校庭いっぱいに広がる子どもから大人まで多くの皆さんで東田端地区納涼盆踊り会場は熱気と笑顔に包まれていました✨ 特に、東田端地区の各町会の女性の皆さんによる踊りは、とても華やでした✨ 会場では 🔸射的など子どもたちに人気の縁日コーナー 🔸町会やPTA、消防団の皆さんによる警備・運営 など、たくさんの方々のご協力によって素晴らしい盆踊り大会が開催されていました🤝 準備・運営いただいた東田端地区各町会を はじめ、関係者の皆さま、本当にありがとうございました😄 #北区 #北区長 #きたいを超える東京北区 #やまだ加奈子\n---\n堀留児童公園盆踊り 地元応援！ 三味線ブギウギ一本狙いで飛び込みも ついに新曲出たぁ お座敷おどり（京極加津恵） これ確かレア曲だったような。。 CDポチるも 某盆踊り会場で幻として消えた一曲 この曲好きだったので 振付していただき大変うれしい 来年もこの曲アンコールでご当地曲に願う https://t.co/fx9be3aiWg",
+        "evidence_url": "https://x.com/harebon_odori/status/2081295647475650875",
+        "interpretation": "盆踊りや輪踊りの会",
+        "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
+        "term": "踊り会",
+        "type": "準公式用語"
+      }
+    },
+    {
+      "inbox_id": "inbox_eae6fb91a1865c29",
+      "kind": "term",
+      "domain": "曲・用語・低緊急度",
+      "priority_label": "P3",
+      "priority_score": null,
+      "title": "練習会",
+      "event_name": "",
+      "venue": "",
+      "event_year": null,
+      "source_id": "daily_term_candidate",
+      "source_key": "term:用語候補|type:準公式用語|value:練習会",
+      "source_url": "https://x.com/emipochi/status/2081296234883744087",
+      "recommended_action": "stage_term_candidate",
+      "status": "pending",
+      "time_scope": "reference",
+      "decision": null,
+      "decided_by": null,
+      "decided_at": null,
+      "closed_at": null,
+      "decision_route": null,
+      "source_payload_hash": "d7fd2280f177463c9d3a4ac3c60663362b1b92c96244367aff593557b08f5c8f",
+      "last_seen_at": "github-30194978446-1-daily_term_candidate",
+      "created_at": "2026-07-25T15:32:21.267614+00:00",
+      "updated_at": "2026-07-26T08:44:03.426354+00:00",
+      "payload": {
+        "category": "用語候補",
+        "confidence": "要レビュー",
+        "evidence": [
+          {
+            "account": "@emipochi",
+            "date": "2026-07-26T08:31:05+00:00",
+            "text": "盆踊りの練習会だけど 駐車場少ないのに車で来る人いっぱい 踊りのおばさま来て止められないかも😱 早めに来たから私はセーフ💦",
+            "url": "https://x.com/emipochi/status/2081296234883744087"
+          },
+          {
+            "account": "@tanoshiki_kana",
+            "date": "2026-07-26T08:18:00+00:00",
+            "text": "7/25（土）①#堀留公園 隣でこの夏の #盆踊り 大予習のありがたい練習会＋お遊び会へ。#2000年音頭 を分解して丁寧に教えてくださり感謝。実はパラパラ部分より円心を進む時の足運びがクセがあるような😵‍💫それもクリアに✌️隣の公園で #三味線ブギウギ （堀留v）を踊りたい気持ちを抑え、別会場へ。",
+            "url": "https://x.com/tanoshiki_kana/status/2081292940593500246"
+          },
+          {
+            "account": "@comcom_E_shiga",
+            "date": "2026-07-26T01:18:20+00:00",
+            "text": "【#東志賀学区 だより】 #名古屋市北区 #自治会 #女性の会 #盆踊り #盆踊り大会 本日14時より、東志賀のコミセンにおいて盆踊りの練習会を開催します。皆様のご参加お待ちしています。 暑い時間になります。体調には十分に気をつけてお越しください。 https://t.co/7une8A8DoW",
+            "url": "https://x.com/comcom_E_shiga/status/2081187327054086535"
+          },
+          {
+            "account": "@wakayama_shinji",
+            "date": "2026-07-26T07:43:00+00:00",
+            "text": "提治神社で行われている太鼓の練習会へ激励に伺いました！ 力強く響く太鼓の音色と、真剣に練習に取り組む皆さんの姿に、大きな元気をいただきました。 地元の「盆踊りクラブ」の皆さんも参加されて、世代を超えて地域の皆さんが集い、笑顔あふれる光景に、地域の絆の温かさを改めて感じました。 また、氏子青年会の皆様も本番に向け櫓を組んでおられました。 こうした伝統文化を次の世代へ受け継いでいく活動は、地域にとってかけがえのない財産です。これからも、皆さんの活動を心から応援してまいります！ スタッフ拝 #提治神社 #太鼓 #盆踊り #若山しんじ #愛知10区 #高市内閣",
+            "url": "https://x.com/wakayama_shinji/status/2081284135650484609"
+          },
+          {
+            "account": "@MAOK0617",
+            "date": "2026-07-26T03:00:06+00:00",
+            "text": "昨夜は、橋戸新田公園の盆踊り大会へ✨ #町あかり さんの「盆踊り練習会」に参加した成果と、あかりさんを追っかけて参加した数々の盆踊り大会の成果を披露（誰に?!）する時が遂にやって来たのです👏 豪雨☔に襲われるというハプニングもありましたが、よい汗をかき、楽しく踊れました。 夏だ〜👍 https://t.co/hAoX9Yn1cd",
+            "url": "https://x.com/MAOK0617/status/2081212939647004829"
+          }
+        ],
+        "evidence_count": 30,
+        "evidence_text": "盆踊りの練習会だけど 駐車場少ないのに車で来る人いっぱい 踊りのおばさま来て止められないかも😱 早めに来たから私はセーフ💦\n---\n7/25（土）①#堀留公園 隣でこの夏の #盆踊り 大予習のありがたい練習会＋お遊び会へ。#2000年音頭 を分解して丁寧に教えてくださり感謝。実はパラパラ部分より円心を進む時の足運びがクセがあるような😵‍💫それもクリアに✌️隣の公園で #三味線ブギウギ （堀留v）を踊りたい気持ちを抑え、別会場へ。\n---\n【#東志賀学区 だより】 #名古屋市北区 #自治会 #女性の会 #盆踊り #盆踊り大会 本日14時より、東志賀のコミセンにおいて盆踊りの練習会を開催します。皆様のご参加お待ちしています。 暑い時間になります。体調には十分に気をつけてお越しください。 https://t.co/7une8A8DoW",
+        "evidence_url": "https://x.com/emipochi/status/2081296234883744087",
+        "interpretation": "盆踊りの曲や振りを練習する会",
+        "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
+        "term": "練習会",
+        "type": "準公式用語"
       }
     },
     {
@@ -12712,51 +13026,6 @@
       }
     },
     {
-      "inbox_id": "inbox_14efcf9da4c1fe34",
-      "kind": "term",
-      "domain": "曲・用語・低緊急度",
-      "priority_label": "P3",
-      "priority_score": null,
-      "title": "盆活",
-      "event_name": "",
-      "venue": "",
-      "event_year": null,
-      "source_id": "daily_term_candidate",
-      "source_key": "term:用語候補|type:行動語|value:盆活",
-      "source_url": "https://x.com/772no15/status/2081036247947260288",
-      "recommended_action": "stage_term_candidate",
-      "status": "pending",
-      "time_scope": "reference",
-      "decision": null,
-      "decided_by": null,
-      "decided_at": null,
-      "closed_at": null,
-      "decision_route": null,
-      "source_payload_hash": "46b1ce8ce1ca75d3577c00e48311411cab3883d4b75a4e24b0131f1526eaf62e",
-      "last_seen_at": "github-30163620417-1-daily_term_candidate",
-      "created_at": "2026-07-25T15:32:21.267614+00:00",
-      "updated_at": "2026-07-25T15:32:21.267614+00:00",
-      "payload": {
-        "category": "用語候補",
-        "confidence": "要レビュー",
-        "evidence": [
-          {
-            "account": "@772no15",
-            "date": "2026-07-25T15:17:59+00:00",
-            "text": "新横が雨だから急遽下北沢の盆踊りに移動！！たのしかったー！ なんか、無心に踊ってたら知らない人がコレをつけなされって、くれたんだが…（要らなかったから？邪魔だったから？？） よくわかんないけど今年も独りぼっちの盆活だからちょっと人と会話？して嬉しかったwww https://t.co/D5BkNRqKnE",
-            "url": "https://x.com/772no15/status/2081036247947260288"
-          }
-        ],
-        "evidence_count": 1,
-        "evidence_text": "新横が雨だから急遽下北沢の盆踊りに移動！！たのしかったー！ なんか、無心に踊ってたら知らない人がコレをつけなされって、くれたんだが…（要らなかったから？邪魔だったから？？） よくわかんないけど今年も独りぼっちの盆活だからちょっと人と会話？して嬉しかったwww https://t.co/D5BkNRqKnE",
-        "evidence_url": "https://x.com/772no15/status/2081036247947260288",
-        "interpretation": "盆踊り関連の参加・調査・練習などの活動",
-        "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
-        "term": "盆活",
-        "type": "行動語"
-      }
-    },
-    {
       "inbox_id": "inbox_2768a76b3e9d73c3",
       "kind": "song_research",
       "domain": "曲・用語・低緊急度",
@@ -12847,125 +13116,6 @@
         "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
         "term": "梯子",
         "type": "行動語"
-      }
-    },
-    {
-      "inbox_id": "inbox_32c49053b858d501",
-      "kind": "term",
-      "domain": "曲・用語・低緊急度",
-      "priority_label": "P3",
-      "priority_score": null,
-      "title": "ハシゴ",
-      "event_name": "",
-      "venue": "",
-      "event_year": null,
-      "source_id": "daily_term_candidate",
-      "source_key": "term:用語候補|type:行動語|value:ハシゴ",
-      "source_url": "https://x.com/rie_murayama/status/2081028809793720730",
-      "recommended_action": "stage_term_candidate",
-      "status": "pending",
-      "time_scope": "reference",
-      "decision": null,
-      "decided_by": null,
-      "decided_at": null,
-      "closed_at": null,
-      "decision_route": null,
-      "source_payload_hash": "c40e45003cb960bc6aa735d5785b6e2abb6ae6a6932f72ba6b16ec352ded47d0",
-      "last_seen_at": "github-30163620417-1-daily_term_candidate",
-      "created_at": "2026-07-25T15:32:21.267614+00:00",
-      "updated_at": "2026-07-25T15:32:21.267614+00:00",
-      "payload": {
-        "category": "用語候補",
-        "confidence": "要レビュー",
-        "evidence": [
-          {
-            "account": "@rie_murayama",
-            "date": "2026-07-25T14:48:26+00:00",
-            "text": "★夜は地元地域のお祭りを２件ハシゴしました🩷 初めに地元町会の須賀連合町会の盆踊りへ🍀 到着と同時にヤグラの上からご挨拶をさせていただきました🩷 二軒目は、伏山夏祭り😊 この時間になるとぐっと気温も下がり、多くの町会の方とお話しを😊 いつも温かく迎えて下さる皆さまに感謝です✨ https://t.co/5OVBzDpEzE",
-            "url": "https://x.com/rie_murayama/status/2081028809793720730"
-          },
-          {
-            "account": "@gPVEQeAD9U10257",
-            "date": "2026-07-23T12:43:00+00:00",
-            "text": "７月２３日 その１ 新橋こいち祭り ①桜田公園→②柳通りの順に 踊り場の繰り返し 新しい曲も有り楽しく１時間半 踊って赤坂浄土寺へハシゴ🚃 #盆踊り #新橋こいち祭り #港区 https://t.co/zx3cYrriqS",
-            "url": "https://x.com/gPVEQeAD9U10257/status/2080272465817965021"
-          },
-          {
-            "account": "@gPVEQeAD9U10257",
-            "date": "2026-07-25T13:58:58+00:00",
-            "text": "7月２５日 増上寺から堀留公園へハシゴ✨ 増上寺２年振りに開催✨ 🌟オリジナルの風車やお地蔵さん 🌟独特の振り付けの三味線ブギ や花笠音頭がユニーク👍 🌟リビオさん見ーつけた ⭐この後堀留公園へハシゴ⭐ ✨ここも三味線ブギや 花笠音頭の振り付けに特長が✨ #盆踊り #増上寺 #堀留公園 https://t.co/Q0EG1duNX3",
-            "url": "https://x.com/gPVEQeAD9U10257/status/2081016360679932055"
-          },
-          {
-            "account": "@kuku_6",
-            "date": "2026-07-25T13:00:33+00:00",
-            "text": "今日は三町会ハシゴして、それぞれで、櫓にあげさせてもらったり、踊りたそうな人スカウトしてきたり、子どもたちにレクチャーしながら踊ったりしてきた！ もうすっかり立派な盆踊りBBAになった！！ https://t.co/9UX2fJJeLu",
-            "url": "https://x.com/kuku_6/status/2081001659904467391"
-          },
-          {
-            "account": "@GAkool082",
-            "date": "2026-07-25T07:02:50+00:00",
-            "text": "郡上八幡・下呂温泉旅行からそのまま大野で行われる盆踊りへ 帰ってきた途端すごく暑い なお今日も太鼓の後地元の練習会へハシゴです https://t.co/dKsxZ38a4e",
-            "url": "https://x.com/GAkool082/status/2080911637339644208"
-          }
-        ],
-        "evidence_count": 5,
-        "evidence_text": "★夜は地元地域のお祭りを２件ハシゴしました🩷 初めに地元町会の須賀連合町会の盆踊りへ🍀 到着と同時にヤグラの上からご挨拶をさせていただきました🩷 二軒目は、伏山夏祭り😊 この時間になるとぐっと気温も下がり、多くの町会の方とお話しを😊 いつも温かく迎えて下さる皆さまに感謝です✨ https://t.co/5OVBzDpEzE\n---\n７月２３日 その１ 新橋こいち祭り ①桜田公園→②柳通りの順に 踊り場の繰り返し 新しい曲も有り楽しく１時間半 踊って赤坂浄土寺へハシゴ🚃 #盆踊り #新橋こいち祭り #港区 https://t.co/zx3cYrriqS\n---\n7月２５日 増上寺から堀留公園へハシゴ✨ 増上寺２年振りに開催✨ 🌟オリジナルの風車やお地蔵さん 🌟独特の振り付けの三味線ブギ や花笠音頭がユニーク👍 🌟リビオさん見ーつけた ⭐この後堀留公園へハシゴ⭐ ✨ここも三味線ブギや 花笠音頭の振り付けに特長が✨ #盆踊り #増上寺 #堀留公園 https://t.co/Q0EG1duNX3",
-        "evidence_url": "https://x.com/rie_murayama/status/2081028809793720730",
-        "interpretation": "複数会場を同日または連続して巡る行動",
-        "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
-        "term": "ハシゴ",
-        "type": "行動語"
-      }
-    },
-    {
-      "inbox_id": "inbox_7058b1986df6334c",
-      "kind": "song_research",
-      "domain": "曲・用語・低緊急度",
-      "priority_label": "P3",
-      "priority_score": null,
-      "title": "おしりたんてい音頭 × 晴海ふ頭公園",
-      "event_name": "",
-      "venue": "晴海ふ頭公園",
-      "event_year": null,
-      "source_id": "daily_term_candidate",
-      "source_key": "cooccurrence:おしりたんてい音頭|venue:晴海ふ頭公園",
-      "source_url": "https://www.youtube.com/watch?v=MQOEFbd0Xmk",
-      "recommended_action": "stage_song_venue_evidence",
-      "status": "pending",
-      "time_scope": "reference",
-      "decision": null,
-      "decided_by": null,
-      "decided_at": null,
-      "closed_at": null,
-      "decision_route": null,
-      "source_payload_hash": "3a5e9de087d56e2e3ef21c32126ac319c4393de09560038151eb7eb7d076a79d",
-      "last_seen_at": "github-30163620417-1-daily_term_candidate",
-      "created_at": "2026-07-25T15:32:21.267614+00:00",
-      "updated_at": "2026-07-25T15:32:21.267614+00:00",
-      "payload": {
-        "category": "曲×会場共起",
-        "confidence": "要レビュー",
-        "event_candidates": [
-          "盆踊り大会"
-        ],
-        "evidence": [
-          {
-            "account": "@wadaikoCH",
-            "date": "2026-07-25T08:00:37+00:00",
-            "text": "2026年7月12日に開催された「晴海ふ頭公園盆踊り大会」での盆踊りの様子をお届けします！ 晴海ふ頭公園の心地よい海風を感じながら、 会場の盛り上がりをぜひ映像でお楽しみください！ 晴海ふ頭公園盆踊り １おしりたんてい音頭 https://youtu.be/a14wHJTz11Y ２ジャンボリーミッキー https://youtu.be/qK_wAZd9sfY ３どんとこいブギ https://youtu.be/FwKDdeH2N7I ４河内おとこ節 https://youtu.be/jTg6AaNuJDw ５Let'sONDOAgain https://youtu.be/1hoUlCxoGBU ６東京五輪2020 https://youtu.be/8NRTaNXw95Y ７これがお江戸の盆ダンス https://youtu.be/Lj0a_tylof4 ８東京音頭 https://youtu.be/E6F3ET7WLGc ９炭坑節 https://youtu.be/Py81PpDfS0E 10きよしのズンドコ節 https://youtu.be/MQOEFbd0Xmk 11銀座カンカ",
-            "url": "https://www.youtube.com/watch?v=MQOEFbd0Xmk"
-          }
-        ],
-        "evidence_count": 1,
-        "evidence_text": "2026年7月12日に開催された「晴海ふ頭公園盆踊り大会」での盆踊りの様子をお届けします！ 晴海ふ頭公園の心地よい海風を感じながら、 会場の盛り上がりをぜひ映像でお楽しみください！ 晴海ふ頭公園盆踊り １おしりたんてい音頭 https://youtu.be/a14wHJTz11Y ２ジャンボリーミッキー https://youtu.be/qK_wAZd9sfY ３どんとこいブギ https://youtu.be/FwKDdeH2N7I ４河内おとこ節 https://youtu.be/jTg6AaNuJDw ５Let'sONDOAgain https://youtu.be/1hoUlCxoGBU ６東京五輪2020 https://youtu.be/8NRTaNXw95Y ７これがお江戸の盆ダンス https://youtu.be/Lj0a_tylof4 ８東京音頭 https://youtu.be/E6F3ET7WLGc ９炭坑節 https://youtu.be/Py81PpDfS0E 10きよしのズンドコ節 https://youtu.be/MQOEFbd0Xmk 11銀座カンカ",
-        "evidence_url": "https://www.youtube.com/watch?v=MQOEFbd0Xmk",
-        "interpretation": "晴海ふ頭公園でおしりたんてい音頭が言及された可能性",
-        "reason": "同一voice内に曲名候補と既知会場名が共起。",
-        "song_name": "おしりたんてい音頭",
-        "term": "おしりたんてい音頭 × 晴海ふ頭公園",
-        "type": "共起",
-        "venue": "晴海ふ頭公園"
       }
     },
     {
@@ -13070,69 +13220,6 @@
       }
     },
     {
-      "inbox_id": "inbox_9e8813a0631729c3",
-      "kind": "term",
-      "domain": "曲・用語・低緊急度",
-      "priority_label": "P3",
-      "priority_score": null,
-      "title": "踊り会",
-      "event_name": "",
-      "venue": "",
-      "event_year": null,
-      "source_id": "daily_term_candidate",
-      "source_key": "term:用語候補|type:準公式用語|value:踊り会",
-      "source_url": "https://x.com/bon_odorer/status/2081023073705398474",
-      "recommended_action": "stage_term_candidate",
-      "status": "pending",
-      "time_scope": "reference",
-      "decision": null,
-      "decided_by": null,
-      "decided_at": null,
-      "closed_at": null,
-      "decision_route": null,
-      "source_payload_hash": "6c66e6f2d0ee8087c90ec301a835d188bb7d4cbca9ccaebc55dfb2300e4c566f",
-      "last_seen_at": "github-30163620417-1-daily_term_candidate",
-      "created_at": "2026-07-25T15:32:21.267614+00:00",
-      "updated_at": "2026-07-25T15:32:21.267614+00:00",
-      "payload": {
-        "category": "用語候補",
-        "confidence": "要レビュー",
-        "evidence": [
-          {
-            "account": "@bon_odorer",
-            "date": "2026-07-25T14:25:38+00:00",
-            "text": "堀留児童公園盆踊り 地元応援！ 三味線ブギウギ一本狙いで飛び込みも ついに新曲出たぁ お座敷おどり（京極加津恵） これ確かレア曲だったような。。 CDポチるも 某盆踊り会場で幻として消えた一曲 この曲好きだったので 振付していただき大変うれしい 来年もこの曲アンコールでご当地曲に願う https://t.co/fx9be3aiWg",
-            "url": "https://x.com/bon_odorer/status/2081023073705398474"
-          },
-          {
-            "account": "@kamiya_chuo",
-            "date": "2026-07-25T14:36:33+00:00",
-            "text": "▶︎納涼盆踊り会 納涼会のお手伝い後、あやめ第二公園や有馬小で開催されていた近隣町会さんの盆踊り大会にお邪魔しました。 終盤に伺う形となってしまいましたが、地域の方々とお話できるありがたい時間をいただきました。 https://t.co/azYdGuURyE",
-            "url": "https://x.com/kamiya_chuo/status/2081025818067951698"
-          },
-          {
-            "account": "@morichan55net",
-            "date": "2026-07-25T12:40:28+00:00",
-            "text": "#四條畷市 #市議会議員 #森本勉 #盆踊り 今日は市内盆踊り会場のうち３箇所（北出町・江瀬美町・滝木間）を訪問しました。他にも開催されている所もありましたが、驚くほど多くの方々と握手や会話が出来ました。市内には同級生も親戚も一人もいません。モリもっちゃんと呼んで下さる方々が親戚です！ https://t.co/LtZAwoOaBx",
-            "url": "https://x.com/morichan55net/status/2080996606611259860"
-          },
-          {
-            "account": "@kuzunavi",
-            "date": "2026-07-24T23:23:23+00:00",
-            "text": "今日は公民館で秋のたばこ祭りでパレードをする「はだの煙草音頭」の練習会ののち 夕方から西地区の納涼祭へ行くのである 昨年聞いて、絶対に行きたかった盆踊り会場なのである 遊行の盆とかち合うのであちらは行かれませんが 沼ぼんのみんな、頑張ってねー ジューマンエーン😆",
-            "url": "https://x.com/kuzunavi/status/2080796012416000415"
-          }
-        ],
-        "evidence_count": 4,
-        "evidence_text": "堀留児童公園盆踊り 地元応援！ 三味線ブギウギ一本狙いで飛び込みも ついに新曲出たぁ お座敷おどり（京極加津恵） これ確かレア曲だったような。。 CDポチるも 某盆踊り会場で幻として消えた一曲 この曲好きだったので 振付していただき大変うれしい 来年もこの曲アンコールでご当地曲に願う https://t.co/fx9be3aiWg\n---\n▶︎納涼盆踊り会 納涼会のお手伝い後、あやめ第二公園や有馬小で開催されていた近隣町会さんの盆踊り大会にお邪魔しました。 終盤に伺う形となってしまいましたが、地域の方々とお話できるありがたい時間をいただきました。 https://t.co/azYdGuURyE\n---\n#四條畷市 #市議会議員 #森本勉 #盆踊り 今日は市内盆踊り会場のうち３箇所（北出町・江瀬美町・滝木間）を訪問しました。他にも開催されている所もありましたが、驚くほど多くの方々と握手や会話が出来ました。市内には同級生も親戚も一人もいません。モリもっちゃんと呼んで下さる方々が親戚です！ https://t.co/LtZAwoOaBx",
-        "evidence_url": "https://x.com/bon_odorer/status/2081023073705398474",
-        "interpretation": "盆踊りや輪踊りの会",
-        "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
-        "term": "踊り会",
-        "type": "準公式用語"
-      }
-    },
-    {
       "inbox_id": "inbox_bfc5a2b23d09a839",
       "kind": "song_research",
       "domain": "曲・用語・低緊急度",
@@ -13228,75 +13315,6 @@
         "term": "こいち祭はご当地新橋音頭 × 浄土寺",
         "type": "共起",
         "venue": "浄土寺"
-      }
-    },
-    {
-      "inbox_id": "inbox_eae6fb91a1865c29",
-      "kind": "term",
-      "domain": "曲・用語・低緊急度",
-      "priority_label": "P3",
-      "priority_score": null,
-      "title": "練習会",
-      "event_name": "",
-      "venue": "",
-      "event_year": null,
-      "source_id": "daily_term_candidate",
-      "source_key": "term:用語候補|type:準公式用語|value:練習会",
-      "source_url": "https://x.com/djma_blue/status/2081022480005931111",
-      "recommended_action": "stage_term_candidate",
-      "status": "pending",
-      "time_scope": "reference",
-      "decision": null,
-      "decided_by": null,
-      "decided_at": null,
-      "closed_at": null,
-      "decision_route": null,
-      "source_payload_hash": "c2467b726640014eaaf63dbe3cab28a0693ec8456f47df16a5b47aff524d20f9",
-      "last_seen_at": "github-30163620417-1-daily_term_candidate",
-      "created_at": "2026-07-25T15:32:21.267614+00:00",
-      "updated_at": "2026-07-25T15:32:21.267614+00:00",
-      "payload": {
-        "category": "用語候補",
-        "confidence": "要レビュー",
-        "evidence": [
-          {
-            "account": "@djma_blue",
-            "date": "2026-07-25T14:23:17+00:00",
-            "text": "町あかりさんを観に練馬へ 練習会で覚えた炭坑節、踊ってる内に思い出してきた🕺初めて輪に入って踊った 楽しい🎵 僕の生まれ郡山は体が勝手に踊るようになってた😄 途中豪雨になったが、楽しすぎてずぶ濡れのまま踊ってた 笑 櫓で歌う町あかりさんは神々しかった✨ 今年も盆踊りの幕開けだ #町あかり https://t.co/4YWbr00zez",
-            "url": "https://x.com/djma_blue/status/2081022480005931111"
-          },
-          {
-            "account": "@SSqq47356585",
-            "date": "2026-07-25T13:28:31+00:00",
-            "text": "今日は浜町1丁目の後に池上新町の盆踊りへ。 池上新町は練習会に行ったが今日例の着物でもすぐバレたw櫓の上で踊りましたが緊張せずとても楽しかった！！！タオルとクッキーかな？頂きましたありがとうございます！！ なんと終わったあとに浜1行ってもティッシュ貰ってしまって感謝です お疲れ様でした https://t.co/k82q3PNfEK",
-            "url": "https://x.com/SSqq47356585/status/2081008699355898151"
-          },
-          {
-            "account": "@SSqq47356585",
-            "date": "2026-07-25T11:54:04+00:00",
-            "text": "浜町1丁目から次は練習会に参加した池上新町の盆踊りに参加！後でまとめます！！一応着物着ていって気づかれたら櫓で踊ろうという感じで行ったら秒で気づかれたwwwwwwwwwめっちゃ楽しかったけど僕が着物を着て櫓の上で川崎おどりを踊る確率今のところ0なの草www",
-            "url": "https://x.com/SSqq47356585/status/2080984930465837112"
-          },
-          {
-            "account": "@_kinaco_",
-            "date": "2026-07-25T13:28:10+00:00",
-            "text": "今年も盆踊り始め、、 ガチ勢の娘と共に事前の練習会にも行き、雨の合間に盆踊り 相馬盆歌、奥が深い",
-            "url": "https://x.com/_kinaco_/status/2081008608331100604"
-          },
-          {
-            "account": "@kanahokirekire",
-            "date": "2026-07-25T12:42:15+00:00",
-            "text": "ワシやないか〜〜〜い‼️🤣🤣🤣✌️ 先週のアフターイベントの盆踊り練習会の成果が見事に活かされてるやないか〜〜〜い‼️😆😆😆👍 https://t.co/rzLZjmRYry",
-            "url": "https://x.com/kanahokirekire/status/2080997055041024055"
-          }
-        ],
-        "evidence_count": 23,
-        "evidence_text": "町あかりさんを観に練馬へ 練習会で覚えた炭坑節、踊ってる内に思い出してきた🕺初めて輪に入って踊った 楽しい🎵 僕の生まれ郡山は体が勝手に踊るようになってた😄 途中豪雨になったが、楽しすぎてずぶ濡れのまま踊ってた 笑 櫓で歌う町あかりさんは神々しかった✨ 今年も盆踊りの幕開けだ #町あかり https://t.co/4YWbr00zez\n---\n今日は浜町1丁目の後に池上新町の盆踊りへ。 池上新町は練習会に行ったが今日例の着物でもすぐバレたw櫓の上で踊りましたが緊張せずとても楽しかった！！！タオルとクッキーかな？頂きましたありがとうございます！！ なんと終わったあとに浜1行ってもティッシュ貰ってしまって感謝です お疲れ様でした https://t.co/k82q3PNfEK\n---\n浜町1丁目から次は練習会に参加した池上新町の盆踊りに参加！後でまとめます！！一応着物着ていって気づかれたら櫓で踊ろうという感じで行ったら秒で気づかれたwwwwwwwwwめっちゃ楽しかったけど僕が着物を着て櫓の上で川崎おどりを踊る確率今のところ0なの草www",
-        "evidence_url": "https://x.com/djma_blue/status/2081022480005931111",
-        "interpretation": "盆踊りの曲や振りを練習する会",
-        "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
-        "term": "練習会",
-        "type": "準公式用語"
       }
     },
     {
