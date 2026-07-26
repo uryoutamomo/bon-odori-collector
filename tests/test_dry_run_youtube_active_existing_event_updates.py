@@ -1,6 +1,12 @@
 import unittest
 
-from dry_run_youtube_active_existing_event_updates import build_groups, find_event, proposed_note, row_status
+from dry_run_youtube_active_existing_event_updates import (
+    build_groups,
+    evidence_event_date,
+    find_event,
+    proposed_note,
+    row_status,
+)
 
 
 class FakeApi:
@@ -44,6 +50,43 @@ class DryRunYoutubeActiveExistingEventUpdatesTest(unittest.TestCase):
         self.assertEqual(len(groups), 1)
         self.assertEqual(groups[0]["target_event_name"], "山王音頭と民踊大会")
         self.assertEqual(len(groups[0]["videos"]), 2)
+
+    def test_does_not_borrow_public_date_for_undated_alias_match(self):
+        row = {
+            "detected_event_date": "",
+            "matched_public_event": {
+                "name": "丸の内de盆踊り",
+                "date": "2026-07-24",
+                "reasons": ["event_alias_in_youtube", "venue_alias_in_youtube"],
+            },
+            "published_at": "2025-07-26T00:00:00Z",
+        }
+
+        self.assertEqual(evidence_event_date(row), "")
+
+    def test_keeps_detected_date_for_alias_match(self):
+        row = {
+            "detected_event_date": "2025-07-26",
+            "matched_public_event": {
+                "name": "丸の内de盆踊り",
+                "date": "2026-07-24",
+                "reasons": ["event_alias_in_youtube"],
+            },
+        }
+
+        self.assertEqual(evidence_event_date(row), "2025-07-26")
+
+    def test_preserves_public_date_fallback_for_non_alias_match(self):
+        row = {
+            "detected_event_date": "",
+            "matched_public_event": {
+                "name": "山王音頭と民踊大会",
+                "date": "2026-06-13",
+                "reasons": ["event_name_in_youtube"],
+            },
+        }
+
+        self.assertEqual(evidence_event_date(row), "2026-06-13")
 
     def test_proposed_note_uses_occurrence_songs(self):
         note = proposed_note(

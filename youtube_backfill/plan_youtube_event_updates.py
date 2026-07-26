@@ -83,7 +83,12 @@ def is_out_of_scope(row):
 
 
 def is_post_event_context_only(row):
-    """Reject titles about the scene after an event rather than the event itself."""
+    """Reject unstructured titles about the scene after, not during, an event.
+
+    This path searches a free-text title/description blob.  The other two
+    matchers receive extracted event/venue fields, so this title-only negative
+    context guard does not belong in those structured-field paths.
+    """
 
     return bool(POST_EVENT_CONTEXT_RE.search(row.get("source_video_title") or ""))
 

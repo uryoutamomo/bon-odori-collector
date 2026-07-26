@@ -4,6 +4,11 @@ The public event JSON intentionally keeps one canonical Japanese display name.
 YouTube titles and descriptions often use shorter Japanese names or romanized
 English names, so matchers need a shared lookup layer instead of route-local
 special cases.
+
+This is deliberately a small code-owned seed.  Once the master data model has
+a canonical event-alias store, move these records there so adding an alias no
+longer requires a code change.  The matching API in this module is the seam for
+that migration.
 """
 
 from __future__ import annotations
