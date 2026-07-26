@@ -20,7 +20,7 @@ import urllib.error
 import urllib.request
 
 from song_processing.bon_odori_songs import extract_song_hints
-from event_model.event_series_normalization import series_event_name
+from event_model.event_series_normalization import public_series_name
 from event_model.year_context import normalize_target_year
 from master_rdb.master_db import MASTER_DB, connect_existing
 from public_json_postprocessors.apply_public_date_predictions import (
@@ -351,7 +351,7 @@ def apply_public_event_name_cleanup(events):
     for event in events:
         item = dict(event)
         before = item.get("name") or ""
-        after = clean_public_event_name(before)
+        after = public_series_name(clean_public_event_name(before))
         if after and after != before:
             item["name"] = after
             if item.get("display_name") == before:
@@ -482,7 +482,7 @@ def load_date_candidates():
 
 def _song_occurrence_key(event_name, venue, year):
     return (
-        re.sub(r"\s+", "", series_event_name(event_name)).casefold(),
+        re.sub(r"\s+", "", public_series_name(event_name)).casefold(),
         re.sub(r"\s+", "", venue or "").casefold(),
         int(year),
     )
@@ -849,7 +849,7 @@ def build_public_events_from_notion(*, target_year):
         for vid in venue_ids:
             v = venues[vid]
             covered.add(vid)
-            public_name = series_event_name(clean_public_text(name))
+            public_name = public_series_name(clean_public_text(name))
             description = clean_public_text(_prop(props, "公開紹介文"))
             raw_detail = clean_public_text(detail_text)
             detail = public_detail_text(raw_detail)
@@ -1045,7 +1045,7 @@ def build_public_events_from_master(db_path=MASTER_DB, *, target_year):
             months.add(int(date[5:7]))
         raw_detail = clean_public_text(row["detail"])
         description = clean_public_text(row["public_intro_override"] or row["series_intro"] or row["venue_intro"])
-        public_name = series_event_name(clean_public_text(row["display_name"] or row["series_name"]))
+        public_name = public_series_name(clean_public_text(row["display_name"] or row["series_name"]))
         if date:
             hints = hints_from_date_range(date, date_end)
             jun = jun_labels_from_date_range(date, date_end)
@@ -1188,7 +1188,7 @@ def sanitize_public_event_details(events):
     cleaned = []
     for event in events:
         item = dict(event)
-        item["name"] = series_event_name(clean_public_event_name(item.get("name")))
+        item["name"] = public_series_name(clean_public_event_name(item.get("name")))
         item["detail"] = public_detail_text(item.get("detail"))
         item["source_urls"] = collapse_public_source_urls(item.get("source_urls"))
         item.pop("youtube_evidence", None)
@@ -1624,7 +1624,7 @@ def suppress_replaced_recurring_events(events, *, target_year):
     """Hide previous-year cards when the same RDB series has a target-year card."""
     target_year = normalize_target_year(target_year)
     for event in events:
-        event["name"] = series_event_name(event.get("name"))
+        event["name"] = public_series_name(event.get("name"))
     current_by_key = {}
     for event in events:
         if not str(event.get("date") or "").startswith(f"{target_year}-"):
