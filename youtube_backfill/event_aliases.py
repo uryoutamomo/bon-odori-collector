@@ -13,7 +13,11 @@ that migration.
 
 from __future__ import annotations
 
+import re
 from collections.abc import Callable, Mapping, Sequence
+
+
+OCCURRENCE_EDITION_PREFIX_RE = re.compile(r"^第\s*[0-9０-９]+\s*回\s*")
 
 
 PUBLIC_EVENT_ALIASES: Mapping[str, Sequence[str]] = {
@@ -35,7 +39,7 @@ PUBLIC_EVENT_ALIASES: Mapping[str, Sequence[str]] = {
         "丸の内盆踊り",
         "東京丸の内盆踊り",
     ),
-    "第7回 渋谷盆踊り": (
+    "渋谷盆踊り": (
         "Shibuya Bon Odori",
         "Shibuya Bon Odori Festival",
         "Shibuya Bon Odori Dance Festival",
@@ -94,8 +98,19 @@ def find_alias_in_text(
     return ""
 
 
+def event_alias_key(canonical: object) -> str:
+    """Return a series-level alias key without an occurrence edition prefix.
+
+    Public display names are moving from values such as ``第7回 渋谷盆踊り``
+    to ``渋谷盆踊り``.  Normalizing only the lookup key keeps aliases working
+    before and after that export change without changing series identifiers.
+    """
+
+    return OCCURRENCE_EDITION_PREFIX_RE.sub("", str(canonical or "")).strip()
+
+
 def find_event_alias(canonical: object, text: object, normalize: Callable[[object], str]) -> str:
-    return find_alias_in_text(canonical, text, normalize, PUBLIC_EVENT_ALIASES)
+    return find_alias_in_text(event_alias_key(canonical), text, normalize, PUBLIC_EVENT_ALIASES)
 
 
 def find_venue_alias(canonical: object, text: object, normalize: Callable[[object], str]) -> str:

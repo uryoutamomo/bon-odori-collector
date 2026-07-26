@@ -203,6 +203,22 @@ class PlanYoutubeEventUpdatesTest(unittest.TestCase):
 
         self.assertIsNone(match)
 
+    def test_event_alias_survives_public_name_dropping_edition_prefix(self):
+        row = {
+            "event_name": "Shibuya Bon Odori Dance festival 2025",
+            "venue": "",
+            "source_video_title": "Shibuya Bon Odori Dance festival 2025",
+            "description_excerpt": "in front of Shibuya 109",
+        }
+        for public_name in ("第7回 渋谷盆踊り", "第７回 渋谷盆踊り", "渋谷盆踊り"):
+            with self.subTest(public_name=public_name):
+                match = match_public_event(
+                    row,
+                    [{"name": public_name, "venue": "渋谷109前", "area": "渋谷区"}],
+                )
+                self.assertEqual(match["name"], public_name)
+                self.assertIn("event_alias_in_youtube", match["reasons"])
+
     def test_clean_song_title(self):
         self.assertEqual(clean_song_title("東京音頭 / Tokyo Ondo"), "東京音頭")
         self.assertEqual(clean_song_title("ダンシングヒーロー盆踊り"), "ダンシングヒーロー")
