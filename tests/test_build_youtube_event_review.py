@@ -1,6 +1,11 @@
 import unittest
 
-from youtube_backfill.build_youtube_event_review import build_rows, infer_event_name, infer_venue
+from youtube_backfill.build_youtube_event_review import (
+    build_rows,
+    infer_event_name,
+    infer_venue,
+    match_public_event,
+)
 
 
 class BuildYoutubeEventReviewTest(unittest.TestCase):
@@ -40,6 +45,27 @@ class BuildYoutubeEventReviewTest(unittest.TestCase):
         self.assertEqual(len(rows), 1)
         self.assertEqual(rows[0]["matched_public_event"]["name"], "山王音頭と民踊大会")
         self.assertEqual(rows[0]["review_priority"], "既存補強")
+
+    def test_matches_romanized_event_and_venue_aliases(self):
+        match = match_public_event(
+            {
+                "event_name": "Jiyugaoka Bon Odori Dance festival",
+                "venue": "in front of Jiyugaoka Station",
+                "event_date": "2025-07-20",
+            },
+            [
+                {
+                    "name": "自由が丘納涼盆踊り大会",
+                    "venue": "自由が丘駅前ロータリー 特設会場",
+                    "date": "2026-07-18",
+                    "date_end": "2026-07-20",
+                }
+            ],
+        )
+
+        self.assertEqual(match["name"], "自由が丘納涼盆踊り大会")
+        self.assertEqual(match["score"], 120)
+        self.assertEqual(match["reasons"], ["event_alias", "venue_alias", "month_day"])
 
 
 if __name__ == "__main__":

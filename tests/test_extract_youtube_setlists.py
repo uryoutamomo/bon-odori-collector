@@ -330,6 +330,31 @@ class ExtractYoutubeSetlistsTest(unittest.TestCase):
         self.assertEqual(rows[0]["canonical_venue"], "山王パークタワー公開空地")
         self.assertIn("event_name_exact", rows[0]["matched_public_event"]["reasons"])
 
+    def test_matches_cross_year_occurrence_by_curated_event_alias(self):
+        rows = attach_public_event_matches(
+            [
+                {
+                    "event_name_hint": "Marunouchi Bon Odori Dance Festival",
+                    "venue": "Gyoko Dori",
+                    "event_date": "2025-07-26",
+                }
+            ],
+            [
+                {
+                    "name": "丸の内de盆踊り",
+                    "venue": "行幸通り",
+                    "date": "2026-07-24",
+                }
+            ],
+        )
+
+        self.assertEqual(rows[0]["canonical_event_name"], "丸の内de盆踊り")
+        self.assertEqual(rows[0]["matched_public_event"]["score"], 115)
+        self.assertEqual(
+            rows[0]["matched_public_event"]["reasons"],
+            ["cross_year_event_alias", "event_name_alias", "venue_alias"],
+        )
+
     def test_infers_sanno_event_from_akasaka_hie_title(self):
         voices = [
             {

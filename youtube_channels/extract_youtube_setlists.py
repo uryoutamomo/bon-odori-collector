@@ -11,6 +11,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from song_processing.song_occurrences import parse_event_date
+from youtube_backfill.event_aliases import find_event_alias, find_venue_alias
 
 
 DATA = Path("data")
@@ -512,15 +513,20 @@ def event_date_matches(occurrence_date, event):
 
 
 def score_public_event_match(occurrence, event):
-    if not event_date_matches(occurrence.get("event_date"), event):
+    date_matches = event_date_matches(occurrence.get("event_date"), event)
+    event_alias = find_event_alias(event.get("name"), occurrence.get("event_name_hint"), normalize_key)
+    if not date_matches and not event_alias:
         return 0, []
-    reasons = ["date"]
-    score = 50
+    reasons = ["date"] if date_matches else ["cross_year_event_alias"]
+    score = 50 if date_matches else 35
     occ_name = normalize_key(occurrence.get("event_name_hint"))
     event_name = normalize_key(event.get("name"))
     occ_venue = normalize_key(occurrence.get("venue"))
     event_venue = normalize_key(event.get("venue"))
-    if occ_name and event_name:
+    if event_alias:
+        score += 45
+        reasons.append("event_name_alias")
+    elif occ_name and event_name:
         if occ_name == event_name:
             score += 45
             reasons.append("event_name_exact")
@@ -534,6 +540,9 @@ def score_public_event_match(occurrence, event):
         elif occ_venue in event_venue or event_venue in occ_venue:
             score += 18
             reasons.append("venue_partial")
+        elif find_venue_alias(event.get("venue"), occurrence.get("venue"), normalize_key):
+            score += 35
+            reasons.append("venue_alias")
     if occurrence.get("event_key_hint") and normalize_key(occurrence["event_key_hint"]) == event_name:
         score += 10
         reasons.append("event_key_hint")
