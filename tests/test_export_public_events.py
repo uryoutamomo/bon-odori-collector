@@ -560,6 +560,17 @@ class ExportPublicEventsTest(unittest.TestCase):
             "葛飾菖蒲まつり 水元公園会場 民踊パレード",
         )
 
+    def test_apply_public_event_name_cleanup_drops_edition_counter(self):
+        rows = apply_public_event_name_cleanup([
+            {"name": "第7回 渋谷盆踊り", "venue": "渋谷109前", "area": "渋谷区"},
+            {"name": "地域のふれあい第37回盆踊り大会", "venue": "JR目黒駅西口前", "area": "目黒区"},
+            {"name": "丸の内de盆踊り", "venue": "行幸通り", "area": "千代田区"},
+        ])
+
+        self.assertEqual(rows[0]["name"], "渋谷盆踊り")
+        self.assertEqual(rows[1]["name"], "地域のふれあい盆踊り大会")
+        self.assertEqual(rows[2]["name"], "丸の内de盆踊り")
+
     def test_apply_public_event_name_cleanup_disambiguates_same_name_different_venues(self):
         rows = apply_public_event_name_cleanup([
             {"name": "品川区民まつり 大崎第一地区", "venue": "第一日野小学校", "area": "品川区"},

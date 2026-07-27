@@ -1249,7 +1249,7 @@ const EVENTS = [
     "display_tier": "season_hint"
   },
   {
-    "name": "第2回 大盆踊り祭 with 坂崎守寛",
+    "name": "大盆踊り祭 with 坂崎守寛",
     "name_confirmed": true,
     "venue": "日本橋社会教育会館",
     "area": "中央区",
@@ -1369,7 +1369,7 @@ const EVENTS = [
     "display_tier": "confirmed"
   },
   {
-    "name": "第2回 晴海ふ頭公園盆踊り大会",
+    "name": "晴海ふ頭公園盆踊り大会",
     "name_confirmed": true,
     "venue": "晴海ふ頭公園",
     "area": "中央区",
@@ -2295,7 +2295,7 @@ const EVENTS = [
     "season_confidence": "lowest"
   },
   {
-    "name": "第16回ハマサイトの夏祭り",
+    "name": "ハマサイトの夏祭り",
     "name_confirmed": true,
     "venue": "ハマサイト前広場・汐留ビルディング外構",
     "area": "港区",
@@ -3131,7 +3131,7 @@ const EVENTS = [
     "display_tier": "ended"
   },
   {
-    "name": "第51回 浄土寺盆踊り大会",
+    "name": "浄土寺盆踊り大会",
     "name_confirmed": true,
     "venue": "浄土寺",
     "area": "港区",
@@ -3395,7 +3395,7 @@ const EVENTS = [
     "season_confidence": "lowest"
   },
   {
-    "name": "第10回白金台どんぐり児童遊園 納涼盆踊り大会",
+    "name": "白金台どんぐり児童遊園 納涼盆踊り大会",
     "name_confirmed": true,
     "venue": "白金台どんぐり児童遊園",
     "area": "港区",
@@ -5250,7 +5250,7 @@ const EVENTS = [
     "season_confidence": "lowest"
   },
   {
-    "name": "第42回大久保まつり パレード 百人町民民謡おどり",
+    "name": "大久保まつり パレード 百人町民民謡おどり",
     "name_confirmed": true,
     "venue": "JR新大久保駅北側から東方向",
     "area": "新宿区",
@@ -6008,7 +6008,7 @@ const EVENTS = [
     "prediction_confidence": "medium"
   },
   {
-    "name": "第26回 四谷納涼踊り大会",
+    "name": "四谷納涼踊り大会",
     "name_confirmed": true,
     "venue": "四谷ひろばグランド（旧四谷第四小）",
     "area": "新宿区",
@@ -6669,7 +6669,7 @@ const EVENTS = [
     "historical_reference_score": 0.6
   },
   {
-    "name": "下落合町会知久会 第9回盆踊り",
+    "name": "下落合町会知久会 盆踊り",
     "name_confirmed": true,
     "venue": "清水川橋公園",
     "area": "新宿区",
@@ -9150,7 +9150,7 @@ const EVENTS = [
     "display_tier": "confirmed"
   },
   {
-    "name": "第2回田原de盆踊り",
+    "name": "田原de盆踊り",
     "name_confirmed": true,
     "venue": "田原小学校",
     "area": "台東区",
@@ -9549,7 +9549,7 @@ const EVENTS = [
     "season_confidence": "lowest"
   },
   {
-    "name": "第10回 すみだ輪おどり区民感謝デー",
+    "name": "すみだ輪おどり区民感謝デー",
     "name_confirmed": true,
     "venue": "すみだ産業会館サンライズホール",
     "area": "墨田区",
@@ -11662,7 +11662,7 @@ const EVENTS = [
     "season_confidence": "lowest"
   },
   {
-    "name": "第2回 辰巳で盆踊り",
+    "name": "辰巳で盆踊り",
     "name_confirmed": true,
     "venue": "区立第二辰巳小学校",
     "area": "江東区",
@@ -12699,7 +12699,7 @@ const EVENTS = [
     "display_tier": "confirmed"
   },
   {
-    "name": "第71回大井どんたく夏まつり 初日 盆踊り",
+    "name": "大井どんたく夏まつり 初日 盆踊り",
     "name_confirmed": true,
     "venue": "大井町駅前中央通り",
     "area": "品川区",
@@ -14455,7 +14455,7 @@ const EVENTS = [
     "season_confidence": "lowest"
   },
   {
-    "name": "第3回 延七昇竜太鼓盆踊り大会",
+    "name": "延七昇竜太鼓盆踊り大会",
     "name_confirmed": true,
     "venue": "第二延山小学校",
     "area": "品川区",
@@ -14944,7 +14944,7 @@ const EVENTS = [
     "display_tier": "ended"
   },
   {
-    "name": "地域のふれあい第37回盆踊り大会",
+    "name": "地域のふれあい盆踊り大会",
     "name_confirmed": true,
     "venue": "JR目黒駅西口前",
     "area": "目黒区",
@@ -15308,7 +15308,7 @@ const EVENTS = [
     "prediction_confidence": "medium"
   },
   {
-    "name": "第90回 祐天寺み魂まつり こども盆踊り大会",
+    "name": "祐天寺み魂まつり こども盆踊り大会",
     "name_confirmed": true,
     "venue": "祐天寺境内",
     "area": "目黒区",
@@ -19401,7 +19401,7 @@ const EVENTS = [
     "prediction_confidence": "medium"
   },
   {
-    "name": "砧小学校「第38回砧っ子夏祭り」",
+    "name": "砧小学校「砧っ子夏祭り」",
     "name_confirmed": true,
     "venue": "砧小学校",
     "area": "世田谷区",
@@ -20179,7 +20179,7 @@ const EVENTS = [
     "prediction_confidence": "medium"
   },
   {
-    "name": "第71回 恵比寿駅前盆踊り大会",
+    "name": "恵比寿駅前盆踊り大会",
     "name_confirmed": true,
     "venue": "JR恵比寿駅西口広場",
     "area": "渋谷区",
@@ -20725,7 +20725,7 @@ const EVENTS = [
     "display_tier": "confirmed"
   },
   {
-    "name": "第7回 渋谷盆踊り",
+    "name": "渋谷盆踊り",
     "name_confirmed": true,
     "venue": "渋谷109前",
     "area": "渋谷区",
@@ -21165,7 +21165,7 @@ const EVENTS = [
     "display_tier": "ended"
   },
   {
-    "name": "第34回ふるさと千川 まつり",
+    "name": "ふるさと千川 まつり",
     "name_confirmed": true,
     "venue": "ふるさと千川ひろば(千川小学校校庭跡地)",
     "area": "豊島区",
@@ -21297,7 +21297,7 @@ const EVENTS = [
     "display_tier": "ended"
   },
   {
-    "name": "第16回 鴨台盆踊り",
+    "name": "鴨台盆踊り",
     "name_confirmed": true,
     "venue": "大正大学",
     "area": "豊島区",
@@ -21444,7 +21444,7 @@ const EVENTS = [
     "display_tier": "ended"
   },
   {
-    "name": "第46回 巣鴨盆踊り大会",
+    "name": "巣鴨盆踊り大会",
     "name_confirmed": true,
     "venue": "巣鴨駅南口ロータリー",
     "area": "豊島区",
@@ -22132,7 +22132,7 @@ const EVENTS = [
     "historical_reference_score": 0.55
   },
   {
-    "name": "第11回 にっぽり炭坑節まつり",
+    "name": "にっぽり炭坑節まつり",
     "name_confirmed": true,
     "venue": "JR日暮里駅前広場",
     "area": "荒川区",
@@ -22268,7 +22268,7 @@ const EVENTS = [
     "prediction_confidence": "medium"
   },
   {
-    "name": "第60回あらかわ青年大会 アリストック",
+    "name": "あらかわ青年大会 アリストック",
     "name_confirmed": true,
     "venue": "あらかわ遊園アリスの広場",
     "area": "荒川区",
@@ -22934,7 +22934,7 @@ const EVENTS = [
     "display_tier": "ended"
   },
   {
-    "name": "好踊会「第4回 好踊会フェア」",
+    "name": "好踊会「好踊会フェア」",
     "name_confirmed": true,
     "venue": "鹿骨中学校",
     "area": "江戸川区",
