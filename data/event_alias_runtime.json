@@ -1,4 +1,5 @@
 {
+  "carried_over_sections": [],
   "event_alias_count": 21,
   "event_aliases": {
     "丸の内de盆踊り": [
@@ -33,7 +34,7 @@
       "自由が丘盆踊り"
     ]
   },
-  "generated_at": "2026-07-27T05:50:02.694677+00:00",
+  "generated_at": "2026-07-27T05:58:00.802828+00:00",
   "generated_by": "build_event_alias_runtime.py",
   "source": "master_rdb",
   "venue_alias_count": 301,

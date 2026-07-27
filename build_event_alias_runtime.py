@@ -64,10 +64,33 @@ def collect_aliases(conn, query, *, alias_table):
     return grouped
 
 
-def build_runtime(db_path=MASTER_DB):
+def build_runtime(db_path=MASTER_DB, previous=None):
+    """Build the runtime tables, keeping sections the RDB cannot currently supply.
+
+    A database that predates the alias store has no ``event_series_aliases``
+    table.  Overwriting the committed file with an empty section there would
+    silently drop every alias the matchers rely on, so an absent table keeps
+    whatever the previous runtime file held.
+    """
+
+    previous = previous if isinstance(previous, dict) else {}
+    carried = []
     with connect_existing(Path(db_path)) as conn:
         events = collect_aliases(conn, EVENT_ALIAS_QUERY, alias_table="event_series_aliases")
         venues = collect_aliases(conn, VENUE_ALIAS_QUERY, alias_table="venue_aliases")
+        for name, table, current in (
+            ("event_aliases", "event_series_aliases", events),
+            ("venue_aliases", "venue_aliases", venues),
+        ):
+            if table_exists(conn, table):
+                continue
+            kept = previous.get(name)
+            if isinstance(kept, dict) and kept:
+                carried.append(name)
+                if name == "event_aliases":
+                    events = kept
+                else:
+                    venues = kept
     return {
         "generated_by": "build_event_alias_runtime.py",
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -76,6 +99,7 @@ def build_runtime(db_path=MASTER_DB):
         "venue_aliases": venues,
         "event_alias_count": sum(len(values) for values in events.values()),
         "venue_alias_count": sum(len(values) for values in venues.values()),
+        "carried_over_sections": sorted(carried),
     }
 
 
@@ -99,14 +123,26 @@ def main(argv=None):
     if not Path(args.db).exists():
         print(f"event alias runtime: master RDB not found ({args.db}); keeping existing {args.out}")
         return 0
-    runtime = build_runtime(args.db)
+    previous = {}
+    if Path(args.out).exists():
+        try:
+            previous = json.loads(Path(args.out).read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            previous = {}
+    runtime = build_runtime(args.db, previous=previous)
     atomic_write_json(args.out, runtime)
+    carried = runtime["carried_over_sections"]
     print(
         "event alias runtime: "
         f"events={len(runtime['event_aliases'])} series / {runtime['event_alias_count']} aliases, "
         f"venues={len(runtime['venue_aliases'])} / {runtime['venue_alias_count']} aliases "
         f"-> {args.out}"
     )
+    if carried:
+        print(
+            "event alias runtime: alias table missing from the RDB; kept the previous "
+            f"{', '.join(carried)} section(s). Run run_series_alias_migration.py on the RDB."
+        )
     return 0
 
 

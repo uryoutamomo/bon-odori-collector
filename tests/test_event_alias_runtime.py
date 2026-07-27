@@ -87,6 +87,25 @@ class EventAliasRuntimeBuilderTest(unittest.TestCase):
         self.assertEqual(runtime["event_aliases"], {})
         self.assertTrue(runtime["venue_aliases"])
 
+    def test_missing_alias_table_keeps_the_previous_section(self):
+        # An RDB that predates the migration must not blank out the committed
+        # runtime file, or every matcher silently loses its aliases.
+        with sqlite3.connect(self.db_path) as conn:
+            conn.execute("DROP TABLE event_series_aliases")
+        previous = {"event_aliases": {"渋谷盆踊り": ["Shibuya Bon Odori"]}}
+        runtime = builder.build_runtime(self.db_path, previous=previous)
+        self.assertEqual(runtime["event_aliases"], previous["event_aliases"])
+        self.assertEqual(runtime["carried_over_sections"], ["event_aliases"])
+
+    def test_main_keeps_aliases_when_the_rdb_predates_the_migration(self):
+        with sqlite3.connect(self.db_path) as conn:
+            conn.execute("DROP TABLE event_series_aliases")
+        out = self.tmp_path / "event_alias_runtime.json"
+        builder.atomic_write_json(out, {"event_aliases": {"渋谷盆踊り": ["Shibuya Bon Odori"]}})
+        self.assertEqual(builder.main(["--db", str(self.db_path), "--out", str(out)]), 0)
+        payload = json.loads(out.read_text(encoding="utf-8"))
+        self.assertEqual(payload["event_aliases"], {"渋谷盆踊り": ["Shibuya Bon Odori"]})
+
     def test_main_keeps_the_existing_file_when_the_rdb_is_absent(self):
         out = self.tmp_path / "event_alias_runtime.json"
         out.write_text('{"event_aliases": {"kept": ["x"]}}\n', encoding="utf-8")
