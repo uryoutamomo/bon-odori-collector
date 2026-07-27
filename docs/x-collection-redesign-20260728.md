@@ -87,6 +87,27 @@
   日付は **2026-06-30 と 07-01 の2日だけ**。対象は youtube_active_video 51 /
   publication_gap 42。**X関連の決定は1件もない。**
 
+### 1.4b 別セッションの独立監査と一致した点（2026-07-27夜）
+
+内田さんの別の指摘「そもそもこのレビューの意義を考え直して欲しい」を受けて、
+別のことセッションが受信箱を独立に監査しており、本設計と同じ結論に到達している。
+互いに独立した経路で同じ形が出たので、診断の確度は高いと考えてよい。
+
+その監査で追加で判明した、本設計にとって重要な事実:
+
+1. **時間軸が逆**。判断待ちの `time_scope` は reference 227 / historical 159 で、
+   **future がゼロ**。これから開催されるイベントについての判断待ちが1件も無い。
+2. **反映先が無いものが31%**。`domain_stage` 行きの118件は、下書きを読んでRDBへ
+   反映するコードがリポジトリに存在しない（上記2章参照）。
+3. **利用者が困っている穴が受信箱に1件も入っていない**。RDBでは2026年の開催回154件中
+   **68件が日付そのもの無し、うち例年7〜8月開催が30件**。公開41件が日付空のまま、
+   名前が「（名称推定）」等8件。これらが受信箱にゼロ。
+4. **イベント名でDBを引けない**。YouTube証拠99件を名前でRDB照合したら完全一致は6件のみ。
+   「該当なし」の中身は実際にはDBにあるものだらけだった（靖国神社みたままつり盆踊り→
+   「みたままつり 納涼民踊のつどい」、佃島盆踊り→「佃島の盆踊り」など）。
+   **機械の名寄せを賢くする方向ではなく、人が読み取った名前であいまい検索した候補を
+   カード横に出すのが正解**、と結論している。P1の突合設計はこの方針に合わせること。
+
 ### 1.5 候補ファイルの増殖
 
 `collect.yml` は日次で候補・キュー・レビュー用のJSONを **23種類** 生成している
@@ -109,10 +130,25 @@
 厚くする結果になった（ポスターキュー1,789→2,214件）。ここは見立てを誤っていた。
 
 配管（review_inbox → staged decision → change_requests → apply_change_requests → RDB
-→ 公開JSON → S3）は既に完成している。`review_inbox_adapters/build_change_requests_from_review_inbox.py`
+→ 公開JSON → S3）は**コードとしては存在する**。`review_inbox_adapters/build_change_requests_from_review_inbox.py`
 が既存 occurrence への `confirm_current_date` / `promote_historical_reference` /
-`fill_venue` を change_request へ翻訳できる。**足りないのは配管ではなく、量の制御と、
-Xから受信箱への入口アダプタ。**
+`fill_venue` を change_request へ翻訳する。
+
+**ただし一度も通し実行されていない**（2026-07-28 追記・要注意）:
+
+- `data/review_console/staged/` は**存在しない**。`apply_review_console_decisions.py --write`
+  が作るはずのステージ出力が、一度も生成されたことがない。
+- したがって `build_change_requests_from_review_inbox.py` の入力
+  （`data/review_console/staged/review_inbox_change_request_decisions.json`）も存在しない。
+- **「配管が完成している」と考えてはいけない。「部品は揃っているが通電したことがない」**が
+  正確な状態。P2/P3では end-to-end の疎通確認を独立した受け入れ条件として扱う。
+
+さらに別セッションの監査（2026-07-27夜、`review_console/data.py` の日本語化を実施した回）で、
+**`domain_stage` 行きの118件（YouTube証拠99件＋用語/曲/会場候補19件）には、下書きを読んで
+RDBへ反映するコードがリポジトリに存在しない**ことが判明している。定義・テスト・docsにしか
+出てこない。押しても何も起きないボタンになっている。
+
+つまり **足りないのは「量の制御」と「Xから受信箱への入口アダプタ」と「受信箱から先の通電確認」の3つ。**
 
 ---
 
@@ -167,12 +203,15 @@ Xから受信箱への入口アダプタ。**
 
 | 情報の種類 | 使う経路 | 状態 |
 | --- | --- | --- |
-| 既存イベントの日付確定・会場補完・過去実績昇格 | review_inbox → staged → `build_change_requests_from_review_inbox.py` → `apply_change_requests` | **配管完成済み** |
-| 新規イベントの登録 | 掲示物レポート（`docs/official-notice-field-report-operations.md`） | **配管完成済み**・2026-07-26に実績あり |
+| 既存イベントの日付確定・会場補完・過去実績昇格 | review_inbox → staged → `build_change_requests_from_review_inbox.py` → `apply_change_requests` | **部品はあるが未通電**（`staged/` が存在しない） |
+| 新規イベントの登録 | 掲示物レポート（`docs/official-notice-field-report-operations.md`） | **通電済み**・2026-07-26に3件の実績あり |
 | 中止・順延など状態更新 | 上記1つ目に `cancel` 系の apply_value を追加 | 要拡張 |
+| `domain_stage` 行きの118件 | — | **反映先のコードが存在しない**。経路ができるまで受信箱に出さない |
 
 新しく書くのは **X由来候補 → review_inbox アダプタ**（`review_inbox_adapters/x_gap_adapter.py`）
-と、4.1の穴埋め候補ビルダー（`build_x_gap_candidates.py`）の2本。
+と、4.1の穴埋め候補ビルダー（`build_x_gap_candidates.py`）の2本。ただし上記のとおり
+1つ目の経路は通電したことがないので、**「2本書けば終わり」ではなく、既存経路の疎通に
+それなりの手当てが要る**と見ておくこと。
 
 既存の `x_news_digest_for_oto.json`（7,235件）は**受信箱の入力にしない**。
 `rare_signal_adapter.py` の冒頭コメントが既に
@@ -217,6 +256,10 @@ Xから受信箱への入口アダプタ。**
 - `data/event_date_update_candidates.json`
 - その他 `collect.yml` が生成する候補系JSONのうち、レーンに接続しないもの
 
+あわせて、**反映先のコードが存在しない `domain_stage` 行きの種別（YouTube証拠99件・
+用語/曲/会場候補19件）は、経路ができるまで受信箱に出さない**。押しても何も起きない
+カードが並んでいると、受信箱そのものが信用されなくなる。
+
 ---
 
 ## 5. 実装項目と受け入れ条件
@@ -241,8 +284,15 @@ Xから受信箱への入口アダプタ。**
 
 - `review_inbox_adapters/x_gap_adapter.py` を新設。P1の出力を
   `source_adapter.py` の契約（`docs/review-inbox-source-adapter-contract.md`）に従って
-  受信箱アイテムへ変換する。
+  受信箱アイテムへ変換する。`time_scope=future` を明示的に付ける（現状 future は
+  ゼロなので、ここが最初の future アイテムになる）。
+- **あわせて受信箱から先を通電させる。** `apply_review_console_decisions.py --write` →
+  `build_change_requests_from_review_inbox.py` → `apply_change_requests --dry-run` を
+  実際に1件通す。`data/review_console/staged/` はまだ存在しないので、ここで初めて生成される。
+  ここが未知数なので、工数はこのP2に厚めに見ておくこと。
+- カード横に「その名前でRDBをあいまい検索した候補」を出す（1.4b-4）。完全一致に頼らない。
 - 受け入れ条件: `kind + source_id + source_key` が安定し、同じ投稿が翌日再投入されない。
+  **X由来の1件が、受信箱から dry-run の change_request まで実際に到達すること**（通電確認）。
   既存の shadow/parity の枠組みで検証してから本番 dual-write へ移す。
 
 ### P3: 3レーンの実装
