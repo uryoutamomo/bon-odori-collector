@@ -1,6 +1,6 @@
 {
   "generated_by": "build_song_ocr_queue.py",
-  "count": 39,
+  "count": 43,
   "items": [
     {
       "id": "b21783a2a9785946",
@@ -475,6 +475,52 @@
       "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
     },
     {
+      "id": "ec9fb16addc4d4c2",
+      "status": "needs_ocr",
+      "account": "@kurinoyu",
+      "url": "https://x.com/kurinoyu/status/2079943960408268963",
+      "tweet_id": "2079943960408268963",
+      "date": "2026-07-22T14:57:38+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HN1yAhzbsAACZUG.jpg",
+        "https://t.co/i2begonBpD",
+        "pic.x.com/i2begonBpD",
+        "https://pbs.twimg.com/media/HN1yAhzaAAAeCru.jpg"
+      ],
+      "text": "7月22日音曲の世界、後半の夏の音曲吹き寄せ〜お祭り東西・夕立と雷、馬吉さんの曲目紹介から太田その師匠の唄に馬吉さんの三味線で大阪の俗曲 堀江の盆踊りと江戸の清元 神田祭。続いて馬吉さんの唄とその師匠の糸で端唄三曲、夕立や田を,夕立のあまり,雷さん。アンコール馬吉さんの大津絵 両国。 https://t.co/i2begonBpD",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "13a65e205febffa7",
+      "status": "needs_ocr",
+      "account": "@bluepig74",
+      "url": "https://x.com/bluepig74/status/2080177603999392247",
+      "tweet_id": "2080177603999392247",
+      "date": "2026-07-23T06:26:03+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HN5GgB4bEAA2JeI.jpg",
+        "https://t.co/i6Cn4H7Etc",
+        "pic.x.com/i6Cn4H7Etc"
+      ],
+      "text": "今年の曙橋 住吉町の盆踊りは\n30分長く開催される事になりました。\n18:15-20:45です。\n\n曲目は毎年同様\nメジャーな曲をかけて\n後はランダムにかけます。\n\nご来場お待ちしております。\nよろしくお願い致します。 https://t.co/i6Cn4H7Etc",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "90beaba95858e3ec",
+      "status": "needs_ocr",
+      "account": "@IID_PSV",
+      "url": "https://x.com/IID_PSV/status/2080257294739312669",
+      "tweet_id": "2080257294739312669",
+      "date": "2026-07-23T11:42:43+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HN6O96qa8AAWRTz.jpg",
+        "https://t.co/LxAirP1zE2",
+        "pic.x.com/LxAirP1zE2"
+      ],
+      "text": "本日は一宮七夕まつりの盆踊りに行きました\n時間に間に合ったかと思ったら早めに始まっててビックリ\n平日なのに凄い人\n曲目はダンシング・ヒーロー多い目でした（＾∇＾）\n今年からマツケンサンバIIが新曲で入ったみたいだけど、N尾さんはいつコスプレする予定ですかね（笑） https://t.co/LxAirP1zE2",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
       "id": "5dc80156f18f9c6e",
       "status": "needs_ocr",
       "account": "@FunatsuKatvlt",
@@ -619,6 +665,21 @@
         "pic.x.com/zdlWAxiryT"
       ],
       "text": "「アジアン・ヒップホップ・メガ・ヒッツ盆踊り」ミックスをサンクラにアップしました！\nhttps://t.co/3BMH2HfT3Q\nサクッと短い20分のミックスなのでサクッと是非！\n\n「多文化盆踊り」「アジアのヒップホップで盆踊りをしよう」というコンセプトのオファーを頂き、アジア各国、タイ、フィリピン、中国、韓国、ベトナム、ネパール等のヒップホップをかけた模様です！\n曲目↓です！\n\n01.千葉雄喜 - チーム友達 (Japan)\n02.F.HERO Ft. P-Hot, YOUNGOHM, FYMME - เสือสิ้นลาย (Thailand)\n03.Ez Mil - Panalo (Trap Cariñosa) (Philippines)\n04.GAI周延 - 華夏 (Hua Xia) (China)\n05.PSY - HANGOVER (feat. Snoop Dogg) (South Korea)\n06.Hoàng Thùy Linh - Để Mị Nói Cho Mà Nghe (Vietnam)\n07.BALEN - NEPAL HASEKO (Nepal)\n08.D",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "1ed90471a017ae0d",
+      "status": "needs_ocr",
+      "account": "@soroisoroi",
+      "url": "https://x.com/soroisoroi/status/2081300724206698943",
+      "tweet_id": "2081300724206698943",
+      "date": "2026-07-26T08:48:56+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HOJD989b0AATSRQ.jpg",
+        "https://t.co/WNm6TNVuC1",
+        "pic.x.com/WNm6TNVuC1"
+      ],
+      "text": "つい最近地域の盆踊りの子供向けの曲目についてこの画面上で話題になってたけども、ここんちのナウそうな渋谷のダンスは学校とかでもやるんだろうか。 https://t.co/WNm6TNVuC1",
       "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
     }
   ]
