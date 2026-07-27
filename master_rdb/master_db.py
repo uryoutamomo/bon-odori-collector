@@ -133,6 +133,16 @@ CREATE TABLE event_series (
   FOREIGN KEY (usual_venue_id) REFERENCES venues(venue_id)
 );
 
+CREATE TABLE event_series_aliases (
+  series_id TEXT NOT NULL,
+  alias TEXT NOT NULL,
+  normalized_alias TEXT NOT NULL,
+  source TEXT NOT NULL,
+  confidence TEXT NOT NULL DEFAULT 'manual',
+  PRIMARY KEY (series_id, normalized_alias),
+  FOREIGN KEY (series_id) REFERENCES event_series(series_id)
+);
+
 CREATE TABLE event_occurrences (
   occurrence_id TEXT PRIMARY KEY,
   origin TEXT NOT NULL DEFAULT 'curated',

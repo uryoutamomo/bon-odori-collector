@@ -68,6 +68,12 @@ jobs:
         NOTION_API_TOKEN: ${{ secrets.NOTION_API_TOKEN }}
       run: python build_glossary_runtime.py
 
+    # Event/venue aliases live in the master RDB; matching paths read the
+    # runtime file this step regenerates.  Without the RDB it keeps the
+    # committed file as-is instead of emptying it.
+    - name: Build event alias runtime
+      run: python build_event_alias_runtime.py
+
     - name: Sync canonical event-state axes to master RDB
       id: event_state_axes
       if: ${{ vars.EVENT_STATE_AXES_ENABLED == 'true' && vars.MASTER_DB_S3_BUCKET != '' }}
@@ -210,6 +216,7 @@ jobs:
         [ -f data/x_account_console.json ] && git add data/x_account_console.json
         [ -f data/x_collection_roster.json ] && git add data/x_collection_roster.json
         [ -f data/glossary_runtime.json ] && git add data/glossary_runtime.json
+        [ -f data/event_alias_runtime.json ] && git add data/event_alias_runtime.json
         [ -f data/public/events_public.json ] && git add data/public/events_public.json
         [ -f data/public_event_source_map.json ] && git add data/public_event_source_map.json
         if python master_rdb_freeze_policy.py is-frozen ph1_public_song_export_files; then

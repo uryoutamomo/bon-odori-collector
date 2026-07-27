@@ -11,6 +11,7 @@ from pathlib import Path
 
 from notion_support.notion_api import NotionApi, plain_text
 from notion_support.notion_config import EVENT_DATA_SOURCE_ID
+from youtube_backfill.evidence_dates import borrowed_public_date
 
 
 REVIEW = Path("data/youtube_active_video_review.json")
@@ -108,7 +109,7 @@ def evidence_event_date(row):
     # current public occurrence date is not evidence for an undated video.
     if reasons & {"event_alias_in_youtube", "cross_year_event_alias"}:
         return ""
-    return match.get("date") or ""
+    return borrowed_public_date(match.get("date"), row.get("published_at"))
 
 
 def group_key(row):
