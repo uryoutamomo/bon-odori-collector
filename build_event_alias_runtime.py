@@ -64,33 +64,44 @@ def collect_aliases(conn, query, *, alias_table):
     return grouped
 
 
-def build_runtime(db_path=MASTER_DB, previous=None):
+def build_runtime(db_path=MASTER_DB, previous=None, allow_empty=False):
     """Build the runtime tables, keeping sections the RDB cannot currently supply.
 
-    A database that predates the alias store has no ``event_series_aliases``
-    table.  Overwriting the committed file with an empty section there would
-    silently drop every alias the matchers rely on, so an absent table keeps
-    whatever the previous runtime file held.
+    An empty section is never written over a non-empty committed one, because
+    the RDB has two states where it legitimately has nothing to say yet: a
+    database that predates the alias store has no ``event_series_aliases``
+    table at all, and one where only the migration has run has the table but no
+    rows.  Both windows are reachable in normal operation, and in both the
+    matchers would silently lose every alias.  Pass ``allow_empty`` to write an
+    empty section on purpose.
     """
 
     previous = previous if isinstance(previous, dict) else {}
     carried = []
+    sections = {}
     with connect_existing(Path(db_path)) as conn:
-        events = collect_aliases(conn, EVENT_ALIAS_QUERY, alias_table="event_series_aliases")
-        venues = collect_aliases(conn, VENUE_ALIAS_QUERY, alias_table="venue_aliases")
-        for name, table, current in (
-            ("event_aliases", "event_series_aliases", events),
-            ("venue_aliases", "venue_aliases", venues),
-        ):
-            if table_exists(conn, table):
-                continue
-            kept = previous.get(name)
-            if isinstance(kept, dict) and kept:
-                carried.append(name)
-                if name == "event_aliases":
-                    events = kept
-                else:
-                    venues = kept
+        sections["event_aliases"] = (
+            collect_aliases(conn, EVENT_ALIAS_QUERY, alias_table="event_series_aliases"),
+            table_exists(conn, "event_series_aliases"),
+        )
+        sections["venue_aliases"] = (
+            collect_aliases(conn, VENUE_ALIAS_QUERY, alias_table="venue_aliases"),
+            table_exists(conn, "venue_aliases"),
+        )
+
+    resolved = {}
+    for name, (current, exists) in sections.items():
+        kept = previous.get(name)
+        if current or allow_empty or not isinstance(kept, dict) or not kept:
+            resolved[name] = current
+            continue
+        carried.append(
+            {"section": name, "reason": "alias_table_empty" if exists else "alias_table_missing"}
+        )
+        resolved[name] = kept
+
+    events = resolved["event_aliases"]
+    venues = resolved["venue_aliases"]
     return {
         "generated_by": "build_event_alias_runtime.py",
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -99,7 +110,7 @@ def build_runtime(db_path=MASTER_DB, previous=None):
         "venue_aliases": venues,
         "event_alias_count": sum(len(values) for values in events.values()),
         "venue_alias_count": sum(len(values) for values in venues.values()),
-        "carried_over_sections": sorted(carried),
+        "carried_over_sections": sorted(carried, key=lambda item: item["section"]),
     }
 
 
@@ -119,6 +130,11 @@ def main(argv=None):
     parser = argparse.ArgumentParser()
     parser.add_argument("--db", type=Path, default=MASTER_DB)
     parser.add_argument("--out", type=Path, default=OUT)
+    parser.add_argument(
+        "--allow-empty",
+        action="store_true",
+        help="write an empty alias section instead of keeping the previous one",
+    )
     args = parser.parse_args(argv)
     if not Path(args.db).exists():
         print(f"event alias runtime: master RDB not found ({args.db}); keeping existing {args.out}")
@@ -129,19 +145,23 @@ def main(argv=None):
             previous = json.loads(Path(args.out).read_text(encoding="utf-8"))
         except (OSError, ValueError):
             previous = {}
-    runtime = build_runtime(args.db, previous=previous)
+    runtime = build_runtime(args.db, previous=previous, allow_empty=args.allow_empty)
     atomic_write_json(args.out, runtime)
-    carried = runtime["carried_over_sections"]
     print(
         "event alias runtime: "
         f"events={len(runtime['event_aliases'])} series / {runtime['event_alias_count']} aliases, "
         f"venues={len(runtime['venue_aliases'])} / {runtime['venue_alias_count']} aliases "
         f"-> {args.out}"
     )
-    if carried:
+    for item in runtime["carried_over_sections"]:
+        remedy = (
+            "run apply_curated_youtube_aliases.py on the RDB"
+            if item["reason"] == "alias_table_empty"
+            else "run run_series_alias_migration.py on the RDB"
+        )
         print(
-            "event alias runtime: alias table missing from the RDB; kept the previous "
-            f"{', '.join(carried)} section(s). Run run_series_alias_migration.py on the RDB."
+            f"event alias runtime: {item['section']} would have been emptied "
+            f"({item['reason']}); kept the previous section. Next: {remedy}."
         )
     return 0
 

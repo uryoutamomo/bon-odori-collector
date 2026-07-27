@@ -95,7 +95,62 @@ class EventAliasRuntimeBuilderTest(unittest.TestCase):
         previous = {"event_aliases": {"渋谷盆踊り": ["Shibuya Bon Odori"]}}
         runtime = builder.build_runtime(self.db_path, previous=previous)
         self.assertEqual(runtime["event_aliases"], previous["event_aliases"])
-        self.assertEqual(runtime["carried_over_sections"], ["event_aliases"])
+        self.assertEqual(
+            runtime["carried_over_sections"],
+            [{"section": "event_aliases", "reason": "alias_table_missing"}],
+        )
+
+    def test_empty_alias_table_keeps_the_previous_section(self):
+        # The window between running the migration and seeding the aliases is
+        # reachable in normal operation, and the table is present but empty.
+        with sqlite3.connect(self.db_path) as conn:
+            conn.execute("DELETE FROM event_series_aliases")
+        previous = {"event_aliases": {"渋谷盆踊り": ["Shibuya Bon Odori"]}}
+        runtime = builder.build_runtime(self.db_path, previous=previous)
+        self.assertEqual(runtime["event_aliases"], previous["event_aliases"])
+        self.assertEqual(
+            runtime["carried_over_sections"],
+            [{"section": "event_aliases", "reason": "alias_table_empty"}],
+        )
+
+    def test_empty_venue_alias_table_also_keeps_the_previous_section(self):
+        with sqlite3.connect(self.db_path) as conn:
+            conn.execute("DELETE FROM venue_aliases")
+        previous = {"venue_aliases": {"渋谷109前": ["Shibuya 109"]}}
+        runtime = builder.build_runtime(self.db_path, previous=previous)
+        self.assertEqual(runtime["venue_aliases"], previous["venue_aliases"])
+        self.assertEqual(
+            runtime["carried_over_sections"],
+            [{"section": "venue_aliases", "reason": "alias_table_empty"}],
+        )
+
+    def test_allow_empty_writes_the_empty_section_on_purpose(self):
+        with sqlite3.connect(self.db_path) as conn:
+            conn.execute("DELETE FROM event_series_aliases")
+        previous = {"event_aliases": {"渋谷盆踊り": ["Shibuya Bon Odori"]}}
+        runtime = builder.build_runtime(self.db_path, previous=previous, allow_empty=True)
+        self.assertEqual(runtime["event_aliases"], {})
+        self.assertEqual(runtime["carried_over_sections"], [])
+
+    def test_populated_table_is_never_carried_over(self):
+        previous = {"event_aliases": {"別の盆踊り": ["Another Bon Odori"]}}
+        runtime = builder.build_runtime(self.db_path, previous=previous)
+        self.assertIn("渋谷盆踊り", runtime["event_aliases"])
+        self.assertNotIn("別の盆踊り", runtime["event_aliases"])
+        self.assertEqual(runtime["carried_over_sections"], [])
+
+    def test_main_keeps_aliases_between_migration_and_seed(self):
+        with sqlite3.connect(self.db_path) as conn:
+            conn.execute("DELETE FROM event_series_aliases")
+        out = self.tmp_path / "event_alias_runtime.json"
+        builder.atomic_write_json(out, {"event_aliases": {"渋谷盆踊り": ["Shibuya Bon Odori"]}})
+        self.assertEqual(builder.main(["--db", str(self.db_path), "--out", str(out)]), 0)
+        payload = json.loads(out.read_text(encoding="utf-8"))
+        self.assertEqual(payload["event_aliases"], {"渋谷盆踊り": ["Shibuya Bon Odori"]})
+        self.assertEqual(
+            payload["carried_over_sections"],
+            [{"section": "event_aliases", "reason": "alias_table_empty"}],
+        )
 
     def test_main_keeps_aliases_when_the_rdb_predates_the_migration(self):
         with sqlite3.connect(self.db_path) as conn:
