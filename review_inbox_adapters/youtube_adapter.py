@@ -17,6 +17,7 @@ from urllib.parse import parse_qs, urlsplit
 
 from review_console.data import load_known_song_terms
 from review_inbox_adapters.source_adapter import load_adapted_source, write_adapted_snapshot
+from youtube_backfill.evidence_dates import borrowed_public_date
 
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -202,10 +203,13 @@ def integer_year(value: Any) -> int | None:
 def target_year(row: Mapping[str, Any]) -> int | None:
     matched = row.get("matched_public_event")
     matched = matched if isinstance(matched, dict) else {}
+    published_at = row.get("published_at")
     return (
         integer_year(row.get("detected_event_date"))
-        or integer_year(matched.get("date"))
-        or integer_year(row.get("published_at"))
+        # A public occurrence in the future cannot be the year an already
+        # published video depicts, so fall through to the publication year.
+        or integer_year(borrowed_public_date(matched.get("date"), published_at))
+        or integer_year(published_at)
     )
 
 
