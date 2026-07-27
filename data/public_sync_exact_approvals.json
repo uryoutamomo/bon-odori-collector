@@ -101,27 +101,6 @@
       "reason": "YouTubeセットリスト由来の曲目追加（新宿音頭・2026-07-26 こと検証・内田さんGO）"
     },
     {
-      "id": "reviewed-update-3a49318b4a1c",
-      "kind": "same_key_update",
-      "event_key": "第26回 四谷納涼踊り大会||四谷ひろばグランド（旧四谷第四小）",
-      "site_sha256": "e63f57a1e553aa95691048eec1dddb4aa0fb84df1cd3b41660612167a56aa279",
-      "collector_sha256": "5408ae624efd8089641e7d12a42a8e7d42aa2dc0f96618a3c3359b8a8e92b33c"
-    },
-    {
-      "id": "reviewed-update-38266616512f",
-      "kind": "same_key_update",
-      "event_key": "第2回 晴海ふ頭公園盆踊り大会||晴海ふ頭公園",
-      "site_sha256": "36acb288a6d649ff9e1622fc30df623bfaf671e08e7761a54c556c5aedbf075c",
-      "collector_sha256": "165e2b04dd616f42aa4e9cd9bb896bf20a2d10a1284e9dd170d84822c620a298"
-    },
-    {
-      "id": "reviewed-update-6dac6b0b219d",
-      "kind": "same_key_update",
-      "event_key": "第46回 巣鴨盆踊り大会||巣鴨駅南口ロータリー",
-      "site_sha256": "2edad167412ad0f26cc192df5d20b2d8d13ccd472f2d8dd1d21b4b007b0595a2",
-      "collector_sha256": "1c54ebce95f562db01f4a255c8b279be830e0ef0583c04322fafc96fb644c4eb"
-    },
-    {
       "id": "reviewed-update-f1504006a292",
       "kind": "same_key_update",
       "event_key": "自由が丘納涼盆踊り大会||自由が丘駅前ロータリー 特設会場",
@@ -141,14 +120,6 @@
       "event_key": "銀座一丁目東町会・新富町会 納涼盆踊り大会||京橋公園",
       "site_sha256": "90d10bb6f4bec5b82242fe52f97234e1f25f65c76fb6dfafa8010eb409ad983a",
       "collector_sha256": "3daa08ebe96304879ff0928d6294e3b456cfb3a18fcd35275c4b1c58c5e46b3d"
-    },
-    {
-      "id": "reviewed-replacement-63cd939a9b48",
-      "kind": "key_replacement",
-      "site_event_key": "第15回 鴨台盆踊り||大正大学",
-      "collector_event_key": "第16回 鴨台盆踊り||大正大学",
-      "site_sha256": "7870510db2dc3baca17a3ec4b20215000664f42f63463b4e793560e2127941ec",
-      "collector_sha256": "6e3474435cb15172aef26b2893c2d439176c6e16ce018e3acdcb95390b2fff04"
     },
     {
       "id": "reviewed-removal-20260724-01",
@@ -209,14 +180,6 @@
       "reason": "開催日(2026-07-23〜24)経過による自然な状態遷移: upcoming_confirmed→ended_2026"
     },
     {
-      "id": "reviewed-update-20260724-03",
-      "kind": "same_key_update",
-      "event_key": "第51回 浄土寺盆踊り大会||浄土寺",
-      "site_sha256": "5a71762bba8b6750bdaac1e0c6e896acb1a66ab81c4ab4ff20220b134e547743",
-      "collector_sha256": "8900203ab8cededcfda4a5040ef6929c1bbe83d9571fb150c61180e9b5de5b58",
-      "reason": "YouTubeセットリスト由来の曲目追加（会津磐梯山・大東京音頭・赤坂小唄・2026-07-26 こと検証・内田さんGO）"
-    },
-    {
       "id": "reviewed-update-20260724-04",
       "kind": "same_key_update",
       "event_key": "北新宿四丁目 盆踊り大会||北柏木公園",
@@ -263,6 +226,222 @@
       "site_sha256": "3bc6e39e735ab55035a37c0b67b71757afad44e6cc6758bfa9829f1a6a7d5249",
       "collector_sha256": "9b4122f1272b2496ee24b08265b2b337bddc7bf966c0195ddcfc9b7c7d900fb7",
       "reason": "開催日経過による自然な状態遷移: upcoming_confirmed→ended_2026（2026-07-26 こと確認）"
+    },
+    {
+      "id": "reviewed-replacement-edition-b2b32e18b385",
+      "kind": "key_replacement",
+      "site_event_key": "下落合町会知久会 第9回盆踊り||清水川橋公園",
+      "collector_event_key": "下落合町会知久会 盆踊り||清水川橋公園",
+      "site_sha256": "f404e4edbd0dc7b43009cc19f23ac9d92b3a80ab3df64bfedc1c0892958cb9d0",
+      "collector_sha256": "9f06ec249af45dc8216ff95e531278fb926cc8eae8f515090076ad1cf91c03da",
+      "reason": "公開名から「第N回」を外す方針（2026-07-27 内田さん判断・PR #116）。回次は開催回ごとの情報でシリーズ名に含めない"
+    },
+    {
+      "id": "reviewed-replacement-edition-4f3969a60710",
+      "kind": "key_replacement",
+      "site_event_key": "地域のふれあい第37回盆踊り大会||JR目黒駅西口前",
+      "collector_event_key": "地域のふれあい盆踊り大会||JR目黒駅西口前",
+      "site_sha256": "67f1827046259633c9c7d835641aa275ddd8e8242f86d46792ae755aaa1ec69d",
+      "collector_sha256": "8b803c3cbfb1d25c7eff026d775ce9996432d9c7dfc69c9642fa810ca32fbcf8",
+      "reason": "公開名から「第N回」を外す方針（2026-07-27 内田さん判断・PR #116）。回次は開催回ごとの情報でシリーズ名に含めない"
+    },
+    {
+      "id": "reviewed-replacement-edition-179bb04cd1c7",
+      "kind": "key_replacement",
+      "site_event_key": "好踊会「第4回 好踊会フェア」||鹿骨中学校",
+      "collector_event_key": "好踊会「好踊会フェア」||鹿骨中学校",
+      "site_sha256": "74a2131fd425fc03c07a9eca3165c0abfbe27e2894e5aa640a154a2e4a0a38a6",
+      "collector_sha256": "eda92808fe87cc08fc7652a6881e31ffec282ed6e8fc9886a1f32f8726f6f936",
+      "reason": "公開名から「第N回」を外す方針（2026-07-27 内田さん判断・PR #116）。回次は開催回ごとの情報でシリーズ名に含めない"
+    },
+    {
+      "id": "reviewed-replacement-edition-15445cf21d6e",
+      "kind": "key_replacement",
+      "site_event_key": "砧小学校「第38回砧っ子夏祭り」||砧小学校",
+      "collector_event_key": "砧小学校「砧っ子夏祭り」||砧小学校",
+      "site_sha256": "716e7716bd05e81e554d8335537f564b9001f3880075c2ce7a444804b2ad7562",
+      "collector_sha256": "3cf61dcebceeae9599f9e766cd3243c6476e40978090d9c9bc51ee69c9a370d5",
+      "reason": "公開名から「第N回」を外す方針（2026-07-27 内田さん判断・PR #116）。回次は開催回ごとの情報でシリーズ名に含めない"
+    },
+    {
+      "id": "reviewed-replacement-edition-dc1d09b06132",
+      "kind": "key_replacement",
+      "site_event_key": "第10回 すみだ輪おどり区民感謝デー||すみだ産業会館サンライズホール",
+      "collector_event_key": "すみだ輪おどり区民感謝デー||すみだ産業会館サンライズホール",
+      "site_sha256": "ad28ada0b2f43cfc3404aef91d8cf5d0aedc7be203f1b8393ac929ad0b35e610",
+      "collector_sha256": "aa3cfd5cd1f5cf29930536ecf1d003bb66300c61d1f500aa129999094a800af7",
+      "reason": "公開名から「第N回」を外す方針（2026-07-27 内田さん判断・PR #116）。回次は開催回ごとの情報でシリーズ名に含めない"
+    },
+    {
+      "id": "reviewed-replacement-edition-607b86d8a716",
+      "kind": "key_replacement",
+      "site_event_key": "第10回白金台どんぐり児童遊園 納涼盆踊り大会||白金台どんぐり児童遊園",
+      "collector_event_key": "白金台どんぐり児童遊園 納涼盆踊り大会||白金台どんぐり児童遊園",
+      "site_sha256": "87d48a87426c0925846f11ba27cbad32fa4083f2ca52562f17c2e4690350f8ea",
+      "collector_sha256": "3782865b1cf47a95aed635d221983eed6ae81c20efb42280a5e7dcae4ed8963c",
+      "reason": "公開名から「第N回」を外す方針（2026-07-27 内田さん判断・PR #116）。回次は開催回ごとの情報でシリーズ名に含めない"
+    },
+    {
+      "id": "reviewed-replacement-edition-7cff4c6ffafd",
+      "kind": "key_replacement",
+      "site_event_key": "第11回 にっぽり炭坑節まつり||JR日暮里駅前広場",
+      "collector_event_key": "にっぽり炭坑節まつり||JR日暮里駅前広場",
+      "site_sha256": "6aacc5ba81b15ce82395cc59780f65bb165944d49c614ac406c697c4514f9291",
+      "collector_sha256": "d7d2820baa4891a25efef156bf54ecd5ea6aeb57867d928d49d59a4ce7d991bd",
+      "reason": "公開名から「第N回」を外す方針（2026-07-27 内田さん判断・PR #116）。回次は開催回ごとの情報でシリーズ名に含めない"
+    },
+    {
+      "id": "reviewed-replacement-edition-03fa34478fc8",
+      "kind": "key_replacement",
+      "site_event_key": "第16回 鴨台盆踊り||大正大学",
+      "collector_event_key": "鴨台盆踊り||大正大学",
+      "site_sha256": "97b3b0c697ae06c3bf9a7b388f6a72fffdb54949610a4f072bb959554d481e0a",
+      "collector_sha256": "227974eb91af2ab27cfc5e5f99c1d7a98ccd987fdf3ac30739891d3f84634cb1",
+      "reason": "公開名から「第N回」を外す方針（2026-07-27 内田さん判断・PR #116）。回次は開催回ごとの情報でシリーズ名に含めない"
+    },
+    {
+      "id": "reviewed-replacement-edition-3b6aaf995347",
+      "kind": "key_replacement",
+      "site_event_key": "第16回ハマサイトの夏祭り||ハマサイト前広場・汐留ビルディング外構",
+      "collector_event_key": "ハマサイトの夏祭り||ハマサイト前広場・汐留ビルディング外構",
+      "site_sha256": "5c0e820de5b5e08b09ae71154476697fd3d248328351b4fa454d9cf17517a4d6",
+      "collector_sha256": "2fd39d2edfcd4b49e05f37c3a0fbbdc46ac78ab7ab7f6f8a14d75de4b2b86a15",
+      "reason": "公開名から「第N回」を外す方針（2026-07-27 内田さん判断・PR #116）。回次は開催回ごとの情報でシリーズ名に含めない"
+    },
+    {
+      "id": "reviewed-replacement-edition-a35653c0b5ec",
+      "kind": "key_replacement",
+      "site_event_key": "第26回 四谷納涼踊り大会||四谷ひろばグランド（旧四谷第四小）",
+      "collector_event_key": "四谷納涼踊り大会||四谷ひろばグランド（旧四谷第四小）",
+      "site_sha256": "ec1c2bfbe984b74a20b1b1ff6fdf3ffea3c48bd7464477b24881aea0574f2217",
+      "collector_sha256": "eea02b25d02867642a29fde4c7126f5429c5130cd8ff73586f1dea80bdba2011",
+      "reason": "公開名から「第N回」を外す方針（2026-07-27 内田さん判断・PR #116）。回次は開催回ごとの情報でシリーズ名に含めない"
+    },
+    {
+      "id": "reviewed-replacement-edition-48167b6c30cd",
+      "kind": "key_replacement",
+      "site_event_key": "第2回 大盆踊り祭 with 坂崎守寛||日本橋社会教育会館",
+      "collector_event_key": "大盆踊り祭 with 坂崎守寛||日本橋社会教育会館",
+      "site_sha256": "0fd6e14bd0b43a888ae91a079ac40e48e9dda74b05980536b19491ae58a934c1",
+      "collector_sha256": "1a77c1f410573761009b19c00a97000d99ab10c220387f0fd073b2dfd46d2191",
+      "reason": "公開名から「第N回」を外す方針（2026-07-27 内田さん判断・PR #116）。回次は開催回ごとの情報でシリーズ名に含めない"
+    },
+    {
+      "id": "reviewed-replacement-edition-1ce490905bc0",
+      "kind": "key_replacement",
+      "site_event_key": "第2回 晴海ふ頭公園盆踊り大会||晴海ふ頭公園",
+      "collector_event_key": "晴海ふ頭公園盆踊り大会||晴海ふ頭公園",
+      "site_sha256": "56e8ef7e5a4429bac0bbb908053f7b02d8fcf37522349a96e1d3daeec55c41ea",
+      "collector_sha256": "33f97751082de33678b0403be0bedde2cef30f27ec2471c4fc66d2e3dfc03890",
+      "reason": "公開名から「第N回」を外す方針（2026-07-27 内田さん判断・PR #116）。回次は開催回ごとの情報でシリーズ名に含めない"
+    },
+    {
+      "id": "reviewed-replacement-edition-88cca613b113",
+      "kind": "key_replacement",
+      "site_event_key": "第2回 辰巳で盆踊り||区立第二辰巳小学校",
+      "collector_event_key": "辰巳で盆踊り||区立第二辰巳小学校",
+      "site_sha256": "112f7ce12824c6138479725bd0c6a00b9ffe39f95b09359e8eede842d624ef9b",
+      "collector_sha256": "e3cebaec395c135664c375e690c4af3de8e1db6effa1aa42a192d05ae857f9bc",
+      "reason": "公開名から「第N回」を外す方針（2026-07-27 内田さん判断・PR #116）。回次は開催回ごとの情報でシリーズ名に含めない"
+    },
+    {
+      "id": "reviewed-replacement-edition-18245fad956e",
+      "kind": "key_replacement",
+      "site_event_key": "第2回田原de盆踊り||田原小学校",
+      "collector_event_key": "田原de盆踊り||田原小学校",
+      "site_sha256": "0a424f8bce79f38253ef86180f747415147fad8a97eca60f9e913a93db673622",
+      "collector_sha256": "bb6e9289a9c326ceb1073ebf681a378eb0deef198e4f45b7d808680e2b6a3a57",
+      "reason": "公開名から「第N回」を外す方針（2026-07-27 内田さん判断・PR #116）。回次は開催回ごとの情報でシリーズ名に含めない"
+    },
+    {
+      "id": "reviewed-replacement-edition-910f62e28d10",
+      "kind": "key_replacement",
+      "site_event_key": "第34回ふるさと千川 まつり||ふるさと千川ひろば(千川小学校校庭跡地)",
+      "collector_event_key": "ふるさと千川 まつり||ふるさと千川ひろば(千川小学校校庭跡地)",
+      "site_sha256": "c7d0edf1acf7b08685416405731d1d1b213d2cbf996e77ed2f6703fae8c9c3ea",
+      "collector_sha256": "0c655206b58d595d5b3c2662937e945277b5d699321697fc27c09fe5de80f3d1",
+      "reason": "公開名から「第N回」を外す方針（2026-07-27 内田さん判断・PR #116）。回次は開催回ごとの情報でシリーズ名に含めない"
+    },
+    {
+      "id": "reviewed-replacement-edition-349ebfa67dca",
+      "kind": "key_replacement",
+      "site_event_key": "第3回 延七昇竜太鼓盆踊り大会||第二延山小学校",
+      "collector_event_key": "延七昇竜太鼓盆踊り大会||第二延山小学校",
+      "site_sha256": "08faa98e82e7049b8fefbd674285531a45d19d12d4f519e03d20013a99dd76f0",
+      "collector_sha256": "ae6dcd83eb690826fcc6eee274d4215b904fe7bad985c26a6a4517f94f2022a9",
+      "reason": "公開名から「第N回」を外す方針（2026-07-27 内田さん判断・PR #116）。回次は開催回ごとの情報でシリーズ名に含めない"
+    },
+    {
+      "id": "reviewed-replacement-edition-a6d0a708f5f6",
+      "kind": "key_replacement",
+      "site_event_key": "第42回大久保まつり パレード 百人町民民謡おどり||JR新大久保駅北側から東方向",
+      "collector_event_key": "大久保まつり パレード 百人町民民謡おどり||JR新大久保駅北側から東方向",
+      "site_sha256": "863c5f661b62d2c892224df4998907b23d1f532d41a09c6e321b5449a496896a",
+      "collector_sha256": "e89d3e3e207f3e6679fa06153436000fed60affed2ad5e5db3f7e31ea5a46e2b",
+      "reason": "公開名から「第N回」を外す方針（2026-07-27 内田さん判断・PR #116）。回次は開催回ごとの情報でシリーズ名に含めない"
+    },
+    {
+      "id": "reviewed-replacement-edition-3ec2781c1c59",
+      "kind": "key_replacement",
+      "site_event_key": "第46回 巣鴨盆踊り大会||巣鴨駅南口ロータリー",
+      "collector_event_key": "巣鴨盆踊り大会||巣鴨駅南口ロータリー",
+      "site_sha256": "1c54ebce95f562db01f4a255c8b279be830e0ef0583c04322fafc96fb644c4eb",
+      "collector_sha256": "47cbab62bc66fc79f933a7815b3a69422b503a14c1683a01af29d5ce431dafed",
+      "reason": "公開名から「第N回」を外す方針（2026-07-27 内田さん判断・PR #116）。回次は開催回ごとの情報でシリーズ名に含めない"
+    },
+    {
+      "id": "reviewed-replacement-edition-f955fd57d97b",
+      "kind": "key_replacement",
+      "site_event_key": "第51回 浄土寺盆踊り大会||浄土寺",
+      "collector_event_key": "浄土寺盆踊り大会||浄土寺",
+      "site_sha256": "8900203ab8cededcfda4a5040ef6929c1bbe83d9571fb150c61180e9b5de5b58",
+      "collector_sha256": "ea4a08ebe20d2cfc2667ef3080577bba7bf99af86ceb14b527511b6e97f04274",
+      "reason": "公開名から「第N回」を外す方針（2026-07-27 内田さん判断・PR #116）。回次は開催回ごとの情報でシリーズ名に含めない"
+    },
+    {
+      "id": "reviewed-replacement-edition-a91cc3759dde",
+      "kind": "key_replacement",
+      "site_event_key": "第60回あらかわ青年大会 アリストック||あらかわ遊園アリスの広場",
+      "collector_event_key": "あらかわ青年大会 アリストック||あらかわ遊園アリスの広場",
+      "site_sha256": "ea87e813e3707907dd2a60127f1a1527f642e8b454a000effeb273e60be2a253",
+      "collector_sha256": "d52a50840f52f47d8a3ff47bbdd4e574ac82075a2ceeb247d482a32a04c4af7a",
+      "reason": "公開名から「第N回」を外す方針（2026-07-27 内田さん判断・PR #116）。回次は開催回ごとの情報でシリーズ名に含めない"
+    },
+    {
+      "id": "reviewed-replacement-edition-207862647023",
+      "kind": "key_replacement",
+      "site_event_key": "第71回 恵比寿駅前盆踊り大会||JR恵比寿駅西口広場",
+      "collector_event_key": "恵比寿駅前盆踊り大会||JR恵比寿駅西口広場",
+      "site_sha256": "ed5207664ca65bb9bad07d2642ea65e711d20e342d71f74b6750d4a89bbcc1b5",
+      "collector_sha256": "59098f16ef05f9c052211cbb44db81517565f96a583af37d42af7c66fb4e1378",
+      "reason": "公開名から「第N回」を外す方針（2026-07-27 内田さん判断・PR #116）。回次は開催回ごとの情報でシリーズ名に含めない"
+    },
+    {
+      "id": "reviewed-replacement-edition-9099e5dbff30",
+      "kind": "key_replacement",
+      "site_event_key": "第71回大井どんたく夏まつり 初日 盆踊り||大井町駅前中央通り",
+      "collector_event_key": "大井どんたく夏まつり 初日 盆踊り||大井町駅前中央通り",
+      "site_sha256": "43b435759739ff76f2af2e1f2ae2cb7e3be29d2910f59846f941c190f6beda89",
+      "collector_sha256": "c0048b3c35a78d8099a435a58997dd244bc6bfdaac5b2701eaac6f1873c0865d",
+      "reason": "公開名から「第N回」を外す方針（2026-07-27 内田さん判断・PR #116）。回次は開催回ごとの情報でシリーズ名に含めない"
+    },
+    {
+      "id": "reviewed-replacement-edition-fcf8b31ae77b",
+      "kind": "key_replacement",
+      "site_event_key": "第7回 渋谷盆踊り||渋谷109前",
+      "collector_event_key": "渋谷盆踊り||渋谷109前",
+      "site_sha256": "39bd7ca9ca95237cb9335f3beea564b8bdcfe5b09f9f41c74cb280919580c191",
+      "collector_sha256": "4a4a5ca2ed560e9524e11a93f55cbc865788343e58e7b6bc7016cf84d985f2fa",
+      "reason": "公開名から「第N回」を外す方針（2026-07-27 内田さん判断・PR #116）。回次は開催回ごとの情報でシリーズ名に含めない"
+    },
+    {
+      "id": "reviewed-replacement-edition-e4e7dba4a225",
+      "kind": "key_replacement",
+      "site_event_key": "第90回 祐天寺み魂まつり こども盆踊り大会||祐天寺境内",
+      "collector_event_key": "祐天寺み魂まつり こども盆踊り大会||祐天寺境内",
+      "site_sha256": "13fae23c7f160c690dc6abac5c85c3b4e3268cb9c482028da3b9b3778096e802",
+      "collector_sha256": "a52d569a6ffac555548760a4bb2d4130316c8e559694b4f511b874f05504e9e9",
+      "reason": "公開名から「第N回」を外す方針（2026-07-27 内田さん判断・PR #116）。回次は開催回ごとの情報でシリーズ名に含めない"
     }
   ]
 }
