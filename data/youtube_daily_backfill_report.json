@@ -1,13 +1,13 @@
 {
   "generated_by": "run_daily_youtube_backfill.py",
-  "generated_at": "2026-07-26T20:57:05.941437+00:00",
+  "generated_at": "2026-07-27T21:09:44.183915+00:00",
   "status": "harvested_until_quota_limited",
   "month": 6,
   "target_year": 2026,
-  "selected_rows": 48,
+  "selected_rows": 56,
   "remaining_rows_before": 93,
-  "remaining_rows_after": 46,
-  "estimated_search_calls": 96,
+  "remaining_rows_after": 38,
+  "estimated_search_calls": 112,
   "candidates_before": 573,
   "selected": [
     {
@@ -1531,9 +1531,257 @@
         "鶴巻小学校 2024 盆踊り"
       ],
       "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:c313bfbffd8d4784",
+      "target_year": 2023,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "鶴巻小学校 納涼盆踊り大会＆子ども祭り",
+      "venue": "鶴巻小学校",
+      "area": "新宿区",
+      "series_key": "4cbfda123739",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-07-12",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-12"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.68,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "鶴巻小学校 納涼盆踊り大会＆子ども祭り 鶴巻小学校 新宿区 2023 盆踊り",
+        "鶴巻小学校 納涼盆踊り大会＆子ども祭り 2023 YouTube 盆踊り",
+        "鶴巻小学校 2023 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:2ab649320f07944c",
+      "target_year": 2024,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "羽田青年連合会",
+      "venue": "羽田神社",
+      "area": "大田区",
+      "series_key": "f405e42de20d",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-07-13",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-13"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.6,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "羽田青年連合会 羽田神社 大田区 2024 盆踊り",
+        "羽田青年連合会 2024 YouTube 盆踊り",
+        "羽田神社 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:f5f2d06d4bbfaeeb",
+      "target_year": 2024,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "下代田東町会 「下代田東子供祭り・納涼祭り」",
+      "venue": "下代田児童遊園",
+      "area": "世田谷区",
+      "series_key": "9224bbb8cead",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-07-19",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-19"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.64,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "下代田東町会 「下代田東子供祭り・納涼祭り」 下代田児童遊園 世田谷区 2024 盆踊り",
+        "下代田東町会 「下代田東子供祭り・納涼祭り」 2024 YouTube 盆踊り",
+        "下代田児童遊園 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:e074329eacdbdc5e",
+      "target_year": 2024,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "下落合四丁目町会 盆踊り大会",
+      "venue": "下落合公園",
+      "area": "新宿区",
+      "series_key": "76ad35a78278",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-07-19",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-19"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.64,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "下落合四丁目町会 盆踊り大会 下落合公園 新宿区 2024 盆踊り",
+        "下落合四丁目町会 盆踊り大会 2024 YouTube 盆踊り",
+        "下落合公園 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:b1a933f8eb9d1f5f",
+      "target_year": 2024,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "下落合町会知久会 第9回盆踊り",
+      "venue": "清水川橋公園",
+      "area": "新宿区",
+      "series_key": "486dd42b8892",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-07-19",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-19"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.7,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "下落合町会知久会 第9回盆踊り 清水川橋公園 新宿区 2024 盆踊り",
+        "下落合町会知久会 第9回盆踊り 2024 YouTube 盆踊り",
+        "清水川橋公園 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:3e266855f01bbc54",
+      "target_year": 2024,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "砧町町会「納涼夏祭り大会」",
+      "venue": "三峰公園",
+      "area": "世田谷区",
+      "series_key": "01028eb70f59",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-07-19",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-19"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.68,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "砧町町会「納涼夏祭り大会」 三峰公園 世田谷区 2024 盆踊り",
+        "砧町町会「納涼夏祭り大会」 2024 YouTube 盆踊り",
+        "三峰公園 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:443b767f4ded8171",
+      "target_year": 2023,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "砧小学校「第38回砧っ子夏祭り」",
+      "venue": "砧小学校",
+      "area": "世田谷区",
+      "series_key": "57ff49b7e077",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-07-19",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-19"
+      ],
+      "recurrence_label": "昨年開催・継続性 高",
+      "recurrence_score": 0.78,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "砧小学校「第38回砧っ子夏祭り」 砧小学校 世田谷区 2023 盆踊り",
+        "砧小学校「第38回砧っ子夏祭り」 2023 YouTube 盆踊り",
+        "砧小学校 2023 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
+    },
+    {
+      "queue_id": "youtube-year-backfill:5bb0e328527d5408",
+      "target_year": 2024,
+      "priority_score": 8,
+      "priority": "low",
+      "event_name": "西糀谷四丁目町会 盆踊り大会",
+      "venue": "西仲天祖神社",
+      "area": "大田区",
+      "series_key": "ccf1a2f8f2bb",
+      "observed_years": [],
+      "observed_source_video_count": 0,
+      "public_date": "2025-07-21",
+      "public_date_end": "",
+      "last_seen_year": 2025,
+      "last_seen_dates": [
+        "2025-07-21"
+      ],
+      "recurrence_label": "昨年開催・継続性 中",
+      "recurrence_score": 0.68,
+      "source_url_count": 0,
+      "song_count": 0,
+      "priority_reasons": [
+        "medium_recurrence_score"
+      ],
+      "search_queries": [
+        "西糀谷四丁目町会 盆踊り大会 西仲天祖神社 大田区 2024 盆踊り",
+        "西糀谷四丁目町会 盆踊り大会 2024 YouTube 盆踊り",
+        "西仲天祖神社 2024 盆踊り"
+      ],
+      "next_action": "YouTubeで過去年動画を検索し、開催日・曜日・曲目を観測データへ追加する"
     }
   ],
-  "completed_batches": 47,
+  "completed_batches": 55,
   "batches": [
     {
       "batch": 1,
@@ -1738,9 +1986,9 @@
         "youtube-year-backfill:3d5a8517fb197ecb"
       ],
       "fresh_summary": {
-        "candidate_count": 5,
+        "candidate_count": 4,
         "status_counts": {
-          "weak": 5
+          "weak": 4
         },
         "strong_count": 0,
         "review_count": 0
@@ -2097,12 +2345,14 @@
         "youtube-year-backfill:356f859bb68abc08"
       ],
       "fresh_summary": {
-        "candidate_count": 0,
-        "status_counts": {},
+        "candidate_count": 1,
+        "status_counts": {
+          "weak": 1
+        },
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 573,
+      "candidate_count": 574,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2119,7 +2369,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 573,
+      "candidate_count": 574,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2136,7 +2386,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 573,
+      "candidate_count": 574,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2153,7 +2403,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 573,
+      "candidate_count": 574,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2170,7 +2420,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 573,
+      "candidate_count": 574,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2187,7 +2437,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 573,
+      "candidate_count": 574,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2204,7 +2454,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 573,
+      "candidate_count": 574,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2221,7 +2471,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 573,
+      "candidate_count": 574,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2238,7 +2488,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 573,
+      "candidate_count": 574,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2255,7 +2505,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 573,
+      "candidate_count": 574,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2272,7 +2522,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 573,
+      "candidate_count": 574,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2289,7 +2539,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 573,
+      "candidate_count": 574,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2306,7 +2556,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 573,
+      "candidate_count": 574,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2323,7 +2573,7 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 573,
+      "candidate_count": 574,
       "strong_count": 183,
       "review_count": 48
     },
@@ -2342,7 +2592,157 @@
         "strong_count": 0,
         "review_count": 0
       },
-      "candidate_count": 573,
+      "candidate_count": 574,
+      "strong_count": 183,
+      "review_count": 48
+    },
+    {
+      "batch": 48,
+      "month": 7,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:eb454613e3fc893f"
+      ],
+      "fresh_summary": {
+        "candidate_count": 1,
+        "status_counts": {
+          "weak": 1
+        },
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "candidate_count": 574,
+      "strong_count": 183,
+      "review_count": 48
+    },
+    {
+      "batch": 49,
+      "month": 7,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:c313bfbffd8d4784"
+      ],
+      "fresh_summary": {
+        "candidate_count": 0,
+        "status_counts": {},
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "candidate_count": 574,
+      "strong_count": 183,
+      "review_count": 48
+    },
+    {
+      "batch": 50,
+      "month": 7,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:2ab649320f07944c"
+      ],
+      "fresh_summary": {
+        "candidate_count": 1,
+        "status_counts": {
+          "weak": 1
+        },
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "candidate_count": 574,
+      "strong_count": 183,
+      "review_count": 48
+    },
+    {
+      "batch": 51,
+      "month": 7,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:f5f2d06d4bbfaeeb"
+      ],
+      "fresh_summary": {
+        "candidate_count": 1,
+        "status_counts": {
+          "weak": 1
+        },
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "candidate_count": 574,
+      "strong_count": 183,
+      "review_count": 48
+    },
+    {
+      "batch": 52,
+      "month": 7,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:e074329eacdbdc5e"
+      ],
+      "fresh_summary": {
+        "candidate_count": 1,
+        "status_counts": {
+          "weak": 1
+        },
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "candidate_count": 574,
+      "strong_count": 183,
+      "review_count": 48
+    },
+    {
+      "batch": 53,
+      "month": 7,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:b1a933f8eb9d1f5f"
+      ],
+      "fresh_summary": {
+        "candidate_count": 1,
+        "status_counts": {
+          "weak": 1
+        },
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "candidate_count": 574,
+      "strong_count": 183,
+      "review_count": 48
+    },
+    {
+      "batch": 54,
+      "month": 7,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:3e266855f01bbc54"
+      ],
+      "fresh_summary": {
+        "candidate_count": 1,
+        "status_counts": {
+          "weak": 1
+        },
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "candidate_count": 574,
+      "strong_count": 183,
+      "review_count": 48
+    },
+    {
+      "batch": 55,
+      "month": 7,
+      "selected_rows": 1,
+      "queue_ids": [
+        "youtube-year-backfill:443b767f4ded8171"
+      ],
+      "fresh_summary": {
+        "candidate_count": 1,
+        "status_counts": {
+          "weak": 1
+        },
+        "strong_count": 0,
+        "review_count": 0
+      },
+      "candidate_count": 575,
       "strong_count": 183,
       "review_count": 48
     }
@@ -2354,11 +2754,11 @@
     "event occurrence backfill applied: added=0 updated=29 observations=53 series_3year=4",
     "event schedule rules: target_year=2026 rules=13 axes={'date': 1, 'near_date': 2, 'weekday': 6, 'weekday_near_date': 2, 'weekend_near_date': 2}",
     "event date predictions: target_year=2026 predictions=13 rules={'date_near': 2, 'fixed_date': 1, 'weekday_last': 2, 'weekday_near_day': 2, 'weekday_nth': 4, 'weekend_near_day': 2}",
-    "曲 occurrence 生成完了: occurrences=415 relations=2907 -> data/song_occurrences.json",
+    "曲 occurrence 生成完了: occurrences=420 relations=2925 -> data/song_occurrences.json",
     "系列分裂レビュー候補: 1 件 → /home/runner/work/bon-odori-collector/bon-odori-collector/data/public_event_series_split_review.md（要目視レビュー）\nイベント公開エクスポート完了: 204 件 → /home/runner/work/bon-odori-collector/bon-odori-collector/data/public/events_public.json\n  Claude Design貼り付け用JS: /home/runner/work/bon-odori-collector/bon-odori-collector/data/public/events_public.js\n  イベント名あり: 204 件（193 会場）/ 名称確認中フォールバック: 0 件\n  月情報なし: 2 件 / 23区外・会場なしで除外したイベント: 0 件\n  曲目ヒントあり: 61 件 → /home/runner/work/bon-odori-collector/bon-odori-collector/data/public/event_songs_public.json",
     "month youtube backfill queue: month=6 items=0 search_calls=0"
   ],
-  "candidates_after": 573,
+  "candidates_after": 575,
   "strong_after": 183,
   "review_after": 48,
   "schedule_rule_count": 13,
@@ -2374,5 +2774,5 @@
     "weekend_near_date": 2
   },
   "schedule_rule_warning_counts": {},
-  "ops_metrics": "ops metrics: date=2026-07-27 youtube_candidates=573 review=48 history_rows=32"
+  "ops_metrics": "ops metrics: date=2026-07-28 youtube_candidates=575 review=48 history_rows=33"
 }

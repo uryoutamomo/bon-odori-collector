@@ -1,17 +1,17 @@
 {
   "generated_by": "harvest_youtube_year_backfill.py",
-  "generated_at": "2026-07-26T20:57:31.889500+00:00",
+  "generated_at": "2026-07-27T21:10:13.704669+00:00",
   "source": "data/youtube_year_backfill_queue.json",
   "selected_queue_count": 169,
   "queue_offset": 0,
   "max_results_per_query": 5,
   "api_request_count_estimate": 3,
   "summary": {
-    "candidate_count": 573,
+    "candidate_count": 575,
     "status_counts": {
       "review": 48,
       "strong": 183,
-      "weak": 342
+      "weak": 344
     },
     "strong_count": 183,
     "review_count": 48
@@ -20380,6 +20380,32 @@
       "score": 45,
       "reasons": [
         "target_year_in_video",
+        "target_year_date_detected",
+        "bon_context"
+      ],
+      "queue_id": "youtube-year-backfill:443b767f4ded8171",
+      "target_year": 2023,
+      "event_name": "砧小学校「第38回砧っ子夏祭り」",
+      "venue": "砧小学校",
+      "area": "世田谷区",
+      "detected_event_date": "2023-07-06",
+      "video_id": "HSx0KbrIg8s",
+      "video_url": "https://www.youtube.com/watch?v=HSx0KbrIg8s",
+      "title": "朝顔音頭　2023年入谷朝顔音頭踊り大会　１日目４　東京都台東区　盆踊り",
+      "channel_id": "UCNF_5e3ZvziJueTWvTPATGw",
+      "channel_title": "和太鼓お祭りチャンネル",
+      "published_at": "2023-07-09T13:30:09Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/HSx0KbrIg8s/sddefault.jpg",
+      "query": "砧小学校「第38回砧っ子夏祭り」 2023 YouTube 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "2023年7月6日、東京都台東区にあります入谷南公園で行われた、 「入谷朝顔音頭踊り大会」1日目の会場の様子です。 おすすめ動画 入谷朝顔まつり １朝顔音頭 https://youtu.be/ECNfC0-rdMs ２大東京音頭 https://youtu.be/_pgHzoMtj8s ３炭坑節 https://youtu.be/rdFA2DSdTNA ４朝顔音頭 https://youtu.be/HSx0KbrIg8s ５たいとう音頭 https://youtu.be/FLWQKH1AU5E ６東京音頭 https://youtu.be/hsmq63rfBqk 奥浅草盆踊り大会 第一部 １東京音頭 https://youtu.be/1x7tnyhgdOE ２東京踊り https://youtu.be/zSXC3_UsHoA ３炭坑節 https://youtu.be/5zymCpW2vl4 ４平成音頭 https://youtu.be/1GNTdPt-zKk ５押せ押せ音頭 https://youtu.be/8ELrW904yfY ６ソーラン節 https://youtu.be/_…"
+    },
+    {
+      "status": "weak",
+      "score": 45,
+      "reasons": [
+        "target_year_in_video",
         "target_year_date_detected"
       ],
       "queue_id": "youtube-year-backfill:cd8cb6e6b8037dfa",
@@ -28073,6 +28099,28 @@
       "status": "weak",
       "score": 3,
       "reasons": [],
+      "queue_id": "youtube-year-backfill:356f859bb68abc08",
+      "target_year": 2023,
+      "event_name": "大森南一丁目自治会「納涼盆踊り大会」",
+      "venue": "大森南一丁目公園",
+      "area": "大田区",
+      "detected_event_date": "",
+      "video_id": "PdKU8yWVIEE",
+      "video_url": "https://www.youtube.com/watch?v=PdKU8yWVIEE",
+      "title": "令和5年稗田神社例大祭",
+      "channel_id": "UCx1LDT34gXymp6kjndWiolg",
+      "channel_title": "サンバマツケン",
+      "published_at": "2023-09-17T22:25:43Z",
+      "thumbnail_url": "https://i.ytimg.com/vi/PdKU8yWVIEE/maxresdefault.jpg",
+      "query": "大森南一丁目自治会「納涼盆踊り大会」 大森南一丁目公園 大田区 2023 盆踊り",
+      "setlist_count": 0,
+      "setlist_sample": [],
+      "description_excerpt": "東京都大田区蒲田なんですが、8月の蒲田八幡神社のお祭りと別で行われています。こちらもかなり盛り上がりました。 蒲田って言ってもかなり広い地域になりますので、神社が違う地域は他の日に行います。 ちなみに蒲田西口は御園神社がありますので、7月に行われます。"
+    },
+    {
+      "status": "weak",
+      "score": 3,
+      "reasons": [],
       "queue_id": "youtube-year-backfill:65631588a7239bb3",
       "target_year": 2023,
       "event_name": "宇奈根町会 盆踊り大会",
@@ -28818,5 +28866,5 @@
       "description_excerpt": ""
     }
   ],
-  "merged_from": "2026-07-26T20:57:31.190066+00:00"
+  "merged_from": "2026-07-27T21:10:13.176528+00:00"
 }
