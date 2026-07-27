@@ -98,11 +98,24 @@ def target_event_name(row):
     return occurrences[0].get("event_name") if occurrences else ""
 
 
+def evidence_event_date(row):
+    detected_date = row.get("detected_event_date") or ""
+    if detected_date:
+        return detected_date
+    match = row.get("matched_public_event") or {}
+    reasons = set(match.get("reasons") or [])
+    # A curated alias can identify the event series across years, but the
+    # current public occurrence date is not evidence for an undated video.
+    if reasons & {"event_alias_in_youtube", "cross_year_event_alias"}:
+        return ""
+    return match.get("date") or ""
+
+
 def group_key(row):
     event_name = target_event_name(row)
     occurrences = row.get("setlist_occurrences") or []
     occurrence_key = occurrences[0].get("occurrence_key") if occurrences else ""
-    event_date = row.get("detected_event_date") or (row.get("matched_public_event") or {}).get("date") or ""
+    event_date = evidence_event_date(row)
     return event_name, occurrence_key, event_date
 
 

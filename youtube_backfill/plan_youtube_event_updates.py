@@ -7,6 +7,11 @@ import tempfile
 from datetime import date, datetime, timezone
 from pathlib import Path
 
+try:
+    from youtube_backfill.event_aliases import find_event_alias, find_venue_alias
+except ModuleNotFoundError:  # Direct execution: python3 youtube_backfill/<script>.py
+    from event_aliases import find_event_alias, find_venue_alias
+
 
 DATA = Path("data")
 YOUTUBE_EVENT_SONGS = DATA / "youtube_event_song_candidates.json"
@@ -21,11 +26,13 @@ TOKYO_23_AREAS = {
 }
 OUT_OF_SCOPE_RE = re.compile(r"(博多|福岡|ラゾーナ川崎|川崎|横浜|鶴見|總持寺|総持寺)")
 GENERIC_EVENT_NAMES = {"盆踊り大会", "盆踊り", "納涼盆踊り", "夏祭り"}
-PUBLIC_EVENT_ALIASES = {
-    "奥浅草盆踊り": ["okuasakusabonodori", "okuasakusabondance", "okuasakusabonodoridancefestival"],
-}
-
-
+# These broad labels can occur inside an unrelated event title (for example,
+# 京橋公園納涼盆踊り大会); do not let that alone outrank a specific candidate.
+TITLE_TIE_BREAK_EXCLUDED_EVENT_NAMES = GENERIC_EVENT_NAMES | {"桜まつり", "納涼盆踊り大会"}
+POST_EVENT_CONTEXT_RE = re.compile(
+    r"\b(?:right\s+)?after\s+(?:the\s+)?[^\n]{0,80}\bbon\s*(?:odori|dance)\b",
+    re.I,
+)
 def load_json(path, default):
     path = Path(path)
     if not path.exists():
@@ -78,20 +85,44 @@ def is_out_of_scope(row):
     return bool(OUT_OF_SCOPE_RE.search(blob))
 
 
+def is_post_event_context_only(row):
+    """Reject unstructured titles about the scene after, not during, an event.
+
+    This path searches a free-text title/description blob.  The other two
+    matchers receive extracted event/venue fields, so this title-only negative
+    context guard does not belong in those structured-field paths.
+    """
+
+    return bool(POST_EVENT_CONTEXT_RE.search(row.get("source_video_title") or ""))
+
+
 def public_event_rows(payload):
     return payload if isinstance(payload, list) else []
 
 
 def match_public_event(row, public_events):
+    if is_post_event_context_only(row):
+        return None
     blob = norm(text_blob(row))
+    title = norm(row.get("source_video_title") or row.get("event_name") or "")
     best = None
+    best_rank = None
     for event in public_events:
         score = 0
         reasons = []
         raw_event_name = event.get("name") or ""
         event_name = norm(event.get("name"))
         venue = norm(event.get("venue"))
-        if raw_event_name in GENERIC_EVENT_NAMES:
+        event_alias = find_event_alias(raw_event_name, blob, norm)
+        title_event_alias = find_event_alias(raw_event_name, title, norm)
+        title_event_match = bool(
+            raw_event_name not in TITLE_TIE_BREAK_EXCLUDED_EVENT_NAMES
+            and (title_event_alias or (event_name and event_name in title))
+        )
+        if event_alias:
+            score += 70
+            reasons.append("event_alias_in_youtube")
+        elif raw_event_name in GENERIC_EVENT_NAMES:
             if venue and venue in blob:
                 score += 35
                 reasons.append("generic_event_venue_only")
@@ -101,14 +132,12 @@ def match_public_event(row, public_events):
         elif event_name and len(event_name) >= 6 and any(part and part in blob for part in split_event_parts(event.get("name"))):
             score += 35
             reasons.append("event_name_part")
-        for alias in PUBLIC_EVENT_ALIASES.get(raw_event_name, []):
-            if alias and alias in blob:
-                score += 70
-                reasons.append("event_alias_in_youtube")
-                break
         if venue and venue in blob:
             score += 35
             reasons.append("venue_in_youtube")
+        elif find_venue_alias(event.get("venue"), blob, norm):
+            score += 35
+            reasons.append("venue_alias_in_youtube")
         if event.get("area") in TOKYO_23_AREAS:
             score += 5
         if score <= 0:
@@ -122,15 +151,14 @@ def match_public_event(row, public_events):
             "score": score,
             "reasons": reasons,
         }
-        if (
-            best is None
-            or candidate["score"] > best["score"]
-            or (
-                candidate["score"] == best["score"]
-                and len(candidate["name"]) > len(best.get("name") or "")
-            )
-        ):
+        # Descriptions often contain related-video links.  At the same score,
+        # an event explicitly named in the video title is stronger evidence
+        # than an event mentioned only in that descriptive noise.  Name length
+        # remains a deterministic final tie-breaker when title evidence agrees.
+        rank = (candidate["score"], int(title_event_match), len(candidate["name"]))
+        if best is None or rank > best_rank:
             best = candidate
+            best_rank = rank
     return best if best and best["score"] >= 70 else None
 
 

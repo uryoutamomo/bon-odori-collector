@@ -1,6 +1,6 @@
 import unittest
 
-from youtube_backfill.plan_youtube_event_updates import build_plan, clean_song_title
+from youtube_backfill.plan_youtube_event_updates import build_plan, clean_song_title, match_public_event
 
 
 class PlanYoutubeEventUpdatesTest(unittest.TestCase):
@@ -139,6 +139,133 @@ class PlanYoutubeEventUpdatesTest(unittest.TestCase):
 
         self.assertEqual(plan["rows"][0]["action"], "append_evidence_to_existing_event")
         self.assertEqual(plan["rows"][0]["matched_public_event"]["name"], "奥浅草盆踊り")
+
+    def test_matches_curated_romanized_aliases_to_current_public_events(self):
+        cases = [
+            (
+                "Jiyugaoka Bon Odori Dance festival / 自由が丘盆踊り 2025",
+                "in front of Jiyugaoka Station",
+                "自由が丘納涼盆踊り大会",
+                "自由が丘駅前ロータリー 特設会場",
+                "目黒区",
+            ),
+            (
+                "Marunouchi Bon Odori Dance festival DJ J-POP Time",
+                "in front of Tokyo Station",
+                "丸の内de盆踊り",
+                "行幸通り",
+                "千代田区",
+            ),
+            (
+                "Shibuya Bon Odori Dance festival 2025",
+                "in front of Shibuya 109",
+                "第7回 渋谷盆踊り",
+                "渋谷109前",
+                "渋谷区",
+            ),
+            (
+                "Kanda Myojin Shrine Bon Dance 2025",
+                "Kanda Myojin Shrine",
+                "神田明神納涼祭り",
+                "神田明神境内",
+                "千代田区",
+            ),
+        ]
+        for title, description, event_name, venue, area in cases:
+            with self.subTest(event=event_name):
+                match = match_public_event(
+                    {
+                        "event_name": title,
+                        "venue": "",
+                        "source_video_title": title,
+                        "description_excerpt": description,
+                    },
+                    [{"name": event_name, "venue": venue, "area": area}],
+                )
+                self.assertEqual(match["name"], event_name)
+                self.assertEqual(match["score"], 110)
+                self.assertEqual(
+                    match["reasons"],
+                    ["event_alias_in_youtube", "venue_alias_in_youtube"],
+                )
+
+    def test_does_not_match_post_event_street_scene(self):
+        match = match_public_event(
+            {
+                "event_name": "Right after Shibuya Bon Odori",
+                "venue": "",
+                "source_video_title": (
+                    "Right after Shibuya Bon Odori, Shibuya Crossing Is Overflowing with Tourists!"
+                ),
+            },
+            [{"name": "第7回 渋谷盆踊り", "venue": "渋谷109前", "area": "渋谷区"}],
+        )
+
+        self.assertIsNone(match)
+
+    def test_event_alias_survives_public_name_dropping_edition_prefix(self):
+        row = {
+            "event_name": "Shibuya Bon Odori Dance festival 2025",
+            "venue": "",
+            "source_video_title": "Shibuya Bon Odori Dance festival 2025",
+            "description_excerpt": "in front of Shibuya 109",
+        }
+        for public_name in ("第7回 渋谷盆踊り", "第７回 渋谷盆踊り", "渋谷盆踊り"):
+            with self.subTest(public_name=public_name):
+                match = match_public_event(
+                    row,
+                    [{"name": public_name, "venue": "渋谷109前", "area": "渋谷区"}],
+                )
+                self.assertEqual(match["name"], public_name)
+                self.assertIn("event_alias_in_youtube", match["reasons"])
+
+    def test_prefers_event_named_in_title_over_same_score_description_link(self):
+        row = {
+            "event_name": "【ハマサイトの夏祭り 2025】盆踊り",
+            "venue": "",
+            "source_video_title": "【ハマサイトの夏祭り 2025】盆踊り",
+            "description_excerpt": "関連動画: 中野駅前大盆踊り大会 2025",
+        }
+        public_events = [
+            {"name": "中野駅前大盆踊り大会", "venue": "", "area": "中野区"},
+            {"name": "第16回ハマサイトの夏祭り", "venue": "", "area": "港区"},
+        ]
+
+        match = match_public_event(row, public_events)
+
+        self.assertEqual(match["name"], "第16回ハマサイトの夏祭り")
+        self.assertEqual(match["score"], 75)
+
+    def test_title_tie_breaker_survives_hamasite_public_name_rename(self):
+        row = {
+            "event_name": "【ハマサイトの夏祭り 2025】盆踊り",
+            "venue": "",
+            "source_video_title": "【ハマサイトの夏祭り 2025】盆踊り",
+            "description_excerpt": "関連動画: 中野駅前大盆踊り大会 2025",
+        }
+        public_events = [
+            {"name": "ハマサイトの夏祭り", "venue": "", "area": "港区"},
+            {"name": "中野駅前大盆踊り大会", "venue": "", "area": "中野区"},
+        ]
+
+        match = match_public_event(row, public_events)
+
+        self.assertEqual(match["name"], "ハマサイトの夏祭り")
+        self.assertEqual(match["score"], 75)
+
+    def test_title_tie_breaker_does_not_promote_broad_event_name(self):
+        row = {
+            "source_video_title": "京橋公園納涼盆踊り大会 2025",
+            "description_excerpt": "関連動画: 第10回白金台どんぐり児童遊園 納涼盆踊り大会",
+        }
+        public_events = [
+            {"name": "納涼盆踊り大会", "venue": "", "area": "世田谷区"},
+            {"name": "第10回白金台どんぐり児童遊園 納涼盆踊り大会", "venue": "", "area": "港区"},
+        ]
+
+        match = match_public_event(row, public_events)
+
+        self.assertEqual(match["name"], "第10回白金台どんぐり児童遊園 納涼盆踊り大会")
 
     def test_clean_song_title(self):
         self.assertEqual(clean_song_title("東京音頭 / Tokyo Ondo"), "東京音頭")

@@ -9,6 +9,11 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
+try:
+    from youtube_backfill.event_aliases import find_event_alias, find_venue_alias
+except ModuleNotFoundError:  # Direct execution: python3 youtube_backfill/<script>.py
+    from event_aliases import find_event_alias, find_venue_alias
+
 
 DATA = Path("data")
 SOURCE = DATA / "youtube_event_candidates.json"
@@ -155,6 +160,9 @@ def score_event_match(row, event):
         elif event_name_key in known_event_key or known_event_key in event_name_key:
             score += 38
             reasons.append("event_partial")
+        elif find_event_alias(event.get("name"), row.get("event_name"), norm):
+            score += 55
+            reasons.append("event_alias")
     if venue_key and known_venue_key:
         if venue_key == known_venue_key:
             score += 45
@@ -162,6 +170,9 @@ def score_event_match(row, event):
         elif venue_key in known_venue_key or known_venue_key in venue_key:
             score += 25
             reasons.append("venue_partial")
+        elif find_venue_alias(event.get("venue"), row.get("venue"), norm):
+            score += 45
+            reasons.append("venue_alias")
     if date_overlaps(row.get("event_date"), event):
         score += 20
         reasons.append("month_day")
