@@ -1,83 +1,76 @@
-"""Curated public-event and venue aliases used by YouTube matching paths.
+"""Public-event and venue aliases used by YouTube matching paths.
 
 The public event JSON intentionally keeps one canonical Japanese display name.
 YouTube titles and descriptions often use shorter Japanese names or romanized
 English names, so matchers need a shared lookup layer instead of route-local
 special cases.
 
-This is deliberately a small code-owned seed.  Once the master data model has
-a canonical event-alias store, move these records there so adding an alias no
-longer requires a code change.  The matching API in this module is the seam for
-that migration.
+These records used to be a code-owned seed because the master RDB had no
+event-series alias store.  They now live in the RDB (``event_series_aliases``
+and ``venue_aliases``) and reach this module through the runtime file written
+by ``build_event_alias_runtime.py``.  Adding an alias is therefore a data
+change: insert the row, rebuild the runtime file, and every matching path picks
+it up without a code edit.
 """
 
 from __future__ import annotations
 
+import json
+import os
 import re
 from collections.abc import Callable, Mapping, Sequence
+from pathlib import Path
 
 
 OCCURRENCE_EDITION_PREFIX_RE = re.compile(r"^第\s*[0-9０-９]+\s*回\s*")
 
+DEFAULT_ALIAS_RUNTIME_PATH = (
+    Path(__file__).resolve().parent.parent / "data" / "event_alias_runtime.json"
+)
+# Set BON_ODORI_EVENT_ALIAS_RUNTIME to compare matching behaviour against an
+# alternative alias table without editing the committed runtime file.
+RUNTIME_PATH_ENV = "BON_ODORI_EVENT_ALIAS_RUNTIME"
 
-PUBLIC_EVENT_ALIASES: Mapping[str, Sequence[str]] = {
-    "奥浅草盆踊り": (
-        "Oku Asakusa Bon Odori",
-        "Oku Asakusa Bon Dance",
-        "Oku Asakusa Bon Odori Dance Festival",
-    ),
-    "自由が丘納涼盆踊り大会": (
-        "Jiyugaoka Bon Odori",
-        "Jiyugaoka Bon Odori Festival",
-        "Jiyugaoka Bon Odori Dance Festival",
-        "自由が丘盆踊り",
-    ),
-    "丸の内de盆踊り": (
-        "Marunouchi Bon Odori",
-        "Marunouchi Bon Odori Festival",
-        "Marunouchi Bon Odori Dance Festival",
-        "丸の内盆踊り",
-        "東京丸の内盆踊り",
-    ),
-    "渋谷盆踊り": (
-        "Shibuya Bon Odori",
-        "Shibuya Bon Odori Festival",
-        "Shibuya Bon Odori Dance Festival",
-        "渋谷盆踊り",
-    ),
-    "神田明神納涼祭り": (
-        "Kanda Myojin Noryo Matsuri",
-        "Kanda Myojin Summer Festival",
-        "Kanda Myojin Shrine Bon Dance",
-        "Kanda Myojin Bon Odori",
-        "神田明神納涼祭り アニソン盆踊り",
-    ),
-}
+_RUNTIME_CACHE: dict[str, Mapping[str, Sequence[str]]] | None = None
 
 
-PUBLIC_VENUE_ALIASES: Mapping[str, Sequence[str]] = {
-    "自由が丘駅前ロータリー 特設会場": (
-        "Jiyugaoka Station",
-        "Jiyugaoka Station Rotary",
-        "in front of Jiyugaoka Station",
-        "自由が丘駅前",
-    ),
-    "行幸通り": (
-        "Gyoko Dori",
-        "Gyoko Avenue",
-        "in front of Tokyo Station",
-    ),
-    "渋谷109前": (
-        "Shibuya 109",
-        "in front of Shibuya 109",
-        "SHIBUYA109前",
-    ),
-    "神田明神境内": (
-        "Kanda Myojin Shrine",
-        "Kanda Myojin",
-        "神田明神",
-    ),
-}
+def alias_runtime_path() -> Path:
+    override = os.environ.get(RUNTIME_PATH_ENV, "").strip()
+    return Path(override) if override else DEFAULT_ALIAS_RUNTIME_PATH
+
+
+def _read_runtime(path: Path) -> dict[str, Mapping[str, Sequence[str]]]:
+    empty: dict[str, Mapping[str, Sequence[str]]] = {"event_aliases": {}, "venue_aliases": {}}
+    if not path.exists():
+        return empty
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return empty
+    if not isinstance(payload, dict):
+        return empty
+    tables = {}
+    for key in ("event_aliases", "venue_aliases"):
+        table = payload.get(key)
+        tables[key] = table if isinstance(table, dict) else {}
+    return tables
+
+
+def load_alias_runtime(path: Path | str | None = None, *, refresh: bool = False):
+    """Return the alias tables, reading the runtime file at most once."""
+
+    global _RUNTIME_CACHE
+    if path is not None or refresh or _RUNTIME_CACHE is None:
+        _RUNTIME_CACHE = _read_runtime(Path(path) if path is not None else alias_runtime_path())
+    return _RUNTIME_CACHE
+
+
+def public_event_aliases() -> Mapping[str, Sequence[str]]:
+    return load_alias_runtime()["event_aliases"]
+
+
+def public_venue_aliases() -> Mapping[str, Sequence[str]]:
+    return load_alias_runtime()["venue_aliases"]
 
 
 def find_alias_in_text(
@@ -110,8 +103,8 @@ def event_alias_key(canonical: object) -> str:
 
 
 def find_event_alias(canonical: object, text: object, normalize: Callable[[object], str]) -> str:
-    return find_alias_in_text(event_alias_key(canonical), text, normalize, PUBLIC_EVENT_ALIASES)
+    return find_alias_in_text(event_alias_key(canonical), text, normalize, public_event_aliases())
 
 
 def find_venue_alias(canonical: object, text: object, normalize: Callable[[object], str]) -> str:
-    return find_alias_in_text(canonical, text, normalize, PUBLIC_VENUE_ALIASES)
+    return find_alias_in_text(canonical, text, normalize, public_venue_aliases())
