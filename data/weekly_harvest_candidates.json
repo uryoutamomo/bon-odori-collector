@@ -1,10 +1,10 @@
 {
   "generated_by": "build_weekly_harvest_candidates.py",
-  "generated_at": "2026-07-28T09:00:49.956649+00:00",
-  "since": "2026-07-25T09:00:49.956649+00:00",
+  "generated_at": "2026-07-28T13:17:38.612568+00:00",
+  "since": "2026-07-25T13:17:38.612568+00:00",
   "days": 3,
-  "voice_count": 3007,
-  "candidate_count": 205,
+  "voice_count": 3452,
+  "candidate_count": 209,
   "rows": [
     {
       "category": "曲×会場共起",
@@ -230,50 +230,6 @@
     {
       "category": "曲×会場共起",
       "type": "共起",
-      "term": "大東京音頭 × 北柏木公園",
-      "song_name": "大東京音頭",
-      "venue": "北柏木公園",
-      "event_candidates": [],
-      "interpretation": "北柏木公園で大東京音頭が言及された可能性",
-      "confidence": "要レビュー",
-      "reason": "同一voice内に曲名候補と既知会場名が共起。",
-      "evidence_count": 1,
-      "evidence": [
-        {
-          "url": "https://x.com/2tsuo_g/status/2080992024740958711",
-          "date": "2026-07-25T12:22:16+00:00",
-          "account": "@2tsuo_g",
-          "text": "122件目 北新宿4丁目町会 盆おどり大会(北柏木公園) 下北沢から梯子🪜1部の途中から2部の中止まで！土砂降りの中、「東京音頭」「大東京音頭」をかけてくれて踊った🤣 「マツケンサンバ」はここオリジナル？の振付で\"マツケン棒\"なるもの振ってお手本が踊ってました！ https://t.co/0wgTtGywRT"
-        }
-      ],
-      "evidence_text": "122件目 北新宿4丁目町会 盆おどり大会(北柏木公園) 下北沢から梯子🪜1部の途中から2部の中止まで！土砂降りの中、「東京音頭」「大東京音頭」をかけてくれて踊った🤣 「マツケンサンバ」はここオリジナル？の振付で\"マツケン棒\"なるもの振ってお手本が踊ってました！ https://t.co/0wgTtGywRT",
-      "evidence_url": "https://x.com/2tsuo_g/status/2080992024740958711"
-    },
-    {
-      "category": "曲×会場共起",
-      "type": "共起",
-      "term": "東京音頭 × 北柏木公園",
-      "song_name": "東京音頭",
-      "venue": "北柏木公園",
-      "event_candidates": [],
-      "interpretation": "北柏木公園で東京音頭が言及された可能性",
-      "confidence": "要レビュー",
-      "reason": "同一voice内に曲名候補と既知会場名が共起。",
-      "evidence_count": 1,
-      "evidence": [
-        {
-          "url": "https://x.com/2tsuo_g/status/2080992024740958711",
-          "date": "2026-07-25T12:22:16+00:00",
-          "account": "@2tsuo_g",
-          "text": "122件目 北新宿4丁目町会 盆おどり大会(北柏木公園) 下北沢から梯子🪜1部の途中から2部の中止まで！土砂降りの中、「東京音頭」「大東京音頭」をかけてくれて踊った🤣 「マツケンサンバ」はここオリジナル？の振付で\"マツケン棒\"なるもの振ってお手本が踊ってました！ https://t.co/0wgTtGywRT"
-        }
-      ],
-      "evidence_text": "122件目 北新宿4丁目町会 盆おどり大会(北柏木公園) 下北沢から梯子🪜1部の途中から2部の中止まで！土砂降りの中、「東京音頭」「大東京音頭」をかけてくれて踊った🤣 「マツケンサンバ」はここオリジナル？の振付で\"マツケン棒\"なるもの振ってお手本が踊ってました！ https://t.co/0wgTtGywRT",
-      "evidence_url": "https://x.com/2tsuo_g/status/2080992024740958711"
-    },
-    {
-      "category": "曲×会場共起",
-      "type": "共起",
       "term": "河内音頭 × 築地本願寺",
       "song_name": "河内音頭",
       "venue": "築地本願寺",
@@ -402,42 +358,85 @@
       "term": "東京音頭",
       "interpretation": "東京音頭",
       "confidence": "要レビュー",
-      "reason": "曲名抽出器で検出: known_song_context",
+      "reason": "曲名抽出器で検出: known_song_context, song_suffix_near_context",
       "evidence_count": 23,
       "evidence": [
         {
-          "url": "https://x.com/hayashirice2022/status/2081949858144133383",
-          "date": "2026-07-28T03:48:21+00:00",
-          "account": "@hayashirice2022",
-          "text": "@ABETakashiOki デマで論点ずらすのは新聞記者として恥ずかしいで、アベちゃん コロナ禍に集会で踊ったことへの行政の長への批判と、玉城氏の踊りが下手だとという2点やで。沖縄は何も関係あらへん アベちゃんが東京音頭で下手くそな盆踊り披露しても、東京は全く嘲笑も差別もされてへんやろ #アイアムノットアベ"
+          "url": "https://www.youtube.com/watch?v=i-Gz-m8gMNM",
+          "date": "2026-07-28T09:30:16+00:00",
+          "account": "@wadaikoCH",
+          "text": "沼南盆踊り2026年7月20日に開催された 「神楽坂夏まつり盆踊り」初日の様子をお届けします。 神楽坂の石畳と提灯の灯りに包まれ、多くの踊り手で賑わう会場。 軽快な太鼓のリズムと、神楽坂ならではの粋な雰囲気をお楽しみください！ #盆踊り #神楽坂 #東京音頭 #神楽坂夏まつり #日本の祭り #和太鼓 神楽坂盆踊り １東京音頭 https://youtu.be/ifoY3c2In8o ２大東京音頭 https://youtu.be/7RT7OvLaVrE ３炭坑節 https://youtu.be/RHBPa97oQh0 ４八木節 https://youtu.be/rQB_pf4XMgs ５ゆかた音頭 https://youtu.be/nrQ3Myn_5lc ６ドンパン節 https://youtu.be/2TejCSfYHVQ ７オバＱ音頭 https://youtu.be/NThHl0uSadI ８バハマ・ママ https://youtu.be/Xaww5YsVFKY ９真っ赤な太陽 https://youtu.be/rnzPep1f2vg 10どうでもいいよ https://you"
         },
         {
-          "url": "https://x.com/akiruno_iju/status/2081984450154676433",
-          "date": "2026-07-28T06:05:48+00:00",
-          "account": "@akiruno_iju",
-          "text": "【市内の様子】 あきる野市では例年7月頃に各地区で納涼祭が行われています🏮町内会・自治会や子供会などが中心となって、かき氷、焼きそば、駄菓子などを提供する模擬店を運営し、こどもと大人が一堂に集まります。盆踊りも行われ、東京音頭、炭坑節のほか、あきる野ならではの（↓続く） https://t.co/8ruxmZoeH9"
+          "url": "https://www.youtube.com/watch?v=XFal6R3wylA",
+          "date": "2026-07-28T09:00:06+00:00",
+          "account": "@wadaikoCH",
+          "text": "沼南盆踊り2026年7月20日に開催された 「神楽坂夏まつり盆踊り」初日の様子をお届けします。 神楽坂の石畳と提灯の灯りに包まれ、多くの踊り手で賑わう会場。 軽快な太鼓のリズムと、神楽坂ならではの粋な雰囲気をお楽しみください！ #盆踊り #神楽坂 #東京音頭 #神楽坂夏まつり #日本の祭り #和太鼓 神楽坂盆踊り １東京音頭 https://youtu.be/ifoY3c2In8o ２大東京音頭 https://youtu.be/7RT7OvLaVrE ３炭坑節 https://youtu.be/RHBPa97oQh0 ４八木節 https://youtu.be/rQB_pf4XMgs ５ゆかた音頭 https://youtu.be/nrQ3Myn_5lc ６ドンパン節 https://youtu.be/2TejCSfYHVQ ７オバＱ音頭 https://youtu.be/NThHl0uSadI ８バハマ・ママ https://youtu.be/Xaww5YsVFKY ９真っ赤な太陽 https://youtu.be/rnzPep1f2vg 10どうでもいいよ https://you"
         },
         {
-          "url": "https://x.com/sekine_komei/status/2081867778592833797",
-          "date": "2026-07-27T22:22:12+00:00",
-          "account": "@sekine_komei",
-          "text": "🏮週末の盆踊り大会へ🏃‍♂️② 一之江上親交会町会へおじゃましました。 黙々と警備と交通整理をしていただいている役員の皆さま、 盆踊りを皆で盛り上げようとされている皆さまに頭が下がります👏ありがとうございます。 皆さまに誘われ、江戸川音頭や東京音頭、桜音頭、炭坑節等々、下手くそながら私も5曲踊りました。汗💦だくになりました💦 暑さ対策、皆さま気をつけて！"
+          "url": "https://x.com/hikoukimono/status/2082065991266336992",
+          "date": "2026-07-28T11:29:49+00:00",
+          "account": "@hikoukimono",
+          "text": "@6gp7PAjvkTGzPw2 隊員による余興（ちんどん屋） 時間：①17:30～17:50 / ②18:10～18:30 キッズダンス「GLOW」 時間： 盆踊り（やぐら周辺） 時間： 東京音頭 •炭坑節 •ドラえもん音頭 •アンパンマン音頭 隊員によるステージパフォーマンス（マツケンサンバ改） 時間が去年より短いので、不明です"
         },
         {
-          "url": "https://x.com/oson_kimono/status/2081745157318488464",
-          "date": "2026-07-27T14:14:57+00:00",
-          "account": "@oson_kimono",
-          "text": "@lang_pen92698 私は炭坑節、東京音頭しか踊れない状態で行きました！ 色んな練習会に教わりに行かせて頂いていますが、どこも初心者でも優しい印象です❣️今日は、練習会でお会いしてる方から 盆踊り会場でも踊りながら教えていただきました😊"
+          "url": "https://x.com/nippon_edit/status/2082055357401338215",
+          "date": "2026-07-28T10:47:34+00:00",
+          "account": "@nippon_edit",
+          "text": "【第7回渋谷盆踊り2026】 【イベント情報：東京】 開催日時：2026年8月8日（土）18:00～21:30 会場：SHIBUYA109前イベントスペース、道玄坂、文化村通り一帯 住所：東京都渋谷区道玄坂2丁目29 アクセス： ・渋谷駅から徒歩4分 ・神泉駅から徒歩7分 交通規制： ・規制時間：16:30～22:30 ・規制区域：道玄坂通り、文化村通り ・渋谷駅前のスクランブル交差点西側、道玄坂、文化村通りは歩行者専用道路となる イベント内容： ・「渋谷音頭」などのオリジナル曲から定番の東京音頭まで流れる ・射的やスーパーボールすくいなどの縁日屋台 ・多彩なグルメを楽しめるキッチンカー出店 ・SHIBUYA109前の道路上に櫓を建て、老若男女が手を取り合いながら盆踊り 入場：無料・予約不要 歴史： ・2017年（第1回）から開催 ・「渋谷の街の人たちと渋谷に来る人たちの交流の場を作る」をテーマ ・渋谷の夏の風物詩として定着 天気：荒天時は中止となる場合あり ※公式サイトで情報をご確認ください。 *Please check the comment section for"
         },
         {
-          "url": "https://x.com/CavpuakkSgLRjWZ/status/2081749545520873834",
-          "date": "2026-07-27T14:32:23+00:00",
-          "account": "@CavpuakkSgLRjWZ",
-          "text": "今夜は仕事後に近所の盆踊り大会へ💃 踊ったわー♫ ここは歴史ある盆踊り大会なので、曲も幅広い！ 炭坑節、東京音頭、大東京音頭、21世紀音頭、八木節、ダンシング・ヒーロー、スカイツリー音頭、交通安全音頭、… 他にも沢山♫ 明日も盆踊り大会はあるので楽しむぞ😆 https://t.co/Tf55okfvjH"
+          "url": "https://x.com/Very_JAPAN/status/2082038105302012000",
+          "date": "2026-07-28T09:39:01+00:00",
+          "account": "@Very_JAPAN",
+          "text": "青山表参道 善光寺 盆踊り！狭い境内は外国人観光客も立ち寄り凄い人！謝恩納涼盆踊り大会 Tokyo,Aoyama Omotesando BonOdori 2026 DJI Osmo Pocket 4P https://t.co/wZvWcNjFa8 炭坑節、東京みなと音頭、にっぽんチャチャチャ、おこさ節、大江戸東京音頭など #盆踊り #表参道 https://t.co/hO31OoExaf"
         }
       ],
-      "evidence_text": "@ABETakashiOki デマで論点ずらすのは新聞記者として恥ずかしいで、アベちゃん コロナ禍に集会で踊ったことへの行政の長への批判と、玉城氏の踊りが下手だとという2点やで。沖縄は何も関係あらへん アベちゃんが東京音頭で下手くそな盆踊り披露しても、東京は全く嘲笑も差別もされてへんやろ #アイアムノットアベ\n---\n【市内の様子】 あきる野市では例年7月頃に各地区で納涼祭が行われています🏮町内会・自治会や子供会などが中心となって、かき氷、焼きそば、駄菓子などを提供する模擬店を運営し、こどもと大人が一堂に集まります。盆踊りも行われ、東京音頭、炭坑節のほか、あきる野ならではの（↓続く） https://t.co/8ruxmZoeH9\n---\n🏮週末の盆踊り大会へ🏃‍♂️② 一之江上親交会町会へおじゃましました。 黙々と警備と交通整理をしていただいている役員の皆さま、 盆踊りを皆で盛り上げようとされている皆さまに頭が下がります👏ありがとうございます。 皆さまに誘われ、江戸川音頭や東京音頭、桜音頭、炭坑節等々、下手くそながら私も5曲踊りました。汗💦だくになりました💦 暑さ対策、皆さま気をつけて！",
-      "evidence_url": "https://x.com/hayashirice2022/status/2081949858144133383"
+      "evidence_text": "沼南盆踊り2026年7月20日に開催された 「神楽坂夏まつり盆踊り」初日の様子をお届けします。 神楽坂の石畳と提灯の灯りに包まれ、多くの踊り手で賑わう会場。 軽快な太鼓のリズムと、神楽坂ならではの粋な雰囲気をお楽しみください！ #盆踊り #神楽坂 #東京音頭 #神楽坂夏まつり #日本の祭り #和太鼓 神楽坂盆踊り １東京音頭 https://youtu.be/ifoY3c2In8o ２大東京音頭 https://youtu.be/7RT7OvLaVrE ３炭坑節 https://youtu.be/RHBPa97oQh0 ４八木節 https://youtu.be/rQB_pf4XMgs ５ゆかた音頭 https://youtu.be/nrQ3Myn_5lc ６ドンパン節 https://youtu.be/2TejCSfYHVQ ７オバＱ音頭 https://youtu.be/NThHl0uSadI ８バハマ・ママ https://youtu.be/Xaww5YsVFKY ９真っ赤な太陽 https://youtu.be/rnzPep1f2vg 10どうでもいいよ https://you\n---\n沼南盆踊り2026年7月20日に開催された 「神楽坂夏まつり盆踊り」初日の様子をお届けします。 神楽坂の石畳と提灯の灯りに包まれ、多くの踊り手で賑わう会場。 軽快な太鼓のリズムと、神楽坂ならではの粋な雰囲気をお楽しみください！ #盆踊り #神楽坂 #東京音頭 #神楽坂夏まつり #日本の祭り #和太鼓 神楽坂盆踊り １東京音頭 https://youtu.be/ifoY3c2In8o ２大東京音頭 https://youtu.be/7RT7OvLaVrE ３炭坑節 https://youtu.be/RHBPa97oQh0 ４八木節 https://youtu.be/rQB_pf4XMgs ５ゆかた音頭 https://youtu.be/nrQ3Myn_5lc ６ドンパン節 https://youtu.be/2TejCSfYHVQ ７オバＱ音頭 https://youtu.be/NThHl0uSadI ８バハマ・ママ https://youtu.be/Xaww5YsVFKY ９真っ赤な太陽 https://youtu.be/rnzPep1f2vg 10どうでもいいよ https://you\n---\n@6gp7PAjvkTGzPw2 隊員による余興（ちんどん屋） 時間：①17:30～17:50 / ②18:10～18:30 キッズダンス「GLOW」 時間： 盆踊り（やぐら周辺） 時間： 東京音頭 •炭坑節 •ドラえもん音頭 •アンパンマン音頭 隊員によるステージパフォーマンス（マツケンサンバ改） 時間が去年より短いので、不明です",
+      "evidence_url": "https://www.youtube.com/watch?v=i-Gz-m8gMNM"
+    },
+    {
+      "category": "曲候補",
+      "type": "曲名",
+      "term": "河内音頭",
+      "interpretation": "河内音頭",
+      "confidence": "要レビュー",
+      "reason": "曲名抽出器で検出: known_song_context",
+      "evidence_count": 22,
+      "evidence": [
+        {
+          "url": "https://x.com/miyukimimisato/status/2082084948308291838",
+          "date": "2026-07-28T12:45:09+00:00",
+          "account": "@miyukimimisato",
+          "text": "いよいよ明日、明後日は 🏮すみだ錦糸町河内音頭大盆踊り🏮 すずめのティアーズはお囃子します🐦🐦"
+        },
+        {
+          "url": "https://x.com/agatha_2222/status/2082078421472178645",
+          "date": "2026-07-28T12:19:13+00:00",
+          "account": "@agatha_2222",
+          "text": "いよいよ明日から2日間、【すみだ錦糸町河内音頭大盆踊り】！出演順も公開されております。💃🕺🏮 江州音頭は大阪より辺高正 師、桜川行司（音頭＆ギター）さんが出演されます。中西レモンは楽日、7/30の中入り後に音頭を取ります。すずめのティアーズはオハヤシやります。ぜひ踊りに来てください！ https://t.co/HtsisLJguy"
+        },
+        {
+          "url": "https://x.com/sayamabico/status/2082062589706600566",
+          "date": "2026-07-28T11:16:18+00:00",
+          "account": "@sayamabico",
+          "text": "【📢 最新情報📰】 【2026年8月15日】さやか公園で「納涼 盆踊り大会」が開催されます！ https://t.co/cd0lHiER5T 2026年8月15日(土)、大阪狭山市のさやか公園で「納涼 盆踊り大会」が開かれます🏮✨ つかさ会一行による民謡河内音頭や江州音頭で、夏の素敵な夜を過ごしませんか？🎶 雨天時は8月16日(日)に延期されますのでご安心くださいね。 記事はこちらです👇 https://t.co/cd0lHiER5T"
+        },
+        {
+          "url": "https://x.com/ryougokumotsuni/status/2082023120857415922",
+          "date": "2026-07-28T08:39:28+00:00",
+          "account": "@ryougokumotsuni",
+          "text": "【イベントの出店案内】 7/29(水)と7/30(木)は『第44回すみだ錦糸町河内音頭大盆踊り』に出店します！ 時間：17:00〜21:00 場所：竪川親水公園特設会場 (首都高速7号線高架下) 暑い夏を吹き飛ばすよう、 激しく踊って！飲んで！食べましょう！ 2日間とも本会場にてテント出店です🎶 #両国もつ煮 https://t.co/gXV1rSE1G9"
+        },
+        {
+          "url": "https://x.com/keloyama/status/2081990049324048743",
+          "date": "2026-07-28T06:28:03+00:00",
+          "account": "@keloyama",
+          "text": "なんと明日は待ちに待った、 第44回すみだ錦糸町河内音頭大盆踊り #錦糸町河内音頭 #河内音頭 #江州音頭 #泉州音頭 https://t.co/qTxvWTgwea"
+        }
+      ],
+      "evidence_text": "いよいよ明日、明後日は 🏮すみだ錦糸町河内音頭大盆踊り🏮 すずめのティアーズはお囃子します🐦🐦\n---\nいよいよ明日から2日間、【すみだ錦糸町河内音頭大盆踊り】！出演順も公開されております。💃🕺🏮 江州音頭は大阪より辺高正 師、桜川行司（音頭＆ギター）さんが出演されます。中西レモンは楽日、7/30の中入り後に音頭を取ります。すずめのティアーズはオハヤシやります。ぜひ踊りに来てください！ https://t.co/HtsisLJguy\n---\n【📢 最新情報📰】 【2026年8月15日】さやか公園で「納涼 盆踊り大会」が開催されます！ https://t.co/cd0lHiER5T 2026年8月15日(土)、大阪狭山市のさやか公園で「納涼 盆踊り大会」が開かれます🏮✨ つかさ会一行による民謡河内音頭や江州音頭で、夏の素敵な夜を過ごしませんか？🎶 雨天時は8月16日(日)に延期されますのでご安心くださいね。 記事はこちらです👇 https://t.co/cd0lHiER5T",
+      "evidence_url": "https://x.com/miyukimimisato/status/2082084948308291838"
     },
     {
       "category": "曲候補",
@@ -446,8 +445,20 @@
       "interpretation": "ダンシングヒーロー",
       "confidence": "要レビュー",
       "reason": "曲名抽出器で検出: known_song_context",
-      "evidence_count": 19,
+      "evidence_count": 20,
       "evidence": [
+        {
+          "url": "https://x.com/S_Y_19841102/status/2082076898629468566",
+          "date": "2026-07-28T12:13:10+00:00",
+          "account": "@S_Y_19841102",
+          "text": "@vivi_ha_usagiNS 今の盆踊りはダンシングヒーロー流れるんすねwww みんな浴衣来て屋台楽しんで、ベビちんも沢山いましたよ😊"
+        },
+        {
+          "url": "https://x.com/hacoron/status/2082065952829759817",
+          "date": "2026-07-28T11:29:40+00:00",
+          "account": "@hacoron",
+          "text": "長女がお風呂でダンシングヒーロー聴いててウケる😂盆踊りの季節ですものね～"
+        },
         {
           "url": "https://www.youtube.com/watch?v=rU52ptPOrHg",
           "date": "2026-07-27T14:28:06+00:00",
@@ -465,65 +476,10 @@
           "date": "2026-07-28T07:12:52+00:00",
           "account": "@rdlf",
           "text": "昨年だかに開催している日にたまたま渋谷にいたけど、盆踊りでダンシングヒーローが流れて衝撃を受けたこと思い出した。この曲が盆踊りの定番曲になるとは夢にも思わんかった… https://t.co/9YKmxJqyht"
-        },
-        {
-          "url": "https://x.com/nishioka_18/status/2081963788514041962",
-          "date": "2026-07-28T04:43:42+00:00",
-          "account": "@nishioka_18",
-          "text": "筋肉以外の週末… 盆踊りでは、川崎おどり、マツケンサンバ、ズンドコ節、ビューティフルサンデー、ダンシングヒーロー、ジャンボリーミッキーなどを踊りました✨ #西岡よしたか #国民民主党 #神奈川18区 https://t.co/YTmHE5NZ3m"
-        },
-        {
-          "url": "https://x.com/ettsuetsuetsu/status/2081896499181658428",
-          "date": "2026-07-28T00:16:19+00:00",
-          "account": "@ettsuetsuetsu",
-          "text": "@mzn_desuyo みずのさん、ダンシングヒーローは一曲の半分も輪の中に入っていれば、基本的には誰でも踊れるくらい簡単な盆踊りだと思いますぞ！！ そもそも盆踊りは輪の中に入って近くの人見ながら真似するだけで成り立つんで、輪の中に入ったらすでに楽しいじょ！！！"
         }
       ],
-      "evidence_text": "#ダンシングヒーロー #荻野目洋子 #祭り #表参道 #青山 #盆踊り #善光寺 #青山表参道商店会納涼盆踊り大会 【青山善光寺盆踊り 2026】 開催日：7月26日（日）・7月27日（月） 時間：午後5時～9時 盆踊り開始：午後6時30分から 場所：青山善光寺境内\n---\n@a3YwFJsWrfXpObT 昨日は無かったですー！ しかも ダンシングヒーローも 生で見たこと無いです🤣 盆踊り 絶対踊らなかったから 親や地元の友達とか見たら びっくりするwww\n---\n昨年だかに開催している日にたまたま渋谷にいたけど、盆踊りでダンシングヒーローが流れて衝撃を受けたこと思い出した。この曲が盆踊りの定番曲になるとは夢にも思わんかった… https://t.co/9YKmxJqyht",
-      "evidence_url": "https://www.youtube.com/watch?v=rU52ptPOrHg"
-    },
-    {
-      "category": "曲候補",
-      "type": "曲名",
-      "term": "河内音頭",
-      "interpretation": "河内音頭",
-      "confidence": "要レビュー",
-      "reason": "曲名抽出器で検出: known_song_context",
-      "evidence_count": 19,
-      "evidence": [
-        {
-          "url": "https://x.com/ryougokumotsuni/status/2082023120857415922",
-          "date": "2026-07-28T08:39:28+00:00",
-          "account": "@ryougokumotsuni",
-          "text": "【イベントの出店案内】 7/29(水)と7/30(木)は『第44回すみだ錦糸町河内音頭大盆踊り』に出店します！ 時間：17:00〜21:00 場所：竪川親水公園特設会場 (首都高速7号線高架下) 暑い夏を吹き飛ばすよう、 激しく踊って！飲んで！食べましょう！ 2日間とも本会場にてテント出店です🎶 #両国もつ煮 https://t.co/gXV1rSE1G9"
-        },
-        {
-          "url": "https://x.com/keloyama/status/2081990049324048743",
-          "date": "2026-07-28T06:28:03+00:00",
-          "account": "@keloyama",
-          "text": "なんと明日は待ちに待った、 第44回すみだ錦糸町河内音頭大盆踊り #錦糸町河内音頭 #河内音頭 #江州音頭 #泉州音頭 https://t.co/qTxvWTgwea"
-        },
-        {
-          "url": "https://x.com/nemui_haito/status/2081948528352653732",
-          "date": "2026-07-28T03:43:04+00:00",
-          "account": "@nemui_haito",
-          "text": "去年の今日は姉妹で万博の大屋根リング盆踊り大会に参加してました♪ 河内音頭あんな真面目に踊ったの初めてだった🤭 周りの方も皆さんも真剣だったし、話しかけてくださった方が今日の為に駆けつけたとおっしゃっていて盆踊り界隈の熱さを知りました🔥 #EXPO2025 https://t.co/qLulftQblI"
-        },
-        {
-          "url": "https://x.com/nana20090623/status/2081928319780667655",
-          "date": "2026-07-28T02:22:46+00:00",
-          "account": "@nana20090623",
-          "text": "明日の錦糸町の 河内音頭盆踊り 誰も一緒に行く人居ない… 誰かと行きたいのにナァ…"
-        },
-        {
-          "url": "https://x.com/mipopo1969/status/2081927132645826940",
-          "date": "2026-07-28T02:18:03+00:00",
-          "account": "@mipopo1969",
-          "text": "毎年わたしは弥五郎が、または北向きの虎の虎が、提灯たよりに帰ってきてぼたもち食べる様を思い浮かべてここにいます。 明日からです。ギター弾きます。 行っちゃった人全員来なさい。集合すること。河内音頭って盆踊りってそういうこと。"
-        }
-      ],
-      "evidence_text": "【イベントの出店案内】 7/29(水)と7/30(木)は『第44回すみだ錦糸町河内音頭大盆踊り』に出店します！ 時間：17:00〜21:00 場所：竪川親水公園特設会場 (首都高速7号線高架下) 暑い夏を吹き飛ばすよう、 激しく踊って！飲んで！食べましょう！ 2日間とも本会場にてテント出店です🎶 #両国もつ煮 https://t.co/gXV1rSE1G9\n---\nなんと明日は待ちに待った、 第44回すみだ錦糸町河内音頭大盆踊り #錦糸町河内音頭 #河内音頭 #江州音頭 #泉州音頭 https://t.co/qTxvWTgwea\n---\n去年の今日は姉妹で万博の大屋根リング盆踊り大会に参加してました♪ 河内音頭あんな真面目に踊ったの初めてだった🤭 周りの方も皆さんも真剣だったし、話しかけてくださった方が今日の為に駆けつけたとおっしゃっていて盆踊り界隈の熱さを知りました🔥 #EXPO2025 https://t.co/qLulftQblI",
-      "evidence_url": "https://x.com/ryougokumotsuni/status/2082023120857415922"
+      "evidence_text": "@vivi_ha_usagiNS 今の盆踊りはダンシングヒーロー流れるんすねwww みんな浴衣来て屋台楽しんで、ベビちんも沢山いましたよ😊\n---\n長女がお風呂でダンシングヒーロー聴いててウケる😂盆踊りの季節ですものね～\n---\n#ダンシングヒーロー #荻野目洋子 #祭り #表参道 #青山 #盆踊り #善光寺 #青山表参道商店会納涼盆踊り大会 【青山善光寺盆踊り 2026】 開催日：7月26日（日）・7月27日（月） 時間：午後5時～9時 盆踊り開始：午後6時30分から 場所：青山善光寺境内",
+      "evidence_url": "https://x.com/S_Y_19841102/status/2082076898629468566"
     },
     {
       "category": "曲候補",
@@ -535,6 +491,24 @@
       "evidence_count": 18,
       "evidence": [
         {
+          "url": "https://x.com/Miemie1313/status/2082070072378671429",
+          "date": "2026-07-28T11:46:02+00:00",
+          "account": "@Miemie1313",
+          "text": "18時30分から20時まで盆踊りの練習してきた!キッズ向け今どきダンスより炭坑節やらマツケンサンバみたいな何となく覚えてる曲は湧くねぇ。マツケンサンバおすすめ😂😂😂明日は太鼓練習だね。8月1日まで連日頑張るぞ!"
+        },
+        {
+          "url": "https://x.com/vN90YsNuGf80554/status/2082067838756606282",
+          "date": "2026-07-28T11:37:10+00:00",
+          "account": "@vN90YsNuGf80554",
+          "text": "掘って、掘って、また掘って、 担いで、担いで、押して、押して、 開いて、ととんがとん。 炭坑節の振りです🏮 たまに、日本の盆踊りに使われます。"
+        },
+        {
+          "url": "https://x.com/hikoukimono/status/2082065991266336992",
+          "date": "2026-07-28T11:29:49+00:00",
+          "account": "@hikoukimono",
+          "text": "@6gp7PAjvkTGzPw2 隊員による余興（ちんどん屋） 時間：①17:30～17:50 / ②18:10～18:30 キッズダンス「GLOW」 時間： 盆踊り（やぐら周辺） 時間： 東京音頭 •炭坑節 •ドラえもん音頭 •アンパンマン音頭 隊員によるステージパフォーマンス（マツケンサンバ改） 時間が去年より短いので、不明です"
+        },
+        {
           "url": "https://x.com/satonaka_touko/status/2082021980648387014",
           "date": "2026-07-28T08:34:56+00:00",
           "account": "@satonaka_touko",
@@ -545,28 +519,10 @@
           "date": "2026-07-28T01:40:17+00:00",
           "account": "@tanakapy",
           "text": "浴衣で炭坑節に合わせて盆踊り（着物ショー２０２６） https://t.co/rUQp4cv7Cn @YouTubeより"
-        },
-        {
-          "url": "https://x.com/akiruno_iju/status/2081984450154676433",
-          "date": "2026-07-28T06:05:48+00:00",
-          "account": "@akiruno_iju",
-          "text": "【市内の様子】 あきる野市では例年7月頃に各地区で納涼祭が行われています🏮町内会・自治会や子供会などが中心となって、かき氷、焼きそば、駄菓子などを提供する模擬店を運営し、こどもと大人が一堂に集まります。盆踊りも行われ、東京音頭、炭坑節のほか、あきる野ならではの（↓続く） https://t.co/8ruxmZoeH9"
-        },
-        {
-          "url": "https://x.com/sekine_komei/status/2081867778592833797",
-          "date": "2026-07-27T22:22:12+00:00",
-          "account": "@sekine_komei",
-          "text": "🏮週末の盆踊り大会へ🏃‍♂️② 一之江上親交会町会へおじゃましました。 黙々と警備と交通整理をしていただいている役員の皆さま、 盆踊りを皆で盛り上げようとされている皆さまに頭が下がります👏ありがとうございます。 皆さまに誘われ、江戸川音頭や東京音頭、桜音頭、炭坑節等々、下手くそながら私も5曲踊りました。汗💦だくになりました💦 暑さ対策、皆さま気をつけて！"
-        },
-        {
-          "url": "https://x.com/oson_kimono/status/2081745157318488464",
-          "date": "2026-07-27T14:14:57+00:00",
-          "account": "@oson_kimono",
-          "text": "@lang_pen92698 私は炭坑節、東京音頭しか踊れない状態で行きました！ 色んな練習会に教わりに行かせて頂いていますが、どこも初心者でも優しい印象です❣️今日は、練習会でお会いしてる方から 盆踊り会場でも踊りながら教えていただきました😊"
         }
       ],
-      "evidence_text": "今好きな人のこと、出会った時ぜんぜん好きになると思わなくてカラオケで炭坑節歌っちゃったや 12月に盆踊り～って\n---\n浴衣で炭坑節に合わせて盆踊り（着物ショー２０２６） https://t.co/rUQp4cv7Cn @YouTubeより\n---\n【市内の様子】 あきる野市では例年7月頃に各地区で納涼祭が行われています🏮町内会・自治会や子供会などが中心となって、かき氷、焼きそば、駄菓子などを提供する模擬店を運営し、こどもと大人が一堂に集まります。盆踊りも行われ、東京音頭、炭坑節のほか、あきる野ならではの（↓続く） https://t.co/8ruxmZoeH9",
-      "evidence_url": "https://x.com/satonaka_touko/status/2082021980648387014"
+      "evidence_text": "18時30分から20時まで盆踊りの練習してきた!キッズ向け今どきダンスより炭坑節やらマツケンサンバみたいな何となく覚えてる曲は湧くねぇ。マツケンサンバおすすめ😂😂😂明日は太鼓練習だね。8月1日まで連日頑張るぞ!\n---\n掘って、掘って、また掘って、 担いで、担いで、押して、押して、 開いて、ととんがとん。 炭坑節の振りです🏮 たまに、日本の盆踊りに使われます。\n---\n@6gp7PAjvkTGzPw2 隊員による余興（ちんどん屋） 時間：①17:30～17:50 / ②18:10～18:30 キッズダンス「GLOW」 時間： 盆踊り（やぐら周辺） 時間： 東京音頭 •炭坑節 •ドラえもん音頭 •アンパンマン音頭 隊員によるステージパフォーマンス（マツケンサンバ改） 時間が去年より短いので、不明です",
+      "evidence_url": "https://x.com/Miemie1313/status/2082070072378671429"
     },
     {
       "category": "曲候補",
@@ -574,9 +530,21 @@
       "term": "大東京音頭",
       "interpretation": "大東京音頭",
       "confidence": "要レビュー",
-      "reason": "曲名抽出器で検出: known_song_context, song_suffix_near_context",
-      "evidence_count": 10,
+      "reason": "曲名抽出器で検出: song_suffix_near_context",
+      "evidence_count": 9,
       "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=i-Gz-m8gMNM",
+          "date": "2026-07-28T09:30:16+00:00",
+          "account": "@wadaikoCH",
+          "text": "沼南盆踊り2026年7月20日に開催された 「神楽坂夏まつり盆踊り」初日の様子をお届けします。 神楽坂の石畳と提灯の灯りに包まれ、多くの踊り手で賑わう会場。 軽快な太鼓のリズムと、神楽坂ならではの粋な雰囲気をお楽しみください！ #盆踊り #神楽坂 #東京音頭 #神楽坂夏まつり #日本の祭り #和太鼓 神楽坂盆踊り １東京音頭 https://youtu.be/ifoY3c2In8o ２大東京音頭 https://youtu.be/7RT7OvLaVrE ３炭坑節 https://youtu.be/RHBPa97oQh0 ４八木節 https://youtu.be/rQB_pf4XMgs ５ゆかた音頭 https://youtu.be/nrQ3Myn_5lc ６ドンパン節 https://youtu.be/2TejCSfYHVQ ７オバＱ音頭 https://youtu.be/NThHl0uSadI ８バハマ・ママ https://youtu.be/Xaww5YsVFKY ９真っ赤な太陽 https://youtu.be/rnzPep1f2vg 10どうでもいいよ https://you"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=XFal6R3wylA",
+          "date": "2026-07-28T09:00:06+00:00",
+          "account": "@wadaikoCH",
+          "text": "沼南盆踊り2026年7月20日に開催された 「神楽坂夏まつり盆踊り」初日の様子をお届けします。 神楽坂の石畳と提灯の灯りに包まれ、多くの踊り手で賑わう会場。 軽快な太鼓のリズムと、神楽坂ならではの粋な雰囲気をお楽しみください！ #盆踊り #神楽坂 #東京音頭 #神楽坂夏まつり #日本の祭り #和太鼓 神楽坂盆踊り １東京音頭 https://youtu.be/ifoY3c2In8o ２大東京音頭 https://youtu.be/7RT7OvLaVrE ３炭坑節 https://youtu.be/RHBPa97oQh0 ４八木節 https://youtu.be/rQB_pf4XMgs ５ゆかた音頭 https://youtu.be/nrQ3Myn_5lc ６ドンパン節 https://youtu.be/2TejCSfYHVQ ７オバＱ音頭 https://youtu.be/NThHl0uSadI ８バハマ・ママ https://youtu.be/Xaww5YsVFKY ９真っ赤な太陽 https://youtu.be/rnzPep1f2vg 10どうでもいいよ https://you"
+        },
         {
           "url": "https://x.com/fried_wakame/status/2081921411803959372",
           "date": "2026-07-28T01:55:19+00:00",
@@ -594,22 +562,10 @@
           "date": "2026-07-27T09:30:13+00:00",
           "account": "@wadaikoCH",
           "text": "沼南盆踊り2026年7月20日に開催された 「神楽坂夏まつり盆踊り」初日の様子をお届けします。 神楽坂の石畳と提灯の灯りに包まれ、多くの踊り手で賑わう会場。 軽快な太鼓のリズムと、神楽坂ならではの粋な雰囲気をお楽しみください！ #盆踊り #神楽坂 #東京音頭 #神楽坂夏まつり #日本の祭り #和太鼓 神楽坂盆踊り １東京音頭 https://youtu.be/ifoY3c2In8o ２大東京音頭 https://youtu.be/7RT7OvLaVrE ３炭坑節 https://youtu.be/RHBPa97oQh0 ４八木節 https://youtu.be/rQB_pf4XMgs ５ゆかた音頭 https://youtu.be/nrQ3Myn_5lc ６ドンパン節 https://youtu.be/2TejCSfYHVQ ７オバＱ音頭 https://youtu.be/NThHl0uSadI ８バハマ・ママ https://youtu.be/Xaww5YsVFKY ９真っ赤な太陽 https://youtu.be/rnzPep1f2vg 10どうでもいいよ https://you"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=Xaww5YsVFKY",
-          "date": "2026-07-27T09:00:08+00:00",
-          "account": "@wadaikoCH",
-          "text": "沼南盆踊り2026年7月20日に開催された 「神楽坂夏まつり盆踊り」初日の様子をお届けします。 神楽坂の石畳と提灯の灯りに包まれ、多くの踊り手で賑わう会場。 軽快な太鼓のリズムと、神楽坂ならではの粋な雰囲気をお楽しみください！ #盆踊り #神楽坂 #東京音頭 #神楽坂夏まつり #日本の祭り #和太鼓 神楽坂盆踊り １東京音頭 https://youtu.be/ifoY3c2In8o ２大東京音頭 https://youtu.be/7RT7OvLaVrE ３炭坑節 https://youtu.be/RHBPa97oQh0 ４八木節 https://youtu.be/rQB_pf4XMgs ５ゆかた音頭 https://youtu.be/nrQ3Myn_5lc ６ドンパン節 https://youtu.be/2TejCSfYHVQ ７オバＱ音頭 https://youtu.be/NThHl0uSadI ８バハマ・ママ https://youtu.be/Xaww5YsVFKY ９真っ赤な太陽 https://youtu.be/rnzPep1f2vg 10どうでもいいよ https://you"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=NThHl0uSadI",
-          "date": "2026-07-26T09:30:12+00:00",
-          "account": "@wadaikoCH",
-          "text": "沼南盆踊り2026年7月20日に開催された 「神楽坂夏まつり盆踊り」初日の様子をお届けします。 神楽坂の石畳と提灯の灯りに包まれ、多くの踊り手で賑わう会場。 軽快な太鼓のリズムと、神楽坂ならではの粋な雰囲気をお楽しみください！ #盆踊り #神楽坂 #東京音頭 #神楽坂夏まつり #日本の祭り #和太鼓 神楽坂盆踊り １東京音頭 https://youtu.be/ifoY3c2In8o ２大東京音頭 https://youtu.be/7RT7OvLaVrE ３炭坑節 https://youtu.be/RHBPa97oQh0 ４八木節 https://youtu.be/rQB_pf4XMgs ５ゆかた音頭 https://youtu.be/nrQ3Myn_5lc ６ドンパン節 https://youtu.be/2TejCSfYHVQ ７オバＱ音頭 https://youtu.be/NThHl0uSadI ８バハマ・ママ https://youtu.be/Xaww5YsVFKY ９真っ赤な太陽 https://youtu.be/rnzPep1f2vg 10どうでもいいよ https://you"
         }
       ],
-      "evidence_text": "週末は用事の合間に下北沢と増上寺へ どちらも初参加🙌 下北沢はシモキタ音頭や代田ダイダラボッチ音頭など気になっていた曲が踊れて嬉しい😊大東京音頭が独特で好きでした♡ 増上寺も素敵なロケーションでかざぐるまやお地蔵さんを踊ることができました✨ 花笠音頭も慣れないけど楽しかったー🏵️ https://t.co/QrB6RcEQPO\n---\n今夜は仕事後に近所の盆踊り大会へ💃 踊ったわー♫ ここは歴史ある盆踊り大会なので、曲も幅広い！ 炭坑節、東京音頭、大東京音頭、21世紀音頭、八木節、ダンシング・ヒーロー、スカイツリー音頭、交通安全音頭、… 他にも沢山♫ 明日も盆踊り大会はあるので楽しむぞ😆 https://t.co/Tf55okfvjH\n---\n沼南盆踊り2026年7月20日に開催された 「神楽坂夏まつり盆踊り」初日の様子をお届けします。 神楽坂の石畳と提灯の灯りに包まれ、多くの踊り手で賑わう会場。 軽快な太鼓のリズムと、神楽坂ならではの粋な雰囲気をお楽しみください！ #盆踊り #神楽坂 #東京音頭 #神楽坂夏まつり #日本の祭り #和太鼓 神楽坂盆踊り １東京音頭 https://youtu.be/ifoY3c2In8o ２大東京音頭 https://youtu.be/7RT7OvLaVrE ３炭坑節 https://youtu.be/RHBPa97oQh0 ４八木節 https://youtu.be/rQB_pf4XMgs ５ゆかた音頭 https://youtu.be/nrQ3Myn_5lc ６ドンパン節 https://youtu.be/2TejCSfYHVQ ７オバＱ音頭 https://youtu.be/NThHl0uSadI ８バハマ・ママ https://youtu.be/Xaww5YsVFKY ９真っ赤な太陽 https://youtu.be/rnzPep1f2vg 10どうでもいいよ https://you",
-      "evidence_url": "https://x.com/fried_wakame/status/2081921411803959372"
+      "evidence_text": "沼南盆踊り2026年7月20日に開催された 「神楽坂夏まつり盆踊り」初日の様子をお届けします。 神楽坂の石畳と提灯の灯りに包まれ、多くの踊り手で賑わう会場。 軽快な太鼓のリズムと、神楽坂ならではの粋な雰囲気をお楽しみください！ #盆踊り #神楽坂 #東京音頭 #神楽坂夏まつり #日本の祭り #和太鼓 神楽坂盆踊り １東京音頭 https://youtu.be/ifoY3c2In8o ２大東京音頭 https://youtu.be/7RT7OvLaVrE ３炭坑節 https://youtu.be/RHBPa97oQh0 ４八木節 https://youtu.be/rQB_pf4XMgs ５ゆかた音頭 https://youtu.be/nrQ3Myn_5lc ６ドンパン節 https://youtu.be/2TejCSfYHVQ ７オバＱ音頭 https://youtu.be/NThHl0uSadI ８バハマ・ママ https://youtu.be/Xaww5YsVFKY ９真っ赤な太陽 https://youtu.be/rnzPep1f2vg 10どうでもいいよ https://you\n---\n沼南盆踊り2026年7月20日に開催された 「神楽坂夏まつり盆踊り」初日の様子をお届けします。 神楽坂の石畳と提灯の灯りに包まれ、多くの踊り手で賑わう会場。 軽快な太鼓のリズムと、神楽坂ならではの粋な雰囲気をお楽しみください！ #盆踊り #神楽坂 #東京音頭 #神楽坂夏まつり #日本の祭り #和太鼓 神楽坂盆踊り １東京音頭 https://youtu.be/ifoY3c2In8o ２大東京音頭 https://youtu.be/7RT7OvLaVrE ３炭坑節 https://youtu.be/RHBPa97oQh0 ４八木節 https://youtu.be/rQB_pf4XMgs ５ゆかた音頭 https://youtu.be/nrQ3Myn_5lc ６ドンパン節 https://youtu.be/2TejCSfYHVQ ７オバＱ音頭 https://youtu.be/NThHl0uSadI ８バハマ・ママ https://youtu.be/Xaww5YsVFKY ９真っ赤な太陽 https://youtu.be/rnzPep1f2vg 10どうでもいいよ https://you\n---\n週末は用事の合間に下北沢と増上寺へ どちらも初参加🙌 下北沢はシモキタ音頭や代田ダイダラボッチ音頭など気になっていた曲が踊れて嬉しい😊大東京音頭が独特で好きでした♡ 増上寺も素敵なロケーションでかざぐるまやお地蔵さんを踊ることができました✨ 花笠音頭も慣れないけど楽しかったー🏵️ https://t.co/QrB6RcEQPO",
+      "evidence_url": "https://www.youtube.com/watch?v=i-Gz-m8gMNM"
     },
     {
       "category": "曲候補",
@@ -617,9 +573,15 @@
       "term": "ドラえもん音頭",
       "interpretation": "ドラえもん音頭",
       "confidence": "要レビュー",
-      "reason": "曲名抽出器で検出: known_song_context",
-      "evidence_count": 5,
+      "reason": "曲名抽出器で検出: known_song_context, song_suffix_near_context",
+      "evidence_count": 6,
       "evidence": [
+        {
+          "url": "https://x.com/hikoukimono/status/2082065991266336992",
+          "date": "2026-07-28T11:29:49+00:00",
+          "account": "@hikoukimono",
+          "text": "@6gp7PAjvkTGzPw2 隊員による余興（ちんどん屋） 時間：①17:30～17:50 / ②18:10～18:30 キッズダンス「GLOW」 時間： 盆踊り（やぐら周辺） 時間： 東京音頭 •炭坑節 •ドラえもん音頭 •アンパンマン音頭 隊員によるステージパフォーマンス（マツケンサンバ改） 時間が去年より短いので、不明です"
+        },
         {
           "url": "https://x.com/official_onishi/status/2081937697032294435",
           "date": "2026-07-28T03:00:02+00:00",
@@ -643,16 +605,53 @@
           "date": "2026-07-25T15:03:10+00:00",
           "account": "@tigre_the_fanks",
           "text": "今、50代後半は 盆踊りで流れる ドラえもん音頭と ソーダの爽やかな表紙の10巻と 巻末の のび太の恐竜 で夏を感じる。"
-        },
-        {
-          "url": "https://x.com/ayako_kitaoka/status/2081020431704920465",
-          "date": "2026-07-25T14:15:09+00:00",
-          "account": "@ayako_kitaoka",
-          "text": "【盆踊り】 地域の盆踊りへ谷都議と参加。 色々踊りましたが、ドラえもん音頭は難しい😅 高際区長、森田会長、北岡あや子、晴れ男・晴れ女☀️ 雨が降らずに開催されました。 暑い中企画運営、ありがとうございました。 https://t.co/KiC2SJ1YOW"
         }
       ],
-      "evidence_text": "息子の幼稚園の盆踊りに参加してきました♪ スタッフてらも、三十数年前に同じ場所でドラえもん音頭を踊った記憶があるので、なんだか感慨深かったです🤗 エックス内でも綺麗な提灯の画像が溢れていて、夏🍉を感じています。 今年の夏は”夏らしい事”をたくさんする事が目標✨ 皆さんは夏らしい事、されていますか？٩( ''ω'' )و🌻 #夏休みにしたいこと #企業公式つぶやき部\n---\n新作動画アップしました！ ドラえもん音頭 踊ってみた https://t.co/w5a2ddLXKj #ドラえもん音頭 #踊ってみた #盆踊り\n---\n各町会の盆踊りやこども神輿に参加。戸田音頭やドラえもん音頭なども踊り、会いに来てくれたこども達とも話ができました。酷暑の中、天気の心配をしながらご尽力いただきました各町会関係者の皆さま、ありがとうございました。 #戸田市 #戸田市議会 #竹内正明 #たけうち正明 #盆踊り #お祭り #神輿 https://t.co/1mZ8Cvbhlp",
-      "evidence_url": "https://x.com/official_onishi/status/2081937697032294435"
+      "evidence_text": "@6gp7PAjvkTGzPw2 隊員による余興（ちんどん屋） 時間：①17:30～17:50 / ②18:10～18:30 キッズダンス「GLOW」 時間： 盆踊り（やぐら周辺） 時間： 東京音頭 •炭坑節 •ドラえもん音頭 •アンパンマン音頭 隊員によるステージパフォーマンス（マツケンサンバ改） 時間が去年より短いので、不明です\n---\n息子の幼稚園の盆踊りに参加してきました♪ スタッフてらも、三十数年前に同じ場所でドラえもん音頭を踊った記憶があるので、なんだか感慨深かったです🤗 エックス内でも綺麗な提灯の画像が溢れていて、夏🍉を感じています。 今年の夏は”夏らしい事”をたくさんする事が目標✨ 皆さんは夏らしい事、されていますか？٩( ''ω'' )و🌻 #夏休みにしたいこと #企業公式つぶやき部\n---\n新作動画アップしました！ ドラえもん音頭 踊ってみた https://t.co/w5a2ddLXKj #ドラえもん音頭 #踊ってみた #盆踊り",
+      "evidence_url": "https://x.com/hikoukimono/status/2082065991266336992"
+    },
+    {
+      "category": "曲候補",
+      "type": "曲名",
+      "term": "多くの踊り",
+      "interpretation": "多くの踊り",
+      "confidence": "要レビュー",
+      "reason": "曲名抽出器で検出: song_suffix_near_context",
+      "evidence_count": 6,
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=i-Gz-m8gMNM",
+          "date": "2026-07-28T09:30:16+00:00",
+          "account": "@wadaikoCH",
+          "text": "沼南盆踊り2026年7月20日に開催された 「神楽坂夏まつり盆踊り」初日の様子をお届けします。 神楽坂の石畳と提灯の灯りに包まれ、多くの踊り手で賑わう会場。 軽快な太鼓のリズムと、神楽坂ならではの粋な雰囲気をお楽しみください！ #盆踊り #神楽坂 #東京音頭 #神楽坂夏まつり #日本の祭り #和太鼓 神楽坂盆踊り １東京音頭 https://youtu.be/ifoY3c2In8o ２大東京音頭 https://youtu.be/7RT7OvLaVrE ３炭坑節 https://youtu.be/RHBPa97oQh0 ４八木節 https://youtu.be/rQB_pf4XMgs ５ゆかた音頭 https://youtu.be/nrQ3Myn_5lc ６ドンパン節 https://youtu.be/2TejCSfYHVQ ７オバＱ音頭 https://youtu.be/NThHl0uSadI ８バハマ・ママ https://youtu.be/Xaww5YsVFKY ９真っ赤な太陽 https://youtu.be/rnzPep1f2vg 10どうでもいいよ https://you"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=XFal6R3wylA",
+          "date": "2026-07-28T09:00:06+00:00",
+          "account": "@wadaikoCH",
+          "text": "沼南盆踊り2026年7月20日に開催された 「神楽坂夏まつり盆踊り」初日の様子をお届けします。 神楽坂の石畳と提灯の灯りに包まれ、多くの踊り手で賑わう会場。 軽快な太鼓のリズムと、神楽坂ならではの粋な雰囲気をお楽しみください！ #盆踊り #神楽坂 #東京音頭 #神楽坂夏まつり #日本の祭り #和太鼓 神楽坂盆踊り １東京音頭 https://youtu.be/ifoY3c2In8o ２大東京音頭 https://youtu.be/7RT7OvLaVrE ３炭坑節 https://youtu.be/RHBPa97oQh0 ４八木節 https://youtu.be/rQB_pf4XMgs ５ゆかた音頭 https://youtu.be/nrQ3Myn_5lc ６ドンパン節 https://youtu.be/2TejCSfYHVQ ７オバＱ音頭 https://youtu.be/NThHl0uSadI ８バハマ・ママ https://youtu.be/Xaww5YsVFKY ９真っ赤な太陽 https://youtu.be/rnzPep1f2vg 10どうでもいいよ https://you"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=rnzPep1f2vg",
+          "date": "2026-07-27T09:30:13+00:00",
+          "account": "@wadaikoCH",
+          "text": "沼南盆踊り2026年7月20日に開催された 「神楽坂夏まつり盆踊り」初日の様子をお届けします。 神楽坂の石畳と提灯の灯りに包まれ、多くの踊り手で賑わう会場。 軽快な太鼓のリズムと、神楽坂ならではの粋な雰囲気をお楽しみください！ #盆踊り #神楽坂 #東京音頭 #神楽坂夏まつり #日本の祭り #和太鼓 神楽坂盆踊り １東京音頭 https://youtu.be/ifoY3c2In8o ２大東京音頭 https://youtu.be/7RT7OvLaVrE ３炭坑節 https://youtu.be/RHBPa97oQh0 ４八木節 https://youtu.be/rQB_pf4XMgs ５ゆかた音頭 https://youtu.be/nrQ3Myn_5lc ６ドンパン節 https://youtu.be/2TejCSfYHVQ ７オバＱ音頭 https://youtu.be/NThHl0uSadI ８バハマ・ママ https://youtu.be/Xaww5YsVFKY ９真っ赤な太陽 https://youtu.be/rnzPep1f2vg 10どうでもいいよ https://you"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Xaww5YsVFKY",
+          "date": "2026-07-27T09:00:08+00:00",
+          "account": "@wadaikoCH",
+          "text": "沼南盆踊り2026年7月20日に開催された 「神楽坂夏まつり盆踊り」初日の様子をお届けします。 神楽坂の石畳と提灯の灯りに包まれ、多くの踊り手で賑わう会場。 軽快な太鼓のリズムと、神楽坂ならではの粋な雰囲気をお楽しみください！ #盆踊り #神楽坂 #東京音頭 #神楽坂夏まつり #日本の祭り #和太鼓 神楽坂盆踊り １東京音頭 https://youtu.be/ifoY3c2In8o ２大東京音頭 https://youtu.be/7RT7OvLaVrE ３炭坑節 https://youtu.be/RHBPa97oQh0 ４八木節 https://youtu.be/rQB_pf4XMgs ５ゆかた音頭 https://youtu.be/nrQ3Myn_5lc ６ドンパン節 https://youtu.be/2TejCSfYHVQ ７オバＱ音頭 https://youtu.be/NThHl0uSadI ８バハマ・ママ https://youtu.be/Xaww5YsVFKY ９真っ赤な太陽 https://youtu.be/rnzPep1f2vg 10どうでもいいよ https://you"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=NThHl0uSadI",
+          "date": "2026-07-26T09:30:12+00:00",
+          "account": "@wadaikoCH",
+          "text": "沼南盆踊り2026年7月20日に開催された 「神楽坂夏まつり盆踊り」初日の様子をお届けします。 神楽坂の石畳と提灯の灯りに包まれ、多くの踊り手で賑わう会場。 軽快な太鼓のリズムと、神楽坂ならではの粋な雰囲気をお楽しみください！ #盆踊り #神楽坂 #東京音頭 #神楽坂夏まつり #日本の祭り #和太鼓 神楽坂盆踊り １東京音頭 https://youtu.be/ifoY3c2In8o ２大東京音頭 https://youtu.be/7RT7OvLaVrE ３炭坑節 https://youtu.be/RHBPa97oQh0 ４八木節 https://youtu.be/rQB_pf4XMgs ５ゆかた音頭 https://youtu.be/nrQ3Myn_5lc ６ドンパン節 https://youtu.be/2TejCSfYHVQ ７オバＱ音頭 https://youtu.be/NThHl0uSadI ８バハマ・ママ https://youtu.be/Xaww5YsVFKY ９真っ赤な太陽 https://youtu.be/rnzPep1f2vg 10どうでもいいよ https://you"
+        }
+      ],
+      "evidence_text": "沼南盆踊り2026年7月20日に開催された 「神楽坂夏まつり盆踊り」初日の様子をお届けします。 神楽坂の石畳と提灯の灯りに包まれ、多くの踊り手で賑わう会場。 軽快な太鼓のリズムと、神楽坂ならではの粋な雰囲気をお楽しみください！ #盆踊り #神楽坂 #東京音頭 #神楽坂夏まつり #日本の祭り #和太鼓 神楽坂盆踊り １東京音頭 https://youtu.be/ifoY3c2In8o ２大東京音頭 https://youtu.be/7RT7OvLaVrE ３炭坑節 https://youtu.be/RHBPa97oQh0 ４八木節 https://youtu.be/rQB_pf4XMgs ５ゆかた音頭 https://youtu.be/nrQ3Myn_5lc ６ドンパン節 https://youtu.be/2TejCSfYHVQ ７オバＱ音頭 https://youtu.be/NThHl0uSadI ８バハマ・ママ https://youtu.be/Xaww5YsVFKY ９真っ赤な太陽 https://youtu.be/rnzPep1f2vg 10どうでもいいよ https://you\n---\n沼南盆踊り2026年7月20日に開催された 「神楽坂夏まつり盆踊り」初日の様子をお届けします。 神楽坂の石畳と提灯の灯りに包まれ、多くの踊り手で賑わう会場。 軽快な太鼓のリズムと、神楽坂ならではの粋な雰囲気をお楽しみください！ #盆踊り #神楽坂 #東京音頭 #神楽坂夏まつり #日本の祭り #和太鼓 神楽坂盆踊り １東京音頭 https://youtu.be/ifoY3c2In8o ２大東京音頭 https://youtu.be/7RT7OvLaVrE ３炭坑節 https://youtu.be/RHBPa97oQh0 ４八木節 https://youtu.be/rQB_pf4XMgs ５ゆかた音頭 https://youtu.be/nrQ3Myn_5lc ６ドンパン節 https://youtu.be/2TejCSfYHVQ ７オバＱ音頭 https://youtu.be/NThHl0uSadI ８バハマ・ママ https://youtu.be/Xaww5YsVFKY ９真っ赤な太陽 https://youtu.be/rnzPep1f2vg 10どうでもいいよ https://you\n---\n沼南盆踊り2026年7月20日に開催された 「神楽坂夏まつり盆踊り」初日の様子をお届けします。 神楽坂の石畳と提灯の灯りに包まれ、多くの踊り手で賑わう会場。 軽快な太鼓のリズムと、神楽坂ならではの粋な雰囲気をお楽しみください！ #盆踊り #神楽坂 #東京音頭 #神楽坂夏まつり #日本の祭り #和太鼓 神楽坂盆踊り １東京音頭 https://youtu.be/ifoY3c2In8o ２大東京音頭 https://youtu.be/7RT7OvLaVrE ３炭坑節 https://youtu.be/RHBPa97oQh0 ４八木節 https://youtu.be/rQB_pf4XMgs ５ゆかた音頭 https://youtu.be/nrQ3Myn_5lc ６ドンパン節 https://youtu.be/2TejCSfYHVQ ７オバＱ音頭 https://youtu.be/NThHl0uSadI ８バハマ・ママ https://youtu.be/Xaww5YsVFKY ９真っ赤な太陽 https://youtu.be/rnzPep1f2vg 10どうでもいいよ https://you",
+      "evidence_url": "https://www.youtube.com/watch?v=i-Gz-m8gMNM"
     },
     {
       "category": "曲候補",
@@ -696,49 +695,6 @@
       ],
       "evidence_text": "🏮梅田神社盆踊り（葛飾区立石） 昨年町会の皆さんとの素敵なご縁があり「今年も行こう！😆」と決めていた盆踊り🏮 リードの方の「八木節」のステップがちょこっと違くてかっこよくて踊りに来たのもある😁✨ 終了後、町会の皆さまから打ち上げに誘っていただきました🍻 ありがとうございました😆✨ https://t.co/bR3dPozVOm\n---\n今夜は仕事後に近所の盆踊り大会へ💃 踊ったわー♫ ここは歴史ある盆踊り大会なので、曲も幅広い！ 炭坑節、東京音頭、大東京音頭、21世紀音頭、八木節、ダンシング・ヒーロー、スカイツリー音頭、交通安全音頭、… 他にも沢山♫ 明日も盆踊り大会はあるので楽しむぞ😆 https://t.co/Tf55okfvjH\n---\n定刻に踊り手さんが登場し、輪踊り開始。しかし、しばらくするとまた小雨。7.八木節から始まって、2.川崎おどりが終わったところで、踊り手主要メンバーは、テントに避難。そのまま、飲食&amp;歓談タイムに入ったようでした。自分は、6.川崎音頭まで音楽と太鼓聞いて、隣の江川町へ移動。",
       "evidence_url": "https://x.com/masako0327/status/2081945292438737124"
-    },
-    {
-      "category": "曲候補",
-      "type": "曲名",
-      "term": "多くの踊り",
-      "interpretation": "多くの踊り",
-      "confidence": "要レビュー",
-      "reason": "曲名抽出器で検出: song_suffix_near_context",
-      "evidence_count": 5,
-      "evidence": [
-        {
-          "url": "https://www.youtube.com/watch?v=rnzPep1f2vg",
-          "date": "2026-07-27T09:30:13+00:00",
-          "account": "@wadaikoCH",
-          "text": "沼南盆踊り2026年7月20日に開催された 「神楽坂夏まつり盆踊り」初日の様子をお届けします。 神楽坂の石畳と提灯の灯りに包まれ、多くの踊り手で賑わう会場。 軽快な太鼓のリズムと、神楽坂ならではの粋な雰囲気をお楽しみください！ #盆踊り #神楽坂 #東京音頭 #神楽坂夏まつり #日本の祭り #和太鼓 神楽坂盆踊り １東京音頭 https://youtu.be/ifoY3c2In8o ２大東京音頭 https://youtu.be/7RT7OvLaVrE ３炭坑節 https://youtu.be/RHBPa97oQh0 ４八木節 https://youtu.be/rQB_pf4XMgs ５ゆかた音頭 https://youtu.be/nrQ3Myn_5lc ６ドンパン節 https://youtu.be/2TejCSfYHVQ ７オバＱ音頭 https://youtu.be/NThHl0uSadI ８バハマ・ママ https://youtu.be/Xaww5YsVFKY ９真っ赤な太陽 https://youtu.be/rnzPep1f2vg 10どうでもいいよ https://you"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=Xaww5YsVFKY",
-          "date": "2026-07-27T09:00:08+00:00",
-          "account": "@wadaikoCH",
-          "text": "沼南盆踊り2026年7月20日に開催された 「神楽坂夏まつり盆踊り」初日の様子をお届けします。 神楽坂の石畳と提灯の灯りに包まれ、多くの踊り手で賑わう会場。 軽快な太鼓のリズムと、神楽坂ならではの粋な雰囲気をお楽しみください！ #盆踊り #神楽坂 #東京音頭 #神楽坂夏まつり #日本の祭り #和太鼓 神楽坂盆踊り １東京音頭 https://youtu.be/ifoY3c2In8o ２大東京音頭 https://youtu.be/7RT7OvLaVrE ３炭坑節 https://youtu.be/RHBPa97oQh0 ４八木節 https://youtu.be/rQB_pf4XMgs ５ゆかた音頭 https://youtu.be/nrQ3Myn_5lc ６ドンパン節 https://youtu.be/2TejCSfYHVQ ７オバＱ音頭 https://youtu.be/NThHl0uSadI ８バハマ・ママ https://youtu.be/Xaww5YsVFKY ９真っ赤な太陽 https://youtu.be/rnzPep1f2vg 10どうでもいいよ https://you"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=NThHl0uSadI",
-          "date": "2026-07-26T09:30:12+00:00",
-          "account": "@wadaikoCH",
-          "text": "沼南盆踊り2026年7月20日に開催された 「神楽坂夏まつり盆踊り」初日の様子をお届けします。 神楽坂の石畳と提灯の灯りに包まれ、多くの踊り手で賑わう会場。 軽快な太鼓のリズムと、神楽坂ならではの粋な雰囲気をお楽しみください！ #盆踊り #神楽坂 #東京音頭 #神楽坂夏まつり #日本の祭り #和太鼓 神楽坂盆踊り １東京音頭 https://youtu.be/ifoY3c2In8o ２大東京音頭 https://youtu.be/7RT7OvLaVrE ３炭坑節 https://youtu.be/RHBPa97oQh0 ４八木節 https://youtu.be/rQB_pf4XMgs ５ゆかた音頭 https://youtu.be/nrQ3Myn_5lc ６ドンパン節 https://youtu.be/2TejCSfYHVQ ７オバＱ音頭 https://youtu.be/NThHl0uSadI ８バハマ・ママ https://youtu.be/Xaww5YsVFKY ９真っ赤な太陽 https://youtu.be/rnzPep1f2vg 10どうでもいいよ https://you"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=2TejCSfYHVQ",
-          "date": "2026-07-26T09:00:40+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年7月20日に開催された 「神楽坂夏まつり盆踊り」初日の様子をお届けします。 神楽坂の石畳と提灯の灯りに包まれ、多くの踊り手で賑わう会場。 軽快な太鼓のリズムと、神楽坂ならではの粋な雰囲気をお楽しみください！ #盆踊り #神楽坂 #東京音頭 #神楽坂夏まつり #日本の祭り #和太鼓 神楽坂盆踊り １東京音頭 https://youtu.be/ifoY3c2In8o ２大東京音頭 https://youtu.be/7RT7OvLaVrE ３炭坑節 https://youtu.be/RHBPa97oQh0 ４八木節 https://youtu.be/rQB_pf4XMgs ５ゆかた音頭 https://youtu.be/nrQ3Myn_5lc ６ドンパン節 https://youtu.be/2TejCSfYHVQ ７オバＱ音頭 https://youtu.be/NThHl0uSadI"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=nrQ3Myn_5lc",
-          "date": "2026-07-25T09:30:26+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年7月20日に開催された 「神楽坂夏まつり盆踊り」初日の様子をお届けします。 神楽坂の石畳と提灯の灯りに包まれ、多くの踊り手で賑わう会場。 軽快な太鼓のリズムと、神楽坂ならではの粋な雰囲気をお楽しみください！ #盆踊り #神楽坂 #東京音頭 #神楽坂夏まつり #日本の祭り #和太鼓 神楽坂盆踊り １東京音頭 https://youtu.be/ifoY3c2In8o ２大東京音頭 https://youtu.be/7RT7OvLaVrE ３炭坑節 https://youtu.be/RHBPa97oQh0 ４八木節 https://youtu.be/rQB_pf4XMgs ５ゆかた音頭 https://youtu.be/nrQ3Myn_5lc ６ドンパン節 https://youtu.be/2TejCSfYHVQ ７オバＱ音頭 https://youtu.be/NThHl0uSadI"
-        }
-      ],
-      "evidence_text": "沼南盆踊り2026年7月20日に開催された 「神楽坂夏まつり盆踊り」初日の様子をお届けします。 神楽坂の石畳と提灯の灯りに包まれ、多くの踊り手で賑わう会場。 軽快な太鼓のリズムと、神楽坂ならではの粋な雰囲気をお楽しみください！ #盆踊り #神楽坂 #東京音頭 #神楽坂夏まつり #日本の祭り #和太鼓 神楽坂盆踊り １東京音頭 https://youtu.be/ifoY3c2In8o ２大東京音頭 https://youtu.be/7RT7OvLaVrE ３炭坑節 https://youtu.be/RHBPa97oQh0 ４八木節 https://youtu.be/rQB_pf4XMgs ５ゆかた音頭 https://youtu.be/nrQ3Myn_5lc ６ドンパン節 https://youtu.be/2TejCSfYHVQ ７オバＱ音頭 https://youtu.be/NThHl0uSadI ８バハマ・ママ https://youtu.be/Xaww5YsVFKY ９真っ赤な太陽 https://youtu.be/rnzPep1f2vg 10どうでもいいよ https://you\n---\n沼南盆踊り2026年7月20日に開催された 「神楽坂夏まつり盆踊り」初日の様子をお届けします。 神楽坂の石畳と提灯の灯りに包まれ、多くの踊り手で賑わう会場。 軽快な太鼓のリズムと、神楽坂ならではの粋な雰囲気をお楽しみください！ #盆踊り #神楽坂 #東京音頭 #神楽坂夏まつり #日本の祭り #和太鼓 神楽坂盆踊り １東京音頭 https://youtu.be/ifoY3c2In8o ２大東京音頭 https://youtu.be/7RT7OvLaVrE ３炭坑節 https://youtu.be/RHBPa97oQh0 ４八木節 https://youtu.be/rQB_pf4XMgs ５ゆかた音頭 https://youtu.be/nrQ3Myn_5lc ６ドンパン節 https://youtu.be/2TejCSfYHVQ ７オバＱ音頭 https://youtu.be/NThHl0uSadI ８バハマ・ママ https://youtu.be/Xaww5YsVFKY ９真っ赤な太陽 https://youtu.be/rnzPep1f2vg 10どうでもいいよ https://you\n---\n沼南盆踊り2026年7月20日に開催された 「神楽坂夏まつり盆踊り」初日の様子をお届けします。 神楽坂の石畳と提灯の灯りに包まれ、多くの踊り手で賑わう会場。 軽快な太鼓のリズムと、神楽坂ならではの粋な雰囲気をお楽しみください！ #盆踊り #神楽坂 #東京音頭 #神楽坂夏まつり #日本の祭り #和太鼓 神楽坂盆踊り １東京音頭 https://youtu.be/ifoY3c2In8o ２大東京音頭 https://youtu.be/7RT7OvLaVrE ３炭坑節 https://youtu.be/RHBPa97oQh0 ４八木節 https://youtu.be/rQB_pf4XMgs ５ゆかた音頭 https://youtu.be/nrQ3Myn_5lc ６ドンパン節 https://youtu.be/2TejCSfYHVQ ７オバＱ音頭 https://youtu.be/NThHl0uSadI ８バハマ・ママ https://youtu.be/Xaww5YsVFKY ９真っ赤な太陽 https://youtu.be/rnzPep1f2vg 10どうでもいいよ https://you",
-      "evidence_url": "https://www.youtube.com/watch?v=rnzPep1f2vg"
     },
     {
       "category": "曲候補",
@@ -850,6 +806,37 @@
       ],
       "evidence_text": "雨降る中開催された下北沢盆踊り2日目 シモキタ音頭や地元曲が多数かかる会場ですが、 新たな曲もいくつか披露され盛り上がっておりました！ tuki.「ひゅるりらぱっぱ」 ▼4K Full Video https://t.co/YR8s2JaDyr https://t.co/Lo9YrTOa2i\n---\n2026.07.26 下北沢盆踊り2026 シモキタ音頭 / 馬浪マラカス団 #下北沢盆踊り2026 https://t.co/wNkycfl1OL\n---\n今日は下北沢盆踊りへ。 雨雲が避けてくれたようで最後まで雨は降らず、たっぷり盆踊りを堪能できた！ シモキタ音頭や、サンバ系の盆踊りが楽しい🕺 来年もタイミングがあえば来たいぞ。 そして小田急線が信号事故？の影響で動かず、車内に閉じ込められてる…終電間に合うやろか…？ https://t.co/wu2tAZ1zr4",
       "evidence_url": "https://x.com/walkingfilmlove/status/2081681001831657965"
+    },
+    {
+      "category": "曲候補",
+      "type": "曲名",
+      "term": "江州音頭",
+      "interpretation": "江州音頭",
+      "confidence": "要レビュー",
+      "reason": "曲名抽出器で検出: known_song_context",
+      "evidence_count": 3,
+      "evidence": [
+        {
+          "url": "https://x.com/undinereika/status/2082083972142776712",
+          "date": "2026-07-28T12:41:16+00:00",
+          "account": "@undinereika",
+          "text": "@fukiteasobiki 最近は、堺も、イベントで踊る泉州音頭の振りが入って来ていますが、地元の人は江州音頭の振りです。 地元の盆踊りしか行かない人は泉州音頭を知らない人が殆どです。多分泉州音頭も江州音頭と思ってる人が多いです。"
+        },
+        {
+          "url": "https://x.com/agatha_2222/status/2082078421472178645",
+          "date": "2026-07-28T12:19:13+00:00",
+          "account": "@agatha_2222",
+          "text": "いよいよ明日から2日間、【すみだ錦糸町河内音頭大盆踊り】！出演順も公開されております。💃🕺🏮 江州音頭は大阪より辺高正 師、桜川行司（音頭＆ギター）さんが出演されます。中西レモンは楽日、7/30の中入り後に音頭を取ります。すずめのティアーズはオハヤシやります。ぜひ踊りに来てください！ https://t.co/HtsisLJguy"
+        },
+        {
+          "url": "https://x.com/keloyama/status/2081990049324048743",
+          "date": "2026-07-28T06:28:03+00:00",
+          "account": "@keloyama",
+          "text": "なんと明日は待ちに待った、 第44回すみだ錦糸町河内音頭大盆踊り #錦糸町河内音頭 #河内音頭 #江州音頭 #泉州音頭 https://t.co/qTxvWTgwea"
+        }
+      ],
+      "evidence_text": "@fukiteasobiki 最近は、堺も、イベントで踊る泉州音頭の振りが入って来ていますが、地元の人は江州音頭の振りです。 地元の盆踊りしか行かない人は泉州音頭を知らない人が殆どです。多分泉州音頭も江州音頭と思ってる人が多いです。\n---\nいよいよ明日から2日間、【すみだ錦糸町河内音頭大盆踊り】！出演順も公開されております。💃🕺🏮 江州音頭は大阪より辺高正 師、桜川行司（音頭＆ギター）さんが出演されます。中西レモンは楽日、7/30の中入り後に音頭を取ります。すずめのティアーズはオハヤシやります。ぜひ踊りに来てください！ https://t.co/HtsisLJguy\n---\nなんと明日は待ちに待った、 第44回すみだ錦糸町河内音頭大盆踊り #錦糸町河内音頭 #河内音頭 #江州音頭 #泉州音頭 https://t.co/qTxvWTgwea",
+      "evidence_url": "https://x.com/undinereika/status/2082083972142776712"
     },
     {
       "category": "曲候補",
@@ -997,27 +984,52 @@
     {
       "category": "曲候補",
       "type": "曲名",
-      "term": "きよしのズンドコ節",
-      "interpretation": "きよしのズンドコ節",
+      "term": "アラレちゃん音頭",
+      "interpretation": "アラレちゃん音頭",
       "confidence": "要レビュー",
       "reason": "曲名抽出器で検出: song_suffix_near_context",
       "evidence_count": 2,
       "evidence": [
         {
-          "url": "https://x.com/salone58/status/2081379967632650492",
-          "date": "2026-07-26T14:03:49+00:00",
-          "account": "@salone58",
-          "text": "【晴海ふ頭公園盆踊り大会 2026】「きよしのズンドコ節」氷川きよしで盆踊り #盆踊り https://t.co/7R4UxGAsUQ"
+          "url": "https://x.com/kugiyamaguchi/status/2082079747794948468",
+          "date": "2026-07-28T12:24:29+00:00",
+          "account": "@kugiyamaguchi",
+          "text": "明日から3日間御徒町公園で盆踊りがおこなわれます。 昨日、町会主催の練習会に参加して来ました。好きすぎて滅、踊るみたいです。 アラレちゃん音頭もあるみたいです。 楽しみです。 #台東区 #御徒町公園 https://t.co/WJ3IJnZ0cB"
         },
         {
-          "url": "https://x.com/bonkyodora_/status/2080999779182805486",
-          "date": "2026-07-25T12:53:05+00:00",
-          "account": "@bonkyodora_",
-          "text": "2026年7月25日(土) 千葉県松戸市／高塚八幡神社 「高塚新田自治会 盆踊り大会」 盆踊りはゆったりと進行😌 18:00～18:30 (休憩) 19:30～20:40 進行役の方が明るい方でした🤗✨ 【曲目】 炭坑節 白浜音頭 きよしのズンドコ節 チャンチキおけさ 東京音頭 バハマ・ママ 東京スカイツリー音頭(相原ひろ子) https://t.co/m4j4tCse88"
+          "url": "https://x.com/HyMvi1/status/2081575194506993973",
+          "date": "2026-07-27T02:59:34+00:00",
+          "account": "@HyMvi1",
+          "text": "@S7_Michi 私も子供の頃以来の盆踊りだったので、ノリノリで踊りも激しくてびっくりしました🕺でも昔ながらの曲やフリもあって、すっごく楽しかったです！ 我が家も近所のお祭りでは盆踊りを見かけないです。近所で踊りたいですよね☺️アラレちゃん音頭を踊りたい〜"
         }
       ],
-      "evidence_text": "【晴海ふ頭公園盆踊り大会 2026】「きよしのズンドコ節」氷川きよしで盆踊り #盆踊り https://t.co/7R4UxGAsUQ\n---\n2026年7月25日(土) 千葉県松戸市／高塚八幡神社 「高塚新田自治会 盆踊り大会」 盆踊りはゆったりと進行😌 18:00～18:30 (休憩) 19:30～20:40 進行役の方が明るい方でした🤗✨ 【曲目】 炭坑節 白浜音頭 きよしのズンドコ節 チャンチキおけさ 東京音頭 バハマ・ママ 東京スカイツリー音頭(相原ひろ子) https://t.co/m4j4tCse88",
-      "evidence_url": "https://x.com/salone58/status/2081379967632650492"
+      "evidence_text": "明日から3日間御徒町公園で盆踊りがおこなわれます。 昨日、町会主催の練習会に参加して来ました。好きすぎて滅、踊るみたいです。 アラレちゃん音頭もあるみたいです。 楽しみです。 #台東区 #御徒町公園 https://t.co/WJ3IJnZ0cB\n---\n@S7_Michi 私も子供の頃以来の盆踊りだったので、ノリノリで踊りも激しくてびっくりしました🕺でも昔ながらの曲やフリもあって、すっごく楽しかったです！ 我が家も近所のお祭りでは盆踊りを見かけないです。近所で踊りたいですよね☺️アラレちゃん音頭を踊りたい〜",
+      "evidence_url": "https://x.com/kugiyamaguchi/status/2082079747794948468"
+    },
+    {
+      "category": "曲候補",
+      "type": "曲名",
+      "term": "ソーラン節",
+      "interpretation": "ソーラン節",
+      "confidence": "要レビュー",
+      "reason": "曲名抽出器で検出: known_song_context",
+      "evidence_count": 2,
+      "evidence": [
+        {
+          "url": "https://x.com/jangslot/status/2082076841075253436",
+          "date": "2026-07-28T12:12:56+00:00",
+          "account": "@jangslot",
+          "text": "全然違う話かもしれないけど、V系とかは客の振る舞いもかなり様式を求められるじゃん？あの狭苦しい感じが苦手。まあでも生演奏ソーラン節、バンド盆踊りだと思うと好きな人がいるのはわかる気がする。宗教的画一性にも見えるし、用途としては軍歌的でもある。"
+        },
+        {
+          "url": "https://x.com/natsukichi06A/status/2081019502431752270",
+          "date": "2026-07-25T14:11:27+00:00",
+          "account": "@natsukichi06A",
+          "text": "近所の盆踊り行ったら、盆踊りのあと好き過ぎて滅！とかソーラン節とかが始まって、娘のテンションMAX汗だくで踊っていたww 偶然あった保育園のお友達、ドン引きしてた🤣"
+        }
+      ],
+      "evidence_text": "全然違う話かもしれないけど、V系とかは客の振る舞いもかなり様式を求められるじゃん？あの狭苦しい感じが苦手。まあでも生演奏ソーラン節、バンド盆踊りだと思うと好きな人がいるのはわかる気がする。宗教的画一性にも見えるし、用途としては軍歌的でもある。\n---\n近所の盆踊り行ったら、盆踊りのあと好き過ぎて滅！とかソーラン節とかが始まって、娘のテンションMAX汗だくで踊っていたww 偶然あった保育園のお友達、ドン引きしてた🤣",
+      "evidence_url": "https://x.com/jangslot/status/2082076841075253436"
     },
     {
       "category": "曲候補",
@@ -1072,77 +1084,27 @@
     {
       "category": "曲候補",
       "type": "曲名",
-      "term": "巣鴨花咲き音頭",
-      "interpretation": "巣鴨花咲き音頭",
+      "term": "日野音頭",
+      "interpretation": "日野音頭",
       "confidence": "要レビュー",
       "reason": "曲名抽出器で検出: song_suffix_near_context",
       "evidence_count": 2,
       "evidence": [
         {
-          "url": "https://www.youtube.com/watch?v=APwMDcUw3r4",
-          "date": "2026-07-25T10:30:12+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年7月18日、豊島区の巣鴨駅前南口ロータリーにて開催された「第46回巣鴨盆踊り大会」の様子です。 巣一商店会主催のもと、 駅前の活気ある雰囲気の中で踊られる盆踊りをお届けします。 地元の方々や観光客が一体となって盛り上がる、 夏の巣鴨ならではの熱気をお楽しみください！ 和太鼓の響きとともに、日本の夏の情緒を感じていただければ幸いです。 #巣鴨 #盆踊り #巣鴨花咲き音頭 #巣一商店会 #夏祭り #和太鼓 #東京の祭り #巣鴨駅前 巣鴨駅前盆踊り １巣鴨花咲音頭 https://youtu.be/9dqKwAudGS4 ２きよしのドドンパ https://youtu.be/wq9yyUc_IXY ３バハマママ https://youtu.be/TArlwnMgoPM ４恋するフォーチュンクッキー https://youtu.be/X-PkKNmjPe4 ５さわやか音頭 https://youtu.be/rTRTi60jqVc ６東京音頭 https://youtu.be/lsNiUZl1EJE ７河内おとこ節 https://youtu.be/QMKUAZQyIk0 ８押せ押せ音"
+          "url": "https://x.com/fried_wakame/status/2082032577892995149",
+          "date": "2026-07-28T09:17:03+00:00",
+          "account": "@fried_wakame",
+          "text": "昨日は高幡不動尊へ 多摩じまんで教えていただいた日野音頭や高幡音頭が踊りたくてお邪魔しました🏮現地で踊れて嬉しい！日野音頭の合いの手ヒノヒノ好きです😊 ビクタースカイツリーもお久しぶり🗼 高幡音頭高幡雨情を歌われている岩崎愛子さんもリードされていました✨ お土産は高幡まんじゅう😋 https://t.co/rKNwrNq6Xz"
         },
         {
-          "url": "https://www.youtube.com/watch?v=colUSYAw-b4",
-          "date": "2026-07-25T10:00:14+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年7月18日、豊島区の巣鴨駅前南口ロータリーにて開催された「第46回巣鴨盆踊り大会」の様子です。 巣一商店会主催のもと、 駅前の活気ある雰囲気の中で踊られる盆踊りをお届けします。 地元の方々や観光客が一体となって盛り上がる、 夏の巣鴨ならではの熱気をお楽しみください！ 和太鼓の響きとともに、日本の夏の情緒を感じていただければ幸いです。 #巣鴨 #盆踊り #巣鴨花咲き音頭 #巣一商店会 #夏祭り #和太鼓 #東京の祭り #巣鴨駅前 巣鴨駅前盆踊り １巣鴨花咲音頭 https://youtu.be/9dqKwAudGS4 ２きよしのドドンパ https://youtu.be/wq9yyUc_IXY ３バハマママ https://youtu.be/TArlwnMgoPM ４恋するフォーチュンクッキー https://youtu.be/X-PkKNmjPe4 ５さわやか音頭 https://youtu.be/rTRTi60jqVc ６東京音頭 https://youtu.be/lsNiUZl1EJE ７河内おとこ節 https://youtu.be/QMKUAZQyIk0 ８押せ押せ音"
+          "url": "https://x.com/dororon_eight/status/2082066421643956301",
+          "date": "2026-07-28T11:31:32+00:00",
+          "account": "@dororon_eight",
+          "text": "7/27は高幡不動盆踊り大会へ🏮 五重塔が綺麗です‼️ 日野音頭は「あー日野日野♪」っていうお囃子が言いたくなっちゃう😆 髙橋不動といえば「高幡音頭」👘 サビでいきなりインドっぽい歌詞（日本語じゃない）になり、踊りもインドっぽくなる👌👌 高幡不動盆踊りに来たら是非リクエストしてください✌️ https://t.co/kjeprAmaqe"
         }
       ],
-      "evidence_text": "2026年7月18日、豊島区の巣鴨駅前南口ロータリーにて開催された「第46回巣鴨盆踊り大会」の様子です。 巣一商店会主催のもと、 駅前の活気ある雰囲気の中で踊られる盆踊りをお届けします。 地元の方々や観光客が一体となって盛り上がる、 夏の巣鴨ならではの熱気をお楽しみください！ 和太鼓の響きとともに、日本の夏の情緒を感じていただければ幸いです。 #巣鴨 #盆踊り #巣鴨花咲き音頭 #巣一商店会 #夏祭り #和太鼓 #東京の祭り #巣鴨駅前 巣鴨駅前盆踊り １巣鴨花咲音頭 https://youtu.be/9dqKwAudGS4 ２きよしのドドンパ https://youtu.be/wq9yyUc_IXY ３バハマママ https://youtu.be/TArlwnMgoPM ４恋するフォーチュンクッキー https://youtu.be/X-PkKNmjPe4 ５さわやか音頭 https://youtu.be/rTRTi60jqVc ６東京音頭 https://youtu.be/lsNiUZl1EJE ７河内おとこ節 https://youtu.be/QMKUAZQyIk0 ８押せ押せ音\n---\n2026年7月18日、豊島区の巣鴨駅前南口ロータリーにて開催された「第46回巣鴨盆踊り大会」の様子です。 巣一商店会主催のもと、 駅前の活気ある雰囲気の中で踊られる盆踊りをお届けします。 地元の方々や観光客が一体となって盛り上がる、 夏の巣鴨ならではの熱気をお楽しみください！ 和太鼓の響きとともに、日本の夏の情緒を感じていただければ幸いです。 #巣鴨 #盆踊り #巣鴨花咲き音頭 #巣一商店会 #夏祭り #和太鼓 #東京の祭り #巣鴨駅前 巣鴨駅前盆踊り １巣鴨花咲音頭 https://youtu.be/9dqKwAudGS4 ２きよしのドドンパ https://youtu.be/wq9yyUc_IXY ３バハマママ https://youtu.be/TArlwnMgoPM ４恋するフォーチュンクッキー https://youtu.be/X-PkKNmjPe4 ５さわやか音頭 https://youtu.be/rTRTi60jqVc ６東京音頭 https://youtu.be/lsNiUZl1EJE ７河内おとこ節 https://youtu.be/QMKUAZQyIk0 ８押せ押せ音",
-      "evidence_url": "https://www.youtube.com/watch?v=APwMDcUw3r4"
-    },
-    {
-      "category": "曲候補",
-      "type": "曲名",
-      "term": "巣鴨花咲音頭",
-      "interpretation": "巣鴨花咲音頭",
-      "confidence": "要レビュー",
-      "reason": "曲名抽出器で検出: song_suffix_near_context",
-      "evidence_count": 2,
-      "evidence": [
-        {
-          "url": "https://www.youtube.com/watch?v=APwMDcUw3r4",
-          "date": "2026-07-25T10:30:12+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年7月18日、豊島区の巣鴨駅前南口ロータリーにて開催された「第46回巣鴨盆踊り大会」の様子です。 巣一商店会主催のもと、 駅前の活気ある雰囲気の中で踊られる盆踊りをお届けします。 地元の方々や観光客が一体となって盛り上がる、 夏の巣鴨ならではの熱気をお楽しみください！ 和太鼓の響きとともに、日本の夏の情緒を感じていただければ幸いです。 #巣鴨 #盆踊り #巣鴨花咲き音頭 #巣一商店会 #夏祭り #和太鼓 #東京の祭り #巣鴨駅前 巣鴨駅前盆踊り １巣鴨花咲音頭 https://youtu.be/9dqKwAudGS4 ２きよしのドドンパ https://youtu.be/wq9yyUc_IXY ３バハマママ https://youtu.be/TArlwnMgoPM ４恋するフォーチュンクッキー https://youtu.be/X-PkKNmjPe4 ５さわやか音頭 https://youtu.be/rTRTi60jqVc ６東京音頭 https://youtu.be/lsNiUZl1EJE ７河内おとこ節 https://youtu.be/QMKUAZQyIk0 ８押せ押せ音"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=colUSYAw-b4",
-          "date": "2026-07-25T10:00:14+00:00",
-          "account": "@wadaikoCH",
-          "text": "2026年7月18日、豊島区の巣鴨駅前南口ロータリーにて開催された「第46回巣鴨盆踊り大会」の様子です。 巣一商店会主催のもと、 駅前の活気ある雰囲気の中で踊られる盆踊りをお届けします。 地元の方々や観光客が一体となって盛り上がる、 夏の巣鴨ならではの熱気をお楽しみください！ 和太鼓の響きとともに、日本の夏の情緒を感じていただければ幸いです。 #巣鴨 #盆踊り #巣鴨花咲き音頭 #巣一商店会 #夏祭り #和太鼓 #東京の祭り #巣鴨駅前 巣鴨駅前盆踊り １巣鴨花咲音頭 https://youtu.be/9dqKwAudGS4 ２きよしのドドンパ https://youtu.be/wq9yyUc_IXY ３バハマママ https://youtu.be/TArlwnMgoPM ４恋するフォーチュンクッキー https://youtu.be/X-PkKNmjPe4 ５さわやか音頭 https://youtu.be/rTRTi60jqVc ６東京音頭 https://youtu.be/lsNiUZl1EJE ７河内おとこ節 https://youtu.be/QMKUAZQyIk0 ８押せ押せ音"
-        }
-      ],
-      "evidence_text": "2026年7月18日、豊島区の巣鴨駅前南口ロータリーにて開催された「第46回巣鴨盆踊り大会」の様子です。 巣一商店会主催のもと、 駅前の活気ある雰囲気の中で踊られる盆踊りをお届けします。 地元の方々や観光客が一体となって盛り上がる、 夏の巣鴨ならではの熱気をお楽しみください！ 和太鼓の響きとともに、日本の夏の情緒を感じていただければ幸いです。 #巣鴨 #盆踊り #巣鴨花咲き音頭 #巣一商店会 #夏祭り #和太鼓 #東京の祭り #巣鴨駅前 巣鴨駅前盆踊り １巣鴨花咲音頭 https://youtu.be/9dqKwAudGS4 ２きよしのドドンパ https://youtu.be/wq9yyUc_IXY ３バハマママ https://youtu.be/TArlwnMgoPM ４恋するフォーチュンクッキー https://youtu.be/X-PkKNmjPe4 ５さわやか音頭 https://youtu.be/rTRTi60jqVc ６東京音頭 https://youtu.be/lsNiUZl1EJE ７河内おとこ節 https://youtu.be/QMKUAZQyIk0 ８押せ押せ音\n---\n2026年7月18日、豊島区の巣鴨駅前南口ロータリーにて開催された「第46回巣鴨盆踊り大会」の様子です。 巣一商店会主催のもと、 駅前の活気ある雰囲気の中で踊られる盆踊りをお届けします。 地元の方々や観光客が一体となって盛り上がる、 夏の巣鴨ならではの熱気をお楽しみください！ 和太鼓の響きとともに、日本の夏の情緒を感じていただければ幸いです。 #巣鴨 #盆踊り #巣鴨花咲き音頭 #巣一商店会 #夏祭り #和太鼓 #東京の祭り #巣鴨駅前 巣鴨駅前盆踊り １巣鴨花咲音頭 https://youtu.be/9dqKwAudGS4 ２きよしのドドンパ https://youtu.be/wq9yyUc_IXY ３バハマママ https://youtu.be/TArlwnMgoPM ４恋するフォーチュンクッキー https://youtu.be/X-PkKNmjPe4 ５さわやか音頭 https://youtu.be/rTRTi60jqVc ６東京音頭 https://youtu.be/lsNiUZl1EJE ７河内おとこ節 https://youtu.be/QMKUAZQyIk0 ８押せ押せ音",
-      "evidence_url": "https://www.youtube.com/watch?v=APwMDcUw3r4"
-    },
-    {
-      "category": "曲候補",
-      "type": "曲名",
-      "term": "東京スカイツリー音頭",
-      "interpretation": "東京スカイツリー音頭",
-      "confidence": "要レビュー",
-      "reason": "曲名抽出器で検出: song_suffix_in_context",
-      "evidence_count": 2,
-      "evidence": [
-        {
-          "url": "https://x.com/bonkyodora_/status/2080999779182805486",
-          "date": "2026-07-25T12:53:05+00:00",
-          "account": "@bonkyodora_",
-          "text": "2026年7月25日(土) 千葉県松戸市／高塚八幡神社 「高塚新田自治会 盆踊り大会」 盆踊りはゆったりと進行😌 18:00～18:30 (休憩) 19:30～20:40 進行役の方が明るい方でした🤗✨ 【曲目】 炭坑節 白浜音頭 きよしのズンドコ節 チャンチキおけさ 東京音頭 バハマ・ママ 東京スカイツリー音頭(相原ひろ子) https://t.co/m4j4tCse88"
-        },
-        {
-          "url": "https://x.com/takasho06130613/status/2081016072388427826",
-          "date": "2026-07-25T13:57:49+00:00",
-          "account": "@takasho06130613",
-          "text": "7/25(土)舟渡小学校盆踊り ・東京音頭 ・炭鉱節 ・東京スカイツリー音頭 ・ホームラン音頭 ・河内おとこ節 ・板橋音頭(輪) ・一番はじめは ・板橋二輪草音頭 ・板橋区町会連合会音頭 ・舞い上がれITABASHI ・きよしのズンドコ節 ・ごちそう讃 ・毬と殿様 ・舟渡ひろがり音頭"
-        }
-      ],
-      "evidence_text": "2026年7月25日(土) 千葉県松戸市／高塚八幡神社 「高塚新田自治会 盆踊り大会」 盆踊りはゆったりと進行😌 18:00～18:30 (休憩) 19:30～20:40 進行役の方が明るい方でした🤗✨ 【曲目】 炭坑節 白浜音頭 きよしのズンドコ節 チャンチキおけさ 東京音頭 バハマ・ママ 東京スカイツリー音頭(相原ひろ子) https://t.co/m4j4tCse88\n---\n7/25(土)舟渡小学校盆踊り ・東京音頭 ・炭鉱節 ・東京スカイツリー音頭 ・ホームラン音頭 ・河内おとこ節 ・板橋音頭(輪) ・一番はじめは ・板橋二輪草音頭 ・板橋区町会連合会音頭 ・舞い上がれITABASHI ・きよしのズンドコ節 ・ごちそう讃 ・毬と殿様 ・舟渡ひろがり音頭",
-      "evidence_url": "https://x.com/bonkyodora_/status/2080999779182805486"
+      "evidence_text": "昨日は高幡不動尊へ 多摩じまんで教えていただいた日野音頭や高幡音頭が踊りたくてお邪魔しました🏮現地で踊れて嬉しい！日野音頭の合いの手ヒノヒノ好きです😊 ビクタースカイツリーもお久しぶり🗼 高幡音頭高幡雨情を歌われている岩崎愛子さんもリードされていました✨ お土産は高幡まんじゅう😋 https://t.co/rKNwrNq6Xz\n---\n7/27は高幡不動盆踊り大会へ🏮 五重塔が綺麗です‼️ 日野音頭は「あー日野日野♪」っていうお囃子が言いたくなっちゃう😆 髙橋不動といえば「高幡音頭」👘 サビでいきなりインドっぽい歌詞（日本語じゃない）になり、踊りもインドっぽくなる👌👌 高幡不動盆踊りに来たら是非リクエストしてください✌️ https://t.co/kjeprAmaqe",
+      "evidence_url": "https://x.com/fried_wakame/status/2082032577892995149"
     },
     {
       "category": "曲候補",
@@ -1193,56 +1155,6 @@
       ],
       "evidence_text": "なんと明日は待ちに待った、 第44回すみだ錦糸町河内音頭大盆踊り #錦糸町河内音頭 #河内音頭 #江州音頭 #泉州音頭 https://t.co/qTxvWTgwea\n---\n「すみだ錦糸町河内音頭大盆踊り」が明日明後日29日(水)30日(木)に開催🏮 今年は河内音頭と江州音頭に加え、雲竜左枝菊さんによる泉州音頭も演じられます♪ 泉州音頭の踊りになじみのない方向けに、🍊さんが過去に参考になるポストを～👏 （実際これで練習しました😂） https://t.co/es1aM1Ep2Q",
       "evidence_url": "https://x.com/keloyama/status/2081990049324048743"
-    },
-    {
-      "category": "曲候補",
-      "type": "曲名",
-      "term": "炭鉱節",
-      "interpretation": "炭鉱節",
-      "confidence": "要レビュー",
-      "reason": "曲名抽出器で検出: song_suffix_near_context",
-      "evidence_count": 2,
-      "evidence": [
-        {
-          "url": "https://x.com/takasho06130613/status/2081016072388427826",
-          "date": "2026-07-25T13:57:49+00:00",
-          "account": "@takasho06130613",
-          "text": "7/25(土)舟渡小学校盆踊り ・東京音頭 ・炭鉱節 ・東京スカイツリー音頭 ・ホームラン音頭 ・河内おとこ節 ・板橋音頭(輪) ・一番はじめは ・板橋二輪草音頭 ・板橋区町会連合会音頭 ・舞い上がれITABASHI ・きよしのズンドコ節 ・ごちそう讃 ・毬と殿様 ・舟渡ひろがり音頭"
-        },
-        {
-          "url": "https://x.com/manjushage_222/status/2080960540956930386",
-          "date": "2026-07-25T10:17:09+00:00",
-          "account": "@manjushage_222",
-          "text": "昼から練習に行って、それから乾杯しに行って 解散後乗り換えで下北で下りたら盆踊りやってて 町内会の仲間内とまんまと三周くらい踊ってきた😆 そりゃ踊りの練習帰りだから踊らないわけにも行かず 炭鉱節、生まれて初めて踊った！！"
-        }
-      ],
-      "evidence_text": "7/25(土)舟渡小学校盆踊り ・東京音頭 ・炭鉱節 ・東京スカイツリー音頭 ・ホームラン音頭 ・河内おとこ節 ・板橋音頭(輪) ・一番はじめは ・板橋二輪草音頭 ・板橋区町会連合会音頭 ・舞い上がれITABASHI ・きよしのズンドコ節 ・ごちそう讃 ・毬と殿様 ・舟渡ひろがり音頭\n---\n昼から練習に行って、それから乾杯しに行って 解散後乗り換えで下北で下りたら盆踊りやってて 町内会の仲間内とまんまと三周くらい踊ってきた😆 そりゃ踊りの練習帰りだから踊らないわけにも行かず 炭鉱節、生まれて初めて踊った！！",
-      "evidence_url": "https://x.com/takasho06130613/status/2081016072388427826"
-    },
-    {
-      "category": "曲候補",
-      "type": "曲名",
-      "term": "白浜音頭",
-      "interpretation": "白浜音頭",
-      "confidence": "要レビュー",
-      "reason": "曲名抽出器で検出: song_suffix_near_context",
-      "evidence_count": 2,
-      "evidence": [
-        {
-          "url": "https://x.com/kasui21/status/2080986074353127545",
-          "date": "2026-07-25T11:58:37+00:00",
-          "account": "@kasui21",
-          "text": "今日の櫓 なんだかんだ来た事無かったけどすごい！みんなで踊ってる！！ラーの方々殆ど居なくて地元の方が殆どだったんだけど輪が二重三重出来てる！ 大東京音頭×3 東京音頭×2 白浜音頭×1 炭坑節×1 日光和楽踊り×1 炭坑節×1 まさかの大東京音頭3回……踊りたかったから満足した！ https://t.co/mxWBZ9PJyl"
-        },
-        {
-          "url": "https://x.com/bonkyodora_/status/2080999779182805486",
-          "date": "2026-07-25T12:53:05+00:00",
-          "account": "@bonkyodora_",
-          "text": "2026年7月25日(土) 千葉県松戸市／高塚八幡神社 「高塚新田自治会 盆踊り大会」 盆踊りはゆったりと進行😌 18:00～18:30 (休憩) 19:30～20:40 進行役の方が明るい方でした🤗✨ 【曲目】 炭坑節 白浜音頭 きよしのズンドコ節 チャンチキおけさ 東京音頭 バハマ・ママ 東京スカイツリー音頭(相原ひろ子) https://t.co/m4j4tCse88"
-        }
-      ],
-      "evidence_text": "今日の櫓 なんだかんだ来た事無かったけどすごい！みんなで踊ってる！！ラーの方々殆ど居なくて地元の方が殆どだったんだけど輪が二重三重出来てる！ 大東京音頭×3 東京音頭×2 白浜音頭×1 炭坑節×1 日光和楽踊り×1 炭坑節×1 まさかの大東京音頭3回……踊りたかったから満足した！ https://t.co/mxWBZ9PJyl\n---\n2026年7月25日(土) 千葉県松戸市／高塚八幡神社 「高塚新田自治会 盆踊り大会」 盆踊りはゆったりと進行😌 18:00～18:30 (休憩) 19:30～20:40 進行役の方が明るい方でした🤗✨ 【曲目】 炭坑節 白浜音頭 きよしのズンドコ節 チャンチキおけさ 東京音頭 バハマ・ママ 東京スカイツリー音頭(相原ひろ子) https://t.co/m4j4tCse88",
-      "evidence_url": "https://x.com/kasui21/status/2080986074353127545"
     },
     {
       "category": "曲候補",
@@ -1462,6 +1374,25 @@
     {
       "category": "曲候補",
       "type": "曲名",
+      "term": "おこさ節",
+      "interpretation": "おこさ節",
+      "confidence": "要レビュー",
+      "reason": "曲名抽出器で検出: song_suffix_near_context",
+      "evidence_count": 1,
+      "evidence": [
+        {
+          "url": "https://x.com/Very_JAPAN/status/2082038105302012000",
+          "date": "2026-07-28T09:39:01+00:00",
+          "account": "@Very_JAPAN",
+          "text": "青山表参道 善光寺 盆踊り！狭い境内は外国人観光客も立ち寄り凄い人！謝恩納涼盆踊り大会 Tokyo,Aoyama Omotesando BonOdori 2026 DJI Osmo Pocket 4P https://t.co/wZvWcNjFa8 炭坑節、東京みなと音頭、にっぽんチャチャチャ、おこさ節、大江戸東京音頭など #盆踊り #表参道 https://t.co/hO31OoExaf"
+        }
+      ],
+      "evidence_text": "青山表参道 善光寺 盆踊り！狭い境内は外国人観光客も立ち寄り凄い人！謝恩納涼盆踊り大会 Tokyo,Aoyama Omotesando BonOdori 2026 DJI Osmo Pocket 4P https://t.co/wZvWcNjFa8 炭坑節、東京みなと音頭、にっぽんチャチャチャ、おこさ節、大江戸東京音頭など #盆踊り #表参道 https://t.co/hO31OoExaf",
+      "evidence_url": "https://x.com/Very_JAPAN/status/2082038105302012000"
+    },
+    {
+      "category": "曲候補",
+      "type": "曲名",
       "term": "おとこの音頭",
       "interpretation": "おとこの音頭",
       "confidence": "要レビュー",
@@ -1477,6 +1408,25 @@
       ],
       "evidence_text": "シモキタ音頭 炭坑節 東京音頭 大東京音頭 八木節 だいだらぼっち 世田谷区の盆踊りソング ひのおとこ？おとこの音頭？マツケンサンバ お嫁サンバ 個人的にズンパ音頭が流れて嬉しかった❣踊りの上手な振り付けしっかりマスターしている男の子がお手本していて将来大物になるわ。 https://t.co/Ltm2uSyPbU",
       "evidence_url": "https://x.com/310ri1/status/2081066887522451880"
+    },
+    {
+      "category": "曲候補",
+      "type": "曲名",
+      "term": "おまえの踊り",
+      "interpretation": "おまえの踊り",
+      "confidence": "要レビュー",
+      "reason": "曲名抽出器で検出: song_suffix_near_context",
+      "evidence_count": 1,
+      "evidence": [
+        {
+          "url": "https://x.com/moriron2/status/2082054411019497681",
+          "date": "2026-07-28T10:43:48+00:00",
+          "account": "@moriron2",
+          "text": "落ち込んでいる。先日兄さんに写真を撮ってもらったら「おまえの踊りはみっともない」と言われた。は？楽しければいいんじゃ？でも最近立て続けにいろいろ言われている身としては胸が痛む。気付きは大切だ。元々はフラダンスしたくて、でも体験で鏡見て自分でも下手とは思ってた。盆踊りも駄目なの？"
+        }
+      ],
+      "evidence_text": "落ち込んでいる。先日兄さんに写真を撮ってもらったら「おまえの踊りはみっともない」と言われた。は？楽しければいいんじゃ？でも最近立て続けにいろいろ言われている身としては胸が痛む。気付きは大切だ。元々はフラダンスしたくて、でも体験で鏡見て自分でも下手とは思ってた。盆踊りも駄目なの？",
+      "evidence_url": "https://x.com/moriron2/status/2082054411019497681"
     },
     {
       "category": "曲候補",
@@ -1534,6 +1484,25 @@
       ],
       "evidence_text": "昨日7月25日は、「な(7)つ(2)ご(5)おり」と読む語呂合わせから、#かき氷の日 夏祭りでは、かき氷は子どもに人気ですが、凍らせた焼酎を削るなどした「大人のかき氷」も🍧 #港区 芝浦まつり2日目は、雨が心配されましたが、降り始め前に、焼きそばを完売することができ～😊 町会女性部として盆踊り に参加する奥さんと、開始前に記念撮影し、全17曲を一年前から練習してこられた女性部の方々に最敬礼🙇‍♂️ 私も、町会青年部の射的のお手伝い後、踊りの輪に入りましたが、きちんと踊りを覚えた方が楽しめると～😅 今年は櫓が電飾で飾られたり、子どもや若者向け「パプリカ」「好きすぎて滅」なども加わり、盛り上がり🙌",
       "evidence_url": "https://x.com/m70101936/status/2081147230279401763"
+    },
+    {
+      "category": "曲候補",
+      "type": "曲名",
+      "term": "きよしのズンドコ節",
+      "interpretation": "きよしのズンドコ節",
+      "confidence": "要レビュー",
+      "reason": "曲名抽出器で検出: song_suffix_near_context",
+      "evidence_count": 1,
+      "evidence": [
+        {
+          "url": "https://x.com/salone58/status/2081379967632650492",
+          "date": "2026-07-26T14:03:49+00:00",
+          "account": "@salone58",
+          "text": "【晴海ふ頭公園盆踊り大会 2026】「きよしのズンドコ節」氷川きよしで盆踊り #盆踊り https://t.co/7R4UxGAsUQ"
+        }
+      ],
+      "evidence_text": "【晴海ふ頭公園盆踊り大会 2026】「きよしのズンドコ節」氷川きよしで盆踊り #盆踊り https://t.co/7R4UxGAsUQ",
+      "evidence_url": "https://x.com/salone58/status/2081379967632650492"
     },
     {
       "category": "曲候補",
@@ -1709,6 +1678,25 @@
     {
       "category": "曲候補",
       "type": "曲名",
+      "term": "ぜひ踊り",
+      "interpretation": "ぜひ踊り",
+      "confidence": "要レビュー",
+      "reason": "曲名抽出器で検出: song_suffix_near_context",
+      "evidence_count": 1,
+      "evidence": [
+        {
+          "url": "https://x.com/agatha_2222/status/2082078421472178645",
+          "date": "2026-07-28T12:19:13+00:00",
+          "account": "@agatha_2222",
+          "text": "いよいよ明日から2日間、【すみだ錦糸町河内音頭大盆踊り】！出演順も公開されております。💃🕺🏮 江州音頭は大阪より辺高正 師、桜川行司（音頭＆ギター）さんが出演されます。中西レモンは楽日、7/30の中入り後に音頭を取ります。すずめのティアーズはオハヤシやります。ぜひ踊りに来てください！ https://t.co/HtsisLJguy"
+        }
+      ],
+      "evidence_text": "いよいよ明日から2日間、【すみだ錦糸町河内音頭大盆踊り】！出演順も公開されております。💃🕺🏮 江州音頭は大阪より辺高正 師、桜川行司（音頭＆ギター）さんが出演されます。中西レモンは楽日、7/30の中入り後に音頭を取ります。すずめのティアーズはオハヤシやります。ぜひ踊りに来てください！ https://t.co/HtsisLJguy",
+      "evidence_url": "https://x.com/agatha_2222/status/2082078421472178645"
+    },
+    {
+      "category": "曲候補",
+      "type": "曲名",
       "term": "そりゃ勝手に踊り",
       "interpretation": "そりゃ勝手に踊り",
       "confidence": "要レビュー",
@@ -1724,25 +1712,6 @@
       ],
       "evidence_text": "世界民族音楽イベント。踊れる日本民謡がかかれば、そりゃ勝手に踊りますよ(ライフワーク:盆踊り) https://t.co/NbNHATfilE",
       "evidence_url": "https://x.com/zarame_music2/status/2081597431624749454"
-    },
-    {
-      "category": "曲候補",
-      "type": "曲名",
-      "term": "そりゃ踊り",
-      "interpretation": "そりゃ踊り",
-      "confidence": "要レビュー",
-      "reason": "曲名抽出器で検出: song_suffix_near_context",
-      "evidence_count": 1,
-      "evidence": [
-        {
-          "url": "https://x.com/manjushage_222/status/2080960540956930386",
-          "date": "2026-07-25T10:17:09+00:00",
-          "account": "@manjushage_222",
-          "text": "昼から練習に行って、それから乾杯しに行って 解散後乗り換えで下北で下りたら盆踊りやってて 町内会の仲間内とまんまと三周くらい踊ってきた😆 そりゃ踊りの練習帰りだから踊らないわけにも行かず 炭鉱節、生まれて初めて踊った！！"
-        }
-      ],
-      "evidence_text": "昼から練習に行って、それから乾杯しに行って 解散後乗り換えで下北で下りたら盆踊りやってて 町内会の仲間内とまんまと三周くらい踊ってきた😆 そりゃ踊りの練習帰りだから踊らないわけにも行かず 炭鉱節、生まれて初めて踊った！！",
-      "evidence_url": "https://x.com/manjushage_222/status/2080960540956930386"
     },
     {
       "category": "曲候補",
@@ -1785,6 +1754,25 @@
     {
       "category": "曲候補",
       "type": "曲名",
+      "term": "だいたい似た歌詞と踊り",
+      "interpretation": "だいたい似た歌詞と踊り",
+      "confidence": "要レビュー",
+      "reason": "曲名抽出器で検出: song_suffix_near_context",
+      "evidence_count": 1,
+      "evidence": [
+        {
+          "url": "https://x.com/KatsuoOkuhara/status/2082070052329914800",
+          "date": "2026-07-28T11:45:58+00:00",
+          "account": "@KatsuoOkuhara",
+          "text": "…のだが、輪踊りはずっと同じ顔ぶれ、四団体合同である。（飛び入り歓迎の趣旨に沿って、通りすがりの近隣の人とかも混じっているかもしれない。） だいたい似た歌詞と踊りなので、見よう見真似で踊っちゃってください！というスタイルだ。なので、自地域や日頃交流のある地域の踊りを、余裕で踊り…"
+        }
+      ],
+      "evidence_text": "…のだが、輪踊りはずっと同じ顔ぶれ、四団体合同である。（飛び入り歓迎の趣旨に沿って、通りすがりの近隣の人とかも混じっているかもしれない。） だいたい似た歌詞と踊りなので、見よう見真似で踊っちゃってください！というスタイルだ。なので、自地域や日頃交流のある地域の踊りを、余裕で踊り…",
+      "evidence_url": "https://x.com/KatsuoOkuhara/status/2082070052329914800"
+    },
+    {
+      "category": "曲候補",
+      "type": "曲名",
       "term": "ちょいと東京音頭",
       "interpretation": "ちょいと東京音頭",
       "confidence": "要レビュー",
@@ -1823,25 +1811,6 @@
     {
       "category": "曲候補",
       "type": "曲名",
-      "term": "でも炭坑節と千葉踊り",
-      "interpretation": "でも炭坑節と千葉踊り",
-      "confidence": "要レビュー",
-      "reason": "曲名抽出器で検出: song_suffix_near_context",
-      "evidence_count": 1,
-      "evidence": [
-        {
-          "url": "https://x.com/daidai0519/status/2080983895009562700",
-          "date": "2026-07-25T11:49:58+00:00",
-          "account": "@daidai0519",
-          "text": "今日の現場。 地元の盆踊り♫ 僕は今年は自治会の組長なんで祭りのお手伝いです。 でも炭坑節と千葉踊り聴けて満足です！(￣▽￣) https://t.co/hh5w9XCKeE"
-        }
-      ],
-      "evidence_text": "今日の現場。 地元の盆踊り♫ 僕は今年は自治会の組長なんで祭りのお手伝いです。 でも炭坑節と千葉踊り聴けて満足です！(￣▽￣) https://t.co/hh5w9XCKeE",
-      "evidence_url": "https://x.com/daidai0519/status/2080983895009562700"
-    },
-    {
-      "category": "曲候補",
-      "type": "曲名",
       "term": "で本番前最後の踊り",
       "interpretation": "で本番前最後の踊り",
       "confidence": "要レビュー",
@@ -1857,6 +1826,25 @@
       ],
       "evidence_text": "行いました。笛方は別室で個別レッスン、他のパートもそれぞれ本番を意識しながら細かな確認を重ね、演奏を仕上げていきました。 7月27日の「盆踊りの集い」で本番前最後の踊り練習。そして、その次はいよいよリバスポ金山での盆踊りです。 ↓↓↓",
       "evidence_url": "https://x.com/sayokai/status/2081639895345553649"
+    },
+    {
+      "category": "曲候補",
+      "type": "曲名",
+      "term": "というわけで単なる踊り",
+      "interpretation": "というわけで単なる踊り",
+      "confidence": "要レビュー",
+      "reason": "曲名抽出器で検出: song_suffix_near_context",
+      "evidence_count": 1,
+      "evidence": [
+        {
+          "url": "https://x.com/allodola0707/status/2082030250696065418",
+          "date": "2026-07-28T09:07:48+00:00",
+          "account": "@allodola0707",
+          "text": "弊社が協賛している盆踊り大会の運営からドリンクチケットが届いたけど社名を書いて提出するタイプのやつなので「ちゃんと来たやで」って示すために極力誰か行かねばならず、けどシャッチョ忙しくて行けるかわかんない…というわけで単なる踊り好き社員の私に回ってきちゃった。まじかいな。"
+        }
+      ],
+      "evidence_text": "弊社が協賛している盆踊り大会の運営からドリンクチケットが届いたけど社名を書いて提出するタイプのやつなので「ちゃんと来たやで」って示すために極力誰か行かねばならず、けどシャッチョ忙しくて行けるかわかんない…というわけで単なる踊り好き社員の私に回ってきちゃった。まじかいな。",
+      "evidence_url": "https://x.com/allodola0707/status/2082030250696065418"
     },
     {
       "category": "曲候補",
@@ -1918,6 +1906,25 @@
     {
       "category": "曲候補",
       "type": "曲名",
+      "term": "どのジャンルでも踊り",
+      "interpretation": "どのジャンルでも踊り",
+      "confidence": "要レビュー",
+      "reason": "曲名抽出器で検出: song_suffix_near_context",
+      "evidence_count": 1,
+      "evidence": [
+        {
+          "url": "https://x.com/Tiffany22420/status/2082041729696551135",
+          "date": "2026-07-28T09:53:25+00:00",
+          "account": "@Tiffany22420",
+          "text": "川べりで肌焼いてた時に仲良くなったおばあちゃんに踊るの好きなんですよ〜〜って言ったらほな盆踊りおいで❗️❗️❗️おじさん(運営の人❓)に言っとくからステージ上げてもらい❗️❗️(子供以来踊ってない)(踊ってるジャンルが違いすぎる)と言われた。どのジャンルでも踊りには𝐺𝐴𝐶𝐻𝐼だから練習行くねん🎶"
+        }
+      ],
+      "evidence_text": "川べりで肌焼いてた時に仲良くなったおばあちゃんに踊るの好きなんですよ〜〜って言ったらほな盆踊りおいで❗️❗️❗️おじさん(運営の人❓)に言っとくからステージ上げてもらい❗️❗️(子供以来踊ってない)(踊ってるジャンルが違いすぎる)と言われた。どのジャンルでも踊りには𝐺𝐴𝐶𝐻𝐼だから練習行くねん🎶",
+      "evidence_url": "https://x.com/Tiffany22420/status/2082041729696551135"
+    },
+    {
+      "category": "曲候補",
+      "type": "曲名",
       "term": "どの踊り",
       "interpretation": "どの踊り",
       "confidence": "要レビュー",
@@ -1952,25 +1959,6 @@
       ],
       "evidence_text": "今日は午後に音楽演奏の仕事を終え、夜から #川崎 の浜町公園の #盆踊り へ。 開始の18:30から雨が降り始め、どんどん降ってきても踊りは全く中断せずに予定通り21時まで無事に開催されました。 途中から月も見えていました🌕 https://t.co/vKVlw3E3yJ",
       "evidence_url": "https://x.com/NemottyNeronero/status/2081371223527969224"
-    },
-    {
-      "category": "曲候補",
-      "type": "曲名",
-      "term": "どんな踊り",
-      "interpretation": "どんな踊り",
-      "confidence": "要レビュー",
-      "reason": "曲名抽出器で検出: song_suffix_near_context",
-      "evidence_count": 1,
-      "evidence": [
-        {
-          "url": "https://x.com/hitomi_wachi/status/2080982824396664894",
-          "date": "2026-07-25T11:45:42+00:00",
-          "account": "@hitomi_wachi",
-          "text": "本日2件目の夏祭は、奈良橋自治会。 ここのお祭りは、「納涼盆踊り大会」というだけあって、盆踊りを楽しまれる方が多く、お揃いの半被と手拭い、そしてさらに光る指輪まで揃えて踊りの輪は華やかでした！ 途中、あれっ？どんな踊りだったっけ？なんて周りのみんなで顔を見合わせる場面もありましたが、一巡すれば、すっかりパーフェクト！風が気持ちの良い夜でしたが、盆踊りをすると少し汗ばみました。 #東大和市 #盆踊り"
-        }
-      ],
-      "evidence_text": "本日2件目の夏祭は、奈良橋自治会。 ここのお祭りは、「納涼盆踊り大会」というだけあって、盆踊りを楽しまれる方が多く、お揃いの半被と手拭い、そしてさらに光る指輪まで揃えて踊りの輪は華やかでした！ 途中、あれっ？どんな踊りだったっけ？なんて周りのみんなで顔を見合わせる場面もありましたが、一巡すれば、すっかりパーフェクト！風が気持ちの良い夜でしたが、盆踊りをすると少し汗ばみました。 #東大和市 #盆踊り",
-      "evidence_url": "https://x.com/hitomi_wachi/status/2080982824396664894"
     },
     {
       "category": "曲候補",
@@ -2051,25 +2039,6 @@
     {
       "category": "曲候補",
       "type": "曲名",
-      "term": "はじめましての高松音頭",
-      "interpretation": "はじめましての高松音頭",
-      "confidence": "要レビュー",
-      "reason": "曲名抽出器で検出: song_suffix_near_context",
-      "evidence_count": 1,
-      "evidence": [
-        {
-          "url": "https://x.com/pompelmo_pesco/status/2080973689131278573",
-          "date": "2026-07-25T11:09:24+00:00",
-          "account": "@pompelmo_pesco",
-          "text": "今日は午後は池袋で仕事だったので、帰りに鬼子母神盆踊りと思っていたら、延期に😳 なので、高松二丁目町会盆踊りに！ はじめましての高松音頭！ 小さいお子さんが太鼓叩いたりしていて、微笑ましかった！ #要町 #盆踊り https://t.co/IsHZiR8fHE"
-        }
-      ],
-      "evidence_text": "今日は午後は池袋で仕事だったので、帰りに鬼子母神盆踊りと思っていたら、延期に😳 なので、高松二丁目町会盆踊りに！ はじめましての高松音頭！ 小さいお子さんが太鼓叩いたりしていて、微笑ましかった！ #要町 #盆踊り https://t.co/IsHZiR8fHE",
-      "evidence_url": "https://x.com/pompelmo_pesco/status/2080973689131278573"
-    },
-    {
-      "category": "曲候補",
-      "type": "曲名",
       "term": "ばりばり踊り",
       "interpretation": "ばりばり踊り",
       "confidence": "要レビュー",
@@ -2089,25 +2058,6 @@
     {
       "category": "曲候補",
       "type": "曲名",
-      "term": "ひろしのさくら音頭",
-      "interpretation": "ひろしのさくら音頭",
-      "confidence": "要レビュー",
-      "reason": "曲名抽出器で検出: song_suffix_near_context",
-      "evidence_count": 1,
-      "evidence": [
-        {
-          "url": "https://x.com/BaK_ao52/status/2080995370046558469",
-          "date": "2026-07-25T12:35:33+00:00",
-          "account": "@BaK_ao52",
-          "text": "「えどちゃん音頭」は丸4つじゃなくて2つだったと思うんですけど。ねぇ先生？ まぁ「ひろしのさくら音頭」が踊れたからいいや。 #盆踊り #江戸川区"
-        }
-      ],
-      "evidence_text": "「えどちゃん音頭」は丸4つじゃなくて2つだったと思うんですけど。ねぇ先生？ まぁ「ひろしのさくら音頭」が踊れたからいいや。 #盆踊り #江戸川区",
-      "evidence_url": "https://x.com/BaK_ao52/status/2080995370046558469"
-    },
-    {
-      "category": "曲候補",
-      "type": "曲名",
       "term": "ほっぺちゃん音頭",
       "interpretation": "ほっぺちゃん音頭",
       "confidence": "要レビュー",
@@ -2123,25 +2073,6 @@
       ],
       "evidence_text": "「7/25（土）-26（日）開催の喜多見盆踊り大会にて「ほっぺちゃん音頭」が流れます！」これに行かなかったの、痛恨すぎる→NowBrowsing: アニメ『ほっぺちゃん ～サン王国と黒ほっぺ団の秘密～』 https://t.co/sQAtxtXWBv",
       "evidence_url": "https://x.com/harunoto/status/2081964837270433813"
-    },
-    {
-      "category": "曲候補",
-      "type": "曲名",
-      "term": "まさかの大東京音頭",
-      "interpretation": "まさかの大東京音頭",
-      "confidence": "要レビュー",
-      "reason": "曲名抽出器で検出: song_suffix_near_context",
-      "evidence_count": 1,
-      "evidence": [
-        {
-          "url": "https://x.com/kasui21/status/2080986074353127545",
-          "date": "2026-07-25T11:58:37+00:00",
-          "account": "@kasui21",
-          "text": "今日の櫓 なんだかんだ来た事無かったけどすごい！みんなで踊ってる！！ラーの方々殆ど居なくて地元の方が殆どだったんだけど輪が二重三重出来てる！ 大東京音頭×3 東京音頭×2 白浜音頭×1 炭坑節×1 日光和楽踊り×1 炭坑節×1 まさかの大東京音頭3回……踊りたかったから満足した！ https://t.co/mxWBZ9PJyl"
-        }
-      ],
-      "evidence_text": "今日の櫓 なんだかんだ来た事無かったけどすごい！みんなで踊ってる！！ラーの方々殆ど居なくて地元の方が殆どだったんだけど輪が二重三重出来てる！ 大東京音頭×3 東京音頭×2 白浜音頭×1 炭坑節×1 日光和楽踊り×1 炭坑節×1 まさかの大東京音頭3回……踊りたかったから満足した！ https://t.co/mxWBZ9PJyl",
-      "evidence_url": "https://x.com/kasui21/status/2080986074353127545"
     },
     {
       "category": "曲候補",
@@ -2222,25 +2153,6 @@
     {
       "category": "曲候補",
       "type": "曲名",
-      "term": "も個人的に好きな踊り",
-      "interpretation": "も個人的に好きな踊り",
-      "confidence": "要レビュー",
-      "reason": "曲名抽出器で検出: song_suffix_in_context, song_suffix_near_context",
-      "evidence_count": 1,
-      "evidence": [
-        {
-          "url": "https://x.com/lucasuke/status/2080987238620639423",
-          "date": "2026-07-25T12:03:15+00:00",
-          "account": "@lucasuke",
-          "text": "堀留公園盆踊り大会に行ってきました！ 堀留であるよと教えていただき、場所を調べたら東京キモノショーでも訪れた人形町の公園！ウキウキと参加しました！🕺 がっつりと盆踊りが楽しめるお祭りで、曲目も個人的に好きな踊りが多く、めっちゃくちゃ楽しかったです・・！来年も参加したいです！！✨ https://t.co/4vhKRLnyRe"
-        }
-      ],
-      "evidence_text": "堀留公園盆踊り大会に行ってきました！ 堀留であるよと教えていただき、場所を調べたら東京キモノショーでも訪れた人形町の公園！ウキウキと参加しました！🕺 がっつりと盆踊りが楽しめるお祭りで、曲目も個人的に好きな踊りが多く、めっちゃくちゃ楽しかったです・・！来年も参加したいです！！✨ https://t.co/4vhKRLnyRe",
-      "evidence_url": "https://x.com/lucasuke/status/2080987238620639423"
-    },
-    {
-      "category": "曲候補",
-      "type": "曲名",
       "term": "も含めて2曲踊り",
       "interpretation": "も含めて2曲踊り",
       "confidence": "要レビュー",
@@ -2317,21 +2229,40 @@
     {
       "category": "曲候補",
       "type": "曲名",
-      "term": "アラレちゃん音頭",
-      "interpretation": "アラレちゃん音頭",
+      "term": "わらび音頭",
+      "interpretation": "わらび音頭",
       "confidence": "要レビュー",
       "reason": "曲名抽出器で検出: song_suffix_near_context",
       "evidence_count": 1,
       "evidence": [
         {
-          "url": "https://x.com/HyMvi1/status/2081575194506993973",
-          "date": "2026-07-27T02:59:34+00:00",
-          "account": "@HyMvi1",
-          "text": "@S7_Michi 私も子供の頃以来の盆踊りだったので、ノリノリで踊りも激しくてびっくりしました🕺でも昔ながらの曲やフリもあって、すっごく楽しかったです！ 我が家も近所のお祭りでは盆踊りを見かけないです。近所で踊りたいですよね☺️アラレちゃん音頭を踊りたい〜"
+          "url": "https://x.com/yoritaka11/status/2082039568350761394",
+          "date": "2026-07-28T09:44:50+00:00",
+          "account": "@yoritaka11",
+          "text": "#北町５丁目町会 納涼盆踊り大会が行われました。木踊会の皆さんをはじめ、地域の皆さんと一緒に、わらび音頭を踊ることが出来ました。斎藤会長をはじめ北町５丁目町会の皆さん、お世話になりました。#蕨市 #蕨市長 #よりたか英雄 #あったか市政 https://t.co/jFeUH0qHkl https://t.co/kCPFzUVMVN"
         }
       ],
-      "evidence_text": "@S7_Michi 私も子供の頃以来の盆踊りだったので、ノリノリで踊りも激しくてびっくりしました🕺でも昔ながらの曲やフリもあって、すっごく楽しかったです！ 我が家も近所のお祭りでは盆踊りを見かけないです。近所で踊りたいですよね☺️アラレちゃん音頭を踊りたい〜",
-      "evidence_url": "https://x.com/HyMvi1/status/2081575194506993973"
+      "evidence_text": "#北町５丁目町会 納涼盆踊り大会が行われました。木踊会の皆さんをはじめ、地域の皆さんと一緒に、わらび音頭を踊ることが出来ました。斎藤会長をはじめ北町５丁目町会の皆さん、お世話になりました。#蕨市 #蕨市長 #よりたか英雄 #あったか市政 https://t.co/jFeUH0qHkl https://t.co/kCPFzUVMVN",
+      "evidence_url": "https://x.com/yoritaka11/status/2082039568350761394"
+    },
+    {
+      "category": "曲候補",
+      "type": "曲名",
+      "term": "アンパンマン音頭",
+      "interpretation": "アンパンマン音頭",
+      "confidence": "要レビュー",
+      "reason": "曲名抽出器で検出: song_suffix_near_context",
+      "evidence_count": 1,
+      "evidence": [
+        {
+          "url": "https://x.com/hikoukimono/status/2082065991266336992",
+          "date": "2026-07-28T11:29:49+00:00",
+          "account": "@hikoukimono",
+          "text": "@6gp7PAjvkTGzPw2 隊員による余興（ちんどん屋） 時間：①17:30～17:50 / ②18:10～18:30 キッズダンス「GLOW」 時間： 盆踊り（やぐら周辺） 時間： 東京音頭 •炭坑節 •ドラえもん音頭 •アンパンマン音頭 隊員によるステージパフォーマンス（マツケンサンバ改） 時間が去年より短いので、不明です"
+        }
+      ],
+      "evidence_text": "@6gp7PAjvkTGzPw2 隊員による余興（ちんどん屋） 時間：①17:30～17:50 / ②18:10～18:30 キッズダンス「GLOW」 時間： 盆踊り（やぐら周辺） 時間： 東京音頭 •炭坑節 •ドラえもん音頭 •アンパンマン音頭 隊員によるステージパフォーマンス（マツケンサンバ改） 時間が去年より短いので、不明です",
+      "evidence_url": "https://x.com/hikoukimono/status/2082065991266336992"
     },
     {
       "category": "曲候補",
@@ -2351,6 +2282,25 @@
       ],
       "evidence_text": "うちのアパート前は今日明日、盆踊りの日…オバQ音頭で盛り上がる(笑)",
       "evidence_url": "https://x.com/kamania_zonnen/status/2081692518287384819"
+    },
+    {
+      "category": "曲候補",
+      "type": "曲名",
+      "term": "キッズ向け今どきダンスより炭坑節",
+      "interpretation": "キッズ向け今どきダンスより炭坑節",
+      "confidence": "要レビュー",
+      "reason": "曲名抽出器で検出: song_suffix_near_context",
+      "evidence_count": 1,
+      "evidence": [
+        {
+          "url": "https://x.com/Miemie1313/status/2082070072378671429",
+          "date": "2026-07-28T11:46:02+00:00",
+          "account": "@Miemie1313",
+          "text": "18時30分から20時まで盆踊りの練習してきた!キッズ向け今どきダンスより炭坑節やらマツケンサンバみたいな何となく覚えてる曲は湧くねぇ。マツケンサンバおすすめ😂😂😂明日は太鼓練習だね。8月1日まで連日頑張るぞ!"
+        }
+      ],
+      "evidence_text": "18時30分から20時まで盆踊りの練習してきた!キッズ向け今どきダンスより炭坑節やらマツケンサンバみたいな何となく覚えてる曲は湧くねぇ。マツケンサンバおすすめ😂😂😂明日は太鼓練習だね。8月1日まで連日頑張るぞ!",
+      "evidence_url": "https://x.com/Miemie1313/status/2082070072378671429"
     },
     {
       "category": "曲候補",
@@ -2412,25 +2362,6 @@
     {
       "category": "曲候補",
       "type": "曲名",
-      "term": "スッキリ音頭",
-      "interpretation": "スッキリ音頭",
-      "confidence": "要レビュー",
-      "reason": "曲名抽出器で検出: song_suffix_near_context",
-      "evidence_count": 1,
-      "evidence": [
-        {
-          "url": "https://x.com/HiranoHarumochi/status/2080968742708949001",
-          "date": "2026-07-25T10:49:45+00:00",
-          "account": "@HiranoHarumochi",
-          "text": "7/25（土）#あすと納涼流し踊り 。見様見真似で盆踊りをだいぶ踊れてきました。 スッキリ音頭が最近のお気に入り❗️ 地域の方とまちづくりについて意見交換もできて良かったです♪消防団の方とも一緒に踊ったり♪ https://t.co/2o05RNgI1v"
-        }
-      ],
-      "evidence_text": "7/25（土）#あすと納涼流し踊り 。見様見真似で盆踊りをだいぶ踊れてきました。 スッキリ音頭が最近のお気に入り❗️ 地域の方とまちづくりについて意見交換もできて良かったです♪消防団の方とも一緒に踊ったり♪ https://t.co/2o05RNgI1v",
-      "evidence_url": "https://x.com/HiranoHarumochi/status/2080968742708949001"
-    },
-    {
-      "category": "曲候補",
-      "type": "曲名",
       "term": "スモーキーズ音頭",
       "interpretation": "スモーキーズ音頭",
       "confidence": "要レビュー",
@@ -2465,25 +2396,6 @@
       ],
       "evidence_text": "筋肉以外の週末… 盆踊りでは、川崎おどり、マツケンサンバ、ズンドコ節、ビューティフルサンデー、ダンシングヒーロー、ジャンボリーミッキーなどを踊りました✨ #西岡よしたか #国民民主党 #神奈川18区 https://t.co/YTmHE5NZ3m",
       "evidence_url": "https://x.com/nishioka_18/status/2081963788514041962"
-    },
-    {
-      "category": "曲候補",
-      "type": "曲名",
-      "term": "ソーラン節",
-      "interpretation": "ソーラン節",
-      "confidence": "要レビュー",
-      "reason": "曲名抽出器で検出: known_song_context",
-      "evidence_count": 1,
-      "evidence": [
-        {
-          "url": "https://x.com/natsukichi06A/status/2081019502431752270",
-          "date": "2026-07-25T14:11:27+00:00",
-          "account": "@natsukichi06A",
-          "text": "近所の盆踊り行ったら、盆踊りのあと好き過ぎて滅！とかソーラン節とかが始まって、娘のテンションMAX汗だくで踊っていたww 偶然あった保育園のお友達、ドン引きしてた🤣"
-        }
-      ],
-      "evidence_text": "近所の盆踊り行ったら、盆踊りのあと好き過ぎて滅！とかソーラン節とかが始まって、娘のテンションMAX汗だくで踊っていたww 偶然あった保育園のお友達、ドン引きしてた🤣",
-      "evidence_url": "https://x.com/natsukichi06A/status/2081019502431752270"
     },
     {
       "category": "曲候補",
@@ -2621,21 +2533,21 @@
     {
       "category": "曲候補",
       "type": "曲名",
-      "term": "上之は音頭",
-      "interpretation": "上之は音頭",
+      "term": "下北沢のシモキタ音頭",
+      "interpretation": "下北沢のシモキタ音頭",
       "confidence": "要レビュー",
       "reason": "曲名抽出器で検出: song_suffix_near_context",
       "evidence_count": 1,
       "evidence": [
         {
-          "url": "https://x.com/melomelokick/status/2080970018460999929",
-          "date": "2026-07-25T10:54:49+00:00",
-          "account": "@melomelokick",
-          "text": "上之の盆踊り会場のようす たぶんもう吊ってるころかと 上之は音頭中止したんでしたっけね 私は別件で和田あたりでやってるらしい別のなんやら集いに向かわねばならないのでここで退散しました https://t.co/dAqnOPKp1T"
+          "url": "https://x.com/Atutakamama7034/status/2082073749873177069",
+          "date": "2026-07-28T12:00:39+00:00",
+          "account": "@Atutakamama7034",
+          "text": "深大寺 盆踊り。途中、少し雨が降りましたが、中断することなく、ほぼ3時間しっかり踊れました。調布音頭と深大寺小唄、大好きです。火の国大鼓のリピート率、前からこんなに高かったですかね?下北沢のシモキタ音頭並みかも？ #盆踊り #深大寺 https://t.co/DGqKjIj4Wl"
         }
       ],
-      "evidence_text": "上之の盆踊り会場のようす たぶんもう吊ってるころかと 上之は音頭中止したんでしたっけね 私は別件で和田あたりでやってるらしい別のなんやら集いに向かわねばならないのでここで退散しました https://t.co/dAqnOPKp1T",
-      "evidence_url": "https://x.com/melomelokick/status/2080970018460999929"
+      "evidence_text": "深大寺 盆踊り。途中、少し雨が降りましたが、中断することなく、ほぼ3時間しっかり踊れました。調布音頭と深大寺小唄、大好きです。火の国大鼓のリピート率、前からこんなに高かったですかね?下北沢のシモキタ音頭並みかも？ #盆踊り #深大寺 https://t.co/DGqKjIj4Wl",
+      "evidence_url": "https://x.com/Atutakamama7034/status/2082073749873177069"
     },
     {
       "category": "曲候補",
@@ -2697,6 +2609,25 @@
     {
       "category": "曲候補",
       "type": "曲名",
+      "term": "今からクックロビン音頭",
+      "interpretation": "今からクックロビン音頭",
+      "confidence": "要レビュー",
+      "reason": "曲名抽出器で検出: song_suffix_near_context",
+      "evidence_count": 1,
+      "evidence": [
+        {
+          "url": "https://x.com/TU17184b/status/2082080556746182848",
+          "date": "2026-07-28T12:27:42+00:00",
+          "account": "@TU17184b",
+          "text": "神田明神のアニソン盆踊り行ける可能性が高まってきたので、今からクックロビン音頭やダンシング・ヒーローを聴いてコンセントレーションを高めてる。今までの人生、色んな祭に行ったけど間違いなく一番ヴァイブスが上がるのは神田明神のアニソン盆踊り。あれは盆踊りという名の野外レイヴだ。"
+        }
+      ],
+      "evidence_text": "神田明神のアニソン盆踊り行ける可能性が高まってきたので、今からクックロビン音頭やダンシング・ヒーローを聴いてコンセントレーションを高めてる。今までの人生、色んな祭に行ったけど間違いなく一番ヴァイブスが上がるのは神田明神のアニソン盆踊り。あれは盆踊りという名の野外レイヴだ。",
+      "evidence_url": "https://x.com/TU17184b/status/2082080556746182848"
+    },
+    {
+      "category": "曲候補",
+      "type": "曲名",
       "term": "今となっては踊り",
       "interpretation": "今となっては踊り",
       "confidence": "要レビュー",
@@ -2712,6 +2643,25 @@
       ],
       "evidence_text": "@npnp_9 今となっては踊りの人なんで共有出来ませんよ😉除きに行かせてもらいますね🫣",
       "evidence_url": "https://x.com/2tsuo_g/status/2081662471983788352"
+    },
+    {
+      "category": "曲候補",
+      "type": "曲名",
+      "term": "今夏の初踊り",
+      "interpretation": "今夏の初踊り",
+      "confidence": "要レビュー",
+      "reason": "曲名抽出器で検出: song_suffix_near_context",
+      "evidence_count": 1,
+      "evidence": [
+        {
+          "url": "https://x.com/myu_sucre/status/2082057451629871432",
+          "date": "2026-07-28T10:55:53+00:00",
+          "account": "@myu_sucre",
+          "text": "高島平七丁目の盆踊り大会が、今夏の初踊りだ。"
+        }
+      ],
+      "evidence_text": "高島平七丁目の盆踊り大会が、今夏の初踊りだ。",
+      "evidence_url": "https://x.com/myu_sucre/status/2082057451629871432"
     },
     {
       "category": "曲候補",
@@ -2830,6 +2780,25 @@
     {
       "category": "曲候補",
       "type": "曲名",
+      "term": "光市民音頭",
+      "interpretation": "光市民音頭",
+      "confidence": "要レビュー",
+      "reason": "曲名抽出器で検出: song_suffix_near_context",
+      "evidence_count": 1,
+      "evidence": [
+        {
+          "url": "https://x.com/market_truster/status/2082077357343744052",
+          "date": "2026-07-28T12:14:59+00:00",
+          "account": "@market_truster",
+          "text": "光・虹ケ浜で「納涼夜市」 20年ぶり「光市民音頭」で盆踊りも（みんなの経済新聞ネットワーク） https://t.co/B8UVimbMAq"
+        }
+      ],
+      "evidence_text": "光・虹ケ浜で「納涼夜市」 20年ぶり「光市民音頭」で盆踊りも（みんなの経済新聞ネットワーク） https://t.co/B8UVimbMAq",
+      "evidence_url": "https://x.com/market_truster/status/2082077357343744052"
+    },
+    {
+      "category": "曲候補",
+      "type": "曲名",
       "term": "全国民が踊り",
       "interpretation": "全国民が踊り",
       "confidence": "要レビュー",
@@ -2864,25 +2833,6 @@
       ],
       "evidence_text": "軽井沢ブログ カントリージェントルマンへの道 『【軽井沢】追分盆踊り前夜祭2026（8/13 19:00～＠追分公民館）』 ●追分盆踊りで踊る15曲⇒前夜祭で太鼓や踊りの練習ができますよ ●追分盆踊り＜8/14～16 19:00～＠浅間神社境内＞ … #軽井沢 #追分 https://t.co/kz6LSBqKJ6",
       "evidence_url": "https://x.com/TomKamoshida/status/2081566909515080134"
-    },
-    {
-      "category": "曲候補",
-      "type": "曲名",
-      "term": "北区音頭もっと踊り",
-      "interpretation": "北区音頭もっと踊り",
-      "confidence": "要レビュー",
-      "reason": "曲名抽出器で検出: song_suffix_near_context",
-      "evidence_count": 1,
-      "evidence": [
-        {
-          "url": "https://x.com/okihcim4317/status/2080995339780366826",
-          "date": "2026-07-25T12:35:26+00:00",
-          "account": "@okihcim4317",
-          "text": "本日は東田端納涼盆踊り大会へ 8年振りの開催だとか 最近マスクが暑いからってベール着用のｸﾛさん 雨が降ってきて中断になりましたが、太鼓を練習してきた子供たちのために締めを雨の中みなさんで🥹 当て振りが多く私レベルでもとっても楽しめました 北区音頭もっと踊りたかった〜 https://t.co/fsdX937hR1"
-        }
-      ],
-      "evidence_text": "本日は東田端納涼盆踊り大会へ 8年振りの開催だとか 最近マスクが暑いからってベール着用のｸﾛさん 雨が降ってきて中断になりましたが、太鼓を練習してきた子供たちのために締めを雨の中みなさんで🥹 当て振りが多く私レベルでもとっても楽しめました 北区音頭もっと踊りたかった〜 https://t.co/fsdX937hR1",
-      "evidence_url": "https://x.com/okihcim4317/status/2080995339780366826"
     },
     {
       "category": "曲候補",
@@ -2925,6 +2875,25 @@
     {
       "category": "曲候補",
       "type": "曲名",
+      "term": "唄も踊り",
+      "interpretation": "唄も踊り",
+      "confidence": "要レビュー",
+      "reason": "曲名抽出器で検出: song_suffix_near_context",
+      "evidence_count": 1,
+      "evidence": [
+        {
+          "url": "https://x.com/KatsuoOkuhara/status/2082072757957980670",
+          "date": "2026-07-28T11:56:43+00:00",
+          "account": "@KatsuoOkuhara",
+          "text": "踊りの振りや型の厳格な保存・伝承よりも、このひと時の“輪踊り”の時間を楽しむことこそ第一とする、保存会さんの姿勢が明確である。新しい踊りが生まれたら、それはそれで面白いじゃないか、とおっしゃるのも潔い。 日頃交流もあるらしき南砺地域の各保存会さん同士は、唄も踊りもよく似た共通する…"
+        }
+      ],
+      "evidence_text": "踊りの振りや型の厳格な保存・伝承よりも、このひと時の“輪踊り”の時間を楽しむことこそ第一とする、保存会さんの姿勢が明確である。新しい踊りが生まれたら、それはそれで面白いじゃないか、とおっしゃるのも潔い。 日頃交流もあるらしき南砺地域の各保存会さん同士は、唄も踊りもよく似た共通する…",
+      "evidence_url": "https://x.com/KatsuoOkuhara/status/2082072757957980670"
+    },
+    {
+      "category": "曲候補",
+      "type": "曲名",
       "term": "国富音頭",
       "interpretation": "国富音頭",
       "confidence": "要レビュー",
@@ -2940,6 +2909,25 @@
       ],
       "evidence_text": "颯ちゃんの突き抜ける歌声をバックに やぐら囲んで盆踊り🏮 いいと思います！！ #二見颯一 『#国富音頭』 #宮崎県 #国富町 #盆踊り ※『国富音頭』は颯ちゃんのベストアルバム『#やまびこベスト・プラス』に収録されています！ https://t.co/EyKtYXGnfM",
       "evidence_url": "https://x.com/2ekF9AeLO0WM7iD/status/2081029381158482420"
+    },
+    {
+      "category": "曲候補",
+      "type": "曲名",
+      "term": "地元の人は江州音頭",
+      "interpretation": "地元の人は江州音頭",
+      "confidence": "要レビュー",
+      "reason": "曲名抽出器で検出: song_suffix_near_context",
+      "evidence_count": 1,
+      "evidence": [
+        {
+          "url": "https://x.com/undinereika/status/2082083972142776712",
+          "date": "2026-07-28T12:41:16+00:00",
+          "account": "@undinereika",
+          "text": "@fukiteasobiki 最近は、堺も、イベントで踊る泉州音頭の振りが入って来ていますが、地元の人は江州音頭の振りです。 地元の盆踊りしか行かない人は泉州音頭を知らない人が殆どです。多分泉州音頭も江州音頭と思ってる人が多いです。"
+        }
+      ],
+      "evidence_text": "@fukiteasobiki 最近は、堺も、イベントで踊る泉州音頭の振りが入って来ていますが、地元の人は江州音頭の振りです。 地元の盆踊りしか行かない人は泉州音頭を知らない人が殆どです。多分泉州音頭も江州音頭と思ってる人が多いです。",
+      "evidence_url": "https://x.com/undinereika/status/2082083972142776712"
     },
     {
       "category": "曲候補",
@@ -3001,6 +2989,44 @@
     {
       "category": "曲候補",
       "type": "曲名",
+      "term": "多分泉州音頭も江州音頭",
+      "interpretation": "多分泉州音頭も江州音頭",
+      "confidence": "要レビュー",
+      "reason": "曲名抽出器で検出: song_suffix_near_context",
+      "evidence_count": 1,
+      "evidence": [
+        {
+          "url": "https://x.com/undinereika/status/2082083972142776712",
+          "date": "2026-07-28T12:41:16+00:00",
+          "account": "@undinereika",
+          "text": "@fukiteasobiki 最近は、堺も、イベントで踊る泉州音頭の振りが入って来ていますが、地元の人は江州音頭の振りです。 地元の盆踊りしか行かない人は泉州音頭を知らない人が殆どです。多分泉州音頭も江州音頭と思ってる人が多いです。"
+        }
+      ],
+      "evidence_text": "@fukiteasobiki 最近は、堺も、イベントで踊る泉州音頭の振りが入って来ていますが、地元の人は江州音頭の振りです。 地元の盆踊りしか行かない人は泉州音頭を知らない人が殆どです。多分泉州音頭も江州音頭と思ってる人が多いです。",
+      "evidence_url": "https://x.com/undinereika/status/2082083972142776712"
+    },
+    {
+      "category": "曲候補",
+      "type": "曲名",
+      "term": "大きな踊り",
+      "interpretation": "大きな踊り",
+      "confidence": "要レビュー",
+      "reason": "曲名抽出器で検出: song_suffix_near_context",
+      "evidence_count": 1,
+      "evidence": [
+        {
+          "url": "https://x.com/yoritaka11/status/2082037547791008191",
+          "date": "2026-07-28T09:36:48+00:00",
+          "account": "@yoritaka11",
+          "text": "#北町４丁目町会 納涼盆踊り大会にお伺いしました。レクダンスに続き、皆さんと一緒にわらび音頭を踊らせていただき、大きな踊りの輪が広がりました。平井会長をはじめとする北町４丁目町会の皆さん、お世話になりました。#蕨市 #蕨市長 #よりたか英雄 #あったか市政 https://t.co/6AZsmMfhZR https://t.co/9NXicduUKu"
+        }
+      ],
+      "evidence_text": "#北町４丁目町会 納涼盆踊り大会にお伺いしました。レクダンスに続き、皆さんと一緒にわらび音頭を踊らせていただき、大きな踊りの輪が広がりました。平井会長をはじめとする北町４丁目町会の皆さん、お世話になりました。#蕨市 #蕨市長 #よりたか英雄 #あったか市政 https://t.co/6AZsmMfhZR https://t.co/9NXicduUKu",
+      "evidence_url": "https://x.com/yoritaka11/status/2082037547791008191"
+    },
+    {
+      "category": "曲候補",
+      "type": "曲名",
       "term": "大和阿波おどり",
       "interpretation": "大和阿波おどり",
       "confidence": "要レビュー",
@@ -3035,6 +3061,25 @@
       ],
       "evidence_text": "おだか夏まつり2026 開催！ 8月14日（金）13:00〜20:00 浮舟文化会館前（小雨決行） 露店、高所作業車体験、大悲山大蛇踊り、ものまねフェスティバル、相馬野馬追太鼓、盆踊り大抽選会、投げ餅 ぜひお越しください 主催／小高商工会 #南相馬市 #小高 #夏まつり https://t.co/kG13ER2co7",
       "evidence_url": "https://x.com/odakakankou/status/2081650317624824128"
+    },
+    {
+      "category": "曲候補",
+      "type": "曲名",
+      "term": "大江戸東京音頭",
+      "interpretation": "大江戸東京音頭",
+      "confidence": "要レビュー",
+      "reason": "曲名抽出器で検出: song_suffix_near_context",
+      "evidence_count": 1,
+      "evidence": [
+        {
+          "url": "https://x.com/Very_JAPAN/status/2082038105302012000",
+          "date": "2026-07-28T09:39:01+00:00",
+          "account": "@Very_JAPAN",
+          "text": "青山表参道 善光寺 盆踊り！狭い境内は外国人観光客も立ち寄り凄い人！謝恩納涼盆踊り大会 Tokyo,Aoyama Omotesando BonOdori 2026 DJI Osmo Pocket 4P https://t.co/wZvWcNjFa8 炭坑節、東京みなと音頭、にっぽんチャチャチャ、おこさ節、大江戸東京音頭など #盆踊り #表参道 https://t.co/hO31OoExaf"
+        }
+      ],
+      "evidence_text": "青山表参道 善光寺 盆踊り！狭い境内は外国人観光客も立ち寄り凄い人！謝恩納涼盆踊り大会 Tokyo,Aoyama Omotesando BonOdori 2026 DJI Osmo Pocket 4P https://t.co/wZvWcNjFa8 炭坑節、東京みなと音頭、にっぽんチャチャチャ、おこさ節、大江戸東京音頭など #盆踊り #表参道 https://t.co/hO31OoExaf",
+      "evidence_url": "https://x.com/Very_JAPAN/status/2082038105302012000"
     },
     {
       "category": "曲候補",
@@ -3077,25 +3122,6 @@
     {
       "category": "曲候補",
       "type": "曲名",
-      "term": "子どもにはこういう季節",
-      "interpretation": "子どもにはこういう季節",
-      "confidence": "要レビュー",
-      "reason": "曲名抽出器で検出: song_suffix_near_context",
-      "evidence_count": 1,
-      "evidence": [
-        {
-          "url": "https://x.com/qishiyilu71/status/2081001911948644527",
-          "date": "2026-07-25T13:01:33+00:00",
-          "account": "@qishiyilu71",
-          "text": "実家まで車で行って、町内納涼大会に行ってきた。残念ながら雨にやられて途中で中止になってしまったが。盆踊り見られず。 昨今話題の体験格差じゃないけど、子どもにはこういう季節感のある行事をたくさん体験させたいなと思っている。だから夕立も雷もまたいい経験なのよ。 https://t.co/QHWBuvKGT5"
-        }
-      ],
-      "evidence_text": "実家まで車で行って、町内納涼大会に行ってきた。残念ながら雨にやられて途中で中止になってしまったが。盆踊り見られず。 昨今話題の体験格差じゃないけど、子どもにはこういう季節感のある行事をたくさん体験させたいなと思っている。だから夕立も雷もまたいい経験なのよ。 https://t.co/QHWBuvKGT5",
-      "evidence_url": "https://x.com/qishiyilu71/status/2081001911948644527"
-    },
-    {
-      "category": "曲候補",
-      "type": "曲名",
       "term": "子ども会が踊り",
       "interpretation": "子ども会が踊り",
       "confidence": "要レビュー",
@@ -3111,25 +3137,6 @@
       ],
       "evidence_text": "８月１日（土）、２日（日）に中川公園（Ｂ地区ふれあい広場）で１８時から「中川納涼大盆踊り大会」が行われます。４自治会合同、今年で３回目の開催です。子ども会が踊りで出演！多数の夜店やキッチンカーも出ます！ぜひご来場ください。※雨天の場合は中止となります #夏祭り #盆踊り https://t.co/IkYpHt2niO",
       "evidence_url": "https://x.com/adachi_city/status/2081945309396308295"
-    },
-    {
-      "category": "曲候補",
-      "type": "曲名",
-      "term": "子供たちに加えて踊り",
-      "interpretation": "子供たちに加えて踊り",
-      "confidence": "要レビュー",
-      "reason": "曲名抽出器で検出: song_suffix_near_context",
-      "evidence_count": 1,
-      "evidence": [
-        {
-          "url": "https://x.com/Ftomokn/status/2080982269062258961",
-          "date": "2026-07-25T11:43:30+00:00",
-          "account": "@Ftomokn",
-          "text": "大久保公園で開催された「大久保三町合同盆踊り」に参加。 大久保東、中、西町内会が合同で長年実施しているお祭りです。 私が到着した頃は小雨で、ちょうど盆踊りが始まるところ。 櫓の上には、子供たちに加えて踊りを教える地域の方々。 まさに伝統や文化の継承を目の当たりにした気持ちです（表現が固いですね💦）。 運営の方には、「何とか天候がもって開催出来たこと、本当におめでとうございます」とお声掛けした直後に、激しい雷雨が😓 その後のプログラムも継続困難に。 久しぶりの恵みの雨という側面もありましたが、なかなかお祭り運営の難しさも感じました。 運営にご尽力された皆様、本当にお疲れ様でした🙇‍♂️ #大久保"
-        }
-      ],
-      "evidence_text": "大久保公園で開催された「大久保三町合同盆踊り」に参加。 大久保東、中、西町内会が合同で長年実施しているお祭りです。 私が到着した頃は小雨で、ちょうど盆踊りが始まるところ。 櫓の上には、子供たちに加えて踊りを教える地域の方々。 まさに伝統や文化の継承を目の当たりにした気持ちです（表現が固いですね💦）。 運営の方には、「何とか天候がもって開催出来たこと、本当におめでとうございます」とお声掛けした直後に、激しい雷雨が😓 その後のプログラムも継続困難に。 久しぶりの恵みの雨という側面もありましたが、なかなかお祭り運営の難しさも感じました。 運営にご尽力された皆様、本当にお疲れ様でした🙇‍♂️ #大久保",
-      "evidence_url": "https://x.com/Ftomokn/status/2080982269062258961"
     },
     {
       "category": "曲候補",
@@ -3267,6 +3274,25 @@
     {
       "category": "曲候補",
       "type": "曲名",
+      "term": "新しい踊り",
+      "interpretation": "新しい踊り",
+      "confidence": "要レビュー",
+      "reason": "曲名抽出器で検出: song_suffix_near_context",
+      "evidence_count": 1,
+      "evidence": [
+        {
+          "url": "https://x.com/KatsuoOkuhara/status/2082072757957980670",
+          "date": "2026-07-28T11:56:43+00:00",
+          "account": "@KatsuoOkuhara",
+          "text": "踊りの振りや型の厳格な保存・伝承よりも、このひと時の“輪踊り”の時間を楽しむことこそ第一とする、保存会さんの姿勢が明確である。新しい踊りが生まれたら、それはそれで面白いじゃないか、とおっしゃるのも潔い。 日頃交流もあるらしき南砺地域の各保存会さん同士は、唄も踊りもよく似た共通する…"
+        }
+      ],
+      "evidence_text": "踊りの振りや型の厳格な保存・伝承よりも、このひと時の“輪踊り”の時間を楽しむことこそ第一とする、保存会さんの姿勢が明確である。新しい踊りが生まれたら、それはそれで面白いじゃないか、とおっしゃるのも潔い。 日頃交流もあるらしき南砺地域の各保存会さん同士は、唄も踊りもよく似た共通する…",
+      "evidence_url": "https://x.com/KatsuoOkuhara/status/2082072757957980670"
+    },
+    {
+      "category": "曲候補",
+      "type": "曲名",
       "term": "新曲BENBEN音頭",
       "interpretation": "新曲BENBEN音頭",
       "confidence": "要レビュー",
@@ -3305,25 +3331,6 @@
     {
       "category": "曲候補",
       "type": "曲名",
-      "term": "日光和楽踊り",
-      "interpretation": "日光和楽踊り",
-      "confidence": "要レビュー",
-      "reason": "曲名抽出器で検出: song_suffix_near_context",
-      "evidence_count": 1,
-      "evidence": [
-        {
-          "url": "https://x.com/kasui21/status/2080986074353127545",
-          "date": "2026-07-25T11:58:37+00:00",
-          "account": "@kasui21",
-          "text": "今日の櫓 なんだかんだ来た事無かったけどすごい！みんなで踊ってる！！ラーの方々殆ど居なくて地元の方が殆どだったんだけど輪が二重三重出来てる！ 大東京音頭×3 東京音頭×2 白浜音頭×1 炭坑節×1 日光和楽踊り×1 炭坑節×1 まさかの大東京音頭3回……踊りたかったから満足した！ https://t.co/mxWBZ9PJyl"
-        }
-      ],
-      "evidence_text": "今日の櫓 なんだかんだ来た事無かったけどすごい！みんなで踊ってる！！ラーの方々殆ど居なくて地元の方が殆どだったんだけど輪が二重三重出来てる！ 大東京音頭×3 東京音頭×2 白浜音頭×1 炭坑節×1 日光和楽踊り×1 炭坑節×1 まさかの大東京音頭3回……踊りたかったから満足した！ https://t.co/mxWBZ9PJyl",
-      "evidence_url": "https://x.com/kasui21/status/2080986074353127545"
-    },
-    {
-      "category": "曲候補",
-      "type": "曲名",
       "term": "来年こそキラキラつけて踊り",
       "interpretation": "来年こそキラキラつけて踊り",
       "confidence": "要レビュー",
@@ -3339,6 +3346,44 @@
       ],
       "evidence_text": "はじめて参加しました！ キッチンカー、やぐら、盆踊り、花火！満喫🎇👘 ホールで踊れてとっても楽しく快感😻 よさこいと盆踊りのコラボレーションも最高でした✨ 来年こそキラキラつけて踊ります🥺のでまた来年もお願いします…！",
       "evidence_url": "https://x.com/isobon_25/status/2081672811329069173"
+    },
+    {
+      "category": "曲候補",
+      "type": "曲名",
+      "term": "東久留米音頭",
+      "interpretation": "東久留米音頭",
+      "confidence": "要レビュー",
+      "reason": "曲名抽出器で検出: song_suffix_near_context",
+      "evidence_count": 1,
+      "evidence": [
+        {
+          "url": "https://x.com/ENOKEN90592903/status/2082079161271853082",
+          "date": "2026-07-28T12:22:09+00:00",
+          "account": "@ENOKEN90592903",
+          "text": "地元の盆踊りの曲は子供の頃から聞いてるから。 聴くと 記憶がよみがえる😌 #東久留米音頭"
+        }
+      ],
+      "evidence_text": "地元の盆踊りの曲は子供の頃から聞いてるから。 聴くと 記憶がよみがえる😌 #東久留米音頭",
+      "evidence_url": "https://x.com/ENOKEN90592903/status/2082079161271853082"
+    },
+    {
+      "category": "曲候補",
+      "type": "曲名",
+      "term": "東京スカイツリー音頭",
+      "interpretation": "東京スカイツリー音頭",
+      "confidence": "要レビュー",
+      "reason": "曲名抽出器で検出: song_suffix_near_context",
+      "evidence_count": 1,
+      "evidence": [
+        {
+          "url": "https://x.com/takasho06130613/status/2081016072388427826",
+          "date": "2026-07-25T13:57:49+00:00",
+          "account": "@takasho06130613",
+          "text": "7/25(土)舟渡小学校盆踊り ・東京音頭 ・炭鉱節 ・東京スカイツリー音頭 ・ホームラン音頭 ・河内おとこ節 ・板橋音頭(輪) ・一番はじめは ・板橋二輪草音頭 ・板橋区町会連合会音頭 ・舞い上がれITABASHI ・きよしのズンドコ節 ・ごちそう讃 ・毬と殿様 ・舟渡ひろがり音頭"
+        }
+      ],
+      "evidence_text": "7/25(土)舟渡小学校盆踊り ・東京音頭 ・炭鉱節 ・東京スカイツリー音頭 ・ホームラン音頭 ・河内おとこ節 ・板橋音頭(輪) ・一番はじめは ・板橋二輪草音頭 ・板橋区町会連合会音頭 ・舞い上がれITABASHI ・きよしのズンドコ節 ・ごちそう讃 ・毬と殿様 ・舟渡ひろがり音頭",
+      "evidence_url": "https://x.com/takasho06130613/status/2081016072388427826"
     },
     {
       "category": "曲候補",
@@ -3457,25 +3502,6 @@
     {
       "category": "曲候補",
       "type": "曲名",
-      "term": "江州音頭",
-      "interpretation": "江州音頭",
-      "confidence": "要レビュー",
-      "reason": "曲名抽出器で検出: known_song_context, song_suffix_near_context",
-      "evidence_count": 1,
-      "evidence": [
-        {
-          "url": "https://x.com/keloyama/status/2081990049324048743",
-          "date": "2026-07-28T06:28:03+00:00",
-          "account": "@keloyama",
-          "text": "なんと明日は待ちに待った、 第44回すみだ錦糸町河内音頭大盆踊り #錦糸町河内音頭 #河内音頭 #江州音頭 #泉州音頭 https://t.co/qTxvWTgwea"
-        }
-      ],
-      "evidence_text": "なんと明日は待ちに待った、 第44回すみだ錦糸町河内音頭大盆踊り #錦糸町河内音頭 #河内音頭 #江州音頭 #泉州音頭 https://t.co/qTxvWTgwea",
-      "evidence_url": "https://x.com/keloyama/status/2081990049324048743"
-    },
-    {
-      "category": "曲候補",
-      "type": "曲名",
       "term": "江戸川音頭や東京音頭",
       "interpretation": "江戸川音頭や東京音頭",
       "confidence": "要レビュー",
@@ -3590,6 +3616,25 @@
     {
       "category": "曲候補",
       "type": "曲名",
+      "term": "渋谷音頭",
+      "interpretation": "渋谷音頭",
+      "confidence": "要レビュー",
+      "reason": "曲名抽出器で検出: song_suffix_near_context",
+      "evidence_count": 1,
+      "evidence": [
+        {
+          "url": "https://x.com/nippon_edit/status/2082055357401338215",
+          "date": "2026-07-28T10:47:34+00:00",
+          "account": "@nippon_edit",
+          "text": "【第7回渋谷盆踊り2026】 【イベント情報：東京】 開催日時：2026年8月8日（土）18:00～21:30 会場：SHIBUYA109前イベントスペース、道玄坂、文化村通り一帯 住所：東京都渋谷区道玄坂2丁目29 アクセス： ・渋谷駅から徒歩4分 ・神泉駅から徒歩7分 交通規制： ・規制時間：16:30～22:30 ・規制区域：道玄坂通り、文化村通り ・渋谷駅前のスクランブル交差点西側、道玄坂、文化村通りは歩行者専用道路となる イベント内容： ・「渋谷音頭」などのオリジナル曲から定番の東京音頭まで流れる ・射的やスーパーボールすくいなどの縁日屋台 ・多彩なグルメを楽しめるキッチンカー出店 ・SHIBUYA109前の道路上に櫓を建て、老若男女が手を取り合いながら盆踊り 入場：無料・予約不要 歴史： ・2017年（第1回）から開催 ・「渋谷の街の人たちと渋谷に来る人たちの交流の場を作る」をテーマ ・渋谷の夏の風物詩として定着 天気：荒天時は中止となる場合あり ※公式サイトで情報をご確認ください。 *Please check the comment section for"
+        }
+      ],
+      "evidence_text": "【第7回渋谷盆踊り2026】 【イベント情報：東京】 開催日時：2026年8月8日（土）18:00～21:30 会場：SHIBUYA109前イベントスペース、道玄坂、文化村通り一帯 住所：東京都渋谷区道玄坂2丁目29 アクセス： ・渋谷駅から徒歩4分 ・神泉駅から徒歩7分 交通規制： ・規制時間：16:30～22:30 ・規制区域：道玄坂通り、文化村通り ・渋谷駅前のスクランブル交差点西側、道玄坂、文化村通りは歩行者専用道路となる イベント内容： ・「渋谷音頭」などのオリジナル曲から定番の東京音頭まで流れる ・射的やスーパーボールすくいなどの縁日屋台 ・多彩なグルメを楽しめるキッチンカー出店 ・SHIBUYA109前の道路上に櫓を建て、老若男女が手を取り合いながら盆踊り 入場：無料・予約不要 歴史： ・2017年（第1回）から開催 ・「渋谷の街の人たちと渋谷に来る人たちの交流の場を作る」をテーマ ・渋谷の夏の風物詩として定着 天気：荒天時は中止となる場合あり ※公式サイトで情報をご確認ください。 *Please check the comment section for",
+      "evidence_url": "https://x.com/nippon_edit/status/2082055357401338215"
+    },
+    {
+      "category": "曲候補",
+      "type": "曲名",
       "term": "渡田1丁目音頭",
       "interpretation": "渡田1丁目音頭",
       "confidence": "要レビュー",
@@ -3624,6 +3669,25 @@
       ],
       "evidence_text": "@fall_leaf_Kaze クックロビン音頭 知らなかったので今聞いてみたら面白いですね🤣 自由な盆踊り歌楽しいです♪ 高槻界隈はテケテケはにたんか 高槻音頭しか聞こえてこない 炭坑節や河内音頭も無い変わった地域です！",
       "evidence_url": "https://x.com/I1EReY9vLzfRxuu/status/2081665452024246748"
+    },
+    {
+      "category": "曲候補",
+      "type": "曲名",
+      "term": "炭鉱節",
+      "interpretation": "炭鉱節",
+      "confidence": "要レビュー",
+      "reason": "曲名抽出器で検出: song_suffix_near_context",
+      "evidence_count": 1,
+      "evidence": [
+        {
+          "url": "https://x.com/takasho06130613/status/2081016072388427826",
+          "date": "2026-07-25T13:57:49+00:00",
+          "account": "@takasho06130613",
+          "text": "7/25(土)舟渡小学校盆踊り ・東京音頭 ・炭鉱節 ・東京スカイツリー音頭 ・ホームラン音頭 ・河内おとこ節 ・板橋音頭(輪) ・一番はじめは ・板橋二輪草音頭 ・板橋区町会連合会音頭 ・舞い上がれITABASHI ・きよしのズンドコ節 ・ごちそう讃 ・毬と殿様 ・舟渡ひろがり音頭"
+        }
+      ],
+      "evidence_text": "7/25(土)舟渡小学校盆踊り ・東京音頭 ・炭鉱節 ・東京スカイツリー音頭 ・ホームラン音頭 ・河内おとこ節 ・板橋音頭(輪) ・一番はじめは ・板橋二輪草音頭 ・板橋区町会連合会音頭 ・舞い上がれITABASHI ・きよしのズンドコ節 ・ごちそう讃 ・毬と殿様 ・舟渡ひろがり音頭",
+      "evidence_url": "https://x.com/takasho06130613/status/2081016072388427826"
     },
     {
       "category": "曲候補",
@@ -3700,6 +3764,25 @@
       ],
       "evidence_text": "【第52回神楽坂まつり 阿波おどり大会】 開催日時：2026年7月24日(金)・25日(土) 00:00 ハイライト 07:28 新宿区役所つつじ連 15:48 だむだん連 29:08 なにがし連 31:00 牛込遊粋連 36:04 新宿白衣連 38:01 天狗連 43:42 三茶連 50:24 北の御門連 51:24 寶船 55:12 堀切あやめ連 55:59 粋西連 58:33 中村橋新連 59:34 鳳連(おおとり連) 1:01:41 ほおずき連 1:02:51 後楽連 1:04:23 でんわ連 1:05:50 豪雨の輪踊り #神楽坂まつり #神楽坂 #神楽坂阿波踊り #阿波おどり #阿波踊り",
       "evidence_url": "https://www.youtube.com/watch?v=TD9x4txD79M"
+    },
+    {
+      "category": "曲候補",
+      "type": "曲名",
+      "term": "福光にこんな踊り",
+      "interpretation": "福光にこんな踊り",
+      "confidence": "要レビュー",
+      "reason": "曲名抽出器で検出: song_suffix_near_context",
+      "evidence_count": 1,
+      "evidence": [
+        {
+          "url": "https://x.com/KatsuoOkuhara/status/2082074693058900214",
+          "date": "2026-07-28T12:04:24+00:00",
+          "account": "@KatsuoOkuhara",
+          "text": "…要素も多ければこそ、それぞれの地域の特徴を尊重する距離感も窺えて、よい催し。 やたらと目を惹く“菰被り”の踊り手さん。福光にこんな踊り衣装があるわけではなく、昔、あちこちで踊り明かしてお寺の軒先あたりでこんな格好で寝ちゃったりしたもんだよね、と思い出させる古い縦織の莚が出てきた… https://t.co/NMhfpprlfg"
+        }
+      ],
+      "evidence_text": "…要素も多ければこそ、それぞれの地域の特徴を尊重する距離感も窺えて、よい催し。 やたらと目を惹く“菰被り”の踊り手さん。福光にこんな踊り衣装があるわけではなく、昔、あちこちで踊り明かしてお寺の軒先あたりでこんな格好で寝ちゃったりしたもんだよね、と思い出させる古い縦織の莚が出てきた… https://t.co/NMhfpprlfg",
+      "evidence_url": "https://x.com/KatsuoOkuhara/status/2082074693058900214"
     },
     {
       "category": "曲候補",
@@ -4008,25 +4091,6 @@
     {
       "category": "曲候補",
       "type": "曲名",
-      "term": "郡上踊り",
-      "interpretation": "郡上踊り",
-      "confidence": "要レビュー",
-      "reason": "曲名抽出器で検出: known_song_context",
-      "evidence_count": 1,
-      "evidence": [
-        {
-          "url": "https://x.com/bababajintou/status/2080975690023964768",
-          "date": "2026-07-25T11:17:21+00:00",
-          "account": "@bababajintou",
-          "text": "藤沢へ向かう途中、大船観音寺訪ねました。 遊行ばやしの流し踊りに団体で参加してたが、おどりの途中、急に雨がバザーーーーって降ってきて、⚡雷も鳴ってきまして、中止されました。 着替えたら、ドドンっと太鼓聞こえて、隣の会議室で郡上踊りをやってくれました。 すごく面白い一日でした。🤭 https://t.co/YWEQY0pLNL"
-        }
-      ],
-      "evidence_text": "藤沢へ向かう途中、大船観音寺訪ねました。 遊行ばやしの流し踊りに団体で参加してたが、おどりの途中、急に雨がバザーーーーって降ってきて、⚡雷も鳴ってきまして、中止されました。 着替えたら、ドドンっと太鼓聞こえて、隣の会議室で郡上踊りをやってくれました。 すごく面白い一日でした。🤭 https://t.co/YWEQY0pLNL",
-      "evidence_url": "https://x.com/bababajintou/status/2080975690023964768"
-    },
-    {
-      "category": "曲候補",
-      "type": "曲名",
       "term": "金沢市では湯涌念仏踊り",
       "interpretation": "金沢市では湯涌念仏踊り",
       "confidence": "要レビュー",
@@ -4065,21 +4129,21 @@
     {
       "category": "曲候補",
       "type": "曲名",
-      "term": "隣の会議室で郡上踊り",
-      "interpretation": "隣の会議室で郡上踊り",
+      "term": "関西でない別地域の踊り",
+      "interpretation": "関西でない別地域の踊り",
       "confidence": "要レビュー",
       "reason": "曲名抽出器で検出: song_suffix_near_context",
       "evidence_count": 1,
       "evidence": [
         {
-          "url": "https://x.com/bababajintou/status/2080975690023964768",
-          "date": "2026-07-25T11:17:21+00:00",
-          "account": "@bababajintou",
-          "text": "藤沢へ向かう途中、大船観音寺訪ねました。 遊行ばやしの流し踊りに団体で参加してたが、おどりの途中、急に雨がバザーーーーって降ってきて、⚡雷も鳴ってきまして、中止されました。 着替えたら、ドドンっと太鼓聞こえて、隣の会議室で郡上踊りをやってくれました。 すごく面白い一日でした。🤭 https://t.co/YWEQY0pLNL"
+          "url": "https://x.com/waterdragon1110/status/2082084222454648899",
+          "date": "2026-07-28T12:42:16+00:00",
+          "account": "@waterdragon1110",
+          "text": "@ishiminamitaiko とある地域のある方がこの振り欲しいと言われた、関西でない別地域の踊りです。 ご当地じゃなければある程度許容できそうですが、あれはダメですよ…"
         }
       ],
-      "evidence_text": "藤沢へ向かう途中、大船観音寺訪ねました。 遊行ばやしの流し踊りに団体で参加してたが、おどりの途中、急に雨がバザーーーーって降ってきて、⚡雷も鳴ってきまして、中止されました。 着替えたら、ドドンっと太鼓聞こえて、隣の会議室で郡上踊りをやってくれました。 すごく面白い一日でした。🤭 https://t.co/YWEQY0pLNL",
-      "evidence_url": "https://x.com/bababajintou/status/2080975690023964768"
+      "evidence_text": "@ishiminamitaiko とある地域のある方がこの振り欲しいと言われた、関西でない別地域の踊りです。 ご当地じゃなければある程度許容できそうですが、あれはダメですよ…",
+      "evidence_url": "https://x.com/waterdragon1110/status/2082084222454648899"
     },
     {
       "category": "曲候補",
@@ -4183,8 +4247,20 @@
       "interpretation": "盆踊りの曲や振りを練習する会",
       "confidence": "要レビュー",
       "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
-      "evidence_count": 49,
+      "evidence_count": 47,
       "evidence": [
+        {
+          "url": "https://x.com/kugiyamaguchi/status/2082079747794948468",
+          "date": "2026-07-28T12:24:29+00:00",
+          "account": "@kugiyamaguchi",
+          "text": "明日から3日間御徒町公園で盆踊りがおこなわれます。 昨日、町会主催の練習会に参加して来ました。好きすぎて滅、踊るみたいです。 アラレちゃん音頭もあるみたいです。 楽しみです。 #台東区 #御徒町公園 https://t.co/WJ3IJnZ0cB"
+        },
+        {
+          "url": "https://x.com/macyako53/status/2082040606847795635",
+          "date": "2026-07-28T09:48:57+00:00",
+          "account": "@macyako53",
+          "text": "#KCT #KCTニュース 7/28火曜 赤米子ども交流 倉敷川舟流し料金改定 吉田拡郎選手優勝報告🏆足高神社夏越祭🎆インターハイ自転車 水島工業村瀬琶音選手 水島栄町盆踊り練習会 倉敷美術サンガ展🎨気象 #倉敷ケーブルテレビ 一部視聴可 →https://t.co/OXWmrq1ayJ 観てね！うふふ♪ #フリーアナ橋本昌子 https://t.co/OsobmHi8Mx"
+        },
         {
           "url": "https://x.com/kirigaoka_cjr/status/2081958658968342780",
           "date": "2026-07-28T04:23:19+00:00",
@@ -4202,22 +4278,10 @@
           "date": "2026-07-28T04:23:21+00:00",
           "account": "@kirigaoka_cjr",
           "text": "参加をご希望の方は、チラシのQRコードまたはお電話でお申し込みください。 ✨練習した踊りは、**9月12日（土）開催の「桐ケ丘地区盆踊り大会」**で披露できます！ 地域の皆さんと一緒に、夏の思い出をつくりましょう♪ #桐ケ丘 #盆踊り #盆踊り練習会 #桐盆大会 #北区 #地域イベント #初心者歓迎"
-        },
-        {
-          "url": "https://x.com/uchikoshichokai/status/2081868975294816501",
-          "date": "2026-07-27T22:26:57+00:00",
-          "account": "@uchikoshichokai",
-          "text": "8/15(土)の #納涼盆踊り大会 に備え #盆踊り練習会 を行います。 みんなで練習して 当日はバッチリキメましょ👍️ 皆様のお越しをお待ちしてます🙏 #八王子 #打越町会 #第17回打越まつり #今年の打越まつりも熱いぜ！ https://t.co/xO5kfbQCpE"
-        },
-        {
-          "url": "https://x.com/_umebachi_/status/2081902935567712645",
-          "date": "2026-07-28T00:41:54+00:00",
-          "account": "@_umebachi_",
-          "text": "昨日は盆踊り練習会でした。 ちょっとやるだけでも疲れた..てなるから、本番まで後少し、少しでも体力作りに励む！ ちよちよのお戯れと、ワー！ワー！の後の恥ずかしそうに👍する..の意味がわかんなすぎてめちゃ笑った🤣🥰 皆さんの恥ずかしい表情ってソレなんだ...てのも新たな発見でしたね🤣🤣"
         }
       ],
-      "evidence_text": "🏮 盆踊り練習会 参加者募集！ 🏮 「踊ったことがない…」 「久しぶりだから忘れちゃった…」 そんな方も大歓迎！ 9月12日（土）開催の**桐ケ丘地区盆踊り大会（桐盆大会）**に向けて、みんなで楽しく練習しませんか？ 経験豊富な暁寿会 工藤先生が、やさしく丁寧に教えてくださいます😊 https://t.co/2APPyEN6gj\n---\n7.27とある練習会後に、三田線に揺られ高島平七丁目第二公園の盆踊りへ🏮 大賑わいでも広さがあるので、のびのび踊れて楽しかったです♪ お目当てはご当地 新高島平音頭！ と、休憩時間のコーヒー牛乳❣️ 疲れたカラダに沁みます☺️ はいよろこんで（ｽﾀﾀﾞｽさんver.）めっちゃ盛り上がりました！ https://t.co/vWxxRyVpwj\n---\n参加をご希望の方は、チラシのQRコードまたはお電話でお申し込みください。 ✨練習した踊りは、**9月12日（土）開催の「桐ケ丘地区盆踊り大会」**で披露できます！ 地域の皆さんと一緒に、夏の思い出をつくりましょう♪ #桐ケ丘 #盆踊り #盆踊り練習会 #桐盆大会 #北区 #地域イベント #初心者歓迎",
-      "evidence_url": "https://x.com/kirigaoka_cjr/status/2081958658968342780"
+      "evidence_text": "明日から3日間御徒町公園で盆踊りがおこなわれます。 昨日、町会主催の練習会に参加して来ました。好きすぎて滅、踊るみたいです。 アラレちゃん音頭もあるみたいです。 楽しみです。 #台東区 #御徒町公園 https://t.co/WJ3IJnZ0cB\n---\n#KCT #KCTニュース 7/28火曜 赤米子ども交流 倉敷川舟流し料金改定 吉田拡郎選手優勝報告🏆足高神社夏越祭🎆インターハイ自転車 水島工業村瀬琶音選手 水島栄町盆踊り練習会 倉敷美術サンガ展🎨気象 #倉敷ケーブルテレビ 一部視聴可 →https://t.co/OXWmrq1ayJ 観てね！うふふ♪ #フリーアナ橋本昌子 https://t.co/OsobmHi8Mx\n---\n🏮 盆踊り練習会 参加者募集！ 🏮 「踊ったことがない…」 「久しぶりだから忘れちゃった…」 そんな方も大歓迎！ 9月12日（土）開催の**桐ケ丘地区盆踊り大会（桐盆大会）**に向けて、みんなで楽しく練習しませんか？ 経験豊富な暁寿会 工藤先生が、やさしく丁寧に教えてくださいます😊 https://t.co/2APPyEN6gj",
+      "evidence_url": "https://x.com/kugiyamaguchi/status/2082079747794948468"
     },
     {
       "category": "用語候補",
@@ -4226,8 +4290,20 @@
       "interpretation": "盆踊りや輪踊りの会",
       "confidence": "要レビュー",
       "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
-      "evidence_count": 30,
+      "evidence_count": 29,
       "evidence": [
+        {
+          "url": "https://x.com/mochisaga/status/2082067006682288311",
+          "date": "2026-07-28T11:33:51+00:00",
+          "account": "@mochisaga",
+          "text": "40℃酷暑が何日続いたか覚えてないけど 雷雨⛈️で町が冷えて安心 朝🌄干上がった田んぼの水たまりに 🦐がみっしり横たわってた 昼🌩️土砂降り雷雨⛈️が降った 休憩に通ると起き上がってウェーイ🦞て蘇り盆踊り会場に🦞 🌉田んぼに水が行き渡って解散の様子 https://t.co/TY19I5Xth0"
+        },
+        {
+          "url": "https://x.com/manomanose/status/2082064839263076531",
+          "date": "2026-07-28T11:25:15+00:00",
+          "account": "@manomanose",
+          "text": "本日2枠目！！泥酔スタートです！！はじまりました！！！ たのしむぞ～～～！！！ 【リズム天国】泥酔凡人盆踊り会場【リズム天国ミラクルスターズ｜まのせまの｜Vtuber】 https://t.co/ni1CEwYWoU @YouTubeより https://t.co/rpeXB8OZoa"
+        },
         {
           "url": "https://www.youtube.com/watch?v=0twHYdABSAs",
           "date": "2026-07-27T10:00:18+00:00",
@@ -4245,22 +4321,10 @@
           "date": "2026-07-28T07:29:48+00:00",
           "account": "@vegeta7015",
           "text": "#夜空の夏 12星座の建築はそれぞれの星座をイメージした建物ばかりで素敵だったな。 和風エリアは盆踊り会場のまわりを走ると月が出た出たのメロディが奏でられるのが楽しかった。 ドラゴン討伐の冒険はポイントを巡って行くのがRPGのようで皆で楽しめたな。"
-        },
-        {
-          "url": "https://x.com/yukisakihayato/status/2082004223181615598",
-          "date": "2026-07-28T07:24:23+00:00",
-          "account": "@yukisakihayato",
-          "text": "スーパー耐久オートポリス大会 盆踊り会場にて。 S耐メンバーさん達も盆踊り会場でウッキウキに踊る☺ みんなで踊って楽しかった! そして日が暮れて花火へ🎇 https://t.co/evY2LHDgvJ"
-        },
-        {
-          "url": "https://x.com/yukisakihayato/status/2082003242033238459",
-          "date": "2026-07-28T07:20:29+00:00",
-          "account": "@yukisakihayato",
-          "text": "スーパー耐久オートポリス大会 盆踊り会場にて。 すぱーくとポリ坊は仲良しだから、踊る息もピッタリ😁 https://t.co/Kw2CHrBfXD"
         }
       ],
-      "evidence_text": "2026年7月18日に開催された、大和町八幡神社大盆踊り会（通称：ダイボン）の様子をお届けします！ 夏の夜を彩る、熱気あふれる盆踊りの風景をお楽しみください。 会場の盛り上がりや、櫓（やぐら）を囲む輪の一体感をそのままに記録しています。 #盆踊り #DAIBON #大和町八幡神社 #夏祭り #日本の風景 大和町八幡神社大盆踊り会 １メガ盆 https://youtu.be/oF7QnJysGZM ２ケケノコ族１ジンギスカン https://youtu.be/1C1ySMMhnfY ３ケケノコ族２Shangri-La https://youtu.be/sII4Ix4VXPY ４ケケノコ族３Singapore https://youtu.be/cG-VBGCY9W8 ５ケケノコ族４YOUNG MAN https://youtu.be/WEwuLy4YLeM ６DJ「俚謡山脈」 https://youtu.be/UI_F4WyMFH0 ７DJ「珍盤亭娯楽師匠」 https://youtu.be/Y0X5LmUpHBs ８古調かわさき https://youtu.be/NyXcFCa5lRg \n---\n今日から小中高の盆踊り教室…8/6まで、踊りはコミセン、お囃子は盆踊り会館😙 https://t.co/sjJ2HGDW09\n---\n#夜空の夏 12星座の建築はそれぞれの星座をイメージした建物ばかりで素敵だったな。 和風エリアは盆踊り会場のまわりを走ると月が出た出たのメロディが奏でられるのが楽しかった。 ドラゴン討伐の冒険はポイントを巡って行くのがRPGのようで皆で楽しめたな。",
-      "evidence_url": "https://www.youtube.com/watch?v=0twHYdABSAs"
+      "evidence_text": "40℃酷暑が何日続いたか覚えてないけど 雷雨⛈️で町が冷えて安心 朝🌄干上がった田んぼの水たまりに 🦐がみっしり横たわってた 昼🌩️土砂降り雷雨⛈️が降った 休憩に通ると起き上がってウェーイ🦞て蘇り盆踊り会場に🦞 🌉田んぼに水が行き渡って解散の様子 https://t.co/TY19I5Xth0\n---\n本日2枠目！！泥酔スタートです！！はじまりました！！！ たのしむぞ～～～！！！ 【リズム天国】泥酔凡人盆踊り会場【リズム天国ミラクルスターズ｜まのせまの｜Vtuber】 https://t.co/ni1CEwYWoU @YouTubeより https://t.co/rpeXB8OZoa\n---\n2026年7月18日に開催された、大和町八幡神社大盆踊り会（通称：ダイボン）の様子をお届けします！ 夏の夜を彩る、熱気あふれる盆踊りの風景をお楽しみください。 会場の盛り上がりや、櫓（やぐら）を囲む輪の一体感をそのままに記録しています。 #盆踊り #DAIBON #大和町八幡神社 #夏祭り #日本の風景 大和町八幡神社大盆踊り会 １メガ盆 https://youtu.be/oF7QnJysGZM ２ケケノコ族１ジンギスカン https://youtu.be/1C1ySMMhnfY ３ケケノコ族２Shangri-La https://youtu.be/sII4Ix4VXPY ４ケケノコ族３Singapore https://youtu.be/cG-VBGCY9W8 ５ケケノコ族４YOUNG MAN https://youtu.be/WEwuLy4YLeM ６DJ「俚謡山脈」 https://youtu.be/UI_F4WyMFH0 ７DJ「珍盤亭娯楽師匠」 https://youtu.be/Y0X5LmUpHBs ８古調かわさき https://youtu.be/NyXcFCa5lRg ",
+      "evidence_url": "https://x.com/mochisaga/status/2082067006682288311"
     },
     {
       "category": "用語候補",
@@ -4312,8 +4376,14 @@
       "interpretation": "複数会場を同日または連続して巡る行動",
       "confidence": "要レビュー",
       "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
-      "evidence_count": 10,
+      "evidence_count": 9,
       "evidence": [
+        {
+          "url": "https://x.com/wankrozen/status/2082054308259131578",
+          "date": "2026-07-28T10:43:24+00:00",
+          "account": "@wankrozen",
+          "text": "一昨日の亀有公演盆踊りくらいは行くべきだったか と思ったけど その前に上野と光が丘の夏祭りハシゴしてたんだった"
+        },
         {
           "url": "https://x.com/cheb_gizmo/status/2082006464747778090",
           "date": "2026-07-28T07:33:17+00:00",
@@ -4337,16 +4407,10 @@
           "date": "2026-07-26T14:27:49+00:00",
           "account": "@gPVEQeAD9U10257",
           "text": "７月２６日 南小岩二丁目公園 昭栄自治会盆踊り🏮 巣鴨地蔵盆踊りからハシゴ ⭐地域の盆踊りの普及活動も 行なっている歌手の 美濃屋マチコさんは子供達に 盆踊りを教えて区内を回って います👏偉いです✨ ⭐ダンヒロ 365の紙飛行機 盆ギリ アンパンマン等 楽しかった👏 #盆踊り #江戸川区 https://t.co/7vdRAtjIYS"
-        },
-        {
-          "url": "https://x.com/HirohitoKondo/status/2081371037502239123",
-          "date": "2026-07-26T13:28:20+00:00",
-          "account": "@HirohitoKondo",
-          "text": "今夜の天王祭の前に香久山区の盆踊り練習会に…いよいよ本番が近くなり放送係の皆様もあわせて練習…今年も他の会場をハシゴすることになるので開会式での挨拶のみで失礼することをお詫びしながら新曲「イエローサブマン」も含めて2曲踊り次に向かわせていただきました。 https://t.co/4P86d20jdt"
         }
       ],
-      "evidence_text": "2025.7.28 ③ この頃はカラオケ盆踊りがまだ20時までで花火も見れた♪ 🏮盆踊りのハシゴ🏮 Matsuri広場での河内家菊水丸さんの音頭 メトロキッチン 夜限定おつまみ付きお得セットで乾杯🍻 インスタでの万博日記につくだにえんさんを見かけた事書いてた〜😍 #一年前の今日の万博 #EXPO2025Forever https://t.co/jr6nVa0rwH\n---\n#傳通院納涼盆踊り大会 (2026/7/26) 初参加です。本日2件目。巣鴨から3駅。とげぬき地蔵からハシゴでお邪魔しました。立派で綺麗なお寺にびっくり。 振帳をベースにした橋幸夫の盆ダンスが目玉でした✨ 一休さんかかったのか…間に合わず残念。 地域のランドマークで催された楽しいフェスでした♪ https://t.co/Bu6RWRAI53\n---\n先週末は浪江町へ💖 7月25日土曜日は浪江町の樋渡・牛渡の盆踊りと、なみえの夏祭りの盆踊りをハシゴしました❣️知り合いの方々にもお会いできて、とても楽しい時間でした🥳 続く https://t.co/RJkTt6Qwp5",
-      "evidence_url": "https://x.com/cheb_gizmo/status/2082006464747778090"
+      "evidence_text": "一昨日の亀有公演盆踊りくらいは行くべきだったか と思ったけど その前に上野と光が丘の夏祭りハシゴしてたんだった\n---\n2025.7.28 ③ この頃はカラオケ盆踊りがまだ20時までで花火も見れた♪ 🏮盆踊りのハシゴ🏮 Matsuri広場での河内家菊水丸さんの音頭 メトロキッチン 夜限定おつまみ付きお得セットで乾杯🍻 インスタでの万博日記につくだにえんさんを見かけた事書いてた〜😍 #一年前の今日の万博 #EXPO2025Forever https://t.co/jr6nVa0rwH\n---\n#傳通院納涼盆踊り大会 (2026/7/26) 初参加です。本日2件目。巣鴨から3駅。とげぬき地蔵からハシゴでお邪魔しました。立派で綺麗なお寺にびっくり。 振帳をベースにした橋幸夫の盆ダンスが目玉でした✨ 一休さんかかったのか…間に合わず残念。 地域のランドマークで催された楽しいフェスでした♪ https://t.co/Bu6RWRAI53",
+      "evidence_url": "https://x.com/wankrozen/status/2082054308259131578"
     },
     {
       "category": "用語候補",
@@ -4355,8 +4419,20 @@
       "interpretation": "櫓や中心を囲んで輪になって踊る形式",
       "confidence": "要レビュー",
       "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
-      "evidence_count": 5,
+      "evidence_count": 7,
       "evidence": [
+        {
+          "url": "https://x.com/KatsuoOkuhara/status/2082072757957980670",
+          "date": "2026-07-28T11:56:43+00:00",
+          "account": "@KatsuoOkuhara",
+          "text": "踊りの振りや型の厳格な保存・伝承よりも、このひと時の“輪踊り”の時間を楽しむことこそ第一とする、保存会さんの姿勢が明確である。新しい踊りが生まれたら、それはそれで面白いじゃないか、とおっしゃるのも潔い。 日頃交流もあるらしき南砺地域の各保存会さん同士は、唄も踊りもよく似た共通する…"
+        },
+        {
+          "url": "https://x.com/KatsuoOkuhara/status/2082070052329914800",
+          "date": "2026-07-28T11:45:58+00:00",
+          "account": "@KatsuoOkuhara",
+          "text": "…のだが、輪踊りはずっと同じ顔ぶれ、四団体合同である。（飛び入り歓迎の趣旨に沿って、通りすがりの近隣の人とかも混じっているかもしれない。） だいたい似た歌詞と踊りなので、見よう見真似で踊っちゃってください！というスタイルだ。なので、自地域や日頃交流のある地域の踊りを、余裕で踊り…"
+        },
         {
           "url": "https://x.com/piyoko_mame/status/2081920767785304156",
           "date": "2026-07-28T01:52:45+00:00",
@@ -4374,22 +4450,10 @@
           "date": "2026-07-26T14:55:25+00:00",
           "account": "@7376GgBw1gwxUM3",
           "text": "定刻に踊り手さんが登場し、輪踊り開始。しかし、しばらくするとまた小雨。7.八木節から始まって、2.川崎おどりが終わったところで、踊り手主要メンバーは、テントに避難。そのまま、飲食&amp;歓談タイムに入ったようでした。自分は、6.川崎音頭まで音楽と太鼓聞いて、隣の江川町へ移動。"
-        },
-        {
-          "url": "https://x.com/iWzPxDCCCP30Jb4/status/2081523690454536632",
-          "date": "2026-07-26T23:34:55+00:00",
-          "account": "@iWzPxDCCCP30Jb4",
-          "text": "2026.7.26 #巣鴨納涼盆踊り お世話になっている華の会の皆さまと #盆踊り 訳あって縮小開催でしたが、巣鴨ナンバーでの輪踊り、色んな会の発表で、濃密な時間でした 発表会での舞踊のため、先輩方と一年間積み上げてきたものを、（私の出来はどうあれ😭）ご披露できて嬉しかったです また来年！ https://t.co/cJBGtaOJfb"
-        },
-        {
-          "url": "https://www.youtube.com/watch?v=TD9x4txD79M",
-          "date": "2026-07-26T12:57:53+00:00",
-          "account": "UCWz2tM7PAFGT7xSL5OAEllg",
-          "text": "【第52回神楽坂まつり 阿波おどり大会】 開催日時：2026年7月24日(金)・25日(土) 00:00 ハイライト 07:28 新宿区役所つつじ連 15:48 だむだん連 29:08 なにがし連 31:00 牛込遊粋連 36:04 新宿白衣連 38:01 天狗連 43:42 三茶連 50:24 北の御門連 51:24 寶船 55:12 堀切あやめ連 55:59 粋西連 58:33 中村橋新連 59:34 鳳連(おおとり連) 1:01:41 ほおずき連 1:02:51 後楽連 1:04:23 でんわ連 1:05:50 豪雨の輪踊り #神楽坂まつり #神楽坂 #神楽坂阿波踊り #阿波おどり #阿波踊り"
         }
       ],
-      "evidence_text": "第39回 巣鴨納涼盆踊り とげぬき地蔵尊 7/26 今年は早い時間からの開催、40分間の輪踊り。 坂東扇太恵先生、華の会の皆さんの素晴らしい踊り披露。 つぼみの会として2曲発表、\"三味線ブギウギ\"の振りが楽しい(踊りはまだまだですが!!) あっという間でした✨ https://t.co/L0bFb7IJ6y\n---\n#巣鴨納涼盆踊り (2026_7_26) #とげぬき地蔵 今年は諸事情でコンパクトに、かつ、早い時間に開催されました。輪踊りは40分程度。大きな櫓の無いとげぬきは新鮮な光景でした。オフ会のよう。 雨は降らず。境内飲酒厳禁です🆖 坂東扇太恵先生、華の会さんの踊りの披露がとても素晴らしかったです✨ https://t.co/Z3yTeOZd7h\n---\n定刻に踊り手さんが登場し、輪踊り開始。しかし、しばらくするとまた小雨。7.八木節から始まって、2.川崎おどりが終わったところで、踊り手主要メンバーは、テントに避難。そのまま、飲食&amp;歓談タイムに入ったようでした。自分は、6.川崎音頭まで音楽と太鼓聞いて、隣の江川町へ移動。",
-      "evidence_url": "https://x.com/piyoko_mame/status/2081920767785304156"
+      "evidence_text": "踊りの振りや型の厳格な保存・伝承よりも、このひと時の“輪踊り”の時間を楽しむことこそ第一とする、保存会さんの姿勢が明確である。新しい踊りが生まれたら、それはそれで面白いじゃないか、とおっしゃるのも潔い。 日頃交流もあるらしき南砺地域の各保存会さん同士は、唄も踊りもよく似た共通する…\n---\n…のだが、輪踊りはずっと同じ顔ぶれ、四団体合同である。（飛び入り歓迎の趣旨に沿って、通りすがりの近隣の人とかも混じっているかもしれない。） だいたい似た歌詞と踊りなので、見よう見真似で踊っちゃってください！というスタイルだ。なので、自地域や日頃交流のある地域の踊りを、余裕で踊り…\n---\n第39回 巣鴨納涼盆踊り とげぬき地蔵尊 7/26 今年は早い時間からの開催、40分間の輪踊り。 坂東扇太恵先生、華の会の皆さんの素晴らしい踊り披露。 つぼみの会として2曲発表、\"三味線ブギウギ\"の振りが楽しい(踊りはまだまだですが!!) あっという間でした✨ https://t.co/L0bFb7IJ6y",
+      "evidence_url": "https://x.com/KatsuoOkuhara/status/2082072757957980670"
     },
     {
       "category": "用語候補",
@@ -4462,31 +4526,6 @@
     {
       "category": "用語候補",
       "type": "行動語",
-      "term": "梯子",
-      "interpretation": "複数会場を同日または連続して巡る行動",
-      "confidence": "要レビュー",
-      "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
-      "evidence_count": 2,
-      "evidence": [
-        {
-          "url": "https://x.com/2tsuo_g/status/2081345652848763372",
-          "date": "2026-07-26T11:47:27+00:00",
-          "account": "@2tsuo_g",
-          "text": "123件目 下北沢盆踊り 喜多見盆踊りへの梯子はやめてフルで参加してきた〜(雨天決行？強行の会場は安心感がある😌) リードが4曲交代のおかげでほぼ休み無しで踊れます🫶ちんどん屋の「代田ダイダラボッチ音頭」、サンバ×盆踊りの斬新さは凄く面白いし盛り上がってた☺️ 来年も遊びに来るぞー https://t.co/PLzUlJSh4u"
-        },
-        {
-          "url": "https://x.com/2tsuo_g/status/2080992024740958711",
-          "date": "2026-07-25T12:22:16+00:00",
-          "account": "@2tsuo_g",
-          "text": "122件目 北新宿4丁目町会 盆おどり大会(北柏木公園) 下北沢から梯子🪜1部の途中から2部の中止まで！土砂降りの中、「東京音頭」「大東京音頭」をかけてくれて踊った🤣 「マツケンサンバ」はここオリジナル？の振付で\"マツケン棒\"なるもの振ってお手本が踊ってました！ https://t.co/0wgTtGywRT"
-        }
-      ],
-      "evidence_text": "123件目 下北沢盆踊り 喜多見盆踊りへの梯子はやめてフルで参加してきた〜(雨天決行？強行の会場は安心感がある😌) リードが4曲交代のおかげでほぼ休み無しで踊れます🫶ちんどん屋の「代田ダイダラボッチ音頭」、サンバ×盆踊りの斬新さは凄く面白いし盛り上がってた☺️ 来年も遊びに来るぞー https://t.co/PLzUlJSh4u\n---\n122件目 北新宿4丁目町会 盆おどり大会(北柏木公園) 下北沢から梯子🪜1部の途中から2部の中止まで！土砂降りの中、「東京音頭」「大東京音頭」をかけてくれて踊った🤣 「マツケンサンバ」はここオリジナル？の振付で\"マツケン棒\"なるもの振ってお手本が踊ってました！ https://t.co/0wgTtGywRT",
-      "evidence_url": "https://x.com/2tsuo_g/status/2081345652848763372"
-    },
-    {
-      "category": "用語候補",
-      "type": "行動語",
       "term": "はしご",
       "interpretation": "複数会場を同日または連続して巡る行動",
       "confidence": "要レビュー",
@@ -4502,6 +4541,25 @@
       ],
       "evidence_text": "国会が閉会して初の週末は地元のお祭り、盆踊りとはしごしました。 地域の生の声をうかがう絶好の機会です。 #菅原一秀 #すがわら一秀 #東京9区 #練馬区 #自民党 https://t.co/kG6P50gVhI",
       "evidence_url": "https://x.com/sugawaraisshu/status/2081139503595675699"
+    },
+    {
+      "category": "用語候補",
+      "type": "行動語",
+      "term": "梯子",
+      "interpretation": "複数会場を同日または連続して巡る行動",
+      "confidence": "要レビュー",
+      "reason": "日次X収穫パターンに一致。準公式用語も対象に含める。",
+      "evidence_count": 1,
+      "evidence": [
+        {
+          "url": "https://x.com/2tsuo_g/status/2081345652848763372",
+          "date": "2026-07-26T11:47:27+00:00",
+          "account": "@2tsuo_g",
+          "text": "123件目 下北沢盆踊り 喜多見盆踊りへの梯子はやめてフルで参加してきた〜(雨天決行？強行の会場は安心感がある😌) リードが4曲交代のおかげでほぼ休み無しで踊れます🫶ちんどん屋の「代田ダイダラボッチ音頭」、サンバ×盆踊りの斬新さは凄く面白いし盛り上がってた☺️ 来年も遊びに来るぞー https://t.co/PLzUlJSh4u"
+        }
+      ],
+      "evidence_text": "123件目 下北沢盆踊り 喜多見盆踊りへの梯子はやめてフルで参加してきた〜(雨天決行？強行の会場は安心感がある😌) リードが4曲交代のおかげでほぼ休み無しで踊れます🫶ちんどん屋の「代田ダイダラボッチ音頭」、サンバ×盆踊りの斬新さは凄く面白いし盛り上がってた☺️ 来年も遊びに来るぞー https://t.co/PLzUlJSh4u",
+      "evidence_url": "https://x.com/2tsuo_g/status/2081345652848763372"
     },
     {
       "category": "用語候補",

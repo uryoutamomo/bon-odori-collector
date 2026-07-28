@@ -1,19 +1,19 @@
 {
   "generated_by": "prepare_weekly_harvest_review.py",
-  "generated_at": "2026-07-28T09:00:55.918081+00:00",
+  "generated_at": "2026-07-28T13:17:46.162552+00:00",
   "source": "build_weekly_harvest_candidates.py",
-  "source_generated_at": "2026-07-28T09:00:49.956649+00:00",
+  "source_generated_at": "2026-07-28T13:17:38.612568+00:00",
   "days": 3,
-  "voice_count": 3007,
-  "candidate_count": 205,
+  "voice_count": 3452,
+  "candidate_count": 209,
   "category_counts": {
-    "曲×会場共起": 15,
-    "曲候補": 180,
+    "曲×会場共起": 13,
+    "曲候補": 186,
     "用語候補": 10
   },
-  "non_song_review_count": 25,
-  "song_candidate_count": 180,
-  "song_direct_dry_run_count": 139,
+  "non_song_review_count": 23,
+  "song_candidate_count": 186,
+  "song_direct_dry_run_count": 145,
   "song_review_count": 2,
   "song_rejected_noise_count": 39,
   "review_files": {
@@ -36,10 +36,10 @@
       "しゃけこも踊り × 築地本願寺",
       "どんどん降ってきても踊り × 浜町公園",
       "やぐらを囲む大きな踊り × 築地本願寺",
-      "大東京音頭 × 北柏木公園",
-      "東京音頭 × 北柏木公園",
       "河内音頭 × 築地本願寺",
-      "納涼音頭 × 築地本願寺"
+      "納涼音頭 × 築地本願寺",
+      "行儀よく踊り × 青山善光寺",
+      "越中おわら節 × 青山善光寺"
     ],
     "song_review": [
       "盆ジョビ",
