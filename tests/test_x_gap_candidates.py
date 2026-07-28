@@ -1,5 +1,6 @@
 import sqlite3
 
+from datetime import date
 from build_x_gap_candidates import build
 from review_inbox_adapters.source_adapter import adapt_source_payload
 from review_inbox_adapters.x_gap_adapter import XGapAdapter
@@ -66,3 +67,14 @@ def test_overflow_is_retained_as_archive_records(tmp_path):
     payload=build(voices,db,year=2026,limit=1)
     assert payload['archived_count']==1
     assert len(payload['archived_candidates'])==1
+
+
+def test_past_occurrence_explicit_prior_year_and_kobe_are_excluded(tmp_path):
+    db=tmp_path/'master.sqlite'; make_db(db)
+    conn=sqlite3.connect(db)
+    conn.execute("UPDATE event_occurrences SET date_start='2026-06-27' WHERE occurrence_id='occ1'")
+    conn.commit();conn.close()
+    old={"source":"x","tweet_id":"old","date":"2026-07-01","text":"盆助祭は本日中止となりました"}
+    prior={"source":"x","tweet_id":"prior","date":"2026-07-20","text":"2025年8月2日に盆助祭を開催しました"}
+    kobe={"source":"x","tweet_id":"kobe","date":"2026-07-20","text":"神戸市東灘区の盆助祭 7月30日"}
+    assert build([old,prior,kobe],db,year=2026,today=date(2026,7,29))['candidates']==[]

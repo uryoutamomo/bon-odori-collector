@@ -13,7 +13,7 @@ import hashlib
 import json
 import re
 import sqlite3
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 from pathlib import Path
 from typing import Any
 
@@ -29,8 +29,13 @@ DATE_RE = re.compile(r"(?:20\d{2}[/-]\d{1,2}[/-]\d{1,2}|\d{1,2}月\d{1,2}日?|\d
 BON_RE = re.compile(r"盆踊り|盆おどり|ぼんおどり|民踊|納涼", re.I)
 CHANGE_RE = re.compile(r"中止|延期|順延|時間変更|開催時間.*変更|取りやめ")
 NON_CHANGE_RE = re.compile(r"(?:順延|延期).{0,12}(?:ない|ありません|ございません)|(?:雨天|少雨)決行|雨天中止")
-ACTUAL_CHANGE_RE = re.compile(r"(?:開催)?(?:中止|延期|順延)(?:と|に|にな|いた|します|のお知らせ)|時間(?:を)?変更|取りやめ(?:と|に|にな|ます)")
+# Require a declaration-like construction.  A bare word such as a venue's
+# "通行止め" note must not turn an ordinary opening announcement into a P0
+# schedule-change item.
+ACTUAL_CHANGE_RE = re.compile(r"(?:本日|開催|イベント|盆踊り).{0,24}(?:中止|延期|順延)(?:と|に|にな|いた|します|のお知らせ)|(?:中止|延期|順延)(?:とな|にな|いた|します|のお知らせ)|開催時間.{0,8}変更|取りやめ(?:と|に|にな|ます)")
 GENERIC_EVENT_RE = re.compile(r"^(?:第\d+回)?(?:納涼|夏)?(?:盆踊り|盆おどり|ぼんおどり)(?:大会)?$")
+EXPLICIT_YEAR_RE = re.compile(r"(?<!\d)(20\d{2})年")
+EXTRA_OUTSIDE_SCOPE_RE = re.compile(r"神戸|東灘|兵庫|砺波|富山|淀川")
 
 
 def load(path: Path, default: Any) -> Any:
@@ -90,8 +95,9 @@ def source_key(voice: dict[str, Any]) -> str:
     return "x:" + (tweet or hashlib.sha1(url.encode()).hexdigest()[:16])
 
 
-def build(voices: list[dict[str, Any]], db: Path, *, year: int, limit: int=30) -> dict[str, Any]:
+def build(voices: list[dict[str, Any]], db: Path, *, year: int, limit: int=30, today: date | None=None) -> dict[str, Any]:
     gaps=catalog(db, year)
+    today=today or date.today()
     candidates=[]; archived=[]; seen=set()
     for voice in voices:
         if not isinstance(voice, dict) or voice.get("source") not in X_SOURCES: continue
@@ -103,7 +109,9 @@ def build(voices: list[dict[str, Any]], db: Path, *, year: int, limit: int=30) -
             continue
         text="\n".join(str(voice.get(k) or "") for k in ("title","text"))
         if not BON_RE.search(text): continue
-        if is_outside_tokyo_23_scope(text, voice.get("area"), voice.get("region")): continue
+        explicit_years={int(value) for value in EXPLICIT_YEAR_RE.findall(text)}
+        if explicit_years and year not in explicit_years: continue
+        if is_outside_tokyo_23_scope(text, voice.get("area"), voice.get("region")) or EXTRA_OUTSIDE_SCOPE_RE.search(text): continue
         key=source_key(voice)
         if key in seen: continue
         officiality=assess_source_officiality({}, voice=voice)
@@ -112,7 +120,11 @@ def build(voices: list[dict[str, Any]], db: Path, *, year: int, limit: int=30) -
         found=[(gap, names) for gap,names in found if names]
         kind=""; priority=0; gap=None; names=[]
         # A matched master row can itself reveal a non-23-ward legacy entry.
-        found=[(g,n) for g,n in found if not is_outside_tokyo_23_scope(g.get("area"),g.get("venue"))]
+        found=[(g,n) for g,n in found if not is_outside_tokyo_23_scope(g.get("area"),g.get("venue")) and not EXTRA_OUTSIDE_SCOPE_RE.search(f"{g.get('area','')} {g.get('venue','')}")]
+        # Never surface a cancellation/update for an occurrence already in
+        # the past.  Its evidence remains in the corpus but cannot correct a
+        # current public schedule.
+        found=[(g,n) for g,n in found if not g.get("date_start") or date.fromisoformat(g["date_start"]) >= today]
         changes=actual_schedule_change(text)
         if changes and found:
             kind="schedule_change"; priority=300; gap,names=found[0]
