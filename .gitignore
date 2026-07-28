@@ -57,3 +57,4 @@ data/notion_regional_seo_*.json
 
 # ローカルメール送信キュー
 data/pending_mail.json
+data/event_candidate_queue_snapshot.json
