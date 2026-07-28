@@ -1,21 +1,21 @@
 {
   "generated_by": "prepare_weekly_harvest_review.py",
-  "generated_at": "2026-07-27T10:18:40.405533+00:00",
+  "generated_at": "2026-07-28T09:00:55.918081+00:00",
   "source": "build_weekly_harvest_candidates.py",
-  "source_generated_at": "2026-07-27T10:18:31.884513+00:00",
+  "source_generated_at": "2026-07-28T09:00:49.956649+00:00",
   "days": 3,
-  "voice_count": 1918,
-  "candidate_count": 158,
+  "voice_count": 3007,
+  "candidate_count": 205,
   "category_counts": {
-    "曲×会場共起": 10,
-    "曲候補": 139,
-    "用語候補": 9
+    "曲×会場共起": 15,
+    "曲候補": 180,
+    "用語候補": 10
   },
-  "non_song_review_count": 19,
-  "song_candidate_count": 139,
-  "song_direct_dry_run_count": 108,
+  "non_song_review_count": 25,
+  "song_candidate_count": 180,
+  "song_direct_dry_run_count": 139,
   "song_review_count": 2,
-  "song_rejected_noise_count": 29,
+  "song_rejected_noise_count": 39,
   "review_files": {
     "non_song_json": "data/weekly_harvest_review_candidates.json",
     "non_song_ui": "data/weekly_harvest_review_ui.html",
@@ -30,16 +30,16 @@
     "non_song_review": [
       "おしりたんてい音頭 × 晴海ふ頭公園",
       "ご当地音頭 × 浄土寺",
+      "ダンシングヒーロー × 青山善光寺",
       "きよしのズンドコ節 × 晴海ふ頭公園",
       "ご当地曲の六本人音頭 × 六本木ヒルズアリーナ",
+      "しゃけこも踊り × 築地本願寺",
       "どんどん降ってきても踊り × 浜町公園",
+      "やぐらを囲む大きな踊り × 築地本願寺",
       "大東京音頭 × 北柏木公園",
       "東京音頭 × 北柏木公園",
       "河内音頭 × 築地本願寺",
-      "納涼音頭 × 築地本願寺",
-      "輪に入って踊り × 北柏木公園",
-      "練習会",
-      "踊り会"
+      "納涼音頭 × 築地本願寺"
     ],
     "song_review": [
       "盆ジョビ",

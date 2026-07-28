@@ -1,8 +1,8 @@
 {
   "generated_by": "build_event_song_candidates.py",
-  "count": 1317,
+  "count": 1335,
   "public_event_count": 656,
-  "review_count": 661,
+  "review_count": 679,
   "candidates": [
     {
       "id": "780f9b469f5b4652",
@@ -2603,7 +2603,7 @@
       "evidence_count": 1
     },
     {
-      "id": "92ee1b6d6b272209",
+      "id": "5ca0199962fc136e",
       "song_name": "江州音頭",
       "event_name": "すみだ錦糸町河内音頭大盆踊り",
       "venue": "江東橋竪川親水公園",
@@ -2615,6 +2615,12 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/keloyama/status/2081990049324048743",
+          "date": "2026-07-28T06:28:03+00:00",
+          "text": "けろ山\nなんと明日は待ちに待った、\n第44回すみだ錦糸町河内音頭大盆踊り\n#錦糸町河内音頭\n#河内音頭\n#江州音頭\n#泉州音頭 https://t.co/qTxvWTgwea"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=CzKSOxn999A",
@@ -2653,7 +2659,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 6
+      "evidence_count": 7
     },
     {
       "id": "dfe35d571f207b0c",
@@ -3984,7 +3990,7 @@
       "evidence_count": 2
     },
     {
-      "id": "1cc62b643906747e",
+      "id": "19250f0733304784",
       "song_name": "ダンシングヒーロー",
       "event_name": "盆踊り大会",
       "venue": "木場二丁目公園",
@@ -3995,6 +4001,12 @@
         "known_song_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=rU52ptPOrHg",
+          "date": "2026-07-27T14:28:06+00:00",
+          "text": "Urban Walk\n【青山 善光寺 盆踊り 2026】「ダンシングヒーロー」荻野目洋子で盆踊り /  青山表参道商店会納涼盆踊り大会 盆踊り Aoyama Omotesando Bon Dance Festival\n#ダンシングヒーロー #荻野目洋子 #祭り #表参道 #青山 #盆踊り #善光寺 #青山表参道商店会納涼盆踊り大会\n\n【青山善光寺盆踊り 2026】\n開催日：7月26日（日）・7月27日（月）\n時間：午後5時～9時\n盆踊り開始：午後6時30分から\n場所：青山善光寺境内"
+        },
         {
           "source": "x_voice",
           "url": "https://x.com/HirohitoKondo/status/2081298222711198203",
@@ -4201,7 +4213,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 34
+      "evidence_count": 35
     },
     {
       "id": "6f209e9a45da7de9",
@@ -4374,7 +4386,7 @@
       "evidence_count": 1
     },
     {
-      "id": "8473ea3c1b6bc994",
+      "id": "b11873bf8b446f0f",
       "song_name": "大東京音頭",
       "event_name": "盆踊り大会",
       "venue": "木場二丁目公園",
@@ -4386,6 +4398,12 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/CavpuakkSgLRjWZ/status/2081749545520873834",
+          "date": "2026-07-27T14:32:23+00:00",
+          "text": "ひら🎀12🚙9🚙3\n今夜は仕事後に近所の盆踊り大会へ💃\n踊ったわー♫\nここは歴史ある盆踊り大会なので、曲も幅広い！\n炭坑節、東京音頭、大東京音頭、21世紀音頭、八木節、ダンシング・ヒーロー、スカイツリー音頭、交通安全音頭、…\n他にも沢山♫\n明日も盆踊り大会はあるので楽しむぞ😆 https://t.co/Tf55okfvjH"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=O6oiJtBvt0E",
@@ -5000,10 +5018,10 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 102
+      "evidence_count": 103
     },
     {
-      "id": "f53232def7bfd42c",
+      "id": "77c7cdf2930efb5a",
       "song_name": "東京音頭",
       "event_name": "盆踊り大会",
       "venue": "木場二丁目公園",
@@ -5015,6 +5033,18 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/sekine_komei/status/2081867778592833797",
+          "date": "2026-07-27T22:22:12+00:00",
+          "text": "関根まみ子🌻江戸川区議会議員\n🏮週末の盆踊り大会へ🏃‍♂️②\n\n一之江上親交会町会へおじゃましました。\n黙々と警備と交通整理をしていただいている役員の皆さま、\n盆踊りを皆で盛り上げようとされている皆さまに頭が下がります👏ありがとうございます。\n\n皆さまに誘われ、江戸川音頭や東京音頭、桜音頭、炭坑節等々、下手くそながら私も5曲踊りました。汗💦だくになりました💦\n暑さ対策、皆さま気をつけて！"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://x.com/CavpuakkSgLRjWZ/status/2081749545520873834",
+          "date": "2026-07-27T14:32:23+00:00",
+          "text": "ひら🎀12🚙9🚙3\n今夜は仕事後に近所の盆踊り大会へ💃\n踊ったわー♫\nここは歴史ある盆踊り大会なので、曲も幅広い！\n炭坑節、東京音頭、大東京音頭、21世紀音頭、八木節、ダンシング・ヒーロー、スカイツリー音頭、交通安全音頭、…\n他にも沢山♫\n明日も盆踊り大会はあるので楽しむぞ😆 https://t.co/Tf55okfvjH"
+        },
         {
           "source": "x_voice",
           "url": "https://x.com/bsmi1967/status/2081543756994715961",
@@ -5989,7 +6019,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 162
+      "evidence_count": 164
     },
     {
       "id": "e6ad694b32fea9d3",
@@ -6015,7 +6045,7 @@
       "evidence_count": 1
     },
     {
-      "id": "9a28f224fcd12159",
+      "id": "7abb9274f169d55c",
       "song_name": "河内音頭",
       "event_name": "盆踊り大会",
       "venue": "木場二丁目公園",
@@ -6027,6 +6057,18 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/nemui_haito/status/2081948528352653732",
+          "date": "2026-07-28T03:43:04+00:00",
+          "text": "はいと😴\n去年の今日は姉妹で万博の大屋根リング盆踊り大会に参加してました♪\n河内音頭あんな真面目に踊ったの初めてだった🤭\n周りの方も皆さんも真剣だったし、話しかけてくださった方が今日の為に駆けつけたとおっしゃっていて盆踊り界隈の熱さを知りました🔥\n\n#EXPO2025 https://t.co/qLulftQblI"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://x.com/kiyo_sato/status/2081875873448476925",
+          "date": "2026-07-27T22:54:22+00:00",
+          "text": "きよ里\n佐渡名産おけさイケメンが、祭り当日までしばらく酒を飲まないでいたと聞き、いいね、私も見習って三条に戻ったら夏まつり当日まで酒をやめよう。とか思ったのに明日は錦糸町河内音頭盆踊り大会のあと東京チームと飲み会するんだった🍶\n祭りならしょうがないし三条じゃないからノーカウント。 https://t.co/A8sRNo0Buj"
+        },
         {
           "source": "x_voice",
           "url": "https://x.com/dreadyarou/status/2081572205327257620",
@@ -6077,10 +6119,10 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 8
+      "evidence_count": 10
     },
     {
-      "id": "d4f5c190f046d597",
+      "id": "5a8d89d1f71f6cab",
       "song_name": "盆ジョビ",
       "event_name": "盆踊り大会",
       "venue": "木場二丁目公園",
@@ -6093,13 +6135,19 @@
       "evidence": [
         {
           "source": "x_voice",
+          "url": "https://x.com/sakenomi_usagi/status/2081792925042962873",
+          "date": "2026-07-27T17:24:45+00:00",
+          "text": "酒吞兎🍶\n今週末のお楽しみは、中野駅前　盆踊り大会\n\n盆ジョビしてきます。\n\nボッチ参戦ですが…お酒飲みのみ楽しみたい。\n\n民謡もかっこいいよ！\n三味線鑑賞もしてきたい。\n踊らずに地方鑑賞😊"
+        },
+        {
+          "source": "x_voice",
           "url": "https://x.com/inaichi115/status/2069911752805167272",
           "date": "2026-06-24T22:33:13+00:00",
           "text": "伊那南瓜\nモーニングシュガー、今朝の1曲目はボン・ジョヴィの歌。\n最近東京では盆ジョビとしてこの歌で盆踊り大会をするのが流行っているらしい。楽しそう。\n\n#rberry\n#MorningSugar"
         }
       ],
       "already_public": false,
-      "evidence_count": 1
+      "evidence_count": 2
     },
     {
       "id": "04cac55917f7c9a3",
@@ -6840,6 +6888,28 @@
           "url": "https://x.com/moriron2/status/2031005891089293680",
           "date": "2026-03-09T13:55:13+00:00",
           "text": "ネイチャー\n東京音頭　赤坂茜彩「江戸盆踊り」12　2026年3月8日　TBS赤坂サカス広場　東京都港区 https://t.co/ZKZ5r9yfaB @YouTubeより\n私が映る時は大抵東京音頭なのでw東京音頭しか踊れないひとみたいだぁ(^-^) 皆さんは同じ曲でも地域によって振りが違うのに完璧に踊れるのは何故なのー？？"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "8b7b3cab40a0b119",
+      "song_name": "ダンシングヒーロー",
+      "event_name": "謝恩納涼盆踊り大会（青山善光寺）",
+      "venue": "青山善光寺",
+      "area": "港区",
+      "status": "未確認",
+      "confidence": "中",
+      "reasons": [
+        "known_song_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/gPVEQeAD9U10257/status/2081723270668472687",
+          "date": "2026-07-27T12:47:58+00:00",
+          "text": "卯ケン\n７月２７日\n青山善光寺盆踊り🏮２日目\n　😖😥超激こみ🫯\n小さなスペースながらも\n行儀よく踊りました🤗　\n\n民謡　ボンジョビ　YMCA　ＤＨ\n今年は何でも有り✨\n\n🌟今日はもう恥ずかしいとか\nいい年してとか忘れて大声出して　ダンシングヒーローに✨\n#盆踊り\n#青山善光寺\n#港区 https://t.co/yIkhCh6vvo"
         }
       ],
       "already_public": false,
@@ -8598,7 +8668,29 @@
       "evidence_count": 1
     },
     {
-      "id": "1b5395f7e17c66fa",
+      "id": "5d16bb808a748af8",
+      "song_name": "しゃけこも踊り",
+      "event_name": "築地本願寺納涼盆踊り大会",
+      "venue": "築地本願寺",
+      "area": "中央区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/tsukijiyumi/status/2081966455017677045",
+          "date": "2026-07-28T04:54:18+00:00",
+          "text": "築地 鮭の店 昭和食品\n7月29日から8月1まで、築地本願寺にて盆踊りが行われます！\n私、しゃけこも踊ります！\n\n築地場外の名店が出店していて『日本一美味しい盆踊り』とも呼ばれています！\n\n是非いらしてくださいね！\n\nhttps://t.co/2nb1i6hfNF"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "051d045af9b9a5f2",
       "song_name": "やぐらを囲む大きな踊り",
       "event_name": "築地本願寺納涼盆踊り大会",
       "venue": "築地本願寺",
@@ -8611,13 +8703,19 @@
       "evidence": [
         {
           "source": "x_voice",
+          "url": "https://x.com/nippon_edit/status/2081926514791395480",
+          "date": "2026-07-28T02:15:36+00:00",
+          "text": "NIPPON EDIT\n【築地本願寺納涼盆踊り大会2026】\n【イベント情報：東京】\n\n開催：2026年7月29日（水）～8月1日（土）4日間 場所：築地本願寺（東京都中央区築地3-15-1）\n\n【2026年のスケジュール】 ■7月29日（水）～8月1日（土） ・盆踊り：19:00～21:00（最終日のみ18:00～20:30） ・大江戸助六太鼓奉納演奏 ・小学6年生以下を対象とした本堂でのお菓子配付\n\n【無料観覧エリア】 ・築地本願寺境内（入場無料） ・盆踊り参加無料 ・屋台（築地場外市場の名店が出店）\n\n【歴史】 築地本願寺は1617年に浅草近くに創建され、1657年の明暦の大火で焼失後、現在の場所に移転。2017年に創建400年を迎えた。本堂は建築家・伊東忠太博士が設計した古代インド・アジア仏教様式で、2014年に国の重要文化財に指定された。\n\n【おすすめの楽しみ方】 ・重要文化財である本堂を背景に踊る盆踊り：都会の非日常"
+        },
+        {
+          "source": "x_voice",
           "url": "https://x.com/c_kankokyokai/status/2079808660453413316",
           "date": "2026-07-22T06:00:00+00:00",
           "text": "中央区観光協会\n第79回 #築地本願寺納涼盆踊り大会 開催✨\n\nやぐらを囲む大きな踊りの輪と、\n築地場外市場の名店が集う屋台グルメが\n夏の夜を華やかに彩ります🏮\n\n📅2026/7/29（水）～8/1（土）\n🕖19:00～21:00（最終日のみ18:00～20:30）\n📍築地本願寺\n\n公式HP🔽\nhttps://t.co/fMZuli3wOD https://t.co/nXx0x5qrCf"
         }
       ],
       "already_public": false,
-      "evidence_count": 1
+      "evidence_count": 2
     },
     {
       "id": "867fa0a83a9a09c4",
@@ -15739,7 +15837,57 @@
       "evidence_count": 1
     },
     {
-      "id": "7fbc69b280753b19",
+      "id": "dbf05eca1d81939d",
+      "song_name": "泉州音頭",
+      "event_name": "すみだ錦糸町河内音頭大盆踊り",
+      "venue": "江東橋竪川親水公園",
+      "area": "墨田区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/keloyama/status/2081990049324048743",
+          "date": "2026-07-28T06:28:03+00:00",
+          "text": "けろ山\nなんと明日は待ちに待った、\n第44回すみだ錦糸町河内音頭大盆踊り\n#錦糸町河内音頭\n#河内音頭\n#江州音頭\n#泉州音頭 https://t.co/qTxvWTgwea"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://x.com/natsutr_bon/status/2081980341057921114",
+          "date": "2026-07-28T05:49:29+00:00",
+          "text": "奈津大郎〘ナツタロ〙\n「すみだ錦糸町河内音頭大盆踊り」が明日明後日29日(水)30日(木)に開催🏮\n\n今年は河内音頭と江州音頭に加え、雲竜左枝菊さんによる泉州音頭も演じられます♪\n\n泉州音頭の踊りになじみのない方向けに、🍊さんが過去に参考になるポストを～👏\n（実際これで練習しました😂）\nhttps://t.co/es1aM1Ep2Q"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 2
+    },
+    {
+      "id": "d6cd82155692fd63",
+      "song_name": "泉州音頭の踊り",
+      "event_name": "すみだ錦糸町河内音頭大盆踊り",
+      "venue": "江東橋竪川親水公園",
+      "area": "墨田区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/natsutr_bon/status/2081980341057921114",
+          "date": "2026-07-28T05:49:29+00:00",
+          "text": "奈津大郎〘ナツタロ〙\n「すみだ錦糸町河内音頭大盆踊り」が明日明後日29日(水)30日(木)に開催🏮\n\n今年は河内音頭と江州音頭に加え、雲竜左枝菊さんによる泉州音頭も演じられます♪\n\n泉州音頭の踊りになじみのない方向けに、🍊さんが過去に参考になるポストを～👏\n（実際これで練習しました😂）\nhttps://t.co/es1aM1Ep2Q"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "dea0efdf427a5823",
       "song_name": "錦糸町河内音頭",
       "event_name": "すみだ錦糸町河内音頭大盆踊り",
       "venue": "江東橋竪川親水公園",
@@ -15750,6 +15898,12 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/keloyama/status/2081990049324048743",
+          "date": "2026-07-28T06:28:03+00:00",
+          "text": "けろ山\nなんと明日は待ちに待った、\n第44回すみだ錦糸町河内音頭大盆踊り\n#錦糸町河内音頭\n#河内音頭\n#江州音頭\n#泉州音頭 https://t.co/qTxvWTgwea"
+        },
         {
           "source": "x_voice",
           "url": "https://x.com/nyantokonyan/status/2063449536698454055",
@@ -15848,7 +16002,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 16
+      "evidence_count": 17
     },
     {
       "id": "f64264a8eab2a15c",
@@ -18752,6 +18906,28 @@
       "evidence_count": 17
     },
     {
+      "id": "5eac8576ed47eb22",
+      "song_name": "あーられ音頭",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/renkanouta/status/2081955666936447487",
+          "date": "2026-07-28T04:11:26+00:00",
+          "text": "🌸恋歌🌸6/20オリジナル曲「ゆれるピアス」\n盆踊りの曲といえば\nこの曲🎶💩❣️\n\nドドんがドン🥁\nめちゃんこめちゃんこめっちゃんこ\nあーられ音頭でうちゃちゃっちゃ〜😆\n小さな頃、近くの盆踊り大会で\n(可愛く？)踊っていた…はず🏮\n\nhttps://t.co/65wPcINcq4"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
       "id": "2ec2a96cdc59674b",
       "song_name": "おこさ節",
       "event_name": "盆踊り大会",
@@ -18864,7 +19040,7 @@
       "evidence_count": 2
     },
     {
-      "id": "15fda39d3086b171",
+      "id": "68a9f5affce85db3",
       "song_name": "おみこし音頭",
       "event_name": "盆踊り大会",
       "venue": "木場二丁目公園",
@@ -18875,6 +19051,12 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=aPPgVp7Ngcc",
+          "date": "2026-07-27T11:00:02+00:00",
+          "text": "和太鼓お祭りCH\nおみこし音頭　上篠崎自治会納涼盆踊り大会20　2026年7月21日　篠崎浅間神社\n2026年7月21日に東京都江戸川区の篠崎浅間神社で開催された「上篠崎自治会 納涼盆踊り大会」の様子です。\n\n夜の神社に響く穏やかなメロディと、地域の方々が一体となって踊る情緒あふれる光景をぜひお楽しみください。\n\n動画が良ければ、ぜひ「高評価」と「チャンネル登録」をよろしくお願いします！ 皆様のコメントもお待ちしております。\n\n#盆踊り #篠崎浅間神社 #３６５日の紙飛行機 #上篠崎自治会 #夏祭り #江戸川区 #和太鼓お祭りチャンネル\n\n\n篠崎浅間神社盆踊り\n１365日の紙飛行機　https://youtu.be/eCiDJx3BcLw\n２Ultra Soul　https://youtu.be/DjiH9cqNT6k\n３ビューティフルサンデー　https://youtu.be/XPJYiPXklPs\n４ダンシング・ヒーロー　h"
+        },
         {
           "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=-JqX-HDO9As",
@@ -18889,7 +19071,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 2
+      "evidence_count": 3
     },
     {
       "id": "99aa0894e28c3364",
@@ -19534,6 +19716,28 @@
       "evidence_count": 1
     },
     {
+      "id": "15b2c64f29e810ba",
+      "song_name": "ほっぺちゃん音頭",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/harunoto/status/2081964837270433813",
+          "date": "2026-07-28T04:47:52+00:00",
+          "text": "はるのおと＠暴食の卓\n「7/25（土）-26（日）開催の喜多見盆踊り大会にて「ほっぺちゃん音頭」が流れます！」これに行かなかったの、痛恨すぎる→NowBrowsing: アニメ『ほっぺちゃん ～サン王国と黒ほっぺ団の秘密～』 https://t.co/sQAtxtXWBv"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
       "id": "9b95db9a77835a8c",
       "song_name": "まつのき小唄",
       "event_name": "盆踊り大会",
@@ -19600,7 +19804,7 @@
       "evidence_count": 1
     },
     {
-      "id": "55d9e7bf94b847af",
+      "id": "bc52b4f5c5b1131b",
       "song_name": "みんなで音頭",
       "event_name": "盆踊り大会",
       "venue": "木場二丁目公園",
@@ -19611,6 +19815,12 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/o_tantei/status/2081928622332670085",
+          "date": "2026-07-28T02:23:58+00:00",
+          "text": "おしりたんてい【公式】\n🏮🏮イベント情報🍑🏮 \n\n#おしりたんてい音頭\n✨今週の会場一覧✨\n\n東京\n🟥7/31(金)　木根川町会ふれあい盆踊り\n⬜️8/1(土)　多摩平第7公園盆踊り\n🟥8/1(土)2(日)　一ノ宮自治会 盆踊り\n⬜️8/1(土)2(日)　第14回中野駅前大盆踊り大会\n　　　　　　※8/1(土)おしりたんてい登場！\n🟥8/2(日)　すこやか盆踊り\n\nみんなで音頭を踊ってうちわをゲットしよう🥰\nhttps://t.co/KkgIVTb4M1\n\n#おしりたんてい"
+        },
         {
           "source": "x_voice",
           "url": "https://x.com/o_tantei/status/2076516284498354625",
@@ -19625,7 +19835,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 2
+      "evidence_count": 3
     },
     {
       "id": "5c1ceda0954dfd19",
@@ -19710,6 +19920,28 @@
       ],
       "already_public": false,
       "evidence_count": 3
+    },
+    {
+      "id": "3db274504de00f2e",
+      "song_name": "よさこいソーラン",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/ekokitakai/status/2082002818861518863",
+          "date": "2026-07-28T07:18:48+00:00",
+          "text": "江古田駅北口商店会\n今年も江古田の夏が盛り上がります❗️\n\n🏮「第18回　栄町盆踊り大会」開催🏮\n\n・榮太鼓の子供達による「盆太鼓」\n・開三中生徒『粋』による「よさこいソーラン」\n・屋台や縁日も楽しめます\n\n📅 8月8日(土)16：30〜20：30\n📍江古田斎場（練馬区小竹町１-61−1）\n☔️雨天中止\n\n#盆踊り #江古田 #練馬区 https://t.co/Pl0cqPYwLX"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
     },
     {
       "id": "4e847687eaedaf76",
@@ -19816,6 +20048,50 @@
           "url": "https://x.com/inaichi115/status/2069911752805167272",
           "date": "2026-06-24T22:33:13+00:00",
           "text": "伊那南瓜\nモーニングシュガー、今朝の1曲目はボン・ジョヴィの歌。\n最近東京では盆ジョビとしてこの歌で盆踊り大会をするのが流行っているらしい。楽しそう。\n\n#rberry\n#MorningSugar"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "b7fa27a95af5557d",
+      "song_name": "スカイツリー音頭",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/CavpuakkSgLRjWZ/status/2081749545520873834",
+          "date": "2026-07-27T14:32:23+00:00",
+          "text": "ひら🎀12🚙9🚙3\n今夜は仕事後に近所の盆踊り大会へ💃\n踊ったわー♫\nここは歴史ある盆踊り大会なので、曲も幅広い！\n炭坑節、東京音頭、大東京音頭、21世紀音頭、八木節、ダンシング・ヒーロー、スカイツリー音頭、交通安全音頭、…\n他にも沢山♫\n明日も盆踊り大会はあるので楽しむぞ😆 https://t.co/Tf55okfvjH"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "0d616fcfa66822e8",
+      "song_name": "スモーキーズ音頭",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/Smokys_KAZU/status/2082019485276606491",
+          "date": "2026-07-28T08:25:01+00:00",
+          "text": "KAZU\n去年の中野盆踊り大会なんだけど、コリャ野外フェスだね！💦\nボン・ジョヴィの曲で踊る「盆ジョヴィ」(笑)\n今年行ってこようかな〜！\n\nスモーキーズも「スモーキーズ音頭」を作るかね？！\nヨヨイノヨイッ！🙌\n\nhttps://t.co/wJH4qtDLg9"
         }
       ],
       "already_public": false,
@@ -20260,6 +20536,28 @@
       "evidence_count": 1
     },
     {
+      "id": "4689e91ba568dfb6",
+      "song_name": "交通安全音頭",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/CavpuakkSgLRjWZ/status/2081749545520873834",
+          "date": "2026-07-27T14:32:23+00:00",
+          "text": "ひら🎀12🚙9🚙3\n今夜は仕事後に近所の盆踊り大会へ💃\n踊ったわー♫\nここは歴史ある盆踊り大会なので、曲も幅広い！\n炭坑節、東京音頭、大東京音頭、21世紀音頭、八木節、ダンシング・ヒーロー、スカイツリー音頭、交通安全音頭、…\n他にも沢山♫\n明日も盆踊り大会はあるので楽しむぞ😆 https://t.co/Tf55okfvjH"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
       "id": "bfea6d77188246b2",
       "song_name": "京北音頭",
       "event_name": "盆踊り大会",
@@ -20618,7 +20916,7 @@
       "evidence_count": 1
     },
     {
-      "id": "f16a3353517d07d1",
+      "id": "ea43e4767792b241",
       "song_name": "八木節",
       "event_name": "盆踊り大会",
       "venue": "木場二丁目公園",
@@ -20629,6 +20927,12 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/CavpuakkSgLRjWZ/status/2081749545520873834",
+          "date": "2026-07-27T14:32:23+00:00",
+          "text": "ひら🎀12🚙9🚙3\n今夜は仕事後に近所の盆踊り大会へ💃\n踊ったわー♫\nここは歴史ある盆踊り大会なので、曲も幅広い！\n炭坑節、東京音頭、大東京音頭、21世紀音頭、八木節、ダンシング・ヒーロー、スカイツリー音頭、交通安全音頭、…\n他にも沢山♫\n明日も盆踊り大会はあるので楽しむぞ😆 https://t.co/Tf55okfvjH"
+        },
         {
           "source": "x_voice",
           "url": "https://x.com/FFleurs/status/2078114932995097065",
@@ -20673,7 +20977,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 7
+      "evidence_count": 8
     },
     {
       "id": "e95ebb1d7ac3e5e0",
@@ -20980,10 +21284,38 @@
           "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1TWTJOWjlwUm16MUZtd2xDMjlYWVhScWNfdFJ4NlpkQTdJRzItMGFHYVJGc1pCeGl6cGVxTG9xOFN4ay00TVR1eHpRZ1hVaGhEOHl1Z3BJdFh6ZkxnUVVteUFabWFaZEY3TW5EZGZWWjl4QnJzY3lRRmxLeUFLc3c?oc=5",
           "date": "Mon, 27 Jul 2026 09:33:06 GMT",
           "text": "岐阜城楽市 盆踊り大会 夏宵に踊りの輪 岐阜市・岐阜公園（ぎふチャンDIGITAL） - Yahoo!ニュース"
+        },
+        {
+          "source": "latest_news",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPU2pnTC1aZDc0OUVvU29FeWhoNlN4eFlqSjYzMEJaQVhJWklKSWtqNDVsUldvd25USVFkeEVCS2tEejdvdUpTY2dHSlNDc0kxeDhCdm1QaVY2eHctLXlzaHpWWkxraFJsWjhkVzJoY3o4eVdrVk1CdW1RM0ZFMlpWOEJiTERXc25BQWlHNkhn?oc=5",
+          "date": "Mon, 27 Jul 2026 09:33:06 GMT",
+          "text": "岐阜城楽市 盆踊り大会 夏宵に踊りの輪 岐阜市・岐阜公園 (ぎふチャンDIGITAL) - Yahoo!ニュース"
         }
       ],
       "already_public": false,
-      "evidence_count": 2
+      "evidence_count": 3
+    },
+    {
+      "id": "587ab0bce79c85be",
+      "song_name": "夏祭りの季節",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/adachi_city/status/2082007195718496556",
+          "date": "2026-07-28T07:36:11+00:00",
+          "text": "足立区役所\n入谷町会納涼盆踊り大会（舎人区民事務所）\n\n夏祭りの季節が到来しました！\n舎人地域の盆踊りは、入谷中央公園から順次始まっていきます。\n会場では、子どもから大人まで多くの来場者が笑顔にあふれ、活気ある雰囲気に包まれていました。 https://t.co/zVezH5fuy6"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
     },
     {
       "id": "f9f79a159370419d",
@@ -21224,6 +21556,28 @@
       ],
       "already_public": false,
       "evidence_count": 3
+    },
+    {
+      "id": "e9c8d7bb8e6a1491",
+      "song_name": "子ども会が踊り",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/adachi_city/status/2081945309396308295",
+          "date": "2026-07-28T03:30:17+00:00",
+          "text": "足立区役所\n８月１日（土）、２日（日）に中川公園（Ｂ地区ふれあい広場）で１８時から「中川納涼大盆踊り大会」が行われます。４自治会合同、今年で３回目の開催です。子ども会が踊りで出演！多数の夜店やキッチンカーも出ます！ぜひご来場ください。※雨天の場合は中止となります\n#夏祭り #盆踊り https://t.co/IkYpHt2niO"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
     },
     {
       "id": "0d4fde74a7091b4f",
@@ -23246,6 +23600,28 @@
       "evidence_count": 17
     },
     {
+      "id": "74dbaa8c28c990bb",
+      "song_name": "楽しく踊り",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/nobuko20160913/status/2081739957840875856",
+          "date": "2026-07-27T13:54:17+00:00",
+          "text": "岡本のぶ子RICE🍚🌾\nhttps://t.co/9LbWg0xXxX 2026年7月25日(土)19:00-23:00\n宇山昭和会主催の納涼盆踊り大会3日目(最終日)、途中の雨に降られましたが、雨雲レーダーを読み取り、50回目の納涼盆踊り大会を素晴らしい櫓の上で、楽しく踊り切ることができました！関係者の皆さま大変ありがとうございました。\n#公明党世田谷区議会議員岡本のぶ子\n#宇山昭和会\n#第50回納涼盆踊り大会"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
       "id": "87923ebf95c62971",
       "song_name": "歌と踊り",
       "event_name": "盆踊り大会",
@@ -23338,6 +23714,28 @@
       ],
       "already_public": false,
       "evidence_count": 2
+    },
+    {
+      "id": "6d412c9766e9038b",
+      "song_name": "江戸川音頭や東京音頭",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/sekine_komei/status/2081867778592833797",
+          "date": "2026-07-27T22:22:12+00:00",
+          "text": "関根まみ子🌻江戸川区議会議員\n🏮週末の盆踊り大会へ🏃‍♂️②\n\n一之江上親交会町会へおじゃましました。\n黙々と警備と交通整理をしていただいている役員の皆さま、\n盆踊りを皆で盛り上げようとされている皆さまに頭が下がります👏ありがとうございます。\n\n皆さまに誘われ、江戸川音頭や東京音頭、桜音頭、炭坑節等々、下手くそながら私も5曲踊りました。汗💦だくになりました💦\n暑さ対策、皆さま気をつけて！"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
     },
     {
       "id": "c2e0553efcf332a7",
@@ -23662,7 +24060,29 @@
       "evidence_count": 15
     },
     {
-      "id": "a75943d357ea8f4b",
+      "id": "83cde831f14a9ee8",
+      "song_name": "渡田1丁目音頭",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/kurashi_mamoru/status/2082022357208830197",
+          "date": "2026-07-28T08:36:26+00:00",
+          "text": "片柳すすむ（前・川崎市議）#日本共産党\n▶24日は緊急な家族の都合で回れませんでしたが、25～26日は地域の各所で盆踊り大会。渡田1丁目、京町、小田1丁目、池上新町、渡田3・4丁目、大島4丁目、元木1・2丁目にお伺いしました（26日が雷雨で伺えなかった町内も…）。\n\n▶私が実行委員長をつとめる「#ふるさと川崎夏まつり（8月7～8日）」と同じ会場の渡田第二公園では渡田1丁目町内会の盆踊り。『#渡田1丁目音頭』がとても素敵でした。♪ここは渡田～渡田いっちょうめ～ \n\n▶様々な事情で予告なく中止せざるを得ない時もありますが、朝宣伝・夕方宣伝も連日やっています。\n写真を撮り忘れたりしてUPできないときもやってます！"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "333b9893aa339aca",
       "song_name": "炭坑節",
       "event_name": "盆踊り大会",
       "venue": "木場二丁目公園",
@@ -23674,6 +24094,24 @@
         "song_suffix_near_context"
       ],
       "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=oCvxJCOvBuo",
+          "date": "2026-07-27T10:30:11+00:00",
+          "text": "和太鼓お祭りCH\n「炭坑節、好踊会Ver.」　上篠崎自治会納涼盆踊り大会19　2026年7月21日　篠崎浅間神社\n2026年7月21日に東京都江戸川区の篠崎浅間神社で開催された「上篠崎自治会 納涼盆踊り大会」の様子です。\n\n夜の神社に響く穏やかなメロディと、地域の方々が一体となって踊る情緒あふれる光景をぜひお楽しみください。\n\n動画が良ければ、ぜひ「高評価」と「チャンネル登録」をよろしくお願いします！ 皆様のコメントもお待ちしております。\n\n#盆踊り #篠崎浅間神社 #３６５日の紙飛行機 #上篠崎自治会 #夏祭り #江戸川区 #和太鼓お祭りチャンネル\n\n\n篠崎浅間神社盆踊り\n１365日の紙飛行機　https://youtu.be/eCiDJx3BcLw\n２Ultra Soul　https://youtu.be/DjiH9cqNT6k\n３ビューティフルサンデー　https://youtu.be/XPJYiPXklPs\n４ダンシング"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://x.com/sekine_komei/status/2081867778592833797",
+          "date": "2026-07-27T22:22:12+00:00",
+          "text": "関根まみ子🌻江戸川区議会議員\n🏮週末の盆踊り大会へ🏃‍♂️②\n\n一之江上親交会町会へおじゃましました。\n黙々と警備と交通整理をしていただいている役員の皆さま、\n盆踊りを皆で盛り上げようとされている皆さまに頭が下がります👏ありがとうございます。\n\n皆さまに誘われ、江戸川音頭や東京音頭、桜音頭、炭坑節等々、下手くそながら私も5曲踊りました。汗💦だくになりました💦\n暑さ対策、皆さま気をつけて！"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://x.com/CavpuakkSgLRjWZ/status/2081749545520873834",
+          "date": "2026-07-27T14:32:23+00:00",
+          "text": "ひら🎀12🚙9🚙3\n今夜は仕事後に近所の盆踊り大会へ💃\n踊ったわー♫\nここは歴史ある盆踊り大会なので、曲も幅広い！\n炭坑節、東京音頭、大東京音頭、21世紀音頭、八木節、ダンシング・ヒーロー、スカイツリー音頭、交通安全音頭、…\n他にも沢山♫\n明日も盆踊り大会はあるので楽しむぞ😆 https://t.co/Tf55okfvjH"
+        },
         {
           "source": "x_voice",
           "url": "https://x.com/HirohitoKondo/status/2081298222711198203",
@@ -24192,7 +24630,7 @@
         }
       ],
       "already_public": false,
-      "evidence_count": 86
+      "evidence_count": 89
     },
     {
       "id": "3b25404c500fa6fd",
@@ -24575,6 +25013,28 @@
       "evidence_count": 1
     },
     {
+      "id": "0da370309fa66d14",
+      "song_name": "練習した踊り",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/kirigaoka_cjr/status/2081958665712758899",
+          "date": "2026-07-28T04:23:21+00:00",
+          "text": "桐ケ丘地区自治会連合会\n参加をご希望の方は、チラシのQRコードまたはお電話でお申し込みください。\n\n✨練習した踊りは、**9月12日（土）開催の「桐ケ丘地区盆踊り大会」**で披露できます！\n地域の皆さんと一緒に、夏の思い出をつくりましょう♪\n\n#桐ケ丘 #盆踊り #盆踊り練習会 #桐盆大会 #北区 #地域イベント #初心者歓迎"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
       "id": "db9cb94fa7f4b677",
       "song_name": "能登島さし音頭",
       "event_name": "盆踊り大会",
@@ -24819,6 +25279,28 @@
           "url": "https://x.com/zqbembjPRiwRKui/status/2079898886697791824",
           "date": "2026-07-22T11:58:31+00:00",
           "text": "横井かつのり\nTKEスポーツセンターにて、十四山地区盆踊り大会の練習会が開催されました。\n講師として十四山音頭保存会の皆様をお招きし、丁寧にご指導いただきました。\n十四山音頭は県民謡百選にも選ばれている歴史ある民謡です。今後とも末長く継承していきたいものです。 https://t.co/mcoaYmfTkS"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "8784a0a5c16bcac2",
+      "song_name": "越中おわら節",
+      "event_name": "盆踊り大会",
+      "venue": "木場二丁目公園",
+      "area": "江東区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/DRMEMI/status/2081745328114635101",
+          "date": "2026-07-27T14:15:37+00:00",
+          "text": "エミエミ\n今日は、人口密度高めな青山善光寺納涼盆踊り大会へ！休憩なしでぶっ通しだったので、たまに抜けて水分補給したりポップコーン食べたり。『好きになった人』で色々な方と踊れて楽しかった🤗越中おわら節や佐渡おけさは難しかったな。#盆踊り https://t.co/cujD0gs4l2"
         }
       ],
       "already_public": false,
@@ -25735,19 +26217,13 @@
         },
         {
           "source": "latest_news",
-          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBTb1JreERPWnpsLWI5SjRfUEljTTdCbFh0U29fVThJUVBJb0ZkcE9pMEZVU201dG5tUTAwY2tzRXdvaThnZWVjazdKTFkzcWJNUDVfRXQ1cllfSld4QnBSWDFxSHFucWhoalpZeG9QYTRHTDZLSWp4LU5qVQ?oc=5",
-          "date": "Sun, 26 Jul 2026 22:39:00 GMT",
-          "text": "赤坂・浄土寺で51回目の盆踊り ご当地音頭など34演目用意 - au Webポータル"
-        },
-        {
-          "source": "latest_news",
           "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE8tamFDLWFNUW1KWHRwR0hqRHE3TEN6ei1lNjU3UWpNZm1KNjFfT1d0aUNmQXZoZDVIeVQwMXA1NzdUUU1ROWtpZ2sxZ1ZBbTIwb1Fr?oc=5",
           "date": "Mon, 27 Jul 2026 06:26:29 GMT",
           "text": "赤坂・浄土寺で51回目の盆踊り ご当地音頭など34演目用意 - 赤坂経済新聞"
         }
       ],
       "already_public": false,
-      "evidence_count": 5
+      "evidence_count": 4
     },
     {
       "id": "7ae46ed749bbaec3",
@@ -26792,6 +27268,28 @@
           "url": "https://x.com/mu4324/status/2079394341139947660",
           "date": "2026-07-21T02:33:38+00:00",
           "text": "宇佐美\n今年の杉大門盆踊りは9月13日だから、今年の赤坂氷川神社盆踊り最終日と同じだね、去年も赤坂氷川神社盆踊り最終日同じだった、去年は杉大門盆踊り最初の休憩が終わってから、根津藍染通り音頭会に行って踊って、途中土砂降りで中止になった。"
+        }
+      ],
+      "already_public": false,
+      "evidence_count": 1
+    },
+    {
+      "id": "f9d07660fb0eec8e",
+      "song_name": "行儀よく踊り",
+      "event_name": "謝恩納涼盆踊り大会（青山善光寺）",
+      "venue": "青山善光寺",
+      "area": "港区",
+      "status": "未確認",
+      "confidence": "低",
+      "reasons": [
+        "song_suffix_near_context"
+      ],
+      "evidence": [
+        {
+          "source": "x_voice",
+          "url": "https://x.com/gPVEQeAD9U10257/status/2081723270668472687",
+          "date": "2026-07-27T12:47:58+00:00",
+          "text": "卯ケン\n７月２７日\n青山善光寺盆踊り🏮２日目\n　😖😥超激こみ🫯\n小さなスペースながらも\n行儀よく踊りました🤗　\n\n民謡　ボンジョビ　YMCA　ＤＨ\n今年は何でも有り✨\n\n🌟今日はもう恥ずかしいとか\nいい年してとか忘れて大声出して　ダンシングヒーローに✨\n#盆踊り\n#青山善光寺\n#港区 https://t.co/yIkhCh6vvo"
         }
       ],
       "already_public": false,
@@ -28586,6 +29084,12 @@
       "evidence": [
         {
           "source": "x_voice",
+          "url": "https://www.youtube.com/watch?v=kuCI5OaoJRQ",
+          "date": "2026-07-28T08:00:02+00:00",
+          "text": "和太鼓お祭りCH\nどんとこいブギ　晴海ふ頭公園盆踊り大会13　2026年7月12日\n2026年7月12日に開催された「晴海ふ頭公園盆踊り大会」での盆踊りの様子をお届けします！\n \n晴海ふ頭公園の心地よい海風を感じながら、\n会場の盛り上がりをぜひ映像でお楽しみください！\n\n\n晴海ふ頭公園盆踊り\n１おしりたんてい音頭　https://youtu.be/a14wHJTz11Y\n２ジャンボリーミッキー　https://youtu.be/qK_wAZd9sfY\n３どんとこいブギ　https://youtu.be/FwKDdeH2N7I\n４河内おとこ節　https://youtu.be/jTg6AaNuJDw\n５Let'sONDOAgain　https://youtu.be/1hoUlCxoGBU\n６東京五輪2020　https://youtu.be/8NRTaNXw95Y\n７これがお江戸の盆ダンス　https://youtu.be/Lj0"
+        },
+        {
+          "source": "x_voice",
           "url": "https://www.youtube.com/watch?v=gk3938j-DqQ",
           "date": "2026-07-27T08:00:25+00:00",
           "text": "和太鼓お祭りCH\n【ダンシング・ヒーロー】（荻野目洋子）　晴海ふ頭公園盆踊り大会12　2026年7月12日\n2026年7月12日に開催された「晴海ふ頭公園盆踊り大会」での盆踊りの様子をお届けします！\n \n晴海ふ頭公園の心地よい海風を感じながら、\n会場の盛り上がりをぜひ映像でお楽しみください！\n\n\n晴海ふ頭公園盆踊り\n１おしりたんてい音頭　https://youtu.be/a14wHJTz11Y\n２ジャンボリーミッキー　https://youtu.be/qK_wAZd9sfY\n３どんとこいブギ　https://youtu.be/FwKDdeH2N7I\n４河内おとこ節　https://youtu.be/jTg6AaNuJDw\n５Let'sONDOAgain　https://youtu.be/1hoUlCxoGBU\n６東京五輪2020　https://youtu.be/8NRTaNXw95Y\n７これがお江戸の盆ダンス　https://"
@@ -28652,7 +29156,7 @@
         }
       ],
       "already_public": true,
-      "evidence_count": 11
+      "evidence_count": 12
     },
     {
       "id": "eaabaa9393f0cb26",
@@ -39964,6 +40468,42 @@
       "evidence": [
         {
           "source": "x_voice",
+          "url": "https://x.com/ryougokumotsuni/status/2082023120857415922",
+          "date": "2026-07-28T08:39:28+00:00",
+          "text": "両国もつ煮\n【イベントの出店案内】\n\n7/29(水)と7/30(木)は『第44回すみだ錦糸町河内音頭大盆踊り』に出店します！\n\n時間：17:00〜21:00\n場所：竪川親水公園特設会場 (首都高速7号線高架下)\n\n暑い夏を吹き飛ばすよう、\n激しく踊って！飲んで！食べましょう！\n\n2日間とも本会場にてテント出店です🎶\n\n#両国もつ煮 https://t.co/gXV1rSE1G9"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://x.com/keloyama/status/2081990049324048743",
+          "date": "2026-07-28T06:28:03+00:00",
+          "text": "けろ山\nなんと明日は待ちに待った、\n第44回すみだ錦糸町河内音頭大盆踊り\n#錦糸町河内音頭\n#河内音頭\n#江州音頭\n#泉州音頭 https://t.co/qTxvWTgwea"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://x.com/event_fes/status/2081886850281853371",
+          "date": "2026-07-27T23:37:59+00:00",
+          "text": "東京イベント情報\n明日からです‼️ 第44回すみだ錦糸町河内音頭大盆踊り｜7月29日（水）〜30日（木）に竪川親水公園特設会場で開催！河内音頭で踊る盆踊り 詳細はこちら👉 https://t.co/j1MNZS4b3P"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://x.com/ikot_tokyo/status/2081982990809501819",
+          "date": "2026-07-28T06:00:01+00:00",
+          "text": "入場無料イベント紹介｜ikot 東京\n暑い盛りの盆踊りに！『第44回すみだ錦糸町河内音頭大盆踊り』｜ikot 東京\n#すみだ錦糸町河内音頭大盆踊り #盆踊り #錦糸町 #墨田区 #河内音頭\nhttps://t.co/pv0zvzx72m"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://x.com/natsutr_bon/status/2081980341057921114",
+          "date": "2026-07-28T05:49:29+00:00",
+          "text": "奈津大郎〘ナツタロ〙\n「すみだ錦糸町河内音頭大盆踊り」が明日明後日29日(水)30日(木)に開催🏮\n\n今年は河内音頭と江州音頭に加え、雲竜左枝菊さんによる泉州音頭も演じられます♪\n\n泉州音頭の踊りになじみのない方向けに、🍊さんが過去に参考になるポストを～👏\n（実際これで練習しました😂）\nhttps://t.co/es1aM1Ep2Q"
+        },
+        {
+          "source": "x_voice",
+          "url": "https://x.com/tokyo_eventinfo/status/2081875117894959117",
+          "date": "2026-07-27T22:51:22+00:00",
+          "text": "東京フェスタ・イベント情報\n明日からです(7/29-30)「第44回すみだ錦糸町河内音頭大盆踊り」竪川親水公園\nhttps://t.co/rUDKXVtC3I"
+        },
+        {
+          "source": "x_voice",
           "url": "https://x.com/Areis_bar/status/2081656864094532093",
           "date": "2026-07-27T08:24:06+00:00",
           "text": "A-reis（アレイス・錦糸町アニソンバー）\n今週はこちら🤚\n7/29,30はすみだ錦糸町河内音頭大盆踊りが開催されますよ( ﾟ∀ﾟ)\n行きたい方はどちらも19:00にお店に集合ー！！\nキャストの一部は夏仕様でお届けします。\n木曜のみ20:00-営業！\n一緒にお祭りに行った方は時間無制限飲み放題にします🌟 https://t.co/jlTsLW0BHE"
@@ -40120,7 +40660,7 @@
         }
       ],
       "already_public": true,
-      "evidence_count": 26
+      "evidence_count": 32
     },
     {
       "id": "7a7fb49d90eeab18",

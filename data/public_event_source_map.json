@@ -65,11 +65,11 @@
       "venue_id": "ven_0c32876552fd1df0"
     },
     {
-      "public_event_key": "京橋盆踊り|京橋エドグラン 京橋中央ひろば|2025-08-29|2025-08-30",
+      "public_event_key": "京橋盆踊り|京橋エドグラン 京橋中央ひろば|2026-08-28|2026-08-29",
       "name": "京橋盆踊り",
       "venue": "京橋エドグラン 京橋中央ひろば",
-      "date": "2025-08-29",
-      "date_end": "2025-08-30",
+      "date": "2026-08-28",
+      "date_end": "2026-08-29",
       "source": "master_rdb",
       "occurrence_id": "occ_07f775ba65031a6e",
       "series_id": "ser_e763e24c3496cf82",
@@ -1493,11 +1493,11 @@
       "venue_id": "ven_a485822930ed2a59"
     },
     {
-      "public_event_key": "品川区民まつり 大崎第一地区|第四日野小学校||",
+      "public_event_key": "品川区民まつり 大崎第一地区|第四日野小学校|2026-07-25|2026-07-25",
       "name": "品川区民まつり 大崎第一地区",
       "venue": "第四日野小学校",
-      "date": "",
-      "date_end": "",
+      "date": "2026-07-25",
+      "date_end": "2026-07-25",
       "source": "master_rdb",
       "occurrence_id": "occ_1dc35224d0d3fd14",
       "series_id": "ser_9898d4c74d0a0a5b",

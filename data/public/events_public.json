@@ -872,30 +872,30 @@
     "address": "中央区京橋2-2-1",
     "lat": null,
     "lng": null,
-    "date": "2025-08-29",
-    "date_end": "2025-08-30",
-    "status": "未確認",
+    "date": "2026-08-28",
+    "date_end": "2026-08-29",
+    "status": "確認済み",
     "date_confidence": {
-      "level": "unknown",
-      "label": "未確認",
-      "description": "開催日はまだ確認できていません"
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
     },
     "date_candidates": [],
     "hints": [
       [
         8,
-        29
+        28
       ],
       [
         8,
-        30
+        29
       ]
     ],
     "jun": {
       "8": "下旬"
     },
     "description": "京橋盆踊りは、中央区の京橋エドグラン 京橋中央ひろばで行われる盆踊り。8月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2023年に約50年ぶり復活、以後毎年8月末開催。2026年日程は未発表（公式イベントページ要確認）",
+    "detail": "2023年に約50年ぶり復活、以後毎年8月末開催。 2026年は8月28日（金）〜29日（土）開催。京橋エドグラン公式サイトのイベント告知「京橋盆踊り2026」で確認（",
     "source_urls": [
       {
         "label": "告知HPあり",
@@ -905,86 +905,25 @@
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
-    "public_status": "expected_medium",
-    "public_category": "recurring_last_year",
-    "public_status_label": "昨年開催",
-    "public_note": "昨年開催: 2025-08-29〜2025-08-30。今年の日程は未確認です。",
-    "recurrence_label": "昨年開催・継続性 中",
-    "recurrence_score": 0.63,
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-28〜2026-08-29",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
     "recurrence_reasons": [
-      "official_or_semi_official_evidence",
-      "venue_present",
-      "tokyo_23ward",
-      "recurring_word:毎年"
+      "2026年日付確認済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
-    "last_seen_year": 2025,
+    "last_seen_year": null,
     "last_seen_dates": [
-      "2025-08-29",
-      "2025-08-30"
+      "2026-08-28",
+      "2026-08-29"
     ],
-    "display_tier": "historical_slide",
-    "historical_reference": {
-      "display_tier": "historical_slide",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-08-29",
-        "2025-08-30"
-      ],
-      "label": "2025-08-29〜2025-08-30実績・今年未確認",
-      "confidence": "medium",
-      "score": 0.63,
-      "status": "expected_medium",
-      "status_label": "昨年開催",
-      "recurrence_label": "昨年開催・継続性 中",
-      "reasons": [
-        "official_or_semi_official_evidence",
-        "venue_present",
-        "tokyo_23ward",
-        "recurring_word:毎年"
-      ],
-      "cautions": [],
-      "edition_number": null,
-      "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-08-28",
-        "date_end": "2026-08-29",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第5金曜を2026年へスライド",
-        "source_date": "2025-08-29",
-        "source_date_end": "2025-08-30",
-        "duration_days": 2
-      }
-    },
-    "historical_display_tier": "historical_slide",
-    "historical_last_seen_year": 2025,
-    "historical_last_seen_dates": [
-      "2025-08-29",
-      "2025-08-30"
-    ],
-    "historical_reference_label": "2025-08-29〜2025-08-30実績・今年未確認",
-    "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.63,
-    "historical_slide": {
-      "date": "2026-08-28",
-      "date_end": "2026-08-29",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第5金曜を2026年へスライド",
-      "source_date": "2025-08-29",
-      "source_date_end": "2025-08-30",
-      "duration_days": 2
-    },
-    "historical_slide_date": "2026-08-28",
-    "historical_slide_date_end": "2026-08-29",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第5金曜を2026年へスライド",
-    "predicted_date": "2026-08-28",
-    "predicted_date_end": "2026-08-29",
-    "prediction_basis": "2025年実績の同月第5金曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "display_tier": "confirmed"
   },
   {
     "name": "銀座一丁目東町会・新富町会 納涼盆踊り大会",
@@ -14508,84 +14447,53 @@
     "address": "東京都品川区西五反田4-29-9",
     "lat": null,
     "lng": null,
-    "date": null,
-    "date_end": null,
-    "status": "未確認",
+    "date": "2026-07-25",
+    "date_end": "2026-07-25",
+    "status": "確認済み",
     "date_confidence": {
-      "level": "unknown",
-      "label": "未確認",
-      "description": "開催日はまだ確認できていません"
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
     },
     "date_candidates": [],
     "hints": [
       [
         7,
-        26
+        25
       ]
     ],
     "jun": {
       "7": "下旬"
     },
     "description": "第四日野小学校を会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
-    "detail": "2025-07-26 開催実績。2025 7/26。「品川区民まつり 大崎第一地区」7月26日(土) 15時-19時。 「模擬店、盆踊り、ゲームコーナー ほか」。 踊りの時間詳細不明。",
+    "detail": "2025-07-26 開催実績。2025 7/26。「品川区民まつり 大崎第一地区」7月26日(土) 15時-19時。 「模擬店、盆踊り、ゲームコーナー ほか」。 踊りの時間詳細不明。 2026年は7月25日（土）15:00〜18:00に第四日野小学校で開催（品川区公式・令和8年6月12日更新）。ただし2026年の告知内容は「模擬店、ゲームコーナー ほか」で、2025年にあった「盆踊り」の記載が無く、今年も踊られたかは未確認。同じ大崎第一地区では第一日野小学校（7月4日）・第三日野小学校（7月18日）の回に盆踊りが明記されている。",
     "source_urls": [
       {
-        "label": "告知HPあり",
+        "label": "公式告知あり",
         "url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
-        "kind": "web",
-        "count": 1
+        "kind": "official"
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "season_hint",
-    "public_status": "date_unknown",
-    "public_category": "date_unknown",
-    "public_status_label": "日程未確認",
-    "public_note": "今年の日程は未確認です。",
-    "recurrence_label": "日程未確認",
-    "recurrence_score": 0.25,
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed",
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-07-25",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "月ヒントあり",
-      "日付ヒントあり",
-      "未確認"
+      "2026年開催済み"
     ],
-    "recurrence_cautions": [
-      "2026年日程なし"
-    ],
+    "recurrence_cautions": [],
     "edition_number": null,
     "last_seen_year": null,
-    "last_seen_dates": [],
-    "display_tier": "season_hint",
-    "season_hint": {
-      "display_tier": "season_hint",
-      "target_year": 2026,
-      "months": [
-        7
-      ],
-      "jun": {
-        "7": "下旬"
-      },
-      "hints": [
-        [
-          7,
-          26
-        ]
-      ],
-      "label": "7月下旬",
-      "confidence": "lowest",
-      "basis": "例年の開催月・旬ヒント",
-      "has_jun_hint": true,
-      "has_sort_hint": true
-    },
-    "season_months": [
-      7
+    "last_seen_dates": [
+      "2026-07-25",
+      "2026-07-25"
     ],
-    "season_jun": {
-      "7": "下旬"
-    },
-    "season_hint_label": "7月下旬",
-    "season_confidence": "lowest"
+    "display_tier": "ended"
   },
   {
     "name": "品川区民まつり 西大井広場公園 盆踊り",
@@ -16666,7 +16574,7 @@
     ],
     "songs": [],
     "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
+    "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -16689,9 +16597,9 @@
     "last_seen_dates": [
       "2025-07-28"
     ],
-    "display_tier": "historical_slide",
+    "display_tier": "historical_reference",
     "historical_reference": {
-      "display_tier": "historical_slide",
+      "display_tier": "historical_reference",
       "last_seen_year": 2025,
       "last_seen_dates": [
         "2025-07-28"
@@ -16715,41 +16623,16 @@
       ],
       "edition_number": null,
       "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-07-27",
-        "date_end": "2026-07-27",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第4月曜を2026年へスライド",
-        "source_date": "2025-07-28",
-        "source_date_end": null,
-        "duration_days": 1
-      }
+      "slide": null
     },
-    "historical_display_tier": "historical_slide",
+    "historical_display_tier": "historical_reference",
     "historical_last_seen_year": 2025,
     "historical_last_seen_dates": [
       "2025-07-28"
     ],
     "historical_reference_label": "2025-07-28実績・今年未確認",
     "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.68,
-    "historical_slide": {
-      "date": "2026-07-27",
-      "date_end": "2026-07-27",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第4月曜を2026年へスライド",
-      "source_date": "2025-07-28",
-      "source_date_end": null,
-      "duration_days": 1
-    },
-    "historical_slide_date": "2026-07-27",
-    "historical_slide_date_end": "2026-07-27",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第4月曜を2026年へスライド",
-    "predicted_date": "2026-07-27",
-    "predicted_date_end": "2026-07-27",
-    "prediction_basis": "2025年実績の同月第4月曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "historical_reference_score": 0.68
   },
   {
     "name": "馬込地区自治会連合会、馬籠商店会連合睦会",
