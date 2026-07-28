@@ -169,6 +169,7 @@ jobs:
         python review_inbox_adapters/x_gap_adapter.py \
           --input data/x_gap_candidates.json \
           --output data/review_inbox_adapted/x_gap.json
+        python build_x_review_lanes.py --input data/x_gap_candidates.json
         if [ -f data/x_news_digest_oto_reviews.json ]; then
           python promote_x_news_digest_reviews.py
           python build_rare_signal_backcheck_queue.py
@@ -210,6 +211,7 @@ jobs:
         [ -f data/x_news_digest_oto_reviews.json ] && git add -f data/x_news_digest_oto_reviews.json
         [ -f data/x_gap_candidates.json ] && git add -f data/x_gap_candidates.json
         [ -f data/review_inbox_adapted/x_gap.json ] && git add -f data/review_inbox_adapted/x_gap.json
+        [ -f data/x_review_lanes.json ] && git add -f data/x_review_lanes.json
         [ -f data/rare_signal_candidates.json ] && git add -f data/rare_signal_candidates.json
         [ -f data/rare_signal_candidates.md ] && git add -f data/rare_signal_candidates.md
         [ -f data/rare_signal_backcheck_reviews.json ] && git add -f data/rare_signal_backcheck_reviews.json
