@@ -1,7 +1,7 @@
 {
   "schema": "public_sync_exact_approvals_v1",
-  "reviewed_at": "2026-07-24",
-  "reviewed_by": "内田さん（2026-07-21分）／こと（Claude Code）2026-07-24分・内田さんGOで実施",
+  "reviewed_at": "2026-07-29",
+  "reviewed_by": "こと（Claude Code）2026-07-29分・内田さんGOで実施",
   "source": "docs/p0-review-20260721.md and explicit publish approval; 2026-07-24: series_id-based dedup fix (神田明神/渋谷盆踊り/浄土寺盆踊り/晴海ふ頭公園/下北沢盆踊り/新橋こいち祭/神楽坂まつり dupes resolved) plus same-day date-passed status transitions and expired historical-slide downgrades, reviewed field-by-field by こと",
   "site_base_commit": "7dd4ba7bb8654797b4b33204014db0aaf407fb90",
   "collector_data_commit": "fbd4a04dfe9a549c261fd4956c35471f830b474c",
@@ -442,6 +442,22 @@
       "site_sha256": "13fae23c7f160c690dc6abac5c85c3b4e3268cb9c482028da3b9b3778096e802",
       "collector_sha256": "a52d569a6ffac555548760a4bb2d4130316c8e559694b4f511b874f05504e9e9",
       "reason": "公開名から「第N回」を外す方針（2026-07-27 内田さん判断・PR #116）。回次は開催回ごとの情報でシリーズ名に含めない"
+    },
+    {
+      "id": "reviewed-update-20260729-minato-3b7807d4f6ea",
+      "kind": "same_key_update",
+      "event_key": "海岸まつり||埠頭公園（港区芝浦港南）",
+      "site_sha256": "0faab0f2f21c1253319a24a000d509bfa50db20e0d3a402497a3885d116d4b8a",
+      "collector_sha256": "3b7807d4f6ea158db254062a5f515c4a1b3d6a0579df6e3593c4f4aa6a168cf2",
+      "reason": "広報みなと2026年7月1日号「区内商店街イベント一覧」で 2026-07-31〜08-01 埠頭公園を確認（主催: 海岸2丁目・3丁目商店会。盆踊り大会と模擬店）。秋田県東京事務所のX投稿でも同一日程。2026-07-29 こと反映・内田さんGO"
+    },
+    {
+      "id": "reviewed-update-20260729-minato-6ff908343030",
+      "kind": "same_key_update",
+      "event_key": "赤坂夏おどり（旧 赤坂盆踊り）||赤坂サカス広場",
+      "site_sha256": "3d44768e121632a2c17d537b6a09876bb7a363d406d3538271b6a37d58fc7371",
+      "collector_sha256": "6ff90834303087a4bc34df63f93b1a7d1372538fe2c63097b330a8e155f8434f",
+      "reason": "広報みなと2026年7月1日号「区内商店街イベント一覧」で 2026-08-28〜29 赤坂サカス広場を確認。従来は2025年日程からのスライド表示だった。2026-07-29 こと反映・内田さんGO"
     }
   ]
 }
