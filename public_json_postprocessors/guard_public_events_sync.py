@@ -112,6 +112,7 @@ def apply_reviewed_exact_approvals(collector_rows, site_rows, payload):
             "same_key_update",
             "key_replacement",
             "removal",
+            "addition",
         }:
             result["status"] = "invalid_approval"
             results.append(result)
@@ -119,6 +120,41 @@ def apply_reviewed_exact_approvals(collector_rows, site_rows, payload):
         seen_ids.add(approval_id)
 
         positions = site_positions()
+        if kind == "addition":
+            # Approves an event that exists only on the collector side (newly
+            # registered, e.g. from a poster/field report) being added to the
+            # comparison-only site copy. Without this the guard blocks on
+            # event_count_mismatch every time a new event is published, since
+            # the other kinds can only update, rename, or drop existing rows.
+            # Value-pinned like same_key_update: if the collector row changed
+            # after review, this refuses rather than publishing something new
+            # that nobody looked at.
+            key = str(approval.get("event_key") or "")
+            collector_event = collector.get(key)
+            site_index = positions.get(key)
+            result["event_key"] = key
+            if collector_event is None:
+                result["status"] = "inactive"
+                results.append(result)
+                continue
+            collector_hash = canonical_event_sha256(collector_event)
+            result["actual_collector_sha256"] = collector_hash
+            if site_index is not None:
+                site_hash = canonical_event_sha256(approved_site_rows[site_index])
+                result["actual_site_sha256"] = site_hash
+                result["status"] = (
+                    "already_synced" if site_hash == collector_hash else "hash_mismatch"
+                )
+                results.append(result)
+                continue
+            if collector_hash == approval.get("collector_sha256"):
+                approved_site_rows.append(copy.deepcopy(collector_event))
+                result["status"] = "applied"
+                results.append(result)
+                continue
+            result["status"] = "hash_mismatch"
+            results.append(result)
+            continue
         if kind == "removal":
             # Approves an event that exists only on the site side (collector
             # dropped it, e.g. a duplicate-suppression fix) being removed from

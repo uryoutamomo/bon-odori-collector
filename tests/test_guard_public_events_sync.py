@@ -76,6 +76,92 @@ class PublicEventsSyncGuardTest(unittest.TestCase):
         self.assertEqual(classified["summary"]["collector_only_count"], 0)
         self.assertEqual(classified["summary"]["site_only_count"], 0)
 
+    def test_exact_addition_approval_adds_collector_only_event_at_pinned_hash(self):
+        collector_event = {"name": "新規盆踊り", "venue": "商店街", "display_tier": "confirmed"}
+        existing = {"name": "既存イベント", "venue": "別会場"}
+        payload = {
+            "schema": "public_sync_exact_approvals_v1",
+            "approvals": [
+                {
+                    "id": "addition-1",
+                    "kind": "addition",
+                    "event_key": "新規盆踊り||商店街",
+                    "collector_sha256": canonical_event_sha256(collector_event),
+                }
+            ],
+        }
+
+        reviewed = apply_reviewed_exact_approvals(
+            [existing, collector_event], [existing], payload
+        )
+        classified = classify_rows([existing, collector_event], reviewed["site_rows"])
+
+        self.assertEqual(reviewed["summary"]["status_counts"], {"applied": 1})
+        self.assertEqual(classified["summary"]["collector_event_count"], 2)
+        self.assertEqual(classified["summary"]["site_event_count"], 2)
+        self.assertEqual(classified["summary"]["collector_only_count"], 0)
+        self.assertEqual(classified["summary"]["site_only_count"], 0)
+
+    def test_exact_addition_approval_rejects_drifted_collector_value(self):
+        reviewed_event = {"name": "新規盆踊り", "venue": "商店街", "display_tier": "confirmed"}
+        drifted = {**reviewed_event, "date": "2026-08-28"}
+        payload = {
+            "schema": "public_sync_exact_approvals_v1",
+            "approvals": [
+                {
+                    "id": "addition-1",
+                    "kind": "addition",
+                    "event_key": "新規盆踊り||商店街",
+                    "collector_sha256": canonical_event_sha256(reviewed_event),
+                }
+            ],
+        }
+
+        rejected = apply_reviewed_exact_approvals([drifted], [], payload)
+
+        self.assertEqual(rejected["summary"]["status"], "block")
+        self.assertEqual(rejected["summary"]["status_counts"], {"hash_mismatch": 1})
+        self.assertEqual(rejected["site_rows"], [])
+
+    def test_exact_addition_approval_is_inactive_once_collector_drops_it(self):
+        payload = {
+            "schema": "public_sync_exact_approvals_v1",
+            "approvals": [
+                {
+                    "id": "addition-1",
+                    "kind": "addition",
+                    "event_key": "消えた盆踊り||広場",
+                    "collector_sha256": "0" * 64,
+                }
+            ],
+        }
+
+        reviewed = apply_reviewed_exact_approvals([], [], payload)
+
+        self.assertEqual(reviewed["summary"]["status_counts"], {"inactive": 1})
+        self.assertEqual(reviewed["summary"]["failure_count"], 0)
+
+    def test_exact_addition_approval_is_already_synced_after_the_site_catches_up(self):
+        collector_event = {"name": "新規盆踊り", "venue": "商店街", "display_tier": "confirmed"}
+        payload = {
+            "schema": "public_sync_exact_approvals_v1",
+            "approvals": [
+                {
+                    "id": "addition-1",
+                    "kind": "addition",
+                    "event_key": "新規盆踊り||商店街",
+                    "collector_sha256": canonical_event_sha256(collector_event),
+                }
+            ],
+        }
+
+        reviewed = apply_reviewed_exact_approvals(
+            [collector_event], [dict(collector_event)], payload
+        )
+
+        self.assertEqual(reviewed["summary"]["status_counts"], {"already_synced": 1})
+        self.assertEqual(reviewed["summary"]["failure_count"], 0)
+
     def test_exact_removal_approval_drops_site_only_event_at_pinned_hash(self):
         site_event = {"name": "旧イベント", "venue": "公園", "public_status": "expected_medium"}
         other_site_event = {"name": "残るイベント", "venue": "別会場"}
