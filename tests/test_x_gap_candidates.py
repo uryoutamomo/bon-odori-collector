@@ -9,12 +9,12 @@ from review_inbox_adapters.build_change_requests_from_review_inbox import build_
 def make_db(path):
     conn=sqlite3.connect(path)
     conn.executescript('''
-      CREATE TABLE event_series(series_id TEXT, canonical_name TEXT);
+      CREATE TABLE event_series(series_id TEXT, canonical_name TEXT, area TEXT);
       CREATE TABLE venues(venue_id TEXT, canonical_name TEXT);
       CREATE TABLE event_occurrences(occurrence_id TEXT, series_id TEXT, event_year INTEGER, display_name TEXT, venue_id TEXT, date_start TEXT);
       CREATE TABLE event_series_aliases(series_id TEXT, alias TEXT);
     ''')
-    conn.execute("INSERT INTO event_series VALUES ('s1','盆助祭')")
+    conn.execute("INSERT INTO event_series VALUES ('s1','盆助祭','江東区')")
     conn.execute("INSERT INTO venues VALUES ('v1','音頭公園')")
     conn.execute("INSERT INTO event_occurrences VALUES ('occ1','s1',2026,'盆助祭','v1','')")
     conn.execute("INSERT INTO event_series_aliases VALUES ('s1','Bonsuke Bon')")
@@ -46,3 +46,23 @@ def test_adapter_explicitly_marks_x_gap_as_future():
     assert not unresolved
     assert requests[0]['occurrence_id']=='occ_1'
     assert requests[0]['date_start']=='2026-07-30'
+
+
+def test_generic_event_name_and_conditional_cancellation_do_not_consume_queue(tmp_path):
+    db=tmp_path/'master.sqlite'; make_db(db)
+    # Add the historically problematic generic series.  It must not match an
+    # unrelated post merely because both contain "盆踊り大会".
+    conn=sqlite3.connect(db)
+    conn.execute("INSERT INTO event_series VALUES ('s2','盆踊り大会','江東区')")
+    conn.execute("INSERT INTO event_occurrences VALUES ('occ_2','s2',2026,'盆踊り大会','v1','')")
+    conn.commit();conn.close()
+    voices=[{"source":"x","tweet_id":"1","date":"2026-07-20","text":"巣鴨盆踊り大会。雨天決行、順延はございません。"}]
+    assert build(voices,db,year=2026)['candidates']==[]
+
+
+def test_overflow_is_retained_as_archive_records(tmp_path):
+    db=tmp_path/'master.sqlite'; make_db(db)
+    voices=[{"source":"x","tweet_id":str(i),"date":"2026-07-20","text":"Bonsuke Bon 7月30日 盆踊り"} for i in range(2)]
+    payload=build(voices,db,year=2026,limit=1)
+    assert payload['archived_count']==1
+    assert len(payload['archived_candidates'])==1

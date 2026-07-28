@@ -19,6 +19,7 @@ from typing import Any
 
 from master_rdb.master_db import MASTER_DB, normalize_text
 from collection_support.x_source_officiality import assess_source_officiality
+from collection_support.tokyo23_scope import is_outside_tokyo_23_scope
 
 DATA = Path("data")
 VOICES = DATA / "voices.json"
@@ -27,6 +28,9 @@ X_SOURCES = {"x", "x_whitelist", "x_proactive", "x_event_history"}
 DATE_RE = re.compile(r"(?:20\d{2}[/-]\d{1,2}[/-]\d{1,2}|\d{1,2}月\d{1,2}日?|\d{1,2}/\d{1,2}|\d{1,2}時)")
 BON_RE = re.compile(r"盆踊り|盆おどり|ぼんおどり|民踊|納涼", re.I)
 CHANGE_RE = re.compile(r"中止|延期|順延|時間変更|開催時間.*変更|取りやめ")
+NON_CHANGE_RE = re.compile(r"(?:順延|延期).{0,12}(?:ない|ありません|ございません)|(?:雨天|少雨)決行|雨天中止")
+ACTUAL_CHANGE_RE = re.compile(r"(?:開催)?(?:中止|延期|順延)(?:と|に|にな|いた|します|のお知らせ)|時間(?:を)?変更|取りやめ(?:と|に|にな|ます)")
+GENERIC_EVENT_RE = re.compile(r"^(?:第\d+回)?(?:納涼|夏)?(?:盆踊り|盆おどり|ぼんおどり)(?:大会)?$")
 
 
 def load(path: Path, default: Any) -> Any:
@@ -39,7 +43,7 @@ def catalog(db: Path, year: int) -> list[dict[str, str]]:
     with sqlite3.connect(uri, uri=True) as conn:
         conn.row_factory = sqlite3.Row
         rows = conn.execute("""
-          SELECT o.occurrence_id, o.display_name, o.date_start, e.canonical_name,
+          SELECT o.occurrence_id, o.display_name, o.date_start, e.canonical_name, e.area,
                  v.canonical_name AS venue
           FROM event_occurrences o JOIN event_series e ON e.series_id=o.series_id
           LEFT JOIN venues v ON v.venue_id=o.venue_id WHERE o.event_year=?
@@ -61,13 +65,23 @@ def catalog(db: Path, year: int) -> list[dict[str, str]]:
         names=[row["display_name"], row["canonical_name"], *aliases_by_occ.get(row["occurrence_id"], [])]
         result.append({"occurrence_id":row["occurrence_id"], "event_name":row["display_name"],
                        "venue":row["venue"] or "", "date_start":row["date_start"] or "",
-                       "aliases":[n for n in names if n]})
+                       "area":row["area"] or "", "aliases":[n for n in names if n]})
     return result
 
 
 def matches(text: str, row: dict[str, Any]) -> list[str]:
     normalized=normalize_text(text)
-    return [name for name in row["aliases"] if len(normalize_text(name)) >= 3 and normalize_text(name) in normalized]
+    return [name for name in row["aliases"] if discriminative_alias(name) and normalize_text(name) in normalized]
+
+
+def discriminative_alias(name: str) -> bool:
+    """Reject generic labels such as ``盆踊り大会`` as identity keys."""
+    text=re.sub(r"\s+", "", str(name or ""))
+    return len(normalize_text(text)) >= 5 and not GENERIC_EVENT_RE.fullmatch(text)
+
+
+def actual_schedule_change(text: str) -> bool:
+    return bool(CHANGE_RE.search(text) and not NON_CHANGE_RE.search(text) and ACTUAL_CHANGE_RE.search(text))
 
 
 def source_key(voice: dict[str, Any]) -> str:
@@ -78,7 +92,7 @@ def source_key(voice: dict[str, Any]) -> str:
 
 def build(voices: list[dict[str, Any]], db: Path, *, year: int, limit: int=30) -> dict[str, Any]:
     gaps=catalog(db, year)
-    candidates=[]; seen=set()
+    candidates=[]; archived=[]; seen=set()
     for voice in voices:
         if not isinstance(voice, dict) or voice.get("source") not in X_SOURCES: continue
         # An old cancellation is historical evidence, not a warning that the
@@ -89,6 +103,7 @@ def build(voices: list[dict[str, Any]], db: Path, *, year: int, limit: int=30) -
             continue
         text="\n".join(str(voice.get(k) or "") for k in ("title","text"))
         if not BON_RE.search(text): continue
+        if is_outside_tokyo_23_scope(text, voice.get("area"), voice.get("region")): continue
         key=source_key(voice)
         if key in seen: continue
         officiality=assess_source_officiality({}, voice=voice)
@@ -96,7 +111,9 @@ def build(voices: list[dict[str, Any]], db: Path, *, year: int, limit: int=30) -
         found=[(gap, matches(text, gap)) for gap in gaps]
         found=[(gap, names) for gap,names in found if names]
         kind=""; priority=0; gap=None; names=[]
-        changes=bool(CHANGE_RE.search(text))
+        # A matched master row can itself reveal a non-23-ward legacy entry.
+        found=[(g,n) for g,n in found if not is_outside_tokyo_23_scope(g.get("area"),g.get("venue"))]
+        changes=actual_schedule_change(text)
         if changes and found:
             kind="schedule_change"; priority=300; gap,names=found[0]
         else:
@@ -112,8 +129,10 @@ def build(voices: list[dict[str, Any]], db: Path, *, year: int, limit: int=30) -
           "source_url":voice.get("url") or "", "source_text":text[:500], "source_author":voice.get("account") or voice.get("author") or "",
           "source_officiality":officiality, "date_hints":DATE_RE.findall(text), "voice":voice})
     candidates.sort(key=lambda x:(-x["priority_score"], x["source_key"]))
+    archived=candidates[limit:]
     return {"generated_by":"build_x_gap_candidates.py", "generated_at":datetime.now(timezone.utc).isoformat(),
-            "limit":limit, "candidate_count":min(len(candidates),limit), "archived_count":max(0,len(candidates)-limit), "candidates":candidates[:limit]}
+            "limit":limit, "candidate_count":min(len(candidates),limit), "archived_count":len(archived), "candidates":candidates[:limit],
+            "archived_candidates":archived}
 
 
 def main() -> None:
