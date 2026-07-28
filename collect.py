@@ -2037,7 +2037,13 @@ def _save_event_evidence_state(state):
         json.dump(state, f, ensure_ascii=False, indent=2)
 
 
-def _advance_event_evidence_state(state, days, note):
+def _advance_event_evidence_state(state, days, note, now=None):
+    """Advance the evidence window without ever querying a future period.
+
+    Once the collector catches up, keep scanning a sliding ``days``-long
+    window ending at the current instant.  That permits newly indexed posts
+    to appear without creating empty future windows.
+    """
     start_value = state.get("covered_until") or state.get("window_end")
     if not start_value:
         return {}
@@ -2045,14 +2051,20 @@ def _advance_event_evidence_state(state, days, note):
     if start.tzinfo is None:
         start = start.replace(tzinfo=timezone.utc)
     end = start + timedelta(days=days)
-    now = datetime.now(timezone.utc).isoformat()
+    now = now or datetime.now(timezone.utc)
+    if now.tzinfo is None:
+        now = now.replace(tzinfo=timezone.utc)
+    if end > now:
+        end = now
+        start = end - timedelta(days=days)
+    now_value = now.isoformat()
     history = list(state.get("window_history") or [])
     history.append({
         "window_start": state.get("window_start"),
         "window_end": state.get("window_end"),
         "covered_until": state.get("covered_until"),
         "completed_at": state.get("completed_at"),
-        "reviewed_at": now,
+        "reviewed_at": now_value,
         "review_note": note,
         "pages_completed": state.get("pages_completed", 0),
         "tweets_scanned": state.get("tweets_scanned", 0),
@@ -2070,8 +2082,8 @@ def _advance_event_evidence_state(state, days, note):
         "tweets_scanned": 0,
         "evidence_detected": 0,
         "pending_evidence": [],
-        "started_at": now,
-        "updated_at": now,
+        "started_at": now_value,
+        "updated_at": now_value,
         "window_history": history,
         "previous_covered_until": state.get("covered_until") or state.get("window_end"),
     }

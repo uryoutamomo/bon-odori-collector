@@ -2,7 +2,7 @@ import unittest
 import json
 import os
 import tempfile
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from unittest.mock import patch
 
 import collect
@@ -19,6 +19,53 @@ from collection_support.event_evidence import (
 
 
 class EventEvidenceTest(unittest.TestCase):
+    def test_advance_window_never_runs_into_the_future(self):
+        state = {
+            "status": "awaiting_review",
+            "window_start": "2026-07-07T00:00:00+00:00",
+            "window_end": "2026-07-21T00:00:00+00:00",
+            "covered_until": "2026-07-21T00:00:00+00:00",
+            "completed_batches": [0],
+        }
+
+        next_state = collect._advance_event_evidence_state(
+            state,
+            days=14,
+            note="test",
+            now=datetime(2026, 7, 28, tzinfo=timezone.utc),
+        )
+
+        self.assertEqual(next_state["window_start"], "2026-07-14T00:00:00+00:00")
+        self.assertEqual(next_state["window_end"], "2026-07-28T00:00:00+00:00")
+        self.assertLessEqual(
+            datetime.fromisoformat(next_state["window_end"]),
+            datetime(2026, 7, 28, tzinfo=timezone.utc),
+        )
+
+    def test_repeated_advances_stay_pinned_to_the_present(self):
+        """追いついた後に何度更新しても、窓が未来へ走り続けないこと。
+
+        2026-07-11 に現在へ追いついた後、18窓連続で未来（2027年）を走査して
+        検出0を出し続けた実障害の再発防止。
+        """
+        state = {
+            "status": "awaiting_review",
+            "window_start": "2026-06-27T00:00:00+00:00",
+            "window_end": "2026-07-11T00:00:00+00:00",
+            "covered_until": "2026-07-11T00:00:00+00:00",
+        }
+
+        for offset in range(18):
+            now = datetime(2026, 7, 11, tzinfo=timezone.utc) + timedelta(days=offset)
+            state = collect._advance_event_evidence_state(
+                state, days=14, note="test", now=now
+            )
+            window_end = datetime.fromisoformat(state["window_end"])
+            window_start = datetime.fromisoformat(state["window_start"])
+            self.assertLessEqual(window_end, now)
+            self.assertEqual(window_end - window_start, timedelta(days=14))
+            state["covered_until"] = state["window_end"]
+
     def test_classifies_patterns_and_explainable_score(self):
         evidence = classify_event_evidence({
             "account": "@odorer",

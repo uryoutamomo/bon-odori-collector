@@ -1,7 +1,7 @@
 {
-  "status": "awaiting_review",
-  "window_start": "2027-05-25T00:00:00+00:00",
-  "window_end": "2027-06-08T00:00:00+00:00",
+  "status": "in_progress",
+  "window_start": "2026-07-11T00:00:00+00:00",
+  "window_end": "2026-07-25T00:00:00+00:00",
   "selected_handles": [
     "@2tsuo_g",
     "@5khfya5pjksggov",
@@ -57,17 +57,13 @@
   "selection_id": "664d239cbfb21c903b90366b808d6e5ebcf0e7024980d3bd613f6d865df58cf9",
   "batch_index": 0,
   "batch_cursors": {},
-  "completed_batches": [
-    0,
-    1,
-    2
-  ],
-  "pages_completed": 3,
+  "completed_batches": [],
+  "pages_completed": 0,
   "tweets_scanned": 0,
   "evidence_detected": 0,
   "pending_evidence": [],
-  "started_at": "2026-07-28T08:59:33.226973+00:00",
-  "updated_at": "2026-07-28T08:59:42.475252+00:00",
+  "started_at": "2026-07-28T12:55:00+00:00",
+  "updated_at": "2026-07-28T12:55:00+00:00",
   "window_history": [
     {
       "window_start": "2025-06-10T00:00:00+00:00",
@@ -629,9 +625,18 @@
       "pages_completed": 3,
       "tweets_scanned": 0,
       "evidence_detected": 0
+    },
+    {
+      "window_start": "2027-05-25T00:00:00+00:00",
+      "window_end": "2027-06-08T00:00:00+00:00",
+      "covered_until": "2027-06-08T00:00:00+00:00",
+      "completed_at": "2026-07-28T08:59:42.476416+00:00",
+      "reviewed_at": "2026-07-28T12:55:00+00:00",
+      "review_note": "manual reset: 未来窓の空走査を打ち切り、実走査が途切れた 2026-07-11 の続きへ戻す",
+      "pages_completed": 3,
+      "tweets_scanned": 0,
+      "evidence_detected": 0
     }
   ],
-  "previous_covered_until": "2027-05-25T00:00:00+00:00",
-  "completed_at": "2026-07-28T08:59:42.476416+00:00",
-  "covered_until": "2027-06-08T00:00:00+00:00"
+  "previous_covered_until": "2027-05-25T00:00:00+00:00"
 }
