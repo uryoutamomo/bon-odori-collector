@@ -1,0 +1,48 @@
+import sqlite3
+
+from build_x_gap_candidates import build
+from review_inbox_adapters.source_adapter import adapt_source_payload
+from review_inbox_adapters.x_gap_adapter import XGapAdapter
+from review_inbox_adapters.build_change_requests_from_review_inbox import build_requests
+
+
+def make_db(path):
+    conn=sqlite3.connect(path)
+    conn.executescript('''
+      CREATE TABLE event_series(series_id TEXT, canonical_name TEXT);
+      CREATE TABLE venues(venue_id TEXT, canonical_name TEXT);
+      CREATE TABLE event_occurrences(occurrence_id TEXT, series_id TEXT, event_year INTEGER, display_name TEXT, venue_id TEXT, date_start TEXT);
+      CREATE TABLE event_series_aliases(series_id TEXT, alias TEXT);
+    ''')
+    conn.execute("INSERT INTO event_series VALUES ('s1','盆助祭')")
+    conn.execute("INSERT INTO venues VALUES ('v1','音頭公園')")
+    conn.execute("INSERT INTO event_occurrences VALUES ('occ1','s1',2026,'盆助祭','v1','')")
+    conn.execute("INSERT INTO event_series_aliases VALUES ('s1','Bonsuke Bon')")
+    conn.commit(); conn.close()
+
+
+def test_gap_queue_prefers_missing_date_alias_and_stays_bounded(tmp_path):
+    db=tmp_path/'master.sqlite'; make_db(db)
+    voices=[{"source":"x","tweet_id":str(i),"date":"2026-07-20T00:00:00Z","url":f"https://x.com/a/status/{i}","text":"Bonsuke Bon 7月30日 開催 盆踊り"} for i in range(40)]
+    payload=build(voices,db,year=2026,limit=30)
+    assert payload['candidate_count']==30
+    assert payload['archived_count']==10
+    assert payload['candidates'][0]['candidate_kind']=='missing_date'
+    assert payload['candidates'][0]['matched_occurrence']['occurrence_id']=='occ1'
+
+
+def test_old_cancellation_is_not_current_schedule_warning(tmp_path):
+    db=tmp_path/'master.sqlite'; make_db(db)
+    payload=build([{"source":"x","tweet_id":"1","date":"2020-05-01","text":"盆助祭 盆踊りは中止"}],db,year=2026)
+    assert payload['candidates']==[]
+
+
+def test_adapter_explicitly_marks_x_gap_as_future():
+    row={"source_key":"x:123","candidate_kind":"missing_date","priority_score":200,"event_year":2026,"source_url":"https://x.com/a/status/123","source_text":"盆助祭 7月30日","date_hints":["7月30日"],"matched_occurrence":{"occurrence_id":"occ_1","event_name":"盆助祭","venue":"音頭公園"}}
+    item=adapt_source_payload(XGapAdapter(),{"candidates":[row]})[0]
+    assert item['time_scope']=='future'
+    assert item['recommended_action']=='confirm_current_year_date'
+    requests, unresolved=build_requests([{"source_item":item,"change_type":"confirm_current_year_date"}],current_year=2026)
+    assert not unresolved
+    assert requests[0]['occurrence_id']=='occ_1'
+    assert requests[0]['date_start']=='2026-07-30'
