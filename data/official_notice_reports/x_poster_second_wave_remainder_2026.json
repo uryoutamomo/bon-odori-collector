@@ -1,0 +1,57 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-07-29T13:20:00+09:00",
+  "source": {
+    "report_id": "x_poster_second_wave_remainder_2026",
+    "title": "X投稿本文由来：2026年8月の盆踊り第2弾・残り6件",
+    "account_key": "主催者・地域関係者・出演者によるX投稿",
+    "raw_text": "歌舞伎町BON ODORI: 収集済み投稿本文で、2026年8月14日〜15日、初の2日間開催、参加無料、BLUE MAN GROUP・東京おとめ太鼓・レイザーラモンRG出演を確認。中目黒盆踊り大会: 公式X投稿本文で2026年8月29日〜30日13:00〜21:00、フナイリバ開催を確認。あそビバ まなビバ FUNFUNスクール: @harebon_odori の https://x.com/harebon_odori/status/2077310681121194280 で2026年8月13日、港区立産業振興センター ホール小、妖怪盆踊り、入場無料を確認。かがやき納涼会＆盆踊り: @chiyoda_cosw の https://x.com/chiyoda_cosw/status/2079016628449382571 で2026年8月22日、かがやきプラザ1階ひだまりホール・4階活動室、原文「1時〜3時（2時〜3時は盆踊りタイム！）」を確認。松戸ラストサマーフェス＆盆踊り: @mcakr の https://x.com/mcakr/status/2076150202172604459 で2026年8月29日を確認。"
+  },
+  "events": [
+    {
+      "action": "register_new",
+      "event_name_hint": "歌舞伎町BON ODORI",
+      "series_name": "歌舞伎町BON ODORI",
+      "event_year": 2026,
+      "venue": {"name": "歌舞伎町シネシティ広場", "area": "新宿区"},
+      "date_start": "2026-08-14",
+      "date_end": "2026-08-15",
+      "detail_addendum": "2026年は初の2日間開催。参加無料で誰でも参加できる。BLUE MAN GROUP・東京おとめ太鼓・レイザーラモンRGが出演。出典: X投稿本文（収集済み）。"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "中目黒盆踊り大会",
+      "series_name": "中目黒盆踊り大会",
+      "event_year": 2026,
+      "venue": {"name": "フナイリバ（目黒川船入場広場）", "area": "目黒区"},
+      "date_start": "2026-08-29",
+      "date_end": "2026-08-30",
+      "detail_addendum": "2026年は第二回。13:00〜21:00開催。イベント名には回数を含めない。出典: 中目黒盆踊り大会の公式X投稿本文（収集済み）。"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "あそビバ まなビバ FUNFUNスクール",
+      "series_name": "あそビバ まなビバ FUNFUNスクール",
+      "event_year": 2026,
+      "venue": {"name": "港区立産業振興センター ホール小", "area": "港区"},
+      "date_start": "2026-08-13",
+      "detail_addendum": "妖怪盆踊りを晴盆が担当。入場無料。出典: https://x.com/harebon_odori/status/2077310681121194280"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "かがやき納涼会＆盆踊り",
+      "series_name": "かがやき納涼会＆盆踊り",
+      "event_year": 2026,
+      "venue": {"name": "かがやきプラザ1階ひだまりホール", "area": "千代田区"},
+      "date_start": "2026-08-22",
+      "detail_addendum": "投稿原文の時刻表記は「1時〜3時（2時〜3時は盆踊りタイム！）」であり、13:00〜15:00と読めるが原文以上には断定しない。4階活動室も利用。対象は千代田区在住の方、申込不要。出典: https://x.com/chiyoda_cosw/status/2079016628449382571"
+    },
+    {
+      "action": "confirm_existing",
+      "occurrence_id": "occ_ab85373caa464eca",
+      "date_start": "2026-08-29",
+      "detail_addendum": "2026年8月29日開催。出典: https://x.com/mcakr/status/2076150202172604459"
+    }
+  ],
+  "skipped_events": []
+}
