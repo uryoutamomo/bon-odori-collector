@@ -1,0 +1,110 @@
+{
+  "generated_by": "apply_official_notice_report.py",
+  "generated_at": "2026-07-29T04:18:17.234190+00:00",
+  "mode": "dry_run",
+  "sources": {
+    "master_db": "/Users/ryotauchida/bon-odori-first-wave/data/bon_odori_master.sqlite",
+    "report": "data/official_notice_reports/x_poster_second_wave_komazawa_2026.json"
+  },
+  "outputs": {
+    "target_db": "data/x_poster_second_wave_komazawa_2026_dry_run.sqlite",
+    "dry_run_db": "data/x_poster_second_wave_komazawa_2026_dry_run.sqlite",
+    "backup_db": "",
+    "json": "data/x_poster_second_wave_komazawa_2026_dry_run_report.json",
+    "markdown": "data/x_poster_second_wave_komazawa_2026_dry_run_report.md"
+  },
+  "options": {
+    "apply": false
+  },
+  "write_guard": {
+    "db_committed": true,
+    "rolled_back": false,
+    "rollback_reason": ""
+  },
+  "summary": {
+    "issues_count": 0,
+    "issues_by_severity": {},
+    "audit_issues_by_severity": {},
+    "table_counts": {
+      "event_investigation_tasks": 79,
+      "event_occurrences": 268,
+      "event_series": 255,
+      "event_series_aliases": 24,
+      "evidence_items": 31309,
+      "external_record_links": 2654,
+      "historical_promotion_candidates": 16,
+      "master_meta": 0,
+      "notion_sync_jobs": 0,
+      "observed_occurrence_songs": 30883,
+      "observed_occurrences": 2164,
+      "occurrence_dates": 317,
+      "occurrence_evidence_links": 121,
+      "occurrence_song_evidence_links": 1008,
+      "occurrence_songs": 820,
+      "predicted_occurrence_dates": 14,
+      "review_inbox_items": 422,
+      "schema_migrations": 4,
+      "song_aliases": 141,
+      "songs": 394,
+      "venue_aliases": 314,
+      "venues": 254,
+      "write_batches": 0
+    }
+  },
+  "report": {
+    "report_type": "official_notice",
+    "reported_at": "2026-07-29T13:20:00+09:00",
+    "source": {
+      "report_id": "x_poster_second_wave_komazawa_2026",
+      "title": "X投稿本文由来：駒沢ふれあい広場夏祭りの系列改名と2026開催回",
+      "account_key": "@inahokaipr",
+      "raw_text": "@inahokaipr の https://x.com/inahokaipr/status/2077696945242701957 は「駒沢ふれあい広場夏祭り」を、駒澤大学駒沢キャンパスで2026年8月9日（日）14:00〜20:00に開催すると告知。子供和太鼓教室14:00〜15:30、盆踊り18:00〜。既存の2025年「駒澤大学同窓会東京都支部・営友会」とは会場が完全一致し、いずれも8月第2日曜であることを根拠に、ことが同一イベントと判断した。"
+    },
+    "events": [
+      {
+        "action": "rename_series_and_register_new",
+        "source_occurrence_id": "occ_7a10411a2ffa1f5c",
+        "event_name_hint": "駒沢ふれあい広場夏祭り",
+        "event_year": 2026,
+        "venue": {
+          "name": "駒澤大学 駒沢キャンパス",
+          "area": "世田谷区"
+        },
+        "date_start": "2026-08-09",
+        "detail_addendum": "14:00〜20:00開催。盆踊りは18:00〜、子供和太鼓教室は14:00〜15:30。2025年は「駒澤大学同窓会東京都支部・営友会」名義で記録していたものと、会場が完全一致し、開催日がいずれも8月第2日曜であることを根拠に同一イベントと判断して改名した（判断者: こと）。出典: https://x.com/inahokaipr/status/2077696945242701957"
+      }
+    ],
+    "skipped_events": []
+  },
+  "applied": {
+    "resolved": true,
+    "evidence_id": "ev_90360a227b977431",
+    "events_applied": [
+      {
+        "action": "rename_series_and_register_new",
+        "occurrence_id": "occ_733c8c66a928edff",
+        "venue_id": "ven_bd7a6261894a6b33",
+        "venue_status": "reused",
+        "occurrence_created": true,
+        "songs_applied": [],
+        "rename": {
+          "series_id": "ser_ed18b1060aa94e44",
+          "former_name": "駒澤大学同窓会東京都支部・営友会",
+          "new_name": "駒沢ふれあい広場夏祭り"
+        }
+      }
+    ],
+    "events_unresolved": [],
+    "skipped_events": []
+  },
+  "issues": [],
+  "audit": {
+    "issue_count": 0,
+    "issues_by_severity": {},
+    "issues_by_type": {}
+  },
+  "public_json_write": {
+    "enabled": false,
+    "policy": "Run export_public_events.py and the site deploy separately, on Uchida-san's schedule."
+  }
+}

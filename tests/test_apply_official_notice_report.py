@@ -236,6 +236,47 @@ class ApplyOfficialNoticeReportTest(unittest.TestCase):
         self.assertEqual(song_count, 1)
         self.assertEqual(evidence_count, 1)
 
+    def test_rename_series_and_register_new_keeps_one_series_and_prior_alias(self):
+        conn = sqlite3.connect(self.db_path)
+        prior_occurrence_id = master_db.stable_id("occ", self.series_a_id, 2025, 1)
+        conn.execute(
+            "UPDATE event_occurrences SET occurrence_id = ?, event_year = 2025 WHERE occurrence_id = ?",
+            (prior_occurrence_id, self.occurrence_a_id),
+        )
+        conn.commit()
+        conn.close()
+        report = self._base_report(
+            [
+                {
+                    "action": "rename_series_and_register_new",
+                    "source_occurrence_id": prior_occurrence_id,
+                    "event_name_hint": "新富夏祭り",
+                    "event_year": 2026,
+                    "date_start": "2026-08-09",
+                    "venue": {"name": "京橋プラザ区民館", "area": "中央区"},
+                    "detail_addendum": "旧名称との同一性を確認して改名。",
+                    "songs": [],
+                }
+            ]
+        )
+        result = script.run(self._args(self._write_report(report)))
+        self.assertEqual(result["applied"]["events_applied"][0]["action"], "rename_series_and_register_new")
+
+        conn = sqlite3.connect(self.tmp_path / "dry_run.sqlite")
+        series = conn.execute(
+            "SELECT canonical_name FROM event_series WHERE series_id = ?", (self.series_a_id,)
+        ).fetchone()
+        alias = conn.execute(
+            "SELECT alias FROM event_series_aliases WHERE series_id = ?", (self.series_a_id,)
+        ).fetchone()
+        occurrences = conn.execute(
+            "SELECT event_year, display_name FROM event_occurrences WHERE series_id = ? ORDER BY event_year", (self.series_a_id,)
+        ).fetchall()
+        conn.close()
+        self.assertEqual(series, ("新富夏祭り",))
+        self.assertEqual(alias, ("新富町会納涼盆踊り大会",))
+        self.assertEqual(occurrences, [(2025, "新富夏祭り"), (2026, "新富夏祭り")])
+
 
 if __name__ == "__main__":
     unittest.main()

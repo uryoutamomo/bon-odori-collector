@@ -42,6 +42,7 @@ def ensure_series_and_occurrence(
     source_kind=SOURCE_KIND_OFFICIAL_CURRENT_YEAR,
     source_url=None,
     detail=None,
+    series_id_override=None,
     now=None,
 ):
     """Create (or reuse) an event_series + event_occurrences row for a notice-sourced new event."""
@@ -56,6 +57,7 @@ def ensure_series_and_occurrence(
         source_url=source_url,
         detail=detail,
         date_basis_note="公式掲示物・チラシで確認。",
+        series_id_override=series_id_override,
         now=now,
     )
 
