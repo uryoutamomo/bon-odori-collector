@@ -1,0 +1,194 @@
+{
+  "generated_by": "apply_official_notice_report.py",
+  "generated_at": "2026-07-29T04:23:48.113393+00:00",
+  "mode": "dry_run",
+  "sources": {
+    "master_db": "/Users/ryotauchida/bon-odori-first-wave/data/bon_odori_master.sqlite",
+    "report": "data/official_notice_reports/x_poster_second_wave_remainder_2026.json"
+  },
+  "outputs": {
+    "target_db": "data/x_poster_second_wave_remainder_2026_dry_run.sqlite",
+    "dry_run_db": "data/x_poster_second_wave_remainder_2026_dry_run.sqlite",
+    "backup_db": "",
+    "json": "data/x_poster_second_wave_remainder_2026_dry_run_report.json",
+    "markdown": "data/x_poster_second_wave_remainder_2026_dry_run_report.md"
+  },
+  "options": {
+    "apply": false
+  },
+  "write_guard": {
+    "db_committed": true,
+    "rolled_back": false,
+    "rollback_reason": ""
+  },
+  "summary": {
+    "issues_count": 0,
+    "issues_by_severity": {},
+    "audit_issues_by_severity": {},
+    "table_counts": {
+      "event_investigation_tasks": 79,
+      "event_occurrences": 271,
+      "event_series": 257,
+      "event_series_aliases": 23,
+      "evidence_items": 31309,
+      "external_record_links": 2654,
+      "historical_promotion_candidates": 16,
+      "master_meta": 0,
+      "notion_sync_jobs": 0,
+      "observed_occurrence_songs": 30883,
+      "observed_occurrences": 2164,
+      "occurrence_dates": 321,
+      "occurrence_evidence_links": 125,
+      "occurrence_song_evidence_links": 1008,
+      "occurrence_songs": 820,
+      "predicted_occurrence_dates": 14,
+      "review_inbox_items": 422,
+      "schema_migrations": 4,
+      "song_aliases": 141,
+      "songs": 394,
+      "venue_aliases": 316,
+      "venues": 256,
+      "write_batches": 0
+    }
+  },
+  "report": {
+    "report_type": "official_notice",
+    "reported_at": "2026-07-29T13:20:00+09:00",
+    "source": {
+      "report_id": "x_poster_second_wave_remainder_2026",
+      "title": "X投稿本文由来：2026年8月の盆踊り第2弾・残り6件",
+      "account_key": "主催者・地域関係者・出演者によるX投稿",
+      "raw_text": "歌舞伎町BON ODORI: 収集済み投稿本文で、2026年8月14日〜15日、初の2日間開催、参加無料、BLUE MAN GROUP・東京おとめ太鼓・レイザーラモンRG出演を確認。中目黒盆踊り大会: 公式X投稿本文で2026年8月29日〜30日13:00〜21:00、フナイリバ開催を確認。あそビバ まなビバ FUNFUNスクール: @harebon_odori の https://x.com/harebon_odori/status/2077310681121194280 で2026年8月13日、港区立産業振興センター ホール小、妖怪盆踊り、入場無料を確認。かがやき納涼会＆盆踊り: @chiyoda_cosw の https://x.com/chiyoda_cosw/status/2079016628449382571 で2026年8月22日、かがやきプラザ1階ひだまりホール・4階活動室、原文「1時〜3時（2時〜3時は盆踊りタイム！）」を確認。松戸ラストサマーフェス＆盆踊り: @mcakr の https://x.com/mcakr/status/2076150202172604459 で2026年8月29日を確認。"
+    },
+    "events": [
+      {
+        "action": "add_occurrence_to_existing_series",
+        "source_occurrence_id": "occ_48ddfc15fd4a2cb1",
+        "event_name_hint": "歌舞伎町BON ODORI",
+        "series_name": "歌舞伎町BON ODORI",
+        "event_year": 2026,
+        "venue": {
+          "name": "歌舞伎町シネシティ広場",
+          "area": "新宿区"
+        },
+        "date_start": "2026-08-14",
+        "date_end": "2026-08-15",
+        "detail_addendum": "2026年は初の2日間開催。参加無料で誰でも参加できる。BLUE MAN GROUP・東京おとめ太鼓・レイザーラモンRGが出演する告知投稿より。"
+      },
+      {
+        "action": "add_occurrence_to_existing_series",
+        "source_occurrence_id": "occ_dab503fbe8185900",
+        "event_name_hint": "中目黒盆踊り大会",
+        "series_name": "中目黒盆踊り大会",
+        "event_year": 2026,
+        "venue": {
+          "name": "フナイリバ（目黒川船入場広場）",
+          "area": "目黒区"
+        },
+        "date_start": "2026-08-29",
+        "date_end": "2026-08-30",
+        "detail_addendum": "2026年は第二回。13:00〜21:00開催。中目黒盆踊り大会の公式X告知投稿より。"
+      },
+      {
+        "action": "register_new",
+        "event_name_hint": "あそビバ まなビバ FUNFUNスクール",
+        "series_name": "あそビバ まなビバ FUNFUNスクール",
+        "event_year": 2026,
+        "venue": {
+          "name": "港区立産業振興センター ホール小",
+          "area": "港区"
+        },
+        "date_start": "2026-08-13",
+        "detail_addendum": "妖怪盆踊りを晴盆が担当。入場無料。晴盆の告知投稿より。"
+      },
+      {
+        "action": "register_new",
+        "event_name_hint": "かがやき納涼会＆盆踊り",
+        "series_name": "かがやき納涼会＆盆踊り",
+        "event_year": 2026,
+        "venue": {
+          "name": "かがやきプラザ1階ひだまりホール",
+          "area": "千代田区"
+        },
+        "date_start": "2026-08-22",
+        "detail_addendum": "投稿原文の時刻表記は「1時〜3時（2時〜3時は盆踊りタイム！）」であり、13:00〜15:00と読めるが原文以上には断定しない。4階活動室も利用。対象は千代田区在住の方、申込不要。千代田区社会福祉協議会の告知投稿より。"
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_ab85373caa464eca",
+        "date_start": "2026-08-29",
+        "detail_addendum": "2026年8月29日開催。出演者の告知投稿より。"
+      }
+    ],
+    "skipped_events": []
+  },
+  "applied": {
+    "resolved": true,
+    "evidence_id": "ev_6a5254daed0d614b",
+    "events_applied": [
+      {
+        "action": "add_occurrence_to_existing_series",
+        "occurrence_id": "occ_ad6bd712a4d6aeb6",
+        "venue_id": "ven_3ab440d28464e3dc",
+        "venue_status": "reused",
+        "occurrence_created": true,
+        "series_id": "ser_cded9da0a611fd02",
+        "series_created": false,
+        "songs_applied": [],
+        "source_occurrence_id": "occ_48ddfc15fd4a2cb1"
+      },
+      {
+        "action": "add_occurrence_to_existing_series",
+        "occurrence_id": "occ_111db14c810ac6dd",
+        "venue_id": "ven_6efd487149898f30",
+        "venue_status": "reused",
+        "occurrence_created": true,
+        "series_id": "ser_ad24238c82409d20",
+        "series_created": false,
+        "songs_applied": [],
+        "source_occurrence_id": "occ_dab503fbe8185900"
+      },
+      {
+        "action": "register_new",
+        "occurrence_id": "occ_167d265928d2c047",
+        "venue_id": "venue_6ba2dd1779a94bb2",
+        "venue_status": "created",
+        "occurrence_created": true,
+        "series_id": "series_0d5328f05970118e",
+        "series_created": true,
+        "songs_applied": []
+      },
+      {
+        "action": "register_new",
+        "occurrence_id": "occ_ea99cdf3d2069be4",
+        "venue_id": "venue_1f449a69053e8d3b",
+        "venue_status": "created",
+        "occurrence_created": true,
+        "series_id": "series_03ffeaa31b34c06b",
+        "series_created": true,
+        "songs_applied": []
+      },
+      {
+        "action": "confirm_existing",
+        "occurrence_id": "occ_ab85373caa464eca",
+        "changed_fields": [
+          "date_start",
+          "detail"
+        ],
+        "songs_applied": []
+      }
+    ],
+    "events_unresolved": [],
+    "skipped_events": []
+  },
+  "issues": [],
+  "audit": {
+    "issue_count": 0,
+    "issues_by_severity": {},
+    "issues_by_type": {}
+  },
+  "public_json_write": {
+    "enabled": false,
+    "policy": "Run export_public_events.py and the site deploy separately, on Uchida-san's schedule."
+  }
+}

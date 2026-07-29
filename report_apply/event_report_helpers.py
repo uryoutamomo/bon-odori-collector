@@ -174,29 +174,39 @@ def ensure_series_and_occurrence(
     source_url=None,
     detail=None,
     date_basis_note=None,
+    series_id_override=None,
     now=None,
 ):
     """Create (or reuse) an event_series + event_occurrences row for a confirmed new event."""
     now = now or now_utc()
     normalized_series = normalize_text(series_name)
     series_key = normalized_series
-    existing_series = _rows(conn, "SELECT series_id FROM event_series WHERE series_key = ?", (series_key,))
-    if existing_series:
-        series_id = existing_series[0]["series_id"]
+    if series_id_override:
+        existing_series = _rows(conn, "SELECT series_id FROM event_series WHERE series_id = ?", (series_id_override,))
+        if not existing_series:
+            raise ValueError(f"series_id_override not found: {series_id_override}")
+        series_id = series_id_override
+        series_created = False
     else:
-        series_id = stable_id("series", series_key)
-        conn.execute(
-            """
-            INSERT INTO event_series (
-              series_id, origin, series_key, canonical_name, normalized_name,
-              usual_venue_id, area, program_type, annual_months_json,
-              schedule_rule_type, schedule_rule_detail, public_intro, source_url,
-              status, created_at, updated_at
-            ) VALUES (?, 'curated', ?, ?, ?, ?, NULL, 'bon_odori', '[]', NULL, NULL, NULL, ?, 'active', ?, ?)
-            ON CONFLICT(series_id) DO NOTHING
-            """,
-            (series_id, series_key, series_name, normalized_series, venue_id, source_url, now, now),
-        )
+        existing_series = _rows(conn, "SELECT series_id FROM event_series WHERE series_key = ?", (series_key,))
+        if existing_series:
+            series_id = existing_series[0]["series_id"]
+            series_created = False
+        else:
+            series_id = stable_id("series", series_key)
+            series_created = True
+            conn.execute(
+                """
+                INSERT INTO event_series (
+                  series_id, origin, series_key, canonical_name, normalized_name,
+                  usual_venue_id, area, program_type, annual_months_json,
+                  schedule_rule_type, schedule_rule_detail, public_intro, source_url,
+                  status, created_at, updated_at
+                ) VALUES (?, 'curated', ?, ?, ?, ?, NULL, 'bon_odori', '[]', NULL, NULL, NULL, ?, 'active', ?, ?)
+                ON CONFLICT(series_id) DO NOTHING
+                """,
+                (series_id, series_key, series_name, normalized_series, venue_id, source_url, now, now),
+            )
 
     existing_occurrence = _rows(
         conn,
@@ -260,7 +270,7 @@ def ensure_series_and_occurrence(
         """,
         (date_id, occurrence_id, date_start, date_end or date_start, date_basis_note or "", now),
     )
-    return {"series_id": series_id, "occurrence_id": occurrence_id, "occurrence_created": created}
+    return {"series_id": series_id, "series_created": series_created, "occurrence_id": occurrence_id, "occurrence_created": created}
 
 
 def confirm_occurrence_schedule_venue(
