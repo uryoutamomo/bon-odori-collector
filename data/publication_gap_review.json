@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-26T02:45:47.115140+00:00",
+  "generated_at": "2026-07-29T04:31:06.104694+00:00",
   "generated_by": "build_publication_gap_review.py",
   "summary": {
     "accepted_glossary_v2_count": 88,
@@ -17,9 +17,9 @@
     "weekly_updated_songs_missing_public": 4,
     "public_occurrence_songs_not_in_master": 147,
     "song_priors_not_public_ready": 14,
-    "event_publication_blocked_count": 49,
+    "event_publication_blocked_count": 42,
     "event_publication_blocked_by_reason": {
-      "missing_date_start": 48,
+      "missing_date_start": 41,
       "missing_venue_id": 1
     }
   },
@@ -2207,34 +2207,6 @@
       "public_file": "bon-odori-site/data/events_public.json"
     },
     {
-      "gap_id": "event_publication_blocked:occ_0ee14ffbf15fd0cf",
-      "gap_type": "根拠ありイベントが公開整備待ち",
-      "domain": "イベント",
-      "term": "ゐの市盆踊り～不忍夢～",
-      "event_name": "ゐの市盆踊り～不忍夢～",
-      "series_name": "ゐの市盆踊り～不忍夢～",
-      "occurrence_id": "occ_0ee14ffbf15fd0cf",
-      "event_year": 2026,
-      "venue": "上野恩賜公園",
-      "area": "台東区",
-      "date_start": "",
-      "date_end": "",
-      "date_status": "unknown",
-      "lifecycle_status": "未確認",
-      "confidence": "unknown",
-      "source_kind": "notion_events",
-      "source_url": "https://www.uenopark.info/2025/inoichi-bonodori-2025/",
-      "public_name_present": true,
-      "reason_codes": [
-        "missing_date_start"
-      ],
-      "recommended_action": "review_and_apply_event_occurrence_to_master_rdb",
-      "priority_label": "P1",
-      "reason": "master RDBに根拠URLはありますが、公開エクスポートに必要な会場または日程が未整備です。レビュー済み根拠として扱うなら、会場行・occurrenceの日程/会場/statusをRDBへ反映してから公開JSONを再生成します。",
-      "source_file": "data/bon_odori_master.sqlite",
-      "public_file": "bon-odori-site/data/events_public.json"
-    },
-    {
       "gap_id": "event_publication_blocked:occ_c7619656781592c0",
       "gap_type": "根拠ありイベントが公開整備待ち",
       "domain": "イベント",
@@ -2459,34 +2431,6 @@
       "public_file": "bon-odori-site/data/events_public.json"
     },
     {
-      "gap_id": "event_publication_blocked:occ_07f775ba65031a6e",
-      "gap_type": "根拠ありイベントが公開整備待ち",
-      "domain": "イベント",
-      "term": "京橋盆踊り",
-      "event_name": "京橋盆踊り",
-      "series_name": "京橋盆踊り",
-      "occurrence_id": "occ_07f775ba65031a6e",
-      "event_year": 2026,
-      "venue": "京橋エドグラン 京橋中央ひろば",
-      "area": "中央区",
-      "date_start": "",
-      "date_end": "",
-      "date_status": "unknown",
-      "lifecycle_status": "未確認",
-      "confidence": "unknown",
-      "source_kind": "notion_events",
-      "source_url": "https://www.edogrand.tokyo/event/6924",
-      "public_name_present": true,
-      "reason_codes": [
-        "missing_date_start"
-      ],
-      "recommended_action": "review_and_apply_event_occurrence_to_master_rdb",
-      "priority_label": "P1",
-      "reason": "master RDBに根拠URLはありますが、公開エクスポートに必要な会場または日程が未整備です。レビュー済み根拠として扱うなら、会場行・occurrenceの日程/会場/statusをRDBへ反映してから公開JSONを再生成します。",
-      "source_file": "data/bon_odori_master.sqlite",
-      "public_file": "bon-odori-site/data/events_public.json"
-    },
-    {
       "gap_id": "event_publication_blocked:occ_fd17ae0a3e8ebee8",
       "gap_type": "根拠ありイベントが公開整備待ち",
       "domain": "イベント",
@@ -2504,34 +2448,6 @@
       "confidence": "unknown",
       "source_kind": "notion_events",
       "source_url": "http://tensojinja.tokyo-jinjacho.or.jp/saiten00.html",
-      "public_name_present": true,
-      "reason_codes": [
-        "missing_date_start"
-      ],
-      "recommended_action": "review_and_apply_event_occurrence_to_master_rdb",
-      "priority_label": "P1",
-      "reason": "master RDBに根拠URLはありますが、公開エクスポートに必要な会場または日程が未整備です。レビュー済み根拠として扱うなら、会場行・occurrenceの日程/会場/statusをRDBへ反映してから公開JSONを再生成します。",
-      "source_file": "data/bon_odori_master.sqlite",
-      "public_file": "bon-odori-site/data/events_public.json"
-    },
-    {
-      "gap_id": "event_publication_blocked:occ_1dc35224d0d3fd14",
-      "gap_type": "根拠ありイベントが公開整備待ち",
-      "domain": "イベント",
-      "term": "品川区民まつり 大崎第一地区",
-      "event_name": "品川区民まつり 大崎第一地区",
-      "series_name": "品川区民まつり 大崎第一地区",
-      "occurrence_id": "occ_1dc35224d0d3fd14",
-      "event_year": 2026,
-      "venue": "第四日野小学校",
-      "area": "品川区",
-      "date_start": "",
-      "date_end": "",
-      "date_status": "unknown",
-      "lifecycle_status": "未確認",
-      "confidence": "unknown",
-      "source_kind": "notion_events",
-      "source_url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
       "public_name_present": true,
       "reason_codes": [
         "missing_date_start"
@@ -2728,34 +2644,6 @@
       "confidence": "unknown",
       "source_kind": "notion_events",
       "source_url": "https://hatagaokahachiman-jinja.jp/",
-      "public_name_present": true,
-      "reason_codes": [
-        "missing_date_start"
-      ],
-      "recommended_action": "review_and_apply_event_occurrence_to_master_rdb",
-      "priority_label": "P1",
-      "reason": "master RDBに根拠URLはありますが、公開エクスポートに必要な会場または日程が未整備です。レビュー済み根拠として扱うなら、会場行・occurrenceの日程/会場/statusをRDBへ反映してから公開JSONを再生成します。",
-      "source_file": "data/bon_odori_master.sqlite",
-      "public_file": "bon-odori-site/data/events_public.json"
-    },
-    {
-      "gap_id": "event_publication_blocked:occ_abb418f2c5aa2158",
-      "gap_type": "根拠ありイベントが公開整備待ち",
-      "domain": "イベント",
-      "term": "日本橋小学校の盆踊り（名称推定）",
-      "event_name": "日本橋小学校の盆踊り（名称推定）",
-      "series_name": "日本橋小学校の盆踊り（名称推定）",
-      "occurrence_id": "occ_abb418f2c5aa2158",
-      "event_year": 2026,
-      "venue": "日本橋小学校",
-      "area": "中央区",
-      "date_start": "",
-      "date_end": "",
-      "date_status": "unknown",
-      "lifecycle_status": "未確認",
-      "confidence": "unknown",
-      "source_kind": "notion_events",
-      "source_url": "https://minato-bon-odori.blogspot.com/",
       "public_name_present": true,
       "reason_codes": [
         "missing_date_start"
@@ -2991,34 +2879,6 @@
       "public_file": "bon-odori-site/data/events_public.json"
     },
     {
-      "gap_id": "event_publication_blocked:occ_018fc76d38dcd38f",
-      "gap_type": "根拠ありイベントが公開整備待ち",
-      "domain": "イベント",
-      "term": "海岸まつり",
-      "event_name": "海岸まつり",
-      "series_name": "海岸まつり",
-      "occurrence_id": "occ_018fc76d38dcd38f",
-      "event_year": 2026,
-      "venue": "埠頭公園（港区芝浦港南）",
-      "area": "港区",
-      "date_start": "",
-      "date_end": "",
-      "date_status": "unknown",
-      "lifecycle_status": "未確認",
-      "confidence": "unknown",
-      "source_kind": "notion_events",
-      "source_url": "https://www.city.minato.tokyo.jp/kouhou/kuse/koho/minato2025/202507/20250701top/01.html",
-      "public_name_present": true,
-      "reason_codes": [
-        "missing_date_start"
-      ],
-      "recommended_action": "review_and_apply_event_occurrence_to_master_rdb",
-      "priority_label": "P1",
-      "reason": "master RDBに根拠URLはありますが、公開エクスポートに必要な会場または日程が未整備です。レビュー済み根拠として扱うなら、会場行・occurrenceの日程/会場/statusをRDBへ反映してから公開JSONを再生成します。",
-      "source_file": "data/bon_odori_master.sqlite",
-      "public_file": "bon-odori-site/data/events_public.json"
-    },
-    {
       "gap_id": "event_publication_blocked:occ_1a4d1fa95a29cc39",
       "gap_type": "根拠ありイベントが公開整備待ち",
       "domain": "イベント",
@@ -3131,34 +2991,6 @@
       "public_file": "bon-odori-site/data/events_public.json"
     },
     {
-      "gap_id": "event_publication_blocked:occ_0f08a78b2998d803",
-      "gap_type": "根拠ありイベントが公開整備待ち",
-      "domain": "イベント",
-      "term": "盆踊り大会",
-      "event_name": "盆踊り大会",
-      "series_name": "盆踊り大会",
-      "occurrence_id": "occ_0f08a78b2998d803",
-      "event_year": 2026,
-      "venue": "木場二丁目公園",
-      "area": "江東区",
-      "date_start": "",
-      "date_end": "",
-      "date_status": "unknown",
-      "lifecycle_status": "未確認",
-      "confidence": "unknown",
-      "source_kind": "notion_events",
-      "source_url": "https://minamisuna1.com/26743/#google_vignette",
-      "public_name_present": true,
-      "reason_codes": [
-        "missing_date_start"
-      ],
-      "recommended_action": "review_and_apply_event_occurrence_to_master_rdb",
-      "priority_label": "P1",
-      "reason": "master RDBに根拠URLはありますが、公開エクスポートに必要な会場または日程が未整備です。レビュー済み根拠として扱うなら、会場行・occurrenceの日程/会場/statusをRDBへ反映してから公開JSONを再生成します。",
-      "source_file": "data/bon_odori_master.sqlite",
-      "public_file": "bon-odori-site/data/events_public.json"
-    },
-    {
       "gap_id": "event_publication_blocked:occ_0ace412b9159e3d6",
       "gap_type": "根拠ありイベントが公開整備待ち",
       "domain": "イベント",
@@ -3260,34 +3092,6 @@
       "confidence": "unknown",
       "source_kind": "notion_events",
       "source_url": "https://drive.google.com/file/d/1k_CE5VEEJMasD35iO5n9rccJXDxpTuth/view?usp=drive_link",
-      "public_name_present": true,
-      "reason_codes": [
-        "missing_date_start"
-      ],
-      "recommended_action": "review_and_apply_event_occurrence_to_master_rdb",
-      "priority_label": "P1",
-      "reason": "master RDBに根拠URLはありますが、公開エクスポートに必要な会場または日程が未整備です。レビュー済み根拠として扱うなら、会場行・occurrenceの日程/会場/statusをRDBへ反映してから公開JSONを再生成します。",
-      "source_file": "data/bon_odori_master.sqlite",
-      "public_file": "bon-odori-site/data/events_public.json"
-    },
-    {
-      "gap_id": "event_publication_blocked:occ_3fa70d14d361b2f3",
-      "gap_type": "根拠ありイベントが公開整備待ち",
-      "domain": "イベント",
-      "term": "赤坂夏おどり（旧 赤坂盆踊り）",
-      "event_name": "赤坂夏おどり（旧 赤坂盆踊り）",
-      "series_name": "赤坂夏おどり（旧 赤坂盆踊り）",
-      "occurrence_id": "occ_3fa70d14d361b2f3",
-      "event_year": 2026,
-      "venue": "赤坂サカス広場",
-      "area": "港区",
-      "date_start": "",
-      "date_end": "",
-      "date_status": "unknown",
-      "lifecycle_status": "未確認",
-      "confidence": "unknown",
-      "source_kind": "notion_events",
-      "source_url": "https://sacas.tokyoevent.net/natsuodori.html",
       "public_name_present": true,
       "reason_codes": [
         "missing_date_start"

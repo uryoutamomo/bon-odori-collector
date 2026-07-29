@@ -1978,105 +1978,105 @@
     "name": "歌舞伎町BON ODORI",
     "venue": "歌舞伎町シネシティ広場",
     "area": "新宿区",
-    "date": "2025-08-16",
+    "date": "2026-08-14",
     "songs": [
       {
         "name": "Crazy Train",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "Dancing Queen",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "I Was Born To Love You",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "Livin' On A Prayer",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "September",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "YMCA",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "ultra soul",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "ダンシングヒーロー",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "ライラック",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "東京音頭",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "歌舞伎町の女王",
         "confidence": "confirmed",
         "probability": 95,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "EZ DO DANCE",
         "confidence": "confirmed",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "ウルトラソウル",
         "confidence": "hint",
         "probability": 80,
-        "basis": "current_hint",
-        "basis_label": "今年ヒント"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       },
       {
         "name": "HOT LIMIT",
         "confidence": "hint",
         "probability": 55,
-        "basis": "current_observed",
-        "basis_label": "実測"
+        "basis": "past_evidence",
+        "basis_label": "2025年ヒント"
       }
     ]
   },
