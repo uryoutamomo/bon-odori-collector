@@ -2,7 +2,7 @@
 
 **Note**: This guard checks for blocking diffs only. Guard status `pass` means no blocking issues remain, but is NOT a deploy approval. Deploy decisions require explicit confirmation from the operator.
 
-- generated_at: 2026-07-26T05:55:51.172795+00:00
+- generated_at: 2026-07-29T02:16:31.830499+00:00
 - scope: read_only_public_sync_guard_no_writes
 - status: pass
 - safe_to_wholesale_sync: True
@@ -21,9 +21,9 @@ These warnings mean the public-event publication flow may have skipped a review 
 ## Raw Collector vs Site
 
 - collector_event_count: 203
-- site_event_count: 203
-- collector_only_count: 0
-- site_only_count: 0
+- site_event_count: 204
+- collector_only_count: 1
+- site_only_count: 2
 - high_risk_diff_record_count: 0
 - high_risk_event_count: 0
 - records_by_family: {}
@@ -33,21 +33,21 @@ These warnings mean the public-event publication flow may have skipped a review 
 ## After Required Public Postprocessors
 
 - collector_event_count: 203
-- site_event_count: 203
-- collector_only_count: 0
-- site_only_count: 0
-- high_risk_diff_record_count: 0
-- high_risk_event_count: 0
-- records_by_family: {}
-- records_by_action: {}
-- events_by_action: {}
+- site_event_count: 204
+- collector_only_count: 1
+- site_only_count: 2
+- high_risk_diff_record_count: 1
+- high_risk_event_count: 1
+- records_by_family: {'historical_slide': 1}
+- records_by_action: {'individual_review': 1}
+- events_by_action: {'expired_historical_slide_downgrade': 1}
 
 ## Reviewed Exact Approvals
 
 - schema: public_sync_exact_approvals_v1
 - status: pass
-- approval_count: 35
-- status_counts: {'already_synced': 28, 'applied': 1, 'inactive': 6}
+- approval_count: 66
+- status_counts: {'already_synced': 58, 'inactive': 6, 'applied': 2}
 - failure_count: 0
 
 ## After Reviewed Exact Approvals
@@ -56,11 +56,11 @@ These warnings mean the public-event publication flow may have skipped a review 
 - site_event_count: 203
 - collector_only_count: 0
 - site_only_count: 0
-- high_risk_diff_record_count: 0
-- high_risk_event_count: 0
-- records_by_family: {}
-- records_by_action: {}
-- events_by_action: {}
+- high_risk_diff_record_count: 1
+- high_risk_event_count: 1
+- records_by_family: {'historical_slide': 1}
+- records_by_action: {'individual_review': 1}
+- events_by_action: {'expired_historical_slide_downgrade': 1}
 
 ## Blocking Examples
 

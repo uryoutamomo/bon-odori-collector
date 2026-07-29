@@ -1,8 +1,8 @@
 {
   "generated_by": "export_public_events.py",
   "scope": "internal_public_event_source_map",
-  "public_event_count": 204,
-  "mapped_count": 204,
+  "public_event_count": 203,
+  "mapped_count": 203,
   "rows": [
     {
       "public_event_key": "山王音頭と民踊大会|山王パークタワー公開空地|2026-06-13|2026-06-15",
@@ -1193,26 +1193,14 @@
       "venue_id": "ven_17414a79f39a769d"
     },
     {
-      "public_event_key": "木場二丁目 盆踊り大会|木場二丁目公園|2026-07-17|2026-07-18",
-      "name": "木場二丁目 盆踊り大会",
+      "public_event_key": "木場二丁目町会 盆踊り大会|木場二丁目公園|2026-07-17|2026-07-18",
+      "name": "木場二丁目町会 盆踊り大会",
       "venue": "木場二丁目公園",
       "date": "2026-07-17",
       "date_end": "2026-07-18",
       "source": "master_rdb",
       "occurrence_id": "occ_31f1726dde1f04b9",
       "series_id": "ser_43b739eab65788c5",
-      "event_year": 2026,
-      "venue_id": "ven_4841416eec0bedc4"
-    },
-    {
-      "public_event_key": "盆踊り大会|木場二丁目公園||",
-      "name": "盆踊り大会",
-      "venue": "木場二丁目公園",
-      "date": "",
-      "date_end": "",
-      "source": "master_rdb",
-      "occurrence_id": "occ_0f08a78b2998d803",
-      "series_id": "ser_a868881274cc904b",
       "event_year": 2026,
       "venue_id": "ven_4841416eec0bedc4"
     },
