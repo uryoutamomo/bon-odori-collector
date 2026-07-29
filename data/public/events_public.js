@@ -11691,7 +11691,7 @@ const EVENTS = [
     "display_tier": "confirmed"
   },
   {
-    "name": "木場二丁目 盆踊り大会",
+    "name": "木場二丁目町会 盆踊り大会",
     "name_confirmed": true,
     "venue": "木場二丁目公園",
     "area": "江東区",
@@ -11726,7 +11726,7 @@ const EVENTS = [
       "7": "中旬"
     },
     "description": "木場二丁目公園で開かれる地域の盆踊り大会。",
-    "detail": "2026年告知確認。Instagram投稿本文で、会場: 木場二丁目公園、日時: 7月17日(金)18:00-21:00、7月18日(土)18:00-20:30を確認。",
+    "detail": "2026年告知確認。Instagram投稿本文で、会場: 木場二丁目公園、日時: 7月17日(金)18:00-21:00、7月18日(土)18:00-20:30を確認。 2025年は7月18日(金)-19日(土)に開催(18:00~21:00、19日は20:30まで)。主催は木場二丁目町会。(minamisuna1.com の2025年江東区盆踊り一覧より。統合前の予測エントリから引き継ぎ) 江東区「令和8年度 盆踊り・夏まつり開催情報」(令和8年7月7日現在)では、イベント名称「盆踊り」・実施団体「木場２丁目町会」として7月17日(金)-18日(土)18:00～21:00・木場二丁目公園と記載。区内には木場一・六町会・木場五丁目町会の同種イベントもあるため、当サイトでは実施団体名を冠して表記している。",
     "source_urls": [
       {
         "label": "告知HPあり",
@@ -11755,98 +11755,6 @@ const EVENTS = [
       "2026-07-18"
     ],
     "display_tier": "ended"
-  },
-  {
-    "name": "盆踊り大会",
-    "name_confirmed": true,
-    "venue": "木場二丁目公園",
-    "area": "江東区",
-    "months": [
-      7
-    ],
-    "scale": "中",
-    "access": "東京メトロ東西線 木場駅から徒歩4分",
-    "address": "東京都江東区木場2-11-11",
-    "lat": null,
-    "lng": null,
-    "date": null,
-    "date_end": null,
-    "status": "未確認",
-    "date_confidence": {
-      "level": "unknown",
-      "label": "未確認",
-      "description": "開催日はまだ確認できていません"
-    },
-    "date_candidates": [],
-    "hints": [
-      [
-        7,
-        18
-      ]
-    ],
-    "jun": {
-      "7": "中旬"
-    },
-    "description": "木場二丁目公園で行われる地域の盆踊りイベント。過去の開催実績をもとに掲載。",
-    "detail": "2025-07-18 開催実績。2025 7/18 - 19。木場2丁目町会 「盆踊り大会」 7/18(金)-19(土) 18:00~21:00(19日は20:30まで)。",
-    "source_urls": [
-      {
-        "label": "告知HPあり",
-        "url": "https://minamisuna1.com/26743/#google_vignette",
-        "kind": "web",
-        "count": 1
-      }
-    ],
-    "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "season_hint",
-    "public_status": "date_unknown",
-    "public_category": "date_unknown",
-    "public_status_label": "日程未確認",
-    "public_note": "今年の日程は未確認です。",
-    "recurrence_label": "日程未確認",
-    "recurrence_score": 0.25,
-    "recurrence_reasons": [
-      "月ヒントあり",
-      "日付ヒントあり",
-      "未確認"
-    ],
-    "recurrence_cautions": [
-      "2026年日程なし"
-    ],
-    "edition_number": null,
-    "last_seen_year": null,
-    "last_seen_dates": [],
-    "display_tier": "season_hint",
-    "season_hint": {
-      "display_tier": "season_hint",
-      "target_year": 2026,
-      "months": [
-        7
-      ],
-      "jun": {
-        "7": "中旬"
-      },
-      "hints": [
-        [
-          7,
-          18
-        ]
-      ],
-      "label": "7月中旬",
-      "confidence": "lowest",
-      "basis": "例年の開催月・旬ヒント",
-      "has_jun_hint": true,
-      "has_sort_hint": true
-    },
-    "season_months": [
-      7
-    ],
-    "season_jun": {
-      "7": "中旬"
-    },
-    "season_hint_label": "7月中旬",
-    "season_confidence": "lowest"
   },
   {
     "name": "森下二丁目盆踊り",

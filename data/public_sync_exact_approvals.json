@@ -2,8 +2,8 @@
   "schema": "public_sync_exact_approvals_v1",
   "reviewed_at": "2026-07-29",
   "reviewed_by": "こと（Claude Code）2026-07-29分・内田さんGOで実施",
-  "source": "docs/p0-review-20260721.md and explicit publish approval; 2026-07-24: series_id-based dedup fix (神田明神/渋谷盆踊り/浄土寺盆踊り/晴海ふ頭公園/下北沢盆踊り/新橋こいち祭/神楽坂まつり dupes resolved) plus same-day date-passed status transitions and expired historical-slide downgrades, reviewed field-by-field by こと / 2026-07-28: 改名24件のcollector側ハッシュを貼り直し、個別レビュー8件（終了4件・日付確定4件）を登録",
-  "site_base_commit": "7dd4ba7bb8654797b4b33204014db0aaf407fb90",
+  "source": "docs/p0-review-20260721.md and explicit publish approval; 2026-07-24: series_id-based dedup fix (神田明神/渋谷盆踊り/浄土寺盆踊り/晴海ふ頭公園/下北沢盆踊り/新橋こいち祭/神楽坂まつり dupes resolved) plus same-day date-passed status transitions and expired historical-slide downgrades, reviewed field-by-field by こと / 2026-07-28: 改名24件のcollector側ハッシュを貼り直し、個別レビュー8件（終了4件・日付確定4件）を登録 / 2026-07-29: 木場二丁目公園の重複2件を統合し、生き残る側を実施団体名つき「木場二丁目町会 盆踊り大会」へ改名（key_replacement 1件・removal 1件、旧 same_key_update 1件を置換）",
+  "site_base_commit": "472d6b931991e66df6d18753d0f83e63a25328a3",
   "collector_data_commit": "fbd4a04dfe9a549c261fd4956c35471f830b474c",
   "approvals": [
     {
@@ -77,13 +77,6 @@
       "event_key": "木場一・六町会 盆踊り大会||深川ギャザリアセンタープラザ",
       "site_sha256": "c012d4b4b9c01dee979e367a84a4b39ea1b3b51739a12827b95f655b6fc4231f",
       "collector_sha256": "ddd983b0993c76a286aaac244b35eb5866336db9cfea148a979c3f21988d7fbc"
-    },
-    {
-      "id": "reviewed-update-c30598087340",
-      "kind": "same_key_update",
-      "event_key": "木場二丁目 盆踊り大会||木場二丁目公園",
-      "site_sha256": "ca27f44deffcab8a5e014584c2f9a284506c753baf97ed78eb25bfbf365f81ff",
-      "collector_sha256": "1ca8c0bb1a235ac7b757df92aabc91b226d7523ec763eaf1f3081490ab6719a3"
     },
     {
       "id": "reviewed-update-515679e44cb3",
@@ -505,6 +498,22 @@
       "site_sha256": "3d44768e121632a2c17d537b6a09876bb7a363d406d3538271b6a37d58fc7371",
       "collector_sha256": "6ff90834303087a4bc34df63f93b1a7d1372538fe2c63097b330a8e155f8434f",
       "reason": "広報みなと2026年7月1日号で 2026-08-28〜29 赤坂サカス広場を確認。従来は2025年日程からのスライド表示だった。2026-07-29 こと反映・内田さんGO"
+    },
+    {
+      "id": "reviewed-rename-20260729-01",
+      "kind": "key_replacement",
+      "site_event_key": "木場二丁目 盆踊り大会||木場二丁目公園",
+      "collector_event_key": "木場二丁目町会 盆踊り大会||木場二丁目公園",
+      "site_sha256": "1ca8c0bb1a235ac7b757df92aabc91b226d7523ec763eaf1f3081490ab6719a3",
+      "collector_sha256": "ead9b25d5ab94beafe79e94a0c83f059240d958bdc9a0d7ca428891362c80208",
+      "reason": "イベント名称が一般名詞のため実施団体名を冠して改名。江東区「令和8年度 盆踊り・夏まつり開催情報」(令和8年7月7日現在)NO.12でイベント名称「盆踊り」・実施団体「木場２丁目町会」を確認。区内の木場一・六町会/木場五丁目町会と区別するため。旧 same_key_update 承認を置換。"
+    },
+    {
+      "id": "reviewed-removal-20260729-01",
+      "kind": "removal",
+      "event_key": "盆踊り大会||木場二丁目公園",
+      "site_sha256": "efbccf53da3e3931a845c987db4d1f4f2d16d484782b8c55a3f729e4c2715b0e",
+      "reason": "RDB series merge: 木場二丁目町会 盆踊り大会(2026確定版)と同一イベント。江東区公式一覧で同一会場・同一日程(7/17-18)を確認し、minamisuna1.com の2025年実績由来の予測エントリを統合して除去"
     }
   ]
 }
