@@ -1,7 +1,7 @@
 {
   "schema": "public_sync_exact_approvals_v1",
   "reviewed_at": "2026-07-29",
-  "reviewed_by": "こと（Claude Code）2026-07-29分・内田さんGO「どちらも進めてください」で実施",
+  "reviewed_by": "こと（Claude Code）2026-07-29分・内田さんGOで実施",
   "source": "docs/p0-review-20260721.md and explicit publish approval; 2026-07-24: series_id-based dedup fix (神田明神/渋谷盆踊り/浄土寺盆踊り/晴海ふ頭公園/下北沢盆踊り/新橋こいち祭/神楽坂まつり dupes resolved) plus same-day date-passed status transitions and expired historical-slide downgrades, reviewed field-by-field by こと / 2026-07-28: 改名24件のcollector側ハッシュを貼り直し、個別レビュー8件（終了4件・日付確定4件）を登録",
   "site_base_commit": "7dd4ba7bb8654797b4b33204014db0aaf407fb90",
   "collector_data_commit": "fbd4a04dfe9a549c261fd4956c35471f830b474c",
@@ -489,6 +489,22 @@
       "event_key": "あ〜夏休み！納涼盆踊り大会||亀有ゆうろーど（亀有銀座商店街）",
       "collector_sha256": "2d235e5c507d9d3eb77b629a5c95abb8ca617f22a24c5cc0b941b0850756b412",
       "reason": "2026-07-26 に内田さん承認のうえ master RDB へ新規登録したイベント（公式ポスター画像より・7/17-20）。同会場8月末の「亀有銀座商店街納涼盆踊り大会」とは主催町会が異なる別イベント。公開同期が止まっていた間サイトへ未反映だった"
+    },
+    {
+      "id": "reviewed-update-20260729-minato-3b7807d4f6ea",
+      "kind": "same_key_update",
+      "event_key": "海岸まつり||埠頭公園（港区芝浦港南）",
+      "site_sha256": "0faab0f2f21c1253319a24a000d509bfa50db20e0d3a402497a3885d116d4b8a",
+      "collector_sha256": "3b7807d4f6ea158db254062a5f515c4a1b3d6a0579df6e3593c4f4aa6a168cf2",
+      "reason": "広報みなと2026年7月1日号で 2026-07-31〜08-01 埠頭公園を確認（主催: 海岸2丁目・3丁目商店会）。秋田県東京事務所のX投稿でも同一日程。2026-07-29 こと反映・内田さんGO"
+    },
+    {
+      "id": "reviewed-update-20260729-minato-6ff908343030",
+      "kind": "same_key_update",
+      "event_key": "赤坂夏おどり（旧 赤坂盆踊り）||赤坂サカス広場",
+      "site_sha256": "3d44768e121632a2c17d537b6a09876bb7a363d406d3538271b6a37d58fc7371",
+      "collector_sha256": "6ff90834303087a4bc34df63f93b1a7d1372538fe2c63097b330a8e155f8434f",
+      "reason": "広報みなと2026年7月1日号で 2026-08-28〜29 赤坂サカス広場を確認。従来は2025年日程からのスライド表示だった。2026-07-29 こと反映・内田さんGO"
     }
   ]
 }

@@ -873,30 +873,30 @@ const EVENTS = [
     "address": "中央区京橋2-2-1",
     "lat": null,
     "lng": null,
-    "date": "2025-08-29",
-    "date_end": "2025-08-30",
-    "status": "未確認",
+    "date": "2026-08-28",
+    "date_end": "2026-08-29",
+    "status": "確認済み",
     "date_confidence": {
-      "level": "unknown",
-      "label": "未確認",
-      "description": "開催日はまだ確認できていません"
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
     },
     "date_candidates": [],
     "hints": [
       [
         8,
-        29
+        28
       ],
       [
         8,
-        30
+        29
       ]
     ],
     "jun": {
       "8": "下旬"
     },
     "description": "京橋盆踊りは、中央区の京橋エドグラン 京橋中央ひろばで行われる盆踊り。8月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2023年に約50年ぶり復活、以後毎年8月末開催。2026年日程は未発表（公式イベントページ要確認）",
+    "detail": "2023年に約50年ぶり復活、以後毎年8月末開催。 2026年は8月28日（金）〜29日（土）開催。京橋エドグラン公式サイトのイベント告知「京橋盆踊り2026」で確認（",
     "source_urls": [
       {
         "label": "告知HPあり",
@@ -906,86 +906,25 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
-    "public_status": "expected_medium",
-    "public_category": "recurring_last_year",
-    "public_status_label": "昨年開催",
-    "public_note": "昨年開催: 2025-08-29〜2025-08-30。今年の日程は未確認です。",
-    "recurrence_label": "昨年開催・継続性 中",
-    "recurrence_score": 0.63,
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-28〜2026-08-29",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
     "recurrence_reasons": [
-      "official_or_semi_official_evidence",
-      "venue_present",
-      "tokyo_23ward",
-      "recurring_word:毎年"
+      "2026年日付確認済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
-    "last_seen_year": 2025,
+    "last_seen_year": null,
     "last_seen_dates": [
-      "2025-08-29",
-      "2025-08-30"
+      "2026-08-28",
+      "2026-08-29"
     ],
-    "display_tier": "historical_slide",
-    "historical_reference": {
-      "display_tier": "historical_slide",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-08-29",
-        "2025-08-30"
-      ],
-      "label": "2025-08-29〜2025-08-30実績・今年未確認",
-      "confidence": "medium",
-      "score": 0.63,
-      "status": "expected_medium",
-      "status_label": "昨年開催",
-      "recurrence_label": "昨年開催・継続性 中",
-      "reasons": [
-        "official_or_semi_official_evidence",
-        "venue_present",
-        "tokyo_23ward",
-        "recurring_word:毎年"
-      ],
-      "cautions": [],
-      "edition_number": null,
-      "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-08-28",
-        "date_end": "2026-08-29",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第5金曜を2026年へスライド",
-        "source_date": "2025-08-29",
-        "source_date_end": "2025-08-30",
-        "duration_days": 2
-      }
-    },
-    "historical_display_tier": "historical_slide",
-    "historical_last_seen_year": 2025,
-    "historical_last_seen_dates": [
-      "2025-08-29",
-      "2025-08-30"
-    ],
-    "historical_reference_label": "2025-08-29〜2025-08-30実績・今年未確認",
-    "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.63,
-    "historical_slide": {
-      "date": "2026-08-28",
-      "date_end": "2026-08-29",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第5金曜を2026年へスライド",
-      "source_date": "2025-08-29",
-      "source_date_end": "2025-08-30",
-      "duration_days": 2
-    },
-    "historical_slide_date": "2026-08-28",
-    "historical_slide_date_end": "2026-08-29",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第5金曜を2026年へスライド",
-    "predicted_date": "2026-08-28",
-    "predicted_date_end": "2026-08-29",
-    "prediction_basis": "2025年実績の同月第5金曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "display_tier": "confirmed"
   },
   {
     "name": "銀座一丁目東町会・新富町会 納涼盆踊り大会",
@@ -1201,52 +1140,61 @@ const EVENTS = [
     "name_confirmed": true,
     "venue": "日本橋小学校",
     "area": "中央区",
-    "months": [],
+    "months": [
+      7
+    ],
     "scale": "小",
     "access": "都営浅草線・東京メトロ日比谷線 人形町駅から徒歩2〜3分",
     "address": "東京都中央区日本橋人形町1-1-17",
     "lat": null,
     "lng": null,
-    "date": null,
-    "date_end": null,
-    "status": "未確認",
+    "date": "2026-07-18",
+    "date_end": "2026-07-18",
+    "status": "確認済み",
     "date_confidence": {
-      "level": "unknown",
-      "label": "未確認",
-      "description": "開催日はまだ確認できていません"
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
     },
     "date_candidates": [],
-    "hints": [],
-    "jun": {},
+    "hints": [
+      [
+        7,
+        18
+      ]
+    ],
+    "jun": {
+      "7": "中旬"
+    },
     "description": "日本橋小学校で開催される地域の盆踊り。名称は会場名と過去の開催情報からの推定。",
-    "detail": "名称推定。開催日程は未確認。",
+    "detail": "名称推定。開催日程は未確認。 正式名称は「四町会・合同 納涼盆踊り大会」。2026年7月18日(土)、15:30〜こどもゲーム・屋台、18:00〜盆踊り開始。雨天決行。主催は小網町町会・人形町一丁目町会・人形町一丁目芳人町会・蛎一北部町会。（公式ポスター画像より）",
     "source_urls": [
       {
-        "label": "告知HPあり",
+        "label": "公式告知あり",
         "url": "https://minato-bon-odori.blogspot.com/",
-        "kind": "web",
-        "count": 1
+        "kind": "official"
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "season_hint",
-    "public_status": "date_unknown",
-    "public_category": "date_unknown",
-    "public_status_label": "日程未確認",
-    "public_note": "今年の日程は未確認です。",
-    "recurrence_label": "日程未確認",
-    "recurrence_score": 0.15,
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed",
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-07-18",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "未確認"
+      "2026年開催済み"
     ],
-    "recurrence_cautions": [
-      "2026年日程なし"
-    ],
+    "recurrence_cautions": [],
     "edition_number": null,
     "last_seen_year": null,
-    "last_seen_dates": [],
-    "display_tier": "season_hint"
+    "last_seen_dates": [
+      "2026-07-18",
+      "2026-07-18"
+    ],
+    "display_tier": "ended"
   },
   {
     "name": "大盆踊り祭 with 坂崎守寛",
@@ -1302,7 +1250,7 @@ const EVENTS = [
       "2026年開催済み"
     ],
     "recurrence_cautions": [],
-    "edition_number": 2,
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [
       "2026-02-21"
@@ -1553,7 +1501,7 @@ const EVENTS = [
       "2026年開催済み"
     ],
     "recurrence_cautions": [],
-    "edition_number": 2,
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [
       "2026-07-11",
@@ -2346,23 +2294,21 @@ const EVENTS = [
     ],
     "current_event_state": "predicted",
     "date_certainty_tier": "historical_slide",
-    "public_status": "expected_high",
+    "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
-    "public_note": "第16回・昨年開催: 2025-08-22。今年の日程は未確認です。",
-    "recurrence_label": "昨年開催・継続性 高",
-    "recurrence_score": 0.78,
+    "public_note": "昨年開催: 2025-08-22。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.64,
     "recurrence_reasons": [
       "held_2025",
       "venue_present",
       "tokyo_23ward",
-      "edition_number:16",
-      "edition_10plus",
       "recurring_word:例年",
       "recurring_word:夏祭り"
     ],
     "recurrence_cautions": [],
-    "edition_number": 16,
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-08-22"
@@ -2375,22 +2321,20 @@ const EVENTS = [
         "2025-08-22"
       ],
       "label": "2025-08-22実績・今年未確認",
-      "confidence": "high",
-      "score": 0.78,
-      "status": "expected_high",
+      "confidence": "medium",
+      "score": 0.64,
+      "status": "expected_medium",
       "status_label": "昨年開催",
-      "recurrence_label": "昨年開催・継続性 高",
+      "recurrence_label": "昨年開催・継続性 中",
       "reasons": [
         "held_2025",
         "venue_present",
         "tokyo_23ward",
-        "edition_number:16",
-        "edition_10plus",
         "recurring_word:例年",
         "recurring_word:夏祭り"
       ],
       "cautions": [],
-      "edition_number": 16,
+      "edition_number": null,
       "has_rule_prediction": false,
       "slide": {
         "date": "2026-08-28",
@@ -2408,8 +2352,8 @@ const EVENTS = [
       "2025-08-22"
     ],
     "historical_reference_label": "2025-08-22実績・今年未確認",
-    "historical_reference_confidence": "high",
-    "historical_reference_score": 0.78,
+    "historical_reference_confidence": "medium",
+    "historical_reference_score": 0.64,
     "historical_slide": {
       "date": "2026-08-28",
       "date_end": "2026-08-28",
@@ -2426,7 +2370,7 @@ const EVENTS = [
     "predicted_date": "2026-08-28",
     "predicted_date_end": "2026-08-28",
     "prediction_basis": "2025年実績の同月第4金曜を2026年へスライド",
-    "prediction_confidence": "high"
+    "prediction_confidence": "medium"
   },
   {
     "name": "桜まつり",
@@ -2814,6 +2758,7 @@ const EVENTS = [
     "venue": "埠頭公園（港区芝浦港南）",
     "area": "港区",
     "months": [
+      7,
       8
     ],
     "scale": "小",
@@ -2821,84 +2766,58 @@ const EVENTS = [
     "address": "東京都港区海岸3丁目（旧海岸通り沿い）",
     "lat": null,
     "lng": null,
-    "date": null,
-    "date_end": null,
-    "status": "未確認",
+    "date": "2026-07-31",
+    "date_end": "2026-08-01",
+    "status": "確認済み",
     "date_confidence": {
-      "level": "unknown",
-      "label": "未確認",
-      "description": "開催日はまだ確認できていません"
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
     },
     "date_candidates": [],
     "hints": [
+      [
+        7,
+        31
+      ],
       [
         8,
         1
       ]
     ],
     "jun": {
+      "7": "下旬",
       "8": "上旬"
     },
     "description": "埠頭公園（港区芝浦港南）で行われる地域の盆踊りイベント。過去の開催実績をもとに掲載。",
-    "detail": "2025-08-01 開催実績。2025 8/1 - 2。海岸二・三丁目町会 「海岸まつり」 8月1日(金)-2日(土) 「盆踊り大会を行います」 詳細不明(2019年は午後6時-9時30分(2日目は9時まで)。",
+    "detail": "2025-08-01 開催実績。2025 8/1 - 2。海岸二・三丁目町会 「海岸まつり」 8月1日(金)-2日(土) 「盆踊り大会を行います」 詳細不明(2019年は午後6時-9時30分(2日目は9時まで)。 2026年は7月31日（金）・8月1日（土）に埠頭公園で開催。広報みなと2026年7月1日号「区内商店街イベント一覧」で確認（主催: 海岸2丁目・3丁目商店会。盆踊り大会と模擬店）。秋田県東京事務所のX投稿（@prefAkita_tokyo）でも同一日程が告知され、西馬音内盆踊りが披露される旨の記載あり。",
     "source_urls": [
       {
-        "label": "告知HPあり",
+        "label": "公式告知あり",
         "url": "https://www.city.minato.tokyo.jp/kouhou/kuse/koho/minato2025/202507/20250701top/01.html",
-        "kind": "web",
-        "count": 1
+        "kind": "official"
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "season_hint",
-    "public_status": "date_unknown",
-    "public_category": "date_unknown",
-    "public_status_label": "日程未確認",
-    "public_note": "今年の日程は未確認です。",
-    "recurrence_label": "日程未確認",
-    "recurrence_score": 0.25,
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-07-31〜2026-08-01",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
     "recurrence_reasons": [
-      "月ヒントあり",
-      "日付ヒントあり",
-      "未確認"
+      "2026年日付確認済み"
     ],
-    "recurrence_cautions": [
-      "2026年日程なし"
-    ],
+    "recurrence_cautions": [],
     "edition_number": null,
     "last_seen_year": null,
-    "last_seen_dates": [],
-    "display_tier": "season_hint",
-    "season_hint": {
-      "display_tier": "season_hint",
-      "target_year": 2026,
-      "months": [
-        8
-      ],
-      "jun": {
-        "8": "上旬"
-      },
-      "hints": [
-        [
-          8,
-          1
-        ]
-      ],
-      "label": "8月上旬",
-      "confidence": "lowest",
-      "basis": "例年の開催月・旬ヒント",
-      "has_jun_hint": true,
-      "has_sort_hint": true
-    },
-    "season_months": [
-      8
+    "last_seen_dates": [
+      "2026-07-31",
+      "2026-08-01"
     ],
-    "season_jun": {
-      "8": "上旬"
-    },
-    "season_hint_label": "8月上旬",
-    "season_confidence": "lowest"
+    "display_tier": "confirmed"
   },
   {
     "name": "増上寺 地蔵尊盆踊り大会",
@@ -3294,7 +3213,7 @@ const EVENTS = [
       "2026年開催済み"
     ],
     "recurrence_cautions": [],
-    "edition_number": 51,
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [
       "2026-07-23",
@@ -3516,23 +3435,21 @@ const EVENTS = [
     ],
     "current_event_state": "predicted",
     "date_certainty_tier": "historical_slide",
-    "public_status": "expected_high",
+    "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
-    "public_note": "第10回・昨年開催: 2025-09-07。今年の日程は未確認です。",
-    "recurrence_label": "昨年開催・継続性 高",
-    "recurrence_score": 0.78,
+    "public_note": "昨年開催: 2025-09-07。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.64,
     "recurrence_reasons": [
       "held_2025",
       "venue_present",
       "tokyo_23ward",
-      "edition_number:10",
-      "edition_10plus",
       "recurring_word:納涼",
       "recurring_word:盆踊り大会"
     ],
     "recurrence_cautions": [],
-    "edition_number": 10,
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-09-07"
@@ -3545,22 +3462,20 @@ const EVENTS = [
         "2025-09-07"
       ],
       "label": "2025-09-07実績・今年未確認",
-      "confidence": "high",
-      "score": 0.78,
-      "status": "expected_high",
+      "confidence": "medium",
+      "score": 0.64,
+      "status": "expected_medium",
       "status_label": "昨年開催",
-      "recurrence_label": "昨年開催・継続性 高",
+      "recurrence_label": "昨年開催・継続性 中",
       "reasons": [
         "held_2025",
         "venue_present",
         "tokyo_23ward",
-        "edition_number:10",
-        "edition_10plus",
         "recurring_word:納涼",
         "recurring_word:盆踊り大会"
       ],
       "cautions": [],
-      "edition_number": 10,
+      "edition_number": null,
       "has_rule_prediction": false,
       "slide": {
         "date": "2026-09-06",
@@ -3578,8 +3493,8 @@ const EVENTS = [
       "2025-09-07"
     ],
     "historical_reference_label": "2025-09-07実績・今年未確認",
-    "historical_reference_confidence": "high",
-    "historical_reference_score": 0.78,
+    "historical_reference_confidence": "medium",
+    "historical_reference_score": 0.64,
     "historical_slide": {
       "date": "2026-09-06",
       "date_end": "2026-09-06",
@@ -3596,7 +3511,7 @@ const EVENTS = [
     "predicted_date": "2026-09-06",
     "predicted_date_end": "2026-09-06",
     "prediction_basis": "2025年実績の同月第1日曜を2026年へスライド",
-    "prediction_confidence": "high"
+    "prediction_confidence": "medium"
   },
   {
     "name": "郡上おどり in 青山",
@@ -4408,36 +4323,35 @@ const EVENTS = [
     "address": "港区赤坂5-3-6",
     "lat": null,
     "lng": null,
-    "date": "2025-08-29",
-    "date_end": "2025-08-30",
-    "status": "未確認",
+    "date": "2026-08-28",
+    "date_end": "2026-08-29",
+    "status": "確認済み",
     "date_confidence": {
-      "level": "unknown",
-      "label": "未確認",
-      "description": "開催日はまだ確認できていません"
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
     },
     "date_candidates": [],
     "hints": [
       [
         8,
-        29
+        28
       ],
       [
         8,
-        30
+        29
       ]
     ],
     "jun": {
       "8": "下旬"
     },
     "description": "赤坂夏おどり（旧 赤坂盆踊り）は、赤坂サカス広場で開かれる屋外型の盆踊り・夏の地域イベント。8月開催の情報をもとに、公開サイト用に掲載しています。",
-    "detail": "2022年開始。2024年は中止、2025年は「赤坂夏おどり」として8/29-30開催。2026年日程は未発表",
+    "detail": "2022年開始。2024年は中止、2025年は「赤坂夏おどり」として8/29-30開催。2026年日程は未発表 2026年は8月28日（金）・29日（土）に赤坂サカス広場で開催。広報みなと2026年7月1日号「区内商店街イベント一覧」で確認。",
     "source_urls": [
       {
-        "label": "告知HPあり",
+        "label": "公式告知あり",
         "url": "https://sacas.tokyoevent.net/natsuodori.html",
-        "kind": "web",
-        "count": 1
+        "kind": "official"
       }
     ],
     "songs": [
@@ -4446,84 +4360,25 @@ const EVENTS = [
         "confidence": "hint"
       }
     ],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
-    "public_status": "expected_medium",
-    "public_category": "recurring_last_year",
-    "public_status_label": "昨年開催",
-    "public_note": "昨年開催: 2025-08-29〜2025-08-30。今年の日程は未確認です。",
-    "recurrence_label": "昨年開催・継続性 中",
-    "recurrence_score": 0.56,
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-28〜2026-08-29",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
     "recurrence_reasons": [
-      "held_2025",
-      "venue_present",
-      "tokyo_23ward"
+      "2026年日付確認済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
-    "last_seen_year": 2025,
+    "last_seen_year": null,
     "last_seen_dates": [
-      "2025-08-29",
-      "2025-08-30"
+      "2026-08-28",
+      "2026-08-29"
     ],
-    "display_tier": "historical_slide",
-    "historical_reference": {
-      "display_tier": "historical_slide",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-08-29",
-        "2025-08-30"
-      ],
-      "label": "2025-08-29〜2025-08-30実績・今年未確認",
-      "confidence": "medium",
-      "score": 0.56,
-      "status": "expected_medium",
-      "status_label": "昨年開催",
-      "recurrence_label": "昨年開催・継続性 中",
-      "reasons": [
-        "held_2025",
-        "venue_present",
-        "tokyo_23ward"
-      ],
-      "cautions": [],
-      "edition_number": null,
-      "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-08-28",
-        "date_end": "2026-08-29",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第5金曜を2026年へスライド",
-        "source_date": "2025-08-29",
-        "source_date_end": "2025-08-30",
-        "duration_days": 2
-      }
-    },
-    "historical_display_tier": "historical_slide",
-    "historical_last_seen_year": 2025,
-    "historical_last_seen_dates": [
-      "2025-08-29",
-      "2025-08-30"
-    ],
-    "historical_reference_label": "2025-08-29〜2025-08-30実績・今年未確認",
-    "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.56,
-    "historical_slide": {
-      "date": "2026-08-28",
-      "date_end": "2026-08-29",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第5金曜を2026年へスライド",
-      "source_date": "2025-08-29",
-      "source_date_end": "2025-08-30",
-      "duration_days": 2
-    },
-    "historical_slide_date": "2026-08-28",
-    "historical_slide_date_end": "2026-08-29",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第5金曜を2026年へスライド",
-    "predicted_date": "2026-08-28",
-    "predicted_date_end": "2026-08-29",
-    "prediction_basis": "2025年実績の同月第5金曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "display_tier": "confirmed"
   },
   {
     "name": "赤坂氷川祭 盆踊り大会",
@@ -5301,23 +5156,20 @@ const EVENTS = [
     ],
     "current_event_state": "predicted",
     "date_certainty_tier": "historical_slide",
-    "public_status": "expected_high",
+    "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
-    "public_note": "第42回・昨年開催: 2025-10-13。今年の日程は未確認です。",
-    "recurrence_label": "昨年開催・継続性 高",
-    "recurrence_score": 0.78,
+    "public_note": "昨年開催: 2025-10-13。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.6,
     "recurrence_reasons": [
       "held_2025",
       "venue_present",
       "tokyo_23ward",
-      "edition_number:42",
-      "edition_10plus",
-      "edition_30plus",
       "recurring_word:まつり"
     ],
     "recurrence_cautions": [],
-    "edition_number": 42,
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-10-13"
@@ -5330,22 +5182,19 @@ const EVENTS = [
         "2025-10-13"
       ],
       "label": "2025-10-13実績・今年未確認",
-      "confidence": "high",
-      "score": 0.78,
-      "status": "expected_high",
+      "confidence": "medium",
+      "score": 0.6,
+      "status": "expected_medium",
       "status_label": "昨年開催",
-      "recurrence_label": "昨年開催・継続性 高",
+      "recurrence_label": "昨年開催・継続性 中",
       "reasons": [
         "held_2025",
         "venue_present",
         "tokyo_23ward",
-        "edition_number:42",
-        "edition_10plus",
-        "edition_30plus",
         "recurring_word:まつり"
       ],
       "cautions": [],
-      "edition_number": 42,
+      "edition_number": null,
       "has_rule_prediction": false,
       "slide": {
         "date": "2026-10-12",
@@ -5363,8 +5212,8 @@ const EVENTS = [
       "2025-10-13"
     ],
     "historical_reference_label": "2025-10-13実績・今年未確認",
-    "historical_reference_confidence": "high",
-    "historical_reference_score": 0.78,
+    "historical_reference_confidence": "medium",
+    "historical_reference_score": 0.6,
     "historical_slide": {
       "date": "2026-10-12",
       "date_end": "2026-10-12",
@@ -5381,7 +5230,7 @@ const EVENTS = [
     "predicted_date": "2026-10-12",
     "predicted_date_end": "2026-10-12",
     "prediction_basis": "2025年実績の同月第2月曜を2026年へスライド",
-    "prediction_confidence": "high"
+    "prediction_confidence": "medium"
   },
   {
     "name": "神楽坂夏まつり 盆踊り in 神楽坂",
@@ -6080,7 +5929,7 @@ const EVENTS = [
       "2026年開催済み"
     ],
     "recurrence_cautions": [],
-    "edition_number": 26,
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [
       "2026-07-18",
@@ -6715,18 +6564,17 @@ const EVENTS = [
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
-    "public_note": "第9回・昨年開催: 2025-07-19。今年の日程は未確認です。",
+    "public_note": "昨年開催: 2025-07-19。今年の日程は未確認です。",
     "recurrence_label": "昨年開催・継続性 中",
-    "recurrence_score": 0.7,
+    "recurrence_score": 0.6,
     "recurrence_reasons": [
       "held_2025",
       "venue_present",
       "tokyo_23ward",
-      "edition_number:9",
       "recurring_word:町会"
     ],
     "recurrence_cautions": [],
-    "edition_number": 9,
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-19"
@@ -6740,7 +6588,7 @@ const EVENTS = [
       ],
       "label": "2025-07-19実績・今年未確認",
       "confidence": "medium",
-      "score": 0.7,
+      "score": 0.6,
       "status": "expected_medium",
       "status_label": "昨年開催",
       "recurrence_label": "昨年開催・継続性 中",
@@ -6748,11 +6596,10 @@ const EVENTS = [
         "held_2025",
         "venue_present",
         "tokyo_23ward",
-        "edition_number:9",
         "recurring_word:町会"
       ],
       "cautions": [],
-      "edition_number": 9,
+      "edition_number": null,
       "has_rule_prediction": false,
       "slide": null
     },
@@ -6763,7 +6610,7 @@ const EVENTS = [
     ],
     "historical_reference_label": "2025-07-19実績・今年未確認",
     "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.7
+    "historical_reference_score": 0.6
   },
   {
     "name": "花園神社 盆踊り",
@@ -8442,90 +8289,57 @@ const EVENTS = [
     "address": "〒110-0007 東京都台東区上野公園・池之端三丁目",
     "lat": null,
     "lng": null,
-    "date": "2025-08-09",
-    "date_end": "2025-08-11",
-    "status": "未確認",
+    "date": "2026-08-07",
+    "date_end": "2026-08-09",
+    "status": "確認済み",
     "date_confidence": {
-      "level": "unknown",
-      "label": "未確認",
-      "description": "開催日はまだ確認できていません"
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
     },
     "date_candidates": [],
     "hints": [
       [
         8,
-        9
+        7
       ],
       [
         8,
-        11
+        9
       ]
     ],
     "jun": {
-      "8": "中旬"
+      "8": "上旬"
     },
     "description": "不忍池のほとりで開かれる夏の盆踊り。市（マルシェ）と一体になった、上野の夜を彩るイベント。",
-    "detail": "",
+    "detail": "第7回。2026年8月7日(金)・8日(土)・9日(日)開催。会場は上野恩賜公園の袴越広場。（主催アカウント @ueno_club の公式ポスター画像より）",
     "source_urls": [
       {
-        "label": "告知HPあり",
+        "label": "公式告知あり",
         "url": "https://www.uenopark.info/2025/inoichi-bonodori-2025/",
-        "kind": "web",
-        "count": 1
+        "kind": "official"
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "historical_reference",
-    "public_status": "expected_low",
-    "public_category": "recurring_last_year",
-    "public_status_label": "昨年開催",
-    "public_note": "昨年開催: 2025-08-09〜2025-08-11。今年の日程は未確認です。",
-    "recurrence_label": "昨年開催・継続性 低",
-    "recurrence_score": 0.51,
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-07〜2026-08-09",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
     "recurrence_reasons": [
-      "venue_present",
-      "tokyo_23ward"
+      "2026年日付確認済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
-    "last_seen_year": 2025,
+    "last_seen_year": null,
     "last_seen_dates": [
-      "2025-08-09",
-      "2025-08-11"
+      "2026-08-07",
+      "2026-08-09"
     ],
-    "display_tier": "historical_reference",
-    "historical_reference": {
-      "display_tier": "historical_reference",
-      "last_seen_year": 2025,
-      "last_seen_dates": [
-        "2025-08-09",
-        "2025-08-11"
-      ],
-      "label": "2025-08-09〜2025-08-11実績・今年未確認",
-      "confidence": "low",
-      "score": 0.51,
-      "status": "expected_low",
-      "status_label": "昨年開催",
-      "recurrence_label": "昨年開催・継続性 低",
-      "reasons": [
-        "venue_present",
-        "tokyo_23ward"
-      ],
-      "cautions": [],
-      "edition_number": null,
-      "has_rule_prediction": false,
-      "slide": null
-    },
-    "historical_display_tier": "historical_reference",
-    "historical_last_seen_year": 2025,
-    "historical_last_seen_dates": [
-      "2025-08-09",
-      "2025-08-11"
-    ],
-    "historical_reference_label": "2025-08-09〜2025-08-11実績・今年未確認",
-    "historical_reference_confidence": "low",
-    "historical_reference_score": 0.51
+    "display_tier": "confirmed"
   },
   {
     "name": "上野盆踊り会（厚澄会）",
@@ -9220,7 +9034,7 @@ const EVENTS = [
     "recurrence_cautions": [
       "2026年日程なし"
     ],
-    "edition_number": 2,
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
     "display_tier": "season_hint",
@@ -9603,18 +9417,16 @@ const EVENTS = [
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
-    "public_note": "第10回・昨年開催: 2025-01-11。今年の日程は未確認です。",
+    "public_note": "昨年開催: 2025-01-11。今年の日程は未確認です。",
     "recurrence_label": "昨年開催・継続性 中",
-    "recurrence_score": 0.7,
+    "recurrence_score": 0.56,
     "recurrence_reasons": [
       "held_2025",
       "venue_present",
-      "tokyo_23ward",
-      "edition_number:10",
-      "edition_10plus"
+      "tokyo_23ward"
     ],
     "recurrence_cautions": [],
-    "edition_number": 10,
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-01-11"
@@ -9628,19 +9440,17 @@ const EVENTS = [
       ],
       "label": "2025-01-11実績・今年未確認",
       "confidence": "medium",
-      "score": 0.7,
+      "score": 0.56,
       "status": "expected_medium",
       "status_label": "昨年開催",
       "recurrence_label": "昨年開催・継続性 中",
       "reasons": [
         "held_2025",
         "venue_present",
-        "tokyo_23ward",
-        "edition_number:10",
-        "edition_10plus"
+        "tokyo_23ward"
       ],
       "cautions": [],
-      "edition_number": 10,
+      "edition_number": null,
       "has_rule_prediction": false,
       "slide": null
     },
@@ -9651,7 +9461,7 @@ const EVENTS = [
     ],
     "historical_reference_label": "2025-01-11実績・今年未確認",
     "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.7
+    "historical_reference_score": 0.56
   },
   {
     "name": "中之郷公園の盆踊り（名称推定）",
@@ -11719,7 +11529,7 @@ const EVENTS = [
     "recurrence_cautions": [
       "2026年日程なし"
     ],
-    "edition_number": 2,
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
     "display_tier": "season_hint",
@@ -11798,16 +11608,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-07-25〜2026-07-26",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-07-25〜2026-07-26",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -11816,7 +11626,7 @@ const EVENTS = [
       "2026-07-25",
       "2026-07-26"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "有明まつり",
@@ -12785,23 +12595,20 @@ const EVENTS = [
     ],
     "current_event_state": "predicted",
     "date_certainty_tier": "historical_slide",
-    "public_status": "expected_high",
+    "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
-    "public_note": "第71回・昨年開催: 2025-08-23。今年の日程は未確認です。",
-    "recurrence_label": "昨年開催・継続性 高",
-    "recurrence_score": 0.78,
+    "public_note": "昨年開催: 2025-08-23。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.6,
     "recurrence_reasons": [
       "held_2025",
       "venue_present",
       "tokyo_23ward",
-      "edition_number:71",
-      "edition_10plus",
-      "edition_30plus",
       "recurring_word:まつり"
     ],
     "recurrence_cautions": [],
-    "edition_number": 71,
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-08-23"
@@ -12814,22 +12621,19 @@ const EVENTS = [
         "2025-08-23"
       ],
       "label": "2025-08-23実績・今年未確認",
-      "confidence": "high",
-      "score": 0.78,
-      "status": "expected_high",
+      "confidence": "medium",
+      "score": 0.6,
+      "status": "expected_medium",
       "status_label": "昨年開催",
-      "recurrence_label": "昨年開催・継続性 高",
+      "recurrence_label": "昨年開催・継続性 中",
       "reasons": [
         "held_2025",
         "venue_present",
         "tokyo_23ward",
-        "edition_number:71",
-        "edition_10plus",
-        "edition_30plus",
         "recurring_word:まつり"
       ],
       "cautions": [],
-      "edition_number": 71,
+      "edition_number": null,
       "has_rule_prediction": false,
       "slide": {
         "date": "2026-08-22",
@@ -12847,8 +12651,8 @@ const EVENTS = [
       "2025-08-23"
     ],
     "historical_reference_label": "2025-08-23実績・今年未確認",
-    "historical_reference_confidence": "high",
-    "historical_reference_score": 0.78,
+    "historical_reference_confidence": "medium",
+    "historical_reference_score": 0.6,
     "historical_slide": {
       "date": "2026-08-22",
       "date_end": "2026-08-22",
@@ -12865,7 +12669,7 @@ const EVENTS = [
     "predicted_date": "2026-08-22",
     "predicted_date_end": "2026-08-22",
     "prediction_basis": "2025年実績の同月第4土曜を2026年へスライド",
-    "prediction_confidence": "high"
+    "prediction_confidence": "medium"
   },
   {
     "name": "大井蔵王権現神社の盆踊り（名称推定）",
@@ -13004,16 +12808,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-07-25〜2026-07-26",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-07-25〜2026-07-26",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -13022,7 +12826,7 @@ const EVENTS = [
       "2026-07-25",
       "2026-07-26"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "戸越宮前盆踊り",
@@ -14512,7 +14316,7 @@ const EVENTS = [
     "recurrence_cautions": [
       "2026年日程なし"
     ],
-    "edition_number": 3,
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [],
     "display_tier": "season_hint",
@@ -14559,84 +14363,53 @@ const EVENTS = [
     "address": "東京都品川区西五反田4-29-9",
     "lat": null,
     "lng": null,
-    "date": null,
-    "date_end": null,
-    "status": "未確認",
+    "date": "2026-07-25",
+    "date_end": "2026-07-25",
+    "status": "確認済み",
     "date_confidence": {
-      "level": "unknown",
-      "label": "未確認",
-      "description": "開催日はまだ確認できていません"
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
     },
     "date_candidates": [],
     "hints": [
       [
         7,
-        26
+        25
       ]
     ],
     "jun": {
       "7": "下旬"
     },
     "description": "第四日野小学校を会場に行われる品川区民まつりの地域イベント。模擬店や盆踊りを楽しめる地区行事。",
-    "detail": "2025-07-26 開催実績。2025 7/26。「品川区民まつり 大崎第一地区」7月26日(土) 15時-19時。 「模擬店、盆踊り、ゲームコーナー ほか」。 踊りの時間詳細不明。",
+    "detail": "2025-07-26 開催実績。2025 7/26。「品川区民まつり 大崎第一地区」7月26日(土) 15時-19時。 「模擬店、盆踊り、ゲームコーナー ほか」。 踊りの時間詳細不明。 2026年は7月25日（土）15:00〜18:00に第四日野小学校で開催（品川区公式・令和8年6月12日更新）。ただし2026年の告知内容は「模擬店、ゲームコーナー ほか」で、2025年にあった「盆踊り」の記載が無く、今年も踊られたかは未確認。同じ大崎第一地区では第一日野小学校（7月4日）・第三日野小学校（7月18日）の回に盆踊りが明記されている。",
     "source_urls": [
       {
-        "label": "告知HPあり",
+        "label": "公式告知あり",
         "url": "https://www.city.shinagawa.tokyo.jp/PC/shisetsu/shisetsu-kuyakusyo/shisetsu-kuyakusyo-chiiki/hpg000017088.html",
-        "kind": "web",
-        "count": 1
+        "kind": "official"
       }
     ],
     "songs": [],
-    "current_event_state": "predicted",
-    "date_certainty_tier": "season_hint",
-    "public_status": "date_unknown",
-    "public_category": "date_unknown",
-    "public_status_label": "日程未確認",
-    "public_note": "今年の日程は未確認です。",
-    "recurrence_label": "日程未確認",
-    "recurrence_score": 0.25,
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed",
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-07-25",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "月ヒントあり",
-      "日付ヒントあり",
-      "未確認"
+      "2026年開催済み"
     ],
-    "recurrence_cautions": [
-      "2026年日程なし"
-    ],
+    "recurrence_cautions": [],
     "edition_number": null,
     "last_seen_year": null,
-    "last_seen_dates": [],
-    "display_tier": "season_hint",
-    "season_hint": {
-      "display_tier": "season_hint",
-      "target_year": 2026,
-      "months": [
-        7
-      ],
-      "jun": {
-        "7": "下旬"
-      },
-      "hints": [
-        [
-          7,
-          26
-        ]
-      ],
-      "label": "7月下旬",
-      "confidence": "lowest",
-      "basis": "例年の開催月・旬ヒント",
-      "has_jun_hint": true,
-      "has_sort_hint": true
-    },
-    "season_months": [
-      7
+    "last_seen_dates": [
+      "2026-07-25",
+      "2026-07-25"
     ],
-    "season_jun": {
-      "7": "下旬"
-    },
-    "season_hint_label": "7月下旬",
-    "season_confidence": "lowest"
+    "display_tier": "ended"
   },
   {
     "name": "品川区民まつり 西大井広場公園 盆踊り",
@@ -14986,88 +14759,57 @@ const EVENTS = [
     ],
     "songs": [],
     "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
-    "public_status": "expected_high",
+    "date_certainty_tier": "historical_reference",
+    "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
-    "public_note": "第37回・昨年開催: 2025-07-27。今年の日程は未確認です。",
-    "recurrence_label": "昨年開催・継続性 高",
-    "recurrence_score": 0.78,
+    "public_note": "昨年開催: 2025-07-27。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.6,
     "recurrence_reasons": [
       "held_2025",
       "venue_present",
       "tokyo_23ward",
-      "edition_number:37",
-      "edition_10plus",
-      "edition_30plus",
       "recurring_word:盆踊り大会"
     ],
     "recurrence_cautions": [],
-    "edition_number": 37,
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-27"
     ],
-    "display_tier": "historical_slide",
+    "display_tier": "historical_reference",
     "historical_reference": {
-      "display_tier": "historical_slide",
+      "display_tier": "historical_reference",
       "last_seen_year": 2025,
       "last_seen_dates": [
         "2025-07-27"
       ],
       "label": "2025-07-27実績・今年未確認",
-      "confidence": "high",
-      "score": 0.78,
-      "status": "expected_high",
+      "confidence": "medium",
+      "score": 0.6,
+      "status": "expected_medium",
       "status_label": "昨年開催",
-      "recurrence_label": "昨年開催・継続性 高",
+      "recurrence_label": "昨年開催・継続性 中",
       "reasons": [
         "held_2025",
         "venue_present",
         "tokyo_23ward",
-        "edition_number:37",
-        "edition_10plus",
-        "edition_30plus",
         "recurring_word:盆踊り大会"
       ],
       "cautions": [],
-      "edition_number": 37,
+      "edition_number": null,
       "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-07-26",
-        "date_end": "2026-07-26",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第4日曜を2026年へスライド",
-        "source_date": "2025-07-27",
-        "source_date_end": null,
-        "duration_days": 1
-      }
+      "slide": null
     },
-    "historical_display_tier": "historical_slide",
+    "historical_display_tier": "historical_reference",
     "historical_last_seen_year": 2025,
     "historical_last_seen_dates": [
       "2025-07-27"
     ],
     "historical_reference_label": "2025-07-27実績・今年未確認",
-    "historical_reference_confidence": "high",
-    "historical_reference_score": 0.78,
-    "historical_slide": {
-      "date": "2026-07-26",
-      "date_end": "2026-07-26",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第4日曜を2026年へスライド",
-      "source_date": "2025-07-27",
-      "source_date_end": null,
-      "duration_days": 1
-    },
-    "historical_slide_date": "2026-07-26",
-    "historical_slide_date_end": "2026-07-26",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第4日曜を2026年へスライド",
-    "predicted_date": "2026-07-26",
-    "predicted_date_end": "2026-07-26",
-    "prediction_basis": "2025年実績の同月第4日曜を2026年へスライド",
-    "prediction_confidence": "high"
+    "historical_reference_confidence": "medium",
+    "historical_reference_score": 0.6
   },
   {
     "name": "中目黒盆踊り大会",
@@ -15351,25 +15093,22 @@ const EVENTS = [
     "songs": [],
     "current_event_state": "predicted",
     "date_certainty_tier": "historical_reference",
-    "public_status": "expected_high",
+    "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
-    "public_note": "第90回・昨年開催: 2025-07-16。今年の日程は未確認です。",
-    "recurrence_label": "昨年開催・継続性 高",
-    "recurrence_score": 0.86,
+    "public_note": "昨年開催: 2025-07-16。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.68,
     "recurrence_reasons": [
       "held_2025",
       "venue_present",
       "tokyo_23ward",
-      "edition_number:90",
-      "edition_10plus",
-      "edition_30plus",
       "recurring_word:寺",
       "recurring_word:盆踊り大会",
       "recurring_word:まつり"
     ],
     "recurrence_cautions": [],
-    "edition_number": 90,
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-16"
@@ -15382,24 +15121,21 @@ const EVENTS = [
         "2025-07-16"
       ],
       "label": "2025-07-16実績・今年未確認",
-      "confidence": "high",
-      "score": 0.86,
-      "status": "expected_high",
+      "confidence": "medium",
+      "score": 0.68,
+      "status": "expected_medium",
       "status_label": "昨年開催",
-      "recurrence_label": "昨年開催・継続性 高",
+      "recurrence_label": "昨年開催・継続性 中",
       "reasons": [
         "held_2025",
         "venue_present",
         "tokyo_23ward",
-        "edition_number:90",
-        "edition_10plus",
-        "edition_30plus",
         "recurring_word:寺",
         "recurring_word:盆踊り大会",
         "recurring_word:まつり"
       ],
       "cautions": [],
-      "edition_number": 90,
+      "edition_number": null,
       "has_rule_prediction": false,
       "slide": null
     },
@@ -15409,8 +15145,8 @@ const EVENTS = [
       "2025-07-16"
     ],
     "historical_reference_label": "2025-07-16実績・今年未確認",
-    "historical_reference_confidence": "high",
-    "historical_reference_score": 0.86
+    "historical_reference_confidence": "medium",
+    "historical_reference_score": 0.68
   },
   {
     "name": "自由が丘納涼盆踊り大会",
@@ -15810,7 +15546,7 @@ const EVENTS = [
     ],
     "display_tier": "historical_slide",
     "historical_reference": {
-      "display_tier": "historical_slide",
+      "display_tier": "historical_reference",
       "last_seen_year": 2025,
       "last_seen_dates": [
         "2025-07-29"
@@ -15832,41 +15568,16 @@ const EVENTS = [
       ],
       "edition_number": null,
       "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-07-28",
-        "date_end": "2026-07-28",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第5火曜を2026年へスライド",
-        "source_date": "2025-07-29",
-        "source_date_end": null,
-        "duration_days": 1
-      }
+      "slide": null
     },
-    "historical_display_tier": "historical_slide",
+    "historical_display_tier": "historical_reference",
     "historical_last_seen_year": 2025,
     "historical_last_seen_dates": [
       "2025-07-29"
     ],
     "historical_reference_label": "2025-07-29実績・今年未確認",
     "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.6,
-    "historical_slide": {
-      "date": "2026-07-28",
-      "date_end": "2026-07-28",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第5火曜を2026年へスライド",
-      "source_date": "2025-07-29",
-      "source_date_end": null,
-      "duration_days": 1
-    },
-    "historical_slide_date": "2026-07-28",
-    "historical_slide_date_end": "2026-07-28",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第5火曜を2026年へスライド",
-    "predicted_date": "2026-07-28",
-    "predicted_date_end": "2026-07-28",
-    "prediction_basis": "2025年実績の同月第5火曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "historical_reference_score": 0.6
   },
   {
     "name": "大森南一丁目自治会「納涼盆踊り大会」",
@@ -16754,7 +16465,7 @@ const EVENTS = [
     ],
     "songs": [],
     "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
+    "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -16777,9 +16488,9 @@ const EVENTS = [
     "last_seen_dates": [
       "2025-07-28"
     ],
-    "display_tier": "historical_slide",
+    "display_tier": "historical_reference",
     "historical_reference": {
-      "display_tier": "historical_slide",
+      "display_tier": "historical_reference",
       "last_seen_year": 2025,
       "last_seen_dates": [
         "2025-07-28"
@@ -16803,41 +16514,16 @@ const EVENTS = [
       ],
       "edition_number": null,
       "has_rule_prediction": false,
-      "slide": {
-        "date": "2026-07-27",
-        "date_end": "2026-07-27",
-        "method": "same_weekday",
-        "basis": "2025年実績の同月第4月曜を2026年へスライド",
-        "source_date": "2025-07-28",
-        "source_date_end": null,
-        "duration_days": 1
-      }
+      "slide": null
     },
-    "historical_display_tier": "historical_slide",
+    "historical_display_tier": "historical_reference",
     "historical_last_seen_year": 2025,
     "historical_last_seen_dates": [
       "2025-07-28"
     ],
     "historical_reference_label": "2025-07-28実績・今年未確認",
     "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.68,
-    "historical_slide": {
-      "date": "2026-07-27",
-      "date_end": "2026-07-27",
-      "method": "same_weekday",
-      "basis": "2025年実績の同月第4月曜を2026年へスライド",
-      "source_date": "2025-07-28",
-      "source_date_end": null,
-      "duration_days": 1
-    },
-    "historical_slide_date": "2026-07-27",
-    "historical_slide_date_end": "2026-07-27",
-    "historical_slide_method": "same_weekday",
-    "historical_slide_basis": "2025年実績の同月第4月曜を2026年へスライド",
-    "predicted_date": "2026-07-27",
-    "predicted_date_end": "2026-07-27",
-    "prediction_basis": "2025年実績の同月第4月曜を2026年へスライド",
-    "prediction_confidence": "medium"
+    "historical_reference_score": 0.68
   },
   {
     "name": "馬込地区自治会連合会、馬籠商店会連合睦会",
@@ -17336,16 +17022,16 @@ const EVENTS = [
         "basis_label": "2025年実測"
       }
     ],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-07-25〜2026-07-26",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-07-25〜2026-07-26",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -17354,7 +17040,7 @@ const EVENTS = [
       "2026-07-25",
       "2026-07-26"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "新町公民会 盆踊り大会",
@@ -19437,25 +19123,22 @@ const EVENTS = [
     "songs": [],
     "current_event_state": "predicted",
     "date_certainty_tier": "historical_reference",
-    "public_status": "expected_high",
+    "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
-    "public_note": "第38回・昨年開催: 2025-07-19。今年の日程は未確認です。",
-    "recurrence_label": "昨年開催・継続性 高",
-    "recurrence_score": 0.78,
+    "public_note": "昨年開催: 2025-07-19。今年の日程は未確認です。",
+    "recurrence_label": "昨年開催・継続性 中",
+    "recurrence_score": 0.6,
     "recurrence_reasons": [
       "held_2025",
       "venue_present",
       "tokyo_23ward",
-      "edition_number:38",
-      "edition_10plus",
-      "edition_30plus",
       "recurring_word:夏祭り"
     ],
     "recurrence_cautions": [
       "次回日程未確認"
     ],
-    "edition_number": 38,
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-07-19"
@@ -19468,24 +19151,21 @@ const EVENTS = [
         "2025-07-19"
       ],
       "label": "2025-07-19実績・今年未確認",
-      "confidence": "high",
-      "score": 0.78,
-      "status": "expected_high",
+      "confidence": "medium",
+      "score": 0.6,
+      "status": "expected_medium",
       "status_label": "昨年開催",
-      "recurrence_label": "昨年開催・継続性 高",
+      "recurrence_label": "昨年開催・継続性 中",
       "reasons": [
         "held_2025",
         "venue_present",
         "tokyo_23ward",
-        "edition_number:38",
-        "edition_10plus",
-        "edition_30plus",
         "recurring_word:夏祭り"
       ],
       "cautions": [
         "次回日程未確認"
       ],
-      "edition_number": 38,
+      "edition_number": null,
       "has_rule_prediction": false,
       "slide": null
     },
@@ -19495,8 +19175,8 @@ const EVENTS = [
       "2025-07-19"
     ],
     "historical_reference_label": "2025-07-19実績・今年未確認",
-    "historical_reference_confidence": "high",
-    "historical_reference_score": 0.78
+    "historical_reference_confidence": "medium",
+    "historical_reference_score": 0.6
   },
   {
     "name": "祖師谷昇進会商店街(振)盆踊り",
@@ -20287,7 +19967,7 @@ const EVENTS = [
       "2026年日付確認済み"
     ],
     "recurrence_cautions": [],
-    "edition_number": 71,
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [
       "2026-07-31",
@@ -20804,6 +20484,7 @@ const EVENTS = [
     ],
     "current_event_state": "confirmed",
     "date_certainty_tier": "confirmed",
+    "display_name": "渋谷盆踊り（渋谷109前）",
     "public_status": "upcoming_confirmed",
     "public_category": "upcoming",
     "public_status_label": "今後開催",
@@ -20814,7 +20495,7 @@ const EVENTS = [
       "2026年日付確認済み"
     ],
     "recurrence_cautions": [],
-    "edition_number": 7,
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [
       "2026-08-08",
@@ -21222,7 +20903,7 @@ const EVENTS = [
       "2026年開催済み"
     ],
     "recurrence_cautions": [],
-    "edition_number": 34,
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [
       "2026-06-05",
@@ -21435,7 +21116,7 @@ const EVENTS = [
       "2026年開催済み"
     ],
     "recurrence_cautions": [],
-    "edition_number": 16,
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [
       "2026-07-10",
@@ -21506,7 +21187,7 @@ const EVENTS = [
       "2026年開催済み"
     ],
     "recurrence_cautions": [],
-    "edition_number": 46,
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [
       "2026-07-17",
@@ -22189,18 +21870,16 @@ const EVENTS = [
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
-    "public_note": "第11回・昨年開催: 2025-09-14〜2025-09-15。今年の日程は未確認です。",
+    "public_note": "昨年開催: 2025-09-14〜2025-09-15。今年の日程は未確認です。",
     "recurrence_label": "昨年開催・継続性 中",
-    "recurrence_score": 0.69,
+    "recurrence_score": 0.55,
     "recurrence_reasons": [
       "venue_present",
       "tokyo_23ward",
-      "edition_number:11",
-      "edition_10plus",
       "recurring_word:まつり"
     ],
     "recurrence_cautions": [],
-    "edition_number": 11,
+    "edition_number": null,
     "last_seen_year": 2025,
     "last_seen_dates": [
       "2025-09-14",
@@ -22216,19 +21895,17 @@ const EVENTS = [
       ],
       "label": "2025-09-14〜2025-09-15実績・今年未確認",
       "confidence": "medium",
-      "score": 0.69,
+      "score": 0.55,
       "status": "expected_medium",
       "status_label": "昨年開催",
       "recurrence_label": "昨年開催・継続性 中",
       "reasons": [
         "venue_present",
         "tokyo_23ward",
-        "edition_number:11",
-        "edition_10plus",
         "recurring_word:まつり"
       ],
       "cautions": [],
-      "edition_number": 11,
+      "edition_number": null,
       "has_rule_prediction": false,
       "slide": {
         "date": "2026-09-13",
@@ -22248,7 +21925,7 @@ const EVENTS = [
     ],
     "historical_reference_label": "2025-09-14〜2025-09-15実績・今年未確認",
     "historical_reference_confidence": "medium",
-    "historical_reference_score": 0.69,
+    "historical_reference_score": 0.55,
     "historical_slide": {
       "date": "2026-09-13",
       "date_end": "2026-09-14",
@@ -22343,7 +22020,7 @@ const EVENTS = [
       "2026年開催済み"
     ],
     "recurrence_cautions": [],
-    "edition_number": 60,
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [
       "2026-03-15"
@@ -22575,6 +22252,70 @@ const EVENTS = [
       "2026-09-13"
     ],
     "display_tier": "confirmed"
+  },
+  {
+    "name": "あ〜夏休み！納涼盆踊り大会",
+    "name_confirmed": true,
+    "venue": "亀有ゆうろーど（亀有銀座商店街）",
+    "area": "葛飾区",
+    "months": [
+      7
+    ],
+    "scale": "中",
+    "access": "JR常磐線 亀有駅南口から徒歩圏内。亀有銀座商店街・ゆうろーど周辺",
+    "address": "東京都葛飾区亀有3丁目周辺",
+    "lat": null,
+    "lng": null,
+    "date": "2026-07-17",
+    "date_end": "2026-07-20",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        7,
+        17
+      ],
+      [
+        7,
+        20
+      ]
+    ],
+    "jun": {
+      "7": "中旬"
+    },
+    "description": "亀有駅南口側の亀有銀座商店街・ゆうろーど周辺で開かれる街なかの盆踊り会場。",
+    "detail": "2026年7月17日(金)〜20日(月)の4日連続開催。子供の部18:00-18:50、大人の部19:00-21:00。17日・18日と19日・20日で踊りの曲目が異なる。模擬店多数。7月20日(月)は打ち水エコ作戦「水かけまつり」（11:45集合・12:00開始、三菱UFJ銀行横ゆうろーど入口）。主催はあ〜夏休み実行委員会（亀有中央町会・亀有三和町会）。同じ亀有ゆうろーどで8月下旬に開催される「亀有銀座商店街納涼盆踊り大会」とは主催町会が異なる別イベント。（公式ポスター画像より）",
+    "source_urls": [],
+    "songs": [
+      {
+        "name": "大人の部",
+        "confidence": "hint"
+      }
+    ],
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed",
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-07-17〜2026-07-20",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
+    "recurrence_reasons": [
+      "2026年開催済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-07-17",
+      "2026-07-20"
+    ],
+    "display_tier": "ended"
   },
   {
     "name": "亀有銀座商店街納涼盆踊り大会",
@@ -22852,16 +22593,16 @@ const EVENTS = [
       }
     ],
     "songs": [],
-    "current_event_state": "confirmed",
+    "current_event_state": "ended",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
-    "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-07-25〜2026-07-26",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-07-25〜2026-07-26",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,
@@ -22870,7 +22611,7 @@ const EVENTS = [
       "2026-07-25",
       "2026-07-26"
     ],
-    "display_tier": "confirmed"
+    "display_tier": "ended"
   },
   {
     "name": "倉雀会(くらすずめかい)",
@@ -22987,7 +22728,7 @@ const EVENTS = [
       "2026年開催済み"
     ],
     "recurrence_cautions": [],
-    "edition_number": 4,
+    "edition_number": null,
     "last_seen_year": null,
     "last_seen_dates": [
       "2026-03-29"
