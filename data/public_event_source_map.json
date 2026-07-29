@@ -1,9 +1,21 @@
 {
   "generated_by": "export_public_events.py",
   "scope": "internal_public_event_source_map",
-  "public_event_count": 203,
-  "mapped_count": 203,
+  "public_event_count": 214,
+  "mapped_count": 214,
   "rows": [
+    {
+      "public_event_key": "秋葉原東部納涼大会|和泉小学校校庭・和泉公園|2026-07-31|2026-08-01",
+      "name": "秋葉原東部納涼大会",
+      "venue": "和泉小学校校庭・和泉公園",
+      "date": "2026-07-31",
+      "date_end": "2026-08-01",
+      "source": "master_rdb",
+      "occurrence_id": "occ_f0965eb6ed8e3bfd",
+      "series_id": "series_655896ac03eb44b9",
+      "event_year": 2026,
+      "venue_id": "venue_1b9ebb99af6cc84f"
+    },
     {
       "public_event_key": "山王音頭と民踊大会|山王パークタワー公開空地|2026-06-13|2026-06-15",
       "name": "山王音頭と民踊大会",
@@ -15,6 +27,18 @@
       "series_id": "ser_89120beee0d531cf",
       "event_year": 2026,
       "venue_id": "ven_f46fb3630adf9c72"
+    },
+    {
+      "public_event_key": "日本テレビ通り振興会 納涼盆踊り大会|番町の森|2026-07-31|2026-08-01",
+      "name": "日本テレビ通り振興会 納涼盆踊り大会",
+      "venue": "番町の森",
+      "date": "2026-07-31",
+      "date_end": "2026-08-01",
+      "source": "master_rdb",
+      "occurrence_id": "occ_30e49e010d502f7c",
+      "series_id": "series_a32f01d6bdb9bbd1",
+      "event_year": 2026,
+      "venue_id": "venue_2922f35ef053ab3d"
     },
     {
       "public_event_key": "神田明神納涼祭り|神田明神境内|2026-08-07|2026-08-09",
@@ -689,6 +713,18 @@
       "venue_id": "ven_87ae3f39af12e21d"
     },
     {
+      "public_event_key": "駒込富士神社 納涼盆踊り大会|駒込富士神社|2026-07-31|2026-08-01",
+      "name": "駒込富士神社 納涼盆踊り大会",
+      "venue": "駒込富士神社",
+      "date": "2026-07-31",
+      "date_end": "2026-08-01",
+      "source": "master_rdb",
+      "occurrence_id": "occ_f4dc297759a67c23",
+      "series_id": "series_63e9493029aa132e",
+      "event_year": 2026,
+      "venue_id": "venue_d2a2dec001003376"
+    },
+    {
       "public_event_key": "シタマチ.ふるさと盆踊り大会|おかちまちパンダ広場（御徒町駅南口駅前広場）|2025-08-16|",
       "name": "シタマチ.ふるさと盆踊り大会",
       "venue": "おかちまちパンダ広場（御徒町駅南口駅前広場）",
@@ -807,6 +843,18 @@
       "series_id": "series_03be5c839d96d5bb",
       "event_year": 2026,
       "venue_id": "venue_add9be34dd5f6129"
+    },
+    {
+      "public_event_key": "御徒町公園の盆踊り大会|御徒町公園|2026-07-29|2026-07-31",
+      "name": "御徒町公園の盆踊り大会",
+      "venue": "御徒町公園",
+      "date": "2026-07-29",
+      "date_end": "2026-07-31",
+      "source": "master_rdb",
+      "occurrence_id": "occ_b4377cd29622435e",
+      "series_id": "series_f3ba813a91da36b6",
+      "event_year": 2026,
+      "venue_id": "venue_4907bc9ad1249ff2"
     },
     {
       "public_event_key": "東本願寺盆踊り|東本願寺（浅草）|2026-08-19|2026-08-20",
@@ -1733,6 +1781,18 @@
       "venue_id": "ven_413442fdb88f62ed"
     },
     {
+      "public_event_key": "道塚盆踊り|道塚小学校校庭|2026-07-30|2026-07-31",
+      "name": "道塚盆踊り",
+      "venue": "道塚小学校校庭",
+      "date": "2026-07-30",
+      "date_end": "2026-07-31",
+      "source": "master_rdb",
+      "occurrence_id": "occ_a18730b884f5ae1b",
+      "series_id": "series_680bf3a459c56413",
+      "event_year": 2026,
+      "venue_id": "venue_b118b57862b39219"
+    },
+    {
       "public_event_key": "馬込地区自治会連合会、馬籠商店会連合睦会|馬込桜並木公園、馬込桜並木通り|2025-04-06|",
       "name": "馬込地区自治会連合会、馬籠商店会連合睦会",
       "venue": "馬込桜並木公園、馬込桜並木通り",
@@ -1743,6 +1803,18 @@
       "series_id": "ser_7f7915ee64c7f6fa",
       "event_year": 2025,
       "venue_id": "ven_f4f8f8206a8aa394"
+    },
+    {
+      "public_event_key": "盆踊りフェス|ゆうぽうと世田谷レクセンター 駐車場|2026-07-31|2026-07-31",
+      "name": "盆踊りフェス",
+      "venue": "ゆうぽうと世田谷レクセンター 駐車場",
+      "date": "2026-07-31",
+      "date_end": "2026-07-31",
+      "source": "master_rdb",
+      "occurrence_id": "occ_6fa9afbb74d69020",
+      "series_id": "series_ac09e895b362210f",
+      "event_year": 2026,
+      "venue_id": "venue_4795409d72659c39"
     },
     {
       "public_event_key": "砧町町会「納涼夏祭り大会」|三峰公園|2025-07-19|",
@@ -1995,6 +2067,18 @@
       "series_id": "ser_02e36b770bac7bef",
       "event_year": 2025,
       "venue_id": "ven_117755b4b90c78ec"
+    },
+    {
+      "public_event_key": "からすやま夏まつり 盆踊り大会|烏山区民センター前広場|2026-07-31|2026-08-01",
+      "name": "からすやま夏まつり 盆踊り大会",
+      "venue": "烏山区民センター前広場",
+      "date": "2026-07-31",
+      "date_end": "2026-08-01",
+      "source": "master_rdb",
+      "occurrence_id": "occ_c6e8eaa5b615b0f5",
+      "series_id": "series_7b6d61bd7902b28d",
+      "event_year": 2026,
+      "venue_id": "venue_158487f1eeb05ea1"
     },
     {
       "public_event_key": "納涼盆踊り大会|玉川中町公園|2025-07-19|",
@@ -2345,6 +2429,42 @@
       "venue_id": "ven_9c821f578bc45705"
     },
     {
+      "public_event_key": "大松氷川神社 納涼盆踊り大会|大松氷川神社|2026-07-30|2026-07-31",
+      "name": "大松氷川神社 納涼盆踊り大会",
+      "venue": "大松氷川神社",
+      "date": "2026-07-30",
+      "date_end": "2026-07-31",
+      "source": "master_rdb",
+      "occurrence_id": "occ_959986858d839ecb",
+      "series_id": "series_63efe485680d4700",
+      "event_year": 2026,
+      "venue_id": "venue_42e4657158c37155"
+    },
+    {
+      "public_event_key": "春日町盆踊り大会|春日神社|2026-08-01|2026-08-02",
+      "name": "春日町盆踊り大会",
+      "venue": "春日神社",
+      "date": "2026-08-01",
+      "date_end": "2026-08-02",
+      "source": "master_rdb",
+      "occurrence_id": "occ_a6508616f6a41e4a",
+      "series_id": "series_f950d94181adf252",
+      "event_year": 2026,
+      "venue_id": "venue_635d012e87ad5da9"
+    },
+    {
+      "public_event_key": "旭町一丁目町会 盆踊り|本覚寺|2026-07-30|2026-07-31",
+      "name": "旭町一丁目町会 盆踊り",
+      "venue": "本覚寺",
+      "date": "2026-07-30",
+      "date_end": "2026-07-31",
+      "source": "master_rdb",
+      "occurrence_id": "occ_fc3fc0f450f1cd87",
+      "series_id": "series_c79cce1f4d22de5e",
+      "event_year": 2026,
+      "venue_id": "venue_9820ad549973172b"
+    },
+    {
       "public_event_key": "西綾瀬町会 夏祭り盆踊り大会|五反野コミュニティ公園|2025-06-21|",
       "name": "西綾瀬町会 夏祭り盆踊り大会",
       "venue": "五反野コミュニティ公園",
@@ -2367,6 +2487,18 @@
       "series_id": "ser_2e5c894c1eee115d",
       "event_year": 2026,
       "venue_id": "ven_a0f33ce9df12737d"
+    },
+    {
+      "public_event_key": "お花茶屋ふるさとまつり|お花茶屋公園|2026-08-01|2026-08-03",
+      "name": "お花茶屋ふるさとまつり",
+      "venue": "お花茶屋公園",
+      "date": "2026-08-01",
+      "date_end": "2026-08-03",
+      "source": "master_rdb",
+      "occurrence_id": "occ_9183bc6314ad617f",
+      "series_id": "series_df7e9db427663a30",
+      "event_year": 2026,
+      "venue_id": "venue_99d5fa802d81e347"
     },
     {
       "public_event_key": "あ〜夏休み！納涼盆踊り大会|亀有ゆうろーど（亀有銀座商店街）|2026-07-17|2026-07-20",
