@@ -1,0 +1,186 @@
+{
+  "generated_by": "build_x_review_lanes.py",
+  "generated_at": "2026-07-29T09:25:27.770133+00:00",
+  "contract": {
+    "daily_input_max": 30,
+    "lane3_user_review_max": 3,
+    "lane1_no_new_event": true,
+    "lane1_no_overwrite": true
+  },
+  "lanes": {
+    "lane1_auto_plan": [],
+    "lane2_operator_review": [],
+    "lane3_user_review": [
+      {
+        "candidate_id": "xgap_e246b4736552bdf9",
+        "source_key": "x:2082055357401338215",
+        "lane_hint": "lane2",
+        "candidate_kind": "schedule_change",
+        "priority_score": 300,
+        "event_year": 2026,
+        "matched_occurrence": {
+          "occurrence_id": "occ_ce162e8dbe6cdf52",
+          "event_name": "第7回 渋谷盆踊り",
+          "venue": "渋谷109前",
+          "matched_aliases": [
+            "第7回 渋谷盆踊り",
+            "渋谷盆踊り",
+            "渋谷盆踊り"
+          ]
+        },
+        "source_url": "https://x.com/nippon_edit/status/2082055357401338215",
+        "source_text": "\n【第7回渋谷盆踊り2026】\n【イベント情報：東京】\n\n開催日時：2026年8月8日（土）18:00～21:30 会場：SHIBUYA109前イベントスペース、道玄坂、文化村通り一帯 住所：東京都渋谷区道玄坂2丁目29\n\nアクセス： ・渋谷駅から徒歩4分 ・神泉駅から徒歩7分\n\n交通規制： ・規制時間：16:30～22:30 ・規制区域：道玄坂通り、文化村通り ・渋谷駅前のスクランブル交差点西側、道玄坂、文化村通りは歩行者専用道路となる\n\nイベント内容： ・「渋谷音頭」などのオリジナル曲から定番の東京音頭まで流れる ・射的やスーパーボールすくいなどの縁日屋台 ・多彩なグルメを楽しめるキッチンカー出店 ・SHIBUYA109前の道路上に櫓を建て、老若男女が手を取り合いながら盆踊り\n\n入場：無料・予約不要\n\n歴史： ・2017年（第1回）から開催 ・「渋谷の街の人たちと渋谷に来る人たちの交流の場を作る」をテーマ ・渋谷の夏の風物詩として定着\n\n天気：荒天時は中止となる場合あり\n\n※公式サイトで情報をご確認ください。\n*Please check the comment section fo",
+        "source_author": "@nippon_edit",
+        "source_officiality": {
+          "classification": "unknown_or_personal_social",
+          "score": 2,
+          "handle": "@nippon_edit",
+          "account_name": "NIPPON EDIT",
+          "source_type": "",
+          "trust_level": "candidate",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation"
+        },
+        "date_hints": [
+          "8月8日"
+        ],
+        "voice": {
+          "source": "x",
+          "account": "@nippon_edit",
+          "name": "NIPPON EDIT",
+          "title": "",
+          "text": "【第7回渋谷盆踊り2026】\n【イベント情報：東京】\n\n開催日時：2026年8月8日（土）18:00～21:30 会場：SHIBUYA109前イベントスペース、道玄坂、文化村通り一帯 住所：東京都渋谷区道玄坂2丁目29\n\nアクセス： ・渋谷駅から徒歩4分 ・神泉駅から徒歩7分\n\n交通規制： ・規制時間：16:30～22:30 ・規制区域：道玄坂通り、文化村通り ・渋谷駅前のスクランブル交差点西側、道玄坂、文化村通りは歩行者専用道路となる\n\nイベント内容： ・「渋谷音頭」などのオリジナル曲から定番の東京音頭まで流れる ・射的やスーパーボールすくいなどの縁日屋台 ・多彩なグルメを楽しめるキッチンカー出店 ・SHIBUYA109前の道路上に櫓を建て、老若男女が手を取り合いながら盆踊り\n\n入場：無料・予約不要\n\n歴史： ・2017年（第1回）から開催 ・「渋谷の街の人たちと渋谷に来る人たちの交流の場を作る」をテーマ ・渋谷の夏の風物詩として定着\n\n天気：荒天時は中止となる場合あり\n\n※公式サイトで情報をご確認ください。\n*Please check the comment section for",
+          "url": "https://x.com/nippon_edit/status/2082055357401338215",
+          "date": "2026-07-28T10:47:34+00:00",
+          "tweet_id": "2082055357401338215",
+          "tags": [
+            "🟡関心",
+            "q-future-schedule"
+          ],
+          "media_urls": [
+            "https://pbs.twimg.com/media/HOTyTqsboAApyFv.jpg",
+            "https://t.co/BkFKwhWZHh",
+            "pic.x.com/BkFKwhWZHh",
+            "https://pbs.twimg.com/media/HOTyTqsaMAA8Dmb.jpg"
+          ]
+        },
+        "lane": "lane3_user_review"
+      },
+      {
+        "candidate_id": "xgap_d21be99361ca0f91",
+        "source_key": "x:2082312910492336285",
+        "lane_hint": "lane2",
+        "candidate_kind": "schedule_change",
+        "priority_score": 300,
+        "event_year": 2026,
+        "matched_occurrence": {
+          "occurrence_id": "occ_4816ef9a03c3b9c1",
+          "event_name": "築地本願寺納涼盆踊り大会",
+          "venue": "築地本願寺",
+          "matched_aliases": [
+            "築地本願寺納涼盆踊り大会",
+            "築地本願寺納涼盆踊り大会"
+          ]
+        },
+        "source_url": "https://x.com/assetformer/status/2082312910492336285",
+        "source_text": "\n／\n築地本願寺納涼盆踊り大会｜7/29(水)〜8/1(土)\n【日本一の食と盆踊り】築地グルメの名店が集結！「第79回 築地本願寺納涼盆踊り大会」が4日間限定で開催！！ 🏮👘🍢\n＼\n\n​🏮 イベント概要\n“日本一おいしい盆踊り”と称される夏の風物詩！築地場外市場などの名店が手掛ける絶品グルメ屋台が多数出店するほか、大江戸助六太鼓の迫力満点な奉納演奏、小学生以下のお子さまへのお菓子プレゼント（本堂にて先着順）など見どころ盛りだくさん！\n​📅 開催日時\n2026年7月29日(水) 〜 8月1日(土)\n・7月29日(水)〜31日(金)：19:00〜21:00\n・8月1日(土)最終日：18:00〜20:30\n（※雨天時は中止になる場合があります）\n​📍 会場・最寄り駅\n・会場：築地本願寺 境内\n・最寄り駅：東京メトロ日比谷線「築地駅」直結（地下鉄門すぐ）\n​✅ 参加（来場）方法・ポイント\n① 会場へ向かい、境内に並ぶ築地の美味いもの屋台グルメを堪能！\n② 櫓（やぐら）を囲んでみんなで盆踊りや大江戸助六太鼓の演奏を楽しむ\n③ 小学6年生以下のお子さまは本堂でお参りをしてお菓子をGET（※時間限定",
+        "source_author": "@assetformer",
+        "source_officiality": {
+          "classification": "unknown_or_personal_social",
+          "score": 2,
+          "handle": "@assetformer",
+          "account_name": "Kong | お得×ライフハック",
+          "source_type": "",
+          "trust_level": "candidate",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation"
+        },
+        "date_hints": [
+          "7/29",
+          "8/1",
+          "7月29日",
+          "8月1日",
+          "7月29日",
+          "8月1日"
+        ],
+        "voice": {
+          "source": "x",
+          "account": "@assetformer",
+          "name": "Kong | お得×ライフハック",
+          "title": "",
+          "text": "／\n築地本願寺納涼盆踊り大会｜7/29(水)〜8/1(土)\n【日本一の食と盆踊り】築地グルメの名店が集結！「第79回 築地本願寺納涼盆踊り大会」が4日間限定で開催！！ 🏮👘🍢\n＼\n\n​🏮 イベント概要\n“日本一おいしい盆踊り”と称される夏の風物詩！築地場外市場などの名店が手掛ける絶品グルメ屋台が多数出店するほか、大江戸助六太鼓の迫力満点な奉納演奏、小学生以下のお子さまへのお菓子プレゼント（本堂にて先着順）など見どころ盛りだくさん！\n​📅 開催日時\n2026年7月29日(水) 〜 8月1日(土)\n・7月29日(水)〜31日(金)：19:00〜21:00\n・8月1日(土)最終日：18:00〜20:30\n（※雨天時は中止になる場合があります）\n​📍 会場・最寄り駅\n・会場：築地本願寺 境内\n・最寄り駅：東京メトロ日比谷線「築地駅」直結（地下鉄門すぐ）\n​✅ 参加（来場）方法・ポイント\n① 会場へ向かい、境内に並ぶ築地の美味いもの屋台グルメを堪能！\n② 櫓（やぐら）を囲んでみんなで盆踊りや大江戸助六太鼓の演奏を楽しむ\n③ 小学6年生以下のお子さまは本堂でお参りをしてお菓子をGET（※時間限定・",
+          "url": "https://x.com/assetformer/status/2082312910492336285",
+          "date": "2026-07-29T03:51:00+00:00",
+          "tweet_id": "2082312910492336285",
+          "tags": [
+            "🟡関心",
+            "q-report"
+          ],
+          "media_urls": [
+            "https://pbs.twimg.com/media/HOXcifMbsAA3jLS.jpg",
+            "https://t.co/nZIzhepzXJ",
+            "pic.x.com/nZIzhepzXJ",
+            "https://pbs.twimg.com/media/HOXci_jbIAAdby5.jpg",
+            "https://pbs.twimg.com/media/HOXcjTlbsAA2tUf.jpg",
+            "https://pbs.twimg.com/media/HOXcjkoagAAL1Yk.jpg"
+          ]
+        },
+        "lane": "lane3_user_review"
+      },
+      {
+        "candidate_id": "xgap_f1861def51f956e1",
+        "source_key": "x:2078268065247301793",
+        "lane_hint": "lane2",
+        "candidate_kind": "missing_date",
+        "priority_score": 200,
+        "event_year": 2026,
+        "matched_occurrence": {
+          "occurrence_id": "occ_69ee7abd5466f5fd",
+          "event_name": "森下二丁目盆踊り",
+          "venue": "森下公園",
+          "matched_aliases": [
+            "森下二丁目盆踊り",
+            "森下二丁目盆踊り"
+          ]
+        },
+        "source_url": "https://x.com/fukagawakurashi/status/2078268065247301793",
+        "source_text": "\n🏮深川の夏祭り2026🏮\n【森下二丁目盆踊り大会】\n7/18（土）19（日）開催｜森下公園 \n\nhttps://t.co/N0suoZrzQT",
+        "source_author": "@fukagawakurashi",
+        "source_officiality": {
+          "classification": "unknown_or_personal_social",
+          "score": 2,
+          "handle": "@fukagawakurashi",
+          "account_name": "深川くらし｜清澄白河・門前仲町など江東区のマンションと地域の情報メディア",
+          "source_type": "",
+          "trust_level": "candidate",
+          "reasons": [
+            "schedule_post_with_bon_context"
+          ],
+          "recommended_action": "find_independent_confirmation"
+        },
+        "date_hints": [
+          "7/18"
+        ],
+        "voice": {
+          "source": "x_proactive",
+          "account": "@fukagawakurashi",
+          "name": "深川くらし｜清澄白河・門前仲町など江東区のマンションと地域の情報メディア",
+          "title": "",
+          "text": "🏮深川の夏祭り2026🏮\n【森下二丁目盆踊り大会】\n7/18（土）19（日）開催｜森下公園 \n\nhttps://t.co/N0suoZrzQT",
+          "url": "https://x.com/fukagawakurashi/status/2078268065247301793",
+          "date": "2026-07-17T23:58:13+00:00",
+          "tweet_id": "2078268065247301793",
+          "tags": [
+            "🔎能動検索",
+            "森下公園"
+          ]
+        },
+        "lane": "lane3_user_review"
+      }
+    ]
+  }
+}

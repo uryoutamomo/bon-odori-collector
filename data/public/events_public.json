@@ -15684,7 +15684,7 @@
     ],
     "songs": [],
     "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
+    "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -15705,7 +15705,7 @@
     "last_seen_dates": [
       "2025-07-29"
     ],
-    "display_tier": "historical_slide",
+    "display_tier": "historical_reference",
     "historical_reference": {
       "display_tier": "historical_reference",
       "last_seen_year": 2025,
