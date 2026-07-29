@@ -1,0 +1,34 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-07-29T12:30:00+09:00",
+  "source": {
+    "report_id": "x_poster_second_wave_urgent_2026",
+    "title": "木根川町会・田園調布南町会：2026年盆踊り告知",
+    "account_key": "現地設営者のX投稿および地域団体のイベント一覧",
+    "raw_text": "木根川町会ふれあい盆踊り: 現地設営者のX投稿 https://x.com/MINEZO14/status/2081165292051534058 は7月31日・8月1日を明記。地域情報サイト「ウワサの葛飾」 https://katsushika.uwasa-no.com/2026/07/21/bomdaice2026-2/ は7月31日のみと記載。一次に近い現地投稿を優先して2日間として扱う。田園調布南町会 夏祭り ダンス＆子供盆踊り大会: 大田区商店街連合会のおーたふる https://otakushoren.com/event/163825 の2026盆踊り情報で正式名称と密蔵院会場を確認。",
+    "url": "https://katsushika.uwasa-no.com/2026/07/21/bomdaice2026-2/",
+    "notice_kind": "third_party_current_year"
+  },
+  "events": [
+    {
+      "action": "register_new",
+      "event_name_hint": "木根川町会ふれあい盆踊り",
+      "series_name": "木根川町会ふれあい盆踊り",
+      "event_year": 2026,
+      "venue": {"name": "木根川中央公園", "area": "葛飾区", "address": "東京都葛飾区東四つ木3-47-1"},
+      "date_start": "2026-07-31",
+      "date_end": "2026-08-01",
+      "detail_addendum": "現地で設営している方の投稿では7月31日・8月1日の2日間開催。地域情報サイト「ウワサの葛飾」では7月31日のみの記載。画像のテントに「木根川町会」とあり、地域情報サイト表記と合わせてイベント名を確認。"
+    },
+    {
+      "action": "register_new",
+      "event_name_hint": "田園調布南町会 夏祭り ダンス＆子供盆踊り大会",
+      "series_name": "田園調布南町会 夏祭り ダンス＆子供盆踊り大会",
+      "event_year": 2026,
+      "venue": {"name": "密蔵院", "area": "大田区"},
+      "date_start": "2026-08-01",
+      "detail_addendum": "大田区商店街連合会「おーたふる」の2026盆踊り情報で正式名称と会場を確認。"
+    }
+  ],
+  "skipped_events": []
+}

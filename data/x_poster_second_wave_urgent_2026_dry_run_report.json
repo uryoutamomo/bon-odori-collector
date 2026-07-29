@@ -1,0 +1,129 @@
+{
+  "generated_by": "apply_official_notice_report.py",
+  "generated_at": "2026-07-29T03:30:26.573375+00:00",
+  "mode": "dry_run",
+  "sources": {
+    "master_db": "data/bon_odori_master.sqlite",
+    "report": "data/official_notice_reports/x_poster_second_wave_urgent_2026.json"
+  },
+  "outputs": {
+    "target_db": "data/x_poster_second_wave_urgent_2026_dry_run.sqlite",
+    "dry_run_db": "data/x_poster_second_wave_urgent_2026_dry_run.sqlite",
+    "backup_db": "",
+    "json": "data/x_poster_second_wave_urgent_2026_dry_run_report.json",
+    "markdown": "data/x_poster_second_wave_urgent_2026_dry_run_report.md"
+  },
+  "options": {
+    "apply": false
+  },
+  "write_guard": {
+    "db_committed": true,
+    "rolled_back": false,
+    "rollback_reason": ""
+  },
+  "summary": {
+    "issues_count": 0,
+    "issues_by_severity": {},
+    "audit_issues_by_severity": {},
+    "table_counts": {
+      "event_investigation_tasks": 79,
+      "event_occurrences": 267,
+      "event_series": 255,
+      "event_series_aliases": 23,
+      "evidence_items": 31308,
+      "external_record_links": 2654,
+      "historical_promotion_candidates": 16,
+      "master_meta": 0,
+      "notion_sync_jobs": 0,
+      "observed_occurrence_songs": 30883,
+      "observed_occurrences": 2164,
+      "occurrence_dates": 316,
+      "occurrence_evidence_links": 120,
+      "occurrence_song_evidence_links": 1008,
+      "occurrence_songs": 820,
+      "predicted_occurrence_dates": 14,
+      "review_inbox_items": 422,
+      "schema_migrations": 4,
+      "song_aliases": 141,
+      "songs": 394,
+      "venue_aliases": 314,
+      "venues": 254,
+      "write_batches": 0
+    }
+  },
+  "report": {
+    "report_type": "official_notice",
+    "reported_at": "2026-07-29T12:30:00+09:00",
+    "source": {
+      "report_id": "x_poster_second_wave_urgent_2026",
+      "title": "木根川町会・田園調布南町会：2026年盆踊り告知",
+      "account_key": "現地設営者のX投稿および地域団体のイベント一覧",
+      "raw_text": "木根川町会ふれあい盆踊り: 現地設営者のX投稿 https://x.com/MINEZO14/status/2081165292051534058 は7月31日・8月1日を明記。地域情報サイト「ウワサの葛飾」 https://katsushika.uwasa-no.com/2026/07/21/bomdaice2026-2/ は7月31日のみと記載。一次に近い現地投稿を優先して2日間として扱う。田園調布南町会 夏祭り ダンス＆子供盆踊り大会: 大田区商店街連合会のおーたふる https://otakushoren.com/event/163825 の2026盆踊り情報で正式名称と密蔵院会場を確認。",
+      "url": "https://katsushika.uwasa-no.com/2026/07/21/bomdaice2026-2/",
+      "notice_kind": "third_party_current_year"
+    },
+    "events": [
+      {
+        "action": "register_new",
+        "event_name_hint": "木根川町会ふれあい盆踊り",
+        "series_name": "木根川町会ふれあい盆踊り",
+        "event_year": 2026,
+        "venue": {
+          "name": "木根川中央公園",
+          "area": "葛飾区",
+          "address": "東京都葛飾区東四つ木3-47-1"
+        },
+        "date_start": "2026-07-31",
+        "date_end": "2026-08-01",
+        "detail_addendum": "現地で設営している方の投稿では7月31日・8月1日の2日間開催。地域情報サイト「ウワサの葛飾」では7月31日のみの記載。画像のテントに「木根川町会」とあり、地域情報サイト表記と合わせてイベント名を確認。"
+      },
+      {
+        "action": "register_new",
+        "event_name_hint": "田園調布南町会 夏祭り ダンス＆子供盆踊り大会",
+        "series_name": "田園調布南町会 夏祭り ダンス＆子供盆踊り大会",
+        "event_year": 2026,
+        "venue": {
+          "name": "密蔵院",
+          "area": "大田区"
+        },
+        "date_start": "2026-08-01",
+        "detail_addendum": "大田区商店街連合会「おーたふる」の2026盆踊り情報で正式名称と会場を確認。"
+      }
+    ],
+    "skipped_events": []
+  },
+  "applied": {
+    "resolved": true,
+    "evidence_id": "ev_423b50873ee1155c",
+    "events_applied": [
+      {
+        "action": "register_new",
+        "occurrence_id": "occ_4708707c25bc756e",
+        "venue_id": "venue_b9794eb483436024",
+        "venue_status": "created",
+        "occurrence_created": true,
+        "songs_applied": []
+      },
+      {
+        "action": "register_new",
+        "occurrence_id": "occ_c16c5668570292e3",
+        "venue_id": "venue_31a518a091e7df87",
+        "venue_status": "created",
+        "occurrence_created": true,
+        "songs_applied": []
+      }
+    ],
+    "events_unresolved": [],
+    "skipped_events": []
+  },
+  "issues": [],
+  "audit": {
+    "issue_count": 0,
+    "issues_by_severity": {},
+    "issues_by_type": {}
+  },
+  "public_json_write": {
+    "enabled": false,
+    "policy": "Run export_public_events.py and the site deploy separately, on Uchida-san's schedule."
+  }
+}
