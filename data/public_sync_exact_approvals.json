@@ -586,6 +586,20 @@
       "reason": "2026-07-29、Xポスターキュー2,214件の投稿本文からことが抽出・判定し、内田さん承認のうえ master RDB へ新規登録。出典はdetailに記録したX投稿。画像OCRは使わず本文の明示情報のみ。"
     },
     {
+      "id": "reviewed-addition-20260729-32fce5a58852",
+      "kind": "addition",
+      "event_key": "田園調布南町会 夏祭り ダンス＆子供盆踊り大会||密蔵院",
+      "collector_sha256": "32fce5a58852349b65b9dbef6630e8abf24f5e64fa301eb9778eb9d621edd7be",
+      "reason": "2026-07-29、Xポスターキューの投稿本文からことが判定し、会場は大田区商店街連合会の地域情報サイトで裏取り。内田さん承認のうえ master RDB へ新規登録。"
+    },
+    {
+      "id": "reviewed-addition-20260729-f8fddff7e228",
+      "kind": "addition",
+      "event_key": "木根川町会ふれあい盆踊り||木根川中央公園",
+      "collector_sha256": "f8fddff7e2285755296609c493798c94b2d5d29e7ed2261c85dcc748fdb987be",
+      "reason": "2026-07-29、Xポスターキューの投稿本文からことが判定し、会場は地域情報サイトで裏取り。内田さん承認のうえ master RDB へ新規登録。現地設営者の投稿は7/31-8/1の2日間、地域情報サイトは7/31のみと記載する日付差をdetailに両論併記し、一次に近い現地投稿を優先。"
+    },
+    {
       "id": "reviewed-removal-20260729-01",
       "kind": "removal",
       "event_key": "盆踊り大会||木場二丁目公園",

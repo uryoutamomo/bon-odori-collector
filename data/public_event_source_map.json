@@ -1,8 +1,8 @@
 {
   "generated_by": "export_public_events.py",
   "scope": "internal_public_event_source_map",
-  "public_event_count": 214,
-  "mapped_count": 214,
+  "public_event_count": 216,
+  "mapped_count": 216,
   "rows": [
     {
       "public_event_key": "秋葉原東部納涼大会|和泉小学校校庭・和泉公園|2026-07-31|2026-08-01",
@@ -1697,6 +1697,18 @@
       "venue_id": "ven_f52565382832b594"
     },
     {
+      "public_event_key": "田園調布南町会 夏祭り ダンス＆子供盆踊り大会|密蔵院|2026-08-01|2026-08-01",
+      "name": "田園調布南町会 夏祭り ダンス＆子供盆踊り大会",
+      "venue": "密蔵院",
+      "date": "2026-08-01",
+      "date_end": "2026-08-01",
+      "source": "master_rdb",
+      "occurrence_id": "occ_c16c5668570292e3",
+      "series_id": "series_6d2a25d37ec4fa45",
+      "event_year": 2026,
+      "venue_id": "venue_31a518a091e7df87"
+    },
+    {
       "public_event_key": "市野倉南町会 盆踊り|市野倉南児童公園|2025-08-02|",
       "name": "市野倉南町会 盆踊り",
       "venue": "市野倉南児童公園",
@@ -2523,6 +2535,18 @@
       "series_id": "ser_a274dbfdb737ab56",
       "event_year": 2026,
       "venue_id": "ven_6aaa47161ea61da7"
+    },
+    {
+      "public_event_key": "木根川町会ふれあい盆踊り|木根川中央公園|2026-07-31|2026-08-01",
+      "name": "木根川町会ふれあい盆踊り",
+      "venue": "木根川中央公園",
+      "date": "2026-07-31",
+      "date_end": "2026-08-01",
+      "source": "master_rdb",
+      "occurrence_id": "occ_4708707c25bc756e",
+      "series_id": "series_97a025303f616816",
+      "event_year": 2026,
+      "venue_id": "venue_b9794eb483436024"
     },
     {
       "public_event_key": "葛飾菖蒲まつり 水元公園会場 民踊パレード|水元公園内はなしょうぶ園口|2026-05-31|",

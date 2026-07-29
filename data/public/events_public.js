@@ -15961,6 +15961,61 @@ const EVENTS = [
     "historical_reference_score": 0.68
   },
   {
+    "name": "田園調布南町会 夏祭り ダンス＆子供盆踊り大会",
+    "name_confirmed": true,
+    "venue": "密蔵院",
+    "area": "大田区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": null,
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-01",
+    "date_end": "2026-08-01",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        1
+      ]
+    ],
+    "jun": {
+      "8": "上旬"
+    },
+    "description": null,
+    "detail": "大田区商店街連合会「おーたふる」の2026盆踊り情報で正式名称と会場を確認。",
+    "source_urls": [],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-01",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-01",
+      "2026-08-01"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
     "name": "市野倉南町会 盆踊り",
     "name_confirmed": true,
     "venue": "市野倉南児童公園",
@@ -23119,6 +23174,66 @@ const EVENTS = [
     "predicted_date_end": "2026-08-30",
     "prediction_basis": "2025年実績の同月第5日曜を2026年へスライド",
     "prediction_confidence": "medium"
+  },
+  {
+    "name": "木根川町会ふれあい盆踊り",
+    "name_confirmed": true,
+    "venue": "木根川中央公園",
+    "area": "葛飾区",
+    "months": [
+      7
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都葛飾区東四つ木3-47-1",
+    "lat": null,
+    "lng": null,
+    "date": "2026-07-31",
+    "date_end": "2026-08-01",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        7,
+        31
+      ],
+      [
+        8,
+        1
+      ]
+    ],
+    "jun": {
+      "7": "下旬",
+      "8": "上旬"
+    },
+    "description": null,
+    "detail": "現地で設営している方の投稿では7月31日・8月1日の2日間開催。地域情報サイト「ウワサの葛飾」では7月31日のみの記載。画像のテントに「木根川町会」とあり、地域情報サイト表記と合わせてイベント名を確認。",
+    "source_urls": [],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-07-31〜2026-08-01",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-07-31",
+      "2026-08-01"
+    ],
+    "display_tier": "confirmed"
   },
   {
     "name": "葛飾菖蒲まつり 水元公園会場 民踊パレード",
