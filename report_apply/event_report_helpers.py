@@ -186,12 +186,15 @@ def ensure_series_and_occurrence(
         if not existing_series:
             raise ValueError(f"series_id_override not found: {series_id_override}")
         series_id = series_id_override
+        series_created = False
     else:
         existing_series = _rows(conn, "SELECT series_id FROM event_series WHERE series_key = ?", (series_key,))
         if existing_series:
             series_id = existing_series[0]["series_id"]
+            series_created = False
         else:
             series_id = stable_id("series", series_key)
+            series_created = True
             conn.execute(
                 """
                 INSERT INTO event_series (
@@ -267,7 +270,7 @@ def ensure_series_and_occurrence(
         """,
         (date_id, occurrence_id, date_start, date_end or date_start, date_basis_note or "", now),
     )
-    return {"series_id": series_id, "occurrence_id": occurrence_id, "occurrence_created": created}
+    return {"series_id": series_id, "series_created": series_created, "occurrence_id": occurrence_id, "occurrence_created": created}
 
 
 def confirm_occurrence_schedule_venue(

@@ -68,7 +68,7 @@ def validate_report(report):
         errors.append("events must be a non-empty list")
     for index, event in enumerate(events):
         action = event.get("action")
-        if action not in ("confirm_existing", "register_new", "rename_series_and_register_new"):
+        if action not in ("confirm_existing", "register_new", "add_occurrence_to_existing_series", "rename_series_and_register_new"):
             errors.append(f"event[{index}]: invalid action {action!r}")
             continue
         if action == "confirm_existing":
@@ -83,9 +83,9 @@ def validate_report(report):
         else:
             for field in ("source_occurrence_id", "event_name_hint", "event_year", "date_start"):
                 if not event.get(field):
-                    errors.append(f"event[{index}]: rename_series_and_register_new missing required field: {field}")
+                    errors.append(f"event[{index}]: {action} missing required field: {field}")
             if not (event.get("venue") or {}).get("name"):
-                errors.append(f"event[{index}]: rename_series_and_register_new requires venue.name")
+                errors.append(f"event[{index}]: {action} requires venue.name")
         songs = event.get("songs", [])
         if not isinstance(songs, list) or any(not isinstance(s, dict) or not s.get("title") for s in songs):
             errors.append(f"event[{index}]: songs must be a list of {{title: str, uncertain?: bool}}")
@@ -121,14 +121,7 @@ def _resolve_confirm_target(conn, index, event):
     return None, [{"severity": "medium", "issue_type": issue_type, "event_index": index, "candidates": candidates}]
 
 
-def _rename_series(conn, index, event, now):
-    """Rename one existing series while retaining its former label as an alias.
-
-    A correction to an event's canonical name must not manufacture a second
-    series just because the current-year occurrence has a better name.  The
-    series key remains stable; the prior canonical label is retained as a
-    searchable manual alias.
-    """
+def _resolve_source_series(conn, index, event):
     source_occurrence_id = event["source_occurrence_id"]
     source_rows = rows(
         conn,
@@ -142,9 +135,22 @@ def _rename_series(conn, index, event, now):
     )
     if not source_rows:
         return None, [{"severity": "medium", "issue_type": "occurrence_id_not_found", "event_index": index, "occurrence_id": source_occurrence_id}]
+    return source_rows[0], []
 
-    series_id = source_rows[0]["series_id"]
-    former_name = source_rows[0]["canonical_name"]
+
+def _rename_series(conn, index, event, now):
+    """Rename one existing series while retaining its former label as an alias.
+
+    A correction to an event's canonical name must not manufacture a second
+    series just because the current-year occurrence has a better name.  The
+    series key remains stable; the prior canonical label is retained as a
+    searchable manual alias.
+    """
+    source_series, issues = _resolve_source_series(conn, index, event)
+    if source_series is None:
+        return None, issues
+    series_id = source_series["series_id"]
+    former_name = source_series["canonical_name"]
     new_name = event["event_name_hint"]
     new_normalized = normalize_text(new_name)
     conflicts = rows(
@@ -236,6 +242,22 @@ def apply_one_event(conn, index, event, shared_evidence_id, default_notice_kind,
             applied_event["rename"] = rename_result
         return applied_event, registration_issues
 
+    if action == "add_occurrence_to_existing_series":
+        source_series, issues = _resolve_source_series(conn, index, event)
+        if source_series is None:
+            return None, issues
+        event = {
+            **event,
+            "action": "register_new",
+            "series_name": source_series["canonical_name"],
+            "series_id_override": source_series["series_id"],
+        }
+        applied_event, registration_issues = apply_one_event(conn, index, event, shared_evidence_id, default_notice_kind, now)
+        if applied_event is not None:
+            applied_event["action"] = "add_occurrence_to_existing_series"
+            applied_event["source_occurrence_id"] = event["source_occurrence_id"]
+        return applied_event, registration_issues
+
     # register_new
     venue_hint = (event.get("venue") or {}).get("name")
     own_series_key = normalize_text(event.get("series_name") or event["event_name_hint"])
@@ -269,6 +291,8 @@ def apply_one_event(conn, index, event, shared_evidence_id, default_notice_kind,
         "venue_id": venue_result["venue_id"],
         "venue_status": venue_result["status"],
         "occurrence_created": series_result["occurrence_created"],
+        "series_id": series_result["series_id"],
+        "series_created": series_result["series_created"],
         "songs_applied": songs_applied,
     }, []
 
