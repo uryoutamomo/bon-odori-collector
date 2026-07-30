@@ -1,8 +1,8 @@
 {
   "generated_by": "export_public_events.py",
   "scope": "internal_public_event_source_map",
-  "public_event_count": 218,
-  "mapped_count": 218,
+  "public_event_count": 220,
+  "mapped_count": 220,
   "rows": [
     {
       "public_event_key": "かがやき納涼会＆盆踊り|かがやきプラザ1階ひだまりホール|2026-08-22|2026-08-22",
@@ -567,6 +567,18 @@
       "series_id": "ser_950e65dc32a01a0d",
       "event_year": 2025,
       "venue_id": "ven_4714935c4fd2146e"
+    },
+    {
+      "public_event_key": "あけぼのばし商店街 盆踊り大会|あけぼのばし通り|2026-08-01|2026-08-02",
+      "name": "あけぼのばし商店街 盆踊り大会",
+      "venue": "あけぼのばし通り",
+      "date": "2026-08-01",
+      "date_end": "2026-08-02",
+      "source": "master_rdb",
+      "occurrence_id": "occ_e8620bf44ec7bd81",
+      "series_id": "series_8843c4261754a7c0",
+      "event_year": 2026,
+      "venue_id": "venue_be552efb8c87e270"
     },
     {
       "public_event_key": "神楽坂夏まつり 盆踊り in 神楽坂|りそな銀行神楽坂支店前|2026-07-19|2026-07-20",
@@ -1707,6 +1719,18 @@
       "series_id": "ser_fbebdcc9872e90df",
       "event_year": 2025,
       "venue_id": "ven_9a9a0f1c2bfead14"
+    },
+    {
+      "public_event_key": "仲六郷一丁目町会 納涼会|大田区シルバー人材センター前|2026-08-01|2026-08-01",
+      "name": "仲六郷一丁目町会 納涼会",
+      "venue": "大田区シルバー人材センター前",
+      "date": "2026-08-01",
+      "date_end": "2026-08-01",
+      "source": "master_rdb",
+      "occurrence_id": "occ_17eabcbe2b6ba4ea",
+      "series_id": "series_62fc7a282c40f31b",
+      "event_year": 2026,
+      "venue_id": "venue_b79698d26e45ac8d"
     },
     {
       "public_event_key": "北糀谷町会 「納涼踊り大会」|子安八幡神社|2025-07-24|",

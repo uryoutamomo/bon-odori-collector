@@ -5477,6 +5477,65 @@ const EVENTS = [
     "prediction_confidence": "medium"
   },
   {
+    "name": "あけぼのばし商店街 盆踊り大会",
+    "name_confirmed": true,
+    "venue": "あけぼのばし通り",
+    "area": "新宿区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都新宿区住吉町",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-01",
+    "date_end": "2026-08-02",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        1
+      ],
+      [
+        8,
+        2
+      ]
+    ],
+    "jun": {
+      "8": "上旬"
+    },
+    "description": null,
+    "detail": "2026年8月1日・2日とも18:15開始。住吉町商工会（あけぼのばし商店街）主催の盆踊り大会。夏祭り全体は7月31日から8月2日まで。商店街公式の告知より。",
+    "source_urls": [],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-01〜2026-08-02",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-01",
+      "2026-08-02"
+    ],
+    "display_tier": "confirmed"
+  },
+  {
     "name": "神楽坂夏まつり 盆踊り in 神楽坂",
     "name_confirmed": true,
     "venue": "りそな銀行神楽坂支店前",
@@ -15685,7 +15744,7 @@ const EVENTS = [
     ],
     "songs": [],
     "current_event_state": "predicted",
-    "date_certainty_tier": "historical_slide",
+    "date_certainty_tier": "historical_reference",
     "public_status": "expected_medium",
     "public_category": "recurring_last_year",
     "public_status_label": "昨年開催",
@@ -15706,7 +15765,7 @@ const EVENTS = [
     "last_seen_dates": [
       "2025-07-29"
     ],
-    "display_tier": "historical_slide",
+    "display_tier": "historical_reference",
     "historical_reference": {
       "display_tier": "historical_reference",
       "last_seen_year": 2025,
@@ -15843,6 +15902,61 @@ const EVENTS = [
     "historical_reference_label": "2025-07-21実績・今年未確認",
     "historical_reference_confidence": "medium",
     "historical_reference_score": 0.68
+  },
+  {
+    "name": "仲六郷一丁目町会 納涼会",
+    "name_confirmed": true,
+    "venue": "大田区シルバー人材センター前",
+    "area": "大田区",
+    "months": [
+      8
+    ],
+    "scale": null,
+    "access": "蒲田駅から徒歩15分",
+    "address": "東京都大田区仲六郷1-6-9-125",
+    "lat": null,
+    "lng": null,
+    "date": "2026-08-01",
+    "date_end": "2026-08-01",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        8,
+        1
+      ]
+    ],
+    "jun": {
+      "8": "上旬"
+    },
+    "description": null,
+    "detail": "2026年8月1日17:00〜20:00、雨天中止。仲六郷一丁目町会主催。焼きそば、フランクフルト、飲み物などの模擬店あり。大田区商店街連合会の告知より。",
+    "source_urls": [],
+    "songs": [],
+    "current_event_state": "confirmed",
+    "date_certainty_tier": "confirmed",
+    "public_status": "upcoming_confirmed",
+    "public_category": "upcoming",
+    "public_status_label": "今後開催",
+    "public_note": "2026年日程確認済み: 2026-08-01",
+    "recurrence_label": "2026年確認済み",
+    "recurrence_score": 0.95,
+    "recurrence_reasons": [
+      "2026年日付確認済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-08-01",
+      "2026-08-01"
+    ],
+    "display_tier": "confirmed"
   },
   {
     "name": "北糀谷町会 「納涼踊り大会」",

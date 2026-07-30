@@ -668,6 +668,20 @@
       "event_key": "かがやき納涼会＆盆踊り||かがやきプラザ1階ひだまりホール",
       "collector_sha256": "fcdb5cc136fed0cdcf2bb2052b5a8ca2d3719eeeac69e5b509221e5785785ce6",
       "reason": "2026-07-29: 第2弾の新規登録。内田さんGO、ことレビュー済み。"
+    },
+    {
+      "id": "reviewed-third-wave-addition-ce6637454351",
+      "kind": "addition",
+      "event_key": "あけぼのばし商店街 盆踊り大会||あけぼのばし通り",
+      "collector_sha256": "ce6637454351e70cd8fdd571488ca6b42d8b825a3284226f0521ab9d60c4415b",
+      "reason": "2026-07-30: 商店街公式の2026年告知に基づく新規登録。内田さんGO、ことレビュー済み。"
+    },
+    {
+      "id": "reviewed-third-wave-addition-7e39e72dc7d",
+      "kind": "addition",
+      "event_key": "仲六郷一丁目町会 納涼会||大田区シルバー人材センター前",
+      "collector_sha256": "7e39e72dc7d8af0e5f59eff7c7041618278ae62982253bc5167d0bb1ee7bbdfe",
+      "reason": "2026-07-30: 大田区商店街連合会の2026年告知に基づく新規登録。内田さんGO、ことレビュー済み。"
     }
   ]
 }

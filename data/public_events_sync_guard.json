@@ -1,18 +1,18 @@
 {
   "generated_by": "guard_public_events_sync.py",
-  "generated_at": "2026-07-29T04:40:35.031210+00:00",
+  "generated_at": "2026-07-30T12:58:22.834566+00:00",
   "scope": "read_only_public_sync_guard_no_writes",
   "sources": {
-    "collector_events": "/Users/ryotauchida/bon-odori-first-wave/data/public/events_public.json",
+    "collector_events": "/Users/ryotauchida/bon-odori-public-third-wave/data/public/events_public.json",
     "site_events": "/Users/ryotauchida/bon-odori-site/data/events_public.json",
-    "fixed_date_rules": "/Users/ryotauchida/bon-odori-first-wave/data/public_fixed_date_rules.json",
-    "master_db": "/Users/ryotauchida/bon-odori-first-wave/data/bon_odori_master.sqlite",
-    "publication_gap_review": "/Users/ryotauchida/bon-odori-first-wave/data/publication_gap_review.json",
-    "reviewed_approvals": "/Users/ryotauchida/bon-odori-first-wave/data/public_sync_exact_approvals.json"
+    "fixed_date_rules": "/Users/ryotauchida/bon-odori-public-third-wave/data/public_fixed_date_rules.json",
+    "master_db": "/Users/ryotauchida/bon-odori-public-third-wave/data/bon_odori_master.sqlite",
+    "publication_gap_review": "/Users/ryotauchida/bon-odori-public-third-wave/data/publication_gap_review.json",
+    "reviewed_approvals": "/Users/ryotauchida/bon-odori-public-third-wave/data/public_sync_exact_approvals.json"
   },
   "parameters": {
     "target_year": 2026,
-    "today": "2026-07-29",
+    "today": "2026-07-30",
     "allow_individual_review": false
   },
   "decision": {
@@ -25,22 +25,22 @@
   },
   "procedure_warnings": [],
   "raw_classification": {
-    "collector_event_count": 218,
+    "collector_event_count": 220,
     "site_event_count": 203,
-    "collector_only_count": 42,
+    "collector_only_count": 44,
     "site_only_count": 27,
-    "high_risk_diff_record_count": 142,
+    "high_risk_diff_record_count": 143,
     "high_risk_event_count": 14,
     "records_by_family": {
       "detail": 8,
-      "historical_slide": 57,
+      "historical_slide": 58,
       "historical_reference": 39,
       "date_prediction": 26,
       "source": 2,
       "season_hint": 10
     },
     "records_by_action": {
-      "individual_review": 35,
+      "individual_review": 36,
       "restore_collector_from_site_or_reenable_export_postprocess": 91,
       "low_priority_or_unclassified": 16
     },
@@ -50,9 +50,9 @@
     }
   },
   "postprocessed_classification": {
-    "collector_event_count": 218,
+    "collector_event_count": 220,
     "site_event_count": 203,
-    "collector_only_count": 42,
+    "collector_only_count": 44,
     "site_only_count": 27,
     "high_risk_diff_record_count": 143,
     "high_risk_event_count": 14,
@@ -77,11 +77,11 @@
   "reviewed_exact_approvals": {
     "schema": "public_sync_exact_approvals_v1",
     "status": "pass",
-    "approval_count": 84,
+    "approval_count": 86,
     "status_counts": {
       "already_synced": 23,
       "inactive": 6,
-      "applied": 55
+      "applied": 57
     },
     "failure_count": 0,
     "results": [
@@ -753,12 +753,26 @@
         "event_key": "かがやき納涼会＆盆踊り||かがやきプラザ1階ひだまりホール",
         "actual_collector_sha256": "fcdb5cc136fed0cdcf2bb2052b5a8ca2d3719eeeac69e5b509221e5785785ce6",
         "status": "applied"
+      },
+      {
+        "id": "reviewed-third-wave-addition-ce6637454351",
+        "kind": "addition",
+        "event_key": "あけぼのばし商店街 盆踊り大会||あけぼのばし通り",
+        "actual_collector_sha256": "ce6637454351e70cd8fdd571488ca6b42d8b825a3284226f0521ab9d60c4415b",
+        "status": "applied"
+      },
+      {
+        "id": "reviewed-third-wave-addition-7e39e72dc7d",
+        "kind": "addition",
+        "event_key": "仲六郷一丁目町会 納涼会||大田区シルバー人材センター前",
+        "actual_collector_sha256": "7e39e72dc7d8af0e5f59eff7c7041618278ae62982253bc5167d0bb1ee7bbdfe",
+        "status": "applied"
       }
     ]
   },
   "approved_classification": {
-    "collector_event_count": 218,
-    "site_event_count": 218,
+    "collector_event_count": 220,
+    "site_event_count": 220,
     "collector_only_count": 0,
     "site_only_count": 0,
     "high_risk_diff_record_count": 22,
