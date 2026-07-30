@@ -115,6 +115,37 @@ jobs:
           --report-out "$RUNNER_TEMP/event-state-axes-rend.json"
         echo "ran=true" >> "$GITHUB_OUTPUT"
 
+    - name: Transition ended confirmed occurrences
+      id: ended_occurrences
+      if: ${{ vars.EVENT_STATE_AXES_ENABLED == 'true' && vars.MASTER_DB_S3_BUCKET != '' }}
+      env:
+        MASTER_DB_S3_BUCKET: ${{ vars.MASTER_DB_S3_BUCKET }}
+        MASTER_DB_S3_PREFIX: ${{ vars.MASTER_DB_S3_PREFIX || 'master-rdb' }}
+        AWS_REGION: ap-northeast-1
+      run: |
+        TODAY="$(TZ=Asia/Tokyo date +%F)"
+        RSTART="$(python -c 'import json; print(json.load(open("data/bon_odori_master_manifest.json"))["database_checksum"])')"
+        python transition_ended_occurrences.py \
+          --db data/bon_odori_master.sqlite \
+          --as-of-date "$TODAY" \
+          --apply \
+          --confirm 'TRANSITION ENDED OCCURRENCES' \
+          --report-out "$RUNNER_TEMP/ended-occurrence-transition.json"
+        COUNT="$(python -c 'import json, sys; print(json.load(open(sys.argv[1]))["count"])' "$RUNNER_TEMP/ended-occurrence-transition.json")"
+        if [ "$COUNT" -gt 0 ]; then
+          python audit_master_rdb.py \
+            --out-json "$RUNNER_TEMP/ended-occurrence-audit.json" \
+            --out-md "$RUNNER_TEMP/ended-occurrence-audit.md"
+          python master_db_s3_artifact.py publish \
+            --expect-remote-checksum "$RSTART" \
+            --snapshot-id "ended-occurrences-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          python master_db_s3_artifact.py fetch --overwrite
+          echo "published=true" >> "$GITHUB_OUTPUT"
+        else
+          echo "[ended-occurrences] no completed confirmed occurrences to transition"
+          echo "published=false" >> "$GITHUB_OUTPUT"
+        fi
+
     - name: Upload event-state axes evidence
       if: ${{ always() && vars.EVENT_STATE_AXES_ENABLED == 'true' && vars.MASTER_DB_S3_BUCKET != '' }}
       uses: actions/upload-artifact@v4
@@ -125,6 +156,9 @@ jobs:
           ${{ runner.temp }}/event-state-axes-audit.json
           ${{ runner.temp }}/event-state-axes-audit.md
           ${{ runner.temp }}/event-state-axes-rend.json
+          ${{ runner.temp }}/ended-occurrence-transition.json
+          ${{ runner.temp }}/ended-occurrence-audit.json
+          ${{ runner.temp }}/ended-occurrence-audit.md
         if-no-files-found: error
         retention-days: 30
 
