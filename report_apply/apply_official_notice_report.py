@@ -287,12 +287,12 @@ def apply_one_event(conn, index, event, shared_evidence_id, default_notice_kind,
     songs_applied = _apply_songs(conn, series_result["occurrence_id"], event, shared_evidence_id, now)
     return {
         "action": "register_new",
+        "series_id": series_result["series_id"],
+        "series_created": series_result["series_created"],
         "occurrence_id": series_result["occurrence_id"],
         "venue_id": venue_result["venue_id"],
         "venue_status": venue_result["status"],
         "occurrence_created": series_result["occurrence_created"],
-        "series_id": series_result["series_id"],
-        "series_created": series_result["series_created"],
         "songs_applied": songs_applied,
     }, []
 
@@ -380,7 +380,15 @@ def render_markdown(result):
         "",
     ]
     for entry in applied.get("events_applied", []):
-        lines.append(f"- {entry['action']} {entry['occurrence_id']} (songs: {len(entry.get('songs_applied', []))})")
+        metadata = []
+        if entry["action"] == "register_new":
+            metadata.extend([
+                f"series_id: `{entry['series_id']}`",
+                f"series_created: {entry['series_created']}",
+                f"venue_status: {entry['venue_status']}",
+            ])
+        suffix = f"; {', '.join(metadata)}" if metadata else ""
+        lines.append(f"- {entry['action']} {entry['occurrence_id']} (songs: {len(entry.get('songs_applied', []))}{suffix})")
     if applied.get("events_unresolved"):
         lines += ["", "## Unresolved events (not written; see issues below)", ""]
         for index in applied["events_unresolved"]:

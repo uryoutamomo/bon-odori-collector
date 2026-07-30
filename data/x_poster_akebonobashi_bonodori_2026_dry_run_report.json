@@ -1,0 +1,111 @@
+{
+  "generated_by": "apply_official_notice_report.py",
+  "generated_at": "2026-07-30T10:22:10.294347+00:00",
+  "mode": "dry_run",
+  "sources": {
+    "master_db": "/Users/ryotauchida/bon-odori-collector/data/bon_odori_master.sqlite",
+    "report": "data/official_notice_reports/x_poster_akebonobashi_bonodori_2026.json"
+  },
+  "outputs": {
+    "target_db": "data/x_poster_akebonobashi_bonodori_2026_dry_run.sqlite",
+    "dry_run_db": "data/x_poster_akebonobashi_bonodori_2026_dry_run.sqlite",
+    "backup_db": "",
+    "json": "data/x_poster_akebonobashi_bonodori_2026_dry_run_report.json",
+    "markdown": "data/x_poster_akebonobashi_bonodori_2026_dry_run_report.md"
+  },
+  "options": {
+    "apply": false
+  },
+  "write_guard": {
+    "db_committed": true,
+    "rolled_back": false,
+    "rollback_reason": ""
+  },
+  "summary": {
+    "issues_count": 0,
+    "issues_by_severity": {},
+    "audit_issues_by_severity": {},
+    "table_counts": {
+      "event_investigation_tasks": 79,
+      "event_occurrences": 255,
+      "event_series": 243,
+      "event_series_aliases": 23,
+      "evidence_items": 31307,
+      "external_record_links": 2654,
+      "historical_promotion_candidates": 16,
+      "master_meta": 0,
+      "notion_sync_jobs": 0,
+      "observed_occurrence_songs": 30883,
+      "observed_occurrences": 2164,
+      "occurrence_dates": 304,
+      "occurrence_evidence_links": 108,
+      "occurrence_song_evidence_links": 1008,
+      "occurrence_songs": 820,
+      "predicted_occurrence_dates": 14,
+      "review_inbox_items": 422,
+      "schema_migrations": 4,
+      "song_aliases": 141,
+      "songs": 394,
+      "venue_aliases": 302,
+      "venues": 242,
+      "write_batches": 0
+    }
+  },
+  "report": {
+    "report_type": "official_notice",
+    "reported_at": "2026-07-30T19:30:00+09:00",
+    "source": {
+      "report_id": "x_poster_akebonobashi_bonodori_2026",
+      "title": "あけぼのばし商店街 2026年夏祭りの盆踊り大会告知",
+      "account_key": "住吉町商工会（あけぼのばし商店街）",
+      "raw_text": "2026年 住吉町(新宿区)・あけぼのばし商店街 夏祭り 7月31日〜2日。スケジュール：8月1日(土) 10:00 三町連合渡御子ども神輿・山車（住吉町出発）、18:15 盆踊り大会。8月2日(日) 11:00 子ども神輿・山車（住吉町内）、13:00 三町連合渡御大人神輿（12:40集合）、18:15 盆踊り大会。主催：住吉町町会祭典委員会。盆踊り大会主催：住吉町商工会（あけぼのばし商店街）。",
+      "url": "https://akebonobashi.info/2026%E5%B9%B4-%E4%BD%8F%E5%90%89%E7%94%BA%E6%96%B0%E5%AE%BF%E5%8C%BA%E3%83%BB%E3%81%82%E3%81%91%E3%81%BC%E3%81%AE%E3%81%B0%E3%81%97%E5%95%86%E5%BA%97%E8%A1%97-%E5%A4%8F%E7%A5%AD%E3%82%8A-7%E6%9C%883/",
+      "notice_kind": "official_current_year"
+    },
+    "events": [
+      {
+        "action": "register_new",
+        "event_name_hint": "あけぼのばし商店街 盆踊り大会",
+        "series_name": "あけぼのばし商店街 盆踊り大会",
+        "event_year": 2026,
+        "date_start": "2026-08-01",
+        "date_end": "2026-08-02",
+        "venue": {
+          "name": "あけぼのばし通り",
+          "area": "新宿区",
+          "address": "東京都新宿区住吉町"
+        },
+        "detail_addendum": "2026年8月1日・2日とも18:15開始。住吉町商工会（あけぼのばし商店街）主催の盆踊り大会。夏祭り全体は7月31日から8月2日まで。商店街公式の告知より。",
+        "songs": []
+      }
+    ]
+  },
+  "applied": {
+    "resolved": true,
+    "evidence_id": "ev_de42d4f4ee7998bf",
+    "events_applied": [
+      {
+        "action": "register_new",
+        "series_id": "series_8843c4261754a7c0",
+        "series_created": true,
+        "occurrence_id": "occ_e8620bf44ec7bd81",
+        "venue_id": "venue_be552efb8c87e270",
+        "venue_status": "created",
+        "occurrence_created": true,
+        "songs_applied": []
+      }
+    ],
+    "events_unresolved": [],
+    "skipped_events": []
+  },
+  "issues": [],
+  "audit": {
+    "issue_count": 0,
+    "issues_by_severity": {},
+    "issues_by_type": {}
+  },
+  "public_json_write": {
+    "enabled": false,
+    "policy": "Run export_public_events.py and the site deploy separately, on Uchida-san's schedule."
+  }
+}
