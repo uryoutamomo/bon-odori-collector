@@ -1,8 +1,8 @@
 {
   "generated_by": "export_public_events.py",
   "scope": "internal_public_event_source_map",
-  "public_event_count": 220,
-  "mapped_count": 220,
+  "public_event_count": 221,
+  "mapped_count": 221,
   "rows": [
     {
       "public_event_key": "かがやき納涼会＆盆踊り|かがやきプラザ1階ひだまりホール|2026-08-22|2026-08-22",
@@ -123,6 +123,18 @@
       "series_id": "ser_128817ee1c8ca940",
       "event_year": 2026,
       "venue_id": "venue_b1da1cf34c4d1f5b"
+    },
+    {
+      "public_event_key": "佃島の盆踊り|佃まちかど展示館前|2026-07-13|2026-07-15",
+      "name": "佃島の盆踊り",
+      "venue": "佃まちかど展示館前",
+      "date": "2026-07-13",
+      "date_end": "2026-07-15",
+      "source": "master_rdb",
+      "occurrence_id": "occ_b0ac40639f5d2d5c",
+      "series_id": "ser_7573dc4558c4ee1d",
+      "event_year": 2026,
+      "venue_id": "venue_93adf5de340d86b7"
     },
     {
       "public_event_key": "入船三丁目町会納涼盆踊り|入船三丁目交差点|2026-08-24|2026-08-25",

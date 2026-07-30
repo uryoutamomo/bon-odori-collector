@@ -8,9 +8,10 @@ those, keeping the domain-specific vocabulary out of this module.
 """
 
 import sqlite3
+from datetime import date
 from difflib import SequenceMatcher
 
-from event_model.event_state_axes import axes_from_legacy_occurrence, update_occurrence_state_axes
+from event_model.event_state_axes import update_occurrence_state_axes
 from master_rdb.master_db import json_text, normalize_text, now_utc, stable_id
 
 
@@ -286,6 +287,7 @@ def confirm_occurrence_schedule_venue(
     source_kind=None,
     detail_addendum=None,
     date_basis_note=None,
+    as_of_date=None,
     now=None,
 ):
     """Confirm venue/date for an existing occurrence, or just append a detail note.
@@ -298,7 +300,11 @@ def confirm_occurrence_schedule_venue(
     (skipped if the exact text is already present).
     """
     now = now or now_utc()
-    row = _rows(conn, "SELECT detail FROM event_occurrences WHERE occurrence_id = ?", (occurrence_id,))
+    row = _rows(
+        conn,
+        "SELECT detail, current_event_state, date_start, date_end FROM event_occurrences WHERE occurrence_id = ?",
+        (occurrence_id,),
+    )
     if not row:
         raise ValueError(f"occurrence not found: {occurrence_id}")
     prior_detail = row[0]["detail"] or ""
@@ -330,22 +336,16 @@ def confirm_occurrence_schedule_venue(
             """,
             (venue_id, date_start, effective_date_end, date_status, lifecycle_status, confidence, source_kind, new_detail, now, occurrence_id),
         )
-        axes = axes_from_legacy_occurrence(
-            {
-                "event_year": str(date_start or "")[:4],
-                "date_start": date_start,
-                "date_status": date_status,
-                "lifecycle_status": lifecycle_status,
-                "source_kind": source_kind,
-                "source_url": "",
-            }
-        )
-        update_occurrence_state_axes(
-            conn,
-            occurrence_id,
-            axes["current_event_state"],
-            axes["date_certainty_tier"],
-        )
+        # A confirmed schedule that has already ended must not stay in the
+        # public "upcoming" category. Keep this decision at the shared
+        # report helper so report authors only provide factual dates.
+        schedule_end = effective_date_end if date_start is not None else (row[0]["date_end"] or row[0]["date_start"])
+        if schedule_end:
+            reference_date = date.fromisoformat(as_of_date) if as_of_date else date.today()
+            current_event_state = "ended" if date.fromisoformat(schedule_end) < reference_date else "confirmed"
+            update_occurrence_state_axes(conn, occurrence_id, current_event_state, "confirmed")
+            if row[0]["current_event_state"] != current_event_state:
+                changed_fields.append("current_event_state")
         if venue_id is not None:
             changed_fields.append("venue_id")
         if date_start is not None:

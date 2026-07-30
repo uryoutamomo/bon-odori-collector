@@ -1181,6 +1181,71 @@ const EVENTS = [
     "display_tier": "ended"
   },
   {
+    "name": "佃島の盆踊り",
+    "name_confirmed": true,
+    "venue": "佃まちかど展示館前",
+    "area": "中央区",
+    "months": [
+      7
+    ],
+    "scale": null,
+    "access": null,
+    "address": "東京都中央区佃一丁目",
+    "lat": null,
+    "lng": null,
+    "date": "2026-07-13",
+    "date_end": "2026-07-15",
+    "status": "確認済み",
+    "date_confidence": {
+      "level": "confirmed",
+      "label": "確認済み",
+      "description": "開催日として確認済みです"
+    },
+    "date_candidates": [],
+    "hints": [
+      [
+        7,
+        13
+      ],
+      [
+        7,
+        15
+      ]
+    ],
+    "jun": {
+      "7": "中旬"
+    },
+    "description": null,
+    "detail": "2026年7月13日〜15日18:00〜21:30（子どもは19:30まで）。中央区観光協会特派員ブログの2026年7月14日記事で、7月13日から実施中であることを確認。会場は佃1丁目中央通り・佃まちかど展示館前。東京都指定無形民俗文化財。",
+    "source_urls": [
+      {
+        "label": "公式告知あり",
+        "url": "https://www.chuo-kanko.or.jp/pages/other_details/115655",
+        "kind": "official"
+      }
+    ],
+    "songs": [],
+    "current_event_state": "ended",
+    "date_certainty_tier": "confirmed",
+    "public_status": "ended_2026",
+    "public_category": "ended",
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-07-13〜2026-07-15",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
+    "recurrence_reasons": [
+      "2026年開催済み"
+    ],
+    "recurrence_cautions": [],
+    "edition_number": null,
+    "last_seen_year": null,
+    "last_seen_dates": [
+      "2026-07-13",
+      "2026-07-15"
+    ],
+    "display_tier": "ended"
+  },
+  {
     "name": "入船三丁目町会納涼盆踊り",
     "name_confirmed": true,
     "venue": "入船三丁目交差点",
@@ -11160,14 +11225,14 @@ const EVENTS = [
     ],
     "current_event_state": "confirmed",
     "date_certainty_tier": "confirmed",
-    "public_status": "upcoming_confirmed",
+    "public_status": "ended_2026",
     "public_category": "upcoming",
-    "public_status_label": "今後開催",
-    "public_note": "2026年日程確認済み: 2026-07-29〜2026-07-30",
-    "recurrence_label": "2026年確認済み",
-    "recurrence_score": 0.95,
+    "public_status_label": "開催終了",
+    "public_note": "2026年開催終了: 2026-07-29〜2026-07-30",
+    "recurrence_label": "2026年開催終了",
+    "recurrence_score": 0.98,
     "recurrence_reasons": [
-      "2026年日付確認済み"
+      "2026年開催済み"
     ],
     "recurrence_cautions": [],
     "edition_number": null,

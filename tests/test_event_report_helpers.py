@@ -109,18 +109,54 @@ class EventReportHelpersTest(unittest.TestCase):
             date_start="2026-08-03",
             date_end="2026-08-05",
             source_kind="official_current_year",
+            as_of_date="2026-08-01",
         )
         self.assertIn("venue_id", result["changed_fields"])
         self.assertIn("date_start", result["changed_fields"])
+        self.assertIn("current_event_state", result["changed_fields"])
         row = self.conn.execute(
-            "SELECT venue_id, date_start, date_end, date_status, lifecycle_status, confidence, source_kind FROM event_occurrences WHERE occurrence_id = ?",
+            "SELECT venue_id, date_start, date_end, date_status, lifecycle_status, confidence, source_kind, current_event_state, date_certainty_tier FROM event_occurrences WHERE occurrence_id = ?",
             (self.occurrence_id,),
         ).fetchone()
         self.assertEqual(
-            tuple(row), (self.other_venue_id, "2026-08-03", "2026-08-05", "confirmed", "published", "high", "official_current_year")
+            tuple(row), (self.other_venue_id, "2026-08-03", "2026-08-05", "confirmed", "published", "high", "official_current_year", "confirmed", "confirmed")
         )
         date_count = self.conn.execute("SELECT COUNT(*) FROM occurrence_dates WHERE occurrence_id = ?", (self.occurrence_id,)).fetchone()[0]
         self.assertEqual(date_count, 1)
+
+    def test_confirm_occurrence_schedule_venue_marks_past_schedule_ended(self):
+        result = confirm_occurrence_schedule_venue(
+            self.conn, self.occurrence_id, date_start="2026-07-13", date_end="2026-07-15",
+            source_kind="official_current_year", as_of_date="2026-07-30",
+        )
+        self.assertIn("current_event_state", result["changed_fields"])
+        row = self.conn.execute(
+            "SELECT current_event_state, date_certainty_tier FROM event_occurrences WHERE occurrence_id = ?", (self.occurrence_id,)
+        ).fetchone()
+        self.assertEqual(tuple(row), ("ended", "confirmed"))
+
+    def test_confirm_occurrence_schedule_venue_uses_existing_date_for_venue_only_update(self):
+        self.conn.execute(
+            "UPDATE event_occurrences SET date_start='2026-07-13', date_end='2026-07-15' WHERE occurrence_id=?", (self.occurrence_id,)
+        )
+        result = confirm_occurrence_schedule_venue(
+            self.conn, self.occurrence_id, venue_id=self.other_venue_id, as_of_date="2026-07-30"
+        )
+        self.assertIn("current_event_state", result["changed_fields"])
+        row = self.conn.execute(
+            "SELECT current_event_state, date_certainty_tier FROM event_occurrences WHERE occurrence_id = ?", (self.occurrence_id,)
+        ).fetchone()
+        self.assertEqual(tuple(row), ("ended", "confirmed"))
+
+    def test_confirm_occurrence_schedule_venue_keeps_state_when_venue_only_update_has_no_dates(self):
+        result = confirm_occurrence_schedule_venue(
+            self.conn, self.occurrence_id, venue_id=self.other_venue_id, as_of_date="2026-07-30"
+        )
+        self.assertNotIn("current_event_state", result["changed_fields"])
+        row = self.conn.execute(
+            "SELECT current_event_state, date_certainty_tier FROM event_occurrences WHERE occurrence_id = ?", (self.occurrence_id,)
+        ).fetchone()
+        self.assertEqual(tuple(row), ("predicted", "historical_reference"))
 
     def test_ensure_series_and_occurrence_uses_given_source_kind(self):
         result = ensure_series_and_occurrence(

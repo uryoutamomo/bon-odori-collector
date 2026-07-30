@@ -1,8 +1,8 @@
 {
   "schema": "public_sync_exact_approvals_v1",
-  "reviewed_at": "2026-07-29",
-  "reviewed_by": "おと（Codex）・内田さんGO（過去改名24件の現行内容を再承認）",
-  "source": "docs/p0-review-20260721.md and explicit publish approval; 2026-07-24: series_id-based dedup fix (神田明神/渋谷盆踊り/浄土寺盆踊り/晴海ふ頭公園/下北沢盆踊り/新橋こいち祭/神楽坂まつり dupes resolved) plus same-day date-passed status transitions and expired historical-slide downgrades, reviewed field-by-field by こと / 2026-07-28: 改名24件のcollector側ハッシュを貼り直し、個別レビュー8件（終了4件・日付確定4件）を登録 / 2026-07-29: 木場二丁目公園の重複2件を統合し、生き残る側を実施団体名つき「木場二丁目町会 盆踊り大会」へ改名（key_replacement 1件・removal 1件、旧 same_key_update 1件を置換） / 2026-07-29: Xポスター本文由来の新規11件を addition として登録（詰まり問題の第1弾） / 2026-07-29: 内田さん明示GOにより、過去改名24件の現行collector hashを再承認（おと） / 2026-07-29: 第2弾の公開対象5件を内田さんGOによりexact approval登録（おと）",
+  "reviewed_at": "2026-07-31",
+  "reviewed_by": "おと（Codex）・内田さんGO（過去改名24件の現行内容を再承認、佃島の盆踊り公開反映）",
+  "source": "docs/p0-review-20260721.md and explicit publish approval; 2026-07-24: series_id-based dedup fix (神田明神/渋谷盆踊り/浄土寺盆踊り/晴海ふ頭公園/下北沢盆踊り/新橋こいち祭/神楽坂まつり dupes resolved) plus same-day date-passed status transitions and expired historical-slide downgrades, reviewed field-by-field by こと / 2026-07-28: 改名24件のcollector側ハッシュを貼り直し、個別レビュー8件（終了4件・日付確定4件）を登録 / 2026-07-29: 木場二丁目公園の重複2件を統合し、生き残る側を実施団体名つき「木場二丁目町会 盆踊り大会」へ改名（key_replacement 1件・removal 1件、旧 same_key_update 1件を置換） / 2026-07-29: Xポスター本文由来の新規11件を addition として登録（詰まり問題の第1弾） / 2026-07-29: 内田さん明示GOにより、過去改名24件の現行collector hashを再承認（おと） / 2026-07-29: 第2弾の公開対象5件を内田さんGOによりexact approval登録（おと） / 2026-07-31: 佃島の盆踊りの既存occurrenceを公式確認記事で更新し、内田さん明示GOにより公開追加をexact approval登録（おと）",
   "site_base_commit": "472d6b931991e66df6d18753d0f83e63a25328a3",
   "collector_data_commit": "164d952",
   "approvals": [
@@ -682,6 +682,13 @@
       "event_key": "仲六郷一丁目町会 納涼会||大田区シルバー人材センター前",
       "collector_sha256": "7e39e72dc7d8af0e5f59eff7c7041618278ae62982253bc5167d0bb1ee7bbdfe",
       "reason": "2026-07-30: 大田区商店街連合会の2026年告知に基づく新規登録。内田さんGO、ことレビュー済み。"
+    },
+    {
+      "id": "reviewed-tsukudajima-addition-f22c32bdbff8",
+      "kind": "addition",
+      "event_key": "佃島の盆踊り||佃まちかど展示館前",
+      "collector_sha256": "f22c32bdbff815aa9190410924e08ed512181cb528c1e6f21bc11bbb7a93c1e5",
+      "reason": "2026-07-31: 中央区観光協会特派員ブログの実施中記事で、佃1丁目中央通り・佃まちかど展示館前、7/13開始、18:00-21:30を確認。既存occurrenceを終了済みとして更新後、ことレビューと内田さん明示GOによりサイト公開追加を承認。"
     }
   ]
 }

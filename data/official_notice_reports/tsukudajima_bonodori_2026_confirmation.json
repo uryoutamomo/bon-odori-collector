@@ -1,0 +1,22 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-07-30T23:00:00+09:00",
+  "source": {
+    "report_id": "tsukudajima_bonodori_2026_confirmation",
+    "title": "佃の盆踊りが始まりましたよ（2026年7月14日）",
+    "account_key": "中央区観光協会特派員ブログ（よこやん）",
+    "raw_text": "2026年7月14日18時掲載。『江戸時代から続く、佃島の盆踊りが今年も7月13日（月）から始まりました』と実施中の様子を報告。場所は佃1丁目中央通り・佃まちかど展示館前。佃島の盆踊は7月13日（月）〜15日（水）、18:00〜21:30（子どもは19:30まで）と記載。",
+    "url": "https://tokuhain.chuo-kanko.or.jp/detail.php?id=7178",
+    "notice_kind": "official_current_year"
+  },
+  "events": [
+    {
+      "action": "confirm_existing",
+      "occurrence_id": "occ_b0ac40639f5d2d5c",
+      "date_start": "2026-07-13",
+      "date_end": "2026-07-15",
+      "venue": {"name": "佃まちかど展示館前", "area": "中央区", "address": "東京都中央区佃一丁目"},
+      "detail_addendum": "2026年7月13日〜15日18:00〜21:30（子どもは19:30まで）。中央区観光協会特派員ブログの2026年7月14日記事で、7月13日から実施中であることを確認。会場は佃1丁目中央通り・佃まちかど展示館前。東京都指定無形民俗文化財。"
+    }
+  ]
+}
