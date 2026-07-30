@@ -134,6 +134,9 @@ class ApplyOfficialNoticeReportTest(unittest.TestCase):
         self.assertEqual(len(result["applied"]["events_applied"]), 2)
         self.assertEqual(result["applied"]["events_unresolved"], [1])
         self.assertEqual(result["summary"]["issues_by_severity"], {"medium": 1})
+        registered = result["applied"]["events_applied"][1]
+        self.assertTrue(registered["series_created"])
+        self.assertEqual(registered["venue_status"], "created")
 
         conn = sqlite3.connect(self.db_path)
         row = conn.execute(

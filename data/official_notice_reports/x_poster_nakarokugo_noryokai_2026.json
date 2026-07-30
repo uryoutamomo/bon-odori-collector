@@ -1,0 +1,13 @@
+{
+  "report_type": "official_notice",
+  "reported_at": "2026-07-30T19:30:00+09:00",
+  "source": {
+    "report_id": "x_poster_nakarokugo_noryokai_2026",
+    "title": "仲六郷一丁目町会 納涼会（2026年）案内",
+    "account_key": "おーたふる 大田区商店街ナビ",
+    "raw_text": "仲六郷一丁目町会「納涼会」。日時：2026年8月1日(土) 17:00〜20:00、雨天中止。会場：大田区シルバー人材センター前。所在地：東京都大田区仲六郷1-6-9-125。交通：JR京浜東北線ほか蒲田駅から徒歩15分。焼きそば、フランクフルト、飲み物など模擬店が多数。主催者名：仲六郷一丁目町会。",
+    "url": "https://otakushoren.com/event/153027",
+    "notice_kind": "official_current_year"
+  },
+  "events": [{"action": "register_new", "event_name_hint": "仲六郷一丁目町会 納涼会", "series_name": "仲六郷一丁目町会 納涼会", "event_year": 2026, "date_start": "2026-08-01", "date_end": "2026-08-01", "venue": {"name": "大田区シルバー人材センター前", "area": "大田区", "address": "東京都大田区仲六郷1-6-9-125", "access": "蒲田駅から徒歩15分"}, "detail_addendum": "2026年8月1日17:00〜20:00、雨天中止。仲六郷一丁目町会主催。焼きそば、フランクフルト、飲み物などの模擬店あり。大田区商店街連合会の告知より。", "songs": []}]
+}
