@@ -78,3 +78,13 @@ def test_past_occurrence_explicit_prior_year_and_kobe_are_excluded(tmp_path):
     prior={"source":"x","tweet_id":"prior","date":"2026-07-20","text":"2025年8月2日に盆助祭を開催しました"}
     kobe={"source":"x","tweet_id":"kobe","date":"2026-07-20","text":"神戸市東灘区の盆助祭 7月30日"}
     assert build([old,prior,kobe],db,year=2026,today=date(2026,7,29))['candidates']==[]
+
+def test_official_new_event_is_capped_and_requires_venue_signal(tmp_path, monkeypatch):
+    db=tmp_path/'master.sqlite'; make_db(db)
+    monkeypatch.setattr('build_x_gap_candidates.assess_source_officiality', lambda *_args, **_kwargs: {'classification':'registered_official_social'})
+    voices=[{'source':'x','tweet_id':str(i),'date':'2026-07-20','text':f'夏まつり 7月{i+1}日 会場は駅前広場'} for i in range(8)]
+    payload=build(voices,db,year=2026)
+    assert len([r for r in payload['candidates'] if r['candidate_kind']=='official_new_event'])==5
+    assert payload['archived_count']==3
+    no_venue=build([{'source':'x','tweet_id':'x','date':'2026-07-20','text':'夏まつり 7月30日開催'}],db,year=2026)
+    assert no_venue['candidates']==[]
