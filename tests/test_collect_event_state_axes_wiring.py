@@ -29,6 +29,19 @@ class CollectEventStateAxesWiringTest(unittest.TestCase):
         self.assertIn("master_db_s3_artifact.py fetch --overwrite", self.step)
         self.assertIn("event-state-axes-rend.json", self.step)
 
+    def test_transitions_ended_occurrences_before_public_export_with_cas(self):
+        start = self.source.index("- name: Transition ended confirmed occurrences")
+        end = self.source.index("- name: Upload event-state axes evidence")
+        step = self.source[start:end]
+        self.assertIn("transition_ended_occurrences.py", step)
+        self.assertIn("--as-of-date \"$TODAY\"", step)
+        self.assertIn("--confirm 'TRANSITION ENDED OCCURRENCES'", step)
+        self.assertIn('"count"', step)
+        self.assertIn('if [ "$COUNT" -gt 0 ]; then', step)
+        self.assertIn("--expect-remote-checksum \"$RSTART\"", step)
+        self.assertNotIn("LOCAL_SHA", step)
+        self.assertLess(start, self.source.index("- name: Refresh public event export"))
+
 
 if __name__ == "__main__":
     unittest.main()
