@@ -689,6 +689,14 @@
       "event_key": "佃島の盆踊り||佃まちかど展示館前",
       "collector_sha256": "f22c32bdbff815aa9190410924e08ed512181cb528c1e6f21bc11bbb7a93c1e5",
       "reason": "2026-07-31: 中央区観光協会特派員ブログの実施中記事で、佃1丁目中央通り・佃まちかど展示館前、7/13開始、18:00-21:30を確認。既存occurrenceを終了済みとして更新後、ことレビューと内田さん明示GOによりサイト公開追加を承認。"
+    },
+    {
+      "id": "reviewed-ended-transition-ffc9d39df3bb",
+      "kind": "same_key_update",
+      "event_key": "すみだ錦糸町河内音頭大盆踊り||江東橋竪川親水公園",
+      "site_sha256": "c18e6e064ecfcd5feb24229d6832cd0d4b3d4993c1c29e8c2f5fff2038541e5c",
+      "collector_sha256": "ffc9d39df3bb5fa2961b3e523c647c69479c5b06ebeaad5de5405f3db8d491d6",
+      "reason": "2026-07-31: 2026-07-30の終了後、日次ended遷移により表示区分をupcoming/confirmedからendedへ更新。イベント名・会場・日程は不変。ことレビューおよび内田さん明示GO。"
     }
   ]
 }
