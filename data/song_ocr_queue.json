@@ -1,6 +1,6 @@
 {
   "generated_by": "build_song_ocr_queue.py",
-  "count": 44,
+  "count": 45,
   "items": [
     {
       "id": "b21783a2a9785946",
@@ -695,6 +695,22 @@
         "pic.x.com/akgK5onqVv"
       ],
       "text": "「アジアン・ヒップホップ・メガ・ヒッツ盆踊り」ミックスをサンクラにアップしました！\nhttps://t.co/3BMH2HfT3Q\nサクッと短い20分のミックスなのでサクッと是非！\n\n「多文化盆踊り」「アジアのヒップホップで盆踊りをしよう」というコンセプトのオファーを頂き、アジア各国、タイ、フィリピン、中国、韓国、ベトナム、ネパール等のヒップホップをかけた模様です！\n曲目↓です！\n\n01.千葉雄喜 - チーム友達 (Japan)\n02.F.HERO Ft. P-Hot, YOUNGOHM, FYMME - เสือสิ้นลาย (Thailand)\n03.Ez Mil - Panalo (Trap Cariñosa) (Philippines)\n04.GAI周延 - 華夏 (Hua Xia) (China)\n05.PSY - HANGOVER (feat. Snoop Dogg) (South Korea)\n06.Hoàng Thùy Linh - Để Mị Nói Cho Mà Nghe (Vietnam)\n07.BALEN - NEPAL HASEKO (Nepal)\n08.D",
+      "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
+    },
+    {
+      "id": "ae1268f4ce07168d",
+      "status": "needs_ocr",
+      "account": "@FunatsuKatvlt",
+      "url": "https://x.com/FunatsuKatvlt/status/2082457009354588358",
+      "tweet_id": "2082457009354588358",
+      "date": "2026-07-29T13:23:35+00:00",
+      "media_urls": [
+        "https://pbs.twimg.com/media/HOZfmG_bUAA76gb.jpg",
+        "https://t.co/A0sSWIZfGw",
+        "pic.x.com/A0sSWIZfGw",
+        "https://pbs.twimg.com/media/HOZfmGxbkAAF6Vw.jpg"
+      ],
+      "text": "埼玉県戸田市の鍛冶屋町会の盆踊りへ行って来ました\n埼京線・戸田公園駅で下車\n徒歩10分鍛冶屋公園\n［曲目］\n戸田音頭､東京音頭､炭坑節\n仲良しシャンシャン\nきよしのズンドコ節\n火の国太鼓\n日光和楽踊り､八木節\nとても楽しかったです。 https://t.co/A0sSWIZfGw",
       "review_hint": "画像をOCRし、曲目が読めたら data/song_ocr_review.json に転記する"
     }
   ]
