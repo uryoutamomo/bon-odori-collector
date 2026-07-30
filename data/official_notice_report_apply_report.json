@@ -1,15 +1,15 @@
 {
   "generated_by": "apply_official_notice_report.py",
-  "generated_at": "2026-07-28T15:35:22.842378+00:00",
+  "generated_at": "2026-07-30T12:54:04.403646+00:00",
   "mode": "apply",
   "sources": {
     "master_db": "data/bon_odori_master.sqlite",
-    "report": "data/official_notice_reports/minato-koho-20260701-20260729.json"
+    "report": "data/official_notice_reports/x_poster_nakarokugo_noryokai_2026.json"
   },
   "outputs": {
     "target_db": "data/bon_odori_master.sqlite",
     "dry_run_db": "",
-    "backup_db": "data/backups/bon_odori_master.20260728T153522.842378+0000.sqlite.bak",
+    "backup_db": "data/backups/bon_odori_master.20260730T125404.403646+0000.sqlite.bak",
     "json": "data/official_notice_report_apply_report.json",
     "markdown": "data/official_notice_report_apply_report.md"
   },
@@ -24,157 +24,86 @@
   "summary": {
     "issues_count": 0,
     "issues_by_severity": {},
-    "audit_issues_by_severity": {
-      "medium": 1
-    },
+    "audit_issues_by_severity": {},
     "table_counts": {
       "event_investigation_tasks": 79,
-      "event_occurrences": 254,
-      "event_series": 242,
-      "event_series_aliases": 21,
-      "evidence_items": 31306,
+      "event_occurrences": 274,
+      "event_series": 259,
+      "event_series_aliases": 24,
+      "evidence_items": 31312,
       "external_record_links": 2654,
       "historical_promotion_candidates": 16,
       "master_meta": 0,
       "notion_sync_jobs": 0,
       "observed_occurrence_songs": 30883,
       "observed_occurrences": 2164,
-      "occurrence_dates": 303,
-      "occurrence_evidence_links": 107,
+      "occurrence_dates": 324,
+      "occurrence_evidence_links": 128,
       "occurrence_song_evidence_links": 1008,
       "occurrence_songs": 820,
       "predicted_occurrence_dates": 14,
-      "review_inbox_items": 422,
+      "review_inbox_items": 455,
       "schema_migrations": 4,
       "song_aliases": 141,
       "songs": 394,
-      "venue_aliases": 301,
-      "venues": 241,
+      "venue_aliases": 318,
+      "venues": 258,
       "write_batches": 0
     }
   },
   "report": {
     "report_type": "official_notice",
-    "reported_at": "2026-07-29T00:45:00+09:00",
+    "reported_at": "2026-07-30T19:30:00+09:00",
     "source": {
-      "report_id": "minato-koho-20260701-20260729",
-      "title": "広報みなと 2026年7月1日号「区内商店街イベント一覧（7月・8月）」",
-      "account_key": "港区（広報みなと）",
-      "notice_kind": "official_current_year",
-      "url": "https://www.city.minato.tokyo.jp/kouhou/kuse/koho/minato2026/202607/20260701top/07.html",
-      "raw_text": "広報みなと2026年7月1日号 区内商店街イベント一覧（7月・8月） / 海岸まつり（海岸2丁目・3丁目商店会）7月31日（金曜）・8月1日（土曜）埠頭公園「盆踊り大会を開催します。さまざまな模擬店も出店します。」 / 赤坂夏おどり2026 8月28日（金曜）・29日（土曜）赤坂サカス広場 / 芝浦二丁目商店会納涼盆踊り大会 7月18日・19日 船路橋児童遊園前 / 第29回新橋こいち祭 7月23日・24日 ニュー新橋ビル周辺他 / 芝浦まつり 7月24日・25日 なぎさ通りお祭り広場 / 謝恩納涼盆踊り大会 7月26日・27日 善光寺境内 / 盆ダンスフェスティバル2026 7月26日 白金児童遊園 / 四の橋夏まつり 8月1日・2日 時計台広場 / 麻布十番納涼まつり 8月22日・23日 麻布十番商店街全域"
+      "report_id": "x_poster_nakarokugo_noryokai_2026",
+      "title": "仲六郷一丁目町会 納涼会（2026年）案内",
+      "account_key": "おーたふる 大田区商店街ナビ",
+      "raw_text": "仲六郷一丁目町会「納涼会」。日時：2026年8月1日(土) 17:00〜20:00、雨天中止。会場：大田区シルバー人材センター前。所在地：東京都大田区仲六郷1-6-9-125。交通：JR京浜東北線ほか蒲田駅から徒歩15分。焼きそば、フランクフルト、飲み物など模擬店が多数。主催者名：仲六郷一丁目町会。",
+      "url": "https://otakushoren.com/event/153027",
+      "notice_kind": "official_current_year"
     },
     "events": [
       {
-        "action": "confirm_existing",
-        "occurrence_id": "occ_018fc76d38dcd38f",
-        "date_start": "2026-07-31",
+        "action": "register_new",
+        "event_name_hint": "仲六郷一丁目町会 納涼会",
+        "series_name": "仲六郷一丁目町会 納涼会",
+        "event_year": 2026,
+        "date_start": "2026-08-01",
         "date_end": "2026-08-01",
-        "detail_addendum": "2026年は7月31日（金）・8月1日（土）に埠頭公園で開催。広報みなと2026年7月1日号「区内商店街イベント一覧」で確認（主催: 海岸2丁目・3丁目商店会。盆踊り大会と模擬店）。秋田県東京事務所のX投稿（@prefAkita_tokyo）でも同一日程が告知され、西馬音内盆踊りが披露される旨の記載あり。"
-      },
-      {
-        "action": "confirm_existing",
-        "occurrence_id": "occ_3fa70d14d361b2f3",
-        "date_start": "2026-08-28",
-        "date_end": "2026-08-29",
-        "detail_addendum": "2026年は8月28日（金）・29日（土）に赤坂サカス広場で開催。広報みなと2026年7月1日号「区内商店街イベント一覧」で確認。"
-      }
-    ],
-    "skipped_events": [
-      {
-        "name": "麻布十番納涼まつり（8月22日・23日 麻布十番商店街全域）",
-        "reason": "RDBの既存レコードは「麻布十番納涼盆踊り大会」（会場: 網代公園）で、広報の「麻布十番納涼まつり」（商店街全域）と同一イベントか判別できない。関連はありそうだが会場が異なるため、突き合わせを確認してから反映する。"
-      },
-      {
-        "name": "芝浦二丁目商店会納涼盆踊り大会（7月18日・19日 船路橋児童遊園前）",
-        "reason": "RDBに2026年の開催回が無い。新規登録の候補だが、既に開催日を過ぎており今シーズンの公開価値が無いため、シリーズ・会場の整備とあわせて別途判断する。"
-      },
-      {
-        "name": "謝恩納涼盆踊り大会（7月26日・27日 善光寺境内）",
-        "reason": "同上。RDBに2026年の開催回が無く、開催日も過ぎている。"
-      },
-      {
-        "name": "盆ダンスフェスティバル2026（7月26日 白金児童遊園）",
-        "reason": "同上。RDBに2026年の開催回が無く、開催日も過ぎている。"
-      },
-      {
-        "name": "四の橋夏まつり（8月1日・2日 時計台広場）",
-        "reason": "RDBに2026年の開催回が無い。開催は今週末で公開価値はあるが、盆踊りが行われるかが広報の記載からは判別できないため、確認してから新規登録するか判断する。"
-      },
-      {
-        "name": "芝浦まつり（7月24日・25日 なぎさ通りお祭り広場）",
-        "reason": "RDBに2026年の開催回が無く、開催日も過ぎている。"
-      },
-      {
-        "name": "第29回新橋こいち祭（7月23日・24日）",
-        "reason": "RDBに 2026-07-23〜24 で登録済み・confirmed。広報と一致しており変更不要。"
+        "venue": {
+          "name": "大田区シルバー人材センター前",
+          "area": "大田区",
+          "address": "東京都大田区仲六郷1-6-9-125",
+          "access": "蒲田駅から徒歩15分"
+        },
+        "detail_addendum": "2026年8月1日17:00〜20:00、雨天中止。仲六郷一丁目町会主催。焼きそば、フランクフルト、飲み物などの模擬店あり。大田区商店街連合会の告知より。",
+        "songs": []
       }
     ]
   },
   "applied": {
     "resolved": true,
-    "evidence_id": "ev_ceb9317930c93efa",
+    "evidence_id": "ev_b8b204fe293afe44",
     "events_applied": [
       {
-        "action": "confirm_existing",
-        "occurrence_id": "occ_018fc76d38dcd38f",
-        "changed_fields": [
-          "date_start",
-          "detail"
-        ],
-        "songs_applied": []
-      },
-      {
-        "action": "confirm_existing",
-        "occurrence_id": "occ_3fa70d14d361b2f3",
-        "changed_fields": [
-          "date_start",
-          "detail"
-        ],
+        "action": "register_new",
+        "series_id": "series_62fc7a282c40f31b",
+        "series_created": true,
+        "occurrence_id": "occ_17eabcbe2b6ba4ea",
+        "venue_id": "venue_b79698d26e45ac8d",
+        "venue_status": "created",
+        "occurrence_created": true,
         "songs_applied": []
       }
     ],
     "events_unresolved": [],
-    "skipped_events": [
-      {
-        "name": "麻布十番納涼まつり（8月22日・23日 麻布十番商店街全域）",
-        "reason": "RDBの既存レコードは「麻布十番納涼盆踊り大会」（会場: 網代公園）で、広報の「麻布十番納涼まつり」（商店街全域）と同一イベントか判別できない。関連はありそうだが会場が異なるため、突き合わせを確認してから反映する。"
-      },
-      {
-        "name": "芝浦二丁目商店会納涼盆踊り大会（7月18日・19日 船路橋児童遊園前）",
-        "reason": "RDBに2026年の開催回が無い。新規登録の候補だが、既に開催日を過ぎており今シーズンの公開価値が無いため、シリーズ・会場の整備とあわせて別途判断する。"
-      },
-      {
-        "name": "謝恩納涼盆踊り大会（7月26日・27日 善光寺境内）",
-        "reason": "同上。RDBに2026年の開催回が無く、開催日も過ぎている。"
-      },
-      {
-        "name": "盆ダンスフェスティバル2026（7月26日 白金児童遊園）",
-        "reason": "同上。RDBに2026年の開催回が無く、開催日も過ぎている。"
-      },
-      {
-        "name": "四の橋夏まつり（8月1日・2日 時計台広場）",
-        "reason": "RDBに2026年の開催回が無い。開催は今週末で公開価値はあるが、盆踊りが行われるかが広報の記載からは判別できないため、確認してから新規登録するか判断する。"
-      },
-      {
-        "name": "芝浦まつり（7月24日・25日 なぎさ通りお祭り広場）",
-        "reason": "RDBに2026年の開催回が無く、開催日も過ぎている。"
-      },
-      {
-        "name": "第29回新橋こいち祭（7月23日・24日）",
-        "reason": "RDBに 2026-07-23〜24 で登録済み・confirmed。広報と一致しており変更不要。"
-      }
-    ]
+    "skipped_events": []
   },
   "issues": [],
   "audit": {
-    "issue_count": 1,
-    "issues_by_severity": {
-      "medium": 1
-    },
-    "issues_by_type": {
-      "source_snapshot_drift": 1
-    }
+    "issue_count": 0,
+    "issues_by_severity": {},
+    "issues_by_type": {}
   },
   "public_json_write": {
     "enabled": false,
