@@ -26,7 +26,7 @@ VOICES = DATA / "voices.json"
 OUT = DATA / "x_gap_candidates.json"
 X_SOURCES = {"x", "x_whitelist", "x_proactive", "x_event_history"}
 DATE_RE = re.compile(r"(?:20\d{2}[/-]\d{1,2}[/-]\d{1,2}|\d{1,2}月\d{1,2}日?|\d{1,2}/\d{1,2}|\d{1,2}時)")
-BON_RE = re.compile(r"盆踊り|盆おどり|ぼんおどり|民踊|納涼", re.I)
+BON_RE = re.compile(r"盆踊り|盆おどり|ぼんおどり|民踊|納涼|夏まつり|夏祭り", re.I)
 CHANGE_RE = re.compile(r"中止|延期|順延|時間変更|開催時間.*変更|取りやめ")
 NON_CHANGE_RE = re.compile(r"(?:順延|延期).{0,12}(?:ない|ありません|ございません)|(?:雨天|少雨)決行|雨天中止")
 # Require a declaration-like construction.  A bare word such as a venue's
@@ -36,6 +36,9 @@ ACTUAL_CHANGE_RE = re.compile(r"(?:本日|開催|イベント|盆踊り).{0,24}(
 GENERIC_EVENT_RE = re.compile(r"^(?:第\d+回)?(?:納涼|夏)?(?:盆踊り|盆おどり|ぼんおどり)(?:大会)?$")
 EXPLICIT_YEAR_RE = re.compile(r"(?<!\d)(20\d{2})年")
 EXTRA_OUTSIDE_SCOPE_RE = re.compile(r"神戸|東灘|兵庫|砺波|富山|淀川")
+OFFICIAL_NEW_EVENT_CAP = 5
+EVENTISH_RE = re.compile(r"盆踊り|盆おどり|ぼんおどり|納涼|夏まつり|夏祭り", re.I)
+VENUEISH_RE = re.compile(r"会場|公園|神社|寺|学校|商店街|広場|駅前|前(?:\b|で|に)")
 
 
 def load(path: Path, default: Any) -> Any:
@@ -131,7 +134,7 @@ def build(voices: list[dict[str, Any]], db: Path, *, year: int, limit: int=30, t
         else:
             missing=[(g,n) for g,n in found if not g["date_start"] and DATE_RE.search(text)]
             if missing: kind="missing_date"; priority=200; gap,names=missing[0]
-            elif official and not found and DATE_RE.search(text): kind="official_new_event"; priority=100
+            elif official and not found and DATE_RE.search(text) and EVENTISH_RE.search(text) and VENUEISH_RE.search(text): kind="official_new_event"; priority=100
             else: continue
         seen.add(key)
         candidates.append({"candidate_id":"xgap_"+hashlib.sha1(key.encode()).hexdigest()[:16], "source_key":key,
@@ -141,9 +144,17 @@ def build(voices: list[dict[str, Any]], db: Path, *, year: int, limit: int=30, t
           "source_url":voice.get("url") or "", "source_text":text[:500], "source_author":voice.get("account") or voice.get("author") or "",
           "source_officiality":officiality, "date_hints":DATE_RE.findall(text), "voice":voice})
     candidates.sort(key=lambda x:(-x["priority_score"], x["source_key"]))
-    archived=candidates[limit:]
+    selected=[]; archived=[]; official_new_event_count=0
+    for candidate in candidates:
+        if candidate['candidate_kind']=='official_new_event':
+            if official_new_event_count >= OFFICIAL_NEW_EVENT_CAP:
+                candidate={**candidate,'archive_reason':'official_new_event_daily_cap'}
+                archived.append(candidate); continue
+            official_new_event_count += 1
+        if len(selected) < limit: selected.append(candidate)
+        else: archived.append({**candidate,'archive_reason':'daily_candidate_cap'})
     return {"generated_by":"build_x_gap_candidates.py", "generated_at":datetime.now(timezone.utc).isoformat(),
-            "limit":limit, "candidate_count":min(len(candidates),limit), "archived_count":len(archived), "candidates":candidates[:limit],
+            "limit":limit, "official_new_event_limit":OFFICIAL_NEW_EVENT_CAP, "candidate_count":len(selected), "archived_count":len(archived), "candidates":selected,
             "archived_candidates":archived}
 
 

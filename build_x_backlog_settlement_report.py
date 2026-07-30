@@ -69,7 +69,10 @@ def build(event_queue:Any, inbox:Any, posters:Any, *, master_db:Path=MASTER_DB, 
     high=[r for r in events if float(r.get('confidence_score') or 0)>=50]
     score_retained=[r for r in high if not processed(r)]
     processed_rows=[r for r in events if processed(r)]
-    gaps=[gap for gap in catalog(Path(master_db),year) if not gap.get('date_start')]
+    # Keep the inventory usable in test/offline environments where the master
+    # artifact has not been fetched yet.  Without an RDB there are no
+    # defensible gap-based holds, so only the score rule applies.
+    gaps=[gap for gap in catalog(Path(master_db),year) if not gap.get('date_start')] if Path(master_db).exists() else []
     gap_retained=[]
     for row in events:
         if processed(row) or float(row.get('confidence_score') or 0)>=50: continue
